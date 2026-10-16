@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Criciuma/balanco-2019.md",
+ "generado": "2026-10-16T22:36:41.790Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "( Valores expressos em unidades de reais )",
+ "caja": {
+  "lineas": [
+   25
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   55,
+   63
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Empréstimos e Financiamentos circulante es '-' (cero) en 2019; se incluye igualmente junto al no circulante."
+}

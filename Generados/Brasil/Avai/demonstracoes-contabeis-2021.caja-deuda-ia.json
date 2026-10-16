@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.md",
+ "generado": "2026-10-16T22:34:00.237Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Em Reais)",
+ "caja": {
+  "lineas": [
+   43
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   79,
+   80
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se incluyen Empréstimos Bancários y Empréstimos de Terceiros (corrientes); no hay préstamos no corrientes separados. Partes Relacionadas (L89) excluida por ser dudosa como deuda financiera."
+}

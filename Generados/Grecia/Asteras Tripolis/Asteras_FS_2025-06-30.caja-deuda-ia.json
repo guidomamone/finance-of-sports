@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Grecia/Asteras Tripolis/Asteras_FS_2025-06-30.md",
+ "generado": "2026-10-16T22:33:02.809Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε μονάδες Ευρώ",
+ "caja": {
+  "lineas": [
+   814
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   862,
+   866
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera = Δάνεια no corrientes (L862) + Τραπεζικά δάνεια corrientes (L866); los depósitos restringidos (Λογαριασμοί Δεσμευμένων Καταθέσεων) están en Λοιπές απαιτήσεις y no se incluyen en caja."
+}

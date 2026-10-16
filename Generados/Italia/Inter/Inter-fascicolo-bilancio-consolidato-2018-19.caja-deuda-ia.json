@@ -1,0 +1,26 @@
+{
+ "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2018-19.md",
+ "generado": "2026-10-16T22:40:35.622Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   543
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   745,
+   746,
+   748,
+   749,
+   751,
+   752,
+   754
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Activo en formato desalineado: el total de Disponibilità liquide (L543) corresponde a 54.666.197 (L627). Se incluyeron como deuda financiera las obligaciones, los préstamos de socios, los bancos y otros financiadores; los débitos con sociedades sujetas al control de las controlantes (L766-767) se excluyeron por su naturaleza dudosa."
+}

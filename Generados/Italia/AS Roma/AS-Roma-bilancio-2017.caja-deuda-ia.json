@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2017.md",
+ "generado": "2026-10-16T22:32:02.192Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "Valori in € /000",
+ "caja": {
+  "lineas": [
+   1639
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1679,
+   1688
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera = Finanziamenti no correnti (L1679) + correnti (L1688); caja = Disponibilità liquide."
+}

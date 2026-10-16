@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2025.md",
+ "generado": "2026-10-16T22:34:08.348Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+ "caja": {
+  "lineas": [
+   128
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   156,
+   157,
+   173
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se incluyen 'Empréstimos de terceiros' (L157, préstamos con interés 2,43%-3,50% a.m.) además de los empréstimos bancários corriente y no corriente; se excluyen aplicações financeiras (L129) de caja, así como las obligaciones tributarias PGFN y los credores de recuperação judicial de deuda."
+}

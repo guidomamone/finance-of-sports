@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2024-individual.md",
+ "generado": "2026-10-16T22:45:39.646Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "I prospetti di Stato Patrimoniale, di Conto Economico, di Rendiconto Finanziario e la Nota Integrativa sono espressi in unità di Euro.",
+ "caja": {
+  "lineas": [
+   453
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   489
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Debiti verso banche es '-' (cero) al 31-12-2024. Existen debiti verso controllanti por 40,4M (L500), probablemente financiamiento del accionista, no incluidos por no ser bancarios; revisar según criterio."
+}

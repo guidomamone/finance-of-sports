@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2010-11.md",
+ "generado": "2026-10-16T22:42:14.581Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   3424
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   3463,
+   3465,
+   3473
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa el balance consolidado (L3388-L3478); deuda = debiti finanziari correnti (102), debiti verso altri finanziatori (13.283.670, sub-voce de Altre passività correnti) y debiti finanziari verso parti correlate (650.000), coherente con la posizione finanziaria netta de 13.934 miles. No hay deuda financiera no corriente. Si se prefiriera el balance separado: caja L800, deuda L838, L840, L848."
+}

@@ -1,0 +1,24 @@
+{
+ "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2023.md",
+ "generado": "2026-10-16T22:47:23.479Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "31 dicembre 2023",
+ "caja": {
+  "lineas": [
+   534
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   564,
+   565,
+   567,
+   568,
+   570
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance está en euros (unidades) pero no hay una frase explícita de escala en el estado patrimonial. Los débitos hacia la controlante Mapei por cash pooling (L575, 64,4 M), que generan intereses, podrían considerarse deuda financiera; se excluyeron porque mezclan partidas comerciales. Los préstamos de socios (L564-565) sí se incluyeron."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2013-2012.md",
+ "generado": "2026-10-16T22:39:05.448Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(EM REAIS)",
+ "caja": {
+  "lineas": [
+   86
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   123,
+   132
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Títulos a pagar (L131, nota 14) podría tener naturaleza financiera, pero no se incluyó por falta de detalle; tributos parcelados no se consideran deuda financiera."
+}

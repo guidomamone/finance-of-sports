@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Torino/Torino-bilancio-2020.md",
+ "generado": "2026-10-16T22:47:53.485Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(valori migliaia di Euro)",
+ "caja": {
+  "lineas": [
+   113
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   125,
+   130
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance riclassificato de la relazione sulla gestione; la deuda financiera son los préstamos bancarios no corrientes por 30.000 (passività finanziarie correnti en cero)."
+}

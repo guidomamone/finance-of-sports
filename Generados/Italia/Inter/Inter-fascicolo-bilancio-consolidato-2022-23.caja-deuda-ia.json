@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2022-23.md",
+ "generado": "2026-10-16T22:40:53.936Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "30 June 2023 amounts in Euro",
+ "caja": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   492,
+   493,
+   495,
+   496,
+   498
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Solo se proporcionó el pasivo; la línea de caja (activo) no aparece en las páginas dadas. Se incluyó el préstamo de accionistas (Shareholders' loan) como deuda financiera junto con bonos y préstamo bancario."
+}

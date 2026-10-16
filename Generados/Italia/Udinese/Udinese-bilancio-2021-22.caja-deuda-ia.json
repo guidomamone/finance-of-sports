@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.md",
+ "generado": "2026-10-16T22:48:50.419Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Capitale sociale: 15.127.000,00",
+ "caja": {
+  "lineas": [
+   791
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   811,
+   814
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Cifras en euros (unidades); no hay una frase explícita de escala, por lo que se infiere de los importes completos con decimales. La deuda financiera comprende obligaciones (L811) y deudas con bancos (L814), ambas como totales que incluyen la porción corriente y la no corriente. Se excluyen los 29.103.479 adeudados a empresas sujetas al control de las controlantes (L820), por ser dudoso su carácter financiero."
+}

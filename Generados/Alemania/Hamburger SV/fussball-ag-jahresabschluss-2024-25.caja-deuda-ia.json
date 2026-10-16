@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Alemania/Hamburger SV/fussball-ag-jahresabschluss-2024-25.md",
+ "generado": "2026-10-16T22:39:45.958Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "EUR EUR",
+ "caja": {
+  "lineas": [
+   147
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   216,
+   217
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance en EUR con decimales; números de la columna separados de las etiquetas: Anleihen=L216 (6.235.477,05) y Verbindlichkeiten gegenüber Kreditinstituten=L217 (240.000,00). La Wandelschuldverschreibung (L212, 30.000.000) se presenta como partida especial separada con características de capital, con conversión obligatoria en acciones, y por eso se excluyó; además, la suma de las líneas elegidas (~6,5 M) no coincide con las Finanzverbindlichkeiten de TEUR 22.030 que informa el Lagebericht, que podrían incluir otros préstamos clasificados en Sonstige Verbindlichkeiten."
+}

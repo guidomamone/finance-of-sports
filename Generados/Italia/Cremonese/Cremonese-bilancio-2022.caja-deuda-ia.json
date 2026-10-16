@@ -1,0 +1,24 @@
+{
+ "md": "Clubes/Italia/Cremonese/Cremonese-bilancio-2022.md",
+ "generado": "2026-10-16T22:36:04.263Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "",
+ "caja": {
+  "lineas": [
+   86
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   114,
+   116,
+   117,
+   120,
+   121
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El documento no indica la escala de forma explícita; los importes aparecen en euros (unidades), coherente con 'perdita di esercizio pari ad euro 2.923.613'. Se incluyen los debiti verso soci per finanziamenti (0 al cierre 2022), los debiti verso banche y los debiti verso altri finanziatori (corriente y no corriente)."
+}

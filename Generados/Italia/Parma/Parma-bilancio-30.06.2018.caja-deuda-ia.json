@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Parma/Parma-bilancio-30.06.2018.md",
+ "generado": "2026-10-16T22:45:19.268Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Il bilancio dell'esercizio chiuso al 30 giugno 2018 è redatto in unità di euro.",
+ "caja": {
+  "lineas": [
+   406
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   445,
+   442
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda incluye debiti verso banche (651.735) y debiti verso soci per finanziamenti (1.000.000, préstamo de socios); si el criterio excluye financiamiento de socios, usar solo L445."
+}

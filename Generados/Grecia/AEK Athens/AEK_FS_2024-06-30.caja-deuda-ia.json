@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Grecia/AEK Athens/AEK_FS_2024-06-30.md",
+ "generado": "2026-10-16T22:31:13.755Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "caja": {
+  "lineas": [
+   430
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   448
+  ],
+  "ninguna": false
+ },
+ "observaciones": "No aparece una línea explícita de préstamos bancarios; L448 (Μακροπρόθεσμες Υποχρεώσεις πληρωτέες στην Επόμενη Χρήση, nota 6.14) podría ser la porción corriente de préstamos u otras obligaciones a largo plazo (posiblemente por traspasos), y 'Λοιπές Μακροπρόθεσμες Υποχρεώσεις' (L443) podría contener deuda financiera no corriente; se excluyen los pasivos por arrendamiento (L441, L447). Conviene revisar las notas 6.11 y 6.14."
+}

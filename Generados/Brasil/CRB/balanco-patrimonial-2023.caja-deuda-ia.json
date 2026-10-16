@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/CRB/balanco-patrimonial-2023.md",
+ "generado": "2026-10-16T22:35:45.354Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Balanços patrimoniais em 31 de dezembro de 2023 e 2022 (em reais)",
+ "caja": {
+  "lineas": [
+   12
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   26
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Empréstimos e financiamentos (L26) figura sin saldo ('-') en 2023 (1.000.000 en 2022), por lo que la deuda financiera de 2023 es cero; no hay deuda financiera no corriente (solo tributos parcelados)."
+}

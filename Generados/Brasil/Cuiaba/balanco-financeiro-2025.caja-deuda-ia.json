@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Cuiaba/balanco-financeiro-2025.md",
+ "generado": "2026-10-16T22:37:21.618Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Valores Expressos em Reais (R$)",
+ "caja": {
+  "lineas": [
+   138
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   139,
+   147
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La línea 147 (Empréstimos e Financiamentos no circulante) está en cero en 2025, pero se incluye por ser deuda financiera no corriente. El Parcelamento Unificado LP (L148) es un parcelamiento tributario y se excluye."
+}

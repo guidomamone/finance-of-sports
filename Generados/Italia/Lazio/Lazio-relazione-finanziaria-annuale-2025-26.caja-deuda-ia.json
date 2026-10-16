@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-relazione-finanziaria-annuale-2025-26.md",
+ "generado": "2026-10-16T22:43:24.374Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   5286
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   5312,
+   5321
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usó el balance consolidato (L5266-L5328); el bilancio separato de la capogruppo (L1576, L1602, L1611) presenta cifras distintas. Los Debiti finanziari incluyen pasivos por arrendamiento (diritti d'uso)."
+}

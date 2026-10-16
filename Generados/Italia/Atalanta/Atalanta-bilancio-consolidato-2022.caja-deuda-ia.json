@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2022.md",
+ "generado": "2026-10-16T22:33:33.118Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   138
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   172,
+   173
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Cifras en euros (unidades), según la tabla con '(- costi / + ricavi) valori in Euro'. La caja es el Totale Disponibilità liquide; la deuda financiera son los Debiti verso banche corriente y no corriente. Cierre de 30/06/2022, un ejercicio de 6 meses."
+}

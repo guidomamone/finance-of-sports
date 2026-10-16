@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Criciuma/balanco-2018.md",
+ "generado": "2026-10-16T22:36:38.462Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "( Valores expressos em unidades de reais )",
+ "caja": {
+  "lineas": [
+   212
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   255,
+   262
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera = Empréstimos e Financiamentos corriente (143.196) + no corriente (7.665.676); la línea L211 es el subtotal de L212, por lo que solo se eligió L212 para caja."
+}

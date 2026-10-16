@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2013-14.md",
+ "generado": "2026-10-16T22:42:33.134Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   3329
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   3356,
+   3371,
+   3373,
+   3381
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa el balance consolidado (L3286-L3386); el separado está en L866-L964. Se incluyen 'Debiti verso altri finanziatori' (L3373), subcuenta de Altre passività correnti, porque la posición financiera neta los trata como deuda financiera; la parte corriente del préstamo no corriente (0,48 M) no aparece como línea separada en el balance."
+}

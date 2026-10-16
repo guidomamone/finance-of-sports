@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2020-21.md",
+ "generado": "2026-10-16T22:43:05.022Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   3800
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   3828,
+   3841,
+   3843
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se eligió el balance consolidado (pág. 101-102). La deuda incluye 'Debiti verso altri finanziatori' (L3843), que figura dentro de 'Altre passività correnti' y que en la posición financiera neta se trata como deuda financiera. En el separado, las líneas equivalentes serían L955 para caja y L983, L995, L997 y L1005 para deuda."
+}

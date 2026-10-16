@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Criciuma/relatorio-de-balanco-2023.md",
+ "generado": "2026-10-16T22:36:53.822Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "( Valores expressos em unidades de reais )",
+ "caja": {
+  "lineas": [
+   163
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   193,
+   202
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Las líneas de Empréstimos e Financiamentos (corriente y no corriente) figuran con '-' en 2023, es decir saldo cero en el cierre más reciente; solo tenían saldo en 2022."
+}

@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/Salernitana/Salernitana-bilancio-30-giugno-2023-def.md",
+ "generado": "2026-10-16T22:46:30.335Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   329
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   370,
+   371,
+   383,
+   385
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los 'Debiti verso altri finanziatori' corrientes (L385, 30,4 M€) están dentro de 'Altre passività correnti' pero la PFN del informe de gestión (L139) los trata como deuda financiera corriente (30.917 mil = 501+30.392+arrendamientos), por eso se incluyen; L371 incluye probablemente pasivos por arrendamiento."
+}

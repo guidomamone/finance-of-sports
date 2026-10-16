@@ -1,0 +1,24 @@
+{
+ "md": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-individual.md",
+ "generado": "2026-10-16T22:38:37.964Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "I prospetti di Stato Patrimoniale, Conto Economico e la Nota Integrativa sono stati arrotondati all'unità di €",
+ "caja": {
+  "lineas": [
+   250
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   307,
+   308,
+   309,
+   310,
+   311
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se incluyen debiti verso banche (corriente y oltre), debiti verso altri finanziatori (factoring, corriente y oltre) y finanziamenti soci (L307); se excluyen los debiti verso controllate (L316-317), aunque podrían tener naturaleza financiera."
+}

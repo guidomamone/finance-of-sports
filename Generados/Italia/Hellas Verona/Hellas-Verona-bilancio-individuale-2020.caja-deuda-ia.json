@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2020.md",
+ "generado": "2026-10-16T22:39:51.284Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "30 giugno 2020",
+ "caja": {
+  "lineas": [
+   118
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   151,
+   154
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance está en euros (unidades) sin frase explícita de escala; las cifras con todos sus dígitos (p.ej. 6.206.891) lo confirman, mientras la nota integrativa usa Euro/000. Debiti verso altri finanziatori incluido como deuda financiera (posible factoring)."
+}

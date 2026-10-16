@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2014.md",
+ "generado": "2026-10-16T22:31:52.970Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "Valori in € /000",
+ "caja": {
+  "lineas": [
+   2070
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   2107,
+   2116
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera = Finanziamenti no correntes (61.520) + correnti (75.414) del balance consolidado; caja = Disponibilità liquide 4.858."
+}

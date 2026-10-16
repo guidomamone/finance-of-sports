@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-1999-00.md",
+ "generado": "2026-10-16T22:41:43.204Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "30/06/2000 Lire",
+ "caja": {
+  "lineas": [
+   1041
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1073,
+   1074
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El documento presenta el balance en Lire (unidades) y también en Euro (L741-L782); se eligió la versión en Lire. El total de deuda financiera (≈383 mil millones) no coincide con el estado reclasificado (128,7+276,4 miliardi), que podría incluir otras partidas como deudas con sociedades vinculadas."
+}

@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.md",
+ "generado": "2026-10-16T22:35:31.186Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Lo Stato patrimoniale evidenzia una perdita di periodo di Euro (132.066.776)",
+ "caja": {
+  "lineas": [
+   291
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance está expresado en euros (unidades), sin una leyenda explícita de escala; la evidencia citada confirma los importes en euros sin redondeo. No hay deudas bancarias ni financieras: el único finanziamento soci (500 mil en 2024) fue convertido en reserva. Los debiti verso controllanti (L331, 14.839 mil) corresponden a riaddebiti y depósitos en garantía, no a préstamos, por lo que no se incluyen. Caja tomada de la columna consolidada pro-forma: total disponibilità liquide 11.842.182."
+}

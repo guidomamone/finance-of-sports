@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/Remo/demonstracoes-financeiras-2025.md",
+ "generado": "2026-10-16T22:46:11.903Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Em Reais)",
+ "caja": {
+  "lineas": [
+   170
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   206
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Solo hay Empréstimos e financiamentos en el circulante; no aparece porción no corriente. Parcelamentos tributários y Dívida ativa son deudas fiscales, no financieras, y se excluyeron."
+}

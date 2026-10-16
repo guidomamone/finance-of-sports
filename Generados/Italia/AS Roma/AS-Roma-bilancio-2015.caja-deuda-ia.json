@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2015.md",
+ "generado": "2026-10-16T22:31:56.351Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "Valori in € /000",
+ "caja": {
+  "lineas": [
+   1866
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1900,
+   1908
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera = Finanziamenti no corrientes (158.398) + corrientes (18.252) al 30/06/2015."
+}

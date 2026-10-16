@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2021-22.md",
+ "generado": "2026-10-16T22:43:09.015Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   3671
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   3692,
+   3701
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Documento con bilancio separato (L948-L1005) y consolidado (L3654-L3708); se eligió el consolidado del Gruppo. Los debiti finanziari incluyen pasivos por arrendamiento (locazione) y, en el separado, deudas con partes correlacionadas."
+}

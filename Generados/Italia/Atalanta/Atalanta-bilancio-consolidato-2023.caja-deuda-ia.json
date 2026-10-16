@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2023.md",
+ "generado": "2026-10-16T22:33:37.622Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Tutti i valori elencati nelle tabelle della presente informativa sono espressi all'unità di Euro.",
+ "caja": {
+  "lineas": [
+   119
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   153,
+   154
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera = Debiti verso banche entro (L153) y oltre 12 mesi (L154); su subtotal L155 no se suma para evitar doble cómputo."
+}

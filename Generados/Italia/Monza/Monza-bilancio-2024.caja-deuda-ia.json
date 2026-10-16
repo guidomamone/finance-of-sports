@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Monza/Monza-bilancio-2024.md",
+ "generado": "2026-10-16T22:43:58.682Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(valori in unità di euro)",
+ "caja": {
+  "lineas": [
+   505
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   542,
+   543,
+   544
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera 2024: solo debiti verso altri finanziatori 13.500.000; debiti verso soci e verso banche son 0 en 2024. Caja tomada del total Disponibilità liquide (L505)."
+}

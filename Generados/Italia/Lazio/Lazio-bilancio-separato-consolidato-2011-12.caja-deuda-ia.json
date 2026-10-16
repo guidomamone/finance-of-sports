@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2011-12.md",
+ "generado": "2026-10-16T22:42:20.296Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   3473
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   3501,
+   3516,
+   3518,
+   3527
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa el balance consolidado (L3432-L3532); el separado (L811-L910) muestra caja L851 y deuda L879, L893, L895, L904. En el consolidado, la deuda financiera incluye 'Debiti verso altri finanziatori' (L3518, 9,54 M€, subpartida de Altre passività correnti) y 'Debiti finanziari correnti verso parti correlate' (L3527, 0,65 M€), coherente con la posición financiera neta (L4328-L4338). Las líneas de deuda financiera corriente (L3516) y no corriente (L3501) valen 0 al 30/06/2012. El encabezado del activo consolidado indica 30/06/2010 en la columna comparativa, probablemente un error tipográfico por 30/06/2011."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Monza/Monza-bilancio-2022.md",
+ "generado": "2026-10-16T22:43:50.798Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(valori in unità di euro)",
+ "caja": {
+  "lineas": [
+   488
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   525,
+   526
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Debiti verso banche e verso soci per finanziamenti risultano a zero al 31/12/2022; il conto corrente intercompany con Fininvest è a credito (4.001.031), quindi la deuda financiera è nulla."
+}

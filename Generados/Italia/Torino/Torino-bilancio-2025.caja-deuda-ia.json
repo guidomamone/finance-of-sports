@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Torino/Torino-bilancio-2025.md",
+ "generado": "2026-10-16T22:48:36.453Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "*(valori migliaia di Euro)*",
+ "caja": {
+  "lineas": [
+   107
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   119,
+   124
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance riclassificato de la relazione sulla gestione; deuda financiera = passività finanziarie non correnti (39.403) + correnti (17.656), que incluyen el préstamo de la controllante U.T. Communications y los bancos; la PFN (L135-L140) muestra el mismo detalle."
+}

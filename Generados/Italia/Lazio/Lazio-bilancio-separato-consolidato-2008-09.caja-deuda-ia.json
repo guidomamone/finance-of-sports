@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2008-09.md",
+ "generado": "2026-10-16T22:42:09.520Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "30/06/2009",
+ "caja": {
+  "lineas": [
+   3319
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   3345,
+   3359,
+   3361
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa el balance consolidado (págs. 87-88), cuyos importes están en euros (unidades); el documento no trae una frase explícita de escala para este estado, por lo que la evidencia citada es solo el encabezado de columna. Se incluyen como deuda financiera los debiti finanziari non correnti (cero en 2009), los debiti finanziari correnti y los debiti verso altri finanziatori (anticipo sobre cesión de créditos futuros, coherente con la nota 41.1 incluida en el endeudamiento financiero neto). En el balance separado, el debito verso controllate (L807) es intragrupo."
+}

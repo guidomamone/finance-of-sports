@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2023-individual.md",
+ "generado": "2026-10-16T22:38:42.469Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Valori in €",
+ "caja": {
+  "lineas": [
+   246
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   289,
+   293,
+   309
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera = debiti verso soci per finanziamenti (L289) + debiti verso banche (L293) + debiti verso altri finanziatori (L309); los préstamos de socios podrían excluirse según criterio. El balance está expresado en euros (unidades)."
+}

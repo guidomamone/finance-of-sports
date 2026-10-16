@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2014-2013.md",
+ "generado": "2026-10-16T22:39:08.376Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(EM REAIS)",
+ "caja": {
+  "lineas": [
+   113
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   155,
+   164
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Títulos a pagar (L163, nota 14) no se incluyó por no ser claramente deuda bancaria/financiera."
+}

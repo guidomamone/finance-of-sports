@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Torino/Torino-bilancio-2023.md",
+ "generado": "2026-10-16T22:48:03.724Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Capitale Sociale Euro 883.400",
+ "caja": {
+  "lineas": [
+   410
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   445,
+   447,
+   448
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa el balance formal en euros (unidades); los cuadros reclasificados están en 'valori migliaia di Euro'. Se incluye el préstamo del socio controlante U.T. Communications (10 M€, L445) como deuda financiera, ya que la propia posición financiera neta lo computa; si se quisiera solo deuda bancaria, excluir L445."
+}

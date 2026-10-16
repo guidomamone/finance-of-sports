@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Monza/Monza-bilancio-2023.md",
+ "generado": "2026-10-16T22:43:54.278Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(valori in unità di euro)",
+ "caja": {
+  "lineas": [
+   522
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   559,
+   560
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Debiti verso banche es 0 en 2023; se incluye debiti verso soci per finanziamenti (127.833), que corresponde al conto corrente finanziario intercompany con Fininvest (L2240), como deuda financiera. Caja tomada del total de disponibilità liquide."
+}

@@ -1,0 +1,24 @@
+{
+ "md": "Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2013.md",
+ "generado": "2026-10-16T22:30:25.932Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "in migliaia di Euro",
+ "caja": {
+  "lineas": [
+   818
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   854,
+   856,
+   857,
+   859,
+   860
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa el balance consolidado del Gruppo Milan (en miles de euros); el balance de A.C. Milan S.p.A. individual está en unidades de euro. Se incluyen como deuda financiera los debiti verso soci per finanziamenti, verso banche y verso altri finanziatori (probablemente factoring/leasing)."
+}

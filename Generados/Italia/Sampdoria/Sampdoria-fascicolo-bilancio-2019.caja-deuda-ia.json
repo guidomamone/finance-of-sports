@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2019.md",
+ "generado": "2026-10-16T22:46:40.165Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Capitale sociale: Euro 14.000.0000 interamente versato",
+ "caja": {
+  "lineas": [
+   931
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   965,
+   966,
+   968,
+   969
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance está en euros (unidades); no hay frase explícita de escala en el estado patrimonial, se infiere de los importes. Se incluyen como deuda financiera los débitos hacia bancos y hacia otros financiadores (corriente y no corriente); obligaciones y préstamos de socios figuran en cero."
+}

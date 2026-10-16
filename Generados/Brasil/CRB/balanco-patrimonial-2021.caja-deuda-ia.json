@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Brasil/CRB/balanco-patrimonial-2021.md",
+ "generado": "2026-10-16T22:35:38.822Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(em reais)",
+ "caja": {
+  "lineas": [
+   12
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no presenta préstamos ni financiamientos bancarios; solo tributos parcelados (L31), que no se consideran deuda financiera según el criterio."
+}

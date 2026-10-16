@@ -1,0 +1,26 @@
+{
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2025.md",
+ "generado": "2026-10-16T22:32:31.781Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(valori in Euro)",
+ "caja": {
+  "lineas": [
+   696
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   755,
+   756,
+   759,
+   761,
+   762,
+   764,
+   765
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa el balance consolidado (págs. 20-21); se incluyen obligaciones (bond), préstamos de socios, bancos y otros financiadores. Los préstamos de socios (L759) podrían excluirse según criterio. El balance de la sociedad individual (págs. 57-58) muestra cifras distintas y no se usó."
+}

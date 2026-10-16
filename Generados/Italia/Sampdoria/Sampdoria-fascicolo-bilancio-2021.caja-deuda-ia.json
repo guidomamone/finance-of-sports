@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.md",
+ "generado": "2026-10-16T22:46:48.663Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "31 DICEMBRE 2021",
+ "caja": {
+  "lineas": [
+   795
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   827,
+   828,
+   830,
+   831
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El estado patrimonial está en euros (unidades), aunque no hay una frase explícita de escala; los valores coinciden con el total de 298.867.579 frente a los 298.868 Euro/000 del resumen. Se incluyen como deuda los débitos con bancos y con otros financiadores, corriente y no corriente; la línea 831 es 0 en 2021."
+}

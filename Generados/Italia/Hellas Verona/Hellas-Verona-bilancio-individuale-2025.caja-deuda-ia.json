@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2025.md",
+ "generado": "2026-10-16T22:40:15.961Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "",
+ "caja": {
+  "lineas": [
+   152
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   189,
+   190
+  ],
+  "ninguna": false
+ },
+ "observaciones": "The balance sheet has no explicit scale label. The figures are in whole euros (e.g. Totale attivo 161.994.800, which the notes show as 48.113 Euro/000 for intangibles), while the 'Euro/000' tables appear only in the notes. Debt includes 'Debiti verso banche' (13.465.473) and 'Debiti verso altri finanziatori' (77.843.749), each a total of its current and non-current portions. The second line likely includes factoring or advances on TV rights and should be checked."
+}

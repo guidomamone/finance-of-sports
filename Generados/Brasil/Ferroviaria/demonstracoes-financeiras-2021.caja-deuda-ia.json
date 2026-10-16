@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2021.md",
+ "generado": "2026-10-16T22:37:53.010Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Em reais",
+ "caja": {
+  "lineas": [
+   150
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   150
+  ],
+  "ninguna": false
+ },
+ "observaciones": "L150 contiene tanto Caixa e equivalentes (activo) como Empréstimos circulantes (pasivo); no hay empréstimos no circulantes. Parcelamentos de impostos y adiantamento para futuro aumento de capital no se consideran deuda financiera."
+}

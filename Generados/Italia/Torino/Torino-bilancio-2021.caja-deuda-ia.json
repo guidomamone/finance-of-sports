@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Torino/Torino-bilancio-2021.md",
+ "generado": "2026-10-16T22:47:59.219Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(valori migliaia di Euro)",
+ "caja": {
+  "lineas": [
+   131
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   139,
+   144
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usó el stato patrimoniale riclassificato, en miles de euros. El balance oficial está en unidades de euro y muestra los mismos importes: disponibilità liquide 3.861.302 (L461) y debiti verso banche 1.250.000 + 28.750.000 (L493-L494)."
+}

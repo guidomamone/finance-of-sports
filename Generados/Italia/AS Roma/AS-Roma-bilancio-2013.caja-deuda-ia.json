@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2013.md",
+ "generado": "2026-10-16T22:31:49.490Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "Valori in Euro /000",
+ "caja": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1925,
+   1934
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El activo del balance consolidado (con disponibilità liquide) no está incluido en las páginas provistas, por lo que no se puede identificar la línea de caja; deuda = finanziamenti a lungo termine (0) + a breve termine (97.152)."
+}

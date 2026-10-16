@@ -1,0 +1,26 @@
+{
+ "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2017-18.md",
+ "generado": "2026-10-16T22:40:28.554Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   498
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   533,
+   534,
+   536,
+   537,
+   539,
+   540,
+   542
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se incluyen bonos (obbligazioni), préstamos de socios para financiamiento, deuda bancaria y otros financiadores; los préstamos de socios (L536-537) podrían excluirse según el criterio. La línea L540 vale cero (-) en 2018."
+}

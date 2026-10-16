@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/CRB/balanco-patrimonial-2020.md",
+ "generado": "2026-10-16T22:35:35.797Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(em reais)",
+ "caja": {
+  "lineas": [
+   12
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   25
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Empréstimos e financiamentos (L25) figura en cero ('-') en 2020; Obrigações com terceiros (L31) también en cero y de naturaleza ambigua, no incluida; los tributos parcelados no se consideran deuda financiera."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Torino/Torino-bilancio-2024.md",
+ "generado": "2026-10-16T22:48:32.374Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Capitale Sociale Euro 883.400",
+ "caja": {
+  "lineas": [
+   412
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   448,
+   449
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance formal (L363-L461) está en euros sin indicación explícita de escala (las cifras están en unidades de euro). Deuda financiera: debiti verso soci per finanziamenti (finanziamento fruttifero della controllante, 9.000.000) + debiti verso banche (0 entro e 38.300.000 oltre 12 mesi), coerente con le passività finanziarie di 47.300 migliaia della tabella riclassificata."
+}

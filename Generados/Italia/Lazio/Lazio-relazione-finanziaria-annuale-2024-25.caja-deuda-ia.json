@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-relazione-finanziaria-annuale-2024-25.md",
+ "generado": "2026-10-16T22:43:20.485Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Valori in Euro",
+ "caja": {
+  "lineas": [
+   5626
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   5649,
+   5658
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se eligió el balance consolidado (pp. 138-139); el separado de S.S. Lazio S.p.A. (L1840, L1863, L1872, 'valori in Euro') también existe. Los debiti finanziari incluyen deuda con partes relacionadas y arrendamientos."
+}

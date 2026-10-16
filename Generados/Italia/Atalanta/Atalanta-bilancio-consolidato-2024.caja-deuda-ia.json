@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2024.md",
+ "generado": "2026-10-16T22:33:41.822Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   120
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   154,
+   155
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera = Debiti verso banche (entro y oltre 12 mesi); no se incluyen debiti verso controllanti (10,65 M) por no constar su naturaleza financiera. La escala en unidades de euro se infiere de los importes; la frase de evidencia proviene de una tabla de la nota integrativa, no del encabezado del balance."
+}

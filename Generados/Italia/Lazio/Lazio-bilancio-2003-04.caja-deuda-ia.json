@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-2003-04.md",
+ "generado": "2026-10-16T22:41:50.680Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "30/06/2004 in Euro",
+ "caja": {
+  "lineas": [
+   1107
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1138,
+   1139
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera = debiti verso banche + debiti verso altri finanziatori (posible factoring/anticipos); 'Accordi' (L1140) excluido por naturaleza incierta."
+}

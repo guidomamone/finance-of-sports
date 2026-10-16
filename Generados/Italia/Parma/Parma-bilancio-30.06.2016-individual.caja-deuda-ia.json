@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Italia/Parma/Parma-bilancio-30.06.2016-individual.md",
+ "generado": "2026-10-16T22:45:11.080Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "I prospetti di Stato Patrimoniale, di Conto Economico e la Nota Integrativa sono espressi in unità di Euro.",
+ "caja": {
+  "lineas": [
+   140
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance está completo y entre los debiti (D) no figuran debiti verso banche ni verso altri finanziatori; solo hay acconti, proveedores, tributarios, previsionales y otros, por lo que no hay deuda financiera."
+}

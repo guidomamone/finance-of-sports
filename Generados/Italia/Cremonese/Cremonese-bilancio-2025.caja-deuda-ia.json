@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/Cremonese/Cremonese-bilancio-2025.md",
+ "generado": "2026-10-16T22:36:16.778Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Differenza da arrotondamento all'unità di Euro",
+ "caja": {
+  "lineas": [
+   85
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   111,
+   112,
+   115,
+   116
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera = debiti verso banche (L111-L112) + debiti verso altri finanziatori (L115-L116); no hay debiti verso soci per finanziamenti en el período. La escala en unidades de euro se infiere de la nota de redondeo; los importes no indican explícitamente la escala."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2022.md",
+ "generado": "2026-10-16T22:49:07.110Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Em reais)",
+ "caja": {
+  "lineas": [
+   40
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   60,
+   75
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se excluye 'Contrato de Empréstimos de Atletas' (L62) por ser préstamo de jugadores, no deuda financiera; la aplicación financeira (L46) no se incluye en caja. El saldo no corriente de Empréstimos e Financiamentos (77,8 M) es muy elevado y podría incluir otros conceptos."
+}

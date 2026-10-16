@@ -1,0 +1,26 @@
+{
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2024.md",
+ "generado": "2026-10-16T22:32:27.926Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(valori in Euro)",
+ "caja": {
+  "lineas": [
+   770
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   802,
+   803,
+   806,
+   808,
+   809,
+   811,
+   812
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa el primer balance (consolidado, págs. 21-22); las págs. 58-59 parecen ser el balance separado de AS Roma S.p.A. Se incluyen como deuda financiera las obligaciones, los préstamos de socios (debiti verso soci per finanziamenti), los bancos y los otros financiadores. Es dudoso incluir el préstamo de los socios (297,5M), ya que es financiación del accionista."
+}

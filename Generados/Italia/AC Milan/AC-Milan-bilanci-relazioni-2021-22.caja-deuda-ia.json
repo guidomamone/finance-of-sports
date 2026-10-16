@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2021-22.md",
+ "generado": "2026-10-16T22:30:47.154Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(in migliaia di Euro)",
+ "caja": {
+  "lineas": [
+   645
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   700,
+   701,
+   703,
+   704
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera = debiti verso banche (entro/oltre 12 mesi) + debiti verso altri finanziatori (entro/oltre 12 mesi); obbligazioni y finanziamenti soci en cero. Caja tomada del total de disponibilità liquide. La cabecera del pasivo dice 30.06.2020 en la columna comparativa, probablemente un error tipográfico por 30.06.2021."
+}

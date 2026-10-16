@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2017-2016.md",
+ "generado": "2026-10-16T22:39:12.472Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(EM REAIS)",
+ "caja": {
+  "lineas": [
+   119
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   119
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera: solo 'Empréstimos e financiamentos' corriente (L119, columna pasivo); no hay préstamos no corrientes. 'Títulos a pagar' (L127) no se incluye por naturaleza incierta. Caja en L119 columna activo; las aplicaciones financieras corrientes (L122) se excluyen de caja."
+}

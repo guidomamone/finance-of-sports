@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2023.md",
+ "generado": "2026-10-16T22:49:10.488Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Em reais)",
+ "caja": {
+  "lineas": [
+   39
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   61,
+   77
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se excluyó 'Contrato de Empréstimos de Atletas' (L64) por tratarse de una obligación por cesión de jugadores y no de deuda bancaria; la aplicación financeira (L44) no se sumó a caja."
+}

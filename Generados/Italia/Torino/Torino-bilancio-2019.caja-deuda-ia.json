@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Italia/Torino/Torino-bilancio-2019.md",
+ "generado": "2026-10-16T22:47:49.822Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "*(valori migliaia di Euro)*",
+ "caja": {
+  "lineas": [
+   99
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   111
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Passività correnti finanziarie (L111) es '-' (cero); el texto (L83) confirma que la Società no detiene debiti di natura finanziaria. Es un balance riclassificato, no el esquema civilístico completo."
+}

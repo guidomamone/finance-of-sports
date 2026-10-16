@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.md",
+ "generado": "2026-10-16T22:46:35.966Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Capitale sociale: Euro 14.000.0000 interamente versato",
+ "caja": {
+  "lineas": [
+   899
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   933,
+   934,
+   936,
+   937
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance está expresado en euros (unidades), sin una frase explícita de escala en el estado; la escala se infiere de las cifras, por ejemplo el capital de 14.000.000. La caja es el total de disponibilità liquide de la L899 (3.856.659), con valores separados del texto. Los debiti verso altri finanziatori (L936-937) se incluyen como deuda financiera, aunque pueden incluir factoring o anticipos de cesiones."
+}

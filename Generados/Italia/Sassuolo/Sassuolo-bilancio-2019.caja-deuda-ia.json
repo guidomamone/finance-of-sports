@@ -1,0 +1,24 @@
+{
+ "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2019.md",
+ "generado": "2026-10-16T22:47:02.761Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Importo (Euro)",
+ "caja": {
+  "lineas": [
+   489
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   518,
+   519,
+   521,
+   525,
+   526
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance no declara la escala explícitamente; las cifras (p. ej. 256.811.982) están en euros, y la evidencia se tomó de una tabla de garantías. Se incluyeron las deudas con la controlante Mapei (cash pooling corriente y préstamo no corriente de 35 M), porque devengan intereses y son de naturaleza financiera; esta inclusión es dudosa."
+}

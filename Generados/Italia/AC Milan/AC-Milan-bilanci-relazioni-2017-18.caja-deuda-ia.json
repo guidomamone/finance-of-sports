@@ -1,0 +1,26 @@
+{
+ "md": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2017-18.md",
+ "generado": "2026-10-16T22:30:30.338Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(in migliaia di Euro)",
+ "caja": {
+  "lineas": [
+   851
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   896,
+   897,
+   899,
+   900,
+   901,
+   903,
+   904
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se incluyen obligaciones (bonos), préstamos de socios, bancos y otros financiadores; las líneas en blanco o con '—' en 2018 (L897, L899) no suman valor. Se excluyen los débitos con entes del sector (clubes por transferencias) por no ser deuda financiera."
+}

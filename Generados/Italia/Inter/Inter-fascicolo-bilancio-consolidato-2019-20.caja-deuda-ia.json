@@ -1,0 +1,26 @@
+{
+ "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2019-20.md",
+ "generado": "2026-10-16T22:40:40.024Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   714
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   782,
+   783,
+   785,
+   786,
+   788,
+   789,
+   791
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se incluyen obligaciones (bond), préstamos de socios y deudas bancarias; los préstamos de socios (L785-786) son financiamiento de accionistas y podrían excluirse según criterio. L791 es cero en 2020. No se incluyen deudas con sociedades del grupo controlante (L803-804) por no estar claro su carácter financiero."
+}

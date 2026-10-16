@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Alemania/Borussia Dortmund/geschaeftsbericht-2024-25.md",
+ "generado": "2026-10-16T22:37:36.834Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "EUR '000",
+ "caja": {
+  "lineas": [
+   9051
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   9091
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El estado consolidado IFRS (L5653, L5677, L5685) no muestra importes legibles, por lo que se usa el balance individual HGB: caja 20.147 y deudas con bancos 33.599 (corriente 5.148 + no corriente), que coinciden con los préstamos de 33.599 mencionados para el grupo. La caja del grupo (20.633) difiere levemente de la individual."
+}

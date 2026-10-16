@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Alemania/Hamburger SV/fussball-ag-jahresabschluss-2023-24.md",
+ "generado": "2026-10-16T22:39:40.737Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "EUR EUR",
+ "caja": {
+  "lineas": [
+   61
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   120,
+   121
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los importes del activo están separados de sus etiquetas (la caja corresponde a L61, con valor 35.723.518,58 en L90). Se incluyen como deuda financiera las Anleihen (bonos, L120) y las deudas con entidades de crédito (L121); las Sonstige Verbindlichkeiten (L127) se excluyen por su naturaleza mixta, aunque podrían contener financiación."
+}

@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2024-IFRS-SEC-6K.md",
+ "generado": "2026-10-16T22:41:23.270Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Amounts in euro",
+ "caja": {
+  "lineas": [
+   95
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   109,
+   111,
+   119,
+   121
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se incluyen como deuda financiera los préstamos y anticipos (Loans and Advances) no corrientes y corrientes, el pasivo financiero con partes relacionadas (préstamos de accionistas reclasificados según IAS 32) y los préstamos de corto plazo; la inclusión del préstamo de partes relacionadas es discutible."
+}

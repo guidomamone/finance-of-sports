@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2022-23.md",
+ "generado": "2026-10-16T22:43:13.111Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   3765
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   3788,
+   3797
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se eligió el balance consolidado del Gruppo S.S. Lazio (L3741-L3804); el separado equivalente sería caja L898 y deuda L921+L930. Los Debiti finanziari incluyen pasivos por arrendamiento (IFRS 16)."
+}

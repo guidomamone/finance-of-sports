@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2020-21.md",
+ "generado": "2026-10-16T22:30:43.032Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(IN MIGLIAIA DI EURO)",
+ "caja": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   721,
+   722,
+   724,
+   725
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Solo se dispone del pasivo; el activo (disponibilità liquide) no está en las páginas provistas, por lo que caja queda vacía. Deuda incluye debiti verso banche y verso altri finanziatori (posiblemente factoring/anticipos); obbligazioni y soci en cero."
+}

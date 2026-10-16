@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Italia/Parma/Parma-bilancio-30.06.2017-individual.md",
+ "generado": "2026-10-16T22:45:15.276Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Al 30 giugno 2017 ammontano ad Euro 2.221.084",
+ "caja": {
+  "lineas": [
+   249
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   284
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance en euros (unidades), sin indicación explícita de escala en el estado patrimonial. Los debiti verso controllanti (L293, 753.424, con intereses pagados a la controlante) podrían ser financiamiento del accionista, pero no se incluyen por no ser deuda bancaria."
+}

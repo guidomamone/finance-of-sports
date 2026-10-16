@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2016-17.md",
+ "generado": "2026-10-16T22:42:46.489Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   3336
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   3362,
+   3375,
+   3377
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Documento con bilancio separato y consolidato; se eligió el consolidado (L3298-L3388). Deuda: debiti finanziari non correnti y correnti más debiti verso altri finanziatori (sub-línea de altre passività correnti, incluida en la posición financiera neta); dudoso si incluir esta última."
+}

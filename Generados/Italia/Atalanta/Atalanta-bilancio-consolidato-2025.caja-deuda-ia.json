@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2025.md",
+ "generado": "2026-10-16T22:33:45.612Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   114
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   149,
+   150
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Cifras en euros sin decimales (unidades). Deuda financiera = Debiti verso banche corriente y no corriente; 'Accosti' (L152, probablemente acconti/anticipos) y deudas con controllanti no se incluyen por no ser claramente financieras."
+}

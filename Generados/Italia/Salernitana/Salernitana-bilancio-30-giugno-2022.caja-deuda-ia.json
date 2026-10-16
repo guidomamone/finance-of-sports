@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Salernitana/Salernitana-bilancio-30-giugno-2022.md",
+ "generado": "2026-10-16T22:46:26.388Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Valori in Euro",
+ "caja": {
+  "lineas": [
+   340
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   365,
+   366,
+   378
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda tomada del stato patrimoniale en euros: debiti verso banche no corrientes (L365), debiti finanziari no corrientes (L366, posiblemente incluye pasivos por arrendamiento) y debiti verso banche corrientes (L378). La tabla de posición financiera neta (L1148) muestra además 274 mil de otros debiti finanziari correnti sin línea visible en el balance. La caja del balance (7.021.140) difiere de la liquidez de la PFN (7.221 mil)."
+}

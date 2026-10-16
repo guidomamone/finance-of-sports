@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/Ferroviaria/balanco-2012.md",
+ "generado": "2026-10-16T22:37:45.842Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Em reais",
+ "caja": {
+  "lineas": [
+   136
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   136
+  ],
+  "ninguna": false
+ },
+ "observaciones": "L136 contiene en la misma fila Caixa (activo) y Empréstimos (pasivo, 269.795,65). Los mútuos con partes relacionadas (L143, préstamo del presidente) no se incluyeron por no ser deuda bancaria; el exigible a largo plazo (L146) corresponde a la nota 12, obligaciones tributarias, y no es deuda financiera."
+}

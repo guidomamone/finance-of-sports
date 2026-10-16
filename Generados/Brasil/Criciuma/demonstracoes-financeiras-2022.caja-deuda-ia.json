@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Criciuma/demonstracoes-financeiras-2022.md",
+ "generado": "2026-10-16T22:36:50.649Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "( Valores expressos em unidades de reais )",
+ "caja": {
+  "lineas": [
+   160
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   197,
+   206
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caja tomada de la línea de detalle (L160), idéntica al subtotal Disponibilidades (L159). Deuda financiera = Empréstimos e Financiamentos corriente (L197) + no corriente (L206)."
+}

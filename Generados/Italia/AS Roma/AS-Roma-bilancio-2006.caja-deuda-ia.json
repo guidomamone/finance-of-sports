@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2006.md",
+ "generado": "2026-10-16T22:31:36.281Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "30 GIUGNO 2006",
+ "caja": {
+  "lineas": [
+   1345
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1378,
+   1380
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance oficial (Stato Patrimoniale) está expresado en euros enteros, sin una frase explícita de escala (la nota integrativa usa 'migliaia di euro'); por eso la evidencia citada es solo el encabezado de columna. Debiti verso altri finanziatori vale 0 en 2006."
+}

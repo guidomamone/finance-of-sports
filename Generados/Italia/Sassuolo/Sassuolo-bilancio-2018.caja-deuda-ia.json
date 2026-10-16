@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2018.md",
+ "generado": "2026-10-16T22:46:54.199Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Il Bilancio di esercizio al 31 dicembre 2018 chiude con utile di euro 8.144.872,00",
+ "caja": {
+  "lineas": [
+   503
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   532,
+   533,
+   535
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance oficial está en euros (unidades), sin indicación explícita de escala en el encabezado; el reclasificado está en miles. Los debiti verso controllante Mapei por cash pooling (L539, 24,6 M€) tienen naturaleza financiera, pero no se incluyeron por el criterio estricto bancario/financiero."
+}

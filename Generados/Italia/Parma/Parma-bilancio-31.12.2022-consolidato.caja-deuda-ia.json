@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.md",
+ "generado": "2026-10-16T22:45:31.865Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "",
+ "caja": {
+  "lineas": [
+   493
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   530,
+   533
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance no indica la escala explícitamente; las cifras parecen en euros (unidades). Los debiti verso controllanti (L540, 63 M€, no corrientes) podrían ser financiamiento del accionista, pero no se incluyeron por no ser bancarios; la deuda bancaria L530 ya incluye la porción corriente y no corriente."
+}

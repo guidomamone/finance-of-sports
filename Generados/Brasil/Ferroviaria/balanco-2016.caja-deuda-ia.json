@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Brasil/Ferroviaria/balanco-2016.md",
+ "generado": "2026-10-16T22:37:50.051Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Em Reais",
+ "caja": {
+  "lineas": [
+   67,
+   68
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   67,
+   76
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caja = Caixa Geral + Depósitos Bancários (nota 4 suma 27.357). Deuda = Empréstimos/Financiamentos corrientes (L67, columna pasivo) + Empréstimos no corrientes (L76); los no corrientes incluyen leasing, capital de giro y saldo en cuenta del expresidente. Se excluyen los Parcelamentos (probablemente fiscales)."
+}

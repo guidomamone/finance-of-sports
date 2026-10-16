@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2014.md",
+ "generado": "2026-10-16T22:35:03.075Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Differenza da arrotondamento all'unità di Euro",
+ "caja": {
+  "lineas": [
+   158
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   237,
+   238,
+   241,
+   242
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda: bancos (L237-238) y otros financiadores (L241-242), corriente y no corriente; se excluyen los préstamos de socios (L234, postergados e infructíferos), aunque podrían considerarse deuda financiera. Los importes están en euros (unidades)."
+}

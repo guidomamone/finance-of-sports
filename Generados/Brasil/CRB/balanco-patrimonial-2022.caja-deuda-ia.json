@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/CRB/balanco-patrimonial-2022.md",
+ "generado": "2026-10-16T22:35:42.041Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(em reais)",
+ "caja": {
+  "lineas": [
+   12
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   26
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Solo hay deuda financiera corriente (Empréstimos e financiamentos); los tributos parcelados no circulantes son deuda fiscal y no se incluyen."
+}

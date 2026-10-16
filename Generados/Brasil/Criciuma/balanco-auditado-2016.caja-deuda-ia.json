@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/Criciuma/balanco-auditado-2016.md",
+ "generado": "2026-10-16T22:36:30.260Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Expresso em unidades de reais)",
+ "caja": {
+  "lineas": [
+   184
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   245
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Sólo aparece Empréstimo e Financiamentos en el no circulante; el circulante no muestra préstamos. Además, la suma de las líneas del pasivo circulante (2.723.003) no coincide con el total informado (2.724.003), y la del exigível a longo prazo no coincide con el total de 27.318.695, por lo que el balance podría estar incompleto."
+}

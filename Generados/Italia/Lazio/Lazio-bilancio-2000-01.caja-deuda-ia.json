@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-2000-01.md",
+ "generado": "2026-10-16T22:41:47.023Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "30/06/2001 Euro",
+ "caja": {
+  "lineas": [
+   809
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   841,
+   842
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance se presenta en euro (unidades) y también en lire (L1068, L1100-L1101); se eligió la versión en euro. 'Debiti verso altri finanziatori' se incluye como deuda financiera (probablemente factoring/cesión de créditos)."
+}

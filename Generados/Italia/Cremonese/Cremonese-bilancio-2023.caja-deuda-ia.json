@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/Cremonese/Cremonese-bilancio-2023.md",
+ "generado": "2026-10-16T22:36:08.048Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Relativamente destinazione dell'utile di esercizio pari ad euro 7.173.283",
+ "caja": {
+  "lineas": [
+   86
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   112,
+   113,
+   116,
+   117
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance está en euros sin indicación explícita de escala; los importes se presentan en unidades. Como deuda financiera se toman los debiti verso banche y los debiti verso altri finanziatori (corrientes y no corrientes); se excluyen los debiti verso enti-settore specifico."
+}

@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Parma/Parma-bilancio-30.06.2019-individual.md",
+ "generado": "2026-10-16T22:45:24.083Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "I prospetti di Stato Patrimoniale, di Conto Economico, il Rendiconto Finanziario e la Nota Integrativa sono espressi in unità di Euro.",
+ "caja": {
+  "lineas": [
+   463
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   497,
+   498,
+   501
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se incluyen debiti verso banche (corriente y no corriente) y debiti verso altri finanziatori; se excluyen debiti verso controllanti (1.440.000), cuya naturaleza financiera es dudosa."
+}

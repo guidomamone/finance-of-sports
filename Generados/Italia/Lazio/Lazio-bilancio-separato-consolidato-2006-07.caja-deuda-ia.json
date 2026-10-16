@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2006-07.md",
+ "generado": "2026-10-16T22:41:58.052Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Euro",
+ "caja": {
+  "lineas": [
+   860
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   886,
+   899,
+   901
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El documento contiene balance separado (L818-L918) y consolidado (L3473-L3575); se eligió el separado de S.S. Lazio S.p.A. al 30/06/2007. Los importes del balance están en euros (unidades): la frase 'Euro' citada proviene de L4088, que encabeza otro estado (Lazio Events), ya que el balance principal no trae una frase explícita de escala. Deuda financiera = debiti finanziari non correnti (0) + debiti finanziari correnti + debiti verso altri finanziatori (incluidos en la posición financiera neta)."
+}

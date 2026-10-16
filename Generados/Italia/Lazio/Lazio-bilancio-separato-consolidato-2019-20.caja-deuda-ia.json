@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2019-20.md",
+ "generado": "2026-10-16T22:43:00.620Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   3427
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   3456,
+   3469,
+   3471
+  ],
+  "ninguna": false
+ },
+ "observaciones": "I used the consolidated balance sheet. Its liabilities table has misaligned columns: I assumed the single value shown belongs to 30/06/2020. 'Debiti verso altri finanziatori' (factoring/financial advances) is included as financial debt, consistent with the net financial position. In the separate balance sheet the equivalent lines would be L893 for cash and L922, L935, L937 and L945 for debt."
+}

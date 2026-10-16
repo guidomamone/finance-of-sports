@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2019.md",
+ "generado": "2026-10-16T22:33:21.658Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   264
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   316,
+   317,
+   319,
+   320
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Cifras en euros (unidades); la evidencia 'valori in Euro' proviene de una tabla de nota (L807), no del encabezado del balance. Deuda financiera = debiti verso banche (entro/oltre) + debiti verso altri finanziatori (en 0 en 2019), coherente con la definición de indebitamento finanziario del documento. Debiti verso controllanti (L337) excluidos por no ser claramente financieros."
+}
