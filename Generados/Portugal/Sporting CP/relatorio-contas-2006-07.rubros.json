@@ -3,18 +3,9 @@
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.pdf",
  "club": "sportingcp-pt",
  "year": 2007,
- "generatedAt": "2026-10-16T17:13:25.769Z",
+ "generatedAt": "2026-10-16T17:14:57.804Z",
  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
  "rubros": [
-  {
-   "label": "Prestações de Serviços",
-   "lado": "revenue",
-   "page": 19,
-   "section": "estado",
-   "values": [
-    31.462
-   ]
-  },
   {
    "label": "Subsídios à Exploração",
    "lado": "revenue",
@@ -22,15 +13,6 @@
    "section": "estado",
    "values": [
     0
-   ]
-  },
-  {
-   "label": "Proveitos Suplementares",
-   "lado": "revenue",
-   "page": 19,
-   "section": "estado",
-   "values": [
-    6.659
    ]
   },
   {
@@ -67,6 +49,78 @@
    "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
    "values": [
     0.015
+   ]
+  },
+  {
+   "label": "BILHETEIRA",
+   "lado": "revenue",
+   "page": 8,
+   "section": "ajuste manual",
+   "values": [
+    3.47
+   ]
+  },
+  {
+   "label": "BILHETES ÉPOCA",
+   "lado": "revenue",
+   "page": 8,
+   "section": "ajuste manual",
+   "values": [
+    7.86
+   ]
+  },
+  {
+   "label": "DIREITOS TV",
+   "lado": "revenue",
+   "page": 8,
+   "section": "ajuste manual",
+   "values": [
+    8.992
+   ]
+  },
+  {
+   "label": "QUOTIZAÇÃO",
+   "lado": "revenue",
+   "page": 8,
+   "section": "ajuste manual",
+   "values": [
+    4.098
+   ]
+  },
+  {
+   "label": "PATROCÍNIOS + PUBLIC.",
+   "lado": "revenue",
+   "page": 8,
+   "section": "ajuste manual",
+   "values": [
+    6.131
+   ]
+  },
+  {
+   "label": "ROYALTIES",
+   "lado": "revenue",
+   "page": 8,
+   "section": "ajuste manual",
+   "values": [
+    0.297
+   ]
+  },
+  {
+   "label": "PARTICIPAÇÃO LC",
+   "lado": "revenue",
+   "page": 8,
+   "section": "ajuste manual",
+   "values": [
+    6.618
+   ]
+  },
+  {
+   "label": "Outros proveitos operacionais (resto)",
+   "lado": "revenue",
+   "page": 8,
+   "section": "ajuste manual",
+   "values": [
+    0.655
    ]
   },
   {

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.pdf",
  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.md",
- "generado": "2026-10-16T17:13:25.768Z",
+ "generado": "2026-10-16T17:14:57.804Z",
  "estado": "ok",
  "clubId": "sportingcp-pt",
  "year": 2007,
@@ -11,7 +11,112 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.pdf",
+   "campo": "fila",
+   "valor": "3470",
+   "linea": 180,
+   "etiqueta": "BILHETEIRA",
+   "lado": "ingreso",
+   "reemplaza": "Prestações de Serviços",
+   "motivo": "Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta",
+   "evidencia": "relatorio-contas-2006-07.md L180-L187 (cuadro de gestión)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.pdf",
+   "campo": "fila",
+   "valor": "7860",
+   "linea": 181,
+   "etiqueta": "BILHETES ÉPOCA",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta",
+   "evidencia": "relatorio-contas-2006-07.md L180-L187 (cuadro de gestión)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.pdf",
+   "campo": "fila",
+   "valor": "8992",
+   "linea": 182,
+   "etiqueta": "DIREITOS TV",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta",
+   "evidencia": "relatorio-contas-2006-07.md L180-L187 (cuadro de gestión)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.pdf",
+   "campo": "fila",
+   "valor": "4098",
+   "linea": 183,
+   "etiqueta": "QUOTIZAÇÃO",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta",
+   "evidencia": "relatorio-contas-2006-07.md L180-L187 (cuadro de gestión)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.pdf",
+   "campo": "fila",
+   "valor": "6131",
+   "linea": 184,
+   "etiqueta": "PATROCÍNIOS + PUBLIC.",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta",
+   "evidencia": "relatorio-contas-2006-07.md L180-L187 (cuadro de gestión)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.pdf",
+   "campo": "fila",
+   "valor": "297",
+   "linea": 185,
+   "etiqueta": "ROYALTIES",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta",
+   "evidencia": "relatorio-contas-2006-07.md L180-L187 (cuadro de gestión)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.pdf",
+   "campo": "fila",
+   "valor": "6618",
+   "linea": 187,
+   "etiqueta": "PARTICIPAÇÃO LC",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta",
+   "evidencia": "relatorio-contas-2006-07.md L180-L187 (cuadro de gestión)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.pdf",
+   "campo": "fila",
+   "valor": "655",
+   "linea": 187,
+   "etiqueta": "Outros proveitos operacionais (resto)",
+   "lado": "ingreso",
+   "reemplaza": "Proveitos Suplementares",
+   "motivo": "Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta",
+   "evidencia": "relatorio-contas-2006-07.md L180-L187 (cuadro de gestión)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -28,7 +133,7 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (impuesto invertido)",
-   "dif": 5.329070518200751e-15
+   "dif": 1.9539925233402755e-14
   },
   {
    "nombre": "lectura",
@@ -53,6 +158,14 @@
  ],
  "notas": [
   "la nota de \"Custos e Perdas Extraordinários\" no suma el renglón (1.04 contra 1.06, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: fila \"BILHETEIRA\" (ingreso) 3470, en lugar de \"Prestações de Serviços\" (2026-10-16, Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta)",
+  "ajuste manual: fila \"BILHETES ÉPOCA\" (ingreso) 7860 (2026-10-16, Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta)",
+  "ajuste manual: fila \"DIREITOS TV\" (ingreso) 8992 (2026-10-16, Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta)",
+  "ajuste manual: fila \"QUOTIZAÇÃO\" (ingreso) 4098 (2026-10-16, Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta)",
+  "ajuste manual: fila \"PATROCÍNIOS + PUBLIC.\" (ingreso) 6131 (2026-10-16, Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta)",
+  "ajuste manual: fila \"ROYALTIES\" (ingreso) 297 (2026-10-16, Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta)",
+  "ajuste manual: fila \"PARTICIPAÇÃO LC\" (ingreso) 6618 (2026-10-16, Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta)",
+  "ajuste manual: fila \"Outros proveitos operacionais (resto)\" (ingreso) 655, en lugar de \"Proveitos Suplementares\" (2026-10-16, Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta)",
   "escalón \"acumulados\": \"(D)\" (L708) es \"(B)\" (L706) + \"Outros Juros e Proveitos Similares\" (L707); no se cuenta",
   "escalón \"acumulados\": \"(C)\" (L691) es \"(A)\" (L689) + \"Juros e Custos Similares\" (L690); no se cuenta",
   "escalón \"acumulados\": \"(G)\" (L695) es \"(E)\" (L693) + \"Imposto sobre o Rendimento do Exercício\" (L694); no se cuenta",
@@ -90,27 +203,11 @@
  },
  "lineas": [
   {
-   "etiqueta": "Prestações de Serviços",
-   "lado": "ingreso",
-   "M": 31.462,
-   "pagina": 19,
-   "linea": 701,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Subsídios à Exploração",
    "lado": "ingreso",
    "M": 0,
    "pagina": 19,
    "linea": 702,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Proveitos Suplementares",
-   "lado": "ingreso",
-   "M": 6.659,
-   "pagina": 19,
-   "linea": 703,
    "origen": "estado"
   },
   {
@@ -144,6 +241,70 @@
    "pagina": 25,
    "linea": 1046,
    "origen": "nota que desglosa \"Proveitos e Ganhos Extraordinários\""
+  },
+  {
+   "etiqueta": "BILHETEIRA",
+   "lado": "ingreso",
+   "M": 3.47,
+   "pagina": 8,
+   "linea": 180,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "BILHETES ÉPOCA",
+   "lado": "ingreso",
+   "M": 7.86,
+   "pagina": 8,
+   "linea": 181,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "DIREITOS TV",
+   "lado": "ingreso",
+   "M": 8.992,
+   "pagina": 8,
+   "linea": 182,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "QUOTIZAÇÃO",
+   "lado": "ingreso",
+   "M": 4.098,
+   "pagina": 8,
+   "linea": 183,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "PATROCÍNIOS + PUBLIC.",
+   "lado": "ingreso",
+   "M": 6.131,
+   "pagina": 8,
+   "linea": 184,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "ROYALTIES",
+   "lado": "ingreso",
+   "M": 0.297,
+   "pagina": 8,
+   "linea": 185,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "PARTICIPAÇÃO LC",
+   "lado": "ingreso",
+   "M": 6.618,
+   "pagina": 8,
+   "linea": 187,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Outros proveitos operacionais (resto)",
+   "lado": "ingreso",
+   "M": 0.655,
+   "pagina": 8,
+   "linea": 187,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Fornecimentos e Serviços Externos",

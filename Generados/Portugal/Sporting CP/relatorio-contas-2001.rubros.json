@@ -3,18 +3,9 @@
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2001.pdf",
  "club": "sportingcp-pt",
  "year": 2002,
- "generatedAt": "2026-10-16T17:13:25.672Z",
+ "generatedAt": "2026-10-16T17:14:57.664Z",
  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
  "rubros": [
-  {
-   "label": "Prestações de Serviços",
-   "lado": "revenue",
-   "page": 22,
-   "section": "estado",
-   "values": [
-    21.477
-   ]
-  },
   {
    "label": "Subsídios à Exploração",
    "lado": "revenue",
@@ -22,15 +13,6 @@
    "section": "estado",
    "values": [
     0
-   ]
-  },
-  {
-   "label": "Proveitos Suplementares",
-   "lado": "revenue",
-   "page": 22,
-   "section": "estado",
-   "values": [
-    0.874
    ]
   },
   {
@@ -85,6 +67,69 @@
    "section": "nota que desglosa \"Proveitos e Ganhos Extraordinários\"",
    "values": [
     0.274
+   ]
+  },
+  {
+   "label": "Bilheteira",
+   "lado": "revenue",
+   "page": 9,
+   "section": "ajuste manual",
+   "values": [
+    5.589
+   ]
+  },
+  {
+   "label": "Bilhetes de Época",
+   "lado": "revenue",
+   "page": 9,
+   "section": "ajuste manual",
+   "values": [
+    2.675
+   ]
+  },
+  {
+   "label": "Dir. Transmissão Televisiva",
+   "lado": "revenue",
+   "page": 9,
+   "section": "ajuste manual",
+   "values": [
+    7.073
+   ]
+  },
+  {
+   "label": "Quotas de Sócios",
+   "lado": "revenue",
+   "page": 9,
+   "section": "ajuste manual",
+   "values": [
+    3.59
+   ]
+  },
+  {
+   "label": "Patrocínios",
+   "lado": "revenue",
+   "page": 9,
+   "section": "ajuste manual",
+   "values": [
+    1.93
+   ]
+  },
+  {
+   "label": "Royalties",
+   "lado": "revenue",
+   "page": 9,
+   "section": "ajuste manual",
+   "values": [
+    0.523
+   ]
+  },
+  {
+   "label": "Outros proveitos operacionais (resto)",
+   "lado": "revenue",
+   "page": 9,
+   "section": "ajuste manual",
+   "values": [
+    0.971
    ]
   },
   {
