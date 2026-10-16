@@ -239,6 +239,10 @@ llegue acá.
          ese PDF en transcripciones-estado.jsonl antes y después.
        - Una vez encontrada la rama: que deje el documento en 'extraído' si sus derivados están al día, o que la etapa 6 lo tome con una
          compuerta que excluya lo que la corrida decidió dejar afuera (sin estado, falta fijar). Medir con prueba-completa.
+    ah) `medir-cargar.mjs` NO SE PUEDE ACOTAR (2026-10-15, medición de la 237 y: ~6 min por corrida, dos corridas, sobre los ~570 documentos con
+       categorías de todos los países, cuando el cambio solo actúa en Clubes/Portugal/). Escalón posible: `--lista <archivo>` y `--dir <carpeta>`
+       para medir solo lo que el cambio puede tocar; la corrida completa queda para los cambios que afectan a todos (escalera de categorías).
+       Mirar también si recarga el sitio o los registros por documento (si es así, cargarlos una vez).
 238. LLEVAR A 0 LOS ESTADOS INTERMEDIOS DEL INVENTARIO (pedido de Guido, 2026-10-15). El objetivo no es borrar documentos de la lista
    sino que todo lo que está frenado a mitad de camino y se puede cargar termine cargado en el sitio. Estados intermedios: `listo`
    (transcripto y validado, falta el lote), `pendiente-segunda-voz`, `revisar`, `listo-para-jev`, `sin-rubros`, `sin-tablas` y
