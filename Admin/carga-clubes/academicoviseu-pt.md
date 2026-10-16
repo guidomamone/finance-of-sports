@@ -118,6 +118,86 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2024–25 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia única por palabras "Académico de Viseu" = "Academico Viseu".
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Academico Viseu/wf-2023-2024-02d5741e.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Academico Viseu/wf-2023-2024-02d5741e.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Receitas de bilheteira | pág. 16, Jev 0.99 |
+| 2 | Merchandising | pág. 16, Jev 1 |
+| 3 | Patrocínios, publicidade e corporate | pág. 16, Jev 1 |
+| 4 | Receitas de televisão | pág. 16, Jev 1 |
+| 5 | Competições da UEFA e nacionais | pág. 16, Jev 1 |
+| 6 | Subsídios Associações/FPF/Liga/UEFA | pág. 16, precedente |
+| 7 | Subsídios do Estado e outros entes públicos | pág. 16, Jev 0.99 |
+| 8 | Rendimentos de apostas | pág. 16, Jev 0.99 |
+| 9 | Fundo de infraestruturas Liga Portugal | pág. 16, precedente |
+| 10 | Outros | pág. 16, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e matérias consumidas | pág. 10, Jev 0.97 |
+| 2 | Trabalhos especializados | pág. 17, Jev 0.99 |
+| 3 | Publicidade e propaganda | pág. 17, Jev 1 |
+| 4 | Vigilância e segurança | pág. 17, Jev 0.97 |
+| 5 | Honorários | pág. 17, Jev 1 |
+| 6 | Conservação e reparação | pág. 17, Jev 0.99 |
+| 7 | Outros serviços especializados | pág. 17, Jev 0.96 |
+| 8 | Materiais | pág. 17, precedente |
+| 9 | Energia e fluidos | pág. 17, Jev 1 |
+| 10 | Deslocações, estadas e transportes | pág. 17, Jev 1 |
+| 11 | Rendas e alugueres | pág. 17, precedente |
+| 12 | Comunicação | pág. 17, Jev 1 |
+| 13 | Seguros | pág. 17, Jev 0.93 |
+| 14 | Contencioso e notariado | pág. 17, Jev 1 |
+| 15 | Despesas de representação | pág. 17, Jev 0.99 |
+| 16 | Limpeza, higiene e conforto | pág. 17, Jev 1 |
+| 17 | Outros serviços | pág. 17, Jev 1 |
+| 18 | Atletas - remunerações | pág. 23, Jev 1 |
+| 19 | Atletas - encargos sobre remunerações | pág. 23, Jev 0.99 |
+| 20 | Atletas - encargos com seguros | pág. 23, precedente |
+| 21 | Atletas - outros gastos | pág. 23, precedente |
+| 22 | Treinadores - remunerações | pág. 23, Jev 0.96 |
+| 23 | Treinadores - encargos sobre remunerações | pág. 23, Claude 0.85 |
+| 24 | Treinadores - encargos com seguros | pág. 23, precedente |
+| 25 | Outro pessoal - remunerações | pág. 23, precedente |
+| 26 | Outro pessoal - encargos sobre remunerações | pág. 23, precedente |
+| 27 | Outro pessoal - outros gastos | pág. 23, precedente |
+| 28 | Outros gastos com pessoal | pág. 23, precedente |
+| 29 | Imparidades de dívidas a receber (perdas/reversões) | pág. 10, Jev 0.99 |
+| 30 | Provisões (aumentos/reduções) | pág. 10, Jev 0.98 |
+| 31 | Impostos | pág. 17, Jev 0.96 |
+| 32 | Correções relativas a exercícios anteriores | pág. 17, Jev 1 |
+| 33 | Donativos e Quotizações | pág. 17, precedente |
+| 34 | Multas e penalidades | pág. 17, Jev 0.97 |
+| 35 | Despesas indevidamente documentadas | pág. 17, Jev 0.96 |
+| 36 | Bolsas de formação desportiva | pág. 17, Jev 0.99 |
+| 37 | Contratos de formação desportiva - Despesas médicas e equipamentos | pág. 17, precedente |
+| 38 | Contratos de formação desportiva - Gastos com alimentação | pág. 17, precedente |
+| 39 | Contratos de formação desportiva - Outros gastos | pág. 17, precedente |
+| 40 | Outros | pág. 17, Jev 0.99 |
+| 41 | Gastos/reversões de depreciação e de amortização | pág. 10, Jev 0.92 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2023–24 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia única por palabras "Académico de Viseu" = "Academico Viseu".
+```
+
 ## 2023
 
 ### Ingresos
@@ -196,4 +276,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Academico Viseu/wf-2022-2023-b797bc64.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### academicoviseu-pt-wf-2023-2024-02d5741e
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Academico Viseu/wf-2023-2024-02d5741e.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

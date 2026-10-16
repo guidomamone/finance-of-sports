@@ -18,7 +18,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'belenenses-pt': { 2025: 'pt-liga3' },
   'estorilpraia-pt': { 2025: 'pt-primeiraliga' },
   'vizela-pt': { 2025: 'pt-ligaportugal2' },
-  'academicoviseu-pt': { 2025: 'pt-ligaportugal2', 2023: 'pt-ligaportugal2' },
+  'academicoviseu-pt': { 2025: 'pt-ligaportugal2', 2023: 'pt-ligaportugal2', 2024: 'pt-ligaportugal2' },
   'academica-pt': { 2024: 'pt-liga3' },
   'arouca-pt': { 2025: 'pt-primeiraliga' },
   'chaves-pt': { 2023: 'pt-primeiraliga' },
