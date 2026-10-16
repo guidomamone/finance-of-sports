@@ -178,8 +178,10 @@ con los que no están en los pasos de arriba.
       del balance en euros. Escalón posible: sin año cargado del dato, plausibilidad contra los ingresos del año, o preferir la fila de la
       página del balance (título del balance) a la de una tabla del informe de gestión. Ojo: Casa Pia 2025 tiene de verdad 4.539 € de caja
       con 30,7 M de ingresos (balance en euros, L333): una regla por proporción sola la rompería.
-   b) DEUDA: Portugal tiene 37 de 165 años con deuda (contra 117 con caja). Mirar por qué la mayoría no pasa la compuerta (¿"Financiamentos
-      obtidos" con más de dos filas, consolidado y separado en el mismo .md, o el vecino sin la misma familia?).
+   b) DEUDA: Portugal tiene 40 de 165 años con deuda (contra 118 con caja). Diagnóstico: 71 sin propuesta (familias repetidas en tablas
+      resumen; hechas las mejoras 1 y 2) y 39 sin vecino que confirme. Lo que queda: Benfica 2023-2026 y Sporting (tablas resumen con su
+      propio "Total do passivo", así que la mejora 1 no restringe), y la escala de los documentos de Benfica 2023 en adelante (la
+      propuesta salía en unidades con un balance en miles).
    d) CELDA DE NOTAS CON ";": AVS 2022-23 "| Financiamentos obtidos | 3;8;9;21; | 4.495.141,06 | 2.062.069,19 |" (L352) se lee como importe
       38.921, y 2021 y 2023 proponen deuda 0,04 M (la compuerta no los confirma). Escalón posible: una celda de enteros chicos separados
       por ";" es una referencia a notas (esRefNota). Medir con --medir.
