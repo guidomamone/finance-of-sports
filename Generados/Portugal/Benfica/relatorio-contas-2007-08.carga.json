@@ -1,17 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2007-08.pdf",
- "generado": "2026-10-16T01:51:05.106Z",
- "frena": [
-  {
-   "etapa": "periodo",
-   "motivo": "el documento cubre un período otro de 11 meses al 2008-06-30: no se carga como ejercicio (juntarlo con los otros períodos: node tools/periodo.mjs --grupos)"
-  },
-  {
-   "etapa": "alta:reportType",
-   "motivo": "El documento parece un estado financiero INTERMEDIO, no el anual: el sitio carga ejercicios completos. ¿Es así (y hay que buscar el anual), o es el anual de un ejercicio corto?"
-  }
- ],
+ "generado": "2026-10-16T20:28:36.335Z",
+ "frena": [],
  "avisos": [
+  "ejercicio de transición por cambio de cierre (11 meses al 2008-06-30): encadena con el cierre anterior 2007-07-31 y el siguiente 2009-06-30; se carga como el año, con nota pública (to-do 237 ab)",
   "perímetro: individual (ajuste manual del documento, 2026-10-15: regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 1: el ejercicio se publicó con un solo perímetro (individual; desde 2019-20 la SAD ya no controla Benfica Estádio ni Benfica TV, vendidas a la SGPS))",
   "ingresos: ningún total impreso igual a la suma de las líneas (63.040143); queda la suma, verificada por el resultado del ejercicio",
   "gastos: ningún total impreso igual a la suma de las líneas (-59.044243); queda la suma, verificada por el resultado del ejercicio",
@@ -737,6 +729,13 @@
   },
   "confianza": "alta"
  },
+ "transicion": {
+  "meses": 11,
+  "inicio": "2007-08-01",
+  "cierre": "2008-06-30",
+  "anterior": "2007-07-31",
+  "siguiente": "2009-06-30"
+ },
  "clubId": "benfica-pt",
  "year": 2008,
  "ajustes": [
@@ -769,6 +768,16 @@
    "etiqueta": "Despesas com fundo de solidariedade",
    "motivo": "Costo de transacciones de atletas que la extracción dejó en ingresos con signo negativo; pasa a gasto sin cambiar el resultado (como Benfica 2010).",
    "evidencia": "relatorio-contas-2007-08.md, nota de transacções de atletas (pág. 62)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Benfica/relatorio-contas-2007-08.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "Claude 2026-10-16 (to-do 237 ab): es el relatório e contas anual del ejercicio de transición de 11 meses (1/8/2007-30/6/2008, cambio de cierre de julio a junio), no un intermedio",
+   "evidencia": "relatorio-contas-2007-08.md L236 y L412",
    "autor": "Claude",
    "fecha": "2026-10-16"
   }
@@ -1428,7 +1437,7 @@
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver respuesta del lote 80 (Benfica 2010, prestacao-contas-2010-11-11.md).",
+   "notaGuido": "Claude 2026-10-16 (segunda mirada del to-do 237 ad): fila de la nota de Fornecimentos e serviços de terceiros, como en 2010-11 (aceptado admin_general_expense) y sus hermanas de la nota; relatorio-contas-2007-08.md L2134",
    "destino": "expense",
    "amountNative": -0.033317
   },
@@ -1865,8 +1874,8 @@
   },
   "reportType": {
    "valor": "official_balance_sheet",
-   "fuente": "el documento parece un estado intermedio (2 señales en el texto: semestral, seis meses, interim...)",
-   "estado": "pregunta"
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): Claude 2026-10-16 (to-do 237 ab): es el relatório e contas anual del ejercicio de transición de 11 meses (1/8/2007-30/6/2008, cambio de cierre de julio a junio), no un intermedio",
+   "estado": "ok"
   },
   "perimetro": {
    "valor": "individual",
@@ -1895,8 +1904,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 19,
   "lineasGasto": 47,
   "metaFilas": 3,

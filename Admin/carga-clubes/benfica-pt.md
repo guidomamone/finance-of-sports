@@ -1479,6 +1479,105 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2008–09 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Benfica".
 ```
 
+## 2008
+
+### Ingresos
+
+```text
+2008: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Benfica/relatorio-contas-2007-08.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Benfica/relatorio-contas-2007-08.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: -; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Publicidade e patrocínios | pág. 57, Jev 1 |
+| 2 | Transmissões televisivas | pág. 57, Jev 1 |
+| 3 | Quotizações | pág. 57, precedente |
+| 4 | Receitas de bilheteira | pág. 57, Jev 1 |
+| 5 | Cativos | pág. 57, Jev 0.92 |
+| 6 | Cachets | pág. 57, precedente |
+| 7 | Cedência de atletas | pág. 57, precedente |
+| 8 | Outros | pág. 57, Claude 0.85 |
+| 9 | Royalties | pág. 58, precedente |
+| 10 | Comissões | pág. 58, precedente |
+| 11 | Prémios Liga Campeões | pág. 58, Jev 1 |
+| 12 | Prémios Carlsberg cup | pág. 58, Jev 1 |
+| 13 | Redução de imparidade de créditos | pág. 58, Jev 1 |
+| 14 | Benefícios penalidades contratuais | pág. 58, Jev 1 |
+| 15 | Indemnizações de seguros | pág. 58, Jev 1 |
+| 16 | Outros proveitos operacionais | pág. 58, Jev 0.99 |
+| 17 | Venda de direitos | pág. 62, Jev 1 |
+| 18 | Proveitos com fundo solidariedade | pág. 62, precedente |
+| 19 | Venda de direitos | pág. 62, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Despesas com transferência de atletas | pág. 62, precedente |
+| 2 | Despesas com fundo de solidariedade | pág. 62, precedente |
+| 3 | Comissões | pág. 59, precedente |
+| 4 | Rendas e alugueres | pág. 59, Jev 0.96 |
+| 5 | Trabalhos especializados | pág. 59, precedente |
+| 6 | Honorários | pág. 59, precedente |
+| 7 | Deslocações e estadas | pág. 59, precedente |
+| 8 | Vigilância e segurança | pág. 59, precedente |
+| 9 | Seguros | pág. 59, Jev 0.97 |
+| 10 | Equipamento desportivo | pág. 59, precedente |
+| 11 | Limpeza, higiene e conforto | pág. 59, Jev 1 |
+| 12 | Electricidade | pág. 59, Jev 1 |
+| 13 | Publicidade e propaganda | pág. 59, Jev 1 |
+| 14 | Água e outros fluidos | pág. 59, Jev 0.99 |
+| 15 | Medicamentos | pág. 59, Jev 0.96 |
+| 16 | Despesas de representação | pág. 59, Jev 0.99 |
+| 17 | Comunicação | pág. 59, Jev 1 |
+| 18 | Contencioso e notariado | pág. 59, Jev 1 |
+| 19 | Artigos para oferta | pág. 59, Jev 0.98 |
+| 20 | Associações, Federações e Liga | pág. 59, Jev 0.97 |
+| 21 | Subsídios futebol formação | pág. 59, Jev 0.91 |
+| 22 | Conservação e reparação | pág. 59, precedente |
+| 23 | Cedência de jogadores | pág. 59, Jev 0.99 |
+| 24 | Acordos e protocolos | pág. 59, precedente |
+| 25 | Outros fornecimentos e serviços | pág. 59, precedente |
+| 26 | - Remunerações fixas | pág. 60, precedente |
+| 27 | - Remunerações fixas | pág. 60, precedente |
+| 28 | - Remunerações variáveis / prémios | pág. 60, Jev 1 |
+| 29 | - Indeminizações | pág. 60, precedente |
+| 30 | Complementos de reforma | pág. 60, Claude 0.85 |
+| 31 | Encargos sobre remunerações | pág. 60, precedente |
+| 32 | Seguros de acidentes de trabalho | pág. 60, precedente |
+| 33 | Outros custos | pág. 60, Jev 0.96 |
+| 34 | Edifícios e outras construções | pág. 61, precedente |
+| 35 | Equipamento básico | pág. 61, precedente |
+| 36 | Equipamento de transporte | pág. 61, precedente |
+| 37 | Equipamento administrativo e utensílios | pág. 61, Jev 0.95 |
+| 38 | Outras imobilizações corpóreas | pág. 61, precedente |
+| 39 | Direito de utilização da marca | pág. 61, precedente |
+| 40 | Provisões | pág. 39, Claude 0.85 |
+| 41 | Impostos indirectos | pág. 61, Claude 0.85 |
+| 42 | Impostos directos | pág. 61, precedente |
+| 43 | Imparidade para créditos de cobrança duvidosa | pág. 61, Jev 1 |
+| 44 | Outros custos e perdas operacionais | pág. 61, Jev 1 |
+| 45 | Amortizações do exercício - Passes de atletas | pág. 62, Jev 1 |
+| 46 | Abates de atletas - Revogações contratuais | pág. 62, Jev 0.96 |
+| 47 | Perdas de imparidade | pág. 62, precedente |
+
+### Meta
+
+```text
+2008: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): perimetro = individual. regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 1: el ejercicio se publicó con un solo perímetro (individual; desde 2019-20 la SAD ya no controla Benfica Estádio ni Benfica TV, vendidas a la SGPS)
+2008: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): categoria = other_expenses. Costo de transacciones de atletas que la extracción dejó en ingresos con signo negativo; pasa a gasto sin cambiar el resultado (como Benfica 2010).
+2008: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): categoria = other_expenses. Costo de transacciones de atletas que la extracción dejó en ingresos con signo negativo; pasa a gasto sin cambiar el resultado (como Benfica 2010).
+2008: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): reportType = official_balance_sheet. Claude 2026-10-16 (to-do 237 ab): es el relatório e contas anual del ejercicio de transición de 11 meses (1/8/2007-30/6/2008, cambio de cierre de julio a junio), no un intermedio
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2007–08 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Benfica".
+```
+
 ## 2007
 
 ### Ingresos
@@ -1745,4 +1844,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/relatorio-contas-2005-06.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### benfica-pt-relatorio-contas-2007-08
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/relatorio-contas-2007-08.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

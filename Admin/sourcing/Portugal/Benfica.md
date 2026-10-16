@@ -88,3 +88,5 @@ Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Fi
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2007 desde `Clubes/Portugal/Benfica/relatorio-contas-2006-07.pdf` (sourceId `benfica-pt-relatorio-contas-2006-07`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2006 desde `Clubes/Portugal/Benfica/relatorio-contas-2005-06.pdf` (sourceId `benfica-pt-relatorio-contas-2005-06`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2008 desde `Clubes/Portugal/Benfica/relatorio-contas-2007-08.pdf` (sourceId `benfica-pt-relatorio-contas-2007-08`).
