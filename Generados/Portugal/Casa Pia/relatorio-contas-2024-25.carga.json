@@ -1,11 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Casa Pia/relatorio-contas-2024-25.pdf",
- "generado": "2026-10-16T02:49:44.613Z",
+ "generado": "2026-10-16T03:18:44.241Z",
  "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 cerró, pero la etapa 4 (validar-bloques.mjs) es de una versión anterior del .md: correr el lote"
-  },
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (casapia-pt)"
@@ -889,7 +885,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 12,
   "lineasGasto": 15,
   "metaFilas": 3,

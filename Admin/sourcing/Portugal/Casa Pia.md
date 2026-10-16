@@ -28,3 +28,5 @@ Ninguna. Si se retoma, buscar ejercicios anteriores a 2021/22 (la SDUQ de fútbo
 2019, así que el techo real podría ser 2019/20).
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2025 desde `Clubes/Portugal/Casa Pia/relatorio-contas-2024-25.pdf` (sourceId `casapia-pt-relatorio-contas-2024-25`).
