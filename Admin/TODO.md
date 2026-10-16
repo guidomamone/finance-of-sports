@@ -204,6 +204,9 @@ con los que no están en los pasos de arriba.
        abre, no de la palabra "juros".
        Más casos (lote 82): Marítimo 2023 "Juros" 598.818 y 2024 "Juros" 9.060 (nota Outros rendimentos); Paços de Ferreira 2022
        "Diferenças de câmbio favoráveis" 28.199 (además la categorización la sacó con no_es_rubro). Todos con ajuste `fila` en ingresos.
+       Además se repitió en Santa Clara 2023-24 ("Juros e Outros Rendimentos Similares" 360.009 como gasto; ajuste `fila`).
+       Y en el lote 81: Marítimo 2024-25 ("Juros" 112.880 de Outros rendimentos) y Nacional 2024-25 ("Correções relativas a períodos
+       anteriores" 113.202, nota 15.2): las dos como gasto, resueltas con ajuste `fila`. Ya son 5 casos: vale la pena el escalón de w).
     x) EN UN ESCANEO, LA ARITMÉTICA DEL ESTADO ENCUENTRA LOS DÍGITOS MAL LEÍDOS (Santa Clara 2024-25: 26 números sin confirmar; armando
        las dos columnas del estado de arriba hacia abajo y de abajo hacia arriba desde el resultado impreso aparecieron 12 cifras mal
        leídas, p. ej. imparidad 236.595,04 → 236.995,04, que arrastraba los subtotales; se corrigió el .md y se confirmaron 29 números con
@@ -211,13 +214,6 @@ con los que no están en los pasos de arriba.
        todos los subtotales y el resultado (compuerta: cierre al céntimo), y proponerlo con la imagen recortada.
     z) UN NÚMERO CONFIRMADO CON AJUSTE VUELVE A LA COLA (Santa Clara 2024-25, L1542 "40 646": tenía el ajuste `confirmado` y la corrida
        siguiente abrió el caso "numero-no-confirmado" 306c291 igual). Mirar si el ajuste se pierde cuando el .md cambia de versión.
-    aa) LA GUARDA DE FILAS DUPLICADAS FRENA REDONDEOS LEGÍTIMOS (lote 80: Sporting 2017-18 y 2020-21 no se escribieron por "Diferencia de
-       redondeo aparece dos veces con el MISMO monto"). verificar.mjs genera una fila de redondeo por cada nota que abre un renglón (2017-18:
-       personal −0,001, provisiones −0,001, otros gastos +0,001, plantel +0,001) y con todas los totales cierran exacto con el impreso.
-       Escalón posible: que la guarda de cargar exima las filas de origen redondeo (o que verificar las nombre con su renglón).
-       Además, w) se repitió en Santa Clara 2023-24 ("Juros e Outros Rendimentos Similares" 360.009 como gasto; ajuste `fila`).
-       Y en el lote 81: Marítimo 2024-25 ("Juros" 112.880 de Outros rendimentos) y Nacional 2024-25 ("Correções relativas a períodos
-       anteriores" 113.202, nota 15.2): las dos como gasto, resueltas con ajuste `fila`. Ya son 5 casos: vale la pena el escalón de w).
     ab) EL EJERCICIO DE 11 MESES POR CAMBIO DE CIERRE SE CARGA (decisión de Guido, 2026-10-15; regla en CONVENCIONES-DATOS). cargar.mjs frena
        Benfica 2007-08 (1/8/2007-30/6/2008, "período de 11 meses", relatorio-contas-2007-08.md L236) con "período otro de 11 meses", y ningún
        ajuste lo destraba. Escalón posible: un ajuste `periodo` (valor: "cambio-de-cierre") que deje pasar ese documento con publicNote, o la
