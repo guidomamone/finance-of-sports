@@ -726,6 +726,11 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
             P.avisos.push(`"${nombre}" en 0: real (${clubId} es una ΠΑΕ, sin ${campo === 'socios' ? 'socios' : 'otros deportes'}; ${e.md} L${cita.linea})`);
           }
         }
+        // (to-do 237 y) SAD/SDUQ portuguesa en la portada: el 0 es real en ESTE documento; no se guarda en el perfil del club (ver citaSADpt).
+        if ((tiene === undefined || tiene === null) && /^Clubes\/Portugal\//.test(pdf)) {
+          const cita = citaSADpt(readFileSync(resolve(ROOT, e.md), 'utf8'));
+          if (cita) { tiene = false; P.avisos.push(`"${nombre}" en 0: real en este documento (lo presenta una SAD/SDUQ, solo fútbol profesional: ${e.md} L${cita.linea} "${cita.texto}"; to-do 237 y)`); }
+        }
         if (tiene === true) ceros.push({ categoria: nombre });
         else if (tiene === undefined || tiene === null) {
           agregarCaso({ pdf, md: e.md, etapa: 'cargar', motivo: 'perfil', detalle: `${clubId}:${campo}`, que: `${pregunta}  (por qué: en ${year} "${nombre}" da 0; si el club tiene, falta un desglose y se reintenta; si no tiene, el 0 es real. Queda guardado en Admin/registros/perfil-clubes.jsonl para todos sus años.)`, propuesta: 'responder corregir --valor sí | corregir --valor no (o mandar un agente a buscar)' });
@@ -1197,11 +1202,21 @@ function comparar(P, prod) {
 
 // ΠΑΕ EN LA PORTADA (to-do 232 c): la primera línea, hasta la pág. 3 del visor, con la forma jurídica griega de sociedad de fútbol.
 const PAE_RE = /(?<![\p{L}])(?:Π\.\s?Α\.\s?Ε\.?|ΠΑΕ|ΠΟΔΟΣΦΑΙΡΙΚ\p{L}*\s+ΑΝΩΝΥΜ\p{L}*\s+ΕΤΑΙΡ\p{L}*|Ποδοσφαιρικ\p{L}*\s+Ανώνυμ\p{L}*\s+Εταιρ\p{L}*)(?![\p{L}])/u;
-function citaPAE(md) {
+function citaEnPortada(md, re) {
   const L = md.split('\n'); let fin = L.findIndex((l) => /^---\s*p[aá]g\.\s*4\s*---/i.test(l)); if (fin < 0) fin = Math.min(L.length, 200);
-  for (let i = 0; i < fin; i++) if (PAE_RE.test(L[i])) return { linea: i + 1, texto: L[i].replace(/[*#|]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 160) };
+  for (let i = 0; i < fin; i++) if (re.test(L[i])) return { linea: i + 1, texto: L[i].replace(/[*#|]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 160) };
   return null;
 }
+const citaPAE = (md) => citaEnPortada(md, PAE_RE);
+// SAD O SDUQ PORTUGUESA EN LA PORTADA (to-do 237 y, ok de Guido el 2026-10-15): la sociedad desportiva (SAD, SDUQ) que presenta el documento
+// participa solo en el fútbol profesional; las cuotas de socios y las otras modalidades son del club, que es otra entidad. A diferencia de
+// la ΠΑΕ NO se guarda en el perfil del club: Porto publica años del club (2016-2023, con socios y modalidades) y años de la SAD (2024-2025),
+// así que la cita vale para ESE documento ("el 0 es real acá") y un documento del club sigue preguntando. Solo Portugal. Medido sobre los
+// 186 .md portugueses: 158 la tienen en la portada; los 28 que no son del club o la asociación (Porto 2016-2023, Rio Ave 2014-15, Feirense,
+// Gil Vicente consolidado, Tondela y Vitória del club...) o SAD sin la forma en la portada (Santa Clara, Sporting 1999 y 2009-10), que siguen
+// a la cola. Coincide con las 36 respuestas de perfil de Portugal (las 17 "no" son SAD/SDUQ; Porto "sí" por los años del club).
+const SAD_PT_RE = /(?<![\p{L}])(?:S\.\s?A\.\s?D\.|SAD|SDUQ|Sociedade\s+An[óo]nima\s+Desportiva|Sociedade\s+Desportiva\s+Unipessoal\s+por\s+Quotas)(?![\p{L}])/u;
+const citaSADpt = (md) => citaEnPortada(md, SAD_PT_RE);
 
 // QUÉ TOCÓ UNA CARGA A MANO (to-do 232 y). AEK 2024 se cargó con `--escribir` y su `Admin/sourcing/Grecia/AEK Athens.md` quedó fuera de
 // los commits de esa sesión: la línea "Escrito (...)" lo nombraba, pero sale debajo del JSON entero, separada por comas y sin lo que tocan

@@ -588,6 +588,9 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
 - Sin perfil ni respuesta: si la portada del documento (hasta la pág. 3) dice ΠΑΕ / Ποδοσφαιρική Ανώνυμη Εταιρεία, `cargar.mjs` guarda
   "no" y "no" con esa línea como cita (fuente `forma-juridica`) y cierra los casos de perfil del club (to-do 232 c). Solo ΠΑΕ: la SAF
   brasileña no sirve (Cuiabá y Ferroviária tienen socios).
+- Portugal: si la portada dice SAD o SDUQ (sociedad desportiva, solo fútbol profesional), cuotas y otras secciones en 0 son reales EN ESE
+  DOCUMENTO, con esa línea como cita, y no se pregunta. No se guarda en el perfil del club, porque un club puede publicar años del club
+  (con socios y modalidades) y años de la SAD (Porto). Un documento del club sin SAD en la portada sigue preguntando (to-do 237 y).
 - Una respuesta de perfil en la cola (`corregir --valor sí|no`) se guarda en el perfil en el momento y cierra los casos iguales
   (mismo club y campo) de los otros años, pendientes (to-do 232 r).
 - Dos datos por club: ¿tiene socios que pagan cuota?, ¿tiene otros deportes en sus estados financieros? Sí, no o no se sabe, con evidencia.

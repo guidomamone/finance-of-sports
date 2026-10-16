@@ -187,10 +187,6 @@ llegue acá.
        leídas, p. ej. imparidad 236.595,04 → 236.995,04, que arrastraba los subtotales; se corrigió el .md y se confirmaron 29 números con
        ajustes). Escalón posible: antes de mandar números sin confirmar a la cola, probar qué cambio de UN dígito en una fila hace cerrar
        todos los subtotales y el resultado (compuerta: cierre al céntimo), y proponerlo con la imagen recortada.
-    y) EL PERFIL DE UNA SAD PORTUGUESA SE PUEDE CONTESTAR SOLO (Boavista, Benfica: "Participação em competições desportivas de carácter
-       profissional na modalidade de futebol", natureza da atividade / objeto social). Igual que la ΠΑΕ griega (to-do 232 c, cargar.mjs),
-       una SAD/SDUQ con ese objeto social no tiene socios ni otras secciones. Ojo con Porto, que alterna documentos del club (2016-2023) y
-       de la SAD: se resolvió con perfil "sí" y ajustes `cero-real` en el documento de la SAD (ver c).
     z) UN NÚMERO CONFIRMADO CON AJUSTE VUELVE A LA COLA (Santa Clara 2024-25, L1542 "40 646": tenía el ajuste `confirmado` y la corrida
        siguiente abrió el caso "numero-no-confirmado" 306c291 igual). Mirar si el ajuste se pierde cuando el .md cambia de versión.
     aa) LA GUARDA DE FILAS DUPLICADAS FRENA REDONDEOS LEGÍTIMOS (lote 80: Sporting 2017-18 y 2020-21 no se escribieron por "Diferencia de
