@@ -1,10 +1,22 @@
 {
  "pdf": "Clubes/Portugal/Braga/Relato_rio-Contas-2022-23-SAD.pdf",
- "generado": "2026-10-16T00:11:51.817Z",
- "frena": [],
+ "generado": "2026-10-16T00:46:05.223Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "braga-pt ya tiene el ejercicio 2023 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['braga-pt-relato-rio-contas-2022-23-sad'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 1 ejercicio(s) con un solo perímetro (individual); 7 documento(s) mirados)",
-  "materialidad: \"Ganhos em rescisões de contratos\" va como player_sales con 0.6 (las dudas de ingresos suman 0.06% de su lado)",
   "gastos: ningún total impreso igual a la suma de las líneas (-54.868764); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2023 (cierre 2023-06-30); pregunta en la cola (no frena)"
  ],
@@ -146,13 +158,13 @@
    },
    {
     "rawLabel": "Ganhos em rescisões de contratos",
-    "normalizedCategory": "player_sales",
+    "normalizedCategory": "other_income",
     "amountNative": 0.04798,
     "disclosureLevel": "aggregated",
     "_pag": 125,
-    "_escalon": "materialidad",
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.06% (≤ 1%) y esta tiene 0.6"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Mecanismo de solidariedade e direitos de formação",
@@ -992,12 +1004,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 0.04798,
-   "cat": "player_sales",
-   "conf": 0.6,
-   "escalon": "materialidad",
-   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.06% (≤ 1%) y esta tiene 0.6",
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": false,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): compensación del Botafogo por la rescisión del ENTRENADOR Artur Jorge y su cuerpo técnico, no de un jugador. [relatorio-contas-2023-24.md L3693]",
    "destino": "revenue",
    "amountNative": 0.04798
   },
@@ -1940,8 +1952,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2022–23 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Braga\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1981,13 +1993,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2022–23 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Braga\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 3,
   "lineasIngreso": 18,
   "lineasGasto": 53,
   "metaFilas": 3,

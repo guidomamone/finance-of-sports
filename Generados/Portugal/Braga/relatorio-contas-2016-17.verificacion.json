@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Braga/relatorio-contas-2016-17.pdf",
  "md": "Clubes/Portugal/Braga/relatorio-contas-2016-17.md",
- "generado": "2026-10-15T23:54:38.372Z",
+ "generado": "2026-10-16T00:30:33.810Z",
  "estado": "ok",
  "clubId": "braga-pt",
  "year": 2017,
@@ -31,14 +31,14 @@
    "dif": 0.0000020000000011677344
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2016 de este documento suma ingresos 26.24286; el sitio tiene 26.24286"
+  },
+  {
    "nombre": "documento del año 2016",
    "ok": true,
    "detalle": "ingresos de 2016: 26.24286 en relatorio-contas-2015-16.pdf y 26.24286 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2016: este chequeo no se puede hacer"
   }
  ],
  "notas": [

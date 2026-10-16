@@ -1,7 +1,20 @@
 {
  "pdf": "Clubes/Portugal/Braga/relatorio-contas-2016-17.pdf",
- "generado": "2026-10-16T00:11:52.113Z",
- "frena": [],
+ "generado": "2026-10-16T00:46:05.528Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "braga-pt ya tiene el ejercicio 2017 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['braga-pt-relatorio-contas-2016-17'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 1 ejercicio(s) con un solo perímetro (individual); 7 documento(s) mirados)",
   "gestión: ningún presidente confirmado cubre 2017 (cierre 2017-06-30); pregunta en la cola (no frena)"
@@ -1519,8 +1532,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2016–17 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Braga\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1560,13 +1573,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2016–17 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Braga\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 3,
   "lineasIngreso": 13,
   "lineasGasto": 41,
   "metaFilas": 3,

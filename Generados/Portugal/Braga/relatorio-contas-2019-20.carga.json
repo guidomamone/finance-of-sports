@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Braga/relatorio-contas-2019-20.pdf",
- "generado": "2026-10-16T00:11:52.250Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Imparidade de investimentos depreciáveis\" -> player_impairment 0.55"
-  }
- ],
+ "generado": "2026-10-16T00:46:05.668Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 1 ejercicio(s) con un solo perímetro (individual); 7 documento(s) mirados)",
   "gastos: ningún total impreso igual a la suma de las líneas (-43.00684); queda la suma, verificada por el resultado del ejercicio",
@@ -667,9 +662,9 @@
     "amountNative": -0.075,
     "disclosureLevel": "aggregated",
     "_pag": 67,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Edifícios e outras construções",
@@ -1779,11 +1774,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.075,
    "cat": "player_impairment",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): imparidad del derecho de inscripción del atleta Felipe Villagrán (75.000). [relatorio-contas-2019-20.md L2429]",
    "destino": "expense",
    "amountNative": -0.075
   },
@@ -2016,8 +2011,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 14,
   "lineasGasto": 58,
   "metaFilas": 3,

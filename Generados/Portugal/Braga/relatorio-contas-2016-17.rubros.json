@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Braga/relatorio-contas-2016-17.pdf",
   "club": "braga-pt",
   "year": 2017,
-  "generatedAt": "2026-10-15T23:54:38.372Z",
+  "generatedAt": "2026-10-16T00:30:33.811Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         0.343993
       ],
-      "glosa": "Venta de mercaderías (merchandising)"
+      "glosa": "Venta de mercancías (merchandising)"
     },
     {
       "label": "Receita de bilheteira",
@@ -24,7 +24,7 @@
       "values": [
         0.686021
       ],
-      "glosa": "Ingresos de taquilla"
+      "glosa": "Ingresos por taquilla"
     },
     {
       "label": "Direitos de transmissões",
@@ -144,7 +144,7 @@
       "values": [
         0.142371
       ],
-      "glosa": "Coste de las mercaderías vendidas"
+      "glosa": "Coste de las mercancías vendidas"
     },
     {
       "label": "Trabalhos especializados",
@@ -334,7 +334,7 @@
       "values": [
         0.277155
       ],
-      "glosa": "Arrendamientos y cánones"
+      "glosa": "Arrendamientos y alquileres"
     },
     {
       "label": "Comunicação",
@@ -444,7 +444,7 @@
       "values": [
         0.825513
       ],
-      "glosa": "Cargas sociales"
+      "glosa": "Cargas sobre remuneraciones"
     },
     {
       "label": "Seguro de acidentes de trabalho",
@@ -474,7 +474,7 @@
       "values": [
         0.126223
       ],
-      "glosa": "Deterioro de cuentas a cobrar (pérdidas/reversiones)"
+      "glosa": "Pérdidas por deterioro de cuentas a cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Impostos",
@@ -544,7 +544,7 @@
       "values": [
         3.912258
       ],
-      "glosa": "Gastos/reversiones por amortización y depreciación"
+      "glosa": "Dotaciones/reversiones de amortización y depreciación"
     }
   ]
 }

@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Braga/relatorio-contas-2023-24.pdf",
- "generado": "2026-10-16T00:11:52.557Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Ganhos em rescisões de contratos\" -> player_sales 0.6"
-  }
- ],
+ "generado": "2026-10-16T00:46:05.953Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 1 ejercicio(s) con un solo perímetro (individual); 7 documento(s) mirados)",
   "gastos: ningún total impreso igual a la suma de las líneas (-73.855188); queda la suma, verificada por el resultado del ejercicio",
@@ -160,13 +155,13 @@
    },
    {
     "rawLabel": "Ganhos em rescisões de contratos",
-    "normalizedCategory": "player_sales",
+    "normalizedCategory": "other_income",
     "amountNative": 2,
     "disclosureLevel": "aggregated",
     "_pag": 135,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Receitas de apostas desportivas",
@@ -1023,12 +1018,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 2,
-   "cat": "player_sales",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): compensación del Botafogo por la rescisión del ENTRENADOR Artur Jorge y su cuerpo técnico, no de un jugador. [relatorio-contas-2023-24.md L3693]",
    "destino": "revenue",
    "amountNative": 2
   },
@@ -2015,8 +2010,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 18,
   "lineasGasto": 54,
   "metaFilas": 3,

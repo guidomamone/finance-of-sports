@@ -119,6 +119,9 @@ window.RANKINGS["pt-primeiraliga"] = {
   2020: {
     leagueSize: null,
     clubs: [
+      { id:"braga-pt", revenue:75.121, reportType:"official_balance_sheet",
+        sourceId:"braga-pt-relatorio-contas-2019-20",
+        mix:[["Comercial / Sponsors",4.218],["Estadio",0.931],["Televisión",7.403],["Premios por competencias",12.57],["Venta de Jugadores",27.27],["Otros ingresos",22.729]] },
       { id:"rioave-pt", revenue:14.425, reportType:"official_balance_sheet",
         sourceId:"rioave-pt-relatorio-contas-2019-20",
         mix:[["Comercial / Sponsors",1.415],["Estadio",0.056],["Televisión",4.703],["Premios por competencias",0.233],["Venta de Jugadores",3.03],["Otros ingresos",4.988]] },
