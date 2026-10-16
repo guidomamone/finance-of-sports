@@ -155,6 +155,9 @@ window.RANKINGS["pt-primeiraliga"] = {
   2017: {
     leagueSize: null,
     clubs: [
+      { id:"porto-pt", revenue:192.152, reportType:"official_balance_sheet",
+        sourceId:"porto-pt-relatorio-contas-consolidadas-2016-17",
+        mix:[["Cuotas Sociales",5.353],["Comercial / Sponsors",23.461],["Estadio",18.225],["Televisión",27.312],["Premios por competencias",35.191],["Venta de Jugadores",73.971],["Otros ingresos",8.64]] },
       { id:"braga-pt", revenue:35.77, reportType:"official_balance_sheet",
         sourceId:"braga-pt-relatorio-contas-2016-17",
         mix:[["Comercial / Sponsors",3.137],["Estadio",0.783],["Televisión",5.74],["Premios por competencias",6.904],["Venta de Jugadores",18.306],["Otros ingresos",0.9]] },

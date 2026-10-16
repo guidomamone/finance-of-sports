@@ -54,3 +54,5 @@ Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Fi
 - Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2025 desde `Clubes/Portugal/Porto/wf-2024-2025-6b41056f.pdf` (sourceId `porto-pt-wf-2024-2025-6b41056f`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2016 desde `Clubes/Portugal/Porto/relatorio-contas-consolidadas-2015-16.pdf` (sourceId `porto-pt-relatorio-contas-consolidadas-2015-16`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2017 desde `Clubes/Portugal/Porto/relatorio-contas-consolidadas-2016-17.pdf` (sourceId `porto-pt-relatorio-contas-consolidadas-2016-17`).
