@@ -1,6 +1,14 @@
 // GENERADO por tools/generate-rankings.js: no editar a mano (el formato, en la cabecera del generador).
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["pt-primeiraliga"] = {
+  2026: {
+    leagueSize: null,
+    clubs: [
+      { id:"benfica-pt", revenue:370.076, reportType:"official_balance_sheet",
+        sourceId:"benfica-pt-relatorio-contas-2025-26",
+        mix:[["Comercial / Sponsors",32.559],["Estadio",44.439],["Televisión",63.44],["Premios por competencias",67.362],["Venta de Jugadores",125.775],["Otros ingresos",36.501]] },
+    ],
+  },
   2025: {
     leagueSize: null,
     clubs: [

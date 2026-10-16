@@ -42,6 +42,91 @@ sin rubros se vería en el sitio como un año en cero, y "sin dato no es cero"):
   2019: {"reportType":"official_balance_sheet","currency":"EUR","fxRef":"EUR@2019-06-30","sourceId":"benfica-pt-relatorio-contas-2018-19"}
 ```
 
+## 2026
+
+### Ingresos
+
+```text
+2026: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Benfica/relatorio-contas-2025-26.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Benfica/relatorio-contas-2025-26.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Prémios da UEFA | pág. 97, precedente |
+| 2 | Receitas de televisão | pág. 97, precedente |
+| 3 | Outras receitas | pág. 97, precedente |
+| 4 | Patrocinadores | pág. 97, precedente |
+| 5 | Rendas de espaço | pág. 97, precedente |
+| 6 | Royalties | pág. 97, precedente |
+| 7 | Outras receitas | pág. 97, precedente |
+| 8 | Corporate | pág. 97, precedente |
+| 9 | Bilhetes de época | pág. 97, precedente |
+| 10 | Competições nacionais | pág. 97, precedente |
+| 11 | Competições europeias | pág. 97, precedente |
+| 12 | Outras receitas | pág. 97, precedente |
+| 13 | Ganhos com alienações de direitos de atletas (mais-valias) | pág. 99, precedente |
+| 14 | Outros rendimentos com transações de direitos de atletas | pág. 99, Claude 0.85 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Gestão operacional do estádio | pág. 97, precedente |
+| 2 | Gestão operacional do canal BTV | pág. 97, precedente |
+| 3 | Trabalhos especializados | pág. 97, precedente |
+| 4 | Deslocações e estadas | pág. 97, precedente |
+| 5 | Vigilância e segurança | pág. 97, precedente |
+| 6 | Honorários | pág. 97, precedente |
+| 7 | Rendas e alugueres | pág. 97, Jev 0.96 |
+| 8 | Limpeza, higiene e conforto | pág. 97, Jev 1 |
+| 9 | Associações, Federações e Liga | pág. 97, Jev 0.97 |
+| 10 | Conservação e reparação | pág. 97, precedente |
+| 11 | Publicidade e propaganda | pág. 97, Jev 1 |
+| 12 | Equipamento desportivo | pág. 97, precedente |
+| 13 | Eletricidade | pág. 97, Jev 1 |
+| 14 | Despesas médicas | pág. 97, precedente |
+| 15 | Outros fornecimentos e serviços | pág. 97, precedente |
+| 16 | Royalties marca Benfica | pág. 78, Claude 0.85 |
+| 17 | Remunerações fixas | pág. 98, precedente |
+| 18 | Remunerações variáveis | pág. 98, precedente |
+| 19 | Remunerações fixas | pág. 98, precedente |
+| 20 | Remunerações variáveis | pág. 98, precedente |
+| 21 | Indemnizações | pág. 98, precedente |
+| 22 | Benefícios pós-emprego | pág. 98, precedente |
+| 23 | Encargos sobre remunerações | pág. 98, precedente |
+| 24 | Seguros de acidentes de trabalho | pág. 98, precedente |
+| 25 | Redébitos de/a partes relacionadas | pág. 98, precedente |
+| 26 | Outros gastos com pessoal | pág. 98, precedente |
+| 27 | Edifícios e outras construções | pág. 99, precedente |
+| 28 | Equipamento básico | pág. 99, precedente |
+| 29 | Equipamento administrativo | pág. 99, precedente |
+| 30 | Direitos de uso | pág. 99, precedente |
+| 31 | Direito de utilização da marca | pág. 99, precedente |
+| 32 | Programas de computador | pág. 99, precedente |
+| 33 | Direito de exploração futebol feminino | pág. 99, precedente |
+| 34 | Provisões/Imparidades | pág. 78, precedente |
+| 35 | Outros gastos e perdas operacionais | pág. 78, Jev 0.99 |
+| 36 | Perdas com alienações de direitos de atletas (menos-valias) | pág. 99, precedente |
+| 37 | Gastos associados a alienações de direitos de atletas (comissões) | pág. 99, precedente |
+| 38 | Abates de direitos de atletas | pág. 99, precedente |
+| 39 | Outros gastos com transações de direitos de atletas | pág. 99, precedente |
+| 40 | Amortizações de direitos de atletas | pág. 101, precedente |
+| 41 | Perdas de imparidade de direitos de atletas | pág. 101, Jev 1 |
+
+### Meta
+
+```text
+2026: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): perimetro = individual. regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 1: el ejercicio se publicó con un solo perímetro (individual; desde 2019-20 la SAD ya no controla Benfica Estádio ni Benfica TV, vendidas a la SGPS)
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2025–26 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Benfica".
+```
+
 ## 2025
 
 ### Ingresos
@@ -1310,4 +1395,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/relatorio-contas-2016-17-pos-AG.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### benfica-pt-relatorio-contas-2025-26
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/relatorio-contas-2025-26.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
