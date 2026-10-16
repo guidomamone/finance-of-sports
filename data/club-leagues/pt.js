@@ -23,7 +23,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'arouca-pt': { 2025: 'pt-primeiraliga', 2022: 'pt-primeiraliga', 2023: 'pt-primeiraliga', 2024: 'pt-primeiraliga' },
   'chaves-pt': { 2023: 'pt-primeiraliga', 2022: 'pt-ligaportugal2' },
   'felgueiras-pt': { 2024: 'pt-liga3' },
-  'gilvicente-pt': { 2025: 'pt-primeiraliga', 2021: 'pt-primeiraliga', 2022: 'pt-primeiraliga', 2023: 'pt-primeiraliga' },
+  'gilvicente-pt': { 2025: 'pt-primeiraliga', 2021: 'pt-primeiraliga', 2022: 'pt-primeiraliga', 2023: 'pt-primeiraliga', 2024: 'pt-primeiraliga' },
   'leixoes-pt': { 2025: 'pt-ligaportugal2', 2023: 'pt-ligaportugal2', 2024: 'pt-ligaportugal2' },
   'maritimo-pt': { 2025: 'pt-ligaportugal2' },
   'oliveirense-pt': { 2025: 'pt-ligaportugal2', 2023: 'pt-ligaportugal2', 2024: 'pt-ligaportugal2' },
