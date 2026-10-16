@@ -278,6 +278,8 @@ con los que no están en los pasos de arriba.
        TV, merchandising, competições y otros = 1.275.143,83, exacto con Vendas e serviços prestados; el lote pedía un reintento pago por TV y
        estadio en 0). Se cargó con ajustes `fila`. Portimonense 2024-25 trae algo parecido en el informe de gestión. Escalón posible: que
        localizar ofrezca ese anexo como desglose de Vendas cuando su suma da el renglón (compuerta: suma exacta).
+       Más casos (lote 84): Sporting 2002 a 2007, cuadro de gestión de los proveitos (columna de resultados reales, mismo total que
+       el estado): cargado con 45 ajustes `fila` (TV, taquilla, abonos, cuotas, sponsors, royalties, UEFA y un resto).
     am) EL RESULTADO IMPRESO SE TOMA SIN SIGNO (lote 82: AVS 2023-24 lo lee de L613 "3 041 302,19 € -", con el menos al final; Portimonense
        2022-23 de L1101, que no trae signo; los dos son pérdidas y el estado (L513 y L1036) lo dice). verificar.mjs dio OK y la propuesta de
        carga frenó por tie-out-resultado. Se resolvió con ajustes `resultado-final`. Escalón posible: con varios candidatos al resultado
