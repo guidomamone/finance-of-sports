@@ -147,6 +147,9 @@ window.RANKINGS["pt-primeiraliga"] = {
   2018: {
     leagueSize: null,
     clubs: [
+      { id:"porto-pt", revenue:213.425, reportType:"official_balance_sheet",
+        sourceId:"porto-pt-relatorio-contas-consolidadas-2017-18",
+        mix:[["Cuotas Sociales",6.161],["Comercial / Sponsors",36.326],["Estadio",10.176],["Televisión",27.643],["Premios por competencias",36.054],["Venta de Jugadores",84.414],["Otros ingresos",12.652]] },
       { id:"rioave-pt", revenue:9.256, reportType:"official_balance_sheet",
         sourceId:"rioave-pt-relatorio-contas-2017-18",
         mix:[["Comercial / Sponsors",1.493],["Estadio",0.428],["Televisión",2.565],["Premios por competencias",0.343],["Venta de Jugadores",3.621],["Otros ingresos",0.806]] },
