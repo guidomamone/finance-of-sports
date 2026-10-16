@@ -118,6 +118,62 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2024–25 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Paços de Ferreira".
 ```
 
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas de Mercadorias (Merchandising) | pág. 18, precedente |
+| 2 | Publicidade | pág. 18, precedente |
+| 3 | Direitos televisivos | pág. 18, precedente |
+| 4 | Bilhetes, camarotes e cativos | pág. 18, precedente |
+| 5 | Competições | pág. 18, precedente |
+| 6 | Outros | pág. 18, precedente |
+| 7 | Subsidios Estado | pág. 18, Jev 0.99 |
+| 8 | Subsidios formação UEFA | pág. 18, precedente |
+| 9 | Subsidios Taça de Portugal | pág. 18, precedente |
+| 10 | Outros | pág. 18, precedente |
+| 11 | Ganhos por aumentos de justo valor | pág. 20, Jev 1 |
+| 12 | Cedências jogadores | pág. 20, precedente |
+| 13 | Alienações | pág. 20, Jev 0.97 |
+| 14 | Lucros Placard | pág. 20, precedente |
+| 15 | Outros | pág. 20, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 2, precedente |
+| 2 | Fornecimentos e serviços externos | pág. 2, Jev 0.99 |
+| 3 | Jogadores | pág. 20, precedente |
+| 4 | Treinadores | pág. 20, precedente |
+| 5 | Pessoal Diverso | pág. 20, precedente |
+| 6 | Encargos sobre remunerações | pág. 20, precedente |
+| 7 | Seguros de acidentes de trabalho e de doenças profissionais | pág. 20, precedente |
+| 8 | Outros gastos com o pessoal | pág. 20, precedente |
+| 9 | Impostos | pág. 21, precedente |
+| 10 | Outros | pág. 21, precedente |
+| 11 | Gastos/reversões de depreciação e de amortização | pág. 2, precedente |
+
+### Meta
+
+```text
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): anio = 2020. El nombre del archivo no da el año (o lo da mal: '202223' se lee 2022); el ejercicio cierra el 30/06/2020 según el registro (periodo.cierre).
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2019–20 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Paços de Ferreira".
+```
+
 ## Fuentes
 
 ### pacosdeferreira-pt-contas-2425
@@ -126,4 +182,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Paços de Ferreira/contas_2425.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### pacosdeferreira-pt-47-demonstracoes-financeiras-compressed
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

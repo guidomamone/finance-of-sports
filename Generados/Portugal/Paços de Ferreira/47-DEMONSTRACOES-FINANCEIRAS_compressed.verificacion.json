@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.pdf",
  "md": "Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.md",
- "generado": "2026-10-15T21:56:50.265Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-16T03:04:32.700Z",
+ "estado": "ok",
+ "clubId": "pacosdeferreira-pt",
  "year": 2020,
  "escala": {
   "valor": "unidades",
@@ -11,12 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "ac5ad5d",
-  "cc0a617",
-  "39137a0"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.pdf",
+   "campo": "anio",
+   "valor": "2020",
+   "linea": null,
+   "motivo": "El nombre del archivo no da el año (o lo da mal: '202223' se lee 2022); el ejercicio cierra el 30/06/2020 según el registro (periodo.cierre).",
+   "evidencia": "transcripciones-estado.jsonl, periodo.cierre 2020-06-30",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -32,12 +39,12 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 0.000020099999999301232
+   "dif": 9.99999991702083e-8
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
   },
   {
    "nombre": "primer año",
@@ -48,10 +55,11 @@
  "notas": [
   "el desglose de \"Outros\" (3 filas) no suma la fila: quedó la fila",
   "la nota de \"Custo das mercadorias vendidas e das matérias consumidas\" no suma el renglón (0.168943 contra 0.030761, sumando sus renglones): quedó el renglón del estado",
-  "la nota de \"Fornecimentos e serviços externos\" no suma el renglón (0.292962 contra 2.425988, sumando sus renglones): quedó el renglón del estado",
-  "línea 78: 582 342,37 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (58234227) el resultado daría -59.112448 y no cierra)",
-  "línea 850: 198 256,58 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (19825558) el resultado daría 18.166738 y no cierra)",
-  "duda de extraer que no afecta la carga: Diferencia de 1,00 € entre estado (L76) y nota b27 (L872); probable error tipográfico.",
+  "la nota de \"Fornecimentos e serviços externos\" no suma el renglón (0.292962 contra 2.425968, sumando sus renglones): quedó el renglón del estado",
+  "línea 73: 2 425 968,43 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (242556843) el resultado daría -241.591418 y no cierra)",
+  "línea 78: 582 342,37 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (58234227) el resultado daría -59.112428 y no cierra)",
+  "línea 850: 198 256,58 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (19825558) el resultado daría 18.166758 y no cierra)",
+  "duda de extraer que no afecta la carga: Diferencia de 1,00 € entre estado (L76) y nota (L872); probablemente redondeo o error tipográfico.",
   "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": [
@@ -68,7 +76,7 @@
   {
    "renglon": "Fornecimentos e serviços externos",
    "suma": 0.292962,
-   "objetivo": 2.425988
+   "objetivo": 2.425968
   }
  ],
  "reintentado": false,
@@ -86,12 +94,12 @@
   {
    "renglon": "Fornecimentos e serviços externos",
    "suma": 0.292962,
-   "objetivo": 2.425988
+   "objetivo": 2.425968
   }
  ],
  "totales": {
   "ingresos": 5.984148,
-  "gastos": 7.430865,
+  "gastos": 7.430845,
   "financiero": -0.010295,
   "impuesto": -0.003552,
   "resultadoImpreso": -1.460544,
@@ -231,7 +239,7 @@
   {
    "etiqueta": "Fornecimentos e serviços externos",
    "lado": "gasto",
-   "M": 2.425988,
+   "M": 2.425968,
    "pagina": 2,
    "linea": 73,
    "origen": "estado"
@@ -335,7 +343,7 @@
  "primerAnio": {
   "escalon": 3,
   "estado": "confirmado",
-  "clave": "8b8abe0f5ab3e8b079a0709d1243caf1db2fb6a6",
+  "clave": "7513d9a5c62451f3e75593541b7a9e7a17f4e5cb",
   "rango": [
    67,
    87
@@ -371,9 +379,13 @@
    81,
    83
   ],
-  "user": "ESTADO DE RESULTADOS (líneas 67 a 87 del .md):\nL68: | RENDIMENTOS E GASTOS | Notas | 30/06/2020 | 30/06/2019 |\nL69: |---|---|---|---|\nL70: | Vendas e serviços prestados | 15 | 4 637 816,57 | 1 280 317,82 |\nL71: | Subsídios à exploração | 16 | 261 168,40 | 226 274,97 |\nL72: | Custo das mercadorias vendidas e das matérias consumidas | 7 | -30 760,61 | -9 044,24 |\nL73: | Fornecimentos e serviços externos | 17 | -2 425 988,43 | -3 197 852,85 |\nL74: | Gastos com o pessoal | 18 | -4 299 377,82 | -2 642 372,91 |\nL75: | Outros rendimentos | 19 | 1 085 162,79 | 5 986 439,88 |\nL76: | Outros gastos | 20 | -92 396,44 | -30 313,60 |\nL77: | **Resultado antes de depreciações, gastos de financiamento e impostos** | | -864 354,54 | 1 613 439,07 |\nL78: | Gastos/reversões de depreciação e de amortização | 5,6 | -582 342,37 | -580 268,97 |\nL79: | **Resultado operacional (antes de gastos de financiamento e impostos)** | | -1 446 696,81 | 1 033 170,10 |\nL80: | Juros e rendimentos similares obtidos | | 0,00 | 0,00 |\nL81: | Juros e gastos similares suportados | 21 | -10 294,79 | -16 010,15 |\nL82: | **Resultado antes de impostos** | | -1 456 991,60 | 1 017 159,95 |\nL83: | Imposto sobre o rendimento do período | 22 | -3 552,00 | -120 487,60 |\nL84: | **Resultado líquido do período** | | -1 460 543,60 | 896 672,35 |\nL86: A Gerência [assinaturas manuscritas]\nL87: O contabilista Certificado [assinatura manuscrita ilegible]\n\nLO QUE SE CARGA:\n- ingreso · \"Vendas de Mercadorias (Merchandising)\" · 0.039946 · L738 (de una nota)\n- ingreso · \"Publicidade\" · 0.534714 · L740 (de una nota)\n- ingreso · \"Direitos televisivos\" · 3.8 · L741 (de una nota)\n- ingreso · \"Bilhetes, camarotes e cativos\" · 0.13732 · L742 (de una nota)\n- ingreso · \"Competições\" · 0.094267 · L743 (de una nota)\n- ingreso · \"Outros\" · 0.031569 · L744 (de una nota)\n- ingreso · \"Subsidios Estado\" · 0.01413 · L754 (de una nota)\n- ingreso · \"Subsidios formação UEFA\" · 0.150887 · L755 (de una nota)\n- ingreso · \"Subsidios Taça de Portugal\" · 0.036539 · L756 (de una nota)\n- ingreso · \"Outros\" · 0.059612 · L758 (de una nota)\n- ingreso · \"Ganhos por aumentos de justo valor\" · 0.000994 · L846 (de una nota)\n- ingreso · \"Cedências jogadores\" · 0.743097 · L848 (de una nota)\n- ingreso · \"Alienações\" · 0.000813 · L849 (de una nota)\n- ingreso · \"Lucros Placard\" · 0.198257 · L850 (de una nota)\n- ingreso · \"Outros\" · 0.142002 · L851 (de una nota)\n- gasto · \"Custo das mercadorias vendidas e das matérias consumidas\" · 0.030761 · L72\n- gasto · \"Fornecimentos e serviços externos\" · 2.425988 · L73\n- gasto · \"Jogadores\" · 2.752511 · L824 (de una nota)\n- gasto · \"Treinadores\" · 0.464919 · L825 (de una nota)\n- gasto · \"Pessoal Diverso\" · 0.446796 · L826 (de una nota)\n- gasto · \"Encargos sobre remunerações\" · 0.24777 · L828 (de una nota)\n- gasto · \"Seguros de acidentes de trabalho e de doenças profissionais\" · 0.314452 · L829 (de una nota)\n- gasto · \"Outros gastos com o pessoal\" · 0.072931 · L830 (de una nota)\n- gasto · \"Impostos\" · 0.002133 · L869 (de una nota)\n- gasto · \"Outros\" · 0.090262 · L871 (de una nota)\n- gasto · \"Gastos/reversões de depreciação e de amortização\" · 0.582342 · L78\n- financiero · \"Juros e rendimentos similares obtidos\" · 0 · L80\n- financiero · \"Juros e gastos similares suportados\" · -0.010295 · L81\n- impuesto · \"Imposto sobre o rendimento do período\" · -0.003552 · L83"
+  "user": "ESTADO DE RESULTADOS (líneas 67 a 87 del .md):\nL68: | RENDIMENTOS E GASTOS | Notas | 30/06/2020 | 30/06/2019 |\nL69: |---|---|---|---|\nL70: | Vendas e serviços prestados | 15 | 4 637 816,57 | 1 280 317,82 |\nL71: | Subsídios à exploração | 16 | 261 168,40 | 226 274,97 |\nL72: | Custo das mercadorias vendidas e das matérias consumidas | 7 | -30 760,61 | -9 044,24 |\nL73: | Fornecimentos e serviços externos | 17 | -2 425 968,43 | -3 197 862,85 |\nL74: | Gastos com o pessoal | 18 | -4 299 377,82 | -2 642 372,91 |\nL75: | Outros rendimentos | 19 | 1 085 162,79 | 5 986 439,88 |\nL76: | Outros gastos | 20 | -92 396,44 | -30 313,60 |\nL77: | **Resultado antes de depreciações, gastos de financiamento e impostos** | | -864 354,54 | 1 613 439,07 |\nL78: | Gastos/reversões de depreciação e de amortização | 5,6 | -582 342,37 | -580 268,97 |\nL79: | **Resultado operacional (antes de gastos de financiamento e impostos)** | | -1 446 696,81 | 1 033 170,10 |\nL80: | Juros e rendimentos similares obtidos | | 0,00 | 0,00 |\nL81: | Juros e gastos similares suportados | 21 | -10 294,79 | -16 010,15 |\nL82: | **Resultado antes de impostos** | | -1 456 991,60 | 1 017 159,95 |\nL83: | Imposto sobre o rendimento do período | 22 | -3 552,00 | -120 487,60 |\nL84: | **Resultado líquido do período** | | -1 460 543,60 | 896 672,35 |\nL86: A Gerência [assinaturas manuscritas]\nL87: O contabilista Certificado [assinatura manuscrita ilegible]\n\nLO QUE SE CARGA:\n- ingreso · \"Vendas de Mercadorias (Merchandising)\" · 0.039946 · L738 (de una nota)\n- ingreso · \"Publicidade\" · 0.534714 · L740 (de una nota)\n- ingreso · \"Direitos televisivos\" · 3.8 · L741 (de una nota)\n- ingreso · \"Bilhetes, camarotes e cativos\" · 0.13732 · L742 (de una nota)\n- ingreso · \"Competições\" · 0.094267 · L743 (de una nota)\n- ingreso · \"Outros\" · 0.031569 · L744 (de una nota)\n- ingreso · \"Subsidios Estado\" · 0.01413 · L754 (de una nota)\n- ingreso · \"Subsidios formação UEFA\" · 0.150887 · L755 (de una nota)\n- ingreso · \"Subsidios Taça de Portugal\" · 0.036539 · L756 (de una nota)\n- ingreso · \"Outros\" · 0.059612 · L758 (de una nota)\n- ingreso · \"Ganhos por aumentos de justo valor\" · 0.000994 · L846 (de una nota)\n- ingreso · \"Cedências jogadores\" · 0.743097 · L848 (de una nota)\n- ingreso · \"Alienações\" · 0.000813 · L849 (de una nota)\n- ingreso · \"Lucros Placard\" · 0.198257 · L850 (de una nota)\n- ingreso · \"Outros\" · 0.142002 · L851 (de una nota)\n- gasto · \"Custo das mercadorias vendidas e das matérias consumidas\" · 0.030761 · L72\n- gasto · \"Fornecimentos e serviços externos\" · 2.425968 · L73\n- gasto · \"Jogadores\" · 2.752511 · L824 (de una nota)\n- gasto · \"Treinadores\" · 0.464919 · L825 (de una nota)\n- gasto · \"Pessoal Diverso\" · 0.446796 · L826 (de una nota)\n- gasto · \"Encargos sobre remunerações\" · 0.24777 · L828 (de una nota)\n- gasto · \"Seguros de acidentes de trabalho e de doenças profissionais\" · 0.314452 · L829 (de una nota)\n- gasto · \"Outros gastos com o pessoal\" · 0.072931 · L830 (de una nota)\n- gasto · \"Impostos\" · 0.002133 · L869 (de una nota)\n- gasto · \"Outros\" · 0.090262 · L871 (de una nota)\n- gasto · \"Gastos/reversões de depreciação e de amortização\" · 0.582342 · L78\n- financiero · \"Juros e rendimentos similares obtidos\" · 0 · L80\n- financiero · \"Juros e gastos similares suportados\" · -0.010295 · L81\n- impuesto · \"Imposto sobre o rendimento do período\" · -0.003552 · L83"
  },
  "confirmadosPorSumas": [
+  {
+   "linea": 73,
+   "numero": "2 425 968,43"
+  },
   {
    "linea": 78,
    "numero": "582 342,37"

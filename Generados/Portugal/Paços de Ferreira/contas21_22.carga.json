@@ -1,19 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Paços de Ferreira/contas21_22.pdf",
- "generado": "2026-10-15T22:34:44.518Z",
+ "generado": "2026-10-16T03:18:42.746Z",
  "frena": [
-  {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (pacosdeferreira-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "8 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Outros\" -> other_income 0; \"Subsídios Taça de Portugal\" -> competition_bonus 0.6; \"Outros\" -> other_income 0; \"Outros\" -> other_income 0; \"Cedências de Jogadores\" -> other_expenses 0.5"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
   {
    "etapa": "tie-out-resultado",
    "motivo": "resultado: ingresos 8.63606 + gastos -9.424955 + netInterest -0.064976 + tax 0.355277 = -0.498594 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" -0.470395)"
@@ -89,9 +77,9 @@
     "amountNative": 0.06954,
     "disclosureLevel": "aggregated",
     "_pag": 13,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)"
    },
    {
     "rawLabel": "Subsídios formação UEFA",
@@ -109,9 +97,9 @@
     "amountNative": 0.032289,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros",
@@ -119,9 +107,9 @@
     "amountNative": 0.001355,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)"
    },
    {
     "rawLabel": "Cedências jogadores",
@@ -149,9 +137,9 @@
     "amountNative": 0.241427,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)"
    }
   ],
   "expenseLines": [
@@ -171,9 +159,9 @@
     "amountNative": -0.04,
     "disclosureLevel": "aggregated",
     "_pag": 16,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros",
@@ -251,9 +239,9 @@
     "amountNative": -0.142173,
     "disclosureLevel": "aggregated",
     "_pag": 16,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros Serviços Especializados",
@@ -437,13 +425,13 @@
    },
    {
     "rawLabel": "Pessoal Diverso",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "wages_squad",
     "amountNative": -0.389546,
     "disclosureLevel": "aggregated",
     "_pag": 15,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Encargos sobre remunerações",
@@ -471,9 +459,9 @@
     "amountNative": -0.053707,
     "disclosureLevel": "aggregated",
     "_pag": 15,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Impostos",
@@ -497,7 +485,7 @@
    },
    {
     "rawLabel": "Gastos/reversões de depreciação e de amortização",
-    "normalizedCategory": "player_amortisation",
+    "normalizedCategory": "depreciation",
     "amountNative": -0.898326,
     "disclosureLevel": "aggregated",
     "_pag": 2,
@@ -528,7 +516,7 @@
    "title": "Paços de Ferreira — contas21_22 (ejercicio 2022)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Paços de Ferreira/contas21_22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Paços de Ferreira/contas21_22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Portugal/Paços de Ferreira/contas21_22.md",
@@ -546,7 +534,18 @@
  },
  "clubId": "pacosdeferreira-pt",
  "year": 2022,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Paços de Ferreira/contas21_22.pdf",
+   "campo": "anio",
+   "valor": "2022",
+   "linea": null,
+   "motivo": "El nombre del archivo no da el año (o lo da mal: '202223' se lee 2022); el ejercicio cierra el 30/06/2022 según el registro (periodo.cierre).",
+   "evidencia": "transcripciones-estado.jsonl, periodo.cierre 2022-06-30",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "seleccion": {
   "filas": 51,
   "notasUsadas": [],
@@ -637,12 +636,10 @@
    "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de Serviços\")",
    "signoFijo": 0.06954,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
    "destino": "revenue",
    "amountNative": 0.06954
   },
@@ -669,11 +666,11 @@
    "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
    "signoFijo": 0.032289,
    "cat": "competition_bonus",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 82 (Felgueiras, Gil Vicente, Leixões, Marítimo, Oliveirense, Paços); Gil Vicente 2024 con el consolidado de la Associação (único documento del año); Paços 2020 FSE corregido en el .md.",
    "destino": "revenue",
    "amountNative": 0.032289
   },
@@ -685,12 +682,10 @@
    "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
    "signoFijo": 0.001355,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
    "destino": "revenue",
    "amountNative": 0.001355
   },
@@ -746,12 +741,10 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 0.241427,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
    "destino": "revenue",
    "amountNative": 0.241427
   },
@@ -778,11 +771,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Subcontratos\")",
    "signoFijo": 0.04,
    "cat": "other_expenses",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 82 (Felgueiras, Gil Vicente, Leixões, Marítimo, Oliveirense, Paços); Gil Vicente 2024 con el consolidado de la Associação (único documento del año); Paços 2020 FSE corregido en el .md.",
    "destino": "expense",
    "amountNative": -0.04
   },
@@ -900,11 +893,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços Especializados\")",
    "signoFijo": 0.142173,
    "cat": "match_organisation_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
    "destino": "expense",
    "amountNative": -0.142173
   },
@@ -1187,12 +1180,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\" > desglose de \"Remunerações\")",
    "signoFijo": 0.389546,
-   "cat": "admin_general_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): subrenglón de Remunerações junto a jugadores y entrenadores. [contas_2425.md L328]",
    "destino": "expense",
    "amountNative": -0.389546
   },
@@ -1234,11 +1227,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\" > desglose de \"Outros\")",
    "signoFijo": 0.053707,
    "cat": "wages_squad",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 82 (Felgueiras, Gil Vicente, Leixões, Marítimo, Oliveirense, Paços); Gil Vicente 2024 con el consolidado de la Associação (único documento del año); Paços 2020 FSE corregido en el .md.",
    "destino": "expense",
    "amountNative": -0.053707
   },
@@ -1279,12 +1272,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 0.898326,
-   "cat": "player_amortisation",
+   "cat": "depreciation",
    "conf": 1,
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "notaGuido": "precedente del país: 1 clubes (Nacional), titulo:rendimentos e gastos · Claude 2026-10-15 (subagente Sonnet, seguridad alta; revisado por Claude): 81.250 es la amortización de pases (nota 7, solo columna Jogadores); las depreciaciones tangibles del ejercicio son 0 (nota 6: saldo inicial = final) [relatorio-contas-2023-24.md L139, L446-464]",
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
    "destino": "expense",
    "amountNative": -0.898326
   },
@@ -1365,7 +1358,7 @@
  "procedencia": {
   "anio": {
    "valor": 2022,
-   "fuente": "contenido del .md (año más nuevo con fecha de cierre)",
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): El nombre del archivo no da el año (o lo da mal: '202223' se lee 2022); el ejercicio cierra el 30/06/2022 según el registro (periodo.cierre)., confirmado por las fechas de cierre del .md",
    "estado": "ok"
   },
   "cierre": {
@@ -1406,7 +1399,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 5,
+  "motivos": 2,
   "lineasIngreso": 12,
   "lineasGasto": 35,
   "metaFilas": 3,

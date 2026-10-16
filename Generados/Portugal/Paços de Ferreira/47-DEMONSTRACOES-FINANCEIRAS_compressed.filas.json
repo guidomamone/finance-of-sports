@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.pdf",
  "md": "Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.md",
- "mdSha1": "bb26f28d58d43ce190e586d01c085a30fa2afee2",
+ "mdSha1": "768ad64b00c10feef4d668ae5879852edd27bc49",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-15T20:10:02.563Z",
+ "generado": "2026-10-16T03:04:19.200Z",
  "ubicacion": {
   "estado": [
    "b2"
@@ -26,12 +26,12 @@
   {
    "bloque": "b2",
    "escala": "unidades",
-   "evidencia": "Importes con decimales (ej. 4 637 816,57), sin indicación de miles"
+   "evidencia": "Importes con decimales de céntimos (ej. 4 637 816,57), sin indicación de miles"
   },
   {
    "bloque": "b21",
    "escala": "unidades",
-   "evidencia": "Importes en € con céntimos"
+   "evidencia": "Importes en € con céntimos (4 637 816,57 €)"
   },
   {
    "bloque": "b22",
@@ -109,8 +109,8 @@
    "bloque": "b2",
    "linea": 73,
    "etiqueta": "Fornecimentos e serviços externos",
-   "actual": "-2 425 988,43",
-   "anterior": "-3 197 852,85",
+   "actual": "-2 425 968,43",
+   "anterior": "-3 197 862,85",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": null
@@ -301,7 +301,7 @@
    "etiqueta": "",
    "actual": "4 637 816,57 €",
    "anterior": "1 280 317,82 €",
-   "tipo": "total",
+   "tipo": "subtotal",
    "lado": "ingreso",
    "detalla_a": "Vendas e serviços prestados"
   },
@@ -371,7 +371,7 @@
    "etiqueta": "",
    "actual": "261 168,40 €",
    "anterior": "226 274,97 €",
-   "tipo": "total",
+   "tipo": "subtotal",
    "lado": "ingreso",
    "detalla_a": "Subsídios à exploração"
   },
@@ -441,7 +441,7 @@
    "etiqueta": "",
    "actual": "1 085 162,79 €",
    "anterior": "5 986 439,88 €",
-   "tipo": "total",
+   "tipo": "subtotal",
    "lado": "ingreso",
    "detalla_a": "Outros rendimentos"
   },
@@ -491,7 +491,7 @@
    "etiqueta": "Custo das Mercadorias Vendidas e Matérias Consumidas",
    "actual": "30 760,61 €",
    "anterior": "9 044,24 €",
-   "tipo": "total",
+   "tipo": "subtotal",
    "lado": "gasto",
    "detalla_a": "Custo das mercadorias vendidas e das matérias consumidas"
   },
@@ -801,7 +801,7 @@
    "etiqueta": "",
    "actual": "2 425 968,43 €",
    "anterior": "3 197 862,85 €",
-   "tipo": "total",
+   "tipo": "subtotal",
    "lado": "gasto",
    "detalla_a": "Fornecimentos e serviços externos"
   },
@@ -891,7 +891,7 @@
    "etiqueta": "",
    "actual": "4 299 377,82 €",
    "anterior": "2 642 372,91 €",
-   "tipo": "total",
+   "tipo": "subtotal",
    "lado": "gasto",
    "detalla_a": "Gastos com o pessoal"
   },
@@ -941,7 +941,7 @@
    "etiqueta": "",
    "actual": "92 395,44 €",
    "anterior": "30 313,60 €",
-   "tipo": "total",
+   "tipo": "subtotal",
    "lado": "gasto",
    "detalla_a": "Outros gastos"
   },
@@ -981,7 +981,7 @@
    "etiqueta": "",
    "actual": "10 294,79 €",
    "anterior": "16 010,15 €",
-   "tipo": "total",
+   "tipo": "subtotal",
    "lado": "financiero",
    "detalla_a": "Juros e gastos similares suportados"
   },
@@ -1005,23 +1005,11 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se carga el importe del estado (-2 425 988,43, L73) para Fornecimentos e serviços externos aunque la nota totalice 2 425 968,43 € (L805)?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "Fornecimentos e serviços externos",
-   "texto": "Diferencia de 20,00 € en 2020 y 10,00 € en 2019 entre estado (L73) y total de nota b23 (L805); posible error tipográfico.",
-   "bloques": [
-    "b2",
-    "b23"
-   ],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se carga el importe del estado (-92 396,44, L76) para Outros gastos aunque la nota indique 92 395,44 € (L868/L872)?",
+   "pregunta": "¿Se carga 'Outros gastos' con el importe del estado (-92 396,44, L76) aunque la nota 20 imprima 92 395,44 € (L868, L872)?",
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "Outros gastos",
-   "texto": "Diferencia de 1,00 € entre estado (L76) y nota b27 (L872); probable error tipográfico.",
+   "texto": "Diferencia de 1,00 € entre estado (L76) y nota (L872); probablemente redondeo o error tipográfico.",
    "bloques": [
     "b2",
     "b27"
@@ -1029,5 +1017,5 @@
    "afecta_carga": false
   }
  ],
- "observaciones": "Estado por naturaleza sin total de ingresos ni de gastos impresos. Nota b14 desglosa el CMVMC vía movimiento de inventarios (Iniciais+Compras-Reclassificação-Finais), los importes se transcriben sin signo. En b22, b26, b27, b28 la primera fila en negrita es subtotal que coincide con el total."
+ "observaciones": "Estado de resultados por naturaleza en euros (unidades con céntimos). No hay total de ingresos ni de gastos impresos. En b14 el CMVMC se presenta como movimiento de inventarios (inicial + compras + regularización - final); los componentes no son sumables directamente con signo positivo. Las filas sin etiqueta (L745, L759, L805, L831, L852, L872, L883) son totales de la nota que coinciden con el renglón del estado. En b28 el detalle 'Outros financeiros' desglosa el renglón 'Juros e gastos similares suportados' del estado."
 }

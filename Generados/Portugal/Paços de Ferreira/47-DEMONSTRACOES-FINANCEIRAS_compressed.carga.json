@@ -1,26 +1,318 @@
 {
  "pdf": "Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.pdf",
- "generado": "2026-10-15T22:34:44.432Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 3 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (pacosdeferreira-pt)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 3 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
-  }
+ "generado": "2026-10-16T03:18:42.674Z",
+ "frena": [],
+ "avisos": [
+  "gestión: ningún presidente confirmado cubre 2020 (cierre 2020-06-30); pregunta en la cola (no frena)"
  ],
- "avisos": [],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "pacosdeferreira-pt",
+  "year": 2020,
+  "cierre": "2020-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Vendas de Mercadorias (Merchandising)",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.039946,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Publicidade",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.534714,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Direitos televisivos",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 3.8,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Bilhetes, camarotes e cativos",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 0.13732,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Competições",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 0.094267,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.031569,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Subsidios Estado",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.01413,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Subsidios formação UEFA",
+    "normalizedCategory": "youth_football",
+    "amountNative": 0.150887,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Subsidios Taça de Portugal",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 0.036539,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Outros",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.059612,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ganhos por aumentos de justo valor",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.000994,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Cedências jogadores",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.743097,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Alienações",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.000813,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Lucros Placard",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.198257,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.142002,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Custo das mercadorias vendidas e das matérias consumidas",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.030761,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Fornecimentos e serviços externos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2.425968,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Jogadores",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -2.752511,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Treinadores",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.464919,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Pessoal Diverso",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.446796,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Encargos sobre remunerações",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.24777,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Seguros de acidentes de trabalho e de doenças profissionais",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.314452,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros gastos com o pessoal",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.072931,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Impostos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.002133,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Outros",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.090262,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_income)"
+   },
+   {
+    "rawLabel": "Gastos/reversões de depreciação e de amortização",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.582342,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2020-06-30",
+   "sourceId": "pacosdeferreira-pt-47-demonstracoes-financeiras-compressed",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.010295,
+   "tax": -0.003552,
+   "extraRows": [
+    {
+     "label": "Juros e rendimentos similares obtidos",
+     "value": 0
+    },
+    {
+     "label": "Juros e gastos similares suportados",
+     "value": -0.010295
+    },
+    {
+     "label": "Imposto sobre o rendimento do período",
+     "value": -0.003552
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 5.984148,
+   "officialTotalExpenses": 7.430845,
+   "officialPAT": -1.460544
+  },
+  "source": {
+   "id": "pacosdeferreira-pt-47-demonstracoes-financeiras-compressed",
+   "clubId": "pacosdeferreira-pt",
+   "title": "Paços de Ferreira — 47-DEMONSTRACOES-FINANCEIRAS_compressed (ejercicio 2020)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.md",
  "reemplaza": false,
  "periodo": {
@@ -36,5 +328,548 @@
  },
  "clubId": "pacosdeferreira-pt",
  "year": 2020,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.pdf",
+   "campo": "anio",
+   "valor": "2020",
+   "linea": null,
+   "motivo": "El nombre del archivo no da el año (o lo da mal: '202223' se lee 2022); el ejercicio cierra el 30/06/2020 según el registro (periodo.cierre).",
+   "evidencia": "transcripciones-estado.jsonl, periodo.cierre 2020-06-30",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
+ "seleccion": {
+  "filas": 29,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Vendas de Mercadorias (Merchandising)",
+   "page": 18,
+   "native": 0.039946,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\")",
+   "signoFijo": 0.039946,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.039946
+  },
+  {
+   "label": "Publicidade",
+   "page": 18,
+   "native": 0.534714,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de Serviços\")",
+   "signoFijo": 0.534714,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.534714
+  },
+  {
+   "label": "Direitos televisivos",
+   "page": 18,
+   "native": 3.8,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de Serviços\")",
+   "signoFijo": 3.8,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.8
+  },
+  {
+   "label": "Bilhetes, camarotes e cativos",
+   "page": 18,
+   "native": 0.13732,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de Serviços\")",
+   "signoFijo": 0.13732,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.13732
+  },
+  {
+   "label": "Competições",
+   "page": 18,
+   "native": 0.094267,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de Serviços\")",
+   "signoFijo": 0.094267,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.094267
+  },
+  {
+   "label": "Outros",
+   "page": 18,
+   "native": 0.031569,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de Serviços\")",
+   "signoFijo": 0.031569,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.031569
+  },
+  {
+   "label": "Subsidios Estado",
+   "page": 18,
+   "native": 0.01413,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
+   "signoFijo": 0.01413,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.01413
+  },
+  {
+   "label": "Subsidios formação UEFA",
+   "page": 18,
+   "native": 0.150887,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
+   "signoFijo": 0.150887,
+   "cat": "youth_football",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.150887
+  },
+  {
+   "label": "Subsidios Taça de Portugal",
+   "page": 18,
+   "native": 0.036539,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
+   "signoFijo": 0.036539,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 82 (Felgueiras, Gil Vicente, Leixões, Marítimo, Oliveirense, Paços); Gil Vicente 2024 con el consolidado de la Associação (único documento del año); Paços 2020 FSE corregido en el .md.",
+   "destino": "revenue",
+   "amountNative": 0.036539
+  },
+  {
+   "label": "Outros",
+   "page": 18,
+   "native": 0.059612,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Subsídios à exploração\")",
+   "signoFijo": 0.059612,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.059612
+  },
+  {
+   "label": "Ganhos por aumentos de justo valor",
+   "page": 20,
+   "native": 0.000994,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
+   "signoFijo": 0.000994,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.000994
+  },
+  {
+   "label": "Cedências jogadores",
+   "page": 20,
+   "native": 0.743097,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos\" > desglose de \"Outros Rendimentos\")",
+   "signoFijo": 0.743097,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.743097
+  },
+  {
+   "label": "Alienações",
+   "page": 20,
+   "native": 0.000813,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos\" > desglose de \"Outros Rendimentos\")",
+   "signoFijo": 0.000813,
+   "cat": "player_sales",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.000813
+  },
+  {
+   "label": "Lucros Placard",
+   "page": 20,
+   "native": 0.198257,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos\" > desglose de \"Outros Rendimentos\")",
+   "signoFijo": 0.198257,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.198257
+  },
+  {
+   "label": "Outros",
+   "page": 20,
+   "native": 0.142002,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outros rendimentos\" > desglose de \"Outros Rendimentos\")",
+   "signoFijo": 0.142002,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.142002
+  },
+  {
+   "label": "Custo das mercadorias vendidas e das matérias consumidas",
+   "page": 2,
+   "native": 0.030761,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.030761,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.030761
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "page": 2,
+   "native": 2.425968,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.425968,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.425968
+  },
+  {
+   "label": "Jogadores",
+   "page": 20,
+   "native": 2.752511,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\" > desglose de \"Remunerações\")",
+   "signoFijo": 2.752511,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.752511
+  },
+  {
+   "label": "Treinadores",
+   "page": 20,
+   "native": 0.464919,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\" > desglose de \"Remunerações\")",
+   "signoFijo": 0.464919,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.464919
+  },
+  {
+   "label": "Pessoal Diverso",
+   "page": 20,
+   "native": 0.446796,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\" > desglose de \"Remunerações\")",
+   "signoFijo": 0.446796,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): subrenglón de Remunerações junto a jugadores y entrenadores. [contas_2425.md L328]",
+   "destino": "expense",
+   "amountNative": -0.446796
+  },
+  {
+   "label": "Encargos sobre remunerações",
+   "page": 20,
+   "native": 0.24777,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\" > desglose de \"Outros\")",
+   "signoFijo": 0.24777,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.24777
+  },
+  {
+   "label": "Seguros de acidentes de trabalho e de doenças profissionais",
+   "page": 20,
+   "native": 0.314452,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\" > desglose de \"Outros\")",
+   "signoFijo": 0.314452,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.314452
+  },
+  {
+   "label": "Outros gastos com o pessoal",
+   "page": 20,
+   "native": 0.072931,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\" > desglose de \"Outros\")",
+   "signoFijo": 0.072931,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 82 (Felgueiras, Gil Vicente, Leixões, Marítimo, Oliveirense, Paços); Gil Vicente 2024 con el consolidado de la Associação (único documento del año); Paços 2020 FSE corregido en el .md.",
+   "destino": "expense",
+   "amountNative": -0.072931
+  },
+  {
+   "label": "Impostos",
+   "page": 21,
+   "native": 0.002133,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Outros gastos\")",
+   "signoFijo": 0.002133,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.002133
+  },
+  {
+   "label": "Outros",
+   "page": 21,
+   "native": 0.090262,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Outros gastos\")",
+   "signoFijo": 0.090262,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto (categorias.json decía other_income)",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.090262
+  },
+  {
+   "label": "Gastos/reversões de depreciação e de amortização",
+   "page": 2,
+   "native": 0.582342,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.582342,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Gil Vicente, Leixões, Mafra, Paços, Portimonense, Torreense).",
+   "destino": "expense",
+   "amountNative": -0.582342
+  },
+  {
+   "label": "Juros e rendimentos similares obtidos",
+   "page": null,
+   "native": 0,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Juros e gastos similares suportados",
+   "page": null,
+   "native": -0.010295,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Imposto sobre o rendimento do período",
+   "page": null,
+   "native": -0.003552,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Vendas e serviços prestados\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de Serviços\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Subsídios à exploração\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Outros rendimentos\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Outros rendimentos\" > desglose de \"Outros Rendimentos\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Gastos com o pessoal\" > desglose de \"Remunerações\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Gastos com o pessoal\" > desglose de \"Outros\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Outros gastos\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 5.984147,
+  "expSum": -7.430845,
+  "officialTotalRevenue": 5.984148,
+  "officialTotalExpenses": 7.430845,
+  "officialPAT": -1.460544,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -1.460544,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 5.984148
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 7.430845
+  }
+ },
+ "liga": {
+  "valor": "pt-primeiraliga",
+  "fuente": "roster cacheado de \"2019–20 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Paços de Ferreira\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2020,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): El nombre del archivo no da el año (o lo da mal: '202223' se lee 2022); el ejercicio cierra el 30/06/2020 según el registro (periodo.cierre)., confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2020-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (106 de 106 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Portugal (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2020-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2020-06-30 = 0.893 (Cierre BCE al 30/6/2020 (1 EUR = 1,1198 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "pacosdeferreira-pt-47-demonstracoes-financeiras-compressed",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "pt-primeiraliga",
+   "fuente": "roster cacheado de \"2019–20 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Paços de Ferreira\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 15,
+  "lineasGasto": 11,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

@@ -209,6 +209,9 @@ window.RANKINGS["pt-primeiraliga"] = {
       { id:"famalicao-pt", revenue:7.635, reportType:"official_balance_sheet",
         sourceId:"famalicao-pt-relatorio-contas-2019-20",
         mix:[["Comercial / Sponsors",1.093],["Estadio",0.422],["Televisión",5.039],["Premios por competencias",0.297],["Venta de Jugadores",0.178],["Otros ingresos",0.606]] },
+      { id:"pacosdeferreira-pt", revenue:6.701, reportType:"official_balance_sheet",
+        sourceId:"pacosdeferreira-pt-47-demonstracoes-financeiras-compressed",
+        mix:[["Comercial / Sponsors",0.644],["Estadio",0.154],["Televisión",4.255],["Premios por competencias",0.146],["Venta de Jugadores",0.833],["Otras secciones deportivas",0.169],["Otros ingresos",0.5]] },
     ],
   },
   2019: {

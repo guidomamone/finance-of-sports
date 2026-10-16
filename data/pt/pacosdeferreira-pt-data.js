@@ -14,6 +14,23 @@ const pacosdeferreiraptRevenueLinesByYear = {
     { rawLabel:'Cedência de Espaço', normalizedCategory:'other_income', amountNative:0.056541, disclosureLevel:'aggregated' },
     { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.00331, disclosureLevel:'aggregated' },
   ],
+  2020: [
+    { rawLabel:'Vendas de Mercadorias (Merchandising)', normalizedCategory:'sponsorship_commercial', amountNative:0.039946, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade', normalizedCategory:'sponsorship_commercial', amountNative:0.534714, disclosureLevel:'aggregated' },
+    { rawLabel:'Direitos televisivos', normalizedCategory:'broadcasting', amountNative:3.8, disclosureLevel:'aggregated' },
+    { rawLabel:'Bilhetes, camarotes e cativos', normalizedCategory:'matchday_competition', amountNative:0.13732, disclosureLevel:'aggregated' },
+    { rawLabel:'Competições', normalizedCategory:'competition_bonus', amountNative:0.094267, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.031569, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsidios Estado', normalizedCategory:'other_income', amountNative:0.01413, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsidios formação UEFA', normalizedCategory:'youth_football', amountNative:0.150887, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsidios Taça de Portugal', normalizedCategory:'competition_bonus', amountNative:0.036539, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.059612, disclosureLevel:'aggregated' },
+    { rawLabel:'Ganhos por aumentos de justo valor', normalizedCategory:'other_income', amountNative:0.000994, disclosureLevel:'aggregated' },
+    { rawLabel:'Cedências jogadores', normalizedCategory:'player_sales', amountNative:0.743097, disclosureLevel:'aggregated' },
+    { rawLabel:'Alienações', normalizedCategory:'player_sales', amountNative:0.000813, disclosureLevel:'aggregated' },
+    { rawLabel:'Lucros Placard', normalizedCategory:'other_income', amountNative:0.198257, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.142002, disclosureLevel:'aggregated' },
+  ],
 };
 const pacosdeferreiraptExpenseLinesByYear = {
   2025: [
@@ -52,6 +69,19 @@ const pacosdeferreiraptExpenseLinesByYear = {
     { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.016429, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.512927, disclosureLevel:'aggregated' },
   ],
+  2020: [
+    { rawLabel:'Custo das mercadorias vendidas e das matérias consumidas', normalizedCategory:'other_expenses', amountNative:-0.030761, disclosureLevel:'aggregated' },
+    { rawLabel:'Fornecimentos e serviços externos', normalizedCategory:'admin_general_expense', amountNative:-2.425968, disclosureLevel:'aggregated' },
+    { rawLabel:'Jogadores', normalizedCategory:'wages_squad', amountNative:-2.752511, disclosureLevel:'aggregated' },
+    { rawLabel:'Treinadores', normalizedCategory:'wages_squad', amountNative:-0.464919, disclosureLevel:'aggregated' },
+    { rawLabel:'Pessoal Diverso', normalizedCategory:'wages_squad', amountNative:-0.446796, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos sobre remunerações', normalizedCategory:'wages_squad', amountNative:-0.24777, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros de acidentes de trabalho e de doenças profissionais', normalizedCategory:'admin_general_expense', amountNative:-0.314452, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos com o pessoal', normalizedCategory:'wages_squad', amountNative:-0.072931, disclosureLevel:'aggregated' },
+    { rawLabel:'Impostos', normalizedCategory:'admin_general_expense', amountNative:-0.002133, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.090262, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.582342, disclosureLevel:'aggregated' },
+  ],
 };
 const pacosdeferreiraptFiscalYearMeta = {
   2025: {
@@ -67,6 +97,21 @@ const pacosdeferreiraptFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:2.827625, officialTotalExpenses:4.613911, officialPAT:-1.806752,
+  },
+  2020: {
+    currency:'EUR', fxRef:'EUR@2020-06-30',
+    sourceId:'pacosdeferreira-pt-47-demonstracoes-financeiras-compressed',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.010295, tax:-0.003552,
+    extraRows: [
+      {label:'Juros e rendimentos similares obtidos', value:0},
+      {label:'Juros e gastos similares suportados', value:-0.010295},
+      {label:'Imposto sobre o rendimento do período', value:-0.003552},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:5.984148, officialTotalExpenses:7.430845, officialPAT:-1.460544,
   },
 };
 const pacosdeferreiraptPresupuestoOverlayByYear = {};
@@ -87,6 +132,11 @@ Object.assign(sources, {
   'pacosdeferreira-pt-contas-2425': {
     id:'pacosdeferreira-pt-contas-2425', clubId:'pacosdeferreira-pt',
     title:'Paços de Ferreira — contas_2425 (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'pacosdeferreira-pt-47-demonstracoes-financeiras-compressed': {
+    id:'pacosdeferreira-pt-47-demonstracoes-financeiras-compressed', clubId:'pacosdeferreira-pt',
+    title:'Paços de Ferreira — 47-DEMONSTRACOES-FINANCEIRAS_compressed (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
