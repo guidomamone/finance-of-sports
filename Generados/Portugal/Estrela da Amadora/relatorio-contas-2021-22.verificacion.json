@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Estrela da Amadora/relatorio-contas-2021-22.pdf",
  "md": "Clubes/Portugal/Estrela da Amadora/relatorio-contas-2021-22.md",
- "generado": "2026-10-15T21:55:00.880Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-16T02:22:50.400Z",
+ "estado": "ok",
+ "clubId": "estreladaamadora-pt",
  "year": 2022,
  "escala": {
   "valor": "no se sabe",
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "dc1a03c"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -40,13 +38,14 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "la nota de \"Vendas e serviços prestados\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "duda de localizar que no afecta la carga: Es un detalle por jugador/concepto de un renglón ya abierto en la nota 27 (b27).",
   "duda de localizar confirmada por las sumas (columna, \"-\"): ¿Las columnas '2021' y '2020' de las notas 19 a 27 corresponden a los ejercicios jun-22 y jun-21 del estado de resultados?",
+  "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en relatorio-contas-2021-22.pdf",
   "duda de extraer confirmada por las sumas (columna, \"Subsídios à exploração\"): ¿Se cargan como desglose de 'Subsídios à exploração' los importes de la columna 'Montante aprovado' del cuadro b22 (L949-L951), que son los únicos que suman 137 603,65?",
   "duda de extraer que no afecta la carga: El texto de L1053 dice 'Outros gastos' pero los importes (475 881,47) coinciden con 'Outros rendimentos' L248.",
   "duda de extraer que no afecta la carga: Las notas rotulan '2021'/'2020' y sus totales coinciden con las columnas del estado L241."

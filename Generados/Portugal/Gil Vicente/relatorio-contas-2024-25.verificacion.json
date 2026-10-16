@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Gil Vicente/relatorio-contas-2024-25.pdf",
  "md": "Clubes/Portugal/Gil Vicente/relatorio-contas-2024-25.md",
- "generado": "2026-10-15T21:56:50.207Z",
- "estado": "cola",
+ "generado": "2026-10-16T02:22:50.431Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "f40f799",
-  "0d263bf"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -52,8 +49,7 @@
  "notas": [
   "la nota de \"Custo das mercadorias vendidas e das matérias consumidas\" no suma el renglón (0.298309 contra 0.107704, sumando sus renglones): quedó el renglón del estado",
   "duda de extraer que no afecta la carga: L893 figura en el estado con etiqueta de activo pero suma al resultado líquido, por lo que actúa como impuesto diferido.",
-  "duda de extraer que no afecta la carga: L1948-L1954 suman 16.469.145,65 = L1947, así que son desglose de Serviços Prestados y no de Vendas directamente.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L1948-L1954 suman 16.469.145,65 = L1947, así que son desglose de Serviços Prestados y no de Vendas directamente."
  ],
  "reintentar": [
   {

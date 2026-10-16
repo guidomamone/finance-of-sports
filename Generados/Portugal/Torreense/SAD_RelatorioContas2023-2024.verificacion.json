@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Torreense/SAD_RelatorioContas2023-2024.pdf",
  "md": "Clubes/Portugal/Torreense/SAD_RelatorioContas2023-2024.md",
- "generado": "2026-10-15T21:55:09.093Z",
- "estado": "cola",
+ "generado": "2026-10-16T02:22:50.468Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2024,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "ac440e4",
-  "1100909"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -47,6 +44,7 @@
  "notas": [
   "el desglose de \"Outros gastos com o pessoal, dos quais:\" (2 filas) no suma la fila: quedó la fila",
   "duda de localizar que no afecta la carga: El encabezado dice 2023/2022 pero el título es 'período findo em 30-06-2024' y el resultado coincide con la aplicación de resultados 2023/2024.",
+  "duda de extraer ya contestada para el club (perimetro, \"Vendas e serviços prestados\"): aceptar, en SAD_RelatorioContas2023-2024.pdf",
   "duda de extraer confirmada por las sumas (columna, \"Gastos com o pessoal\"): ¿Se acepta que la columna año anterior de las notas (ej. 412.888,63 en L1824, 2.236.171,11 en L2324, 1.478.553,85 en L2085) difiere del estado y se carga igual?",
   "duda de extraer que no afecta la carga: La tabla b45 no tiene encabezado de columnas ni comparativo; sus filas suman 23.041,71, igual al estado L1268."
  ],

@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Famalicão/relatorio-contas-2018-19.pdf",
  "md": "Clubes/Portugal/Famalicão/relatorio-contas-2018-19.md",
- "generado": "2026-10-15T21:56:50.068Z",
- "estado": "cola",
+ "generado": "2026-10-16T02:22:50.403Z",
+ "estado": "ok",
  "clubId": "famalicao-pt",
- "year": null,
+ "year": 2019,
  "escala": {
   "valor": "unidades",
   "escalon": 0,
@@ -23,9 +23,7 @@
    "fecha": "2026-10-15"
   }
  ],
- "cola": [
-  "fd93645"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -44,21 +42,20 @@
    "dif": 0
   },
   {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2019: 1.746623 en este documento y 1.746623 en relatorio-contas-2019-20.pdf (columna del año anterior)"
   },
   {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "la nota de \"Fornecimentos e serviços externos\" no suma el renglón (1.194226 contra 0.951736, sumando sus renglones): quedó el renglón del estado",
   "duda de extraer que no afecta la carga: El cuadro b22 abre por mercado geográfico, no por segmento de negocio; el Total L1041 cuadra con L395.",
-  "duda de extraer que no afecta la carga: Diferencia de redondeo de un céntimo en el año anterior.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: Diferencia de redondeo de un céntimo en el año anterior."
  ],
  "reintentar": [
   {
@@ -296,43 +293,5 @@
    "M": 0.047468,
    "linea": 408
   }
- ],
- "primerAnio": {
-  "escalon": 3,
-  "estado": "confirmado",
-  "clave": "bc473c1e1186f4ff04b79c5c1f8de8e151f714c3",
-  "rango": [
-   392,
-   412
-  ],
-  "lineasCargadas": [
-   1031,
-   1033,
-   1034,
-   1035,
-   1036,
-   1037,
-   1038,
-   1039,
-   1040,
-   396,
-   401,
-   397,
-   398,
-   1112,
-   1113,
-   1114,
-   1115,
-   1116,
-   1117,
-   400,
-   1138,
-   1139,
-   1140,
-   404,
-   406,
-   408
-  ],
-  "user": "ESTADO DE RESULTADOS (líneas 392 a 412 del .md):\nL393: |   | Notas | 30-Jun-19 | 30-Jun-18  |\nL394: | --- | --- | --- | --- |\nL395: |  Vendas e serviços prestados | 3.10.; 18. | 1 533 583,19 | 1 132 656,52  |\nL396: |  Subsídios à exploração | 19. | 188 401,18 | 172 086,67  |\nL397: |  Custo das mercadorias vendidas | 20. | -19 171,68 | -14 129,50  |\nL398: |  Fornecimentos e serviços externos | 21. | -951 736,20 | -312 350,34  |\nL399: |  Gastos com o pessoal | 22. | -2 823 702,13 | -1 365 842,96  |\nL400: |  Imparidade de dívidas a receber (perdas/reversões) | 3.6.; 8. | -133 331,53 | -10 043,01  |\nL401: |  Outros rendimentos | 23. | 24 638,50 | 1 317,65  |\nL402: |  Outros gastos | 24. | -229 281,73 | -20 104,46  |\nL403: |  **Resultado antes de deprec., gastos de financ. e impostos** |  | **-2 410 600,40** | **-416 409,43**  |\nL404: |  Gastos/reversões de depreciação e de amortização | 3.2.; 3.3.; 5.; 6. | -118 353,57 | -8 890,89  |\nL405: |  **Resultado operacional (antes de gastos de financiamento e impostos)** |  | **-2 528 953,97** | **-425 300,32**  |\nL406: |  Juros e gastos similares suportados |  | -293 678,99 | 0,00  |\nL407: |  **Resultado antes de impostos** |  | **-2 822 632,96** | **-425 300,32**  |\nL408: |  Imposto sobre o rendimento do período | 3.4.; 25. | 47 468,13 | 0,00  |\nL409: |  **Resultado líquido do período** |  | **-2 775 164,83** | **-425 300,32**  |\nL411: O CONTABILISTA CERTIFICADO\n\nLO QUE SE CARGA:\n- ingreso · \"Vendas de mercadorias\" · 0.027361 · L1031 (de una nota)\n- ingreso · \"Ingressos\" · 0.06745 · L1033 (de una nota)\n- ingreso · \"Competições\" · 0.038254 · L1034 (de una nota)\n- ingreso · \"Publicidade\" · 0.390202 · L1035 (de una nota)\n- ingreso · \"Patrocínios\" · 0.061751 · L1036 (de una nota)\n- ingreso · \"Direitos Clube\" · 0.7 · L1037 (de una nota)\n- ingreso · \"Apostas desportivas\" · 0.204446 · L1038 (de una nota)\n- ingreso · \"Outras receitas desportivas\" · 0.055525 · L1039 (de una nota)\n- ingreso · \"Descontos e Abatimentos\" · -0.011405 · L1040 (de una nota)\n- ingreso · \"Subsídios à exploração\" · 0.188401 · L396\n- ingreso · \"Outros rendimentos\" · 0.024638 · L401\n- gasto · \"Custo das mercadorias vendidas\" · 0.019172 · L397\n- gasto · \"Fornecimentos e serviços externos\" · 0.951736 · L398\n- gasto · \"Remunerações do pessoal\" · 2.158421 · L1112 (de una nota)\n- gasto · \"Indemnizações\" · 0.111664 · L1113 (de una nota)\n- gasto · \"Encargos sobre remunerações\" · 0.220708 · L1114 (de una nota)\n- gasto · \"Seguros\" · 0.155976 · L1115 (de una nota)\n- gasto · \"Gastos de ação social\" · 0.023652 · L1116 (de una nota)\n- gasto · \"Outros gastos com pessoal\" · 0.153281 · L1117 (de una nota)\n- gasto · \"Imparidade de dívidas a receber (perdas/reversões)\" · 0.133332 · L400\n- gasto · \"Impostos\" · 0.001453 · L1138 (de una nota)\n- gasto · \"Descontos de pronto pagamento concedi\" · 0.000006 · L1139 (de una nota)\n- gasto · \"Outros gastos e perdas\" · 0.227823 · L1140 (de una nota)\n- gasto · \"Gastos/reversões de depreciação e de amortização\" · 0.118354 · L404\n- financiero · \"Juros e gastos similares suportados\" · -0.293679 · L406\n- impuesto · \"Imposto sobre o rendimento do período\" · 0.047468 · L408"
- }
+ ]
 }

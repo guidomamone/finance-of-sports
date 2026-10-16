@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.pdf",
  "md": "Clubes/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.md",
- "generado": "2026-10-15T21:55:01.461Z",
+ "generado": "2026-10-16T02:22:50.449Z",
  "estado": "ok",
  "clubId": null,
  "year": 2025,
@@ -11,7 +11,62 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.pdf",
+   "campo": "fila",
+   "valor": "12 719",
+   "linea": 1468,
+   "etiqueta": "Verbas LPFP e FPF (Taça da Liga / Taça de Portugal)",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 1468,
+   "motivo": "'Outros' 176.636 de la nota de réditos se detalla en el texto: verbas LPFP/FPF, solidaridad FIFA y lugares anuais (8.654 + 4.065 + 60.925 + 102.992 = 176.636).",
+   "evidencia": "FUTEBOL-SAD_RC-30.06.2025.md L1468, L1473-1475",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.pdf",
+   "campo": "fila",
+   "valor": "60 925",
+   "linea": 1474,
+   "etiqueta": "Mecanismo de Solidariedade FIFA",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Parte de 'Outros' (L1468) según el texto de la nota.",
+   "evidencia": "FUTEBOL-SAD_RC-30.06.2025.md L1474",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.pdf",
+   "campo": "fila",
+   "valor": "102 992",
+   "linea": 1475,
+   "etiqueta": "Lugares anuais",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Parte de 'Outros' (L1468): venta de lugares anuais para los partidos del equipo A.",
+   "evidencia": "FUTEBOL-SAD_RC-30.06.2025.md L1475",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.pdf",
+   "campo": "fila",
+   "valor": "112 880",
+   "linea": 1487,
+   "etiqueta": "Juros",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 1487,
+   "motivo": "Fila de la nota de Outros rendimentos (suma 4.444.586) que la extracción puso como gasto (−112.880); es ingreso (to-do 237 w).",
+   "evidencia": "FUTEBOL-SAD_RC-30.06.2025.md L1487",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -28,7 +83,7 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 0.0000010000000014720456
+   "dif": 0.0000010000000005838672
   },
   {
    "nombre": "lectura",
@@ -47,6 +102,10 @@
   }
  ],
  "notas": [
+  "ajuste manual: fila \"Verbas LPFP e FPF (Taça da Liga / Taça de Portugal)\" (ingreso) 12 719, en lugar de la fila de L1468 (2026-10-16, 'Outros' 176.636 de la nota de réditos se detalla en el texto: verbas LPFP/FPF, solidaridad FIFA y lugares anuais (8.654 + 4.065 + 60.925 + 102.992 = 176.636).)",
+  "ajuste manual: fila \"Mecanismo de Solidariedade FIFA\" (ingreso) 60 925 (2026-10-16, Parte de 'Outros' (L1468) según el texto de la nota.)",
+  "ajuste manual: fila \"Lugares anuais\" (ingreso) 102 992 (2026-10-16, Parte de 'Outros' (L1468): venta de lugares anuais para los partidos del equipo A.)",
+  "ajuste manual: fila \"Juros\" (ingreso) 112 880, en lugar de la fila de L1487 (2026-10-16, Fila de la nota de Outros rendimentos (suma 4.444.586) que la extracción puso como gasto (−112.880); es ingreso (to-do 237 w).)",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b5 es un resumen del relatório de gestão que repite renglones del estado b10.",
   "duda de localizar confirmada por las sumas (columna, \"-\"): ¿Las columnas del estado b10 (encabezado 'Períodos' sin fechas visibles) corresponden a 30.06.2025 y 30.06.2024 en ese orden?"
@@ -82,14 +141,6 @@
    "origen": "nota que desglosa \"Vendas e serviços prestados\""
   },
   {
-   "etiqueta": "Outros",
-   "lado": "ingreso",
-   "M": 0.176636,
-   "pagina": 38,
-   "linea": 1468,
-   "origen": "nota que desglosa \"Vendas e serviços prestados\""
-  },
-  {
    "etiqueta": "Subsídios à exploração",
    "lado": "ingreso",
    "M": 1.170368,
@@ -114,20 +165,44 @@
    "origen": "nota que desglosa \"Outros rendimentos\""
   },
   {
-   "etiqueta": "Juros",
-   "lado": "financiero",
-   "M": 0.11288,
-   "pagina": 38,
-   "linea": 1487,
-   "origen": "nota que desglosa \"Outros rendimentos\""
-  },
-  {
    "etiqueta": "Outros",
    "lado": "ingreso",
    "M": 1.161317,
    "pagina": 38,
    "linea": 1488,
    "origen": "nota que desglosa \"Outros rendimentos\""
+  },
+  {
+   "etiqueta": "Verbas LPFP e FPF (Taça da Liga / Taça de Portugal)",
+   "lado": "ingreso",
+   "M": 0.012719,
+   "pagina": 38,
+   "linea": 1468,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Mecanismo de Solidariedade FIFA",
+   "lado": "ingreso",
+   "M": 0.060925,
+   "pagina": 38,
+   "linea": 1474,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Lugares anuais",
+   "lado": "ingreso",
+   "M": 0.102992,
+   "pagina": 38,
+   "linea": 1475,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Juros",
+   "lado": "ingreso",
+   "M": 0.11288,
+   "pagina": 38,
+   "linea": 1487,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Subcontratos",

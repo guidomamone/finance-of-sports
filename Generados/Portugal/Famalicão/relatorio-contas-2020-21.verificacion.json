@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Famalicão/relatorio-contas-2020-21.pdf",
  "md": "Clubes/Portugal/Famalicão/relatorio-contas-2020-21.md",
- "generado": "2026-10-15T21:56:50.097Z",
- "estado": "cola",
+ "generado": "2026-10-16T02:22:50.410Z",
+ "estado": "ok",
  "clubId": "famalicao-pt",
- "year": null,
+ "year": 2021,
  "escala": {
   "valor": "unidades",
   "escalon": 0,
@@ -23,10 +23,7 @@
    "fecha": "2026-10-15"
   }
  ],
- "cola": [
-  "444ae31",
-  "80da001"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -45,20 +42,24 @@
    "dif": 1.1102230246251565e-15
   },
   {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2021: 14.566463 en este documento y 14.566463 en relatorio-contas-2021-22.pdf (columna del año anterior)"
   },
   {
-   "nombre": "primer año",
+   "nombre": "documento del año 2020",
    "ok": true,
-   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+   "detalle": "ingresos de 2020: 6.818339 en relatorio-contas-2019-20.pdf y 6.818339 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
   }
  ],
  "notas": [
   "duda de extraer que no afecta la carga: El cuadro b23 abre por mercado; la columna Total cuadra con L409.",
-  "duda de extraer que no afecta la carga: Las notas no imprimen escala pero sus totales coinciden exactamente con el estado (L405 euros).",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: Las notas no imprimen escala pero sus totales coinciden exactamente con el estado (L405 euros)."
  ],
  "reintentar": null,
  "reintentado": false,
@@ -332,49 +333,5 @@
    "M": -0.045783,
    "linea": 422
   }
- ],
- "primerAnio": {
-  "escalon": 3,
-  "estado": "confirmado",
-  "clave": "0463bc49e65b52efa9b0d6bf5d9aace846a03341",
-  "rango": [
-   406,
-   426
-  ],
-  "lineasCargadas": [
-   1091,
-   1094,
-   1095,
-   1096,
-   1097,
-   1098,
-   1099,
-   410,
-   415,
-   411,
-   1140,
-   1141,
-   1142,
-   1143,
-   1145,
-   1146,
-   1147,
-   1174,
-   1175,
-   1176,
-   1177,
-   1178,
-   1179,
-   414,
-   1200,
-   1201,
-   1202,
-   1203,
-   1204,
-   418,
-   420,
-   422
-  ],
-  "user": "ESTADO DE RESULTADOS (líneas 406 a 426 del .md):\nL407: |   | Notas | 30-Jun-21 | 30-Jun-20  |\nL408: | --- | --- | --- | --- |\nL409: |  Vendas e serviços prestados | 3.10.; 18. | 5 665 859,76 | 6 466 218,68  |\nL410: |  Subsídios à exploração | 3.14.; 19. | 166 582,28 | 193 182,76  |\nL411: |  Custo das mercadorias vendidas | 20. | -77 321,01 | -195 234,84  |\nL412: |  Fornecimentos e serviços externos | 21. | -2 429 256,55 | -2 545 160,66  |\nL413: |  Gastos com o pessoal | 22. | -10 954 714,42 | -7 628 171,26  |\nL414: |  Imparidade de dívidas a receber (perdas/reversões) | 3.6.; 8. | -8 782,20 | -8 043,20  |\nL415: |  Outros rendimentos | 23. | 8 734 021,02 | 158 937,48  |\nL416: |  Outros gastos | 24. | -106 583,94 | -62 921,06  |\nL417: |  **Resultado antes de deprec., gastos de financ. e impostos** |  | **989 804,94** | **-3 621 192,10**  |\nL418: |  Gastos/reversões de depreciação e de amortização | 3.2.; 3.3.; 5.; 6. | -986 829,06 | -253 853,99  |\nL419: |  **Resultado operacional (antes de gastos de financiamento e impostos)** |  | **2 975,88** | **-3 875 046,09**  |\nL420: |  Juros e gastos similares suportados |  | -1 422 615,67 | -878 525,75  |\nL421: |  **Resultado antes de impostos** |  | **-1 419 639,79** | **-4 753 571,84**  |\nL422: |  Imposto sobre o rendimento do período | 3.4.; 25. | -45 783,03 | -34 553,48  |\nL423: |  **Resultado líquido do período** |  | **-1 465 422,82** | **-4 788 125,32**  |\nL425: O CONTABILISTA CERTIFICADO\n\nLO QUE SE CARGA:\n- ingreso · \"Vendas de mercadorias\" · 0.125037 · L1091 (de una nota)\n- ingreso · \"Competições\" · 0.057321 · L1094 (de una nota)\n- ingreso · \"Publicidade\" · 0.573012 · L1095 (de una nota)\n- ingreso · \"Patrocínios\" · 0.161087 · L1096 (de una nota)\n- ingreso · \"Direitos Clube\" · 4.3 · L1097 (de una nota)\n- ingreso · \"Apostas desportivas\" · 0.303692 · L1098 (de una nota)\n- ingreso · \"Outras receitas desportivas\" · 0.145711 · L1099 (de una nota)\n- ingreso · \"Subsídios à exploração\" · 0.166582 · L410\n- ingreso · \"Outros rendimentos\" · 8.734021 · L415\n- gasto · \"Custo das mercadorias vendidas\" · 0.077321 · L411\n- gasto · \"Serviços especializados\" · 0.704116 · L1140 (de una nota)\n- gasto · \"Materiais\" · 0.772464 · L1141 (de una nota)\n- gasto · \"Energia e fluidos\" · 0.070428 · L1142 (de una nota)\n- gasto · \"Deslocações, estadas e transportes\" · 0.402867 · L1143 (de una nota)\n- gasto · \"Rendas e alugueres\" · 0.367373 · L1145 (de una nota)\n- gasto · \"Limpeza, Higiene e conforto\" · 0.033975 · L1146 (de una nota)\n- gasto · \"Outros\" · 0.078033 · L1147 (de una nota)\n- gasto · \"Remunerações do pessoal\" · 7.923187 · L1174 (de una nota)\n- gasto · \"Indemnizações\" · 0.251334 · L1175 (de una nota)\n- gasto · \"Encargos sobre remunerações\" · 0.775357 · L1176 (de una nota)\n- gasto · \"Seguros\" · 0.682214 · L1177 (de una nota)\n- gasto · \"Gastos de ação social\" · 0.092251 · L1178 (de una nota)\n- gasto · \"Outros gastos com pessoal\" · 1.230371 · L1179 (de una nota)\n- gasto · \"Imparidade de dívidas a receber (perdas/reversões)\" · 0.008782 · L414\n- gasto · \"Impostos\" · 0.00691 · L1200 (de una nota)\n- gasto · \"Descontos de pronto pagamento concedidos\" · 0.000056 · L1201 (de una nota)\n- gasto · \"Ganhos e perdas em subsidiárias e associadas\" · 0.000312 · L1202 (de una nota)\n- gasto · \"Gastos e perdas em inv. não financeiros\" · 0.070833 · L1203 (de una nota)\n- gasto · \"Outros gastos e perdas\" · 0.028473 · L1204 (de una nota)\n- gasto · \"Gastos/reversões de depreciação e de amortização\" · 0.986829 · L418\n- financiero · \"Juros e gastos similares suportados\" · -1.422616 · L420\n- impuesto · \"Imposto sobre o rendimento do período\" · -0.045783 · L422"
- }
+ ]
 }

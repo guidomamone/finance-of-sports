@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Famalicão/relatorio-contas-2024-25.pdf",
  "md": "Clubes/Portugal/Famalicão/relatorio-contas-2024-25.md",
- "generado": "2026-10-15T21:55:01.079Z",
- "estado": "cola",
+ "generado": "2026-10-16T02:22:50.421Z",
+ "estado": "ok",
  "clubId": "famalicao-pt",
- "year": null,
+ "year": 2025,
  "escala": {
   "valor": "unidades",
   "escalon": 0,
@@ -21,13 +21,22 @@
    "evidencia": ".md L1060 y L1112 em 30 de junho de 2025",
    "autor": "Claude",
    "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Famalicão/relatorio-contas-2024-25.pdf",
+   "campo": "fila",
+   "valor": "5 007,78",
+   "linea": 661,
+   "etiqueta": "Ganhos/perdas imputados de subsidiárias, associadas e empresas",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Renglón de ingresos del estado que la extracción no trajo; con él el resultado operacional da el impreso 262.412,53 y el líquido −3.257.811,34.",
+   "evidencia": "relatorio-contas-2024-25.md L661, L670",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
   }
  ],
- "cola": [
-  "6c3ed31",
-  "d27c0f8",
-  "9ae3cca"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -43,24 +52,31 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 0.005007779999997908
+   "dif": 1.7763568394002505e-15
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2024: 33.364592 en relatorio-contas-2023-24.pdf y 33.361424 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   }
  ],
  "notas": [
+  "ajuste manual: fila \"Ganhos/perdas imputados de subsidiárias, associadas e empresas\" (ingreso) 5 007,78 (2026-10-16, Renglón de ingresos del estado que la extracción no trajo; con él el resultado operacional da el impreso 262.412,53 y el líquido −3.257.811,34.)",
   "duda de localizar que no afecta la carga: El cuadro b26 abre el impuesto en corriente y diferido, pero es parte de la conciliación fiscal (nota 26).",
   "duda de extraer que no afecta la carga: El cuadro b21 separa por mercado (no por segmento de negocio); se tomó la columna Total que cuadra con L659.",
+  "duda de extraer ya contestada para el club (perimetro, \"Custo das mercadorias vendidas\"): aceptar, en relatorio-contas-2024-25.pdf",
   "duda de extraer que no afecta la carga: L665 es perdas/reversões con signo variable entre años."
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 23.627341,
+  "ingresos": 23.632349,
   "gastos": 23.369937,
   "financiero": -3.494664,
   "impuesto": -0.02556,
@@ -149,6 +165,14 @@
    "pagina": 26,
    "linea": 667,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Ganhos/perdas imputados de subsidiárias, associadas e empresas",
+   "lado": "ingreso",
+   "M": 0.005008,
+   "pagina": 26,
+   "linea": 661,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Custo das mercadorias vendidas",
