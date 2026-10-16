@@ -26,3 +26,5 @@ Ninguna. Serie completa desde el primer ejercicio publicado por el club.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-15): ejercicio 2022 desde `Clubes/Portugal/Famalicão/relatorio-contas-2021-22.pdf` (sourceId `famalicao-pt-relatorio-contas-2021-22`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2019 desde `Clubes/Portugal/Famalicão/relatorio-contas-2018-19.pdf` (sourceId `famalicao-pt-relatorio-contas-2018-19`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2020 desde `Clubes/Portugal/Famalicão/relatorio-contas-2019-20.pdf` (sourceId `famalicao-pt-relatorio-contas-2019-20`).

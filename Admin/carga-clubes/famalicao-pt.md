@@ -102,6 +102,60 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2021–22 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Famalicão".
 ```
 
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Famalicão/relatorio-contas-2019-20.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Famalicão/relatorio-contas-2019-20.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas de mercadorias | pág. 27, precedente |
+| 2 | Ingressos | pág. 27, precedente |
+| 3 | Competições | pág. 27, precedente |
+| 4 | Publicidade | pág. 27, precedente |
+| 5 | Patrocínios | pág. 27, precedente |
+| 6 | Direitos Clube | pág. 27, precedente |
+| 7 | Apostas desportivas | pág. 27, precedente |
+| 8 | Outras receitas desportivas | pág. 27, precedente |
+| 9 | Descontos e Abatimentos | pág. 27, Jev 0.99 |
+| 10 | Subsídios à exploração | pág. 14, precedente |
+| 11 | Outros rendimentos | pág. 14, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas | pág. 14, precedente |
+| 2 | Fornecimentos e serviços externos | pág. 14, Jev 1 |
+| 3 | Remunerações do pessoal | pág. 29, precedente |
+| 4 | Indemnizações | pág. 29, precedente |
+| 5 | Encargos sobre remunerações | pág. 29, precedente |
+| 6 | Seguros | pág. 29, precedente |
+| 7 | Gastos de ação social | pág. 29, precedente |
+| 8 | Outros gastos com pessoal | pág. 29, precedente |
+| 9 | Imparidade de dívidas a receber (perdas/reversões) | pág. 14, precedente |
+| 10 | Impostos | pág. 29, precedente |
+| 11 | Descontos de pronto pagamento concedidos | pág. 29, precedente |
+| 12 | Outros gastos e perdas | pág. 29, precedente |
+| 13 | Gastos/reversões de depreciação e de amortização | pág. 14, precedente |
+
+### Meta
+
+```text
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): cierre = 2020-06-30. periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2019–20 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Famalicão".
+```
+
 ## 2019
 
 ### Ingresos
@@ -172,4 +226,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Famalicão/relatorio-contas-2018-19.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### famalicao-pt-relatorio-contas-2019-20
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Famalicão/relatorio-contas-2019-20.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

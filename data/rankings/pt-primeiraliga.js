@@ -164,6 +164,9 @@ window.RANKINGS["pt-primeiraliga"] = {
       { id:"santaclara-pt", revenue:9.045, reportType:"official_balance_sheet",
         sourceId:"santaclara-pt-relatorio-contas-sad-2019-20",
         mix:[["Comercial / Sponsors",0.449],["Estadio",0.191],["Televisión",3.873],["Premios por competencias",0.101],["Venta de Jugadores",0.152],["Otros ingresos",4.279]] },
+      { id:"famalicao-pt", revenue:7.635, reportType:"official_balance_sheet",
+        sourceId:"famalicao-pt-relatorio-contas-2019-20",
+        mix:[["Comercial / Sponsors",1.093],["Estadio",0.422],["Televisión",5.039],["Premios por competencias",0.297],["Venta de Jugadores",0.178],["Otros ingresos",0.606]] },
     ],
   },
   2019: {
