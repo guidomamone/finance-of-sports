@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Chaves/RC-2021-2022_compressed-1.pdf",
- "generado": "2026-10-16T03:18:40.781Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Outras imparidades\" -> other_amortisation 0.45; \"Outros\" -> other_expenses 0"
-  }
- ],
+ "generado": "2026-10-16T03:41:07.163Z",
+ "frena": [],
  "avisos": [
   "materialidad: \"Insc. P. Equipas\" va como other_income con 0.6 (las dudas de ingresos suman 0.12% de su lado)",
   "\"Otras secciones deportivas\" en 0: real en este documento (lo presenta una SAD/SDUQ, solo fútbol profesional: Clubes/Portugal/Chaves/RC-2021-2022_compressed-1.md L15 \"FUTEBOL SAD\"; to-do 237 y)",
@@ -363,13 +358,13 @@
    },
    {
     "rawLabel": "Outras imparidades",
-    "normalizedCategory": "other_amortisation",
+    "normalizedCategory": "other_expenses",
     "amountNative": 0,
     "disclosureLevel": "aggregated",
     "_pag": 12,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Impostos Indiretos",
@@ -457,9 +452,9 @@
     "amountNative": -0.000034,
     "disclosureLevel": "aggregated",
     "_pag": 44,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_income, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Gastos/reversões de depreciação e de amortização",
@@ -1051,12 +1046,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 0,
-   "cat": "other_amortisation",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): remite a la nota 13.1 (créditos y deudas): imparidad de deudores; importe 0 [RC-2021-2022_compressed-1.md L439]",
    "destino": "expense",
    "amountNative": 0
   },
@@ -1188,12 +1183,12 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos\")",
    "signoFijo": 0.000034,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_income, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): residual de la nota 14.4 Outros gastos e perdas (33,85) [RC-2021-2022_compressed-1.md L1738]",
    "destino": "expense",
    "amountNative": -0.000034
   },
@@ -1320,8 +1315,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 22,
   "lineasGasto": 23,
   "metaFilas": 2,

@@ -112,6 +112,80 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2022–23 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Chaves".
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Chaves/RC-2021-2022_compressed-1.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Chaves/RC-2021-2022_compressed-1.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Venda de bens | pág. 30, precedente |
+| 2 | Publicidade | pág. 30, precedente |
+| 3 | Bilhetes Jogos | pág. 30, precedente |
+| 4 | Cessao direitos televisivos | pág. 30, precedente |
+| 5 | Gold Pass/Cativos/Camarotes | pág. 30, precedente |
+| 6 | UEFA | pág. 31, precedente |
+| 7 | Inst. Apoio às PMI | pág. 31, precedente |
+| 8 | Jogos Placard | pág. 43, precedente |
+| 9 | Distribuição de lucros dos jogos e apostas on-line | pág. 43, precedente |
+| 10 | Premios de Participação Taça Liga | pág. 43, Jev 1 |
+| 11 | Premios Taça de Portugal | pág. 43, precedente |
+| 12 | Subsídio de deslocação | pág. 43, Jev 0.98 |
+| 13 | Mecanismo de apoio à descida | pág. 43, Jev 0.97 |
+| 14 | Mecanismo Solidariedade | pág. 43, Jev 0.91 |
+| 15 | Transferências | pág. 43, precedente |
+| 16 | Fundo de Apoio Tesousararia | pág. 43, Jev 1 |
+| 17 | Apoio à Contratação de ARDs | pág. 43, Jev 1 |
+| 18 | Descontos de Pronto Pagamento | pág. 43, Jev 1 |
+| 19 | Correções relativas a periodos anteriores | pág. 43, Jev 1 |
+| 20 | Insc. P. Equipas | pág. 43, ? 0.6 |
+| 21 | Quotas Grupo Desportivo de Chaves | pág. 43, precedente |
+| 22 | Outros | pág. 43, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 12, precedente |
+| 2 | Trabalhos Especializados | pág. 42, precedente |
+| 3 | Publicidade e Propaganda | pág. 42, precedente |
+| 4 | Vigilância e Segurança | pág. 42, precedente |
+| 5 | Honorários | pág. 42, precedente |
+| 6 | Conservação e Reparação | pág. 42, precedente |
+| 7 | Serviços Bancários | pág. 42, precedente |
+| 8 | Materiais | pág. 42, precedente |
+| 9 | Energia e Fluidos | pág. 42, precedente |
+| 10 | Deslocações e Estadas | pág. 42, precedente |
+| 11 | Serviços Diversos | pág. 42, precedente |
+| 12 | Gastos com o pessoal | pág. 12, precedente |
+| 13 | Outras imparidades | pág. 12, precedente |
+| 14 | Impostos Indiretos | pág. 44, precedente |
+| 15 | Taxas | pág. 44, precedente |
+| 16 | Abates de Ativos Intangíveis | pág. 44, Jev 0.95 |
+| 17 | Correcções relativas a ex. anterior | pág. 44, precedente |
+| 18 | Quotização | pág. 44, precedente |
+| 19 | Insuficiencia estimativa imposto | pág. 44, precedente |
+| 20 | Diferença de Câmbio Desfavorável | pág. 44, Jev 0.91 |
+| 21 | Multas e Penalidades | pág. 44, precedente |
+| 22 | Outros | pág. 44, precedente |
+| 23 | Gastos/reversões de depreciação e de amortização | pág. 12, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2021–22 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Chaves".
+```
+
 ## Fuentes
 
 ### chaves-pt-rc-2022-2023-com
@@ -120,4 +194,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Chaves/RC-2022-2023-com.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### chaves-pt-rc-2021-2022-compressed-1
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Chaves/RC-2021-2022_compressed-1.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

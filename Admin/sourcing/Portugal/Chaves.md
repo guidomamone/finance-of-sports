@@ -15,3 +15,5 @@
 - Último chequeo: 2026-10-08.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2023 desde `Clubes/Portugal/Chaves/RC-2022-2023-com.pdf` (sourceId `chaves-pt-rc-2022-2023-com`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2022 desde `Clubes/Portugal/Chaves/RC-2021-2022_compressed-1.pdf` (sourceId `chaves-pt-rc-2021-2022-compressed-1`).
