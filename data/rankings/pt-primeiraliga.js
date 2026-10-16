@@ -141,6 +141,9 @@ window.RANKINGS["pt-primeiraliga"] = {
         sourceId:"moreirense-pt-relatorio-contas-2021-22",
         mix:[["Comercial / Sponsors",0.002],["Televisión",3.739],["Venta de Jugadores",4.263],["Otros ingresos",1.896]],
         incluidos:[["Estadio","Otros ingresos",1]] },
+      { id:"arouca-pt", revenue:5.292, reportType:"official_balance_sheet",
+        sourceId:"arouca-pt-relatorio-contas-2021-22",
+        mix:[["Comercial / Sponsors",0.492],["Estadio",0.042],["Televisión",3.947],["Premios por competencias",0.04],["Otros ingresos",0.77]] },
     ],
   },
   2021: {
