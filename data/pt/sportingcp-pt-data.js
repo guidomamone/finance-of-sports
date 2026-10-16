@@ -384,6 +384,13 @@ const sportingcpptRevenueLinesByYear = {
     { rawLabel:'PARTICIPAÇÃO LC', normalizedCategory:'competition_bonus', amountNative:6.618, disclosureLevel:'aggregated' },
     { rawLabel:'Outros proveitos operacionais (resto)', normalizedCategory:'other_income', amountNative:0.655, disclosureLevel:'aggregated' },
   ],
+  2000: [
+    { rawLabel:'Prestações de Serviços', normalizedCategory:'lump_football_operations', amountNative:3117.769, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídios à Exploração', normalizedCategory:'other_income', amountNative:13.457, disclosureLevel:'aggregated' },
+    { rawLabel:'Proveitos Suplementares', normalizedCategory:'other_income', amountNative:12.853, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros Proveitos e Ganhos Operacionais', normalizedCategory:'other_income', amountNative:42.148, disclosureLevel:'aggregated' },
+    { rawLabel:'Proveitos e Ganhos Extraordinários', normalizedCategory:'other_income', amountNative:3590.408, disclosureLevel:'aggregated' },
+  ],
 };
 const sportingcpptExpenseLinesByYear = {
   2025: [
@@ -991,6 +998,17 @@ const sportingcpptExpenseLinesByYear = {
     { rawLabel:'Outros Custos e Perdas Operacionais', normalizedCategory:'other_expenses', amountNative:-1.404, disclosureLevel:'aggregated' },
     { rawLabel:'Custos e Perdas Extraordinários', normalizedCategory:'exceptional_items', amountNative:-1.06, disclosureLevel:'aggregated' },
   ],
+  2000: [
+    { rawLabel:'Fornecimentos e Serviços Externos', normalizedCategory:'admin_general_expense', amountNative:-1315.265, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações', normalizedCategory:'wages_squad', amountNative:-4088.187, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos Sociais', normalizedCategory:'wages_squad', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-159.14, disclosureLevel:'aggregated' },
+    { rawLabel:'Corpóreo e Incorpóreo', normalizedCategory:'player_amortisation', amountNative:-3008.759, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisões', normalizedCategory:'other_amortisation', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Impostos', normalizedCategory:'admin_general_expense', amountNative:-5.086, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros Custos e Perdas Operacionais', normalizedCategory:'other_expenses', amountNative:-224.884, disclosureLevel:'aggregated' },
+    { rawLabel:'Custos e Perdas Extraordinários', normalizedCategory:'exceptional_items', amountNative:-238.493, disclosureLevel:'aggregated' },
+  ],
 };
 const sportingcpptFiscalYearMeta = {
   2025: {
@@ -1271,6 +1289,25 @@ const sportingcpptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:65.325, officialTotalExpenses:47.428, officialPAT:14.48,
   },
+  2000: {
+    currency:'PTE', fx:216.9015, fxSource:'manual',
+    sourceId:'sportingcp-pt-relatorio-contas-1999',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-29.244, tax:0,
+    extraRows: [
+      {label:'Juros e Custos Similares', value:-197.812},
+      {label:'Outros Juros e Proveitos Similares', value:168.568},
+      {label:'Imposto sobre o Rendimento do Exercício', value:0},
+    ],
+    incluidoEn:{"broadcasting":{"en":"lump_football_operations","posible":true},"matchday_competition":{"en":"lump_football_operations","posible":true}, sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' } },
+    sinDesglose: [
+      {renglon:'Prestações de Serviços', lado:'revenue', importe:3117.769, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:6776.635, officialTotalExpenses:8801.321, officialPAT:-2292.423,
+  },
 };
 const sportingcpptPresupuestoOverlayByYear = {};
 
@@ -1380,6 +1417,11 @@ Object.assign(sources, {
   'sportingcp-pt-relatorio-contas-2006-07': {
     id:'sportingcp-pt-relatorio-contas-2006-07', clubId:'sportingcp-pt',
     title:'SPORTING - Sociedade Desportiva de Futebol, SAD — relatorio-contas-2006-07 (ejercicio 2007)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'sportingcp-pt-relatorio-contas-1999': {
+    id:'sportingcp-pt-relatorio-contas-1999', clubId:'sportingcp-pt',
+    title:'SPORTING - Sociedade Desportiva de Futebol, SAD — relatorio-contas-1999 (ejercicio 2000)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

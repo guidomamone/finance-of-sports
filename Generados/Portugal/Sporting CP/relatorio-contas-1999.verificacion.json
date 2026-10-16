@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-1999.pdf",
  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-1999.md",
- "generado": "2026-10-16T17:22:59.152Z",
+ "generado": "2026-10-16T17:23:44.914Z",
  "estado": "ok",
  "clubId": "sportingcp-pt",
  "year": 2000,
@@ -74,6 +74,16 @@
    "posible": true,
    "motivo": "Claude 2026-10-16: el documento no desglosa Prestações de Serviços (3.117.769 contos) y no trae cuadro de gestión; en Sporting 2001-2007 el cuadro de gestión muestra que taquilla, abonos, TV, cuotas y patrocinios están dentro de Prestações: posiblemente incluido",
    "evidencia": "relatorio-contas-1999.md L67",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-1999.pdf",
+   "campo": "cierre",
+   "valor": "2000-07-31",
+   "linea": null,
+   "motivo": "Claude 2026-10-16: el documento es el ejercicio del 1/8/1999 al 31/7/2000 (Demonstração dos Resultados em 31 de Julho de 2000); el nombre del archivo ('1999') es el año de inicio",
+   "evidencia": "relatorio-contas-1999.md L11, L62",
    "autor": "Claude",
    "fecha": "2026-10-16"
   }

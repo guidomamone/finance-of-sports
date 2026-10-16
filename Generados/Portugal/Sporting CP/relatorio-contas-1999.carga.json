@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-1999.pdf",
- "generado": "2026-10-16T17:23:12.456Z",
- "frena": [
-  {
-   "etapa": "periodo",
-   "motivo": "el nombre del archivo dice otro cierre que el contenido (2000-07-31): confirmar qué ejercicio es antes de cargarlo"
-  }
- ],
+ "generado": "2026-10-16T17:23:58.064Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 10 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)",
   "el documento cierra 2000-07-31 (ejercicio desde el 08-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?",
@@ -227,10 +222,9 @@
   "tipo": "anual",
   "meses": 12,
   "cierre": "2000-07-31",
-  "evidencia": null,
-  "confianza": "media",
   "anual": "temporada",
-  "nombreNoCoincide": true
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-16): Claude 2026-10-16: el documento es el ejercicio del 1/8/1999 al 31/7/2000 (Demonstração dos Resultados em 31 de Julho de 2000); el nombre del archivo ('1999') es el año de inicio"
  },
  "clubId": "sportingcp-pt",
  "year": 2000,
@@ -297,6 +291,16 @@
    "posible": true,
    "motivo": "Claude 2026-10-16: el documento no desglosa Prestações de Serviços (3.117.769 contos) y no trae cuadro de gestión; en Sporting 2001-2007 el cuadro de gestión muestra que taquilla, abonos, TV, cuotas y patrocinios están dentro de Prestações: posiblemente incluido",
    "evidencia": "relatorio-contas-1999.md L67",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-1999.pdf",
+   "campo": "cierre",
+   "valor": "2000-07-31",
+   "linea": null,
+   "motivo": "Claude 2026-10-16: el documento es el ejercicio del 1/8/1999 al 31/7/2000 (Demonstração dos Resultados em 31 de Julho de 2000); el nombre del archivo ('1999') es el año de inicio",
+   "evidencia": "relatorio-contas-1999.md L11, L62",
    "autor": "Claude",
    "fecha": "2026-10-16"
   }
@@ -591,12 +595,12 @@
  "procedencia": {
   "anio": {
    "valor": 2000,
-   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): Claude 2026-10-16: el documento es el ejercicio cerrado el 31/07/2000 (L62); la etiqueta sale del cierre, confirmado por las fechas de cierre del .md",
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): Claude 2026-10-16: el documento es el ejercicio del 1/8/1999 al 31/7/2000 (Demonstração dos Resultados em 31 de Julho de 2000); el nombre del archivo ('1999') es el año de inicio",
    "estado": "ok"
   },
   "cierre": {
    "valor": "2000-07-31",
-   "fuente": "año del ejercicio + mes de cierre (contenido del .md (11 de 11 fechas de fin de mes caen en el mes 7))",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): Claude 2026-10-16: el documento es el ejercicio del 1/8/1999 al 31/7/2000 (Demonstração dos Resultados em 31 de Julho de 2000); el nombre del archivo ('1999') es el año de inicio)",
    "estado": "ok"
   },
   "reportType": {
@@ -631,8 +635,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 5,
   "lineasGasto": 9,
   "metaFilas": 3,

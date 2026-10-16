@@ -1563,6 +1563,62 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2002–03 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Sporting CP".
 ```
 
+## 2000
+
+### Ingresos
+
+```text
+2000: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Sporting CP/relatorio-contas-1999.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Sporting CP/relatorio-contas-1999.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Prestações de Serviços | pág. 2, precedente |
+| 2 | Subsídios à Exploração | pág. 2, precedente |
+| 3 | Proveitos Suplementares | pág. 2, Jev 1 |
+| 4 | Outros Proveitos e Ganhos Operacionais | pág. 2, precedente |
+| 5 | Proveitos e Ganhos Extraordinários | pág. 2, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Fornecimentos e Serviços Externos | pág. 2, precedente |
+| 2 | Remunerações | pág. 2, precedente |
+| 3 | Encargos Sociais | pág. 2, precedente |
+| 4 | Outros | pág. 2, precedente |
+| 5 | Corpóreo e Incorpóreo | pág. 2, precedente |
+| 6 | Provisões | pág. 2, precedente |
+| 7 | Impostos | pág. 2, precedente |
+| 8 | Outros Custos e Perdas Operacionais | pág. 2, precedente |
+| 9 | Custos e Perdas Extraordinários | pág. 2, precedente |
+
+### Meta
+
+```text
+2000: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): moneda = PTE. Guido 2026-10-16 (por Claude): el ejercicio al 31/07/2000 está en miles de escudos; se carga en PTE con su tipo de cambio de cierre y la paridad fija a euro (200,482), como las liras de Lazio
+2000: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fx = 216.9015. Claude 2026-10-16: 1 EUR = 200,482 PTE (paridad fija) y BCE al 31/07/2000: 1,0819 EUR por USD -> 216,9015 PTE por USD (FX_CLOSE PTE@2000-07-31)
+2000: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): anio = 2000. Claude 2026-10-16: el documento es el ejercicio cerrado el 31/07/2000 (L62); la etiqueta sale del cierre
+2000: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): categoria = lump_football_operations. Claude 2026-10-16: el documento no desglosa Prestações de Serviços (3.117.769 contos) y no trae cuadro de gestión; en Sporting 2001-2007 el cuadro de gestión muestra que taquilla, abonos, TV, cuotas y patrocinios están dentro de Prestações: va como fútbol profesional sin desglosar
+2000: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): incluye = broadcasting. Claude 2026-10-16: el documento no desglosa Prestações de Serviços (3.117.769 contos) y no trae cuadro de gestión; en Sporting 2001-2007 el cuadro de gestión muestra que taquilla, abonos, TV, cuotas y patrocinios están dentro de Prestações: posiblemente incluido
+2000: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): incluye = matchday_competition. Claude 2026-10-16: el documento no desglosa Prestações de Serviços (3.117.769 contos) y no trae cuadro de gestión; en Sporting 2001-2007 el cuadro de gestión muestra que taquilla, abonos, TV, cuotas y patrocinios están dentro de Prestações: posiblemente incluido
+2000: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): cierre = 2000-07-31. Claude 2026-10-16: el documento es el ejercicio del 1/8/1999 al 31/7/2000 (Demonstração dos Resultados em 31 de Julho de 2000); el nombre del archivo ('1999') es el año de inicio
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con otra línea.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-16): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2002, 2003, 2004, 2005, 2006, 2007, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2019, 2020, 2022, 2023, 2024, 2025): Comercial / Sponsors
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2000–01 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Sporting CP".
+```
+
 ## Fuentes
 
 ### sportingcp-pt-relatorio-contas-2024-25
@@ -1715,4 +1771,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### sportingcp-pt-relatorio-contas-1999
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Sporting CP/relatorio-contas-1999.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
