@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2016-17.pdf",
   "club": "porto-pt",
   "year": 2017,
-  "generatedAt": "2026-10-16T00:30:33.913Z",
+  "generatedAt": "2026-10-16T00:56:35.948Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         4.691018
       ],
-      "glosa": "Cuotas de socios"
+      "glosa": "Ingresos de socios"
     },
     {
       "label": "Prémios competições europeias",
@@ -54,7 +54,7 @@
       "values": [
         2.724476
       ],
-      "glosa": "Ingresos por abonos de temporada"
+      "glosa": "Ingresos por abonos anuales"
     },
     {
       "label": "Outras receitas desportivas",
@@ -134,7 +134,7 @@
       "values": [
         0.064341
       ],
-      "glosa": "Imputación de subvenciones para inversión"
+      "glosa": "Imputación de subvenciones a la inversión"
     },
     {
       "label": "Outros rendimentos suplementares",
@@ -214,7 +214,7 @@
       "values": [
         1.159763
       ],
-      "glosa": "Otros ingresos relativos a jugadores"
+      "glosa": "Otros ingresos por jugadores"
     },
     {
       "label": "Custo das mercadorias vendidas e das matérias consumidas",
@@ -224,7 +224,7 @@
       "values": [
         3.321726
       ],
-      "glosa": "Coste de las mercancías vendidas y materiales consumidos"
+      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
     },
     {
       "label": "Trabalhos Especializados",
@@ -234,7 +234,7 @@
       "values": [
         8.435525
       ],
-      "glosa": "Servicios profesionales especializados"
+      "glosa": "Trabajos especializados"
     },
     {
       "label": "Subcontratos",
@@ -284,7 +284,7 @@
       "values": [
         1.905044
       ],
-      "glosa": "Reparación y conservación"
+      "glosa": "Conservación y reparación"
     },
     {
       "label": "Publicidade e propaganda",
@@ -314,7 +314,7 @@
       "values": [
         1.583172
       ],
-      "glosa": "Primas de seguros"
+      "glosa": "Seguros"
     },
     {
       "label": "Honorários",
@@ -344,7 +344,7 @@
       "values": [
         0.849101
       ],
-      "glosa": "Comunicaciones"
+      "glosa": "Comunicación"
     },
     {
       "label": "Despesas de representação",
@@ -364,7 +364,7 @@
       "values": [
         0.842235
       ],
-      "glosa": "Limpieza, higiene y bienestar"
+      "glosa": "Limpieza, higiene y mantenimiento"
     },
     {
       "label": "Relvados",
@@ -384,7 +384,7 @@
       "values": [
         1.628533
       ],
-      "glosa": "Energía y fluidos"
+      "glosa": "Energía y suministros"
     },
     {
       "label": "Outros fornecimentos e serviços",
@@ -394,7 +394,7 @@
       "values": [
         2.859464
       ],
-      "glosa": "Otros suministros y servicios exteriores"
+      "glosa": "Otros aprovisionamientos y servicios"
     },
     {
       "label": "Remunerações dos Órgãos Sociais",
@@ -404,7 +404,7 @@
       "values": [
         1.979606
       ],
-      "glosa": "Retribuciones de los órganos de administración"
+      "glosa": "Remuneraciones de los órganos de gobierno"
     },
     {
       "label": "Remunerações de atletas e equipas técnicas",
@@ -414,7 +414,7 @@
       "values": [
         57.610709
       ],
-      "glosa": "Retribuciones de deportistas y cuerpos técnicos"
+      "glosa": "Remuneraciones de deportistas y cuerpos técnicos"
     },
     {
       "label": "Remunerações do pessoal",
@@ -424,7 +424,7 @@
       "values": [
         8.436009
       ],
-      "glosa": "Sueldos y salarios del personal"
+      "glosa": "Remuneraciones del personal"
     },
     {
       "label": "Benefícios pós-emprego",
@@ -434,7 +434,7 @@
       "values": [
         0.024017
       ],
-      "glosa": "Prestaciones post-empleo"
+      "glosa": "Retribuciones post-empleo"
     },
     {
       "label": "Indemnizações",
@@ -454,7 +454,7 @@
       "values": [
         5.711596
       ],
-      "glosa": "Cargas sociales"
+      "glosa": "Cargas sociales sobre remuneraciones"
     },
     {
       "label": "Seguros de acidentes de trabalho e doenças profissionais",
@@ -494,7 +494,7 @@
       "values": [
         0.006366
       ],
-      "glosa": "Deterioro de créditos comerciales (pérdidas / reversiones)"
+      "glosa": "Deterioro de cuentas por cobrar (pérdidas / reversiones)"
     },
     {
       "label": "Dívidas incobráveis",
@@ -524,7 +524,7 @@
       "values": [
         0.468327
       ],
-      "glosa": "Tributos"
+      "glosa": "Impuestos"
     },
     {
       "label": "Penalizações Desportivas",
@@ -544,7 +544,7 @@
       "values": [
         0.651553
       ],
-      "glosa": "Multas y deudas fiscales y no fiscales"
+      "glosa": "Multas/Deudas fiscales y no fiscales"
     },
     {
       "label": "Outros",
@@ -604,7 +604,7 @@
       "values": [
         36.314903
       ],
-      "glosa": "Amortización de derechos federativos de jugadores (Nota 10)"
+      "glosa": "Amortizaciones de derechos federativos de jugadores (Nota 10)"
     },
     {
       "label": "Perdas por imparidade com passes de jogadores (Nota 10)",
@@ -634,7 +634,7 @@
       "values": [
         0.914267
       ],
-      "glosa": "Costes por cesión de jugadores"
+      "glosa": "Costes por cesiones de jugadores"
     },
     {
       "label": "Outros custos com jogadores",
@@ -644,7 +644,7 @@
       "values": [
         2.664979
       ],
-      "glosa": "Otros costes relativos a jugadores"
+      "glosa": "Otros costes de jugadores"
     },
     {
       "label": "Resultados relativos a investimentos",
@@ -654,7 +654,7 @@
       "values": [
         0.113397
       ],
-      "glosa": "Resultados de inversiones"
+      "glosa": "Resultados procedentes de inversiones"
     }
   ]
 }

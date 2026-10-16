@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Porto/wf-2023-2024-293efed8.pdf",
  "md": "Clubes/Portugal/Porto/wf-2023-2024-293efed8.md",
- "generado": "2026-10-16T00:30:34.041Z",
+ "generado": "2026-10-16T00:56:36.098Z",
  "estado": "ok",
  "clubId": "porto-pt",
  "year": 2024,
@@ -52,6 +52,11 @@
    "dif": 1.7763568394002505e-14
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2023 de este documento suma ingresos 189.500171; el sitio tiene 192.494197"
+  },
+  {
    "nombre": "documento del año 2025",
    "ok": true,
    "detalle": "ingresos de 2024: 245.27345 en este documento y 245.273 en wf-2024-2025-6b41056f.pdf (columna del año anterior)"
@@ -60,11 +65,6 @@
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2023: 192.494197 en relatorio-contas-consolidadas-2022-23.pdf y 189.500171 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   }
  ],
  "notas": [

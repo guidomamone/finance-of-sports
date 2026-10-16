@@ -1,7 +1,20 @@
 {
  "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2023-24.pdf",
- "generado": "2026-10-16T00:46:07.615Z",
- "frena": [],
+ "generado": "2026-10-16T01:09:25.897Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "santaclara-pt ya tiene el ejercicio 2024 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['santaclara-pt-relatorio-contas-sad-2023-24'] ya existe"
+  }
+ ],
  "avisos": [
   "gastos: ningún total impreso igual a la suma de las líneas (-16.93564); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2024 (cierre 2024-06-30); pregunta en la cola (no frena)"
@@ -1189,8 +1202,8 @@
  },
  "liga": {
   "valor": "pt-ligaportugal2",
-  "fuente": "roster cacheado de \"2023–24 Liga Portugal 2\" (tools/club-league-reference/pt.json), coincidencia exacta \"Santa Clara\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1230,13 +1243,13 @@
   },
   "liga": {
    "valor": "pt-ligaportugal2",
-   "fuente": "roster cacheado de \"2023–24 Liga Portugal 2\" (tools/club-league-reference/pt.json), coincidencia exacta \"Santa Clara\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 3,
   "lineasIngreso": 13,
   "lineasGasto": 28,
   "metaFilas": 3,

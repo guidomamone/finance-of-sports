@@ -1,7 +1,20 @@
 {
  "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2020-21.pdf",
- "generado": "2026-10-16T00:46:06.653Z",
- "frena": [],
+ "generado": "2026-10-16T01:09:24.936Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "porto-pt ya tiene el ejercicio 2021 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['porto-pt-relatorio-contas-consolidadas-2020-21'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 8 ejercicio(s) con un solo perímetro (consolidado); 9 documento(s) mirados)",
   "materialidad: \"Mais-valias\" va como other_income con 0.6 (las dudas de ingresos suman 0.13% de su lado)",
@@ -773,9 +786,11 @@
    "native": -0.056368,
    "ladoDoc": null,
    "origen": "verificacion",
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
    "destino": "netInterest"
   },
   {
@@ -831,8 +846,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2020–21 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Porto\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -872,13 +887,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2020–21 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Porto\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 3,
   "lineasIngreso": 14,
   "lineasGasto": 12,
   "metaFilas": 4,

@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2023-24.pdf",
   "club": "sportingcp-pt",
   "year": 2024,
-  "generatedAt": "2026-10-16T00:30:34.428Z",
+  "generatedAt": "2026-10-16T00:56:36.344Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         4.341
       ],
-      "glosa": "Distribución / Comercio minorista"
+      "glosa": "Distribución / Venta minorista"
     },
     {
       "label": "Loja Verde Online",
@@ -34,7 +34,7 @@
       "values": [
         3.003
       ],
-      "glosa": "Tienda oficial online"
+      "glosa": "Tienda oficial online (Loja Verde Online)"
     },
     {
       "label": "Direitos televisivos",
@@ -74,7 +74,7 @@
       "values": [
         6.496
       ],
-      "glosa": "Abonos de temporada"
+      "glosa": "Abonos"
     },
     {
       "label": "Camarotes",
@@ -94,7 +94,7 @@
       "values": [
         3.945
       ],
-      "glosa": "Taquilla Liga Nacional"
+      "glosa": "Taquilla de Liga Nacional"
     },
     {
       "label": "Business Seats",
@@ -114,7 +114,7 @@
       "values": [
         1.542
       ],
-      "glosa": "Taquilla Liga Europa"
+      "glosa": "Taquilla de Liga Europa"
     },
     {
       "label": "Bilheteira Taça de Portugal",
@@ -124,7 +124,7 @@
       "values": [
         0.586
       ],
-      "glosa": "Taquilla Copa de Portugal"
+      "glosa": "Taquilla de Copa de Portugal"
     },
     {
       "label": "Lugares de Leão e VIP",
@@ -144,7 +144,7 @@
       "values": [
         0.218
       ],
-      "glosa": "Taquilla partidos amistosos"
+      "glosa": "Taquilla de partidos amistosos"
     },
     {
       "label": "Bilheteira Taça da Liga",
@@ -154,7 +154,7 @@
       "values": [
         0.055
       ],
-      "glosa": "Taquilla Copa de la Liga"
+      "glosa": "Taquilla de Copa de la Liga"
     },
     {
       "label": "Outros",
@@ -194,7 +194,7 @@
       "values": [
         8.79
       ],
-      "glosa": "Premio por rendimiento por participación en la Liga Europa"
+      "glosa": "Premios por rendimiento por participación en la Liga Europa"
     },
     {
       "label": "Prémio de performance na fase de Grupos da Liga Europa",
@@ -204,7 +204,7 @@
       "values": [
         2.31
       ],
-      "glosa": "Premio por rendimiento en la fase de grupos de la Liga Europa"
+      "glosa": "Premios por rendimiento en la fase de grupos de la Liga Europa"
     },
     {
       "label": "Passagem ao play-off da Liga Europa",
@@ -324,7 +324,7 @@
       "values": [
         4.317
       ],
-      "glosa": "Manutención y comidas"
+      "glosa": "Manutención"
     },
     {
       "label": "Assistencia aos jogos",
@@ -414,7 +414,7 @@
       "values": [
         5.342
       ],
-      "glosa": "Trabajos y servicios especializados"
+      "glosa": "Trabajos especializados"
     },
     {
       "label": "*Royalties*",
@@ -424,7 +424,7 @@
       "values": [
         2.775
       ],
-      "glosa": "*Royalties*"
+      "glosa": "Royalties"
     },
     {
       "label": "Honorários",
@@ -484,7 +484,7 @@
       "values": [
         1.318
       ],
-      "glosa": "Arrendamientos y alquileres"
+      "glosa": "Arrendamientos y cánones"
     },
     {
       "label": "Comunicações",
@@ -514,7 +514,7 @@
       "values": [
         0.615
       ],
-      "glosa": "Conservación y reparación"
+      "glosa": "Conservación y reparaciones"
     },
     {
       "label": "Combustíveis",
@@ -534,7 +534,7 @@
       "values": [
         0.289
       ],
-      "glosa": "Material y equipamiento deportivo"
+      "glosa": "Material deportivo"
     },
     {
       "label": "Outros",
@@ -554,7 +554,7 @@
       "values": [
         1.086
       ],
-      "glosa": "Retribución de los órganos de gobierno"
+      "glosa": "Remuneración de los órganos sociales"
     },
     {
       "label": "Remuneração do pessoal",
@@ -564,7 +564,7 @@
       "values": [
         64.646
       ],
-      "glosa": "Retribución del personal"
+      "glosa": "Remuneración del personal"
     },
     {
       "label": "Encargos com remunerações",
@@ -574,7 +574,7 @@
       "values": [
         7.806
       ],
-      "glosa": "Cargas sociales sobre retribuciones"
+      "glosa": "Cargas sociales sobre remuneraciones"
     },
     {
       "label": "Seguros",
@@ -594,7 +594,7 @@
       "values": [
         8.988
       ],
-      "glosa": "Primas por rendimiento y méritos deportivos"
+      "glosa": "Primas por rendimiento y desempeño deportivo"
     },
     {
       "label": "Indemnizações",
@@ -734,7 +734,7 @@
       "values": [
         4.521
       ],
-      "glosa": "Pérdidas por deterioro de valor (Nota 12)"
+      "glosa": "Pérdidas por deterioro (Nota 12)"
     },
     {
       "label": "Percentagem dos direitos económicos/mais-valias",

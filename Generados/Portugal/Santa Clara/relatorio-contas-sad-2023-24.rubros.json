@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2023-24.pdf",
   "club": "santaclara-pt",
   "year": 2024,
-  "generatedAt": "2026-10-16T00:30:34.140Z",
+  "generatedAt": "2026-10-16T00:56:36.169Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         0.065016
       ],
-      "glosa": "Premios de participación"
+      "glosa": "Premios por participación"
     },
     {
       "label": "Direitos Televisivos",
@@ -74,7 +74,7 @@
       "values": [
         0.32
       ],
-      "glosa": "Cesión por préstamo de derechos deportivos"
+      "glosa": "Cesión de derechos deportivos a préstamo"
     },
     {
       "label": "Diversos",
@@ -104,7 +104,7 @@
       "values": [
         1.81501
       ],
-      "glosa": "Enajenaciones de jugadores"
+      "glosa": "Enajenación de jugadores"
     },
     {
       "label": "Correções Relativas a Períodos Anteriores",
@@ -114,7 +114,7 @@
       "values": [
         0.370993
       ],
-      "glosa": "Correcciones relativas a ejercicios anteriores"
+      "glosa": "Correcciones relativas a periodos anteriores"
     },
     {
       "label": "Outros",
@@ -134,7 +134,7 @@
       "values": [
         0.360009
       ],
-      "glosa": "Intereses y otros ingresos similares"
+      "glosa": "Intereses y otros rendimientos similares"
     },
     {
       "label": "Custo das mercadorias vendidas e das matérias consumidas",
@@ -154,7 +154,7 @@
       "values": [
         0.286702
       ],
-      "glosa": "Subcontratos"
+      "glosa": "Subcontratación"
     },
     {
       "label": "Serviços Especializados",
@@ -214,7 +214,7 @@
       "values": [
         0.272994
       ],
-      "glosa": "Remuneraciones de los órganos sociales"
+      "glosa": "Remuneraciones de los órganos de gobierno"
     },
     {
       "label": "Remunerações ao Pessoal",
@@ -224,7 +224,7 @@
       "values": [
         9.259487
       ],
-      "glosa": "Remuneraciones del personal"
+      "glosa": "Remuneraciones al personal"
     },
     {
       "label": "Indemnizações",
@@ -294,7 +294,7 @@
       "values": [
         0.001014
       ],
-      "glosa": "Impuesto sobre bienes inmuebles (IMI)"
+      "glosa": "Impuesto municipal sobre bienes inmuebles (IMI)"
     },
     {
       "label": "IUC",
@@ -304,7 +304,7 @@
       "values": [
         0.000574
       ],
-      "glosa": "Impuesto sobre vehículos de tracción mecánica (IUC)"
+      "glosa": "Impuesto único de circulación (IUC)"
     },
     {
       "label": "Imposto de Selo",
@@ -314,7 +314,7 @@
       "values": [
         0.149233
       ],
-      "glosa": "Impuesto de transmisiones y actos jurídicos / timbre"
+      "glosa": "Impuesto de timbre"
     },
     {
       "label": "Taxas",
@@ -334,7 +334,7 @@
       "values": [
         0.181499
       ],
-      "glosa": "Correcciones relativas a ejercicios anteriores"
+      "glosa": "Correcciones relativas a periodos anteriores"
     },
     {
       "label": "Donativos",
@@ -384,7 +384,7 @@
       "values": [
         0.0636
       ],
-      "glosa": "Gastos no debidamente justificados"
+      "glosa": "Gastos no debidamente documentados"
     },
     {
       "label": "Juros de mora e compensatórios",
@@ -414,7 +414,7 @@
       "values": [
         1.198188
       ],
-      "glosa": "Gastos/reversiones de amortización y depreciación"
+      "glosa": "Amortizaciones y depreciaciones (gastos/reversiones)"
     }
   ]
 }

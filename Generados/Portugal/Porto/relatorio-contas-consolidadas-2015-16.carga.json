@@ -1,7 +1,24 @@
 {
  "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2015-16.pdf",
- "generado": "2026-10-16T00:46:06.103Z",
- "frena": [],
+ "generado": "2026-10-16T01:09:24.344Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "porto-pt ya tiene el ejercicio 2016 cargado"
+  },
+  {
+   "etapa": "categoria-en-cola",
+   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Outros\" -> other_income 0"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['porto-pt-relatorio-contas-consolidadas-2015-16'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 8 ejercicio(s) con un solo perímetro (consolidado); 9 documento(s) mirados)",
   "\"Otras secciones deportivas\" en 0: real, por ajuste manual (2026-10-16, Las modalidades del club no tienen fila propia: sus ingresos vienen mezclados en 'Outras receitas desportivas' (con Taça, pretemporada y Dragon Force) y sus gastos dentro de FSE y personal; no se pueden separar sin inventar (subagente Sonnet, revisado por Claude).)",
@@ -112,7 +129,7 @@
     "_pag": 99,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club con la misma nota (\"Vendas e serviços prestados\"): la etiqueta está bajo renglones de categoría distinta"
    },
    {
     "rawLabel": "Subsídios à exploração",
@@ -190,9 +207,9 @@
     "amountNative": 0.160172,
     "disclosureLevel": "aggregated",
     "_pag": 101,
-    "_escalon": 0,
-    "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_escalon": 2,
+    "_conf": 0,
+    "_fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_income) no decide para la fila de \"Outros rendimentos e ganhos\""
    },
    {
     "rawLabel": "Proveitos com alienações de passes de jogadores",
@@ -876,10 +893,8 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club con la misma nota (\"Vendas e serviços prestados\"): la etiqueta está bajo renglones de categoría distinta",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): 'Outros' al final de la nota de Rédito (ingresos): other_income.",
    "destino": "revenue",
    "amountNative": 2.098832
   },
@@ -996,12 +1011,12 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
    "signoFijo": 0.160172,
    "cat": "other_income",
-   "conf": 1,
-   "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "conf": 0,
+   "escalon": 2,
+   "fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_income) no decide para la fila de \"Outros rendimentos e ganhos\"",
    "enLista": true,
    "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): 'Outros' al final de la nota de Rédito (ingresos): other_income.",
+   "enCola": true,
    "destino": "revenue",
    "amountNative": 0.160172
   },
@@ -1734,9 +1749,11 @@
    "native": -0.604084,
    "ladoDoc": null,
    "origen": "verificacion",
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
    "destino": "netInterest"
   },
   {
@@ -1792,8 +1809,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2015–16 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Porto\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1833,13 +1850,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2015–16 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Porto\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 4,
   "lineasIngreso": 21,
   "lineasGasto": 43,
   "metaFilas": 4,

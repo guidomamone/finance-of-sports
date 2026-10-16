@@ -1,7 +1,20 @@
 {
  "pdf": "Clubes/Portugal/Porto/wf-2023-2024-293efed8.pdf",
- "generado": "2026-10-16T00:46:07.084Z",
- "frena": [],
+ "generado": "2026-10-16T01:09:25.369Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "porto-pt ya tiene el ejercicio 2024 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['porto-pt-wf-2023-2024-293efed8'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 8 ejercicio(s) con un solo perímetro (consolidado); 9 documento(s) mirados)",
   "\"Cuotas sociales\" en 0: real, por ajuste manual (2026-10-16, Documento de FC Porto SAD (no del club asociación): la SAD no cobra cuotas; perfil de porto-pt = sí por los consolidados del club 2016-2023. Igual que 2024-25.)",
@@ -1189,9 +1202,11 @@
    "native": -0.173168,
    "ladoDoc": null,
    "origen": "verificacion",
-   "cat": null,
-   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
-   "enLista": false,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (la fila no estaba en categorias.json)",
+   "enLista": true,
    "destino": "netInterest"
   },
   {
@@ -1249,8 +1264,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2023–24 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Porto\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1290,13 +1305,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2023–24 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Porto\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 3,
   "lineasIngreso": 13,
   "lineasGasto": 29,
   "metaFilas": 4,

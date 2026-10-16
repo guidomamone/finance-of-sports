@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2021-22.pdf",
  "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2021-22.md",
- "generado": "2026-10-16T00:30:34.099Z",
+ "generado": "2026-10-16T00:56:36.158Z",
  "estado": "ok",
  "clubId": "santaclara-pt",
  "year": 2022,
@@ -36,6 +36,11 @@
    "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2021 de este documento suma ingresos 13.938977; el sitio tiene 13.938977"
+  },
+  {
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2022: 10.373838 en este documento y 10.373838 en relatorio-contas-sad-2022-23.pdf (columna del año anterior)"
@@ -44,11 +49,6 @@
    "nombre": "documento del año 2021",
    "ok": true,
    "detalle": "ingresos de 2021: 13.938977 en relatorio-contas-sad-2020-21.pdf y 13.938977 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [

@@ -1,7 +1,20 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2019-20.pdf",
- "generado": "2026-10-16T00:46:10.008Z",
- "frena": [],
+ "generado": "2026-10-16T01:09:28.463Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "sportingcp-pt ya tiene el ejercicio 2020 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['sportingcp-pt-relatorio-contas-2019-20'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 10 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)",
   "materialidad: \"Participação em Competições Particulares\" va como competition_bonus con 0.75 (las dudas de ingresos suman 0.31% de su lado)",
@@ -413,7 +426,7 @@
     "_pag": 132,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía player_sales)"
    },
    {
     "rawLabel": "Outras comissões",
@@ -1424,10 +1437,8 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía player_sales)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): fila de la nota de Comissões (comisión por cesión de jugadores), other_expenses como 2025.",
    "destino": "expense",
    "amountNative": -0.405
   },
@@ -2038,8 +2049,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2019–20 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Sporting CP\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -2079,13 +2090,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2019–20 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Sporting CP\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 3,
   "lineasIngreso": 28,
   "lineasGasto": 47,
   "metaFilas": 2,

@@ -1,7 +1,20 @@
 {
  "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2016-17.pdf",
- "generado": "2026-10-16T00:46:06.249Z",
- "frena": [],
+ "generado": "2026-10-16T01:09:24.508Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "porto-pt ya tiene el ejercicio 2017 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['porto-pt-relatorio-contas-consolidadas-2016-17'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 8 ejercicio(s) con un solo perímetro (consolidado); 9 documento(s) mirados)",
   "\"Otras secciones deportivas\" en 0: real, por ajuste manual (2026-10-16, Las modalidades del club no tienen fila propia: sus ingresos vienen mezclados en 'Outras receitas desportivas' (con Taça, pretemporada y Dragon Force) y sus gastos dentro de FSE y personal; no se pueden separar sin inventar (subagente Sonnet, revisado por Claude).)",
@@ -112,7 +125,7 @@
     "_pag": 92,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)"
    },
    {
     "rawLabel": "Subsídios à exploração",
@@ -162,7 +175,7 @@
     "_pag": 94,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía exceptional_items)"
    },
    {
     "rawLabel": "Reembolsos de sinistros",
@@ -885,10 +898,8 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): 'Outros' al final de la nota de Rédito (ingresos): other_income.",
    "destino": "revenue",
    "amountNative": 4.20169
   },
@@ -962,10 +973,8 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía exceptional_items)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): correcciones de ejercicios anteriores en la nota de Outros rendimentos (ingreso): other_income.",
    "destino": "revenue",
    "amountNative": 0.002629
   },
@@ -1805,8 +1814,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2016–17 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Porto\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1846,13 +1855,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2016–17 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Porto\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 3,
   "lineasIngreso": 21,
   "lineasGasto": 44,
   "metaFilas": 3,

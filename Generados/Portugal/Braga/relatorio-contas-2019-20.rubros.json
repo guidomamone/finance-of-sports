@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Braga/relatorio-contas-2019-20.pdf",
   "club": "braga-pt",
   "year": 2020,
-  "generatedAt": "2026-10-16T00:30:33.831Z",
+  "generatedAt": "2026-10-16T00:56:35.879Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -104,7 +104,7 @@
       "values": [
         23.968396
       ],
-      "glosa": "Ingresos / (gastos) por transacciones de jugadores"
+      "glosa": "Ingresos / (gastos) por traspasos de futbolistas"
     },
     {
       "label": "Empréstimo de atletas",
@@ -114,7 +114,7 @@
       "values": [
         0.383598
       ],
-      "glosa": "Cesión de jugadores"
+      "glosa": "Cesión de futbolistas"
     },
     {
       "label": "Receitas de apostas desportivas",
@@ -174,7 +174,7 @@
       "values": [
         2.091634
       ],
-      "glosa": "Gastos por adquisición de jugadores"
+      "glosa": "Gastos por adquisición de futbolistas"
     },
     {
       "label": "Publicidade e propaganda",
@@ -234,7 +234,7 @@
       "values": [
         0.107256
       ],
-      "glosa": "Conservación y reparaciones"
+      "glosa": "Conservación y reparación"
     },
     {
       "label": "Outros serviços especializados",
@@ -254,7 +254,7 @@
       "values": [
         0.148852
       ],
-      "glosa": "Herramientas y utensilios de desgaste rápido"
+      "glosa": "Herramientas y útiles de desgaste rápido"
     },
     {
       "label": "Livros e documentação técnica",
@@ -354,7 +354,7 @@
       "values": [
         0.370929
       ],
-      "glosa": "Corporativo (catering)"
+      "glosa": "Corporate (catering)"
     },
     {
       "label": "Rendas / Direitos Exploração",
@@ -384,7 +384,7 @@
       "values": [
         0.054023
       ],
-      "glosa": "Seguros"
+      "glosa": "Primas de seguros"
     },
     {
       "label": "Contencioso e notariado",
@@ -424,7 +424,7 @@
       "values": [
         0.212057
       ],
-      "glosa": "Retribución de la Comisión Ejecutiva"
+      "glosa": "Remuneración de la Comisión Ejecutiva"
     },
     {
       "label": "Senhas de Presença no CA",
@@ -444,7 +444,7 @@
       "values": [
         10.603004
       ],
-      "glosa": "Jugadores"
+      "glosa": "Futbolistas"
     },
     {
       "label": "Treinadores",
@@ -474,7 +474,7 @@
       "values": [
         2.305624
       ],
-      "glosa": "Primas por rendimiento"
+      "glosa": "Primas de rendimiento"
     },
     {
       "label": "Rescisão de contratos",
@@ -494,7 +494,7 @@
       "values": [
         1.079079
       ],
-      "glosa": "Cargas sociales sobre salarios"
+      "glosa": "Cargas sociales sobre remuneraciones"
     },
     {
       "label": "Seguro de acidentes de trabalho",
@@ -504,7 +504,7 @@
       "values": [
         1.707802
       ],
-      "glosa": "Seguro de accidentes de trabajo"
+      "glosa": "Seguro de accidentes laborales"
     },
     {
       "label": "Outros gastos com pessoal",
@@ -584,7 +584,7 @@
       "values": [
         1.026391
       ],
-      "glosa": "Cesión de jugadores"
+      "glosa": "Cesión de futbolistas"
     },
     {
       "label": "Direitos de formação e mecanismo de solidariedade",
@@ -624,7 +624,7 @@
       "values": [
         0.4
       ],
-      "glosa": "Convenio de fútbol femenino"
+      "glosa": "Protocolo de fútbol femenino"
     },
     {
       "label": "Donativos",
@@ -654,7 +654,7 @@
       "values": [
         0.075
       ],
-      "glosa": "Deterioro de inmovilizado amortizable"
+      "glosa": "Deterioro de inversiones depreciables/amortizables"
     },
     {
       "label": "Edifícios e outras construções",
@@ -704,7 +704,7 @@
       "values": [
         5.518732
       ],
-      "glosa": "Plantilla"
+      "glosa": "Plantilla deportiva"
     },
     {
       "label": "Direitos de superfície",

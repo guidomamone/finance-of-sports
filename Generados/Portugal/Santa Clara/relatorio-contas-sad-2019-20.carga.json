@@ -1,7 +1,20 @@
 {
  "pdf": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2019-20.pdf",
- "generado": "2026-10-16T00:46:07.252Z",
- "frena": [],
+ "generado": "2026-10-16T01:09:25.546Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "santaclara-pt ya tiene el ejercicio 2020 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['santaclara-pt-relatorio-contas-sad-2019-20'] ya existe"
+  }
+ ],
  "avisos": [
   "materialidad: \"Equipamento desportivo\" va como sponsorship_commercial con 0.75 (las dudas de ingresos suman 0.63% de su lado)",
   "materialidad: \"Portes vendas\" va como other_income con 0.6 (las dudas de ingresos suman 0.63% de su lado)",
@@ -213,7 +226,7 @@
     "_pag": 48,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía sponsorship_commercial)"
    },
    {
     "rawLabel": "Trabalhos especializados",
@@ -856,10 +869,8 @@
    "cat": "admin_general_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía sponsorship_commercial)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): gasto dentro de Serviços especializados (FSE), como 'Publicidade e propaganda' en 2025. [relatorio-contas-sad-2019-20.md L1690]",
    "destino": "expense",
    "amountNative": -0.003926
   },
@@ -1364,8 +1375,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2019–20 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Santa Clara\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1405,13 +1416,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2019–20 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Santa Clara\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 3,
   "lineasIngreso": 16,
   "lineasGasto": 32,
   "metaFilas": 3,

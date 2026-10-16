@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2020-21.pdf",
   "club": "porto-pt",
   "year": 2021,
-  "generatedAt": "2026-10-16T00:30:33.974Z",
+  "generatedAt": "2026-10-16T00:56:36.027Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         152.41446
       ],
-      "glosa": "Ventas y prestación de servicios"
+      "glosa": "Ventas y servicios prestados"
     },
     {
       "label": "Subsídios à exploração",
@@ -124,7 +124,7 @@
       "values": [
         102.889181
       ],
-      "glosa": "Ingresos por enajenación de derechos de jugadores"
+      "glosa": "Ingresos por enajenación de derechos federativos de jugadores"
     },
     {
       "label": "Proveitos com empréstimos de jogadores",
@@ -144,7 +144,7 @@
       "values": [
         4.38638
       ],
-      "glosa": "Otros ingresos relacionados con jugadores"
+      "glosa": "Otros ingresos por jugadores"
     },
     {
       "label": "Custo das mercadorias vendidas e das matérias consumidas",
@@ -154,7 +154,7 @@
       "values": [
         3.648411
       ],
-      "glosa": "Coste de las mercancías vendidas y materias consumidas"
+      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
     },
     {
       "label": "Fornecimentos e serviços externos",
@@ -214,7 +214,7 @@
       "values": [
         5.554148
       ],
-      "glosa": "Dotaciones / reversiones por amortización y depreciación"
+      "glosa": "Gastos / reversiones de amortización y depreciación"
     },
     {
       "label": "Amortizações de passes de jogadores (Nota 10)",
@@ -224,7 +224,7 @@
       "values": [
         29.843687
       ],
-      "glosa": "Amortizaciones de derechos de jugadores (Nota 10)"
+      "glosa": "Amortizaciones de derechos federativos de jugadores (Nota 10)"
     },
     {
       "label": "Perdas por imparidade com passes de jogadores (Nota 10)",
@@ -234,7 +234,7 @@
       "values": [
         0.01879
       ],
-      "glosa": "Pérdidas por deterioro de derechos de jugadores (Nota 10)"
+      "glosa": "Pérdidas por deterioro de derechos federativos de jugadores (Nota 10)"
     },
     {
       "label": "Custos com alienações de passes de jogadores (Nota 10)",
@@ -244,7 +244,7 @@
       "values": [
         30.725022
       ],
-      "glosa": "Costes por enajenación de derechos de jugadores (Nota 10)"
+      "glosa": "Costes por enajenación de derechos federativos de jugadores (Nota 10)"
     },
     {
       "label": "Custos com empréstimos de jogadores",
@@ -264,7 +264,7 @@
       "values": [
         5.965788
       ],
-      "glosa": "Otros costes relacionados con jugadores"
+      "glosa": "Otros costes por jugadores"
     }
   ]
 }

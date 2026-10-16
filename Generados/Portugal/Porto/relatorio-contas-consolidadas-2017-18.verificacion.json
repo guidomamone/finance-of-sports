@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2017-18.pdf",
  "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2017-18.md",
- "generado": "2026-10-16T00:30:33.934Z",
+ "generado": "2026-10-16T00:56:35.974Z",
  "estado": "ok",
  "clubId": "porto-pt",
  "year": 2018,
@@ -47,6 +47,11 @@
    "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2017 de este documento suma ingresos 168.376805; el sitio tiene 168.376805"
+  },
+  {
    "nombre": "documento del año 2019",
    "ok": true,
    "detalle": "ingresos de 2018: 183.072058 en este documento y 183.072058 en relatorio-contas-consolidadas-2018-19.pdf (columna del año anterior)"
@@ -55,11 +60,6 @@
    "nombre": "documento del año 2017",
    "ok": true,
    "detalle": "ingresos de 2017: 168.376805 en relatorio-contas-consolidadas-2016-17.pdf y 168.376805 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2017: este chequeo no se puede hacer"
   }
  ],
  "notas": [
