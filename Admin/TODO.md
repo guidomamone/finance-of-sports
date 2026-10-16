@@ -146,7 +146,11 @@ llegue acá.
        misma, pero el precedente vale desde la respuesta y no desde la carga. A medir con la cola actual de Portugal.
     n) "Outros" Y ETIQUETAS GENÉRICAS CON CONFIANZA 0 (23 preguntas en Portugal). Si la fila genérica cae dentro de un bloque con nombre
        (p. ej. "Outros" bajo "Rendimentos suplementares"), el bloque decide la categoría; hoy sale 0 y va a la cola. A diseñar con 2-3
-       casos reales.
+       casos reales. Medido el 2026-10-15 en toda la cola (preguntas de categoría con etiqueta genérica Outros/Otros/Others/Altri...):
+       Portugal 96 de 588 (16%), Italia 20 de 491, Brasil 11 de 575, Colombia 6 de 205, Grecia 0. No es el idioma: el formato SNC trae una
+       tabla por nota y casi todas cierran con "Outros". Aparte, y sin arreglo por etiqueta: el "Outros" cuyo detalle está en el TEXTO bajo
+       la tabla (Mafra 2023-24: 2.300.000 de venta de jugadores dentro de "Outros" 2.304.155,62; Marítimo 2024-25: Taças, solidaridad FIFA y
+       lugares anuais dentro de "Outros" 176.636), resueltos con ajustes `fila`; va con h) (leer la nota de la fila).
     o) VERIFICAR (186 casos en Portugal): 64 dudas de extraer, 39 dudas de tema (escala, cuadro), 32 que no cierran, 24 de localizar,
        14 de año vecino, 10 de primer año. Mirar antes de diseñar si las dudas de escala ("¿en euros y no en miles?") y las filas
        informativas debajo del total se repiten por club y se pueden contestar una vez por club, como en m).
