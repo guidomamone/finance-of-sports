@@ -1,181 +1,200 @@
 {
- "md": "Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.md",
- "pdf": "Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.pdf",
- "club": "felgueiras-pt",
- "year": 2023,
- "generatedAt": "2026-10-16T03:02:55.853Z",
- "origen": "verificar.mjs (proceso nuevo, Versión 324)",
- "rubros": [
-  {
-   "label": "Vendas e serviços prestados",
-   "lado": "revenue",
-   "page": 19,
-   "section": "estado",
-   "values": [
-    0.179315
-   ]
-  },
-  {
-   "label": "Subsídios à exploração",
-   "lado": "revenue",
-   "page": 19,
-   "section": "estado",
-   "values": [
-    0.008297
-   ]
-  },
-  {
-   "label": "Outros rendimentos",
-   "lado": "revenue",
-   "page": 19,
-   "section": "estado",
-   "values": [
-    0.009521
-   ]
-  },
-  {
-   "label": "Trabalhos especializados",
-   "lado": "expense",
-   "page": 36,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\"",
-   "values": [
-    0.051727
-   ]
-  },
-  {
-   "label": "Publicidade e propaganda",
-   "lado": "expense",
-   "page": 36,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\"",
-   "values": [
-    0.000509
-   ]
-  },
-  {
-   "label": "Vigilância e segurança",
-   "lado": "expense",
-   "page": 36,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\"",
-   "values": [
-    0.00153
-   ]
-  },
-  {
-   "label": "Honorários",
-   "lado": "expense",
-   "page": 36,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\"",
-   "values": [
-    0.002
-   ]
-  },
-  {
-   "label": "Outros",
-   "lado": "expense",
-   "page": 36,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\"",
-   "values": [
-    0.015736
-   ]
-  },
-  {
-   "label": "Ferramentas e utensílios de desgaste rápido",
-   "lado": "expense",
-   "page": 36,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Materiais\"",
-   "values": [
-    0.019351
-   ]
-  },
-  {
-   "label": "Material de escritório",
-   "lado": "expense",
-   "page": 36,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Materiais\"",
-   "values": [
-    0.000932
-   ]
-  },
-  {
-   "label": "Eletricidade",
-   "lado": "expense",
-   "page": 36,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Energia e fluidos\"",
-   "values": [
-    0.00164
-   ]
-  },
-  {
-   "label": "Água",
-   "lado": "expense",
-   "page": 36,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Energia e fluidos\"",
-   "values": [
-    0.000007
-   ]
-  },
-  {
-   "label": "Outros",
-   "lado": "expense",
-   "page": 36,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Energia e fluidos\"",
-   "values": [
-    0.000047
-   ]
-  },
-  {
-   "label": "Deslocações e estadas",
-   "lado": "expense",
-   "page": 36,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Deslocações, estadas e transportes\"",
-   "values": [
-    0.010869
-   ]
-  },
-  {
-   "label": "Transportes de mercadorias",
-   "lado": "expense",
-   "page": 36,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Deslocações, estadas e transportes\"",
-   "values": [
-    0.007276
-   ]
-  },
-  {
-   "label": "Serviços diversos",
-   "lado": "expense",
-   "page": 36,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    0.189825
-   ]
-  },
-  {
-   "label": "Gastos com o pessoal",
-   "lado": "expense",
-   "page": 19,
-   "section": "estado",
-   "values": [
-    0.458634
-   ]
-  },
-  {
-   "label": "Outros gastos",
-   "lado": "expense",
-   "page": 19,
-   "section": "estado",
-   "values": [
-    0.000052
-   ]
-  },
-  {
-   "label": "Gastos/reversões de depreciação e de amortização",
-   "lado": "expense",
-   "page": 19,
-   "section": "estado",
-   "values": [
-    0.001175
-   ]
-  }
- ]
+  "md": "Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.md",
+  "pdf": "Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.pdf",
+  "club": "felgueiras-pt",
+  "year": 2023,
+  "generatedAt": "2026-10-16T03:04:19.920Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Vendas e serviços prestados",
+      "lado": "revenue",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        0.179315
+      ],
+      "glosa": "Ventas y prestación de servicios"
+    },
+    {
+      "label": "Subsídios à exploração",
+      "lado": "revenue",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        0.008297
+      ],
+      "glosa": "Subvenciones a la explotación"
+    },
+    {
+      "label": "Outros rendimentos",
+      "lado": "revenue",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        0.009521
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Trabalhos especializados",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\"",
+      "values": [
+        0.051727
+      ],
+      "glosa": "Trabajos especializados"
+    },
+    {
+      "label": "Publicidade e propaganda",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\"",
+      "values": [
+        0.000509
+      ],
+      "glosa": "Publicidad y propaganda"
+    },
+    {
+      "label": "Vigilância e segurança",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\"",
+      "values": [
+        0.00153
+      ],
+      "glosa": "Vigilancia y seguridad"
+    },
+    {
+      "label": "Honorários",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\"",
+      "values": [
+        0.002
+      ],
+      "glosa": "Honorarios"
+    },
+    {
+      "label": "Outros",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\"",
+      "values": [
+        0.015736
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Ferramentas e utensílios de desgaste rápido",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Materiais\"",
+      "values": [
+        0.019351
+      ],
+      "glosa": "Herramientas y utensilios de desgaste rápido"
+    },
+    {
+      "label": "Material de escritório",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Materiais\"",
+      "values": [
+        0.000932
+      ],
+      "glosa": "Material de oficina"
+    },
+    {
+      "label": "Eletricidade",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Energia e fluidos\"",
+      "values": [
+        0.00164
+      ],
+      "glosa": "Electricidad"
+    },
+    {
+      "label": "Água",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Energia e fluidos\"",
+      "values": [
+        0.000007
+      ],
+      "glosa": "Agua"
+    },
+    {
+      "label": "Outros",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Energia e fluidos\"",
+      "values": [
+        0.000047
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Deslocações e estadas",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Deslocações, estadas e transportes\"",
+      "values": [
+        0.010869
+      ],
+      "glosa": "Desplazamientos y estancias"
+    },
+    {
+      "label": "Transportes de mercadorias",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Deslocações, estadas e transportes\"",
+      "values": [
+        0.007276
+      ],
+      "glosa": "Transporte de mercancías"
+    },
+    {
+      "label": "Serviços diversos",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.189825
+      ],
+      "glosa": "Servicios diversos"
+    },
+    {
+      "label": "Gastos com o pessoal",
+      "lado": "expense",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        0.458634
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Outros gastos",
+      "lado": "expense",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        0.000052
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Gastos/reversões de depreciação e de amortização",
+      "lado": "expense",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        0.001175
+      ],
+      "glosa": "Gastos/reversiones de amortización y depreciación"
+    }
+  ]
 }

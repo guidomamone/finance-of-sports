@@ -1,18 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.pdf",
- "generado": "2026-10-15T22:34:41.767Z",
+ "generado": "2026-10-16T03:18:41.195Z",
  "frena": [
-  {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (felgueiras-pt)"
-  },
   {
    "etapa": "alta:fx",
    "motivo": "El documento declara un tipo de cambio con el dólar (1.0898 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\") | 0.7381 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\") | 0.8562 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\") | 1.0739 (línea 325: \"O que respeita ao mercado cambial, este tem evoluído de forma algo instável, na linha do que tem sucedido nos anos imediatamente anteriores. No início de 2015 a cotação EUR/USD era de 1,0898 e no fim do ano a mesma cotaç\")). En EUR el número solo no dice el sentido: el sitio guarda \"EUR por 1 USD\" (~0.7-1.15); si el documento escribió \"USD por 1 EUR\" hay que invertirlo. ¿Cuál es el de CIERRE y en qué sentido está?"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Outros\" -> admin_general_expense 0.55; \"Outros\" -> admin_general_expense 0.55"
   },
   {
    "etapa": "fx",
@@ -102,13 +94,13 @@
    },
    {
     "rawLabel": "Outros",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "other_expenses",
     "amountNative": -0.015736,
     "disclosureLevel": "aggregated",
     "_pag": 36,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Ferramentas e utensílios de desgaste rápido",
@@ -152,13 +144,13 @@
    },
    {
     "rawLabel": "Outros",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "other_expenses",
     "amountNative": -0.000047,
     "disclosureLevel": "aggregated",
     "_pag": 36,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Deslocações e estadas",
@@ -212,7 +204,7 @@
    },
    {
     "rawLabel": "Gastos/reversões de depreciação e de amortização",
-    "normalizedCategory": "player_amortisation",
+    "normalizedCategory": "depreciation",
     "amountNative": -0.001175,
     "disclosureLevel": "aggregated",
     "_pag": 19,
@@ -257,10 +249,10 @@
   "source": {
    "id": "felgueiras-pt-fecho-contas-2022-2023",
    "clubId": "felgueiras-pt",
-   "title": "Felgueiras — Fecho-contas-2022-2023 (ejercicio 2023)",
+   "title": "Futebol Clube de Felgueiras - Futebol SAD — Fecho-contas-2022-2023 (ejercicio 2023)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.md",
@@ -405,12 +397,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços especializados\")",
    "signoFijo": 0.015736,
-   "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): 'Outros' al final de Serviços especializados (FSE).",
    "destino": "expense",
    "amountNative": -0.015736
   },
@@ -481,12 +473,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Energia e fluidos\")",
    "signoFijo": 0.000047,
-   "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): 'Outros' al final de Serviços especializados (FSE).",
    "destino": "expense",
    "amountNative": -0.000047
   },
@@ -573,12 +565,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 0.001175,
-   "cat": "player_amortisation",
+   "cat": "depreciation",
    "conf": 1,
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "notaGuido": "precedente del país: 1 clubes (Nacional), titulo:rendimentos e gastos · Claude 2026-10-15 (subagente Sonnet, seguridad alta; revisado por Claude): 81.250 es la amortización de pases (nota 7, solo columna Jogadores); las depreciaciones tangibles del ejercicio son 0 (nota 6: saldo inicial = final) [relatorio-contas-2023-24.md L139, L446-464]",
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Nacional, Viseu, Arouca, Chaves, Estrela, Felgueiras).",
    "destino": "expense",
    "amountNative": -0.001175
   },
@@ -699,7 +691,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
+  "motivos": 2,
   "lineasIngreso": 3,
   "lineasGasto": 16,
   "metaFilas": 2,
