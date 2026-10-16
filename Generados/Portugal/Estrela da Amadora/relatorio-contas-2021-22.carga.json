@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Estrela da Amadora/relatorio-contas-2021-22.pdf",
- "generado": "2026-10-16T02:33:28.830Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "7 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Outros\" -> other_expenses 0; \"Outros\" -> other_expenses 0; \"Outros\" -> other_expenses 0; \"Rendas e Alugueres Diferenciadas\" -> admin_general_expense 0.6; \"Outros Gastos com o Pessoal\" -> wages_squad 0.6"
-  }
- ],
+ "generado": "2026-10-16T02:49:44.816Z",
+ "frena": [],
  "avisos": [],
  "ejercicio": {
   "clubId": "estreladaamadora-pt",
@@ -142,9 +137,9 @@
     "amountNative": -0.000802,
     "disclosureLevel": "aggregated",
     "_pag": 21,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Fornecimentos e serviços externos\""
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Ferramentas e utensílios de desgaste rápido",
@@ -182,9 +177,9 @@
     "amountNative": -0.033772,
     "disclosureLevel": "aggregated",
     "_pag": 21,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Fornecimentos e serviços externos\""
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Electricidade",
@@ -222,9 +217,9 @@
     "amountNative": -0.000504,
     "disclosureLevel": "aggregated",
     "_pag": 21,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Fornecimentos e serviços externos\""
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Deslocações, estadas e transportes",
@@ -242,9 +237,9 @@
     "amountNative": -0.069066,
     "disclosureLevel": "aggregated",
     "_pag": 21,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Comunicação",
@@ -362,9 +357,9 @@
     "amountNative": -0.00153,
     "disclosureLevel": "aggregated",
     "_pag": 21,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Imparidade de dívidas a receber (perdas/reversões)",
@@ -392,9 +387,9 @@
     "amountNative": -0.094229,
     "disclosureLevel": "aggregated",
     "_pag": 22,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Outros gastos\""
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Juros de mora e compensatórios",
@@ -428,13 +423,13 @@
    },
    {
     "rawLabel": "Activos Intangíveis",
-    "normalizedCategory": "player_amortisation",
+    "normalizedCategory": "other_amortisation",
     "amountNative": -0.0025,
     "disclosureLevel": "aggregated",
     "_pag": 22,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -681,11 +676,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.000802,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Fornecimentos e serviços externos\"",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Nacional, Viseu, Arouca, Chaves, Estrela, Felgueiras).",
    "destino": "expense",
    "amountNative": -0.000802
   },
@@ -742,11 +737,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.033772,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Fornecimentos e serviços externos\"",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Nacional, Viseu, Arouca, Chaves, Estrela, Felgueiras).",
    "destino": "expense",
    "amountNative": -0.033772
   },
@@ -803,11 +798,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.000504,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Fornecimentos e serviços externos\"",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Nacional, Viseu, Arouca, Chaves, Estrela, Felgueiras).",
    "destino": "expense",
    "amountNative": -0.000504
   },
@@ -834,11 +829,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.069066,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Nacional, Viseu, Arouca, Chaves, Estrela, Felgueiras).",
    "destino": "expense",
    "amountNative": -0.069066
   },
@@ -1016,11 +1011,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com pessoal\")",
    "signoFijo": 0.00153,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Nacional, Viseu, Arouca, Chaves, Estrela, Felgueiras).",
    "destino": "expense",
    "amountNative": -0.00153
   },
@@ -1062,11 +1057,11 @@
    "origen": "verificacion (nota que desglosa \"Outros gastos\")",
    "signoFijo": 0.094229,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_expenses) no decide para la fila de \"Outros gastos\"",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): ver lote 81, segunda vuelta (Nacional, Viseu, Arouca, Chaves, Estrela, Felgueiras).",
    "destino": "expense",
    "amountNative": -0.094229
   },
@@ -1122,12 +1117,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Gastos/reversões de depreciação e de amortização\")",
    "signoFijo": 0.0025,
-   "cat": "player_amortisation",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16 (subagente Sonnet): amortización de un intangible que no es pase. [relatorio-contas-2021-22.md L1032, L646-656]",
    "destino": "expense",
    "amountNative": -0.0025
   },
@@ -1232,8 +1227,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 6,
   "lineasGasto": 36,
   "metaFilas": 1,

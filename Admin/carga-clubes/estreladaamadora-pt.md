@@ -79,6 +79,78 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 alta-club.mjs (2026-10-15): pt-ligaportugal2, verificado contra roster cacheado de "2022–23 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Estrela da Amadora".
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Estrela da Amadora/relatorio-contas-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Estrela da Amadora/relatorio-contas-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas e serviços prestados | pág. 7, precedente |
+| 2 | IEFP | pág. 20, Jev 0.92 |
+| 3 | PT2020 | pág. 20, Claude 0.88 |
+| 4 | Subsídios de Outras Entidades | pág. 20, Jev 1 |
+| 5 | Rendimentos nos Restantes Ativos Financeiros | pág. 22, Jev 1 |
+| 6 | Rendimentos em Investimentos não Financeiros | pág. 22, Jev 0.96 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Trabalhos especializados | pág. 21, Jev 0.99 |
+| 2 | Publicidade e propaganda | pág. 21, Jev 1 |
+| 3 | Vigilância e segurança | pág. 21, Jev 0.98 |
+| 4 | Honorários | pág. 21, Jev 1 |
+| 5 | Conservação e reparação | pág. 21, Jev 0.99 |
+| 6 | Serviços bancários | pág. 21, Jev 0.98 |
+| 7 | Outros | pág. 21, precedente |
+| 8 | Ferramentas e utensílios de desgaste rápido | pág. 21, Jev 1 |
+| 9 | Material de Escritório | pág. 21, Jev 1 |
+| 10 | Vestuário e Fardamento | pág. 21, Jev 0.97 |
+| 11 | Outros | pág. 21, precedente |
+| 12 | Electricidade | pág. 21, Jev 1 |
+| 13 | Combustíveis | pág. 21, Jev 1 |
+| 14 | Água | pág. 21, Jev 0.98 |
+| 15 | Outros | pág. 21, precedente |
+| 16 | Deslocações, estadas e transportes | pág. 21, Jev 1 |
+| 17 | Rendas e Alugueres Diferenciadas | pág. 21, precedente |
+| 18 | Comunicação | pág. 21, Jev 1 |
+| 19 | Seguros | pág. 21, Claude 0.8 |
+| 20 | Contencioso e Notariado | pág. 21, Jev 1 |
+| 21 | Despesas de representação | pág. 21, Jev 1 |
+| 22 | Limpeza, higiene e conforto | pág. 21, Jev 1 |
+| 23 | Outros Serviços | pág. 21, Jev 1 |
+| 24 | Remunerações dos Órgãos Sociais | pág. 21, Jev 1 |
+| 25 | Remunerações do Pessoal | pág. 21, Claude 0.85 |
+| 26 | Indemnizações | pág. 21, precedente |
+| 27 | Encargos sobre remunerações | pág. 21, Jev 0.98 |
+| 28 | Seguro de Acidentes no Trabalho e Doenças I | pág. 21, Jev 1 |
+| 29 | Outros Gastos com o Pessoal | pág. 21, precedente |
+| 30 | Imparidade de dívidas a receber (perdas/reversões) | pág. 7, precedente |
+| 31 | Impostos | pág. 22, Jev 1 |
+| 32 | Outros | pág. 22, precedente |
+| 33 | Juros de mora e compensatórios | pág. 22, Jev 1 |
+| 34 | Juros de acordos | pág. 22, Jev 0.95 |
+| 35 | Activos Fixos Tangíveis | pág. 22, Jev 0.99 |
+| 36 | Activos Intangíveis | pág. 22, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2021–22 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Estrela da Amadora".
+```
+
 ## Fuentes
 
 ### estreladaamadora-pt-relatorio-contas-2022-23
@@ -87,4 +159,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Estrela da Amadora/relatorio-contas-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### estreladaamadora-pt-relatorio-contas-2021-22
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Estrela da Amadora/relatorio-contas-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

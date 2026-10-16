@@ -47,6 +47,9 @@ window.RANKINGS["pt-ligaportugal2"] = {
       { id:"rioave-pt", revenue:7.101, reportType:"official_balance_sheet",
         sourceId:"rioave-pt-relatorio-contas-2021-22",
         mix:[["Comercial / Sponsors",0.192],["Estadio",0.028],["Televisión",1.08],["Premios por competencias",0.204],["Venta de Jugadores",4.052],["Otros ingresos",1.544]] },
+      { id:"estreladaamadora-pt", revenue:1.651, reportType:"official_balance_sheet",
+        sourceId:"estreladaamadora-pt-relatorio-contas-2021-22",
+        mix:[["Venta de Jugadores",0.494],["Fútbol profesional (sin desglosar por la fuente)",1.014],["Otros ingresos",0.143]] },
     ],
   },
   2019: {
