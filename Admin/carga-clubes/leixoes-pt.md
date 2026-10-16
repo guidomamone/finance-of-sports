@@ -112,6 +112,76 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 alta-club.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2024–25 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Leixões".
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Leixoes/Relatorio-e-Contas-Consolidado-2023-2024.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Leixoes/Relatorio-e-Contas-Consolidado-2023-2024.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Venda de Bens | pág. 20, precedente |
+| 2 | Prestação de Serviços | pág. 20, precedente |
+| 3 | Subsídios à exploração | pág. 6, precedente |
+| 4 | Rendimentos e Ganhos em Investimento | pág. 22, precedente |
+| 5 | Outros | pág. 22, precedente |
+| 6 | Correcções relativas a períodos anteriores | pág. 22, precedente |
+| 7 | Distribuição de Lucros Placard | pág. 22, precedente |
+| 8 | Cedência desportiva de jogadores | pág. 22, precedente |
+| 9 | Direitos de Formação | pág. 22, precedente |
+| 10 | Jogos On-line | pág. 22, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Subcontratos | pág. 21, Jev 0.98 |
+| 2 | Serviços Especializados | pág. 21, precedente |
+| 3 | Materiais | pág. 21, precedente |
+| 4 | Energia e Fluídos | pág. 21, precedente |
+| 5 | Deslocações, Estadas e Transportes | pág. 21, precedente |
+| 6 | Rendas e Alugueres | pág. 21, precedente |
+| 7 | Comunicação | pág. 21, precedente |
+| 8 | Seguros | pág. 21, precedente |
+| 9 | Contencioso e Notariado | pág. 21, precedente |
+| 10 | Outros Serviços | pág. 21, precedente |
+| 11 | Remunerações | pág. 21, precedente |
+| 12 | Indemnizações | pág. 21, precedente |
+| 13 | Encargos Sociais | pág. 21, precedente |
+| 14 | Seguros de Ac. Trabalho | pág. 21, precedente |
+| 15 | Outros Gastos | pág. 21, precedente |
+| 16 | Imparidade de dívidas a receber (perdas/reversões) | pág. 6, precedente |
+| 17 | Provisões (aumentos/reduções) | pág. 6, precedente |
+| 18 | Impostos | pág. 22, precedente |
+| 19 | Correcções relativas a períodos anteriores | pág. 22, precedente |
+| 20 | Donativos | pág. 22, Jev 0.99 |
+| 21 | Outros não especificados | pág. 22, precedente |
+| 22 | Despesas não documentadas | pág. 22, precedente |
+| 23 | Outros | pág. 22, precedente |
+| 24 | Edificios e Outras Construções | pág. 23, precedente |
+| 25 | Equipamento Básico | pág. 23, precedente |
+| 26 | Equipamento de Transporte | pág. 23, precedente |
+| 27 | Equipamento Administrativo | pág. 23, precedente |
+| 28 | Marca | pág. 23, precedente |
+| 29 | Plantel | pág. 23, precedente |
+| 30 | Imparidade de activos depreciáveis / amortizáveis (perdas/reversões) | pág. 6, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2023–24 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Leixões".
+```
+
 ## 2023
 
 ### Ingresos
@@ -196,4 +266,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Leixoes/Relatorio-e-Contas-Consolidado-2022-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### leixoes-pt-relatorio-e-contas-consolidado-2023-2024
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Leixoes/Relatorio-e-Contas-Consolidado-2023-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
