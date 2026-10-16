@@ -46,6 +46,20 @@ const pacosdeferreiraptRevenueLinesByYear = {
     { rawLabel:'Lucros Placard', normalizedCategory:'other_income', amountNative:0.299624, disclosureLevel:'aggregated' },
     { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.099163, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Vendas de Mercadorias (Merchandising)', normalizedCategory:'sponsorship_commercial', amountNative:0.106896, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade', normalizedCategory:'sponsorship_commercial', amountNative:0.317939, disclosureLevel:'aggregated' },
+    { rawLabel:'Direitos televisivos', normalizedCategory:'broadcasting', amountNative:0.6, disclosureLevel:'aggregated' },
+    { rawLabel:'Bilhetes, camarotes e cativos', normalizedCategory:'matchday_competition', amountNative:0.018427, disclosureLevel:'aggregated' },
+    { rawLabel:'Competições', normalizedCategory:'competition_bonus', amountNative:0.011288, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.031687, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídios formação UEFA', normalizedCategory:'youth_football', amountNative:0.219033, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.135819, disclosureLevel:'aggregated' },
+    { rawLabel:'Cedências jogadores', normalizedCategory:'player_sales', amountNative:1.500351, disclosureLevel:'aggregated' },
+    { rawLabel:'Lucros Placard', normalizedCategory:'other_income', amountNative:0.323821, disclosureLevel:'aggregated' },
+    { rawLabel:'Cedência de Espaço', normalizedCategory:'other_income', amountNative:0.039385, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.111669, disclosureLevel:'aggregated' },
+  ],
 };
 const pacosdeferreiraptExpenseLinesByYear = {
   2025: [
@@ -132,6 +146,46 @@ const pacosdeferreiraptExpenseLinesByYear = {
     { rawLabel:'Cedência de Créditos IBB', normalizedCategory:'other_expenses', amountNative:-0.318227, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.599008, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Custo das mercadorias vendidas e das matérias consumidas', normalizedCategory:'other_expenses', amountNative:-0.065075, disclosureLevel:'aggregated' },
+    { rawLabel:'Subcontratos', normalizedCategory:'admin_general_expense', amountNative:-0.049384, disclosureLevel:'aggregated' },
+    { rawLabel:'Trabalhos Especializados', normalizedCategory:'admin_general_expense', amountNative:-0.087507, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade e Propaganda', normalizedCategory:'admin_general_expense', amountNative:-0.00045, disclosureLevel:'aggregated' },
+    { rawLabel:'Vigilância e Segurança', normalizedCategory:'match_organisation_expense', amountNative:-0.059366, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorários', normalizedCategory:'admin_general_expense', amountNative:-0.01485, disclosureLevel:'aggregated' },
+    { rawLabel:'Comissões', normalizedCategory:'other_expenses', amountNative:-0.313469, disclosureLevel:'aggregated' },
+    { rawLabel:'Conservação e Reparação', normalizedCategory:'admin_general_expense', amountNative:-0.050096, disclosureLevel:'aggregated' },
+    { rawLabel:'Liga', normalizedCategory:'match_organisation_expense', amountNative:-0.054161, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros Serviços Especializados', normalizedCategory:'other_expenses', amountNative:-0.000447, disclosureLevel:'aggregated' },
+    { rawLabel:'Ferramentas e utensílios desgaste rápido', normalizedCategory:'admin_general_expense', amountNative:-0.109967, disclosureLevel:'aggregated' },
+    { rawLabel:'Material de Escritório', normalizedCategory:'admin_general_expense', amountNative:-0.002422, disclosureLevel:'aggregated' },
+    { rawLabel:'Eletricidade', normalizedCategory:'admin_general_expense', amountNative:-0.042935, disclosureLevel:'aggregated' },
+    { rawLabel:'Combustíveis', normalizedCategory:'admin_general_expense', amountNative:-0.060651, disclosureLevel:'aggregated' },
+    { rawLabel:'Água', normalizedCategory:'admin_general_expense', amountNative:-0.003593, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.000146, disclosureLevel:'aggregated' },
+    { rawLabel:'Deslocações e Estadas', normalizedCategory:'match_organisation_expense', amountNative:-0.214156, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendas e alugueres', normalizedCategory:'admin_general_expense', amountNative:-0.200488, disclosureLevel:'aggregated' },
+    { rawLabel:'Comunicação', normalizedCategory:'admin_general_expense', amountNative:-0.022193, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.008333, disclosureLevel:'aggregated' },
+    { rawLabel:'Contencioso e notariado', normalizedCategory:'admin_general_expense', amountNative:-0.000703, disclosureLevel:'aggregated' },
+    { rawLabel:'Limpeza, higiene e conforto', normalizedCategory:'admin_general_expense', amountNative:-0.006571, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros Serviços', normalizedCategory:'other_expenses', amountNative:-0.018145, disclosureLevel:'aggregated' },
+    { rawLabel:'Jogadores', normalizedCategory:'wages_squad', amountNative:-2.1126, disclosureLevel:'aggregated' },
+    { rawLabel:'Treinadores', normalizedCategory:'wages_squad', amountNative:-0.316432, disclosureLevel:'aggregated' },
+    { rawLabel:'Pessoal Diverso', normalizedCategory:'wages_squad', amountNative:-0.386734, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos sobre remunerações', normalizedCategory:'wages_squad', amountNative:-0.192703, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros de acidentes de trabalho e de doenças profissionais', normalizedCategory:'admin_general_expense', amountNative:-0.264674, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos com o pessoal', normalizedCategory:'wages_squad', amountNative:-0.052448, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidade de dívidas a receber (perdas/reversões)', normalizedCategory:'other_expenses', amountNative:-0.008432, disclosureLevel:'aggregated' },
+    { rawLabel:'Impostos', normalizedCategory:'admin_general_expense', amountNative:-0.005338, disclosureLevel:'aggregated' },
+    { rawLabel:'Abates', normalizedCategory:'exceptional_items', amountNative:-0.071015, disclosureLevel:'aggregated' },
+    { rawLabel:'Multas/coimas', normalizedCategory:'other_expenses', amountNative:-0.007213, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesas não devidamente documentadas', normalizedCategory:'other_expenses', amountNative:-0.012371, disclosureLevel:'aggregated' },
+    { rawLabel:'Correções relativas a períodos anteriores', normalizedCategory:'exceptional_items', amountNative:-0.005587, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesas cedência Sergio Oliveira', normalizedCategory:'other_expenses', amountNative:-0.013276, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.009136, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-0.554603, disclosureLevel:'aggregated' },
+  ],
 };
 const pacosdeferreiraptFiscalYearMeta = {
   2025: {
@@ -177,6 +231,20 @@ const pacosdeferreiraptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:9.262878, officialTotalExpenses:9.852456, officialPAT:-0.642895,
   },
+  2024: {
+    currency:'EUR', fxRef:'EUR@2024-06-30',
+    sourceId:'pacosdeferreira-pt-contas23-24',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.000422, tax:-0.006205,
+    extraRows: [
+      {label:'Juros e gastos similares suportados', value:-0.000422},
+      {label:'Imposto sobre o rendimento do período', value:-0.006205},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:3.416315, officialTotalExpenses:5.321068, officialPAT:-1.987982,
+  },
 };
 const pacosdeferreiraptPresupuestoOverlayByYear = {};
 
@@ -206,6 +274,11 @@ Object.assign(sources, {
   'pacosdeferreira-pt-contas22-23': {
     id:'pacosdeferreira-pt-contas22-23', clubId:'pacosdeferreira-pt',
     title:'Paços de Ferreira — contas22_23 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'pacosdeferreira-pt-contas23-24': {
+    id:'pacosdeferreira-pt-contas23-24', clubId:'pacosdeferreira-pt',
+    title:'Paços de Ferreira — contas23_24 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

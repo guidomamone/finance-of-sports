@@ -19,3 +19,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2020 desde `Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.pdf` (sourceId `pacosdeferreira-pt-47-demonstracoes-financeiras-compressed`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2023 desde `Clubes/Portugal/Paços de Ferreira/contas22_23.pdf` (sourceId `pacosdeferreira-pt-contas22-23`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2024 desde `Clubes/Portugal/Paços de Ferreira/contas23_24.pdf` (sourceId `pacosdeferreira-pt-contas23-24`).
