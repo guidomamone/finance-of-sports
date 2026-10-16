@@ -1188,6 +1188,65 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2010–11 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Sporting CP".
 ```
 
+## 2007
+
+### Ingresos
+
+```text
+2007: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Sporting CP/relatorio-contas-2006-07.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Subsídios à Exploração | pág. 19, Jev 0.98 |
+| 2 | Outros Proveitos e Ganhos Operacionais | pág. 19, Jev 0.99 |
+| 3 | BENEF. CONTRATIAIS | pág. 25, Jev 1 |
+| 4 | CONR. EX. ANTERIORES | pág. 25, Jev 1 |
+| 5 | O. P. EXTRAORDINAR. | pág. 25, Jev 0.98 |
+| 6 | BILHETEIRA | pág. 8, Jev 1 |
+| 7 | BILHETES ÉPOCA | pág. 8, Jev 1 |
+| 8 | DIREITOS TV | pág. 8, Jev 1 |
+| 9 | QUOTIZAÇÃO | pág. 8, Jev 1 |
+| 10 | PATROCÍNIOS + PUBLIC. | pág. 8, Jev 1 |
+| 11 | ROYALTIES | pág. 8, Jev 0.99 |
+| 12 | PARTICIPAÇÃO LC | pág. 8, Jev 1 |
+| 13 | Outros proveitos operacionais (resto) | pág. 8, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Fornecimentos e Serviços Externos | pág. 19, Jev 1 |
+| 2 | Remunerações | pág. 19, Jev 0.99 |
+| 3 | Encargos Sociais | pág. 19, Jev 0.91 |
+| 4 | Amortizações de Imob. Corpóreas e Incorpóreas | pág. 19, Jev 0.99 |
+| 5 | Ajustamento de Dívidas de Clientes | pág. 19, Jev 1 |
+| 6 | Provisões do Exercício | pág. 19, Jev 0.91 |
+| 7 | Impostos | pág. 19, Claude 0.85 |
+| 8 | Outros Custos e Perdas Operacionais | pág. 19, Jev 1 |
+| 9 | Custos e Perdas Extraordinários | pág. 19, Jev 0.98 |
+
+### Meta
+
+```text
+2007: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 3470. Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta
+2007: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 7860. Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta
+2007: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 8992. Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta
+2007: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 4098. Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta
+2007: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 6131. Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta
+2007: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 297. Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta
+2007: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 6618. Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta
+2007: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 655. Claude 2026-10-16 (ok de Guido): cuadro de gestión de los proveitos (columna de resultados reales, igual al estado: mismo total de proveitos y resultado). Abre Prestações de Serviços + Proveitos Suplementares (31462+6659=38121) en 7 filas (37466); el resto (655) queda en 'Outros proveitos operacionais (resto)'. Suma exacta
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2006–07 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Sporting CP".
+```
+
 ## 2006
 
 ### Ingresos
@@ -1648,4 +1707,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Sporting CP/relatorio-contas-2005-06.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### sportingcp-pt-relatorio-contas-2006-07
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

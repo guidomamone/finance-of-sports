@@ -76,3 +76,5 @@ ejercicios más nuevos (no bajadas, se priorizó el PDF legible).
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2005 desde `Clubes/Portugal/Sporting CP/relatorio-contas-2004-05.pdf` (sourceId `sportingcp-pt-relatorio-contas-2004-05`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2006 desde `Clubes/Portugal/Sporting CP/relatorio-contas-2005-06.pdf` (sourceId `sportingcp-pt-relatorio-contas-2005-06`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2007 desde `Clubes/Portugal/Sporting CP/relatorio-contas-2006-07.pdf` (sourceId `sportingcp-pt-relatorio-contas-2006-07`).
