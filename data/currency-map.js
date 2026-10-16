@@ -18,6 +18,8 @@ const CURRENCY_META = {
   // Lira italiana (hasta 2001): ~1.800-2.300 ITL por USD y documentos en millones de liras, así que scale:1000. euroFijo = unidades de la
   // moneda legado por 1 EUR (paridad irrevocable, Reglamento CE 2866/98): toDisplayValue la pasa a EUR sin tipo de cambio de mercado.
   ITL: { scale: 1000, unitSuffix: 'mil M', euroFijo: 1936.27 },   // Italia (lira, hasta 2001)
+  // Escudo portugués (hasta 2001): ~200-220 PTE por USD y documentos en miles de escudos (Sporting 1999-2000): scale:1000 como la lira.
+  PTE: { scale: 1000, unitSuffix: 'mil M', euroFijo: 200.482 },   // Portugal (escudo, hasta 2001)
   RUB: { scale: 1, unitSuffix: 'M' }, // Rusia
 };
 
@@ -157,6 +159,7 @@ const FX_CLOSE = {
   'ITL@1999-06-30': { fx: 1874.78, source: 'market_close', label: '1 EUR = 1.936,27 ITL (paridad fija) y 1 EUR = 1,0328 USD, tipo de referencia del BCE al 30/06/1999' },
   'ITL@2000-06-30': { fx: 2026.23, source: 'market_close', label: '1 EUR = 1.936,27 ITL (paridad fija) y 1 EUR = 0,9556 USD, tipo de referencia del BCE al 30/06/2000' },
   'ITL@2001-06-30': { fx: 2283.34, source: 'market_close', label: '1 EUR = 1.936,27 ITL (paridad fija) y 1 EUR = 0,848 USD, tipo de referencia del BCE al 29/06/2001 (el 30/6/2001 fue sábado: cierre del viernes 29/6)' },
+  'PTE@2000-07-31': { fx: 216.9015, source: 'market_close', label: '1 EUR = 200,482 PTE (paridad fija) y 1 EUR = 0,9243 USD (1,0819 EUR por USD), tipo de referencia del BCE al 31/07/2000' },
   'EUR@2003-06-30': { fx: 0.87512, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2003-06-30' },
   'EUR@2004-06-30': { fx: 0.822707, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2004-06-30' },
   'EUR@2005-06-30': { fx: 0.826993, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2005-06-30' },
