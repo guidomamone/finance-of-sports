@@ -173,6 +173,15 @@ for (const pdf of docs) {
   // (Versión 407) el registro puede tener la ruta del .md sin el archivo en disco (tieneMd: false, "PAGADO SIN .md": Novorizontino 2022);
   // antes pasaba a localizar.mjs y el lote entero se caía con ENOENT.
   if (!e?.md || !existsSync(resolve(ROOT, e.md))) { estado[pdf] = 'sin transcripción (etapa 2)'; console.log(`  ${pdf}: sin .md`); continue; }
+  // AÑO YA EN EL SITIO (to-do 237 ag, ok de Guido el 2026-10-15): un documento cuyo año ya está cargado no pasa por ninguna etapa más (ni
+  // verificar, ni categorizar, ni la propuesta de carga): cargar-lote.mjs no lo iba a tocar igual, y la tabla final lo cuenta en "ya estaba en
+  // el sitio" por su cuenta (yaEnSitio, abajo). Misma compuerta que "año ya cargado según el sitio" (Versión 442): el registro o el sitio por
+  // el clubId y el año de la última propuesta. Caso: lote 80, quinta corrida, 52 documentos verificados, glosados y categorizados para que 44
+  // terminaran en "ya en el sitio: no se tocan". Con --reintentar sigue el camino de siempre (reintenta categorías en 0 de un año cargado).
+  // Los testigos tampoco se saltean: entran solo para que otro documento compare su año anterior.
+  if (!REINTENTAR && !testigos.has(pdf) && (e.cargado || (() => { const c = leerDerivado(e, '.carga.json'); return !!(c?.clubId && c?.year && sitio.generic?.[c.clubId]?.fiscalYearMeta?.[c.year]); })())) {
+    estado[pdf] = 'ya en el sitio'; console.log(`  ${pdf}: ya en el sitio (no se verifica, categoriza ni propone de nuevo)`); continue;
+  }
   // ETAPA 2, ESCALÓN 1a (Versión 433, cambio E, aprobado por Guido el 2026-10-03): si el inventario dice "revisar", primero las VOCES
   // (tools/resolver-inventario.mjs, la herramienta que ya existía en el proceso viejo): compara cada página del .md con el texto del PDF,
   // ignora las dudas en prosa y manda a Claude solo las páginas con cifras que no coinciden. COMPUERTA: se regenera el inventario y el

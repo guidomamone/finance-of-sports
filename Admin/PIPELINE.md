@@ -33,6 +33,10 @@ no cubre ni la lista ni un año cargado (to-do 232 q): se suma a la lista o va a
   se cortó (Ctrl+C, terminal cerrada), lo avisa y lo reemplaza.
 - Lo que ya está hecho no se repite (queda en `Generados/`, que se respalda en git). Si el .md cambió desde extraer (`cache-al-dia.mjs`:
   misma huella, o cada fila sigue en su línea), un año sin cargar se rehace y uno cargado solo avisa.
+- Un documento cuyo año ya está en el sitio (registro, o el sitio por el club y año de su propuesta) no pasa por ninguna etapa más: ni
+  verificar, ni categorizar, ni la propuesta de carga; dice "ya en el sitio" y la tabla final lo cuenta ahí. Con `--reintentar` sigue el
+  camino de siempre. Así un lote que se vuelve a correr trabaja solo sobre lo que falta.
+- Al final, la tabla "ETAPA · #": cada documento de la lista una sola vez, en la etapa más temprana donde frenó.
 - El ensayo estima con el tamaño real: extraer = salida 2 × entrada; sin localizar, la mediana del club (sin historia, US$ 0,20-0,33: mediana y percentil 90 de las extracciones medidas).
 - Al final: el gasto por documento y por tarea, con "N.ª vez" si esa tarea ya se había pagado para ese PDF; y el RESULTADO (listos,
   frenados, ya en el sitio: un año cargado va ahí aunque su propuesta sea vieja). Cada frenado lista TODOS sus motivos, uno por línea; si
