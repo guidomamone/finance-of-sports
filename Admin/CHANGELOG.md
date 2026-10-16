@@ -57,6 +57,8 @@ que dice `ESTADO.md` era verdad ese día.
 - Caja y deuda, mejora 3 (vecino por valor) a HALLAZGOS: abierta confirmaba errores (Palmeiras 2024, Sporting 2007) y restringida no ganaba
   casos; el caso que la motivó (AVS) es una celda de notas "3;8;9;21;" leída como importe (TODO 260 d).
 - Caja y deuda: 11 deudas y 1 caja más en Portugal con las mejoras 1 y 2 (gratis).
+- Caja y deuda del resto (72 clubes salvo Portugal y Rusia): 112 datos escritos en 22 clubes; 7 clubes revertidos por errores de escala que
+  la compuerta dejó pasar (TODO 260 e). En todo el sitio, los años con balance sin caja ni deuda bajan de 548 a 317 de 919.
 - Lotes 86 y 87: Felgueiras 2021-22 y Benfica 2007-08 cargados; caja de Felgueiras 2022-2024. Listas 80, 86 y 87 al archivo.
 
 ## Versión 707 — Portugal cargado (salvo lo que espera scripts) y to-do 237 a medias: 14 letras resueltas y medidas (2026-10-16)

@@ -185,6 +185,13 @@ con los que no están en los pasos de arriba.
    d) CELDA DE NOTAS CON ";": AVS 2022-23 "| Financiamentos obtidos | 3;8;9;21; | 4.495.141,06 | 2.062.069,19 |" (L352) se lee como importe
       38.921, y 2021 y 2023 proponen deuda 0,04 M (la compuerta no los confirma). Escalón posible: una celda de enteros chicos separados
       por ";" es una referencia a notas (esRefNota). Medir con --medir.
+   e) ESCALA FUERA DE TODA PROPORCIÓN (corrida del resto, 2026-10-16): 21 valores absurdos que la compuerta dejó pasar y audit.js no mira
+      (no chequea caja ni deuda): Hellas Verona 2024 deuda 1,8e16; Milan 2009-2010 deuda 163.739 y 142.701 M; Inter 2021-2022 caja 97.884 y
+      139.184 M; Lazio 2008-2019 cajas de miles de millones; Sassuolo 2025 y Torino 2018/2023 cajas de 150-450 M; Ferroviária 2025.
+      Se revirtieron enteros esos 7 clubes (sus valores buenos también). Dos escalones posibles: (1) audit.js avisa caja o deuda fuera de
+      proporción con los ingresos del año (caja > 1,5 veces o deuda > 4 veces, o menos de una milésima); (2) la compuerta de caja-deuda
+      exige esa misma plausibilidad cuando no hay año cargado del dato. Para volver a correrlos: el chequeo de proporción está en el
+      scratchpad de esta sesión (plaus2.mjs); conviene llevarlo a una tool.
    c) CLUBES EN 0: AVS (0 de 6), Boavista (0 de 2), Chaves (0 de 4), Famalicão (0 de 14), Mafra (0 de 2), Tondela (0 de 2), Vitória
       Guimarães (0 de 8) y la deuda de Felgueiras (0 de 3): ni Jev ni la IA pasaron la compuerta. Diagnosticar 2-3 antes de diseñar.
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
