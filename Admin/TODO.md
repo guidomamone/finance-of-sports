@@ -219,6 +219,10 @@ llegue acá.
        pero `lote.mjs` solo verifica los documentos recién extraídos y siguió frenando "4 casos pendientes" con la verificación vieja). Se
        destrabó con `node tools/verificar.mjs "<pdf>" --rubros` a mano (gratis). Escalón posible: que la etapa 6 del lote también tome los
        documentos cuya verificación es anterior a la última respuesta de la cola para ese PDF (ver s).
+       OJO (2026-10-15, intento revertido): verificar.mjs escribe siempre, así que en esa corrida el documento NO llegó a la etapa 6 (salió
+       del bucle de las etapas 3-5 por otro camino que no se pudo ver: la salida estaba truncada). Sumarlo a la etapa 6 "si hay respuesta
+       posterior" es un parche con riesgo: re-verificaría con filas viejas un documento que esa corrida decidió dejar afuera (sin estado,
+       falta fijar el cierre). Primero encontrar la causa: la próxima vez, el RESUMEN DEL LOTE dice el estado de ese PDF.
 238. LLEVAR A 0 LOS ESTADOS INTERMEDIOS DEL INVENTARIO (pedido de Guido, 2026-10-15). El objetivo no es borrar documentos de la lista
    sino que todo lo que está frenado a mitad de camino y se puede cargar termine cargado en el sitio. Estados intermedios: `listo`
    (transcripto y validado, falta el lote), `pendiente-segunda-voz`, `revisar`, `listo-para-jev`, `sin-rubros`, `sin-tablas` y
