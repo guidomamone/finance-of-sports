@@ -193,6 +193,11 @@ llegue acá.
        de la SAD: se resolvió con perfil "sí" y ajustes `cero-real` en el documento de la SAD (ver c).
     z) UN NÚMERO CONFIRMADO CON AJUSTE VUELVE A LA COLA (Santa Clara 2024-25, L1542 "40 646": tenía el ajuste `confirmado` y la corrida
        siguiente abrió el caso "numero-no-confirmado" 306c291 igual). Mirar si el ajuste se pierde cuando el .md cambia de versión.
+    aa) LA GUARDA DE FILAS DUPLICADAS FRENA REDONDEOS LEGÍTIMOS (lote 80: Sporting 2017-18 y 2020-21 no se escribieron por "Diferencia de
+       redondeo aparece dos veces con el MISMO monto"). verificar.mjs genera una fila de redondeo por cada nota que abre un renglón (2017-18:
+       personal −0,001, provisiones −0,001, otros gastos +0,001, plantel +0,001) y con todas los totales cierran exacto con el impreso.
+       Escalón posible: que la guarda de cargar exima las filas de origen redondeo (o que verificar las nombre con su renglón).
+       Además, w) se repitió en Santa Clara 2023-24 ("Juros e Outros Rendimentos Similares" 360.009 como gasto; ajuste `fila`).
 238. LLEVAR A 0 LOS ESTADOS INTERMEDIOS DEL INVENTARIO (pedido de Guido, 2026-10-15). El objetivo no es borrar documentos de la lista
    sino que todo lo que está frenado a mitad de camino y se puede cargar termine cargado en el sitio. Estados intermedios: `listo`
    (transcripto y validado, falta el lote), `pendiente-segunda-voz`, `revisar`, `listo-para-jev`, `sin-rubros`, `sin-tablas` y
