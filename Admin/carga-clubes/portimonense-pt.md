@@ -185,6 +185,81 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2023–24 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Portimonense".
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Portimonense/Relatorio-Contas-22-23_assinado.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Portimonense/Relatorio-Contas-22-23_assinado.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas | pág. 50, precedente |
+| 2 | Prestações de Serviços | pág. 50, precedente |
+| 3 | Subsídios à exploração | pág. 33, precedente |
+| 4 | Rendimentos suplementares | pág. 55, precedente |
+| 5 | Rendimentos e ganhos nos restantes ativos financeiros | pág. 55, precedente |
+| 6 | Rendimentos e ganhos em investimentos não financeiros | pág. 55, precedente |
+| 7 | Outros | pág. 55, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 33, Jev 0.99 |
+| 2 | Trabalhos especializados | pág. 54, precedente |
+| 3 | Publicidade e propaganda | pág. 54, precedente |
+| 4 | Vigilância e segurança | pág. 54, precedente |
+| 5 | Honorários | pág. 54, precedente |
+| 6 | Comissões | pág. 54, precedente |
+| 7 | Conservação e reparação | pág. 54, precedente |
+| 8 | Outros | pág. 54, precedente |
+| 9 | Ferramentas e utensílios de desgaste rápido | pág. 54, precedente |
+| 10 | Material de escritório | pág. 54, precedente |
+| 11 | Artigos para oferta | pág. 54, precedente |
+| 12 | Materiais Covid | pág. 54, precedente |
+| 13 | Outros | pág. 54, precedente |
+| 14 | Electricidade | pág. 54, precedente |
+| 15 | Combustíveis | pág. 54, precedente |
+| 16 | Água | pág. 54, precedente |
+| 17 | Deslocações e estadas | pág. 54, precedente |
+| 18 | Transportes de mercadorias | pág. 54, precedente |
+| 19 | Rendas e alugueres | pág. 54, precedente |
+| 20 | Comunicação | pág. 54, precedente |
+| 21 | Seguros | pág. 54, precedente |
+| 22 | Contencioso e notariado | pág. 54, precedente |
+| 23 | Despesas de representação | pág. 54, precedente |
+| 24 | Limpeza, higiene e conforto | pág. 54, precedente |
+| 25 | Outros | pág. 54, precedente |
+| 26 | Remunerações dos órgãos sociais | pág. 53, Jev 1 |
+| 27 | Remunerações do pessoal | pág. 53, Claude 0.85 |
+| 28 | Encargos sobre remunerações | pág. 53, Jev 0.95 |
+| 29 | Seguros de acidentes de trabalho e doenças profissionais | pág. 53, Jev 0.99 |
+| 30 | Gastos de acção social | pág. 53, Jev 0.91 |
+| 31 | Outros gastos com o pessoal | pág. 53, precedente |
+| 32 | Impostos | pág. 55, Jev 1 |
+| 33 | Gastos e perdas em investimentos não financeiros | pág. 55, Jev 0.99 |
+| 34 | Outros juros | pág. 55, Jev 0.99 |
+| 35 | Outras diferenças de câmbio desfavoráveis | pág. 55, precedente |
+| 36 | Outros | pág. 55, precedente |
+| 37 | Gastos/reversões de depreciação e de amortização | pág. 33, precedente |
+
+### Meta
+
+```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): resultado-final = -1.597.143,15. Claude 2026-10-16 (lote 82): pérdida; el resultado que tomó la carga (+1.597.143) sale de L1101, sin signo. El estado (L1036 '-1,597,143.15'), el resumen (L343) y la propuesta de aplicación (L503 'Resultado Líquido negativo de 1.597.143,15€') dicen negativo
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2022–23 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Portimonense".
+```
+
 ## 2022
 
 ### Ingresos
@@ -283,4 +358,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Portimonense/Relatorio-Contas-23-24_assinado.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### portimonense-pt-relatorio-contas-22-23-assinado
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Portimonense/Relatorio-Contas-22-23_assinado.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

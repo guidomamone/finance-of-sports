@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Portimonense/Relatorio-Contas-22-23_assinado.pdf",
- "generado": "2026-10-16T03:41:08.348Z",
- "frena": [
-  {
-   "etapa": "tie-out-resultado",
-   "motivo": "resultado: ingresos 13.980916 + gastos -15.377042 + netInterest -0.012981 + tax -0.188031 = -1.597138 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" 1.597143)"
-  }
- ],
+ "generado": "2026-10-16T03:51:54.038Z",
+ "frena": [],
  "avisos": [
   "gestión: ningún presidente confirmado cubre 2023 (cierre 2023-06-30); pregunta en la cola (no frena)"
  ],
@@ -467,8 +462,18 @@
    "gestionId": null,
    "profitOnPlayerSales": 0,
    "assetSales": 0,
-   "netInterest": -0.012981,
-   "tax": -0.188031,
+   "netInterest": 0.012981,
+   "tax": -0.213994,
+   "extraRows": [
+    {
+     "label": "Juros e gastos similares suportados",
+     "value": 0.012981
+    },
+    {
+     "label": "Imposto sobre o rendimento do período (deducido: antes de impuestos − resultado final, por ajuste manual)",
+     "value": -0.213994
+    }
+   ],
    "sinDesglose": [
     {
      "renglon": "Prestações de Serviços",
@@ -481,7 +486,7 @@
    "cash": null,
    "officialTotalRevenue": 13.980915,
    "officialTotalExpenses": 15.377046,
-   "officialPAT": null
+   "officialPAT": -1.597143
   },
   "source": {
    "id": "portimonense-pt-relatorio-contas-22-23-assinado",
@@ -508,7 +513,18 @@
  },
  "clubId": "portimonense-pt",
  "year": 2023,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Portimonense/Relatorio-Contas-22-23_assinado.pdf",
+   "campo": "resultado-final",
+   "valor": "-1.597.143,15",
+   "linea": null,
+   "motivo": "Claude 2026-10-16 (lote 82): pérdida; el resultado que tomó la carga (+1.597.143) sale de L1101, sin signo. El estado (L1036 '-1,597,143.15'), el resumen (L343) y la propuesta de aplicación (L503 'Resultado Líquido negativo de 1.597.143,15€') dicen negativo",
+   "evidencia": "Relatorio-Contas-22-23_assinado.md L343, L503, L1036, L1101",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "seleccion": {
   "filas": 46,
   "notasUsadas": [],
@@ -1183,7 +1199,7 @@
   {
    "label": "Juros e gastos similares suportados",
    "page": null,
-   "native": -0.012981,
+   "native": 0.012981,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
@@ -1192,9 +1208,9 @@
    "destino": "netInterest"
   },
   {
-   "label": "Imposto sobre o rendimento do período",
+   "label": "Imposto sobre o rendimento do período (deducido: antes de impuestos − resultado final, por ajuste manual)",
    "page": null,
-   "native": -0.188031,
+   "native": -0.213994,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
@@ -1213,17 +1229,24 @@
    "verificacion (nota que desglosa \"Outros gastos\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
   "revSum": 13.980916,
   "expSum": -15.377042,
   "officialTotalRevenue": 13.980915,
   "officialTotalExpenses": 15.377046,
-  "officialPAT": null,
+  "officialPAT": -1.597143,
   "verificacion": {
+   "pat": "impreso",
    "ingresos": "impreso",
    "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -1.597143,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
   },
   "revImpreso": {
    "label": "total de ingresos (verificado)",
@@ -1284,8 +1307,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 7,
   "lineasGasto": 37,
   "metaFilas": 2,
