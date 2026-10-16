@@ -21,3 +21,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2023 desde `Clubes/Portugal/Paços de Ferreira/contas22_23.pdf` (sourceId `pacosdeferreira-pt-contas22-23`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2024 desde `Clubes/Portugal/Paços de Ferreira/contas23_24.pdf` (sourceId `pacosdeferreira-pt-contas23-24`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2022 desde `Clubes/Portugal/Paços de Ferreira/contas21_22.pdf` (sourceId `pacosdeferreira-pt-contas21-22`).

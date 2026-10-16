@@ -274,6 +274,86 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2022–23 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Paços de Ferreira".
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Paços de Ferreira/contas21_22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Paços de Ferreira/contas21_22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas de Mercadorias (Merchandising) | pág. 13, precedente |
+| 2 | Publicidade | pág. 13, precedente |
+| 3 | Direitos televisivos | pág. 13, precedente |
+| 4 | Bilhetes, camarotes e cativos | pág. 13, precedente |
+| 5 | Competições | pág. 13, precedente |
+| 6 | Outros | pág. 13, precedente |
+| 7 | Subsídios formação UEFA | pág. 14, precedente |
+| 8 | Subsídios Taça de Portugal | pág. 14, precedente |
+| 9 | Outros | pág. 14, precedente |
+| 10 | Cedências jogadores | pág. 14, precedente |
+| 11 | Lucros Placard | pág. 14, precedente |
+| 12 | Outros | pág. 14, precedente |
+| 13 | Diferências de Câmbio favoráveis | pág. 14, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 2, precedente |
+| 2 | Cedências de Jogadores | pág. 16, precedente |
+| 3 | Outros | pág. 16, precedente |
+| 4 | Trabalhos Especializados | pág. 16, precedente |
+| 5 | Publicidade e Propaganda | pág. 16, precedente |
+| 6 | Vigilância e Segurança | pág. 16, precedente |
+| 7 | Honorários | pág. 16, precedente |
+| 8 | Comissões | pág. 16, precedente |
+| 9 | Conservação e Reparação | pág. 16, precedente |
+| 10 | Liga | pág. 16, precedente |
+| 11 | Outros Serviços Especializados | pág. 16, precedente |
+| 12 | Ferramentas e utensílios desgaste rápido | pág. 16, precedente |
+| 13 | Material de Escritório | pág. 16, precedente |
+| 14 | Outros materiais | pág. 16, Jev 0.96 |
+| 15 | Eletricidade | pág. 16, precedente |
+| 16 | Combustíveis | pág. 16, precedente |
+| 17 | Água | pág. 16, precedente |
+| 18 | Outros | pág. 16, precedente |
+| 19 | Deslocações e Estadas | pág. 16, precedente |
+| 20 | Rendas e alugueres | pág. 16, precedente |
+| 21 | Comunicação | pág. 16, precedente |
+| 22 | Seguros | pág. 16, precedente |
+| 23 | Contencioso e notariado | pág. 16, precedente |
+| 24 | Despesas de representação | pág. 16, Jev 0.99 |
+| 25 | Limpeza, higiene e conforto | pág. 16, precedente |
+| 26 | Outros Serviços | pág. 16, precedente |
+| 27 | Jogadores | pág. 15, precedente |
+| 28 | Treinadores | pág. 15, precedente |
+| 29 | Pessoal Diverso | pág. 15, precedente |
+| 30 | Encargos sobre remunerações | pág. 15, precedente |
+| 31 | Seguros de acidentes de trabalho e de doenças profissionais | pág. 15, precedente |
+| 32 | Outros gastos com o pessoal | pág. 15, precedente |
+| 33 | Impostos | pág. 17, precedente |
+| 34 | Outros | pág. 17, precedente |
+| 35 | Gastos/reversões de depreciação e de amortização | pág. 2, precedente |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): anio = 2022. El nombre del archivo no da el año (o lo da mal: '202223' se lee 2022); el ejercicio cierra el 30/06/2022 según el registro (periodo.cierre).
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 28.199,10. Claude 2026-10-16 (lote 82): la fila está dentro de la nota 'Outros Rendimentos' (Cedências 1.576.106,85 + Diferenças de câmbio 28.199,10 + Placard 338.529,17 + Outros 241.427,30 = 2.184.262,42), pero la extracción la puso como gasto y la categorización la sacó (no_es_rubro). Es ingreso: sin ella el resultado da -498.594 en vez de -470.395 (diferencia 28.199). Como Marítimo 2023 y Santa Clara 2024-25 (to-do 237 w)
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): categoria = other_income. Claude 2026-10-16 (lote 82): diferencia de cambio favorable operativa, en la nota de Outros Rendimentos: other_income, como Tondela 2020-21 (la categorización la había sacado con no_es_rubro)
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2021–22 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Paços de Ferreira".
+```
+
 ## 2020
 
 ### Ingresos
@@ -362,4 +442,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Paços de Ferreira/contas23_24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### pacosdeferreira-pt-contas21-22
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Paços de Ferreira/contas21_22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

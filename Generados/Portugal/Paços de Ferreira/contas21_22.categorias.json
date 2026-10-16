@@ -1,23 +1,23 @@
 {
  "md": "Clubes/Portugal/Paços de Ferreira/contas21_22.md",
- "club": "pacos-de-ferreira",
+ "club": "pacosdeferreira-pt",
  "year": 2022,
- "generatedAt": "2026-10-15T22:33:23.036Z",
- "rubrosHuella": "01710cd9c923ef52e57c1430831bd78d1eb0a64a",
- "jevHuella": "52a6bb86776aa12b4becbb0923bdeac881505443",
+ "generatedAt": "2026-10-16T03:51:52.726Z",
+ "rubrosHuella": "e210314e8e723d3e12249ab0eef3388c010fe683",
+ "jevHuella": "19d6ba2263938b9f39b9063adbe4cd411d5ed8c7",
  "modelo": "claude-opus-5-5",
- "costUsd": 0.0324368,
+ "costUsd": 0,
  "rubros": [
   {
    "label": "Vendas de Mercadorias (Merchandising)",
    "lado": "revenue",
    "section": "nota que desglosa \"Vendas e serviços prestados\"",
-   "glosa": "Ventas de mercaderías (Merchandising)",
+   "glosa": "Venta de mercaderías (Merchandising)",
    "page": 13,
    "pendiente": false,
    "ya": "sponsorship_commercial",
-   "escalon": 1,
-   "jevConf": 1,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "sponsorship_commercial",
    "confianza": 1
   },
@@ -29,8 +29,8 @@
    "page": 13,
    "pendiente": false,
    "ya": "sponsorship_commercial",
-   "escalon": 1,
-   "jevConf": 1,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "sponsorship_commercial",
    "confianza": 1
   },
@@ -42,8 +42,8 @@
    "page": 13,
    "pendiente": false,
    "ya": "broadcasting",
-   "escalon": 1,
-   "jevConf": 1,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "broadcasting",
    "confianza": 1
   },
@@ -51,14 +51,14 @@
    "label": "Bilhetes, camarotes e cativos",
    "lado": "revenue",
    "section": "nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de Serviços\"",
-   "glosa": "Taquilla, palcos y abonos",
+   "glosa": "Entradas, palcos y abonos",
    "page": 13,
    "pendiente": false,
    "ya": "matchday_competition",
-   "escalon": 1,
-   "jevConf": 0.92,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "matchday_competition",
-   "confianza": 0.92
+   "confianza": 1
   },
   {
    "label": "Competições",
@@ -66,13 +66,12 @@
    "section": "nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de Serviços\"",
    "glosa": "Competiciones",
    "page": 13,
-   "pendiente": true,
-   "jev": "competition_bonus",
-   "jevConf": 0.88,
-   "escalon": 2,
+   "pendiente": false,
+   "ya": "competition_bonus",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "competition_bonus",
-   "confianza": 0.75,
-   "motivo": "Separado de taquilla; ingresos por competiciones como en famalicao-pt"
+   "confianza": 1
   },
   {
    "label": "Outros",
@@ -81,11 +80,11 @@
    "glosa": "Otros",
    "page": 13,
    "pendiente": false,
-   "ya": "other_expenses",
-   "escalon": 1,
-   "jevConf": 0.99,
-   "categoria": "other_expenses",
-   "confianza": 0.99
+   "ya": "other_income",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "other_income",
+   "confianza": 1
   },
   {
    "label": "Subsídios formação UEFA",
@@ -95,10 +94,10 @@
    "page": 14,
    "pendiente": false,
    "ya": "youth_football",
-   "escalon": 1,
-   "jevConf": 0.99,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "youth_football",
-   "confianza": 0.99
+   "confianza": 1
   },
   {
    "label": "Subsídios Taça de Portugal",
@@ -106,13 +105,12 @@
    "section": "nota que desglosa \"Subsídios à exploração\"",
    "glosa": "Subvenciones Copa de Portugal",
    "page": 14,
-   "pendiente": true,
-   "jev": "competition_bonus",
-   "jevConf": 0.56,
-   "escalon": 2,
+   "pendiente": false,
+   "ya": "competition_bonus",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "competition_bonus",
-   "confianza": 0.6,
-   "motivo": "Subvención ligada a participación en Copa de Portugal"
+   "confianza": 1
   },
   {
    "label": "Cedências jogadores",
@@ -122,24 +120,10 @@
    "page": 14,
    "pendiente": false,
    "ya": "player_sales",
-   "escalon": 1,
-   "jevConf": 0.96,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "player_sales",
-   "confianza": 0.96
-  },
-  {
-   "label": "Diferências de Câmbio favoráveis",
-   "lado": "expense",
-   "section": "nota que desglosa \"Outros rendimentos\"",
-   "glosa": "Diferencias positivas de cambio",
-   "page": 14,
-   "pendiente": true,
-   "jev": "admin_general_expense",
-   "jevConf": 0.69,
-   "escalon": 2,
-   "categoria": "no_es_rubro",
-   "confianza": 0.85,
-   "motivo": "Diferencias de cambio no son línea del sitio"
+   "confianza": 1
   },
   {
    "label": "Lucros Placard",
@@ -149,23 +133,36 @@
    "page": 14,
    "pendiente": false,
    "ya": "other_income",
-   "escalon": 1,
-   "jevConf": 0.96,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_income",
-   "confianza": 0.96
+   "confianza": 1
+  },
+  {
+   "label": "Diferências de Câmbio favoráveis",
+   "lado": "revenue",
+   "section": "ajuste manual",
+   "glosa": "Diferencias positivas de cambio",
+   "page": 14,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "other_income",
+   "confianza": 1
   },
   {
    "label": "Custo das mercadorias vendidas e das matérias consumidas",
    "lado": "expense",
    "section": "estado",
-   "glosa": "Coste de las mercancías vendidas y de las materias consumidas",
+   "glosa": "Coste de las mercancías vendidas y materias consumidas",
    "page": 2,
    "pendiente": false,
    "ya": "other_expenses",
-   "escalon": 1,
-   "jevConf": 0.97,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_expenses",
-   "confianza": 0.97
+   "confianza": 1
   },
   {
    "label": "Cedências de Jogadores",
@@ -173,13 +170,12 @@
    "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Subcontratos\"",
    "glosa": "Cesiones de jugadores",
    "page": 16,
-   "pendiente": true,
-   "jev": "player_amortisation",
-   "jevConf": 0.81,
-   "escalon": 2,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 1,
+   "jevConf": 0.97,
    "categoria": "other_expenses",
-   "confianza": 0.5,
-   "motivo": "Gasto accesorio por préstamo de jugadores; criterio general"
+   "confianza": 0.97
   },
   {
    "label": "Trabalhos Especializados",
@@ -189,10 +185,10 @@
    "page": 16,
    "pendiente": false,
    "ya": "admin_general_expense",
-   "escalon": 1,
-   "jevConf": 0.99,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "admin_general_expense",
-   "confianza": 0.99
+   "confianza": 1
   },
   {
    "label": "Publicidade e Propaganda",
@@ -202,8 +198,8 @@
    "page": 16,
    "pendiente": false,
    "ya": "admin_general_expense",
-   "escalon": 1,
-   "jevConf": 1,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "admin_general_expense",
    "confianza": 1
   },
@@ -215,10 +211,10 @@
    "page": 16,
    "pendiente": false,
    "ya": "match_organisation_expense",
-   "escalon": 1,
-   "jevConf": 0.96,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "match_organisation_expense",
-   "confianza": 0.96
+   "confianza": 1
   },
   {
    "label": "Honorários",
@@ -228,8 +224,8 @@
    "page": 16,
    "pendiente": false,
    "ya": "admin_general_expense",
-   "escalon": 1,
-   "jevConf": 1,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "admin_general_expense",
    "confianza": 1
   },
@@ -239,26 +235,25 @@
    "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços Especializados\"",
    "glosa": "Comisiones",
    "page": 16,
-   "pendiente": true,
-   "jev": "other_expenses",
-   "jevConf": 0.71,
-   "escalon": 2,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_expenses",
-   "confianza": 0.55,
-   "motivo": "Comisiones en club de fútbol, probablemente intermediarios"
+   "confianza": 1
   },
   {
    "label": "Conservação e Reparação",
    "lado": "expense",
    "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços Especializados\"",
-   "glosa": "Reparaciones y conservación",
+   "glosa": "Conservación y reparación",
    "page": 16,
    "pendiente": false,
    "ya": "admin_general_expense",
-   "escalon": 1,
-   "jevConf": 0.99,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "admin_general_expense",
-   "confianza": 0.99
+   "confianza": 1
   },
   {
    "label": "Liga",
@@ -266,13 +261,12 @@
    "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços Especializados\"",
    "glosa": "Liga",
    "page": 16,
-   "pendiente": true,
-   "jev": "match_organisation_expense",
-   "jevConf": 0.87,
-   "escalon": 2,
+   "pendiente": false,
+   "ya": "match_organisation_expense",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "match_organisation_expense",
-   "confianza": 0.75,
-   "motivo": "Cuotas/costos de la Liga por competir"
+   "confianza": 1
   },
   {
    "label": "Outros Serviços Especializados",
@@ -280,24 +274,23 @@
    "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços Especializados\"",
    "glosa": "Otros servicios especializados",
    "page": 16,
-   "pendiente": true,
-   "jev": "other_expenses",
-   "jevConf": 0.77,
-   "escalon": 2,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_expenses",
-   "confianza": 0.7,
-   "motivo": "Residual de servicios especializados, como rioave-pt"
+   "confianza": 1
   },
   {
    "label": "Ferramentas e utensílios desgaste rápido",
    "lado": "expense",
    "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Materiais\"",
-   "glosa": "Herramientas y utensilios de rápido desgaste",
+   "glosa": "Herramientas y utensilios de desgaste rápido",
    "page": 16,
    "pendiente": false,
    "ya": "admin_general_expense",
-   "escalon": 1,
-   "jevConf": 1,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "admin_general_expense",
    "confianza": 1
   },
@@ -309,8 +302,8 @@
    "page": 16,
    "pendiente": false,
    "ya": "admin_general_expense",
-   "escalon": 1,
-   "jevConf": 1,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "admin_general_expense",
    "confianza": 1
   },
@@ -323,9 +316,9 @@
    "pendiente": false,
    "ya": "admin_general_expense",
    "escalon": 1,
-   "jevConf": 0.93,
+   "jevConf": 0.96,
    "categoria": "admin_general_expense",
-   "confianza": 0.93
+   "confianza": 0.96
   },
   {
    "label": "Eletricidade",
@@ -335,8 +328,8 @@
    "page": 16,
    "pendiente": false,
    "ya": "admin_general_expense",
-   "escalon": 1,
-   "jevConf": 1,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "admin_general_expense",
    "confianza": 1
   },
@@ -348,10 +341,10 @@
    "page": 16,
    "pendiente": false,
    "ya": "admin_general_expense",
-   "escalon": 1,
-   "jevConf": 0.98,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "admin_general_expense",
-   "confianza": 0.98
+   "confianza": 1
   },
   {
    "label": "Água",
@@ -361,8 +354,8 @@
    "page": 16,
    "pendiente": false,
    "ya": "admin_general_expense",
-   "escalon": 1,
-   "jevConf": 1,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "admin_general_expense",
    "confianza": 1
   },
@@ -374,8 +367,8 @@
    "page": 16,
    "pendiente": false,
    "ya": "match_organisation_expense",
-   "escalon": 1,
-   "jevConf": 1,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "match_organisation_expense",
    "confianza": 1
   },
@@ -385,13 +378,12 @@
    "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços Diversos\"",
    "glosa": "Arrendamientos y alquileres",
    "page": 16,
-   "pendiente": true,
-   "jev": "admin_general_expense",
-   "jevConf": 0.75,
-   "escalon": 2,
-   "categoria": "other_expenses",
-   "confianza": 0.55,
-   "motivo": "Alquileres genéricos van a other_expenses"
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "admin_general_expense",
+   "confianza": 1
   },
   {
    "label": "Comunicação",
@@ -401,8 +393,8 @@
    "page": 16,
    "pendiente": false,
    "ya": "admin_general_expense",
-   "escalon": 1,
-   "jevConf": 1,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "admin_general_expense",
    "confianza": 1
   },
@@ -412,24 +404,23 @@
    "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços Diversos\"",
    "glosa": "Seguros",
    "page": 16,
-   "pendiente": true,
-   "jev": "admin_general_expense",
-   "jevConf": 0.88,
-   "escalon": 2,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "admin_general_expense",
-   "confianza": 0.8,
-   "motivo": "Seguros van a administración según criterio"
+   "confianza": 1
   },
   {
    "label": "Contencioso e notariado",
    "lado": "expense",
    "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços Diversos\"",
-   "glosa": "Gastos contenciosos y notariales",
+   "glosa": "Contencioso y notariado",
    "page": 16,
    "pendiente": false,
    "ya": "admin_general_expense",
-   "escalon": 1,
-   "jevConf": 1,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "admin_general_expense",
    "confianza": 1
   },
@@ -450,12 +441,12 @@
    "label": "Limpeza, higiene e conforto",
    "lado": "expense",
    "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Serviços Diversos\"",
-   "glosa": "Limpieza, higiene y mantenimiento",
+   "glosa": "Limpieza, higiene y confort",
    "page": 16,
    "pendiente": false,
    "ya": "admin_general_expense",
-   "escalon": 1,
-   "jevConf": 1,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "admin_general_expense",
    "confianza": 1
   },
@@ -467,8 +458,8 @@
    "page": 16,
    "pendiente": false,
    "ya": "other_expenses",
-   "escalon": 1,
-   "jevConf": 1,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_expenses",
    "confianza": 1
   },
@@ -480,8 +471,8 @@
    "page": 15,
    "pendiente": false,
    "ya": "wages_squad",
-   "escalon": 1,
-   "jevConf": 1,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "wages_squad",
    "confianza": 1
   },
@@ -493,10 +484,10 @@
    "page": 15,
    "pendiente": false,
    "ya": "wages_squad",
-   "escalon": 1,
-   "jevConf": 0.96,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "wages_squad",
-   "confianza": 0.96
+   "confianza": 1
   },
   {
    "label": "Pessoal Diverso",
@@ -504,13 +495,12 @@
    "section": "nota que desglosa \"Gastos com o pessoal\" > desglose de \"Remunerações\"",
    "glosa": "Personal diverso",
    "page": 15,
-   "pendiente": true,
-   "jev": "wages_squad",
-   "jevConf": 0.49,
-   "escalon": 2,
-   "categoria": "admin_general_expense",
-   "confianza": 0.65,
-   "motivo": "Personal no deportivo, distinto de jugadores y entrenadores"
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
   },
   {
    "label": "Encargos sobre remunerações",
@@ -520,10 +510,10 @@
    "page": 15,
    "pendiente": false,
    "ya": "wages_squad",
-   "escalon": 1,
-   "jevConf": 0.91,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "wages_squad",
-   "confianza": 0.91
+   "confianza": 1
   },
   {
    "label": "Seguros de acidentes de trabalho e de doenças profissionais",
@@ -533,8 +523,8 @@
    "page": 15,
    "pendiente": false,
    "ya": "admin_general_expense",
-   "escalon": 1,
-   "jevConf": 1,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "admin_general_expense",
    "confianza": 1
   },
@@ -544,13 +534,12 @@
    "section": "nota que desglosa \"Gastos com o pessoal\" > desglose de \"Outros\"",
    "glosa": "Otros gastos de personal",
    "page": 15,
-   "pendiente": true,
-   "jev": "other_expenses",
-   "jevConf": 0.38,
-   "escalon": 2,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "wages_squad",
-   "confianza": 0.45,
-   "motivo": "Gasto de personal residual, vecinas cargas sociales en plantel"
+   "confianza": 1
   },
   {
    "label": "Impostos",
@@ -560,24 +549,23 @@
    "page": 17,
    "pendiente": false,
    "ya": "admin_general_expense",
-   "escalon": 1,
-   "jevConf": 0.95,
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "admin_general_expense",
-   "confianza": 0.95
+   "confianza": 1
   },
   {
    "label": "Gastos/reversões de depreciação e de amortização",
    "lado": "expense",
    "section": "estado",
-   "glosa": "Gastos/reversiones de amortización y deterioro",
+   "glosa": "Gastos/reversiones por amortización y depreciación",
    "page": 2,
-   "pendiente": true,
-   "jev": "depreciation",
-   "jevConf": 0.69,
-   "escalon": 2,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "depreciation",
-   "confianza": 0.5,
-   "motivo": "Línea de depreciación y amortización del estado, sin desglose de pases"
+   "confianza": 1
   }
  ]
 }
