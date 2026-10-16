@@ -12,6 +12,9 @@ window.RANKINGS["pt-ligaportugal2"] = {
   2024: {
     leagueSize: null,
     clubs: [
+      { id:"santaclara-pt", revenue:5.117, reportType:"official_balance_sheet",
+        sourceId:"santaclara-pt-relatorio-contas-sad-2023-24",
+        mix:[["Comercial / Sponsors",0.692],["Estadio",0.077],["Televisión",0.482],["Premios por competencias",0.07],["Venta de Jugadores",2.287],["Otros ingresos",1.511]] },
       { id:"nacional-pt", revenue:3.107, reportType:"official_balance_sheet",
         sourceId:"nacional-pt-relatorio-contas-2023-24",
         mix:[["Comercial / Sponsors",0.315],["Estadio",0.052],["Televisión",0.536],["Premios por competencias",0.452],["Venta de Jugadores",0.001],["Otros ingresos",1.751]] },

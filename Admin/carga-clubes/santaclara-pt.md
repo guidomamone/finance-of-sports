@@ -166,6 +166,77 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Santa Clara".
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Santa Clara/relatorio-contas-sad-2023-24.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Santa Clara/relatorio-contas-sad-2023-24.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Merchandising | pág. 40, precedente |
+| 2 | Ingressos para jogos | pág. 40, precedente |
+| 3 | Apostas Desportivas e Placard | pág. 40, precedente |
+| 4 | Publicidade | pág. 40, precedente |
+| 5 | Prémios de Participação | pág. 40, precedente |
+| 6 | Direitos Televisivos | pág. 40, precedente |
+| 7 | Cedência por Empréstimos Direitos Desportivos | pág. 40, precedente |
+| 8 | Diversos | pág. 40, precedente |
+| 9 | Subsídios à exploração | pág. 17, precedente |
+| 10 | Alienações de jogadores | pág. 42, Jev 1 |
+| 11 | Correções Relativas a Períodos Anteriores | pág. 42, precedente |
+| 12 | Outros | pág. 42, precedente |
+| 13 | Juros e Outros Rendimentos Similares | pág. 42, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 17, precedente |
+| 2 | Subcontratos | pág. 41, precedente |
+| 3 | Serviços Especializados | pág. 41, Jev 0.98 |
+| 4 | Materiais | pág. 41, Claude 0.9 |
+| 5 | Energia e Fluídos | pág. 41, precedente |
+| 6 | Deslocações, estadas e transportes | pág. 41, precedente |
+| 7 | Serviços Diversos | pág. 41, Jev 0.92 |
+| 8 | Remunerações Órgãos Sociais | pág. 42, precedente |
+| 9 | Remunerações ao Pessoal | pág. 42, precedente |
+| 10 | Indemnizações | pág. 42, precedente |
+| 11 | Encargos sobre Remunerações | pág. 42, precedente |
+| 12 | Seguro Acidentes de Trabalho e Doenças | pág. 42, precedente |
+| 13 | Outros Gastos com Pessoal | pág. 42, precedente |
+| 14 | Imparidade de dívidas a receber (perdas/reversões) | pág. 17, precedente |
+| 15 | Provisões (aumentos/reduções) | pág. 17, precedente |
+| 16 | IMI | pág. 43, precedente |
+| 17 | IUC | pág. 43, precedente |
+| 18 | Imposto de Selo | pág. 43, precedente |
+| 19 | Taxas | pág. 43, precedente |
+| 20 | Correções relativas a períodos anteriores | pág. 43, precedente |
+| 21 | Donativos | pág. 43, precedente |
+| 22 | Quotizações | pág. 43, precedente |
+| 23 | Diferenças de câmbio desfavoráveis | pág. 43, precedente |
+| 24 | Multas e penalidades | pág. 43, precedente |
+| 25 | Gastos não devidamente documentados | pág. 43, precedente |
+| 26 | Juros de mora e compensatórios | pág. 43, precedente |
+| 27 | Outros | pág. 43, precedente |
+| 28 | Gastos/reversões de depreciação e de amortização | pág. 17, precedente |
+
+### Meta
+
+```text
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 360 009. Fila de la nota 21 'Outros Rendimentos' (suma 2.771.925, igual al renglón del estado L322) que la extracción puso como gasto (−360.009). Es ingreso, como en 2024-25. Con el cambio el resultado da −10.639.158 contra −10.639.160,36 impreso.
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2023–24 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Santa Clara".
+```
+
 ## 2023
 
 ### Ingresos
@@ -510,4 +581,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Santa Clara/relatorio-contas-sad-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### santaclara-pt-relatorio-contas-sad-2023-24
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Santa Clara/relatorio-contas-sad-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
