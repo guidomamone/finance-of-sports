@@ -88,9 +88,7 @@ con los que no están en los pasos de arriba.
        Quedan 468 PDFs digitales sin transcribir en los países de este to-do: Colombia 203 (59 son certificaciones y dictámenes), Rep. Checa
        116, Dinamarca 84, Turquía 27, Noruega 18, Croacia 12, Ucrania 6, Suiza 1 y Países Bajos 1 (Ajax 2013-14). La lista de escaneos para
        Mistral, en el archivo de avance.
-    b2) CAMBIOS DE SCRIPT SIN COMMITEAR (2026-10-15): `tools/lote.mjs` (título "RESULTADO ETAPA 7" y tabla final "ETAPA · #", pedido de
-       Guido, solo salida: falta probarlo con un ensayo sobre Admin/Archive/lotes/lote-76.txt y commitear) y
-       `tools/fetch-club-league-reference.mjs` (escalón "tabla limpia" + `--comparar`, ok de Guido: la medición sobre toda la caché con
+    b2) CAMBIO DE SCRIPT SIN COMMITEAR (2026-10-15): `tools/fetch-club-league-reference.mjs` (escalón "tabla limpia" + `--comparar`, ok de Guido: la medición sobre toda la caché con
        `node Admin/transcripcion-subagentes/medir-ligas.mjs "$PWD" <salida.txt>` tiene que dar que SOLO cambia Portugal 2025; una versión más laxa rompía Colombia 2017-2020, y la siguiente cambiaba 4 temporadas por variantes de nombre (Chequia 2013, Serie A 2013, Portugal 2.ª 2012 y 2014); la de hoy agrega "menos nombres que la elegida" y NO está medida todavía. Si
        la medición no se pudo terminar, rehacerla antes de commitear; si da otra cosa, revertir con `git checkout` y anotarlo).
     b) SIGUIENTE. Los demás países, uno por vez, con la misma receta que Grecia: armar el lote con solo los documentos que traen estado de resultados
@@ -106,17 +104,13 @@ con los que no están en los pasos de arriba.
     Mejoras de script vistas en Grecia: to-do 232.
 
 237. MEJORAS DE SCRIPT VISTAS EN EL LOTE 76 (Portugal, 2026-10-15; cada letra es un escalón a diseñar con el ok de Guido).
-    ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, n, f, d, t, e, ab, a+ac, v, aa, q (POC y q1/q2), k, w, am, l (vecino sin
+    ESTADO DEL 237 (2026-10-16). Hechas y medidas (un commit por letra, ver CHANGELOG 707 y 708): ad, n, f, d, t, e, ab, a+ac, v, r, aa, q (POC y q1/q2), k, w, am, l (vecino sin
     descartados), ah, af+s, ai+ak, z, g y la letra nueva an (verificar no reescribe el .rubros.json igual, glosar no vuelve a pagar). Pasaron a
     Admin/HALLAZGOS-pipeline.md: o, paridad PTE, b, c, h, i, j, l (primera parte), m, p, u, x, ae, aj y Benfica 2014-15. Guido dejó al para después.
     Cómo medir cada letra: verificar -> node tools/medir-verificar.mjs --lista Admin/lotes/prueba-completa.txt --salida <x> --pasadas 2
     (antes con --script <copia de la versión vieja dentro de tools/>) y --comparar; cargar -> node tools/medir-cargar.mjs --salida <x>
     (paralelo, ~1,5 min) y --comparar, después git checkout -- Admin/registros/categorias-aprendidas.jsonl; auditoría -> node tools/audit.js.
-    PENDIENTES, con el diseño que dejaron los diagnósticos (subagentes Sonnet; ok de Guido para codear todas salvo al), en este orden:
-    - r (S): textos de la terminal del lote (numeración de etapas, "DE VERDAD", "OJO", "?" en el resumen); mostrarle el texto a Guido antes.
-    r) EL COPY DE LA TERMINAL QUEDÓ VIEJO (pedido de Guido, 2026-10-15). "(DE VERDAD)", "ENSAYO", los "OJO:" y la mayoría de los mensajes
-       de pipeline.mjs y lote.mjs no terminan de explicar qué está pasando ni qué tiene que hacer Guido. Repasar la salida de las dos
-       tools con un lote real y proponerle el texto nuevo (solo salida, no lógica) antes de tocarlo.
+    PENDIENTE: solo al (Guido la dejó para después).
     al) EL ANEXO EN FORMATO UEFA ABRE LAS VENTAS Y NADIE LO USA (Mafra 2023-24, "Contas Anuais ED*-1", .md L1437-1483: bilheteira, patrocínios,
        TV, merchandising, competições y otros = 1.275.143,83, exacto con Vendas e serviços prestados; el lote pedía un reintento pago por TV y
        estadio en 0). Se cargó con ajustes `fila`. Portimonense 2024-25 trae algo parecido en el informe de gestión. Escalón posible: que

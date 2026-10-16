@@ -168,10 +168,10 @@ if (toResolve.length) {
   if (!EXECUTE) {
     const dry = node('tools/resolver-inventario.mjs', ['--lista', 'Admin/registros/.pipeline-lista-actual.txt'], { stdio: ['ignore', 'pipe', 'ignore'] });
     console.log('\n' + (dry.stdout || '').split('\n').filter((l) => /^\s+\d+ docs|TOTAL|ENSAYO/.test(l)).join('\n'));
-    console.log('\nEs un ENSAYO: no se llamó a ninguna API. Agregá --ejecutar para correrlo de verdad.');
+    console.log('\nEnsayo terminado, no se gastó nada. Para correrlo: agregá --ejecutar.');
     process.exit(0);
   }
-  console.log(`\n=== Etapa 2 (Admin/PIPELINE.md): transcribir y validar ${toResolve.length} documento(s) (concurrencia ${concurrency}) ===\n`);
+  console.log(`\n=== Transcribir y validar ${toResolve.length} documento(s) (etapa 2, de a ${concurrency} en paralelo) ===\n`);
   node('tools/resolver-inventario.mjs', ['--lista', 'Admin/registros/.pipeline-lista-actual.txt', '--ejecutar', '--concurrencia', concurrency], { stdio: 'inherit' });
   ledger = refreshLedger();
 }

@@ -103,7 +103,7 @@ const docs = lineas.map((l) => l.replace(/^testigo\s+/i, '')).filter((d) => { if
   for (const f of readdirSync(resolve(ROOT, 'Admin', 'lotes')).filter((f) => /^lote-.*\.txt$/.test(f)).sort()) {
     const otra = resolve(ROOT, 'Admin', 'lotes', f); if (otra === propia) continue;
     const comunes = sinTestigo(otra).filter((d) => mios.has(d));
-    if (comunes.length) console.log(`OJO: ${comunes.length} documento(s) de esta lista están también en otra lista activa, Admin/lotes/${f} (${comunes.slice(0, 3).map((d) => d.split('/').pop()).join(', ')}${comunes.length > 3 ? `, … y ${comunes.length - 3} más` : ''}). Si ya se corrieron allá, sacalos de una de las dos o archivá la lista cerrada (Admin/Archive/lotes/).`);
+    if (comunes.length) console.log(`Aviso (no frena): ${comunes.slice(0, 3).map((d) => d.split('/').pop()).join(', ')}${comunes.length > 3 ? ` y ${comunes.length - 3} más` : ''} también ${comunes.length > 1 ? 'están' : 'está'} en la lista ${f.replace(/\.txt$/, '')}, que sigue activa. Decíselo a Claude para que archive la que ya terminó.`);
   }
 }
 const ajustesTodos = (() => { let cache = null; return () => (cache ??= (existsSync(resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl')) ? readFileSync(resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl'), 'utf8').split('\n').filter(Boolean).map((l) => { try { return JSON.parse(l); } catch { return {}; } }) : [])); })();
@@ -121,7 +121,7 @@ let registro = leerRegistro();
   const cubiertos = new Set(registro.filter((e) => clubes.has(club(e.pdf)) && (enLista.has(e.pdf) || e.cargado || e.estado === 'cargado') && e.periodo?.cierre).map((e) => `${club(e.pdf)}|${e.periodo.cierre}`));
   for (const e of registro) {
     if (!clubes.has(club(e.pdf)) || enLista.has(e.pdf) || !e.periodo?.cierre || cubiertos.has(`${club(e.pdf)}|${e.periodo.cierre}`)) continue;
-    if (etapaDe(e).clave === 'e3-localizar') console.log(`OJO: ${e.pdf} está transcripto y sin localizar, y su ejercicio (${e.periodo.cierre}) no está en esta lista: sumalo o descartalo (Admin/registros/documentos-descartados.txt).`);
+    if (etapaDe(e).clave === 'e3-localizar') console.log(`Aviso (no frena): ${e.pdf} está transcripto y nadie lo localizó, y su año (cierre ${e.periodo.cierre}) no está en esta lista. Decíselo a Claude: lo suma a un lote o lo descarta.`);
   }
 }
 // (Versión 521, to-do 140(c)) DUPLICADOS: el mismo PDF que otro (misma huella, inventario-transcripciones.mjs) no se procesa: se procesa el otro.
@@ -145,7 +145,7 @@ const paginasEnImagen = (pdf) => {
   for (let i = 3; i < n; i++) { const t = spawnSync('pdftotext', ['-f', String(i), '-l', String(i), resolve(ROOT, pdf), '-'], { encoding: 'utf8' }).stdout || ''; if (t.replace(/\s/g, '').length < 200) out.push(i); }
   return out;
 };
-console.log(`\n=== Etapas 3-5: localizar, validar, extraer${EJECUTAR ? '' : ' (ENSAYO, sin API)'} ===`);
+console.log(`\n=== 1/5 · Leer el documento (etapas 3-5: localizar, validar, extraer)${EJECUTAR ? '' : ' — ENSAYO: no llama a ninguna API'} ===`);
 // ETAPA 3, ANTES DE LA COMPUERTA: EL PERÍMETRO DEL CLUB POR SEÑALES (tools/perimetro-senales.mjs, aprobado por Guido el 2026-10-06). Para cada
 // club de la lista que frenaría por perímetro, mira todos sus .md y, si coinciden (tablas de cada perímetro y el voto de 3 criterios, uno de
 // Jev), fija el ajuste del club; si no, la compuerta frena como siempre y Guido decide. En el ensayo no pregunta a Jev ni escribe: dice qué
@@ -380,9 +380,9 @@ const imprimirAFijar = () => {
   for (const c of [...new Set(aFijar.map((x) => x.comando))]) console.log(`  ${c}`);
 };
 if (!EJECUTAR) imprimirAFijar();
-if (!EJECUTAR) { console.log(`\nENSAYO: ~US$ ${usd.toFixed(2)} para localizar y extraer ${docs.length} documento(s), más ~US$ 0,03 c/u de categorización y la validación de páginas escaneadas (~US$ 0,003 por página). Agregá --ejecutar.`); process.exit(0); }
+if (!EJECUTAR) { const coma = (x) => x.toFixed(2).replace('.', ','); console.log(`\nEnsayo terminado, no se gastó nada. Correrlo cuesta ~US$ ${coma(usd + 0.03 * docs.length)} (localizar y extraer US$ ${coma(usd)} + categorización ~US$ 0,03 por documento + páginas escaneadas ~US$ 0,003 cada una). Para correrlo: agregá --ejecutar.`); process.exit(0); }
 
-console.log('\n=== Etapa 6: verificar (gratis) ===');
+console.log('\n=== 2/5 · Sumar y cruzar con lo impreso (etapa 6, gratis) ===');
 // startsWith (Versión 347): el escalón 1 de la etapa 2 deja 'extraído (re-transcripto con Mistral)'; con la igualdad exacta ese documento no
 // pasaba a verificar en la misma corrida (UC 2015, lote 06: re-transcripto y extraído, y la etapa 6 lo salteaba).
 // verificarLista (Versión 362): repite la pasada si un documento tomó la escala del año vecino (la cadena de escala depende del orden).
@@ -406,7 +406,7 @@ for (const [pdf, r] of verificarLista(docs.filter((d) => String(estado[d]).start
   }
 }
 
-console.log('\n=== Etapa 7: categorizar (Jev y Claude, con precedente y memoria) ===');
+console.log('\n=== 3/5 · Categorizar las filas (etapa 7) ===');
 const conRubros = docs.filter((d) => String(estado[d]).startsWith('verificado'));
 if (conRubros.length) {
   writeFileSync(resolve(ROOT, 'Admin', 'registros', '.lote-lista-actual.txt'), conRubros.join('\n') + '\n');
@@ -414,12 +414,12 @@ if (conRubros.length) {
   node('tools/glosar-rubros.mjs', ['--listos', '--lista', 'Admin/registros/.lote-lista-actual.txt']);
   node('tools/jev-categorizar.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/registros/.lote-lista-actual.txt']);
   node('tools/categorizar-claude.mjs', ['--listos', '--limit', '0', '--lista', 'Admin/registros/.lote-lista-actual.txt']);
-  console.log('\n=== Etapa 8: cargar (PROPUESTA, no escribe el sitio) ===');
+  console.log('\n=== 4/5 · Proponer la carga (etapa 8, todavía no escribe el sitio) ===');
   node('tools/cargar.mjs', ['--lista', 'Admin/registros/.lote-lista-actual.txt', '--desde-verificacion']);
 }
 
-console.log('\n=== RESUMEN DEL LOTE ===');
-for (const pdf of docs) console.log(`  ${String(estado[pdf] || '?').padEnd(42)} ${pdf}`);
+console.log('\n=== Resumen: en qué quedó cada documento ===');
+for (const pdf of docs) console.log(`  ${String(estado[pdf] || 'sin novedad en esta corrida').padEnd(42)} ${pdf}`);
 const cola = pendientes().filter((c) => docs.includes(c.pdf));
 // TROUBLESHOOTING (Versión 346): desgloses que siguen sin sumar DESPUÉS del reintento -> diagnóstico (¿índice o transcripción?).
 const sinArreglo = docs.filter((d) => { const e = registro.find((x) => x.pdf === d); const v = e?.md ? leerDerivado(e, '.verificacion.json') : null; return v?.reintentado && v?.faltasDesglose; });
@@ -462,7 +462,7 @@ imprimirAFijar();
 // por tarea, y "N.ª vez" si esa tarea ya se había pagado antes para el mismo PDF (tools/gasto-doc.mjs; solo información, no frena).
 const GD = gastoPorDocumento(docs, { desde: INICIO, registro, extra: gastoValidar });
 if (GD.length) { console.log('\nGASTO POR DOCUMENTO (esta corrida; "N.ª vez" = esa tarea ya se había pagado antes para el mismo PDF):'); for (const l of lineasGasto(GD)) console.log(l); }
-console.log(`\nGastado: US$ ${usd.toFixed(2)} (más la categorización: node tools/gasto.mjs). Cola humana de este lote: ${cola.length} caso(s) -> node tools/cola.mjs`);
+console.log(`\nGastado: US$ ${usd.toFixed(2).replace('.', ',')} en localizar y extraer (la categorización: node tools/gasto.mjs).${cola.length ? ` ${cola.length === 1 ? 'Quedó 1 pregunta' : `Quedaron ${cola.length} preguntas`} en la cola: no tenés que hacer nada, ${cola.length === 1 ? 'la contesta' : 'las contesta'} Claude.` : ''}`);
 
 // RESULTADO (Versión 351, pedido de Guido: "que al final de la corrida diga 'Frenados X' 'Listo para cargar Y'"). Lee la última propuesta de
 // carga (<doc>.carga.json) de CADA documento de la lista, no solo de los que pasaron por la etapa 8 en esta corrida (en un --reintentar la
@@ -501,8 +501,8 @@ for (const pdf of docs.filter((d) => !testigos.has(d))) {
 }
 const anios = (xs) => xs.map((x) => x.anio).sort().join(', ');
 // (pedido de Guido, 2026-10-15) El título dice qué es: la propuesta de carga de la etapa 7, antes de escribir; lo escrito de verdad lo
-// cuenta la etapa 8 y la tabla final "ETAPA · #".
-console.log('\n=== RESULTADO ETAPA 7 (propuesta de carga, antes de escribir) ===');
+// cuenta la etapa 8 y la tabla final "Dónde quedó cada PDF de la lista".
+console.log('\n=== Propuesta de carga (etapa 8): qué se escribiría ===');
 console.log(`Listo para cargar ${resultado.listo.length}${resultado.listo.length ? `   (${anios(resultado.listo)})` : ''}`);
 console.log(`Frenados ${resultado.frenado.length}`);
 for (const x of resultado.frenado.sort((a, b) => String(a.anio).localeCompare(String(b.anio)))) {
@@ -513,7 +513,7 @@ for (const x of resultado.frenado.sort((a, b) => String(a.anio).localeCompare(St
 if (resultado.yaCargado.length) console.log(`Ya en el sitio ${resultado.yaCargado.length}   (${anios(resultado.yaCargado)})`);
 if (resultado.sinPropuesta.length) { console.log(`Sin propuesta de carga ${resultado.sinPropuesta.length}`); for (const x of resultado.sinPropuesta) console.log(`   ${x.anio}: ${x.motivo}`); }
 
-// ETAPA 8 DE VERDAD (Versión 642, ok de Guido el 2026-10-09): con --cargar, lo que quedó "listo para cargar" se escribe en el sitio con
+// ETAPA 8 ESCRITA EN EL SITIO (Versión 642, ok de Guido el 2026-10-09): con --cargar, lo que quedó "listo para cargar" se escribe en el sitio con
 // tools/cargar-lote.mjs (alta del club nuevo con su color, cargar.mjs --escribir con su auditoría, un commit por año; sin push). Sin
 // --ejecutar es su ensayo. El candado del lote se suelta antes: cargar.mjs --escribir toma el suyo.
 let escritos = 0;
@@ -525,7 +525,7 @@ if (CARGAR) {
   escritos = (String(r.stdout || '').match(/: escrito y commiteado/g) || []).length;
 }
 
-// TABLA FINAL "ETAPA · #" (pedido de Guido, 2026-10-15): cada documento de la lista una sola vez, en la etapa más temprana donde frenó.
+// TABLA FINAL "Dónde quedó cada PDF de la lista" (pedido de Guido, 2026-10-15; título del to-do 237 r): cada documento de la lista una sola vez, en la etapa más temprana donde frenó.
 // Solo lee lo que ya se calculó arriba (la propuesta de carga de cada documento) y lo escrito por la etapa 8: no cambia nada.
 {
   const filas = new Map(); const sumar = (k, n = 1) => filas.set(k, (filas.get(k) || 0) + n);
@@ -537,7 +537,7 @@ if (CARGAR) {
   sumar('ya estaba en el sitio', resultado.yaCargado.length);
   const orden = [...filas].filter(([, n]) => n > 0).sort(([a], [b]) => a.localeCompare(b, 'es', { numeric: true }));
   const ancho = Math.max(5, ...orden.map(([k]) => k.length));
-  console.log('\n=== ETAPA · # (dónde quedó cada PDF de la lista) ===');
+  console.log('\n=== Dónde quedó cada PDF de la lista ===');
   console.log(`${'ETAPA'.padEnd(ancho)}   #`);
   for (const [k, n] of orden) console.log(`${k.padEnd(ancho)}  ${String(n).padStart(2)}`);
   console.log(`${'TOTAL'.padEnd(ancho)}  ${String(orden.reduce((s, [, n]) => s + n, 0)).padStart(2)}`);

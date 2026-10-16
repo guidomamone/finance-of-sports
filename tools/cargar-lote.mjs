@@ -106,11 +106,11 @@ for (const [carpeta, xs] of clubes) {
   plan.push({ carpeta, xs, alta: { clubId: reg.clubId, color, club: reg.club, pais: reg.pais } });
 }
 
-console.log(`\n=== Etapa 8: escribir (${ESCRIBIR ? 'DE VERDAD' : 'ENSAYO'}) — ${LISTA} ===`);
+console.log(`\n=== 5/5 · Escribir en el sitio (etapa 8)${ESCRIBIR ? ': un commit por año, sin push' : ' — ENSAYO: no escribe nada'} ===`);
 for (const p of plan) console.log(`  ${p.carpeta.split('/').slice(1).join('/')}${p.alta ? `  [alta ${p.alta.clubId}, color ${p.alta.color === null ? 'null' : p.alta.color}]` : ''}: ${p.xs.map((x) => x.year).join(', ')}`);
 if (yaEnSitio) console.log(`  (${yaEnSitio} documento(s) con el año ya en el sitio: no se tocan)`);
 if (frenados.length) { console.log(`Frenados ${frenados.length}:`); for (const f of frenados) console.log(`   ${f.pdf.split('/').slice(2).join('/')}: ${f.motivo}`); }
-if (!ESCRIBIR) { console.log(`\nENSAYO: ${plan.reduce((n, p) => n + p.xs.length, 0)} año(s) se escribirían. Agregá --escribir.`); process.exit(0); }
+if (!ESCRIBIR) { const n = plan.reduce((a, p) => a + p.xs.length, 0); console.log(`\nEnsayo terminado: se ${n === 1 ? 'escribiría 1 año' : `escribirían ${n} años`}. Para ${n === 1 ? 'escribirlo' : 'escribirlos'}: agregá --escribir.`); process.exit(0); }
 
 // 3) De verdad.
 const sucio = String(git('status', '--porcelain', '--', ...SITIO).stdout || '').trim();
@@ -142,7 +142,7 @@ function revertirAlta(clubId) {
   git('clean', '-fdq', '--', 'data', 'fuentes');
 }
 
-let commits = 0; const noEscritos = [];
+let commits = 0; const noEscritos = []; const escritosTodos = [];
 for (const p of plan) {
   const nombre = p.carpeta.split('/')[2];
   if (p.alta) {
@@ -161,10 +161,10 @@ for (const p of plan) {
     const msg = `${nombre} ${x.year} por el pipeline${p.alta && !escritos ? ` (alta de ${p.alta.clubId}, color ${p.alta.color === null ? 'null' : p.alta.color})` : ''} — tools/cargar-lote.mjs, ${LISTA}`;
     const c = git('commit', '-q', '-m', msg);
     if (c.status !== 0) { noEscritos.push({ pdf: x.pdf, motivo: `escrito pero el commit falló: ${String(c.stderr).slice(0, 120)}` }); continue; }
-    escritos++; commits++;
+    escritos++; commits++; escritosTodos.push(`${nombre} ${x.year}`);
     console.log(`  ${nombre} ${x.year}: escrito y commiteado (${String(git('log', '--oneline', '-1').stdout).slice(0, 9)})`);
   }
   if (p.alta && !escritos) { revertirAlta(p.alta.clubId); console.log(`  ${nombre}: ningún año se escribió; alta de ${p.alta.clubId} revertida`); }
 }
-console.log(`\nEscritos y commiteados: ${commits} año(s). Sin push.`);
+console.log(`\nEscritos en el sitio: ${commits === 1 ? '1 año' : `${commits} años`}${commits ? ` (${escritosTodos.join(', ')})` : ''}${commits ? ', un commit cada uno' : ''}. No se pusheó nada.`);
 if (noEscritos.length) { console.log(`No escritos ${noEscritos.length}:`); for (const x of noEscritos) console.log(`   ${x.pdf.split('/').slice(2).join('/')}: ${x.motivo}`); }

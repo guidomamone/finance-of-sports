@@ -37,6 +37,8 @@ que dice `ESTADO.md` era verdad ese día.
   idénticos; con la cola vacía, 7 dudas menos (todas con la respuesta que ya tenían). o (escala por el año anterior) a HALLAZGOS: 2 de 12
   respuestas la contradecían.
 - Paridad PTE en el año vecino a HALLAZGOS: el documento de 2001 de Sporting también está en escudos; lo que falta es Sporting 2001 (TODO 165 b0).
+- lote.mjs, cargar-lote.mjs y pipeline.mjs: texto nuevo de la terminal, aprobado por Guido (pasos 1/5 a 5/5, "Aviso (no frena)", ensayo con
+  el costo total, la cola sin pedirle nada a Guido) (r). Solo salida.
 - Lotes 86 y 87: Felgueiras 2021-22 y Benfica 2007-08 cargados; caja de Felgueiras 2022-2024. Listas 80, 86 y 87 al archivo.
 
 ## Versión 707 — Portugal cargado (salvo lo que espera scripts) y to-do 237 a medias: 14 letras resueltas y medidas (2026-10-16)

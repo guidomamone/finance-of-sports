@@ -43,7 +43,9 @@ no cubre ni la lista ni un año cargado (to-do 232 q): se suma a la lista o va a
 - Un documento cuyo año ya está en el sitio (registro, o el sitio por el club y año de su propuesta) no pasa por ninguna etapa más: ni
   verificar, ni categorizar, ni la propuesta de carga; dice "ya en el sitio" y la tabla final lo cuenta ahí. Con `--reintentar` sigue el
   camino de siempre. Así un lote que se vuelve a correr trabaja solo sobre lo que falta.
-- Al final, la tabla "ETAPA · #": cada documento de la lista una sola vez, en la etapa más temprana donde frenó.
+- Al final, la tabla "Dónde quedó cada PDF de la lista": cada documento una sola vez, en la etapa más temprana donde frenó. Los títulos de la
+  terminal numeran los pasos (1/5 leer, 2/5 sumar, 3/5 categorizar, 4/5 proponer, 5/5 escribir) y los avisos que no frenan dicen "Aviso (no
+  frena)" (texto aprobado por Guido, to-do 237 r).
 - El ensayo estima con el tamaño real: extraer = salida 2 × entrada; sin localizar, la mediana del club (sin historia, US$ 0,20-0,33: mediana y percentil 90 de las extracciones medidas).
 - Al final: el gasto por documento y por tarea, con "N.ª vez" si esa tarea ya se había pagado para ese PDF; y el RESULTADO (listos,
   frenados, ya en el sitio: un año cargado va ahí aunque su propuesta sea vieja). Cada frenado lista TODOS sus motivos, uno por línea; si
