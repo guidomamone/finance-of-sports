@@ -110,6 +110,81 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2024–25 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Portimonense".
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Portimonense/Relatorio-Contas-23-24_assinado.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Portimonense/Relatorio-Contas-23-24_assinado.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas | pág. 50, precedente |
+| 2 | Prestações de Serviços | pág. 50, precedente |
+| 3 | Subsídios à exploração | pág. 33, precedente |
+| 4 | Trabalhos para a própria entidade | pág. 33, Jev 0.99 |
+| 5 | Rendimentos suplementares | pág. 55, precedente |
+| 6 | Descontos de pronto pagamento | pág. 55, precedente |
+| 7 | Rendimentos e ganhos nos restantes ativos financeiros | pág. 55, precedente |
+| 8 | Rendimentos e ganhos em investimentos não financeiros | pág. 55, precedente |
+| 9 | Outros | pág. 55, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 33, Jev 0.99 |
+| 2 | Trabalhos especializados | pág. 54, precedente |
+| 3 | Publicidade e propaganda | pág. 54, precedente |
+| 4 | Vigilância e segurança | pág. 54, precedente |
+| 5 | Honorários | pág. 54, precedente |
+| 6 | Comissões | pág. 54, precedente |
+| 7 | Conservação e reparação | pág. 54, precedente |
+| 8 | Outros | pág. 54, precedente |
+| 9 | Ferramentas e utensílios de desgaste rápido | pág. 54, precedente |
+| 10 | Material de escritório | pág. 54, precedente |
+| 11 | Artigos para oferta | pág. 54, precedente |
+| 12 | Outros | pág. 54, precedente |
+| 13 | Electricidade | pág. 54, precedente |
+| 14 | Combustíveis | pág. 54, precedente |
+| 15 | Água | pág. 54, precedente |
+| 16 | Deslocações e estadas | pág. 54, precedente |
+| 17 | Transportes de mercadorias | pág. 54, precedente |
+| 18 | Rendas e alugueres | pág. 54, precedente |
+| 19 | Comunicação | pág. 54, precedente |
+| 20 | Seguros | pág. 54, precedente |
+| 21 | Contencioso e notariado | pág. 54, precedente |
+| 22 | Despesas de representação | pág. 54, precedente |
+| 23 | Limpeza, higiene e conforto | pág. 54, precedente |
+| 24 | Outros | pág. 54, precedente |
+| 25 | Remunerações dos órgãos sociais | pág. 53, Jev 1 |
+| 26 | Remunerações do pessoal | pág. 53, Claude 0.85 |
+| 27 | Encargos sobre remunerações | pág. 53, Jev 0.95 |
+| 28 | Seguros de acidentes de trabalho e doenças profissionais | pág. 53, Jev 0.99 |
+| 29 | Gastos de acção social | pág. 53, Jev 0.91 |
+| 30 | Outros gastos com o pessoal | pág. 53, precedente |
+| 31 | Ajustamentos de inventários (perdas/reversões) | pág. 33, Jev 0.99 |
+| 32 | Imparidade de dividas a receber (perdas/reversões) | pág. 33, Jev 1 |
+| 33 | Provisões (aumentos/reduções) | pág. 33, precedente |
+| 34 | Outras imparidades (perdas/reversões) | pág. 33, Jev 0.96 |
+| 35 | Outros gastos e perdas | pág. 33, precedente |
+| 36 | Gastos/reversões de depreciação e de amortização | pág. 33, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2023–24 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Portimonense".
+```
+
 ## 2022
 
 ### Ingresos
@@ -200,4 +275,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Portimonense/Relatorio-Contas-21-22_assinado.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### portimonense-pt-relatorio-contas-23-24-assinado
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Portimonense/Relatorio-Contas-23-24_assinado.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

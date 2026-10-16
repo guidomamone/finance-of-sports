@@ -18,3 +18,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2025 desde `Clubes/Portugal/Portimonense/Relatorio-Contas-24-25_assinado.pdf` (sourceId `portimonense-pt-relatorio-contas-24-25-assinado`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2022 desde `Clubes/Portugal/Portimonense/Relatorio-Contas-21-22_assinado.pdf` (sourceId `portimonense-pt-relatorio-contas-21-22-assinado`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2024 desde `Clubes/Portugal/Portimonense/Relatorio-Contas-23-24_assinado.pdf` (sourceId `portimonense-pt-relatorio-contas-23-24-assinado`).

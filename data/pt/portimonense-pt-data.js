@@ -20,6 +20,17 @@ const portimonenseptRevenueLinesByYear = {
     { rawLabel:'Rendimentos e ganhos nos outros Inv.Financ.', normalizedCategory:'other_income', amountNative:0.014113, disclosureLevel:'aggregated' },
     { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:1.048493, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Vendas', normalizedCategory:'sponsorship_commercial', amountNative:0.029731, disclosureLevel:'aggregated' },
+    { rawLabel:'Prestações de Serviços', normalizedCategory:'lump_football_operations', amountNative:4.94831, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídios à exploração', normalizedCategory:'other_income', amountNative:0.000421, disclosureLevel:'aggregated' },
+    { rawLabel:'Trabalhos para a própria entidade', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendimentos suplementares', normalizedCategory:'other_income', amountNative:0.844684, disclosureLevel:'aggregated' },
+    { rawLabel:'Descontos de pronto pagamento', normalizedCategory:'other_income', amountNative:0.000016, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendimentos e ganhos nos restantes ativos financeiros', normalizedCategory:'other_income', amountNative:0.000017, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendimentos e ganhos em investimentos não financeiros', normalizedCategory:'player_sales', amountNative:2.990202, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.898876, disclosureLevel:'aggregated' },
+  ],
 };
 const portimonenseptExpenseLinesByYear = {
   2025: [
@@ -90,6 +101,44 @@ const portimonenseptExpenseLinesByYear = {
     { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.449755, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-1.846219, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Custo das mercadorias vendidas e das matérias consumidas', normalizedCategory:'other_expenses', amountNative:-0.017259, disclosureLevel:'aggregated' },
+    { rawLabel:'Trabalhos especializados', normalizedCategory:'admin_general_expense', amountNative:-0.389413, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade e propaganda', normalizedCategory:'admin_general_expense', amountNative:-0.0424, disclosureLevel:'aggregated' },
+    { rawLabel:'Vigilância e segurança', normalizedCategory:'match_organisation_expense', amountNative:-0.317733, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorários', normalizedCategory:'admin_general_expense', amountNative:-0.059662, disclosureLevel:'aggregated' },
+    { rawLabel:'Comissões', normalizedCategory:'other_expenses', amountNative:-0.510681, disclosureLevel:'aggregated' },
+    { rawLabel:'Conservação e reparação', normalizedCategory:'admin_general_expense', amountNative:-0.171674, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.00178, disclosureLevel:'aggregated' },
+    { rawLabel:'Ferramentas e utensílios de desgaste rápido', normalizedCategory:'admin_general_expense', amountNative:-0.017559, disclosureLevel:'aggregated' },
+    { rawLabel:'Material de escritório', normalizedCategory:'admin_general_expense', amountNative:-0.004236, disclosureLevel:'aggregated' },
+    { rawLabel:'Artigos para oferta', normalizedCategory:'admin_general_expense', amountNative:-0.0045, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.032705, disclosureLevel:'aggregated' },
+    { rawLabel:'Electricidade', normalizedCategory:'admin_general_expense', amountNative:-0.047082, disclosureLevel:'aggregated' },
+    { rawLabel:'Combustíveis', normalizedCategory:'admin_general_expense', amountNative:-0.123308, disclosureLevel:'aggregated' },
+    { rawLabel:'Água', normalizedCategory:'admin_general_expense', amountNative:-0.216981, disclosureLevel:'aggregated' },
+    { rawLabel:'Deslocações e estadas', normalizedCategory:'match_organisation_expense', amountNative:-1.742738, disclosureLevel:'aggregated' },
+    { rawLabel:'Transportes de mercadorias', normalizedCategory:'admin_general_expense', amountNative:-0.001254, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendas e alugueres', normalizedCategory:'admin_general_expense', amountNative:-0.190562, disclosureLevel:'aggregated' },
+    { rawLabel:'Comunicação', normalizedCategory:'admin_general_expense', amountNative:-0.025155, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.0553, disclosureLevel:'aggregated' },
+    { rawLabel:'Contencioso e notariado', normalizedCategory:'admin_general_expense', amountNative:-0.00015, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesas de representação', normalizedCategory:'admin_general_expense', amountNative:-0.072771, disclosureLevel:'aggregated' },
+    { rawLabel:'Limpeza, higiene e conforto', normalizedCategory:'admin_general_expense', amountNative:-0.018808, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.930738, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações dos órgãos sociais', normalizedCategory:'admin_general_expense', amountNative:-0.570574, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações do pessoal', normalizedCategory:'wages_squad', amountNative:-5.478475, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos sobre remunerações', normalizedCategory:'wages_squad', amountNative:-0.750632, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros de acidentes de trabalho e doenças profissionais', normalizedCategory:'admin_general_expense', amountNative:-0.423521, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos de acção social', normalizedCategory:'wages_squad', amountNative:-0.011935, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos com o pessoal', normalizedCategory:'wages_squad', amountNative:-0.184289, disclosureLevel:'aggregated' },
+    { rawLabel:'Ajustamentos de inventários (perdas/reversões)', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidade de dividas a receber (perdas/reversões)', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisões (aumentos/reduções)', normalizedCategory:'other_amortisation', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Outras imparidades (perdas/reversões)', normalizedCategory:'other_expenses', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos e perdas', normalizedCategory:'other_expenses', amountNative:-1.492947, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-2.280931, disclosureLevel:'aggregated' },
+  ],
 };
 const portimonenseptFiscalYearMeta = {
   2025: {
@@ -123,6 +172,24 @@ const portimonenseptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:21.9736, officialTotalExpenses:17.233504, officialPAT:4.401551,
   },
+  2024: {
+    currency:'EUR', fxRef:'EUR@2024-06-30',
+    sourceId:'portimonense-pt-relatorio-contas-23-24-assinado',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.004928, tax:-0.259518,
+    extraRows: [
+      {label:'Juros e rendimentos similares obtidos', value:0},
+      {label:'Juros e gastos similares suportados', value:-0.004928},
+      {label:'Imposto sobre o rendimento do período', value:-0.259518},
+    ],
+    sinDesglose: [
+      {renglon:'Prestações de Serviços', lado:'revenue', importe:4.94831, motivo:'Claude 2026-10-16 (revisado): el renglón se reemplaza por bilheteira, publicidade y TV con ajustes \'fila\' (cuadro de gestión, cierra exacto).'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:9.712256, officialTotalExpenses:16.187753, officialPAT:-6.739942,
+  },
 };
 const portimonenseptPresupuestoOverlayByYear = {};
 
@@ -147,6 +214,11 @@ Object.assign(sources, {
   'portimonense-pt-relatorio-contas-21-22-assinado': {
     id:'portimonense-pt-relatorio-contas-21-22-assinado', clubId:'portimonense-pt',
     title:'Portimonense Futebol, SAD — Relatorio-Contas-21-22_assinado (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'portimonense-pt-relatorio-contas-23-24-assinado': {
+    id:'portimonense-pt-relatorio-contas-23-24-assinado', clubId:'portimonense-pt',
+    title:'Portimonense Futebol, SAD — Relatorio-Contas-23-24_assinado (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
