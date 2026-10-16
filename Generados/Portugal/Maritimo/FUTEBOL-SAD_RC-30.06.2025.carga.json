@@ -1,17 +1,14 @@
 {
  "pdf": "Clubes/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.pdf",
- "generado": "2026-10-16T02:33:30.182Z",
+ "generado": "2026-10-16T02:49:45.309Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (maritimo-pt)"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
   }
  ],
  "avisos": [
+  "\"Televisión\" en 0: real, por ajuste manual (2026-10-16, El documento no tiene ingresos de TV (subagente Sonnet, revisado por Claude).)",
   "gastos: ningún total impreso igual a la suma de las líneas (-8.883706); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
  ],
@@ -537,6 +534,16 @@
    "reemplazaLinea": 1487,
    "motivo": "Fila de la nota de Outros rendimentos (suma 4.444.586) que la extracción puso como gasto (−112.880); es ingreso (to-do 237 w).",
    "evidencia": "FUTEBOL-SAD_RC-30.06.2025.md L1487",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "El documento no tiene ingresos de TV (subagente Sonnet, revisado por Claude).",
+   "evidencia": "Maritimo/FUTEBOL-SAD_RC-30.06.2025.md: Rédito: publicidade, bilheteira y Outros (L1464-1469); en la 2ª Liga 'redução das receitas dos direitos de transmissão' sin importe (L628)",
    "autor": "Claude",
    "fecha": "2026-10-16"
   }
@@ -1191,12 +1198,6 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"Vendas e serviços prestados\")": "gastos con signo",
@@ -1283,7 +1284,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 10,
   "lineasGasto": 31,
   "metaFilas": 2,

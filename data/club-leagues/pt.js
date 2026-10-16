@@ -25,4 +25,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'felgueiras-pt': { 2024: 'pt-liga3' },
   'gilvicente-pt': { 2025: 'pt-primeiraliga' },
   'leixoes-pt': { 2025: 'pt-ligaportugal2' },
+  'maritimo-pt': { 2025: 'pt-ligaportugal2' },
 });

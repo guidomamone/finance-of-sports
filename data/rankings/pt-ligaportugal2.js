@@ -4,6 +4,9 @@ window.RANKINGS["pt-ligaportugal2"] = {
   2025: {
     leagueSize: null,
     clubs: [
+      { id:"maritimo-pt", revenue:7.812, reportType:"official_balance_sheet",
+        sourceId:"maritimo-pt-futebol-sad-rc-30-06-2025",
+        mix:[["Comercial / Sponsors",0.94],["Estadio",0.205],["Premios por competencias",0.015],["Venta de Jugadores",3.787],["Otros ingresos",2.865]] },
       { id:"vizela-pt", revenue:7.565, reportType:"official_balance_sheet",
         sourceId:"vizela-pt-relatorio-e-contas-2024-25-fcv",
         mix:[["Cuotas Sociales",0.039],["Comercial / Sponsors",0.325],["Estadio",0.027],["Televisión",0.527],["Premios por competencias",0.022],["Venta de Jugadores",5.362],["Otros ingresos",1.262]] },

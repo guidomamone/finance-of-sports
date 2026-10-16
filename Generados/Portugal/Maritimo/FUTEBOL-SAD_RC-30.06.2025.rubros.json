@@ -3,7 +3,7 @@
   "pdf": "Clubes/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.pdf",
   "club": "maritimo",
   "year": 2025,
-  "generatedAt": "2026-10-16T02:25:06.580Z",
+  "generatedAt": "2026-10-16T02:44:08.188Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -74,7 +74,7 @@
       "values": [
         0.012719
       ],
-      "glosa": "Fondos LPFP y FPF (Copa de la Liga / Copa de Portugal)"
+      "glosa": "Asignaciones LPFP y FPF (Copa de la Liga / Copa de Portugal)"
     },
     {
       "label": "Mecanismo de Solidariedade FIFA",
@@ -214,7 +214,7 @@
       "values": [
         0.036837
       ],
-      "glosa": "Comunicación"
+      "glosa": "Comunicaciones"
     },
     {
       "label": "Limpeza, higiene e conforto",
@@ -244,7 +244,7 @@
       "values": [
         0.012854
       ],
-      "glosa": "Gastos contenciosos y notariales"
+      "glosa": "Servicios jurídicos y notariales"
     },
     {
       "label": "Ferramentas e utensílios de desgaste rápido",
@@ -284,7 +284,7 @@
       "values": [
         0.000038
       ],
-      "glosa": "Artículos de obsequio"
+      "glosa": "Artículos promocionales y obsequios"
     },
     {
       "label": "Atletas",
@@ -324,7 +324,7 @@
       "values": [
         0.343197
       ],
-      "glosa": "Órganos de gobierno"
+      "glosa": "Órganos de administración"
     },
     {
       "label": "Seguros",
@@ -344,7 +344,7 @@
       "values": [
         0.191967
       ],
-      "glosa": "Otros costes"
+      "glosa": "Otros gastos"
     },
     {
       "label": "Imparidade de dívidas a receber (perdas/reversões)",
@@ -354,7 +354,7 @@
       "values": [
         -0.001936
       ],
-      "glosa": "Deterioro de créditos por cobrar (pérdidas/reversiones)"
+      "glosa": "Deterioro de cuentas a cobrar (pérdidas/reversiones)"
     },
     {
       "label": "Provisões (aumentos/reduções)",
@@ -364,7 +364,7 @@
       "values": [
         -1.706167
       ],
-      "glosa": "Provisiones (dotaciones/reversiones)"
+      "glosa": "Provisiones (aumentos/reducciones)"
     },
     {
       "label": "Impostos",
@@ -394,7 +394,7 @@
       "values": [
         0.054501
       ],
-      "glosa": "Ajustes de ejercicios anteriores"
+      "glosa": "Correcciones relativas a ejercicios anteriores"
     },
     {
       "label": "Outros",
@@ -414,7 +414,7 @@
       "values": [
         0.484697
       ],
-      "glosa": "Gastos/reversiones por amortización y depreciación"
+      "glosa": "Gastos/reversiones por depreciación y amortización"
     }
   ]
 }
