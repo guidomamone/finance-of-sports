@@ -126,6 +126,10 @@ con los que no están en los pasos de arriba.
    cargar (sin estado de resultados, parcial) va a `documentos-descartados.txt` o `documentos-parciales.txt` con su ok, para que deje de
    contar como frenado.
 
+239. EL LOTE SALTEA UN DOCUMENTO POR UNA PROPUESTA VIEJA (mejora de script, sin aplicar; 2026-10-16). `lote.mjs` decide "ya en el sitio" con
+   el clubId y el año del `.carga.json` de la última propuesta, aunque después se haya puesto un ajuste `anio` que cambia el año. Caso:
+   Sporting 2001 (relatorio-contas-2000.pdf): la propuesta vieja decía 2000 (por el nombre del archivo), 2000 está cargado, y el lote lo
+   salteaba; se destrabó moviendo el `.carga.json` viejo. Escalón posible: si el documento tiene ajuste `anio`, el año sale del ajuste.
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
     e) `perimetro-a2` le pasa a la IA hasta ~42.000 tokens de entrada para contestar ~130 (Olympiacos 2018: US$ 0,17 por llamada); en
