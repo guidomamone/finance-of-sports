@@ -118,6 +118,82 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2024–25 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Paços de Ferreira".
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Paços de Ferreira/contas22_23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Paços de Ferreira/contas22_23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Vendas de Mercadorias (Merchandising) | pág. 15, precedente |
+| 2 | Publicidade | pág. 15, precedente |
+| 3 | Direitos televisivos | pág. 15, precedente |
+| 4 | Bilhetes, camarotes e cativos | pág. 15, precedente |
+| 5 | Competições | pág. 15, precedente |
+| 6 | Outros | pág. 15, precedente |
+| 7 | Subsídios Estado | pág. 16, Jev 0.99 |
+| 8 | Subsídios formação UEFA | pág. 16, precedente |
+| 9 | Subsídios Taça de Portugal | pág. 16, precedente |
+| 10 | Outros | pág. 16, precedente |
+| 11 | Cedências jogadores | pág. 15, precedente |
+| 12 | Lucros Placard | pág. 15, precedente |
+| 13 | Outros | pág. 15, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Custo das mercadorias vendidas e das matérias consumidas | pág. 2, precedente |
+| 2 | Subcontratos | pág. 18, precedente |
+| 3 | Trabalhos Especializados | pág. 18, precedente |
+| 4 | Publicidade e Propaganda | pág. 18, precedente |
+| 5 | Vigilância e Segurança | pág. 18, precedente |
+| 6 | Honorários | pág. 18, precedente |
+| 7 | Comissões | pág. 18, precedente |
+| 8 | Conservação e Reparação | pág. 18, precedente |
+| 9 | Liga | pág. 18, precedente |
+| 10 | Ferramentas e utensílios desgaste rápido | pág. 18, precedente |
+| 11 | Material de Escritório | pág. 18, precedente |
+| 12 | Eletricidade | pág. 18, precedente |
+| 13 | Combustíveis | pág. 18, precedente |
+| 14 | Água | pág. 18, precedente |
+| 15 | Outros | pág. 18, precedente |
+| 16 | Deslocações e Estadas | pág. 18, precedente |
+| 17 | Rendas e alugueres | pág. 18, precedente |
+| 18 | Comunicação | pág. 18, precedente |
+| 19 | Seguros | pág. 18, precedente |
+| 20 | Contencioso e notariado | pág. 18, precedente |
+| 21 | Limpeza, higiene e conforto | pág. 18, precedente |
+| 22 | Outros Serviços | pág. 18, precedente |
+| 23 | Jogadores | pág. 17, precedente |
+| 24 | Treinadores | pág. 17, precedente |
+| 25 | Pessoal Diverso | pág. 17, precedente |
+| 26 | Encargos sobre remunerações | pág. 17, precedente |
+| 27 | Seguros de acidentes de trabalho e de doenças profissionais | pág. 17, precedente |
+| 28 | Outros gastos com o pessoal | pág. 17, precedente |
+| 29 | Impostos | pág. 19, precedente |
+| 30 | Abales | pág. 19, ? 0.6 |
+| 31 | Outros | pág. 19, precedente |
+| 32 | Cedência de Créditos IBB | pág. 19, Jev 0.96 |
+| 33 | Gastos/reversões de depreciação e de amortização | pág. 2, precedente |
+
+### Meta
+
+```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): anio = 2023. El nombre del archivo no da el año (o lo da mal: '202223' se lee 2022); el ejercicio cierra el 30/06/2023 según el registro (periodo.cierre).
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2022–23 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Paços de Ferreira".
+```
+
 ## 2020
 
 ### Ingresos
@@ -190,4 +266,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### pacosdeferreira-pt-contas22-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Paços de Ferreira/contas22_23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
