@@ -28,3 +28,5 @@ Reintentar 2020/21 con más timestamps de Wayback (CDX completo, no solo el snap
 se retoma.
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2025 desde `Clubes/Portugal/Estoril Praia/relatorio-contas-2024-25.pdf` (sourceId `estorilpraia-pt-relatorio-contas-2024-25`).
