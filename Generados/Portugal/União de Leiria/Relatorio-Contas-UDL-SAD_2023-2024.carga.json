@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.pdf",
- "generado": "2026-10-16T02:33:31.169Z",
+ "generado": "2026-10-16T02:49:46.030Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (uniaodeleiria-pt)"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
   }
  ],
  "avisos": [
@@ -32,7 +28,7 @@
    },
    {
     "rawLabel": "Prestação de serviços",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "lump_football_operations",
     "amountNative": 1.546109,
     "disclosureLevel": "aggregated",
     "_pag": 19,
@@ -263,6 +259,19 @@
      "value": -0.036063
     }
    ],
+   "incluidoEn": {
+    "matchday_competition": "lump_football_operations",
+    "stadium_other": "lump_football_operations",
+    "season_tickets": "lump_football_operations"
+   },
+   "sinDesglose": [
+    {
+     "renglon": "Prestação de serviços",
+     "lado": "revenue",
+     "importe": 1.546109,
+     "motivo": "Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): 'Prestação de serviços' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense."
+    }
+   ],
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 1.696455,
@@ -290,7 +299,51 @@
  },
  "clubId": "uniaodeleiria-pt",
  "year": 2024,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.pdf",
+   "campo": "incluye",
+   "valor": "matchday_competition",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "motivo": "La bilheteira está dentro de 'Prestação de serviços' sin desglose (subagente Sonnet, revisado por Claude).",
+   "evidencia": "União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.md, nota de réditos",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.pdf",
+   "campo": "incluye",
+   "valor": "stadium_other",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "motivo": "La bilheteira está dentro de 'Prestação de serviços' sin desglose (subagente Sonnet, revisado por Claude).",
+   "evidencia": "União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.md, nota de réditos",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.pdf",
+   "campo": "incluye",
+   "valor": "season_tickets",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "motivo": "La bilheteira está dentro de 'Prestação de serviços' sin desglose (subagente Sonnet, revisado por Claude).",
+   "evidencia": "União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.md, nota de réditos",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "El documento no tiene ingresos de TV (subagente Sonnet, revisado por Claude).",
+   "evidencia": "União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.md: la composición de Prestação de serviços (L651) enumera patrocínios, bilheteira, apostas y apoios FPF, sin TV",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "seleccion": {
   "filas": 24,
   "notasUsadas": [],
@@ -319,12 +372,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Vendas e Prestação de serviços\")",
    "signoFijo": 1.546109,
-   "cat": "other_income",
+   "cat": "lump_football_operations",
    "conf": 1,
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): ver lote 81 (Oliveirense, Paços, Torreense, UdL, Vizela).",
+   "notaGuido": "Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): 'Prestação de serviços' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense.",
    "destino": "revenue",
    "amountNative": 1.546109
   },
@@ -658,16 +711,6 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"Vendas e Prestação de serviços\")": "gastos con signo",
@@ -758,7 +801,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 6,
   "lineasGasto": 16,
   "metaFilas": 2,

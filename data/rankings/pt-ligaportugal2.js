@@ -43,6 +43,10 @@ window.RANKINGS["pt-ligaportugal2"] = {
       { id:"nacional-pt", revenue:3.107, reportType:"official_balance_sheet",
         sourceId:"nacional-pt-relatorio-contas-2023-24",
         mix:[["Comercial / Sponsors",0.315],["Estadio",0.052],["Televisión",0.536],["Premios por competencias",0.452],["Venta de Jugadores",0.001],["Otros ingresos",1.751]] },
+      { id:"uniaodeleiria-pt", revenue:1.817, reportType:"official_balance_sheet",
+        sourceId:"uniaodeleiria-pt-relatorio-contas-udl-sad-2023-2024",
+        mix:[["Comercial / Sponsors",0.105],["Fútbol profesional (sin desglosar por la fuente)",1.656],["Otros ingresos",0.056]],
+        incluidos:[["Estadio","Fútbol profesional (sin desglosar por la fuente)"]] },
     ],
   },
   2023: {

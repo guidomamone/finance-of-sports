@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 255 clubes, 867 ejercicios, 18 países.
+TOTAL: 256 clubes, 868 ejercicios, 18 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -271,7 +271,7 @@ NL (4)
 PERÚ (1)
   Alianza Lima  6 ejercicios (2019 a 2024), balance, PEN
 
-PT (29)
+PT (30)
   Académica           1 ejercicio (2023/2024), balance, EUR, sin deuda/caja
   Academico Viseu     1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
   Alverca             4 ejercicios (2021/2022 a 2024/2025), balance, EUR, sin deuda/caja
@@ -299,6 +299,7 @@ PT (29)
   Sporting CP         13 ejercicios (2010/2011, 2011/2012, 2012/2013, 2013/2014, 2014/2015, 2015/2016, 2016/2017, 2018/2019, 2019/2020, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
   Tondela             1 ejercicio (2020/2021), balance, EUR, sin deuda/caja
   Torreense           1 ejercicio (2023/2024), balance, EUR, sin deuda/caja
+  União de Leiria     1 ejercicio (2023/2024), balance, EUR, sin deuda/caja
   Vitória Guimarães   4 ejercicios (2020/2021, 2021/2022, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
   Vizela              1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
 

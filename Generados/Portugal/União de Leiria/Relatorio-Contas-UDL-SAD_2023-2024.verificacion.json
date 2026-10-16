@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.pdf",
  "md": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.md",
- "generado": "2026-10-16T02:25:06.757Z",
+ "generado": "2026-10-16T02:44:08.360Z",
  "estado": "ok",
  "clubId": null,
  "year": 2024,
@@ -11,7 +11,51 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.pdf",
+   "campo": "incluye",
+   "valor": "matchday_competition",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "motivo": "La bilheteira está dentro de 'Prestação de serviços' sin desglose (subagente Sonnet, revisado por Claude).",
+   "evidencia": "União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.md, nota de réditos",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.pdf",
+   "campo": "incluye",
+   "valor": "stadium_other",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "motivo": "La bilheteira está dentro de 'Prestação de serviços' sin desglose (subagente Sonnet, revisado por Claude).",
+   "evidencia": "União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.md, nota de réditos",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.pdf",
+   "campo": "incluye",
+   "valor": "season_tickets",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "motivo": "La bilheteira está dentro de 'Prestação de serviços' sin desglose (subagente Sonnet, revisado por Claude).",
+   "evidencia": "União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.md, nota de réditos",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "El documento no tiene ingresos de TV (subagente Sonnet, revisado por Claude).",
+   "evidencia": "União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.md: la composición de Prestação de serviços (L651) enumera patrocínios, bilheteira, apostas y apoios FPF, sin TV",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {

@@ -30,4 +30,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'pacosdeferreira-pt': { 2025: 'pt-ligaportugal2' },
   'portimonense-pt': { 2025: 'pt-ligaportugal2' },
   'torreense-pt': { 2024: 'pt-ligaportugal2' },
+  'uniaodeleiria-pt': { 2024: 'pt-ligaportugal2' },
 });

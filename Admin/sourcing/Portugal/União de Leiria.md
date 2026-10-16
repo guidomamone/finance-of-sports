@@ -14,3 +14,5 @@
 - Documentos hallados y bajados del sitio del club; no se verificó que cada uno traiga cuenta de resultados. Revisar la entidad (club/sociedad/koncern) de cada PDF antes de cargar.
 - Relatório e Contas 2022/23 a 2024/25.
 - Último chequeo: 2026-10-08.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2024 desde `Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2023-2024.pdf` (sourceId `uniaodeleiria-pt-relatorio-contas-udl-sad-2023-2024`).
