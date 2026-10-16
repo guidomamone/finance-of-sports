@@ -1,23 +1,14 @@
 {
  "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2024-25.pdf",
- "generado": "2026-10-16T02:49:45.524Z",
+ "generado": "2026-10-16T03:18:44.533Z",
  "frena": [
   {
-   "etapa": "tie-out-resultado",
-   "motivo": "resultado: ingresos 9.25186 + gastos -8.565081 + netInterest -0.158771 + tax -0.184148 = 0.34386 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" 0.570265)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "ingresos: las filas suman 9.25186 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "gastos: las filas suman -8.413879 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
+   "etapa": "categoria-en-cola",
+   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"LPFP Quartos de Final/Allianz Cup\" -> competition_bonus 0.75; \"Correções relativas a períodos anteriore\" -> other_income 0"
   }
  ],
  "avisos": [
-  "materialidad: \"LPFP Quartos de Final/Allianz Cup\" va como competition_bonus con 0.75 (las dudas de ingresos suman 0.63% de su lado)",
-  "1 fila(s) con categoría de un lado y el documento del otro: \"Correções relativas a períodos anteriore\" -> exceptional_items"
+  "gastos: ningún total impreso igual a la suma de las líneas (-8.413879); queda la suma, verificada por el resultado del ejercicio"
  ],
  "ejercicio": {
   "clubId": "nacional-pt",
@@ -101,9 +92,9 @@
     "amountNative": 0.058125,
     "disclosureLevel": "aggregated",
     "_pag": 22,
-    "_escalon": "materialidad",
+    "_escalon": 2,
     "_conf": 0.75,
-    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.63% (≤ 1%) y esta tiene 0.75"
+    "_fuenteCat": "categorias.json"
    },
    {
     "rawLabel": "Prémios Federação Portuguesa de Futebol",
@@ -121,8 +112,8 @@
     "amountNative": 0.00005,
     "disclosureLevel": "aggregated",
     "_pag": 22,
-    "_escalon": 1,
-    "_conf": 0.96,
+    "_escalon": 0,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
    {
@@ -131,7 +122,7 @@
     "amountNative": 0.1,
     "disclosureLevel": "aggregated",
     "_pag": 22,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -154,19 +145,19 @@
     "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Correções relativas a períodos anteriores",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.113202,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 2,
+    "_conf": 0,
+    "_fuenteCat": "categorias.json decía exceptional_items, del otro lado que la fila: se propone la genérica de su lado"
    }
   ],
   "expenseLines": [
-   {
-    "rawLabel": "Correções relativas a períodos anteriores",
-    "normalizedCategory": "exceptional_items",
-    "amountNative": -0.113202,
-    "disclosureLevel": "aggregated",
-    "_pag": 22,
-    "_escalon": 0,
-    "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
-   },
    {
     "rawLabel": "Trabalhos especializados",
     "normalizedCategory": "admin_general_expense",
@@ -558,11 +549,21 @@
    "assetSales": 0,
    "netInterest": -0.158771,
    "tax": -0.184148,
+   "extraRows": [
+    {
+     "label": "Juros e gastos similares suportados",
+     "value": -0.158771
+    },
+    {
+     "label": "Imposto sobre rendimento do período",
+     "value": -0.184148
+    }
+   ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": null,
-   "officialTotalExpenses": null,
-   "officialPAT": null
+   "officialTotalRevenue": 9.365062,
+   "officialTotalExpenses": 8.413879,
+   "officialPAT": 0.570265
   },
   "source": {
    "id": "nacional-pt-relatorio-contas-2024-25",
@@ -585,7 +586,22 @@
  },
  "clubId": "nacional-pt",
  "year": 2025,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2024-25.pdf",
+   "campo": "fila",
+   "valor": "113.202",
+   "linea": 842,
+   "etiqueta": "Correções relativas a períodos anteriores",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 842,
+   "motivo": "Fila de la nota 15.2 Outros rendimentos que la extracción puso como gasto (−113.202); es ingreso. Con el cambio los ingresos dan 9.365.062 (impreso 6.067.662 + 2.235.880 + 1.061.519) y el resultado 570.264 (impreso 570.265). Mismo patrón que Nacional 2024 (TODO 237 f) y Santa Clara (w).",
+   "evidencia": "relatorio-contas-2024-25.md L842, estado L132-146",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "seleccion": {
   "filas": 54,
   "notasUsadas": [],
@@ -707,10 +723,10 @@
    "signoFijo": 0.058125,
    "cat": "competition_bonus",
    "conf": 0.75,
-   "escalon": "materialidad",
-   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.63% (≤ 1%) y esta tiene 0.75",
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
    "enLista": true,
-   "enCola": false,
+   "enCola": true,
    "destino": "revenue",
    "amountNative": 0.058125
   },
@@ -730,24 +746,6 @@
    "amountNative": 0.004878
   },
   {
-   "label": "Correções relativas a períodos anteriores",
-   "page": 22,
-   "native": 0.113202,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
-   "signoFijo": 0.113202,
-   "cat": "exceptional_items",
-   "conf": 1,
-   "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
-   "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet, seguridad media-alta; revisado por Claude): corrección de ejercicios anteriores, ingreso: el ingreso extraordinario va a exceptional_items (CONVENCIONES-DATOS) [relatorio-contas-2023-24.md L793]",
-   "destino": "expense",
-   "ladoContradictorio": true,
-   "amountNative": -0.113202
-  },
-  {
    "label": "Cedências de jogadores",
    "page": 22,
    "native": 0.00005,
@@ -755,8 +753,8 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 0.00005,
    "cat": "player_sales",
-   "conf": 0.96,
-   "escalon": 1,
+   "conf": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
@@ -771,7 +769,7 @@
    "signoFijo": 0.1,
    "cat": "player_sales",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
@@ -807,6 +805,23 @@
    "enLista": true,
    "destino": "revenue",
    "amountNative": 0.050585
+  },
+  {
+   "label": "Correções relativas a períodos anteriores",
+   "page": 22,
+   "native": 0.113202,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.113202,
+   "cat": "other_income",
+   "conf": 0,
+   "escalon": 2,
+   "fuenteCat": "categorias.json decía exceptional_items, del otro lado que la fila: se propone la genérica de su lado",
+   "enLista": true,
+   "ladoRechazado": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 0.113202
   },
   {
    "label": "Trabalhos especializados",
@@ -1419,21 +1434,37 @@
   "porTabla": {
    "verificacion (nota que desglosa \"Vendas e serviços prestados\")": "gastos con signo",
    "verificacion (estado)": "gastos sin signo (se invierten)",
-   "verificacion (nota que desglosa \"Outros rendimentos\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Outros rendimentos\")": "gastos con signo",
+   "verificacion (ajuste manual)": "gastos con signo",
    "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Gastos com o pessoal\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Outros gastos\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 9.25186,
+  "revSum": 9.365062,
   "expSum": -8.413879,
-  "officialTotalRevenue": null,
-  "officialTotalExpenses": null,
-  "officialPAT": null,
-  "verificacion": {}
+  "officialTotalRevenue": 9.365062,
+  "officialTotalExpenses": 8.413879,
+  "officialPAT": 0.570265,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 0.570265,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 9.365062
+  }
  },
  "liga": {
   "valor": "pt-primeiraliga",
@@ -1484,9 +1515,9 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
-  "lineasIngreso": 13,
-  "lineasGasto": 39,
+  "motivos": 1,
+  "lineasIngreso": 14,
+  "lineasGasto": 38,
   "metaFilas": 2,
   "excluidas": 0
  }

@@ -1,478 +1,530 @@
 {
- "md": "Clubes/Portugal/Nacional/relatorio-contas-2024-25.md",
- "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2024-25.pdf",
- "club": "nacional-pt",
- "year": 2025,
- "generatedAt": "2026-10-16T03:02:56.526Z",
- "origen": "verificar.mjs (proceso nuevo, Versión 324)",
- "rubros": [
-  {
-   "label": "Bilhetes, Camarotes",
-   "lado": "revenue",
-   "page": 21,
-   "section": "nota que desglosa \"Vendas e serviços prestados\"",
-   "values": [
-    0.164063
-   ]
-  },
-  {
-   "label": "Publicidade",
-   "lado": "revenue",
-   "page": 21,
-   "section": "nota que desglosa \"Vendas e serviços prestados\"",
-   "values": [
-    0.3336
-   ]
-  },
-  {
-   "label": "Direitos Televisivos",
-   "lado": "revenue",
-   "page": 21,
-   "section": "nota que desglosa \"Vendas e serviços prestados\"",
-   "values": [
-    5.57
-   ]
-  },
-  {
-   "label": "Subsídios à exploração",
-   "lado": "revenue",
-   "page": 4,
-   "section": "estado",
-   "values": [
-    2.23588
-   ]
-  },
-  {
-   "label": "Prémios - LPFP Apostas Desportivas Placard",
-   "lado": "revenue",
-   "page": 22,
-   "section": "nota que desglosa \"Outros rendimentos\"",
-   "values": [
-    0.279038
-   ]
-  },
-  {
-   "label": "Prémios Federação Portuguesa de Futebol",
-   "lado": "revenue",
-   "page": 22,
-   "section": "nota que desglosa \"Outros rendimentos\"",
-   "values": [
-    0.011325
-   ]
-  },
-  {
-   "label": "Mecanismo de solidariedade da UEFA",
-   "lado": "revenue",
-   "page": 22,
-   "section": "nota que desglosa \"Outros rendimentos\"",
-   "values": [
-    0.2251
-   ]
-  },
-  {
-   "label": "LPFP Quartos de Final/Allianz Cup",
-   "lado": "revenue",
-   "page": 22,
-   "section": "nota que desglosa \"Outros rendimentos\"",
-   "values": [
-    0.058125
-   ]
-  },
-  {
-   "label": "Prémios Federação Portuguesa de Futebol",
-   "lado": "revenue",
-   "page": 22,
-   "section": "nota que desglosa \"Outros rendimentos\"",
-   "values": [
-    0.004878
-   ]
-  },
-  {
-   "label": "Cedências de jogadores",
-   "lado": "revenue",
-   "page": 22,
-   "section": "nota que desglosa \"Outros rendimentos\"",
-   "values": [
-    0.00005
-   ]
-  },
-  {
-   "label": "Venda de Jogadores",
-   "lado": "revenue",
-   "page": 22,
-   "section": "nota que desglosa \"Outros rendimentos\"",
-   "values": [
-    0.1
-   ]
-  },
-  {
-   "label": "Comparticipação tarifa residente",
-   "lado": "revenue",
-   "page": 22,
-   "section": "nota que desglosa \"Outros rendimentos\"",
-   "values": [
-    0.219216
-   ]
-  },
-  {
-   "label": "Outros não especificados",
-   "lado": "revenue",
-   "page": 22,
-   "section": "nota que desglosa \"Outros rendimentos\"",
-   "values": [
-    0.050585
-   ]
-  },
-  {
-   "label": "Correções relativas a períodos anteriores",
-   "lado": "revenue",
-   "page": 22,
-   "section": "ajuste manual",
-   "values": [
-    0.113202
-   ]
-  },
-  {
-   "label": "Trabalhos especializados",
-   "lado": "expense",
-   "page": 23,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    0.178239
-   ]
-  },
-  {
-   "label": "Vigilância e segurança",
-   "lado": "expense",
-   "page": 23,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    0.124418
-   ]
-  },
-  {
-   "label": "Honorários",
-   "lado": "expense",
-   "page": 23,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    0.042223
-   ]
-  },
-  {
-   "label": "Comissões",
-   "lado": "expense",
-   "page": 23,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    0.007
-   ]
-  },
-  {
-   "label": "Conservação e reparação",
-   "lado": "expense",
-   "page": 23,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    0.124091
-   ]
-  },
-  {
-   "label": "Serviços bancários",
-   "lado": "expense",
-   "page": 23,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    0.005802
-   ]
-  },
-  {
-   "label": "Outros",
-   "lado": "expense",
-   "page": 23,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    0.082489
-   ]
-  },
-  {
-   "label": "Outros",
-   "lado": "expense",
-   "page": 23,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    0.073769
-   ]
-  },
-  {
-   "label": "Outros",
-   "lado": "expense",
-   "page": 23,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    0.001909
-   ]
-  },
-  {
-   "label": "Deslocações e estadas",
-   "lado": "expense",
-   "page": 23,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    0.94394
-   ]
-  },
-  {
-   "label": "Outros",
-   "lado": "expense",
-   "page": 23,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    0.003353
-   ]
-  },
-  {
-   "label": "Rendas e alugueres",
-   "lado": "expense",
-   "page": 23,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    0.12
-   ]
-  },
-  {
-   "label": "Comunicação",
-   "lado": "expense",
-   "page": 23,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    0.013422
-   ]
-  },
-  {
-   "label": "Contencioso e notariado",
-   "lado": "expense",
-   "page": 23,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    0.015372
-   ]
-  },
-  {
-   "label": "Limpeza, higiene e conforto",
-   "lado": "expense",
-   "page": 23,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    0.005966
-   ]
-  },
-  {
-   "label": "Outros serviços",
-   "lado": "expense",
-   "page": 23,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "values": [
-    0.014593
-   ]
-  },
-  {
-   "label": "Remunerações órgãos sociais",
-   "lado": "expense",
-   "page": 24,
-   "section": "nota que desglosa \"Gastos com o pessoal\"",
-   "values": [
-    0.226832
-   ]
-  },
-  {
-   "label": "Remunerações do Pessoal - Funcionários",
-   "lado": "expense",
-   "page": 24,
-   "section": "nota que desglosa \"Gastos com o pessoal\"",
-   "values": [
-    0.429267
-   ]
-  },
-  {
-   "label": "Remunerações do Pessoal - Jogadores",
-   "lado": "expense",
-   "page": 24,
-   "section": "nota que desglosa \"Gastos com o pessoal\"",
-   "values": [
-    3.917375
-   ]
-  },
-  {
-   "label": "Remunerações do Pessoal - Treinadores",
-   "lado": "expense",
-   "page": 24,
-   "section": "nota que desglosa \"Gastos com o pessoal\"",
-   "values": [
-    0.423953
-   ]
-  },
-  {
-   "label": "Indemnização para despedimento",
-   "lado": "expense",
-   "page": 24,
-   "section": "nota que desglosa \"Gastos com o pessoal\"",
-   "values": [
-    0.028456
-   ]
-  },
-  {
-   "label": "Enc. s/rem.-orgãos sociais",
-   "lado": "expense",
-   "page": 24,
-   "section": "nota que desglosa \"Gastos com o pessoal\"",
-   "values": [
-    0.053354
-   ]
-  },
-  {
-   "label": "Enc. s/rem.-pessoal - Funcionários",
-   "lado": "expense",
-   "page": 24,
-   "section": "nota que desglosa \"Gastos com o pessoal\"",
-   "values": [
-    0.081611
-   ]
-  },
-  {
-   "label": "Enc. s/rem.-pessoal - Treinadores",
-   "lado": "expense",
-   "page": 24,
-   "section": "nota que desglosa \"Gastos com o pessoal\"",
-   "values": [
-    0.080601
-   ]
-  },
-  {
-   "label": "Enc. s/rem.-pessoal - Jogadores",
-   "lado": "expense",
-   "page": 24,
-   "section": "nota que desglosa \"Gastos com o pessoal\"",
-   "values": [
-    0.086977
-   ]
-  },
-  {
-   "label": "Seg.ac.trb - Jogadores",
-   "lado": "expense",
-   "page": 24,
-   "section": "nota que desglosa \"Gastos com o pessoal\"",
-   "values": [
-    0.240454
-   ]
-  },
-  {
-   "label": "Gastos de ação social",
-   "lado": "expense",
-   "page": 24,
-   "section": "nota que desglosa \"Gastos com o pessoal\"",
-   "values": [
-    0.001333
-   ]
-  },
-  {
-   "label": "Outros Custos com Pessoal - Jogadores",
-   "lado": "expense",
-   "page": 24,
-   "section": "nota que desglosa \"Gastos com o pessoal\"",
-   "values": [
-    0.137913
-   ]
-  },
-  {
-   "label": "Outros Custos com Pessoal - Outros",
-   "lado": "expense",
-   "page": 24,
-   "section": "nota que desglosa \"Gastos com o pessoal\"",
-   "values": [
-    0.001187
-   ]
-  },
-  {
-   "label": "Provisões (aumentos/reduções)",
-   "lado": "expense",
-   "page": 4,
-   "section": "estado",
-   "values": [
-    0.127112
-   ]
-  },
-  {
-   "label": "Impostos",
-   "lado": "expense",
-   "page": 25,
-   "section": "nota que desglosa \"Outros gastos\"",
-   "values": [
-    0.0008
-   ]
-  },
-  {
-   "label": "Correções relativas a períodos anteriores",
-   "lado": "expense",
-   "page": 25,
-   "section": "nota que desglosa \"Outros gastos\"",
-   "values": [
-    0.038
-   ]
-  },
-  {
-   "label": "Quotizações",
-   "lado": "expense",
-   "page": 25,
-   "section": "nota que desglosa \"Outros gastos\"",
-   "values": [
-    0.009226
-   ]
-  },
-  {
-   "label": "Transferências de jogadores",
-   "lado": "expense",
-   "page": 25,
-   "section": "nota que desglosa \"Outros gastos\"",
-   "values": [
-    0.426374
-   ]
-  },
-  {
-   "label": "Regularização Quotas TV (Liga)",
-   "lado": "expense",
-   "page": 25,
-   "section": "nota que desglosa \"Outros gastos\"",
-   "values": [
-    0.093359
-   ]
-  },
-  {
-   "label": "Juros mora",
-   "lado": "expense",
-   "page": 25,
-   "section": "nota que desglosa \"Outros gastos\"",
-   "values": [
-    0.185352
-   ]
-  },
-  {
-   "label": "Outros não especificados",
-   "lado": "expense",
-   "page": 25,
-   "section": "nota que desglosa \"Outros gastos\"",
-   "values": [
-    0.102007
-   ]
-  },
-  {
-   "label": "Gastos/reversões de depreciação e de amortização",
-   "lado": "expense",
-   "page": 4,
-   "section": "estado",
-   "values": [
-    0.00375
-   ]
-  }
- ]
+  "md": "Clubes/Portugal/Nacional/relatorio-contas-2024-25.md",
+  "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2024-25.pdf",
+  "club": "nacional-pt",
+  "year": 2025,
+  "generatedAt": "2026-10-16T03:04:20.586Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Bilhetes, Camarotes",
+      "lado": "revenue",
+      "page": 21,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        0.164063
+      ],
+      "glosa": "Entradas y palcos"
+    },
+    {
+      "label": "Publicidade",
+      "lado": "revenue",
+      "page": 21,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        0.3336
+      ],
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Direitos Televisivos",
+      "lado": "revenue",
+      "page": 21,
+      "section": "nota que desglosa \"Vendas e serviços prestados\"",
+      "values": [
+        5.57
+      ],
+      "glosa": "Derechos de televisión"
+    },
+    {
+      "label": "Subsídios à exploração",
+      "lado": "revenue",
+      "page": 4,
+      "section": "estado",
+      "values": [
+        2.23588
+      ],
+      "glosa": "Subvenciones a la explotación"
+    },
+    {
+      "label": "Prémios - LPFP Apostas Desportivas Placard",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Outros rendimentos\"",
+      "values": [
+        0.279038
+      ],
+      "glosa": "Premios - LPFP Apuestas Deportivas Placard"
+    },
+    {
+      "label": "Prémios Federação Portuguesa de Futebol",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Outros rendimentos\"",
+      "values": [
+        0.011325
+      ],
+      "glosa": "Premios Federación Portuguesa de Fútbol"
+    },
+    {
+      "label": "Mecanismo de solidariedade da UEFA",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Outros rendimentos\"",
+      "values": [
+        0.2251
+      ],
+      "glosa": "Mecanismo de solidaridad de la UEFA"
+    },
+    {
+      "label": "LPFP Quartos de Final/Allianz Cup",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Outros rendimentos\"",
+      "values": [
+        0.058125
+      ],
+      "glosa": "LPFP Cuartos de Final/Allianz Cup"
+    },
+    {
+      "label": "Prémios Federação Portuguesa de Futebol",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Outros rendimentos\"",
+      "values": [
+        0.004878
+      ],
+      "glosa": "Premios Federación Portuguesa de Fútbol"
+    },
+    {
+      "label": "Cedências de jogadores",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Outros rendimentos\"",
+      "values": [
+        0.00005
+      ],
+      "glosa": "Cesiones de jugadores"
+    },
+    {
+      "label": "Venda de Jogadores",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Outros rendimentos\"",
+      "values": [
+        0.1
+      ],
+      "glosa": "Venta de jugadores"
+    },
+    {
+      "label": "Comparticipação tarifa residente",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Outros rendimentos\"",
+      "values": [
+        0.219216
+      ],
+      "glosa": "Subvención por tarifa de residente"
+    },
+    {
+      "label": "Outros não especificados",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Outros rendimentos\"",
+      "values": [
+        0.050585
+      ],
+      "glosa": "Otros no especificados"
+    },
+    {
+      "label": "Correções relativas a períodos anteriores",
+      "lado": "revenue",
+      "page": 22,
+      "section": "ajuste manual",
+      "values": [
+        0.113202
+      ],
+      "glosa": "Correcciones relativas a ejercicios anteriores"
+    },
+    {
+      "label": "Trabalhos especializados",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.178239
+      ],
+      "glosa": "Trabajos especializados"
+    },
+    {
+      "label": "Vigilância e segurança",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.124418
+      ],
+      "glosa": "Vigilancia y seguridad"
+    },
+    {
+      "label": "Honorários",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.042223
+      ],
+      "glosa": "Honorarios"
+    },
+    {
+      "label": "Comissões",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.007
+      ],
+      "glosa": "Comisiones"
+    },
+    {
+      "label": "Conservação e reparação",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.124091
+      ],
+      "glosa": "Conservación y reparación"
+    },
+    {
+      "label": "Serviços bancários",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.005802
+      ],
+      "glosa": "Servicios bancarios"
+    },
+    {
+      "label": "Outros",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.082489
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Outros",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.073769
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Outros",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.001909
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Deslocações e estadas",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.94394
+      ],
+      "glosa": "Desplazamientos y estancias"
+    },
+    {
+      "label": "Outros",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.003353
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Rendas e alugueres",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.12
+      ],
+      "glosa": "Arrendamientos y alquileres"
+    },
+    {
+      "label": "Comunicação",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.013422
+      ],
+      "glosa": "Comunicaciones"
+    },
+    {
+      "label": "Contencioso e notariado",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.015372
+      ],
+      "glosa": "Servicios contenciosos y notariales"
+    },
+    {
+      "label": "Limpeza, higiene e conforto",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.005966
+      ],
+      "glosa": "Limpieza, higiene y confort"
+    },
+    {
+      "label": "Outros serviços",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+      "values": [
+        0.014593
+      ],
+      "glosa": "Otros servicios"
+    },
+    {
+      "label": "Remunerações órgãos sociais",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.226832
+      ],
+      "glosa": "Remuneraciones de los órganos sociales"
+    },
+    {
+      "label": "Remunerações do Pessoal - Funcionários",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.429267
+      ],
+      "glosa": "Remuneraciones del personal - Empleados"
+    },
+    {
+      "label": "Remunerações do Pessoal - Jogadores",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        3.917375
+      ],
+      "glosa": "Remuneraciones del personal - Jugadores"
+    },
+    {
+      "label": "Remunerações do Pessoal - Treinadores",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.423953
+      ],
+      "glosa": "Remuneraciones del personal - Entrenadores"
+    },
+    {
+      "label": "Indemnização para despedimento",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.028456
+      ],
+      "glosa": "Indemnizaciones por despido"
+    },
+    {
+      "label": "Enc. s/rem.-orgãos sociais",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.053354
+      ],
+      "glosa": "Cargas sociales s/remun. - Órganos sociales"
+    },
+    {
+      "label": "Enc. s/rem.-pessoal - Funcionários",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.081611
+      ],
+      "glosa": "Cargas sociales s/remun. personal - Empleados"
+    },
+    {
+      "label": "Enc. s/rem.-pessoal - Treinadores",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.080601
+      ],
+      "glosa": "Cargas sociales s/remun. personal - Entrenadores"
+    },
+    {
+      "label": "Enc. s/rem.-pessoal - Jogadores",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.086977
+      ],
+      "glosa": "Cargas sociales s/remun. personal - Jugadores"
+    },
+    {
+      "label": "Seg.ac.trb - Jogadores",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.240454
+      ],
+      "glosa": "Seguro de accidentes de trabajo - Jugadores"
+    },
+    {
+      "label": "Gastos de ação social",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.001333
+      ],
+      "glosa": "Gastos de acción social"
+    },
+    {
+      "label": "Outros Custos com Pessoal - Jogadores",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.137913
+      ],
+      "glosa": "Otros gastos de personal - Jugadores"
+    },
+    {
+      "label": "Outros Custos com Pessoal - Outros",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Gastos com o pessoal\"",
+      "values": [
+        0.001187
+      ],
+      "glosa": "Otros gastos de personal - Otros"
+    },
+    {
+      "label": "Provisões (aumentos/reduções)",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado",
+      "values": [
+        0.127112
+      ],
+      "glosa": "Provisiones (aumentos/reducciones)"
+    },
+    {
+      "label": "Impostos",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Outros gastos\"",
+      "values": [
+        0.0008
+      ],
+      "glosa": "Impuestos"
+    },
+    {
+      "label": "Correções relativas a períodos anteriores",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Outros gastos\"",
+      "values": [
+        0.038
+      ],
+      "glosa": "Correcciones relativas a ejercicios anteriores"
+    },
+    {
+      "label": "Quotizações",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Outros gastos\"",
+      "values": [
+        0.009226
+      ],
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "Transferências de jogadores",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Outros gastos\"",
+      "values": [
+        0.426374
+      ],
+      "glosa": "Transferencias de jugadores"
+    },
+    {
+      "label": "Regularização Quotas TV (Liga)",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Outros gastos\"",
+      "values": [
+        0.093359
+      ],
+      "glosa": "Regularización de cuotas de TV (Liga)"
+    },
+    {
+      "label": "Juros mora",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Outros gastos\"",
+      "values": [
+        0.185352
+      ],
+      "glosa": "Intereses de demora"
+    },
+    {
+      "label": "Outros não especificados",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Outros gastos\"",
+      "values": [
+        0.102007
+      ],
+      "glosa": "Otros no especificados"
+    },
+    {
+      "label": "Gastos/reversões de depreciação e de amortização",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado",
+      "values": [
+        0.00375
+      ],
+      "glosa": "Gastos/reversiones de amortización y depreciación"
+    }
+  ]
 }

@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 258 clubes, 892 ejercicios, 18 países.
+TOTAL: 258 clubes, 893 ejercicios, 18 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -291,7 +291,7 @@ PT (32)
   Mafra               1 ejercicio (2023/2024), balance, EUR, sin deuda/caja
   Maritimo            1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
   Moreirense          4 ejercicios (2021/2022 a 2024/2025), balance, EUR, sin deuda/caja
-  Nacional            2 ejercicios (2022/2023 a 2023/2024), balance, EUR, sin deuda/caja
+  Nacional            3 ejercicios (2021/2022 a 2023/2024), balance, EUR, sin deuda/caja
   Oliveirense         3 ejercicios (2022/2023 a 2024/2025), balance, EUR, sin deuda/caja
   Paços de Ferreira   4 ejercicios (2019/2020, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
   Portimonense        1 ejercicio (2024/2025), balance, EUR, sin deuda/caja

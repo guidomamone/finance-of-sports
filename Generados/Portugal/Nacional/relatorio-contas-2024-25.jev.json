@@ -1,7 +1,7 @@
 {
  "md": "Clubes/Portugal/Nacional/relatorio-contas-2024-25.md",
- "generatedAt": "2026-10-16T02:32:25.597Z",
- "rubrosHuella": "07459fea371b8e0abc40a490aaf0fa58b7a5e169",
+ "generatedAt": "2026-10-16T03:17:37.925Z",
+ "rubrosHuella": "08502a16595e1ca3ee3f65ce92172719c2cd1dbe",
  "rubros": [
   {
    "label": "Bilhetes, Camarotes",
@@ -31,6 +31,15 @@
    "desdeCache": true
   },
   {
+   "label": "Subsídios à exploração",
+   "lado": "revenue",
+   "page": 4,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
    "label": "Prémios - LPFP Apostas Desportivas Placard",
    "lado": "revenue",
    "page": 22,
@@ -49,12 +58,21 @@
    "desdeCache": true
   },
   {
-   "label": "Correções relativas a períodos anteriores",
-   "lado": "expense",
-   "page": 25,
-   "section": "nota que desglosa \"Outros gastos\"",
-   "choice": "exceptional_items",
-   "confidence": 1,
+   "label": "Mecanismo de solidariedade da UEFA",
+   "lado": "revenue",
+   "page": 22,
+   "section": "nota que desglosa \"Outros rendimentos\"",
+   "choice": "player_sales",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "LPFP Quartos de Final/Allianz Cup",
+   "lado": "revenue",
+   "page": 22,
+   "section": "nota que desglosa \"Outros rendimentos\"",
+   "choice": "competition_bonus",
+   "confidence": 0.77,
    "desdeCache": true
   },
   {
@@ -94,6 +112,15 @@
    "desdeCache": true
   },
   {
+   "label": "Correções relativas a períodos anteriores",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
    "label": "Trabalhos especializados",
    "lado": "expense",
    "page": 23,
@@ -118,6 +145,15 @@
    "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
    "choice": "admin_general_expense",
    "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Comissões",
+   "lado": "expense",
+   "page": 23,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
    "desdeCache": true
   },
   {
@@ -292,6 +328,15 @@
    "desdeCache": true
   },
   {
+   "label": "Gastos de ação social",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "wages_squad",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
    "label": "Outros Custos com Pessoal - Jogadores",
    "lado": "expense",
    "page": 24,
@@ -305,6 +350,24 @@
    "lado": "expense",
    "page": 24,
    "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Provisões (aumentos/reduções)",
+   "lado": "expense",
+   "page": 4,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Outros gastos\"",
    "choice": "admin_general_expense",
    "confidence": 1,
    "desdeCache": true
@@ -328,50 +391,22 @@
    "desdeCache": true
   },
   {
-   "label": "Mecanismo de solidariedade da UEFA",
-   "lado": "revenue",
-   "page": 22,
-   "section": "nota que desglosa \"Outros rendimentos\"",
-   "choice": "player_sales",
-   "confidence": 0.81,
-   "top3": [
-    [
-     "player_sales",
-     0.82
-    ],
-    [
-     "other_income",
-     0.14
-    ],
-    [
-     "youth_football",
-     0.03
-    ]
-   ],
-   "tokens": 1052
-  },
-  {
    "label": "Regularização Quotas TV (Liga)",
    "lado": "expense",
    "page": 25,
    "section": "nota que desglosa \"Outros gastos\"",
    "choice": "match_organisation_expense",
    "confidence": 0.42,
-   "top3": [
-    [
-     "match_organisation_expense",
-     0.47000000000000003
-    ],
-    [
-     "admin_general_expense",
-     0.35
-    ],
-    [
-     "other_expenses",
-     0.18
-    ]
-   ],
-   "tokens": 1062
+   "desdeCache": true
+  },
+  {
+   "label": "Juros mora",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
   },
   {
    "label": "Gastos/reversões de depreciação e de amortização",
@@ -381,167 +416,6 @@
    "choice": "player_amortisation",
    "confidence": 0.69,
    "desdeCache": true
-  },
-  {
-   "label": "Subsídios à exploração",
-   "lado": "revenue",
-   "page": 4,
-   "section": "estado",
-   "choice": "other_income",
-   "confidence": 0.98,
-   "top3": [
-    [
-     "other_income",
-     0.98
-    ],
-    [
-     "competition_bonus",
-     0.01
-    ],
-    [
-     "lump_football_operations",
-     0.01
-    ]
-   ],
-   "tokens": 1071
-  },
-  {
-   "label": "Comissões",
-   "lado": "expense",
-   "page": 23,
-   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-   "choice": "other_expenses",
-   "confidence": 0.97,
-   "top3": [
-    [
-     "other_expenses",
-     0.97
-    ],
-    [
-     "admin_general_expense",
-     0.03
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1017
-  },
-  {
-   "label": "Provisões (aumentos/reduções)",
-   "lado": "expense",
-   "page": 4,
-   "section": "estado",
-   "choice": "admin_general_expense",
-   "confidence": 0.83,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.84
-    ],
-    [
-     "other_amortisation",
-     0.15
-    ],
-    [
-     "other_expenses",
-     0.01
-    ]
-   ],
-   "tokens": 1067
-  },
-  {
-   "label": "Gastos de ação social",
-   "lado": "expense",
-   "page": 24,
-   "section": "nota que desglosa \"Gastos com o pessoal\"",
-   "choice": "wages_squad",
-   "confidence": 0.73,
-   "top3": [
-    [
-     "wages_squad",
-     0.75
-    ],
-    [
-     "youth_other_sports_expense",
-     0.14
-    ],
-    [
-     "other_expenses",
-     0.08
-    ]
-   ],
-   "tokens": 1013
-  },
-  {
-   "label": "Impostos",
-   "lado": "expense",
-   "page": 25,
-   "section": "nota que desglosa \"Outros gastos\"",
-   "choice": "admin_general_expense",
-   "confidence": 1,
-   "top3": [
-    [
-     "admin_general_expense",
-     1
-    ],
-    [
-     "wages_squad",
-     0
-    ],
-    [
-     "player_amortisation",
-     0
-    ]
-   ],
-   "tokens": 1000
-  },
-  {
-   "label": "LPFP Quartos de Final/Allianz Cup",
-   "lado": "revenue",
-   "page": 22,
-   "section": "nota que desglosa \"Outros rendimentos\"",
-   "choice": "competition_bonus",
-   "confidence": 0.77,
-   "top3": [
-    [
-     "competition_bonus",
-     0.79
-    ],
-    [
-     "other_income",
-     0.13
-    ],
-    [
-     "matchday_competition",
-     0.04
-    ]
-   ],
-   "tokens": 1051
-  },
-  {
-   "label": "Juros mora",
-   "lado": "expense",
-   "page": 25,
-   "section": "nota que desglosa \"Outros gastos\"",
-   "choice": "other_expenses",
-   "confidence": 1,
-   "top3": [
-    [
-     "other_expenses",
-     1
-    ],
-    [
-     "wages_squad",
-     0
-    ],
-    [
-     "player_amortisation",
-     0
-    ]
-   ],
-   "tokens": 1019
   }
  ]
 }

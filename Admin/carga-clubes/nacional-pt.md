@@ -196,6 +196,88 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2022–23 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Nacional".
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Nacional/relatorio-contas-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Nacional/relatorio-contas-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bilhetes, Camarotes | pág. 23, precedente |
+| 2 | COMPETIÇÕES | pág. 23, precedente |
+| 3 | Publicidade | pág. 23, precedente |
+| 4 | Direitos Televisivos | pág. 23, precedente |
+| 5 | Subsídios EOEP - IDRAM | pág. 20, Claude 0.85 |
+| 6 | Subsídios EOEP - INST. SEG. SOCIAL | pág. 20, Claude 0.92 |
+| 7 | Subsídios EOEP - IDERAM / InvesteRA | pág. 20, Claude 0.85 |
+| 8 | FPF - TAÇA PORTUGAL | pág. 20, precedente |
+| 9 | Rendimentos em ativos não financeiros | pág. 21, precedente |
+| 10 | Prémios - LPFP Apostas Desportivas Placard | pág. 21, precedente |
+| 11 | Prémios Federação Portuguesa de Futebol | pág. 21, precedente |
+| 12 | Prémios - Mecanismo de Solidariedade | pág. 21, precedente |
+| 13 | Excesso da estimativa para impostos | pág. 21, precedente |
+| 14 | Quotas - 50% CDN | pág. 21, ? 0.6 |
+| 15 | Comparticipação tarifa residente | pág. 21, precedente |
+| 16 | Outros não especificados | pág. 21, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Trabalhos especializados | pág. 21, precedente |
+| 2 | Vigilância e segurança | pág. 21, precedente |
+| 3 | Honorários | pág. 21, precedente |
+| 4 | Conservação e reparação | pág. 21, precedente |
+| 5 | Serviços bancários | pág. 21, precedente |
+| 6 | Outros | pág. 21, precedente |
+| 7 | Outros | pág. 21, precedente |
+| 8 | Deslocações e estadas | pág. 21, precedente |
+| 9 | Outros | pág. 21, precedente |
+| 10 | Rendas e alugueres | pág. 21, precedente |
+| 11 | Comunicação | pág. 21, precedente |
+| 12 | Contencioso e notariado | pág. 21, precedente |
+| 13 | Limpeza, higiene e conforto | pág. 21, precedente |
+| 14 | Outros serviços | pág. 21, precedente |
+| 15 | Remunerações órgãos sociais | pág. 22, precedente |
+| 16 | Remunerações do Pessoal - Funcionários | pág. 22, precedente |
+| 17 | Remunerações do Pessoa - Jogadores | pág. 22, precedente |
+| 18 | Remunerações do Pessoal - Treinadores | pág. 22, precedente |
+| 19 | Enc. s/rem.-orgãos sociais | pág. 22, precedente |
+| 20 | Enc. s/rem.-pessoal - Funcionários | pág. 22, precedente |
+| 21 | Enc. s/rem.-pessoal - Treinadores | pág. 22, precedente |
+| 22 | Enc. s/rem.-pessoal - Jogadores | pág. 22, precedente |
+| 23 | Seg.ac.trb - pessoal | pág. 22, precedente |
+| 24 | Seg.ac.trb - Jogadores | pág. 22, precedente |
+| 25 | Outros Custos com Pessoal - Jogadores | pág. 22, precedente |
+| 26 | Outros Custos com Pessoal - Outros | pág. 22, precedente |
+| 27 | Provisões (aumentos/reduções) | pág. 4, precedente |
+| 28 | Menos-valias jogadores | pág. 22, ? 0.6 |
+| 29 | Outros | pág. 22, precedente |
+| 30 | Correções relativas a períodos anteriores | pág. 22, precedente |
+| 31 | Quotizações | pág. 22, precedente |
+| 32 | Transferências de jogadores | pág. 22, precedente |
+| 33 | Outros custos - Protocolos | pág. 22, Jev 0.93 |
+| 34 | Custas, Quota TV (estorno), etc | pág. 22, Claude 0.8 |
+| 35 | Outros não especificados | pág. 22, precedente |
+| 36 | Gastos/reversões de depreciação e de amortização | pág. 4, precedente |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): cierre = 2022-06-30. periodo.mjs tomó 30/06/2021 (columna comparativa); el informe es del período de doce meses findo el 30/06/2022.
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2021–22 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Nacional".
+```
+
 ## Fuentes
 
 ### nacional-pt-relatorio-contas-2023-24
@@ -212,4 +294,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Nacional/relatorio-contas-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### nacional-pt-relatorio-contas-2021-22
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Nacional/relatorio-contas-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

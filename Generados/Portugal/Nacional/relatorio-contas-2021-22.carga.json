@@ -1,14 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2021-22.pdf",
- "generado": "2026-10-16T02:49:45.434Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Rendimentos em ativos não financeiros\" -> player_sales 0.55"
-  }
- ],
+ "generado": "2026-10-16T03:18:44.455Z",
+ "frena": [],
  "avisos": [
-  "materialidad: \"Quotas - 50% CDN\" va como member_dues con 0.6 (las dudas de ingresos suman 0.54% de su lado)",
+  "materialidad: \"Quotas - 50% CDN\" va como member_dues con 0.6 (las dudas de ingresos suman 0.53% de su lado)",
   "materialidad: \"Menos-valias jogadores\" va como player_amortisation con 0.6 (las dudas de gastos suman 0.83% de su lado)",
   "gastos: ningún total impreso igual a la suma de las líneas (-3.978172); queda la suma, verificada por el resultado del ejercicio"
  ],
@@ -100,13 +95,13 @@
    },
    {
     "rawLabel": "Rendimentos em ativos não financeiros",
-    "normalizedCategory": "player_sales",
+    "normalizedCategory": "other_income",
     "amountNative": 0.000452,
     "disclosureLevel": "aggregated",
     "_pag": 21,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Prémios - LPFP Apostas Desportivas Placard",
@@ -156,7 +151,7 @@
     "_pag": 21,
     "_escalon": "materialidad",
     "_conf": 0.6,
-    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.54% (≤ 1%) y esta tiene 0.6"
+    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.53% (≤ 1%) y esta tiene 0.6"
    },
    {
     "rawLabel": "Comparticipação tarifa residente",
@@ -733,12 +728,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
    "signoFijo": 0.000452,
-   "cat": "player_sales",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-16: 452 € de 'Rendimentos em ativos não financeiros' sin decir que sean jugadores; other_income. [relatorio-contas-2021-22.md L799]",
    "destino": "revenue",
    "amountNative": 0.000452
   },
@@ -814,7 +809,7 @@
    "cat": "member_dues",
    "conf": 0.6,
    "escalon": "materialidad",
-   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.54% (≤ 1%) y esta tiene 0.6",
+   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.53% (≤ 1%) y esta tiene 0.6",
    "enLista": true,
    "enCola": false,
    "destino": "revenue",
@@ -1511,8 +1506,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 16,
   "lineasGasto": 36,
   "metaFilas": 2,
