@@ -14,6 +14,17 @@ const academicoviseuptRevenueLinesByYear = {
     { rawLabel:'Indemnizações de seguros de acidentes de trabalho', normalizedCategory:'other_income', amountNative:0.082653, disclosureLevel:'aggregated' },
     { rawLabel:'Outros não especificados', normalizedCategory:'other_income', amountNative:0.069994, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Bilheteira e Corporate', normalizedCategory:'matchday_competition', amountNative:0.184827, disclosureLevel:'aggregated' },
+    { rawLabel:'Merchandising', normalizedCategory:'sponsorship_commercial', amountNative:0.082418, disclosureLevel:'aggregated' },
+    { rawLabel:'Patrocínios, publicidade e corporate', normalizedCategory:'sponsorship_commercial', amountNative:0.143009, disclosureLevel:'aggregated' },
+    { rawLabel:'Receitas de televisão', normalizedCategory:'broadcasting', amountNative:0.45, disclosureLevel:'aggregated' },
+    { rawLabel:'Competições Nacionais', normalizedCategory:'competition_bonus', amountNative:0.209232, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídios à Exploração', normalizedCategory:'other_income', amountNative:0.26912, disclosureLevel:'aggregated' },
+    { rawLabel:'Associações/Federações/Liga', normalizedCategory:'other_income', amountNative:0.023057, disclosureLevel:'aggregated' },
+    { rawLabel:'Jogos e apostas (distribuição lucros)', normalizedCategory:'other_income', amountNative:0.299624, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.057494, disclosureLevel:'aggregated' },
+  ],
 };
 const academicoviseuptExpenseLinesByYear = {
   2025: [
@@ -53,6 +64,32 @@ const academicoviseuptExpenseLinesByYear = {
     { rawLabel:'Outros não especificados', normalizedCategory:'other_expenses', amountNative:-0.114752, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-1.773055, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Custo das mercadorias vendidas e das matérias consumidas', normalizedCategory:'other_expenses', amountNative:-0.088996, disclosureLevel:'aggregated' },
+    { rawLabel:'Trabalhos Especializados', normalizedCategory:'admin_general_expense', amountNative:-1.809079, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade e Propaganda', normalizedCategory:'admin_general_expense', amountNative:-0.026404, disclosureLevel:'aggregated' },
+    { rawLabel:'Vigilância e Segurança', normalizedCategory:'match_organisation_expense', amountNative:-0.079066, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorários', normalizedCategory:'admin_general_expense', amountNative:-0.043794, disclosureLevel:'aggregated' },
+    { rawLabel:'Conservação e Reparação', normalizedCategory:'admin_general_expense', amountNative:-0.093336, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços bancários e financeiro:', normalizedCategory:'admin_general_expense', amountNative:-0.00212, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros serviços especializados', normalizedCategory:'other_expenses', amountNative:-0.003276, disclosureLevel:'aggregated' },
+    { rawLabel:'Materiais', normalizedCategory:'admin_general_expense', amountNative:-0.034964, disclosureLevel:'aggregated' },
+    { rawLabel:'Energia e Fluidos', normalizedCategory:'admin_general_expense', amountNative:-0.029291, disclosureLevel:'aggregated' },
+    { rawLabel:'Deslocações e Estadas', normalizedCategory:'match_organisation_expense', amountNative:-0.292711, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendas e alugueres', normalizedCategory:'admin_general_expense', amountNative:-0.388443, disclosureLevel:'aggregated' },
+    { rawLabel:'Comunicação', normalizedCategory:'admin_general_expense', amountNative:-0.00794, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.003135, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesas de Representação', normalizedCategory:'admin_general_expense', amountNative:-0.04296, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.055881, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações do pessoal', normalizedCategory:'wages_squad', amountNative:-4.716376, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos sobre as remunerações', normalizedCategory:'wages_squad', amountNative:-0.438872, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros de acidentes no trabalho', normalizedCategory:'admin_general_expense', amountNative:-0.413655, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.391934, disclosureLevel:'aggregated' },
+    { rawLabel:'Imparidade de dívidas a receber (perdas/reversões)', normalizedCategory:'other_expenses', amountNative:-0.011438, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisões', normalizedCategory:'admin_general_expense', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros gastos', normalizedCategory:'other_expenses', amountNative:-0.706109, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/ reversões de depreciação e de amortização', normalizedCategory:'depreciation', amountNative:-1.228471, disclosureLevel:'aggregated' },
+  ],
 };
 const academicoviseuptFiscalYearMeta = {
   2025: {
@@ -69,6 +106,20 @@ const academicoviseuptFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:5.989118, officialTotalExpenses:12.87398, officialPAT:-8.684755,
+  },
+  2023: {
+    currency:'EUR', fxRef:'EUR@2023-06-30',
+    sourceId:'academicoviseu-pt-wf-2022-2023-b797bc64',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.713088, tax:-0.018534,
+    extraRows: [
+      {label:'Juros e gastos similares suportados', value:-0.713088},
+      {label:'Imposto sobre o rendimento do período', value:-0.018534},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:1.71878, officialTotalExpenses:10.908252, officialPAT:-9.921095,
   },
 };
 const academicoviseuptPresupuestoOverlayByYear = {};
@@ -89,6 +140,11 @@ Object.assign(sources, {
   'academicoviseu-pt-wf-2024-2025-efe7ad0a': {
     id:'academicoviseu-pt-wf-2024-2025-efe7ad0a', clubId:'academicoviseu-pt',
     title:'Académico de Viseu Futebol Clube, Futebol SAD — wf-2024-2025-efe7ad0a (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'academicoviseu-pt-wf-2022-2023-b797bc64': {
+    id:'academicoviseu-pt-wf-2022-2023-b797bc64', clubId:'academicoviseu-pt',
+    title:'Académico de Viseu Futebol Clube, Futebol SAD — wf-2022-2023-b797bc64 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

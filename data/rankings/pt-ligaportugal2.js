@@ -62,6 +62,9 @@ window.RANKINGS["pt-ligaportugal2"] = {
       { id:"estreladaamadora-pt", revenue:2.05, reportType:"official_balance_sheet",
         sourceId:"estreladaamadora-pt-relatorio-contas-2022-23",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.17],["Otros ingresos",0.88]] },
+      { id:"academicoviseu-pt", revenue:1.868, reportType:"official_balance_sheet",
+        sourceId:"academicoviseu-pt-wf-2022-2023-b797bc64",
+        mix:[["Comercial / Sponsors",0.245],["Estadio",0.201],["Televisión",0.489],["Premios por competencias",0.227],["Otros ingresos",0.706]] },
     ],
   },
   2022: {
