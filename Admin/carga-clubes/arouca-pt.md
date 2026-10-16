@@ -124,6 +124,84 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2024–25 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Arouca".
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Arouca/relatorio-contas-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Arouca/relatorio-contas-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Publicidade | pág. 29, Jev 1 |
+| 2 | Receitas de Bilheteira | pág. 29, Jev 0.99 |
+| 3 | Transmissões Televisivas | pág. 29, Jev 1 |
+| 4 | Ced. Temporária jogadores | pág. 29, Jev 1 |
+| 5 | Subsídios e Prémios | pág. 29, precedente |
+| 6 | Receitas Apostas Desport. | pág. 29, Jev 0.96 |
+| 7 | Outros | pág. 29, precedente |
+| 8 | Descontos pp obtidos | pág. 30, Jev 1 |
+| 9 | Rend. Suplementares | pág. 30, Jev 0.99 |
+| 10 | Al. ativos intangíveis-Passes atletas | pág. 30, Jev 0.99 |
+| 11 | Outros Rendimentos | pág. 30, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Subcontratos | pág. 28, Jev 0.97 |
+| 2 | Trabalhos Especializados | pág. 28, Jev 0.99 |
+| 3 | Publicidade e propaganda | pág. 28, Jev 1 |
+| 4 | Vigilância e Segurança | pág. 28, Jev 0.98 |
+| 5 | Honorários | pág. 28, Jev 1 |
+| 6 | Comissões | pág. 28, precedente |
+| 7 | Conservação e Reparação | pág. 28, Jev 1 |
+| 8 | Serviços Bancários | pág. 28, Jev 0.98 |
+| 9 | Out. Serv. Especializados | pág. 28, Jev 0.95 |
+| 10 | Ferr. Ut. Desgaste Rápido | pág. 28, Jev 1 |
+| 11 | Material de Escritório | pág. 28, Jev 1 |
+| 12 | Artigos Oferta | pág. 28, Jev 0.93 |
+| 13 | Eletricidade | pág. 28, Jev 1 |
+| 14 | Combustíveis | pág. 28, Jev 0.99 |
+| 15 | Água | pág. 28, Jev 0.98 |
+| 16 | Outros Fluidos | pág. 28, Jev 0.96 |
+| 17 | Deslocações e Estadas | pág. 28, Jev 1 |
+| 18 | Transp. Pessoal | pág. 28, precedente |
+| 19 | Desloc. Estadas - outros | pág. 28, precedente |
+| 20 | Rendas e Alugueres | pág. 28, precedente |
+| 21 | Comunicação | pág. 28, Jev 1 |
+| 22 | Seguros | pág. 28, Jev 0.96 |
+| 23 | Contencioso e Notariado | pág. 28, Jev 1 |
+| 24 | Limpeza, Higiene e Conforto | pág. 28, Jev 1 |
+| 25 | Outros Serviços | pág. 28, Jev 1 |
+| 26 | Remun. Órgãos sociais | pág. 27, Jev 1 |
+| 27 | Remunerações pessoal | pág. 27, precedente |
+| 28 | Indemnizações | pág. 27, precedente |
+| 29 | Encargos s/ remunerações | pág. 27, Jev 0.92 |
+| 30 | Seg. Acidentes de Trabalho | pág. 27, Jev 0.99 |
+| 31 | Outros Gastos c/ Pessoal | pág. 27, precedente |
+| 32 | Impostos | pág. 29, Jev 0.95 |
+| 33 | Desc. Pp concedidos | pág. 29, Jev 1 |
+| 34 | Corr. Per. Anteriores | pág. 29, Jev 1 |
+| 35 | Diferenças câmbio desf. | pág. 29, Jev 0.99 |
+| 36 | Multas e penalidades | pág. 29, Jev 0.98 |
+| 37 | Outros | pág. 29, Jev 0.99 |
+| 38 | Gastos/reversões de depreciação e de amortização | pág. 6, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2022–23 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Arouca".
+```
+
 ## 2022
 
 ### Ingresos
@@ -215,4 +293,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Arouca/relatorio-contas-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### arouca-pt-relatorio-contas-2022-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Arouca/relatorio-contas-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

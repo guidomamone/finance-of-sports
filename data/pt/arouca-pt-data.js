@@ -28,6 +28,19 @@ const aroucaptRevenueLinesByYear = {
     { rawLabel:'Rend. Suplementares', normalizedCategory:'other_income', amountNative:0.02, disclosureLevel:'aggregated' },
     { rawLabel:'Outros Rendimentos', normalizedCategory:'other_income', amountNative:0.398211, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Publicidade', normalizedCategory:'sponsorship_commercial', amountNative:0.486352, disclosureLevel:'aggregated' },
+    { rawLabel:'Receitas de Bilheteira', normalizedCategory:'matchday_competition', amountNative:0.057987, disclosureLevel:'aggregated' },
+    { rawLabel:'Transmissões Televisivas', normalizedCategory:'broadcasting', amountNative:4.9, disclosureLevel:'aggregated' },
+    { rawLabel:'Ced. Temporária jogadores', normalizedCategory:'player_sales', amountNative:0.375858, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsídios e Prémios', normalizedCategory:'competition_bonus', amountNative:0.326469, disclosureLevel:'aggregated' },
+    { rawLabel:'Receitas Apostas Desport.', normalizedCategory:'other_income', amountNative:0.303793, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:0.000049, disclosureLevel:'aggregated' },
+    { rawLabel:'Descontos pp obtidos', normalizedCategory:'other_income', amountNative:0.000479, disclosureLevel:'aggregated' },
+    { rawLabel:'Rend. Suplementares', normalizedCategory:'other_income', amountNative:0.017751, disclosureLevel:'aggregated' },
+    { rawLabel:'Al. ativos intangíveis-Passes atletas', normalizedCategory:'player_sales', amountNative:2.19875, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros Rendimentos', normalizedCategory:'other_income', amountNative:0.107673, disclosureLevel:'aggregated' },
+  ],
 };
 const aroucaptExpenseLinesByYear = {
   2025: [
@@ -109,6 +122,46 @@ const aroucaptExpenseLinesByYear = {
     { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.1164, disclosureLevel:'aggregated' },
     { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'player_amortisation', amountNative:-1.09185, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Subcontratos', normalizedCategory:'admin_general_expense', amountNative:-0.004343, disclosureLevel:'aggregated' },
+    { rawLabel:'Trabalhos Especializados', normalizedCategory:'admin_general_expense', amountNative:-0.165083, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade e propaganda', normalizedCategory:'admin_general_expense', amountNative:-0.028267, disclosureLevel:'aggregated' },
+    { rawLabel:'Vigilância e Segurança', normalizedCategory:'match_organisation_expense', amountNative:-0.062392, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorários', normalizedCategory:'admin_general_expense', amountNative:-0.04812, disclosureLevel:'aggregated' },
+    { rawLabel:'Comissões', normalizedCategory:'other_expenses', amountNative:-0.853543, disclosureLevel:'aggregated' },
+    { rawLabel:'Conservação e Reparação', normalizedCategory:'admin_general_expense', amountNative:-0.061609, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços Bancários', normalizedCategory:'admin_general_expense', amountNative:-0.006357, disclosureLevel:'aggregated' },
+    { rawLabel:'Out. Serv. Especializados', normalizedCategory:'admin_general_expense', amountNative:-0.059607, disclosureLevel:'aggregated' },
+    { rawLabel:'Ferr. Ut. Desgaste Rápido', normalizedCategory:'admin_general_expense', amountNative:-0.014981, disclosureLevel:'aggregated' },
+    { rawLabel:'Material de Escritório', normalizedCategory:'admin_general_expense', amountNative:-0.00512, disclosureLevel:'aggregated' },
+    { rawLabel:'Artigos Oferta', normalizedCategory:'admin_general_expense', amountNative:-0.01243, disclosureLevel:'aggregated' },
+    { rawLabel:'Eletricidade', normalizedCategory:'admin_general_expense', amountNative:-0.024645, disclosureLevel:'aggregated' },
+    { rawLabel:'Combustíveis', normalizedCategory:'admin_general_expense', amountNative:-0.012942, disclosureLevel:'aggregated' },
+    { rawLabel:'Água', normalizedCategory:'admin_general_expense', amountNative:-0.0004, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros Fluidos', normalizedCategory:'admin_general_expense', amountNative:-0.007128, disclosureLevel:'aggregated' },
+    { rawLabel:'Deslocações e Estadas', normalizedCategory:'match_organisation_expense', amountNative:-0.255121, disclosureLevel:'aggregated' },
+    { rawLabel:'Transp. Pessoal', normalizedCategory:'match_organisation_expense', amountNative:-0.00509, disclosureLevel:'aggregated' },
+    { rawLabel:'Desloc. Estadas - outros', normalizedCategory:'match_organisation_expense', amountNative:-0.001149, disclosureLevel:'aggregated' },
+    { rawLabel:'Rendas e Alugueres', normalizedCategory:'admin_general_expense', amountNative:-0.025845, disclosureLevel:'aggregated' },
+    { rawLabel:'Comunicação', normalizedCategory:'admin_general_expense', amountNative:-0.0005, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.003292, disclosureLevel:'aggregated' },
+    { rawLabel:'Contencioso e Notariado', normalizedCategory:'admin_general_expense', amountNative:-0.007429, disclosureLevel:'aggregated' },
+    { rawLabel:'Limpeza, Higiene e Conforto', normalizedCategory:'admin_general_expense', amountNative:-0.001745, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros Serviços', normalizedCategory:'other_expenses', amountNative:-0.14003, disclosureLevel:'aggregated' },
+    { rawLabel:'Remun. Órgãos sociais', normalizedCategory:'admin_general_expense', amountNative:-0.060788, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações pessoal', normalizedCategory:'wages_squad', amountNative:-4.264711, disclosureLevel:'aggregated' },
+    { rawLabel:'Indemnizações', normalizedCategory:'wages_squad', amountNative:-0.072, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos s/ remunerações', normalizedCategory:'wages_squad', amountNative:-0.176854, disclosureLevel:'aggregated' },
+    { rawLabel:'Seg. Acidentes de Trabalho', normalizedCategory:'admin_general_expense', amountNative:-0.540589, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros Gastos c/ Pessoal', normalizedCategory:'wages_squad', amountNative:-0.052892, disclosureLevel:'aggregated' },
+    { rawLabel:'Impostos', normalizedCategory:'admin_general_expense', amountNative:-0.002752, disclosureLevel:'aggregated' },
+    { rawLabel:'Desc. Pp concedidos', normalizedCategory:'other_expenses', amountNative:-0.001463, disclosureLevel:'aggregated' },
+    { rawLabel:'Corr. Per. Anteriores', normalizedCategory:'exceptional_items', amountNative:-0.025077, disclosureLevel:'aggregated' },
+    { rawLabel:'Diferenças câmbio desf.', normalizedCategory:'admin_general_expense', amountNative:-0.0133, disclosureLevel:'aggregated' },
+    { rawLabel:'Multas e penalidades', normalizedCategory:'other_expenses', amountNative:-0.030125, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.01611, disclosureLevel:'aggregated' },
+    { rawLabel:'Gastos/reversões de depreciação e de amortização', normalizedCategory:'player_amortisation', amountNative:-0.936202, disclosureLevel:'aggregated' },
+  ],
 };
 const aroucaptFiscalYearMeta = {
   2025: {
@@ -140,6 +193,16 @@ const aroucaptFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:5.094546, officialTotalExpenses:5.607571, officialPAT:-0.606415,
   },
+  2023: {
+    currency:'EUR', fxRef:'EUR@2023-06-30',
+    sourceId:'arouca-pt-relatorio-contas-2022-23',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0, tax:-0.360802,
+    grossDebt:null, cash:null,
+    officialTotalRevenue:8.77516, officialTotalExpenses:7.974954, officialPAT:0.414325,
+  },
 };
 const aroucaptPresupuestoOverlayByYear = {};
 
@@ -164,6 +227,11 @@ Object.assign(sources, {
   'arouca-pt-relatorio-contas-2021-22': {
     id:'arouca-pt-relatorio-contas-2021-22', clubId:'arouca-pt',
     title:'Futebol Clube de Arouca – Futebol, SDUQ, Lda. — relatorio-contas-2021-22 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'arouca-pt-relatorio-contas-2022-23': {
+    id:'arouca-pt-relatorio-contas-2022-23', clubId:'arouca-pt',
+    title:'Futebol Clube de Arouca – Futebol, SDUQ, Lda. — relatorio-contas-2022-23 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
