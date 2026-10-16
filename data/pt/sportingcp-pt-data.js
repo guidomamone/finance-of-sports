@@ -19,6 +19,24 @@ const sportingcpptRevenueLinesByYear = {
     { rawLabel:'Mecanismo de solidariedade/Compensação por formação', normalizedCategory:'player_sales', amountNative:2.942, disclosureLevel:'aggregated' },
     { rawLabel:'Cedência de jogadores', normalizedCategory:'player_sales', amountNative:0.55, disclosureLevel:'aggregated' },
   ],
+  2012: [
+    { rawLabel:'Quotizações', normalizedCategory:'member_dues', amountNative:2.642, disclosureLevel:'aggregated' },
+    { rawLabel:'Direitos Televisivos', normalizedCategory:'broadcasting', amountNative:12.537, disclosureLevel:'aggregated' },
+    { rawLabel:'Bilheteira e Bilhetes de Época', normalizedCategory:'matchday_competition', amountNative:8.844, disclosureLevel:'aggregated' },
+    { rawLabel:'Patrocínios e Publicidade', normalizedCategory:'sponsorship_commercial', amountNative:7.722, disclosureLevel:'aggregated' },
+    { rawLabel:'Merchandising e Licenciamento', normalizedCategory:'sponsorship_commercial', amountNative:1.288, disclosureLevel:'aggregated' },
+    { rawLabel:'Serviços Diretos', normalizedCategory:'other_income', amountNative:0.752, disclosureLevel:'aggregated' },
+    { rawLabel:'Outras', normalizedCategory:'other_income', amountNative:0.067, disclosureLevel:'aggregated' },
+    { rawLabel:'Participações nas Competições Europeias', normalizedCategory:'competition_bonus', amountNative:3.302, disclosureLevel:'aggregated' },
+    { rawLabel:'Participações nas Competições Nacionais', normalizedCategory:'competition_bonus', amountNative:0.325, disclosureLevel:'aggregated' },
+    { rawLabel:'Participações em Competições Particulares', normalizedCategory:'competition_bonus', amountNative:1.065, disclosureLevel:'aggregated' },
+    { rawLabel:'Benefícios contratuais', normalizedCategory:'other_income', amountNative:0.32, disclosureLevel:'aggregated' },
+    { rawLabel:'Cedência de Jogadores', normalizedCategory:'player_sales', amountNative:0.301, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_income', amountNative:1.6, disclosureLevel:'aggregated' },
+    { rawLabel:'Abate de direitos desportivos', normalizedCategory:'player_sales', amountNative:-0.016, disclosureLevel:'aggregated' },
+    { rawLabel:'Cedência de direitos económicos ao Sporting Portugal Fund', normalizedCategory:'player_sales', amountNative:2.899, disclosureLevel:'aggregated' },
+    { rawLabel:'Venda de direitos desportivos', normalizedCategory:'player_sales', amountNative:2.734, disclosureLevel:'aggregated' },
+  ],
 };
 const sportingcpptExpenseLinesByYear = {
   2025: [
@@ -72,6 +90,36 @@ const sportingcpptExpenseLinesByYear = {
     { rawLabel:'Mecanismo de solidariedade/Compensação por formação', normalizedCategory:'other_expenses', amountNative:-0.429, disclosureLevel:'aggregated' },
     { rawLabel:'Outros/Abates', normalizedCategory:'exceptional_items', amountNative:-2.087, disclosureLevel:'aggregated' },
   ],
+  2012: [
+    { rawLabel:'Subcontratos', normalizedCategory:'admin_general_expense', amountNative:-10.848, disclosureLevel:'aggregated' },
+    { rawLabel:'Trabalhos especializados', normalizedCategory:'admin_general_expense', amountNative:-0.436, disclosureLevel:'aggregated' },
+    { rawLabel:'Organização de Jogos, deslocações e estadias', normalizedCategory:'match_organisation_expense', amountNative:-2.479, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorários', normalizedCategory:'admin_general_expense', amountNative:-1.21, disclosureLevel:'aggregated' },
+    { rawLabel:'Comissões', normalizedCategory:'other_expenses', amountNative:-1.086, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-0.299, disclosureLevel:'aggregated' },
+    { rawLabel:'Equipamentos Desportivos', normalizedCategory:'other_expenses', amountNative:-0.329, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidade e Propaganda', normalizedCategory:'admin_general_expense', amountNative:-0.327, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros FSE', normalizedCategory:'other_expenses', amountNative:-1.056, disclosureLevel:'aggregated' },
+    { rawLabel:'Remunerações Órgãos Sociais', normalizedCategory:'admin_general_expense', amountNative:-0.36, disclosureLevel:'aggregated' },
+    { rawLabel:'Remuneração do Pessoal', normalizedCategory:'wages_squad', amountNative:-32.744, disclosureLevel:'aggregated' },
+    { rawLabel:'Indemnizações', normalizedCategory:'wages_squad', amountNative:-4.807, disclosureLevel:'aggregated' },
+    { rawLabel:'Encargos com remunerações', normalizedCategory:'wages_squad', amountNative:-3.18, disclosureLevel:'aggregated' },
+    { rawLabel:'Seguros', normalizedCategory:'admin_general_expense', amountNative:-1.277, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.164, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortizações excluindo depreciação do plantel', normalizedCategory:'depreciation', amountNative:-1.068, disclosureLevel:'aggregated' },
+    { rawLabel:'Ajustamentos a clientes de cobrança duvidosa', normalizedCategory:'other_amortisation', amountNative:-0.173, disclosureLevel:'aggregated' },
+    { rawLabel:'Provisão para complemento de Pensões de Reforma', normalizedCategory:'other_amortisation', amountNative:-0.466, disclosureLevel:'aggregated' },
+    { rawLabel:'Outras provisões para riscos e encargos', normalizedCategory:'other_amortisation', amountNative:-1.228, disclosureLevel:'aggregated' },
+    { rawLabel:'Despesas com Transferências de Jogadores', normalizedCategory:'other_expenses', amountNative:-0.019, disclosureLevel:'aggregated' },
+    { rawLabel:'Quotizações', normalizedCategory:'admin_general_expense', amountNative:-0.14, disclosureLevel:'aggregated' },
+    { rawLabel:'Imposto de Selo', normalizedCategory:'admin_general_expense', amountNative:-0.317, disclosureLevel:'aggregated' },
+    { rawLabel:'Multas e outras penalidades', normalizedCategory:'other_expenses', amountNative:-0.322, disclosureLevel:'aggregated' },
+    { rawLabel:'Penalidades Contratuais', normalizedCategory:'other_expenses', amountNative:-0.454, disclosureLevel:'aggregated' },
+    { rawLabel:'Prospecção de Mercado', normalizedCategory:'other_expenses', amountNative:-0.817, disclosureLevel:'aggregated' },
+    { rawLabel:'Outros', normalizedCategory:'other_expenses', amountNative:-0.694, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortizações do exercício - Futebol profissional', normalizedCategory:'player_amortisation', amountNative:-16.644, disclosureLevel:'aggregated' },
+    { rawLabel:'Perdas por imparidade - Futebol profissional', normalizedCategory:'player_impairment', amountNative:-4.551, disclosureLevel:'aggregated' },
+  ],
 };
 const sportingcpptFiscalYearMeta = {
   2025: {
@@ -87,6 +135,22 @@ const sportingcpptFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:264.979, officialTotalExpenses:217.458, officialPAT:20.023,
+  },
+  2012: {
+    currency:'EUR', fxRef:'EUR@2012-06-30',
+    sourceId:'sportingcp-pt-relatorio-contas-2011-12',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-4.718, tax:-0.116,
+    extraRows: [
+      {label:'Custos e perdas financeiros', value:-8.176},
+      {label:'Proveitos e ganhos financeiros', value:3.458},
+      {label:'Impostos diferidos', value:null},
+      {label:'Imposto sobre o rendimento', value:-0.116},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:46.382, officialTotalExpenses:87.495, officialPAT:-45.947,
   },
 };
 const sportingcpptPresupuestoOverlayByYear = {};
@@ -107,6 +171,11 @@ Object.assign(sources, {
   'sportingcp-pt-relatorio-contas-2024-25': {
     id:'sportingcp-pt-relatorio-contas-2024-25', clubId:'sportingcp-pt',
     title:'SPORTING - Sociedade Desportiva de Futebol, SAD — relatorio-contas-2024-25 (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'sportingcp-pt-relatorio-contas-2011-12': {
+    id:'sportingcp-pt-relatorio-contas-2011-12', clubId:'sportingcp-pt',
+    title:'SPORTING - Sociedade Desportiva de Futebol, SAD — relatorio-contas-2011-12 (ejercicio 2012)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2007-08.pdf",
  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2007-08.md",
- "generado": "2026-10-15T21:56:50.336Z",
- "estado": "ok",
- "clubId": null,
- "year": null,
+ "generado": "2026-10-15T23:54:39.126Z",
+ "estado": "cola",
+ "clubId": "sportingcp-pt",
+ "year": 2008,
  "escala": {
   "valor": "miles",
   "escalon": 0,
@@ -23,7 +23,12 @@
    "fecha": "2026-10-15"
   }
  ],
- "cola": [],
+ "cola": [
+  "f47d304",
+  "c51fb61",
+  "144100e",
+  "9bdd2c4"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -47,9 +52,19 @@
    "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
+   "nombre": "documento del año 2009",
+   "ok": false,
+   "detalle": "ingresos de 2008: 47.949 en este documento y 45.461 en relatorio-contas-2008-09.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2007",
+   "ok": false,
+   "detalle": "ingresos de 2007: 195.878 en relatorio-contas-2006-07.pdf y 65.56 en este documento (columna del año anterior)"
+  },
+  {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2007: este chequeo no se puede hacer"
   },
   {
    "nombre": "primer año",
@@ -65,10 +80,9 @@
   "escalón \"nota exacta en la lectura 5\": \"Fornecimentos e serviços externos\" (L983) se abre en las 10 filas de su nota, que suman exacto el renglón",
   "escalón \"nota exacta en la lectura 5\": \"Custos com o pessoal\" (L984) se abre en las 7 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 5",
-  "duda de localizar confirmada por las sumas (cuadro-duplicado, \"Outros custos operacionais\"): ¿Se deja afuera de la carga el cuadro b14 (pág. 54, titulado '06 Outros custos operacionais'), porque repite los renglones de custos com pessoal?",
+  "duda de localizar confirmada por las sumas aunque un año vecino da distinto (escalón 2b; cuadro-duplicado, \"Outros custos operacionais\"): ¿Se deja afuera de la carga el cuadro b14 (pág. 54, titulado '06 Outros custos operacionais'), porque repite los renglones de custos com pessoal?",
   "duda de extraer que no afecta la carga: El subtotal L991 (4 563) = 2 488 - 7 051 confirma que es ingreso, pero la etiqueta es ambigua.",
-  "duda de extraer que no afecta la carga: 635 - 16 - 22 = 597 confirma que restan, pese a no tener signo.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: 635 - 16 - 22 = 597 confirma que restan, pese a no tener signo."
  ],
  "reintentar": null,
  "reintentado": false,

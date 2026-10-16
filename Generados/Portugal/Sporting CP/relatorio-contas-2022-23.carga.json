@@ -1,24 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2022-23.pdf",
- "generado": "2026-10-15T22:34:58.265Z",
- "frena": [
-  {
-   "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (sportingcp-pt)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "21 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Market Pool da Liga dos Campeões\" -> broadcasting 0.75; \"Market Pool da Liga Europa\" -> broadcasting 0.75; \"Camarotes\" -> stadium_other 0.55; \"Business Seats\" -> matchday_competition 0.55; \"Lugares de Leão e VIP\" -> matchday_competition 0.45"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-16T00:11:57.844Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 10 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)",
   "gastos: ningún total impreso igual a la suma de las líneas (-180.388); queda la suma, verificada por el resultado del ejercicio",
@@ -76,9 +59,9 @@
     "amountNative": 0.295,
     "disclosureLevel": "aggregated",
     "_pag": 117,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Market Pool da Liga Europa",
@@ -86,9 +69,9 @@
     "amountNative": 0.97,
     "disclosureLevel": "aggregated",
     "_pag": 117,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros direitos televisivos",
@@ -116,9 +99,9 @@
     "amountNative": 4.574,
     "disclosureLevel": "aggregated",
     "_pag": 117,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Bilheteira Liga Nacional",
@@ -152,13 +135,13 @@
    },
    {
     "rawLabel": "Business Seats",
-    "normalizedCategory": "matchday_competition",
+    "normalizedCategory": "stadium_other",
     "amountNative": 1.374,
     "disclosureLevel": "aggregated",
     "_pag": 117,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Lugares de Leão e VIP",
@@ -166,9 +149,9 @@
     "amountNative": 0.325,
     "disclosureLevel": "aggregated",
     "_pag": 117,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Bilheteira Jogos particulares",
@@ -206,9 +189,9 @@
     "amountNative": 0.043,
     "disclosureLevel": "aggregated",
     "_pag": 117,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)"
    },
    {
     "rawLabel": "Patrocínios e Publicidade",
@@ -226,9 +209,9 @@
     "amountNative": 4.306,
     "disclosureLevel": "aggregated",
     "_pag": 116,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)"
    },
    {
     "rawLabel": "Participação na fase de grupos - Liga dos Campeões",
@@ -282,13 +265,13 @@
    },
    {
     "rawLabel": "Cedência de jogadores",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "player_sales",
     "amountNative": 5.948,
     "disclosureLevel": "aggregated",
     "_pag": 118,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)"
    },
    {
     "rawLabel": "Prémio Mundial 2022",
@@ -326,9 +309,9 @@
     "amountNative": 1.033,
     "disclosureLevel": "aggregated",
     "_pag": 118,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)"
    },
    {
     "rawLabel": "Venda de direitos desportivos",
@@ -346,9 +329,9 @@
     "amountNative": 1.058,
     "disclosureLevel": "aggregated",
     "_pag": 123,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
@@ -358,9 +341,9 @@
     "amountNative": -3.683,
     "disclosureLevel": "aggregated",
     "_pag": 93,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Refeições",
@@ -368,9 +351,9 @@
     "amountNative": -3.375,
     "disclosureLevel": "aggregated",
     "_pag": 119,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Assistencia aos jogos",
@@ -384,13 +367,13 @@
    },
    {
     "rawLabel": "Vigilância",
-    "normalizedCategory": "match_organisation_expense",
+    "normalizedCategory": "admin_general_expense",
     "amountNative": -0.767,
     "disclosureLevel": "aggregated",
     "_pag": 119,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Manutenções",
@@ -468,9 +451,9 @@
     "amountNative": -2.578,
     "disclosureLevel": "aggregated",
     "_pag": 119,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía sponsorship_commercial, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "precedente del club, familia (categorias.json decía sponsorship_commercial)"
    },
    {
     "rawLabel": "Honorários",
@@ -554,13 +537,13 @@
    },
    {
     "rawLabel": "Equipamentos Desportivos",
-    "normalizedCategory": "match_organisation_expense",
+    "normalizedCategory": "other_expenses",
     "amountNative": -0.333,
     "disclosureLevel": "aggregated",
     "_pag": 119,
-    "_escalon": 2,
-    "_conf": 0.4,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Conservação e reparação",
@@ -598,9 +581,9 @@
     "amountNative": -57.349,
     "disclosureLevel": "aggregated",
     "_pag": 121,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Prémios de desempenho e de performance desportiva",
@@ -678,9 +661,9 @@
     "amountNative": -3.089,
     "disclosureLevel": "aggregated",
     "_pag": 122,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Cedência de jogadores",
@@ -778,9 +761,9 @@
     "amountNative": -2.126,
     "disclosureLevel": "aggregated",
     "_pag": 123,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Comissões",
@@ -788,9 +771,9 @@
     "amountNative": -8.131,
     "disclosureLevel": "aggregated",
     "_pag": 123,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Mecanismo de solidariedade/Compensação por formação",
@@ -798,9 +781,9 @@
     "amountNative": -0.477,
     "disclosureLevel": "aggregated",
     "_pag": 123,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía player_sales, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outros/Abates",
@@ -808,9 +791,9 @@
     "amountNative": -1.124,
     "disclosureLevel": "aggregated",
     "_pag": 123,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -842,10 +825,10 @@
   "source": {
    "id": "sportingcp-pt-relatorio-contas-2022-23",
    "clubId": "sportingcp-pt",
-   "title": "Sporting CP — relatorio-contas-2022-23 (ejercicio 2023)",
+   "title": "SPORTING - Sociedade Desportiva de Futebol, SAD — relatorio-contas-2022-23 (ejercicio 2023)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-15) desde la transcripción Clubes/Portugal/Sporting CP/relatorio-contas-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Sporting CP/relatorio-contas-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2022-23.md",
@@ -939,11 +922,11 @@
    "origen": "verificacion (nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Direitos televisivos\")",
    "signoFijo": 0.295,
    "cat": "broadcasting",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Market Pool UEFA aparece dentro de la nota \"Direitos Televisivos\": broadcasting [relatorio-contas-2022-23.md pág. visor 117: Market Pool da Liga dos Campeões 0.295]",
    "destino": "revenue",
    "amountNative": 0.295
   },
@@ -955,11 +938,11 @@
    "origen": "verificacion (nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Direitos televisivos\")",
    "signoFijo": 0.97,
    "cat": "broadcasting",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Market Pool UEFA aparece dentro de la nota \"Direitos Televisivos\": broadcasting [relatorio-contas-2022-23.md pág. visor 117: Market Pool da Liga Europa 0.97]",
    "destino": "revenue",
    "amountNative": 0.97
   },
@@ -1001,11 +984,11 @@
    "origen": "verificacion (nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\")",
    "signoFijo": 4.574,
    "cat": "stadium_other",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Palcos del estadio (hospitality corporativa, B2B Sporting): stadium_other según el criterio de palcos de la skill, rótulo que nombra una parte del estadio [relatorio-contas-2022-23.md pág. visor 117: Camarotes 4.574]",
    "destino": "revenue",
    "amountNative": 4.574
   },
@@ -1061,12 +1044,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\")",
    "signoFijo": 1.374,
-   "cat": "matchday_competition",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "stadium_other",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Business Seats = asientos corporativos del estadio, mismo producto B2B que Camarotes (cuadro \"Corporate\" de 2018-19): stadium_other igual que Camarotes en todos los años [relatorio-contas-2022-23.md pág. visor 117: Business Seats 1.374]",
    "destino": "revenue",
    "amountNative": 1.374
   },
@@ -1078,11 +1061,11 @@
    "origen": "verificacion (nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\")",
    "signoFijo": 0.325,
    "cat": "matchday_competition",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Lugares de Leão e VIP: abonos/entradas especiales vendidos dentro de la nota de bilheteira; matchday_competition [relatorio-contas-2022-23.md pág. visor 117: Lugares de Leão e VIP 0.325]",
    "destino": "revenue",
    "amountNative": 0.325
   },
@@ -1139,12 +1122,10 @@
    "origen": "verificacion (nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\")",
    "signoFijo": 0.043,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
    "destino": "revenue",
    "amountNative": 0.043
   },
@@ -1171,12 +1152,10 @@
    "origen": "verificacion (nota que desglosa \"Vendas e prestações de serviços\")",
    "signoFijo": 4.306,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
    "destino": "revenue",
    "amountNative": 4.306
   },
@@ -1262,13 +1241,11 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
    "signoFijo": 5.948,
-   "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
    "destino": "revenue",
    "amountNative": 5.948
   },
@@ -1325,12 +1302,10 @@
    "origen": "verificacion (nota que desglosa \"Outros rendimentos e ganhos\")",
    "signoFijo": 1.033,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
    "destino": "revenue",
    "amountNative": 1.033
   },
@@ -1357,11 +1332,11 @@
    "origen": "verificacion (nota que desglosa \"Rendimentos com transações com jogadores\")",
    "signoFijo": 1.058,
    "cat": "player_sales",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Mecanismo de solidaridad/compensación por formación cobrado: player_sales, igual que Rio Ave, Tondela y Nacional (respuestas de Guido) [relatorio-contas-2022-23.md pág. visor 123: Mecanismo de solidariedade/Compensação por formação 1.058]",
    "destino": "revenue",
    "amountNative": 1.058
   },
@@ -1373,11 +1348,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 3.683,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Costo de mercaderías (tienda): other_expenses, como Moreirense y Vitória Guimarães (Famalicão lo tiene en admin_general: precedente dividido, 2 contra 1) [relatorio-contas-2022-23.md pág. visor 93: Custo das mercadorias vendidas 3.683]",
    "destino": "expense",
    "amountNative": -3.683
   },
@@ -1389,11 +1364,11 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Subcontratos\")",
    "signoFijo": 3.375,
    "cat": "match_organisation_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Catering de los partidos en casa y de la Academia (nota de Subcontratos); gasto de organización de partidos, aunque es mixto [relatorio-contas-2022-23.md pág. visor 119: Refeições 3.375]",
    "destino": "expense",
    "amountNative": -3.375
   },
@@ -1419,12 +1394,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Subcontratos\")",
    "signoFijo": 0.767,
-   "cat": "match_organisation_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Vigilancia de instalaciones: está en Subcontratos junto a Electricidade y Limpeza (gastos de instalaciones), no es seguridad de partidos; como Aseo y vigilancia de Fortaleza (Guido) [relatorio-contas-2022-23.md pág. visor 119: Vigilância 0.767]",
    "destino": "expense",
    "amountNative": -0.767
   },
@@ -1541,12 +1516,10 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 2.578,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía sponsorship_commercial, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "precedente del club, familia (categorias.json decía sponsorship_commercial)",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
    "destino": "expense",
    "amountNative": -2.578
   },
@@ -1678,12 +1651,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")",
    "signoFijo": 0.333,
-   "cat": "match_organisation_expense",
-   "conf": 0.4,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Equipamiento deportivo dentro de FSE: no es gasto de organizar partidos; other_expenses como Equipamento Desportivo de Rio Ave (Guido) [relatorio-contas-2022-23.md pág. visor 119: Equipamentos Desportivos 0.333]",
    "destino": "expense",
    "amountNative": -0.333
   },
@@ -1740,11 +1713,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com o pessoal\")",
    "signoFijo": 57.349,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Remuneración del personal: wages_squad, igual al precedente del club [relatorio-contas-2022-23.md pág. visor 121: Remuneração do pessoal 57.349]",
    "destino": "expense",
    "amountNative": -57.349
   },
@@ -1775,7 +1748,7 @@
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "notaGuido": "precedente del país: 2 clubes (Moreirense, Rio Ave), nota:gastos com o pessoal · Claude 2026-10-15 (subagente Sonnet, seguridad alta): indemnizaciones dentro de gastos de personal; precedentes Fortaleza, Avaí, Lazio [relatorio-contas-2017-18.md L1217]",
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Indemnizaciones por rescisión de contratos de jugadores y personal (Custos com o pessoal): wages_squad, igual a Moreirense (Guido) [relatorio-contas-2011-12.md pág. visor 98: Indemnizações 4.807]",
    "destino": "expense",
    "amountNative": -2.237
   },
@@ -1862,11 +1835,11 @@
    "origen": "verificacion (nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\")",
    "signoFijo": 3.089,
    "cat": "other_amortisation",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Provisiones: other_amortisation según la skill [relatorio-contas-2022-23.md pág. visor 122: Provisões para outros riscos e encargos (Nota 20) 3.089]",
    "destino": "expense",
    "amountNative": -3.089
   },
@@ -2013,11 +1986,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com transações com jogadores\")",
    "signoFijo": 2.126,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Cuota de derechos económicos/plusvalías que se paga a terceros por ventas de jugadores (nota 9): gasto de la transacción, other_expenses con Comissões; alternativa descartada: player_amortisation (no es una compra de jugador) [relatorio-contas-2022-23.md pág. visor 123: Percentagem dos direitos económicos/mais-valias 2.126]",
    "destino": "expense",
    "amountNative": -2.126
   },
@@ -2029,11 +2002,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com transações com jogadores\")",
    "signoFijo": 8.131,
    "cat": "other_expenses",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Comisiones de transferencias/agentes: other_expenses, igual a Sporting 2025 y Rio Ave (Guido) [relatorio-contas-2022-23.md pág. visor 123: Comissões 8.131]",
    "destino": "expense",
    "amountNative": -8.131
   },
@@ -2045,12 +2018,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com transações com jogadores\")",
    "signoFijo": 0.477,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía player_sales, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Mecanismo de solidaridad pagado: gasto de la transacción de jugadores (nota 9), va con Comissões en other_expenses, sin netear contra la venta [relatorio-contas-2022-23.md pág. visor 123: Mecanismo de solidariedade/Compensação por formação 0.477]",
    "destino": "expense",
    "amountNative": -0.477
   },
@@ -2062,11 +2034,11 @@
    "origen": "verificacion (nota que desglosa \"Gastos com transações com jogadores\")",
    "signoFijo": 1.124,
    "cat": "exceptional_items",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Bajas (abates) de derechos en transacciones de jugadores: exceptional_items, como Abates de Rio Ave (Guido); mismo criterio todos los años [relatorio-contas-2022-23.md pág. visor 123: Outros/Abates 1.124]",
    "destino": "expense",
    "amountNative": -1.124
   },
@@ -2185,8 +2157,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 4,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 32,
   "lineasGasto": 46,
   "metaFilas": 2,

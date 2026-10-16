@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2011-12.md",
   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2011-12.pdf",
-  "club": "sporting-cp",
-  "year": null,
-  "generatedAt": "2026-10-15T21:56:50.369Z",
+  "club": "sportingcp-pt",
+  "year": 2012,
+  "generatedAt": "2026-10-15T23:54:38.785Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         12.537
       ],
-      "glosa": "Derechos audiovisuales"
+      "glosa": "Derechos de televisión"
     },
     {
       "label": "Bilheteira e Bilhetes de Época",
@@ -34,7 +34,7 @@
       "values": [
         8.844
       ],
-      "glosa": "Taquilla y abonos"
+      "glosa": "Taquilla y abonos de temporada"
     },
     {
       "label": "Patrocínios e Publicidade",
@@ -144,7 +144,7 @@
       "values": [
         -0.016
       ],
-      "glosa": "Baja de derechos federativos"
+      "glosa": "Baja de derechos deportivos"
     },
     {
       "label": "Cedência de direitos económicos ao Sporting Portugal Fund",
@@ -164,7 +164,7 @@
       "values": [
         2.734
       ],
-      "glosa": "Venta de derechos federativos"
+      "glosa": "Venta de derechos deportivos"
     },
     {
       "label": "Subcontratos",
@@ -174,7 +174,7 @@
       "values": [
         10.848
       ],
-      "glosa": "Subcontratación"
+      "glosa": "Subcontratas"
     },
     {
       "label": "Trabalhos especializados",
@@ -264,7 +264,7 @@
       "values": [
         0.36
       ],
-      "glosa": "Retribuciones de los órganos de administración"
+      "glosa": "Remuneraciones de los órganos de gobierno"
     },
     {
       "label": "Remuneração do Pessoal",
@@ -294,7 +294,7 @@
       "values": [
         3.18
       ],
-      "glosa": "Cargas sociales"
+      "glosa": "Cargas sociales sobre remuneraciones"
     },
     {
       "label": "Seguros",
@@ -324,7 +324,7 @@
       "values": [
         1.068
       ],
-      "glosa": "Amortizaciones excluyendo la amortización de la plantilla"
+      "glosa": "Amortizaciones excluyendo amortización de la plantilla"
     },
     {
       "label": "Ajustamentos a clientes de cobrança duvidosa",
@@ -334,7 +334,7 @@
       "values": [
         0.173
       ],
-      "glosa": "Ajustes por clientes de dudoso cobro"
+      "glosa": "Correcciones valorativas de clientes de dudoso cobro"
     },
     {
       "label": "Provisão para complemento de Pensões de Reforma",
@@ -364,7 +364,7 @@
       "values": [
         0.019
       ],
-      "glosa": "Gastos por traspasos de jugadores"
+      "glosa": "Gastos por transferencias de jugadores"
     },
     {
       "label": "Quotizações",

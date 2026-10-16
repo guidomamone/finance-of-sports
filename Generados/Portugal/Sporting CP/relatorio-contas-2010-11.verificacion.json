@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2010-11.pdf",
  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2010-11.md",
- "generado": "2026-10-15T21:55:08.518Z",
+ "generado": "2026-10-15T23:54:38.767Z",
  "estado": "cola",
- "clubId": null,
- "year": null,
+ "clubId": "sportingcp-pt",
+ "year": 2011,
  "escala": {
   "valor": "miles",
   "escalon": 0,
@@ -21,21 +21,29 @@
    "evidencia": ".md L91 exercício findo em 30 de junho de 2011",
    "autor": "Claude",
    "fecha": "2026-10-15"
+  },
+  {
+   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2010-11.pdf",
+   "campo": "fila",
+   "valor": "18.168",
+   "linea": 2404,
+   "etiqueta": "(Custos)/Proveitos com transacções de passes de jogadores",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "La extracción dejó afuera el neto de transacciones de pases (nota 9), impreso sin paréntesis en el bloque de costos: es proveito (18.168 − 23.288 = (5.120), el subtotal impreso). Con la fila el resultado cierra: 35.366 + 18.168 − 76.062 − 7.331 − 14.132 = −43.991.",
+   "evidencia": "relatorio-contas-2010-11.md L2404 y el subtotal (5.120) de la línea siguiente",
+   "autor": "Claude",
+   "fecha": "2026-10-15"
   }
  ],
  "cola": [
-  "29c4964",
-  "df67b22",
-  "dd862a2",
-  "0319729"
+  "7a30c4d"
  ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": true,
-   "detalle": "35.366 = 35.366",
-   "suma": 35.366,
-   "impreso": 35.366
+   "ok": false,
+   "detalle": "las líneas suman 53.534 y el total impreso dice 35.366"
   },
   {
    "nombre": "total de gastos",
@@ -44,33 +52,46 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 35.366 - gastos 76.062 ± financiero -7.331 ± impuesto 14.132 no da el impreso -43.991",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)",
+   "dif": 1.4210854715202004e-14
+  },
+  {
+   "nombre": "documento del año 2012",
+   "ok": true,
+   "detalle": "ingresos de 2011: 53.534 en este documento y 53.534 en relatorio-contas-2011-12.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2010",
+   "ok": true,
+   "detalle": "ingresos de 2010: 34.195 en relatorio-contas-2009-10.pdf y 34.195 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2010: este chequeo no se puede hacer"
   }
  ],
  "notas": [
+  "ajuste manual: fila \"(Custos)/Proveitos com transacções de passes de jogadores\" (ingreso) 18.168 (2026-10-15, La extracción dejó afuera el neto de transacciones de pases (nota 9), impreso sin paréntesis en el bloque de costos: es proveito (18.168 − 23.288 = (5.120), el subtotal impreso). Con la fila el resultado cierra: 35.366 + 18.168 − 76.062 − 7.331 − 14.132 = −43.991.)",
+  "duda de localizar ya contestada para el club (antes de su alta) (cuadro-duplicado, \"-\"): aceptar, en relatorio-contas-2010-11.pdf",
   "duda de localizar que no afecta la carga: b36 ya abre el renglón de transacciones de jugadores; b37/b38 son conciliaciones de valor contable.",
   "duda de extraer que no afecta la carga: Los totales impresos en L2395 y L2402 excluyen amortizaciones de plantel y venta de jugadores, que se cargan aparte.",
-  "duda de extraer que no afecta la carga: L2405 no tiene etiqueta impresa; es el neto de L2403 y L2404."
+  "duda de extraer que no afecta la carga: L2405 no tiene etiqueta impresa; es el neto de L2403 y L2404.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 35.366,
+  "ingresos": 53.534,
   "gastos": 76.062,
   "financiero": -7.331,
   "impuesto": 14.132,
   "resultadoImpreso": -43.991,
   "resultadoParaCargar": -43.991,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -160,6 +181,14 @@
    "pagina": 107,
    "linea": 3094,
    "origen": "nota que desglosa \"Outros proveitos operacionais\""
+  },
+  {
+   "etiqueta": "(Custos)/Proveitos com transacções de passes de jogadores",
+   "lado": "ingreso",
+   "M": 18.168,
+   "pagina": 88,
+   "linea": 2404,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Subcontratos",
@@ -388,7 +417,7 @@
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -405,12 +434,12 @@
  "impuesto": [
   {
    "etiqueta": "Impostos diferidos",
-   "M": 14.082,
+   "M": -14.082,
    "linea": 2410
   },
   {
    "etiqueta": "Imposto sobre o rendimento",
-   "M": 0.05,
+   "M": -0.05,
    "linea": 2411
   }
  ]

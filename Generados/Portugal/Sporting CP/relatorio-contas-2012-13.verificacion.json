@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2012-13.pdf",
  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2012-13.md",
- "generado": "2026-10-15T21:55:08.559Z",
+ "generado": "2026-10-15T23:54:38.814Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "sportingcp-pt",
  "year": 2013,
  "escala": {
   "valor": "miles",
@@ -38,12 +38,17 @@
   {
    "nombre": "documento del año 2014",
    "ok": true,
-   "detalle": "ingresos de 2013: 48.897 en este documento y 48.896 en relatorio-contas-2013-14.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2013: 48.897 en este documento y 48.897 en relatorio-contas-2013-14.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2012",
+   "ok": true,
+   "detalle": "ingresos de 2012: 46.382 en relatorio-contas-2011-12.pdf y 46.382 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2012: este chequeo no se puede hacer"
   }
  ],
  "notas": [

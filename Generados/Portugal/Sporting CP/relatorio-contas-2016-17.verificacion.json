@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2016-17.pdf",
  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2016-17.md",
- "generado": "2026-10-15T21:55:08.726Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-15T23:54:38.901Z",
+ "estado": "ok",
+ "clubId": "sportingcp-pt",
  "year": 2017,
  "escala": {
   "valor": "miles",
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "f210267"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -45,7 +43,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2016: este chequeo no se puede hacer"
   }
  ],
  "notas": [

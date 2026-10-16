@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2007-08.md",
   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2007-08.pdf",
-  "club": "sporting-cp",
-  "year": null,
-  "generatedAt": "2026-10-15T21:56:50.336Z",
+  "club": "sportingcp-pt",
+  "year": 2008,
+  "generatedAt": "2026-10-15T23:54:39.126Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -34,7 +34,7 @@
       "values": [
         12.505
       ],
-      "glosa": "Taquilla y abonos"
+      "glosa": "Taquilla y abonos de temporada"
     },
     {
       "label": "Patrocinios e Publicidade",
@@ -114,7 +114,7 @@
       "values": [
         2.488
       ],
-      "glosa": "(Gastos)/Ingresos por traspasos de jugadores"
+      "glosa": "(Gastos)/Ingresos por traspasos de derechos de jugadores"
     },
     {
       "label": "Sub-contratos",
@@ -124,7 +124,7 @@
       "values": [
         10.232
       ],
-      "glosa": "Subcontratos"
+      "glosa": "Subcontratación"
     },
     {
       "label": "Trabalhos especializados",
@@ -194,7 +194,7 @@
       "values": [
         0.264
       ],
-      "glosa": "Equipamiento deportivo"
+      "glosa": "Material deportivo"
     },
     {
       "label": "Outros FSE",
@@ -292,7 +292,7 @@
       "values": [
         0.082
       ],
-      "glosa": "Amortizaciones excluyendo plantilla deportiva"
+      "glosa": "Amortizaciones excluyendo depreciación de la plantilla"
     },
     {
       "label": "Provisões e perdas por imparidade excluindo plantel",
@@ -302,7 +302,7 @@
       "values": [
         -0.435
       ],
-      "glosa": "Provisiones y pérdidas por deterioro excluyendo plantilla"
+      "glosa": "Provisiones y pérdidas por deterioro excluyendo la plantilla"
     },
     {
       "label": "Outros custos operacionais",

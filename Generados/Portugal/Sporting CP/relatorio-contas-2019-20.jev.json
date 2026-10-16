@@ -1,0 +1,802 @@
+{
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2019-20.md",
+ "generatedAt": "2026-10-16T00:10:38.960Z",
+ "rubrosHuella": "e28bf57cc6a9900fc70a01b52f4032ac7010464d",
+ "rubros": [
+  {
+   "label": "Merchandising",
+   "lado": "revenue",
+   "page": 129,
+   "section": "nota que desglosa \"Vendas e prestações de serviços\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Bilhetes de época (Gamebox)",
+   "lado": "revenue",
+   "page": 130,
+   "section": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\"",
+   "choice": "season_tickets",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Bilheteira Liga Nacional",
+   "lado": "revenue",
+   "page": 130,
+   "section": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Bilheteira Taça de Portugal",
+   "lado": "revenue",
+   "page": 130,
+   "section": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\"",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Bilheteira Jogos particulares",
+   "lado": "revenue",
+   "page": 130,
+   "section": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Bilheteira Taça da Liga",
+   "lado": "revenue",
+   "page": 130,
+   "section": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\"",
+   "choice": "matchday_competition",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Camarotes",
+   "lado": "revenue",
+   "page": 130,
+   "section": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\"",
+   "choice": "stadium_other",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Business Seats",
+   "lado": "revenue",
+   "page": 130,
+   "section": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\"",
+   "choice": "stadium_other",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Lugares de Leão e VIP",
+   "lado": "revenue",
+   "page": 130,
+   "section": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\"",
+   "choice": "matchday_competition",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 137,
+   "section": "nota que desglosa \"Gastos com transacções de jogadores\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínios e Publicidade",
+   "lado": "revenue",
+   "page": 129,
+   "section": "nota que desglosa \"Vendas e prestações de serviços\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros prémios",
+   "lado": "revenue",
+   "page": 131,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\" > desglose de \"Participação nas Competições Europeias\"",
+   "choice": "competition_bonus",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Participação nas Competições Nacionais",
+   "lado": "revenue",
+   "page": 130,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Participação em Competições Particulares",
+   "lado": "revenue",
+   "page": 130,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "choice": "competition_bonus",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "competition_bonus",
+     0.89
+    ],
+    [
+     "other_income",
+     0.11
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1090
+  },
+  {
+   "label": "Cedência de jogadores",
+   "lado": "expense",
+   "page": 132,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Comissões\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Subsídios à exploração",
+   "lado": "revenue",
+   "page": 130,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Contrato de transmissão de direitos televisivos com a NOS",
+   "lado": "revenue",
+   "page": 129,
+   "section": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Direitos Televisivos\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1094
+  },
+  {
+   "label": "Market Pool da Liga Europa",
+   "lado": "revenue",
+   "page": 129,
+   "section": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Direitos Televisivos\"",
+   "choice": "broadcasting",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "broadcasting",
+     0.72
+    ],
+    [
+     "competition_bonus",
+     0.28
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1062
+  },
+  {
+   "label": "Mecanismo de solidariedade/Compensação por formação",
+   "lado": "expense",
+   "page": 137,
+   "section": "nota que desglosa \"Gastos com transacções de jogadores\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Custo das mercadorias vendidas",
+   "lado": "expense",
+   "page": 98,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Bilheteira Supertaça",
+   "lado": "revenue",
+   "page": 130,
+   "section": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1088
+  },
+  {
+   "label": "Manutenções",
+   "lado": "expense",
+   "page": 132,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Subcontratos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Vigilância",
+   "lado": "expense",
+   "page": 132,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Subcontratos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Limpeza",
+   "lado": "expense",
+   "page": 132,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Subcontratos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Refeições",
+   "lado": "expense",
+   "page": 132,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Subcontratos\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Assistência aos jogos",
+   "lado": "expense",
+   "page": 132,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Subcontratos\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Electricidade",
+   "lado": "expense",
+   "page": 132,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Subcontratos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Organização, deslocações e estadias de jogos",
+   "lado": "expense",
+   "page": 131,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Aquisição de jogadores",
+   "lado": "expense",
+   "page": 132,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Comissões\"",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras comissões",
+   "lado": "expense",
+   "page": 132,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Comissões\"",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Honorários",
+   "lado": "expense",
+   "page": 131,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Trabalhos especializados",
+   "lado": "expense",
+   "page": 131,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Equipamentos desportivos",
+   "lado": "expense",
+   "page": 131,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Combustíveis",
+   "lado": "expense",
+   "page": 131,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidade e Propaganda",
+   "lado": "expense",
+   "page": 131,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Rendas e alugueres",
+   "lado": "expense",
+   "page": 131,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Conservação e reparação",
+   "lado": "expense",
+   "page": 131,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 134,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneração dos órgãos sociais",
+   "lado": "expense",
+   "page": 134,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneração do pessoal",
+   "lado": "expense",
+   "page": 134,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "wages_squad",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Prémios de desempenho e de performance desportiva",
+   "lado": "expense",
+   "page": 134,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Indemnizações",
+   "lado": "expense",
+   "page": 134,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "wages_squad",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Encargos com remunerações",
+   "lado": "expense",
+   "page": 134,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Apuramento para a fase de grupos da Liga Europa",
+   "lado": "revenue",
+   "page": 131,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\" > desglose de \"Participação nas Competições Europeias\"",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1080
+  },
+  {
+   "label": "Depreciações e amortizações excluindo plantel",
+   "lado": "expense",
+   "page": 98,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Performance desportiva na fase de grupos da Liga Europa",
+   "lado": "revenue",
+   "page": 131,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\" > desglose de \"Participação nas Competições Europeias\"",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1078
+  },
+  {
+   "label": "Imparidade de inventários",
+   "lado": "expense",
+   "page": 135,
+   "section": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Bilheteira Liga UEFA",
+   "lado": "revenue",
+   "page": 130,
+   "section": "nota que desglosa \"Vendas e prestações de serviços\" > desglose de \"Bilheteira e Bilhetes de Época\"",
+   "choice": "matchday_competition",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "matchday_competition",
+     0.91
+    ],
+    [
+     "competition_bonus",
+     0.08
+    ],
+    [
+     "broadcasting",
+     0.01
+    ]
+   ],
+   "tokens": 1168
+  },
+  {
+   "label": "Cedência de jogadores de terceiros",
+   "lado": "expense",
+   "page": 136,
+   "section": "nota que desglosa \"Outros gastos e perdas\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Quotizações",
+   "lado": "expense",
+   "page": 136,
+   "section": "nota que desglosa \"Outros gastos e perdas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 136,
+   "section": "nota que desglosa \"Outros gastos e perdas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Multas e penalidades",
+   "lado": "expense",
+   "page": 136,
+   "section": "nota que desglosa \"Outros gastos e perdas\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Prospecção de mercado",
+   "lado": "expense",
+   "page": 136,
+   "section": "nota que desglosa \"Outros gastos e perdas\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Direitos de imagem",
+   "lado": "expense",
+   "page": 136,
+   "section": "nota que desglosa \"Outros gastos e perdas\"",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizações do exercício - Futebol profissional (Nota 12)",
+   "lado": "expense",
+   "page": 136,
+   "section": "nota que desglosa \"Amortizações e perdas de imparidade do plantel\"",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Perdas por imparidade - Futebol profissional (Nota 12)",
+   "lado": "expense",
+   "page": 136,
+   "section": "nota que desglosa \"Amortizações e perdas de imparidade do plantel\"",
+   "choice": "player_impairment",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Passagem às eliminatórias subsequentes da Liga Europa",
+   "lado": "revenue",
+   "page": 131,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\" > desglose de \"Participação nas Competições Europeias\"",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1083
+  },
+  {
+   "label": "Comissões",
+   "lado": "expense",
+   "page": 137,
+   "section": "nota que desglosa \"Gastos com transacções de jogadores\"",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínios e publicidade (nota 27)",
+   "lado": "expense",
+   "page": 132,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Subcontratos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Imparidade de clientes (Nota 15)",
+   "lado": "expense",
+   "page": 135,
+   "section": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\"",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "player_impairment",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1062
+  },
+  {
+   "label": "Percentagem dos direitos económicos/mais-valias",
+   "lado": "expense",
+   "page": 137,
+   "section": "nota que desglosa \"Gastos com transacções de jogadores\"",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "player_amortisation",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Gastos com benefícios pós-emprego (Nota 29)",
+   "lado": "expense",
+   "page": 134,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "wages_squad",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Provisões para outros riscos e encargos (Nota 20)",
+   "lado": "expense",
+   "page": 135,
+   "section": "nota que desglosa \"Provisões e perdas por imparidade excluindo plantel\"",
+   "choice": "other_amortisation",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_amortisation",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1082
+  },
+  {
+   "label": "Venda de direitos desportivos deduzido do valor líquido contabilístico",
+   "lado": "revenue",
+   "page": 137,
+   "section": "nota que desglosa \"Rendimentos com transacções de jogadores\"",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1083
+  },
+  {
+   "label": "Recuperação de custos",
+   "lado": "revenue",
+   "page": 130,
+   "section": "nota que desglosa \"Outros rendimentos e ganhos\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1066
+  }
+ ]
+}

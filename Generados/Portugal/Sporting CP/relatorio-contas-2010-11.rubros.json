@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2010-11.md",
   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2010-11.pdf",
-  "club": "sporting-cp",
-  "year": null,
-  "generatedAt": "2026-10-15T21:55:08.518Z",
+  "club": "sportingcp-pt",
+  "year": 2011,
+  "generatedAt": "2026-10-15T23:54:38.768Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -117,6 +117,16 @@
       "glosa": "Otras"
     },
     {
+      "label": "(Custos)/Proveitos com transacções de passes de jogadores",
+      "lado": "revenue",
+      "page": 88,
+      "section": "ajuste manual",
+      "values": [
+        18.168
+      ],
+      "glosa": "(Gastos)/Ingresos por traspasos de jugadores"
+    },
+    {
       "label": "Subcontratos",
       "lado": "expense",
       "page": 108,
@@ -184,7 +194,7 @@
       "values": [
         0.338
       ],
-      "glosa": "Equipamiento deportivo"
+      "glosa": "Material deportivo"
     },
     {
       "label": "Publicidade e Propaganda",
@@ -204,7 +214,7 @@
       "values": [
         0.68
       ],
-      "glosa": "Otros suministros y servicios exteriores"
+      "glosa": "Otros servicios exteriores"
     },
     {
       "label": "Remunerações Orgãos Sociais",
@@ -224,7 +234,7 @@
       "values": [
         24.663
       ],
-      "glosa": "Remuneraciones del personal"
+      "glosa": "Retribuciones del personal"
     },
     {
       "label": "Indemnizações",
@@ -274,7 +284,7 @@
       "values": [
         0.957
       ],
-      "glosa": "Amortizaciones excluyendo la depreciación de la plantilla"
+      "glosa": "Amortizaciones excluyendo amortización de la plantilla"
     },
     {
       "label": "Ajustamentos a clientes de cobrança duvidosa",

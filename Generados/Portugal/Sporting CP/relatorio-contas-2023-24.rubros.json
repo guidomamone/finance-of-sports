@@ -1,9 +1,9 @@
 {
   "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2023-24.md",
   "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2023-24.pdf",
-  "club": "sporting-cp",
+  "club": "sportingcp-pt",
   "year": 2024,
-  "generatedAt": "2026-10-15T21:55:08.986Z",
+  "generatedAt": "2026-10-15T23:54:39.059Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -34,7 +34,7 @@
       "values": [
         3.003
       ],
-      "glosa": "Tienda online (Loja Verde)"
+      "glosa": "Tienda oficial en línea"
     },
     {
       "label": "Direitos televisivos",
@@ -44,7 +44,7 @@
       "values": [
         27.6
       ],
-      "glosa": "Derechos de televisión"
+      "glosa": "Derechos audiovisuales"
     },
     {
       "label": "Market Pool da Liga Europa",
@@ -64,7 +64,7 @@
       "values": [
         0.685
       ],
-      "glosa": "Otros derechos de televisión"
+      "glosa": "Otros derechos audiovisuales"
     },
     {
       "label": "Bilhetes de época",
@@ -94,7 +94,7 @@
       "values": [
         3.945
       ],
-      "glosa": "Taquilla de la Liga Nacional"
+      "glosa": "Taquilla de Liga Nacional"
     },
     {
       "label": "Business Seats",
@@ -104,7 +104,7 @@
       "values": [
         1.855
       ],
-      "glosa": "Business Seats"
+      "glosa": "Asientos Business"
     },
     {
       "label": "Bilheteira Liga Europa",
@@ -114,7 +114,7 @@
       "values": [
         1.542
       ],
-      "glosa": "Taquilla de la Liga Europa"
+      "glosa": "Taquilla de Liga Europa"
     },
     {
       "label": "Bilheteira Taça de Portugal",
@@ -124,7 +124,7 @@
       "values": [
         0.586
       ],
-      "glosa": "Taquilla de la Copa de Portugal"
+      "glosa": "Taquilla de Copa de Portugal"
     },
     {
       "label": "Lugares de Leão e VIP",
@@ -134,7 +134,7 @@
       "values": [
         0.325
       ],
-      "glosa": "Localidades VIP y Leão"
+      "glosa": "Asientos VIP y Lugares de Leão"
     },
     {
       "label": "Bilheteira Jogos particulares",
@@ -154,7 +154,7 @@
       "values": [
         0.055
       ],
-      "glosa": "Taquilla de la Copa de la Liga"
+      "glosa": "Taquilla de Copa de la Liga"
     },
     {
       "label": "Outros",
@@ -194,7 +194,7 @@
       "values": [
         8.79
       ],
-      "glosa": "Premio por rendimiento por participación en la Liga Europa"
+      "glosa": "Prima por rendimiento por participación en la Liga Europa"
     },
     {
       "label": "Prémio de performance na fase de Grupos da Liga Europa",
@@ -204,7 +204,7 @@
       "values": [
         2.31
       ],
-      "glosa": "Premio por rendimiento en la fase de grupos de la Liga Europa"
+      "glosa": "Prima por rendimiento en la fase de grupos de la Liga Europa"
     },
     {
       "label": "Passagem ao play-off da Liga Europa",
@@ -214,7 +214,7 @@
       "values": [
         0.55
       ],
-      "glosa": "Clasificación al play-off de la Liga Europa"
+      "glosa": "Clasificación para el play-off de la Liga Europa"
     },
     {
       "label": "Outros prémios",
@@ -404,7 +404,7 @@
       "values": [
         6.049
       ],
-      "glosa": "Organización, desplazamientos y estancias de partidos"
+      "glosa": "Organización, desplazamientos y alojamiento para partidos"
     },
     {
       "label": "Trabalhos especializados",
@@ -414,7 +414,7 @@
       "values": [
         5.342
       ],
-      "glosa": "Trabajos especializados"
+      "glosa": "Servicios y trabajos especializados"
     },
     {
       "label": "*Royalties*",
@@ -434,7 +434,7 @@
       "values": [
         2.28
       ],
-      "glosa": "Honorarios profesionales"
+      "glosa": "Honorarios"
     },
     {
       "label": "Publicidade e Propaganda",
@@ -504,7 +504,7 @@
       "values": [
         0.372
       ],
-      "glosa": "Seguros"
+      "glosa": "Primas de seguros"
     },
     {
       "label": "Conservação e reparação",
@@ -514,7 +514,7 @@
       "values": [
         0.615
       ],
-      "glosa": "Conservación y reparaciones"
+      "glosa": "Reparación y conservación"
     },
     {
       "label": "Combustíveis",
@@ -534,7 +534,7 @@
       "values": [
         0.289
       ],
-      "glosa": "Equipamiento deportivo"
+      "glosa": "Material y equipamiento deportivo"
     },
     {
       "label": "Outros",
@@ -554,7 +554,7 @@
       "values": [
         1.086
       ],
-      "glosa": "Retribución de los órganos de gobierno"
+      "glosa": "Retribución de los órganos de administración"
     },
     {
       "label": "Remuneração do pessoal",
@@ -564,7 +564,7 @@
       "values": [
         64.646
       ],
-      "glosa": "Remuneración del personal"
+      "glosa": "Retribución del personal"
     },
     {
       "label": "Encargos com remunerações",
@@ -584,7 +584,7 @@
       "values": [
         4.722
       ],
-      "glosa": "Seguros"
+      "glosa": "Primas de seguros"
     },
     {
       "label": "Prémios de desempenho e de performance desportiva",
@@ -594,7 +594,7 @@
       "values": [
         8.988
       ],
-      "glosa": "Primas de rendimiento y desempeño deportivo"
+      "glosa": "Primas por rendimiento y desempeño deportivo"
     },
     {
       "label": "Indemnizações",
@@ -624,7 +624,7 @@
       "values": [
         5.531
       ],
-      "glosa": "Amortizaciones excluyendo la plantilla deportiva"
+      "glosa": "Amortizaciones y depreciaciones excluyendo plantilla deportiva"
     },
     {
       "label": "Imparidade de clientes (Nota 15)",
@@ -734,7 +734,7 @@
       "values": [
         4.521
       ],
-      "glosa": "Pérdidas por deterioro de valor (Nota 12)"
+      "glosa": "Pérdidas por deterioro (Nota 12)"
     },
     {
       "label": "Percentagem dos direitos económicos/mais-valias",
@@ -744,7 +744,7 @@
       "values": [
         32.442
       ],
-      "glosa": "Porcentaje sobre derechos económicos / plusvalías"
+      "glosa": "Porcentaje de derechos económicos / plusvalías"
     },
     {
       "label": "Comissões",
@@ -774,7 +774,7 @@
       "values": [
         0.113
       ],
-      "glosa": "Otros / Bajas de inmovilizado"
+      "glosa": "Otros / Bajas de activo"
     }
   ]
 }
