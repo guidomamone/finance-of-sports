@@ -1,7 +1,20 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2011-12.pdf",
- "generado": "2026-10-16T00:11:55.337Z",
- "frena": [],
+ "generado": "2026-10-16T00:46:07.905Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "sportingcp-pt ya tiene el ejercicio 2012 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['sportingcp-pt-relatorio-contas-2011-12'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 10 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)",
   "gestión: ningún presidente confirmado cubre 2012 (cierre 2012-06-30); pregunta en la cola (no frena)"
@@ -20,7 +33,7 @@
     "_pag": 96,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía admin_general_expense)"
    },
    {
     "rawLabel": "Direitos Televisivos",
@@ -140,7 +153,7 @@
     "_pag": 97,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)"
    },
    {
     "rawLabel": "Abate de direitos desportivos",
@@ -538,10 +551,8 @@
    "cat": "member_dues",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía admin_general_expense)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Quotizações es la parte de la cuota de los socios del club que cobra la SAD (75% hasta sep-2011, luego 25%; nota 2/3 del propio documento); es cuota social, no \"otros ingresos\" [relatorio-contas-2011-12.md pág. visor 96: Quotizações 2.642]",
    "destino": "revenue",
    "amountNative": 2.642
   },
@@ -722,7 +733,7 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 1.6
@@ -1291,8 +1302,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2011–12 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Sporting CP\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1332,13 +1343,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2011–12 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Sporting CP\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 3,
   "lineasIngreso": 16,
   "lineasGasto": 28,
   "metaFilas": 4,

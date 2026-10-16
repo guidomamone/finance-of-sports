@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2019-20.pdf",
- "generado": "2026-10-16T00:11:57.115Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Cedência de jogadores\" -> other_expenses 0"
-  }
- ],
+ "generado": "2026-10-16T00:46:10.008Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 10 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)",
   "materialidad: \"Participação em Competições Particulares\" va como competition_bonus con 0.75 (las dudas de ingresos suman 0.31% de su lado)",
@@ -416,9 +411,9 @@
     "amountNative": -0.405,
     "disclosureLevel": "aggregated",
     "_pag": 132,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía player_sales, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Outras comissões",
@@ -1427,12 +1422,12 @@
    "origen": "verificacion (nota que desglosa \"Fornecimentos e serviços externos\" > desglose de \"Comissões\")",
    "signoFijo": 0.405,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía player_sales, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): fila de la nota de Comissões (comisión por cesión de jugadores), other_expenses como 2025.",
    "destino": "expense",
    "amountNative": -0.405
   },
@@ -2089,8 +2084,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 28,
   "lineasGasto": 47,
   "metaFilas": 2,

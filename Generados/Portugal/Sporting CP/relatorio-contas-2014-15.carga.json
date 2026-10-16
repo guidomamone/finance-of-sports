@@ -1,7 +1,20 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2014-15.pdf",
- "generado": "2026-10-16T00:11:55.950Z",
- "frena": [],
+ "generado": "2026-10-16T00:46:08.602Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "sportingcp-pt ya tiene el ejercicio 2015 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['sportingcp-pt-relatorio-contas-2014-15'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 10 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)",
   "fx: Regla #0: antes de cargar, confirmar en el documento que NO declara su propio tipo de cambio de cierre; si lo declara, gana ese sobre el de mercado de abajo",
@@ -71,7 +84,7 @@
     "_pag": 107,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)"
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Diferencia de redondeo",
@@ -80,7 +93,7 @@
     "disclosureLevel": "aggregated",
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)"
    },
    {
     "rawLabel": "Participação nas Competições Europeias",
@@ -150,7 +163,7 @@
     "_pag": 108,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)"
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Diferencia de redondeo",
@@ -159,7 +172,7 @@
     "disclosureLevel": "aggregated",
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)"
    },
    {
     "rawLabel": "Cedência de direitos económicos ao Sporting Portugal Fund",
@@ -479,7 +492,7 @@
     "_pag": 113,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía no_es_rubro)"
    },
    {
     "rawLabel": "Direitos de imagem",
@@ -666,8 +679,10 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)",
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "ladoRechazado": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Residual \"Outros\" de la nota de ingresos [relatorio-contas-2014-15.md pág. visor 107: Outros 2.595]",
    "destino": "revenue",
    "amountNative": 2.595
   },
@@ -680,10 +695,8 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Línea de redondeo que agrega el cargador para cerrar el total (other_income, importe de 1 mil euros) [relatorio-contas-2014-15.md pág. visor ?: Diferencia de redondeo 0.001]",
    "destino": "revenue",
    "amountNative": 0.001
   },
@@ -787,8 +800,10 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)",
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "ladoRechazado": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Residual \"Outros\" de la nota de ingresos [relatorio-contas-2014-15.md pág. visor 107: Outros 2.595]",
    "destino": "revenue",
    "amountNative": 0.691
   },
@@ -801,10 +816,8 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Línea de redondeo que agrega el cargador para cerrar el total (other_income, importe de 1 mil euros) [relatorio-contas-2014-15.md pág. visor ?: Diferencia de redondeo 0.001]",
    "destino": "revenue",
    "amountNative": -0.001
   },
@@ -1291,10 +1304,8 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía no_es_rubro)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Diferencia de cambio operacional dentro de Outros gastos y perdas (no es resultado financiero): línea other_expenses, como Tondela (Guido) la carga en other_income [relatorio-contas-2014-15.md pág. visor 113: Diferenças de câmbio desfavoráveis operacionais 0.85]",
    "destino": "expense",
    "amountNative": -0.85
   },
@@ -1426,8 +1437,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2014–15 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Sporting CP\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1472,13 +1483,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2014–15 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Sporting CP\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 3,
   "lineasIngreso": 18,
   "lineasGasto": 33,
   "metaFilas": 2,

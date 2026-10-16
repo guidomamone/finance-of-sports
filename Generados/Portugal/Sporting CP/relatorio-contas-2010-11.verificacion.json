@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2010-11.pdf",
  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2010-11.md",
- "generado": "2026-10-15T23:54:38.767Z",
- "estado": "cola",
+ "generado": "2026-10-16T00:30:34.163Z",
+ "estado": "ok",
  "clubId": "sportingcp-pt",
  "year": 2011,
  "escala": {
@@ -36,9 +36,7 @@
    "fecha": "2026-10-15"
   }
  ],
- "cola": [
-  "7a30c4d"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -77,8 +75,7 @@
   "duda de localizar ya contestada para el club (antes de su alta) (cuadro-duplicado, \"-\"): aceptar, en relatorio-contas-2010-11.pdf",
   "duda de localizar que no afecta la carga: b36 ya abre el renglón de transacciones de jugadores; b37/b38 son conciliaciones de valor contable.",
   "duda de extraer que no afecta la carga: Los totales impresos en L2395 y L2402 excluyen amortizaciones de plantel y venta de jugadores, que se cargan aparte.",
-  "duda de extraer que no afecta la carga: L2405 no tiene etiqueta impresa; es el neto de L2403 y L2404.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L2405 no tiene etiqueta impresa; es el neto de L2403 y L2404."
  ],
  "reintentar": null,
  "reintentado": false,

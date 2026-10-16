@@ -1,7 +1,20 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2021-22.pdf",
- "generado": "2026-10-16T00:11:57.591Z",
- "frena": [],
+ "generado": "2026-10-16T00:46:10.532Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "sportingcp-pt ya tiene el ejercicio 2022 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['sportingcp-pt-relatorio-contas-2021-22'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 10 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)",
   "gastos: ningún total impreso igual a la suma de las líneas (-143.345); queda la suma, verificada por el resultado del ejercicio",
@@ -161,7 +174,7 @@
     "_pag": 130,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)"
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Patrocínios e Publicidade",
@@ -181,7 +194,7 @@
     "_pag": 129,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)"
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Participação na fase de grupos - *UEFA Champions League",
@@ -281,7 +294,7 @@
     "_pag": 130,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)"
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Venda de direitos desportivos",
@@ -1048,8 +1061,10 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)",
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "ladoRechazado": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Residual \"Outros\" de la nota de ingresos [relatorio-contas-2021-22.md pág. visor 130: Outros 0.059]",
    "destino": "revenue",
    "amountNative": 0.059
   },
@@ -1078,8 +1093,10 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)",
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "ladoRechazado": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Residual \"Outros\" de la nota de ingresos [relatorio-contas-2021-22.md pág. visor 130: Outros 0.059]",
    "destino": "revenue",
    "amountNative": 4.076
   },
@@ -1228,8 +1245,10 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, exacto (categorias.json decía other_expenses)",
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "ladoRechazado": true,
+   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Residual \"Outros\" de la nota de ingresos [relatorio-contas-2021-22.md pág. visor 130: Outros 0.059]",
    "destino": "revenue",
    "amountNative": 1.33
   },
@@ -2035,8 +2054,8 @@
  },
  "liga": {
   "valor": "pt-primeiraliga",
-  "fuente": "roster cacheado de \"2021–22 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Sporting CP\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -2076,13 +2095,13 @@
   },
   "liga": {
    "valor": "pt-primeiraliga",
-   "fuente": "roster cacheado de \"2021–22 Primeira Liga\" (tools/club-league-reference/pt.json), coincidencia exacta \"Sporting CP\"",
+   "fuente": "data/club-leagues/pt.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 3,
   "lineasIngreso": 29,
   "lineasGasto": 46,
   "metaFilas": 2,

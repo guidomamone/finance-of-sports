@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2020-21.pdf",
- "generado": "2026-10-16T00:11:57.349Z",
+ "generado": "2026-10-16T00:46:10.275Z",
  "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-15: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 10 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)",
@@ -89,7 +89,7 @@
     "disclosureLevel": "aggregated",
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)"
    },
    {
     "rawLabel": "Participação nas Competições Europeias",
@@ -625,10 +625,8 @@
    "cat": "other_income",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15 (subagente Sonnet): Línea de redondeo que agrega el cargador para cerrar el total (other_income, importe de 1 mil euros) [relatorio-contas-2014-15.md pág. visor ?: Diferencia de redondeo 0.001]",
    "destino": "revenue",
    "amountNative": -0.001
   },

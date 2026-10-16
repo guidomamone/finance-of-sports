@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Sporting CP/relatorio-contas-2016-17.pdf",
  "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2016-17.md",
- "generado": "2026-10-15T23:54:38.901Z",
+ "generado": "2026-10-16T00:30:34.282Z",
  "estado": "ok",
  "clubId": "sportingcp-pt",
  "year": 2017,
@@ -31,6 +31,11 @@
    "dif": 0.0029999999999894555
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2016 de este documento suma ingresos 77.306; el sitio tiene 76.466"
+  },
+  {
    "nombre": "documento del año 2018",
    "ok": true,
    "detalle": "ingresos de 2017: 172.998 en este documento y 172.998 en relatorio-contas-2017-18.pdf (columna del año anterior)"
@@ -39,11 +44,6 @@
    "nombre": "documento del año 2016",
    "ok": true,
    "detalle": "ingresos de 2016: 76.466 en relatorio-contas-2015-16.pdf y 77.306 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2016: este chequeo no se puede hacer"
   }
  ],
  "notas": [

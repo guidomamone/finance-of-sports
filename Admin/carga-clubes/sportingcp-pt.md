@@ -911,6 +911,77 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2011–12 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Sporting CP".
 ```
 
+## 2011
+
+### Ingresos
+
+```text
+2011: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Sporting CP/relatorio-contas-2010-11.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Sporting CP/relatorio-contas-2010-11.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Quotizações | pág. 107, precedente |
+| 2 | Direitos Televisivos | pág. 107, precedente |
+| 3 | Bilheteira e Bilhetes de Época | pág. 107, precedente |
+| 4 | Patrocínios e Publicidade | pág. 107, precedente |
+| 5 | Merchandising e Licenciamento | pág. 107, precedente |
+| 6 | Serviços Directos | pág. 107, precedente |
+| 7 | Outras | pág. 107, precedente |
+| 8 | Participações nas Competições Europeias | pág. 107, precedente |
+| 9 | Participações em Competições Particulares | pág. 107, precedente |
+| 10 | Benefícios contratuais | pág. 107, precedente |
+| 11 | Outras | pág. 107, precedente |
+| 12 | (Custos)/Proveitos com transacções de passes de jogadores | pág. 88, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Subcontratos | pág. 108, precedente |
+| 2 | Trabalhos especializados | pág. 108, precedente |
+| 3 | Organização de Jogos | pág. 108, Jev 1 |
+| 4 | Honorários | pág. 108, precedente |
+| 5 | Comissões | pág. 108, precedente |
+| 6 | Seguros | pág. 108, Claude 0.85 |
+| 7 | Equipamentos Desportivos | pág. 108, precedente |
+| 8 | Publicidade e Propaganda | pág. 108, precedente |
+| 9 | Outros FSE | pág. 108, precedente |
+| 10 | Remunerações Orgãos Sociais | pág. 108, precedente |
+| 11 | Remuneração do Pessoal | pág. 108, precedente |
+| 12 | Indemnizações | pág. 108, precedente |
+| 13 | Encargos com remunerações | pág. 108, precedente |
+| 14 | Seguros | pág. 108, Claude 0.85 |
+| 15 | Outros | pág. 108, precedente |
+| 16 | Amortizações excluindo depreciação do plantel | pág. 88, precedente |
+| 17 | Ajustamentos a clientes de cobrança duvidosa | pág. 109, precedente |
+| 18 | Provisão para complemento de Pensões de Reforma | pág. 109, precedente |
+| 19 | Outras provisões para riscos e encargos | pág. 109, precedente |
+| 20 | Despesas com Transferências de Jogadores | pág. 110, precedente |
+| 21 | Quotizações | pág. 110, precedente |
+| 22 | Imposto de Selo | pág. 110, precedente |
+| 23 | Multas e outras penalidades | pág. 110, precedente |
+| 24 | Penalidades Contratuais | pág. 110, precedente |
+| 25 | Prospecção de Mercado | pág. 110, precedente |
+| 26 | Outros | pág. 110, precedente |
+| 27 | Amortizações do exercício - Futebol profissional | pág. 110, precedente |
+| 28 | Perdas por imparidade - Futebol profissional | pág. 110, precedente |
+
+### Meta
+
+```text
+2011: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): cierre = 2011-06-30. periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)
+2011: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): fila = 18.168. La extracción dejó afuera el neto de transacciones de pases (nota 9), impreso sin paréntesis en el bloque de costos: es proveito (18.168 − 23.288 = (5.120), el subtotal impreso). Con la fila el resultado cierra: 35.366 + 18.168 − 76.062 − 7.331 − 14.132 = −43.991.
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2010–11 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Sporting CP".
+```
+
 ## Fuentes
 
 ### sportingcp-pt-relatorio-contas-2024-25
@@ -991,4 +1062,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Sporting CP/relatorio-contas-2023-24.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### sportingcp-pt-relatorio-contas-2010-11
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Sporting CP/relatorio-contas-2010-11.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
