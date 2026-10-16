@@ -19,6 +19,8 @@ que dice `ESTADO.md` era verdad ese día.
 
 - cargar.mjs y cola.mjs: un `aceptar` de otro año del club vale (y cierra casos) solo con la misma propuesta; si no, la fila va a la
   cola con su propuesta y la nota de lo aceptado (ad). Medido: 12 filas de 11 años ya publicados pasan a la cola; ninguna cambia sola.
+- cargar.mjs: "Outros" (y Otros, Others, Altri...) con la genérica de su lado se carga sin preguntar si el renglón que la abre no dice
+  otra categoría (n). Medido: con la cola real, 7 filas de 4 documentos dejan la cola con la misma categoría; con la cola vacía, 24.
 
 ## Versión 707 — Portugal cargado (salvo lo que espera scripts) y to-do 237 a medias: 14 letras resueltas y medidas (2026-10-16)
 

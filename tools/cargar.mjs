@@ -618,6 +618,8 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   };
   const repetida = (r) => { const ps = padresPor.get(`${norm(r.label)}|${r.tside || ''}`) || []; return ps.length > 1 && new Set(ps.map((pd) => catPadre(pd, r.tside)).filter(Boolean)).size > 1; };
   const enCola = [];
+  const ETIQUETA_GENERICA_RE = /^(?:[a-z]\)|\d+[.)]|[-•])?\s*(?:outros|outras|otros|otras|others|other|altri|altre)\s*(?:\(.*\))?$/;
+  const nl0 = (l) => norm(l).trim();
   const filas = raw.map((r) => {
     const f = { label: r.label, page: r.page, native: r.native, ladoDoc: r.tside || null, origen: r.origen, ...(r.signoFijo !== undefined ? { signoFijo: r.signoFijo } : {}), ...catDe(r.label, r.tside, String(r.origen || '').startsWith('verificacion'), padreDe(r.origen)) };
     if (repetida(r)) {
@@ -650,6 +652,20 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     }
     if (rg?.choque) Object.assign(f, { conf: 0, escalon: 2, choque: rg.choque, fuenteCat: `${f.fuenteCat}; en ${rg.choqueDe} se aceptó ${rg.choque} con otra propuesta: no decide, segunda mirada (to-do 237 ad)` });
     if (rg?.descartar) { f.destino = 'excluida'; f.fuenteCat = 'Guido la descartó en la cola'; return f; }
+    // (to-do 237 n) "OUTROS" CON LA GENÉRICA DE SU LADO. Una etiqueta genérica de lista cerrada (Outros, Outras, Otros, Otras, Others, Other,
+    // Altri, Altre; con o sin marca de lista o nota) cuya propuesta es la genérica de su lado (other_income / other_expenses) se carga sin
+    // preguntar: no hay otra lectura posible de la fila. En el formato SNC cada nota cierra con "Outros" y eso solo eran 96 preguntas en
+    // Portugal; backtest contra la cola: 34 de 34 respuestas de Portugal coinciden. COMPUERTA: el renglón que abre la fila no tiene una
+    // categoría conocida distinta de la genérica (catPadre). Los 2 que no coinciden en la cola son justamente eso: Vila Nova 2025 "Outros"
+    // de la nota "Despesas gerais e administrativas" (admin_general_expense) y Cremonese 2025 "altri". La etiqueta repetida (bajo dos
+    // renglones, clave "outros@renglón") va con la misma regla y la misma compuerta, NO con la categoría del bloque: las 13 respuestas de
+    // la cola dicen la genérica, también bajo "Gastos com pessoal" (Académica 2022-23), donde el bloque habría dado wages_squad. Una
+    // respuesta de la cola gana igual (va antes).
+    const GENERICA = (lado) => (lado === 'revenue' ? 'other_income' : lado === 'expense' ? 'other_expenses' : null);
+    if (!rg?.cat && !ajCat && !aceptable(f) && r.tside && f.cat && f.cat === GENERICA(r.tside) && ETIQUETA_GENERICA_RE.test(nl0(r.label))) {
+      const cp = catPadre(padreDe(r.origen) || 'estado', r.tside);
+      if (!cp || cp === 'estado' || cp === f.cat) Object.assign(f, { conf: 1, escalon: 'generica', fuenteCat: `${f.fuenteCat} · etiqueta genérica con la genérica de su lado (to-do 237 n)` });
+    }
     const nl = norm(r.label);
     const verificadaConLado = String(r.origen || '').startsWith('verificacion') && !!r.tside;
     // Una fila que NO está en la lista de rubros de la etapa 3 y de la que el documento no dice el lado: la etapa 3 la descartó como no-rubro

@@ -438,6 +438,9 @@ Mitigaciones:
  ESCALÓN 6b (to-do 152) si no: la respuesta de OTROS CLUBES DEL MISMO PAÍS. Compuertas: misma etiqueta (claveFamilia), mismo lado, mismo
             contexto (la nota que la abre o, en el estado, el renglón título de arriba: contextoFila() de padres-filas.mjs), respondida
             en al menos 1 club (to-do 215: con 1 decide 59 y acierta 59), todos con la misma categoría. La carga lo dice: "precedente del país: N clubes (...)"
+ ESCALÓN 6c (to-do 237 n) etiqueta genérica de lista cerrada (Outros, Outras, Otros, Otras, Others, Other, Altri, Altre) con la
+            genérica de su lado como propuesta: se carga sin preguntar, salvo que el renglón que la abre tenga una categoría conocida
+            distinta (Vila Nova 2025 "Outros" de "Despesas gerais e administrativas"). También la etiqueta repetida, con la misma compuerta
  ESCALÓN 7  materialidad, sobre lo que todavía iba a la cola: las dudas de un lado suman ≤ 1% de ese lado → las de confianza >= 0,60 se
             cargan con aviso (Versión 386)
  SACAR UNA FILA (to-do 205): una respuesta `descartar` o `corregir --valor no_es_rubro` vale solo para SU documento; la de otro año
