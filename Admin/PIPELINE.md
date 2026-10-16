@@ -738,8 +738,9 @@ Escribir: `--club <id> --ejecutar --escribir` (el valor en `data/`, sin comentar
  ESCALÓN 1  diccionario (vocabulario.mjs; en portugués también "Caixa e depósitos bancários", el rubro del SNC) + términos del club o
             del documento (ajuste `deuda-incluye`); jerarquía de balancete: padre e
             hija no se suman; cuenta D no es deuda. Además propone: deuda corriente + no corriente de la misma etiqueta (exactamente
-            dos filas, a cada lado del total del pasivo no corriente, o, si ese total no tiene nombre, una bajo el título "Passivo não
-            corrente" y otra bajo "Passivo corrente": caja y deuda, mejora 2); las filas de la nota de efectivo si la caja es una parte; el total
+            dos filas, a cada lado del total del pasivo no corriente —también "Total do passivo não corrente" y "Total - Passivo não
+            corrente"—, o, si ese total no tiene nombre, una bajo el título "Passivo não corrente" y otra bajo "Passivo corrente"; el par y
+            las otras familias propuestas, todas en la misma tabla: si se mezclan tablas no decide, deuda mejora 2); las filas de la nota de efectivo si la caja es una parte; el total
             de la nota de deuda si no hay otra fila de deuda
  TABLA DEL BALANCE (deuda, mejora 1) si una familia de deuda o de caja aparece en más de una tabla de las páginas del balance y el
             documento tiene UNA sola tabla con el total del pasivo (o del activo), cuentan solo las filas de esa tabla (un total en texto

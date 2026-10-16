@@ -531,6 +531,10 @@ function propuestaVocabulario(filas, cual, club, extraDeuda = []) {
     if (pares.some(([, p]) => !p)) return null;
     const unicas = m.filter((f) => !repetidas.some(([fam]) => fam === f.familia));
     const elegidas = [...unicas, ...pares.flatMap(([, p]) => p)];
+    // (deuda, mejora 2) TODAS EN LA MISMA TABLA: el par y las otras familias tienen que estar en una sola tabla del balance. Benfica 2023
+    // sumaba el par "Empréstimos obtidos" del balance (pág. 109) con "Empréstimos bancários" y "Empréstimos obrigacionistas" de la tabla
+    // resumen de la pág. 37, que son su desglose. Mezcladas, no decide.
+    if (new Set(elegidas.map((f) => f.tabla ?? 'texto')).size > 1) return null;
     return { escalon: 1, filas: elegidas, como: `vocabulario: ${pares.map(([fam]) => `"${fam}" corriente + no corriente`).join(', ')}`,
       enOtroDoc: (sig) => { const out = []; for (const f of unicas) { const x = sig.find((y) => y.balance && y.familia === f.familia && y.cifras.length > 1); if (!x) return null; out.push(x); } for (const [fam] of pares) { const p = parCorrienteYNoCorriente(sig, fam); if (!p || !p.every((y) => y.cifras.length > 1)) return null; out.push(...p); } return out; } };
   }
@@ -618,7 +622,9 @@ async function pedirJev(body, archivo, ejecutar, extraer) {
 // (en reales), el mismo número.
 // (Versión 451) Las dos filas de una familia de deuda, una a cada lado del total del pasivo no corriente del mismo balance; si no son
 // exactamente dos así, null.
-const TOTAL_NO_CORRIENTE_RE = /^[\s*]*total\s+(de\s+|del\s+)?(non[\s-]?current\s+liabilities|pasivos?\s+no\s+corrientes?|passivo\s+nao\s+circulante|exigivel\s+a\s+longo\s+prazo)/u;
+// (deuda, mejora 2) también el portugués de Portugal: "Total do passivo não corrente" (Porto 2016-17 L867) y "Total - Passivo não corrente"
+// (AVS 2023-24 L506).
+const TOTAL_NO_CORRIENTE_RE = /^[\s*]*total\s*(-\s*)?(de\s+|del\s+|do\s+)?(non[\s-]?current\s+liabilities|pasivos?\s+no\s+corrientes?|passivos?\s+nao\s+(circulante|corrente)s?|exigivel\s+a\s+longo\s+prazo)/u;
 // (caja y deuda, mejora 2) Títulos de sección del pasivo, sobre la etiqueta normalizada y sin ":"; y lo que cierra la sección.
 const SECCION_PNC_RE = /^(passivo|pasivo)s?\s+(nao\s+corrente|no\s+corriente|nao\s+circulante)s?$|^non[\s-]?current\s+liabilities$/u;
 const SECCION_PC_RE = /^(passivo|pasivo)s?\s+(corrente|corriente|circulante)s?$|^current\s+liabilities$/u;
