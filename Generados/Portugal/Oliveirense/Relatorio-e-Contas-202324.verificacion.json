@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202324.pdf",
  "md": "Clubes/Portugal/Oliveirense/Relatorio-e-Contas-202324.md",
- "generado": "2026-10-16T03:04:20.190Z",
+ "generado": "2026-10-16T03:34:30.651Z",
  "estado": "ok",
  "clubId": "oliveirense-pt",
  "year": 2024,
@@ -42,6 +42,11 @@
    "dif": 0.0000013400000000718393
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2023 de este documento suma ingresos 1.145694; el sitio tiene 1.145694"
+  },
+  {
    "nombre": "documento del año 2025",
    "ok": true,
    "detalle": "ingresos de 2024: 1.833554 en este documento y 1.833554 en Relatorio-e-Contas-202425.pdf (columna del año anterior)"
@@ -50,11 +55,6 @@
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2023: 1.145694 en Relatorio-e-Contas-202223.pdf y 1.145694 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   }
  ],
  "notas": [

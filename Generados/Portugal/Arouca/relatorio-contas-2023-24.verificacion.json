@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Arouca/relatorio-contas-2023-24.pdf",
  "md": "Clubes/Portugal/Arouca/relatorio-contas-2023-24.md",
- "generado": "2026-10-16T03:04:19.793Z",
+ "generado": "2026-10-16T03:34:30.283Z",
  "estado": "ok",
  "clubId": "arouca-pt",
  "year": 2024,
@@ -31,6 +31,11 @@
    "dif": 1.3322676295501878e-15
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2023 de este documento suma ingresos 8.77516; el sitio tiene 8.775161"
+  },
+  {
    "nombre": "documento del año 2025",
    "ok": true,
    "detalle": "ingresos de 2024: 14.888051 en este documento y 14.888051 en wf-2024-2025-78053ec5.pdf (columna del año anterior)"
@@ -39,11 +44,6 @@
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2023: 8.77516 en relatorio-contas-2022-23.pdf y 8.77516 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   }
  ],
  "notas": [

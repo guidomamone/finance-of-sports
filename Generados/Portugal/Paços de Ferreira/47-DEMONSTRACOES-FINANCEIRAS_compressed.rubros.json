@@ -1,270 +1,244 @@
 {
-  "md": "Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.md",
-  "pdf": "Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.pdf",
-  "club": "pacosdeferreira-pt",
-  "year": 2020,
-  "generatedAt": "2026-10-16T03:04:32.700Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Vendas de Mercadorias (Merchandising)",
-      "lado": "revenue",
-      "page": 18,
-      "section": "nota que desglosa \"Vendas e serviços prestados\"",
-      "values": [
-        0.039946
-      ],
-      "glosa": "Ventas de mercaderías (Merchandising)"
-    },
-    {
-      "label": "Publicidade",
-      "lado": "revenue",
-      "page": 18,
-      "section": "nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de Serviços\"",
-      "values": [
-        0.534714
-      ],
-      "glosa": "Publicidad"
-    },
-    {
-      "label": "Direitos televisivos",
-      "lado": "revenue",
-      "page": 18,
-      "section": "nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de Serviços\"",
-      "values": [
-        3.8
-      ],
-      "glosa": "Derechos de televisión"
-    },
-    {
-      "label": "Bilhetes, camarotes e cativos",
-      "lado": "revenue",
-      "page": 18,
-      "section": "nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de Serviços\"",
-      "values": [
-        0.13732
-      ],
-      "glosa": "Entradas, palcos y abonos"
-    },
-    {
-      "label": "Competições",
-      "lado": "revenue",
-      "page": 18,
-      "section": "nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de Serviços\"",
-      "values": [
-        0.094267
-      ],
-      "glosa": "Competiciones"
-    },
-    {
-      "label": "Outros",
-      "lado": "revenue",
-      "page": 18,
-      "section": "nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de Serviços\"",
-      "values": [
-        0.031569
-      ],
-      "glosa": "Otros"
-    },
-    {
-      "label": "Subsidios Estado",
-      "lado": "revenue",
-      "page": 18,
-      "section": "nota que desglosa \"Subsídios à exploração\"",
-      "values": [
-        0.01413
-      ],
-      "glosa": "Subvenciones del Estado"
-    },
-    {
-      "label": "Subsidios formação UEFA",
-      "lado": "revenue",
-      "page": 18,
-      "section": "nota que desglosa \"Subsídios à exploração\"",
-      "values": [
-        0.150887
-      ],
-      "glosa": "Subvenciones por formación UEFA"
-    },
-    {
-      "label": "Subsidios Taça de Portugal",
-      "lado": "revenue",
-      "page": 18,
-      "section": "nota que desglosa \"Subsídios à exploração\"",
-      "values": [
-        0.036539
-      ],
-      "glosa": "Subvenciones Copa de Portugal"
-    },
-    {
-      "label": "Outros",
-      "lado": "revenue",
-      "page": 18,
-      "section": "nota que desglosa \"Subsídios à exploração\"",
-      "values": [
-        0.059612
-      ],
-      "glosa": "Otros"
-    },
-    {
-      "label": "Ganhos por aumentos de justo valor",
-      "lado": "revenue",
-      "page": 20,
-      "section": "nota que desglosa \"Outros rendimentos\"",
-      "values": [
-        0.000994
-      ],
-      "glosa": "Ganancias por aumentos del valor razonable"
-    },
-    {
-      "label": "Cedências jogadores",
-      "lado": "revenue",
-      "page": 20,
-      "section": "nota que desglosa \"Outros rendimentos\" > desglose de \"Outros Rendimentos\"",
-      "values": [
-        0.743097
-      ],
-      "glosa": "Cesiones de jugadores"
-    },
-    {
-      "label": "Alienações",
-      "lado": "revenue",
-      "page": 20,
-      "section": "nota que desglosa \"Outros rendimentos\" > desglose de \"Outros Rendimentos\"",
-      "values": [
-        0.000813
-      ],
-      "glosa": "Enajenaciones"
-    },
-    {
-      "label": "Lucros Placard",
-      "lado": "revenue",
-      "page": 20,
-      "section": "nota que desglosa \"Outros rendimentos\" > desglose de \"Outros Rendimentos\"",
-      "values": [
-        0.198257
-      ],
-      "glosa": "Beneficios Placard"
-    },
-    {
-      "label": "Outros",
-      "lado": "revenue",
-      "page": 20,
-      "section": "nota que desglosa \"Outros rendimentos\" > desglose de \"Outros Rendimentos\"",
-      "values": [
-        0.142002
-      ],
-      "glosa": "Otros"
-    },
-    {
-      "label": "Custo das mercadorias vendidas e das matérias consumidas",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        0.030761
-      ],
-      "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
-    },
-    {
-      "label": "Fornecimentos e serviços externos",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        2.425968
-      ],
-      "glosa": "Servicios exteriores"
-    },
-    {
-      "label": "Jogadores",
-      "lado": "expense",
-      "page": 20,
-      "section": "nota que desglosa \"Gastos com o pessoal\" > desglose de \"Remunerações\"",
-      "values": [
-        2.752511
-      ],
-      "glosa": "Jugadores"
-    },
-    {
-      "label": "Treinadores",
-      "lado": "expense",
-      "page": 20,
-      "section": "nota que desglosa \"Gastos com o pessoal\" > desglose de \"Remunerações\"",
-      "values": [
-        0.464919
-      ],
-      "glosa": "Entrenadores"
-    },
-    {
-      "label": "Pessoal Diverso",
-      "lado": "expense",
-      "page": 20,
-      "section": "nota que desglosa \"Gastos com o pessoal\" > desglose de \"Remunerações\"",
-      "values": [
-        0.446796
-      ],
-      "glosa": "Personal diverso"
-    },
-    {
-      "label": "Encargos sobre remunerações",
-      "lado": "expense",
-      "page": 20,
-      "section": "nota que desglosa \"Gastos com o pessoal\" > desglose de \"Outros\"",
-      "values": [
-        0.24777
-      ],
-      "glosa": "Cargas sobre remuneraciones"
-    },
-    {
-      "label": "Seguros de acidentes de trabalho e de doenças profissionais",
-      "lado": "expense",
-      "page": 20,
-      "section": "nota que desglosa \"Gastos com o pessoal\" > desglose de \"Outros\"",
-      "values": [
-        0.314452
-      ],
-      "glosa": "Seguros de accidentes de trabajo y enfermedades profesionales"
-    },
-    {
-      "label": "Outros gastos com o pessoal",
-      "lado": "expense",
-      "page": 20,
-      "section": "nota que desglosa \"Gastos com o pessoal\" > desglose de \"Outros\"",
-      "values": [
-        0.072931
-      ],
-      "glosa": "Otros gastos de personal"
-    },
-    {
-      "label": "Impostos",
-      "lado": "expense",
-      "page": 21,
-      "section": "nota que desglosa \"Outros gastos\"",
-      "values": [
-        0.002133
-      ],
-      "glosa": "Impuestos"
-    },
-    {
-      "label": "Outros",
-      "lado": "expense",
-      "page": 21,
-      "section": "nota que desglosa \"Outros gastos\"",
-      "values": [
-        0.090262
-      ],
-      "glosa": "Otros"
-    },
-    {
-      "label": "Gastos/reversões de depreciação e de amortização",
-      "lado": "expense",
-      "page": 2,
-      "section": "estado",
-      "values": [
-        0.582342
-      ],
-      "glosa": "Gastos/reversiones de depreciación y amortización"
-    }
-  ]
+ "md": "Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.md",
+ "pdf": "Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.pdf",
+ "club": "pacosdeferreira-pt",
+ "year": 2020,
+ "generatedAt": "2026-10-16T03:34:30.670Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Vendas de Mercadorias (Merchandising)",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Vendas e serviços prestados\"",
+   "values": [
+    0.039946
+   ]
+  },
+  {
+   "label": "Publicidade",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de Serviços\"",
+   "values": [
+    0.534714
+   ]
+  },
+  {
+   "label": "Direitos televisivos",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de Serviços\"",
+   "values": [
+    3.8
+   ]
+  },
+  {
+   "label": "Bilhetes, camarotes e cativos",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de Serviços\"",
+   "values": [
+    0.13732
+   ]
+  },
+  {
+   "label": "Competições",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de Serviços\"",
+   "values": [
+    0.094267
+   ]
+  },
+  {
+   "label": "Outros",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Vendas e serviços prestados\" > desglose de \"Prestação de Serviços\"",
+   "values": [
+    0.031569
+   ]
+  },
+  {
+   "label": "Subsidios Estado",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Subsídios à exploração\"",
+   "values": [
+    0.01413
+   ]
+  },
+  {
+   "label": "Subsidios formação UEFA",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Subsídios à exploração\"",
+   "values": [
+    0.150887
+   ]
+  },
+  {
+   "label": "Subsidios Taça de Portugal",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Subsídios à exploração\"",
+   "values": [
+    0.036539
+   ]
+  },
+  {
+   "label": "Outros",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Subsídios à exploração\"",
+   "values": [
+    0.059612
+   ]
+  },
+  {
+   "label": "Ganhos por aumentos de justo valor",
+   "lado": "revenue",
+   "page": 20,
+   "section": "nota que desglosa \"Outros rendimentos\"",
+   "values": [
+    0.000994
+   ]
+  },
+  {
+   "label": "Cedências jogadores",
+   "lado": "revenue",
+   "page": 20,
+   "section": "nota que desglosa \"Outros rendimentos\" > desglose de \"Outros Rendimentos\"",
+   "values": [
+    0.743097
+   ]
+  },
+  {
+   "label": "Alienações",
+   "lado": "revenue",
+   "page": 20,
+   "section": "nota que desglosa \"Outros rendimentos\" > desglose de \"Outros Rendimentos\"",
+   "values": [
+    0.000813
+   ]
+  },
+  {
+   "label": "Lucros Placard",
+   "lado": "revenue",
+   "page": 20,
+   "section": "nota que desglosa \"Outros rendimentos\" > desglose de \"Outros Rendimentos\"",
+   "values": [
+    0.198257
+   ]
+  },
+  {
+   "label": "Outros",
+   "lado": "revenue",
+   "page": 20,
+   "section": "nota que desglosa \"Outros rendimentos\" > desglose de \"Outros Rendimentos\"",
+   "values": [
+    0.142002
+   ]
+  },
+  {
+   "label": "Custo das mercadorias vendidas e das matérias consumidas",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    0.030761
+   ]
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    2.425968
+   ]
+  },
+  {
+   "label": "Jogadores",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Gastos com o pessoal\" > desglose de \"Remunerações\"",
+   "values": [
+    2.752511
+   ]
+  },
+  {
+   "label": "Treinadores",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Gastos com o pessoal\" > desglose de \"Remunerações\"",
+   "values": [
+    0.464919
+   ]
+  },
+  {
+   "label": "Pessoal Diverso",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Gastos com o pessoal\" > desglose de \"Remunerações\"",
+   "values": [
+    0.446796
+   ]
+  },
+  {
+   "label": "Encargos sobre remunerações",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Gastos com o pessoal\" > desglose de \"Outros\"",
+   "values": [
+    0.24777
+   ]
+  },
+  {
+   "label": "Seguros de acidentes de trabalho e de doenças profissionais",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Gastos com o pessoal\" > desglose de \"Outros\"",
+   "values": [
+    0.314452
+   ]
+  },
+  {
+   "label": "Outros gastos com o pessoal",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Gastos com o pessoal\" > desglose de \"Outros\"",
+   "values": [
+    0.072931
+   ]
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "values": [
+    0.002133
+   ]
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "values": [
+    0.090262
+   ]
+  },
+  {
+   "label": "Gastos/reversões de depreciação e de amortização",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "values": [
+    0.582342
+   ]
+  }
+ ]
 }

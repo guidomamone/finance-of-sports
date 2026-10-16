@@ -1,360 +1,325 @@
 {
-  "md": "Clubes/Portugal/AVS/relatorio-contas-2023-24.md",
-  "pdf": "Clubes/Portugal/AVS/relatorio-contas-2023-24.pdf",
-  "club": "avs",
-  "year": 2024,
-  "generatedAt": "2026-10-16T03:04:20.493Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Quotizações",
-      "lado": "revenue",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Cuotas de socios"
-    },
-    {
-      "label": "Receitas de bilheteira",
-      "lado": "revenue",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.023439
-      ],
-      "glosa": "Ingresos por taquilla"
-    },
-    {
-      "label": "Patrocínios, publicidade e corporate",
-      "lado": "revenue",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.213195
-      ],
-      "glosa": "Patrocinios, publicidad y corporate"
-    },
-    {
-      "label": "Receitas de televisão",
-      "lado": "revenue",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.45
-      ],
-      "glosa": "Ingresos por televisión"
-    },
-    {
-      "label": "Merchandising",
-      "lado": "revenue",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.012142
-      ],
-      "glosa": "Merchandising"
-    },
-    {
-      "label": "Competições da UEFA e nacionais",
-      "lado": "revenue",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.122228
-      ],
-      "glosa": "Competiciones de la UEFA y nacionales"
-    },
-    {
-      "label": "Subsídios e donativos de Associações/Federações/Liga",
-      "lado": "revenue",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.227073
-      ],
-      "glosa": "Subvenciones y donaciones de Asociaciones/Federaciones/Liga"
-    },
-    {
-      "label": "Subsídios do Estado e outros entes públicos",
-      "lado": "revenue",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.021038
-      ],
-      "glosa": "Subvenciones del Estado y otras entidades públicas"
-    },
-    {
-      "label": "Donativos de partes não relacionadas",
-      "lado": "revenue",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.003773
-      ],
-      "glosa": "Donaciones de partes no vinculadas"
-    },
-    {
-      "label": "Contribuições/Donativos de partes relacionadas",
-      "lado": "revenue",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Contribuciones/Donaciones de partes vinculadas"
-    },
-    {
-      "label": "Rendimentos de operações extra-futebol não relacionadas com clube (l)",
-      "lado": "revenue",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.033751
-      ],
-      "glosa": "Ingresos de operaciones extrafutbolísticas no relacionadas con el club (l)"
-    },
-    {
-      "label": "Outros ganhos extraordinários",
-      "lado": "revenue",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.351414
-      ],
-      "glosa": "Otras ganancias extraordinarias"
-    },
-    {
-      "label": "Outros rendimentos operacionais (1)",
-      "lado": "revenue",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.036217
-      ],
-      "glosa": "Otros ingresos de explotación (1)"
-    },
-    {
-      "label": "Custo mercadorias vendidas e matérias consumidas",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.032046
-      ],
-      "glosa": "Coste de las mercancías vendidas y materias consumidas"
-    },
-    {
-      "label": "Remunerações do pessoal",
-      "lado": "expense",
-      "page": 29,
-      "section": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)",
-      "values": [
-        2.123752
-      ],
-      "glosa": "Remuneraciones del personal"
-    },
-    {
-      "label": "Encargos sobre Remunerações",
-      "lado": "expense",
-      "page": 29,
-      "section": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)",
-      "values": [
-        0.218715
-      ],
-      "glosa": "Cargas sobre remuneraciones"
-    },
-    {
-      "label": "Indemnizações",
-      "lado": "expense",
-      "page": 29,
-      "section": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)",
-      "values": [
-        0.120249
-      ],
-      "glosa": "Indemnizaciones"
-    },
-    {
-      "label": "Seguro Ac. Trab. e Doenças Profi.",
-      "lado": "expense",
-      "page": 29,
-      "section": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)",
-      "values": [
-        0.195684
-      ],
-      "glosa": "Seguro de accidentes de trabajo y enfermedades profesionales"
-    },
-    {
-      "label": "Gastos com ação social",
-      "lado": "expense",
-      "page": 29,
-      "section": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)",
-      "values": [
-        0.098571
-      ],
-      "glosa": "Gastos de acción social"
-    },
-    {
-      "label": "Outros gastos com Pessoal",
-      "lado": "expense",
-      "page": 29,
-      "section": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)",
-      "values": [
-        0.011849
-      ],
-      "glosa": "Otros gastos de personal"
-    },
-    {
-      "label": "Depreciações de ativos tangíveis",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.019117
-      ],
-      "glosa": "Amortizaciones de activos tangibles"
-    },
-    {
-      "label": "Amortizações de ativos intangíveis exc. atletas",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.019731
-      ],
-      "glosa": "Amortizaciones de activos intangibles exc. atletas"
-    },
-    {
-      "label": "Perdas por imparidade exc. atletas",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Pérdidas por deterioro de valor exc. atletas"
-    },
-    {
-      "label": "Reversões de Provisões/Imparidades exc. Atletas",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Reversiones de provisiones/deterioros de valor exc. atletas"
-    },
-    {
-      "label": "Gastos em dia de jogo",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.126342
-      ],
-      "glosa": "Gastos en día de partido"
-    },
-    {
-      "label": "Gastos com logística e segurança",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.087817
-      ],
-      "glosa": "Gastos de logística y seguridad"
-    },
-    {
-      "label": "Gastos de patrocínios, publicidade e corporate",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.017116
-      ],
-      "glosa": "Gastos de patrocinios, publicidad y corporate"
-    },
-    {
-      "label": "Gastos de actividades relacionadas com \"comercial\"",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Gastos de actividades relacionadas con \"comercial\""
-    },
-    {
-      "label": "Gastos com conservação e reparação",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.115709
-      ],
-      "glosa": "Gastos de conservación y reparación"
-    },
-    {
-      "label": "Gastos com agentes e intermediários",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.0281
-      ],
-      "glosa": "Gastos con agentes e intermediarios"
-    },
-    {
-      "label": "Gastos de operações extra-futebol não relacionadas com o clube (m)",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Gastos de operaciones extrafutbolísticas no relacionadas con el club (m)"
-    },
-    {
-      "label": "Impostos",
-      "lado": "expense",
-      "page": 29,
-      "section": "nota que desglosa \"Gastos extraordinários\"",
-      "values": [
-        0.000978
-      ],
-      "glosa": "Impuestos"
-    },
-    {
-      "label": "Outros",
-      "lado": "expense",
-      "page": 29,
-      "section": "nota que desglosa \"Gastos extraordinários\"",
-      "values": [
-        0.118131
-      ],
-      "glosa": "Otros"
-    },
-    {
-      "label": "Honorários",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        0.094414
-      ],
-      "glosa": "Honorarios"
-    },
-    {
-      "label": "Outros gastos operacionais (1)",
-      "lado": "expense",
-      "page": 16,
-      "section": "estado",
-      "values": [
-        1.084434
-      ],
-      "glosa": "Otros gastos de explotación (1)"
-    }
-  ]
+ "md": "Clubes/Portugal/AVS/relatorio-contas-2023-24.md",
+ "pdf": "Clubes/Portugal/AVS/relatorio-contas-2023-24.pdf",
+ "club": "avs",
+ "year": 2024,
+ "generatedAt": "2026-10-16T03:34:30.920Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Quotizações",
+   "lado": "revenue",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0
+   ]
+  },
+  {
+   "label": "Receitas de bilheteira",
+   "lado": "revenue",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0.023439
+   ]
+  },
+  {
+   "label": "Patrocínios, publicidade e corporate",
+   "lado": "revenue",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0.213195
+   ]
+  },
+  {
+   "label": "Receitas de televisão",
+   "lado": "revenue",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0.45
+   ]
+  },
+  {
+   "label": "Merchandising",
+   "lado": "revenue",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0.012142
+   ]
+  },
+  {
+   "label": "Competições da UEFA e nacionais",
+   "lado": "revenue",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0.122228
+   ]
+  },
+  {
+   "label": "Subsídios e donativos de Associações/Federações/Liga",
+   "lado": "revenue",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0.227073
+   ]
+  },
+  {
+   "label": "Subsídios do Estado e outros entes públicos",
+   "lado": "revenue",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0.021038
+   ]
+  },
+  {
+   "label": "Donativos de partes não relacionadas",
+   "lado": "revenue",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0.003773
+   ]
+  },
+  {
+   "label": "Contribuições/Donativos de partes relacionadas",
+   "lado": "revenue",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0
+   ]
+  },
+  {
+   "label": "Rendimentos de operações extra-futebol não relacionadas com clube (l)",
+   "lado": "revenue",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0.033751
+   ]
+  },
+  {
+   "label": "Outros ganhos extraordinários",
+   "lado": "revenue",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0.351414
+   ]
+  },
+  {
+   "label": "Outros rendimentos operacionais (1)",
+   "lado": "revenue",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0.036217
+   ]
+  },
+  {
+   "label": "Custo mercadorias vendidas e matérias consumidas",
+   "lado": "expense",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0.032046
+   ]
+  },
+  {
+   "label": "Remunerações do pessoal",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)",
+   "values": [
+    2.123752
+   ]
+  },
+  {
+   "label": "Encargos sobre Remunerações",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)",
+   "values": [
+    0.218715
+   ]
+  },
+  {
+   "label": "Indemnizações",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)",
+   "values": [
+    0.120249
+   ]
+  },
+  {
+   "label": "Seguro Ac. Trab. e Doenças Profi.",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)",
+   "values": [
+    0.195684
+   ]
+  },
+  {
+   "label": "Gastos com ação social",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)",
+   "values": [
+    0.098571
+   ]
+  },
+  {
+   "label": "Outros gastos com Pessoal",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Total - Gastos com pessoal\" (escalón: la nota del subtotal)",
+   "values": [
+    0.011849
+   ]
+  },
+  {
+   "label": "Depreciações de ativos tangíveis",
+   "lado": "expense",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0.019117
+   ]
+  },
+  {
+   "label": "Amortizações de ativos intangíveis exc. atletas",
+   "lado": "expense",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0.019731
+   ]
+  },
+  {
+   "label": "Perdas por imparidade exc. atletas",
+   "lado": "expense",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0
+   ]
+  },
+  {
+   "label": "Reversões de Provisões/Imparidades exc. Atletas",
+   "lado": "expense",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0
+   ]
+  },
+  {
+   "label": "Gastos em dia de jogo",
+   "lado": "expense",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0.126342
+   ]
+  },
+  {
+   "label": "Gastos com logística e segurança",
+   "lado": "expense",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0.087817
+   ]
+  },
+  {
+   "label": "Gastos de patrocínios, publicidade e corporate",
+   "lado": "expense",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0.017116
+   ]
+  },
+  {
+   "label": "Gastos de actividades relacionadas com \"comercial\"",
+   "lado": "expense",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0
+   ]
+  },
+  {
+   "label": "Gastos com conservação e reparação",
+   "lado": "expense",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0.115709
+   ]
+  },
+  {
+   "label": "Gastos com agentes e intermediários",
+   "lado": "expense",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0.0281
+   ]
+  },
+  {
+   "label": "Gastos de operações extra-futebol não relacionadas com o clube (m)",
+   "lado": "expense",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0
+   ]
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gastos extraordinários\"",
+   "values": [
+    0.000978
+   ]
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gastos extraordinários\"",
+   "values": [
+    0.118131
+   ]
+  },
+  {
+   "label": "Honorários",
+   "lado": "expense",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    0.094414
+   ]
+  },
+  {
+   "label": "Outros gastos operacionais (1)",
+   "lado": "expense",
+   "page": 16,
+   "section": "estado",
+   "values": [
+    1.084434
+   ]
+  }
+ ]
 }

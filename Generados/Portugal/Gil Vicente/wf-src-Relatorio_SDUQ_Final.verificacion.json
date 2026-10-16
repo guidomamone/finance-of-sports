@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Gil Vicente/wf-src-Relatorio_SDUQ_Final.pdf",
  "md": "Clubes/Portugal/Gil Vicente/wf-src-Relatorio_SDUQ_Final.md",
- "generado": "2026-10-16T03:04:20.040Z",
+ "generado": "2026-10-16T03:34:30.499Z",
  "estado": "ok",
  "clubId": "gilvicente-pt",
  "year": 2022,
@@ -42,6 +42,11 @@
    "dif": 3.552713678800501e-15
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2021 de este documento suma ingresos 6.160553; el sitio tiene 6.160552"
+  },
+  {
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2022: 9.128116 en este documento y 9.128116 en relatorio-contas-2022-23.pdf (columna del año anterior)"
@@ -50,11 +55,6 @@
    "nombre": "documento del año 2021",
    "ok": true,
    "detalle": "ingresos de 2021: 6.160553 en relatorio-contas-2020-21.pdf y 6.160553 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
   }
  ],
  "notas": [

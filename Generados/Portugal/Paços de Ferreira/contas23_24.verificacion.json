@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Paços de Ferreira/contas23_24.pdf",
  "md": "Clubes/Portugal/Paços de Ferreira/contas23_24.md",
- "generado": "2026-10-16T03:04:20.280Z",
+ "generado": "2026-10-16T03:34:30.730Z",
  "estado": "ok",
  "clubId": "pacosdeferreira-pt",
  "year": 2024,
@@ -42,6 +42,11 @@
    "dif": 1.3322676295501878e-15
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2023 de este documento suma ingresos 9.262878; el sitio tiene 9.262878"
+  },
+  {
    "nombre": "documento del año 2025",
    "ok": true,
    "detalle": "ingresos de 2024: 3.416315 en este documento y 3.416315 en contas_2425.pdf (columna del año anterior)"
@@ -50,11 +55,6 @@
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2023: 9.262878 en contas22_23.pdf y 9.262878 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
   }
  ],
  "notas": [

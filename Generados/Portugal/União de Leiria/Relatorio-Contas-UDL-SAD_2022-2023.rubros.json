@@ -1,200 +1,181 @@
 {
-  "md": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2022-2023.md",
-  "pdf": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2022-2023.pdf",
-  "club": "uniaodeleiria-pt",
-  "year": 2023,
-  "generatedAt": "2026-10-16T03:04:20.406Z",
-  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
-  "rubros": [
-    {
-      "label": "Vendas de mercadorias",
-      "lado": "revenue",
-      "page": 18,
-      "section": "nota que desglosa \"Vendas e Prestação de serviços\"",
-      "values": [
-        0.041386
-      ],
-      "glosa": "Ventas de mercaderías"
-    },
-    {
-      "label": "Prestação de serviços",
-      "lado": "revenue",
-      "page": 18,
-      "section": "nota que desglosa \"Vendas e Prestação de serviços\"",
-      "values": [
-        0.555973
-      ],
-      "glosa": "Prestación de servicios"
-    },
-    {
-      "label": "Subsídios à exploração",
-      "lado": "revenue",
-      "page": 3,
-      "section": "estado",
-      "values": [
-        0.005488
-      ],
-      "glosa": "Subvenciones a la explotación"
-    },
-    {
-      "label": "Outros rendimentos",
-      "lado": "revenue",
-      "page": 3,
-      "section": "estado",
-      "values": [
-        0.010666
-      ],
-      "glosa": "Otros ingresos"
-    },
-    {
-      "label": "Custo das mercadorias vendidas e das matérias consumidas",
-      "lado": "expense",
-      "page": 3,
-      "section": "estado",
-      "values": [
-        0.025689
-      ],
-      "glosa": "Coste de las mercaderías vendidas y de las materias consumidas"
-    },
-    {
-      "label": "Serviços especializados",
-      "lado": "expense",
-      "page": 19,
-      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-      "values": [
-        1.192125
-      ],
-      "glosa": "Servicios especializados"
-    },
-    {
-      "label": "Materiais",
-      "lado": "expense",
-      "page": 19,
-      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-      "values": [
-        0.124234
-      ],
-      "glosa": "Materiales"
-    },
-    {
-      "label": "Energia e fluídos",
-      "lado": "expense",
-      "page": 19,
-      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-      "values": [
-        0.005604
-      ],
-      "glosa": "Energía y fluidos"
-    },
-    {
-      "label": "Deslocações e estadas",
-      "lado": "expense",
-      "page": 19,
-      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-      "values": [
-        0.304153
-      ],
-      "glosa": "Desplazamientos y estancias"
-    },
-    {
-      "label": "Rendas e alugueres",
-      "lado": "expense",
-      "page": 19,
-      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-      "values": [
-        0.207124
-      ],
-      "glosa": "Arrendamientos y alquileres"
-    },
-    {
-      "label": "Serviços diversos (*)",
-      "lado": "expense",
-      "page": 19,
-      "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
-      "values": [
-        0.087834
-      ],
-      "glosa": "Servicios diversos (*)"
-    },
-    {
-      "label": "Remunerações do pessoal",
-      "lado": "expense",
-      "page": 20,
-      "section": "nota que desglosa \"Gastos com o pessoal\"",
-      "values": [
-        1.043239
-      ],
-      "glosa": "Sueldos y salarios"
-    },
-    {
-      "label": "Indemnizações",
-      "lado": "expense",
-      "page": 20,
-      "section": "nota que desglosa \"Gastos com o pessoal\"",
-      "values": [
-        0.031
-      ],
-      "glosa": "Indemnizaciones"
-    },
-    {
-      "label": "Encargos sobre remunerações",
-      "lado": "expense",
-      "page": 20,
-      "section": "nota que desglosa \"Gastos com o pessoal\"",
-      "values": [
-        0.097499
-      ],
-      "glosa": "Cargas sociales"
-    },
-    {
-      "label": "Seguros",
-      "lado": "expense",
-      "page": 20,
-      "section": "nota que desglosa \"Gastos com o pessoal\"",
-      "values": [
-        0.033433
-      ],
-      "glosa": "Seguros"
-    },
-    {
-      "label": "Outros gastos com pessoal",
-      "lado": "expense",
-      "page": 20,
-      "section": "nota que desglosa \"Gastos com o pessoal\"",
-      "values": [
-        0.18801
-      ],
-      "glosa": "Otros gastos de personal"
-    },
-    {
-      "label": "Impostos",
-      "lado": "expense",
-      "page": 21,
-      "section": "nota que desglosa \"Outros gastos\"",
-      "values": [
-        0.003984
-      ],
-      "glosa": "Impuestos"
-    },
-    {
-      "label": "Outros gastos e perdas",
-      "lado": "expense",
-      "page": 21,
-      "section": "nota que desglosa \"Outros gastos\"",
-      "values": [
-        0.093447
-      ],
-      "glosa": "Otros gastos y pérdidas"
-    },
-    {
-      "label": "Gastos/reversões de depreciação e de amortização",
-      "lado": "expense",
-      "page": 3,
-      "section": "estado",
-      "values": [
-        0.039271
-      ],
-      "glosa": "Gastos/reversiones por depreciación y amortización"
-    }
-  ]
+ "md": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2022-2023.md",
+ "pdf": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2022-2023.pdf",
+ "club": "uniaodeleiria-pt",
+ "year": 2023,
+ "generatedAt": "2026-10-16T03:34:30.843Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Vendas de mercadorias",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Vendas e Prestação de serviços\"",
+   "values": [
+    0.041386
+   ]
+  },
+  {
+   "label": "Prestação de serviços",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Vendas e Prestação de serviços\"",
+   "values": [
+    0.555973
+   ]
+  },
+  {
+   "label": "Subsídios à exploração",
+   "lado": "revenue",
+   "page": 3,
+   "section": "estado",
+   "values": [
+    0.005488
+   ]
+  },
+  {
+   "label": "Outros rendimentos",
+   "lado": "revenue",
+   "page": 3,
+   "section": "estado",
+   "values": [
+    0.010666
+   ]
+  },
+  {
+   "label": "Custo das mercadorias vendidas e das matérias consumidas",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado",
+   "values": [
+    0.025689
+   ]
+  },
+  {
+   "label": "Serviços especializados",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "values": [
+    1.192125
+   ]
+  },
+  {
+   "label": "Materiais",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "values": [
+    0.124234
+   ]
+  },
+  {
+   "label": "Energia e fluídos",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "values": [
+    0.005604
+   ]
+  },
+  {
+   "label": "Deslocações e estadas",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "values": [
+    0.304153
+   ]
+  },
+  {
+   "label": "Rendas e alugueres",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "values": [
+    0.207124
+   ]
+  },
+  {
+   "label": "Serviços diversos (*)",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Fornecimentos e serviços externos\"",
+   "values": [
+    0.087834
+   ]
+  },
+  {
+   "label": "Remunerações do pessoal",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "values": [
+    1.043239
+   ]
+  },
+  {
+   "label": "Indemnizações",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "values": [
+    0.031
+   ]
+  },
+  {
+   "label": "Encargos sobre remunerações",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "values": [
+    0.097499
+   ]
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "values": [
+    0.033433
+   ]
+  },
+  {
+   "label": "Outros gastos com pessoal",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Gastos com o pessoal\"",
+   "values": [
+    0.18801
+   ]
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "values": [
+    0.003984
+   ]
+  },
+  {
+   "label": "Outros gastos e perdas",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Outros gastos\"",
+   "values": [
+    0.093447
+   ]
+  },
+  {
+   "label": "Gastos/reversões de depreciação e de amortização",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado",
+   "values": [
+    0.039271
+   ]
+  }
+ ]
 }

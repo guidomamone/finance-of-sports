@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Torreense/SAD_RelatorioContas2022-2023.pdf",
  "md": "Clubes/Portugal/Torreense/SAD_RelatorioContas2022-2023.md",
- "generado": "2026-10-16T03:04:20.385Z",
+ "generado": "2026-10-16T03:34:30.825Z",
  "estado": "ok",
  "clubId": "torreense-pt",
  "year": 2023,
@@ -33,6 +33,11 @@
    "dif": 9.71445146547012e-16
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2022 de este documento suma ingresos 2.334103; el sitio tiene 2.334102"
+  },
+  {
    "nombre": "documento del año 2024",
    "ok": true,
    "detalle": "ingresos de 2023: 5.524037 en este documento y 5.524037 en SAD_RelatorioContas2023-2024.pdf (columna del año anterior)"
@@ -41,16 +46,6 @@
    "nombre": "documento del año 2022",
    "ok": true,
    "detalle": "ingresos de 2022: 2.334103 en SAD_RelatorioContas2021-2022.pdf y 2.334103 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "ingresos y resultado coinciden con lo impreso a 0,01% o menos y el otro total no está impreso (queda determinado): no hace falta la revisión del primer año (to-do 214, escalón 2)"
   }
  ],
  "notas": [
