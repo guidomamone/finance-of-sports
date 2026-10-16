@@ -203,6 +203,9 @@ window.RANKINGS["pt-primeiraliga"] = {
   2016: {
     leagueSize: null,
     clubs: [
+      { id:"benfica-pt", revenue:230.886, reportType:"official_balance_sheet",
+        sourceId:"benfica-pt-relatorio-contas-2015-16",
+        mix:[["Cuotas Sociales",0.353],["Comercial / Sponsors",25.777],["Estadio",24.096],["Televisión",37.118],["Premios por competencias",38.886],["Venta de Jugadores",90.918],["Otros ingresos",13.739]] },
       { id:"porto-pt", revenue:171.274, reportType:"official_balance_sheet",
         sourceId:"porto-pt-relatorio-contas-consolidadas-2015-16",
         mix:[["Cuotas Sociales",5.406],["Comercial / Sponsors",22.566],["Estadio",16.27],["Televisión",24.773],["Premios por competencias",12.882],["Venta de Jugadores",84.217],["Otros ingresos",5.16]] },

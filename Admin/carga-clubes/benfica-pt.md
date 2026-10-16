@@ -609,6 +609,94 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2017–18 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Benfica".
 ```
 
+## 2016
+
+### Ingresos
+
+```text
+2016: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Benfica/relatorio-contas-2015-16.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Benfica/relatorio-contas-2015-16.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | RECEITAS DE TELEVISÃO | pág. 113, Jev 1 |
+| 2 | PATROCÍNIOS E PUBLICIDADE | pág. 113, Jev 1 |
+| 3 | CORPORATE | pág. 113, precedente |
+| 4 | RECEITAS DE BILHETEIRA | pág. 113, Jev 1 |
+| 5 | BILHETES DE ÉPOCA | pág. 113, precedente |
+| 6 | CACHETS | pág. 113, precedente |
+| 7 | RENDAS DE ESPAÇO | pág. 113, precedente |
+| 8 | QUOTIZAÇÕES | pág. 113, precedente |
+| 9 | OUTROS | pág. 113, Claude 0.85 |
+| 10 | PRÉMIOS DA UEFA | pág. 114, Jev 0.95 |
+| 11 | ROVALTIES | pág. 114, Jev 0.92 |
+| 12 | INDEMNIZAÇÕES DE SEGUROS | pág. 114, Jev 1 |
+| 13 | ASSISTÊNCIA TÉCNICA | pág. 114, Jev 0.95 |
+| 14 | OUTROS RENDIMENTOS OPERACIONAIS | pág. 114, Claude 0.8 |
+| 15 | Alienações de direitos de atletas | pág. 120, Claude 0.93 |
+| 16 | Outros rendimentos e ganhos | pág. 120, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | TRABALHOS ESPECIALIZADOS | pág. 115, precedente |
+| 2 | DESLOCAÇÕES E ESTADAS | pág. 115, precedente |
+| 3 | HONORÁRIOS | pág. 115, precedente |
+| 4 | SUBCONTRATOS | pág. 115, precedente |
+| 5 | PUBLICIDADE E PROPAGANDA | pág. 115, Jev 1 |
+| 6 | EQUIPAMENTO DESPORTIVO | pág. 115, precedente |
+| 7 | SERVIÇOS DE CATERING/SOFTDRINK | pág. 115, precedente |
+| 8 | CONSERVAÇÃO E REPARAÇÃO | pág. 115, precedente |
+| 9 | ELETRICIDADE | pág. 115, Jev 1 |
+| 10 | LICENÇA MARCA BENFICA | pág. 115, precedente |
+| 11 | VIGILÂNCIA E SEGURANÇA | pág. 115, precedente |
+| 12 | RENDAS E ALUGUERES | pág. 115, Jev 0.96 |
+| 13 | OUTROS FORNECIMENTOS E SERVIÇOS | pág. 115, precedente |
+| 14 | REMINERAÇÕES FIXAS | pág. 116, precedente |
+| 15 | REMINERAÇÕES VARIÁVEIS | pág. 116, precedente |
+| 16 | REMINERAÇÕES FIXAS | pág. 116, precedente |
+| 17 | REMINERAÇÕES VARIÁVEIS | pág. 116, precedente |
+| 18 | INDEMNIZAÇÕES | pág. 116, precedente |
+| 19 | BENEFÍCIOS PÓS-EMPREGO | pág. 116, precedente |
+| 20 | ENCARGOS SOBRE REMUNERAÇÕES | pág. 116, precedente |
+| 21 | SEGUROS DE ACIDENTES DE TRABALHO | pág. 116, precedente |
+| 22 | OUTROS GASTOS COM PESSOAL | pág. 116, precedente |
+| 23 | EDIFÍCIOS E OUTRAS CONSTRUÇÕES | pág. 118, precedente |
+| 24 | EQUIPAMENTO BÁSICO | pág. 118, precedente |
+| 25 | EQUIPAMENTO DE TRANSPORTE | pág. 118, precedente |
+| 26 | FERRAMENTAS E UTENSÍLIOS | pág. 118, Claude 0.85 |
+| 27 | EQUIPAMENTO ADMINISTRATIVO | pág. 118, precedente |
+| 28 | OUTROS ATIVOS TANGÍVEIS | pág. 118, precedente |
+| 29 | DIREITOS DE TV | pág. 118, Jev 1 |
+| 30 | DIREITO DE UTILIZAÇÃO DA MARCA | pág. 118, precedente |
+| 31 | PROGRAMAS DE COMPUTADOR | pág. 118, precedente |
+| 32 | GALERIA COMERCIAL | pág. 118, Claude 0.88 |
+| 33 | REDUÇÃO DE PROVISÕES PARA OUTROS RISCOS | pág. 119, Claude 0.85 |
+| 34 | REFORÇO DE IMPARIDADES DE CLIENTES/DEVEDORES | pág. 119, Jev 0.92 |
+| 35 | REDUÇÃO DE IMPARIDADES DE CLIENTES/DEVEDORES | pág. 119, Claude 0.8 |
+| 36 | IMPOSTOS | pág. 119, Jev 0.96 |
+| 37 | OUTROS GASTOS E PERDAS OPERACIONAIS | pág. 119, Jev 1 |
+| 38 | Amortizações de direitos de atletas | pág. 120, precedente |
+| 39 | Reforço de imparidades | pág. 120, Claude 0.93 |
+| 40 | Gastos associados a alienações de direitos de atletas | pág. 120, precedente |
+| 41 | Abates de direitos de atletas | pág. 120, precedente |
+| 42 | Alienações de direitos de atletas | pág. 120, precedente |
+| 43 | Outros gastos e perdas | pág. 120, Jev 0.99 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2015–16 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Benfica".
+```
+
 ## 2014
 
 ### Ingresos
@@ -1124,4 +1212,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/relatorio-contas-2013-14-pos-AG.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### benfica-pt-relatorio-contas-2015-16
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/relatorio-contas-2015-16.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
