@@ -242,7 +242,12 @@ llegue acá.
     ah) `medir-cargar.mjs` NO SE PUEDE ACOTAR (2026-10-15, medición de la 237 y: ~6 min por corrida, dos corridas, sobre los ~570 documentos con
        categorías de todos los países, cuando el cambio solo actúa en Clubes/Portugal/). Escalón posible: `--lista <archivo>` y `--dir <carpeta>`
        para medir solo lo que el cambio puede tocar; la corrida completa queda para los cambios que afectan a todos (escalera de categorías).
-       Mirar también si recarga el sitio o los registros por documento (si es así, cargarlos una vez).
+       CAUSA DE LA LENTITUD (mirado): lanza `node tools/cargar.mjs <pdf>` como proceso nuevo por cada documento y en serie (execFileSync,
+       L49); cada uno arranca Node y relee el sitio entero y los registros grandes (cola, ajustes, inventario): ~0,6 s × 570. Escalones, de
+       menos a más riesgo: (1) en paralelo, un pool de ~8 procesos (la Mac tiene 10 núcleos) con una copia de la cola por proceso, sin tocar
+       la lógica: ~6 min -> ~1 min; (2) un solo proceso que llame a `proponer()` (ya exportada) con el sitio y los registros leídos una vez,
+       cuidando sus efectos al costado (agregarCaso, categorias-aprendidas): compuerta, que --comparar dé idéntico contra la versión de
+       procesos. Una base de datos no lo resuelve (el costo es arrancar y releer, no consultar) y suma infraestructura a un sitio estático.
 238. LLEVAR A 0 LOS ESTADOS INTERMEDIOS DEL INVENTARIO (pedido de Guido, 2026-10-15). El objetivo no es borrar documentos de la lista
    sino que todo lo que está frenado a mitad de camino y se puede cargar termine cargado en el sitio. Estados intermedios: `listo`
    (transcripto y validado, falta el lote), `pendiente-segunda-voz`, `revisar`, `listo-para-jev`, `sin-rubros`, `sin-tablas` y
