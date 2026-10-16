@@ -1,21 +1,9 @@
 {
  "pdf": "Clubes/Portugal/Maritimo/Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.pdf",
- "generado": "2026-10-16T03:41:07.679Z",
- "frena": [
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  },
-  {
-   "etapa": "tie-out-resultado",
-   "motivo": "resultado: ingresos 6.019458 + gastos -10.598521 + netInterest 0.055325 + tax 0 = -4.523738 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" -4.496269)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "gastos: las filas suman -10.558723 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
-  }
- ],
+ "generado": "2026-10-16T03:51:53.548Z",
+ "frena": [],
  "avisos": [
+  "gastos: ningún total impreso igual a la suma de las líneas (-10.549663); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2024 (cierre 2024-06-30); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -93,19 +81,19 @@
     "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)"
-   }
-  ],
-  "expenseLines": [
+   },
    {
     "rawLabel": "Juros",
-    "normalizedCategory": "other_expenses",
-    "amountNative": -0.00906,
+    "normalizedCategory": "other_income",
+    "amountNative": 0.00906,
     "disclosureLevel": "aggregated",
     "_pag": 41,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
-   },
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
    {
     "rawLabel": "Subcontratos",
     "normalizedCategory": "admin_general_expense",
@@ -417,11 +405,24 @@
    "assetSales": 0,
    "netInterest": 0.055325,
    "tax": 0,
+   "extraRows": [
+    {
+     "label": "Juros e gastos similares suportados",
+     "value": 0.055325
+    },
+    {
+     "label": "Imposto sobre o rendimento",
+     "value": null
+    }
+   ],
+   "incluidoEn": {
+    "broadcasting": "sponsorship_commercial"
+   },
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 6.028518,
-   "officialTotalExpenses": null,
-   "officialPAT": null
+   "officialTotalExpenses": 10.549663,
+   "officialPAT": -4.496269
   },
   "source": {
    "id": "maritimo-pt-futebol-sad-relatorio-e-contas-30jun24",
@@ -448,7 +449,32 @@
  },
  "clubId": "maritimo-pt",
  "year": 2024,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Maritimo/Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.pdf",
+   "campo": "fila",
+   "valor": "9.060",
+   "linea": 1588,
+   "etiqueta": "Juros",
+   "lado": "ingreso",
+   "reemplaza": "Juros",
+   "motivo": "Claude 2026-10-16 (lote 82): la fila está dentro de la nota 'Outros rendimentos' (9.060 + 2.113.905 + 44.990 + 1.972.199 = 4.140.154; total impreso 4.140.153), pero la extracción la puso como gasto; es ingreso. Con el ajuste la carga cierra con el resultado impreso (-4.496.269). Como Marítimo 2023 (to-do 237 w)",
+   "evidencia": "Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.md L1586-1593",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  },
+  {
+   "pdf": "Clubes/Portugal/Maritimo/Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.pdf",
+   "campo": "incluye",
+   "valor": "broadcasting",
+   "linea": null,
+   "categoria": "sponsorship_commercial",
+   "motivo": "Claude 2026-10-16 (lote 82): la nota de Vendas e prestação de serviços no tiene renglón de TV; el documento dice que la variación de Publicidade e Patrocínios se explica por la baja de los derechos de transmisión televisiva: la TV está dentro de ese renglón",
+   "evidencia": "Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.md L1594, L715",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "seleccion": {
   "filas": 40,
   "notasUsadas": [],
@@ -518,23 +544,6 @@
    "amountNative": 0.938802
   },
   {
-   "label": "Juros",
-   "page": 41,
-   "native": 0.00906,
-   "ladoDoc": "expense",
-   "origen": "verificacion (nota que desglosa \"Outros rendimentos\")",
-   "signoFijo": 0.00906,
-   "cat": "other_expenses",
-   "conf": 1,
-   "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
-   "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-15: la fila pasa a ingreso con ajuste 'fila' (intereses dentro de Outros rendimentos).",
-   "destino": "expense",
-   "amountNative": -0.00906
-  },
-  {
    "label": "Transferências de atletas",
    "page": 41,
    "native": 2.113905,
@@ -578,6 +587,21 @@
    "enLista": true,
    "destino": "revenue",
    "amountNative": 1.972199
+  },
+  {
+   "label": "Juros",
+   "page": 41,
+   "native": 0.00906,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.00906,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.00906
   },
   {
    "label": "Subcontratos",
@@ -1053,32 +1077,35 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"Vendas e serviços prestados\")": "gastos con signo",
    "verificacion (estado)": "gastos sin signo (se invierten)",
-   "verificacion (nota que desglosa \"Outros rendimentos\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Outros rendimentos\")": "gastos con signo",
+   "verificacion (ajuste manual)": "gastos con signo",
    "verificacion (nota que desglosa \"Fornecimentos e serviços externos\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Gastos com o pessoal\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Outros gastos\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 6.019458,
-  "expSum": -10.558723,
+  "revSum": 6.028518,
+  "expSum": -10.549663,
   "officialTotalRevenue": 6.028518,
-  "officialTotalExpenses": null,
-  "officialPAT": null,
+  "officialTotalExpenses": 10.549663,
+  "officialPAT": -4.496269,
   "verificacion": {
-   "ingresos": "impreso"
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -4.496269,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
   },
   "revImpreso": {
    "label": "total de ingresos (verificado)",
@@ -1134,10 +1161,10 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 3,
-  "lineasIngreso": 7,
-  "lineasGasto": 31,
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 8,
+  "lineasGasto": 30,
   "metaFilas": 2,
   "excluidas": 0
  }

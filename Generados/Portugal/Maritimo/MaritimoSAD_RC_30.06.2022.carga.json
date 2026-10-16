@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2022.pdf",
- "generado": "2026-10-16T03:41:07.890Z",
- "frena": [
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-16T03:51:53.764Z",
+ "frena": [],
  "avisos": [
   "gestión: ningún presidente confirmado cubre 2022 (cierre 2022-06-30); pregunta en la cola (no frena)"
  ],
@@ -413,6 +408,12 @@
      "value": -0.175346
     }
    ],
+   "incluidoEn": {
+    "broadcasting": {
+     "en": "sponsorship_commercial",
+     "posible": true
+    }
+   },
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 14.21389,
@@ -444,7 +445,20 @@
  },
  "clubId": "maritimo-pt",
  "year": 2022,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2022.pdf",
+   "campo": "incluye",
+   "valor": "broadcasting",
+   "linea": null,
+   "categoria": "sponsorship_commercial",
+   "posible": true,
+   "motivo": "Claude 2026-10-16 (lote 82): la nota de Vendas e prestação de serviços (Publicidade e patrocínios, Cedências, Bilheteira, Outros) no tiene renglón de TV, y el documento atribuye la variación de Vendas e Prestações de Serviços a los derechos de transmisión televisiva; Marítimo 2024 dice que están en Publicidade e Patrocínios. Posible porque este año no nombra el renglón",
+   "evidencia": "MaritimoSAD_RC_30.06.2022.md L811",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "seleccion": {
   "filas": 40,
   "notasUsadas": [],
@@ -1047,12 +1061,6 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"Vendas e serviços prestados\")": "gastos con signo",
@@ -1141,8 +1149,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 6,
   "lineasGasto": 31,
   "metaFilas": 3,

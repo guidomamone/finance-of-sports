@@ -1,7 +1,7 @@
 {
  "md": "Clubes/Portugal/Maritimo/MaritimoSAD_RC_30.06.2023.md",
- "generatedAt": "2026-10-16T03:41:05.882Z",
- "rubrosHuella": "c983273bdded99de91ae8ba36c244863b8944717",
+ "generatedAt": "2026-10-16T03:51:51.609Z",
+ "rubrosHuella": "f05e93424beb773a02e5aa7513d60d65ca5d020c",
  "rubros": [
   {
    "label": "Publicidade e patrocínios",
@@ -50,11 +50,29 @@
   },
   {
    "label": "Juros",
-   "lado": "expense",
+   "lado": "revenue",
    "page": 44,
-   "section": "nota que desglosa \"Outros rendimentos\"",
-   "choice": "other_expenses",
-   "confidence": 0.84,
+   "section": "ajuste manual",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Imparidade de dívidas a receber (perdas/reversões)",
+   "lado": "revenue",
+   "page": 33,
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Provisões (aumentos/reduções)",
+   "lado": "revenue",
+   "page": 33,
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+   "choice": "other_income",
+   "confidence": 1,
    "desdeCache": true
   },
   {
@@ -281,52 +299,6 @@
    "choice": "depreciation",
    "confidence": 0.67,
    "desdeCache": true
-  },
-  {
-   "label": "Imparidade de dívidas a receber (perdas/reversões)",
-   "lado": "revenue",
-   "page": 33,
-   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
-   "choice": "other_income",
-   "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1115
-  },
-  {
-   "label": "Provisões (aumentos/reduções)",
-   "lado": "revenue",
-   "page": 33,
-   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
-   "choice": "other_income",
-   "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1094
   }
  ]
 }
