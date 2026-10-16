@@ -19,6 +19,11 @@
 //   node tools/medir-verificar.mjs --lista Admin/lotes/prueba-mediana.txt --salida /tmp/antes.jsonl
 //   node tools/medir-verificar.mjs --lista Admin/lotes/prueba-mediana.txt --salida /tmp/despues.jsonl
 //   node tools/medir-verificar.mjs --comparar /tmp/antes.jsonl /tmp/despues.jsonl
+//
+// --pasadas N (default 1): corre verificar.mjs N veces antes de restaurar. Con 2, cada documento ve la verificación NUEVA de su vecino
+// (el chequeo del año vecino lee del .verificacion.json del otro con qué lectura y escalón cerró): hace falta para un cambio que cambia
+// cómo cierra un documento. Antes y después, con el mismo N.
+// --script <tools/archivo.mjs> (default tools/verificar.mjs): para medir el ANTES con una copia de la versión vieja dentro de tools/.
 // ============================================================================
 
 import { readdirSync, existsSync, readFileSync, writeFileSync, copyFileSync, mkdirSync, rmSync, mkdtempSync } from 'node:fs';
@@ -36,7 +41,7 @@ const derivados = (pdf) => { // Clubes/<País>/<Club>/<doc>.pdf -> Generados/<Pa
   return ['.verificacion.json', '.rubros.json'].map((e) => base + e);
 };
 
-function medir(lista, salida) {
+function medir(lista, salida, pasadas = 1, script = 'tools/verificar.mjs') {
   const docs = readFileSync(resolve(ROOT, lista), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#'));
   const copia = mkdtempSync(join(tmpdir(), 'medir-verificar-'));
   // 1. copia de seguridad: los registros enteros y los derivados de la lista
@@ -48,7 +53,7 @@ function medir(lista, salida) {
   const cola = `${salida}.cola.jsonl`; copyFileSync(join(reg, 'cola-revision.jsonl'), cola);
   let out = '';
   try {
-    out = execFileSync('node', ['tools/verificar.mjs', '--lista', lista, '--rubros'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28, env: { ...process.env, COLA_ARCHIVO: cola }, stdio: ['ignore', 'pipe', 'pipe'] });
+    for (let p = 0; p < pasadas; p++) out = execFileSync('node', [script, '--lista', lista, '--rubros'], { cwd: ROOT, encoding: 'utf8', maxBuffer: 1 << 28, env: { ...process.env, COLA_ARCHIVO: cola }, stdio: ['ignore', 'pipe', 'pipe'] });
   } catch (e) { out = String(e.stdout || ''); console.error('verificar.mjs terminó con error:', String(e.stderr || e.message).slice(0, 500)); }
   // 2. lo que dejó cada documento
   const estadoDe = new Map();
@@ -94,5 +99,5 @@ function comparar(a, b) {
 }
 
 if (flag('--comparar')) comparar(flag('--comparar'), A[A.indexOf('--comparar') + 2]);
-else if (flag('--lista') && flag('--salida')) medir(flag('--lista'), resolve(flag('--salida')));
+else if (flag('--lista') && flag('--salida')) medir(flag('--lista'), resolve(flag('--salida')), Number(flag('--pasadas') || 1), flag('--script') || 'tools/verificar.mjs');
 else { console.error('Uso: node tools/medir-verificar.mjs --lista <lista> --salida <archivo.jsonl>  |  --comparar <antes.jsonl> <despues.jsonl>'); process.exit(1); }

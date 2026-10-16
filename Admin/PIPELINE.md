@@ -294,6 +294,15 @@ Mitigaciones:
             ingresos o gastos que es la suma de los renglones de abajo con una fila del financiero adentro no se cuenta; esa fila toma el
             signo de su bloque (suma en ingresos, resta en gastos); compuerta: resultado impreso exacto (los totales mezclan lados). Caso
             Avaí 2021. Más arriba en la escalera le ganaba a la lectura 5 (Ferroviária 2012).
+ ESCALÓN    "acumulados" (to-do 237 q), después del patrón C: solo si nada cerró. El POC portugués (antes de 2010) imprime totales que
+            acumulan: (C) = (A) + juros, (E) = (C) + extraordinarios, (G) = (E) + imposto, (D) = (B) + juros obtidos, (F) = (D) +
+            extraordinarios. Un subtotal/total que es exacto el anterior de su lado + los renglones de su lado del tramo + algunas filas del
+            financiero o del impuesto de ese tramo no se cuenta, y esas filas del financiero toman el signo de su lado (las dos columnas
+            imprimen los juros en positivo). Solo se miran su lado, el financiero y el impuesto: el estado en dos columnas intercala los
+            lados por línea (Sporting 2004-05). Compuerta: el resultado impreso exacto. Los chequeos del año vecino y del año anterior leen
+            la columna con el mismo escalón (en el vecino, si su .verificacion.json dice que cerró así). Casos: Benfica 2005-06 y 2006-07,
+            Sporting 1999, 2001 y 2002-03 a 2006-07. Medido con tools/medir-verificar.mjs (prueba-completa, dos pasadas): 349 de 358
+            idénticos; los 9 que cambian son esos casos.
  ESCALÓN    "sección D" (Versión 589, to-do 166): con el encabezado "D) Rettifiche di valore" (o "Value adjustments") impreso entre el
             financiero y el resultado y sin ajuste manual del financiero en esa zona: las filas sin lado de ahí van al financiero (las de un 18)
             suman |valor|, las de un 19) restan |valor|); compuerta: su suma da exacto el total de D impreso; después las lecturas 0-6 y gana la

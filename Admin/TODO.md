@@ -155,13 +155,13 @@ con los que no están en los pasos de arriba.
     p) LA ETAPA 8 PREGUNTA EL PERÍMETRO AUNQUE HAYA AJUSTE MANUAL DEL CLUB (lote 78: Benfica 2019 y Boavista 2024 llegaron a la cola con
        "¿se carga CONSOLIDADO?" teniendo el ajuste `perimetro` del club, y en Boavista la propuesta era la contraria al ajuste). El ajuste
        es el escalón 0: si existe, la pregunta no debería abrirse.
-    q) SPORTING 1999-2010: LA SUMA DEL SISTEMA CUENTA DOS VECES LOS SUBTOTALES (cola del lote 77: 29 casos "no cierra" y "primer año" de
-       Sporting; el estado impreso cierra exacto en todos los años, pero verificar.mjs suma los subtotales (B)/(D) y los renglones sin rótulo
-       como si fueran filas, y suma el resultado financiero en vez de netearlo). Las respuestas del subagente están sin aplicar en
-       Admin/registros/cola-borradores/sporting-1999-2010.jsonl. Mirar 2-3 años antes de diseñar el escalón.
-       Mismo defecto en Benfica 2006-07 (lote 80): las hojas del estado cierran exacto contra el resultado impreso 15.274.429 (ingresos
-       83.285.522, gastos 60.733.874, financiero −7.238.563, impuesto 38.656; relatorio-contas-2006-07.md L902-941), pero la suma del
-       sistema da 223,57 M y 261,82 M (subtotales, (A)-(G) y las notas b18/b20 sumadas como filas). Casos bad0149, 900ec6c y 7c675ce.
+    q) SUBTOTALES CONTADOS COMO FILAS: lo del POC (totales (A)-(G) que acumulan y juros en positivo en las dos columnas) está resuelto con
+       el escalón "acumulados" de verificar.mjs (Benfica 2005-06 y 2006-07, Sporting 1999, 2001 y 2002-03 a 2006-07 cierran el resultado
+       exacto). Quedan, cada uno con su propio defecto, por diagnosticar: Sporting 2000 (las líneas suman 18.526 y el total impreso dice
+       6.653: otra estructura o escala), Sporting 2008-09 y 2009-10 (IFRS: el resultado no cierra; el total impreso excluye la
+       amortización de pases), Benfica 2014-15 (un total sin rótulo, L2624, y 48 líneas de notas fuera de él). Los 9 que cierran todavía
+       tienen dudas de localizar y extraer en la cola (cuadros del informe de gestión) y Sporting 1999 y 2001 el año vecino contra 2000:
+       las respuestas del subagente están sin aplicar en Admin/registros/cola-borradores/sporting-1999-2010.jsonl.
     r) EL COPY DE LA TERMINAL QUEDÓ VIEJO (pedido de Guido, 2026-10-15). "(DE VERDAD)", "ENSAYO", los "OJO:" y la mayoría de los mensajes
        de pipeline.mjs y lote.mjs no terminan de explicar qué está pasando ni qué tiene que hacer Guido. Repasar la salida de las dos
        tools con un lote real y proponerle el texto nuevo (solo salida, no lógica) antes de tocarlo.
