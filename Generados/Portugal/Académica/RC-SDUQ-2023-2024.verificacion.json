@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Académica/RC-SDUQ-2023-2024.pdf",
  "md": "Clubes/Portugal/Académica/RC-SDUQ-2023-2024.md",
- "generado": "2026-10-16T02:25:06.253Z",
+ "generado": "2026-10-16T02:44:07.992Z",
  "estado": "ok",
  "clubId": null,
  "year": 2024,
@@ -11,7 +11,18 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Académica/RC-SDUQ-2023-2024.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "El documento no tiene ingresos de TV (subagente Sonnet, revisado por Claude).",
+   "evidencia": "Académica/RC-SDUQ-2023-2024.md: ninguna nota ni fila de TV: Vendas solo Bilhetes y Prestações de Serviços (L726-731), Outros rendimentos sin TV (L777-783)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {

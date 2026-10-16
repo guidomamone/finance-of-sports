@@ -19,4 +19,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'estorilpraia-pt': { 2025: 'pt-primeiraliga' },
   'vizela-pt': { 2025: 'pt-ligaportugal2' },
   'academicoviseu-pt': { 2025: 'pt-ligaportugal2' },
+  'academica-pt': { 2024: 'pt-liga3' },
 });

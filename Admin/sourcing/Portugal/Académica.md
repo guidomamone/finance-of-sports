@@ -13,3 +13,5 @@
 
 - 2021/22 a 2023/24 de la SDUQ (`9-RC-`, `10-RC-`, `11-RC-SDUQ-...` y `RC-SDUQ-2023-2024`) y OAF 2022/23; además orçamentos 2018/19 y 2025/26. Elegir la entidad antes de transcribir.
 - Último chequeo: 2026-10-08.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2024 desde `Clubes/Portugal/Académica/RC-SDUQ-2023-2024.pdf` (sourceId `academica-pt-rc-sduq-2023-2024`).

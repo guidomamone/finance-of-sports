@@ -1,18 +1,15 @@
 {
  "pdf": "Clubes/Portugal/Académica/RC-SDUQ-2023-2024.pdf",
- "generado": "2026-10-16T02:33:28.048Z",
+ "generado": "2026-10-16T02:49:44.363Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (academica-pt)"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
   }
  ],
  "avisos": [
   "materialidad: \"Prestações de Serviços\" va como other_income con 0.6 (las dudas de ingresos suman 0.55% de su lado)",
+  "\"Televisión\" en 0: real, por ajuste manual (2026-10-16, El documento no tiene ingresos de TV (subagente Sonnet, revisado por Claude).)",
   "gestión: ningún presidente confirmado cubre 2024 (cierre 2024-06-30); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -361,7 +358,18 @@
  },
  "clubId": "academica-pt",
  "year": 2024,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Académica/RC-SDUQ-2023-2024.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "El documento no tiene ingresos de TV (subagente Sonnet, revisado por Claude).",
+   "evidencia": "Académica/RC-SDUQ-2023-2024.md: ninguna nota ni fila de TV: Vendas solo Bilhetes y Prestações de Serviços (L726-731), Outros rendimentos sin TV (L777-783)",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "seleccion": {
   "filas": 31,
   "notasUsadas": [],
@@ -834,12 +842,6 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"Vendas e serviços prestados\")": "gastos con signo",
@@ -929,7 +931,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 6,
   "lineasGasto": 23,
   "metaFilas": 2,
