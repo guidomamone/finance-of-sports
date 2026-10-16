@@ -241,6 +241,15 @@ llegue acá.
          ese PDF en transcripciones-estado.jsonl antes y después.
        - Una vez encontrada la rama: que deje el documento en 'extraído' si sus derivados están al día, o que la etapa 6 lo tome con una
          compuerta que excluya lo que la corrida decidió dejar afuera (sin estado, falta fijar). Medir con prueba-completa.
+    ai) RELOCALIZAR NO REHACE LA EXTRACCIÓN (lote 81: Nacional 2021-22 con ajuste `cierre 2022-06-30`; se borró su .ubicacion.json, el lote
+       volvió a localizar y eligió bien la columna "30-jun-22", pero reusó el .filas.json del 15/10 19:55, extraído con la columna 2021: la
+       verificación quedó con el año 2021 e ingresos 8,74 M en vez de 3,31 M). Se destrabó sacando también el .filas.json. Escalón posible:
+       que extraer.mjs dé por vieja la extracción si el .ubicacion.json es posterior (o si cambió la columna del ejercicio). Riesgo si no:
+       cargar un año con la columna comparativa de otro documento.
+    aj) EL ID DEL CLUB EN LA REVISIÓN DEL ALTA NO COINCIDE CON EL QUE ARMA alta-club.mjs (lote 81: la revisión tenía pacos-pt y udleiria-pt;
+       alta-club.mjs arma pacosdeferreira-pt y uniaodeleiria-pt desde la carpeta, y cargar-lote.mjs busca el color por clubId: los dos
+       habrían frenado "sin color elegido"). Se resolvió agregando la revisión con el id de la carpeta. Escalón posible: que la revisión se
+       cruce por carpeta (campo `carpeta`, que ya tiene) además de por clubId, o que alta-club.mjs avise cuando la revisión usa otro id.
     ah) `medir-cargar.mjs` NO SE PUEDE ACOTAR (2026-10-15, medición de la 237 y: ~6 min por corrida, dos corridas, sobre los ~570 documentos con
        categorías de todos los países, cuando el cambio solo actúa en Clubes/Portugal/). Escalón posible: `--lista <archivo>` y `--dir <carpeta>`
        para medir solo lo que el cambio puede tocar; la corrida completa queda para los cambios que afectan a todos (escalera de categorías).
