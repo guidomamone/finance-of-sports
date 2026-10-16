@@ -609,6 +609,88 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2017–18 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Benfica".
 ```
 
+## 2017
+
+### Ingresos
+
+```text
+2017: cargado por tools/cargar.mjs (2026-10-16) desde Clubes/Portugal/Benfica/relatorio-contas-2016-17-pos-AG.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Portugal/Benfica/relatorio-contas-2016-17-pos-AG.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Receitas de televisão | pág. 142, precedente |
+| 2 | Prémios da UEFA | pág. 142, precedente |
+| 3 | Prémios outras competições | pág. 142, Jev 0.95 |
+| 4 | Patrocínadores | pág. 142, precedente |
+| 5 | Rendas de espaço | pág. 142, precedente |
+| 6 | Royalties | pág. 142, precedente |
+| 7 | Outra receitas | pág. 142, precedente |
+| 8 | Corporate | pág. 142, precedente |
+| 9 | Bilhetes de época | pág. 142, precedente |
+| 10 | Liga Nacional | pág. 142, Claude 0.88 |
+| 11 | Liga dos Campeões | pág. 142, Claude 0.8 |
+| 12 | Outra receitas | pág. 142, precedente |
+| 13 | Ganhos com alienações de direitos de atletas | pág. 145, precedente |
+| 14 | Outros rendimentos e ganhos | pág. 145, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Trabalhos especializados | pág. 143, precedente |
+| 2 | Deslocações e estadas | pág. 143, precedente |
+| 3 | Honorários | pág. 143, precedente |
+| 4 | Subcontratos | pág. 143, precedente |
+| 5 | Serviços de catering/softdrink | pág. 143, precedente |
+| 6 | Conservação e reparação | pág. 143, precedente |
+| 7 | Equipamento desportivo | pág. 143, precedente |
+| 8 | Eletricidade | pág. 143, Jev 1 |
+| 9 | Rendas e alugueres | pág. 143, Jev 0.96 |
+| 10 | Vigilância e segurança | pág. 143, precedente |
+| 11 | Publicidade e propaganda | pág. 143, Jev 1 |
+| 12 | Outros fornecimentos e serviços | pág. 143, precedente |
+| 13 | Remunerações fixas | pág. 144, precedente |
+| 14 | Remunerações variáveis | pág. 144, precedente |
+| 15 | Remunerações fixas | pág. 144, precedente |
+| 16 | Remunerações variáveis | pág. 144, precedente |
+| 17 | Indemnizações | pág. 144, precedente |
+| 18 | Benefícios pós-emprego | pág. 144, precedente |
+| 19 | Encargos sobre remunerações | pág. 144, precedente |
+| 20 | Seguros de acidentes de trabalho | pág. 144, precedente |
+| 21 | Outros gastos com pessoal | pág. 144, precedente |
+| 22 | Edifícios e outras construções | pág. 145, precedente |
+| 23 | Equipamento básico | pág. 145, precedente |
+| 24 | Equipamento de transporte | pág. 145, precedente |
+| 25 | Equipamento administrativo | pág. 145, precedente |
+| 26 | Outros ativos tangíveis | pág. 145, precedente |
+| 27 | Direito de utilização da marca | pág. 145, precedente |
+| 28 | Programas de computador | pág. 145, precedente |
+| 29 | Direitos de televisão | pág. 145, precedente |
+| 30 | Galeria comercial | pág. 145, Claude 0.9 |
+| 31 | Provisões/Imparidades ^{(2)} | pág. 88, precedente |
+| 32 | Outros gastos e perdas operacionais ^{(3)} | pág. 88, Jev 1 |
+| 33 | Perdas com alienações de direitos de atletas | pág. 145, precedente |
+| 34 | Gastos associados a alienações de direitos de atletas | pág. 145, precedente |
+| 35 | Abates de direitos de atletas | pág. 145, precedente |
+| 36 | Outros gastos e perdas | pág. 145, Jev 0.99 |
+| 37 | Amortizações de direitos de atletas | pág. 147, precedente |
+| 38 | Reforços de imparidade | pág. 147, Jev 0.91 |
+| 39 | Reversões de imparidade | pág. 147, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2016–17 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Benfica".
+```
+
 ## 2016
 
 ### Ingresos
@@ -1220,4 +1302,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/relatorio-contas-2015-16.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### benfica-pt-relatorio-contas-2016-17-pos-ag
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-16) desde la transcripción Clubes/Portugal/Benfica/relatorio-contas-2016-17-pos-AG.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

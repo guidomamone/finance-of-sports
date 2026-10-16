@@ -76,3 +76,5 @@ Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Fi
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2014 desde `Clubes/Portugal/Benfica/relatorio-contas-2013-14-pos-AG.pdf` (sourceId `benfica-pt-relatorio-contas-2013-14-pos-ag`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2016 desde `Clubes/Portugal/Benfica/relatorio-contas-2015-16.pdf` (sourceId `benfica-pt-relatorio-contas-2015-16`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2017 desde `Clubes/Portugal/Benfica/relatorio-contas-2016-17-pos-AG.pdf` (sourceId `benfica-pt-relatorio-contas-2016-17-pos-ag`).
