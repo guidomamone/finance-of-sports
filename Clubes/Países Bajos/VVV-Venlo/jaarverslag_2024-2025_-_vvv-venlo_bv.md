@@ -1,0 +1,195 @@
+--- pág. 1 ---
+
+VVV-VENLO B.V.
+Jaarverslag 24 | 25
+
+--- pág. 2 ---
+
+# Jaarverslag VVV-Venlo 2024-2025
+
+VVV-Venlo kwam in de voetbaljaargang 2024-2025 voor het vierde seizoen op rij uit in de Keuken
+Kampioen Divisie. Dat deed het onder leiding van de trainer John Lammers, die begon aan zijn
+eerste seizoen als hoofdtrainer in Venlo.
+
+De club uit Venlo wilde na een aantal wisselvallige jaren weer echt meedoen in de strijd om
+promotieplekken, maar er was ook realisme. Met het beschikbare spelersbudget was een plek in
+het linker rijtje een ambitie waar flink voor overgepresteerd moest worden. Er heerste een
+positieve sfeer binnen de selectie en ook de supporters stonden er vanaf de eerste speelronde
+weer massaal achter.
+
+Toch werd al snel duidelijk dat het geen gemakkelijke jaargang zou worden. De ploeg kende een
+grillige eerste seizoenshelft: sterke optredens werden afgewisseld met teleurstellende
+nederlagen.
+
+Toch kende het seizoen ook lichtpunten. In de uitwedstrijd tegen FC Volendam wist VVV met 2-4
+te winnen. Ook richting het einde van het kalenderjaar wist de ploeg zich te herpakken. Er werd
+veel strijd geleverd, en hier en daar werden verrassende punten gepakt tegen sterkere
+tegenstanders.
+
+De doelstelling om te eindigen in het linker rijtje bleek uiteindelijk te hoog gegrepen. VVV
+eindigde in de middenmoot van de Keuken Kampioen Divisie en miste de play-offs. Toch bleef
+het gevoel hangen dat er potentie in de ploeg zit. Jong talent, waarvan het meest prominent Tim
+Braem, kreeg kansen en liet zich volop zien.
+
+Hoewel het seizoen dus niet eindigde zoals gehoopt, waren er genoeg momenten waarop de
+club liet zien dat het vuur nog brandt.
+
+## Organisatiestructuur
+
+Vlak voor ingang van het seizoen 2024-2025 trad Guus Pennings in dienst als algemeen directeur
+(statutair) en per 1 januari 2025 startte ook technisch directeur (titulair) Teun Jacobs. Daarmee
+was de directie na vele interim-periodes op zowel algemeen als technisch vlak weer compleet.
+
+Aan het einde van het seizoen werd bekend dat Marc van Hintum, hoofscout, maar tevens ook
+gedurende lange periode interim technisch manager, de club zou verlaten om aan de slag te
+gaan bij Go Ahead Eagles.
+
+## Juridische structuur
+
+De jaarcijfers bestaan uit geconsolideerde cijfers van VVV-Venlo B.V., De Koel B.V., VVV
+holding B.V.
+
+## Omzet
+
+De netto-omzet in seizoen 2024-2025 bedroeg € 5.718.000. De mediabaten bedroegen
+€1.022.000. De inkomsten uit sponsoring bedroegen € 2.396.000 en het resultaat wedstrijdbaten
+kwam uit op € 676.000. De omzet uit Food & Beverage bedroeg € 921.000.
+
+--- pág. 3 ---
+
+## Resultaat vergoedingssommen
+
+Het resultaat vergoedingssommen bestaat uit het saldo van de aan- en verkoop van spelers en
+kan jaarlijks sterk fluctueren. Tegenover de afschrijvingskosten op de vergoedingssommen staan
+de opbrengsten uit transfers onder aftrek van de boekwaarde van verkochte spelers en het saldo
+van betaalde en ontvangen opleidingsvergoedingen.
+
+Het resultaat uit vergoedingssommen bedroeg over het seizoen 2024-2025 € 88.000 positief.
+
+## Financiële risico’s en risicobeheersing
+
+Door de markten waarop VVV-Venlo zich beweegt en de positie van VVV-Venlo hierin, is er een
+aantal financiële risico’s te onderkennen. VVV-Venlo heeft interne systemen voor
+risicobeheersing en controle die een zodanige mate van zekerheid verschaffen dat de risico’s
+afdoende worden onderkend en beheerst. Voor wat betreft de gedragscode van bestuurders
+voldoet VVV-Venlo aan de richtlijnen vanuit het KNVB licentie regelement.
+De financiële risico’s zijn deels afgedekt door een garantie van de aandeelhouders. Er is een
+stop op geplande investeringen m.u.v. de investeringen die nodig zijn voor de exploitatie van het
+voetbalbedrijf. De financiële procedures zijn aangepast en er is een maandelijkse toetsing op het
+financieel resultaat waardoor onmiddellijk kan worden ingegrepen op het moment dat dit niet
+conform de begroting is.
+
+## Fraude risico paragraaf
+
+Het bestuur van de onderneming handelt eerlijk en bevordert integere bedrijfsvoering, zij
+vervullen hierin een voorbeeldrol voor werknemers en dragen dit gedrag en deze houding uit
+(‘tone at the top’).
+
+Het bestuur zorgt voor een veilige omgeving voor de werknemers waarin het mogelijk is om
+problemen of misstanden te melden. Daarnaast heeft de onderneming een externe
+vertrouwenspersoon en een klokkenluidersregeling, met bescherming van melders. Het bestuur
+heeft de klokkenluidersregeling gepubliceerd op de website van de onderneming.
+
+Het bestuur spreekt en informeert de accountant jaarlijks over de uitkomsten van de inschatting
+van frauderisico’s en de geïmplementeerde interne beheersingsmaatregelen.
+
+De belangrijkste intern geconstateerde risico’s zijn dat medewerkers/stakeholders zich
+onterecht verrijken aan middelen welke voor de organisatie zijn bestemd.
+
+Deze risico’s worden beheerst door een vier ogenprincipe toe te passen en te steunen op AO/IB
+maatregelen.
+
+Het bestuur communiceert proactief met de accountant in een open relatie, waarin alle
+aangelegenheden, inclusief gevoelige zaken zoals een vermoeden van fraude, niet-naleving van
+wet- en regelgeving en andere integriteitsissues kunnen worden besproken. Het bestuur heeft
+een actieve rol in de beheersing van frauderisico’s. Bij een vermoeden van fraude meldt het
+bestuur deze in een zo vroeg mogelijk stadium aan de accountant en het toezichthoudend
+orgaan en houdt deze betrokken bij de vervolgstappen. Het bestuur en het
+toezichthoudenorgaan nemen kennis van de door accountant gerapporteerde bevindingen en
+geven follow-up aan deze bevindingen.
+
+--- pág. 4 ---
+
+## Continuïteitsparagraaf in de grondslagen van de jaarrekening
+
+V.V.V. Holding B.V. heeft in het boekjaar een verlies voor belastingen gerealiseerd van € 1.560.000
+(2023-2024: winst € 1.915.000 ), waarin begrepen een incidentele bate vanuit het WHOA
+akkoord ad € 2.988.000 in 23/24. Het reguliere operationele bedrijfsresultaat bedroeg in het
+boekjaar negatief € 1.566.000 (2023-2024: negatief € 2.123.000). Vanwege het negatieve
+resultaat na belastingen van € 1.560.000 verslechtert het eigen vermogen per 30 juni 2025 naar
+negatief €2.312.000 (30 juni 2024: negatief € 755.000).
+
+Voor het boekjaar 2025-2026 wordt een negatief resultaat voor belastingen verwacht van €
+1.300.000. Hiermee samenhangend neemt het eigen vermogen per 30 juni 2025 naar
+verwachting af naar € 3,6 miljoen negatief. De directie heeft een liquiditeitsprognose voor het
+boekjaar 2025/2026 opgesteld, hierbij uitkomend op een liquiditeitstand van circa € 0, maar
+heeft nog een kredietfaciliteit van € 250.000 per 30 juni 2026. In de prognose is rekening
+gehouden met een nog te realiseren sponsortarget van € 0,4 miljoen, dit op een totaal te
+verwachte sponsorbate van € 2,4 miljoen. Voor het uit voornoemd resultaat voortvloeiende
+liquiditeitstekort heeft V.V.V. Holding B.V. voldoende garanties verkregen. Daarnaast is VVV op
+zoek naar een investeerder.
+
+Gelet op voorgaande is er per datum van deze jaarrekening sprake van een materiële
+onzekerheid ten aanzien van de continuïteit van V.V.V. Holding BV. Rekening houdend met de
+verstrekte garanties betreffende het voor boekjaar 2025-2026 verwachte liquiditeitstekort en de
+veronderstelling van de sponsortarget is de jaarrekening 2024-2025 van V.V.V. Holding B.V.
+opgesteld op basis van continuiteïtsveronderstelling van de vennootschap.
+
+## Toekomstparagraaf
+
+Het seizoen 2025/2026 kent nog de nodige (financiële) uitdagingen. VVV-Venlo heeft fors
+bezuinigt op de kantoororganisatie en ook het spelersbudget is lager dan voorgaande seizoenen.
+VVV heeft mede door de afgegeven garantstellingen van de aandeelhouders een sluitende
+liquiditeitsprognose voor het seizoen 2025/2026.
+
+Venlo, 28 januari 2026
+
+VVV-Venlo B.V.
+Namens deze,
+
+Guus Pennings
+
+Algemeen Directeur
+
+--- pág. 5 ---
+
+# Exploitatierekening over het seizoen 2024/2025
+
+(€ x 1.000)
+
+| Concept | Detalle | Total |
+| --- | --- | --- |
+| Omzet | | 5.718 |
+| Lasten | | |
+| Personeelskosten | 3.783 | |
+| Verkoopkosten | 1.354 | |
+| Huisvestingskosten | 541 | |
+| Wedstrijd-trainingskosten | 830 | |
+| Algemene kosten | 347 | |
+| Afsch. Materiele vaste activa | 429 | |
+| | | 7.284 |
+| Bedrijfsresultaat | | -1.566 |
+| Rentelasten | | -82 |
+| Afschrijving vergoedingsommen | -78 | |
+| Resultaat vergoedingsommen | 166 | |
+| Resultaat vergoedingsommen | | 88 |
+| Resultaat uit gewone bedrijfsuitoefening voor belastingen | | -1.560 |
+| Vennootschapsbelasting | | 0 |
+| Netto resultaat na belastingen | | -1.560 |
+
+--- pág. 6 ---
+
+# BALANS PER 30 JUNI 2025
+
+(na winstbestemming)
+
+(€ x 1.000)
+
+| Activa | | | Passiva | |
+| --- | --- | --- | --- | --- |
+| Immateriële vaste activa | 19 | | Eigen vermogen | -2.312 |
+| Materiële vaste activa | 5.142 | | | |
+| Totaal vaste activa | | 5.161 | | |
+| | | | Langlopende schulden | 6.168 |
+| Totaal vlottende activa | | 743 | Kortlopende schulden | 2.048 |
+| Totaal activa | | 5.904 | | 5.904 |

@@ -1,0 +1,2023 @@
+--- pág. 1 ---
+
+# N.E.C. HOLDING B.V.
+
+TE NIJMEGEN
+
+Rapport inzake jaarstukken 2024/2025
+
+--- pág. 2 ---
+
+# INHOUDSOPGAVE
+
+|  | Pagina |
+| --- | --- |
+| FINANCIEEL VERSLAG |  |
+| 1 Bestuursverslag | 3 |
+| JAARREKENING |  |
+| 1 Geconsolideerde balans per 30 juni 2025 | 11 |
+| 2 Geconsolideerde winst-en-verliesrekening over 2024/2025 | 12 |
+| 3 Geconsolideerd kasstroomoverzicht over 2024/2025 | 13 |
+| 4 Geconsolideerde grondslagen voor waardering en resultaatbepaling | 14 |
+| 5 Toelichting op de geconsolideerde balans per 30 juni 2025 | 24 |
+| 6 Toelichting op de geconsolideerde winst-en-verliesrekening over 2024/2025 | 32 |
+| 7 Overige geconsolideerde toelichtingen | 34 |
+| 8 Enkelvoudige balans per 30 juni 2025 | 36 |
+| 9 Enkelvoudige winst-en-verliesrekening over 2024/2025 | 37 |
+| 10 Algemene grondslagen voor de opstelling van de enkelvoudige jaarrekening | 38 |
+| 11 Toelichting op de enkelvoudige balans per 30 juni 2025 | 39 |
+| 12 Toelichting op de enkelvoudige winst-en-verliesrekening over 2024/2025 | 43 |
+| 13 Overige enkelvoudige toelichtingen | 44 |
+| OVERIGE GEGEVENS |  |
+| 1 Statutaire regeling winstbestemming | 46 |
+| 2 Controleverklaring van de ona hankelijke accountant | 46 |
+
+--- pág. 3 ---
+
+# Bestuursverslag – Seizoen 2024-2025
+
+Het seizoen 2024-2025 was het vierde opeenvolgende jaar van N.E.C. in de Eredivisie sinds de
+promotie in 2021. Het werd opnieuw een seizoen waarin we als club belangrijke stappen hebben
+gezet. Op het veld, in de organisatie, commercieel en maatschappelijk.
+
+Sportief was het een jaar dat gekenmerkt werd door instabiliteit.
+
+We hadden sterke prestaties tegen de top zes clubs van Nederland. We pakten hier veel punten
+en lieten zien mee te kunnen in de top van de competitie. Tegelijkertijd verloren we te veel
+punten tegen ploegen uit de onderste regionen, een punt van aandacht voor de toekomst.
+
+Uiteindelijk sloten we de competitie af op een verdienstelijke achtste plaats, na een
+onvergetelijke slotweek met een historische 0-3 overwinning op Ajax in de Johan Cruijff ArenA –
+een resultaat dat voor altijd in ons clubgeheugen zal blijven staan. Door de eindklassering als
+achtste plaatsten we ons opnieuw voor de play-offs voor Europees voetbal, waarin we de halve
+finale tegen FC Twente na verlenging verloren. In de beker kwamen we helaas niet verder dan de
+tweede ronde, een teleurstellend resultaat vergeleken met de finaleplaats van het seizoen
+ervoor
+
+Het seizoen kreeg een emotioneel slot met het afscheid van Rogier Meijer als hoofdtrainer. Na
+vijf jaar aan het roer kwam er een einde aan een tijdperk waarin hij met de club promoveerde
+vanuit de Keuken Kampioen Divisie naar de VriendenLoterij Eredivisie. Na twee seizoenen
+handhaving zonder in de problemen te komen bereikte hij twee keer de play-offs voor Europees
+voetbal haalde en speelden we vorig jaar de bekerfinale tegen Feyenoord. Meijer werd door
+supporters, spelers en medewerkers geëerd als een gentleman en boegbeeld, iemand die N.E.C.
+een menselijk gezicht gaf en sportief historische prestaties afleverde. Zijn nalatenschap is er één
+van stabiliteit, menselijkheid in de topsport en trots.
+
+## Commercie
+
+Het commerciële team bleef de lijn van groei onverminderd doorzetten. We verwelkomden
+Nexperia als nieuwe hoofdpartner voor drie jaar, een belangrijke stap in onze merkontwikkeling.
+KlokGroep, een van onze meest trouwe partners, verhuisde naar de rugpositie, waardoor
+NasWerkt de plek op de mouw kon innemen. GX Software bleef als broekpartner aan boord.
+Dat we alle grote partners behouden én nieuwe toevoegingen doen, zegt veel over de kracht van
+onze relaties – die niet alleen op zakelijk succes zijn gestoeld, maar ook op wederzijds
+vertrouwen en persoonlijke betrokkenheid.
+
+De OSRN, onze businessclub, groeide naar meer dan 450 leden, waarmee de businesstribune
+voller is dan ooit. Merchandising kende eveneens een topjaar: creatieve en onderscheidende
+shirts en artikelen vonden in grote aantallen hun weg naar onze supporters, en werden steeds
+meer een zichtbaar onderdeel van het straatbeeld in Nijmegen. Bij wedstrijden, in de stad en
+tijdens evenementen zoals de Vierdaagse.
+
+Innovatie bleef een belangrijk uitgangspunt. Zo zijn de N.E.C. Fieldseats, waarbij supporters
+letterlijk op een paar meter van de spelers zitten, een groot succes. Dicht bij het spel en dicht bij
+de emotie. Precies zoals N.E.C. wil verbinden.
+
+1
+
+--- pág. 4 ---
+
+## Organisatie
+
+De groei van de club vroeg opnieuw om uitbreiding van onze organisatie. Op het gebied van data-
+analyse, merchandising, commercie en maatschappelijke projecten trokken we nieuwe
+specialisten aan om onze ambities waar te maken. Onze interne structuren werden verstevigd
+en we investeerden in mensen, omdat we geloven dat duurzame groei begint bij vakmanschap
+en toewijding.
+
+## Maatschappelijk – GezondRijk Nijmegen
+
+Het afgelopen seizoen introduceerden we GezondRijk Nijmegen als opvolger van N.E.C.
+Maatschappelijk. In dit vernieuwde programma staat beweging centraal – in de breedste zin van
+het woord. We willen jong en oud inspireren en activeren, met sport en gezondheid als
+verbindende kracht. Of het nu gaat om projecten voor kinderen op scholen, activiteiten voor
+ouderen, of initiatieven voor mensen met een beperking: GezondRijk Nijmegen is er om impact
+te maken. We blijven ons richten op langdurige, betekenisvolle verbinding met de samenleving in
+Nijmegen en omgeving, vanuit de overtuiging dat N.E.C. méér is dan voetbal.
+
+## Grote ontwikkelingen – Stadion terug in eigen handen
+
+Een mijlpaal van historisch formaat: aan het einde van het seizoen werd het Goffertstadion weer
+eigendom van de club. Voor het eerst in bijna 25 jaar hebben we ons thuis terug in eigen beheer.
+Dit betekent niet alleen dat we zelf kunnen investeren in vernieuwing en uitbreiding, maar ook
+dat we de volledige exploitatie- en ontwikkelruimte hebben om onze ambities waar te maken.
+
+Deze stap is van onschatbare waarde voor de toekomst van N.E.C. – financieel, commercieel en
+sportief. We willen onze dank uitspreken aan iedereen die, vaak vanuit de schaduw, heeft
+bijgedragen aan het mogelijk maken van deze terugkoop.
+
+## Veiligheid en supporterszaken
+
+De afdelingen supporterszaken en veiligheid hebben ook uitstekend gepresteerd. De band met
+de supporters blijft hecht. Communicatie, transparantie, dicht bij onze supporters staan,
+inlevingsvermogen en duidelijkheid zorgt er nog steeds voor dat we goed samenwerken. Ook al
+hebben we soms andere belangen en verantwoordelijkheden.
+
+Ook hebben we in de lijn van de laatste jaren goed samengewerkt met de driehoek in Nijmegen,
+bestaande uit de gemeente, de politie en het OM. Dit doen we echt samen, op operationeel en
+strategisch niveau kennen we onze verantwoordelijkheden en zijn we een team op het gebied
+van veiligheid in en rondom het stadion en de club.
+
+2
+
+--- pág. 5 ---
+
+## Financieel
+
+Al die ontwikkelingen brengen ook financiële stappen met zich mee. We zijn enorm gegroeid in
+omzet, tot boven de 22,5 miljoen: een stijging van bijna vier miljoen euro. Het blijft ongekend wat
+de club los maakt en welke gevolgen dit heeft voor de ontwikkeling van de club. In deze 22,5
+miljoen zit geen exceptionele omzet, zoals de bekerfinale ons vorig jaar opleverde.
+
+We naderen de grenzen van de groeimogelijkheden binnen het huidige stadion. Toch blijven we
+actief zoeken naar innovatieve oplossingen om verdere groei mogelijk te maken. De introductie
+van de N.E.C. Fieldseats is daar een goed voorbeeld van. Dit brengt echter ook mee dat de
+kostenkant stijgt. De stijging blijft achter bij de toename van de inkomsten, wat positief is.
+Tegelijkertijd liggen de kosten nog altijd hoger dan de inkomsten. Dat is, zoals eerder
+aangegeven, niet zorgwekkend, maar wel een blijvend aandachtspunt.
+
+Ons doel is om in de toekomst break-even te draaien en financieel stabieler op eigen kracht te
+opereren. Dat vraagt tijd, maar die ruimte is er. Hierdoor kunnen we stellen dat we, ondanks de
+huidige verliezen, de situatie goed onder controle hebben. Bovendien nemen de verliezen af, wat
+eveneens een gunstig signaal is.
+
+De komende periode blijft uitdagend, maar zowel de Raad van Commissarissen als de directie
+heeft vertrouwen in de toekomst, mede gezien de positieve ontwikkelingen van de afgelopen
+jaren op en rond het veld. Dankzij onze solide financiële planning en de structurele agiosteun
+van een van onze sponsors, kunnen wij onze ambities blijven realiseren en de club verder
+ontwikkelen. Deze steun is uniek en vormt een essentiële pijler onder onze ontwikkeling.
+
+## Algemeen
+
+Het boekjaar van N.E.C. Holding B.V. loopt gelijk met het voetbalseizoen, dus van 1 juli tot en met
+30 juni.
+
+## Doelstelling
+
+De doelstelling van N.E.C. wordt als volgt omschreven:
+
+- Het bevorderen en de instandhouding van het betaald voetbal in de regio Nijmegen
+- Het bevorderen van de beoefening van en de belangstelling voor de voetbalsport in het
+  algemeen
+- Het deelnemen in, het voeren van beheer over, het financieren van en het stellen van
+  zekerheid van schulden van andere ondernemingen en vennootschappen met een doel
+  gelijk of verwant aan het bevorderen en de instandhouding van het betaald voetbal in de
+  regio Nijmegen.
+- De kernactiviteiten vinden plaats in Nijmegen.
+
+## Juridische Structuur
+
+De juridische structuur van N.E.C. Holding B.V. was t/m 30 juni 2025 als volgt:
+
+Exploitatie-Maatschappij De Goffert B.V., 100% kapitaalbelang
+
+Nijmegen Eendracht Combinatie B.V., 100% kapitaalbelang
+
+Voetbalacademie N.E.C. B.V., 100% kapitaalbelang van Nijmegen Eendracht Combinatie B.V.
+
+3
+
+--- pág. 6 ---
+
+## Directie en toekomst
+
+In juni werd Rini Coolen aangesteld als directeur voetbal. Samen met Carlos
+Aalbers (directeur spelerszaken) en Wilco van Schaik (algemeen directeur) vormt hij de directie.
+Deze uitbreiding zorgt voor meer focus: Carlos Aalbers blijft zich primair richten op transfers en
+scouting, terwijl Rini Coolen de verantwoordelijkheid krijgt over de voetbalzaken, academie en
+de technische staf.
+
+Met deze versterking zetten we een nieuwe stap in de professionalisering van onze
+voetbalorganisatie. De samenwerking tussen directie en Raad van Commissarissen verloopt
+constructief en toekomstgericht. De ontwikkeling van de club gaat snel en vraagt om
+wendbaarheid, visie en durf. De plannen voor de komende jaren worden al gesmeed – altijd met
+één doel voor ogen: N.E.C. verder laten groeien als stabiele VriendenLoterij Eredivisieclub met
+een stevige wortel in de stad en regio.
+
+De organisatie bestond in het seizoen 2024-2025 uit 99 FTE’s.
+
+De Raad van Commissarissen bestond in het seizoen 2024-2025 uit vier personen. Tijdens het
+jaar heeft Jeroen Keijzers afscheid genomen van de RvC. Zijn verantwoordelijkheden op gebied
+van financiën zijn overgenomen door medecommissaris Nadine Maters. Samen met voorzitter
+Ron van Oijen en Joep Burghouts vormt zij de Raad van Commissarissen van N.E.C. Daarnaast
+wordt er met gespecialiseerde adviseurs gewerkt op de terreinen van technisch, media,
+commercie, HR en stadion.
+
+De leden van de Raad van Commissarissen en de adviseurs hebben gedurende het boekjaar
+afgezien van enige vergoeding verband houdende met het uitoefenen van de functie van
+commissaris. Bestuur en managementteams kwamen wekelijks bijeen. Van deze bijeenkomsten
+zijn verslagen gemaakt. Tussen bestuur en Raad van Commissarissen heeft maandelijks overleg
+plaatsgevonden. Van deze bijeenkomsten zijn verslagen gemaakt. Daarnaast vinden vanuit de
+Raad van Commissarissen nog tal van besprekingen plaats ter ondersteuning van en het sparren
+met het bestuur op diverse deelterreinen en speciale projecten.
+
+Naast de managementteamvergaderingen werd structureel overleg gepleegd met het bestuur
+van Stichting Aandelen N.E.C., het bestuur van de supportersvereniging, het maatschappelijk
+bestuur, een afvaardiging van bedrijven uit de businessclub (OSRN) en ook de stichting
+continuïteit. Voor de bezoldiging van bestuurders en Raad van Commissarissen verwijzen wij
+naar de toelichting in de jaarrekening.
+
+4
+
+--- pág. 7 ---
+
+# FINANCIEEL
+
+## Netto-omzet
+
+De omzet is met ruim € 3,8 miljoen fors gestegen ten opzichte van 2023-2024. De totale omzet in
+het seizoen 2024-2025 kwam uit op € 22,5 miljoen.
+
+## Bedrijfslasten
+
+NEC heeft een VriendenLoterij Eredivisiewaardige organisatie neergezet. De totale bedrijfslasten
+in 2024-2025 kwamen uit op € 26,2 miljoen
+
+## Verwachtingen 2025-2026
+
+Op basis van de begroting en lange termijnvisie wil N.E.C. nu zorgen dat het de komende jaren
+structureel een positie in de top acht van de VriendenLoterij Eredivisie bereikt. Nu we de
+afgelopen twee seizoenen zijn gestrand in de halve finale van de play-offs voor Europees
+voetbal, is het nu zaak deze te gaan winnen. Als dit lukt, kunnen we aan onze ambitie voldoen
+om ons eens in de drie jaar te plaatsen voor Europees voetbal.
+
+Daarnaast willen we waarde op het veld blijven creëren. We maken gebruik van interne
+ontwikkel- en scoutingprogramma’s voor het aantrekken en opleiden van talentvolle spelers van
+buitenaf en vanuit de voetbalacademie. Ook worden hiervoor elk jaar weer nieuwe investeringen
+gemaakt in de organisatie, de randvoorwaarden en op het speelveld. Hiermee geven we invulling
+aan onze pijlers presteren en ontwikkelen waarbij we elke dag opstaan om beter te worden.
+
+Voor het boekjaar 2025-2026 wordt door alle gerealiseerde voetbaltransfers een positief
+nettoresultaat verwacht en een sluitende liquiditeit geprognotiseerd. Nog steeds zijn we in
+controle, aangezien we alles afgedekt hebben en geen onverantwoorde risico’s nemen als
+directie en RvC. We moeten blijven investeren om onze ambities te kunnen behalen en dit vraagt
+continu om investeringen vooraf om hieraan op lange termijn te kunnen voldoen.
+Vanzelfsprekend zijn deze investeringen gedekt.
+
+Een structurele verbetering van het bedrijfsresultaat (resultaat voor afschrijving
+vergoedingssommen, transferopbrengsten, rente en belastingen) in de VriendenLoterij Eredivisie
+blijft het doel voor de komende jaren. De directie is ervan overtuigd dat we de organisatie nog
+bewuster kunnen maken van inkomsten en uitgaven en dat we daardoor een structurele
+verbetering van het bedrijfsresultaat kunnen realiseren. Dit blijft continu punt van aandacht van
+de directie en RvC.
+
+De financiering van het nettoresultaat is echter nog steeds afhankelijk van de kasstromen uit de
+toekomstige spelersverkopen.
+
+## Exploitatie
+
+N.E.C. dient zelf zorg te dragen voor een sluitende exploitatie, zonder daarbij de sportieve
+ambities en doelstellingen uit het oog te verliezen. Op basis van de jaarcijfers en prognose zal
+N.E.C. in de positieve categorie van het KNVB Financieel Rating Systeem blijven. Het seizoen
+2025-2026 zal zoals we nu zien voor het eerst in jaren weer een positief nettoresultaat opleveren
+door de gerealiseerde transfers. Jaarlijks zal een goede balans gevonden moeten blijven worden
+tussen sportieve en financiële mogelijkheden. Daarom zullen ook de komende jaren
+spelerstransfers essentieel blijven voor de exploitatie van N.E.C.
+
+5
+
+--- pág. 8 ---
+
+## Risico’s en risicomanagement
+
+De interne systemen voor risicobeheersing en controle van N.E.C. beogen een zodanige mate
+van zekerheid te verschaffen dat de risico’s voor de club afdoende worden onderkend en
+beheerst. Gedurende 2024-2025 is hierin geen sprake geweest van significante wijzigingen.
+N.E.C. wenst geen onnodige risico’s te nemen ten aanzien van zowel de sportieve als financiële
+doelstellingen. Voor wat betreft de gedragscode van bestuurders voldoet N.E.C. aan de
+richtlijnen vanuit het KNVB-licentiereglement.
+
+## Fraude risico paragraaf
+
+Het bestuur van de onderneming handelt eerlijk en bevordert integere bedrijfsvoering. Zij
+vervullen hierin een voorbeeldrol voor werknemers en dragen dit gedrag en deze houding uit.
+
+Het bestuur bevordert een open cultuur waarin aandacht is voor het functioneren, de prestaties
+en gelijke behandeling van werknemers. De tevredenheid van de medewerkers wordt periodiek
+gemeten in het MTO.
+
+Het bestuur zorgt voor een veilige omgeving voor de werknemers waarin het mogelijk is om
+problemen of misstanden te melden. Daarnaast heeft de onderneming een externe
+vertrouwenspersoon en een klokkenluidersregeling, met bescherming van melders. Het bestuur
+heeft de klokkenluidersregeling gepubliceerd op de website van de onderneming.
+
+Het bestuur spreekt en informeert de accountant jaarlijks over de uitkomsten van de inschatting
+van frauderisico’s en de geïmplementeerde interne beheersingsmaatregelen.
+
+De belangrijkste intern geconstateerde risico’s zijn dat medewerkers en stakeholders zich
+onterecht verrijken aan middelen welke voor de organisatie zijn bestemd. Deze risico’s worden
+beheerst door een vier ogenprincipe toe te passen en te steunen op AO/IB maatregelen.
+
+Het bestuur onderhoudt een open en proactieve communicatie met de accountant, waarbij alle
+onderwerpen – inclusief gevoelige kwesties zoals vermoedens van fraude, niet-naleving van wet-
+en regelgeving en andere integriteitsrisico’s – bespreekbaar zijn. Het bestuur vervult een actieve
+rol in het beheersen van frauderisico’s. Bij een vermoeden van fraude wordt dit in een zo vroeg
+mogelijk stadium gemeld aan de accountant en het toezichthoudend orgaan, die vervolgens
+worden betrokken bij de vervolgstappen. Zowel het bestuur als het toezichthoudend orgaan
+nemen kennis van de bevindingen van de accountant en zorgen voor een passende opvolging.
+
+## Prijsrisico
+
+Het prijsrisico van de vennootschap is beperkt, maar mede afhankelijk van de sportieve
+resultaten en is voetbalseizoensgebonden.
+
+## Kredietrisico/Kasstroomrisico/Liquiditeitsrisico
+
+De bovengenoemde risico’s van de onderneming zijn beperkt en mede afhankelijk van sportieve
+resultaten en transfers. Kredietrisico’s bij transfers worden zoveel mogelijk uitgesloten door het
+vragen van bankgaranties of andere zekerheden.
+
+De onderneming heeft geen afgeleide financiële instrumenten en gaat deze ook niet aan. De
+overige financiële instrumenten vloeien voort uit de normale bedrijfsuitoefening.
+
+6
+
+--- pág. 9 ---
+
+## Overige risico’s
+
+Andere risico’s voor N.E.C. zijn:
+
+• de huisvestingsproblematiek; het steeds ouder en gedateerder worden van het stadion wat het
+ieder jaar moeilijker maakt om de gewenste en benodigde commerciële baten te realiseren
+• terugdringen van de korte en langlopende schulden
+
+## Tot slot
+
+Onze club zit in een enorme positieve ontwikkeling. Op alle gebieden is er sprake van groei. Van
+een periode met oplopende schulden, tekorten in exploitatie en een negatief eigen vermogen
+zijn we langzaam alles aan het ombuigen. De populariteit van de club is nog steeds stijgende.
+‘Als nooit tevoren’, zeggen veel N.E.C.’ers. Dit is een compliment, voor jarenlang hard werken.
+
+Maar het is geen enkele garantie naar de toekomst toe. Elke dag zullen we moeten presteren om
+dit vast te houden en uit te bouwen. Want we zijn er nog lang niet. Het stadion moet nu echt
+ontwikkeld worden door het groter en mooier te maken. Dit leidt tot grotere inkomsten die zorgen
+voor meer zelfstandigheid. Europees voetbal is een droom die werkelijkheid moet worden in de
+komende jaren.
+
+Het merk N.E.C. moet nog steviger in de maatschappij verankerd worden door het voetbal, maar
+zeker ook door de maatschappelijke kracht en uitstraling van onze club. De balans te blijven
+vinden tussen realisme en onze ambities blijft continu een punt van aandacht van de directie en
+RvC. We houden de focus op een positieve exploitatie waardoor alle organisatieonderdelen van
+onze hele club stappen voorwaarts kunnen gaan zetten naar een toekomst van zelfstandigheid
+als VriendenLoterij Eredivisieclub.
+
+Wij zullen als directie en RvC er alles aan doen binnen onze macht de doelstellingen en ambities
+te verwezenlijken, de club de club te laten zijn en danken iedereen voor zijn of haar steun en
+vertrouwen in het afgelopen seizoen.
+
+Namens de directie van N.E.C. Holding B.V.
+
+Nijmegen, 9 oktober 2025
+
+Wilco van Schaik – Algemeen Directeur
+Carlos Aalbers – Directeur Spelerszaken
+Rini Coolen – Directeur Voetbal
+
+7
+
+--- pág. 10 ---
+
+# GECONSOLIDEERDE JAARREKENING 2024/2025
+
+Geconsolideerde balans per 30 juni 2025
+Geconsolideerde winst-en-verliesrekening over 2024/2025
+Geconsolideerd kasstroomoverzicht over 2024/2025
+Geconsolideerde grondslagen voor waardering en resultaatbepaling
+Toelichting op de geconsolideerde balans per 30 juni 2025
+Toelichting op de geconsolideerde winst-en-verliesrekening over 2024/2025
+Overige toelichtingen
+
+--- pág. 11 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+# 1 GECONSOLIDEERDE BALANS PER 30 JUNI 2025
+
+(voor resultaatbestemming)
+
+|  | 30 juni 2025 € | 30 juni 2025 € | 30 juni 2024 € | 30 juni 2024 € |
+| --- | --- | --- | --- | --- |
+| **ACTIVA** |  |  |  |  |
+| **Vaste activa** |  |  |  |  |
+| Immateriële vaste activa (1) |  |  |  |  |
+| Kosten van ontwikkeling | 107.541 |  | 140.848 |  |
+| Vergoedingssommen | 4.714.062 |  | 1.571.451 |  |
+|  |  | 4.821.603 |  | 1.712.299 |
+| Materiële vaste activa (2) |  |  |  |  |
+| Bedrijfsgebouwen en -terreinen | 7.605.270 |  | 2.069.236 |  |
+| Machines en installaties | 128.840 |  | 72.471 |  |
+| Andere vaste bedrijfsmiddelen | 2.426.747 |  | 2.410.291 |  |
+|  |  | 10.160.857 |  | 4.551.998 |
+| Financiële vaste activa (3) |  |  |  |  |
+| Andere deelnemingen | 13.614 |  | 13.614 |  |
+| Overige vorderingen | 1.867.116 |  | 777.000 |  |
+|  |  | 1.880.730 |  | 790.614 |
+| **Vlottende activa** |  |  |  |  |
+| Voorraden (4) |  | 605.624 |  | 79.489 |
+| Vorderingen (5) |  | 5.036.452 |  | 6.320.809 |
+| Effecten (6) |  | - |  | 156.934 |
+| Liquide middelen (7) |  | 2.199.715 |  | 2.189.075 |
+| TOTAAL ACTIVA |  | 24.704.981 |  | 15.801.218 |
+
+--- pág. 12 ---
+
+|  | 30 juni 2025 € | 30 juni 2025 € | 30 juni 2024 € | 30 juni 2024 € |
+| --- | --- | --- | --- | --- |
+| **PASSIVA** |  |  |  |  |
+| Groepsvermogen (8) |  | 2.989.740 |  | -1.785.957 |
+| Langlopende schulden (9) |  | 10.333.346 |  | 7.561.456 |
+| **Kortlopende schulden** (10) |  |  |  |  |
+| A lossingsverplichtingen langlopende schulden | 2.995.767 |  | 1.232.820 |  |
+| Schulden aan leveranciers en handelskredieten | 1.354.411 |  | 2.147.862 |  |
+| Belastingen en premies sociale verzekeringen | 852.639 |  | 937.590 |  |
+| Overige schulden en overlopende passiva | 6.179.078 |  | 5.707.447 |  |
+|  |  | 11.381.895 |  | 10.025.719 |
+| TOTAAL PASSIVA |  | 24.704.981 |  | 15.801.218 |
+
+- 11 -
+
+--- pág. 13 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+# 2 GECONSOLIDEERDE WINST-EN-VERLIESREKENING OVER 2024/2025
+
+|  | 2024/2025 € | 2024/2025 € | 2023/2024 € | 2023/2024 € |
+| --- | --- | --- | --- | --- |
+| Netto-omzet (11,12) |  | 22.518.675 |  | 18.674.584 |
+| Kosten |  |  |  |  |
+| Inkoopwaarde van de omzet (13) | 3.001.560 |  | 1.455.829 |  |
+| Personeelskosten (14) | 15.543.971 |  | 13.716.715 |  |
+| Afschrijvingen (15) | 868.935 |  | 710.756 |  |
+| Overige bedrijfskosten (16) | 6.790.510 |  | 7.669.309 |  |
+|  |  | 26.204.976 |  | 23.552.609 |
+| Bedrijfsresultaat voor resultaat vergoedingssommen |  | -3.686.301 |  | -4.878.025 |
+| Resultaat vergoedingssommen (17) |  | 1.553.467 |  | 3.124.482 |
+| Financië le baten en lasten (18) |  | -84.585 |  | -74.353 |
+| Resultaat voor belastingen |  | -2.217.419 |  | -1.827.896 |
+| Belastingen (19) |  | 993.116 |  | - |
+| Resultaat na belastingen |  | -1.224.303 |  | -1.827.896 |
+
+- 12 -
+
+--- pág. 14 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+# 3 GECONSOLIDEERD KASSTROOMOVERZICHT OVER 2024/2025
+
+Het kasstroomoverzicht is opgesteld volgens de indirecte methode.
+
+|  | 2024/2025 € | 2024/2025 € | 2023/2024 € | 2023/2024 € |
+| --- | --- | --- | --- | --- |
+| **Kasstroom uit operationele activiteiten** |  |  |  |  |
+| Bedrijfsresultaat voor resultaat vergoedingssommen | -3.686.301 |  | -4.878.025 |  |
+| Aanpassingen voor: |  |  |  |  |
+| Afschrijvingen | 868.935 |  | 710.756 |  |
+| Veranderingen in het werkkapitaal: |  |  |  |  |
+| Mutatie voorraden | -526.135 |  | -49.168 |  |
+| Mutatie vorderingen | -239.770 |  | -1.020.655 |  |
+| Mutatie effecten | 156.934 |  | -83.892 |  |
+| Mutatie kortlopende schulden (exclusief kortlopend deel van de langlopende schulden) | -406.771 |  | 3.761.484 |  |
+| Kasstroom uit bedrijfsoperaties |  | -3.833.108 |  | -1.559.500 |
+| Betaalde interest |  | -84.585 |  | -74.353 |
+| Kasstroom uit operationele activiteiten |  | -3.917.693 |  | -1.633.853 |
+| **Kasstroom uit investeringsactiviteiten** |  |  |  |  |
+| Investeringen in immaterië le vaste activa | -4.839.929 |  | -2.129.800 |  |
+| Investeringen in materië le vaste activa | -350.531 |  | -1.588.285 |  |
+| Transferopbrengsten | 4.676.646 |  | 3.266.149 |  |
+| Kasstroom uit investeringsactiviteiten |  | -513.814 |  | -451.936 |
+| **Kasstroom uit inancieringsactiviteiten** |  |  |  |  |
+| Storting agio | 6.000.000 |  | 1.500.000 |  |
+| A lossingen langlopende schulden | -1.557.853 |  | -685.564 |  |
+| Kasstroom uit inancieringsactiviteiten |  | 4.442.147 |  | 814.436 |
+|  |  | 10.640 |  | -1.271.353 |
+
+**Samenstelling geldmiddelen**
+
+|  | 2024/2025 € | 2023/2024 € |
+| --- | --- | --- |
+| Geldmiddelen per 1 juli | 2.189.075 | 3.460.428 |
+| Mutatie liquide middelen | 10.640 | -1.271.353 |
+| Geldmiddelen per 30 juni | 2.199.715 | 2.189.075 |
+
+- 13 -
+
+--- pág. 15 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+# 4 GECONSOLIDEERDE GRONDSLAGEN VOOR WAARDERING EN RESULTAATBEPALING
+
+## ALGEMEEN
+
+Activiteiten
+De activiteiten van N.E.C. Holding B.V. , statutair gevestigd te Nijmegen, en haar groepsmaatschappijen
+(de 'Groep') bestaan voornamelijk uit het exploiteren van een betaald voetbalorganisatie en de daarmee
+samenhangende commercië le activiteiten.
+
+Continuïteit
+Het nettoresultaat bedraagt over het boekjaar 2024/2025 € 1,2 miljoen negatief (2023/2024: € 1,8
+miljoen negatief) en het eigen vermogen bedraagt einde boekjaar € 3,0 miljoen positief (2023/2024:
+€ 1,8 miljoen negatief).
+
+Voor het seizoen 2025/2026 is er een prognose, inclusief een sluitende liquiditeitsbegroting opgesteld.
+Vanuit de prognose kan N.E.C. Holding B.V. aan haar verplichtingen jegens derden voldoen, hiermee is
+de continuı̈teit voor het komend jaar gewaarborgd. Op basis van de inancië le positie, de prognose voor
+het seizoen 2025/2026 en de aanvullend door aandeelhouders verstrekte agiostorting verwacht de
+directie van N.E.C. Holding B.V. dat de bedrijfsactiviteiten duurzaam kunnen worden voortgezet. Op
+grond hiervan heeft de directie de continuı̈teitsveronderstelling gehanteerd bij het opstellen van de
+jaarrekening.
+
+Vestigingsadres, rechtsvorm en inschrijfnummer handelsregister
+N.E.C. Holding B.V. is feitelijk en statutair gevestigd op Stadionplein 1, 6532 AJ te Nijmegen en is
+ingeschreven bij het handelsregister onder nummer 09106831. De aandeelhouder van de vennootschap
+is Stichting Aandelen N.E.C. Holding.
+
+Stelselwijzigingen
+In 2024/2025 hebben zich geen stelselwijzigingen voorgedaan.
+
+Schattingswijzigingen
+In 2024/2025 hebben zich geen schattingswijzigingen voorgedaan.
+
+Schattingen
+Bij toepassing van de grondslagen en regels voor het opstellen van de jaarrekening vormt de leiding van
+N.E.C. Holding B.V. zich verschillende oordelen en schattingen die essentieel kunnen zijn voor de in de
+jaarrekening opgenomen bedragen. Indien het voor het geven van het in artikel 2:362 lid 1 BW vereiste
+inzicht noodzakelijk is, is de aard van deze oordelen en schattingen inclusief de bijbehorende
+veronderstellingen opgenomen bij de toelichting op de desbetreffende jaarrekeningposten.
+
+Consolidatie
+N.E.C. Holding B.V. staat aan het hoofd van een groep rechtspersonen en stelt een geconsolideerde
+jaarrekening op. In de geconsolideerde jaarrekening zijn de inancië le gegevens opgenomen van N.E.C.
+Holding B.V. en haar groepsmaatschappijen. Een overzicht van de in de consolidatie opgenomen
+groepsmaatschappijen is weergegeven in de 'Lijst met kapitaalbelangen' hieronder.
+
+- 14 -
+
+--- pág. 16 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+LIJST MET KAPITAALBELANGEN
+N.E.C. Holding B.V. te Nijmegen staat aan het hoofd van een groep rechtspersonen. Een overzicht van de
+gegevens vereist op grond van de artikelen 2:379 en 2:414 BW is onderstaand opgenomen:
+
+| Naam, statutaire zetel | Aandeel in het geplaatste kapitaal % | Opgenomen in consolidatie |
+| --- | --- | --- |
+| Nijmegen Eendracht Combinatie B.V. Nijmegen | 100,00 | Ja |
+| Voetbalacademie N.E.C. B.V. Nijmegen | 100,00 | Ja |
+| Exploitatie-Maatschappij De Goffert B.V. Nijmegen | 100,00 | Ja |
+
+Toepassing van artikel 2:402 BW
+Aangezien de winst-en-verliesrekening over 2024/2025 van N.E.C. Holding B.V. in de geconsolideerde
+jaarrekening is verwerkt, is (in de enkelvoudige jaarrekening) volstaan met weergave van een beknopte
+winst-en-verliesrekening in overeenstemming met artikel 2:402 BW.
+
+Verbonden partijen
+Als verbonden partij worden alle rechtspersonen aangemerkt waarover overheersende zeggenschap,
+gezamenlijke zeggenschap of invloed van betekenis kan worden uitgeoefend. Ook rechtspersonen die
+overwegende zeggenschap kunnen uitoefenen worden aangemerkt als verbonden partij. Ook de
+statutaire directieleden, andere sleutelfunctionarissen in het management van N.E.C. Holding B.V. of de
+moedermaatschappij van N.E.C. Holding B.V. en nauwe verwanten zijn verbonden partijen.
+
+Transacties van betekenis met verbonden partijen worden toegelicht voor zover deze niet onder
+normale marktvoorwaarden zijn aangegaan. Hiervan wordt toegelicht de aard en de omvang van de
+transactie en andere informatie die nodig is voor het verschaffen van het inzicht.
+
+Grondslagen voor de consolidatie
+In de consolidatie worden de inancië le gegevens opgenomen van N.E.C. Holding B.V. samen met haar
+groepsmaatschappijen en andere rechtspersonen waarop zij overheersende zeggenschap kan
+uitoefenen of waarover zij de centrale leiding heeft. Groepsmaatschappijen zijn rechtspersonen waarin
+N.E.C. Holding B.V. direct of indirect overheersende zeggenschap kan uitoefenen doordat zij beschikt
+over de meerderheid van de stemrechten of op enige andere wijze de inancië le en operationele
+activiteiten kan beheersen. Hierbij wordt tevens rekening gehouden met potentië le stemrechten die
+direct kunnen worden uitgeoefend op balansdatum.
+
+- 15 -
+
+--- pág. 17 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+De groepsmaatschappijen en andere rechtspersonen waarop zij een overheersende zeggenschap kan
+uitoefenen of waarover zij de centrale leiding heeft, worden voor 100% in de consolidatie betrokken.
+Het aandeel van derden in het groepsvermogen en in het groepsresultaat wordt afzonderlijk vermeld.
+Deelnemingen waarop geen overheersende zeggenschap kan worden uitgeoefend (geassocieerde
+deelnemingen) worden niet betrokken in de consolidatie.
+
+Intercompany-transacties, intercompany-winsten en onderlinge vorderingen en schulden tussen
+groepsmaatschappijen en andere in de consolidatie opgenomen rechtspersonen worden geë limineerd,
+voor zover de resultaten niet door transacties met derden buiten de Groep zijn gerealiseerd.
+Ongerealiseerde verliezen op intercompany-transacties worden ook geë limineerd tenzij er sprake is
+van een bijzondere waardevermindering. Waarderingsgrondslagen van groepsmaatschappijen en
+andere in de consolidatie opgenomen rechtspersonen zijn waar nodig gewijzigd om aansluiting te
+krijgen bij de geldende waarderingsgrondslagen voor de Groep.
+
+ALGEMENE GRONDSLAGEN VOOR DE OPSTELLING VAN DE GECONSOLIDEERDE
+JAARREKENING
+De geconsolideerde jaarrekening is opgesteld volgens de bepalingen van Titel 9 Boek 2 BW. In afwijking
+met het Besluit Modellen Jaarrekening is de winst-en-verliesrekening opgesteld om aan te laten sluiten
+voor het inzicht voor de gebruiker en daarmee aan te laten sluiten met de branche waar het actief is. Dit
+geldt onder andere voor de separate regel 'Resultaat vergoedingssommen' in de winst- en
+verliesrekening.
+
+De waardering van activa en passiva en de bepaling van het resultaat vinden plaats op basis van
+historische kosten, tenzij anders vermeld.
+
+Baten en lasten worden toegerekend aan het jaar waarop ze betrekking hebben. Winsten worden
+slechts opgenomen voor zover zij op balansdatum zijn gerealiseerd. Verplichtingen en mogelijke
+verliezen die hun oorsprong vinden voor het einde van het verslagjaar, worden in acht genomen indien
+zij voor het opmaken van de jaarrekening bekend zijn geworden.
+
+Vergelijking met voorgaand jaar
+De gehanteerde grondslagen van waardering en van resultaatbepaling zijn ongewijzigd gebleven ten
+opzichte van het voorgaande jaar, met uitzondering van de toegepaste stelselwijzigingen zoals
+opgenomen in de desbetreffende paragrafen.
+
+Vreemde valuta
+Functionele valuta
+De posten in de jaarrekening van de vennootschap worden gewaardeerd met inachtneming van de
+valuta van de economische omgeving waarin de vennootschap haar bedrijfsactiviteiten voornamelijk
+uitoefent (de functionele valuta). De geconsolideerde jaarrekening is opgesteld in euro's; dit is zowel de
+functionele als de presentatievaluta van N.E.C. Holding B.V.
+
+- 16 -
+
+--- pág. 18 ---
+
+N.E.C. Holding B.V. te Nijmegen
+## Transacties, vorderingen en schulden
+Transacties in vreemde valuta gedurende de verslagperiode zijn in de jaarrekening verwerkt tegen de
+koers op transactiedatum. Monetaire activa en passiva in vreemde valuta worden omgerekend in de
+functionele valuta tegen de koers per balansdatum. De uit de afwikkeling en omrekening
+voortvloeiende koersverschillen komen ten gunste of ten laste van de winst-en-verliesrekening, tenzij
+hedge-accounting wordt toegepast. Niet-monetaire activa die volgens de verkrijgingsprijs worden
+gewaardeerd in een vreemde valuta worden omgerekend tegen de wisselkoers op de transactiedatum
+('historische koers'). Niet-monetaire activa die volgens de actuele waarde worden gewaardeerd in een
+vreemde valuta worden omgerekend tegen de wisselkoers op het moment waarop de meest recente
+actuele waarde werd bepaald.
+
+## Leasing
+Operationele leasing
+Bij de vennootschap kunnen er leasecontracten bestaan waarbij een groot deel van de voor- en nadelen
+die aan de eigendom verbonden zijn, niet bij de vennootschap ligt. Deze leasecontracten worden
+verantwoord als operationele leasing. Leasebetalingen worden, rekening houdend met ontvangen
+vergoedingen van de lessor, op lineaire basis verwerkt in de winst-en-verliesrekening over de looptijd
+van het contract.
+
+# GRONDSLAGEN VOOR DE WAARDERING VAN ACTIVA EN PASSIVA
+
+## Immateriële vaste activa
+Vergoedingssommen, hand- en tekengelden en bijkomende kosten inzake spelerscontracten, waarvoor
+een bindende overeenkomst is aangegaan worden geactiveerd als 'Vergoedingssommen' tot ten hoogste
+de aan derden gedane uitgaven verminderd met de afschrijvingen.
+
+De afschrijvingen vinden lineair plaats over de looptijd van het contract. In geval van een duurzame
+waardevermindering vindt waardering tegen deze lagere realiseerbare waarde plaats. Bij tussentijdse
+verlenging van spelerscontracten vindt afschrijving van de nog aanwezige boekwaarde plaats
+gedurende de resterende looptijd.
+
+Bij a koop c.q. ontbinding van spelerscontracten worden de nog resterende geactiveerde
+'Vergoedingssommen' ten laste van de winst-en-verliesrekening gebracht. Dit gebeurt in dezelfde
+periode als waarin de verkoopopbrengst is verantwoord.
+
+Uitgaven voor ontwikkelingsprojecten worden geactiveerd als onderdeel van de vervaardigingsprijs als
+het waarschijnlijk is dat het project commercieel en technisch succesvol zal zijn (dat wil zeggen: als het
+waarschijnlijk is dat economische voordelen zullen worden behaald) en de kosten betrouwbaar kunnen
+worden vastgesteld. Voor de geactiveerde ontwikkelingskosten is een wettelijke reserve onder het
+eigen vermogen gevormd ter hoogte van het geactiveerde bedrag. De afschrijving van de geactiveerde
+ontwikkelingskosten vangt aan zodra het actief in gebruik is genomen. Er wordt afgeschreven over de
+verwachte toekomstige gebruiksduur van het actief.
+
+- 17 -
+
+
+--- pág. 19 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+## Materiële vaste activa
+De materië le vaste activa worden gewaardeerd op verkrijgingsprijs, verminderd met de cumulatieve
+afschrijvingen en indien van toepassing met bijzondere waardeverminderingen. De afschrijvingen
+worden gebaseerd op de geschatte economische levensduur en worden berekend op basis van een vast
+percentage van de verkrijgingsprijs, rekening houdend met eventuele residuwaarde. Er wordt
+afgeschreven vanaf het moment van ingebruikneming.
+
+De onderneming past de componentenbenadering toe voor materië le vaste activa indien belangrijke
+afzonderlijke bestanddelen van een materieel vast actief van elkaar te onderscheiden zijn. Rekening
+houdend met verschillen in gebruiksduur of verwacht gebruikspatroon, worden deze bestanddelen
+afzonderlijk afgeschreven.
+
+## Financiële vaste activa
+Deelnemingen
+Deelnemingen waarin invloed van betekenis kan worden uitgeoefend worden gewaardeerd volgens de
+vermogensmutatiemethode (nettovermogenswaarde). Wanneer 20% of meer van de stemrechten
+uitgebracht kan worden, wordt ervan uitgegaan dat er invloed van betekenis is.
+
+De nettovermogenswaarde wordt berekend volgens de grondslagen die gelden voor deze jaarrekening;
+voor deelnemingen waarvan onvoldoende gegevens beschikbaar zijn voor aanpassing aan deze
+grondslagen, wordt uitgegaan van de waarderingsgrondslagen van de desbetreffende deelneming.
+
+Indien de waardering van een deelneming volgens de nettovermogenswaarde negatief is, wordt deze op
+nihil gewaardeerd. Indien en voor zover N.E.C. Holding B.V. in deze situatie geheel of gedeeltelijk
+instaat voor de schulden van de deelneming, dan wel het stellige voornemen heeft de deelneming tot
+betaling van haar schulden in staat te stellen, wordt hiervoor een voorziening getroffen.
+
+De eerste waardering van gekochte deelnemingen is gebaseerd op de reë le waarde van de
+identi iceerbare activa en passiva op het moment van acquisitie. Voor de vervolgwaardering worden de
+grondslagen toegepast die gelden voor deze jaarrekening, uitgaande van de waarden bij eerste
+waardering.
+
+Als resultaat wordt verantwoord het bedrag waarmee de boekwaarde van de deelneming sinds de
+voorafgaande jaarrekening is gewijzigd als gevolg van het door de deelneming behaalde resultaat.
+
+Deelnemingen waarop geen invloed van betekenis kan worden uitgeoefend, worden gewaardeerd tegen
+verkrijgingsprijs. Als resultaat wordt in aanmerking genomen het in het verslagjaar gedeclareerde
+dividend van de deelneming, waarbij niet in contanten uitgekeerde dividenden worden gewaardeerd
+tegen reë le waarde.
+
+Indien sprake is van een bijzondere waardevermindering vindt waardering plaats tegen de
+realiseerbare waarde (zie verder de paragraaf 'Bijzondere waardeverminderingen van vaste activa');
+afwaardering vindt plaats ten laste van de winst-en-verliesrekening.
+
+- 18 -
+
+
+--- pág. 20 ---
+
+N.E.C. Holding B.V. te Nijmegen
+## Latente belastingvorderingen
+Latente belastingvorderingen worden opgenomen voor verrekenbare iscale verliezen en voor
+verrekenbare tijdelijke verschillen tussen de waarde van de activa en passiva volgens iscale
+voorschriften enerzijds en de in deze jaarrekening gevolgde waarderingsgrondslagen anderzijds, met
+dien verstande dat latente belastingvorderingen alleen worden opgenomen voor zover het
+waarschijnlijk is dat er toekomstige iscale winst zal zijn waarmee de tijdelijke verschillen kunnen
+worden verrekend en verliezen kunnen worden gecompenseerd.
+
+De berekening van de latente belastingvorderingen geschiedt tegen de op het einde van het verslagjaar
+geldende belastingtarieven of tegen de in komende jaren geldende tarieven, voor zover deze al bij wet
+zijn vastgesteld. Latente belastingvorderingen worden gewaardeerd op nominale waarde.
+
+## Overige vorderingen
+De vorderingen worden bij eerste verwerking opgenomen tegen de reë le waarde en vervolgens
+gewaardeerd tegen de geamortiseerde kostprijs, welke gelijk zijn aan de nominale waarde, onder aftrek
+van de noodzakelijk geachte voorzieningen voor het risico van oninbaarheid. Deze voorzieningen
+worden bepaald op basis van individuele beoordeling van de vorderingen.
+
+## Bijzondere waardeverminderingen van vaste activa
+De vennootschap beoordeelt op iedere balansdatum of er aanwijzingen zijn dat een vast actief aan een
+bijzondere waardevermindering onderhevig kan zijn. Indien dergelijke indicaties aanwezig zijn, wordt
+de realiseerbare waarde van het actief vastgesteld. Indien het niet mogelijk is de realiseerbare waarde
+voor het individuele actief te bepalen, wordt de realiseerbare waarde bepaald van de
+kasstroomgenererende eenheid waartoe het actief behoort.
+
+Van een bijzondere waardevermindering is sprake als de boekwaarde van een actief hoger is dan de
+realiseerbare waarde; de realiseerbare waarde is de hoogste van de opbrengstwaarde en de
+bedrijfswaarde. Een bijzonder-waardeverminderingsverlies wordt direct als last verwerkt in de winst-
+en-verliesrekening onder gelijktijdige verlaging van de boekwaarde van het betreffende actief.
+
+De opbrengstwaarde wordt in eerste instantie ontleend aan een bindende verkoopovereenkomst; als
+die er niet is, wordt de opbrengstwaarde bepaald met behulp van de actieve markt waarbij normaliter
+de gangbare biedprijs geldt als marktprijs. De in aftrek te brengen kosten bij het bepalen van de
+opbrengstwaarde zijn gebaseerd op de geschatte kosten die rechtstreeks kunnen worden toegerekend
+aan de verkoop en nodig zijn om de verkoop te realiseren.
+
+Voor de bepaling van de bedrijfswaarde wordt een inschatting gemaakt van de toekomstige netto
+kasstromen bij voortgezet gebruik van het actief/de kasstroomgenererende eenheid; vervolgens
+worden deze kasstromen contant gemaakt waarbij een disconteringsvoet wordt gehanteerd.
+
+Indien wordt vastgesteld dat een bijzondere waardevermindering die in het verleden verantwoord is,
+niet meer bestaat of is afgenomen, dan wordt de toegenomen boekwaarde van de desbetreffende activa
+niet hoger gesteld dan de boekwaarde die bepaald zou zijn indien geen bijzondere waardevermindering
+voor het actief zou zijn verantwoord. Een bijzondere waardevermindering van goodwill wordt niet
+teruggenomen.
+
+- 19 -
+
+
+--- pág. 21 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+## Voorraden
+Voorraden handelsgoederen worden gewaardeerd tegen verkrijgingsprijs of lagere netto-
+opbrengstwaarde op basis van de FIFO-methode. Voor eventuele incourante voorraad wordt een
+voorziening getroffen.
+
+## Vorderingen
+Vorderingen worden bij eerste verwerking gewaardeerd tegen de reë le waarde van de tegenprestatie,
+inclusief de transactiekosten indien materieel. Vorderingen worden na eerste verwerking gewaardeerd
+tegen de geamortiseerde kostprijs. Voorzieningen wegens oninbaarheid worden in mindering gebracht
+op de boekwaarde van de vordering.
+
+## Effecten
+Effecten worden bij eerste verwerking gewaardeerd tegen reë le waarde en zijn voor waardering na
+eerste verwerking onder te verdelen in effecten die onderdeel zijn van de handelsportefeuille en
+effecten die geen onderdeel zijn van de handelsportefeuille, zijnde eigen-vermogensinstrumenten of
+obligaties.
+
+Effecten die onderdeel zijn van de handelsportefeuille worden, na eerste verwerking, gewaardeerd
+tegen reë le waarde. Waardeveranderingen worden rechtstreeks in de winst-en-verliesrekening
+verwerkt.
+
+## Liquide middelen
+Liquide middelen bestaan uit kas, banktegoeden en deposito's met een looptijd korter dan twaalf
+maanden. Rekening-courantschulden bij banken zijn opgenomen onder schulden aan
+kredietinstellingen onder kortlopende schulden. Liquide middelen worden gewaardeerd tegen
+nominale waarde.
+
+## Langlopende schulden
+Langlopende schulden worden bij de eerste verwerking gewaardeerd tegen reë le waarde.
+Transactiekosten die direct zijn toe te rekenen aan de verwerving van de langlopende schulden worden
+in de waardering bij eerste verwerking opgenomen. Langlopende schulden worden na eerste
+verwerking gewaardeerd tegen geamortiseerde kostprijs, zijnde het ontvangen bedrag rekening
+houdend met agio of disagio en onder aftrek van transactiekosten.
+
+Het verschil tussen de bepaalde boekwaarde en de uiteindelijke a lossingswaarde wordt op basis van
+de effectieve rente gedurende de geschatte looptijd van de langlopende schulden in de winst-en-
+verliesrekening als interestlast verwerkt.
+
+## Kortlopende schulden
+Kortlopende schulden betreffen schulden die binnen 12 maanden na balansdatum kunnen worden
+opgeë ist en worden bij de eerste verwerking gewaardeerd tegen reë le waarde. Kortlopende schulden
+worden na eerste verwerking gewaardeerd tegen de geamortiseerde kostprijs, zijnde het ontvangen
+bedrag rekening houdend met agio of disagio en onder aftrek van transactiekosten. Dit is meestal de
+nominale waarde.
+
+- 20 -
+
+
+--- pág. 22 ---
+
+N.E.C. Holding B.V. te Nijmegen
+# GRONDSLAGEN VOOR DE BEPALING VAN HET RESULTAAT
+
+Algemeen
+Het resultaat wordt bepaald als het verschil tussen de netto-omzet en de kosten en andere lasten van
+het verslagjaar met inachtneming van de hiervoor vermelde waarderingsgrondslagen. Winsten zijn
+verantwoord in het jaar waarin de goederen zijn geleverd c.q. de diensten zijn verricht. Verliezen welke
+hun oorsprong vinden in het boekjaar zijn in aanmerking genomen zodra deze voorzienbaar zijn.
+
+## Opbrengstverantwoording
+Algemeen
+Opbrengsten uit de verkopen van producten en diensten worden, onder aftrek van kortingen en van de
+over de omzet geheven belastingen, verantwoord op het moment dat de belangrijkste risico's en
+rechten op economische voordelen zijn overgedragen.
+
+De belangrijkste risico's en rechten op economische voordelen worden overgedragen op het moment
+dat de producten zijn afgeleverd.
+
+Vooruit ontvangen vergoedingen voor nog te verrichten prestatieverplichtingen worden als passiefpost
+in de balans verwerkt. Prestatieverplichtingen die zijn voltooid waarvoor de vergoeding nog niet is
+ontvangen worden verantwoord als debiteuren en/of overige vorderingen in de balans.
+
+De opbrengstenverantwoording volgt de volgende 5 stappen:
+1. Het identi iceren van een contract met een klant.
+2. Het identi iceren van de prestatieverplichtingen in het contract.
+3. Het bepalen van de transactieprijs.
+4. Het toerekenen van de transactieprijs aan prestatieverplichtingen.
+5. Het verantwoorden van opbrengsten wanneer een prestatieverplichting is vervuld.
+
+De netto-omzet van de te onderscheiden opbrengstcategorieë n wordt als volgt in het boekjaar
+verantwoord:
+   - Recettes en premies: in de periode dat de wedstrijden worden gespeeld.
+   - Seizoenkaarten: naar rato van het aantal gespeelde thuiswedstrijden in de competitie.
+   - Business seats en skybox plaatsen: lineair verdeeld over het boekjaar.
+   - Indirecte wedstrijdbaten: bij levering van de prestatie.
+   - Sponsoring en reclame: lineair naar rato van de looptijd van de overeenkomst. De variabele
+     elementen op het moment dat de bijbehorende voorwaarden zijn vervuld. Overige baten bij
+     levering van de prestatie.
+   - Televisie: TV opbrengsten naar rato van het aantal gespeelde wedstrijden.
+   - Merchandising: opbrengsten merchandising bij levering van de artikelen.
+   - Overige baten: zowel op een tijdstip als over een periode, wat a hankelijk is van de te leveren
+     prestatieverplichting.
+
+Indien in de bovenstaande opbrengstcategorieë n opbrengsten worden verantwoord die zijn gerelateerd
+aan wedstrijden dan worden deze opbrengsten verwerkt in de periode dat de wedstrijden worden
+gespeeld.
+
+- 21 -
+
+
+--- pág. 23 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+## Inkoopwaarde van de omzet
+De inkoopwaarde omzet omvat de exploitatiekosten van de horeca en de inkoopwaarde van de
+verkochte merchandisegoederen.
+
+## Personeelsbeloningen
+Periodiek betaalbare beloningen
+Lonen, salarissen en sociale lasten worden op grond van de arbeidsvoorwaarden verwerkt in de winst-
+en-verliesrekening voor zover ze verschuldigd zijn aan werknemers.
+
+Pensioenen
+De vennootschap heeft diverse pensioenregelingen. In beginsel vallen alle contractspelers verplicht
+onder de pensioenregeling van de Stichting Contractspelers KNVB (CFK). De pensioenen van trainers en
+coaches zijn verplicht ondergebracht bij de Stichting Pensioenfonds voor voetbaloefenmeesters. N.E.C.
+Holding B.V. kent voor haar overig personeel een pensioenregeling op basis van beschikbare premie.
+De werkgever heeft derhalve niet de verplichting tot het betalen van aanvullende bijdragen indien
+sprake is van tekorten in de pensioenopbouw (toegezegd-pensioenregeling). In de balans is daarom
+geen voorziening terzake opgenomen.
+
+## Afschrijvingen
+Immaterië le vaste activa en materië le vaste activa worden vanaf het moment van gereedheid voor
+ingebruikneming afgeschreven volgens de lineaire methode over de verwachte economische
+levenssduur van het actief. Boekwinsten en -verliezen uit de incidentele verkoop van materië le vaste
+activa zijn begrepen onder de afschrijvingen.
+
+## Resultaat vergoedingssommen
+Dit betreft het resultaat op transfers. Vergoedingen die contractueel verschuldigd zijn aan derden uit
+hoofde van transfers worden hierop in mindering gebracht. Transferresultaten worden verwerkt in het
+boekjaar waarin de transfer is gerealiseerd. Indien een speler wordt getransfereerd voor 30 juni van
+enig boekjaar is deze gewaardeerd op de opbrengstwaarde. De te factureren opbrengstwaarde wordt
+opgenomen onder de vorderingen.
+
+## Financiële baten en lasten
+Rentebaten en rentelasten
+Rentebaten en rentelasten worden tijdsevenredig verwerkt, rekening houdend met de effectieve
+rentevoet van de desbetreffende activa en passiva. Bij de verwerking van de rentelasten wordt rekening
+gehouden met de verantwoorde transactiekosten op de ontvangen leningen.
+
+Koersverschillen
+Koersverschillen die optreden bij de afwikkeling of omrekening van monetaire posten worden in de
+winst-en-verliesrekening verwerkt in de periode dat zij zich voordoen.
+
+- 22 -
+
+
+--- pág. 24 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+## Belastingen
+De belasting over het resultaat wordt berekend over het resultaat vó ó r belastingen in de winst- en
+verliesrekening, na aftrek van het gebruik van iscaal compensabele verliezen uit voorgaande boekjaren
+en vrijgestelde winstbestanddelen en na bijtelling van niet aftrekbare kosten. Hierbij worden de thans
+geldende belastingtarieven gehanteerd.
+
+## Resultaat deelnemingen
+Als resultaat van deelnemingen waarin invloed van betekenis wordt uitgeoefend op het zakelijke en
+ inancië le beleid, wordt opgenomen het aan de vennootschap toekomende aandeel in het resultaat van
+deze deelnemingen. Dit resultaat wordt bepaald op basis van de bij N.E.C. Holding B.V. geldende
+grondslagen voor waardering en resultaatbepaling.
+
+# GRONDSLAGEN VOOR DE OPSTELLING VAN HET GECONSOLIDEERD KASSTROOMOVERZICHT
+Het kasstroomoverzicht is opgesteld volgens de indirecte methode.
+
+De geldmiddelen in het kasstroomoverzicht bestaan uit de liquide middelen.
+
+Kasstromen in vreemde valuta zijn omgerekend tegen een geschatte gemiddelde koers.
+Koersverschillen inzake geldmiddelen worden afzonderlijk in het kasstroomoverzicht getoond.
+
+Winstbelastingen, ontvangen interest en ontvangen dividenden worden opgenomen onder de
+kasstroom uit operationele activiteiten. Betaalde interest en betaalde dividenden worden opgenomen
+onder de kasstroom uit inancieringsactiviteiten.
+
+- 23 -
+
+
+--- pág. 25 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+# 5 TOELICHTING OP DE GECONSOLIDEERDE BALANS PER 30 JUNI 2025
+
+## ACTIVA
+
+## VASTE ACTIVA
+
+### 1. Immateriële vaste activa
+
+|  | Kosten van ontwikkeling € | Vergoedings-sommen € | Totaal € |
+| --- | --- | --- | --- |
+| **Boekwaarde per 1 juli 2024** |  |  |  |
+| Verkrijgingsprijs | 166.536 | 2.075.356 | 2.241.892 |
+| Cumulatieve afschrijvingen en waardeverminderingen | -25.688 | -503.905 | -529.593 |
+|  | 140.848 | 1.571.451 | 1.712.299 |
+| **Mutaties** |  |  |  |
+| Investeringen | - | 4.839.929 | 4.839.929 |
+| Desinvesteringen | - | -282.461 | -282.461 |
+| Afschrijving desinvesteringen | - | 222.197 | 222.197 |
+| Afschrijvingen | -33.307 | -1.637.054 | -1.670.361 |
+|  | -33.307 | 3.142.611 | 3.109.304 |
+| **Boekwaarde per 30 juni 2025** |  |  |  |
+| Verkrijgingsprijs | 166.536 | 6.632.824 | 6.799.360 |
+| Cumulatieve afschrijvingen en waardeverminderingen | -58.995 | -1.918.762 | -1.977.757 |
+|  | 107.541 | 4.714.062 | 4.821.603 |
+
+De geactiveerde vergoedingssommen worden afgeschreven op basis van de aangegane contractduur. De
+resterende looptijd van de vergoedingssommen varieert per 30 juni 2025 van 1 tot en met 3 jaar.
+
+De afschrijvingstermijn van de kosten van ontwikkeling (website / webshop) is 5 jaar. Voor de
+boekwaarde is een wettelijke reserve gevormd.
+
+- 24 -
+
+--- pág. 26 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+### 2. Materiële vaste activa
+
+|  | Bedrijfs-gebouwen en -terreinen € | Machines en installaties € | Andere vaste bedrijfs-middelen € | Totaal € |
+| --- | --- | --- | --- | --- |
+| **Boekwaarde per 1 juli 2024** |  |  |  |  |
+| Aanschaf ingswaarde | 2.604.827 | 765.600 | 4.159.877 | 7.530.304 |
+| Cumulatieve afschrijvingen en waardeverminderingen | -535.591 | -693.129 | -1.749.586 | -2.978.306 |
+|  | 2.069.236 | 72.471 | 2.410.291 | 4.551.998 |
+| **Mutaties** |  |  |  |  |
+| Investeringen | 5.808.728 | 82.329 | 553.430 | 6.444.487 |
+| Desinvesteringen | - | -68.769 | -94.479 | -163.248 |
+| Afschrijving desinvesteringen | - | 68.769 | 94.479 | 163.248 |
+| Afschrijvingen | -272.694 | -25.960 | -536.974 | -835.628 |
+|  | 5.536.034 | 56.369 | 16.456 | 5.608.859 |
+| **Boekwaarde per 30 juni 2025** |  |  |  |  |
+| Aanschaf ingswaarde | 8.413.555 | 779.160 | 4.618.828 | 13.811.543 |
+| Cumulatieve afschrijvingen en waardeverminderingen | -808.285 | -650.320 | -2.192.081 | -3.650.686 |
+|  | 7.605.270 | 128.840 | 2.426.747 | 10.160.857 |
+
+De eeuwigdurende erfpacht is voor € 1,2 miljoen geactiveerd; gezien de aard hiervan wordt hierop niet
+afgeschreven.
+
+**Afschrijvingspercentages**
+
+|  | % |
+| --- | --- |
+| Bedrijfsgebouwen en -terreinen | 6,7-10 |
+| Machines en installaties | 10-20 |
+| Andere vaste bedrijfsmiddelen | 10-20 |
+
+### 3. Financiële vaste activa
+
+|  | 30-6-2025 € | 30-6-2024 € |
+| --- | --- | --- |
+| **Andere deelnemingen** |  |  |
+| Eredivisie N.V. te Zeist | 13.614 | 13.614 |
+
+Dit belang betreft een deelname van 1 certi icaat van een aandeel.
+
+- 25 -
+
+--- pág. 27 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+|  | 30-6-2025 € | 30-6-2024 € |
+| --- | --- | --- |
+| **Overige vorderingen** |  |  |
+| Nog te ontvangen vergoedings- en transfersommen | 874.000 | 777.000 |
+| Latente belastingvorderingen | 993.116 | - |
+|  | 1.867.116 | 777.000 |
+
+Nog te ontvangen vergoedings- en transfersommen:
+De nog te ontvangen vergoedings- en transfersommen hebben een resterende looptijd van meer dan 1
+jaar. De vorderingen zijn niet rentedragend.
+
+Latente belastingvorderingen:
+Uit hoofde van verliescompensatie bedraagt het compensabel iscale verlies per 30 juni 2025 € 15
+miljoen (30 juni 2024: € 12,8 miljoen). Dit compensabel verlies is gewaardeerd voor de verwachte
+iscale winst die over seizoen 2025-2026 verrekend zal worden. Deze wordt door de directe geschat op
+€ 3,9 miljoen. Er is gekozen voor gedeeltelijke waardering van deze iscale verliezen, aangezien het
+verwachte positieve iscale resultaat voortkomt uit verrichte transfers welke reeds gerealiseerd zijn. De
+latentie is gewaardeerd tegen een gemiddeld belastingtarief van 25,4%.
+
+## VLOTTENDE ACTIVA
+
+### 4. Voorraden
+
+|  | 30-6-2025 € | 30-6-2024 € |
+| --- | --- | --- |
+| Handelsgoederen | 605.624 | 79.489 |
+
+Een voorziening voor incourantheid werd niet noodzakelijk geacht.
+
+### 5. Vorderingen
+
+|  | 30-6-2025 € | 30-6-2024 € |
+| --- | --- | --- |
+| Handelsdebiteuren | 636.282 | 230.199 |
+| Belastingen en premies sociale verzekeringen | - | 127.187 |
+| Overige vorderingen en overlopende activa | 4.400.170 | 5.963.423 |
+|  | 5.036.452 | 6.320.809 |
+
+Alle vorderingen hebben een resterende looptijd korter dan een jaar, tenzij anders vermeld. De reë le
+waarde van de vorderingen benadert de boekwaarde, gegeven het kortlopende karakter van de
+vorderingen en het feit dat waar nodig voorzieningen voor oninbaarheid zijn gevormd.
+
+**Handelsdebiteuren**
+
+|  | 30-6-2025 € | 30-6-2024 € |
+| --- | --- | --- |
+| Debiteuren | 812.013 | 398.320 |
+| Voorziening dubieuze debiteuren | -175.731 | -168.121 |
+|  | 636.282 | 230.199 |
+
+Voor eventuele oninbaarheid wordt een voorziening getroffen.
+
+- 26 -
+
+--- pág. 28 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+|  | 30-6-2025 € | 30-6-2024 € |
+| --- | --- | --- |
+| **Belastingen en premies sociale verzekeringen** |  |  |
+| Omzetbelasting | - | 127.187 |
+| **Overige vorderingen en overlopende activa** |  |  |
+| Overige vorderingen | 897.563 | 680.672 |
+| Overlopende activa | 3.502.607 | 5.282.751 |
+|  | 4.400.170 | 5.963.423 |
+| **Overlopende activa** |  |  |
+| Nog te ontvangen vergoedings- en transfersommen | 2.181.425 | 3.932.050 |
+| Vooruitbetaalde kosten | 599.062 | 885.823 |
+| Overige overlopende activa | 722.120 | 464.878 |
+|  | 3.502.607 | 5.282.751 |
+
+Voor de nog te ontvangen vergoedings- en transfersommen is voor eventuele oninbaarheid een
+voorziening getroffen ad. € 352.500 (2023/2024: € nihil).
+
+### 6. Effecten
+
+|  | 30-6-2025 € | 30-6-2024 € |
+| --- | --- | --- |
+| Overige beleggingen | - | 156.934 |
+
+### 7. Liquide middelen
+
+|  | 30-6-2025 € | 30-6-2024 € |
+| --- | --- | --- |
+| Rabobank | 2.119.691 | 2.032.801 |
+| ING Bank N.V. | 62.478 | 151.798 |
+| Kas | 17.546 | 4.476 |
+|  | 2.199.715 | 2.189.075 |
+
+De liquide middelen staan ter vrije beschikking van de vennootschap.
+
+- 27 -
+
+--- pág. 29 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+## PASSIVA
+
+### 8. Groepsvermogen
+
+Voor een toelichting op het groepsvermogen verwijzen wij u naar de toelichting op het eigen vermogen
+van de enkelvoudige balans op pagina 41 van dit rapport.
+
+### 9. Langlopende schulden
+
+|  | 30-6-2025 € | 30-6-2024 € |
+| --- | --- | --- |
+| Schulden aan verbonden partijen | - | 15.000 |
+| Belastingen en premies sociale verzekeringen | 687.358 | 1.237.244 |
+| Overige schulden | 9.645.988 | 6.309.212 |
+|  | 10.333.346 | 7.561.456 |
+
+**Belastingen en premies sociale verzekeringen**
+
+Gedurende de Coronapandemie is er gebruik gemaakt van de overheidsmaatregelen, zijnde uitstel van
+omzet- en loonbelasting. Hierdoor is er gedurende de pandemie geen omzet- en loonbelasting betaald.
+Het bedrag bestaat uit de uitstel van beide belastingen over het seizoen 2019-2020 en 2020-2021.
+Vanaf 1 oktober 2022 dienen de belastingen in 60 termijnen te worden terugbetaald.
+
+**Overige schulden**
+
+|  | 30-6-2025 € | 30-6-2024 € |
+| --- | --- | --- |
+| Achtergestelde leningen | 4.000.000 | 5.000.000 |
+| Lening Gemeente Nijmegen | - | 936.466 |
+| Leningen overname stadion | 4.446.880 | - |
+| Overige leningen o/g | 1.000.000 | 97.500 |
+| Terug te betalen overheidssteun (NOW) | 199.108 | 275.246 |
+|  | 9.645.988 | 6.309.212 |
+
+- 28 -
+
+--- pág. 30 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+Achtergestelde en langlopende leningen:
+Als gevolg van de wijzigingen in de juridische structuur van N.E.C. Holding B.V. in boekjaar 2021/2022,
+is er door diverse partijen voor in totaal € 5.000.000 verstrekt. De looptijd van de leningen is 5 jaar (tot
+1 juli 2026) en a lossing geschiedt bij einde looptijd. De intië le achterstelling liep tot 1 juli 2024. Er zijn
+addendums ondertekent waarbij is overeengekomen dat € 4.000.000 tot einde van de looptijd is
+achtergesteld. De overige € 1.000.000 kwali icieert als langlopende lening. De rente over de leningen is
+1,5% mits N.E.C. Holding B.V. geen negatief resultaat realiseert.
+
+Lening Gemeente Nijmegen:
+In 2015 is een lening verstrekt door de Gemeente Nijmegen met een looptijd van circa 25 jaar. De
+a lossing vond lineair plaats in jaarlijkse termijnen van € 31.641, voor het eerst vó ó r 1 juli 2016. De
+rentevergoeding varieerde gedurende de looptijd tussen 1% en 2% per jaar en werd jaarlijks voldaan.
+In het boekjaar 2024/2025 is de lening in zijn geheel afgewikkeld. In dit kader is een bedrag van € 0,6
+miljoen afgelost. Daarnaast is een bedrag van € 0,4 miljoen vrijgevallen. Deze vrijval is verantwoord in
+mindering op de huisvestingskosten, aangezien de betreffende lasten oorspronkelijk onder deze post
+zijn opgenomen.
+
+Leningen overname stadion:
+Voor de overname van het stadion zijn leningen aangetrokken. Over het grootste deel van de
+ inanciering, ter grootte van € 5,55 miljoen, wordt een rente van 6% berekend. Hiervan wordt 2%
+voldaan via de annuı̈taire lening, terwijl de resterende 4% wordt verrekend door middel van
+sponsorverplichtingen. Over een aanvullend bedrag van € 1 miljoen bedraagt de rente 2%. Per 31
+december 2025 dient een bedrag van € 2,1 miljoen te worden afgelost en per 1 juli 2026 volgt een
+a lossing van € 673.440. Het resterende deel van de lening wordt afgelost via een annuı̈tair schema.
+Indien een nettoresultaat van meer dan € 5 miljoen wordt behaald, dient binnen zes maanden na
+vaststelling van de jaarrekening aanvullend 25% van het meerdere boven dit bedrag te worden afgelost.
+Als zekerheid zijn de toekomstige vorderingen uit hoofde van mediagelden, die worden ontvangen van
+de Eredivisie CV verpand.
+
+Overige leningen o/g:
+In het boekjaar 2021-2022 zijn N.E.C. en de derde partij overeengekomen dat het levenslange recht
+zoals opgenomen was onder de voorzieningen gedeeltelijk komt te vervallen. Het levenslange recht is
+middels een vaststellingsovereenkomst omgezet in een recht voor de komende vier seizoenen. De
+oorspronkelijke waarde van deze resterende verplichting was € 0,4 miljoen. De resterende schuld van
+€ 0,1 miljoen heeft een kortlopend karakter en is gepresenteerd onder de kortlopende schulden.
+
+### 10. Kortlopende schulden
+
+Alle kortlopende schulden hebben een resterende looptijd van korter dan een jaar. De reë le waarde van
+de kortlopende schulden benadert de boekwaarde vanwege het kortlopende karakter ervan.
+
+|  | 30-6-2025 € | 30-6-2024 € |
+| --- | --- | --- |
+| **A lossingsverplichtingen langlopende schulden** |  |  |
+| Leningen | 2.995.767 | 1.232.820 |
+
+- 29 -
+
+--- pág. 31 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+|  | 30-6-2025 € | 30-6-2024 € |
+| --- | --- | --- |
+| **Schulden aan leveranciers en handelskredieten** |  |  |
+| Crediteuren | 1.354.411 | 2.147.862 |
+| **Belastingen en premies sociale verzekeringen** |  |  |
+| Omzetbelasting | 123.436 | - |
+| Loonhef ing | 720.767 | 685.323 |
+| Pensioenen | 8.436 | 252.267 |
+|  | 852.639 | 937.590 |
+| **Overige schulden en overlopende passiva** |  |  |
+| Overlopende passiva | 6.179.078 | 5.707.447 |
+| **Overlopende passiva** |  |  |
+| Vooruitontvangen bedragen | 2.596.724 | 3.088.511 |
+| Nog te betalen vergoedings- en transfersommen | 2.511.106 | 1.366.752 |
+| Rekening-courant KNVB | - | 496.393 |
+| Overige overlopende passiva | 1.071.248 | 755.791 |
+|  | 6.179.078 | 5.707.447 |
+
+Onder de overige overlopende passiva is voor een bedrag van € 60.000 (2023/2024: € 90.000)
+opgenomen welke een resterende looptijd heeft van meer dan é én jaar.
+
+## NIET IN DE BALANS OPGENOMEN ACTIVA EN VERPLICHTINGEN
+
+### Voorwaardelijke verplichtingen
+
+**Fiscale eenheid**
+
+De vennootschap maakt deel uit van de iscale eenheid voor de vennootschapsbelasting en
+omzetbelasting en is op grond daarvan hoofdelijk aansprakelijk voor de belastingschuld van de iscale
+eenheid als geheel.
+
+### Meerjarige inanciële activa en verplichtingen
+
+**Leaseverplichtingen**
+
+Ultimo boekjaar bedragen de leaseverplichtingen € 21.174 per maand. De looptijd van de
+leaseverplichtingen bedraagt maximaal 3 jaar. De totale leaseverplichting bedraagt € 444.000, waarvan
+€ 198.000 binnen é é n jaar.
+
+- 30 -
+
+--- pág. 32 ---
+
+N.E.C. Holding B.V. te Nijmegen
+### Huurverplichtingen onroerende zaken
+Voor het Multifunctioneel Sport Complex De Eendracht bedraagt de huurverplichting € 148.000 per
+jaar, eindigend februari 2043.
+
+### Financiële instrumenten en risicobeheersing
+**Algemeen**
+Voor de toelichting van primaire inancië le instrumenten wordt verwezen naar de speci ieke
+postgewijze toelichting. Hieronder worden de inancië le derivaten van de groep en de hiermee
+verbonden risico's toegelicht.
+
+**Valutarisico**
+Het valutarisico is beperkt. Vrijwel alle transacties van de onderneming zijn in euro's. De directie heeft
+op basis van een valutarisicoanalyse bepaald dat indien benodigd een deel van deze valutarisico's
+wordt afgedekt.
+
+**Renterisico**
+De vennootschap loopt renterisico over de rentedragende vorderingen en rentedragende langlopende
+en kortlopende schulden (waaronder schulden aan kredietinstellingen).
+
+Voor vorderingen en schulden met variabele renteafspraken loopt de vennootschap risico ten aanzien
+van toekomstige kasstromen, met betrekking tot vastrentende vorderingen en schulden loopt de
+vennootschap risico's over de marktwaarde. Met betrekking tot de vorderingen en schulden worden
+geen inancië le derivaten met betrekking tot renterisico gecontracteerd.
+
+**Kredietrisico**
+De vennootschap heeft geen signi icante concentraties van kredietrisico. De opbrengsten worden in
+belangrijke mate gefactureerd voordat de dienst wordt geleverd. Wanneer sprake is van een
+overeengekomen uitgestelde betaling bij transfers, heeft de vennootschap aanvullende dwangmiddelen
+als gevolg van de richtlijnen van de FIFA. Er wordt gebruik gemaakt van meerdere inanciers om over
+meerdere kredietfaciliteiten te kunnen beschikken. Voor zover noodzakelijk worden nadere
+zekerheden verstrekt aan de inancier voor beschikbare kredietfaciliteiten. Op basis van de opgesteld
+prognose blijkt dat er geen liquiditeitsrisico's zijn voor de komende twaalf maanden.
+
+- 31 -
+
+
+--- pág. 33 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+# 6 TOELICHTING OP DE GECONSOLIDEERDE WINST-EN-VERLIESREKENING OVER 2024/2025
+
+### 11. Netto-omzet
+
+De netto-omzet is in 2024/2025 ten opzichte van 2023/2024 met 20,6% gestegen.
+
+|  | 2024/2025 € | 2023/2024 € |
+| --- | --- | --- |
+| **12. Netto-omzet** |  |  |
+| Wedstrijdbaten | 3.611.090 | 4.733.917 |
+| Sponsoring | 7.687.557 | 6.246.301 |
+| Media gerelateerde baten | 4.130.774 | 2.787.462 |
+| Subsidies | 49.900 | 171.847 |
+| Merchandise | 1.288.099 | 820.838 |
+| Horeca | 3.250.913 | 1.563.758 |
+| Prijzengeld | 1.612.011 | 1.431.144 |
+| Overige baten | 888.331 | 919.317 |
+|  | 22.518.675 | 18.674.584 |
+| **13. Inkoopwaarde van de omzet** |  |  |
+| Merchandise | 991.331 | 505.419 |
+| Horeca | 2.010.229 | 950.410 |
+|  | 3.001.560 | 1.455.829 |
+| **14. Personeelskosten** |  |  |
+| Lonen en salarissen | 12.669.772 | 11.289.577 |
+| Sociale lasten | 1.141.249 | 939.894 |
+| Pensioenlasten | 110.082 | 109.720 |
+| Overige personeelskosten | 1.622.868 | 1.377.524 |
+|  | 15.543.971 | 13.716.715 |
+
+In de overige personeelskosten zijn over boekjaar 2024/2025 leasekosten opgenomen ten bedrage van
+€ 285.562 (2023/2024: € 250.182).
+
+|  |  |  |
+| --- | --- | --- |
+| **15. Afschrijvingen** |  |  |
+| Immaterië le vaste activa | 33.307 | 24.811 |
+| Materië le vaste activa | 835.628 | 685.945 |
+|  | 868.935 | 710.756 |
+| **Afschrijvingen immateriële vaste activa** |  |  |
+| Kosten van ontwikkeling | 33.307 | 24.811 |
+| Vergoedingssommen | 1.637.054 | 620.306 |
+| Allocatie amortisatie vergoedingssommen | -1.637.054 | -620.306 |
+|  | 33.307 | 24.811 |
+
+- 32 -
+
+--- pág. 34 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+|  | 2024/2025 € | 2023/2024 € |
+| --- | --- | --- |
+| **Afschrijvingen materiële vaste activa** |  |  |
+| Bedrijfsgebouwen en -terreinen | 272.694 | 219.065 |
+| Machines en installaties | 25.960 | 8.747 |
+| Andere vaste bedrijfsmiddelen | 536.974 | 458.133 |
+|  | 835.628 | 685.945 |
+| **16. Overige bedrijfskosten** |  |  |
+| Huisvestingskosten | 1.379.222 | 1.488.336 |
+| Wedstrijd- en trainingskosten | 1.588.446 | 1.763.309 |
+| Verkoopkosten | 2.302.486 | 3.230.804 |
+| Algemene kosten | 1.520.356 | 1.186.860 |
+|  | 6.790.510 | 7.669.309 |
+| **17. Resultaat vergoedingssommen** |  |  |
+| Vergoedingssommen | 3.190.521 | 3.744.788 |
+| Afschrijving vergoedingssommen | -1.637.054 | -620.306 |
+|  | 1.553.467 | 3.124.482 |
+| **18. Financiële baten en lasten** |  |  |
+| Rentelasten en soortgelijke kosten | -84.585 | -74.353 |
+| **Rentelasten en soortgelijke kosten** |  |  |
+| Rente Gemeente Nijmegen | -13.612 | -17.259 |
+| Rente- en bankkosten | -13.772 | -9.020 |
+| Rente overige leningen | -57.201 | -48.074 |
+|  | -84.585 | -74.353 |
+
+### 19. Belastingen
+
+De belasting over het resultaat ten bedrage van € 993.116 kan als volgt worden toegelicht:
+
+| Resultaat voor belastingen | -2.217.419 | -1.827.896 |
+| --- | --- | --- |
+| Mutatie actieve belastinglatentie | 993.116 | - |
+| Effectief belastingtarief | 44,78 | - |
+| Toepasselijk belastingtarief over € 200.000 | 19,00 | 19,00 |
+| Toepasselijk belastingtarief over bedrag groter dan € 200.000 | 25,80 | 25,80 |
+
+Het verschil tussen het effectieve belastingtarief en het van toepassing zijnde belastingtarief wordt
+verklaard door het lagere opstaptarief en het vormen van een latente belastingvordering ter hoogte van
+€ 993.116.
+
+- 33 -
+
+--- pág. 35 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+# 7 OVERIGE GECONSOLIDEERDE TOELICHTINGEN
+
+## Bezoldiging van (voormalige) bestuurders en commissarissen
+
+De bezoldiging van het bestuur over 2024/2025 bedraagt € 662.497 (2023/2024: € 587.500) (inclusief
+pensioenpremies). De Leden van de Raad van Commissarissen hebben in de verslagperiode afgezien
+van enige vergoeding verband houdende met het uitoefenen van de functie van commissaris.
+
+## Personeelsleden
+
+Gedurende het jaar 2024/2025 waren 99 werknemers in dienst op basis van een volledig
+dienstverband (2023/2024: 87).
+
+|  | 2024/2025 | 2023/2024 |
+| --- | --- | --- |
+| **Onderverdeeld naar:** |  |  |
+| Spelers | 29 | 26 |
+| Technische staf | 33 | 34 |
+| Directie en kantoor | 37 | 27 |
+|  | 99 | 87 |
+
+- 34 -
+
+--- pág. 36 ---
+
+# ENKELVOUDIGE JAARREKENING 2024/2025
+
+Enkelvoudige balans per 30 juni 2025
+Enkelvoudige winst-en-verliesrekening over 2024/2025
+Algemene grondslagen voor de opstelling van de enkelvoudige jaarrekening
+Toelichting op de enkelvoudige balans per 30 juni 2025
+Toelichting op de enkelvoudige winst-en-verliesrekening over 2024/2025
+Overige toelichtingen
+
+--- pág. 37 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+# 8 ENKELVOUDIGE BALANS PER 30 JUNI 2025
+
+(voor resultaatbestemming)
+
+|  | 30 juni 2025 € | 30 juni 2025 € | 30 juni 2024 € | 30 juni 2024 € |
+| --- | --- | --- | --- | --- |
+| **ACTIVA** |  |  |  |  |
+| **Vaste activa** |  |  |  |  |
+| Financiële vaste activa (20) |  |  |  |  |
+| Deelnemingen in groepsmaatschappijen | 3.321.068 |  | 846.057 |  |
+| Overige vorderingen | 993.116 |  | - |  |
+|  |  | 4.314.184 |  | 846.057 |
+| TOTAAL ACTIVA |  | 4.314.184 |  | 846.057 |
+| **PASSIVA** |  |  |  |  |
+| Eigen vermogen (21) |  |  |  |  |
+| Geplaatst kapitaal | 23.000 |  | 23.000 |  |
+| Agio | 18.884.025 |  | 12.884.025 |  |
+| Wettelijke reserves | 107.541 |  | 140.848 |  |
+| Overige reserves | -14.800.523 |  | -13.005.934 |  |
+| Onverdeeld resultaat | -1.224.303 |  | -1.827.896 |  |
+|  |  | 2.989.740 |  | -1.785.957 |
+| Voorzieningen (22) |  |  |  |  |
+| Overige voorzieningen |  | - |  | 2.300.686 |
+| Kortlopende schulden (23) |  |  |  |  |
+| Schulden aan groepsmaatschappijen |  | 1.324.444 |  | 331.328 |
+| TOTAAL PASSIVA |  | 4.314.184 |  | 846.057 |
+
+- 36 -
+
+--- pág. 38 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+# 9 ENKELVOUDIGE WINST-EN-VERLIESREKENING OVER 2024/2025
+
+|  | 2024/2025 € | 2023/2024 € |
+| --- | --- | --- |
+| Resultaat uit deelnemingen na belastingen | -1.224.303 | -1.827.896 |
+
+- 37 -
+
+--- pág. 39 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+# 10 ALGEMENE GRONDSLAGEN VOOR DE OPSTELLING VAN DE ENKELVOUDIGE JAARREKENING
+
+De enkelvoudige jaarrekening is opgesteld volgens de bepalingen van Titel 9 Boek 2 BW.
+Voor de algemene grondslagen voor de opstelling van de jaarrekening, de grondslagen voor de
+waardering van activa en passiva en de bepaling van het resultaat, alsmede de toelichting op de
+onderscheidende activa en passiva en de resultaten wordt verwezen naar de toelichting op de
+geconsolideerde jaarrekening, voor zover hierna niets anders wordt vermeld.
+
+- 38 -
+
+--- pág. 40 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+# 11 TOELICHTING OP DE ENKELVOUDIGE BALANS PER 30 JUNI 2025
+
+## ACTIVA
+
+## VASTE ACTIVA
+
+### 20. Financiële vaste activa
+
+|  | 30-6-2025 € | 30-6-2024 € |
+| --- | --- | --- |
+| **Deelnemingen in groepsmaatschappijen** |  |  |
+| Nijmegen Eendracht Combinatie B.V. te Nijmegen (100%) | 2.179.884 | - |
+| Exploitatie-Maatschappij De Goffert B.V. te Nijmegen (100%) | 1.141.184 | 846.057 |
+|  | 3.321.068 | 846.057 |
+
+Voor een overzicht van de deelnemingen in groepsmaatschappijen wordt verwezen naar de 'Lijst met
+kapitaalbelangen' onder de 'Geconsolideerde grondslagen voor waardering en resultaatbepaling'.
+
+N.E.C. Holding B.V. is aansprakelijk voor de schulden van de groepsmaatschappijen. Voor de negatieve
+nettovermogenswaarde van de groepsmaatschappijen is een voorziening gevormd.
+
+|  | 2024/2025 € | 2023/2024 € |
+| --- | --- | --- |
+| **Nijmegen Eendracht Combinatie B.V.** |  |  |
+| Stand per 1 juli | -2.300.686 | -2.120.652 |
+| Agiostorting | 6.000.000 | 1.500.000 |
+| Aandeel in het resultaat | -1.519.430 | -1.680.034 |
+|  | 2.179.884 | -2.300.686 |
+| Voorziening | - | 2.300.686 |
+| Stand per 30 juni | 2.179.884 | - |
+| **Exploitatie-Maatschappij De Goffert B.V.** |  |  |
+| Stand per 1 juli | 846.057 | 993.919 |
+| Aandeel in het resultaat | 295.127 | -147.862 |
+| Stand per 30 juni | 1.141.184 | 846.057 |
+
+- 39 -
+
+--- pág. 41 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+|  | 30-6-2025 € | 30-6-2024 € |
+| --- | --- | --- |
+| **Overige vorderingen** |  |  |
+| Latente belastingvorderingen | 993.116 | - |
+
+Uit hoofde van verliescompensatie bedraagt het compensabel iscale verlies per 30 juni 2025 € 15
+miljoen (30 juni 2024: € 12,8 miljoen). Dit compensabel verlies is gewaardeerd voor de verwachte
+iscale winst die over seizoen 2025-2026 verrekend zal worden. Deze wordt door de directe geschat op
+€ 3,9 miljoen. Er is gekozen voor gedeeltelijke waardering van deze iscale verliezen, aangezien het
+verwachte positieve iscale resultaat voortkomt uit verrichte transfers welke reeds gerealiseerd zijn. De
+latentie is gewaardeerd tegen een gemiddeld belastingtarief van 25,4%.
+
+- 40 -
+
+--- pág. 42 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+## PASSIVA
+
+### 21. Eigen vermogen
+
+|  | 30-6-2025 € | 30-6-2024 € |
+| --- | --- | --- |
+| **Geplaatst kapitaal** |  |  |
+| Geplaatst en volgestort zijn 20.000 gewone aandelen nominaal € 1,00 | 20.000 | 20.000 |
+| Geplaatst en volgestort zijn 3.000 cumulatief preferente aandelen nominaal € 1,00 | 3.000 | 3.000 |
+|  | 23.000 | 23.000 |
+
+Het geplaatst kapitaal bedraagt € 23.000 verdeeld in 20.000 gewone aandelen en 3.000 cumulatief
+preferente aandelen.
+
+In oktober 2021 heeft een wijziging van de juridische structuur van N.E.C. Holding B.V. plaatsgevonden.
+De cumulatief preferente aandelen en bijhorende certi icaten van N.E.C. Holding B.V. zijn ingetrokken.
+De gewone- en cumulatief preferente aandelen zijn uitgegeven aan Stichting Aandelen N.E.C. Holding.
+Met ingang van de formalisatie van de herstructurering is over het cumulatief preferent kapitaal 2%
+dividend verschuldigd. De winstreserve voor de cumulatief preferente aandelen bedraagt € 797.976
+(2023/2024: € 490.756)
+
+|  | 2024/2025 € | 2023/2024 € |
+| --- | --- | --- |
+| **Agio** |  |  |
+| Stand per 1 juli | 12.884.025 | 11.384.025 |
+| Storting | 6.000.000 | 1.500.000 |
+| Stand per 30 juni | 18.884.025 | 12.884.025 |
+
+|  | 30-6-2025 € | 30-6-2024 € |
+| --- | --- | --- |
+| **Wettelijke reserves** |  |  |
+| Reserve voor niet uitkeerbare resultaten deelnemingen | 107.541 | 140.848 |
+
+- 41 -
+
+--- pág. 43 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+|  | 2024/2025 € | 2023/2024 € |
+| --- | --- | --- |
+| **Reserve voor niet uitkeerbare resultaten deelnemingen** |  |  |
+| Stand per 1 juli | 140.848 | - |
+| Mutatie | -33.307 | 140.848 |
+| Stand per 30 juni | 107.541 | 140.848 |
+| **Overige reserves** |  |  |
+| Stand per 1 juli | -13.005.934 | -11.052.147 |
+| Resultaatbestemming voorgaand boekjaar | -1.827.896 | -1.812.939 |
+| Mutatie wettelijke reserves | 33.307 | -140.848 |
+| Stand per 30 juni | -14.800.523 | -13.005.934 |
+| **Onverdeeld resultaat** |  |  |
+| Stand per 1 juli | -1.827.896 | -1.812.939 |
+| Onverdeeld resultaat boekjaar | -1.224.303 | -1.827.896 |
+| Resultaatbestemming | 1.827.896 | 1.812.939 |
+| Stand per 30 juni | -1.224.303 | -1.827.896 |
+
+### 22. Voorzieningen
+
+|  | 30-6-2025 € | 30-6-2024 € |
+| --- | --- | --- |
+| **Overige voorzieningen** |  |  |
+| Voorziening deelnemingen | - | 2.300.686 |
+| **Voorziening deelnemingen** |  |  |
+| Nijmegen Eendracht Combinatie B.V. | - | 2.300.686 |
+
+- 42 -
+
+--- pág. 44 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+### 23. Kortlopende schulden
+
+Alle kortlopende schulden hebben een resterende looptijd van korter dan een jaar. De reë le waarde van
+de kortlopende schulden benadert de boekwaarde vanwege het kortlopende karakter ervan.
+
+|  | 30-6-2025 € | 30-6-2024 € |
+| --- | --- | --- |
+| **Schulden aan groepsmaatschappijen** |  |  |
+| Nijmegen Eendracht Combinatie B.V. | 1.324.444 | 331.328 |
+
+Over de schulden wordt geen rente berekend. Er zijn geen zekerheden en a lossingsverplichtingen
+overeengekomen.
+
+## NIET IN DE BALANS OPGENOMEN ACTIVA EN VERPLICHTINGEN
+
+### Voorwaardelijke verplichtingen
+
+**Fiscale eenheid**
+
+De vennootschap maakt deel uit van de iscale eenheid voor de vennootschapsbelasting en
+omzetbelasting en is op grond daarvan hoofdelijk aansprakelijk voor de belastingschuld van de iscale
+eenheid als geheel.
+
+# 12 TOELICHTING OP DE ENKELVOUDIGE WINST-EN-VERLIESREKENING OVER 2024/2025
+
+### 24. Resultaat deelnemingen
+
+|  | 2024/2025 € | 2023/2024 € |
+| --- | --- | --- |
+| Aandeel resultaat Nijmegen Eendracht Combinatie B.V. | -1.519.430 | -1.680.034 |
+| Aandeel resultaat Exploitatie-Maatschappij De Goffert B.V. | 295.127 | -147.862 |
+|  | -1.224.303 | -1.827.896 |
+
+- 43 -
+
+--- pág. 45 ---
+
+N.E.C. Holding B.V. te Nijmegen
+
+# 13 OVERIGE ENKELVOUDIGE TOELICHTINGEN
+
+## Belangrijke gebeurtenissen na balansdatum
+
+Er zijn geen belangrijke gebeurtenissen na balansdatum welke invloed hebben op het inzicht in het
+vermogen en resultaat over het boekjaar 2024/2025.
+
+## Verwerking van het verlies 2024/2025
+
+Overeenkomstig de wettelijke bepalingen zal het verlies ad € 1.224.303 over 2024/2025 in het
+boekjaar 2025/2026 in mindering worden gebracht op de overige reserves.
+
+In afwachting van de goedkeuring van dit voorstel door de algemene vergadering is dit voorstel nog niet
+in de jaarrekening verwerkt maar opgenomen onder de post onverdeeld resultaat.
+
+## Personeelsleden
+
+Gedurende het jaar 2024/2025 waren er geen werknemers in dienst op basis van een volledig
+dienstverband (2023/2024: geen).
+
+## Ondertekening van de jaarrekening
+
+Nijmegen, 9 oktober 2025
+
+| Directie voor akkoord | Raad van commissarissen voor akkoord |
+| --- | --- |
+| W. van Schaik | N. Maters |
+| C.J.W.M. Aalbers | J.J.T. van Oijen |
+| M.J. Coolen | J.W.M. Burghouts |
+
+- 44 -
+
+--- pág. 46 ---
+
+# OVERIGE GEGEVENS
+
+--- pág. 47 ---
+
+N.E.C. Holding B.V. te Nijmegen
+# OVERIGE GEGEVENS
+
+## 1 Statutaire regeling winstbestemming
+Volgens artikel 22 van de statuten staat het resultaat ter beschikking van de raad van commissarissen,
+met dien verstande dat:
+22.1 De raad van commissarissen is bevoegd tot bestemming van de winst die door vaststelling van de
+jaarrekening is bepaald dan wel bepaling van de wijze waarop een tekort zal worden verwerkt, alsmede
+tot vaststelling van tussentijdse uitkeringen uit de winst of uitkeringen uit de reserves voorzover het
+eigen vermogen groter is dan de reserves die krachtens de wet of statuten moeten worden gehouden;
+22.2 Voor de gewone aandelen wordt ten behoeve van de houders van die soort aandelen een
+agioreserve en een winstreserve aangehouden. Voor de preferente aandelen wordt ten behoeve van de
+houders van die soort aandelen een preferente agioreserve en een preferente winstreserve
+aangehouden. De winstreserve die wordt aangehouden voor de gewone aandelen is de algemene
+reserve;
+22.3 Indien de raad van commissarissen besluit tot uitkering van de winst over het laatst verstreken
+boekjaar wordt eerst, zo mogelijk, op de preferente aandelen uitgekeerd danwel, indien de vergadering
+van houders van preferente aandelen daar met unanimiteit toe besluit, bijgeboekt op de voor de
+preferente aandelen aangehouden preferente winstreserverekening een percentage van twee procent
+(2%) van:
+- het nominaal bedrag van ieder preferent aandeel;
+- het op de preferente agioreserve gestorte bedrag;
+- het bedrag van de preferente winstreserve; en
+- het bedrag van de (voorwaardelijke) aanspraak als bedoeld in 22.4.
+Voornoemd pecentage wordt berekend over gemiddelde van de bedragen gedurende het betreffende
+boekjaar. Op de preferente aandelen zal geen verdere uitkering plaatsvinden. Onder "winst" wordt in
+dit verband mede verstaan het feitelijk aan de vennootschap uitgekeerde resultaat uit deelnemingen die
+gehouden worden door de vennootschap.
+
+## 2 Controleverklaring van de ona hankelijke accountant
+Voor de controleverklaring van de ona hankelijke accountant wordt verwezen naar de volgende
+pagina's.
+
+- 46 -
+
+
+--- pág. 48 ---
+
+# CONTROLEVERKLARING VAN DE ONAFHANKELIJKE ACCOUNTANT
+
+Aan: de aandeelhouders en de raad van commissarissen van N.E.C. Holding B.V.
+
+Verklaring over de in het rapport inzake de jaarstukken opgenomen jaarrekening 1 juli 2024 tot
+en met 30 juni 2025
+
+## Ons oordeel
+Wij hebben de jaarrekening voor het jaar geëindigd op 30 juni 2025 van N.E.C. Holding B.V. te
+Nijmegen gecontroleerd.
+
+Naar ons oordeel geeft de in dit rapport inzake de jaarstukken opgenomen jaarrekening een getrouw
+beeld van de grootte en de samenstelling van het vermogen van N.E.C. Holding B.V. op 30 juni
+2025 en van het resultaat over 2024/2025 in overeenstemming met Titel 9 Boek 2 BW.
+
+De jaarrekening bestaat uit:
+    1. de geconsolideerde en enkelvoudige balans per 30 juni 2025;
+    2. de geconsolideerde en enkelvoudige winst- en verliesrekening over 2024/2025; en
+    3. de toelichting met een overzicht van de gehanteerde grondslagen voor financiële
+        verslaggeving en andere toelichtingen.
+
+## De basis voor ons oordeel
+Wij hebben onze controle uitgevoerd volgens het Nederlands recht, waaronder ook de Nederlandse
+controlestandaarden vallen. Onze verantwoordelijkheden op grond hiervan zijn beschreven in de
+sectie 'Onze verantwoordelijkheden voor de controle van de jaarrekening'.
+
+Wij zijn onafhankelijk van N.E.C. Holding B.V. zoals vereist in de Wet toezicht accountantsorganisaties
+(Wta), de Verordening inzake de onafhankelijkheid van accountants bij assurance-opdrachten (ViO)
+en andere voor de opdracht relevante onafhankelijkheidsregels in Nederland. Verder hebben wij
+voldaan aan de Verordening gedrags- en beroepsregels accountants (VGBA).
+
+Wij vinden dat de door ons verkregen controle-informatie voldoende en geschikt is als basis voor
+ons oordeel.
+
+## Informatie ter ondersteuning van ons oordeel
+Wij hebben onze controlewerkzaamheden bepaald in het kader van de controle van de jaarrekening
+als geheel en bij het vormen van ons oordeel hierover.
+
+                                                                                                   Qconcepts
+
+                                                                                               Reitscheweg 45
+                                                                                    5232 BX ‘s-Hertogenbosch
+                                                                                       t +31 (0)73 - 61 32 510
+                                                                                          e info@qconcepts.nl
+                                                                                                 i qconcepts.nl
+
+
+--- pág. 49 ---
+
+Onderstaande informatie ter ondersteuning van ons oordeel en onze bevindingen moeten in dat kader
+worden bezien en niet als afzonderlijke oordelen of conclusies.
+
+## Controleaanpak frauderisico's
+Als onderdeel van ons proces van het identificeren van frauderisico’s, evalueren wij factoren met
+betrekking tot frauduleuze financiële verslaggeving, het oneigenlijk toe-eigenen van activa, omkoping
+en corruptie. Wij hebben de frauderisicofactoren geëvalueerd om te overwegen of deze factoren een
+indicatie vormen voor de aanwezigheid van het risico op afwijkingen van materieel belang in de
+jaarrekening die het gevolg zijn van fraude.
+
+Wij hebben de toelichting in de (fraude-)risicoparagraaf in het directieverslag geëvalueerd en
+besproken met de directie en verwijzen naar de betreffende passage.
+
+Bij onze controle hebben wij aandacht besteed aan het risico van het doorbreken van de interne
+beheersingsmaatregelen door de directie. Tevens hebben wij aandacht besteed aan het risico met
+betrekking tot het voorkomen van de opbrengstverantwoording van sponsoring en hebben wij bij onze
+controle aandacht besteed aan het risico met betrekking tot de betalingsorganisatie.
+
+Het risico dat de directie maatregelen van interne beheersing doorbreekt
+
+Inzake het risico dat de directie de maatregelen van interne controle doorbreekt, hebben wij de opzet
+en implementatie geëvalueerd van de maatregelen van interne beheersing in de processen voor het
+genereren en verwerken van handmatige journaalposten en het maken van schattingen. Wij hebben,
+in het kader van onze controle, niet gesteund op de voor dit risico relevante maatregelen van interne
+beheersing.
+
+Wij hebben handmatige journaalposten geselecteerd op basis van risicocriteria en hierop specifieke
+controlewerkzaamheden verricht.
+
+Daarnaast hebben wij specifieke controlewerkzaamheden verricht ten aanzien van belangrijke
+schattingen van de directie, waaronder de waardering van de (transfer)debiteuren. Wij hebben in het
+bijzonder aandacht gehad voor het inherente risico van vooringenomenheid van de directie bij
+schattingen. In het kader van het risico van een mogelijke onjuistheid in deze schattingen hebben wij
+extra aandacht besteed aan het risico dat de voorziening te laag is verantwoord en de daarbij
+gehanteerde veronderstellingen inconsistent zijn.
+
+Onze werkzaamheden hebben niet geleid tot specifieke aanwijzingen voor fraude of vermoedens van
+fraude ten aanzien van het doorbreken van de interne beheersing door de directie.
+
+Het risico met betrekking tot de betalingsorganisatie
+
+Inzake het risico dat onrechtmatige betalingen uitgevoerd worden, hebben wij de opzet en
+implementatie geëvalueerd van de maatregelen van interne beheersing ten aanzien van het
+klaarzetten en uitvoeren van betalingen. Wij hebben, in het kader van onze controle, niet gesteund op
+de voor dit risico relevante maatregelen van interne beheersing.
+
+
+--- pág. 50 ---
+
+Wij hebben een selectie van inkoopfacturen gemaakt welke verantwoord zijn in de resultatenrekening
+en investeringen van materiële vaste activa. Op basis van deelwaarneming hebben wij een inspectie
+uitgevoerd middels de onderliggende factuur en andere brondocumentatie. Daarbij hebben wij
+getoetst of sprake is van kosten van de vennootschap voor het verantwoorde bedrag en of de betaling
+van de factuur is verricht aan de IBAN zoals vermeld op de factuur.
+
+Wij hebben een download ontvangen van de banktransacties (CAMT053-bestand) en de mutaties in
+de crediteurenstamgegevens van de financiële administratie. Middels deze bestanden zijn
+verschillende werkzaamheden verricht:
+- Wij hebben gecontroleerd welke inkoopfacturen via het inkoopscansysteem zijn gescand
+        geautoriseerd en verantwoord en via de financiële applicatie betaald.
+- Wij hebben gecontroleerd of sprake is van betalingen aan crediteuren met meer dan één
+        IBAN dan wel betalingen aan IBANs met meer dan één crediteurennaam.
+- Wij hebben gecontroleerd of sprake is geweest van betalingen op ongebruikelijke momenten,
+        zoals in het weekend.
+
+Onze werkzaamheden hebben niet geleid tot specifieke aanwijzingen voor fraude of vermoedens van
+fraude ten aanzien van betalingen.
+
+Het risico met betrekking tot het voorkomen van de opbrengstverantwoording uit sponsoring
+
+Inzake het risico met betrekking tot het voorkomen van de opbrengstverantwoording uit sponsoring,
+hebben wij de opzet en implementatie geëvalueerd van de maatregelen van interne beheersing ten
+aanzien van de omzetverantwoording. Wij hebben, in het kader van onze controle, niet gesteund op
+de voor dit risico relevante maatregelen van interne beheersing.
+
+Wij hebben de operationele administratie, zijnde het sponsorregister, aangesloten met de
+verantwoorde sponsorbaten in de financiële administratie. Wij hebben middels deelwaarnemingen het
+sponsorregister gecontroleerd aan de hand van brondocumenten zoals sponsorcontracten, facturen
+en de bankontvangsten en of de contractuele verplichting is nagekomen om vast te stellen of de
+verantwoorde omzet bestaat. Wij hebben sponsorbaten welke niet via het reguliere proces zijn
+verlopen, in het boekjaar geïdentificeerd en hierop gegevensgerichte werkzaamheden uitgevoerd,
+waaronder het vaststellen dat deze sponsorbaten zijn gebaseerd op daadwerkelijk geleverde
+prestaties in het betreffende boekjaar. Daarnaast hebben wij onderzocht of in het volgende boekjaar
+creditnota’s zijn geboekt die een indicatie kunnen geven van onjuist geboekte omzet in het huidige
+boekjaar.
+
+Onze werkzaamheden hebben niet geleid tot specifieke aanwijzingen voor fraude of vermoedens van
+fraude ten aanzien van het voorkomen van de opbrengstenverantwoording uit sponsoring.
+
+## Controleaanpak continuïteit
+De directie heeft de jaarrekening opgemaakt uitgaande van de continuïteit van het geheel van de
+werkzaamheden voor de periode van twaalf maanden vanaf de datum van opmaken van de
+jaarrekening.
+
+
+--- pág. 51 ---
+
+Onze werkzaamheden om de continuïteitsbeoordeling van de directie te evalueren omvatten onder
+andere:
+-   overwegen of de continuïteitsbeoordeling van de directie alle relevante informatie bevat
+          waarvan wij als gevolg van onze controle kennis hebben en de directie bevragen over de
+          belangrijkste veronderstellingen en uitgangspunten;
+-   nagaan of de directie gebeurtenissen of omstandigheden heeft geïdentificeerd die gerede
+          twijfel kunnen doen ontstaan over de mogelijkheid van de entiteit om haar continuïteit te
+          handhaven;
+-   evalueren van de begrote operationele resultaten en daaraan gerelateerde kasstromen voor
+          de periode van twaalf maanden na het opmaken van de jaarrekening, rekening houdend met
+          ontwikkelingen in de branche en onze kennis uit de controle;
+-   wij hebben specifieke werkzaamheden op de door de directie opgestelde prognose voor het
+          boekjaar 2025/2026 uitgevoerd. Hierbij hebben wij werkzaamheden uitgevoerd op de
+          assumpties die ten grondslag liggen aan deze prognose. In de prognose voor het boekjaar
+          2025/2026 is een garantstelling van een aandeelhouder opgenomen ter dekking van
+          eventuele liquiditeitstekorten;
+-   inwinnen van inlichtingen bij de directie over haar kennis van continuïteitsrisico's na de
+          periode van de door de directie verrichte continuïteitsbeoordeling.
+
+Onze controlewerkzaamheden hebben geen informatie opgeleverd die strijdig is met de
+veronderstellingen en aannames van de directie over de gehanteerde continuïteitsveronderstelling.
+
+Verklaring over de in het jaarverslag opgenomen andere informatie
+Het jaarverslag omvat andere informatie, naast de jaarrekening en onze controleverklaring daarbij.
+
+Op grond van onderstaande werkzaamheden zijn wij van mening dat de andere informatie:
+-   met de jaarrekening verenigbaar is en geen materiële afwijkingen bevat;
+-   alle informatie bevat die op grond van Titel 9 Boek 2 BW is vereist voor het directieverslag en
+          de overige gegevens.
+
+Wij hebben de andere informatie gelezen en hebben op basis van onze kennis en ons begrip,
+verkregen vanuit de jaarrekeningcontrole of anderszins, overwogen of de andere informatie materiële
+afwijkingen bevat.
+
+Met onze werkzaamheden hebben wij voldaan aan de vereisten in Titel 9 Boek 2 BW en de
+Nederlandse Standaard 720. Deze werkzaamheden hebben niet dezelfde diepgang als onze
+controlewerkzaamheden bij de jaarrekening.
+
+De directie is verantwoordelijk voor het opstellen van de andere informatie, waaronder het directie-
+verslag en de overige gegevens in overeenstemming met Titel 9 Boek 2 BW.
+
+
+--- pág. 52 ---
+
+## Beschrijving van verantwoordelijkheden met betrekking tot de jaarrekening
+
+Verantwoordelijkheden van de directie en de raad van commissarissen voor de jaarrekening
+De directie is verantwoordelijk voor het opmaken en getrouw weergeven van de jaarrekening in
+overeenstemming met Titel 9 Boek 2 BW. In dit kader is de directie verantwoordelijk voor een
+zodanige interne beheersing die de directie noodzakelijk acht om het opmaken van de jaarrekening
+mogelijk te maken zonder afwijkingen van materieel belang als gevolg van fouten of fraude.
+
+Bij het opmaken van de jaarrekening moet de directie afwegen of de onderneming in staat is om haar
+werkzaamheden in continuïteit voort te zetten. Op grond van genoemd verslaggevingsstelsel moet de
+directie de jaarrekening opmaken op basis van de continuïteitsveronderstelling, tenzij de directie het
+voornemen heeft om de vennootschap te liquideren of de bedrijfsactiviteiten te beëindigen of als
+beëindiging het enige realistische alternatief is.
+
+De directie moet gebeurtenissen en omstandigheden waardoor gerede twijfel zou kunnen bestaan of
+de onderneming haar bedrijfsactiviteiten in continuïteit kan voortzetten, toelichten in de jaarrekening.
+
+De raad van commissarissen is verantwoordelijk voor het uitoefenen van toezicht op het proces van
+financiële verslaggeving van de vennootschap.
+
+## Onze verantwoordelijkheden voor de controle van de jaarrekening
+Onze verantwoordelijkheid is het zodanig plannen en uitvoeren van een controleopdracht dat wij
+daarmee voldoende en geschikte controle-informatie verkrijgen voor het door ons af te geven oordeel.
+
+Onze controle is uitgevoerd met een hoge mate maar geen absolute mate van zekerheid waardoor het
+mogelijk is dat wij tijdens onze controle niet alle materiële fouten en fraude ontdekken.
+
+Afwijkingen kunnen ontstaan als gevolg van fraude of fouten en zijn materieel indien redelijkerwijs kan
+worden verwacht dat deze, afzonderlijk of gezamenlijk, van invloed kunnen zijn op de economische
+beslissingen die gebruikers op basis van deze jaarrekening nemen. De materialiteit beïnvloedt de
+aard, timing en omvang van onze controlewerkzaamheden en de evaluatie van het effect van
+onderkende afwijkingen op ons oordeel.
+
+Een meer gedetailleerde beschrijving van onze verantwoordelijkheden is opgenomen op de NBA-
+website.
+
+'s-Hertogenbosch, 9 oktober 2025
+Q-Concepts Accountancy B.V.
+
+Ondertekenaar1
+
+drs. M. van Arkel RA
+
