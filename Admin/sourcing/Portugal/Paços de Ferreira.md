@@ -13,3 +13,5 @@
 
 - Contas 2021/22, 2022/23, 2023/24 y 2024/25, más «Demonstrações financeiras» de una época anterior (publicada en 2021).
 - Último chequeo: 2026-10-08.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-16): ejercicio 2025 desde `Clubes/Portugal/Paços de Ferreira/contas_2425.pdf` (sourceId `pacosdeferreira-pt-contas-2425`).

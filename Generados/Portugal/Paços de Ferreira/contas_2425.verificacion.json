@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Portugal/Paços de Ferreira/contas_2425.pdf",
  "md": "Clubes/Portugal/Paços de Ferreira/contas_2425.md",
- "generado": "2026-10-16T02:25:06.700Z",
+ "generado": "2026-10-16T02:44:08.296Z",
  "estado": "ok",
  "clubId": null,
  "year": 2025,
@@ -11,7 +11,18 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Portugal/Paços de Ferreira/contas_2425.pdf",
+   "campo": "anio",
+   "valor": "2025",
+   "linea": null,
+   "motivo": "El nombre del archivo (2425) se lee como año 2425; el ejercicio es 2024-25, cierre 30/06/2025.",
+   "evidencia": "alta-club.mjs: ejercicio 2025",
+   "autor": "Claude",
+   "fecha": "2026-10-16"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
