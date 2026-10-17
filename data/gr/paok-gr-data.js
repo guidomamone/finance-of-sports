@@ -279,7 +279,7 @@ const paokgrFiscalYearMeta = {
       {label:'Χρεωστικοί τόκοι και συναφή έξοδα', value:-0.173408},
       {label:'Φόροι εισοδήματος', value:0},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:13.262671, cash:1.874677,
     officialTotalRevenue:31.533771, officialTotalExpenses:36.314396, officialPAT:-5.346075,
   },
   2019: {
@@ -401,7 +401,7 @@ const paokgrFiscalYearMeta = {
       {label:'Χρεωστικοί τόκοι και συναφή έξοδα', value:-0.502677},
       {label:'Φόροι εισοδήματος', value:null},
     ],
-    grossDebt:null, cash:3.659016,
+    grossDebt:1.2, cash:3.659016,
     officialTotalRevenue:73.325268, officialTotalExpenses:72.175465, officialPAT:0.05163,
   },
 };

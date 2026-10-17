@@ -112,6 +112,10 @@ tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento anterio
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [PAOK_FS_2025-06-30.md] Βραχυπρόθεσμα Δάνεια (obligaciones, nota 10.1.1) 1.200.000,00; Δάνεια LP '-'. Intereses de obligaciones 38.068,10 están dentro de Λοιποί πιστωτές (nota 10.2.2): no sumados.
+```
+
 ## 2024
 
 ### Ingresos
@@ -532,6 +536,10 @@ Generados/Grecia/PAOK/PAOK_FS_2016-17.categorias.json (escalón de cada fila en 
 
 ```text
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [PAOK_FS_2016-17.md] Δάνεια (obligaciones convertibles, nota 10.1.1) 9.000.000,00 + préstamos de la controlante Dimera Ltd dentro de 'Βραχυπρόθεσμες Υποχρεώσεις προς συνδεδεμένα μέρη' 4.262.671,32 (4.000.000 capital + 262.671,32 intereses) = 13.262.671,32. El 4.262.671,32 incluye 262.671,32 de intereses devengados: si se prefiere solo capital, deuda = 13.000.000.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [PAOK_FS_2016-17.md] Ταμειακά διαθέσιμα και ισοδύναμα 1.874.677,48. Balance individual (PAE).
 ```
 
 ### Liga
