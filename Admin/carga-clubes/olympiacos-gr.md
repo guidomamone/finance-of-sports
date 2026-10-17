@@ -110,6 +110,10 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [PAE_Olympiacos_IFRS_FS_2025-06-30.md] LP Δανειακές 163.324,72 + CP Δανειακές 8.110.336,06 = 8273660.78. Columna Εταιρεία. CP incluye cesión con recurso 8.003.862,00 + Επιστρεπτέα + ΤΕΠΙΧ II (nota 17); arrendamientos excluidos.
+```
+
 ## 2024
 
 ### Ingresos
@@ -166,6 +170,10 @@ tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: ajuste manual): a
 2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): categoria = player_sales. Decisión de Guido 2026-10-14: venta de jugadores como la presenta cada documento; desde 2021 (NIIF) el estado imprime solo el neto ('Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών'), así que los costos de la nota van como player_sales negativo (2016-2020 el estado imprime bruto y queda bruto)
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [PAE_Olympiacos_Consolidated_IFRS_FS_2024-06-30.md] LP Δανειακές 269.021,85 + CP Δανειακές 3.477.785,76 = 3746807.61. Columna Εταιρεία. Δανειακές incluye cesión con recurso 3.352.945,66 + Επιστρεπτέα + ΤΕΠΙΧ II; arrendamientos excluidos.
 ```
 
 ## 2023
@@ -225,6 +233,10 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [PAE_Olympiacos_Consolidated_IFRS_FS_2023-06-30.md] LP Δανειακές 392.099,87 + CP Δανειακές 2.071.109,04 = 2463208.91. Columna Εταιρεία (el documento se llama Consolidated pero se usa la columna sociedad, perímetro individual cargado). Arrendamientos excluidos.
+```
+
 ## 2022
 
 ### Ingresos
@@ -278,6 +290,10 @@ tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: ajuste manual): a
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-14): categoria = player_sales. Decisión de Guido 2026-10-14: venta de jugadores como la presenta cada documento; desde 2021 (NIIF) el estado imprime solo el neto ('Κέρδη / (Ζημία) από πωλήσεις ποδοσφαιριστών'), así que los costos de la nota van como player_sales negativo (2016-2020 el estado imprime bruto y queda bruto)
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [PAE_Olympiacos_FS_2022-06-30.md] LP Δανειακές 2.460.530,40 + CP Δανειακές 6.789.555,56 = 9250085.96. Columna Εταιρεία. Δανειακές incluye cesión con recurso + Επιστρεπτέα + ΤΕΠΙΧ II (nota 17); arrendamientos excluidos.
 ```
 
 ## 2021
@@ -336,6 +352,10 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [PAE_Olympiacos_FS_2021-06-30.md] LP Δανειακές 4.701.353,37 + CP Δανειακές 4.905.631,64 = 9606985.01. Columna Εταιρεία. Δανειακές incluye cesión de créditos con recurso + Επιστρεπτέα Προκαταβολή + ΤΕΠΙΧ II (nota 17); arrendamientos en fila propia excluidos.
+```
+
 ## 2020
 
 ### Ingresos
@@ -388,6 +408,10 @@ tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: ajuste manual): a
 ```text
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [PAE_Olympiacos_FS_2020-06-30.md] LP Δανειακές 303.300,00 + LP Λοιπές χρημ. 4.487.500,00 + CP Λοιπές χρημ. 10.840.460,00 = 15631260.00. Columna Εταιρεία. LP Δανειακές = Επιστρεπτέα Προκαταβολή 1 (financiación estatal COVID, la sociedad la clasifica como préstamo); cesión con recurso se suma; arrendamientos (11.933.071,67 LP + 267.923,91 CP) excluidos.
 ```
 
 ## 2019
@@ -443,6 +467,10 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [PAE_Olympiacos_FS_2019-06-30.md] CP Λοιπές χρημ. 880.000,00 (sin préstamos) = 880000.00. Columna Εταιρεία. 'Λοιπές χρηματοοικονομικές' = cesión de créditos con recurso (nota 17), se suma; en este .md el balance de pasivos está en pág. 13.
+```
+
 ## 2018
 
 ### Ingresos
@@ -494,6 +522,10 @@ tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: ajuste manual): a
 ```text
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [PAE_Olympiacos_FS_2018-06-30.md] LP Λοιπές χρημ. 0,00 + CP Δανειακές 0,00 + CP Λοιπές χρημ. 7.000.000,00 = 7000000.00. Columna Εταιρεία. 'Λοιπές χρηματοοικονομικές' = cesión de créditos con recurso (nota 17), se suma.
 ```
 
 ## 2017
@@ -548,6 +580,10 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [PAE_Olympiacos_FS_2017-06-30.md] LP Δανειακές 0,00 + LP Λοιπές χρημ. 3.320.798,15 + CP Δανειακές 574.382,97 + CP Λοιπές χρημ. 9.409.800,00 = 13304981.12. Columna Εταιρεία. 'Λοιπές χρηματοοικονομικές' = cesión de créditos CON recurso (nota 17), financiación, se suma.
+```
+
 ## 2016
 
 ### Ingresos
@@ -599,6 +635,10 @@ tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: ajuste manual): a
 ```text
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [PAE_Olympiacos_Chrimatooikonomikes_katastaseis_2016-06-30.md] LP Δανειακές 3.775.478,12 + CP Δανειακές 2.280.038,99 = 6055517.11. Columna Εταιρεία (individual, perímetro cargado). Nota 17: préstamos Abisso/Piraeus.
 ```
 
 ### Liga
