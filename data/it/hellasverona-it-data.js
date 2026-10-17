@@ -311,7 +311,7 @@ const hellasveronaitFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Costi per attività sportiva prima squadra', lado:'expense', importe:0.765, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:4.530032, cash:null,
+    grossDebt:4.530032, cash:6.206891,
     officialTotalRevenue:65.590796, officialTotalExpenses:55.066094, officialPAT:8.275111,
   },
   2023: {
@@ -331,7 +331,7 @@ const hellasveronaitFiscalYearMeta = {
       {label:'c) Imposte differite', value:-3.2424},
       {label:'d) Imposte anticipate', value:6.422237},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:70.132617, cash:4.57734,
     officialTotalRevenue:98.444977, officialTotalExpenses:114.347136, officialPAT:-19.9277,
   },
   2021: {
@@ -348,7 +348,7 @@ const hellasveronaitFiscalYearMeta = {
       {label:'b) Imposte differite', value:-4.378776},
       {label:'c) Imposte anticipate', value:2.831538},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:28.642564, cash:8.972,
     officialTotalRevenue:99.198328, officialTotalExpenses:93.177124, officialPAT:1.102784,
   },
   2022: {
@@ -366,7 +366,7 @@ const hellasveronaitFiscalYearMeta = {
       {label:'c) Imposte differite', value:-2.776915},
       {label:'d) Imposte anticipate', value:4.359014},
     ],
-    grossDebt:44.071284, cash:null,
+    grossDebt:44.071284, cash:12.002952,
     officialTotalRevenue:84.548986, officialTotalExpenses:87.835641, officialPAT:-5.057437,
   },
   2025: {
@@ -385,7 +385,7 @@ const hellasveronaitFiscalYearMeta = {
       {label:'c) Imposte differite', value:2.081856},
       {label:'d) Imposte anticipate', value:-0.90981},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:91.309222, cash:2.041636,
     officialTotalRevenue:101.593403, officialTotalExpenses:102.266963, officialPAT:-4.724361,
   },
   2024: {
@@ -404,7 +404,7 @@ const hellasveronaitFiscalYearMeta = {
       {label:'c) Imposte differite', value:2.299399},
       {label:'d) Imposte anticipate', value:-2.990345},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:89.756114, cash:0.773766,
     officialTotalRevenue:115.292401, officialTotalExpenses:102.070184, officialPAT:3.913439,
   },
 };

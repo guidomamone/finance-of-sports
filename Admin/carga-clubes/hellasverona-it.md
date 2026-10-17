@@ -110,6 +110,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): soci 0 + banche 13.465.473 + altri finanziatori 77.843.749 = 91.309.222. Sin obbligazioni; banche 4.074.682 entro + 9.390.791 oltre.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): depositi bancari e postali 2.007.028 + denaro e valori in cassa 34.608 = 2.041.636. Totale 2.041.637 (30/06/2025); la nota (línea 1104) dice 2.042 migliaia.
+```
+
 ### Liga
 
 ```text
@@ -192,6 +196,10 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): soci 0 + banche 18.594.812 + altri finanziatori (Banca Sistema. ER Factor. IFIS) 71.161.302 = 89.756.114. Sin obbligazioni; banche 5.038.753 entro + 13.556.059 oltre.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): depositi bancari e postali 763.623 + denaro e valori in cassa 10.143 = 773.766. Totale 773.766 (30/06/2024).
 ```
 
 ### Liga
@@ -277,6 +285,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): soci 0 + banche 23.641.279 + altri finanziatori (Banca Sistema. ER Factor) 46.491.338 = 70.132.617. Sin obbligazioni; soci 0.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): depositi bancari e postali 4.574.973 + denaro e valori in cassa 2.367 = 4.577.340. Totale 4.577.340 (30/06/2023).
+```
+
 ### Liga
 
 ```text
@@ -356,6 +368,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): soci per finanziamenti 603.703 + banche 30.272.857 + altri finanziatori 13.194.724; el script tomaba solo banche (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros)
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): depositi bancari e postali 11.998.570 + denaro e valori in cassa 4.382 = 12.002.952. Totale 12.002.952 (30/06/2022). (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -433,6 +449,10 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): soci 4.100.000 + banche 15.834.054 + altri finanziatori (Banca Sistema. ER Factor) 8.708.510 = 28.642.564. Sin obbligazioni.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): depositi bancari e postali 8.970.406 + denaro e valori in cassa 1.594 = 8.972.000. Totale 8.972.000 (30/06/2021).
 ```
 
 ### Liga
@@ -521,6 +541,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): banche 522.593 + altri finanziatori 4.007.439 (soci y obbligazioni 0); el script tomaba solo banche (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros)
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): depositi bancari e postali 6.204.634 + denaro e valori in cassa 2.257 = 6.206.891. Totale IV 6.206.891 (30/06/2020). (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ## Gestiones
