@@ -154,6 +154,12 @@ Del to-do 237 (diagnóstico por subagentes Sonnet, 2026-10-16):
   Colo-Colo 2023 2.811 M CLP contra 10 M en 2024, cajas de 13 a 529 € (Chaves, Boavista, Porto 2023; esas las ataja el piso). No entra.
   Los clubes de un solo balance (AVS, Boavista, Chaves, Mafra, Tondela, Felgueiras) se cargaron con ajustes `caja` / `deuda` leídos a
   mano. Retomar: si los ajustes a mano de clubes sin vecino pasan de unos 50 por país.
+- Caja y deuda, deuda italiana por el esquema del art. 2424 (sección "D) Debiti", ítems 1 a 5 por número, sin vocabulario; to-do 260 i,
+  medido el 2026-10-17 con un prototipo): aparece en 107 documentos, pero sin la compuerta mezcla escalas (balance en euros con el estado
+  en miles), perímetros (consolidado y capogruppo en el mismo .md), lee mal números pegados (Hellas Verona 2024: 1,8e16) y no sirve en
+  los IFRS (Lazio). De 22 deudas ya cargadas coincide en 4; Bologna 2018-2025 tiene cargado solo "debiti verso banche" (2025: 19,36 M
+  contra 41,07 M con los cinco ítems). Italia se completó leyendo cada balance (subagentes con cita). Retomar: si entran muchos balances
+  italianos nuevos con el esquema 2424 y sin precedente.
 - Etiquetado `perimetro` de las dudas de localizar y extraer: la IA lo usa para preguntas de inventarios, imparidad o notas que difieren
   del estado (Rio Ave, Famalicão, Santa Clara, Torreense). Sin daño (se contestan igual). Retomar: si una regla empieza a contestar
   dudas por su tema.

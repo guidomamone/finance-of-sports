@@ -25,7 +25,7 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 1. **Caja y deuda**: faltan 398 datos (171 años sin ninguno de los dos; Italia 192, Portugal 86, Brasil 68, Grecia 67, Alemania y Japón el resto).
-   - 260 i: deuda italiana por el esquema 2424 (prototipo y medición).
+   - Italia: lo que falta y las deudas cargadas que solo cuentan banche, leídos por subagentes con cita.
    - Las 24 propuestas de hoy, revisadas y escritas; el resto, por subagentes con cita.
 
 2. **Transcripciones por subagentes** (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia): limpiar lo que no es del club, los duplicados y los arreglos chicos; validarlas (unos US$ 0,10 cada 50) y cargarlas.
@@ -218,9 +218,6 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
    el tipo Slides. Sin código.
 260. CAJA Y DEUDA: MEJORAS DE SCRIPT VISTAS EN PORTUGAL (sin aplicar; corrida del 2026-10-16: 151 de 327 datos, IA ~US$ 6). Cada una es un
    escalón a diseñar con el ok de Guido y a medir con `caja-deuda.mjs --medir`.
-   i) DEUDA ITALIANA INCOMPLETA: el vocabulario toma "Debiti verso banche" y no suma "altri finanziatori", "obbligazioni" ni "soci per
-      finanziamenti" (Milan 2018, Hellas Verona 2020 y 2022, Lazio 2005). Criterio (Guido, 2026-10-17): los préstamos de socios cuentan.
-      Cargado con ajustes.
    Pendiente de mirar: Ferroviária 2023-2025, "Partes relacionadas" no corriente (3.844.165) puede ser un préstamo de una parte
    relacionada (con el criterio de socios, contaría); hoy la deuda es solo "Empréstimos".
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
