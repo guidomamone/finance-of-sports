@@ -25,6 +25,7 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 1. **Caja y deuda**: quedan 27 años sin ninguno de los dos y 9 datos sueltos, todos frenados por el documento o por el to-do 263 (lista en el 260).
+   - 262: compuerta del total de deuda financiera impreso. 263: ajuste por PDF y año (destraba Dortmund y RB Leipzig).
 
 2. **Transcripciones por subagentes** (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia): limpiar lo que no es del club, los duplicados y los arreglos chicos; validarlas (unos US$ 0,10 cada 50) y cargarlas.
 
