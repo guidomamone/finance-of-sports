@@ -118,6 +118,10 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: documento anterior): "Empréstimos" pág. 6; cash escalón 1 (compuerta: documento anterior): "Caixa e equivalentes de caixa" pág. 6
+```
+
 ### Liga
 
 ```text
@@ -186,6 +190,10 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos" pág. 6; cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 6
+```
+
 ### Liga
 
 ```text
@@ -239,6 +247,10 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2018, 2024, 2025): Salarios y primas (plantel y cuerpo técnico), Organización de partidos
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos" pág. 7; cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 7
 ```
 
 ### Liga

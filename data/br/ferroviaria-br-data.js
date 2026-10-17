@@ -877,7 +877,7 @@ const ferroviariabrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'(-) Custos operacionais', lado:'expense', importe:27.035536, motivo:'Claude 2026-10-09: \'(-) Custos operacionais\' es el costo de la actividad futbolística de la SAF sin desglose en el estado; la categoría \'sin desglosar\' es la que corresponde (la nota lo abre, pero sin reintento pago)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:1.153829, cash:0.275376,
     officialTotalRevenue:37.56237, officialTotalExpenses:40.101565, officialPAT:-3.326523,
   },
   2025: {
@@ -891,7 +891,7 @@ const ferroviariabrFiscalYearMeta = {
       {label:'Receita financeira', value:0.107707},
       {label:'Despesas financeiras', value:-0.629954},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.023323, cash:0.436238,
     officialTotalRevenue:48.136132, officialTotalExpenses:62.863305, officialPAT:-15.24942,
   },
   2010: {
@@ -1055,7 +1055,7 @@ const ferroviariabrFiscalYearMeta = {
       {label:'Receita financeira', value:0.017055},
       {label:'Despesas financeiras', value:-3.824597},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.270175, cash:0.251084,
     officialTotalRevenue:31.503023, officialTotalExpenses:42.984341, officialPAT:-15.28886,
   },
   2022: {

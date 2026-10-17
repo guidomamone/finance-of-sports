@@ -84,7 +84,7 @@ BRASIL (42)
   Criciuma              14 ejercicios (2012 a 2025), balance, BRL
   Cruzeiro              4 ejercicios (2022 a 2025), balance, BRL
   Cuiaba                4 ejercicios (2022 a 2025), balance, BRL
-  Ferroviaria           13 ejercicios (2010, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2021, 2022, 2023, 2024, 2025), balance, BRL, sin deuda/caja
+  Ferroviaria           13 ejercicios (2010, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2021, 2022, 2023, 2024, 2025), balance, BRL
   Flamengo              2 ejercicios (2024 a 2025), balance, BRL
   Fluminense            2 ejercicios (2024 a 2025), balance, BRL
   Fortaleza             1 ejercicio (2025), balance, BRL
