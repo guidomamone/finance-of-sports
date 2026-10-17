@@ -463,6 +463,21 @@ function checkMoneda(api) {
 // nace con todas las filas en `null` a propósito: null es "nadie lo verificó
 // todavía". Esto cuenta lo que falta (para que el pendiente no dependa de que
 // alguien se acuerde) y avisa si un ejercicio real no tiene ni siquiera su fila.
+// --- CAJA Y DEUDA DESPROPORCIONADAS (to-do 260 e) ---------------------------
+// Un techo por proporción con los ingresos del mismo año, solo hacia arriba: caja más de 3 veces los ingresos o deuda más de 20 veces es un
+// error de escala o de fila, no un dato. Medido (2026-10-17) en lo cargado: el máximo real de caja es 2,53 veces (Atlético Mineiro 2023) y
+// el de deuda 13,7 veces (Novorizontino 2015). Casos que frena (corrida de caja-deuda.mjs del 2026-10-16, revertidos a mano): Hellas
+// Verona 2024 deuda 1,8e16; Milan 2009 deuda 163.739 M; Inter 2021 caja 97.884 M; Lazio 2008-2019. P1: caja-deuda.mjs y cargar.mjs
+// revierten solos lo que lo pase. Sin piso: hay cajas chicas de verdad (Casa Pia 2025, 4.539 € con 30,7 M de ingresos).
+const TECHO_CAJA = 3; const TECHO_DEUDA = 20;
+function checkCajaDeudaProporcion(api) {
+  for (const { clubId, year, ym, rev } of clubYears(api)) {
+    const ingresos = sum(rev); if (!(ingresos > 0)) continue;
+    if (ym.cash != null && ym.cash > TECHO_CAJA * ingresos) add('P1', 'caja-deuda-desproporcionada', `${ref(clubId, year)}: caja ${ym.cash} es ${(ym.cash / ingresos).toFixed(1)} veces los ingresos del año (${ingresos.toFixed(3)}); el techo es ${TECHO_CAJA}: sospechar escala o fila equivocada`);
+    if (ym.grossDebt != null && ym.grossDebt > TECHO_DEUDA * ingresos) add('P1', 'caja-deuda-desproporcionada', `${ref(clubId, year)}: deuda ${ym.grossDebt} es ${(ym.grossDebt / ingresos).toFixed(1)} veces los ingresos del año (${ingresos.toFixed(3)}); el techo es ${TECHO_DEUDA}: sospechar escala o fila equivocada`);
+  }
+}
+
 function checkLigasPorEjercicio(api) {
   const cob = api.clubLeagueCoverage ? api.clubLeagueCoverage() : null;
   if (!cob) return;
@@ -1509,6 +1524,7 @@ function main() {
   checkCategorias(api);
   checkLineas(api);
   checkMoneda(api);
+  checkCajaDeudaProporcion(api);
   checkFxProcedencia(api);
   checkFuentesPublicas(api);
   checkClubIds(api);
