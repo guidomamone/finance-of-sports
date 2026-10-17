@@ -1030,6 +1030,35 @@ async function medir({ club = null, detalle = false, ia = false, jev = false, ej
 function cierreDe(txt, abre) { let n = 0; for (let i = abre; i < txt.length; i++) { if (txt[i] === '{') n++; else if (txt[i] === '}') { n--; if (!n) return i; } } return -1; }
 const HOY = new Date().toISOString().slice(0, 10);
 
+// RUSIA (ok de Guido, 2026-10-17): el balance del fisco (GIR BO, `bfo-AAAA-datos.json`, el mismo que lee bfo-rusia.mjs) trae renglones de
+// código fijo, en miles de rublos: caja = 1250 (Денежные средства и денежные эквиваленты), deuda = 1410 + 1510 (заемные средства de largo y
+// de corto plazo). No hay filas que elegir ni escala que adivinar. Compuerta: el balance cuadra (1600 = 1700) y un JSON vecino dice lo mismo
+// (el del año siguiente en su columna "previous", o el del año anterior en "current" contra la "previous" de este); ninguno contradice. Un
+// 1410 / 1510 vacío es 0 solo con el balance completo (1700 impreso). Caso: Akhmat 2021, caja 411.028 miles; sin 1410 ni 1510, deuda 0.
+const CODIGOS_RU = { cash: [1250], grossDebt: [1410, 1510] };
+function rusiaDeCodigos(clubId, a) {
+  const m = /-bfo-(\d{4})-datos$/.exec(a.m.sourceId || ''); if (!m) return null;
+  let ev = ''; try { ev = readFileSync(resolve(ROOT, `Admin/carga-clubes/${clubId}.md`), 'utf8'); } catch { return null; }
+  const carpeta = (ev.match(/Clubes\/Rusia\/[^\n]+?(?=\/bfo-\d{4}-datos\.md)/) || [])[0]; if (!carpeta) return null;
+  const json = (y) => { const f = resolve(ROOT, `${carpeta}/bfo-${y}-datos.json`); try { return existsSync(f) ? JSON.parse(readFileSync(f, 'utf8')).balance || null : null; } catch { return null; } };
+  const anio = Number(m[1]); const b = json(anio); if (!b) return null;
+  const v = (bal, c, col) => (bal?.[`${col}${c}`] == null ? null : Number(bal[`${col}${c}`]));
+  const dato = (bal, cual, col) => { if (v(bal, 1700, col) == null) return null; const xs = CODIGOS_RU[cual].map((c) => v(bal, c, col)); if (cual === 'cash') return xs[0]; return xs.reduce((t, x) => t + (x || 0), 0); };
+  const out = {};
+  for (const cual of ['grossDebt', 'cash']) {
+    const cods = CODIGOS_RU[cual].join(' + '); const base = { escalon: 'R', filas: [] };
+    if (v(b, 1600, 'current') == null || v(b, 1600, 'current') !== v(b, 1700, 'current')) { out[cual] = { ...base, valor: null, como: `Rusia: el balance no cuadra (1600 ≠ 1700)` }; continue; }
+    const x = dato(b, cual, 'current'); if (x == null) { out[cual] = { ...base, valor: null, como: `Rusia: sin ${cods}` }; continue; }
+    const chequeos = [];
+    const sig = json(anio + 1); const xs = sig ? dato(sig, cual, 'previous') : null; if (xs != null) chequeos.push(['JSON del año siguiente', xs === x, xs]);
+    const ant = json(anio - 1); const xa = ant ? dato(ant, cual, 'current') : null; const xp = dato(b, cual, 'previous'); if (xa != null && xp != null) chequeos.push(['JSON del año anterior', xa === xp, xa]);
+    const malos = chequeos.filter((c) => !c[1]);
+    if (malos.length) { out[cual] = { ...base, valor: null, como: `Rusia, ${cods}: ${x} no coincide con ${malos.map((c) => `${c[0]} (${c[2]})`).join(' ni ')}` }; continue; }
+    if (!chequeos.length) { out[cual] = { ...base, valor: null, como: `Rusia, ${cods}: ${x}, ningún JSON vecino para comparar` }; continue; }
+    out[cual] = { ...base, valor: r6(x / 1000), validacion: chequeos[0][0], como: `Rusia, balance del fisco: código ${cods} = ${x} miles de RUB (bfo-${anio}-datos.json)` };
+  }
+  return out;
+}
 export async function completarClub(clubId, { ejecutar = false, escribir = false } = {}) {
   const { G, S } = sitio(); const d = G[clubId]; iaDe.ejecutar = ejecutar;
   if (!d) return { error: `no existe ${clubId} en el sitio` };
@@ -1039,6 +1068,8 @@ export async function completarClub(clubId, { ejecutar = false, escribir = false
   const propuestas = []; let usd = 0;
   for (const a of anios) {
     const faltan = ['grossDebt', 'cash'].filter((k) => a.m[k] == null); if (!faltan.length) continue;
+    const ru = rusiaDeCodigos(clubId, a); // (to-do: Rusia) antes de todo: el balance del fisco trae los códigos, no hay filas que elegir
+    if (ru) { for (const k of faltan) propuestas.push({ anio: a.anio, cual: k, ...ru[k] }); continue; }
     if (!a.md) { for (const k of faltan) propuestas.push({ anio: a.anio, cual: k, valor: null, como: 'la fuente no nombra la transcripción' }); continue; }
     const res = {};
     for (const k of faltan) {
