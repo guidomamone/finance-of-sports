@@ -15,26 +15,51 @@
 //      años, y si tampoco, la del país y la división).
 //   H  historia del club: su distancia a la mediana de su liga en sus otros años (log ingreso - M de ese año), promediada con más peso a
 //      los años cercanos. Sin otros años, no hay H.
+//   I  el propio club interpolado entre su año real anterior y el siguiente (o el más cercano).
 //   tier  la división (1, 2, 3+), de data/leagues.js.
-// MODELO: regresión lineal (mínimos cuadrados) del log ingreso. Con historia: log = a + b*M + c*H + d*tier2 + e*tier3. Sin historia
-// (club nuevo): log = a + b*M + d*tier2 + e*tier3.
+//   q  posición final en la tabla, 0 = campeón, 1 = último (listas de Wikipedia, vía faltantes-liga.mjs), con una marca si no hay tabla.
+// MODELO: regresión lineal (mínimos cuadrados) del log ingreso. Con historia: log = a + b*M + c*H + d*I + tier + q. Sin historia
+// (club nuevo): log = a + b*M + tier + q.
 //
 // VALIDACIÓN CRUZADA:
 //   por año  saca UN club-año (simula un año que falta de un club que tenemos)
 //   por club saca el club ENTERO (simula un club que nunca cargamos)
-// Contra dos bases: la mediana de la liga-año (M sola) y, por año, el año real más cercano del propio club (log de ese año, en USD
-// constantes). Métricas: error mediano en % (|estimado/real - 1|), cuántos caen a ±25%, y cuántos reales caen dentro del rango del 80%
-// (cuantiles 10-90 de los residuos del ajuste de entrenamiento).
+// Contra las bases: la mediana de la liga-año (M sola), el año real más cercano del propio club y el club interpolado (I solo).
+// Métricas: error mediano en % (|estimado/real - 1|), cuántos caen a ±25%, y cuántos reales caen dentro del rango del 80% (cuantiles
+// 10-90 de los residuos del ajuste de entrenamiento).
+//
+// MEDIDO (2026-10-17, 891 club-años, 827 con posición):
+//   falta un año   modelo 22% (20% entre dos reales, 26% antes o después) = interpolar a mano 22%: la regresión NO agrega nada.
+//   club nuevo     modelo 50% (sin posición 61%) contra 56% de la mediana de la liga: gana gracias a la posición, pero el error es grande.
 //
 // USO:
-//   node tools/estimar.mjs --medir
+//   node tools/estimar.mjs --medir [--sin-posicion]
+//   node tools/estimar.mjs [--escribir | --check]   ver "estimaciones publicables", más abajo
 // ============================================================================
 import { readFileSync, readdirSync, existsSync, mkdirSync, writeFileSync, unlinkSync } from 'node:fs';
 import { resolve } from 'node:path';
 import vm from 'node:vm';
+import { createRequire } from 'node:module';
+import { calcular as faltantes } from './faltantes-liga.mjs';
+const { cierreDelClub } = createRequire(import.meta.url)('./cierre-ejercicio.js');
 
 const ROOT = resolve(import.meta.dirname, '..');
 
+// q: posición final normalizada (0 = campeón, 1 = último) del club en esa liga-año, de las tablas de Wikipedia que une faltantes-liga.mjs.
+// El año de rankings es el del ejercicio; la tabla es de la temporada (un cierre entre septiembre y diciembre en liga partida -> la
+// temporada que termina al año siguiente, la regla de faltantes-liga.mjs).
+let POS = null, CLUBS_ = null;
+function posicion(id, liga, anio, S = null) {
+  if (!POS) { POS = faltantes().posiciones; const s = { window: {} }; s.window.window = s.window; const ctx = vm.createContext(s); vm.runInContext(readFileSync(resolve(ROOT, 'data', 'clubs.js'), 'utf8'), ctx); CLUBS_ = vm.runInContext('clubs', ctx); }
+  const cand = S != null ? [S] : [anio, anio + 1];
+  for (const t of cand) {
+    const e = POS[`${liga}|${t}|${id}`]; if (!e) continue;
+    if (S == null) { const mes = Number(cierreDelClub(CLUBS_[id], anio).slice(5, 7)); const t2 = e.partida && mes >= 9 ? anio + 1 : anio; if (t2 !== t) continue; }
+    return e.de > 1 ? (e.pos - 1) / (e.de - 1) : null;
+  }
+  return null;
+}
+const CON_POS = !process.argv.includes('--sin-posicion');
 function datos() {
   const c = { window: {} };
   for (const f of readdirSync(resolve(ROOT, 'data', 'rankings'))) vm.runInNewContext(readFileSync(resolve(ROOT, 'data', 'rankings', f), 'utf8'), c);
@@ -45,7 +70,7 @@ function datos() {
   for (const [liga, ys] of Object.entries(c.window.RANKINGS)) for (const [y, v] of Object.entries(ys)) for (const cl of v.clubs) {
     if (!(cl.revenue > 0)) continue;
     const anio = +y; const real = cl.revenue * D[ultimo] / D[Math.min(anio, ultimo)];
-    rows.push({ id: cl.id, liga, anio, pais: liga.slice(0, 2), tier: Math.min(3, c.window.LEAGUES[liga]?.tier || 1), y: Math.log(real), real });
+    rows.push({ id: cl.id, liga, anio, pais: liga.slice(0, 2), tier: Math.min(3, c.window.LEAGUES[liga]?.tier || 1), y: Math.log(real), real, q: CON_POS ? posicion(cl.id, liga, anio) : null });
   }
   return rows;
 }
@@ -96,7 +121,7 @@ function ajustar(X, y) {
   }
   return b.map((v, p) => v / A[p][p]);
 }
-const vector = (m, h, i, tier) => (h == null ? [1, m, tier === 2 ? 1 : 0, tier === 3 ? 1 : 0] : [1, m, h, i, tier === 2 ? 1 : 0, tier === 3 ? 1 : 0]);
+const vector = (m, h, i, tier, q) => [...(h == null ? [1, m] : [1, m, h, i]), tier === 2 ? 1 : 0, tier === 3 ? 1 : 0, ...(CON_POS ? [q ?? 0.5, q == null ? 1 : 0] : [])];
 const predecir = (w, x) => w.reduce((s, v, i) => s + v * x[i], 0);
 
 // Una validación: para cada fila, `fuera` = lo que no se puede ver; ajusta con el resto (variables recalculadas sin `fuera`) y predice.
@@ -116,14 +141,14 @@ function validar(rows, ix, modo) {
       if (fuera.has(o) || fuera.has(o.id)) continue;
       const m = M(ix, o, fuera); if (m == null) continue;
       const h = conH ? H(ix, o, fuera) : null; if (conH && h == null) continue;
-      X.push(vector(m, conH ? h : null, conH ? I(ix, o, fuera) : null, o.tier)); Y.push(o.y);
+      X.push(vector(m, conH ? h : null, conH ? I(ix, o, fuera) : null, o.tier, o.q)); Y.push(o.y);
     }
     const w = ajustar(X, Y);
     const resid = X.map((x, i) => Y[i] - predecir(w, x)); const lo = cuantil(resid, 0.1), hi = cuantil(resid, 0.9);
     for (const t of objetivo) {
       const m = M(ix, t, fuera); if (m == null) continue;
       const h = conH ? H(ix, t, fuera) : null; if (conH && h == null) continue;
-      const p = predecir(w, vector(m, conH ? h : null, conH ? I(ix, t, fuera) : null, t.tier));
+      const p = predecir(w, vector(m, conH ? h : null, conH ? I(ix, t, fuera) : null, t.tier, t.q));
       if (conH) res.interp.push(I(ix, t, fuera) - t.y);
       res.modelo.push(p - t.y); res.base.push(m - t.y); res.n++;
       if (conH) { const ys = (ix.porClub.get(t.id) || []).filter((o) => o !== t).map((o) => o.anio); (Math.min(...ys) < t.anio && Math.max(...ys) > t.anio ? res.entre : res.afuera).push(p - t.y); }
@@ -146,7 +171,7 @@ const pct = (errs) => {
 // como cargar.mjs vuelve a correr esto después de cada carga, el estimado de un año que se acaba de cargar desaparece solo.
 // INTERRUPTOR: mientras data/estimados/ no exista, nada se publica y --check pasa. Se prende con --escribir (decisión de Guido).
 const DIR_EST = resolve(ROOT, 'data', 'estimados');
-const ERROR_MEDIDO = { entre: 19, afuera: 26 }; // error mediano de la validación por año (node tools/estimar.mjs --medir)
+const ERROR_MEDIDO = { entre: 20, afuera: 26 }; // error mediano de la validación por año (node tools/estimar.mjs --medir)
 function estimaciones() {
   const rows = datos(); const ix = indices(rows); const vacio = new Set();
   const ci = { window: {} }; vm.runInNewContext(readFileSync(resolve(ROOT, 'data', 'club-index.js'), 'utf8'), ci); const CI = ci.window.CLUB_INDEX;
@@ -160,7 +185,7 @@ function estimaciones() {
   const D = dc.window.DEFLACTORES.USD.valores; const ultimo = Math.max(...Object.keys(D).map(Number));
   // el modelo, ajustado con todos los años reales
   const X = [], Y = [];
-  for (const o of rows) { const m = M(ix, o, vacio), h = H(ix, o, vacio); if (m == null || h == null) continue; X.push(vector(m, h, I(ix, o, vacio), o.tier)); Y.push(o.y); }
+  for (const o of rows) { const m = M(ix, o, vacio), h = H(ix, o, vacio); if (m == null || h == null) continue; X.push(vector(m, h, I(ix, o, vacio), o.tier, o.q)); Y.push(o.y); }
   const w = ajustar(X, Y); const resid = X.map((x, i) => Y[i] - predecir(w, x)); const lo = cuantil(resid, 0.1), hi = cuantil(resid, 0.9);
   const out = {}; const r3 = (v) => Math.round(v * 1000) / 1000;
   for (const [liga, ys] of Object.entries(g.window.LEAGUE_GAPS || {})) for (const [S, v] of Object.entries(ys)) {
@@ -175,7 +200,7 @@ function estimaciones() {
       const dist = Math.min(...propios.map((o) => Math.abs(o.anio - anio))); if (dist > 2) continue;
       const t = { id: f.id, liga, anio, pais: liga.slice(0, 2), tier: Math.min(3, lc.window.LEAGUES[liga]?.tier || 1) };
       const m = M(ix, t, vacio), h = H(ix, t, vacio), i = I(ix, t, vacio); if (m == null || h == null || i == null) continue;
-      const p = predecir(w, vector(m, h, i, t.tier)); const nom = (x) => r3(Math.exp(x) * D[Math.min(anio, ultimo)] / D[ultimo]);
+      const p = predecir(w, vector(m, h, i, t.tier, CON_POS ? posicion(f.id, liga, anio, +S) : null)); const nom = (x) => r3(Math.exp(x) * D[Math.min(anio, ultimo)] / D[ultimo]);
       const entre = propios.some((o) => o.anio < anio) && propios.some((o) => o.anio > anio);
       ((out[liga] ??= {})[anio] ??= []).push({ id: f.id, revenue: nom(p), lo: nom(p + lo), hi: nom(p + hi), caso: entre ? 'entre' : 'afuera', error: ERROR_MEDIDO[entre ? 'entre' : 'afuera'] });
     }
@@ -214,7 +239,7 @@ if (import.meta.url === `file://${process.argv[1]}` && !process.argv.includes('-
 
 if (import.meta.url === `file://${process.argv[1]}` && process.argv.includes('--medir')) {
   const rows = datos(); const ix = indices(rows);
-  console.log(`${rows.length} club-años con ingreso real, ${new Set(rows.map((r) => r.id)).size} clubes, ${ix.porLigaAnio.size} liga-años\n`);
+  console.log(`${rows.length} club-años con ingreso real, ${new Set(rows.map((r) => r.id)).size} clubes, ${ix.porLigaAnio.size} liga-años; con posición final: ${rows.filter((r) => r.q != null).length}${CON_POS ? '' : ' (--sin-posicion: no se usa)'}\n`);
   for (const modo of ['anio', 'club']) {
     const r = validar(rows, ix, modo);
     console.log(modo === 'anio' ? 'POR AÑO (falta un año de un club que tenemos)' : 'POR CLUB (club que nunca cargamos)');
