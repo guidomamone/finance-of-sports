@@ -563,7 +563,7 @@ const portoptFiscalYearMeta = {
       {label:'Resultados relativos a investimentos', value:0.14},
       {label:'Imposto sobre o rendimento', value:-3.993},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:272.502, cash:18.409,
     officialTotalRevenue:321.043, officialTotalExpenses:252.543, officialPAT:40.988,
   },
   2016: {
@@ -579,7 +579,7 @@ const portoptFiscalYearMeta = {
       {label:'Resultados relativos a investimentos', value:-0.604084},
       {label:'Imposto sobre o rendimento do período', value:-1.09381},
     ],
-    grossDebt:null, cash:7.392033,
+    grossDebt:182.087482, cash:7.392033,
     officialTotalRevenue:154.273361, officialTotalExpenses:194.480284, officialPAT:-57.344712,
   },
   2017: {
@@ -594,7 +594,7 @@ const portoptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-17.787236},
       {label:'Imposto sobre o rendimento do período', value:-0.900686},
     ],
-    grossDebt:null, cash:14.74335,
+    grossDebt:195.311241, cash:14.74335,
     officialTotalRevenue:168.376805, officialTotalExpenses:185.685268, officialPAT:-34.262304,
   },
   2018: {
@@ -610,7 +610,7 @@ const portoptFiscalYearMeta = {
       {label:'Resultados relativos a investimentos', value:-0.117775},
       {label:'Imposto sobre o rendimento do período', value:-1.027866},
     ],
-    grossDebt:null, cash:29.020109,
+    grossDebt:281.083121, cash:29.020109,
     officialTotalRevenue:183.072058, officialTotalExpenses:196.059969, officialPAT:-28.692873,
   },
   2019: {
@@ -625,7 +625,7 @@ const portoptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-19.878855},
       {label:'Imposto sobre o rendimento do período', value:-1.776616},
     ],
-    grossDebt:null, cash:9.48963,
+    grossDebt:222.831138, cash:9.48963,
     officialTotalRevenue:267.224983, officialTotalExpenses:238.367688, officialPAT:9.764222,
   },
   2021: {
@@ -645,7 +645,7 @@ const portoptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Vendas e serviços prestados', lado:'revenue', importe:152.41446, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:300.659951, cash:8.655377,
     officialTotalRevenue:268.328651, officialTotalExpenses:216.500203, officialPAT:30.454137,
   },
   2022: {
@@ -660,7 +660,7 @@ const portoptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-23.778288},
       {label:'Imposto sobre o rendimento do período', value:-0.843769},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:280.19032, cash:5.05782,
     officialTotalRevenue:268.60415, officialTotalExpenses:230.490272, officialPAT:18.058534,
   },
   2023: {
@@ -676,7 +676,7 @@ const portoptFiscalYearMeta = {
       {label:'Resultados relativos a investimentos', value:-0.314634},
       {label:'Imposto sobre o rendimento do período', value:-1.076103},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:303.514104, cash:19.957769,
     officialTotalRevenue:192.494197, officialTotalExpenses:218.932323, officialPAT:-48.289955,
   },
   2024: {
@@ -692,7 +692,7 @@ const portoptFiscalYearMeta = {
       {label:'Resultados relativos a investimentos', value:-0.173168},
       {label:'Imposto sobre o rendimento', value:0.027293},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:247.502568, cash:3.518768,
     officialTotalRevenue:245.27345, officialTotalExpenses:238.039767, officialPAT:-22.570498,
   },
 };

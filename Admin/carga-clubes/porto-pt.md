@@ -112,6 +112,10 @@ Generados/Portugal/Porto/wf-2024-2025-6b41056f.categorias.json (escalón de cada
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): En miles de euros: Emp. obrigacionistas n/c 224.699 + Outros empréstimos n/c 13.958 + Emp. bancários c - + Emp. obrigacionistas c 4.806 + Outros empréstimos c 29.039 = 272.502 miles. Balance consolidado de FC Porto SAD en miles de euros, columna 30.06.2025 (segunda columna). Pasivos de locación en fila propia, no se suman. Precisión de miles. (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): En miles de euros: Caixa e equivalentes de caixa 18.409. Balance consolidado de FC Porto SAD en miles, columna 30.06.2025 (segunda columna). Precisión de miles. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -183,6 +187,10 @@ Generados/Portugal/Porto/wf-2023-2024-293efed8.categorias.json (escalón de cada
 2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): cero-real = Cuotas sociales. Documento de FC Porto SAD (no del club asociación): la SAD no cobra cuotas; perfil de porto-pt = sí por los consolidados del club 2016-2023. Igual que 2024-25.
 2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): cero-real = Otras secciones deportivas. Documento de FC Porto SAD: solo la modalidad fútbol; las modalidades son del club asociación. Igual que 2024-25.
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Emp. bancários n/c 0 + Emp. obrigacionistas n/c 54,397,571 + Outros empréstimos n/c 79,281,320 + Emp. bancários c 1,628,960 + Emp. obrigacionistas c 50,004,390 + Outros empréstimos c 62,190,327. Balance consolidado de FC Porto SAD (primer estado, pág. del consolidado; no el individual de líneas ~4500). Los pasivos de locación (IFRS 16) van en fila propia y no se suman.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 3,518,768. Balance consolidado de FC Porto SAD.
 ```
 
 ### Liga
@@ -279,6 +287,10 @@ Generados/Portugal/Porto/relatorio-contas-consolidadas-2022-23.categorias.json (
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Emp. bancários n/c 1,500,000 + Emp. obrigacionistas n/c 102,744,546 + Outros empréstimos n/c 61,620,329 + Emp. bancários c 2,072,406 + Emp. obrigacionistas c 22,547,289 + Outros empréstimos c 113,029,534. Balance consolidado del grupo; sin cifras de resumen del informe de gestión. Sin otras filas financieras. Incluye la fila "Outros empréstimos" (nota 21, financiadores no bancarios/factoring).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e depósitos bancários 19,957,769. Balance consolidado.
 ```
 
 ### Liga
@@ -379,6 +391,10 @@ Generados/Portugal/Porto/relatorio-contas-consolidadas-2021-22.categorias.json (
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Emp. bancários n/c 0 + Emp. obrigacionistas n/c 87,709,463 + Outros empréstimos n/c 96,217,214 + Emp. bancários c 5,892,925 + Emp. obrigacionistas c 740,149 + Outros empréstimos c 89,630,569. Balance consolidado del grupo; sin cifras de resumen del informe de gestión. Sin otras filas financieras. Incluye la fila "Outros empréstimos" (nota 21, financiadores no bancarios/factoring).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e depósitos bancários 5,057,820. Balance consolidado.
+```
+
 ### Liga
 
 ```text
@@ -437,6 +453,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/dentro-de-otro.mjs (2026-10-16): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2016, 2017, 2018, 2019, 2022, 2023, 2024, 2025): Comercial / Sponsors, Estadio, Televisión, Premios por competencias
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Emp. bancários n/c 4,000,000 + Emp. obrigacionistas n/c 63,372,911 + Outros empréstimos n/c 133,410,439 + Emp. bancários c 8,644,150 + Emp. obrigacionistas c 290,844 + Outros empréstimos c 90,941,607. Balance consolidado del grupo; sin cifras de resumen del informe de gestión. Sin otras filas financieras. Incluye la fila "Outros empréstimos" (nota 21, financiadores no bancarios/factoring).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e depósitos bancários 8,655,377. Balance consolidado.
 ```
 
 ### Liga
@@ -543,6 +563,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-16): Claude 2026-10-16: balance consolidado en euros (L944); Jev había tomado la tabla en miles (L611)
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Emp. bancários n/c 5,000,000 + Emp. obrigacionistas n/c 34,419,832 + Outros empréstimos n/c 87,638,571 + Emp. bancários c 15,146,577 + Emp. obrigacionistas c 34,937,679 + Outros empréstimos c 45,688,479. Balance consolidado del grupo; sin cifras de resumen del informe de gestión. Sin otras filas financieras. Incluye la fila "Outros empréstimos" (nota 21, financiadores no bancarios/factoring).
+```
+
 ### Liga
 
 ```text
@@ -643,6 +667,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-16): Claude 2026-10-16: balance consolidado en euros (L842); Jev había tomado la tabla en miles (L584)
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos bancários n/c 113,372,349 + Empréstimos obrigacionistas n/c 68,585,393 + Empréstimos bancários c 98,927,775 + Empréstimos obrigacionistas c 197,604. Balance consolidado del grupo; sin cifras de resumen del informe de gestión. Sin otras filas financieras.
 ```
 
 ### Liga
@@ -747,6 +775,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-16): Claude 2026-10-16: balance consolidado en euros (L842); Jev había tomado la tabla en miles (L587)
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos bancários n/c 42,185,597 + Empréstimos obrigacionistas n/c 34,465,081 + Empréstimos bancários c 73,947,714 + Empréstimos obrigacionistas c 44,712,849. Balance consolidado del grupo; sin cifras de resumen del informe de gestión. Sin otras filas financieras.
+```
+
 ### Liga
 
 ```text
@@ -846,6 +878,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-16): Claude 2026-10-16: balance consolidado en euros (L976); Jev había tomado la tabla del informe de gestión en miles (L657, '7.392') como euros
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos bancários n/c 37,629,893 + Empréstimos obrigacionistas n/c 44,705,224 + Empréstimos bancários c 80,098,460 + Empréstimos obrigacionistas c 19,653,905. Balance consolidado del grupo; sin cifras de resumen del informe de gestión. Sin otras filas financieras. Los empréstimos bancários incluyen factoring (~41,5 M) y leasing según nota 21.
 ```
 
 ### Liga
