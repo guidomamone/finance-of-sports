@@ -360,6 +360,10 @@ tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterio
 tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 92
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): En miles de euros: Financiamentos obtidos n/c 78.243 + Financiamentos obtidos c 60.010 = 138.253 miles. Balance de la SAD (individual) en miles de euros. Los pasivos de locación (IFRS 16) están en filas propias y no se suman (la nota 21 de dívida remunerada suma 147.139 con ellos). (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -837,6 +841,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 74
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): En miles de euros: Financiamentos obtidos n/c 36.488 + Financiamentos obtidos c 74.755 = 111.243 miles. Balance de la SAD (individual) en miles de euros.  (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -943,6 +951,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 89
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): En miles de euros: Financiamentos obtidos n/c 36.265 + Financiamentos obtidos c 91.106 = 127.371 miles. Balance de la SAD (individual) en miles de euros.  (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -1020,6 +1032,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 108
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): En miles de euros: Financiamentos obtidos n/c 88.119 + Financiamentos obtidos c 43.936 = 132.055 miles. Balance de la SAD (individual) en miles de euros. Hay "Outros passivos não correntes" con Associação em Participação (nota 21, 6.060 miles) que no se sumó. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -1106,6 +1122,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 79
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): En miles de euros: Financiamentos obtidos n/c 80.344 + Financiamentos obtidos c 49.709 = 130.053 miles. Balance de la SAD (individual) en miles de euros. Hay "Outros passivos não correntes" con Associação em Participação (nota 21, 9.030 miles) que no se sumó. La página de resumen de gestión repite el balance; se usó el balance. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -1180,6 +1200,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 81
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): En miles de euros: Financiamentos obtidos n/c 31.680 + Financiamentos obtidos c 149.057 = 180.737 miles. Balance de la SAD (individual) en miles de euros. Hay "Outros passivos não correntes" con Associação em Participação (nota 21) que no se sumó. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -1259,6 +1283,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 81
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): En miles de euros: Financiamentos obtidos n/c 56.458 + Financiamentos obtidos c 101.398 = 157.856 miles. Balance de la SAD (individual) en miles de euros. "Outros passivos não correntes" incluye "Associação em Participação" (nota 21; 43.075 miles en 2013) que no se sumó por no ser préstamo explícito. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -1343,6 +1371,10 @@ tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguien
 tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: año anterior): "Caixa e equivalentes de caixa" pág. 21
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): En miles de euros: Dívida financeira n/c 80.291 + Dívida financeira c 36.075 = 116.366 miles. Balance de la SAD (individual) en miles de euros. Otros credores não correntes 39.706 no se suma. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -1418,6 +1450,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 25
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): En miles de euros: Dívida financeira n/c 42.289 + Dívida financeira c 53.271 = 95.560 miles. Balance de la SAD (individual) en miles de euros. Coincide con los 95,6 M de dívida financeira del informe de gestión. Los VMOC están en patrimonio; "Outros credores não correntes - Entidades relacionadas" 33.405 compensa un activo con el grupo y no se suma. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -1482,6 +1518,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 f): deuda bancaria del balance POC, mediano/largo + corto plazo de 'Dívidas a Instituições de Crédito': Empréstimos 15 000 (L1036, no corriente) + 28 767 (L1042, corriente), miles de euros
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): En miles de euros: Caixa e equivalentes de caixa 332. Balance de Sporting SAD dice 332 miles; la nota 13 (depósitos a la orden) imprime 322, probable errata de una de las dos. Se usó el balance. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
