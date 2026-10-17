@@ -68,6 +68,7 @@
 //   node tools/ajustes.mjs                                     lista todos (club, año, campo, valor, motivo)
 //   node tools/ajustes.mjs --agregar "<pdf>" <campo> [--valor "..."] --motivo "..." [--evidencia "pág. N del visor, .md L..."]
 //        fila además: --etiqueta "..." --lado ingreso|gasto|financiero|impuesto [--linea N] [--reemplaza "etiqueta extraída" | --reemplaza-linea N]
+//        caja / deuda además: [--anio AAAA] si el PDF alimenta dos años del sitio (to-do 263, ajusteDelAnio).
 //        [--autor X]: quién lo decidió. Sin --autor firma quien corre el comando (autorPorDefecto, abajo).
 //   import { ajusteDe, ajustesDe } from './ajustes.mjs'        lo que usan los scripts
 // ============================================================================
@@ -95,11 +96,22 @@ function leer() {
 // Todos los ajustes vigentes de un documento (el último por campo; en `fila`, por campo + etiqueta).
 export function ajustesDe(pdf) {
   const m = new Map();
-  for (const a of leer()) if (a.pdf === pdf) m.set(a.campo === 'fila' ? `fila|${a.etiqueta}` : a.campo === 'cero-real' ? `cero-real|${String(a.valor).toLowerCase()}` : a.campo === 'desglose' ? `desglose|${a.etiqueta}` : a.campo === 'categoria' ? `categoria|${a.etiqueta}` : a.campo === 'incluye' ? `incluye|${a.valor}` : a.campo === 'confirmado' ? `confirmado|${a.linea}|${a.valor}` : a.campo, a);
+  for (const a of leer()) if (a.pdf === pdf) m.set(a.campo === 'fila' ? `fila|${a.etiqueta}` : a.campo === 'cero-real' ? `cero-real|${String(a.valor).toLowerCase()}` : a.campo === 'desglose' ? `desglose|${a.etiqueta}` : a.campo === 'categoria' ? `categoria|${a.etiqueta}` : a.campo === 'incluye' ? `incluye|${a.valor}` : a.campo === 'confirmado' ? `confirmado|${a.linea}|${a.valor}` : CAMPOS_POR_ANIO.includes(a.campo) ? `${a.campo}|${a.anio ?? ''}` : a.campo, a);
   return [...m.values()].filter((a) => !a.anulado); // (to-do 163) un registro `anulado` gana sobre el anterior de la misma clave y lo saca
 }
 export function ajusteDe(pdf, campo) {
   return ajustesDe(pdf).find((a) => a.campo === campo) || null;
+}
+// AJUSTE POR PDF Y AÑO (to-do 263, ok de Guido 2026-10-17). Un mismo PDF puede alimentar dos años del sitio (el del documento y su
+// comparativo): Dortmund 2024 y 2025 salen de geschaeftsbericht-2024-25, RB Leipzig 2024 y 2025 de jahresabschluss-2024-25. Con el ajuste
+// buscado solo por PDF los dos años recibían el mismo valor (el de 2025). `caja` y `deuda` pueden llevar `anio` (--anio AAAA).
+// COMPUERTA (una sola): el ajuste con `anio` vale solo para ese año; el ajuste SIN `anio` vale solo si el PDF alimenta UN año del sitio
+// (`unSoloAnio`), que es como funcionaba en todos los otros PDFs. Si alimenta dos o más y no hay ajuste de ese año, no decide: el año baja
+// al escalón siguiente de su escalera, como un año sin ajuste.
+export const CAMPOS_POR_ANIO = ['caja', 'deuda'];
+export function ajusteDelAnio(pdf, campo, anio, unSoloAnio) {
+  const vivos = ajustesDe(pdf).filter((a) => a.campo === campo);
+  return vivos.find((a) => a.anio != null && String(a.anio) === String(anio)) || (unSoloAnio ? vivos.find((a) => a.anio == null) || null : null);
 }
 // PERÍMETRO (Versión 412, pedido de Guido el 2026-10-02: "ruta de ajuste manual para que no joda"): `perimetro` = individual | consolidado.
 // Se puede fijar para UN documento o para TODO EL CLUB (en vez del pdf, la carpeta `Clubes/<País>/<Club>/`); el del documento gana sobre el
@@ -138,10 +150,10 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   // + valor en incluye/cero-real). Caso: los ajustes de ingresos de Bologna 2019-2022, resueltos por la nota del subtotal.
   if (A.includes('--anular')) {
     const i = A.indexOf('--anular'); const pdf = A[i + 1]; const campo = A[i + 2];
-    if (!pdf || !CAMPOS.includes(campo) || !flag('--motivo')) { console.error('Uso: --anular "<pdf>" <campo> [--etiqueta "..."] [--valor "..."] --motivo "..."'); process.exit(1); }
-    const vivo = ajustesDe(pdf).find((a) => a.campo === campo && (flag('--etiqueta') == null || a.etiqueta === flag('--etiqueta')) && (flag('--valor') == null || String(a.valor) === flag('--valor')));
+    if (!pdf || !CAMPOS.includes(campo) || !flag('--motivo')) { console.error('Uso: --anular "<pdf>" <campo> [--etiqueta "..."] [--valor "..."] [--anio AAAA] --motivo "..."'); process.exit(1); }
+    const vivo = ajustesDe(pdf).find((a) => a.campo === campo && (flag('--etiqueta') == null || a.etiqueta === flag('--etiqueta')) && (flag('--valor') == null || String(a.valor) === flag('--valor')) && (flag('--anio') == null || String(a.anio) === flag('--anio')));
     if (!vivo) { console.error('No hay un ajuste vigente con esa clave.'); process.exit(1); }
-    appendFileSync(ARCHIVO, JSON.stringify({ pdf, campo, ...(vivo.etiqueta != null ? { etiqueta: vivo.etiqueta } : {}), valor: vivo.valor ?? null, anulado: true, motivo: flag('--motivo'), autor: flag('--autor') || autorPorDefecto(), fecha: new Date().toISOString().slice(0, 10) }) + '\n');
+    appendFileSync(ARCHIVO, JSON.stringify({ pdf, campo, ...(vivo.etiqueta != null ? { etiqueta: vivo.etiqueta } : {}), ...(vivo.anio != null ? { anio: vivo.anio } : {}), valor: vivo.valor ?? null, anulado: true, motivo: flag('--motivo'), autor: flag('--autor') || autorPorDefecto(), fecha: new Date().toISOString().slice(0, 10) }) + '\n');
     console.log(`Ajuste anulado: ${pdf.split('/').slice(-2).join('/')} · ${campo}${vivo.etiqueta ? ` "${vivo.etiqueta}"` : ''}${vivo.valor != null ? ` = ${vivo.valor}` : ''}`);
     process.exit(0);
   }
@@ -177,11 +189,13 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     if (!['perimetro', 'deuda-incluye', 'name'].includes(campo) && pdf.endsWith('/')) { console.error('solo `perimetro`, `deuda-incluye` y `name` se fijan para la carpeta de un club'); process.exit(1); }
     if (['resultado-final', 'fila', 'fx', 'cero-real', 'desglose'].includes(campo) && !flag('--valor')) { console.error(`${campo} necesita --valor (el número tal cual está impreso)`); process.exit(1); }
     if (campo === 'fila' && (!flag('--etiqueta') || !LADOS.includes(flag('--lado')))) { console.error(`fila necesita --etiqueta y --lado (${LADOS.join(', ')})`); process.exit(1); }
+    // (to-do 263) --anio AAAA: solo en caja / deuda, para un PDF que alimenta dos años del sitio (ver ajusteDelAnio, arriba).
+    if (flag('--anio') !== null && (!CAMPOS_POR_ANIO.includes(campo) || !/^\d{4}$/.test(flag('--anio') || ''))) { console.error(`--anio AAAA solo va con ${CAMPOS_POR_ANIO.join(' / ')}`); process.exit(1); }
     if (flag('--reemplaza-linea') !== null && !/^\d+$/.test(flag('--reemplaza-linea') || '')) { console.error('--reemplaza-linea necesita el número de línea del .md'); process.exit(1); }
     if (!flag('--motivo')) { console.error('Falta --motivo'); process.exit(1); }
-    const a = { pdf, campo, valor: flag('--valor'), linea: flag('--linea') ? Number(flag('--linea')) : null, ...(campo === 'fila' ? { etiqueta: flag('--etiqueta'), lado: flag('--lado'), reemplaza: flag('--reemplaza'), ...(flag('--reemplaza-linea') ? { reemplazaLinea: Number(flag('--reemplaza-linea')) } : {}) } : {}), ...(campo === 'desglose' ? { etiqueta: flag('--etiqueta'), categoria: flag('--categoria') } : {}), ...(campo === 'categoria' ? { etiqueta: flag('--etiqueta') } : {}), ...(campo === 'incluye' ? { categoria: flag('--categoria'), ...(A.includes('--posible') ? { posible: true } : {}) } : {}), motivo: flag('--motivo'), evidencia: flag('--evidencia'), autor: flag('--autor') || autorPorDefecto(), fecha: new Date().toISOString().slice(0, 10) };
+    const a = { pdf, campo, valor: flag('--valor'), linea: flag('--linea') ? Number(flag('--linea')) : null, ...(campo === 'fila' ? { etiqueta: flag('--etiqueta'), lado: flag('--lado'), reemplaza: flag('--reemplaza'), ...(flag('--reemplaza-linea') ? { reemplazaLinea: Number(flag('--reemplaza-linea')) } : {}) } : {}), ...(campo === 'desglose' ? { etiqueta: flag('--etiqueta'), categoria: flag('--categoria') } : {}), ...(campo === 'categoria' ? { etiqueta: flag('--etiqueta') } : {}), ...(campo === 'incluye' ? { categoria: flag('--categoria'), ...(A.includes('--posible') ? { posible: true } : {}) } : {}), ...(flag('--anio') ? { anio: Number(flag('--anio')) } : {}), motivo: flag('--motivo'), evidencia: flag('--evidencia'), autor: flag('--autor') || autorPorDefecto(), fecha: new Date().toISOString().slice(0, 10) };
     appendFileSync(ARCHIVO, JSON.stringify(a) + '\n');
-    console.log(`Ajuste guardado: ${pdf.split('/').slice(-2).join('/')} · ${campo}${a.etiqueta ? ` "${a.etiqueta}" (${a.lado})` : ''}${a.valor ? ` = ${a.valor}` : ''}. Lo toma la próxima corrida de verificar.mjs.`);
+    console.log(`Ajuste guardado: ${pdf.split('/').slice(-2).join('/')} · ${campo}${a.anio ? ` (año ${a.anio})` : ''}${a.etiqueta ? ` "${a.etiqueta}" (${a.lado})` : ''}${a.valor ? ` = ${a.valor}` : ''}. Lo toma la próxima corrida de verificar.mjs.`);
   } else {
     const vigentes = [...new Set(leer().map((a) => a.pdf))].flatMap((p) => ajustesDe(p));
     console.log(`AJUSTES MANUALES (${vigentes.length}) — Admin/registros/ajustes-manuales.jsonl\n`);
@@ -190,6 +204,6 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     // impuestos (un costo financiero sumado como ingreso); con el signo bien, 40.604, y el documento imprime 40.612.
     const impuestoDe = (pdf) => { try { const V = JSON.parse(readFileSync(resolve(ROOT, derivado(pdf.replace(/\.pdf$/i, '.md'), '.verificacion.json', { crear: false })), 'utf8')); const r = V.totales?.resultadoFinal; return r?.impuestoDeducido != null ? `impuesto calculado ${r.impuestoDeducido} (antes de impuestos ${Number((V.totales.resultadoParaCargar + r.impuestoDeducido).toFixed(3))}, resultado ${r.valor}; millones)` : null; } catch { return null; } };
     for (const a of vigentes.filter((x) => x.campo === 'resultado-final')) { const t = impuestoDe(a.pdf); if (t) a.calculo = t; }
-    for (const a of vigentes) console.log(`  ${a.pdf.split('/').slice(-2).join('/')} · ${a.campo}${a.etiqueta ? ` "${a.etiqueta}" (${a.lado}${a.reemplaza ? `, reemplaza "${a.reemplaza}"` : ''}${a.reemplazaLinea != null ? `, reemplaza la fila de L${a.reemplazaLinea}` : ''})` : ''}${a.valor ? ` = ${a.valor}` : ''}  (${a.autor}, ${a.fecha})\n      motivo: ${a.motivo}${a.evidencia ? `\n      evidencia: ${a.evidencia}` : ''}${a.calculo ? `\n      → ${a.calculo}` : ''}`);
+    for (const a of vigentes) console.log(`  ${a.pdf.split('/').slice(-2).join('/')} · ${a.campo}${a.anio ? ` (año ${a.anio})` : ''}${a.etiqueta ? ` "${a.etiqueta}" (${a.lado}${a.reemplaza ? `, reemplaza "${a.reemplaza}"` : ''}${a.reemplazaLinea != null ? `, reemplaza la fila de L${a.reemplazaLinea}` : ''})` : ''}${a.valor ? ` = ${a.valor}` : ''}  (${a.autor}, ${a.fecha})\n      motivo: ${a.motivo}${a.evidencia ? `\n      evidencia: ${a.evidencia}` : ''}${a.calculo ? `\n      → ${a.calculo}` : ''}`);
   }
 }

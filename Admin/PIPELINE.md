@@ -706,6 +706,11 @@ cargado) y nunca frena. Medir: `node tools/caja-deuda.mjs --medir [--club <id>] 
 Escribir: `--club <id> --ejecutar --escribir` (el valor en `data/`, sin comentario; de dónde salió, en la meta del año en
 `Admin/carga-clubes/<club>.md`). Cuestan API los escalones 1b (Jev, centavos por club) y 2 (IA): esa corrida la hace Guido.
 
+Escalón 0, el ajuste manual `caja` / `deuda` (el valor tal cual impreso; se pasa a millones con la escala que se detecta para ese año), se
+busca por PDF y AÑO (to-do 263). Si un PDF alimenta dos años del club (el del documento y su comparativo: Dortmund 2024 y 2025 desde
+geschaeftsbericht-2024-25), el ajuste lleva `--anio AAAA` y vale solo para ese año; uno sin año vale solo si el PDF alimenta un único año.
+Sin ajuste de ese año, el escalón 0 no decide y el año sigue por la escalera.
+
 ```
  LECTURA DE FILAS  una sola referencia a nota; una celda con "%" no es un importe; activo y pasivo en la misma fila = dos filas; sin código de cuenta ni numeración
                    ("4)", "a)") para el diccionario. La referencia a nota es una escalera: escalón 1, si la tabla tiene una columna de
