@@ -638,7 +638,7 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
 - REGLA (Versión 36, pedida por Guido: "detesto que hagas eso"): la cita de fuente ("Fuente: ...")
   NUNCA va adentro de un card individual (Supuestos, Presupuesto Financiero, Presupuesto de
   Inversiones, ni ningún card nuevo). Va en `#finanzasDataQualityBanner` (por ejercicio),
-  `#finanzasClubSourceNote` (por club, al final del bloque de cards) o la pestaña Fuentes, nunca
+  `#finanzasClubSourceNote` (por club, al final del bloque de cards) o la tarjeta Fuentes de Finanzas, nunca
   repetida card por card. Ver `Admin/PANTALLA.md`, la regla de la fuente fuera de los cards.
 - REGLA (Versiones 34-35, pedida por Guido, no es opcional, "homologar lo que se pueda
   homologar"): los 3 cards de presupuesto oficial de Finanzas: "Supuestos"
@@ -815,8 +815,8 @@ Texto movido sin cambios.
   línea con lo que elegiste y un "Cambiar"; ninguno es obligatorio ("Elegir más
   tarde" está en todos, por eso ninguno dice "opcional"). Arriba, el buscador:
   el que ya sabe qué quiere escribe "boca" o "primera div" y llega en un paso —
-  busca clubes Y ligas, agrupados. Se abre con Ctrl/Cmd+K, con el botón de club
-  del header, desde Inicio o desde el card de Finanzas. Vive en `js/selector.js`
+  busca clubes Y ligas, agrupados. Se abre con Ctrl/Cmd+K, con "Buscar un club o
+  una liga" del header, desde Inicio o desde "Cambiar de club" en Finanzas. Vive en `js/selector.js`
   y se alimenta de `clubs.js` + `club-index.js` + `leagues.js` +
   `club-leagues/<iso2>.js`, sin bajar ningún archivo de club. Esos últimos NO son
   eager desde la Versión 164: se bajan al abrir el modal, que es el único lugar
@@ -834,7 +834,7 @@ Texto movido sin cambios.
   azul del sitio: `clubs[id].brandColor` (`data/clubs.js`), un hex verificado club
   por club contra su propia fuente. Pinta en los 4 lugares donde ese círculo existe
   (la fila del modal, el paso de "ejercicio de cada club", el card de Comparar y el
-  botón de club del header), siempre por la misma `pintarCrest()` de
+  botón de club del header, que hoy está escondido), siempre por la misma `pintarCrest()` de
   `js/selector.js`, que además decide el color de las INICIALES por contraste —
   blancas mientras lleguen a 4:1 contra el fondo, negras cuando no (el celeste de
   Racing, el amarillo de Club América) — y le pone un aro interno a los colores muy
@@ -857,7 +857,7 @@ Texto movido sin cambios.
 - EL HEADER EN EL TELÉFONO ES UNA SOLA FILA (hasta 700 px de ancho; mockup: artboards "Header en el teléfono" del artifact "Pantallas
   FoS — Inicio"). Logo, lupa (abre el selector; al elegir, a Finanzas) y un botón con el nombre de la sección actual que abre el menú.
   El menú es el MISMO `#mainNav` mostrado como panel debajo del header, más idioma y contacto (`.m-extra`, fuera del nav a propósito:
-  todo `#mainNav button` se trata como pestaña). La moneda vive en el panel de Finanzas (también en escritorio) y el botón de club no se muestra en el teléfono (la lupa abre el mismo selector). Entre 701 y 900 px sigue el header de
+  todo `#mainNav button` se trata como pestaña). La moneda vive en el panel de Finanzas (también en escritorio) y el botón de club no se muestra en ningún ancho ("Buscar un club o una liga", la lupa en el teléfono, abre el mismo selector; el club se nombra en el título de Finanzas). Entre 701 y 900 px sigue el header de
   varias filas; en escritorio, nada cambió.
 - FINANZAS, LO DE ARRIBA (mockup: artboards "Finanzas" del artifact "Pantallas FoS — Inicio"). El título es el club, con "Cambiar de
   club" al lado (en Finanzas el título ya dice qué club es). Debajo, una guía de una línea (qué se toca) que se cierra y no vuelve
@@ -879,7 +879,7 @@ Texto movido sin cambios.
   clubes, y a igual cantidad el más reciente; un presupuesto solo no entra. La tarjeta es el lenguaje visual de Inicio, Ligas y
   Finanzas: blanco sobre `--bg`, borde fino, radio 14, barras horizontales con el punto del color de cada club (en el teléfono la
   barra baja a una segunda línea). Inicio se ve IGUAL haya club elegido o no, y NINGÚN `data/<país>/<club>-data.js` se carga para
-  dibujarlo. Sin club se ven Inicio, Comparar, Ligas, Finanzas y Mi Cuenta; Fuentes aparece recién cuando hay uno. El club queda en
+  dibujarlo. Las cinco pestañas (Inicio, Comparar, Ligas, Finanzas, Mi Cuenta) se ven con club o sin club; la pestaña Fuentes no existe más (repetía la tarjeta Fuentes de Finanzas y la página pública `fuentes/<club>.html`). El club queda en
   `localStorage` y las visitas siguientes entran derecho a él.
 - COMPARAR (Versión 148-154, pestaña `#vs`, no confundir con "Comparar Gestiones",
   que compara 2 presidencias del mismo club). **Dos cards, A y B, y cada uno es un

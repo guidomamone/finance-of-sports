@@ -162,8 +162,6 @@
     renderTitulosTable();
     populateCompararSelectors(currentClub);
     renderComparar();
-    // Pestaña Fuentes: los documentos son por club, así que se repintan al cambiar de club, no en cada cambio de ejercicio.
-    renderFuentesClubCard();
   }
 
   // ---------- SELECTOR DE CLUB (js/selector.js) ----------
@@ -267,13 +265,12 @@
     });
   }
 
-  // applyClubMode(): la única función que decide qué se ve según haya club o no. Las pestañas que funcionan SIN club se ven
-  // siempre (Inicio, Comparar, Ligas, Finanzas, Mi Cuenta) y las que no significan nada sin uno se esconden hasta que lo haya
-  // (Fuentes). Finanzas sin club no está vacía: es el card del selector. Si el visitante estaba en una pestaña que acaba de
-  // esconderse, vuelve a Inicio.
   // La guía de Finanzas cerrada (applyClubMode la esconde). localStorage puede no estar (modo privado): sin él, se cierra por la sesión.
   let guiaCerrada = false;
   try { guiaCerrada = localStorage.getItem('finGuiaCerrada') === '1'; } catch(e) {}
+  // applyClubMode(): la única función que decide qué se ve según haya club o no. Hoy todas las pestañas funcionan sin club (Finanzas
+  // sin club es el card del selector); TABS_SIN_CLUB queda para una pestaña futura que no signifique nada sin uno: se escondería
+  // hasta que lo haya, y si el visitante estaba en ella, vuelve a Inicio.
   const TABS_SIN_CLUB = ['inicio', 'vs', 'liga', 'finanzas', 'cuenta'];
   function applyClubMode(){
     const cold = !currentClub;
@@ -468,6 +465,8 @@
     irAFinanzasAlElegir = true;
     CLUB_SELECTOR.open();
   });
+  // El atajo del selector, como lo escribe cada sistema: ⌘K en Mac, Ctrl K en el resto.
+  if(/Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent)) document.querySelectorAll('#mBuscarK, .ini-kbd').forEach(k => { k.textContent = '⌘K'; });
   document.getElementById('mContacto').addEventListener('click', () => {
     setMenuMovil(false);
     document.getElementById('contactBtn').click();
@@ -609,7 +608,6 @@
   renderResultados();
   renderTitulosTable();
   renderComparar();
-  renderFuentesClubCard();
 
   // Y recién acá entra el club de la visita anterior, por el mismo camino que un click en
   // el selector (selectClub -> loadClubData -> applyClubMode -> refreshAllForClub). Si no
@@ -675,7 +673,6 @@
     renderComparar();
     // La pestaña Fuentes arma su contenido en JS: sin esto, el título y las etiquetas quedan en el idioma del arranque.
     // refreshFinanzas(), acá arriba, ya redibuja la ficha de Fuentes de Finanzas.
-    renderFuentesClubCard();
     // La pestaña Ligas también arma todo su contenido en JS.
     LIGA_VIEW.refresh();
     pintarConteoInicio();

@@ -97,25 +97,6 @@
     #mainNav{order:3;width:100%;justify-content:center;border-top:1px solid rgba(255,255,255,.12);padding-top:6px;}
     #mainNav button{font-size:12.5px;padding:7px 10px;}
     .logo{min-width:0;overflow:hidden;}
-    /* TO-DO 26, RESUELTO (decisión de Guido, opción a): a 375px .header-right medía
-       480px contra 347px disponibles y desbordaba de costado (scrollWidth 494 contra
-       375, medido en el navegador) — el botón de club (hasta 210px) más moneda/
-       contacto/idioma no entraban en una sola fila. En vez de seguir achicando el
-       botón (la otra opción, que le sacaba el "Estás viendo"/"Cambiar"), se le da su
-       propia fila completa: `order` lo saca del flujo para que moneda+contacto+idioma
-       queden juntos arriba (su orden relativo en el HTML), y flex-basis:100% lo manda
-       a una fila propia abajo. Costo aceptado: el header sticky crece (138px → 181px,
-       ~22% de la pantalla en un iPhone), pero nada queda cortado ni fuera de pantalla. */
-    /* flex-basis:100%: sin esto header-right comparte la fila con .logo (que ya usa
-       ~184px de los 347px de contenido), así que le quedan ~155px — y el 100% de
-       cb-wrap de acá abajo es 100% de ESE ancho angosto, no de la página entera, que es
-       como el botón de club terminaba con el nombre cortado ("Cr…") en vez de en su
-       propia fila de ancho completo. Con flex-basis:100% header-right pasa a ser su
-       propia fila (mismo patrón que ya usa `nav` con width:100%, dos reglas más abajo),
-       y recién ahí el 100% de cb-wrap es el ancho real de la pantalla. */
-    .header-right{flex-basis:100%;flex-wrap:wrap;justify-content:flex-end;}
-    .cb-wrap{min-width:0;flex-basis:100%;order:99;display:flex;justify-content:flex-end;}
-    .club-btn{min-width:0;flex:1;max-width:none;}
   }
 
   /* EL HEADER EN EL TELÉFONO: UNA SOLA FILA (56px). Hasta acá eran tres o cuatro filas (logo; moneda, contacto e idioma; "Estás
@@ -124,7 +105,17 @@
      header. La moneda vive en el panel de Finanzas (en todos los anchos); el botón de club no se muestra (la lupa
      abre el mismo selector). En escritorio nada de esto existe: .m-acciones, .m-extra y .m-velo están escondidos y .nav-wrap
      no arma caja (display:contents), así que el nav sigue en la fila del header como siempre. */
-  .m-acciones,.m-extra,.m-velo{display:none;}
+  .m-extra,.m-velo,.m-menu-btn{display:none;}
+  /* "Estás viendo" sale del header en todos los anchos: el club se nombra en Finanzas, como título. El botón sigue en el DOM porque
+     js/selector.js le escribe el estado (aria-expanded, title). En su lugar, "Buscar un club o una liga". */
+  .cb-wrap{display:none;}
+  .m-acciones{display:flex;align-items:center;order:2;flex-shrink:0;}
+  .header-right{order:2;}
+  .m-btn{display:flex;align-items:center;gap:8px;height:36px;padding:0 12px;border-radius:8px;border:1px solid rgba(255,255,255,.35);
+    background:rgba(255,255,255,.08);color:#fff;font:inherit;font-size:13px;cursor:pointer;white-space:nowrap;}
+  .m-btn:hover{background:rgba(255,255,255,.16);}
+  .m-btn svg{width:16px;height:16px;}
+  .m-btn-k{font:inherit;font-size:11.5px;opacity:.7;}
   .nav-wrap{display:contents;}
   @media (max-width:700px){
     .header-inner{flex-wrap:nowrap;height:56px;padding:0 4px 0 16px;box-sizing:border-box;position:relative;}
@@ -132,8 +123,10 @@
     .logo > span:last-child{overflow:hidden;text-overflow:ellipsis;}
     .header-right{display:none;}
     .m-acciones{display:flex;align-items:center;flex-shrink:0;}
-    .m-btn{width:44px;height:44px;display:flex;align-items:center;justify-content:center;border:0;background:none;color:#fff;cursor:pointer;}
-    .m-menu-btn{height:44px;display:flex;align-items:center;gap:6px;padding:0 10px;border:0;border-radius:8px;
+    .m-btn{width:44px;height:44px;padding:0;justify-content:center;border:0;background:none;}
+    .m-btn svg{width:22px;height:22px;}
+    .m-btn-l,.m-btn-k{display:none;}
+    .m-menu-btn{display:flex;height:44px;display:flex;align-items:center;gap:6px;padding:0 10px;border:0;border-radius:8px;
       background:rgba(255,255,255,.1);color:#fff;font:inherit;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap;}
     .m-menu-btn .m-ico-cerrar{display:none;}
     header.menu-abierto .m-menu-btn{background:var(--oro);color:var(--azul-dark);}

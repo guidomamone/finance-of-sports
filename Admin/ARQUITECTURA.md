@@ -631,8 +631,7 @@ Texto movido sin cambios. Lo que se ve en cada pantalla está en `Admin/PANTALLA
 - FUENTES (Versión 126, revisada en la 127): cada número cita su documento. Al
   final de Finanzas hay una ficha con el documento del ejercicio que se está
   mirando (link incluido), su tipo y nivel de fuente, el tipo de cambio usado CON
-  su procedencia, y las salvedades; la pestaña Fuentes lista los documentos del
-  club seleccionado; y afuera del sitio hay una PÁGINA ESTÁTICA POR CLUB,
+  su procedencia, y las salvedades; y afuera del sitio hay una PÁGINA ESTÁTICA POR CLUB,
   `fuentes/<clubId>.html`, con los documentos de ESE club (link, tipo y nivel de
   fuente, qué ejercicios respalda, tipo de cambio con su procedencia y
   salvedades), más `fuentes.html`, que desde la Versión 162 es el ÍNDICE: una fila
