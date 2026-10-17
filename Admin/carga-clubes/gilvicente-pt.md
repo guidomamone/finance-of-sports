@@ -125,6 +125,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "Financiamentos obtidos" pág. 16 + "Financiamentos obtidos" pág. 16
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e depósitos bancários 186.924,33. Balance individual 30.06.25 (el consolidado, en otro .md, da 305.547,11). Total activo no verificado, pero la fila coincide con la tabla de gestión (línea 406).
+```
+
 ### Liga
 
 ```text
@@ -220,6 +224,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 27 + "Financiamentos obtidos" pág. 27
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e depósitos bancários 1.064.865,16 (balance consolidado 30.06.24). Este .md solo trae el balance CONSOLIDADO (primer año de consolidadas; la P&L que se cargó de él, ventas 16.801.252,67, también es consolidada aunque la carga diga 'individual'). El balance individual 2024 sólo aparece como comparativo en el .md 2024-25: 1.051.946,61 (línea 829, pág. 28). Decidir según el perímetro que se quiera para 2024.
 ```
 
 ### Liga
@@ -321,6 +329,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: año anterior): "Financiamentos obtidos" pág. 13 + "Financiamentos obtidos" pág. 13
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e depósitos bancários 67.203,73. Balance individual (modelo reducido) 30.06.23.
 ```
 
 ### Liga

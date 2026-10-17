@@ -351,7 +351,7 @@ const gilvicenteptFiscalYearMeta = {
       {label:'Imposto sobre o rendimento do período', value:-0.012678},
       {label:'Ativos por impostos diferidos', value:0.576519},
     ],
-    grossDebt:3.748228, cash:null,
+    grossDebt:3.748228, cash:0.186924,
     officialTotalRevenue:17.311297, officialTotalExpenses:19.476555, officialPAT:-2.410558,
   },
   2021: {
@@ -396,7 +396,7 @@ const gilvicenteptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.315843},
       {label:'Imposto sobre o rendimento do período', value:-0.026394},
     ],
-    grossDebt:8.380369, cash:null,
+    grossDebt:8.380369, cash:0.067204,
     officialTotalRevenue:14.525271, officialTotalExpenses:14.010087, officialPAT:0.210924,
   },
   2024: {
@@ -411,7 +411,7 @@ const gilvicenteptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.327416},
       {label:'Imposto sobre o rendimento do período', value:0.368962},
     ],
-    grossDebt:6.166957, cash:null,
+    grossDebt:6.166957, cash:1.064865,
     officialTotalRevenue:17.752438, officialTotalExpenses:17.153758, officialPAT:0.640286,
   },
 };
