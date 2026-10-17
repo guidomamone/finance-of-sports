@@ -99,6 +99,10 @@ Generados/Portugal/Famalicão/relatorio-contas-2024-25.categorias.json (escalón
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: documento anterior): "Financiamentos obtidos" pág. 25 + "Financiamentos obtidos" pág. 25; cash escalón 1 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 25
+```
+
 ### Liga
 
 ```text
@@ -161,6 +165,10 @@ Generados/Portugal/Famalicão/relatorio-contas-2023-24.categorias.json (escalón
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 26
+```
+
 ### Liga
 
 ```text
@@ -219,6 +227,10 @@ Generados/Portugal/Famalicão/relatorio-contas-2022-23.categorias.json (escalón
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 14 + "Financiamentos obtidos" pág. 14; cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 14
 ```
 
 ### Liga
@@ -282,6 +294,10 @@ Generados/Portugal/Famalicão/relatorio-contas-2021-22.categorias.json (escalón
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 17 + "Financiamentos obtidos" pág. 17; cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 17
+```
+
 ### Liga
 
 ```text
@@ -342,6 +358,10 @@ Generados/Portugal/Famalicão/relatorio-contas-2020-21.categorias.json (escalón
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 13
+```
+
 ### Liga
 
 ```text
@@ -396,6 +416,10 @@ Generados/Portugal/Famalicão/relatorio-contas-2019-20.categorias.json (escalón
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 13 + "Financiamentos obtidos" pág. 13; cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 13
+```
+
 ### Liga
 
 ```text
@@ -448,6 +472,10 @@ Generados/Portugal/Famalicão/relatorio-contas-2018-19.categorias.json (escalón
 ```text
 2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): cierre = 2019-06-30. periodo.mjs no encontró el cierre; confirmado contra el .md (revisión de altas de Portugal, subagente Sonnet y Claude)
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 13 + "Financiamentos obtidos" pág. 13; cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 13
 ```
 
 ### Liga

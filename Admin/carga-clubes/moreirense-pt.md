@@ -240,7 +240,11 @@ incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con ot
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Inventários" pág. 10 + "Clientes" pág. 10 + "Estado e outros entes públicos" pág. 10 + "Outros créditos a receber" pág. 10 + "Diferimentos" pág. 10 + "Caixa e depósitos bancários" pág. 10
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Inventários" pág. 10 + "Clientes" pág. 10 + "Estado e outros entes públicos" pág. 10 + "Outros créditos a receber" pág. 10 + "Diferimentos" pág. 10 + "Caixa e depósitos bancários" pág. 10 — CORREGIDO 2026-10-17: cash vaciado; esas filas suman el total del activo corriente, no la caja (to-do 260 c)
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 10
 ```
 
 ### Liga
@@ -312,7 +316,11 @@ incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con ot
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Inventários" pág. 9 + "Clientes" pág. 9 + "Estado e outros entes públicos" pág. 9 + "Outros créditos a receber" pág. 9 + "Diferimentos" pág. 9 + "Caixa e depósitos bancários" pág. 9
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Inventários" pág. 9 + "Clientes" pág. 9 + "Estado e outros entes públicos" pág. 9 + "Outros créditos a receber" pág. 9 + "Diferimentos" pág. 9 + "Caixa e depósitos bancários" pág. 9 — CORREGIDO 2026-10-17: cash vaciado; esas filas suman el total del activo corriente, no la caja (to-do 260 c)
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 9
 ```
 
 ### Liga

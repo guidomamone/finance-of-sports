@@ -285,7 +285,7 @@ PT (33)
   Chaves              2 ejercicios (2021/2022 a 2022/2023), balance, EUR, sin deuda/caja
   Estoril Praia       4 ejercicios (2021/2022 a 2024/2025), balance, EUR
   Estrela da Amadora  2 ejercicios (2021/2022 a 2022/2023), balance, EUR
-  Famalicão           7 ejercicios (2018/2019 a 2024/2025), balance, EUR, sin deuda/caja
+  Famalicão           7 ejercicios (2018/2019 a 2024/2025), balance, EUR
   Felgueiras          3 ejercicios (2021/2022 a 2023/2024), balance, EUR
   Gil Vicente         5 ejercicios (2020/2021 a 2024/2025), balance, EUR
   Leixoes             3 ejercicios (2022/2023 a 2024/2025), balance, EUR

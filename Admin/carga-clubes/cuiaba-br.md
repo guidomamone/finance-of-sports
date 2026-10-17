@@ -222,7 +222,11 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e Equivalentes de Caixa" pág. 6 + "Contas a receber" pág. 6 + "Impostos a recuperar" pág. 6 + "Adiantamentos" pág. 6
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e Equivalentes de Caixa" pág. 6 + "Contas a receber" pág. 6 + "Impostos a recuperar" pág. 6 + "Adiantamentos" pág. 6 — CORREGIDO 2026-10-17: cash vaciado; esas filas suman el total del activo corriente, no la caja (to-do 260 c)
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: año anterior): "Caixa e Equivalentes de Caixa" pág. 6
 ```
 
 ### Liga

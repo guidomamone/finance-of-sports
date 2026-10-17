@@ -316,7 +316,7 @@ const vitoriaguimaraesptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-1.639008},
       {label:'Imposto sobre o rendimento do período', value:-0.074767},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:18.946463, cash:0.077642,
     officialTotalRevenue:23.282994, officialTotalExpenses:35.075884, officialPAT:-13.729694,
   },
   2021: {
@@ -331,7 +331,7 @@ const vitoriaguimaraesptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.684768},
       {label:'Imposto sobre o rendimento do período', value:-0.061159},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:20.754132, cash:3.961128,
     officialTotalRevenue:27.891266, officialTotalExpenses:34.963534, officialPAT:-8.246496,
   },
 };

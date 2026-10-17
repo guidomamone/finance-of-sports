@@ -604,7 +604,7 @@ const goiasbrFiscalYearMeta = {
       {label:'Receitas financeiras', value:0.452506},
       {label:'Despesas financeiras', value:-1.287746},
     ],
-    grossDebt:2.740459, cash:5.176767,
+    grossDebt:2.740459, cash:null,
     officialTotalRevenue:20.242293, officialTotalExpenses:39.151513, officialPAT:-19.74446,
   },
   2012: {
@@ -645,7 +645,7 @@ const goiasbrFiscalYearMeta = {
       {label:'Receitas financeiras', value:0.181964},
       {label:'Despesas financeiras', value:-2.418567},
     ],
-    grossDebt:null, cash:7.505452,
+    grossDebt:null, cash:null,
     officialTotalRevenue:29.913572, officialTotalExpenses:47.005665, officialPAT:-19.328697,
   },
   2010: {

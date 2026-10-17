@@ -1197,7 +1197,7 @@ const sportingcpptFiscalYearMeta = {
       {label:'Impostos diferidos', value:null},
       {label:'Imposto sobre o rendimento', value:-0.116},
     ],
-    grossDebt:null, cash:17.972,
+    grossDebt:null, cash:0.064,
     officialTotalRevenue:46.382, officialTotalExpenses:87.495, officialPAT:-45.947,
   },
   2013: {
@@ -1283,7 +1283,7 @@ const sportingcpptFiscalYearMeta = {
       {label:'Resultados financeiros', value:-10.654},
       {label:'Imposto sobre o rendimento', value:-0.046},
     ],
-    grossDebt:158.467, cash:62.85,
+    grossDebt:158.467, cash:4.886,
     officialTotalRevenue:181.912, officialTotalExpenses:143.345, officialPAT:25.005,
   },
   2023: {
@@ -1297,7 +1297,7 @@ const sportingcpptFiscalYearMeta = {
       {label:'Resultados financeiros', value:-14.877},
       {label:'Imposto sobre o rendimento', value:-0.421},
     ],
-    grossDebt:null, cash:68.348,
+    grossDebt:null, cash:8.633,
     officialTotalRevenue:222.013, officialTotalExpenses:180.388, officialPAT:25.206,
   },
   2024: {
@@ -1355,7 +1355,7 @@ const sportingcpptFiscalYearMeta = {
       {label:'Resultados financeiros', value:-15.401},
       {label:'Imposto sobre o rendimento', value:0.705},
     ],
-    grossDebt:126.658, cash:65.911,
+    grossDebt:126.658, cash:15.416,
     officialTotalRevenue:175.474, officialTotalExpenses:148.254, officialPAT:12.521,
   },
   2002: {
@@ -1400,7 +1400,7 @@ const sportingcpptFiscalYearMeta = {
       {label:'Outros Juros e Proveitos Similares', value:0.51},
       {label:'Imposto sobre o Rendimento do Exercício', value:-0.014},
     ],
-    grossDebt:null, cash:3.668,
+    grossDebt:0.005, cash:3.668,
     officialTotalRevenue:33.565, officialTotalExpenses:40.542, officialPAT:-9.222,
   },
   2005: {
@@ -1415,7 +1415,7 @@ const sportingcpptFiscalYearMeta = {
       {label:'Juros e Custos Similares', value:-2.139},
       {label:'Imposto sobre o Rendimento do Exercício', value:0},
     ],
-    grossDebt:null, cash:68.311,
+    grossDebt:15, cash:68.311,
     officialTotalRevenue:99.77, officialTotalExpenses:42.589, officialPAT:54.67,
   },
   2006: {
@@ -1430,7 +1430,7 @@ const sportingcpptFiscalYearMeta = {
       {label:'Juros e Custos Similares', value:-1.905},
       {label:'Imposto sobre o Rendimento do Exercício', value:-0.012},
     ],
-    grossDebt:33, cash:null,
+    grossDebt:33, cash:9.325,
     officialTotalRevenue:39.543, officialTotalExpenses:35.935, officialPAT:0.313,
   },
   2007: {
@@ -1445,7 +1445,7 @@ const sportingcpptFiscalYearMeta = {
       {label:'Outros Juros e Proveitos Similares', value:0.173},
       {label:'Imposto sobre o Rendimento do Exercício', value:-0.015},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:33, cash:26.316,
     officialTotalRevenue:65.325, officialTotalExpenses:47.428, officialPAT:14.48,
   },
   2000: {
@@ -1464,7 +1464,7 @@ const sportingcpptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Prestações de Serviços', lado:'revenue', importe:3117.769, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:716.336,
+    grossDebt:900, cash:716.336,
     officialTotalRevenue:6776.635, officialTotalExpenses:8801.321, officialPAT:-2292.423,
   },
   2018: {
@@ -1508,7 +1508,7 @@ const sportingcpptFiscalYearMeta = {
       {label:'Resultados financeiros', value:-9.926},
       {label:'Imposto sobre o rendimento', value:1.466},
     ],
-    grossDebt:129.468, cash:48.214,
+    grossDebt:129.468, cash:9.642,
     officialTotalRevenue:100.211, officialTotalExpenses:124.706, officialPAT:-32.955,
   },
   2001: {

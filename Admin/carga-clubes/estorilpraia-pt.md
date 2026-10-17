@@ -105,7 +105,11 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Clientes" pág. 9 + "Dívidas de terceiros relativos a transferências de" pág. 9 + "Empresas do grupo e partes relacionadas" pág. 9 + "Estado e outros entes públicos" pág. 9 + "Outros créditos a receber" pág. 9 + "Diferimentos" pág. 9 + "Outros ativos financeiros" pág. 9 + "Caixa e depósitos bancários" pág. 9
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Clientes" pág. 9 + "Dívidas de terceiros relativos a transferências de" pág. 9 + "Empresas do grupo e partes relacionadas" pág. 9 + "Estado e outros entes públicos" pág. 9 + "Outros créditos a receber" pág. 9 + "Diferimentos" pág. 9 + "Outros ativos financeiros" pág. 9 + "Caixa e depósitos bancários" pág. 9 — CORREGIDO 2026-10-17: cash vaciado; esas filas suman el total del activo corriente, no la caja (to-do 260 c)
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 9
 ```
 
 ### Liga
@@ -178,7 +182,11 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Clientes" pág. 9 + "Dívidas de terceiros relativos a transferências de" pág. 9 + "Empresas do grupo e partes relacionadas" pág. 9 + "Estado e outros entes públicos" pág. 9 + "Outros créditos a receber" pág. 9 + "Diferimentos" pág. 9 + "Outros ativos financeiros" pág. 9 + "Caixa e depósitos bancários" pág. 9
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Clientes" pág. 9 + "Dívidas de terceiros relativos a transferências de" pág. 9 + "Empresas do grupo e partes relacionadas" pág. 9 + "Estado e outros entes públicos" pág. 9 + "Outros créditos a receber" pág. 9 + "Diferimentos" pág. 9 + "Outros ativos financeiros" pág. 9 + "Caixa e depósitos bancários" pág. 9 — CORREGIDO 2026-10-17: cash vaciado; esas filas suman el total del activo corriente, no la caja (to-do 260 c)
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: año anterior): "Caixa e depósitos bancários" pág. 9
 ```
 
 ### Liga

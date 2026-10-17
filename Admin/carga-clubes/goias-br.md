@@ -1026,7 +1026,7 @@ tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (n
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e equivalente de caixa" pág. 1 + "Títulos e valores mobiliários (nota 3)" pág. 1 + "Contas a receber de parceiros e patrocionadores (n" pág. 1 + "Contas a receber do Clube dos (nota 13)" pág. 1 + "Contas a receber (nota 5)" pág. 1 + "Direitos de uso de imagem (nota 6)" pág. 1 + "Tributos a recuperar" pág. 1 + "Outros valores a receber" pág. 1
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e equivalente de caixa" pág. 1 + "Títulos e valores mobiliários (nota 3)" pág. 1 + "Contas a receber de parceiros e patrocionadores (n" pág. 1 + "Contas a receber do Clube dos (nota 13)" pág. 1 + "Contas a receber (nota 5)" pág. 1 + "Direitos de uso de imagem (nota 6)" pág. 1 + "Tributos a recuperar" pág. 1 + "Outros valores a receber" pág. 1 — CORREGIDO 2026-10-17: cash vaciado; esas filas suman el total del activo corriente, no la caja (to-do 260 c)
 ```
 
 ### Liga
@@ -1095,7 +1095,7 @@ tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (n
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos e financiamentos (nota 8)" pág. 1 + "Empréstimos de terceiros" pág. 1; cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 1 + "Títulos e valores mobiliários (nota 3)" pág. 1 + "Contas a receber de parceiros e patrocinadores (no" pág. 1 + "Contas a receber do Clube dos (nota 13)" pág. 1 + "Contas a receber (nota 6)" pág. 1 + "Direitos de uso de imagem (nota 11)" pág. 1 + "Outros valores a receber" pág. 1
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos e financiamentos (nota 8)" pág. 1 + "Empréstimos de terceiros" pág. 1; cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 1 + "Títulos e valores mobiliários (nota 3)" pág. 1 + "Contas a receber de parceiros e patrocinadores (no" pág. 1 + "Contas a receber do Clube dos (nota 13)" pág. 1 + "Contas a receber (nota 6)" pág. 1 + "Direitos de uso de imagem (nota 11)" pág. 1 + "Outros valores a receber" pág. 1 — CORREGIDO 2026-10-17: cash vaciado; esas filas suman el total del activo corriente, no la caja (to-do 260 c)
 ```
 
 ### Liga

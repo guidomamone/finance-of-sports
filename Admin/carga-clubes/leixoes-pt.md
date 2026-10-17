@@ -181,7 +181,11 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Clientes" pág. 5 + "Estado e outros entes públicos" pág. 5 + "Outros créditos a receber" pág. 5 + "Diferimentos" pág. 5 + "Caixa e depósitos bancários" pág. 5
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Clientes" pág. 5 + "Estado e outros entes públicos" pág. 5 + "Outros créditos a receber" pág. 5 + "Diferimentos" pág. 5 + "Caixa e depósitos bancários" pág. 5 — CORREGIDO 2026-10-17: cash vaciado; esas filas suman el total del activo corriente, no la caja (to-do 260 c)
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 1b (compuerta: año anterior): "Caixa e depósitos bancários" pág. 5
 ```
 
 ### Liga

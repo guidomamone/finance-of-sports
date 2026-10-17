@@ -353,7 +353,11 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Clientes" pág. 92 + "Inventários" pág. 92 + "Estado e outros entes públicos" pág. 92 + "Outros devedores" pág. 92 + "Outros activos correntes" pág. 92 + "Caixa e equivalentes de caixa" pág. 92
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Clientes" pág. 92 + "Inventários" pág. 92 + "Estado e outros entes públicos" pág. 92 + "Outros devedores" pág. 92 + "Outros activos correntes" pág. 92 + "Caixa e equivalentes de caixa" pág. 92 — CORREGIDO 2026-10-17: cash vaciado; esas filas suman el total del activo corriente, no la caja (to-do 260 c)
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 92
 ```
 
 ### Liga
@@ -461,7 +465,11 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "Financiamentos obtidos" pág. 105 + "Financiamentos obtidos" pág. 105; cash escalón 1 (compuerta: documento siguiente): "Clientes" pág. 105 + "Inventários" pág. 105 + "Estado e outros entes públicos" pág. 105 + "Outros devedores" pág. 105 + "Outros activos correntes" pág. 105 + "Caixa e equivalentes de caixa" pág. 105
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "Financiamentos obtidos" pág. 105 + "Financiamentos obtidos" pág. 105; cash escalón 1 (compuerta: documento siguiente): "Clientes" pág. 105 + "Inventários" pág. 105 + "Estado e outros entes públicos" pág. 105 + "Outros devedores" pág. 105 + "Outros activos correntes" pág. 105 + "Caixa e equivalentes de caixa" pág. 105 — CORREGIDO 2026-10-17: cash vaciado; esas filas suman el total del activo corriente, no la caja (to-do 260 c)
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 105
 ```
 
 ### Liga
@@ -538,7 +546,11 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 87 + "Financiamentos obtidos" pág. 87; cash escalón 1 (compuerta: documento siguiente): "Clientes" pág. 87 + "Inventários" pág. 87 + "Estado e outros entes públicos" pág. 87 + "Outros devedores" pág. 87 + "Outros activos correntes" pág. 87 + "Caixa e equivalentes de caixa" pág. 87
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 87 + "Financiamentos obtidos" pág. 87; cash escalón 1 (compuerta: documento siguiente): "Clientes" pág. 87 + "Inventários" pág. 87 + "Estado e outros entes públicos" pág. 87 + "Outros devedores" pág. 87 + "Outros activos correntes" pág. 87 + "Caixa e equivalentes de caixa" pág. 87 — CORREGIDO 2026-10-17: cash vaciado; esas filas suman el total del activo corriente, no la caja (to-do 260 c)
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 87
 ```
 
 ### Liga
@@ -646,7 +658,11 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 97 + "Financiamentos obtidos" pág. 97; cash escalón 1 (compuerta: documento siguiente): "Clientes" pág. 97 + "Inventários" pág. 97 + "Estado e outros entes públicos" pág. 97 + "Outros devedores" pág. 97 + "Outros Activos correntes" pág. 97 + "Caixa e equivalentes de caixa" pág. 97
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 97 + "Financiamentos obtidos" pág. 97; cash escalón 1 (compuerta: documento siguiente): "Clientes" pág. 97 + "Inventários" pág. 97 + "Estado e outros entes públicos" pág. 97 + "Outros devedores" pág. 97 + "Outros Activos correntes" pág. 97 + "Caixa e equivalentes de caixa" pág. 97 — CORREGIDO 2026-10-17: cash vaciado; esas filas suman el total del activo corriente, no la caja (to-do 260 c)
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: año anterior): "Caixa e equivalentes de caixa" pág. 97
 ```
 
 ### Liga
@@ -1320,7 +1336,11 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Clientes" pág. 21 + "Caixa e equivalentes de caixa" pág. 21 + "Outros devedores" pág. 21 + "Outros ativos correntes" pág. 21
+tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Clientes" pág. 21 + "Caixa e equivalentes de caixa" pág. 21 + "Outros devedores" pág. 21 + "Outros ativos correntes" pág. 21 — CORREGIDO 2026-10-17: cash vaciado; esas filas suman el total del activo corriente, no la caja (to-do 260 c)
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: año anterior): "Caixa e equivalentes de caixa" pág. 21
 ```
 
 ### Liga
@@ -1519,6 +1539,14 @@ Generados/Portugal/Sporting CP/relatorio-contas-2006-07.categorias.json (escaló
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: año anterior): "Dívidas a Instituições de Crédito" pág. 18
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: año anterior): "Cash Flow: (RLE) + (Amortizações + Provisões)" pág. 19
+```
+
 ### Liga
 
 ```text
@@ -1587,6 +1615,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 2 (compuerta: documento siguiente): "Dívidas a Instituições de Crédito" pág. 17 + "Clientes c/Corrente" pág. 17
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: año anterior): "Cash Flow: (RLE) + (Amortizações + Provis)" pág. 18
+```
+
 ### Liga
 
 ```text
@@ -1649,6 +1681,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Cash Flow: (RLE) + (Amortizações + Provisões)" pág. 18
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: documento siguiente): "Dívidas a Instituições de Crédito" pág. 17
 ```
 
 ### Liga
@@ -1716,6 +1752,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Cash Flow: (RLE) + (Amortizações + Provisões)" pág. 15
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: año anterior): "Dívidas a Instituições de Crédito" pág. 14
 ```
 
 ### Liga
@@ -1968,6 +2008,10 @@ tools/dentro-de-otro.mjs (2026-10-16): posiblemente dentro de otro rubro, por pr
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Cash Flow: (RLE) + (Amortizações + Provisões)" pág. 2
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: documento siguiente): "Dívidas a Instituições de Crédito" pág. 1
 ```
 
 ### Liga

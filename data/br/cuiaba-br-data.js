@@ -160,7 +160,7 @@ const cuiababrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Custo com Futebol Profissional', lado:'expense', importe:98.846512, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:21.108242,
+    grossDebt:null, cash:12.840574,
     officialTotalRevenue:157.933413, officialTotalExpenses:119.971399, officialPAT:37.356016,
   },
 };

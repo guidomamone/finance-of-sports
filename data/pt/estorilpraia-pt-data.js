@@ -194,7 +194,7 @@ const estorilpraiaptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.458154},
       {label:'Imposto sobre o rendimento do período', value:-0.030609},
     ],
-    grossDebt:null, cash:4.846825,
+    grossDebt:null, cash:0.983221,
     officialTotalRevenue:8.36841, officialTotalExpenses:15.699586, officialPAT:-7.870416,
   },
   2022: {
@@ -236,7 +236,7 @@ const estorilpraiaptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.00792},
       {label:'Imposto sobre o rendimento do período', value:-0.029229},
     ],
-    grossDebt:null, cash:8.517811,
+    grossDebt:null, cash:0.318763,
     officialTotalRevenue:14.147357, officialTotalExpenses:13.924068, officialPAT:0.186141,
   },
 };
