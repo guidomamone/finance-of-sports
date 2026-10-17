@@ -861,22 +861,20 @@ Texto movido sin cambios.
   porque el sitio del club no responde (Ituano) y 1 que no salió de ninguna fuente
   externa (Boca, que usa el `--azul` histórico del sitio). Los escudos como IMAGEN siguen
   sin hacerse (derechos y hosting, el repo se deploya entero).
-- LA PORTADA ES UNA PREGUNTA Y UNA VIDRIERA (Versión 144, reescrita en la 184 con
-  el to-do 33). Inicio abre con dos opciones grandes: "quiero ver un club en
-  particular" (abre el selector y aterriza en Finanzas) o "quiero comparar dos
-  clubes o ligas" (va a la pestaña Comparar). ABAJO, LOS RANKINGS DE LIGA, hasta
-  10, uno por entrada de `data/destacados.js`: cada uno con su "N de M", su
-  gráfico, el aviso de cuánto no está desglosado y un "Ver la liga ›". HASTA LA
-  VERSIÓN 184 abajo iba el resumen del club activo (4 KPIs y 3 gráficos,
-  `#inicioClub`): se BORRÓ, por decisión de Guido — "en Inicio quedan las ligas
-  que dejamos predeterminadas como para mostrar de qué es capaz y qué tiene la
-  página, nada más". Dos de esos 3 gráficos encima duplicaban el `trendChart` de
-  Finanzas. Inicio se ve IGUAL haya club elegido o no. Sin club se ven Inicio,
-  Comparar, Ligas, Finanzas y Mi Cuenta; Fuentes aparece recién cuando hay uno. El
-  club queda en `localStorage` y las visitas siguientes entran derecho a él.
-  NINGÚN `data/<país>/<club>-data.js` SE CARGA EAGER, ni siquiera para la vidriera: los
-  rankings salen de `data/rankings/<liga>.js`, ~6,5 KB gzip por los 4 bloques de
-  hoy, contra ~150 KB que costaría calcularlos desde los archivos de club.
+- INICIO (mockup: artifact de Design "Pantallas FoS — Inicio"). Arriba, qué es el sitio (el conteo
+  "N clubes · N países · N ejercicios" sale de `data/club-index.js`) y el BUSCADOR como acción principal: tocarlo abre el selector con
+  lo tipeado (`CLUB_SELECTOR.open(q)`) y al elegir se cae en Finanzas; abajo del buscador, "Probá con" (el 1 del mundo, el 1 de América
+  y la primera liga destacada: salen de los rankings, no están escritos a mano) y "Comparar dos clubes o ligas". Después, las tarjetas
+  de ranking (`.vid-card`, `js/liga.js`, sin Chart.js): "Los que más facturan" (el mundo y América, top 10, de
+  `data/rankings/_regiones.js`) y "Quién factura más en cada liga" (top 5 de cada entrada de `data/destacados.js`, con "N de M" y la
+  pastilla de "sin desglosar" si pasa el 10%). Cada fila lleva a Finanzas de ese club. Al pie, tres reglas del dato.
+  LOS RANKINGS POR REGIÓN: los escribe `tools/generate-rankings.js` (lo corren `cargar.mjs` y `alta-club.mjs`; `audit.js` lo chequea
+  como P1), así que se actualizan con cada carga. Un solo ejercicio por ranking, nunca años mezclados (pedido de Guido): el de más
+  clubes, y a igual cantidad el más reciente; un presupuesto solo no entra. La tarjeta es el lenguaje visual de Inicio, Ligas y
+  Finanzas: blanco sobre `--bg`, borde fino, radio 14, barras horizontales con el punto del color de cada club (en el teléfono la
+  barra baja a una segunda línea). Inicio se ve IGUAL haya club elegido o no, y NINGÚN `data/<país>/<club>-data.js` se carga para
+  dibujarlo. Sin club se ven Inicio, Comparar, Ligas, Finanzas y Mi Cuenta; Fuentes aparece recién cuando hay uno. El club queda en
+  `localStorage` y las visitas siguientes entran derecho a él.
 - COMPARAR (Versión 148-154, pestaña `#vs`, no confundir con "Comparar Gestiones",
   que compara 2 presidencias del mismo club). **Dos cards, A y B, y cada uno es un
   LADO. Un lado es una SUMA DE BLOQUES**, y cada bloque tiene su propio agregador:

@@ -456,7 +456,7 @@ window.CLUB_SELECTOR = (function(){
   // LA ÚNICA FRONTERA ASYNC DEL SELECTOR: las filas de data/club-leagues/<iso2>.js se bajan acá, antes de dibujar, y no adentro de
   // los helpers (si devolvieran promesas habría que volver async cada render del modal). loadClubLeagues() cachea su promesa; si un
   // archivo de país falla, el modal abre igual, sin esas ligas.
-  function abrirModal(i, desde){
+  function abrirModal(i, desde, q){
     if(!inited) return;
     window.loadClubLeagues().then(function(){
       // El texto buscable incluye el nombre de las ligas de cada club, así que no
@@ -466,11 +466,11 @@ window.CLUB_SELECTOR = (function(){
       // Cada apertura arranca con el tope puesto: si alguien apretó "Mostrar más" en
       // una sesión anterior del modal, no tiene por qué arrastrarlo a la siguiente.
       verTodosResultados(false);
-      abrirModalYa(i, desde);
+      abrirModalYa(i, desde, q);
     });
   }
 
-  function abrirModalYa(i, desde){
+  function abrirModalYa(i, desde, q){
     hideCoach();
     origen = desde || 'finanzas';
     modalLado = i || 0;
@@ -502,12 +502,14 @@ window.CLUB_SELECTOR = (function(){
     $('clubBtn').setAttribute('aria-expanded', 'true');
     document.body.style.overflow = 'hidden';
     renderModal();
+    // El buscador de Inicio abre el modal con lo que ya se tipeó: se busca como si se hubiera escrito acá.
+    if(q){ $('modalQ').value = q; $('modalQ').dispatchEvent(new Event('input')); }
     setTimeout(function(){ $('modalQ').focus(); }, 30);
   }
 
-  // La firma que llama index.html: el botón de club del header y la bifurcación de
-  // Inicio abren el camino de Finanzas.
-  function open(){ abrirModal(0, 'finanzas'); }
+  // La firma que llama index.html: el botón de club del header y el buscador de Inicio abren el camino de Finanzas. `q`: el texto
+  // ya tipeado en el buscador de Inicio.
+  function open(q){ abrirModal(0, 'finanzas', q); }
 
   function close(){
     $('clubPanel').classList.remove('open');

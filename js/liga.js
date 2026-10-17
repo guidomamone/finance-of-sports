@@ -23,9 +23,9 @@ window.LIGA_VIEW = (function(){
   // El texto del buscador de "sumar un club": UI efímera, se resetea al navegar a otra liga o volver.
   var buscadorQ = '';
   function norm(s){ return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
-  // Instancias de Chart.js en DOS registros: este módulo dibuja la pestaña Ligas y la vidriera de Inicio, y repintar una no puede
-  // matar los gráficos de la otra. Cada pantalla destruye lo suyo antes de redibujar.
-  var instancias = { liga: [], dest: [] };
+  // Instancias de Chart.js por pantalla: cada una destruye lo suyo antes de redibujar. Hoy solo la pestaña Ligas dibuja gráficos
+  // (la vidriera de Inicio son tarjetas HTML).
+  var instancias = { liga: [] };
   function nueva(donde, chart){ instancias[donde].push(chart); return chart; }
   function matarCharts(donde){
     instancias[donde].forEach(function(c){ try { c.destroy(); } catch(e){} });
@@ -64,7 +64,7 @@ window.LIGA_VIEW = (function(){
   // El bolsón "sin desglosar por la fuente" se identifica por su etiqueta (la clave de los buckets en data/site-labels.js). Si se
   // renombra en js/finanzas-calc.js hay que renombrarlo acá: si no, el aviso deja de mostrarse sin romper nada.
   var LUMP_LABEL = 'Fútbol profesional (sin desglosar por la fuente)';
-  // El total de los cargados: una sola cuenta para grafico(), tabla(), salvedades() y bloqueDestacado().
+  // El total de los cargados: una sola cuenta para grafico(), tabla(), salvedades() y tarjetaLiga().
   function totalDe(r){
     return r.clubs.reduce(function(s, f){ return s + f.revenue; }, 0);
   }
@@ -567,8 +567,7 @@ window.LIGA_VIEW = (function(){
     return caja;
   }
 
-  // EL GRÁFICO: una serie con backgroundColor como array (cada barra en su color de marca). canvasId y year explícitos porque la
-  // usan la pestaña Ligas (un gráfico) y la vidriera de Inicio (hasta 10 vivos a la vez).
+  // EL GRÁFICO de la pestaña Ligas: una serie con backgroundColor como array (cada barra en su color de marca).
   function grafico(r, leagueId, year, canvasId, alto, donde, simulados){
     var caja = el('div', 'liga-chart-card');
     var head = el('div', 'liga-chart-head');
@@ -847,71 +846,193 @@ window.LIGA_VIEW = (function(){
   }
 
   // --------------------------------------------------------------------------
-  // LA VIDRIERA DE INICIO: hasta 10 pares (liga, ejercicio) curados a mano en data/destacados.js (lo que hace buena a una vidriera
-  // es editorial, no una regla automática). audit.js chequea que cada entrada tenga su ranking (destacado-sin-ranking). Baja un
-  // data/rankings/<liga>.js por bloque y ningún archivo de club.
+  // LA VIDRIERA DE INICIO. Dos bloques con la misma tarjeta (top N con barras horizontales en el color de cada club):
+  // - "Los que más facturan": el mundo y América, de data/rankings/_regiones.js. Lo genera tools/generate-rankings.js con todas las
+  //   ligas, un solo ejercicio por ranking (el de más clubes), así que se actualiza con cada carga.
+  // - "Quién factura más en cada liga": hasta 10 pares (liga, ejercicio) curados a mano en data/destacados.js (lo que hace buena a una
+  //   vidriera es editorial). audit.js chequea que cada entrada tenga su ranking (destacado-sin-ranking).
+  // Baja un data/rankings/<liga>.js por bloque y ningún archivo de club; no dibuja ningún Chart.js.
   // --------------------------------------------------------------------------
+  var TOP_LIGA = 5;
+  function loadRegiones(){
+    return window.RANKINGS_REGION ? Promise.resolve(true) : loadRanking('_regiones');
+  }
+  function fmtCard(v){ return 'US$ ' + Math.round(v).toLocaleString(document.documentElement.lang || 'es', { useGrouping:'always' }) + ' M'; }
+
   function renderDestacados(){
     var caja = $('vidriera');
     if(!caja) return Promise.resolve();
     var lista = (window.DESTACADOS || []).slice(0, 10);
-    matarCharts('dest');
     caja.innerHTML = '';
-    if(!lista.length) return Promise.resolve();
 
-    caja.appendChild(el('h2', 'vid-h', t('vid.title', 'Rankings de ingresos por liga')));
-    caja.appendChild(el('p', 'vid-sub', t('vid.sub',
-      'Lo que el sitio tiene cargado hoy, en USD y en Formato simplificado. Cada ranking es de un ejercicio: entrá a la liga para ver otro año.')));
-    var cuerpo = el('div', 'vid-cuerpo');
-    caja.appendChild(cuerpo);
+    var secReg = el('section', 'vid-sec');
+    var secLig = el('section', 'vid-sec');
+    caja.appendChild(secReg);
+    caja.appendChild(secLig);
 
-    // Los archivos en paralelo: son independientes.
-    return Promise.all(lista.map(function(d){ return loadRanking(d.league); })).then(function(){
-      lista.forEach(function(d, i){
+    var pReg = loadRegiones().then(function(){
+      var R = window.RANKINGS_REGION || {};
+      var cards = [['mundo', t('top.mundo', 'En el mundo')], ['america', t('top.america', 'En América')]]
+        .filter(function(x){ return R[x[0]] && R[x[0]].clubs.length; });
+      if(!cards.length) return;
+      secReg.appendChild(cabecera(t('top.title', 'Los que más facturan'),
+        t('top.sub', 'Ingresos en dólares de todos los clubes cargados, un solo ejercicio por ranking: el que tiene más clubes. Se actualiza con cada balance nuevo.')));
+      var grilla = el('div', 'vid-grilla');
+      cards.forEach(function(x){
+        var r = R[x[0]];
+        var resto = r.total - r.clubs.length;
+        grilla.appendChild(tarjeta({
+          titulo: x[1],
+          sub: t('liga.exercise', 'Ejercicio') + ' ' + r.year + ' · ' + r.total + ' ' + t('top.withBalance', 'clubes con balance'),
+          filas: r.clubs,
+          conPais: true,
+          pie: resto > 0 ? '+ ' + resto + ' ' + t('top.more', 'clubes más con balance') + ' ' + r.year : ''
+        }));
+      });
+      secReg.appendChild(grilla);
+    });
+
+    if(!lista.length) return pReg;
+    var pLig = Promise.all(lista.map(function(d){ return loadRanking(d.league); })).then(function(){
+      var head = cabecera(t('vid.title', 'Quién factura más en cada liga'),
+        t('vid.sub', 'Ingresos en dólares, un ejercicio por liga. Entrá a la liga para ver el ranking completo y otros años.'));
+      var todas = el('button', 'vid-link', t('vid.all', 'Todas las ligas') + ' →');
+      todas.type = 'button';
+      todas.addEventListener('click', function(){ api.goLiga(); });
+      head.appendChild(todas);
+      secLig.appendChild(head);
+      var grilla = el('div', 'vid-grilla');
+      lista.forEach(function(d){
         var r = rankingDe(d.league, d.year);
         // Un destacado sin ranking se saltea en silencio; el que avisa es audit.js.
-        if(!r) return;
-        cuerpo.appendChild(bloqueDestacado(d.league, d.year, r, i));
+        if(r) grilla.appendChild(tarjetaLiga(d.league, d.year, r));
       });
+      secLig.appendChild(grilla);
+    });
+    return Promise.all([pReg, pLig]).then(pintarAtajos);
+  }
+
+  // "Probá con" del buscador de Inicio: el 1 del mundo, el 1 de América y la primera liga destacada. Salen de los mismos rankings,
+  // así que cambian solos cuando cambia el dato.
+  function pintarAtajos(){
+    var caja = $('iniAtajos');
+    if(!caja) return;
+    caja.innerHTML = '';
+    var R = window.RANKINGS_REGION || {}, items = [];
+    ['mundo', 'america'].forEach(function(k){
+      var f = R[k] && R[k].clubs[0];
+      if(f && !items.some(function(x){ return x.id === f.id; })) items.push({ id: f.id });
+    });
+    var d = (window.DESTACADOS || [])[0];
+    if(d && rankingDe(d.league, d.year)) items.push({ league: d.league, year: d.year });
+    if(!items.length) return;
+    caja.appendChild(el('span', 'ini-atajos-l', t('ini.try', 'Probá con')));
+    items.forEach(function(x){
+      var b = el('button', 'ini-atajo');
+      b.type = 'button';
+      if(x.id){
+        var dot = el('span', 'vid-dot');
+        dot.style.background = clubDe(x.id).brandColor || 'var(--azul)';
+        b.appendChild(dot);
+        b.appendChild(document.createTextNode(nombreDe(x.id)));
+        b.addEventListener('click', function(){ irAlClub(x.id); });
+      } else {
+        b.textContent = ligaDe(x.league).name;
+        b.addEventListener('click', function(){ show(x.league, x.year).then(function(){ api.goLiga(); }); });
+      }
+      caja.appendChild(b);
     });
   }
 
-  function bloqueDestacado(leagueId, year, r, i){
-    var lg = ligaDe(leagueId), co = paisDe(leagueId);
-    var caja = el('div', 'vid-bloque');
+  function cabecera(titulo, sub){
+    var head = el('div', 'vid-head');
+    var txt = el('div');
+    txt.appendChild(el('h2', 'vid-h', titulo));
+    txt.appendChild(el('p', 'vid-sub', sub));
+    head.appendChild(txt);
+    return head;
+  }
 
-    var head = el('div', 'vid-b-head');
-    var h = el('h3', 'vid-b-h');
-    h.appendChild(el('span', 'liga-flag', co.flag || '🏆'));
-    h.appendChild(document.createTextNode(' ' + lg.name + ' · ' + t('liga.exercise', 'Ejercicio') + ' ' + year));
-    head.appendChild(h);
-    var ver = el('button', 'vid-b-ver', t('vid.see', 'Ver la liga') + ' ›');
-    ver.type = 'button';
-    ver.addEventListener('click', function(){
-      // `show()` deja la vista lista; navegar es del que sabe del nav.
-      show(leagueId, year).then(function(){ api.goLiga(); });
-    });
-    head.appendChild(ver);
-    caja.appendChild(head);
-
+  function tarjetaLiga(leagueId, year, r){
+    var lg = ligaDe(leagueId);
     // La misma regla de cobertura que la pestaña: "N de M" solo si leagueSizeAt() lo supo al generar el ranking.
-    caja.appendChild(el('p', 'vid-b-sub', r.leagueSize != null
-      ? r.clubs.length + ' ' + t('liga.of', 'de los') + ' ' + r.leagueSize + ' '
-        + t('liga.cover', 'clubes de esa temporada tienen ejercicio cargado.')
-      : nClubes(r.clubs.length) + ' ' + t('liga.coverN', 'con ejercicio cargado. No está verificado cuántos equipos jugaron esa temporada, así que el sitio no dice de cuántos son.')));
-
-    caja.appendChild(grafico(r, leagueId, year, 'vidChart' + i, 260, 'dest'));
-
-    // Una sola salvedad acá, la que cambia cómo se lee el gráfico (cuánto no está desglosado); el resto está en la pestaña de la liga.
+    var cob = r.leagueSize != null
+      ? r.clubs.length + ' ' + t('vid.of', 'de') + ' ' + r.leagueSize + ' ' + t('liga.clubN', 'clubes')
+      : nClubes(r.clubs.length) + ' ' + t('vid.loaded', 'cargados');
+    // Una sola salvedad acá, la que cambia cómo se lee el ranking (cuánto no está desglosado); el resto está en la pestaña de la liga.
     var tot = totalDe(r), lump = 0;
     r.clubs.forEach(function(f){
       f.mix.forEach(function(m){ if(m[0] === LUMP_LABEL) lump += m[1]; });
     });
-    if(tot && lump / tot > 0.10){
-      caja.appendChild(el('p', 'vid-b-aviso', '⚠ ' + Math.round((lump / tot) * 100) + '% '
-        + t('liga.cv.lump', 'del ingreso de este ranking no está desglosado por club: la fuente publica el total pero no de dónde sale.')));
+    var resto = r.clubs.length - TOP_LIGA;
+    return tarjeta({
+      pais: ligaDe(leagueId).country,
+      titulo: lg.name,
+      sub: t('liga.exercise', 'Ejercicio') + ' ' + year + ' · ' + cob,
+      filas: r.clubs.slice(0, TOP_LIGA),
+      pie: resto > 0 ? '+ ' + resto + ' ' + t('vid.more', 'clubes más en el ranking') : '',
+      aviso: (tot && lump / tot > 0.10)
+        ? Math.round((lump / tot) * 100) + '% ' + t('vid.lump', 'sin desglosar por rubro') : '',
+      ver: function(){
+        // `show()` deja la vista lista; navegar es del que sabe del nav.
+        show(leagueId, year).then(function(){ api.goLiga(); });
+      }
+    });
+  }
+
+  // La tarjeta de ranking: o = { titulo, sub, filas:[{id, revenue, league?}], pais?, conPais?, pie?, aviso?, ver? }.
+  function tarjeta(o){
+    var card = el('article', 'vid-card');
+    var head = el('div', 'vid-card-head');
+    var tit = el('div');
+    var h = el('h3', 'vid-card-h');
+    if(o.pais) h.appendChild(el('span', 'vid-chip', o.pais));
+    h.appendChild(document.createTextNode(o.titulo));
+    tit.appendChild(h);
+    tit.appendChild(el('div', 'vid-card-sub', o.sub));
+    head.appendChild(tit);
+    if(o.ver){
+      var ver = el('button', 'vid-link', t('vid.see', 'Ver la liga') + ' →');
+      ver.type = 'button';
+      ver.addEventListener('click', o.ver);
+      head.appendChild(ver);
     }
-    return caja;
+    card.appendChild(head);
+
+    var max = o.filas.length ? o.filas[0].revenue : 0;
+    var ol = el('ol', 'vid-filas');
+    o.filas.forEach(function(f, i){
+      var li = el('li');
+      var b = el('button', 'vid-fila');
+      b.type = 'button';
+      // El color de cada club, como el círculo del selector; sin color propio, el azul del sitio.
+      var color = clubDe(f.id).brandColor || 'var(--azul)';
+      b.appendChild(el('span', 'vid-pos', String(i + 1)));
+      var nom = el('span', 'vid-nom');
+      var dot = el('span', 'vid-dot'); dot.style.background = color;
+      nom.appendChild(dot);
+      nom.appendChild(el('span', 'vid-nom-t', nombreDe(f.id)));
+      if(o.conPais) nom.appendChild(el('span', 'vid-pais', clubDe(f.id).country || ''));
+      b.appendChild(nom);
+      var barra = el('span', 'vid-barra');
+      var lleno = el('span'); lleno.style.background = color;
+      lleno.style.width = max > 0 ? Math.max(2, Math.round(f.revenue / max * 100)) + '%' : '0';
+      barra.appendChild(lleno);
+      b.appendChild(barra);
+      b.appendChild(el('span', 'vid-val', fmtCard(f.revenue)));
+      b.addEventListener('click', function(){ irAlClub(f.id); });
+      li.appendChild(b);
+      ol.appendChild(li);
+    });
+    card.appendChild(ol);
+
+    if(o.pie || o.aviso){
+      var pie = el('div', 'vid-card-pie');
+      pie.appendChild(el('span', null, o.pie || ''));
+      if(o.aviso) pie.appendChild(el('span', 'vid-aviso', o.aviso));
+      card.appendChild(pie);
+    }
+    return card;
   }
 
   // --------------------------------------------------------------------------

@@ -106,7 +106,7 @@ function loadEngine() {
 
   return vm.runInContext(`({
     computeYearGeneric, toDisplayValue, yearMetaFor, simplifiedReportForClub,
-    clubs, LEAGUES,
+    clubs, LEAGUES, COUNTRIES, REGIONS,
     clubsOfLeagueYear, leagueYears, leagueSizeAt,
   })`, ctx, { filename: 'leer-globals' });
 }
@@ -250,6 +250,57 @@ function archivoDe(api, leagueId, porAnio) {
 }
 
 // ---------------------------------------------------------------------------
+// LOS RANKINGS POR REGIÓN DE INICIO (to-do 267): los que más facturan en el mundo y en América, sumando todas las ligas. Salen de los
+// rankings de liga ya calculados, así que no hay una cuenta nueva. Reglas: UN solo ejercicio por ranking, nunca años mezclados (pedido
+// de Guido); el ejercicio es el que tiene más clubes (la misma regla del default de la pestaña Ligas, porque los balances tardan en
+// publicarse), y a igual cantidad el más reciente; un presupuesto solo (`official_budget`) no entra, porque es una proyección y no lo
+// que el club facturó. Un club en dos ligas el mismo año (no pasa hoy) cuenta una vez. El archivo guarda el top y el total de clubes.
+// ---------------------------------------------------------------------------
+const REGIONES_INICIO = [
+  { id: 'mundo',   regiones: null },
+  { id: 'america', regiones: ['sudamerica', 'norteamerica'] },
+];
+const TOP_REGION = 10;
+
+function regionesDe(api, porLiga) {
+  const out = {};
+  for (const reg of REGIONES_INICIO) {
+    const porAnio = {};
+    for (const leagueId of Object.keys(porLiga)) {
+      const pais = api.COUNTRIES[api.LEAGUES[leagueId].country];
+      if (reg.regiones && !(pais && reg.regiones.includes(pais.region))) continue;
+      for (const [y, r] of Object.entries(porLiga[leagueId])) {
+        const m = porAnio[y] || (porAnio[y] = new Map());
+        for (const f of r.clubs) {
+          if (f.reportType === 'official_budget' || m.has(f.id)) continue;
+          m.set(f.id, { id: f.id, league: leagueId, revenue: f.revenue });
+        }
+      }
+    }
+    const anios = Object.keys(porAnio).map(Number);
+    if (!anios.length) continue;
+    const year = anios.sort((a, b) => (porAnio[b].size - porAnio[a].size) || (b - a))[0];
+    const filas = [...porAnio[year].values()].sort((a, b) => (b.revenue - a.revenue) || a.id.localeCompare(b.id));
+    out[reg.id] = { year, total: filas.length, clubs: filas.slice(0, TOP_REGION) };
+  }
+  return out;
+}
+
+function archivoRegiones(regiones) {
+  const L = [];
+  L.push('// GENERADO por tools/generate-rankings.js: no editar a mano (el formato, en regionesDe() del generador).');
+  L.push('window.RANKINGS_REGION = {');
+  for (const [id, r] of Object.entries(regiones)) {
+    L.push(`  ${id}: { year:${r.year}, total:${r.total}, clubs:[`);
+    r.clubs.forEach(f => L.push(`    { id:${JSON.stringify(f.id)}, league:${JSON.stringify(f.league)}, revenue:${f.revenue} },`));
+    L.push('  ] },');
+  }
+  L.push('};');
+  L.push('');
+  return L.join('\n');
+}
+
+// ---------------------------------------------------------------------------
 function main() {
   const check = process.argv.includes('--check');
   const print = process.argv.includes('--print');
@@ -292,18 +343,20 @@ function main() {
     fs.mkdirSync(OUT_DIR, { recursive: true });
   }
 
-  const esperados = new Set(Object.keys(porLiga).map(l => l + '.js'));
+  const archivos = Object.keys(porLiga).map(l => [l + '.js', () => archivoDe(api, l, porLiga[l])]);
+  archivos.push(['_regiones.js', () => archivoRegiones(regionesDe(api, porLiga))]);
+  const esperados = new Set(archivos.map(a => a[0]));
   const enDisco = fs.readdirSync(OUT_DIR).filter(f => f.endsWith('.js'));
   const desfasados = [];
 
-  for (const leagueId of Object.keys(porLiga)) {
-    const destino = path.join(OUT_DIR, leagueId + '.js');
-    const nuevo = archivoDe(api, leagueId, porLiga[leagueId]);
+  for (const [nombre, armar] of archivos) {
+    const destino = path.join(OUT_DIR, nombre);
+    const nuevo = armar();
     const viejo = fs.existsSync(destino) ? fs.readFileSync(destino, 'utf8') : null;
     if (viejo === nuevo) continue;
-    if (check) { desfasados.push('data/rankings/' + leagueId + '.js'); continue; }
+    if (check) { desfasados.push('data/rankings/' + nombre); continue; }
     fs.writeFileSync(destino, nuevo, 'utf8');
-    console.log((viejo === null ? 'nuevo    ' : 'actualiza') + '  data/rankings/' + leagueId + '.js');
+    console.log((viejo === null ? 'nuevo    ' : 'actualiza') + '  data/rankings/' + nombre);
   }
 
   // Una liga que dejó de tener clubes cargados tiene que perder su archivo: si
@@ -323,10 +376,10 @@ function main() {
         + '\nCorré: node tools/generate-rankings.js');
       process.exit(1);
     }
-    console.log('data/rankings/ al día (' + esperados.size + ' ligas).');
+    console.log('data/rankings/ al día (' + Object.keys(porLiga).length + ' ligas y los rankings por región).');
     return;
   }
-  console.log(`Listo: ${esperados.size} ligas.`);
+  console.log(`Listo: ${Object.keys(porLiga).length} ligas y los rankings por región.`);
 }
 
 main();

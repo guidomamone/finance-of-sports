@@ -176,7 +176,7 @@
     if(btn) btn.click();
     window.scrollTo(0, 0);
   }
-  // Lo prende la opción "quiero ver un club en particular" de la bifurcación de Inicio, y lo
+  // Lo prende el buscador de Inicio, y lo
   // apaga selectClub() al aterrizar. Un flag y no un parámetro de selectClub() porque entre
   // el click y la elección hay un panel entero de por medio.
   let irAFinanzasAlElegir = false;
@@ -324,13 +324,28 @@
 
   applyClubMode();
 
-  // ---------- LA BIFURCACIÓN DE INICIO ----------
-  // La primera opción abre el selector y al elegir cae en Finanzas; la segunda lleva a la pestaña Comparar.
-  document.getElementById('bifUno').addEventListener('click', () => {
+  // ---------- INICIO ----------
+  // El buscador es la puerta al selector: al tocarlo se abre el modal con lo que haya tipeado, y al elegir se cae en Finanzas.
+  // "Comparar" lleva a la pestaña Comparar. El conteo sale de data/club-index.js (solo clubes con un ejercicio real).
+  const iniQ = document.getElementById('iniQ');
+  const abrirDesdeInicio = () => {
+    const q = iniQ.value.trim();
+    iniQ.value = '';
+    iniQ.blur();
     irAFinanzasAlElegir = true;
-    CLUB_SELECTOR.open();
-  });
-  document.getElementById('bifDos').addEventListener('click', () => irASeccion('vs'));
+    CLUB_SELECTOR.open(q);
+  };
+  iniQ.addEventListener('focus', abrirDesdeInicio);
+  iniQ.addEventListener('input', abrirDesdeInicio);
+  document.getElementById('iniCmp').addEventListener('click', () => irASeccion('vs'));
+  function pintarConteoInicio(){
+    const idx = Object.values(window.CLUB_INDEX || {});
+    const paises = new Set(idx.map(c => c.c)).size;
+    const ejercicios = idx.reduce((a, c) => a + (c.y || 0), 0);
+    document.getElementById('iniConteo').textContent = idx.length + ' ' + I18N.t('ini.clubs', 'clubes') + ' · '
+      + paises + ' ' + I18N.t('ini.countries', 'países') + ' · ' + ejercicios + ' ' + I18N.t('ini.years', 'ejercicios');
+  }
+  pintarConteoInicio();
 
   document.getElementById('gestionSelect').addEventListener('change', refreshFinanzas);
   // El dropdown escribe en FIN_SEL (js/finanzas-render.js) y nadie más lo lee.
@@ -554,6 +569,7 @@
     renderFuentesClubCard();
     // La pestaña Ligas también arma todo su contenido en JS.
     LIGA_VIEW.refresh();
+    pintarConteoInicio();
   });
 
   I18N.init().then(renderLangMenu);

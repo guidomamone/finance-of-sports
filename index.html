@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title data-i18n="site.title">El deporte en Números | Datos para votar informado</title>
-<link rel="stylesheet" href="css/styles.css?v=1229">
+<link rel="stylesheet" href="css/styles.css?v=1233">
 <!-- Cloudflare Web Analytics -->
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3deae274c6f346eab1a19f78e41ac035"}'></script>
 <!-- End Cloudflare Web Analytics -->
@@ -94,30 +94,41 @@
 
   <!-- INICIO -->
   <section id="inicio" class="active">
-    <!-- INICIO = LA PREGUNTA: la portada hace UNA sola pregunta de dos opciones, y cada respuesta lleva a una pantalla que hace una
-         sola cosa. Los dos caminos los cablea js/principal.js. -->
-    <div class="bifurca" id="bifurca">
-      <h1 data-i18n="bif.title">¿Qué querés hacer?</h1>
-      <p class="bif-lead" data-i18n="bif.lead">Los dos caminos llegan a los mismos números, sacados del balance oficial de cada club. Cambia por dónde entrás.</p>
-      <div class="bif-grid">
-        <button type="button" class="bif-op" id="bifUno">
-          <span class="bif-ico" aria-hidden="true">&#128202;</span>
-          <span class="bif-t" data-i18n="bif.uno.t">Quiero ver un club en particular</span>
-          <span class="bif-s" data-i18n="bif.uno.s">Ingresos, gastos y deuda de un club, ejercicio por ejercicio, con la fuente de cada cifra.</span>
-          <span class="bif-cta" data-i18n="bif.uno.cta">Elegir el club &rsaquo;</span>
-        </button>
-        <button type="button" class="bif-op" id="bifDos">
-          <span class="bif-ico" aria-hidden="true">&#8644;</span>
-          <span class="bif-t" data-i18n="bif.dos.t">Quiero comparar dos clubes o ligas</span>
-          <span class="bif-s" data-i18n="bif.dos.s">Dos lados, uno contra el otro. Cada lado puede ser un club, una liga entera o un país.</span>
-          <span class="bif-cta" data-i18n="bif.dos.cta">Ir a Comparar &rsaquo;</span>
+    <!-- INICIO: arriba qué es el sitio y el buscador (la acción principal), con Comparar como segunda opción; abajo los rankings que
+         llena LIGA_VIEW.renderDestacados() (el mundo y América desde data/rankings/_regiones.js, y las ligas de data/destacados.js); al
+         pie, las tres reglas del dato. Lo cablea js/principal.js. -->
+    <div class="ini-hero">
+      <div class="ini-hero-txt">
+        <div class="ini-eyebrow" id="iniConteo"></div>
+        <h1 data-i18n="ini.title">Las cuentas de tu club, con el documento al lado.</h1>
+        <p class="ini-lead" data-i18n="ini.lead">Ingresos, gastos y deuda de cada club, sacados de sus balances oficiales y puestos en el mismo formato. Cada cifra dice de qué documento sale.</p>
+      </div>
+      <div class="ini-busca">
+        <label for="iniQ" class="ini-busca-l" data-i18n="ini.q">¿Qué club o liga querés ver?</label>
+        <div class="ini-busca-campo">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
+          <input id="iniQ" type="search" autocomplete="off" data-i18n-placeholder="ini.ph" placeholder="Boca, Real Madrid, LaLiga…">
+          <kbd class="ini-kbd">⌘K</kbd>
+        </div>
+        <div class="ini-atajos" id="iniAtajos"></div>
+        <button type="button" class="ini-cmp" id="iniCmp">
+          <span><span class="ini-cmp-t" data-i18n="ini.cmp.t">Comparar dos clubes o ligas</span>
+          <span class="ini-cmp-s" data-i18n="ini.cmp.s">Cada lado puede ser un club, una liga entera o una mezcla.</span></span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
         </button>
       </div>
     </div>
 
-    <!-- LA VIDRIERA: rankings de ligas elegidas a mano en data/destacados.js, para mostrar de qué es capaz la página al que llega por
-         primera vez. La llena LIGA_VIEW.renderDestacados(). -->
     <div class="vidriera" id="vidriera"></div>
+
+    <div class="ini-reglas">
+      <div><div class="ini-regla-t" data-i18n="ini.r1.t">Solo documentos oficiales</div>
+        <p data-i18n="ini.r1.s">Balances y presupuestos que publica cada club, y cada cifra con el link a su documento.</p></div>
+      <div><div class="ini-regla-t" data-i18n="ini.r2.t">El mismo formato para todos</div>
+        <p data-i18n="ini.r2.s">Cada balance se lleva a las mismas categorías, para poder comparar clubes de países distintos.</p></div>
+      <div><div class="ini-regla-t" data-i18n="ini.r3.t">Sin dato no es cero</div>
+        <p data-i18n-html="ini.r3.s">Si el documento no lo dice, el sitio muestra “—”. <a href="fuentes.html">Ver todas las fuentes</a></p></div>
+    </div>
   </section>
 
   <!-- COMPARAR: los dos cards son la única forma de comparar. Los indicadores, las reglas de comparabilidad y la composición de
@@ -663,40 +674,40 @@
 <!-- ASSET_V: versión de los assets propios, para invalidar el cache del navegador en cada deploy (si no, un visitante se queda
      con un js/*.js viejo mientras el HTML es nuevo). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o `data/`. Lo leen
      también los cargadores dinámicos (loadClubData, I18N.load, loadRanking). -->
-<script>window.ASSET_V = '1229';</script>
-<script src="data/lang/langs.js?v=1229"></script>
-<script src="js/i18n.js?v=1229"></script>
-<script src="data/clubs.js?v=1229"></script>
+<script>window.ASSET_V = '1233';</script>
+<script src="data/lang/langs.js?v=1233"></script>
+<script src="js/i18n.js?v=1233"></script>
+<script src="data/clubs.js?v=1233"></script>
 <!-- data/club-index.js: el índice liviano de TODOS los clubes (nombre, país, calidad del dato, ejercicios), GENERADO por
      tools/generate-club-index.js. Lo que hay que mostrar de un club ANTES de entrar a él vive adentro de data/<país>/<club>-data.js, que
      no se carga hasta que el visitante lo elige. -->
-<script src="data/club-index.js?v=1229"></script>
+<script src="data/club-index.js?v=1233"></script>
 <!-- data/leagues.js: el CATÁLOGO de la taxonomía del selector (deportes, regiones, países, ligas). NO tiene membresía: qué club
      jugó en qué liga es (club, ejercicio) y vive en data/club-leagues.js. Ver la cabecera de data/leagues.js ("no existe ninguna
      arista club → liga sin año"). -->
-<script src="data/leagues.js?v=1229"></script>
-<script src="data/club-leagues.js?v=1229"></script>
-<script src="data/category-map.js?v=1229"></script>
-<script src="data/site-labels.js?v=1229"></script>
-<script src="data/currency-map.js?v=1229"></script>
-<script src="data/sources-view.js?v=1229"></script>
+<script src="data/leagues.js?v=1233"></script>
+<script src="data/club-leagues.js?v=1233"></script>
+<script src="data/category-map.js?v=1233"></script>
+<script src="data/site-labels.js?v=1233"></script>
+<script src="data/currency-map.js?v=1233"></script>
+<script src="data/sources-view.js?v=1233"></script>
 <!-- Ningún data file de club se carga acá: el sitio abre en la portada sin club, y CUALQUIER club entra por loadClubData() cuando
      el visitante lo elige. -->
-<script src="js/info-tip.js?v=1229"></script>
-<script src="data/deflactores.js?v=1229"></script>
-<script src="js/finanzas-calc.js?v=1229"></script>
-<script src="js/finanzas-render.js?v=1229"></script>
-<script src="js/finanzas-anios.js?v=1229"></script>
-<script src="js/finanzas-multi.js?v=1229"></script>
+<script src="js/info-tip.js?v=1233"></script>
+<script src="data/deflactores.js?v=1233"></script>
+<script src="js/finanzas-calc.js?v=1233"></script>
+<script src="js/finanzas-render.js?v=1233"></script>
+<script src="js/finanzas-anios.js?v=1233"></script>
+<script src="js/finanzas-multi.js?v=1233"></script>
 <!-- js/selector.js: el selector de club. Se alimenta solo de clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja todos
      los clubes sin bajar un solo data/<país>/<club>-data.js. -->
-<script src="js/selector.js?v=1229"></script>
-<script src="data/destacados.js?v=1229"></script>
-<script src="js/liga.js?v=1229"></script>
+<script src="js/selector.js?v=1233"></script>
+<script src="data/destacados.js?v=1233"></script>
+<script src="js/liga.js?v=1233"></script>
 <!-- js/cuenta.js: login con Google vía Supabase + guardado automático de búsquedas. No sabe cómo se renderiza el resto del sitio:
      recibe `reopen` por CUENTA.init() y expone notifyStateChange() para que index.html avise cuando cambia el club/año. -->
-<script src="js/cuenta.js?v=1229"></script>
-<script src="js/principal.js?v=1229"></script>
+<script src="js/cuenta.js?v=1233"></script>
+<script src="js/principal.js?v=1233"></script>
 
 </body>
 </html>
