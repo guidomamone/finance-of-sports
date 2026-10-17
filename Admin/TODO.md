@@ -21,15 +21,67 @@ ni en el comentario de ningún archivo de código.
 
 ## Qué hay que hacer
 
-ORDEN (pedido de Guido, 2026-10-15), en este orden y sin saltear:
-1. Mejoras de script: 237 (primero aa, ab y e, que frenan años de Portugal: 165 b0; la q ya está) y los cambios sin commitear de 165 b2
-   (`lote.mjs`, `fetch-club-league-reference.mjs`), medidos antes de commitear.
-2. 238 (llevar a 0 los estados intermedios), que incluye lo transcripto por subagentes (165 b1: Estonia, Bélgica, Suiza, Beşiktaş,
-   Países Bajos y Colombia; falta limpiar lo que lista el (5), validarlos con pipeline.mjs --lista y cargarlos).
-3. Mejoras de proyecto: Guido tiene ideas, todavía sin contar; preguntarle cuando se llegue acá.
-Después: el resto de las altas de países nuevos (165 c) y las gestiones (195); al final el ahorro de API (232, 233, 230) y lo que
-espera una decisión de Guido (130, 183, 51). El panel Plan lleva además una lista "Otros to-dos abiertos" (número: descripción breve)
-con los que no están en los pasos de arriba.
+ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
+panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
+
+1. **Caja y deuda**: faltan las dos en 305 de 919 ejercicios con balance (Italia 99, Rusia 78, Brasil, Grecia, Portugal, Alemania 15, Japón 10).
+   - Lo que queda del to-do 260: escala chica (Porto), Benfica 2023-2026 y años viejos, los clubes en 0 (AVS, Boavista, Chaves, Mafra, Tondela) y los 7 clubes revertidos por escala.
+   - Después: Rusia (caja y deuda podrían salir sin IA de los códigos del balance del fisco).
+
+2. **Transcripciones por subagentes** (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia): limpiar lo que no es del club, los duplicados y los arreglos chicos; validarlas (unos US$ 0,10 cada 50) y cargarlas.
+
+3. **Mejoras de proyecto**: menos proceso y más distribución: que un hincha pueda compartir el link de su club con preview, que Google lo encuentre y que un periodista pueda citarlo; y dejar los datos listos (licencia, esquema, ids estables) por si algún día se cobra una API. Detalle en los to-dos 240 a 259.
+
+## Otros to-dos, en el orden más eficiente
+
+Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
+
+**A. Cerrar lo abierto (chico, ya en marcha)**
+* 260: caja y deuda, lo que queda (en curso)
+* 239: el lote saltea un documento por una propuesta vieja aunque tenga ajuste de año (arreglo chico, evita repetir lo de Sporting 2001)
+* 165 b2: medir y commitear el cambio de la liga de cada club (deja el árbol limpio para las sesiones en paralelo)
+
+**B. Bases baratas que después cuestan caro cambiar**
+* 251: worktrees para sesiones en paralelo (ya hay dos sesiones en la misma carpeta)
+* 250: hooks: auditoría antes del commit, skills, ASSET_V (vuelve automáticas reglas que hoy dependen de acordarse)
+* 244: licencia del dataset y de cada fuente (lo que alguien copie sin licencia no se recupera)
+* 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos)
+
+**C. Abaratar antes del onboarding grande**
+* 233: usar Jev (más barato) en otras etapas
+* 230: abaratar localizar y extraer
+* 232: mejoras de script que dejó Grecia
+(van antes de D: cada documento que se procese después sale más barato y con menos cola)
+
+**D. Onboarding grande**
+* 238: llevar a 0 los documentos que quedaron a mitad de camino
+* El punto 2 del plan (transcripciones por subagentes) y Reino Unido (lo transcribe la otra sesión)
+* 165 c: altas de los países nuevos que faltan
+* 195: gestiones (presidentes) sin fuente confirmada (se puede ir haciendo con cada país)
+
+**E. Distribución (depende de 246)**
+* 240: link dedicado, nivel 1 (el estado en la URL)
+* 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
+* 254 + 243: repaso mensual de métricas y lo que se busca sin resultado (eligen qué club sumar en D)
+* 242: para periodistas: CSV, cómo citar y metodología pública
+* 252: tarea semanal que busca ejercicios nuevos (los clubes publican entre septiembre y diciembre: cuanto antes, mejor)
+* 259: material de difusión (después de 241 y 242: el deck tiene que poder linkear)
+
+**F. Datos para afuera (cuando haya tiempo; nada urgente)**
+* 248: taxonomía genérica y subcategorías por deporte (antes del esquema; resuelve también 130 y 183)
+* 130 y 183: otros deportes, polideportivos e Italia fuera del fútbol (después de 248)
+* 245: datos como JSON con esquema
+* 247: registro público de correcciones (sobre 245)
+* 249: API en dominio propio (último; no construirla ahora)
+
+**G. Orden de la casa**
+* 255: consolidar las reglas repartidas (después de 250: lo chequeable ya pasó a hooks)
+* 256: CHANGELOG corto
+* 257: skills que faltan (después de 255)
+* 253: tablero del pipeline para el celular
+* 237 al: anexo UEFA para abrir las ventas (lo dejaste para después)
+* 51: proceso de mails a clubes
+* 258: índice partido por país o liga (cuando la skill de escala lo diga)
 
 165. ALTAS DE CLUBES NUEVOS FUERA DE ITALIA (decisión de Guido, 2026-10-07; estado al 2026-10-10). Un país por vez, con el pipeline
     (skill club-or-year-onboarding; club nuevo: revisión del alta en Admin/registros/altas-revision.jsonl: nombre, color, perímetro, cierres y ligas).

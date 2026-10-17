@@ -98,7 +98,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   contestarlos primero (subagentes por grupos de clubes, con un archivo de criterio común). El lote vuelve a verificar solo un documento
   con respuestas nuevas; aun así, antes de pasar el comando conviene el ensayo de `cargar.mjs --desde-verificacion` de cada documento,
   porque frenos de la carga (signo del resultado, filas del otro lado) no se ven en la verificación.
-- Portugal está cargado salvo Benfica 2014-15 (en HALLAZGOS; to-do 165 b0). Caja y deuda: de 919 años con balance, 306 no tienen ni caja ni deuda (Rusia entera, buena parte de Italia; mejoras pendientes y los 7 clubes revertidos por escala: to-do 260). Del to-do 237
+- Portugal está cargado salvo Benfica 2014-15 (en HALLAZGOS; to-do 165 b0). Caja y deuda: de 919 años con balance, 305 no tienen ni caja ni deuda (Rusia entera, buena parte de Italia; mejoras pendientes y los 7 clubes revertidos por escala: to-do 260). Del to-do 237
   queda solo `al` (Guido la dejó para después). Los años en escudos (PTE) se cargan en su moneda con la paridad fija al euro, como las liras.
   Un ejercicio de transición por cambio de cierre (11 meses que encadenan con el cierre anterior y el siguiente) se carga con nota pública.
 - `lote.mjs` saltea desde la etapa 3 los documentos cuyo año ya está en el sitio (salvo `--reintentar`): volver a correr una lista
@@ -106,7 +106,8 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   documento y no se pregunta (`cargar.mjs`); el perfil del club no se toca (Porto publica años del club y de la SAD).
 - Para enterarse de que terminó un lote sin mirar la terminal: el comando lleva al final
   `; osascript -e 'display notification "Terminó el lote" with title "finance-of-sports" sound name "Glass"'; say "lote terminado"`.
-- El plan para Guido (solo lo pendiente, corto) vive en el panel Plan de la app; el detalle, en `Admin/TODO.md`.
+- El plan para Guido (solo lo pendiente, corto) vive en el panel Plan de la app; su copia durable es el bloque ORDEN de `Admin/TODO.md`
+  (tandas A-G por dependencias), y el detalle, en los to-dos.
 - Club asociación o sociedad (SAD/SDUQ): se elige entidad solo cuando hay dos documentos del mismo ejercicio; el de la otra va a
   `documentos-descartados.txt`, y entonces `alta-club.mjs` y el lote dejan de verlo. Un documento único del club que no trae el fútbol (la
   SAD no consolida) no se carga. Regla en `Admin/CONVENCIONES-DATOS.md`.

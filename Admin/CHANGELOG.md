@@ -24,7 +24,7 @@ que dice `ESTADO.md` era verdad ese día.
   Yorkshire) y rugby (Bath, Harlequins, Leicester, Northampton).
 - La cola, los scripts y las instrucciones para seguir están en `Admin/transcripcion-subagentes/` (README.md); lo pendiente, en el to-do 261.
 
-## Versión 708 — to-do 237: las letras que faltan, una por commit (2026-10-16)
+## Versión 708 — to-do 237 terminado (salvo al), caja y deuda en todo el sitio salvo Rusia, Plan ordenado por dependencias (2026-10-16/17)
 
 - cargar.mjs y cola.mjs: un `aceptar` de otro año del club vale (y cierra casos) solo con la misma propuesta; si no, la fila va a la
   cola con su propuesta y la nota de lo aceptado (ad). Medido: 12 filas de 11 años ya publicados pasan a la cola; ninguna cambia sola.
@@ -79,6 +79,7 @@ que dice `ESTADO.md` era verdad ese día.
 - caja-deuda.mjs y vocabulario.mjs: títulos de sección del POC y "Dívidas a Instituições de Crédito" como deuda (TODO 260 f). Sporting
   2000-2008: deuda con ajustes `deuda` (el par de cada balance); 2006-07, transcripción corregida contra el PDF (pág. 18: "Dívidas a
   Instituições de Crédito 2 364", decía "Fornecedores, Conta Corrente 2 064").
+- TODO: bloque ORDEN reemplazado por el plan ordenado en tandas A-G según dependencias (to-dos 239-260 incluidos).
 - Lotes 86 y 87: Felgueiras 2021-22 y Benfica 2007-08 cargados; caja de Felgueiras 2022-2024. Listas 80, 86 y 87 al archivo.
 
 ## Versión 707 — Portugal cargado (salvo lo que espera scripts) y to-do 237 a medias: 14 letras resueltas y medidas (2026-10-16)
