@@ -774,7 +774,7 @@ function checkRutasMuertas() {
 }
 
 // --- D19: TODO LO GENERADO, AL DÍA (Versión 183) ---------------------------
-// El proyecto tiene 5 generadores (estos 4 tienen --check; el quinto es generate-como-corre-stats.js) y dependen de que alguien se acuerde de
+// El proyecto tiene 6 generadores (estos 5 tienen --check; el sexto es generate-como-corre-stats.js) y dependen de que alguien se acuerde de
 // correrlos. "Acordate" ya falló antes acá (ver `checkDeployInterno`), y esta
 // sesión encontró el caso más silencioso de todos: `generate-fuentes-page.js`
 // LEE `ASSET_V` de index.html y lo escribe en las 42 páginas de fuentes, así que
@@ -794,6 +794,7 @@ const GENERADORES = [
   ['generate-fuentes-page.js',  'fuentes.html y sus páginas de club', 'fuentes-desfasada'],
   ['generate-club-index.js',    'Admin/ESTADO-clubes.md (generado)',         'club-index-desfasado'],
   ['generate-fuentes-index.js', 'el índice de Admin/sourcing/README.md',    'fuentes-indice-desfasado'],
+  ['faltantes-liga.mjs',        'data/faltantes/ y Admin/sourcing/pendientes.md', 'faltantes-desfasado'], // to-do 266: cambia con cada carga y cada sourcing
 ];
 function checkGenerados() {
   for (const [script, que, code] of GENERADORES) {

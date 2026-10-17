@@ -28,7 +28,7 @@
 //   node tools/faltantes-liga.mjs --check    sale con 1 si alguna quedó vieja (no escribe)
 //   node tools/faltantes-liga.mjs --print    la medición: conteo por estado y por liga, y los nombres sin unir
 // ============================================================================
-import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, statSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync, statSync, unlinkSync } from 'node:fs';
 import { resolve, relative } from 'node:path';
 import vm from 'node:vm';
 import { todasLasCarpetas } from './carpetas-clubes.mjs';
@@ -257,6 +257,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   } else {
     mkdirSync(resolve(ROOT, 'data', 'faltantes'), { recursive: true });
     for (const [p, t] of Object.entries(files)) writeFileSync(resolve(ROOT, p), t);
+    // una liga que ya no tiene lista no deja su archivo viejo publicado
+    for (const f of readdirSync(resolve(ROOT, 'data', 'faltantes'))) if (!files[`data/faltantes/${f}`]) unlinkSync(resolve(ROOT, 'data', 'faltantes', f));
     console.log(`faltantes-liga: ${Object.keys(files).length} archivos escritos`);
   }
 }
