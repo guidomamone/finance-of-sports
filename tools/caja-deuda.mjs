@@ -468,11 +468,23 @@ export function aprender(filas, valorSitio, factor, { max = 3, filtro = () => tr
   return null;
 }
 // Las familias que usa el club: las del primer precedente (el año cargado más cercano) que se puede aprender.
+// (to-do 260 a y b, aprobado por Guido el 2026-10-17) PRECEDENTE CONTRADICHO: aprender() encuentra a veces filas que suman lo cargado por
+// casualidad, y la compuerta no lo ataja (el documento vecino tiene las mismas filas y "confirma"). Por eso las familias aprendidas se
+// prueban en los OTROS precedentes del club (las mismas filas de propuestaPrecedente, con el par corriente + no corriente): si en alguno
+// dan lo cargado, sirven; si en todos los que tienen esas filas dan otra cosa, se descarta y se prueba el precedente siguiente; sin otro
+// año donde probarlas, como antes. Caso: Porto 2019, caja 7.392.033 = "Responsabilidades por benefícios pós-emprego" + "Resultado líquido
+// do exercício" (en 2016-2018 esas filas dan 51,6 / 35,6 / 31,3 M contra 7,4 / 14,7 / 29,0 M cargados); proponía la caja de 2022 y 2023.
+// Benfica 2022, deuda = "Ativos tangíveis" + "Fornecimentos e serviços externos"; proponía la deuda de 2023, 2025 y 2026.
+function contradicho(familias, p, precedentes, cual) {
+  const da = (q) => { const pr = propuestaPrecedente(q.filas, { familias, anio: p.anio }, cual); return pr ? pr.filas.reduce((s, f) => s + f.valor, 0) * q.factor : null; };
+  const probados = precedentes.filter((q) => q !== p && q.valor && q.factor).map((q) => ({ q, v: da(q) })).filter((x) => x.v != null);
+  return probados.length > 0 && !probados.some(({ q, v }) => Math.abs(v - q.valor) <= TOL(q.valor));
+}
 export function familiasDelClub(precedentes, cual) {
   for (const p of precedentes) {
     if (!p.valor) continue;
     const familias = aprender(p.filas, p.valor, p.factor, { max: cual === 'cash' ? 2 : 3, filtro: filtroDe(cual) });
-    if (familias) return { familias, anio: p.anio };
+    if (familias && !contradicho(familias, p, precedentes, cual)) return { familias, anio: p.anio };
   }
   return null;
 }

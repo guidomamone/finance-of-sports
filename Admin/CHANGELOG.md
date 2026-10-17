@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 710 — caja-deuda.mjs: precedente contradicho (2026-10-17)
+
+- caja-deuda.mjs: las familias que aprende el escalón 0 se prueban en los otros años cargados del club; si todos los que las tienen dan
+  otra cosa, son una casualidad y no se usan (to-do 260 a y b). Medido: --medir deuda 136 -> 142 iguales y 14 -> 9 distintos, caja 354 ->
+  356 iguales y 8 -> 5 distintos, ningún distinto nuevo; en el ensayo de Portugal dejan de proponerse la deuda de Benfica 2023, 2025 y
+  2026 (activos tangibles + FSE) y la caja de Porto 2022 y 2023 (pensiones + resultado); fuera de Portugal, ensayo idéntico. Bahia 2025
+  (sin otro año donde probar) a HALLAZGOS.
+
 ## Versión 709 — Reino Unido: 93 transcripciones por subagentes (2026-10-16)
 
 - 93 PDFs de Inglaterra y Escocia transcriptos a .md por subagentes de Claude: Tesseract (`ocr.sh`) más revisión de las páginas clave

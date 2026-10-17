@@ -144,6 +144,11 @@ Del to-do 237 (diagnóstico por subagentes Sonnet, 2026-10-16):
   2007 "caja" de una fila del Cash Flow. Restringida a deuda del escalón 1, no ganaba ningún caso: el que la motivó (AVS 2024) era otra
   cosa, una celda de notas "3;8;9;21;" leída como importe (to-do 260 d). Retomar: si aparecen casos de deuda de escalón 1 que cambian de
   nombre entre años y no los resuelve otra mejora.
+- Caja y deuda, precedente por casualidad sin otro año donde probarlo (to-do 260 a y b, 2026-10-17): el precedente contradicho descarta
+  las filas que suman por casualidad cuando otro año cargado las desmiente, pero Bahia 2024 (deuda = "Despesas tributárias" +
+  "Intangível" + "Outros ativos") no tiene otro año con esas filas y en `--medir` sigue proponiendo 790,7 M para 2025 (cargado 36,8 M).
+  Sin daño hoy: 2025 está cargado y `--club` no pisa un valor. Retomar: si un año vacío de un club con un solo año cargado recibe una
+  propuesta del escalón 0 con filas que no son caja ni deuda.
 - Etiquetado `perimetro` de las dudas de localizar y extraer: la IA lo usa para preguntas de inventarios, imparidad o notas que difieren
   del estado (Rio Ave, Famalicão, Santa Clara, Torreense). Sin daño (se contestan igual). Retomar: si una regla empieza a contestar
   dudas por su tema.

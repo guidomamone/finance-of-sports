@@ -739,7 +739,10 @@ Escribir: `--club <id> --ejecutar --escribir` (el valor en `data/`, sin comentar
  AJUSTE MANUAL `caja` / `deuda` del año (Versiones 419 y 495): el número tal cual impreso, gana sobre la escalera y NO pasa por la
             compuerta (es una decisión de Guido)
  ESCALÓN 0  precedente del club (las familias que suman lo cargado en el año más cercano); en deuda, si la familia está partida en no
-            corriente + corriente en este documento, el par (to-do 260 d; Rio Ave 2024-2025)
+            corriente + corriente en este documento, el par (to-do 260 d; Rio Ave 2024-2025). Las familias aprendidas se prueban en
+            los otros años cargados del club: si en todos los que las tienen dan otra cosa, son una casualidad y se prueba el precedente
+            siguiente; sin otro año donde probarlas, como antes (to-do 260 a y b; Porto 2019 caja = pensiones + resultado del ejercicio,
+            Benfica 2022 deuda = activos tangibles + FSE)
  ESCALÓN 1  diccionario (vocabulario.mjs; en portugués también "Caixa e depósitos bancários", el rubro del SNC) + términos del club o
             del documento (ajuste `deuda-incluye`); jerarquía de balancete: padre e
             hija no se suman; cuenta D no es deuda. Además propone: deuda corriente + no corriente de la misma etiqueta (exactamente
