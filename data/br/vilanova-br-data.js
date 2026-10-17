@@ -223,7 +223,7 @@ const vilanovabrFiscalYearMeta = {
       {label:'Despesas financeiras', value:-4.804},
       {label:'Receitas financeiras', value:1.263},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:94.946, cash:0.016,
     officialTotalRevenue:43.34, officialTotalExpenses:55.491, officialPAT:-2.842,
   },
   2015: {
@@ -294,7 +294,7 @@ const vilanovabrFiscalYearMeta = {
       {label:'(-) DESPESA FINANCEIRA', value:-0.657771},
       {label:'RECEITAS FINANCEIRAS', value:6.62989},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:67.059933, cash:0.340353,
     officialTotalRevenue:22.60414, officialTotalExpenses:30.371805, officialPAT:-1.795546,
   },
   2022: {
@@ -308,7 +308,7 @@ const vilanovabrFiscalYearMeta = {
       {label:'(-) DESPESA FINANCEIRA', value:-4.429115},
       {label:'RECEITAS FINANCEIRA', value:0.532816},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:78.489087, cash:0.741401,
     officialTotalRevenue:36.799031, officialTotalExpenses:30.788196, officialPAT:2.114536,
   },
   2023: {
@@ -322,7 +322,7 @@ const vilanovabrFiscalYearMeta = {
       {label:'(-) DESPESAS FINANCEIRAS', value:-4.019144},
       {label:'RECEITAS FINANCEIRAS', value:3.834567},
     ],
-    grossDebt:null, cash:0.395459,
+    grossDebt:86.833975, cash:0.395459,
     officialTotalRevenue:29.345546, officialTotalExpenses:33.621615, officialPAT:-4.460647,
   },
   2024: {
@@ -336,7 +336,7 @@ const vilanovabrFiscalYearMeta = {
       {label:'(-) DESPESAS FINANCEIRAS', value:-14.367129},
       {label:'RECEITAS FINANCEIRAS', value:0.705773},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:93.498102, cash:0.496737,
     officialTotalRevenue:54.214008, officialTotalExpenses:45.922491, officialPAT:-5.369839,
   },
   2014: {

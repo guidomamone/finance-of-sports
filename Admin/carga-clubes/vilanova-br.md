@@ -141,6 +141,10 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e financiamentos nota 7: 3.959 (CP 1.688 + LP 2.271) + Débitos com conselheiros (mútuos, nota 11) 90.565 + Débitos com terceiros 422 = 94.946 (R$ mil). Duda: en 2025 los mútuos de conselheiros están en 'Outras contas a pagar' (no en Empréstimos e financiamentos); la nota dice que son contratos de mútuo con interés 0,5% mensual, por eso se cuentan. 'Débitos com terceiros' 422 equivale a 'Empréstimos de terceiros' del 2024. Sin ellos: 3.959.000. Cifras en R$ mil, redondeadas. (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 2025 = 16 (en miles de reales) => 16.000. Balance en R$ mil (imprime 16; 2024 reexpresado 312). El valor exacto en unidades no está impreso; es redondeo a miles. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -181,6 +185,10 @@ tools/cargar.mjs (2026-10-10)
 ```text
 2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2024-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae la fecha de la firma (2025-04-30); el ejercicio del documento cierra el 2024-12-31
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e financiamentos CP 1.050.133,48 + LP 92.447.968,07 = total nota 12: 93.498.101,55 (Sicoob 1.719.825,48 + otros 89.601,40 + conselheiros 90.734.714,62 + terceros 953.960,05). Excluido 'Contrato de empréstimos de atletas' 5.000.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 2024 = 496.736,69 (2023: 395.459,24). Duda menor: el balance 2025 reexpresa el cierre 2024 a 312 mil; se usa lo impreso en el documento de 2024.
 ```
 
 ### Liga
@@ -244,6 +252,10 @@ tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e Equivalentes de Caixa" pág. 3
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e Financiamentos CP 1.828.646,99 + LP 85.005.328,33 = total nota 26: 86.833.975,32 (instituciones financieras 4.879.365,99 + otros 89.601,40 + conselheiros 81.436.209,62 + terceros 428.798,31). Excluido 'Contrato de Empréstimos de Atletas' 255.000.
+```
+
 ### Liga
 
 ```text
@@ -301,6 +313,10 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e Financiamentos CP 656.442,30 + LP 77.832.644,21 (nota 27: bancarios 433.631,41 + otros 105.225,40 + conselheiros 75.566.275,77 + terceros 1.727.511,63). Excluido 'Contrato de Empréstimos de Atletas' 225.000. El CP de 656.442,30 no figura en la nota 27 (esa suma solo el LP).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e Equivalentes de Caixa – sem restrição 2022 = 741.400,73 (Caixa + Bancos, nota 4). Excluye Aplicação financeira red. Prefixados (726,00), que va en fila aparte.
+```
+
 ### Liga
 
 ```text
@@ -343,6 +359,10 @@ tools/cargar.mjs (2026-10-10)
 ```text
 2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2021-12-31. Onboarding to-do 165 (Claude, 2026-10-09): el .md nuevo (Mistral) no tenía período para periodo.mjs; el DRE cierra el 31/12/2021
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e Financiamentos CP 50.834,82 + LP 67.009.098,65 (nota 27: bancarios 303.547,33 + otros 105.225,40 + conselheiros 64.938.778,71 + terceros 1.661.547,21). Los préstamos de conselheiros (64,9 M) son la mayor parte. Excluido 'Contrato de Empréstimos de Atletas' 1.256.177,65 (cesión de atletas, no deuda financiera). El CP de 50.834,82 no figura en la nota 27 (esa suma solo el LP).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e Equivalentes de Caixa 2021 = 340.352,59 (2020: 78.188,58). Coincide con el saldo final del fluxo de caixa. Excluye 'Bloqueio judicial' 2.174.333,24.
 ```
 
 ### Liga
