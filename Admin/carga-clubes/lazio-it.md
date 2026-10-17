@@ -98,6 +98,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti finanziari (no corrientes) 37.203.423 + Debiti finanziari (corrientes) 91.036.058. Consolidado. Incluye leasing IFRS 16 (0,55 M corriente + 1,73 M no corriente); sin fila propia. Sin leasing serían 126,0 M.
+```
+
 ### Liga
 
 ```text
@@ -147,6 +151,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti finanziari (no corrientes) 7.751.456 + Debiti finanziari (corrientes) 64.606.243. Consolidado. Incluye leasing IFRS 16 (0,58 M corriente + 1,28 M no corriente); sin fila propia. Sin leasing serían 70,50 M.
 ```
 
 ### Liga
@@ -200,6 +208,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti finanziari (no corrientes) 12.333.696 + Debiti finanziari (corrientes) 40.875.329. Consolidado. Incluye leasing IFRS 16 (0,44 M corriente + 1,67 M no corriente); sin fila propia. Sin leasing serían 51,10 M.
+```
+
 ### Liga
 
 ```text
@@ -251,6 +263,10 @@ tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti finanziari (no corrientes) 23.118.916 + Debiti finanziari (corrientes) 37.556.352. Consolidado. Incluye leasing IFRS 16 (0,45 M corriente + 2,16 M no corriente); sin fila propia. Sin leasing serían 58,07 M.
+```
+
 ## 2022
 
 ### Ingresos
@@ -293,6 +309,10 @@ tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti finanziari (no corrientes) 44.392.484 + Debiti finanziari (corrientes) 15.434.696. Consolidado. Incluye leasing IFRS 16 (0,34 M corriente + 1,44 M no corriente) y la parte corriente 1,09 M de mutuo; sin fila propia. Sin leasing serían 58,05 M.
 ```
 
 ### Liga
@@ -372,6 +392,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti finanziari-altri finanziatori non correnti 12.671.536 + Debiti finanziari correnti 717.619 + Debiti verso altri finanziatori 25.812.290. Consolidado. Incluye leasing IFRS 16 dentro de las filas (0,35 M corriente + 1,62 M no corriente según la tabla PFN); sin fila propia en el balance.
+```
+
 ### Liga
 
 ```text
@@ -448,6 +472,10 @@ tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros)
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti finanziari-altri finanziatori non correnti 24.583.618 + Debiti finanziari correnti 0 + Debiti verso altri finanziatori 36.534.631. Consolidado. Cuadra con la tabla IAS 7 (61.118 miles). Incluye pasivos IFRS 16 (adopción 1/7/2019, ~2,1 M al inicio) dentro de esas filas, sin fila propia; no se pueden separar sin las notas. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -620,6 +648,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros)
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti finanziari-altri finanziatori non correnti 22.990.178 + Debiti finanziari correnti 141 + Debiti verso altri finanziatori 27.467.810. Consolidado. Cuadra con PFN: 27,47 + 22,99 M. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -710,6 +742,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros)
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti finanziari non correnti 31.582.990 + Debiti finanziari correnti 8.777.546 + Debiti verso altri finanziatori 6.400.141. Consolidado. Cuadra con PFN: 15,18 + 31,58 M. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -760,6 +796,10 @@ tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti finanziari non correnti 6.612.101 + Debiti finanziari correnti 8.853.264 + Debiti verso altri finanziatori 15.001.028. Consolidado. Cuadra con PFN: 23,85 + 6,61 M.
 ```
 
 ### Liga
@@ -844,6 +884,10 @@ tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros)
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti finanziari non correnti 7.152.188 + Debiti finanziari correnti 2.051.982 + Debiti verso altri finanziatori 11.693.515. Consolidado, sin correlacionadas. Cuadra con PFN: 13,74 + 7,15 M. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -896,6 +940,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti finanziari non correnti 7.387.712 + Debiti finanziari correnti 0 + Debiti verso altri finanziatori 13.429.224 + parti correlate 0. Consolidado. Cuadra con PFN: 13,43 + 7,39 M.
 ```
 
 ### Liga
@@ -1073,6 +1121,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros)
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti finanziari non correnti 0 + Debiti finanziari correnti 0 + Debiti verso altri finanziatori 9.537.298 + parti correlate (collegate) 650.000. Consolidado. Cuadra con PFN: 10.187 miles. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -1153,6 +1205,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros)
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti finanziari correnti 102 + Debiti verso altri finanziatori 13.283.670 + Debiti finanziari correnti verso parti correlate (collegate) 650.000. Consolidado (el primer balance del .md, pág. 25-26, es el separado). Sin deuda no corriente. Cuadra con PFN: 13.934 miles. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -1319,6 +1375,10 @@ tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros)
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti finanziari non correnti 0 + Debiti finanziari correnti 1.226.399 + Debiti verso altri finanziatori 10.691.736. Cuadra con 'I. Debiti finanziari correnti' de la PFN (11.918 miles). (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -1481,6 +1541,10 @@ tools/cargar.mjs (2026-10-07)
 
 ```text
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti finanziari non correnti 0 + Debiti finanziari correnti 3.551.152 + Debiti verso altri finanziatori (41.1) 654.530. Consolidado. Verso settore specifico, previdenza y comerciales excluidos.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Disponibilità liquide e mezzi equivalenti 3.316.854 (depositi 3.185.650 + assegni 101.125 + cassa 30.079). Balance consolidado PARTE II, 30/06/2007.
 ```
 
 ### Liga
@@ -1711,6 +1775,10 @@ tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): cash escalón 1b (compuerta: documento siguiente): "Totale disponibilità liquide" pág. 38
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti verso banche entro l'anno 20.716.041 + Debiti verso altri finanziatori 48.695.156 (incluye debiti postergati ex Gruppo Cirio 38.479.000). El .md no trae consolidado (la sociedad declara que no lo redactó, línea 1297); individual. Posición financiera de la relazione: 38,48 M LP + 31,00 M CP = 69,48 M (incluye 0,06 de correlacionadas).
+```
+
 ### Liga
 
 ```text
@@ -1777,6 +1845,10 @@ tools/cargar.mjs (2026-10-08)
 2001: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): moneda = ITL. Guido 2026-10-08: dejarlo en liras; el documento reporta en millones de liras (ejercicio anterior a 2002) y el sitio lo carga en ITL con su tipo de cambio de cierre (paridad fija 1.936,27 por el EUR/USD del BCE)
 2001: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): perimetro = individual. Claude 2026-10-08 (Guido: liras de Lazio): el documento solo trae el bilancio d'esercizio de la S.S. Lazio S.p.A. (la revisión es del bilancio d'esercizio; no hay consolidado en el .md): individual, aunque el club se carga consolidado desde 2006
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti verso banche 89.688.799.328 + Debiti verso altri finanziatori 190.070.485.012. Tabla en lire. Verso consociate 69.877.082 y collegate 176.200.570 excluidos.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Totale disponibilità liquide 988.251.670 (depositi 621.071.174 + cassa 367.180.496). Tabla en lire; la misma hoja en euro da 510.389 miles.
 ```
 
 ### Liga
@@ -1852,6 +1924,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Totale disponibilità liquide" del balance en liras (individual); el script leía la tabla de conversión a euros
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti verso banche entro l'anno 185.408.526.980 + Debiti verso altri finanziatori 197.656.449.687. Individual en lire, 30/06/2000 (primer columna). Verso consociate 22.014.464.575 excluido (Lazio Finance).
+```
+
 ### Liga
 
 ```text
@@ -1916,6 +1992,10 @@ tools/cargar.mjs (2026-10-08)
 1999: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): moneda = ITL. Guido 2026-10-08: dejarlo en liras; el documento reporta en millones de liras (ejercicio anterior a 2002) y el sitio lo carga en ITL con su tipo de cambio de cierre (paridad fija 1.936,27 por el EUR/USD del BCE)
 1999: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): perimetro = individual. Claude 2026-10-08 (Guido: liras de Lazio): el documento solo trae el bilancio d'esercizio de la S.S. Lazio S.p.A. (la revisión es del bilancio d'esercizio; no hay consolidado en el .md): individual, aunque el club se carga consolidado desde 2006
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Verso banche entro l'anno 113.085.688.116 + oltre l'anno 0 + Debiti verso altri finanziatori 9.434.655.978. Se excluye 'Verso società consociate' 37.454.080.662 (Lazio Finance, cesión de abonos) por el criterio de consociate; si se lo considerara financiero la deuda sería 159.974.424.756.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Totale disponibilità liquide 11.725.696.826 (depositi 11.691.457.921 + cassa 34.238.905). Bilancio individuale en lire, 30/06/1999.
 ```
 
 ### Liga

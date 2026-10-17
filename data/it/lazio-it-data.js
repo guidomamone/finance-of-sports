@@ -1023,7 +1023,7 @@ const lazioitFiscalYearMeta = {
       {label:'b) imposte differite', value:-30.339423},
       {label:'c) imposte anticipate', value:19.888386},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:4.205682, cash:3.316854,
     officialTotalRevenue:76.271331, officialTotalExpenses:59.227417, officialPAT:1.467481,
   },
   2009: {
@@ -1044,7 +1044,7 @@ const lazioitFiscalYearMeta = {
       {label:'b) imposte differite', value:6.71712},
       {label:'c) imposte anticipate', value:-12.133934},
     ],
-    grossDebt:null, cash:5.724069,
+    grossDebt:11.918135, cash:5.724069,
     officialTotalRevenue:92.001361, officialTotalExpenses:67.784949, officialPAT:12.050984,
   },
   2010: {
@@ -1084,7 +1084,7 @@ const lazioitFiscalYearMeta = {
       {label:'b) imposte differite', value:0.096755},
       {label:'c) imposte anticipate', value:3.273258},
     ],
-    grossDebt:null, cash:11.327566,
+    grossDebt:61.118249, cash:11.327566,
     officialTotalRevenue:122.932468, officialTotalExpenses:136.935784, officialPAT:-15.876263,
   },
   2023: {
@@ -1100,7 +1100,7 @@ const lazioitFiscalYearMeta = {
       {label:'Imposte correnti', value:-3.019757},
       {label:'Imposte differite e anticipate', value:-0.27384},
     ],
-    grossDebt:null, cash:12.478285,
+    grossDebt:60.675268, cash:12.478285,
     officialTotalRevenue:153.316053, officialTotalExpenses:176.066496, officialPAT:-29.541144,
   },
   2022: {
@@ -1116,7 +1116,7 @@ const lazioitFiscalYearMeta = {
       {label:'Imposte correnti', value:-3.738451},
       {label:'Imposte differite e anticipate', value:-0.376866},
     ],
-    grossDebt:null, cash:13.783337,
+    grossDebt:59.82718, cash:13.783337,
     officialTotalRevenue:161.134819, officialTotalExpenses:173.008561, officialPAT:-17.419657,
   },
   2015: {
@@ -1136,7 +1136,7 @@ const lazioitFiscalYearMeta = {
       {label:'imposte differite (b)', value:0.17271},
       {label:'imposte anticipate (c)', value:0.760602},
     ],
-    grossDebt:null, cash:2.940539,
+    grossDebt:20.897685, cash:2.940539,
     officialTotalRevenue:110.927383, officialTotalExpenses:99.366952, officialPAT:5.812193,
   },
   2025: {
@@ -1152,7 +1152,7 @@ const lazioitFiscalYearMeta = {
       {label:'Imposte correnti', value:-1.029179},
       {label:'Imposte differite e anticipate', value:4.846836},
     ],
-    grossDebt:null, cash:6.057272,
+    grossDebt:72.357699, cash:6.057272,
     officialTotalRevenue:157.532523, officialTotalExpenses:174.009018, officialPAT:-17.16448,
   },
   2018: {
@@ -1169,7 +1169,7 @@ const lazioitFiscalYearMeta = {
       {label:'Imposte correnti', value:-4.54685},
       {label:'Imposte differite e anticipate', value:1.53961},
     ],
-    grossDebt:null, cash:4.131819,
+    grossDebt:50.458129, cash:4.131819,
     officialTotalRevenue:192.943084, officialTotalExpenses:150.213474, officialPAT:37.306639,
   },
   2019: {
@@ -1204,7 +1204,7 @@ const lazioitFiscalYearMeta = {
       {label:'Imposte correnti', value:-8.066049},
       {label:'Imposte differite e anticipate', value:5.836799},
     ],
-    grossDebt:null, cash:15.091641,
+    grossDebt:53.209025, cash:15.091641,
     officialTotalRevenue:236.40521, officialTotalExpenses:192.167877, officialPAT:38.495467,
   },
   2013: {
@@ -1256,7 +1256,7 @@ const lazioitFiscalYearMeta = {
       {label:'b) imposte differite', value:0.255648},
       {label:'c) imposte anticipate', value:9.043235},
     ],
-    grossDebt:null, cash:10.159614,
+    grossDebt:10.187298, cash:10.159614,
     officialTotalRevenue:95.509291, officialTotalExpenses:95.610284, officialPAT:4.221554,
   },
   2017: {
@@ -1271,7 +1271,7 @@ const lazioitFiscalYearMeta = {
       {label:'Imposte correnti', value:-2.732462},
       {label:'Imposte differite e anticipate', value:1.598621},
     ],
-    grossDebt:null, cash:3.027958,
+    grossDebt:46.760677, cash:3.027958,
     officialTotalRevenue:129.061368, officialTotalExpenses:114.099514, officialPAT:11.377545,
   },
   2026: {
@@ -1287,7 +1287,7 @@ const lazioitFiscalYearMeta = {
       {label:'Imposte correnti', value:-3.178096},
       {label:'Imposte differite e anticipate', value:12.327031},
     ],
-    grossDebt:null, cash:1.839627,
+    grossDebt:128.239481, cash:1.839627,
     officialTotalRevenue:173.739234, officialTotalExpenses:187.375711, officialPAT:-10.043242,
   },
   1999: {
@@ -1305,7 +1305,7 @@ const lazioitFiscalYearMeta = {
       {label:'e) Verso terzi', value:-11359.084651},
       {label:'22 - IMPOSTE SUL REDDITO D\'ESERCIZIO', value:-1975.818},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:122520.344094, cash:11725.696826,
     officialTotalRevenue:249135.846781, officialTotalExpenses:228020.323269, officialPAT:2580.570202,
   },
   2000: {
@@ -1326,7 +1326,7 @@ const lazioitFiscalYearMeta = {
       {label:'a) imposte correnti', value:-4663.733},
       {label:'b) imposte differite', value:-4676.824},
     ],
-    grossDebt:null, cash:148248.073498,
+    grossDebt:383064.976667, cash:148248.073498,
     officialTotalRevenue:343364.726633, officialTotalExpenses:310191.029543, officialPAT:363.384789,
   },
   2001: {
@@ -1349,7 +1349,7 @@ const lazioitFiscalYearMeta = {
       {label:'a) imposte correnti', value:-2345.117},
       {label:'b) imposte differite', value:36293.479},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:279759.28434, cash:988.25167,
     officialTotalRevenue:334514.107739, officialTotalExpenses:418268.180256, officialPAT:-77909.271566,
   },
   2014: {
@@ -1364,7 +1364,7 @@ const lazioitFiscalYearMeta = {
       {label:'Imposte correnti', value:-2.060898},
       {label:'Imposte differite e anticipate', value:0.300414},
     ],
-    grossDebt:null, cash:3.958477,
+    grossDebt:20.816936, cash:3.958477,
     officialTotalRevenue:107.509172, officialTotalExpenses:96.495143, officialPAT:7.06819,
   },
   2021: {
@@ -1383,7 +1383,7 @@ const lazioitFiscalYearMeta = {
       {label:'b) imposte differite', value:1.403053},
       {label:'c) imposte anticipate', value:7.127023},
     ],
-    grossDebt:null, cash:13.891881,
+    grossDebt:39.201445, cash:13.891881,
     officialTotalRevenue:169.824724, officialTotalExpenses:196.30497, officialPAT:-24.212931,
   },
   2011: {
@@ -1404,7 +1404,7 @@ const lazioitFiscalYearMeta = {
       {label:'b) imposte differite', value:7.236889},
       {label:'c) imposte anticipate', value:-12.515913},
     ],
-    grossDebt:null, cash:4.92426,
+    grossDebt:13.933772, cash:4.92426,
     officialTotalRevenue:93.670373, officialTotalExpenses:71.532292, officialPAT:9.982408,
   },
   2005: {
@@ -1468,7 +1468,7 @@ const lazioitFiscalYearMeta = {
       {label:'b) imposte differite', value:0},
       {label:'c) imposte anticipate', value:0.006353},
     ],
-    grossDebt:null, cash:10.525327,
+    grossDebt:69.411197, cash:10.525327,
     officialTotalRevenue:136.383225, officialTotalExpenses:206.062676, officialPAT:-86.254108,
   },
   2016: {
@@ -1483,7 +1483,7 @@ const lazioitFiscalYearMeta = {
       {label:'Imposte correnti', value:-1.979115},
       {label:'Imposte differite e anticipate', value:0.705905},
     ],
-    grossDebt:null, cash:3.621951,
+    grossDebt:30.466393, cash:3.621951,
     officialTotalRevenue:93.820508, officialTotalExpenses:103.306031, officialPAT:-12.625154,
   },
 };
