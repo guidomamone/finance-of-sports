@@ -394,7 +394,7 @@ const bolognaitFiscalYearMeta = {
       {label:'imposte relative a esercizi precedenti', value:0.094384},
       {label:'imposte differite e anticipate', value:-0.001424},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:17.648509, cash:2.790809,
     officialTotalRevenue:72.37475, officialTotalExpenses:108.652452, officialPAT:-39.518065,
   },
   2021: {
@@ -412,7 +412,7 @@ const bolognaitFiscalYearMeta = {
       {label:'imposte relative a esercizi precedenti', value:0.09405},
       {label:'imposte differite e anticipate', value:-0.001424},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:27.840347, cash:12.056249,
     officialTotalRevenue:81.660776, officialTotalExpenses:110.421144, officialPAT:-30.84623,
   },
   2022: {
@@ -430,7 +430,7 @@ const bolognaitFiscalYearMeta = {
       {label:'imposte relative a esercizi precedenti', value:0.050676},
       {label:'imposte differite e anticipate', value:-0.001424},
     ],
-    grossDebt:null, cash:14.322901,
+    grossDebt:33.777668, cash:14.322901,
     officialTotalRevenue:80.372336, officialTotalExpenses:124.159915, officialPAT:-46.694143,
   },
   2019: {
@@ -449,7 +449,7 @@ const bolognaitFiscalYearMeta = {
       {label:'imposte relative a esercizi precedenti', value:0.116973},
       {label:'imposte differite e anticipate', value:0.005014},
     ],
-    grossDebt:null, cash:1.685155,
+    grossDebt:25.581528, cash:1.685155,
     officialTotalRevenue:85.663149, officialTotalExpenses:105.289753, officialPAT:-21.716119,
   },
   2018: {
@@ -467,7 +467,7 @@ const bolognaitFiscalYearMeta = {
       {label:'imposte relative a esercizi precedenti', value:0.239179},
       {label:'imposte differite e anticipate', value:-0.001423},
     ],
-    grossDebt:null, cash:0.493338,
+    grossDebt:18.985492, cash:0.493338,
     officialTotalRevenue:92.814994, officialTotalExpenses:94.133068, officialPAT:-4.818634,
   },
   2023: {
@@ -486,7 +486,7 @@ const bolognaitFiscalYearMeta = {
       {label:'imposte relative a esercizi precedenti', value:0.029466},
       {label:'imposte differite e anticipate', value:-0.001424},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:39.826029, cash:14.457636,
     officialTotalRevenue:117.323312, officialTotalExpenses:130.289666, officialPAT:-16.316537,
   },
   2024: {
@@ -507,7 +507,7 @@ const bolognaitFiscalYearMeta = {
       {label:'imposte relative a esercizi precedenti', value:0.036827},
       {label:'proventi (oneri) da adesione al regime di consolidato fiscale / trasparenza fiscale', value:null},
     ],
-    grossDebt:null, cash:18.103022,
+    grossDebt:38.074624, cash:18.103022,
     officialTotalRevenue:127.803452, officialTotalExpenses:134.608309, officialPAT:-10.408567,
   },
   2025: {
@@ -527,7 +527,7 @@ const bolognaitFiscalYearMeta = {
       {label:'imposte correnti', value:-5.668098},
       {label:'imposte relative a esercizi precedenti', value:0.062072},
     ],
-    grossDebt:null, cash:8.52226,
+    grossDebt:28.590606, cash:8.52226,
     officialTotalRevenue:224.160681, officialTotalExpenses:201.592693, officialPAT:13.95404,
   },
 };
