@@ -209,6 +209,17 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 tools/cargar.mjs (2026-10-16): pt-liga3, verificado contra roster cacheado de "2021–22 Liga 3 (Portugal)" (tools/club-league-reference/pt.json), coincidencia exacta "Felgueiras".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-17.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+João Reinaldo da Cunha Teixeira (2021-07-12 a hoy): Empresario del calzado (Reinaldo Teixeira). Record (30/6/2021, https://www.record.pt/futebol/futebol-nacional/liga-3/detalhe/reinaldo-teixeira-em-vias-de-adquirir-os-51-da-mnm-na-sad-do-felgueiras) da el trato por cerrado: compra el 51% de MNM (Meira, Mendes, Assis), con su 29% llega al 80% de la SAD (el club conserva 20%), y Leonel Costa, presidente de la SAD y de la dirección, se va tras un mandato de tres años. Felgueiras Magazine (12/7/2021) lo describe ya como accionista mayoritario, con conducción del plantel. No se halló la fecha exacta de la toma de posesión: se usa 2021-07-12, la del artículo (día aproximado; todos los cierres cargados son 11 meses o más posteriores). Balances: Fecho-de-contas-SAD-2021-2022.md:1652 lo lista como Presidente del conselho de administração (14.200 acciones, 28,5% del capital, línea 1662); Fecho-contas-2022-2023.md:279 firma el informe de gestión como Presidente do Conselho de Administração; Demonstracoes-Financeiras-Individuais-Epoca-2023-2024.md:1797 lo firma como Presidente (y 1701 lo ubica como Presidente del conselho). El sitio de la SAD (https://fcfsad.pt/sad/) lo lista hoy como Presidente y Administrador Ejecutivo.
+Duda: Fecha exacta de asunción de Teixeira como presidente de la SAD en 2021: ninguna fuente la da (Record 30/6/2021 dice trato cerrado, formalización en los días siguientes; Felgueiras Magazine 12/7/2021 ya lo trata como dueño). Se usó 2021-07-12; no afecta a los cierres cargados.
+Duda: Un blog del club (11/7/2017) dice que Teixeira ya presidía la SAD en 2017 y era elegido presidente de la dirección del club; Record 2021 dice que Leonel Costa presidía SAD y dirección en 2018 a 2021. Gestión previa a los cierres cargados, no se carga.
+Duda: Fecho-contas-2022-2023.md contiene texto de un informe de gestión mal copiado (habla de 2016 y 31/12/2023, capital 50.000); la firma de Teixeira como presidente es legible igual.
+```
+
 ## Fuentes
 
 ### felgueiras-pt-demonstracoes-financeiras-individuais-epoca-2023-2024

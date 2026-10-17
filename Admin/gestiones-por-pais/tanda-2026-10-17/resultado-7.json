@@ -1,0 +1,16 @@
+{
+  "criterioPais": { "PT": "Se cargó el presidente del conselho de administração de la SAD que firma el balance (Mariano Maroto Lopez): el dueño es una sociedad (HOBRA GmbH & Co. KG, 90%) y el club, 10%, así que no hay una persona dueña con nombre; se aplica la regla de PT de cargar al presidente que firma." },
+  "clubes": { "academicoviseu-pt": {
+    "gestiones": [
+      { "nombre": "Mariano Maroto Lopez", "corto": "Maroto Lopez", "cargo": "Presidente", "desde": "2021-09-09", "hasta": null,
+        "fuente": "https://www.jornaldocentro.pt/mariano-lopez-e-agora-quem-manda-na-sad-do-academico-de-viseu/", "confirmada": true }
+    ],
+    "notas": {
+      "Mariano Maroto Lopez": "Gerente (managing director) de HOBRA GmbH & Co. KG, que compró la mayoría de la SAD en agosto de 2021 (Observador, 13/8/2021: 51%, hoy 90%). El Jornal do Centro (artículo con fecha 09.09.21) dice que pasa a ser también presidente de la SAD; no da la fecha exacta de asunción, por eso `desde` usa la fecha de ese artículo (dentro de lo que cuenta: antes del primer cierre cargado, 30/6/2022, y el artículo de Observador del 13/8/2021 todavía mostraba a António Albino como presidente del club, que siguió de vocal del consejo en representación del club, 49% entonces). Sigue en el cargo: la página oficial del club (academicodeviseu.pt/sad.php) lo lista como Presidente do Conselho de Administração, y abola (13/5/2025) informa que dejó la presidencia del CLUB (asumida en junio de 2023) para dedicarse a la SAD. Los cuatro relatórios dicen lo mismo en el artículo 447 CSC: 'o Presidente do Conselho de Administração (Mariano Maroto Lopez) é gerente da Sociedade-mãe HOBRA' (wf-src-RC21_22.md:88, firmado 29/10/2022 (línea 119); wf-2022-2023-b797bc64.md:130, firmado 23/10/2023 (línea 166); wf-2023-2024-02d5741e.md:254, firmado 29/10/2024 (línea 272); wf-2024-2025-efe7ad0a.md:162, firmado 24/10/2025 (línea 180)). No hubo cambio de gestión entre ningún cierre y su aprobación."
+    },
+    "cubre": { "2022-06-30": "Mariano Maroto Lopez", "2023-06-30": "Mariano Maroto Lopez", "2024-06-30": "Mariano Maroto Lopez", "2025-06-30": "Mariano Maroto Lopez" },
+    "dudas": [
+      "Fecha exacta de asunción de Maroto Lopez como presidente de la SAD: la prensa no la da (solo agosto/septiembre de 2021); se usó la fecha del artículo del Jornal do Centro (2021-09-09). No afecta a los cierres cargados (todos posteriores).",
+      "La fuente (Jornal do Centro) tiene la fecha 09.09.21 según el sitio; el texto habla de la compra 'no passado mês de agosto'. Si Guido quiere el rigor estricto de 'fuente dice esas fechas', cambiar a confirmada:false no rompe nada salvo que el cierre 2022 quedaría sin gestión confirmada."
+    ] } }
+}

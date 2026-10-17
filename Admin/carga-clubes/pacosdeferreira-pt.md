@@ -430,6 +430,19 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2019–20 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Paços de Ferreira".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-23.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+Paulo Meneses (2013-01-01 a 2025-03-25): Nombre completo en los documentos: José Paulo Neto de Meneses (grafías Menezes/Meneses). Presidente del club desde la temporada 2013/14 (zerozero: 'Presidente Paços de Ferreira 2013/14 - 2024/25'; la fuente da solo la temporada, por eso desde = 2013-01-01 por convención, día y mes 01; O Jogo y A Bola hablan de reelecciones 2017, 2019, 2021). Su salida es la asunción de Rui Abreu (25/3/2025, ver abajo): la página de zerozero da solo la temporada 2024/25, no el día. Documentos: Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.md:1406 (ata nº 14 del 7/12/2020: el socio único, FC Paços de Ferreira, 'representada pelo seu Presidente da Direção, José Paulo Neto Meneses', aprueba las cuentas 2019/20); contas22_23.md:184 y contas23_24.md:187 ('JOSE PAULO NETO DE MENEZES - Presidente e Gestor executivo' en la Gerência de la SDUQ). contas21_22.md firma 'Administração' sin nombres (línea 613-615) y no lista órganos sociales, pero está entre los de 2020 y 2023 con el mismo presidente, sin cambio de gestión entre cierre y aprobación (aprobado 10/10/2022). Aprobaciones: 14/10/2020, 10/10/2022, 23/10/2023 (línea 739) y 29/10/2024 (línea 528), todas con Meneses en el cargo.
+Rui Miguel Gonçalves Abreu (2025-03-25 a 2026-09-22): Candidato único elegido el viernes 21/3/2025 (lista A, 2176 votos, biénio 2025-27; abola 22/3/2025) y empossado el martes 25/3/2025 (Emissor: 'no passado dia 25 de março'; Record: ceremonia en el auditorio de la Biblioteca Municipal). Hasta = 2026-09-22: la dirección fue destituida por la asamblea general de socios el 22/9/2026 (fecha tomada de un resumen de búsqueda sobre la elección de Pedro Andrade, que asumió el 10/10/2026; no leí la nota original) y quedó una comisión provisoria; esta fecha no afecta a ningún cierre cargado y la gestión no es la que cubre el cierre por esa razón. Documentos: Clubes/Portugal/Paços de Ferreira/contas_2425.md:138 ('RUI MIGUEL GONÇALVES ABREU - Presidente e Gestor executivo' en la Gerência de la SDUQ); balance 2024/25 firmado 'Administração' el 14/10/2025 (línea 495-497), con Abreu en el cargo.
+Duda: Día y mes exactos de la asunción de Meneses (2013): no hallados; se usa 2013-01-01 por convención. No afecta a ningún cierre.
+Duda: Hay una inconsistencia en la prensa sobre su primera elección (O Jogo la ubica en 2013 con 4004 votos contra Carlos Barbosa; otra nota habla de 2017): no afecta al rango de los cierres cargados.
+Duda: La fecha de salida de Abreu (22/9/2026) viene de un resumen de búsqueda, no de la nota original; si se quiere publicar con confirmada:true conviene verificarla. No afecta a ningún cierre.
+Duda: La página de zerozero de Meneses da el rango por temporada (2013/14 - 2024/25): la fecha de hasta (25/3/2025) sale de la asunción de Abreu, no de esa página.
+```
+
 ## Fuentes
 
 ### pacosdeferreira-pt-contas-2425

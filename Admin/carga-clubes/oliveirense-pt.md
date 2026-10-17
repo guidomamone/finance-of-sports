@@ -228,6 +228,19 @@ tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento si
 tools/cargar.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2022–23 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Oliveirense".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-22.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+Nobuyuki Yamagata (2023-02-02 a 2025-07-01): Maisfutebol (2/2/2023) lo anuncia como nuevo presidente del conselho de administração de la SAD (UDO SAD), junto con su rol en Yokohama FC; flashscore.pt dice que el nombramiento rige 'esta quinta-feira' (2/2/2023 fue jueves) y que venía como presidente de la SAD desde diciembre de 2019; Correio de Azeméis (4/7/2025) lo da en el cargo 'desde fevereiro de 2023'. Por eso desde 2023-02-02 (fecha del anuncio y de la vigencia). Hasta 2025-07-01: el club anunció el cambio el 1/7/2025 (futebol365; Correio de Azeméis 4/7/2025: Yamagata pasa al Conselho de Administração); la fecha exacta de asunción de Sekiguchi no figura en las fuentes, se usa la del anuncio. Documentos: firma 'A Administração' junto a Hiroshi Onodera y Horácio Bastos en Relatorio-e-Contas-202223.md:448-455 (30/9/2023) y Relatorio-e-Contas-202324.md:413-425 (30/9/2024), sin cargos; Yamagata aparece como miembro del Conselho de Administração (Relatorio-e-Contas-202223.md:477-484, anexo art. 447 CSC). La identificación como presidente se apoya en la prensa y en la ficha de Liga Portugal / el tuit oficial del club (2024) que lo llama 'Presidente da SAD'.
+Kiyoshi Sekiguchi (2025-07-01 a hoy): Futebol365 (1/7/2025): el club anuncia a Sekiguchi como nuevo líder de la SAD, sucediendo a Yamagata (que pasa al Conselho de Administração); Correio de Azeméis lo confirma el 4/7/2025. Sin fecha de asunción separada: se usa 2025-07-01 (día del anuncio, un día después del cierre 30/6/2025). Documentos: el relatório 2024/25, aprobado y firmado el 20/10/2025, lo lista primero entre los administradores (Relatorio-e-Contas-202425.md:464-470 y 488-492), sin cargos.
+Duda: Cierre 2025-06-30: la gestión cambió entre el cierre y la aprobación del balance. Lo conducía Yamagata al 30/6/2025, pero el relatório se aprobó y firmó el 20/10/2025 con Sekiguchi listado primero (Relatorio-e-Contas-202425.md:464-470); no se usa campo firmo.
+Duda: Fecha exacta de asunción de Sekiguchi no publicada: se usa 2025-07-01 (anuncio). Si asumió en otra fecha de julio de 2025 no cambia ningún cierre.
+Duda: Los balances firman 'A Administração' sin cargos: la condición de presidente se apoya en prensa, no en el documento. Hiroshi Onodera (administrador, descrito por Azeméis.Net del 22/12/2022 como mayor accionista) no se carga como dueño porque el accionista de control en los documentos es Onodera Holdings Co., Ltd (52,5%), una sociedad; decisión de criterio a confirmar si se prefiere el dueño-persona.
+Duda: Quién presidía la SAD antes del 2/2/2023 no se halló; no afecta a ningún cierre cargado.
+```
+
 ## Fuentes
 
 ### oliveirense-pt-relatorio-e-contas-202425

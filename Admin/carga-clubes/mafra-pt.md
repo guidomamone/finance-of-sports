@@ -134,6 +134,16 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 alta-club.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2023–24 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Mafra".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-20.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+Antonino da Costa Florindo (1995-01-01 a hoy): Conocido como José Cristo. Record ('José Cristo avança para novo mandato', marzo 2025) dice que preside el Mafra 'há 30 anos, desde 1995'; solo da el año, por eso desde = 1995-01-01 (día y mes 01 por convención). Reelecto en la asamblea del 28/3/2025 para el triénio 2025/2027 (jornaldemafra.pt; órgãos sociais en cdmafra.com/pt/orgaos-sociais: Presidente da Direção). Sigue en el cargo (hasta null). Tras la venta del 80% de la SAD (agosto de 2023, Record 19/8/2023) se mantuvo como presidente del club y administrador de la SAD. El balance 2023/24 lo corrobora: 'Conselho de Administração, Presidente: Antonino da Costa Florindo' (Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.md:46), mensaje del presidente firmado por él (:69-75) y firma 'Antonino Florindo (José Cristo), Presidente do Conselho de Administração' (:122-123). El mismo md (:161) da la estructura de la SAD: Football Collective A/S 80%, Footclub Investments SGPS 10%, club 10%. Cierre 30/6/2024 dentro de su gestión; no hubo cambio de gestión entre cierre y aprobación.
+Duda: El año de inicio (1995) sale de un medio y de un comunicado del club reproducido por jornaldemafra.pt; otro Record (7/10/2022) dice 'más de 30 años' y el club lo ubica como dirigente desde 1986. No afecta al cierre 30/6/2024.
+Duda: El dueño de la SAD es una sociedad danesa (The Football Collective A/S, citada también como Heartland por Record); no se cargó persona dueña porque no hay una que conduzca con nombre. Ove Pedersen y Kenneth Andersen figuran como vogais del conselho de administração / gestores ejecutivos, no como presidentes.
+```
+
 ## Fuentes
 
 ### mafra-pt-prestacao-contas-epoca-2023-2024-final

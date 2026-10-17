@@ -2096,6 +2096,24 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2000–01 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Sporting CP".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-27.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+José Alfredo Parreira Holtreman Roquette (1996-04-10 a 2000-07-31): Presidente del club (Conselho Directivo) del 10/4/1996 al 31/7/2000 (pt.wikipedia, lista de presidentes). Cubre los cierres 31/7/2000 y anteriores. Los .md de 1999 y 2000 no nombran al presidente del consejo de la SAD (sin coincidencias en relatorio-contas-2000.md); la SAD es controlada por el club.
+António Augusto Serra Campos Dias da Cunha (2000-08-01 a 2005-10-18): Presidente del club del 1/8/2000 al 18/10/2005 (pt.wikipedia). Corrobora: relatorio-contas-2003-04.md:419 y relatorio-contas-2004-05.md:312 lo listan como Presidente del Conselho de Administração de la SAD; relatorio-contas-2005-06.md:328 registra su renuncia el 19/10/2005. Ojo: en relatorio-contas-2001.md:367 la SAD la presidía Miguel Ribeiro Telles (vicepresidente del club) y en relatorio-contas-2002-03.md:331-335 renunció el 31/7/2003 y quedó Bettencourt; se carga el presidente del club (dueño de la SAD), criterio del país.
+Filipe Pinto Basto Soares Franco (2005-10-19 a 2009-06-05): Presidente del club desde el 19/10/2005 hasta su renuncia el 5/6/2009 (pt.wikipedia; relatorio-contas-2005-06.md:168, relatorio-contas-2008-09.md:336).
+José Eduardo Fragoso Tavares de Bettencourt (2009-06-06 a 2011-03-25): Presidente del club del 6/6/2009 al 25/3/2011 (pt.wikipedia). relatorio-contas-2008-09.md:338 y relatorio-contas-2009-10.md:314: cooptado presidente de la SAD el 1/7/2009. relatorio-contas-2010-11.md:309: renunció el 15/1/2011 con efecto el 28/2/2011 (la SAD quedó sin él antes que el club); el cierre 30/6/2010 es de su gestión.
+Luís Filipe Fernandes David Godinho Lopes (2011-03-27 a 2013-03-26): Presidente del club del 27/3/2011 al 26/3/2013 (pt.wikipedia). relatorio-contas-2010-11.md:311: designado presidente de la SAD el 28/3/2011; relatorio-contas-2011-12.md:630 firma. relatorio-contas-2012-13.md:217: renunció el 22/2/2013 (la SAD pasó a Bruno de Carvalho el 28/3/2013, ver siguiente); el cierre 30/6/2012 es suyo.
+Bruno Miguel de Azevedo Gaspar de Carvalho (2013-03-27 a 2018-06-22): Presidente del club del 27/3/2013 al 22/6/2018 (pt.wikipedia). Corrobora: relatorio-contas-2012-13.md:221 (cooptado el 28/3/2013), relatorio-contas-2013-14.md:214 y 2014-15.md:259 (reelecto presidente de la SAD el 1/10/2014). La Wikipedia da el fin al 22/6; relatorio-contas-2017-18.md:291 dice que la asamblea lo destituyó el 23/6/2018. Los cierres 2013 a 2017 son suyos. El cierre 30/6/2018 queda en la comisión de gestión.
+Artur Ryder Torres Pereira (2018-06-25 a 2018-09-08): Presidente de la comisión de gestión que condujo el club tras la destitución de la dirección (23/6/2018) hasta la elección del 8/9/2018. pt.wikipedia da inicio el 25/6/2018 en el cuerpo del artículo y 23/6 en el infobox; WikiSporting dice 24/6: las fuentes difieren por 1 o 2 días, sin efecto en el cierre del 30/6/2018. relatorio-contas-2017-18.md:1314 lo llama Presidente da Comissão de Gestão do SCP y administrador de la SAD (cooptado el 27/6/2018, :297); el presidente del consejo de la SAD en ese tramo fue José de Sousa Cintra (vicepresidente de la comisión, :293). El balance 2017/18 se aprobó ya con Varandas. Se carga a Torres Pereira por ser quien conducía el club.
+Frederico Nuno Faro Varandas (2018-09-09 a hoy): Presidente del club desde el 9/9/2018 (elegido el 8/9/2018; tomó posse el 9/9: publico.pt 9/9/2018). relatorio-contas-2018-19.md:148: designado presidente de la SAD el 12/9/2018; firma los informes 2019 a 2025 (2019-20.md:890, 2020-21.md:778, 2024-25.md:1522). Sigue abierta.
+Duda: Fecha de inicio exacta de la comisión de gestión de Torres Pereira (23, 24 o 25 de junio de 2018): no afecta ningún cierre.
+Duda: Desfases de 1 a 2 días entre la Wikipedia y los informes en los cambios de gestión de 2011, 2013 y 2018: ningún cierre cae en esas ventanas.
+Duda: En 2001 a 2003 el presidente del consejo de la SAD (Ribeiro Telles, luego Bettencourt) no era el presidente del club (Dias da Cunha): se carga el del club por criterio; Guido puede decidir si prefiere el de la SAD en esos 3 cierres (2001, 2002, 2003).
+```
+
 ## Fuentes
 
 ### sportingcp-pt-relatorio-contas-2024-25

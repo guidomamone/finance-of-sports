@@ -1,0 +1,20 @@
+{
+  "criterioPais": { "PT": "Se cargó a André Castro, presidente del conselho de administração de la SAD de Leixões (que firma los balances, y cuya empresa Play-fair, Lda. es la accionista mayoritaria): no hay otro dueño persona con nombre que conduzca, y el presidente del club (Jorge Moreira) integra el conselho solo como no ejecutivo por estatutos." },
+  "clubes": {
+    "leixoes-pt": {
+      "gestiones": [
+        { "nombre": "André Gonçalves Fernandes de Castro", "corto": "André Castro", "cargo": "Presidente", "desde": "2020-08-28", "hasta": null,
+          "fuente": "https://maisfutebol.iol.pt/ii-liga/andre-castro/paulo-lopo-deixa-presidencia-da-sad-do-leixoes-e-ja-ha-sucessor", "confirmada": true }
+      ],
+      "notas": {
+        "André Gonçalves Fernandes de Castro": "Sucedió a Paulo Lopo (que sigue de presidente de la mesa de la asamblea general y accionista principal) en la presidencia de la SAD; el club lo anunció el 28/8/2020 (maisfutebol; Renascença y RTP lo dan igual, sin día de toma de posesión): se usa la fecha del anuncio. Venía de director deportivo y fue promovido a administrador en mayo de 2020. Los tres balances lo nombran presidente del conselho de administração al cierre del ejercicio: Relatorio-e-Contas-Consolidado-2022-2023.md:73 y :933, Relatorio-e-Contas-Consolidado-2023-2024.md:118 y :1106, Relatorio-de-Gestao-e-Contas-2024-2025.md:83 y :979; el acta de aprobación 2024/25 (asamblea del 15/10/2025) lo identifica como 'Presidente do Conselho de Administração' (2024-2025.md:1568). Las firmas son 'A Administração' sin nombre. Sigue en el cargo según la página oficial de la SAD (leixoessad.pt/institucional-leixoes-sc-futebol-sad/). Jorge Moreira, presidente del club, es administrador no ejecutivo por estatutos. Sin cambio de gestión entre cierre y aprobación de ninguno de los tres balances."
+      },
+      "cubre": { "2023-06-30": "André Gonçalves Fernandes de Castro", "2024-06-30": "André Gonçalves Fernandes de Castro", "2025-06-30": "André Gonçalves Fernandes de Castro" },
+      "dudas": [
+        "El día exacto de la toma de posesión de Castro no figura en las fuentes: 28/8/2020 es el del anuncio del club; no afecta a ningún cierre.",
+        "El informe 2024/25 dice que Aliya Capital Partners (EE.UU.) es socio desde el 1/7/2025 y la prensa habla de compra de una posición mayoritaria; no hallé nota de que Castro haya dejado la presidencia, así que la gestión queda abierta. Posterior a todos los cierres cargados.",
+        "O Jogo (no accesible: 403) titula que Castro pasó a ser dueño de la empresa que gestiona la SAD (Play-fair); no se pudo leer el detalle del porcentaje."
+      ]
+    }
+  }
+}

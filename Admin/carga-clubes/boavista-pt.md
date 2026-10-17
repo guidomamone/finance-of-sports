@@ -86,6 +86,16 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 alta-club.mjs (2026-10-15): pt-primeiraliga, verificado contra roster cacheado de "2023–24 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Boavista".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-12.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+Fary Faye (2024-05-07 a hoy): Presidente del conselho de administração de la SAD desde la asamblea general del 7/5/2024 (comunicado oficial del club, mismo día: 'eleição e tomada de posse', mandato 2024/26; prensa lo llama 'Fary' y 'Fary Faye'). Corto 'Fary' como lo escribe la prensa. Reemplazó a Vítor Murta, que renunció. El balance 2023/24 (cierre 30/6/2024) lo firma él como Presidente del CA el 31/10/2024 (Clubes/Portugal/Boavista/RCSAD-23-24_1-3.md:387 y :470; RCSAD-23-24_3-3.md:999-1003) y dice que el nuevo CA asumió el 7/5/2024 (RCSAD-23-24_1-3.md:306; RCSAD-23-24_2-3.md:1270; RCSAD-23-24_3-3.md:1265 aprox., nota 26.1). hasta=null: no se halló salida; el mandato 2024/26 vence en 2026 y no se hallaron noticias de sucesor ni de renuncia. Accionista mayoritario: Jogo Bonito Group 67,62% (RCSAD-23-24_2-3.md:503); el club fundador tiene 10%. Gérard López aparece en prensa como accionista principal, pero los documentos citan la sociedad, no a la persona.
+Duda: Cierre 2024-06-30: la gestión cambió antes del cierre (7/5/2024) pero el ejercicio 2023/24 casi entero lo condujo Vítor Murta; el balance dice que el nuevo CA 'não teve grande influência nas decisões de gestão desta época' (RCSAD-23-24_2-3.md:1270). Se carga Fary Faye por la regla (desde <= cierre) y porque firma el balance; Murta no se carga porque no hay ejercicio cuyo cierre caiga en su gestión.
+Duda: No se verificó con fuente de 2026 que Fary Faye siga en el cargo (mandato 2024/26 vence este año); hasta=null queda como 'sin salida conocida'.
+```
+
 ## Fuentes
 
 ### boavista-pt-rcsad-23-24-1-3

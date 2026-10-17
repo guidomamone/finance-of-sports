@@ -382,6 +382,16 @@ tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): a
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2021–22 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Arouca".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-8.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+Carlos Pinho (2006-01-01 a hoy): Presidente del FC Arouca desde 2006 (Observador 26/6/2022 y Maisfutebol: 'desde 2006', solo el año, por eso desde 01/01; el club estaba aún en las distritales de Aveiro), reelecto en 2022 (octavo mandato, 2022-2025) y de nuevo en febrero de 2026 (mandato 2026/30, según Record/O Jogo/RTP), así que sigue en el cargo: hasta null. Los cuatro relatórios (relatorio-contas-2021-22.md:178, relatorio-contas-2022-23.md:155, relatorio-contas-2023-24.md:218, wf-2024-2025-78053ec5.md:188) los firma 'A Gerência' de la SDUQ sin nombrar a nadie, así que el balance no corrobora la persona; la fecha de firma es posterior al cierre en todos (nov. 2022, nov. 2022, nov. 2024, nov. 2025), sin cambio de presidente en esos períodos. Las fechas exactas de tomada de posse de 2006 no figuran en las fuentes halladas.
+Duda: Los relatórios solo dicen 'A Gerência' sin nombres: no se verificó en el balance que Pinho integre la gerencia de la SDUQ (es la figura del presidente del club, dueño único).
+Duda: Fecha exacta de asunción en 2006 no hallada (solo el año); no afecta a los cierres 2022-2025.
+```
+
 ## Fuentes
 
 ### arouca-pt-wf-2024-2025-78053ec5

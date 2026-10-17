@@ -183,6 +183,16 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 tools/cargar.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2023–24 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Belenenses".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-10.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+Patrick Morais de Carvalho (2014-11-01 a hoy): Elegido presidente el sábado 18/10/2014 (maisfutebol, 18/10/2014, 52,4%); la prensa de entonces dijo que la posse de los órganos sociales sería a principios de noviembre y no se halló el día exacto: se usa 01/11/2014 por convención (día 01), no es una fecha confirmada al día. Reelecto 2017, 2020 y 2023 (mandato 2023-2026) y la fuente de abola (octubre 2024) lo da con 10 años al frente. Sigue en el cargo al 17/10/2026: elecciones convocadas para el 24/10/2026, donde se recandidata (Rui Rodrigues y otros son rivales), así que hasta es null. Documentos: en Clubes/Portugal/Belenenses/Belenenses-SDUQ-Relatorio-e-Contas-2023-2024.md:962-967 (ata nº 4 del 16/10/2024) el socio único (el club) está representado por Patrick Morais de Carvalho como Presidente de la Direção y él figura entre los gerentes de la SDUQ; el balance 2023/24 lo aprueba la gerencia el 16/10/2024 (línea 366). El balance 2024/25 (Belenenses-SDUQ-demonstracoes-financeiras-30junho2025.md:242) lo aprueba la gerencia el 20/10/2025 y firma 'A Gerência' sin nombres. La SDUQ se constituyó el 21/6/2024 (nota 1 del archivo 2025, «constituída em 21 de junho de 2024»); el cierre 30/6/2024 es de la sociedad recién creada, y la gestión del club cubre ambos cierres sin cambio de presidente entre cierre y aprobación.
+Duda: Día exacto de la posse de noviembre de 2014: no hallado (se usa 2014-11-01). No afecta a los cierres cargados.
+Duda: Los documentos no nombran al presidente en las firmas de 'A Gerência' (solo el acta de 2024 lo nombra); la identidad como presidente del club se apoya en prensa.
+```
+
 ## Fuentes
 
 ### belenenses-pt-sduq-demonstracoes-financeiras-30junho2025

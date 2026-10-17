@@ -1844,6 +1844,17 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2005–06 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Benfica".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-11.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+Luís Filipe Vieira (2003-10-31 a 2021-07-09): Presidente del club desde el 31/10/2003 (pt.wikipedia, lista de presidentes), también presidente del conselho de administração de la SAD; se autosuspendió el 9/7/2021 tras ser detenido el 7/7 y renunció el 15/7/2021 (la SAD informa renuncia el 15/7 con efectos al 16/7/2021: relatorio-contas-2020-21.md:1016 y relatorio-contas-2021-22.md:1516). Firma los balances de 2005/06 (relatorio-contas-2005-06.md:189), 2006/07 (relatorio-contas-2006-07.md:179), 2009/10 (prestacao-contas-2010-11-11.md:4034), 2011/12 (relatorio-contas-2011-12.md:159) y 2018/19 (relatorio-contas-2018-19.md:149). Hasta 2021-07-09 por la fuente web; la fecha formal de renuncia fue 15-16/7, sin efecto sobre ningún cierre (el más cercano es 2021-06-30).
+Rui Manuel César Costa (2021-07-09 a hoy): Tomó la conducción el 9/7/2021 al suspenderse Vieira (pt.wikipedia); la SAD lo designó formalmente presidente del conselho de administração el 16/7/2021 (relatorio-contas-2020-21.md:115) y fue elegido presidente del club el 9/10/2021 (toma de posse el 10/10 según prensa). Reelecto en 2025. El balance 2020/21 ya lo firma él como presidente (relatorio-contas-2020-21.md:164-165), aunque el cierre 30/6/2021 es de la gestión de Vieira: se aprobó con el cambio ya hecho. Firma también 2021/22 (relatorio-contas-2021-22.md:177-178), 2024/25 (relatorio-contas-2024-25-pos-AG.md:176) y 2025/26 (relatorio-contas-2025-26.md:140-141).
+Duda: Fechas del traspaso en julio de 2021: pt.wikipedia da 9/7 (suspensión), la prensa y la SAD dan renuncia el 15/7 y designación de Rui Costa en la SAD el 16/7; no afecta ningún cierre.
+Duda: El cierre 2007-07-31 del lote es atípico (el ejercicio de Benfica cierra el 30/6); lo cubre Vieira igual.
+```
+
 ## Fuentes
 
 ### benfica-pt-relatorio-contas-2018-19

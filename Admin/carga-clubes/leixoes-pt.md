@@ -278,6 +278,17 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: documento si
 tools/cargar.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2022–23 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Leixões".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-19.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+André Gonçalves Fernandes de Castro (2020-08-28 a hoy): Sucedió a Paulo Lopo (que sigue de presidente de la mesa de la asamblea general y accionista principal) en la presidencia de la SAD; el club lo anunció el 28/8/2020 (maisfutebol; Renascença y RTP lo dan igual, sin día de toma de posesión): se usa la fecha del anuncio. Venía de director deportivo y fue promovido a administrador en mayo de 2020. Los tres balances lo nombran presidente del conselho de administração al cierre del ejercicio: Relatorio-e-Contas-Consolidado-2022-2023.md:73 y :933, Relatorio-e-Contas-Consolidado-2023-2024.md:118 y :1106, Relatorio-de-Gestao-e-Contas-2024-2025.md:83 y :979; el acta de aprobación 2024/25 (asamblea del 15/10/2025) lo identifica como 'Presidente do Conselho de Administração' (2024-2025.md:1568). Las firmas son 'A Administração' sin nombre. Sigue en el cargo según la página oficial de la SAD (leixoessad.pt/institucional-leixoes-sc-futebol-sad/). Jorge Moreira, presidente del club, es administrador no ejecutivo por estatutos. Sin cambio de gestión entre cierre y aprobación de ninguno de los tres balances.
+Duda: El día exacto de la toma de posesión de Castro no figura en las fuentes: 28/8/2020 es el del anuncio del club; no afecta a ningún cierre.
+Duda: El informe 2024/25 dice que Aliya Capital Partners (EE.UU.) es socio desde el 1/7/2025 y la prensa habla de compra de una posición mayoritaria; no hallé nota de que Castro haya dejado la presidencia, así que la gestión queda abierta. Posterior a todos los cierres cargados.
+Duda: O Jogo (no accesible: 403) titula que Castro pasó a ser dueño de la empresa que gestiona la SAD (Play-fair); no se pudo leer el detalle del porcentaje.
+```
+
 ## Fuentes
 
 ### leixoes-pt-relatorio-de-gestao-e-contas-2024-2025
