@@ -481,7 +481,7 @@
   mqMovil.addEventListener('change', () => { if(!mqMovil.matches) setMenuMovil(false); });
 
   // ---------- FINANZAS: lo de arriba de la página ----------
-  // La moneda vive en el panel "Cambiar cómo se ve" de Finanzas (el único lugar donde cambia algo), no en el header. Se mueve el mismo
+  // La moneda vive en el panel "Más opciones" de Finanzas (el único lugar donde cambia algo), no en el header. Se mueve el mismo
   // nodo, así que su listener y sus botones (populateCurrencyToggle) no se enteran.
   document.getElementById('finMonedaSlot').appendChild(document.getElementById('currencyToggleGlobal'));
   document.getElementById('finCambiar').addEventListener('click', () => CLUB_SELECTOR.open());

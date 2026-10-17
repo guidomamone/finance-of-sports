@@ -229,7 +229,7 @@ window.I18N.strings.en = {
   "finanzas.changeClub": "Change club",
   "finanzas.guide": "<strong>How to use it:</strong> tap a year to add it to or remove it from the comparison · tap a line in the table to see how it changed · every figure links to its document in Sources.",
   "finanzas.guide.close": "Close the guide",
-  "finanzas.view.change": "Change how it looks",
+  "finanzas.view.change": "More options",
   "finanzas.view.amountsIn": "Amounts in",
   "finanzas.index": "On this page",
   "finanzas.idx.trend": "Trend",

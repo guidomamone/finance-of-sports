@@ -500,7 +500,7 @@
      solo; sin checkbox (pedido de Guido): prendido = borde azul y fondo celeste. */
   .fin-multi #anioSelectWrap{display:none !important;}
   /* FINANZAS, lo de arriba: el título con "Cambiar de club", la guía de una línea, la tarjeta de ejercicios con la vista en palabras
-     y el panel "Cambiar cómo se ve" (moneda, inflación, formato), el aviso compacto y el índice fijo de la página. */
+     y el panel "Más opciones" (moneda, inflación, formato), el aviso compacto y el índice fijo de la página. */
   .fin-titulo{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
   .fin-titulo h1{margin:0;}
   .fin-cambiar{min-height:36px;padding:0 12px;border-radius:8px;border:0;background:#eef1f6;color:var(--azul);font:inherit;

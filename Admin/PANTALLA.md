@@ -862,7 +862,7 @@ Texto movido sin cambios.
 - FINANZAS, LO DE ARRIBA (mockup: artboards "Finanzas" del artifact "Pantallas FoS — Inicio"). El título es el club, con "Cambiar de
   club" al lado (en Finanzas el título ya dice qué club es). Debajo, una guía de una línea (qué se toca) que se cierra y no vuelve
   (`localStorage` `finGuiaCerrada`). La tarjeta de ejercicios termina con la vista en palabras ("Montos en USD, nominales, formato
-  simplificado", leída de los botones activos, sin un estado propio) y "Cambiar cómo se ve", que abre el panel con la moneda (que ya
+  simplificado", leída de los botones activos, sin un estado propio) y "Más opciones", que abre el panel con la moneda (que ya
   no está en el header, en ningún ancho), nominal/inflación y el formato. Con `?multi=0` no hay tarjeta y el panel queda abierto.
   El aviso del documento va compacto. Debajo de los KPIs ("Intereses y otros", no "Int."), un índice fijo de la página (Evolución,
   Estado de resultados, Deuda, En otra liga, Fuentes) que marca la sección que se lee y salta sin escribir el #ancla en la URL.
