@@ -311,7 +311,7 @@ const hellasveronaitFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Costi per attività sportiva prima squadra', lado:'expense', importe:0.765, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:4.530032, cash:null,
     officialTotalRevenue:65.590796, officialTotalExpenses:55.066094, officialPAT:8.275111,
   },
   2023: {
@@ -366,7 +366,7 @@ const hellasveronaitFiscalYearMeta = {
       {label:'c) Imposte differite', value:-2.776915},
       {label:'d) Imposte anticipate', value:4.359014},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:44.071284, cash:null,
     officialTotalRevenue:84.548986, officialTotalExpenses:87.835641, officialPAT:-5.057437,
   },
   2025: {

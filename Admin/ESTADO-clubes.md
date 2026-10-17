@@ -233,7 +233,7 @@ IT (22)
   Cremonese      4 ejercicios (2021/2022 a 2024/2025), balance, EUR
   Fiorentina     5 ejercicios (2019, 2020/2021, 2021/2022, 2023/2024, 2024/2025), balance, EUR
   Genoa          3 ejercicios (2022, 2023, 2024/2025), balance, EUR
-  Hellas Verona  6 ejercicios (2019/2020 a 2024/2025), balance, EUR, sin deuda/caja
+  Hellas Verona  6 ejercicios (2019/2020 a 2024/2025), balance, EUR
   Inter          8 ejercicios (2017/2018 a 2024/2025), balance, EUR
   Juve Stabia    1 ejercicio (2023/2024), balance, EUR, sin deuda/caja
   Juventus       23 ejercicios (2002/2003 a 2024/2025), balance, EUR

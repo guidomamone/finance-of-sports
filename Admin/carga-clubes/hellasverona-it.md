@@ -352,6 +352,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): soci per finanziamenti 603.703 + banche 30.272.857 + altri finanziatori 13.194.724; el script tomaba solo banche (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros)
+```
+
 ### Liga
 
 ```text
@@ -513,6 +517,10 @@ tools/cargar.mjs (2026-10-07)
 ```text
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): banche 522.593 + altri finanziatori 4.007.439 (soci y obbligazioni 0); el script tomaba solo banche (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros)
 ```
 
 ## Gestiones
