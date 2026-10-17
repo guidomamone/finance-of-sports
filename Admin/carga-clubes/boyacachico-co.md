@@ -104,6 +104,10 @@ _al lado del campo `grossDebt`:_
 no verificado esta sesión, mismo alcance que los demás onboardings de esta ronda
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Obligaciones financieras corrientes 666.527.066,00 (Préstamos Bancarios - Dimayor) + no corrientes 0,00. Nota 8: préstamo bancario Dimayor; no corriente 0.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Efectivo y equivalentes al efectivo 441.174.314,33 (también Disponible a dic 31 2024 en flujo de efectivo). Primera columna = 2024 (resultado del ejercicio 708M); cifras en pesos completos; coincide con el flujo de efectivo.
+```
+
 ## Gestiones
 
 _antes de Eduardo Pimentel (data/gestiones/co.js):_

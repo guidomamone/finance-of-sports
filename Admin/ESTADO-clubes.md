@@ -118,7 +118,7 @@ CHILE (3)
 COLOMBIA (12)
   América de Cali         1 ejercicio (2025), balance, COP
   Atlético Nacional       1 ejercicio (2025), balance, COP
-  Boyacá Chicó            1 ejercicio (2024), balance, COP, sin deuda/caja
+  Boyacá Chicó            1 ejercicio (2024), balance, COP
   Deportivo Cali          1 ejercicio (2025), balance, COP
   Deportivo Pereira       1 ejercicio (2025), balance, COP
   Envigado FC             1 ejercicio (2025), balance, COP
