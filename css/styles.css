@@ -118,6 +118,53 @@
     .club-btn{min-width:0;flex:1;max-width:none;}
   }
 
+  /* EL HEADER EN EL TELÉFONO: UNA SOLA FILA (56px). Hasta acá eran tres o cuatro filas (logo; moneda, contacto e idioma; "Estás
+     viendo"; las pestañas) y el header fijo ocupaba ~165-200px de 812. Queda: logo, lupa (abre el selector) y un botón con la
+     sección actual que abre el menú. El menú es el mismo #mainNav más idioma y contacto (.m-extra), mostrado como panel debajo del
+     header. La moneda baja a los controles de Finanzas (moverMoneda(), js/principal.js); el botón de club no se muestra (la lupa
+     abre el mismo selector). En escritorio nada de esto existe: .m-acciones, .m-extra y .m-velo están escondidos y .nav-wrap
+     no arma caja (display:contents), así que el nav sigue en la fila del header como siempre. */
+  .m-acciones,.m-extra,.m-velo{display:none;}
+  .nav-wrap{display:contents;}
+  @media (max-width:700px){
+    .header-inner{flex-wrap:nowrap;height:56px;padding:0 4px 0 16px;box-sizing:border-box;position:relative;}
+    .logo{font-size:16px;font-weight:800;min-width:0;overflow:hidden;flex-shrink:1;}
+    .logo > span:last-child{overflow:hidden;text-overflow:ellipsis;}
+    .header-right{display:none;}
+    .m-acciones{display:flex;align-items:center;flex-shrink:0;}
+    .m-btn{width:44px;height:44px;display:flex;align-items:center;justify-content:center;border:0;background:none;color:#fff;cursor:pointer;}
+    .m-menu-btn{height:44px;display:flex;align-items:center;gap:6px;padding:0 10px;border:0;border-radius:8px;
+      background:rgba(255,255,255,.1);color:#fff;font:inherit;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap;}
+    .m-menu-btn .m-ico-cerrar{display:none;}
+    header.menu-abierto .m-menu-btn{background:var(--oro);color:var(--azul-dark);}
+    header.menu-abierto .m-menu-btn .m-ico-abrir{display:none;}
+    header.menu-abierto .m-menu-btn .m-ico-cerrar{display:block;}
+    .nav-wrap{display:none;position:absolute;top:56px;left:0;right:0;background:#fff;color:var(--text);
+      border-radius:0 0 16px 16px;padding:8px 0 12px;box-shadow:0 12px 30px rgba(7,29,63,.25);z-index:2;}
+    header.menu-abierto .nav-wrap{display:block;}
+    nav{order:0;width:auto;display:flex;flex-direction:column;border-top:0;padding-top:0;justify-content:flex-start;}
+    nav button{display:flex;align-items:center;justify-content:space-between;min-height:52px;padding:0 20px;border-radius:0;
+      font-size:17px;color:var(--text);text-align:left;}
+    nav button:hover{background:#f4f5f7;color:var(--text);}
+    nav button.active{background:#fdf5dc;color:var(--azul);font-weight:800;}
+    nav button.active::after{content:'';width:8px;height:8px;border-radius:50%;background:var(--oro);}
+    nav button[hidden]{display:none;}
+    .m-extra{display:block;border-top:1px solid var(--border);margin:8px 20px 0;padding-top:8px;}
+    .m-idioma{display:flex;align-items:center;justify-content:space-between;min-height:52px;font-size:15px;color:var(--muted);}
+    .m-idioma-op{display:flex;gap:4px;background:#eef1f6;border-radius:8px;padding:3px;}
+    .m-idioma-op button{height:36px;padding:0 14px;border:0;border-radius:6px;background:none;color:var(--azul);
+      font:inherit;font-size:14px;font-weight:700;cursor:pointer;}
+    .m-idioma-op button.active{background:var(--azul);color:#fff;}
+    .m-contacto{display:flex;align-items:center;width:100%;min-height:44px;padding:0;border:0;background:none;font:inherit;
+      font-size:15px;color:var(--muted);cursor:pointer;}
+    .m-velo.abierto{display:block;position:fixed;inset:56px 0 0 0;background:rgba(7,29,63,.45);z-index:1;}
+    /* La moneda, ya en los controles de Finanzas: el .segmented de siempre (fondo claro), no el del header (texto blanco). */
+    .fin-moneda-slot .header-currency-toggle{border:1px solid var(--border);border-radius:8px;}
+    .fin-moneda-slot .header-currency-toggle button{color:var(--azul);padding:6px 12px;font-size:13px;}
+    .fin-moneda-slot .header-currency-toggle button.active{background:var(--azul);color:#fff;}
+  }
+  @media (max-width:380px){ .logo{font-size:15px;gap:6px;} .m-menu-btn{padding:0 8px;} .m-btn{width:40px;} }
+
   /* to-do 23, paso 4: el gráfico de Comparar, A y B en el mismo eje (Chart.js). Reemplaza a la
      composición al 100% (.mix-*), que se fue con este paso. */
   .cd-graf{margin:4px 0 22px;}

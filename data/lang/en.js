@@ -174,6 +174,8 @@ window.I18N.strings.en = {
   "header.contact": "Contact",
   "header.currency": "Currency: applies to Home and Finances",
   "header.lang": "Change language",
+  "header.langLabel": "Language",
+  "header.search": "Search for a club or a league",
   "label.board": "Board:",
   "label.boardA": "Board A:",
   "label.boardB": "Board B:",

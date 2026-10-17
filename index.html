@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title data-i18n="site.title">El deporte en Números | Datos para votar informado</title>
-<link rel="stylesheet" href="css/styles.css?v=1233">
+<link rel="stylesheet" href="css/styles.css?v=1236">
 <!-- Cloudflare Web Analytics -->
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3deae274c6f346eab1a19f78e41ac035"}'></script>
 <!-- End Cloudflare Web Analytics -->
@@ -14,6 +14,19 @@
 <header>
   <div class="header-inner">
     <div class="logo"><span class="dot"></span> <span data-i18n="site.name">El deporte en Números</span></div>
+    <!-- EN EL TELÉFONO (max-width:700px) el header es UNA fila: logo, lupa y un botón con la sección actual que abre el menú. El menú
+         es este mismo <nav> (más idioma y contacto, .m-extra) mostrado como panel: no hay una segunda lista de secciones. -->
+    <div class="m-acciones">
+      <button type="button" class="m-btn" id="mBuscar" data-i18n-aria-label="header.search" aria-label="Buscar un club o una liga">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
+      </button>
+      <button type="button" class="m-menu-btn" id="mMenuBtn" aria-expanded="false" aria-controls="navWrap">
+        <span id="mMenuLbl">Inicio</span>
+        <svg class="m-ico-abrir" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+        <svg class="m-ico-cerrar" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+      </button>
+    </div>
+    <div class="nav-wrap" id="navWrap">
     <nav id="mainNav">
       <button data-section="inicio" class="active" data-i18n="nav.inicio">Inicio</button>
       <!-- `data-section="vs"` y NO "comparar": ese id ya existe y es "Comparar Gestiones" (dos presidencias del MISMO club,
@@ -25,6 +38,12 @@
       <button data-section="fuentes" data-i18n="nav.fuentes">Fuentes</button>
       <button data-section="cuenta" data-i18n="nav.cuenta">Mi Cuenta</button>
     </nav>
+    <div class="m-extra">
+      <div class="m-idioma"><span data-i18n="header.langLabel">Idioma</span><div class="m-idioma-op" id="mIdioma"></div></div>
+      <button type="button" class="m-contacto" id="mContacto" data-i18n="header.contact">Contacto</button>
+    </div>
+    </div>
+    <div class="m-velo" id="mVelo"></div>
     <div class="header-right">
       <!-- Los botones de moneda se generan por club en populateCurrencyToggle() (ver js/principal.js): cada club puede tener una
            moneda nativa distinta (ARS, BRL, CLP, COP, PEN, EUR...). -->
@@ -202,6 +221,8 @@
     </div>
 
     <div class="controls">
+      <!-- En el teléfono el USD / moneda del club baja del header a acá (js/principal.js, moverMoneda()). -->
+      <span class="fin-moneda-slot" id="finMonedaSlot"></span>
       <!-- "Por gestión" oculto: la mayoría de los clubes no tiene una gestión real confirmada. Se esconde la UI, NO se borra
            gestionesByClub ni el cálculo por gestión, para poder traerlo de vuelta sin reconstruir nada. -->
       <div class="segmented" id="viewToggle" style="display:none;">
@@ -674,40 +695,40 @@
 <!-- ASSET_V: versión de los assets propios, para invalidar el cache del navegador en cada deploy (si no, un visitante se queda
      con un js/*.js viejo mientras el HTML es nuevo). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o `data/`. Lo leen
      también los cargadores dinámicos (loadClubData, I18N.load, loadRanking). -->
-<script>window.ASSET_V = '1233';</script>
-<script src="data/lang/langs.js?v=1233"></script>
-<script src="js/i18n.js?v=1233"></script>
-<script src="data/clubs.js?v=1233"></script>
+<script>window.ASSET_V = '1236';</script>
+<script src="data/lang/langs.js?v=1236"></script>
+<script src="js/i18n.js?v=1236"></script>
+<script src="data/clubs.js?v=1236"></script>
 <!-- data/club-index.js: el índice liviano de TODOS los clubes (nombre, país, calidad del dato, ejercicios), GENERADO por
      tools/generate-club-index.js. Lo que hay que mostrar de un club ANTES de entrar a él vive adentro de data/<país>/<club>-data.js, que
      no se carga hasta que el visitante lo elige. -->
-<script src="data/club-index.js?v=1233"></script>
+<script src="data/club-index.js?v=1236"></script>
 <!-- data/leagues.js: el CATÁLOGO de la taxonomía del selector (deportes, regiones, países, ligas). NO tiene membresía: qué club
      jugó en qué liga es (club, ejercicio) y vive en data/club-leagues.js. Ver la cabecera de data/leagues.js ("no existe ninguna
      arista club → liga sin año"). -->
-<script src="data/leagues.js?v=1233"></script>
-<script src="data/club-leagues.js?v=1233"></script>
-<script src="data/category-map.js?v=1233"></script>
-<script src="data/site-labels.js?v=1233"></script>
-<script src="data/currency-map.js?v=1233"></script>
-<script src="data/sources-view.js?v=1233"></script>
+<script src="data/leagues.js?v=1236"></script>
+<script src="data/club-leagues.js?v=1236"></script>
+<script src="data/category-map.js?v=1236"></script>
+<script src="data/site-labels.js?v=1236"></script>
+<script src="data/currency-map.js?v=1236"></script>
+<script src="data/sources-view.js?v=1236"></script>
 <!-- Ningún data file de club se carga acá: el sitio abre en la portada sin club, y CUALQUIER club entra por loadClubData() cuando
      el visitante lo elige. -->
-<script src="js/info-tip.js?v=1233"></script>
-<script src="data/deflactores.js?v=1233"></script>
-<script src="js/finanzas-calc.js?v=1233"></script>
-<script src="js/finanzas-render.js?v=1233"></script>
-<script src="js/finanzas-anios.js?v=1233"></script>
-<script src="js/finanzas-multi.js?v=1233"></script>
+<script src="js/info-tip.js?v=1236"></script>
+<script src="data/deflactores.js?v=1236"></script>
+<script src="js/finanzas-calc.js?v=1236"></script>
+<script src="js/finanzas-render.js?v=1236"></script>
+<script src="js/finanzas-anios.js?v=1236"></script>
+<script src="js/finanzas-multi.js?v=1236"></script>
 <!-- js/selector.js: el selector de club. Se alimenta solo de clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja todos
      los clubes sin bajar un solo data/<país>/<club>-data.js. -->
-<script src="js/selector.js?v=1233"></script>
-<script src="data/destacados.js?v=1233"></script>
-<script src="js/liga.js?v=1233"></script>
+<script src="js/selector.js?v=1236"></script>
+<script src="data/destacados.js?v=1236"></script>
+<script src="js/liga.js?v=1236"></script>
 <!-- js/cuenta.js: login con Google vía Supabase + guardado automático de búsquedas. No sabe cómo se renderiza el resto del sitio:
      recibe `reopen` por CUENTA.init() y expone notifyStateChange() para que index.html avise cuando cambia el club/año. -->
-<script src="js/cuenta.js?v=1233"></script>
-<script src="js/principal.js?v=1233"></script>
+<script src="js/cuenta.js?v=1236"></script>
+<script src="js/principal.js?v=1236"></script>
 
 </body>
 </html>

@@ -861,6 +861,12 @@ Texto movido sin cambios.
   porque el sitio del club no responde (Ituano) y 1 que no salió de ninguna fuente
   externa (Boca, que usa el `--azul` histórico del sitio). Los escudos como IMAGEN siguen
   sin hacerse (derechos y hosting, el repo se deploya entero).
+- EL HEADER EN EL TELÉFONO ES UNA SOLA FILA (hasta 700 px de ancho; mockup: artboards "Header en el teléfono" del artifact "Pantallas
+  FoS — Inicio"). Logo, lupa (abre el selector; al elegir, a Finanzas) y un botón con el nombre de la sección actual que abre el menú.
+  El menú es el MISMO `#mainNav` mostrado como panel debajo del header, más idioma y contacto (`.m-extra`, fuera del nav a propósito:
+  todo `#mainNav button` se trata como pestaña). La moneda baja a los controles de Finanzas (`moverMoneda()`, se mueve el mismo
+  nodo) y el botón de club no se muestra en el teléfono (la lupa abre el mismo selector). Entre 701 y 900 px sigue el header de
+  varias filas; en escritorio, nada cambió.
 - INICIO (mockup: artifact de Design "Pantallas FoS — Inicio"). Arriba, qué es el sitio (el conteo
   "N clubes · N países · N ejercicios" sale de `data/club-index.js`) y el BUSCADOR como acción principal: tocarlo abre el selector con
   lo tipeado (`CLUB_SELECTOR.open(q)`) y al elegir se cae en Finanzas; abajo del buscador, "Probá con" (el 1 del mundo, el 1 de América

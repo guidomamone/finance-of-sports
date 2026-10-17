@@ -432,6 +432,53 @@
     });
   });
 
+  // ---------- EL HEADER EN EL TELÉFONO (una fila: logo, lupa y menú) ----------
+  // El menú es el mismo #mainNav mostrado como panel (css/styles.css, max-width:700px), así que elegir una sección es el mismo click
+  // de siempre; acá solo se abre, se cierra y se rotula el botón con la sección actual.
+  const headerEl = document.querySelector('header');
+  const mMenuBtn = document.getElementById('mMenuBtn');
+  const mVelo = document.getElementById('mVelo');
+  function setMenuMovil(abierto){
+    headerEl.classList.toggle('menu-abierto', abierto);
+    mVelo.classList.toggle('abierto', abierto);
+    mMenuBtn.setAttribute('aria-expanded', abierto ? 'true' : 'false');
+  }
+  function rotularMenuMovil(){
+    const activo = document.querySelector('#mainNav button.active');
+    document.getElementById('mMenuLbl').textContent = activo ? activo.textContent.trim() : '';
+  }
+  mMenuBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    setMenuMovil(!headerEl.classList.contains('menu-abierto'));
+  });
+  mVelo.addEventListener('click', () => setMenuMovil(false));
+  document.addEventListener('keydown', (e) => { if(e.key === 'Escape') setMenuMovil(false); });
+  navButtons.forEach(btn => btn.addEventListener('click', () => { setMenuMovil(false); rotularMenuMovil(); }));
+  rotularMenuMovil();
+  // La lupa abre el mismo selector que el botón de club del header de escritorio; al elegir, a Finanzas.
+  document.getElementById('mBuscar').addEventListener('click', () => {
+    irAFinanzasAlElegir = true;
+    CLUB_SELECTOR.open();
+  });
+  document.getElementById('mContacto').addEventListener('click', () => {
+    setMenuMovil(false);
+    document.getElementById('contactBtn').click();
+  });
+  document.getElementById('mIdioma').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-lang]');
+    if(b) I18N.setLang(b.dataset.lang);
+  });
+  // En el teléfono la moneda vive en los controles de Finanzas (el único lugar donde cambia algo); en escritorio, en el header.
+  // Se mueve el mismo nodo, así que su listener y sus botones (populateCurrencyToggle) no se enteran.
+  const mqMovil = window.matchMedia('(max-width:700px)');
+  function moverMoneda(){
+    const toggle = document.getElementById('currencyToggleGlobal');
+    if(mqMovil.matches) document.getElementById('finMonedaSlot').appendChild(toggle);
+    else document.querySelector('.header-right').insertBefore(toggle, document.querySelector('.header-right .cb-wrap'));
+  }
+  mqMovil.addEventListener('change', () => { moverMoneda(); if(!mqMovil.matches) setMenuMovil(false); });
+  moverMoneda();
+
   // ---------- CURRENCY TOGGLE (universal, en el header) ----------
   // "Comparar Gestiones" lo ignora a propósito (displayFinancialsForClub, js/finanzas-calc.js: siempre USD). Los botones se
   // regeneran por club en populateCurrencyToggle() (modelo completo: cabecera de data/currency-map.js), así que el listener de
@@ -524,6 +571,8 @@
       return `<button type="button" role="menuitem" data-lang="${code}"${active}>${l.name}</button>`;
     }).join('');
     document.getElementById('langBtnLabel').textContent = I18N.current.toUpperCase();
+    document.getElementById('mIdioma').innerHTML = Object.keys(window.LANGS).map(code =>
+      `<button type="button" data-lang="${code}"${code === I18N.current ? ' class="active"' : ''}>${code.toUpperCase()}</button>`).join('');
   }
 
   function setLangMenuOpen(open){
@@ -570,6 +619,7 @@
     // La pestaña Ligas también arma todo su contenido en JS.
     LIGA_VIEW.refresh();
     pintarConteoInicio();
+    rotularMenuMovil();
   });
 
   I18N.init().then(renderLangMenu);
