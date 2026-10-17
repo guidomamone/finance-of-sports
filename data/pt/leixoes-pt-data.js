@@ -149,7 +149,7 @@ const leixoesptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Prestação de Serviços', lado:'revenue', importe:0.776457, motivo:'precedente del país: 1 clubes (Oliveirense), nota:vendas e servicos prestados · Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): \'Prestação de serviços\' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense.'},
     ],
-    grossDebt:null, cash:0.014348,
+    grossDebt:3.165856, cash:0.014348,
     officialTotalRevenue:2.758322, officialTotalExpenses:6.933258, officialPAT:-4.475963,
   },
   2023: {

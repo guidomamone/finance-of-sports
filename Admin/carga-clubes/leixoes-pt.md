@@ -110,6 +110,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-16): cash escalón 2 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 4
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos no corriente 134.905,94 + corriente 3.030.950,00. Balance individual SAD. La nota 12 los clasifica como 'Participantes de capital' (préstamos de socios: Anderson Gonçalves 1.941.000 y Effort Premier 60.000 recibidos en 2024/25).
+```
+
 ### Liga
 
 ```text
