@@ -423,11 +423,27 @@ function esTotalBalance(n) {
 // (deuda, mejora 1) LAS TABLAS DEL BALANCE PROPIAMENTE DICHO: las que tienen el total del pasivo (deuda) o del activo (caja). Los clubes
 // grandes repiten las filas en tablas resumen del informe de gestión, en miles (Porto 2016-17: "Empréstimos Bancários" en L594/L598 y en el
 // balance L860/L869; Porto 2015-16: "Caixa e depósitos bancários" 7.392 en L657 contra 7.392.033 en L976).
+const ladoDelTotal = (cual) => (cual === 'cash' ? /\b(activos?|ativos?|assets)\b/u : /\b(pasivos?|passivos?|liabilities)\b/u);
+// (to-do 260 b, idea de Guido aprobada el 2026-10-17) LA TABLA RESUMEN DE VARIOS AÑOS ES UN DESGLOSE: si el total del activo / pasivo de una
+// tabla aparece, impreso, en la fila del total de una tabla ANTERIOR, y ahí está de la tercera columna en adelante (una serie de varios
+// años, no el año ni el año anterior), esa tabla anterior es un resumen del informe de gestión: sus filas no cuentan para caja ni deuda.
+// Tolera una unidad de redondeo. Caso: Benfica 2022-23, pág. 37 L939 "TOTAL PASSIVO | 364.619 | 325.917 | 379.606 | 424.718 | 444.617 |
+// 19.899" y el balance, pág. 109 L3426 "TOTAL DO PASSIVO | | 444.617 | 424.718"; sus "Empréstimos bancários" y "Empréstimos obrigacionistas"
+// se mezclaban con el par "Empréstimos obtidos" del balance y no decidía (2023-24: 483.356 en el resumen, 483.357 en el balance). Desde la
+// tercera columna porque en la primera o la segunda coincide también un balance repetido (Benfica 2018-19, L2646 y L2902) o una tabla de
+// reexpresión (Botafogo 2025), que no son resúmenes.
+function tablasResumen(filas, cual) {
+  const lado = ladoDelTotal(cual);
+  const tots = filas.filter((f) => f.balance && esTotalBalance(f.norm) && lado.test(f.norm) && f.tabla != null);
+  const out = new Set();
+  for (const a of tots) for (const b of tots) if (a.tabla !== b.tabla && a.linea < b.linea && a.cifras.findIndex((c) => Math.abs(c - b.valor) <= 1) >= 2) out.add(a.tabla);
+  return out;
+}
 function tablasDelTotal(filas, cual) {
-  const lado = cual === 'cash' ? /\b(activos?|ativos?|assets)\b/u : /\b(pasivos?|passivos?|liabilities)\b/u;
+  const lado = ladoDelTotal(cual); const resumen = tablasResumen(filas, cual);
   // Un total en texto corrido (sin tabla) cuenta como una tabla más ('texto'): Botafogo 2025 trae el balance en texto (pág. 31) y la tabla de
   // reexpresión del año anterior (pág. 44) es la única con tabla; sin esto, quedaba esa.
-  return new Set(filas.filter((f) => f.balance && esTotalBalance(f.norm) && lado.test(f.norm)).map((f) => f.tabla ?? 'texto'));
+  return new Set(filas.filter((f) => f.balance && esTotalBalance(f.norm) && lado.test(f.norm) && !resumen.has(f.tabla)).map((f) => f.tabla ?? 'texto'));
 }
 // Si una familia tiene filas en más de una tabla y una de esas tablas es la ÚNICA del documento con el total, quedan solo las de esa tabla.
 // Una familia en una sola tabla, o sin tabla del total, queda igual.
@@ -523,7 +539,8 @@ function propuestaVocabulario(filas, cual, club, extraDeuda = []) {
   // suma): hija = su código de cuenta empieza con el de la otra, o, sin códigos, viene pegada abajo (hasta 2 líneas) con el mismo importe;
   // (b) en deuda, una fila con marca D (deudora: activo) no es deuda. Caso: Novorizontino 2016, "2.2.01 EMPRESTIMOS E FINANCIAMENTOS" y
   // "2.2.01.01 EMPRESTIMOS E MUTUOS" (15.965.049 cada una) se sumaban, más "1.2.02.05 CONTRATOS DE MUTUOS 4.000 D" (un préstamo dado).
-  const cand = filas.filter((f) => f.balance && re.test(f.norm) && !esTotal(f.etiqueta) && !(cual === 'deuda' && f.cd === 'D'));
+  const resumen = tablasResumen(filas, cual); // (to-do 260 b) las filas de una tabla resumen de varios años no cuentan
+  const cand = filas.filter((f) => f.balance && re.test(f.norm) && !esTotal(f.etiqueta) && !(cual === 'deuda' && f.cd === 'D') && !resumen.has(f.tabla));
   const hija = (f) => cand.some((g) => g !== f && ((g.codigo && f.codigo && f.codigo.length > g.codigo.length && f.codigo.startsWith(g.codigo))
     || (!f.codigo && g.linea < f.linea && f.linea - g.linea <= 2 && g.valor === f.valor)));
   const m = dedupe(soloTablaDelBalance(cand.filter((f) => !hija(f)), filas, cual)); // (deuda, mejora 1)
