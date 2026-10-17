@@ -245,7 +245,7 @@ IT (22)
   Sampdoria      4 ejercicios (2018 a 2021), balance, EUR
   Sassuolo       8 ejercicios (2018 a 2025), balance, EUR
   Torino         8 ejercicios (2018 a 2025), balance, EUR
-  Udinese        2 ejercicios (2021/2022, 2024/2025), balance, EUR, sin deuda/caja
+  Udinese        2 ejercicios (2021/2022, 2024/2025), balance, EUR
 
 JAPÓN (10)
   Cerezo Osaka         1 ejercicio (2025), balance, JPY, sin deuda/caja

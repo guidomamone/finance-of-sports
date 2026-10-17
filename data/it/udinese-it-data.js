@@ -99,7 +99,7 @@ const udineseitFiscalYearMeta = {
       {label:'imposte correnti (costo)', value:-2.531869},
       {label:'imposte differite e anticipate (ingreso)', value:1.4508},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:58.477675, cash:1.948196,
     officialTotalRevenue:141.695325, officialTotalExpenses:130.217417, officialPAT:2.923802,
   },
   2022: {
@@ -117,7 +117,7 @@ const udineseitFiscalYearMeta = {
       {label:'imposte correnti (costo)', value:-2.354788},
       {label:'imposte differite e anticipate (ingreso)', value:5.153111},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:81.313388, cash:44.180419,
     officialTotalRevenue:78.080238, officialTotalExpenses:136.368565, officialPAT:-69.053247,
   },
 };
