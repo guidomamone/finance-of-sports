@@ -219,6 +219,35 @@ function notaDeFila(L, ref) {
 // puede estar en las cifras; si pasa, la MISMA expresión de las cifras se corre sobre ese pedazo. Devuelve lo mismo que .match().
 const CIFRAS_RENGLON = /^([-(]?\d[\d.,' ]*\)?(?:\s+[-(]?\d[\d.,' ]*\)?)*)\s*$/u;
 const SOLO_CIFRAS = /^[\d.,'()\-\s]*$/u;
+// (2026-10-17, velocidad) ETIQUETA Y CIFRAS SEPARADAS POR DOS ESPACIOS, sin regex: era /^(.*?\p{L}[^\d(]*?)\s{2,}([-(\d].*)$/u, que en un
+// párrafo largo de prosa retrocede muchísimo (70% del tiempo de la tool: Benfica, 3 de 4,2 s). Misma respuesta: el primer tramo de 2 o más
+// espacios seguido de "-", "(" o una cifra, con una letra antes y sin cifra ni "(" entre esa letra y el tramo. Medido sobre los 1.357.940
+// renglones fuera de tabla de las 3.454 transcripciones: 0 distintos, 64 s -> 1,9 s.
+function partirRenglon(t) {
+  const tramos = /\s{2,}(?=[-(\d])/gu; let m; let ultLetra = -1, ultCifra = -1, hasta = 0;
+  while ((m = tramos.exec(t))) {
+    for (; hasta < m.index; hasta++) { const c = t[hasta]; if (/\p{L}/u.test(c)) ultLetra = hasta; else if (/[\d(]/.test(c)) ultCifra = hasta; }
+    if (ultLetra >= 0 && ultLetra > ultCifra) return [t, t.slice(0, m.index), t.slice(m.index + m[0].length)];
+  }
+  return null;
+}
+// (2026-10-17, velocidad) CIFRAS_RENGLON.test() sin retroceso: la expresión, cuando NO coincide, prueba todas las maneras de repartir los
+// espacios entre "dentro del número" y "separador" (56% del tiempo de --medir, 13 de 23,5 s). Este autómata acepta exactamente lo mismo (A
+// inicio, B después de "-" o "(", C dentro del número, D después de ")", F espacios); solo si acepta se corre la expresión para sacar las
+// cifras, y entonces coincide enseguida. Medido sobre los 199.377 pedazos distintos de las 3.454 transcripciones: 0 distintos, 211 s -> 0,08 s.
+function sonCifras(s) {
+  const A = 1, B = 2, C = 4, D = 8, F = 16; let st = A;
+  for (const ch of s) {
+    const esp = /\s/u.test(ch), dig = ch >= '0' && ch <= '9'; let nx = 0;
+    if (st & (A | F)) { if (ch === '-' || ch === '(') nx |= B; if (dig) nx |= C; }
+    if (st & B) { if (dig) nx |= C; }
+    if (st & C) { if (dig || ch === '.' || ch === ',' || ch === "'" || ch === ' ') nx |= C; if (ch === ')') nx |= D; if (esp) nx |= F; }
+    if (st & D) { if (esp) nx |= F; }
+    if (st & F) { if (esp) nx |= F; }
+    st = nx; if (!st) return false;
+  }
+  return (st & (C | D | F)) !== 0;
+}
 function renglonDeTexto(t) {
   let letra = -1; let corte = -1; // última letra y último dígito o "(": el rótulo (.*?\p{L}[^\d(]*?) termina en una letra seguida de nada de eso
   for (let k = 0; k < t.length; k++) {
@@ -226,7 +255,7 @@ function renglonDeTexto(t) {
     if (/\s/u.test(ch) && letra > corte) {
       let p = k; while (p < t.length && /\s/u.test(t[p])) p++;
       const resto = t.slice(p);
-      if (/^[-(]?\d/u.test(resto) && SOLO_CIFRAS.test(resto)) { const m = resto.match(CIFRAS_RENGLON); if (m) return [t, t.slice(0, k), m[1]]; }
+      if (/^[-(]?\d/u.test(resto) && SOLO_CIFRAS.test(resto) && sonCifras(resto)) { const m = resto.match(CIFRAS_RENGLON); if (m) return [t, t.slice(0, k), m[1]]; }
     }
     if (/\p{L}/u.test(ch)) letra = k; else if (/[\d(]/.test(ch)) corte = k;
   }
@@ -309,7 +338,7 @@ export function filasDelMd(md) {
       [etiqueta, crudos, ixPrim, jPrim] = segmentos.shift();
     } else {
       const t = l.replace(/\*\*/g, ''); if (!/\p{L}{3,}/u.test(t) || !/\d/.test(t)) continue;
-      const mm = t.match(/^(.*?\p{L}[^\d(]*?)\s{2,}([-(\d].*)$/u) || renglonDeTexto(t);
+      const mm = partirRenglon(t) || renglonDeTexto(t);
       if (!mm) continue; etiqueta = mm[1].trim(); crudos = (mm[2].match(IMPORTE_RE) || []);
     }
     const todas = [[etiqueta, crudos, ixPrim, jPrim], ...segmentos];
