@@ -117,6 +117,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento anterior): "Totale disponibilità liquide" pág. 29
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 0. Balance al 30/06/2025 D) sin filas financieras; la nota dice que no hay debiti verso banche per finanziamenti. Total 125.302.678.
+```
+
 ## 2024
 
 ### Ingresos
@@ -176,6 +180,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Totale disponibilità liquide" pág. 30
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 0. Balance al 30/06/2024 D) sin filas financieras; la nota dice que no hay debiti verso il sistema bancario per finanziamenti. Total 65.338.811.
 ```
 
 ### Liga
@@ -276,6 +284,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento anterior): "Totale disponibilità liquide" pág. 29
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 0. Balance al 30/06/2022: D) Debiti sin filas de deuda financiera; total 117.197.146.
+```
+
 ### Liga
 
 ```text
@@ -368,6 +380,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Totale disponibilità liquide" pág. 30
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 0. Balance al 30/06/2021: Passivo D) Debiti sin obbligazioni/soci/banche/otros financiadores (solo acconti, fornitori, tributari, previdenza, enti settore specifico, altri debiti). Total 129.337.422.
 ```
 
 ### Liga
@@ -473,6 +489,10 @@ tools/cargar.mjs (2026-10-08)
 2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): cierre = 2019-12-31. Guido 2026-10-07: el ejercicio 2019 cierra el 31/12 (después el club pasó a cerrar el 30/06)
 2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): name = ACF Fiorentina S.p.A.. Guido 2026-10-07: en 2019 la sociedad era S.p.A.; desde 2021-22 es S.r.l.
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): soci per finanziamenti (New ACF) 30.000.000 + banche (Intesa. breve) 7.500.000 + altri finanziatori 0 = 37.500.000. Obbligazioni 0; los 30M de soci son a largo plazo; banca 7,5M a corto.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): depositi bancari e postali 7.461.213 + assegni 0 + danaro e valori in cassa 24.448 = 7.485.661. Bilancio consolidato al 31/12/2019; Totale disponibilità liquide 7.485.662.
 ```
 
 ### Liga

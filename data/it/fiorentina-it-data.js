@@ -283,7 +283,7 @@ const fiorentinaitFiscalYearMeta = {
       {label:'imposte anticipate', value:0.283142},
       {label:'imposte differite', value:-2.645764},
     ],
-    grossDebt:null, cash:7.319917,
+    grossDebt:0, cash:7.319917,
     officialTotalRevenue:198.608828, officialTotalExpenses:216.162351, officialPAT:-23.233889,
   },
   2024: {
@@ -303,7 +303,7 @@ const fiorentinaitFiscalYearMeta = {
       {label:'imposte anticipate', value:-1.266178},
       {label:'imposte differite', value:2.882665},
     ],
-    grossDebt:null, cash:22.291413,
+    grossDebt:0, cash:22.291413,
     officialTotalRevenue:199.90294, officialTotalExpenses:204.577769, officialPAT:-5.989648,
   },
   2022: {
@@ -323,7 +323,7 @@ const fiorentinaitFiscalYearMeta = {
       {label:'imposte differite', value:-21.05199},
       {label:'proventi/oneri da consolidato fiscale', value:null},
     ],
-    grossDebt:null, cash:43.916037,
+    grossDebt:0, cash:43.916037,
     officialTotalRevenue:233.233005, officialTotalExpenses:160.886905, officialPAT:46.829946,
   },
   2021: {
@@ -343,7 +343,7 @@ const fiorentinaitFiscalYearMeta = {
       {label:'imposte differrite', value:2.565541},
       {label:'proventi/oneri da consolidato fiscale', value:0.770836},
     ],
-    grossDebt:null, cash:68.735809,
+    grossDebt:0, cash:68.735809,
     officialTotalRevenue:160.692424, officialTotalExpenses:169.780071, officialPAT:-10.372623,
   },
   2019: {
@@ -364,7 +364,7 @@ const fiorentinaitFiscalYearMeta = {
       {label:'imposte anticipate', value:-0.413417},
       {label:'proventi/oneri da consolidato fiscale', value:0},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:37.5, cash:7.485661,
     officialTotalRevenue:111.643033, officialTotalExpenses:141.780987, officialPAT:-27.522676,
   },
 };
