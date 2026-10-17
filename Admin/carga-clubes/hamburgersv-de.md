@@ -130,6 +130,10 @@ redondeo TEUR entre 6 componentes narrados por separado, documentado acá.
 officialPAT = Jahresüberschuss impreso EXACTO (4.397.047,71 EUR).
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Finanzverbindlichkeiten (nota): Anleihen 6.235 + Kreditinstitute 240 + Sonstige Finanzverbindlichkeiten 15.555 = 22.030 TEUR. La Wandelschuldverschreibung de 30.000 TEUR (antes en sonstige Verbindlichkeiten, 2024 incluida) pasó a la fila propia 'B. Wandelschuldverschreibung', a convertir en acciones a más tardar 29/06/2030; la nota la excluye de Finanzverbindlichkeiten, se excluye. Si se la cuenta como deuda: 52.030 TEUR. Neto impreso 13.956 = 35.986-22.030. Pregunta: ¿cuenta el convertible obligatorio como deuda? (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Kassenbestand, Guthaben bei Kreditinstituten 35.985.966,09 EUR. HSV Fußball AG & Co. KGaA (individual, HGB), EUR completos. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ## 2024
 
 ### Meta
