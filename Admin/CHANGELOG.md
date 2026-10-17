@@ -26,6 +26,10 @@ que dice `ESTADO.md` era verdad ese día.
 - Caja y deuda de los clubes sin año vecino (to-do 260 c): 19 ajustes `caja` / `deuda` leídos a mano en el balance, con página y línea (AVS
   2021, 2023 y 2024; Boavista 2024; Chaves 2022 y 2023; Mafra 2024; Tondela 2021; deuda de Felgueiras 2022-2024). AVS 2021 y Boavista 2024
   con deuda financiera 0 (sin financiamientos; Boavista: "Não aplicável", nota 29.2.5). Sin caja ni deuda: 299 -> 291 de 919.
+- Caja y deuda de los 7 clubes revertidos por escala (to-do 260 e): 51 propuestas revisadas contra el .md (subagentes Sonnet, un caso por
+  grupo comprobado a mano); 24 bien (Torino, Inter, Sassuolo, Ferroviária y 5 de Lazio) y 27 mal, cargadas con 29 ajustes citados (Lazio:
+  caja del consolidado, no del separado; 2000 en liras; Milan 2009-2010 del consolidado, no de la capogruppo; deuda italiana con altri
+  finanziatori, obbligazioni y soci). Criterio nuevo (Guido): los préstamos de socios cuentan como deuda. Sin caja ni deuda: 291 -> 249.
 - caja-deuda.mjs: dos expresiones que retrocedían (renglón de texto con cifras) pasan a recorridos lineales con la misma respuesta (0
   distintos en las 3.454 transcripciones). --medir 32 s -> 8,7 s; un club grande (Benfica) 4,2 -> 1,5 s.
 

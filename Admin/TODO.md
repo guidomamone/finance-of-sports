@@ -24,8 +24,8 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-1. **Caja y deuda**: faltan las dos en 291 de 919 ejercicios con balance (Italia 99, Rusia 78, Brasil, Grecia, Portugal, Alemania 15, Japón 10).
-   - Lo que queda del to-do 260: los 7 clubes revertidos por escala (Milan, Hellas Verona, Inter, Lazio, Sassuolo, Torino, Ferroviária), mirados uno por uno. Benfica y Sporting años viejos esperan el par de Jev / IA (por ahora no).
+1. **Caja y deuda**: faltan las dos en 249 de 919 ejercicios con balance (Italia 99, Rusia 78, Brasil, Grecia, Portugal, Alemania 15, Japón 10).
+   - Lo que queda del to-do 260: mejoras de script vistas en los 7 clubes revertidos (h, i, j); Benfica y Sporting años viejos esperan el par de Jev / IA (por ahora no).
    - Después: Rusia (caja y deuda podrían salir sin IA de los códigos del balance del fisco).
 
 2. **Transcripciones por subagentes** (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia): limpiar lo que no es del club, los duplicados y los arreglos chicos; validarlas (unos US$ 0,10 cada 50) y cargarlas.
@@ -231,6 +231,16 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
       frena la casualidad: Cuiabá 2025 (la IA da una línea con activo y pasivo lado a lado, y se toma "Clientes"), Porto 2016 (Jev mezcla
       la tabla resumen en miles con el balance), Vila Nova 2024 ("PASSIVO NÃO CIRCULANTE" + la fila) y Lazio 2022-2025 (hasta 12 filas).
       Guido (2026-10-17): por ahora, sin esto. Si se retoma: primero la línea con dos filas de la IA, después el emparejamiento.
+   h) PERÍMETRO EN LOS .md "SEPARATO-CONSOLIDATO" (Lazio 2008-2026): la PARTE I es el separado y la PARTE II el consolidado (desde ~L3000),
+      y la caja salía de la PARTE I aunque el club se carga consolidado (2011-12: 8.338.443 en L851 contra 10.159.614 en L3473). Cargado
+      con ajustes. Mirar por qué el perímetro de página no marca la PARTE I como individual.
+   i) DEUDA ITALIANA INCOMPLETA: el vocabulario toma "Debiti verso banche" y no suma "altri finanziatori", "obbligazioni" ni "soci per
+      finanziamenti" (Milan 2018, Hellas Verona 2020 y 2022, Lazio 2005). Criterio (Guido, 2026-10-17): los préstamos de socios cuentan.
+      Cargado con ajustes.
+   j) MILAN 2009-2010: el .md trae el consolidado (miles) y después el individual de la capogruppo (euros), y el escalón 1 tomó el
+      individual (L3498-3499). Cargado con ajustes.
+   Pendiente de mirar: Ferroviária 2023-2025, "Partes relacionadas" no corriente (3.844.165) puede ser un préstamo de una parte
+   relacionada (con el criterio de socios, contaría); hoy la deuda es solo "Empréstimos".
    g) CELDA DE NOTA CON COMA: Chaves 2021-22 "| Caixa e depósitos bancários | 13,4 | 157 336,73 |" (L386) y 2022-23 "13.4" (L287) se leen
       como importe (caja 13 €; el piso la frena, pero la fila buena no se propone). Cargado con ajustes; retomar si aparece en otro club.
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada

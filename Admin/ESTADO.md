@@ -98,7 +98,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   contestarlos primero (subagentes por grupos de clubes, con un archivo de criterio común). El lote vuelve a verificar solo un documento
   con respuestas nuevas; aun así, antes de pasar el comando conviene el ensayo de `cargar.mjs --desde-verificacion` de cada documento,
   porque frenos de la carga (signo del resultado, filas del otro lado) no se ven en la verificación.
-- Portugal está cargado salvo Benfica 2014-15 (en HALLAZGOS; to-do 165 b0). Caja y deuda: de 919 años con balance, 291 no tienen ni caja ni deuda (Rusia entera, buena parte de Italia; mejoras pendientes y los 7 clubes revertidos por escala: to-do 260). Del to-do 237
+- Portugal está cargado salvo Benfica 2014-15 (en HALLAZGOS; to-do 165 b0). Caja y deuda: de 919 años con balance, 249 no tienen ni caja ni deuda (Rusia entera, parte de Italia; mejoras pendientes: to-do 260). Los préstamos de socios cuentan como deuda (Guido, 2026-10-17). Del to-do 237
   queda solo `al` (Guido la dejó para después). Los años en escudos (PTE) se cargan en su moneda con la paridad fija al euro, como las liras.
   Un ejercicio de transición por cambio de cierre (11 meses que encadenan con el cierre anterior y el siguiente) se carga con nota pública.
 - `lote.mjs` saltea desde la etapa 3 los documentos cuyo año ya está en el sitio (salvo `--reintentar`): volver a correr una lista
