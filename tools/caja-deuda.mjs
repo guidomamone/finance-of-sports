@@ -296,7 +296,9 @@ export function filasDelMd(md) {
       // de miles siempre tiene grupos de 3). "6.8" o "12.4" NO entran (pueden ser decimales): los sigue resolviendo la lectura B. Casos
       // (lote 71, Grecia): Olympiacos 2017 L306 "| Ταμειακά διαθέσιμα | 24. | 1.820.725,55 |" se leía 24; Aris 2019 L504 "| ... | 7.1.3 |
       // 420.500,00 |" y Atromitos/Kifisia "| ... | 7.2.4 | 46.370,17 |" se leían 7 (la compuerta los rechazaba y el dato quedaba vacío).
-      const esRefNota = (c) => /^\p{L}{1,2}\s?\.?\s?\d{1,3}(?:\.\d{1,2})?$/u.test(c) || /^\d{1,3}\.$/.test(c) || /^\d{1,2}(?:\.\d{1,2}){2,3}\.?$/.test(c);
+      // (to-do 260 d) y una LISTA DE NOTAS separada por ";" ("3;8;9;21;", con o sin ";" final): el ";" nunca separa miles ni decimales de un
+      // importe. Caso: AVS 2022-23 "| Financiamentos obtidos | 3;8;9;21; | 4.495.141,06 | 2.062.069,19 |" (L352) daba deuda 38.921.
+      const esRefNota = (c) => /^\p{L}{1,2}\s?\.?\s?\d{1,3}(?:\.\d{1,2})?$/u.test(c) || /^\d{1,3}\.$/.test(c) || /^\d{1,2}(?:\.\d{1,2}){2,3}\.?$/.test(c) || /^\d{1,2}(?:\s*;\s*\d{1,2})+\s*;?$/.test(c);
       // (to-do 223) una celda que termina en "%" es un porcentaje, nunca un importe. Caso: AEK 2019, la fila de ratios "| Άμεση ρευστότητα |
       // Ταμειακά διαθέσιμα | 7.935.424,59 | 52,44% |" (L161) daba 52,44 como "año anterior" de la caja, y la compuerta de 2018 la encontraba
       // antes que la fila del balance.
@@ -473,10 +475,16 @@ export function familiasDelClub(precedentes, cual) {
 }
 
 // ESCALÓN 0: las filas de este documento con las familias del club.
-function propuestaPrecedente(filas, club) {
+function propuestaPrecedente(filas, club, cual = null) {
   if (!club) return null;
-  const elegidas = []; for (const fam of club.familias) { const f = filas.find((x) => x.balance && x.familia === fam); if (!f) return null; elegidas.push(f); }
-  return { escalon: 0, filas: elegidas, como: `precedente del club (${club.anio}: ${club.familias.join(' + ')})` };
+  // (to-do 260 d) EN DEUDA, EL PAR DE LA FAMILIA: si en este documento la familia del precedente está partida en no corriente + corriente
+  // (parCorrienteYNoCorriente, la misma regla del escalón 1), se proponen las dos filas, y en el documento vecino se busca el mismo par.
+  // Caso: Rio Ave 2024 y 2025, precedente 2023 "Financiamentos obtidos" (ese año solo corriente); 2025 tiene no corriente 424.305,56 (L333)
+  // y corriente 5.087.499,71 (L343), y se proponía solo la primera.
+  const filasDe = (doc) => { const out = []; for (const fam of club.familias) { const par = cual === 'deuda' ? parCorrienteYNoCorriente(doc, fam) : null; if (par) { out.push(...par); continue; } const f = doc.find((x) => x.balance && x.familia === fam); if (!f) return null; out.push(f); } return out; };
+  const elegidas = filasDe(filas); if (!elegidas) return null;
+  const conPar = cual === 'deuda' && club.familias.some((fam) => parCorrienteYNoCorriente(filas, fam));
+  return { escalon: 0, filas: elegidas, como: `precedente del club (${club.anio}: ${club.familias.join(' + ')})${conPar ? ', con corriente + no corriente' : ''}`, ...(conPar ? { enOtroDoc: (doc) => filasDe(doc) } : {}) };
 }
 // En OTRO documento del club, el total de su nota de efectivo (la tabla con una fila de caja que termina en un total que suma sus filas):
 // lo usa la compuerta para la propuesta "partes de la nota" (Versión 383), porque las filas cambian de nombre entre años (Fortaleza 2025:
@@ -732,7 +740,7 @@ export function escalera(filas, cual, { precedentes = [], factor = null, anterio
   const club = familiasDelClub(precedentes, cual);
   // (to-do 233 / 232 t) escalón 1b, Jev, entre el vocabulario y la IA cara: solo si se le pasó su respuesta (--jev).
   const ESC = [0, 1, '1b', 2];
-  const propuestas = [propuestaPrecedente(filas, club), propuestaVocabulario(filas, cual, club, extraDeuda), jev ? propuestaJev(filas, jev, cual) : null, ia ? propuestaIA(filas, ia, cual) : null];
+  const propuestas = [propuestaPrecedente(filas, club, cual), propuestaVocabulario(filas, cual, club, extraDeuda), jev ? propuestaJev(filas, jev, cual) : null, ia ? propuestaIA(filas, ia, cual) : null];
   const intentos = [];
   for (let i = 0; i < propuestas.length; i++) {
     const e = ESC[i]; const p = propuestas[i];

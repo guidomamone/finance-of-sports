@@ -710,7 +710,8 @@ Escribir: `--club <id> --ejecutar --escribir` (el valor en `data/`, sin comentar
  LECTURA DE FILAS  una sola referencia a nota; una celda con "%" no es un importe; activo y pasivo en la misma fila = dos filas; sin código de cuenta ni numeración
                    ("4)", "a)") para el diccionario. La referencia a nota es una escalera: escalón 1, si la tabla tiene una columna de
                    notas inequívoca antes de la cifra, la cifra es un importe (Novorizontino 2019 "| Empréstimos |  | 27 | 24 |");
-                   escalón 2, sin esa evidencia, el primer entero de 1-2 dígitos se descarta como nota; y (to-do 221) una columna de notas
+                   escalón 2, sin esa evidencia, el primer entero de 1-2 dígitos se descarta como nota; una lista de notas con ";"
+                   ("3;8;9;21;") nunca es importe (to-do 260 d, AVS 2022-23); y (to-do 221) una columna de notas
                    de varios niveles ("6.1", "6.8": la primera columna numérica, valores con punto, en orden creciente) se saca de la fila
                    (AEK 2018 "| Ταμειακά διαθέσιμα | 6.8 | 1.650.369,92 |" daba caja 6,8). Lo que ese detector no reconoce (AEK 2019,
                    notas sin orden) lo resuelven las DOS LECTURAS (to-do 223): cada propuesta se evalúa con la fila de siempre y sin la
@@ -737,7 +738,8 @@ Escribir: `--club <id> --ejecutar --escribir` (el valor en `data/`, sin comentar
             `caja-deuda-desproporcionada`, que revierte la escritura (Hellas Verona 2024, Milan 2009, Inter 2021, Lazio 2008-2019)
  AJUSTE MANUAL `caja` / `deuda` del año (Versiones 419 y 495): el número tal cual impreso, gana sobre la escalera y NO pasa por la
             compuerta (es una decisión de Guido)
- ESCALÓN 0  precedente del club (las familias que suman lo cargado en el año más cercano)
+ ESCALÓN 0  precedente del club (las familias que suman lo cargado en el año más cercano); en deuda, si la familia está partida en no
+            corriente + corriente en este documento, el par (to-do 260 d; Rio Ave 2024-2025)
  ESCALÓN 1  diccionario (vocabulario.mjs; en portugués también "Caixa e depósitos bancários", el rubro del SNC) + términos del club o
             del documento (ajuste `deuda-incluye`); jerarquía de balancete: padre e
             hija no se suman; cuenta D no es deuda. Además propone: deuda corriente + no corriente de la misma etiqueta (exactamente
