@@ -33,7 +33,7 @@ const fckobenhavndkFiscalYearMeta = {
     netInterest:10.620,
     tax:0,
     profitOnPlayerSales:0, assetSales:0,
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:76.684,
     officialTotalRevenue:754.513, officialTotalExpenses:718.897, officialPAT:46.236,
   },
 };

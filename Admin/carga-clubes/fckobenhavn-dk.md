@@ -147,6 +147,10 @@ _al lado del campo `grossDebt`:_
 fuera de alcance de esta carga (Finanzas), no se transcribió el detalle de Balance para deuda/caja
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Sin bankgæld ni lån: pasivo = Deposita 3.824 + Anden gæld 70.102 (largo plazo), Leverandører 25.986, Gæld til tilknyttede virksomheder 191.351, Anden gæld 123.056, Periodeafgrænsning 24.725. Duda: 'Gæld til tilknyttede virksomheder' 191.351 t.kr. (corriente, con la matriz PARKEN) y 'Anden gæld' no tienen nota que diga si son préstamos o saldos comerciales; se excluyeron. Si la matriz le prestó plata al club, la deuda sería 191.351 t.kr.; pregunta: ¿es préstamo intercompany? (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Likvide beholdninger 76.684 t.kr.. F.C. København P/S (entidad solo fútbol, no el koncern PARKEN); t.kr. = miles. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ## Gestiones
 
 _antes de John Dueholm (data/gestiones/dk.js):_
