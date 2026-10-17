@@ -229,7 +229,7 @@ IT (22)
   Atalanta       8 ejercicios (2018 a 2024/2025), balance, EUR
   Bologna        8 ejercicios (2017/2018 a 2024/2025), balance, EUR
   Chievo Verona  3 ejercicios (2013/2014 a 2015/2016), balance, EUR
-  Como           2 ejercicios (2023/2024 a 2024/2025), balance, EUR, sin deuda/caja
+  Como           2 ejercicios (2023/2024 a 2024/2025), balance, EUR
   Cremonese      4 ejercicios (2021/2022 a 2024/2025), balance, EUR
   Fiorentina     5 ejercicios (2019, 2020/2021, 2021/2022, 2023/2024, 2024/2025), balance, EUR
   Genoa          3 ejercicios (2022, 2023, 2024/2025), balance, EUR, sin deuda/caja

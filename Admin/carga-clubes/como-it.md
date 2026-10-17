@@ -221,6 +221,10 @@ tools/cargar.mjs (2026-10-07)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 0. Columna Como 1907: sin filas de deuda financiera (Totale debiti 129.886.387 = fornitori, controllanti, tributari, previdenza, altri debiti, enti settore specifico). Nota: debiti verso soci per finanziamenti (500k en 2024) se reclasificaron a riserva en julio 2024.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): depositi bancari e postali. columna Como 1907 7.710.969 + denaro e valori in cassa. columna Como 1907 1.752 = 7.712.721. Perímetro individual: columna Como 1907 del pro-forma (Totale IV 7.712.721); el consolidado pro-forma es 11.842.182.
+```
+
 ## 2024
 
 ### Ingresos
@@ -308,6 +312,10 @@ tools/cargar.mjs (2026-10-08)
 ```text
 2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (8.695). la sección D (rettifiche di valore) no se extrajo; mismo criterio que Milan 2023-24 y Bologna 2019-20 (D va al financiero)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 0. Sezione D) Debiti completa (Totale debiti 42.115.890) sin obbligazioni, soci per finanziamenti, banche ni altri finanziatori: solo fornitori, controllanti, tributari, previdenza, altri debiti y enti settore specifico. (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): depositi bancari e postali 3.297.564 + denaro e valori in cassa 282 = 3.297.846. Totale IV 3.297.846. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga

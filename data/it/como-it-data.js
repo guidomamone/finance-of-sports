@@ -112,7 +112,7 @@ const comoitFiscalYearMeta = {
       {label:'a) di partecipazioni (Como 1907)', value:-0.037},
       {label:'Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)', value:-0.000146},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:7.712721,
     officialTotalRevenue:55.396762, officialTotalExpenses:156.3911, officialPAT:-105.065627,
   },
   2024: {
@@ -128,7 +128,7 @@ const comoitFiscalYearMeta = {
       {label:'svalutazioni di partecipazioni (D 19, costo)', value:-0.008695},
       {label:'a) imposte correnti', value:null},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:3.297846,
     officialTotalRevenue:9.815507, officialTotalExpenses:56.386117, officialPAT:-47.756634,
   },
 };
