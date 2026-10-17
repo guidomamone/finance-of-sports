@@ -136,6 +136,10 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 76
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos no corriente 15 556 786 + corriente 6 086 914. Coincide con el total de la nota (línea 2934: 21 643 700).
+```
+
 ### Liga
 
 ```text
@@ -239,6 +243,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 79
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos no corriente 2 330 500 + corriente 11 792 130. Coincide con el total de la nota (línea 2970: 14 122 630).
 ```
 
 ### Liga
@@ -345,6 +353,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 69
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos no corriente 2 974 718 + corriente 4 134 449. Coincide con el total de la nota (línea 2787: 7 109 167).
+```
+
 ### Liga
 
 ```text
@@ -448,6 +460,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 66
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos no corriente 6 881 794 + corriente 4 018 430. Coincide con el total de la nota (línea 2800: 10 900 224).
+```
+
 ### Liga
 
 ```text
@@ -549,6 +565,10 @@ Generados/Portugal/Braga/relatorio-contas-2019-20.categorias.json (escalón de c
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos no corriente 11 765 997 + corriente 3 381 678. Incluye factoring, leasings y letras descontadas dentro de la fila Financiamentos obtidos (nota 11.3).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e depósitos bancários 17 039 809. Balance individual SAD en euros.
+```
+
 ### Liga
 
 ```text
@@ -634,6 +654,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 40
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos no corriente 7 929 893 + corriente 6 119 040. Balance individual SAD. La nota (línea 2338) abre: mútuo bancario, contas correntes caucionadas, títulos descontados, leasings y factoring (4.477.010 no corriente) contabilizados como financiamiento; total 14.048.933.
 ```
 
 ### Liga
