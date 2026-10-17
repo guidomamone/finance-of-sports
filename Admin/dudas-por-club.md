@@ -1929,6 +1929,10 @@ sin leerlo.
 ## Gestiones sin fecha confirmada (tanda Admin/gestiones-por-pais/tanda-2026-10-14-2, sesión 2026-10-15: no frena ninguna carga)
 
 Ni los balances ni una búsqueda web dan las fechas; el detalle de cada caso está en el `resultado-N.json` de la tanda (notas y dudas).
+- **Estoril Praia, quién presidía el conselho de administração de la SAD al 30/6/2025** (tanda-2026-10-17, lote 16): Ignacio Beristain
+  anunció su salida el 10/6/2025 "antes de la nueva temporada" (A Bola) sin fecha efectiva; el balance 2024/25 (aprobado el 28/10/2025) lo
+  firma Begoña Santiago, que según Record (1/5/2026) asumió "hace unos siete meses". ¿Fecha efectiva del cambio? — a quién preguntarle:
+  Estoril Praia SAD (o el registro comercial).
 - **CRB, quién presidía al 31/12/2020**: Marcos Barbosa presidió "entre 2011 y este início de 2021" (Gazeta Web); Mário Marroquim asumió el
   1/4/2021 y ya firma el balance 2020 (balanco-patrimonial-2020.md:69). ¿Hasta cuándo siguió Barbosa, hubo prórroga o un interino entre
   el 1/1 y el 1/4/2021? — a quién preguntarle: Conselho Deliberativo del CRB.
