@@ -85,6 +85,12 @@ balance también separa "Deudas" de "Ingresos anticipados"/"Fondos con destino e
 las separa, usá esa línea más angosta (deuda financiera real). `tools/caja-deuda.mjs` completa `cash` y `grossDebt` donde el sitio
 tiene null (ver `Admin/PIPELINE.md`); este criterio es el que hay que revisar en lo que propone.
 
+**Deuda financiera sin precedente del club** = bancos + otros financiadores + obligaciones + préstamos de socios, corriente + no
+corriente. Italia: debiti verso banche + altri finanziatori (factoring, anticipos) + obbligazioni + soci per finanziamenti (Hellas
+Verona 2022: 30.272.857 + 13.194.724 + 603.703). Fuera: proveedores, fiscal, previsional y traspasos (enti-settore specifico). Un .md
+con dos perímetros (Lazio "separato-consolidato": PARTE I separado, PARTE II consolidado; Milan: consolidado y después la capogruppo)
+se lee en el perímetro con que se carga el club.
+
 **Un balance que desglosa un rubro de gasto por SECTOR/DEPARTAMENTO permite separar "Salarios y primas (plantel y cuerpo técnico)"
 del resto del personal sin inventar nada.** El Anexo III de Vélez tiene "Remuneraciones al personal"/"Cargas sociales" como FILAS y
 Fútbol Profesional/Amateur/Complejo Polideportivo/Enseñanza/Culturales/Otros Deportes como COLUMNAS, con total por fila y por
