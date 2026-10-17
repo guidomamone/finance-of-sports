@@ -241,7 +241,7 @@ IT (22)
   Monza          3 ejercicios (2022 a 2024), balance, EUR
   Napoli         8 ejercicios (2017/2018 a 2024/2025), balance, EUR
   Parma          9 ejercicios (2015/2016, 2016/2017, 2017/2018, 2018/2019, 2021, 2022, 2023, 2024, 2025), balance, EUR
-  Salernitana    2 ejercicios (2021/2022 a 2022/2023), balance, EUR, sin deuda/caja
+  Salernitana    2 ejercicios (2021/2022 a 2022/2023), balance, EUR
   Sampdoria      4 ejercicios (2018 a 2021), balance, EUR, sin deuda/caja
   Sassuolo       8 ejercicios (2018 a 2025), balance, EUR
   Torino         8 ejercicios (2018 a 2025), balance, EUR

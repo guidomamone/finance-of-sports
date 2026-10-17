@@ -82,7 +82,7 @@ const salernitanaitFiscalYearMeta = {
       {label:'Imposte correnti', value:-1.285966},
       {label:'Imposte differite e anticipate', value:4.571514},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:1.913877, cash:7.02114,
     officialTotalRevenue:46.248943, officialTotalExpenses:66.155069, officialPAT:-16.787721,
   },
   2023: {
@@ -100,7 +100,7 @@ const salernitanaitFiscalYearMeta = {
       {label:'Imposte correnti', value:-1.515571},
       {label:'imposte anticipate', value:8.698883},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:31.556675, cash:5.459064,
     officialTotalRevenue:70.935215, officialTotalExpenses:105.049875, officialPAT:-29.625747,
   },
 };

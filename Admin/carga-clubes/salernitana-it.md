@@ -126,6 +126,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): debiti verso banche non correnti 663.991 + debiti verso banche correnti 500.761 + debiti verso altri finanziatori correnti (24.1) 30.391.923 = 31.556.675. 24.1 son ~30M de anticipos de crédito (cesión de derechos audiovisivi) + canoni de locazioni finanziarie del resto, que no se pueden separar (nota: 30.416 migliaia). Excluido 17.2 (157.396, canoni de locazioni/licenze, IFRS 16).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): depositi bancari e postali 5.406.624 + danaro e valori in cassa 52.440 = 5.459.064. Disponibilità liquide e mezzi equivalenti 5.459.063 (30/06/2023).
+```
+
 ### Liga
 
 ```text
@@ -171,6 +175,10 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): debiti verso banche non correnti 1.164.752 + debiti verso banche correnti 475.203 + debiti verso altri finanziatori correnti (24.1) 273.922 = 1.913.877. El .md de 2022 está mal transcripto (OCR): imprime 1.184.732 / 475.277 / 272.824 (=1.932.833), pero su nota dice 1.165 / 475 / 274 migliaia; se usan los importes del comparativo 2022 del bilancio 2023 (pág. 13), que coinciden con las notas. Excluido 17.2 (272.433 = canoni de locaciones, IFRS 16). Si Guido prefiere lo impreso en el .md de 2022: 1.932.833. (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): depositi bancari e postali 7.000.106 + danaro e valori in cassa 21.034 = 7.021.140. Total impreso 7.021.140 (30/06/2022). El comparativo del bilancio 2023 muestra 7.221.109 para el mismo cierre (reexpresado: 7.196.075+25.034); se toma el del propio documento del año. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ## Gestiones
