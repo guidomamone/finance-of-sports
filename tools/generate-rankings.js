@@ -286,9 +286,26 @@ function regionesDe(api, porLiga) {
   return out;
 }
 
-function archivoRegiones(regiones) {
+// EL ÍNDICE DE LIGAS de la pestaña Ligas (estado frío): por liga, su ejercicio por defecto (el de más clubes, a igual cantidad el más
+// reciente: la misma regla que anioPorDefecto() de js/liga.js), cuántos clubes trae y de cuántos (null = nadie lo verificó). Así la
+// grilla dice qué hay en cada liga sin bajar los data/rankings/<liga>.js.
+function indiceDe(porLiga) {
+  const out = {};
+  for (const leagueId of Object.keys(porLiga).sort()) {
+    const anios = Object.keys(porLiga[leagueId]).map(Number)
+      .sort((a, b) => (porLiga[leagueId][b].clubs.length - porLiga[leagueId][a].clubs.length) || (b - a));
+    const r = porLiga[leagueId][anios[0]];
+    out[leagueId] = [anios[0], r.clubs.length, r.leagueSize == null ? null : r.leagueSize];
+  }
+  return out;
+}
+
+function archivoRegiones(regiones, indice) {
   const L = [];
-  L.push('// GENERADO por tools/generate-rankings.js: no editar a mano (el formato, en regionesDe() del generador).');
+  L.push('// GENERADO por tools/generate-rankings.js: no editar a mano (el formato, en regionesDe() e indiceDe() del generador).');
+  L.push('window.RANKINGS_INDICE = {');
+  for (const [id, v] of Object.entries(indice)) L.push(`  ${JSON.stringify(id)}: ${JSON.stringify(v)},`);
+  L.push('};');
   L.push('window.RANKINGS_REGION = {');
   for (const [id, r] of Object.entries(regiones)) {
     L.push(`  ${id}: { year:${r.year}, total:${r.total}, clubs:[`);
@@ -344,7 +361,7 @@ function main() {
   }
 
   const archivos = Object.keys(porLiga).map(l => [l + '.js', () => archivoDe(api, l, porLiga[l])]);
-  archivos.push(['_regiones.js', () => archivoRegiones(regionesDe(api, porLiga))]);
+  archivos.push(['_regiones.js', () => archivoRegiones(regionesDe(api, porLiga), indiceDe(porLiga))]);
   const esperados = new Set(archivos.map(a => a[0]));
   const enDisco = fs.readdirSync(OUT_DIR).filter(f => f.endsWith('.js'));
   const desfasados = [];

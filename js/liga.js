@@ -7,8 +7,9 @@
 // - El default es el ejercicio con MÁS clubes, no el más reciente (los balances tardan en publicarse: el más nuevo es el más flaco).
 // - Los números salen de data/rankings/<liga>.js, precalculado por tools/generate-rankings.js con el motor real: no se baja ningún
 //   data/<país>/<club>-data.js.
-// - Barras de un color sólido (no apiladas: el bolsón sin desglosar y los segmentos negativos no se leerían), en orden ascendente
-//   en el gráfico y descendente en la tabla, con el número escrito arriba de cada barra (con eje lineal, un club chico es un hilo).
+// - El ranking son barras horizontales en el color de cada club, de mayor a menor, con el monto escrito (con eje lineal, un club
+//   chico es un hilo). La composición va aparte, una barra apilada por club: el bolsón sin desglosar en beige y un tramo negativo
+//   nombrado debajo, porque no se puede apilar.
 // ============================================================================
 window.LIGA_VIEW = (function(){
   'use strict';
@@ -23,15 +24,6 @@ window.LIGA_VIEW = (function(){
   // El texto del buscador de "sumar un club": UI efímera, se resetea al navegar a otra liga o volver.
   var buscadorQ = '';
   function norm(s){ return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
-  // Instancias de Chart.js por pantalla: cada una destruye lo suyo antes de redibujar. Hoy solo la pestaña Ligas dibuja gráficos
-  // (la vidriera de Inicio son tarjetas HTML).
-  var instancias = { liga: [] };
-  function nueva(donde, chart){ instancias[donde].push(chart); return chart; }
-  function matarCharts(donde){
-    instancias[donde].forEach(function(c){ try { c.destroy(); } catch(e){} });
-    instancias[donde] = [];
-  }
-
   function $(id){ return document.getElementById(id); }
   function t(key, es){ return (window.I18N && window.I18N.t) ? window.I18N.t(key, es) : es; }
   // Traduce una etiqueta de bucket, como tLabel() en js/finanzas-render.js (solo las de data/site-labels.js; el resto pasa intacta).
@@ -64,7 +56,7 @@ window.LIGA_VIEW = (function(){
   // El bolsón "sin desglosar por la fuente" se identifica por su etiqueta (la clave de los buckets en data/site-labels.js). Si se
   // renombra en js/finanzas-calc.js hay que renombrarlo acá: si no, el aviso deja de mostrarse sin romper nada.
   var LUMP_LABEL = 'Fútbol profesional (sin desglosar por la fuente)';
-  // El total de los cargados: una sola cuenta para grafico(), tabla(), salvedades() y tarjetaLiga().
+  // El total de los cargados: una sola cuenta para rankingCard(), salvedades() y tarjetaLiga().
   function totalDe(r){
     return r.clubs.reduce(function(s, f){ return s + f.revenue; }, 0);
   }
@@ -271,7 +263,6 @@ window.LIGA_VIEW = (function(){
   function render(){
     var wrap = $('ligaWrap');
     if(!wrap) return;
-    matarCharts('liga');
     wrap.innerHTML = '';
     if(!st.league){ wrap.appendChild(estadoFrio()); return; }
 
@@ -280,16 +271,18 @@ window.LIGA_VIEW = (function(){
     if(!r){
       wrap.appendChild(el('p', 'liga-vacio', t('liga.nodata',
         'Todavía no hay ningún ejercicio cargado de esta liga.')));
-      wrap.appendChild(estadoFrio());
       return;
     }
 
     wrap.appendChild(encabezado(r));
-    wrap.appendChild(panelSimulacion(r));
     var filasSim = st.simulados.map(function(s){ return s.fila; });
-    wrap.appendChild(grafico(r, st.league, st.year, 'ligaChart', null, 'liga', filasSim));
-    wrap.appendChild(tabla(r, filasSim));
-    wrap.appendChild(desglose(r, filasSim));
+    var grilla = el('div', 'lg-grilla');
+    grilla.appendChild(rankingCard(r, filasSim));
+    var der = el('div', 'lg-col');
+    der.appendChild(composicion(r, filasSim));
+    der.appendChild(panelSimulacion(r));
+    grilla.appendChild(der);
+    wrap.appendChild(grilla);
     wrap.appendChild(salvedades(r));
   }
 
@@ -298,7 +291,10 @@ window.LIGA_VIEW = (function(){
   // EL PANEL DE SIMULACIÓN, siempre visible en una liga: primero el buscador de "sumar un club"; si hay algo simulado, una línea
   // por club con su posición, la salvedad, el dropdown de liga y "Quitar todas".
   function panelSimulacion(r){
-    var caja = el('div', 'liga-sim-panel');
+    var caja = el('article', 'vid-card liga-sim-panel');
+    caja.appendChild(el('h2', 'lg-card-h', t('liga.sim.title', '¿Dónde quedaría otro club?')));
+    caja.appendChild(el('p', 'lg-card-sub', t('liga.sim.sub',
+      'Sumá un club o una liga entera a este ranking, solo por ingresos. No cambia los números reales.')));
     caja.appendChild(buscadorAgregarClub());
     if(!st.simulados.length) return caja;
 
@@ -457,14 +453,16 @@ window.LIGA_VIEW = (function(){
           || ligaDe(a).name.localeCompare(ligaDe(b).name, 'es', {sensitivity:'base'});
       });
   }
+  // La pastilla de una liga con datos: nombre y qué hay (del índice de data/rankings/_regiones.js, sin bajar el ranking).
   function botonLiga(lid){
-    var lg = ligaDe(lid), co = paisDe(lid);
-    var b = el('button', 'liga-frio-btn');
+    var ix = (window.RANKINGS_INDICE || {})[lid];
+    var b = el('button', 'lg-liga');
     b.type = 'button';
-    b.appendChild(el('span', 'liga-frio-flag', co.flag || '🏆'));
-    b.appendChild(el('span', 'liga-frio-n', lg.name));
-    b.appendChild(el('span', 'liga-frio-m',
-      [co.key ? t(co.key, co.name) : '', window.tierLabel ? window.tierLabel(lg.tier) : ''].filter(Boolean).join(' · ')));
+    b.appendChild(el('span', 'lg-liga-n', ligaDe(lid).name));
+    if(ix){
+      var dato = ix[2] != null ? ix[1] + ' ' + t('vid.of', 'de') + ' ' + ix[2] : nClubes(ix[1]);
+      b.appendChild(el('span', 'lg-liga-m', dato + ' · ' + ix[0]));
+    }
     // Modo simulación: si hay clubes esperando destino, la grilla usa la liga elegida como destino en vez de navegar.
     b.addEventListener('click', function(){
       if(pendingSim.length) showConSimulados(lid, null, pendingSim);
@@ -478,40 +476,114 @@ window.LIGA_VIEW = (function(){
     if(nombres.length <= 3) return nombres.join(' + ');
     return nombres.slice(0, 2).join(' + ') + ' + ' + (nombres.length - 2) + ' ' + t('liga.sim.mas', 'más');
   }
+  // EL ESTADO FRÍO: un buscador (liga o país), las regiones como filtro y una fila por país con sus ligas en orden de división. Solo
+  // las ligas con datos se pueden elegir; las demás quedan al final, plegadas. El índice (data/rankings/_regiones.js) se baja una vez.
+  var frioQ = '', frioRegion = null;
+  function conDatos(lid){ return !!(window.RANKINGS_INDICE || {})[lid]; }
   function estadoFrio(){
-    var caja = el('div', 'liga-frio');
+    var caja = el('div', 'lg-frio');
     if(pendingSim.length){
-      caja.appendChild(el('p', 'liga-frio-t',
-        t('liga.sim.pick', 'Elegí la liga donde querés ver a') + ' '
+      var aviso = el('div', 'lg-frio-sim');
+      aviso.appendChild(el('p', null, t('liga.sim.pick', 'Elegí la liga donde querés ver a') + ' '
         + nombresLista(pendingSim.map(function(s){ return s.clubId; }))));
       var cancelar = el('button', 'liga-sim-cancelar', t('liga.sim.cancelar', 'Cancelar'));
       cancelar.type = 'button';
       cancelar.addEventListener('click', function(){ pendingSim = []; render(); });
-      caja.appendChild(cancelar);
-    } else {
-      caja.appendChild(el('p', 'liga-frio-t', t('liga.pick', 'Elegí una liga')));
+      aviso.appendChild(cancelar);
+      caja.appendChild(aviso);
     }
+    var barra = el('div', 'lg-frio-barra');
+    var campo = el('div', 'lg-buscar');
+    campo.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>';
+    var input = document.createElement('input');
+    input.type = 'search';
+    input.value = frioQ;
+    input.placeholder = t('liga.search', 'Buscá una liga o un país: Brasil, Serie A…');
+    input.setAttribute('aria-label', t('liga.searchAria', 'Buscar una liga o un país'));
+    campo.appendChild(input);
+    barra.appendChild(campo);
+    var chips = el('div', 'lg-regiones');
+    chips.setAttribute('role', 'group');
+    barra.appendChild(chips);
+    caja.appendChild(barra);
+    var lista = el('div', 'lg-frio-lista');
+    caja.appendChild(lista);
 
-    (window.REGIONS || []).forEach(function(reg){
-      var paises = paisesDeRegionAlfa(reg.id).filter(function(cid){ return ligasDePaisAlfa(cid).length; });
-      if(!paises.length) return;
-
-      var cont = el('div', 'liga-frio-cont');
-      cont.appendChild(el('h3', 'liga-frio-cont-t', t(reg.key, reg.name)));
-      var grid = el('div', 'liga-frio-grid');
-      paises.forEach(function(cid){
-        ligasDePaisAlfa(cid).forEach(function(lid){ grid.appendChild(botonLiga(lid)); });
+    function ligasDeRegion(regId){
+      var out = [];
+      paisesDeRegionAlfa(regId).forEach(function(cid){ out = out.concat(ligasDePaisAlfa(cid)); });
+      return out;
+    }
+    function pintarChips(){
+      chips.innerHTML = '';
+      var regs = [{ id:null, nombre:t('liga.all', 'Todas'), n:Object.keys(window.RANKINGS_INDICE || {}).length }];
+      (window.REGIONS || []).forEach(function(reg){
+        var n = ligasDeRegion(reg.id).filter(conDatos).length;
+        if(n) regs.push({ id:reg.id, nombre:t(reg.key, reg.name), n:n });
       });
-      cont.appendChild(grid);
-      caja.appendChild(cont);
-    });
-
+      regs.forEach(function(x){
+        var b = el('button', 'lg-region' + (frioRegion === x.id ? ' activa' : ''));
+        b.type = 'button';
+        b.setAttribute('aria-pressed', frioRegion === x.id ? 'true' : 'false');
+        b.appendChild(document.createTextNode(x.nombre + ' '));
+        b.appendChild(el('span', 'lg-region-n', String(x.n)));
+        b.addEventListener('click', function(){ frioRegion = x.id; pintarChips(); pintarLista(); });
+        chips.appendChild(b);
+      });
+    }
+    // Pinta SOLO la lista: si repintara todo, el input perdería el foco en cada tecla.
+    function pintarLista(){
+      lista.innerHTML = '';
+      var q = norm(frioQ.trim());
+      var sinDatos = [];
+      (window.REGIONS || []).forEach(function(reg){
+        if(frioRegion && frioRegion !== reg.id) return;
+        var filas = [];
+        paisesDeRegionAlfa(reg.id).forEach(function(cid){
+          var co = window.COUNTRIES[cid];
+          var nomPais = t(co.key, co.name);
+          var ligas = ligasDePaisAlfa(cid).filter(function(lid){
+            return !q || norm(nomPais).indexOf(q) >= 0 || norm(ligaDe(lid).name).indexOf(q) >= 0;
+          });
+          ligas.filter(function(lid){ return !conDatos(lid); }).forEach(function(lid){ sinDatos.push(nomPais + ': ' + ligaDe(lid).name); });
+          ligas = ligas.filter(conDatos);
+          if(!ligas.length) return;
+          var fila = el('div', 'lg-pais');
+          var nom = el('div', 'lg-pais-n');
+          nom.appendChild(el('span', 'lg-flag', co.flag || ''));
+          nom.appendChild(document.createTextNode(nomPais));
+          fila.appendChild(nom);
+          var pills = el('div', 'lg-pais-ligas');
+          ligas.forEach(function(lid){ pills.appendChild(botonLiga(lid)); });
+          fila.appendChild(pills);
+          filas.push(fila);
+        });
+        if(!filas.length) return;
+        var sec = el('section', 'lg-reg');
+        sec.appendChild(el('h2', 'lg-reg-h', t(reg.key, reg.name)));
+        var card = el('div', 'lg-reg-card');
+        filas.forEach(function(f){ card.appendChild(f); });
+        sec.appendChild(card);
+        lista.appendChild(sec);
+      });
+      if(!lista.children.length) lista.appendChild(el('p', 'lg-frio-nada', t('liga.sim.sinresultados', 'Ningún club o liga coincide.')));
+      if(sinDatos.length){
+        var det = el('details', 'lg-sindatos');
+        det.appendChild(el('summary', null, sinDatos.length + ' ' + t('liga.noDataYet', 'ligas sin datos todavía')));
+        det.appendChild(el('p', null, sinDatos.join(' · ')));
+        lista.appendChild(det);
+      }
+    }
+    input.addEventListener('input', function(){ frioQ = input.value; pintarLista(); });
+    // El índice es chico y se baja una sola vez; mientras tanto se dibuja la grilla sin los conteos.
+    pintarChips(); pintarLista();
+    if(!window.RANKINGS_INDICE) loadRanking('_regiones').then(function(){ if(caja.isConnected){ pintarChips(); pintarLista(); } });
     return caja;
   }
 
   // EL BOTÓN DE VOLVER a la grilla de ligas.
   function botonVolver(){
-    var b = el('button', 'liga-volver', '‹ ' + t('liga.back', 'Volver a Ligas'));
+    var b = el('button', 'liga-volver', '← ' + t('liga.back', 'Todas las ligas'));
     b.type = 'button';
     b.addEventListener('click', function(){
       // Con una simulación activa, volver deja elegir OTRA liga para LOS MISMOS clubes en vez de resetear todo.
@@ -523,148 +595,39 @@ window.LIGA_VIEW = (function(){
     return b;
   }
 
-  // EL ENCABEZADO (convención de Our World in Data): el título es la métrica y el sujeto; el subtítulo, la cobertura y la unidad,
-  // en prosa.
+  // EL ENCABEZADO: la liga como título; país, división y cobertura en una línea; los ejercicios como pastillas que dicen cuántos
+  // clubes trae cada uno, para no elegir a ciegas.
   function encabezado(r){
-    var caja = el('div', 'liga-head');
+    var caja = el('div', 'lg-head');
     var lg = ligaDe(st.league), co = paisDe(st.league);
-    var fila = el('div', 'liga-head-top');
-
-    var h = el('h2', 'liga-h');
-    h.appendChild(el('span', 'liga-flag', co.flag || '🏆'));
-    h.appendChild(document.createTextNode(' ' + lg.name + ' · '
-      + t('liga.exercise', 'Ejercicio') + ' ' + st.year));
-    fila.appendChild(h);
-    fila.appendChild(selectorDeAnio());
-    caja.appendChild(fila);
-
+    var txt = el('div', 'lg-head-txt');
+    var h = el('h2', 'lg-h');
+    h.appendChild(el('span', 'lg-flag', co.flag || ''));
+    h.appendChild(document.createTextNode(lg.name));
+    txt.appendChild(h);
     // "N de M" SOLO si leagueSize existe: inventar el M sería justo el dato inventado que data/club-leagues.js existe para evitar.
     var n = r.clubs.length;
-    var sub = r.leagueSize != null
-      ? n + ' ' + t('liga.of', 'de los') + ' ' + r.leagueSize + ' '
-        + t('liga.cover', 'clubes de esa temporada tienen ejercicio cargado.')
-      : nClubes(n) + ' ' + t('liga.coverN', 'con ejercicio cargado. No está verificado cuántos equipos jugaron esa temporada, así que el sitio no dice de cuántos son.');
-    caja.appendChild(el('p', 'liga-sub', sub));
-    caja.appendChild(el('p', 'liga-sub chico', t('liga.units',
-      'En USD y en Formato simplificado: las dos condiciones para que los números de clubes de países distintos signifiquen lo mismo.')));
-    return caja;
-  }
+    var cob = r.leagueSize != null
+      ? n + ' ' + t('liga.of', 'de los') + ' ' + r.leagueSize + ' ' + t('liga.coverY', 'clubes de la temporada tienen ejercicio') + ' ' + st.year
+      : nClubes(n) + ' ' + t('liga.coverNY', 'con ejercicio') + ' ' + st.year;
+    txt.appendChild(el('p', 'lg-sub', [co.key ? t(co.key, co.name) : '', window.tierLabel ? window.tierLabel(lg.tier) : '', cob]
+      .filter(Boolean).join(' · ')));
+    caja.appendChild(txt);
 
-  // El selector de ejercicio: cada opción dice cuántos clubes trae, para no elegir a ciegas.
-  function selectorDeAnio(){
-    var ys = aniosDe(st.league);
-    var caja = el('label', 'liga-anio');
-    caja.appendChild(el('span', 'liga-anio-l', t('liga.year', 'Ejercicio')));
-    var sel = el('select');
-    ys.forEach(function(y){
-      var o = el('option', null, y + ' · ' + nClubes(rankingDe(st.league, y).clubs.length));
-      o.value = y;
-      if(y === st.year) o.selected = true;
-      sel.appendChild(o);
+    var anios = el('div', 'lg-anios');
+    anios.appendChild(el('span', 'lg-anios-l', t('liga.year', 'Ejercicio')));
+    var pills = el('div', 'lg-anios-p');
+    aniosDe(st.league).forEach(function(y){
+      var b = el('button', 'lg-region' + (y === st.year ? ' activa' : ''));
+      b.type = 'button';
+      b.setAttribute('aria-pressed', y === st.year ? 'true' : 'false');
+      b.appendChild(document.createTextNode(y + ' '));
+      b.appendChild(el('span', 'lg-region-n', '· ' + rankingDe(st.league, y).clubs.length));
+      b.addEventListener('click', function(){ st.year = y; render(); });
+      pills.appendChild(b);
     });
-    sel.addEventListener('change', function(){ st.year = Number(sel.value); render(); });
-    caja.appendChild(sel);
-    return caja;
-  }
-
-  // EL GRÁFICO de la pestaña Ligas: una serie con backgroundColor como array (cada barra en su color de marca).
-  function grafico(r, leagueId, year, canvasId, alto, donde, simulados){
-    var caja = el('div', 'liga-chart-card');
-    var head = el('div', 'liga-chart-head');
-    head.appendChild(el('span', 'liga-chart-y', 'M USD'));
-    caja.appendChild(head);
-    var box = el('div', 'liga-chart-box');
-    if(alto) box.style.height = alto + 'px';
-    var cv = document.createElement('canvas');
-    cv.id = canvasId;
-    box.appendChild(cv);
-    caja.appendChild(box);
-
-    if(typeof Chart === 'undefined') return caja;
-
-    // Ascendente: el dato se guarda descendente (el orden de la tabla) y acá se invierte.
-    var filas = filasConSimulado(r, simulados).slice().reverse();
-    // Color de marca de cada club; brandColor es opcional (un club cuyo color es el blanco lleva null) y cae al azul del sitio, como
-    // pintarCrest() en js/selector.js. La barra simulada va translúcida para que nadie la lea como un club que juega ahí.
-    var colores = filas.map(function(f){
-      var base = clubDe(f.id).brandColor || '#0a2b5c';
-      return f.simulado ? base + '80' : base;
-    });
-
-    // Arriba de cada barra: el total, y debajo, más chico, el % que esa barra es del total de la liga-ejercicio.
-    var total = totalDe(r);
-    var etiquetas = {
-      id:'ligaValueLabels',
-      afterDatasetsDraw: function(chart){
-        var c = chart.ctx, meta = chart.getDatasetMeta(0);
-        c.save();
-        c.textAlign = 'center';
-        meta.data.forEach(function(bar, i){
-          var v = filas[i].revenue;
-          var pct = total ? Math.round((v / total) * 100) : null;
-          c.textBaseline = 'bottom';
-          c.font = '600 11px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif';
-          c.fillStyle = '#1c1c1c';
-          c.fillText(v >= 1000 ? (v / 1000).toFixed(2) + ' MM' : v.toFixed(1),
-            bar.x, bar.y - (pct != null ? 14 : 4));
-          if(pct != null){
-            // "(31%)" y no "31% del total": con 20 barras rotadas 45° una frase larga se pisa con la del vecino.
-            c.font = '500 9px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif';
-            c.fillStyle = '#6b6b6b';
-            c.fillText('(' + pct + '%)', bar.x, bar.y - 4);
-          }
-          // Marca "(simulado)" sobre la barra, además de la transparencia.
-          if(filas[i].simulado){
-            c.font = '700 9px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif';
-            c.fillStyle = '#8a5a00';
-            c.fillText(t('liga.sim.tag', '(simulado)'), bar.x, bar.y - (pct != null ? 26 : 16));
-          }
-        });
-        c.restore();
-      }
-    };
-
-    // Se usa `cv` (el canvas que creó ESTA llamada), nunca getElementById(canvasId): con dos renders seguidos de Inicio los canvasId
-    // se repiten y el setTimeout del primero pintaba sobre el canvas del segundo ("Canvas is already in use"). Chart.getChart(cv) es la
-    // segunda red, por si el canvas se reusara.
-    setTimeout(function(){
-      if(!cv.isConnected) return;
-      var previo = Chart.getChart(cv);
-      if(previo) previo.destroy();
-      nueva(donde, new Chart(cv.getContext('2d'), {
-        type:'bar',
-        data:{
-          labels: filas.map(function(f){ return nombreDe(f.id); }),
-          // maxBarThickness: con pocos clubes Chart.js reparte todo el ancho y las barras salen del tamaño de un cartel.
-          datasets:[{ label:t('liga.revenue', 'Ingresos'), data: filas.map(function(f){ return f.revenue; }),
-                      backgroundColor: colores, borderWidth:0, maxBarThickness:64 }]
-        },
-        options:{
-          responsive:true, maintainAspectRatio:false, layout:{padding:{top:34}},
-          plugins:{
-            legend:{display:false},
-            tooltip:{ callbacks:{
-              label: function(c){ return fmtM(c.parsed.y); },
-              // El tooltip dice el ejercicio DE ESE CLUB. Para una fila simulada `year` es el de la liga destino, no el del club: se usa su .year.
-              afterLabel: function(c){ return etiquetaEjercicio(filas[c.dataIndex], filas[c.dataIndex].year || year); }
-            } }
-          },
-          scales:{
-            y:{ beginAtZero:true, title:{display:false} },
-            // Rotación fija en 45° (con minRotation:0 Chart.js rota de menos y los nombres se pisan); autoSkip:false porque saltear una
-            // etiqueta es saltear un club del ranking.
-            x:{ title:{display:false},
-                ticks:{ maxRotation:45, minRotation:45, autoSkip:false, font:{size:11} } }
-          },
-          // Cada barra linkea a su club: el ranking es superficie de navegación.
-          onClick: function(e, act){
-            if(!act.length) return;
-            irAlClub(filas[act[0].index].id);
-          }
-        },
-        plugins:[etiquetas]
-      }));
-    }, 0);
+    anios.appendChild(pills);
+    caja.appendChild(anios);
     return caja;
   }
 
@@ -677,120 +640,116 @@ window.LIGA_VIEW = (function(){
     Promise.resolve(api.pickClub(clubId)).then(function(){ api.goFinanzas(); });
   }
 
-  // LA TABLA: donde el dato de un club chico sigue siendo legible aunque su barra sea un hilo.
-  function tabla(r, simulados){
-    var caja = el('div', 'liga-tabla-card');
-    // OJO: un array vacío es truthy; por eso `.length`.
-    var tb = el('table', 'liga-tabla' + (simulados && simulados.length ? ' con-simulado' : ''));
-    var trh = el('tr');
-    [['#', 'liga-col-n'], [t('liga.club', 'Club'), ''], [t('liga.revenue', 'Ingresos'), 'num'],
-     [t('liga.exerciseCol', 'Ejercicio'), ''], [t('liga.doc', 'Documento'), '']]
-      .forEach(function(c){ trh.appendChild(el('th', c[1], c[0])); });
-    var thead = el('thead'); thead.appendChild(trh); tb.appendChild(thead);
-
-    var tbody = el('tbody');
-    var total = totalDe(r);
-    filasConSimulado(r, simulados).forEach(function(f, i){
-      var tr = el('tr', f.simulado ? 'liga-fila-simulada' : null);
-      tr.appendChild(el('td', 'liga-col-n', String(i + 1)));
-
-      var tdc = el('td');
-      var pin = el('span', 'liga-pin');
-      pin.style.background = clubDe(f.id).brandColor || '#0a2b5c';
-      tdc.appendChild(pin);
-      var a = el('button', 'liga-club-link', nombreDe(f.id));
-      a.type = 'button';
-      a.addEventListener('click', function(){ irAlClub(f.id); });
-      tdc.appendChild(a);
-      // "(simulado)" dentro de la celda del nombre, no en una columna nueva que correría la tabla en el caso normal.
-      if(f.simulado) tdc.appendChild(el('span', 'liga-sim-badge', t('liga.sim.tag', '(simulado)')));
-      tr.appendChild(tdc);
-
-      tr.appendChild(el('td', 'num', fmtM(f.revenue)));
-      tr.appendChild(el('td', 'liga-col-ej', etiquetaEjercicio(f, f.year || st.year)));
-
-      // El tipo de documento no es decoración: un presupuesto o una copia no oficial entre balances cerrados no se leen igual.
-      var tdd = el('td', 'liga-col-doc');
-      var esp = f.reportType === 'official_budget';
-      var noOf = f.reportType === 'unofficial_mirror';
-      var et = el('span', 'liga-doc' + (esp ? ' presu' : '') + (noOf ? ' nooficial' : ''),
-        t('fuentes.tipo.' + f.reportType, (window.sourceTypeLabel ? window.sourceTypeLabel(f.reportType) : f.reportType)));
-      tdd.appendChild(et);
-      // El link va a la página estática fuentes/<club>.html, no a sources{}, que solo tiene los clubes con data file cargado.
-      var lnk = el('a', 'liga-doc-link', t('liga.sources', 'fuentes'));
+  // EL RANKING: una fila por club con la barra en su color, el ejercicio y el documento debajo del nombre, y el total de los cargados.
+  // Un club simulado va en ámbar y con su marca: nadie lo puede leer como un club que juega ahí.
+  function rankingCard(r, simulados){
+    var card = el('article', 'vid-card lg-rank');
+    var head = el('div', 'lg-card-head');
+    head.appendChild(el('h2', 'lg-card-h', t('liga.revenue', 'Ingresos')));
+    head.appendChild(el('span', 'lg-card-sub', t('liga.rankSub', 'En dólares · tocá un club para ver su ficha')));
+    card.appendChild(head);
+    var filas = filasConSimulado(r, simulados);
+    var max = filas.reduce(function(m, f){ return Math.max(m, f.revenue); }, 0);
+    var ol = el('ol', 'lg-filas');
+    filas.forEach(function(f, i){
+      var li = el('li', 'lg-fila' + (f.simulado ? ' simulada' : ''));
+      var color = clubDe(f.id).brandColor || 'var(--azul)';
+      li.appendChild(el('span', 'vid-pos', String(i + 1)));
+      var nom = el('div', 'lg-fila-nom');
+      var b = el('button', 'lg-club');
+      b.type = 'button';
+      var dot = el('span', 'vid-dot'); dot.style.background = color;
+      b.appendChild(dot);
+      b.appendChild(el('span', 'vid-nom-t', nombreDe(f.id)));
+      b.addEventListener('click', function(){ irAlClub(f.id); });
+      nom.appendChild(b);
+      var doc = el('span', 'lg-doc');
+      if(f.simulado) doc.appendChild(el('span', 'liga-sim-badge', t('liga.sim.tag', '(simulado)') + ' '));
+      // El tipo de documento no es decoración: un presupuesto o una copia no oficial entre balances cerrados no se leen igual. El link
+      // va a la página estática fuentes/<club>.html, no a sources{}, que solo tiene los clubes con data file cargado.
+      var lnk = el('a', 'lg-doc-link' + (f.reportType === 'official_budget' ? ' presu' : '') + (f.reportType === 'unofficial_mirror' ? ' nooficial' : ''),
+        etiquetaEjercicio(f, f.year || st.year));
       lnk.href = 'fuentes/' + f.id + '.html';
-      tdd.appendChild(lnk);
-      tr.appendChild(tdd);
-      tbody.appendChild(tr);
+      doc.appendChild(lnk);
+      nom.appendChild(doc);
+      li.appendChild(nom);
+      var barra = el('span', 'vid-barra');
+      var lleno = el('span'); lleno.style.background = color;
+      if(f.simulado) lleno.style.opacity = '.5';
+      lleno.style.width = max > 0 ? Math.max(2, Math.round(f.revenue / max * 100)) + '%' : '0';
+      barra.appendChild(lleno);
+      li.appendChild(barra);
+      li.appendChild(el('span', 'vid-val', fmtCard(f.revenue)));
+      ol.appendChild(li);
     });
-    tb.appendChild(tbody);
-
-    var tfoot = el('tfoot');
-    var trf = el('tr');
-    trf.appendChild(el('td', 'liga-col-n', ''));
+    card.appendChild(ol);
     // "Total de los N cargados", nunca "total de la liga": son cosas distintas.
-    trf.appendChild(el('td', null, t('liga.total', 'Total de los') + ' ' + r.clubs.length + ' '
-      + t('liga.totalLoaded', 'cargados')));
-    trf.appendChild(el('td', 'num', fmtM(total)));
-    trf.appendChild(el('td', null, ''));
-    trf.appendChild(el('td', null, ''));
-    tfoot.appendChild(trf);
-    tb.appendChild(tfoot);
-
-    caja.appendChild(tb);
-    return caja;
+    var pie = el('div', 'vid-card-pie');
+    pie.appendChild(el('span', null, t('liga.total', 'Total de los') + ' ' + r.clubs.length + ' ' + t('liga.totalLoaded', 'cargados')));
+    pie.appendChild(el('strong', 'lg-total', fmtCard(totalDe(r))));
+    card.appendChild(pie);
+    return card;
   }
 
-  // EL DESGLOSE POR CATEGORÍA: solo ingresos, en las categorías de Formato simplificado, siempre visible debajo de la tabla. Sale de
-  // f.mix (ya precalculado en data/rankings/). El % de cada fila es del ingreso DE ESE CLUB, no de la liga (ese lo da el gráfico).
-  function desglose(r, simulados){
-    var caja = el('div', 'liga-desglose-card');
-    caja.appendChild(el('h3', 'liga-desglose-h', t('liga.breakdown', 'Desglose de ingresos por categoría')));
-    caja.appendChild(el('p', 'liga-desglose-sub', t('liga.breakdown.sub',
-      'La composición de cada club, en las mismas categorías de Formato simplificado que se ven en su ficha individual de Finanzas.')));
+  // DE DÓNDE SALE LA PLATA: el ingreso de cada club partido en las categorías de Formato simplificado (f.mix, precalculado), una
+  // barra apilada por club con la leyenda arriba. Cada tramo dice su categoría, monto y % al pasar el mouse. Un tramo negativo (una
+  // deducción del ingreso bruto) no se puede apilar: se nombra debajo, igual que la fila que el documento junta con otra.
+  var PALETA_MIX = ['#0a2b5c', '#4f86d9', '#f2b705', '#1b7a3d', '#b5372b', '#7a5ea8', '#2a9d8f', '#b9bec7', '#e38b2c'];
+  function composicion(r, simulados){
+    var card = el('article', 'vid-card lg-mix');
+    card.appendChild(el('h2', 'lg-card-h', t('liga.breakdown', 'De dónde sale la plata')));
+    card.appendChild(el('p', 'lg-card-sub', t('liga.breakdown.sub',
+      'El ingreso de cada club, partido en las mismas categorías de su ficha de Finanzas.')));
+    var filas = filasConSimulado(r, simulados);
+    // Un color por categoría, en el orden de cuánto pesa en el ranking; el bolsón sin desglosar siempre en beige.
+    var pesos = {};
+    filas.forEach(function(f){ f.mix.forEach(function(m){ if(m[1] > 0) pesos[m[0]] = (pesos[m[0]] || 0) + m[1]; }); });
+    var cats = Object.keys(pesos).filter(function(c){ return c !== LUMP_LABEL; }).sort(function(a, b){ return pesos[b] - pesos[a]; });
+    var colorDe = {};
+    cats.forEach(function(c, i){ colorDe[c] = PALETA_MIX[i % PALETA_MIX.length]; });
+    if(pesos[LUMP_LABEL]){ colorDe[LUMP_LABEL] = '#e0d6c2'; cats.push(LUMP_LABEL); }
 
-    filasConSimulado(r, simulados).forEach(function(f){
-      var bloque = el('div', 'liga-desglose-club' + (f.simulado ? ' liga-fila-simulada' : ''));
-      var head = el('div', 'liga-desglose-club-head');
-      var pin = el('span', 'liga-pin');
-      pin.style.background = clubDe(f.id).brandColor || '#0a2b5c';
-      head.appendChild(pin);
-      var a = el('button', 'liga-club-link', nombreDe(f.id));
-      a.type = 'button';
-      a.addEventListener('click', function(){ irAlClub(f.id); });
-      head.appendChild(a);
-      if(f.simulado) head.appendChild(el('span', 'liga-sim-badge', t('liga.sim.tag', '(simulado)')));
-      head.appendChild(el('span', 'liga-desglose-club-total', fmtM(f.revenue)));
-      bloque.appendChild(head);
-
-      f.mix.forEach(function(m){
-        var pct = f.revenue ? Math.round((m[1] / f.revenue) * 100) : 0;
-        var fila = el('div', 'liga-desglose-fila');
-        fila.appendChild(el('span', 'liga-desglose-cat', tLabel(m[0])));
-        fila.appendChild(el('span', 'liga-desglose-val', fmtM(m[1]) + ' · ' + pct + '%'));
-        bloque.appendChild(fila);
-      });
-      // La fila que el documento junta con otra (fiscalYearMeta.incluidoEn) se nombra, en vez de no aparecer.
-      (f.incluidos || []).forEach(function(m){
-        var fila = el('div', 'liga-desglose-fila liga-desglose-incluido');
-        fila.appendChild(el('span', 'liga-desglose-cat', tLabel(m[0])));
-        // Texto corto; el rubro, en el bocadillo (js/info-tip.js).
-        var val = el('span', 'liga-desglose-val pl-incluido', m[2] ? t('finanzas.posibleDentroOtro', 'Posiblemente dentro de otro rubro') : t('finanzas.dentroOtro', 'Dentro de otro rubro'));
-        val.setAttribute('data-info-tip', window.FINANZAS_DENTRO_TIP(m[1], !!m[2])); val.setAttribute('tabindex', '0');
-        fila.appendChild(val);
-        bloque.appendChild(fila);
-      });
-      caja.appendChild(bloque);
+    var ley = el('div', 'lg-ley');
+    cats.forEach(function(c){
+      var it = el('span', 'lg-ley-it');
+      var sw = el('span', 'lg-ley-sw'); sw.style.background = colorDe[c];
+      it.appendChild(sw);
+      it.appendChild(document.createTextNode(tLabel(c)));
+      ley.appendChild(it);
     });
+    card.appendChild(ley);
 
-    return caja;
+    var lista = el('div', 'lg-mix-filas');
+    filas.forEach(function(f){
+      var fila = el('div', 'lg-mix-fila' + (f.simulado ? ' simulada' : ''));
+      fila.appendChild(el('span', 'lg-mix-n', nombreDe(f.id)));
+      var barra = el('span', 'lg-mix-barra');
+      var pos = f.mix.filter(function(m){ return m[1] > 0; });
+      var sumaPos = pos.reduce(function(a, m){ return a + m[1]; }, 0);
+      pos.forEach(function(m){
+        var seg = el('span');
+        seg.style.background = colorDe[m[0]];
+        seg.style.width = (sumaPos ? m[1] / sumaPos * 100 : 0).toFixed(2) + '%';
+        seg.title = tLabel(m[0]) + ': ' + fmtM(m[1]) + ' · ' + (f.revenue ? Math.round(m[1] / f.revenue * 100) : 0) + '%';
+        barra.appendChild(seg);
+      });
+      fila.appendChild(barra);
+      var notas = [];
+      f.mix.filter(function(m){ return m[1] < 0; }).forEach(function(m){ notas.push(tLabel(m[0]) + ': ' + fmtM(m[1])); });
+      (f.incluidos || []).forEach(function(m){
+        notas.push(tLabel(m[0]) + ': ' + (m[2] ? t('finanzas.posibleDentroOtro', 'Posiblemente dentro de otro rubro') : t('finanzas.dentroOtro', 'Dentro de otro rubro')) + ' (' + tLabel(m[1]) + ')');
+      });
+      if(notas.length) fila.appendChild(el('span', 'lg-mix-nota', notas.join(' · ')));
+      lista.appendChild(fila);
+    });
+    card.appendChild(lista);
+    return card;
   }
 
   // LAS SALVEDADES: lo que hace no comparables dos números grandes se escribe, no se deja implícito (modelo: "Basis of preparation"
   // del Deloitte Football Money League).
   function salvedades(r){
-    var caja = el('div', 'liga-avisos');
-    caja.appendChild(el('h3', null, t('liga.caveats', 'Salvedades')));
+    var caja = el('div', 'lg-avisos');
     var out = [];
 
     if(r.leagueSize != null && r.clubs.length < r.leagueSize){
@@ -841,7 +800,7 @@ window.LIGA_VIEW = (function(){
     out.push(t('liga.cv.zero',
       'Un club sin ejercicio cargado no aparece con una barra en cero: simplemente no está.'));
 
-    out.forEach(function(x){ caja.appendChild(el('p', null, '· ' + x)); });
+    caja.appendChild(el('p', null, out.join(' ')));
     return caja;
   }
 
@@ -980,13 +939,15 @@ window.LIGA_VIEW = (function(){
     });
   }
 
-  // La tarjeta de ranking: o = { titulo, sub, filas:[{id, revenue, league?}], pais?, conPais?, pie?, aviso?, ver? }.
+  // La tarjeta de ranking: o = { titulo, sub, filas:[{id, revenue, league?}], pais? (código: se muestra su bandera), conPais? (la
+  // bandera de cada club), pie?, aviso?, ver? }.
   function tarjeta(o){
     var card = el('article', 'vid-card');
     var head = el('div', 'vid-card-head');
     var tit = el('div');
     var h = el('h3', 'vid-card-h');
-    if(o.pais) h.appendChild(el('span', 'vid-chip', o.pais));
+    var bandera = o.pais && ((window.COUNTRIES || {})[o.pais] || {}).flag;
+    if(bandera) h.appendChild(el('span', 'vid-chip', bandera));
     h.appendChild(document.createTextNode(o.titulo));
     tit.appendChild(h);
     tit.appendChild(el('div', 'vid-card-sub', o.sub));
@@ -1012,7 +973,7 @@ window.LIGA_VIEW = (function(){
       var dot = el('span', 'vid-dot'); dot.style.background = color;
       nom.appendChild(dot);
       nom.appendChild(el('span', 'vid-nom-t', nombreDe(f.id)));
-      if(o.conPais) nom.appendChild(el('span', 'vid-pais', clubDe(f.id).country || ''));
+      if(o.conPais) nom.appendChild(el('span', 'vid-pais', ((window.COUNTRIES || {})[clubDe(f.id).country] || {}).flag || ''));
       b.appendChild(nom);
       var barra = el('span', 'vid-barra');
       var lleno = el('span'); lleno.style.background = color;

@@ -780,28 +780,20 @@ Texto movido sin cambios.
   loguea puede volver a ver lo que ya miró. Pendiente antes de que sirva para un visitante real,
   no solo Guido: to-do 94 (publicar la pantalla de consentimiento OAuth de Google, que arranca en
   modo "Testing", y agregar el dominio de producción a los Redirect URLs de Supabase).
-- PESTAÑA LIGAS (Versión 183, to-do 23(c); ampliada en la Versión 243, to-do 68):
-  el ranking de ingresos de los clubes de una liga en UN ejercicio. Vive en
-  `js/liga.js` y lee `data/rankings/<liga>.js`, así que NO baja ningún
-  `data/<país>/<club>-data.js` (1 a 3,4 KB gzip por liga, contra 18-101 KB que costaría en
-  vivo). Barras verticales ascendentes en el `brandColor` de cada club, con el
-  valor en M/MM USD y, debajo, el % que esa barra representa del total de la
-  liga-ejercicio (Versión 243) escritos arriba de cada barra; tabla con
-  puesto/club/ingresos/ejercicio/documento; DEBAJO DE LA TABLA, un desglose de
-  ingresos por categoría de Formato simplificado de cada club (Versión 243, el
-  dato ya estaba precalculado en `mix` desde la Versión 182 — solo se usaba para
-  el aviso del bolsón sin desglosar), SIEMPRE VISIBLE y sin toggle: pedido
-  explícito de Guido, "que se halle scrolleando"; y salvedades derivadas del dato.
-  TRES REGLAS QUE LA ORDENAN: el ejercicio está siempre escrito y es cambiable
-  (un ranking es (liga, EJERCICIO), nunca (liga)); el default es el ejercicio con
-  MÁS clubes y no el más reciente, porque los balances tardan en publicarse; y el
-  "N de M" solo se escribe si `leagueSizeAt()` lo sabe. Se llega por el nav
-  (estado frío: la grilla de ligas agrupadas por continente — Versión 232 — con
-  país y liga alfabéticos y, cuando un país tiene más de una liga cargada, la
-  liga ordenada por DIVISIÓN, `tier` ascendente, no alfabético por nombre —
-  Versión 243) o eligiendo una liga en el selector, que hasta acá terminaba en
-  Finanzas del primer club de esa liga por orden alfabético. No necesita club
-  activo.
+- PESTAÑA LIGAS (mockup: artboards "Ligas" del artifact "Pantallas FoS — Inicio"). El ranking de ingresos de los clubes de una liga
+  en UN ejercicio. Vive en `js/liga.js` y lee `data/rankings/<liga>.js`, así que NO baja ningún `data/<país>/<club>-data.js`.
+  ESTADO FRÍO (se llega por el nav): sin título que repita la pestaña; un buscador (liga o país), las regiones como filtro con cuántas
+  ligas tienen datos, y una fila por país (alfabético) con sus ligas en orden de división (`tier`), cada una con "N de M · año" o "N
+  clubes · año". Eso sale de `window.RANKINGS_INDICE` (en `data/rankings/_regiones.js`, generado), así que la grilla no baja los
+  rankings. Las ligas sin datos van al final, plegadas y sin poder entrar. UNA LIGA: "← Todas las ligas", el nombre con su bandera,
+  país · división · cobertura, y los ejercicios como pastillas con cuántos clubes trae cada uno. Abajo, dos columnas (una en el
+  teléfono): a la izquierda el ranking con barras horizontales en el color de cada club, el ejercicio de cada uno como link a su
+  página de fuentes (presupuesto o copia no oficial en ámbar) y el total de los cargados; a la derecha "De dónde sale la plata" (una
+  barra apilada por club, colores por peso en el ranking y el bolsón sin desglosar en beige; un tramo negativo o una fila "dentro de
+  otro rubro" se nombran debajo) y el simulador. Las salvedades, en un párrafo chico al pie. TRES REGLAS QUE LA ORDENAN: el
+  ejercicio está siempre escrito y es cambiable (un ranking es (liga, EJERCICIO), nunca (liga)); el default es el ejercicio con MÁS
+  clubes y no el más reciente, porque los balances tardan en publicarse; y el "N de M" solo se escribe si `leagueSizeAt()` lo sabe.
+  Las banderas (no los códigos de país) son las de `COUNTRIES[...].flag`, también en las tarjetas de Inicio.
 - SIMULAR CLUBES (O LIGAS ENTERAS) EN UNA LIGA QUE NO ES LA SUYA (Versiones 281-285, to-do 83) — por
   ingresos, no predicción deportiva. DOS caminos, misma vista de resultado: (a) desde Finanzas, el card
   "<club> en otra liga" (Versión 532; hasta ahí era un botón en la barra de controles), con el balance más nuevo elegido; (b) desde CUALQUIER liga, un buscador ("Sumar un

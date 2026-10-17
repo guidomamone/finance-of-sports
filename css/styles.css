@@ -462,7 +462,7 @@
   .vid-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:14px;}
   .vid-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;}
   .vid-card-h{margin:0;font-size:18px;display:flex;align-items:center;gap:8px;}
-  .vid-chip{font-size:11px;font-weight:800;color:var(--azul);background:#eef1f6;border-radius:4px;padding:2px 6px;}
+  .vid-chip{font-size:20px;line-height:1;}
   .vid-card-sub{font-size:13px;color:var(--muted);margin-top:4px;}
   .vid-filas{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px;}
   .vid-fila{width:100%;display:grid;grid-template-columns:20px minmax(0,1.3fr) minmax(0,1fr) 92px;align-items:center;gap:10px;
@@ -473,7 +473,7 @@
   .vid-nom{display:flex;align-items:center;gap:8px;min-width:0;}
   .vid-nom-t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
   .vid-dot{width:10px;height:10px;border-radius:50%;flex:0 0 auto;box-shadow:inset 0 0 0 1px rgba(0,0,0,.12);}
-  .vid-pais{font-size:10px;font-weight:800;color:var(--muted);flex:0 0 auto;}
+  .vid-pais{font-size:14px;line-height:1;flex:0 0 auto;}
   .vid-barra{height:10px;border-radius:5px;background:#eef0f3;overflow:hidden;}
   .vid-barra > span{display:block;height:100%;border-radius:5px;}
   .vid-val{text-align:right;font-weight:700;white-space:nowrap;}
@@ -892,100 +892,97 @@
   .cd-q{display:inline-flex;align-items:center;justify-content:center;width:15px;height:15px;border-radius:50%;border:1px solid #c9c9c4;
         color:var(--muted);font-size:10px;font-weight:700;margin-left:5px;cursor:help;vertical-align:1px;text-transform:none;letter-spacing:0;}
   /* ======================================================================
-     PESTAÑA LIGAS (Versión 183, to-do 23(c)). El ranking de ingresos de una
-     liga en un ejercicio. Reusa el lenguaje visual de la pestaña Comparar
-     (`.cd-*`): card blanco sobre el fondo, tabla con la cabecera subrayada en
-     azul, salvedades en gris chico abajo.
+     PESTAÑA LIGAS. Mismo lenguaje que las tarjetas de Inicio (.vid-card). El
+     estado frío es un buscador, las regiones como filtro y una fila por país;
+     la liga elegida, el ranking con barras horizontales a la izquierda y la
+     composición y el simulador a la derecha (una sola columna en el teléfono).
      ====================================================================== */
-  #ligaWrap{max-width:1000px;}
   .liga-vacio{color:var(--muted);font-size:13.5px;margin:0 0 18px;}
-  /* ESTADO FRÍO: la grilla de las 8 ligas. Se llega acá por el botón del nav sin
-     haber elegido nada, y una pantalla vacía sería peor que una lista. */
-  .liga-frio{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;}
-  .liga-frio-t{margin:0 0 12px;font-weight:700;font-size:15px;}
-  /* Un card por continente (Versión 2026-09-26): cada uno con su título y su
-     propia grilla, para que "Sudamérica" no se mezcle visualmente con "Asia". */
-  .liga-frio-cont{margin-bottom:20px;}
-  .liga-frio-cont:last-child{margin-bottom:0;}
-  .liga-frio-cont-t{margin:0 0 10px;font-size:12px;font-weight:700;text-transform:uppercase;
-    letter-spacing:.05em;color:var(--muted);border-bottom:1px solid var(--border);padding-bottom:6px;}
-  .liga-frio-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px;}
-  .liga-frio-btn{display:flex;align-items:center;gap:9px;flex-wrap:wrap;text-align:left;
-    background:#fff;border:1px solid var(--border);border-radius:8px;padding:10px 12px;cursor:pointer;
-    font:inherit;color:inherit;transition:.15s;}
-  .liga-frio-btn:hover{border-color:var(--azul);background:#f6f9ff;}
-  .liga-frio-flag{font-size:18px;line-height:1;}
-  .liga-frio-n{font-weight:700;font-size:14px;}
-  .liga-frio-m{flex-basis:100%;color:var(--muted);font-size:11.5px;}
-  /* EL BOTÓN DE VOLVER, arriba de la liga elegida. Mismo lenguaje visual que
-     `.liga-club-link` (texto azul sin fondo), para no sumar un tercer estilo de
-     botón a la pestaña. */
-  .liga-volver{display:inline-flex;align-items:center;gap:4px;background:none;border:none;
-    padding:0;margin:0 0 14px;font:inherit;font-size:13px;font-weight:700;color:var(--azul);cursor:pointer;}
+  .liga-volver{display:inline-flex;align-items:center;gap:4px;min-height:36px;background:none;border:none;
+    padding:0;margin:0 0 8px;font:inherit;font-size:14px;font-weight:700;color:var(--azul);cursor:pointer;}
   .liga-volver:hover{text-decoration:underline;}
-  /* ENCABEZADO: título = métrica + sujeto + ejercicio, subtítulo = cobertura y
-     unidad, los dos en prosa (convención de Our World in Data). */
-  .liga-head{margin-bottom:18px;}
-  .liga-head-top{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;}
-  .liga-h{margin:0;font-size:20px;}
-  .liga-flag{font-size:20px;}
-  .liga-sub{color:var(--muted);font-size:13px;margin:6px 0 0;line-height:1.5;max-width:720px;}
-  .liga-sub.chico{font-size:12px;margin-top:4px;}
-  .liga-anio{display:flex;align-items:center;gap:7px;flex-shrink:0;}
-  .liga-anio-l{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;font-weight:700;}
-  .liga-anio select{font:inherit;font-size:13px;padding:6px 9px;border:1px solid var(--border);border-radius:7px;background:#fff;}
-  /* EL GRÁFICO. Alto fijo y no aspect-ratio: con 20 clubes los nombres del eje X
-     se rotan y necesitan lugar propio, que un alto proporcional al ancho no da
-     en una pantalla angosta. */
-  .liga-chart-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 16px 10px;margin-bottom:18px;}
-  .liga-chart-head{display:flex;justify-content:flex-start;}
-  .liga-chart-y{font-size:11px;color:var(--muted);font-weight:700;}
-  .liga-chart-box{position:relative;height:360px;}
-  /* LA TABLA. Es donde el club chico sigue siendo legible: en LaLiga la barra de
-     Alavés es 1/18 de la de Real Madrid, su fila se lee igual que las demás. */
-  .liga-tabla-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:8px 16px;margin-bottom:18px;overflow-x:auto;}
-  .liga-tabla{width:100%;border-collapse:collapse;}
-  .liga-tabla th, .liga-tabla td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--border);white-space:nowrap;}
-  .liga-tabla thead th{border-bottom:2px solid var(--azul);font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);}
-  .liga-tabla tfoot td{border-bottom:none;font-weight:700;padding-top:12px;}
-  .liga-tabla .num{text-align:right;font-variant-numeric:tabular-nums;font-weight:700;}
-  .liga-col-n{width:34px;color:var(--muted);font-variant-numeric:tabular-nums;}
-  /* El cuadradito del color de marca del club (Versión 178), la misma idea que el
-     círculo de iniciales del selector pero al tamaño de una fila de tabla. */
-  .liga-pin{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:8px;vertical-align:middle;}
-  .liga-club-link{background:none;border:none;padding:0;font:inherit;font-weight:600;color:var(--azul);cursor:pointer;text-align:left;}
-  .liga-club-link:hover{text-decoration:underline;}
-  .liga-col-ej{color:var(--muted);font-size:12.5px;}
-  .liga-col-doc{font-size:12px;}
-  /* El tipo de documento NO es decoración: en la Primera 2024 el puesto 1 es una
-     copia no oficial y el 7 es un presupuesto. Los dos se marcan en color. */
-  .liga-doc{color:var(--muted);}
-  .liga-doc.presu{color:#9a6b00;font-weight:700;}
-  .liga-doc.nooficial{color:#9a6b00;font-weight:700;}
-  .liga-doc-link{margin-left:8px;color:var(--azul);font-size:11.5px;}
-  /* EL DESGLOSE POR CATEGORÍA (to-do 68(a)). Sin toggle: va siempre visible, un
-     bloque por club, ordenado igual que la tabla del ranking. */
-  .liga-desglose-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;margin-bottom:18px;}
-  .liga-desglose-h{font-size:14px;margin:0 0 6px;}
-  .liga-desglose-sub{color:var(--muted);font-size:12px;margin:0 0 14px;line-height:1.5;max-width:720px;}
-  .liga-desglose-club{padding:10px 0;border-top:1px solid var(--border);}
-  .liga-desglose-club:first-child{border-top:none;padding-top:0;}
-  .liga-desglose-club-head{display:flex;align-items:center;gap:8px;margin-bottom:6px;}
-  .liga-desglose-club-total{margin-left:auto;font-weight:700;font-variant-numeric:tabular-nums;font-size:13px;}
-  /* padding-left de la fila: alinea con el nombre del club, después del pin (9px) y su gap (8px). */
-  .liga-desglose-fila{display:flex;justify-content:space-between;gap:14px;padding:3px 0 3px 17px;font-size:12.5px;}
-  .liga-desglose-cat{color:var(--muted);}
-  .liga-desglose-val{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap;}
-  .liga-avisos{margin-top:4px;}
-  .liga-avisos h3{font-size:14px;margin:0 0 7px;}
-  .liga-avisos p{color:var(--muted);font-size:12px;line-height:1.55;margin:0 0 5px;}
+  .lg-flag{font-size:1.15em;line-height:1;margin-right:8px;}
+  /* Estado frío */
+  .lg-frio{display:flex;flex-direction:column;gap:20px;}
+  .lg-frio-sim{background:#fff8ea;border:1px solid #e3c07a;border-radius:14px;padding:14px 16px;color:#5c4300;font-weight:600;}
+  .lg-frio-sim p{margin:0;}
+  .lg-frio-barra{display:flex;flex-wrap:wrap;align-items:center;gap:12px;}
+  .lg-buscar{flex:1 1 320px;display:flex;align-items:center;gap:10px;height:48px;padding:0 14px;background:#fff;
+    border:2px solid var(--azul);border-radius:10px;color:var(--azul);box-sizing:border-box;}
+  .lg-buscar input{flex:1 1 auto;min-width:0;border:0;outline:none;font:inherit;font-size:16px;background:transparent;color:var(--text);}
+  .lg-buscar:focus-within{box-shadow:0 0 0 3px rgba(10,43,92,.15);}
+  .lg-regiones,.lg-anios-p{display:flex;flex-wrap:wrap;gap:6px;}
+  .lg-region{height:40px;padding:0 14px;border-radius:999px;border:1px solid var(--border);background:#fff;color:var(--azul);
+    font:inherit;font-size:14px;font-weight:600;cursor:pointer;}
+  .lg-region:hover{border-color:var(--azul);}
+  .lg-region.activa{background:var(--azul);border-color:var(--azul);color:#fff;}
+  .lg-region-n{opacity:.7;font-weight:400;}
+  .lg-frio-lista{display:flex;flex-direction:column;gap:20px;}
+  .lg-reg{display:flex;flex-direction:column;gap:10px;}
+  .lg-reg-h{margin:0;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);}
+  .lg-reg-card{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;}
+  .lg-pais{display:grid;grid-template-columns:minmax(140px,200px) minmax(0,1fr);gap:12px;align-items:center;padding:12px 20px;
+    border-top:1px solid #f0f0ee;}
+  .lg-pais:first-child{border-top:0;}
+  .lg-pais-n{display:flex;align-items:center;font-weight:700;font-size:15px;}
+  .lg-pais-ligas{display:flex;flex-wrap:wrap;gap:8px;}
+  .lg-liga{display:inline-flex;align-items:baseline;gap:8px;min-height:40px;padding:9px 14px;border-radius:10px;
+    border:1px solid var(--border);background:#fafaf8;font:inherit;color:var(--text);cursor:pointer;text-align:left;}
+  .lg-liga:hover{border-color:var(--azul);background:#f6f9ff;}
+  .lg-liga-n{font-weight:700;font-size:14px;}
+  .lg-liga-m{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;}
+  .lg-frio-nada{color:var(--muted);margin:0;}
+  .lg-sindatos{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 20px;}
+  .lg-sindatos summary{cursor:pointer;font-weight:700;font-size:14px;color:#45474d;}
+  .lg-sindatos p{margin:10px 0 0;font-size:13.5px;color:var(--muted);line-height:1.6;}
+  @media (max-width:600px){ .lg-pais{grid-template-columns:1fr;gap:8px;padding:12px 16px;} }
+  /* Una liga elegida */
+  .lg-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:16px;}
+  .lg-h{margin:0;font-size:32px;letter-spacing:-.02em;color:var(--azul);display:flex;align-items:center;}
+  .lg-sub{margin:6px 0 0;font-size:14px;color:var(--muted);line-height:1.5;}
+  .lg-anios{display:flex;flex-direction:column;gap:6px;}
+  .lg-anios-l{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);}
+  .lg-grilla{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,480px),1fr));gap:16px;align-items:start;}
+  .lg-col{display:flex;flex-direction:column;gap:16px;min-width:0;}
+  .lg-card-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 12px;}
+  .lg-card-h{margin:0;font-size:18px;}
+  .lg-card-sub{margin:0;font-size:13px;color:var(--muted);line-height:1.5;}
+  .lg-filas{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;}
+  .lg-fila{display:grid;grid-template-columns:22px minmax(0,1.3fr) minmax(0,1fr) 92px;align-items:center;gap:10px;font-size:14px;
+    font-variant-numeric:tabular-nums;padding:2px 0;}
+  .lg-fila.simulada{background:#fff8ea;border-radius:8px;}
+  .lg-fila-nom{display:flex;flex-direction:column;min-width:0;}
+  .lg-club{display:flex;align-items:center;gap:8px;min-width:0;padding:0;border:0;background:none;font:inherit;color:var(--text);
+    cursor:pointer;text-align:left;}
+  .lg-club:hover .vid-nom-t{text-decoration:underline;}
+  .lg-doc{font-size:11.5px;margin-left:18px;color:var(--muted);}
+  .lg-doc-link{color:var(--muted);}
+  .lg-doc-link.presu,.lg-doc-link.nooficial{color:#9a6b00;font-weight:700;}
+  .lg-total{font-size:15px;color:var(--text);font-variant-numeric:tabular-nums;}
+  @media (max-width:560px){
+    .lg-fila{grid-template-columns:20px minmax(0,1fr) auto;row-gap:4px;}
+    .lg-fila .vid-val{grid-row:1;grid-column:3;}
+    .lg-fila .vid-barra{grid-row:2;grid-column:2 / 4;height:6px;}
+  }
+  /* La composición: una barra apilada al 100% por club. */
+  .lg-ley{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12.5px;color:#45474d;}
+  .lg-ley-it{display:inline-flex;align-items:center;gap:6px;}
+  .lg-ley-sw{width:10px;height:10px;border-radius:2px;}
+  .lg-mix-filas{display:flex;flex-direction:column;gap:8px;}
+  .lg-mix-fila{display:grid;grid-template-columns:minmax(0,130px) minmax(0,1fr);gap:4px 10px;align-items:center;font-size:13px;}
+  .lg-mix-fila.simulada{background:#fff8ea;border-radius:6px;}
+  .lg-mix-n{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .lg-mix-barra{display:flex;height:14px;border-radius:4px;overflow:hidden;background:#eef0f3;}
+  .lg-mix-barra > span{display:block;height:100%;}
+  .lg-mix-nota{grid-column:2;font-size:11.5px;color:var(--muted);}
+  .lg-avisos{margin-top:16px;}
+  .lg-avisos p{margin:0;font-size:13px;color:var(--muted);line-height:1.6;}
   /* TO-DO 83: "¿cómo le iría este/estos club(es) en otra liga?". `.liga-sim-panel`
      es el contenedor neutro (siempre visible, aunque no haya nada simulado — ahí
      vive el buscador de "sumar un club"); `.liga-sim-activa` es la caja ámbar de
      adentro, SOLO cuando hay algo simulado — mismo tono que ya usa
      `.liga-doc.presu`/`.liga-doc.nooficial` para "esto no es un dato normal de
      la liga". */
-  .liga-sim-panel{margin-bottom:18px;}
   .liga-sim-activa{background:#fff8ea;border:1px solid #e3c07a;border-radius:10px;
     padding:14px 16px;margin-top:12px;}
   .liga-sim-linea{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:6px;}
@@ -1003,7 +1000,7 @@
   .liga-sim-liga select{font:inherit;font-size:13px;padding:6px 9px;border:1px solid #c9a34d;border-radius:7px;background:#fff;max-width:260px;}
   /* EL BUSCADOR DE "SUMAR UN CLUB" (segunda parte del to-do 83): caja blanca
      normal, no ámbar — es una acción disponible siempre, no un aviso. */
-  .liga-sim-buscador{position:relative;max-width:360px;}
+  .liga-sim-buscador{position:relative;}
   .liga-sim-input{width:100%;box-sizing:border-box;font:inherit;font-size:13.5px;padding:9px 12px;
     border:1px solid var(--border);border-radius:8px;background:#fff;}
   .liga-sim-input:focus{outline:none;border-color:var(--azul);}
