@@ -116,6 +116,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "Debiti finanziari a breve termine" pág. 19; cash escalón 1 (compuerta: documento anterior): "Disponibilità liquide ed azioni proprie" pág. 19
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): soci 2.254.397 + banche 11.734.679 + altri finanziatori 10.489.295 = 24.478.371. Lo cargado (18,277235 M) es solo corriente (7.787.940+10.489.295); falta la parte oltre esercizio de bancos y los soci.
+```
+
 ### Liga
 
 ```text
@@ -190,6 +194,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Debiti finanziari a breve termine" pág. 5; cash escalón 1 (compuerta: documento siguiente): "Disponibilità liquide ed azioni proprie" pág. 5
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): soci 2.254.397 + banche 12.142.214 + altri finanziatori 9.984.936 = 24.381.547. Lo cargado (17,705538 M) es solo la parte corriente (7.720.602+9.984.936); falta la parte oltre esercizio: banche totale 12.142.214 y soci 2.254.397.
+```
+
 ### Liga
 
 ```text
@@ -256,6 +264,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Disponibilità liquide ed azioni proprie" pág. 39
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): soci 2.254.397 + banche 11.413.447 + altri finanziatori 9.596.807 = 23.264.651. Obbligazioni 0; soci+banche+factoring (totali con scadenza breve y larga).
 ```
 
 ## Gestiones

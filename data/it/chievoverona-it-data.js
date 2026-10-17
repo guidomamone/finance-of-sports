@@ -122,7 +122,7 @@ const chievoveronaitFiscalYearMeta = {
       {label:'altri', value:-1.402802},
       {label:'imposte correnti', value:-0.156273},
     ],
-    grossDebt:null, cash:1.056992,
+    grossDebt:23.264651, cash:1.056992,
     officialTotalRevenue:50.002958, officialTotalExpenses:52.065794, officialPAT:0.316064,
   },
   2016: {
@@ -142,7 +142,7 @@ const chievoveronaitFiscalYearMeta = {
       {label:'imposte correnti', value:-0.13492},
       {label:'imposte differite', value:0.117664},
     ],
-    grossDebt:null, cash:0.181167,
+    grossDebt:24.478371, cash:0.181167,
     officialTotalRevenue:68.527414, officialTotalExpenses:63.708598, officialPAT:0.302692,
   },
   2015: {
@@ -162,7 +162,7 @@ const chievoveronaitFiscalYearMeta = {
       {label:'altri', value:-0.722651},
       {label:'imposte correnti', value:-0.151448},
     ],
-    grossDebt:null, cash:0.25253,
+    grossDebt:24.381547, cash:0.25253,
     officialTotalRevenue:55.420332, officialTotalExpenses:56.321647, officialPAT:0.521922,
   },
 };
