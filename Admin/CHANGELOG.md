@@ -32,6 +32,9 @@ que dice `ESTADO.md` era verdad ese día.
   (201 de 201 iguales) y escritos club por club; 9 deudas cargadas corregidas por el criterio con socios y otros financiadores (Bologna
   2018-2025, Chievo 2015-2016, Genoa 2022-2023, Parma 2017). El esquema 2424 como escalón, medido y descartado (HALLAZGOS).
   Sin caja ni deuda: 249 -> 111 de 919.
+- Caja y deuda del resto del sitio: 320 datos leídos en el balance por 7 subagentes Sonnet con cita (Portugal, Grecia, Brasil, Alemania,
+  Dinamarca, Chile, Colombia, Croacia), cotejados con el ensayo y escritos club por club. Istra, Werder y HSV con grossDebt / cash en su
+  fiscalYearMeta. Sin caja ni deuda: 111 -> 27 de 919 (lo que falta, por el documento: to-do 260). To-do 263 (ajuste por PDF y año).
 - fetch-club-league-reference.mjs: escalón "tabla limpia" (si la tabla elegida tiene nombres que no están en ninguna otra, como técnicos o
   estadios, se pasa a una sin sueltos que suma los clubes que faltaban) y --comparar (to-do 165 b2). Medido en las 262 temporadas de la
   caché: cambia solo Portugal 2025 (entran Casa Pia, Estoril, Nacional y Santa Clara; salen 4 técnicos), 0 errores.

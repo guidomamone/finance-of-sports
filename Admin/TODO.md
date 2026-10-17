@@ -24,8 +24,7 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-1. **Caja y deuda**: faltan 377 datos (111 años sin ninguno de los dos; Portugal 86, Brasil 68, Grecia 67, Alemania 30, Japón 20, el resto chico). Italia y Rusia, completas.
-   - El resto, por subagentes con cita (como Italia).
+1. **Caja y deuda**: quedan 27 años sin ninguno de los dos y 9 datos sueltos, todos frenados por el documento o por el to-do 263 (lista en el 260).
 
 2. **Transcripciones por subagentes** (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia): limpiar lo que no es del club, los duplicados y los arreglos chicos; validarlas (unos US$ 0,10 cada 50) y cargarlas.
 
@@ -217,6 +216,11 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
    el tipo Slides. Sin código.
 260. CAJA Y DEUDA: MEJORAS DE SCRIPT VISTAS EN PORTUGAL (sin aplicar; corrida del 2026-10-16: 151 de 327 datos, IA ~US$ 6). Cada una es un
    escalón a diseñar con el ok de Guido y a medir con `caja-deuda.mjs --medir`.
+   LO QUE FALTA (2026-10-17), todo sin dato por el documento: Bayern 2021-2025 (solo el comunicado condensado: hace falta el
+   Geschäftsbericht); Japón 2025 (10 clubes) y América, Argentinos Juniors 2019 y Unión 2022-2024 (la fuente no nombra la transcripción);
+   Volos 2019-2020 (formato Β.5 solo con totales); Ferroviária 2014 (al PDF le falta la página del pasivo no corriente); Remo 2019 (sin
+   balance); Mirassol 2024 (solo el informe del auditor); Alverca 2022-2025 y Estrela 2023 (montos con accionistas sin nota de préstamo:
+   preguntar al club); HSV 2024 y RB Leipzig 2023 (sin escala del documento); Dortmund 2024-2025 y RB Leipzig 2022-2025 (to-do 263).
    Pendiente de mirar: Ferroviária 2023-2025, "Partes relacionadas" no corriente (3.844.165) puede ser un préstamo de una parte
    relacionada (con el criterio de socios, contaría); hoy la deuda es solo "Empréstimos".
 262. DEUDA PARTIDA EN VARIAS FILAS (caja-deuda.mjs; ok de Guido, 2026-10-17). Cuando la deuda financiera está repartida (bancos, bonos,
@@ -224,6 +228,10 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
    (Bologna, Genoa, Chievo y Milan 2018 quedaron incompletas). Escalón: si el documento imprime su total de deuda financiera ("Totale debiti
    finanziari", posición financiera neta, nota de deuda), la propuesta tiene que coincidir con él; si no, no pasa. Caso: Bologna 2025, 19,4 M
    propuestos contra 28,6 M del total. Medir con `caja-deuda.mjs --medir` y el ensayo de todos los clubes.
+
+263. AJUSTE POR PDF Y AÑO (caja-deuda.mjs / ajustes.mjs). Un ajuste `caja` / `deuda` se busca por PDF, y dos años cargados desde el mismo
+   documento (el año y su comparativo: Dortmund 2024 y 2025 desde geschaeftsbericht-2024-25, RB Leipzig 2024 y 2025 desde
+   jahresabschluss-2024-25) reciben el mismo valor. Escalón: el ajuste puede llevar `anio`, y si lo lleva vale solo para ese año.
 
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
