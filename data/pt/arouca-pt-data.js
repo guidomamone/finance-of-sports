@@ -232,7 +232,7 @@ const aroucaptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.008057},
       {label:'Imposto sobre o rendimento do período', value:-1.756235},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.836991, cash:5.055547,
     officialTotalRevenue:18.599582, officialTotalExpenses:11.449787, officialPAT:6.072468,
   },
   2022: {
@@ -246,7 +246,7 @@ const aroucaptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.000251},
       {label:'Imposto sobre o rendimento do período', value:-0.037944},
     ],
-    grossDebt:0.03525, cash:null,
+    grossDebt:0.03525, cash:0.130645,
     officialTotalRevenue:5.094546, officialTotalExpenses:5.607571, officialPAT:-0.606415,
   },
   2023: {
@@ -256,7 +256,7 @@ const aroucaptFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:0, tax:-0.360802,
-    grossDebt:0.026438, cash:null,
+    grossDebt:0.026438, cash:1.362593,
     officialTotalRevenue:8.77516, officialTotalExpenses:7.974954, officialPAT:0.414325,
   },
   2024: {
@@ -270,7 +270,7 @@ const aroucaptFiscalYearMeta = {
       {label:'Juros e gastos similares obtidos', value:0.113084},
       {label:'Imposto sobre o rendimento do período', value:-0.194697},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:3.506226,
     officialTotalRevenue:14.888051, officialTotalExpenses:11.316536, officialPAT:3.235553,
   },
 };

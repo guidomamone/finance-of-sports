@@ -118,6 +118,10 @@ Generados/Portugal/Arouca/wf-2024-2025-78053ec5.categorias.json (escalón de cad
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos corriente 836 991,24 (livranças 550.000,00 + descobertos bancários 286.991,24). La fila del balance de pág. 9 (línea 332) imprime 838 991,24, pero la nota, el balance UEFA de pág. 45 (836 991,24) y la suma del pasivo corriente dan 836 991,24: se toma ese. Incluye descubiertos bancarios 286.991,24 según la nota.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e depósitos bancários 5 055 547,46. Coincide con fin de período del flujo de caja (línea 480).
+```
+
 ### Liga
 
 ```text
@@ -197,6 +201,10 @@ Generados/Portugal/Arouca/relatorio-contas-2023-24.categorias.json (escalón de 
 
 ```text
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos 2024: celdas vacías (no corriente y corriente); comparativo 2023: 22 912,50 + 3 525,00. Balance completo (Total do passivo 4 777 307,34) y las filas de Financiamentos obtidos quedan en blanco en el año en curso; 'Outras dívidas a pagar' no se describe como préstamo. Deuda 0.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e depósitos bancários 3 506 226,09. Coincide con fin de período del flujo de caja (línea 333).
 ```
 
 ### Liga
@@ -281,6 +289,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "Financiamentos obtidos" pág. 8 + "Financiamentos obtidos" pág. 8
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e depósitos bancários 1 362 592,59. Coincide con el inicio de período del flujo de caja 2024.
+```
+
 ### Liga
 
 ```text
@@ -358,6 +370,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 9 + "Financiamentos obtidos" pág. 9
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e depósitos bancários 130 644,66. Balance individual (el mismo valor figura como comparativo 2022 en el balance 2023).
 ```
 
 ### Liga
