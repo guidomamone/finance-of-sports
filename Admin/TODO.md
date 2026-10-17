@@ -38,7 +38,6 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
 * 260: caja y deuda, lo que queda (en curso)
-* 239: el lote saltea un documento por una propuesta vieja aunque tenga ajuste de año (arreglo chico, evita repetir lo de Sporting 2001)
 * 165 b2: medir y commitear el cambio de la liga de cada club (deja el árbol limpio para las sesiones en paralelo)
 
 **B. Bases baratas que después cuestan caro cambiar**
@@ -176,10 +175,6 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
    cargar (sin estado de resultados, parcial) va a `documentos-descartados.txt` o `documentos-parciales.txt` con su ok, para que deje de
    contar como frenado.
 
-239. EL LOTE SALTEA UN DOCUMENTO POR UNA PROPUESTA VIEJA (mejora de script, sin aplicar; 2026-10-16). `lote.mjs` decide "ya en el sitio" con
-   el clubId y el año del `.carga.json` de la última propuesta, aunque después se haya puesto un ajuste `anio` que cambia el año. Caso:
-   Sporting 2001 (relatorio-contas-2000.pdf): la propuesta vieja decía 2000 (por el nombre del archivo), 2000 está cargado, y el lote lo
-   salteaba; se destrabó moviendo el `.carga.json` viejo. Escalón posible: si el documento tiene ajuste `anio`, el año sale del ajuste.
 240. LINK DEDICADO, NIVEL 1: EL ESTADO EN LA URL (mejoras de proyecto, pedido de Guido 2026-10-16). `?club=boca-ar&tab=finanzas`, `?liga=laliga`: la URL se actualiza al cambiar de
    pantalla, se lee al abrir el link y "atrás" funciona. Una o dos sesiones. Listo cuando un link copiado abre el mismo club, pestaña y años.
 241. LINK DEDICADO, NIVEL 2: RUTAS REALES, TARJETA AL COMPARTIR Y SEO (mejoras de proyecto, pedido de Guido 2026-10-16). `/club/<id>` y `/liga/<id>` pre-generadas (redirect de Netlify +

@@ -40,7 +40,7 @@ no cubre ni la lista ni un año cargado (to-do 232 q): se suma a la lista o va a
   vuelve a verificar (gratis) antes de decidir el reintento o el rearmado con el texto propio; ya no hace falta `verificar.mjs` a mano.
 - Para medir un cambio: `tools/medir-verificar.mjs` (verificar, sin tocar registros, `--pasadas 2`, `--script` para la versión vieja) y
   `tools/medir-cargar.mjs` (cargar, en paralelo por club, `--lista`/`--dir`), con las listas `Admin/lotes/prueba-{rapida,mediana,completa}.txt`.
-- Un documento cuyo año ya está en el sitio (registro, o el sitio por el club y año de su propuesta) no pasa por ninguna etapa más: ni
+- Un documento cuyo año ya está en el sitio (registro, o el sitio por el club y año de su propuesta; el año, del ajuste `anio` si lo tiene) no pasa por ninguna etapa más: ni
   verificar, ni categorizar, ni la propuesta de carga; dice "ya en el sitio" y la tabla final lo cuenta ahí. Con `--reintentar` sigue el
   camino de siempre. Así un lote que se vuelve a correr trabaja solo sobre lo que falta.
 - Al final, la tabla "Dónde quedó cada PDF de la lista": cada documento una sola vez, en la etapa más temprana donde frenó. Los títulos de la

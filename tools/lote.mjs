@@ -138,6 +138,10 @@ const INICIO = new Date().toISOString(); // (Versión 449) desde cuándo cuenta 
 const gastoValidar = {}; // (Versión 449) lo que costó validar escaneos (Gemini con rutas temporales: no queda en ningún log con el PDF)
 const anotarValidar = (pdf, V) => { const c = V?.costo || 0; if (c) gastoValidar[pdf] = { validar: (gastoValidar[pdf]?.validar || 0) + c }; return c; };
 const sitio = loadSite(); // (Versión 442) antes del loop: "año ya cargado" mira también el sitio
+// (to-do 239) ¿el año de la última propuesta de carga (<doc>.carga.json) ya está en el sitio? El año sale del ajuste `anio` si el documento
+// lo tiene: la propuesta puede ser de antes del ajuste. Caso: Sporting 2001 (relatorio-contas-2000.pdf), la propuesta vieja decía 2000 (el
+// nombre del archivo), 2000 está cargado y el lote lo salteaba como "ya en el sitio".
+const propuestaEnSitio = (e) => { const c = leerDerivado(e, '.carga.json'); const anio = ajusteDe(e.pdf, 'anio')?.valor ?? c?.year; return !!(c?.clubId && anio && sitio.generic?.[c.clubId]?.fiscalYearMeta?.[anio]); };
 let usd = 0; const estado = {}; const aRetranscribir = []; const aTextoPropio = []; const aFijar = [];
 // Páginas interiores (sin las 2 primeras ni la última) con menos de 200 caracteres de texto propio: son imágenes.
 const paginasEnImagen = (pdf) => {
@@ -179,7 +183,7 @@ for (const pdf of docs) {
   // el clubId y el año de la última propuesta. Caso: lote 80, quinta corrida, 52 documentos verificados, glosados y categorizados para que 44
   // terminaran en "ya en el sitio: no se tocan". Con --reintentar sigue el camino de siempre (reintenta categorías en 0 de un año cargado).
   // Los testigos tampoco se saltean: entran solo para que otro documento compare su año anterior.
-  if (!REINTENTAR && !testigos.has(pdf) && (e.cargado || (() => { const c = leerDerivado(e, '.carga.json'); return !!(c?.clubId && c?.year && sitio.generic?.[c.clubId]?.fiscalYearMeta?.[c.year]); })())) {
+  if (!REINTENTAR && !testigos.has(pdf) && (e.cargado || propuestaEnSitio(e))) {
     estado[pdf] = 'ya en el sitio'; console.log(`  ${pdf}: ya en el sitio (no se verifica, categoriza ni propone de nuevo)`); continue;
   }
   // ETAPA 2, ESCALÓN 1a (Versión 433, cambio E, aprobado por Guido el 2026-10-03): si el inventario dice "revisar", primero las VOCES
@@ -227,7 +231,7 @@ for (const pdf of docs) {
   // AÑO YA CARGADO SEGÚN EL SITIO (Versión 442): el registro se queda viejo si no se regenera después de cargar (Juventus 2021-22: en
   // data/it/juventus-it-data.js y `cargado: false` en el registro; un --reintentar lo volvía a pagar). Se mira también el sitio, por el clubId y
   // el año de la última propuesta de carga del documento.
-  const cargado = e.cargado || (() => { const c = leerDerivado(e, '.carga.json'); return !!(c?.clubId && c?.year && sitio.generic?.[c.clubId]?.fiscalYearMeta?.[c.year]); })();
+  const cargado = e.cargado || propuestaEnSitio(e);
   // (to-do 237 af y s) RESPUESTA POSTERIOR A LA VERIFICACIÓN: si la cola tiene respuestas a casos de la etapa 6 de este documento más nuevas
   // que su .verificacion.json, se vuelve a verificar (gratis) ANTES de decidir el reintento y el rearmado, que se deciden con esa verificación.
   // Sin esto, un documento con la cola ya contestada seguía con la verificación vieja: no pasaba a "extraído", pedía rearmar con el texto
@@ -438,7 +442,7 @@ if (aRetranscribir.length) {
   console.log(`  Re-transcribir con Mistral y volver a localizar (~US$ 0,004 por página + localizar y extraer): caffeinate -i node tools/lote.mjs --lista ${LISTA} --ejecutar --reintentar`);
 }
 // Camino de error: qué documentos quedaron para reintentar (Versión 442: en dos bloques, lo que destraba la carga y el detalle opcional).
-const yaEnSitio = (e) => e.cargado || (() => { const c = leerDerivado(e, '.carga.json'); return !!(c?.clubId && c?.year && sitio.generic?.[c.clubId]?.fiscalYearMeta?.[c.year]); })();
+const yaEnSitio = (e) => e.cargado || propuestaEnSitio(e);
 const motivos = (xs) => xs.map((x) => (x.categoria ? `"${x.categoria}" en 0` : `"${x.renglon}" ${x.suma} contra ${x.objetivo}`)).join('; ');
 const aReintentar = []; const aDetalle = [];
 for (const d of docs) {
