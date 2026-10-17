@@ -2299,19 +2299,41 @@ Mobiliteit Fans - Europees uit & ECV SCC Thuis
 
 Het aandeel elektrische van het totaal aantal lease kilometers is gestegen van 5% in 2021/2022 naar 26% in 2023/2024 door stimulerende maatregelingen van de nieuwe mobiliteitspartner.
 
-Grafiek: Gereden Kilometers (as: 0; 2.000.000; 4.000.000; 6.000.000; 8.000.000; 10.000.000; 12.000.000; 14.000.000) per 2021/2022, 2022/2023, 2023/2024. Legenda: Vliegen Totaal (km), Lease KM Fossiel, Lease KM Elektrisch, Prive auto, OV KM.
+Gereden Kilometers
+
+14.000.000 · 12.000.000 · 10.000.000 · 8.000.000 · 6.000.000 · 4.000.000 · 2.000.000 · 0
+
+2021/2022 · 2022/2023 · 2023/2024
+
+Vliegen Totaal (km) · Lease KM Fossiel · Lease KM Elektrisch · Prive auto · OV KM
 
 ### Mobiliteit jeugdspelers
 
 Jeugdspelers krijgen, afhankelijk van hun situatie, een OV kaart en/of een elektrische fiets. Waar deze opties niet toereikend zijn wordt (mini-)busvervoer georganiseerd, hiervan is het aandeel elektrische km jaarlijkse gegroeid.
 
-Grafiek: Gereden Kilometers (as: 0; 200.000; 400.000; 600.000; 800.000; 1.000.000; 1.200.000; 1.400.000) per 2021/2022, 2022/2023, 2023/2024. Legenda: Trainingsbusje Diesel (km), Trainingsbusje Electrisch (km).
+Gereden Kilometers
+
+1.400.000 · 1.200.000 · 1.000.000 · 800.000 · 600.000 · 400.000 · 200.000 · 0
+
+2021/2022 · 2022/2023 · 2023/2024
+
+Trainingsbusje Diesel (km) · Trainingsbusje Electrisch (km)
 
 ### Energie
 
 Met de installatie van de duurzame warmtebron (WKO) op de Toekomst in december ‘24 is het stroomverbruik gestegen. De zonnepanelen zijn enkele maanden later geïnstalleerd waardoor energie inkoop naar verwachting zal dalen komend seizoen. Gasverbruik zal komende seizoenen dalen zodra de WKO optimaal functioneert.
 
-Grafiek: Stroomverbruik (kWh) (as: 1.000.000; 1.100.000; 1.200.000; 1.300.000; 1.400.000; 1.500.000; 1.600.000; 1.700.000; 1.800.000; 1.900.000; 2.000.000) en Gas (m3) (as: 100.000; 150.000; 200.000; 250.000; 300.000; 350.000; 400.000) per 21/22, 23/24, 23/24, 24/25.
+Stroomverbruik (kWh)
+
+2.000.000 · 1.900.000 · 1.800.000 · 1.700.000 · 1.600.000 · 1.500.000 · 1.400.000 · 1.300.000 · 1.200.000 · 1.100.000 · 1.000.000
+
+Gas (m3)
+
+400.000 · 350.000 · 300.000 · 250.000 · 200.000 · 150.000 · 100.000
+
+21/22 · 23/24 · 23/24 · 24/25
+
+Stroomverbruik (kWh) · Gas (m3)
 
 44
 
