@@ -153,6 +153,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 6
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Balance completo: Passivo não corrente 0,00; corriente = Fornecedores 375 626,30 + Estado 185 565,58 + Outras dívidas a pagar 491 388,91 + Diferimentos 36 381,71 = Total do passivo 1 088 962,50. Sin ninguna fila financiera. Outras dívidas a pagar (491.388,91) se abre en la nota (remuneraciones, Adventure Domain 194.440,20 'outras operações', acreedor persona física 155.137,93); la tabla de partes relacionadas deja vacía la columna 'Empréstimos a pagar'. Documento escaneado (OCR).
+```
+
 ### Liga
 
 ```text
