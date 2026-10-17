@@ -91,7 +91,7 @@ const belenensesptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Vendas e serviços prestados', lado:'revenue', importe:0.536756, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:0.087683,
+    grossDebt:0.00631, cash:0.087683,
     officialTotalRevenue:0.758823, officialTotalExpenses:1.190468, officialPAT:-0.451035,
   },
   2024: {
@@ -108,7 +108,7 @@ const belenensesptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Vendas e serviços prestados', lado:'revenue', importe:1.288499, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:0.13992,
+    grossDebt:0, cash:0.13992,
     officialTotalRevenue:1.288499, officialTotalExpenses:1.678994, officialPAT:-0.390504,
   },
 };
