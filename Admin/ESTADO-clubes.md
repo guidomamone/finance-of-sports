@@ -244,7 +244,7 @@ IT (22)
   Salernitana    2 ejercicios (2021/2022 a 2022/2023), balance, EUR, sin deuda/caja
   Sampdoria      4 ejercicios (2018 a 2021), balance, EUR, sin deuda/caja
   Sassuolo       8 ejercicios (2018 a 2025), balance, EUR, sin deuda/caja
-  Torino         8 ejercicios (2018 a 2025), balance, EUR, sin deuda/caja
+  Torino         8 ejercicios (2018 a 2025), balance, EUR
   Udinese        2 ejercicios (2021/2022, 2024/2025), balance, EUR, sin deuda/caja
 
 JAPÓN (10)

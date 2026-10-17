@@ -119,6 +119,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: documento anterior): "Disponibilità liquide" pág. 4
+```
+
 ### Liga
 
 ```text
@@ -193,6 +197,10 @@ tools/cargar.mjs (2026-10-07)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: documento siguiente): "Disponibilità liquide" pág. 4
+```
+
 ## 2023
 
 ### Ingresos
@@ -258,6 +266,10 @@ tools/cargar.mjs (2026-10-08)
 ```text
 2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (609.108). el 17) se imprime en positivo y se resta por posición (TOTALE C = 15+16-17 = (108.044), L648); la fila perdió la etiqueta con '17)'
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: documento siguiente): "Disponibilità liquide" pág. 4
 ```
 
 ### Liga
@@ -332,6 +344,10 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: documento siguiente): "Debiti finanziari a breve termine (< 1 anno)" pág. 6 + "Debiti finanziari a lungo termine (>1 anno)" pág. 6; cash escalón 1 (compuerta: documento siguiente): "Disponibilità liquide" pág. 5
 ```
 
 ### Liga
@@ -409,6 +425,10 @@ tools/cargar.mjs (2026-10-07)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 2 (compuerta: documento siguiente): "Passività finanziarie non correnti" pág. 6 + "Passività correnti finanziarie" pág. 6; cash escalón 1 (compuerta: documento siguiente): "Disponibilità liquide" pág. 6
+```
+
 ### Liga
 
 ```text
@@ -480,6 +500,10 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: documento siguiente): "Disponibilità liquide" pág. 5
 ```
 
 ### Liga
@@ -557,6 +581,10 @@ tools/cargar.mjs (2026-10-09)
 tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: documento siguiente): "Disponibilità liquide" pág. 4
+```
+
 ### Liga
 
 ```text
@@ -628,6 +656,10 @@ tools/cargar.mjs (2026-10-07)
 ```text
 2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): fila = (400.771). Guido 2026-10-07: el 17) 'Interessi e altri oneri finanziari' se imprime en positivo y se resta por posición (TOTALE (C) = 15+16-17); la etapa 6 lo sumaba como ingreso (to-do 155)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: documento siguiente): "Disponibilità liquide" pág. 4
 ```
 
 ### Liga
