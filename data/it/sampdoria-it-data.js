@@ -226,7 +226,7 @@ const sampdoriaitFiscalYearMeta = {
       {label:'d) Imposte anticipate', value:-0.118679},
       {label:'e) proventi (aneri) da adesione al regime di consolidato fiscale', value:6.427568},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:95.539604, cash:5.17306,
     officialTotalRevenue:76.310005, officialTotalExpenses:97.648402, officialPAT:-24.414986,
   },
   2018: {
@@ -245,7 +245,7 @@ const sampdoriaitFiscalYearMeta = {
       {label:'22) b) imposte differite', value:-3.943972},
       {label:'22) c) imposte anticipate', value:0.440273},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:25.839781, cash:3.856659,
     officialTotalRevenue:141.773108, officialTotalExpenses:119.411712, officialPAT:12.052939,
   },
   2019: {
@@ -268,7 +268,7 @@ const sampdoriaitFiscalYearMeta = {
       {label:'c) Imposte differite', value:-4.237956},
       {label:'d) Imposte anticipate', value:7.313704},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:52.266886, cash:5.004152,
     officialTotalRevenue:129.025726, officialTotalExpenses:137.272221, officialPAT:-13.064222,
   },
   2020: {
@@ -291,7 +291,7 @@ const sampdoriaitFiscalYearMeta = {
       {label:'c) Imposte differite e anticipate', value:-2.723487},
       {label:'d) Proventi da consolidamento', value:5.192584},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:66.92714, cash:8.013182,
     officialTotalRevenue:75.719938, officialTotalExpenses:89.488331, officialPAT:-14.703708,
   },
 };
