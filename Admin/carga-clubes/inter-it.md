@@ -112,6 +112,10 @@ tools/cargar.mjs (2026-10-07)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 302.754 + 346.119.020 + 31.365.312 + 3.242.114 + 16.864.915 = 397.894.115 (EUR). Soci solo b) oltre 12 mesi (a es "-"); altri finanziatori "-"; concilia con la nota 346.422 + 31.365 + 20.107 (miles); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 118.161.738 + 8.450 = 118.170.188 (EUR). Total 118.170.188
+```
+
 ## 2024
 
 ### Ingresos
@@ -200,6 +204,10 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 7.512.319 + 384.694.962 + 31.294.792 + 3.000.000 + 1.163 + 15.000.000 = 441.503.236 (EUR). Incluye 4) Other financing 15.000.000 (altri finanziatori); concilia con la nota 392.207 + 34.295 + 1 + 15.000 (miles) (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 115.087.809 + 14.934 = 115.102.743 (EUR). Total 115.102.743 (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -298,6 +306,10 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 3.573.230 + 405.739.236 + 27.505.477 + 101.000.000 + 47.715 = 537.865.658 (EUR). Concilia con la nota 409.313 + 128.505 + 48 (miles) (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 100.468.523 + 47.121 = 100.515.644 (EUR). Total 100.515.644 (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -410,6 +422,10 @@ tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: documento anterior): "1) Bank and postal deposit accounts" pág. 15 + "3) Cash on hand" pág. 15
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 407.944.623 + 21.235.696 + 60.000.000 + 51.897 = 489.232.216 (EUR). Bond a) within 12 meses es "-"; concilia con la nota 407.945 + 81.236 + 52 (miles) (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -518,6 +534,10 @@ tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: documento siguiente): "1) Bank and postal deposit accounts" pág. 14 + "3) Cash on hand" pág. 14
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 9.080.222 + 335.870.108 + 16.337.394 + 60.000.000 + 240.799 + 50.000.000 = 471.528.523 (EUR). Concilia con la nota: Bond loan 344.950 + Shareholders loan 76.337 + banks 50.241 (miles) (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -623,6 +643,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 6.900.000 + 275.659.066 + 7.356.244 + 70.877.005 + 25.378.472 + 25.000.000 = 411.170.787 (EUR). Concilia con la nota: 282.559 + 78.233 + 50.379 (miles); altri finanziatori "-" (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 88.472.016 + 33.838 = 88.505.854 (EUR). Total 88.505.854 (linea 714), coincide con el rendiconto (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -712,6 +736,10 @@ tools/cargar.mjs (2026-10-08)
 ```text
 2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 7.147.379. Claude 2026-10-08 (Guido: a mano): el renglón 4) del estado (L795, ingreso 7.147.379) se queda entero: la nota b41 (L2307-L2314) explica los costos que se capitalizan (entrenadores, pensionato, instalaciones) y no es un desglose de ingreso; sin esto sus filas quedaban como gastos y el resultado no cerraba (−62,68 M contra −48,39 M impreso)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 6.550.000 + 280.793.825 + 8.024.243 + 140.877.005 + 166.667 + 25.000.000 + 92 = 461.411.832 (EUR). Concilia con la nota: obbligazioni 287.344 + soci 148.901 + banche 25.167 (miles) (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 54.648.256 + 17.941 = 54.666.197 (EUR). Total 54.666.197 (linea 627); las cifras de la tabla estan en columna separada de las etiquetas por el OCR (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -813,6 +841,10 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 6.250.000 + 285.629.729 + 179.446.551 + 50.000.000 + 729 + 434 = 521.327.443 (EUR). Banco 729 + 434 (el OCR puso 434 en altri finanziatori; el comparativo 2019 muestra bancos 1.163 = 729+434); soci incluye intereses (229.447 en la nota) (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 45.052.221 + 18.727 = 45.070.948 (EUR). Total 45.070.948 (linea 498), coincide con el rendiconto (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga

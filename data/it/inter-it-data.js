@@ -549,7 +549,7 @@ const interitFiscalYearMeta = {
       {label:'b) deferred tax liabilities', value:0.413833},
       {label:'c) deferred tax assets', value:-0.120553},
     ],
-    grossDebt:null, cash:139.183539,
+    grossDebt:489.232216, cash:139.183539,
     officialTotalRevenue:439.642181, officialTotalExpenses:526.149354, officialPAT:-140.05618,
   },
   2025: {
@@ -571,7 +571,7 @@ const interitFiscalYearMeta = {
       {label:'c) imposte differite', value:0.413833},
       {label:'d) imposte anticipate', value:0.014334},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:397.894115, cash:118.170188,
     officialTotalRevenue:567.012038, officialTotalExpenses:482.012273, officialPAT:35.398278,
   },
   2020: {
@@ -592,7 +592,7 @@ const interitFiscalYearMeta = {
       {label:'a) di partecipazioni', value:0.529404},
       {label:'a) imposte correnti (deducido: antes de impuestos − resultado final, por ajuste manual)', value:-5.15104},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:411.170787, cash:88.505854,
     officialTotalRevenue:372.37016, officialTotalExpenses:441.854089, officialPAT:-102.393789,
   },
   2019: {
@@ -616,7 +616,7 @@ const interitFiscalYearMeta = {
       {label:'b) imposte differite', value:-0.074466},
       {label:'c) imposte anticipate', value:0.738113},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:461.411832, cash:54.666197,
     officialTotalRevenue:417.079516, officialTotalExpenses:424.892652, officialPAT:-48.387493,
   },
   2018: {
@@ -638,7 +638,7 @@ const interitFiscalYearMeta = {
       {label:'b) imposte differite', value:-0.242375},
       {label:'c) imposte anticipate', value:-0.260884},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:521.327443, cash:45.070948,
     officialTotalRevenue:346.990412, officialTotalExpenses:321.579166, officialPAT:-17.753536,
   },
   2024: {
@@ -659,7 +659,7 @@ const interitFiscalYearMeta = {
       {label:'b) taxes related to previous years', value:0.308483},
       {label:'c) deferred tax assets', value:0.413833},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:441.503236, cash:115.102743,
     officialTotalRevenue:473.208416, officialTotalExpenses:462.17828, officialPAT:-35.745922,
   },
   2023: {
@@ -681,7 +681,7 @@ const interitFiscalYearMeta = {
       {label:'c) deferred tax liabilities', value:0.413833},
       {label:'d) deferred tax assets', value:null},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:537.865658, cash:100.515644,
     officialTotalRevenue:425.475173, officialTotalExpenses:461.08952, officialPAT:-85.372658,
   },
   2021: {
@@ -702,7 +702,7 @@ const interitFiscalYearMeta = {
       {label:'19) Impairment a) of investments (D, costo)', value:-1.972728},
       {label:'a) current taxes (deducido: antes de impuestos − resultado final, por ajuste manual)', value:-6.106963},
     ],
-    grossDebt:null, cash:97.883943,
+    grossDebt:471.528523, cash:97.883943,
     officialTotalRevenue:364.712582, officialTotalExpenses:566.143043, officialPAT:-245.579264,
   },
 };
