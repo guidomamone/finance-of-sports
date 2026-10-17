@@ -39,6 +39,11 @@ Para que la principal lo pase a TODO, CHANGELOG y ESTADO al mergear (skill de ar
   PDF NO es error: los de Ajax, PSV, Feyenoord y AZ 2023-25 son la fuente publicada de lo cargado.
 - Sourcing: el estado financiero completo de Beşiktaş 2012, 2013 y 2024 (cotiza: KAP); PEC Zwolle jaarverslag 2023-24 y 2024-25 (los
   bajados están dañados; hoy se carga el depósito en la KvK); Deportes Tolima `dictamen-revisor-fiscal-2025.pdf` es idéntico al de 2024.
+- `pipeline.mjs --lista` (ensayo) no anticipa el control "sin tablas": muestra un `.md` sin tablas como "texto (Claude solo en págs.
+  dudosas)" y en `--ejecutar` lo rehace con Mistral. La primera corrida sobre los 6 países estimó US$ 27,83 y gastaba ~US$ 0,17 por
+  documento (Guido la cortó en 40 de 566, ~US$ 6,75). Arreglo: que el ensayo cuente esos documentos como "rehacer con Mistral" con su
+  costo. Mientras tanto, la lista se separó: `Admin/lotes/subagentes-validar.txt` (con tablas, ~US$ 3,47) y
+  `Admin/lotes/sin-tablas-6paises.txt` (481 `.md` viejos sin tablas, sobre todo Bélgica y Colombia: decidir subagentes o Mistral).
 - Para HALLAZGOS, "Conocido, sin daño hoy": `pdftotext` pierde las ligaduras en las fuentes Calibri CID ("Ne o-omzet", "ac va",
   "Toelich ng") en NEC Holding 2023-24, FC Den Bosch 2022-24 y Fortuna Sittard 2022-24; las cifras están bien y la categorización la
   hace una IA. Retomarlo si un rótulo roto frena localizar o la categorización (Sparta 2021-22 tenía "w inst-en-verliesrekening" en el
