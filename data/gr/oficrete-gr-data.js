@@ -107,7 +107,7 @@ const oficretegrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:0.527893, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:1.577619, motivo:'OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:0.060826,
     officialTotalRevenue:0.730194, officialTotalExpenses:1.964276, officialPAT:-1.237662,
   },
   2019: {
@@ -126,7 +126,7 @@ const oficretegrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:1.399917, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:4.84361, motivo:'OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:0.084684,
     officialTotalRevenue:2.213058, officialTotalExpenses:5.721776, officialPAT:-3.51484,
   },
   2021: {
@@ -145,7 +145,7 @@ const oficretegrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:2.692727, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:5.629152, motivo:'OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:0.761742,
     officialTotalRevenue:6.060872, officialTotalExpenses:6.678115, officialPAT:-0.623572,
   },
   2022: {
@@ -164,7 +164,7 @@ const oficretegrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:5.064441, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:7.325795, motivo:'OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:0.279353,
     officialTotalRevenue:5.838699, officialTotalExpenses:8.237169, officialPAT:-2.41384,
   },
   2023: {
@@ -182,7 +182,7 @@ const oficretegrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:4.726105, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:7.782646, motivo:'OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:0.247006,
     officialTotalRevenue:6.707594, officialTotalExpenses:9.297048, officialPAT:-2.610017,
   },
   2024: {
@@ -201,7 +201,7 @@ const oficretegrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:4.019073, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:7.852901, motivo:'OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:0.396045,
     officialTotalRevenue:6.207699, officialTotalExpenses:9.57948, officialPAT:-3.45789,
   },
   2025: {
@@ -219,7 +219,7 @@ const oficretegrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:5.33344, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:8.199058, motivo:'OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:0.382833,
     officialTotalRevenue:8.187733, officialTotalExpenses:9.585516, officialPAT:-1.41453,
   },
   2020: {
@@ -238,7 +238,7 @@ const oficretegrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:1.835448, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:5.125907, motivo:'OFI 2023: Κόστος πωλήσεων 7.782.645,53 sin nota que lo abra (notas 2023 sin cuadros) -> lump'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:0.100497,
     officialTotalRevenue:3.286613, officialTotalExpenses:5.888327, officialPAT:-2.613093,
   },
 };

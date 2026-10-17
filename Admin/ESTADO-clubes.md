@@ -205,7 +205,7 @@ GR (14)
   Atromitos         8 ejercicios (2015/2016, 2018/2019, 2019/2020, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR
   Kifisia           4 ejercicios (2021/2022 a 2024/2025), balance, EUR
   Levadiakos        7 ejercicios (2018/2019 a 2024/2025), balance, EUR
-  OFI Crete         8 ejercicios (2017/2018 a 2024/2025), balance, EUR, sin deuda/caja
+  OFI Crete         8 ejercicios (2017/2018 a 2024/2025), balance, EUR
   Olympiacos        10 ejercicios (2015/2016 a 2024/2025), balance, EUR
   Panathinaikos     1 ejercicio (2024/2025), balance, EUR
   Panetolikos       8 ejercicios (2016/2017, 2017/2018, 2019/2020, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR

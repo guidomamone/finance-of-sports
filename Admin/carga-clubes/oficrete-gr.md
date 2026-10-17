@@ -72,6 +72,10 @@ tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [OFI_FS_2025-06-30.md] Μακροπρόθεσμα δάνεια 0,00; Βραχυπρόθεσμα τραπεζικά δάνεια 0,00; Βραχυπρόθεσμο μέρος 0,00 => 0. Balance completo sin filas financieras: deuda 0. 'Επιστρεπτέα προκαταβολή' (7.500 LP + 1.875 CP) y 673.088,06 de deudas fiscales en cuotas no sumados.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [OFI_FS_2025-06-30.md] Ταμειακά διαθέσιμα και ισοδύναμα (30/6/2025) = 382.833,20. Balance individual de la sociedad (OFI).
+```
+
 ### Liga
 
 ```text
@@ -107,6 +111,10 @@ Generados/Grecia/OFI Crete/OFI_income_stmt_2024-06-30.categorias.json (escalón 
 ```text
 tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [OFI_balance_2024-06-30.md] Μακροπρόθεσμα δάνεια 0,00; Βραχυπρόθεσμα τραπεζικά δάνεια 0,00; Βραχυπρόθεσμο μέρος 0,00 => 0. Balance completo sin filas financieras: deuda 0. 'Επιστρεπτέα προκαταβολή' (anticipo estatal reembolsable 9.375 LP + 1.875 CP) y 704.272,82 de deudas fiscales en cuotas no sumados.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [OFI_balance_2024-06-30.md] Ταμειακά διαθέσιμα και ισοδύναμα (30/6/2024) = 396.045,06. Balance individual de la sociedad (OFI). La transcripción pedida es el estado de resultados; el balance está en el archivo citado.
 ```
 
 ### Liga
@@ -146,6 +154,10 @@ tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [OFI_balance_2023-06-30.md] Μακροπρόθεσμα δάνεια 0,00; Βραχυπρόθεσμα τραπεζικά δάνεια 0,00; Βραχυπρόθεσμο μέρος 0,00 => 0. Balance completo sin filas financieras: deuda 0. 'Επιστρεπτέα προκαταβολή' (anticipo estatal reembolsable, 11.250 LP + 1.875 CP) no sumado: el balance no lo muestra como fila financiera.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [OFI_balance_2023-06-30.md] Ταμειακά διαθέσιμα και ισοδύναμα (30/6/2023) = 247.006,29. Balance individual de la sociedad (OFI). La transcripción pedida es el estado de resultados; el balance está en el archivo citado.
+```
+
 ### Liga
 
 ```text
@@ -181,6 +193,10 @@ Generados/Grecia/OFI Crete/OFI_income_stmt_2022-06-30.categorias.json (escalón 
 ```text
 tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [OFI_balance_2022-06-30.md] Μακροπρόθεσμα δάνεια 0,00; Βραχυπρόθεσμα τραπεζικά δάνεια 0,00; Βραχυπρόθεσμο μέρος 0,00 => 0. Balance completo sin filas financieras: deuda 0. Hay 13.125,00 de 'Λοιπές μακροπρόθεσμες' (Επιστρεπτέα Προκαταβολή estatal, no preguntado como préstamo) no sumado.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [OFI_balance_2022-06-30.md] Ταμειακά διαθέσιμα και ισοδύναμα (30/6/2022) = 279.353,30. Balance individual de la sociedad (OFI). La transcripción pedida es el estado de resultados; el balance está en el archivo citado.
 ```
 
 ### Liga
@@ -220,6 +236,10 @@ tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [OFI_balance_2021-06-30.md] Βραχυπρόθεσμα τραπεζικά δάνεια y Βραχυπρόθεσμο μέρος μακροπροθέσμων vacías; sin préstamos largos; Σύνολο υποχρεώσεων 2.457.521,97 => 0. Balance completo sin filas financieras: deuda 0.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [OFI_balance_2021-06-30.md] Ταμειακά διαθέσιμα και ισοδύναμα (30/6/2021) = 761.741,72. Balance individual de la sociedad (OFI). La transcripción pedida es el estado de resultados; el balance está en el archivo citado.
+```
+
 ### Liga
 
 ```text
@@ -255,6 +275,10 @@ Generados/Grecia/OFI Crete/OFI_notes_2020-06-30.categorias.json (escalón de cad
 ```text
 tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [OFI_notes_2020-06-30.md] sin filas de préstamos; Σύνολο Υποχρεώσεων 2.561.928,36 => 0. Balance completo sin filas financieras: deuda 0.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [OFI_notes_2020-06-30.md] Ταμειακά διαθέσιμα και ισοδύναμα (30/6/2020) = 100.496,97. Balance individual de la sociedad (OFI).
 ```
 
 ### Liga
@@ -294,6 +318,10 @@ tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [OFI_notes_2019-06-30.md] sin filas de préstamos; Σύνολο Υποχρεώσεων 2.508.482,41 => 0. Balance completo sin filas financieras: deuda 0.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [OFI_notes_2019-06-30.md] Ταμειακά διαθέσιμα και ισοδύναμα (30/6/2019) = 84.684,42. Balance individual de la sociedad (OFI). La transcripción pedida es el estado de resultados; el balance está en el archivo citado.
+```
+
 ### Liga
 
 ```text
@@ -329,6 +357,10 @@ Generados/Grecia/OFI Crete/OFI_income_stmt_2018-06-30.categorias.json (escalón 
 ```text
 tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [OFI_balance_2018-06-30.md] sin filas de préstamos; Σύνολο Υποχρεώσεων 1.574.365,05 = comerciales, impuestos, seguridad social, otras, devengados, ingresos diferidos => 0. Balance completo sin filas financieras: deuda 0.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [OFI_balance_2018-06-30.md] Ταμειακά διαθέσιμα και ισοδύναμα (30/6/2018) = Ταμειακά διαθέσιμα και ισοδύναμα 60.825,90. Balance individual de la sociedad (OFI). La transcripción pedida es el estado de resultados; el balance está en el archivo citado.
 ```
 
 ### Liga
