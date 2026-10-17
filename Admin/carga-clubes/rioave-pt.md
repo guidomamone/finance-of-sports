@@ -396,6 +396,10 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 13
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos n/c (-) 0 + Financiamentos obtidos c 3,584,000. Balance de la SAD; las dívidas por traspasos van aparte y no se suman.
+```
+
 ### Liga
 
 ```text
@@ -746,6 +750,10 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 12
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos c (n/c vacío) 3,596,528.41. Balance de la SAD; nota 13 confirma 3.596.528,41 todo corriente. En el no corriente hay "Outras dívidas a pagar" 12.431.277,95 sin desglose en las notas (14.2 solo explica las corrientes): no se sumó.
+```
+
 ### Liga
 
 ```text
@@ -834,6 +842,10 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 3
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos n/c 600,786.18 + Financiamentos obtidos c 1,391,368.77. Balance de la SAD; coincide con la nota 13 (1.992.154,95 incl. factoring 1.359.150 y leasing).
 ```
 
 ### Liga
