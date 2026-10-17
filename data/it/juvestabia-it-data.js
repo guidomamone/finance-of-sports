@@ -43,7 +43,7 @@ const juvestabiaitFiscalYearMeta = {
       {label:'Finance costs', value:-0.120093},
       {label:'Provision for income taxes', value:-0.127938},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.510448, cash:0.049496,
     officialTotalRevenue:4.101081, officialTotalExpenses:5.839794, officialPAT:-1.986746,
   },
 };

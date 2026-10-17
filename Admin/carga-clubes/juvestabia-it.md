@@ -106,6 +106,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Loans and Advances no corriente (BCC) 49.949 + Financial Liabilities - Related Party (soci) 340.000 + Loans and Advances corriente (BCC) 42.224 + Short-term borrowings (descubiertos) 78.275 = 510.448. Sin lease liabilities; incluye préstamo bancario BCC (corriente y no corriente), préstamos de socios y descubiertos bancarios.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 49.496. Cash and cash equivalents al 30/06/2024 (IFRS, en unidades de euro); los descubiertos están en Short-term borrowings.
+```
+
 ## Gestiones
 
 _antes de Andrea Langella (data/gestiones/it.js):_
