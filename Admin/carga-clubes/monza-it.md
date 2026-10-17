@@ -152,6 +152,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): soci 0 + banche 0 + altri finanziatori (factoring Factorit) 13.500.000 = 13.500.000. La nota (línea 1526) dice que son anticipos de factoring pro-soluto de créditos de traspasos; el criterio incluye factoring, se cuenta. Duda menor: si pro-soluto sería baja de crédito y no deuda financiera.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): depositi bancari e postali 358.421 + denaro e valori in cassa 4.694 = 363.115. TOTALE IV 363.115 (31/12/2024).
+```
+
 ### Liga
 
 ```text
@@ -262,6 +266,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 2 (compuerta: documento siguiente): "3. debiti verso soci per finanziamenti" pág. 16 + "4. debiti verso banche" pág. 16
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): depositi bancari e postali 1.799.871 + denaro e valori in cassa 17.267 = 1.817.138. TOTALE IV 1.817.138 (31/12/2023).
+```
+
 ### Liga
 
 ```text
@@ -366,6 +374,10 @@ tools/cargar.mjs (2026-10-07)
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): reportType = official_balance_sheet. Guido 2026-10-06: balance anual ('Bilancio d'Esercizio al 31 dicembre 2022'); 'semestre' es un comentario de gestión, no un intermedio
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-07): cierre = 2022-12-31. Guido 2026-10-06: el ejercicio cierra el 31/12/2022
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 0. Soci 0, banche 0, sin otros financiadores; Totale Debiti 66.760.910 todo operativo/enti settore specifico.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): depositi bancari e postali 2.172.762 + denaro e valori in cassa 12.357 = 2.185.119. TOTALE IV 2.185.119 (31/12/2022).
 ```
 
 ## Gestiones

@@ -249,7 +249,7 @@ const monzaitFiscalYearMeta = {
       {label:'c) imposte anticipate (differite)', value:0},
       {label:'d) proventi da consolidato fiscale', value:7.520641},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:2.185119,
     officialTotalRevenue:32.723441, officialTotalExpenses:105.157443, officialPAT:-65.402911,
   },
   2023: {
@@ -270,7 +270,7 @@ const monzaitFiscalYearMeta = {
       {label:'c) imposte anticipate (differite)', value:0},
       {label:'d) proventi da consolidato fiscale', value:7.056434},
     ],
-    grossDebt:0.127833, cash:null,
+    grossDebt:0.127833, cash:1.817138,
     officialTotalRevenue:68.307822, officialTotalExpenses:133.965567, officialPAT:-60.280526,
   },
   2024: {
@@ -292,7 +292,7 @@ const monzaitFiscalYearMeta = {
       {label:'c) imposte anticipate (differite)', value:0},
       {label:'d) proventi da consolidato fiscale', value:6.943979},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:13.5, cash:0.363115,
     officialTotalRevenue:85.696721, officialTotalExpenses:136.357903, officialPAT:-47.971892,
   },
 };
