@@ -57,14 +57,14 @@ async function mergear(rama) {
   const conflictos = git(['diff', '--name-only', '--diff-filter=U']).split('\n').filter(Boolean);
   const reales = conflictos.filter((f) => !GENERADO(f));
   if (reales.length) { git(['merge', '--abort']); throw new Error(`conflicto real (no se mergeó nada): ${reales.join(', ')}`); }
-  // index.html no se regenera entero: se queda con lo de main SOLO en los bloques en conflicto, y solo si son líneas de ASSET_V (la
-  // constante o un ?v=); el resto del archivo conserva lo que mergeó git (un cambio de código de la rama no se pierde).
+  // index.html no se regenera entero: se queda con lo de main SOLO en los bloques en conflicto, y solo si los dos lados son iguales salvo
+  // el número de versión (la constante ASSET_V y cada ?v=); el resto del archivo conserva lo que mergeó git (un cambio de código de la rama no se pierde).
   for (const f of conflictos) {
     if (f !== 'index.html') { git(['checkout', '--ours', '--', f]); continue; }
     const t = readFileSync(resolve(ROOT, f), 'utf8'); let malo = false;
     const limpio = t.replace(/^<<<<<<< [^\n]*\n([\s\S]*?)^=======\n([\s\S]*?)^>>>>>>> [^\n]*\n/gm, (m, ours, theirs) => {
-      const soloAsset = (s) => s.split('\n').filter(Boolean).every((l) => /ASSET_V|\?v=/.test(l));
-      if (!soloAsset(ours) || !soloAsset(theirs)) malo = true; return ours;
+      const sinVersion = (s) => s.replace(/\?v=[\w.-]+/g, '?v=X').replace(/ASSET_V = '[^']*'/g, "ASSET_V = 'X'");
+      if (sinVersion(ours) !== sinVersion(theirs)) malo = true; return ours;
     });
     if (malo) { git(['merge', '--abort']); throw new Error('conflicto real en index.html (no es solo ASSET_V): no se mergeó nada'); }
     writeFileSync(resolve(ROOT, f), limpio);
