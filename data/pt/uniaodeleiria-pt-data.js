@@ -84,7 +84,7 @@ const uniaodeleiriaptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Prestação de serviços', lado:'revenue', importe:0.555973, motivo:'Claude 2026-10-16 (revisado, reemplaza la respuesta anterior): \'Prestação de serviços\' mezcla patrocinios, entradas, apuestas y apoyos sin desglose en ninguna nota: fútbol sin desglosar, como Torreense.'},
     ],
-    grossDebt:null, cash:0.39335,
+    grossDebt:5.846407, cash:0.39335,
     officialTotalRevenue:0.613513, officialTotalExpenses:3.476647, officialPAT:-3.009901,
   },
 };

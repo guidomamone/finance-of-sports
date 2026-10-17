@@ -149,6 +149,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 2
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos n/c 5,846,407 + Financiamentos obtidos c 0. Balance de la SAD; incluye la deuda con accionistas/financiadores según nota 15 (Jubilantadvice).
+```
+
 ### Liga
 
 ```text
