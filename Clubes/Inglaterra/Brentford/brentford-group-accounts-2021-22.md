@@ -1,0 +1,2047 @@
+> Transcripción: Tesseract OCR + revisión de un subagente de Claude contra la imagen de las páginas clave (estados y notas financieras).
+
+--- pág. 1 ---
+REGISTERED NUMBER: 03642327 (England and Wales)
+Annual Report and
+Consolidated Financial Statements for the Year Ended 30 June 2022
+- for .
+Brentford FC Ltd |
+4 | |
+. t ” .
+Ww .
+: z
+
+| a *ACOCENSN*
+1 > Mes " 29/03/2023 #640 |
+
+1 ‘COMPANIES HOUSE
+
+--- pág. 2 ---
+Brentford FC Ltd (Registered number: 03642327)
+Contents of the Consolidated Financial Statements
+for the Year Ended 30 June 2022
+Page
+Company Information 1
+Chair's Report 2
+Group Strategic Report 8
+Report of the Directors 14
+Report of the Independent Auditors 17
+| Consolidated Income Statement . 20
+Consolidated Balance Sheet rs
+; Company Balance Sheet . 22
+Consolidated Statement of Changes in Equity 24
+Company Statement of Changes in Equity 25
+Consolidated Cash Flow Statement 26
+Notes to the Consolidated Cash Flow Statement 27
+Notes to the Consolidated Financial Statements 29
+ee nennrenee a eae
+
+--- pág. 3 ---
+5
+Brentford FC Ltd
+Company Information
+for the Year Ended 30 June 2022
+Directors: C Crown FCA
+R Ankersen (resigned 1 January 2022)
+M Choudghuri
+D A Davies (appointed 1 August 2021)
+P R Giles
+D G Kerr (resigned 30 June 2022)
+M J Power (resigned 30 June 2022)
+S P Purnis ,
+N S Raj
+P Shetty (appointed 1 August 2021)
+JPL Varney (appointed 26 July 2022)
+Secretary: L J Skelhorn
+Registered office: 27 Great West Road
+Brentford
+TW8 9BW
+Registered number: 03642327 (England and Wales)
+Auditors: BDO LLP
+55 Baker Street
+London
+W1U 7EU
+1 ;
+
+--- pág. 4 ---
+|
+Brentford FC Ltd (Registered number: 03642327)
+Chair's Report
+for the Year Ended 30 June 2022
+
+introduction
+
+The 2021/22 campaign was our first season back in the top-flight of English football in 74 years and on
+Friday 13 August 2021, we kicked off our first ever Premier League match, as the fiftieth Club to play in
+the Premier League, in front of a capacity crowd at our new stadium. The returning crowd, starved of match
+attendance through COVID, cheered on as we defeated Arsenal 2-0 on a memorable evening with goals
+from Sergi Canés and Christian Norgaard.
+
+The impact created by the promotion to the Premier League has been game-changing for the Club.
+Promotion was a culmination of years of planning, investment and hard work throughout the Club. As you
+will read, our financial results, fueled by central broadcasting distributions and increased commercial
+revenues, are positive. It is not uncommon for newly promoted clubs to make a healthy profit in their first
+season in the Premier League, which we managed to do. We were also able to resist interest in our players.
+We did not need to sell our players to balance the books, which had been fundamental to our business
+“model in recent years. ;
+
+It is worth noting however, that despite the scale of the Premier League broadcast distributions, we do not
+discount player trading in the future. In recent years, whenever we have sold a player, we have been able
+to reinvest in the team. Thanks to strong recruitment, excellent player development and coaching and the
+application of the players, we have been able to improve the squad. We will aim to do this again in the
+future. Our investment strategy throughout the 2021/22 financial year has also enabled us to make further
+player acquisitions in the summer of 2022 which will be reported on in the next set of financial accounts.
+These financial results reflect the Board's historic prudence in spending money wisely while concurrently .
+building the Club's on-field and off-field organisation capability and investing in the Club's infrastructure.
+Looking forward, in a deteriorating economic environment in which higher salary and overhead costs
+remain essential to our retaining PL status, this financial performance will be incredibly difficult to repeat,
+without significant player trading. The Board remain fully committed to building the Club in a financially
+sustainable and responsible manner.
+
+Our internal motto, right across the Club last season was simple — to thrive, not just survive. We were
+determined to be an asset to the Premier League. We did not, and do not want to be there just to make
+up the numbers and | am proud of the way our fans, our staff and our players responded and applied
+themselves to the challenge.
+
+Football Performance
+
+We ended our first season in 13th place, our fourth highest finish in the top-flight of English football in our
+history. We maintained a position around the middle of the Premier League table for most of the season.
+There was a late season boost with the arrival of Denmark star Christian Eriksen, just months after he had
+suffered a cardiac arrest on the pitch when playing for his country in the UEFA EUROs. The match against
+Arsenal at home on the opening day of the season and our terrific 4-1 victory over Chelsea at Stamford
+Bridge were my personal highlights with the atmosphere generated by our fans in the stands matching the
+performances of the players on the pitch on both occasions. .
+
+In the FA Cup, we reached the fourth round being knocked out by Everton after a third-round victory
+against Port Vale. Meanwhile in the EFL Cup, we reached the quarter finals, where we were defeated by
+Chelsea. Christian Nergaard’s consistent and dominant midfield displays throughout the season led to him
+being named as both our Supporters’ and Players’ Player of the Year. Sergi Cands’s strike against Arsenal,
+meanwhile, was voted the Club’s Goal of the Season.
+
+Our B team, under the guidance of Head Coach Neil MacFarlane and Assistant Coach Sam Saunders,
+
+2
+
+--- pág. 5 ---
+Brentford FC Ltd (Registered number: 03642327)
+Chair's Report
+for the Year Ended 30 June 2022
+continues to flourish and to be an ideal environment for us to develop young players. A special mention
+goes to Nathan Young-Coombes who was named Brentford B Player of the Year after scoring 34 goals
+for the B team. That award came just 11 days after he became the latest graduate to make his Premier
+League debut against Southampton.
+Player trading
+As indicated earlier, our promotion to the top-flight has put on hold our usual business model. With our
+financial position transformed, we were able to retain our top talent. But | will repeat that we will not be
+averse to trading players in the future if we feel investment can be secured to help us take the Club to the
+next level. In the summer of 2021, our highest value signings included Kristoffer Ajer from Celtic, Frank
+Onyeka from FC Midtjylland, and Yoane Wissa from FC Lorient. Once again, we must acknowledge the
+fine work of Phil Giles and Rasmus Ankersen, Lee Dykes and their respective colleagues for their efforts
+and contributions in what is a critical part of our operation.
+The signing of Christian Eriksen in January symbolised our belief in taking calculated risks. We were able
+to offer Christian an ideal environment to restart his career while Christian excelied in our midfield, ably
+supported by Thomas Frank's team who ended up winning seven out of our last eleven Premier League
+: matches.
+We also wish the very best to all of our departing players from this reporting period, Julian Jeanvier,
+Christian Eriksen, Alvaro Fernandez, Jonas Léss!, Dominic Thompson, Marcus Forss and Luka Racic.
+Fans & Community
+Serving and representing our fans and our communities and delivering first class engagement to them .
+remains a top priority for us. Later in this document, within our Section 172 report, we summarise our
+relationship with our fans and key community groups in more detail.
+, Looking back at last season, however, the contribution of our fans was immense. They drove the team on
+to some memorable wins, stuck with us through those testing runs of games and ensured that those post-
+match laps of honour, led by Thomas Frank, helped to strengthen the bond between them and the players.
+The new stadium has given us the opportunity to significantly improve our matchday experience for our
+11,111 season ticket holders and thousands of members. So much so that we were ranked number one
+in the Premier League’s Matchday Fan Experience Survey for the 2021/22 season. Over 30,000 fans from
+all Premier League clubs were involved in the survey which took place between November 2021 and
+January 2022. | was particularly pleased to see that we scored highly in terms of the welcome that we
+extended to all fans. This is something that | feel is important at every level across the Club and we rely
+‘ on our people, their energy and hospitable nature to deliver that at every game.
+We are also very mindful that financial pressures are also biting hard across the country, and we must
+ensure that we do everything we can to ensure that football is affordable and accessible. Rewarding fans :
+with free match tickets for the last away game at Everton, after a fate change in kick-off time, was another '
+. example of how we support the fans financially.
+
+--- pág. 6 ---
+Brentford FC Ltd (Registered number: 03642327)
+Chair's Report
+for the Year Ended 30 June 2022
+Over the last season, | have also been directly involved in the Premier League discussions reviewing the
+recommendations of the Government's Fan-led Review. A review in which our club model was praised.
+Our lived experience has been valuable in the discussions that followed the publication of the review. With
+us having a fan's representative, Stewart Purvis, as a director on the board and with fans having a golden
+share in the Club via our Supporters Trust, Bees United, we have been able to share how our fans have
+a direct influence on key strategic matters. We hope to continue to make a positive contribution in the
+industry-wide discussions. .
+The new stadium has also given us a wonderful environment to attract and engage with fans and the local
+community, alongside the Brentford FC Community Sports Trust who have recently moved into their new
+Hub adjacent to the stadium. The Trust have recently published their Impact Report titled Changing
+; Horizons for 2020-22. In the past year alone Brentford FC Community Sports Trust has worked with over
+12,000 local people ranging in age from 16 months to over 65. The breadth of activity and number of
+participants the Trust now reaches across west London is increasing year on year. We look forward to
+seeing even more growth in the coming years.
+Brentford FC’s Women’s First Team finished fourth in Division 1 North of the London & Southeast Regional
+Women's League — the sixth tier of the women’s national pyramid. Our Women's B Team meanwhile also
+finished fourth in their league, the Greater London Women’s Football League Division 1 and won the
+Greater London Women's Football League Anniversary Trophy. A highlight of the season was our .
+showcase match for the Women’s First Team which coincided with International Women's Day. A Club
+record attendance of 1,010 was achieved as Brentford FC Women defeated Sport London e Benfica 7-2
+at Bedfont Sports Club. At the end of season awards, goalkeeper Emily Boycott was named First Team
+Player of the Year. Defender Cara Graham won the Player of the Year prize for Brentford Women B Team.
+Governance
+The Club's EDI! & Wellbeing board sub-committee, chaired by non-executive director Monique Choudhuri,
+oversees the implementation of our EDI strategy to critique and provide guidance and support. Thanks to
+their input, |! am pleased that we have been able to achieve the preliminary level of the Premier League
+Equality, Diversity & Inclusion Standard.
+We published our annual Gender Pay Gap report in April. The report covers information up to April 2021
+and provides an explanation of the Club's figures, its approach to recruitment and its inclusion policies.
+The Audit Committee at the Club has been in place for several years and consists of independent non-
+executive current and former directors and one external advisor. The main role of the Audit Committee is
+to: monitor the integrity of the company's financial statements and announcements; review internal
+financial controls and risk management systems; and recommend the appointment or replacement of
+external auditors and to review the effectiveness of their work.
+Later in this report, you will see our first required Streamlined Energy and Carbon Reporting results. Our
+work to develop an organisational sustainability strategy is well underway and will deliver a plan that will
+govern this area of the business and help us to develop initiatives to reduce our impact on the planet, to
+promote circularity and improve our natural habitat.
+Finance ‘ :
+The financial statements for the year under review show a group operating profit, before player trading, of
+£25.1m (2021: loss of £53.2m). Total turnover for the year was a Club record, £140.9m (2021: £15.3m).
+4 i
+
+--- pág. 7 ---
+i
+; i
+Brentford FC Ltd (Registered number: 03642327)
+Chair's Report
+for the Year Ended 30 June 2022
+The profit before taxation was £29.9m (2020: loss of £8.5m), which includes the profit on the disposal of
+player registrations which was £4.6m (2021: profit of £44.3m).
+Matthew Benham's total investment in the group as at 30 June 2022, comprised of equity and loans, stood
+at £104.4m (2021: £104.0m). This sum includes £22.8m (2021: £22.4m) of loans specifically in relation to
+the stadium project.
+Commercial
+A breakdown of our increased commercial revenues can be found later in this report showing substantial
+increases across all key revenue streams. Our central distributions from the Premier League, mainly driven
+by their global broadcasting deals were transformational. With fans back and stadiums returning to full
+capacities post-COVID, we were able to drive our matchday income while keeping our ticket pricing at a
+very affordable level. Commercial investment secured from our partnerships increased too, in line with the
+level of exposure and the return that we can now offer.
+In order for us to catch up and keep pace with the relentless growth of our competitors across the league,
+we must continue to look for ways to attract more commercial investment and to optimise stadium-related
+revenue. We will approach this in a sustainable way, while being mindful of the need to drive as much
+investment into the playing squad to ultimately give us the best chance we can to establish our place in
+the top-flight. | would like to place on record my thanks to all of our partners who we work with to engage
+with our fans and to drive our respective businesses.
+In terms of our retail offering, it is worth mentioning the success of our home kit ‘rollover’. We took the
+unusual decision last season to roll our home kit on for an extra season, extending the life of the kit by a
+year and providing those who purchased it with even more value for money. The decision was taken
+following fan feedback and was well-received by our fanbase and the industry which highlighted the
+sustainability benefits which it delivered.
+Stadium and facilities
+In the summer of 2022, following months of preparations, we played host to the biggest women's sporting
+event of the year, with four UEFA Women's EURO matches taking place at our stadium. It was an
+opportunity to welcome new visitors to our stadium and to showcase some of the best female footballers
+_ in Europe here in west London. We believe that the event will inspire the next generation to get involved
+whether that is by attending, playing or even coaching and we will work closely with Brentford FC
+. Community Sports Trust to promote their related programmes for girls and women.
+Another big project which was completed in the summer of 2022 was the creation of barriered areas to
+‘enable safe standing for our fans in the West Stand and for away fans. Significant investment was required
+to deliver this. The barriered areas have improved stadium safety, as well as being well received by our
+fans and have helped to enhance what is already a terrific atmosphere at the Gtech Community Stadium.
+Sadly, over the course of last season we had to issue sanctions against 56 individuals who breached
+ground regulations, committed football-related offences or damaged the reputation of the Club. A total of
+206 memberships or season tickets were also revoked for ticket touting and other ticket offences. We did ~ ‘
+notice a decline in the levels of unacceptable conduct in the stadium as the season progressed, but there
+is still work to be done. We will not shirk our responsibility to take firm action to deal with discrimination,
+abuse and other offences which threaten the safety and environment at the stadium...
+5 1
+
+--- pág. 8 ---
+Brentford FC Ltd (Registered number: 03642327)
+Chair's Report
+_ for the Year Ended 30 June 2022
+
+Next year we will report a significant redevelopment of the Jersey Road training ground complex, which
+
+has recently been renamed as the Robert Rowan Performance Centre. The foundations of this, including
+
+obtaining the relevant planning permissions, design work and preparatory ground works were undertaken
+
+in 2021/22.
+
+Equality, Diversity & Inclusion .
+
+At Brentford FC we treat everyone fairly and with respect. We believe that football is for everyone. It
+
+belongs to and should be enjoyed by anyone who wants to participate in it, whether as a player, official,
+
+staff member or as a fan. We aim, therefore, to bring people together in a way that supports positive
+
+change, makes people feel valued and improves the lives and inclusive experience of our fans and wider
+
+community. °
+
+We aim to promote equality, diversity and inclusion across alll areas of the Club under our campaign,
+
+BeeTogether. We are committed to confronting and eradicating discrimination of all kinds.
+
+Our people
+
+As can be seen, this was a remarkable season for Brentford FC. The promotion to the top-flight has
+
+provided.us with additional resources and a platform to grow and develop our Club significantly.
+
+Importantly we have been able to invest in our staff and also to recruit new people to add expertise and
+
+depth to our team. Our values are to show togetherness, to be progressive and to be respectful. They
+
+remain as important as ever to us and our people.
+
+Brentford FC are a signatory of the FA’s Football Leadership Diversity Code. During the second season
+
+of the Code, we made good progress with positive increases made across almost all targets. In this period,
+
+33 per cent of senior leaders, 31 per cent of team operations staff, 33 per cent of coaches for our men's
+
+teams and 100 per cent of our senior coaches hired by Brentford are Black, Asian or Mixed-Heritage. We
+
+did not reach the targets set to hire females into senior leadership positions and in team operations roles.
+
+While we continue to cast our net as wide as possible to diversify our shortlists for each job, we are
+
+- optimistic about our results for the forthcoming season. We will always hire the best person for each role
+
+. but firmly believe that diversity is good for society, and is also good for the Club, helping us to challenge
+
+current thinking, innovate and make good decisions.
+
+We remain committed to the safeguarding and welfare of all children, young people and adults at risk of
+
+harm and require all staff, volunteers and others associated with the Club to share and endorse this
+
+commitment. During this period, we recruited Natalie Craig as our new Head of Safeguarding.
+
+As an indicator of the performance of our staff right across the Club, we were voted the Sport Organisation
+
+of the Year at the prestigious Sport Industry Awards. | feel that this was truly deserved and a wonderful
+
+recognition of the hard work that everyone has put in during the last year.
+
+Finally, as | reflect on the last financial year and the last season, my mind is drawn back to our own awards
+
+night, the Player of the Year 2022: Live Show, held at Sky's HQ in Hounslow. It was a moment when |
+
+could reflect on how far we had travelled. It was a great setting, it was a celebration of all of our teams,
+
+players and coaching staff. It was produced to a Premier League standard with many departments involved
+
+and thousands of our fans watching online. It felt like we had arrived. :
+
+6
+
+--- pág. 9 ---
+id
+. , , Brentford FC Ltd (Registered number: 03642327) ,
+. . Chair's Report oe
+for the Year Ended 30 June 2022
+That night was about recognising the input of our people, and on that note, | would like to extend my
+appreciation to all of them, and to my fellow board directors who | have served alongside. In particular, |
+would like to thank Rasmus Ankersen who resigned from the board on 1 January 2021 after making a a
+fantastic contribution to the Club — we miss his energy and creativity, but he will always be welcome at
+Brentford. Donald Kerr and Mike Power also stepped down from the board at the end of June. Their advice
+and influence have been instrumental over the years. in helping to steer the Club to where it is today.
+During this reporting period, we also welcomed onto the board Preeti Shetty and Deji Davies in August
+2021 while Jon Varney, our Chief Executive, stepped onto the: board in July 2022. as we prepared for our
+second season in the Premier League where our journey continues.
+Cirfi “Crown FCA . , .
+Chair ; ,
+22 December 2022 ,
+7
+
+--- pág. 10 ---
+, "Brentford FC Ltd (Registered number: 03642327) . .
+me - Group Strategic Report ee ‘
+for the Year Ended 30 June 2022
+Group strategic report
+The directors present their strategic report of the company and the group for the year ended 30 June 2022.
+The main strands of the Club's strategy are as follows:
+- Continue to improve the quality of live football and perform at the highest possible level;
+- Deliver outstanding fan and local community engagement,
+- Achieve financial stability via revenue growth and cost control; and :
+
+- Develop our people and provide them with an environment to succeed.
+
+On the pitch the Club had an excellent first season in the Premier League finishing in 13th position with
+
+one of the lowest wage structures in the division.
+The Club will not shy away from selling players, when it is considered appropriate to do so, but only when
+the right valuation has been met and this continues to be a part of our success story, albeit promotion to
+the Premier League means that for the first time in many years no players were sold in the current year.
+Business review . . .
+
+Brentford FC uses a variety. of key performance indicators in order to monitor and manage the business
+
+effectively. :
+Indicator 2021/22 2020/21
+Turnover (£m) 140.9 15.3
+Player Trading (£m) 4.6 44.3
+Profit/(Loss) before tax (£m) 29.9 (8.5)
+Wages: Turnover ratio (%) 48 270*
+Season tickets 11,111 N/a - Covid
+Actual league position 13th (PL) 3rd (Champ)
+xG league position** 7th (PL) 1st (Champ)
+*Wages:Tumover ratio in the prior year was heavily impacted by promotion related bonuses paid to players, management and
+staff.
+**This metric relates to the underlying performance of the men's 1° team and stands for “expected goals”. It is a statistical
+measurement of the quality of goalscoring chances (created and conceded) and the likelihood of them being scored.
+
+. Turnover increased by £125.6m in the year to £140.9m (2021: £15.3m) on the back of promotion to the
+Premier League in May 21. The majority of this increase is driven by central income, now at £114.9m, with
+broadcasting income at Premier League level dwarfing that at Championship level in the English Football
+League. The current year also sees the return of matchday income (post Covid) with £10.4m generated in
+the new Gtech Community Stadium, as well as significant growth in commercial revenue because of the
+global appeal of the Premier League. ;
+Profit on player trading is much reduced in the current year with the club able to keep hold of its key assets
+given the significant increase in revenue. The profit generated in the current year is driven primarily by
+contingent events triggered in the 21/22 season but linked to historical player sales. .
+
+8
+
+--- pág. 11 ---
+ee " Brentford FC Ltd (Registered number: 03642327) _ |
+; ; Group Strategic Report
+for the Year Ended 30 June 2022
+Costs also increased significantly in the current year, with investment in the playing squad driving an ~
+
+increase in employee costs of £26.7m and an increase in player amortisation of £9.5m. The output of
+
+the above factors resulted in the Group producing a profit before tax in the year of £29.9m (2021: Loss of
+
+£8.5m). ,
+
+The Group is in a net asset position of £47.3m as at 30th June 22 (2021: £21.6m).
+
+The challenges of the 20/21 season were still being felt in the current year as there was a roll-over of most
+
+season ticket sales from the 20/21 season into the 21/22 season. While this mitigated the need for cash
+
+outflow initially it meant there wasn't an inflow of cash in relation to 21/22 season tickets. This, coupled
+
+with the need to invest further in the squad, was a challenge that was overcome through the receipt,
+
+subsequent to year-end, of our first Premier League related receipts and through the execution of a £20m
+
+overdraft facility with Barclays Bank pic - this overdraft facility was fully repaid by 30th June 2022, but
+
+subsequent to year-end has been renewed at a limit of £25m in order to assist further investment in the
+
+playing-squad in Summer 22. . : .
+
+Principal risks and uncertainties
+
+There are several risks and uncertainties inherent within professional football to which Brentford FC is
+
+exposed, . . OO
+
+The key areas of risk are considered to be:
+
+- Reliance on the First Team's performance to maintain the Club's league status
+
+- Inthe current year Central income contributed £114.9m (20/21: £8.4m), which is outside the Club's
+direct control, representing 81% of the Club's total turnover:
+
+- Recruitment and retention of key employees to be able to operate the Club in a fashion that will achieve
+financial stability, ;
+
+- Impact of supporter attendance levels at First Team matches, both in financial terms during the current
+Cost of Living Crisis, and player performance:
+
+- Compliance with rules and regulations of applicable football governing bodies; and
+
+- Managing working capital and tax affairs that require complex forecasting and scenario planning.
+
+The above risks are considered to be mitigated by the following actions:
+
+- Further investment in players to replace those that have moved on, improving the squad depth;
+
+- There is a growing focus by the Club to bring in funds through other revenue streams, primarily on the
+Commercial side of the business:
+
+- Additional staff have been recruited to help with the growing nature of the organisation.
+
+- Fan engagement is a key objective of the club - the 21/22 season generated sell-out crowds for every
+
+. league game;
+
+- The Ciub has a proactive approach to any changes in the regulatory environment and has recruited
+qualified staff to manage compliance in those areas; and
+
+- The maintenance of: detailed cash forecasts including application of appropriate sensitivities.
+Engagement with third party tax specialists on a regular basis.
+
+On behalf of the board:
+
+C Crown FCA:.Djrector |
+
+Date: 2% December 2022 .
+
+9g . ;
+
+--- pág. 12 ---
+, Brentford FC Ltd (Registered number: 03642327)
+- - Group Strategic Report me
+for the Year Ended 30 June 2022
+ae
+’ Section 172(1) statement ;
+Section 172 of the Companies Act 2006 requires Brentford FC’s board of directors to take into
+consideration the interests of stakeholders and other matters in their decision making.
+Brentford FC endeavours to put our fans first and we believe we are a true community club. We take huge
+pride in the culture within the Club which focuses on development, inclusion and not being afraid to think
+differently. Being progressive, humble and respectful while sticking together as one team across the Club
+- guides how we work and the decisions we make each.day. We also firmly believe that a diverse workforce
+is a better workforce which will help us develop ideas, solve problems and ultimately grow Brentford FC.
+A summary is presented below of how we engage with our key stakeholders to take into consideration
+their interests and to support our strategic decision-making.
+
+. Our supporters - - .
+Brentford FC has regular meetings and consultations with three official fan groups: Bees United, Brentford
+Independent Association of Supporters (BIAS) and the Club's Disabled Supporters Association. Until 2012,
+the Club was controlled by Bees United, a Supporters' Trust which was in turn born out of BIAS. Both
+
+: organisations are independent of the Ciub.and have members from a broad cross section of the Club's
+supporters, with Bees United having approximately 3,500 members, and BIAS around 2,000. Our Disabled
+Supporters Association is newly formed this season, as part of our ongoing efforts to improve the
+experience of fans and visitors with any disabilities.
+As part of the transaction to acquire Brentford FC from Bees United, Matthew Benham agreed to certain
+conditions set by Bees United stipulating that supporters would be consulted on and have input in key
+decisions through representation on the main Board of the Club for a nominated member of Bees United,
+and through the ownership of a "Golden Share" that prevents the stadium being sold unless an alternative
+Stadium is available. Indeed, Bees United's Golden Share is the model which the Government's recent
+Fan-Led Review used as its example for other clubs.
+Bees United and BIAS are consulted by the Club on a range of matters, on an informal basis, and pursuant
+to the Club's Supporter Charter. Sub-groups have also been established to address particular issues of
+interest to supporters - most recently to consult on the Club's ticketing system and policies; to review how
+the Club deals with discriminatory behaviour, to assess food and drink provision at the stadium; and to
+take forward the Club's support for women and girls. The Club already engages with Bees United (via their
+representative on the Club's Board) and with BIAS via regular meetings, covering material off-field issues.
+
+. Supporters' views are_also gathered and considered via a series of fan sufveys, fan forums, market _
+research and frequent email and telephone dialogue. These insights and conversations feed into all
+aspects of our ‘off-field operations to support of decision-making processes. An essential part of this
+continues to be our focus on providing an accessible and inclusive environment for all fans and visitors,
+ensuring our fans experience inclusivity the Brentford way. The Premier League's Matchday Fan
+Engagement survey for the 2021-22 season reported that 93% of respondents feel that Brentford FC
+provides an inclusive and enjoyable matchday experience for all supporters regardless of their background
+and diversity.
+
+Our employees .
+One of our core objectives is to create a culture where we can develop our people and provide them with
+an environment in which they can thrive and succeed. Making sure our environment is inclusive is an
+important part of that. A number of additional initiatives have been rolled out to help achieve that.
+10
+
+--- pág. 13 ---
+Brentford FC Ltd (Registered number: 03642327) . .
+. . Group Strategic Report
+for the Year Ended 30 June 2022
+’ At Brentford FC we were proud to launch the Club's first Equality, Diversity and Inclusion strategy 'Bee the
+Change’. In order for this and our wider EDI work to be successful we recognise the need to have support
+structures in place to deliver this work, and also to ensure we are accountable for its delivery. The Club's
+EDI! Mental Health & Wellbeing board sub-committee is responsible for the oversight of the Club's delivery
+outcomes in this area. They are in place to check, challenge and provide strategic support for the Club's
+aims in this area. This group also facilitates the swift approval of new Club policies.
+‘Lunch and learn’ sessions have been established internally where staff can come together in a safe space
+to discuss topical EDI issues. We also have established an Employee Resource Group for our female staff
+to help foster a diverse, equitable and inclusive workplace.
+The ED! Menta! Health & Wellbeing working group meanwhile involves a number of key staff from across
+the Club. Although still in its infancy, the group has already made some key contributions, such as
+consulting on the Club's yearly campaigning focus.
+A Sustainability Working Group has also been established for staff to contribute to the Club's efforts to be
+more environmentally sustainable.
+The football family
+~ Brentford FC is subject to the regulations of the various football authorities who regulate and organise the
+competitions in which our teams play including the FA, the Premier League and the EFL alongside local
+bodies including the Middlesex FA, the London FA and the international bodies, UEFA and FIFA. We
+engage with all of these organisations to ensure that we contribute positively to the development and
+- sustainability of the game of football.
+Our Chair and CEO represent the Club in a number of strategic forums across the Premier League and
+the FA. Both attend the Premier League's Shareholders Meetings while the Chair sits on its Fan-Led
+Review of Football Governance Advisory Group and the CEO sits on its Commercial Advisory Group. The
+Chair is also a member of the FA's Professional Game Board and the FA Council.
+Throughout the year, members of the Club's executive team participate in various club meetings and
+- working groups to contribute to the discussions on key issues and challenges within the industry.
+. Our community
+’ Engaging the local community is important to the Club. Brentford FC Community Sports Trust has been in
+operation for many decades to progress health, education and social care initiatives across the local
+: _. community. The Club's Fan & Community Relations team are also very active, supporting local events, .
+business and community projects.
+We have strong working relationships with our local MPs and councillors and frequently discuss specific .
+matters impacting on their constituents and on broader, more strategic issues which are important to the
+community. Our links with the London Borough of Hounslow-are obviously vital with several employees
+- and departments having regular dialogue with their local authority counterparts. On top of this, we meet
+with local political leaders, residents and local interest groups through our Brentford FC Community
+Engagement Group meetings which are held at least twice a year.
+’ In order to ensure that we can operate our stadium and all associated events in a safe and compliant
+. manner, we engage regularly with our Safety Advisory Group in line with our issued safety certificate. We
+- also work closely with the Metropolitan Police and all other local emergency services.
+“41 ;
+
+--- pág. 14 ---
+, Brentford FC Ltd (Registered number: 03642327) , .
+Group Strategic Report -
+for the Year Ended 30 June 2022
+‘In relation to our training ground at Jersey Road, we have hosted a number of public consultation sessions
+to ensure that we take into consideration any concerns or issues that the local community may have as
+we continue to develop that site.
+Partners and suppliers |
+Brentford FC has a range of different commercial partners who the Club works with to promote their brands
+and products using the Club's appeal, platform, values and audiences. These relationships are managed
+by our executive team, overseen ultimately by the Club's CEO. We engage regularly with our commercial
+partners to discuss relevant issues relating to our plans and core objectives.
+, Over the years, Brentford FC has also engaged with a number of partners that aim to promote issues such
+as sustainability, equality, diversity and inclusion. ;
+- Our local environment - - .
+We recognise the opportunity football brings to inspire positive change. Brentford FC is passionate about
+sustainability and supporting the transition to a more environmentally sustainable future for everyone. With
+this in mind, the Club is currently working on the development of a sustainability strategy. As part of that
+. . process, we. have -engaged with a range of different stakeholders including our local authorities,
+‘commercial partners, football authorities and our staff. - . .
+The Club has been responsible for implementing a number of sustainable initiatives that have set a good
+foundation from which to build this strategy.
+In 2020, Brentford FC unveiled its brand-new community stadium, regenerating a derelict site to also
+provide new homes and commercial services. The Club worked closely with the design team to optimise
+| operational energy and reduce carbon emissions. Due to the inner-city location, low-carbon and active
+travel transport options were good and we have installed electric vehicle charging points. A BREEAM 'Very
+Good’ rating was achieved for the design of the stadium. The Ciub has also maximised the operational
+use of the stadium by leasing the pitch to London Irish Rugby Club and recently hosted four UEFA
+Women's EURO 2022 games. ;
+Brentford FC's caterer Levy has strong sustainability aspirations, producing low carbon, plant-based food
+options as well as implementing reusable cups and reducing single use plastic. They also have ambitions
+to achieve net zero carbon by 2030.
+Within the Club's head-offices, we have developed our own environmental policy to help drive.
+_ environmental objectives within the workspace, for example, minimising waste and operational energy and .
+offering a cycle to work scheme.
+A highly publicised and well received initiative to roll over kit has been welcomed from fans, not only saving
+costs but creating less environmental impact. : ‘
+12
+
+--- pág. 15 ---
+. Brentford FC Ltd (Registered number: 03642327) , ,
+- Group Strategic Report me pc
+for the Year Ended 30 June 2022
+Streamlined energy and carbon reporting (SECR) ;
+
+. In accordance with the Companies (Directors' Report) and Limited Liability Parinerships (Energy and
+Carbon Report) Regulations 2019 we are required to disclose our UK energy and Greenhouse Gas
+emissions.
+
+The Group has followed the 2020 HM Government Environmental Reporting Guidelines and has used the
+
+2022 UK Government's Conversion Factors for Company Reporting.
+The electricity and gas data has been recorded over a 42-month period from July 2021 to June 2022. The
+data was collated directly from monthly invoices and a consumption report. Emissions from electricity are
+, location based and report grid purchased electricity (Scope 2) including transmission and distribution
+; losses (Scope 3). Gross calorific values have beén applied to the conversion of natural gas (Scope 1).
+Company transport data was collated from mileage claims made by members of staff assuming. an average
+
+- sized car and unknown fuel type for the same period (Scope 3). Flight and coach travel data was obtained
+
+; from invoices issued by the respective travel companies for the same period (Scope 3).
+
+The Club has chosen “Total kilograms of Carbon dioxide equivalent per fan visit to the Gtech Community
+Stadium’ for its Intensity Ratio. The number of fan visits in the year under review was 430,498. 2022 is the
+
+. first year where the Group is required to report against the SECR regulations and therefore comparative
+data is not provided for 2021. . , :
+
+Year ended 30 June 2022
+Energy Carbon
+Equivalent - Emissions -
+kwh tonnes CQ2e
+| Scope 1 - Direct Emissions 1,607,626 293
+Scope 2 - Indirect Emissions 3,752,890 726
+Scope 3 - Other Indirect Emissions 74,809 200 ;
+fro | saas,ses| tata]
+Intensity Ratio:
+Kg COve per fan visit 2.83
+On behalf of the board:
+CB CR Bisa o .
+Date: 22 December 2022
+13
+
+--- pág. 16 ---
+. . Brentford FC Ltd (Registered number: 03642327) .
+- mS Report of the Directors me
+for the Year Ended 30 June 2022
+The directors present their report with the financial statements of the company and the group for the year i
+ended 30 June 2022.
+, Dividends , , ,
+No dividends will be distributed for the year ended 30 June 2022. —
+Events since the end of the year
+Information relating to events since the end of the year is given in the notes to the financial statements.
+, Directors , | ,
+, The directors shown below have held office during the whole of the period from 1 July 2021 to the date of
+. this report. - -. . .
+C Crown FCA
+M Choudhuri © ,
+P R Giles .
+. ’ NSRaj © . . . oo. Lo.
+S P Purvis ; ; ;
+Other changes in directors holding office are as follows:
+R Ankersen - resigned 1 January 2022 |
+D G Kerr - resigned 30 June 2022
+M J Power - resigned 30 June 2022
+P Shetty - appointed 1 August 2021 :
+D A Davies - appointed 1 August 2021
+J PL Varney was appointed as a director after 30 June 2022 but prior to the date of this report.
+Donations
+Donations made by the Group include donations made to Brentford FC Community Sports Trust as well
+as a number of smaller donations to various organisations.
+14
+
+--- pág. 17 ---
+| . _ Brentford FC Ltd (Registered number: 03642327) . .
+OO Report of the Directors
+for the Year Ended 30 June 2022
+Going concern , ,
+In assessing the appropriateness of the going concern assumption, the Directors have produced detailed
+cash flow projections which extend through until the end of the.2023/24 football season, taking into account
+both Premier League retention and relegation scenarios at the end of the 2022/23 season.
+The Directors have not identified any material uncertainty that may give rise to significant doubt with regard
+to going concern. They therefore consider it appropriate to continue to prepare the financial statements on
+a going concern basis. The financial statements make no provision for any adjustment should the going
+concern basis not be appropriate.
+7 Statement of directors’ responsibilities _ , |
+The directors are responsible for preparing the Annual Report and the financial statements in accordance ,
+. with applicable law and regulations. . - .
+Company law requires the directors to prepare financial statements for each financial year. Under that
+law the directors have elected to prepare the financial statements in accordance with United Kingdom
+Generally Accepted Accounting Practice (United Kingdom Accounting Standards and applicable law).
+. . Under company law the directors must not approve the financial statements unless they are satisfied that .
+they give a true and fair view of the state of affairs of the company and the group and of the profit or loss
+of the group for that period. In preparing these financial statements, the directors are required to:
+- select suitable accounting policies and then apply them consistently;
+- make judgements and accounting estimates that are reasonable and prudent;
+- State whether applicable UK Accounting Standards have been followed, subject to any material
+departures disclosed and explained in the financial statements, and
+; - prepare the financial statements on the going concern basis unless it is inappropriate to presume that
+the company will continue in business.
+The directors are responsible for keeping adequate accounting records that are sufficient to show and
+explain the company's and the group's transactions and disclose with reasonable accuracy at any time the
+financial position of the company and the group and enable them to ensure that the financial statements
+comply with the Companies Act 2006. They are also responsible for safeguarding the assets of the
+company and the group and hence for taking reasonable steps for the prevention and detection of fraud
+and other irregularities.
+Statement as to disclosure of information to auditors
+So far as the directors are aware, there is no relevant audit information (as defined by Section 418 of the .
+Companies Act 2006) of which the group's auditors are unaware, and each director has taken all the steps
+that he or she ought to have taken as a director in order to make himself or herself aware of any relevant
+audit information and to establish that the group's auditors are aware of that information.
+15
+
+--- pág. 18 ---
+$
+. Brentford FC Ltd (Registered number: 03642327) .
+a oO Report of the Directors ae 7
+for the Year Ended 30 June 2022
+Auditors , ,
+The auditors, BDO LLP, have expressed their willingness to continue in office. A resolution to re-appoint
+them will be proposed at the Annual General Meeting.
+On behalf of the board:
+. C Crowh FCA - Director . . ;
+Date: 22 December 2022 | : CO :
+, 16 ‘
+
+--- pág. 19 ---
+: , Report of the Independent Auditors to the Members of .
+Brentford FC Ltd |
+INDEPENDENT AUDITOR'S REPORT TO MEMBERS OF BRENTFORD FC LTD ;
+Opinion on the financial statements .
+In our opinion:
+e the financial statements give a true and fair view of the state of the Group's and of the Parent Company's
+affairs as at 30 June 2022 and-of the Group's profit for the year then ended;
+; e the financial statements have been properly prepared in accordance with United Kingdom Generally
+Accepted Accounting Practice; and
+e the financial statements have been prepared in accordance with the requirements of the Companies
+Act 2006. . ;
+We have audited the financial statements of Brentford FC Limited (the ‘Parent Company’) and its subsidiaries
+, (the ‘Group’) for the year ended 30 June 2022: which comprise the Consolidated Income Statement, the
+Consolidated Balance Sheet, the Company Balance Sheet, the Consolidated Statement of Changes in Equity,
+the Company Statement of Changes in Equity, the Consolidated Cash Flow Statement and notes to the financial
+; statements, including a summary of significant accounting policies. The financial reporting framework thathas _
+, been applied in their preparation is applicable law and United Kingdom Accounting Standards, including.
+Financial Reporting Standard 102 The Financial Reporting Standard applicable in the UK and Republic of
+. Ireland (United Kingdom Generally Accepted Accounting Practice). ; ; i
+Basis for opinion
+; We conducted our audit in accordance with International Standards on Auditing (UK) (ISAs , ;
+(UK)) and applicable law. Our responsibilities under those standards are further described in the
+Auditor's responsibilities for the audit of the financial statements section of our report. We believe that the audit
+evidence we have obtained is sufficient and appropriate to provide a basis for our opinion.
+Independence ;
+| We are independent of the Group and the Parent Company in accordance with the ethical requirements that’
+are relevant to our audit of the financial statements in the UK, including the FRC’s Ethical Standard, and we
+have fulfilled our other ethical responsibilities in accordance with these requirements.
+Conclusions relating to going concern
+In auditing the financial statements, we have concluded that the Directors’ use of the going concern basis of
+accounting in the preparation of the financial statements is appropriate.
+Based on the work we have performed, we have not identified any material uncertainties relating to events or
+conditions that, individually or collectively, may cast significant doubt on the Group's and Parent Company's
+ability to continue as a going concern for a period of at least twelve months from when the financial statements
+are authorised for issue. - . -
+Our responsibilities and the responsibilities of the Directors with respect to going concern are described in the
+relevant sections of this report.
+Other information
+The directors are responsible for the other information. The other information comprises the information
+included in the Annual Report and Financial Statements other than the financial statements and our auditor's
+report thereon. Our opinion on the financial statements does not cover the other information and, except to
+the extent otherwise explicitly stated in our report, we do not express any form of assurance conclusion thereon.
+a: 17
+
+--- pág. 20 ---
+Report of the Independent Auditors to the Members of
+Brentford FC Ltd
+. Our responsibility is to read the other information and, in doing so, consider whether the other information is
+materially inconsistent with the financial statements or our knowledge obtained in the course of the audit, or
+’ otherwise appears to be materially misstated. If we identify such material inconsistencies or apparent material
+misstatements, we are required to determine whether this gives rise to a material misstatement in the financial
+statements themselves. If, based on the work we have performed, we conclude that there is a material
+misstatement of this other information, we are required to report that fact. ,
+We have nothing to report in this regard.
+Other Companies Act 2006 reporting
+In our opinion, based on the work undertaken in the course of the audit: ,
+e the information given in the Strategic report and the Directors’ report for the financial year for which the
+financial statements are prepared is consistent with the financial statements; and .
+° the Strategic report and the Directors’ report have been prepared in accordance with applicable legal
+; requirements. ; ; ;
+In the light of the knowledge and understanding of the Group and Parent Company and its environment obtained
+in the course of the audit, we have not identified material misstatements in the Strategic report or the Directors’
+report. ;
+: We have nothing to report in respect of the following matters in relation to which the Companies: Act 2006 .
+requires us to report to you if, in our opinion: : ; ,
+e adequate accounting records have not been kept by the Parent Company, or returns adequate for our
+audit have not been received from branches not visited by us; or .
+e the Parent Company financial statements are not in agreement with the accounting records and returns;
+or
+« certain disclosures of Directors’ remuneration specified by law are not made; or
+e we have not received all the information and explanations we require for our audit.
+Responsibilities of Directors
+As explained more fully in the Report of the Directors, the Directors are responsible for the preparation of the
+financial statements and for being satisfied that they give a true and fair view, and for such internal control as
+the Directors determine is necessary to enable the preparation of financial statements that are free from material
+misstatement, whether due to fraud or error.
+In preparing the financial statements, the Directors are responsible for assessing the Group's and the Parent
+Company's ability to continue as a going concern, disclosing, as applicable, matters related to going concern
+and using the going concern basis of accounting unless the Directors either intend to liquidate the Group or the
+° Parent Company or to cease operations, or have no realistic alternative but to do so: °
+_ Auditor’s responsibilities for the audit of the financial statements
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free
+from material misstatement, whether due to fraud or error, and to issue an auditor's report that includes our
+opinion. Reasonable assurance is a high level of assurance but is not a guarantee that an audit conducted in
+accordance with ISAs (UK) will always detect a material misstatement when it exists. Misstatements can arise
+from fraud or error and are considered material if, individually or in the aggregate, they could reasonably be
+expected to influence the economic decisions of users taken on the basis of these financial statements
+18
+
+--- pág. 21 ---
+Report of the Independent Auditors to the Members of __- .
+Brentford FC Ltd
+Extent to which the audit was capable of detecting irregularities, including fraud
+Irregularities, including fraud, are instances of non-compliance with laws and regulations. We design
+procedures in line with our responsibilities, outlined above, to detect material misstatements in respect of
+irregularities, including fraud. The extent to which our procedures are capable of detecting irregularities,
+: including fraud is detailed below: :
+Based on our understanding of the Group and the sector in which it operates, we identified that the principal
+risks of non-compliance with laws and regulations related to their registration with the English Premier League,
+and we considered the extent to which non-compliance might have a material effect on the Group Financial
+Statements or their continued operation. We also considered those laws and regulations that have a direct
+impact on the financial statements such as compliance with tax legislation. |
+. We evaluated management's incentives and opportunities for fraudulent manipulation of the financial .
+statements (including the risk of override of controls) and determined that the principal risks were related to
+posting inappropriate journal entries to manipulate financial results and management bias in accounting
+estimates. .
+The audit procedures to addréss the risks identified included, but were not limited to: ,
+e Challenging assumptions made by management in their significant accounting estimates in particular
+‘ in relation to the impairment of players and the useful economic life of the stadium.
+e Identifying and testing journal entries, selected based on specific risk criteria.
+. ¢ Testing a sample of revenue transactions to signed contracts and other third-party documentation to .
+ensure they are recorded in the correct period.
+e Discussion held with management and those charged with governance, including consideration of
+known or suspected instances of non-compliance with laws and regulations and fraud.
+e Reading minutes of meetings of those charged with governance and review of legal correspondence.
+Our audit procedures were designed to respond to risks of material misstatement in the financial statements,
+recognising that the risk of not detecting a material misstatement due to fraud is higher than the risk of not ,
+detecting one resulting from error, as fraud may involve deliberate concealment by, for example, forgery,
+misrepresentations or through collusion. There are inherent limitations in the audit procedures performed and
+the further removed non-compliance with laws and regulations is from the events and transactions reflected in
+the financial statements, the less likely we are to become aware of it.
+A further description of our responsibilities is available on the Financial Reporting Council’s website at:
+www. frc.org.uk/auditorsresponsibilities. This description forms part of our auditor's report.
+Use of our report
+: This report is made solely to the Parent Company's members, as a body, in accordance with Chapter 3 of Part
+16 of the Companies Act 2006. Our audit work has been undertaken so that we might state to the Parent
+. Company's members those matters we are required to state to them in-an auditor's report and for no other
+purpose. To the fullest extent permitted by law, we do not accept or assume responsibility to anyone other
+than the Parent Company and the Parent Company's members as a body, for our audit work, for this report, or
+for the opinions we have formed.
+DocuSigned by: ;
+E25A0E124BD44 AA...
+lan Clayden (Senior Statutory Auditor) .
+For and on behalf of BDO LLP, Statutory Auditor. : :
+London, UK 4 January 2023
+BDO LLP is a limited liability partnership registered in England and Wales (with registered number OC305127).
+19
+
+--- pág. 22 ---
+Brentford FC Ltd (Registered number: 03642327)
+
+Consolidated Income Statement
+for the Year Ended 30 June 2022
+
+| | Notes | 30/6/22 £'000 | 30/6/21 £'000 |
+|---|---|---|---|
+| Turnover | 2 | 140,913 | 15,346 |
+| Administrative expenses | | (116,751) | (71,306) |
+| | | 24,162 | (55,960) |
+| Other operating income | 3 | 1,883 | 2,850 |
+| Loss on disposal of tangible fixed assets | | (955) | (119) |
+| Operating profit / (loss) before player trading | 5 | 25,090 | (53,229) |
+| Gain on disposal of players' registrations | 6 | 4,583 | 44,259 |
+| Operating profit / (loss) | | 29,673 | (8,970) |
+| Interest receivable and similar income | 7 | 1,412 | 1,739 |
+| Interest payable and similar expenses | 8 | (1,197) | (1,268) |
+| Profit / (loss) before taxation | | 29,888 | (8,499) |
+| Tax (charge) / credit on profit / (loss) | 9 | (4,221) | 6,077 |
+| Profit / (loss) for the financial year | | 25,667 | (2,422) |
+
+Profit / (loss) attributable to:
+
+| | 30/6/22 £'000 | 30/6/21 £'000 |
+|---|---|---|
+| Owner of the parent | 25,667 | (2,422) |
+
+The above profit for the financial year and loss for the prior year represent the total comprehensive profit / (loss) and therefore no separate Statement of Other Comprehensive Income is presented.
+
+The notes form part of these financial statements
+
+20
+
+--- pág. 23 ---
+Brentford FC Ltd (Registered number: 03642327)
+
+Consolidated Balance Sheet
+30 June 2022
+
+| | Notes | 30/6/22 £'000 | 30/6/21 £'000 |
+|---|---|---|---|
+| **Fixed assets** | | | |
+| Intangible assets | 11 | 55,168 | 38,008 |
+| Tangible assets | 12 | 79,917 | 76,558 |
+| | | 135,085 | 114,566 |
+| **Current assets** | | | |
+| Stocks | 14 | 1,033 | 212 |
+| Debtors | 15 | 25,091 | 42,679 |
+| Cash in hand | | 15,670 | 8,030 |
+| Restricted cash | 16 | - | 4,877 |
+| | | 41,794 | 55,798 |
+| **Creditors** | | | |
+| Amounts falling due within one year | 17 | (67,139) | (99,507) |
+| Net current liabilities | | (25,345) | (43,709) |
+| Total assets less current liabilities | | 109,740 | 70,857 |
+| **Creditors** | | | |
+| Amounts falling due after more than one year | 18 | (54,300) | (43,750) |
+| Provisions for liabilities | 19 | (8,155) | (5,489) |
+| Net assets | | 47,285 | 21,618 |
+| **Capital and reserves** | | | |
+| Called up share capital | 20 | 38,487 | 38,487 |
+| Retained earnings | | 8,798 | (16,869) |
+| Shareholder funds | | 47,285 | 21,618 |
+
+The financial statements were approved by the Board of Directors and authorised for issue on 22 December 2022 and were signed on its behalf by:
+
+C Crown FCA - Director
+
+The notes form part of these financial statements
+
+21
+
+--- pág. 24 ---
+Brentford FC Ltd (Registered number: 03642327)
+
+Company Balance Sheet
+30 June 2022
+
+| | Notes | 30/6/22 £'000 | 30/6/21 £'000 |
+|---|---|---|---|
+| **Fixed assets** | | | |
+| Intangible assets | 11 | 55,168 | 38,008 |
+| Tangible assets | 12 | 77,822 | 75,063 |
+| Investments | 13 | 53 | 53 |
+| | | 133,043 | 113,124 |
+| **Current assets** | | | |
+| Stocks | 14 | 1,033 | 212 |
+| Debtors | 15 | 24,891 | 42,319 |
+| Cash in hand | | 15,657 | 8,002 |
+| | | 41,581 | 50,533 |
+| **Creditors** | | | |
+| Amounts falling due within one year | 17 | (62,473) | (90,999) |
+| Net current liabilities | | (20,892) | (40,466) |
+| Total assets less current liabilities | | 112,151 | 72,658 |
+| **Creditors** | | | |
+| Amounts falling due after more than one year | 18 | (54,300) | (43,750) |
+| Provisions for liabilities | 19 | (8,155) | (5,489) |
+| Net assets | | 49,696 | 23,419 |
+| **Capital and reserves** | | | |
+| Called up share capital | 20 | 38,487 | 38,487 |
+| Retained earnings | | 11,209 | (15,068) |
+| Shareholder funds | | 49,696 | 23,419 |
+| Company's profit for the financial year | | 26,277 | 13,867 |
+
+The notes form part of these financial statements
+
+22 continued...
+
+--- pág. 25 ---
+, Brentford FC Ltd (Registered number: 03642327)
+Company Balance Sheet - continued .
+30 June 2022
+; The financial statements were approved by the Board of Directors and authorised for issue on
+22 December 2022 and were signed on its behalf by:
+
+C Crown FCA - Director
+, The notes form part of these financial statements
+23
+
+--- pág. 26 ---
+Brentford FC Ltd (Registered number: 03642327)
+
+Consolidated Statement of Changes in Equity
+for the Year Ended 30 June 2022
+
+| | Called up share capital £'000 | Retained earnings £'000 | Revaluation reserve £'000 | Total £'000 |
+|---|---|---|---|---|
+| Balance at 1 July 2020 | 38,487 | (47,825) | 33,378 | 24,040 |
+| **Changes in equity** | | | | |
+| Deficit for the year | - | (2,422) | - | (2,422) |
+| Total comprehensive income | - | (2,422) | - | (2,422) |
+| Transfer between reserves | - | 33,378 | (33,378) | - |
+| Balance at 30 June 2021 | 38,487 | (16,869) | - | 21,618 |
+| **Changes in equity** | | | | |
+| Profit for the year | - | 25,667 | - | 25,667 |
+| Total comprehensive income | - | 25,667 | - | 25,667 |
+| Balance at 30 June 2022 | 38,487 | 8,798 | - | 47,285 |
+
+In the prior period there was a transfer of reserves as a result of the disposal of Griffin Park in terms of the Development Agreement. The transfer represented all upward revaluations of Griffin Park that were transferred from the revaluation reserve to retained earnings.
+
+The notes form part of these financial statements
+
+24
+
+--- pág. 27 ---
+Brentford FC Ltd (Registered number: 03642327)
+
+Company Statement of Changes in Equity
+for the Year Ended 30 June 2022
+
+| | Called up share capital £'000 | Retained earnings £'000 | Revaluation reserve £'000 | Total equity £'000 |
+|---|---|---|---|---|
+| Balance at 1 July 2020 | 38,487 | (62,313) | 33,378 | 9,552 |
+| **Changes in equity** | | | | |
+| Profit for the year | - | 13,867 | - | 13,867 |
+| Total comprehensive income | - | 13,867 | - | 13,867 |
+| Transfer between reserves | - | 33,378 | (33,378) | - |
+| Balance at 30 June 2021 | 38,487 | (15,068) | - | 23,419 |
+| **Changes in equity** | | | | |
+| Profit for the year | - | 26,277 | - | 26,277 |
+| Total comprehensive income | - | 26,277 | - | 26,277 |
+| Balance at 30 June 2022 | 38,487 | 11,209 | - | 49,696 |
+
+In the prior period there was a transfer of reserves as a result of the disposal of Griffin Park in terms of the Development Agreement. The transfer represented all upward revaluations of Griffin Park that were transferred from the revaluation reserve to retained earnings.
+
+The notes form part of these financial statements
+
+25
+
+--- pág. 28 ---
+Brentford FC Ltd (Registered number: 03642327)
+
+Consolidated Cash Flow Statement
+for the Year Ended 30 June 2022
+
+| | Notes | 30/6/22 £'000 | 30/6/21 £'000 |
+|---|---|---|---|
+| **Cash flows from operating activities** | | | |
+| Cash generated from operations | 1 | 51,263 | (24,032) |
+| Tax paid | | (1,874) | (24) |
+| Net interest | | (80) | 472 |
+| Net cash from operating activities | | 49,309 | (23,584) |
+| **Cash flows from investing activities** | | | |
+| Purchase of intangible fixed assets | | (42,369) | (30,933) |
+| Purchase of tangible fixed assets | | (7,111) | (2,441) |
+| Sale of intangible fixed assets | | 21,646 | 38,153 |
+| Sale of tangible fixed assets | | 158 | 2,472 |
+| Net cash from investing activities | | (27,676) | 7,251 |
+| **Cash flows from financing activities** | | | |
+| New loans in year | | 355 | 13,230 |
+| Loan repayments in year | | (19,225) | - |
+| Net cash from financing activities | | (18,870) | 13,230 |
+| Increase/(decrease) in cash and cash equivalents | | 2,763 | (3,103) |
+| Cash and cash equivalents at beginning of year | 2 | 12,907 | 16,010 |
+| Cash and cash equivalents at end of year | 2 | 15,670 | 12,907 |
+
+The notes form part of these financial statements
+
+26
+
+--- pág. 29 ---
+Brentford FC Ltd (Registered number: 03642327)
+
+Notes to the Consolidated Cash Flow Statement
+for the Year Ended 30 June 2022
+
+1. Reconciliation of profit/(loss) before taxation to cash generated from operations
+
+| | 30/6/22 £'000 | 30/6/21 £'000 |
+|---|---|---|
+| Profit/(loss) before taxation | 29,888 | (8,499) |
+| Depreciation charges | 3,593 | 2,808 |
+| Amortisation of intangible assets | 22,851 | 13,343 |
+| Gain on disposal of intangible assets | (4,583) | (44,259) |
+| Loss on sale of tangible assets | 955 | 119 |
+| Finance costs | 1,197 | 1,268 |
+| Finance income | (1,412) | (1,739) |
+| | 52,489 | (36,959) |
+| Increase in stocks | (821) | (90) |
+| Decrease in trade and other debtors | 592 | 302 |
+| (Decrease)/increase in trade and other creditors | (997) | 12,715 |
+| Cash generated from operations | 51,263 | (24,032) |
+
+2. Cash and cash equivalents
+
+The amounts disclosed on the Cash Flow Statement in respect of cash and cash equivalents are in respect of these Balance Sheet amounts:
+
+| Year-ended 30 June 2022 | 30/6/22 £'000 | 1/7/21 £'000 |
+|---|---|---|
+| Cash and cash equivalents | 15,670 | 8,030 |
+| Restricted cash | - | 4,877 |
+| | 15,670 | 12,907 |
+
+The notes form part of these financial statements
+
+27
+
+--- pág. 30 ---
+Brentford FC Ltd (Registered number: 03642327)
+
+Notes to the Consolidated Cash Flow Statement
+for the Year Ended 30 June 2022
+
+3. Analysis of changes in net (debt)/funds
+
+| | At 1/7/21 £'000 | Cash flow £'000 | At 30/6/22 £'000 |
+|---|---|---|---|
+| **Net cash** | | | |
+| Cash and cash equivalents | 8,030 | 7,640 | 15,670 |
+| Restricted cash | 4,877 | (4,877) | - |
+| | 12,907 | 2,763 | 15,670 |
+| **Debt** | | | |
+| Debts falling due within 1 year | (42,308) | 18,870 | (23,438) |
+| Debts falling due after 1 year | (38,340) | - | (38,340) |
+| | (80,648) | 18,870 | (61,778) |
+| Total | (67,741) | 21,633 | (46,108) |
+
+The notes form part of these financial statements
+
+28
+
+--- pág. 31 ---
+4
+Brentford FC Ltd (Registered number: 03642327)
+Notes to the Consolidated Financial Statements
+for the Year Ended 30 June 2022
+1. Accounting policies
+
+Basis of preparing the financial statements
+
+The financial statements have been prepared in accordance with FRS 102, the Financial Reporting
+
+Standard applicable in the United Kingdom and the Republic of Ireland.
+
+The preparation of financial statements in compliance with FRS 102 requires the use of certain
+critical accounting estimates. It also requires group management to exercise judgement in applying
+
+the group's accounting policies.
+
+Going concern
+
+In assessing the appropriateness of the going concern assumption, the Directors have produced
+
+detailed cash flow projections which extend through until the end of the 2023/24 football season,
+
+taking into account both Premier League retention and relegation scenarios at the end of the
+
+2022/23 season.
+
+The Club retained its Premier League status for the 22/23 season providing a continuation of
+
+significant financial benefit, by way of strong central distributions, supplemented by growth in
+
+commercial and matchday revenue.
+
+Naturally with a continued presence in the Premier League the Club's cost base has also increased,
+
+primarily due to further investment in the playing squad and an increase in player wage bill (including
+
+potential Premier League retention bonuses), which should enable the club to improve its ‘on-field’
+
+performance in the 22/23 season and beyond.
+
+These outgoings, combined with the uneven spread of central distributions across the year, means
+
+the Club has executed a £25m overdraft facility with Barclays to fund any monthly cash shortfalls in
+
+the 22/23 season. The 22/23 cashflow projections indicate that this facility is not required beyond
+
+January 2023, the typical cash low point in the season for football clubs. However, should the Club
+
+require it, this facility will be available until at least July 2023.
+
+In the event of a reasonable downside relegation scenario, Barclays have indicated a willingness to
+extend the facility, with a reduced cap of £12.5m in year 1 of parachute payments (23/24 season)
+and £6.25m in year 2 of parachute payments (24/25 season).
+
+In addition to the Barclays facility there are two alternative sources of finance available to the club,
+namely player trading, in the ordinary course of football operations, and the continued support of
+the shareholder. Historically, the Club has demonstrated significant success in the player transfer
+market and, with a squad proving its capabilities in the Premier League, would expect to do so again
+if required. Furthermore, the Directors are in constant communication with the shareholder, and he
+
+: has provided assurances of his intention to provide further funds to the company and group if
+
+required. Based on management's forecasts for the period to 30 June 24, neither of these two
+additional funding sources is expected to be required outside of making further investment in the
+
+squad at the Board's discretion.
+Taking the above factors into account, the Directors have not identified any material uncertainty that
+may give rise to significant doubt with regard to going concern. They therefore consider it
+; appropriate to continue to prepare the financial statements on a going concern basis. The financial
+statements make no provision for any adjustment should the going concern basis not be
+: appropriate. - '
+29 continued...
+
+--- pág. 32 ---
+8
+Brentford FC Ltd (Registered number: 03642327)
+Notes to the Consolidated Financial Statements - continued |
+for the Year Ended 30 June 2022
+Parent company disclosure exemptions
+In preparing the separate financial statements of the parent company, advantage has been taken
+of the following disclosure exemptions available in FRS 102:
+
+- Only one reconciliation of the number of shares outstanding at the beginning and end of the
+period has been presented as the reconciliations for the group and the parent company would be
+identical; and
+
+- No-cash flow statement has been presented for the parent company.
+
+The following principal accounting policies have been applied:
+Basis of consolidation
+The consolidated financial statements incorporate the results of Brentford FC Limited and all of its
+subsidiary undertakings as at 30 June 2022 using the acquisition method of accounting. Where the
+acquisition method is used, the results of subsidiary undertakings are included from the date of
+acquisition and cease to be included from the date that control is lost.
+Judgements in applying accounting policies and key sources of estimation uncertainty:
+In preparing the financial statements, management has made the following judgements:
+(a) Player impairments .
+Management assesses whether, at the year-end, players are available for selection to play for the
+club. In circumstances where it is apparent that the player would not be available to play for the club
+and is yet to be sold, that player is valued on a "recoverable amount" basis which is management's
+best estimate of his valuation at the next available transfer window. Any resulting impairment charge
+is recorded within operating expenses.
+Examples of such circumstances can include the player sustaining a career threatening injury, or if
+a player has fallen out of favour with senior football management.
+(b) Onerous contracts
+Management reviews all contracts, including player employment contracts, and determine whether
+the minimum unavoidable costs of meeting the obligations under the contract exceed the economic
+benefits expected to be received under it. Present obligations under onerous contracts are
+measured as provisions.
+In relation to players, if a player's valuation has been impaired (as per (a) above), an onerous
+contract provision will be considered, and if appropriate, made for the period of time in which
+management reasonably expect the player to remain at the club.
+
+(c) New Stadium ,
+The useful life of each asset has been considered and the depreciation rates have been assessed
+to reflect management's best estimate for the assets capitalised within each category.
+
+30 continued....
+
+--- pág. 33 ---
+; Brentford FC Ltd (Registered number: 03642327)
+Notes to the Consolidated Financial Statements - continued ©
+for the Year Ended 30 June 2022
+Revenue ,
+Turnover comprises revenue recognised by the company and group in respect of goods and
+services supplied during the year, exclusive of Value Added Tax and trade discounts.
+Match day revenue is recognised over the period of the football season as games are played.
+League income is spread over the financial year to which it relates in line with matches played.
+Sponsorship and similar commercial income are recognised over the duration and in accordance
+with the terms of the respective contracts. Facility fees for live television coverage of games are
+recognised when earned.
+; Income from matchday activity, memberships, media and commercial contracts which have been
+received prior to the year-end in respect of future football seasons (including in relation to the Gtech
+Community Stadium) is treated as deferred income.
+Provisions
+Provisions are recognised when the company has a present legal or constructive obligation as a
+result of past events for which an outflow of resources is more than likely to settle the obligation and
+the amount can be reliably estimated.
+Tangible fixed assets
+Tangible fixed assets are stated at historical cost less accumulated depreciation and any
+accumulated impairment losses. Historica! cost includes expenditure that is directly attributable to
+bringing the asset to the location and condition necessary for it to be capable of operating in the
+manner intended by management.
+The group adds to the carrying amount of an item of fixed assets the cost of replacing part of such
+an item when that cost is incurred if the replacement part is expected to provide incremental future
+benefits to the group. The carrying amount of the replaced part is derecognised. Repairs and
+maintenance are charged to profit and loss during the period in which they are incurred.
+Tangible fixed assets are assessed at each reporting date to determine whether there is any
+indication that the assets are impaired. Where there is any indication that an asset may be impaired,
+the carrying value of the asset is tested for impairment. An impairment loss is recognised for the
+amount by which the asset's carrying amount exceeds its recoverable amount. The recoverable
+amount is the higher of an asset's fair value less costs to sell and value in use. .
+Tangible fixed assets that have been previously impaired are reviewed at each reporting date to
+assess whether there is any indication that the impairment losses recognised in prior periods may
+no longer exist or may have decreased. a,
+Freehold land and buildings
+FRS 102, Section 17 requires that for assets held on a valuation basis, their carrying amount should ,
+be their current value as at the balance sheet date.
+31 continued...
+
+--- pág. 34 ---
+. Brentford FC Ltd (Registered number: 03642327)
+Notes to the Consolidated Financial Statements - continued
+for the Year Ended 30 June 2022 ,
+The Gtech Community Stadium is leased by the company from a subsidiary company and is
+recorded within tangible assets across existing asset categories on the balance sheet.
+Provisions are made against the freehold land and buildings in the event of any impairment or other
+permanent diminution in its value.
+Planning costs for the redevelopment of the training facilities at Jersey Road, to the extent incurred
+by the group and company, have been included in tangible fixed assets as an asset in the course
+of construction. No depreciation is charged on assets in the course of construction until they are
+brought into use.
+Depreciation
+Depreciation is provided to write off the cost, less estimated residual values, of all tangible fixed
+assets, except for assets in the course of construction and freehold land, evenly over their expected
+useful lives. It is calculated at the following rates:
+Leasehold property Over 50 years on a straight-line basis
+Freehold buildings Over 50 years on a straight-line basis
+Plant and machinery 5 - 30 years on a straight-line basis
+Fixtures and fittings 5 - 30 years on a straight-line basis
+Pitch turfing and drainage 5 - 20 years on a straight-line basis
+Freehold land Nil on cost
+Assets in course of construction Nil on cost
+When there is a foreseeable cessation of use for a tangible fixed asset, this end date will be applied
+to calculate the depreciation rate.
+Impairment of fixed assets
+Where indicators of impairment are identified by management, impairment reviews are carried out.
+
+Valuation of investments
+Investments held as fixed assets are stated at cost less any provision for impairment.
+
+Stocks
+Stocks are valued at the lower of cost and net realisable value, after making due allowance for .
+
+obsolete and slow-moving stocks. ;
+Cash and cash equivalents : , :
+Cash represents cash in hand and deposits with banks and other financial institutions repayable —
+without penalty on notice of not more than 24 hours.
+Cash equivalents include short-term deposits with banks and other financial institutions with a
+maturity date of three months or less from the date of acquisition.
+
+32 continued...
+
+--- pág. 35 ---
+Brentford FC Ltd (Registered number: 03642327)
+Notes to the Consolidated Financial Statements - continued
+for the Year Ended 30 June 2022
+The Group Cash Flow Statement shows the cash and cash equivalents net of bank overdrafts that
+are repayable on demand and form an integral part of the cash flow management.
+Restricted cash
+Restricted cash that forms part of cash and cash equivalents, is reported separately from
+unrestricted cash and cash equivalents on the statement of financial position. Restricted cash is
+classified as either a current or non-current asset depending on the timing of its expected future
+use. Restricted cash is reported as a separate component of cash and cash equivalents within the
+cash flow statement.
+Deferred taxation
+Deferred tax balances are recognised in respect of all timing differences that have originated but
+not reversed by the balance sheet date, except that:
+- The recognition of deferred tax assets is limited to the extent that it is probable that they will be
+recovered against the reversal of deferred tax liabilities or other future taxable profits;
+- Any deferred tax balances are reversed if and when all conditions for retaining associated tax
+allowances have been met; and
+- Any deferred tax liabilities on chargeable gains rolled over against the base cost of allowable
+asset acquisitions are recognised as deferred tax liabilities at the future rate at which they may
+crystallise.
+Deferred income tax is determined using tax rates and laws that have been enacted or substantively
+enacted by the reporting date.
+Government grants
+All grants to which the company and group are entitled are grants of a revenue nature, rather than
+grants relating to capital expenditure.
+Government grants are recognised on the performance model, that is, when the associated cost is
+recorded in the income statement. Grant income is included in other operating income.
+The group recognises government grants related to the Coronavirus Job Retention Scheme as
+other income when the grant becomes receivable.
+Leased assets
+| Where assets are financed by leasing agreements that give rights approximating to ownership !
+(finance leases), the assets are treated as if they had been purchased outright. The amount
+: capitalised is the present value of the minimum lease payments payable over the term of the lease.
+: The corresponding leasing commitments are shown as amounts payable to the lessor. Depreciation
+on the relevant assets is charged to profit or loss over the shorter of the estimated useful economic
+: life and the term of the lease. ;
+All other leases are treated as operating leases.
+Rentals paid under operating leases are charged to profit and loss on a straight-line basis over the
+lease term.
+33 continued... !
+
+--- pág. 36 ---
+’ Brentford FC Ltd (Registered number: 03642327) ,
+Notes to the Consolidated Financial Statements - continued
+for the Year Ended 30 June 2022
+
+Pension costs
+
+The company operates a defined contribution scheme for the benefit of its employees. The assets
+of the scheme are held in an independently administered fund. The pension costs charge represents
+contributions payable by the company to the fund. There were no amounts outstanding at the year-
+end.
+Intangible fixed assets
+In accordance with FRS 102, player registrations, which includes transfer fees, transfer levies and
+agents' fees, are capitalised at their present value, where payments are deferred, and written off
+over the period of the player's contract. Under the conditions of certain transfer agreements, further
+fees will be payable in the event of certain other specified future events. These associated costs
+are capitalised and written off over the remaining period of the contract once the conditions have
+become probable, which in most cases is when they have been met. Until such time the conditions
+are considered probable, such costs are disclosed as a contingent liability.
+Profit or losses on the sale of players represent the transfer fee receivable, net of any transaction
+costs such as sell-on fees, less the unamortised discounted cost of the applicable player's
+
+registration.
+
+Signing on fees in respect of player contracts are expensed to the profit and loss account over the
+length of the contract. Signing on fees are considered to be part of players' emoluments packages
+and are therefore included in these financial statements as part of staff costs.
+
+Loan players
+
+Loan player costs or income are recognised over the loan period on a straight-line basis. Where a
+
+player loaned out becomes a permanent transfer within the original loan period the remaining loan
+
+fee, where not repayable, is recognised as part of the profit or loss on disposal. Where a player
+
+loaned in becomes a permanent transfer within the original loan period any costs yet to be released,
+
+where not repayable, are capitalised as part of the asset value associated with the player.
+
+Financial instruments .
+
+The group's financial instruments comprise its trade, other and player debtors, cash, loans and
+
+overdrafts, trade, other and player creditors and accruals. Short term balances are initially
+
+recognised and measured at the transaction price and subsequently at amortised cost.
+
+Amounts due to creditors or due from debtors after more than one year are measured using the
+. effective interest method. This applies to the group's player debtors and creditors as well as certain .
+
+shareholder loans.
+
+The group's player creditors and player receivables are discounted on initial recognition. The
+
+unwinding of the discount is calculated using the effective interest rate method and is recognised in
+
+finance costs and finance income respectively.
+
+34 continued...
+
+--- pág. 37 ---
+: q
+Brentford FC Ltd (Registered number: 03642327)
+Notes to the Consolidated Financial Statements - continued
+for the Year Ended 30 June 2022
+2. Turnover
+
+| Analysis by class of business: | 30/6/22 £'000 | 30/6/21 £'000 |
+|---|---|---|
+| Central distributions | 114,944 | 10,585 |
+| Commercial | 14,975 | 4,073 |
+| Matchday | 10,415 | 156 |
+| Other | 579 | 532 |
+| | 140,913 | 15,346 |
+
+Turnover arises solely within the United Kingdom.
+
+3. Other operating income
+
+| | 30/6/22 £'000 | 30/6/21 £'000 |
+|---|---|---|
+| Rents received | 84 | 64 |
+| Grant income | 12 | 399 |
+| Loan player revenue | 1,507 | 1,736 |
+| Insurance income | - | 27 |
+| Other Income | 280 | 624 |
+| | 1,883 | 2,850 |
+
+For the 2021/22 period grant income relates exclusively to a grant from London Borough of Hounslow. In the 2020/21 period grant income was solely as a result of the government Coronavirus Job Retention Scheme. The Club placed a number of staff on furlough to mitigate the impact of the pandemic.
+
+Other income includes £0.3m (2021: £0.6m) of compensation from UEFA in consideration for those players, registered with the Club, who competed in the European Championship qualifying and final stages in 2021.
+
+4. Employees and directors
+
+| | 30/6/22 £'000 | 30/6/21 £'000 |
+|---|---|---|
+| Wages and salaries | 59,727 | 36,477 |
+| Social security costs | 8,186 | 4,827 |
+| Other pension costs | 239 | 138 |
+| | 68,152 | 41,442 |
+
+35 continued...
+
+--- pág. 38 ---
+Brentford FC Ltd (Registered number: 03642327)
+Notes to the Consolidated Financial Statements - continued
+for the Year Ended 30 June 2022 ;
+4. Employees and directors - continued
+| The average number of employees during the year was as follows: | 30/6/22 | 30/6/21 |
+|---|---|---|
+| Administration and Commercial Staff | 84 | 71 |
+| Player and training staff | 106 | 95 |
+| | 190 | 166 |
+
+Included in the amounts above is a total of £nil (2021: £4.0m) that related to deferred salaries and
+associated costs for which there was an accrual on the balance sheet. These deferrals were fully
+settled in the current year.
+The prior period above figures also include promotion related payments to players and staff of
+£12.0m.
+Directors’ emoluments during the current year, which were all in respect of executive services,
+amounted to £1.5m (2021: £0.5m). The highest paid executive director received £0.7m (2021:
+£0.2m) in the year. Within these amounts are payments to Smartodds Limited, a related party, for
+the services of individuals who are directors of the company, of which more details are included in
+note 23.
+Remuneration in respect of Key Management Personnel (excluding directors) was £3.2m (2021:
+£2.0m).
+Amounts totalling £10,635 were paid to the group's defined contribution pension scheme relating to
+directors during the year (2021: £3,325).
+5. Operating profit/(loss)
+The operating profit (2021 - operating loss) is stated after charging:
+
+| | 30/6/22 £'000 | 30/6/21 £'000 |
+|---|---|---|
+| Other operating leases | 394 | 344 |
+| Depreciation - owned assets | 3,593 | 2,808 |
+| Player Registrations amortisation | 22,851 | 13,342 |
+| Auditor's remuneration for services in respect of these financial statements | 59 | 62 |
+| Fees paid to auditors for tax advice | 15 | 16 |
+| Fees paid to auditors for other audit related services | 12 | 10 |
+| Other services relating to taxation | 14 | - |
+| Foreign exchange differences | 26 | 45 |
+
+36 continued...
+
+--- pág. 39 ---
+Brentford FC Ltd (Registered number: 03642327)
+Notes to the Consolidated Financial Statements - continued
+for the Year Ended 30 June 2022
+
+6. Gain on disposal of players' registrations
+
+| | 30/6/22 £'000 | 30/6/21 £'000 |
+|---|---|---|
+| Gain on disposal of players' registrations | 4,583 | 44,259 |
+
+7. Interest receivable and similar income
+
+| | 30/6/22 £'000 | 30/6/21 £'000 |
+|---|---|---|
+| Unwinding of discount on player debtors | 1,404 | 1,739 |
+| Other interest received | 8 | - |
+| | 1,412 | 1,739 |
+
+8. Interest payable and similar expenses
+
+| | 30/6/22 £'000 | 30/6/21 £'000 |
+|---|---|---|
+| Other interest | 16 | - |
+| Loan interest | 73 | 29 |
+| Interest on factoring of player debtors | 41 | 474 |
+| Unwinding of discount on player creditors | 1,067 | 765 |
+| | 1,197 | 1,268 |
+
+37 continued...
+
+--- pág. 40 ---
+Brentford FC Ltd (Registered number: 03642327)
+Notes to the Consolidated Financial Statements - continued
+for the Year Ended 30 June 2022
+
+9. Taxation
+
+Current tax of £1.4m (2021: £0.02m) has been charged to the statement of comprehensive income, inclusive of a credit adjustment in respect of prior periods of £0.6m.
+
+The total tax assessed for the year differs from the standard rate of corporation tax in the UK applied to the profit before tax. The differences are explained below.
+
+| | 30/6/22 £'000 | 30/6/21 £'000 |
+|---|---|---|
+| Profit/(loss) on ordinary activities before tax | 29,888 | (8,499) |
+| Tax/(loss) on ordinary activities at the standard rate of corporation tax in the UK of 19% (2021: 19%) | 5,679 | (1,615) |
+| Effect of: | | |
+| Fixed asset differences | (404) | 370 |
+| Expenses not deductible for tax purposes | 720 | 432 |
+| Other tax adjustments, reliefs and transfers | 129 | 406 |
+| Allowances receivable on rolled over gains | - | (1,150) |
+| Adjustments in respect of prior periods | (650) | 24 |
+| Adjustments in respect of prior periods (deferred tax) | (557) | 183 |
+| Remeasurement of deferred tax for changes in tax rates | (357) | 1,232 |
+| Deferred tax asset (recognition) / non-recognition on trading losses | (339) | (5,959) |
+| Total tax (credit) / charge for the year | 4,221 | (6,077) |
+
+The group has losses amounting to £24.0m (2021: £32.4m) available to be carried forward and offset against future trading profits and in respect of which no deferred tax has been recognised, due to the uncertainty of sufficient trading profits being available.
+
+Factors that may affect future tax charges:
+
+The substantively enacted tax rate remained at 19% as at the Balance Sheet date of 30 June 2022. It was announced on 3 March 2021 that the main rate of corporation tax will increase from 19% to 25% from 1 April 2023. For profits up to £50,000, the corporation tax rate will remain at 19% and for profits over £250,000, the corporation tax rate will be 25%. Marginal relief provisions will also be introduced for profits between the lower and upper limits.
+The Government included the above changes in the Finance Bill 2021 that had its third reading on 24 May 2021 and is now considered substantively enacted.
+If the unwinding of the deferred tax asset occurs during or after the tax year commending 1 April 2023, they will unwind based on the above new rates.
+
+10. Individual income statement
+
+As permitted by Section 408 of the Companies Act 2006, the Income Statement of the parent company is not presented as part of these financial statements.
+
+38 continued...
+
+--- pág. 41 ---
+Brentford FC Ltd (Registered number: 03642327)
+Notes to the Consolidated Financial Statements - continued
+for the Year Ended 30 June 2022
+
+11. Intangible fixed assets
+
+Group & Company
+
+| | Player Registrations £'000 |
+|---|---|
+| **Cost** | |
+| At 1 July 2021 - restated* | 64,044 |
+| Additions | 40,079 |
+| Disposals | (3,011) |
+| At 30 June 2022 | 101,112 |
+| **Amortisation** | |
+| At 1 July 2021 - restated* | 26,036 |
+| Amortisation for year | 22,851 |
+| Eliminated on disposal | (2,943) |
+| At 30 June 2022 | 45,944 |
+| **Net book value** | |
+| At 30 June 2022 | 55,168 |
+| At 30 June 2021 | 38,008 |
+
+* These amounts are restated for the removal of historical intangible assets that were fully amortised, but not written off. These restatements have no impact on the balance sheet or income statement in this period or comparative periods.
+
+39 continued...
+
+--- pág. 42 ---
+Brentford FC Ltd (Registered number: 03642327)
+Notes to the Consolidated Financial Statements - continued
+for the Year Ended 30 June 2022
+
+12. Tangible fixed assets
+
+Group
+
+| | Freehold Land & Buildings £'000 | Leasehold Property £'000 | Pitch & Drainage £'000 | Plant & Machinery £'000 | Fixtures & Fittings £'000 | Assets in course of construction £'000 | Totals £'000 |
+|---|---|---|---|---|---|---|---|
+| **Cost or valuation** | | | | | | | |
+| At 1 July 2021 | 48,175 | 1,890 | 2,416 | 13,446 | 17,248 | 1,916 | 85,091 |
+| Additions | 246 | - | 738 | 879 | 1,417 | 4,722 | 8,002 |
+| Disposals | - | - | (501) | (1,934) | (604) | (892) | (3,931) |
+| Reclassification/transfer | - | - | - | 150 | 8 | (158) | - |
+| At 30 June 2022 | 48,421 | 1,890 | 2,653 | 12,541 | 18,069 | 5,588 | 89,162 |
+| **Depreciation** | | | | | | | |
+| At 1 July 2021 | 812 | 1,890 | 965 | 3,399 | 1,467 | - | 8,533 |
+| Charge for year | 902 | - | 417 | 1,207 | 1,067 | - | 3,593 |
+| Eliminated on disposal | - | - | (501) | (1,776) | (604) | - | (2,881) |
+| At 30 June 2022 | 1,714 | 1,890 | 881 | 2,830 | 1,930 | - | 9,245 |
+| **Net book value** | | | | | | | |
+| At 30 June 2022 | 46,707 | - | 1,772 | 9,711 | 16,139 | 5,588 | 79,917 |
+| At 30 June 2021 | 47,363 | - | 1,451 | 10,047 | 15,781 | 1,916 | 76,558 |
+
+Freehold land relates to a piece of land, held by a subsidiary company, adjacent to the Gtech Community Stadium.
+
+All fixed assets at year-end are held at cost less depreciation.
+
+40 continued...
+
+--- pág. 43 ---
+Brentford FC Ltd (Registered number: 03642327)
+Notes to the Consolidated Financial Statements - continued
+for the Year Ended 30 June 2022
+
+12. Tangible fixed assets - continued
+
+Company
+
+| | Leasehold Property £'000 | Pitch & Drainage £'000 | Plant & Machinery £'000 | Fixtures & Fittings £'000 | Assets in the course of construction £'000 | Totals £'000 |
+|---|---|---|---|---|---|---|
+| **Cost** | | | | | | |
+| At 1 July 2021 | 49,801 | 2,416 | 13,448 | 17,245 | 685 | 83,595 |
+| Additions | 246 | 738 | 879 | 1,418 | 4,122 | 7,403 |
+| Disposals | - | (501) | (1,934) | (604) | (892) | (3,931) |
+| Reclassification/transfer | - | - | 148 | 10 | (158) | - |
+| At 30 June 2022 | 50,047 | 2,653 | 12,541 | 18,069 | 3,757 | 87,067 |
+| **Depreciation** | | | | | | |
+| At 1 July 2021 | 2,701 | 965 | 3,401 | 1,465 | - | 8,532 |
+| Charge for year | 902 | 417 | 1,205 | 1,069 | - | 3,593 |
+| Eliminated on disposal | - | (501) | (1,776) | (604) | - | (2,881) |
+| At 30 June 2022 | 3,604 | 881 | 2,830 | 1,930 | - | 9,245 |
+| **Net book value** | | | | | | |
+| At 30 June 2022 | 46,443 | 1,772 | 9,711 | 16,139 | 3,757 | 77,822 |
+| At 30 June 2021 | 47,100 | 1,451 | 10,047 | 15,780 | 685 | 75,063 |
+
+Freehold land relates to a piece of land, held by a subsidiary company, adjacent to the Gtech Community Stadium.
+All fixed assets at year-end are held at cost less depreciation.
+
+41 continued...
+
+--- pág. 44 ---
+Brentford FC Ltd (Registered number: 03642327) |
+Notes to the Consolidated Financial Statements - continued
+for the Year Ended 30 June 2022
+13. Fixed asset investments
+
+Company
+
+| | Group undertakings £'000 | Total £'000 |
+|---|---|---|
+| **Cost or Valuation** | | |
+| At 1st July 2021 | 53 | 53 |
+| At 30th June 2022 | 53 | 53 |
+
+The parent company has investments in the following subsidiary undertaking incorporated in England and Wales whose principal activity is to maximise the property interests of the Group. This undertaking has been included in the consolidated accounts.
+
+The principal undertaking in which the company's interest at the year-end is 20% or more is as follows:
+
+| | Country of incorporation or registration | Class of share capital held | Proportion of share capital held |
+|---|---|---|---|
+| Subsidiary Undertaking: Lionel Road Developments Limited | England | Ordinary | 100% |
+
+Former subsidiary undertaking Lionel Road Coalyard Limited was dissolved by a voluntary strike-off on 14 June 2022.
+
+The registered address of all subsidiary undertakings is 27 Great West Road, Brentford, TW8 9BW.
+
+14. Stocks
+
+Group & Company
+
+| | 30/6/22 £'000 | 30/6/21 £'000 |
+|---|---|---|
+| Stock | 1,033 | 212 |
+
+42 continued...
+
+--- pág. 45 ---
+%
+Brentford FC Ltd (Registered number: 03642327)
+Notes to the Consolidated Financial Statements - continued
+for the Year Ended 30 June 2022
+15. Debtors
+
+| | Group 30/6/22 £'000 | Group 30/6/21 £'000 | Company 30/6/22 £'000 | Company 30/6/21 £'000 |
+|---|---|---|---|---|
+| **Amounts falling due within one year:** | | | | |
+| Trade debtors | 1,103 | 455 | 1,103 | 455 |
+| Player debtors | 11,885 | 19,254 | 11,885 | 19,254 |
+| Other debtors | 40 | 1,069 | 40 | 1,017 |
+| Prepayments and accrued income | 1,385 | 1,798 | 1,185 | 1,490 |
+| | 14,413 | 22,576 | 14,213 | 22,216 |
+| **Amounts falling due after more than one year:** | | | | |
+| Player debtors | 10,061 | 19,688 | 10,061 | 19,688 |
+| Other debtors | 251 | - | 251 | - |
+| Prepayments and accrued income | 366 | 415 | 366 | 415 |
+| | 10,678 | 20,103 | 10,678 | 20,103 |
+| Aggregate amounts | 25,091 | 42,679 | 24,891 | 42,319 |
+
+16. Restricted cash
+In the prior period restricted cash represented an amount of cash held by the lawyers of a subsidiary company. This cash could only be utilised specifically for the settlement of the Capital Court proceedings with which the subsidiary company was involved.
+; 43. continued.:...
+
+--- pág. 46 ---
+Brentford FC Ltd (Registered number: 03642327)
+Notes to the Consolidated Financial Statements - continued
+for the Year Ended 30 June 2022
+17. Creditors: amounts falling due within one year
+
+| | Group 30/6/22 £'000 | Group 30/6/21 £'000 | Company 30/6/22 £'000 | Company 30/6/21 £'000 |
+|---|---|---|---|---|
+| Trade creditors | 1,425 | 1,401 | 1,249 | 775 |
+| Player creditors | 11,174 | 15,711 | 11,174 | 15,711 |
+| Amounts owed to group undertakings | - | - | 19,881 | 21,207 |
+| Taxation and social security | 4,164 | 2,423 | 4,163 | 2,422 |
+| VAT | 2,770 | - | 2,770 | - |
+| Other creditors | 381 | 150 | 381 | 138 |
+| Other loans | 680 | 13,444 | 680 | 13,444 |
+| Other secured borrowings | - | 6,461 | - | 6,461 |
+| Shareholder loans | 22,758 | 22,403 | - | - |
+| Deferred Income | 9,160 | 9,601 | 9,160 | 9,601 |
+| Accrued expenses | 14,627 | 27,913 | 13,015 | 21,240 |
+| | 67,139 | 99,507 | 62,473 | 90,999 |
+
+Shareholder loans relate to loans by the shareholder to a subsidiary company and represent
+amounts falling due within one year or on demand. These loans are interest free and unsecured.
+Other secured borrowings in the prior period of £6.5m represented liabilities of the company arising
+from arrangements to advance cash to the company, secured on certain player debtors amounts
+arising on the disposal of player registrations. The liabilities bore a finance charge of 6.3% - 6.5%.
+These other secured borrowings were settled in full in the year.
+~ Included within other loans are Bees United loans of £0.7m (2021: £0.7m) which are repayable on
+demand and interest free and of which £0.4m is secured by legal charges over the group's freehold
+property.
+The prior period included the following loans that were settled in the year:
+- An EFL loan of £7.9m, which was interest free and secured by future distributions that would
+otherwise be received from the EFL;
+- Aloan from FC Midtjylland of £4.9m which was unsecured, repayable on demand and bore interest
+at the rate of 1% per annum.
+Accrued expenses in the prior period included deferred wages of £4.0m which were fully settled in
+the year.
+Accrued expenses includes football related accruals of £1.2m (2021: £0.3m)
+44 continued...
+
+--- pág. 47 ---
+; Brentford FC Ltd (Registered number: 03642327)
+Notes to the Consolidated Financial Statements - continued
+for the Year Ended 30 June 2022
+18. Creditors: amounts falling due after more than one year
+
+| | Group 30/6/22 £'000 | Group 30/6/21 £'000 | Company 30/6/22 £'000 | Company 30/6/21 £'000 |
+|---|---|---|---|---|
+| Player creditors | 5,969 | 3,722 | 5,969 | 3,722 |
+| Shareholder loans | 38,340 | 38,340 | 38,340 | 38,340 |
+| Accrued expenses and deferred income | 9,991 | 1,688 | 9,991 | 1,688 |
+| | 54,300 | 43,750 | 54,300 | 43,750 |
+
+Shareholder loans are interest free, secured by legal charges and debentures over the group's
+assets and are repayable after a continually rolling notice period of 367 days, if called. These loans
+are discounted at a rate of 12.5%.
+There was no pre discounting capital contribution in the period or the prior period. The undiscounted
+loan balance as at 30 June 2022 and 2021 amounts to £43.1m.
+
+, Accrued expenses and deferred income includes football related accruals of £0.05m (2021: £0.05m)
+. 45 continued...
+
+--- pág. 48 ---
+Brentford FC Ltd (Registered number: 03642327) _ .
+Notes to the Consolidated Financial Statements - continued
+for the Year Ended 30 June 2022 . -
+19. Provisions for liabilities
+
+Group & Company:
+
+| 2022 | Deferred tax £'000 | Other £'000 | Total £'000 |
+|---|---|---|---|
+| At 1 July 2021 | 5,094 | 395 | 5,489 |
+| Movement in provision | 2,847 | (181) | 2,666 |
+| At 30 June 2022 | 7,941 | 214 | 8,155 |
+
+| 2021 | Deferred tax £'000 | Other £'000 | Total £'000 |
+|---|---|---|---|
+| At 1 July 2020 | 11,195 | 634 | 11,829 |
+| Movement in provision | (6,101) | (239) | (6,340) |
+| At 30 June 2021 | 5,094 | 395 | 5,489 |
+
+Deferred Tax
+The group has a provision relating to deferred tax totalling a net liability figure of £7.9m (2021:
+£5.1m). ;
+A net deferred tax liability of £6.8m (2021: £5.9m) relates to the unrealised gain on the disposal of
+. the freehold stadium at Griffin Park. Further to the disposal of Griffin Park in September 2020 no
+crystallisation of the liability has occurred as a result of rollover relief being available following
+, completion of the Gtech Community Stadium.
+A net deferred tax liability of £1.1m (2021: £0.8m) relates to profits on disposal of player registrations ;
+that have been carried forward in anticipation of future roll-over relief claims. Should reinvestment
+in qualifying assets (players) not be made within the available time frames, corporation tax in
+proportion to the reinvestment shortfall will crystallise.
+: A net deferred tax liability of Enil (2021: £0.3m) relates to the timing differences arising on capital
+. allowances versus depreciation charge. Details of trading losses in relation to which no deferred tax
+asset has been recognised are provided in note 9.
+In addition to amounts offset against liabilities above, a further deferred tax asset of Enil (2021: .
+£1.9m) has been recognised in respect of trading losses carried forward.
+Other
+The group has a balance of £0.2m (2021: £0.4m) related to an obligation for payment of lease
+contracts pertaining to assets previously used at Griffin Park. In the period £0.2m (2021: £0.2m) of
+this was paid and payments have continued in this regard subsequent to year-end.
+46 continued...
+
+--- pág. 49 ---
+Brentford FC Ltd (Registered number: 03642327)
+Notes to the Consolidated Financial Statements - continued
+for the Year Ended 30 June 2022 ;
+. 20. Called up share capital .
+Allotted, issued and fully paid:
+
+| Number | Class | Nominal value | 30/6/22 £'000 | 30/6/21 £'000 |
+|---|---|---|---|---|
+| 557,281 | Ordinary shares | £25.00 | 13,932 | 13,932 |
+| 24,554,608 | Preference shares | £1.00 | 24,555 | 24,555 |
+| 1 | BU Special share | £0.01 | - | - |
+| | | | 38,487 | 38,487 |
+
+21. Contingent assets and liabilities
+The group has entered into contractual agreements regarding player purchases from other clubs
+which include certain contingent liabilities. These liabilities are triggered based on various criteria,
+for example appearances for the first team or a change in league status. These contingent liabilities
+total £15.6m (2021: £24.7m). .
+Similarly, the group has entered into contractual agreements regarding player sales to other clubs
+which include certain contingent assets. These liabilities are triggered based on various criteria, for
+, example appearances for the first team or a change in league status. These contingent assets as
+at 30 June 2022 total £7.8m (2021: £9.5m).
+Consideration is receivable contingent on certain property development overage outcomes which,
+: whilst assessed as probable to crystallise, cannot be assessed as virtually certain at the year-end
+nor reliably measured on the basis that the related development and sales activity remains at an
+early stage as at the balance sheet date. ,
+22. Commitments under operating leases .
+The group and company had minimum lease payments under non-cancellable operating leases as .
+set out below:
+| | 30/6/22 £'000 | 30/6/21 £'000 |
+|---|---|---|
+| Not later than 1 year | 1,091 | 266 |
+| Later than 1 year and not later than 5 years | 4,649 | 169 |
+| After 5 years | 273 | - |
+| | 6,013 | 435 |
+
+47 continued...
+
+--- pág. 50 ---
+, '
+Brentford FC Ltd (Registered number: 03642327)
+- Notes to the Consolidated Financia! Statements - continued
+for the Year Ended 30 June 2022
+23. Related party disclosures
+Bees United is registered under the Cooperative and Community Benefit Societies Act 2014 and is
+controlled by approximately 3,500 members that each hold one member share in the society.
+Included in the membership of Bees United is Stewart Purvis who is also a director of the company.
+Bees United has made interest free loans totalling £679,911 (2021: £679,911) to the company at
+the year-end of which £402,000 (2021: £402,000) is secured by legal charges over the company's
+freehold property. The loan is repayable in full on demand. A further balance of £8,166 (2021:
+£8,166) is owed to Bees United which is unsecured.
+Mr M Benham, who is the controlling party of the company, isa majority shareholder of Smartodds
+Limited from which the group made purchases of £1 ,462,040 (2021: £803,413). Of these purchases
+£469,364 (2021: £287,021) relates to fees paid by the company and subsidiaries to Smartodds for
+services of directors of the company while the balance relates to other services provided by
+Smartodds to the company and its subsidiaries. All transactions were conducted on an arm's length
+basis on normal trading terms. At 30 June 2022, the group owed £109,467 (2021: £6,000).
+During the year the company repaid the loan of £4,891,048 to FC Midtjylland, a club in which
+Matthew Benham is a majority shareholder. This loan was unsecured, repayable on demand and
+interest was charged on this loan at the rate of 1% per annum. On settlement of the loan interest of
+- £24,380 was also paid.
+Mr M Benham has made loans to Brentford FC Ltd and Lionel Road Developments Ltd of
+£65,890,250 (2021: £65,535,250). No interest has been charged on these loans in the current or
+previous years. However, FRS 102 requires that all loans made by shareholders to the company
+be initially recognised at fair value and subsequently at amortised cost using the effective interest
+rate, hence the loan valuation disclosed in note 18 is at a lower amount than the above.
+During the year, the company has paid £2,700 (2021: £26,275) to Career Path Training Ltd for
+professional services, a company in which M Choudhuri is materially interested as a director and
+shareholder. There was no balance outstanding at 30 June 2022 (2021: Enil).
+, 48 continued...
+
+--- pág. 51 ---
+, Brentford FC Ltd (Registered number: 03642327)
+Notes to the Consolidated Financial Statements - continued
+for the Year Ended 30 June 2022
+24. Post balance sheet events ‘
+
+Player promotions
+Subsequent to year-end the following B-team players were promoted to the first team squad:
+
+- Paris Maghoma .
+
+- Fin Stevens
+
+- - Matthew Cox
+Player trading
+_ Subsequent to year-end, in preparation for continued success for the 22/23 Premier League
+; season, the Club acquired, in date order, the registrations of the following first team players:
+
+- Aaron Hickey (Bologna FC) 7 July 22 ‘
+- Thomas Strakosha (Free transfer) 11 July22
+
+- Keane Lewis-Potter (Hull City FC) 12 July 22
+
+- Ben Mee (Free transfer) 21 July 22
+
+- Mikkel Damsgaard (Sampdoria) 10 August 22 ;
+
+_ + Mathias Jorgensen (Re-signed after previous contract expired on 30 June 22) 18 August 22
+
+In respect of departures, the following first team players, in date order, departed the club after the
+finalisation of the 21/22 season: .
+
+- Julian Jeanvier (end of contract)
+
+; - Christian Eriksen (end of contract)
+- Alvaro Fernandez (end of loan) 30 June 22
+- Jonas Lossl (end of loan) 30 June 22
+- Paris Maghoma (AFC Wimbledon) 18 July 22 - loan transfer
+- Dominic Thompson (Blackpool) 25 July 22 ;
+
+- Marcus Forss (Middlesbrough) 27 July 22
+
+- Ellery Balcombe (Crawley Town FC) 27 July 22 - loan transfer
+
+- Tariqe Fosu-Henry (Stoke City FC) 16 August 22 - loan transfer
+
+- Myles Harris (Forest Green Rovers) 22 August 22 - loan transfer
+
+- Luka Racic (Sonderjyskefodbold A/S) 31 August 22
+
+- Halil Dervisoglu (Burnley) 31 August 22 - loan transfer .
+
+- Joel Valencia (Graafschap B.V.) 31 August 22 - loan transfer
+
+- Mads Bech Sorensen (OGC Nice) 1 September 22 - loan transfer
+
+- Fin Stevens (Swansea City FC) 1 September 22 - loan transfer ;
+
+In addition to the above there were a number of B team arrivals and departures. ,
+
+| 49 continued... ‘
+
+--- pág. 52 ---
+i
+Brentford FC Ltd (Registered number: 03642327)
+Notes to the Consolidated Financial Statements - continued
+for the Year Ended 30 June 2022
+Stadium naming rights
+On 1 July 2022 the company entered into a stadium naming rights partnership with Grey Technology
+Limited (Gtech). Under this ten-year partnership the Brentford Community Stadium has been
+renamed as the Gtech Community Stadium.
+Academy
+Subsequent to year-end the company has been granted a licence to open and operate an Academy
+; under the Elite Player Performance Plan. A Category Four Academy was opened for the start of the
+2022/23 season.
+A recent change in Premier League rules state that by the start of the 2024/25 season all Premier
+League clubs must have an academy at Category Three level or higher and therefore the opening |
+of a Category Four Academy is a step towards complying with this rule. It is also necessary to have
+an Academy in order to gain a licence to compete in UEFA competitions.
+Planning Approval for training facility at Jersey Road
+- Subsequent to year-end planning permission was granted by Hounslow Council for development of
+a new training facility at Jersey Road. This planning permission was obtained following consultation
+with the local community about the plans and was unanimously approved by committee members
+of the Council's Planning Committee.
+This decision means that the Club can replace the existing buildings at Jersey Road. The new
+training facility, whilst temporary, will be of a much higher standard and represent a significant
+improvement on what is currently in place. It will act as a stepping-stone towards a longer-term
+vision for a state-of-the-art performance centre. The facilities will continue to be used by the First
+: Team and B team.
+The temporary facility will be in place for the next five years, enabling the Club to continue to develop
+its plans for a new permanent performance centre.
+The new facilities will be operational by the end of the calendar year and in memory of our former
+Technical Director the facility will be named the Robert Rowan Performance Centre.
+50
+
