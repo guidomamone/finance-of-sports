@@ -413,7 +413,7 @@ Op financieel vlak was het seizoen 2020/2021 al met al een positief jaar, ondank
 bijna geen wedstrijd met publiek hebben kunnen spelen door Corona. Vooraf bij de budgetprognose in juni 2020
 was de verwachting dat we per januari 2021 wel weer met publiek zouden kunnen gaan spelen, de daaraan
 gekoppelde inkomsten m.b.t. extra ticketverkoop, merchandising en horeca hadden we voorzichtig in de omzet
-verwerkt. Uiteindelijk speelden we nagenoeg geen wedstrijden met publiek dus dat deed viel tegen. Wat daarentegen
+verwerkt. Uiteindelijk speelden we nagenoeg geen wedstrijden met publiek dus dat viel tegen. Wat daarentegen
 heel erg meeviel is dat wij een meer dan verwacht aantal seizoenkaarten en business seats hebben verkocht.
 Bijzonder hoeveel positieve support GAE heeft ontvangen van de supporters in onzekere en onduidelijke tijden!
 
