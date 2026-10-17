@@ -70,7 +70,7 @@ const rubinkazanruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:3149.141, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:2642.177, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:1091.076, cash:4.345,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:542.826,
   },
   2022: {
@@ -90,7 +90,7 @@ const rubinkazanruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:2468.547, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:2118.976, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:65.594, cash:35.982,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-1161.236,
   },
   2023: {
@@ -110,7 +110,7 @@ const rubinkazanruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:2139.986, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:2653.208, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:39.677, cash:1.095,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-236.411,
   },
   2024: {
@@ -130,7 +130,7 @@ const rubinkazanruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:4137.976, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:4056.276, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:42.441, cash:1.459,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:136.163,
   },
   2025: {
@@ -150,7 +150,7 @@ const rubinkazanruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:3607.111, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:5277.813, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:36.838, cash:104.729,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:131.803,
   },
 };

@@ -96,6 +96,10 @@ ajuste manual `incluye`: el documento junta estas categorías con otra línea
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón R (compuerta: JSON del año anterior): Rusia, balance del fisco: código 1410 + 1510 = 1811198 miles de RUB (bfo-2025-datos.json); cash escalón R (compuerta: JSON del año anterior): Rusia, balance del fisco: código 1250 = 603454 miles de RUB (bfo-2025-datos.json)
+```
+
 ### Liga
 
 ```text
@@ -142,6 +146,10 @@ ajuste manual `incluye`: el documento junta estas categorías con otra línea
 
 ```text
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón R (compuerta: JSON del año siguiente): Rusia, balance del fisco: código 1410 + 1510 = 2454988 miles de RUB (bfo-2024-datos.json); cash escalón R (compuerta: JSON del año siguiente): Rusia, balance del fisco: código 1250 = 117215 miles de RUB (bfo-2024-datos.json)
 ```
 
 ### Liga
@@ -192,6 +200,10 @@ ajuste manual `incluye`: el documento junta estas categorías con otra línea
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón R (compuerta: JSON del año siguiente): Rusia, balance del fisco: código 1410 + 1510 = 396219 miles de RUB (bfo-2023-datos.json); cash escalón R (compuerta: JSON del año siguiente): Rusia, balance del fisco: código 1250 = 1191248 miles de RUB (bfo-2023-datos.json)
+```
+
 ### Liga
 
 ```text
@@ -240,6 +252,10 @@ ajuste manual `incluye`: el documento junta estas categorías con otra línea
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón R (compuerta: JSON del año siguiente): Rusia, balance del fisco: código 1410 + 1510 = 0 miles de RUB (bfo-2022-datos.json); cash escalón R (compuerta: JSON del año siguiente): Rusia, balance del fisco: código 1250 = 406790 miles de RUB (bfo-2022-datos.json)
+```
+
 ### Liga
 
 ```text
@@ -286,6 +302,10 @@ ajuste manual `incluye`: el documento junta estas categorías con otra línea
 
 ```text
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón R (compuerta: JSON del año siguiente): Rusia, balance del fisco: código 1410 + 1510 = 0 miles de RUB (bfo-2021-datos.json); cash escalón R (compuerta: JSON del año siguiente): Rusia, balance del fisco: código 1250 = 12670 miles de RUB (bfo-2021-datos.json)
 ```
 
 ### Liga

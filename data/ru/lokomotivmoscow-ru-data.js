@@ -70,7 +70,7 @@ const lokomotivmoscowruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:5506.957, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:8309.653, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:3609.622, cash:2161.343,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-2579.022,
   },
   2022: {
@@ -90,7 +90,7 @@ const lokomotivmoscowruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:6785.05, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:6168.544, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:683.148,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:2.99,
   },
   2023: {
@@ -110,7 +110,7 @@ const lokomotivmoscowruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:7383.651, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:6664.846, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:107.937,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-370.522,
   },
   2024: {
@@ -130,7 +130,7 @@ const lokomotivmoscowruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:6718.143, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:6983.275, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:69.309,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-798.528,
   },
   2025: {
@@ -150,7 +150,7 @@ const lokomotivmoscowruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:7425.193, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:8377.362, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:295.776,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-859.439,
   },
 };

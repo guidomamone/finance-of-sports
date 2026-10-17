@@ -65,7 +65,7 @@ const spartakmoscowruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:7991.133, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:9041.728, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:534.788,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-881.289,
   },
   2022: {
@@ -85,7 +85,7 @@ const spartakmoscowruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:5829.706, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:7736.016, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:628.887, cash:68.92,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-1823.413,
   },
   2023: {
@@ -104,7 +104,7 @@ const spartakmoscowruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:9217.564, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:9063.581, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:153.476,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-1175.831,
   },
   2024: {
@@ -123,7 +123,7 @@ const spartakmoscowruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:10303.709, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:10568.472, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:3669, cash:595.96,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-1465.797,
   },
   2025: {
@@ -143,7 +143,7 @@ const spartakmoscowruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:14610.225, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:15815.522, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:10377.402, cash:99.731,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-3650.22,
   },
 };

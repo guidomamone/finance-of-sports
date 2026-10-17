@@ -54,7 +54,7 @@ const akhmatgroznyruFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:598.534, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:772.745,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:337.605,
   },
   2023: {
@@ -72,7 +72,7 @@ const akhmatgroznyruFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:332.718, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:242.818,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:350.696,
   },
   2024: {
@@ -89,7 +89,7 @@ const akhmatgroznyruFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:1180.272, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:143.664,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-503.992,
   },
   2025: {
@@ -106,7 +106,7 @@ const akhmatgroznyruFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:2349.463, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:1090.085,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-254.909,
   },
 };

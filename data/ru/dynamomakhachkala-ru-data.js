@@ -89,7 +89,7 @@ const dynamomakhachkalaruFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:5.368, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.787, cash:0.651,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-2.497,
   },
   2022: {
@@ -105,7 +105,7 @@ const dynamomakhachkalaruFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:19.335, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.487, cash:2.155,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:4.526,
   },
   2023: {
@@ -125,7 +125,7 @@ const dynamomakhachkalaruFiscalYearMeta = {
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:1.751, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:379.566, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.287, cash:33.306,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:31.489,
   },
   2024: {
@@ -146,7 +146,7 @@ const dynamomakhachkalaruFiscalYearMeta = {
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:60.103, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:1127.11, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:140.96, cash:38.84,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-102.905,
   },
   2025: {
@@ -167,7 +167,7 @@ const dynamomakhachkalaruFiscalYearMeta = {
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:123.419, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:1328.363, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:144.46, cash:147.881,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:66.384,
   },
 };

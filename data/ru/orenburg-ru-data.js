@@ -89,7 +89,7 @@ const orenburgruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:874.208, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:50.094, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:252.97,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:57.121,
   },
   2022: {
@@ -109,7 +109,7 @@ const orenburgruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:1335.468, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:70.238, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:290.384,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:17.421,
   },
   2023: {
@@ -129,7 +129,7 @@ const orenburgruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:1995.771, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:77.721, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:252.844,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:2.703,
   },
   2024: {
@@ -150,7 +150,7 @@ const orenburgruFiscalYearMeta = {
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:2067.511, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:80.35, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:50.448, cash:129.298,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-84.67,
   },
   2025: {
@@ -170,7 +170,7 @@ const orenburgruFiscalYearMeta = {
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:2688.13, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:109.376, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:92.081,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-181.213,
   },
 };

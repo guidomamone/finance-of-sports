@@ -59,7 +59,7 @@ const baltikakaliningradruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:185.071, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:280.806, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:1.658,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:3.394,
   },
   2023: {
@@ -78,7 +78,7 @@ const baltikakaliningradruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:857.242, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:610.563, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:36.535,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:96.27,
   },
   2024: {
@@ -97,7 +97,7 @@ const baltikakaliningradruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:1267.728, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:947.767, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:15.344,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-274.894,
   },
   2025: {
@@ -116,7 +116,7 @@ const baltikakaliningradruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:2601.644, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:1424.662, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:1.297,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:309.785,
   },
 };

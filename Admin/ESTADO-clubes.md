@@ -307,21 +307,21 @@ PT (33)
   Vizela              4 ejercicios (2021/2022 a 2024/2025), balance, EUR
 
 RU (16)
-  Akhmat Grozny          4 ejercicios (2022 a 2025), balance, RUB, sin deuda/caja
-  Akron Tolyatti         5 ejercicios (2021 a 2025), balance, RUB, sin deuda/caja
-  Baltika Kaliningrad    4 ejercicios (2022 a 2025), balance, RUB, sin deuda/caja
-  CSKA Moscow            5 ejercicios (2021 a 2025), balance, RUB, sin deuda/caja
-  Dynamo Makhachkala     5 ejercicios (2021 a 2025), balance, RUB, sin deuda/caja
-  Dynamo Moscow          5 ejercicios (2021 a 2025), balance, RUB, sin deuda/caja
-  Krasnodar              5 ejercicios (2021 a 2025), balance, RUB, sin deuda/caja
-  Krylia Sovetov Samara  5 ejercicios (2021 a 2025), balance, RUB, sin deuda/caja
-  Lokomotiv Moscow       5 ejercicios (2021 a 2025), balance, RUB, sin deuda/caja
-  Orenburg               5 ejercicios (2021 a 2025), balance, RUB, sin deuda/caja
-  Pari Nizhny Novgorod   5 ejercicios (2021 a 2025), balance, RUB, sin deuda/caja
-  Rostov                 5 ejercicios (2021 a 2025), balance, RUB, sin deuda/caja
-  Rubin Kazan            5 ejercicios (2021 a 2025), balance, RUB, sin deuda/caja
-  Sochi                  5 ejercicios (2021 a 2025), balance, RUB, sin deuda/caja
-  Spartak Moscow         5 ejercicios (2021 a 2025), balance, RUB, sin deuda/caja
-  Zenit                  5 ejercicios (2021 a 2025), balance, RUB, sin deuda/caja
+  Akhmat Grozny          4 ejercicios (2022 a 2025), balance, RUB
+  Akron Tolyatti         5 ejercicios (2021 a 2025), balance, RUB
+  Baltika Kaliningrad    4 ejercicios (2022 a 2025), balance, RUB
+  CSKA Moscow            5 ejercicios (2021 a 2025), balance, RUB
+  Dynamo Makhachkala     5 ejercicios (2021 a 2025), balance, RUB
+  Dynamo Moscow          5 ejercicios (2021 a 2025), balance, RUB
+  Krasnodar              5 ejercicios (2021 a 2025), balance, RUB
+  Krylia Sovetov Samara  5 ejercicios (2021 a 2025), balance, RUB
+  Lokomotiv Moscow       5 ejercicios (2021 a 2025), balance, RUB
+  Orenburg               5 ejercicios (2021 a 2025), balance, RUB
+  Pari Nizhny Novgorod   5 ejercicios (2021 a 2025), balance, RUB
+  Rostov                 5 ejercicios (2021 a 2025), balance, RUB
+  Rubin Kazan            5 ejercicios (2021 a 2025), balance, RUB
+  Sochi                  5 ejercicios (2021 a 2025), balance, RUB
+  Spartak Moscow         5 ejercicios (2021 a 2025), balance, RUB
+  Zenit                  5 ejercicios (2021 a 2025), balance, RUB
 
 ===== CLUB-INDEX:END =====

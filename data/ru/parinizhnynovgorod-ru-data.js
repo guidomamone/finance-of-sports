@@ -94,7 +94,7 @@ const parinizhnynovgorodruFiscalYearMeta = {
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:117.293, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:648.61, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:146.508,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:74.248,
   },
   2022: {
@@ -113,7 +113,7 @@ const parinizhnynovgorodruFiscalYearMeta = {
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:237.925, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:754.41, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:269.568,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:322.587,
   },
   2023: {
@@ -133,7 +133,7 @@ const parinizhnynovgorodruFiscalYearMeta = {
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:369.708, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:1055.294, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:58.63,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-326.236,
   },
   2024: {
@@ -153,7 +153,7 @@ const parinizhnynovgorodruFiscalYearMeta = {
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:722.498, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:740.572, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:9.938,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:81.613,
   },
   2025: {
@@ -173,7 +173,7 @@ const parinizhnynovgorodruFiscalYearMeta = {
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:234.785, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:1478.802, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:0.785,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-48.332,
   },
 };

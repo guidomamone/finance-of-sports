@@ -70,7 +70,7 @@ const dynamomoscowruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:6399.966, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:3945.338, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:5108.553, cash:436.376,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:223.214,
   },
   2022: {
@@ -90,7 +90,7 @@ const dynamomoscowruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:7422.358, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:4519.247, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:5567.671, cash:705.043,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:277.155,
   },
   2023: {
@@ -110,7 +110,7 @@ const dynamomoscowruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:7747.802, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:7215.321, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:5040.495, cash:214.4,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:368.592,
   },
   2024: {
@@ -130,7 +130,7 @@ const dynamomoscowruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:9816.813, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:8117.874, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:2624.34, cash:1332.926,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:343.377,
   },
   2025: {
@@ -150,7 +150,7 @@ const dynamomoscowruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:13446.933, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:9915.104, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:4000.618, cash:3620.259,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:1250.821,
   },
 };

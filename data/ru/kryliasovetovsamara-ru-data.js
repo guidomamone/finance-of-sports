@@ -61,7 +61,7 @@ const kryliasovetovsamararuFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:241.394, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:1508.704, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:987.452, cash:57.062,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:2.106,
   },
   2022: {
@@ -80,7 +80,7 @@ const kryliasovetovsamararuFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:686.891, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:1993.276, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:992.114, cash:602.997,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:582.38,
   },
   2023: {
@@ -99,7 +99,7 @@ const kryliasovetovsamararuFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:902.657, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:2387.252, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:929.945, cash:242.55,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:270.015,
   },
   2024: {
@@ -118,7 +118,7 @@ const kryliasovetovsamararuFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:809.104, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:2216.984, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:934.288, cash:525.069,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:205.816,
   },
   2025: {
@@ -136,7 +136,7 @@ const kryliasovetovsamararuFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:818.188, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:2444.921, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:506.491, cash:0.578,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-628.941,
   },
 };

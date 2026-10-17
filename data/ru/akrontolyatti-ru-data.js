@@ -100,7 +100,7 @@ const akrontolyattiruFiscalYearMeta = {
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:1.339, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:96.956, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:2.759,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:3.272,
   },
   2022: {
@@ -120,7 +120,7 @@ const akrontolyattiruFiscalYearMeta = {
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:0.871, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:126.309, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:10.054,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:22.008,
   },
   2023: {
@@ -140,7 +140,7 @@ const akrontolyattiruFiscalYearMeta = {
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:2.16, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:457.76, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:7.135, cash:4.849,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-59.746,
   },
   2024: {
@@ -160,7 +160,7 @@ const akrontolyattiruFiscalYearMeta = {
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:201.568, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:1172.825, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:26.729,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:76.75,
   },
   2025: {
@@ -181,7 +181,7 @@ const akrontolyattiruFiscalYearMeta = {
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:244.247, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Расходы на целевые мероприятия (6310, форма 6)', lado:'gasto', importe:1546.483, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:61.752,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-12.756,
   },
 };

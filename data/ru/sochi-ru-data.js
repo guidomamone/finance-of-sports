@@ -113,7 +113,7 @@ const sochiruFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:2406.278, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:115.1, cash:79.651,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-175.851,
   },
   2022: {
@@ -132,7 +132,7 @@ const sochiruFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:2823.867, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:12.235,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:590.509,
   },
   2023: {
@@ -151,7 +151,7 @@ const sochiruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:2895.934, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:2326.957, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:3.299,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:807.344,
   },
   2024: {
@@ -169,7 +169,7 @@ const sochiruFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:2830.285, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:1458.369,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:463.325,
   },
   2025: {
@@ -187,7 +187,7 @@ const sochiruFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:3248.653, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:559.567,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-877.263,
   },
 };

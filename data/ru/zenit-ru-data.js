@@ -69,7 +69,7 @@ const zenitruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:12570.87, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:14987.462, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:12.67,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-401.355,
   },
   2022: {
@@ -89,7 +89,7 @@ const zenitruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:13776.498, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:12716.589, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:406.79,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-647.911,
   },
   2023: {
@@ -109,7 +109,7 @@ const zenitruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:14523.466, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:14405.973, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:396.219, cash:1191.248,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:269.801,
   },
   2024: {
@@ -129,7 +129,7 @@ const zenitruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:22154.615, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:19529.859, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:2454.988, cash:117.215,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-294.42,
   },
   2025: {
@@ -149,7 +149,7 @@ const zenitruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:22070.93, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:18542.53, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:1811.198, cash:603.454,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:1227.898,
   },
 };

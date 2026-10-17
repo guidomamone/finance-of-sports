@@ -70,7 +70,7 @@ const cskamoscowruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:4297.346, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:8035.801, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:3920.12, cash:272.133,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-735.312,
   },
   2022: {
@@ -90,7 +90,7 @@ const cskamoscowruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:5374.097, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:6672.262, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:3195.143, cash:918.929,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-1171.585,
   },
   2023: {
@@ -110,7 +110,7 @@ const cskamoscowruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:6039.691, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:7910.561, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:2850.971, cash:647.691,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-1020.079,
   },
   2024: {
@@ -130,7 +130,7 @@ const cskamoscowruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:7204.898, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:9779.879, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:2316.308, cash:752.697,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:-813.662,
   },
   2025: {
@@ -150,7 +150,7 @@ const cskamoscowruFiscalYearMeta = {
       {renglon:'Выручка (2110)', lado:'ingreso', importe:9866.816, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
       {renglon:'Себестоимость продаж (2120)', lado:'gasto', importe:11014.776, motivo:'el formulario 2 ruso no abre este renglón (bfo-rusia.mjs, escalón 1)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:1627.124, cash:836.989,
     officialTotalRevenue:null, officialTotalExpenses:null, officialPAT:653.761,
   },
 };
