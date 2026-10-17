@@ -126,6 +126,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): banche 40.139.196 + altri finanziatori 102.743.899 = 142.883.095. Sin obbligazioni ni soci. Banche 15.860.292+24.278.904; altri finanziatori 73.668.899+29.075.000.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): depositi bancari e postali 2.276.362 + assegni 0 + danaro e valori in cassa 3.714 = 2.280.076. Balance individual al 30/06/2025; Totale disponibilità liquide 2.280.076.
+```
+
 ### Liga
 
 ```text
@@ -275,6 +279,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "4) Debiti verso banche" pág. 19
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): soci 1.300.000 + banche 57.960.952 + altri finanziatori 58.684.153 = 117.945.105. Lo cargado (20,667997 M) es solo banche corriente. Banche 20.667.997+37.292.955; altri 48.061.859+10.622.294.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): depositi bancari e postali / cassa. Totale disponibilità liquide 1.145.913. Balance individual al 31/12/2023; el desglose depositi/cassa no se mira, total impreso 1.145.913 (coincide con nota línea 759).
+```
+
 ### Liga
 
 ```text
@@ -359,6 +367,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "4) Debiti verso banche" pág. 8
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): soci oltre 1.300.000 + banche entro 15.678.033 + banche oltre 48.266.122 + altri finanziatori entro 22.239.419 + altri finanziatori oltre 8.211.833 = 95.695.407. Lo cargado (15,678033 M) es solo banche corriente. Altri finanziatori incluye factoring (Banca Sistema) y loan bullet 10M Fasanara.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): depositi bancari e postali 1.163.857 + denaro e valori in cassa 663 = 1.164.520. Balance individual al 31/12/2022, TOTALE (IV) 1.164.520.
 ```
 
 ## Gestiones
