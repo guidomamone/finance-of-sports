@@ -780,7 +780,7 @@ Texto movido sin cambios.
   loguea puede volver a ver lo que ya miró. Pendiente antes de que sirva para un visitante real,
   no solo Guido: to-do 94 (publicar la pantalla de consentimiento OAuth de Google, que arranca en
   modo "Testing", y agregar el dominio de producción a los Redirect URLs de Supabase).
-- PESTAÑA LIGAS (mockup: artboards "Ligas" del artifact "Pantallas FoS — Inicio"). El ranking de ingresos de los clubes de una liga
+- PESTAÑA LIGAS (mockup: artboards "Ligas" del artifact "Pantallas FoS"). El ranking de ingresos de los clubes de una liga
   en UN ejercicio. Vive en `js/liga.js` y lee `data/rankings/<liga>.js`, así que NO baja ningún `data/<país>/<club>-data.js`.
   ESTADO FRÍO (se llega por el nav): sin título que repita la pestaña; un buscador (liga o país), las regiones como filtro con cuántas
   ligas tienen datos, y una fila por país (alfabético) con sus ligas en orden de división (`tier`), cada una con "N de M · año" o "N
@@ -865,7 +865,7 @@ Texto movido sin cambios.
   la reemplazan, para no llenar el historial con cada click. Al abrir, la URL le gana al club guardado; un club o una liga que no
   existen se ignoran. Se tocan solo esas cinco claves (`?multi=0`, `?audit=1` quedan). La moneda, la inflación, el formato y
   Comparar todavía no van en la URL. El índice de Finanzas salta sin escribir un #ancla.
-- FINANZAS, LO DE ARRIBA (mockup: artboards "Finanzas" del artifact "Pantallas FoS — Inicio"). El título es el club, con "Cambiar de
+- FINANZAS, LO DE ARRIBA (mockup: artboards "Finanzas" del artifact "Pantallas FoS"). El título es el club, con "Cambiar de
   club" al lado (en Finanzas el título ya dice qué club es). Debajo, una guía de una línea (qué se toca) que se cierra y no vuelve
   (`localStorage` `finGuiaCerrada`). La tarjeta de ejercicios termina con la vista en palabras ("Montos en USD, nominales, formato
   simplificado", leída de los botones activos, sin un estado propio) y "Más opciones", que abre el panel con la moneda (que ya
@@ -873,7 +873,7 @@ Texto movido sin cambios.
   El aviso del documento va compacto. Debajo de los KPIs ("Intereses y otros", no "Int."), un índice fijo de la página (Evolución,
   Estado de resultados, Deuda, En otra liga, Fuentes) que marca la sección que se lee y salta sin escribir el #ancla en la URL.
   OJO: las reglas del menú del teléfono van con `#mainNav`, nunca con `nav` a secas: el índice también es un `<nav>`.
-- INICIO (mockup: artifact de Design "Pantallas FoS — Inicio"). Arriba, qué es el sitio (el conteo
+- INICIO (mockup: artifact de Design "Pantallas FoS"). Arriba, qué es el sitio (el conteo
   "N clubes · N países · N ejercicios" sale de `data/club-index.js`) y el BUSCADOR como acción principal: tocarlo abre el selector con
   lo tipeado (`CLUB_SELECTOR.open(q)`) y al elegir se cae en Finanzas; abajo del buscador, "Probá con" (el 1 del mundo, el 1 de América
   y la primera liga destacada: salen de los rankings, no están escritos a mano) y "Comparar dos clubes o ligas". Después, las tarjetas

@@ -1,7 +1,7 @@
 # Sesión `pantallas` (worktree `fos-pantallas`, rama `pantallas`), 2026-10-17
 
 Cierre para la sesión principal: pasar a `Admin/CHANGELOG.md`, `Admin/TODO.md` y `Admin/ESTADO.md`, y archivar este archivo en `Admin/Archive/`.
-Mockups (aprobados por Guido): artifact de Design "Pantallas FoS — Inicio" (https://claude.ai/artifact/NrkUb1jbqNf83npG3Fbzgi), con
+Mockups (aprobados por Guido): artifact de Design "Pantallas FoS" (https://claude.ai/artifact/NrkUb1jbqNf83npG3Fbzgi), con
 Inicio, el header del teléfono, Ligas, Finanzas y "Estás viendo", en escritorio y teléfono.
 
 ## Qué cambió (para el CHANGELOG)
