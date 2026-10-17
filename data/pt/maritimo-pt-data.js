@@ -285,7 +285,7 @@ const maritimoptFiscalYearMeta = {
       {label:'Imposto sobre o rendimento', value:null},
     ],
     incluidoEn:{"broadcasting":{"en":"sponsorship_commercial","posible":true}},
-    grossDebt:null, cash:0.400168,
+    grossDebt:0.073434, cash:0.400168,
     officialTotalRevenue:6.665468, officialTotalExpenses:8.883706, officialPAT:-2.302562,
   },
 };

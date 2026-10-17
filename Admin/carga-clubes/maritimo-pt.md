@@ -116,6 +116,10 @@ incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con ot
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 25
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos corriente 73 434 + no corriente - (vacío). Balance individual de la SAD; sin otras filas financieras.
+```
+
 ### Liga
 
 ```text
