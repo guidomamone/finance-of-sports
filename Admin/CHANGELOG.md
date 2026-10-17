@@ -26,6 +26,12 @@ que dice `ESTADO.md` era verdad ese día.
 - Caja y deuda de los clubes sin año vecino (to-do 260 c): 19 ajustes `caja` / `deuda` leídos a mano en el balance, con página y línea (AVS
   2021, 2023 y 2024; Boavista 2024; Chaves 2022 y 2023; Mafra 2024; Tondela 2021; deuda de Felgueiras 2022-2024). AVS 2021 y Boavista 2024
   con deuda financiera 0 (sin financiamientos; Boavista: "Não aplicável", nota 29.2.5). Sin caja ni deuda: 299 -> 291 de 919.
+- Caja y deuda de Rusia (16 clubes, 78 años) desde los códigos del balance del fisco (caja-deuda.mjs, escalón R: caja 1250, deuda 1410 +
+  1510, con el balance que cuadra y un JSON vecino que confirma).
+- Caja y deuda de Italia completas: 201 datos leídos en el balance por subagentes Sonnet con cita (22 clubes), comprobados contra el ensayo
+  (201 de 201 iguales) y escritos club por club; 9 deudas cargadas corregidas por el criterio con socios y otros financiadores (Bologna
+  2018-2025, Chievo 2015-2016, Genoa 2022-2023, Parma 2017). El esquema 2424 como escalón, medido y descartado (HALLAZGOS).
+  Sin caja ni deuda: 249 -> 111 de 919.
 - fetch-club-league-reference.mjs: escalón "tabla limpia" (si la tabla elegida tiene nombres que no están en ninguna otra, como técnicos o
   estadios, se pasa a una sin sueltos que suma los clubes que faltaban) y --comparar (to-do 165 b2). Medido en las 262 temporadas de la
   caché: cambia solo Portugal 2025 (entran Casa Pia, Estoril, Nacional y Santa Clara; salen 4 técnicos), 0 errores.

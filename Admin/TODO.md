@@ -24,9 +24,8 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-1. **Caja y deuda**: faltan 398 datos (171 años sin ninguno de los dos; Italia 192, Portugal 86, Brasil 68, Grecia 67, Alemania y Japón el resto).
-   - Italia: lo que falta y las deudas cargadas que solo cuentan banche, leídos por subagentes con cita.
-   - Las 24 propuestas de hoy, revisadas y escritas; el resto, por subagentes con cita.
+1. **Caja y deuda**: faltan 377 datos (111 años sin ninguno de los dos; Portugal 86, Brasil 68, Grecia 67, Alemania 30, Japón 20, el resto chico). Italia y Rusia, completas.
+   - El resto, por subagentes con cita (como Italia).
 
 2. **Transcripciones por subagentes** (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia): limpiar lo que no es del club, los duplicados y los arreglos chicos; validarlas (unos US$ 0,10 cada 50) y cargarlas.
 
