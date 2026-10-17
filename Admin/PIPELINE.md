@@ -711,6 +711,10 @@ busca por PDF y AÑO (to-do 263). Si un PDF alimenta dos años del club (el del 
 geschaeftsbericht-2024-25), el ajuste lleva `--anio AAAA` y vale solo para ese año; uno sin año vale solo si el PDF alimenta un único año.
 Sin ajuste de ese año, el escalón 0 no decide y el año sigue por la escalera.
 
+Diccionario de deuda en italiano (escalón 1, `DEUDA_FINANCIERA` de `tools/vocabulario.mjs`): banche, debiti finanziari, obbligazioni y soci
+per finanziamenti (to-do 262). "Altri finanziatori" (factoring) no entra: el criterio no es el mismo en todos los clubes (Monza 2024 no lo
+cuenta, Genoa 2022 sí).
+
 ```
  LECTURA DE FILAS  una sola referencia a nota; una celda con "%" no es un importe; activo y pasivo en la misma fila = dos filas; sin código de cuenta ni numeración
                    ("4)", "a)") para el diccionario. La referencia a nota es una escalera: escalón 1, si la tabla tiene una columna de

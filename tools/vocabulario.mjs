@@ -573,7 +573,11 @@ export const VOCABULARIO = {
     // financial payables/liabilities" 2007 y 2011-2021, "Bonds and other financial liabilities" 2008-2010).
     en: ['borrowings', 'bank loans*', 'loans and borrowings', 'bank overdraft*', 'loans', 'due to banks', 'loans and other financial*', 'bonds and other financial liabilities'],
     de: ['verbindlichkeiten gegenuber kreditinstitut*', 'darlehen', 'finanzverbindlichkeiten'], fr: ['emprunts*', 'dettes financieres'],
-    it: ['debiti verso banche', 'debiti finanziari'], nl: ['schulden aan kredietinstellingen', 'leningen'], da: ['gaeld til kreditinstitutter', 'bankgaeld'],
+    // (to-do 262, ok de Guido 2026-10-17) italiano: además de banche, las obligaciones y los préstamos de socios (cuentan como deuda,
+    // decisión del 2026-10-17). Con solo banche la compuerta aceptaba el error porque el vecino lo repetía (Bologna 2025: 19,36 M de banche
+    // contra 28,59 M con soci 9.235.000, .md L1033-1035). "altri finanziatori" NO entra: es factoring, que en Monza 2024 no es deuda y en
+    // Genoa 2022 sí (medido: metía un error nuevo en Monza 2024).
+    it: ['debiti verso banche', 'debiti finanziari', 'obbligazioni*', 'debiti verso soci per finanziament*'], nl: ['schulden aan kredietinstellingen', 'leningen'], da: ['gaeld til kreditinstitutter', 'bankgaeld'],
     no: ['gjeld til kredittinstitusjoner', 'banklan'], sv: ['skulder till kreditinstitut', 'banklan'],
   },
 

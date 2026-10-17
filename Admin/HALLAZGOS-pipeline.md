@@ -42,6 +42,12 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
 - **Disparar el escalón de la sección D con "el resultado no cerró exacto"** (to-do 166, 2026-10-08): con las notas en miles la tolerancia
   exacta (media unidad por fila) tapa una D chica (Como 2024: 8.695 dentro de ~20 mil). Entró con un gatillo estructural (el encabezado de la D
   impreso). Y sin ese encabezado movía 10 Juventus IFRS, cuyas filas sin lado en esa zona no son la D.
+- **Compuerta del total de deuda financiera impreso** (to-do 262, caja-deuda.mjs, 2026-10-17): de 748 años con deuda cargada, solo 44
+  imprimen un rótulo de total ("Totale passività finanziarie", "Total financial liabilities", "Totale indebitamento finanziario"...) y en
+  12 no coincide con el sitio (otra definición: ESMA en Roma 2021 y Lazio 2021-2026; Juventus 2012-2015 y 2025). Contra los 13 distintos
+  arreglaba 1 (Milan 2018) y dejaba sin decidir 4 aciertos (Juventus 2012-2015); Bologna imprime el total partido en dos y Genoa no lo
+  imprime. Entró en su lugar el diccionario italiano (obbligazioni, soci per finanziamenti: 164 → 168 iguales, 13 → 11 distintos).
+  Sumar "debiti verso altri finanziatori" (factoring) metía un error nuevo: Monza 2024, 13,5 M contra 0.
 
 ## 2026-10-08, dos trampas que costaron una corrida
 
