@@ -43,7 +43,7 @@ function readKey() {
   if (!line) throw new Error(`Falta ${env} con una línea ANTHROPIC_API_KEY=...`);
   return line.slice('ANTHROPIC_API_KEY='.length).trim();
 }
-const cabeceras = () => ({ 'Content-Type': 'application/json', 'x-api-key': (clave ||= readKey()), 'anthropic-version': '2023-06-01', 'anthropic-beta': 'server-side-fallback-2026-07-01' });
+const cabeceras = () => ({ 'Content-Type': 'application/json', 'x-api-key': (clave ||= readKey()), 'anthropic-version': '2023-06-01' });
 async function pedir(url, opts = {}) {
   for (let intento = 0; intento < 6; intento++) {
     let res; try { res = await fetch(url, { ...opts, headers: cabeceras(), signal: AbortSignal.timeout(300000) }); } catch (e) { await sleep(5000 * (intento + 1)); continue; }
@@ -61,7 +61,10 @@ export async function enviarColaBatch({ cadaSeg = 60, avisar = console.log } = {
   const cola = leerJsonl(COLA);
   for (let i = 0; i < cola.length; i += 5000) {
     const parte = cola.slice(i, i + 5000);
-    const res = await pedir(API, { method: 'POST', body: JSON.stringify({ requests: parte.map((x) => ({ custom_id: x.custom_id, params: x.params })) }) });
+    // `fallbacks` (reintento del lado del servidor ante un rechazo) no se acepta en batch (HTTP 400, probado el 2026-10-17): se saca al mandar.
+    // El custom_id sigue siendo la huella del pedido completo, así la tool encuentra su respuesta en la pasada siguiente.
+    const sinFallbacks = ({ fallbacks, ...resto }) => resto;
+    const res = await pedir(API, { method: 'POST', body: JSON.stringify({ requests: parte.map((x) => ({ custom_id: x.custom_id, params: sinFallbacks(x.params) })) }) });
     const b = await res.json();
     appendFileSync(ENVIOS, JSON.stringify({ id: b.id, pedidos: parte.map((x) => ({ custom_id: x.custom_id, tarea: x.tarea, pdf: x.pdf })), creado: new Date().toISOString() }) + '\n');
     avisar(`  Batch API: envío ${b.id} con ${parte.length} pedido(s)`);
