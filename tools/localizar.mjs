@@ -125,11 +125,13 @@ export async function localizar(pdf, { registro, perimetroClub = null, ejecutar 
   const user = `${texto}${faltas.length ? `\n\nREINTENTO: en el intento anterior ${faltas.join('; ')}. Elegí también los cuadros que abren esos renglones (notas, anexos o cuadros por segmento).` : ''}${notasComoEstado ? `\n\n${PEDIDO_NOTAS_COMO_ESTADO}` : ''}${pista}\n\nÍNDICE (${visibles.length} bloques con cifras):\n\n${visibles.map(ficha).join('\n\n')}`;
   if (!ejecutar) return { ensayo: true, tokens: tokensDe(SYSTEM + user), usd: usdEstimado(tokensDe(SYSTEM + user), 1500) };
   let r = await llamarClaude({ system: SYSTEM, user, schema: SCHEMA, tarea: 'localizar', pdf }); let costo = r.costo || 0;
+  if (r.pendiente) return { pendiente: true, costo: 0 }; // modo batch: la respuesta llega en la ola siguiente (claude-llamada.mjs)
   if (r.error) return { error: r.error, costo };
   // Paso intermedio: la IA pidió ver bloques enteros antes de decidir -> una segunda llamada con su texto completo.
   if (r.datos.necesito_ver?.length) {
     const ver = r.datos.necesito_ver.map((id) => bloques.find((b) => b.id === id)).filter(Boolean).slice(0, 6);
     const r2 = await llamarClaude({ system: SYSTEM, user: `${user}\n\nTEXTO COMPLETO de los bloques que pediste ver:\n\n${ver.map((b) => `[${b.id}] pág. ${b.pagina}\n${textoDeBloque(mdText, b)}`).join('\n\n')}\n\nAhora decidí (necesito_ver tiene que quedar vacío).`, schema: SCHEMA, tarea: 'localizar-2', pdf });
+    if (r2.pendiente) return { pendiente: true, costo }; // modo batch: no se escribe la primera respuesta sin la segunda mirada
     costo += r2.costo || 0; if (!r2.error) r = r2;
   }
   const datos = { pdf, md, mdSha1: shaMd(md), modelo: MODELO, generado: new Date().toISOString(), ...(ampliado ? { indiceAmpliado: VERSION_AMPLIADO } : {}), ...(notasComoEstado ? { intentoNotasComoEstado: true, estadoDesdeNotas: !r.datos.sin_estado } : {}), ...(pistaResultado ? { intentoNotasConAjuste: true } : {}), bloques: Object.fromEntries(bloques.map((b) => [b.id, { pagina: b.pagina, lineas: b.lineas, tipo: b.tipo }])), ...r.datos };

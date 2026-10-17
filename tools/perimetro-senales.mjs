@@ -329,6 +329,7 @@ async function pasoA2(mdRel, lineas) {
   if (!datos) {
     const { llamarClaude } = await import('./claude-llamada.mjs');
     const r = await llamarClaude({ system: SISTEMA_A2, user, schema: ESQUEMA_A2, tarea: 'perimetro-a2', pdf: mdRel.replace(/\.md$/, '.pdf'), maxTokens: 2000 });
+    if (r.pendiente) return { pendiente: true }; // modo batch: la respuesta llega en la ola siguiente
     if (r.error) return { error: r.error };
     datos = r.datos;
     mkdirSync(dirname(CACHE_A2), { recursive: true }); appendFileSync(CACHE_A2, JSON.stringify({ clave, md: mdRel, datos }) + '\n'); cacheA2.set(clave, { datos });
@@ -364,6 +365,7 @@ export async function proponer(mdRel, { jev = false } = {}) {
     // PASO A2 (Claude; pago, así que solo al ejecutar: en el ensayo queda pendiente).
     if (!jev) { r.a2 = { pendiente: true }; return r; }
     const a = await pasoA2(mdRel, md.split('\n')); r.a2 = a;
+    if (a.pendiente) { r.motivo += '; A2 pendiente de la Batch API'; return r; }
     if (a.error) { r.motivo += `; A2 falló (${a.error})`; return r; }
     if (a.estado == null) { r.motivo += `; A2: ${a.motivo}`; return r; }
     const v = Object.entries(a.votos).map(([k, x]) => `${k} ${x.si ? `sí L${x.linea}` : x.rechazado ? `rechazado L${x.linea}` : 'no'}`).join(', ');
@@ -441,6 +443,9 @@ export async function fijarPerimetroDeClubes(pdfs, { registro, ejecutar = false,
     const docs = registro.filter((e) => e.pdf.startsWith(c) && e.estado !== 'duplicado' && !descartados.has(e.pdf) && e.md && existsSync(resolve(ROOT, e.md)));
     const props = [];
     for (const e of docs) props.push({ e, r: await proponer(e.md, { jev: ejecutar }) });
+    // Modo batch (claude-llamada.mjs): si a algún documento del club le falta la respuesta de A2, no se decide el club con los demás (sin
+    // batch habrían estado todas): se espera a la ola siguiente.
+    if (ejecutar && props.some(({ r }) => r.a2?.pendiente)) { out.push({ carpeta: c, valor: null, porDocumento: [], pendienteJev: true, detalle: 'A2 pendiente de la Batch API: se decide en la ola siguiente' }); continue; }
     const porCierre = new Map(); const votos = new Map(); let pendJev = 0;
     for (const { e, r } of props) {
       const k = e.periodo?.cierre || e.md;

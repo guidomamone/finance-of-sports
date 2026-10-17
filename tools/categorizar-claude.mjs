@@ -79,6 +79,7 @@
 // Necesita Admin/api-keys/claude-api.env con ANTHROPIC_API_KEY=... (gitignoreado).
 // ============================================================================
 
+import { enBatch, FACTOR_BATCH, idBatch, respuestaBatch, anotarEnCola } from './claude-batch.mjs';
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync, mkdirSync } from 'node:fs';
 import { huellaRubros, huellaJev, categoriasAlDia, leerLista } from './huellas.mjs';
 import { resolve } from 'node:path';
@@ -332,6 +333,17 @@ async function callClaude({ apiKey, model, effort, system, user, maxTokens = 120
   const headers = { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' };
   if (model !== 'claude-haiku-4-5') { body.output_config.effort = effort; }
   if (model === 'claude-opus-5-5' || model === 'claude-sonnet-5-5') { body.fallbacks = 'default'; headers['anthropic-beta'] = 'server-side-fallback-2026-07-01'; }
+  // MODO BATCH (tools/claude-batch.mjs): la respuesta de este pedido, si ya volvió de la Batch API; si no, se anota y queda pendiente.
+  if (enBatch()) {
+    const id = idBatch(body); const rb = respuestaBatch(id);
+    if (rb?.error) return { error: `Batch API: ${rb.error}` };
+    if (!rb?.mensaje) { anotarEnCola(id, body, 'categorizar', null); return { pendiente: true }; }
+    const j = rb.mensaje;
+    if (j.stop_reason === 'refusal') return { error: `refusal: ${JSON.stringify(j.stop_details)}`, usage: j.usage, model: j.model, batch: true };
+    const text = (j.content || []).filter((c) => c.type === 'text').map((c) => c.text).join('');
+    let parsed = null; try { parsed = JSON.parse(text); } catch { return { error: `JSON inválido (stop=${j.stop_reason}): ${text.slice(0, 200)}`, usage: j.usage, model: j.model, batch: true }; }
+    return { parsed, usage: j.usage, model: j.model, stopReason: j.stop_reason, batch: true };
+  }
   let lastErr = null;
   for (let attempt = 0; attempt < 5; attempt++) {
     let res;
@@ -380,8 +392,9 @@ export async function categorizarConClaude({ club, year = null, rubros, modelo =
   if (dryRun) return { resultados: [], costUsd: 0, promptChars: system.length + text.length, userChars: text.length, systemChars: system.length, user: text };
   const t0 = Date.now();
   const r = await callClaude({ apiKey: apiKey || readKey(), model: modelo, effort: esfuerzo, system, user: text });
-  const costUsd = costOf(modelo, r.usage);
-  appendFileSync(costLogPath, JSON.stringify({ ts: new Date().toISOString(), tarea: 'categorizar', club, year, model: r.model || modelo, promptTokenCount: (r.usage?.input_tokens || 0) + (r.usage?.cache_creation_input_tokens || 0) + (r.usage?.cache_read_input_tokens || 0), cacheReadTokens: r.usage?.cache_read_input_tokens || 0, candidatesTokenCount: r.usage?.output_tokens || 0, costUsd: Number(costUsd.toFixed(6)), elapsedMs: Date.now() - t0, stopReason: r.stopReason || null, rubros: ids.length, error: r.error || undefined }) + '\n');
+  if (r.pendiente) return { resultados: [], pendiente: true, costUsd: 0, model: modelo };
+  const costUsd = costOf(modelo, r.usage) * (r.batch ? FACTOR_BATCH : 1);
+  appendFileSync(costLogPath, JSON.stringify({ ts: new Date().toISOString(), tarea: 'categorizar', ...(r.batch ? { batch: true } : {}), club, year, model: r.model || modelo, promptTokenCount: (r.usage?.input_tokens || 0) + (r.usage?.cache_creation_input_tokens || 0) + (r.usage?.cache_read_input_tokens || 0), cacheReadTokens: r.usage?.cache_read_input_tokens || 0, candidatesTokenCount: r.usage?.output_tokens || 0, costUsd: Number(costUsd.toFixed(6)), elapsedMs: Date.now() - t0, stopReason: r.stopReason || null, rubros: ids.length, error: r.error || undefined }) + '\n');
   if (r.error) return { resultados: [], error: r.error, usage: r.usage, costUsd, model: modelo };
   const byId = new Map((r.parsed.rubros || []).map((x) => [x.id, x]));
   const resultados = ids.map((i, n) => { const x = byId.get(n + 1); return { idx: i, label: rs[i].label, lado: rs[i].lado, categoria: x?.categoria ?? null, confianza: x?.confianza ?? null, motivo: x?.motivo ?? (x ? '' : 'sin respuesta para este id') }; });
@@ -550,6 +563,7 @@ async function listos(opt) {
       else rubros.push({ ...base, pendiente: true, jev: j?.choice, jevConf: j?.confidence });
     }
     const r = await categorizarConClaude({ club: rj.club, year: rj.year, rubros, modelo: opt.modelo, esfuerzo: opt.esfuerzo, contextoClub: !opt.sinClub, lines, retriever, apiKey, dryRun: opt.dry });
+    if (r.pendiente) { console.log(`  ${e.md}: pendiente de la Batch API (ola siguiente)`); continue; }
     if (opt.dry) { console.log(`  ${e.md}: ${rubros.length} rubros (${rubros.filter((x) => x.escalon === 0).length} por precedente, ${rubros.filter((x) => x.escalon === 1).length} por Jev, ${rubros.filter((x) => x.pendiente).length} a Claude; ~${Math.round(r.promptChars / 4 || 0)} tokens)`); continue; }
     cost += r.costUsd || 0;
     const byIdx = new Map((r.resultados || []).map((x) => [x.idx, x]));

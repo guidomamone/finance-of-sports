@@ -577,6 +577,15 @@ Mitigaciones:
 
 - Commit local, un commit por año cargado. El push lo hace Guido.
 
+### El lote con la Batch API (`tools/lote-batch.mjs`)
+
+Mismo lote y mismo modelo de cada tarea, a mitad de precio (Batch API de Anthropic). Corre `lote.mjs` tal cual con `FOS_CLAUDE_BATCH=1`
+(`tools/claude-batch.mjs`): cada llamada a Claude sin respuesta se anota en una cola y su documento se corta en esa etapa; al terminar la
+pasada se manda la cola, se espera (casi siempre menos de una hora) y el lote corre otra vez, hasta una pasada sin pedidos. Olas típicas:
+perímetro A2 · localizar · localizar-2 · extraer · primer año · categorizar. Lo usan `claude-llamada.mjs` y `categorizar-claude.mjs`; la
+transcripción (`claude-api-transcribe.mjs`) y el tope largo de extraer (streaming) siguen directos. No acepta `--reintentar`. Cortado,
+se vuelve a correr el mismo comando y recoge el envío que esperaba. Más lento: para lotes grandes; uno chico o urgente va con `lote.mjs`.
+
 ### Camino de error (reintento)
 
 El camino limpio no cambia: si todo suma y nada falta, el documento sigue. Las reglas extra viven acá (regla de Guido: "para cuando haya
