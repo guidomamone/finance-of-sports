@@ -43,6 +43,7 @@ const istraHrFiscalYearMeta = {
     currency:'EUR', fxRef:'EUR@2025-12-31',
     sourceId:'istra-hr-financijsko-izvjesce-2025',
     reportType:'official_balance_sheet',
+    grossDebt:2.521332, cash:0.114452,
     gestionId:null,
     profitOnPlayerSales:1.707844,
     assetSales:0.438955,

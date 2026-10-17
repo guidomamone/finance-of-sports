@@ -130,6 +130,10 @@ cabecera) — SOLO para que el PAT cierre, el label real se fuerza vía extraRow
 Financijski prihodi(0.000028) - Financijski rashodi(0.087833) - Neto tečajne razlike(0).
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Bankovni i ostali zajmovi kratkoročni 6.544 + zajmovi con partes relacionadas corrientes 14.879 (nota 7) + zajam CIRCLE OF LIFE d.o.o. (accionista 84,98%) largo plazo 562.409 (nota 14) + Obveze prema faktoring društvima 1.937.500 (nota 12) = 2.521.332. Balance (pág. 10 del PDF, ilegible en el .md). Dudas: (a) faktoring 1.937.500 incluido por estar en el balance como obligación (no baja de la cuenta por cobrar => con recurso), la nota no dice si es con o sin recurso; (b) no se sumaron intereses a pagar a partes relacionadas 279.649 ni las 'obveze povezane s transferima igrača' (645.394 + 47.500, deudas por traspasos). Sin faktoring: 583.832; con intereses relacionados: 2.800.981.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Novac i novčani ekvivalenti 114.452 EUR (Bilanca 31.12.2025; también 'Novac ... na kraju izvještajnog razdoblja' 114.452 en el flujo de efectivo). Las págs. 10-14 del .md están rotadas/ilegibles (mojibake); leído del PDF renderizado (balance = pág. 10, flujo = pág. 14). EUR completos.
+```
+
 ## Gestiones
 
 _investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_

@@ -217,7 +217,7 @@ HR (8)
   Dinamo Zagreb  1 ejercicio (2024), balance, EUR
   Gorica         1 ejercicio (2025), balance, EUR
   Hajduk Split   1 ejercicio (2024), balance, EUR
-  Istra 1961     1 ejercicio (2025), balance, EUR, sin deuda/caja
+  Istra 1961     1 ejercicio (2025), balance, EUR
   Osijek         1 ejercicio (2025), balance, EUR
   Rijeka         1 ejercicio (2024), balance, EUR
   Slaven Belupo  1 ejercicio (2025), balance, EUR
