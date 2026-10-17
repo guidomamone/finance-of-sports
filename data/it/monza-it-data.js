@@ -292,7 +292,7 @@ const monzaitFiscalYearMeta = {
       {label:'c) imposte anticipate (differite)', value:0},
       {label:'d) proventi da consolidato fiscale', value:6.943979},
     ],
-    grossDebt:13.5, cash:0.363115,
+    grossDebt:0, cash:0.363115,
     officialTotalRevenue:85.696721, officialTotalExpenses:136.357903, officialPAT:-47.971892,
   },
 };

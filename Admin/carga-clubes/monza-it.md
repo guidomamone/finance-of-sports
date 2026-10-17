@@ -156,6 +156,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): soci 0 + banche 0 + altri finanziatori (factoring Factorit) 13.500.000 = 13.500.000. La nota (línea 1526) dice que son anticipos de factoring pro-soluto de créditos de traspasos; el criterio incluye factoring, se cuenta. Duda menor: si pro-soluto sería baja de crédito y no deuda financiera.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): depositi bancari e postali 358.421 + denaro e valori in cassa 4.694 = 363.115. TOTALE IV 363.115 (31/12/2024).
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17: los 13.500.000 de 'debiti verso altri finanziatori' son anticipos de factoring pro-soluto de créditos de traspasos (nota L1526); sin recurso no es deuda del club (Guido). Sin bancos, socios ni obligaciones: deuda 0
+```
+
 ### Liga
 
 ```text
