@@ -243,6 +243,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e Depósitos Bancários" pág. 16
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos n/c 23,795,000 + Financiamentos obtidos c 0. Balance de la SAD; suprimentos de la accionista mayoritaria (nota 15).
+```
+
 ### Liga
 
 ```text
@@ -333,6 +337,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 10
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos n/c 11,145,000 + Financiamentos obtidos c 0. Balance de la SAD; son empréstimos/suprimentos de la accionista (nota 15 y 30: 11.145.000).
+```
+
 ### Liga
 
 ```text
@@ -417,6 +425,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 10
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos n/c 0 + Financiamentos obtidos c 1,058,637.33. Balance de la SAD; nota 15: empréstimo bancário 1.058.637,33. "Acionistas" 340.430,48 en outras contas a pagar no es préstamo, no se suma.
 ```
 
 ### Liga

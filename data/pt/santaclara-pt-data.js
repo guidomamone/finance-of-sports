@@ -349,7 +349,7 @@ const santaclaraptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.775581},
       {label:'Imposto sobre o rendimento do período', value:-0.045},
     ],
-    grossDebt:null, cash:0.348376,
+    grossDebt:1.058637, cash:0.348376,
     officialTotalRevenue:10.373838, officialTotalExpenses:8.870168, officialPAT:0.612188,
   },
   2023: {
@@ -364,7 +364,7 @@ const santaclaraptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.321725},
       {label:'Imposto sobre o rendimento do período', value:-0.0032},
     ],
-    grossDebt:null, cash:2.502352,
+    grossDebt:11.145, cash:2.502352,
     officialTotalRevenue:13.70457, officialTotalExpenses:14.557093, officialPAT:-1.276988,
   },
   2020: {
@@ -409,7 +409,7 @@ const santaclaraptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.148303},
       {label:'Imposto sobre o rendimento do período', value:1.848329},
     ],
-    grossDebt:null, cash:2.779011,
+    grossDebt:23.795, cash:2.779011,
     officialTotalRevenue:4.777955, officialTotalExpenses:16.93564, officialPAT:-10.63916,
   },
 };
