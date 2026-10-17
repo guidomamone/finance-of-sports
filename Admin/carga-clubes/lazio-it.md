@@ -94,6 +94,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado
+```
+
 ### Liga
 
 ```text
@@ -139,6 +143,10 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado
 ```
 
 ### Liga
@@ -188,6 +196,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado
+```
+
 ### Liga
 
 ```text
@@ -235,6 +247,10 @@ tools/cargar.mjs (2026-10-07)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado
+```
+
 ## 2022
 
 ### Ingresos
@@ -273,6 +289,10 @@ tools/cargar.mjs (2026-10-07)
 
 ```text
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado
 ```
 
 ### Liga
@@ -346,6 +366,10 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado
 ```
 
 ### Liga
@@ -422,6 +446,10 @@ tools/cargar.mjs (2026-10-07)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros)
+```
+
 ### Liga
 
 ```text
@@ -496,6 +524,10 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): consolidado: altri finanziatori non correnti 19.520.676 + finanziari correnti 3 + altri finanziatori 39.995.661 (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros)
 ```
 
 ### Liga
@@ -584,6 +616,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros)
+```
+
 ### Liga
 
 ```text
@@ -670,6 +706,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros)
+```
+
 ### Liga
 
 ```text
@@ -716,6 +756,10 @@ tools/cargar.mjs (2026-10-09)
 ```text
 2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (1.866.421). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): el financiero es un subtotal que la lectura 5 no toma; impreso (1.866.421)
 tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado
 ```
 
 ### Liga
@@ -796,6 +840,10 @@ tools/cargar.mjs (2026-10-07)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros)
+```
+
 ### Liga
 
 ```text
@@ -844,6 +892,10 @@ tools/cargar.mjs (2026-10-08)
 2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (2.060.898). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): fila de impuestos que falta (columnas corridas)
 2014: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 300.414. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): fila de impuestos que falta (columnas corridas)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado
 ```
 
 ### Liga
@@ -935,6 +987,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): consolidado: finanziari non correnti 7.754.380 + correnti 57 + altri finanziatori 6.528.747 + correnti verso parti correlate 650.000 (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros)
+```
+
 ### Liga
 
 ```text
@@ -1011,6 +1067,10 @@ tools/cargar.mjs (2026-10-08)
 2012: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. Guido 2026-10-08 (documento viejo, a mano): las filas del estado se armaron desde el .md L3549-L3651 (la extracción no trajo las sub-filas) y sin las notas en miles; el total se contaba además de sus filas (to-do 167)
 2012: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. Guido 2026-10-08 (documento viejo, a mano): las filas del estado se armaron desde el .md L3549-L3651 (la extracción no trajo las sub-filas) y sin las notas en miles; el total se contaba además de sus filas (to-do 167). Cierra: 95.509.291 − 96.230.839 − 2.741.427 + 7.684.529 = 4.221.554
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros)
 ```
 
 ### Liga
@@ -1091,6 +1151,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros)
+```
+
 ### Liga
 
 ```text
@@ -1169,6 +1233,10 @@ tools/cargar.mjs (2026-10-07)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): consolidado: debiti finanziari correnti 51 + altri finanziatori 5.661.417; Jev mezclaba el separado y la tabla de deuda neta (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros)
+```
+
 ### Liga
 
 ```text
@@ -1245,6 +1313,10 @@ tools/cargar.mjs (2026-10-07)
 
 ```text
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros)
 ```
 
 ### Liga
@@ -1327,6 +1399,10 @@ tools/cargar.mjs (2026-10-08)
 2008: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (12.443.793). el subtotal de impuestos no se sumaba; b) 13.687.035 + c) (26.130.829)
 2008: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 0. Guido 2026-10-08 (documento viejo, a mano): el total se contaba además de sus filas (to-do 167); con el TOTALE RICAVI ya sacado y las notas en miles fuera del .filas.json cierra: 102.482.030 − 68.609.526 − 4.962.375 − 15.148.258 = 13.761.871 vs 13.761.874
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 2 (compuerta: documento siguiente): "Debiti finanziari non correnti" pág. 92 + "Debiti finanziari correnti" pág. 92 + "*Debiti verso altri finanziatori*" pág. 92; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Disponibilità liquide e mezzi equivalenti" del balance CONSOLIDADO (PARTE II); el script leía el separado (en miles: el ajuste se lee con la escala del documento, miles, y este balance imprime euros)
 ```
 
 ### Liga
@@ -1487,6 +1563,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: documento anterior): "4) Debiti verso banche" pág. 24; cash escalón 1b (compuerta: documento anterior): "Totale disponibilità liquide" pág. 23
+```
+
 ### Liga
 
 ```text
@@ -1552,6 +1632,10 @@ tools/cargar.mjs (2026-10-08)
 ```text
 2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 5.462. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): subtotal 17-bis sin hojas que la extracción no cuenta; el impreso cierra con él
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): soci per finanziamento 38.479.303 + banche 8.231.670 + altri finanziatori 1.056.443; el script tomaba solo banche; cash escalón 1b (compuerta: documento siguiente): "Totale disponibilità liquide" pág. 25
 ```
 
 ### Liga
@@ -1621,6 +1705,10 @@ tools/cargar.mjs (2026-10-09)
 
 ```text
 tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 1b (compuerta: documento siguiente): "Totale disponibilità liquide" pág. 38
 ```
 
 ### Liga
@@ -1758,6 +1846,10 @@ tools/cargar.mjs (2026-10-08)
 2000: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): cierre = 2000-06-30. Claude 2026-10-08 (Guido: liras de Lazio): el estado dice 30/06/2000 (Lire) y el 30/06/1999 de comparativo; es el ejercicio 1999-00, que cierra el 30/6/2000
 2000: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): perimetro = individual. Claude 2026-10-08 (Guido: liras de Lazio): el documento solo trae el bilancio d'esercizio de la S.S. Lazio S.p.A. (la revisión es del bilancio d'esercizio; no hay consolidado en el .md): individual, aunque el club se carga consolidado desde 2006
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): "Totale disponibilità liquide" del balance en liras (individual); el script leía la tabla de conversión a euros
 ```
 
 ### Liga
