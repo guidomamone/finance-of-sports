@@ -823,6 +823,10 @@ tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (n
 tools/caja-deuda.mjs (2026-10-02): cash escalón 0 (compuerta: documento siguiente): "Efectivo y equivalentes al efectivo" pág. 6
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Sin filas financieras: corrientes 1.773.171 (comerciales 1.444.307, relacionadas 75.925, provisiones 69.700, impuestos 183.239); no corriente 194.146 = documentos por pagar L/P (pases). Los 194.146 M$ no corrientes son documentos por pagar por pases (Nota 14), excluidos; no hay préstamos. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ## 2015
 
 ### Ingresos
@@ -873,6 +877,10 @@ tools/cargar.mjs (2026-10-02)
 
 ```text
 tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Sin filas financieras: cuentas por pagar comerciales 2.790.817 + relacionadas 28.901 + provisiones 208.297 + impuestos 105.929 (corriente 3.133.944); no corriente 'Otras cuentas por pagar' 177.754 = Documentos por pagar L/P (pases). Los documentos por pagar L/P son deudas por pases (Nota 14), excluidas; no hay préstamos bancarios. (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Efectivo y equivalentes al efectivo 202.578 M$. M$ (miles de pesos). Nota: el comparativo 2015 en el .md de 2016 trae 1.822.249 (reclasificado), pero el balance 2015 original dice 202.578. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ## 2014
@@ -1033,6 +1041,10 @@ tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (n
 tools/caja-deuda.mjs (2026-10-02): cash escalón 0 (compuerta: año anterior): "Efectivo y Equivalentes al Efectivo" pág. 4
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Balance sin ninguna fila financiera: total pasivos 1.446.679 M$ = comerciales 1.237.776 + relacionadas 28.444 + provisiones 129.588 + no financieros 50.871; no corrientes 0. Pasivos no corrientes '-' en 2012; sin préstamos bancarios. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ## 2011
 
 ### Ingresos
@@ -1083,6 +1095,10 @@ tools/cargar.mjs (2026-10-02)
 ```text
 tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-02): cash escalón 0 (compuerta: año anterior): "Efectivo y Equivalentes al Efectivo" pág. 4
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Sin préstamos: 'Pasivos financieros no corrientes' 34.267 M$ es en realidad Nota 14 (cuentas por pagar por pases, no devengan intereses) -> excluido. Total pasivos 925.996 M$ = corrientes comerciales/relacionadas/provisiones + 34.267 de pases; el rótulo del balance dice 'financieros' pero la Nota 14 muestra que son deudas de pases sin interés. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ## 2010

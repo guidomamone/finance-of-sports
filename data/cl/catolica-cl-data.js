@@ -692,7 +692,7 @@ const catolicaFiscalYearMeta = {
       {label:'Diferencias de cambio', value:145.071},
       {label:'Gasto por impuestos a las ganancias', value:195.273},
     ],
-    grossDebt:null, cash:216.698,
+    grossDebt:0, cash:216.698,
     officialTotalRevenue:9808.239, officialTotalExpenses:10508.326, officialPAT:-343.642,
   },
   2012: {
@@ -708,7 +708,7 @@ const catolicaFiscalYearMeta = {
       {label:'Diferencias de cambio', value:-91.486},
       {label:'Gasto por impuestos a las ganancias', value:459.734},
     ],
-    grossDebt:null, cash:45.926,
+    grossDebt:0, cash:45.926,
     officialTotalRevenue:7481.235, officialTotalExpenses:8617.013, officialPAT:-742.014,
   },
   2013: {
@@ -756,7 +756,7 @@ const catolicaFiscalYearMeta = {
       {label:'Diferencias de cambio', value:41.897},
       {label:'Ingreso (Gasto) por impuestos a las ganancias', value:622.014},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:202.578,
     officialTotalRevenue:10269.908, officialTotalExpenses:11417.802, officialPAT:-481.925,
   },
   2016: {
@@ -772,7 +772,7 @@ const catolicaFiscalYearMeta = {
       {label:'Diferencias de cambio', value:19.859},
       {label:'Ingreso (Gasto) por impuestos a las ganancias', value:-1.605},
     ],
-    grossDebt:null, cash:3256.284,
+    grossDebt:0, cash:3256.284,
     officialTotalRevenue:11519.419, officialTotalExpenses:11365.241, officialPAT:188.568,
   },
   2017: {
