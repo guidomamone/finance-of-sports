@@ -598,7 +598,13 @@ function propuestaVocabulario(filas, cual, club, extraDeuda = []) {
     if (cual !== 'deuda') return null; // una familia con dos importes: no hay UNA propuesta
     const pares = repetidas.map(([fam]) => [fam, parCorrienteYNoCorriente(filas, fam)]);
     if (pares.some(([, p]) => !p)) return null;
-    const unicas = m.filter((f) => !repetidas.some(([fam]) => fam === f.familia));
+    let unicas = m.filter((f) => !repetidas.some(([fam]) => fam === f.familia));
+    // (to-do 260 b, aprobado por Guido el 2026-10-17) LA TABLA DEL PAR: si los pares están todos en UNA tabla, las demás familias cuentan solo
+    // si están en esa misma tabla (las de una tabla resumen que la regla de abajo mezclaba quedan afuera). Casos (ensayo, gratis): Braga
+    // 2016 "Financiamentos obtidos" 101.544 + 3.104.023 (pág. 44, L1105 y L1111); Famalicão 2021, Gil Vicente 2023-2024, Leixões 2023-2024,
+    // Académico de Viseu 2022, Benfica 2008.
+    const tablasPar = new Set(pares.flatMap(([, p]) => p).map((f) => f.tabla ?? 'texto'));
+    if (tablasPar.size === 1) unicas = unicas.filter((f) => tablasPar.has(f.tabla ?? 'texto'));
     const elegidas = [...unicas, ...pares.flatMap(([, p]) => p)];
     // (deuda, mejora 2) TODAS EN LA MISMA TABLA: el par y las otras familias tienen que estar en una sola tabla del balance. Benfica 2023
     // sumaba el par "Empréstimos obtidos" del balance (pág. 109) con "Empréstimos bancários" y "Empréstimos obrigacionistas" de la tabla
