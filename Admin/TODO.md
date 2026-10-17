@@ -25,7 +25,7 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 1. **Caja y deuda**: faltan las dos en 249 de 919 ejercicios con balance (Rusia 78 y el resto repartido).
-   - Lo que queda del to-do 260: mejoras de script vistas en los clubes revertidos (h, i, j, g); Benfica y Sporting años viejos esperan el par de Jev / IA (por ahora no).
+   - Lo que queda del to-do 260: la deuda italiana completa (i) y Ferroviária.
    - Después: Rusia (caja y deuda podrían salir sin IA de los códigos del balance del fisco).
 
 2. **Transcripciones por subagentes** (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia): limpiar lo que no es del club, los duplicados y los arreglos chicos; validarlas (unos US$ 0,10 cada 50) y cargarlas.
@@ -201,7 +201,9 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 250. HOOKS DE CLAUDE CODE (mejoras de proyecto, pedido de Guido 2026-10-16). Hoy no hay ninguno. Candidatos: audit.js antes de cada commit; bloquear la edición de .claude/skills/ sin el
    ok de Guido; avisar si cambió data/ y no subió ASSET_V. Lo que una máquina puede chequear sale del texto de las reglas.
 251. WORKTREES PARA SESIONES EN PARALELO (mejoras de proyecto, pedido de Guido 2026-10-16). Cada sesión en su copia y su rama, y después se mergea, en vez de "no edites que hay otra
-   sesión abierta".
+   sesión abierta". Lo que lo hacía fallar: todas las sesiones editan TODO, CHANGELOG y ESTADO y chocan al mergear. Regla (ok de Guido,
+   2026-10-17): solo la sesión principal escribe esos tres; las otras dejan su cierre en `Admin/sesiones/<nombre>.md` y la principal lo
+   pasa al mergear. Falta: dónde van las copias, cómo ven los PDFs (no están en git) y escribirlo en la skill de arranque.
 252. TAREA PROGRAMADA: EJERCICIOS NUEVOS (mejoras de proyecto, pedido de Guido 2026-10-16). Los clubes publican una vez por año (casi todos entre septiembre y diciembre). Una tarea semanal
    revisa reguladores y webs de los clubes cargados y deja los links en Admin/sourcing/README.md (con Claude in Chrome para los portales con
    sesión o formularios difíciles).
@@ -220,24 +222,11 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
    el tipo Slides. Sin código.
 260. CAJA Y DEUDA: MEJORAS DE SCRIPT VISTAS EN PORTUGAL (sin aplicar; corrida del 2026-10-16: 151 de 327 datos, IA ~US$ 6). Cada una es un
    escalón a diseñar con el ok de Guido y a medir con `caja-deuda.mjs --medir`.
-   b) DEUDA: Benfica 2023-2026 y otras 9 deudas de Portugal cargadas (tabla resumen de varios años y tabla del par). Lo que queda, Sporting 2011-2018 y 2023, y unas 70 deudas en todo el sitio, solo pasaría
-      con el par de Jev o de la IA: hoy la compuerta busca las dos filas del par en el documento vecino y encuentra la misma dos veces
-      (Benfica 2023: 143.838 x 2 = 287.676). Emparejarlas en orden destraba esas deudas pero deja pasar errores de propuesta que hoy
-      frena la casualidad: Cuiabá 2025 (la IA da una línea con activo y pasivo lado a lado, y se toma "Clientes"), Porto 2016 (Jev mezcla
-      la tabla resumen en miles con el balance), Vila Nova 2024 ("PASSIVO NÃO CIRCULANTE" + la fila) y Lazio 2022-2025 (hasta 12 filas).
-      Guido (2026-10-17): por ahora, sin esto. Si se retoma: primero la línea con dos filas de la IA, después el emparejamiento.
-   h) PERÍMETRO EN LOS .md "SEPARATO-CONSOLIDATO" (Lazio 2008-2026): la PARTE I es el separado y la PARTE II el consolidado (desde ~L3000),
-      y la caja salía de la PARTE I aunque el club se carga consolidado (2011-12: 8.338.443 en L851 contra 10.159.614 en L3473). Cargado
-      con ajustes. Mirar por qué el perímetro de página no marca la PARTE I como individual.
    i) DEUDA ITALIANA INCOMPLETA: el vocabulario toma "Debiti verso banche" y no suma "altri finanziatori", "obbligazioni" ni "soci per
       finanziamenti" (Milan 2018, Hellas Verona 2020 y 2022, Lazio 2005). Criterio (Guido, 2026-10-17): los préstamos de socios cuentan.
       Cargado con ajustes.
-   j) MILAN 2009-2010: el .md trae el consolidado (miles) y después el individual de la capogruppo (euros), y el escalón 1 tomó el
-      individual (L3498-3499). Cargado con ajustes.
    Pendiente de mirar: Ferroviária 2023-2025, "Partes relacionadas" no corriente (3.844.165) puede ser un préstamo de una parte
    relacionada (con el criterio de socios, contaría); hoy la deuda es solo "Empréstimos".
-   g) CELDA DE NOTA CON COMA: Chaves 2021-22 "| Caixa e depósitos bancários | 13,4 | 157 336,73 |" (L386) y 2022-23 "13.4" (L287) se leen
-      como importe (caja 13 €; el piso la frena, pero la fila buena no se propone). Cargado con ajustes; retomar si aparece en otro club.
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
     e) `perimetro-a2` le pasa a la IA hasta ~42.000 tokens de entrada para contestar ~130 (Olympiacos 2018: US$ 0,17 por llamada); en
