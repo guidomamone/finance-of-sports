@@ -652,7 +652,7 @@ const novorizontinobrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'RENDAS DE JOGOS, PATROCÍNIOS, LOCAÇÕES E OUTRAS RECEITAS OPERACIONAIS', lado:'revenue', importe:8.019563, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:0.115299,
+    grossDebt:19.791449, cash:0.115299,
     officialTotalRevenue:8.146239, officialTotalExpenses:12.780546, officialPAT:-4.774509,
   },
   2016: {
@@ -662,7 +662,7 @@ const novorizontinobrFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:-0.075, tax:0,
-    grossDebt:null, cash:0.007261,
+    grossDebt:15.993335, cash:0.007261,
     officialTotalRevenue:3.242, officialTotalExpenses:9.945, officialPAT:-6.779,
   },
   2015: {
@@ -698,7 +698,7 @@ const novorizontinobrFiscalYearMeta = {
       {label:'111 5.1.04.01.0002 - JUROS E MULTAS', value:-0.00002},
       {label:'Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)', value:0},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:4.56282, cash:0.018189,
     officialTotalRevenue:1.060016, officialTotalExpenses:4.13442, officialPAT:-3.108723,
   },
   2013: {
@@ -712,7 +712,7 @@ const novorizontinobrFiscalYearMeta = {
       {label:'115 3.1.03.01.0001 - RENDAS DE APLIC FINANCEIRAS', value:0.000215},
       {label:'110 5.1.04.01.0001 - DESPESAS E TARIFAS BANCARIAS', value:-0.021857},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:1.346066, cash:1.106882,
     officialTotalRevenue:1.712617, officialTotalExpenses:2.419205, officialPAT:-0.728231,
   },
   2010: {
@@ -722,7 +722,7 @@ const novorizontinobrFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:-0.001691, tax:0,
-    grossDebt:null, cash:null,
+    grossDebt:0.5353, cash:0.000014,
     officialTotalRevenue:0.13035, officialTotalExpenses:0.163946, officialPAT:-0.035287,
   },
 };

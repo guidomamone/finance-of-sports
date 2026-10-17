@@ -606,6 +606,10 @@ tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (n
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e Mútuos 19.748.744,45 (I-9 Sports 19.739.751,45 + Mútuo PF 8.993,00) + Bancos c/ devedoras (Bradesco) 42.705,00. Se excluyó 'Banco c/ Recursos Públicos' 120.599,02 (convenio SELJ, contrapartida del activo restringido 102.623,72). El balance en miles (balanco-patrimonial-2017.md) da 19.749 + 43 consistente.
+```
+
 ### Liga
 
 ```text
@@ -656,6 +660,10 @@ tools/cargar.mjs (2026-10-03)
 2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 1.945. Guido 2026-10-02: la versión detallada en reais del mismo PDF confirma el .md (Gemini leyó otro dígito)
 2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): confirmado = 1.422. Guido 2026-10-02: la versión detallada en reais del mismo PDF confirma el .md (Gemini leyó otro dígito)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e Mútuos 15.965.049,09 (I-9 Sports 15.956.056,09 + Mútuo PF 8.993,00) + Bancos c/ devedoras (Bradesco) 28.285,58. Balance publicado en miles (15.965 + 28); se usó el balancete de la pág. 6 con el valor exacto.
 ```
 
 ### Liga
@@ -894,6 +902,10 @@ tools/cargar.mjs (2026-10-03)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e Mútuos 4.558.935,69 (I-9 Sports 4.549.942,69 + Mútuo PF 8.993,00) + Bancos c/ devedoras (Bradesco) 3.883,87. Fuente en balanco-2014-a.md (balanco-2014-b.md es el DRE).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 18.189,14 (Caixa disponível). El balance del 2014 está en balanco-2014-a.md; balanco-2014-b.md (la tarea) es solo el DRE.
+```
+
 ### Liga
 
 ```text
@@ -1002,6 +1014,10 @@ tools/cargar.mjs (2026-10-03)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e Mútuos 1.346.065,69 = I-9 Sports Ltda 1.337.072,69 + Mútuo Pessoa Física 8.993,00. Recursos Públicos 1.102.609,54 (convenio) excluido.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Disponibilidades 1.106.881,99 = Caixa e equivalentes 4.272,45 + Bancos conta movimento (B. Brasil convênio c/ restrição) 1.102.609,54. Duda: 1.102.609,54 es cuenta de convenio con restricción (contrapartida en pasivo 2.2.02 Recursos Públicos); si solo se cuenta la caja libre, 4.272,45.
+```
+
 ### Liga
 
 ```text
@@ -1046,6 +1062,10 @@ tools/cargar.mjs (2026-10-07)
 2010: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): cero-real = Televisión. Guido 2026-10-02: año de fundación del club (R$ 130 mil de ingresos: convenio municipal y patrocinios); sin plantel profesional, sin TV ni estadio
 2010: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): cero-real = Estadio. Guido 2026-10-02: año de fundación del club (R$ 130 mil de ingresos: convenio municipal y patrocinios); sin plantel profesional, sin TV ni estadio
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e Financiamentos CP (Banco Bradesco c/ Movimento) 2.645,31 + Empréstimos e Financiamentos no circulante (Mútuo I-9 Sports Ltda 523.550,00 + Mútuos Pessoas Físicas 9.105,00) 532.655,00. Las cifras del pasivo están en pág. 2 sueltas, separadas de sus rótulos; el orden de filas cierra con el total del pasivo 500.013,60. Los mútuos están dentro del rubro Empréstimos e Financiamentos.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Disponibilidades / Caixa 31/12/2010 = 13,60. El Bradesco c/ movimento está en el pasivo (descubierto), no en el activo.
 ```
 
 ### Liga
