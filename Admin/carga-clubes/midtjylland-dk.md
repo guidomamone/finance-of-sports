@@ -90,6 +90,14 @@ _antes de Matthew Benham (data/gestiones/dk.js):_
 Benham es el accionista mayoritario de FCM Holding desde julio de 2014 (día 01 aproximado). El chairman operativo (Rasmus Ankersen) es otro cargo y no se carga.
 ```
 
+## 2019
+
+### Meta
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Gæld til realkreditinstitutter: largo plazo 1.033 + corto plazo 187 = 1.220 tDKK; Kreditinstitutter 0. Solo hipoteca (Mortgage loans, nota 13); excluidos leasing (345 LP + 434 CP), anticipos de clientes y Anden gæld (transfers y sueldos). Bancos 0 (2018: 4.280). (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Likvide beholdninger 53.452 tDKK (30/06/2019); coincide con Likvider 30. juni del flujo. FC Midtjylland A/S, sociedad única (no hay koncern en este informe); tDKK. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ## Fuentes
 
 ### midtjylland-dk-aarsrapport-2019

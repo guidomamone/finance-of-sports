@@ -147,7 +147,7 @@ DK (11)
   Brøndby          1 ejercicio (2020), balance, DKK
   FC Fredericia    1 ejercicio (2019), balance, DKK
   FC København     1 ejercicio (2024), balance, DKK
-  FC Midtjylland   1 ejercicio (2018/2019), balance, DKK, sin deuda/caja
+  FC Midtjylland   1 ejercicio (2018/2019), balance, DKK
   FC Nordsjælland  1 ejercicio (2024), balance, DKK
   Randers FC       1 ejercicio (2022/2023), balance, DKK
   Silkeborg IF     1 ejercicio (2024), balance, DKK

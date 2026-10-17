@@ -21,7 +21,7 @@ const midtjyllandDkFiscalYearMeta = {
     sourceId:'midtjylland-dk-aarsrapport-2019',
     reportType:'official_balance_sheet',
     gestionId:'benham',
-    grossDebt:null, cash:null,
+    grossDebt:1.22, cash:53.452,
     profitOnPlayerSales:0, assetSales:0, netInterest:-0.043, tax:-10.649,
     officialTotalRevenue:269.881, officialTotalExpenses:203.420, officialPAT:55.769,
   },
