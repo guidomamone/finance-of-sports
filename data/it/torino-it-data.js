@@ -370,7 +370,7 @@ const torinoitFiscalYearMeta = {
       {label:'Imposte correnti', value:-1.778912},
       {label:'Imposte anticipate e differite', value:4.393172},
     ],
-    grossDebt:null, cash:5.945,
+    grossDebt:0, cash:5.945,
     officialTotalRevenue:93.803, officialTotalExpenses:107.12991, officialPAT:-12.361807,
   },
   2021: {
@@ -403,7 +403,7 @@ const torinoitFiscalYearMeta = {
       {label:'Imposte correnti', value:-2.323564},
       {label:'Imposte anticipate e differite', value:-4.172753},
     ],
-    grossDebt:null, cash:3.67,
+    grossDebt:47.3, cash:3.67,
     officialTotalRevenue:134.541397, officialTotalExpenses:114.780641, officialPAT:10.398302,
   },
   2022: {
@@ -435,7 +435,7 @@ const torinoitFiscalYearMeta = {
       {label:'Imposte correnti', value:1.584259},
       {label:'Imposte anticipate e differite', value:-0.398865},
     ],
-    grossDebt:null, cash:7.558,
+    grossDebt:53.75, cash:7.558,
     officialTotalRevenue:101.144112, officialTotalExpenses:104.219565, officialPAT:-9.562667,
   },
   2020: {
@@ -451,7 +451,7 @@ const torinoitFiscalYearMeta = {
       {label:'Imposte correnti', value:1.209531},
       {label:'Imposte anticipate e differite', value:4.290082},
     ],
-    grossDebt:null, cash:27.824,
+    grossDebt:30, cash:27.824,
     officialTotalRevenue:80.561, officialTotalExpenses:104.687626, officialPAT:-19.069954,
   },
   2025: {
@@ -467,7 +467,7 @@ const torinoitFiscalYearMeta = {
       {label:'Imposte correnti', value:-1.651281},
       {label:'Imposte anticipate e differite', value:3.928265},
     ],
-    grossDebt:null, cash:14.501,
+    grossDebt:57.059587, cash:14.501,
     officialTotalRevenue:122.499337, officialTotalExpenses:134.90393, officialPAT:-13.104781,
   },
   2019: {
@@ -483,7 +483,7 @@ const torinoitFiscalYearMeta = {
       {label:'[sin etiqueta] Imposte correnti', value:-0.925554},
       {label:'[sin etiqueta] Imposte differite e anticipate', value:3.80619},
     ],
-    grossDebt:null, cash:2.092,
+    grossDebt:0, cash:2.092,
     officialTotalRevenue:96.332, officialTotalExpenses:112.975854, officialPAT:-13.971466,
   },
 };

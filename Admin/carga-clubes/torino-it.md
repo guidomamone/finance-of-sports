@@ -123,6 +123,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: documento anterior): "Disponibilità liquide" pág. 4
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti verso soci per finanziamenti entro 12 mesi 4.670.198 + oltre 12 mesi 0; debiti verso banche entro 12 mesi 12.985.886 + oltre 12 mesi 39.403.503. Balance con layout partido: cifras 4.670.198 / 0 / 12.985.886 / 39.403.503 alineadas con las etiquetas de D)3 y D)4; verificado con nota 5.7 y PFN (4.670 + 12.986 + 39.404 en miles). Los 9,8M de cessioni pro solvendo estan dentro de debiti verso banche. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -201,6 +205,10 @@ tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: documento siguiente): "Disponibilità liquide" pág. 4
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti verso soci per finanziamenti entro 12 mesi 0 + oltre 12 mesi 9.000.000; debiti verso banche entro 12 mesi 0 + oltre 12 mesi 38.300.000. Coincide con "passivita finanziarie non correnti 47.300" (miles) de la relazione. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ## 2023
 
 ### Ingresos
@@ -270,6 +278,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: documento siguiente): "Disponibilità liquide" pág. 4
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti verso soci per finanziamenti oltre 12 mesi 10.000.000 + debiti verso banche entro 12 mesi 13.750.000 + oltre 12 mesi 30.000.000. Balance en Euro (no en miles). Prestito de U.T. Communications 10M + bancos 43,75M. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -506,6 +518,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: documento siguiente): "Disponibilità liquide" pág. 5
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 4) Debiti verso banche: entro 12 mesi 0 + oltre 12 mesi 30.000.000 = 30.000.000 (MPS revolving 15M + pool UBI/BPM/ICS/MPS 15M). Balance en Euro con layout partido (etiquetas por un lado, cifras por otro); la cifra 30.000.000 coincide con "passivita finanziarie non correnti" y la nota 5.7. Sin soci ni altri finanziatori. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -585,6 +601,10 @@ tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: documento siguiente): "Disponibilità liquide" pág. 4
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Sin filas financieras en D) Debiti; relazione: "La Societa non detiene debiti di natura finanziaria". Balance con layout partido (etiquetas separadas de cifras) pero el listado de rubros D) no tiene ninguna fila financiera y la relazione lo dice. El finanziamiento MPS de 15M es posterior al cierre. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -660,6 +680,10 @@ tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: documento siguiente): "Disponibilità liquide" pág. 4
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Sin filas de obbligazioni/soci/banche/altri finanziatori; Totale debiti (D) 71.084.402 (fornitori, controllate, tributari, previdenza, altri, enti settore specifico). Relazione: "La Societa non detiene debiti di natura finanziaria". Pasivo completo con total, sin ninguna fila financiera; la relazione lo confirma. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
