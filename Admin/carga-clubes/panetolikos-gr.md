@@ -99,6 +99,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs --personal (2026-10-15): staffCost 1.959575 (compuerta: documento anterior): Jev (confianza 0.75): Panetolikos_FS_2025-06-30.md L1085 "Σύνολο"
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Panetolikos_FS_2025-06-30.md] 'La empresa no tiene endeudamiento bancario'; sin filas financieras (solo Λοιπές μακροπρόθεσμες = regularizaciones de impuestos y seguridad social). Balance individual. 'Υποχρεώσεις προς μετόχους' 15.122,00 (nota 8.3.2) no descritas como préstamo: no sumadas. Duda menor.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Panetolikos_FS_2025-06-30.md] Ταμειακά διαθέσιμα και ισοδύναμα = 222.825,44. Balance individual.
+```
+
 ## 2024
 
 ### Ingresos
@@ -146,6 +150,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/caja-deuda.mjs --personal (2026-10-15): staffCost 1.850317 (compuerta: documento siguiente): Jev (confianza 0.73): Panetolikos_FS_2024-06-30.md L1072 "Σύνολο"
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Panetolikos_FS_2024-06-30.md] 'La empresa no tiene endeudamiento bancario'; sin filas financieras (solo Λοιπές μακροπρόθεσμες = regularizaciones de impuestos y seguridad social). Balance individual. 'Υποχρεώσεις προς μετόχους' 15.832,00 (nota 8.3.2) no descritas como préstamo: no sumadas. Duda menor.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Panetolikos_FS_2024-06-30.md] Ταμειακά διαθέσιμα και ισοδύναμα = 298.815,25. Balance individual.
 ```
 
 ## 2023
@@ -196,6 +204,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/caja-deuda.mjs --personal (2026-10-15): staffCost 1.716652 (compuerta: documento siguiente): Jev (confianza 0.74): Panetolikos_FS_2023-06-30.md L1158 "Σύνολο"
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Panetolikos_FS_2023-06-30.md] 'La empresa no tiene endeudamiento bancario'; sin filas financieras (solo Λοιπές μακροπρόθεσμες = regularizaciones de impuestos y seguridad social). Balance individual. 2022 tenía deuda con accionista 675.223,80 (comparativo reexpresado, capitalizada); en 2023 la fila es 0,00 (nota 9.3.2).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Panetolikos_FS_2023-06-30.md] Ταμειακά διαθέσιμα και ισοδύναμα = 254.909,11. Balance individual.
 ```
 
 ## 2022
@@ -251,6 +263,10 @@ tools/dentro-de-otro.mjs (2026-10-15): posiblemente dentro de otro rubro, por pr
 
 ```text
 tools/caja-deuda.mjs --personal (2026-10-15): staffCost 1.566222 (compuerta: documento siguiente): Jev (confianza 0.9): Panetolikos_FS_2022-06-30.md L1471 "Σύνολο"
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Panetolikos_FS_2022-06-30.md] Ταμειακά διαθέσιμα και ισοδύναμα 30/6/2022 = 222.422,41. Balance individual. Aviso: en este documento (2022) hay 'Λοιπά δάνεια' 675.223,80 (deuda con el accionista principal a capitalizar, ver L1282-1284); no pedido aquí, pero conviene mirar si deuda 2022 está cargada.
 ```
 
 ## 2021
@@ -344,6 +360,10 @@ tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguien
 tools/dentro-de-otro.mjs (2026-10-15): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024, 2025): Estadio, Venta de Jugadores
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Panetolikos_FS_2019-20.md] 'La empresa no tiene endeudamiento bancario'; Δανεισμός 0,00; Σύνολο υποχρεώσεων 2.215.291,31 sin filas financieras. Balance individual completo sin filas financieras: deuda 0.
+```
+
 ### Liga
 
 ```text
@@ -389,6 +409,10 @@ tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento anterio
 tools/dentro-de-otro.mjs (2026-10-15): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024, 2025): Estadio, Venta de Jugadores
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Panetolikos_FS_2017-18.md] 'La empresa no tiene endeudamiento bancario'; Δανεισμός 0,00; Σύνολο υποχρεώσεων 2.090.688,02 sin filas financieras. Balance individual completo sin filas financieras: deuda 0.
+```
+
 ### Liga
 
 ```text
@@ -432,6 +456,10 @@ tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguien
 
 ```text
 tools/dentro-de-otro.mjs (2026-10-15): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2024, 2025): Estadio, Venta de Jugadores
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Panetolikos_FS_2016-17.md] Nota de riesgo: 'La empresa no tiene endeudamiento bancario'; Δανεισμός 0,00; Σύνολο υποχρεώσεων 2.267.511,15 sin filas financieras. Balance individual completo sin filas financieras: deuda 0.
 ```
 
 ### Liga

@@ -126,7 +126,7 @@ const panetolikosgrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:0.712062, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:3.807846, motivo:'Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da 1.959.575,41 € (L1086). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md L501 (pág. 15) "Κόστος πωλήσεων | -6.274.036,89". Nota de personal: L1079-1086, "Σύνολο" 1.959.575,41]'},
     ],
-    grossDebt:null, cash:0.157712,
+    grossDebt:0, cash:0.157712,
     officialTotalRevenue:3.317956, officialTotalExpenses:4.287083, officialPAT:-0.973625,
   },
   2018: {
@@ -146,7 +146,7 @@ const panetolikosgrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:0.377138, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:3.850553, motivo:'Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da 1.959.575,41 € (L1086). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md L501 (pág. 15) "Κόστος πωλήσεων | -6.274.036,89". Nota de personal: L1079-1086, "Σύνολο" 1.959.575,41]'},
     ],
-    grossDebt:null, cash:0.227821,
+    grossDebt:0, cash:0.227821,
     officialTotalRevenue:2.508901, officialTotalExpenses:4.268291, officialPAT:-1.767691,
   },
   2020: {
@@ -166,7 +166,7 @@ const panetolikosgrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:1.111543, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:4.428104, motivo:'Claude 2026-10-14 (subagente Sonnet, seguridad alta): Κόστος πωλήσεων es la línea de costo por función que contiene la operación del fútbol, incluidos los sueldos del plantel y personal (el estado no los separa; to-do 229). Se mantiene como fútbol sin desglosar, sin inventar un desglose. Precedente: AEL Larissa 2016 y 2017, misma línea -> lump_football_operations_expense. La nota de personal da 1.959.575,41 € (L1086). [Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md L501 (pág. 15) "Κόστος πωλήσεων | -6.274.036,89". Nota de personal: L1079-1086, "Σύνολο" 1.959.575,41]'},
     ],
-    grossDebt:null, cash:0.375066,
+    grossDebt:0, cash:0.375066,
     officialTotalRevenue:3.64616, officialTotalExpenses:5.041563, officialPAT:-1.400811,
   },
   2021: {
@@ -206,7 +206,7 @@ const panetolikosgrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:0.224781, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων (sin el costo de personal)', lado:'expense', importe:3.614795, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:0.675224, cash:null, staffCost:1.566222,
+    grossDebt:0.675224, cash:0.222422, staffCost:1.566222,
     officialTotalRevenue:2.982884, officialTotalExpenses:6.039569, officialPAT:-3.077233,
   },
   2023: {
@@ -225,7 +225,7 @@ const panetolikosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κόστος πωλήσεων (sin el costo de personal)', lado:'expense', importe:5.090619, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null, staffCost:1.716652,
+    grossDebt:0, cash:0.254909, staffCost:1.716652,
     officialTotalRevenue:4.751314, officialTotalExpenses:7.621847, officialPAT:-2.875778,
   },
   2024: {
@@ -244,7 +244,7 @@ const panetolikosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κόστος πωλήσεων (sin el costo de personal)', lado:'expense', importe:4.869717, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null, staffCost:1.850317,
+    grossDebt:0, cash:0.298815, staffCost:1.850317,
     officialTotalRevenue:4.854132, officialTotalExpenses:7.537969, officialPAT:-2.700977,
   },
   2025: {
@@ -263,7 +263,7 @@ const panetolikosgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κόστος πωλήσεων (sin el costo de personal)', lado:'expense', importe:4.314462, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null, staffCost:1.959575,
+    grossDebt:0, cash:0.222825, staffCost:1.959575,
     officialTotalRevenue:5.792984, officialTotalExpenses:7.05356, officialPAT:-1.426639,
   },
 };
