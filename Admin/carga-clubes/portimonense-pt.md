@@ -108,6 +108,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e Depósitos bancários" pág. 48
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos no corriente 3.672.344,50 + corriente 879.910,17. Balance individual de la SAD; solo filas Financiamentos obtidos (bancos + suprimentos), cuadra con la nota de financiamientos.
+```
+
 ### Liga
 
 ```text
@@ -185,6 +189,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e Depósitos bancários" pág. 32
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos no corriente 7,654,809.56 + corriente 540,543.24. Balance individual de la SAD; solo filas Financiamentos obtidos (bancos + suprimentos), cuadra con la nota de financiamientos.
 ```
 
 ### Liga
@@ -266,6 +274,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e Depósitos bancários" pág. 32
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos no corriente 4,892,722.02 + corriente 441,653.78. Balance individual de la SAD; solo filas Financiamentos obtidos (bancos + suprimentos), cuadra con la nota de financiamientos.
+```
+
 ### Liga
 
 ```text
@@ -342,6 +354,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e Depósitos bancários" pág. 31
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos no corriente 2,723,246.81 + corriente 2,279,769.06. Balance individual de la SAD; solo filas Financiamentos obtidos (bancos + suprimentos), cuadra con la nota de financiamientos.
 ```
 
 ### Liga
