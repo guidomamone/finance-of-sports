@@ -15,7 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
-## Versión 710 — caja-deuda.mjs: precedente contradicho y piso de caja (2026-10-17)
+## Versión 710 — caja-deuda.mjs: precedente contradicho, piso de caja, tabla resumen, tabla del par y 4 veces más rápido (2026-10-17)
+
+- caja-deuda.mjs: una tabla resumen de varios años que repite el total del balance (de la tercera columna en adelante) es un desglose y sus
+  filas no cuentan (to-do 260 b, idea de Guido). Y con el par corriente + no corriente en una sola tabla, las otras familias cuentan solo si
+  están en esa tabla. Medido: --medir idéntico; ensayo de todos los clubes: 13 deudas más en Portugal, gratis (Benfica 2008 y 2023-2026,
+  Académico de Viseu 2022, Braga 2016, Famalicão 2021, Gil Vicente 2023-2024, Leixões 2023-2024), ninguna cambia ni se pierde.
+- caja-deuda.mjs: dos expresiones que retrocedían (renglón de texto con cifras) pasan a recorridos lineales con la misma respuesta (0
+  distintos en las 3.454 transcripciones). --medir 32 s -> 8,7 s; un club grande (Benfica) 4,2 -> 1,5 s.
 
 - caja-deuda.mjs y audit.js: piso de caja, 7e-5 veces los ingresos del año (una tabla en miles leída en unidades), por el mismo camino que
   el techo y como P1 caja-deuda-desproporcionada (to-do 260 a). Medido: --medir idéntico; en el ensayo de todos los clubes solo Milan 2008

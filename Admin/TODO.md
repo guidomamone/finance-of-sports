@@ -225,10 +225,13 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
    el tipo Slides. Sin código.
 260. CAJA Y DEUDA: MEJORAS DE SCRIPT VISTAS EN PORTUGAL (sin aplicar; corrida del 2026-10-16: 151 de 327 datos, IA ~US$ 6). Cada una es un
    escalón a diseñar con el ok de Guido y a medir con `caja-deuda.mjs --medir`.
-   b) DEUDA: Portugal tiene 40 de 165 años con deuda (contra 118 con caja). Diagnóstico: 71 sin propuesta (familias repetidas en tablas
-      resumen; hechas las mejoras 1 y 2) y 39 sin vecino que confirme. Lo que queda: Benfica 2023-2026 y Sporting (tablas resumen con su
-      propio "Total do passivo", así que la mejora 1 no restringe), y la escala de los documentos de Benfica 2023 en adelante (la
-      propuesta salía en unidades con un balance en miles). Ya no se proponen las filas de basura del precedente (activos tangibles + FSE).
+   b) DEUDA: Benfica 2023-2026 y otras 9 deudas de Portugal ya salen gratis (tabla resumen de varios años y tabla del par; falta
+      `--ejecutar --escribir` en esos clubes). Lo que queda, Sporting 2011-2018 y 2023, y unas 70 deudas en todo el sitio, solo pasaría
+      con el par de Jev o de la IA: hoy la compuerta busca las dos filas del par en el documento vecino y encuentra la misma dos veces
+      (Benfica 2023: 143.838 x 2 = 287.676). Emparejarlas en orden destraba esas deudas pero deja pasar errores de propuesta que hoy
+      frena la casualidad: Cuiabá 2025 (la IA da una línea con activo y pasivo lado a lado, y se toma "Clientes"), Porto 2016 (Jev mezcla
+      la tabla resumen en miles con el balance), Vila Nova 2024 ("PASSIVO NÃO CIRCULANTE" + la fila) y Lazio 2022-2025 (hasta 12 filas).
+      Guido (2026-10-17): por ahora, sin esto. Si se retoma: primero la línea con dos filas de la IA, después el emparejamiento.
    c) CLUBES EN 0: Famalicão y Vitória ya resueltos (lista de notas con punto). Quedan AVS (0 de 6), Boavista (0 de 2), Chaves (0 de 4),
       Mafra (0 de 2), Tondela (0 de 2) y la deuda de Felgueiras (0 de 3). Además, 13 cajas cargadas eran el total del activo corriente
       ("la caja es una parte de la nota" con un total del balance): corregidas.

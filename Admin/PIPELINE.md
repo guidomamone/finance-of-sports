@@ -745,6 +745,8 @@ Escribir: `--club <id> --ejecutar --escribir` (el valor en `data/`, sin comentar
             los otros años cargados del club: si en todos los que las tienen dan otra cosa, son una casualidad y se prueba el precedente
             siguiente; sin otro año donde probarlas, como antes (to-do 260 a y b; Porto 2019 caja = pensiones + resultado del ejercicio,
             Benfica 2022 deuda = activos tangibles + FSE)
+ TABLA RESUMEN (to-do 260 b) una tabla anterior que repite el total del activo / pasivo del balance de la tercera columna en adelante (una
+            serie de varios años) es un desglose del informe de gestión: sus filas no cuentan (Benfica 2022-23, pág. 37 contra pág. 109)
  ESCALÓN 1  diccionario (vocabulario.mjs; en portugués también "Caixa e depósitos bancários", el rubro del SNC) + términos del club o
             del documento (ajuste `deuda-incluye`); jerarquía de balancete: padre e
             hija no se suman; cuenta D no es deuda. Además propone: deuda corriente + no corriente de la misma etiqueta (exactamente
