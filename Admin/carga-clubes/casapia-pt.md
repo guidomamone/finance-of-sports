@@ -95,6 +95,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 11
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Sin fila financiera; saldo Casa Pia Atlético Clube 24 323 en Outros passivos correntes (nota 16). Balance completo (Total do passivo 10 268 888); el saldo de 24.323 con el Clube es un adelanto para material deportivo ya regularizado, no un préstamo.
+```
+
 ### Liga
 
 ```text
@@ -168,6 +172,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 7
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Sin fila financiera; saldo Casa Pia Atlético Clube 98 356 en Outros passivos correntes (nota 16). Balance completo (Total do passivo 6 066 752). El saldo de 98 356 con el Clube, según la nota 16, es parte del Mecanismo de Solidaridad UEFA a transferir a la formación del Clube (no un préstamo), aunque la nota 4/related parties lo llame 'suprimentos' (línea 644). Si se lo contara como préstamo sería 98.356.
+```
+
 ### Liga
 
 ```text
@@ -238,6 +246,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento anterior): "Caixa e equivalentes" pág. 14
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Casa Pia Atlético Clube (Ateneu Casapiano) 851 121 dentro de Outros passivos correntes (nota 13.2.5), suprimentos. Suprimentos del Clube; se capitalizaron en el aumento de capital de 850.000 en 2024.
+```
+
 ### Liga
 
 ```text
@@ -305,6 +317,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e equivalentes" pág. 14
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Casa Pia Atlético Clube (Ateneu Casapiano) 817 335 dentro de Outras dívidas a pagar (nota 13.2.5), 'suprimentos efetuados'. No hay fila financiera en el balance; el único préstamo es el suprimento del Clube (accionista 100%) dentro de Outras dívidas a pagar (total 1 138 949; el resto es personal, acréscimos, Pantel y devedores diversos).
 ```
 
 ### Liga

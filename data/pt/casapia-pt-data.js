@@ -171,7 +171,7 @@ const casapiaptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.108134},
       {label:'Imposto sobre o rendimento', value:-0.048394},
     ],
-    grossDebt:null, cash:0.004539,
+    grossDebt:0, cash:0.004539,
     officialTotalRevenue:30.718537, officialTotalExpenses:30.585597, officialPAT:0.019256,
   },
   2022: {
@@ -185,7 +185,7 @@ const casapiaptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.005095},
       {label:'Imposto sobre o rendimento', value:-0.035287},
     ],
-    grossDebt:null, cash:0.031032,
+    grossDebt:0.817335, cash:0.031032,
     officialTotalRevenue:4.885241, officialTotalExpenses:4.84011, officialPAT:-0.050939,
   },
   2023: {
@@ -199,7 +199,7 @@ const casapiaptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.008259},
       {label:'Imposto sobre o rendimento', value:-0.038404},
     ],
-    grossDebt:null, cash:0.033012,
+    grossDebt:0.851121, cash:0.033012,
     officialTotalRevenue:14.081952, officialTotalExpenses:13.955841, officialPAT:-0.01765,
   },
   2024: {
@@ -213,7 +213,7 @@ const casapiaptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.039376},
       {label:'Imposto sobre o rendimento', value:-0.095603},
     ],
-    grossDebt:null, cash:0.072272,
+    grossDebt:0, cash:0.072272,
     officialTotalRevenue:20.118681, officialTotalExpenses:19.893415, officialPAT:-0.017425,
   },
 };
