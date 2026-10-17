@@ -24,8 +24,8 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-1. **Caja y deuda**: faltan las dos en 249 de 919 ejercicios con balance (Italia 99, Rusia 78, Brasil, Grecia, Portugal, Alemania 15, Japón 10).
-   - Lo que queda del to-do 260: mejoras de script vistas en los 7 clubes revertidos (h, i, j); Benfica y Sporting años viejos esperan el par de Jev / IA (por ahora no).
+1. **Caja y deuda**: faltan las dos en 249 de 919 ejercicios con balance (Rusia 78 y el resto repartido).
+   - Lo que queda del to-do 260: mejoras de script vistas en los clubes revertidos (h, i, j, g); Benfica y Sporting años viejos esperan el par de Jev / IA (por ahora no).
    - Después: Rusia (caja y deuda podrían salir sin IA de los códigos del balance del fisco).
 
 2. **Transcripciones por subagentes** (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia): limpiar lo que no es del club, los duplicados y los arreglos chicos; validarlas (unos US$ 0,10 cada 50) y cargarlas.
