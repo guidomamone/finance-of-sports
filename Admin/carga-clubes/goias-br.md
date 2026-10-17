@@ -116,6 +116,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e equivalentes de caixa" pág. 6
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e financiamentos CP 8.348.571 + LP 17.721.030 (= total nota 12: 26.069.601; Daycoval 810.076 + BRB 25.259.525). Contas a pagar (nota 15) con acordos extrajudiciais y Earn In no se cuenta.
+```
+
 ## 2024
 
 ### Ingresos
@@ -194,6 +198,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 6
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e financiamentos CP 143.600 + LP 165.156 (= total nota 11: 308.756, Daycoval). 'Outras Obrigações' 7.813.028 no es deuda financiera.
 ```
 
 ### Liga
@@ -282,6 +290,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 6
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e financiamentos CP 145.683 + LP 269.830 (= total nota 11: 415.513; Daycoval 389.329 + Bradesco 26.184). 'Outras Obrigações' 7.624.000 (nota 23) es una provisión LFU, no deuda financiera.
+```
+
 ### Liga
 
 ```text
@@ -364,6 +376,10 @@ tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (n
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 6
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e financiamentos CP 408.029 + LP 0 (= total nota 12: 408.029; mútuo Marisa Mendes 200.000 + Bradesco 208.029). Ya no hay Títulos a pagar (mútuo JF Esportes) en el balance.
+```
+
 ### Liga
 
 ```text
@@ -436,6 +452,10 @@ tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (n
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 8
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e financiamentos CP 5.692.006 + LP 208.029 (= total nota 13: 5.900.035; Daycoval cessão de créditos 5.530.172 + Bradesco 369.862). La cesión de créditos del Daycoval figura en la nota de empréstimos con tasa de interés, se cuenta como deuda.
 ```
 
 ### Liga
@@ -511,6 +531,10 @@ tools/cargar.mjs (2026-10-02)
 tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e financiamentos CP 34.206,31 (nota 11, contas garantidas Bradesco) + LP 0 + Títulos a pagar (mútuo JF Esportes) 3.145.309,00. Duda: mútuo JF Esportes 3.145.309 (contestado) incluido; sin él: 34.206,31.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 2017 = 1.435.464,04 (2016 reexpresado: 1.552.975,96). Excluye Aplicações financeiras (29.325.754,38 en el ACP).
+```
+
 ### Liga
 
 ```text
@@ -571,6 +595,10 @@ tools/cargar.mjs (2026-10-03)
 2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2016. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2016-2015' es el ejercicio 2016 con 2015 de comparativo, no 2015.
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ajuste manual (2026-10-05, auditoría 2026-10-04 hallazgo 1): ingresos y gastos de fútbol abiertos con las notas 17 y 18 (.md L892-941), que suman exacto lo impreso.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e financiamentos CP 638.660,21 + LP 0 (= total nota 10: 638.660,21) + Títulos a pagar (mútuo JF Esportes) 3.145.309,00. Duda: mútuo JF Esportes 3.145.309 (contestado) incluido; sin él: 638.660,21.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 2016 = 1.553.500,67 (2015: 19.481,28). Coincide con el fim del fluxo de caixa. La comparativa de 2016 en el .md de 2017 aparece reexpresada (1.552.975,96).
 ```
 
 ### Liga
@@ -646,6 +674,10 @@ tools/cargar.mjs (2026-10-03)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e financiamentos CP 13.199.538,08 + LP 634.918,35 (= total nota 9: 13.834.456,43) + Títulos a pagar (mútuo JF Esportes) 3.145.309,00. Duda: mútuo JF Esportes 3.145.309 (contestado) incluido; sin él: 13.834.456,43.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 2015 = 19.481,28 (2014: 2.407.630,89). Coincide con el fim del fluxo de caixa.
+```
+
 ### Liga
 
 ```text
@@ -718,6 +750,10 @@ tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (n
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e equivalentes de caixa (nota 4)" pág. 4
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e financiamentos CP 9.911.057,47 + LP 7.075.228,90 (= total nota 9: 16.986.286,37) + Títulos a pagar (mútuo JF Esportes) 3.145.309,00. Duda: mútuo JF Esportes 3.145.309 (contestado) incluido; sin él: 16.986.286,37.
+```
+
 ### Liga
 
 ```text
@@ -780,6 +816,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 4
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e financiamentos CP 7.095.034,55 + LP 5.424.560,15 + Títulos a pagar (mútuo JF Esportes) 3.145.309,00. Duda: mútuo JF Esportes 3.145.309 (contestado) incluido; sin él: 12.519.594,70.
+```
+
 ### Liga
 
 ```text
@@ -838,6 +878,10 @@ tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (n
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e financiamentos CP 3.442.688,86 + LP 7.950,00 (= total nota 10: 3.450.639,16) + Títulos a pagar (mútuo JF Esportes) 3.145.309,00. Duda: mútuo JF Esportes 3.145.309 (contestado) incluido; sin él: 3.450.639,16.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 2012 = 9.051.718,30 (2011: 105.387,23). Coincide con el fim del fluxo de caixa.
+```
+
 ### Liga
 
 ```text
@@ -894,6 +938,10 @@ tools/cargar.mjs (2026-10-03)
 ```text
 2011: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2011. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2011-2010' es el ejercicio 2011 con 2010 de comparativo, no 2010.
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e financiamentos CP 9.734.798 + LP 27.030 (= total nota 9: 9.762.828) + Títulos a pagar (mútuo JF Esportes) 3.145.309. Duda: mútuo JF Esportes 3.145.309 (contestado) incluido; sin él: 9.762.828.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 2011 = 105.387 (2010: 105.864). Coincide con el fim del fluxo de caixa.
 ```
 
 ### Liga
@@ -957,6 +1005,10 @@ tools/cargar.mjs (2026-10-03)
 ```text
 2010: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-02): anio = 2010. Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2010-2009' es el ejercicio 2010 con 2009 de comparativo, no 2009.
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e financiamentos CP 13.933.489 + LP 27.030 + Títulos a pagar (mútuo JF Esportes, nota 14) 3.145.309. Duda: el mútuo JF Esportes (3.145.309, contestado por el club) está en 'Títulos a pagar'; sin él la deuda es 13.960.519. CP incluye Clube dos Treze y CBF dentro de la nota de empréstimos.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 2010 = 105.864 (2009 reexpresado: 1.312.070). El balance viene partido en regiones (rótulos y cifras separados) pero el orden de filas coincide con el fluxo de caixa (fim = 105.864).
 ```
 
 ### Liga
@@ -1029,6 +1081,10 @@ tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (n
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e equivalente de caixa" pág. 1 + "Títulos e valores mobiliários (nota 3)" pág. 1 + "Contas a receber de parceiros e patrocionadores (n" pág. 1 + "Contas a receber do Clube dos (nota 13)" pág. 1 + "Contas a receber (nota 5)" pág. 1 + "Direitos de uso de imagem (nota 6)" pág. 1 + "Tributos a recuperar" pág. 1 + "Outros valores a receber" pág. 1 — CORREGIDO 2026-10-17: cash vaciado; esas filas suman el total del activo corriente, no la caja (to-do 260 c)
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e financiamentos CP 6.851.058 + LP 1.623.953 (= total nota 8: 8.475.011) + Contas a pagar - mútuo JF Esportes Ltda 3.145.309 (instrumentos de mútuo, contestados por el club); Empréstimos de terceiros 0. Duda: el mútuo JF Esportes (3.145.309) es un contrato de préstamo con una empresa, contestado judicialmente; si no se cuenta, la deuda es 8.475.011.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalente de caixa 31/12/2009 = 311.851 (2008: 10.013). Excluye Títulos e valores mobiliários (1.000.219).
+```
+
 ### Liga
 
 ```text
@@ -1096,6 +1152,10 @@ tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (n
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos e financiamentos (nota 8)" pág. 1 + "Empréstimos de terceiros" pág. 1; cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 1 + "Títulos e valores mobiliários (nota 3)" pág. 1 + "Contas a receber de parceiros e patrocinadores (no" pág. 1 + "Contas a receber do Clube dos (nota 13)" pág. 1 + "Contas a receber (nota 6)" pág. 1 + "Direitos de uso de imagem (nota 11)" pág. 1 + "Outros valores a receber" pág. 1 — CORREGIDO 2026-10-17: cash vaciado; esas filas suman el total del activo corriente, no la caja (to-do 260 c)
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 2008 = 10.013 (2007: 76.007); coincide con el fin de ejercicio del fluxo de caixa. La columna 'Notas' trae un guion antes de las cifras; 10.013 es 2008.
 ```
 
 ### Liga
