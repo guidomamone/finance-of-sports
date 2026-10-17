@@ -266,7 +266,7 @@ const pacosdeferreiraptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.010295},
       {label:'Imposto sobre o rendimento do período', value:-0.003552},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:1.40705, cash:0.01827,
     officialTotalRevenue:5.984148, officialTotalExpenses:7.430845, officialPAT:-1.460544,
   },
   2023: {

@@ -420,6 +420,10 @@ Generados/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.ca
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos corriente 1 407 049,60 (nota 11: bancos 404 049,60 + participantes de capital 470 000 + otros financiadores 533 000). Balance muestra todo en corriente; la nota 11 lo pone en columna no corriente (total igual). Aparte, Outras dívidas a pagar incluye "Accionistas" 2 785 258,28 (nota 12/23, sin aclarar que sean préstamos) que NO se sumó.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e depósitos bancários 18 269,55. Balance de la SAD (SDUQ) al 30/06/2020.
+```
+
 ### Liga
 
 ```text
