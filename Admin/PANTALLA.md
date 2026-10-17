@@ -787,10 +787,11 @@ Texto movido sin cambios.
   clubes · año". Eso sale de `window.RANKINGS_INDICE` (en `data/rankings/_regiones.js`, generado), así que la grilla no baja los
   rankings. Las ligas sin datos van al final, plegadas y sin poder entrar. UNA LIGA: "← Todas las ligas", el nombre con su bandera,
   país · división · cobertura, y los ejercicios como pastillas con cuántos clubes trae cada uno. Abajo, dos columnas (una en el
-  teléfono): a la izquierda el ranking con barras horizontales en el color de cada club, el ejercicio de cada uno como link a su
-  página de fuentes (presupuesto o copia no oficial en ámbar) y el total de los cargados; a la derecha "De dónde sale la plata" (una
-  barra apilada por club, colores por peso en el ranking y el bolsón sin desglosar en beige; un tramo negativo o una fila "dentro de
-  otro rubro" se nombran debajo) y el simulador. Las salvedades, en un párrafo chico al pie. TRES REGLAS QUE LA ORDENAN: el
+  teléfono): a la izquierda el ranking con barras horizontales en el color de cada club y el total de los cargados (sin el documento
+  de cada club en la fila: demasiado texto junto; está en su ficha, en Fuentes y, si es un presupuesto o una copia, en las
+  salvedades); a la derecha "De dónde sale la plata" (una barra apilada por club, colores por peso en el ranking y el bolsón sin
+  desglosar en beige, "Sin desglosar" en la leyenda; un tramo negativo o una fila "dentro de otro rubro" se nombran debajo) y el
+  simulador. Las salvedades, en un párrafo chico al pie. TRES REGLAS QUE LA ORDENAN: el
   ejercicio está siempre escrito y es cambiable (un ranking es (liga, EJERCICIO), nunca (liga)); el default es el ejercicio con MÁS
   clubes y no el más reciente, porque los balances tardan en publicarse; y el "N de M" solo se escribe si `leagueSizeAt()` lo sabe.
   Las banderas (no los códigos de país) son las de `COUNTRIES[...].flag`, también en las tarjetas de Inicio.

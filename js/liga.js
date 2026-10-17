@@ -640,8 +640,7 @@ window.LIGA_VIEW = (function(){
     Promise.resolve(api.pickClub(clubId)).then(function(){ api.goFinanzas(); });
   }
 
-  // EL RANKING: una fila por club con la barra en su color, el ejercicio y el documento debajo del nombre, y el total de los cargados.
-  // Un club simulado va en ámbar y con su marca: nadie lo puede leer como un club que juega ahí.
+  // EL RANKING: una fila por club con la barra en su color, y el total de los cargados. Un club simulado va en ámbar.
   function rankingCard(r, simulados){
     var card = el('article', 'vid-card lg-rank');
     var head = el('div', 'lg-card-head');
@@ -663,15 +662,9 @@ window.LIGA_VIEW = (function(){
       b.appendChild(el('span', 'vid-nom-t', nombreDe(f.id)));
       b.addEventListener('click', function(){ irAlClub(f.id); });
       nom.appendChild(b);
-      var doc = el('span', 'lg-doc');
-      if(f.simulado) doc.appendChild(el('span', 'liga-sim-badge', t('liga.sim.tag', '(simulado)') + ' '));
-      // El tipo de documento no es decoración: un presupuesto o una copia no oficial entre balances cerrados no se leen igual. El link
-      // va a la página estática fuentes/<club>.html, no a sources{}, que solo tiene los clubes con data file cargado.
-      var lnk = el('a', 'lg-doc-link' + (f.reportType === 'official_budget' ? ' presu' : '') + (f.reportType === 'unofficial_mirror' ? ' nooficial' : ''),
-        etiquetaEjercicio(f, f.year || st.year));
-      lnk.href = 'fuentes/' + f.id + '.html';
-      doc.appendChild(lnk);
-      nom.appendChild(doc);
+      // Sin el documento debajo de cada club (está en su ficha y en Fuentes): en la fila queda demasiado texto junto. Un club simulado
+      // sí lleva su marca: nadie lo puede leer como un club que juega ahí.
+      if(f.simulado) nom.appendChild(el('span', 'lg-doc liga-sim-badge', t('liga.sim.tag', '(simulado)')));
       li.appendChild(nom);
       var barra = el('span', 'vid-barra');
       var lleno = el('span'); lleno.style.background = color;
@@ -714,7 +707,8 @@ window.LIGA_VIEW = (function(){
       var it = el('span', 'lg-ley-it');
       var sw = el('span', 'lg-ley-sw'); sw.style.background = colorDe[c];
       it.appendChild(sw);
-      it.appendChild(document.createTextNode(tLabel(c)));
+      // El bolsón, con su nombre corto: el largo ("Fútbol profesional (sin desglosar por la fuente)") parte la leyenda en dos líneas.
+      it.appendChild(document.createTextNode(c === LUMP_LABEL ? t('liga.lumpShort', 'Sin desglosar') : tLabel(c)));
       ley.appendChild(it);
     });
     card.appendChild(ley);

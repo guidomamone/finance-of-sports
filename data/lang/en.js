@@ -227,6 +227,7 @@ window.I18N.strings.en = {
   "liga.sim.tag": "(simulated)",
   "liga.totalLoaded": "loaded",
   "liga.year": "Financial year",
+  "liga.lumpShort": "Not broken down",
   "liga.coverY": "clubs of the season have accounts for",
   "liga.coverNY": "with accounts for",
   "liga.rankSub": "In dollars · tap a club to see its page",
