@@ -635,7 +635,7 @@ SOCIEDADE ABERTA
 | | 1 335 | ( 1 258) | 77 | 101 | Outros Credores | 3 990 | 4 593 |
 | **Investimentos Financeiros** | | | | | | 36 990 | 37 593 |
 | Empresas Associadas | 8 500 | 0 | 8 500 | 0 | **Dívidas a Terceiros - curto prazo** | | |
-| Outros Investimentos | 0 | 0 | 0 | 0 | Fornecedores, Conta Corrente | 2 064 | 1 766 |
+| Outros Investimentos | 0 | 0 | 0 | 0 | Dívidas a Instituições de Crédito | 2 364 | 1 766 |
 | | 8 500 | 0 | 8 500 | 0 | Fornecedores, Conta Corrente | 5 086 | 7 036 |
 | **Circulante** | | | | | Fornecedores, Títulos a Pagar | 48 | 583 |
 | Dívidas de Terceiros - médio/longo prazo: | | | | | Adiantamentos Clientes | 0 | 0 |

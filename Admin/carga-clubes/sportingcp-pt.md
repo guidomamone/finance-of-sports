@@ -1480,6 +1480,10 @@ Generados/Portugal/Sporting CP/relatorio-contas-2007-08.categorias.json (escaló
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 f): deuda bancaria del balance POC, mediano/largo + corto plazo de 'Dívidas a Instituições de Crédito': Empréstimos 15 000 (L1036, no corriente) + 28 767 (L1042, corriente), miles de euros
+```
+
 ### Liga
 
 ```text
@@ -1545,6 +1549,10 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: año anterio
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: año anterior): "Cash Flow: (RLE) + (Amortizações + Provisões)" pág. 19
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 f): deuda bancaria del balance POC, mediano/largo + corto plazo de 'Dívidas a Instituições de Crédito': 33 000 (L634) + 2 364 (L638; la transcripción decía 'Fornecedores, Conta Corrente 2 064', corregida contra el PDF pág. 18), miles de euros
 ```
 
 ### Liga
@@ -1619,6 +1627,10 @@ tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 2 (compuerta: documento si
 tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: año anterior): "Cash Flow: (RLE) + (Amortizações + Provis)" pág. 18
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 f): deuda bancaria del balance POC, mediano/largo + corto plazo de 'Dívidas a Instituições de Crédito': 33 000 (L388) + 1 766 (L392, fila de dos lados con Clientes c/Corrente), miles de euros
+```
+
 ### Liga
 
 ```text
@@ -1685,6 +1697,10 @@ tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterio
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: documento siguiente): "Dívidas a Instituições de Crédito" pág. 17 — DEUDA VACIADA 2026-10-17: toma una sola fila del par (mediano/largo + corto plazo del POC), o una escala mil veces chica, o un crédito ("Clientes c/Corrente") (to-do 260 f)
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 f): deuda bancaria del balance POC, mediano/largo + corto plazo de 'Dívidas a Instituições de Crédito': 15 000 (L361) + 10 728 (L365), miles de euros
 ```
 
 ### Liga
@@ -1758,6 +1774,10 @@ tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguien
 tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: año anterior): "Dívidas a Instituições de Crédito" pág. 14 — DEUDA VACIADA 2026-10-17: toma una sola fila del par (mediano/largo + corto plazo del POC), o una escala mil veces chica, o un crédito ("Clientes c/Corrente") (to-do 260 f)
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 f): deuda bancaria del balance POC, mediano/largo + corto plazo de 'Dívidas a Instituições de Crédito': 5 000 (L537) + 25 708 (L541), miles de euros
+```
+
 ### Liga
 
 ```text
@@ -1823,6 +1843,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1b (compuerta: documento siguiente): "Dívidas a Instituições de Crédito" pág. 20; cash escalón 1 (compuerta: documento anterior): "Cash Flow: (RLE) + (Amortizações + Provis" pág. 21 — DEUDA VACIADA 2026-10-17: toma una sola fila del par (mediano/largo + corto plazo del POC), o una escala mil veces chica, o un crédito ("Clientes c/Corrente") (to-do 260 f)
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 f): deuda bancaria del balance POC, mediano/largo + corto plazo de 'Dívidas a Instituições de Crédito': 17 396 (L391) + 15 101 (L395), miles de euros
 ```
 
 ### Liga
@@ -1895,6 +1919,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1b (compuerta: documento siguiente): "Dívidas a Instituições de Crédito" pág. 21; cash escalón 1 (compuerta: documento siguiente): "Cash Flow: (RLE) + (Amortizações + Provis" pág. 22 — DEUDA VACIADA 2026-10-17: toma una sola fila del par (mediano/largo + corto plazo del POC), o una escala mil veces chica, o un crédito ("Clientes c/Corrente") (to-do 260 f)
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 f): deuda bancaria del balance POC, mediano/largo + corto plazo de 'Dívidas a Instituições de Crédito': 24 486 (L433) + 11 885 (L437), miles de euros
+```
+
 ### Liga
 
 ```text
@@ -1948,6 +1976,10 @@ tools/dentro-de-otro.mjs (2026-10-16): posiblemente dentro de otro rubro, por pr
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Cash Flow: (RLE) + (Amortizações + Provisões)" pág. 2
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 f): deuda bancaria del balance POC, mediano/largo + corto plazo de 'Dívidas a Instituições de Crédito': 1 650 000 (L71) + 3 465 922 (L75), miles de escudos
 ```
 
 ### Liga
@@ -2012,6 +2044,10 @@ tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguien
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: documento siguiente): "Dívidas a Instituições de Crédito" pág. 1 — DEUDA VACIADA 2026-10-17: toma una sola fila del par (mediano/largo + corto plazo del POC), o una escala mil veces chica, o un crédito ("Clientes c/Corrente") (to-do 260 f)
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 f): deuda bancaria del balance POC, mediano/largo + corto plazo de 'Dívidas a Instituições de Crédito': 900 000 (L27) + 2 305 706 (L31), miles de escudos
 ```
 
 ### Liga
