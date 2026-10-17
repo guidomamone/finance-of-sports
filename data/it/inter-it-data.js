@@ -549,7 +549,7 @@ const interitFiscalYearMeta = {
       {label:'b) deferred tax liabilities', value:0.413833},
       {label:'c) deferred tax assets', value:-0.120553},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:139.183539,
     officialTotalRevenue:439.642181, officialTotalExpenses:526.149354, officialPAT:-140.05618,
   },
   2025: {
@@ -702,7 +702,7 @@ const interitFiscalYearMeta = {
       {label:'19) Impairment a) of investments (D, costo)', value:-1.972728},
       {label:'a) current taxes (deducido: antes de impuestos − resultado final, por ajuste manual)', value:-6.106963},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:97.883943,
     officialTotalRevenue:364.712582, officialTotalExpenses:566.143043, officialPAT:-245.579264,
   },
 };

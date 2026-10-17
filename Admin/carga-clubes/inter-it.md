@@ -406,6 +406,10 @@ tools/cargar.mjs (2026-10-07)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: documento anterior): "1) Bank and postal deposit accounts" pág. 15 + "3) Cash on hand" pág. 15
+```
+
 ### Liga
 
 ```text
@@ -508,6 +512,10 @@ tools/cargar.mjs (2026-10-09)
 2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): resultado-final = (245.579.264). Claude 2026-10-08 (Guido: to-do 179, ok): el resultado impreso quedó afuera de las filas; cierra exacto con los totales impresos (364.712.220 - 568.782.409 - 33.431.112 - 1.972.728 - 6.105.235)
 2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (1.972.728). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): la sección D (19 impairment of investments, 1.972.728 impreso en negativo) no entró en el financiero: el impuesto deducido daba 8,08 M contra 6,105 M impresos (current 4.009.004 + deferred -3.805 + 2.100.036)
 tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: documento siguiente): "1) Bank and postal deposit accounts" pág. 14 + "3) Cash on hand" pág. 14
 ```
 
 ### Liga
