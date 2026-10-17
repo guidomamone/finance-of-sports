@@ -1628,24 +1628,32 @@ Page 47 of 52
 
 --- pág. 48 ---
 
-DPO bedrijfsrevisoren
+Ulrich De Poortere (Signature)
+Digitaal ondertekend door Ulrich De Poortere (Signature)
+Datum: 2025.10.10 16:30:09 +02'00'
 
-DPO Bedrijfsrevisoren BV
+Page 48 of 52
 
-Gentstraat 337 9041 Oostakker
+![Logo DPO bedrijfsrevisoren – DPO Bedrijfsrevisoren BV]
 
-Tel. : +32 9 255 50 96 Fax : +32 9 255 50 87
+Gentstraat 337
+9041 Oostakker
 
-E-mail : revisor@dpo.be www.dpo.be
+Tel.: +32 9 255 50 96
+Fax: +32 9 255 50 87
+
+E-mail: revisor@dpo.be
+www.dpo.be
 
 RPR Antwerpen Afdeling Antwerpen nr. 0698.992.391
 
-### Vermeldingen betreffende de onafhankelijkheid
+***Vermeldingen betreffende de onafhankelijkheid***
 
 - Ons bedrijfsrevisorenkantoor heeft geen opdrachten verricht die onverenigbaar zijn met de wettelijke controle van de jaarrekening en ons bedrijfsrevisorenkantoor is in de loop van ons mandaat onafhankelijk gebleven tegenover de vennootschap.
+
 - De honoraria voor de bijkomende opdrachten die verenigbaar zijn met de wettelijke controle van de jaarrekening bedoeld in artikel 3:65 van het Wetboek van Vennootschappen en Verenigingen werden correct vermeld en uitgesplitst in de toelichting bij de jaarrekening.
 
-### Andere vermeldingen
+***Andere vermeldingen***
 
 - Onverminderd formele aspecten van ondergeschikt belang, werd de boekhouding gevoerd in overeenstemming met de in België van toepassing zijnde wettelijke en bestuursrechtelijke voorschriften.
 - De resultaatverwerking, die aan de algemene vergadering wordt voorgesteld, stemt overeen met de wettelijke en statutaire bepalingen.
@@ -1654,17 +1662,17 @@ RPR Antwerpen Afdeling Antwerpen nr. 0698.992.391
 Opgemaakt te Oostakker (Gent)
 Op 9 oktober 2025
 
+[handtekening en stempel: "DPO Bedrijfsrevisoren - Oostakker (Gent) - 09/10/2025"]
+
 DPO Bedrijfsrevisoren BV
 Commissaris
 Vertegenwoordigd door
 Ulrich De Poortere
 Bedrijfsrevisor - Bestuurder
 
-DPO Bedrijfsrevisoren - Oostakker (Gent) - 09/10/2025
-
 Ulrich De Poortere (Signature)
-
-Digitaal ondertekend door Ulrich De Poortere (Signature) Datum: 2025.10.10 16:30:09 +02'00'
+Digitaal ondertekend door Ulrich De Poortere (Signature)
+Datum: 2025.10.10 16:30:09 +02'00'
 
 RPR Gent 0475.558.633 · BTW BE 0475.558.633 · KBC OOSTAKKER 446-6623901-08 · BIC KREDBEBB · IBAN BE63 4466 6239 0108
 
