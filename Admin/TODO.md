@@ -36,7 +36,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
-* 268: mi cuenta: ping para que Supabase no se pause
+* 268: dashboard de usuarios y visitas: falta el token de Cloudflare y confirmar el cron
 * 262 y 263: caja y deuda, lo que queda (compuerta del total impreso; ajuste por PDF y año)
 
 **B. Bases baratas que después cuestan caro cambiar**
@@ -245,10 +245,12 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
    cada temporada) contra lo cargado: por liga y año, los clubes sin ejercicio. Se ve en la pestaña Ligas y genera la lista de pendientes
    de sourcing (`Admin/sourcing/`), sin duplicar lo ya buscado y descartado.
 267. INICIO: REDISEÑO (pedido de Guido, 2026-10-17). Mockup con Design antes de codear; junto con 264 y 265 (mismo lenguaje visual).
-268. MI CUENTA: QUE SUPABASE NO SE VUELVA A PAUSAR (pedido de Guido, 2026-10-17). El plan gratis pausa el proyecto tras 7 días sin uso
-   (pasó el 2026-10-05; hoy está prendido y, si se cae, Mi Cuenta ya lo avisa). Guido es el único usuario, pero prefiere mantenerla viva.
-   Falta: un ping automático cada 3 días que haga una consulta real (función `ping()` en la base, la pega Guido en el SQL Editor);
-   dónde corre, a decidir con Guido (cron del Worker de Cloudflare o tarea programada).
+268. MI CUENTA Y EL DASHBOARD DE USUARIOS Y VISITAS (pedido de Guido, 2026-10-17). Hecho: aviso de "no disponible", ping cada 3 días
+   (Worker fos-supabase-ping) y puente stats() (tools/supabase/stats.mjs). Falta: (a) confirmar la primera corrida del cron el 2026-10-19
+   12 UTC (Cloudflare → fos-supabase-ping → Logs, o node tools/supabase/stats.mjs); (b) las visitas en el dashboard
+   https://claude.ai/artifact/7kPta8U7BxyiGRKAyayHhA: el token de Cloudflare guardado en Admin/api-keys/cloudflare.env no es un token
+   (el comando con pbpaste guardó el propio comando); con uno bueno, correr tools/cloudflare-visitas.mjs --json, subir por_dia y por_pais
+   y sumar la sección; (c) actualizar el dashboard cuando haga falta (correr los dos scripts y subir los archivos).
 269. EL BOTÓN "ESTÁS VIENDO" NO TIENE SENTIDO EN VARIAS PANTALLAS (pedido de Guido, 2026-10-17). Decidir pantalla por pantalla dónde va
    y dónde no.
 270. MODELO QUE ESTIMA AÑOS Y CLUBES QUE NO TENEMOS (pedido de Guido, 2026-10-17). Estadístico: con lo que sí está cargado, estimar

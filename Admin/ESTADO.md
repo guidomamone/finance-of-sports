@@ -174,6 +174,10 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   `selector_step_completed` / `selector_club_chosen`, instrumentados a mano en `js/selector.js`, nunca Autocapture). `track_pageview:false` a
   propósito, para no duplicar lo que ya da Cloudflare. El Worker y Mixpanel están GATEADOS por hostname en `js/selector.js`: solo mandan datos
   si `location.hostname === 'financeofsports.com'`, así que probar el sitio en preview local no ensucia esas cuentas.
+- MI CUENTA: Supabase en plan gratis (se pausa tras 7 días sin uso). Lo mantiene despierto el Worker `fos-supabase-ping` (cron cada 3 días,
+  llama a ping()); si igual se cae, la pestaña avisa "no disponible". Cómo se usa: `node tools/supabase/stats.mjs` (llama a stats(), solo
+  cantidades). Las visitas: `node tools/cloudflare-visitas.mjs` (necesita `Admin/api-keys/cloudflare.env`). Los dos alimentan el dashboard
+  de Claude https://claude.ai/artifact/7kPta8U7BxyiGRKAyayHhA, que se actualiza a mano (no hay conector para Supabase ni Cloudflare).
 - Un solo motor genérico calcula Finanzas para todos los clubes (ver `Admin/ARQUITECTURA.md`); ningún club tiene motor propio. Los clubes
   nuevos nacen con el país en el `clubId` (ej. `corinthians-br`, `millonarios-co`); `tools/audit.js` lo chequea (`clubid-sin-pais`).
 - DATOS: cuántos clubes, de qué países y qué ejercicios tiene cada uno: `Admin/ESTADO-clubes.md` (generado). Solo cuentan los clubes

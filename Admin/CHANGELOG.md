@@ -21,6 +21,12 @@ que dice `ESTADO.md` era verdad ese día.
   Si al abrir la pestaña el login no contesta, la librería no cargó o leer las búsquedas da error de red o 5xx, se esconde el botón y se
   muestra "Mi Cuenta no está disponible por ahora" (js/cuenta.js, textos en index.html y data/lang/en.js). El chequeo corre solo al abrir
   la pestaña. Probado en el preview con Supabase prendido y con la caída simulada (540 y error de red). ASSET_V 1231.
+- Ping de Supabase: función ping() (tools/supabase/ping.sql, la pegó Guido; medido 404 -> "ok") y Worker de Cloudflare fos-supabase-ping
+  con cron `0 12 */3 * *` (tools/supabase/ping-worker.mjs), aparte del Worker del buscador.
+- Puente stats() (tools/supabase/stats.sql): usuarios, búsquedas, favoritas, últimas fechas y altas y búsquedas por día, solo cantidades;
+  `node tools/supabase/stats.mjs [--json archivo]`. Medido: 1 usuario, 5 búsquedas. tools/cloudflare-visitas.mjs lee las visitas de Web
+  Analytics (sin probar: falta un token válido).
+- Dashboard "Usuarios y visitas de financeofsports" (artifact de Claude, tipo Dashboard), por ahora con Mi Cuenta.
 
 ## Versión 710 — caja-deuda.mjs: precedente contradicho, piso de caja, tabla resumen, tabla del par y 4 veces más rápido (2026-10-17)
 
