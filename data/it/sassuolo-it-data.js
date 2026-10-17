@@ -370,7 +370,7 @@ const sassuoloitFiscalYearMeta = {
       {label:'b) Imposte anticipate e differite', value:0.171314},
       {label:'d) Provento da Consolidato Fiscale', value:11.868018},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.447461,
     officialTotalRevenue:70.699, officialTotalExpenses:118.55949, officialPAT:-38.772733,
   },
   2021: {

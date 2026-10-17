@@ -130,6 +130,10 @@ tools/cargar.mjs (2026-10-07)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 2 (compuerta: documento anterior): "Depositi bancari e postali" pág. 18 + "Denaro e valori in cassa" pág. 18
+```
+
 ## 2024
 
 ### Ingresos
