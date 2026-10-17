@@ -26,6 +26,9 @@ que dice `ESTADO.md` era verdad ese día.
 - Caja y deuda de los clubes sin año vecino (to-do 260 c): 19 ajustes `caja` / `deuda` leídos a mano en el balance, con página y línea (AVS
   2021, 2023 y 2024; Boavista 2024; Chaves 2022 y 2023; Mafra 2024; Tondela 2021; deuda de Felgueiras 2022-2024). AVS 2021 y Boavista 2024
   con deuda financiera 0 (sin financiamientos; Boavista: "Não aplicável", nota 29.2.5). Sin caja ni deuda: 299 -> 291 de 919.
+- fetch-club-league-reference.mjs: escalón "tabla limpia" (si la tabla elegida tiene nombres que no están en ninguna otra, como técnicos o
+  estadios, se pasa a una sin sueltos que suma los clubes que faltaban) y --comparar (to-do 165 b2). Medido en las 262 temporadas de la
+  caché: cambia solo Portugal 2025 (entran Casa Pia, Estoril, Nacional y Santa Clara; salen 4 técnicos), 0 errores.
 - lote.mjs: "ya en el sitio" toma el año del ajuste `anio` si el documento lo tiene, no el de una propuesta vieja (to-do 239, el caso de
   Sporting 2001). Medido: ensayo de la prueba completa idéntico (hoy los 24 ajustes `anio` coinciden con su propuesta); con 2000 cargado y
   2001 no, Sporting 2001 ya no se saltea.

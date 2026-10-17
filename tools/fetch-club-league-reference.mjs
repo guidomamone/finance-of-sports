@@ -156,6 +156,8 @@ function guardar(teams, { wikipediaTitle, leagueId, year, pais, lang, seccion })
   console.log('OJO: esto es una caché de roster, no un dato ya cargado a data/club-leagues/. Confirmar el club puntual que hace falta contra esta lista antes de usarlo.');
 }
 
+let COMPARAR = false; // --comparar (ver main)
+
 async function main() {
   const args = process.argv.slice(2);
   const paisFlag = args.indexOf('--pais');
@@ -164,6 +166,8 @@ async function main() {
   const pais = paisFlag >= 0 ? args[paisFlag + 1] : null;
   const section = sectionFlag >= 0 ? [args[sectionFlag + 1]] : DEFAULT_SECTION_NAMES;
   const lang = langFlag >= 0 ? args[langFlag + 1] : 'en';
+  // --comparar: baja la página y dice qué tabla elegiría la regla vieja y cuál la nueva (escalón "tabla limpia"), SIN escribir la caché.
+  COMPARAR = args.includes('--comparar');
   const positional = args.filter((a, i) => !a.startsWith('--') && !['--pais', '--section', '--lang'].includes(args[i - 1]));
   const [wikipediaTitle, leagueId, year] = positional;
 
@@ -181,6 +185,7 @@ async function main() {
   const sec = extractTeamsSection(wikitext, section);
   const tables = sec ? extractAllWikitables(sec.text) : [];
   if (!tables.length) {
+    if (COMPARAR) { console.log(JSON.stringify({ comparar: true, igual: true, sinTablas: true })); return; } // el escalón 1 no elige tabla: nada que comparar
     const st = equiposDeSportsTable(wikitext);
     if (st.length >= 4) {
       guardar(st, { wikipediaTitle, leagueId, year, pais, lang, seccion: 'plantilla sports table (escalón 1)' });
@@ -196,10 +201,36 @@ async function main() {
   // sección trae 14 filas = 14 equipos únicos, sin repetir ninguno -- ese es el
   // roster, no el que tiene más filas en bruto).
   let best = { teams: [], uniqueCount: 0 };
-  for (const t of tables) {
-    const teams = parseWikitableTeams(t);
-    const uniqueCount = new Set(teams).size;
-    if (uniqueCount > best.uniqueCount) best = { teams: [...new Set(teams)], uniqueCount };
+  const parsed = tables.map((t) => [...new Set(parseWikitableTeams(t))]);
+  for (const teams of parsed) {
+    if (teams.length > best.uniqueCount) best = { teams, uniqueCount: teams.length };
+  }
+  // ESCALÓN "tabla limpia" (2026-10-15, ok de Guido). La regla de arriba se equivoca cuando la tabla de cambios de técnico tiene MÁS
+  // nombres únicos que el roster porque, en un club con dos técnicos, la fila siguiente arranca con el técnico (rowspan): "2024–25
+  // Primeira Liga" daba 19 nombres (14 clubes, 4 técnicos y "rowspan=2|") y le ganaba a la tabla de estadios de 18; faltaban Santa Clara,
+  // Casa Pia, Estoril y Nacional. SUELTO = un nombre que no aparece en ninguna OTRA tabla de la sección (los clubes se repiten entre
+  // estadios y personal; un técnico o un estadio no). Se cambia de tabla SOLO si hay otra SIN sueltos que contiene TODOS los nombres
+  // confirmados de la elegida (los que sí aparecen en otra tabla) y además AGREGA alguno que a la elegida le faltaba: o sea, solo cuando
+  // la elegida está perdiendo clubes, y con MENOS nombres que ella (la basura infla la cuenta; con la misma cuenta solo cambiaban variantes de
+  // nombre: "Estoril Praia" por "Estoril", "Chievo Verona" por "Chievo"). Medido sobre toda la caché (2026-10-15): una versión más laxa sacaba clubes reales en Colombia
+  // 2017-2020 y cambiaba Brasil Série B 2022-2025 (sacaba estadios, sin agregar ningún club); con esta solo cambia Portugal 2025. Con
+  // una sola tabla no cambia nada. Grecia (to-do 104) sigue igual.
+  const elegidaVieja = best.teams;
+  if (parsed.length > 1) {
+    const sueltos = (i) => parsed[i].filter((n) => !parsed.some((o, j) => j !== i && o.includes(n))).length;
+    const iBest = parsed.indexOf(best.teams);
+    const sBest = sueltos(iBest);
+    if (sBest > 0) {
+      const confirmados = best.teams.filter((n) => parsed.some((o, j) => j !== iBest && o.includes(n)));
+      const limpias = parsed.map((ts, i) => ({ ts, i })).filter(({ ts, i }) => i !== iBest && ts.length >= 4 && ts.length < best.teams.length && sueltos(i) === 0
+        && confirmados.every((n) => ts.includes(n)) && ts.some((n) => !best.teams.includes(n)));
+      if (limpias.length) { const l = limpias.sort((a, b) => b.ts.length - a.ts.length)[0]; best = { teams: l.ts, uniqueCount: l.ts.length }; }
+    }
+  }
+  if (COMPARAR) {
+    const igual = JSON.stringify([...elegidaVieja].sort()) === JSON.stringify([...best.teams].sort());
+    console.log(JSON.stringify({ comparar: true, igual, vieja: elegidaVieja, nueva: best.teams }));
+    return;
   }
   const teams = best.teams;
   if (!teams.length) {

@@ -38,7 +38,6 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
 * 260: caja y deuda, lo que queda (en curso)
-* 165 b2: medir y commitear el cambio de la liga de cada club (deja el árbol limpio para las sesiones en paralelo)
 
 **B. Bases baratas que después cuestan caro cambiar**
 * 251: worktrees para sesiones en paralelo (ya hay dos sesiones en la misma carpeta)
@@ -136,9 +135,6 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
        Quedan 468 PDFs digitales sin transcribir en los países de este to-do: Colombia 203 (59 son certificaciones y dictámenes), Rep. Checa
        116, Dinamarca 84, Turquía 27, Noruega 18, Croacia 12, Ucrania 6, Suiza 1 y Países Bajos 1 (Ajax 2013-14). La lista de escaneos para
        Mistral, en el archivo de avance.
-    b2) CAMBIO DE SCRIPT SIN COMMITEAR (2026-10-15): `tools/fetch-club-league-reference.mjs` (escalón "tabla limpia" + `--comparar`, ok de Guido: la medición sobre toda la caché con
-       `node Admin/transcripcion-subagentes/medir-ligas.mjs "$PWD" <salida.txt>` tiene que dar que SOLO cambia Portugal 2025; una versión más laxa rompía Colombia 2017-2020, y la siguiente cambiaba 4 temporadas por variantes de nombre (Chequia 2013, Serie A 2013, Portugal 2.ª 2012 y 2014); la de hoy agrega "menos nombres que la elegida" y NO está medida todavía. Si
-       la medición no se pudo terminar, rehacerla antes de commitear; si da otra cosa, revertir con `git checkout` y anotarlo).
     b) SIGUIENTE. Los demás países, uno por vez, con la misma receta que Grecia: armar el lote con solo los documentos que traen estado de resultados
        (`ls Admin/lotes/lote-*.txt Admin/Archive/lotes/lote-*.txt | xargs -n1 basename | sort -V | tail -1` para el número), `antes-de-localizar.mjs`, ensayo, Guido corre `lote.mjs --ejecutar
        --cargar`, y la cola se revisa con un Sonnet que recomienda respuestas con cita. Fichas listas para alta (`alta-club.mjs --todos`,
