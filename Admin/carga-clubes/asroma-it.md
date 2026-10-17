@@ -133,6 +133,10 @@ tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento anterior): "TOTALE (IV) - DISPONIBILITA' LIQUIDE" pág. 20
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): obbligazioni 1.761.667 + 173.117.619; debiti verso soci 0 + 234.800.801; debiti verso banche 1.498.690 + 1.320.801; debiti verso altri finanziatori 57.162 + 91.732. Consolidado en unidades de euro; suma 412.648.472, coincide con 'Totale debiti finanziari' 412.648 migliaia.
+```
+
 ### Liga
 
 ```text
@@ -208,6 +212,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "TOTALE (IV) - DISPONIBILITA' LIQUIDE" pág. 21
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): obbligazioni 1.761.667 + 172.404.630; debiti verso soci 0 + 297.546.160; debiti verso banche 1.482.106 + 2.797.958; debiti verso altri finanziatori 127.005 + 142.878. Consolidado en unidades de euro; suma 476.262.404, coincide con 'Totale debiti finanziari' 476.262 migliaia.
 ```
 
 ### Liga
@@ -294,6 +302,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "TOTALE (IV) - DISPONIBILITA' LIQUIDE" pág. 24
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): obbligazioni 1.761.667 + 171.706.396; debiti verso soci per finanziamenti 0 + 317.621.919; debiti verso banche 1.696.875 + 4.235.382; debiti verso altri finanziatori 126.697 + 259.892. Consolidado en unidades de euro (OIC); suma 497.408.828, coincide con 'Totale debiti finanziari' 497.409 migliaia de la relazione.
+```
+
 ### Liga
 
 ```text
@@ -340,6 +352,10 @@ tools/cargar.mjs (2026-10-07)
 
 ```text
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Finanziamenti a medio lungo termine 342.165 + Finanziamenti a breve termine 13.747 = 355.912 (migliaia). Consolidado; la nota 7.13 confirma 355.912 (bono 257.423, bancos, mutuo CS, finanziamento soci 85.076, tarjetas); excluidos diritti d'uso 16.463 + 6.785. (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Disponibilità liquide e mezzi equivalenti 22.821 (migliaia). Consolidado (el .md separato no se usó). 2021 comparativo: 22.824. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ## 2021
@@ -423,6 +439,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Finanziamenti a medio lungo termine 291.965 + Finanziamenti a breve termine 16.455 = 308.420 (migliaia). Consolidado; excluidos Debiti finanziari per diritti d'uso 19.934 + 6.513. El total 308.420 se confirma en la nota 7.13 de 2022 (columna 2021). (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Disponibilità liquide e mezzi equivalenti 22.824 (migliaia). Consolidado. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -469,6 +489,10 @@ tools/cargar.mjs (2026-10-09)
 
 ```text
 tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Finanziamenti a medio lungo termine 262.269 + Finanziamenti a breve termine 27.601 = 289.870 (migliaia). Consolidado; excluidos 'Debiti finanziari per diritti d'uso' (IFRS 16) 22.293 + 5.345, en filas propias. (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Disponibilità liquide e mezzi equivalenti 7.706 (migliaia). Consolidado. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -518,6 +542,10 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Finanziamenti a medio lungo termine 211.819 + Finanziamenti a breve termine 43.632 = 255.451 (migliaia). Consolidado; en 2019 aún no hay fila de lease IFRS 16. (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Disponibilità liquide e mezzi equivalenti 18.092 (migliaia). Consolidado. Los cuadros de gestión y el rendiconto usan 18.091 (redondeo); tomo el balance. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -629,6 +657,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento anterior): "Disponibilità liquide" pág. 60
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Finanziamenti non correnti 228.631 + Finanziamenti correnti 37.762 = 266.393 (migliaia). Consolidado; los CP incluyen saldos bancarios pasivos (sobregiros). (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -679,6 +711,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Disponibilità liquide" pág. 54
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Finanziamenti non correnti 231.738 + Finanziamenti correnti 29.346 = 261.084 (migliaia). Consolidado; coincide con 'Passività finanziaria' 261.084 del rendiconto. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -733,6 +769,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Disponibilità liquide" pág. 58
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Finanziamenti non correnti 156.692 + Finanziamenti correnti 34.021 = 190.713 (migliaia). Consolidado; coincide con 'Passività finanziaria' 190.712 (redondeo) del rendiconto. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -783,6 +823,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Disponibilità liquide" pág. 64
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Finanziamenti non correnti 158.398 + Finanziamenti correnti 18.252 = 176.650 (migliaia). Consolidado; la PFN confirma 157.821+577 (LP) y 6.650+10.000+1.602 (CP). (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -837,6 +881,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Disponibilità liquide" pág. 61
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Finanziamenti non correnti 61.520 + Finanziamenti correnti 75.414 = 136.934 (migliaia). Consolidado; coincide con la PFN (m/l 61.520, breve 75.414). (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -886,6 +934,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1b (compuerta: documento anterior): "Finanziamenti a lungo termine" pág. 65 + "Finanziamenti a breve termine" pág. 65
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Disponibilità liquide e mezzi equivalenti 8.643 (migliaia). Consolidado. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -1113,6 +1165,10 @@ tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1b (compuerta: documento siguiente): "Finanziamenti a breve termine" pág. 193
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Disponibilità liquide e mezzi equivalenti 1.923 (migliaia). Consolidado. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -1347,6 +1403,10 @@ tools/cargar.mjs (2026-10-09)
 tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti verso banche entro 12 mesi 2.184.589; Debiti verso altri finanziatori 0. Sin deuda a largo plazo; otros financiadores 0 (los 5.472.596 de 2005 se reembolsaron).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Depositi bancari e postali 12.854.239 + Denaro e valori in cassa 49.457 = 12.903.696. Individual (no se redactó consolidado en 2006); en unidades de euro.
+```
+
 ### Liga
 
 ```text
@@ -1493,6 +1553,10 @@ tools/cargar.mjs (2026-10-09)
 2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 401. Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): renglón del estado consolidado (b107-b112) impreso fuera de tabla en la transcripción; sin él el resultado no cierra (faltan 557 + 32 + 401 + 547 = 1.537 contra el 9.992 impreso)
 2005: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): fila = (547). Claude 2026-10-08 (Guido: to-do 179 grupo 1, a mano): renglón del estado consolidado (b107-b112) impreso fuera de tabla en la transcripción; sin él el resultado no cierra (faltan 557 + 32 + 401 + 547 = 1.537 contra el 9.992 impreso)
 tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti verso banche 2.206 (entro) + 66 (oltre) + Debiti verso altri finanziatori 5.473 (entro) + 0 (oltre) = 7.745 (migliaia). Consolidado; coincide con 'indebitamento finanziario 7,8 milioni' de la relazione. Los 5.473 son anticipos de factoring (Capitalia L&F). (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Depositi bancari e postali 2.587 + Denaro e valori in cassa 44 = 2.631 (migliaia). Balance consolidado (el .md trae también el separado); in migliaia di euro. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga

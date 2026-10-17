@@ -780,7 +780,7 @@ const asromaitFiscalYearMeta = {
       {label:'Oneri finanziari', value:-26.614},
       {label:'imposte correnti', value:-0.507},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:355.912, cash:22.821,
     officialTotalRevenue:205.875, officialTotalExpenses:400.888, officialPAT:-219.459,
   },
   2025: {
@@ -798,7 +798,7 @@ const asromaitFiscalYearMeta = {
       {label:'c) imposte differite', value:-0.019536},
       {label:'e) proventi (oneri) da adesione al regime di consolidato fiscale', value:6.401074},
     ],
-    grossDebt:null, cash:24.413083,
+    grossDebt:412.648472, cash:24.413083,
     officialTotalRevenue:270.241005, officialTotalExpenses:301.143321, officialPAT:-53.884213,
   },
   2018: {
@@ -813,7 +813,7 @@ const asromaitFiscalYearMeta = {
       {label:'Risultato di terzi', value:0.225},
       {label:'Imposte dell\'esercizio', value:-7.976},
     ],
-    grossDebt:null, cash:30.898,
+    grossDebt:266.393, cash:30.898,
     officialTotalRevenue:320.509, officialTotalExpenses:313.435, officialPAT:-25.498,
   },
   2019: {
@@ -829,7 +829,7 @@ const asromaitFiscalYearMeta = {
       {label:'Imposte correnti', value:-8.921},
       {label:'Imposte differite', value:-0.043},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:255.451, cash:18.092,
     officialTotalRevenue:381.015, officialTotalExpenses:368.415, officialPAT:-24.456,
   },
   2023: {
@@ -851,7 +851,7 @@ const asromaitFiscalYearMeta = {
       {label:'c) imposte differite', value:-0.700215},
       {label:'e) proventi (oneri) da adesione al regime di consolidato fiscale', value:3.101039},
     ],
-    grossDebt:null, cash:44.005037,
+    grossDebt:497.408828, cash:44.005037,
     officialTotalRevenue:277.056595, officialTotalExpenses:347.942501, officialPAT:-102.747288,
   },
   2024: {
@@ -867,7 +867,7 @@ const asromaitFiscalYearMeta = {
       {label:'17 bis) utile e perdite su cambi', value:-0.001906},
       {label:'20) imposte sul reddito dell\'esercizio', value:-5.778058},
     ],
-    grossDebt:null, cash:39.061084,
+    grossDebt:476.262404, cash:39.061084,
     officialTotalRevenue:301.716464, officialTotalExpenses:365.105736, officialPAT:-81.364367,
   },
   2021: {
@@ -882,7 +882,7 @@ const asromaitFiscalYearMeta = {
       {label:'Oneri finanziari', value:-38.477},
       {label:'imposte correnti', value:-1.176},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:308.42, cash:22.824,
     officialTotalRevenue:226.539, officialTotalExpenses:374.963, officialPAT:-185.573,
   },
   2009: {
@@ -912,7 +912,7 @@ const asromaitFiscalYearMeta = {
       {label:'a) imposte correnti', value:-2.707},
       {label:'b) imposte anticipate e differite', value:-0.493},
     ],
-    grossDebt:97.152, cash:null,
+    grossDebt:97.152, cash:8.643,
     officialTotalRevenue:135.645, officialTotalExpenses:170.662, officialPAT:-39.94,
   },
   2014: {
@@ -927,7 +927,7 @@ const asromaitFiscalYearMeta = {
       {label:'a) imposte correnti', value:-3.136},
       {label:'b) imposte anticipate e differite', value:-0.185},
     ],
-    grossDebt:null, cash:4.858,
+    grossDebt:136.934, cash:4.858,
     officialTotalRevenue:159.166, officialTotalExpenses:187.213, officialPAT:-38.38,
   },
   2015: {
@@ -942,7 +942,7 @@ const asromaitFiscalYearMeta = {
       {label:'a) imposte correnti', value:-4.661},
       {label:'b) imposte anticipate e differite', value:0.815},
     ],
-    grossDebt:null, cash:18.284,
+    grossDebt:176.65, cash:18.284,
     officialTotalRevenue:208.277, officialTotalExpenses:237.695, officialPAT:-41.064,
   },
   2016: {
@@ -957,7 +957,7 @@ const asromaitFiscalYearMeta = {
       {label:'a) imposte correnti', value:-8.233},
       {label:'b) imposte anticipate e differite', value:0.848},
     ],
-    grossDebt:null, cash:8.698,
+    grossDebt:190.713, cash:8.698,
     officialTotalRevenue:283.596, officialTotalExpenses:272.049, officialPAT:-14.135,
   },
   2017: {
@@ -972,7 +972,7 @@ const asromaitFiscalYearMeta = {
       {label:'a) imposte correnti', value:-6.182},
       {label:'b) imposte anticipate e differite', value:0},
     ],
-    grossDebt:null, cash:51.845,
+    grossDebt:261.084, cash:51.845,
     officialTotalRevenue:254.076, officialTotalExpenses:268.862, officialPAT:-42.277,
   },
   2007: {
@@ -1034,7 +1034,7 @@ const asromaitFiscalYearMeta = {
       {label:'imposte correnti', value:-0.396},
       {label:'imposte differite', value:0},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:289.87, cash:7.706,
     officialTotalRevenue:173.811, officialTotalExpenses:345.751, officialPAT:-204.492,
   },
   2010: {
@@ -1049,7 +1049,7 @@ const asromaitFiscalYearMeta = {
       {label:'a) imposte correnti', value:-3.18},
       {label:'b) imposte anticipate e differite', value:0.013},
     ],
-    grossDebt:11.896, cash:null,
+    grossDebt:11.896, cash:1.923,
     officialTotalRevenue:156.036, officialTotalExpenses:176.868, officialPAT:-22.007,
   },
   2012: {
@@ -1082,7 +1082,7 @@ const asromaitFiscalYearMeta = {
       {label:'a) Imposte dell\'esercizio', value:-3.1},
       {label:'b) Imposte differite', value:0.077811},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:2.184589, cash:12.903696,
     officialTotalRevenue:158.436442, officialTotalExpenses:148.541205, officialPAT:0.804285,
   },
   2005: {
@@ -1103,7 +1103,7 @@ const asromaitFiscalYearMeta = {
       {label:'a) Imposte correnti', value:-2.442},
       {label:'b) Imposte differite', value:-0.545},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:7.745, cash:2.631,
     officialTotalRevenue:183.251, officialTotalExpenses:163.303, officialPAT:9.992,
   },
 };
