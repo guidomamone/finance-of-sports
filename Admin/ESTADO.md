@@ -138,13 +138,22 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   `node tools/fetch-fx-reference.mjs --deflactores`) y `data/gestiones/<país>.js` (los presidentes de cada club; un año nuevo
   sin presidente que lo cubra abre un caso `gestion` en la cola al cargarlo).
 
+### Inicio, Ligas y navegación
+
+- Inicio: qué es el sitio, el buscador como acción principal y rankings del mundo y de América por ejercicio más tarjetas de liga, desde
+  `data/rankings/_regiones.js` (lo escribe `tools/generate-rankings.js` en cada carga). Ligas: buscador, regiones y una fila por país; la
+  liga elegida con ranking de barras, composición apilada y simulador. No hay pestaña Fuentes ni botón del club en el header: se busca con
+  "Buscar un club o una liga" (Ctrl/Cmd K) y el club se nombra en el título de Finanzas.
+- El estado va en la URL (`?tab=…&club=…&anios=…&liga=…&anio=…`), se lee al abrir y con "atrás"; la moneda, la inflación, el formato y
+  Comparar todavía no (to-do 271). Cómo está hecho: `Admin/PANTALLA.md`. Mockups: artifact de Design "Pantallas FoS".
+
 ### Comparar con el diseño de Finanzas
 
 - Comparar se lee como Finanzas: los dos cards de lado son el título, con los chips de ejercicio de Finanzas (un club puede elegir
   varios ejercicios, cada lado con "Promedio | Suma"); sin botón, el resultado se arma solo con los dos lados llenos; barra con
   formato fijo y "Valores ajustados por inflación" (serie USD, propia de Comparar); un solo gráfico con A y B en el mismo eje de
   años; tabla con las filas de Finanzas (A, B, B / A, % del total, rubro desplegable); avisos de cada lado en su card y fuentes por
-  ejercicio. Sin USD / ARS en el header en esta pestaña. Cómo está hecho: `Admin/PANTALLA.md`, "Comparar con el diseño de
+  ejercicio. La moneda no está en el header en ninguna pestaña: en Finanzas va en "Más opciones". Cómo está hecho: `Admin/PANTALLA.md`, "Comparar con el diseño de
   Finanzas". Mockup: `Prototyping/Comparar/mockup-23.html`.
 
 ### Techo del modelo (no es una tarea)

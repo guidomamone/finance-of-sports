@@ -1,3 +1,5 @@
+> ARCHIVADO (Versión 712, 2026-10-17): cierre de la sesión pantallas, ya pasado a TODO, CHANGELOG y ESTADO. Rutas y números de ese día.
+
 # Sesión `pantallas` (worktree `fos-pantallas`, rama `pantallas`), 2026-10-17
 
 Cierre para la sesión principal: pasar a `Admin/CHANGELOG.md`, `Admin/TODO.md` y `Admin/ESTADO.md`, y archivar este archivo en `Admin/Archive/`.

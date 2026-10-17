@@ -57,14 +57,11 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 * 195: gestiones (presidentes) sin fuente confirmada (se puede ir haciendo con cada país)
 * 266: qué clubes le faltan a cada liga por año, como lista de sourcing
 
-**E. Pantallas (un solo lenguaje visual; mockups con Design antes)**
-* 267: Inicio
-* 264: Ligas
-* 265: Finanzas más fácil de usar
-* 269: "Estás viendo" pantalla por pantalla
+**E. Pantallas**
+* 272: cartel de primera visita sin uso (borrarlo o reubicarlo)
 
 **E2. Distribución (depende de 246)**
-* 240: link dedicado, nivel 1 (el estado en la URL)
+* 271: lo que falta del estado en la URL (moneda, inflación, formato y Comparar)
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
 * 254 + 243: repaso mensual de métricas y lo que se busca sin resultado (eligen qué club sumar en D)
 * 242: para periodistas: CSV, cómo citar y metodología pública
@@ -178,8 +175,6 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
    cargar (sin estado de resultados, parcial) va a `documentos-descartados.txt` o `documentos-parciales.txt` con su ok, para que deje de
    contar como frenado.
 
-240. LINK DEDICADO, NIVEL 1: EL ESTADO EN LA URL (mejoras de proyecto, pedido de Guido 2026-10-16). `?club=boca-ar&tab=finanzas`, `?liga=laliga`: la URL se actualiza al cambiar de
-   pantalla, se lee al abrir el link y "atrás" funciona. Una o dos sesiones. Listo cuando un link copiado abre el mismo club, pestaña y años.
 241. LINK DEDICADO, NIVEL 2: RUTAS REALES, TARJETA AL COMPARTIR Y SEO (mejoras de proyecto, pedido de Guido 2026-10-16). `/club/<id>` y `/liga/<id>` pre-generadas (redirect de Netlify +
    un generador de HTML por club, como `fuentes/<club>.html`), con título, descripción y OG image ("Boca Juniors · Ingresos 2025: US$ 120 M").
    WhatsApp y Google no ejecutan JS: sin esto la preview es la portada y nadie que busque "deuda de Boca" llega. Mockups con Design antes de codear.
@@ -209,6 +204,7 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 253. TABLERO DEL PIPELINE (ARTIFACT CON BASE DE DATOS) (mejoras de proyecto, pedido de Guido 2026-10-16). Lo de estado.mjs, la cola, el gasto de API por país y el seguimiento de mails a
    clubes, abrible desde el celular.
 254. REPASO MENSUAL DE MÉTRICAS (MIXPANEL Y NETLIFY) (mejoras de proyecto, pedido de Guido 2026-10-16). Qué clubes se buscan y no están, y dónde se corta el embudo del selector.
+   Con números, revisar qué fue al panel "Más opciones" de Finanzas (rediseño del 265: hoy es criterio, no dato).
 255. CONSOLIDAR LAS REGLAS (mejoras de proyecto, pedido de Guido 2026-10-16). CLAUDE.md, las memorias, 7 skills, CONVENCIONES, CONVENCIONES-DATOS, PANTALLA y PIPELINE: una regla en tres
    lugares es lo que hace que una sesión contradiga a otra. Pasada de consolidación; lo chequeable va a hooks (250) o a audit.js.
 256. CHANGELOG CORTO (mejoras de proyecto, pedido de Guido 2026-10-16). Casi 3.000 líneas y git ya guarda la historia: dejar los últimos 30 días y archivar el resto en Admin/Archive/.
@@ -238,19 +234,18 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
    documento (el año y su comparativo: Dortmund 2024 y 2025 desde geschaeftsbericht-2024-25, RB Leipzig 2024 y 2025 desde
    jahresabschluss-2024-25) reciben el mismo valor. Escalón: el ajuste puede llevar `anio`, y si lo lleva vale solo para ese año.
 
-264. PESTAÑA LIGAS: REDISEÑO (pedido de Guido, 2026-10-17). /liga se llenó de cosas y cuesta leerla. Mockup con Design antes de codear.
-265. FINANZAS: MÁS FÁCIL DE USAR (pedido de Guido, 2026-10-17). Está completa pero cuesta saber qué tocar (ni Guido se acuerda). Mirar
-   qué se usa de verdad (métricas, to-do 254), qué se esconde o se agrupa, y una guía mínima en pantalla. Mockup antes de codear.
 266. CADA LIGA DICE QUÉ CLUBES LE FALTAN POR AÑO, Y AVISA A SOURCING (pedido de Guido, 2026-10-17). Con `data/club-leagues/` (quién jugó
    cada temporada) contra lo cargado: por liga y año, los clubes sin ejercicio. Se ve en la pestaña Ligas y genera la lista de pendientes
    de sourcing (`Admin/sourcing/`), sin duplicar lo ya buscado y descartado.
-267. INICIO: REDISEÑO (pedido de Guido, 2026-10-17). Mockup con Design antes de codear; junto con 264 y 265 (mismo lenguaje visual).
 268. MI CUENTA Y EL DASHBOARD DE USUARIOS Y VISITAS (pedido de Guido, 2026-10-17). Falta: (a) confirmar la primera corrida del cron
    del Worker fos-supabase-ping el 2026-10-19 12 UTC (Cloudflare → fos-supabase-ping → Logs); (b) que el dashboard
    https://claude.ai/artifact/7kPta8U7BxyiGRKAyayHhA se actualice solo (hoy: correr tools/supabase/stats.mjs --json y
    tools/cloudflare-visitas.mjs --json y subir los archivos; se puede programar).
-269. EL BOTÓN "ESTÁS VIENDO" NO TIENE SENTIDO EN VARIAS PANTALLAS (pedido de Guido, 2026-10-17). Decidir pantalla por pantalla dónde va
-   y dónde no.
+271. EL ESTADO EN LA URL, LO QUE FALTA (cierre de la sesión pantallas, 2026-10-17). Ya van pestaña, club, años, liga y ejercicio
+   (`?tab=…&club=…&anios=…&liga=…&anio=…`); faltan la moneda, la inflación, el formato y Comparar.
+272. CARTEL DE PRIMERA VISITA SIN USO (cierre de la sesión pantallas, 2026-10-17). "Elegí tu club acá" colgaba del botón del club, que salió
+   del header; `showCoach` / `hideCoach` en `js/selector.js` quedaron sin uso visible. Borrarlo o reubicarlo (la puerta para un visitante
+   nuevo hoy es el buscador de Inicio).
 270. MODELO QUE ESTIMA AÑOS Y CLUBES QUE NO TENEMOS (pedido de Guido, 2026-10-17). Estadístico: con lo que sí está cargado, estimar
    ingresos / gastos de un club-año sin balance a partir de la posición en la tabla, la liga, los partidos contra clubes con finanzas,
    el historial del club. Mostrarlo siempre como estimación, con su error medido (validación cruzada contra años reales) y aparte de lo

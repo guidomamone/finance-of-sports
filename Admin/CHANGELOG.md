@@ -15,6 +15,25 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 712 — Merge de pantallas: Inicio, Ligas, Finanzas, "Estás viendo" y el estado en la URL (2026-10-17)
+
+Sesión en el worktree `fos-pantallas`, mockups aprobados en el artifact de Design "Pantallas FoS". Merge a mano: la tool frenó por el
+`<title>` (conflicto real); en index.html ganó la rama, lo generado se resolvió con main y se regeneró; ASSET_V 1249.
+
+- Inicio rediseñado (to-do 267): qué es el sitio y el buscador como acción principal, rankings del mundo y de América y tarjetas de liga
+  con barras horizontales, sin Chart.js. `tools/generate-rankings.js` escribe además `data/rankings/_regiones.js` (RANKINGS_REGION y
+  RANKINGS_INDICE), controlado por `--check` y `audit.js`.
+- Header del teléfono en una fila (56 px, antes 164): logo, lupa y un botón con la sección actual que abre el menú.
+- Ligas rediseñada (to-do 264): estado frío con buscador, regiones y una fila por país; la liga con ranking de barras, composición apilada
+  y simulador en tarjetas; banderas en vez de códigos de país.
+- Finanzas más fácil de usar (to-do 265): "Cambiar de club" junto al título, guía de una línea, la vista en palabras y "Más opciones"
+  (moneda, inflación y formato; la moneda salió del header), aviso compacto, KPI "Intereses y otros", índice fijo de la página.
+- "Estás viendo" (to-do 269): sin botón del club en el header (va "Buscar un club o una liga", Ctrl/Cmd K) y sin la pestaña Fuentes.
+- El estado en la URL (to-do 240): pestaña, club, años, liga y ejercicio; se lee al abrir y con "atrás".
+- Título de la página sin el slogan viejo. `tools/worktree.mjs preparar` no enlaza carpetas que git lista enteras.
+- TODO: borrados 240, 264, 265, 267 y 269; nuevos 271 (moneda, inflación, formato y Comparar en la URL) y 272 (cartel de primera visita
+  sin uso); el 254 suma revisar "Más opciones" con métricas.
+
 ## Versión 711 — Mi Cuenta avisa cuando Supabase no contesta (2026-10-17)
 
 - Mi Cuenta (to-do 268): el proyecto de Supabase se pausó solo el 2026-10-05 (plan gratis, 7 días sin uso) y hoy está prendido de nuevo.
