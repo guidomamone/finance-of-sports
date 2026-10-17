@@ -100,6 +100,10 @@ Generados/Portugal/Vizela/Relatorio-e-Contas-2024-25-FCV.categorias.json (escal�
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Sin filas de financiamientos en el pasivo; balance completo con Total do Passivo. Balance sin fila de financiamentos; Total do Passivo 2.329.453. Las dívidas por traspasos no son deuda financiera.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e depósitos bancários 82,822. Balance de la SAD, euros enteros.
+```
+
 ### Liga
 
 ```text
@@ -168,6 +172,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 2 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 20
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Sin filas de financiamientos en el pasivo; balance completo con Total do Passivo. Balance sin fila de financiamentos; Total do Passivo 3.915.186. Las dívidas por traspasos no son deuda financiera.
+```
+
 ### Liga
 
 ```text
@@ -228,6 +236,10 @@ Generados/Portugal/Vizela/Relatorio-e-Contas-FCV-2022-23_Aprovadas.categorias.js
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Sin filas de financiamientos en el pasivo; balance completo con Total do Passivo. Fila Financiamentos obtidos impresa con 0,00; Total do Passivo 4.131.029,54 sin otras filas financieras.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e depósitos bancários 34,828.25. Balance de la SAD.
+```
+
 ### Liga
 
 ```text
@@ -272,6 +284,10 @@ tools/dentro-de-otro.mjs (2026-10-16): posiblemente dentro de otro rubro, por pr
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 5
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Sin filas de financiamientos en el pasivo; balance completo con Total do Passivo. Balance de la SAD completo (Total do Passivo 1.870.586,08) sin ninguna fila financiera; los "Outros instrumentos de capital próprio" son patrimonio.
 ```
 
 ### Liga

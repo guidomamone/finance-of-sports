@@ -140,7 +140,7 @@ const vizelaptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.073008},
       {label:'Imposto sobre o rendimento do período', value:-0.01233},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:0.082822,
     officialTotalRevenue:6.454836, officialTotalExpenses:7.240486, officialPAT:-0.870987,
   },
   2023: {
@@ -154,7 +154,7 @@ const vizelaptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:0},
       {label:'Imposto sobre o rendimento do período', value:-0.011836},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:0.034828,
     officialTotalRevenue:6.759663, officialTotalExpenses:12.768881, officialPAT:-6.021053,
   },
   2022: {
@@ -172,7 +172,7 @@ const vizelaptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Vendas e Serviços Prestados', lado:'revenue', importe:5.112926, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:0.479759,
+    grossDebt:0, cash:0.479759,
     officialTotalRevenue:5.802367, officialTotalExpenses:8.223657, officialPAT:-2.429918,
   },
   2024: {
@@ -186,7 +186,7 @@ const vizelaptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.019368},
       {label:'Imposto sobre o rendimento do período', value:-0.015577},
     ],
-    grossDebt:null, cash:0.147399,
+    grossDebt:0, cash:0.147399,
     officialTotalRevenue:9.369372, officialTotalExpenses:10.393022, officialPAT:-1.058594,
   },
 };
