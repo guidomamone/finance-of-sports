@@ -1,10 +1,9 @@
 --- pág. 1 ---
 
-Jaarverslag Sparta Rotterdam
+Jaarverslag op z'n Spartaans
 
-1   1
-
-    1
+Jaarverslag 2024/2025
+Sparta Rotterdam
 
 --- pág. 2 ---
 

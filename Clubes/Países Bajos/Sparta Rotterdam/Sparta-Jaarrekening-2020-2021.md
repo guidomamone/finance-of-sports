@@ -1,8 +1,16 @@
 --- pág. 1 ---
 
-1   1
+Jaarverslag op z'n Spartaans
 
-1
+Sinds 1888
+
+Sparta Beheer B.V.
+Jaarstukken 2020/2021
+
+10 jaar De Betrokken Spartaan
+2011 - 2021
+
+www.sparta-rotterdam.nl
 
 --- pág. 2 ---
 
