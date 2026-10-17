@@ -859,6 +859,12 @@ Texto movido sin cambios.
   El menú es el MISMO `#mainNav` mostrado como panel debajo del header, más idioma y contacto (`.m-extra`, fuera del nav a propósito:
   todo `#mainNav button` se trata como pestaña). La moneda vive en el panel de Finanzas (también en escritorio) y el botón de club no se muestra en ningún ancho ("Buscar un club o una liga", la lupa en el teléfono, abre el mismo selector; el club se nombra en el título de Finanzas). Entre 701 y 900 px sigue el header de
   varias filas; en escritorio, nada cambió.
+- EL ESTADO EN LA URL (`js/principal.js`, "EL ESTADO EN LA URL"). `?tab=finanzas&club=river&anios=2021,2024`,
+  `?tab=liga&liga=es-laliga&anio=2025`; Inicio no lleva nada. Un link copiado abre la misma pestaña, club, años, liga y ejercicio, y
+  "atrás" vuelve a lo anterior: pestaña, club y liga suman una entrada al historial (`pushState`); los años y el ejercicio de una liga
+  la reemplazan, para no llenar el historial con cada click. Al abrir, la URL le gana al club guardado; un club o una liga que no
+  existen se ignoran. Se tocan solo esas cinco claves (`?multi=0`, `?audit=1` quedan). La moneda, la inflación, el formato y
+  Comparar todavía no van en la URL. El índice de Finanzas salta sin escribir un #ancla.
 - FINANZAS, LO DE ARRIBA (mockup: artboards "Finanzas" del artifact "Pantallas FoS — Inicio"). El título es el club, con "Cambiar de
   club" al lado (en Finanzas el título ya dice qué club es). Debajo, una guía de una línea (qué se toca) que se cierra y no vuelve
   (`localStorage` `finGuiaCerrada`). La tarjeta de ejercicios termina con la vista en palabras ("Montos en USD, nominales, formato

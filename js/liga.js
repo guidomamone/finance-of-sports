@@ -260,7 +260,9 @@ window.LIGA_VIEW = (function(){
   // --------------------------------------------------------------------------
   // RENDER
   // --------------------------------------------------------------------------
-  function render(){
+  // Cada repintado avisa (api.onEstado): index.html escribe la liga y el ejercicio en la URL.
+  function render(){ pintar(); api.onEstado(); }
+  function pintar(){
     var wrap = $('ligaWrap');
     if(!wrap) return;
     wrap.innerHTML = '';
@@ -635,7 +637,9 @@ window.LIGA_VIEW = (function(){
   var api = { pickClub: function(){ return Promise.resolve(); },
               goFinanzas: function(){}, goLiga: function(){},
               // Avisa que una simulación se armó de verdad (fila calculada); index.html la guarda en Mi Cuenta.
-              onSimulado: function(){} };
+              onSimulado: function(){},
+              // Avisa que cambió lo que se mira (liga, ejercicio o el estado frío); index.html lo escribe en la URL.
+              onEstado: function(){} };
   function irAlClub(clubId){
     Promise.resolve(api.pickClub(clubId)).then(function(){ api.goFinanzas(); });
   }
@@ -996,6 +1000,7 @@ window.LIGA_VIEW = (function(){
     api.goFinanzas = (hooks && hooks.goFinanzas) || api.goFinanzas;
     api.goLiga = (hooks && hooks.goLiga) || api.goLiga;
     api.onSimulado = (hooks && hooks.onSimulado) || api.onSimulado;
+    api.onEstado = (hooks && hooks.onEstado) || api.onEstado;
   }
 
   return {
@@ -1012,6 +1017,8 @@ window.LIGA_VIEW = (function(){
     // La llama index.html después de un cambio de idioma. Repinta LAS DOS pantallas: la vidriera también es texto generado en JS.
     refresh: function(){ render(); renderDestacados(); },
     renderDestacados: renderDestacados,
-    current: function(){ return { league: st.league, year: st.year }; }
+    current: function(){ return { league: st.league, year: st.year }; },
+    // Volver al estado frío (la grilla de ligas), por ejemplo con "atrás" desde una liga.
+    frio: function(){ st.league = null; st.year = null; st.simulados = []; pendingSim = []; render(); }
   };
 })();

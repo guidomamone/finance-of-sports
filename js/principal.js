@@ -120,6 +120,8 @@
   }
 
   function refreshFinanzas(){
+    // Los años elegidos van a la URL sin sumar una entrada al historial por cada click.
+    escribirURL('replace');
     const isGestion = document.querySelector('#viewToggle button.active').dataset.view === 'gestion';
     isGestion ? updateFinanzasByGestionGeneric(currentClub) : updateFinanzasByAnioGeneric(currentClub);
     renderDataQualityBannerForCurrentSelection();
@@ -314,6 +316,11 @@
     goLiga: () => irASeccion('liga'),
     // LIGA_VIEW no sabe de Supabase: avisa acá cuando una simulación se armó de verdad, y acá se decide si guardarla (sin sesión,
     // notifyStateChange no hace nada).
+    // La liga en la URL: una liga nueva suma una entrada al historial ("atrás" vuelve a la anterior); cambiar el ejercicio, no.
+    onEstado: () => {
+      const enURL = new URLSearchParams(location.search).get('liga');
+      escribirURL((LIGA_VIEW.current().league || null) !== enURL ? 'push' : 'replace');
+    },
     onSimulado: (league, leagueYear, clubes) => {
       if(window.CUENTA) window.CUENTA.notifyStateChange({
         view: 'ligaSim', league, leagueYear, clubes,
@@ -434,6 +441,7 @@
       // La pestaña activa también en <body>, para que el CSS esconda lo que en ella no hace nada (el USD / ARS del header en Comparar,
       // que siempre muestra USD).
       document.body.dataset.section = btn.dataset.section;
+      escribirURL('push');
     });
   });
 
@@ -609,11 +617,70 @@
   renderTitulosTable();
   renderComparar();
 
-  // Y recién acá entra el club de la visita anterior, por el mismo camino que un click en
-  // el selector (selectClub -> loadClubData -> applyClubMode -> refreshAllForClub). Si no
-  // hay ninguno, el sitio se queda en la portada, que es el estado del que arranca todo
-  // esto: `currentClub` nace en null y ninguna de las llamadas de arriba lo asume cargado.
-  if(clubGuardado) selectClub(clubGuardado);
+  // ==========================================================================
+  // EL ESTADO EN LA URL: qué pestaña, qué club y qué años, qué liga y qué ejercicio. Un link copiado abre lo mismo y "atrás" vuelve a
+  // lo anterior. `?tab=finanzas&club=river&anios=2021,2024`, `?tab=liga&liga=es-laliga&anio=2025`; Inicio no lleva nada. Se tocan
+  // solo estas claves: `?multi=0`, `?audit=1` y las demás quedan como estaban. `var` y no `let`: refreshFinanzas() y la vista de
+  // Ligas llaman a escribirURL() desde el INIT, antes de este bloque, y `urlLista` las frena hasta haber leído la URL de entrada.
+  // ==========================================================================
+  var URL_CLAVES = ['tab', 'club', 'anios', 'liga', 'anio'];
+  var urlLista = false, aplicandoURL = false;
+  function estadoActual(){
+    const tab = (document.querySelector('#mainNav button.active') || {}).dataset?.section || 'inicio';
+    const e = {};
+    if(tab !== 'inicio') e.tab = tab;
+    if(tab === 'finanzas' && currentClub){
+      e.club = currentClub;
+      if(FIN_SEL.years().length) e.anios = FIN_SEL.years().join(',');
+    }
+    if(tab === 'liga'){
+      const c = LIGA_VIEW.current();
+      if(c.league){ e.liga = c.league; if(c.year) e.anio = c.year; }
+    }
+    return e;
+  }
+  function escribirURL(modo){
+    if(!urlLista || aplicandoURL) return;
+    const p = new URLSearchParams(location.search);
+    URL_CLAVES.forEach(k => p.delete(k));
+    Object.entries(estadoActual()).forEach(([k, v]) => p.set(k, v));
+    const q = p.toString().replace(/%2C/g, ',');
+    const url = location.pathname + (q ? '?' + q : '') + location.hash;
+    if(url === location.pathname + location.search + location.hash) return;
+    history[modo === 'push' ? 'pushState' : 'replaceState'](null, '', url);
+  }
+  // Lleva la pantalla a lo que dice la URL. Un club o una liga que no existen se ignoran (el link viejo no rompe nada).
+  function aplicarURL(){
+    const p = new URLSearchParams(location.search);
+    const tab = p.get('tab') || 'inicio';
+    const club = p.get('club');
+    const anios = (p.get('anios') || '').split(',').map(Number).filter(Number.isFinite).filter(Boolean);
+    const liga = p.get('liga');
+    const anio = Number(p.get('anio')) || null;
+    aplicandoURL = true;
+    let paso = Promise.resolve();
+    if(club && clubs[club] && club !== currentClub) paso = selectClub(club);
+    return paso.then(() => {
+      if(tab === 'finanzas' && club && club === currentClub && anios.length){
+        FIN_SEL.set(anios);
+        refreshFinanzas();
+      }
+      if(tab === 'liga') return (liga && (window.LEAGUES || {})[liga]) ? LIGA_VIEW.show(liga, anio) : LIGA_VIEW.frio();
+    }).then(() => {
+      const btn = document.querySelector('#mainNav button[data-section="' + tab + '"]');
+      if(btn && !btn.hidden && !btn.classList.contains('active')) irASeccion(tab);
+    }).catch(err => console.error('[url] no se pudo abrir el estado de la URL', err))
+      .finally(() => { aplicandoURL = false; urlLista = true; escribirURL('replace'); });
+  }
+  window.addEventListener('popstate', aplicarURL);
+
+  // Y recién acá entra lo que hay que mostrar: lo que pide la URL (un link compartido) y, si no pide nada, el club de la visita
+  // anterior, por el mismo camino que un click en el selector.
+  if(URL_CLAVES.some(k => new URLSearchParams(location.search).has(k))) aplicarURL();
+  else {
+    urlLista = true;
+    if(clubGuardado) selectClub(clubGuardado);
+  }
 
   // ==========================================================================
   // SELECTOR DE IDIOMA
