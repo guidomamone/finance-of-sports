@@ -107,6 +107,10 @@ tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e Mútuos (CP) 11.220.037,50 (2024: 2.494.467,17). Sin nota explicativa en la carpeta; el salto de 2,5M a 11,2M no se pudo explicar. Sin préstamos no corrientes.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixas e Equivalentes de Caixa 2025 = 1.156.353,69 (2024: 494.190,86). Balance en balanco-2025.md.
+```
+
 ### Liga
 
 ```text
@@ -167,6 +171,10 @@ tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e Mútuos (CP) 2.494.467,17 (2023: 2.502.032). Sin nota explicativa para 2024; rubro idéntico al de 2021, se cuenta entero. Sin préstamos no corrientes.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 2024 = 494.190,86 (2023: 350.177,00). Balance en balanco-2024.md.
+```
+
 ### Liga
 
 ```text
@@ -222,6 +230,10 @@ tools/cargar.mjs (2026-10-10)
 2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2023-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae 2022-12-31 (el primer año del encabezado 'Exercícios findos em 31 de dezembro 2022 e 2023'); el ejercicio del documento cierra el 2023-12-31
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e Mútuos (CP) 2.502.032 (2022: 3.783.651). Sin nota explicativa en la carpeta para 2023; el rubro es el mismo que en 2021 (mútuos PF/PJ y préstamo bancario) y se cuenta entero. Sin préstamos no corrientes.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 2023 = 350.177 (2022: 643.458). Balance en balanco-2023.md.
 ```
 
 ### Liga
@@ -284,6 +296,10 @@ tools/cargar.mjs (2026-10-10)
 ```text
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e Mútuos (CP) 4.812.387 = Mútuo PF 4.644.860 + Mútuo PJ 43.824 + Empréstimo Instituição Financeira 123.704. Desglose en notas-explicativas-2021.md nota 17 (líneas 660-662, pág. 15). Sin préstamos no corrientes.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 2021 = 253.575 (2020: 291.805). Balance en Clubes/Brasil/Paysandu/balanco-2021.md (el md de la tarea, dre-2021.md, es solo el DRE).
 ```
 
 ## Gestiones

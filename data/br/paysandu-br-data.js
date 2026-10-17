@@ -130,7 +130,7 @@ const paysandubrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Futebol Profissional', lado:'revenue', importe:10.868442, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:4.812387, cash:0.253575,
     officialTotalRevenue:21.976408, officialTotalExpenses:23.813025, officialPAT:-2.015915,
   },
   2023: {
@@ -147,7 +147,7 @@ const paysandubrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Futebol Profissional', lado:'revenue', importe:20.164819, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:2.502032, cash:0.350177,
     officialTotalRevenue:45.072926, officialTotalExpenses:46.849398, officialPAT:-2.537173,
   },
   2024: {
@@ -164,7 +164,7 @@ const paysandubrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Futebol Profissional', lado:'revenue', importe:36.24425, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:2.494467, cash:0.494191,
     officialTotalRevenue:64.496592, officialTotalExpenses:67.281372, officialPAT:-3.885733,
   },
   2025: {
@@ -182,7 +182,7 @@ const paysandubrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'FUTEBOL PROFISSIONAL', lado:'revenue', importe:46.737042, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:11.220038, cash:1.156354,
     officialTotalRevenue:69.580478, officialTotalExpenses:70.296419, officialPAT:-2.175575,
   },
 };
