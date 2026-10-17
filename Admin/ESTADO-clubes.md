@@ -209,7 +209,7 @@ GR (14)
   Olympiacos        10 ejercicios (2015/2016 a 2024/2025), balance, EUR
   Panathinaikos     1 ejercicio (2024/2025), balance, EUR
   Panetolikos       8 ejercicios (2016/2017, 2017/2018, 2019/2020, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR
-  Panserraikos      2 ejercicios (2022/2023, 2024/2025), balance, EUR, sin deuda/caja
+  Panserraikos      2 ejercicios (2022/2023, 2024/2025), balance, EUR
   PAOK              8 ejercicios (2016/2017, 2018/2019, 2019/2020, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR
   Volos NFC         7 ejercicios (2018/2019 a 2024/2025), balance, EUR, sin deuda/caja
 

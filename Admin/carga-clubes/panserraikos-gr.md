@@ -73,6 +73,10 @@ tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Panserraikos_balance_2025-06-30.md] Τραπεζικά δάνεια (CP) 9.000,00; sin préstamos LP. Λοιπές υποχρεώσεις 1.035.740,51 sin desglose (no hay nota con préstamos de socios): no sumado.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Panserraikos_balance_2025-06-30.md] Ταμειακά διαθέσιμα και ισοδύναμα 203.968,28. Balance individual.
+```
+
 ### Liga
 
 ```text
@@ -112,6 +116,10 @@ Generados/Grecia/Panserraikos/Panserraikos_income_stmt_2023-06-30.categorias.jso
 
 ```text
 tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Panserraikos_balance_2023-06-30.md] Τραπεζικά και λοιπά δάνεια CP 0,00 + Τραπεζικά και άλλα δάνεια LP 0,00 + Τραπεζικές υπεραναλήψεως 0,00. Hay 'Λογαριασμοί πληρωτέοι προς όμιλο οντοτήτων και συνδεδεμένα μέρη' 133.720,00 (L34): sin nota que diga si es préstamo; no sumado. Duda para dudas-por-club si se quiere afinar.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Panserraikos_balance_2023-06-30.md] Μετρητά και ταμειακά ισοδύναμα 118.978,01. Balance individual.
 ```
 
 ### Liga

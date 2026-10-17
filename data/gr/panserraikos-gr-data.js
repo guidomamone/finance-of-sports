@@ -42,7 +42,7 @@ const panserraikosgrFiscalYearMeta = {
       {label:'Χρηματοοικονομικά έσοδα και έξοδα', value:-0.00318},
       {label:'Φορολογικά έσοδα / δαπάνες', value:0},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:0.118978,
     officialTotalRevenue:0.973043, officialTotalExpenses:1.751793, officialPAT:-0.78193,
   },
   2025: {
@@ -61,7 +61,7 @@ const panserraikosgrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών', lado:'revenue', importe:4.700403, motivo:'el documento no desglosa este renglón'},
       {renglon:'(-) Κόστος πωλήσεων', lado:'expense', importe:2.407198, motivo:'Claude 2026-10-13 (subagente Sonnet): Precedente griego exacto y aceptado por Guido: \'Κόστος πωλήσεων\' sin nota que lo abra -> lump_football_operations_expense en AEL (3 años), Levadiakos, OFI y Asteras (data/gr/aellarissa-gr-data.js L103-L115, levadiakos L40-L76). Es el caso real de \'el documento no desglosa\' (§1, lump) y no un encabezado con líneas debajo. Matiz a tener presente: costo de ventas, gastos de administración y de venta suben exactamente igual (+52,56 %), señal de que el club repartió su gasto total entre funciones por porcentajes fijos, o sea que \'Κόστος πωλήσεων\' no es solo fútbol puro; igual no hay con qué abrirlo y los otros dos renglones ya son admin_general_expense. Cita: Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2025-06-30.md L16: \'(-) Κόστος πωλήσεων | 2.407.197,70 | 1.577.842,26\' = \'costo de ventas\', estado \'por función\' (Κατάσταση αποτελεσμάτων κατά λειτουργία, L8). Sin desglose por naturaleza en notes_2025 (anexo de micro-entidad) ni en audit/board_minutes 2025 (Panserraikos_board_minutes_2025-06-30.md L72 solo repite el total).'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.009, cash:0.203968,
     officialTotalRevenue:6.201533, officialTotalExpenses:6.422144, officialPAT:-0.231783,
   },
 };
