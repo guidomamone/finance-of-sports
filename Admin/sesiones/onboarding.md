@@ -39,5 +39,9 @@ Para que la principal lo pase a TODO, CHANGELOG y ESTADO al mergear (skill de ar
   PDF NO es error: los de Ajax, PSV, Feyenoord y AZ 2023-25 son la fuente publicada de lo cargado.
 - Sourcing: el estado financiero completo de Beşiktaş 2012, 2013 y 2024 (cotiza: KAP); PEC Zwolle jaarverslag 2023-24 y 2024-25 (los
   bajados están dañados; hoy se carga el depósito en la KvK); Deportes Tolima `dictamen-revisor-fiscal-2025.pdf` es idéntico al de 2024.
+- Para HALLAZGOS, "Conocido, sin daño hoy": `pdftotext` pierde las ligaduras en las fuentes Calibri CID ("Ne o-omzet", "ac va",
+  "Toelich ng") en NEC Holding 2023-24, FC Den Bosch 2022-24 y Fortuna Sittard 2022-24; las cifras están bien y la categorización la
+  hace una IA. Retomarlo si un rótulo roto frena localizar o la categorización (Sparta 2021-22 tenía "w inst-en-verliesrekening" en el
+  título del estado: se unió a mano).
 - Los casos de alta `name` de `Suiza/FC Thun/` y `Suiza/FC St. Gallen/` quedaron sin documentos: se cierran solos como `obsoleto` la
   próxima vez que corra la etapa de alta.
