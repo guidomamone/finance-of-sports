@@ -89,7 +89,9 @@ tiene null (ver `Admin/PIPELINE.md`); este criterio es el que hay que revisar en
 corriente. Italia: debiti verso banche + altri finanziatori (factoring, anticipos) + obbligazioni + soci per finanziamenti (Hellas
 Verona 2022: 30.272.857 + 13.194.724 + 603.703). Fuera: proveedores, fiscal, previsional y traspasos (enti-settore specifico). Un .md
 con dos perímetros (Lazio "separato-consolidato": PARTE I separado, PARTE II consolidado; Milan: consolidado y después la capogruppo)
-se lee en el perímetro con que se carga el club.
+se lee en el perímetro con que se carga el club. Leasing (IFRS 16): fuera si tiene fila propia; si viene dentro de los debiti finanziari
+sin separar, queda. Factoring pro-soluto: fuera (no es deuda del club). Préstamos de la controlante: dentro si la nota dice que son
+préstamos (Sassuolo con Mapei, Parma); si no, fuera.
 
 **Un balance que desglosa un rubro de gasto por SECTOR/DEPARTAMENTO permite separar "Salarios y primas (plantel y cuerpo técnico)"
 del resto del personal sin inventar nada.** El Anexo III de Vélez tiene "Remuneraciones al personal"/"Cargas sociales" como FILAS y

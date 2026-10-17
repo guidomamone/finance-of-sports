@@ -219,6 +219,12 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
    escalón a diseñar con el ok de Guido y a medir con `caja-deuda.mjs --medir`.
    Pendiente de mirar: Ferroviária 2023-2025, "Partes relacionadas" no corriente (3.844.165) puede ser un préstamo de una parte
    relacionada (con el criterio de socios, contaría); hoy la deuda es solo "Empréstimos".
+262. DEUDA PARTIDA EN VARIAS FILAS (caja-deuda.mjs; ok de Guido, 2026-10-17). Cuando la deuda financiera está repartida (bancos, bonos,
+   socios, otros financiadores), el script propone la fila que reconoce y la compuerta la confirma porque el vecino repite el mismo error
+   (Bologna, Genoa, Chievo y Milan 2018 quedaron incompletas). Escalón: si el documento imprime su total de deuda financiera ("Totale debiti
+   finanziari", posición financiera neta, nota de deuda), la propuesta tiene que coincidir con él; si no, no pasa. Caso: Bologna 2025, 19,4 M
+   propuestos contra 28,6 M del total. Medir con `caja-deuda.mjs --medir` y el ensayo de todos los clubes.
+
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
     e) `perimetro-a2` le pasa a la IA hasta ~42.000 tokens de entrada para contestar ~130 (Olympiacos 2018: US$ 0,17 por llamada); en
