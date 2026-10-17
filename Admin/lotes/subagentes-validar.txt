@@ -1,0 +1,980 @@
+# Transcriptos por subagentes (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos, Colombia): validación con pipeline.mjs --lista (etapa 2) antes de los lotes.
+# Sin los de documentos-descartados.txt. Armada en la rama onboarding (2026-10-17).
+Clubes/Bélgica/Anderlecht/jaarrekening-2011-06-30-individual.pdf
+Clubes/Bélgica/Anderlecht/jaarrekening-2012-06-30-individual.pdf
+Clubes/Bélgica/Anderlecht/jaarrekening-2013-06-30-individual.pdf
+Clubes/Bélgica/Anderlecht/jaarrekening-2014-06-30-individual.pdf
+Clubes/Bélgica/Anderlecht/jaarrekening-2015-06-30-individual.pdf
+Clubes/Bélgica/Anderlecht/jaarrekening-2016-06-30-individual.pdf
+Clubes/Bélgica/Anderlecht/jaarrekening-2017-06-30-individual.pdf
+Clubes/Bélgica/Anderlecht/jaarrekening-2018-06-30-individual.pdf
+Clubes/Bélgica/Anderlecht/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/Anderlecht/jaarrekening-2020-06-30-individual.pdf
+Clubes/Bélgica/Anderlecht/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/Anderlecht/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/Anderlecht/jaarrekening-2023-06-30-individual.pdf
+Clubes/Bélgica/Anderlecht/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/Anderlecht/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/Antwerp/jaarrekening-2012-06-30-individual.pdf
+Clubes/Bélgica/Antwerp/jaarrekening-2013-06-30-individual.pdf
+Clubes/Bélgica/Antwerp/jaarrekening-2014-06-30-individual.pdf
+Clubes/Bélgica/Antwerp/jaarrekening-2015-06-30-individual.pdf
+Clubes/Bélgica/Antwerp/jaarrekening-2016-06-30-individual.pdf
+Clubes/Bélgica/Antwerp/jaarrekening-2017-06-30-individual.pdf
+Clubes/Bélgica/Antwerp/jaarrekening-2018-06-30-individual.pdf
+Clubes/Bélgica/Antwerp/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/Antwerp/jaarrekening-2020-06-30-individual.pdf
+Clubes/Bélgica/Antwerp/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/Antwerp/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/Antwerp/jaarrekening-2023-06-30-individual.pdf
+Clubes/Bélgica/Antwerp/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/Antwerp/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/Beerschot/jaarrekening-2019-06-30-individual-correction.pdf
+Clubes/Bélgica/Beerschot/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/Beerschot/jaarrekening-2020-06-30-individual.pdf
+Clubes/Bélgica/Beerschot/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/Beerschot/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/Beerschot/jaarrekening-2023-06-30-individual.pdf
+Clubes/Bélgica/Beerschot/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/Cercle Brugge/jaarrekening-2015-06-30-individual.pdf
+Clubes/Bélgica/Cercle Brugge/jaarrekening-2016-06-30-individual.pdf
+Clubes/Bélgica/Cercle Brugge/jaarrekening-2017-06-30-individual.pdf
+Clubes/Bélgica/Cercle Brugge/jaarrekening-2018-06-30-individual.pdf
+Clubes/Bélgica/Cercle Brugge/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/Cercle Brugge/jaarrekening-2020-06-30-individual.pdf
+Clubes/Bélgica/Cercle Brugge/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/Cercle Brugge/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/Cercle Brugge/jaarrekening-2023-06-30-individual.pdf
+Clubes/Bélgica/Cercle Brugge/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/Cercle Brugge/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2001-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2002-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2003-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2004-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2005-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2006-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2007-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2008-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2009-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2010-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2011-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2012-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2013-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2014-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2015-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2016-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2017-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2018-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2020-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2023-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/Charleroi/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-1999-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2000-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2001-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2002-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2003-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2004-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2005-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2006-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2007-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2008-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2009-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2010-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2011-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2012-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2013-06-30-individual-correction.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2013-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2014-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2015-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2016-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2017-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2018-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2020-06-30-consolidado.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2020-06-30-individual-correction.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2020-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2021-06-30-consolidado.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2022-06-30-consolidado.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2023-06-30-consolidado.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2023-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2024-06-30-consolidado.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2025-06-30-consolidado.pdf
+Clubes/Bélgica/Club Brugge/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/Dender EH/jaarrekening-2008-06-30-individual-correction.pdf
+Clubes/Bélgica/Dender EH/jaarrekening-2008-06-30-individual.pdf
+Clubes/Bélgica/Dender EH/jaarrekening-2010-06-30-individual-correction.pdf
+Clubes/Bélgica/Dender EH/jaarrekening-2010-06-30-individual.pdf
+Clubes/Bélgica/Dender EH/jaarrekening-2014-06-30-individual.pdf
+Clubes/Bélgica/Dender EH/jaarrekening-2017-06-30-individual-correction.pdf
+Clubes/Bélgica/Dender EH/jaarrekening-2017-06-30-individual.pdf
+Clubes/Bélgica/Dender EH/jaarrekening-2018-06-30-individual.pdf
+Clubes/Bélgica/Dender EH/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/Dender EH/jaarrekening-2020-06-30-individual.pdf
+Clubes/Bélgica/Dender EH/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/Dender EH/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/Dender EH/jaarrekening-2023-06-30-individual.pdf
+Clubes/Bélgica/Dender EH/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/Dender EH/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/Genk/jaarrekening-2007-06-30-individual.pdf
+Clubes/Bélgica/Genk/jaarrekening-2008-06-30-individual.pdf
+Clubes/Bélgica/Genk/jaarrekening-2009-06-30-individual.pdf
+Clubes/Bélgica/Genk/jaarrekening-2010-06-30-individual.pdf
+Clubes/Bélgica/Genk/jaarrekening-2011-06-30-individual.pdf
+Clubes/Bélgica/Genk/jaarrekening-2012-06-30-individual.pdf
+Clubes/Bélgica/Genk/jaarrekening-2013-06-30-individual.pdf
+Clubes/Bélgica/Genk/jaarrekening-2014-06-30-individual.pdf
+Clubes/Bélgica/Genk/jaarrekening-2015-06-30-individual.pdf
+Clubes/Bélgica/Genk/jaarrekening-2016-06-30-individual.pdf
+Clubes/Bélgica/Genk/jaarrekening-2017-06-30-individual.pdf
+Clubes/Bélgica/Genk/jaarrekening-2018-06-30-individual.pdf
+Clubes/Bélgica/Genk/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/Genk/jaarrekening-2020-06-30-individual.pdf
+Clubes/Bélgica/Genk/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/Genk/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/Genk/jaarrekening-2023-06-30-individual.pdf
+Clubes/Bélgica/Genk/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/Genk/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/Gent/jaarrekening-2005-06-30-individual.pdf
+Clubes/Bélgica/Gent/jaarrekening-2006-06-30-individual.pdf
+Clubes/Bélgica/Gent/jaarrekening-2007-06-30-individual.pdf
+Clubes/Bélgica/Gent/jaarrekening-2008-06-30-individual.pdf
+Clubes/Bélgica/Gent/jaarrekening-2009-06-30-individual.pdf
+Clubes/Bélgica/Gent/jaarrekening-2010-06-30-individual.pdf
+Clubes/Bélgica/Gent/jaarrekening-2011-06-30-individual.pdf
+Clubes/Bélgica/Gent/jaarrekening-2012-06-30-individual.pdf
+Clubes/Bélgica/Gent/jaarrekening-2013-06-30-individual.pdf
+Clubes/Bélgica/Gent/jaarrekening-2014-06-30-individual.pdf
+Clubes/Bélgica/Gent/jaarrekening-2015-06-30-individual.pdf
+Clubes/Bélgica/Gent/jaarrekening-2017-05-31-consolidado.pdf
+Clubes/Bélgica/Gent/jaarrekening-2017-05-31-individual.pdf
+Clubes/Bélgica/Gent/jaarrekening-2018-06-30-consolidado.pdf
+Clubes/Bélgica/Gent/jaarrekening-2018-06-30-individual.pdf
+Clubes/Bélgica/Gent/jaarrekening-2019-06-30-consolidado.pdf
+Clubes/Bélgica/Gent/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/Gent/jaarrekening-2020-06-30-consolidado.pdf
+Clubes/Bélgica/Gent/jaarrekening-2020-06-30-individual.pdf
+Clubes/Bélgica/Gent/jaarrekening-2021-06-30-consolidado.pdf
+Clubes/Bélgica/Gent/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/Gent/jaarrekening-2022-06-30-consolidado.pdf
+Clubes/Bélgica/Gent/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/Gent/jaarrekening-2023-06-30-individual.pdf
+Clubes/Bélgica/Gent/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/Gent/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2018-06-30-individual-correction.pdf
+Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2018-06-30-individual.pdf
+Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2020-06-30-individual.pdf
+Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/Lierse SK/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/Lierse SK/jaarrekening-2020-06-30-individual.pdf
+Clubes/Bélgica/Lierse SK/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/Lierse SK/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/Lierse SK/jaarrekening-2023-06-30-individual.pdf
+Clubes/Bélgica/Lierse SK/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/Lokeren-Temse/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/Lokeren-Temse/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/Lokeren-Temse/jaarrekening-2023-06-30-individual-correction.pdf
+Clubes/Bélgica/Lokeren-Temse/jaarrekening-2023-06-30-individual.pdf
+Clubes/Bélgica/Lokeren-Temse/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/Lokeren-Temse/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/Lommel SK/jaarrekening-2018-06-30-individual.pdf
+Clubes/Bélgica/Lommel SK/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/Lommel SK/jaarrekening-2020-06-30-individual.pdf
+Clubes/Bélgica/Lommel SK/jaarrekening-2021-06-30-individual-correction.pdf
+Clubes/Bélgica/Lommel SK/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/Lommel SK/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/Lommel SK/jaarrekening-2023-06-30-individual.pdf
+Clubes/Bélgica/Lommel SK/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/Mechelen/jaarrekening-2007-06-30-individual.pdf
+Clubes/Bélgica/Mechelen/jaarrekening-2008-06-30-individual.pdf
+Clubes/Bélgica/Mechelen/jaarrekening-2009-06-30-individual.pdf
+Clubes/Bélgica/Mechelen/jaarrekening-2010-06-30-individual.pdf
+Clubes/Bélgica/Mechelen/jaarrekening-2011-06-30-individual.pdf
+Clubes/Bélgica/Mechelen/jaarrekening-2012-06-30-individual.pdf
+Clubes/Bélgica/Mechelen/jaarrekening-2013-06-30-individual.pdf
+Clubes/Bélgica/Mechelen/jaarrekening-2014-06-30-individual.pdf
+Clubes/Bélgica/Mechelen/jaarrekening-2015-06-30-individual.pdf
+Clubes/Bélgica/Mechelen/jaarrekening-2016-06-30-individual.pdf
+Clubes/Bélgica/Mechelen/jaarrekening-2017-06-30-individual.pdf
+Clubes/Bélgica/Mechelen/jaarrekening-2018-06-30-individual.pdf
+Clubes/Bélgica/Mechelen/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/Mechelen/jaarrekening-2020-06-30-individual.pdf
+Clubes/Bélgica/Mechelen/jaarrekening-2021-06-30-individual-correction.pdf
+Clubes/Bélgica/Mechelen/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/Mechelen/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/Mechelen/jaarrekening-2023-06-30-individual.pdf
+Clubes/Bélgica/Mechelen/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/Mechelen/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/OH Leuven/jaarrekening-2017-12-31-individual.pdf
+Clubes/Bélgica/OH Leuven/jaarrekening-2018-12-31-individual.pdf
+Clubes/Bélgica/OH Leuven/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.pdf
+Clubes/Bélgica/OH Leuven/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/OH Leuven/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/OH Leuven/jaarrekening-2023-06-30-individual.pdf
+Clubes/Bélgica/OH Leuven/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/Patro Eisden/jaarrekening-2013-06-30-individual.pdf
+Clubes/Bélgica/Patro Eisden/jaarrekening-2014-06-30-individual.pdf
+Clubes/Bélgica/Patro Eisden/jaarrekening-2015-06-30-individual.pdf
+Clubes/Bélgica/Patro Eisden/jaarrekening-2016-06-30-individual.pdf
+Clubes/Bélgica/Patro Eisden/jaarrekening-2017-06-30-individual.pdf
+Clubes/Bélgica/Patro Eisden/jaarrekening-2018-06-30-individual.pdf
+Clubes/Bélgica/Patro Eisden/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/Patro Eisden/jaarrekening-2020-06-30-individual-correction.pdf
+Clubes/Bélgica/Patro Eisden/jaarrekening-2020-06-30-individual.pdf
+Clubes/Bélgica/Patro Eisden/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/Patro Eisden/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/Patro Eisden/jaarrekening-2023-06-30-individual.pdf
+Clubes/Bélgica/Patro Eisden/jaarrekening-2024-06-30-individual-correction.pdf
+Clubes/Bélgica/Patro Eisden/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/RAAL La Louvière/jaarrekening-2018-06-30-individual.pdf
+Clubes/Bélgica/RAAL La Louvière/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/RAAL La Louvière/jaarrekening-2020-06-30-individual.pdf
+Clubes/Bélgica/RAAL La Louvière/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/RAAL La Louvière/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/RAAL La Louvière/jaarrekening-2023-06-30-individual.pdf
+Clubes/Bélgica/RAAL La Louvière/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/RAAL La Louvière/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/RAAL La Louvière/wf-2024-2025-2677fac4.pdf
+Clubes/Bélgica/RWDM/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/RWDM/jaarrekening-2020-06-30-individual.pdf
+Clubes/Bélgica/RWDM/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/RWDM/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/RWDM/jaarrekening-2023-06-30-individual.pdf
+Clubes/Bélgica/RWDM/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/RWDM/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/Sint-Truiden/jaarrekening-2013-06-30-individual.pdf
+Clubes/Bélgica/Sint-Truiden/jaarrekening-2014-06-30-individual.pdf
+Clubes/Bélgica/Sint-Truiden/jaarrekening-2015-06-30-individual.pdf
+Clubes/Bélgica/Sint-Truiden/jaarrekening-2016-06-30-individual.pdf
+Clubes/Bélgica/Sint-Truiden/jaarrekening-2017-06-30-individual.pdf
+Clubes/Bélgica/Sint-Truiden/jaarrekening-2018-06-30-individual.pdf
+Clubes/Bélgica/Sint-Truiden/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/Sint-Truiden/jaarrekening-2020-06-30-individual.pdf
+Clubes/Bélgica/Sint-Truiden/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/Sint-Truiden/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/Sint-Truiden/jaarrekening-2023-06-30-individual.pdf
+Clubes/Bélgica/Sint-Truiden/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/Sint-Truiden/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-1999-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2000-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2001-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2002-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2003-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2004-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2005-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2006-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2007-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2008-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2009-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2010-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2011-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2012-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2013-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2014-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2015-06-30-individual-correction.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2015-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2016-06-30-individual-correction.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2016-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2017-06-30-individual-correction.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2017-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2018-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2020-06-30-individual-correction.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2020-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2023-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/Standard Liège/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-1999-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2000-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2001-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2002-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2003-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2004-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2005-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2006-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2007-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2008-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2009-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2010-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2011-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2012-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2013-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2014-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2015-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2016-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2017-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2018-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2020-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2023-06-30-individual-correction.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2023-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/Union Saint-Gilloise/wf-2022-2023-abca2c1e.pdf
+Clubes/Bélgica/Union Saint-Gilloise/wf-2023-2024-952d80a8.pdf
+Clubes/Bélgica/Union Saint-Gilloise/wf-2024-2025-c00c5c2f.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-1998-12-31-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-1999-12-31-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2000-12-31-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2001-12-31-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2002-12-31-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2003-12-31-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2004-12-31-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2005-12-31-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2006-12-31-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2007-12-31-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2008-12-31-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2009-12-31-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2010-12-31-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2011-12-31-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2012-12-31-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2013-12-31-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2015-06-30-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2016-06-30-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2017-06-30-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2018-06-30-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2020-06-30-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2023-06-30-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/Westerlo/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/Zulte Waregem/jaarrekening-2012-06-30-individual.pdf
+Clubes/Bélgica/Zulte Waregem/jaarrekening-2013-06-30-individual.pdf
+Clubes/Bélgica/Zulte Waregem/jaarrekening-2014-06-30-individual.pdf
+Clubes/Bélgica/Zulte Waregem/jaarrekening-2015-06-30-individual.pdf
+Clubes/Bélgica/Zulte Waregem/jaarrekening-2016-06-30-individual.pdf
+Clubes/Bélgica/Zulte Waregem/jaarrekening-2017-06-30-individual.pdf
+Clubes/Bélgica/Zulte Waregem/jaarrekening-2018-06-30-individual.pdf
+Clubes/Bélgica/Zulte Waregem/jaarrekening-2019-06-30-individual.pdf
+Clubes/Bélgica/Zulte Waregem/jaarrekening-2020-06-30-individual.pdf
+Clubes/Bélgica/Zulte Waregem/jaarrekening-2021-06-30-individual.pdf
+Clubes/Bélgica/Zulte Waregem/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/Zulte Waregem/jaarrekening-2023-06-30-individual.pdf
+Clubes/Bélgica/Zulte Waregem/jaarrekening-2024-06-30-individual.pdf
+Clubes/Bélgica/Zulte Waregem/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/_Deloitte-ProLeague-Report/deloitte-pro-league-report-2019.pdf
+Clubes/Bélgica/_Deloitte-ProLeague-Report/deloitte-pro-league-report-2020.pdf
+Clubes/Bélgica/_Deloitte-ProLeague-Report/deloitte-pro-league-report-2021.pdf
+Clubes/Bélgica/_Deloitte-ProLeague-Report/deloitte-pro-league-report-2022.pdf
+Clubes/Bélgica/_Deloitte-ProLeague-Report/deloitte-pro-league-report-2023.pdf
+Clubes/Colombia/Aguilas Doradas/certificacion-ef-2016.pdf
+Clubes/Colombia/Aguilas Doradas/certificacion-ef-2017.pdf
+Clubes/Colombia/Aguilas Doradas/certificacion-ef-2019.pdf
+Clubes/Colombia/Aguilas Doradas/certificacion-ef-2020.pdf
+Clubes/Colombia/Aguilas Doradas/certificacion-ef-2021.pdf
+Clubes/Colombia/Aguilas Doradas/certificacion-ef-2022.pdf
+Clubes/Colombia/Aguilas Doradas/certificacion-ef-2023.pdf
+Clubes/Colombia/Aguilas Doradas/certificacion-ef-2024.pdf
+Clubes/Colombia/Aguilas Doradas/certificacion-ef-2025.pdf
+Clubes/Colombia/Aguilas Doradas/dictamen-revisor-fiscal-2020.pdf
+Clubes/Colombia/Aguilas Doradas/dictamen-revisor-fiscal-2021.pdf
+Clubes/Colombia/Aguilas Doradas/dictamen-revisor-fiscal-2022.pdf
+Clubes/Colombia/Aguilas Doradas/dictamen-revisor-fiscal-2023.pdf
+Clubes/Colombia/Aguilas Doradas/dictamen-revisor-fiscal-2024.pdf
+Clubes/Colombia/Aguilas Doradas/dictamen-revisor-fiscal-2025.pdf
+Clubes/Colombia/Aguilas Doradas/estados-financieros-2016.pdf
+Clubes/Colombia/Aguilas Doradas/estados-financieros-2017.pdf
+Clubes/Colombia/Aguilas Doradas/estados-financieros-2018.pdf
+Clubes/Colombia/Aguilas Doradas/estados-financieros-2019.pdf
+Clubes/Colombia/Aguilas Doradas/estados-financieros-2020.pdf
+Clubes/Colombia/Aguilas Doradas/estados-financieros-2021.pdf
+Clubes/Colombia/Aguilas Doradas/estados-financieros-2022.pdf
+Clubes/Colombia/Aguilas Doradas/estados-financieros-2023.pdf
+Clubes/Colombia/Aguilas Doradas/estados-financieros-2024.pdf
+Clubes/Colombia/Aguilas Doradas/estados-financieros-2025.pdf
+Clubes/Colombia/Alianza FC/certificacion-ef-2016.pdf
+Clubes/Colombia/Alianza FC/certificacion-ef-2019.pdf
+Clubes/Colombia/Alianza FC/certificacion-ef-2020.pdf
+Clubes/Colombia/Alianza FC/certificacion-ef-2021.pdf
+Clubes/Colombia/Alianza FC/certificacion-ef-2022.pdf
+Clubes/Colombia/Alianza FC/certificacion-ef-2023.pdf
+Clubes/Colombia/Alianza FC/certificacion-ef-2024.pdf
+Clubes/Colombia/Alianza FC/certificacion-ef-2025.pdf
+Clubes/Colombia/Alianza FC/dictamen-revisor-fiscal-2020.pdf
+Clubes/Colombia/Alianza FC/dictamen-revisor-fiscal-2021.pdf
+Clubes/Colombia/Alianza FC/dictamen-revisor-fiscal-2022.pdf
+Clubes/Colombia/Alianza FC/dictamen-revisor-fiscal-2023.pdf
+Clubes/Colombia/Alianza FC/dictamen-revisor-fiscal-2024.pdf
+Clubes/Colombia/Alianza FC/dictamen-revisor-fiscal-2025.pdf
+Clubes/Colombia/Alianza FC/estados-financieros-2016.pdf
+Clubes/Colombia/Alianza FC/estados-financieros-2019.pdf
+Clubes/Colombia/Alianza FC/estados-financieros-2020.pdf
+Clubes/Colombia/Alianza FC/estados-financieros-2021.pdf
+Clubes/Colombia/Alianza FC/estados-financieros-2022.pdf
+Clubes/Colombia/Alianza FC/estados-financieros-2023.pdf
+Clubes/Colombia/Alianza FC/estados-financieros-2024.pdf
+Clubes/Colombia/Alianza FC/estados-financieros-2025.pdf
+Clubes/Colombia/America de Cali/certificacion-ef-2025.pdf
+Clubes/Colombia/America de Cali/dictamen-revisor-fiscal-2025.pdf
+Clubes/Colombia/America de Cali/estados-financieros-2025.pdf
+Clubes/Colombia/Atletico Bucaramanga/certificacion-ef-2016.pdf
+Clubes/Colombia/Atletico Bucaramanga/certificacion-ef-2017.pdf
+Clubes/Colombia/Atletico Bucaramanga/certificacion-ef-2018.pdf
+Clubes/Colombia/Atletico Bucaramanga/certificacion-ef-2019.pdf
+Clubes/Colombia/Atletico Bucaramanga/certificacion-ef-2020.pdf
+Clubes/Colombia/Atletico Bucaramanga/certificacion-ef-2022.pdf
+Clubes/Colombia/Atletico Bucaramanga/certificacion-ef-2024.pdf
+Clubes/Colombia/Atletico Bucaramanga/certificacion-ef-2025.pdf
+Clubes/Colombia/Atletico Bucaramanga/dictamen-revisor-fiscal-2020.pdf
+Clubes/Colombia/Atletico Bucaramanga/dictamen-revisor-fiscal-2022.pdf
+Clubes/Colombia/Atletico Bucaramanga/dictamen-revisor-fiscal-2023.pdf
+Clubes/Colombia/Atletico Bucaramanga/dictamen-revisor-fiscal-2024.pdf
+Clubes/Colombia/Atletico Bucaramanga/dictamen-revisor-fiscal-2025.pdf
+Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2016.pdf
+Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2017.pdf
+Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2018.pdf
+Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2019.pdf
+Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2020.pdf
+Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2022.pdf
+Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2023.pdf
+Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2024.pdf
+Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2025.pdf
+Clubes/Colombia/Atletico FC/estados-financieros-2024.pdf
+Clubes/Colombia/Atletico FC/estados-financieros-2025.pdf
+Clubes/Colombia/Atletico Nacional/certificacion-ef-2025.pdf
+Clubes/Colombia/Atletico Nacional/dictamen-revisor-fiscal-2025.pdf
+Clubes/Colombia/Atletico Nacional/estados-financieros-2025.pdf
+Clubes/Colombia/Boyaca Chico/certificacion-ef-2016.pdf
+Clubes/Colombia/Boyaca Chico/certificacion-ef-2019.pdf
+Clubes/Colombia/Boyaca Chico/certificacion-ef-2020.pdf
+Clubes/Colombia/Boyaca Chico/certificacion-ef-2021.pdf
+Clubes/Colombia/Boyaca Chico/certificacion-ef-2022.pdf
+Clubes/Colombia/Boyaca Chico/certificacion-ef-2023.pdf
+Clubes/Colombia/Boyaca Chico/certificacion-ef-2024.pdf
+Clubes/Colombia/Boyaca Chico/certificacion-ef-2025.pdf
+Clubes/Colombia/Boyaca Chico/dictamen-revisor-fiscal-2020.pdf
+Clubes/Colombia/Boyaca Chico/dictamen-revisor-fiscal-2021.pdf
+Clubes/Colombia/Boyaca Chico/dictamen-revisor-fiscal-2022.pdf
+Clubes/Colombia/Boyaca Chico/dictamen-revisor-fiscal-2023.pdf
+Clubes/Colombia/Boyaca Chico/dictamen-revisor-fiscal-2024.pdf
+Clubes/Colombia/Boyaca Chico/dictamen-revisor-fiscal-2025.pdf
+Clubes/Colombia/Boyaca Chico/estados-financieros-2016.pdf
+Clubes/Colombia/Boyaca Chico/estados-financieros-2019.pdf
+Clubes/Colombia/Boyaca Chico/estados-financieros-2020.pdf
+Clubes/Colombia/Boyaca Chico/estados-financieros-2021.pdf
+Clubes/Colombia/Boyaca Chico/estados-financieros-2022.pdf
+Clubes/Colombia/Boyaca Chico/estados-financieros-2023.pdf
+Clubes/Colombia/Boyaca Chico/estados-financieros-2024.pdf
+Clubes/Colombia/Boyaca Chico/estados-financieros-2025.pdf
+Clubes/Colombia/Cucuta Deportivo/estados-financieros-2024.pdf
+Clubes/Colombia/Deportes Tolima/certificacion-ef-2016.pdf
+Clubes/Colombia/Deportes Tolima/certificacion-ef-2017.pdf
+Clubes/Colombia/Deportes Tolima/certificacion-ef-2018.pdf
+Clubes/Colombia/Deportes Tolima/certificacion-ef-2019.pdf
+Clubes/Colombia/Deportes Tolima/certificacion-ef-2020.pdf
+Clubes/Colombia/Deportes Tolima/certificacion-ef-2021.pdf
+Clubes/Colombia/Deportes Tolima/certificacion-ef-2022.pdf
+Clubes/Colombia/Deportes Tolima/certificacion-ef-2023.pdf
+Clubes/Colombia/Deportes Tolima/certificacion-ef-2024.pdf
+Clubes/Colombia/Deportes Tolima/certificacion-ef-2025.pdf
+Clubes/Colombia/Deportes Tolima/dictamen-revisor-fiscal-2016.pdf
+Clubes/Colombia/Deportes Tolima/dictamen-revisor-fiscal-2017.pdf
+Clubes/Colombia/Deportes Tolima/dictamen-revisor-fiscal-2018.pdf
+Clubes/Colombia/Deportes Tolima/dictamen-revisor-fiscal-2019.pdf
+Clubes/Colombia/Deportes Tolima/dictamen-revisor-fiscal-2020.pdf
+Clubes/Colombia/Deportes Tolima/dictamen-revisor-fiscal-2021.pdf
+Clubes/Colombia/Deportes Tolima/dictamen-revisor-fiscal-2022.pdf
+Clubes/Colombia/Deportes Tolima/dictamen-revisor-fiscal-2023.pdf
+Clubes/Colombia/Deportes Tolima/dictamen-revisor-fiscal-2025.pdf
+Clubes/Colombia/Deportes Tolima/estados-financieros-2016.pdf
+Clubes/Colombia/Deportes Tolima/estados-financieros-2017.pdf
+Clubes/Colombia/Deportes Tolima/estados-financieros-2018.pdf
+Clubes/Colombia/Deportes Tolima/estados-financieros-2019.pdf
+Clubes/Colombia/Deportes Tolima/estados-financieros-2020.pdf
+Clubes/Colombia/Deportes Tolima/estados-financieros-2021.pdf
+Clubes/Colombia/Deportes Tolima/estados-financieros-2022.pdf
+Clubes/Colombia/Deportes Tolima/estados-financieros-2023.pdf
+Clubes/Colombia/Deportes Tolima/estados-financieros-2024.pdf
+Clubes/Colombia/Deportes Tolima/estados-financieros-2025.pdf
+Clubes/Colombia/Deportivo Cali/certificacion-ef-2025.pdf
+Clubes/Colombia/Deportivo Cali/dictamen-revisor-fiscal-2025.pdf
+Clubes/Colombia/Deportivo Cali/estados-financieros-2025.pdf
+Clubes/Colombia/Deportivo Pereira/certificacion-ef-2025.pdf
+Clubes/Colombia/Deportivo Pereira/dictamen-revisor-fiscal-2025.pdf
+Clubes/Colombia/Deportivo Pereira/estados-financieros-2025.pdf
+Clubes/Colombia/Envigado/certificacion-ef-2016.pdf
+Clubes/Colombia/Envigado/certificacion-ef-2017.pdf
+Clubes/Colombia/Envigado/certificacion-ef-2018.pdf
+Clubes/Colombia/Envigado/certificacion-ef-2019.pdf
+Clubes/Colombia/Envigado/certificacion-ef-2020.pdf
+Clubes/Colombia/Envigado/certificacion-ef-2021.pdf
+Clubes/Colombia/Envigado/certificacion-ef-2022.pdf
+Clubes/Colombia/Envigado/certificacion-ef-2023.pdf
+Clubes/Colombia/Envigado/certificacion-ef-2024.pdf
+Clubes/Colombia/Envigado/certificacion-ef-2025.pdf
+Clubes/Colombia/Envigado/dictamen-revisor-fiscal-2016.pdf
+Clubes/Colombia/Envigado/dictamen-revisor-fiscal-2017.pdf
+Clubes/Colombia/Envigado/dictamen-revisor-fiscal-2018.pdf
+Clubes/Colombia/Envigado/dictamen-revisor-fiscal-2019.pdf
+Clubes/Colombia/Envigado/dictamen-revisor-fiscal-2020.pdf
+Clubes/Colombia/Envigado/dictamen-revisor-fiscal-2021.pdf
+Clubes/Colombia/Envigado/dictamen-revisor-fiscal-2023.pdf
+Clubes/Colombia/Envigado/dictamen-revisor-fiscal-2024.pdf
+Clubes/Colombia/Envigado/dictamen-revisor-fiscal-2025.pdf
+Clubes/Colombia/Envigado/estados-financieros-2016.pdf
+Clubes/Colombia/Envigado/estados-financieros-2017.pdf
+Clubes/Colombia/Envigado/estados-financieros-2018.pdf
+Clubes/Colombia/Envigado/estados-financieros-2019.pdf
+Clubes/Colombia/Envigado/estados-financieros-2020.pdf
+Clubes/Colombia/Envigado/estados-financieros-2021.pdf
+Clubes/Colombia/Envigado/estados-financieros-2022.pdf
+Clubes/Colombia/Envigado/estados-financieros-2023.pdf
+Clubes/Colombia/Envigado/estados-financieros-2024.pdf
+Clubes/Colombia/Envigado/estados-financieros-2025.pdf
+Clubes/Colombia/Fortaleza CEIF/certificacion-ef-2017.pdf
+Clubes/Colombia/Fortaleza CEIF/certificacion-ef-2018.pdf
+Clubes/Colombia/Fortaleza CEIF/certificacion-ef-2019.pdf
+Clubes/Colombia/Fortaleza CEIF/certificacion-ef-2020.pdf
+Clubes/Colombia/Fortaleza CEIF/certificacion-ef-2021.pdf
+Clubes/Colombia/Fortaleza CEIF/certificacion-ef-2022.pdf
+Clubes/Colombia/Fortaleza CEIF/certificacion-ef-2023.pdf
+Clubes/Colombia/Fortaleza CEIF/certificacion-ef-2024.pdf
+Clubes/Colombia/Fortaleza CEIF/certificacion-ef-2025.pdf
+Clubes/Colombia/Fortaleza CEIF/dictamen-revisor-fiscal-2020.pdf
+Clubes/Colombia/Fortaleza CEIF/dictamen-revisor-fiscal-2021.pdf
+Clubes/Colombia/Fortaleza CEIF/dictamen-revisor-fiscal-2022.pdf
+Clubes/Colombia/Fortaleza CEIF/dictamen-revisor-fiscal-2023.pdf
+Clubes/Colombia/Fortaleza CEIF/dictamen-revisor-fiscal-2024.pdf
+Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf
+Clubes/Colombia/Fortaleza CEIF/estados-financieros-2018.pdf
+Clubes/Colombia/Fortaleza CEIF/estados-financieros-2019.pdf
+Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf
+Clubes/Colombia/Fortaleza CEIF/estados-financieros-2021.pdf
+Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.pdf
+Clubes/Colombia/Fortaleza CEIF/estados-financieros-2023.pdf
+Clubes/Colombia/Fortaleza CEIF/estados-financieros-2024.pdf
+Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf
+Clubes/Colombia/Independiente Santa Fe/certificacion-ef-2025.pdf
+Clubes/Colombia/Independiente Santa Fe/dictamen-revisor-fiscal-2025.pdf
+Clubes/Colombia/Independiente Santa Fe/estados-financieros-2025.pdf
+Clubes/Colombia/Junior de Barranquilla/certificacion-ef-2025.pdf
+Clubes/Colombia/Junior de Barranquilla/dictamen-revisor-fiscal-2025.pdf
+Clubes/Colombia/Junior de Barranquilla/estados-financieros-2025.pdf
+Clubes/Colombia/La Equidad/certificacion-ef-2017.pdf
+Clubes/Colombia/La Equidad/certificacion-ef-2019.pdf
+Clubes/Colombia/La Equidad/certificacion-ef-2020.pdf
+Clubes/Colombia/La Equidad/certificacion-ef-2021.pdf
+Clubes/Colombia/La Equidad/certificacion-ef-2022.pdf
+Clubes/Colombia/La Equidad/certificacion-ef-2023.pdf
+Clubes/Colombia/La Equidad/certificacion-ef-2024.pdf
+Clubes/Colombia/La Equidad/certificacion-ef-2025.pdf
+Clubes/Colombia/La Equidad/dictamen-revisor-fiscal-2020.pdf
+Clubes/Colombia/La Equidad/dictamen-revisor-fiscal-2021.pdf
+Clubes/Colombia/La Equidad/dictamen-revisor-fiscal-2022.pdf
+Clubes/Colombia/La Equidad/dictamen-revisor-fiscal-2023.pdf
+Clubes/Colombia/La Equidad/dictamen-revisor-fiscal-2024.pdf
+Clubes/Colombia/La Equidad/dictamen-revisor-fiscal-2025.pdf
+Clubes/Colombia/La Equidad/estados-financieros-2016.pdf
+Clubes/Colombia/La Equidad/estados-financieros-2017.pdf
+Clubes/Colombia/La Equidad/estados-financieros-2019.pdf
+Clubes/Colombia/La Equidad/estados-financieros-2020.pdf
+Clubes/Colombia/La Equidad/estados-financieros-2021.pdf
+Clubes/Colombia/La Equidad/estados-financieros-2022.pdf
+Clubes/Colombia/La Equidad/estados-financieros-2023.pdf
+Clubes/Colombia/La Equidad/estados-financieros-2024.pdf
+Clubes/Colombia/La Equidad/estados-financieros-2025.pdf
+Clubes/Colombia/Llaneros/certificacion-ef-2016.pdf
+Clubes/Colombia/Llaneros/certificacion-ef-2017.pdf
+Clubes/Colombia/Llaneros/certificacion-ef-2018.pdf
+Clubes/Colombia/Llaneros/certificacion-ef-2019.pdf
+Clubes/Colombia/Llaneros/certificacion-ef-2020.pdf
+Clubes/Colombia/Llaneros/certificacion-ef-2022.pdf
+Clubes/Colombia/Llaneros/certificacion-ef-2023.pdf
+Clubes/Colombia/Llaneros/certificacion-ef-2024.pdf
+Clubes/Colombia/Llaneros/certificacion-ef-2025.pdf
+Clubes/Colombia/Llaneros/dictamen-revisor-fiscal-2020.pdf
+Clubes/Colombia/Llaneros/dictamen-revisor-fiscal-2022.pdf
+Clubes/Colombia/Llaneros/dictamen-revisor-fiscal-2023.pdf
+Clubes/Colombia/Llaneros/dictamen-revisor-fiscal-2024.pdf
+Clubes/Colombia/Llaneros/dictamen-revisor-fiscal-2025.pdf
+Clubes/Colombia/Llaneros/estados-financieros-2016.pdf
+Clubes/Colombia/Llaneros/estados-financieros-2017.pdf
+Clubes/Colombia/Llaneros/estados-financieros-2018.pdf
+Clubes/Colombia/Llaneros/estados-financieros-2019.pdf
+Clubes/Colombia/Llaneros/estados-financieros-2020.pdf
+Clubes/Colombia/Llaneros/estados-financieros-2022.pdf
+Clubes/Colombia/Llaneros/estados-financieros-2023.pdf
+Clubes/Colombia/Llaneros/estados-financieros-2024.pdf
+Clubes/Colombia/Llaneros/estados-financieros-2025.pdf
+Clubes/Colombia/Millonarios/certificacion-ef-2025.pdf
+Clubes/Colombia/Millonarios/dictamen-revisor-fiscal-2025.pdf
+Clubes/Colombia/Millonarios/estados-financieros-2025.pdf
+Clubes/Colombia/Millonarios/informe-gestion-2023.pdf
+Clubes/Colombia/Millonarios/informe-gestion-2024.pdf
+Clubes/Colombia/Once Caldas/certificacion-ef-2016.pdf
+Clubes/Colombia/Once Caldas/certificacion-ef-2017.pdf
+Clubes/Colombia/Once Caldas/certificacion-ef-2018.pdf
+Clubes/Colombia/Once Caldas/certificacion-ef-2019.pdf
+Clubes/Colombia/Once Caldas/certificacion-ef-2020.pdf
+Clubes/Colombia/Once Caldas/certificacion-ef-2021.pdf
+Clubes/Colombia/Once Caldas/certificacion-ef-2022.pdf
+Clubes/Colombia/Once Caldas/certificacion-ef-2023.pdf
+Clubes/Colombia/Once Caldas/certificacion-ef-2024.pdf
+Clubes/Colombia/Once Caldas/certificacion-ef-2025.pdf
+Clubes/Colombia/Once Caldas/dictamen-revisor-fiscal-2016.pdf
+Clubes/Colombia/Once Caldas/dictamen-revisor-fiscal-2017.pdf
+Clubes/Colombia/Once Caldas/dictamen-revisor-fiscal-2018.pdf
+Clubes/Colombia/Once Caldas/dictamen-revisor-fiscal-2019.pdf
+Clubes/Colombia/Once Caldas/dictamen-revisor-fiscal-2021.pdf
+Clubes/Colombia/Once Caldas/dictamen-revisor-fiscal-2022.pdf
+Clubes/Colombia/Once Caldas/dictamen-revisor-fiscal-2023.pdf
+Clubes/Colombia/Once Caldas/dictamen-revisor-fiscal-2024.pdf
+Clubes/Colombia/Once Caldas/dictamen-revisor-fiscal-2025.pdf
+Clubes/Colombia/Once Caldas/estados-financieros-2016.pdf
+Clubes/Colombia/Once Caldas/estados-financieros-2017.pdf
+Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf
+Clubes/Colombia/Once Caldas/estados-financieros-2019.pdf
+Clubes/Colombia/Once Caldas/estados-financieros-2020.pdf
+Clubes/Colombia/Once Caldas/estados-financieros-2021.pdf
+Clubes/Colombia/Once Caldas/estados-financieros-2022.pdf
+Clubes/Colombia/Once Caldas/estados-financieros-2023.pdf
+Clubes/Colombia/Once Caldas/estados-financieros-2024.pdf
+Clubes/Colombia/Once Caldas/estados-financieros-2025.pdf
+Clubes/Colombia/Union Magdalena/certificacion-ef-2018.pdf
+Clubes/Colombia/Union Magdalena/estados-financieros-2018.pdf
+Clubes/Estonia/FCI Levadia/aruanne-2019.pdf
+Clubes/Estonia/FCI Levadia/aruanne-2020.pdf
+Clubes/Estonia/FCI Levadia/aruanne-2021.pdf
+Clubes/Estonia/FCI Levadia/aruanne-2022.pdf
+Clubes/Estonia/FCI Levadia/aruanne-2023.pdf
+Clubes/Estonia/FCI Levadia/aruanne-2024.pdf
+Clubes/Estonia/FCI Levadia/aruanne-2025.pdf
+Clubes/Estonia/Flora Tallinn/aruanne-2019.pdf
+Clubes/Estonia/Flora Tallinn/aruanne-2020.pdf
+Clubes/Estonia/Flora Tallinn/aruanne-2021.pdf
+Clubes/Estonia/Flora Tallinn/aruanne-2022.pdf
+Clubes/Estonia/Flora Tallinn/aruanne-2023.pdf
+Clubes/Estonia/Flora Tallinn/aruanne-2024.pdf
+Clubes/Estonia/Flora Tallinn/aruanne-2025.pdf
+Clubes/Estonia/Harju JK Laagri/aruanne-2023.pdf
+Clubes/Estonia/Harju JK Laagri/aruanne-2024.pdf
+Clubes/Estonia/Harju JK Laagri/aruanne-2025.pdf
+Clubes/Estonia/Kuressaare/aruanne-2019.pdf
+Clubes/Estonia/Kuressaare/aruanne-2020.pdf
+Clubes/Estonia/Kuressaare/aruanne-2021.pdf
+Clubes/Estonia/Kuressaare/aruanne-2022.pdf
+Clubes/Estonia/Kuressaare/aruanne-2023.pdf
+Clubes/Estonia/Kuressaare/aruanne-2024.pdf
+Clubes/Estonia/Kuressaare/aruanne-2025.pdf
+Clubes/Estonia/Narva Trans/aruanne-2019.pdf
+Clubes/Estonia/Narva Trans/aruanne-2020.pdf
+Clubes/Estonia/Narva Trans/aruanne-2021.pdf
+Clubes/Estonia/Narva Trans/aruanne-2022.pdf
+Clubes/Estonia/Narva Trans/aruanne-2023.pdf
+Clubes/Estonia/Narva Trans/aruanne-2024.pdf
+Clubes/Estonia/Narva Trans/aruanne-2025.pdf
+Clubes/Estonia/Nõmme Kalju/aruanne-2019.pdf
+Clubes/Estonia/Nõmme Kalju/aruanne-2020.pdf
+Clubes/Estonia/Nõmme Kalju/aruanne-2021.pdf
+Clubes/Estonia/Nõmme Kalju/aruanne-2022.pdf
+Clubes/Estonia/Nõmme Kalju/aruanne-2023.pdf
+Clubes/Estonia/Nõmme Kalju/aruanne-2024.pdf
+Clubes/Estonia/Nõmme Kalju/aruanne-2025.pdf
+Clubes/Estonia/Paide Linnameeskond/aruanne-2019.pdf
+Clubes/Estonia/Paide Linnameeskond/aruanne-2020.pdf
+Clubes/Estonia/Paide Linnameeskond/aruanne-2021.pdf
+Clubes/Estonia/Paide Linnameeskond/aruanne-2022.pdf
+Clubes/Estonia/Paide Linnameeskond/aruanne-2023.pdf
+Clubes/Estonia/Paide Linnameeskond/aruanne-2024.pdf
+Clubes/Estonia/Paide Linnameeskond/aruanne-2025.pdf
+Clubes/Estonia/Pärnu Vaprus/aruanne-2019.pdf
+Clubes/Estonia/Pärnu Vaprus/aruanne-2020.pdf
+Clubes/Estonia/Pärnu Vaprus/aruanne-2021.pdf
+Clubes/Estonia/Pärnu Vaprus/aruanne-2022.pdf
+Clubes/Estonia/Pärnu Vaprus/aruanne-2023.pdf
+Clubes/Estonia/Pärnu Vaprus/aruanne-2024.pdf
+Clubes/Estonia/Pärnu Vaprus/aruanne-2025.pdf
+Clubes/Estonia/Tallinna Kalev/aruanne-2019.pdf
+Clubes/Estonia/Tallinna Kalev/aruanne-2020.pdf
+Clubes/Estonia/Tallinna Kalev/aruanne-2021.pdf
+Clubes/Estonia/Tallinna Kalev/aruanne-2022.pdf
+Clubes/Estonia/Tallinna Kalev/aruanne-2023.pdf
+Clubes/Estonia/Tallinna Kalev/aruanne-2024.pdf
+Clubes/Estonia/Tallinna Kalev/aruanne-2025.pdf
+Clubes/Estonia/Tartu Tammeka/aruanne-2019.pdf
+Clubes/Estonia/Tartu Tammeka/aruanne-2020.pdf
+Clubes/Estonia/Tartu Tammeka/aruanne-2021.pdf
+Clubes/Estonia/Tartu Tammeka/aruanne-2022.pdf
+Clubes/Estonia/Tartu Tammeka/aruanne-2023.pdf
+Clubes/Estonia/Tartu Tammeka/aruanne-2024.pdf
+Clubes/Estonia/Tartu Tammeka/aruanne-2025.pdf
+Clubes/Países Bajos/ADO Den Haag/Jaarrekening-2023-24.pdf
+Clubes/Países Bajos/ADO Den Haag/Jaarrekening22-23.pdf
+Clubes/Países Bajos/ADO Den Haag/Verkort-jaarverslag15-16.pdf
+Clubes/Países Bajos/ADO Den Haag/jaarrekening2018-2019.pdf
+Clubes/Países Bajos/ADO Den Haag/jaarrekening2019-2020.pdf
+Clubes/Países Bajos/ADO Den Haag/jaarrekening2021-22.pdf
+Clubes/Países Bajos/ADO Den Haag/jaarrekening2024-25.pdf
+Clubes/Países Bajos/ADO Den Haag/jaarrverslag2017-2018.pdf
+Clubes/Países Bajos/ADO Den Haag/online_versie_nv_ado_2016-17_-_061217_def.pdf
+Clubes/Países Bajos/ADO Den Haag/verkort-jaarverslag-2012-2013.pdf
+Clubes/Países Bajos/ADO Den Haag/verkort-jaarverslag-nv-ado-2014-15-definitief.pdf
+Clubes/Países Bajos/ADO Den Haag/verkort_jaarverslag_2011_2012.pdf
+Clubes/Países Bajos/AZ/AZ-Jaarrekening-2018-2019.pdf
+Clubes/Países Bajos/AZ/AZ-Jaarrekening-2019-2020.pdf
+Clubes/Países Bajos/AZ/AZ-Jaarrekening-2020-2021.pdf
+Clubes/Países Bajos/AZ/AZ-Jaarrekening-2021-2022.pdf
+Clubes/Países Bajos/AZ/AZ-Jaarrekening-2022-2023.pdf
+Clubes/Países Bajos/AZ/AZ-Jaarrekening-2023-2024.pdf
+Clubes/Países Bajos/AZ/AZ-Jaarrekening-2024-2025.pdf
+Clubes/Países Bajos/Ajax/Ajax-Jaarverslag-2014-2015.pdf
+Clubes/Países Bajos/Ajax/Ajax-Jaarverslag-2015-2016.pdf
+Clubes/Países Bajos/Ajax/Ajax-Jaarverslag-2016-2017.pdf
+Clubes/Países Bajos/Ajax/Ajax-Jaarverslag-2018-2019.pdf
+Clubes/Países Bajos/Ajax/Ajax-Jaarverslag-2019-2020.pdf
+Clubes/Países Bajos/Ajax/Ajax-Jaarverslag-2020-2021.pdf
+Clubes/Países Bajos/Ajax/Ajax-Jaarverslag-2021-2022.pdf
+Clubes/Países Bajos/Ajax/Ajax-Jaarverslag-2022-2023.pdf
+Clubes/Países Bajos/Ajax/Ajax-Jaarverslag-2023-2024.pdf
+Clubes/Países Bajos/Ajax/Ajax-Jaarverslag-2024-2025.pdf
+Clubes/Países Bajos/Ajax/wf-2025-2026-fa61504b.pdf
+Clubes/Países Bajos/Almere City/wf-2022-2023-0adbf21c.pdf
+Clubes/Países Bajos/Almere City/wf-2023-2024-f52b3dd0.pdf
+Clubes/Países Bajos/Almere City/wf-2024-2025-68975c13.pdf
+Clubes/Países Bajos/Almere City/wf-src-AlmereCity_jaarverslag21-22.pdf
+Clubes/Países Bajos/De Graafschap/wf-src-Betaald-Voetbal-De-Graafschap-B.V.-Publicatierapport-2021-2022.pdf
+Clubes/Países Bajos/Excelsior/Excelsior-Jaarcijfers-2024-2025.pdf
+Clubes/Países Bajos/Excelsior/Excelsior-Jaarrekening-2017-2018.pdf
+Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2018-2019.pdf
+Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2019-2020.pdf
+Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2020-2021.pdf
+Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2021-2022.pdf
+Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2022-2023.pdf
+Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2023-2024.pdf
+Clubes/Países Bajos/FC Den Bosch/FC-Den-Bosch-N.V.-jaarrekening-2015-2016.pdf
+Clubes/Países Bajos/FC Den Bosch/Jaarrekening-19-20-FCDB-website.pdf
+Clubes/Países Bajos/FC Den Bosch/wf-2022-2023-802278d1.pdf
+Clubes/Países Bajos/FC Den Bosch/wf-2023-2024-0f2f270d.pdf
+Clubes/Países Bajos/FC Den Bosch/wf-2024-2025-c4a5aec0.pdf
+Clubes/Países Bajos/FC Dordrecht/20211101-FC-Dordrecht-Geconsolideerde-jaarrekening-2020-2021-tbv-publicatie-1.pdf
+Clubes/Países Bajos/FC Dordrecht/FC-Dordrecht-Jaarrekening-2019-2020-publicatie.pdf
+Clubes/Países Bajos/FC Dordrecht/Jaarrekening-FC-Dordrecht-2021-2022-publicatie.pdf
+Clubes/Países Bajos/FC Dordrecht/wf-2023-2024-dde88f15.pdf
+Clubes/Países Bajos/FC Dordrecht/wf-2024-2025-602d6b96.pdf
+Clubes/Países Bajos/FC Dordrecht/wf-src-jaarrekening-fc-dordrecht-2022-2023-publicatie.pdf
+Clubes/Países Bajos/FC Eindhoven/wf-2022-2023-fe0a0484.pdf
+Clubes/Países Bajos/FC Eindhoven/wf-2024-2025-a6019b8e.pdf
+Clubes/Países Bajos/FC Eindhoven/wf-src-Stg-FC-Eindhoven-2021-2022-V3a.pdf
+Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2017-2018-incl.-Jaarcijfers-DEF.pdf
+Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2018-2019-incl.-Jaarcijfers-DEF.pdf
+Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2019-2020-incl.-Jaarcijfers-DEF.pdf
+Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2020-2021-incl.-Jaarcijfers-DEF.pdf
+Clubes/Países Bajos/FC Emmen/FCE-Jaarverslag-2014-2015-incl.-Jaarcijfers.pdf
+Clubes/Países Bajos/FC Emmen/FCE-Jaarverslag-2015-2016-incl.-Jaarcijfers.pdf
+Clubes/Países Bajos/FC Emmen/FCE-Jaarverslag-2016-2017-incl.-Jaarcijfers.pdf
+Clubes/Países Bajos/FC Emmen/JAARVERSLAG-FC-EMMEN-2021-2022.pdf
+Clubes/Países Bajos/FC Groningen/FC-Groningen-Beheer-Jaarverslag-2017-2018.pdf
+Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2009-2010.pdf
+Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2010-2011.pdf
+Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2011-2012.pdf
+Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2012-2013.pdf
+Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2013-2014.pdf
+Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2014-2015.pdf
+Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2015-2016.pdf
+Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2016-2017.pdf
+Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2017-2018.pdf
+Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2018-2019.pdf
+Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2019-2020.pdf
+Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2020-2021.pdf
+Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2021-2022.pdf
+Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2022-2023.pdf
+Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2023-2024.pdf
+Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2024-2025.pdf
+Clubes/Países Bajos/FC Twente/FC-Twente-Jaarrekening-2018-2019.pdf
+Clubes/Países Bajos/FC Twente/FC-Twente-Jaarrekening-2019-2020.pdf
+Clubes/Países Bajos/FC Twente/FC-Twente-Jaarrekening-2020-2021.pdf
+Clubes/Países Bajos/FC Twente/FC-Twente-Jaarrekening-2022-2023.pdf
+Clubes/Países Bajos/FC Twente/FC-Twente-Jaarrekening-2023-2024.pdf
+Clubes/Países Bajos/FC Twente/FC-Twente-Jaarrekening-2024-2025.pdf
+Clubes/Países Bajos/FC Twente/wf-src-Jaarrekening-2021-2022.pdf
+Clubes/Países Bajos/FC Utrecht/FC-Utrecht-Jaarverslag-2017-2018.pdf
+Clubes/Países Bajos/FC Utrecht/FC-Utrecht-Jaarverslag-2018-2019.pdf
+Clubes/Países Bajos/FC Utrecht/FC-Utrecht-Jaarverslag-2020-2021.pdf
+Clubes/Países Bajos/FC Utrecht/FC-Utrecht-Jaarverslag-2021-2022.pdf
+Clubes/Países Bajos/FC Utrecht/FC-Utrecht-Jaarverslag-2022-2023.pdf
+Clubes/Países Bajos/FC Utrecht/FC-Utrecht-Jaarverslag-2023-2024.pdf
+Clubes/Países Bajos/FC Utrecht/FC-Utrecht-Jaarverslag-2024-2025.pdf
+Clubes/Países Bajos/FC Volendam/Volendam-Jaarcijfers-2024-2025.pdf
+Clubes/Países Bajos/FC Volendam/Volendam-RKFC-Jaarrekening-2019-2020.pdf
+Clubes/Países Bajos/FC Volendam/Volendam-RKFC-Jaarrekening-2020-2021.pdf
+Clubes/Países Bajos/FC Volendam/Volendam-RKFC-Jaarverslag-2022-2023.pdf
+Clubes/Países Bajos/FC Volendam/Volendam-RKFC-Jaarverslag-2023-2024.pdf
+Clubes/Países Bajos/Feyenoord/Feyenoord-Jaarverslag-2022-2023.pdf
+Clubes/Países Bajos/Feyenoord/Feyenoord-Jaarverslag-2023-2024.pdf
+Clubes/Países Bajos/Feyenoord/Feyenoord-Jaarverslag-2024-2025.pdf
+Clubes/Países Bajos/Fortuna Sittard/Fortuna-Sittard-Jaarrekening-2022-2023.pdf
+Clubes/Países Bajos/Fortuna Sittard/Fortuna-Sittard-Jaarrekening-2024-2025.pdf
+Clubes/Países Bajos/Fortuna Sittard/Fortuna-Sittard-Jaarverslag-2023-2024.pdf
+Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarrekening-2020-2021.pdf
+Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2021-2022.pdf
+Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2022-2023.pdf
+Clubes/Países Bajos/Go Ahead Eagles/wf-2024-2025-31bca08b.pdf
+Clubes/Países Bajos/Helmond Sport/Jaarrekening-2023-2024-HS-website.pdf
+Clubes/Países Bajos/Helmond Sport/wf-2022-2023-13517733.pdf
+Clubes/Países Bajos/Helmond Sport/wf-2023-2024-60749957.pdf
+Clubes/Países Bajos/Helmond Sport/wf-2024-2025-4ef6ca45.pdf
+Clubes/Países Bajos/Heracles Almelo/Heracles-Jaarrekening-2017-2018.pdf
+Clubes/Países Bajos/Heracles Almelo/Heracles-Jaarrekening-2018-2019.pdf
+Clubes/Países Bajos/Heracles Almelo/Heracles-Jaarrekening-2020-2021.pdf
+Clubes/Países Bajos/Heracles Almelo/Heracles-Jaarrekening-2021-2022.pdf
+Clubes/Países Bajos/Heracles Almelo/Heracles-Jaarrekening-2022-2023.pdf
+Clubes/Países Bajos/Heracles Almelo/Heracles-Jaarrekening-2023-2024.pdf
+Clubes/Países Bajos/Heracles Almelo/Heracles-Jaarrekening-2024-2025.pdf
+Clubes/Países Bajos/NAC Breda/NAC-Breda-Jaarrekening-2018-2019.pdf
+Clubes/Países Bajos/NAC Breda/NAC-Breda-Jaarrekening-2020-2021.pdf
+Clubes/Países Bajos/NAC Breda/NAC-Breda-Jaarrekening-2021-2022.pdf
+Clubes/Países Bajos/NAC Breda/NAC-Breda-Jaarrekening-2022-2023.pdf
+Clubes/Países Bajos/NAC Breda/NAC-Breda-Jaarrekening-2023-2024.pdf
+Clubes/Países Bajos/NAC Breda/NAC-Breda-Jaarrekening-2024-2025.pdf
+Clubes/Países Bajos/NEC/NEC-Holding-Jaarrekening-2023-2024.pdf
+Clubes/Países Bajos/NEC/NEC-Jaarverslag-2014-2015.pdf
+Clubes/Países Bajos/NEC/NEC-Jaarverslag-2016-2017.pdf
+Clubes/Países Bajos/NEC/NEC-Jaarverslag-2017-2018.pdf
+Clubes/Países Bajos/NEC/NEC-Jaarverslag-2021-2022.pdf
+Clubes/Países Bajos/NEC/NEC-Jaarverslag-2024-2025.pdf
+Clubes/Países Bajos/PEC Zwolle/PEC-Zwolle-Jaarverslag-2021-2022.pdf
+Clubes/Países Bajos/PEC Zwolle/PEC-Zwolle-Publicatie-2020-2021.pdf
+Clubes/Países Bajos/PEC Zwolle/PEC-Zwolle-Publicatie-Jaarverslag-2022-2023.pdf
+Clubes/Países Bajos/PEC Zwolle/wf-2023-2024-8c305db0.pdf
+Clubes/Países Bajos/PEC Zwolle/wf-2024-2025-aaba1b62.pdf
+Clubes/Países Bajos/PSV/PSV-Jaarverslag-2016-2017.pdf
+Clubes/Países Bajos/PSV/PSV-Jaarverslag-2017-2018.pdf
+Clubes/Países Bajos/PSV/PSV-Jaarverslag-2018-2019.pdf
+Clubes/Países Bajos/PSV/PSV-Jaarverslag-2019-2020.pdf
+Clubes/Países Bajos/PSV/PSV-Jaarverslag-2020-2021.pdf
+Clubes/Países Bajos/PSV/PSV-Jaarverslag-2021-2022.pdf
+Clubes/Países Bajos/PSV/PSV-Jaarverslag-2022-2023.pdf
+Clubes/Países Bajos/PSV/PSV-Jaarverslag-2023-2024.pdf
+Clubes/Países Bajos/PSV/PSV-Jaarverslag-2024-2025.pdf
+Clubes/Países Bajos/Roda JC/Jaarrekening-Holding-Roda-Kerkrade-NV-2011-2012.pdf
+Clubes/Países Bajos/Roda JC/wf-2024-2025-e1694c69.pdf
+Clubes/Países Bajos/Roda JC/wf-src-Jaarverslag-Roda-JC-2022-2023-1.pdf
+Clubes/Países Bajos/SC Cambuur/Jaarverslag-SC-Cambuur-2023-2024.pdf
+Clubes/Países Bajos/SC Cambuur/Jaarverslag-SC-Cambuur-2024-2025.pdf
+Clubes/Países Bajos/SC Heerenveen/SC-Heerenveen-Jaarverslag-2021-2022.pdf
+Clubes/Países Bajos/SC Heerenveen/SC-Heerenveen-Jaarverslag-2022-2023.pdf
+Clubes/Países Bajos/SC Heerenveen/SC-Heerenveen-Jaarverslag-2023-2024.pdf
+Clubes/Países Bajos/SC Heerenveen/SC-Heerenveen-Jaarverslag-2024-2025.pdf
+Clubes/Países Bajos/Sparta Rotterdam/Sparta-Jaarrekening-2018-2019.pdf
+Clubes/Países Bajos/Sparta Rotterdam/Sparta-Jaarrekening-2019-2020.pdf
+Clubes/Países Bajos/Sparta Rotterdam/Sparta-Jaarrekening-2020-2021.pdf
+Clubes/Países Bajos/Sparta Rotterdam/Sparta-Jaarrekening-2024-2025.pdf
+Clubes/Países Bajos/Sparta Rotterdam/wf-2022-2023-4f71fcba.pdf
+Clubes/Países Bajos/Sparta Rotterdam/wf-2023-2024-7bc9c6f8.pdf
+Clubes/Países Bajos/Sparta Rotterdam/wf-src-Jaarrekening-Sparta-Beheer-BV-2021-2022_.pdf
+Clubes/Países Bajos/Telstar/Telstar-Bestuursverslag-2023-2024.pdf
+Clubes/Países Bajos/Telstar/Telstar-Bestuursverslag-2024-2025.pdf
+Clubes/Países Bajos/Telstar/Telstar-Jaarrekening-2023-2024.pdf
+Clubes/Países Bajos/Telstar/Telstar-Jaarverslag-2024-2025-full.pdf
+Clubes/Países Bajos/Telstar/wf-2022-2023-cc155c0a.pdf
+Clubes/Países Bajos/VVV-Venlo/jaarverslag_2021-2022_-_vvv-venlo_bv-1.pdf
+Clubes/Países Bajos/VVV-Venlo/jaarverslag_2022-2023_-_vvv-venlo_bv-1.pdf
+Clubes/Países Bajos/VVV-Venlo/jaarverslag_2023-2024_-_vvv-venlo_bv.pdf
+Clubes/Países Bajos/VVV-Venlo/jaarverslag_2024-2025_-_vvv-venlo_bv.pdf
+Clubes/Países Bajos/VVV-Venlo/vvv_jaarrekening-17-18.pdf
+Clubes/Países Bajos/VVV-Venlo/wf-2023-2024-f68df500.pdf
+Clubes/Países Bajos/VVV-Venlo/wf-2024-2025-0083e8a5.pdf
+Clubes/Países Bajos/Vitesse/wf-2022-2023-b20f011d.pdf
+Clubes/Países Bajos/Vitesse/wf-2023-2024-be6334b7.pdf
+Clubes/Países Bajos/Vitesse/wf-src-vitesse-jaarverslag-2021-2022.pdf
+Clubes/Países Bajos/Willem II/Jaarverslag-2010_2011.ashx.pdf
+Clubes/Países Bajos/Willem II/Jaarverslag-2013-2014.ashx.pdf
+Clubes/Países Bajos/Willem II/Jaarverslag-2014-2015.ashx.pdf
+Clubes/Países Bajos/Willem II/Jaarverslag-2015-2016.pdf
+Clubes/Países Bajos/Willem II/Jaarverslag-2016-2017_1.pdf
+Clubes/Países Bajos/Willem II/Jaarverslag-2018-2019-Willem-II-Tilburg-BV.pdf
+Clubes/Países Bajos/Willem II/Jaarverslag-2019-2020-Willem-II-Tilburg-BV.pdf
+Clubes/Países Bajos/Willem II/Jaarverslag-2022-2023.pdf
+Clubes/Países Bajos/Willem II/Jaarverslag-Willem-II-Tilburg-BV-2017---2018_0.pdf
+Clubes/Países Bajos/Willem II/Willem-II-Jaarverslag-2023-2024_0.pdf
+Clubes/Países Bajos/Willem II/Willem-II-Jaarverslag-2024-2025.pdf
+Clubes/Países Bajos/Willem II/Willem-II-Jaarverslag-_2021-2022_.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2005.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2006.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2007.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2008.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2009.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2010.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2011.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2012.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2013.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2014.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2015.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2016.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2017.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2018.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2019.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-2020.pdf
+Clubes/Suiza/Basel/geschaeftsbericht-unternehmen-2021.pdf
+Clubes/Suiza/FC Aarau/geschaeftsbericht25.pdf
+Clubes/Suiza/Luzern/geschaeftsbericht-2017-18.pdf
+Clubes/Suiza/Luzern/geschaeftsbericht-2018-19.pdf
+Clubes/Suiza/Luzern/geschaeftsbericht-2019-20.pdf
+Clubes/Suiza/Luzern/geschaeftsbericht-2021-22.pdf
+Clubes/Suiza/Luzern/geschaeftsbericht-2022-23.pdf
+Clubes/Suiza/Luzern/geschaeftsbericht-2023-24.pdf
+Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.pdf
+Clubes/Suiza/St. Gallen/geschaeftsbericht-2018-19.pdf
+Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.pdf
+Clubes/Suiza/St. Gallen/geschaeftsbericht-2020-21.pdf
+Clubes/Suiza/St. Gallen/geschaeftsbericht-2021-22.pdf
+Clubes/Suiza/St. Gallen/geschaeftsbericht-2022-23.pdf
+Clubes/Suiza/St. Gallen/geschaeftsbericht-2023-24.pdf
+Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.pdf
+Clubes/Suiza/St. Gallen/revisionsbericht-ag-2024-25.pdf
+Clubes/Suiza/St. Gallen/revisionsbericht-event-ag-2024-25.pdf
+Clubes/Suiza/Thun/geschaeftsbericht-2011-12.pdf
+Clubes/Suiza/Thun/geschaeftsbericht-2012-13.pdf
+Clubes/Suiza/Thun/geschaeftsbericht-2013-14.pdf
+Clubes/Suiza/Thun/geschaeftsbericht-2014-15.pdf
+Clubes/Suiza/Thun/geschaeftsbericht-2015-16.pdf
+Clubes/Suiza/Thun/geschaeftsbericht-2016-17.pdf
+Clubes/Suiza/Thun/geschaeftsbericht-2018.pdf
+Clubes/Suiza/Thun/geschaeftsbericht-2019.pdf
+Clubes/Suiza/Thun/geschaeftsbericht-2020.pdf
+Clubes/Suiza/Thun/geschaeftsbericht-2021.pdf
+Clubes/Suiza/Thun/geschaeftsbericht-2022.pdf
+Clubes/Suiza/Thun/geschaeftsbericht-2023.pdf
+Clubes/Suiza/Thun/geschaeftsbericht-2024.pdf
+Clubes/Suiza/Young Boys/geschaeftsjahr-2018.pdf
+Clubes/Suiza/Young Boys/geschaeftsjahr-2020.pdf
+Clubes/Suiza/Young Boys/geschaeftsjahr-2021.pdf
+Clubes/Suiza/Young Boys/geschaeftsjahr-2022.pdf
+Clubes/Suiza/Young Boys/geschaeftsjahr-2023.pdf
+Clubes/Suiza/Young Boys/geschaeftsjahr-2024.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2006.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2007.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2008.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2009.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2010.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2011.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2014.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2015.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2016.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2017.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2018.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2019.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2020.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2021.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2022.pdf
+Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2023.pdf
