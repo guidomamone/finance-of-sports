@@ -118,7 +118,7 @@ const volosnfcgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κύκλος εργασιών', lado:'revenue', importe:2.177347, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null, staffCost:1.168861,
+    grossDebt:0, cash:1.419534, staffCost:1.168861,
     officialTotalRevenue:3.05716, officialTotalExpenses:2.741153, officialPAT:0.28758,
   },
   2022: {
@@ -136,7 +136,7 @@ const volosnfcgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κύκλος εργασιών', lado:'revenue', importe:3.574025, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null, staffCost:2.262043,
+    grossDebt:0, cash:0.794381, staffCost:2.262043,
     officialTotalRevenue:4.205181, officialTotalExpenses:4.084616, officialPAT:0.085124,
   },
   2023: {
@@ -154,7 +154,7 @@ const volosnfcgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κύκλος εργασιών', lado:'revenue', importe:4.198075, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null, staffCost:2.519034,
+    grossDebt:0, cash:2.063576, staffCost:2.519034,
     officialTotalRevenue:5.554788, officialTotalExpenses:4.432912, officialPAT:0.867604,
   },
   2024: {
@@ -172,7 +172,7 @@ const volosnfcgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κύκλος εργασιών', lado:'revenue', importe:3.377522, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null, staffCost:2.845299,
+    grossDebt:0, cash:1.440092, staffCost:2.845299,
     officialTotalRevenue:5.872569, officialTotalExpenses:5.379128, officialPAT:0.383182,
   },
   2025: {
@@ -190,7 +190,7 @@ const volosnfcgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κύκλος εργασιών', lado:'revenue', importe:4.639776, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:1.536396,
     officialTotalRevenue:6.524534, officialTotalExpenses:5.978754, officialPAT:0.421947,
   },
 };

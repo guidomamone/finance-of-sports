@@ -77,6 +77,10 @@ tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Volos_balance_2025-06-30.md] Δάνεια vacía; Σύνολο LP 0,00; Σύνολο υποχρεώσεων 203.844,73. Sin préstamos ni pasivos largos; balance completo con total del pasivo.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Volos_balance_2025-06-30.md] Ταμειακά διαθέσιμα και ισοδύναμα = 1.536.396,31. Balance simplificado (Β.1.1 microempresa), individual; importes en euros.
+```
+
 ## 2024
 
 ### Ingresos
@@ -117,6 +121,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs --personal (2026-10-15): staffCost 2.845299 (compuerta: documento anterior): Jev (confianza 0.95): Volos_notes_2024-06-30.md L187 "Σύνολο κόστους μισθοδοσίας περιόδου"
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Volos_balance_2024-06-30.md] Δάνεια vacía; Σύνολο LP 0,00; Σύνολο υποχρεώσεων 248.422,08. Sin préstamos ni pasivos largos; balance completo con total del pasivo.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Volos_balance_2024-06-30.md] Ταμειακά διαθέσιμα και ισοδύναμα = 1.440.092,36. Balance simplificado (Β.1.1 microempresa), individual; importes en euros.
+```
+
 ## 2023
 
 ### Ingresos
@@ -155,6 +163,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/caja-deuda.mjs --personal (2026-10-15): staffCost 2.519034 (compuerta: documento siguiente): Jev (confianza 0.93): Volos_notes_2023-06-30.md L167 "Σύνολο κόστους μισθοδοσίας περιόδου"
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Volos_balance_2023-06-30.md] Σύνολο LP 0,00; Δάνεια vacía; Σύνολο υποχρεώσεων 1304305,71. Sin préstamos ni pasivos largos; el .md de 2021-2023 tiene la tabla de pasivos desordenada (valores sueltos tras las etiquetas).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Volos_balance_2023-06-30.md] Ταμειακά διαθέσιμα και ισοδύναμα = 2063576,32. Balance simplificado (Β.1.1 microempresa), individual; importes en euros.
 ```
 
 ## 2022
@@ -198,6 +210,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs --personal (2026-10-15): staffCost 2.262043 (compuerta: documento siguiente): Jev (confianza 0.95): Volos_notes_2022-06-30.md L167 "Σύνολο κόστους μισθοδοσίας περιόδου"
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Volos_balance_2022-06-30.md] Σύνολο LP 0,00; Δάνεια vacía; Σύνολο υποχρεώσεων 691463,32. Sin préstamos ni pasivos largos; el .md de 2021-2023 tiene la tabla de pasivos desordenada (valores sueltos tras las etiquetas).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Volos_balance_2022-06-30.md] Ταμειακά διαθέσιμα και ισοδύναμα = 794380,88. Balance simplificado (Β.1.1 microempresa), individual; importes en euros.
+```
+
 ## 2021
 
 ### Ingresos
@@ -237,6 +253,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/caja-deuda.mjs --personal (2026-10-15): staffCost 1.168861 (compuerta: documento siguiente): Jev (confianza 0.77): Volos_notes_2021-06-30.md L189 "Σύνολο κόστους μισθοδοσίας περιόδου"
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Volos_balance_2021-06-30.md] Σύνολο LP 0,00; Δάνεια vacía; Σύνολο υποχρεώσεων 1200879,37. Sin préstamos ni pasivos largos; el .md de 2021-2023 tiene la tabla de pasivos desordenada (valores sueltos tras las etiquetas).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): [Volos_balance_2021-06-30.md] Ταμειακά διαθέσιμα και ισοδύναμα = 1419533,65. Balance simplificado (Β.1.1 microempresa), individual; importes en euros.
 ```
 
 ## 2020

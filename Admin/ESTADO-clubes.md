@@ -211,7 +211,7 @@ GR (14)
   Panetolikos       8 ejercicios (2016/2017, 2017/2018, 2019/2020, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR
   Panserraikos      2 ejercicios (2022/2023, 2024/2025), balance, EUR
   PAOK              8 ejercicios (2016/2017, 2018/2019, 2019/2020, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR
-  Volos NFC         7 ejercicios (2018/2019 a 2024/2025), balance, EUR, sin deuda/caja
+  Volos NFC         7 ejercicios (2018/2019 a 2024/2025), balance, EUR
 
 HR (8)
   Dinamo Zagreb  1 ejercicio (2024), balance, EUR
