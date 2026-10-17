@@ -150,6 +150,10 @@ tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento anterior): "Totale disponibilità liquide" pág. 3
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): banche 117.422 + altri finanziatori 63.105 = 180.527. Soci "-".
+```
+
 ### Liga
 
 ```text
@@ -235,6 +239,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Totale disponibilità liquide" pág. 3
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): banche 570.775 + altri finanziatori 493.645 = 1.064.420. Soci "-".
 ```
 
 ### Liga
@@ -324,6 +332,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Totale disponibilità liquide" pág. 3
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): soci 0 + banche 998.414 + altri finanziatori 1.124.667 = 2.123.081. Sin obbligazioni; soci "-".
+```
+
 ### Liga
 
 ```text
@@ -398,6 +410,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Totale disponibilità liquide" pág. 3
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): soci 0 + banche 1.436.044 + altri finanziatori 2.150.670 = 3.586.714. Sin obbligazioni; soci 0 (renunciado en el ejercicio).
 ```
 
 ### Liga
