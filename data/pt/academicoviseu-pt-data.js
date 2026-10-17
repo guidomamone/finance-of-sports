@@ -206,7 +206,7 @@ const academicoviseuptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-1.851369},
       {label:'Imposto sobre o rendimento do período', value:-0.015107},
     ],
-    grossDebt:null, cash:1.606025,
+    grossDebt:28.741914, cash:1.606025,
     officialTotalRevenue:5.989118, officialTotalExpenses:12.87398, officialPAT:-8.684755,
   },
   2023: {
@@ -220,7 +220,7 @@ const academicoviseuptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.713088},
       {label:'Imposto sobre o rendimento do período', value:-0.018534},
     ],
-    grossDebt:null, cash:1.50592,
+    grossDebt:16.291914, cash:1.50592,
     officialTotalRevenue:1.71878, officialTotalExpenses:10.908252, officialPAT:-9.921095,
   },
   2024: {
@@ -234,7 +234,7 @@ const academicoviseuptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-1.423949},
       {label:'Imposto sobre rendimento do período', value:-0.017023},
     ],
-    grossDebt:null, cash:1.540896,
+    grossDebt:25.141914, cash:1.540896,
     officialTotalRevenue:1.568093, officialTotalExpenses:12.789802, officialPAT:-12.682053,
   },
   2022: {

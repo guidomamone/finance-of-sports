@@ -116,6 +116,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 9
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos no corriente - (cero) + corriente 28.741.914,15 (suprimentos HOBRA GMBH & CO. KG). Todo vencido a corto plazo; nota 5 línea 656 lo abre como suprimentos de HOBRA.
+```
+
 ### Liga
 
 ```text
@@ -200,6 +204,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 9
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos no corriente 4.800.000,00 + corriente 20.341.914,15 (suprimentos HOBRA GMBH & CO. KG). Nota 6 de Financiamentos obtidos: suprimentos HOBRA 20.341.914,15 corriente + 4.800.000,00 no corriente.
+```
+
 ### Liga
 
 ```text
@@ -264,6 +272,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 6
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos no corriente 9 107 159,12 + corriente 7 184 755,03 (todo suprimentos de la accionista HOBRA GMBH & CO. KG, 16.291.914,15 según nota). Balance individual SAD; la nota 5 (suprimentos de participantes de capital 16 291 914,15) confirma la suma.
 ```
 
 ### Liga
