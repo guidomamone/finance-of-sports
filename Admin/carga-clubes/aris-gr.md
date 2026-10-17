@@ -119,6 +119,10 @@ tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento anterior): "Μετρητά και ταμειακά ισοδύναμα" pág. 13
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Τραπεζικά και άλλα δάνεια (corriente) 3.323.148 + μακροπρόθεσμα -; Λογαριασμοί πληρωτέοι σε όμιλο οντοτήτων -. Sin deuda no corriente.
+```
+
 ### Liga
 
 ```text
@@ -188,6 +192,10 @@ tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguiente): "Μετρητά και ταμειακά ισοδύναμα" pág. 13
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Τραπεζικά και άλλα δάνεια (corriente) 3.268.189 + Τραπεζικά και άλλα μακροπρόθεσμα δάνεια -. Nota 7 de préstamos bancarios.
+```
+
 ### Liga
 
 ```text
@@ -242,6 +250,10 @@ tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguiente): "Μετρητά και ταμειακά ισοδύναμα" pág. 13
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Τραπεζικά και άλλα δάνεια (corriente) 2.561.630 + Τραπεζικά και άλλα μακροπρόθεσμα δάνεια -. Nota 7: endeudamiento bancario a corto plazo de 2.561.630.
 ```
 
 ### Liga
@@ -302,6 +314,10 @@ tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguiente): "Μετρητά και ταμειακά ισοδύναμα" pág. 12
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Τραπεζικά και άλλα μακροπρόθεσμα δάνεια 54,670; sin deuda corriente. Documento 'art47' en resumen (importes sin decimales, 'σε €'); un solo estado. El perímetro cargado es consolidado; el 2023 trae 2022 sin préstamo corriente ('-') y largo 54.670, coincide.
+```
+
 ### Liga
 
 ```text
@@ -344,6 +360,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2022, 2023, 2024, 2025): Comercial / Sponsors, Estadio, Televisión, Premios por competencias, Compra de jugadores, Salarios y primas (plantel y cuerpo técnico), Organización de partidos
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Δάνεια 109.340,00 + Δάνεια σε όμιλο οντοτήτων και συνδεδεμένα μέρη 1.441.643,36. Ambas filas están en 'Δάνεια' (nota 9.1.1), todo no corriente. La de 1.441.643 es un préstamo cedido de una relacionada (Karipidis) que la nota de 2022 dice saldado en el ejercicio; la incluyo por el criterio de préstamos de relacionadas.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Ταμειακά διαθέσιμα και ισοδύναμα 649.381,69. Balance individual.
 ```
 
 ### Liga
@@ -389,6 +409,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2022, 2023, 2024, 2025): Comercial / Sponsors, Estadio, Televisión, Premios por competencias, Compra de jugadores, Salarios y primas (plantel y cuerpo técnico), Inversiones (amortizaciones y depreciación), Organización de partidos
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Μακροπρόθεσμες υποχρεώσεις: Δάνεια 0,00; sin préstamos en el corto plazo. Pasivo completo (Σύνολο υποχρεώσεων 3.740.493,04), sin fila financiera; 'Λοιπές υποχρεώσεις' (9.1.3) son acreedores y sueldos.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Ταμειακά διαθέσιμα και ισοδύναμα 420.500,00. Balance individual de la ΠΑΕ.
 ```
 
 ### Liga
