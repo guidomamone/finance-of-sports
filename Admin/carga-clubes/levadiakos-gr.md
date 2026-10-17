@@ -76,6 +76,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-16): cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 16
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Balance completo (Σύνολο υποχρεώσεων 1.885.795,62): 'Λοιπές μακροπρόθεσμες υποχρεώσεις' 43.729,46 no son préstamos. Sin fila financiera; la otra deuda largo plazo 43.729,46 no está identificada como préstamo (no abrí su nota).
+```
+
 ### Liga
 
 ```text
@@ -115,6 +119,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/caja-deuda.mjs (2026-10-13): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 1
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Balance completo (Σύνολο υποχρεώσεων 967.181,06): sin fila de préstamos. Sin deuda financiera.
 ```
 
 ### Liga
@@ -158,6 +166,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-13): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 2
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Κρατικά δάνεια (corriente) 0,00; sin otra fila financiera. Balance completo (Σύνολο υποχρεώσεων 2.480.910,11); 'Έσοδα επόμενων χρήσεων' 1.442.860,39 es ingreso diferido, excluido.
+```
+
 ### Liga
 
 ```text
@@ -197,6 +209,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/caja-deuda.mjs (2026-10-13): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 15
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Κρατικά δάνεια (corriente) 127.178,64 + Κρατικά δάνεια (no corriente) 0,00. Préstamos estatales; mismo criterio que 2021.
 ```
 
 ### Liga
@@ -240,6 +256,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-13): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 1
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Κρατικά δάνεια (no corriente) 284.281,67 + Βραχυπρόθεσμα δάνεια 14.962,20. Son préstamos estatales (la nota de 2022 los llama 'κρατικά δάνεια'); los incluyo como préstamos. Excluidas 'Κρατικές επιχορηγήσεις' 40.000 (subsidio).
+```
+
 ### Liga
 
 ```text
@@ -281,6 +301,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-13): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 1
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Balance completo (Σύνολο υποχρεώσεων 1.455.563,41): sin fila de préstamos. Sin deuda financiera.
+```
+
 ### Liga
 
 ```text
@@ -320,6 +344,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/caja-deuda.mjs (2026-10-13): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 1
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Balance completo (Σύνολο υποχρεώσεων 1.438.232,69): sólo impuestos, comerciales, seguridad social y otras; sin fila de préstamos. Sin deuda financiera.
 ```
 
 ### Liga
