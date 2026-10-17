@@ -145,11 +145,6 @@ Mitigaciones:
                   estados de los dos perímetros → cola. Solo al ejecutar (~US$ 0,02 por documento; caché Generados/_cache/claude-perimetro.jsonl).
                   Medición: Admin/mediciones/perimetro-a2-medicion.txt (75 documentos, 15 clubes); --exportar-a2 arma los pedidos para medir
                   sin API (los contestan subagentes de la sesión y se agregan a la caché)
-                  A2-Jev (to-do 233; APAGADO, `A2_JEV_ACTIVO`, hasta medirlo): antes de Claude, Jev con la misma entrada y las mismas
-                  preguntas, de opción cerrada entre las líneas mandadas; la compuerta es la misma (`compuertaA2`). Si no decide (3
-                  puntos, los dos perímetros, sin estado, más de `MAX_OPCIONES_JEV` opciones en una pregunta, error), Claude como siempre;
-                  la evidencia del ajuste dice "A2 (Jev): ..." aparte. Medición: `--medir-a2-jev --lista Admin/mediciones/perimetro-a2-lista.txt
-                  [--max-opciones N] [--ejecutar]` (Jev contra el ajuste `perimetro` y contra la caché de Claude; entra con 0 errores).
                   Auditoría a posteriori (to-do 227): los ajustes que escribe la regla del club nombran en su `evidencia` los
                   documentos que decidió A2; `--auditar-a2 <carpeta>` arma un pedido por documento para un subagente (grupo o
                   sociedad sola, con cita). Se corre después de cada país nuevo. La carpeta de `--auditar-a2` y la de

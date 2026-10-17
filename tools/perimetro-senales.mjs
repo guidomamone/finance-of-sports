@@ -40,14 +40,12 @@
 //   node tools/perimetro-senales.mjs --md "Clubes/Italia/AC Milan/x.md" --detalle      # un documento, con cada tabla encontrada
 //   node tools/perimetro-senales.mjs --md "Clubes/Grecia/Aris/x.md" --ver-a2           # el texto que recibiría Claude en A2 (gratis)
 //   node tools/perimetro-senales.mjs --lista <txt> --exportar-a2 <carpeta>             # los pedidos de A2 sin caché, para contestarlos sin API
-//   node tools/perimetro-senales.mjs --medir-a2-jev --lista Admin/mediciones/perimetro-a2-lista.txt [--max-opciones N] [--ejecutar]   # (to-do 233) Jev vs Claude vs ajuste
 //   node tools/perimetro-senales.mjs --auditar-a2 <carpeta>                             # auditoría a posteriori: lo que decidió A2 en corridas reales
 // Jev: Admin/api-keys/jev.env con JEV_API_KEY=...; respuestas guardadas en Generados/_cache/jev-perimetro.jsonl (no se paga dos veces).
 // ============================================================================
 import { readFileSync, existsSync, appendFileSync, mkdirSync } from 'node:fs';
 import { resolve, dirname, relative, isAbsolute, sep } from 'node:path';
 import { createHash } from 'node:crypto';
-import { pedirJev } from './jev-llamada.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
@@ -335,11 +333,7 @@ async function pasoA2(mdRel, lineas) {
     datos = r.datos;
     mkdirSync(dirname(CACHE_A2), { recursive: true }); appendFileSync(CACHE_A2, JSON.stringify({ clave, md: mdRel, datos }) + '\n'); cacheA2.set(clave, { datos });
   }
-  return compuertaA2(tit, portada, datos);
-}
-// LA COMPUERTA DE A2 (una sola, la usan A2-Jev y A2-Claude; to-do 233): `datos` con la forma de ESQUEMA_A2 (linea_estado, linea_otro_estado,
-// columnas_de_los_dos, criterios { k: { si, linea } }). Cada sí cuenta solo si su línea es una de las mandadas (ver arriba).
-function compuertaA2(tit, portada, datos) {
+  // La compuerta.
   const est = tit.find((t) => t.tabla && t.linea === datos.linea_estado);
   if (!est) return { motivo: datos.linea_estado == null ? 'Claude no encontró ningún estado de resultados' : `L${datos.linea_estado} no es un título con tabla` };
   // El otro estado cuenta aunque su tabla no se haya reconocido (FC Groningen 2024-25: el individual de la Beheer B.V. sin tabla marcada).
@@ -358,58 +352,6 @@ function compuertaA2(tit, portada, datos) {
   return { estado: est.linea, otro: otro?.linea ?? null, columnasDeLosDos: !!datos.columnas_de_los_dos, votos, puntos };
 }
 
-// ---------------------------------------------------------------- PASO A2-Jev (to-do 233, ok de Guido 2026-10-17): Jev antes de Claude
-// La misma entrada que recibe Claude (portada y títulos, textoA2) y las mismas preguntas, pero de OPCIÓN CERRADA entre las líneas que se
-// mandaron: Jev nunca dice "consolidado"; elige líneas, y la compuerta de siempre (compuertaA2) suma los puntos. Una llamada por documento
-// (~US$ 0,005 contra ~US$ 0,057 de Claude). Decide solo lo que la compuerta decide (4 o más puntos, o 2 o menos, con un estado y sin los dos
-// perímetros); lo demás (3 puntos, los dos perímetros, sin estado, error, demasiadas opciones) baja a A2-Claude, como si Jev no estuviera.
-// Medición antes de entrar: --medir-a2-jev (0 errores contra el ajuste `perimetro`). Respuestas en Generados/_cache/jev-perimetro-a2.jsonl.
-const CACHE_A2_JEV = resolve(ROOT, 'Generados', '_cache', 'jev-perimetro-a2.jsonl');
-export const MAX_OPCIONES_JEV = 300; // más opciones que esto en una pregunta: Jev no decide (baja a Claude). Se fija con la medición.
-// APAGADO hasta que --medir-a2-jev dé 0 errores contra la verdad (condición de Guido para que entre). Mientras tanto A2 es solo Claude, igual
-// que antes; la medición corre igual.
-export const A2_JEV_ACTIVO = false;
-function pedidoA2Jev(tit, portada) {
-  const t400 = tit.slice(0, 400); // lo mismo que ve Claude (textoA2)
-  const corto = (x) => String(x).slice(0, 110);
-  const conTabla = Object.fromEntries(t400.filter((t) => t.tabla).map((t) => [`L${t.linea}`, corto(t.titulo)]));
-  const titulos = Object.fromEntries(t400.map((t) => [`L${t.linea}`, corto(t.titulo)]));
-  const textos = Object.fromEntries(t400.flatMap((t) => t.texto.map((x) => [`L${x.linea}`, corto(x.texto)])));
-  const portadaOp = Object.fromEntries(portada.map((p) => [`L${p.linea}`, corto(p.texto)]));
-  const ningun = { ninguno: 'Ninguna de estas líneas.' };
-  const no = { no: 'No: ninguna línea lo dice (o solo lo dice de otra sociedad, por ejemplo del grupo dueño del club).' };
-  const crit = (instr, opciones) => ({ type: 'choice', instructions: instr, criteria: { ...opciones, ...no } });
-  const questions = {
-    estado: { type: 'choice', instructions: 'Línea del título del ESTADO DE RESULTADOS (cuenta de pérdidas y ganancias, income statement) del ejercicio. No cuentes notas, resúmenes ni tablas de otra cosa.', criteria: { ...conTabla, ...ningun } },
-    otro: { type: 'choice', instructions: 'Si el documento trae además OTRO estado de resultados de distinto perímetro (uno del grupo y otro de la sociedad sola), la línea de su título.', criteria: { ...titulos, ...ningun } },
-    columnas: { type: 'choice', instructions: '¿La tabla del estado de resultados trae columnas de los dos perímetros a la vez ("grupo" y "sociedad", "Koncern" y "Moderselskab", "consolidado" e "individual")?', criteria: { si: 'Sí, columnas de los dos perímetros.', no: 'No.' } },
-    titulo: crit('¿El título del estado de resultados, o el título o el texto de introducción de su sección (más arriba), dice que es CONSOLIDADO / del grupo? Elegí la línea que lo dice.', { ...titulos, ...textos }),
-    texto: crit('¿El texto entre el título del estado de resultados y su tabla, o el que explica cómo se presentan sus cifras, dice que es CONSOLIDADO / del grupo? Elegí la línea.', textos),
-    auditor: crit('¿El informe del auditor (un título o un texto suyo) dice que auditó estados CONSOLIDADOS? Elegí la línea.', { ...titulos, ...textos }),
-    grupo: crit('¿Hay una sección sobre la estructura del grupo o las controladas que entran en la consolidación de ESTA sociedad (no la del grupo dueño del que es filial)? Elegí la línea.', { ...titulos, ...textos }),
-    portada: crit('¿La portada o el encabezado dice consolidado? Elegí la línea.', portadaOp),
-  };
-  const opciones = Math.max(...Object.values(questions).map((q) => Object.keys(q.criteria).length));
-  return { body: { state: textoA2(tit, portada), model: 'jev-latest', questions }, opciones };
-}
-export async function pasoA2Jev(mdRel, lineas, ejecutar, maxOpciones = MAX_OPCIONES_JEV) {
-  const tit = titulosDelDocumento(lineas);
-  if (!tit.some((t) => t.tabla)) return { motivo: 'ningún título con tabla' };
-  const portada = portadaDelDocumento(lineas);
-  const { body, opciones } = pedidoA2Jev(tit, portada);
-  if (opciones > maxOpciones) return { motivo: `${opciones} opciones en una pregunta (más de ${maxOpciones})`, opciones };
-  const linea = (c) => (c && /^L\d+$/.test(c) ? Number(c.slice(1)) : null);
-  const r = await pedirJev(body, CACHE_A2_JEV, ejecutar, (a) => (a.estado?.choice ? {
-    linea_estado: linea(a.estado.choice), linea_otro_estado: linea(a.otro?.choice), columnas_de_los_dos: a.columnas?.choice === 'si',
-    criterios: Object.fromEntries(Object.keys(PESOS_A2).map((k) => [k, { si: linea(a[k]?.choice) != null, linea: linea(a[k]?.choice) }])),
-  } : null));
-  if (r.ensayo) return { ensayo: true, usd: r.usd, opciones };
-  if (r.error) return { error: r.error, opciones };
-  return { ...compuertaA2(tit, portada, r.datos), costo: r.costo || 0, opciones };
-}
-// ¿La compuerta decide con este resultado de A2? (lo mismo para Jev y para Claude)
-const a2Decide = (a) => a && a.estado != null && a.otro == null && !a.columnasDeLosDos && (a.puntos >= UMBRAL_A2_CONS || a.puntos <= UMBRAL_A2_IND);
-
 // ---------------------------------------------------------------- la propuesta de un documento
 export async function proponer(mdRel, { jev = false } = {}) {
   const md = readFileSync(resolve(ROOT, mdRel), 'utf8');
@@ -421,15 +363,12 @@ export async function proponer(mdRel, { jev = false } = {}) {
     r.pasoA = 'sin-tablas'; r.motivo = 'no encontré ninguna tabla con el total de ingresos';
     // PASO A2 (Claude; pago, así que solo al ejecutar: en el ensayo queda pendiente).
     if (!jev) { r.a2 = { pendiente: true }; return r; }
-    // (to-do 233) A2-Jev primero; si su resultado no lo decide la compuerta, A2-Claude como siempre (lo de Jev queda en r.a2Jev).
-    const L = md.split('\n'); const aj = A2_JEV_ACTIVO ? await pasoA2Jev(mdRel, L, true) : null;
-    const quien = a2Decide(aj) ? 'Jev' : 'Claude';
-    const a = quien === 'Jev' ? aj : await pasoA2(mdRel, L); r.a2 = a; if (quien === 'Claude' && aj) r.a2Jev = aj;
+    const a = await pasoA2(mdRel, md.split('\n')); r.a2 = a;
     if (a.error) { r.motivo += `; A2 falló (${a.error})`; return r; }
     if (a.estado == null) { r.motivo += `; A2: ${a.motivo}`; return r; }
     const v = Object.entries(a.votos).map(([k, x]) => `${k} ${x.si ? `sí L${x.linea}` : x.rechazado ? `rechazado L${x.linea}` : 'no'}`).join(', ');
     if (a.otro != null || a.columnasDeLosDos) { r.pasoA = 'a2-los-dos'; r.motivo = `A2 (Claude): estado L${a.estado} ${a.otro != null ? `y otro de distinto perímetro L${a.otro}` : 'con columnas de los dos perímetros'}, sin totales reconocidos para votar`; return r; }
-    const base = `A2 (${quien}) estado L${a.estado}, ${a.puntos} de 10 puntos (${v})`;
+    const base = `A2 (Claude) estado L${a.estado}, ${a.puntos} de 10 puntos (${v})`;
     if (a.puntos >= UMBRAL_A2_CONS) { r.pasoA = 'solo-consolidado'; r.propuesta = 'consolidado'; r.motivo = base; }
     else if (a.puntos <= UMBRAL_A2_IND) { r.pasoA = 'solo-individual'; r.propuesta = 'individual'; r.motivo = base; }
     else r.motivo = `${base}: a la cola`;
@@ -528,12 +467,11 @@ export async function fijarPerimetroDeClubes(pdfs, { registro, ejecutar = false,
     if (!valor && !porDocumento.length) { out.push({ carpeta: c, valor: null, porDocumento, detalle: 'ningún documento del club decide' }); continue; }
     // (to-do 227) los documentos que decidió el paso A2 (Claude) quedan en la `evidencia` del ajuste ("A2 (Claude): <md>; <md>"), para la
     // auditoría a posteriori (--auditar-a2).
-    // (to-do 233) lo que decidió A2-Jev va aparte, "A2 (Jev): <md>; <md>", separado por " | " de lo de Claude: --auditar-a2 audita los dos.
-    const a2 = props.filter(({ r }) => r.propuesta && /^A2 \((Claude|Jev)\)/.test(r.motivo || '')).map(({ e, r }) => ({ md: e.md, quien: /^A2 \(Jev\)/.test(r.motivo) ? 'Jev' : 'Claude' }));
-    const evA2 = (xs) => (xs.length ? ['Claude', 'Jev'].map((q) => [q, xs.filter((x) => x.quien === q).map((x) => x.md)]).filter(([, m]) => m.length).map(([q, m]) => `A2 (${q}): ${m.join('; ')}`).join(' | ') : null);
+    const a2 = props.filter(({ r }) => r.propuesta && /^A2 \(Claude\)/.test(r.motivo || '')).map(({ e }) => e.md);
+    const evA2 = (mds) => (mds.length ? `A2 (Claude): ${mds.join('; ')}` : null);
     if (ejecutar) {
-      if (valor) agregarAjuste({ pdf: c, campo: 'perimetro', valor, motivo: `perimetro-senales.mjs: ${evidencia}`, evidencia: evA2(a2.filter((x) => !porDocumento.some((d) => x.md === d.pdf.replace(/\.pdf$/i, '.md')))), autor: 'perimetro-senales' });
-      for (const d of porDocumento) agregarAjuste({ pdf: d.pdf, campo: 'perimetro', valor: d.valor, motivo: `perimetro-senales.mjs: el ejercicio ${d.cierre} se publicó solo ${d.valor}${valor ? ` (el club es ${valor})` : ' (el club no tiene un perímetro único)'}; ${evidencia}`, evidencia: evA2(a2.filter((x) => x.md === d.pdf.replace(/\.pdf$/i, '.md'))), autor: 'perimetro-senales' });
+      if (valor) agregarAjuste({ pdf: c, campo: 'perimetro', valor, motivo: `perimetro-senales.mjs: ${evidencia}`, evidencia: evA2(a2.filter((m) => !porDocumento.some((d) => m === d.pdf.replace(/\.pdf$/i, '.md')))), autor: 'perimetro-senales' });
+      for (const d of porDocumento) agregarAjuste({ pdf: d.pdf, campo: 'perimetro', valor: d.valor, motivo: `perimetro-senales.mjs: el ejercicio ${d.cierre} se publicó solo ${d.valor}${valor ? ` (el club es ${valor})` : ' (el club no tiene un perímetro único)'}; ${evidencia}`, evidencia: evA2(a2.filter((m) => m === d.pdf.replace(/\.pdf$/i, '.md'))), autor: 'perimetro-senales' });
     }
     out.push({ carpeta: c, valor, porDocumento, escrito: ejecutar, detalle: `${evidencia}${porDocumento.length ? `; por documento: ${porDocumento.map((d) => `${d.pdf.split('/').pop()} ${d.valor}`).join(', ')}` : ''}` });
   }
@@ -559,9 +497,9 @@ async function main() {
   if (auditarF) {
     const { writeFileSync } = await import('node:fs');
     const aj = readFileSync(resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl'), 'utf8').split('\n').filter(Boolean).map((l) => JSON.parse(l))
-      .filter((a) => a.campo === 'perimetro' && a.autor === 'perimetro-senales' && !a.anulado && /^A2 \((Claude|Jev)\): /.test(a.evidencia || ''));
+      .filter((a) => a.campo === 'perimetro' && a.autor === 'perimetro-senales' && !a.anulado && /^A2 \(Claude\): /.test(a.evidencia || ''));
     const pedidos = []; const vistos = new Set();
-    for (const a of aj) for (const md of a.evidencia.split(' | ').flatMap((p) => p.replace(/^A2 \((Claude|Jev)\): /, '').split('; '))) {
+    for (const a of aj) for (const md of a.evidencia.replace(/^A2 \(Claude\): /, '').split('; ')) {
       if (vistos.has(md) || !existsSync(resolve(ROOT, md))) continue; vistos.add(md);
       pedidos.push({ n: pedidos.length + 1, md, decidido: a.valor, ajuste: a.pdf, fecha: a.fecha });
     }
@@ -569,45 +507,6 @@ async function main() {
     writeFileSync(resolve(dir, 'instruccion.txt'), `Para cada pedido de pedidos.jsonl: abrí el .md (md) con grep/sed por partes, ubicá el estado de resultados del ejercicio y decidí si es CONSOLIDADO (incluye a la sociedad y a sus controladas) o INDIVIDUAL (la sociedad sola). El pipeline decidió "decidido". Escribí <n>.json con {"perimetro": "consolidado"|"individual"|"no sé", "coincide": true|false, "cita": "línea del .md y qué dice", "explicacion": "una o dos oraciones"}. No edites nada del repositorio.`);
     writeFileSync(resolve(dir, 'pedidos.jsonl'), pedidos.map((p) => JSON.stringify(p)).join('\n') + (pedidos.length ? '\n' : ''));
     console.log(`${pedidos.length} documento(s) decididos por A2 para auditar en ${auditarF}${pedidos.length ? ' (instruccion.txt + pedidos.jsonl)' : ''}.`); return;
-  }
-  // --medir-a2-jev --lista <txt> [--ejecutar] (to-do 233): la medición del escalón A2-Jev ANTES de que decida nada. Por cada documento que
-  // pasa por A2 (sin tablas del paso A y con algún título con tabla): lo que decide Jev, lo que decidió Claude (solo de su caché: no se
-  // paga) y la verdad (el ajuste `perimetro` del documento o del club). Condición para entrar: 0 errores de Jev contra la verdad. Sin
-  // --ejecutar es un ensayo (costo estimado de Jev); con --ejecutar llama a Jev (las respuestas quedan en caché).
-  if (args.includes('--medir-a2-jev')) {
-    const lista = flagVal('--lista'); if (!lista) { console.error('Uso: --medir-a2-jev --lista <txt> [--ejecutar]'); process.exit(1); }
-    const ejecutar = args.includes('--ejecutar'); const maxOp = Number(flagVal('--max-opciones') || MAX_OPCIONES_JEV);
-    const { ajustePerimetroDe } = await import('./ajustes.mjs');
-    if (!cacheA2) { cacheA2 = new Map(); if (existsSync(CACHE_A2)) for (const l of readFileSync(CACHE_A2, 'utf8').split('\n')) { if (!l.trim()) continue; try { const j = JSON.parse(l); cacheA2.set(j.clave, j); } catch { /* línea rota */ } } }
-    const decision = (a) => (!a2Decide(a) ? null : a.puntos >= UMBRAL_A2_CONS ? 'consolidado' : 'individual');
-    const c = { docs: 0, sinVerdad: 0, usd: 0, jev: { bien: 0, mal: 0, no: 0 }, claude: { bien: 0, mal: 0, no: 0, sinCache: 0 }, iguales: 0, distintas: 0 }; const malos = [];
-    const mds = readFileSync(resolve(ROOT, lista), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#')).map((p) => p.replace(/\.pdf$/i, '.md'));
-    for (const md of mds) {
-      if (!existsSync(resolve(ROOT, md))) continue;
-      const txt = readFileSync(resolve(ROOT, md), 'utf8'); if (tablasDeIngresos(txt).tablas.length) continue; // lo decide el paso A
-      const L = txt.split('\n'); const tit = titulosDelDocumento(L); if (!tit.some((t) => t.tabla)) continue;
-      c.docs++;
-      const verdad = ajustePerimetroDe(md.replace(/\.md$/i, '.pdf'))?.valor || null; if (!verdad) c.sinVerdad++;
-      const portada = portadaDelDocumento(L);
-      const clave = createHash('sha1').update(JSON.stringify([SISTEMA_A2, textoA2(tit, portada)])).digest('hex');
-      const cl = cacheA2.get(clave)?.datos ? compuertaA2(tit, portada, cacheA2.get(clave).datos) : null;
-      const dc = cl ? decision(cl) : null; if (!cl) c.claude.sinCache++; else if (!dc) c.claude.no++; else if (verdad) c.claude[dc === verdad ? 'bien' : 'mal']++;
-      const j = await pasoA2Jev(md, L, ejecutar, maxOp);
-      let col;
-      if (j.ensayo) { c.usd += j.usd; col = `Jev ensayo ~US$ ${j.usd.toFixed(4)}`; }
-      else {
-        c.usd += j.costo || 0; const dj = j.error ? null : decision(j);
-        if (!dj) { c.jev.no++; col = `Jev no decide (${j.error || j.motivo || `${j.puntos ?? '?'} puntos${j.otro != null || j.columnasDeLosDos ? ', los dos perímetros' : ''}`})`; }
-        else { if (verdad) { c.jev[dj === verdad ? 'bien' : 'mal']++; if (dj !== verdad) malos.push(`${md}: Jev ${dj} (${j.puntos} puntos, estado L${j.estado}), verdad ${verdad}`); } col = `Jev ${dj} (${j.puntos} p, L${j.estado})`; }
-        if (dj && dc) c[dj === dc ? 'iguales' : 'distintas']++;
-      }
-      console.log(`${md.replace(/^Clubes\//, '').padEnd(72)} ${String(j.opciones ?? '—').padStart(5)} op · verdad ${String(verdad || '—').padEnd(11)} ${col.padEnd(46)} Claude ${!cl ? 'sin caché' : dc || `no decide (${cl.puntos ?? cl.motivo} p)`}`);
-    }
-    console.log(`\n${c.docs} documento(s) por A2 (${c.sinVerdad} sin ajuste \`perimetro\` para comparar). Jev: ${ejecutar ? `US$ ${c.usd.toFixed(4)}` : `ensayo, ~US$ ${c.usd.toFixed(4)} (agregá --ejecutar)`}.`);
-    if (ejecutar) console.log(`JEV contra la verdad: ${c.jev.bien} bien · ${c.jev.mal} MAL · ${c.jev.no} no decide (bajan a Claude). Jev y Claude, donde deciden los dos: ${c.iguales} iguales, ${c.distintas} distintas.`);
-    console.log(`CLAUDE (caché) contra la verdad: ${c.claude.bien} bien · ${c.claude.mal} MAL · ${c.claude.no} no decide · ${c.claude.sinCache} sin caché.`);
-    for (const m of malos) console.log('  MAL ' + m);
-    return;
   }
   const verdadF = flagVal('--verdad'); const listaF = flagVal('--lista'); const mdF = flagVal('--md');
   let items = [];
