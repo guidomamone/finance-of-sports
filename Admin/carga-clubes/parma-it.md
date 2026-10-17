@@ -124,6 +124,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti verso banche 7.100.827 (finanziamento a breve de la Capogruppo) + debiti verso controllanti 60.600.657 (87.227 entro + 60.513.430 oltre; finanziamenti soci). La nota dice que son finanziamenti soci pero la parte 87.227 a corto no esta explicada aparte.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Totale disponibilita liquide 10.788.917. Consolidado; cierre 31.12.2025.
+```
+
 ### Liga
 
 ```text
@@ -199,6 +203,10 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti verso banche 0 (-) + debiti verso controllanti (finanziamenti soci Krause) 40.409.646 (1.121.815 entro + 39.287.831 oltre). Nota dice que controllanti son finanziamenti soci; la parte corriente 1.121.815 no se detalla separadamente, se incluye entera.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Totale disponibilita liquide 6.830.192. Individual; cierre 31.12.2024.
 ```
 
 ### Liga
@@ -285,6 +293,10 @@ tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Totale disponibilità liquide" pág. 16
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti verso banche 1.440.620 + debiti verso controllanti (finanziamenti soci Krause Group Italia) 57.025.867. Debiti verso imprese controllate 2.400 excluidos; sin obbligazioni/altri finanziatori.
+```
+
 ## 2022
 
 ### Ingresos
@@ -355,6 +367,10 @@ tools/cargar.mjs (2026-10-08)
 ```text
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): perimetro = consolidado. Guido 2026-10-07: 2022 solo tiene consolidado; se carga así (el club es individual)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti verso banche 1.632.651 + debiti verso soci per finanziamenti 0 + altri finanziatori 0 + debiti verso controllanti (finanziamenti soci Krause Group Italia) 63.012.242. Controllanti 63.012.242 son integralmente finanziamenti soci infruttiferi (nota).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Depositi bancari e postali 15.766.674 + denaro e valori in cassa 19.348 = 15.786.022 (Totale IV). Consolidado; coincide con rendiconto finanziario y nota.
 ```
 
 ### Liga
@@ -437,6 +453,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti verso banche 1.839.794 + debiti verso altri finanziatori 28 + debiti verso controllanti (finanziamenti soci infruttiferi e postergati Gruppo Gentile) 59.816.002. Controllanti = finanziamenti soci segun nota (pag. 36); incluido como debiti verso soci per finanziamenti.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Depositi bancari e postali 13.585.659 + denaro e valori in cassa 18.615 = 13.604.274. Totale disponibilita liquide individual.
+```
+
 ### Liga
 
 ```text
@@ -515,6 +535,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento anterior): "Totale disponibilità liquide" pág. 14
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti verso banche 2.098.583 + debiti verso altri finanziatori 2.508.405 (factoring diritti TV) + debiti verso controllanti 1.440.000 (finanziamento soci Nuovo Inizio). Controllanti 1.440.000 son un finanziamento soci (nota pag. 34); en julio 2019 se devolvio. Si se excluyera, 4.606.988.
 ```
 
 ### Liga
@@ -602,6 +626,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Totale disponibilità liquide" pág. 11
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti verso soci per finanziamenti 1.000.000 + debiti verso banche 651.735. Sin obbligazioni ni altri finanziatori; debiti verso controllanti = 0 en 2018; el resto (altri debiti 11.757.531) es ente-settore specifico.
+```
+
 ### Liga
 
 ```text
@@ -686,6 +714,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 2 (compuerta: documento siguiente): "Totale debiti verso banche" pág. 9; cash escalón 1b (compuerta: documento siguiente): "Totale disponibilità liquide" pág. 8
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti verso banche 31.888 + finanziamento soci (Soci c/prestiti fruttiferi) 750.000 (dentro Debiti verso controllanti 753.424, resto 3.424 son otros debitos). Lo cargado (0,031888M) solo trae bancos; falta el prestito soci de 750.000 erogado por Nuovo Inizio en mayo 2017 (nota Debiti v/controllanti, pag. 24). Duda menor: 3.424 de Altri debiti vs controllanti excluidos.
+```
+
 ### Liga
 
 ```text
@@ -754,6 +786,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Totale disponibilità liquide" pág. 4
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Totale debiti 1.192.260 = fornitori 947.992 + tributari 114.247 + previdenza 9.347 + altri debiti 99.912; ninguna fila de obbligazioni/soci/banche/altri finanziatori. Primer ejercicio (30.06.2016): el pasivo no tiene ninguna fila financiera y tiene su total (Totale passivo 3.500.545).
 ```
 
 ### Liga
