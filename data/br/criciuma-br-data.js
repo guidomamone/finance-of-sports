@@ -318,7 +318,7 @@ const criciumabrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Departamento Futebol Profissional', lado:'expense', importe:16.888461, motivo:'Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; \'Departamento (Futebol) Profissional\' es el gasto del fútbol profesional sin desglose por naturaleza'},
     ],
-    grossDebt:null, cash:0.259982,
+    grossDebt:9.208141, cash:0.259982,
     officialTotalRevenue:26.139679, officialTotalExpenses:24.698791, officialPAT:0.047673,
   },
   2020: {
@@ -335,7 +335,7 @@ const criciumabrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Departamento Futebol Profissional', lado:'expense', importe:7.582374, motivo:'Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; \'Departamento (Futebol) Profissional\' es el gasto del fútbol profesional sin desglose por naturaleza'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:8.178546, cash:0.016676,
     officialTotalRevenue:13.829229, officialTotalExpenses:12.621667, officialPAT:0.710969,
   },
   2021: {
@@ -352,7 +352,7 @@ const criciumabrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Departamento Futebol Profissional', lado:'expense', importe:11.524382, motivo:'Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; \'Departamento (Futebol) Profissional\' es el gasto del fútbol profesional sin desglose por naturaleza'},
     ],
-    grossDebt:null, cash:0.490819,
+    grossDebt:11.552238, cash:0.490819,
     officialTotalRevenue:15.285978, officialTotalExpenses:18.02324, officialPAT:-3.007985,
   },
   2025: {
@@ -369,7 +369,7 @@ const criciumabrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Departamento Futebol Profissional', lado:'expense', importe:64.178298, motivo:'Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; \'Departamento (Futebol) Profissional\' es el gasto del fútbol profesional sin desglose por naturaleza'},
     ],
-    grossDebt:null, cash:0.649355,
+    grossDebt:0, cash:0.649355,
     officialTotalRevenue:56.280533, officialTotalExpenses:80.922135, officialPAT:-25.303073,
   },
   2022: {
@@ -388,7 +388,7 @@ const criciumabrFiscalYearMeta = {
       {renglon:'RECEITA OPERACIONAL BRUTA', lado:'revenue', importe:27.268558, motivo:'el documento no desglosa este renglón'},
       {renglon:'Departamento Futebol Profissional', lado:'expense', importe:15.977814, motivo:'Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; \'Departamento (Futebol) Profissional\' es el gasto del fútbol profesional sin desglose por naturaleza'},
     ],
-    grossDebt:null, cash:0.327636,
+    grossDebt:1.795754, cash:0.327636,
     officialTotalRevenue:27.30078, officialTotalExpenses:23.822625, officialPAT:2.271155,
   },
   2014: {
@@ -439,7 +439,7 @@ const criciumabrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Departamento Profissional', lado:'expense', importe:14.332058, motivo:'Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; \'Departamento (Futebol) Profissional\' es el gasto del fútbol profesional sin desglose por naturaleza'},
     ],
-    grossDebt:null, cash:0.219693,
+    grossDebt:13.905384, cash:0.219693,
     officialTotalRevenue:17.385767, officialTotalExpenses:25.174605, officialPAT:-9.275738,
   },
   2018: {
@@ -456,7 +456,7 @@ const criciumabrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Departamento Futebol Profissional', lado:'expense', importe:12.83884, motivo:'Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; \'Departamento (Futebol) Profissional\' es el gasto del fútbol profesional sin desglose por naturaleza'},
     ],
-    grossDebt:null, cash:0.105529,
+    grossDebt:7.808872, cash:0.105529,
     officialTotalRevenue:28.912398, officialTotalExpenses:20.930595, officialPAT:6.412915,
   },
   2016: {
@@ -473,7 +473,7 @@ const criciumabrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Departamento Profissional', lado:'expense', importe:15.124972, motivo:'Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; \'Departamento (Futebol) Profissional\' es el gasto del fútbol profesional sin desglose por naturaleza'},
     ],
-    grossDebt:null, cash:0.37382,
+    grossDebt:9.241157, cash:0.37382,
     officialTotalRevenue:25.964039, officialTotalExpenses:24.515651, officialPAT:0.035944,
   },
   2023: {
@@ -490,7 +490,7 @@ const criciumabrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Departamento Futebol Profissional', lado:'expense', importe:31.244024, motivo:'Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; \'Departamento (Futebol) Profissional\' es el gasto del fútbol profesional sin desglose por naturaleza'},
     ],
-    grossDebt:null, cash:3.873385,
+    grossDebt:0, cash:3.873385,
     officialTotalRevenue:39.492437, officialTotalExpenses:42.80291, officialPAT:57.186452,
   },
   2024: {
@@ -507,7 +507,7 @@ const criciumabrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Departamento Futebol Profissional', lado:'expense', importe:77.261712, motivo:'Claude 2026-10-09: el estado de Criciúma abre los gastos por departamento; \'Departamento (Futebol) Profissional\' es el gasto del fútbol profesional sin desglose por naturaleza'},
     ],
-    grossDebt:null, cash:20.047502,
+    grossDebt:0, cash:20.047502,
     officialTotalRevenue:100.973447, officialTotalExpenses:97.58419, officialPAT:-28.995129,
   },
 };

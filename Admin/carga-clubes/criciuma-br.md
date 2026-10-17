@@ -102,6 +102,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "DISPONIBILIDADES" pág. 7
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Balance completo (TOTAL DO PASSIVO 130.831.669); sin fila de empréstimos; 'Luvas e Ant. de Dir. de Transmissão' 2.500.000 (adelanto CBF, nota 16), 'Outros Débitos' 800.000 (nota 15) y direito de imagem 17.301.580 NC. Deuda 0 por criterio: el adelanto de derechos de transmisión CBF 2.500.000 lo tratamos como ingreso diferido, no como préstamo; si Guido lo quisiera como anticipo financiero sería 2.500.000. Hay 'Empréstimo Crédito Trabalhador-FGTS' 9.981 dentro de obrigações trabalhistas (excluido).
+```
+
 ### Liga
 
 ```text
@@ -155,6 +159,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "DISPONIBILIDADES" pág. 7
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Balance completo (TOTAL DO PASSIVO 132.027.234); sin fila de empréstimos; 'Demais obrigações' 2.000.000 son recursos recibidos del Fluminense pendientes de destino (nota 18). Deuda 0.
 ```
 
 ### Liga
@@ -212,6 +220,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "DISPONIBILIDADES" pág. 7
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e Financiamentos 2023: circulante - y não circulante -  (nota 13: mútuos liquidados nov/2023, Sicredi liquidado). Deuda 0. Excluida antecipação de direitos de transmissão (395.833).
+```
+
 ### Liga
 
 ```text
@@ -259,6 +271,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "DISPONIBILIDADES" pág. 7
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e Financiamentos circulante 140.909 + não circulante 1.654.845 (nota 10: Sicredi 140.909, mútuo PJ 818.285, mútuo PF 836.560). Se baja el contrato con GA (nota 19). Excluidas luvas/antecipações de transmissão.
 ```
 
 ### Liga
@@ -314,6 +330,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "DISPONIBILIDADES" pág. 6
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e Financiamentos circulante 1.431.979 + não circulante 10.120.259 (nota 10: GA 7.819.077, Sicredi 1.431.979+140.909, mútuo PJ 1.025.792, mútuo PF 1.134.481). Excluidas 'Luvas e Ant. de Dir. de Transmissão' ni obrigações trabalhistas parceladas.
+```
+
 ### Liga
 
 ```text
@@ -359,6 +379,10 @@ tools/cargar.mjs (2026-10-09)
 2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): cierre = 2020-12-31. Revisión del alta (Claude, 2026-10-09): el registro de transcripciones trae cierre null; el ejercicio del documento cierra el 2020-12-31
 tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e Financiamentos não circulante 8.178.546 (nota 10: GA - Gestão do Patrimônio 8.178.546); circulante 0. Excluidas 'Luvas e Ant. de Dir. de Transmissão' (999.859 + 1.791.526).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e Equivalentes de Caixa 16.676 (balanço en unidades de reais). Coincide con DFC (fim do exercício 16.676).
 ```
 
 ### Liga
@@ -410,6 +434,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "DISPONIBILIDADES" pág. 2
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e Financiamentos circulante - + não circulante 9.208.141 (nota 10: GA 112.591 + Jaime Dal Farra 9.076.808 + mútuo pessoas físicas 18.676). Excluidas 'Luvas e Ant. de Dir. de Transmissão' (999.859 + 2.791.386).
 ```
 
 ### Liga
@@ -464,6 +492,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "DISPONIBILIDADES" pág. 8
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e Financiamentos circulante 143.196 (Bradesco conta garantida) + não circulante 7.665.676 (GA 5.311.253 + Jaime Dal Farra 2.336.497 + mútuos 17.927). Nota 13. Excluida 'Antecipação de Direitos de Transmissão' (nota 16: CBF, Esporte Interativo, Campeonato Brasileiro; 1.449.859 + 3.791.245).
 ```
 
 ### Liga
@@ -521,6 +553,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e Equivalentes de Caixa" pág. 7
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimo e Financiamentos não circulante 13.905.384 (nota 13: GA 12.793.039 + Jaime Dal Farra presidente 1.095.219 + mútuos pessoas físicas 17.126). Sin porción corriente. Excluidas las antecipações de direitos de transmissão (650.000 corriente + 5.395.131 NC).
+```
+
 ### Liga
 
 ```text
@@ -574,6 +610,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e Equivalentes de Caixa" pág. 7
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Nota 13: GA - Gestão de Patrimônio Ltda 9.225.135 + Mútuo com Pessoas Físicas 16.022 (total impreso 9.241.157). En el balance de este PDF la cara muestra 9.225.135 (los 16.022 están en Outros Débitos NC). Usé el total de la nota 13 (9.241.157), que el PDF de 2017 usa como cifra comparativa del balance de 2016. Si se toma solo la cara del balance: 9.225.135. Excluidos 'Antecipação de Direitos de Transmissão' 4.392.353 (adelantos de derechos de TV, sin nota; los tratamos como ingreso diferido), direito de imagem, subvenções a realizar.
 ```
 
 ### Liga
