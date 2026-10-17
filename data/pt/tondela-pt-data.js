@@ -69,7 +69,7 @@ const tondelaptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.025015},
       {label:'Imposto sobre o rendimento do período', value:-0.00077},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.880361, cash:1.262584,
     officialTotalRevenue:5.067334, officialTotalExpenses:6.277065, officialPAT:-1.273265,
   },
 };

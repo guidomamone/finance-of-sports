@@ -81,7 +81,7 @@ const felgueirasptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Vendas e serviços prestados', lado:'revenue', importe:0.418836, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:0.052557,
+    grossDebt:2.431543, cash:0.052557,
     officialTotalRevenue:0.428353, officialTotalExpenses:1.163971, officialPAT:-0.732696,
   },
   2023: {
@@ -98,7 +98,7 @@ const felgueirasptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Vendas e serviços prestados', lado:'revenue', importe:0.179315, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:0.013695,
+    grossDebt:1.656346, cash:0.013695,
     officialTotalRevenue:0.197133, officialTotalExpenses:0.76131, officialPAT:-0.567184,
   },
   2022: {
@@ -111,7 +111,7 @@ const felgueirasptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Vendas e serviços prestados', lado:'revenue', importe:0.138985, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:0.018265,
+    grossDebt:1.054922, cash:0.018265,
     officialTotalRevenue:0.143014, officialTotalExpenses:0.672154, officialPAT:-0.529357,
   },
 };

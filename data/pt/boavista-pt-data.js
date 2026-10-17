@@ -27,7 +27,7 @@ const boavistaptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.931493},
       {label:'Imposto sobre o rendimento do período', value:1.649761},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:0.051557,
     officialTotalRevenue:9.926602, officialTotalExpenses:17.314147, officialPAT:-6.669278,
   },
 };

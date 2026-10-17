@@ -76,6 +76,10 @@ Generados/Portugal/Boavista/RCSAD-23-24_1-3.categorias.json (escalón de cada fi
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17: sin año vecino que confirme (to-do 260 c), leído a mano en el balance: sin financiamientos en el balance; nota 29.2.5 "Financiamentos Obtidos: Não aplicável" (parte 3-3, L288-290). Las "Outras dívidas a pagar" (61,3 M) no son deuda financiera; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17: sin año vecino que confirme (to-do 260 c), leído a mano en el balance: "Caixa e depósitos bancários" (la nota 29.2.4 da el mismo total); el script leía 529
+```
+
 ### Liga
 
 ```text

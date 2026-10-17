@@ -109,7 +109,7 @@ const chavesptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.017402},
       {label:'Imposto sobre o rendimento do período', value:-0.297666},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:1.207302, cash:0.453309,
     officialTotalRevenue:8.696802, officialTotalExpenses:7.471735, officialPAT:0.850477,
   },
   2022: {
@@ -123,7 +123,7 @@ const chavesptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.089125},
       {label:'Imposto sobre o rendimento do período', value:-0.040338},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:4.014513, cash:0.157337,
     officialTotalRevenue:5.38383, officialTotalExpenses:5.17036, officialPAT:-0.011091,
   },
 };

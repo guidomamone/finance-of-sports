@@ -71,7 +71,7 @@ const mafraptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.04504},
       {label:'Impostos sobre rendimento do período', value:-0.012408},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:2.745454, cash:0.181615,
     officialTotalRevenue:3.909177, officialTotalExpenses:4.926838, officialPAT:-1.075109,
   },
 };

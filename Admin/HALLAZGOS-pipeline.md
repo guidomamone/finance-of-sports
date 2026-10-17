@@ -149,6 +149,11 @@ Del to-do 237 (diagnóstico por subagentes Sonnet, 2026-10-16):
   "Intangível" + "Outros ativos") no tiene otro año con esas filas y en `--medir` sigue proponiendo 790,7 M para 2025 (cargado 36,8 M).
   Sin daño hoy: 2025 está cargado y `--club` no pisa un valor. Retomar: si un año vacío de un club con un solo año cargado recibe una
   propuesta del escalón 0 con filas que no son caja ni deuda.
+- Caja y deuda, "sin año vecino, aceptar si dos escalones coinciden" (reglas y Jev / IA, to-do 260 c, medido el 2026-10-17): 61 casos en
+  todo el sitio, pero coincidir en la fila no asegura el número: CRB 2022 y 2023 deuda "1" y PAOK 2017 deuda "9" (referencias a nota),
+  Colo-Colo 2023 2.811 M CLP contra 10 M en 2024, cajas de 13 a 529 € (Chaves, Boavista, Porto 2023; esas las ataja el piso). No entra.
+  Los clubes de un solo balance (AVS, Boavista, Chaves, Mafra, Tondela, Felgueiras) se cargaron con ajustes `caja` / `deuda` leídos a
+  mano. Retomar: si los ajustes a mano de clubes sin vecino pasan de unos 50 por país.
 - Etiquetado `perimetro` de las dudas de localizar y extraer: la IA lo usa para preguntas de inventarios, imparidad o notas que difieren
   del estado (Rio Ave, Famalicão, Santa Clara, Torreense). Sin daño (se contestan igual). Retomar: si una regla empieza a contestar
   dudas por su tema.

@@ -24,8 +24,8 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-1. **Caja y deuda**: faltan las dos en 299 de 919 ejercicios con balance (Italia 99, Rusia 78, Brasil, Grecia, Portugal, Alemania 15, Japón 10).
-   - Lo que queda del to-do 260: Benfica 2023-2026 y años viejos, los clubes en 0 (AVS, Boavista, Chaves, Mafra, Tondela) y los 7 clubes revertidos por escala.
+1. **Caja y deuda**: faltan las dos en 291 de 919 ejercicios con balance (Italia 99, Rusia 78, Brasil, Grecia, Portugal, Alemania 15, Japón 10).
+   - Lo que queda del to-do 260: Benfica y Sporting años viejos (el par de Jev / IA, por ahora no) y los 7 clubes revertidos por escala.
    - Después: Rusia (caja y deuda podrían salir sin IA de los códigos del balance del fisco).
 
 2. **Transcripciones por subagentes** (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia): limpiar lo que no es del club, los duplicados y los arreglos chicos; validarlas (unos US$ 0,10 cada 50) y cargarlas.
@@ -231,9 +231,8 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
       frena la casualidad: Cuiabá 2025 (la IA da una línea con activo y pasivo lado a lado, y se toma "Clientes"), Porto 2016 (Jev mezcla
       la tabla resumen en miles con el balance), Vila Nova 2024 ("PASSIVO NÃO CIRCULANTE" + la fila) y Lazio 2022-2025 (hasta 12 filas).
       Guido (2026-10-17): por ahora, sin esto. Si se retoma: primero la línea con dos filas de la IA, después el emparejamiento.
-   c) CLUBES EN 0: Famalicão y Vitória ya resueltos (lista de notas con punto). Quedan AVS (0 de 6), Boavista (0 de 2), Chaves (0 de 4),
-      Mafra (0 de 2), Tondela (0 de 2) y la deuda de Felgueiras (0 de 3). Además, 13 cajas cargadas eran el total del activo corriente
-      ("la caja es una parte de la nota" con un total del balance): corregidas.
+   g) CELDA DE NOTA CON COMA: Chaves 2021-22 "| Caixa e depósitos bancários | 13,4 | 157 336,73 |" (L386) y 2022-23 "13.4" (L287) se leen
+      como importe (caja 13 €; el piso la frena, pero la fila buena no se propone). Cargado con ajustes; retomar si aparece en otro club.
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
     e) `perimetro-a2` le pasa a la IA hasta ~42.000 tokens de entrada para contestar ~130 (Olympiacos 2018: US$ 0,17 por llamada); en

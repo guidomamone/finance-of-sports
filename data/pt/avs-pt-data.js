@@ -103,7 +103,7 @@ const avsptFiscalYearMeta = {
       {label:'Ganhos e perdas com diferenças de câmbio', value:null},
       {label:'Imposto sobre o rendimento (deducido: antes de impuestos − resultado final, por ajuste manual)', value:-0.027164},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:4.908445, cash:0.014632,
     officialTotalRevenue:1.49427, officialTotalExpenses:4.512755, officialPAT:-3.041302,
   },
   2021: {
@@ -120,7 +120,7 @@ const avsptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Atividades Operacionais', lado:'revenue', importe:0.373011, motivo:'Claude 2026-10-16 (subagente Sonnet): nota 17 de rédito, prestação de serviços sin desglose (actividades operacionales) [relatorio-contas-2020-21.md L1093]'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:0.003188,
     officialTotalRevenue:0.901186, officialTotalExpenses:2.920545, officialPAT:-2.031772,
   },
   2023: {
@@ -137,7 +137,7 @@ const avsptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Atividades Operacionais', lado:'revenue', importe:1.173315, motivo:'Claude 2026-10-16 (subagente Sonnet): nota 17 de rédito, prestação de serviços sin desglose (actividades operacionales) [relatorio-contas-2020-21.md L1093]'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:4.495141, cash:0.443569,
     officialTotalRevenue:1.845759, officialTotalExpenses:3.608326, officialPAT:-1.782564,
   },
 };
