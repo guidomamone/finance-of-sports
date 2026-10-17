@@ -21,6 +21,8 @@ que dice `ESTADO.md` era verdad ese día.
   filas no cuentan (to-do 260 b, idea de Guido). Y con el par corriente + no corriente en una sola tabla, las otras familias cuentan solo si
   están en esa tabla. Medido: --medir idéntico; ensayo de todos los clubes: 13 deudas más en Portugal, gratis (Benfica 2008 y 2023-2026,
   Académico de Viseu 2022, Braga 2016, Famalicão 2021, Gil Vicente 2023-2024, Leixões 2023-2024), ninguna cambia ni se pierde.
+- Caja y deuda escritas (caja-deuda.mjs --club --escribir, sin API): 15 deudas en Portugal, las 13 de arriba más Benfica 2010 (216,5 M) y
+  Famalicão 2024 (33,1 M), que ya pasaban la compuerta. Los años con balance sin caja ni deuda bajan de 305 a 299 de 919.
 - caja-deuda.mjs: dos expresiones que retrocedían (renglón de texto con cifras) pasan a recorridos lineales con la misma respuesta (0
   distintos en las 3.454 transcripciones). --medir 32 s -> 8,7 s; un club grande (Benfica) 4,2 -> 1,5 s.
 

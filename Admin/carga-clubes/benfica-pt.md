@@ -121,6 +121,10 @@ Generados/Portugal/Benfica/relatorio-contas-2025-26.categorias.json (escalón de
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: documento anterior): "Empréstimos obtidos" pág. 78 + "Empréstimos obtidos" pág. 78
+```
+
 ### Liga
 
 ```text
@@ -202,6 +206,10 @@ Generados/Portugal/Benfica/relatorio-contas-2024-25-pos-AG.categorias.json (esca
 ```text
 2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): perimetro = individual. regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 1: el ejercicio se publicó con un solo perímetro (individual; desde 2019-20 la SAD ya no controla Benfica Estádio ni Benfica TV, vendidas a la SGPS)
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos obtidos" pág. 117 + "Empréstimos obtidos" pág. 117
 ```
 
 ### Liga
@@ -288,6 +296,10 @@ Generados/Portugal/Benfica/relatorio-contas-2023-24.categorias.json (escalón de
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos obtidos" pág. 111 + "Empréstimos obtidos" pág. 111
+```
+
 ### Liga
 
 ```text
@@ -366,6 +378,10 @@ Generados/Portugal/Benfica/relatorio-contas-2022-23-pos-AG.categorias.json (esca
 2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): perimetro = individual. regla de perímetro de CONVENCIONES-DATOS (ok de Guido para fijar Benfica y Boavista, 2026-10-15), punto 1: el ejercicio se publicó con un solo perímetro (individual; desde 2019-20 la SAD ya no controla Benfica Estádio ni Benfica TV, vendidas a la SGPS)
 2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fx = 0.9203. el documento da 1 EUR = 1,0866 USD al 30/06/2023 (primera columna; 1,0387 es el año anterior); EUR por 1 USD = 0,9203, igual que AC Milan 2022-23
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: año anterior): "Empréstimos obtidos" pág. 109 + "Empréstimos obtidos" pág. 109
 ```
 
 ### Liga
@@ -1440,6 +1456,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento anterior): "CAIXA E DISPONIBILIDADES EM BANCOS" pág. 103
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 2 (compuerta: año anterior): "EMPRÉSTIMOS OBTIDOS" pág. 103 + "EMPRÉSTIMOS OBTIDOS" pág. 103
+```
+
 ### Liga
 
 ```text
@@ -1650,6 +1670,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e disponibilidades em bancos" pág. 40
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos obtidos" pág. 40 + "Empréstimos obtidos" pág. 40
 ```
 
 ### Liga

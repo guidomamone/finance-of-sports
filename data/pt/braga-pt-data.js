@@ -519,7 +519,7 @@ const bragaptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.603581},
       {label:'Imposto sobre o rendimento do período', value:-0.052542},
     ],
-    grossDebt:null, cash:1.644152,
+    grossDebt:3.205567, cash:1.644152,
     officialTotalRevenue:26.24286, officialTotalExpenses:23.482985, officialPAT:2.119443,
   },
   2017: {

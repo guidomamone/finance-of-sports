@@ -248,7 +248,7 @@ const academicoviseuptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.206727},
       {label:'Imposto sobre o rendimento do período', value:-0.006221},
     ],
-    grossDebt:null, cash:1.055152,
+    grossDebt:5.805568, cash:1.055152,
     officialTotalRevenue:1.090098, officialTotalExpenses:3.601586, officialPAT:-2.780627,
   },
 };

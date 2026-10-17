@@ -1176,7 +1176,7 @@ const benficaptFiscalYearMeta = {
       {label:'CUSTOS E PERDAS FINANCEIROS', value:-11.612197},
       {label:'IMPOSTO SOBRE LUCROS', value:0.249754},
     ],
-    grossDebt:null, cash:6.881132,
+    grossDebt:216.470117, cash:6.881132,
     officialTotalRevenue:87.366955, officialTotalExpenses:98.650231, officialPAT:-18.997724,
   },
   2021: {
@@ -1221,7 +1221,7 @@ const benficaptFiscalYearMeta = {
       {label:'Gastos e perdas financeiros', value:-17.458},
       {label:'Imposto sobre o rendimento', value:2.41},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:169.446, cash:null,
     officialTotalRevenue:284.712, officialTotalExpenses:266.268, officialPAT:4.213,
   },
   2024: {
@@ -1236,7 +1236,7 @@ const benficaptFiscalYearMeta = {
       {label:'Gastos e perdas financeiros', value:-28.803},
       {label:'Imposto sobre o rendimento', value:-0.57},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:222.217, cash:null,
     officialTotalRevenue:256.373, officialTotalExpenses:268.985, officialPAT:-31.36,
   },
   2025: {
@@ -1251,7 +1251,7 @@ const benficaptFiscalYearMeta = {
       {label:'Gastos e perdas financeiros', value:-25.662},
       {label:'Imposto sobre o rendimento', value:-2.733},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:203.299, cash:null,
     officialTotalRevenue:347.956, officialTotalExpenses:293.306, officialPAT:34.444,
   },
   2018: {
@@ -1358,7 +1358,7 @@ const benficaptFiscalYearMeta = {
       {label:'Gastos e perdas financeiros', value:-21.164},
       {label:'Imposto sobre o rendimento', value:-2.741},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:193.745, cash:null,
     officialTotalRevenue:324.799, officialTotalExpenses:290.879, officialPAT:19.123,
   },
   2013: {
@@ -1433,7 +1433,7 @@ const benficaptFiscalYearMeta = {
       {label:'Custos e perdas financeiros', value:-4.247865},
       {label:'Imposto sobre o rendimento', value:-0.05044},
     ],
-    grossDebt:null, cash:0.409343,
+    grossDebt:51.31749, cash:0.409343,
     officialTotalRevenue:63.040143, officialTotalExpenses:59.044243, officialPAT:0.120932,
   },
 };

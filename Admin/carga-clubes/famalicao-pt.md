@@ -169,6 +169,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 26
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: año anterior): "Financiamentos obtidos" pág. 26 + "Financiamentos obtidos" pág. 26
+```
+
 ### Liga
 
 ```text
@@ -360,6 +364,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 13
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: año anterior): "Financiamentos obtidos" pág. 13 + "Financiamentos obtidos" pág. 13
 ```
 
 ### Liga

@@ -24,7 +24,7 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-1. **Caja y deuda**: faltan las dos en 305 de 919 ejercicios con balance (Italia 99, Rusia 78, Brasil, Grecia, Portugal, Alemania 15, Japón 10).
+1. **Caja y deuda**: faltan las dos en 299 de 919 ejercicios con balance (Italia 99, Rusia 78, Brasil, Grecia, Portugal, Alemania 15, Japón 10).
    - Lo que queda del to-do 260: Benfica 2023-2026 y años viejos, los clubes en 0 (AVS, Boavista, Chaves, Mafra, Tondela) y los 7 clubes revertidos por escala.
    - Después: Rusia (caja y deuda podrían salir sin IA de los códigos del balance del fisco).
 
@@ -225,8 +225,7 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
    el tipo Slides. Sin código.
 260. CAJA Y DEUDA: MEJORAS DE SCRIPT VISTAS EN PORTUGAL (sin aplicar; corrida del 2026-10-16: 151 de 327 datos, IA ~US$ 6). Cada una es un
    escalón a diseñar con el ok de Guido y a medir con `caja-deuda.mjs --medir`.
-   b) DEUDA: Benfica 2023-2026 y otras 9 deudas de Portugal ya salen gratis (tabla resumen de varios años y tabla del par; falta
-      `--ejecutar --escribir` en esos clubes). Lo que queda, Sporting 2011-2018 y 2023, y unas 70 deudas en todo el sitio, solo pasaría
+   b) DEUDA: Benfica 2023-2026 y otras 9 deudas de Portugal cargadas (tabla resumen de varios años y tabla del par). Lo que queda, Sporting 2011-2018 y 2023, y unas 70 deudas en todo el sitio, solo pasaría
       con el par de Jev o de la IA: hoy la compuerta busca las dos filas del par en el documento vecino y encuentra la misma dos veces
       (Benfica 2023: 143.838 x 2 = 287.676). Emparejarlas en orden destraba esas deudas pero deja pasar errores de propuesta que hoy
       frena la casualidad: Cuiabá 2025 (la IA da una línea con activo y pasivo lado a lado, y se toma "Clientes"), Porto 2016 (Jev mezcla

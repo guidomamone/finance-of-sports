@@ -167,7 +167,7 @@ const leixoesptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Prestação de Serviços', lado:'revenue', importe:0.785473, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:0.003178,
+    grossDebt:0.180698, cash:0.003178,
     officialTotalRevenue:2.239121, officialTotalExpenses:2.874807, officialPAT:-0.87039,
   },
   2024: {
@@ -185,7 +185,7 @@ const leixoesptFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Prestação de Serviços', lado:'revenue', importe:1.001111, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:0.051788,
+    grossDebt:1.273601, cash:0.051788,
     officialTotalRevenue:3.979029, officialTotalExpenses:3.649551, officialPAT:0.005691,
   },
 };

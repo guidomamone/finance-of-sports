@@ -289,7 +289,7 @@ const famalicaoptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-1.422616},
       {label:'Imposto sobre o rendimento do período', value:-0.045783},
     ],
-    grossDebt:null, cash:1.614809,
+    grossDebt:15.489288, cash:1.614809,
     officialTotalRevenue:14.566463, officialTotalExpenses:14.563487, officialPAT:-1.465423,
   },
   2023: {
@@ -317,7 +317,7 @@ const famalicaoptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-3.666909},
       {label:'Imposto sobre o rendimento do período', value:-0.228096},
     ],
-    grossDebt:null, cash:0.822787,
+    grossDebt:33.108866, cash:0.822787,
     officialTotalRevenue:33.364592, officialTotalExpenses:21.240073, officialPAT:8.229515,
   },
   2025: {
