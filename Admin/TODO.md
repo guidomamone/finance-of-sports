@@ -24,9 +24,9 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-1. **Caja y deuda**: faltan las dos en 249 de 919 ejercicios con balance (Rusia 78 y el resto repartido).
-   - Lo que queda del to-do 260: la deuda italiana completa (i) y Ferroviária.
-   - Después: Rusia (caja y deuda podrían salir sin IA de los códigos del balance del fisco).
+1. **Caja y deuda**: faltan 398 datos (171 años sin ninguno de los dos; Italia 192, Portugal 86, Brasil 68, Grecia 67, Alemania y Japón el resto).
+   - 260 i: deuda italiana por el esquema 2424 (prototipo y medición).
+   - Las 24 propuestas de hoy, revisadas y escritas; el resto, por subagentes con cita.
 
 2. **Transcripciones por subagentes** (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia): limpiar lo que no es del club, los duplicados y los arreglos chicos; validarlas (unos US$ 0,10 cada 50) y cargarlas.
 
