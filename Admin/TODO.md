@@ -288,3 +288,17 @@ con los que no están en los pasos de arriba.
     (prensa con cifras, video en vez de PDF, compartir revocado — ver Independiente/Banfield/Atlanta)
     sí amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo
     regulatorio estructural, no. Ese criterio y este proceso son cosas separadas a propósito.
+
+261. REINO UNIDO: TRANSCRIPCIÓN POR SUBAGENTES (pedido de Guido, 2026-10-16: gastar la ventana de 5 horas de la suscripción). 93 .md hechos y
+    commiteados (Tesseract + revisión de las páginas clave contra la imagen; los 93 dan 0 P1 / 0 P2 en `check-transcripcion-fidelidad.js`):
+    años 2021-2026 de los clubes de Premier, F1, cricket y rugby que ya tenían algún .md. Cola, scripts e instrucciones:
+    `Admin/transcripcion-subagentes/README.md` (van 62 de 1531 bloques; quedan unos 3600 PDFs, casi todos escaneos). Falta:
+    a) Validarlos con `pipeline.mjs --lista` y seguir con el lote (etapa 3 en adelante).
+    b) Sociedad de cada documento (ver `hallazgos-por-documento.txt` de esa carpeta): en varios clubes conviven la sociedad del club y la
+       holding consolidada (Aston Villa: Aston Villa FC Ltd y NSWE Sports; Wolves: WWFC (1986) y W.W. (1990); West Ham: WHUFC y WH Holding;
+       Brighton: el club y Holdings; Fulham: el club y Fulham Football Leisure; Sunderland: el club y Sunderland Ltd). El perímetro lo fija
+       la regla de `Admin/CONVENCIONES-DATOS.md`; no cargar las dos para el mismo año.
+    c) Nombres engañosos y duplicados entre los `wf-*`: West Ham wf-2022-2023-659d1396 y Wolves wf-2022-2023-d10fbea7 son del ejercicio
+       2023-24, no 2022-23. Son el mismo informe que otro PDF de la carpeta: Celtic wf-2023-2024-2cb3da35 (= celtic-group-accounts-2023-24),
+       Celtic wf-2022-2023-3e4a518a (= celtic-group-accounts-2022-23) y Man City wf-2022-2023-2d906303 (= mancity-full-accounts-2022-23).
+       Antes de transcribir el resto de los `wf-*` (están al final de la cola), mirar si repiten un documento ya transcripto.

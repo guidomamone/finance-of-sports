@@ -76,6 +76,8 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   Orenburg). Escalón 2 (`tools/bfo-rusia-notas.mjs`): abre ingresos, otros ingresos/gastos y costos por elemento con las tablas de las
   notas explicativas cuando suman el código del formulario. Qué clubes y años hay: `Admin/ESTADO-clubes.md`. Cómo corre:
   `Admin/PIPELINE.md`, "Rusia (GIR BO)".
+- Reino Unido (Companies House, casi todo escaneado) se transcribe con subagentes de Claude: Tesseract más revisión de las páginas
+  clave contra la imagen, con una cola en `Admin/transcripcion-subagentes/` (README.md). Lo que falta, en `Admin/TODO.md` (261).
 - `tools/pipeline.mjs` hace SOLO la etapa 2 (transcribir con Mistral y validar, más el control "sin tablas"). La lista de rubros la arma
   `verificar.mjs` y la categorización es la etapa 7 del lote.
 - Perímetro del club por señales (`tools/perimetro-senales.mjs`): antes de la compuerta de la etapa 3, `lote.mjs` fija solo el ajuste

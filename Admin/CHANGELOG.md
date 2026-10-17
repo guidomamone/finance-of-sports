@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 709 — Reino Unido: 93 transcripciones por subagentes (2026-10-16)
+
+- 93 PDFs de Inglaterra y Escocia transcriptos a .md por subagentes de Claude: Tesseract (`ocr.sh`) más revisión de las páginas clave
+  contra la imagen, con P&L y balance controlados. Todos dan 0 P1 / 0 P2 en `check-transcripcion-fidelidad.js`. Clubes: Arsenal, Aston
+  Villa, Bournemouth, Brentford, Brighton, Burnley, Chelsea, Crystal Palace, Everton, Fulham, Leeds, Liverpool, Man City, Newcastle,
+  Nottingham Forest, Sunderland, Tottenham, West Ham, Wolves, Celtic, las escuderías de F1, cricket (Lancashire, Surrey, Warwickshire,
+  Yorkshire) y rugby (Bath, Harlequins, Leicester, Northampton).
+- La cola, los scripts y las instrucciones para seguir están en `Admin/transcripcion-subagentes/` (README.md); lo pendiente, en el to-do 261.
+
 ## Versión 708 — to-do 237: las letras que faltan, una por commit (2026-10-16)
 
 - cargar.mjs y cola.mjs: un `aceptar` de otro año del club vale (y cierra casos) solo con la misma propuesta; si no, la fila va a la
