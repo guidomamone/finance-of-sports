@@ -59,6 +59,8 @@ que dice `ESTADO.md` era verdad ese día.
 - Caja y deuda: 11 deudas y 1 caja más en Portugal con las mejoras 1 y 2 (gratis).
 - Caja y deuda del resto (72 clubes salvo Portugal y Rusia): 112 datos escritos en 22 clubes; 7 clubes revertidos por errores de escala que
   la compuerta dejó pasar (TODO 260 e). En todo el sitio, los años con balance sin caja ni deuda bajan de 548 a 317 de 919.
+- audit.js y caja-deuda.mjs: techo de caja (3 veces los ingresos del año) y deuda (20 veces) — P1 caja-deuda-desproporcionada y la
+  compuerta prueba otras escalas o no pasa (TODO 260 e). Medido: lo cargado sin cambios; --medir un distinto menos (Flamengo 2024).
 - Lotes 86 y 87: Felgueiras 2021-22 y Benfica 2007-08 cargados; caja de Felgueiras 2022-2024. Listas 80, 86 y 87 al archivo.
 
 ## Versión 707 — Portugal cargado (salvo lo que espera scripts) y to-do 237 a medias: 14 letras resueltas y medidas (2026-10-16)

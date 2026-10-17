@@ -652,13 +652,22 @@ function parCorrienteYNoCorriente(filas, fam) {
 // Caso: Juventus 2005, "4) Due to banks" 24,973,807: con la escala del documento (miles) daba 24.973,8 millones y el documento siguiente
 // (también en miles) lo confirmaba; ahora no es plausible contra 2006 (14,93) y en unidades da 24,973807, el cargado. Medido en los 519
 // años de todos los clubes: +5 iguales (Juventus deuda 2005 y 2006, Fluminense 2025 caja y deuda, Mönchengladbach 2024 caja), 0 empeoran.
+// (to-do 260 e, escalón B) TECHO POR PROPORCIÓN CON LOS INGRESOS DEL AÑO, el mismo de audit.js (caja-deuda-desproporcionada): caja hasta 3
+// veces los ingresos, deuda hasta 20. Medido en lo cargado: máximo real 2,53 (caja, Atlético Mineiro 2023) y 13,7 (deuda, Novorizontino
+// 2015). Un valor por encima no es plausible: se prueban las otras escalas como con la referencia; si ninguna cae debajo del techo, NO PASA
+// (con la referencia, en cambio, queda el valor de la escala del documento, como antes). Casos (corrida del 2026-10-16): Hellas Verona 2024
+// deuda 1,8e16, Milan 2009 deuda 163.739 M, Inter 2021 caja 97.884 M, Lazio 2008-2019.
+const TECHO = { cash: 3, deuda: 20 };
 export function compuerta(prop, ctx) {
-  const { factor, referencia = null } = ctx;
-  const plausible = (r) => !(referencia > 0) || !(r.valor > 0) || (r.valor / referencia <= 100 && r.valor / referencia >= 0.01);
+  const { factor, referencia = null, ingresos = null, cual = null } = ctx;
+  const techo = TECHO[cual] ?? null;
+  const bajoTecho = (r) => !(techo && ingresos > 0 && r.valor > 0) || r.valor <= techo * ingresos;
+  const plausible = (r) => bajoTecho(r) && (!(referencia > 0) || !(r.valor > 0) || (r.valor / referencia <= 100 && r.valor / referencia >= 0.01));
   const base = evaluar(prop, ctx, null);
   if (base.ok && plausible(base)) return base;
   const alts = FACTORES.filter((x) => x !== factor).map((x) => [x, evaluar(prop, ctx, x)]).filter(([, r]) => r.ok && plausible(r));
   if (alts.length === 1) return { ...alts[0][1], escalaAlternativa: alts[0][0] };
+  if (base.ok && !bajoTecho(base)) return { ...base, ok: false, motivo: `${base.valor} es ${(base.valor / ingresos).toFixed(1)} veces los ingresos del año (techo ${techo}) y ninguna otra escala cae debajo` };
   return base;
 }
 // La compuerta con UNA escala: la del documento (over null) o una forzada para las filas de la propuesta (over).
@@ -719,7 +728,7 @@ function propuestaNota(f) {
     enOtroDoc: (doc) => { const x = doc.find((y) => y.balance && y.familia === f.familia && y.nota); return x ? [sintetica(x)] : null; } };
 }
 const conLecturaB = (f) => (f.lecturaB ? { ...f, valor: f.lecturaB.valor, cifras: f.lecturaB.cifras, lecturaB: null } : f);
-export function escalera(filas, cual, { precedentes = [], factor = null, anterior = null, siguiente = null, factorSiguiente = null, ia = null, jev = null, extraDeuda = [], anteriorDoc = null, factorAnterior = null } = {}) {
+export function escalera(filas, cual, { precedentes = [], factor = null, anterior = null, siguiente = null, factorSiguiente = null, ia = null, jev = null, extraDeuda = [], anteriorDoc = null, factorAnterior = null, ingresos = null } = {}) {
   const club = familiasDelClub(precedentes, cual);
   // (to-do 233 / 232 t) escalón 1b, Jev, entre el vocabulario y la IA cara: solo si se le pasó su respuesta (--jev).
   const ESC = [0, 1, '1b', 2];
@@ -728,7 +737,7 @@ export function escalera(filas, cual, { precedentes = [], factor = null, anterio
   for (let i = 0; i < propuestas.length; i++) {
     const e = ESC[i]; const p = propuestas[i];
     if (!p) { if (i < 2 || (e === '1b' && jev) || (e === 2 && ia)) intentos.push(`escalón ${e}: sin propuesta`); continue; }
-    const ctxC = { factor, anterior, siguiente, factorSiguiente, cual, referencia: precedentes[0]?.valor ?? null, anteriorDoc, factorAnterior}; // (Versión 459) el año cargado más cercano, para la plausibilidad
+    const ctxC = { factor, anterior, siguiente, factorSiguiente, cual, referencia: precedentes[0]?.valor ?? null, anteriorDoc, factorAnterior, ingresos}; // (Versión 459) el año cargado más cercano, para la plausibilidad
     const c = compuerta(p, ctxC);
     // (to-do 223, A/B medido el 2026-10-13 contra una compuerta con votos, descartada: ver Admin/HALLAZGOS-pipeline.md) DOS LECTURAS: si alguna fila de la propuesta o de los documentos vecinos tiene lectura B (sin la celda con
     // forma de nota), la propuesta se evalúa también con todos los documentos leídos así (AEK 2018: su fila ya sale bien, la del documento
@@ -844,7 +853,8 @@ function contexto({ d, anios, a, cual, filasDe, conocidos }) {
   return { filas, factor, precedentes, anterior: conocidos[cual][String(Number(a.anio) - 1)] ?? null, siguiente: sig ? filasDe(sig.md) : null,
     anteriorDoc: ant ? filasDe(ant.md) : null, factorAnterior: ant ? factorPorIngresos(filasDe(ant.md), d.revenueLinesByYear?.[ant.anio], ant.md) : null,
     factorSiguiente: sig ? factorPorIngresos(filasDe(sig.md), d.revenueLinesByYear?.[sig.anio], sig.md) : null,
-    extraDeuda: String(ajusteClubODoc(a.md.replace(/\.md$/i, '.pdf'), 'deuda-incluye')?.valor || '').split(';').map((t) => t.trim()).filter(Boolean) };
+    extraDeuda: String(ajusteClubODoc(a.md.replace(/\.md$/i, '.pdf'), 'deuda-incluye')?.valor || '').split(';').map((t) => t.trim()).filter(Boolean),
+    ingresos: (d.revenueLinesByYear?.[a.anio] || []).reduce((s, l) => s + (l.amountNative || 0), 0) || null }; // (to-do 260 e) para el techo de la compuerta
 }
 const aniosDe = (d, S) => Object.entries(d.fiscalYearMeta || {}).map(([y, m]) => ({ anio: y, m, md: mdDeFuente(S, m.sourceId) })).sort((a, b) => Number(a.anio) - Number(b.anio));
 // (Versión 454) con ajuste `perimetro` (del documento o del club) y páginas de balance de ese perímetro en el .md, las filas del balance del
