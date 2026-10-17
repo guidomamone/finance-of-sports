@@ -158,6 +158,10 @@ _al lado del campo `grossDebt`:_
 fuera de alcance de esta carga (Finanzas)
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Bankgæld 0 + Anden rentebærende gæld 0 (2019: 97.491 convertida en acciones). Balance completo sin deuda financiera en 2020; los pasivos por leasing (765+618 tDKK) están dentro de Leverandørgæld y se excluyen. (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Likvide beholdninger 22.985 tDKK. Sociedad única (sin koncern); tDKK; coincide con flujo de efectivo. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ## Gestiones
 
 _antes de Jan Bech Andersen (data/gestiones/dk.js):_

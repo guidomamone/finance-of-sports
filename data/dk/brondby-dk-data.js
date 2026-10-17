@@ -43,7 +43,7 @@ const brondbydkFiscalYearMeta = {
     profitOnPlayerSales:-8.057,
     assetSales:0,
     tax:0,
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:22.985,
     officialTotalRevenue:158.471, officialTotalExpenses:173.518, officialPAT:-25.853,
   },
 };
