@@ -567,7 +567,7 @@ export const VOCABULARIO = {
   },
   DEUDA_FINANCIERA: {
     es: ['prestamo*', 'otros pasivos financieros', 'pasivos financieros', 'deudas bancarias*', 'deudas financieras', 'obligaciones financieras', 'obligaciones con bancos*', 'deudas con entidades de credito'],
-    pt: ['emprestimo*', 'financiamento*', 'emprestimos e financiamentos', 'mutuo*'], // mutuo: Versión 422 (Novorizontino, préstamo de I-9 Sports)
+    pt: ['emprestimo*', 'financiamento*', 'emprestimos e financiamentos', 'mutuo*', 'dividas a instituicoes de credito*'], // mutuo: Versión 422 (Novorizontino, préstamo de I-9 Sports); dívidas a instituições de crédito: la deuda bancaria del formato POC (to-do 260 f, Sporting 2000-2008)
     // (Versión 439) la lista `en` había quedado DENTRO del comentario de arriba desde la Versión 422: ningún balance en inglés encontraba su
     // deuda por diccionario. Más los términos del formato italiano en inglés (Juventus: "Due to banks" 2005-2006, "Loans and other
     // financial payables/liabilities" 2007 y 2011-2021, "Bonds and other financial liabilities" 2008-2010).

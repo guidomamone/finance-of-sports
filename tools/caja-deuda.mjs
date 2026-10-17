@@ -639,8 +639,10 @@ async function pedirJev(body, archivo, ejecutar, extraer) {
 // (AVS 2023-24 L506).
 const TOTAL_NO_CORRIENTE_RE = /^[\s*]*total\s*(-\s*)?(de\s+|del\s+|do\s+)?(non[\s-]?current\s+liabilities|pasivos?\s+no\s+corrientes?|passivos?\s+nao\s+(circulante|corrente)s?|exigivel\s+a\s+longo\s+prazo)/u;
 // (caja y deuda, mejora 2) Títulos de sección del pasivo, sobre la etiqueta normalizada y sin ":"; y lo que cierra la sección.
-const SECCION_PNC_RE = /^(passivo|pasivo)s?\s+(nao\s+corrente|no\s+corriente|nao\s+circulante)s?$|^non[\s-]?current\s+liabilities$/u;
-const SECCION_PC_RE = /^(passivo|pasivo)s?\s+(corrente|corriente|circulante)s?$|^current\s+liabilities$/u;
+// (to-do 260 f) y los del formato POC portugués: "Dívidas de Terceiros - m/longo prazo", "Dívidas a Terceiros – médio e longo prazo",
+// "Dívidas a Terceiros - curto prazo" (Sporting 2003-04 L536 y L540).
+const SECCION_PNC_RE = /^(passivo|pasivo)s?\s+(nao\s+corrente|no\s+corriente|nao\s+circulante)s?$|^non[\s-]?current\s+liabilities$|^dividas?\s+(a|de)\s+terceiros\s*[-–]\s*(m\s*\/\s*l(ongo)?|medio\s+e\s+longo|longo)\s+prazo$/u;
+const SECCION_PC_RE = /^(passivo|pasivo)s?\s+(corrente|corriente|circulante)s?$|^current\s+liabilities$|^dividas?\s+(a|de)\s+terceiros\s*[-–]\s*curto\s+prazo$/u;
 const SECCION_FIN_RE = /^(ativo|activo|assets|capital|patrimonio|equity|fundos proprios)\b/u;
 const TOTAL_PASIVO_FIN_RE = /^total\s+(do\s+|del\s+|de\s+)?(passivo|pasivo|liabilities)s?$|^total\s+(do\s+)?capital\s+proprio\s+e\s+(do\s+)?passivo/u;
 function parCorrienteYNoCorriente(filas, fam) {
