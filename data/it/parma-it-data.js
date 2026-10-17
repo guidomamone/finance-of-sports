@@ -565,7 +565,7 @@ const parmaitFiscalYearMeta = {
       {label:'verso imprese controllanti', value:-0.003423},
       {label:'altri', value:-0.001009},
     ],
-    grossDebt:0.031888, cash:2.00306,
+    grossDebt:null, cash:2.00306,
     officialTotalRevenue:6.652121, officialTotalExpenses:13.940628, officialPAT:-7.29294,
   },
 };

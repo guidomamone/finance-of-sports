@@ -128,6 +128,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 58.692 + 77.385 = 136.077 (miles de EUR). Solo debiti verso altri finanziatori; coincide con Totale Passività finanziarie 136.077 de la PFN (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 27.872 + 85 = 27.957 (miles de EUR). Total 27.957 (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -204,6 +208,10 @@ tools/cargar.mjs (2026-10-07)
 tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 48.290 + 50.478 = 98.768 (miles de EUR). Solo debiti verso altri finanziatori; coincide con Totale Passività finanziarie 98.768 de la PFN (los demas rubros no figuran) (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 39.044 + 41 = 39.086 (miles de EUR). Total impreso 39.086 (39.044 + 41 da 39.085 por redondeo en miles); se usa el total impreso, coincide con la PFN (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ## 2023
 
 ### Ingresos
@@ -275,6 +283,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 49.590 + 21.372 = 70.962 (miles de EUR). Bancos 0; consistente con PFN +10.821 (81.783 - 70.962) (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 81.738 + 45 = 81.783 (miles de EUR). Total 81.783 (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -338,6 +350,10 @@ tools/cargar.mjs (2026-10-08)
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = 521. D) rettifiche sin lado: 18) a) rivalutazioni di partecipazioni 521 (TOTALE D (479), L844); igual que AC Milan 2023-24 (to-do 155)
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (1.000). D) rettifiche sin lado: 19) a) svalutazioni di partecipazioni (1.000); ver el anterior (to-do 155)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 4.190 + 21.771 + 45.153 = 71.114 (miles de EUR). Bancos oltre 12 mesi = 0; consistente con PFN -28.387 (71.114 - 42.727) (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 42.693 + 34 = 42.727 (miles de EUR). Total 42.727 (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -414,6 +430,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 1.234 + 40.141 + 70.450 + 13.393 = 125.218 (miles de EUR). Consistente con PFN -101.629 (125.218 - 23.589) (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 23.551 + 38 = 23.589 (miles de EUR). Total 23.589 (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -486,6 +506,10 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 6 + 96.511 + 18.659 = 115.176 (miles de EUR). Coincide con Totale Passività finanziarie 115.176 de la PFN (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 11.246 + 38 = 11.284 (miles de EUR). Total 11.284 (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -562,6 +586,10 @@ tools/cargar.mjs (2026-10-09)
 tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 1.259 + 94.284 = 95.543 (miles de EUR). Obbligazioni y soci en 0; coincide con Totale Passività finanziarie 95.543 de la PFN (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 12.476 + 51 = 12.527 (miles de EUR). Total 12.527 en el balance (la PFN trae 12.526, redondeo) (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -629,6 +657,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): consolidado, miles: obbligazioni 116.520 + soci per finanziamenti 10.000 + banche 1.210 + altri finanziatori 22.541 + 14.000; el script tomaba solo banche
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 24.742 + 34 = 24.776 (miles de EUR). Total 24.776 (linea 851) (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -706,6 +738,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 9.075 + 144.079 + 93.309 + 13.116 = 259.579 (miles de EUR). b) oltre 12 mesi de bancos es "—"; coincide con Totale Passività finanziarie 259.579 de la PFN (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 3.209 + 8 = 3.217 (miles de EUR). Total 3.217, coincide con la PFN (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -781,6 +817,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 9.075 + 105.871 + 1.226 + 96.732 + 38.180 = 251.084 (miles de EUR). Coincide con Totale Passività finanziarie 251.084 de la PFN (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 3.651 + 74 = 3.725 (miles de EUR). Total 3.725, coincide con la PFN (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -854,6 +894,10 @@ tools/cargar.mjs (2026-10-08)
 ```text
 2011: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): fila = (101). Claude 2026-10-08 (Guido: a mano): la extracción se salteó la sección D de 2011 (.md L1006-L1010: a) di partecipazioni (96), b) di immobilizzazioni finanziarie (5), Totale (101), TOTALE D (101)); sin ella el resultado daba −67,233 M contra −67,334 M impreso. Sin línea a propósito: el escalón de la sección D sigue trayendo las filas de la E
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 153.489 + 2.410 + 100.841 + 35.208 = 291.948 (miles de EUR). Sin debiti verso soci en 2011; coincide con Totale Passività finanziarie 291.948 de la PFN (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 1.096 + 75 = 1.171 (miles de EUR). Total 1.171, coincide con la PFN (Disponibilità liquide 1.171) (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -932,6 +976,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): consolidado, miles: banche 147.377 + altri finanziatori 151.103 (soci "—"); el script leía el individual (L3498)
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 2.184 + 252 = 2.436 (miles de EUR). Total 2.436 (linea 759), coincide con la PFN (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -1013,6 +1061,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (to-do 260 e, revisado contra el .md; préstamos de socios incluidos, decisión de Guido): consolidado, miles: soci per finanziamenti 14.824 + banche 170.769 + altri finanziatori 117.701; el script leía el balance individual de la capogruppo (L3499)
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 2.337 + 100 = 2.437 (miles de EUR). Total 2.437 (linea 828), coincide con la PFN (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -1087,6 +1139,10 @@ tools/cargar.mjs (2026-10-08)
 
 ```text
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 59 + 112.503 + 7.029 + 135.188 + 7.148 = 261.927 (miles de EUR). Soci + bancos (corr+no corr) + otros financiadores (corr+no corr); coincide con Totale Passività finanziarie 261.927 de la PFN (pág. 57) (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): 4.772 + 53 = 4.825 (miles de EUR). Total IV disponibilità liquide 4.825 (linea 814), coincide con la PFN (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga

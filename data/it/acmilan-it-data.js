@@ -642,7 +642,7 @@ const acmilanitFiscalYearMeta = {
       {label:'a) imposte correnti', value:-10.203},
       {label:'b) imposte differite e anticipate', value:2.041},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:98.768, cash:39.086,
     officialTotalRevenue:456.941, officialTotalExpenses:443.193, officialPAT:4.106,
   },
   2023: {
@@ -662,7 +662,7 @@ const acmilanitFiscalYearMeta = {
       {label:'a) imposte correnti', value:-7.697},
       {label:'b) imposte differite e anticipate', value:0.229},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:70.962, cash:81.783,
     officialTotalRevenue:404.529, officialTotalExpenses:389.557, officialPAT:6.07,
   },
   2018: {
@@ -681,7 +681,7 @@ const acmilanitFiscalYearMeta = {
       {label:'a) imposte correnti', value:-2.556},
       {label:'b) imposte differite e anticipate', value:-2.247},
     ],
-    grossDebt:164.271, cash:null,
+    grossDebt:164.271, cash:24.776,
     officialTotalRevenue:255.733, officialTotalExpenses:353.098, officialPAT:-126.019,
   },
   2022: {
@@ -701,7 +701,7 @@ const acmilanitFiscalYearMeta = {
       {label:'a) imposte correnti', value:-4.209},
       {label:'b) imposte differite e anticipate', value:-2.269},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:71.114, cash:42.727,
     officialTotalRevenue:297.592, officialTotalExpenses:350.117, officialPAT:-66.537,
   },
   2020: {
@@ -720,7 +720,7 @@ const acmilanitFiscalYearMeta = {
       {label:'a) imposte correnti', value:-0.372},
       {label:'b) imposte differite e anticipate', value:-1.847},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:115.176, cash:11.284,
     officialTotalRevenue:192.315, officialTotalExpenses:374.198, officialPAT:-194.616,
   },
   2025: {
@@ -739,7 +739,7 @@ const acmilanitFiscalYearMeta = {
       {label:'a) imposte correnti', value:-9.193},
       {label:'b) imposte differite e anticipate', value:2.389},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:136.077, cash:27.957,
     officialTotalRevenue:494.53, officialTotalExpenses:477.642, officialPAT:2.994,
   },
   2021: {
@@ -758,7 +758,7 @@ const acmilanitFiscalYearMeta = {
       {label:'A) IMPOSTE CORRENTI', value:-3.363},
       {label:'B) IMPOSTE DIFFERITE E ANTICIPATE', value:-1.501},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:125.218, cash:23.589,
     officialTotalRevenue:261.092, officialTotalExpenses:345.19, officialPAT:-96.416,
   },
   2008: {
@@ -783,7 +783,7 @@ const acmilanitFiscalYearMeta = {
       {label:'a) imposte correnti', value:20.897},
       {label:'b) imposte differite e anticipate', value:-7.202},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:261.927, cash:4.825,
     officialTotalRevenue:237.9, officialTotalExpenses:310.117, officialPAT:-66.838,
   },
   2009: {
@@ -807,7 +807,7 @@ const acmilanitFiscalYearMeta = {
       {label:'a) imposte correnti', value:7.742},
       {label:'b) imposte differite e anticipate', value:-18.894},
     ],
-    grossDebt:303.294, cash:null,
+    grossDebt:303.294, cash:2.437,
     officialTotalRevenue:327.617, officialTotalExpenses:323.03, officialPAT:-9.836,
   },
   2010: {
@@ -831,7 +831,7 @@ const acmilanitFiscalYearMeta = {
       {label:'a) imposte correnti', value:10.695},
       {label:'b) imposte differite e anticipate', value:4.96},
     ],
-    grossDebt:298.48, cash:null,
+    grossDebt:298.48, cash:2.436,
     officialTotalRevenue:253.196, officialTotalExpenses:328.859, officialPAT:-69.751,
   },
   2011: {
@@ -856,7 +856,7 @@ const acmilanitFiscalYearMeta = {
       {label:'a) imposte correnti', value:9.362},
       {label:'b) imposte differite e anticipate', value:3.97},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:291.948, cash:1.171,
     officialTotalRevenue:266.811, officialTotalExpenses:340.764, officialPAT:-67.334,
   },
   2012: {
@@ -881,7 +881,7 @@ const acmilanitFiscalYearMeta = {
       {label:'a) imposte correnti', value:-2.314},
       {label:'b) imposte differite e anticipate', value:-3.586},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:251.084, cash:3.725,
     officialTotalRevenue:329.307, officialTotalExpenses:324.038, officialPAT:-6.857,
   },
   2013: {
@@ -906,7 +906,7 @@ const acmilanitFiscalYearMeta = {
       {label:'a) imposte correnti', value:-0.174},
       {label:'b) imposte differite e anticipate', value:-2.721},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:259.579, cash:3.217,
     officialTotalRevenue:278.713, officialTotalExpenses:277.885, officialPAT:-15.723,
   },
   2019: {
@@ -925,7 +925,7 @@ const acmilanitFiscalYearMeta = {
       {label:'a) imposte correnti', value:-1.196},
       {label:'b) imposte differite e anticipate', value:-2.251},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:95.543, cash:12.527,
     officialTotalRevenue:241.118, officialTotalExpenses:372.926, officialPAT:-145.985,
   },
 };
