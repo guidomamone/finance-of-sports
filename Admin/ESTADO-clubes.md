@@ -94,7 +94,7 @@ BRASIL (42)
   Internacional         2 ejercicios (2024 a 2025), balance, BRL
   Ituano                1 ejercicio (2024), balance, BRL
   Juventude             1 ejercicio (2020), balance, BRL
-  Mirassol              1 ejercicio (2024), balance, BRL, sin deuda/caja
+  Mirassol              1 ejercicio (2024), balance, BRL
   Novorizontino         14 ejercicios (2010, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025), balance, BRL
   Operário Ferroviário  2 ejercicios (2024 a 2025), balance, BRL
   Palmeiras             2 ejercicios (2024 a 2025), balance, BRL
