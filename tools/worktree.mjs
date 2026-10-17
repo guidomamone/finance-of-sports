@@ -35,7 +35,9 @@ function preparar(destino) {
   if (!existsSync(join(wt, '.git'))) throw new Error(`${wt} no es un worktree (no tiene .git)`);
   if (wt === main) throw new Error('esa es la carpeta principal');
   const lista = git(['ls-files', '--others', '--ignored', '--exclude-standard', '-z'], main).split('\0').filter(Boolean)
-    .filter((f) => !/(^|\/)\.DS_Store$/.test(f));
+    // Las OTRAS copias que viven en .claude/worktrees/ (ignoradas por .git/info/exclude) git las lista como carpetas, con "/" al final, y el
+    // enlace a una ruta terminada en "/" revienta (ENOENT): `preparar` frenaba en la primera y no enlazaba nada (2026-10-17, worktree pipeline).
+    .filter((f) => !/(^|\/)\.DS_Store$/.test(f) && !f.startsWith('.claude/worktrees/'));
   let hechos = 0, ya = 0;
   for (const f of lista) {
     const dst = join(wt, f); let existe = false; try { lstatSync(dst); existe = true; } catch {}
