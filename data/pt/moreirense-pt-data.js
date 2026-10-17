@@ -172,7 +172,7 @@ const moreirenseptFiscalYearMeta = {
     profitOnPlayerSales:0, assetSales:0,
     netInterest:0, tax:-0.00568,
     incluidoEn:{"matchday_competition":{"en":"other_income","posible":true},"season_tickets":{"en":"other_income","posible":true},"stadium_other":{"en":"other_income","posible":true}},
-    grossDebt:null, cash:1.366448,
+    grossDebt:1.559941, cash:1.366448,
     officialTotalRevenue:9.530906, officialTotalExpenses:7.643551, officialPAT:1.881675,
   },
   2025: {
@@ -183,7 +183,7 @@ const moreirenseptFiscalYearMeta = {
     profitOnPlayerSales:0, assetSales:0,
     netInterest:0, tax:-0.350186,
     incluidoEn:{"matchday_competition":{"en":"other_income","posible":true},"season_tickets":{"en":"other_income","posible":true},"stadium_other":{"en":"other_income","posible":true}},
-    grossDebt:null, cash:3.306047,
+    grossDebt:1.559941, cash:3.306047,
     officialTotalRevenue:14.571504, officialTotalExpenses:8.813965, officialPAT:5.407355,
   },
   2023: {
@@ -194,7 +194,7 @@ const moreirenseptFiscalYearMeta = {
     profitOnPlayerSales:0, assetSales:0,
     netInterest:0, tax:-0.016745,
     incluidoEn:{"matchday_competition":{"en":"other_income","posible":true},"stadium_other":{"en":"other_income","posible":true},"season_tickets":{"en":"other_income","posible":true}},
-    grossDebt:null, cash:2.294662,
+    grossDebt:1.559941, cash:2.294662,
     officialTotalRevenue:4.498905, officialTotalExpenses:3.830395, officialPAT:0.679516,
   },
   2024: {
@@ -205,7 +205,7 @@ const moreirenseptFiscalYearMeta = {
     profitOnPlayerSales:0, assetSales:0,
     netInterest:0, tax:-0.009235,
     incluidoEn:{"matchday_competition":{"en":"other_income","posible":true},"stadium_other":{"en":"other_income","posible":true},"season_tickets":{"en":"other_income","posible":true}},
-    grossDebt:null, cash:1.371514,
+    grossDebt:1.559941, cash:1.371514,
     officialTotalRevenue:6.81191, officialTotalExpenses:8.265418, officialPAT:-1.462743,
   },
 };
