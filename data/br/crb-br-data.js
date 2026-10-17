@@ -72,7 +72,7 @@ const crbbrFiscalYearMeta = {
       {renglon:'Receita operacional líquida', lado:'revenue', importe:14.902901, motivo:'el documento no desglosa este renglón'},
       {renglon:'Custo das atividades sociais e esportivas', lado:'expense', importe:2.969625, motivo:'Claude 2026-10-09: CRB es un club de fútbol y todos sus ingresos son del fútbol (mídia, patrocínio, bilheteria, campeonatos: nota 8 de 2025); el costo de sus actividades deportivas es el del fútbol, no de otros deportes'},
     ],
-    grossDebt:null, cash:1.136312,
+    grossDebt:0, cash:1.136312,
     officialTotalRevenue:14.902901, officialTotalExpenses:13.455767, officialPAT:1.219256,
   },
   2021: {
@@ -90,7 +90,7 @@ const crbbrFiscalYearMeta = {
       {renglon:'Receita operacional líquida', lado:'revenue', importe:23.41935, motivo:'el documento no desglosa este renglón'},
       {renglon:'Custo das atividades sociais e esportivas', lado:'expense', importe:6.628417, motivo:'Claude 2026-10-09: CRB es un club de fútbol y todos sus ingresos son del fútbol (mídia, patrocínio, bilheteria, campeonatos: nota 8 de 2025); el costo de sus actividades deportivas es el del fútbol, no de otros deportes'},
     ],
-    grossDebt:null, cash:1.381437,
+    grossDebt:0, cash:1.381437,
     officialTotalRevenue:23.41935, officialTotalExpenses:22.231848, officialPAT:1.215344,
   },
   2024: {
@@ -108,7 +108,7 @@ const crbbrFiscalYearMeta = {
       {renglon:'Receita operacional líquida', lado:'revenue', importe:60.144551, motivo:'el documento no desglosa este renglón'},
       {renglon:'Custo das atividades sociais e esportivas', lado:'expense', importe:16.557833, motivo:'Claude 2026-10-09: CRB es un club de fútbol y todos sus ingresos son del fútbol (mídia, patrocínio, bilheteria, campeonatos: nota 8 de 2025); el costo de sus actividades deportivas es el del fútbol, no de otros deportes'},
     ],
-    grossDebt:null, cash:6.653358,
+    grossDebt:0, cash:6.653358,
     officialTotalRevenue:60.144551, officialTotalExpenses:56.084569, officialPAT:4.20009,
   },
   2025: {
@@ -126,7 +126,7 @@ const crbbrFiscalYearMeta = {
       {renglon:'Receita operacional líquida', lado:'revenue', importe:47.471422, motivo:'el documento no desglosa este renglón'},
       {renglon:'Custo das atividades sociais e esportivas', lado:'expense', importe:43.365002, motivo:'Claude 2026-10-09: CRB es un club de fútbol y todos sus ingresos son del fútbol (mídia, patrocínio, bilheteria, campeonatos: nota 8 de 2025); el costo de sus actividades deportivas es el del fútbol, no de otros deportes'},
     ],
-    grossDebt:null, cash:2.036909,
+    grossDebt:0, cash:2.036909,
     officialTotalRevenue:47.471422, officialTotalExpenses:48.658619, officialPAT:-1.267325,
   },
   2022: {
@@ -144,7 +144,7 @@ const crbbrFiscalYearMeta = {
       {renglon:'Receita operacional líquida', lado:'revenue', importe:28.583332, motivo:'el documento no desglosa este renglón'},
       {renglon:'Custo das atividades sociais e esportivas', lado:'expense', importe:6.974826, motivo:'Claude 2026-10-09: CRB es un club de fútbol y todos sus ingresos son del fútbol (mídia, patrocínio, bilheteria, campeonatos: nota 8 de 2025); el costo de sus actividades deportivas es el del fútbol, no de otros deportes'},
     ],
-    grossDebt:null, cash:1.674113,
+    grossDebt:1, cash:1.674113,
     officialTotalRevenue:28.583332, officialTotalExpenses:28.688164, officialPAT:0.024743,
   },
   2023: {
@@ -162,7 +162,7 @@ const crbbrFiscalYearMeta = {
       {renglon:'Receita operacional líquida', lado:'revenue', importe:45.563569, motivo:'el documento no desglosa este renglón'},
       {renglon:'Custo das atividades sociais e esportivas', lado:'expense', importe:8.358054, motivo:'Claude 2026-10-09: CRB es un club de fútbol y todos sus ingresos son del fútbol (mídia, patrocínio, bilheteria, campeonatos: nota 8 de 2025); el costo de sus actividades deportivas es el del fútbol, no de otros deportes'},
     ],
-    grossDebt:null, cash:4.38869,
+    grossDebt:0, cash:4.38869,
     officialTotalRevenue:45.563569, officialTotalExpenses:40.51525, officialPAT:4.795503,
   },
 };

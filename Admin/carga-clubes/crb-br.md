@@ -90,6 +90,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e equivalentes de caixa" pág. 6
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Balance completo (total del passivo e PL impreso); pasivo = fornecedores, impostos, contas a pagar y tributos parcelados; sin fila de empréstimos. Deuda 0.
+```
+
 ### Liga
 
 ```text
@@ -131,6 +135,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 6
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Balance completo (total del passivo e PL impreso); pasivo = fornecedores, impostos, contas a pagar y tributos parcelados; sin fila de empréstimos. Deuda 0.
 ```
 
 ### Liga
@@ -176,6 +184,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 1
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e financiamentos 2023 = - (2022: 1.000.000); sin otra fila financiera. Deuda 0 al 31/12/2023 (préstamo cancelado en el año, flujo de financiamento -1.000).
+```
+
 ### Liga
 
 ```text
@@ -217,6 +229,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 1
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e financiamentos circulante 1.000.000. Nota 10 del informe de auditoría 2022: préstamo de MJLM Cobranças Extrajudiciais Eireli. Tributos parcelados excluidos.
 ```
 
 ### Liga
@@ -262,6 +278,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 1
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Balance completo (total do passivo e PL impreso); sin fila de empréstimos en 2021 (en 2020 'Empréstimos e financiamentos' = -); el no corriente es solo Tributos parcelados. Deuda 0: tributos parcelados y contas a pagar no cuentan.
+```
+
 ### Liga
 
 ```text
@@ -303,6 +323,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 1
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Balance completo (total do passivo e PL impreso); sin fila de empréstimos en 2020 (en 2020 'Empréstimos e financiamentos' = -); el no corriente es solo Tributos parcelados. Deuda 0: tributos parcelados y contas a pagar no cuentan.
 ```
 
 ## Gestiones
