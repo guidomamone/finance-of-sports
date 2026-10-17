@@ -27,7 +27,7 @@ const principal = () => resolve(git(['rev-parse', '--path-format=absolute', '--g
 
 // Lo que regenera cada carga: en un conflicto, gana main y después se regenera.
 const GENERADO = (f) => f === 'index.html' || f === 'fuentes.html' || f === 'sitemap.xml' || f.startsWith('fuentes/') || f === 'Admin/ESTADO-clubes.md'
-  || f === 'data/club-index.js' || f.startsWith('data/rankings/') || f.startsWith('data/faltantes/') || f === 'Admin/sourcing/pendientes.md';
+  || f === 'data/club-index.js' || f.startsWith('data/rankings/') || f.startsWith('data/faltantes/') || f === 'Admin/sourcing/pendientes.md' || f.startsWith('data/estimados/');
 const DOCS_PRINCIPAL = ['Admin/TODO.md', 'Admin/CHANGELOG.md', 'Admin/ESTADO.md'];
 
 function preparar(destino) {
@@ -74,7 +74,7 @@ async function mergear(rama) {
   const { publicarCambios, snapshot } = await import('./cargar.mjs');
   const r = publicarCambios(snapshot([]), [], []);
   if (!r.ok) { git(['merge', '--abort']); throw new Error(`audit.js dio P0/P1 después del merge; no se mergeó nada. ${r.motivo}`); }
-  git(['add', '-A', '--', 'index.html', 'fuentes.html', 'fuentes', 'sitemap.xml', 'Admin/ESTADO-clubes.md', 'data/club-index.js', 'data/rankings', 'data/faltantes', 'Admin/sourcing/pendientes.md']);
+  git(['add', '-A', '--', 'index.html', 'fuentes.html', 'fuentes', 'sitemap.xml', 'Admin/ESTADO-clubes.md', 'data/club-index.js', 'data/rankings', 'data/faltantes', 'Admin/sourcing/pendientes.md', ...(existsSync(resolve(ROOT, 'data', 'estimados')) ? ['data/estimados'] : [])]);
   const cierres = tocados.filter((f) => f.startsWith('Admin/sesiones/'));
   git(['commit', '-q', '-m', `Merge de ${rama}${conflictos.length ? ` (${conflictos.length} generados resueltos con main y regenerados)` : ''}\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`]);
   console.log(`mergeado ${rama}: ${tocados.length} archivos de la rama, ${conflictos.length} conflictos en lo generado (resueltos), auditoría ${r.audit}.`);
