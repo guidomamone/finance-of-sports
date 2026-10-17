@@ -35,6 +35,8 @@ que dice `ESTADO.md` era verdad ese día.
   Nottingham Forest, Sunderland, Tottenham, West Ham, Wolves, Celtic, las escuderías de F1, cricket (Lancashire, Surrey, Warwickshire,
   Yorkshire) y rugby (Bath, Harlequins, Leicester, Northampton).
 - La cola, los scripts y las instrucciones para seguir están en `Admin/transcripcion-subagentes/` (README.md); lo pendiente, en el to-do 261.
+- 15 más con subagentes Sonnet (Newcastle, Chelsea, Man City, Brentford, Northampton, Tottenham, Celtic, Brighton, Sunderland y Wolves,
+  2018-19 a 2021-22): 108 en total, todos 0 P1 / 0 P2. Sonnet costó ~120-250k tokens por documento, contra ~150-350k de Opus.
 
 ## Versión 708 — to-do 237 terminado (salvo al), caja y deuda en todo el sitio salvo Rusia, Plan ordenado por dependencias (2026-10-16/17)
 

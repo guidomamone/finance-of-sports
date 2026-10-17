@@ -53,3 +53,4 @@ Son cuentas de Companies House (Inglaterra/Escocia/Gales/Irlanda del Norte), cas
 - Si el PDF tiene capa de texto real (`pdftotext -f N -l N -layout <pdf> -`), usala para cruzar cifras contra Tesseract.
 - Páginas escaneadas de costado o al revés: `sips -r 90|180|270` y volvé a pasar Tesseract.
 - Tesseract confunde mucho 1↔4 y 3↔8 en la primera cifra: mirá con más cuidado los números que empiezan con 4 u 8.
+- Tus scripts o archivos auxiliares, solo en una carpeta propia: `${TMPDIR:-/tmp}/fos-<club>-<año>/`. Hay otros agentes en paralelo y un nombre común (assemble.py) se pisa.

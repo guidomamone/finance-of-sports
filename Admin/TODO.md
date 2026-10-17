@@ -328,10 +328,10 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
     sí amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo
     regulatorio estructural, no. Ese criterio y este proceso son cosas separadas a propósito.
 
-261. REINO UNIDO: TRANSCRIPCIÓN POR SUBAGENTES (pedido de Guido, 2026-10-16: gastar la ventana de 5 horas de la suscripción). 93 .md hechos y
-    commiteados (Tesseract + revisión de las páginas clave contra la imagen; los 93 dan 0 P1 / 0 P2 en `check-transcripcion-fidelidad.js`):
+261. REINO UNIDO: TRANSCRIPCIÓN POR SUBAGENTES (pedido de Guido, 2026-10-16: gastar la ventana de 5 horas de la suscripción). 108 .md hechos y
+    commiteados (93 con subagentes Opus y 15 con Sonnet) (Tesseract + revisión de las páginas clave contra la imagen; los 93 dan 0 P1 / 0 P2 en `check-transcripcion-fidelidad.js`):
     años 2021-2026 de los clubes de Premier, F1, cricket y rugby que ya tenían algún .md. Cola, scripts e instrucciones:
-    `Admin/transcripcion-subagentes/README.md` (van 62 de 1531 bloques; quedan unos 3600 PDFs, casi todos escaneos). Falta:
+    `Admin/transcripcion-subagentes/README.md` (van 71 de 1531 bloques; quedan unos 3600 PDFs, casi todos escaneos). Falta:
     a) Validarlos con `pipeline.mjs --lista` y seguir con el lote (etapa 3 en adelante).
     b) Sociedad de cada documento (ver `hallazgos-por-documento.txt` de esa carpeta): en varios clubes conviven la sociedad del club y la
        holding consolidada (Aston Villa: Aston Villa FC Ltd y NSWE Sports; Wolves: WWFC (1986) y W.W. (1990); West Ham: WHUFC y WH Holding;
@@ -341,3 +341,5 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
        2023-24, no 2022-23. Son el mismo informe que otro PDF de la carpeta: Celtic wf-2023-2024-2cb3da35 (= celtic-group-accounts-2023-24),
        Celtic wf-2022-2023-3e4a518a (= celtic-group-accounts-2022-23) y Man City wf-2022-2023-2d906303 (= mancity-full-accounts-2022-23).
        Antes de transcribir el resto de los `wf-*` (están al final de la cola), mirar si repiten un documento ya transcripto.
+    d) Chelsea 2021-22 (Sonnet): solo los 4 estados se miraron contra la imagen; las notas se corrigieron por sumas. Revisar las notas
+       contra el PDF antes de cargar caja y deuda.

@@ -8,4 +8,5 @@ Cola para transcribir con subagentes de Claude los PDFs de Inglaterra, Escocia, 
 - `pos.txt`: último bloque tomado. `claim.sh` toma el siguiente (con lock).
 - `INSTRUCCIONES.md`: lo que lee cada subagente. Prompt de cada uno: "Corré <ruta>/claim.sh UNA sola vez y seguí INSTRUCCIONES.md".
 - `commit-listos.sh`: commitea los `.md` nuevos cuyo borrador ya no existe (un borrador presente = transcripción a medias).
-- Costo medido: ~150-350k tokens de subagente por documento (30-100 páginas), 4-12 minutos.
+- Costo medido por documento (30-100 páginas): Opus ~150-350k tokens y 4-12 minutos; Sonnet ~120-250k tokens y 2-6 minutos, pero
+  algunos revisan contra la imagen solo los estados principales y corrigen las notas por sumas.
