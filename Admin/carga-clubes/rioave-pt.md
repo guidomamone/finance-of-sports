@@ -123,6 +123,10 @@ Generados/Portugal/Rio Ave/relatorio-contas-2024-25.categorias.json (escalón de
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: documento anterior): "Financiamentos obtidos" pág. 10 + "Financiamentos obtidos" pág. 10; cash escalón 0 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 10
+```
+
 ### Liga
 
 ```text
@@ -214,6 +218,10 @@ Generados/Portugal/Rio Ave/relatorio-contas-2023-24.categorias.json (escalón de
 2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): confirmado = 5 539 966,65. Claude 2026-10-15 (lote 76): confirmado mirando la imagen de la página 14 del visor (impreso 2 al pie), escaneo sin texto propio; además el EBITDA y el resultado impresos cierran con estos importes
 2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-15): confirmado = 1 798 760,09. Claude 2026-10-15 (lote 76): confirmado mirando la imagen de la página 14 del visor (impreso 2 al pie), escaneo sin texto propio; además el EBITDA y el resultado impresos cierran con estos importes
 tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: documento siguiente): "Financiamentos obtidos" pág. 13 + "Financiamentos obtidos" pág. 13; cash escalón 0 (compuerta: año anterior): "Caixa e depósitos bancários" pág. 13
 ```
 
 ### Liga
@@ -471,6 +479,10 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 2
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: año anterior): "Financiamentos obtidos" pág. 2 + "Financiamentos obtidos" pág. 2
 ```
 
 ### Liga

@@ -334,7 +334,7 @@ const santaclaraptFiscalYearMeta = {
       {label:'Juros e gastos similares suportados', value:-0.289446},
       {label:'Imposto sobre o rendimento do período', value:1.652448},
     ],
-    grossDebt:null, cash:1.375725,
+    grossDebt:22.505, cash:1.375725,
     officialTotalRevenue:8.656848, officialTotalExpenses:23.22035, officialPAT:-13.241139,
   },
   2022: {
