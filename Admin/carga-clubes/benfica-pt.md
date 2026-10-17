@@ -125,6 +125,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: documento anterior): "Empréstimos obtidos" pág. 78 + "Empréstimos obtidos" pág. 78
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 8.863 (miles de euros). Posición financiera individual 30.06.26; coincide con el flujo de caja (línea 3675). (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -210,6 +214,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos obtidos" pág. 117 + "Empréstimos obtidos" pág. 117
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 6.376 (miles de euros). Posición financiera individual 30.06.25; coincide con el flujo de caja (línea 4137). (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -300,6 +308,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos obtidos" pág. 111 + "Empréstimos obtidos" pág. 111
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 20.409 (miles de euros). Posición financiera individual 30.06.24; coincide con el flujo de caja (línea 3896). (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -382,6 +394,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: año anterior): "Empréstimos obtidos" pág. 109 + "Empréstimos obtidos" pág. 109
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 28.623 (miles de euros). Posición financiera individual 30.06.23; coincide con el flujo de caja (línea 3558). (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -467,6 +483,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos obtidos" pág. 113 + "Empréstimos obtidos" pág. 113
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 24.069 (miles de euros). Demostración de la posición financiera individual al 30.06.22; coincide con fin del flujo de caja (línea 3833). (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -727,6 +747,10 @@ tools/cargar.mjs (2026-10-15). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 2 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 89
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos obtidos no corriente 92.940 + corriente 52.401 (miles de euros, consolidado). Balance consolidado con la reclasificación IFRS 5 (Benfica Estádio y Benfica TV en 'mantidos para venta'). Sin esa reclasificación serían 93.420 + 52.768 = 146.188 miles (la diferencia, 847k, queda en los pasivos mantenidos para venta). Las filas incluyen leasings financieros mínimos (142 + 47) e intereses devengados (1.686) que forman parte de la fila. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
@@ -1110,6 +1134,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: año anterior): "CAIXA E EQUIVALENTES DE CAIXA" pág. 95
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos obtidos no corriente 126.261 + corriente 191.279 (miles de euros, consolidado). Balance en miles de euros, columna consolidada 30.06.14 (individual: 72.663 + 182.857). (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -1219,6 +1247,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento anterior): "CAIXA E DISPONIBILIDADES EM BANCOS" pág. 101
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos obtidos no corriente 115.761.806 + corriente 162.662.872 (consolidado). Columna consolidada 30.06.13, en euros (la individual da 57.319.192 + 157.515.564). El comparativo 2013 que reaparece en el documento 2014 está reexpresado (115.800k + 165.990k); se usa el del propio balance 2013.
 ```
 
 ### Liga
@@ -1736,6 +1768,10 @@ Generados/Portugal/Benfica/relatorio-contas-2006-07.categorias.json (escalón de
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos por obrigações não convertíveis no corriente 20.000.000 + Dívidas a instituições de crédito no corriente 38.540.811 + corriente 36.159.189. Ejercicio cerrado 31.07.07. Confirmado en la nota (líneas 1199-1203).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Depósitos bancários 4.668.161 + Caixa 1.596 = 4.669.757. Ejercicio cerrado 31.07.07; coincide con el flujo de caja (4.669.757).
+```
+
 ### Liga
 
 ```text
@@ -1796,6 +1832,10 @@ Generados/Portugal/Benfica/relatorio-contas-2005-06.categorias.json (escalón de
 2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 250.000. Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)
 2006: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-16): fila = 102.671. Claude 2026-10-16 (lote 84): la nota 44 abre 'Prestações de serviços' (38.644.161) en 9 filas que suman exacto; la verificación no la abría (como Benfica 2006-07, que sí la abre con la misma nota)
 tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos por obrigações não convertíveis corriente 15.000.000 + Dívidas a instituições de crédito no corriente 25.000.000 + corriente 42.968.529. Ejercicio cerrado 31.07.06. No incluye fornecedores de imobilizado ni outros credores.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Depósitos bancários 180.090 + Caixa 2.342 = Depósitos bancários e caixa 182.432. Balance individual de Benfica SAD, ejercicio cerrado 31.07.06, en euros. Coincide con fin de período del flujo de caja (182.432).
 ```
 
 ### Liga
