@@ -108,6 +108,10 @@ tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por pr
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e financiamentos (CP) 2.372.773 = Kapa Capital 1.995.000 + Hamilton Dias Bordalo 237.733 + ATM Factoring 33.967 + Glauber Farias 20.000 + Antonio Carlos Teixeira 76.072 + Financiamento CT 10.000. Sin préstamos no corrientes. Excluidos Parcelamentos tributários y Dívida ativa.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 2025 = 3.742.791 (Caixa 916.075 + Bancos e aplicações financeiras 2.826.716). Balance en pág. 7; composición nota 5 en pág. 20.
+```
+
 ### Liga
 
 ```text
@@ -164,6 +168,10 @@ ajuste manual `incluye`: el documento junta estas categorías con otra línea
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e financiamentos (CP) 1.017.021; no corriente solo Obrigações tributárias. Coincide con la comparativa 2024 del balance 2025 (nota 12: 1.017.021).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 31/12/2024 = 150.907. Coincide con la comparativa 2024 del balance 2025.
+```
+
 ### Liga
 
 ```text
@@ -216,6 +224,10 @@ ajuste manual `incluye`: el documento junta estas categorías con otra línea
 
 ```text
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e financiamentos (CP) 1.197.909; no corriente solo Obrigações tributárias. Balance sin notas en la carpeta. Excluidos: Obrigações de curto prazo, Passivo contingente, Adiantamentos recebidos.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 31/12/2023 = 767.822. Balance en balanco-2023.md (la tarea apuntaba a dre-2023.md).
 ```
 
 ### Liga
@@ -417,6 +429,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos e Financiamentos" pág. 7
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa 336.553,30 + Bancos 8.249,49 = 344.802,79 (= Saldo Final del DFC 2020). Duda: 'Disponibilidades' impreso es 1.585.173,42 porque incluye una fila 'Contas a receber' 1.240.370,63 colgada de ese grupo; es un crédito, no efectivo, y el DFC cierra en 344.802,79. Si se quisiera el total impreso: 1.585.173,42.
+```
+
 ### Liga
 
 ```text
@@ -471,6 +487,10 @@ ajuste manual `incluye`: el documento junta estas categorías con otra línea
 
 ```text
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Saldo Final del DFC 2019 = 351.275,47 (es también el 'Saldo Anterior' del DFC 2020 y 'Caixa no início' 351.275 en demonstracoes-contabeis-2021.md). No hay balance patrimonial 2019 transcripto en la carpeta; el dato sale del DFC (dfc-2019.md, pág. 1; la tarea apuntaba a dre-2019.md). Las líneas del DFC 2019 no suman al saldo final, pero el saldo coincide con las aperturas de 2020 y 2021.
 ```
 
 ### Liga

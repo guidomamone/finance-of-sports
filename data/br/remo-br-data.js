@@ -148,7 +148,7 @@ const remobrFiscalYearMeta = {
       {renglon:'Receitas de futebol', lado:'revenue', importe:40.616014, motivo:'el documento no desglosa este renglón'},
       {renglon:'(-) Custos das atividades esportivas', lado:'expense', importe:41.884585, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:2.372773, cash:3.742791,
     officialTotalRevenue:84.479424, officialTotalExpenses:98.306671, officialPAT:-14.960844,
   },
   2022: {
@@ -177,7 +177,7 @@ const remobrFiscalYearMeta = {
       {renglon:'Receita De Atividades Esportivas', lado:'revenue', importe:17.903353, motivo:'Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose'},
       {renglon:'(-) Despesas Operacionais (sin Resultado Financeiro)', lado:'expense', importe:20.686217, motivo:'Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.351275,
     officialTotalRevenue:17.903353, officialTotalExpenses:20.686217, officialPAT:-3.00829,
   },
   2020: {
@@ -192,7 +192,7 @@ const remobrFiscalYearMeta = {
       {renglon:'Receita De Atividades Esportivas', lado:'revenue', importe:12.351668, motivo:'Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose'},
       {renglon:'Custos das Atividades Esportivas', lado:'expense', importe:7.54864, motivo:'Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose'},
     ],
-    grossDebt:4.211051, cash:null,
+    grossDebt:4.211051, cash:0.344803,
     officialTotalRevenue:12.351668, officialTotalExpenses:14.222078, officialPAT:-2.064503,
   },
   2023: {
@@ -207,7 +207,7 @@ const remobrFiscalYearMeta = {
       {renglon:'Receita Operacional Bruta', lado:'revenue', importe:33.831604, motivo:'Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose'},
       {renglon:'Despesas Operacionais', lado:'expense', importe:16.404081, motivo:'Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:1.197909, cash:0.767822,
     officialTotalRevenue:33.831604, officialTotalExpenses:34.822632, officialPAT:-1.440736,
   },
   2024: {
@@ -226,7 +226,7 @@ const remobrFiscalYearMeta = {
       {renglon:'Receita Operacional Bruta', lado:'revenue', importe:38.291717, motivo:'Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose'},
       {renglon:'Despesas Operacionais', lado:'expense', importe:30.628045, motivo:'Claude 2026-10-09: renglón de primer nivel de una DRE sin desglose'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:1.017021, cash:0.150907,
     officialTotalRevenue:38.291717, officialTotalExpenses:50.416619, officialPAT:-13.007128,
   },
 };
