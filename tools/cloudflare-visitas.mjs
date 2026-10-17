@@ -43,7 +43,10 @@ for (let k = 0; k < DIAS / 30; k++) {
   { acct: env.CLOUDFLARE_ACCOUNT_ID, from: iso(ini), to: iso(fin), host: HOST });
   for (const g of a.rumPageloadEventsAdaptiveGroups) porDia.push({ dia: g.dimensions.date, visitas: g.sum.visits, paginas_vistas: g.count });
 }
-porDia.sort((x, y) => x.dia.localeCompare(y.dia));
+// Los días sin visitas no vienen en la respuesta: van con 0, para que el gráfico muestre los huecos.
+const vistos = new Map(porDia.map((d) => [d.dia, d]));
+porDia.length = 0;
+for (let k = DIAS - 1; k >= 0; k--) { const dia = iso(new Date(hoy.getTime() - k * 864e5)); porDia.push(vistos.get(dia) || { dia, visitas: 0, paginas_vistas: 0 }); }
 
 const desde30 = iso(new Date(hoy.getTime() - 29 * 864e5));
 const p = await gql(`query($acct: String!, $from: Date!, $to: Date!, $host: String!) { viewer { accounts(filter: {accountTag: $acct}) {

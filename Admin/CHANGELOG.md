@@ -26,7 +26,9 @@ que dice `ESTADO.md` era verdad ese día.
 - Puente stats() (tools/supabase/stats.sql): usuarios, búsquedas, favoritas, últimas fechas y altas y búsquedas por día, solo cantidades;
   `node tools/supabase/stats.mjs [--json archivo]`. Medido: 1 usuario, 5 búsquedas. tools/cloudflare-visitas.mjs lee las visitas de Web
   Analytics (sin probar: falta un token válido).
-- Dashboard "Usuarios y visitas de financeofsports" (artifact de Claude, tipo Dashboard), por ahora con Mi Cuenta.
+- Dashboard "Usuarios y visitas de financeofsports" (artifact de Claude, tipo Dashboard): visitas de los últimos 30 días (unas 90, en 7 días;
+  Cloudflare muestrea de a 10), visitas por semana, países, y Mi Cuenta (1 usuario, 5 búsquedas). tools/cloudflare-visitas.mjs probado
+  y con los días sin visitas en 0.
 
 ## Versión 710 — caja-deuda.mjs: precedente contradicho, piso de caja, tabla resumen, tabla del par y 4 veces más rápido (2026-10-17)
 
