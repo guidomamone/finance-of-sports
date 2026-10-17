@@ -316,6 +316,10 @@ tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por pr
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): INSTITUIÇÕES FINANCEIRAS circulante 1.286.960,70 (empréstimos e financiamentos 1.903.959,32 - encargos 617.754,59 + bancos c/c 755,97); no circulante sin empréstimos. Coincide con 'Empréstimos' 1.286.961 del balance auditado reapresentado de 2023. Duda: el ledger tiene además 'EMPRÉSTIMOS DE TERCEIROS' circulante 5.518.164,64 (línea 79) sin nota; la reapresentación 2023 lo reparte en 'Outras contas a pagar' y 'Adiantamento de terceiros', y el informe de auditoría 2022 habla de empréstimos de terceiros por solo R$ 917.500, sin documentación. No lo sumé. Si Guido los cuenta como préstamos: 6.805.125,34 (sin los AFAC 12.352.400).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): DISPONÍVEL 699.193,99 (caixa geral 10.411,23 + bancos 500.496,51 + aplicações liquidez imediata 72.003,71 + títulos de capitalização 116.282,54). El balance está en balanco-2022.md (ledger; dre-2022.md es DRE). El balance auditado reapresentado de 2023 (demonstracoes-financeiras-2023-fpf.md, col. 2022) trae 699.194 como Caixa e equivalentes, así que los títulos de capitalización cuentan como caja.
+```
+
 ### Liga
 
 ```text
@@ -368,6 +372,10 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2018, 2024, 2025): Salarios y primas (plantel y cuerpo técnico), Organización de partidos
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos circulante 1.018.695 (Bradesco, nota 12); no circulante sin empréstimos. AFAC (11.270.800), parcelamentos de impostos y adelanto de terceiros excluidos.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 258.722 (caixa e bancos 109.533 + aplicações financeiras 149.189). Nota 6.
 ```
 
 ### Liga
@@ -626,6 +634,10 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Instituições Financeiras circulante 146.923,56 (empréstimos 192.065,34 - juros 45.914,18) + Empréstimos e Financiamentos não circulante 4.166,82 (5.679,26 - juros 1.512,44). Verifiqué que Bancos c/c 78,57 + 3 cap. giro suman 192.065,34. OCR de escaneo. Parcelamentos excluidos.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Disponível 17.067,05 (Caixa 13.726,66 + Bancos 3.340,39). El balance está en balanco-2018.md (dre-2018.md es DRE). En el OCR la etiqueta 'Disponível' queda al lado de 135.383,33 porque los valores están corridos una fila; comprobé el PDF: 135.383,33 es el total del activo circulante y 17.067,05 el Disponível (13.726,66 + 3.340,39).
+```
+
 ### Liga
 
 ```text
@@ -686,6 +698,10 @@ ajuste manual `incluye`: el documento junta estas categorías con otra línea
 
 ```text
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Instituições Financeiras circulante 195.402,74 (empréstimos 272.121,28 - juros 76.718,54) + Empréstimos e Financiamentos não circulante 118.338,61 (150.563,29 - juros 32.224,68; incl. Welson 22.505,31). Netos de intereses a apropiar como en el balance. Verifiqué que los componentes suman. Parcelamentos excluidos. OCR de escaneo.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Disponível 4.179,42 (Caixa 3.604,05 + Bancos 575,37, incl. aplicações de liquidez imediata 475,68). El balance está en balanco-2017.md (el md de la tarea, dre-2017.md, es solo el DRE). Escaneo OCR; la suma cierra. Excluidas aplicações (capitalización 18.340,66).
 ```
 
 ### Liga
@@ -805,6 +821,10 @@ tools/cargar.mjs (2026-10-10)
 2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 265.000. Claude 2026-10-09: las deducciones (PIS 639 + COFINS 2.943 + ICMS 6.971 = 10.553, nota L966-969) restan de la receita bruta: la nota las imprime en positivo y la extracción las sumaba como ingresos. Cuenta: bruta 9.221.750 (L113 = nota L948-958) - deduções 10.553 (L114) = RECEITA LÍQUIDA 9.211.197 (L115); - custos/despesas 10.134.897 (L116-123) - financiero 266.455 (L124) = -1.190.155 (L129). Se re-cargan dos renglones positivos para que el signo de la deducción se lea como resta.
 2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): fila = 0. Claude 2026-10-09: se saca el subtotal RECEITA LÍQUIDA 9.211.197 (L115) para que no se sume junto a sus componentes (bruta 9.221.750 - deduções 10.553 = 9.211.197).
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos/Financiamentos circulante 206.441 + Empréstimos não circulante 59.509. Notas 14 y 20 (Bradesco cap. giro, leasing, cuenta del ex presidente). Parcelamentos excluidos.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa Geral 17.124 + Depósitos Bancários 10.233 (balanço en reais). Nota b: caixa y depósitos a la vista = equivalentes.
 ```
 
 ### Liga
@@ -951,6 +971,10 @@ tools/cargar.mjs (2026-10-10)
 2015: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): name = Ferroviária Futebol S.A.. Revisión del alta (Claude, 2026-10-09): dato de Guido, mismo club que la Associação Ferroviária de Esportes; el nombre sigue la serie (S.A. hasta 2021)
 2015: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-10): reportType = official_balance_sheet. Onboarding to-do 165 (Claude, 2026-10-09): es la Demonstração do Resultado do Exercício del sistema contable del club, período 01/01 a 31/12/2015 (cuentas con saldo C/D, termina en el prejuízo/lucro del período); el balance del año no se carga de este PDF
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e Financiamentos circulante 226.744,01 (c/c 21.644,01 + cap. giro 173.750,00 + leasing 48.740,86 - juros 17.390,86) + Empréstimos não circulante 101.692,81 (Welson 62.505,31 + leasing 60.926,10 - juros 21.738,60). Los valores del md vienen separados de las etiquetas; los asigné por orden y verifiqué que cada subtotal suma (también coincide con las cifras comparativas del balance 2016: 226.744 y 101.693).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Disponível 4.476,92 (Caixa Geral 1.609,23 + Depósitos Bancários 2.867,69). Balance en balanco-2015-a.md (balanco-2015-b.md es DRE). El membrete dice CONSOLIDADO pero es una sola sociedad (ajuste de perímetro registrado). Excluidos títulos de capitalização 9.987,28.
 ```
 
 ### Liga
@@ -1112,6 +1136,10 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Disponível 90.655,52 (Caixa Geral 1.064,13 + Depósitos Bancários 89.591,39). Balance en balanco-2014-a.md (balanco-2014-b.md es DRE). Excluidas aplicações (títulos de capitalização 6.319).
+```
+
 ### Liga
 
 ```text
@@ -1252,6 +1280,10 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Emprestimos e Financiamentos circulante 359.138,93 (c/c 33.622,30 + descontos 230.000,00 + cap. giro 73.118,43 + leasing 48.740,88 - juros 17.390,88 - juros 8.951,80) + Empréstimos não circulante 192.168,36 (Welson Alves Ferreira Junior 90.280,86 + leasing 158.407,86 - juros 56.520,36). Balance en balanco-2013-a.md. Netos de intereses a apropiar, como está impreso. Incluye leasing Bradesco porque viene dentro de la fila de empréstimos. Parcelamentos tributários excluidos.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Disponível 5.877,16 (Caixa Geral 5.846,37 + Depósitos Bancários 30,79). El balance está en balanco-2013-a.md (el md de la tarea, balanco-2013-b.md, es solo el DRE). Excluidas aplicações financeiras (títulos de capitalização 2.800).
+```
+
 ### Liga
 
 ```text
@@ -1313,6 +1345,10 @@ tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por pr
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos circulante 269.795,65 + Mútuos com partes relacionadas circulante 104.560,86. La nota 10 dice que la deuda con Bradesco era 296.662,05 incluyendo 26.866,40 de intereses (269.795,65 neto = lo impreso). La nota 16 describe 'contrato formal de mútuo' con W. Alves Ferreira Junior; si no se cuenta como préstamo, la deuda es 269.795,65.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 883,77 (caixa 881,42 + Bradesco 2,35). Escaneo OCR; nota 4 coincide.
+```
+
 ### Liga
 
 ```text
@@ -1358,6 +1394,10 @@ tools/cargar.mjs (2026-10-10)
 tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/dentro-de-otro.mjs (2026-10-10): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2012, 2013, 2014, 2015, 2016, 2018, 2021, 2022, 2023, 2024, 2025): Televisión, Organización de partidos
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos circulante 236.558,81 + Empréstimos exigível a longo prazo 72.264,77. OCR de escaneo; total pasivo cierra con el total impreso 1.652.042,46. Parcelamentos de tributos 59.372,00 excluido.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 239.557,25. Transcripción Mistral OCR de escaneo. Nota 3: caja 239 mil + Bradesco 1,0 mil = 240 mil. El auditor dice que la cuenta caja no refleja adecuadamente la posición (ressalva).
 ```
 
 ## Gestiones

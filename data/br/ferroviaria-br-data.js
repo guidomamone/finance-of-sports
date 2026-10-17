@@ -906,7 +906,7 @@ const ferroviariabrFiscalYearMeta = {
       {renglon:'Receitas de atividades desportivas profissionais', lado:'revenue', importe:0.576146, motivo:'el documento no desglosa este renglón'},
       {renglon:'Serviços do departamento de esportes profissional', lado:'expense', importe:1.196469, motivo:'Claude 2026-10-09: Custo dos Serviços Prestados del departamento profesional: bolsón del costo del fútbol sin desglose (L164)'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.308824, cash:0.239557,
     officialTotalRevenue:1.58152, officialTotalExpenses:1.642833, officialPAT:-0.074235,
   },
   2012: {
@@ -920,7 +920,7 @@ const ferroviariabrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Com atividade esportiva - Profissional', lado:'expense', importe:1.834031, motivo:'Claude 2026-10-09: bolsón del costo del fútbol sin desglose'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.374357, cash:0.000884,
     officialTotalRevenue:4.262002, officialTotalExpenses:4.316757, officialPAT:-0.208401,
   },
   2013: {
@@ -940,7 +940,7 @@ const ferroviariabrFiscalYearMeta = {
       {label:'Comissão s/Cartão', value:-0.003034},
       {label:'Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)', value:0},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.551307, cash:0.005877,
     officialTotalRevenue:3.973653, officialTotalExpenses:5.017987, officialPAT:-1.222442,
   },
   2014: {
@@ -959,7 +959,7 @@ const ferroviariabrFiscalYearMeta = {
       {label:'Descontos Obtidos', value:0.000412},
       {label:'Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)', value:0},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.090656,
     officialTotalRevenue:5.620101, officialTotalExpenses:6.65035, officialPAT:-1.05595,
   },
   2015: {
@@ -978,7 +978,7 @@ const ferroviariabrFiscalYearMeta = {
       {label:'Rendimentos Aplicações Financeiras', value:0.000036},
       {label:'Descontos Obtidos', value:0.001365},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.328437, cash:0.004477,
     officialTotalRevenue:4.667066, officialTotalExpenses:5.589038, officialPAT:-1.098226,
   },
   2016: {
@@ -988,7 +988,7 @@ const ferroviariabrFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:-0.266455, tax:0,
-    grossDebt:null, cash:null,
+    grossDebt:0.26595, cash:0.027357,
     officialTotalRevenue:9.211197, officialTotalExpenses:10.134897, officialPAT:-1.190155,
   },
   2018: {
@@ -1022,7 +1022,7 @@ const ferroviariabrFiscalYearMeta = {
       {label:'Contribuição Social', value:-0.022657},
       {label:'IRPJ', value:-0.038936},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.15109, cash:0.017067,
     officialTotalRevenue:12.018497, officialTotalExpenses:11.409354, officialPAT:0.09653,
   },
   2021: {
@@ -1041,7 +1041,7 @@ const ferroviariabrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'(-) Custos operacionais', lado:'expense', importe:17.372222, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:1.018695, cash:0.258722,
     officialTotalRevenue:17.954394, officialTotalExpenses:22.933425, officialPAT:-5.106909,
   },
   2024: {
@@ -1069,7 +1069,7 @@ const ferroviariabrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'CUSTOS', lado:'expense', importe:23.267062, motivo:'Claude 2026-10-09: Ferroviária 2022 armado a mano (to-do 197); categoría por el grupo contable del balancete'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:1.286961, cash:0.699194,
     officialTotalRevenue:18.510316, officialTotalExpenses:29.922462, officialPAT:-10.937196,
   },
   2017: {
@@ -1089,7 +1089,7 @@ const ferroviariabrFiscalYearMeta = {
       {renglon:'Receitas Brutas', lado:'revenue', importe:8.67695, motivo:'Claude 2026-10-09: renglón de primer nivel sin desglose en el documento'},
       {renglon:'(-) Custos', lado:'expense', importe:7.802237, motivo:'Claude 2026-10-09: renglón de primer nivel sin desglose en el documento'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.313741, cash:0.004179,
     officialTotalRevenue:8.975272, officialTotalExpenses:10.103921, officialPAT:-1.72611,
   },
 };
