@@ -94,8 +94,8 @@
        el header envuelva y mandando el nav a una segunda fila completa, en vez de
        esconderlo: son las 4 secciones del sitio y no hay otra forma de llegar a ellas. */
     .header-inner{flex-wrap:wrap;}
-    nav{order:3;width:100%;justify-content:center;border-top:1px solid rgba(255,255,255,.12);padding-top:6px;}
-    nav button{font-size:12.5px;padding:7px 10px;}
+    #mainNav{order:3;width:100%;justify-content:center;border-top:1px solid rgba(255,255,255,.12);padding-top:6px;}
+    #mainNav button{font-size:12.5px;padding:7px 10px;}
     .logo{min-width:0;overflow:hidden;}
     /* TO-DO 26, RESUELTO (decisión de Guido, opción a): a 375px .header-right medía
        480px contra 347px disponibles y desbordaba de costado (scrollWidth 494 contra
@@ -121,7 +121,7 @@
   /* EL HEADER EN EL TELÉFONO: UNA SOLA FILA (56px). Hasta acá eran tres o cuatro filas (logo; moneda, contacto e idioma; "Estás
      viendo"; las pestañas) y el header fijo ocupaba ~165-200px de 812. Queda: logo, lupa (abre el selector) y un botón con la
      sección actual que abre el menú. El menú es el mismo #mainNav más idioma y contacto (.m-extra), mostrado como panel debajo del
-     header. La moneda baja a los controles de Finanzas (moverMoneda(), js/principal.js); el botón de club no se muestra (la lupa
+     header. La moneda vive en el panel de Finanzas (en todos los anchos); el botón de club no se muestra (la lupa
      abre el mismo selector). En escritorio nada de esto existe: .m-acciones, .m-extra y .m-velo están escondidos y .nav-wrap
      no arma caja (display:contents), así que el nav sigue en la fila del header como siempre. */
   .m-acciones,.m-extra,.m-velo{display:none;}
@@ -142,13 +142,13 @@
     .nav-wrap{display:none;position:absolute;top:56px;left:0;right:0;background:#fff;color:var(--text);
       border-radius:0 0 16px 16px;padding:8px 0 12px;box-shadow:0 12px 30px rgba(7,29,63,.25);z-index:2;}
     header.menu-abierto .nav-wrap{display:block;}
-    nav{order:0;width:auto;display:flex;flex-direction:column;border-top:0;padding-top:0;justify-content:flex-start;}
-    nav button{display:flex;align-items:center;justify-content:space-between;min-height:52px;padding:0 20px;border-radius:0;
+    #mainNav{order:0;width:auto;display:flex;flex-direction:column;border-top:0;padding-top:0;justify-content:flex-start;}
+    #mainNav button{display:flex;align-items:center;justify-content:space-between;min-height:52px;padding:0 20px;border-radius:0;
       font-size:17px;color:var(--text);text-align:left;}
-    nav button:hover{background:#f4f5f7;color:var(--text);}
-    nav button.active{background:#fdf5dc;color:var(--azul);font-weight:800;}
-    nav button.active::after{content:'';width:8px;height:8px;border-radius:50%;background:var(--oro);}
-    nav button[hidden]{display:none;}
+    #mainNav button:hover{background:#f4f5f7;color:var(--text);}
+    #mainNav button.active{background:#fdf5dc;color:var(--azul);font-weight:800;}
+    #mainNav button.active::after{content:'';width:8px;height:8px;border-radius:50%;background:var(--oro);}
+    #mainNav button[hidden]{display:none;}
     .m-extra{display:block;border-top:1px solid var(--border);margin:8px 20px 0;padding-top:8px;}
     .m-idioma{display:flex;align-items:center;justify-content:space-between;min-height:52px;font-size:15px;color:var(--muted);}
     .m-idioma-op{display:flex;gap:4px;background:#eef1f6;border-radius:8px;padding:3px;}
@@ -158,10 +158,6 @@
     .m-contacto{display:flex;align-items:center;width:100%;min-height:44px;padding:0;border:0;background:none;font:inherit;
       font-size:15px;color:var(--muted);cursor:pointer;}
     .m-velo.abierto{display:block;position:fixed;inset:56px 0 0 0;background:rgba(7,29,63,.45);z-index:1;}
-    /* La moneda, ya en los controles de Finanzas: el .segmented de siempre (fondo claro), no el del header (texto blanco). */
-    .fin-moneda-slot .header-currency-toggle{border:1px solid var(--border);border-radius:8px;}
-    .fin-moneda-slot .header-currency-toggle button{color:var(--azul);padding:6px 12px;font-size:13px;}
-    .fin-moneda-slot .header-currency-toggle button.active{background:var(--azul);color:#fff;}
   }
   @media (max-width:380px){ .logo{font-size:15px;gap:6px;} .m-menu-btn{padding:0 8px;} .m-btn{width:40px;} }
 
@@ -503,7 +499,45 @@
   /* to-do 147, paso 4: los cards de ejercicios (vista multi-año). Un card por año, se prende y se apaga
      solo; sin checkbox (pedido de Guido): prendido = borde azul y fondo celeste. */
   .fin-multi #anioSelectWrap{display:none !important;}
-  .fin-years{margin-bottom:14px;}
+  /* FINANZAS, lo de arriba: el título con "Cambiar de club", la guía de una línea, la tarjeta de ejercicios con la vista en palabras
+     y el panel "Cambiar cómo se ve" (moneda, inflación, formato), el aviso compacto y el índice fijo de la página. */
+  .fin-titulo{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+  .fin-titulo h1{margin:0;}
+  .fin-cambiar{min-height:36px;padding:0 12px;border-radius:8px;border:0;background:#eef1f6;color:var(--azul);font:inherit;
+    font-size:13px;font-weight:700;cursor:pointer;}
+  .fin-cambiar:hover{background:#e1e7f0;}
+  .fin-cambiar[hidden]{display:none;}
+  .fin-guia{display:flex;align-items:flex-start;gap:12px;background:#eef1f6;border-radius:12px;padding:12px 16px;font-size:14px;
+    color:var(--azul);margin:0 0 16px;line-height:1.5;}
+  .fin-guia[hidden]{display:none;}
+  .fin-guia > svg{flex:0 0 auto;margin-top:1px;}
+  .fin-guia > span{flex:1 1 auto;}
+  .fin-guia-x{flex:0 0 auto;width:32px;height:32px;margin:-6px -8px -6px 0;border:0;background:none;color:var(--azul);font-size:20px;cursor:pointer;}
+  .fin-years{margin-bottom:14px;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px 20px;}
+  .fin-vista{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid #f0f0ee;
+    padding-top:12px;margin-top:12px;}
+  .fin-vista-txt{font-size:14px;color:#45474d;}
+  .fin-vista-btn{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 14px;border-radius:10px;border:1px solid #c9ced8;
+    background:#fff;color:var(--azul);font:inherit;font-size:14px;font-weight:700;cursor:pointer;}
+  .fin-vista-btn[aria-expanded="true"]{background:var(--azul);border-color:var(--azul);color:#fff;}
+  .controls.fin-ajustes{display:none;}
+  .controls.fin-ajustes.abierto{display:flex;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 20px;
+    margin:-6px 0 16px;gap:12px 20px;}
+  .fin-moneda-slot:empty{display:none;}
+  .fin-moneda-slot .header-currency-toggle{border:1px solid var(--border);border-radius:8px;}
+  .fin-moneda-slot .header-currency-toggle button{color:var(--azul);padding:6px 12px;font-size:13px;}
+  .fin-moneda-slot .header-currency-toggle button.active{background:var(--azul);color:#fff;}
+  .fin-aviso{margin:0 0 16px;padding:10px 14px;border-radius:10px;background:#fdf5dc;color:#6b4e00;font-size:13.5px;line-height:1.5;}
+  .fin-indice{position:sticky;top:58px;z-index:5;display:flex;gap:4px;overflow-x:auto;background:var(--bg);
+    border-bottom:1px solid var(--border);margin:8px 0 18px;scrollbar-width:none;}
+  .fin-indice[hidden]{display:none;}
+  .fin-indice a{padding:10px 14px;font-size:14px;color:#45474d;text-decoration:none;white-space:nowrap;border-bottom:3px solid transparent;}
+  .fin-indice a:hover{color:var(--azul);}
+  .fin-indice a.activo{color:var(--azul);font-weight:700;border-bottom-color:var(--oro);}
+  #finTrendCard,#finPL,#finDeuda,#ligaSimWrap,#finanzasFuentesCard{scroll-margin-top:120px;}
+  @media (max-width:700px){ .fin-indice{top:56px;} }
+  /* Entre 701 y 900 el header tiene varias filas y alto variable: ahí el índice no queda fijo. */
+  @media (min-width:701px) and (max-width:900px){ .fin-indice{position:static;} }
   .fin-years-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px;}
   .fin-years-lbl{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-right:4px;}
   .fin-years-presets{display:flex;gap:6px;flex-wrap:wrap;}

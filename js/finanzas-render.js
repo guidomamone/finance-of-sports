@@ -312,7 +312,7 @@
     // Mismo criterio para la deuda: un cero que la fuente no publica no se muestra como cero.
     const sinDeuda = deudaNoDesglosada(cur);
     const extraStat = extraTotal !== undefined
-      ? `<div class="stat" data-k="extra"><div class="label" title="${t('stat.extra.tip','Intereses netos y otros ajustes que no son Ingresos ni Gastos operativos, pero sí suman al Resultado neto')}">${t('stat.extra','Int.')}</div><div class="value ${extraTotal>=0?'pos':'neg'}">${fmtAmount(extraTotal, currentCurrency)}</div></div>`
+      ? `<div class="stat" data-k="extra"><div class="label" title="${t('stat.extra.tip','Intereses netos y otros ajustes que no son Ingresos ni Gastos operativos, pero sí suman al Resultado neto')}">${t('stat.extra','Intereses y otros')}</div><div class="value ${extraTotal>=0?'pos':'neg'}">${fmtAmount(extraTotal, currentCurrency)}</div></div>`
       : '';
     document.getElementById('finanzasStats').innerHTML = `
       <div class="stat" data-k="ing"><div class="label">${t('section.revenue','Ingresos')}</div><div class="value">${fmtAmountPlain(revenueDisp, currentCurrency)}</div></div>

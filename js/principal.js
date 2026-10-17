@@ -271,6 +271,9 @@
   // siempre (Inicio, Comparar, Ligas, Finanzas, Mi Cuenta) y las que no significan nada sin uno se esconden hasta que lo haya
   // (Fuentes). Finanzas sin club no está vacía: es el card del selector. Si el visitante estaba en una pestaña que acaba de
   // esconderse, vuelve a Inicio.
+  // La guía de Finanzas cerrada (applyClubMode la esconde). localStorage puede no estar (modo privado): sin él, se cierra por la sesión.
+  let guiaCerrada = false;
+  try { guiaCerrada = localStorage.getItem('finGuiaCerrada') === '1'; } catch(e) {}
   const TABS_SIN_CLUB = ['inicio', 'vs', 'liga', 'finanzas', 'cuenta'];
   function applyClubMode(){
     const cold = !currentClub;
@@ -283,6 +286,11 @@
     const activo = document.querySelector('#mainNav button.active');
     if(activo && activo.hidden) document.querySelector('#mainNav button[data-section="inicio"]').click();
 
+
+    // Lo de Finanzas que solo tiene sentido con un club: cambiarlo, la guía y el índice de la página.
+    document.getElementById('finCambiar').hidden = cold;
+    document.getElementById('finIndice').hidden = cold;
+    document.getElementById('finGuia').hidden = cold || guiaCerrada;
 
     CLUB_SELECTOR.renderButton();
   }
@@ -468,16 +476,68 @@
     const b = e.target.closest('button[data-lang]');
     if(b) I18N.setLang(b.dataset.lang);
   });
-  // En el teléfono la moneda vive en los controles de Finanzas (el único lugar donde cambia algo); en escritorio, en el header.
-  // Se mueve el mismo nodo, así que su listener y sus botones (populateCurrencyToggle) no se enteran.
+  // Si la ventana se agranda con el menú abierto, se cierra: en escritorio no hay menú.
   const mqMovil = window.matchMedia('(max-width:700px)');
-  function moverMoneda(){
-    const toggle = document.getElementById('currencyToggleGlobal');
-    if(mqMovil.matches) document.getElementById('finMonedaSlot').appendChild(toggle);
-    else document.querySelector('.header-right').insertBefore(toggle, document.querySelector('.header-right .cb-wrap'));
+  mqMovil.addEventListener('change', () => { if(!mqMovil.matches) setMenuMovil(false); });
+
+  // ---------- FINANZAS: lo de arriba de la página ----------
+  // La moneda vive en el panel "Cambiar cómo se ve" de Finanzas (el único lugar donde cambia algo), no en el header. Se mueve el mismo
+  // nodo, así que su listener y sus botones (populateCurrencyToggle) no se enteran.
+  document.getElementById('finMonedaSlot').appendChild(document.getElementById('currencyToggleGlobal'));
+  document.getElementById('finCambiar').addEventListener('click', () => CLUB_SELECTOR.open());
+  // La guía: una línea que se cierra y no vuelve.
+  document.getElementById('finGuiaX').addEventListener('click', () => {
+    guiaCerrada = true;
+    try { localStorage.setItem('finGuiaCerrada', '1'); } catch(e) {}
+    document.getElementById('finGuia').hidden = true;
+  });
+  // El panel de la vista y su resumen en palabras ("Montos en USD, nominales, en formato simplificado"), leído de los botones activos:
+  // así no hay un segundo estado que se pueda desincronizar. Con ?multi=0 no hay tarjeta de ejercicios: el panel queda abierto.
+  const finAjustes = document.getElementById('finAjustes');
+  const finVistaBtn = document.getElementById('finVistaBtn');
+  finVistaBtn.addEventListener('click', () => {
+    const abierto = !finAjustes.classList.contains('abierto');
+    delete finAjustes.dataset.auto;
+    finAjustes.classList.toggle('abierto', abierto);
+    finVistaBtn.setAttribute('aria-expanded', abierto ? 'true' : 'false');
+  });
+  function pintarVistaFin(){
+    const activo = sel => { const b = document.querySelector(sel); return b ? b.textContent.trim() : ''; };
+    const partes = [];
+    const moneda = activo('#currencyToggleGlobal button.active');
+    if(moneda) partes.push(I18N.t('finanzas.view.amountsIn', 'Montos en') + ' ' + moneda);
+    if(!document.getElementById('realToggleWrap').hidden) partes.push(activo('#realToggle button.active').toLowerCase());
+    partes.push(activo('#simplifyToggle button.active').toLowerCase());
+    document.getElementById('finVistaTxt').textContent = partes.filter(Boolean).join(', ');
+    // Abierto "de oficio" solo mientras no hay tarjeta de ejercicios; cuando aparece, vuelve a cerrarse (si no lo abrió el visitante).
+    const sinTarjeta = document.getElementById('finYears').hidden;
+    if(sinTarjeta && !finAjustes.classList.contains('abierto')){ finAjustes.dataset.auto = '1'; finAjustes.classList.add('abierto'); }
+    else if(!sinTarjeta && finAjustes.dataset.auto){ delete finAjustes.dataset.auto; finAjustes.classList.remove('abierto'); }
   }
-  mqMovil.addEventListener('change', () => { moverMoneda(); if(!mqMovil.matches) setMenuMovil(false); });
-  moverMoneda();
+  // Cualquier cambio de botón activo (un click, o el JS que rearma la moneda al cambiar de club) repinta el resumen.
+  new MutationObserver(pintarVistaFin).observe(finAjustes, { subtree:true, childList:true, attributes:true, attributeFilter:['class', 'hidden'] });
+  new MutationObserver(pintarVistaFin).observe(document.getElementById('finYears'), { attributes:true, attributeFilter:['hidden'] });
+  pintarVistaFin();
+  // El índice marca la sección que se está leyendo: la última cuyo borde de arriba ya pasó debajo del header y del índice.
+  const finIdxLinks = [...document.querySelectorAll('#finIndice a')];
+  function marcarIndiceFin(){
+    if(document.getElementById('finIndice').hidden) return;
+    let actual = finIdxLinks[0];
+    finIdxLinks.forEach(a => {
+      const destino = document.querySelector(a.getAttribute('href'));
+      if(destino && destino.offsetParent !== null && destino.getBoundingClientRect().top < 140) actual = a;
+    });
+    finIdxLinks.forEach(a => a.classList.toggle('activo', a === actual));
+  }
+  window.addEventListener('scroll', marcarIndiceFin, { passive:true });
+  // Saltar sin escribir el #ancla en la URL: la URL es del estado de la pantalla (club, pestaña, años), no de la posición.
+  finIdxLinks.forEach(a => a.addEventListener('click', e => {
+    const destino = document.querySelector(a.getAttribute('href'));
+    if(!destino) return;
+    e.preventDefault();
+    destino.scrollIntoView({ behavior:'smooth', block:'start' });
+  }));
+  marcarIndiceFin();
 
   // ---------- CURRENCY TOGGLE (universal, en el header) ----------
   // "Comparar Gestiones" lo ignora a propósito (displayFinancialsForClub, js/finanzas-calc.js: siempre USD). Los botones se
@@ -620,6 +680,7 @@
     LIGA_VIEW.refresh();
     pintarConteoInicio();
     rotularMenuMovil();
+    pintarVistaFin();
   });
 
   I18N.init().then(renderLangMenu);

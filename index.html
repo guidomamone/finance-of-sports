@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title data-i18n="site.title">El deporte en Números | Datos para votar informado</title>
-<link rel="stylesheet" href="css/styles.css?v=1240">
+<link rel="stylesheet" href="css/styles.css?v=1244">
 <!-- Cloudflare Web Analytics -->
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3deae274c6f346eab1a19f78e41ac035"}'></script>
 <!-- End Cloudflare Web Analytics -->
@@ -196,8 +196,18 @@
     <!-- El título es el club, no la pestaña: la pestaña "Finanzas" ya está resaltada en el header. Sin club dice "Finanzas" y abajo
          queda el card para elegir uno. Los llena renderFinSelector() de js/selector.js en cada renderButton(). Sin data-i18n a
          propósito: el texto lo pone el JS, y I18N.apply() lo pisaría con "Finanzas". -->
-    <h1 id="finTitle">Finanzas</h1>
+    <div class="fin-titulo">
+      <h1 id="finTitle">Finanzas</h1>
+      <!-- "Estás viendo" en Finanzas: el título ya dice qué club es; el cambio va al lado (js/principal.js lo muestra con club). -->
+      <button type="button" class="fin-cambiar" id="finCambiar" hidden data-i18n="finanzas.changeClub">Cambiar de club</button>
+    </div>
     <p class="subtitle" id="finSub" hidden></p>
+    <!-- La guía mínima: una línea que se cierra y no vuelve (localStorage). La muestra js/principal.js solo con club. -->
+    <div class="fin-guia" id="finGuia" hidden>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 8h.01M11 12h1v4h1"></path></svg>
+      <span data-i18n-html="finanzas.guide"><strong>Cómo se usa:</strong> tocá un año para sumarlo o sacarlo de la comparación · tocá un rubro de la tabla para ver su evolución · cada número lleva a su documento en Fuentes.</span>
+      <button type="button" class="fin-guia-x" id="finGuiaX" data-i18n-aria-label="finanzas.guide.close" aria-label="Cerrar la guía">&#215;</button>
+    </div>
     <div class="fin-sel" id="finSelector"></div>
 
 
@@ -216,10 +226,18 @@
       <div class="fin-years-gest" id="finGest" hidden></div>
       <div class="fin-years-row"></div>
       <p class="fin-years-empty" hidden data-i18n="finanzas.card.empty">Ningún ejercicio elegido. Tocá un año para sumarlo.</p>
+      <!-- Cómo se están viendo los números, en palabras; los controles (moneda, inflación, formato) van en el panel de abajo. -->
+      <div class="fin-vista">
+        <span class="fin-vista-txt" id="finVistaTxt"></span>
+        <button type="button" class="fin-vista-btn" id="finVistaBtn" aria-expanded="false" aria-controls="finAjustes">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12"></path><circle cx="16" cy="6" r="2"></circle><circle cx="10" cy="12" r="2"></circle><circle cx="18" cy="18" r="2"></circle></svg>
+          <span data-i18n="finanzas.view.change">Cambiar cómo se ve</span>
+        </button>
+      </div>
     </div>
 
-    <div class="controls">
-      <!-- En el teléfono el USD / moneda del club baja del header a acá (js/principal.js, moverMoneda()). -->
+    <div class="controls fin-ajustes" id="finAjustes">
+      <!-- El USD / moneda del club: vive acá y no en el header (js/principal.js lo mueve al cargar). -->
       <span class="fin-moneda-slot" id="finMonedaSlot"></span>
       <!-- "Por gestión" oculto: la mayoría de los clubes no tiene una gestión real confirmada. Se esconde la UI, NO se borra
            gestionesByClub ni el cálculo por gestión, para poder traerlo de vuelta sin reconstruir nada. -->
@@ -265,9 +283,18 @@
     </div>
 
     <p class="fin-real-note" id="finRealNote" hidden></p>
-    <div id="finanzasDataQualityBanner" style="display:none;margin-bottom:16px;padding:12px 16px;border-radius:8px;border:1px solid #e0b400;background:#fff8e1;color:#5c4a00;font-size:14px;line-height:1.5;"></div>
+    <div id="finanzasDataQualityBanner" class="fin-aviso" style="display:none;"></div>
 
     <div class="grid" id="finanzasStats"></div>
+
+    <!-- El índice de la página: fijo arriba al scrollear. Lo muestra js/principal.js solo con club; cada link salta a su tarjeta. -->
+    <nav class="fin-indice" id="finIndice" hidden data-i18n-aria-label="finanzas.index" aria-label="En esta página">
+      <a href="#finTrendCard" data-i18n="finanzas.idx.trend">Evolución</a>
+      <a href="#finPL" data-i18n="finanzas.pl.title">Estado de resultados</a>
+      <a href="#finDeuda" data-i18n="finanzas.debt.title">Deuda</a>
+      <a href="#ligaSimWrap" data-i18n="finanzas.idx.otra">En otra liga</a>
+      <a href="#finanzasFuentesCard" data-i18n="nav.fuentes">Fuentes</a>
+    </nav>
 
     <!-- En la vista multi-año, el gráfico de evolución va acá, arriba de la tabla, y sigue a los ejercicios elegidos. "De qué vive el
          club" reemplaza a la torta de un año. Lo arma FIN_MULTI_CHART (js/finanzas-multi.js); la sección "Gráficos" de más abajo se
@@ -286,7 +313,7 @@
       <div class="fin-mchart-wrap"><canvas id="finTrendCanvas"></canvas></div>
     </div>
 
-    <div class="card">
+    <div class="card" id="finPL">
       <h2 data-i18n="finanzas.pl.title">Estado de resultados</h2>
       <p class="subtitle" data-i18n="finanzas.pl.sub">En ingresos ves cuánta plata entró y en gastos ves cuánta salió del club en este ejercicio, categoría por categoría.</p>
       <!-- Controles de la tabla multi-año: los arma js/finanzas-multi.js. -->
@@ -303,7 +330,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card" id="finDeuda">
       <h2 data-i18n="finanzas.debt.title">Deuda</h2>
       <p class="subtitle" data-i18n="finanzas.debt.sub">Acá ves cuánta plata le debe el club a terceros (deuda bruta), cuánta plata tiene disponible (caja) y la diferencia entre las dos (deuda neta).</p>
       <table id="finanzasDebtTable">
@@ -693,40 +720,40 @@
 <!-- ASSET_V: versión de los assets propios, para invalidar el cache del navegador en cada deploy (si no, un visitante se queda
      con un js/*.js viejo mientras el HTML es nuevo). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o `data/`. Lo leen
      también los cargadores dinámicos (loadClubData, I18N.load, loadRanking). -->
-<script>window.ASSET_V = '1240';</script>
-<script src="data/lang/langs.js?v=1240"></script>
-<script src="js/i18n.js?v=1240"></script>
-<script src="data/clubs.js?v=1240"></script>
+<script>window.ASSET_V = '1244';</script>
+<script src="data/lang/langs.js?v=1244"></script>
+<script src="js/i18n.js?v=1244"></script>
+<script src="data/clubs.js?v=1244"></script>
 <!-- data/club-index.js: el índice liviano de TODOS los clubes (nombre, país, calidad del dato, ejercicios), GENERADO por
      tools/generate-club-index.js. Lo que hay que mostrar de un club ANTES de entrar a él vive adentro de data/<país>/<club>-data.js, que
      no se carga hasta que el visitante lo elige. -->
-<script src="data/club-index.js?v=1240"></script>
+<script src="data/club-index.js?v=1244"></script>
 <!-- data/leagues.js: el CATÁLOGO de la taxonomía del selector (deportes, regiones, países, ligas). NO tiene membresía: qué club
      jugó en qué liga es (club, ejercicio) y vive en data/club-leagues.js. Ver la cabecera de data/leagues.js ("no existe ninguna
      arista club → liga sin año"). -->
-<script src="data/leagues.js?v=1240"></script>
-<script src="data/club-leagues.js?v=1240"></script>
-<script src="data/category-map.js?v=1240"></script>
-<script src="data/site-labels.js?v=1240"></script>
-<script src="data/currency-map.js?v=1240"></script>
-<script src="data/sources-view.js?v=1240"></script>
+<script src="data/leagues.js?v=1244"></script>
+<script src="data/club-leagues.js?v=1244"></script>
+<script src="data/category-map.js?v=1244"></script>
+<script src="data/site-labels.js?v=1244"></script>
+<script src="data/currency-map.js?v=1244"></script>
+<script src="data/sources-view.js?v=1244"></script>
 <!-- Ningún data file de club se carga acá: el sitio abre en la portada sin club, y CUALQUIER club entra por loadClubData() cuando
      el visitante lo elige. -->
-<script src="js/info-tip.js?v=1240"></script>
-<script src="data/deflactores.js?v=1240"></script>
-<script src="js/finanzas-calc.js?v=1240"></script>
-<script src="js/finanzas-render.js?v=1240"></script>
-<script src="js/finanzas-anios.js?v=1240"></script>
-<script src="js/finanzas-multi.js?v=1240"></script>
+<script src="js/info-tip.js?v=1244"></script>
+<script src="data/deflactores.js?v=1244"></script>
+<script src="js/finanzas-calc.js?v=1244"></script>
+<script src="js/finanzas-render.js?v=1244"></script>
+<script src="js/finanzas-anios.js?v=1244"></script>
+<script src="js/finanzas-multi.js?v=1244"></script>
 <!-- js/selector.js: el selector de club. Se alimenta solo de clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja todos
      los clubes sin bajar un solo data/<país>/<club>-data.js. -->
-<script src="js/selector.js?v=1240"></script>
-<script src="data/destacados.js?v=1240"></script>
-<script src="js/liga.js?v=1240"></script>
+<script src="js/selector.js?v=1244"></script>
+<script src="data/destacados.js?v=1244"></script>
+<script src="js/liga.js?v=1244"></script>
 <!-- js/cuenta.js: login con Google vía Supabase + guardado automático de búsquedas. No sabe cómo se renderiza el resto del sitio:
      recibe `reopen` por CUENTA.init() y expone notifyStateChange() para que index.html avise cuando cambia el club/año. -->
-<script src="js/cuenta.js?v=1240"></script>
-<script src="js/principal.js?v=1240"></script>
+<script src="js/cuenta.js?v=1244"></script>
+<script src="js/principal.js?v=1244"></script>
 
 </body>
 </html>
