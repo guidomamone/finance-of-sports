@@ -112,6 +112,10 @@ tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "Caixa e equivalentes de caixa" pág. 6
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e Financiamentos circulante 20.725.260 + não circulante - (nota 9: mútuo Aron Dresch 4.700.000, Sicredi varios, debêntures 5.000.000, BTG CCB 1.203.433+1.290.244, etc.). Parcelamento Unificado LP 3.982.288 (tributario) excluido. El total de la nota 9 suma 20.725.260.
+```
+
 ### Liga
 
 ```text
@@ -174,6 +178,10 @@ tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 1
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e Financiamentos circulante 15.673.550 + não circulante 150.410. Salto fuerte vs 2023 (flujo de caja: aumento de empréstimos 14.982.691). El PDF 2025 muestra 2024 reapresentado con los mismos importes.
+```
+
 ### Liga
 
 ```text
@@ -227,6 +235,10 @@ tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterio
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: año anterior): "Caixa e Equivalentes de Caixa" pág. 6
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e Financiamentos circulante 190.207 + não circulante 651.062 (nota 26 total 841.269). Coincide con la nota 26.
 ```
 
 ### Liga
@@ -283,6 +295,10 @@ tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e Equivalentes de Caixa" pág. 8
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos e Financiamentos circulante 339.993 + não circulante 536.861 (nota 26 total 876.854: mútuo Aron Dresch 120.000, financiamentos Sicredi y Banco de D. Econômico). Coincide con el total de la nota 26.
 ```
 
 ## Fuentes

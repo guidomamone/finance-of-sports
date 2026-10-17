@@ -111,7 +111,7 @@ const cuiababrFiscalYearMeta = {
       {label:'(-) PROVISÃO PARA IMPOSTO DE RENDA', value:null},
       {label:'(-) PROVISÃO PARA CONTRIBUIÇÃO SOCIAL', value:null},
     ],
-    grossDebt:null, cash:3.429558,
+    grossDebt:0.876854, cash:3.429558,
     officialTotalRevenue:133.342795, officialTotalExpenses:107.831001, officialPAT:25.790477,
   },
   2024: {
@@ -126,7 +126,7 @@ const cuiababrFiscalYearMeta = {
       {label:'(-) PROVISÃO PARA IMPOSTO DE RENDA', value:null},
       {label:'(-) PROVISÃO PARA CONTRIBUIÇÃO SOCIAL', value:null},
     ],
-    grossDebt:null, cash:2.932455,
+    grossDebt:15.82396, cash:2.932455,
     officialTotalRevenue:224.16675, officialTotalExpenses:162.152227, officialPAT:64.752582,
   },
   2025: {
@@ -141,7 +141,7 @@ const cuiababrFiscalYearMeta = {
       {label:'(-) PROVISÃO PARA IMPOSTO DE RENDA', value:null},
       {label:'(-) PROVISÃO PARA CONTRIBUIÇÃO SOCIAL', value:null},
     ],
-    grossDebt:null, cash:3.484627,
+    grossDebt:20.72526, cash:3.484627,
     officialTotalRevenue:57.430498, officialTotalExpenses:97.56217, officialPAT:-42.148674,
   },
   2023: {
@@ -160,7 +160,7 @@ const cuiababrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Custo com Futebol Profissional', lado:'expense', importe:98.846512, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:12.840574,
+    grossDebt:0.841269, cash:12.840574,
     officialTotalRevenue:157.933413, officialTotalExpenses:119.971399, officialPAT:37.356016,
   },
 };
