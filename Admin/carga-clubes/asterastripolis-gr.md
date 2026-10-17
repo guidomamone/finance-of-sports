@@ -82,6 +82,10 @@ tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Δάνεια (no corriente) 5.899,97 + Τραπεζικά δάνεια (corriente) 24.128,13. Nota 5.4.14: dos préstamos para comprar autos (reserva de dominio); incluidos como préstamos.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Ταμειακά διαθέσιμα και ισοδύναμα 268.203,50. Balance individual (sin grupo).
+```
+
 ### Liga
 
 ```text
@@ -291,6 +295,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 16
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Μακροπρόθεσμα Δάνεια 0,00 + Τραπεζικά δάνεια (corriente) 0,00. Balance completo (Σύνολο υποχρεώσεων 530.558,49), sin otra fila financiera.
+```
+
 ### Liga
 
 ```text
@@ -340,6 +348,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 17
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Μακροπρόθεσμα Δάνεια 0,00 + Τραπεζικά δάνεια (corriente) 0,00. Balance completo (Σύνολο υποχρεώσεων 716.302,37), sin otra fila financiera.
 ```
 
 ## 2019

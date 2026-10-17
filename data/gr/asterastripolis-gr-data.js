@@ -191,7 +191,7 @@ const asterastripolisgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)', lado:'expense', importe:3.147828, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:0.417622,
+    grossDebt:0, cash:0.417622,
     officialTotalRevenue:3.435971, officialTotalExpenses:4.476491, officialPAT:-1.05236,
   },
   2022: {
@@ -263,7 +263,7 @@ const asterastripolisgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)', lado:'expense', importe:6.879827, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.030028, cash:0.268204,
     officialTotalRevenue:7.415662, officialTotalExpenses:9.066915, officialPAT:-1.677874,
   },
   2021: {
@@ -281,7 +281,7 @@ const asterastripolisgrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)', lado:'expense', importe:3.448209, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:0.601755,
+    grossDebt:0, cash:0.601755,
     officialTotalRevenue:5.039553, officialTotalExpenses:4.842301, officialPAT:0.185683,
   },
 };
