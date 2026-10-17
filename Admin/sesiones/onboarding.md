@@ -18,6 +18,18 @@ Para que la principal lo pase a TODO, CHANGELOG y ESTADO al mergear (skill de ar
     2023-24 págs. 5 y 8 (organigrama e infografía), Go Ahead Eagles 2020-21 (una palabra). Revisión contra el PDF de las filas
     reubicadas y páginas leídas del render: los demás casos, bien.
 
+- Transcripción por subagentes: NEC Holding 2023-24 (el del club; PDF copiado a `NEC/`, copiarlo también a la carpeta principal),
+  Beşiktaş 2014-2017 y 2020 (2016 es un escaneo: 25 cifras corregidas contra el render), De Graafschap 2021-22, Sparta 2021-22 y VVV 2021-22
+  y 2022-23. Young Boys ya estaba.
+- Validación: la primera corrida (Guido la cortó en 40 de 566, ~US$ 6,75) rehízo con Mistral 36 `.md` belgas sin tablas; quedaron
+  validados y commiteados. La lista `Admin/lotes/subagentes-validar.txt` (solo con tablas, ~US$ 3,47) espera el merge de pipeline.
+- Descartados también: 523 certificaciones y dictámenes de Colombia con `estados-financieros` del mismo año y los 5 informes Deloitte de la
+  Pro League.
+- Gestiones (to-do 195): Portugal, 49 gestiones confirmadas de 25 clubes (tanda-2026-10-17); 129 casos de la cola contestados. Estoril
+  2025 sin gestión (a `dudas-por-club.md`). Brasil (CRB, Cuiabá, Ferroviária, Goiás) sigue esperando a los clubes; OFI 2018 sin gestión.
+  Criterio aplicado (de `pt.md`): club dueño de la SAD → presidente del club (Sporting 2001-2003 con Dias da Cunha aunque la SAD la
+  presidía Ribeiro Telles; Marítimo 2021-22 con Rui Fontes aunque firma João Martins); dueño sociedad → presidente que firma.
+
 ## Regla nueva (para `Admin/CONVENCIONES-DATOS.md`)
 
 - Dos documentos distintos del mismo club y ejercicio (p. ej. el jaarverslag del club y el depósito en la KvK): entra el que trae el
