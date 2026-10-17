@@ -1540,7 +1540,7 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: año anterior): "Dívidas a Instituições de Crédito" pág. 18
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: año anterior): "Dívidas a Instituições de Crédito" pág. 18 — DEUDA VACIADA 2026-10-17: toma una sola fila del par (mediano/largo + corto plazo del POC), o una escala mil veces chica, o un crédito ("Clientes c/Corrente") (to-do 260 f)
 ```
 
 ```text
@@ -1612,7 +1612,7 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 2 (compuerta: documento siguiente): "Dívidas a Instituições de Crédito" pág. 17 + "Clientes c/Corrente" pág. 17
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 2 (compuerta: documento siguiente): "Dívidas a Instituições de Crédito" pág. 17 + "Clientes c/Corrente" pág. 17 — DEUDA VACIADA 2026-10-17: toma una sola fila del par (mediano/largo + corto plazo del POC), o una escala mil veces chica, o un crédito ("Clientes c/Corrente") (to-do 260 f)
 ```
 
 ```text
@@ -1684,7 +1684,7 @@ tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterio
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: documento siguiente): "Dívidas a Instituições de Crédito" pág. 17
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: documento siguiente): "Dívidas a Instituições de Crédito" pág. 17 — DEUDA VACIADA 2026-10-17: toma una sola fila del par (mediano/largo + corto plazo del POC), o una escala mil veces chica, o un crédito ("Clientes c/Corrente") (to-do 260 f)
 ```
 
 ### Liga
@@ -1755,7 +1755,7 @@ tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguien
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: año anterior): "Dívidas a Instituições de Crédito" pág. 14
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: año anterior): "Dívidas a Instituições de Crédito" pág. 14 — DEUDA VACIADA 2026-10-17: toma una sola fila del par (mediano/largo + corto plazo del POC), o una escala mil veces chica, o un crédito ("Clientes c/Corrente") (to-do 260 f)
 ```
 
 ### Liga
@@ -1822,7 +1822,7 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1b (compuerta: documento siguiente): "Dívidas a Instituições de Crédito" pág. 20; cash escalón 1 (compuerta: documento anterior): "Cash Flow: (RLE) + (Amortizações + Provis" pág. 21
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1b (compuerta: documento siguiente): "Dívidas a Instituições de Crédito" pág. 20; cash escalón 1 (compuerta: documento anterior): "Cash Flow: (RLE) + (Amortizações + Provis" pág. 21 — DEUDA VACIADA 2026-10-17: toma una sola fila del par (mediano/largo + corto plazo del POC), o una escala mil veces chica, o un crédito ("Clientes c/Corrente") (to-do 260 f)
 ```
 
 ### Liga
@@ -1892,7 +1892,7 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1b (compuerta: documento siguiente): "Dívidas a Instituições de Crédito" pág. 21; cash escalón 1 (compuerta: documento siguiente): "Cash Flow: (RLE) + (Amortizações + Provis" pág. 22
+tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1b (compuerta: documento siguiente): "Dívidas a Instituições de Crédito" pág. 21; cash escalón 1 (compuerta: documento siguiente): "Cash Flow: (RLE) + (Amortizações + Provis" pág. 22 — DEUDA VACIADA 2026-10-17: toma una sola fila del par (mediano/largo + corto plazo del POC), o una escala mil veces chica, o un crédito ("Clientes c/Corrente") (to-do 260 f)
 ```
 
 ### Liga
@@ -2011,7 +2011,7 @@ tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguien
 ```
 
 ```text
-tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: documento siguiente): "Dívidas a Instituições de Crédito" pág. 1
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: documento siguiente): "Dívidas a Instituições de Crédito" pág. 1 — DEUDA VACIADA 2026-10-17: toma una sola fila del par (mediano/largo + corto plazo del POC), o una escala mil veces chica, o un crédito ("Clientes c/Corrente") (to-do 260 f)
 ```
 
 ### Liga

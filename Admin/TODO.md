@@ -182,8 +182,14 @@ con los que no están en los pasos de arriba.
       resumen; hechas las mejoras 1 y 2) y 39 sin vecino que confirme. Lo que queda: Benfica 2023-2026 y Sporting (tablas resumen con su
       propio "Total do passivo", así que la mejora 1 no restringe), y la escala de los documentos de Benfica 2023 en adelante (la
       propuesta salía en unidades con un balance en miles).
-   c) CLUBES EN 0: AVS (0 de 6), Boavista (0 de 2), Chaves (0 de 4), Famalicão (0 de 14), Mafra (0 de 2), Tondela (0 de 2), Vitória
-      Guimarães (0 de 8) y la deuda de Felgueiras (0 de 3): ni Jev ni la IA pasaron la compuerta. Diagnosticar 2-3 antes de diseñar.
+   f) FORMATO POC (Sporting 2000-2008, Benfica viejo): la deuda está partida en "Dívidas a terceiros - médio e longo prazo" y "- curto
+      prazo", títulos que la regla de secciones no reconoce, así que el par no se arma y el precedente toma una sola fila. Sporting 2004:
+      "Dívidas a Instituições de Crédito" 5.000 (L537) + 25.708 (L541), en miles; se cargaba 0,005. Se vaciaron las deudas de Sporting 2000 y
+      2002-2007 (partidas, en escala mil veces chica, o con "Clientes c/Corrente", que es un crédito). Escalón posible: sumar los títulos del
+      POC a SECCION_PNC_RE / SECCION_PC_RE y volver a correr Sporting.
+   c) CLUBES EN 0: Famalicão y Vitória ya resueltos (lista de notas con punto). Quedan AVS (0 de 6), Boavista (0 de 2), Chaves (0 de 4),
+      Mafra (0 de 2), Tondela (0 de 2) y la deuda de Felgueiras (0 de 3). Además, 13 cajas cargadas eran el total del activo corriente
+      ("la caja es una parte de la nota" con un total del balance): corregidas.
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
     e) `perimetro-a2` le pasa a la IA hasta ~42.000 tokens de entrada para contestar ~130 (Olympiacos 2018: US$ 0,17 por llamada); en
