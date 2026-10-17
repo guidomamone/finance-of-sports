@@ -32,6 +32,11 @@ que dice `ESTADO.md` era verdad ese día.
   (201 de 201 iguales) y escritos club por club; 9 deudas cargadas corregidas por el criterio con socios y otros financiadores (Bologna
   2018-2025, Chievo 2015-2016, Genoa 2022-2023, Parma 2017). El esquema 2424 como escalón, medido y descartado (HALLAZGOS).
   Sin caja ni deuda: 249 -> 111 de 919.
+- tools/worktree.mjs (to-do 251): `preparar` enlaza en una copia lo que git ignora (PDFs, claves, cachés); `mergear` resuelve lo generado
+  con main y regenera, y frena si la rama tocó TODO / CHANGELOG / ESTADO o en un conflicto real. Probado en una copia real (tools iguales)
+  y en un clon (ASSET_V distinto, TODO editado, conflicto en una tool). Skill de arranque: worktree.md y su fila.
+- TODO: to-dos 264 a 270 (Ligas, Finanzas, Inicio, "Estás viendo", mi cuenta / Supabase, faltantes por liga para sourcing, modelo de
+  estimación); tanda E de pantallas.
 - Caja y deuda del resto del sitio: 320 datos leídos en el balance por 7 subagentes Sonnet con cita (Portugal, Grecia, Brasil, Alemania,
   Dinamarca, Chile, Colombia, Croacia), cotejados con el ensayo y escritos club por club. Istra, Werder y HSV con grossDebt / cash en su
   fiscalYearMeta. Sin caja ni deuda: 111 -> 27 de 919 (lo que falta, por el documento: to-do 260). To-do 263 (ajuste por PDF y año).

@@ -1,0 +1,16 @@
+# Sesión en un worktree
+
+Una sesión en paralelo trabaja en su copia (git worktree) y su rama; la principal mergea.
+
+**Al arrancar en la copia:** `node tools/worktree.mjs preparar <esta carpeta>` (enlaza PDFs, claves y cachés de la carpeta principal; las
+cachés quedan compartidas).
+
+**Mientras trabajás:** commits en tu rama, sin push. No edites `Admin/TODO.md`, `Admin/CHANGELOG.md` ni `Admin/ESTADO.md`: los escribe solo
+la principal. Evitá tocar una tool o un club que tenga otra sesión.
+
+**Al cerrar:** en vez de esos tres, escribí `Admin/sesiones/<rama>.md`: qué cambió (lo de CHANGELOG), qué quedó pendiente (lo de TODO) y qué
+deja de ser cierto en ESTADO. Commit.
+
+**En la principal, para mergear:** `node tools/worktree.mjs mergear <rama>`. Resuelve lo generado (ASSET_V, `fuentes/`, índices, rankings)
+con main, regenera y audita. Frena si la rama tocó los tres documentos o si hay un conflicto real. Después pasá `Admin/sesiones/<rama>.md` a
+TODO, CHANGELOG y ESTADO, y archivalo en `Admin/Archive/`.

@@ -31,6 +31,7 @@ permanentes. Esto es el procedimiento.
 | 5 | `.claude/skills/club-or-year-onboarding` | si onboardeás clubes o tocás el pipeline (trae su propio arranque) |
 | 6 | `.claude/skills/club-sourcing` | si BUSCÁS documentos de un club que no tiene nada todavía |
 | 7 | `Admin/sourcing/README.md` (índice de países) → `Admin/sourcing/_indice/<País>.md` | antes de salir a buscar PDFs: mirá qué ya se probó. Leé SOLO el país que te toca |
+| 8 | `worktree.md` (en esta carpeta) | si la sesión corre en un worktree (`git rev-parse --git-dir` no es `.git`) o Guido pide trabajar en paralelo |
 
 **Lo que NO hace falta leer para trabajar**, y conviene no abrir por las dudas:
 

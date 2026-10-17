@@ -106,6 +106,8 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   documento y no se pregunta (`cargar.mjs`); el perfil del club no se toca (Porto publica años del club y de la SAD).
 - Para enterarse de que terminó un lote sin mirar la terminal: el comando lleva al final
   `; osascript -e 'display notification "Terminó el lote" with title "finance-of-sports" sound name "Glass"'; say "lote terminado"`.
+- Sesiones en paralelo: cada una en su worktree y su rama (`tools/worktree.mjs preparar` / `mergear`); solo la principal escribe TODO,
+  CHANGELOG y ESTADO, las otras dejan su cierre en `Admin/sesiones/<rama>.md` (skill de arranque, `worktree.md`).
 - El plan para Guido (solo lo pendiente, corto) vive en el panel Plan de la app; su copia durable es el bloque ORDEN de `Admin/TODO.md`
   (tandas A-G por dependencias), y el detalle, en los to-dos.
 - Club asociación o sociedad (SAD/SDUQ): se elige entidad solo cuando hay dos documentos del mismo ejercicio; el de la otra va a

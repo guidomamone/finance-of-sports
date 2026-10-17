@@ -36,10 +36,10 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
-* 260: caja y deuda, lo que queda (en curso)
+* 268: mi cuenta (Supabase sin acceso): que no se vea roto
+* 262 y 263: caja y deuda, lo que queda (compuerta del total impreso; ajuste por PDF y año)
 
 **B. Bases baratas que después cuestan caro cambiar**
-* 251: worktrees para sesiones en paralelo (ya hay dos sesiones en la misma carpeta)
 * 250: hooks: auditoría antes del commit, skills, ASSET_V (vuelve automáticas reglas que hoy dependen de acordarse)
 * 244: licencia del dataset y de cada fuente (lo que alguien copie sin licencia no se recupera)
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos)
@@ -55,8 +55,15 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 * El punto 2 del plan (transcripciones por subagentes) y Reino Unido (lo transcribe la otra sesión)
 * 165 c: altas de los países nuevos que faltan
 * 195: gestiones (presidentes) sin fuente confirmada (se puede ir haciendo con cada país)
+* 266: qué clubes le faltan a cada liga por año, como lista de sourcing
 
-**E. Distribución (depende de 246)**
+**E. Pantallas (un solo lenguaje visual; mockups con Design antes)**
+* 267: Inicio
+* 264: Ligas
+* 265: Finanzas más fácil de usar
+* 269: "Estás viendo" pantalla por pantalla
+
+**E2. Distribución (depende de 246)**
 * 240: link dedicado, nivel 1 (el estado en la URL)
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
 * 254 + 243: repaso mensual de métricas y lo que se busca sin resultado (eligen qué club sumar en D)
@@ -67,6 +74,7 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 **F. Datos para afuera (cuando haya tiempo; nada urgente)**
 * 248: taxonomía genérica y subcategorías por deporte (antes del esquema; resuelve también 130 y 183)
 * 130 y 183: otros deportes, polideportivos e Italia fuera del fútbol (después de 248)
+* 270: modelo que estima años y clubes sin balance (después de 266: necesita saber qué falta)
 * 245: datos como JSON con esquema
 * 247: registro público de correcciones (sobre 245)
 * 249: API en dominio propio (último; no construirla ahora)
@@ -195,10 +203,6 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
    api.financeofsports.com desde el primer día. No construirla ahora.
 250. HOOKS DE CLAUDE CODE (mejoras de proyecto, pedido de Guido 2026-10-16). Hoy no hay ninguno. Candidatos: audit.js antes de cada commit; bloquear la edición de .claude/skills/ sin el
    ok de Guido; avisar si cambió data/ y no subió ASSET_V. Lo que una máquina puede chequear sale del texto de las reglas.
-251. WORKTREES PARA SESIONES EN PARALELO (mejoras de proyecto, pedido de Guido 2026-10-16). Cada sesión en su copia y su rama, y después se mergea, en vez de "no edites que hay otra
-   sesión abierta". Lo que lo hacía fallar: todas las sesiones editan TODO, CHANGELOG y ESTADO y chocan al mergear. Regla (ok de Guido,
-   2026-10-17): solo la sesión principal escribe esos tres; las otras dejan su cierre en `Admin/sesiones/<nombre>.md` y la principal lo
-   pasa al mergear. Falta: dónde van las copias, cómo ven los PDFs (no están en git) y escribirlo en la skill de arranque.
 252. TAREA PROGRAMADA: EJERCICIOS NUEVOS (mejoras de proyecto, pedido de Guido 2026-10-16). Los clubes publican una vez por año (casi todos entre septiembre y diciembre). Una tarea semanal
    revisa reguladores y webs de los clubes cargados y deja los links en Admin/sourcing/README.md (con Claude in Chrome para los portales con
    sesión o formularios difíciles).
@@ -233,6 +237,22 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 263. AJUSTE POR PDF Y AÑO (caja-deuda.mjs / ajustes.mjs). Un ajuste `caja` / `deuda` se busca por PDF, y dos años cargados desde el mismo
    documento (el año y su comparativo: Dortmund 2024 y 2025 desde geschaeftsbericht-2024-25, RB Leipzig 2024 y 2025 desde
    jahresabschluss-2024-25) reciben el mismo valor. Escalón: el ajuste puede llevar `anio`, y si lo lleva vale solo para ese año.
+
+264. PESTAÑA LIGAS: REDISEÑO (pedido de Guido, 2026-10-17). /liga se llenó de cosas y cuesta leerla. Mockup con Design antes de codear.
+265. FINANZAS: MÁS FÁCIL DE USAR (pedido de Guido, 2026-10-17). Está completa pero cuesta saber qué tocar (ni Guido se acuerda). Mirar
+   qué se usa de verdad (métricas, to-do 254), qué se esconde o se agrupa, y una guía mínima en pantalla. Mockup antes de codear.
+266. CADA LIGA DICE QUÉ CLUBES LE FALTAN POR AÑO, Y AVISA A SOURCING (pedido de Guido, 2026-10-17). Con `data/club-leagues/` (quién jugó
+   cada temporada) contra lo cargado: por liga y año, los clubes sin ejercicio. Se ve en la pestaña Ligas y genera la lista de pendientes
+   de sourcing (`Admin/sourcing/`), sin duplicar lo ya buscado y descartado.
+267. INICIO: REDISEÑO (pedido de Guido, 2026-10-17). Mockup con Design antes de codear; junto con 264 y 265 (mismo lenguaje visual).
+268. MI CUENTA NO FUNCIONA: SUPABASE NOS SACÓ EL ACCESO (pedido de Guido, 2026-10-17). Ver qué pasó con el proyecto (pausado, plan, clave)
+   y decidir: recuperarlo, migrarlo o sacar la cuenta del sitio hasta tener un reemplazo. Mientras tanto, que no se vea roto.
+269. EL BOTÓN "ESTÁS VIENDO" NO TIENE SENTIDO EN VARIAS PANTALLAS (pedido de Guido, 2026-10-17). Decidir pantalla por pantalla dónde va
+   y dónde no.
+270. MODELO QUE ESTIMA AÑOS Y CLUBES QUE NO TENEMOS (pedido de Guido, 2026-10-17). Estadístico: con lo que sí está cargado, estimar
+   ingresos / gastos de un club-año sin balance a partir de la posición en la tabla, la liga, los partidos contra clubes con finanzas,
+   el historial del club. Mostrarlo siempre como estimación, con su error medido (validación cruzada contra años reales) y aparte de lo
+   real. Diseño y medición antes de mostrar nada.
 
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
