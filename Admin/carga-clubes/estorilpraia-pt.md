@@ -112,6 +112,10 @@ tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterio
 tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: documento anterior): "Caixa e depósitos bancários" pág. 9
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos no corriente 19 110 + Financiamentos obtidos de entidades do grupo no corriente 2 800 030 + Financiamentos obtidos corriente 4 290. La nota (línea 2295) confirma 2.800.030 como apoyo de tesorería del accionista mayoritario.
+```
+
 ### Liga
 
 ```text
@@ -187,6 +191,10 @@ tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguien
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: año anterior): "Caixa e depósitos bancários" pág. 9
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos de entidades do grupo e partes relacionadas no corriente 3 200 000 + Financiamentos obtidos corriente 0. La nota (línea 2422) dice que los 3.200.000 son apoyo de tesorería del accionista mayoritario. El comparativo 2023 (3.167.413 + 4.566) no se usa.
 ```
 
 ### Liga
@@ -336,6 +344,10 @@ tools/cargar.mjs (2026-10-16). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 10
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Financiamentos obtidos no corriente 4 555 + Financiamentos obtidos de entidades do grupo (Globalon) no corriente 4 179 799 + Financiamentos obtidos corriente 2 315. Balance individual (dispensa de consolidar). Se usó el balance, no la tabla resumen del informe de gestión (líneas 337-346, que repite las mismas cifras). Préstamos del accionista mayoritario incluidos.
 ```
 
 ### Liga
