@@ -370,7 +370,7 @@ const sassuoloitFiscalYearMeta = {
       {label:'b) Imposte anticipate e differite', value:0.171314},
       {label:'d) Provento da Consolidato Fiscale', value:11.868018},
     ],
-    grossDebt:null, cash:0.447461,
+    grossDebt:56.870575, cash:0.447461,
     officialTotalRevenue:70.699, officialTotalExpenses:118.55949, officialPAT:-38.772733,
   },
   2021: {
@@ -389,7 +389,7 @@ const sassuoloitFiscalYearMeta = {
       {label:'b) Imposte anticipate e differite', value:0.213875},
       {label:'d) Provento da Consolidato Fiscale', value:3.83821},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:142.127929, cash:0.680768,
     officialTotalRevenue:123.653, officialTotalExpenses:136.527069, officialPAT:-13.850755,
   },
   2024: {
@@ -408,7 +408,7 @@ const sassuoloitFiscalYearMeta = {
       {label:'b) Imposte anticipate e differite', value:-0.121392},
       {label:'d) Provento da Consolidato Fiscale', value:6.466509},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:86.280473, cash:0.396273,
     officialTotalRevenue:102.104, officialTotalExpenses:124.658564, officialPAT:-22.125621,
   },
   2019: {
@@ -428,7 +428,7 @@ const sassuoloitFiscalYearMeta = {
       {label:'b) Imposte relative ad esercizi precedenti', value:0},
       {label:'c) Imposte anticipate e differite', value:0.305414},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:106.503984, cash:0.440742,
     officialTotalRevenue:127.5789, officialTotalExpenses:121.370263, officialPAT:0.842978,
   },
   2020: {
@@ -446,7 +446,7 @@ const sassuoloitFiscalYearMeta = {
       {label:'b) Imposte anticipate e differite', value:0.029313},
       {label:'d) Provento da Consolidato Fiscale', value:0.352958},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:116.255552, cash:0.519731,
     officialTotalRevenue:121.288, officialTotalExpenses:120.700432, officialPAT:-1.745898,
   },
   2022: {
@@ -465,7 +465,7 @@ const sassuoloitFiscalYearMeta = {
       {label:'b) Imposte anticipate e differite', value:-0.22584},
       {label:'d) Provento da Consolidato Fiscale', value:-0.417739},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:110.413428, cash:0.612155,
     officialTotalRevenue:138.987, officialTotalExpenses:128.318507, officialPAT:1.384006,
   },
   2023: {
@@ -484,7 +484,7 @@ const sassuoloitFiscalYearMeta = {
       {label:'b) Imposte anticipate e differite', value:-0.20772},
       {label:'d) Provento da Consolidato Fiscale', value:2.090234},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:122.773536, cash:2.876997,
     officialTotalRevenue:140.245, officialTotalExpenses:139.79823, officialPAT:-7.051785,
   },
   2018: {
@@ -504,7 +504,7 @@ const sassuoloitFiscalYearMeta = {
       {label:'b) Imposte relative ad esercizi precedenti', value:0},
       {label:'c) Imposte anticipate e differite', value:-0.445808},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:63.064746, cash:0.3921,
     officialTotalRevenue:107.786, officialTotalExpenses:93.71669, officialPAT:8.144872,
   },
 };

@@ -134,6 +134,10 @@ tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-17): cash escalón 2 (compuerta: documento anterior): "Depositi bancari e postali" pág. 18 + "Denaro e valori in cassa" pág. 18
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti verso soci per finanziamenti 4.214.245 + 13.000.000; banche 4.465.666 + 15.555.556; altri finanziatori 15.825.422 (factoring BPM 15.385k + IVA 440k); controllanti Mapei 4.753.686 - 944.000 comerciales = 3.809.686. La nota separa 3.810k cash pooling y 944k comerciales (en miles); si se incluyera la fila entera, 57.814.575. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ## 2024
 
 ### Ingresos
@@ -201,6 +205,10 @@ tools/cargar.mjs (2026-10-08)
 ```text
 2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): cierre = 2024-12-31. Bilancio al 31 dicembre 2024
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti verso soci per finanziamenti 13.908.316 + 23.250.000; banche 1.093.714 + 0; altri finanziatori 10.993.719 (factoring MB Facta + IVA); controllanti Mapei 38.726.724 - 1.692.000 comerciales = 37.034.724. La nota separa 37.035k cash pooling y 1.692k comerciales (en miles); si se incluyera la fila entera, 87.972.473. (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Depositi bancari e postali 350.638 + denaro e valori in cassa 45.635 = 396.273. Totale disponibilita liquide del bilancio individual. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ## 2023
@@ -271,6 +279,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Debiti verso soci per finanziamenti 15.998.487 + 16.250.000; banche 23.356.131 + 1.071.429; altri finanziatori 1.803.627; controllanti Mapei (cash pooling + intereses) 64.418.862 - 125.000 deudas comerciales = 64.293.862. Desde 2023 los prestamos Mapei van en fila propia "debiti verso soci per finanziamenti". De controllanti se resto 125k comerciales (nota, en miles); si se incluyera entera, 122.898.536. (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Depositi bancari e postali 2.856.738 + denaro e valori in cassa 20.259 = 2.876.997. Totale disponibilita liquide del bilancio individual. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ## 2022
 
 ### Ingresos
@@ -337,6 +349,10 @@ tools/cargar.mjs (2026-10-08)
 ```text
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): cierre = 2022-12-31. Bilancio al 31 dicembre 2022 (portada del documento, .md); Sassuolo cierra el 31/12 (Guido pidió el ajuste manual, 2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Banche 5.892.857 + 3.214.286; altri finanziatori 18.000.000 (factoring); controllanti Mapei 52.056.285 + 31.250.000. Nota: controllanti 83.306k = cash pooling 31.890k + 50.000k prestamos + 875k intereses + 61k corporate engineering (resto ~480k sin detallar); se incluye la fila entera. (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Depositi bancari e postali 586.546 + denaro e valori in cassa 25.609 = 612.155. Totale disponibilita liquide del bilancio individual. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ## 2021
@@ -406,6 +422,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Banche 5.892.857 + 9.107.143; altri finanziatori 35.104.346 (factoring); controllanti Mapei 62.023.583 + 30.000.000. Tabla de pasivo 2021 con OCR sucio ("versus", caracteres chinos) pero cifras consistentes con las del anno siguiente. Controllanti 92.024k = cash pooling 46.424k + 45.000k prestamos (+~600k sin detallar). (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Depositi bancari e postali 662.737 + denaro e valori in cassa 18.031 = 680.768. Totale disponibilita liquide del bilancio individual. Tabla de pasivo 2021 con OCR sucio, pero el activo es legible. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ## 2020
 
 ### Ingresos
@@ -471,6 +491,10 @@ tools/cargar.mjs (2026-10-08)
 ```text
 2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): cierre = 2020-12-31. Bilancio al 31 dicembre 2020 (portada del documento, .md); Sassuolo cierra el 31/12 (Guido pidió el ajuste manual, 2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Banche 5.892.857 + 15.000.000; altri finanziatori 0; controllanti Mapei 50.362.695 + 45.000.000. Nota: controllanti 95.363k = cash pooling 40.055k + 55.000k finanziamenti m/l. (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Depositi bancari e postali 487.922 + denaro e valori in cassa 31.809 = 519.731. Totale disponibilita liquide del bilancio individual. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ## 2019
@@ -542,6 +566,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Banche 5.929.648 + 20.892.857; altri finanziatori 20.000.000 (factoring); controllanti Mapei 24.681.479 + 35.000.000. Nota: controllanti 59.681k = cash pooling 19.681k + 40.000k de dos finanziamenti m/l; todo financiero. (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Depositi bancari e postali 363.752 + denaro e valori in cassa 76.990 = 440.742. Totale disponibilita liquide del bilancio individual. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ## 2018
 
 ### Ingresos
@@ -608,6 +636,10 @@ tools/cargar.mjs (2026-10-09)
 ```text
 2018: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-08): cierre = 2018-12-31. Bilancio al 31 dicembre 2018 (portada del documento, .md); Sassuolo cierra el 31/12 (Guido pidió el ajuste manual, 2026-10-08)
 tools/cargar.mjs (2026-10-09). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Banche 9.649.309 + 11.785.714; altri finanziatori 17.000.000 (factoring); debiti verso controllanti Mapei 24.629.723 (cash pooling). Controllanti = cash pooling con Mapei (anticipazioni finanziarie), "principalmente"; PFN de la relazione usa 24.519k para el cash pooling, resto ~111k no financiero. Sin la fila controllanti serian 38.435.023. (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Depositi bancari e postali 352.011 + denaro e valori in cassa 40.089 = 392.100. Totale disponibilita liquide del bilancio individual. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ## Gestiones
