@@ -224,7 +224,7 @@ HR (8)
   Varaždin       1 ejercicio (2025), balance, EUR
 
 IT (22)
-  AC Milan       14 ejercicios (2008, 2009, 2010, 2011, 2012, 2013, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
+  AC Milan       14 ejercicios (2008, 2009, 2010, 2011, 2012, 2013, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2021/2022, 2022/2023, 2023/2024, 2024/2025), balance, EUR
   AS Roma        21 ejercicios (2004/2005 a 2024/2025), balance, EUR
   Atalanta       8 ejercicios (2018 a 2024/2025), balance, EUR
   Bologna        8 ejercicios (2017/2018 a 2024/2025), balance, EUR
