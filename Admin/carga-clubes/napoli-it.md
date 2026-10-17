@@ -167,6 +167,10 @@ tools/cargar.mjs (2026-10-07). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "Debiti verso Banche" pág. 5
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Totale Disponibilita' liquide (IV) 174.441.453. Balance 30/06/2025; el comparativo 210.491.999 coincide con la caja cargada 2024.
+```
+
 ## 2024
 
 ### Ingresos
@@ -574,6 +578,10 @@ tools/cargar.mjs (2026-10-08)
 tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Sin filas de deuda financiera: fornitori 44.929.143, controllanti 6.724.933, sottoposte 268.227, tributari 46.894.959, previdenza 2.111.896, enti settore specifico 128.345.580, altri debiti 15.584.606; TOTALE DEBITI 254.730.822. Sin bancos (el prestito UniCredit llega en 2021-22); rendiconto con variacion 0 en deuda financiera.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Totale disponibilita' liquide 95.758.050 (depositi 95.753.516 + cassa 4.534). El bilancio 2022 imprime 95.768.050 como comparativo (error de OCR), pero depositi + cassa y el rendiconto dan 95.758.050.
+```
+
 ### Liga
 
 ```text
@@ -684,6 +692,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Totale Disponibilità liquide (IV)" pág. 5
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Sin filas de deuda financiera: fornitori 44.620.585, controllanti 523.244, sottoposte 457.700, tributari 13.545.249, previdenza 1.100.924, enti settore specifico 143.475.327, altri debiti 41.823.059; TOTALE DEBITI 245.604.917. Sin bancos, bonos, soci ni otros financiadores; rendiconto muestra variacion 0 en deuda financiera.
+```
+
 ### Liga
 
 ```text
@@ -748,6 +760,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Totale Disponibilità liquide (IV)" pág. 5
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Sin filas de deuda financiera: acconti 896.740, fornitori 18.126.994, controllanti 3.612.392, sottoposte controllo 787.550, tributari 10.286.247, previdenza 291.036, enti settore specifico 113.076.380, altri debiti 15.928.833; TOTALE DEBITI 163.006.172. Sin bancos, bonos, soci ni otros financiadores. Debiti verso imprese controllanti (Filmauro) 3.612.392 son comerciales/intercompany, no finanziamento.
 ```
 
 ### Liga
@@ -863,6 +879,10 @@ tools/cargar.mjs (2026-10-08). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Totale Disponibilità liquide (IV)" pág. 5
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Sin filas de deuda financiera: DEBITI = fornitori 21.858.681, controllanti 815.405, sottoposte a controllo controllanti 1.230.460, tributari 4.569.974, previdenza 371.050, enti settore specifico 93.459.773, altri debiti 17.291.439; TOTALE DEBITI 143.988.321. Sin bancos, bonos, soci ni otros financiadores; el rendiconto finanziario (L339-342) muestra variacion 0 en obbligazioni, soci, banche y altri finanziatori. Documento OCR Mistral, cifras coherentes con el total.
 ```
 
 ### Liga
