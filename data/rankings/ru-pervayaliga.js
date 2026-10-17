@@ -20,6 +20,10 @@ window.RANKINGS["ru-pervayaliga"] = {
         sourceId:"akrontolyatti-ru-bfo-2023-datos",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.617],["Otros ingresos",5.766]],
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"dynamomakhachkala-ru", revenue:5.388, reportType:"official_balance_sheet",
+        sourceId:"dynamomakhachkala-ru-bfo-2023-datos",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.968],["Otros ingresos",4.42]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2022: {
@@ -37,6 +41,9 @@ window.RANKINGS["ru-pervayaliga"] = {
         sourceId:"akrontolyatti-ru-bfo-2022-datos",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.187],["Otros ingresos",5.605]],
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1],["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"dynamomakhachkala-ru", revenue:3.839, reportType:"official_balance_sheet",
+        sourceId:"dynamomakhachkala-ru-bfo-2022-datos",
+        mix:[["Otros ingresos",3.839]] },
     ],
   },
   2021: {
