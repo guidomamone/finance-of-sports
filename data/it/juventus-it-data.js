@@ -746,7 +746,7 @@ const juventusitFiscalYearMeta = {
       {label:'d) from others', value:-0.670013},
       {label:'22) INCOME TAXES', value:-7.392658},
     ],
-    grossDebt:null, cash:67.198129,
+    grossDebt:0, cash:67.198129,
     officialTotalRevenue:271.167364, officialTotalExpenses:262.303779, officialPAT:2.15006,
   },
   2004: {
@@ -765,7 +765,7 @@ const juventusitFiscalYearMeta = {
       {label:'a) current taxes', value:-5.727157},
       {label:'b) deferred taxes', value:7.238419},
     ],
-    grossDebt:null, cash:51.101966,
+    grossDebt:0, cash:51.101966,
     officialTotalRevenue:221.313511, officialTotalExpenses:237.628716, officialPAT:-18.459155,
   },
   2005: {

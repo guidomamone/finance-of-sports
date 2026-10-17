@@ -1273,6 +1273,10 @@ tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (n
 tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Sin filas de deuda financiera; TOTAL PAYABLES (D) 114.536.670 (due to banks no existe en 30/06/2004). Balance GAAP italiano completo; el ejercicio siguiente declara que "Due to banks" no existia al 30/06/2004. Caja cargada 51.101.966 coincide. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -1354,6 +1358,10 @@ tools/cargar.mjs (2026-10-03)
 2003: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-03): fila = 478000. Guido 2026-10-03: se abre "d) Sponsorship and other revenues" con su nota (€/000, línea 2815)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-04): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-03): Guido 2026-10-03: caja total del balance separado; el script leía otra fila (reclasificado en miles, total del activo corriente o consolidado)
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera con socios): Sin filas de deuda financiera: el pasivo D) trae anticipos, proveedores, subsidiarias, controlante, fiscal, previsional, otros, traspasos y enti settore specifico; TOTAL PAYABLES 165.590.823. Balance GAAP italiano completo (sin filas 1 a 4: bonos, convertibles, bancos, otros financiadores). Cargado de caja 67.198.129 coincide. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ### Liga
