@@ -208,6 +208,10 @@ tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-13): cash escalón 2 (compuerta: documento anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 13
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Μακροπρόθεσμες Δανειακές Υποχρεώσεις - + Δάνειο Oldenburgische Landesbank (corriente, nota 6.16) 1.084.606. El préstamo bancario corriente está dentro de 'Λοιπές Βραχυπρόθεσμες Υποχρεώσεις' (6.15), no en fila propia; arrendamientos 35.437.365 y 2.130.935 excluidos.
+```
+
 ### Liga
 
 ```text
@@ -382,6 +386,10 @@ tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-13): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 13
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Μακροπρόθεσμες Δανειακές Υποχρεώσεις - ; sin deuda corriente (arrendamientos 234.817 y 225.512 excluidos). La nota de capital muestra 'Σύνολο δανεισμού (τραπεζικού)' '-'.
+```
+
 ### Liga
 
 ```text
@@ -443,6 +451,10 @@ tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-13): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 14
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Μακροπρόθεσμες Δανειακές Υποχρεώσεις - ; sin fila de deuda corriente (solo 'Υποχρεώσεις από χρηματοδοτική μίσθωση' -, excluida). Balance completo con total de pasivo y sin fila financiera; 'Σύνολο δανεισμού (τραπεζικού)' en la nota es '-'.
 ```
 
 ### Liga
@@ -507,6 +519,10 @@ tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-13): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 13
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Μακροπρόθεσμες Δανειακές Υποχρεώσεις 1.943.892,33 + Βραχυπρόθεσμες Δανειακές Υποχρεώσεις 43,93. Préstamo de Leskira Holdings; confirma 'Σύνολο δανεισμού' 1.943.936 en la nota de capital de 2019.
+```
+
 ### Liga
 
 ```text
@@ -567,6 +583,10 @@ tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-13): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 43
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Μακροπρόθεσμες Δανειακές Υποχρεώσεις 2.368.221,63 + Βραχυπρόθεσμες Δανειακές Υποχρεώσεις 844.966,80. Préstamo de Leskira Holdings (con interés), parte no corriente y corriente.
+```
+
 ### Liga
 
 ```text
@@ -620,6 +640,10 @@ Generados/Grecia/AEK Athens/AEK_oikonomikes_katastaseis.categorias.json (escaló
 
 ```text
 tools/cargar.mjs (2026-10-13). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Μακροπρόθεσμες Δανειακές Υποχρεώσεις 2.775.000,00 + Βραχυπρόθεσμες 0,00. Préstamo sin interés de Oil Tank Engineering & Consulting (nota de riesgo de tasa); sin deuda corriente.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Ταμειακά διαθέσιμα και ισοδύναμα 612.825,85. Balance individual de la ΠΑΕ, en euros.
 ```
 
 ### Liga

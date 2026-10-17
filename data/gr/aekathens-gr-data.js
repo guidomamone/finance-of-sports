@@ -308,7 +308,7 @@ const aekathensgrFiscalYearMeta = {
       {label:'Χρηματοοικονομικά Έσοδα', value:0},
       {label:'Φόρος εισοδήματος', value:0},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:2.775, cash:0.612826,
     officialTotalRevenue:10.0713, officialTotalExpenses:14.228647, officialPAT:-4.197125,
   },
   2017: {
@@ -323,7 +323,7 @@ const aekathensgrFiscalYearMeta = {
       {label:'Φόρος εισοδήματος', value:0},
       {label:'Αναβαλλόμενος Φόρος', value:-0.308649},
     ],
-    grossDebt:null, cash:1.785823,
+    grossDebt:3.213188, cash:1.785823,
     officialTotalRevenue:13.584488, officialTotalExpenses:17.225812, officialPAT:-4.057837,
   },
   2018: {
@@ -338,7 +338,7 @@ const aekathensgrFiscalYearMeta = {
       {label:'Φόρος εισοδήματος', value:0},
       {label:'Αναβαλλόμενος Φόρος', value:0.335886},
     ],
-    grossDebt:null, cash:1.65037,
+    grossDebt:1.943936, cash:1.65037,
     officialTotalRevenue:24.144686, officialTotalExpenses:22.801188, officialPAT:1.5957,
   },
   2019: {
@@ -354,7 +354,7 @@ const aekathensgrFiscalYearMeta = {
       {label:'Φόρος εισοδήματος', value:-1.023407},
       {label:'Αναβαλλόμενος Φόρος', value:-0.481567},
     ],
-    grossDebt:null, cash:7.935425,
+    grossDebt:0, cash:7.935425,
     officialTotalRevenue:36.919177, officialTotalExpenses:29.084426, officialPAT:6.243552,
   },
   2020: {
@@ -370,7 +370,7 @@ const aekathensgrFiscalYearMeta = {
       {label:'Φόρος εισοδήματος', value:-0.066412},
       {label:'Αναβαλλόμενος Φόρος', value:null},
     ],
-    grossDebt:null, cash:1.94317,
+    grossDebt:0, cash:1.94317,
     officialTotalRevenue:19.686393, officialTotalExpenses:22.506092, officialPAT:-2.961135,
   },
   2022: {
@@ -400,7 +400,7 @@ const aekathensgrFiscalYearMeta = {
       {label:'Φόρος εισοδήματος', value:null},
       {label:'Αναβαλλόμενος Φόρος', value:0.283419},
     ],
-    grossDebt:null, cash:7.725899,
+    grossDebt:1.084606, cash:7.725899,
     officialTotalRevenue:38.985157, officialTotalExpenses:41.019774, officialPAT:-4.003895,
   },
   2025: {
