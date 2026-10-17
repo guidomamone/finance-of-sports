@@ -42,6 +42,30 @@ Para que la principal lo pase a TODO, CHANGELOG y ESTADO al mergear (skill de ar
 
 ## Pendiente (para TODO)
 
+To-dos nuevos pedidos por Guido el 2026-10-17. NO los hace esta rama: la sesión principal los asigna a un worktree al mergear. El
+detalle con citas de cada club está en `Admin/registros/cola-borradores/altas-2026-10-17.md`.
+
+- **Clubes partidos en dos entidades que hay que sumar: Vålerenga y Aalesund (Noruega).** El AS tiene todos los ingresos comerciales
+  (Vålerenga AS 2020: sponsor 36,8 M, medios 23,1 M, entradas) y el FLI/Elite tiene los sueldos (Vålerenga Elite 2023: 85,4 M), que el AS
+  le paga como una transferencia (87,5 M). Ninguno consolida. Aalesund es igual: el AS factura 64,2 M (2022) y el FLI paga sueldos por
+  38,1 M, con 30,9 M de ingresos que son la transferencia del AS. Hay que mergear los documentos de las dos entidades en un solo año,
+  sin contar dos veces la transferencia, y en Finanzas mostrar una nota que explique la suma (hoy no hay nada así en la pantalla).
+- **Finanzas: listar todas las entidades del club.** Nombres legales, SAD/SDUQ/AS/FLI/holding, cuál es la que se carga y cuáles no, para
+  que un periodista entienda de qué entidad salen los números (casos: Viking Fotball AS / Viking Fotballklubb; Molde Fotballklubb /
+  Molde Fotball AS; St. Gallen AG / Event AG; Luzern FCL Holding AG / FC Luzern-Innerschweiz AG; Basel AG / Verein; NEC Holding /
+  Stichting Maatschappelijk; VVV-Venlo B.V. / Foundation; Pardubice a.s. / FK Junior z.s.).
+- **Finanzas: ingresos muy resumidos de las otras entidades del club.** Los documentos ya están (casi todos en
+  `documentos-descartados.txt` porque no son "el club"): Molde Fotball AS, VVV Foundation, NEC Stichting Maatschappelijk, Basel Verein,
+  St. Gallen Event AG, FK Junior Pardubice z.s., RKC Stichting Samen. Hay que definir qué se muestra y de dónde se lee.
+- **Finanzas: mostrar quién audita el balance (por ejemplo Deloitte) y qué dice el informe en pocas palabras** (sin salvedades / con
+  salvedades / incertidumbre sobre la continuidad). El dato está en los `.md` (informe del auditor) de casi todos los documentos.
+- **Fredrikstad y Sarpsborg 08 (Noruega), un to-do aparte por lo mismo de las entidades.** Fredrikstad: el club es el FLI
+  (Fredrikstad Fotballklubb), que tiene los sueldos; Fotballinvest AS no tiene empleados. El FLI no deposita cuentas desde 2019, así que
+  hoy solo hay 2012-2018; antes de cerrarlo, abrir `wf-src-FFK_-_Årsmøte_2025.pdf`, que puede traer las cuentas del club; para 2008-2011
+  solo existe el AS. Sarpsborg 08: el alta se hizo sobre un AS inversor (20% de los derechos económicos de la plantilla, sin empleados);
+  rehacerla sobre el FLI "Sarpsborg 08 Fotballforening", cuyos 14 PDFs no tienen `.md`.
+- **Viking: transcribir los PDFs de Viking Fotball AS** (el club desde el 2026-10-17; hoy solo los del FLI tienen `.md`).
+
 - `tools/worktree.mjs preparar` frena con ENOENT cuando la carpeta principal tiene otros worktrees en `.claude/worktrees/` (git los lista
   como `.claude/worktrees/<x>/`, con barra final, y el symlink falla). Arreglo: saltear `.claude/worktrees/` y las entradas con barra
   final. En esta sesión se enlazó con una copia del mismo código desde el scratchpad.
