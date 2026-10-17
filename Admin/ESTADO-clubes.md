@@ -140,7 +140,7 @@ ALEMANIA (11)
   RB Leipzig                4 ejercicios (2021/2022 a 2024/2025), balance, EUR, sin deuda/caja
   TSG Hoffenheim            2 ejercicios (2023/2024 a 2024/2025), balance, EUR
   VfB Stuttgart             2 ejercicios (2023 a 2024), balance, EUR
-  Werder Bremen             3 ejercicios (2022/2023 a 2024/2025), balance, EUR, sin deuda/caja
+  Werder Bremen             3 ejercicios (2022/2023 a 2024/2025), balance, EUR
 
 DK (11)
   AGF              1 ejercicio (2020/2021), balance, DKK

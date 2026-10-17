@@ -120,6 +120,10 @@ combinado (ver comentario largo de cabecera) — tax lleva SOLO "Sonstige Steuer
 exacta contra el Jahresfehlbetrag impreso.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Anleihen 25.000.000,00 + Verbindlichkeiten gegenüber Kreditinstituten 6.388.000,00. Konzernabschluss (SV Werder Bremen GmbH & Co KGaA, HGB). Se excluyen Verbindlichkeiten gegenüber Gesellschaftern y assoziierten Unternehmen (laufende Verrechnungen/Lieferungen, nota 5.7), sonstige Verbindlichkeiten (Steuern y soziale Sicherheit) y Lieferungen. (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Kassenbestand, Guthaben bei Kreditinstituten und Schecks 29.590.030,06 EUR (30.06.2025). Konzern; coincide con Finanzmittelfonds 29.590 TEUR. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ## 2024
 
 ### Ingresos
@@ -128,6 +132,12 @@ exacta contra el Jahresfehlbetrag impreso.
 Ejercicio 2024 (01.07.2023-30.06.2024). "Spielbetrieb" no tiene cifra propia impresa este año
 (el Lagebericht solo dice que se mantuvo "prácticamente constante") — es residual: Umsatzerlöse
 total (145.580.686,60 EUR) menos las otras 5 partidas con cifra propia.
+```
+
+### Meta
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Anleihen 18.200.000,00 + Verbindlichkeiten gegenüber Kreditinstituten 11.982.383,22. Konzernabschluss (SV Werder Bremen GmbH & Co KGaA, HGB). Se excluyen Verbindlichkeiten gegenüber Gesellschaftern y assoziierten Unternehmen (laufende Verrechnungen/Lieferungen, nota 5.7), sonstige Verbindlichkeiten (Steuern y soziale Sicherheit) y Lieferungen. (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Kassenbestand, Guthaben bei Kreditinstituten und Schecks 39.593.507,41 EUR (30.06.2024). Konzern; el Finanzmittelfonds del cashflow es 39.092 TEUR (neto de Bankverbindlichkeiten täglich fällig); se tomó el rubro del balance. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ## 2023
@@ -146,6 +156,10 @@ _al lado del campo `currency`:_
 
 ```text
 PENDIENTE: esta clave todavía no existe en FX_CLOSE (data/currency-map.js), la agrega el orquestador.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Anleihen 18.200.000,00 + Verbindlichkeiten gegenüber Kreditinstituten 16.572.000,00 (Konsortialdarlehen covid). Konzernabschluss (SV Werder Bremen GmbH & Co KGaA, HGB). Se excluyen Verbindlichkeiten gegenüber Gesellschaftern y assoziierten Unternehmen (laufende Verrechnungen/Lieferungen, nota 5.7), sonstige Verbindlichkeiten (Steuern y soziale Sicherheit) y Lieferungen. (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Kassenbestand, Guthaben bei Kreditinstituten und Schecks 18.966.330,79 EUR (30.06.2023). Konzern; coincide con Finanzmittelfonds 18.966 TEUR. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ## Gestiones
