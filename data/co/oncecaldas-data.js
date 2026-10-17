@@ -177,7 +177,7 @@ const oncecaldasFiscalYearMeta = {
     netInterest:-5206.297,
     tax:-991.681,
     profitOnPlayerSales:0, assetSales:0,
-    grossDebt:null, cash:null,
+    grossDebt:0, cash:7063.322,
     officialTotalRevenue:25860.809, officialTotalExpenses:20950.362, officialPAT:-1287.531,
   },
   2022: {
@@ -188,7 +188,7 @@ const oncecaldasFiscalYearMeta = {
     netInterest:4709.201,
     tax:-4068.219,
     profitOnPlayerSales:0, assetSales:0,
-    grossDebt:null, cash:null,
+    grossDebt:137.188, cash:1265.57,
     officialTotalRevenue:59311.026, officialTotalExpenses:32979.043, officialPAT:26972.965,
   },
   2024: {
@@ -199,7 +199,7 @@ const oncecaldasFiscalYearMeta = {
     netInterest:1539.774,
     tax:-2403.687,
     profitOnPlayerSales:0, assetSales:0,
-    grossDebt:337.5, cash:null,
+    grossDebt:337.5, cash:4580.663,
     officialTotalRevenue:26971.040, officialTotalExpenses:21994.867, officialPAT:4112.260,
   },
   2025: {
@@ -210,7 +210,7 @@ const oncecaldasFiscalYearMeta = {
     netInterest:-420.985,
     tax:-4307.575,
     profitOnPlayerSales:0, assetSales:0,
-    grossDebt:null, cash:null,
+    grossDebt:366.562, cash:7559.569,
     officialTotalRevenue:59081.660, officialTotalExpenses:45214.554, officialPAT:9138.546,
   },
 };

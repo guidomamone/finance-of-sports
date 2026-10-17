@@ -242,6 +242,10 @@ _al lado del campo `grossDebt`:_
 no se cargó (el documento no trae el Estado de Situación Financiera primario en este PDF, solo notas — ver Admin/sourcing/Colombia/Once Caldas.md)
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Obligaciones financieras corriente 366.562 (Banco AV Villas vía Dimayor) + largo plazo 0 (Nota 13). Miles de pesos. La Nota 13 también agrupa 'CxP acuerdo reestructuración' 9.070.113 (pasivo concursal con acreedores de la reorganización, ver Nota 15): se excluyó por no ser deuda financiera; pregunta: ¿se incluye el acuerdo de reestructuración si hay deuda bancaria/fiscal dentro? (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Efectivo y equivalentes 7.559.569 (miles) = caja 11.965 + caja ME 15.539 + bancos 694.823 + bancos ME 106.041 + derechos fiduciarios 6.731.201. Los CDT 11.241.891 (Nota 7 inversiones financieras) no son efectivo, no se suman. Págs = marca 'Página N de 34' del documento (el .md no trae marcadores 'pág.'). (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ## 2024
 
 ### Ingresos
@@ -298,6 +302,10 @@ no verificado esta sesión (el foco fue validar tools/extract-table-rows.mjs, to
 tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento anterior): "TOTAL OBLIGACIONES FINANCIERAS A LARGO PLAZO" pág. 6
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Efectivo y equivalentes de efectivo 4.580.663 (miles de pesos) = caja 9.325 + cajas menores 3.072 + bancos 2.659.618 + ahorro 312.521 + fiduciarios 1.596.127. Certificados (CDT) 6.683.247 van aparte (inversiones), no se suman. Mismo valor en la nota 6 del documento de 2025. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ## 2023
 
 ### Ingresos
@@ -337,6 +345,10 @@ _al lado del campo `grossDebt`:_
 
 ```text
 no verificado esta sesión, mismo alcance que los demás onboardings de esta ronda
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Obligaciones financieras corto plazo 0 + largo plazo 0 (Nota 10 y obligaciones a largo plazo: 'A la fecha no hay obligaciones'). Solo notas, sin total de pasivo para confirmar que no hay otra fila financiera; notas dicen que el anticipo de Dimayor 137.188 (2022) ya fue cancelado. (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Efectivo y equivalentes de efectivo 7.063.322 (miles de pesos). Coincide con la columna 2023 del documento de 2024. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ## 2022
@@ -382,6 +394,10 @@ _al lado del campo `grossDebt`:_
 
 ```text
 no verificado esta sesión, mismo alcance que 2024
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Obligaciones financieras corto plazo 137.188 (Nota 10, obligación vía Dimayor) + largo plazo 0. Miles de pesos; el documento son notas, no el balance. Las cuentas por pagar (derechos deportivos, participación en venta de jugadores 10.149.950) y fiscales no se cuentan. (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Efectivo y equivalentes 1.265.570 (miles de pesos) = caja general 47.675 + cajas menores 3.072 + bancos 403.457 + ahorro 295.089 + derechos fiduciarios 516.276. Cifras en miles de pesos (nota del documento). (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ## Gestiones
