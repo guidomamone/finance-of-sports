@@ -312,7 +312,7 @@
     // Mismo criterio para la deuda: un cero que la fuente no publica no se muestra como cero.
     const sinDeuda = deudaNoDesglosada(cur);
     const extraStat = extraTotal !== undefined
-      ? `<div class="stat" data-k="extra"><div class="label" title="${t('stat.extra.tip','Intereses netos y otros ajustes que no son Ingresos ni Gastos operativos, pero sí suman al Resultado neto')}">${t('stat.extra','Int.')}</div><div class="value ${extraTotal>=0?'pos':'neg'}">${fmtAmount(extraTotal, currentCurrency)}</div></div>`
+      ? `<div class="stat" data-k="extra"><div class="label" title="${t('stat.extra.tip','Intereses netos y otros ajustes que no son Ingresos ni Gastos operativos, pero sí suman al Resultado neto')}">${t('stat.extra','Intereses y otros')}</div><div class="value ${extraTotal>=0?'pos':'neg'}">${fmtAmount(extraTotal, currentCurrency)}</div></div>`
       : '';
     document.getElementById('finanzasStats').innerHTML = `
       <div class="stat" data-k="ing"><div class="label">${t('section.revenue','Ingresos')}</div><div class="value">${fmtAmountPlain(revenueDisp, currentCurrency)}</div></div>
@@ -670,40 +670,6 @@
     </div>`;
   }
 
-  // La pestaña Fuentes: todos los documentos del club seleccionado (nunca más de un club), más el link al listado completo.
-  function renderFuentesClubCard(){
-    const body = document.getElementById('fuentesClubBody');
-    if(!body) return;
-    const club = clubs[currentClub] || {};
-    const titulo = document.getElementById('fuentesClubTitulo');
-    if(titulo) titulo.textContent = `${t('fuentes.club.title', 'Documentos de')} ${club.displayName || club.name || ''}`;
-
-    const docs = Object.keys(sources)
-      .filter(id => sources[id].clubId === currentClub)
-      .map(id => sources[id])
-      .sort((a,b) => a.title.localeCompare(b.title, 'es'));
-
-    if(!docs.length){
-      body.innerHTML = `<p style="color:var(--muted);font-size:14.5px;">${
-        t('fuentes.club.none', 'Todavía no hay ningún documento cargado para este club.')}</p>` + linkTodasLasFuentes();
-      return;
-    }
-
-    body.innerHTML = docs.map(d => {
-      const nivel = nivelFuente(d.reliability);
-      const notas = salvedadesDe(d, metasDeFuente(d.id));
-      return `<div style="border-top:1px solid var(--border);padding:11px 0 4px;">
-        <div style="font-size:14.5px;font-weight:600;">${d.url ? `<a href="${d.url}" target="_blank" rel="noopener">${d.title}</a>` : d.title}</div>
-        <div style="font-size:13px;color:var(--muted);margin-top:2px;">
-          ${tipoFuente(d.type)} · <span style="color:${nivel.color};font-weight:600;">${nivel.label}</span>${d.url ? '' : ` · ${t('fuentes.club.nourl', 'sin URL pública')}`}
-        </div>
-        ${notas ? `<div style="font-size:13px;color:var(--muted);margin-top:4px;">${notas}</div>` : ''}
-      </div>`;
-    }).join('') + linkTodasLasFuentes();
-  }
-
-  // Salvedades para el visitante: la `publicNote` del documento más lo que sourceCaveats() deriva de los datos. NUNCA `note`, que
-  // es interna (ver data/sources-view.js).
   function salvedadesDe(src, metas){
     const partes = [];
     if(src.publicNote) partes.push(src.publicNote);

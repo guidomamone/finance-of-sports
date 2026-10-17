@@ -120,6 +120,8 @@
   }
 
   function refreshFinanzas(){
+    // Los años elegidos van a la URL sin sumar una entrada al historial por cada click.
+    escribirURL('replace');
     const isGestion = document.querySelector('#viewToggle button.active').dataset.view === 'gestion';
     isGestion ? updateFinanzasByGestionGeneric(currentClub) : updateFinanzasByAnioGeneric(currentClub);
     renderDataQualityBannerForCurrentSelection();
@@ -162,8 +164,6 @@
     renderTitulosTable();
     populateCompararSelectors(currentClub);
     renderComparar();
-    // Pestaña Fuentes: los documentos son por club, así que se repintan al cambiar de club, no en cada cambio de ejercicio.
-    renderFuentesClubCard();
   }
 
   // ---------- SELECTOR DE CLUB (js/selector.js) ----------
@@ -176,7 +176,7 @@
     if(btn) btn.click();
     window.scrollTo(0, 0);
   }
-  // Lo prende la opción "quiero ver un club en particular" de la bifurcación de Inicio, y lo
+  // Lo prende el buscador de Inicio, y lo
   // apaga selectClub() al aterrizar. Un flag y no un parámetro de selectClub() porque entre
   // el click y la elección hay un panel entero de por medio.
   let irAFinanzasAlElegir = false;
@@ -267,10 +267,12 @@
     });
   }
 
-  // applyClubMode(): la única función que decide qué se ve según haya club o no. Las pestañas que funcionan SIN club se ven
-  // siempre (Inicio, Comparar, Ligas, Finanzas, Mi Cuenta) y las que no significan nada sin uno se esconden hasta que lo haya
-  // (Fuentes). Finanzas sin club no está vacía: es el card del selector. Si el visitante estaba en una pestaña que acaba de
-  // esconderse, vuelve a Inicio.
+  // La guía de Finanzas cerrada (applyClubMode la esconde). localStorage puede no estar (modo privado): sin él, se cierra por la sesión.
+  let guiaCerrada = false;
+  try { guiaCerrada = localStorage.getItem('finGuiaCerrada') === '1'; } catch(e) {}
+  // applyClubMode(): la única función que decide qué se ve según haya club o no. Hoy todas las pestañas funcionan sin club (Finanzas
+  // sin club es el card del selector); TABS_SIN_CLUB queda para una pestaña futura que no signifique nada sin uno: se escondería
+  // hasta que lo haya, y si el visitante estaba en ella, vuelve a Inicio.
   const TABS_SIN_CLUB = ['inicio', 'vs', 'liga', 'finanzas', 'cuenta'];
   function applyClubMode(){
     const cold = !currentClub;
@@ -283,6 +285,11 @@
     const activo = document.querySelector('#mainNav button.active');
     if(activo && activo.hidden) document.querySelector('#mainNav button[data-section="inicio"]').click();
 
+
+    // Lo de Finanzas que solo tiene sentido con un club: cambiarlo, la guía y el índice de la página.
+    document.getElementById('finCambiar').hidden = cold;
+    document.getElementById('finIndice').hidden = cold;
+    document.getElementById('finGuia').hidden = cold || guiaCerrada;
 
     CLUB_SELECTOR.renderButton();
   }
@@ -309,6 +316,11 @@
     goLiga: () => irASeccion('liga'),
     // LIGA_VIEW no sabe de Supabase: avisa acá cuando una simulación se armó de verdad, y acá se decide si guardarla (sin sesión,
     // notifyStateChange no hace nada).
+    // La liga en la URL: una liga nueva suma una entrada al historial ("atrás" vuelve a la anterior); cambiar el ejercicio, no.
+    onEstado: () => {
+      const enURL = new URLSearchParams(location.search).get('liga');
+      escribirURL((LIGA_VIEW.current().league || null) !== enURL ? 'push' : 'replace');
+    },
     onSimulado: (league, leagueYear, clubes) => {
       if(window.CUENTA) window.CUENTA.notifyStateChange({
         view: 'ligaSim', league, leagueYear, clubes,
@@ -324,13 +336,28 @@
 
   applyClubMode();
 
-  // ---------- LA BIFURCACIÓN DE INICIO ----------
-  // La primera opción abre el selector y al elegir cae en Finanzas; la segunda lleva a la pestaña Comparar.
-  document.getElementById('bifUno').addEventListener('click', () => {
+  // ---------- INICIO ----------
+  // El buscador es la puerta al selector: al tocarlo se abre el modal con lo que haya tipeado, y al elegir se cae en Finanzas.
+  // "Comparar" lleva a la pestaña Comparar. El conteo sale de data/club-index.js (solo clubes con un ejercicio real).
+  const iniQ = document.getElementById('iniQ');
+  const abrirDesdeInicio = () => {
+    const q = iniQ.value.trim();
+    iniQ.value = '';
+    iniQ.blur();
     irAFinanzasAlElegir = true;
-    CLUB_SELECTOR.open();
-  });
-  document.getElementById('bifDos').addEventListener('click', () => irASeccion('vs'));
+    CLUB_SELECTOR.open(q);
+  };
+  iniQ.addEventListener('focus', abrirDesdeInicio);
+  iniQ.addEventListener('input', abrirDesdeInicio);
+  document.getElementById('iniCmp').addEventListener('click', () => irASeccion('vs'));
+  function pintarConteoInicio(){
+    const idx = Object.values(window.CLUB_INDEX || {});
+    const paises = new Set(idx.map(c => c.c)).size;
+    const ejercicios = idx.reduce((a, c) => a + (c.y || 0), 0);
+    document.getElementById('iniConteo').textContent = idx.length + ' ' + I18N.t('ini.clubs', 'clubes') + ' · '
+      + paises + ' ' + I18N.t('ini.countries', 'países') + ' · ' + ejercicios + ' ' + I18N.t('ini.years', 'ejercicios');
+  }
+  pintarConteoInicio();
 
   document.getElementById('gestionSelect').addEventListener('change', refreshFinanzas);
   // El dropdown escribe en FIN_SEL (js/finanzas-render.js) y nadie más lo lee.
@@ -414,8 +441,110 @@
       // La pestaña activa también en <body>, para que el CSS esconda lo que en ella no hace nada (el USD / ARS del header en Comparar,
       // que siempre muestra USD).
       document.body.dataset.section = btn.dataset.section;
+      escribirURL('push');
     });
   });
+
+  // ---------- EL HEADER EN EL TELÉFONO (una fila: logo, lupa y menú) ----------
+  // El menú es el mismo #mainNav mostrado como panel (css/styles.css, max-width:700px), así que elegir una sección es el mismo click
+  // de siempre; acá solo se abre, se cierra y se rotula el botón con la sección actual.
+  const headerEl = document.querySelector('header');
+  const mMenuBtn = document.getElementById('mMenuBtn');
+  const mVelo = document.getElementById('mVelo');
+  function setMenuMovil(abierto){
+    headerEl.classList.toggle('menu-abierto', abierto);
+    mVelo.classList.toggle('abierto', abierto);
+    mMenuBtn.setAttribute('aria-expanded', abierto ? 'true' : 'false');
+  }
+  function rotularMenuMovil(){
+    const activo = document.querySelector('#mainNav button.active');
+    document.getElementById('mMenuLbl').textContent = activo ? activo.textContent.trim() : '';
+  }
+  mMenuBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    setMenuMovil(!headerEl.classList.contains('menu-abierto'));
+  });
+  mVelo.addEventListener('click', () => setMenuMovil(false));
+  document.addEventListener('keydown', (e) => { if(e.key === 'Escape') setMenuMovil(false); });
+  navButtons.forEach(btn => btn.addEventListener('click', () => { setMenuMovil(false); rotularMenuMovil(); }));
+  rotularMenuMovil();
+  // La lupa abre el mismo selector que el botón de club del header de escritorio; al elegir, a Finanzas.
+  document.getElementById('mBuscar').addEventListener('click', () => {
+    irAFinanzasAlElegir = true;
+    CLUB_SELECTOR.open();
+  });
+  // El atajo del selector, como lo escribe cada sistema: ⌘K en Mac, Ctrl K en el resto.
+  if(/Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent)) document.querySelectorAll('#mBuscarK, .ini-kbd').forEach(k => { k.textContent = '⌘K'; });
+  document.getElementById('mContacto').addEventListener('click', () => {
+    setMenuMovil(false);
+    document.getElementById('contactBtn').click();
+  });
+  document.getElementById('mIdioma').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-lang]');
+    if(b) I18N.setLang(b.dataset.lang);
+  });
+  // Si la ventana se agranda con el menú abierto, se cierra: en escritorio no hay menú.
+  const mqMovil = window.matchMedia('(max-width:700px)');
+  mqMovil.addEventListener('change', () => { if(!mqMovil.matches) setMenuMovil(false); });
+
+  // ---------- FINANZAS: lo de arriba de la página ----------
+  // La moneda vive en el panel "Más opciones" de Finanzas (el único lugar donde cambia algo), no en el header. Se mueve el mismo
+  // nodo, así que su listener y sus botones (populateCurrencyToggle) no se enteran.
+  document.getElementById('finMonedaSlot').appendChild(document.getElementById('currencyToggleGlobal'));
+  document.getElementById('finCambiar').addEventListener('click', () => CLUB_SELECTOR.open());
+  // La guía: una línea que se cierra y no vuelve.
+  document.getElementById('finGuiaX').addEventListener('click', () => {
+    guiaCerrada = true;
+    try { localStorage.setItem('finGuiaCerrada', '1'); } catch(e) {}
+    document.getElementById('finGuia').hidden = true;
+  });
+  // El panel de la vista y su resumen en palabras ("Montos en USD, nominales, en formato simplificado"), leído de los botones activos:
+  // así no hay un segundo estado que se pueda desincronizar. Con ?multi=0 no hay tarjeta de ejercicios: el panel queda abierto.
+  const finAjustes = document.getElementById('finAjustes');
+  const finVistaBtn = document.getElementById('finVistaBtn');
+  finVistaBtn.addEventListener('click', () => {
+    const abierto = !finAjustes.classList.contains('abierto');
+    delete finAjustes.dataset.auto;
+    finAjustes.classList.toggle('abierto', abierto);
+    finVistaBtn.setAttribute('aria-expanded', abierto ? 'true' : 'false');
+  });
+  function pintarVistaFin(){
+    const activo = sel => { const b = document.querySelector(sel); return b ? b.textContent.trim() : ''; };
+    const partes = [];
+    const moneda = activo('#currencyToggleGlobal button.active');
+    if(moneda) partes.push(I18N.t('finanzas.view.amountsIn', 'Montos en') + ' ' + moneda);
+    if(!document.getElementById('realToggleWrap').hidden) partes.push(activo('#realToggle button.active').toLowerCase());
+    partes.push(activo('#simplifyToggle button.active').toLowerCase());
+    document.getElementById('finVistaTxt').textContent = partes.filter(Boolean).join(', ');
+    // Abierto "de oficio" solo mientras no hay tarjeta de ejercicios; cuando aparece, vuelve a cerrarse (si no lo abrió el visitante).
+    const sinTarjeta = document.getElementById('finYears').hidden;
+    if(sinTarjeta && !finAjustes.classList.contains('abierto')){ finAjustes.dataset.auto = '1'; finAjustes.classList.add('abierto'); }
+    else if(!sinTarjeta && finAjustes.dataset.auto){ delete finAjustes.dataset.auto; finAjustes.classList.remove('abierto'); }
+  }
+  // Cualquier cambio de botón activo (un click, o el JS que rearma la moneda al cambiar de club) repinta el resumen.
+  new MutationObserver(pintarVistaFin).observe(finAjustes, { subtree:true, childList:true, attributes:true, attributeFilter:['class', 'hidden'] });
+  new MutationObserver(pintarVistaFin).observe(document.getElementById('finYears'), { attributes:true, attributeFilter:['hidden'] });
+  pintarVistaFin();
+  // El índice marca la sección que se está leyendo: la última cuyo borde de arriba ya pasó debajo del header y del índice.
+  const finIdxLinks = [...document.querySelectorAll('#finIndice a')];
+  function marcarIndiceFin(){
+    if(document.getElementById('finIndice').hidden) return;
+    let actual = finIdxLinks[0];
+    finIdxLinks.forEach(a => {
+      const destino = document.querySelector(a.getAttribute('href'));
+      if(destino && destino.offsetParent !== null && destino.getBoundingClientRect().top < 140) actual = a;
+    });
+    finIdxLinks.forEach(a => a.classList.toggle('activo', a === actual));
+  }
+  window.addEventListener('scroll', marcarIndiceFin, { passive:true });
+  // Saltar sin escribir el #ancla en la URL: la URL es del estado de la pantalla (club, pestaña, años), no de la posición.
+  finIdxLinks.forEach(a => a.addEventListener('click', e => {
+    const destino = document.querySelector(a.getAttribute('href'));
+    if(!destino) return;
+    e.preventDefault();
+    destino.scrollIntoView({ behavior:'smooth', block:'start' });
+  }));
+  marcarIndiceFin();
 
   // ---------- CURRENCY TOGGLE (universal, en el header) ----------
   // "Comparar Gestiones" lo ignora a propósito (displayFinancialsForClub, js/finanzas-calc.js: siempre USD). Los botones se
@@ -487,13 +616,71 @@
   renderResultados();
   renderTitulosTable();
   renderComparar();
-  renderFuentesClubCard();
 
-  // Y recién acá entra el club de la visita anterior, por el mismo camino que un click en
-  // el selector (selectClub -> loadClubData -> applyClubMode -> refreshAllForClub). Si no
-  // hay ninguno, el sitio se queda en la portada, que es el estado del que arranca todo
-  // esto: `currentClub` nace en null y ninguna de las llamadas de arriba lo asume cargado.
-  if(clubGuardado) selectClub(clubGuardado);
+  // ==========================================================================
+  // EL ESTADO EN LA URL: qué pestaña, qué club y qué años, qué liga y qué ejercicio. Un link copiado abre lo mismo y "atrás" vuelve a
+  // lo anterior. `?tab=finanzas&club=river&anios=2021,2024`, `?tab=liga&liga=es-laliga&anio=2025`; Inicio no lleva nada. Se tocan
+  // solo estas claves: `?multi=0`, `?audit=1` y las demás quedan como estaban. `var` y no `let`: refreshFinanzas() y la vista de
+  // Ligas llaman a escribirURL() desde el INIT, antes de este bloque, y `urlLista` las frena hasta haber leído la URL de entrada.
+  // ==========================================================================
+  var URL_CLAVES = ['tab', 'club', 'anios', 'liga', 'anio'];
+  var urlLista = false, aplicandoURL = false;
+  function estadoActual(){
+    const tab = (document.querySelector('#mainNav button.active') || {}).dataset?.section || 'inicio';
+    const e = {};
+    if(tab !== 'inicio') e.tab = tab;
+    if(tab === 'finanzas' && currentClub){
+      e.club = currentClub;
+      if(FIN_SEL.years().length) e.anios = FIN_SEL.years().join(',');
+    }
+    if(tab === 'liga'){
+      const c = LIGA_VIEW.current();
+      if(c.league){ e.liga = c.league; if(c.year) e.anio = c.year; }
+    }
+    return e;
+  }
+  function escribirURL(modo){
+    if(!urlLista || aplicandoURL) return;
+    const p = new URLSearchParams(location.search);
+    URL_CLAVES.forEach(k => p.delete(k));
+    Object.entries(estadoActual()).forEach(([k, v]) => p.set(k, v));
+    const q = p.toString().replace(/%2C/g, ',');
+    const url = location.pathname + (q ? '?' + q : '') + location.hash;
+    if(url === location.pathname + location.search + location.hash) return;
+    history[modo === 'push' ? 'pushState' : 'replaceState'](null, '', url);
+  }
+  // Lleva la pantalla a lo que dice la URL. Un club o una liga que no existen se ignoran (el link viejo no rompe nada).
+  function aplicarURL(){
+    const p = new URLSearchParams(location.search);
+    const tab = p.get('tab') || 'inicio';
+    const club = p.get('club');
+    const anios = (p.get('anios') || '').split(',').map(Number).filter(Number.isFinite).filter(Boolean);
+    const liga = p.get('liga');
+    const anio = Number(p.get('anio')) || null;
+    aplicandoURL = true;
+    let paso = Promise.resolve();
+    if(club && clubs[club] && club !== currentClub) paso = selectClub(club);
+    return paso.then(() => {
+      if(tab === 'finanzas' && club && club === currentClub && anios.length){
+        FIN_SEL.set(anios);
+        refreshFinanzas();
+      }
+      if(tab === 'liga') return (liga && (window.LEAGUES || {})[liga]) ? LIGA_VIEW.show(liga, anio) : LIGA_VIEW.frio();
+    }).then(() => {
+      const btn = document.querySelector('#mainNav button[data-section="' + tab + '"]');
+      if(btn && !btn.hidden && !btn.classList.contains('active')) irASeccion(tab);
+    }).catch(err => console.error('[url] no se pudo abrir el estado de la URL', err))
+      .finally(() => { aplicandoURL = false; urlLista = true; escribirURL('replace'); });
+  }
+  window.addEventListener('popstate', aplicarURL);
+
+  // Y recién acá entra lo que hay que mostrar: lo que pide la URL (un link compartido) y, si no pide nada, el club de la visita
+  // anterior, por el mismo camino que un click en el selector.
+  if(URL_CLAVES.some(k => new URLSearchParams(location.search).has(k))) aplicarURL();
+  else {
+    urlLista = true;
+    if(clubGuardado) selectClub(clubGuardado);
+  }
 
   // ==========================================================================
   // SELECTOR DE IDIOMA
@@ -509,6 +696,8 @@
       return `<button type="button" role="menuitem" data-lang="${code}"${active}>${l.name}</button>`;
     }).join('');
     document.getElementById('langBtnLabel').textContent = I18N.current.toUpperCase();
+    document.getElementById('mIdioma').innerHTML = Object.keys(window.LANGS).map(code =>
+      `<button type="button" data-lang="${code}"${code === I18N.current ? ' class="active"' : ''}>${code.toUpperCase()}</button>`).join('');
   }
 
   function setLangMenuOpen(open){
@@ -551,9 +740,11 @@
     renderComparar();
     // La pestaña Fuentes arma su contenido en JS: sin esto, el título y las etiquetas quedan en el idioma del arranque.
     // refreshFinanzas(), acá arriba, ya redibuja la ficha de Fuentes de Finanzas.
-    renderFuentesClubCard();
     // La pestaña Ligas también arma todo su contenido en JS.
     LIGA_VIEW.refresh();
+    pintarConteoInicio();
+    rotularMenuMovil();
+    pintarVistaFin();
   });
 
   I18N.init().then(renderLangMenu);

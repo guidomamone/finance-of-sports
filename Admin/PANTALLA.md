@@ -638,7 +638,7 @@ Venían de `Admin/CONVENCIONES.md`, sin cambios de texto.
 - REGLA (Versión 36, pedida por Guido: "detesto que hagas eso"): la cita de fuente ("Fuente: ...")
   NUNCA va adentro de un card individual (Supuestos, Presupuesto Financiero, Presupuesto de
   Inversiones, ni ningún card nuevo). Va en `#finanzasDataQualityBanner` (por ejercicio),
-  `#finanzasClubSourceNote` (por club, al final del bloque de cards) o la pestaña Fuentes, nunca
+  `#finanzasClubSourceNote` (por club, al final del bloque de cards) o la tarjeta Fuentes de Finanzas, nunca
   repetida card por card. Ver `Admin/PANTALLA.md`, la regla de la fuente fuera de los cards.
 - REGLA (Versiones 34-35, pedida por Guido, no es opcional, "homologar lo que se pueda
   homologar"): los 3 cards de presupuesto oficial de Finanzas: "Supuestos"
@@ -780,28 +780,21 @@ Texto movido sin cambios.
   loguea puede volver a ver lo que ya miró. Pendiente antes de que sirva para un visitante real,
   no solo Guido: to-do 94 (publicar la pantalla de consentimiento OAuth de Google, que arranca en
   modo "Testing", y agregar el dominio de producción a los Redirect URLs de Supabase).
-- PESTAÑA LIGAS (Versión 183, to-do 23(c); ampliada en la Versión 243, to-do 68):
-  el ranking de ingresos de los clubes de una liga en UN ejercicio. Vive en
-  `js/liga.js` y lee `data/rankings/<liga>.js`, así que NO baja ningún
-  `data/<país>/<club>-data.js` (1 a 3,4 KB gzip por liga, contra 18-101 KB que costaría en
-  vivo). Barras verticales ascendentes en el `brandColor` de cada club, con el
-  valor en M/MM USD y, debajo, el % que esa barra representa del total de la
-  liga-ejercicio (Versión 243) escritos arriba de cada barra; tabla con
-  puesto/club/ingresos/ejercicio/documento; DEBAJO DE LA TABLA, un desglose de
-  ingresos por categoría de Formato simplificado de cada club (Versión 243, el
-  dato ya estaba precalculado en `mix` desde la Versión 182 — solo se usaba para
-  el aviso del bolsón sin desglosar), SIEMPRE VISIBLE y sin toggle: pedido
-  explícito de Guido, "que se halle scrolleando"; y salvedades derivadas del dato.
-  TRES REGLAS QUE LA ORDENAN: el ejercicio está siempre escrito y es cambiable
-  (un ranking es (liga, EJERCICIO), nunca (liga)); el default es el ejercicio con
-  MÁS clubes y no el más reciente, porque los balances tardan en publicarse; y el
-  "N de M" solo se escribe si `leagueSizeAt()` lo sabe. Se llega por el nav
-  (estado frío: la grilla de ligas agrupadas por continente — Versión 232 — con
-  país y liga alfabéticos y, cuando un país tiene más de una liga cargada, la
-  liga ordenada por DIVISIÓN, `tier` ascendente, no alfabético por nombre —
-  Versión 243) o eligiendo una liga en el selector, que hasta acá terminaba en
-  Finanzas del primer club de esa liga por orden alfabético. No necesita club
-  activo.
+- PESTAÑA LIGAS (mockup: artboards "Ligas" del artifact "Pantallas FoS"). El ranking de ingresos de los clubes de una liga
+  en UN ejercicio. Vive en `js/liga.js` y lee `data/rankings/<liga>.js`, así que NO baja ningún `data/<país>/<club>-data.js`.
+  ESTADO FRÍO (se llega por el nav): sin título que repita la pestaña; un buscador (liga o país), las regiones como filtro con cuántas
+  ligas tienen datos, y una fila por país (alfabético) con sus ligas en orden de división (`tier`), cada una con "N de M · año" o "N
+  clubes · año". Eso sale de `window.RANKINGS_INDICE` (en `data/rankings/_regiones.js`, generado), así que la grilla no baja los
+  rankings. Las ligas sin datos van al final, plegadas y sin poder entrar. UNA LIGA: "← Todas las ligas", el nombre con su bandera,
+  país · división · cobertura, y los ejercicios como pastillas con cuántos clubes trae cada uno. Abajo, dos columnas (una en el
+  teléfono): a la izquierda el ranking con barras horizontales en el color de cada club y el total de los cargados (sin el documento
+  de cada club en la fila: demasiado texto junto; está en su ficha, en Fuentes y, si es un presupuesto o una copia, en las
+  salvedades); a la derecha "De dónde sale la plata" (una barra apilada por club, colores por peso en el ranking y el bolsón sin
+  desglosar en beige, "Sin desglosar" en la leyenda; un tramo negativo o una fila "dentro de otro rubro" se nombran debajo) y el
+  simulador. Las salvedades, en un párrafo chico al pie. TRES REGLAS QUE LA ORDENAN: el
+  ejercicio está siempre escrito y es cambiable (un ranking es (liga, EJERCICIO), nunca (liga)); el default es el ejercicio con MÁS
+  clubes y no el más reciente, porque los balances tardan en publicarse; y el "N de M" solo se escribe si `leagueSizeAt()` lo sabe.
+  Las banderas (no los códigos de país) son las de `COUNTRIES[...].flag`, también en las tarjetas de Inicio.
 - SIMULAR CLUBES (O LIGAS ENTERAS) EN UNA LIGA QUE NO ES LA SUYA (Versiones 281-285, to-do 83) — por
   ingresos, no predicción deportiva. DOS caminos, misma vista de resultado: (a) desde Finanzas, el card
   "<club> en otra liga" (Versión 532; hasta ahí era un botón en la barra de controles), con el balance más nuevo elegido; (b) desde CUALQUIER liga, un buscador ("Sumar un
@@ -822,8 +815,8 @@ Texto movido sin cambios.
   línea con lo que elegiste y un "Cambiar"; ninguno es obligatorio ("Elegir más
   tarde" está en todos, por eso ninguno dice "opcional"). Arriba, el buscador:
   el que ya sabe qué quiere escribe "boca" o "primera div" y llega en un paso —
-  busca clubes Y ligas, agrupados. Se abre con Ctrl/Cmd+K, con el botón de club
-  del header, desde Inicio o desde el card de Finanzas. Vive en `js/selector.js`
+  busca clubes Y ligas, agrupados. Se abre con Ctrl/Cmd+K, con "Buscar un club o
+  una liga" del header, desde Inicio o desde "Cambiar de club" en Finanzas. Vive en `js/selector.js`
   y se alimenta de `clubs.js` + `club-index.js` + `leagues.js` +
   `club-leagues/<iso2>.js`, sin bajar ningún archivo de club. Esos últimos NO son
   eager desde la Versión 164: se bajan al abrir el modal, que es el único lugar
@@ -841,7 +834,7 @@ Texto movido sin cambios.
   azul del sitio: `clubs[id].brandColor` (`data/clubs.js`), un hex verificado club
   por club contra su propia fuente. Pinta en los 4 lugares donde ese círculo existe
   (la fila del modal, el paso de "ejercicio de cada club", el card de Comparar y el
-  botón de club del header), siempre por la misma `pintarCrest()` de
+  botón de club del header, que hoy está escondido), siempre por la misma `pintarCrest()` de
   `js/selector.js`, que además decide el color de las INICIALES por contraste —
   blancas mientras lleguen a 4:1 contra el fondo, negras cuando no (el celeste de
   Racing, el amarillo de Club América) — y le pone un aro interno a los colores muy
@@ -861,22 +854,39 @@ Texto movido sin cambios.
   porque el sitio del club no responde (Ituano) y 1 que no salió de ninguna fuente
   externa (Boca, que usa el `--azul` histórico del sitio). Los escudos como IMAGEN siguen
   sin hacerse (derechos y hosting, el repo se deploya entero).
-- LA PORTADA ES UNA PREGUNTA Y UNA VIDRIERA (Versión 144, reescrita en la 184 con
-  el to-do 33). Inicio abre con dos opciones grandes: "quiero ver un club en
-  particular" (abre el selector y aterriza en Finanzas) o "quiero comparar dos
-  clubes o ligas" (va a la pestaña Comparar). ABAJO, LOS RANKINGS DE LIGA, hasta
-  10, uno por entrada de `data/destacados.js`: cada uno con su "N de M", su
-  gráfico, el aviso de cuánto no está desglosado y un "Ver la liga ›". HASTA LA
-  VERSIÓN 184 abajo iba el resumen del club activo (4 KPIs y 3 gráficos,
-  `#inicioClub`): se BORRÓ, por decisión de Guido — "en Inicio quedan las ligas
-  que dejamos predeterminadas como para mostrar de qué es capaz y qué tiene la
-  página, nada más". Dos de esos 3 gráficos encima duplicaban el `trendChart` de
-  Finanzas. Inicio se ve IGUAL haya club elegido o no. Sin club se ven Inicio,
-  Comparar, Ligas, Finanzas y Mi Cuenta; Fuentes aparece recién cuando hay uno. El
-  club queda en `localStorage` y las visitas siguientes entran derecho a él.
-  NINGÚN `data/<país>/<club>-data.js` SE CARGA EAGER, ni siquiera para la vidriera: los
-  rankings salen de `data/rankings/<liga>.js`, ~6,5 KB gzip por los 4 bloques de
-  hoy, contra ~150 KB que costaría calcularlos desde los archivos de club.
+- EL HEADER EN EL TELÉFONO ES UNA SOLA FILA (hasta 700 px de ancho; mockup: artboards "Header en el teléfono" del artifact "Pantallas
+  FoS — Inicio"). Logo, lupa (abre el selector; al elegir, a Finanzas) y un botón con el nombre de la sección actual que abre el menú.
+  El menú es el MISMO `#mainNav` mostrado como panel debajo del header, más idioma y contacto (`.m-extra`, fuera del nav a propósito:
+  todo `#mainNav button` se trata como pestaña). La moneda vive en el panel de Finanzas (también en escritorio) y el botón de club no se muestra en ningún ancho ("Buscar un club o una liga", la lupa en el teléfono, abre el mismo selector; el club se nombra en el título de Finanzas). Entre 701 y 900 px sigue el header de
+  varias filas; en escritorio, nada cambió.
+- EL ESTADO EN LA URL (`js/principal.js`, "EL ESTADO EN LA URL"). `?tab=finanzas&club=river&anios=2021,2024`,
+  `?tab=liga&liga=es-laliga&anio=2025`; Inicio no lleva nada. Un link copiado abre la misma pestaña, club, años, liga y ejercicio, y
+  "atrás" vuelve a lo anterior: pestaña, club y liga suman una entrada al historial (`pushState`); los años y el ejercicio de una liga
+  la reemplazan, para no llenar el historial con cada click. Al abrir, la URL le gana al club guardado; un club o una liga que no
+  existen se ignoran. Se tocan solo esas cinco claves (`?multi=0`, `?audit=1` quedan). La moneda, la inflación, el formato y
+  Comparar todavía no van en la URL. El índice de Finanzas salta sin escribir un #ancla.
+- FINANZAS, LO DE ARRIBA (mockup: artboards "Finanzas" del artifact "Pantallas FoS"). El título es el club, con "Cambiar de
+  club" al lado (en Finanzas el título ya dice qué club es). Debajo, una guía de una línea (qué se toca) que se cierra y no vuelve
+  (`localStorage` `finGuiaCerrada`). La tarjeta de ejercicios termina con la vista en palabras ("Montos en USD, nominales, formato
+  simplificado", leída de los botones activos, sin un estado propio) y "Más opciones", que abre el panel con la moneda (que ya
+  no está en el header, en ningún ancho), nominal/inflación y el formato. Con `?multi=0` no hay tarjeta y el panel queda abierto.
+  El aviso del documento va compacto. Debajo de los KPIs ("Intereses y otros", no "Int."), un índice fijo de la página (Evolución,
+  Estado de resultados, Deuda, En otra liga, Fuentes) que marca la sección que se lee y salta sin escribir el #ancla en la URL.
+  OJO: las reglas del menú del teléfono van con `#mainNav`, nunca con `nav` a secas: el índice también es un `<nav>`.
+- INICIO (mockup: artifact de Design "Pantallas FoS"). Arriba, qué es el sitio (el conteo
+  "N clubes · N países · N ejercicios" sale de `data/club-index.js`) y el BUSCADOR como acción principal: tocarlo abre el selector con
+  lo tipeado (`CLUB_SELECTOR.open(q)`) y al elegir se cae en Finanzas; abajo del buscador, "Probá con" (el 1 del mundo, el 1 de América
+  y la primera liga destacada: salen de los rankings, no están escritos a mano) y "Comparar dos clubes o ligas". Después, las tarjetas
+  de ranking (`.vid-card`, `js/liga.js`, sin Chart.js): "Los que más facturan" (el mundo y América, top 10, de
+  `data/rankings/_regiones.js`) y "Quién factura más en cada liga" (top 5 de cada entrada de `data/destacados.js`, con "N de M" y la
+  pastilla de "sin desglosar" si pasa el 10%). Cada fila lleva a Finanzas de ese club. Al pie, tres reglas del dato.
+  LOS RANKINGS POR REGIÓN: los escribe `tools/generate-rankings.js` (lo corren `cargar.mjs` y `alta-club.mjs`; `audit.js` lo chequea
+  como P1), así que se actualizan con cada carga. Un solo ejercicio por ranking, nunca años mezclados (pedido de Guido): el de más
+  clubes, y a igual cantidad el más reciente; un presupuesto solo no entra. La tarjeta es el lenguaje visual de Inicio, Ligas y
+  Finanzas: blanco sobre `--bg`, borde fino, radio 14, barras horizontales con el punto del color de cada club (en el teléfono la
+  barra baja a una segunda línea). Inicio se ve IGUAL haya club elegido o no, y NINGÚN `data/<país>/<club>-data.js` se carga para
+  dibujarlo. Las cinco pestañas (Inicio, Comparar, Ligas, Finanzas, Mi Cuenta) se ven con club o sin club; la pestaña Fuentes no existe más (repetía la tarjeta Fuentes de Finanzas y la página pública `fuentes/<club>.html`). El club queda en
+  `localStorage` y las visitas siguientes entran derecho a él.
 - COMPARAR (Versión 148-154, pestaña `#vs`, no confundir con "Comparar Gestiones",
   que compara 2 presidencias del mismo club). **Dos cards, A y B, y cada uno es un
   LADO. Un lado es una SUMA DE BLOQUES**, y cada bloque tiene su propio agregador:
