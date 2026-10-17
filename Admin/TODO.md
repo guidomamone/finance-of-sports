@@ -36,7 +36,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
-* 268: mi cuenta (Supabase sin acceso): que no se vea roto
+* 268: mi cuenta: ping para que Supabase no se pause
 * 262 y 263: caja y deuda, lo que queda (compuerta del total impreso; ajuste por PDF y año)
 
 **B. Bases baratas que después cuestan caro cambiar**
@@ -245,8 +245,10 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
    cada temporada) contra lo cargado: por liga y año, los clubes sin ejercicio. Se ve en la pestaña Ligas y genera la lista de pendientes
    de sourcing (`Admin/sourcing/`), sin duplicar lo ya buscado y descartado.
 267. INICIO: REDISEÑO (pedido de Guido, 2026-10-17). Mockup con Design antes de codear; junto con 264 y 265 (mismo lenguaje visual).
-268. MI CUENTA NO FUNCIONA: SUPABASE NOS SACÓ EL ACCESO (pedido de Guido, 2026-10-17). Ver qué pasó con el proyecto (pausado, plan, clave)
-   y decidir: recuperarlo, migrarlo o sacar la cuenta del sitio hasta tener un reemplazo. Mientras tanto, que no se vea roto.
+268. MI CUENTA: QUE SUPABASE NO SE VUELVA A PAUSAR (pedido de Guido, 2026-10-17). El plan gratis pausa el proyecto tras 7 días sin uso
+   (pasó el 2026-10-05; hoy está prendido y, si se cae, Mi Cuenta ya lo avisa). Guido es el único usuario, pero prefiere mantenerla viva.
+   Falta: un ping automático cada 3 días que haga una consulta real (función `ping()` en la base, la pega Guido en el SQL Editor);
+   dónde corre, a decidir con Guido (cron del Worker de Cloudflare o tarea programada).
 269. EL BOTÓN "ESTÁS VIENDO" NO TIENE SENTIDO EN VARIAS PANTALLAS (pedido de Guido, 2026-10-17). Decidir pantalla por pantalla dónde va
    y dónde no.
 270. MODELO QUE ESTIMA AÑOS Y CLUBES QUE NO TENEMOS (pedido de Guido, 2026-10-17). Estadístico: con lo que sí está cargado, estimar

@@ -37,6 +37,8 @@ window.I18N.strings.en = {
   "cuenta.years.range": "{a} to {b}, {n} financial years",
   "cuenta.ligasim.ejercicio": "financial year",
   "cuenta.ligasim.en": "in",
+  "cuenta.down.text": "Signing in and saved searches are unavailable right now. The rest of the site works as usual.",
+  "cuenta.down.title": "My Account is unavailable for now",
   "cuenta.login.button": "Sign in with Google",
   "cuenta.login.text": "Every club you look at is saved to your account only, so you can come back to it later. No password needed.",
   "cuenta.login.title": "Sign in with Google",

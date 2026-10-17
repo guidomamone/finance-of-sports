@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 711 — Mi Cuenta avisa cuando Supabase no contesta (2026-10-17)
+
+- Mi Cuenta (to-do 268): el proyecto de Supabase se pausó solo el 2026-10-05 (plan gratis, 7 días sin uso) y hoy está prendido de nuevo.
+  Si al abrir la pestaña el login no contesta, la librería no cargó o leer las búsquedas da error de red o 5xx, se esconde el botón y se
+  muestra "Mi Cuenta no está disponible por ahora" (js/cuenta.js, textos en index.html y data/lang/en.js). El chequeo corre solo al abrir
+  la pestaña. Probado en el preview con Supabase prendido y con la caída simulada (540 y error de red). ASSET_V 1231.
+
 ## Versión 710 — caja-deuda.mjs: precedente contradicho, piso de caja, tabla resumen, tabla del par y 4 veces más rápido (2026-10-17)
 
 - caja-deuda.mjs: una tabla resumen de varios años que repite el total del balance (de la tercera columna en adelante) es un desglose y sus

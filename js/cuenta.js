@@ -112,12 +112,41 @@
     return clubName(state.club) + ', ' + seasonLabel(state.club, state.year);
   }
 
+  // Si Supabase no contesta (un proyecto gratis se pausa solo tras una semana sin uso), Mi Cuenta lo dice en vez de dejar un botón
+  // que no hace nada. Se queda así hasta recargar: no se reintenta en segundo plano.
+  var unavailable = false;
+
+  function showUnavailable(motivo) {
+    if (motivo) console.error('[cuenta] Supabase no disponible:', motivo);
+    unavailable = true;
+    document.getElementById('cuentaLoggedOut').style.display = 'none';
+    document.getElementById('cuentaLoggedIn').style.display = 'none';
+    document.getElementById('cuentaNoDisponible').style.display = '';
+    var sub = document.querySelector('#cuenta > .subtitle');
+    if (sub) sub.style.display = 'none';
+  }
+
+  // El chequeo corre al abrir la pestaña, no al cargar el sitio: un visitante que nunca abre Mi Cuenta no le pide nada a Supabase.
+  var healthChecked = false;
+  function checkHealth() {
+    if (healthChecked || unavailable) return;
+    healthChecked = true;
+    var ctrl = window.AbortController ? new AbortController() : null;
+    var timer = ctrl ? setTimeout(function () { ctrl.abort(); }, 8000) : null;
+    fetch(SUPABASE_URL + '/auth/v1/health', { headers: { apikey: SUPABASE_ANON_KEY }, signal: ctrl ? ctrl.signal : undefined })
+      .then(function (res) { if (!res.ok) showUnavailable('health ' + res.status); })
+      .catch(function (err) { showUnavailable(err && err.message); })
+      .then(function () { if (timer) clearTimeout(timer); });
+  }
+
   function showLoggedOut() {
+    if (unavailable) return;
     document.getElementById('cuentaLoggedOut').style.display = '';
     document.getElementById('cuentaLoggedIn').style.display = 'none';
   }
 
   function showLoggedIn() {
+    if (unavailable) return;
     document.getElementById('cuentaLoggedOut').style.display = 'none';
     document.getElementById('cuentaLoggedIn').style.display = '';
     document.getElementById('cuentaEmail').textContent = currentUser.email || '';
@@ -134,6 +163,8 @@
         if (res.error) {
           console.error('[cuenta] no se pudieron leer las búsquedas guardadas:', res.error.message);
           listEl.innerHTML = '';
+          // Un error de red (status 0) o del servidor (5xx) es Supabase caído; un 4xx es otra cosa y se deja en la consola.
+          if (!res.status || res.status >= 500) showUnavailable();
           return;
         }
         renderList(res.data || []);
@@ -194,8 +225,10 @@
 
   function init(hostApi) {
     host = hostApi;
+    var navBtn = document.querySelector('#mainNav button[data-section="cuenta"]');
+    if (navBtn) navBtn.addEventListener('click', checkHealth);
     if (!window.supabase || !window.supabase.createClient) {
-      console.error('[cuenta] la librería de Supabase no cargó — revisar el <script> de supabase-js en index.html');
+      showUnavailable('la librería de Supabase no cargó; revisar el <script> de supabase-js en index.html');
       return;
     }
     client = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
@@ -210,7 +243,9 @@
     });
 
     client.auth.onAuthStateChange(function (_event, session) { onAuthChange(session); });
-    client.auth.getSession().then(function (res) { onAuthChange(res.data.session); });
+    client.auth.getSession().then(function (res) {
+      if (res.error) showUnavailable(res.error.message); else onAuthChange(res.data.session);
+    }, function (err) { showUnavailable(err && err.message); });
   }
 
   // Llamado por index.html (refreshFinanzas()) cada vez que el club/año/gestión se asienta.
