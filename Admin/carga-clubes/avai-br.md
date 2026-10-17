@@ -166,6 +166,10 @@ tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento anterior): "CAIXA E EQUIVALENTES DE CAIXA" pág. 5
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos bancários circulante 7.269 + Empréstimos de terceiros circulante 4.282 + Empréstimos bancários não circulante 397 (R$ mil). Notas 13 y 14. Los empréstimos de terceiros son 'empréstimos e adiantamentos relacionados às atividades esportivas', con tasa 2,43-3,50% a.m. (los trato como préstamos). Sin ellos: 7.666.000. Excluidos credores da recuperação judicial, CNRD, PGNF/CARF, direitos de imagem. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -362,6 +366,10 @@ tools/cargar.mjs (2026-10-10). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos e financiamentos" pág. 3
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 6.204 (R$ mil): caixa 38 + bancos 57 + aplicação financeira 6.109 (nota 4). Balanço en milhares de reais; coincide con la nota 4. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ### Liga
 
 ```text
@@ -498,6 +506,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e equivalentes de caixa" pág. 2
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos Bancários circulante 9.612.677 + Empréstimos de Terceiros circulante 3.779.858 + Partes Relacionadas não circulante 11.383.163 (balanço em reais). Notas 10 y 11 detallan bancarios (Daycoval, más saldos negativos de cuenta) y mútuos de terceros. 'Partes Relacionadas' no tiene nota, pero el flujo de caja la llama 'Empréstimos Líquidos de Partes Relacionadas'; si Guido no la quiere, la deuda es 13.392.535. Excluidos PROFUT, PERT, tributarias parceladas, trabalhistas.
 ```
 
 ## Gestiones

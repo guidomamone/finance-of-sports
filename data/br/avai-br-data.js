@@ -292,7 +292,7 @@ const avaibrFiscalYearMeta = {
       {label:'DESPESAS FINANCEIRAS', value:-2.088},
       {label:'ATUALIZAÇÃO DAS OBRIGAÇÕES TRIBUTÁRIAS', value:-41.706},
     ],
-    grossDebt:null, cash:2.462,
+    grossDebt:11.948, cash:2.462,
     officialTotalRevenue:43.851, officialTotalExpenses:84.492, officialPAT:-83.429,
   },
   2022: {
@@ -324,7 +324,7 @@ const avaibrFiscalYearMeta = {
       {label:'Receitas financeiras', value:0.439},
       {label:'Despesas financeiras', value:-0.683},
     ],
-    grossDebt:2.011, cash:null,
+    grossDebt:2.011, cash:6.204,
     officialTotalRevenue:133.342, officialTotalExpenses:72.867, officialPAT:19.101,
   },
   2024: {
@@ -357,7 +357,7 @@ const avaibrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Custos Futebol Profissional', lado:'expense', importe:37.345703, motivo:'Claude 2026-10-09: total de costos del fútbol profesional del estado'},
     ],
-    grossDebt:null, cash:5.615648,
+    grossDebt:24.775698, cash:5.615648,
     officialTotalRevenue:25.275753, officialTotalExpenses:53.085298, officialPAT:-34.467692,
   },
 };
