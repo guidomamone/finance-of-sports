@@ -138,7 +138,7 @@ const atromitosgrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:4.214679, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:4.938658, motivo:'Claude 2026-10-14 (subagente Sonnet, seguridad alta): Atromitos_notes_2015-16.md: Κόστος πωλήσεων 4.938.658 (estado por función). Κόστος πωλήσεων es el costo por función sin nota que lo abra; precedente griego aceptado (AEL, Asteras, Panserraikos) lump_football_operations_expense; es la categoría \'Fútbol profesional (sin desglosar por la fuente)\'.'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.50325, cash:0.08901,
     officialTotalRevenue:5.202798, officialTotalExpenses:5.703653, officialPAT:-0.501714,
   },
   2019: {

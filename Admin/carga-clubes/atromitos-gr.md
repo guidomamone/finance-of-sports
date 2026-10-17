@@ -410,6 +410,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024): Comercial / Sponsors, Televisión, Premios por competencias
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Τραπεζικά δάνεια (corriente) 503.249,90 + deuda no corriente 0 (nota 10.1.1: sin deuda bancaria a largo plazo). La no corriente sólo tenía 'Λοιπές μακροπρόθεσμες' 0,00 (102.892,29 en 2015, cuotas de contratos).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Ταμειακά διαθέσιμα και ισοδύναμα 89.009,68. Balance individual.
+```
+
 ### Liga
 
 ```text
