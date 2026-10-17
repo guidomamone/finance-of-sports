@@ -149,12 +149,20 @@ no sourceado en esta sesión (fuera de alcance)
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento anterior): "Efectivo y Equivalentes al Efectivo" pág. 5
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Otros pasivos financieros corrientes 0 + no corrientes 0 en balance; pero Cuentas por pagar empresas relacionadas (Fynpal Spa, accionista común) 1.872.558 M$ corriente = financiamiento (interés efectivo 18,69%, 'Total Deuda'). Fynpal (cesión de créditos con prenda; flujos 'Obtención/Pagos financiamiento Fynpal' en actividades de financiación) está clasificado en el balance 2024 como cuenta por pagar a relacionadas, no en Otros pasivos financieros (0). Se incluye por coherencia con 2023 (donde estaba en Otros pasivos financieros). Si se prefiere el rubro literal, la deuda 2024 es 0. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
+```
+
 ## 2023
 
 ### Meta
 
 ```text
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1b (compuerta: documento siguiente): "Efectivo y Equivalentes al Efectivo" pág. 5
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Otros pasivos financieros corrientes 2.804.415 M$ (Fynpal Spa 2.794.267 + Giser 10.148) + no corrientes 0. Fynpal = cesión de créditos (cuotas de licenciamiento TNT Sport) con prenda, interés efectivo 20,78%; en el doc 2024 el comparativo 2023 reclasifica los 2.794.267 de Fynpal a 'Cuentas por pagar empresas relacionadas' y deja solo 10.148 como pasivo financiero. Elegido 2.804.415 (doc 2023). (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ## 2022
