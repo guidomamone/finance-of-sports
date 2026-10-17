@@ -684,16 +684,25 @@ function parCorrienteYNoCorriente(filas, fam) {
 // 2015). Un valor por encima no es plausible: se prueban las otras escalas como con la referencia; si ninguna cae debajo del techo, NO PASA
 // (con la referencia, en cambio, queda el valor de la escala del documento, como antes). Casos (corrida del 2026-10-16): Hellas Verona 2024
 // deuda 1,8e16, Milan 2009 deuda 163.739 M, Inter 2021 caja 97.884 M, Lazio 2008-2019.
+// (to-do 260 a, aprobado por Guido el 2026-10-17) PISO DE CAJA, el espejo del techo y el mismo de audit.js: caja por debajo de 7e-5 veces los
+// ingresos es una tabla resumen en miles leída en unidades (el documento vecino tiene la misma tabla y la confirma). Casos: Porto 2016 0,0074
+// M con 154 M (4,8e-5, ya corregido con ajustes); Milan 2008 0,0048 M con 237,9 M ("Prospetto settoriale (in migliaia di Euro)", L3109);
+// Lazio 2001 0,51 M ITL con 334.514 M (L809). Las cajas chicas de verdad quedan arriba: Nottingham Forest 2024 1,0e-4, Casa Pia 2025
+// 1,5e-4. Solo caja: una deuda puede ser casi 0. Medido: --medir idéntico; en el ensayo de todos los clubes cambian solo Milan 2008 y Lazio
+// 2001 (quedan sin dato: con la otra escala tampoco pasan).
 const TECHO = { cash: 3, deuda: 20 };
+const PISO = { cash: 7e-5 };
 export function compuerta(prop, ctx) {
   const { factor, referencia = null, ingresos = null, cual = null } = ctx;
-  const techo = TECHO[cual] ?? null;
-  const bajoTecho = (r) => !(techo && ingresos > 0 && r.valor > 0) || r.valor <= techo * ingresos;
+  const techo = TECHO[cual] ?? null; const piso = PISO[cual] ?? null;
+  const sobrePiso = (r) => !(piso && ingresos > 0 && r.valor > 0) || r.valor >= piso * ingresos;
+  const bajoTecho = (r) => (!(techo && ingresos > 0 && r.valor > 0) || r.valor <= techo * ingresos) && sobrePiso(r);
   const plausible = (r) => bajoTecho(r) && (!(referencia > 0) || !(r.valor > 0) || (r.valor / referencia <= 100 && r.valor / referencia >= 0.01));
   const base = evaluar(prop, ctx, null);
   if (base.ok && plausible(base)) return base;
   const alts = FACTORES.filter((x) => x !== factor).map((x) => [x, evaluar(prop, ctx, x)]).filter(([, r]) => r.ok && plausible(r));
   if (alts.length === 1) return { ...alts[0][1], escalaAlternativa: alts[0][0] };
+  if (base.ok && !sobrePiso(base)) return { ...base, ok: false, motivo: `${base.valor} es ${(base.valor / ingresos).toExponential(1)} veces los ingresos del año (piso ${piso}) y ninguna otra escala cae entre el piso y el techo` };
   if (base.ok && !bajoTecho(base)) return { ...base, ok: false, motivo: `${base.valor} es ${(base.valor / ingresos).toFixed(1)} veces los ingresos del año (techo ${techo}) y ninguna otra escala cae debajo` };
   return base;
 }

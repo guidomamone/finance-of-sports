@@ -25,7 +25,7 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 1. **Caja y deuda**: faltan las dos en 305 de 919 ejercicios con balance (Italia 99, Rusia 78, Brasil, Grecia, Portugal, Alemania 15, Japón 10).
-   - Lo que queda del to-do 260: escala chica (Porto), Benfica 2023-2026 y años viejos, los clubes en 0 (AVS, Boavista, Chaves, Mafra, Tondela) y los 7 clubes revertidos por escala.
+   - Lo que queda del to-do 260: Benfica 2023-2026 y años viejos, los clubes en 0 (AVS, Boavista, Chaves, Mafra, Tondela) y los 7 clubes revertidos por escala.
    - Después: Rusia (caja y deuda podrían salir sin IA de los códigos del balance del fisco).
 
 2. **Transcripciones por subagentes** (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia): limpiar lo que no es del club, los duplicados y los arreglos chicos; validarlas (unos US$ 0,10 cada 50) y cargarlas.
@@ -225,15 +225,10 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
    el tipo Slides. Sin código.
 260. CAJA Y DEUDA: MEJORAS DE SCRIPT VISTAS EN PORTUGAL (sin aplicar; corrida del 2026-10-16: 151 de 327 datos, IA ~US$ 6). Cada una es un
    escalón a diseñar con el ok de Guido y a medir con `caja-deuda.mjs --medir`.
-   a) ESCALA SIN AÑO CARGADO: Porto 2016-2019 tomó la caja de la tabla del informe de gestión, en miles ("7.392", .md L657), como euros (0,007
-      M contra 154 M de ingresos); la compuerta pasó porque el documento vecino tiene la misma tabla en miles. Se corrigió con ajustes `caja`
-      del balance en euros. Escalón posible: sin año cargado del dato, plausibilidad contra los ingresos del año, o preferir la fila de la
-      página del balance (título del balance) a la de una tabla del informe de gestión. Ojo: Casa Pia 2025 tiene de verdad 4.539 € de caja
-      con 30,7 M de ingresos (balance en euros, L333): una regla por proporción sola la rompería.
    b) DEUDA: Portugal tiene 40 de 165 años con deuda (contra 118 con caja). Diagnóstico: 71 sin propuesta (familias repetidas en tablas
       resumen; hechas las mejoras 1 y 2) y 39 sin vecino que confirme. Lo que queda: Benfica 2023-2026 y Sporting (tablas resumen con su
       propio "Total do passivo", así que la mejora 1 no restringe), y la escala de los documentos de Benfica 2023 en adelante (la
-      propuesta salía en unidades con un balance en miles).
+      propuesta salía en unidades con un balance en miles). Ya no se proponen las filas de basura del precedente (activos tangibles + FSE).
    c) CLUBES EN 0: Famalicão y Vitória ya resueltos (lista de notas con punto). Quedan AVS (0 de 6), Boavista (0 de 2), Chaves (0 de 4),
       Mafra (0 de 2), Tondela (0 de 2) y la deuda de Felgueiras (0 de 3). Además, 13 cajas cargadas eran el total del activo corriente
       ("la caja es una parte de la nota" con un total del balance): corregidas.

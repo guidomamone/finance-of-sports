@@ -15,7 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
-## Versión 710 — caja-deuda.mjs: precedente contradicho (2026-10-17)
+## Versión 710 — caja-deuda.mjs: precedente contradicho y piso de caja (2026-10-17)
+
+- caja-deuda.mjs y audit.js: piso de caja, 7e-5 veces los ingresos del año (una tabla en miles leída en unidades), por el mismo camino que
+  el techo y como P1 caja-deuda-desproporcionada (to-do 260 a). Medido: --medir idéntico; en el ensayo de todos los clubes solo Milan 2008
+  (0,0048 M) y Lazio 2001 (0,51 M ITL) dejan de proponerse; audit sin avisos nuevos.
 
 - caja-deuda.mjs: las familias que aprende el escalón 0 se prueban en los otros años cargados del club; si todos los que las tienen dan
   otra cosa, son una casualidad y no se usan (to-do 260 a y b). Medido: --medir deuda 136 -> 142 iguales y 14 -> 9 distintos, caja 354 ->

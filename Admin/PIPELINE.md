@@ -736,6 +736,8 @@ Escribir: `--club <id> --ejecutar --escribir` (el valor en `data/`, sin comentar
  TECHO      (to-do 260 e) caja hasta 3 veces los ingresos del año y deuda hasta 20 (máximos reales medidos: 2,53 y 13,7): por encima no
             es plausible, se prueban las otras escalas y, si ninguna cae debajo, no pasa. El mismo techo es el P1 de audit.js
             `caja-deuda-desproporcionada`, que revierte la escritura (Hellas Verona 2024, Milan 2009, Inter 2021, Lazio 2008-2019)
+ PISO       (to-do 260 a) caja por debajo de 7e-5 veces los ingresos (una tabla en miles leída en unidades: Porto 2016, Milan 2008,
+            Lazio 2001): el mismo camino que el techo, y el mismo P1 en audit.js. La caja real más chica cargada: Forest 2024, 1,0e-4
  AJUSTE MANUAL `caja` / `deuda` del año (Versiones 419 y 495): el número tal cual impreso, gana sobre la escalera y NO pasa por la
             compuerta (es una decisión de Guido)
  ESCALÓN 0  precedente del club (las familias que suman lo cargado en el año más cercano); en deuda, si la familia está partida en no

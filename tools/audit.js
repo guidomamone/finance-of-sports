@@ -468,12 +468,15 @@ function checkMoneda(api) {
 // error de escala o de fila, no un dato. Medido (2026-10-17) en lo cargado: el máximo real de caja es 2,53 veces (Atlético Mineiro 2023) y
 // el de deuda 13,7 veces (Novorizontino 2015). Casos que frena (corrida de caja-deuda.mjs del 2026-10-16, revertidos a mano): Hellas
 // Verona 2024 deuda 1,8e16; Milan 2009 deuda 163.739 M; Inter 2021 caja 97.884 M; Lazio 2008-2019. P1: caja-deuda.mjs y cargar.mjs
-// revierten solos lo que lo pase. Sin piso: hay cajas chicas de verdad (Casa Pia 2025, 4.539 € con 30,7 M de ingresos).
-const TECHO_CAJA = 3; const TECHO_DEUDA = 20;
+// revierten solos lo que lo pase. (to-do 260 a, aprobado por Guido el 2026-10-17) PISO de caja, el mismo de caja-deuda.mjs: menos de 7e-5
+// veces los ingresos es una tabla en miles leída en unidades (Porto 2016 4,8e-5, Milan 2008 2e-5, Lazio 2001 1,5e-6). Las cajas chicas de
+// verdad quedan arriba: Nottingham Forest 2024 1,0e-4 (29 mil £ con 290 M), Casa Pia 2025 1,5e-4. Sin piso de deuda: puede ser casi 0.
+const TECHO_CAJA = 3; const TECHO_DEUDA = 20; const PISO_CAJA = 7e-5;
 function checkCajaDeudaProporcion(api) {
   for (const { clubId, year, ym, rev } of clubYears(api)) {
     const ingresos = sum(rev); if (!(ingresos > 0)) continue;
     if (ym.cash != null && ym.cash > TECHO_CAJA * ingresos) add('P1', 'caja-deuda-desproporcionada', `${ref(clubId, year)}: caja ${ym.cash} es ${(ym.cash / ingresos).toFixed(1)} veces los ingresos del año (${ingresos.toFixed(3)}); el techo es ${TECHO_CAJA}: sospechar escala o fila equivocada`);
+    if (ym.cash > 0 && ym.cash < PISO_CAJA * ingresos) add('P1', 'caja-deuda-desproporcionada', `${ref(clubId, year)}: caja ${ym.cash} es ${(ym.cash / ingresos).toExponential(1)} veces los ingresos del año (${ingresos.toFixed(3)}); el piso es ${PISO_CAJA}: sospechar una tabla en miles leída en unidades`);
     if (ym.grossDebt != null && ym.grossDebt > TECHO_DEUDA * ingresos) add('P1', 'caja-deuda-desproporcionada', `${ref(clubId, year)}: deuda ${ym.grossDebt} es ${(ym.grossDebt / ingresos).toFixed(1)} veces los ingresos del año (${ingresos.toFixed(3)}); el techo es ${TECHO_DEUDA}: sospechar escala o fila equivocada`);
   }
 }
