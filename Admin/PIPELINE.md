@@ -711,7 +711,7 @@ Escribir: `--club <id> --ejecutar --escribir` (el valor en `data/`, sin comentar
                    ("4)", "a)") para el diccionario. La referencia a nota es una escalera: escalón 1, si la tabla tiene una columna de
                    notas inequívoca antes de la cifra, la cifra es un importe (Novorizontino 2019 "| Empréstimos |  | 27 | 24 |");
                    escalón 2, sin esa evidencia, el primer entero de 1-2 dígitos se descarta como nota; una lista de notas con ";"
-                   ("3;8;9;21;") nunca es importe (to-do 260 d, AVS 2022-23); y (to-do 221) una columna de notas
+                   ("3;8;9;21;", "3.7.; 4.") nunca es importe (to-do 260 c y d: AVS 2022-23, Famalicão 2018-2025); y (to-do 221) una columna de notas
                    de varios niveles ("6.1", "6.8": la primera columna numérica, valores con punto, en orden creciente) se saca de la fila
                    (AEK 2018 "| Ταμειακά διαθέσιμα | 6.8 | 1.650.369,92 |" daba caja 6,8). Lo que ese detector no reconoce (AEK 2019,
                    notas sin orden) lo resuelven las DOS LECTURAS (to-do 223): cada propuesta se evalúa con la fila de siempre y sin la
@@ -746,7 +746,8 @@ Escribir: `--club <id> --ejecutar --escribir` (el valor en `data/`, sin comentar
             dos filas, a cada lado del total del pasivo no corriente —también "Total do passivo não corrente" y "Total - Passivo não
             corrente"—, o, si ese total no tiene nombre, una bajo el título "Passivo não corrente" y otra bajo "Passivo corrente"; el par y
             las otras familias propuestas, todas en la misma tabla: si se mezclan tablas no decide, deuda mejora 2); las filas de la nota de efectivo si la caja es una parte; el total
-            de la nota de deuda si no hay otra fila de deuda
+            de la nota de deuda si no hay otra fila de deuda. "La caja es una parte de la nota" no vale si el total que suma es un total del
+            balance ("Total do Ativo corrente": to-do 260 c; Moreirense 2023, Sporting 2021 y 2023, Goiás 2008-2009 tenían cargado ese total)
  TABLA DEL BALANCE (deuda, mejora 1) si una familia de deuda o de caja aparece en más de una tabla de las páginas del balance y el
             documento tiene UNA sola tabla con el total del pasivo (o del activo), cuentan solo las filas de esa tabla (un total en texto
             corrido cuenta como otra tabla: Botafogo 2025). Las tablas resumen del informe de gestión, en miles, quedan afuera

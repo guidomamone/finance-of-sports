@@ -72,6 +72,8 @@ que dice `ESTADO.md` era verdad ese día.
   compuerta prueba otras escalas o no pasa (TODO 260 e). Medido: lo cargado sin cambios; --medir un distinto menos (Flamengo 2024).
 - caja-deuda.mjs: una lista de notas con ";" no es importe, y el precedente de deuda toma el par corriente + no corriente (TODO 260 d).
   Medido: --medir 4 distintos menos (20 -> 16), ninguno nuevo; Portugal +7 datos (Rio Ave 2024-2025, Santa Clara 2025, Vitória).
+- caja-deuda.mjs: lista de notas con punto ("3.7.; 4.") no es importe, y "la caja es una parte de la nota" no vale con un total del balance
+  (TODO 260 c). Destraba Famalicão (12 datos); encontró 6 cajas cargadas mal (eran el total del activo corriente): se corrigen.
 - Lotes 86 y 87: Felgueiras 2021-22 y Benfica 2007-08 cargados; caja de Felgueiras 2022-2024. Listas 80, 86 y 87 al archivo.
 
 ## Versión 707 — Portugal cargado (salvo lo que espera scripts) y to-do 237 a medias: 14 letras resueltas y medidas (2026-10-16)

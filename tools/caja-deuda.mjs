@@ -297,8 +297,10 @@ export function filasDelMd(md) {
       // (lote 71, Grecia): Olympiacos 2017 L306 "| Ταμειακά διαθέσιμα | 24. | 1.820.725,55 |" se leía 24; Aris 2019 L504 "| ... | 7.1.3 |
       // 420.500,00 |" y Atromitos/Kifisia "| ... | 7.2.4 | 46.370,17 |" se leían 7 (la compuerta los rechazaba y el dato quedaba vacío).
       // (to-do 260 d) y una LISTA DE NOTAS separada por ";" ("3;8;9;21;", con o sin ";" final): el ";" nunca separa miles ni decimales de un
-      // importe. Caso: AVS 2022-23 "| Financiamentos obtidos | 3;8;9;21; | 4.495.141,06 | 2.062.069,19 |" (L352) daba deuda 38.921.
-      const esRefNota = (c) => /^\p{L}{1,2}\s?\.?\s?\d{1,3}(?:\.\d{1,2})?$/u.test(c) || /^\d{1,3}\.$/.test(c) || /^\d{1,2}(?:\.\d{1,2}){2,3}\.?$/.test(c) || /^\d{1,2}(?:\s*;\s*\d{1,2})+\s*;?$/.test(c);
+      // importe. Caso: AVS 2022-23 "| Financiamentos obtidos | 3;8;9;21; | 4.495.141,06 | 2.062.069,19 |" (L352) daba deuda 38.921. También
+      // con números de nota con punto (to-do 260 c): Famalicão 2022-23 "| Caixa e depósitos bancários | 3.7.; 4. | 1 159 543,44 |" (L404) daba
+      // caja 3,7. Un "3.7" suelto, sin ";", sigue siendo ambiguo (puede ser un decimal).
+      const esRefNota = (c) => /^\p{L}{1,2}\s?\.?\s?\d{1,3}(?:\.\d{1,2})?$/u.test(c) || /^\d{1,3}\.$/.test(c) || /^\d{1,2}(?:\.\d{1,2}){2,3}\.?$/.test(c) || /^\d{1,2}(?:\.\d{1,2})*\.?(?:\s*;\s*\d{1,2}(?:\.\d{1,2})*\.?)+\s*;?$/.test(c);
       // (to-do 223) una celda que termina en "%" es un porcentaje, nunca un importe. Caso: AEK 2019, la fila de ratios "| Άμεση ρευστότητα |
       // Ταμειακά διαθέσιμα | 7.935.424,59 | 52,44% |" (L161) daba 52,44 como "año anterior" de la caja, y la compuerta de 2018 la encontraba
       // antes que la fila del balance.
@@ -438,6 +440,7 @@ function soloTablaDelBalance(xs, filas, cual) {
   for (const [, fs] of porFam) { const tablas = new Set(fs.map((f) => f.tabla)); const enTotal = fs.filter((f) => tt.has(f.tabla)); out.push(...(tablas.size > 1 && enTotal.length ? enTotal : fs)); }
   return xs.filter((f) => out.includes(f));
 }
+const totalDelBalance = (t) => esTotalBalance(t.norm); // (to-do 260 c) "Total dos Ativos Correntes", "Total do Ativo"...
 const dedupe = (fs) => { const vistos = new Set(); return fs.filter((f) => { const k = `${f.familia}|${f.valor}`; if (vistos.has(k)) return false; vistos.add(k); return true; }); };
 const r6 = (x) => Math.round(x * 1e6) / 1e6;
 const cita = (f) => ({ etiqueta: f.etiqueta, importe: f.valor, anterior: f.cifras.length > 1 ? f.cifras[1] : null, pagina: f.pagina, linea: f.linea });
@@ -495,7 +498,7 @@ function totalDeNotaDeCaja(filas) {
     let b = i; while (b < filas.length - 1 && filas[b + 1].linea === filas[b].linea + 1) b++;
     const tabla = filas.slice(a, b + 1); const tot = tabla.find((x) => x.linea > f.linea && esTotal(x.etiqueta));
     const partes = tot ? tabla.filter((x) => x.linea < tot.linea && !esTotal(x.etiqueta)) : [];
-    if (tot && partes.length > 1 && Math.abs(partes.reduce((s, x) => s + x.valor, 0) - tot.valor) <= 1) return [tot];
+    if (tot && !totalDelBalance(tot) && partes.length > 1 && Math.abs(partes.reduce((s, x) => s + x.valor, 0) - tot.valor) <= 1) return [tot];
   }
   return null;
 }
@@ -557,7 +560,9 @@ function propuestaVocabulario(filas, cual, club, extraDeuda = []) {
     let b = i; while (b < filas.length - 1 && filas[b + 1].linea === filas[b].linea + 1) b++;
     const tabla = filas.slice(a, b + 1); const tot = tabla.find((x) => x.linea > f.linea && esTotal(x.etiqueta));
     const partes = tot ? tabla.filter((x) => x.linea < tot.linea && !esTotal(x.etiqueta)) : [];
-    if (tot && partes.length > 1 && Math.abs(partes.reduce((s, x) => s + x.valor, 0) - tot.valor) <= 1) return { escalon: 1, filas: partes, enOtroDoc: totalDeNotaDeCaja, como: `vocabulario: "${f.etiqueta}" es una parte de la nota; se proponen sus filas, que suman "${tot.etiqueta}" ${tot.valor}` };
+    // (to-do 260 c) el total NO puede ser un total del balance ("Total dos Ativos Correntes"): ahí la tabla es el balance, no la nota de
+    // efectivo. Caso: Famalicão 2022-23, la caja salía 10,68 M (todo el activo corriente) en vez de 1.159.543,44 (L404).
+    if (tot && !totalDelBalance(tot) && partes.length > 1 && Math.abs(partes.reduce((s, x) => s + x.valor, 0) - tot.valor) <= 1) return { escalon: 1, filas: partes, enOtroDoc: totalDeNotaDeCaja, como: `vocabulario: "${f.etiqueta}" es una parte de la nota; se proponen sus filas, que suman "${tot.etiqueta}" ${tot.valor}` };
   }
   return { escalon: 1, filas: m, como: 'vocabulario' };
 }
