@@ -24,6 +24,7 @@
 // USO:
 //   node tools/fetch-club-league-reference.mjs "2016 Categoría Primera A season" co-primeraa 2016 --pais co
 //   node tools/fetch-club-league-reference.mjs "2019 Eliteserien" no-eliteserien 2019 --pais no --section Teams
+//   ... --json   imprime { teams, seccion } en una línea y no escribe nada (para un lote con compuerta: tools/listas-lote.mjs)
 //
 // Si no encuentra una tabla wikitable dentro de la sección de equipos, NO
 // escribe nada (mejor fallar visible que guardar una lista incompleta).
@@ -35,7 +36,7 @@ import { resolve } from 'node:path';
 const projectRoot = resolve(import.meta.dirname, '..');
 const refDir = resolve(projectRoot, 'tools', 'club-league-reference');
 
-const DEFAULT_SECTION_NAMES = ['Teams', 'Clubs', 'Participating clubs', 'Team changes'];
+const DEFAULT_SECTION_NAMES = ['Teams', 'Clubs', 'Participating clubs', 'Team changes', 'Club information']; // "Club information": Argentina
 
 function usage() {
   console.error('Uso: node tools/fetch-club-league-reference.mjs "<título de la página de temporada en Wikipedia>" <leagueId> <año> --pais <iso2> [--section <nombre>] [--lang <es|en|...>]');
@@ -43,8 +44,8 @@ function usage() {
 }
 
 async function fetchWikitext(title, lang) {
-  const url = `https://${lang}.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(title)}&prop=wikitext&format=json`;
-  const res = await fetch(url, { headers: { 'User-Agent': 'finance-of-sports-tool (research interno, no bot masivo)' } });
+  const url = `https://${lang}.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(title)}&prop=wikitext&format=json&redirects=1`; // redirects: "2023 Argentine Primera División" es una redirección
+  const res = await fetch(url, { headers: { 'User-Agent': 'finance-of-sports/1.0 (https://financeofsports.com; research, pocas consultas)' } });
   const data = await res.json();
   if (data.error) throw new Error(`Wikipedia API: ${data.error.info}`);
   if (!data.parse) throw new Error('Respuesta sin parse.wikitext -- ¿título exacto?');
@@ -85,9 +86,13 @@ function extractAllWikitables(sectionText) {
 }
 
 function cleanWikilinkCell(cell) {
-  let c = cell.trim();
+  // un atributo de celda que quedó pegado al contenido ("rowspan=2|Sporting Cristal", tablas de Perú) no es parte del nombre
+  let c = cell.trim().replace(/^(?:\s*(?:rowspan|colspan|style|align)\s*=\s*"?[^|"]*"?\s*)+\|/i, '').trim();
   // primer wikilink de la celda: [[Target|Display]] o [[Target]]
   const m = c.match(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/);
+  // (to-do 266) un enlace a un ESTADIO no es un equipo: "[[Estadio Mario Alberto Kempes|Mario Alberto Kempes]]" se colaba en la tabla
+  // de equipos argentina por la fila de un estadio compartido
+  if (m && /^(Estadio|Estádio|Stadium|Stadion|Stade|Stadio|Arena)\b|\b(Stadium|Stadion)$/i.test(m[1].trim())) return ''; // "Arena da Amazônia"
   if (m) return (m[2] || m[1]).replace(/&nbsp;/g, ' ').trim();
   // sin wikilink: sacar markup básico (negrita, referencias, tags)
   return c.replace(/'''?/g, '').replace(/<ref[^>]*\/?>.*?(<\/ref>)?/g, '').replace(/<[^>]+>/g, '').trim();
@@ -126,16 +131,39 @@ function parseWikitableTeams(tableWikitext) {
 }
 
 // lee los equipos de una plantilla {{#invoke:sports table|...}}: `teamN=XXX` da el orden y `name_XXX=[[Destino|Nombre]]` el nombre
-function equiposDeSportsTable(wikitext) {
-  const i = wikitext.search(/\{\{\s*#invoke:\s*sports table/i);
-  if (i < 0) return [];
-  const t = wikitext.slice(i, i + 20000);
-  const orden = [...t.matchAll(/\|\s*team(\d+)\s*=\s*([A-Za-z0-9_]+)/g)].sort((a, b) => Number(a[1]) - Number(b[1])).map((m) => m[2]);
-  const nombre = (cod) => { const m = t.match(new RegExp('\\|\\s*name_' + cod + '\\s*=\\s*(\\[\\[[^\\]]*\\]\\]|[^|\\n]*)')); return m ? cleanWikilinkCell(m[1]) : null; };
-  return [...new Set(orden.map(nombre).filter(Boolean))];
+function equiposDeSportsTable(wikitext, todas = false) {
+  // `todas` (to-do 266): la unión de TODAS las plantillas de la página (Argentina tiene una por zona más la tabla anual)
+  const tablas = tablasDeSportsTable(wikitext);
+  return [...new Set(todas ? tablas.flat() : (tablas[0] || []))];
+}
+// cada plantilla de la página por separado, en orden de posición (to-do 266); el texto de cada una se corta en la siguiente
+function tablasDeSportsTable(wikitext) {
+  const inicios = [...wikitext.matchAll(/\{\{\s*#invoke:\s*sports table/gi)].map((m) => m.index);
+  return inicios.map((ini, k) => {
+    const t = wikitext.slice(ini, Math.min(inicios[k + 1] ?? Infinity, ini + 20000));
+    let orden = [...t.matchAll(/\|\s*team(\d+)\s*=\s*([\p{L}\p{N}_]+)/gu)].sort((a, b) => Number(a[1]) - Number(b[1])).map((m) => m[2]);
+    // la otra forma de la plantilla: `|team_order = OLY, AEK, PAO, ...` ("Template:2024–25 Super League Greece table")
+    if (!orden.length) { const to = t.match(/\|\s*team_order\s*=\s*([^|}]*)/); if (to) orden = to[1].replace(/<!--[\s\S]*?-->/g, '').split(',').map((s) => s.trim()).filter((s) => /^[\p{L}\p{N}_]+$/u.test(s)); }
+    // el nombre puede venir envuelto ("name_PAC = {{sort|Pacos|[[F.C. Paços de Ferreira|Paços de Ferreira]]}}"): el primer enlace de la
+    // línea; sin enlace, el texto hasta el próximo "|"
+    const nombre = (cod) => { const m = t.match(new RegExp('\\|\\s*name_' + cod + '\\s*=\\s*([^\\n]*)')); if (!m) return null;
+      return /\[\[/.test(m[1]) ? cleanWikilinkCell(m[1]) : cleanWikilinkCell(m[1].split('|')[0]); };
+    const nombres = orden.map(nombre);
+    const lista = [...new Set(nombres.filter(Boolean))];
+    // un código sin nombre deja la tabla INCOMPLETA: no sirve para decidir qué sobra en la lista de equipos (se llevaba a Paços de Ferreira)
+    if (nombres.some((x) => !x)) lista.incompleta = true;
+    return lista;
+  }).filter((l) => l.length);
 }
 
+let SOLO_JSON = false; // --json (to-do 266): imprime { teams, seccion } y NO escribe la caché; lo usa tools/listas-lote.mjs para la compuerta
+
+let POSICIONES = null; // ver main()
 function guardar(teams, { wikipediaTitle, leagueId, year, pais, lang, seccion }) {
+  // posiciones solo si la tabla tiene EXACTAMENTE tantos equipos como la lista y está completa: una tabla de una zona, de un playoff o
+  // con un nombre que no se pudo leer (Paços de Ferreira en "2012–13 Primeira Liga") no es la tabla final; ese año va sin posición
+  const posiciones = POSICIONES && !POSICIONES.incompleta && POSICIONES.length === teams.length ? [...POSICIONES] : null;
+  if (SOLO_JSON) { console.log(JSON.stringify({ teams, seccion, posiciones })); return; }
   const sec = { name: seccion };
   mkdirSync(refDir, { recursive: true });
   const cachePath = resolve(refDir, `${pais}.json`);
@@ -147,6 +175,7 @@ function guardar(teams, { wikipediaTitle, leagueId, year, pais, lang, seccion })
     section: sec.name,
     fetchedAt: new Date().toISOString(),
     clubs: teams,
+    ...(posiciones ? { posiciones } : {}),
   };
   writeFileSync(cachePath, JSON.stringify(cache, null, 2) + '\n', 'utf8');
 
@@ -168,6 +197,7 @@ async function main() {
   const lang = langFlag >= 0 ? args[langFlag + 1] : 'en';
   // --comparar: baja la página y dice qué tabla elegiría la regla vieja y cuál la nueva (escalón "tabla limpia"), SIN escribir la caché.
   COMPARAR = args.includes('--comparar');
+  SOLO_JSON = args.includes('--json');
   const positional = args.filter((a, i) => !a.startsWith('--') && !['--pais', '--section', '--lang'].includes(args[i - 1]));
   const [wikipediaTitle, leagueId, year] = positional;
 
@@ -175,6 +205,14 @@ async function main() {
 
   console.log(`Bajando wikitext de "${wikipediaTitle}" (${lang}.wikipedia.org)...`);
   const wikitext = await fetchWikitext(wikipediaTitle, lang);
+  // la tabla de posiciones puede estar en una plantilla aparte que la página incluye ({{2018–19 Argentine Primera División table}})
+  let conPlantillas = wikitext;
+  for (const m of [...new Set([...wikitext.matchAll(/\{\{\s*([^{}|\n]+ table)\s*[|}]/g)].map((x) => x[1].trim()))].slice(0, 3)) {
+    try { conPlantillas += '\n' + await fetchWikitext(`Template:${m}`, lang); } catch { /* sin plantilla: sigue con lo que hay */ }
+  }
+  // POSICIONES (to-do 270): el orden final de la tabla de posiciones más grande de la página, en sus propios nombres. Se guarda aparte
+  // de `clubs` (la lista de equipos) y solo si cubre la liga; faltantes-liga.mjs y estimar.mjs la unen por nombre.
+  POSICIONES = tablasDeSportsTable(conPlantillas).sort((a, b) => b.length - a.length)[0] || null;
 
   // ESCALERA DE LA FUENTE DEL ROSTER (Versión 401, pedido de Guido):
   //   ESCALÓN 0  una tabla wikitable en la sección de equipos ("Teams", "Clubs"...) — lo de siempre
@@ -225,6 +263,31 @@ async function main() {
       const limpias = parsed.map((ts, i) => ({ ts, i })).filter(({ ts, i }) => i !== iBest && ts.length >= 4 && ts.length < best.teams.length && sueltos(i) === 0
         && confirmados.every((n) => ts.includes(n)) && ts.some((n) => !best.teams.includes(n)));
       if (limpias.length) { const l = limpias.sort((a, b) => b.ts.length - a.ts.length)[0]; best = { teams: l.ts, uniqueCount: l.ts.length }; }
+    }
+  }
+  // ESCALÓN "tabla de posiciones" (to-do 266). Si los equipos de TODAS las plantillas {{#invoke:sports table}} de la página están en la
+  // tabla elegida y la tabla elegida tiene nombres de más, lo que sobra es basura (un estadio compartido con rowspan corre las columnas:
+  // "2023 AFA Liga Profesional", 30 nombres con "Alfredo Terrera" y "Malvinas Argentinas" para 28 equipos). Se usa la de posiciones.
+  // FRENOS (medidos con --revalidar sobre las 320 listas guardadas: sin ellos salían clubes reales, Paços de Ferreira, Hønefoss,
+  // Beşiktaş, porque las tablas de posiciones de la página no cubrían toda la liga o lo nombraban distinto): se sacan a lo sumo 3
+  // nombres, y nunca uno que coincide (normalizado, sin "de", "FC"...) con un nombre de alguna tabla de posiciones.
+  const nn = (s) => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').split(' ').filter((w) => w && !['de', 'do', 'da', 'del', 'fc', 'cf', 'sc', 'ac', 'fk', 'sk', 'club', 'the'].includes(w)).join(' ');
+  const tocaPosiciones = (n, todas) => todas.some((x) => { const a = nn(n), b = nn(x); return a === b || a.startsWith(b + ' ') || b.startsWith(a + ' '); });
+  const sacarSeguro = (lista, todasST) => { const fuera = best.teams.filter((n) => !lista.includes(n)); return fuera.length <= 3 && !fuera.some((n) => tocaPosiciones(n, todasST)); };
+  {
+    const st = equiposDeSportsTable(conPlantillas, true);
+    if (process.env.DEBUG_ST) console.error(JSON.stringify({ st, tablas: tablasDeSportsTable(conPlantillas).map((l) => l.length), elegida: best.teams.length }));
+    if (st.length >= 4 && st.length < best.teams.length && st.every((n) => best.teams.includes(n)) && sacarSeguro(st, st)
+      && !tablasDeSportsTable(conPlantillas).some((l) => l.incompleta)) best = { teams: st, uniqueCount: st.length, viaSportsTable: true };
+    // y si a la tabla le sobran hasta 3 nombres que no están en NINGUNA tabla de posiciones (estadios: "2018–19 Argentine Primera
+    // División" trae "Mario Alberto Kempes" y "Estadio del Bicentenario"), se sacan. Nunca se agrega un nombre; si los nombres de las dos
+    // tablas difieren ("Talleres" contra "Talleres (C)") sobrarían más de 3 y no se toca nada.
+    // Solo si UNA tabla de posiciones tiene todos sus nombres en la tabla elegida (es la misma lista con otro orden): con un club que
+    // figura con otro nombre ("2008–09 Argentine Primera División") no se aplica, porque se lo llevaría.
+    else {
+      const igual = tablasDeSportsTable(conPlantillas).filter((l) => !l.incompleta && l.length >= 4 && l.length < best.teams.length && best.teams.length - l.length <= 3
+        && l.every((n) => best.teams.includes(n)) && sacarSeguro(l, st)).sort((a, b) => b.length - a.length)[0];
+      if (igual) best = { teams: igual, uniqueCount: igual.length, viaSportsTable: true };
     }
   }
   if (COMPARAR) {

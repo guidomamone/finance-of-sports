@@ -50,6 +50,35 @@
     "FC Silon Táborsko": { "carpeta": "República Checa/FC Taborsko" }
   },
   "gb": { "Milton Keynes Dons": { "carpeta": "Inglaterra/MK Dons" } },
+  "ar": {
+    "Estudiantes (LP)": { "clubId": "estudianteslp" },
+    "Gimnasia y Esgrima (LP)": { "clubId": "gimnasiaesgrima-ar" },
+    "Talleres (C)": { "clubId": "talleres-ar" },
+    "San Martín (T)": { "carpeta": "Argentina/San Martín (Tucumán)" },
+    "San Martín (SJ)": { "sourcing": "Argentina/San Martín (San Juan)" },
+    "Gimnasia y Esgrima (M)": { "sourcing": "Argentina/Gimnasia y Esgrima Mendoza" },
+    "Gimnasia y Esgrima (J)": { "sourcing": "Argentina/Gimnasia y Esgrima (Jujuy)" },
+    "Estudiantes (RC)": { "sourcing": "Argentina/Estudiantes Rio Cuarto" },
+    "Estudiantes (BA)": { "sourcing": "Argentina/Estudiantes (Buenos Aires - Caseros)" },
+    "Mitre (SdE)": { "sourcing": "Argentina/Mitre (Santiago del Estero)" },
+    "Agropecuario Argentino": { "sourcing": "Argentina/Agropecuario (Carlos Casares)" }
+  },
+  "de": {
+    "Union Berlin": { "sourcing": "Alemania/1. FC Union Berlin" },
+    "1899 Hoffenheim": { "clubId": "hoffenheim-de" },
+    "Mainz 05": { "sourcing": "Alemania/1. FSV Mainz 05" }
+  },
+  "es": {
+    "Alavés": { "clubId": "deportivoalaves" },
+    "Espanyol": { "clubId": "espanyol-es" },
+    "Mallorca": { "clubId": "rcdmallorca-es" },
+    "Oviedo": { "clubId": "realoviedo-es" },
+    "Valladolid": { "carpeta": "España/Real Valladolid" },
+    "Deportivo La Coruña": { "carpeta": "España/RC Deportivo" },
+    "Zaragoza": { "carpeta": "España/Real Zaragoza" }
+  },
+  "mx": { "Guadalajara": { "sourcing": "México/Chivas Guadalajara" } },
+  "dk": { "Copenhagen": { "clubId": "fckobenhavn-dk" } },
   "gr": {
     "A.E. Kifisia": { "clubId": "kifisia-gr" },
     "Kallithea": { "carpeta": "Grecia/Athens Kallithea" }

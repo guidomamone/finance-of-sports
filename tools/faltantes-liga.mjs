@@ -61,7 +61,7 @@ function listas() {
   const out = []; // { iso, liga, anio, clubs, pagina }
   for (const f of readdirSync(REF).filter((f) => /^[a-z]{2}\.json$/.test(f))) {
     const j = JSON.parse(readFileSync(resolve(REF, f), 'utf8'));
-    for (const [liga, ys] of Object.entries(j.leagues || {})) for (const [y, r] of Object.entries(ys)) out.push({ iso: f.slice(0, 2), liga, anio: +y, clubs: r.clubs, pagina: r.wikipediaPage || '' });
+    for (const [liga, ys] of Object.entries(j.leagues || {})) for (const [y, r] of Object.entries(ys)) out.push({ iso: f.slice(0, 2), liga, anio: +y, clubs: r.clubs, posiciones: r.posiciones || null, pagina: r.wikipediaPage || '' });
   }
   return out.sort((a, b) => a.liga.localeCompare(b.liga) || a.anio - b.anio);
 }
@@ -71,7 +71,7 @@ function listas() {
 const require_ = (await import('node:module')).createRequire(import.meta.url);
 const { cierreDelClub } = require_('./cierre-ejercicio.js');
 function clubsJs() { const s = { window: {} }; s.window.window = s.window; const ctx = vm.createContext(s); vm.runInContext(readFileSync(resolve(ROOT, 'data', 'clubs.js'), 'utf8'), ctx); return vm.runInContext('clubs', ctx); }
-function temporada(club, y, partida, ci) {
+export function temporada(club, y, partida, ci) {
   if (!partida) return y;
   const mes = Number((ci || cierreDelClub(club, y).slice(5)).slice(0, 2));
   return mes >= 9 ? y + 1 : y; // julio y agosto son fin de temporada (Burnley cierra el 31/7)
@@ -111,7 +111,7 @@ function pdfsEnMano(carpetas) {
 }
 
 // ---------------------------------------------------------------------------- cálculo
-function calcular() {
+export function calcular() {
   const CI = clubIndex(); const CLUBS = clubsJs(); const AL = alias(); const carpetas = todasLasCarpetas(); const ls = listas();
   const isos = [...new Set(ls.map((l) => l.iso))];
   const enMano = pdfsEnMano(carpetas.filter((c) => isos.some((i) => (PAISES[i] || []).includes(c.pais))));
@@ -161,6 +161,7 @@ function calcular() {
   };
   const resultado = {}; const sinUnir = {}; const pendientes = {}; // pendientes[pais][club] = { años: [{anio, liga, e}] }
   const unidos = new Set(); // "liga|año|clubId" que la lista reconoció como cargados
+  const posiciones = {}; // "liga|temporada|clubId" -> { pos, de, partida } (to-do 270, lo usa estimar.mjs)
   for (const l of ls) {
     const partida = /[–-]\d{2,4}\b/.test(l.pagina); // "2024–25 ..." = temporada que cruza años
     const cierre = new Date(Date.UTC(l.anio, partida ? 5 : 11, partida ? 30 : 31));
@@ -168,6 +169,13 @@ function calcular() {
     const faltan = []; let cargados = 0;
     for (const n of l.clubs) {
       const u = unir(l.iso, n);
+      // posición final (to-do 270): el nombre de la lista de equipos en la tabla de posiciones de la misma página (mismo nombre, o la
+      // misma familia de nombres si es uno solo)
+      if (u?.clubId && l.posiciones) {
+        let i = l.posiciones.indexOf(n);
+        if (i < 0) { const c = l.posiciones.map((x, k) => [x, k]).filter(([x]) => norm(x) && (norm(x) === norm(n) || norm(x).startsWith(norm(n) + ' ') || norm(n).startsWith(norm(x) + ' '))); if (c.length === 1) i = c[0][1]; }
+        if (i >= 0) posiciones[`${l.liga}|${l.anio}|${u.clubId}`] = { pos: i + 1, de: l.posiciones.length, partida };
+      }
       if (!u) (sinUnir[l.iso] ??= new Set()).add(n);
       let e;
       if (u?.clubId && cubre(CI, CLUBS, u.clubId, l.anio, partida)) { cargados++; unidos.add(`${l.liga}|${l.anio}|${u.clubId}`); continue; }
@@ -190,8 +198,11 @@ function calcular() {
   for (const f of readdirSync(resolve(ROOT, 'data', 'club-leagues'))) vm.runInNewContext(readFileSync(resolve(ROOT, 'data', 'club-leagues', f), 'utf8'), cl);
   const aliasFaltan = [];
   for (const [id, ys] of Object.entries(cl.window.CLUB_LEAGUE_BY_YEAR || {})) for (const [y, liga] of Object.entries(ys)) {
-    const p = ls.find((l) => l.liga === liga); if (!p || !CI[id]?.yrs.some(([a]) => a === +y)) continue;
-    const s = temporada(CLUBS[id], +y, /[–-]\d{2,4}\b/.test(p.pagina), CI[id].ci?.[y]);
+    if (!CI[id]?.yrs.some(([a]) => a === +y)) continue;
+    // "temporada partida" es de CADA liga-año (Argentina pasó de 2008-09 a temporadas de un año): se prueba la lista de la temporada
+    // siguiente (si es partida) y la del mismo año
+    const partidaDe = (a) => { const p = ls.find((l) => l.liga === liga && l.anio === a); return p ? /[–-]\d{2,4}\b/.test(p.pagina) : null; };
+    const s = partidaDe(+y + 1) && temporada(CLUBS[id], +y, true, CI[id].ci?.[y]) === +y + 1 ? +y + 1 : temporada(CLUBS[id], +y, partidaDe(+y) === true, CI[id].ci?.[y]);
     if (resultado[liga]?.[s] && !unidos.has(`${liga}|${s}|${id}`)) aliasFaltan.push(`${liga} ${s} ${id} (${CI[id].n})`);
   }
   // --sugerir: nombres sin unir que comparten una palabra de 4+ letras con un candidato del país (posible alias, para confirmar a mano)
@@ -201,7 +212,7 @@ function calcular() {
     const c = [...cand[iso].entries()].filter(([key]) => key.split(' ').some((w) => ws.includes(w))).map(([key, o]) => o.clubId || o.carpetas?.join(' + ') || o.sourcing?.archivo || key);
     if (c.length) sugerencias.push(`${iso} "${n}" -> ${[...new Set(c)].join(' | ')}`);
   }
-  return { resultado, sinUnir, pendientes, ls, aliasFaltan, sugerencias, aliasRotos: [...aliasRotos] };
+  return { resultado, sinUnir, pendientes, ls, aliasFaltan, sugerencias, aliasRotos: [...aliasRotos], posiciones };
 }
 
 // ---------------------------------------------------------------------------- salidas
