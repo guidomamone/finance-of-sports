@@ -224,7 +224,7 @@ const aellarissagrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:2.710883, motivo:'el documento no desglosa este renglón'},
       {renglon:'(-) Κόστος πωλήσεων', lado:'expense', importe:1.541699, motivo:'Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)'},
     ],
-    grossDebt:null, cash:0.468862,
+    grossDebt:0, cash:0.468862,
     officialTotalRevenue:3.40008, officialTotalExpenses:2.658101, officialPAT:0.730033,
   },
   2017: {
@@ -243,7 +243,7 @@ const aellarissagrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:1.881042, motivo:'el documento no desglosa este renglón'},
       {renglon:'(-) Κόστος πωλήσεων', lado:'expense', importe:1.477726, motivo:'Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)'},
     ],
-    grossDebt:null, cash:0.230582,
+    grossDebt:0, cash:0.230582,
     officialTotalRevenue:2.219786, officialTotalExpenses:2.547803, officialPAT:-0.35446,
   },
   2016: {
@@ -262,7 +262,7 @@ const aellarissagrFiscalYearMeta = {
       {renglon:'Κύκλος εργασιών (καθαρός)', lado:'revenue', importe:0.596069, motivo:'el documento no desglosa este renglón'},
       {renglon:'Κόστος πωλήσεων', lado:'expense', importe:0.726277, motivo:'Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)'},
     ],
-    grossDebt:null, cash:0.098071,
+    grossDebt:0, cash:0.098071,
     officialTotalRevenue:1.001265, officialTotalExpenses:1.252202, officialPAT:-0.352929,
   },
   2021: {
@@ -293,7 +293,7 @@ const aellarissagrFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Πωλήσεις υπηρεσιών', lado:'revenue', importe:2.319316, motivo:'Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)'},
     ],
-    grossDebt:null, cash:0.307579,
+    grossDebt:0, cash:0.307579,
     officialTotalRevenue:3.086962, officialTotalExpenses:3.534819, officialPAT:-0.483748,
   },
   2023: {

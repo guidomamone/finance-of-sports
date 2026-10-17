@@ -370,6 +370,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 2
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Balance completo (Σύνολο υποχρεώσεων 2.097.811,40) sin ninguna fila de préstamos ni deuda financiera. Pasivo = otras largo plazo, comerciales, impuestos, seguridad social y otras; sin deuda financiera (ELP, euros).
+```
+
 ### Liga
 
 ```text
@@ -411,6 +415,10 @@ tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (n
 tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025): Salarios y primas (plantel y cuerpo técnico), Inversiones (amortizaciones y depreciación)
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 2
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Balance completo (Σύνολο υποχρεώσεων 1.767.958,05) sin ninguna fila de préstamos ni deuda financiera. Pasivo = otras largo plazo, comerciales, impuestos, seguridad social y otras; sin deuda financiera (ELP, euros).
 ```
 
 ### Liga
@@ -456,6 +464,10 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-03): cash escalón 0 (compuerta: año anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 2
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Balance completo (Σύνολο υποχρεώσεων 1.203.970,89) sin ninguna fila de préstamos ni deuda financiera. Pasivo = otras largo plazo, comerciales, impuestos, seguridad social y otras; sin deuda financiera (ELP, euros).
+```
+
 ### Liga
 
 ```text
@@ -497,6 +509,10 @@ tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (n
 tools/dentro-de-otro.mjs (2026-10-05): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2021, 2022, 2023, 2024, 2025): Salarios y primas (plantel y cuerpo técnico), Inversiones (amortizaciones y depreciación)
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee (Versión 332).
 tools/caja-deuda.mjs (2026-10-03): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 2
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Balance completo (Σύνολο υποχρεώσεων 444.964,14) sin ninguna fila de préstamos ni deuda financiera. Pasivo = otras largo plazo, comerciales, impuestos, seguridad social y otras; sin deuda financiera (ELP, euros).
 ```
 
 ### Liga
