@@ -744,7 +744,8 @@ Escribir: `--club <id> --ejecutar --escribir` (el valor en `data/`, sin comentar
             del documento (ajuste `deuda-incluye`); jerarquía de balancete: padre e
             hija no se suman; cuenta D no es deuda. Además propone: deuda corriente + no corriente de la misma etiqueta (exactamente
             dos filas, a cada lado del total del pasivo no corriente —también "Total do passivo não corrente" y "Total - Passivo não
-            corrente"—, o, si ese total no tiene nombre, una bajo el título "Passivo não corrente" y otra bajo "Passivo corrente"; el par y
+            corrente"—, o, si ese total no tiene nombre, una bajo el título "Passivo não corrente" y otra bajo "Passivo corrente" (o los del POC: "Dívidas a Terceiros - médio e
+            longo prazo / curto prazo", to-do 260 f); el par y
             las otras familias propuestas, todas en la misma tabla: si se mezclan tablas no decide, deuda mejora 2); las filas de la nota de efectivo si la caja es una parte; el total
             de la nota de deuda si no hay otra fila de deuda. "La caja es una parte de la nota" no vale si el total que suma es un total del
             balance ("Total do Ativo corrente": to-do 260 c; Moreirense 2023, Sporting 2021 y 2023, Goiás 2008-2009 tenían cargado ese total)

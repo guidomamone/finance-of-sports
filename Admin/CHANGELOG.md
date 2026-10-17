@@ -76,6 +76,9 @@ que dice `ESTADO.md` era verdad ese día.
   (TODO 260 c). Destraba Famalicão (12 datos); encontró 6 cajas cargadas mal (eran el total del activo corriente): se corrigen.
 - Caja y deuda: 13 cajas corregidas (eran el total del activo corriente) y deudas de Sporting 2000 y 2002-2007 vaciadas (par del POC
   incompleto o escala); TODO 260 f para el formato POC.
+- caja-deuda.mjs y vocabulario.mjs: títulos de sección del POC y "Dívidas a Instituições de Crédito" como deuda (TODO 260 f). Sporting
+  2000-2008: deuda con ajustes `deuda` (el par de cada balance); 2006-07, transcripción corregida contra el PDF (pág. 18: "Dívidas a
+  Instituições de Crédito 2 364", decía "Fornecedores, Conta Corrente 2 064").
 - Lotes 86 y 87: Felgueiras 2021-22 y Benfica 2007-08 cargados; caja de Felgueiras 2022-2024. Listas 80, 86 y 87 al archivo.
 
 ## Versión 707 — Portugal cargado (salvo lo que espera scripts) y to-do 237 a medias: 14 letras resueltas y medidas (2026-10-16)
