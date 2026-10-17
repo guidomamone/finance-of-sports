@@ -95,6 +95,10 @@ tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento anterior): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 10
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Balance completo (Σύνολο Υποχρεώσεων 1.486.352,06): sólo comerciales, impuestos, seguridad social y otras; sin fila de préstamos (nota 10.1.1: sin préstamos a largo plazo). Sin deuda financiera.
+```
+
 ### Liga
 
 ```text
@@ -143,6 +147,10 @@ tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguien
 tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2023, 2025): Comercial / Sponsors, Estadio, Televisión
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Balance completo (Σύνολο Υποχρεώσεων 1.149.458,48): sólo comerciales, impuestos, seguridad social y otras; sin fila de préstamos (nota 10.1.1: sin préstamos a largo plazo). Sin deuda financiera.
+```
+
 ### Liga
 
 ```text
@@ -186,6 +194,10 @@ tools/cargar.mjs (2026-10-14). grossDebt/cash: los completa tools/caja-deuda.mjs
 
 ```text
 tools/caja-deuda.mjs (2026-10-14): cash escalón 2 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 12
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Balance completo (Σύνολο Υποχρεώσεων 440.371,17): sólo comerciales, impuestos, seguridad social y otras; sin fila de préstamos (nota 10.1.1: sin préstamos a largo plazo). Sin deuda financiera.
 ```
 
 ### Liga
@@ -238,6 +250,10 @@ tools/dentro-de-otro.mjs (2026-10-14): posiblemente dentro de otro rubro, por pr
 
 ```text
 tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: documento siguiente): "Ταμειακά διαθέσιμα και ισοδύναμα" pág. 13
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Balance completo (Σύνολο Υποχρεώσεων 207.339,00): sólo comerciales, impuestos, seguridad social y otras; sin fila de préstamos (nota 10.1.1: sin préstamos a largo plazo). Sin deuda financiera.
 ```
 
 ## Fuentes
