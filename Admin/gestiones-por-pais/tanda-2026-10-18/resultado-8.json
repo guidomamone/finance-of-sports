@@ -1,0 +1,13 @@
+{
+  "criterioPais": { "CO": "Once Caldas S.A.: el presidente del club, que es también el representante legal que firma la certificación de estados financieros (sociedad de muchos accionistas); mismo criterio que la gestión de Castrillón ya cargada." },
+  "clubes": { "oncecaldas": {
+    "gestiones": [
+      { "nombre": "Daniel Jaramillo Vélez", "corto": "Jaramillo", "cargo": "Presidente", "desde": "2024-10-01", "hasta": null,
+        "fuente": "https://www.lapatria.com/deportes/esta-es-la-nueva-junta-directiva-del-once-caldas", "confirmada": true }
+    ],
+    "notas": {
+      "Daniel Jaramillo Vélez": "Reemplazó a Tulio Mario Castrillón, que renunció el 01/10/2024 (Claro Sports, ya cargado). La Patria (09/10/2024, https://www.lapatria.com/deportes/este-es-el-ejecutivo-que-asumira-la-presidencia-del-once-caldas-en-reemplazo-de-castrillon) anunció que 'es o será' el presidente; La Patria (21/10/2024, fuente de la gestión) ya dice que fue nombrado interinamente en reemplazo de Castrillón; La Veintitrés (09/10/2024) lo ubica al frente 'desde la próxima semana'. Ninguna fuente da el día exacto de la posesión: se usa día 01 del mes de la salida de Castrillón (sin hueco entre gestiones) y el dato solo es aproximado en el día; los cierres 2024-12-31 y 2025-12-31 caen igual dentro de su gestión con cualquier día de octubre de 2024. Sigue presidente en octubre de 2026 (Publimetro 15/10/2026). Los balances lo corroboran: firma como Representante Legal la certificación 2024 (Clubes/Colombia/Once Caldas/certificacion-ef-2024.md:17, fechada el 28/04/2025) y la 2025 (certificacion-ef-2025.md:38; opinión de BDO del 11/03/2026), y figura en estados-financieros-2024.md:481 y estados-financieros-2025.md:2144. Sin cambio de gestión entre cierre y aprobación."
+    },
+    "cubre": { "2024-12-31": "Daniel Jaramillo Vélez", "2025-12-31": "Daniel Jaramillo Vélez" },
+    "dudas": [ "Fecha exacta (día) de la asunción de Daniel Jaramillo en octubre de 2024: ninguna nota de prensa la da. Pregunta para el club: ¿en qué fecha tomó posesión como presidente y representante legal?" ] } }
+}

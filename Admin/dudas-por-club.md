@@ -1929,6 +1929,16 @@ sin leerlo.
 ## Gestiones sin fecha confirmada (tanda Admin/gestiones-por-pais/tanda-2026-10-14-2, sesión 2026-10-15: no frena ninguna carga)
 
 Ni los balances ni una búsqueda web dan las fechas; el detalle de cada caso está en el `resultado-N.json` de la tanda (notas y dudas).
+- **Cruzeiro, en qué fecha se cerró la compra de la SAF por Pedro Lourenço** (tanda-2026-10-18, lote 6): el acuerdo se firmó el
+  29/4/2024 sujeto al CADE y a la concordancia de la Cruzeiro Associação (informativo-financeiro-2023.md:2101); el CADE aprobó el 12/6/2024
+  (O Tempo). Cualquier fecha deja los cierres 2024 y 2025 con Lourenço, pero ninguna fuente da el cierre formal. — a quién preguntarle:
+  Cruzeiro SAF.
+- **Amazonas FC, desde cuándo preside Weslley Couto** (tanda-2026-10-18, lote 5): firma como Diretor Presidente los balances 2022-2023 y
+  2024 (balanco-patrimonial-2024.md:60-61), pero ninguna fuente da la fecha de asunción; en 2024 estuvo suspendido un tiempo del cargo. —
+  a quién preguntarle: Amazonas FC (acta de elección o posse).
+- **Novorizontino, quién presidió desde la fundación (marzo de 2010) hasta Genilson da Rocha Santos (2012)** (tanda-2026-10-18, lote 2):
+  el balance 2010 lo firma Alex Sandro Domingues Pereira como presidente de la diretoria executiva (balanco-2010.md:36-41), sin fuente con
+  fechas. — a quién preguntarle: Grêmio Novorizontino.
 - **Estoril Praia, quién presidía el conselho de administração de la SAD al 30/6/2025** (tanda-2026-10-17, lote 16): Ignacio Beristain
   anunció su salida el 10/6/2025 "antes de la nueva temporada" (A Bola) sin fecha efectiva; el balance 2024/25 (aprobado el 28/10/2025) lo
   firma Begoña Santiago, que según Record (1/5/2026) asumió "hace unos siete meses". ¿Fecha efectiva del cambio? — a quién preguntarle:

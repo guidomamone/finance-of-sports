@@ -84,5 +84,7 @@ Object.assign(window.CLUB_GESTIONES, {
   'oncecaldas': [
     { nombre:'Tulio Mario Castrillón', corto:'Castrillón', cargo:'Presidente', desde:'2016-01-01', hasta:'2024-10-01',
       fuente:'https://www.clarosports.com/colombia/liga-bet-play/oficial-tulio-mario-castrillon-deja-de-ser-presidente-de-once-caldas/', confirmada:true },
+    { nombre:'Daniel Jaramillo Vélez', corto:'Jaramillo', cargo:'Presidente', desde:'2024-10-01', hasta:null,
+      fuente:'https://www.lapatria.com/deportes/esta-es-la-nueva-junta-directiva-del-once-caldas', confirmada:true },
   ],
 });

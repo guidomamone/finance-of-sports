@@ -52,6 +52,8 @@ Object.assign(window.CLUB_GESTIONES, {
       fuente:'https://rblive.de/news/johann-plenge-rb-leipzig-urgestein-neuer-praesident-nach-mintzlaff-3521718', confirmada:true },
   ],
   'monchengladbach-de': [
+    { nombre:'Rolf Königs', corto:'Königs', cargo:'Präsident', desde:'2004-04-01', hasta:'2024-03-19',
+      fuente:'https://fohlen-hautnah.de/neues-praesidium-bei-borussia-koenigs-tritt-zurueck-bonhof-uebernimmt/', confirmada:true },
     { nombre:'Rainer Bonhof', corto:'Bonhof', cargo:'Präsident', desde:'2024-03-19', hasta:null,
       fuente:'https://www.borussia.de/news/2024-03-19-neues-praesidium-bei-borussia-rainer-bonhof-folgt-rolf-koenigs-im-amt-des-praesidenten', confirmada:true },
   ],

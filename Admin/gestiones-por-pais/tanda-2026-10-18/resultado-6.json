@@ -1,0 +1,42 @@
+{
+ "criterioPais": {
+  "BR": "Cruzeiro es SAF: se cargó al dueño-controlador con nombre (Ronaldo Nazário, luego Pedro Lourenço), como en el resto de las SAF del país; los ejecutivos (Diretor Presidente) no se cargan."
+ },
+ "clubes": {
+  "cruzeiro": {
+   "gestiones": [
+    {
+     "nombre": "Ronaldo Nazário",
+     "corto": "Ronaldo",
+     "cargo": "Presidente",
+     "desde": "2022-01-01",
+     "hasta": "2024-04-29",
+     "fuente": "https://www.itatiaia.com.br/esportes/futebol/futebol-nacional/futebol-mineiro/cruzeiro/pedro-lourenco-oficializa-compra-do-cruzeiro-saf-junto-a-ronaldo-veja-detalhes/",
+     "confirmada": true
+    },
+    {
+     "nombre": "Pedro Lourenço de Oliveira",
+     "corto": "Pedro Lourenço",
+     "cargo": "Presidente",
+     "desde": "2024-04-29",
+     "hasta": null,
+     "fuente": "https://portalcruzeirense.com.br/tudo-sobre-como-ocorreu-a-compra-do-cruzeiro-por-pedrinho-bh/",
+     "confirmada": false
+    }
+   ],
+   "notas": {
+    "Ronaldo Nazário": "Controlador (90% vía Tara Sports). Itatiaia (29-04-2024) dice que geria la SAF desde enero de 2022; se usa 2022-01-01 (fuente da solo mes/año). Hasta 2024-04-29, firma de la venta. Balance 2023 confirma la firma del acuerdo en informativo-financeiro-2023.md:2101.",
+    "Pedro Lourenço de Oliveira": "Fecha 2024-04-29: firma/oficialización del traspaso de control (informativo-financeiro-2023.md:2101-2105; Portal Cruzeirense: 'passagem do controle ... oficializada em 29 de abril de 2024'). confirmada:false porque ninguna fuente fecha el cierre formal: el acuerdo estaba sujeto a CADE (aprobado 12-06-2024 según O Tempo) y a la concordancia de la Associação (sin fecha publicada). Es el primero del Conselho de Administração en informativo-financeiro-2024.md:2310 y 2025.md:2535. Cualquier fecha entre 29-04 y 12-06-2024 deja los cierres 2024 y 2025 en su gestión."
+   },
+   "cubre": {
+    "2024-12-31": "Pedro Lourenço de Oliveira (a confirmar)",
+    "2025-12-31": "Pedro Lourenço de Oliveira (a confirmar)"
+   },
+   "dudas": [
+    "¿En qué fecha se cerró formalmente la compra de la SAF (cumplimiento de condiciones precedentes: CADE y concordancia de la Cruzeiro Associação)? Pregunta para el club. Se probaron Itatiaia, CNN Brasil, ESPN, O Tempo, Terra y Portal Cruzeirense: ninguna da fecha de cierre.",
+    "Los balances 2024 y 2025 los firma Pedro Junio de Oliveira como Diretor Presidente (informativo-financeiro-2024.md:2300; 2025.md:2528), no el dueño; se cargó al dueño por la regla de SAF. Si Guido prefiere al ejecutivo, faltan sus fechas.",
+    "Ronaldo sigue en el Conselho de Administración tras vender; no se carga como gestión."
+   ]
+  }
+ }
+}

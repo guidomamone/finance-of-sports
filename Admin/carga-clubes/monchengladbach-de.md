@@ -193,6 +193,12 @@ SIN CONFIRMAR, no cargada: Rolf Königs (2004-04-06 a 2024-03-19), https://de.wi
 Duda: Fecha exacta de asunción de Königs (6-4-2004) sin fuente que la confirme en la página citada; irrelevante para los cierres pedidos.
 ```
 
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-18/resultado-9.json, tools/gestiones-tanda.mjs, 2026-10-18):_
+
+```text
+Rolf Königs (2004-04-01 a 2024-03-19): fohlen-hautnah (19-3-2024) dice que era presidente desde abril de 2004 y que Bonhof asume 'mit sofortiger Wirkung' ese mismo día tras la elección del nuevo Präsidium por el Aufsichtsrat; por eso hasta 2024-03-19 (coincide con el 'desde' ya cargado de Bonhof). La fuente da solo mes para el inicio: desde con día 01 (de.wikipedia.org/wiki/Rolf_Königs da el 6-4-2004 como elección, sucediendo al fallecido Adalbert Jordan). Corroboración en los documentos: jahresabschluss-2023.md:18 (Geschäftsführung 2023 con Rolf Königs) y jahresabschluss-2024-aufsichtsratsbericht-nachtrag.md:105 ('Rolf Königs (bis 19. März 2024)'). El cierre 2023-12-31 queda dentro de su gestión.
+```
+
 ## Fuentes
 
 ### monchengladbach-de-jahresabschluss-2023

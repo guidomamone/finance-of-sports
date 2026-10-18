@@ -207,4 +207,22 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'Adson José Batista', corto:'Adson Batista', cargo:'Presidente', desde:'2019-01-14', hasta:null,
       fuente:'https://www.lance.com.br/atletico-goianiense/adson-batista-aclamado-novo-presidente-atletico.html', confirmada:true },
   ],
+  'fortaleza-br': [
+    { nombre:'Fabiano Barreira', corto:'Barreira', cargo:'Presidente del Conselho de Administração', desde:'2025-04-15', hasta:'2026-01-15',
+      fuente:'https://www.portalin.com.br/notas/fabiano-barreira-assume-presidencia-do-conselho-de-administra-da-saf-do-fortaleza/', confirmada:true },
+    { nombre:'Bruno Cals', corto:'Cals', cargo:'Presidente del Conselho de Administração', desde:'2026-01-15', hasta:null,
+      fuente:'https://www.opovo.com.br/esportes/futebol/times/fortaleza/2026/01/15/bruno-cals-e-o-novo-presidente-do-conselho-da-saf-do-fortaleza.html', confirmada:true },
+  ],
+  'novorizontino-br': [
+    { nombre:'Genilson da Rocha Santos', corto:'Genilson', cargo:'Presidente', desde:'2012-01-01', hasta:null,
+      fuente:'https://www.espn.com.br/futebol/paulista/artigo/_/id/16384516/novorizontino-por-que-mudou-nome-antes-virar-saf-tem-palmeiras-como-exemplo-sucesso', confirmada:true },
+  ],
+  'ituano': [
+    { nombre:'João Paulo Silveira Ruiz', corto:'Ruiz', cargo:'Presidente', desde:'2024-01-01', hasta:null,
+      fuente:'https://jornalperiscopio.com.br/site/ituano-elege-nova-diretoria/', confirmada:true },
+  ],
+  'ceara-br': [
+    { nombre:'João Paulo Silva', corto:'João Paulo', cargo:'Presidente', desde:'2023-03-29', hasta:null,
+      fuente:'https://en.wikipedia.org/wiki/2023_Cear%C3%A1_Sporting_Club_season', confirmada:true },
+  ],
 });

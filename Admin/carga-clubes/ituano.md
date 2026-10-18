@@ -107,6 +107,16 @@ impreso (29.239.217,10). officialTotalExpenses = "DESPESAS - FUTEBOL"
 officialPAT = "(DÉFICIT) OU SUPERÁVIT DO EXERCÍCIO" impreso.
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-18/resultado-3.json, tools/gestiones-tanda.mjs, 2026-10-18):_
+
+```text
+João Paulo Silveira Ruiz (2024-01-01 a hoy): Periscópio (dic. 2023): chapa única aclamada el martes 05-12-2023; presidente 'para o triênio 2024/2026' (la diretoria, 'biênio 2024/2025'), en lugar de Ricardo Giordani. Futebol Interior y Momento do Esporte coinciden. Ninguna fuente da el día de la posse: 2024-01-01 es el inicio del mandato por convención (año sin día -> 01-01), por eso confirmada:false. El informe de auditoría 2024 (relatorio-auditoria-2024.md:136-146) está firmado el 17-04-2025 solo por el auditor (AUDIT Consult) y no nombra al presidente; el balance no lo corrobora. El cierre 2024-12-31 cae dentro del mandato y no hubo cambio de gestión entre cierre y aprobación según la prensa consultada. | Claude 2026-10-18: la fuente da el mandato "triênio 2024/2026" (electo el 5/12/2023): año de inicio, día y mes 01 por la regla de la tanda; el cierre 2024-12-31 cae dentro con cualquier día.
+Duda: Fecha exacta de posse de Ruiz (¿diciembre 2023 o enero 2024?): ninguna fuente web la da (Periscópio, Futebol Interior, Momento do Esporte, Jornal de Itu 404). Pregunta al club: ¿en qué fecha asumió João Paulo Silveira Ruiz la presidencia del Ituano?
+Duda: La Wikipedia en inglés (infobox) lista a Vinicius Guitti Moraes como presidente, sin fecha ni respaldo en prensa; su LinkedIn dice que presidió 2018-2020. Se descarta por falta de fuente, pero no se pudo comprobar que Ruiz siga hoy en el cargo (hasta:null asumido).
+```
+
 ## Fuentes
 
 ### ituano-relatorio-auditoria-2024

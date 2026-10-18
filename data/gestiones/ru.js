@@ -74,6 +74,8 @@ Object.assign(window.CLUB_GESTIONES, {
       fuente:'https://www.sport-express.ru/football/rfpl/news/novym-generalnym-direktorom-baltiki-stal-ravil-izmaylov-2156186/', confirmada:true },
   ],
   'parinizhnynovgorod-ru': [
+    { nombre:'Ravil Izmailov', corto:'Izmailov', cargo:'Director General', desde:'2021-01-25', hasta:'2023-07-21',
+      fuente:'https://news.sportbox.ru/Vidy_sporta/Futbol/Russia/1st_division/spbnews_NI1300857_Izmajlov_stanet_generalnym_direktorom_Nizhnego_Novgoroda', confirmada:true },
     { nombre:'David Melik-Guseinov', corto:'Melik-Guseinov', cargo:'Director General', desde:'2023-07-21', hasta:'2025-09-13',
       fuente:'https://pravda-nn.ru/news/david-melik-gusejnov-pokinul-post-gendirektora-pari-nn-v-nizhnem-novgorode/', confirmada:true },
     { nombre:'Vitaly Karasev', corto:'Karasev', cargo:'Director General', desde:'2025-09-19', hasta:null,
