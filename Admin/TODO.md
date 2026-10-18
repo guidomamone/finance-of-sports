@@ -25,7 +25,7 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 293, 275, 274, 272,
-271 · finanzas 280, 281, 282, 242 · pipeline 289, 290, 288, 232, 279, 286, 287 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
+271 · finanzas 280, 281, 282, 242, 294 · pipeline 289, 290, 288, 232, 279, 286, 287 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
 datos-sourcing 276, 277, 273, 252 · Reino Unido (261) en su propia sesión · la principal: 268, 291, 250, 244 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
@@ -63,6 +63,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 275: faltantes y estimados en Ligas (estimado bien claro, aparte de lo real)
 * 274: consolidado de cada liga: total de ingresos por categoría (mockup con Design antes)
 * 280, 281 y 282: Finanzas, las entidades del club, lo de las otras entidades y quién audita
+* 294: llenar el registro de entidades (después del merge de finanzas)
 * 272: cartel de primera visita sin uso (borrarlo o reubicarlo)
 
 **E2. Distribución (depende de 246)**
@@ -297,6 +298,13 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    liga dice, por ejemplo, "Primera División 10 de 28 · 2024", "Primera Nacional 1 club · 2023": se lee como que de esa liga solo hay
    información de ese año, cuando hay varios ejercicios. Que la tarjeta diga el rango o la cantidad de ejercicios con datos (y de qué año
    es el "10 de 28"), o que el año se entienda como "el más reciente". Mockup antes de codear.
+294. LLENAR EL REGISTRO DE ENTIDADES (sigue al 280; pedido de Guido, 2026-10-18, vía fos-finanzas). `Admin/registros/entidades.jsonl`
+   (llega con el merge de la rama finanzas) tiene solo Chelsea 2025 e Inter 2025. Faltan: (1) los otros ejercicios de Chelsea e Inter
+   (Suning antes de 2024); (2) Portugal, club asociación y SAD: los avisos de `node tools/entidades.mjs`; (3) los grupos con dos o más
+   clubes cargados: City Football Group (Man City, Girona), Marinakis (Forest, Olympiacos, Rio Ave), Friedkin (Roma, Everton), 777
+   Partners (Genoa, Standard, Vasco), Eagle Football (Botafogo, parte de Crystal Palace); (4) los casos de
+   `Admin/registros/cola-borradores/altas-2026-10-17.md`, cuando esos clubes estén publicados. Con subagentes: cada línea lleva una cita
+   del .md, o url y fecha si es externa, y `tools/entidades.mjs` la verifica.
 270. ESTIMAR UN CLUB QUE NUNCA CARGAMOS (pedido de Guido, 2026-10-17; los años que le faltan a un club que tenemos ya se estiman y
    publican en data/estimados/). Apagado: hoy da 50% de error con la posición en la tabla contra 56% de la mediana de la liga. Volver a
    medir (`node tools/estimar.mjs --medir`) cuando haya más clubes cargados y prenderlo solo si le gana a la mediana con un error que Guido
