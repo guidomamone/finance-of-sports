@@ -3550,6 +3550,17 @@ Object.assign(window.CLUB_ENTIDADES, {
     "fuente": {
      "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2015-16.md",
      "linea": 1153
+    },
+    "ingresos": {
+     "2020": {
+      "total": 11.403,
+      "moneda": "EUR",
+      "cierre": "2020-06-30",
+      "fuente": {
+       "md": "Clubes/Portugal/Porto/relatorio-contas-2019-20.md",
+       "linea": 1071
+      }
+     }
     }
    },
    "porto-comercial": {
