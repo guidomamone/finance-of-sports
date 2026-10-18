@@ -6,6 +6,7 @@
 - **Liga / competencia**: Liga Portugal 2 / Liga 3 (Portugal)
 - **Entidad legal**: Associação Académica de Coimbra – OAF (Organismo Autónomo de Futebol) y Académica SDUQ (SAD): dos entidades en los archivos (`OAF-RC-...` y `RC-SDUQ-...`)
 - **Canal**: sitio oficial del club, hallado con el CDX de Wayback del dominio completo (`matchType=domain`, filtro PDF) y bajado con `web.archive.org/web/<ts>id_/`; ver `paises/Portugal.md`.
+- **Página del canal** (la mira la revisión mensual, `tools/ejercicios-nuevos.mjs`; agregada 2026-10-18): https://www.academica-oaf.pt/relatorio-de-contas/
 
 ## Qué se bajó (sesión 2026-10-08)
 

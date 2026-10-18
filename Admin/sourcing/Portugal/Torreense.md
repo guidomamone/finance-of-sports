@@ -6,6 +6,7 @@
 - **Liga / competencia**: Liga Portugal 2 (Portugal)
 - **Entidad legal**: Sport Clube Torreense – Futebol SAD (`SAD_RelatorioContas...`)
 - **Canal**: sitio oficial de la SAD/club, hallado con el CDX de Wayback del dominio completo y bajado con `web.archive.org/web/<ts>id_/`; ver `paises/Portugal.md`.
+- **Página del canal** (la mira la revisión mensual, `tools/ejercicios-nuevos.mjs`; agregada 2026-10-18): https://torreense.com/sad
 
 ## Qué se bajó (sesión 2026-10-08)
 

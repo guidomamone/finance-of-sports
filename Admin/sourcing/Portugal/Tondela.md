@@ -1,5 +1,7 @@
 # Tondela (CD Tondela)
 
+- **Página del canal** (la mira la revisión mensual, `tools/ejercicios-nuevos.mjs`; agregada 2026-10-18): https://cdtondela.pt/
+
 - **Deporte**: Fútbol
 - **Liga / competencia**: Primeira Liga (Portugal, 1ª división) — recién ascendido para 2025/26 (en
   la 2025/26 real terminó descendiendo, ver Wikipedia de la temporada).

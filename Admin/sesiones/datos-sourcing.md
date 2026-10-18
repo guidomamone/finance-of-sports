@@ -144,7 +144,7 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
 
 ### Qué queda (TODO)
 
-- 252: notas sin URL del canal (Portugal 9, Argentina 4, Inglaterra 3, Brasil 3, Alemania 2, Perú, Italia y Chile 1; Colombia 2 es de
+- 252: notas sin URL del canal (Argentina 4, Brasil 3, Perú, Italia y Chile 1; Colombia 2 es de
   fos-onboarding). Inglaterra y Alemania probablemente sean de registro (Companies House, Unternehmensregister), como Dinamarca: canal
   por API en el script, no URL.
 - 26 clubes con el PDF del ejercicio siguiente ya bajado y sin cargar (los lista `node tools/ejercicios-nuevos.mjs`): onboarding.
@@ -154,3 +154,11 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
   Arsenal, Liverpool y West Ham 2025-26 todavía no se presentaron (Companies House da 9 meses: llegan hacia febrero de 2027). Alemania: el
   Unternehmensregister pide un formulario con sesión, así que el club queda "a revisar con el navegador" con la razón social exacta a buscar
   (Mönchengladbach, Stuttgart). Nueva línea del README y de la consola: "el registro todavía no lo publicó".
+- **252: Portugal.** Las 9 notas sin URL ganaron una línea "**Página del canal**" (Académica `academica-oaf.pt/relatorio-de-contas/`,
+  Chaves `gdchaves.pt/documentos/`, Torreense `torreense.com/sad`, Mafra `cdmafrasad.pt/informacoes-e-relatorios/` (confirmada por el
+  mismo nombre de PDF que ya teníamos), y la home de AVS, Boavista, Felgueiras, Tondela y União de Leiria). Las páginas que faltaban salieron
+  con Exa (Wayback CDX estaba caído). El script además mira la mediateca de WordPress del dominio, reconoce "ya bajado" por los dos años
+  de la temporada en el nombre ("JUL2024-A-JUN2025", "Epoca-20242025") y anota como "revisado, todavía no publicado" a un club cuya
+  página se leyó sin el PDF. Hallazgo: **Torreense 2024-25** (`Clubes/Portugal/Torreense/sad_relatoriocontas2024-2025v2.pdf`, **copiado
+  con rsync a la carpeta principal**; ahí `data/faltantes/` queda viejo hasta el merge, que lo regenera). Corrida de hoy: 1 nuevo, 28 ya
+  bajados sin cargar, 23 a revisar con el navegador, 11 revisados sin publicar. ASSET_V 1274.

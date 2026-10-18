@@ -104,7 +104,7 @@ async function virkDk(cvr, fecha) {
 // cómo puede aparecer la temporada esperada en un link
 function formas(anio, calendario) {
   const a = anio - 1, yy = String(anio).slice(2), aa = String(a).slice(2);
-  return calendario ? [String(anio)] : [`${a}-${yy}`, `${a}/${yy}`, `${a}_${yy}`, `${a}-${anio}`, `${a}/${anio}`, `${a}_${anio}`, `${aa}-${yy}`, `${aa}${yy}`, `${a}${yy}`];
+  return calendario ? [String(anio)] : [`${a}-${yy}`, `${a}/${yy}`, `${a}_${yy}`, `${a}-${anio}`, `${a}/${anio}`, `${a}_${anio}`, `${aa}-${yy}`, `${aa}${yy}`, `${a}${yy}`, `${a}${anio}`];
 }
 
 async function bajar(url, binario = false) {
@@ -125,6 +125,17 @@ function linksPdf(html, base) {
   return [...out];
 }
 const dormir = (ms) => new Promise((r) => setTimeout(r, ms));
+// los PDFs de la mediateca de WordPress del sitio (wp-json/wp/v2/media); [] si el sitio no es WordPress o no lo expone
+const _media = new Map();
+async function mediatecaWP(url) {
+  const base = new URL(url).origin; if (_media.has(base)) return _media.get(base);
+  let out = [];
+  try {
+    const r = await fetch(`${base}/wp-json/wp/v2/media?per_page=100&mime_type=application/pdf&orderby=date&order=desc`, { headers: UA, signal: AbortSignal.timeout(30000) });
+    if (r.ok) { const j = await r.json(); if (Array.isArray(j)) out = j.map((m) => m.source_url).filter(Boolean); }
+  } catch { /* no es WordPress */ }
+  _media.set(base, out); return out;
+}
 // "report" o "relatório" solos son demasiado amplios (São Paulo: "report-fidc", "relatorio-de-justificativa"): van con "contas" o "annual"
 const FINANCIERO = /balan|demonstra|financ|contas|bilanci|estados|cuentas|memoria|annual|izvje|account|jahresab|jaarversl|regnskab|årsrap|arsrap|bokslut|tilinp|relazione|r[ae]latori[oa]?[-_ ]?(e|de)?[-_ ]?contas/i;
 const NO_FINANCIERO = /parecer|\bato\b|ato-administrativo|edital|convoca|\bata\b|regulamento|estatuto|presupuesto|orçamento|orcamento|budget|preventivo/i;
@@ -184,14 +195,17 @@ async function main() {
     const enCarpeta = new Set(existsSync(resolve(ROOT, 'Clubes', carpeta)) ? readdirSync(resolve(ROOT, 'Clubes', carpeta)).map((f) => f.toLowerCase()) : []);
     // si la carpeta ya tiene un documento de esa temporada (con cualquier nombre: Chapecoense "demonstracoes-contabeis-2022.pdf"), no es
     // nuevo: está bajado y falta cargarlo, que es otro trabajo (node tools/estado.mjs)
-    if ([...enCarpeta].some((f) => /\.pdf$/.test(f) && fs.some((x) => f.includes(x.toLowerCase())))) { yaBajado.push({ id, nombre: c.n || CLUBS[id]?.displayName || id, anio }); continue; }
+    const dosAnios = (f) => !mmdd.startsWith('12') && f.includes(String(anio - 1)) && f.includes(String(anio)) && f.indexOf(String(anio - 1)) < f.lastIndexOf(String(anio));
+    if ([...enCarpeta].some((f) => /\.pdf$/.test(f) && (fs.some((x) => f.includes(x.toLowerCase())) || dosAnios(f)))) { yaBajado.push({ id, nombre: c.n || CLUBS[id]?.displayName || id, anio }); continue; }
     const fallas = []; const nuevos = [];
     for (const u of urls) {
       await dormir(1000);
       const p = await bajar(u);
       if (p.error) { fallas.push(`${u} (${p.error})`); continue; }
       if (/captcha|cf-challenge|are you a robot|smartcaptcha/i.test(p.html) || p.html.length < 2000) { fallas.push(`${u} (captcha o página vacía: se arma con JavaScript)`); continue; }
-      for (const l of linksPdf(p.html, p.final)) {
+      // además de los links de la página, la mediateca de WordPress del dominio (skill club-sourcing, 0.1: PDFs que ninguna página enlaza)
+      const media = await mediatecaWP(p.final);
+      for (const l of [...linksPdf(p.html, p.final), ...media]) {
         const txt = decodeURIComponent(l); if (!fs.some((f) => txt.includes(f))) continue;
         // que el archivo nombre los estados financieros, y no un acta, un dictamen o un edicto (São Paulo: "ato administrativo";
         // Chapecoense: "Parecer Conselho Fiscal")
@@ -205,12 +219,13 @@ async function main() {
     }
     if (nuevos.length) encontrados.push({ id, nombre, anio, carpeta, pdfs: [...new Set(nuevos)].slice(0, 5) });
     else if (fallas.length === urls.length) aMano.push({ id, nombre, anio, motivo: 'ninguna página se pudo leer', urls: fallas });
+    else noPublicado.push({ id, nombre, anio }); // la página se leyó y todavía no tiene el PDF de esa temporada
   }
 
   for (const e of encontrados) console.log(`NUEVO ${e.nombre} (${e.id}) ejercicio ${e.anio}: ${e.pdfs.join(' | ')}`);
   console.log(`\n${encontrados.length} clubes con un PDF nuevo; ${aMano.length} para revisar con el navegador; ${esperando.length} todavía en plazo (cierre + ${MESES_PUBLICACION} meses); ${yaBajado.length} ya tienen el PDF en su carpeta (falta cargarlo).`);
   for (const a of aMano) console.log(`  A MANO ${a.nombre} (${a.id}) ejercicio ${a.anio}: ${a.motivo}${a.urls.length ? ` — ${a.urls.join(' ; ')}` : ''}`);
-  if (noPublicado.length) console.log(`  EL REGISTRO TODAVÍA NO LO PUBLICÓ: ${noPublicado.map((y) => `${y.nombre} ${y.anio}`).join(', ')}`);
+  if (noPublicado.length) console.log(`  TODAVÍA NO PUBLICADO (se leyó la página o el registro): ${noPublicado.map((y) => `${y.nombre} ${y.anio}`).join(', ')}`);
   if (yaBajado.length) console.log(`  YA EN SU CARPETA, SIN CARGAR: ${yaBajado.map((y) => `${y.nombre} ${y.anio}`).join(', ')}`);
 
   if (ESCRIBIR) {
@@ -230,7 +245,7 @@ async function main() {
       lineas.push(`- Ejercicio ${e.anio} de ${e.nombre} — ${e.pdfs[0]} — encontrado por la tarea mensual el ${HOY}${bajados.length ? `; bajado a ${bajados.join(', ')}` : ' (no se pudo bajar: revisar el link)'}`);
       registro[e.id] = { anio: e.anio, pdfs: [...new Set([...(registro[e.id]?.anio === e.anio ? registro[e.id].pdfs : []), ...e.pdfs])], revisado: HOY };
     }
-    if (noPublicado.length) lineas.push(`- El registro todavía no lo publicó (se vuelve a mirar el mes que viene): ${noPublicado.map((y) => `${y.nombre} ${y.anio}`).join(', ')}`);
+    if (noPublicado.length) lineas.push(`- Revisados y todavía no publicados (se vuelve a mirar el mes que viene): ${noPublicado.map((y) => `${y.nombre} ${y.anio}`).join(', ')}`);
     if (yaBajado.length) lineas.push(`- Ya bajados y sin cargar (para el onboarding): ${yaBajado.map((y) => `${y.nombre} ${y.anio}`).join(', ')}`);
     for (const a of aMano) lineas.push(`- A revisar con el navegador: ${a.nombre}, ejercicio ${a.anio} — ${a.motivo}${a.urls.length ? ` (${a.urls.join(' ; ')})` : ''}`);
     escribirReadme(lineas);

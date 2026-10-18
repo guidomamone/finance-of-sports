@@ -6,6 +6,7 @@
 - **Liga / competencia**: Liga Portugal / Liga Portugal 2 (Portugal)
 - **Entidad legal**: Boavista Futebol Clube – Futebol SAD (`RCSAD`)
 - **Canal**: sitio oficial de la SAD/club, hallado con el CDX de Wayback del dominio completo y bajado con `web.archive.org/web/<ts>id_/`; ver `paises/Portugal.md`.
+- **Página del canal** (la mira la revisión mensual, `tools/ejercicios-nuevos.mjs`; agregada 2026-10-18): https://www.boavistafc.pt/
 
 ## Qué se bajó (sesión 2026-10-08)
 
