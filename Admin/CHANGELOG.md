@@ -15,6 +15,17 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 734 — Merges de ligas y pantallas: la Premier League y la cobertura de ligas en el tablero (2026-10-18)
+
+Los dos a mano: generados con main y regenerados; ASSET_V 1288, P0 0 / P1 0. Después, fast-forward de pantallas para el 282 en Ligas.
+
+- To-do 295 (worktree nuevo `fos-ligas`): las cuentas 2024-25 de la Premier League (Deloitte, sin salvedades), transcriptas en `Ligas/` y
+  con su línea de auditoría (`ligaId` + `entidad`); `tools/auditoria.mjs` acepta citas de `Ligas/*.md`.
+- Tablero del pipeline: la cobertura de las ligas (completas, 50 % o más, menos del 50 %, con el % de cada una), en `tools/tablero.mjs`.
+- Herramientas de Guido (fuera del repo): auto como modo por defecto, tres plugins sin usar apagados, línea de estado con el % de
+  contexto y el costo, y una tarea programada semanal con las novedades de Claude Code.
+- TODO: el 295 con lo hecho y el orden que sigue; el 298 suma la o (versiones "-correction") y l a p.
+
 ## Versión 733 — Merge de datos-sourcing: la revisión mensual de ejercicios nuevos (2026-10-18)
 
 - To-do 252 (Guido: mensual): `tools/ejercicios-nuevos.mjs` (gratis) revisa, por club cargado, si el ejercicio que sigue ya debería estar

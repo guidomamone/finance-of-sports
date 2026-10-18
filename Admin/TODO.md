@@ -46,7 +46,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 232: mejoras de script que dejó Grecia
 * 279: la tool que duplicaba claves en club-leagues/ru.js
 * 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar
-* 298: mejoras de script de Estonia y Bélgica (primero la a, el cierre falso)
+* 298: mejoras de script de Estonia y Bélgica (a y b1 hechas; los años belgas de los lotes 91-92 esperan b y o)
 * 301: gasto.mjs --json se corta en un pipe
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
@@ -244,10 +244,10 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    "alcance" de una revisión limitada, procedimientos acordados, propósito especial o cuentas del grupo). Falta: (a) sourcing de los 88
    informes del auditor que no están en ningún PDF nuestro (`node tools/auditoria.mjs --pendientes`, "FALTA EN EL PDF"); (f) que el pipeline
    exija la línea al dar de alta un club (fos-pipeline); (g) en Ligas, la entidad organizadora (295).
-295. BALANCES DE LAS ENTIDADES QUE ORGANIZAN LAS LIGAS (sale del 282; aclaración de Guido, 2026-10-18). En Ligas, la auditoría que se
-   muestra es la del balance propio de la entidad organizadora (AFA, LFP, Premier League, Lega Serie A…). No hay ninguno en el proyecto
-   (las carpetas `Clubes/*/_…` son informes agregados de liga). Sourcing de esos balances con su informe del auditor; después, su línea en
-   el registro de auditoría (`ligaId` + `entidad`, `data/auditoria/_ligas.js`).
+295. BALANCES DE LAS ENTIDADES QUE ORGANIZAN LAS LIGAS (fos-ligas; aclaración de Guido, 2026-10-18). Hecho: Premier League 2024-25
+   (Deloitte, sin salvedades) en `Ligas/` y en `data/auditoria/_ligas.js`. Sigue, en este orden: LaLiga, Lega Serie A, J.League, Liga
+   Portugal, AFA, CBF, EFL y el resto. DFL: el Konzernabschluss pide login en el Unternehmensregister (gestión de Guido) y el sitio tiene
+   captcha; probar antes el Bundesanzeiger. AUF (Uruguay): en espera, el sitio no tiene liga uruguaya (Guido).
 283. VÅLERENGA Y AALESUND: SUMAR EL AS Y EL FLI EN UN SOLO AÑO (pedido de Guido, 2026-10-17). El AS tiene los ingresos comerciales y el
    FLI los sueldos, que el AS le paga como transferencia (Vålerenga Elite 2023: 85,4 M de sueldos; el AS le transfiere 87,5 M); ninguno
    consolida. Sumar los dos documentos sin contar dos veces la transferencia, con una nota en Finanzas que explique la suma.
@@ -298,7 +298,9 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    nunca se marca `sin-tablas` (OH Leuven 2022, Llaneros 2022; puede frenar buena parte de los 319). f) periodo.mjs no saca el cierre NBB
    cuando las fechas vienen en celdas (9 belgas y 1 estonio). g) la cola admite una sola categoría por fila: un "partir según la nota" con
    la suma exacta como compuerta. h) un `no_es_rubro` puede dejar a un padre sin hijos: que la cola avise. i) alta-club.mjs: un país nuevo
-   frena hasta agregar su fila a PAISES: que la proponga. k) alta-club.mjs / cargar-lote.mjs escriben la liga del alta en null aunque
+   frena hasta agregar su fila a PAISES: que la proponga. o) dos versiones "-correction" del mismo ejercicio entran juntas al lote (Bélgica): que
+   entre una sola. l) a p) más casos de onboarding (reportType por año de un club existente, perímetro de la carga, año vecino con
+   perímetros distintos, ceros reales y perfil que se repreguntan): el detalle, en el cierre de onboarding. k) alta-club.mjs / cargar-lote.mjs escriben la liga del alta en null aunque
    `altas-revision.jsonl` traiga las ligas verificadas (las 17 altas de los lotes 89-90): que el alta las tome de la revisión.
 300. AUDITORÍA PROGRAMADA (pedido de Guido, 2026-10-18). Una tarea programada semanal en la Mac de Guido que corra `node tools/audit.js` y
    `auditAll()` (preview con `?audit=1`), actualice el dashboard de usuarios y visitas (tools/supabase/stats.mjs y tools/cloudflare-visitas.mjs,

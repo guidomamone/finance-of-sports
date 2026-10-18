@@ -163,6 +163,8 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   50 clubes y 9 grupos multiclub (to-do 294). Donde el registro los tiene, la tarjeta muestra también los ingresos de la otra entidad del club.
 - Para periodistas: la tarjeta "Citar y descargar" de Finanzas (cita sugerida de lo que se ve, copiar la cita o el link, CSV por rubro y
   ejercicio con moneda, tipo de cambio y documento; sin dato va vacío, nunca 0) y la página pública `metodologia.html` (link en el pie).
+- Balances propios de las entidades que organizan las ligas: en `Ligas/` (hoy la Premier League 2024-25), con su auditoría en
+  `data/auditoria/_ligas.js` (to-do 295).
 - Quién auditó cada balance: `Admin/registros/auditoria.jsonl` (con citas) y `tools/auditoria.mjs`, que genera `data/auditoria/` (todos los
   balances; to-do 282). En Finanzas, la tarjeta "Quién auditó estos números"; un club-año sin línea dice "Todavía no lo
   revisamos", no "sin informe", y sin ningún dato del club la tarjeta se esconde; una revisión que no es auditoría plena dice
