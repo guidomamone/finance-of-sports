@@ -171,7 +171,7 @@ EE (9)
   Narva Trans          6 ejercicios (2019, 2020, 2022, 2023, 2024, 2025), balance, EUR, sin deuda/caja
   Nõmme Kalju          7 ejercicios (2019 a 2025), balance, EUR, sin deuda/caja
   Paide Linnameeskond  7 ejercicios (2019 a 2025), balance, EUR, sin deuda/caja
-  Tallinna Kalev       7 ejercicios (2019 a 2025), balance, EUR
+  Tallinna Kalev       7 ejercicios (2019 a 2025), balance, EUR, sin deuda/caja
   Tartu Tammeka        7 ejercicios (2019 a 2025), balance, EUR, sin deuda/caja
 
 ESPAÑA (19)
