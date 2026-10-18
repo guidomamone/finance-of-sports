@@ -87,3 +87,11 @@
 ### Qué deja de ser cierto en ESTADO
 
 - El registro de entidades tiene 50 clubes con estructura (no 47).
+
+## 281 (en curso al cortar por límite de uso)
+
+- Hecho: Vizela (asociación Futebol Clube de Vizela, 20 % de la SAD; cuentas 2023 y 2024 transcriptas de escaneo; ingresos 2023 y 2024)
+  y Belenenses 2025 (cfb-demonstracoes-financeiras-em-30-junho-25.md, chequeos 0 P1/P2 y 1000 de 1000 números; ingresos 3.549.835 €).
+- Queda: Leiria, Braga (2 tramos), Marítimo (5), Chaves, Académica y Porto (3). Texto e imágenes por página en el scratchpad de la sesión
+  (t281/<club>-<año>/), instrucciones en t281/INSTRUCCIONES.md. Subagentes de la primera tanda pueden haber dejado .md sin chequear:
+  correr check-transcripcion-fidelidad.js y comparar-numeros.mjs antes de usarlos; Braga y Marítimo 2021 van en parte1.md + parte2.md.

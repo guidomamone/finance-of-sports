@@ -566,6 +566,17 @@ Object.assign(window.CLUB_ENTIDADES, {
     "fuente": {
      "md": "Clubes/Portugal/Belenenses/Belenenses-SDUQ-Relatorio-e-Contas-2023-2024.md",
      "linea": 44
+    },
+    "ingresos": {
+     "2025": {
+      "total": 3.55,
+      "moneda": "EUR",
+      "cierre": "2025-06-30",
+      "fuente": {
+       "md": "Clubes/Portugal/Belenenses/cfb-demonstracoes-financeiras-em-30-junho-25.md",
+       "linea": 140
+      }
+     }
     }
    }
   },
