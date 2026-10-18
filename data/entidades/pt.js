@@ -5496,6 +5496,39 @@ Object.assign(window.CLUB_ENTIDADES, {
    }
   ],
   "entidades": {
+   "fc-vizela-clube": {
+    "nombre": "Futebol Clube de Vizela",
+    "forma": "asociacion",
+    "pais": "PT",
+    "que": {
+     "es": "El club fundador, accionista de la SAD",
+     "en": "The founding club, a shareholder of the SAD"
+    },
+    "fuente": {
+     "md": "Clubes/Portugal/Vizela/Relatorio-e-Contas-Exercicio-2024.md",
+     "linea": 61
+    },
+    "ingresos": {
+     "2023": {
+      "total": 0.281,
+      "moneda": "EUR",
+      "cierre": "2023-12-31",
+      "fuente": {
+       "md": "Clubes/Portugal/Vizela/Relatorio-e-Contas-Exercicio-2023.md",
+       "linea": 67
+      }
+     },
+     "2024": {
+      "total": 0.308,
+      "moneda": "EUR",
+      "cierre": "2024-12-31",
+      "fuente": {
+       "md": "Clubes/Portugal/Vizela/Relatorio-e-Contas-Exercicio-2024.md",
+       "linea": 71
+      }
+     }
+    }
+   },
    "vizela-sad": {
     "nombre": "Futebol Clube de Vizela Futebol SAD",
     "forma": "sociedad",
@@ -5507,6 +5540,43 @@ Object.assign(window.CLUB_ENTIDADES, {
     }
    }
   },
-  "relaciones": []
+  "relaciones": [
+   {
+    "de": "fc-vizela-clube",
+    "a": "vizela-sad",
+    "rel": "participa",
+    "pct": 20,
+    "desde": 2023,
+    "hasta": 2023,
+    "fuente": {
+     "md": "Clubes/Portugal/Vizela/Relatorio-e-Contas-FCV-2022-23_Aprovadas.md",
+     "linea": 1058
+    }
+   },
+   {
+    "de": "fc-vizela-clube",
+    "a": "vizela-sad",
+    "rel": "participa",
+    "pct": 20,
+    "desde": 2024,
+    "hasta": 2024,
+    "fuente": {
+     "md": "Clubes/Portugal/Vizela/Relatorio-Gestao-e-contas-FCV-2023-24-Ass.md",
+     "linea": 1082
+    }
+   },
+   {
+    "de": "fc-vizela-clube",
+    "a": "vizela-sad",
+    "rel": "participa",
+    "pct": 20,
+    "desde": 2025,
+    "hasta": 2025,
+    "fuente": {
+     "md": "Clubes/Portugal/Vizela/Relatorio-e-Contas-2024-25-FCV.md",
+     "linea": 1008
+    }
+   }
+  ]
  }
 });
