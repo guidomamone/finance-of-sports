@@ -23,3 +23,5 @@ Lo anterior al merge del 2026-10-18 ya pasó a TODO y CHANGELOG (copia en `Admin
 ### Qué deja de ser cierto en ESTADO
 
 - "Estadio, capacidad, sponsor…": la página del club ya es la tercera fuente para sponsor y marca (`--camisetas`), escrita.
+
+## Después del merge de las camisetas (2026-10-18)

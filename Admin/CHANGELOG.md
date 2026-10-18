@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 750 — Camisetas de la página del club, escritas (2026-10-18)
+
+Merge de datos 2, sin conflictos; ASSET_V 1309, P0 0 / P1 0.
+
+- To-do 273: `estadio-sponsor.mjs --escribir` con la tabla de camisetas de la página del club (ok de Guido a la muestra): sponsor o marca
+  en 46 ejercicios, 73 entradas con fuente propia en `data/sponsors.js` (sponsor 89 %, marca 93 % de 1001 ejercicios).
+- To-do 252: el Unternehmensregister y el Bundesanzeiger no respondieron; Gladbach y Stuttgart siguen a revisar.
+
 ## Versión 749 — Merge de pipeline 2: el estado belga por códigos NBB (2026-10-18)
 
 Sin conflictos; P0 0 / P1 0.

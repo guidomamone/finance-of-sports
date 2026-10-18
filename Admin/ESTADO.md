@@ -129,7 +129,8 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 - Estadio, capacidad, sponsor de camiseta y marca técnica de cada club y ejercicio: `data/contexto/<iso>.js` (`tools/estadio-sponsor.mjs`,
   de Wikipedia con el permalink de la revisión; lo manual en `tools/contexto-manual.json` con fuente). `cargar.mjs` no escribe un año
   nuevo sin estadio y sponsor (`compuertaContexto()`; también `bfo-rusia.mjs`). Donde la temporada en inglés no lo trae, el estadio y la capacidad salen de la Wikipedia del país
-  (`--local`, con `fuenteLocal`). El índice de sponsors y marcas: `data/sponsors.js` (y uno chico para el buscador, `data/sponsors-indice.js`).
+  (`--local`, con `fuenteLocal`); el sponsor y la marca que faltan, de la tabla de camisetas de la página del club (`--camisetas`, fuente en
+  `club`, caché `_clubes.json`). El índice de sponsors y marcas: `data/sponsors.js` (y uno chico para el buscador, `data/sponsors-indice.js`).
   En Finanzas, la tarjeta "Estadio y camiseta"; cada sponsor y marca tiene su página (`?tab=sponsor&sponsor=…`, con los equipos de hoy y
   la línea de tiempo), que también se encuentra en el buscador ("Sponsors y marcas").
 - El plan para Guido (solo lo pendiente, corto) vive en el panel Plan de la app; su copia durable es el bloque ORDEN de `Admin/TODO.md`
