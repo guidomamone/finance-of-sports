@@ -61,7 +61,7 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
   ejercicios: Krylia Sovetov 2021-2025 y Akron 2024-2025 (Solidarnost Samara Arena, 44.918; Gran Enciclopedia Rusa y Vedomosti), Dynamo
   Makhachkala 2024-2025 (Anzhi-Arena, sin capacidad: championat dice 28.000 y sport-express 30.000), Sochi 2024 (Fisht) y Spartak 2022
   (Otkritie Bank Arena); Akron 2021-2023 corregido a "Kristall (Zhigulyovsk)" (la tabla daba la ciudad; Vedomosti). championat.com no sirve como fuente por temporada (muestra el nombre de hoy en temporadas viejas). Estadio: 86%
-  del total; Rusia, 64 de 66. ASSET_V 1260.
+  del total; Rusia, 64 de 66. ASSET_V 1261. Un dato manual guarda su fuente aparte (`fuenteManual` y `manual`: los campos que puso) y la de Wikipedia sigue en `fuente`.
 
 ## Qué queda (TODO)
 
