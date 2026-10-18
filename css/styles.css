@@ -1063,3 +1063,31 @@
     /* Los dos cards se apilan. */
     .cd-wrap{grid-template-columns:minmax(0,1fr);}
   }
+
+  /* ===== Estructura del club (tarjeta #finEstructura, js/finanzas-estructura.js) ===== */
+  .estr-frase{font-size:15px;line-height:1.55;max-width:820px;margin:4px 0 16px;}
+  .estr-h3{margin:0 0 8px;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);}
+  .estr-verde{color:var(--green);}
+  .estr-ambar{color:#8a4b00;margin-top:16px;}
+  .estr-cols{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start;}
+  .estr-col{flex:1 1 360px;min-width:0;}
+  .estr-cadena{display:flex;flex-direction:column;gap:18px;}
+  .estr-caja{position:relative;border:1px solid var(--border);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:3px;background:#fff;}
+  .estr-caja + .estr-caja::before{content:"";position:absolute;left:50%;top:-19px;width:2px;height:18px;background:#c9ced8;}
+  .estr-caja.estr-yo{border:2px solid var(--azul);background:#eef1f6;}
+  .estr-rol{font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);}
+  .estr-nombre{font-size:15px;font-weight:700;color:var(--azul);}
+  .estr-det{font-size:13px;color:#45474d;line-height:1.45;}
+  .estr-ver{font-size:12px;color:var(--muted);}
+  .estr-lista{list-style:none;margin:0;padding:0;border:1px solid var(--border);border-radius:12px;}
+  .estr-lista li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;padding:10px 14px;}
+  .estr-lista li + li{border-top:1px solid #f0f0ee;}
+  .estr-li-txt{display:flex;flex-direction:column;gap:2px;min-width:0;}
+  .estr-li-txt .estr-nombre{font-size:14px;color:var(--text);}
+  .estr-li-der{font-size:13px;color:#45474d;white-space:nowrap;}
+  .estr-duenos{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px;}
+  .estr-dueno{min-width:92px;padding:8px 10px;border-radius:10px;border:1px solid var(--border);display:flex;flex-direction:column;gap:2px;font-size:12px;}
+  .estr-dueno strong{font-size:13px;color:var(--azul);}
+  .estr-dueno.estr-yo{border:2px solid var(--azul);background:#eef1f6;}
+  .estr-nota{margin:18px 0 0;background:#eef1f6;border-radius:12px;padding:12px 16px;font-size:14px;line-height:1.5;color:var(--azul);}
+  #finIndice a[hidden]{display:none;}

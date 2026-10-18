@@ -130,6 +130,7 @@
     renderLigaSimCard(isGestion);
     if(window.FIN_MULTI) FIN_ANIOS.render(currentClub);
     if(window.FIN_MULTI && window.FIN_GESTION) FIN_GESTION.render(currentClub);
+    if(window.FIN_ESTRUCTURA) FIN_ESTRUCTURA.render(currentClub, FIN_SEL.years());
     if(window.FIN_REAL_UI) FIN_REAL_UI.render(currentClub, FIN_SEL.years());
     // Guardado en Mi Cuenta: cada vez que el club/año/gestión se asienta se avisa a js/cuenta.js, que guarda solo (no es un botón).
     // Sin sesión, o en la portada, CUENTA.notifyStateChange no hace nada.

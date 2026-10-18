@@ -20,6 +20,7 @@
 //
 //   Cita de un documento: {"md":"Clubes/…/x.md","linea":3043,"texto":"The immediate parent company is Blueco 22 Midco Limited"}
 //   Cita externa (lo que el balance no dice, p. ej. los otros clubes del dueño): {"url":"https://…","fecha":"2026-10-18","texto":"…"}
+//   `que` ({es,en}) en una entidad: a qué se dedica, según el documento citado.
 //   `nota` ({es,en}) solo donde las frases fijas de la pantalla no alcanzan (p. ej. dos entidades sumadas, to-do 283).
 //
 // CHEQUEOS (sale con código 1 si alguno falla):
@@ -31,7 +32,8 @@
 //
 // QUÉ GENERA: `data/entidades/<país>.js` (window.CLUB_ENTIDADES[clubId] = { cargas, entidades, relaciones }, solo lo que toca a ese club:
 // la cadena hacia arriba de cada entidad cargada, sus controladas y las vinculadas), `data/entidades/_grupos.js` (window.GRUPOS_INDICE =
-// [{ id, nombre, alias, clubIds }], chico y eager: lo lee el buscador de js/selector.js) y `data/entidades/_grupos-detalle.js` (window.GRUPOS[id] =
+// [{ id, nombre, alias, clubIds, clubes }], chico y eager: lo leen el buscador de js/selector.js y la tarjeta Estructura de Finanzas, con
+// window.ENTIDADES_PAISES, los países que tienen archivo) y `data/entidades/_grupos-detalle.js` (window.GRUPOS[id] =
 // { nombre, alias, clubes:[{ clubId|null, nombre, control, pct, desde, hasta }] }). Las citas de documento se publican como
 // { md, linea } (la transcripción se publica); las externas, como { url }.
 //
@@ -173,7 +175,7 @@ for (const clubId of [...new Set(cargas.map(c => c.clubId))].sort()) {
   porClub[clubId] = {
     pais: clubs[clubId].country.toLowerCase(),
     cargas: cs.map(c => pub(c, ['anio', 'entidad', 'perimetro', 'nota'])),
-    entidades: Object.fromEntries([...ids].sort().map(id => [id, pub(entidades.get(id), ['nombre', 'forma', 'pais', 'clubId', 'grupo'])])),
+    entidades: Object.fromEntries([...ids].sort().map(id => [id, pub(entidades.get(id), ['nombre', 'forma', 'pais', 'clubId', 'grupo', 'que'])])),
     relaciones: [...rels].sort((a, b) => a._n - b._n).map(relPub),
   };
 }
@@ -204,8 +206,9 @@ for (const p of paises) {
   const delPais = Object.fromEntries(Object.entries(porClub).filter(([, c]) => c.pais === p).map(([id, { pais, ...resto }]) => [id, resto]));
   archivos[`${p}.js`] = `${CABECERA}window.CLUB_ENTIDADES = window.CLUB_ENTIDADES || {};\nObject.assign(window.CLUB_ENTIDADES, ${JSON.stringify(delPais, null, 1)});\n`;
 }
-const indice = Object.entries(grupos).map(([id, g]) => ({ id, nombre: g.nombre, alias: g.alias, clubIds: [...new Set(g.clubes.map(c => c.clubId).filter(Boolean))] }));
-archivos['_grupos.js'] = `${CABECERA}window.GRUPOS_INDICE = ${JSON.stringify(indice)};\n`;
+const indice = Object.entries(grupos).map(([id, g]) => ({ id, nombre: g.nombre, alias: g.alias, clubIds: [...new Set(g.clubes.map(c => c.clubId).filter(Boolean))],
+  clubes: g.clubes.map(({ clubId, nombre, control, desde, hasta }) => ({ clubId, nombre, control, desde, hasta })) }));
+archivos['_grupos.js'] = `${CABECERA}window.GRUPOS_INDICE = ${JSON.stringify(indice)};\nwindow.ENTIDADES_PAISES = ${JSON.stringify(paises)};\n`;
 archivos['_grupos-detalle.js'] = `${CABECERA}window.GRUPOS = ${JSON.stringify(grupos, null, 1)};\n`;
 
 if (PRINT) {

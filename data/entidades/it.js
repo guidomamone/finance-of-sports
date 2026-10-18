@@ -37,6 +37,10 @@ Object.assign(window.CLUB_ENTIDADES, {
     "nombre": "Inter Brand S.r.l.",
     "forma": "sociedad",
     "pais": "IT",
+    "que": {
+     "es": "Desde 2015, actividad mínima: cobra créditos que le quedaron",
+     "en": "Since 2015, minimal activity: collects its remaining receivables"
+    },
     "fuente": {
      "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2024-25.md",
      "linea": 1246
@@ -46,6 +50,10 @@ Object.assign(window.CLUB_ENTIDADES, {
     "nombre": "Inter Media and Communication S.p.A.",
     "forma": "sociedad",
     "pais": "IT",
+    "que": {
+     "es": "Recibió los negocios de Inter Brand en 2014; en junio de 2025 emitió bonos por 350 M €",
+     "en": "Took over Inter Brand's business in 2014; issued €350m of bonds in June 2025"
+    },
     "fuente": {
      "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2024-25.md",
      "linea": 1245
@@ -55,6 +63,10 @@ Object.assign(window.CLUB_ENTIDADES, {
     "nombre": "M-I Stadio S.r.l.",
     "forma": "sociedad",
     "pais": "IT",
+    "que": {
+     "es": "Gestiona el estadio Meazza",
+     "en": "Runs the Meazza stadium"
+    },
     "fuente": {
      "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2024-25.md",
      "linea": 1248
