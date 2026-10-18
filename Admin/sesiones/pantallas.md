@@ -54,3 +54,50 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
   falta de pantallas, después de mergear finanzas: (1) 'grupo' en `URL_CLAVES` / `estadoActual()` / `aplicarURL()`; (2) 'grupo' en
   `TABS_SIN_CLUB` de `js/principal.js` (si no, abrir un grupo sin club elegido rebota a Inicio); (3) el resultado "Grupo" del buscador
   con `GRUPOS_INDICE`, que llama a `GRUPO_VIEW.abrir(id)`. Al cambiar el idioma, `GRUPO_VIEW.refresh()` redibuja.
+
+## Después del merge del 2026-10-18
+
+### Qué cambió (para CHANGELOG)
+
+- Grupo multiclub enganchado (contrato con finanzas): `?tab=grupo&grupo=<id>` en la URL (`URL_CLAVES`, `estadoActual()` y
+  `aplicarURL()` de `js/principal.js`; un grupo que no está en `GRUPOS_INDICE` se ignora), 'grupo' en `TABS_SIN_CLUB` (sin club ya no
+  rebota a Inicio) y el resultado "Grupos multiclub" del buscador (`renderBusqueda()` en `js/selector.js`, por nombre o alias; no aparece
+  en Comparar), que cierra el panel y llama a `GRUPO_VIEW.abrir(id)`. Probado: el link abre BlueCo sin club, el buscador lo encuentra
+  con "blue", y "atrás" vuelve. ASSET_V 1263.
+
+### Qué queda (para TODO)
+
+- To-do 273 (aviso de fos-datos, 2026-10-18): el estadio y el sponsor de cada club y ejercicio tienen que verse en Finanzas (Guido: "tiene
+  que estar en finanzas"; link de salto, bloque o fila de la ficha, a decidir con él). Datos por club y temporada: estadio, capacidad,
+  sponsor de camiseta (frente) y marca técnica, con el link a la versión exacta de la página de Wikipedia de la temporada; sin monto. Los
+  junta fos-datos y todavía no existen: no armar la pantalla hasta que fos-datos avise el formato y el archivo.
+- To-do 282 (pedido de Guido vía fos-finanzas, 2026-10-18): quién auditó cada balance y qué dice el informe, en Finanzas "y en liga si la
+  liga fue la auditada" (preguntarle a Guido qué quiere decir). Dato de finanzas, en piloto con 20 balances, sin commit: `data/auditoria/
+  _paises.js` (`window.AUDITORIA_PAISES`) y `data/auditoria/<país>.js` (`window.CLUB_AUDITORIA[clubId][anio] = { auditor: { nombre, tipo:
+  'firma'|'persona'|'organismo', legal? } | null, dictamen: 'sin_salvedades'|'con_salvedades'|'adverso'|'abstencion'|'sin_informe',
+  continuidad: bool, fuente: { md, linea } | null }`). Link "ver en el balance" a `fuente.md`, como en Estructura. Vocabulario
+  provisorio. Mockup antes de codear; esperar el hash de finanzas.
+  Aclaración de Guido: "liga" es el balance propio de la entidad que organiza la liga (AFA, LFP) y quién lo auditó, no marcar los
+  clubes. El sitio no tiene esas entidades; se le propuso a finanzas `window.LIGA_AUDITORIA[leagueId][anio] = { entidad, auditor,
+  dictamen, continuidad, fuente }`.
+  El dato de clubes está en la rama finanzas (commit 6e88784), llega a main con el próximo merge de finanzas: 19 balances. Para probar:
+  arsenal-gb 2024 (Deloitte, sin salvedades), dinamozagreb-hr 2024 (con salvedades), vitoriaguimaraes-pt 2022 (BDO, continuidad true),
+  almagro-ar 2018 (auditor persona), akhmatgrozny-ru 2022 (sin_informe). Un club-año que no está en CLUB_AUDITORIA es "no sabemos", no
+  "sin informe".
+
+### Qué cambió, 271 (para CHANGELOG)
+
+- To-do 271: un link copiado abre lo mismo que se estaba viendo. Se suman a la URL, solo cuando no son los de siempre: `moneda` (la del
+  club, si no es USD), `real=1` (ajustado por inflación, en Finanzas y en Comparar) y `formato=club` (Finanzas); y los dos lados de
+  Comparar, `a` y `b` (`ladoAURL()` / `ladoDeURL()` en `js/principal.js`): `c.boca:2024,river` (clubes; sin año = el más reciente),
+  `l.es-laliga.2025` (liga), bloques separados por `~`, `.s` / `.p` solo si el agregado no es el de siempre. Un club, liga o moneda
+  que el sitio no tiene se ignora. Sin la clave, el valor de siempre ("atrás" desde un link en pesos vuelve a USD). `js/selector.js`
+  expone `lados()`, `real()`, `setLados()` y avisa cada cambio por `onCambio` (`CLUB_SELECTOR.init`). Mi Cuenta sigue guardando su
+  propio formato. Probado: Boca en ARS y formato del club, `real=1`, Boca vs River 2024 con inflación, LaLiga vs dos clubes, ida y
+  vuelta, y links con datos inexistentes. ASSET_V 1264.
+- Borrar el 271.
+
+### Qué deja de ser cierto en ESTADO
+
+- "El estado va en la URL (…); la moneda, la inflación, el formato y Comparar todavía no (to-do 271)": ya van (`moneda`, `real`,
+  `formato`, `a`, `b`), y el grupo multiclub (`?tab=grupo&grupo=…`).
