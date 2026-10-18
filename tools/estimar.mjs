@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // ============================================================================
-// tools/estimar.mjs — MODELO QUE ESTIMA EL INGRESO DE UN CLUB-AÑO SIN BALANCE (to-do 270). Por ahora SOLO MIDE: no escribe nada.
+// tools/estimar.mjs — MODELO QUE ESTIMA EL INGRESO DE UN CLUB-AÑO SIN BALANCE (to-do 270). Mide (--medir) y escribe data/estimados/.
 //
 // POR QUÉ (pedido de Guido, 2026-10-17). Ligas con 3 clubes cargados de 20 no dicen cuánto mueve la liga. Una estimación puede llenar
 // el hueco, pero solo si su error está medido contra años reales y se muestra aparte, rotulada "estimado". Regla: si el modelo no le
@@ -165,9 +165,12 @@ const pct = (errs) => {
 };
 
 // ---------------------------------------------------------------------------- estimaciones publicables
-// SOLO el caso "falta un año de un club que tenemos", con la INTERPOLACIÓN SIMPLE entre sus años reales (no la regresión, que empata con
-// ella), y solo a 2 años o menos de un balance real (más lejos no está medido). El de club nuevo (50% de error con la posición) queda
-// APAGADO hasta tener más datos (Guido, 2026-10-18). El año es el del EJERCICIO, el mismo de data/rankings/: así el día que se
+// Dos casos. (1) "Falta un año de un club que tenemos", a 2 años o menos de un balance real: la INTERPOLACIÓN SIMPLE entre sus años
+// reales (la regresión empata con ella). (2) Todo otro club de la lista de la liga sin balance ese año (club que nunca cargamos, o uno
+// cargado pero a más de 2 años): la regresión sin historia (`caso: "nuevo"`: mediana de la liga-año, división y posición en la tabla),
+// con ~50% de error medido. Prendido por Guido (2026-10-18): en Ligas todo club sin balance figura como estimado. Un club que no está en
+// el sitio va por su nombre (`n`, sin `id`) y su ejercicio es la temporada (cierre a mitad de año, el de casi todos los clubes de liga
+// partida). El año es el del EJERCICIO, el mismo de data/rankings/: así el día que se
 // carga el real el choque se ve directo. LO REAL GANA: nunca se escribe un estimado para un club-año cargado (data/club-index.js), y
 // como cargar.mjs vuelve a correr esto después de cada carga, el estimado de un año que se acaba de cargar desaparece solo.
 // INTERRUPTOR: mientras data/estimados/ no exista, nada se publica y --check pasa. Se prende con --escribir (decisión de Guido).
@@ -194,32 +197,55 @@ function estimaciones() {
     errs[otros.some((o) => o.anio < r.anio) && otros.some((o) => o.anio > r.anio) ? 'entre' : 'afuera'].push(r.y - i);
   }
   const banda = Object.fromEntries(Object.entries(errs).map(([k, e]) => [k, { lo: cuantil(e, 0.1), hi: cuantil(e, 0.9), error: Math.round(mediana(e.map((x) => Math.abs(Math.exp(-x) - 1))) * 100), n: e.length }]));
+  const nuevo = modeloNuevo(rows, ix);
   const out = {}; const r3 = (v) => Math.round(v * 1000) / 1000;
   for (const [liga, ys] of Object.entries(g.window.LEAGUE_GAPS || {})) for (const [S, v] of Object.entries(ys)) {
     if (v.reciente) continue;
     const partida = /[–-]\d{2,4}\b/.test(paginas[`${liga}|${S}`] || '');
     for (const f of v.faltan) {
-      if (!f.id || !CLUBS[f.id]) continue;
-      const mes = Number((CLUBS[f.id].fiscalYearStart || '07-01').slice(0, 2)); const cierreMes = mes === 1 ? 12 : mes - 1;
+      const enSitio = !!(f.id && CLUBS[f.id]);
+      const mes = enSitio ? Number((CLUBS[f.id].fiscalYearStart || '07-01').slice(0, 2)) : 7; const cierreMes = mes === 1 ? 12 : mes - 1;
       const anio = partida && cierreMes >= 9 ? +S - 1 : +S; // la temporada que termina en S -> el ejercicio (inverso de faltantes-liga)
-      if ((CI[f.id]?.yrs || []).some(([y]) => y === anio)) continue; // lo real gana
-      const propios = ix.porClub.get(f.id) || []; if (!propios.length) continue;
-      const dist = Math.min(...propios.map((o) => Math.abs(o.anio - anio))); if (dist > 2) continue;
-      const t = { id: f.id, liga, anio, pais: liga.slice(0, 2), tier: Math.min(3, lc.window.LEAGUES[liga]?.tier || 1) };
-      const p = I(ix, t, vacio); if (p == null) continue;
+      if (enSitio && (CI[f.id]?.yrs || []).some(([y]) => y === anio)) continue; // lo real gana
       const nom = (x) => r3(Math.exp(x) * D[Math.min(anio, ultimo)] / D[ultimo]);
+      const tier = Math.min(3, lc.window.LEAGUES[liga]?.tier || 1);
+      const propios = enSitio ? (ix.porClub.get(f.id) || []) : [];
+      if (!propios.length || Math.min(...propios.map((o) => Math.abs(o.anio - anio))) > 2) {
+        // club nuevo: la regresión sin historia. M sin el propio club; q de la tabla de la temporada.
+        const t = { id: enSitio ? f.id : '#' + f.n, liga, anio, pais: liga.slice(0, 2), tier };
+        const m = M(ix, t, vacio); if (m == null) continue;
+        const q = CON_POS ? posicion(t.id, liga, anio, +S) : null;
+        const p = predecir(nuevo.w, vector(m, null, null, tier, q)); const b = nuevo.banda;
+        ((out[liga] ??= {})[anio] ??= []).push({ ...(enSitio ? { id: f.id } : { n: f.n }), revenue: nom(p), lo: nom(p + b.lo), hi: nom(p + b.hi), caso: 'nuevo', error: b.error, de: [] });
+        continue;
+      }
+      const t = { id: f.id, liga, anio, pais: liga.slice(0, 2), tier };
+      const p = I(ix, t, vacio); if (p == null) continue;
       const antes = propios.filter((o) => o.anio < anio).sort((a, b) => b.anio - a.anio)[0], despues = propios.filter((o) => o.anio > anio).sort((a, b) => a.anio - b.anio)[0];
       const caso = antes && despues ? 'entre' : 'afuera'; const b = banda[caso];
       // `de`: los ejercicios reales de los que sale (para el "por qué" en pantalla)
       ((out[liga] ??= {})[anio] ??= []).push({ id: f.id, revenue: nom(p), lo: nom(p + b.lo), hi: nom(p + b.hi), caso, error: b.error, de: [antes?.anio, despues?.anio].filter(Boolean) });
     }
   }
-  return { out, CI, banda };
+  return { out, CI, banda: { ...banda, nuevo: nuevo.banda } };
+}
+// La regresión sin historia (club nuevo), ajustada con todos los club-años reales. Su error y su rango del 80% salen de una validación
+// por club en 10 grupos (cada grupo de clubes ENTEROS afuera, variables recalculadas sin ellos): lo mismo que mide --medir por club
+// (uno por vez), en 10 ajustes en vez de uno por club, para que --check siga siendo rápido.
+function modeloNuevo(rows, ix) {
+  const filas = (fuera) => { const X = [], Y = []; for (const o of rows) { if (fuera.has(o.id)) continue; const m = M(ix, o, fuera); if (m == null) continue; X.push(vector(m, null, null, o.tier, o.q)); Y.push(o.y); } return { X, Y }; };
+  const ids = [...new Set(rows.map((r) => r.id))].sort(); const errs = [];
+  for (let k = 0; k < 10; k++) {
+    const fuera = new Set(ids.filter((_, i) => i % 10 === k)); const { X, Y } = filas(fuera); const w = ajustar(X, Y);
+    for (const t of rows) { if (!fuera.has(t.id)) continue; const m = M(ix, t, fuera); if (m == null) continue; errs.push(t.y - predecir(w, vector(m, null, null, t.tier, t.q))); }
+  }
+  const { X, Y } = filas(new Set());
+  return { w: ajustar(X, Y), banda: { lo: cuantil(errs, 0.1), hi: cuantil(errs, 0.9), error: Math.round(mediana(errs.map((x) => Math.abs(Math.exp(-x) - 1))) * 100), n: errs.length } };
 }
 function archivosEstimados(out) {
   const files = {};
   for (const [liga, ys] of Object.entries(out)) {
-    const cuerpo = Object.keys(ys).sort().map((y) => `  ${y}: ${JSON.stringify(ys[y].sort((a, b) => a.id.localeCompare(b.id)))},`).join('\n');
+    const cuerpo = Object.keys(ys).sort().map((y) => `  ${y}: ${JSON.stringify(ys[y].sort((a, b) => (a.id || a.n).localeCompare(b.id || b.n)))},`).join('\n');
     files[`${liga}.js`] = `// GENERADO por tools/estimar.mjs: no editar a mano. ESTIMACIONES, no datos reales: ingreso en millones de USD del año, rango del 80% (lo-hi) y error mediano medido (%).\nwindow.ESTIMADOS = window.ESTIMADOS || {};\nwindow.ESTIMADOS[${JSON.stringify(liga)}] = {\n${cuerpo}\n};\n`;
   }
   return files;
@@ -227,7 +253,7 @@ function archivosEstimados(out) {
 
 if (import.meta.url === `file://${process.argv[1]}` && !process.argv.includes('--medir')) {
   const { out, CI, banda } = estimaciones(); const files = archivosEstimados(out);
-  if (!process.argv.includes("--check")) console.log(`interpolación medida con los años reales: ${Object.entries(banda).map(([k, b]) => `${k === "entre" ? "entre dos reales" : "antes o después"} error mediano ${b.error}% (n ${b.n}, rango del 80% x${Math.exp(b.lo).toFixed(2)} a x${Math.exp(b.hi).toFixed(2)})`).join(" · ")}`);
+  if (!process.argv.includes("--check")) console.log(`estimados medidos con los años reales: ${Object.entries(banda).map(([k, b]) => `${{ entre: "entre dos reales", afuera: "antes o después", nuevo: "club nuevo (regresión)" }[k]} error mediano ${b.error}% (n ${b.n}, rango del 80% x${Math.exp(b.lo).toFixed(2)} a x${Math.exp(b.hi).toFixed(2)})`).join(" · ")}`);
   const n = Object.values(out).reduce((s, ys) => s + Object.values(ys).reduce((t, l) => t + l.length, 0), 0);
   if (process.argv.includes('--check')) {
     if (!existsSync(DIR_EST)) { console.log('estimar: data/estimados/ no existe (no se publican estimaciones): nada que chequear'); process.exit(0); }
