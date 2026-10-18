@@ -24,14 +24,15 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): finanzas 281, 282, 294 · pipeline 290, 232, 279, 286, 287, 298 (c a r), 301, 302, 306, 307 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
-datos-sourcing (sin sesión abierta) 273, 252 · ligas 295 · Reino Unido (261) en su propia sesión · la principal: 291 y los merges; el 246 va
+Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): finanzas 281, 282, 294 · pipeline 298 (t y u primero: destraban Bélgica; después e a n, p, q, s, v), 310, 290, 232, 279, 286, 287, 301, 302, 306, 307 · onboarding 292 (resto; Bélgica espera la t y la u), 238, 285, 284, 283, 195, 165 c ·
+datos-sourcing 273 (el modo de la tabla de camisetas, diseño aprobado), 252 · ligas 295 · Reino Unido (261) en su propia sesión · la principal: 291 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
 Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
 * 290 y 291: caja y deuda, lo que queda (Genoa 2022 y la duda del factoring)
+* 310: caja y deuda de un año sin vecino, cualquier país
 * 292: transcripciones por subagentes de los 6 países: validar, Mistral y cargar
 
 **B. Bases baratas que después cuestan caro cambiar**
@@ -41,7 +42,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 232: mejoras de script que dejó Grecia
 * 279: la tool que duplicaba claves en club-leagues/ru.js
 * 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar
-* 298: mejoras de script de Estonia y Bélgica (a, b y o hechas; siguen c a r)
+* 298: mejoras de script de Estonia y Bélgica (a, b, c, d, o y r hechas; t y u primero)
 * 306, 307 y 308: Milan 2018; el gasto que imprime localizar; los bonos convertibles en la skill
 * 301: gasto.mjs --json se corta en un pipe
 * 302: el deflactor de EE.UU. desde la BEA, no FRED
