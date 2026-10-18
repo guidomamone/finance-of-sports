@@ -29,6 +29,10 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
   --jev) y la verdad `Admin/mediciones/perimetro-a2-verdad-ajustes.tsv` (202 documentos, del ajuste `perimetro`). Sonnet: 4 errores que Opus no
   tiene. A2 sigue en Opus (HALLAZGOS-pipeline.md). Costo de la medición US$ 13,82 (Opus repagó 100 documentos, no ~35: caché vieja).
 
+- **Opus → Sonnet, tercera tarea: localizar (to-do 288), medida y NO adoptada.** `tools/localizar.mjs --lista <x> --modelo opus|sonnet`
+  (`.ubicacion.<modelo>.json`, con el perímetro del club como lote.mjs). Estado igual en 76 de 76, notas distintas en 45 de 77: sigue en Opus
+  (HALLAZGOS-pipeline.md). US$ 3,97.
+
 ## Qué queda pendiente (para TODO)
 
 - **Escribir caja y deuda en `data/`, en la carpeta principal después del merge** (sin API: escalón 0). Junto con lo que ya dejó la
@@ -39,6 +43,8 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
   convertible (Wandelschuldverschreibung) es deuda financiera y entra en `grossDebt`. Caso: HSV 2024, 57.848 TEUR con la WSV de 30.000.
   HSV 2025 no la suma (ver el criterio de abajo).
 
+- **`localizar.mjs --lista --ejecutar` imprime "Gastado: US$ 0.00"** aunque el registro (claude-api.jsonl) anota el costo real (US$ 3,97 en
+  la medición de Sonnet): el total del final no suma. Solo es lo que se muestra; `tools/gasto.mjs` da el número bueno.
 - **Genoa 2022 en `--medir`:** con la regla de los "bis", la propuesta es 65,24 M (soci 1,3 + banche 15,68 + banche oltre 48,27). Para
   llegar a los 95,7 M publicados faltan las dos filas de altri finanziatori (factoring, 30,45 M): depende de la decisión del to-do 291.
   Además, la compuerta del documento siguiente no confirma: en 2023 "3 bis) soci" tiene vacía la columna del año (pasó a corto plazo).

@@ -59,6 +59,11 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   Sonnet: 83 bien · 5 MAL · 114 cola. Sonnet mete 4 errores que Opus no tiene (Rapid Wien 2017-18, 2019-20 y 2023-24 y Trabzonspor
   2021-22: "individual" donde el ajuste dice consolidado) y manda a la cola 36 que Opus decidía bien (casi todo Sandefjord). No entra: A2 sigue
   en Opus. El flag `--modelo` queda para volver a medir. Mediciones: `Admin/mediciones/perimetro-a2-opus.txt` y `perimetro-a2-sonnet.txt`.
+- **Sonnet en vez de Opus en localizar** (to-do 288, 2026-10-18, US$ 3,97, `prueba-mediana`): de 77 documentos comparables, los bloques del
+  estado de resultados son los mismos en 76 de 76 (Torino 2020 es a mano), pero las notas de ingresos o gastos cambian en 45 (agrega o saca
+  un bloque; Estoril 2021-22 suma b47 y b48 a gastos, Chaves 2021-22 saca b48) y el perímetro pasa a "no se sabe" en 7. Sin extraer y
+  verificar no se sabe cuál acierta, y el ahorro es ~US$ 0,025 por documento: localizar sigue en Opus (decisión de Guido). Para retomarlo,
+  extraer + verificar con `.ubicacion.sonnet.json` en esos 45. Comparación: `Admin/mediciones/localizar-opus-vs-sonnet.txt`.
 
 ## 2026-10-08, dos trampas que costaron una corrida
 
