@@ -24,7 +24,7 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 253 y 282 en Ligas (cuando haya el dato del 295) · finanzas 281, 282, 294 · pipeline 289, 290, 288, 232, 279, 286, 287, 298 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
+Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 282 en Ligas (cuando haya el dato del 295) · finanzas 281, 282, 294 · pipeline 289, 290, 288, 232, 279, 286, 287, 298, 301 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
 datos-sourcing 273 (completar el dato), 252, 295 · Reino Unido (261) en su propia sesión · proyecto 250, 244, 300 · la principal: 268, 291 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
@@ -47,6 +47,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 279: la tool que duplicaba claves en club-leagues/ru.js
 * 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar
 * 298: mejoras de script de Estonia y Bélgica (primero la a, el cierre falso)
+* 301: gasto.mjs --json se corta en un pipe
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
@@ -82,7 +83,6 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 255: consolidar las reglas repartidas (después de 250: lo chequeable ya pasó a hooks)
 * 256: CHANGELOG corto
 * 257: skills que faltan (después de 255)
-* 253: tablero del pipeline para el celular
 * 237 al: anexo UEFA para abrir las ventas (lo dejaste para después)
 * 51: proceso de mails a clubes
 * 278: carpetas duplicadas en Clubes/ (sin borrar PDFs)
@@ -203,8 +203,6 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 252. TAREA PROGRAMADA: EJERCICIOS NUEVOS (mejoras de proyecto, pedido de Guido 2026-10-16). Los clubes publican una vez por año (casi todos entre septiembre y diciembre). Una tarea semanal
    revisa reguladores y webs de los clubes cargados y deja los links en Admin/sourcing/README.md (con Claude in Chrome para los portales con
    sesión o formularios difíciles).
-253. TABLERO DEL PIPELINE (ARTIFACT CON BASE DE DATOS) (mejoras de proyecto, pedido de Guido 2026-10-16). Lo de estado.mjs, la cola, el gasto de API por país y el seguimiento de mails a
-   clubes, abrible desde el celular.
 254. REPASO MENSUAL DE MÉTRICAS (MIXPANEL Y NETLIFY) (mejoras de proyecto, pedido de Guido 2026-10-16). Qué clubes se buscan y no están, y dónde se corta el embudo del selector.
    Con números, revisar qué fue al panel "Más opciones" de Finanzas (rediseño del 265: hoy es criterio, no dato).
 255. CONSOLIDAR LAS REGLAS (mejoras de proyecto, pedido de Guido 2026-10-16). CLAUDE.md, las memorias, 7 skills, CONVENCIONES, CONVENCIONES-DATOS, PANTALLA y PIPELINE: una regla en tres
@@ -306,7 +304,10 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    `altas-revision.jsonl` traiga las ligas verificadas (las 17 altas de los lotes 89-90): que el alta las tome de la revisión.
 300. AUDITORÍA PROGRAMADA (pedido de Guido, 2026-10-18). Una tarea programada semanal en la Mac de Guido que corra `node tools/audit.js` y
    `auditAll()` (preview con `?audit=1`), actualice el dashboard de usuarios y visitas (tools/supabase/stats.mjs y tools/cloudflare-visitas.mjs,
-   cierra lo que queda del 268) y avise solo si algo sale de P0 0 / P1 0 o un año deja de cerrar.
+   cierra lo que queda del 268), actualice el tablero del pipeline (`node tools/tablero.mjs` y subir los 6 CSV, ver su cabecera) y avise
+   solo si algo sale de P0 0 / P1 0 o un año deja de cerrar.
+301. gasto.mjs --json SE CORTA EN UN PIPE (visto armando el tablero, 2026-10-18). `node tools/gasto.mjs --json | …` corta la salida a los
+   64 KB: el proceso sale antes de vaciar stdout. Mejora de script chica.
 270. ESTIMAR UN CLUB QUE NUNCA CARGAMOS: VOLVER A MEDIR (pedido de Guido, 2026-10-17). Está PRENDIDO desde el 2026-10-18 (decisión de
    Guido: en Ligas todo club sin balance figura como estimado), con 50% de error (regresión sin historia: mediana de la liga-año, división,
    posición en la tabla). Volver a medir (`node tools/estimar.mjs --medir`) cuando haya más clubes cargados. Variable sin medir: partidos

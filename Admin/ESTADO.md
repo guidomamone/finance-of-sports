@@ -43,6 +43,8 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   las decisiones de Guido: `Admin/PIPELINE.md`; las mejoras medidas y descartadas: `Admin/HALLAZGOS-pipeline.md`. Un dato publicado mal se
   corrige con un ajuste manual (`tools/ajustes.mjs`, escalón 0 de cada escalera) además de en `data/`, para que una corrida futura no lo deshaga.
 - Cuántos documentos hay en cada etapa y cuánto cuesta el paso siguiente: `node tools/estado.mjs` (gratis).
+- El tablero del pipeline, para el celular: artifact de Claude https://claude.ai/artifact/ESc6PC7CUbQ8wV2ETgLVdb (etapas, cola, gasto por
+  día, motor y país, mails a clubes). No se actualiza solo: `node tools/tablero.mjs` y subir los CSV (cabecera de la tool; to-do 300).
 - El primer año de un club se confirma sin Guido: con lo impreso (ingresos, gastos y resultado, o un total y el resultado) o, si solo
   coincide el resultado, con una pregunta a Claude sobre las filas del estado (`tools/primer-anio-ia.mjs`, la contesta `lote.mjs --ejecutar`).
 - Una etiqueta que aparece bajo dos renglones de categoría distinta (gastos por función: fútbol / administración / ventas; jugadores / otros

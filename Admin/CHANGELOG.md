@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 731 — Merge de pantallas: el tablero del pipeline (2026-10-18)
+
+`node tools/worktree.mjs mergear pantallas`, sin conflictos, P0 0 / P1 0.
+
+- To-do 253: tablero del pipeline para el celular, artifact de Claude tipo Dashboard (https://claude.ai/artifact/ESc6PC7CUbQ8wV2ETgLVdb):
+  ejercicios en el sitio, listos para cargar, la cola, el gasto de API por día, motor y país, los PDFs por etapa con su costo y los mails a
+  clubes. Los datos, de `tools/tablero.mjs` (gratis).
+- TODO: fuera el 253; el 300 suma actualizar el tablero; nuevo 301 (gasto.mjs --json se corta en un pipe).
+
 ## Versión 730 — Merge de pantallas: sponsors y marcas en el buscador (2026-10-18)
 
 `node tools/worktree.mjs mergear pantallas`, sin conflictos, P0 0 / P1 0.

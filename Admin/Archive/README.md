@@ -54,3 +54,4 @@ Qué hay hoy:
 - `sesion-finanzas-2026-10-18-2.md` y `sesion-onboarding-2026-10-18-2.md` — copias de los cierres de la segunda sesión de finanzas (294 a y b) y de onboarding (Estonia y Bélgica, mejoras de script del 298), pasadas en la 727.
 - `sesion-datos-sourcing-2026-10-18-c.md` y `sesion-pantallas-2026-10-18-d.md` — copias de los cierres en el merge de la 728.
 - `sesion-onboarding-2026-10-18-3.md` — copia del cierre de onboarding en el merge de la 729 (Estonia en Ligas).
+- `sesion-pantallas-2026-10-18-e.md` — copia del cierre de pantallas en el merge de la 731 (297 y 253).
