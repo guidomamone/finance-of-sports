@@ -1119,6 +1119,19 @@ Object.assign(window.CLUB_AUDITORIA, {
     "linea": 7331
    }
   },
+  "2022": {
+   "auditor": {
+    "nombre": "Deloitte",
+    "tipo": "firma",
+    "legal": "Deloitte & Touche S.p.A."
+   },
+   "dictamen": "con_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Juventus/Juventus-report-audit-financial-statements-2021-22.md",
+    "linea": 33
+   }
+  },
   "2023": {
    "auditor": {
     "nombre": "Deloitte",
@@ -1132,6 +1145,19 @@ Object.assign(window.CLUB_AUDITORIA, {
     "linea": 9146
    }
   },
+  "2024": {
+   "auditor": {
+    "nombre": "Deloitte",
+    "tipo": "firma",
+    "legal": "Deloitte & Touche S.p.A."
+   },
+   "dictamen": "con_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Juventus/Juventus-report-audit-financial-statements-2023-24.md",
+    "linea": 34
+   }
+  },
   "2025": {
    "auditor": {
     "nombre": "Deloitte",
@@ -1142,7 +1168,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    "continuidad": false,
    "fuente": {
     "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2024-25.md",
-    "linea": 12350
+    "linea": 16886
    }
   }
  },
