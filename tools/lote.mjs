@@ -93,7 +93,18 @@ const testigos = new Set(lineas.filter((l) => /^testigo\s+/i.test(l)).map((l) =>
 const descartados = new Set((existsSync(resolve(ROOT, 'Admin', 'registros', 'documentos-descartados.txt')) ? readFileSync(resolve(ROOT, 'Admin', 'registros', 'documentos-descartados.txt'), 'utf8') : '').split('\n').map((l) => l.replace(/\s+#.*$/, '').trim()).filter((l) => l && !l.startsWith('#')));
 // PARCIALES (to-do 190, Versión 631): los balances de menos de 12 meses (Admin/registros/documentos-parciales.txt) tampoco entran: falta el otro tramo.
 const parciales = new Set((existsSync(resolve(ROOT, 'Admin', 'registros', 'documentos-parciales.txt')) ? readFileSync(resolve(ROOT, 'Admin', 'registros', 'documentos-parciales.txt'), 'utf8') : '').split('\n').map((l) => l.replace(/\s+#.*$/, '').trim()).filter((l) => l && !l.startsWith('#')));
-const docs = lineas.map((l) => l.replace(/^testigo\s+/i, '')).filter((d) => { if (descartados.has(d)) { console.log(`  ${d}: descartado (Admin/registros/documentos-descartados.txt)`); return false; } if (parciales.has(d)) { console.log(`  ${d}: parcial, menos de 12 meses (Admin/registros/documentos-parciales.txt)`); return false; } return true; });
+const docs0 = lineas.map((l) => l.replace(/^testigo\s+/i, '')).filter((d) => { if (descartados.has(d)) { console.log(`  ${d}: descartado (Admin/registros/documentos-descartados.txt)`); return false; } if (parciales.has(d)) { console.log(`  ${d}: parcial, menos de 12 meses (Admin/registros/documentos-parciales.txt)`); return false; } return true; });
+// LA VERSIÓN CORREGIDA REEMPLAZA AL ORIGINAL (to-do 298 o, ok de Guido 2026-10-18). El registro belga publica a veces el balance del mismo
+// año otra vez, corregido ("verbeterde neerlegging"): quedan "<doc>.pdf" y "<doc>-correction.pdf" en la carpeta y entraban los dos al lote
+// (se pagaban dos veces y la cola preguntaba lo mismo dos veces). UNA compuerta: los dos están en la lista (misma carpeta, mismo nombre más
+// "-correction") y la corrección tiene su .md. Entonces entra solo la corrección; el original se saltea en esta corrida y queda como
+// propuesta para Admin/registros/documentos-descartados.txt (entra ahí solo con el ok de Guido). Un original solo, sin su corrección en la
+// lista, entra como siempre. Casos: Union Saint-Gilloise 2023, Club Brugge 2013 y 2020, Mechelen 2021, Beerschot 2019, Lommel SK 2021.
+const correccionDe = (d) => d.replace(/\.pdf$/i, '-correction.pdf');
+const reemplazadosPorCorreccion = docs0.filter((d) => !testigos.has(d) && !/-correction\.pdf$/i.test(d) && docs0.includes(correccionDe(d)) && existsSync(resolve(ROOT, correccionDe(d).replace(/\.pdf$/i, '.md'))));
+for (const d of reemplazadosPorCorreccion) console.log(`  ${d}: salteado, la versión corregida (${correccionDe(d).split('/').pop()}) lo reemplaza`);
+const docs = docs0.filter((d) => !reemplazadosPorCorreccion.includes(d));
+const avisoCorrecciones = () => { if (reemplazadosPorCorreccion.length) console.log(`\nREEMPLAZADOS POR SU VERSIÓN CORREGIDA (no entraron; propuesta para Admin/registros/documentos-descartados.txt, con el ok de Guido):\n${reemplazadosPorCorreccion.map((d) => `  ${d}`).join('\n')}`); };
 // EN OTRA LISTA ACTIVA (to-do 232 g). lote-71.txt siguió listando los 10 documentos de Olympiacos después de pasarlos al lote 74 y la
 // segunda corrida del 71 los pagó de nuevo. Aviso (no frena: a veces se repite a propósito): un documento de esta lista que también está
 // en otra Admin/lotes/lote-*.txt. Las prueba-*.txt repiten documentos por diseño y no cuentan; los testigos tampoco, de ningún lado.
@@ -387,6 +398,7 @@ const imprimirAFijar = () => {
   for (const c of [...new Set(aFijar.map((x) => x.comando))]) console.log(`  ${c}`);
 };
 if (!EJECUTAR) imprimirAFijar();
+avisoCorrecciones();
 if (!EJECUTAR) { const coma = (x) => x.toFixed(2).replace('.', ','); console.log(`\nEnsayo terminado, no se gastó nada. Correrlo cuesta ~US$ ${coma(usd + 0.03 * docs.length)} (localizar y extraer US$ ${coma(usd)} + categorización ~US$ 0,03 por documento + páginas escaneadas ~US$ 0,003 cada una). Para correrlo: agregá --ejecutar.`); process.exit(0); }
 
 console.log('\n=== 2/5 · Sumar y cruzar con lo impreso (etapa 6, gratis) ===');
@@ -469,6 +481,7 @@ imprimirAFijar();
 // por tarea, y "N.ª vez" si esa tarea ya se había pagado antes para el mismo PDF (tools/gasto-doc.mjs; solo información, no frena).
 const GD = gastoPorDocumento(docs, { desde: INICIO, registro, extra: gastoValidar });
 if (GD.length) { console.log('\nGASTO POR DOCUMENTO (esta corrida; "N.ª vez" = esa tarea ya se había pagado antes para el mismo PDF):'); for (const l of lineasGasto(GD)) console.log(l); }
+avisoCorrecciones();
 console.log(`\nGastado: US$ ${usd.toFixed(2).replace('.', ',')} en localizar y extraer (la categorización: node tools/gasto.mjs).${cola.length ? ` ${cola.length === 1 ? 'Quedó 1 pregunta' : `Quedaron ${cola.length} preguntas`} en la cola: no tenés que hacer nada, ${cola.length === 1 ? 'la contesta' : 'las contesta'} Claude.` : ''}`);
 
 // RESULTADO (Versión 351, pedido de Guido: "que al final de la corrida diga 'Frenados X' 'Listo para cargar Y'"). Lee la última propuesta de

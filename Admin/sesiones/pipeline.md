@@ -60,6 +60,11 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
   Eisden 2025 cierran sin su ajuste `fila` en 0. Medido: 376 documentos, 374 idénticos; los 2 que cambian son esos dos (en la cola en los dos
   casos acá, porque la rama no tiene sus otros ajustes). Parte 2 de la b ("(+)/(-)"): no se reproduce (HALLAZGOS).
 
+- **La versión corregida reemplaza al original (to-do 298 o).** `tools/lote.mjs`: si la lista trae `<doc>.pdf` y `<doc>-correction.pdf` (misma
+  carpeta, la corrección con su .md), entra solo la corrección; el original se saltea con aviso y el final lo propone para
+  `documentos-descartados.txt`. Medido: ensayo de prueba-completa idéntico; una lista de 3 pares (Beerschot 2019, Club Brugge 2013, Dender
+  2017) y un original solo (Mechelen 2023) hace entrar 4 documentos, no 7.
+
 ## Qué queda pendiente (para TODO)
 
 - **Escribir caja y deuda en `data/`, en la carpeta principal después del merge** (sin API: escalón 0). Junto con lo que ya dejó la
@@ -85,7 +90,7 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
 
 ## Qué deja de ser cierto en ESTADO
 
-- Los to-dos 288, 289 y 290 se cierran, y las letras a) y b) del 298 (la parte 2 no se reproduce) (290: Genoa 2022 deja de dar un valor mal; el valor publicado depende del 291).
+- Los to-dos 288, 289 y 290 se cierran, y las letras a), b) (la parte 2 no se reproduce) y o) del 298 (290: Genoa 2022 deja de dar un valor mal; el valor publicado depende del 291).
 - RB Leipzig 2023-2024 y HSV 2024 dejan de estar "sin escala del documento" en caja-deuda.
 
 ## Para fos-onboarding (cómo se carga)
@@ -96,3 +101,4 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
 - `verificar.mjs` (to-do 298 a): un documento con resultado impreso negativo que solo cerraba con las filas dadas vuelta (en valor absoluto) ya no cierra: va a la cola. En los 376 medidos no cambió ninguno.
 - `vocabulario.mjs` FIN_GASTO suma tres rótulos belgas (to-do 298 b1): un documento NBB nuevo cierra con "financiero por rótulo" sin el ajuste `fila` de signo de los costos financieros; los ajustes ya puestos siguen dando lo mismo.
 - `verificar.mjs` escalón "de los cuales" (to-do 298 b3): un documento que no cerraba porque sumaba aparte una fila "Waarvan:"/"dont"/"davon" puede cerrar sin ella (solo si el cierre es exacto). Los ajustes `fila` en 0 ya puestos siguen dando lo mismo.
+- `lote.mjs` (to-do 298 o): con un original y su "-correction" en la misma lista, entra solo la corrección; el original queda propuesto para `documentos-descartados.txt` (sin escribirlo). Una lista con un original solo, como siempre.
