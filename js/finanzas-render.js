@@ -1,6 +1,6 @@
 // ============================================================================
 // js/finanzas-render.js — capa de RENDER de Finanzas: arma HTML, dibuja los gráficos (Chart.js) y actualiza el DOM a partir de lo
-// que calcula js/finanzas-calc.js. Incluye Pases, Resultados y Comparar (pintan, no calculan). Algunas funciones puente
+// que calcula js/finanzas-calc.js. Incluye Resultados y Comparar (pintan, no calculan). Algunas funciones puente
 // (buildNativeSectionHtml, renderFinanzasStats*Generic, update*Generic) calculan valores chicos (% del total, crecimiento) en el
 // mismo paso en que arman el HTML: separarlo exige tocar funciones financieras ya verificadas, y se hace recién cuando haga falta.
 //
@@ -755,51 +755,6 @@
   }
 
 
-  // ---------- MERCADO DE PASES ----------
-  function populatePasesSelectors(clubId){
-    const gestiones = gestionesByClub[clubId] || {};
-    document.getElementById('pasesGestionFilter').innerHTML = '<option value="todas">Todas</option>' +
-      Object.keys(gestiones).map(k => `<option value="${k}">${gestiones[k].nombre}</option>`).join('');
-    const data = pasesDataForClub(clubId) || [];
-    const anios = [...new Set(data.map(r => r.anio))].sort((a,b) => b-a);
-    document.getElementById('pasesAnioFilter').innerHTML = '<option value="todos">Todos</option>' +
-      anios.map(a => `<option value="${a}">${a}</option>`).join('');
-    document.getElementById('pasesVentanaFilter').value = 'todas';
-    document.getElementById('pasesTipoFilter').value = 'todos';
-  }
-
-
-  function applyPasesFilters(){
-    const gestion = document.getElementById('pasesGestionFilter').value;
-    const anio = document.getElementById('pasesAnioFilter').value;
-    const ventana = document.getElementById('pasesVentanaFilter').value;
-    const tipo = document.getElementById('pasesTipoFilter').value;
-    const data = pasesDataForClub(currentClub) || [];
-    const rows = data.filter(r =>
-      (gestion === 'todas' || r.gestion === gestion) &&
-      (anio === 'todos' || String(r.anio) === anio) &&
-      (ventana === 'todas' || r.ventana === ventana) &&
-      (tipo === 'todos' || r.tipo === tipo)
-    );
-    const compras = rows.filter(r => r.tipo === 'Jugador' && r.monto < 0).reduce((s,r) => s+r.monto, 0);
-    const ventas = rows.filter(r => r.tipo === 'Jugador' && r.monto > 0).reduce((s,r) => s+r.monto, 0);
-    const neto = compras + ventas;
-    const dtMovs = rows.filter(r => r.tipo === 'DT').length;
-    document.getElementById('pasesStats').innerHTML = `
-      <div class="stat"><div class="label">Gasto en compras</div><div class="value neg">${fmtAmount(compras, 'USD')}</div></div>
-      <div class="stat"><div class="label">Ingreso por ventas</div><div class="value pos">${fmtAmount(ventas, 'USD')}</div></div>
-      <div class="stat"><div class="label">Net spend</div><div class="value ${neto>=0?'pos':'neg'}">${fmtAmount(neto, 'USD')}</div></div>
-      <div class="stat"><div class="label">Movimientos de DT</div><div class="value">${dtMovs}</div></div>
-    `;
-    document.querySelector('#pasesTable tbody').innerHTML = rows.map(r => `
-      <tr><td>${r.nombre}</td><td>${r.tipo}</td><td>${r.movimiento}</td><td>${r.tipo==='Jugador' ? fmtAmount(r.monto, 'USD') : '—'}</td><td>${r.anio}</td><td>${r.ventana}</td></tr>
-    `).join('');
-  }
-  ['pasesGestionFilter','pasesAnioFilter','pasesVentanaFilter','pasesTipoFilter'].forEach(id => {
-    document.getElementById(id).addEventListener('change', applyPasesFilters);
-  });
-
-
   // ---------- RESULTADOS DEPORTIVOS ----------
   function populateResultadosSelector(clubId){
     const gestiones = gestionesByClub[clubId] || {};
@@ -853,7 +808,6 @@
     const da = displayFinancialsForClub(currentClub, a), db = displayFinancialsForClub(currentClub, b);
     document.getElementById('compAHead').textContent = ga.nombre;
     document.getElementById('compBHead').textContent = gb.nombre;
-    const netSpendA = pasesNetSpend(currentClub, aKey), netSpendB = pasesNetSpend(currentClub, bKey);
     const resultadosDataset = resultadosDataForClub(currentClub) || {};
     const rA = resultadosDataset[aKey] || {titulosLocales:0, titulosInternacionales:0, mejorResultadoLibertadores:'—'};
     const rB = resultadosDataset[bKey] || {titulosLocales:0, titulosInternacionales:0, mejorResultadoLibertadores:'—'};
@@ -862,7 +816,6 @@
       ['Gastos (último ejercicio)', da.expenses, db.expenses, 'money'],
       ['Resultado neto (último ejercicio)', da.pat, db.pat, 'money'],
       ['Deuda neta (último ejercicio)', da.netDebt, db.netDebt, 'money-inv'],
-      ['Net spend en pases (gestión)', netSpendA, netSpendB, 'money'],
       ['Títulos totales (gestión)', rA.titulosLocales+rA.titulosInternacionales, rB.titulosLocales+rB.titulosInternacionales, 'num'],
       ['Mejor resultado en Libertadores', rA.mejorResultadoLibertadores, rB.mejorResultadoLibertadores, 'text'],
     ];

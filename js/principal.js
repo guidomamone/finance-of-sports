@@ -161,8 +161,6 @@
     populateCurrencyToggle(currentClub);
     // "Formato del club" / "Formato simplificado": siempre visible, para cualquier club.
     refreshFinanzas();
-    populatePasesSelectors(currentClub);
-    applyPasesFilters();
     populateResultadosSelector(currentClub);
     renderResultados();
     renderTitulosTable();
@@ -418,12 +416,9 @@
     });
   }
 
-  // ---------- ACCESO POR CLUB PARA PASES / RESULTADOS / COMPARAR GESTIONES ----------
+  // ---------- ACCESO POR CLUB PARA RESULTADOS / COMPARAR GESTIONES ----------
   // Todos los clubes viven en CLUB_GENERIC_DATA: un club nuevo no toca estas funciones. Devuelven null si no hay club elegido o si
   // sus datos todavía no se cargaron (ver clubCargado()).
-  function pasesDataForClub(clubId){
-    return clubCargado(clubId) ? CLUB_GENERIC_DATA[clubId].pasesData : null;
-  }
   function resultadosDataForClub(clubId){
     return clubCargado(clubId) ? CLUB_GENERIC_DATA[clubId].resultadosData : null;
   }
@@ -621,7 +616,6 @@
   refreshFinanzas();
   verifyTieOuts();
   checkFxSanity();
-  applyPasesFilters();
   renderResultados();
   renderTitulosTable();
   renderComparar();
@@ -803,7 +797,6 @@
     populateFinanzasSelectors(currentClub);
     populateCurrencyToggle(currentClub);
     refreshFinanzas();
-    applyPasesFilters();
     renderResultados();
     renderTitulosTable();
     renderComparar();

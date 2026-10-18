@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title data-i18n="site.title">El deporte en Números | Las finanzas de los clubes, directo de la fuente</title>
-<link rel="stylesheet" href="css/styles.css?v=1294">
+<link rel="stylesheet" href="css/styles.css?v=1295">
 <!-- Cloudflare Web Analytics -->
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3deae274c6f346eab1a19f78e41ac035"}'></script>
 <!-- End Cloudflare Web Analytics -->
@@ -575,56 +575,6 @@
 
   </section>
 
-  <!-- MERCADO DE PASES -->
-  <section id="pases">
-    <h1 data-i18n="pases.title">Mercado de Pases</h1>
-    <p class="subtitle">Compras, ventas y movimientos de cuerpo técnico. Filtrá por gestión, año, ventana de pases y tipo.</p>
-
-    <div class="controls">
-      <label>Gestión:</label>
-      <select id="pasesGestionFilter">
-        <option value="todas">Todas</option>
-        <option value="riquelme">Riquelme (2023-actual)</option>
-        <option value="ameal">Ameal (2019-2023)</option>
-        <option value="angelici">Angelici (2015-2019)</option>
-      </select>
-      <label>Año:</label>
-      <select id="pasesAnioFilter">
-        <option value="todos">Todos</option>
-        <option value="2025">2025</option>
-        <option value="2024">2024</option>
-        <option value="2023">2023</option>
-        <option value="2022">2022</option>
-        <option value="2021">2021</option>
-        <option value="2019">2019</option>
-        <option value="2018">2018</option>
-      </select>
-      <label>Ventana:</label>
-      <select id="pasesVentanaFilter">
-        <option value="todas">Todas</option>
-        <option value="Verano">Verano</option>
-        <option value="Invierno">Invierno</option>
-      </select>
-      <label>Tipo:</label>
-      <select id="pasesTipoFilter">
-        <option value="todos">Todos</option>
-        <option value="Jugador">Jugadores</option>
-        <option value="DT">DTs</option>
-      </select>
-    </div>
-
-    <div class="grid" id="pasesStats"></div>
-
-    <div class="card">
-      <h2 data-i18n="pases.table.title">Movimientos</h2>
-      <table id="pasesTable">
-        <thead><tr><th data-i18n="th.name">Nombre</th><th data-i18n="th.type">Tipo</th><th data-i18n="th.movement">Movimiento</th><th data-i18n="th.amount">Monto</th><th data-i18n="th.year">Año</th><th data-i18n="th.window">Ventana</th></tr></thead>
-        <tbody></tbody>
-      </table>
-      <p class="source-note">Fuente: Transfermarkt + reportes de club (placeholder). Los movimientos de DT no tienen impacto monetario directo en esta demo.</p>
-    </div>
-  </section>
-
   <!-- RESULTADOS DEPORTIVOS -->
   <section id="resultados">
     <h1 data-i18n="resultados.title">Resultados Deportivos</h1>
@@ -727,7 +677,7 @@
 
 <footer>
   <span data-i18n="footer.text">financeofsports.com publica datos financieros de clubes de fútbol, tomados de balances y presupuestos oficiales citados en cada ficha. No representa a ningún club, liga ni federación.</span><br>
-  <span style="opacity:.7;" data-i18n="footer.note">Proyecto personal, sin fines de lucro.</span><br>
+  <span style="opacity:.7;" data-i18n="footer.note">Proyecto personal.</span><br>
   <!-- Link ESTÁTICO a fuentes.html: los otros links a esa página los arma JS en runtime, y un crawler que no ejecuta JS no la
        encontraría. -->
   <a href="fuentes.html" style="color:inherit;opacity:.7;" data-i18n="footer.fuentes">Todas las fuentes del sitio</a>
@@ -781,51 +731,51 @@
 <!-- ASSET_V: versión de los assets propios, para invalidar el cache del navegador en cada deploy (si no, un visitante se queda
      con un js/*.js viejo mientras el HTML es nuevo). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o `data/`. Lo leen
      también los cargadores dinámicos (loadClubData, I18N.load, loadRanking). -->
-<script>window.ASSET_V = '1294';</script>
-<script src="data/lang/langs.js?v=1294"></script>
-<script src="js/i18n.js?v=1294"></script>
-<script src="data/clubs.js?v=1294"></script>
+<script>window.ASSET_V = '1295';</script>
+<script src="data/lang/langs.js?v=1295"></script>
+<script src="js/i18n.js?v=1295"></script>
+<script src="data/clubs.js?v=1295"></script>
 <!-- data/club-index.js: el índice liviano de TODOS los clubes (nombre, país, calidad del dato, ejercicios), GENERADO por
      tools/generate-club-index.js. Lo que hay que mostrar de un club ANTES de entrar a él vive adentro de data/<país>/<club>-data.js, que
      no se carga hasta que el visitante lo elige. -->
-<script src="data/club-index.js?v=1294"></script>
+<script src="data/club-index.js?v=1295"></script>
 <!-- data/leagues.js: el CATÁLOGO de la taxonomía del selector (deportes, regiones, países, ligas). NO tiene membresía: qué club
      jugó en qué liga es (club, ejercicio) y vive en data/club-leagues.js. Ver la cabecera de data/leagues.js ("no existe ninguna
      arista club → liga sin año"). -->
-<script src="data/leagues.js?v=1294"></script>
-<script src="data/club-leagues.js?v=1294"></script>
-<script src="data/category-map.js?v=1294"></script>
-<script src="data/site-labels.js?v=1294"></script>
-<script src="data/currency-map.js?v=1294"></script>
-<script src="data/sources-view.js?v=1294"></script>
+<script src="data/leagues.js?v=1295"></script>
+<script src="data/club-leagues.js?v=1295"></script>
+<script src="data/category-map.js?v=1295"></script>
+<script src="data/site-labels.js?v=1295"></script>
+<script src="data/currency-map.js?v=1295"></script>
+<script src="data/sources-view.js?v=1295"></script>
 <!-- Ningún data file de club se carga acá: el sitio abre en la portada sin club, y CUALQUIER club entra por loadClubData() cuando
      el visitante lo elige. -->
-<script src="js/info-tip.js?v=1294"></script>
-<script src="data/deflactores.js?v=1294"></script>
-<script src="js/finanzas-calc.js?v=1294"></script>
-<script src="js/finanzas-render.js?v=1294"></script>
-<script src="js/finanzas-anios.js?v=1294"></script>
-<script src="js/finanzas-multi.js?v=1294"></script>
+<script src="js/info-tip.js?v=1295"></script>
+<script src="data/deflactores.js?v=1295"></script>
+<script src="js/finanzas-calc.js?v=1295"></script>
+<script src="js/finanzas-render.js?v=1295"></script>
+<script src="js/finanzas-anios.js?v=1295"></script>
+<script src="js/finanzas-multi.js?v=1295"></script>
 <!-- Estructura del club: el índice de grupos multiclub (chico, lo usa también el buscador) y la tarjeta de Finanzas. -->
-<script src="data/entidades/_grupos.js?v=1294"></script>
-<script src="js/finanzas-estructura.js?v=1294"></script>
-<script src="js/grupo.js?v=1294"></script>
+<script src="data/entidades/_grupos.js?v=1295"></script>
+<script src="js/finanzas-estructura.js?v=1295"></script>
+<script src="js/grupo.js?v=1295"></script>
 <!-- Quién auditó cada balance: qué países tienen dato (chico) y la tarjeta de Finanzas, que baja el país al elegir un club. -->
-<script src="data/auditoria/_paises.js?v=1294"></script>
-<script src="data/auditoria/_ligas.js?v=1294"></script>
-<script src="js/auditoria.js?v=1294"></script>
-<script src="js/citar.js?v=1294"></script>
-<script src="js/contexto.js?v=1294"></script>
-<script src="js/sponsor.js?v=1294"></script>
+<script src="data/auditoria/_paises.js?v=1295"></script>
+<script src="data/auditoria/_ligas.js?v=1295"></script>
+<script src="js/auditoria.js?v=1295"></script>
+<script src="js/citar.js?v=1295"></script>
+<script src="js/contexto.js?v=1295"></script>
+<script src="js/sponsor.js?v=1295"></script>
 <!-- js/selector.js: el selector de club. Se alimenta solo de clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja todos
      los clubes sin bajar un solo data/<país>/<club>-data.js. -->
-<script src="js/selector.js?v=1294"></script>
-<script src="data/destacados.js?v=1294"></script>
-<script src="js/liga.js?v=1294"></script>
+<script src="js/selector.js?v=1295"></script>
+<script src="data/destacados.js?v=1295"></script>
+<script src="js/liga.js?v=1295"></script>
 <!-- js/cuenta.js: login con Google vía Supabase + guardado automático de búsquedas. No sabe cómo se renderiza el resto del sitio:
      recibe `reopen` por CUENTA.init() y expone notifyStateChange() para que index.html avise cuando cambia el club/año. -->
-<script src="js/cuenta.js?v=1294"></script>
-<script src="js/principal.js?v=1294"></script>
+<script src="js/cuenta.js?v=1295"></script>
+<script src="js/principal.js?v=1295"></script>
 
 </body>
 </html>
