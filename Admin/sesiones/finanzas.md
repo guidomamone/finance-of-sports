@@ -221,3 +221,10 @@
   balance) y los 10 japoneses 2025 (los clubes publican el 決算公告, solo el balance, sin auditor; Frontale 2025 confirmado).
 
 ## Después del merge de la sesión 3 (2026-10-18)
+
+### Qué cambió (para CHANGELOG)
+
+- To-do 282, Lazio 2006-2010: de `sin_informe` a `falta_transcripcion` (sin auditor, con nota). Los cinco balances muestran que hubo
+  informe (2007-2009 nombran a Deloitte como società di revisione y traen sus honorarios, 2010 dice que el balance está sujeto a la
+  revisión de PwC, y de 2006 hay una captura de Wayback del informe, truncada a 1 MiB), pero el informe no está en ningún canal: la API
+  de documentos del club empieza en 2011 y Wayback no los tiene. Así el sitio dice "Todavía no lo revisamos" en vez de "sin informe".

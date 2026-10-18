@@ -1366,36 +1366,6 @@ Object.assign(window.CLUB_AUDITORIA, {
    "continuidad": false,
    "fuente": null
   },
-  "2006": {
-   "auditor": null,
-   "dictamen": "sin_informe",
-   "continuidad": false,
-   "fuente": null
-  },
-  "2007": {
-   "auditor": null,
-   "dictamen": "sin_informe",
-   "continuidad": false,
-   "fuente": null
-  },
-  "2008": {
-   "auditor": null,
-   "dictamen": "sin_informe",
-   "continuidad": false,
-   "fuente": null
-  },
-  "2009": {
-   "auditor": null,
-   "dictamen": "sin_informe",
-   "continuidad": false,
-   "fuente": null
-  },
-  "2010": {
-   "auditor": null,
-   "dictamen": "sin_informe",
-   "continuidad": false,
-   "fuente": null
-  },
   "2011": {
    "auditor": null,
    "dictamen": "sin_informe",
