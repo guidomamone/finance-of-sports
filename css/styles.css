@@ -518,7 +518,7 @@
   .fin-indice a{padding:10px 14px;font-size:14px;color:#45474d;text-decoration:none;white-space:nowrap;border-bottom:3px solid transparent;}
   .fin-indice a:hover{color:var(--azul);}
   .fin-indice a.activo{color:var(--azul);font-weight:700;border-bottom-color:var(--oro);}
-  #finTrendCard,#finPL,#finDeuda,#ligaSimWrap,#finanzasFuentesCard{scroll-margin-top:120px;}
+  #finTrendCard,#finPL,#finDeuda,#finContexto,#ligaSimWrap,#finEstructura,#finAuditoria,#finCitar,#finanzasFuentesCard{scroll-margin-top:120px;}
   @media (max-width:700px){ .fin-indice{top:56px;} }
   /* Entre 701 y 900 el header tiene varias filas y alto variable: ahí el índice no queda fijo. */
   @media (min-width:701px) and (max-width:900px){ .fin-indice{position:static;} }
@@ -1092,6 +1092,7 @@
   .lg-mix-nota{grid-column:2;font-size:11.5px;color:var(--muted);}
   .lg-avisos{margin-top:16px;}
   .lg-avisos p{margin:0;font-size:13px;color:var(--muted);line-height:1.6;}
+  .lg-avisos p.lg-cita-lista{margin-top:6px;}
   /* TO-DO 83: "¿cómo le iría este/estos club(es) en otra liga?". `.liga-sim-panel`
      es el contenedor neutro (siempre visible, aunque no haya nada simulado — ahí
      vive el buscador de "sumar un club"); `.liga-sim-activa` es la caja ámbar de

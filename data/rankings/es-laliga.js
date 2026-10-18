@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["es-laliga"] = {
   2025: {
     leagueSize: 20,
+    wiki: {"t":"2024–25 La Liga","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"realmadrid", revenue:1388.522, reportType:"official_balance_sheet",
         sourceId:"realmadrid-informe-economico-2024-25",
@@ -50,6 +51,7 @@ window.RANKINGS["es-laliga"] = {
   },
   2024: {
     leagueSize: null,
+    wiki: {"t":"2023–24 La Liga","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"villarrealcf", revenue:137.395, reportType:"official_balance_sheet",
         sourceId:"villarrealcf-estados-financieros-2023-24",
@@ -64,6 +66,7 @@ window.RANKINGS["es-laliga"] = {
   },
   2022: {
     leagueSize: null,
+    wiki: {"t":"2021–22 La Liga","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"osasuna-es", revenue:72.773, reportType:"official_balance_sheet",
         sourceId:"osasuna-es-auditoria-2021-22",

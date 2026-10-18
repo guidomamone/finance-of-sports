@@ -267,3 +267,39 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
 ### Qué deja de ser cierto en ESTADO
 
 - Nada (ESTADO ya no nombraba Pases como pestaña visible; el "Techo del modelo" sigue nombrando Pases/Resultados/Títulos: sacar Pases).
+
+## Después del merge del 303 y el 304 (2026-10-18)
+
+### Qué cambió (para CHANGELOG)
+
+- To-do 305: Ligas cita de dónde sale la lista de clubes de la temporada, con la licencia. `tools/generate-rankings.js` lee
+  `tools/club-league-reference/<iso2>.json` y escribe en cada liga-año de `data/rankings/<liga>.js` un `wiki` = { t, lang, at, n }
+  (página, idioma, día en que se leyó, cantidad de clubes): hoy 227 liga-años. `js/liga.js` (`citaLista()`) suma, debajo de las
+  salvedades, "La lista de los N clubes de la temporada sale de Wikipedia: <página> (en inglés), leída el <fecha>, bajo licencia
+  CC BY-SA 4.0", con link a la página y a la licencia; solo cuando la pantalla usa la lista (el "de los M" o los estimados). El link va a
+  la página de hoy, no a la revisión leída (decisión de Guido: las listas no guardan el número de revisión). Mockup aprobado: "Ligas ·
+  de dónde sale la lista de clubes (to-do 305)" de "Pantallas FoS". Probado: Argentina 2024, Serie A 2023 y en inglés. ASSET_V 1296.
+- Ligas ya no dice "Nadie verificó todavía cuántos equipos jugaron esta temporada…" (`liga.cv.nosize`, pedido de Guido): contradecía la
+  lista de Wikipedia que la misma página cita. ASSET_V 1297.
+
+### Qué queda (para TODO)
+
+- Borrar el 305.
+- Nuevo (a decidir): en 223 de los 227 liga-años con lista de Wikipedia `leagueSize` es null, aunque la lista existe y alimenta los
+  estimados: sin él no hay "N de los M" en el subtítulo ni "Faltan…". ¿El tamaño sale de la lista (`LEAGUE_SIZE_BY_YEAR`,
+  `tools/listas-lote.mjs`)?
+
+### 254 + 243: primera lectura del KV (2026-10-18)
+
+- El token de `Admin/api-keys/cloudflare.env` ya tiene "Workers KV Storage · Read" (lo sumó Guido): la API lista el namespace
+  `FOS_LOGS`. Tiene 11 claves, cada una un contador sin fecha (`search:hit:<texto>`, `search:miss:<texto>`,
+  `compare:<a> __vs__ <b>`), todas en 1. Sin resultado: "atalanta" (ya cargado: Atalanta entró el 2026-10-17), "allipuvis",
+  "celular" y "triangula" (ruido). Comparar: un par. Web Analytics: 90 visitas muestreadas en 30 días (US, IN, RU, CA), unas 9 reales.
+  Todavía no hay un club que se busque y falte; el embudo de Mixpanel no se puede leer desde acá (el conector solo trae eventos en vivo).
+- Para TODO: borrar el 254 y el 243 (Guido: "nadie usa el site, así que por ahora no hagamos nada al respecto").
+
+### Qué cambió (para CHANGELOG), después
+
+- Finanzas: los saltos del índice a Auditoría y a Citar y descargar dejaban el título de la tarjeta debajo del índice fijo. Les faltaba
+  el `scroll-margin-top` de las demás (`css/styles.css`); se sumó a `#finContexto`, `#finEstructura`, `#finAuditoria` y `#finCitar`.
+  Probado en Racing a 1400 px y en teléfono: todas quedan a unos 20 px del índice. ASSET_V 1298.

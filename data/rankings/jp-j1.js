@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["jp-j1"] = {
   2025: {
     leagueSize: 20,
+    wiki: {"t":"2025 J1 League","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"urawareddiamonds", revenue:75.4, reportType:"official_balance_sheet",
         sourceId:"urawareddiamonds-jleague-doc-2025",

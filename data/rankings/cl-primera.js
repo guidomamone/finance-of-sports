@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["cl-primera"] = {
   2025: {
     leagueSize: null,
+    wiki: {"t":"2025 Chilean Primera División","lang":"en","at":"2026-10-18","n":16},
     clubs: [
       { id:"catolica-cl", revenue:28.497, reportType:"official_balance_sheet",
         sourceId:"catolica-cl-estados-financieros-2025",
@@ -11,6 +12,7 @@ window.RANKINGS["cl-primera"] = {
   },
   2024: {
     leagueSize: null,
+    wiki: {"t":"2024 Chilean Primera División","lang":"en","at":"2026-10-17","n":16},
     clubs: [
       { id:"colocolo-cl", revenue:47.987, reportType:"official_balance_sheet",
         sourceId:"colocolo-cl-estados-financieros-2024",
@@ -25,6 +27,7 @@ window.RANKINGS["cl-primera"] = {
   },
   2023: {
     leagueSize: null,
+    wiki: {"t":"2023 Chilean Primera División","lang":"en","at":"2026-10-17","n":16},
     clubs: [
       { id:"colocolo-cl", revenue:36.085, reportType:"official_balance_sheet",
         sourceId:"colocolo-cl-estados-financieros-2023",
@@ -39,6 +42,7 @@ window.RANKINGS["cl-primera"] = {
   },
   2022: {
     leagueSize: null,
+    wiki: {"t":"2022 Chilean Primera División","lang":"en","at":"2026-10-17","n":16},
     clubs: [
       { id:"colocolo-cl", revenue:33.688, reportType:"official_balance_sheet",
         sourceId:"colocolo-cl-estados-financieros-2022",
@@ -53,6 +57,7 @@ window.RANKINGS["cl-primera"] = {
   },
   2021: {
     leagueSize: null,
+    wiki: {"t":"2021 Chilean Primera División","lang":"en","at":"2026-10-18","n":17},
     clubs: [
       { id:"catolica-cl", revenue:16.761, reportType:"official_balance_sheet",
         sourceId:"catolica-cl-estados-financieros-2021",
@@ -61,6 +66,7 @@ window.RANKINGS["cl-primera"] = {
   },
   2020: {
     leagueSize: null,
+    wiki: {"t":"2020 Chilean Primera División","lang":"en","at":"2026-10-18","n":18},
     clubs: [
       { id:"catolica-cl", revenue:21.692, reportType:"official_balance_sheet",
         sourceId:"catolica-cl-estados-financieros-2020",
@@ -69,6 +75,7 @@ window.RANKINGS["cl-primera"] = {
   },
   2019: {
     leagueSize: null,
+    wiki: {"t":"2019 Chilean Primera División","lang":"en","at":"2026-10-18","n":16},
     clubs: [
       { id:"catolica-cl", revenue:23.103, reportType:"official_balance_sheet",
         sourceId:"catolica-cl-estados-financieros-2019",
@@ -77,6 +84,7 @@ window.RANKINGS["cl-primera"] = {
   },
   2018: {
     leagueSize: null,
+    wiki: {"t":"2018 Chilean Primera División","lang":"en","at":"2026-10-18","n":16},
     clubs: [
       { id:"catolica-cl", revenue:16.25, reportType:"official_balance_sheet",
         sourceId:"catolica-cl-estados-financieros-2018",
@@ -85,6 +93,7 @@ window.RANKINGS["cl-primera"] = {
   },
   2017: {
     leagueSize: null,
+    wiki: {"t":"2017 Chilean Primera División","lang":"en","at":"2026-10-18","n":16},
     clubs: [
       { id:"catolica-cl", revenue:18.204, reportType:"official_balance_sheet",
         sourceId:"catolica-cl-estados-financieros-2017",
@@ -93,6 +102,7 @@ window.RANKINGS["cl-primera"] = {
   },
   2010: {
     leagueSize: null,
+    wiki: {"t":"2010 Chilean Primera División","lang":"en","at":"2026-10-18","n":18},
     clubs: [
       { id:"catolica-cl", revenue:7.431, reportType:"official_balance_sheet",
         sourceId:"catolica-cl-estados-financieros-2010",

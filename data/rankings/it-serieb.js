@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["it-serieb"] = {
   2025: {
     leagueSize: null,
+    wiki: {"t":"2024–25 Serie B","lang":"en","at":"2026-10-09","n":20},
     clubs: [
       { id:"cremonese-it", revenue:67.274, reportType:"official_balance_sheet",
         sourceId:"cremonese-it-bilancio-2025",
@@ -11,6 +12,7 @@ window.RANKINGS["it-serieb"] = {
   },
   2024: {
     leagueSize: null,
+    wiki: {"t":"2023–24 Serie B","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"sassuolo-it", revenue:106.071, reportType:"official_balance_sheet",
         sourceId:"sassuolo-it-bilancio-2024",
@@ -25,6 +27,7 @@ window.RANKINGS["it-serieb"] = {
   },
   2023: {
     leagueSize: null,
+    wiki: {"t":"2022–23 Serie B","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"parma-it", revenue:31.924, reportType:"official_balance_sheet",
         sourceId:"parma-it-bilancio-31-12-2023-individual",
@@ -33,6 +36,7 @@ window.RANKINGS["it-serieb"] = {
   },
   2022: {
     leagueSize: null,
+    wiki: {"t":"2021–22 Serie B","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"genoa-it", revenue:90.302, reportType:"official_balance_sheet",
         sourceId:"genoa-it-bilancio-31-12-2022-individual",
@@ -47,6 +51,7 @@ window.RANKINGS["it-serieb"] = {
   },
   2021: {
     leagueSize: null,
+    wiki: {"t":"2020–21 Serie B","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"parma-it", revenue:46.076, reportType:"official_balance_sheet",
         sourceId:"parma-it-bilancio-31-12-2021-individual",
@@ -55,6 +60,7 @@ window.RANKINGS["it-serieb"] = {
   },
   2018: {
     leagueSize: null,
+    wiki: {"t":"2017–18 Serie B","lang":"en","at":"2026-09-30","n":22},
     clubs: [
       { id:"parma-it", revenue:13.357, reportType:"official_balance_sheet",
         sourceId:"parma-it-bilancio-30-06-2018",
@@ -63,6 +69,7 @@ window.RANKINGS["it-serieb"] = {
   },
   2007: {
     leagueSize: null,
+    wiki: {"t":"2006–07 Serie B","lang":"en","at":"2026-10-03","n":22},
     clubs: [
       { id:"juventus-it", revenue:252.119, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2006-07",

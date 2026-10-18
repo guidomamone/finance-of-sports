@@ -57,7 +57,9 @@
 // EL FORMATO DE data/rankings/<liga>.js: `window.RANKINGS[liga][año] = { leagueSize, clubs:[{ id, revenue, reportType, sourceId, mix,
 // incluidos }], sinDato }`. Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada documento (`fxSource`/`fxRef` del
 // archivo de cada club) y agrupados en Formato simplificado. Orden DESCENDENTE: el 1 del ranking primero. `leagueSize` null = nadie
-// verificó cuántos equipos tuvo la temporada. El archivo publicado lleva UNA línea de comentario (data/ se publica: to-do 209).
+// verificó cuántos equipos tuvo la temporada. `wiki` = { t, lang, at, n }: la página de Wikipedia de la que salió la lista de equipos de
+// esa liga-año (tools/club-league-reference/), con el día en que se leyó y cuántos clubes trae; la vista la cita con su licencia
+// (CC BY-SA 4.0). Sin lista bajada, no va. El archivo publicado lleva UNA línea de comentario (data/ se publica: to-do 209).
 // ============================================================================
 
 const fs = require('fs');
@@ -67,6 +69,25 @@ const vm = require('vm');
 
 const ROOT = path.resolve(__dirname, '..');
 const OUT_DIR = path.join(ROOT, 'data/rankings');
+const REF_DIR = path.join(ROOT, 'tools/club-league-reference');
+
+// La lista de equipos de cada liga-año, de Wikipedia: `<iso2>.json` → leagues[liga][año] = { wikipediaPage, lang, fetchedAt, clubs }.
+let WIKI = null;
+function wikiDe(leagueId, year) {
+  if (!WIKI) {
+    WIKI = {};
+    for (const f of fs.readdirSync(REF_DIR).filter(f => /^[a-z]{2}\.json$/.test(f))) {
+      const ligas = JSON.parse(fs.readFileSync(path.join(REF_DIR, f), 'utf8')).leagues || {};
+      for (const [liga, anios] of Object.entries(ligas)) {
+        for (const [y, r] of Object.entries(anios)) {
+          if (!r.wikipediaPage || !(r.clubs || []).length) continue;
+          (WIKI[liga] || (WIKI[liga] = {}))[y] = { t: r.wikipediaPage, lang: r.lang || 'en', at: (r.fetchedAt || '').slice(0, 10), n: r.clubs.length };
+        }
+      }
+    }
+  }
+  return (WIKI[leagueId] || {})[year] || null;
+}
 
 // ---------------------------------------------------------------------------
 // EL MOTOR. Mismo loader que `tools/audit.js`, y por el mismo motivo que está
@@ -218,6 +239,8 @@ function rankingDe(api, leagueId, year) {
     clubs: filas,
   };
   if (sinDato.length) out.sinDato = sinDato.sort();
+  const wiki = wikiDe(leagueId, year);
+  if (wiki) out.wiki = wiki;
   return out;
 }
 
@@ -235,6 +258,7 @@ function archivoDe(api, leagueId, porAnio) {
     L.push(`  ${y}: {`);
     L.push(`    leagueSize: ${r.leagueSize == null ? 'null' : r.leagueSize},`);
     if (r.sinDato) L.push(`    sinDato: ${JSON.stringify(r.sinDato)},`);
+    if (r.wiki) L.push(`    wiki: ${JSON.stringify(r.wiki)},`);
     L.push('    clubs: [');
     r.clubs.forEach(f => {
       L.push(`      { id:${JSON.stringify(f.id)}, revenue:${f.revenue}, reportType:${JSON.stringify(f.reportType)},`);

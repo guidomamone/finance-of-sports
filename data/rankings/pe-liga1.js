@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["pe-liga1"] = {
   2024: {
     leagueSize: null,
+    wiki: {"t":"2024 Liga 1 (Peru)","lang":"en","at":"2026-10-17","n":18},
     clubs: [
       { id:"alianzalima-pe", revenue:32.005, reportType:"official_balance_sheet",
         sourceId:"alianzalima-pe-eeff-2024",
@@ -12,6 +13,7 @@ window.RANKINGS["pe-liga1"] = {
   },
   2023: {
     leagueSize: null,
+    wiki: {"t":"2023 Liga 1 (Peru)","lang":"en","at":"2026-10-17","n":19},
     clubs: [
       { id:"alianzalima-pe", revenue:29.176, reportType:"official_balance_sheet",
         sourceId:"alianzalima-pe-eeff-2023",
@@ -21,6 +23,7 @@ window.RANKINGS["pe-liga1"] = {
   },
   2022: {
     leagueSize: null,
+    wiki: {"t":"2022 Liga 1 (Peru)","lang":"en","at":"2026-10-17","n":19},
     clubs: [
       { id:"alianzalima-pe", revenue:23.37, reportType:"official_balance_sheet",
         sourceId:"alianzalima-pe-eeff-2022",
@@ -30,6 +33,7 @@ window.RANKINGS["pe-liga1"] = {
   },
   2021: {
     leagueSize: null,
+    wiki: {"t":"2021 Liga 1 (Peru)","lang":"en","at":"2026-10-17","n":18},
     clubs: [
       { id:"alianzalima-pe", revenue:15.248, reportType:"official_balance_sheet",
         sourceId:"alianzalima-pe-eeff-2021",
@@ -38,6 +42,7 @@ window.RANKINGS["pe-liga1"] = {
   },
   2020: {
     leagueSize: null,
+    wiki: {"t":"2020 Liga 1 (Peru)","lang":"en","at":"2026-10-18","n":19},
     clubs: [
       { id:"alianzalima-pe", revenue:12.413, reportType:"official_balance_sheet",
         sourceId:"alianzalima-pe-eeff-2020",
@@ -46,6 +51,7 @@ window.RANKINGS["pe-liga1"] = {
   },
   2019: {
     leagueSize: null,
+    wiki: {"t":"2019 Liga 1 (Peru)","lang":"en","at":"2026-10-17","n":18},
     clubs: [
       { id:"alianzalima-pe", revenue:17.917, reportType:"official_balance_sheet",
         sourceId:"alianzalima-pe-eeff-2019",

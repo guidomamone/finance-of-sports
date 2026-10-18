@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["ee-meistriliiga"] = {
   2025: {
     leagueSize: 10,
+    wiki: {"t":"2025 Meistriliiga","lang":"en","at":"2026-10-18","n":10},
     clubs: [
       { id:"paidelinnameeskond-ee", revenue:4.817, reportType:"official_balance_sheet",
         sourceId:"paidelinnameeskond-ee-aruanne-2025",
@@ -35,6 +36,7 @@ window.RANKINGS["ee-meistriliiga"] = {
   },
   2024: {
     leagueSize: 10,
+    wiki: {"t":"2024 Meistriliiga","lang":"en","at":"2026-10-18","n":10},
     clubs: [
       { id:"fcilevadia-ee", revenue:4.15, reportType:"official_balance_sheet",
         sourceId:"fcilevadia-ee-aruanne-2024",
@@ -64,6 +66,7 @@ window.RANKINGS["ee-meistriliiga"] = {
   },
   2023: {
     leagueSize: 10,
+    wiki: {"t":"2023 Meistriliiga","lang":"en","at":"2026-10-18","n":10},
     clubs: [
       { id:"floratallinn-ee", revenue:3.703, reportType:"official_balance_sheet",
         sourceId:"floratallinn-ee-aruanne-2023",
@@ -96,6 +99,7 @@ window.RANKINGS["ee-meistriliiga"] = {
   },
   2022: {
     leagueSize: 10,
+    wiki: {"t":"2022 Meistriliiga","lang":"en","at":"2026-10-18","n":10},
     clubs: [
       { id:"floratallinn-ee", revenue:3.871, reportType:"official_balance_sheet",
         sourceId:"floratallinn-ee-aruanne-2022",
@@ -125,6 +129,7 @@ window.RANKINGS["ee-meistriliiga"] = {
   },
   2021: {
     leagueSize: 10,
+    wiki: {"t":"2021 Meistriliiga","lang":"en","at":"2026-10-18","n":10},
     clubs: [
       { id:"floratallinn-ee", revenue:6.698, reportType:"official_balance_sheet",
         sourceId:"floratallinn-ee-aruanne-2021",
@@ -151,6 +156,7 @@ window.RANKINGS["ee-meistriliiga"] = {
   },
   2020: {
     leagueSize: 10,
+    wiki: {"t":"2020 Meistriliiga","lang":"en","at":"2026-10-18","n":10},
     clubs: [
       { id:"floratallinn-ee", revenue:4.428, reportType:"official_balance_sheet",
         sourceId:"floratallinn-ee-aruanne-2020",
@@ -180,6 +186,7 @@ window.RANKINGS["ee-meistriliiga"] = {
   },
   2019: {
     leagueSize: 10,
+    wiki: {"t":"2019 Meistriliiga","lang":"en","at":"2026-10-18","n":10},
     clubs: [
       { id:"floratallinn-ee", revenue:2.424, reportType:"official_balance_sheet",
         sourceId:"floratallinn-ee-aruanne-2019",

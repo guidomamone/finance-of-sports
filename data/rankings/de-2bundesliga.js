@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["de-2bundesliga"] = {
   2025: {
     leagueSize: null,
+    wiki: {"t":"2024–25 2. Bundesliga","lang":"en","at":"2026-10-17","n":18},
     clubs: [
       { id:"koln-de", revenue:176.806, reportType:"official_balance_sheet",
         sourceId:"koln-de-jahresabschluss-2025",
@@ -14,6 +15,7 @@ window.RANKINGS["de-2bundesliga"] = {
   },
   2024: {
     leagueSize: null,
+    wiki: {"t":"2023–24 2. Bundesliga","lang":"en","at":"2026-10-17","n":18},
     clubs: [
       { id:"hamburgersv-de", revenue:134.86, reportType:"official_balance_sheet",
         sourceId:"hamburgersv-de-fussball-ag-jahresabschluss-2024",

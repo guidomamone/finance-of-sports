@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["it-seriea"] = {
   2026: {
     leagueSize: null,
+    wiki: {"t":"2025–26 Serie A","lang":"en","at":"2026-10-09","n":20},
     clubs: [
       { id:"lazio-it", revenue:197.958, reportType:"official_balance_sheet",
         sourceId:"lazio-it-relazione-finanziaria-annuale-2025-26",
@@ -11,6 +12,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2025: {
     leagueSize: null,
+    wiki: {"t":"2024–25 Serie A","lang":"en","at":"2026-10-03","n":20},
     clubs: [
       { id:"inter-it", revenue:664.571, reportType:"official_balance_sheet",
         sourceId:"inter-it-fascicolo-bilancio-consolidato-2024-25",
@@ -64,6 +66,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2024: {
     leagueSize: null,
+    wiki: {"t":"2023–24 Serie A","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"inter-it", revenue:506.81, reportType:"official_balance_sheet",
         sourceId:"inter-it-fascicolo-bilancio-consolidato-2023-24",
@@ -108,6 +111,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2023: {
     leagueSize: null,
+    wiki: {"t":"2022–23 Serie A","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"juventus-it", revenue:547.301, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2022-23",
@@ -158,6 +162,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2022: {
     leagueSize: null,
+    wiki: {"t":"2021–22 Serie A","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"juventus-it", revenue:457.102, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2021-22",
@@ -208,6 +213,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2021: {
     leagueSize: null,
+    wiki: {"t":"2020–21 Serie A","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"juventus-it", revenue:569.226, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2020-21",
@@ -252,6 +258,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2020: {
     leagueSize: null,
+    wiki: {"t":"2019–20 Serie A","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"juventus-it", revenue:642.132, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2019-20",
@@ -293,6 +300,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2019: {
     leagueSize: null,
+    wiki: {"t":"2018–19 Serie A","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"juventus-it", revenue:707.217, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2018-19",
@@ -337,6 +345,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2018: {
     leagueSize: null,
+    wiki: {"t":"2017–18 Serie A","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"juventus-it", revenue:588.344, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2017-18",
@@ -375,6 +384,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2017: {
     leagueSize: null,
+    wiki: {"t":"2016–17 Serie A","lang":"en","at":"2026-10-03","n":20},
     clubs: [
       { id:"juventus-it", revenue:642.565, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2016-17",
@@ -389,6 +399,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2016: {
     leagueSize: null,
+    wiki: {"t":"2015–16 Serie A","lang":"en","at":"2026-10-03","n":20},
     clubs: [
       { id:"juventus-it", revenue:442.458, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2015-16",
@@ -406,6 +417,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2015: {
     leagueSize: null,
+    wiki: {"t":"2014–15 Serie A","lang":"en","at":"2026-10-03","n":20},
     clubs: [
       { id:"juventus-it", revenue:391.552, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2014-15",
@@ -423,6 +435,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2014: {
     leagueSize: null,
+    wiki: {"t":"2013–14 Serie A","lang":"en","at":"2026-10-03","n":20},
     clubs: [
       { id:"juventus-it", revenue:431.296, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2013-14",
@@ -440,6 +453,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2013: {
     leagueSize: null,
+    wiki: {"t":"2012–13 Serie A","lang":"en","at":"2026-10-03","n":20},
     clubs: [
       { id:"acmilan-it", revenue:384.373, reportType:"official_balance_sheet",
         sourceId:"acmilan-it-bilancio-gruppo-dic-2013",
@@ -457,6 +471,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2012: {
     leagueSize: null,
+    wiki: {"t":"2011–12 Serie A","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"acmilan-it", revenue:434.488, reportType:"official_balance_sheet",
         sourceId:"acmilan-it-bilancio-gruppo-dic-2012",
@@ -474,6 +489,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2011: {
     leagueSize: null,
+    wiki: {"t":"2010–11 Serie A","lang":"en","at":"2026-10-03","n":20},
     clubs: [
       { id:"acmilan-it", revenue:345.227, reportType:"official_balance_sheet",
         sourceId:"acmilan-it-bilancio-gruppo-dic-2011",
@@ -491,6 +507,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2010: {
     leagueSize: null,
+    wiki: {"t":"2009–10 Serie A","lang":"en","at":"2026-10-03","n":20},
     clubs: [
       { id:"acmilan-it", revenue:338.32, reportType:"official_balance_sheet",
         sourceId:"acmilan-it-bilancio-gruppo-dic-2010",
@@ -508,6 +525,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2009: {
     leagueSize: null,
+    wiki: {"t":"2008–09 Serie A","lang":"en","at":"2026-10-03","n":20},
     clubs: [
       { id:"acmilan-it", revenue:471.965, reportType:"official_balance_sheet",
         sourceId:"acmilan-it-bilancio-gruppo-dic-2009",
@@ -525,6 +543,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2008: {
     leagueSize: null,
+    wiki: {"t":"2007–08 Serie A","lang":"en","at":"2026-10-03","n":20},
     clubs: [
       { id:"acmilan-it", revenue:331.085, reportType:"official_balance_sheet",
         sourceId:"acmilan-it-bilancio-gruppo-dic-2008",
@@ -542,6 +561,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2007: {
     leagueSize: null,
+    wiki: {"t":"2006–07 Serie A","lang":"en","at":"2026-10-09","n":20},
     clubs: [
       { id:"asroma-it", revenue:219.126, reportType:"official_balance_sheet",
         sourceId:"asroma-it-bilancio-2007",
@@ -553,6 +573,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2006: {
     leagueSize: null,
+    wiki: {"t":"2005–06 Serie A","lang":"en","at":"2026-10-03","n":20},
     clubs: [
       { id:"juventus-it", revenue:333.137, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2005-06",
@@ -567,6 +588,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2005: {
     leagueSize: null,
+    wiki: {"t":"2004–05 Serie A","lang":"en","at":"2026-10-03","n":20},
     clubs: [
       { id:"juventus-it", revenue:313.283, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2004-05",
@@ -581,6 +603,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2004: {
     leagueSize: null,
+    wiki: {"t":"2003–04 Serie A","lang":"en","at":"2026-10-03","n":18},
     clubs: [
       { id:"juventus-it", revenue:269.006, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2003-04",
@@ -592,6 +615,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2003: {
     leagueSize: null,
+    wiki: {"t":"2002–03 Serie A","lang":"en","at":"2026-10-03","n":18},
     clubs: [
       { id:"juventus-it", revenue:309.863, reportType:"official_balance_sheet",
         sourceId:"juventus-it-annual-financial-report-2002-03",
@@ -600,6 +624,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2001: {
     leagueSize: null,
+    wiki: {"t":"2000–01 Serie A","lang":"en","at":"2026-10-09","n":18},
     clubs: [
       { id:"lazio-it", revenue:146.502, reportType:"official_balance_sheet",
         sourceId:"lazio-it-bilancio-2000-01",
@@ -608,6 +633,7 @@ window.RANKINGS["it-seriea"] = {
   },
   2000: {
     leagueSize: null,
+    wiki: {"t":"1999–2000 Serie A","lang":"en","at":"2026-10-09","n":18},
     clubs: [
       { id:"lazio-it", revenue:169.46, reportType:"official_balance_sheet",
         sourceId:"lazio-it-bilancio-1999-00",
@@ -616,6 +642,7 @@ window.RANKINGS["it-seriea"] = {
   },
   1999: {
     leagueSize: null,
+    wiki: {"t":"1998–99 Serie A","lang":"en","at":"2026-10-09","n":18},
     clubs: [
       { id:"lazio-it", revenue:132.888, reportType:"official_balance_sheet",
         sourceId:"lazio-it-bilancio-1998-99",

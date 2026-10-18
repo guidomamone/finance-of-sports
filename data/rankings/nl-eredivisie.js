@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["nl-eredivisie"] = {
   2025: {
     leagueSize: null,
+    wiki: {"t":"2024–25 Eredivisie","lang":"en","at":"2026-09-30","n":18},
     clubs: [
       { id:"feyenoord-nl", revenue:258.78, reportType:"official_balance_sheet",
         sourceId:"feyenoord-nl-jaarverslag-2025",
@@ -20,6 +21,7 @@ window.RANKINGS["nl-eredivisie"] = {
   },
   2024: {
     leagueSize: null,
+    wiki: {"t":"2023–24 Eredivisie","lang":"en","at":"2026-09-30","n":18},
     clubs: [
       { id:"psv-nl", revenue:196.399, reportType:"official_balance_sheet",
         sourceId:"psv-nl-jaarverslag-2024",

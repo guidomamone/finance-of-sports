@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["ee-esiliiga"] = {
   2024: {
     leagueSize: 10,
+    wiki: {"t":"2024 Esiliiga","lang":"en","at":"2026-10-18","n":10},
     clubs: [
       { id:"harjujklaagri-ee", revenue:0.053, reportType:"official_balance_sheet",
         sourceId:"harjujklaagri-ee-aruanne-2024",
@@ -11,6 +12,7 @@ window.RANKINGS["ee-esiliiga"] = {
   },
   2021: {
     leagueSize: 10,
+    wiki: {"t":"2021 Esiliiga","lang":"en","at":"2026-10-18","n":10},
     clubs: [
       { id:"tallinnakalev-ee", revenue:0.317, reportType:"official_balance_sheet",
         sourceId:"tallinnakalev-ee-aruanne-2021",
