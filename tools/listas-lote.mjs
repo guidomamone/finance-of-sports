@@ -37,6 +37,12 @@ const NOMBRES = {
   'jp-j1': ['J1 League', false], 'mx-ligamx': ['Liga MX', true], 'pe-liga1': ['Liga 1 (Peru)', false], 'ru-pervayaliga': ['Russian First League', true],
 };
 
+// (to-do 276) Ligas sin página en la Wikipedia en inglés: el título en otro idioma, en las dos formas ("2019-20" y "2021"), y la sección de
+// equipos. Se prueban solo si ningún título en inglés pasó la compuerta, con la misma compuerta (tamaño y todos los clubes del sitio).
+const OTRO_IDIOMA = {
+  'ar-primerab': { lang: 'es', titulos: (a) => [`Campeonato de Primera B ${a - 1}-${String(a).slice(2)} (Argentina)`, `Campeonato de Primera B ${a} (Argentina)`], seccion: 'Equipos participantes' },
+};
+
 // nombres viejos de la liga en los títulos de Wikipedia ("2016–17 Primera B Nacional")
 const OTROS_NOMBRES = { 'ar-primeranacional': ['Primera B Nacional'] };
 const norm = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
@@ -143,22 +149,33 @@ async function main() {
     const ligaOk = (t) => [nombre, ...(OTROS_NOMBRES[o.liga] || [])].some((x) => norm(t).includes(norm(x)));
     const tam = SIZE[o.liga]?.[o.anio];
     let hecho = null; const probados = new Set(); let mejor = null;
+    const nombresDe = (id) => [CI[id]?.n, CLUBS[id]?.displayName, CLUBS[id]?.name, ...Object.entries(alias[o.iso] || {}).filter(([, a]) => a.clubId === id).map(([n]) => n)].filter(Boolean);
+    // una liga por grupos (Serie C: 3 de 20) puede pasar los 40: el tope es 40 por grupo (to-do 276)
+    const prueba = (t, r, extra) => {
+      const faltan = [...o.ids].filter((id) => !r.teams.some((tm) => nombresDe(id).some((n) => pega(n, tm))));
+      const tamOk = tam ? r.teams.length === tam : r.teams.length >= 8 && r.teams.length <= 40 * (r.grupos || 1);
+      if (tamOk && !faltan.length) { hecho = { t, r, extra }; return true; }
+      if (!mejor || faltan.length < mejor.faltan.length) mejor = { t, n: r.teams.length, faltan, teams: r.teams };
+      return false;
+    };
     for (const t of [...titulos, ...(await buscar(`${titulos[0]}`))]) {
       if (probados.has(t) || probados.size >= 7) continue; probados.add(t);
       if (!temporadaOk(t) || !ligaOk(t)) continue;
       const r = await wiki([t, o.liga, String(o.anio), '--pais', o.iso, '--json']); if (!r) continue;
-      const nombresDe = (id) => [CI[id]?.n, CLUBS[id]?.displayName, CLUBS[id]?.name, ...Object.entries(alias[o.iso] || {}).filter(([, a]) => a.clubId === id).map(([n]) => n)].filter(Boolean);
-      const faltan = [...o.ids].filter((id) => !r.teams.some((tm) => nombresDe(id).some((n) => pega(n, tm))));
-      const tamOk = tam ? r.teams.length === tam : r.teams.length >= 8 && r.teams.length <= 40;
-      if (tamOk && !faltan.length) { hecho = { t, r }; break; }
-      if (!mejor || faltan.length < mejor.faltan.length) mejor = { t, n: r.teams.length, faltan, teams: r.teams };
+      if (prueba(t, r, [])) break;
+    }
+    const otro = OTRO_IDIOMA[o.liga];
+    if (!hecho && otro) for (const t of otro.titulos(o.anio)) {
+      const extra = ['--lang', otro.lang, '--section', otro.seccion]; probados.add(`${t} (${otro.lang})`);
+      const r = await wiki([t, o.liga, String(o.anio), '--pais', o.iso, ...extra, '--json']); if (!r) continue;
+      if (prueba(t, r, extra)) break;
     }
     if (!hecho) {
       fallan.push(`${o.liga} ${o.anio}${tam ? ` (tamaño conocido ${tam})` : ''}: ${mejor ? `mejor "${mejor.t}" con ${mejor.n} equipos, no encuentra ${mejor.faltan.join(', ') || '(están todos: falla el tamaño)'}${process.argv.includes('--detalle') ? ` | lista: ${mejor.teams.join(', ')}` : ''}` : `ningún título con la temporada y la liga (probados: ${[...probados].join(' / ')})`}`);
       continue;
     }
     ok++; console.log(`OK ${o.liga} ${o.anio}: "${hecho.t}" -> ${hecho.r.teams.length} equipos (${hecho.r.seccion})`);
-    if (!ensayo) execFileSync('node', [FETCH, hecho.t, o.liga, String(o.anio), '--pais', o.iso], { cwd: ROOT, stdio: 'ignore' });
+    if (!ensayo) execFileSync('node', [FETCH, hecho.t, o.liga, String(o.anio), '--pais', o.iso, ...hecho.extra], { cwd: ROOT, stdio: 'ignore' });
   }
   console.log(`\nlistas-lote: ${ok} de ${ok + fallan.length} liga-años pasaron la compuerta${ensayo ? ' (ensayo: no se escribió nada)' : ''}.`);
   for (const f of fallan) console.log(`  NO: ${f}`);
