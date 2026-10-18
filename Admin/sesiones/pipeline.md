@@ -10,15 +10,19 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
   de los 259 clubes, idénticos antes y después. Con los ajustes nuevos, `--medir` sigue idéntico.
 - **Ajustes escritos** (`Admin/registros/ajustes-manuales.jsonl`, leídos por subagente Sonnet y revisados contra el `.md`):
   RB Leipzig 2024 (escala miles; caja 783 TEUR; deuda 153.717 TEUR), RB Leipzig 2023 (escala miles; caja 765.425,23 EUR; deuda 111.731
-  TEUR), HSV 2024 (escala miles; caja 35.723.518,58 EUR). Ensayo: Leipzig 4 de 4 años vacíos, HSV 1 de 2.
+  TEUR), HSV 2024 (escala miles; caja 35.723.518,58 EUR; deuda 57.848 TEUR, con el bono convertible por decisión de Guido). Ensayo: Leipzig 4 de 4
+  años vacíos, HSV 2 de 2.
 
 ## Qué queda pendiente (para TODO)
 
 - **Escribir caja y deuda en `data/`, en la carpeta principal después del merge** (sin API: escalón 0). Junto con lo que ya dejó la
   sesión anterior:
   `node tools/caja-deuda.mjs --club dortmund-de --escribir && node tools/caja-deuda.mjs --club rbleipzig-de --escribir && node tools/caja-deuda.mjs --club hamburgersv-de --escribir`
-  Escribe Dortmund 2024-2025 y RB Leipzig 2022-2025, más HSV 2024 caja.
-- **HSV 2024 deuda:** espera la decisión de Guido: ¿entra la Wandelschuldverschreibung (bono convertible) de TEUR 30.000? Con ella, 57.848 TEUR (lo que HSV imprime como Finanzverbindlichkeiten, .md L563); sin ella, 27.848 (como 2025, donde la WSV pasó a una línea propia fuera de Verbindlichkeiten). Con la decisión: `node tools/ajustes.mjs --agregar "Clubes/Alemania/Hamburger SV/fussball-ag-jahresabschluss-2023-24.pdf" deuda --anio 2024 --valor <57848 o 27848> --motivo "..."`.
+  Escribe Dortmund 2024-2025, RB Leipzig 2022-2025 y HSV 2024.
+- **Criterio nuevo de deuda (decisión de Guido, 2026-10-18), para `Admin/CONVENCIONES-DATOS.md` y la skill `club-data-mapping`:** un bono
+  convertible (Wandelschuldverschreibung) es deuda financiera y entra en `grossDebt`. Caso: HSV 2024, 57.848 TEUR con la WSV de 30.000.
+  HSV 2025 (22,03 M, ya publicado) no la tiene porque el documento la saca de Verbindlichkeiten a una línea propia (B.): revisar si 2025
+  debería sumarla. No se tocó.
 
 ## Qué deja de ser cierto en ESTADO
 
