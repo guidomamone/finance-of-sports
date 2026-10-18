@@ -144,7 +144,7 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
 
 ### Qué queda (TODO)
 
-- 252: notas sin URL del canal (Brasil 3, Perú, Italia y Chile 1; Colombia 2 es de
+- 252: la nota de Unión Magdalena (Colombia) sin URL del canal; es de
   fos-onboarding). Inglaterra y Alemania probablemente sean de registro (Companies House, Unternehmensregister), como Dinamarca: canal
   por API en el script, no URL.
 - 26 clubes con el PDF del ejercicio siguiente ya bajado y sin cargar (los lista `node tools/ejercicios-nuevos.mjs`): onboarding.
@@ -169,3 +169,11 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
   mediateca de WordPress aunque la página se arme con JavaScript (Banfield). Resultado: Ferro 2024 ya bajado, Los Andes y Banfield
   revisados sin publicar, Almagro a revisar (el sitio no responde; sus PDFs solo están en Wayback). Corrida de hoy: 0 nuevos, 30 ya
   bajados, 18 a revisar con el navegador.
+- **252: las últimas notas sin URL.** Alianza Lima (página de transparencia; se arma con JavaScript, la revisa el navegador) y
+  Botafogo-SP (`botafogofutebolsa.com.br`, mediateca) con "Página del canal"; Chievo con "Página del canal: ninguna" (desapareció en 2021,
+  sitio muerto): el script lo saltea y lo cuenta como "sin canal vivo". Canales con navegador e instrucciones exactas en la línea "a
+  revisar": el repositorio de la Federação Paulista (Ituano; Cloudflare, `ListaFinanca.ashx` desde la consola) y la CMF chilena (RUT de la
+  nota, pestaña "Información Financiera"). El script ahora mira "ya bajado" ANTES de pedir la URL (Universidad de Chile y Mirassol ya
+  tenían el 2025), busca la carpeta por nombre cuando la evidencia de carga no la nombra (Argentinos Juniors, RB Bragantino) y avisa si
+  `--club` no existe. Corrida de hoy: 0 nuevos, 35 ya bajados sin cargar, 11 a revisar con el navegador (portales con JavaScript o caídos,
+  Unternehmensregister, la FPF), 1 sin canal vivo. Solo queda sin URL Unión Magdalena (Colombia, de fos-onboarding).

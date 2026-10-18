@@ -1,5 +1,6 @@
 # Alianza Lima (Club Alianza Lima)
 
+- **Página del canal** (la mira la revisión mensual, `tools/ejercicios-nuevos.mjs`; agregada 2026-10-18): https://www.clubalianzalima.com.pe/transparencia
 **Ángulos**: sitio oficial: agotado (6 PDFs 2019-2024; /transparencia es JS y no lista) · regulador/país: no aplica · Wayback CDX: hecho (3.859 URLs; solo 2019/2020/2022/2023 archivados) · búsqueda web: n/a · barrido: 4 (Sonnet) — 2026-10-03
 
 - **CARGADO al sitio: los 6 ejercicios (2019-2024), `data/pe/alianzalima-pe-data.js`.** Tie-out exacto

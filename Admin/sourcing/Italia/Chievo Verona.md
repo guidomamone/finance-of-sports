@@ -1,5 +1,6 @@
 # Chievo Verona
 
+- **Página del canal** (la mira la revisión mensual, `tools/ejercicios-nuevos.mjs`; agregada 2026-10-18): ninguna — el club desapareció en 2021 y su sitio está muerto (solo Wayback); la revisión mensual no lo mira
 **Ángulos**: sitio oficial: agotado (sitio muerto, solo Wayback) · Wayback CDX: agotado (dominio completo, páginas `attachment/page`) · búsqueda web (Exa): sin 2017 · regulador/país: no aplica — 2026-10-07
 
 - **Deporte**: Fútbol

@@ -56,6 +56,14 @@ function carpetaDe(id) {
   const n = {}; for (const m of readFileSync(f, 'utf8').matchAll(/Clubes\/([^/\n]+)\/([^/\n]+)\//g)) n[`${m[1]}/${m[2]}`] = (n[`${m[1]}/${m[2]}`] || 0) + 1;
   return Object.entries(n).sort((a, b) => b[1] - a[1])[0]?.[0] || null;
 }
+// si la evidencia de carga no nombra la carpeta (Argentinos Juniors, RB Bragantino): una carpeta de Clubes/ con el nombre del club que
+// además tenga su nota en Admin/sourcing/
+const _carpetas = existsSync(resolve(ROOT, 'Clubes')) ? readdirSync(resolve(ROOT, 'Clubes')).flatMap((p) => { try { return readdirSync(resolve(ROOT, 'Clubes', p)).map((c) => `${p}/${c}`); } catch { return []; } }) : [];
+function carpetaPorNombre(nombre) {
+  const n = String(nombre || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim(); if (!n) return null;
+  const hits = _carpetas.filter((c) => c.split('/')[1].toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim() === n && existsSync(resolve(ROOT, 'Admin', 'sourcing', `${c}.md`)));
+  return hits.length === 1 ? hits[0] : null;
+}
 // las URLs de la nota de sourcing: completas y `dominio/ruta`; primero las de una línea "Canal"
 function urlsDe(carpeta) {
   const f = resolve(ROOT, 'Admin', 'sourcing', `${carpeta}.md`); if (!existsSync(f)) return [];
@@ -143,8 +151,9 @@ const NO_FINANCIERO = /parecer|\bato\b|ato-administrativo|edital|convoca|\bata\b
 
 async function main() {
   const { CI, CLUBS } = cargar();
+  if (SOLO && !CI[SOLO]) { console.error(`--club ${SOLO}: no es un club cargado (mirá data/club-index.js)`); process.exit(1); }
   const registro = existsSync(REGISTRO) ? JSON.parse(readFileSync(REGISTRO, 'utf8')) : {};
-  const encontrados = [], aMano = [], esperando = [], yaBajado = [], noPublicado = [];
+  const encontrados = [], aMano = [], esperando = [], yaBajado = [], noPublicado = [], sinCanal = [];
   for (const [id, c] of Object.entries(CI)) {
     if (SOLO && id !== SOLO) continue;
     const reales = (c.yrs || []).filter(([, t]) => t !== 'official_budget').map(([y]) => +y); if (!reales.length) continue;
@@ -153,7 +162,7 @@ async function main() {
     const cierre = new Date(`${anio}-${mmdd}T00:00:00Z`); const debe = new Date(cierre); debe.setUTCMonth(debe.getUTCMonth() + MESES_PUBLICACION);
     if (debe > new Date()) { esperando.push(id); continue; }
     const fs = [...formas(anio, mmdd.startsWith('12')), `${anio}-${mmdd}`]; // también la fecha de cierre ("aarsrapport-2025-06-30.xhtml")
-    const carpeta = carpetaDe(id); const urls = carpeta ? urlsDe(carpeta) : [];
+    const carpeta = carpetaDe(id) || carpetaPorNombre(c.n || CLUBS[id]?.displayName); const urls = carpeta ? urlsDe(carpeta) : [];
     const nombre = c.n || CLUBS[id]?.displayName || id;
     // REINO UNIDO: Companies House por número de sociedad ("Companies House n° 04250459" en la nota), con tools/companies-house-fetch.mjs
     const chNum = carpeta && /^(gb|en|sc)$/i.test(String(c.c)) ? numeroCH(carpeta) : null;
@@ -191,13 +200,20 @@ async function main() {
       if (doc && !(registro[id]?.anio === anio && registro[id].pdfs.includes(doc.url))) { encontrados.push({ id, nombre, anio, carpeta, pdfs: [doc.url], nombres: { [doc.url]: `aarsrapport-${fecha}.${doc.ext}` } }); }
       continue;
     }
-    if (!carpeta || !urls.length) { aMano.push({ id, nombre, anio, motivo: carpeta ? `sin URL en Admin/sourcing/${carpeta}.md` : 'sin carpeta en la evidencia de carga', urls: [] }); continue; }
+    if (!carpeta) { aMano.push({ id, nombre, anio, motivo: 'sin carpeta en la evidencia de carga', urls: [] }); continue; }
     const yaAvisados = new Set(registro[id]?.anio === anio ? registro[id].pdfs : []);
     const enCarpeta = new Set(existsSync(resolve(ROOT, 'Clubes', carpeta)) ? readdirSync(resolve(ROOT, 'Clubes', carpeta)).map((f) => f.toLowerCase()) : []);
     // si la carpeta ya tiene un documento de esa temporada (con cualquier nombre: Chapecoense "demonstracoes-contabeis-2022.pdf"), no es
     // nuevo: está bajado y falta cargarlo, que es otro trabajo (node tools/estado.mjs)
     const dosAnios = (f) => !mmdd.startsWith('12') && f.includes(String(anio - 1)) && f.includes(String(anio)) && f.indexOf(String(anio - 1)) < f.lastIndexOf(String(anio));
     if ([...enCarpeta].some((f) => /\.pdf$/.test(f) && (fs.some((x) => f.includes(x.toLowerCase())) || dosAnios(f)))) { yaBajado.push({ id, nombre: c.n || CLUBS[id]?.displayName || id, anio }); continue; }
+    // canales que solo se ven con el navegador: la tarea los revisa con estas instrucciones (skill club-sourcing, paises/Brasil.md y Chile.md)
+    const nota = existsSync(resolve(ROOT, 'Admin', 'sourcing', `${carpeta}.md`)) ? readFileSync(resolve(ROOT, 'Admin', 'sourcing', `${carpeta}.md`), 'utf8') : '';
+    if (/P[áa]gina del canal\**[^\n]*:\s*ninguna/i.test(nota)) { sinCanal.push(id); continue; } // club desaparecido o sin canal vivo
+    if (!urls.length && /futebolpaulista\.com\.br/i.test(nota)) { aMano.push({ id, nombre, anio, motivo: `repositorio de la Federação Paulista (Cloudflare: con el navegador): abrir https://futebolpaulista.com.br/Institucional/Financas.aspx y, desde la consola, ListaFinanca.ashx?periodoSelecionado=${anio} con el header X-Requested-With: XMLHttpRequest; buscar "${nombre}"`, urls: [] }); continue; }
+    const rutCmf = (nota.match(/cmfchile\.cl\/[^\s)]*rut=(\d+)/) || [])[1];
+    if (!urls.length && rutCmf) { aMano.push({ id, nombre, anio, motivo: `CMF (pide clics reales): https://www.cmfchile.cl/institucional/mercados/entidad.php?mercado=V&rut=${rutCmf}&tipoentidad=RVEMI, pestaña "Información Financiera" (no "EEFF Filiales"), cierre 12/${anio}`, urls: [] }); continue; }
+    if (!urls.length) { aMano.push({ id, nombre, anio, motivo: `sin URL en Admin/sourcing/${carpeta}.md`, urls: [] }); continue; }
     // clubes que numeran sus ejercicios (Argentina: "balance-ejercicio-105-2020-21.pdf"): el número del ejercicio que sigue, por el
     // desfase número/año que ya muestran los archivos de la carpeta
     let numEj = null;
@@ -231,7 +247,7 @@ async function main() {
   }
 
   for (const e of encontrados) console.log(`NUEVO ${e.nombre} (${e.id}) ejercicio ${e.anio}: ${e.pdfs.join(' | ')}`);
-  console.log(`\n${encontrados.length} clubes con un PDF nuevo; ${aMano.length} para revisar con el navegador; ${esperando.length} todavía en plazo (cierre + ${MESES_PUBLICACION} meses); ${yaBajado.length} ya tienen el PDF en su carpeta (falta cargarlo).`);
+  console.log(`\n${encontrados.length} clubes con un PDF nuevo; ${aMano.length} para revisar con el navegador; ${esperando.length} todavía en plazo (cierre + ${MESES_PUBLICACION} meses); ${yaBajado.length} ya tienen el PDF en su carpeta (falta cargarlo)${sinCanal.length ? `; ${sinCanal.length} sin canal vivo (no se miran)` : ''}.`);
   for (const a of aMano) console.log(`  A MANO ${a.nombre} (${a.id}) ejercicio ${a.anio}: ${a.motivo}${a.urls.length ? ` — ${a.urls.join(' ; ')}` : ''}`);
   if (noPublicado.length) console.log(`  TODAVÍA NO PUBLICADO (se leyó la página o el registro): ${noPublicado.map((y) => `${y.nombre} ${y.anio}`).join(', ')}`);
   if (yaBajado.length) console.log(`  YA EN SU CARPETA, SIN CARGAR: ${yaBajado.map((y) => `${y.nombre} ${y.anio}`).join(', ')}`);
