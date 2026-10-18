@@ -133,6 +133,11 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   Admin/mediciones/perimetro-a2-medicion-recorte-232e.txt. El contexto alrededor de los títulos le sirve a Claude para ubicar el estado.
 
 ## Conocido, sin daño hoy (no se trabaja salvo que algo cambie)
+- **Paso A de perimetro-senales en estonio (to-do 298 d, 2026-10-18): probado, no entra.** Con "Kokku tulud" como total, los números
+  "1 922 401,00" y "konsolideeritud" como título consolidado, las dos verdades (102 y 202 documentos) dan idénticas, pero los informes
+  estonios con dos estados siguen sin voto: su total de ingresos dice "Kokku" a secas, igual que el total del activo, del pasivo y del flujo.
+  Sin daño hoy: con el 298 d esos clubes frenan en vez de quedar con el perímetro equivocado. Retomar si se quiere que voten solos (habría
+  que tomar el total de cada estado desde las líneas que da A2).
 - **Renglones NBB "(+)/(-)" impresos negativos (to-do 298 b2, 2026-10-18): no se reproduce.** El onboarding de Bélgica vio el 631/4 de
   Beerschot 2025 (−64.834) entrar positivo y necesitó un ajuste `fila`. Con el código de hoy (y el 298 b1), Beerschot sin ese ajuste ni los
   de signo financiero da el renglón negativo, abierto por su nota ("Teruggenomen" −8.210 y −56.624, L817 y L820), y cierra con la lectura 5;

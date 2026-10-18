@@ -123,6 +123,12 @@ Lo de arriba ya lo pasó la principal (merge 621acf6cea, CHANGELOG 738). Lo nuev
   2 → 32 (24 cajas y 8 deudas, confirmados por el documento vecino; Tallinna Kalev 2019 0,00177 = "Raha 1 770" L90). `--medir` y ensayo de
   los 259 clubes de la rama idénticos. La "caja equivocada" de Tallinna Kalev de onboarding: 0,028424 y 0,005455 son las cajas BUENAS de
   2023 (L117) y 2024 (L110); en esa corrida quedaron atadas a 2019 y 2020. Con los datos de hoy cada una cae en su año; no se reprodujo.
+- **El perímetro del club con años de los dos estados sin voto (to-do 298 d).** `tools/perimetro-senales.mjs` (`fijarPerimetroDeClubes`):
+  si algún ejercicio trae los dos estados y no votó, el perímetro del club no sale de los ejercicios de un solo estado (punto 2 de la regla):
+  queda sin decidir y esos ejercicios llevan su ajuste (punto 1). Nuevo ensayo `--decidir-clubes <lista> --solo-cache` (gratis, sin escribir).
+  Medido: 42 carpetas con ajuste de club idénticas; las dos verdades (102 y 202) idénticas; cambian Kuressaare, Tallinna Kalev y Narva Trans
+  (de "individual" a sin decidir con sus ajustes por documento), que en la principal hubo que corregir a mano a "consolidado".
+  El paso A en estonio se probó y no entra (HALLAZGOS).
 
 ### Qué queda pendiente (para TODO)
 - **Escribir esas cajas en `data/`, en la carpeta principal después del merge** (gratis; sin `--ejecutar`, solo el escalón NBB y lo guardado):
@@ -141,3 +147,4 @@ Lo de arriba ya lo pasó la principal (merge 621acf6cea, CHANGELOG 738). Lo nuev
   `--ejecutar` paga ~US$ 0,07 por club en Jev.
 - caja-deuda (to-do 298 c2): un año belga sin vecino escribe la caja del código 54/58 (si el balance cuadra); antes quedaba sin dato. La deuda sigue igual.
 - `vocabulario.mjs` suma el estonio (to-do 298 c3): caja-deuda encuentra el balance estonio y propone caja y deuda; nada cambia en otros países.
+- perimetro-senales (to-do 298 d): un club que trae años con los dos estados sin voto (Estonia) frena en vez de fijar el perímetro de los años de un solo estado. Los clubes que ya tienen ajuste de club no cambian.
