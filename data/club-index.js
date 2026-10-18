@@ -107,7 +107,7 @@ window.CLUB_INDEX = {
   "feyenoord-nl": {"n":"Feyenoord","c":"NL","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "fiorentina-it": {"n":"Fiorentina","c":"IT","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2019,"official_balance_sheet"]],"ci":{"2019":"12-31"}},
   "flamengo-br": {"n":"Flamengo","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
-  "floratallinn-ee": {"n":"Flora Tallinn","c":"EE","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2023,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"]]},
+  "floratallinn-ee": {"n":"Flora Tallinn","c":"EE","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"]]},
   "fluminense-br": {"n":"Fluminense","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "fortaleza-br": {"n":"Fortaleza","c":"BR","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "fortalezaceif-co": {"n":"Fortaleza CEIF","c":"CO","q":"full","y":9,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"]]},

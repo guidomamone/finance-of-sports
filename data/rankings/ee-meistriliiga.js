@@ -33,6 +33,15 @@ window.RANKINGS["ee-meistriliiga"] = {
         mix:[["Comercial / Sponsors",0.092],["Venta de Jugadores",0.022],["Otros ingresos",0.349]] },
     ],
   },
+  2024: {
+    leagueSize: 10,
+    sinDato: ["fcilevadia-ee","kuressaare-ee","narvatrans-ee","nommekalju-ee","paidelinnameeskond-ee","tallinnakalev-ee","tartutammeka-ee"],
+    clubs: [
+      { id:"floratallinn-ee", revenue:4.076, reportType:"official_balance_sheet",
+        sourceId:"floratallinn-ee-aruanne-2024",
+        mix:[["Cuotas Sociales",0.988],["Comercial / Sponsors",0.196],["Estadio",0.12],["Televisión",0.012],["Premios por competencias",1.751],["Venta de Jugadores",0.065],["Otras secciones deportivas",0.23],["Otros ingresos",0.714]] },
+    ],
+  },
   2023: {
     leagueSize: 10,
     sinDato: ["fcilevadia-ee","harjujklaagri-ee","kuressaare-ee","narvatrans-ee","nommekalju-ee","paidelinnameeskond-ee","tallinnakalev-ee","tartutammeka-ee"],

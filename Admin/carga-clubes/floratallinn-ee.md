@@ -112,6 +112,72 @@ tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-18): null, SIN VERIFICAR (sin caché de rosters para ee (tools/club-league-reference/ee.json)).
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/Flora Tallinn/aruanne-2024.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/Flora Tallinn/aruanne-2024.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Liikmetelt saadud tasud | pág. 5, precedente |
+| 2 | UEFA solidaarsustoetus osalemise eest | pág. 18, Jev 1 |
+| 3 | UEFA solidaarsustoetus noorte- ja kogukonnatööle | pág. 18, Jev 1 |
+| 4 | Riigi ja/või KOV toetus | pág. 18, precedente |
+| 5 | EJL toetused | pág. 18, precedente |
+| 6 | Muud toetused | pág. 18, precedente |
+| 7 | Tulu piletimüügist | pág. 19, precedente |
+| 8 | Tulu ülekandeõiguste müügist | pág. 19, precedente |
+| 9 | Tulu mängijaõiguste müügist | pág. 19, precedente |
+| 10 | Sponsorlus- ja reklaamitulu | pág. 19, precedente |
+| 11 | Staadioni rent | pág. 19, precedente |
+| 12 | Muu tulu ettevõtlusest | pág. 19, precedente |
+| 13 | Muud tulud | pág. 5, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Mängijatele makstav sportlasetoetus | pág. 19, precedente |
+| 2 | Mängijatele makstav sportlasestipendium | pág. 19, precedente |
+| 3 | Muud annetused | pág. 19, precedente |
+| 4 | Üür ja rent | pág. 20, precedente |
+| 5 | Elektrienergia | pág. 20, Jev 1 |
+| 6 | Kütus | pág. 20, Jev 0.99 |
+| 7 | Mitmesugused bürookulud | pág. 20, precedente |
+| 8 | Lähetuskulud | pág. 20, precedente |
+| 9 | Koolituskulud | pág. 20, precedente |
+| 10 | Riiklikud ja kohalikud maksud | pág. 20, precedente |
+| 11 | Kulu ebatõenäoliselt laekuvatest nõuetest | pág. 20, precedente |
+| 12 | Võistluste ja treeningutega seotud kulud | pág. 20, precedente |
+| 13 | Kulud mängijate õiguste ostmisest | pág. 20, precedente |
+| 14 | Reklaamikulud | pág. 20, precedente |
+| 15 | Konsultatsioonid | pág. 20, precedente |
+| 16 | Autokulud | pág. 20, precedente |
+| 17 | Kasutusrendikulud | pág. 20, precedente |
+| 18 | Pangateenused | pág. 20, precedente |
+| 19 | Staadioni halduskulud | pág. 20, precedente |
+| 20 | Müüdud kaup soetusmaksumuses | pág. 20, precedente |
+| 21 | Muud | pág. 20, precedente |
+| 22 | Mängijate palgakulu | pág. 20, precedente |
+| 23 | Sotsiaalmaks mängijate töötasudelt | pág. 20, precedente |
+| 24 | Muu personali palgakulu | pág. 20, precedente |
+| 25 | Sotsiaalmaks muu personali töötasudelt | pág. 20, precedente |
+| 26 | Põhivarade kulum ja väärtuse langus | pág. 5, precedente |
+| 27 | Kahjum valuutakursi muutustest | pág. 20, Jev 0.92 |
+| 28 | Esinduskulud | pág. 20, precedente |
+| 29 | Muud | pág. 20, precedente |
+
+### Meta
+
+```text
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L156) (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2023
 
 ### Ingresos
@@ -342,4 +408,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Flora Tallinn/aruanne-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### floratallinn-ee-aruanne-2024
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Flora Tallinn/aruanne-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
