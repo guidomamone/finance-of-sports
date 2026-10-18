@@ -171,7 +171,8 @@
 - To-do 282 a, escaneos transcriptos con Mistral (firma y opinión cotejadas con Tesseract): Napoli 2019 (Baker Tilly Revisa), 2021
   (Ria Grant Thornton) y 2023-2025 (RSM), Torino 2018-2019 (FV & C. S.A.S.), y Lazio 2026, que pasa del informe individual al del
   consolidado. Todos sin salvedades.
-- FALTA EN EL PDF: 88 a 53. Los PDF nuevos, copiados a la carpeta principal (rsync `--no-links`). ASSET_V 1300 en la rama.
+- To-do 282 a, Fortaleza CEIF 2025: dictamen del revisor fiscal de SIIS (radicado 2026-01-381454), sin salvedades.
+- FALTA EN EL PDF: 88 a 52. Los PDF nuevos, copiados a la carpeta principal (rsync `--no-links`). ASSET_V 1300 en la rama.
 
 ### Qué queda (para TODO)
 
@@ -197,3 +198,10 @@
   a la principal: el archivo real de la principal queda reemplazado por un link a sí mismo. Pasó con dos PDF de Lazio (los informes del
   individual de 2025 y 2026); se recuperaron bajándolos otra vez del sitio del club (mismas páginas que su .md). La forma segura: copiar
   solo archivos regulares, por ejemplo `rsync -a --no-links` o `find … -type f` como lista.
+
+### Qué queda del 282 a (al cortar la sesión por límite de uso)
+
+- Hamburgo 2024-2025: el Bundesanzeiger llega hasta el ejercicio 2021-22; los siguientes están en el Unternehmensregister (buscar
+  "HSV Fußball AG"; el buscador pide clics reales y aceptar solo las cookies necesarias). No llegué a abrirlos.
+- OFI 2018 (ΓΕΜΗ, ver `club-sourcing/paises/Grecia.md`), San Lorenzo 2011-2012 y Argentinos 2015 (memorias anteriores) y los 10
+  japoneses 2025 (probablemente sin canal público): sin buscar todavía.

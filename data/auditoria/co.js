@@ -165,6 +165,18 @@ Object.assign(window.CLUB_AUDITORIA, {
     "md": "Clubes/Colombia/Fortaleza CEIF/dictamen-revisor-fiscal-2024.md",
     "linea": 11
    }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Jesús Alberto Díaz Pineda",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Colombia/Fortaleza CEIF/dictamen-revisor-fiscal-2025.md",
+    "linea": 25
+   }
   }
  },
  "junior-co": {
