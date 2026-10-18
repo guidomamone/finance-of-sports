@@ -13,6 +13,10 @@ To-dos de la sesión, en orden: 250 (hooks), 244 (licencia), 300 (auditoría pro
   - `skills-con-ok`: escribir en `.claude/skills/` (Edit, Write, o un Bash con `sed -i`, `>`, `tee`, `mv`, `cp`, `rm`…) le pide permiso a
     Guido con el motivo, aun en modo automático. Leer (cat, grep, `sed -n`) no pregunta.
   - `push-con-ok`: `git push` le pide permiso a Guido cada vez (`git stash push` no).
+  - `docs-de-la-principal`: en un worktree, escribir `Admin/TODO.md`, `CHANGELOG.md` o `ESTADO.md` se rechaza con el motivo y el
+    `Admin/sesiones/<rama>.md` que corresponde. En la principal no hace nada.
+  - Los chequeos de Bash leen el texto del comando: un comando que solo MENCIONA una de esas rutas junto a algo que escribe (por ejemplo, una
+    prueba con el JSON del hook adentro) también se frena. Es el precio de no parsear shell; pasó una vez probando.
 
 ## Qué deja de ser cierto en ESTADO
 

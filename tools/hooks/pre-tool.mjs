@@ -13,6 +13,8 @@
 //   skills-con-ok            escribir en .claude/skills/ (Edit, Write o un Bash que escribe) le pide permiso a Guido, aun en modo automático:
 //                            las skills no se editan sin mostrarle el texto y esperar su ok.
 //   push-con-ok              `git push` le pide permiso a Guido cada vez: un push a main despliega en Netlify (free tier, ~25 deploys/mes).
+//   docs-de-la-principal     en un worktree, escribir Admin/TODO.md, CHANGELOG.md o ESTADO.md se rechaza: los escribe solo la principal; el
+//                            cierre de la rama va en Admin/sesiones/<rama>.md (skill de arranque, worktree.md). En la principal no hace nada.
 //
 // Entrada: el JSON del hook por stdin. Salida: nada (sigue normal) o el JSON de PreToolUse con permissionDecision "deny" / "ask".
 // ============================================================================
@@ -72,7 +74,22 @@ function pushConOk(cmd) {
   if (GIT_SUB('push').test(cmd)) decidir('ask', 'git push necesita el ok explícito de Guido cada vez (un push a main despliega el sitio en Netlify).');
 }
 
+function docsDeLaPrincipal(cmd) {
+  const DOCS = /Admin\/(TODO|CHANGELOG|ESTADO)\.md\b/;
+  const toca = EDITA.includes(herramienta) ? DOCS.test(rutaEditada()) : bashEscribeEn(cmd, DOCS);
+  if (!toca) return;
+  let enWorktree;
+  try { enWorktree = git(['rev-parse', '--path-format=absolute', '--git-dir']).trim() !== git(['rev-parse', '--path-format=absolute', '--git-common-dir']).trim(); }
+  catch { return; }
+  if (!enWorktree) return;
+  let rama = '<rama>';
+  try { rama = git(['rev-parse', '--abbrev-ref', 'HEAD']).trim(); } catch {}
+  decidir('deny', `Esto es un worktree: Admin/TODO.md, CHANGELOG.md y ESTADO.md los escribe solo la principal. Lo que iba ahí va en `
+    + `Admin/sesiones/${rama}.md (qué cambió, qué queda, qué deja de ser cierto en ESTADO). Ver la skill de arranque, worktree.md.`);
+}
+
 const cmd = herramienta === 'Bash' ? params.command || '' : '';
 skillsConOk(cmd);
 pushConOk(cmd);
+docsDeLaPrincipal(cmd);
 if (herramienta === 'Bash') auditAntesDelCommit(cmd);
