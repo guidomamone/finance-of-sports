@@ -121,6 +121,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   for (const p of pendientes) {
     const r = await llamarClaude({ system: SISTEMA, user: p.user, schema: ESQUEMA, tarea: 'primer-anio', pdf: p.pdf, maxTokens: 4000 });
     usd += r.costo || 0;
+    if (r.pendiente) { console.log(`  ${p.pdf}: pendiente de la Batch API (ola siguiente)`); continue; }
     if (r.error) { console.log(`  ${p.pdf}: ERROR ${r.error}`); continue; }
     guardar(p.md, p.clave, r.datos, 'API'); const g = compuertaPrimerAnio(r.datos, p);
     console.log(`  ${p.pdf}: ${g.ok ? 'sin problemas' : g.detalle}`);

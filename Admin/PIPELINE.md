@@ -577,6 +577,15 @@ Mitigaciones:
 
 - Commit local, un commit por año cargado. El push lo hace Guido.
 
+### El lote con la Batch API (`tools/lote-batch.mjs`)
+
+Mismo lote y mismo modelo de cada tarea, a mitad de precio (Batch API de Anthropic). Corre `lote.mjs` tal cual con `FOS_CLAUDE_BATCH=1`
+(`tools/claude-batch.mjs`): cada llamada a Claude sin respuesta se anota en una cola y su documento se corta en esa etapa; al terminar la
+pasada se manda la cola, se espera (casi siempre menos de una hora) y el lote corre otra vez, hasta una pasada sin pedidos. Olas típicas:
+perímetro A2 · localizar · localizar-2 · extraer · primer año · categorizar. Lo usan `claude-llamada.mjs` y `categorizar-claude.mjs`; la
+transcripción (`claude-api-transcribe.mjs`) y el tope largo de extraer (streaming) siguen directos. No acepta `--reintentar`. Cortado,
+se vuelve a correr el mismo comando y recoge el envío que esperaba. Más lento: para lotes grandes; uno chico o urgente va con `lote.mjs`.
+
 ### Camino de error (reintento)
 
 El camino limpio no cambia: si todo suma y nada falta, el documento sigue. Las reglas extra viven acá (regla de Guido: "para cuando haya
@@ -705,6 +714,15 @@ cargado) y nunca frena. Medir: `node tools/caja-deuda.mjs --medir [--club <id>] 
 `--medir --ia` (escalones 1b y 2; sin `--ejecutar`, ensayo); `--personal --medir` (staffCost contra `Admin/mediciones/personal-verdad.tsv`).
 Escribir: `--club <id> --ejecutar --escribir` (el valor en `data/`, sin comentario; de dónde salió, en la meta del año en
 `Admin/carga-clubes/<club>.md`). Cuestan API los escalones 1b (Jev, centavos por club) y 2 (IA): esa corrida la hace Guido.
+
+Escalón 0, el ajuste manual `caja` / `deuda` (el valor tal cual impreso; se pasa a millones con la escala que se detecta para ese año), se
+busca por PDF y AÑO (to-do 263). Si un PDF alimenta dos años del club (el del documento y su comparativo: Dortmund 2024 y 2025 desde
+geschaeftsbericht-2024-25), el ajuste lleva `--anio AAAA` y vale solo para ese año; uno sin año vale solo si el PDF alimenta un único año.
+Sin ajuste de ese año, el escalón 0 no decide y el año sigue por la escalera.
+
+Diccionario de deuda en italiano (escalón 1, `DEUDA_FINANCIERA` de `tools/vocabulario.mjs`): banche, debiti finanziari, obbligazioni y soci
+per finanziamenti (to-do 262). "Altri finanziatori" (factoring) no entra: el criterio no es el mismo en todos los clubes (Monza 2024 no lo
+cuenta, Genoa 2022 sí).
 
 ```
  LECTURA DE FILAS  una sola referencia a nota; una celda con "%" no es un importe; activo y pasivo en la misma fila = dos filas; sin código de cuenta ni numeración

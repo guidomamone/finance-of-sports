@@ -71,7 +71,7 @@ import vm from 'node:vm';
 import { readdirSync } from 'node:fs';
 import { derivado } from './rutas.mjs';
 import * as EV from './evidencia-club.mjs';
-import { ajusteDe, ajusteClubODoc, ajustePerimetroDe } from './ajustes.mjs';
+import { ajusteDe, ajusteDelAnio, ajusteClubODoc, ajustePerimetroDe } from './ajustes.mjs';
 import { normalizar, claveFamilia, CAJA_RE, DEUDA_FINANCIERA_RE, TITULO_BALANCE_RE, TOTAL_ACTIVO_RE, TOTAL_PASIVO_RE, FLUJO_O_PATRIMONIO_RE, esTotal } from './vocabulario.mjs';
 import { archivosData, rutaData } from './data-clubes.js';
 import { cierrePorVecinos } from './cierre-vecinos.mjs';
@@ -1078,7 +1078,9 @@ export async function completarClub(clubId, { ejecutar = false, escribir = false
       // a millones con la escala del documento. Gana sobre la escalera y no pasa por la compuerta (es una decisión de Guido). Caso:
       // Novorizontino 2022, el documento dice 721.730 (con aplicaciones de proyectos incentivados) y el 2023 lo reclasificó a 146.924.
       // (Versión 495) lo mismo para la deuda: ajuste manual `deuda`. Caso: Fortaleza CEIF 2021 (295.846, cuadro de instrumentos financieros).
-      const aj = ajusteDe(a.md.replace(/\.md$/i, '.pdf'), k === 'cash' ? 'caja' : 'deuda');
+      // (to-do 263) por PDF Y AÑO: si el PDF alimenta dos años del club (el año y su comparativo), solo vale el ajuste con `anio` de ese año
+      // (ajusteDelAnio en ajustes.mjs). Caso: Dortmund 2024 y 2025, los dos desde geschaeftsbericht-2024-25.
+      const aj = ajusteDelAnio(a.md.replace(/\.md$/i, '.pdf'), k === 'cash' ? 'caja' : 'deuda', a.anio, anios.filter((x) => x.md === a.md).length === 1);
       if (aj && ctx.factor) { res[k] = { ctx, valor: r6(Math.abs(parseNumber(aj.valor)) * ctx.factor), escalon: 0, validacion: 'ajuste manual', como: `ajuste manual (${aj.fecha}): ${aj.motivo}`, filas: [] }; continue; }
       res[k] = { ctx, ...escalera(ctx.filas, k === 'cash' ? 'cash' : 'deuda', ctx) };
     }

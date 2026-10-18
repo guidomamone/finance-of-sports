@@ -135,6 +135,7 @@ export async function extraer(pdf, { registro, ejecutar = false, rehacer = false
   // de 9 páginas y ~580 cuentas, cortado a los 32.000 (US$ 0,72 sin resultado).
   const tarea = reintento?.length ? 'extraer-reintento' : 'extraer';
   let r = await llamarClaude({ system: SYSTEM + extra, user, schema: SCHEMA, tarea, pdf, maxTokens: 32000 });
+  if (r.pendiente) return { pendiente: true, costo: 0 }; // modo batch: la respuesta llega en la ola siguiente (claude-llamada.mjs)
   if (r.error && /max_tokens/.test(r.error)) {
     const costo0 = r.costo || 0;
     r = await llamarClaude({ system: SYSTEM + extra, user, schema: SCHEMA, tarea: `${tarea}-tope-largo`, pdf, maxTokens: 128000, stream: true, timeoutMs: 45 * 60000 });

@@ -42,6 +42,18 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
 - **Disparar el escalón de la sección D con "el resultado no cerró exacto"** (to-do 166, 2026-10-08): con las notas en miles la tolerancia
   exacta (media unidad por fila) tapa una D chica (Como 2024: 8.695 dentro de ~20 mil). Entró con un gatillo estructural (el encabezado de la D
   impreso). Y sin ese encabezado movía 10 Juventus IFRS, cuyas filas sin lado en esa zona no son la D.
+- **Compuerta del total de deuda financiera impreso** (to-do 262, caja-deuda.mjs, 2026-10-17): de 748 años con deuda cargada, solo 44
+  imprimen un rótulo de total ("Totale passività finanziarie", "Total financial liabilities", "Totale indebitamento finanziario"...) y en
+  12 no coincide con el sitio (otra definición: ESMA en Roma 2021 y Lazio 2021-2026; Juventus 2012-2015 y 2025). Contra los 13 distintos
+  arreglaba 1 (Milan 2018) y dejaba sin decidir 4 aciertos (Juventus 2012-2015); Bologna imprime el total partido en dos y Genoa no lo
+  imprime. Entró en su lugar el diccionario italiano (obbligazioni, soci per finanziamenti: 164 → 168 iguales, 13 → 11 distintos).
+  Sumar "debiti verso altri finanziatori" (factoring) metía un error nuevo: Monza 2024, 13,5 M contra 0.
+- **Jev antes de Claude en perimetro-a2** (to-do 233, 2026-10-17): misma entrada y mismas preguntas en opción cerrada (líneas), con la misma
+  compuerta. Sobre los 176 documentos de `perimetro-a2-lista.txt` decidió 23: 21 bien y 2 MAL (Ferroviária dre-2022 y dre-2023: tomó el
+  "CONSOLIDADO" del membrete del sistema contable, L9, como título y texto del estado; Claude, con la instrucción del membrete, da
+  individual). De los otros, 121 no entran en la API (máximo 255 opciones por pregunta) y 29 sin estado. Revertido (código en el commit
+  70c91b6f3, medición en `Admin/mediciones/perimetro-a2-jev-medicion.txt`). Lo que enseñó: Jev sirve para opciones cerradas y cortas sin
+  matices (filas del balance en caja y deuda), no para criterios con trampas que hay que explicarle.
 
 ## 2026-10-08, dos trampas que costaron una corrida
 

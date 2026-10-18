@@ -16,11 +16,22 @@
 //
 // USO:
 //   import { llamarClaude } from './claude-llamada.mjs';
-//   const r = await llamarClaude({ system, user, schema, tarea: 'localizar', pdf });   // r = { datos, costo } o { error, costo }
+//   const r = await llamarClaude({ system, user, schema, tarea: 'localizar', pdf });   // r = { datos, costo } o { error, costo } o { pendiente }
+//
+// MODO BATCH (Batch API de Anthropic, mitad de precio; ok de Guido 2026-10-17). Se prende con la variable FOS_CLAUDE_BATCH=1, que pone
+// tools/lote-batch.mjs y heredan los subprocesos del lote. Mismo modelo y mismo pedido; cambia solo cómo se manda:
+//   - si la respuesta de ESE pedido (huella sha1 del cuerpo = custom_id) ya volvió de la Batch API, está en Generados/_cache/claude-batch.jsonl
+//     y se devuelve como si acabara de llegar (mismo registro en claude-api.jsonl, con el costo x0,5 y `batch: true`);
+//   - si no, el pedido se anota en Generados/_cache/claude-batch-cola.jsonl y vuelve { pendiente: true }. NO es un error: la tool no escribe
+//     su archivo ni manda nada a la cola humana; ese documento se corta en esa etapa hasta la ola siguiente.
+//   - enviarColaBatch() (lo llama lote-batch.mjs entre pasadas) manda la cola en un envío, espera a que termine y guarda las respuestas.
+//   Con stream: true (el escalón de tope largo de extraer) la llamada sigue directa: la Batch API no hace streaming.
 // ============================================================================
 
 import { appendFileSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { enBatch, FACTOR_BATCH, idBatch, respuestaBatch, anotarEnCola } from './claude-batch.mjs';
+export { enviarColaBatch, pendientesEnCola, enBatch } from './claude-batch.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
@@ -50,9 +61,27 @@ async function leerStream(res) {
   return j;
 }
 
+// Lo que se hace con una respuesta de la API (directa o de la Batch API): registro, costo y { datos } / { error }.
+// `registrar: false` en el modo batch: el costo ya lo anotó claude-batch.mjs al recoger el envío (una vez por pedido).
+function procesar(j, { tarea, pdf, t0, factor = 1, registrar = true }) {
+  const costo = costOf(MODELO, j.usage) * factor;
+  if (registrar) appendFileSync(resolve(ROOT, 'Admin', 'registros', 'api', 'claude-api.jsonl'), JSON.stringify({ ts: new Date().toISOString(), tarea, pdf, model: j.model, promptTokenCount: j.usage?.input_tokens, cacheReadTokens: j.usage?.cache_read_input_tokens, candidatesTokenCount: j.usage?.output_tokens, costUsd: Number(costo.toFixed(6)), elapsedMs: Date.now() - t0, stopReason: j.stop_reason, ...(factor !== 1 ? { batch: true } : {}) }) + '\n');
+  if (j.stop_reason === 'refusal') return { error: `refusal: ${JSON.stringify(j.stop_details)}`, costo };
+  if (j.stop_reason === 'max_tokens') return { error: 'respuesta cortada por el tope de salida (max_tokens)', costo };
+  const texto = (j.content || []).filter((c) => c.type === 'text').map((c) => c.text).join('');
+  try { return { datos: JSON.parse(texto), costo }; } catch { return { error: `JSON inválido (stop=${j.stop_reason})`, costo }; }
+}
+
 export async function llamarClaude({ system, user, schema, tarea, pdf = null, esfuerzo = 'low', maxTokens = 16000, timeoutMs = 300000, stream = false }) {
   clave ||= readKey();
   const body = { model: MODELO, ...(stream ? { stream: true } : {}), max_tokens: maxTokens, system: [{ type: 'text', text: system, cache_control: { type: 'ephemeral' } }], messages: [{ role: 'user', content: user }], output_config: { effort: esfuerzo, format: { type: 'json_schema', schema } }, fallbacks: 'default' };
+  if (enBatch() && !stream) {
+    const id = idBatch(body);
+    const r = respuestaBatch(id);
+    if (r?.mensaje) return procesar(r.mensaje, { tarea, pdf, t0: Date.now(), factor: FACTOR_BATCH, registrar: false });
+    if (r?.error) return { error: `Batch API: ${r.error}`, costo: 0 };
+    anotarEnCola(id, body, tarea, pdf); return { pendiente: true, costo: 0 };
+  }
   const headers = { 'Content-Type': 'application/json', 'x-api-key': clave, 'anthropic-version': '2023-06-01', 'anthropic-beta': 'server-side-fallback-2026-07-01' };
   let ultimo = null; const t0 = Date.now();
   for (let intento = 0; intento < 4; intento++) {
@@ -61,12 +90,7 @@ export async function llamarClaude({ system, user, schema, tarea, pdf = null, es
     catch (e) { ultimo = String(e); await sleep(3000 * (intento + 1)); continue; }
     if (res.ok) {
       let j; try { j = stream ? await leerStream(res) : await res.json(); } catch (e) { ultimo = String(e); await sleep(3000 * (intento + 1)); continue; }
-      const costo = costOf(MODELO, j.usage);
-      appendFileSync(resolve(ROOT, 'Admin', 'registros', 'api', 'claude-api.jsonl'), JSON.stringify({ ts: new Date().toISOString(), tarea, pdf, model: j.model, promptTokenCount: j.usage?.input_tokens, cacheReadTokens: j.usage?.cache_read_input_tokens, candidatesTokenCount: j.usage?.output_tokens, costUsd: Number(costo.toFixed(6)), elapsedMs: Date.now() - t0, stopReason: j.stop_reason }) + '\n');
-      if (j.stop_reason === 'refusal') return { error: `refusal: ${JSON.stringify(j.stop_details)}`, costo };
-      if (j.stop_reason === 'max_tokens') return { error: 'respuesta cortada por el tope de salida (max_tokens)', costo };
-      const texto = (j.content || []).filter((c) => c.type === 'text').map((c) => c.text).join('');
-      try { return { datos: JSON.parse(texto), costo }; } catch { return { error: `JSON inválido (stop=${j.stop_reason})`, costo }; }
+      return procesar(j, { tarea, pdf, t0 });
     }
     ultimo = `HTTP ${res.status}: ${(await res.text()).slice(0, 300)}`;
     if (res.status === 429 || res.status >= 500) { await sleep(5000 * (intento + 1)); continue; }
@@ -77,5 +101,5 @@ export async function llamarClaude({ system, user, schema, tarea, pdf = null, es
 
 // Estimación grosera de tokens de un texto (para los ensayos): ~3,5 caracteres por token en los idiomas del corpus.
 export const tokensDe = (texto) => Math.ceil(String(texto).length / 3.5);
-// Precio de Opus 5.5 por millón de tokens (el mismo de categorizar-claude.mjs PRICES): entrada 4, salida 20.
-export const usdEstimado = (tokEntrada, tokSalida) => (tokEntrada * 4 + tokSalida * 20) / 1e6;
+// Precio de Opus 5.5 por millón de tokens (el mismo de categorizar-claude.mjs PRICES): entrada 4, salida 20. En modo batch, la mitad.
+export const usdEstimado = (tokEntrada, tokSalida) => ((tokEntrada * 4 + tokSalida * 20) / 1e6) * (enBatch() ? FACTOR_BATCH : 1);

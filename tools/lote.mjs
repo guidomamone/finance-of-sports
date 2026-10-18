@@ -320,6 +320,8 @@ for (const pdf of docs) {
   // Fortaleza 2017 (solo notas) relocalizó en el modo normal, dio "sin estado" y pisó la localización buena.
   const enModoNotas = !!reintento && !!ubAntes?.estadoDesdeNotas;
   const L = await localizar(pdf, { registro, perimetroClub, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento || cacheViejo, ampliado: !!reintento, reintento, notasComoEstado: enModoNotas });
+  // MODO BATCH (tools/lote-batch.mjs, Batch API): la respuesta de localizar llega en la ola siguiente; el documento se corta acá.
+  if (L.pendiente) { estado[pdf] = 'esperando la Batch API (localizar)'; console.log(`  ${pdf}: localizar pendiente de la Batch API`); continue; }
   if (!L.ensayo && !L.error && reintento && reintento.some((x) => x.categoria)) { try { writeFileSync(resolve(ROOT, derivado(e.md, '.reintento-categorias.json')), JSON.stringify({ fecha: new Date().toISOString(), categorias: reintento.filter((x) => x.categoria).map((x) => x.categoria), modoNotas: enModoNotas }, null, 1)); } catch { /* sin marca: como antes */ } }
   // (Versión 460) COMPUERTA: un reintento que da "sin estado" cuando la localización anterior sí tenía estado NO la pisa (sin estado nunca se
   // puede cargar): el intento queda en <doc>.ubicacion-reintento.json y vuelve la anterior.
@@ -372,6 +374,7 @@ for (const pdf of docs) {
   const V = await validar(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento || cacheViejo || ubVieja || valVieja }); usd += (EJECUTAR ? anotarValidar(pdf, V) : V.costo) || V.usd || 0;
   const X = await extraer(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento || cacheViejo || ubVieja, reintento });
   if (X.ensayo) { usd += X.usd; console.log(`  ${pdf}: localizar ya hecho · extraer ~US$ ${X.usd.toFixed(3)} (estimado)`); continue; }
+  if (X.pendiente) { estado[pdf] = 'esperando la Batch API (extraer)'; console.log(`  ${pdf}: extraer pendiente de la Batch API`); continue; }
   usd += X.costo || 0;
   if (X.error) { estado[pdf] = `extraer: ${X.error}`; continue; }
   estado[pdf] = testigos.has(pdf) ? 'testigo (solo hasta extraer)' : 'extraído';
