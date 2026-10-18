@@ -102,3 +102,7 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
 - `vocabulario.mjs` FIN_GASTO suma tres rótulos belgas (to-do 298 b1): un documento NBB nuevo cierra con "financiero por rótulo" sin el ajuste `fila` de signo de los costos financieros; los ajustes ya puestos siguen dando lo mismo.
 - `verificar.mjs` escalón "de los cuales" (to-do 298 b3): un documento que no cerraba porque sumaba aparte una fila "Waarvan:"/"dont"/"davon" puede cerrar sin ella (solo si el cierre es exacto). Los ajustes `fila` en 0 ya puestos siguen dando lo mismo.
 - `lote.mjs` (to-do 298 o): con un original y su "-correction" en la misma lista, entra solo la corrección; el original queda propuesto para `documentos-descartados.txt` (sin escribirlo). Una lista con un original solo, como siempre.
+
+## Después del merge del 2026-10-18
+
+Lo de arriba ya lo pasó la principal (merge 621acf6cea, CHANGELOG 738). Lo nuevo va acá.
