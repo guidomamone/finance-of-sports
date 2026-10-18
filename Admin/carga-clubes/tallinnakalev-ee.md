@@ -111,6 +111,70 @@ tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-18): null, SIN VERIFICAR (sin caché de rosters para ee (tools/club-league-reference/ee.json)).
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/Tallinna Kalev/aruanne-2024.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/Tallinna Kalev/aruanne-2024.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Liikmetelt saadud tasud | pág. 5, precedente |
+| 2 | Sihtfinantseerimine tegevuskuludeks | pág. 14, precedente |
+| 3 | Mittesihtotsatarbelised annetused ja toetused | pág. 14, precedente |
+| 4 | Renditulu staadioni või selle rajatiste väljarentimisest | pág. 15, precedente |
+| 5 | Piletitulu | pág. 15, precedente |
+| 6 | Tulu turniiride korraldamisest | pág. 15, precedente |
+| 7 | Tulu mängijaõiguste müügist | pág. 15, precedente |
+| 8 | Klubi peasponsorilt saadud tulu | pág. 15, precedente |
+| 9 | Tulu teistelt sponsoritelt | pág. 15, precedente |
+| 10 | Muud klassifitseerimata äritulud | pág. 15, precedente |
+| 11 | Muud tulud | pág. 5, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Sportlasetoetus | pág. 15, precedente |
+| 2 | Sportlase stipendium | pág. 15, precedente |
+| 3 | Elektrienergia | pág. 16, precedente |
+| 4 | Soojusenergia | pág. 16, precedente |
+| 5 | Veevarustusteenused | pág. 16, precedente |
+| 6 | Mitmesugused bürookulud | pág. 16, precedente |
+| 7 | Lähetuskulud | pág. 16, precedente |
+| 8 | Koolituskulud | pág. 16, precedente |
+| 9 | Reklaam | pág. 16, precedente |
+| 10 | Liiga liikmemaksud | pág. 16, precedente |
+| 11 | Proportsiooniga tagastamatu käibemaks | pág. 16, precedente |
+| 12 | Staadioni ja saali rent | pág. 16, precedente |
+| 13 | Transport | pág. 16, precedente |
+| 14 | Meditsiinitarvikud- ja teenused | pág. 16, precedente |
+| 15 | Spordivarustus | pág. 16, precedente |
+| 16 | Mängijaõiguste ülemineku kulud | pág. 16, precedente |
+| 17 | Laagrite-ja turniiride korralduskulud | pág. 16, precedente |
+| 18 | Ruumide rent | pág. 16, precedente |
+| 19 | Autodega seotud kulud | pág. 16, precedente |
+| 20 | Turvateenused | pág. 16, precedente |
+| 21 | Muud | pág. 16, precedente |
+| 22 | Mängijate palgakulu | pág. 16, precedente |
+| 23 | Sotsiaalmaksud mängijate töötasudelt | pág. 16, precedente |
+| 24 | Muu personali palgakulu | pág. 16, precedente |
+| 25 | Sotsiaalmaksukulu muu personali töötasudelt | pág. 16, precedente |
+| 26 | Puhkusekohustuse reserv | pág. 16, precedente |
+| 27 | Põhivarade kulum ja väärtuse langus | pág. 5, precedente |
+| 28 | Muud kulud | pág. 5, precedente |
+
+### Meta
+
+```text
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L139) (Claude 2026-10-18)
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Televisión. sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2019
 
 ### Ingresos
@@ -176,4 +240,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Tallinna Kalev/aruanne-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### tallinnakalev-ee-aruanne-2024
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Tallinna Kalev/aruanne-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
