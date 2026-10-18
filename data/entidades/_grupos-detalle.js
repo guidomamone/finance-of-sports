@@ -680,9 +680,21 @@ window.GRUPOS = {
     "control": true,
     "pct": 100,
     "desde": 2012,
-    "hasta": null,
+    "hasta": 2023,
     "fuente": {
      "url": "https://en.wikipedia.org/wiki/Qatar_Sports_Investments"
+    }
+   },
+   {
+    "clubId": null,
+    "nombre": "Paris Saint-Germain",
+    "pais": "FR",
+    "control": true,
+    "pct": null,
+    "desde": 2024,
+    "hasta": null,
+    "fuente": {
+     "url": "https://en.wikipedia.org/wiki/Paris_Saint-Germain_FC"
     }
    }
   ],
