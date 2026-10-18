@@ -734,6 +734,10 @@ busca por PDF y AÑO (to-do 263). Si un PDF alimenta dos años del club (el del 
 geschaeftsbericht-2024-25), el ajuste lleva `--anio AAAA` y vale solo para ese año; uno sin año vale solo si el PDF alimenta un único año.
 Sin ajuste de ese año, el escalón 0 no decide y el año sigue por la escalera.
 
+Caja de un año SIN VECINO en el esquema NBB belga (to-do 298 c2): la escalera no decide (su compuerta pide un vecino), así que la caja sale del
+código 54/58 (la celda que sigue al código) si el balance del propio documento cuadra (20/58 = 10/49). Solo la caja: la deuda por códigos
+(170/4, 42, 43) no coincide con el criterio con que se cargó Bélgica (`cajaNBB` en `tools/caja-deuda.mjs`).
+
 La escala del año (`escalaDe`, to-do 289) es su propia escalera: escalón 0, el ajuste manual `escala` (`unidades` | `miles` | `millones`,
 la que el documento imprime para ese año, también por PDF y año con `--anio`); escalón 1, `factorPorIngresos` (la escala con la que más
 ingresos cargados del año aparecen en el documento); si ninguno da, el año queda "sin escala del documento" y no entra ni un ajuste de

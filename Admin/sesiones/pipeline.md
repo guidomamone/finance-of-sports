@@ -113,7 +113,21 @@ Lo de arriba ya lo pasó la principal (merge 621acf6cea, CHANGELOG 738). Lo nuev
   daban la misma caja 0,005458 (el código 54/58); ahora el escalón 1 propone la caja impresa (Lierse SK 2025: 2.984 TEUR, L169). Medido:
   `--medir` deuda 168 → 170 iguales (Académico de Viseu 2023 y 2024), sin distintos nuevos; ensayo de los 259 clubes igual salvo Estrela da
   Amadora 2023 (sigue sin dato; el ensayo ahora ofrece la IA, US$ 0,01). Los belgas siguen sin dato hasta la parte 2 (un solo año, sin vecino).
+- **La caja belga de un año sin vecino (to-do 298 c, parte 2; decisión de Guido: solo la caja).** `tools/caja-deuda.mjs` (`cajaNBB`): para un
+  año sin año anterior ni siguiente cargado ni documento vecino, la caja es el código 54/58 si el balance del documento cuadra (20/58 = 10/49).
+  Medido: `--medir` y ensayo de los 259 clubes idénticos; con los belgas nuevos (datos de la principal copiados un rato), 10 cajas: Beerschot
+  2025 0,204; Lierse SK 2025 0,003; Lokeren-Temse 2025 0,045; Lommel SK 2018 0,139 y 2025 0,890; Patro Eisden 2025 0,012; RAAL 2025 1,631;
+  RWDM 2020 0,050 y 2025 0,183 (M EUR). OH Leuven 2025 sigue sin dato (su .md no trae el 20/58 con código).
+
+### Qué queda pendiente (para TODO)
+- **Escribir esas cajas en `data/`, en la carpeta principal después del merge** (gratis; sin `--ejecutar`, solo el escalón NBB y lo guardado):
+  `for c in beerschot-be liersesk-be lokerentemse-be lommelsk-be patroeisden-be raallalouviere-be rwdm-be; do node tools/caja-deuda.mjs --club $c --escribir; done`
+- **Mejorar la caja y la deuda de un año sin vecino (pedido de Guido, 2026-10-18).** Hoy es solo la caja belga por código. Falta: (1) una
+  compuerta de primer año para cualquier país (que el dato cuadre con el balance del propio documento, no solo NBB); (2) la deuda belga, que
+  necesita decidir el criterio (¿el 42 entra?; Union SG tiene 31,66 M cargados y 7,62 M por códigos financieros, ¿qué suma de más?); (3) OH
+  Leuven y los documentos cuyo .md no trae la columna de códigos.
 
 ### Para fos-onboarding
 - caja-deuda deja de leer los códigos NBB como importes: en un club belga, Jev ya no tiene guardada la respuesta (cambian las filas), y un
   `--ejecutar` paga ~US$ 0,07 por club en Jev.
+- caja-deuda (to-do 298 c2): un año belga sin vecino escribe la caja del código 54/58 (si el balance cuadra); antes quedaba sin dato. La deuda sigue igual.

@@ -1071,6 +1071,23 @@ const HOY = new Date().toISOString().slice(0, 10);
 // (el del año siguiente en su columna "previous", o el del año anterior en "current" contra la "previous" de este); ninguno contradice. Un
 // 1410 / 1510 vacío es 0 solo con el balance completo (1700 impreso). Caso: Akhmat 2021, caja 411.028 miles; sin 1410 ni 1510, deuda 0.
 const CODIGOS_RU = { cash: [1250], grossDebt: [1410, 1510] };
+// (to-do 298 c2) La caja del esquema NBB belga: la celda que sigue al código 54/58 (la columna del ejercicio), si el balance cuadra (20/58 =
+// 10/49, a 1 unidad). Una celda vacía en 54/58 es 0 (el balance está completo). Devuelve { caja, linea, total } o null.
+export function cajaNBB(mdText) {
+  const L = mdText.split('\n'); const v = {};
+  for (let i = 0; i < L.length; i++) {
+    if (!L[i].trim().startsWith('|')) continue;
+    const c = L[i].trim().replace(/^\||\|$/g, '').split('|').map((x) => x.replace(/\*\*/g, '').trim());
+    const k = c.findIndex((x) => x === '54/58' || x === '20/58' || x === '10/49');
+    if (k < 1 || v[c[k]]) continue;
+    // la columna del ejercicio es la celda que sigue al código (la siguiente es el año anterior): vacía = 0, con texto que no es un número = no sé
+    const celda = c[k + 1] ?? ''; const n = parseNumber(celda);
+    v[c[k]] = { valor: n ?? (celda ? null : 0), linea: i + 1 };
+  }
+  if (!v['54/58'] || !v['20/58'] || !v['10/49'] || v['54/58'].valor == null || !v['20/58'].valor) return null;
+  if (Math.abs(v['20/58'].valor - v['10/49'].valor) > 1) return null;
+  return { caja: Math.abs(v['54/58'].valor), linea: v['54/58'].linea, total: v['20/58'].valor };
+}
 function rusiaDeCodigos(clubId, a) {
   const m = /-bfo-(\d{4})-datos$/.exec(a.m.sourceId || ''); if (!m) return null;
   let ev = ''; try { ev = readFileSync(resolve(ROOT, `Admin/carga-clubes/${clubId}.md`), 'utf8'); } catch { return null; }
@@ -1118,6 +1135,16 @@ export async function completarClub(clubId, { ejecutar = false, escribir = false
       const aj = ajusteDelAnio(a.md.replace(/\.md$/i, '.pdf'), k === 'cash' ? 'caja' : 'deuda', a.anio, anios.filter((x) => x.md === a.md).length === 1);
       if (aj && ctx.factor) { res[k] = { ctx, valor: r6(Math.abs(parseNumber(aj.valor)) * ctx.factor), escalon: 0, validacion: 'ajuste manual', como: `ajuste manual (${aj.fecha}): ${aj.motivo}`, filas: [] }; continue; }
       res[k] = { ctx, ...escalera(ctx.filas, k === 'cash' ? 'cash' : 'deuda', ctx) };
+    }
+    // (to-do 298 c2, decisión de Guido 2026-10-18: solo la caja) LA CAJA POR SU CÓDIGO NBB, para un año SIN VECINO (ni año anterior ni siguiente
+    // cargado, ni documento vecino): la escalera nunca lo decide porque su compuerta pide un vecino. En el esquema NBB belga la caja es siempre
+    // el código 54/58 ("Liquide middelen" / "Valeurs disponibles"). Compuerta, la del propio documento: el balance cuadra (TOTAAL VAN DE ACTIVA
+    // 20/58 = TOTAAL VAN DE PASSIVA 10/49, la misma columna). Se pasa a millones con la escala del documento. La deuda no: los códigos
+    // financieros (170/4, 42, 43) no coinciden con el criterio con que se cargó Bélgica (Union SG: 31,66 M en el sitio, 7,62 M por códigos).
+    // Caso: Lierse SK 2025, 54/58 = 2.984 (L169), 20/58 = 10/49 = 4.833.368 (L171, L242).
+    if (res.cash && res.cash.valor == null && res.cash.ctx.factor && res.cash.ctx.anterior == null && !res.cash.ctx.siguiente && !res.cash.ctx.anteriorDoc) {
+      const nbb = cajaNBB(readFileSync(resolve(ROOT, a.md), 'utf8'));
+      if (nbb) res.cash = { ctx: res.cash.ctx, valor: r6(nbb.caja * res.cash.ctx.factor), escalon: 1, validacion: 'balance del documento (NBB)', como: `código NBB 54/58 = ${nbb.caja} (L${nbb.linea}); el balance cuadra: 20/58 = 10/49 = ${nbb.total} (año sin vecino)`, filas: [] };
     }
     // ESCALÓN 1b, Jev (to-do 233 + 232 t; entró el 2026-10-14 tras medirlo en todos los clubes: caja 9 de 9 iguales, deuda 5 de 7 y los 2
     // distintos eran errores del sitio, PAOK 2021 y Panetolikos 2022; US$ 0,11 en total). Antes de la IA cara; sin --ejecutar, ensayo.
