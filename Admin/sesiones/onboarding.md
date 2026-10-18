@@ -64,6 +64,9 @@ detalle con citas de cada club está en `Admin/registros/cola-borradores/altas-2
   hoy solo hay 2012-2018; antes de cerrarlo, abrir `wf-src-FFK_-_Årsmøte_2025.pdf`, que puede traer las cuentas del club; para 2008-2011
   solo existe el AS. Sarpsborg 08: el alta se hizo sobre un AS inversor (20% de los derechos económicos de la plantilla, sin empleados);
   rehacerla sobre el FLI "Sarpsborg 08 Fotballforening", cuyos 14 PDFs no tienen `.md`.
+- **Pardubice (Rep. Checa): no darle el alta con lo que hay.** Los documentos de `Clubes/República Checa/Pardubice/` son de
+  FK JUNIOR PARDUBICE, z.s. (asociación del fútbol juvenil, ~23,7 M CZK de ingresos; sin participación en otras sociedades), no del club
+  profesional FK Pardubice a.s. No se descartaron (sirven para "otras entidades del club"). El sourcing de la a.s. lo hace Guido aparte.
 - **Viking: transcribir los PDFs de Viking Fotball AS** (el club desde el 2026-10-17; hoy solo los del FLI tienen `.md`).
 
 - `tools/worktree.mjs preparar` frena con ENOENT cuando la carpeta principal tiene otros worktrees en `.claude/worktrees/` (git los lista
