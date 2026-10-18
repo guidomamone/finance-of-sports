@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Edit|Write|MultiEdit|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "f=\"$CLAUDE_PROJECT_DIR/tools/hooks/pre-tool.mjs\"; [ ! -f \"$f\" ] || node \"$f\"",
+            "timeout": 120,
+            "statusMessage": "Chequeando las reglas del proyecto (tools/hooks/pre-tool.mjs)"
+          }
+        ]
+      }
+    ]
+  }
+}
