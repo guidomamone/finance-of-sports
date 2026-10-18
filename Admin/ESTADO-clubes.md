@@ -53,21 +53,21 @@ ARGENTINA (19)
 BE (22)
   Anderlecht            1 ejercicio (2024/2025), balance, EUR
   Antwerp               1 ejercicio (2024/2025), balance, EUR
-  Beerschot             1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
+  Beerschot             1 ejercicio (2024/2025), balance, EUR
   Cercle Brugge         1 ejercicio (2024/2025), balance, EUR
   Charleroi             1 ejercicio (2024/2025), balance, EUR
   Club Brugge           1 ejercicio (2024/2025), balance, EUR
   Dender EH             1 ejercicio (2024/2025), balance, EUR
   Genk                  1 ejercicio (2024/2025), balance, EUR
   Gent                  1 ejercicio (2024/2025), balance, EUR
-  Lierse SK             1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
-  Lokeren-Temse         1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
-  Lommel SK             2 ejercicios (2017/2018, 2024/2025), balance, EUR, sin deuda/caja
+  Lierse SK             1 ejercicio (2024/2025), balance, EUR
+  Lokeren-Temse         1 ejercicio (2024/2025), balance, EUR
+  Lommel SK             2 ejercicios (2017/2018, 2024/2025), balance, EUR
   Mechelen              1 ejercicio (2024/2025), balance, EUR
   OH Leuven             1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
-  Patro Eisden          1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
-  RAAL La Louvière      1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
-  RWDM                  2 ejercicios (2019/2020, 2024/2025), balance, EUR, sin deuda/caja
+  Patro Eisden          1 ejercicio (2024/2025), balance, EUR
+  RAAL La Louvière      1 ejercicio (2024/2025), balance, EUR
+  RWDM                  2 ejercicios (2019/2020, 2024/2025), balance, EUR
   Sint-Truiden          1 ejercicio (2024/2025), balance, EUR
   Standard Liège        1 ejercicio (2024/2025), balance, EUR
   Union Saint-Gilloise  1 ejercicio (2024/2025), balance, EUR
@@ -164,14 +164,14 @@ DK (11)
   Viborg FF        1 ejercicio (2023/2024), balance, DKK
 
 EE (9)
-  FCI Levadia          7 ejercicios (2019 a 2025), balance, EUR, sin deuda/caja
-  Flora Tallinn        7 ejercicios (2019 a 2025), balance, EUR, sin deuda/caja
+  FCI Levadia          7 ejercicios (2019 a 2025), balance, EUR
+  Flora Tallinn        7 ejercicios (2019 a 2025), balance, EUR
   Harju JK Laagri      3 ejercicios (2023 a 2025), balance, EUR, sin deuda/caja
-  Kuressaare           7 ejercicios (2019 a 2025), balance, EUR, sin deuda/caja
-  Narva Trans          7 ejercicios (2019 a 2025), balance, EUR, sin deuda/caja
-  Nõmme Kalju          7 ejercicios (2019 a 2025), balance, EUR, sin deuda/caja
-  Paide Linnameeskond  7 ejercicios (2019 a 2025), balance, EUR, sin deuda/caja
-  Tallinna Kalev       7 ejercicios (2019 a 2025), balance, EUR, sin deuda/caja
+  Kuressaare           7 ejercicios (2019 a 2025), balance, EUR
+  Narva Trans          7 ejercicios (2019 a 2025), balance, EUR
+  Nõmme Kalju          7 ejercicios (2019 a 2025), balance, EUR
+  Paide Linnameeskond  7 ejercicios (2019 a 2025), balance, EUR
+  Tallinna Kalev       7 ejercicios (2019 a 2025), balance, EUR
   Tartu Tammeka        7 ejercicios (2019 a 2025), balance, EUR, sin deuda/caja
 
 ESPAÑA (19)

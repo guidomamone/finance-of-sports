@@ -178,6 +178,10 @@ Generados/Estonia/Flora Tallinn/aruanne-2024.categorias.json (escalón de cada f
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento anterior): "Raha" pág. 23
+```
+
 ## 2023
 
 ### Ingresos
@@ -241,6 +245,10 @@ Generados/Estonia/Flora Tallinn/aruanne-2023.categorias.json (escalón de cada f
 ```text
 2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L153) (Claude 2026-10-18)
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 24
 ```
 
 ## 2022
@@ -307,6 +315,10 @@ Generados/Estonia/Flora Tallinn/aruanne-2022.categorias.json (escalón de cada f
 ```text
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("# Tulemiaruanne", .md L192) (Claude 2026-10-18)
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-18): grossDebt escalón 1 (compuerta: documento siguiente): "Laenukohustised" pág. 24; cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 23
 ```
 
 ## 2021
@@ -377,6 +389,10 @@ Generados/Estonia/Flora Tallinn/aruanne-2021.categorias.json (escalón de cada f
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 24
+```
+
 ## 2020
 
 ### Ingresos
@@ -445,6 +461,10 @@ Generados/Estonia/Flora Tallinn/aruanne-2020.categorias.json (escalón de cada f
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 24
+```
+
 ## 2019
 
 ### Ingresos
@@ -508,6 +528,10 @@ Generados/Estonia/Flora Tallinn/aruanne-2019.categorias.json (escalón de cada f
 ```text
 2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L145) (Claude 2026-10-18)
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 24
 ```
 
 ## Fuentes

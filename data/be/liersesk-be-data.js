@@ -28,7 +28,7 @@ const lierseskbeFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Brutomarge (+)/(-)', lado:'revenue', importe:2.706155, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.002984,
     officialTotalRevenue:2.706155, officialTotalExpenses:3.596558, officialPAT:-0.962223,
   },
 };

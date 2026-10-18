@@ -299,7 +299,7 @@ const nommekaljueeFiscalYearMeta = {
       {label:'Intressikulud', value:-0.011264},
       {label:'Muud finantstulud ja -kulud', value:-0.002056},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.42313,
     officialTotalRevenue:2.535435, officialTotalExpenses:1.690992, officialPAT:0.832507,
   },
   2024: {
@@ -314,7 +314,7 @@ const nommekaljueeFiscalYearMeta = {
       {label:'Intressikulud', value:-0.000195},
       {label:'Muud finantstulud ja -kulud', value:-0.002002},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.060174,
     officialTotalRevenue:1.478944, officialTotalExpenses:1.246124, officialPAT:0.23063,
   },
   2019: {
@@ -329,7 +329,7 @@ const nommekaljueeFiscalYearMeta = {
       {label:'Intressikulud', value:-0.020519},
       {label:'Muud finantstulud ja -kulud', value:0.000012},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.183548,
     officialTotalRevenue:1.874869, officialTotalExpenses:1.539504, officialPAT:0.319865,
   },
   2020: {
@@ -345,7 +345,7 @@ const nommekaljueeFiscalYearMeta = {
       {label:'Intressikulud', value:-0.001541},
       {label:'Muud finantstulud ja -kulud', value:0},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.047122,
     officialTotalRevenue:1.062726, officialTotalExpenses:1.150799, officialPAT:-0.175074,
   },
   2021: {
@@ -360,7 +360,7 @@ const nommekaljueeFiscalYearMeta = {
       {label:'Intressitulud', value:0.000002},
       {label:'Intressikulud', value:-0.00078},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.23368, cash:0.014174,
     officialTotalRevenue:0.889928, officialTotalExpenses:1.104239, officialPAT:-0.215089,
   },
   2022: {
@@ -390,7 +390,7 @@ const nommekaljueeFiscalYearMeta = {
       {label:'Intressitulud', value:0.000001},
       {label:'Intressikulud', value:0},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.01307,
     officialTotalRevenue:1.038717, officialTotalExpenses:1.401857, officialPAT:-0.363139,
   },
 };

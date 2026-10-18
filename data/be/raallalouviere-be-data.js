@@ -33,7 +33,7 @@ const raallalouvierebeFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Chiffre d\'affaires', lado:'revenue', importe:4.615173, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:1.630864,
     officialTotalRevenue:6.296765, officialTotalExpenses:8.464193, officialPAT:-2.148648,
   },
 };

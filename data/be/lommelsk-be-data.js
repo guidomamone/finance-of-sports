@@ -49,7 +49,7 @@ const lommelskbeFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Omzet', lado:'revenue', importe:3.689259, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.890401,
     officialTotalRevenue:9.565805, officialTotalExpenses:30.168572, officialPAT:-20.872368,
   },
   2018: {
@@ -62,7 +62,7 @@ const lommelskbeFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Brutomarge (+)/(-)', lado:'revenue', importe:0.891255, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.139346,
     officialTotalRevenue:0.891255, officialTotalExpenses:1.519198, officialPAT:-0.628125,
   },
 };

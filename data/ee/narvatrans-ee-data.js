@@ -247,7 +247,7 @@ const narvatranseeFiscalYearMeta = {
       {label:'Intressitulud', value:0.001917},
       {label:'Intressikulud', value:-0.000034},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.174994,
     officialTotalRevenue:1.003789, officialTotalExpenses:0.835826, officialPAT:0.169846,
   },
   2019: {
@@ -257,7 +257,7 @@ const narvatranseeFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:0.000072, tax:0,
-    grossDebt:null, cash:null,
+    grossDebt:0.002, cash:0.315304,
     officialTotalRevenue:0.465788, officialTotalExpenses:0.373442, officialPAT:0.092418,
   },
   2024: {
@@ -297,7 +297,7 @@ const narvatranseeFiscalYearMeta = {
       {label:'Intressikulud', value:-0.000067},
       {label:'Muud finantstulud ja -kulud', value:0},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.207155,
     officialTotalRevenue:0.534448, officialTotalExpenses:0.666885, officialPAT:-0.132478,
   },
   2023: {
@@ -307,7 +307,7 @@ const narvatranseeFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:0.001753, tax:0,
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.19926,
     officialTotalRevenue:0.8154, officialTotalExpenses:0.79334, officialPAT:0.023813,
   },
   2021: {

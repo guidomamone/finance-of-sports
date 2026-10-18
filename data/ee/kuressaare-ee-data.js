@@ -225,7 +225,7 @@ const kuressaareeeFiscalYearMeta = {
       {label:'Intressitulud', value:0.000006},
       {label:'Intressikulud', value:-0.013806},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.0187, cash:0.001344,
     officialTotalRevenue:0.738093, officialTotalExpenses:0.823989, officialPAT:-0.099696,
   },
   2019: {
@@ -235,7 +235,7 @@ const kuressaareeeFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:0, tax:0,
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.003568,
     officialTotalRevenue:0.204293, officialTotalExpenses:0.228847, officialPAT:-0.024554,
   },
   2020: {
@@ -245,7 +245,7 @@ const kuressaareeeFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:0.000001, tax:0,
-    grossDebt:null, cash:null,
+    grossDebt:0.0005, cash:0.004182,
     officialTotalRevenue:0.23115, officialTotalExpenses:0.230894, officialPAT:0.000257,
   },
   2021: {
@@ -255,7 +255,7 @@ const kuressaareeeFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:0, tax:0,
-    grossDebt:null, cash:null,
+    grossDebt:0.0005, cash:0.005904,
     officialTotalRevenue:0.270137, officialTotalExpenses:0.294234, officialPAT:-0.024097,
   },
   2023: {
@@ -268,7 +268,7 @@ const kuressaareeeFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Tulu kaupade ja teenuste müügist', lado:'revenue', importe:0.014145, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.0227, cash:0.000208,
     officialTotalRevenue:0.326495, officialTotalExpenses:0.416539, officialPAT:-0.090043,
   },
   2022: {
@@ -278,7 +278,7 @@ const kuressaareeeFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:0, tax:0,
-    grossDebt:null, cash:null,
+    grossDebt:0.0187, cash:0.000235,
     officialTotalRevenue:0.280048, officialTotalExpenses:0.347247, officialPAT:-0.067199,
   },
   2024: {
@@ -292,7 +292,7 @@ const kuressaareeeFiscalYearMeta = {
       {label:'Intressitulud', value:0.000001},
       {label:'Intressikulud', value:-0.006839},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.0187, cash:0.003611,
     officialTotalRevenue:0.209521, officialTotalExpenses:0.328288, officialPAT:-0.125605,
   },
 };

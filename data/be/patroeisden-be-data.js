@@ -32,7 +32,7 @@ const patroeisdenbeFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Brutomarge (+)/(-)', lado:'revenue', importe:1.841008, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.011997,
     officialTotalRevenue:1.842818, officialTotalExpenses:6.514002, officialPAT:5.946137,
   },
 };

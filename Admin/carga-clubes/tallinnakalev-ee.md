@@ -105,6 +105,10 @@ Generados/Estonia/Tallinna Kalev/aruanne-2025.categorias.json (escalón de cada 
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento anterior): "Raha" pág. 19
+```
+
 ### Liga
 
 ```text
@@ -179,6 +183,10 @@ tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-18): cash escalón 1b (compuerta: documento anterior): "Raha" pág. 4
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 19
+```
+
 ## 2023
 
 ### Ingresos
@@ -248,6 +256,10 @@ tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/caja-deuda.mjs (2026-10-18): cash escalón 1b (compuerta: documento siguiente): "Raha" pág. 5
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 22
+```
+
 ## 2022
 
 ### Ingresos
@@ -308,6 +320,10 @@ Generados/Estonia/Tallinna Kalev/aruanne-2022.categorias.json (escalón de cada 
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L114) (Claude 2026-10-18)
 2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Televisión. sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 4
 ```
 
 ## 2021
@@ -476,6 +492,10 @@ Generados/Estonia/Tallinna Kalev/aruanne-2019.categorias.json (escalón de cada 
 2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Televisión. sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)
 2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Estadio. sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 4
 ```
 
 ## Fuentes

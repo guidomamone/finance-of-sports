@@ -100,6 +100,10 @@ Generados/Estonia/Paide Linnameeskond/aruanne-2025.categorias.json (escalón de 
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento anterior): "Raha" pág. 4
+```
+
 ### Liga
 
 ```text
@@ -163,6 +167,10 @@ Generados/Estonia/Paide Linnameeskond/aruanne-2024.categorias.json (escalón de 
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-18): grossDebt escalón 1 (compuerta: documento siguiente): "Laenukohustised" pág. 5; cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 5
+```
+
 ## 2023
 
 ### Ingresos
@@ -217,6 +225,10 @@ Generados/Estonia/Paide Linnameeskond/aruanne-2023.categorias.json (escalón de 
 ```text
 2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L150) (Claude 2026-10-18)
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 5
 ```
 
 ## 2022
@@ -276,6 +288,10 @@ Generados/Estonia/Paide Linnameeskond/aruanne-2022.categorias.json (escalón de 
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 5
+```
+
 ## 2021
 
 ### Ingresos
@@ -329,6 +345,10 @@ Generados/Estonia/Paide Linnameeskond/aruanne-2021.categorias.json (escalón de 
 2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L134) (Claude 2026-10-18)
 2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Televisión. sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 4
 ```
 
 ## 2020
@@ -385,6 +405,10 @@ Generados/Estonia/Paide Linnameeskond/aruanne-2020.categorias.json (escalón de 
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 4
+```
+
 ## 2019
 
 ### Ingresos
@@ -437,6 +461,10 @@ Generados/Estonia/Paide Linnameeskond/aruanne-2019.categorias.json (escalón de 
 2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Televisión. sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)
 2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Estadio. sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 5
 ```
 
 ## Fuentes

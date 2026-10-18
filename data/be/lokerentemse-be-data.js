@@ -33,7 +33,7 @@ const lokerentemsebeFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Omzet', lado:'revenue', importe:0.282823, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.044934,
     officialTotalRevenue:1.177998, officialTotalExpenses:0.3419, officialPAT:0.824961,
   },
 };

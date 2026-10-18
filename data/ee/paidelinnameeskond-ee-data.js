@@ -261,7 +261,7 @@ const paidelinnameeskondeeFiscalYearMeta = {
       {label:'Intressikulud', value:-0.063186},
       {label:'Muud finantstulud ja -kulud', value:0.00987},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.05084,
     officialTotalRevenue:4.099722, officialTotalExpenses:3.925944, officialPAT:0.120462,
   },
   2019: {
@@ -271,7 +271,7 @@ const paidelinnameeskondeeFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:-0.000989, tax:0,
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.001785,
     officialTotalRevenue:0.595815, officialTotalExpenses:0.806562, officialPAT:-0.211736,
   },
   2020: {
@@ -281,7 +281,7 @@ const paidelinnameeskondeeFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:-0.009145, tax:0,
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.002337,
     officialTotalRevenue:0.873586, officialTotalExpenses:1.031676, officialPAT:-0.167235,
   },
   2021: {
@@ -295,7 +295,7 @@ const paidelinnameeskondeeFiscalYearMeta = {
       {label:'Intressikulud', value:-0.023738},
       {label:'Muud finantstulud ja -kulud', value:0.000001},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.004651,
     officialTotalRevenue:1.01002, officialTotalExpenses:1.462266, officialPAT:-0.475983,
   },
   2022: {
@@ -309,7 +309,7 @@ const paidelinnameeskondeeFiscalYearMeta = {
       {label:'Intressikulud', value:-0.033911},
       {label:'Muud finantstulud ja -kulud', value:0.000039},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.011917,
     officialTotalRevenue:2.320261, officialTotalExpenses:2.170768, officialPAT:0.115621,
   },
   2023: {
@@ -323,7 +323,7 @@ const paidelinnameeskondeeFiscalYearMeta = {
       {label:'Intressikulud', value:-0.03806},
       {label:'Muud finantstulud ja -kulud', value:0.001512},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.00169,
     officialTotalRevenue:1.793779, officialTotalExpenses:2.001047, officialPAT:-0.243816,
   },
   2024: {
@@ -337,7 +337,7 @@ const paidelinnameeskondeeFiscalYearMeta = {
       {label:'Intressikulud', value:-0.042694},
       {label:'Muud finantstulud ja -kulud', value:0.005061},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:0.90625, cash:0.002129,
     officialTotalRevenue:2.662384, officialTotalExpenses:2.523566, officialPAT:0.101185,
   },
 };

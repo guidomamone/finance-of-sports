@@ -303,7 +303,7 @@ const fcilevadiaeeFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:-0.063208, tax:0,
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.03194,
     officialTotalRevenue:0.831136, officialTotalExpenses:1.232241, officialPAT:-0.464313,
   },
   2020: {

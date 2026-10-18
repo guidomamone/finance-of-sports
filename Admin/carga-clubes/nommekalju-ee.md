@@ -102,6 +102,10 @@ Generados/Estonia/Nõmme Kalju/aruanne-2025.categorias.json (escalón de cada fi
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento anterior): "Raha" pág. 6
+```
+
 ### Liga
 
 ```text
@@ -167,6 +171,10 @@ Generados/Estonia/Nõmme Kalju/aruanne-2024.categorias.json (escalón de cada fi
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 22
+```
+
 ## 2023
 
 ### Ingresos
@@ -225,6 +233,10 @@ Generados/Estonia/Nõmme Kalju/aruanne-2023.categorias.json (escalón de cada fi
 2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L221) (Claude 2026-10-18)
 2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Televisión. fila de TV (L639) en 0 en 2023; los 2.000 son de la otra columna (subagente Sonnet, revisado por Claude 2026-10-18)
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 22
 ```
 
 ## 2022
@@ -351,6 +363,10 @@ Generados/Estonia/Nõmme Kalju/aruanne-2021.categorias.json (escalón de cada fi
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-18): grossDebt escalón 1 (compuerta: documento anterior): "Laenukohustised" pág. 5; cash escalón 1 (compuerta: documento anterior): "Raha" pág. 5
+```
+
 ## 2020
 
 ### Ingresos
@@ -410,6 +426,10 @@ Generados/Estonia/Nõmme Kalju/aruanne-2020.categorias.json (escalón de cada fi
 2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L197) (Claude 2026-10-18)
 2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Televisión. fila de TV (L577) en 0 en 2020; los 19.085 son de la otra columna (subagente Sonnet, revisado por Claude 2026-10-18)
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 5
 ```
 
 ## 2019
@@ -472,6 +492,10 @@ Generados/Estonia/Nõmme Kalju/aruanne-2019.categorias.json (escalón de cada fi
 ```text
 2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L150) (Claude 2026-10-18)
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: documento siguiente): "Raha" pág. 5
 ```
 
 ## Fuentes

@@ -48,7 +48,7 @@ const rwdmbeFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Omzet', lado:'revenue', importe:4.269374, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.183058,
     officialTotalRevenue:15.174326, officialTotalExpenses:20.626122, officialPAT:-14.545496,
   },
   2020: {
@@ -61,7 +61,7 @@ const rwdmbeFiscalYearMeta = {
     sinDesglose: [
       {renglon:'Brutomarge (+)/(-)', lado:'revenue', importe:0.890922, motivo:'el documento no desglosa este renglón'},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.050076,
     officialTotalRevenue:0.890922, officialTotalExpenses:0.890467, officialPAT:-0.003407,
   },
 };

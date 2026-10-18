@@ -290,7 +290,7 @@ const tallinnakaleveeFiscalYearMeta = {
       {label:'Intressikulud', value:-0.000313},
       {label:'Muud finantstulud ja -kulud', value:0},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.007393,
     officialTotalRevenue:2.374417, officialTotalExpenses:2.189164, officialPAT:0.185251,
   },
   2019: {
@@ -300,7 +300,7 @@ const tallinnakaleveeFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:-0.000796, tax:0,
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.00177,
     officialTotalRevenue:0.521859, officialTotalExpenses:0.469664, officialPAT:0.051399,
   },
   2024: {
@@ -315,7 +315,7 @@ const tallinnakaleveeFiscalYearMeta = {
       {label:'Intressikulud', value:-0.000256},
       {label:'Muud finantstulud ja -kulud', value:-0.005603},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.005143,
     officialTotalRevenue:1.911151, officialTotalExpenses:1.928364, officialPAT:-0.023036,
   },
   2020: {
@@ -353,7 +353,7 @@ const tallinnakaleveeFiscalYearMeta = {
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
     netInterest:-0.000099, tax:0,
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.014094,
     officialTotalRevenue:0.489272, officialTotalExpenses:0.628736, officialPAT:-0.139563,
   },
   2023: {
@@ -367,7 +367,7 @@ const tallinnakaleveeFiscalYearMeta = {
       {label:'Intressitulud', value:0.00003},
       {label:'Intressikulud', value:0},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.010541,
     officialTotalRevenue:1.258617, officialTotalExpenses:1.454529, officialPAT:-0.195882,
   },
 };

@@ -41,7 +41,7 @@ const beerschotbeFiscalYearMeta = {
       {label:'Belastingen', value:-0.035016},
       {label:'Regularisering van belastingen en terugneming van voorzieningen voor belastingen', value:0.025436},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.20365,
     officialTotalRevenue:17.587332, officialTotalExpenses:20.897734, officialPAT:-3.543618,
   },
 };

@@ -92,6 +92,10 @@ tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: balance del documento (NBB)): código NBB 54/58 = 890401 (L180); el balance cuadra: 20/58 = 10/49 = 32177259 (año sin vecino)
+```
+
 ### Liga
 
 ```text
@@ -125,6 +129,10 @@ Generados/Bélgica/Lommel SK/jaarrekening-2018-06-30-individual.categorias.json 
 ```text
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: balance del documento (NBB)): código NBB 54/58 = 139346 (L139); el balance cuadra: 20/58 = 10/49 = 2334658 (año sin vecino)
 ```
 
 ### Liga

@@ -83,6 +83,10 @@ tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: balance del documento (NBB)): código NBB 54/58 = 183058 (L178); el balance cuadra: 20/58 = 10/49 = 9529145 (año sin vecino)
+```
+
 ### Liga
 
 ```text
@@ -117,6 +121,10 @@ Generados/Bélgica/RWDM/jaarrekening-2020-06-30-individual.categorias.json (esca
 ```text
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: balance del documento (NBB)): código NBB 54/58 = 50076 (L172); el balance cuadra: 20/58 = 10/49 = 864227 (año sin vecino)
 ```
 
 ### Liga

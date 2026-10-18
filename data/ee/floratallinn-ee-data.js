@@ -352,7 +352,7 @@ const floratallinneeFiscalYearMeta = {
       {label:'Intressitulud', value:0.011799},
       {label:'Intressikulud', value:-0.048167},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.240465,
     officialTotalRevenue:2.157951, officialTotalExpenses:3.087668, officialPAT:-0.966085,
   },
   2020: {
@@ -366,7 +366,7 @@ const floratallinneeFiscalYearMeta = {
       {label:'Intressitulud', value:0.00884},
       {label:'Intressikulud', value:-0.02639},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.538185,
     officialTotalRevenue:3.608798, officialTotalExpenses:3.460692, officialPAT:0.130556,
   },
   2023: {
@@ -381,7 +381,7 @@ const floratallinneeFiscalYearMeta = {
       {label:'Intressikulud', value:-0.099116},
       {label:'Muud finantstulud ja -kulud', value:0},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.005593,
     officialTotalRevenue:3.351026, officialTotalExpenses:4.085329, officialPAT:-0.828764,
   },
   2024: {
@@ -395,7 +395,7 @@ const floratallinneeFiscalYearMeta = {
       {label:'Intressitulud', value:0.005299},
       {label:'Intressikulud', value:-0.112456},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.00627,
     officialTotalRevenue:3.923521, officialTotalExpenses:3.94157, officialPAT:-0.125206,
   },
   2021: {
@@ -409,7 +409,7 @@ const floratallinneeFiscalYearMeta = {
       {label:'Intressitulud', value:0.005417},
       {label:'Intressikulud', value:-0.008985},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:null, cash:0.701883,
     officialTotalRevenue:5.913409, officialTotalExpenses:5.57158, officialPAT:0.338261,
   },
   2022: {
@@ -424,7 +424,7 @@ const floratallinneeFiscalYearMeta = {
       {label:'Intressikulud', value:-0.074177},
       {label:'Muud finantstulud ja -kulud', value:-0.000015},
     ],
-    grossDebt:null, cash:null,
+    grossDebt:1.125, cash:0.401338,
     officialTotalRevenue:3.629337, officialTotalExpenses:4.640723, officialPAT:-1.202494,
   },
 };

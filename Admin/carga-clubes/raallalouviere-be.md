@@ -77,6 +77,10 @@ tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-18): cash escalón 1 (compuerta: balance del documento (NBB)): código NBB 54/58 = 1630864 (L176); el balance cuadra: 20/58 = 10/49 = 26276967 (año sin vecino)
+```
+
 ### Liga
 
 ```text
