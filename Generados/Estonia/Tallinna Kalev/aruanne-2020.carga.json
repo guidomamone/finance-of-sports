@@ -1,18 +1,10 @@
 {
  "pdf": "Clubes/Estonia/Tallinna Kalev/aruanne-2020.pdf",
- "generado": "2026-10-18T18:34:34.016Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Isikliku sõiduauto kasutus\" -> admin_general_expense 0.6; \"Tööjõukulud\" -> wages_squad 0.55"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-18T18:44:39.466Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-18: 2025 trae los dos (pág. 5 consolidado y la entidad sola L653-711); la controlada es la escuela de fútbol del club: consolidado (regla 2). (revisión del alta, subagente Sonnet, revisado por Claude 2026-10-18))",
+  "\"Televisión\" en 0: real, por ajuste manual (2026-10-18, sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18))",
   "gestión: ningún presidente confirmado cubre 2020 (cierre 2020-12-31); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -299,9 +291,9 @@
     "amountNative": -0.003,
     "disclosureLevel": "aggregated",
     "_pag": 15,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Mängijate soetuskulud",
@@ -339,9 +331,9 @@
     "amountNative": -0.081353,
     "disclosureLevel": "aggregated",
     "_pag": 5,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Põhivarade kulum ja väärtuse langus",
@@ -418,6 +410,16 @@
    "valor": "official_balance_sheet",
    "linea": null,
    "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L116) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Tallinna Kalev/aruanne-2020.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)",
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-18"
@@ -848,11 +850,11 @@
    "origen": "verificacion (nota que desglosa \"Mitmesugused tegevuskulud\")",
    "signoFijo": 0.003,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Compensación por uso del auto personal: admin_general_expense, igual que 'Isikliku auto kasutamise kompensatsioon' de Tartu 2025 (respuesta de Guido). [Isikliku sõiduauto kasutus 3 000 (aruanne-2020, Lisa Mitmesugused tegevuskulud)]",
    "destino": "expense",
    "amountNative": -0.003
   },
@@ -909,11 +911,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.081353,
    "cat": "wages_squad",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): renglón de personal entero a wages_squad (club-data-mapping: Sueldos del Personal -> wages_squad); no se abre con la Lisa 13 [Tööjõukulud -81 353 (aruanne-2020 L130); Kokku tööjõukulud 192 966 (Lisa 13, L528)]",
    "destino": "expense",
    "amountNative": -0.081353
   },
@@ -968,12 +970,6 @@
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
    "destino": "netInterest"
-  }
- ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
   }
  ],
  "signos": {
@@ -1064,8 +1060,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 10,
   "lineasGasto": 24,
   "metaFilas": 2,

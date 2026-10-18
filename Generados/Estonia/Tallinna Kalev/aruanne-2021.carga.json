@@ -1,18 +1,10 @@
 {
  "pdf": "Clubes/Estonia/Tallinna Kalev/aruanne-2021.pdf",
- "generado": "2026-10-18T18:34:34.107Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "3 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"SOS Lasteküla\" -> other_expenses 0.75; \"Isikliku sõiduauto kasutus\" -> admin_general_expense 0.6; \"Tööjõukulud\" -> wages_squad 0.55"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-18T18:44:39.549Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-18: 2025 trae los dos (pág. 5 consolidado y la entidad sola L653-711); la controlada es la escuela de fútbol del club: consolidado (regla 2). (revisión del alta, subagente Sonnet, revisado por Claude 2026-10-18))",
+  "\"Televisión\" en 0: real, por ajuste manual (2026-10-18, sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18))",
   "gestión: ningún presidente confirmado cubre 2021 (cierre 2021-12-31); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -159,9 +151,9 @@
     "amountNative": -0.000025,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Üür ja rent",
@@ -309,9 +301,9 @@
     "amountNative": -0.00515,
     "disclosureLevel": "aggregated",
     "_pag": 15,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Mängijate soetuskulud",
@@ -349,9 +341,9 @@
     "amountNative": -0.062964,
     "disclosureLevel": "aggregated",
     "_pag": 5,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Põhivarade kulum ja väärtuse langus",
@@ -428,6 +420,16 @@
    "valor": "official_balance_sheet",
    "linea": null,
    "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L115) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Tallinna Kalev/aruanne-2021.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)",
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-18"
@@ -644,11 +646,11 @@
    "origen": "verificacion (nota que desglosa \"Jagatud annetused ja toetused\")",
    "signoFijo": 0.000025,
    "cat": "other_expenses",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Donación de 25 EUR a SOS Lasteküla dentro de Jagatud annetused ja toetused: no es beca ni apoyo a jugadores; other_expenses, igual que la donación a Kingitud Elu de Tartu 2019. [SOS Lasteküla 25 (aruanne-2021.md Lisa Jagatud annetused ja toetused, L487)]",
    "destino": "expense",
    "amountNative": -0.000025
   },
@@ -874,11 +876,11 @@
    "origen": "verificacion (nota que desglosa \"Mitmesugused tegevuskulud\")",
    "signoFijo": 0.00515,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Uso del auto personal: admin_general_expense (ver 180ae45). [Isikliku sõiduauto kasutus 5 150 (aruanne-2022.md L530, columna 2021; mismo renglón en aruanne-2021)]",
    "destino": "expense",
    "amountNative": -0.00515
   },
@@ -935,11 +937,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.062964,
    "cat": "wages_squad",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): ídem: la Lisa 13 no concilia con el estado (3.654); renglón entero a wages_squad [Tööjõukulud -62 964 (aruanne-2021 L130); Kokku tööjõukulud 133 974 (aruanne-2022.md L547, columna 2021)]",
    "destino": "expense",
    "amountNative": -0.062964
   },
@@ -994,12 +996,6 @@
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
    "destino": "netInterest"
-  }
- ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
   }
  ],
  "signos": {
@@ -1090,8 +1086,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 10,
   "lineasGasto": 25,
   "metaFilas": 2,

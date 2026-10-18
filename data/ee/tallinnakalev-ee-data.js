@@ -33,6 +33,18 @@ const tallinnakaleveeRevenueLinesByYear = {
     { rawLabel:'Muud klassifitseerimata äritulud', normalizedCategory:'other_income', amountNative:0.020062, disclosureLevel:'aggregated' },
     { rawLabel:'Muud tulud', normalizedCategory:'other_income', amountNative:0.00571, disclosureLevel:'aggregated' },
   ],
+  2020: [
+    { rawLabel:'Sihtfinantseerimine tegevuskuludeks', normalizedCategory:'other_income', amountNative:0.111613, disclosureLevel:'aggregated' },
+    { rawLabel:'Mittesihtotsatarbelised annetused ja toetused', normalizedCategory:'other_income', amountNative:0.149359, disclosureLevel:'aggregated' },
+    { rawLabel:'Renditulud staadionite või selle rajatiste väljarentimisest', normalizedCategory:'stadium_other', amountNative:0.146833, disclosureLevel:'aggregated' },
+    { rawLabel:'Piletitulu', normalizedCategory:'matchday_competition', amountNative:0.004453, disclosureLevel:'aggregated' },
+    { rawLabel:'Tulu turniiride korraldamisest', normalizedCategory:'other_income', amountNative:0.002058, disclosureLevel:'aggregated' },
+    { rawLabel:'Tulu mängijaõiguste müügist', normalizedCategory:'player_sales', amountNative:0.085743, disclosureLevel:'aggregated' },
+    { rawLabel:'Klubi peasponsorilt saadud tulu', normalizedCategory:'sponsorship_commercial', amountNative:0.045, disclosureLevel:'aggregated' },
+    { rawLabel:'Tulu teistelt sponsoritelt', normalizedCategory:'sponsorship_commercial', amountNative:0.030245, disclosureLevel:'aggregated' },
+    { rawLabel:'Muud tulud', normalizedCategory:'other_income', amountNative:0.000495, disclosureLevel:'aggregated' },
+    { rawLabel:'Muud tulud', normalizedCategory:'other_income', amountNative:0.000001, disclosureLevel:'aggregated' },
+  ],
 };
 const tallinnakaleveeExpenseLinesByYear = {
   2025: [
@@ -114,6 +126,32 @@ const tallinnakaleveeExpenseLinesByYear = {
     { rawLabel:'Põhivarade kulum ja väärtuse langus', normalizedCategory:'depreciation', amountNative:-0.0381, disclosureLevel:'aggregated' },
     { rawLabel:'Muud kulud', normalizedCategory:'other_expenses', amountNative:-0.014691, disclosureLevel:'aggregated' },
   ],
+  2020: [
+    { rawLabel:'Sihtotstarbeliselt finantseeritud projektide otsesed kulud', normalizedCategory:'other_expenses', amountNative:-0.111613, disclosureLevel:'aggregated' },
+    { rawLabel:'Sportlasetoetus', normalizedCategory:'wages_squad', amountNative:-0.053987, disclosureLevel:'aggregated' },
+    { rawLabel:'Sportlase stipendium', normalizedCategory:'wages_squad', amountNative:-0.0029, disclosureLevel:'aggregated' },
+    { rawLabel:'Üür ja rent', normalizedCategory:'admin_general_expense', amountNative:-0.013579, disclosureLevel:'aggregated' },
+    { rawLabel:'Elektrienergia', normalizedCategory:'admin_general_expense', amountNative:-0.010991, disclosureLevel:'aggregated' },
+    { rawLabel:'Kütus', normalizedCategory:'admin_general_expense', amountNative:-0.006703, disclosureLevel:'aggregated' },
+    { rawLabel:'Veevarustusteenused', normalizedCategory:'admin_general_expense', amountNative:-0.001934, disclosureLevel:'aggregated' },
+    { rawLabel:'Mitmesugused bürookulud', normalizedCategory:'admin_general_expense', amountNative:-0.006603, disclosureLevel:'aggregated' },
+    { rawLabel:'Lähetuskulud', normalizedCategory:'match_organisation_expense', amountNative:-0.008224, disclosureLevel:'aggregated' },
+    { rawLabel:'Koolituskulud', normalizedCategory:'admin_general_expense', amountNative:-0.003498, disclosureLevel:'aggregated' },
+    { rawLabel:'Reklaam', normalizedCategory:'admin_general_expense', amountNative:-0.000312, disclosureLevel:'aggregated' },
+    { rawLabel:'Liikmemaksud', normalizedCategory:'admin_general_expense', amountNative:-0.000025, disclosureLevel:'aggregated' },
+    { rawLabel:'Proportsiooniga tagastamatu käibemaks', normalizedCategory:'admin_general_expense', amountNative:-0.017764, disclosureLevel:'aggregated' },
+    { rawLabel:'Staadioni ja saali rent', normalizedCategory:'match_organisation_expense', amountNative:-0.073839, disclosureLevel:'aggregated' },
+    { rawLabel:'Transport', normalizedCategory:'match_organisation_expense', amountNative:-0.022322, disclosureLevel:'aggregated' },
+    { rawLabel:'Meditsiinitarvikud- ja teenused', normalizedCategory:'other_expenses', amountNative:-0.006221, disclosureLevel:'aggregated' },
+    { rawLabel:'Spordivarustus', normalizedCategory:'other_expenses', amountNative:-0.018039, disclosureLevel:'aggregated' },
+    { rawLabel:'Isikliku sõiduauto kasutus', normalizedCategory:'admin_general_expense', amountNative:-0.003, disclosureLevel:'aggregated' },
+    { rawLabel:'Mängijate soetuskulud', normalizedCategory:'player_amortisation', amountNative:-0.052955, disclosureLevel:'aggregated' },
+    { rawLabel:'Laagrite-ja turniiride korralduskulud', normalizedCategory:'match_organisation_expense', amountNative:-0.004945, disclosureLevel:'aggregated' },
+    { rawLabel:'Muud', normalizedCategory:'other_expenses', amountNative:-0.039122, disclosureLevel:'aggregated' },
+    { rawLabel:'Tööjõukulud', normalizedCategory:'wages_squad', amountNative:-0.081353, disclosureLevel:'aggregated' },
+    { rawLabel:'Põhivarade kulum ja väärtuse langus', normalizedCategory:'depreciation', amountNative:-0.003943, disclosureLevel:'aggregated' },
+    { rawLabel:'Muud kulud', normalizedCategory:'other_expenses', amountNative:-0.001275, disclosureLevel:'aggregated' },
+  ],
 };
 const tallinnakaleveeFiscalYearMeta = {
   2025: {
@@ -156,6 +194,20 @@ const tallinnakaleveeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:1.911151, officialTotalExpenses:1.928364, officialPAT:-0.023036,
   },
+  2020: {
+    currency:'EUR', fxRef:'EUR@2020-12-31',
+    sourceId:'tallinnakalev-ee-aruanne-2020',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.000064, tax:0,
+    extraRows: [
+      {label:'Intressikulud', value:-0.000056},
+      {label:'Muud finantstulud ja -kulud', value:-0.000008},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0.5758, officialTotalExpenses:0.545147, officialPAT:0.030589,
+  },
 };
 const tallinnakaleveePresupuestoOverlayByYear = {};
 
@@ -185,6 +237,11 @@ Object.assign(sources, {
   'tallinnakalev-ee-aruanne-2024': {
     id:'tallinnakalev-ee-aruanne-2024', clubId:'tallinnakalev-ee',
     title:'Jalgpalliklubi Tallinna Kalev — aruanne-2024 (ejercicio 2024)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'tallinnakalev-ee-aruanne-2020': {
+    id:'tallinnakalev-ee-aruanne-2020', clubId:'tallinnakalev-ee',
+    title:'Jalgpalliklubi Tallinna Kalev — aruanne-2020 (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
