@@ -96,6 +96,35 @@ window.LIGA_VIEW = (function(){
     return pend[leagueId];
   }
 
+  // LOS ESTIMADOS (data/estimados/<liga>.js, de tools/estimar.mjs): el ingreso de cada club de la liga sin balance ese año, una cuenta
+  // nuestra y no un dato del club. Mismo mecanismo que loadRanking(); una liga sin archivo es una liga sin estimados.
+  var pendEst = {};
+  function loadEstimados(leagueId){
+    if((window.ESTIMADOS || {})[leagueId]) return Promise.resolve(true);
+    if(pendEst[leagueId]) return pendEst[leagueId];
+    pendEst[leagueId] = new Promise(function(resolve){
+      var s = document.createElement('script');
+      s.src = 'data/estimados/' + leagueId + '.js' + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
+      s.onload = function(){ delete pendEst[leagueId]; resolve(true); };
+      s.onerror = function(){ delete pendEst[leagueId]; resolve(false); };
+      document.head.appendChild(s);
+    });
+    return pendEst[leagueId];
+  }
+  function cargarLiga(leagueId){ return Promise.all([loadRanking(leagueId), loadEstimados(leagueId)]); }
+  // Filas estimadas del (liga, ejercicio): mismas claves que una fila real más `estimado`, y `n` cuando el club no está en el sitio.
+  function filasEstimadas(leagueId, year){
+    return (((window.ESTIMADOS || {})[leagueId] || {})[year] || []).map(function(e){
+      return { id:e.id || null, n:e.n || null, revenue:e.revenue, lo:e.lo, hi:e.hi, error:e.error, estimado:true };
+    });
+  }
+  // El total suma los estimados solo cuando más de la mitad de la liga de ese año tiene balance real. El tamaño es el
+  // verificado (leagueSize) o, sin él, reales + estimados (la lista de la temporada).
+  function totalConEstimados(r, est){
+    var tam = r.leagueSize != null ? r.leagueSize : r.clubs.length + est.length;
+    return est.length > 0 && tam > 0 && r.clubs.length / tam > 0.5;
+  }
+
   function rankingDe(leagueId, year){
     return ((window.RANKINGS || {})[leagueId] || {})[year] || null;
   }
@@ -119,7 +148,7 @@ window.LIGA_VIEW = (function(){
   // llamador (index.html), que es el único que conoce el nav.
   // --------------------------------------------------------------------------
   function show(leagueId, year){
-    return loadRanking(leagueId).then(function(){
+    return cargarLiga(leagueId).then(function(){
       st.league = leagueId;
       st.year = (year != null && rankingDe(leagueId, year)) ? Number(year) : anioPorDefecto(leagueId);
       st.simulados = [];
@@ -174,7 +203,7 @@ window.LIGA_VIEW = (function(){
   // Como show(), pero además calcula las filas simuladas. `clubes` es [{clubId, clubYear}]; un club sin ingreso calculable para ese
   // año no entra, sin romper a los demás.
   function showConSimulados(leagueId, year, clubes){
-    return loadRanking(leagueId).then(function(){
+    return cargarLiga(leagueId).then(function(){
       st.league = leagueId;
       st.year = (year != null && rankingDe(leagueId, year)) ? Number(year) : anioPorDefecto(leagueId);
       pendingSim = [];
@@ -646,40 +675,62 @@ window.LIGA_VIEW = (function(){
     head.appendChild(el('h2', 'lg-card-h', t('liga.revenue', 'Ingresos')));
     head.appendChild(el('span', 'lg-card-sub', t('liga.rankSub', 'En dólares · tocá un club para ver su ficha')));
     card.appendChild(head);
-    var filas = filasConSimulado(r, simulados);
+    // Los estimados van en la misma tabla, en su puesto por plata, con "(estimado)*" y la barra rayada: nunca se leen como un balance.
+    var est = filasEstimadas(st.league, st.year);
+    var filas = filasConSimulado(r, simulados).concat(est).sort(function(a, b){ return b.revenue - a.revenue; });
     var max = filas.reduce(function(m, f){ return Math.max(m, f.revenue); }, 0);
     var ol = el('ol', 'lg-filas');
     filas.forEach(function(f, i){
-      var li = el('li', 'lg-fila' + (f.simulado ? ' simulada' : ''));
-      var color = clubDe(f.id).brandColor || 'var(--azul)';
+      var li = el('li', 'lg-fila' + (f.simulado ? ' simulada' : '') + (f.estimado ? ' estimada' : ''));
+      var color = (f.id && clubDe(f.id).brandColor) || (f.estimado ? '#b9bec7' : 'var(--azul)');
       li.appendChild(el('span', 'vid-pos', String(i + 1)));
       var nom = el('div', 'lg-fila-nom');
-      var b = el('button', 'lg-club');
-      b.type = 'button';
+      // Un club estimado que no está en el sitio no tiene ficha: va como texto, no como botón.
+      var b = el(f.id ? 'button' : 'span', 'lg-club');
+      if(f.id) b.type = 'button';
       var dot = el('span', 'vid-dot'); dot.style.background = color;
       b.appendChild(dot);
-      b.appendChild(el('span', 'vid-nom-t', nombreDe(f.id)));
-      b.addEventListener('click', function(){ irAlClub(f.id); });
+      b.appendChild(el('span', 'vid-nom-t', f.id ? nombreDe(f.id) : f.n));
+      // Fuera del nombre: un nombre largo se recorta con "…", y la marca de estimado no se puede recortar nunca.
+      if(f.estimado) b.appendChild(el('span', 'lg-est-tag', t('liga.est.tag', '(estimado)') + '*'));
+      if(f.id) b.addEventListener('click', function(){ irAlClub(f.id); });
       nom.appendChild(b);
       // Sin el documento debajo de cada club (está en su ficha y en Fuentes): en la fila queda demasiado texto junto. Un club simulado
       // sí lleva su marca: nadie lo puede leer como un club que juega ahí.
       if(f.simulado) nom.appendChild(el('span', 'lg-doc liga-sim-badge', t('liga.sim.tag', '(simulado)')));
       li.appendChild(nom);
       var barra = el('span', 'vid-barra');
-      var lleno = el('span'); lleno.style.background = color;
+      var lleno = el('span');
+      if(f.estimado) lleno.style.background = 'repeating-linear-gradient(45deg,' + color + ' 0 4px,#ffffff 4px 7px)';
+      else lleno.style.background = color;
       if(f.simulado) lleno.style.opacity = '.5';
       lleno.style.width = max > 0 ? Math.max(2, Math.round(f.revenue / max * 100)) + '%' : '0';
       barra.appendChild(lleno);
       li.appendChild(barra);
-      li.appendChild(el('span', 'vid-val', fmtCard(f.revenue)));
+      var val = el('span', 'vid-val', (f.estimado ? '≈ ' : '') + fmtCard(f.revenue));
+      if(f.estimado) val.title = t('liga.est.range', 'Entre') + ' ' + fmtCard(f.lo) + ' ' + t('liga.est.and', 'y') + ' ' + fmtCard(f.hi)
+        + ' ' + t('liga.est.range2', '(8 de cada 10 veces)') + ' · ' + t('liga.est.error', 'error típico') + ' ' + f.error + '%';
+      li.appendChild(val);
       ol.appendChild(li);
     });
     card.appendChild(ol);
-    // "Total de los N cargados", nunca "total de la liga": son cosas distintas.
+    // "Total de los N cargados", nunca "total de la liga", salvo que más de la mitad de la liga tenga balance real: ahí es el total de
+    // la liga con los estimados, y lo dice.
     var pie = el('div', 'vid-card-pie');
-    pie.appendChild(el('span', null, t('liga.total', 'Total de los') + ' ' + r.clubs.length + ' ' + t('liga.totalLoaded', 'cargados')));
-    pie.appendChild(el('strong', 'lg-total', fmtCard(totalDe(r))));
+    if(totalConEstimados(r, est)){
+      var totEst = est.reduce(function(sum, f){ return sum + f.revenue; }, 0);
+      pie.appendChild(el('span', null, t('liga.est.total', 'Total de la liga') + ' (' + r.clubs.length + ' '
+        + t('liga.est.withBal', 'con balance') + ' + ' + est.length + ' ' + (est.length === 1 ? t('liga.est.one', 'estimado') : t('liga.est.many', 'estimados')) + '*)'));
+      pie.appendChild(el('strong', 'lg-total', '≈ ' + fmtCard(totalDe(r) + totEst) + '*'));
+    } else {
+      pie.appendChild(el('span', null, t('liga.total', 'Total de los') + ' ' + r.clubs.length + ' ' + t('liga.totalLoaded', 'cargados')));
+      pie.appendChild(el('strong', 'lg-total', fmtCard(totalDe(r))));
+    }
     card.appendChild(pie);
+    if(est.length){
+      card.appendChild(el('p', 'lg-est-nota', '* ' + t('liga.est.note',
+        'Estimado: el club no tiene balance de este ejercicio en el sitio. El número es una cuenta nuestra, con sus otros años o, si no los hay, con la liga y su puesto en la tabla; no es un dato del club. El total suma estimados solo cuando más de la mitad de la liga tiene balance real.')));
+    }
     return card;
   }
 
@@ -745,7 +796,11 @@ window.LIGA_VIEW = (function(){
     var caja = el('div', 'lg-avisos');
     var out = [];
 
-    if(r.leagueSize != null && r.clubs.length < r.leagueSize){
+    if(r.leagueSize != null && r.clubs.length < r.leagueSize && filasEstimadas(st.league, st.year).length){
+      out.push(t('liga.cv.missing', 'Faltan') + ' ' + (r.leagueSize - r.clubs.length) + ' '
+        + t('liga.cv.missing2', 'de los') + ' ' + r.leagueSize + ' '
+        + t('liga.cv.missingEst', 'clubes de esa temporada: figuran en la tabla con un ingreso estimado (*).'));
+    } else if(r.leagueSize != null && r.clubs.length < r.leagueSize){
       out.push(t('liga.cv.missing', 'Faltan') + ' ' + (r.leagueSize - r.clubs.length) + ' '
         + t('liga.cv.missing2', 'de los') + ' ' + r.leagueSize + ' '
         + t('liga.cv.missing3', 'clubes de esa temporada: el total de la tabla es el de los cargados, no el de la liga.'));

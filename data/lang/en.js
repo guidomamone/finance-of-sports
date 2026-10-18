@@ -579,4 +579,16 @@ window.I18N.strings.en = {
   "vid.loaded": "loaded",
   "vid.more": "more clubs in the ranking",
   "vid.lump": "not broken down by category",
+  // Ligas: estimados en la tabla
+  "liga.est.tag": "(estimate)",
+  "liga.est.range": "Between",
+  "liga.est.and": "and",
+  "liga.est.range2": "(8 times out of 10)",
+  "liga.est.error": "typical error",
+  "liga.est.total": "League total",
+  "liga.est.withBal": "with accounts",
+  "liga.est.one": "estimate",
+  "liga.est.many": "estimates",
+  "liga.est.note": "Estimate: the club's accounts for this year are not on the site. The figure is our own calculation, from its other years or, when there are none, from the league and its table position; it is not club data. The total includes estimates only when more than half of the league has real accounts.",
+  "liga.cv.missingEst": "clubs in that season: they appear in the table with an estimated revenue (*).",
 };

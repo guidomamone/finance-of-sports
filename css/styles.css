@@ -962,6 +962,13 @@
   .lg-sindatos summary{cursor:pointer;font-weight:700;font-size:14px;color:#45474d;}
   .lg-sindatos p{margin:10px 0 0;font-size:13.5px;color:var(--muted);line-height:1.6;}
   @media (max-width:600px){ .lg-pais{grid-template-columns:1fr;gap:8px;padding:12px 16px;} }
+  /* Ligas: estimados en la tabla de ingresos */
+  .lg-est-tag{flex:0 0 auto;white-space:nowrap;color:#8a4b00;font-weight:600;}
+  .lg-fila.estimada .lg-club{flex-wrap:wrap;row-gap:0;}
+  .lg-fila.estimada .lg-est-tag{padding-left:2px;}
+  .lg-fila.estimada .vid-val{color:#8a4b00;}
+  span.lg-club{cursor:default;}
+  .lg-est-nota{margin:0;font-size:12.5px;line-height:1.5;color:var(--muted);}
   /* Una liga elegida */
   .lg-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:16px;}
   .lg-h{margin:0;font-size:32px;letter-spacing:-.02em;color:var(--azul);display:flex;align-items:center;}
