@@ -54,6 +54,15 @@ window.RANKINGS["ee-meistriliiga"] = {
         mix:[["Comercial / Sponsors",0.187]] },
     ],
   },
+  2021: {
+    leagueSize: 10,
+    sinDato: ["fcilevadia-ee","floratallinn-ee","narvatrans-ee","nommekalju-ee","paidelinnameeskond-ee","tartutammeka-ee"],
+    clubs: [
+      { id:"kuressaare-ee", revenue:0.306, reportType:"official_balance_sheet",
+        sourceId:"kuressaare-ee-aruanne-2021",
+        mix:[["Cuotas Sociales",0.012],["Comercial / Sponsors",0.014],["Premios por competencias",0.023],["Venta de Jugadores",0.041],["Otros ingresos",0.216]] },
+    ],
+  },
   2020: {
     leagueSize: 10,
     sinDato: ["fcilevadia-ee","narvatrans-ee","nommekalju-ee","paidelinnameeskond-ee","tallinnakalev-ee","tartutammeka-ee"],
