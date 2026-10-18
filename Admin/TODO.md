@@ -25,7 +25,7 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): finanzas 281, 282, 294 · pipeline 290, 232, 279, 286, 287, 298 (c a r), 301, 302, 306, 307 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
-datos-sourcing 273 (completar el dato), 252 · ligas 295 · Reino Unido (261) en su propia sesión · la principal: 291 y los merges; el 246 va
+datos-sourcing (sin sesión abierta) 273, 252 · ligas 295 · Reino Unido (261) en su propia sesión · la principal: 291 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
 Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
@@ -193,9 +193,10 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    SII, Banco de Rusia o Bank of England (restringen el uso comercial) se sirve en la moneda del club o se pide permiso
    (`Admin/fuentes-externas.md`, "Consecuencias").
 252. EJERCICIOS NUEVOS: LO QUE QUEDA (pedido de Guido; mensual). La revisión está hecha: `tools/ejercicios-nuevos.mjs` y una tarea programada
-   (día 1, 9:00, carpeta principal) que baja el PDF a `Clubes/` y anota en `Admin/sourcing/README.md`. Falta: agregarles la URL del canal
-   a las 37 notas de sourcing que no la tienen (la tarea las marca "a revisar" todos los meses); cargar los 14 clubes que ya tienen el PDF
-   del ejercicio siguiente bajado (`node tools/ejercicios-nuevos.mjs` los lista; onboarding).
+   (día 1, 9:00, carpeta principal) que baja el PDF a `Clubes/` y anota en `Admin/sourcing/README.md`; cada nota tiene URL o "Página del
+   canal" (o el canal es el registro: API danesa por CVR, Companies House por número). Falta: la nota de Unión Magdalena (Colombia) sin
+   canal; cargar los 35 clubes que ya tienen el PDF del ejercicio siguiente bajado (`node tools/ejercicios-nuevos.mjs` los lista;
+   onboarding); 11 canales se revisan con el navegador (portales con JavaScript, Unternehmensregister, la FPF).
 255. CONSOLIDAR LAS REGLAS (mejoras de proyecto, pedido de Guido 2026-10-16). CLAUDE.md, las memorias, 7 skills, CONVENCIONES, CONVENCIONES-DATOS, PANTALLA y PIPELINE: una regla en tres
    lugares es lo que hace que una sesión contradiga a otra. Pasada de consolidación; lo chequeable va a hooks (250) o a audit.js.
 256. CHANGELOG CORTO (mejoras de proyecto, pedido de Guido 2026-10-16). Casi 3.000 líneas y git ya guarda la historia: dejar los últimos 30 días y archivar el resto en Admin/Archive/.
@@ -217,11 +218,16 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    relacionada (con el criterio de socios, contaría); hoy la deuda es solo "Empréstimos".
 
 273. ESTADIO Y SPONSOR: LO QUE QUEDA (pedido de Guido, 2026-10-18). El dato está en main (`data/contexto/<iso>.js`, `tools/estadio-sponsor.mjs`,
-   lo manual en `tools/contexto-manual.json` con fuente) y `cargar.mjs` no escribe un año nuevo sin estadio y sponsor. Falta: completar a
-   mano los ~140 ejercicios ya cargados sin estadio o sin sponsor (casi todos sin sponsor: ascensos y años viejos sin tabla de kits;
-   `node tools/estadio-sponsor.mjs --ensayo` los lista; incluye los años de Estonia y Bélgica de los lotes 91-92, que onboarding carga
-   con las tools de su rama, sin la compuerta); que `generate-sponsors.js` sume lo de `contexto-manual.json`; nombrar la compuerta nueva en
-   `Admin/PIPELINE.md` y en la skill `club-or-year-onboarding` (la skill, con ok de Guido).
+   lo manual en `tools/contexto-manual.json` con fuente) y `cargar.mjs` no escribe un año nuevo sin estadio y sponsor. Falta: (a) ~135
+   ejercicios cargados sin sponsor (110) o sin estadio (25), concentrados en pocos clubes (Ferroviária, Novorizontino, Sporting CP, Fortaleza
+   CEIF, Almagro, AEL; `node tools/estadio-sponsor.mjs --ensayo --detalle`). DISEÑO APROBADO (Guido, 2026-10-18), sin implementar: un modo
+   de `estadio-sponsor.mjs` que lea la tabla de historia de camisetas de la página del club en Wikipedia (inglés y la del país; "Kit
+   manufacturers and shirt sponsors" / "Indumentaria y patrocinador" / "Fornecedores e patrocinadores"), con el ejercicio en la fila
+   cuyo rango lo contiene; compuerta: la página es del club y el rango no es ambiguo; solo completa lo que falta, con fuente aparte; ensayo
+   con muestra para Guido; lo que no salga, a mano con fuente. (b) que `generate-sponsors.js` sume lo de `contexto-manual.json` (está por
+   ejercicio, no por liga-temporada). (c) AVS 2021 y 2023 sin liga: ejercicios de la sociedad anterior, confirmar la entidad. (d) nombrar la
+   compuerta en `Admin/PIPELINE.md` y en la skill `club-or-year-onboarding` (la skill, con ok de Guido). Siguen sin liga a propósito:
+   Novorizontino 2010, Dynamo Makhachkala 2021, Racing 2027 (presupuesto).
 281. FINANZAS: INGRESOS DE LAS OTRAS ENTIDADES (pedido de Guido, 2026-10-17). Hecho para Portugal: 14 asociaciones-año transcriptas con su
    línea de ingresos (Vizela, Belenenses, Chaves, Académica, Braga, Marítimo, Porto…; 17 líneas de ingresos en el registro). Falta: União
    de Leiria, cuyo PDF no trae el estado de resultados (sourcing).

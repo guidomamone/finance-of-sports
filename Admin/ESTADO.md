@@ -44,7 +44,9 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   corrige con un ajuste manual (`tools/ajustes.mjs`, escalón 0 de cada escalera) además de en `data/`, para que una corrida futura no lo deshaga.
 - Cuántos documentos hay en cada etapa y cuánto cuesta el paso siguiente: `node tools/estado.mjs` (gratis).
 - Ejercicios nuevos: una tarea programada mensual (día 1, 9:00) corre `tools/ejercicios-nuevos.mjs`, baja los PDF nuevos a `Clubes/` y
-  los anota en `Admin/sourcing/README.md`, sección "Ejercicios nuevos (tarea mensual)".
+  los anota en `Admin/sourcing/README.md`, sección "Ejercicios nuevos (tarea mensual)". El canal sale de la nota de sourcing (URL o
+  "Página del canal") o del registro (API danesa por CVR, Companies House por número); lo que pide navegador queda "a revisar" con la
+  instrucción exacta.
 - El tablero del pipeline, para el celular: artifact de Claude https://claude.ai/artifact/ESc6PC7CUbQ8wV2ETgLVdb (etapas, cola, gasto por
   día, motor y país, mails a clubes). No se actualiza solo: `node tools/tablero.mjs` y subir los CSV (cabecera de la tool; to-do 300).
 - El primer año de un club se confirma sin Guido: con lo impreso (ingresos, gastos y resultado, o un total y el resultado) o, si solo

@@ -15,6 +15,18 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 743 — Merge de datos-sourcing (2026-10-18)
+
+Lo generado regenerado; ASSET_V 1299, P0 0 / P1 0. La sesión datos cerró.
+
+- To-do 252: `ejercicios-nuevos.mjs` baja por el registro (Dinamarca por API y CVR, Companies House por número), reconoce "ya bajado" por
+  fecha de cierre, temporada o número de ejercicio, mira la mediateca de WordPress y el texto de los links, y deja instrucciones de navegador
+  (FPF, CMF, Unternehmensregister). "Página del canal" en las notas de Portugal, Argentina, Alianza Lima y Botafogo-SP; Chievo sin canal vivo.
+  Torreense 2024-25 bajado. `companies-house-fetch.mjs --list --json`.
+- To-do 273: 16 ligas más verificadas con evidencia (Católica, Ferroviária, Kifisia, Levadiakos, Fredericia, Racing 2026 a mano); el lector
+  junta tablas de posiciones de grupos (Super League 2 griega 2023-24 completa). Diseño aprobado para los ~135 ejercicios sin sponsor o
+  estadio (tabla de camisetas de la página del club), sin implementar.
+
 ## Versión 742 — Merge de pantallas: cita de Wikipedia en Ligas (2026-10-18)
 
 Lo generado regenerado; ASSET_V 1298, P0 0 / P1 0. La sesión pantallas cerró.
