@@ -564,7 +564,7 @@ export const VOCABULARIO = {
   TITULO_BALANCE: {
     es: ['balance general', 'estado de situacion*', 'balance de situacion'], pt: ['balanco patrimonial', 'demonstracao da posicao financeira', 'balanco'],
     en: ['balance sheet*', 'statement* of financial position'], de: ['bilanz'], fr: ['bilan'], it: ['stato patrimoniale'], nl: ['balans'],
-    no: ['balanse'], sv: ['balansrakning'], fi: ['tase'], cs: ['rozvaha'], sk: ['suvaha'], pl: ['bilans'], hr: ['bilanca*', 'bilans stanja'],
+    no: ['balanse'], sv: ['balansrakning'], fi: ['tase'], et: ['bilanss'], // et: to-do 298 c3 (Estonia: "Bilanss") cs: ['rozvaha'], sk: ['suvaha'], pl: ['bilans'], hr: ['bilanca*', 'bilans stanja'],
     sr: ['биланс стања'], sl: ['bilanca stanja'], hu: ['merleg'], ro: ['bilant*'], bg: ['счетоводен баланс'], el: ['ισολογισμ*'],
     tr: ['bilanco', 'finansal durum tablosu'], ru: ['бухгалтерский баланс', 'баланс'], uk: ['баланс', 'звіт про фінансовий стан'],
     zh: ['资产负债表', '資產負債表'], ja: ['貸借対照表'], ko: ['재무상태표', '대차대조표'], ar: ['الميزانية العمومية', 'قائمة المركز المالي'], he: ['מאזן'],
@@ -575,7 +575,7 @@ export const VOCABULARIO = {
   CAJA: {
     es: ['efectivo y equivalente*', 'caja y banco*', 'caja y equivalente*', 'disponibilidades', 'caja'], pt: ['caixa e equivalente*', 'disponibilidades', 'caixa e bancos', 'caixa e depositos bancarios'], // el último: rubro del formato SNC (to-do caja y deuda, 2026-10-16; 135 de 186 documentos de Portugal)
     en: ['cash and cash equivalent*', 'cash at bank*', 'cash and bank*', 'cash'], de: ['flussige mittel', 'kassenbestand*', 'guthaben bei kreditinstitut*', 'liquide mittel'],
-    fr: ['tresorerie et equivalent*', 'disponibilites'], it: ['disponibilita liquide', 'cassa e disponibilita*'], nl: ['liquide middelen', 'geldmiddelen'],
+    fr: ['tresorerie et equivalent*', 'disponibilites'], it: ['disponibilita liquide', 'cassa e disponibilita*'], nl: ['liquide middelen', 'geldmiddelen'], et: ['raha'], // et: to-do 298 c3 ("Raha", Tallinna Kalev 2019 L90)
     da: ['likvide beholdninger', 'likvide midler'], no: ['bankinnskudd*', 'kontanter og bankinnskudd'], sv: ['kassa och bank', 'likvida medel'],
   },
   DEUDA_FINANCIERA: {
@@ -592,6 +592,9 @@ export const VOCABULARIO = {
     // Genoa 2022 sí (medido: metía un error nuevo en Monza 2024).
     it: ['debiti verso banche', 'debiti finanziari', 'obbligazioni*', 'debiti verso soci per finanziament*'], nl: ['schulden aan kredietinstellingen', 'leningen'], da: ['gaeld til kreditinstitutter', 'bankgaeld'],
     no: ['gjeld til kredittinstitusjoner', 'banklan'], sv: ['skulder till kreditinstitut', 'banklan'],
+    // (to-do 298 c3, ok de Guido 2026-10-18) estonio: sin "Bilanss", "Raha" ni "Laenukohustised" ninguna fila estonia era del balance y
+    // caja-deuda escribía 0 de 126 datos ("sin páginas de balance"). Medido con los 9 clubes de la principal: de 2 a 32 datos; --medir idéntico.
+    et: ['laenukohustised'],
   },
 
   // ---- TOTAL DEL ACTIVO y TOTAL DEL PASIVO (+ patrimonio) al comienzo de una etiqueta. Para chequeos-gratis.mjs (activo = pasivo + patrimonio);

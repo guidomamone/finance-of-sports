@@ -331,7 +331,12 @@ export function filasDelMd(md) {
       // importe. Caso: AVS 2022-23 "| Financiamentos obtidos | 3;8;9;21; | 4.495.141,06 | 2.062.069,19 |" (L352) daba deuda 38.921. También
       // con números de nota con punto (to-do 260 c): Famalicão 2022-23 "| Caixa e depósitos bancários | 3.7.; 4. | 1 159 543,44 |" (L404) daba
       // caja 3,7. Un "3.7" suelto, sin ";", sigue siendo ambiguo (puede ser un decimal).
-      const esRefNota = (c) => /^\p{L}{1,2}\s?\.?\s?\d{1,3}(?:\.\d{1,2})?$/u.test(c) || /^\d{1,3}\.$/.test(c) || /^\d{1,2}(?:\.\d{1,2}){2,3}\.?$/.test(c) || /^\d{1,2}(?:\.\d{1,2})*\.?(?:\s*;\s*\d{1,2}(?:\.\d{1,2})*\.?)+\s*;?$/.test(c);
+      // (to-do 298 c1, ok de Guido 2026-10-18) y un CÓDIGO DE CUENTA NBB belga: un número con barra ("54/58", "631/4", "70/76A"; un importe
+      // nunca lleva barra) o pegado a una A/B ("76A", "66B"; la marca C/D de un balancete va separada por un espacio). Caso: Lierse SK 2025 L169
+      // "| Liquide middelen |  | 54/58 | 2.984 | 7.287 |" se leía 5.458: la misma caja 0,005458 en Lierse SK, Lokeren-Temse, Lommel SK, Patro
+      // Eisden y RWDM. Medido: --medir deuda 168 → 170 iguales (Académico de Viseu 2023-2024), sin distintos nuevos; ensayo de 259 clubes igual
+      // salvo Estrela da Amadora 2023 (sigue sin dato).
+      const esRefNota = (c) => /^\d{1,4}\/\d{1,4}[AB]?$/.test(c) || /^\d{2,4}[AB]$/.test(c) || /^\p{L}{1,2}\s?\.?\s?\d{1,3}(?:\.\d{1,2})?$/u.test(c) || /^\d{1,3}\.$/.test(c) || /^\d{1,2}(?:\.\d{1,2}){2,3}\.?$/.test(c) || /^\d{1,2}(?:\.\d{1,2})*\.?(?:\s*;\s*\d{1,2}(?:\.\d{1,2})*\.?)+\s*;?$/.test(c);
       // (to-do 223) una celda que termina en "%" es un porcentaje, nunca un importe. Caso: AEK 2019, la fila de ratios "| Άμεση ρευστότητα |
       // Ταμειακά διαθέσιμα | 7.935.424,59 | 52,44% |" (L161) daba 52,44 como "año anterior" de la caja, y la compuerta de 2018 la encontraba
       // antes que la fila del balance.
@@ -1066,6 +1071,23 @@ const HOY = new Date().toISOString().slice(0, 10);
 // (el del año siguiente en su columna "previous", o el del año anterior en "current" contra la "previous" de este); ninguno contradice. Un
 // 1410 / 1510 vacío es 0 solo con el balance completo (1700 impreso). Caso: Akhmat 2021, caja 411.028 miles; sin 1410 ni 1510, deuda 0.
 const CODIGOS_RU = { cash: [1250], grossDebt: [1410, 1510] };
+// (to-do 298 c2) La caja del esquema NBB belga: la celda que sigue al código 54/58 (la columna del ejercicio), si el balance cuadra (20/58 =
+// 10/49, a 1 unidad). Una celda vacía en 54/58 es 0 (el balance está completo). Devuelve { caja, linea, total } o null.
+export function cajaNBB(mdText) {
+  const L = mdText.split('\n'); const v = {};
+  for (let i = 0; i < L.length; i++) {
+    if (!L[i].trim().startsWith('|')) continue;
+    const c = L[i].trim().replace(/^\||\|$/g, '').split('|').map((x) => x.replace(/\*\*/g, '').trim());
+    const k = c.findIndex((x) => x === '54/58' || x === '20/58' || x === '10/49');
+    if (k < 1 || v[c[k]]) continue;
+    // la columna del ejercicio es la celda que sigue al código (la siguiente es el año anterior): vacía = 0, con texto que no es un número = no sé
+    const celda = c[k + 1] ?? ''; const n = parseNumber(celda);
+    v[c[k]] = { valor: n ?? (celda ? null : 0), linea: i + 1 };
+  }
+  if (!v['54/58'] || !v['20/58'] || !v['10/49'] || v['54/58'].valor == null || !v['20/58'].valor) return null;
+  if (Math.abs(v['20/58'].valor - v['10/49'].valor) > 1) return null;
+  return { caja: Math.abs(v['54/58'].valor), linea: v['54/58'].linea, total: v['20/58'].valor };
+}
 function rusiaDeCodigos(clubId, a) {
   const m = /-bfo-(\d{4})-datos$/.exec(a.m.sourceId || ''); if (!m) return null;
   let ev = ''; try { ev = readFileSync(resolve(ROOT, `Admin/carga-clubes/${clubId}.md`), 'utf8'); } catch { return null; }
@@ -1113,6 +1135,16 @@ export async function completarClub(clubId, { ejecutar = false, escribir = false
       const aj = ajusteDelAnio(a.md.replace(/\.md$/i, '.pdf'), k === 'cash' ? 'caja' : 'deuda', a.anio, anios.filter((x) => x.md === a.md).length === 1);
       if (aj && ctx.factor) { res[k] = { ctx, valor: r6(Math.abs(parseNumber(aj.valor)) * ctx.factor), escalon: 0, validacion: 'ajuste manual', como: `ajuste manual (${aj.fecha}): ${aj.motivo}`, filas: [] }; continue; }
       res[k] = { ctx, ...escalera(ctx.filas, k === 'cash' ? 'cash' : 'deuda', ctx) };
+    }
+    // (to-do 298 c2, decisión de Guido 2026-10-18: solo la caja) LA CAJA POR SU CÓDIGO NBB, para un año SIN VECINO (ni año anterior ni siguiente
+    // cargado, ni documento vecino): la escalera nunca lo decide porque su compuerta pide un vecino. En el esquema NBB belga la caja es siempre
+    // el código 54/58 ("Liquide middelen" / "Valeurs disponibles"). Compuerta, la del propio documento: el balance cuadra (TOTAAL VAN DE ACTIVA
+    // 20/58 = TOTAAL VAN DE PASSIVA 10/49, la misma columna). Se pasa a millones con la escala del documento. La deuda no: los códigos
+    // financieros (170/4, 42, 43) no coinciden con el criterio con que se cargó Bélgica (Union SG: 31,66 M en el sitio, 7,62 M por códigos).
+    // Caso: Lierse SK 2025, 54/58 = 2.984 (L169), 20/58 = 10/49 = 4.833.368 (L171, L242).
+    if (res.cash && res.cash.valor == null && res.cash.ctx.factor && res.cash.ctx.anterior == null && !res.cash.ctx.siguiente && !res.cash.ctx.anteriorDoc) {
+      const nbb = cajaNBB(readFileSync(resolve(ROOT, a.md), 'utf8'));
+      if (nbb) res.cash = { ctx: res.cash.ctx, valor: r6(nbb.caja * res.cash.ctx.factor), escalon: 1, validacion: 'balance del documento (NBB)', como: `código NBB 54/58 = ${nbb.caja} (L${nbb.linea}); el balance cuadra: 20/58 = 10/49 = ${nbb.total} (año sin vecino)`, filas: [] };
     }
     // ESCALÓN 1b, Jev (to-do 233 + 232 t; entró el 2026-10-14 tras medirlo en todos los clubes: caja 9 de 9 iguales, deuda 5 de 7 y los 2
     // distintos eran errores del sitio, PAOK 2021 y Panetolikos 2022; US$ 0,11 en total). Antes de la IA cara; sin --ejecutar, ensayo.

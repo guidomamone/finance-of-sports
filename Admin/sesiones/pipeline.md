@@ -102,3 +102,51 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
 - `vocabulario.mjs` FIN_GASTO suma tres rótulos belgas (to-do 298 b1): un documento NBB nuevo cierra con "financiero por rótulo" sin el ajuste `fila` de signo de los costos financieros; los ajustes ya puestos siguen dando lo mismo.
 - `verificar.mjs` escalón "de los cuales" (to-do 298 b3): un documento que no cerraba porque sumaba aparte una fila "Waarvan:"/"dont"/"davon" puede cerrar sin ella (solo si el cierre es exacto). Los ajustes `fila` en 0 ya puestos siguen dando lo mismo.
 - `lote.mjs` (to-do 298 o): con un original y su "-correction" en la misma lista, entra solo la corrección; el original queda propuesto para `documentos-descartados.txt` (sin escribirlo). Una lista con un original solo, como siempre.
+
+## Después del merge del 2026-10-18
+
+Lo de arriba ya lo pasó la principal (merge 621acf6cea, CHANGELOG 738). Lo nuevo va acá.
+
+### Qué cambió
+- **El código NBB no es un importe (to-do 298 c, parte 1).** `tools/caja-deuda.mjs` (`esRefNota`): una celda con barra ("54/58", "631/4",
+  "70/76A") o un número pegado a A/B ("76A", "66B") es un código de cuenta. Antes, Lierse SK, Lokeren-Temse, Lommel SK, Patro Eisden y RWDM
+  daban la misma caja 0,005458 (el código 54/58); ahora el escalón 1 propone la caja impresa (Lierse SK 2025: 2.984 TEUR, L169). Medido:
+  `--medir` deuda 168 → 170 iguales (Académico de Viseu 2023 y 2024), sin distintos nuevos; ensayo de los 259 clubes igual salvo Estrela da
+  Amadora 2023 (sigue sin dato; el ensayo ahora ofrece la IA, US$ 0,01). Los belgas siguen sin dato hasta la parte 2 (un solo año, sin vecino).
+- **La caja belga de un año sin vecino (to-do 298 c, parte 2; decisión de Guido: solo la caja).** `tools/caja-deuda.mjs` (`cajaNBB`): para un
+  año sin año anterior ni siguiente cargado ni documento vecino, la caja es el código 54/58 si el balance del documento cuadra (20/58 = 10/49).
+  Medido: `--medir` y ensayo de los 259 clubes idénticos; con los belgas nuevos (datos de la principal copiados un rato), 10 cajas: Beerschot
+  2025 0,204; Lierse SK 2025 0,003; Lokeren-Temse 2025 0,045; Lommel SK 2018 0,139 y 2025 0,890; Patro Eisden 2025 0,012; RAAL 2025 1,631;
+  RWDM 2020 0,050 y 2025 0,183 (M EUR). OH Leuven 2025 sigue sin dato (su .md no trae el 20/58 con código).
+- **Estonia en caja-deuda (to-do 298 c3 y r).** `tools/vocabulario.mjs` et: `bilanss` (TITULO_BALANCE), `raha` (CAJA), `laenukohustised`
+  (DEUDA_FINANCIERA). Medido con los 9 clubes estonios de la principal copiados un rato: "sin páginas de balance" 108 → 0; datos para escribir
+  2 → 32 (24 cajas y 8 deudas, confirmados por el documento vecino; Tallinna Kalev 2019 0,00177 = "Raha 1 770" L90). `--medir` y ensayo de
+  los 259 clubes de la rama idénticos. La "caja equivocada" de Tallinna Kalev de onboarding: 0,028424 y 0,005455 son las cajas BUENAS de
+  2023 (L117) y 2024 (L110); en esa corrida quedaron atadas a 2019 y 2020. Con los datos de hoy cada una cae en su año; no se reprodujo.
+- **El perímetro del club con años de los dos estados sin voto (to-do 298 d).** `tools/perimetro-senales.mjs` (`fijarPerimetroDeClubes`):
+  si algún ejercicio trae los dos estados y no votó, el perímetro del club no sale de los ejercicios de un solo estado (punto 2 de la regla):
+  queda sin decidir y esos ejercicios llevan su ajuste (punto 1). Nuevo ensayo `--decidir-clubes <lista> --solo-cache` (gratis, sin escribir).
+  Medido: 42 carpetas con ajuste de club idénticas; las dos verdades (102 y 202) idénticas; cambian Kuressaare, Tallinna Kalev y Narva Trans
+  (de "individual" a sin decidir con sus ajustes por documento), que en la principal hubo que corregir a mano a "consolidado".
+  El paso A en estonio se probó y no entra (HALLAZGOS).
+
+### Qué queda pendiente (para TODO)
+- **Escribir esas cajas en `data/`, en la carpeta principal después del merge** (gratis; sin `--ejecutar`, solo el escalón NBB y lo guardado):
+  `for c in beerschot-be liersesk-be lokerentemse-be lommelsk-be patroeisden-be raallalouviere-be rwdm-be; do node tools/caja-deuda.mjs --club $c --escribir; done`
+- **Escribir caja y deuda de Estonia en `data/`, en la carpeta principal después del merge** (gratis; sin `--ejecutar`):
+  `for c in fcilevadia-ee floratallinn-ee kuressaare-ee narvatrans-ee nommekalju-ee paidelinnameeskond-ee tallinnakalev-ee; do node tools/caja-deuda.mjs --club $c --escribir; done`
+- **Si vuelve a pasar que caja-deuda ata un valor al año equivocado** (Tallinna Kalev en la corrida de onboarding: las cajas de 2023 y 2024
+  escritas en 2019 y 2020), mirar qué `.md` devolvió `mdDeFuente` para esos años (la nota de la fuente en `Admin/carga-clubes/`).
+- **Mejorar la caja y la deuda de un año sin vecino (pedido de Guido, 2026-10-18).** Hoy es solo la caja belga por código. Falta: (1) una
+  compuerta de primer año para cualquier país (que el dato cuadre con el balance del propio documento, no solo NBB); (2) la deuda belga, que
+  necesita decidir el criterio (¿el 42 entra?; Union SG tiene 31,66 M cargados y 7,62 M por códigos financieros, ¿qué suma de más?); (3) OH
+  Leuven y los documentos cuyo .md no trae la columna de códigos.
+- **Sigue en el plan de esta rama (ya están en el TODO de main):** 298 e) a n), p) y q); 306 (Milan 2018); 307 (el "Gastado: US$ 0.00" de
+  localizar); 301 (gasto.mjs --json); 282 (el alta sin auditor); 232 e); 279; 286; 287. La sesión cerró por contexto (pedido de Guido).
+
+### Para fos-onboarding
+- caja-deuda deja de leer los códigos NBB como importes: en un club belga, Jev ya no tiene guardada la respuesta (cambian las filas), y un
+  `--ejecutar` paga ~US$ 0,07 por club en Jev.
+- caja-deuda (to-do 298 c2): un año belga sin vecino escribe la caja del código 54/58 (si el balance cuadra); antes quedaba sin dato. La deuda sigue igual.
+- `vocabulario.mjs` suma el estonio (to-do 298 c3): caja-deuda encuentra el balance estonio y propone caja y deuda; nada cambia en otros países.
+- perimetro-senales (to-do 298 d): un club que trae años con los dos estados sin voto (Estonia) frena en vez de fijar el perímetro de los años de un solo estado. Los clubes que ya tienen ajuste de club no cambian.

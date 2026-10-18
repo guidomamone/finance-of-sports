@@ -41,6 +41,7 @@
 //        el ajuste `perimetro` de cada documento; --modelo opus|sonnet: el paso A2 con ese modelo (Sonnet con su propia clave de caché, no pisa las de Opus)
 //   node tools/perimetro-senales.mjs --md "Clubes/Italia/AC Milan/x.md" --detalle      # un documento, con cada tabla encontrada
 //   node tools/perimetro-senales.mjs --md "Clubes/Grecia/Aris/x.md" --ver-a2           # el texto que recibiría Claude en A2 (gratis)
+//   node tools/perimetro-senales.mjs --decidir-clubes <lista de carpetas> --solo-cache   # ensayo de la decisión de perímetro de cada club (gratis)
 //   node tools/perimetro-senales.mjs --lista <txt> --exportar-a2 <carpeta>             # los pedidos de A2 sin caché, para contestarlos sin API
 //   node tools/perimetro-senales.mjs --auditar-a2 <carpeta>                             # auditoría a posteriori: lo que decidió A2 en corridas reales
 // Jev: Admin/api-keys/jev.env con JEV_API_KEY=...; respuestas guardadas en Generados/_cache/jev-perimetro.jsonl (no se paga dos veces).
@@ -72,6 +73,7 @@ const MODELOS_A2 = { opus: 'claude-opus-5-5', sonnet: 'claude-sonnet-5-5' };
 const MODELO_A2 = flagVal('--modelo');
 if (MODELO_A2 != null && (!MODELOS_A2[MODELO_A2] || !USE_JEV)) { console.error('--modelo opus|sonnet va solo con --jev'); process.exit(1); }
 const DETALLE = args.includes('--detalle');
+const SOLO_CACHE = args.includes('--solo-cache'); // (to-do 298 d) A2 solo con respuestas guardadas (ver --decidir-clubes)
 
 export const UMBRAL_C1 = 0.05;
 export const UMBRAL_C2 = 0.15;
@@ -333,6 +335,7 @@ async function pasoA2(mdRel, lineas) {
   const clave = createHash('sha1').update(JSON.stringify(MODELO_A2 && MODELO_A2 !== 'opus' ? [SISTEMA_A2, user, MODELOS_A2[MODELO_A2]] : [SISTEMA_A2, user])).digest('hex');
   if (!cacheA2) { cacheA2 = new Map(); if (existsSync(CACHE_A2)) for (const l of readFileSync(CACHE_A2, 'utf8').split('\n')) { if (!l.trim()) continue; try { const j = JSON.parse(l); cacheA2.set(j.clave, j); } catch { /* línea rota */ } } }
   let datos = cacheA2.get(clave)?.datos;
+  if (!datos && SOLO_CACHE) return { pendiente: true };
   if (!datos) {
     const { llamarClaude } = await import('./claude-llamada.mjs');
     const r = await llamarClaude({ system: SISTEMA_A2, user, schema: ESQUEMA_A2, tarea: MODELO_A2 && MODELO_A2 !== 'opus' ? `perimetro-a2-medir-${MODELO_A2}` : 'perimetro-a2', pdf: mdRel.replace(/\.md$/, '.pdf'), maxTokens: 2000, ...(MODELO_A2 ? { modelo: MODELOS_A2[MODELO_A2] } : {}) });
@@ -441,7 +444,7 @@ export async function proponer(mdRel, { jev = false } = {}) {
 //   ejecutar = false (ensayo): sin API ni escritura; dice qué fijaría, o que se decide al ejecutar.
 // faltaPerimetro(pdf): la compuerta (antes-de-localizar.mjs) dice que ese documento frena por perímetro; solo se miran esos clubes.
 // Devuelve, por club: { carpeta, valor (del club o null), porDocumento: [{ pdf, valor }], escrito, pendienteJev, detalle }.
-export async function fijarPerimetroDeClubes(pdfs, { registro, ejecutar = false, faltaPerimetro, descartados = new Set() }) {
+export async function fijarPerimetroDeClubes(pdfs, { registro, ejecutar = false, faltaPerimetro, descartados = new Set(), jev = ejecutar }) {
   const { ajustePerimetroDe, agregarAjuste } = await import('./ajustes.mjs');
   const carpeta = (pdf) => pdf.split('/').slice(0, 3).join('/') + '/';
   const clubes = [...new Set(pdfs.filter((p) => !ajustePerimetroDe(p) && faltaPerimetro(p)).map(carpeta))];
@@ -449,7 +452,7 @@ export async function fijarPerimetroDeClubes(pdfs, { registro, ejecutar = false,
   for (const c of clubes) {
     const docs = registro.filter((e) => e.pdf.startsWith(c) && e.estado !== 'duplicado' && !descartados.has(e.pdf) && e.md && existsSync(resolve(ROOT, e.md)));
     const props = [];
-    for (const e of docs) props.push({ e, r: await proponer(e.md, { jev: ejecutar }) });
+    for (const e of docs) props.push({ e, r: await proponer(e.md, { jev }) });
     // Modo batch (claude-llamada.mjs): si a algún documento del club le falta la respuesta de A2, no se decide el club con los demás (sin
     // batch habrían estado todas): se espera a la ola siguiente.
     if (ejecutar && props.some(({ r }) => r.a2?.pendiente)) { out.push({ carpeta: c, valor: null, porDocumento: [], pendienteJev: true, detalle: 'A2 pendiente de la Batch API: se decide en la ola siguiente' }); continue; }
@@ -469,7 +472,13 @@ export async function fijarPerimetroDeClubes(pdfs, { registro, ejecutar = false,
     const evidencia = `${votos.size} documento(s) con los dos estados votan ${valoresVoto.join('/') || '—'}; ${unicos.length} ejercicio(s) con un solo perímetro (${valoresUnicos.join('/') || '—'}); ${props.length} documento(s) mirados`;
     if (valoresVoto.length > 1) { out.push({ carpeta: c, valor: null, porDocumento: [], detalle: `los documentos que traen los dos estados no eligen lo mismo (${[...votos].map(([m, v]) => `${m.split('/').pop()}: ${v}`).join('; ')})` }); continue; }
     // 2. El perímetro del club.
-    const valor = valoresVoto[0] || (valoresUnicos.length === 1 ? valoresUnicos[0] : null);
+    // (to-do 298 d, ok de Guido 2026-10-18) el punto 2 de la regla dice "sin ningún ejercicio con los dos": si algún ejercicio trae los dos
+    // estados y no votó (Estonia: A2 ve los dos, pero sin total de ingresos reconocido no hay paso B), el perímetro del club NO sale de los
+    // ejercicios de un solo estado; queda sin decidir (frena) y esos ejercicios reciben su ajuste propio (punto 1). Antes, Kuressaare,
+    // Tallinna Kalev, Narva Trans y FCI Levadia quedaban "individual" por 2019-2020 y hubo que corregirlos a "consolidado" y repagar
+    // localizar. Medido con --decidir-clubes --solo-cache: 42 carpetas con ajuste de club idénticas; cambian solo los estonios.
+    const conLosDos = [...porCierre.values()].some((x) => x.size === 2);
+    const valor = valoresVoto[0] || (!conLosDos && valoresUnicos.length === 1 ? valoresUnicos[0] : null);
     // 1 y 3. Los ejercicios con un solo perímetro distinto del club (o todos, si no hay perímetro del club): ajuste de cada documento.
     const porDocumento = [];
     // Solo los documentos que propusieron ese perímetro: uno del mismo ejercicio que no decidió (Parma 2023 consolidato, sin tablas reconocidas)
@@ -519,6 +528,21 @@ async function main() {
     writeFileSync(resolve(dir, 'instruccion.txt'), `Para cada pedido de pedidos.jsonl: abrí el .md (md) con grep/sed por partes, ubicá el estado de resultados del ejercicio y decidí si es CONSOLIDADO (incluye a la sociedad y a sus controladas) o INDIVIDUAL (la sociedad sola). El pipeline decidió "decidido". Escribí <n>.json con {"perimetro": "consolidado"|"individual"|"no sé", "coincide": true|false, "cita": "línea del .md y qué dice", "explicacion": "una o dos oraciones"}. No edites nada del repositorio.`);
     writeFileSync(resolve(dir, 'pedidos.jsonl'), pedidos.map((p) => JSON.stringify(p)).join('\n') + (pedidos.length ? '\n' : ''));
     console.log(`${pedidos.length} documento(s) decididos por A2 para auditar en ${auditarF}${pedidos.length ? ' (instruccion.txt + pedidos.jsonl)' : ''}.`); return;
+  }
+  // (to-do 298 d) --decidir-clubes <lista de carpetas> [--solo-cache]: ENSAYO de la decisión de perímetro de cada club (la misma de lote.mjs),
+  // sin escribir ajustes; con --solo-cache, A2 solo usa respuestas guardadas (lo que falta queda pendiente, no se paga).
+  const decidirF = flagVal('--decidir-clubes');
+  if (decidirF) {
+    const registro = readFileSync(resolve(ROOT, 'Admin', 'registros', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
+    const carpetas = readFileSync(resolve(ROOT, decidirF), 'utf8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#'));
+    const { ajustePerimetroDe } = await import('./ajustes.mjs');
+    for (const c of carpetas) {
+      const pdfs = registro.filter((x) => x.pdf.startsWith(c)).map((x) => x.pdf);
+      const [r] = await fijarPerimetroDeClubes(pdfs, { registro, ejecutar: false, jev: true, faltaPerimetro: () => true });
+      const ajuste = ajustePerimetroDe(c)?.valor || '—';
+      console.log(`${c.padEnd(48)} club: ${String(r?.valor ?? 'sin decidir').padEnd(12)} ajuste actual: ${String(ajuste).padEnd(12)} por documento: ${(r?.porDocumento || []).map((d) => `${d.pdf.split('/').pop()} ${d.valor}`).join(', ') || '—'}${r?.pendienteJev ? ' (A2 sin caché)' : ''}`);
+    }
+    return;
   }
   const verdadF = flagVal('--verdad'); const listaF = flagVal('--lista'); const mdF = flagVal('--md');
   let items = [];

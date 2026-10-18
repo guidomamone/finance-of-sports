@@ -149,6 +149,8 @@ Mitigaciones:
                   Medición: Admin/mediciones/perimetro-a2-medicion.txt (75 documentos, 15 clubes); --exportar-a2 arma los pedidos para medir
                   sin API (los contestan subagentes de la sesión y se agregan a la caché)
                   (to-do 288) --modelo opus|sonnet (con --jev): A2 con ese modelo para medir, contra Admin/mediciones/perimetro-a2-verdad-ajustes.tsv
+                  (to-do 298 d) un club con ejercicios de los dos estados que no votaron no toma el perímetro de los ejercicios de un solo
+                  estado: queda sin decidir (frena) y esos ejercicios llevan su ajuste. Ensayo: --decidir-clubes <lista> --solo-cache (gratis).
                   Auditoría a posteriori (to-do 227): los ajustes que escribe la regla del club nombran en su `evidencia` los
                   documentos que decidió A2; `--auditar-a2 <carpeta>` arma un pedido por documento para un subagente (grupo o
                   sociedad sola, con cita). Se corre después de cada país nuevo. La carpeta de `--auditar-a2` y la de
@@ -734,6 +736,13 @@ busca por PDF y AÑO (to-do 263). Si un PDF alimenta dos años del club (el del 
 geschaeftsbericht-2024-25), el ajuste lleva `--anio AAAA` y vale solo para ese año; uno sin año vale solo si el PDF alimenta un único año.
 Sin ajuste de ese año, el escalón 0 no decide y el año sigue por la escalera.
 
+Caja de un año SIN VECINO en el esquema NBB belga (to-do 298 c2): la escalera no decide (su compuerta pide un vecino), así que la caja sale del
+código 54/58 (la celda que sigue al código) si el balance del propio documento cuadra (20/58 = 10/49). Solo la caja: la deuda por códigos
+(170/4, 42, 43) no coincide con el criterio con que se cargó Bélgica (`cajaNBB` en `tools/caja-deuda.mjs`).
+
+Estonio en el diccionario (to-do 298 c3): `bilanss` (título del balance), `raha` (caja) y `laenukohustised` (préstamos) en `tools/vocabulario.mjs`.
+Sin ellos ninguna fila estonia era del balance y caja-deuda daba "sin páginas de balance".
+
 La escala del año (`escalaDe`, to-do 289) es su propia escalera: escalón 0, el ajuste manual `escala` (`unidades` | `miles` | `millones`,
 la que el documento imprime para ese año, también por PDF y año con `--anio`); escalón 1, `factorPorIngresos` (la escala con la que más
 ingresos cargados del año aparecen en el documento); si ninguno da, el año queda "sin escala del documento" y no entra ni un ajuste de
@@ -746,7 +755,7 @@ las filas "… oltre l'esercizio successivo" (largo plazo) también entran. "Alt
 cuenta, Genoa 2022 sí).
 
 ```
- LECTURA DE FILAS  una sola referencia a nota; una celda con "%" no es un importe; activo y pasivo en la misma fila = dos filas; sin código de cuenta ni numeración
+ LECTURA DE FILAS  una sola referencia a nota; una celda con "%" no es un importe; un código NBB ("54/58", "76A") tampoco (to-do 298 c1); activo y pasivo en la misma fila = dos filas; sin código de cuenta ni numeración
                    ("4)", "a)") para el diccionario. La referencia a nota es una escalera: escalón 1, si la tabla tiene una columna de
                    notas inequívoca antes de la cifra, la cifra es un importe (Novorizontino 2019 "| Empréstimos |  | 27 | 24 |");
                    escalón 2, sin esa evidencia, el primer entero de 1-2 dígitos se descarta como nota; una lista de notas con ";"
