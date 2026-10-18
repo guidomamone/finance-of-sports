@@ -24,7 +24,7 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 297 (cuando esté el índice) y 282 en Ligas (cuando haya el dato del 295) · finanzas 281, 282, 294 · pipeline 289, 290, 288, 232, 279, 286, 287, 298 · onboarding 292, 238, 285, 284, 283, 195, 165 c, 299 ·
+Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 297 (cuando esté el índice) y 282 en Ligas (cuando haya el dato del 295) · finanzas 281, 282, 294 · pipeline 289, 290, 288, 232, 279, 286, 287, 298 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
 datos-sourcing 273 (completar el dato), 252, 295 · Reino Unido (261) en su propia sesión · proyecto 250, 244, 300 · la principal: 268, 291 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
@@ -53,7 +53,6 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 238: llevar a 0 los documentos que quedaron a mitad de camino
 * 261: Reino Unido, transcripción por subagentes
 * 165 c: altas de los países nuevos que faltan
-* 299: ligas de Estonia en data/leagues.js
 * 195: gestiones (presidentes) sin fuente confirmada (se puede ir haciendo con cada país)
 * 295: balances de las entidades que organizan las ligas (AFA, LFP…), para la auditoría en Ligas
 * 284 y 285: Fredrikstad y Sarpsborg 08 sobre el FLI; transcribir Viking Fotball AS
@@ -236,7 +235,8 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 273. ESTADIO Y SPONSOR: LO QUE QUEDA (pedido de Guido, 2026-10-18). El dato está en main (`data/contexto/<iso>.js`, `tools/estadio-sponsor.mjs`,
    lo manual en `tools/contexto-manual.json` con fuente) y `cargar.mjs` no escribe un año nuevo sin estadio y sponsor. Falta: completar a
    mano los ~140 ejercicios ya cargados sin estadio o sin sponsor (casi todos sin sponsor: ascensos y años viejos sin tabla de kits;
-   `node tools/estadio-sponsor.mjs --ensayo` los lista); que `generate-sponsors.js` sume lo de `contexto-manual.json`; nombrar la compuerta nueva en
+   `node tools/estadio-sponsor.mjs --ensayo` los lista; incluye los años de Estonia y Bélgica de los lotes 91-92, que onboarding carga
+   con las tools de su rama, sin la compuerta); que `generate-sponsors.js` sume lo de `contexto-manual.json`; nombrar la compuerta nueva en
    `Admin/PIPELINE.md` y en la skill `club-or-year-onboarding` (la skill, con ok de Guido).
 297. SPONSORS EN EL BUSCADOR (cierre de pantallas, 2026-10-18). La página por sponsor existe, pero el buscador no los encuentra:
    `data/sponsors.js` pesa ~650 KB y no se carga de entrada. Hace falta un índice chico (id y nombre) que genere
@@ -307,9 +307,8 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    nunca se marca `sin-tablas` (OH Leuven 2022, Llaneros 2022; puede frenar buena parte de los 319). f) periodo.mjs no saca el cierre NBB
    cuando las fechas vienen en celdas (9 belgas y 1 estonio). g) la cola admite una sola categoría por fila: un "partir según la nota" con
    la suma exacta como compuerta. h) un `no_es_rubro` puede dejar a un padre sin hijos: que la cola avise. i) alta-club.mjs: un país nuevo
-   frena hasta agregar su fila a PAISES: que la proponga.
-299. LIGAS DE ESTONIA (datos). No están en `data/leagues.js`: propuesto `ee-meistriliiga` (tier 1) y `ee-esiliiga` (tier 2). Las 9 altas
-   estonias quedan con liga null hasta entonces.
+   frena hasta agregar su fila a PAISES: que la proponga. k) alta-club.mjs / cargar-lote.mjs escriben la liga del alta en null aunque
+   `altas-revision.jsonl` traiga las ligas verificadas (las 17 altas de los lotes 89-90): que el alta las tome de la revisión.
 300. AUDITORÍA PROGRAMADA (pedido de Guido, 2026-10-18). Una tarea programada semanal en la Mac de Guido que corra `node tools/audit.js` y
    `auditAll()` (preview con `?audit=1`), actualice el dashboard de usuarios y visitas (tools/supabase/stats.mjs y tools/cloudflare-visitas.mjs,
    cierra lo que queda del 268) y avise solo si algo sale de P0 0 / P1 0 o un año deja de cerrar.

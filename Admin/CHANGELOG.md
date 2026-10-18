@@ -15,6 +15,17 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 729 — Merge de onboarding: Estonia en Ligas (2026-10-18)
+
+A mano: `tools/club-league-reference/alias.json` unido clave por clave (las dos ramas sumaron alias; 92, sin choques), generados con main
+y regenerados; ASSET_V 1281, P0 0 / P1 0, 0 alias rotos y 0 que faltan. Probado: Estonia y la Meistriliiga en el estado frío de Ligas.
+
+- To-do 299 (pedido de Guido: "en ligas no veo estonia"): `ee-meistriliiga` y `ee-esiliiga` en `data/leagues.js`, `data/club-leagues/ee.js`
+  con la liga de los 9 clubes 2019-2025 (fuente en `Admin/ligas-por-pais/ee.md`). Las 8 altas belgas, con su liga (Pro League y
+  Challenger Pro League).
+- TODO: fuera el 299; el 298 suma la k (el alta no toma la liga de la revisión); el 273 anota los años de los lotes 91-92 cargados sin
+  la compuerta de estadio y sponsor.
+
 ## Versión 728 — Merges de datos-sourcing y pantallas: Wikipedia del país e índice de sponsors (2026-10-18)
 
 Los dos a mano: generados (`data/estimados/`, `fuentes/`) con main y regenerados, `index.html` con la versión de cada rama; ASSET_V 1280,
