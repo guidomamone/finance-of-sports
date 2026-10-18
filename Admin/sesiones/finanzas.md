@@ -75,8 +75,8 @@
 - To-do 282 e: campo opcional `alcance` en `auditoria.jsonl` (validado por `tools/auditoria.mjs`, con nota obligatoria, publicado en
   `CLUB_AUDITORIA[club][año].alcance`): `revision_limitada` (Como 2025), `procedimientos_acordados` (Osijek 2025: el informe dice que no es
   auditoría ni revisión), `proposito_especial` (Kifisia 2022-2024, estados para la licencia) y `grupo` (Club América 2025, cuentas de
-  Ollamani). Criciúma 2015-2019 queda como auditoría plena, con nota (el título dice "revisão especial" pero audita y opina). La pantalla la
-  hace fos-pantallas con el contrato que le pasé. ASSET_V 1283 en la rama.
+  Ollamani). Criciúma 2015-2019 queda como auditoría plena, con nota (el título dice "revisão especial" pero audita y opina). La pantalla ya
+  está en la rama pantallas (a8ad97ac3b, "del grupo dueño del club" para `grupo`): anda cuando se mergeen las dos ramas. ASSET_V 1283 en la rama.
 
 ### Qué queda (para TODO)
 
