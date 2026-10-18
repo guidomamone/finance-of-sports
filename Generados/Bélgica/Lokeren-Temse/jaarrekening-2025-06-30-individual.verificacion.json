@@ -1,0 +1,158 @@
+{
+ "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2025-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-18T06:17:46.773Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "9b47cfd",
+  "519eab2",
+  "71a0e9e",
+  "8eb09cc",
+  "4a29f21"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 1.127801 - gastos 0.3419 ± financiero 0.011376 ± impuesto 0 no da el impreso 0.824961",
+   "dif": null
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 1.127801,
+  "gastos": 0.3419,
+  "financiero": 0.011376,
+  "impuesto": 0,
+  "resultadoImpreso": 0.824961,
+  "resultadoParaCargar": 0.824961,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Waarvan: niet-recurrente bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "M": 0.844978,
+   "pagina": 6,
+   "linea": 217,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Omzet",
+   "lado": "ingreso",
+   "M": 0.282823,
+   "pagina": 6,
+   "linea": 218,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+   "lado": "gasto",
+   "M": 0.298662,
+   "pagina": 6,
+   "linea": 220,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "gasto",
+   "M": 0.036731,
+   "pagina": 6,
+   "linea": 221,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 6,
+   "linea": 222,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "gasto",
+   "M": 0.003377,
+   "pagina": 6,
+   "linea": 223,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andere bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.00313,
+   "pagina": 6,
+   "linea": 225,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 6,
+   "linea": 227,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "M": 0.00012,
+   "linea": 230
+  },
+  {
+   "etiqueta": "Niet-recurrente financiële opbrengsten",
+   "M": 0,
+   "linea": 231
+  },
+  {
+   "etiqueta": "Recurrente financiële kosten",
+   "M": 0.011142,
+   "linea": 233
+  },
+  {
+   "etiqueta": "Niet-recurrente financiële kosten",
+   "M": 0.000114,
+   "linea": 234
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen op het resultaat (+)/(-)",
+   "M": 0,
+   "linea": 238
+  }
+ ]
+}

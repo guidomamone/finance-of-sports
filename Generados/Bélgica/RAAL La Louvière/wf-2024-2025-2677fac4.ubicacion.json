@@ -1,0 +1,214 @@
+{
+ "pdf": "Clubes/Bélgica/RAAL La Louvière/wf-2024-2025-2677fac4.pdf",
+ "md": "Clubes/Bélgica/RAAL La Louvière/wf-2024-2025-2677fac4.md",
+ "mdSha1": "b3f6a7611f2855b14046a51b4ff162c24eaad1f1",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T06:16:24.812Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    123,
+    145
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    155,
+    178
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    188,
+    219
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    233,
+    262
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    278,
+    298
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    308,
+    331
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    343,
+    361
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    405,
+    419
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    437,
+    442
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    450,
+    456
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    464,
+    471
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    477,
+    497
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    553,
+    573
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 13,
+   "lineas": [
+    629,
+    649
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 14,
+   "lineas": [
+    705,
+    725
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 15,
+   "lineas": [
+    781,
+    801
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 16,
+   "lineas": [
+    847,
+    858
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 16,
+   "lineas": [
+    870,
+    875
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 17,
+   "lineas": [
+    887,
+    911
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 17,
+   "lineas": [
+    921,
+    925
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 18,
+   "lineas": [
+    951,
+    957
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 18,
+   "lineas": [
+    973,
+    984
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5",
+  "b6"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "Formato BNB (C-cap) belga: los importes suelen estar en euros (unidades), pero en el índice no aparece una frase que indique la escala.",
+ "moneda": "EUR",
+ "columna_ejercicio": "Exercice",
+ "columna_anterior": "Exercice précédent",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes del Compte de résultats (b5-b6) están expresados en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Los modelos BNB de cuentas anuales se presentan en euros, pero el índice no muestra ninguna frase que fije la escala.",
+   "bloques": [
+    "b5",
+    "b6"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Las cuentas anuales individuales están en el modelo BNB (C-cap). El compte de résultats está en b5 (resultado de explotación) y continúa en b6 (financieros, impuestos, resultado del ejercicio). Los demás bloques no se eligen: balance (b1-b4), affectations (b7), inmovilizado (b8-b16) y bilan social de personal (b17-b22). El índice no muestra notas que desglosen ingresos o gastos."
+}

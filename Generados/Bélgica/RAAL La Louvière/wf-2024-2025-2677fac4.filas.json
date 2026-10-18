@@ -1,0 +1,318 @@
+{
+ "pdf": "Clubes/Bélgica/RAAL La Louvière/wf-2024-2025-2677fac4.pdf",
+ "md": "Clubes/Bélgica/RAAL La Louvière/wf-2024-2025-2677fac4.md",
+ "mdSha1": "b3f6a7611f2855b14046a51b4ff162c24eaad1f1",
+ "ubicacionSha1": "ce2aaeae102b6429798503152479bdbf6f5eedc6",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T06:17:05.498Z",
+ "ubicacion": {
+  "estado": [
+   "b5",
+   "b6"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b5",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala en el bloque; formato belga BNB suele ser en euros (unidades)"
+  },
+  {
+   "bloque": "b6",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala en el bloque"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b5",
+   "linea": 280,
+   "etiqueta": "Ventes et prestations",
+   "actual": "6.296.766",
+   "anterior": "3.989.210",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 281,
+   "etiqueta": "Chiffre d'affaires",
+   "actual": "4.615.173",
+   "anterior": "3.148.584",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 284,
+   "etiqueta": "Autres produits d'exploitation",
+   "actual": "1.536.293",
+   "anterior": "834.763",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 285,
+   "etiqueta": "Produits d'exploitation non récurrents",
+   "actual": "145.299",
+   "anterior": "5.863",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 286,
+   "etiqueta": "Coût des ventes et des prestations",
+   "actual": "8.464.193",
+   "anterior": "5.813.965",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 287,
+   "etiqueta": "Approvisionnements et marchandises",
+   "actual": "525.293",
+   "anterior": "385.721",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 288,
+   "etiqueta": "Achats",
+   "actual": "511.554",
+   "anterior": "389.783",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 289,
+   "etiqueta": "Stocks: réduction (augmentation)",
+   "actual": "13.739",
+   "anterior": "-4.061",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 290,
+   "etiqueta": "Services et biens divers",
+   "actual": "3.725.820",
+   "anterior": "2.715.308",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 291,
+   "etiqueta": "Rémunérations, charges sociales et pensions",
+   "actual": "3.535.934",
+   "anterior": "2.128.341",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 292,
+   "etiqueta": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+   "actual": "558.871",
+   "anterior": "508.473",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 293,
+   "etiqueta": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises)",
+   "actual": "17.902",
+   "anterior": "10.642",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 295,
+   "etiqueta": "Autres charges d'exploitation",
+   "actual": "97.180",
+   "anterior": "28.624",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 297,
+   "etiqueta": "Charges d'exploitation non récurrentes",
+   "actual": "3.193",
+   "anterior": "1.562",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 298,
+   "etiqueta": "Bénéfice (Perte) d'exploitation",
+   "actual": "-2.167.427",
+   "anterior": "-1.824.755",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 310,
+   "etiqueta": "Produits financiers",
+   "actual": "120.161",
+   "anterior": "112.952",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 311,
+   "etiqueta": "Produits financiers récurrents",
+   "actual": "120.161",
+   "anterior": "112.952",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 314,
+   "etiqueta": "Autres produits financiers",
+   "actual": "120.161",
+   "anterior": "112.952",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 316,
+   "etiqueta": "Charges financières",
+   "actual": "90.878",
+   "anterior": "35.984",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 317,
+   "etiqueta": "Charges financières récurrentes",
+   "actual": "90.878",
+   "anterior": "35.984",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 320,
+   "etiqueta": "Autres charges financières",
+   "actual": "90.878",
+   "anterior": "35.984",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 322,
+   "etiqueta": "Bénéfice (Perte) de l'exercice avant impôts",
+   "actual": "-2.138.144",
+   "anterior": "-1.747.787",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 325,
+   "etiqueta": "Impôts sur le résultat",
+   "actual": "10.503",
+   "anterior": "2.309",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 326,
+   "etiqueta": "Impôts",
+   "actual": "10.503",
+   "anterior": "2.309",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 328,
+   "etiqueta": "Bénéfice (Perte) de l'exercice",
+   "actual": "-2.148.648",
+   "anterior": "-1.750.096",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 331,
+   "etiqueta": "Bénéfice (Perte) de l'exercice à affecter",
+   "actual": "-2.148.648",
+   "anterior": "-1.750.096",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 280,
+  "actual": "6.296.766"
+ },
+ "total_gastos": {
+  "linea": 286,
+  "actual": "8.464.193"
+ },
+ "resultado": {
+  "linea": 328,
+  "actual": "-2.148.648",
+  "anterior": "-1.750.096"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes de b5 y b6 como euros en unidades, aunque la escala no está impresa en estos bloques?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Los bloques b5 (L276) y b6 (L306) no indican escala; el formato de cuentas anuales BNB habitualmente está en euros.",
+   "bloques": [
+    "b5",
+    "b6"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados en formato BNB belga sin notas de desglose. Se omitieron renglones vacíos o con 0 solo en año anterior (L282, L283, L294 tiene 35.294 solo en anterior y se omitió por no tener importe actual, L296, L315, L321, L323, L324). Nota: L294 Provisions pour risques et charges tiene importe solo en Exercice précédent (35.294)."
+}

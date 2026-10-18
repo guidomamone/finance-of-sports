@@ -1,0 +1,42 @@
+{
+ "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf",
+ "generado": "2026-10-18T06:19:17.137Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 4 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "periodo",
+   "motivo": "el nombre del archivo dice otro cierre que el contenido (2025-10-30): confirmar qué ejercicio es antes de cargarlo"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (liersesk-be)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 4 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-10-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada",
+  "nombreNoCoincide": true
+ },
+ "clubId": "liersesk-be",
+ "year": 2025,
+ "cortadoEn": "filas"
+}

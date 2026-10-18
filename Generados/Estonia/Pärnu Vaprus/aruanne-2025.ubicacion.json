@@ -1,0 +1,93 @@
+{
+ "pdf": "Clubes/Estonia/Pärnu Vaprus/aruanne-2025.pdf",
+ "md": "Clubes/Estonia/Pärnu Vaprus/aruanne-2025.md",
+ "mdSha1": "8439c61698a88affab1dff7a0899f5f3366c36c7",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T06:08:45.572Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    13
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    21,
+    29
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    42,
+    53
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    72,
+    75
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 4,
+   "lineas": [
+    82,
+    84
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 5,
+   "lineas": [
+    96,
+    98
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 6,
+   "lineas": [
+    110,
+    112
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "(eurodes) — encabezado del Bilanss (b3); no hay estado de resultados",
+ "moneda": "EUR",
+ "columna_ejercicio": "",
+ "columna_anterior": null,
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se confirma que el PDF no contiene el tulemiaruanne (estado de resultados) del ejercicio 01.01.2025-31.12.2025 y que no hay que cargar nada?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice solo muestra datos generales (b1), el balance (b3), las confirmaciones electrónicas (b6) y las actividades (b7); no aparece ningún bloque de resultados.",
+   "bloques": [
+    "b1",
+    "b3",
+    "b6",
+    "b7"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Informe anual de Pärnu Jalgpalliklubi Vaprus (MTÜ, registrikood 80125566) para 2025. Solo hay bilanss (b3, en euros, columnas 31.12.2025 y 31.12.2024); no figura el tulemiaruanne ni notas de ingresos o gastos. Es posible que sea una microentidad con un formato abreviado."
+}

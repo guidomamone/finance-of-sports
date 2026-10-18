@@ -1,0 +1,23 @@
+{
+ "pdf": "Clubes/Estonia/Paide Linnameeskond/aruanne-2025.pdf",
+ "generado": "2026-10-18T06:11:43.080Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; la ficha del alta tiene preguntas en id, country, reportingCurrency"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Estonia/Paide Linnameeskond/aruanne-2025.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "cortadoEn": "club"
+}

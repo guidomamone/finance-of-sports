@@ -1,0 +1,154 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-18T06:17:47.031Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "ffa7be2",
+  "54ece03",
+  "0ecbf61",
+  "a9efb7d"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 1.842818 - gastos 6.557502 ± financiero 11.272015 ± impuesto 0.027259 no da el impreso 5.946137",
+   "dif": null
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: b23 repite gastos de personal por tipo de jornada, sin abrir categorías del estado."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 1.842818,
+  "gastos": 6.557502,
+  "financiero": 11.272015,
+  "impuesto": 0.027259,
+  "resultadoImpreso": 5.946137,
+  "resultadoParaCargar": 5.946137,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Brutomarge (+)/(-)",
+   "lado": "ingreso",
+   "M": 1.841008,
+   "pagina": 5,
+   "linea": 184,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Waarvan: niet-recurrente bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "M": 0.00181,
+   "pagina": 5,
+   "linea": 185,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "gasto",
+   "M": 6.166674,
+   "pagina": 5,
+   "linea": 189,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.252396,
+   "pagina": 5,
+   "linea": 190,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "gasto",
+   "M": 0.002006,
+   "pagina": 5,
+   "linea": 191,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 5,
+   "linea": 192,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andere bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.092926,
+   "pagina": 5,
+   "linea": 193,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.0435,
+   "pagina": 5,
+   "linea": 195,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "M": 0.128946,
+   "linea": 198
+  },
+  {
+   "etiqueta": "Niet-recurrente financiële opbrengsten",
+   "M": 10.85,
+   "linea": 199
+  },
+  {
+   "etiqueta": "Recurrente financiële kosten",
+   "M": 0.293069,
+   "linea": 201
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen op het resultaat (+)/(-)",
+   "M": 0.027259,
+   "linea": 206
+  }
+ ]
+}

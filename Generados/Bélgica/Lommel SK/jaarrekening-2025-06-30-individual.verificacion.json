@@ -1,0 +1,234 @@
+{
+ "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-18T06:17:46.855Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": null,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "cierre",
+   "valor": "2025-06-30",
+   "linea": null,
+   "motivo": "boekjaar 01-07-2024 tot 30-06-2025 (.md L38)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [
+  "dbd392a",
+  "d9b0df2"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "9.565805 = 9.565805",
+   "suma": 9.565805,
+   "impreso": 9.565805
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "30.344272 = 30.3441",
+   "suma": 30.344271999999997,
+   "impreso": 30.344099999999997
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero invertido)",
+   "dif": 0.0077859999999994045
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "la nota de \"Niet-recurrente bedrijfsopbrengsten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"Niet-recurrente bedrijfskosten\" no suma el renglón (0.749155 contra 0.749155, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar que no afecta la carga: b55 repite costes de personal del balance social que ya están en la nota 6.10."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Niet-recurrente bedrijfskosten",
+   "suma": 0.749155,
+   "objetivo": 0.749155
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Niet-recurrente bedrijfskosten",
+   "suma": 0.749155,
+   "objetivo": 0.749155
+  }
+ ],
+ "totales": {
+  "ingresos": 9.565805,
+  "gastos": 30.344272,
+  "financiero": 0.123925,
+  "impuesto": 0.022238,
+  "resultadoImpreso": -20.872368,
+  "resultadoParaCargar": -20.872368,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Omzet",
+   "lado": "ingreso",
+   "M": 3.689259,
+   "pagina": 8,
+   "linea": 271,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andere bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "M": 3.872782,
+   "pagina": 8,
+   "linea": 274,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Niet-recurrente bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "M": 2.003764,
+   "pagina": 8,
+   "linea": 275,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aankopen",
+   "lado": "gasto",
+   "M": 0.205706,
+   "pagina": 8,
+   "linea": 278,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Voorraad: afname (toename) (+)/(-)",
+   "lado": "gasto",
+   "M": 0.000086,
+   "pagina": 8,
+   "linea": 279,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Diensten en diverse goederen",
+   "lado": "gasto",
+   "M": 5.599006,
+   "pagina": 8,
+   "linea": 280,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "lado": "gasto",
+   "M": 13.80824,
+   "pagina": 24,
+   "linea": 829,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "Werkgeversbijdragen voor sociale verzekeringen",
+   "lado": "gasto",
+   "M": 1.953435,
+   "pagina": 24,
+   "linea": 830,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "Andere personeelskosten",
+   "lado": "gasto",
+   "M": 1.10555,
+   "pagina": 24,
+   "linea": 832,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "gasto",
+   "M": 6.264419,
+   "pagina": 8,
+   "linea": 282,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "gasto",
+   "M": 0.012546,
+   "pagina": 8,
+   "linea": 283,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bedrijfsbelastingen en -taksen",
+   "lado": "gasto",
+   "M": 0.00491,
+   "pagina": 25,
+   "linea": 856,
+   "origen": "nota que desglosa \"Andere bedrijfskosten\""
+  },
+  {
+   "etiqueta": "Andere",
+   "lado": "gasto",
+   "M": 0.641219,
+   "pagina": 25,
+   "linea": 857,
+   "origen": "nota que desglosa \"Andere bedrijfskosten\""
+  },
+  {
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.749155,
+   "pagina": 8,
+   "linea": 287,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Andere financiële opbrengsten",
+   "M": -0.026045,
+   "linea": 302
+  },
+  {
+   "etiqueta": "Kosten van schulden",
+   "M": -0.007455,
+   "linea": 306
+  },
+  {
+   "etiqueta": "Andere financiële kosten",
+   "M": -0.090425,
+   "linea": 308
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen",
+   "M": 0.022238,
+   "linea": 314
+  },
+  {
+   "etiqueta": "Regularisering van belastingen en terugneming van voorzieningen voor belastingen",
+   "M": 0,
+   "linea": 315
+  }
+ ]
+}

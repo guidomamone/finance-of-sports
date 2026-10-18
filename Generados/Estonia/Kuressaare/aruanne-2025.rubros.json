@@ -1,0 +1,90 @@
+{
+  "md": "Clubes/Estonia/Kuressaare/aruanne-2025.md",
+  "pdf": "Clubes/Estonia/Kuressaare/aruanne-2025.pdf",
+  "club": "kuressaare",
+  "year": 2025,
+  "generatedAt": "2026-10-18T06:09:34.682Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Annetused ja toetused",
+      "lado": "revenue",
+      "page": 20,
+      "section": "estado",
+      "values": [
+        0.349453
+      ],
+      "glosa": "Donaciones y subvenciones"
+    },
+    {
+      "label": "Tulu ettevõtlusest",
+      "lado": "revenue",
+      "page": 20,
+      "section": "estado",
+      "values": [
+        0.017106
+      ],
+      "glosa": "Ingresos de actividades económicas"
+    },
+    {
+      "label": "Muud tulud",
+      "lado": "revenue",
+      "page": 20,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Jagatud annetused ja toetused",
+      "lado": "expense",
+      "page": 20,
+      "section": "estado",
+      "values": [
+        0.023924
+      ],
+      "glosa": "Donaciones y subvenciones concedidas"
+    },
+    {
+      "label": "Mitmesugused tegevuskulud",
+      "lado": "expense",
+      "page": 20,
+      "section": "estado",
+      "values": [
+        0.218921
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Tööjõukulud",
+      "lado": "expense",
+      "page": 20,
+      "section": "estado",
+      "values": [
+        0.238317
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Põhivara kulum ja väärtuse langus",
+      "lado": "expense",
+      "page": 20,
+      "section": "estado",
+      "values": [
+        0.000596
+      ],
+      "glosa": "Amortización y deterioro del inmovilizado"
+    },
+    {
+      "label": "Muud kulud",
+      "lado": "expense",
+      "page": 20,
+      "section": "estado",
+      "values": [
+        0.005592
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
+}

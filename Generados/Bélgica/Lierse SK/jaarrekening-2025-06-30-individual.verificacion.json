@@ -1,0 +1,133 @@
+{
+ "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-18T06:17:46.633Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "fb43936",
+  "2ca99ab",
+  "8002a09",
+  "1f88ca6"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 2.788355 - gastos 3.62035 ± financiero 0.034622 ± impuesto 0.014803 no da el impreso -0.962223",
+   "dif": null
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: El pedido dice cierre 2025-10-30, que es la fecha de la asamblea que aprobó las cuentas (b3); el ejercicio cierra el 30-06-2025 (b4)."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 2.788355,
+  "gastos": 3.62035,
+  "financiero": 0.034622,
+  "impuesto": 0.014803,
+  "resultadoImpreso": -0.962223,
+  "resultadoParaCargar": -0.962223,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Brutomarge (+)/(-)",
+   "lado": "ingreso",
+   "M": 2.706155,
+   "pagina": 7,
+   "linea": 255,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Waarvan: niet-recurrente bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "M": 0.0822,
+   "pagina": 7,
+   "linea": 256,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "gasto",
+   "M": 3.139021,
+   "pagina": 7,
+   "linea": 259,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.407089,
+   "pagina": 7,
+   "linea": 260,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andere bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.050448,
+   "pagina": 7,
+   "linea": 263,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.023792,
+   "pagina": 7,
+   "linea": 265,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "M": 0.000698,
+   "linea": 268
+  },
+  {
+   "etiqueta": "Recurrente financiële kosten",
+   "M": 0.033924,
+   "linea": 272
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen op het resultaat (+)/(-)",
+   "M": 0.014803,
+   "linea": 277
+  }
+ ]
+}

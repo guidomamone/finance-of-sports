@@ -1,0 +1,120 @@
+{
+  "md": "Clubes/Bélgica/RAAL La Louvière/wf-2024-2025-2677fac4.md",
+  "pdf": "Clubes/Bélgica/RAAL La Louvière/wf-2024-2025-2677fac4.pdf",
+  "club": "raal-la-louviere",
+  "year": 2025,
+  "generatedAt": "2026-10-18T06:17:47.109Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Chiffre d'affaires",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        4.615173
+      ],
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "Autres produits d'exploitation",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        1.536293
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Produits d'exploitation non récurrents",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.145299
+      ],
+      "glosa": "Ingresos de explotación no recurrentes"
+    },
+    {
+      "label": "Achats",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.511554
+      ],
+      "glosa": "Compras"
+    },
+    {
+      "label": "Stocks: réduction (augmentation)",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.013739
+      ],
+      "glosa": "Existencias: reducción (aumento)"
+    },
+    {
+      "label": "Services et biens divers",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        3.72582
+      ],
+      "glosa": "Servicios y bienes diversos"
+    },
+    {
+      "label": "Rémunérations, charges sociales et pensions",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        3.535934
+      ],
+      "glosa": "Remuneraciones, cargas sociales y pensiones"
+    },
+    {
+      "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.558871
+      ],
+      "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material"
+    },
+    {
+      "label": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises)",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.017902
+      ],
+      "glosa": "Correcciones de valor sobre existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones)"
+    },
+    {
+      "label": "Autres charges d'exploitation",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.09718
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Charges d'exploitation non récurrentes",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.003193
+      ],
+      "glosa": "Gastos de explotación no recurrentes"
+    }
+  ]
+}

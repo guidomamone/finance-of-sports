@@ -1,0 +1,160 @@
+{
+  "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf",
+  "club": "oh-leuven",
+  "year": 2025,
+  "generatedAt": "2026-10-18T06:17:46.933Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Omzet",
+      "lado": "revenue",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        34.487424
+      ],
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "Andere bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        7.637273
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Niet-recurrente bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.192091
+      ],
+      "glosa": "Ingresos de explotación no recurrentes"
+    },
+    {
+      "label": "Bedrijfskosten",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        47.707467
+      ],
+      "glosa": "Gastos de explotación"
+    },
+    {
+      "label": "Aankopen",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        1.52052
+      ],
+      "glosa": "Aprovisionamientos"
+    },
+    {
+      "label": "Voorraad: afname (toename)",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.006668
+      ],
+      "glosa": "Variación de existencias: disminución (aumento)"
+    },
+    {
+      "label": "Diensten en diverse goederen",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        13.036915
+      ],
+      "glosa": "Servicios y bienes diversos"
+    },
+    {
+      "label": "620",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\"",
+      "values": [
+        22.959673
+      ],
+      "glosa": "620"
+    },
+    {
+      "label": "621",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\"",
+      "values": [
+        2.928919
+      ],
+      "glosa": "621"
+    },
+    {
+      "label": "623",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\"",
+      "values": [
+        0.76072
+      ],
+      "glosa": "623"
+    },
+    {
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        4.957136
+      ],
+      "glosa": "Amortizaciones y pérdidas por deterioro de gastos de constitución, inmovilizado intangible y material"
+    },
+    {
+      "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.004378
+      ],
+      "glosa": "Pérdidas por deterioro de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones)"
+    },
+    {
+      "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen)",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.316581
+      ],
+      "glosa": "Provisiones para riesgos y gastos: dotaciones (aplicaciones y reversiones)"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.716869
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Niet-recurrente bedrijfskosten",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        1.141007
+      ],
+      "glosa": "Gastos de explotación no recurrentes"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "md": "Clubes/Bélgica/RWDM/jaarrekening-2025-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2025-06-30-individual.pdf",
+  "club": "rwdm",
+  "year": null,
+  "generatedAt": "2026-10-18T06:17:47.235Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Omzet",
+      "lado": "revenue",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        4.269374
+      ],
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "Andere bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        10.904952
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Handelsgoederen, grond- en hulpstoffen",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.74886
+      ],
+      "glosa": "Mercaderías, materias primas y materias auxiliares"
+    },
+    {
+      "label": "Aankopen",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.74886
+      ],
+      "glosa": "Compras"
+    },
+    {
+      "label": "Diensten en diverse goederen",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        7.016079
+      ],
+      "glosa": "Servicios y bienes diversos"
+    },
+    {
+      "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        7.691859
+      ],
+      "glosa": "Remuneraciones y prestaciones sociales directas"
+    },
+    {
+      "label": "Werkgeversbijdragen voor sociale verzekeringen",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        1.231501
+      ],
+      "glosa": "Cotizaciones patronales a la seguridad social"
+    },
+    {
+      "label": "Andere personeelskosten",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        1.046765
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        2.5493
+      ],
+      "glosa": "Amortizaciones y correcciones de valor de gastos de establecimiento, del inmovilizado intangible y material"
+    },
+    {
+      "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        1.1895
+      ],
+      "glosa": "Provisiones para riesgos y gastos: dotaciones (aplicaciones y reversiones) (+)/(-)"
+    },
+    {
+      "label": "Bedrijfsbelastingen en -taksen",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Andere bedrijfskosten\"",
+      "values": [
+        0.002771
+      ],
+      "glosa": "Impuestos y tasas de explotación"
+    },
+    {
+      "label": "Andere",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Andere bedrijfskosten\"",
+      "values": [
+        0.338987
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Minderwaarden bij de realisatie van immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Niet-recurrente bedrijfskosten\"",
+      "values": [
+        0.934104
+      ],
+      "glosa": "Pérdidas por enajenación de inmovilizado intangible y material"
+    },
+    {
+      "label": "Andere niet-recurrente bedrijfskosten",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Niet-recurrente bedrijfskosten\"",
+      "values": [
+        0.00067
+      ],
+      "glosa": "Otros gastos de explotación no recurrentes"
+    }
+  ]
+}

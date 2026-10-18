@@ -1,0 +1,90 @@
+{
+  "md": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2025-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2025-06-30-individual.pdf",
+  "club": "lokeren-temse",
+  "year": 2025,
+  "generatedAt": "2026-10-18T06:17:46.774Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Waarvan: niet-recurrente bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.844978
+      ],
+      "glosa": "De los cuales: ingresos de explotación no recurrentes"
+    },
+    {
+      "label": "Omzet",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.282823
+      ],
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.298662
+      ],
+      "glosa": "Mercaderías, materias primas y auxiliares, servicios y bienes diversos"
+    },
+    {
+      "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.036731
+      ],
+      "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
+    },
+    {
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, inmovilizado intangible y material"
+    },
+    {
+      "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.003377
+      ],
+      "glosa": "Correcciones de valor de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.00313
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Niet-recurrente bedrijfskosten",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Gastos de explotación no recurrentes"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+ "pdf": "Clubes/Bélgica/RAAL La Louvière/wf-2024-2025-2677fac4.pdf",
+ "generado": "2026-10-18T06:19:17.585Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (raallalouviere-be)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-18: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 7 ejercicio(s) con un solo perímetro (individual); 9 documento(s) mirados)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Bélgica/RAAL La Louvière/wf-2024-2025-2677fac4.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "raallalouviere-be",
+ "year": 2025,
+ "cortadoEn": "filas"
+}

@@ -1,0 +1,204 @@
+{
+ "pdf": "Clubes/Estonia/Kuressaare/aruanne-2025.pdf",
+ "md": "Clubes/Estonia/Kuressaare/aruanne-2025.md",
+ "generado": "2026-10-18T06:09:34.681Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "1c5a785",
+  "1c5a785",
+  "1c5a785",
+  "1c5a785"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "0.366559 = 0.366559",
+   "suma": 0.36655899999999997,
+   "impreso": 0.36655899999999997
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "0.48735 = 0.48735",
+   "suma": 0.48734999999999995,
+   "impreso": 0.48735
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Annetused ja toetused\" no suma el renglón (0.47946 contra 0.349453, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Tulu ettevõtlusest\" no suma el renglón (0.056763 contra 0.017106, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Jagatud annetused ja toetused\" no suma el renglón (0.110395 contra 0.023924, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Mitmesugused tegevuskulud\" no suma el renglón (0.237681 contra 0.218921, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Tööjõukulud\" no suma el renglón (0.467724 contra 0.238317, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer que no afecta la carga: b21 es otro corte del mismo total 479 460 de L565; cargarlo duplicaría el importe."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Annetused ja toetused",
+   "suma": 0.47946,
+   "objetivo": 0.349453
+  },
+  {
+   "renglon": "Tulu ettevõtlusest",
+   "suma": 0.056763,
+   "objetivo": 0.017106
+  },
+  {
+   "renglon": "Jagatud annetused ja toetused",
+   "suma": 0.110395,
+   "objetivo": 0.023924
+  },
+  {
+   "renglon": "Mitmesugused tegevuskulud",
+   "suma": 0.237681,
+   "objetivo": 0.218921
+  },
+  {
+   "renglon": "Tööjõukulud",
+   "suma": 0.467724,
+   "objetivo": 0.238317
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Annetused ja toetused",
+   "suma": 0.47946,
+   "objetivo": 0.349453
+  },
+  {
+   "renglon": "Tulu ettevõtlusest",
+   "suma": 0.056763,
+   "objetivo": 0.017106
+  },
+  {
+   "renglon": "Jagatud annetused ja toetused",
+   "suma": 0.110395,
+   "objetivo": 0.023924
+  },
+  {
+   "renglon": "Mitmesugused tegevuskulud",
+   "suma": 0.237681,
+   "objetivo": 0.218921
+  },
+  {
+   "renglon": "Tööjõukulud",
+   "suma": 0.467724,
+   "objetivo": 0.238317
+  }
+ ],
+ "totales": {
+  "ingresos": 0.366559,
+  "gastos": 0.48735,
+  "financiero": -0.011379,
+  "impuesto": 0,
+  "resultadoImpreso": -0.13217,
+  "resultadoParaCargar": -0.13217,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Annetused ja toetused",
+   "lado": "ingreso",
+   "M": 0.349453,
+   "pagina": 20,
+   "linea": 746,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Tulu ettevõtlusest",
+   "lado": "ingreso",
+   "M": 0.017106,
+   "pagina": 20,
+   "linea": 747,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Muud tulud",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 20,
+   "linea": 748,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Jagatud annetused ja toetused",
+   "lado": "gasto",
+   "M": 0.023924,
+   "pagina": 20,
+   "linea": 751,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Mitmesugused tegevuskulud",
+   "lado": "gasto",
+   "M": 0.218921,
+   "pagina": 20,
+   "linea": 752,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Tööjõukulud",
+   "lado": "gasto",
+   "M": 0.238317,
+   "pagina": 20,
+   "linea": 753,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Põhivara kulum ja väärtuse langus",
+   "lado": "gasto",
+   "M": 0.000596,
+   "pagina": 20,
+   "linea": 754,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Muud kulud",
+   "lado": "gasto",
+   "M": 0.005592,
+   "pagina": 20,
+   "linea": 755,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Muud finantstulud ja -kulud",
+   "M": -0.011379,
+   "linea": 758
+  }
+ ],
+ "impuesto": []
+}

@@ -1,0 +1,274 @@
+{
+ "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.md",
+ "mdSha1": "b99f355393a56b05f84f7bd233d867002bfeadc0",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T06:13:46.908Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    9,
+    11
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    13,
+    16
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    24,
+    30
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 1,
+   "lineas": [
+    36,
+    38
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 2,
+   "lineas": [
+    63,
+    64
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 2,
+   "lineas": [
+    71,
+    72
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 2,
+   "lineas": [
+    80,
+    81
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 2,
+   "lineas": [
+    96,
+    97
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 3,
+   "lineas": [
+    130,
+    132
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 4,
+   "lineas": [
+    144,
+    171
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 5,
+   "lineas": [
+    179,
+    210
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 6,
+   "lineas": [
+    218,
+    242
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 7,
+   "lineas": [
+    252,
+    281
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 8,
+   "lineas": [
+    291,
+    307
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 9,
+   "lineas": [
+    319,
+    336
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 10,
+   "lineas": [
+    344,
+    367
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 11,
+   "lineas": [
+    375,
+    402
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 12,
+   "lineas": [
+    412,
+    442
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 13,
+   "lineas": [
+    452,
+    465
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 14,
+   "lineas": [
+    475,
+    484
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 14,
+   "lineas": [
+    486,
+    488
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 14,
+   "lineas": [
+    490,
+    497
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 26,
+   "lineas": [
+    777,
+    781
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 26,
+   "lineas": [
+    783,
+    806
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 27,
+   "lineas": [
+    816,
+    818
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 27,
+   "lineas": [
+    820,
+    822
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 27,
+   "lineas": [
+    826,
+    833
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 27,
+   "lineas": [
+    835,
+    839
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 27,
+   "lineas": [
+    841,
+    845
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b13"
+ ],
+ "notas_ingresos": [
+  "b19"
+ ],
+ "notas_gastos": [
+  "b19"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "de JAARREKENING in EURO (b3); modelo VKT de la NBB, importes en euros sin decimales",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga como ejercicio pedido el que cubre 01-07-2024 a 30-06-2025 (columna 'Boekjaar' de b13)?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El pedido dice cierre 2025-10-30, que es la fecha de la asamblea que aprobó las cuentas (b3); el ejercicio cierra el 30-06-2025 (b4).",
+   "bloques": [
+    "b3",
+    "b4",
+    "b13"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Cuentas individuales en modelo abreviado (VKT) del Lierse SK. Estado de resultados en b13 (empieza por Brutomarge, sin abrir ingresos). b19 desglosa solo los renglones no recurrentes (76A 82.200 / 66A 23.792). Se excluyen balance (b10-b12), resultaatverwerking (b14), activos fijos (b15-b17), deudas (b18), vinculadas (b20) y balance social (b23-b29)."
+}

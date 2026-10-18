@@ -1,0 +1,267 @@
+{
+ "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2025.pdf",
+ "md": "Clubes/Estonia/FCI Levadia/aruanne-2025.md",
+ "mdSha1": "af82efcffff2cbfee99d8243324a3c35ab2979d8",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T06:04:30.835Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    13
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    25,
+    49
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    93,
+    95
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    106,
+    136
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    144,
+    173
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 6,
+   "lineas": [
+    181,
+    209
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 7,
+   "lineas": [
+    217,
+    224
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 8,
+   "lineas": [
+    254,
+    259
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    307,
+    315
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    323,
+    342
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 10,
+   "lineas": [
+    346,
+    356
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    364,
+    373
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 11,
+   "lineas": [
+    377,
+    383
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 12,
+   "lineas": [
+    391,
+    402
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 12,
+   "lineas": [
+    406,
+    409
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 12,
+   "lineas": [
+    413,
+    425
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 12,
+   "lineas": [
+    429,
+    443
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 13,
+   "lineas": [
+    451,
+    457
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 13,
+   "lineas": [
+    465,
+    474
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 13,
+   "lineas": [
+    480,
+    483
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 14,
+   "lineas": [
+    505,
+    548
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 15,
+   "lineas": [
+    556,
+    602
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 16,
+   "lineas": [
+    610,
+    637
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 16,
+   "lineas": [
+    641,
+    649
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 17,
+   "lineas": [
+    661,
+    663
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 20,
+   "lineas": [
+    736,
+    738
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 21,
+   "lineas": [
+    744,
+    746
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b22"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con decimales (p. ej. 3 080 702,00) y cuadro de activo fijo en 'eurodes'; aruanne en euros sin redondeo a miles.",
+ "moneda": "EUR",
+ "columna_ejercicio": "2025",
+ "columna_anterior": "2024",
+ "perimetro": "ambos",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado individual de FCI Levadia MTÜ (b22, Lisa 15) en lugar del consolidado (b5), siguiendo el perímetro individual de años anteriores?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El documento es consolidado (b5) pero incluye el estado individual de la MTÜ en Lisa 15 (b22).",
+   "bloques": [
+    "b22",
+    "b5"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se dejan afuera las notas 8, 7, 9 y 10 (b16, b14, b17, b18) por ser del consolidado y no coincidir con el estado individual?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "Ej.: Lähetuskulud 430 603 en b17 vs 308 778 en b22; Staadioni rent 13 416 vs 33 656; el individual ya viene desglosado renglón por renglón.",
+   "bloques": [
+    "b16",
+    "b14",
+    "b17",
+    "b18"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "b5 es el estado de resultados consolidado (MTÜ + Jalgpallikool + Infonet JK) y b16, b14, b17, b18 son sus notas. b22 (Lisa 15) es el tulude-kulude aruanne individual de FCI Levadia MTÜ, ya detallado por partida. Se eligió el individual por continuidad con los años cargados. Resultado 2025 individual: -1 197 822 EUR."
+}
