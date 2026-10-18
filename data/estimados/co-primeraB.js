@@ -2,8 +2,8 @@
 window.ESTIMADOS = window.ESTIMADOS || {};
 window.ESTIMADOS["co-primeraB"] = {
   2015: [{"id":"fortalezaceif-co","revenue":1.735,"lo":0.967,"hi":3.282,"caso":"afuera","error":25,"de":[2017]}],
-  2016: [{"id":"unionmagdalena-co","revenue":2.117,"lo":1.179,"hi":4.004,"caso":"afuera","error":25,"de":[2018]}],
-  2017: [{"id":"unionmagdalena-co","revenue":2.155,"lo":1.2,"hi":4.076,"caso":"afuera","error":25,"de":[2018]}],
-  2020: [{"id":"unionmagdalena-co","revenue":2.27,"lo":1.265,"hi":4.295,"caso":"afuera","error":25,"de":[2018]}],
-  2022: [{"id":"boyacachico-co","revenue":1.761,"lo":0.981,"hi":3.331,"caso":"afuera","error":25,"de":[2024]}],
+  2016: [{"id":"unionmagdalena-co","revenue":2.117,"lo":1.18,"hi":4.003,"caso":"afuera","error":25,"de":[2018]}],
+  2017: [{"id":"unionmagdalena-co","revenue":2.155,"lo":1.201,"hi":4.075,"caso":"afuera","error":25,"de":[2018]}],
+  2020: [{"id":"unionmagdalena-co","revenue":2.27,"lo":1.266,"hi":4.294,"caso":"afuera","error":25,"de":[2018]}],
+  2022: [{"id":"boyacachico-co","revenue":1.761,"lo":0.982,"hi":3.331,"caso":"afuera","error":25,"de":[2024]}],
 };

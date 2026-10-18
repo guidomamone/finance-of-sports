@@ -20,6 +20,16 @@ const kuressaareeeRevenueLinesByYear = {
     { rawLabel:'Muud tulud', normalizedCategory:'other_income', amountNative:0.002675, disclosureLevel:'aggregated' },
     { rawLabel:'Reklaam', normalizedCategory:'sponsorship_commercial', amountNative:0.048109, disclosureLevel:'aggregated' },
   ],
+  2020: [
+    { rawLabel:'Liikmetelt saadud tasud', normalizedCategory:'member_dues', amountNative:0.047219, disclosureLevel:'aggregated' },
+    { rawLabel:'UEFA solidaarsustoetus', normalizedCategory:'competition_bonus', amountNative:0.022896, disclosureLevel:'aggregated' },
+    { rawLabel:'EJL toetused', normalizedCategory:'other_income', amountNative:0.086747, disclosureLevel:'aggregated' },
+    { rawLabel:'Riigi ja/või kohaliku omavalitsuse toetused', normalizedCategory:'other_income', amountNative:0.050559, disclosureLevel:'aggregated' },
+    { rawLabel:'Muud toetused', normalizedCategory:'other_income', amountNative:0.001588, disclosureLevel:'aggregated' },
+    { rawLabel:'Reklaam', normalizedCategory:'sponsorship_commercial', amountNative:0.015833, disclosureLevel:'aggregated' },
+    { rawLabel:'Muud tulud', normalizedCategory:'other_income', amountNative:0.006307, disclosureLevel:'aggregated' },
+    { rawLabel:'Muud tulud', normalizedCategory:'other_income', amountNative:0.000001, disclosureLevel:'aggregated' },
+  ],
 };
 const kuressaareeeExpenseLinesByYear = {
   2025: [
@@ -62,6 +72,24 @@ const kuressaareeeExpenseLinesByYear = {
     { rawLabel:'Põhivarade kulum ja väärtuse langus', normalizedCategory:'depreciation', amountNative:-0.000341, disclosureLevel:'aggregated' },
     { rawLabel:'Muud kulud', normalizedCategory:'other_expenses', amountNative:-0.005622, disclosureLevel:'aggregated' },
   ],
+  2020: [
+    { rawLabel:'Üür ja rent', normalizedCategory:'admin_general_expense', amountNative:-0.00264, disclosureLevel:'aggregated' },
+    { rawLabel:'Energia', normalizedCategory:'admin_general_expense', amountNative:-0.001838, disclosureLevel:'aggregated' },
+    { rawLabel:'Mitmesugused bürookulud', normalizedCategory:'admin_general_expense', amountNative:-0.005948, disclosureLevel:'aggregated' },
+    { rawLabel:'Koolituskulud', normalizedCategory:'admin_general_expense', amountNative:-0.000908, disclosureLevel:'aggregated' },
+    { rawLabel:'Riiklikud ja kohalikud maksud', normalizedCategory:'admin_general_expense', amountNative:-0.000254, disclosureLevel:'aggregated' },
+    { rawLabel:'Võistluste ja treeningutega seotud kulud', normalizedCategory:'match_organisation_expense', amountNative:-0.097795, disclosureLevel:'aggregated' },
+    { rawLabel:'Liikmemaksud', normalizedCategory:'admin_general_expense', amountNative:-0.005722, disclosureLevel:'aggregated' },
+    { rawLabel:'Mängijatele makstav sportlasetoetus', normalizedCategory:'wages_squad', amountNative:-0.014046, disclosureLevel:'aggregated' },
+    { rawLabel:'Mängijatele makstav sportlasestipendium', normalizedCategory:'wages_squad', amountNative:-0.0028, disclosureLevel:'aggregated' },
+    { rawLabel:'Muud', normalizedCategory:'other_expenses', amountNative:-0.00085, disclosureLevel:'aggregated' },
+    { rawLabel:'EJL litsentsiga töötajate (v.a. mängijad) palgakulu', normalizedCategory:'wages_squad', amountNative:-0.045555, disclosureLevel:'aggregated' },
+    { rawLabel:'EJL litsentsiga töötajate (v.a. mängijad) maksud', normalizedCategory:'wages_squad', amountNative:-0.016246, disclosureLevel:'aggregated' },
+    { rawLabel:'Mängijate palgakulu', normalizedCategory:'wages_squad', amountNative:-0.025104, disclosureLevel:'aggregated' },
+    { rawLabel:'Sotsiaalmaks mängijate töötasudelt', normalizedCategory:'wages_squad', amountNative:-0.008705, disclosureLevel:'aggregated' },
+    { rawLabel:'Põhivarade kulum ja väärtuse langus', normalizedCategory:'depreciation', amountNative:-0.000543, disclosureLevel:'aggregated' },
+    { rawLabel:'Muud kulud', normalizedCategory:'other_expenses', amountNative:-0.00194, disclosureLevel:'aggregated' },
+  ],
 };
 const kuressaareeeFiscalYearMeta = {
   2025: {
@@ -88,6 +116,16 @@ const kuressaareeeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:0.204293, officialTotalExpenses:0.228847, officialPAT:-0.024554,
   },
+  2020: {
+    currency:'EUR', fxRef:'EUR@2020-12-31',
+    sourceId:'kuressaare-ee-aruanne-2020',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0.000001, tax:0,
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0.23115, officialTotalExpenses:0.230894, officialPAT:0.000257,
+  },
 };
 const kuressaareeePresupuestoOverlayByYear = {};
 
@@ -112,6 +150,11 @@ Object.assign(sources, {
   'kuressaare-ee-aruanne-2019': {
     id:'kuressaare-ee-aruanne-2019', clubId:'kuressaare-ee',
     title:'Jalgpalliklubi FC Kuressaare — aruanne-2019 (ejercicio 2019)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'kuressaare-ee-aruanne-2020': {
+    id:'kuressaare-ee-aruanne-2020', clubId:'kuressaare-ee',
+    title:'Jalgpalliklubi FC Kuressaare — aruanne-2020 (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
