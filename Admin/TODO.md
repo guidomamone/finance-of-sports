@@ -25,7 +25,7 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 282 en Ligas (cuando haya el dato del 295) · finanzas 281, 282, 294 · pipeline 289, 290, 288, 232, 279, 286, 287, 298, 301 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
-datos-sourcing 273 (completar el dato), 252, 295 · Reino Unido (261) en su propia sesión · proyecto 250, 244, 300 · la principal: 268, 291 y los merges; el 246 va
+datos-sourcing 273 (completar el dato), 252 · ligas 295 · Reino Unido (261) en su propia sesión · proyecto 250, 244, 300 · la principal: 268, 291 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
 Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
