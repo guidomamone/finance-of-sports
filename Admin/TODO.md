@@ -24,24 +24,12 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-1. **Caja y deuda**: lo que falta está frenado por el documento o por la escala del año (lista en el 260).
-   - 289: la escala del año (Leipzig 2023-2024, HSV 2024). 290: Genoa 2022. 291: duda del factoring (Guido decide).
-
-2. **Transcripciones por subagentes** (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia). La limpieza está hecha y pipeline ya está mergeada; en este orden:
-   - validar `Admin/lotes/subagentes-validar.txt` (~US$ 3,47);
-   - transcribir con Mistral `Admin/lotes/mistral-despues-del-merge.txt` (36 documentos, ~US$ 6);
-   - lotes de carga por país (el alta con un solo año);
-   - quedan 319 `.md` viejos sin tablas en `Admin/lotes/sin-tablas-6paises.txt` (decidir subagentes o Mistral).
-
-3. **Mejoras de proyecto**: menos proceso y más distribución: que un hincha pueda compartir el link de su club con preview, que Google lo encuentre y que un periodista pueda citarlo; y dejar los datos listos (licencia, esquema, ids estables) por si algún día se cobra una API. Detalle en los to-dos 240 a 259.
-
-## Otros to-dos, en el orden más eficiente
-
-Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
+Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
 * 268: dashboard de usuarios y visitas: confirmar el cron (19/10) y que se actualice solo
 * 289, 290 y 291: caja y deuda, lo que queda (escala del año, Genoa 2022, duda del factoring)
+* 292: transcripciones por subagentes de los 6 países: validar, Mistral y cargar
 
 **B. Bases baratas que después cuestan caro cambiar**
 * 250: hooks: auditoría antes del commit, skills, ASSET_V (vuelve automáticas reglas que hoy dependen de acordarse)
@@ -57,7 +45,7 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 
 **D. Onboarding grande**
 * 238: llevar a 0 los documentos que quedaron a mitad de camino
-* El punto 2 del plan (transcripciones por subagentes) y Reino Unido (lo transcribe la otra sesión)
+* 261: Reino Unido, transcripción por subagentes
 * 165 c: altas de los países nuevos que faltan
 * 195: gestiones (presidentes) sin fuente confirmada (se puede ir haciendo con cada país)
 * 276 y 277: listas de equipos que no salen; Parma 2018 en club-leagues
@@ -66,6 +54,7 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 * 273: estadio y sponsor de cada ejercicio (definir los campos con Guido antes de juntar)
 
 **E. Pantallas**
+* 293: Ligas, las tarjetas de cada país parecen decir que hay un solo año por liga
 * 275: faltantes y estimados en Ligas (estimado bien claro, aparte de lo real)
 * 274: consolidado de cada liga: total de ingresos por categoría (mockup con Design antes)
 * 280, 281 y 282: Finanzas, las entidades del club, lo de las otras entidades y quién audita
@@ -295,6 +284,14 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
    successivo" y "altri finanziatori".
 291. DUDA PARA GUIDO: ¿EL FACTORING ES DEUDA? En Monza 2024 se decidió que no (ajuste del 2026-10-17: 0); en Genoa 2022 el sitio publica
    95,7 M que lo incluyen (30,4 M con Banca Sistema, .md L2637). Decidir un criterio; no se reabrió nada.
+292. TRANSCRIPCIONES POR SUBAGENTES: VALIDAR, MISTRAL Y CARGAR (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia; la limpieza
+   está hecha, ver el 165 b1). En este orden: validar `Admin/lotes/subagentes-validar.txt` (~US$ 3,47); transcribir con Mistral
+   `Admin/lotes/mistral-despues-del-merge.txt` (36 documentos, ~US$ 6); lotes de carga por país (el alta con un solo año); y decidir
+   subagentes o Mistral para los 319 `.md` viejos sin tablas de `Admin/lotes/sin-tablas-6paises.txt`.
+293. LIGAS: LAS TARJETAS DE CADA PAÍS PARECEN DECIR QUE HAY UN SOLO AÑO (pedido de Guido, 2026-10-18). En el estado frío de Ligas cada
+   liga dice, por ejemplo, "Primera División 10 de 28 · 2024", "Primera Nacional 1 club · 2023": se lee como que de esa liga solo hay
+   información de ese año, cuando hay varios ejercicios. Que la tarjeta diga el rango o la cantidad de ejercicios con datos (y de qué año
+   es el "10 de 28"), o que el año se entienda como "el más reciente". Mockup antes de codear.
 270. ESTIMAR UN CLUB QUE NUNCA CARGAMOS (pedido de Guido, 2026-10-17; los años que le faltan a un club que tenemos ya se estiman y
    publican en data/estimados/). Apagado: hoy da 50% de error con la posición en la tabla contra 56% de la mediana de la liga. Volver a
    medir (`node tools/estimar.mjs --medir`) cuando haya más clubes cargados y prenderlo solo si le gana a la mediana con un error que Guido

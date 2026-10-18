@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 717 — El plan, todo en to-dos (2026-10-18)
+
+- TODO: el ORDEN ya no tiene los tres puntos de arriba (pedido de Guido): caja y deuda son los 289 a 291, las transcripciones por
+  subagentes pasan a ser el 292 (tanda A) y las mejoras de proyecto ya eran los 241 a 259. Nuevo 293: en Ligas, las tarjetas de cada
+  país parecen decir que hay un solo año por liga.
+
 ## Versión 716 — Merge de pipeline: ajuste por año, deuda italiana y Batch API; caja y deuda de Dortmund y Leipzig (2026-10-18)
 
 Sesión en el worktree `fos-pipeline`. Merge a mano: `tools/worktree.mjs` con la versión de main (mismo arreglo de `preparar`, más
