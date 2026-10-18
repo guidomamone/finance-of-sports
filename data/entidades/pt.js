@@ -3569,6 +3569,15 @@ Object.assign(window.CLUB_ENTIDADES, {
        "md": "Clubes/Portugal/Porto/relatorio-contas-2023-24.md",
        "linea": 3897
       }
+     },
+     "2025": {
+      "total": 15.698,
+      "moneda": "EUR",
+      "cierre": "2025-06-30",
+      "fuente": {
+       "md": "Clubes/Portugal/Porto/relatorio-contas-2024-25.md",
+       "linea": 7285
+      }
      }
     }
    },
