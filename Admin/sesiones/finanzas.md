@@ -135,3 +135,14 @@
 - Decisión pendiente de Guido: si los ingresos de la otra entidad incluyen los "Juros e rendimentos similares obtidos" (hoy sí, en
   Marítimo 2021-2025 y Porto 2020, 2024 y 2025; no se suman los renglones netos de imparidad ni de provisiones). Si es que no, sacar ese
   renglón de esas 8 líneas `ingresos` de `Admin/registros/entidades.jsonl` y correr `node tools/entidades.mjs`.
+
+## Sesión 3 (2026-10-18)
+
+### Decisiones (para CONVENCIONES-DATOS)
+
+- Ingresos de la otra entidad (to-do 281; Guido delegó en la principal, 2026-10-18): se suman todos los renglones de ingresos de su estado
+  de resultados, incluidos los "Juros e rendimentos similares obtidos"; solo queda afuera lo que se contaría dos veces (la ganancia por la
+  parte de la SAD, "Ganhos imputados de subsidiárias"). Revisadas las 17 líneas `ingresos` de `Admin/registros/entidades.jsonl`: todas lo
+  siguen, sin cambios. Marítimo 2021-2025 y Porto 2020, 2024 y 2025 suman sus juros; Belenenses 2025 y Vizela 2023-2024 tienen el renglón en
+  "-" o 0,00; la línea de Tondela 2021 es el "Total" de su lista, que ya incluye "Juros obtidos"; Vitória 2022, Braga 2021 y 2023, Académica
+  2023 y Chaves 2023 no traen ese renglón.
