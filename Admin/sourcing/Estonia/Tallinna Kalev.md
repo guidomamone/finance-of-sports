@@ -14,3 +14,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2024 desde `Clubes/Estonia/Tallinna Kalev/aruanne-2024.pdf` (sourceId `tallinnakalev-ee-aruanne-2024`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2020 desde `Clubes/Estonia/Tallinna Kalev/aruanne-2020.pdf` (sourceId `tallinnakalev-ee-aruanne-2020`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2021 desde `Clubes/Estonia/Tallinna Kalev/aruanne-2021.pdf` (sourceId `tallinnakalev-ee-aruanne-2021`).
