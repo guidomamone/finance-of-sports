@@ -167,6 +167,67 @@ Generados/Estonia/Nõmme Kalju/aruanne-2024.categorias.json (escalón de cada fi
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/Nõmme Kalju/aruanne-2020.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/Nõmme Kalju/aruanne-2020.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Liikmetelt saadud tasud | pág. 6, precedente |
+| 2 | Sihtfinantseerimine tegevuskuludeks | pág. 16, precedente |
+| 3 | Mittesihtotsatarbelised annetused ja toetused | pág. 16, Jev 1 |
+| 4 | Omavalitsuste toetus | pág. 16, Jev 1 |
+| 5 | UEFA solidaarsustoetus | pág. 16, precedente |
+| 6 | EJL Kogukonnajuht | pág. 16, Jev 1 |
+| 7 | EJL ECA | pág. 16, Jev 0.99 |
+| 8 | EJL Naiste meistriliiga kvaliteedi tõus | pág. 16, ? 0.6 |
+| 9 | Toetused treeningute korraldamiseks | pág. 16, Jev 0.97 |
+| 10 | Muud toetused ECA, LHV | pág. 16, precedente |
+| 11 | Riiklik noorteraha | pág. 16, precedente |
+| 12 | Piletitulu Eesti sisesed võistlused | pág. 16, precedente |
+| 13 | Mängijaõiguste müük | pág. 16, precedente |
+| 14 | Renditulu | pág. 16, precedente |
+| 15 | Muu äritegevus | pág. 16, precedente |
+| 16 | Tulu sponsoritelt | pág. 16, precedente |
+| 17 | kaupade, teenuste müük | pág. 16, precedente |
+| 18 | Muud tulud | pág. 6, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Sihtotstarbeliselt finantseeritud projektide otsesed kulud | pág. 6, precedente |
+| 2 | Jalgpallikooli tegevustoetus | pág. 17, precedente |
+| 3 | Sportlastoetused | pág. 17, precedente |
+| 4 | Mängijate ülemineku kulud | pág. 17, Jev 0.93 |
+| 5 | Kodumängude korralduskulud | pág. 17, precedente |
+| 6 | Eesti meistrivõistluste osavõtutasu | pág. 17, precedente |
+| 7 | Võistkondade välissõitude kulud | pág. 17, precedente |
+| 8 | Turundus-, sponsorlus- ja reklaamikulud | pág. 17, precedente |
+| 9 | Klubisümboolikaga toodete omahind | pág. 17, precedente |
+| 10 | Klubile kuuluvate ja tema kasutuses olevate hoonete ja rajatistega seotud kulud | pág. 17, precedente |
+| 11 | Klubi administreerimiskulud | pág. 17, precedente |
+| 12 | Meditsiinitarvikud- ja teenused | pág. 17, precedente |
+| 13 | Mänguvormid jm varustus | pág. 17, precedente |
+| 14 | Erakorralised kulud | pág. 17, Jev 1 |
+| 15 | Muud klassifitseerimata tegevuskulud | pág. 17, Jev 0.96 |
+| 16 | Tööjõukulud | pág. 6, precedente |
+| 17 | Põhivarade kulum ja väärtuse langus | pág. 6, precedente |
+| 18 | Muud kulud | pág. 6, precedente |
+
+### Meta
+
+```text
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L197) (Claude 2026-10-18)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Televisión. fila de TV (L577) en 0 en 2020; los 19.085 son de la otra columna (subagente Sonnet, revisado por Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2019
 
 ### Ingresos
@@ -253,4 +314,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Nõmme Kalju/aruanne-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### nommekalju-ee-aruanne-2020
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Nõmme Kalju/aruanne-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

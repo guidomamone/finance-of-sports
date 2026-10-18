@@ -1,10 +1,10 @@
 // GENERADO por tools/estimar.mjs: no editar a mano. ESTIMACIONES, no datos reales: ingreso en millones de USD del año, rango del 80% (lo-hi) y error mediano medido (%).
 window.ESTIMADOS = window.ESTIMADOS || {};
 window.ESTIMADOS["ar-primeranacional"] = {
-  2016: [{"id":"almagro-ar","revenue":1.025,"lo":0.574,"hi":1.945,"caso":"afuera","error":26,"de":[2018]}],
-  2017: [{"id":"almagro-ar","revenue":1.043,"lo":0.584,"hi":1.979,"caso":"afuera","error":26,"de":[2018]}],
-  2018: [{"id":"losandes-ar","revenue":1.335,"lo":0.748,"hi":2.533,"caso":"afuera","error":26,"de":[2020]}],
-  2019: [{"id":"losandes-ar","revenue":1.357,"lo":0.76,"hi":2.575,"caso":"afuera","error":26,"de":[2020]}],
-  2022: [{"id":"instituto","revenue":18.567,"lo":10.399,"hi":35.234,"caso":"afuera","error":26,"de":[2024]}],
-  2023: [{"id":"racing","revenue":58.159,"lo":38.233,"hi":88.417,"caso":"entre","error":19,"de":[2021,2024]}],
+  2016: [{"id":"almagro-ar","revenue":1.025,"lo":0.574,"hi":1.943,"caso":"afuera","error":26,"de":[2018]}],
+  2017: [{"id":"almagro-ar","revenue":1.043,"lo":0.585,"hi":1.978,"caso":"afuera","error":26,"de":[2018]}],
+  2018: [{"id":"losandes-ar","revenue":1.335,"lo":0.748,"hi":2.531,"caso":"afuera","error":26,"de":[2020]}],
+  2019: [{"id":"losandes-ar","revenue":1.357,"lo":0.76,"hi":2.573,"caso":"afuera","error":26,"de":[2020]}],
+  2022: [{"id":"instituto","revenue":18.567,"lo":10.404,"hi":35.21,"caso":"afuera","error":26,"de":[2024]}],
+  2023: [{"id":"racing","revenue":58.159,"lo":38.243,"hi":88.414,"caso":"entre","error":19,"de":[2021,2024]}],
 };

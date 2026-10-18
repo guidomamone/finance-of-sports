@@ -125,7 +125,7 @@ window.RANKINGS["ee-meistriliiga"] = {
   },
   2020: {
     leagueSize: 10,
-    sinDato: ["nommekalju-ee","tallinnakalev-ee"],
+    sinDato: ["tallinnakalev-ee"],
     clubs: [
       { id:"floratallinn-ee", revenue:4.428, reportType:"official_balance_sheet",
         sourceId:"floratallinn-ee-aruanne-2020",
@@ -133,6 +133,9 @@ window.RANKINGS["ee-meistriliiga"] = {
       { id:"tartutammeka-ee", revenue:1.433, reportType:"official_balance_sheet",
         sourceId:"tartutammeka-ee-aruanne-2020",
         mix:[["Cuotas Sociales",0.37],["Comercial / Sponsors",0.102],["Estadio",0.007],["Premios por competencias",0.08],["Venta de Jugadores",0.006],["Educación",0.05],["Otros ingresos",0.818]] },
+      { id:"nommekalju-ee", revenue:1.304, reportType:"official_balance_sheet",
+        sourceId:"nommekalju-ee-aruanne-2020",
+        mix:[["Cuotas Sociales",0.282],["Comercial / Sponsors",0.052],["Estadio",0.003],["Premios por competencias",0.43],["Venta de Jugadores",0.018],["Otras secciones deportivas",0.016],["Otros ingresos",0.503]] },
       { id:"paidelinnameeskond-ee", revenue:1.072, reportType:"official_balance_sheet",
         sourceId:"paidelinnameeskond-ee-aruanne-2020",
         mix:[["Cuotas Sociales",0.077],["Comercial / Sponsors",0.172],["Premios por competencias",0.389],["Venta de Jugadores",0.11],["Otros ingresos",0.325]] },
