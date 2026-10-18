@@ -1,25 +1,14 @@
 {
  "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.pdf",
- "generado": "2026-10-18T13:55:33.608Z",
+ "generado": "2026-10-18T14:06:42.092Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (beerschot-be)"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Cuotas sociales. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  },
-  {
-   "etapa": "tie-out-resultado",
-   "motivo": "resultado: ingresos 17.587332 + gastos -20.962568 + netInterest -0.223637 + tax -0.00958 = -3.608453 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" -3.543618)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "gastos: las filas suman -20.959945 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
   }
  ],
  "avisos": [
+  "\"Cuotas sociales\" en 0: real, por ajuste manual (2026-10-18, hay lidgelden diferidos pero ningún renglón de cuotas en el estado ni en las notas 6.10 (subagente Sonnet, revisado por Claude 2026-10-18))",
   "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -151,6 +140,16 @@
     "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
+    "rawLabel": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
     "rawLabel": "Bedrijfsbelastingen en -taksen",
     "normalizedCategory": "admin_general_expense",
     "amountNative": -0.158064,
@@ -209,6 +208,16 @@
     "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-18): la nota de activos fijos separa el 630 (891.583) (subagente Sonnet, revisado por Claude 2026-10-18)"
+   },
+   {
+    "rawLabel": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+    "normalizedCategory": "other_expenses",
+    "amountNative": 0.064834,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
    }
   ],
   "fiscalYearMeta": {
@@ -221,11 +230,33 @@
    "assetSales": 0,
    "netInterest": -0.223637,
    "tax": -0.00958,
+   "extraRows": [
+    {
+     "label": "Andere financiële opbrengsten",
+     "value": 0.104225
+    },
+    {
+     "label": "Kosten van schulden",
+     "value": -0.006684
+    },
+    {
+     "label": "Andere financiële kosten",
+     "value": -0.321178
+    },
+    {
+     "label": "Belastingen",
+     "value": -0.035016
+    },
+    {
+     "label": "Regularisering van belastingen en terugneming van voorzieningen voor belastingen",
+     "value": 0.025436
+    }
+   ],
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 17.587332,
-   "officialTotalExpenses": null,
-   "officialPAT": null
+   "officialTotalExpenses": 20.897734,
+   "officialPAT": -3.543618
   },
   "source": {
    "id": "beerschot-be-jaarrekening-2025-06-30-individual",
@@ -363,6 +394,29 @@
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "-64.834",
+   "linea": 295,
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "gasto",
+   "reemplaza": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "motivo": "631/4 es una reversión neta de -64.834 (L295): resta del gasto (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "cero-real",
+   "valor": "Cuotas sociales",
+   "linea": null,
+   "motivo": "hay lidgelden diferidos pero ningún renglón de cuotas en el estado ni en las notas 6.10 (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
   }
  ],
  "seleccion": {
@@ -437,7 +491,7 @@
    "page": 8,
    "native": 7.180163,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 7.180163,
    "cat": "other_income",
    "conf": 0.96,
@@ -452,7 +506,7 @@
    "page": 8,
    "native": 0.00244,
    "ladoDoc": "revenue",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 0.00244,
    "cat": "other_income",
    "conf": 1,
@@ -467,7 +521,7 @@
    "page": 8,
    "native": 0.925607,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 0.925607,
    "cat": "other_expenses",
    "conf": 1,
@@ -483,7 +537,7 @@
    "page": 8,
    "native": 0.021134,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado (lectura 4: signo impreso, resta en su lado))",
    "signoFijo": -0.021134,
    "cat": "other_expenses",
    "conf": 1,
@@ -498,7 +552,7 @@
    "page": 8,
    "native": 7.523193,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 7.523193,
    "cat": "other_expenses",
    "conf": 0.97,
@@ -555,34 +609,19 @@
    "amountNative": -0.238832
   },
   {
-   "label": "Teruggenomen",
-   "page": 24,
-   "native": 0.00821,
+   "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+   "page": 8,
+   "native": 0,
    "ladoDoc": "expense",
-   "origen": "verificacion (nota que desglosa \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\")",
-   "signoFijo": -0.00821,
-   "cat": "no_es_rubro",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "exceptional_items",
    "conf": 1,
-   "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
    "enLista": true,
-   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): No es un renglón del resultado: es una fila de detalle de la Nota 6.10 (reversión de la desvalorización de existencias, código 9111, 8.210) que ya está dentro del 631/4 (-64.834 neto). Cargarlo duplicaría. [L817: 'Teruggenomen | 9111 | 8.210 | 0' bajo 'Waardeverminderingen... Op voorraden en bestellingen in uitvoering' (pág. 24)]",
-   "destino": "excluida"
-  },
-  {
-   "label": "Teruggenomen",
-   "page": 24,
-   "native": 0.056624,
-   "ladoDoc": "expense",
-   "origen": "verificacion (nota que desglosa \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\")",
-   "signoFijo": -0.056624,
-   "cat": "no_es_rubro",
-   "conf": 1,
-   "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
-   "enLista": true,
-   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): No es un renglón del resultado: es una fila de detalle de la Nota 6.10 (reversión de la desvalorización de existencias, código 9111, 8.210) que ya está dentro del 631/4 (-64.834 neto). Cargarlo duplicaría. [L817: 'Teruggenomen | 9111 | 8.210 | 0' bajo 'Waardeverminderingen... Op voorraden en bestellingen in uitvoering' (pág. 24)]",
-   "destino": "excluida"
+   "destino": "expense",
+   "amountNative": 0
   },
   {
    "label": "Bedrijfsbelastingen en -taksen",
@@ -619,7 +658,7 @@
    "page": 8,
    "native": 0.002623,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado (lectura 5: hoja))",
+   "origen": "verificacion (estado)",
    "signoFijo": 0.002623,
    "cat": "exceptional_items",
    "conf": 0.9,
@@ -678,6 +717,21 @@
    "amountNative": -0.498321
   },
   {
+   "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "page": 8,
+   "native": 0.064834,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": -0.064834,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0.064834
+  },
+  {
    "label": "Andere financiële opbrengsten",
    "page": null,
    "native": 0.104225,
@@ -733,36 +787,44 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Cuotas sociales"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"Omzet\")": "gastos con signo",
-   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (estado (lectura 4: signo impreso, resta en su lado))": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\")": "gastos sin signo (se invierten)",
-   "verificacion (nota que desglosa \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\")": "gastos con signo",
    "verificacion (nota que desglosa \"Andere bedrijfskosten\")": "gastos sin signo (se invierten)",
    "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
   "revSum": 17.587332,
-  "expSum": -20.959945,
+  "expSum": -20.895111,
   "officialTotalRevenue": 17.587332,
-  "officialTotalExpenses": null,
-  "officialPAT": null,
+  "officialTotalExpenses": 20.897734,
+  "officialPAT": -3.543618,
   "verificacion": {
-   "ingresos": "impreso"
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -3.543618,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
   },
   "revImpreso": {
    "label": "total de ingresos (verificado)",
    "pag": null,
    "M": 17.587332
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 20.897734
   }
  },
  "liga": {
@@ -815,10 +877,10 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
+  "motivos": 1,
   "lineasIngreso": 6,
-  "lineasGasto": 12,
+  "lineasGasto": 14,
   "metaFilas": 5,
-  "excluidas": 2
+  "excluidas": 0
  }
 }

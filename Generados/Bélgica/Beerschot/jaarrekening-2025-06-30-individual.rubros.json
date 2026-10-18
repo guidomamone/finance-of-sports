@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.pdf",
   "club": "beerschot",
   "year": 2025,
-  "generatedAt": "2026-10-18T13:54:20.904Z",
+  "generatedAt": "2026-10-18T14:06:27.960Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -50,7 +50,7 @@
       "label": "Andere bedrijfsopbrengsten",
       "lado": "revenue",
       "page": 8,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         7.180163
       ],
@@ -60,7 +60,7 @@
       "label": "Niet-recurrente bedrijfsopbrengsten",
       "lado": "revenue",
       "page": 8,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         0.00244
       ],
@@ -70,31 +70,31 @@
       "label": "Aankopen",
       "lado": "expense",
       "page": 8,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         0.925607
       ],
-      "glosa": "Aprovisionamientos"
+      "glosa": "Compras"
     },
     {
       "label": "Voorraad: afname (toename) (+)/(-)",
       "lado": "expense",
       "page": 8,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
       "values": [
         -0.021134
       ],
-      "glosa": "Variación de existencias: disminución (aumento) (+)/(-)"
+      "glosa": "Existencias: disminución (aumento) (+)/(-)"
     },
     {
       "label": "Diensten en diverse goederen",
       "lado": "expense",
       "page": 8,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         7.523193
       ],
-      "glosa": "Servicios exteriores y bienes diversos"
+      "glosa": "Servicios y bienes diversos"
     },
     {
       "label": "Bezoldigingen en rechtstreekse sociale voordelen",
@@ -114,7 +114,7 @@
       "values": [
         1.435486
       ],
-      "glosa": "Cotizaciones patronales a la seguridad social"
+      "glosa": "Aportaciones patronales a la seguridad social"
     },
     {
       "label": "Andere personeelskosten",
@@ -127,24 +127,14 @@
       "glosa": "Otros gastos de personal"
     },
     {
-      "label": "Teruggenomen",
+      "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
       "lado": "expense",
-      "page": 24,
-      "section": "nota que desglosa \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\"",
+      "page": 8,
+      "section": "estado",
       "values": [
-        -0.00821
+        0
       ],
-      "glosa": "Reversiones"
-    },
-    {
-      "label": "Teruggenomen",
-      "lado": "expense",
-      "page": 24,
-      "section": "nota que desglosa \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\"",
-      "values": [
-        -0.056624
-      ],
-      "glosa": "Reversiones"
+      "glosa": "Provisiones para riesgos y gastos: dotaciones (aplicaciones y reversiones) (+)/(-)"
     },
     {
       "label": "Bedrijfsbelastingen en -taksen",
@@ -170,7 +160,7 @@
       "label": "Niet-recurrente bedrijfskosten",
       "lado": "expense",
       "page": 8,
-      "section": "estado (lectura 5: hoja)",
+      "section": "estado",
       "values": [
         0.002623
       ],
@@ -194,7 +184,7 @@
       "values": [
         0.169559
       ],
-      "glosa": "Amortizaciones del fondo de comercio"
+      "glosa": "Amortización del fondo de comercio"
     },
     {
       "label": "Afschrijvingen materiële vaste activa",
@@ -205,6 +195,16 @@
         0.498321
       ],
       "glosa": "Amortizaciones del inmovilizado material"
+    },
+    {
+      "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 8,
+      "section": "ajuste manual",
+      "values": [
+        -0.064834
+      ],
+      "glosa": "Pérdidas por deterioro de existencias, pedidos en curso y deudores comerciales: dotaciones (reversiones) (+)/(-)"
     }
   ]
 }

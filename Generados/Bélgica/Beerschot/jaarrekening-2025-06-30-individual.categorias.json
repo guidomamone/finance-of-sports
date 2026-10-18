@@ -2,9 +2,9 @@
  "md": "Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.md",
  "club": "beerschot",
  "year": 2025,
- "generatedAt": "2026-10-18T13:55:30.829Z",
- "rubrosHuella": "22ab31236a01900e5bd43dc25a968ea0bbb28e98",
- "jevHuella": "8511d08784ebbdf98646237e631bf85fa267f166",
+ "generatedAt": "2026-10-18T14:06:41.740Z",
+ "rubrosHuella": "73f8a77b5964f6becbbc0d32c3b5dac16a210e38",
+ "jevHuella": "47b0e38eed9a5f38a4e24d401417bcf414cfdbef",
  "modelo": "claude-opus-5-5",
  "costUsd": 0,
  "rubros": [
@@ -67,7 +67,7 @@
   {
    "label": "Andere bedrijfsopbrengsten",
    "lado": "revenue",
-   "section": "estado (lectura 5: hoja)",
+   "section": "estado",
    "glosa": "Otros ingresos de explotación",
    "page": 8,
    "pendiente": false,
@@ -80,7 +80,7 @@
   {
    "label": "Niet-recurrente bedrijfsopbrengsten",
    "lado": "revenue",
-   "section": "estado (lectura 5: hoja)",
+   "section": "estado",
    "glosa": "Ingresos de explotación no recurrentes",
    "page": 8,
    "pendiente": false,
@@ -93,8 +93,8 @@
   {
    "label": "Aankopen",
    "lado": "expense",
-   "section": "estado (lectura 5: hoja)",
-   "glosa": "Aprovisionamientos",
+   "section": "estado",
+   "glosa": "Compras",
    "page": 8,
    "pendiente": false,
    "ya": "other_expenses",
@@ -110,8 +110,8 @@
   {
    "label": "Voorraad: afname (toename) (+)/(-)",
    "lado": "expense",
-   "section": "estado (lectura 5: hoja)",
-   "glosa": "Variación de existencias: disminución (aumento) (+)/(-)",
+   "section": "estado (lectura 4: signo impreso, resta en su lado)",
+   "glosa": "Existencias: disminución (aumento) (+)/(-)",
    "page": 8,
    "pendiente": false,
    "ya": "other_expenses",
@@ -123,8 +123,8 @@
   {
    "label": "Diensten en diverse goederen",
    "lado": "expense",
-   "section": "estado (lectura 5: hoja)",
-   "glosa": "Servicios exteriores y bienes diversos",
+   "section": "estado",
+   "glosa": "Servicios y bienes diversos",
    "page": 8,
    "pendiente": false,
    "ya": "other_expenses",
@@ -154,7 +154,7 @@
    "label": "Werkgeversbijdragen voor sociale verzekeringen",
    "lado": "expense",
    "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
-   "glosa": "Cotizaciones patronales a la seguridad social",
+   "glosa": "Aportaciones patronales a la seguridad social",
    "page": 23,
    "pendiente": false,
    "ya": "wages_squad",
@@ -181,21 +181,17 @@
    "confianza": 0.6
   },
   {
-   "label": "Teruggenomen",
+   "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
    "lado": "expense",
-   "section": "nota que desglosa \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\"",
-   "glosa": "Reversiones",
-   "page": 24,
+   "section": "estado",
+   "glosa": "Provisiones para riesgos y gastos: dotaciones (aplicaciones y reversiones) (+)/(-)",
+   "page": 8,
    "pendiente": false,
-   "ya": "other_amortisation",
-   "escalon": 2,
-   "confCache": 0.5,
-   "motivo": "Reversión de deterioro de existencias/créditos, tipo previsión",
-   "jev": "other_expenses",
-   "jevConf": 0.47,
-   "desdeCache": true,
-   "categoria": "other_amortisation",
-   "confianza": 0.5
+   "ya": "exceptional_items",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "exceptional_items",
+   "confianza": 1
   },
   {
    "label": "Bedrijfsbelastingen en -taksen",
@@ -226,7 +222,7 @@
   {
    "label": "Niet-recurrente bedrijfskosten",
    "lado": "expense",
-   "section": "estado (lectura 5: hoja)",
+   "section": "estado",
    "glosa": "Gastos de explotación no recurrentes",
    "page": 8,
    "pendiente": false,
@@ -253,7 +249,7 @@
    "label": "Afschrijvingen goodwill",
    "lado": "expense",
    "section": "ajuste manual",
-   "glosa": "Amortizaciones del fondo de comercio",
+   "glosa": "Amortización del fondo de comercio",
    "page": 8,
    "pendiente": false,
    "ya": "other_amortisation",
@@ -274,6 +270,19 @@
    "jevConf": 1,
    "categoria": "depreciation",
    "confianza": 1
+  },
+  {
+   "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "expense",
+   "section": "ajuste manual",
+   "glosa": "Pérdidas por deterioro de existencias, pedidos en curso y deudores comerciales: dotaciones (reversiones) (+)/(-)",
+   "page": 8,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "other_expenses",
+   "confianza": 0.99
   }
  ]
 }

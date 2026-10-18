@@ -1,7 +1,7 @@
 {
  "md": "Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.md",
- "generatedAt": "2026-10-18T13:55:28.959Z",
- "rubrosHuella": "22ab31236a01900e5bd43dc25a968ea0bbb28e98",
+ "generatedAt": "2026-10-18T14:06:41.085Z",
+ "rubrosHuella": "73f8a77b5964f6becbbc0d32c3b5dac16a210e38",
  "rubros": [
   {
    "label": "Ticketing en abonnementen",
@@ -43,7 +43,7 @@
    "label": "Andere bedrijfsopbrengsten",
    "lado": "revenue",
    "page": 8,
-   "section": "estado (lectura 5: hoja)",
+   "section": "estado",
    "choice": "other_income",
    "confidence": 0.96,
    "desdeCache": true
@@ -52,7 +52,7 @@
    "label": "Niet-recurrente bedrijfsopbrengsten",
    "lado": "revenue",
    "page": 8,
-   "section": "estado (lectura 5: hoja)",
+   "section": "estado",
    "choice": "other_income",
    "confidence": 1,
    "desdeCache": true
@@ -61,7 +61,7 @@
    "label": "Aankopen",
    "lado": "expense",
    "page": 8,
-   "section": "estado (lectura 5: hoja)",
+   "section": "estado",
    "choice": "other_expenses",
    "confidence": 0.8,
    "desdeCache": true
@@ -70,7 +70,7 @@
    "label": "Voorraad: afname (toename) (+)/(-)",
    "lado": "expense",
    "page": 8,
-   "section": "estado (lectura 5: hoja)",
+   "section": "estado (lectura 4: signo impreso, resta en su lado)",
    "choice": "other_expenses",
    "confidence": 1,
    "desdeCache": true
@@ -79,7 +79,7 @@
    "label": "Diensten en diverse goederen",
    "lado": "expense",
    "page": 8,
-   "section": "estado (lectura 5: hoja)",
+   "section": "estado",
    "choice": "other_expenses",
    "confidence": 0.97,
    "desdeCache": true
@@ -112,15 +112,6 @@
    "desdeCache": true
   },
   {
-   "label": "Teruggenomen",
-   "lado": "expense",
-   "page": 24,
-   "section": "nota que desglosa \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\"",
-   "choice": "other_expenses",
-   "confidence": 0.47,
-   "desdeCache": true
-  },
-  {
    "label": "Bedrijfsbelastingen en -taksen",
    "lado": "expense",
    "page": 24,
@@ -142,9 +133,18 @@
    "label": "Niet-recurrente bedrijfskosten",
    "lado": "expense",
    "page": 8,
-   "section": "estado (lectura 5: hoja)",
+   "section": "estado",
    "choice": "exceptional_items",
    "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "expense",
+   "page": 8,
+   "section": "ajuste manual",
+   "choice": "player_amortisation",
+   "confidence": 1,
    "desdeCache": true
   },
   {
@@ -154,21 +154,7 @@
    "section": "ajuste manual",
    "choice": "other_amortisation",
    "confidence": 1,
-   "top3": [
-    [
-     "other_amortisation",
-     1
-    ],
-    [
-     "wages_squad",
-     0
-    ],
-    [
-     "player_amortisation",
-     0
-    ]
-   ],
-   "tokens": 1045
+   "desdeCache": true
   },
   {
    "label": "Afschrijvingen materiële vaste activa",
@@ -177,32 +163,18 @@
    "section": "ajuste manual",
    "choice": "depreciation",
    "confidence": 1,
-   "top3": [
-    [
-     "depreciation",
-     1
-    ],
-    [
-     "wages_squad",
-     0
-    ],
-    [
-     "player_amortisation",
-     0
-    ]
-   ],
-   "tokens": 1089
+   "desdeCache": true
   },
   {
-   "label": "Afschrijvingen immateriële vaste activa (spelers)",
+   "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
    "lado": "expense",
    "page": 8,
-   "section": "ajuste manual",
-   "choice": "player_amortisation",
+   "section": "estado",
+   "choice": "exceptional_items",
    "confidence": 1,
    "top3": [
     [
-     "player_amortisation",
+     "exceptional_items",
      1
     ],
     [
@@ -210,11 +182,34 @@
      0
     ],
     [
-     "player_impairment",
+     "player_amortisation",
      0
     ]
    ],
-   "tokens": 1133
+   "tokens": 1119
+  },
+  {
+   "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "expense",
+   "page": 8,
+   "section": "ajuste manual",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1220
   }
  ]
 }
