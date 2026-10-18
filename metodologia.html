@@ -30,6 +30,10 @@
   li{margin-bottom:4px;font-size:15px;}
   a{color:var(--azul);}
   .ej{background:#f4f6fa;border-radius:10px;padding:12px 14px;font-size:14.5px;overflow-wrap:anywhere;}
+  .tabla{overflow-x:auto;margin:0 0 12px;}
+  table{border-collapse:collapse;width:100%;font-size:14px;}
+  th,td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid var(--border);}
+  th{color:var(--muted);font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.04em;}
   .volver{display:inline-block;margin-top:24px;font-size:14px;}
   footer{max-width:1040px;margin:0 auto;padding:20px 16px;color:var(--muted);font-size:12.5px;}
   @media (max-width:640px){ nav.indice{position:static;max-width:none;} h1{font-size:28px;} }
@@ -47,6 +51,7 @@
     <a href="#deuda">Deuda y caja</a>
     <a href="#estimados">Estimados</a>
     <a href="#auditoria">Quién auditó cada balance</a>
+    <a href="#externas">Fuentes externas</a>
     <a href="#citar">Cómo citar</a>
   </nav>
   <main>
@@ -112,6 +117,24 @@
       <h2>Quién auditó cada balance</h2>
       <p>Cuando lo revisamos, cada ejercicio dice qué auditor firmó el informe y qué opinó: sin salvedades, con salvedades, opinión
       adversa o sin opinión, y si advierte una duda sobre la continuidad del club.</p>
+    </section>
+
+    <section id="externas">
+      <h2>Fuentes externas</h2>
+      <p>Lo que no sale de los documentos de los clubes viene de estas fuentes, cada una con sus propias condiciones:</p>
+      <div class="tabla"><table>
+        <thead><tr><th>Dato</th><th>Fuente</th><th>Condiciones</th></tr></thead>
+        <tbody>
+          <tr><td>Ligas, estadio, capacidad, sponsor y marca</td><td>Wikipedia, en la versión que se leyó (cada dato la linkea)</td>
+            <td><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">CC BY-SA 4.0</a></td></tr>
+          <tr><td>Presidentes de cada club</td><td>Wikipedia y prensa, con el link en cada gestión</td><td>CC BY-SA 4.0 la parte de Wikipedia</td></tr>
+          <tr><td>Tipo de cambio, cuando el balance no declara uno</td><td>BCRA, BCB (PTAX), BCE, Banco de la República (TRM), SII y otros
+            bancos centrales</td><td>Cada banco como fuente; se usa para convertir y no se revende</td></tr>
+          <tr><td>Deflactores</td><td>BEA (EE.UU.) y Eurostat (zona euro)</td><td>Dominio público / reuso libre con cita</td></tr>
+          <tr><td>Colores de cada club</td><td><a href="https://www.footylogos.com/">footylogos.com</a></td><td>Con crédito</td></tr>
+        </tbody>
+      </table></div>
+      <p>El Formato simplificado se publica bajo CC BY-NC 4.0: ver <a href="terminos.html">Términos</a>.</p>
     </section>
 
     <section id="citar">
