@@ -290,6 +290,19 @@ Object.assign(window.CLUB_AUDITORIA, {
     "linea": 8207
    }
   },
+  "2013": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/AS Roma/AS-Roma-relazione-revisione-consolidato-2013.md",
+    "linea": 42
+   }
+  },
   "2014": {
    "auditor": {
     "nombre": "BDO",
@@ -392,6 +405,45 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2021.md",
     "linea": 9297
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "Deloitte",
+    "tipo": "firma",
+    "legal": "Deloitte & Touche S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/AS Roma/AS-Roma-relazione-revisione-consolidato-2023.md",
+    "linea": 31
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "Deloitte",
+    "tipo": "firma",
+    "legal": "Deloitte & Touche S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/AS Roma/AS-Roma-relazione-revisione-consolidato-2024.md",
+    "linea": 30
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO Italia S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/AS Roma/AS-Roma-relazione-revisione-consolidato-2025.md",
+    "linea": 34
    }
   }
  },
