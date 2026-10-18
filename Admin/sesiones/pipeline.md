@@ -39,7 +39,6 @@ La sesión principal pasa esto a CHANGELOG, TODO y ESTADO al mergear, y después
   por documento porque rehace el .md con Mistral). Quedan 481 .md así (Bélgica 268, Colombia 208).
 - **Lo que queda del 233 y el 230 se reemplaza** por la Batch API (hecha) y Opus → Sonnet. Jev no sirve para localizar (máximo 255
   opciones por pregunta y no sigue matices); queda para opciones cerradas y cortas.
-- **`pedirJev` está dos veces** si se vuelve a usar en otra tool (la copia de `caja-deuda.mjs` es la única viva hoy).
 - **Merge:** esta rama agrega líneas a `Admin/registros/ajustes-manuales.jsonl` y `claude-api.jsonl`; si la otra rama también, el conflicto
   es de líneas agregadas al final y se resuelve con las de las dos.
 
