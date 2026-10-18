@@ -247,3 +247,21 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
 ### Qué queda (para TODO)
 
 - Borrar el 282 en Ligas: queda solo el dato (más entidades organizadoras, to-do 295).
+
+## Sesión 2 (2026-10-18)
+
+### Qué cambió (para CHANGELOG)
+
+- To-do 303: borrada la pestaña Mercado de Pases (decisión de Guido: "pases no importa"). Ya no se podía abrir (no estaba en el menú
+  y `?tab=pases` volvía a Inicio), pero su HTML con la nota "(placeholder)" y los datos inventados ("Jugador A", montos de relleno) de
+  Boca, River y Racing seguían publicados. Fuera la sección de `index.html`, su código (`js/finanzas-render.js`, `js/principal.js`,
+  `pasesNetSpend` de `js/finanzas-calc.js` y su fila en la Comparar Gestiones oculta) y las claves de `data/lang/en.js`; los tres
+  `<club>PasesData` quedan `[]` como en los demás clubes. Probado en Boca, Racing y River, y en inglés, sin errores. ASSET_V 1293.
+
+### Qué queda (para TODO)
+
+- Borrar el 303.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada (ESTADO ya no nombraba Pases como pestaña visible; el "Techo del modelo" sigue nombrando Pases/Resultados/Títulos: sacar Pases).
