@@ -56,3 +56,39 @@ To-dos de la sesión, en orden: 250 (hooks), 244 (licencia), 300 (auditoría pro
 - Nuevo (sitio): la lista de ligas no muestra la cita de Wikipedia (sponsor y contexto sí): sumarla, con la licencia CC BY-SA.
 - Las sesiones que ya estaban abiertas antes del merge toman los hooks recién en una sesión nueva (o cuando Claude Code relee
   `.claude/settings.json`); los worktrees, después del fast-forward.
+
+## Después del merge del 2026-10-18
+
+### Qué cambió (para CHANGELOG)
+
+- To-do 300, auditoría programada (decisiones de Guido, 2026-10-18): tarea programada de Claude `fos-auditoria-semanal` (lunes 8:10,
+  carpeta principal, rama main; vive fuera del repo, en `~/.claude/scheduled-tasks/fos-auditoria-semanal/SKILL.md`). En orden:
+  `audit.js --quiet`; el dashboard de usuarios y visitas (`tools/dashboard-usuarios.mjs` y subir sus 4 archivos); el tablero del pipeline
+  (`tools/tablero.mjs` y subir sus CSV); la auditoría de rutina de la skill `auditoria-finance-of-sports` con UN eje rotando (sin `codigo`,
+  que necesita el sitio levantado; `escala` usa su skill), con el reporte en `auditorias/<fecha>.md`; y un subagente Opus que propone de 3 a
+  5 mejoras con lo que pasó en la semana (sección "Sugerencias de mejora" del reporte). Commitea solo el reporte. NO escribe el TODO: lo
+  que va ahí queda en la sección "Para TODO" del reporte, para la principal. Avisa SIEMPRE con una línea (todo bien o qué falló).
+  Sin `auditAll()` en el navegador: `audit.js` hace los mismos tie-outs con el mismo motor (P0 `no-cierra`) y el preview choca con el
+  puerto fijo de otras sesiones.
+- `tools/dashboard-usuarios.mjs` (nuevo, gratis): corre `stats.mjs --json` y `cloudflare-visitas.mjs --json`, escribe los 4 archivos del
+  dashboard en `Generados/dashboard-usuarios/` (en `.gitignore`) y mira las corridas del Worker `fos-supabase-ping` en los últimos 7 días
+  por la API GraphQL de Cloudflare (el token de Web Analytics alcanza). Sin corridas o con errores: ALERTA y código 1. Probado: los 4
+  archivos subidos al dashboard el 2026-10-18 (fuentes en versión 2).
+
+### Qué deja de ser cierto en ESTADO
+
+- La línea del dashboard de usuarios dice que "se actualiza a mano": ahora lo actualiza la tarea semanal `fos-auditoria-semanal`
+  (`tools/dashboard-usuarios.mjs`). Sumar una línea con la tarea y lo que hace (arriba).
+
+### Qué queda (para TODO)
+
+- 300 y 268: se borran. La primera corrida de la tarea (lunes 2026-10-20) confirma el cron del Worker del 19/10 (la línea "Worker
+  fos-supabase-ping" del aviso); si dice ALERTA, el 268 (a) vuelve.
+- La tarea necesita `tools/dashboard-usuarios.mjs` en main antes del lunes 8:10.
+- La primera corrida puede frenar pidiendo permiso para subir a los artifacts: los permisos que Guido apruebe en una corrida quedan
+  guardados para las siguientes ("Run now" en Programadas los aprueba de antemano, con el costo de una corrida entera).
+- Trampa de los worktrees (para CONVENCIONES o worktree.md): `audit.js` puede dar P1 `faltantes-desfasado` en un worktree porque
+  `data/faltantes/` depende de archivos que git ignora (PDFs) que la principal bajó después de `preparar`. Se arregla volviendo a correr
+  `node tools/worktree.mjs preparar <carpeta>`; el hook de commit lo frena hasta entonces.
+- El hook de docs frena también un comando que solo NOMBRA uno de los tres documentos junto a una escritura (un heredoc a la nota de la
+  sesión que menciona el TODO): en ese caso, escribir con Edit/Write.
