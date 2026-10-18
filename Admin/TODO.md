@@ -25,18 +25,16 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 305, 254 + 243 · finanzas 281, 282, 294 · pipeline 290, 232, 279, 286, 287, 298 (c a p), 301, 302, 306, 307 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
-datos-sourcing 273 (completar el dato), 252 · ligas 295 · Reino Unido (261) en su propia sesión · proyecto 300 · la principal: 268, 291 y los merges; el 246 va
+datos-sourcing 273 (completar el dato), 252 · ligas 295 · Reino Unido (261) en su propia sesión · la principal: 291 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
 Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
-* 268: dashboard de usuarios y visitas: confirmar el cron (19/10) y que se actualice solo
 * 290 y 291: caja y deuda, lo que queda (Genoa 2022 y la duda del factoring)
 * 292: transcripciones por subagentes de los 6 países: validar, Mistral y cargar
 
 **B. Bases baratas que después cuestan caro cambiar**
-* 300: auditoría programada semanal (y el dashboard al día)
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos)
 
 **C. Abaratar antes del onboarding grande**
@@ -223,10 +221,6 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    Pendiente de mirar: Ferroviária 2023-2025, "Partes relacionadas" no corriente (3.844.165) puede ser un préstamo de una parte
    relacionada (con el criterio de socios, contaría); hoy la deuda es solo "Empréstimos".
 
-268. MI CUENTA Y EL DASHBOARD DE USUARIOS Y VISITAS (pedido de Guido, 2026-10-17). Falta: (a) confirmar la primera corrida del cron
-   del Worker fos-supabase-ping el 2026-10-19 12 UTC (Cloudflare → fos-supabase-ping → Logs); (b) que el dashboard
-   https://claude.ai/artifact/7kPta8U7BxyiGRKAyayHhA se actualice solo (hoy: correr tools/supabase/stats.mjs --json y
-   tools/cloudflare-visitas.mjs --json y subir los archivos; se puede programar).
 273. ESTADIO Y SPONSOR: LO QUE QUEDA (pedido de Guido, 2026-10-18). El dato está en main (`data/contexto/<iso>.js`, `tools/estadio-sponsor.mjs`,
    lo manual en `tools/contexto-manual.json` con fuente) y `cargar.mjs` no escribe un año nuevo sin estadio y sponsor. Falta: completar a
    mano los ~140 ejercicios ya cargados sin estadio o sin sponsor (casi todos sin sponsor: ascensos y años viejos sin tabla de kits;
@@ -291,10 +285,6 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    entre una sola. l) a p) más casos de onboarding (reportType por año de un club existente, perímetro de la carga, año vecino con
    perímetros distintos, ceros reales y perfil que se repreguntan): el detalle, en el cierre de onboarding. k) alta-club.mjs / cargar-lote.mjs escriben la liga del alta en null aunque
    `altas-revision.jsonl` traiga las ligas verificadas (las 17 altas de los lotes 89-90): que el alta las tome de la revisión.
-300. AUDITORÍA PROGRAMADA (pedido de Guido, 2026-10-18). Una tarea programada semanal en la Mac de Guido que corra `node tools/audit.js` y
-   `auditAll()` (preview con `?audit=1`), actualice el dashboard de usuarios y visitas (tools/supabase/stats.mjs y tools/cloudflare-visitas.mjs,
-   cierra lo que queda del 268), actualice el tablero del pipeline (`node tools/tablero.mjs` y subir los 6 CSV, ver su cabecera) y avise
-   solo si algo sale de P0 0 / P1 0 o un año deja de cerrar.
 301. gasto.mjs --json SE CORTA EN UN PIPE (visto armando el tablero, 2026-10-18). `node tools/gasto.mjs --json | …` corta la salida a los
    64 KB: el proceso sale antes de vaciar stdout. Mejora de script chica.
 302. DEFLACTOR DE EE.UU. DESDE LA BEA (cierre de proyecto, 2026-10-18). FRED prohíbe el scraping y guardar copias: bajarlo directo de la BEA

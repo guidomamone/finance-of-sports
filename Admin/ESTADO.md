@@ -232,7 +232,11 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 - MI CUENTA: Supabase en plan gratis (se pausa tras 7 días sin uso). Lo mantiene despierto el Worker `fos-supabase-ping` (cron cada 3 días,
   llama a ping()); si igual se cae, la pestaña avisa "no disponible". Cómo se usa: `node tools/supabase/stats.mjs` (llama a stats(), solo
   cantidades). Las visitas: `node tools/cloudflare-visitas.mjs` (Web Analytics; el plan gratis muestrea de a 10, así que son estimadas; necesita `Admin/api-keys/cloudflare.env`). Los dos alimentan el dashboard
-  de Claude https://claude.ai/artifact/7kPta8U7BxyiGRKAyayHhA, que se actualiza a mano (no hay conector para Supabase ni Cloudflare).
+  de Claude https://claude.ai/artifact/7kPta8U7BxyiGRKAyayHhA. Lo actualiza la tarea programada `fos-auditoria-semanal` (lunes 8:10,
+  carpeta principal; vive en `~/.claude/scheduled-tasks/`): `audit.js --quiet`, `tools/dashboard-usuarios.mjs` (arma y sube los 4 archivos y
+  mira las corridas del Worker de los últimos 7 días: sin corridas o con errores, ALERTA), el tablero del pipeline, la auditoría de rutina con un
+  eje rotando y de 3 a 5 sugerencias de mejora. Commitea solo `auditorias/<fecha>.md`; lo que va al TODO queda en su sección "Para TODO", para
+  la principal. Avisa siempre con una línea.
 - Un solo motor genérico calcula Finanzas para todos los clubes (ver `Admin/ARQUITECTURA.md`); ningún club tiene motor propio. Los clubes
   nuevos nacen con el país en el `clubId` (ej. `corinthians-br`, `millonarios-co`); `tools/audit.js` lo chequea (`clubid-sin-pais`).
 - DATOS: cuántos clubes, de qué países y qué ejercicios tiene cada uno: `Admin/ESTADO-clubes.md` (generado). Solo cuentan los clubes

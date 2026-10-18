@@ -35,6 +35,10 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
   - **El número de Versión se decide al MERGEAR, no al escribir.** Las dos ramas van a querer el
     mismo. El que mergea segundo renumera su entrada; el conflicto al final de `Admin/CHANGELOG.md`
     es esperable y mecánico.
+  - **`faltantes-desfasado` en un worktree** (P1 de `audit.js`, y el hook de commit lo frena): `data/faltantes/` depende de PDFs que git
+    ignora y que la principal bajó después de `preparar`. Se arregla volviendo a correr `node tools/worktree.mjs preparar <carpeta>`.
+  - **El hook de los docs de la principal lee el texto del comando**: un Bash que solo NOMBRA `TODO.md`, `CHANGELOG.md` o `ESTADO.md` junto a
+    una escritura (un heredoc a la nota de la sesión) también se frena. En ese caso, escribir con Edit/Write.
   - **Un archivo GENERADO no se mergea a mano: se regenera.** Si hay conflicto en `Admin/sourcing/README.md`,
     `fuentes.html`, `sitemap.xml`, `data/club-index.js`, `data/rankings/*.js` o
     `Admin/ESTADO-clubes.md` (el bloque CLUB-INDEX, aparte de `Admin/ESTADO.md` desde la Versión 239),

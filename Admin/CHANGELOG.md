@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 739 — Merge de proyecto: auditoría programada (2026-10-18)
+
+- To-do 300: tarea programada `fos-auditoria-semanal` (lunes 8:10, carpeta principal, fuera del repo): `audit.js --quiet`, dashboard de
+  usuarios y visitas, tablero del pipeline, auditoría de rutina con un eje rotando y de 3 a 5 sugerencias de mejora; commitea solo el
+  reporte en `auditorias/` y deja lo del TODO para la principal. Sin `auditAll()` (audit.js hace los mismos tie-outs).
+- `tools/dashboard-usuarios.mjs` (nuevo): arma los 4 archivos del dashboard en `Generados/dashboard-usuarios/` (ignorado) y mira las
+  corridas del Worker `fos-supabase-ping` de los últimos 7 días (sin corridas o con errores: ALERTA). Cierra el 268.
+- CONVENCIONES: `faltantes-desfasado` en un worktree se arregla con `preparar`; el hook de docs frena un comando que solo los nombra.
+
 ## Versión 738 — Merges de pipeline y pantallas; caja y deuda de Leipzig y HSV (2026-10-18)
 
 Pipeline a mano (los `.jsonl` con las líneas de las dos ramas), pantallas con su `index.html`; ASSET_V 1295, P0 0 / P1 0.
