@@ -665,6 +665,19 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "oficrete-gr": {
+  "2018": {
+   "auditor": {
+    "nombre": "Crowe",
+    "tipo": "firma",
+    "legal": "ΣΟΛ Α.Ε. (Crowe)"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Grecia/OFI Crete/OFI_auditor_report_2018-06-30.md",
+    "linea": 19
+   }
+  },
   "2019": {
    "auditor": {
     "nombre": "Crowe",
