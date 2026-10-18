@@ -91,3 +91,18 @@
 ### Qué deja de ser cierto en ESTADO
 
 - La tarjeta Estructura de Finanzas suma los ingresos de las otras entidades del club (to-do 281), donde el registro los tiene.
+
+### 282, el dato (piloto)
+
+- Qué cambió: registro `Admin/registros/auditoria.jsonl` (una línea por club y año con balance: auditor y su tipo, dictamen con
+  vocabulario provisorio, continuidad aparte, citas del .md) y `tools/auditoria.mjs`, que arma los extractos para el subagente
+  (`--extractos`, en `Generados/auditoria/`), lista los pendientes (`--pendientes`), verifica las citas (que el texto esté en su línea y
+  que el .md sea de ese club y año) y genera `data/auditoria/<país>.js` y `_paises.js`; `audit.js` lo corre como generador
+  (`auditoria-desfasado`, P1). Piloto de 19 balances de 16 países por subagentes Sonnet (criterio común); 2 con salvedades (Académica
+  2022, Dinamo Zagreb 2024), 2 con incertidumbre sobre la continuidad (Académica 2022, Vitória 2022), 2 sin informe (Akhmat 2022:
+  el formulario del fisco dice "Обязательный аудит: нет"; Amazonas 2024: solo el balance).
+- Decisiones de Guido (2026-10-18): el vocabulario del dictamen es provisorio y se ajusta con los casos; un auditor persona va con su
+  nombre como lo imprime el documento; la pantalla de Finanzas y de Ligas la hace pantallas, y el pipeline no da de alta un club sin
+  esta línea (pedidos a fos-pantallas y fos-pipeline con el contrato).
+- Qué queda: los 905 balances restantes por subagentes (tandas por país); Católica 2010: el índice del .md lista el informe de los
+  auditores pero la transcripción no lo trae (salta de la pág. 2 a la 3), hay que retranscribir esa parte antes de su línea.
