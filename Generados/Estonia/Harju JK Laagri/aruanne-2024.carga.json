@@ -1,22 +1,11 @@
 {
  "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2024.pdf",
- "generado": "2026-10-18T15:16:19.063Z",
- "frena": [
-  {
-   "etapa": "alta:reportType",
-   "motivo": "¿El documento trae un estado de resultados (o de recursos y gastos) anual cargable, o hay que buscar los estados en otro documento del club?"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Tulu ettevõtlusest\" -> other_income 0.7; \"Mitmesugused tegevuskulud\" -> other_expenses 0.65"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Salarios del plantel, Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-18T18:16:03.770Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-18: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 3 ejercicio(s) con un solo perímetro (individual); 3 documento(s) mirados)",
+  "\"Televisión\" en 0: real, por ajuste manual (2026-10-18, sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18))",
+  "\"Estadio\" en 0: real, por ajuste manual (2026-10-18, sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18))",
   "gestión: ningún presidente confirmado cubre 2024 (cierre 2024-12-31); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -37,25 +26,25 @@
    },
    {
     "rawLabel": "Tulu ettevõtlusest",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "sponsorship_commercial",
     "amountNative": 0.048202,
     "disclosureLevel": "aggregated",
     "_pag": 5,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
    {
     "rawLabel": "Mitmesugused tegevuskulud",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "lump_football_operations_expense",
     "amountNative": -0.063321,
     "disclosureLevel": "aggregated",
     "_pag": 5,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Muud kulud",
@@ -78,6 +67,14 @@
    "assetSales": 0,
    "netInterest": 0.000002,
    "tax": 0,
+   "sinDesglose": [
+    {
+     "renglon": "Mitmesugused tegevuskulud",
+     "lado": "expense",
+     "importe": 0.063321,
+     "motivo": "Claude 2026-10-18 (subagente Sonnet): Igual que 66fbf41: 'Mitmesugused tegevuskulud' (63.321) es el único gasto operativo, sin nota que lo abra ni personal; se carga como bolsón sin desglosar. Cierra: 63.321+664 (Muud kulud)=63.985 = total impreso. Alternativa: other_expenses. Confirmar junto con 66fbf41. [aruanne-2024.md L97-99 ('Mitmesugused tegevuskulud -63 321', 'Kokku kulud -63 985'); Lisa 4 L218 'ei ole töötajaid']"
+    }
+   ],
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 0.050702,
@@ -105,7 +102,38 @@
  },
  "clubId": "harjujklaagri-ee",
  "year": 2024,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2024.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L87) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2024.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2024.pdf",
+   "campo": "cero-real",
+   "valor": "Estadio",
+   "linea": null,
+   "motivo": "sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
  "seleccion": {
   "filas": 5,
   "notasUsadas": [],
@@ -134,12 +162,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado)",
    "signoFijo": 0.048202,
-   "cat": "other_income",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): No es 'Otros ingresos': la Lisa 3 abre la línea y es toda 'Reklaamitulu' (48.202 = 48.202). Publicidad = sponsorship_commercial. Se puede cargar como renglón 'Tulu ettevõtlusest' o con su detalle 'Reklaamitulu' (misma categoría). [aruanne-2024.md L94 'Tulu ettevõtlusest 48 202'; L207-213 Lisa 3 'Reklaamitulu 48 202']",
    "destino": "revenue",
    "amountNative": 0.048202
   },
@@ -150,12 +178,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 0.063321,
-   "cat": "other_expenses",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Igual que 66fbf41: 'Mitmesugused tegevuskulud' (63.321) es el único gasto operativo, sin nota que lo abra ni personal; se carga como bolsón sin desglosar. Cierra: 63.321+664 (Muud kulud)=63.985 = total impreso. Alternativa: other_expenses. Confirmar junto con 66fbf41. [aruanne-2024.md L97-99 ('Mitmesugused tegevuskulud -63 321', 'Kokku kulud -63 985'); Lisa 4 L218 'ei ole töötajaid']",
    "destino": "expense",
    "amountNative": -0.063321
   },
@@ -184,20 +212,6 @@
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
    "destino": "netInterest"
-  }
- ],
- "reintentar": [
-  {
-   "categoria": "Salarios del plantel",
-   "lado": "gasto"
-  },
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
   }
  ],
  "signos": {
@@ -253,8 +267,8 @@
   },
   "reportType": {
    "valor": "official_balance_sheet",
-   "fuente": "el .md no tiene ninguna palabra de estado contable reconocible",
-   "estado": "pregunta"
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L87) (Claude 2026-10-18)",
+   "estado": "ok"
   },
   "perimetro": {
    "valor": "individual",
@@ -283,8 +297,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 3,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 2,
   "lineasGasto": 2,
   "metaFilas": 1,

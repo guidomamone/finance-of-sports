@@ -1,22 +1,11 @@
 {
  "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.pdf",
- "generado": "2026-10-18T15:16:18.998Z",
- "frena": [
-  {
-   "etapa": "alta:reportType",
-   "motivo": "¿El documento trae un estado de resultados (o de recursos y gastos) anual cargable, o hay que buscar los estados en otro documento del club?"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Tulu ettevõtlusest\" -> other_income 0.7; \"Mitmesugused tegevuskulud\" -> other_expenses 0.65"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Salarios del plantel, Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-18T18:16:03.682Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del club, 2026-10-18: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 3 ejercicio(s) con un solo perímetro (individual); 3 documento(s) mirados)",
+  "\"Televisión\" en 0: real, por ajuste manual (2026-10-18, sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18))",
+  "\"Estadio\" en 0: real, por ajuste manual (2026-10-18, sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18))",
   "gestión: ningún presidente confirmado cubre 2023 (cierre 2023-12-31); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -27,25 +16,25 @@
   "revenueLines": [
    {
     "rawLabel": "Tulu ettevõtlusest",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "sponsorship_commercial",
     "amountNative": 0.168999,
     "disclosureLevel": "aggregated",
     "_pag": 5,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
    {
     "rawLabel": "Mitmesugused tegevuskulud",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "lump_football_operations_expense",
     "amountNative": -0.063521,
     "disclosureLevel": "aggregated",
     "_pag": 5,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -58,6 +47,14 @@
    "assetSales": 0,
    "netInterest": 0.000123,
    "tax": 0,
+   "sinDesglose": [
+    {
+     "renglon": "Mitmesugused tegevuskulud",
+     "lado": "expense",
+     "importe": 0.063521,
+     "motivo": "Claude 2026-10-18 (subagente Sonnet): Único gasto del año (63.521), sin ninguna nota que lo abra y sin personal ('no tiene trabajadores'): es un monto real que la fuente no separó, que el 2025 muestra que incluye pagos a jugadores/técnicos, traslados, medicina, traspasos. other_expenses lo escondería en 'Otros gastos' y haría ver $0 en  [aruanne-2023.md L93 'Mitmesugused tegevuskulud -63 521'; Lisa 2 L181 'Raamatupidamiskohustuslasel ei ole töötajaid'; sin notas de gastos en L145-212]"
+    }
+   ],
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 0.168999,
@@ -95,6 +92,36 @@
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"### Tulemiaruanne\", .md L84) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.pdf",
+   "campo": "cero-real",
+   "valor": "Estadio",
+   "linea": null,
+   "motivo": "sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
   }
  ],
  "seleccion": {
@@ -110,12 +137,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado)",
    "signoFijo": 0.168999,
-   "cat": "other_income",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): No es 'Otros ingresos': todo 'Tulu ettevõtlusest' es publicidad. El documento 2023 no trae notas, pero el 2024 abre su Lisa 3 y la columna 09.01.2023-31.12.2023 es 'Reklaamitulu 168 999' = el 100% de la línea (mismo monto exacto). Se usa el desglose solo para la naturaleza; el monto sale del propio  [aruanne-2023.md L90 'Tulu ettevõtlusest 168 999'; aruanne-2024.md L210-213 (Lisa 3: 'Reklaamitulu 48 202 | 168 999')]",
    "destino": "revenue",
    "amountNative": 0.168999
   },
@@ -126,12 +153,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 0.063521,
-   "cat": "other_expenses",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Único gasto del año (63.521), sin ninguna nota que lo abra y sin personal ('no tiene trabajadores'): es un monto real que la fuente no separó, que el 2025 muestra que incluye pagos a jugadores/técnicos, traslados, medicina, traspasos. other_expenses lo escondería en 'Otros gastos' y haría ver $0 en  [aruanne-2023.md L93 'Mitmesugused tegevuskulud -63 521'; Lisa 2 L181 'Raamatupidamiskohustuslasel ei ole töötajaid'; sin notas de gastos en L145-212]",
    "destino": "expense",
    "amountNative": -0.063521
   },
@@ -145,20 +172,6 @@
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
    "destino": "netInterest"
-  }
- ],
- "reintentar": [
-  {
-   "categoria": "Salarios del plantel",
-   "lado": "gasto"
-  },
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
   }
  ],
  "signos": {
@@ -214,8 +227,8 @@
   },
   "reportType": {
    "valor": "official_balance_sheet",
-   "fuente": "el .md no tiene ninguna palabra de estado contable reconocible",
-   "estado": "pregunta"
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): majandusaasta aruanne anual con estado de resultados (\"### Tulemiaruanne\", .md L84) (Claude 2026-10-18)",
+   "estado": "ok"
   },
   "perimetro": {
    "valor": "individual",
@@ -244,8 +257,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 3,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 1,
   "lineasGasto": 1,
   "metaFilas": 1,
