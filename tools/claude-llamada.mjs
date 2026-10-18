@@ -62,9 +62,10 @@ async function leerStream(res) {
 }
 
 // Lo que se hace con una respuesta de la API (directa o de la Batch API): registro, costo y { datos } / { error }.
-function procesar(j, { tarea, pdf, t0, factor = 1 }) {
+// `registrar: false` en el modo batch: el costo ya lo anotó claude-batch.mjs al recoger el envío (una vez por pedido).
+function procesar(j, { tarea, pdf, t0, factor = 1, registrar = true }) {
   const costo = costOf(MODELO, j.usage) * factor;
-  appendFileSync(resolve(ROOT, 'Admin', 'registros', 'api', 'claude-api.jsonl'), JSON.stringify({ ts: new Date().toISOString(), tarea, pdf, model: j.model, promptTokenCount: j.usage?.input_tokens, cacheReadTokens: j.usage?.cache_read_input_tokens, candidatesTokenCount: j.usage?.output_tokens, costUsd: Number(costo.toFixed(6)), elapsedMs: Date.now() - t0, stopReason: j.stop_reason, ...(factor !== 1 ? { batch: true } : {}) }) + '\n');
+  if (registrar) appendFileSync(resolve(ROOT, 'Admin', 'registros', 'api', 'claude-api.jsonl'), JSON.stringify({ ts: new Date().toISOString(), tarea, pdf, model: j.model, promptTokenCount: j.usage?.input_tokens, cacheReadTokens: j.usage?.cache_read_input_tokens, candidatesTokenCount: j.usage?.output_tokens, costUsd: Number(costo.toFixed(6)), elapsedMs: Date.now() - t0, stopReason: j.stop_reason, ...(factor !== 1 ? { batch: true } : {}) }) + '\n');
   if (j.stop_reason === 'refusal') return { error: `refusal: ${JSON.stringify(j.stop_details)}`, costo };
   if (j.stop_reason === 'max_tokens') return { error: 'respuesta cortada por el tope de salida (max_tokens)', costo };
   const texto = (j.content || []).filter((c) => c.type === 'text').map((c) => c.text).join('');
@@ -77,7 +78,7 @@ export async function llamarClaude({ system, user, schema, tarea, pdf = null, es
   if (enBatch() && !stream) {
     const id = idBatch(body);
     const r = respuestaBatch(id);
-    if (r?.mensaje) return procesar(r.mensaje, { tarea, pdf, t0: Date.now(), factor: FACTOR_BATCH });
+    if (r?.mensaje) return procesar(r.mensaje, { tarea, pdf, t0: Date.now(), factor: FACTOR_BATCH, registrar: false });
     if (r?.error) return { error: `Batch API: ${r.error}`, costo: 0 };
     anotarEnCola(id, body, tarea, pdf); return { pendiente: true, costo: 0 };
   }

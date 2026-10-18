@@ -20,10 +20,14 @@
 import { spawnSync } from 'node:child_process';
 import { resolve } from 'node:path';
 import { enviarColaBatch, pendientesEnCola } from './claude-batch.mjs';
+import { tomarCandado } from './candado.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const args = process.argv.slice(2);
 if (args.includes('--reintentar')) { console.error('lote-batch.mjs no acepta --reintentar: esos documentos van con node tools/lote.mjs --reintentar (ver la cabecera).'); process.exit(1); }
+// UNA CORRIDA A LA VEZ (2026-10-17, prueba de Rapid Wien: el mismo comando lanzado dos veces mandó cada pedido dos veces). Candado propio: el
+// lote.mjs hijo toma el de siempre (Admin/registros/.candado.lock). Un candado de una corrida cortada se reemplaza con aviso (candado.mjs).
+tomarCandado('lote-batch.mjs', { lista: args[args.indexOf('--lista') + 1] || null, modo: args.includes('--ejecutar') ? '--ejecutar' : 'ensayo', archivo: resolve(ROOT, 'Generados', '_cache', 'claude-batch.lock') });
 const env = { ...process.env, FOS_CLAUDE_BATCH: '1' };
 const pasada = () => spawnSync('node', [resolve(ROOT, 'tools/lote.mjs'), ...args], { cwd: ROOT, stdio: 'inherit', env }).status;
 

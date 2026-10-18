@@ -30,18 +30,20 @@ const vivo = (pid, herramienta) => {
   return cmd.includes(herramienta || '.mjs');
 };
 
-export function tomarCandado(herramienta, { lista = null, modo = null } = {}) {
+// `archivo` (opcional): otro candado para una herramienta que corre lote.mjs como hija (lote-batch.mjs: el hijo toma el de siempre).
+export function tomarCandado(herramienta, { lista = null, modo = null, archivo = LOCK } = {}) {
+  const LOCK_ = archivo;
   const mio = { herramienta: basename(herramienta), pid: process.pid, lista, modo, inicio: new Date().toISOString() };
   for (let intento = 0; ; intento++) {
-    try { writeFileSync(LOCK, JSON.stringify(mio) + '\n', { flag: 'wx' }); break; } catch (err) { if (err.code !== 'EEXIST' || intento > 0) throw err; }
-    let otro = {}; try { otro = JSON.parse(readFileSync(LOCK, 'utf8')); } catch { /* candado ilegible: se trata como muerto */ }
+    try { writeFileSync(LOCK_, JSON.stringify(mio) + '\n', { flag: 'wx' }); break; } catch (err) { if (err.code !== 'EEXIST' || intento > 0) throw err; }
+    let otro = {}; try { otro = JSON.parse(readFileSync(LOCK_, 'utf8')); } catch { /* candado ilegible: se trata como muerto */ }
     const quien = otro.herramienta || 'lote.mjs';
     const desc = `PID ${otro.pid ?? '?'}${otro.lista ? `, ${otro.lista}` : ''}${otro.modo ? `, ${otro.modo}` : ''}, desde las ${hora(otro.inicio)}`;
     if (otro.pid && vivo(otro.pid, quien)) { console.error(`Ya hay un ${quien} corriendo (${desc}). Esperá a que termine; este ${mio.herramienta} no hizo nada.`); process.exit(1); }
     console.log(`Quedó el candado de un ${quien} que se cortó (${desc}): lo reemplazo. Ese ${quien} no terminó; lo que dejó a medias se completa al correrlo de nuevo.`);
-    try { unlinkSync(LOCK); } catch { /* ya no está */ }
+    try { unlinkSync(LOCK_); } catch { /* ya no está */ }
   }
-  process.on('exit', () => { try { if (JSON.parse(readFileSync(LOCK, 'utf8')).pid === process.pid) unlinkSync(LOCK); } catch { /* sin candado */ } });
+  process.on('exit', () => { try { if (JSON.parse(readFileSync(LOCK_, 'utf8')).pid === process.pid) unlinkSync(LOCK_); } catch { /* sin candado */ } });
 }
 
 // (Versión 642) Suelta el candado ANTES de terminar, solo si es de este proceso. Lo usa lote.mjs --cargar: al final del lote corre

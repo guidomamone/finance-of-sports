@@ -17,6 +17,13 @@ import { createHash } from 'node:crypto';
 const ROOT = resolve(import.meta.dirname, '..');
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 export const idBatch = (body) => createHash('sha1').update(JSON.stringify(body)).digest('hex');
+// EL COSTO SE ANOTA UNA VEZ, AL RECOGER (2026-10-17, prueba de Rapid Wien): anotarlo al USAR la respuesta lo repetía en cada pasada cuando una
+// tool encadena dos llamadas (localizar → localizar-2: la primera se vuelve a leer hasta que vuelve la segunda). Una línea por pedido
+// cobrado en Admin/registros/api/claude-api.jsonl, con el precio batch (la mitad de PRICES de categorizar-claude.mjs, copiado acá para no
+// importarlo: categorizar-claude.mjs importa este módulo). Escritura y lectura de caché como costOf: 1,25 y 0,1 de la entrada.
+const PRECIO = { 'claude-opus-5-5': { in: 4, out: 20 }, 'claude-sonnet-5-5': { in: 2, out: 10 } };
+const costoBatch = (model, u = {}) => { const p = PRECIO[model] || PRECIO['claude-opus-5-5']; const inTok = (u.input_tokens || 0) + 1.25 * (u.cache_creation_input_tokens || 0) + 0.1 * (u.cache_read_input_tokens || 0); return ((inTok * p.in + (u.output_tokens || 0) * p.out) / 1e6) * FACTOR_BATCH; };
+const registrarCosto = (m, meta, custom_id, envio) => appendFileSync(resolve(ROOT, 'Admin', 'registros', 'api', 'claude-api.jsonl'), JSON.stringify({ ts: new Date().toISOString(), tarea: meta.tarea, pdf: meta.pdf, model: m.model, promptTokenCount: m.usage?.input_tokens, cacheReadTokens: m.usage?.cache_read_input_tokens, candidatesTokenCount: m.usage?.output_tokens, costUsd: Number(costoBatch(m.model, m.usage).toFixed(6)), stopReason: m.stop_reason, batch: true, envio, custom_id }) + '\n');
 export const enBatch = () => process.env.FOS_CLAUDE_BATCH === '1';
 export const FACTOR_BATCH = 0.5;
 const CACHE_DIR = resolve(ROOT, 'Generados', '_cache');
@@ -85,7 +92,7 @@ export async function enviarColaBatch({ cadaSeg = 60, avisar = console.log } = {
     let expirados = 0;
     for (const l of txt.split('\n').filter((x) => x.trim())) {
       const r = JSON.parse(l); const meta = porId.get(r.custom_id) || {};
-      if (r.result?.type === 'succeeded') { appendFileSync(RESPUESTAS, JSON.stringify({ custom_id: r.custom_id, tarea: meta.tarea, pdf: meta.pdf, mensaje: r.result.message }) + '\n'); guardadas++; }
+      if (r.result?.type === 'succeeded') { registrarCosto(r.result.message, meta, r.custom_id, env.id); appendFileSync(RESPUESTAS, JSON.stringify({ custom_id: r.custom_id, tarea: meta.tarea, pdf: meta.pdf, mensaje: r.result.message }) + '\n'); guardadas++; }
       else if (r.result?.type === 'errored') { appendFileSync(RESPUESTAS, JSON.stringify({ custom_id: r.custom_id, tarea: meta.tarea, pdf: meta.pdf, error: JSON.stringify(r.result.error).slice(0, 300) }) + '\n'); guardadas++; }
       else expirados++; // expired / canceled: no se cobra y no se guarda; la pasada siguiente lo vuelve a anotar
     }
