@@ -184,6 +184,12 @@
 - 282 a, Italia sin documento: Napoli 2018 y 2020 (el host viejo `cdn.sscnapoli.iquii.info` no responde y Wayback no los tiene), Hellas
   Verona 2020-2024 (el sitio solo lista el último año; Wayback y las rutas probables del CDN, nada) y Bologna 2025 (Firecrawl `/map` del
   sitio no encuentra el informe). Candidatos a mail.
+- 282 a, Portugal (25: Académico de Viseu 2022-2025, Alverca 2024-2025, Casa Pia 2022, Chaves 2022-2023, Felgueiras 2024, Mafra 2024,
+  Marítimo 2021-2025, Nacional 2022-2025, Rio Ave 2016-2017, Vizela 2022, Portimonense 2022-2024): ningún canal público los tiene. Probé
+  (2026-10-18) la página de relatório e contas de cada club, la mediateca de WordPress (`search=certificacao|parecer|auditoria`),
+  Firecrawl `/map` de los once dominios, el CDX de Wayback de dominio completo y arquivo.pt. Las versiones publicadas son las mismas que
+  tenemos (mismo md5 o mismas páginas): Marítimo y Portimonense listan la Certificação Legal das Contas en el índice pero el PDF publicado
+  termina antes. Candidatos a mail al club (pedir la CLC de cada ejercicio).
 
 ### Gotcha (ya escrito en `worktree.md` con el ok de Guido)
 
