@@ -204,3 +204,22 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
 ### Qué queda (para TODO)
 
 - Borrar el 297.
+
+## Después del séptimo merge del 2026-10-18
+
+### Qué cambió (para CHANGELOG)
+
+- To-do 253: el tablero del pipeline, para abrir desde el celular: artifact de Claude tipo Dashboard, privado de Guido,
+  https://claude.ai/artifact/ESc6PC7CUbQ8wV2ETgLVdb. Muestra ejercicios en el sitio, listos para cargar, casos en la cola, gasto de API,
+  los PDFs por etapa con lo que cuesta avanzar, la cola por tipo, el gasto por día y motor, el gasto por país y los mails a clubes. Los
+  datos los arma `tools/tablero.mjs` (gratis: corre `estado.mjs` y `cola.mjs`, lee `Admin/registros/api/*.jsonl` y `Admin/outreach/`) en
+  `Generados/tablero/*.csv` (no se trackean); cómo se sube una foto nueva está en la cabecera de la tool. El gasto por país atribuye
+  también las llamadas de Claude API que traen la ruta del PDF: US$ 555 de 759. Mockup aprobado: "Tablero del pipeline" de "Pantallas FoS".
+
+### Qué queda (para TODO)
+
+- Borrar el 253. Sumar a ESTADO dónde está el tablero y cómo se actualiza (cabecera de `tools/tablero.mjs`).
+- El tablero no se actualiza solo: una sesión tiene que correr la tool y subir los CSV. Si se quiere automático, hace falta una tarea
+  programada o un paso al final de `lote.mjs` / del merge.
+- Mejora de script (vista armando el 253): `node tools/gasto.mjs --json` se corta a los 64 KB cuando la salida va por un pipe (el
+  proceso sale antes de vaciar stdout).
