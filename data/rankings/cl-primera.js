@@ -100,6 +100,60 @@ window.RANKINGS["cl-primera"] = {
         mix:[["Cuotas Sociales",0.168],["Comercial / Sponsors",5.677],["Estadio",1.937],["Televisión",6.109],["Venta de Jugadores",3.66],["Otras secciones deportivas",0.543],["Otros ingresos",0.109]] },
     ],
   },
+  2016: {
+    leagueSize: null,
+    wiki: {"t":"2015–16 Campeonato Nacional Primera División","lang":"en","at":"2026-10-18","n":16},
+    clubs: [
+      { id:"catolica-cl", revenue:17.207, reportType:"official_balance_sheet",
+        sourceId:"catolica-cl-estados-financieros-2016",
+        mix:[["Cuotas Sociales",0.174],["Comercial / Sponsors",4.814],["Estadio",2.305],["Televisión",4.514],["Venta de Jugadores",4.789],["Otras secciones deportivas",0.504],["Otros ingresos",0.105]] },
+    ],
+  },
+  2015: {
+    leagueSize: null,
+    wiki: {"t":"2014–15 Campeonato Nacional Primera División","lang":"en","at":"2026-10-18","n":18},
+    clubs: [
+      { id:"catolica-cl", revenue:14.461, reportType:"official_balance_sheet",
+        sourceId:"catolica-cl-estados-financieros-2015",
+        mix:[["Cuotas Sociales",0.125],["Comercial / Sponsors",4.067],["Estadio",1.766],["Televisión",3.729],["Venta de Jugadores",3.508],["Otras secciones deportivas",0.415],["Otros ingresos",0.852]] },
+    ],
+  },
+  2014: {
+    leagueSize: null,
+    wiki: {"t":"2013–14 Campeonato Nacional Primera División","lang":"en","at":"2026-10-18","n":18},
+    clubs: [
+      { id:"catolica-cl", revenue:15.515, reportType:"official_balance_sheet",
+        sourceId:"catolica-cl-estados-financieros-2014",
+        mix:[["Cuotas Sociales",0.135],["Comercial / Sponsors",3.799],["Estadio",1.732],["Televisión",3.89],["Venta de Jugadores",5.485],["Otras secciones deportivas",0.354],["Otros ingresos",0.12]] },
+    ],
+  },
+  2013: {
+    leagueSize: null,
+    wiki: {"t":"2013 Campeonato Nacional Primera División","lang":"en","at":"2026-10-18","n":18},
+    clubs: [
+      { id:"catolica-cl", revenue:17.44, reportType:"official_balance_sheet",
+        sourceId:"catolica-cl-estados-financieros-2013",
+        mix:[["Cuotas Sociales",0.209],["Comercial / Sponsors",3.955],["Estadio",2.515],["Televisión",4.364],["Venta de Jugadores",5.962],["Otras secciones deportivas",0.301],["Otros ingresos",0.134]] },
+    ],
+  },
+  2012: {
+    leagueSize: null,
+    wiki: {"t":"2012 Campeonato Nacional Primera División","lang":"en","at":"2026-10-18","n":18},
+    clubs: [
+      { id:"catolica-cl", revenue:15.587, reportType:"official_balance_sheet",
+        sourceId:"catolica-cl-estados-financieros-2012",
+        mix:[["Cuotas Sociales",0.231],["Comercial / Sponsors",3.364],["Estadio",2.212],["Televisión",4.369],["Venta de Jugadores",4.672],["Otras secciones deportivas",0.305],["Otros ingresos",0.434]] },
+    ],
+  },
+  2011: {
+    leagueSize: null,
+    wiki: {"t":"2011 Campeonato Nacional Primera División","lang":"en","at":"2026-10-18","n":18},
+    clubs: [
+      { id:"catolica-cl", revenue:18.891, reportType:"official_balance_sheet",
+        sourceId:"catolica-cl-estados-financieros-2011",
+        mix:[["Cuotas Sociales",0.281],["Comercial / Sponsors",2.677],["Estadio",3.686],["Televisión",3.608],["Venta de Jugadores",7.786],["Otras secciones deportivas",0.305],["Otros ingresos",0.549]] },
+    ],
+  },
   2010: {
     leagueSize: null,
     wiki: {"t":"2010 Chilean Primera División","lang":"en","at":"2026-10-18","n":18},

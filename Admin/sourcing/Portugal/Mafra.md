@@ -6,6 +6,7 @@
 - **Liga / competencia**: Liga Portugal 2 (Portugal)
 - **Entidad legal**: CD Mafra – Futebol SAD ("Prestação de Contas")
 - **Canal**: Sitio oficial del club (ver nombres de archivo).
+- **Página del canal** (la mira la revisión mensual, `tools/ejercicios-nuevos.mjs`; agregada 2026-10-18): https://cdmafrasad.pt/informacoes-e-relatorios/
 
 ## Qué se bajó (sesión 2026-10-08, año de sourcing 2023)
 

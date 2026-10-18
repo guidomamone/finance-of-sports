@@ -105,6 +105,10 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 tools/cargar.mjs (2026-10-14): null, SIN VERIFICAR (no aparece en los rosters cacheados de 2025 (gr-superleague, gr-superleague2): puede haber jugado otra división).
 ```
 
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): gr-superleague2, verificado contra la lista de equipos de "2024–25 Super League Greece 2" (Wikipedia; tools/club-league-reference/gr.json, gr-superleague2 2025). Antes: sin fila.
+```
+
 ## 2024
 
 ### Ingresos
@@ -206,6 +210,10 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 tools/cargar.mjs (2026-10-14): null, SIN VERIFICAR (no aparece en los rosters cacheados de 2023 (gr-superleague, gr-superleague2): puede haber jugado otra división).
 ```
 
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): gr-superleague2, verificado contra la lista de equipos de "2022–23 Super League Greece 2" (Wikipedia; tools/club-league-reference/gr.json, gr-superleague2 2023). Antes: sin fila.
+```
+
 ## 2022
 
 No se carga: el ejercicio va del 9/8/2021 al 30/6/2022 (primer ejercicio de la ΠΑΕ, unos 10,7 meses); está en
@@ -254,6 +262,12 @@ tools/caja-deuda.mjs (2026-10-14): cash escalón 0 (compuerta: documento siguien
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Balance completo (Σύνολο Υποχρεώσεων 207.339,00): sólo comerciales, impuestos, seguridad social y otras; sin fila de préstamos (nota 10.1.1: sin préstamos a largo plazo). Sin deuda financiera.
+```
+
+### Liga
+
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): gr-superleague2, verificado contra la lista de equipos de "2021–22 Super League Greece 2" (Wikipedia; tools/club-league-reference/gr.json, gr-superleague2 2022). Antes: sin fila.
 ```
 
 ## Fuentes

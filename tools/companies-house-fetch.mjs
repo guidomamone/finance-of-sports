@@ -7,6 +7,7 @@
 //
 // --want N  : baja los ejercicios más recientes que falten hasta que la carpeta tenga N (por año de cierre).
 // --all     : baja todos los que falten (ignora --want).
+// --list --json : la serie (fecha de cierre, tipo, páginas, URL) en una línea de JSON.
 // --years Y1,Y2 : baja solo los ejercicios que cierran en esos años (sirve con --include-small para probar si traen P&L).
 // Lee la carpeta Clubes/Inglaterra/<club>/ para saber qué años ya hay (por el nombre del archivo).
 import fs from 'node:fs';
@@ -74,6 +75,8 @@ const nowIso = new Date().toISOString().slice(0, 10);   // fechas de 2 dígitos 
 const series = [...byDate.values()].filter(s => s.date <= nowIso).sort((a, b) => b.date.localeCompare(a.date));
 
 if (listOnly || !club) {
+  // --json: la serie con la URL de cada documento, en una línea (la usa tools/ejercicios-nuevos.mjs, la revisión mensual)
+  if (args.includes('--json')) { console.log(JSON.stringify(series)); process.exit(0); }
   for (const s of series) console.log(`${s.date}\t${s.type}\t${s.pages || '?'}p\t${s.desc}`);
   console.log(`# ${series.length} ejercicios`);
   process.exit(0);

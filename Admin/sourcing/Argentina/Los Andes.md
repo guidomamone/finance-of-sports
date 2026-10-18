@@ -1,5 +1,6 @@
 # Los Andes
 
+- **Página del canal** (la mira la revisión mensual, `tools/ejercicios-nuevos.mjs`; agregada 2026-10-18): https://www.losandesoficial.com/index.php/balances
 - **Archivo oficial completo de balances, publicado directo en el propio dominio** (a diferencia de
   la mayoría del lote, este SÍ estaba online y descargable en vivo al momento de la investigación) —
   losandesoficial.com/sites/default/files/2023-12/BALANCE%20<N>.pdf. Descargados 13 PDFs reales,

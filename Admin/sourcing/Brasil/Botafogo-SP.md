@@ -1,5 +1,6 @@
 # Botafogo-SP (Botafogo Futebol S.A., Ribeirão Preto — NO es el Botafogo carioca)
 
+- **Página del canal** (la mira la revisión mensual, `tools/ejercicios-nuevos.mjs`; agregada 2026-10-18): https://botafogofutebolsa.com.br/
 **Ángulos**: sitio oficial: botafogofutebolsa.com.br ya usado, no re-chequeado · federación/regulador: FPF índice JSON (id "Botafogo", 2011-2025; ausente 2010) · Wayback CDX: no hizo falta · búsqueda web: no hizo falta · barrido: 8 ejercicios en disco (2017-2025, 2019 y 2020 ya estaban) (Sonnet) — 2026-10-03
 
 - **Club nuevo esta sesión, y el que motivó la corrección de atribución explicada arriba.** Club

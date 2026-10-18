@@ -6,6 +6,7 @@
 - **Liga / competencia**: Liga Portugal 3 (Portugal)
 - **Entidad legal**: União Desportiva de Leiria – Futebol SAD (y el clube)
 - **Canal**: Sitio oficial del club (ver nombres de archivo).
+- **Página del canal** (la mira la revisión mensual, `tools/ejercicios-nuevos.mjs`; agregada 2026-10-18): https://www.uniaodeleiria.pt/
 
 ## Qué se bajó (sesión 2026-10-08, año de sourcing 2023)
 

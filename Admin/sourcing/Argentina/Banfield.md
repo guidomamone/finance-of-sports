@@ -1,5 +1,6 @@
 # Banfield
 
+- **Página del canal** (la mira la revisión mensual, `tools/ejercicios-nuevos.mjs`; agregada 2026-10-18): https://clubabanfield.org/
 **Ángulos**: sitio oficial: agotado (wp-json `balance`/`memoria`/`ejercicio` sin novedad) · Wayback
 CDX: agotado (0 PDFs de balance nuevos en 2026, solo los 2 informes de mercado de pases ya
 conocidos) · búsqueda web: agotado (video del 105° sigue sin confirmarse, ver abajo) · regulador/

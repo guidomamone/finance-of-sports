@@ -131,3 +131,73 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
 
 - 252: las 37 notas de sourcing sin URL del canal (la tarea las marca "a revisar" todos los meses): agregarles la URL.
 - 252: los 14 clubes con el PDF del ejercicio siguiente ya bajado y sin cargar (los lista `node tools/ejercicios-nuevos.mjs`): onboarding.
+
+## Después del tercer merge del 2026-10-18
+
+- **252: Dinamarca sin URL, resuelto por el canal y no por la nota.** El canal danés es la API del registro (`distribution.virk.dk`, por
+  CVR), no una página. `ejercicios-nuevos.mjs` saca el CVR de la nota ("CVR 83 83 99 10", con espacios) y pide el informe anual
+  (AARSRAPPORT, no el semestral) del ejercicio que cierra en la fecha esperada; lo baja como `aarsrapport-AAAA-MM-DD.<pdf|xhtml>`, el
+  nombre que ya usa la carpeta. "Ya bajado" reconoce también la fecha de cierre o la temporada en el nombre (SønderjyskE pasó de junio a
+  septiembre: "aarsrapport-2022-2023-09-30-transicion"). Los 11 clubes daneses ya tienen el informe del ejercicio siguiente en su carpeta.
+- El script nombra los clubes con el PDF ya bajado y sin cargar (consola y una línea del README), y una segunda corrida el mismo día
+  reemplaza el bloque de ese día. Corrida de hoy: 26 ya bajados sin cargar, 34 a revisar con el navegador (antes 45), 0 nuevos.
+
+### Qué queda (TODO)
+
+- 252: la nota de Unión Magdalena (Colombia) sin URL del canal (Colombia es de fos-onboarding).
+- 26 clubes con el PDF del ejercicio siguiente ya bajado y sin cargar (los lista `node tools/ejercicios-nuevos.mjs`): onboarding.
+- **252: Inglaterra y Alemania, también por el canal.** Reino Unido: el número de Companies House de la nota ("Companies House n° 04250459";
+  en Arsenal el del grupo) y `tools/companies-house-fetch.mjs --list --json` (salida nueva: la serie con fecha de cierre, tipo y URL); el
+  ejercicio que cierra en la fecha esperada se baja con el nombre que ya usa la carpeta (`<slug>-<group|full>-accounts-<temporada>.pdf`).
+  Arsenal, Liverpool y West Ham 2025-26 todavía no se presentaron (Companies House da 9 meses: llegan hacia febrero de 2027). Alemania: el
+  Unternehmensregister pide un formulario con sesión, así que el club queda "a revisar con el navegador" con la razón social exacta a buscar
+  (Mönchengladbach, Stuttgart). Nueva línea del README y de la consola: "el registro todavía no lo publicó".
+- **252: Portugal.** Las 9 notas sin URL ganaron una línea "**Página del canal**" (Académica `academica-oaf.pt/relatorio-de-contas/`,
+  Chaves `gdchaves.pt/documentos/`, Torreense `torreense.com/sad`, Mafra `cdmafrasad.pt/informacoes-e-relatorios/` (confirmada por el
+  mismo nombre de PDF que ya teníamos), y la home de AVS, Boavista, Felgueiras, Tondela y União de Leiria). Las páginas que faltaban salieron
+  con Exa (Wayback CDX estaba caído). El script además mira la mediateca de WordPress del dominio, reconoce "ya bajado" por los dos años
+  de la temporada en el nombre ("JUL2024-A-JUN2025", "Epoca-20242025") y anota como "revisado, todavía no publicado" a un club cuya
+  página se leyó sin el PDF. Hallazgo: **Torreense 2024-25** (`Clubes/Portugal/Torreense/sad_relatoriocontas2024-2025v2.pdf`, **copiado
+  con rsync a la carpeta principal**; ahí `data/faltantes/` queda viejo hasta el merge, que lo regenera). Corrida de hoy: 1 nuevo, 28 ya
+  bajados sin cargar, 23 a revisar con el navegador, 11 revisados sin publicar. ASSET_V 1274.
+- **252: Argentina.** "Página del canal" en las 4 notas (Almagro `clubalmagro.com.ar`, Banfield `clubabanfield.org`, Ferro
+  `ferrocarriloeste.org.ar`, Los Andes `losandesoficial.com/index.php/balances`). El script ahora: (a) reconoce el NÚMERO de ejercicio que
+  sigue ("BALANCE 106.pdf" en Los Andes), aprendido del desfase número/año de los archivos de la carpeta ("balance-ejercicio-105-2020-21");
+  (b) mira el texto del link y el título de la mediateca, no solo el nombre del archivo (Ferro sube con nombres opacos); (c) prueba la
+  mediateca de WordPress aunque la página se arme con JavaScript (Banfield). Resultado: Ferro 2024 ya bajado, Los Andes y Banfield
+  revisados sin publicar, Almagro a revisar (el sitio no responde; sus PDFs solo están en Wayback). Corrida de hoy: 0 nuevos, 30 ya
+  bajados, 18 a revisar con el navegador.
+- **252: las últimas notas sin URL.** Alianza Lima (página de transparencia; se arma con JavaScript, la revisa el navegador) y
+  Botafogo-SP (`botafogofutebolsa.com.br`, mediateca) con "Página del canal"; Chievo con "Página del canal: ninguna" (desapareció en 2021,
+  sitio muerto): el script lo saltea y lo cuenta como "sin canal vivo". Canales con navegador e instrucciones exactas en la línea "a
+  revisar": el repositorio de la Federação Paulista (Ituano; Cloudflare, `ListaFinanca.ashx` desde la consola) y la CMF chilena (RUT de la
+  nota, pestaña "Información Financiera"). El script ahora mira "ya bajado" ANTES de pedir la URL (Universidad de Chile y Mirassol ya
+  tenían el 2025), busca la carpeta por nombre cuando la evidencia de carga no la nombra (Argentinos Juniors, RB Bragantino) y avisa si
+  `--club` no existe. Corrida de hoy: 0 nuevos, 35 ya bajados sin cargar, 11 a revisar con el navegador (portales con JavaScript o caídos,
+  Unternehmensregister, la FPF), 1 sin canal vivo. Solo queda sin URL Unión Magdalena (Colombia, de fos-onboarding).
+- **273: ligas que seguían en null, 16 más.** `ligas-sin-verificar.mjs`: reusa la sección de la página guardada (las listas paulistas son
+  de la Wikipedia en portugués, sección "Participantes"), prueba el año solo y las dos formas partidas, tiene nombres extra por liga
+  (Chile 2011-2017: "Campeonato Nacional Primera División"), vuelve a bajar una lista guardada si el club no está y la nueva contiene a
+  toda la vieja (le faltaba un grupo), reconoce la fila con espacios o sin comillas, y `--detalle`/`--club` para diagnosticar. Lector
+  (`fetch-club-league-reference.mjs`): sin tabla de equipos, junta las tablas de posiciones de grupos disjuntos de 8+ equipos (Super
+  League 2 griega: Norte y Sur). `--contra-cache`: solo cambia `gr-superleague2 2024` por la regla nueva, y es la mejora (suma el grupo
+  Sur): aplicada. Escritas con evidencia: Católica 2011-2016 (Primera), Ferroviária 2010 (Paulista A3) y 2012-2014 (A2), Kifisia 2022,
+  2023 y 2025 (Super League 2), Levadiakos 2022 (Super League 2), Fredericia 2019 (1st Division) y, a mano, Racing 2026 (Primera: "Racing"
+  está en las dos listas de 2026, el de la Nacional es Racing de Córdoba). Estadio 97%, sponsor 86%. ASSET_V 1276.
+  Siguen sin liga, a propósito: Novorizontino 2010 (Segunda División paulista, fuera del catálogo), Dynamo Makhachkala 2021 (tercera
+  categoría rusa, "liga-no-catalogada"), AVS 2021 y 2023 (ejercicios de la sociedad anterior con otro nombre: identidad a confirmar),
+  Racing 2027 (presupuesto, no cerró) y Zulte Waregem 2025 (Bélgica, fos-onboarding).
+
+### Qué queda (TODO), al cerrar la sesión
+
+- 273: ~135 ejercicios cargados sin estadio o sin sponsor (110 sin sponsor, 25 sin estadio; `node tools/estadio-sponsor.mjs --ensayo
+  --detalle` los lista). Concentrados en pocos clubes: Ferroviária 11, Novorizontino 10, Sporting CP 8 (años viejos), Fortaleza CEIF 7,
+  Almagro 6, AEL 6, Goiás 5, Criciúma/Católica/Benfica/Alianza Lima 4. **Diseño aprobado por Guido (2026-10-18), sin implementar**:
+  un modo de `estadio-sponsor.mjs` que, para cada club con huecos, busque su página en Wikipedia (inglés y la del país) y lea la tabla
+  de historia de camisetas ("Kit manufacturers and shirt sponsors" / "Indumentaria y patrocinador" / "Fornecedores e patrocinadores":
+  período, marca, sponsor); el ejercicio toma la fila cuyo rango de años lo contiene. Compuerta: la página es del club (el título lo
+  nombra y el texto menciona su país o liga) y el rango se lee sin ambigüedad (dos filas que se pisan en un año: ninguna). Solo completa
+  lo que falta, con fuente aparte (como `fuenteLocal`). Ensayo primero, con muestra para Guido. Lo que no salga, a mano con fuente.
+- 273: `tools/generate-sponsors.js` no suma lo de `contexto-manual.json` (está por año de ejercicio, no por liga-temporada).
+- 273: AVS 2021 y 2023 sin liga: son ejercicios de la sociedad anterior, con otro nombre; confirmar la identidad de la entidad.
+- 252: Unión Magdalena (Colombia, de fos-onboarding) sin URL del canal; 35 PDFs ya bajados sin cargar (onboarding).

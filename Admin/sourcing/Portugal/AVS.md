@@ -6,6 +6,7 @@
   jugar la final de la Taça de Portugal 2018), reconstituido tras una insolvencia/reestructuración
   societaria previa. Sede en Santo Tirso.
 - **Canal**: sitio propio (`afsfut.pt`, dominio con las siglas viejas "AFS" de Aves Futebol SAD).
+- **Página del canal** (la mira la revisión mensual, `tools/ejercicios-nuevos.mjs`; agregada 2026-10-18): https://afsfut.pt/
 
 ## Qué se bajó (sesión 2026-09-17)
 

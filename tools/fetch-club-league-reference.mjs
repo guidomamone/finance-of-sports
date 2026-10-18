@@ -139,7 +139,13 @@ function parseWikitableTeams(tableWikitext) {
 function equiposDeSportsTable(wikitext, todas = false) {
   // `todas` (to-do 266): la unión de TODAS las plantillas de la página (Argentina tiene una por zona más la tabla anual)
   const tablas = tablasDeSportsTable(wikitext);
-  return [...new Set(todas ? tablas.flat() : (tablas[0] || []))];
+  if (todas) return [...new Set(tablas.flat())];
+  // GRUPOS (to-do 273): una liga jugada en grupos sin tabla de equipos ("2021–22 Super League Greece 2": una tabla de posiciones por grupo,
+  // Norte y Sur) daba solo el primer grupo. Si hay 2 tablas o más SIN NINGÚN equipo en común y de al menos 8 equipos cada una, son los
+  // grupos y se juntan. Una tabla anual o de playoff repite equipos de las otras, así que no entra.
+  const grupos = []; for (const t of tablas) if (t.length >= 8 && !t.incompleta && !grupos.some((g) => g.some((x) => t.includes(x)))) grupos.push(t);
+  if (grupos.length >= 2 && tablas.every((t) => grupos.includes(t) || t.every((x) => grupos.flat().includes(x)))) return [...new Set(grupos.flat())];
+  return [...new Set(tablas[0] || [])];
 }
 // cada plantilla de la página por separado, en orden de posición (to-do 266); el texto de cada una se corta en la siguiente
 function tablasDeSportsTable(wikitext) {

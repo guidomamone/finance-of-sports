@@ -95,6 +95,10 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Arena Pantanal","capacidad":44000,"sponsor":"Dourado","marca":"Kappa","temporada":"2025 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221996"},
   },
   'ferroviaria-br': {
+    2010: {"estadio":"Fonte Luminosa","capacidad":19545,"temporada":"Campeonato Paulista de Futebol de 2010 - Série A3","fuente":"https://pt.wikipedia.org/w/index.php?oldid=71991225"},
+    2012: {"estadio":"Arena da Fonte Luminosa","capacidad":20287,"temporada":"Campeonato Paulista de Futebol de 2012 - Série A2","fuente":"https://pt.wikipedia.org/w/index.php?oldid=72012736"},
+    2013: {"estadio":"Arena da Fonte Luminosa","capacidad":20950,"temporada":"Campeonato Paulista de Futebol de 2013 - Série A2","fuente":"https://pt.wikipedia.org/w/index.php?oldid=72392677"},
+    2014: {"estadio":"Arena da Fonte Luminosa","capacidad":20950,"temporada":"Campeonato Paulista de Futebol de 2014 - Série A2","fuente":"https://pt.wikipedia.org/w/index.php?oldid=72162319"},
     2015: {"temporada":"Campeonato Paulista de Futebol de 2015 - Série A2","fuente":"https://pt.wikipedia.org/w/index.php?oldid=72463471"},
     2016: {"temporada":"2016 Campeonato Paulista","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353251100"},
     2017: {"temporada":"2017 Campeonato Paulista","fuente":"https://en.wikipedia.org/w/index.php?oldid=1290796352"},

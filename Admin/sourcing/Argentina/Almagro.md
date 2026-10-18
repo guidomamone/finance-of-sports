@@ -1,4 +1,6 @@
 **Ángulos**: sitio oficial: agotado (0 en el sitio vivo, migró de plataforma) · Wayback CDX: agotado
+
+- **Página del canal** (la mira la revisión mensual, `tools/ejercicios-nuevos.mjs`; agregada 2026-10-18): https://clubalmagro.com.ar/
 (6 ejercicios recuperados, dominio completo revisado hasta 2026) · búsqueda web: agotado (fue la vía
 que encontró el hallazgo) · regulador/país: bloqueo (IGJ exige clave fiscal AFIP paga, gestión de
 Guido, no intentar) — 2026-09-26

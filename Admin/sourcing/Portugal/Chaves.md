@@ -6,6 +6,7 @@
 - **Liga / competencia**: Liga Portugal 2 / Liga Portugal (Portugal)
 - **Entidad legal**: Grupo Desportivo de Chaves (clube) y/o su Futebol SAD: ver los documentos; son «Relatório de Atividades e Contas da Direção»
 - **Canal**: sitio oficial del club, hallado con el CDX de Wayback del dominio completo (`matchType=domain`, filtro PDF) y bajado con `web.archive.org/web/<ts>id_/`; ver `paises/Portugal.md`.
+- **Página del canal** (la mira la revisión mensual, `tools/ejercicios-nuevos.mjs`; agregada 2026-10-18): https://gdchaves.pt/documentos/
 
 ## Qué se bajó (sesión 2026-10-08)
 

@@ -1,5 +1,6 @@
 # Ferro Carril Oeste
 
+- **Página del canal** (la mira la revisión mensual, `tools/ejercicios-nuevos.mjs`; agregada 2026-10-18): https://ferrocarriloeste.org.ar/
 **Ángulos**: sitio oficial: agotado (117-119, 121, 122 cubiertos; 120 confirmado narrativo-only) ·
 Wayback CDX: agotado · búsqueda web: agotado (sin PDF nuevo) · regulador/país: no aplica — 2026-09-26
 

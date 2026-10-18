@@ -5,6 +5,9 @@ window.RANKINGS["ar-primera"] = {
     leagueSize: null,
     wiki: {"t":"2026 Argentine Primera División","lang":"en","at":"2026-10-17","n":30},
     clubs: [
+      { id:"racing", revenue:85.742, reportType:"official_budget",
+        sourceId:"racing-presupuesto-2025-26",
+        mix:[["Cuotas Sociales",16.544],["Comercial / Sponsors",9.536],["Estadio",8.506],["Televisión",5.195],["Premios por competencias",5.545],["Venta de Jugadores",23.655],["Educación",1.176],["Otras secciones deportivas",0.417],["Otros ingresos",15.169]] },
       { id:"independiente", revenue:71.617, reportType:"official_balance_sheet",
         sourceId:"independiente-estados-contables-2025-26",
         mix:[["Cuotas Sociales",18.38],["Comercial / Sponsors",7.267],["Estadio",11.518],["Televisión",4.192],["Venta de Jugadores",17.799],["Educación",2.284],["Otras secciones deportivas",1.921],["Otros ingresos",8.256]] },
