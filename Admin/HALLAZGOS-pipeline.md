@@ -64,6 +64,12 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   un bloque; Estoril 2021-22 suma b47 y b48 a gastos, Chaves 2021-22 saca b48) y el perímetro pasa a "no se sabe" en 7. Sin extraer y
   verificar no se sabe cuál acierta, y el ahorro es ~US$ 0,025 por documento: localizar sigue en Opus (decisión de Guido). Para retomarlo,
   extraer + verificar con `.ubicacion.sonnet.json` en esos 45. Comparación: `Admin/mediciones/localizar-opus-vs-sonnet.txt`.
+- **Sonnet en vez de Opus en extraer** (to-do 288, 2026-10-18, `prueba-rapida`, 44 documentos; Opus otra vez US$ 7,44 y Sonnet US$ 3,35):
+  verificar con cada juego de filas contra lo cargado (los 2 `filas-a-mano` no se miden). Opus nuevo: 21 cargan igual, 8 cierran con otra
+  carga, 13 a la cola con los MISMOS totales (dudas nuevas sin respuesta en la cola), 0 con otros totales. Sonnet: 15 igual, 9 con otra
+  carga, 8 a la cola con los mismos totales y 10 a la cola con OTROS totales (lee mal importes o filas). No entra: extraer sigue en Opus.
+  Lo que enseñó: repetir la extracción con el mismo modelo ya cambia 8 cargas de 42 (el piso de variación es alto: cualquier cambio de
+  extraer se mide contra una segunda corrida, no contra lo cargado). Mediciones: `Admin/mediciones/extraer-verificar-cargado-vs-*.txt`.
 
 ## 2026-10-08, dos trampas que costaron una corrida
 

@@ -1,0 +1,199 @@
+{
+ "pdf": "Clubes/Brasil/Remo/relatorio-auditoria-2020.pdf",
+ "md": "Clubes/Brasil/Remo/relatorio-auditoria-2020.md",
+ "mdSha1": "1bf7bee0ac36011f0d1be289183124877f3a1415",
+ "ubicacionSha1": "528eece386025ac4e0a795832c879d30037be120",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:06:01.046Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "No hay frase de escala; los importes se imprimen con centavos (ej. L191 '12.351.668,08'), lo que indica reales en unidades."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 191,
+   "etiqueta": "(+) Receita Bruta Operacional",
+   "actual": "12.351.668,08",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 192,
+   "etiqueta": "Receita De Atividades Esportivas",
+   "actual": "12.351.668,08",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 193,
+   "etiqueta": "(-) Custos das Atividades Esportivas",
+   "actual": "7.548.640,50",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 194,
+   "etiqueta": "Custos das Atividades Esportivas",
+   "actual": "7.548.640,50",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 195,
+   "etiqueta": "(=) Receita Líquida",
+   "actual": "4.803.027,58",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 196,
+   "etiqueta": "(=) Lucro Bruto",
+   "actual": "4.803.027,58",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 197,
+   "etiqueta": "(-) Despesas Operacionais",
+   "actual": "4.943.560,99",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 198,
+   "etiqueta": "Despesas Operacionais",
+   "actual": "4.555.340,59",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 199,
+   "etiqueta": "Resultado Financeiro",
+   "actual": "194.092,83",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 200,
+   "etiqueta": "(-) Despesas c/ drepreciação/amortização",
+   "actual": "(1.923.969,31)",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 201,
+   "etiqueta": "Despesas c/ drepreciação/amortização",
+   "actual": "(1.923.969,31)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 202,
+   "etiqueta": "(=) Res. Antes das Participações e Contrib.",
+   "actual": "(2.064.502,72)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 203,
+   "etiqueta": "(=) Res. Antes Imp.Renda e Contrib. Social",
+   "actual": "(2.064.502,72)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 204,
+   "etiqueta": "(=) Resultado Líquido do Exercício",
+   "actual": "(2.064.502,72)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 191,
+  "actual": "12.351.668,08"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 204,
+  "actual": "(2.064.502,72)",
+  "anterior": null
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'Resultado Financeiro' (L199, 194.092,83) como gasto financiero (resultado negativo) dentro de '(-) Despesas Operacionais'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Resultado Financeiro",
+   "texto": "L198 + L199 suman 4.749.433,42 y no 4.943.560,99 impreso en L197, por lo que el signo/composición del resultado financiero es ambiguo.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se confirma que no hay columna del año anterior en el cuadro (L189)?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El cuadro solo imprime la columna '01/01/2020 a 31/12/2020' (L189).",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Demonstração de resultado en formato de sistema contable (Fortes Contábil), sin columna comparativa ni notas. Resultado = 4.803.027,58 - 4.943.560,99 - 1.923.969,31 = (2.064.502,72), cuadra con L204. El subtotal de L197 no cuadra con sus renglones L198-L199."
+}

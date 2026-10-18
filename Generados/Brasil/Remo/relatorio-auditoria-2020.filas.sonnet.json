@@ -1,0 +1,179 @@
+{
+ "pdf": "Clubes/Brasil/Remo/relatorio-auditoria-2020.pdf",
+ "md": "Clubes/Brasil/Remo/relatorio-auditoria-2020.md",
+ "mdSha1": "1bf7bee0ac36011f0d1be289183124877f3a1415",
+ "ubicacionSha1": "528eece386025ac4e0a795832c879d30037be120",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T14:36:21.700Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "Importes con centavos (12.351.668,08); sin mención de miles ni millones"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 191,
+   "etiqueta": "(+) Receita Bruta Operacional",
+   "actual": "12.351.668,08",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 192,
+   "etiqueta": "Receita De Atividades Esportivas",
+   "actual": "12.351.668,08",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 193,
+   "etiqueta": "(-) Custos das Atividades Esportivas",
+   "actual": "7.548.640,50",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 194,
+   "etiqueta": "Custos das Atividades Esportivas",
+   "actual": "7.548.640,50",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 195,
+   "etiqueta": "(=) Receita Líquida",
+   "actual": "4.803.027,58",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 196,
+   "etiqueta": "(=) Lucro Bruto",
+   "actual": "4.803.027,58",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 198,
+   "etiqueta": "Despesas Operacionais",
+   "actual": "4.555.340,59",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 199,
+   "etiqueta": "Resultado Financeiro",
+   "actual": "194.092,83",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 201,
+   "etiqueta": "Despesas c/ drepreciação/amortização",
+   "actual": "(1.923.969,31)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 202,
+   "etiqueta": "(=) Res. Antes das Participações e Contrib.",
+   "actual": "(2.064.502,72)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 203,
+   "etiqueta": "(=) Res. Antes Imp.Renda e Contrib. Social",
+   "actual": "(2.064.502,72)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 204,
+   "etiqueta": "(=) Resultado Líquido do Exercício",
+   "actual": "(2.064.502,72)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 191,
+  "actual": "12.351.668,08"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 204,
+  "actual": "(2.064.502,72)",
+  "anterior": null
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga la fila '(-) Despesas Operacionais' (L197, 4.943.560,99), cuyo importe no coincide con su detalle 'Despesas Operacionais' (L198, 4.555.340,59)?",
+   "propuesta": "sí",
+   "tema": "fila-ilegible",
+   "renglon": "(-) Despesas Operacionais",
+   "texto": "L197 muestra 4.943.560,99 y el detalle L198 4.555.340,59; la diferencia es 388.220,40, igual a la diferencia entre 4.555.340,59 y 4.943.560,99, y podría ser que L198 no incluya el Resultado Financeiro (194.092,83) más otra partida omitida.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿La columna del año anterior no existe en el PDF (solo aparece la columna 01/01/2020 a 31/12/2020), por lo que se deja anterior en null?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El estado (L189) solo trae una columna de importes, sin año anterior.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de una sola columna (2020), sin notas. No hay total de gastos impreso. L197 se dejó afuera por inconsistencia con L198."
+}

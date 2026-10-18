@@ -1,0 +1,199 @@
+{
+ "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2023.pdf",
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2023.md",
+ "mdSha1": "ed2bf7ed0449ca9bee6e6be5b54a50d2a8f1770f",
+ "ubicacionSha1": "163d574f46865c52770d1d08688b386097ed0cf9",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T14:36:53.829Z",
+ "ubicacion": {
+  "estado": [
+   "b6"
+  ],
+  "notas_ingresos": [
+   "b31",
+   "b34",
+   "b36"
+  ],
+  "notas_gastos": [
+   "b32",
+   "b33"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b6",
+   "escala": "unidades",
+   "evidencia": "L209: (Valores expressos em Reais - R$)"
+  },
+  {
+   "bloque": "b31",
+   "escala": "no se sabe",
+   "evidencia": "Sin frase de escala en el bloque; importes consistentes con el estado (Receita líquida 89.972.753)"
+  },
+  {
+   "bloque": "b34",
+   "escala": "no se sabe",
+   "evidencia": "Sin frase de escala; el Resultado financeiro coincide con el estado (1.425.102)"
+  },
+  {
+   "bloque": "b36",
+   "escala": "no se sabe",
+   "evidencia": "Sin frase de escala; el Total coincide con Outras Receitas e Despesas del estado"
+  },
+  {
+   "bloque": "b32",
+   "escala": "no se sabe",
+   "evidencia": "Sin frase de escala; el Total coincide con Custo com futebol del estado"
+  },
+  {
+   "bloque": "b33",
+   "escala": "no se sabe",
+   "evidencia": "Sin frase de escala; el Total coincide con Despesas del estado"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b6",
+   "linea": 213,
+   "etiqueta": "Receita líquida",
+   "actual": "89.972.753",
+   "anterior": "97.172.059",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 214,
+   "etiqueta": "Custo com futebol",
+   "actual": "(78.409.393)",
+   "anterior": "(57.582.797)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 215,
+   "etiqueta": "Superávit bruto",
+   "actual": "11.563.360",
+   "anterior": "39.589.262",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 216,
+   "etiqueta": "Despesas",
+   "actual": "114.296.016",
+   "anterior": "(23.262.887)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 217,
+   "etiqueta": "Despesas administrativas e gerais",
+   "actual": "(25.179.064)",
+   "anterior": "(25.416.044)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Despesas"
+  },
+  {
+   "bloque": "b6",
+   "linea": 218,
+   "etiqueta": "Despesas tributárias",
+   "actual": "(739.705)",
+   "anterior": "(6.764.942)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Despesas"
+  },
+  {
+   "bloque": "b6",
+   "linea": 219,
+   "etiqueta": "Outras Receitas e Despesas",
+   "actual": "140.214.785",
+   "anterior": "8.918.100",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Despesas"
+  },
+  {
+   "bloque": "b6",
+   "linea": 220,
+   "etiqueta": "Superávit antes do resultado financeiro",
+   "actual": "125.859.376",
+   "anterior": "16.326.375",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 221,
+   "etiqueta": "Resultado financeiro líquido",
+   "actual": "(1.425.102)",
+   "anterior": "(3.168.340)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 222,
+   "etiqueta": "Superávit do exercício",
+   "actual": "124.434.274",
+   "anterior": "13.158.035",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 213,
+  "actual": "89.972.753"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 222,
+  "actual": "124.434.274",
+  "anterior": "13.158.035"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera de la carga las filas de los bloques de notas b31, b32, b33, b34 y b36 por falta de escala impresa, tomando la escala en unidades como el estado (b6)?",
+   "propuesta": "no",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Las notas no traen frase de escala (L1043, L1085, L1112, L1140, L1191); los totales coinciden con el estado en unidades.",
+   "bloques": [
+    "b31",
+    "b32",
+    "b33",
+    "b34",
+    "b36"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deben cargar las filas de las notas (b31, b32, b33, b34, b36)? Aquí se extrajeron solo las del estado (b6) porque las notas no se transcribieron en detalle.",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Las filas de las notas con importes (L1048-L1073, L1089-L1107, L1116-L1125, L1145-L1156, L1195-L1199) no están en la lista de filas de esta salida.",
+   "bloques": [
+    "b31",
+    "b32",
+    "b33",
+    "b34",
+    "b36"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Solo se extrajeron las filas del estado (b6). El estado no imprime total de gastos; la nota 19 (Despesas) se desglosa con renglones que incluyen Outras Receitas (L1123) con 140.214.785, que el estado muestra aparte en L219, lo cual es ambiguo."
+}

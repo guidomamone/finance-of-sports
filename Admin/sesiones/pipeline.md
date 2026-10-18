@@ -33,6 +33,10 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
   (`.ubicacion.<modelo>.json`, con el perímetro del club como lote.mjs). Estado igual en 76 de 76, notas distintas en 45 de 77: sigue en Opus
   (HALLAZGOS-pipeline.md). US$ 3,97.
 
+- **Opus → Sonnet, cuarta tarea: extraer (to-do 288), medida y NO adoptada.** `tools/extraer.mjs --modelo opus|sonnet` (`.filas.<modelo>.json`)
+  y `tools/medir-verificar.mjs --filas <modelo>`. Sobre prueba-rapida, Sonnet deja 10 documentos en la cola con otros totales (Opus nuevo: 0):
+  sigue en Opus (HALLAZGOS-pipeline.md). US$ 10,79 entre las dos corridas.
+
 ## Qué queda pendiente (para TODO)
 
 - **Escribir caja y deuda en `data/`, en la carpeta principal después del merge** (sin API: escalón 0). Junto con lo que ya dejó la

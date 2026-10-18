@@ -1,0 +1,671 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2025.pdf",
+ "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2025.md",
+ "mdSha1": "b7a594cc7a7b7045a2ae30716c03686d6eac5726",
+ "ubicacionSha1": "a6d574ecbab02befa77bc2539a7d6063fa09e5f1",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T14:26:08.976Z",
+ "ubicacion": {
+  "estado": [
+   "b8",
+   "b9"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b49",
+   "b51"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b8",
+   "escala": "unidades",
+   "evidencia": "L244: Em reais"
+  },
+  {
+   "bloque": "b9",
+   "escala": "unidades",
+   "evidencia": "Continuación del estado; L290-L293 sin indicación de escala, el estado está \"Em reais\" (L244)"
+  },
+  {
+   "bloque": "b49",
+   "escala": "no se sabe",
+   "evidencia": "L1230-L1231: sin frase de escala en la nota"
+  },
+  {
+   "bloque": "b51",
+   "escala": "no se sabe",
+   "evidencia": "L1281: sin frase de escala en la nota"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b8",
+   "linea": 250,
+   "etiqueta": "Direitos de transmissão de TV",
+   "actual": "36.984.915",
+   "anterior": "9.921.046",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 251,
+   "etiqueta": "Negociação de atletas",
+   "actual": "17.103.865",
+   "anterior": "14.242.707",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 252,
+   "etiqueta": "Publicidade",
+   "actual": "1.120.000",
+   "anterior": "6.240.284",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 253,
+   "etiqueta": "Patrocínio",
+   "actual": "5.902.023",
+   "anterior": "3.619.248",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 254,
+   "etiqueta": "Arrecadação de jogos",
+   "actual": "3.421.619",
+   "anterior": "3.550.867",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 256,
+   "etiqueta": "Premiações",
+   "actual": "1.010.000",
+   "anterior": "850.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 257,
+   "etiqueta": "Timemania",
+   "actual": "2.587.711",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 258,
+   "etiqueta": "Mecanismo de solidariedade",
+   "actual": "345.669",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 259,
+   "etiqueta": "Convênios",
+   "actual": "972.619",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 260,
+   "etiqueta": "Outras receitas",
+   "actual": "94.380",
+   "anterior": "61.920",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 261,
+   "etiqueta": "Receita bruta",
+   "actual": "69.542.801",
+   "anterior": "40.157.783",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 263,
+   "etiqueta": "Impostos incidentes sobre a receita",
+   "actual": "(1.978.549)",
+   "anterior": "(1.303.783)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 265,
+   "etiqueta": "Receita líquida",
+   "actual": "67.564.252",
+   "anterior": "38.854.000",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 266,
+   "etiqueta": "(-) Custos operacionais",
+   "actual": "(73.810.452)",
+   "anterior": "(52.052.445)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 267,
+   "etiqueta": "Lucro bruto",
+   "actual": "(6.246.200)",
+   "anterior": "(13.198.445)",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 297,
+   "etiqueta": "Com pessoal",
+   "actual": "(1.974.967)",
+   "anterior": "(1.589.964)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 298,
+   "etiqueta": "Com jogos",
+   "actual": "(437.908)",
+   "anterior": "(234.869)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 299,
+   "etiqueta": "Administrativas e gerais",
+   "actual": "(3.905.545)",
+   "anterior": "(953.078)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 300,
+   "etiqueta": "Serviços de terceiros",
+   "actual": "(1.524.045)",
+   "anterior": "(1.455.989)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 301,
+   "etiqueta": "Gastos com atletas não profissionais",
+   "actual": "(7.318.188)",
+   "anterior": "(3.960.859)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 302,
+   "etiqueta": "Tributária",
+   "actual": "(97.091)",
+   "anterior": "(69.131)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 303,
+   "etiqueta": "Outras despesas",
+   "actual": "(428.790)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 304,
+   "etiqueta": "Despesas operacionais",
+   "actual": "(15.686.534)",
+   "anterior": "(8.263.890)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 305,
+   "etiqueta": "Prejuízo antes do resultado financeiro",
+   "actual": "(21.932.734)",
+   "anterior": "(21.462.335)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 306,
+   "etiqueta": "Receita financeira",
+   "actual": "314.598",
+   "anterior": "271.777",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 307,
+   "etiqueta": "Despesas financeiras",
+   "actual": "(3.636.025)",
+   "anterior": "(1.501.454)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 308,
+   "etiqueta": "Resultado financeiro",
+   "actual": "(3.321.427)",
+   "anterior": "(1.229.677)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 309,
+   "etiqueta": "Prejuízo líquido do exercício",
+   "actual": "(25.254.161)",
+   "anterior": "(22.692.012)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b49",
+   "linea": 1235,
+   "etiqueta": "Com pessoal",
+   "actual": "18.017.444",
+   "anterior": "12.020.831",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1236,
+   "etiqueta": "Direito de imagem",
+   "actual": "23.304.820",
+   "anterior": "14.637.618",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1237,
+   "etiqueta": "Gastos com negociação de atletas",
+   "actual": "3.491.300",
+   "anterior": "1.423.349",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1238,
+   "etiqueta": "Assessoria esportiva",
+   "actual": "8.279.581",
+   "anterior": "7.223.225",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1239,
+   "etiqueta": "Premiações",
+   "actual": "5.865.759",
+   "anterior": "815.988",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1240,
+   "etiqueta": "Com jogos",
+   "actual": "4.670.353",
+   "anterior": "4.438.190",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1241,
+   "etiqueta": "Aluguel de imóveis",
+   "actual": "3.953.369",
+   "anterior": "3.277.953",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1242,
+   "etiqueta": "Manutenção e conservação",
+   "actual": "1.732.136",
+   "anterior": "2.103.054",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1243,
+   "etiqueta": "Lanches e refeições",
+   "actual": "1.560.188",
+   "anterior": "1.645.059",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1244,
+   "etiqueta": "Energia elétrica",
+   "actual": "192.539",
+   "anterior": "373.207",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1245,
+   "etiqueta": "Taxa da FPF e CBF",
+   "actual": "232.674",
+   "anterior": "350.753",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1246,
+   "etiqueta": "Lavanderia",
+   "actual": "327.762",
+   "anterior": "329.896",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1247,
+   "etiqueta": "Amortização dos atletas formados",
+   "actual": "334.027",
+   "anterior": "319.360",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1248,
+   "etiqueta": "Baixa dos atletas formados",
+   "actual": "-",
+   "anterior": "116.231",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1249,
+   "etiqueta": "Serviços e exames médicos",
+   "actual": "400.558",
+   "anterior": "627.037",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1250,
+   "etiqueta": "Material esportivo",
+   "actual": "240.909",
+   "anterior": "335.252",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1251,
+   "etiqueta": "Segurança patrimonial",
+   "actual": "205.072",
+   "anterior": "14.613",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1252,
+   "etiqueta": "Água e esgoto",
+   "actual": "75.275",
+   "anterior": "91.361",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1253,
+   "etiqueta": "Acordos trabalhistas e cíveis",
+   "actual": "162.989",
+   "anterior": "919.250",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1254,
+   "etiqueta": "Medicamentos",
+   "actual": "103.070",
+   "anterior": "169.105",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1255,
+   "etiqueta": "Materiais de escritório e de limpeza",
+   "actual": "14.285",
+   "anterior": "366",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1256,
+   "etiqueta": "Telefone e internet",
+   "actual": "67.665",
+   "anterior": "4.020",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1257,
+   "etiqueta": "Gás",
+   "actual": "13.017",
+   "anterior": "32.563",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1258,
+   "etiqueta": "Outras despesas",
+   "actual": "565.660",
+   "anterior": "784.164",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1259,
+   "etiqueta": "Custos operacionais",
+   "actual": "73.810.452",
+   "anterior": "52.052.445",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "(-) Custos operacionais"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1285,
+   "etiqueta": "Variação cambial",
+   "actual": "(1.671.719)",
+   "anterior": "(89.798)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1286,
+   "etiqueta": "Juros e atualização",
+   "actual": "(1.933.450)",
+   "anterior": "(1.191.857)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1287,
+   "etiqueta": "Tarifas bancárias",
+   "actual": "(24.113)",
+   "anterior": "(219.614)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1288,
+   "etiqueta": "Outros",
+   "actual": "(6.743)",
+   "anterior": "(185)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1289,
+   "etiqueta": "Despesas financeiras",
+   "actual": "(3.636.025)",
+   "anterior": "(1.501.454)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 265,
+  "actual": "67.564.252"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 309,
+  "actual": "(25.254.161)",
+  "anterior": "(22.692.012)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿La columna 2024 del estado (L248, 'reclassificado') es la que se debe cargar como año anterior?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "L248 indica 2024 reclassificado; se tomó esa columna como anterior.",
+   "bloques": [
+    "b8"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se dejan afuera Receita bruta y Prejuízo antes do resultado financeiro del cuadro por segmento, usando solo la columna Total (L261, L305)?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "Despesas operacionais",
+   "texto": "El estado tiene columnas por segmento; se usó la columna Total, no las de segmento.",
+   "bloques": [
+    "b8",
+    "b9"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Las notas b49 y b51 están en reales, igual que el estado (L244)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Las notas no traen frase de escala (L1230, L1281).",
+   "bloques": [
+    "b49",
+    "b51"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Las filas de subtotal sin etiqueta impresa (L261, L304, L308, L1259, L1289) se nombraron según su concepto. El estado no imprime total de gastos; la fila L266 es custos operacionais. No hay nota de ingresos."
+}

@@ -1,0 +1,116 @@
+{
+ "pdf": "Clubes/Brasil/Remo/dre-2023.pdf",
+ "md": "Clubes/Brasil/Remo/dre-2023.md",
+ "mdSha1": "7b92893ae5c044558eda70d17941ab79942d85c0",
+ "ubicacionSha1": "3f5955d1f922f9e876f2cc994d8d639e4adc0c6a",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:06:07.479Z",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "unidades",
+   "evidencia": "L6: (Em reais)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 10,
+   "etiqueta": "Receita Operacional Bruta",
+   "actual": "33.831.604",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 12,
+   "etiqueta": "Receita Operacional Líquida",
+   "actual": "33.831.604",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 14,
+   "etiqueta": "Resultado Operacional Bruto",
+   "actual": "33.831.604",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 16,
+   "etiqueta": "Despesas Administrativas",
+   "actual": "18.418.551",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 17,
+   "etiqueta": "Despesas Operacionais",
+   "actual": "16.404.081",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 19,
+   "etiqueta": "Resultado Antes do Resultado Financeiro",
+   "actual": "-991.027",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 21,
+   "etiqueta": "Despesas Financeiras",
+   "actual": "449.709",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 23,
+   "etiqueta": "Superávit/Déficit do Exercício",
+   "actual": "-1.440.736",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 12,
+  "actual": "33.831.604"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 23,
+  "actual": "-1.440.736",
+  "anterior": null
+ },
+ "dudas": [],
+ "observaciones": "Estado con una sola columna (31/12/2023); no hay año anterior. Gastos impresos sin signo; el total de gastos no está impreso (18.418.551 + 16.404.081 = 34.822.632, consistente con el resultado -991.027). No hay notas de desglose."
+}

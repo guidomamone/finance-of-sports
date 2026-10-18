@@ -1,0 +1,122 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/balanco-2010.pdf",
+ "md": "Clubes/Brasil/Novorizontino/balanco-2010.md",
+ "mdSha1": "9d9e7f879fb2d21f4b9c16262f35a5cddc4a39cc",
+ "ubicacionSha1": "efbac4de8c9865e7d41e463a5c437104e928d375",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T14:24:47.348Z",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "unidades",
+   "evidencia": "L3: (em reais)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 7,
+   "etiqueta": "Convênio P.M.N.H nº 21/10",
+   "actual": "70.000,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 8,
+   "etiqueta": "Doações, Receitas de Patrocínio, Locação de Espaço, e Ev",
+   "actual": "60.350,36",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 9,
+   "etiqueta": "Receita Líquida Operacional",
+   "actual": "130.350,36",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 10,
+   "etiqueta": "Resultado Bruto Operacional",
+   "actual": "130.350,36",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 15,
+   "etiqueta": "Projeto Escola de Futebol -Conv. Nº 21/10",
+   "actual": "165.637,07",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 16,
+   "etiqueta": "Resultado Líquido Operacional",
+   "actual": "-35.286,71",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 9,
+  "actual": "130.350,36"
+ },
+ "total_gastos": {
+  "linea": 15,
+  "actual": "165.637,07"
+ },
+ "resultado": {
+  "linea": 16,
+  "actual": "-35.286,71",
+  "anterior": null
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga las filas de gastos L12-L14 (40.535,53; 56.757,99; 1.690,90), que están en una columna intermedia sin encabezado y suman con L15 (66.652,65) el total 165.637,07?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Administrativas",
+   "texto": "L12-L15: los importes de gastos están en una columna sin encabezado y el total 165.637,07 aparece en L15 junto a un importe parcial.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿La fila L15 'Projeto Escola de Futebol' con 165.637,07 es en realidad el total de despesas operacionais y no el importe del proyecto?",
+   "propuesta": "sí",
+   "tema": "fila-ilegible",
+   "renglon": "Projeto Escola de Futebol -Conv. Nº 21/10",
+   "texto": "L15: la columna final 165.637,07 parece el total de gastos, mientras el proyecto es 66.652,65.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Documento de una sola página, sin año anterior. La columna intermedia sin encabezado contiene los gastos individuales; el total de gastos se tomó de L15 como 165.637,07 (coincide con la suma 40.535,53+56.757,99+1.690,90+66.652,65)."
+}

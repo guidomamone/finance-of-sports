@@ -1,0 +1,304 @@
+{
+ "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.md",
+ "mdSha1": "24f3096fb449277503685c36e121b1db2b2cd4a1",
+ "ubicacionSha1": "716faf4dc100e696924ec38b74952a588109cc65",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T14:27:26.433Z",
+ "ubicacion": {
+  "estado": [
+   "b19",
+   "b22",
+   "b23",
+   "b24",
+   "b25",
+   "b26",
+   "b27",
+   "b28",
+   "b30",
+   "b31",
+   "b18"
+  ],
+  "notas_ingresos": [
+   "b20",
+   "b21"
+  ],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b19",
+   "escala": "no se sabe",
+   "evidencia": "el bloque no indica la escala"
+  },
+  {
+   "bloque": "b22",
+   "escala": "no se sabe",
+   "evidencia": "el bloque no indica la escala"
+  },
+  {
+   "bloque": "b23",
+   "escala": "no se sabe",
+   "evidencia": "el bloque no indica la escala"
+  },
+  {
+   "bloque": "b24",
+   "escala": "miles",
+   "evidencia": "(Valores expresados en miles de pesos Colombianos)"
+  },
+  {
+   "bloque": "b25",
+   "escala": "miles",
+   "evidencia": "(Valores expresados en miles de pesos Colombianos)"
+  },
+  {
+   "bloque": "b26",
+   "escala": "no se sabe",
+   "evidencia": "el bloque no indica la escala"
+  },
+  {
+   "bloque": "b27",
+   "escala": "miles",
+   "evidencia": "(Valores expresados en miles de pesos Colombianos)"
+  },
+  {
+   "bloque": "b28",
+   "escala": "no se sabe",
+   "evidencia": "el bloque no indica la escala"
+  },
+  {
+   "bloque": "b30",
+   "escala": "no se sabe",
+   "evidencia": "el bloque no indica la escala"
+  },
+  {
+   "bloque": "b31",
+   "escala": "no se sabe",
+   "evidencia": "el bloque no indica la escala"
+  },
+  {
+   "bloque": "b18",
+   "escala": "no se sabe",
+   "evidencia": "el bloque no indica la escala"
+  },
+  {
+   "bloque": "b20",
+   "escala": "no se sabe",
+   "evidencia": "el bloque no indica la escala"
+  },
+  {
+   "bloque": "b21",
+   "escala": "miles",
+   "evidencia": "(Valores expresados en miles de pesos Colombianos)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b19",
+   "linea": 543,
+   "etiqueta": "Total Ingresos actividades ordinarias",
+   "actual": "5,319,891",
+   "anterior": "1,647,657",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 538,
+   "etiqueta": "Actividades Deportivas",
+   "actual": "4,220,658",
+   "anterior": "1,651,631",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Total Ingresos actividades ordinarias"
+  },
+  {
+   "bloque": "b19",
+   "linea": 539,
+   "etiqueta": "Otros Ingresos",
+   "actual": "1,027,450",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Total Ingresos actividades ordinarias"
+  },
+  {
+   "bloque": "b19",
+   "linea": 540,
+   "etiqueta": "Venta de Productos",
+   "actual": "70,183",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Total Ingresos actividades ordinarias"
+  },
+  {
+   "bloque": "b19",
+   "linea": 541,
+   "etiqueta": "Casa Hogar",
+   "actual": "1,600",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Total Ingresos actividades ordinarias"
+  },
+  {
+   "bloque": "b19",
+   "linea": 542,
+   "etiqueta": "Devoluciones en Ventas",
+   "actual": "-",
+   "anterior": "(3,974)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Total Ingresos actividades ordinarias"
+  },
+  {
+   "bloque": "b22",
+   "linea": 576,
+   "etiqueta": "Total Costo de Ventas",
+   "actual": "177,278",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b22",
+   "linea": 574,
+   "etiqueta": "Costos de Ventas",
+   "actual": "127,783",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Total Costo de Ventas"
+  },
+  {
+   "bloque": "b22",
+   "linea": 575,
+   "etiqueta": "Costos Extraordinarios",
+   "actual": "49,494",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Total Costo de Ventas"
+  },
+  {
+   "bloque": "b25",
+   "linea": 684,
+   "etiqueta": "Total Gastos de Administración",
+   "actual": "2,478,598",
+   "anterior": "1,949,283",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b27",
+   "linea": 747,
+   "etiqueta": "Total Gastos de Ventas",
+   "actual": "979,969",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b30",
+   "linea": 783,
+   "etiqueta": "Total Otros Gastos",
+   "actual": "6",
+   "anterior": "11,003",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b31",
+   "linea": 794,
+   "etiqueta": "Total Otros Ingresos",
+   "actual": "3,581",
+   "anterior": "7,186",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": null,
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera de la carga las filas de la nota de gastos de administración (L587-L683) porque el detalle está cortado entre páginas y no se puede verificar?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Total Gastos de Administración",
+   "texto": "El detalle de gastos de administración (L587-L683) está partido en varios bloques y tiene etiquetas truncadas y repetidas (Otros, Maquinaria y Equipo); solo se cargó el total L684.",
+   "bloques": [
+    "b23",
+    "b24",
+    "b25"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se dejan afuera de la carga las filas de la nota de gastos de ventas (L693-L746) porque están partidas en dos bloques sin encabezado y con etiquetas truncadas?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Total Gastos de Ventas",
+   "texto": "Detalle de gastos de ventas en b26 y b27 con etiquetas repetidas; solo se cargó el total L747.",
+   "bloques": [
+    "b26",
+    "b27"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga la nota de otros gastos (L756-L761) porque no imprime total?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "La nota de otros gastos (b28, L756-L761) no tiene total impreso, por lo que no se usa como renglón.",
+   "bloques": [
+    "b28"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se dejan afuera de la carga los cuadros b20 y b21 (L547-L566) por tener solo una columna sin encabezado de año?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Total Ingresos actividades ordinarias",
+   "texto": "Los cuadros de ingresos L547-L566 no indican el año de la columna y suman 5,319,891 solo con otras partidas; el detalle no coincide con L538-L541.",
+   "bloques": [
+    "b20",
+    "b21"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de resultado acumulado b18 (L528-L530), cuyo total dice 'Total Pasivos por Impuestos'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Total Pasivos por Impuestos",
+   "texto": "El cuadro L528-L530 es resultado acumulado, con título de total inconsistente, no un resultado del ejercicio impreso.",
+   "bloques": [
+    "b18"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se corrigen las etiquetas de L783 'Total Otros Gastos' y L794 'Total Otros Ingresos', que parecen invertidas respecto a sus notas?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Total Otros Gastos",
+   "texto": "Los totales L783 y L794 tienen etiquetas cruzadas con el título de la nota (otros ingresos / gastos financieros); se cargaron tal cual con lado según la nota.",
+   "bloques": [
+    "b30",
+    "b31"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El documento no tiene estado de resultados. Se armó con los totales impresos de las notas. Falta la nota de otros gastos (sin total). Las escalas solo aparecen en algunos bloques."
+}
