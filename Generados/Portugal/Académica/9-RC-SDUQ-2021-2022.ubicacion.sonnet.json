@@ -1,0 +1,263 @@
+{
+ "pdf": "Clubes/Portugal/Académica/9-RC-SDUQ-2021-2022.pdf",
+ "md": "Clubes/Portugal/Académica/9-RC-SDUQ-2021-2022.md",
+ "mdSha1": "7ab68127ece903679cbb895a7b8d3e4ce3bbe27e",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:15:28.688Z",
+ "bloques": {
+  "b1": {
+   "pagina": 6,
+   "lineas": [
+    130,
+    168
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    188,
+    205
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    225,
+    245
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    263,
+    271
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    290,
+    298
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 12,
+   "lineas": [
+    355,
+    358
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 14,
+   "lineas": [
+    424,
+    430
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 14,
+   "lineas": [
+    436,
+    441
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 15,
+   "lineas": [
+    451,
+    456
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 15,
+   "lineas": [
+    470,
+    478
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 15,
+   "lineas": [
+    480,
+    490
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 16,
+   "lineas": [
+    508,
+    526
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 17,
+   "lineas": [
+    536,
+    539
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 17,
+   "lineas": [
+    557,
+    563
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 18,
+   "lineas": [
+    577,
+    585
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 18,
+   "lineas": [
+    597,
+    605
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 18,
+   "lineas": [
+    611,
+    618
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 19,
+   "lineas": [
+    630,
+    648
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 19,
+   "lineas": [
+    654,
+    659
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 19,
+   "lineas": [
+    663,
+    669
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 20,
+   "lineas": [
+    681,
+    686
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 20,
+   "lineas": [
+    692,
+    698
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 20,
+   "lineas": [
+    702,
+    706
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 20,
+   "lineas": [
+    712,
+    716
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 21,
+   "lineas": [
+    728,
+    747
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 21,
+   "lineas": [
+    753,
+    759
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b24",
+  "b26"
+ ],
+ "notas_gastos": [
+  "b22",
+  "b25",
+  "b21"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Euro) en el balance y flujos de caja; importes con céntimos (55.968,59) en la demonstração de resultados",
+ "moneda": "EUR",
+ "columna_ejercicio": "2021/2022",
+ "columna_anterior": "2020/2021",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de ajustes de ejercicios anteriores 'Demonstração de Resultados' (b9, pág. 15) y el cuadro b20 (pág. 19)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Son ajustes a la DF 2020/2021 (FSE -13.846,58, etc.) y no desglosan renglones del estado 2021/2022; el b9 incluso menciona época 2019/2020.",
+   "bloques": [
+    "b9",
+    "b20"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Los encabezados de columnas del cuadro 'Gastos Financeiros' (b21) dicen '2020-2021 | 2020-2021' por error de impresión, siendo la segunda 2021-2022?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Juros e gastos similares suportados",
+   "texto": "El encabezado repite 2020-2021 en ambas columnas; probable errata, y por eso no se elige b21 como nota de gastos.",
+   "bloques": [
+    "b21"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Solo hay estados individuales (Associação Académica de Coimbra - OAF SDUQ, Lda). En las notas, b24, b25, b26 y b22 tienen columnas 2020-2021 | 2021-2022 (orden inverso al estado: la primera es el año anterior). b22 (gastos con pessoal) y b25 (FSE) desglosan gastos; b24 (vendas e prestações) y b26 (outros rendimentos) desglosan ingresos. b21 (gastos de financiamento) tiene encabezado dudoso, ver dudas."
+}

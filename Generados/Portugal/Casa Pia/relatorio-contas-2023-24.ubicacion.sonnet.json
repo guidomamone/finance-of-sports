@@ -1,0 +1,298 @@
+{
+ "pdf": "Clubes/Portugal/Casa Pia/relatorio-contas-2023-24.pdf",
+ "md": "Clubes/Portugal/Casa Pia/relatorio-contas-2023-24.md",
+ "mdSha1": "3d6bd51153ae07958a1ab43aab11629a7e281939",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:14:56.142Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    36,
+    38
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    40,
+    57
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    60,
+    63
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 7,
+   "lineas": [
+    193,
+    224
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 8,
+   "lineas": [
+    248,
+    265
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 9,
+   "lineas": [
+    291,
+    301
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    305,
+    316
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    340,
+    370
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 16,
+   "lineas": [
+    598,
+    602
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 17,
+   "lineas": [
+    636,
+    642
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 18,
+   "lineas": [
+    656,
+    660
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 18,
+   "lineas": [
+    664,
+    673
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 18,
+   "lineas": [
+    675,
+    684
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 19,
+   "lineas": [
+    700,
+    712
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 19,
+   "lineas": [
+    714,
+    726
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 20,
+   "lineas": [
+    760,
+    763
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 21,
+   "lineas": [
+    777,
+    788
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 21,
+   "lineas": [
+    796,
+    811
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 22,
+   "lineas": [
+    825,
+    833
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 22,
+   "lineas": [
+    841,
+    850
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 22,
+   "lineas": [
+    858,
+    863
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 23,
+   "lineas": [
+    881,
+    907
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 24,
+   "lineas": [
+    921,
+    930
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 24,
+   "lineas": [
+    936,
+    956
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 25,
+   "lineas": [
+    970,
+    977
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 25,
+   "lineas": [
+    987,
+    998
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 26,
+   "lineas": [
+    1014,
+    1019
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 26,
+   "lineas": [
+    1025,
+    1039
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 27,
+   "lineas": [
+    1061,
+    1070
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 27,
+   "lineas": [
+    1082,
+    1088
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 28,
+   "lineas": [
+    1104,
+    1113
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 28,
+   "lineas": [
+    1121,
+    1124
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 32,
+   "lineas": [
+    1227,
+    1229
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [
+  "b26",
+  "b27",
+  "b30"
+ ],
+ "notas_gastos": [
+  "b17",
+  "b28",
+  "b29",
+  "b31",
+  "b32"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado de la tabla del estado de resultados (b5): 'Euros'",
+ "moneda": "EUR",
+ "columna_ejercicio": "30.06.2024",
+ "columna_anterior": "30.06.2023",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados por naturaleza en b5 (pág. 8), cifras en euros. Documento individual de Casa Pia Atlético Clube - Futebol SDUQ Lda, sin consolidado. Notas de ingresos: 17 Vendas e serviços prestados (b26), 18 Subsídios à exploração (b27), 21 Outros rendimentos (b30). Notas de gastos: 10 Custo das mercadorias vendidas (b17), 19 FSE (b28), 20 Gastos com pessoal (b29), 22 Outros gastos (b31), 23 Juros e gastos similares (b32). Quedan fuera balance, flujos, patrimonio, activos fijos e intangibles, impuestos y saldos con terceros. Los títulos de b31 y b32 dicen 'Exercícios de 2023 e 2022' pero las columnas son 30.06.2024 y 30.06.2023, por lo que parece errata de título."
+}

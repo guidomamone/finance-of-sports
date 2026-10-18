@@ -1,0 +1,278 @@
+{
+ "pdf": "Clubes/Brasil/Criciuma/demonstracoes-financeiras-2022.pdf",
+ "md": "Clubes/Brasil/Criciuma/demonstracoes-financeiras-2022.md",
+ "mdSha1": "e4814770d51611bedb232dedb4cdaa1a9402d508",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:09:39.449Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    3,
+    9
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    30,
+    34
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    109,
+    113
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 7,
+   "lineas": [
+    156,
+    170
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 8,
+   "lineas": [
+    193,
+    217
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 9,
+   "lineas": [
+    238,
+    253
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 10,
+   "lineas": [
+    274,
+    283
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 11,
+   "lineas": [
+    304,
+    308
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 12,
+   "lineas": [
+    329,
+    366
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 18,
+   "lineas": [
+    503,
+    507
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 18,
+   "lineas": [
+    513,
+    517
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 19,
+   "lineas": [
+    540,
+    545
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 19,
+   "lineas": [
+    549,
+    564
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 20,
+   "lineas": [
+    585,
+    590
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    596,
+    604
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 20,
+   "lineas": [
+    610,
+    618
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 20,
+   "lineas": [
+    624,
+    627
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 21,
+   "lineas": [
+    642,
+    645
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 21,
+   "lineas": [
+    649,
+    656
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 21,
+   "lineas": [
+    668,
+    680
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 22,
+   "lineas": [
+    702,
+    709
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 22,
+   "lineas": [
+    720,
+    728
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 23,
+   "lineas": [
+    749,
+    754
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 23,
+   "lineas": [
+    764,
+    768
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 23,
+   "lineas": [
+    776,
+    781
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 24,
+   "lineas": [
+    798,
+    806
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 24,
+   "lineas": [
+    812,
+    818
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 24,
+   "lineas": [
+    828,
+    832
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 25,
+   "lineas": [
+    847,
+    856
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 25,
+   "lineas": [
+    860,
+    874
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 26,
+   "lineas": [
+    908,
+    911
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6"
+ ],
+ "notas_ingresos": [
+  "b28",
+  "b29",
+  "b30"
+ ],
+ "notas_gastos": [
+  "b30"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "( Valores expressos em unidades de reais )",
+ "moneda": "BRL",
+ "columna_ejercicio": "01/jan./2022 a 31/dez./2022",
+ "columna_anterior": "01/jan./2021 a 31/dez./2021",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El estado de resultados es b6 (DRE, p. 9). La nota 17 (Receitas operacionais brutas) abarca b28 y b29 porque continúa en la página siguiente. La nota 18 (b30) desglosa el resultado financiero: receitas financeiras para ingresos y despesas financeiras para gastos. No hay nota que desglose los departamentos de gastos. La DRE abierta del club no es consolidada."
+}

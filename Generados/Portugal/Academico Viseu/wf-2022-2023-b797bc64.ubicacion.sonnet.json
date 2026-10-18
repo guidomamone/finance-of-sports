@@ -1,0 +1,237 @@
+{
+ "pdf": "Clubes/Portugal/Academico Viseu/wf-2022-2023-b797bc64.pdf",
+ "md": "Clubes/Portugal/Academico Viseu/wf-2022-2023-b797bc64.md",
+ "mdSha1": "1908e0399ca07a8dd5c11d62620a1df14ebd8680",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:15:00.937Z",
+ "bloques": {
+  "b1": {
+   "pagina": 6,
+   "lineas": [
+    188,
+    225
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    251,
+    268
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    270,
+    272
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 13,
+   "lineas": [
+    535,
+    540
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 14,
+   "lineas": [
+    576,
+    585
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 14,
+   "lineas": [
+    589,
+    602
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 14,
+   "lineas": [
+    606,
+    608
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 14,
+   "lineas": [
+    614,
+    623
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 15,
+   "lineas": [
+    638,
+    660
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 15,
+   "lineas": [
+    668,
+    680
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 15,
+   "lineas": [
+    686,
+    692
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 16,
+   "lineas": [
+    721,
+    735
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 16,
+   "lineas": [
+    739,
+    752
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 17,
+   "lineas": [
+    801,
+    806
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 18,
+   "lineas": [
+    835,
+    848
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 18,
+   "lineas": [
+    852,
+    861
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 19,
+   "lineas": [
+    878,
+    891
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 19,
+   "lineas": [
+    904,
+    918
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 20,
+   "lineas": [
+    933,
+    939
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 20,
+   "lineas": [
+    953,
+    959
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 21,
+   "lineas": [
+    985,
+    1004
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 22,
+   "lineas": [
+    1049,
+    1058
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 22,
+   "lineas": [
+    1062,
+    1064
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 22,
+   "lineas": [
+    1068,
+    1071
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b12"
+ ],
+ "notas_gastos": [
+  "b11",
+  "b13",
+  "b18",
+  "b19",
+  "b21"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Importes en euros con céntimos (ej. 17.877,95 Euros; 2 107 159,12); no se indica 'en miles'.",
+ "moneda": "EUR",
+ "columna_ejercicio": "PERÍODOS 2022/2023",
+ "columna_anterior": "PERÍODOS 2021/2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro b19 (pág. 20, 'Remunerações do pessoal / Encargos... / Total'), que parece repetir el desglose de gastos con personal de b18?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Gastos com o pessoal",
+   "texto": "b19 podría ser una continuación de b18 o un detalle duplicado; no se ve su contenido completo.",
+   "bloques": [
+    "b18",
+    "b19"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados por naturaleza individual de la SAD (b2). Notas elegidas: b12 ingresos por categoría; b11 costo de mercaderías; b13 otros gastos; b18/b19 gastos de personal; b21 servicios externos (FSE). Se descartaron balance, caja, partes relacionadas, intangibles por jugador (b9, b22), tangibles, impuestos, deudas y capital."
+}

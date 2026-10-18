@@ -1,0 +1,201 @@
+{
+ "pdf": "Clubes/Grecia/Atromitos/Atromitos_notes_2015-16.pdf",
+ "md": "Clubes/Grecia/Atromitos/Atromitos_notes_2015-16.md",
+ "mdSha1": "71f718a0ec343ab162de04c3332411e891d48a80",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:19:46.523Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    38,
+    75
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    136,
+    166
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    170,
+    207
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 8,
+   "lineas": [
+    213,
+    232
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 9,
+   "lineas": [
+    238,
+    251
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 17,
+   "lineas": [
+    516,
+    548
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 18,
+   "lineas": [
+    568,
+    595
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 19,
+   "lineas": [
+    625,
+    629
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 20,
+   "lineas": [
+    639,
+    646
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 20,
+   "lineas": [
+    652,
+    657
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 20,
+   "lineas": [
+    669,
+    673
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 21,
+   "lineas": [
+    707,
+    711
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 22,
+   "lineas": [
+    721,
+    729
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 22,
+   "lineas": [
+    735,
+    758
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 23,
+   "lineas": [
+    766,
+    780
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 24,
+   "lineas": [
+    814,
+    821
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 24,
+   "lineas": [
+    825,
+    834
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 24,
+   "lineas": [
+    844,
+    848
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 25,
+   "lineas": [
+    882,
+    887
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 27,
+   "lineas": [
+    937,
+    949
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b14"
+ ],
+ "notas_gastos": [
+  "b15",
+  "b17"
+ ],
+ "escala": "no se sabe",
+ "escala_evidencia": "No se ve ninguna frase de escala en los encabezados ni en las líneas previas de los bloques; se presume unidades (euros) pero hay que confirmarlo.",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2016",
+ "columna_anterior": "30/6/2015",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes del estado de resultados (L. de b4, pág. 8) están en euros enteros, sin miles?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El índice no muestra ninguna frase de escala en el estado ni en las notas; se asume euros enteros por ser cuentas de una sociedad griega con formato ELP.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados por función (b4, pág. 8). Hay notas con ingresos (b14: entradas, derechos de TV, etc.) y gastos (b15: personal, contratos de futbolistas). El b17 desglosa el gasto de personal. La sociedad declara que no tiene partes vinculadas, por lo que el perímetro es individual."
+}

@@ -1,0 +1,76 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/balanco-2010.pdf",
+ "md": "Clubes/Brasil/Novorizontino/balanco-2010.md",
+ "mdSha1": "9d9e7f879fb2d21f4b9c16262f35a5cddc4a39cc",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:07:20.739Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    3,
+    16
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    18,
+    29
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    33,
+    39
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 1,
+   "lineas": [
+    53,
+    61
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 2,
+   "lineas": [
+    65,
+    76
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "(em reais) en el encabezado del bloque b1",
+ "moneda": "BRL",
+ "columna_ejercicio": "31/12/2010",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El bloque b1, titulado 'Balanço Patrimonial' pero que contiene la 'Demonstração do Resultado', es el estado de resultados de 2010 y tiene una sola columna sin año anterior?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El encabezado de b1 dice Balanço Patrimonial pero las filas comienzan con Demonstração do Resultado / Receita Bruta Operacional; no se ve columna del año anterior.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El documento es muy breve (1 página). b1 tiene la Demonstração do Resultado de 2010 en reales; b2 es el balance (ativo) y se descarta; b3 y b4 son firmas. El ejercicio pedido figura como '?', se asume el que cierra el 31/12/2010 según el nombre del archivo. No hay notas."
+}

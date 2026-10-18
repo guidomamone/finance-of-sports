@@ -1,0 +1,48 @@
+{
+ "pdf": "Clubes/Brasil/Remo/dre-2023.pdf",
+ "md": "Clubes/Brasil/Remo/dre-2023.md",
+ "mdSha1": "7b92893ae5c044558eda70d17941ab79942d85c0",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:09:33.121Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    8,
+    23
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    25,
+    27
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    31,
+    35
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "(Em reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "31/12/2023",
+ "columna_anterior": null,
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El documento es una sola página con la DRE a 31/12/2023 (b1) y una columna de ejercicio, sin año anterior. b2 y b3 son firmas digitales, sin datos de resultados. No se indica si es individual o consolidado."
+}

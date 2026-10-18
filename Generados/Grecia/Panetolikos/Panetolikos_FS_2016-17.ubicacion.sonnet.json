@@ -1,0 +1,255 @@
+{
+ "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2016-17.pdf",
+ "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2016-17.md",
+ "mdSha1": "07b70c9cb417aac8bdf01b8fffc64d39a353da63",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:20:24.252Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    19,
+    25
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    93,
+    104
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    136,
+    141
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    181,
+    214
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    220,
+    234
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    242,
+    251
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 7,
+   "lineas": [
+    257,
+    267
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 8,
+   "lineas": [
+    273,
+    300
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    333,
+    341
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    472,
+    489
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 14,
+   "lineas": [
+    499,
+    503
+   ],
+   "tipo": "texto"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    511,
+    512
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 14,
+   "lineas": [
+    518,
+    522
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 14,
+   "lineas": [
+    526,
+    528
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 14,
+   "lineas": [
+    533,
+    535
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 14,
+   "lineas": [
+    537,
+    539
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 14,
+   "lineas": [
+    545,
+    551
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 14,
+   "lineas": [
+    557,
+    561
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 14,
+   "lineas": [
+    565,
+    567
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 15,
+   "lineas": [
+    573,
+    590
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 15,
+   "lineas": [
+    596,
+    604
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 16,
+   "lineas": [
+    621,
+    633
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 17,
+   "lineas": [
+    639,
+    645
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 18,
+   "lineas": [
+    651,
+    652
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 19,
+   "lineas": [
+    658,
+    668
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 20,
+   "lineas": [
+    674,
+    690
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 22,
+   "lineas": [
+    733,
+    754
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b10"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b26"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "ποσά σε € (importes en euros, con céntimos)",
+ "moneda": "EUR",
+ "columna_ejercicio": "30.06.2017",
+ "columna_anterior": "30.06.2016",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se incluye el cuadro 'Παροχές σε εργαζόμενους' (b26, pág. 20: sueldos 556.738,78, cargas sociales 124.334,12, otras prestaciones 595.829,91, total 1.276.902,81) como nota de gastos?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Desglosa gastos de personal, pero el estado está por función y no tiene un renglón de personal propio; el total puede estar repartido entre costo de ventas y gastos de administración.",
+   "bloques": [
+    "b26",
+    "b10"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados individual por función en b10 (pág. 13), en euros, ejercicio 01.07.2016-30.06.2017. No hay notas de ingresos que abran la cifra de negocios ni los otros ingresos ordinarios. Los bloques b4 a b8 son cuadros de activo fijo y de detalle por jugador, y b9 y b21 son evolución del patrimonio, por lo que se descartan."
+}

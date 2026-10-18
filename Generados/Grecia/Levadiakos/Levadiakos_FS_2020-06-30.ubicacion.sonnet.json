@@ -1,0 +1,130 @@
+{
+ "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2020-06-30.pdf",
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2020-06-30.md",
+ "mdSha1": "237dc9f3029b887e0f2a6e8bf02d6408d462e3f3",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:19:50.044Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    16,
+    66
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    85,
+    102
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    282,
+    289
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 11,
+   "lineas": [
+    370,
+    399
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 11,
+   "lineas": [
+    407,
+    408
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 12,
+   "lineas": [
+    425,
+    428
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 12,
+   "lineas": [
+    434,
+    441
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    447,
+    451
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 13,
+   "lineas": [
+    472,
+    476
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    494,
+    498
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 14,
+   "lineas": [
+    519,
+    529
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 15,
+   "lineas": [
+    570,
+    574
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 15,
+   "lineas": [
+    578,
+    589
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b13"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con decimales completos (ej. 153.536,06) sin mención de miles; no hay frase explícita de escala en el índice",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2020",
+ "columna_anterior": "30/6/2019",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El estado de resultados (b2) es por función (coste de ventas). b13 desglosa los costes de personal (sueldos, primas de futbolistas, etc.). El encabezado de b2 no se ve en el índice; se asume 30/6/2020 y 30/6/2019 por analogía con las demás tablas. Los demás bloques son balance, activos fijos, y desgloses de balance (clientes, otras cuentas por cobrar, gastos anticipados, caja, proveedores, otros pasivos), que no se eligen. Faltan los bloques b5 y b12 en el índice."
+}

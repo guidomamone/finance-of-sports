@@ -1,0 +1,120 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/balanco-2012.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/balanco-2012.md",
+ "mdSha1": "531b455c95756143dc120c00d015d241159ed8eb",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:09:06.426Z",
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    133,
+    149
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    171,
+    202
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    218,
+    256
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 8,
+   "lineas": [
+    272,
+    278
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 11,
+   "lineas": [
+    350,
+    355
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    361,
+    366
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    378,
+    384
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    400,
+    407
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 13,
+   "lineas": [
+    427,
+    439
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    445,
+    455
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 14,
+   "lineas": [
+    475,
+    480
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    486,
+    492
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Em reais",
+ "moneda": "BRL",
+ "columna_ejercicio": "2012",
+ "columna_anterior": "2011",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El documento trae un único estado de resultados (DRE, b2). Ninguna nota desglosa ingresos ni gastos: los bloques de notas son de caja, créditos a recibir, inmovilizado, intangible, tributos, cuentas a pagar, préstamos y patrimonio, y todos se descartan. El balance, el flujo de caja y la evolución del patrimonio también se descartan."
+}

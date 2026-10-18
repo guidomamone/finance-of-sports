@@ -1,0 +1,72 @@
+{
+ "pdf": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2015-16.pdf",
+ "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2015-16.md",
+ "mdSha1": "9f98be81fd03bbec801dd005415de3e913ea8762",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:14:01.846Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    21,
+    52
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    60,
+    72
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    76,
+    94
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    167,
+    177
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    185,
+    187
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    194,
+    200
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Κατάσταση Αποτελεσμάτων (κατά λειτουργία) Ποσά εκφρασμένα σε μονάδες Ευρώ",
+ "moneda": "EUR",
+ "columna_ejercicio": "1/7/2015- 30/6/2016",
+ "columna_anterior": "22/8/2014- 30/6/2015",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El documento solo trae balance, estado de resultados por función (b3) y una memoria con datos generales sin desgloses de ingresos ni gastos. No hay notas que abran renglones. El ejercicio anterior es un primer período más corto (desde el 22/8/2014)."
+}

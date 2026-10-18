@@ -1,0 +1,266 @@
+{
+ "pdf": "Clubes/Portugal/Felgueiras/Fecho-de-contas-SAD-2021-2022.pdf",
+ "md": "Clubes/Portugal/Felgueiras/Fecho-de-contas-SAD-2021-2022.md",
+ "mdSha1": "2383c425c64c7abcd77f205db47d8373fa510a17",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:16:14.036Z",
+ "bloques": {
+  "b1": {
+   "pagina": 6,
+   "lineas": [
+    201,
+    214
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    227,
+    256
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 12,
+   "lineas": [
+    471,
+    477
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 13,
+   "lineas": [
+    496,
+    511
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 13,
+   "lineas": [
+    515,
+    530
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 14,
+   "lineas": [
+    557,
+    567
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 15,
+   "lineas": [
+    588,
+    595
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 15,
+   "lineas": [
+    609,
+    614
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 16,
+   "lineas": [
+    635,
+    640
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 16,
+   "lineas": [
+    642,
+    648
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 16,
+   "lineas": [
+    654,
+    664
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 17,
+   "lineas": [
+    687,
+    694
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 17,
+   "lineas": [
+    698,
+    703
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 17,
+   "lineas": [
+    707,
+    712
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 18,
+   "lineas": [
+    748,
+    771
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 19,
+   "lineas": [
+    788,
+    800
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 19,
+   "lineas": [
+    804,
+    806
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 20,
+   "lineas": [
+    826,
+    886
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 21,
+   "lineas": [
+    900,
+    962
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 22,
+   "lineas": [
+    976,
+    1034
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 23,
+   "lineas": [
+    1048,
+    1111
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 24,
+   "lineas": [
+    1127,
+    1188
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 25,
+   "lineas": [
+    1204,
+    1245
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 33,
+   "lineas": [
+    1470,
+    1473
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 35,
+   "lineas": [
+    1495,
+    1499
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 35,
+   "lineas": [
+    1501,
+    1506
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 35,
+   "lineas": [
+    1512,
+    1514
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b15"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(montantes em euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "jun 2022",
+ "columna_anterior": "jun 2021",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Informação por atividade económica' (b11), que abre Gastos com o pessoal en Remunerações y Outros gastos?",
+   "propuesta": "no",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "Gastos com o pessoal",
+   "texto": "El cuadro b11 desglosa Gastos com o pessoal (383.628,34) en Remunerações 160.180,67 y Outros gastos 223.447,67, pero el estado y la nota b15 no abren ese renglón.",
+   "bloques": [
+    "b11"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿El estado de resultados b1 tiene el renglón 'Outros gastos' (136.213,01) distinto de lo que muestra b11 (223.447,67 dentro de personal)?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Outros gastos",
+   "texto": "En b1 Outros gastos es 136.213,01, mientras b11 muestra Outros gastos 223.447,67 como parte de personal; no se ve relación directa.",
+   "bloques": [
+    "b1",
+    "b11"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Documento de una SAD con cuentas individuales. El estado b1 tiene columnas jun 2022 y jun 2021. El balancete (b18-b23) es de 2021/12/31 y no es estado de resultados. b15 desglosa Fornecimentos e serviços externos (total 152.312,85 igual a b1). b12, b13 y b14 son cuadros comparativos o por mercado que no se eligen."
+}

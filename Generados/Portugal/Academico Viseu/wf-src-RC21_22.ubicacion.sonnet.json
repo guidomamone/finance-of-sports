@@ -1,0 +1,216 @@
+{
+ "pdf": "Clubes/Portugal/Academico Viseu/wf-src-RC21_22.pdf",
+ "md": "Clubes/Portugal/Academico Viseu/wf-src-RC21_22.md",
+ "mdSha1": "beb4a6f4cd55483dfbbb427fc73e61b45bb4b51c",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:15:14.965Z",
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    137,
+    172
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    191,
+    208
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 6,
+   "lineas": [
+    210,
+    212
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 11,
+   "lineas": [
+    429,
+    434
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 12,
+   "lineas": [
+    460,
+    465
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 12,
+   "lineas": [
+    469,
+    477
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 12,
+   "lineas": [
+    483,
+    495
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 13,
+   "lineas": [
+    509,
+    523
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 13,
+   "lineas": [
+    529,
+    535
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    549,
+    563
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 14,
+   "lineas": [
+    573,
+    590
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 15,
+   "lineas": [
+    653,
+    666
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 16,
+   "lineas": [
+    676,
+    683
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 16,
+   "lineas": [
+    687,
+    697
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 16,
+   "lineas": [
+    708,
+    715
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 16,
+   "lineas": [
+    717,
+    731
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 17,
+   "lineas": [
+    751,
+    756
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 17,
+   "lineas": [
+    762,
+    781
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 18,
+   "lineas": [
+    827,
+    836
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 19,
+   "lineas": [
+    846,
+    849
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b10"
+ ],
+ "notas_gastos": [
+  "b9",
+  "b11",
+  "b15",
+  "b16",
+  "b18"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Importes en euros con decimales y notas como 'capital social de 200.500 Euros'; no se indica miles ni millones.",
+ "moneda": "EUR",
+ "columna_ejercicio": "PERÍODOS: 2021/2022",
+ "columna_anterior": "PERÍODOS: 2020/2021",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Decomposição da rubrica Outros gastos' (b11), que incluye 'Cedência de Atletas', por ser desglose de gastos?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Outros gastos",
+   "texto": "b11 desglosa Outros gastos del estado de resultados; se propone incluirlo como nota de gastos.",
+   "bloques": [
+    "b11"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Es el cuadro b16 (sin título, Atletas - remunerações, Total Outro pessoal) un desglose de Gastos com o pessoal del ejercicio 2021/2022?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Gastos com o pessoal",
+   "texto": "b16 no tiene título visible (arriba '-'), pero sus columnas 2021/2022 y 2020/2021 y sus filas corresponden a gastos de personal, junto a b15.",
+   "bloques": [
+    "b16",
+    "b15"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Un solo estado de resultados por naturaleza (b2, pág. 6), sociedad individual (SAD). b10 abre los ingresos (rédito) y b9, b11, b15, b16 y b18 abren gastos (CMVMC, otros gastos, personal, FSE). Se excluyen balance, flujos, partes relacionadas, intangibles y fijos, desgloses de deudas y capital propio, y el listado por jugador (b7, b19)."
+}

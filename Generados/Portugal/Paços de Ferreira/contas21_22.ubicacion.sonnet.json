@@ -1,0 +1,169 @@
+{
+ "pdf": "Clubes/Portugal/Paços de Ferreira/contas21_22.pdf",
+ "md": "Clubes/Portugal/Paços de Ferreira/contas21_22.md",
+ "mdSha1": "33a905254c88f0a957d1ae2831f64411ed60c5bf",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:11:15.656Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    7,
+    47
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    59,
+    76
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    88,
+    117
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    130,
+    140
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 4,
+   "lineas": [
+    144,
+    154
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 13,
+   "lineas": [
+    310,
+    319
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 14,
+   "lineas": [
+    325,
+    334
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 14,
+   "lineas": [
+    336,
+    343
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 15,
+   "lineas": [
+    355,
+    365
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 16,
+   "lineas": [
+    375,
+    407
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 17,
+   "lineas": [
+    413,
+    420
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 17,
+   "lineas": [
+    422,
+    427
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 18,
+   "lineas": [
+    443,
+    445
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 19,
+   "lineas": [
+    459,
+    467
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    477,
+    485
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 20,
+   "lineas": [
+    493,
+    497
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 21,
+   "lineas": [
+    505,
+    516
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b6",
+  "b7",
+  "b8"
+ ],
+ "notas_gastos": [
+  "b9",
+  "b10",
+  "b11",
+  "b12"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "El texto de la memoria cita importes en euros completos (p. ej. 8.526.629,34 €, 2.718.167,25 €); no hay indicación de miles en los encabezados.",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/06/2022",
+ "columna_anterior": "30/06/2021",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados por naturaleza en b2 (pág. 2), ejercicio 01/07/2021 a 30/06/2022. El encabezado de b2 dice 'Períodos'; se asumen las columnas 30/06/2022 y 30/06/2021, como en las notas. Documento de una sola entidad (individual). b4 y b5 (evolución del patrimonio), b1 (balance), b3 (flujo de efectivo), b14 (ratios), b15 y b16 (financiamientos) quedan fuera."
+}

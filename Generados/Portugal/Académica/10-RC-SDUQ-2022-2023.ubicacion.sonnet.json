@@ -1,0 +1,260 @@
+{
+ "pdf": "Clubes/Portugal/Académica/10-RC-SDUQ-2022-2023.pdf",
+ "md": "Clubes/Portugal/Académica/10-RC-SDUQ-2022-2023.md",
+ "mdSha1": "a036b07619ac804dffb92027c4534f35bc136c41",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:12:39.935Z",
+ "bloques": {
+  "b1": {
+   "pagina": 9,
+   "lineas": [
+    360,
+    400
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 11,
+   "lineas": [
+    522,
+    539
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 13,
+   "lineas": [
+    659,
+    666
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 15,
+   "lineas": [
+    787,
+    797
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 17,
+   "lineas": [
+    823,
+    844
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 21,
+   "lineas": [
+    1139,
+    1142
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 25,
+   "lineas": [
+    1412,
+    1418
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 25,
+   "lineas": [
+    1424,
+    1428
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 27,
+   "lineas": [
+    1540,
+    1545
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 27,
+   "lineas": [
+    1559,
+    1561
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 27,
+   "lineas": [
+    1563,
+    1566
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 29,
+   "lineas": [
+    1682,
+    1691
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 29,
+   "lineas": [
+    1697,
+    1700
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 31,
+   "lineas": [
+    1728,
+    1734
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 31,
+   "lineas": [
+    1740,
+    1747
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 31,
+   "lineas": [
+    1759,
+    1764
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 33,
+   "lineas": [
+    1874,
+    1878
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 33,
+   "lineas": [
+    1884,
+    1894
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 33,
+   "lineas": [
+    1900,
+    1917
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 35,
+   "lineas": [
+    2031,
+    2036
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 35,
+   "lineas": [
+    2046,
+    2051
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 35,
+   "lineas": [
+    2057,
+    2062
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 37,
+   "lineas": [
+    2076,
+    2079
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 37,
+   "lineas": [
+    2085,
+    2089
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 37,
+   "lineas": [
+    2095,
+    2114
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 39,
+   "lineas": [
+    2228,
+    2233
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 39,
+   "lineas": [
+    2241,
+    2248
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b24",
+  "b27"
+ ],
+ "notas_gastos": [
+  "b25",
+  "b22",
+  "b26",
+  "b21"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Euro)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2022/2023",
+ "columna_anterior": "2021/2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de la pág. 27 'Demonstração de Resultados' (b9), que parece corresponder a otro ejercicio (menciona Época 2019/2020)?",
+   "propuesta": "sí",
+   "tema": "cuadro-de-otro-anio",
+   "renglon": "",
+   "texto": "El cuadro b9 de la pág. 27 tiene columnas de valor aprobado, ajustamientos y valor final y menciona 'Outros Rendimentos Época 2019/2020', parece una corrección de errores del ejercicio 2021/2022.",
+   "bloques": [
+    "b9"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Documento individual (Balanço individual, DR individual por naturezas). Estado de resultados en b2, en euros con dos decimales. Notas de ingresos: 22 Vendas e prestações de serviços (b24), 25 Outros rendimentos (b27). Notas de gastos: 23 FSE (b25), 24 Outros gastos (b26), 21 Gastos com pessoal (b22), 20 Gastos de financiamento (b21). b8 y b9 son correcciones de errores del ejercicio anterior, no se eligen."
+}

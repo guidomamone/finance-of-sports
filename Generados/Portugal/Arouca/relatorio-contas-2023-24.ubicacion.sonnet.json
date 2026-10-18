@@ -1,0 +1,279 @@
+{
+ "pdf": "Clubes/Portugal/Arouca/relatorio-contas-2023-24.pdf",
+ "md": "Clubes/Portugal/Arouca/relatorio-contas-2023-24.md",
+ "mdSha1": "14f399eb613ffffaea488c466b8c50938109a6d1",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:15:37.622Z",
+ "bloques": {
+  "b1": {
+   "pagina": 4,
+   "lineas": [
+    118,
+    120
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 8,
+   "lineas": [
+    234,
+    251
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    253,
+    255
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 8,
+   "lineas": [
+    257,
+    262
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 9,
+   "lineas": [
+    290,
+    333
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    397,
+    417
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 12,
+   "lineas": [
+    435,
+    451
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 13,
+   "lineas": [
+    479,
+    505
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 20,
+   "lineas": [
+    765,
+    769
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 22,
+   "lineas": [
+    830,
+    835
+   ],
+   "tipo": "texto"
+  },
+  "b11": {
+   "pagina": 22,
+   "lineas": [
+    853,
+    867
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 23,
+   "lineas": [
+    878,
+    883
+   ],
+   "tipo": "texto"
+  },
+  "b13": {
+   "pagina": 23,
+   "lineas": [
+    885,
+    899
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 24,
+   "lineas": [
+    922,
+    929
+   ],
+   "tipo": "texto"
+  },
+  "b15": {
+   "pagina": 24,
+   "lineas": [
+    931,
+    944
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 24,
+   "lineas": [
+    948,
+    961
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 28,
+   "lineas": [
+    1117,
+    1123
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 28,
+   "lineas": [
+    1133,
+    1137
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 29,
+   "lineas": [
+    1155,
+    1161
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 29,
+   "lineas": [
+    1175,
+    1181
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 30,
+   "lineas": [
+    1204,
+    1210
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 30,
+   "lineas": [
+    1218,
+    1223
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 31,
+   "lineas": [
+    1245,
+    1256
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 32,
+   "lineas": [
+    1294,
+    1299
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 32,
+   "lineas": [
+    1319,
+    1327
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 33,
+   "lineas": [
+    1355,
+    1361
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 33,
+   "lineas": [
+    1365,
+    1369
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 34,
+   "lineas": [
+    1398,
+    1426
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 35,
+   "lineas": [
+    1454,
+    1462
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 35,
+   "lineas": [
+    1470,
+    1480
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 36,
+   "lineas": [
+    1508,
+    1515
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b30",
+  "b31"
+ ],
+ "notas_gastos": [
+  "b25",
+  "b28",
+  "b29"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Montantes expressos em EURO",
+ "moneda": "EUR",
+ "columna_ejercicio": "2023-24",
+ "columna_anterior": "2022-23",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Solo hay demonstração individual dos resultados por naturezas (b2, pág. 8); no hay consolidado. Notas de ingresos: Prestação de serviços (b30) y Outros rendimentos e ganhos (b31). Notas de gastos: Gastos com o pessoal (b25), Fornecimentos e serviços externos (b28) y Outros gastos (b29). Los cuadros de intangibles y activos fijos tangibles (b11, b13, b15, b16), clientes, estado, fluxos de caixa y balance no se eligen. Los bloques de texto b10, b12 y b14 son cabeceras de página sin datos relevantes."
+}

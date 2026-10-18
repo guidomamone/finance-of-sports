@@ -1,0 +1,66 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/balanco-2015.pdf",
+ "md": "Clubes/Brasil/Novorizontino/balanco-2015.md",
+ "mdSha1": "cc88590ce40db6f0949118d32c9a5e7816e9990a",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:07:24.136Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    13,
+    61
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    77,
+    125
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    141,
+    156
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    185,
+    216
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    232,
+    266
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1",
+  "b2",
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "No hay indicación de escala en el índice; los importes parecen estar en reales enteros (balancete con cuentas detalladas).",
+ "moneda": "BRL",
+ "columna_ejercicio": "01/01/2015 a 31/12/2015",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El documento es un balancete de cuentas detallado que abarca b1 a b3 (receitas y despesas del período 01/01/2015 a 31/12/2015) y continúa entre páginas. b4 (activo) y b5 (pasivo) son balance y se excluyen. No hay columna del año anterior ni notas explicativas. Perímetro individual, sin consolidado."
+}
