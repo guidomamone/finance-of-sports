@@ -77,6 +77,9 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
   'firma'|'persona'|'organismo', legal? } | null, dictamen: 'sin_salvedades'|'con_salvedades'|'adverso'|'abstencion'|'sin_informe',
   continuidad: bool, fuente: { md, linea } | null }`). Link "ver en el balance" a `fuente.md`, como en Estructura. Vocabulario
   provisorio. Mockup antes de codear; esperar el hash de finanzas.
+  Aclaración de Guido: "liga" es el balance propio de la entidad que organiza la liga (AFA, LFP) y quién lo auditó, no marcar los
+  clubes. El sitio no tiene esas entidades; se le propuso a finanzas `window.LIGA_AUDITORIA[leagueId][anio] = { entidad, auditor,
+  dictamen, continuidad, fuente }`.
 
 ### Qué cambió, 271 (para CHANGELOG)
 
