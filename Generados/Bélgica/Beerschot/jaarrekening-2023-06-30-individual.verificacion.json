@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2023-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Beerschot/jaarrekening-2023-06-30-individual.md",
- "generado": "2026-10-18T15:46:15.495Z",
+ "generado": "2026-10-18T19:01:12.152Z",
  "estado": "cola",
  "clubId": "beerschot-be",
  "year": 2023,
@@ -13,7 +13,6 @@
  },
  "ajustes": null,
  "cola": [
-  "1b029a3",
   "d7a9f73"
  ],
  "chequeos": [
@@ -27,13 +26,20 @@
   {
    "nombre": "total de gastos",
    "ok": true,
-   "detalle": "\"Bedrijfskosten\" 13.032675 cierra; además se suman 14 línea(s) fuera de ese total (13.642558)"
+   "detalle": "13.032676 = 13.032675",
+   "suma": 13.032675999999999,
+   "impreso": 13.032675
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 7.98553 - gastos 26.675233 ± financiero 0.158983 ± impuesto 0.158922 no da el impreso -5.190941",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 8.881784197001252e-16
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2024",
@@ -49,27 +55,34 @@
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
   "la nota de \"Niet-recurrente bedrijfsopbrengsten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b58 es una versión resumida del estado oficial VOL-kap 4 en el informe de gestión.",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
   "duda de extraer que no afecta la carga: L916+L921+L922 suman 87.056 vs 87.055 en L357 (redondeo), pero la etiqueta duplicada en L921/L922 es rara.",
-  "duda de extraer que no afecta la carga: L859 duplica la Omzet por mercado; anterior difiere en 25.000 de L326."
+  "duda de extraer que no afecta la carga: L859 duplica la Omzet por mercado; anterior difiere en 25.000 de L326.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 7.98553,
-  "gastos": 26.675233,
+  "gastos": 13.032676,
   "financiero": 0.158983,
   "impuesto": 0.158922,
   "resultadoImpreso": -5.190941,
   "resultadoParaCargar": -5.190941,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
  },
  "lineas": [
   {
@@ -121,22 +134,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Bedrijfskosten",
-   "lado": "gasto",
-   "M": 13.032675,
-   "pagina": 9,
-   "linea": 331,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Handelsgoederen, grond- en hulpstoffen",
-   "lado": "gasto",
-   "M": 0.515074,
-   "pagina": 9,
-   "linea": 332,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Aankopen",
    "lado": "gasto",
    "M": 0.562478,
@@ -147,10 +144,10 @@
   {
    "etiqueta": "Voorraad: afname (toename) (+)/(-)",
    "lado": "gasto",
-   "M": 0.047404,
+   "M": -0.047404,
    "pagina": 9,
    "linea": 334,
-   "origen": "estado"
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
   },
   {
    "etiqueta": "Diensten en diverse goederen",
@@ -242,8 +239,8 @@
   }
  ],
  "signosCarga": {
-  "financiero": 1,
-  "impuesto": 1
+  "financiero": "rótulo",
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -253,19 +250,19 @@
   },
   {
    "etiqueta": "Kosten van schulden",
-   "M": 0.024377,
+   "M": -0.024377,
    "linea": 361
   },
   {
    "etiqueta": "Andere financiële kosten",
-   "M": 0.047551,
+   "M": -0.047551,
    "linea": 363
   }
  ],
  "impuesto": [
   {
    "etiqueta": "Belastingen",
-   "M": 0.158922,
+   "M": -0.158922,
    "linea": 369
   },
   {

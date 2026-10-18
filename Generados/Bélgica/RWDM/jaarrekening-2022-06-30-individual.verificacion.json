@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2022-06-30-individual.pdf",
  "md": "Clubes/Bélgica/RWDM/jaarrekening-2022-06-30-individual.md",
- "generado": "2026-10-18T15:46:15.723Z",
+ "generado": "2026-10-18T19:01:12.692Z",
  "estado": "cola",
  "clubId": "rwdm-be",
  "year": 2022,
@@ -24,7 +24,6 @@
   }
  ],
  "cola": [
-  "2ec62f3",
   "9ddcf3f",
   "4bc7f69"
  ],
@@ -41,9 +40,14 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 1.097582 - gastos 2.812687 ± financiero 0.014422 ± impuesto 0 no da el impreso -1.743454",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo)",
+   "dif": 0.000001000000000139778
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2023",
@@ -62,21 +66,24 @@
   }
  ],
  "notas": [
+  "escalón \"de los cuales\": cerró la lectura 4 sin las filas \"Waarvan: niet-recurrente bedrijfsopbrengsten\" L248 (una parte de la fila de arriba)",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: El informe de b29 da dos cifras distintas en neerlandés e inglés; se debe contrastar con b12.",
-  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 1.097582,
+  "ingresos": 1.08213,
   "gastos": 2.812687,
   "financiero": 0.014422,
   "impuesto": 0,
   "resultadoImpreso": -1.743454,
   "resultadoParaCargar": -1.743454,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "financiero por rótulo"
  },
  "lineas": [
   {
@@ -85,14 +92,6 @@
    "M": 1.08213,
    "pagina": 7,
    "linea": 247,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Waarvan: niet-recurrente bedrijfsopbrengsten",
-   "lado": "ingreso",
-   "M": 0.015452,
-   "pagina": 7,
-   "linea": 248,
    "origen": "estado"
   },
   {
@@ -137,7 +136,7 @@
   }
  ],
  "signosCarga": {
-  "financiero": 1,
+  "financiero": "rótulo",
   "impuesto": 1
  },
  "financiero": [
@@ -148,7 +147,7 @@
   },
   {
    "etiqueta": "Recurrente financiële kosten",
-   "M": 0.01366,
+   "M": -0.01366,
    "linea": 264
   }
  ],

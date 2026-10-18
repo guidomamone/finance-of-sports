@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2021-06-30-individual-correction.pdf",
  "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2021-06-30-individual-correction.md",
- "generado": "2026-10-18T15:46:15.534Z",
+ "generado": "2026-10-18T19:01:12.353Z",
  "estado": "cola",
  "clubId": "lommelsk-be",
  "year": 2021,
@@ -13,7 +13,6 @@
  },
  "ajustes": null,
  "cola": [
-  "bd1fdb8",
   "ee7997c"
  ],
  "chequeos": [
@@ -29,9 +28,9 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 2.26023 - gastos 10.01545 ± financiero 0.096539 ± impuesto 0.01192 no da el impreso -7.76946",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 0.000001000000000139778
   },
   {
    "nombre": "documento del año 2022",
@@ -51,7 +50,8 @@
  ],
  "notas": [
   "la nota de \"Niet-recurrente bedrijfskosten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
-  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -64,7 +64,7 @@
   "resultadoImpreso": -7.76946,
   "resultadoParaCargar": -7.76946,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
  },
  "lineas": [
   {
@@ -125,8 +125,8 @@
   }
  ],
  "signosCarga": {
-  "financiero": 1,
-  "impuesto": 1
+  "financiero": "rótulo",
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -136,19 +136,19 @@
   },
   {
    "etiqueta": "Niet-recurrente financiële opbrengsten",
-   "M": null,
+   "M": 0,
    "linea": 223
   },
   {
    "etiqueta": "Recurrente financiële kosten",
-   "M": 0.04943,
+   "M": -0.04943,
    "linea": 225
   }
  ],
  "impuesto": [
   {
    "etiqueta": "Belastingen op het resultaat (+)/(-)",
-   "M": 0.01192,
+   "M": -0.01192,
    "linea": 230
   }
  ]

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2015-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2015-06-30-individual.md",
- "generado": "2026-10-18T15:46:15.634Z",
+ "generado": "2026-10-18T19:01:12.623Z",
  "estado": "cola",
  "clubId": "patroeisden-be",
  "year": 2015,
@@ -35,8 +35,8 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (como impresos)",
-   "dif": 0.00041300000000012854
+   "detalle": "cierra (financiero por rótulo)",
+   "dif": 0.000001000000000132839
   },
   {
    "nombre": "documento del año 2016",
@@ -71,7 +71,7 @@
   "resultadoImpreso": 0.049158,
   "resultadoParaCargar": 0.049158,
   "resultadoFinal": null,
-  "lecturaSignos": "como impresos"
+  "lecturaSignos": "financiero por rótulo"
  },
  "lineas": [
   {
@@ -140,7 +140,7 @@
   }
  ],
  "signosCarga": {
-  "financiero": 1,
+  "financiero": "rótulo",
   "impuesto": 1
  },
  "financiero": [
@@ -151,9 +151,31 @@
   },
   {
    "etiqueta": "Financiële kosten",
-   "M": 0.000206,
+   "M": -0.000206,
    "linea": 207
   }
  ],
- "impuesto": []
+ "impuesto": [],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "pendiente",
+  "clave": "efcc8f5cac93ebce501f5fbdd617390e9b9089cc",
+  "rango": [
+   191,
+   214
+  ],
+  "lineasCargadas": [
+   195,
+   209,
+   198,
+   250,
+   251,
+   253,
+   201,
+   203,
+   206,
+   207
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 191 a 214 del .md):\nL191: | | Toel. | Codes | Boekjaar | Vorig boekjaar |\nL192: | --- | --- | --- | --- | --- |\nL193: | Bedrijfsopbrengsten en bedrijfskosten | | | | |\nL194: | Brutomarge (+)/(-) | | 9900 | 535.658 | 266.761 |\nL195: | Bedrijfsopbrengsten | | 70/74 | 933.485 | |\nL196: | Omzet | | 70 | | |\nL197: | Lidgeld, schenkingen, legaten en subsidies | | 73 | | |\nL198: | Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen | | 60/61 | 397.827 | |\nL199: | Bezoldigingen, sociale lasten en pensioenen (+)/(-) | 5.5 | 62 | 494.942 | 362.814 |\nL200: | Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa | | 630 | | |\nL201: | Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) | | 631/4 | 1.500 | |\nL202: | Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-) | | 635/8 | | |\nL203: | Andere bedrijfskosten | | 640/8 | 4.472 | 6.252 |\nL204: | Als herstructureringskosten geactiveerde bedrijfskosten (-) | | 649 | | |\nL205: | Positief (Negatief) bedrijfsresultaat (+)/(-) | | 9901 | 34.744 | -102.305 |\nL206: | Financiële opbrengsten | 5.5 | 75 | 9.327 | 13.635 |\nL207: | Financiële kosten | 5.5 | 65 | 206 | 621 |\nL208: | Positief (Negatief) resultaat uit de gewone bedrijfsuitoefening (+)/(-) | | 9902 | 43.865 | -89.291 |\nL209: | Uitzonderlijke opbrengsten | | 76 | 5.293 | 3.113 |\nL210: | Uitzonderlijke kosten | | 66 | | |\nL211: | Positief (Negatief) resultaat van het boekjaar (+)/(-) | | 9904 | 49.158 | -86.178 |\nL213: 5/10\n\nLO QUE SE CARGA:\n- ingreso · \"Bedrijfsopbrengsten\" · 0.933485 · L195\n- ingreso · \"Uitzonderlijke opbrengsten\" · 0.005293 · L209\n- gasto · \"Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen\" · 0.397827 · L198\n- gasto · \"Bezoldigingen en rechtstreekse sociale voordelen\" · 0.377459 · L250 (de una nota)\n- gasto · \"Werkgeversbijdragen voor sociale verzekeringen\" · 0.090548 · L251 (de una nota)\n- gasto · \"Andere personeelskosten\" · 0.026934 · L253 (de una nota)\n- gasto · \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen:\" · 0.0015 · L201\n- gasto · \"Andere bedrijfskosten\" · 0.004472 · L203\n- financiero · \"Financiële opbrengsten\" · 0.009327 · L206\n- financiero · \"Financiële kosten\" · -0.000206 · L207"
+ }
 }

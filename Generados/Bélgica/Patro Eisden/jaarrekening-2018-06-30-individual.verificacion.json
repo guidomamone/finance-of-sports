@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2018-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2018-06-30-individual.md",
- "generado": "2026-10-18T15:46:15.656Z",
+ "generado": "2026-10-18T19:01:12.632Z",
  "estado": "cola",
  "clubId": "patroeisden-be",
  "year": 2018,
@@ -31,8 +31,8 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (como impresos)",
-   "dif": 0.00794999999999979
+   "detalle": "cierra (financiero por rótulo)",
+   "dif": 1.1102230246251565e-16
   },
   {
    "nombre": "documento del año 2019",
@@ -48,6 +48,11 @@
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2017: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos y resultado coinciden con lo impreso a 0,01% o menos y el otro total no está impreso (queda determinado): no hace falta la revisión del primer año (to-do 214, escalón 2)"
   }
  ],
  "notas": [
@@ -65,7 +70,7 @@
   "resultadoImpreso": -0.608202,
   "resultadoParaCargar": -0.608202,
   "resultadoFinal": null,
-  "lecturaSignos": "como impresos"
+  "lecturaSignos": "financiero por rótulo"
  },
  "lineas": [
   {
@@ -150,7 +155,7 @@
   }
  ],
  "signosCarga": {
-  "financiero": 1,
+  "financiero": "rótulo",
   "impuesto": 1
  },
  "financiero": [
@@ -161,7 +166,7 @@
   },
   {
    "etiqueta": "Financiële kosten",
-   "M": 0.003975,
+   "M": -0.003975,
    "linea": 242
   }
  ],

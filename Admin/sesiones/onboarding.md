@@ -127,3 +127,49 @@ j) DATOS (no script): Estonia no tiene ligas en `data/leagues.js`; propuesto `ee
 - Mejora de script nueva (para el 298, s): periodo.mjs / localizar toman el INICIO del boekjaar como cierre cuando el ejercicio empieza en
   junio (Beerschot 2019 -correction: "van 29-06-2018 tot 30-06-2019" -> ejercicio 2018) y localizar elige la columna "Vorig boekjaar"
   (vacía): 0 filas extraídas, sin aviso de por qué.
+
+### Para la sesión nueva (Onboarding 2): por dónde seguir (2026-10-18, cierre de Onboarding 1)
+
+Estado: carpeta limpia, todo commiteado. Las tools son las de main (la rama se adelantó a main después del tercer merge). Antes de
+nada: `node tools/worktree.mjs preparar /Users/guidopablomamonesoneira/Claude/Projects/fos-onboarding`.
+
+**1. Bélgica (to-do 292), lo que va primero.** Lista activa `Admin/lotes/lote-92.txt` (55 documentos, 2013-2024 de Beerschot, Lierse SK,
+Lokeren-Temse, Lommel SK, OH Leuven, Patro Eisden y RWDM; la 90, de las altas 2025, ya está archivada). Ya en el sitio: los 8 clubes belgas
+2025, Lommel SK 2018 y RWDM 2020. Con las tools de main (mejoras b y o), `verificar` gratis da 41 de 50 resultados que cierran. Primer
+comando (lo corre Guido, ~US$ 1,65):
+```
+cd /Users/guidopablomamonesoneira/Claude/Projects/fos-onboarding && caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-92-rehacer.txt --ejecutar --rehacer && caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-92.txt --ejecutar --cargar ; osascript -e 'display notification "Terminó el lote" with title "finance-of-sports" sound name "Glass"'; say "lote terminado"
+```
+`lote-92-rehacer.txt` es Beerschot 2019 -correction: se había localizado con la columna "Vorig boekjaar" (vacía, 0 filas); ya tiene el
+ajuste `cierre` 2019-06-30. Después: la cola belga con subagentes Sonnet, un club por vez. El método que funcionó en los lotes 89-91: armar
+los casos por club con un script (cola.mjs filtrado por carpeta, sin gestión), un subagente por grupo de clubes con el prompt "solo Read,
+Write y grep simple" (memoria subagentes-sin-bash), revisar los borradores grandes contra el .md y con `verificar.mjs` (gratis) antes de
+aplicarlos, y aplicar con un script (`cola.mjs --responder` / `ajustes.mjs --agregar`). Precedentes belgas ya decididos: el 630
+(amortizaciones) se parte según la nota de activos fijos (pases -> player_amortisation, bienes de uso -> depreciation, goodwill ->
+other_amortisation); el residuo implícito de la Brutomarge en el esquema abreviado va como other_income (Lokeren-Temse 2025, como Dender EH);
+la Brutomarge sin Omzet ni 60/61 es el ingreso operativo (lump_football_operations); el 76A "waarvan" no se suma aparte. Ojo: en main
+`cargar.mjs` frena un año nuevo sin estadio y sponsor (to-do 273); los años belgas pueden frenar por eso.
+DUDA ABIERTA para Guido: las 5 versiones originales reemplazadas por su -correction (Beerschot 2019, Lokeren-Temse 2023, Lommel SK 2021,
+Patro Eisden 2020 y 2024): ¿a `Admin/registros/documentos-descartados.txt`? (recomendado; el lote ya no las usa).
+Caja y deuda de los 17 clubes nuevos: vacía. Estonia no tiene dónde mirar (mejora r); en Bélgica cuidado con el código "54/58" leído como
+caja (mejora c). No correr `caja-deuda --escribir` en Bélgica sin mirar el valor contra el balance.
+
+**2. To-do 292, lo que queda además de Bélgica.** Los 319 `.md` viejos sin tablas de `Admin/lotes/sin-tablas-6paises.txt`: decidir
+subagentes o Mistral; antes, medir cuántos frena la mejora e (la marca vieja de Jev saltea el control "sin tablas": OH Leuven 2022 y Llaneros
+2022 son dos casos). Países Bajos, Suiza, Beşiktaş y Colombia de `subagentes-validar.txt` ya están validados (listo) y SIN lotes de carga:
+armar el alta de cada país con un solo año (el más reciente con estado de resultados), igual que Estonia y Bélgica (lotes 89-90).
+`Admin/lotes/subagentes-pb-co.txt`: revisar si quedó algo sin validar.
+
+**3. Los demás to-dos del plan, sin empezar:** 238 (estados intermedios del inventario a 0), 285 (Viking Fotball AS: el 2025 ya está
+transcripto por Mistral; faltan los otros años del AS), 284 (Fredrikstad y Sarpsborg 08 sobre el FLI; Fredrikstad: abrir antes
+`wf-src-FFK_-_Årsmøte_2025.pdf`; Pardubice no se da de alta), 283 (Vålerenga y Aalesund: sumar AS + FLI sin contar dos veces la
+transferencia; lo de pantalla, para fos-finanzas), 195 (gestiones de los clubes nuevos: todos los años de Estonia y Bélgica salieron con el
+aviso "ningún presidente confirmado"; `node tools/gestiones-tanda.mjs --armar --escribir`), 165 c (altas de los países nuevos).
+
+**4. Dudas al club ya anotadas en `Admin/dudas-por-club.md`:** Paide Linnameeskond (becas y apoyos de la Lisa 10, cargados como
+wages_squad) y FCI Levadia ("Liikmemaks" 2019-2020 que el club paga, cargado como admin_general_expense).
+
+**5. Cómo trabajó esta sesión (lo que le sirvió a Guido):** un paso por vez; ensayo gratis antes de cada comando pago; el comando entero
+con costo en el último mensaje, terminado en `; osascript ...; say "lote terminado"`; scripts en el scratchpad corridos con `node` (sin
+variables, sin `cd`, sin espacios escapados, sin `git -C`: si no, cada comando le pide permiso a Guido); las mejoras de script van al cierre
+como letras para fos-pipeline, sin aplicarlas.

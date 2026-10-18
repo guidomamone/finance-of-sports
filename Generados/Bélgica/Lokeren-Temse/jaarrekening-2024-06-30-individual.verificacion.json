@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2024-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2024-06-30-individual.md",
- "generado": "2026-10-18T15:46:15.528Z",
+ "generado": "2026-10-18T19:01:12.305Z",
  "estado": "cola",
  "clubId": "lokerentemse-be",
  "year": 2024,
@@ -15,7 +15,6 @@
  "cola": [
   "3c2a964",
   "96c0226",
-  "5fa77a3",
   "a1bb0f0",
   "c7f0574",
   "2e32357",
@@ -35,9 +34,14 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 0.988874 - gastos 1.312931 ± financiero 0.054462 ± impuesto 0.000054 no da el impreso -0.307657",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 2.220446049250313e-16
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2025",
@@ -56,20 +60,22 @@
   }
  ],
  "notas": [
-  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 0.988874,
-  "gastos": 1.312931,
+  "gastos": 1.280093,
   "financiero": 0.054462,
   "impuesto": 0.000054,
   "resultadoImpreso": -0.307657,
   "resultadoParaCargar": -0.307657,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
  },
  "lineas": [
   {
@@ -107,10 +113,10 @@
   {
    "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
    "lado": "gasto",
-   "M": 0.016419,
+   "M": -0.016419,
    "pagina": 6,
    "linea": 221,
-   "origen": "estado"
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
   },
   {
    "etiqueta": "Andere bedrijfskosten",
@@ -130,8 +136,8 @@
   }
  ],
  "signosCarga": {
-  "financiero": 1,
-  "impuesto": 1
+  "financiero": "rótulo",
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -146,15 +152,38 @@
   },
   {
    "etiqueta": "Recurrente financiële kosten",
-   "M": 0.035423,
+   "M": -0.035423,
    "linea": 231
   }
  ],
  "impuesto": [
   {
    "etiqueta": "Belastingen op het resultaat (+)/(-)",
-   "M": 0.000054,
+   "M": -0.000054,
    "linea": 236
   }
- ]
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "pendiente",
+  "clave": "7505ab6119d177864ba58a62408673d85cf1c38e",
+  "rango": [
+   211,
+   243
+  ],
+  "lineasCargadas": [
+   214,
+   215,
+   219,
+   220,
+   221,
+   223,
+   225,
+   228,
+   229,
+   231,
+   236
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 211 a 243 del .md):\nL211: | | Toel. | Codes | Boekjaar | Vorig boekjaar |\nL212: | --- | --- | --- | --- | --- |\nL213: | Bedrijfsopbrengsten en bedrijfskosten | | | | |\nL214: | Brutomarge (+)/(-) | | 9900 | 988.874 | 777.377 |\nL215: | Waarvan: niet-recurrente bedrijfsopbrengsten | | 76A | | 116.250 |\nL216: | Omzet | | 70 | | |\nL217: | Lidgeld, schenkingen, legaten en subsidies | | 73 | | |\nL218: | Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen | | 60/61 | | |\nL219: | Bezoldigingen, sociale lasten en pensioenen (+)/(-) | | 62 | 1.236.175 | 1.141.957 |\nL220: | Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa | | 630 | 33.948 | 35.114 |\nL221: | Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) | | 631/4 | -16.419 | 29.267 |\nL222: | Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-) | | 635/9 | | |\nL223: | Andere bedrijfskosten | | 640/8 | 12.923 | 29.673 |\nL224: | Als herstructureringskosten geactiveerde bedrijfskosten (-) | | 649 | | |\nL225: | Niet-recurrente bedrijfskosten | | 66A | 13.466 | |\nL226: | Bedrijfswinst (Bedrijfsverlies) (+)/(-) | | 9901 | -291.219 | -458.634 |\nL227: | Financiële opbrengsten | 6.4 | 75/76B | 19.039 | 73 |\nL228: | Recurrente financiële opbrengsten | | 75 | 2.231 | 73 |\nL229: | Niet-recurrente financiële opbrengsten | | 76B | 16.808 | |\nL230: | Financiële kosten | 6.4 | 65/66B | 35.423 | 20.898 |\nL231: | Recurrente financiële kosten | | 65 | 35.423 | 20.898 |\nL232: | Niet-recurrente financiële kosten | | 66B | | |\nL233: | Winst (Verlies) van het boekjaar vóór belasting (+)/(-) | | 9903 | -307.603 | -479.459 |\nL234: | Onttrekking aan de uitgestelde belastingen | | 780 | | |\nL235: | Overboeking naar de uitgestelde belastingen | | 680 | | |\nL236: | Belastingen op het resultaat (+)/(-) | | 67/77 | 54 | |\nL237: | Winst (Verlies) van het boekjaar (+)/(-) | | 9904 | -307.657 | -479.459 |\nL238: | Onttrekking aan de belastingvrije reserves | | 789 | | |\nL239: | Overboeking naar de belastingvrije reserves | | 689 | | |\nL240: | Te bestemmen winst (verlies) van het boekjaar (+)/(-) | | 9905 | -307.657 | -479.459 |\nL242: Page 6 of 21\n\nLO QUE SE CARGA:\n- ingreso · \"Brutomarge (+)/(-)\" · 0.988874 · L214\n- ingreso · \"Waarvan: niet-recurrente bedrijfsopbrengsten\" · 0 · L215\n- gasto · \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\" · 1.236175 · L219\n- gasto · \"Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële v\" · 0.033948 · L220\n- gasto · \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen:\" · -0.016419 · L221\n- gasto · \"Andere bedrijfskosten\" · 0.012923 · L223\n- gasto · \"Niet-recurrente bedrijfskosten\" · 0.013466 · L225\n- financiero · \"Recurrente financiële opbrengsten\" · 0.002231 · L228\n- financiero · \"Niet-recurrente financiële opbrengsten\" · 0.016808 · L229\n- financiero · \"Recurrente financiële kosten\" · -0.035423 · L231\n- impuesto · \"Belastingen op het resultaat (+)/(-)\" · -0.000054 · L236"
+ }
 }

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2024-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Beerschot/jaarrekening-2024-06-30-individual.md",
- "generado": "2026-10-18T15:46:15.499Z",
+ "generado": "2026-10-18T19:01:12.174Z",
  "estado": "cola",
  "clubId": "beerschot-be",
  "year": 2024,
@@ -13,9 +13,7 @@
  },
  "ajustes": null,
  "cola": [
-  "dbb4f62",
-  "8fe90ca",
-  "e20a35e"
+  "8fe90ca"
  ],
  "chequeos": [
   {
@@ -28,13 +26,20 @@
   {
    "nombre": "total de gastos",
    "ok": true,
-   "detalle": "\"Bedrijfskosten\" 12.935553 cierra; además se suman 13 línea(s) fuera de ese total (12.980202)"
+   "detalle": "12.935552 = 12.935553",
+   "suma": 12.935551999999998,
+   "impreso": 12.935552999999999
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 9.439186 - gastos 25.915755 ± financiero 0.150234 ± impuesto 0.231384 no da el impreso -3.661417",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 0.0000010000000014720456
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2025",
@@ -50,6 +55,11 @@
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
@@ -57,8 +67,11 @@
   "la nota de \"Niet-recurrente bedrijfsopbrengsten\" no suma el renglón (1.592486 contra 1.592485, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la nota de \"Niet-recurrente bedrijfskosten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b53 es la comparación de cifras clave del jaarverslag que repite los renglones de la resultatenrekening.",
-  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Omzet\"): ¿Se deja afuera de la carga el desglose geográfico 'België' (L867) por duplicar el total de Omzet?",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": [
   {
@@ -87,13 +100,13 @@
  ],
  "totales": {
   "ingresos": 9.439186,
-  "gastos": 25.915755,
+  "gastos": 12.935552,
   "financiero": 0.150234,
   "impuesto": 0.231384,
   "resultadoImpreso": -3.661417,
   "resultadoParaCargar": -3.661417,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
  },
  "lineas": [
   {
@@ -121,14 +134,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Bedrijfskosten",
-   "lado": "gasto",
-   "M": 12.935553,
-   "pagina": 9,
-   "linea": 335,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Aankopen",
    "lado": "gasto",
    "M": 0.854137,
@@ -139,10 +144,10 @@
   {
    "etiqueta": "Voorraad: afname (toename) (+)/(-)",
    "lado": "gasto",
-   "M": 0.003043,
+   "M": -0.003043,
    "pagina": 9,
    "linea": 338,
-   "origen": "estado"
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
   },
   {
    "etiqueta": "Diensten en diverse goederen",
@@ -203,10 +208,10 @@
   {
    "etiqueta": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
    "lado": "gasto",
-   "M": 0.019282,
+   "M": -0.019282,
    "pagina": 9,
    "linea": 343,
-   "origen": "estado"
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
   },
   {
    "etiqueta": "Bedrijfsbelastingen en -taksen",
@@ -234,8 +239,8 @@
   }
  ],
  "signosCarga": {
-  "financiero": 1,
-  "impuesto": 1
+  "financiero": "rótulo",
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -245,19 +250,19 @@
   },
   {
    "etiqueta": "Kosten van schulden",
-   "M": 0.002661,
+   "M": -0.002661,
    "linea": 365
   },
   {
    "etiqueta": "Andere financiële kosten",
-   "M": 0.039289,
+   "M": -0.039289,
    "linea": 367
   }
  ],
  "impuesto": [
   {
    "etiqueta": "Belastingen",
-   "M": 0.231384,
+   "M": -0.231384,
    "linea": 373
   }
  ]

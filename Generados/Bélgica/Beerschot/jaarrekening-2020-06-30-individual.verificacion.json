@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2020-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Beerschot/jaarrekening-2020-06-30-individual.md",
- "generado": "2026-10-18T15:46:15.447Z",
+ "generado": "2026-10-18T19:01:12.129Z",
  "estado": "ok",
  "clubId": "beerschot-be",
  "year": 2020,
@@ -31,8 +31,8 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero e impuesto invertidos)",
-   "dif": 0.006854999999998057
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 0.0000010000000019161348
   },
   {
    "nombre": "documento del año 2021",
@@ -48,6 +48,11 @@
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
@@ -66,7 +71,7 @@
   "resultadoImpreso": -4.326013,
   "resultadoParaCargar": -4.326013,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero e impuesto invertidos"
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
  },
  "lineas": [
   {
@@ -207,13 +212,13 @@
   }
  ],
  "signosCarga": {
-  "financiero": -1,
+  "financiero": "rótulo",
   "impuesto": -1
  },
  "financiero": [
   {
    "etiqueta": "Andere financiële opbrengsten",
-   "M": -0.003428,
+   "M": 0.003428,
    "linea": 346
   },
   {

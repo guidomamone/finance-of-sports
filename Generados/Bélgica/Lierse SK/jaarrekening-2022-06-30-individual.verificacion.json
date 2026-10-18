@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2022-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2022-06-30-individual.md",
- "generado": "2026-10-18T15:46:15.507Z",
+ "generado": "2026-10-18T19:01:12.215Z",
  "estado": "cola",
  "clubId": "liersesk-be",
  "year": 2022,
@@ -13,7 +13,6 @@
  },
  "ajustes": null,
  "cola": [
-  "e8533e9",
   "c72a7ee"
  ],
  "chequeos": [
@@ -29,9 +28,14 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 1.720892 - gastos 2.249453 ± financiero 0.01015 ± impuesto 0 no da el impreso -0.557017",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo)",
+   "dif": 1.1102230246251565e-16
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2023",
@@ -52,20 +56,23 @@
  "notas": [
   "la nota de \"Waarvan: niet-recurrente bedrijfsopbrengsten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la nota de \"Niet-recurrente bedrijfskosten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
-  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
+  "escalón \"de los cuales\": cerró la lectura 4 sin las filas \"Waarvan: niet-recurrente bedrijfsopbrengsten\" L237 (una parte de la fila de arriba)",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 1.720892,
-  "gastos": 2.249453,
+  "ingresos": 1.673036,
+  "gastos": 2.226773,
   "financiero": 0.01015,
   "impuesto": 0,
   "resultadoImpreso": -0.557017,
   "resultadoParaCargar": -0.557017,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "financiero por rótulo"
  },
  "lineas": [
   {
@@ -74,14 +81,6 @@
    "M": 1.673036,
    "pagina": 7,
    "linea": 236,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Waarvan: niet-recurrente bedrijfsopbrengsten",
-   "lado": "ingreso",
-   "M": 0.047856,
-   "pagina": 7,
-   "linea": 237,
    "origen": "estado"
   },
   {
@@ -103,10 +102,10 @@
   {
    "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
    "lado": "gasto",
-   "M": 0.01134,
+   "M": -0.01134,
    "pagina": 7,
    "linea": 242,
-   "origen": "estado"
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
   },
   {
    "etiqueta": "Andere bedrijfskosten",
@@ -126,7 +125,7 @@
   }
  ],
  "signosCarga": {
-  "financiero": 1,
+  "financiero": "rótulo",
   "impuesto": 1
  },
  "financiero": [
@@ -137,7 +136,7 @@
   },
   {
    "etiqueta": "Recurrente financiële kosten",
-   "M": 0.006715,
+   "M": -0.006715,
    "linea": 253
   }
  ],
