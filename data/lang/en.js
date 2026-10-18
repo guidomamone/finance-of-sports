@@ -591,4 +591,14 @@ window.I18N.strings.en = {
   "liga.est.many": "estimates",
   "liga.est.note": "Estimate: the club's accounts for this year are not on the site. The figure is our own calculation, from its other years or, when there are none, from the league and its table position; it is not club data. The total includes estimates only when more than half of the league has real accounts.",
   "liga.cv.missingEst": "clubs in that season: they appear in the table with an estimated revenue (*).",
+  // Ligas: la liga en total, por categoría
+  "liga.cons.title": "The league as a whole, by category",
+  "liga.cons.sum": "Sum of the",
+  "liga.cons.withBal": "clubs with accounts",
+  "liga.cons.usd": "in US dollars",
+  "liga.cons.est": "Estimates, no category",
+  "liga.cons.lump": "publish revenue without splitting it into categories.",
+  "liga.cons.lump1": "publishes revenue without splitting it into categories.",
+  "liga.cons.estNote": "An estimate is a single figure per club, with no categories: it is shown apart. See the note under the revenue table.",
+  "liga.cons.estOut": "Estimated clubs are not included: less than half of the league has real accounts.",
 };

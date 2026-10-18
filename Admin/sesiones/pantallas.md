@@ -17,10 +17,15 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
   rango y el error en el título del monto. Pie de nota dentro del card. El total es "Total de la liga (N con balance + E estimados*)"
   cuando más de la mitad de la liga de ese año tiene balance real; si no, el total de los cargados como antes. La composición ("De dónde
   sale la plata") y el simulador siguen solo con lo real. Mockup: "Ligas · estimados en la tabla" de "Pantallas FoS". ASSET_V 1258.
+- To-do 274: card "La liga en total, por categoría" arriba de la tabla de Ligas (`consolidado()` en `js/liga.js`): la suma por categoría de
+  los clubes con balance del ejercicio, en dólares, "Suma de los N de M clubes con balance", con una barra apilada y la lista con monto y %.
+  Cuando el total de la tabla suma estimados, una franja rayada "Estimados, sin categoría*" hace que los dos totales coincidan; si no,
+  solo lo real. Nota de los clubes sin desglosar. Colores: los de "De dónde sale la plata" (`paletaMix()`). Mockup: "Ligas · consolidado
+  de la liga" de "Pantallas FoS". ASSET_V 1260.
 
 ## Qué queda (para TODO)
 
-- Borrar el 293 y el 275.
+- Borrar el 293, el 275 y el 274.
 - La parte de "faltantes" del 275 (la lista de quiénes faltan y por qué) se descartó en el diseño: Guido quiere que todo club sin balance
   figure como estimado, sin motivos. `data/faltantes/` sigue alimentando a `estimar.mjs`.
 - 270, club nuevo: quedó prendido con 50% de error; volver a medir (`node tools/estimar.mjs --medir`) cuando haya más clubes cargados.

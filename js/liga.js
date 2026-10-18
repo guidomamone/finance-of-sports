@@ -307,6 +307,7 @@ window.LIGA_VIEW = (function(){
 
     wrap.appendChild(encabezado(r));
     var filasSim = st.simulados.map(function(s){ return s.fila; });
+    wrap.appendChild(consolidado(r, filasSim));
     var grilla = el('div', 'lg-grilla');
     grilla.appendChild(rankingCard(r, filasSim));
     var der = el('div', 'lg-col');
@@ -738,19 +739,96 @@ window.LIGA_VIEW = (function(){
   // barra apilada por club con la leyenda arriba. Cada tramo dice su categoría, monto y % al pasar el mouse. Un tramo negativo (una
   // deducción del ingreso bruto) no se puede apilar: se nombra debajo, igual que la fila que el documento junta con otra.
   var PALETA_MIX = ['#0a2b5c', '#4f86d9', '#f2b705', '#1b7a3d', '#b5372b', '#7a5ea8', '#2a9d8f', '#b9bec7', '#e38b2c'];
-  function composicion(r, simulados){
-    var card = el('article', 'vid-card lg-mix');
-    card.appendChild(el('h2', 'lg-card-h', t('liga.breakdown', 'De dónde sale la plata')));
-    card.appendChild(el('p', 'lg-card-sub', t('liga.breakdown.sub',
-      'El ingreso de cada club, partido en las mismas categorías de su ficha de Finanzas.')));
-    var filas = filasConSimulado(r, simulados);
-    // Un color por categoría, en el orden de cuánto pesa en el ranking; el bolsón sin desglosar siempre en beige.
+  // Un color por categoría, en el orden de cuánto pesa en el ranking; el bolsón sin desglosar siempre en beige. La usan composicion() y
+  // consolidado(), así una categoría tiene el mismo color en las dos cards.
+  function paletaMix(filas){
     var pesos = {};
     filas.forEach(function(f){ f.mix.forEach(function(m){ if(m[1] > 0) pesos[m[0]] = (pesos[m[0]] || 0) + m[1]; }); });
     var cats = Object.keys(pesos).filter(function(c){ return c !== LUMP_LABEL; }).sort(function(a, b){ return pesos[b] - pesos[a]; });
     var colorDe = {};
     cats.forEach(function(c, i){ colorDe[c] = PALETA_MIX[i % PALETA_MIX.length]; });
     if(pesos[LUMP_LABEL]){ colorDe[LUMP_LABEL] = '#e0d6c2'; cats.push(LUMP_LABEL); }
+    return { cats:cats, colorDe:colorDe };
+  }
+
+  // LA LIGA EN TOTAL: la suma por categoría de los clubes con balance del ejercicio (todos en dólares, con el tipo de cambio de cada
+  // documento: no se mezclan monedas ni ejercicios). Los simulados no entran. Los estimados son un total por club, sin categorías: entran
+  // como una franja rayada aparte solo cuando el total de la tabla los suma (totalConEstimados()), para que los dos totales coincidan.
+  function consolidado(r, simulados){
+    var card = el('article', 'vid-card lg-cons');
+    var est = filasEstimadas(st.league, st.year);
+    var conEst = totalConEstimados(r, est);
+    var sumaEst = conEst ? est.reduce(function(a, f){ return a + f.revenue; }, 0) : 0;
+    var real = totalDe(r), total = real + sumaEst;
+    var pal = paletaMix(filasConSimulado(r, simulados));
+    var porCat = {};
+    r.clubs.forEach(function(f){ f.mix.forEach(function(m){ porCat[m[0]] = (porCat[m[0]] || 0) + m[1]; }); });
+    var cats = pal.cats.filter(function(c){ return porCat[c]; });
+    // Una categoría que suma negativo (deducciones) no se puede apilar: va en la lista, no en la barra.
+    Object.keys(porCat).forEach(function(c){ if(cats.indexOf(c) < 0 && porCat[c]) cats.push(c); });
+
+    var head = el('div', 'lg-card-head');
+    var txt = el('div', 'lg-cons-txt');
+    txt.appendChild(el('h2', 'lg-card-h', t('liga.cons.title', 'La liga en total, por categoría')));
+    var tam = r.leagueSize != null ? r.leagueSize : (est.length ? r.clubs.length + est.length : null);
+    var sub = t('liga.cons.sum', 'Suma de los') + ' ' + r.clubs.length + (tam != null ? ' ' + t('vid.of', 'de') + ' ' + tam : '') + ' '
+      + t('liga.cons.withBal', 'clubes con balance') + ' ' + st.year
+      + (conEst ? ' + ' + est.length + ' ' + (est.length === 1 ? t('liga.est.one', 'estimado') : t('liga.est.many', 'estimados')) + '*' : '')
+      + ' · ' + t('liga.cons.usd', 'en dólares');
+    txt.appendChild(el('p', 'lg-card-sub', sub));
+    head.appendChild(txt);
+    var big = el('div', 'lg-cons-total');
+    big.appendChild(el('span', 'lg-cons-total-l', t('liga.revenue', 'Ingresos')));
+    big.appendChild(el('strong', null, (conEst ? '≈ ' : '') + fmtCard(total) + (conEst ? '*' : '')));
+    head.appendChild(big);
+    card.appendChild(head);
+
+    var barra = el('div', 'lg-cons-barra');
+    var positivos = cats.filter(function(c){ return porCat[c] > 0; });
+    var baseBarra = positivos.reduce(function(a, c){ return a + porCat[c]; }, 0) + sumaEst;
+    function seg(color, v, titulo){
+      var sg = el('span'); sg.style.background = color;
+      sg.style.width = (baseBarra ? v / baseBarra * 100 : 0).toFixed(2) + '%';
+      sg.title = titulo;
+      barra.appendChild(sg);
+    }
+    var RAYAS = 'repeating-linear-gradient(45deg,#b9bec7 0 4px,#ffffff 4px 7px)';
+    positivos.forEach(function(c){ seg(pal.colorDe[c], porCat[c], nombreCat(c)); });
+    if(sumaEst) seg(RAYAS, sumaEst, t('liga.cons.est', 'Estimados, sin categoría'));
+    card.appendChild(barra);
+
+    var lista = el('div', 'lg-cons-filas');
+    function fila(color, nombre, v, esEst){
+      var f = el('div', 'lg-cons-fila' + (esEst ? ' estimada' : ''));
+      var sw = el('span', 'lg-cons-sw'); sw.style.background = color || 'transparent';
+      f.appendChild(sw);
+      f.appendChild(el('span', 'lg-cons-n', nombre));
+      f.appendChild(el('span', 'lg-cons-v', (esEst ? '≈ ' : '') + fmtCard(v)));
+      f.appendChild(el('span', 'lg-cons-p', total ? (v / total * 100).toFixed(1) + '%' : ''));
+      lista.appendChild(f);
+    }
+    cats.forEach(function(c){ fila(porCat[c] > 0 ? pal.colorDe[c] : null, nombreCat(c), porCat[c]); });
+    if(sumaEst) fila(RAYAS, t('liga.cons.est', 'Estimados, sin categoría') + '*', sumaEst, true);
+    card.appendChild(lista);
+
+    var notas = [];
+    var lump = r.clubs.filter(function(f){ return f.mix.some(function(m){ return m[0] === LUMP_LABEL && m[1]; }); });
+    if(lump.length) notas.push(t('liga.lumpShort', 'Sin desglosar') + ': ' + nClubes(lump.length) + ' (' + lump.map(function(f){ return nombreDe(f.id); }).join(', ') + ') '
+      + (lump.length === 1 ? t('liga.cons.lump1', 'publica el ingreso sin partirlo en categorías.') : t('liga.cons.lump', 'publican el ingreso sin partirlo en categorías.')));
+    if(conEst) notas.push('* ' + t('liga.cons.estNote', 'Un estimado es un total por club, sin categorías: va aparte. Ver la nota de la tabla de ingresos.'));
+    else if(est.length) notas.push(t('liga.cons.estOut', 'Los clubes estimados no entran: menos de la mitad de la liga tiene balance real.'));
+    notas.forEach(function(n){ card.appendChild(el('p', 'lg-est-nota', n)); });
+    return card;
+  }
+  function nombreCat(c){ return c === LUMP_LABEL ? t('liga.lumpShort', 'Sin desglosar') : tLabel(c); }
+
+  function composicion(r, simulados){
+    var card = el('article', 'vid-card lg-mix');
+    card.appendChild(el('h2', 'lg-card-h', t('liga.breakdown', 'De dónde sale la plata')));
+    card.appendChild(el('p', 'lg-card-sub', t('liga.breakdown.sub',
+      'El ingreso de cada club, partido en las mismas categorías de su ficha de Finanzas.')));
+    var filas = filasConSimulado(r, simulados);
+    var pal = paletaMix(filas), cats = pal.cats, colorDe = pal.colorDe;
 
     var ley = el('div', 'lg-ley');
     cats.forEach(function(c){
