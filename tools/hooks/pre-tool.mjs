@@ -10,6 +10,8 @@
 //   audit-antes-del-commit   un `git commit` con cambios publicables corre `audit.js --quiet` y se frena si da P0 o P1. Si los cambios son
 //                            solo internos (Admin/, .claude/, CLAUDE.md, auditorias/, Prototyping/), no audita. `[sin-audit]` en el mensaje
 //                            del commit lo saltea: solo con el ok de Guido, para un hallazgo que ya venía de main.
+//   skills-con-ok            escribir en .claude/skills/ (Edit, Write o un Bash que escribe) le pide permiso a Guido, aun en modo automático:
+//                            las skills no se editan sin mostrarle el texto y esperar su ok.
 //
 // Entrada: el JSON del hook por stdin. Salida: nada (sigue normal) o el JSON de PreToolUse con permissionDecision "deny" / "ask".
 // ============================================================================
@@ -52,4 +54,19 @@ function auditAntesDelCommit(cmd) {
   }
 }
 
-if (herramienta === 'Bash') auditAntesDelCommit(params.command || '');
+// Un Bash que escribe: sed/perl en el lugar, redirección, tee, mv, cp, rm, o un intérprete que puede escribir cualquier cosa.
+// (`2>/dev/null` y `>&2` no cuentan.)
+const ESCRIBE = /\b(sed|perl)\s+(-\w+\s+)*-i|(^|[^0-9&])>>?\s*(?!\/dev\/null|&)|\btee\b|\b(mv|cp|rm|touch|truncate)\s|\b(python3?|node)\s+(-e|-c|-)\b/;
+const EDITA = ['Edit', 'Write', 'MultiEdit', 'NotebookEdit'];
+const rutaEditada = () => params.file_path || params.notebook_path || '';
+const bashEscribeEn = (cmd, ruta) => ruta.test(cmd) && ESCRIBE.test(cmd);
+
+function skillsConOk(cmd) {
+  const SKILLS = /\.claude\/skills\//;
+  const toca = EDITA.includes(herramienta) ? SKILLS.test(rutaEditada()) : bashEscribeEn(cmd, SKILLS);
+  if (toca) decidir('ask', 'Esto escribe en .claude/skills/. Las skills no se editan sin el ok de Guido: ¿ya vio el texto del cambio en el chat?');
+}
+
+const cmd = herramienta === 'Bash' ? params.command || '' : '';
+skillsConOk(cmd);
+if (herramienta === 'Bash') auditAntesDelCommit(cmd);
