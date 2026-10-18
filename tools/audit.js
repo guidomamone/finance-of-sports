@@ -795,6 +795,7 @@ const GENERADORES = [
   ['generate-club-index.js',    'Admin/ESTADO-clubes.md (generado)',         'club-index-desfasado'],
   ['generate-fuentes-index.js', 'el índice de Admin/sourcing/README.md',    'fuentes-indice-desfasado'],
   ['faltantes-liga.mjs',        'data/faltantes/ y Admin/sourcing/pendientes.md', 'faltantes-desfasado'], // to-do 266: cambia con cada carga y cada sourcing
+  ['entidades.mjs',             'data/entidades/ (estructura de cada club, to-do 280)', 'entidades-desfasado'],
   ['estimar.mjs',               'data/estimados/ (y ningún estimado al lado de un año real)', 'estimados-desfasado'], // to-do 270; sin la carpeta, no chequea
 ];
 function checkGenerados() {
