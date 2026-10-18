@@ -3,7 +3,7 @@
  "md": "Clubes/Estonia/FCI Levadia/aruanne-2025.md",
  "mdSha1": "af82efcffff2cbfee99d8243324a3c35ab2979d8",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-18T06:04:30.835Z",
+ "generado": "2026-10-18T13:23:47.795Z",
  "bloques": {
   "b1": {
    "pagina": 1,
@@ -224,12 +224,18 @@
  },
  "sin_estado": false,
  "estado": [
-  "b22"
+  "b5"
  ],
- "notas_ingresos": [],
- "notas_gastos": [],
+ "notas_ingresos": [
+  "b14",
+  "b16"
+ ],
+ "notas_gastos": [
+  "b17",
+  "b18"
+ ],
  "escala": "unidades",
- "escala_evidencia": "Importes con decimales (p. ej. 3 080 702,00) y cuadro de activo fijo en 'eurodes'; aruanne en euros sin redondeo a miles.",
+ "escala_evidencia": "Lisa 3 encabezado 'eurodes' (en euros); no se indica otra escala en el estado",
  "moneda": "EUR",
  "columna_ejercicio": "2025",
  "columna_anterior": "2024",
@@ -237,11 +243,11 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se carga el estado individual de FCI Levadia MTÜ (b22, Lisa 15) en lugar del consolidado (b5), siguiendo el perímetro individual de años anteriores?",
+   "pregunta": "¿Se deja afuera de la carga el estado individual de FCI Levadia MTÜ (Lisa 15, b22) y se carga solo el consolidado b5?",
    "propuesta": "sí",
    "tema": "perimetro",
    "renglon": "",
-   "texto": "El documento es consolidado (b5) pero incluye el estado individual de la MTÜ en Lisa 15 (b22).",
+   "texto": "El club carga consolidado; b22 es el estado de resultados individual de la entidad matriz.",
    "bloques": [
     "b22",
     "b5"
@@ -249,19 +255,17 @@
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se dejan afuera las notas 8, 7, 9 y 10 (b16, b14, b17, b18) por ser del consolidado y no coincidir con el estado individual?",
+   "pregunta": "¿Se deja afuera el cuadro 'Rahalised ja mitterahalised annetused' (b15) por repetir el total de annetused ya abierto en b14?",
    "propuesta": "sí",
-   "tema": "perimetro",
-   "renglon": "",
-   "texto": "Ej.: Lähetuskulud 430 603 en b17 vs 308 778 en b22; Staadioni rent 13 416 vs 33 656; el individual ya viene desglosado renglón por renglón.",
+   "tema": "cuadro-duplicado",
+   "renglon": "Kokku annetused ja toetused",
+   "texto": "b15 solo indica que las donaciones son en dinero, sin nuevo desglose.",
    "bloques": [
-    "b16",
-    "b14",
-    "b17",
-    "b18"
+    "b15",
+    "b14"
    ],
-   "afecta_carga": true
+   "afecta_carga": false
   }
  ],
- "observaciones": "b5 es el estado de resultados consolidado (MTÜ + Jalgpallikool + Infonet JK) y b16, b14, b17, b18 son sus notas. b22 (Lisa 15) es el tulude-kulude aruanne individual de FCI Levadia MTÜ, ya detallado por partida. Se eligió el individual por continuidad con los años cargados. Resultado 2025 individual: -1 197 822 EUR."
+ "observaciones": "b5 es el estado de resultados consolidado (FCI Levadia MTÜ, SK FC Levadia Jalgpallikool e Infonet JK); b22 (Lisa 15) es el individual de FCI Levadia MTÜ, no elegido. Columnas en orden 2024 | 2025. Notas elegidas: Lisa 7 toetused (b14), Lisa 8 tulu ettevõtlusest (b16), Lisa 9 tegevuskulud (b17), Lisa 10 tööjõukulud (b18)."
 }

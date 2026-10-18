@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.md",
- "generado": "2026-10-18T06:34:53.163Z",
- "estado": "cola",
+ "generado": "2026-10-18T13:25:35.259Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -26,11 +26,7 @@
    "fecha": "2026-10-18"
   }
  ],
- "cola": [
-  "54ece03",
-  "0ecbf61",
-  "a9efb7d"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -57,7 +53,7 @@
  "notas": [
   "ajuste manual: fila \"Recurrente financiële kosten\" (financiero) -293.069, en lugar de \"Recurrente financiële kosten\" (2026-10-18, costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18))",
   "duda de localizar que no afecta la carga: b23 repite gastos de personal por tipo de jornada, sin abrir categorías del estado.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

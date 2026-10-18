@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.md",
- "generado": "2026-10-18T06:33:56.373Z",
- "estado": "cola",
+ "generado": "2026-10-18T13:25:35.104Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -52,11 +52,7 @@
    "fecha": "2026-10-18"
   }
  ],
- "cola": [
-  "ad3b5f7",
-  "20d9ecc",
-  "ffc5c44"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -83,6 +79,11 @@
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
   }
  ],
  "notas": [
@@ -97,8 +98,9 @@
   "escalón \"nota exacta en la lectura 5\": \"Andere bedrijfskosten\" (L297) se abre en las 2 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar que no afecta la carga: b61/b62 resumen la cuenta de resultados con las mismas cifras que el estado oficial VOL-kap 4.",
-  "duda de extraer que no afecta la carga: Los importes 'Teruggenomen' (L817, L820) restan pero se imprimen positivos.",
-  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"Diensten en diverse goederen\"): corregir no, en jaarrekening-2025-06-30-individual.pdf",
+  "duda de extraer que no afecta la carga: Los importes 'Teruggenomen' (L817, L820) restan pero se imprimen positivos."
  ],
  "reintentar": [
   {
@@ -306,7 +308,7 @@
  ],
  "primerAnio": {
   "escalon": 3,
-  "estado": "pendiente",
+  "estado": "confirmado",
   "clave": "7f4c060fabc2095985c2858de434fb43df33e2b8",
   "rango": [
    279,

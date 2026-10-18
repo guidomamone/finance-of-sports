@@ -2,8 +2,8 @@
   "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.md",
   "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.pdf",
   "club": "lommel-sk",
-  "year": null,
-  "generatedAt": "2026-10-18T06:17:46.856Z",
+  "year": 2025,
+  "generatedAt": "2026-10-18T13:08:06.388Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         0.000086
       ],
-      "glosa": "Variación de existencias: disminución (aumento) (+)/(-)"
+      "glosa": "Existencias: disminución (aumento) (+)/(-)"
     },
     {
       "label": "Diensten en diverse goederen",
@@ -74,7 +74,7 @@
       "values": [
         13.80824
       ],
-      "glosa": "Remuneraciones y beneficios sociales directos"
+      "glosa": "Remuneraciones y prestaciones sociales directas"
     },
     {
       "label": "Werkgeversbijdragen voor sociale verzekeringen",
@@ -84,7 +84,7 @@
       "values": [
         1.953435
       ],
-      "glosa": "Cotizaciones patronales a la seguridad social"
+      "glosa": "Aportaciones patronales a la seguridad social"
     },
     {
       "label": "Andere personeelskosten",
@@ -104,7 +104,7 @@
       "values": [
         6.264419
       ],
-      "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, inmovilizado intangible y material"
+      "glosa": "Amortizaciones y correcciones de valor sobre gastos de constitución, inmovilizado intangible y material"
     },
     {
       "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
@@ -114,7 +114,7 @@
       "values": [
         0.012546
       ],
-      "glosa": "Correcciones de valor de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
+      "glosa": "Correcciones de valor sobre existencias, pedidos en curso y deudores comerciales: dotaciones (reversiones) (+)/(-)"
     },
     {
       "label": "Bedrijfsbelastingen en -taksen",

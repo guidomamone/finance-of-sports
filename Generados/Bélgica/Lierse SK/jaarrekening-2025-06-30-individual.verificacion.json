@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.md",
- "generado": "2026-10-18T06:35:27.885Z",
- "estado": "cola",
+ "generado": "2026-10-18T13:25:35.126Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -40,11 +40,7 @@
    "fecha": "2026-10-18"
   }
  ],
- "cola": [
-  "2ca99ab",
-  "8002a09",
-  "1f88ca6"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -66,13 +62,18 @@
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
   }
  ],
  "notas": [
   "ajuste manual: fila \"Recurrente financiële kosten\" (financiero) -33.924, en lugar de \"Recurrente financiële kosten\" (2026-10-18, costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18))",
   "ajuste manual: sale la fila \"L256\" (2026-10-18, 76A (L256, 82.200) es 'waarvan', ya dentro de la Brutomarge 2.706.155 (L255) (subagente Sonnet, revisado por Claude 2026-10-18))",
   "duda de localizar que no afecta la carga: El pedido dice cierre 2025-10-30, que es la fecha de la asamblea que aprobó las cuentas (b3); el ejercicio cierra el 30-06-2025 (b4).",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -154,7 +155,7 @@
  ],
  "primerAnio": {
   "escalon": 3,
-  "estado": "pendiente",
+  "estado": "confirmado",
   "clave": "42fc676d48836c03dec410e108672811e1697354",
   "rango": [
    252,

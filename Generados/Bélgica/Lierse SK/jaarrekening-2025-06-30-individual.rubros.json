@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf",
   "club": "lierse-sk",
   "year": 2025,
-  "generatedAt": "2026-10-18T06:17:46.633Z",
+  "generatedAt": "2026-10-18T13:08:06.345Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -15,16 +15,6 @@
         2.706155
       ],
       "glosa": "Margen bruto (+)/(-)"
-    },
-    {
-      "label": "Waarvan: niet-recurrente bedrijfsopbrengsten",
-      "lado": "revenue",
-      "page": 7,
-      "section": "estado",
-      "values": [
-        0.0822
-      ],
-      "glosa": "De los cuales: ingresos de explotación no recurrentes"
     },
     {
       "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
@@ -44,7 +34,7 @@
       "values": [
         0.407089
       ],
-      "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material"
+      "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, de inmovilizado intangible y material"
     },
     {
       "label": "Andere bedrijfskosten",

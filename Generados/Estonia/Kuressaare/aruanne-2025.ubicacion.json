@@ -3,7 +3,7 @@
  "md": "Clubes/Estonia/Kuressaare/aruanne-2025.md",
  "mdSha1": "0555056122b54a6126d690d8d6e948e33ae8aeb2",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-18T06:05:43.044Z",
+ "generado": "2026-10-18T13:24:46.150Z",
  "bloques": {
   "b1": {
    "pagina": 1,
@@ -312,7 +312,7 @@
  },
  "sin_estado": false,
  "estado": [
-  "b33"
+  "b5"
  ],
  "notas_ingresos": [
   "b19",
@@ -334,35 +334,16 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se carga como estado el 'Konsolideerimata tulemiaruanne' (Lisa 18, b33) en lugar del Tulemiaruanne consolidado de pág. 6 (b5), por ser individual el perímetro de años anteriores?",
-   "propuesta": "sí",
-   "tema": "perimetro",
-   "renglon": "",
-   "texto": "El estado principal b5 es consolidado y la Lisa 18 (b33) es el individual de la entidad matriz; el club carga individual.",
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (b21), por ser un subdesglose de las donaciones ya incluidas en Lisa 10?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Annetused ja toetused",
+   "texto": "b21 tiene una sola fila, 'Rahaline annetus', con su total; parece abrir la parte de donaciones del renglón.",
    "bloques": [
-    "b5",
-    "b33"
+    "b21"
    ],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se usan las notas Lisa 9-14 (b19-b25), que desglosan el estado consolidado, para abrir los renglones del estado individual b33?",
-   "propuesta": "sí",
-   "tema": "perimetro",
-   "renglon": "",
-   "texto": "Las notas refieren al consolidado; sus totales pueden no coincidir con los renglones del individual.",
-   "bloques": [
-    "b19",
-    "b20",
-    "b21",
-    "b22",
-    "b23",
-    "b24",
-    "b25",
-    "b33"
-   ],
-   "afecta_carga": true
+   "afecta_carga": false
   }
  ],
- "observaciones": "b5 (pág. 6) es el tulemiaruanne consolidado; b33 (Lisa 18, pág. 20) es el tulemiaruanne no consolidado (matriz). Se eligió el individual por el perímetro del club. Notas de ingresos: Lisa 9 liikmetasud, Lisa 10 annetused/toetused (b20, b21), Lisa 11 tulu ettevõtlusest. Gastos: Lisa 12 jagatud toetused, Lisa 13 tegevuskulud, Lisa 14 tööjõukulud. Cifras en euros."
+ "observaciones": "El estado principal Tulemiaruanne (b5, pág. 6) es el consolidado; sus notas son Lisa 9-14. Lisa 18 Konsolideerimata tulemiaruanne (b33) es el estado individual (no consolidado) y no se elige, porque el club carga el perímetro consolidado. Los importes están en euros, en unidades."
 }

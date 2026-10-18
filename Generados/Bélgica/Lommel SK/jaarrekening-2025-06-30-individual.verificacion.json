@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.md",
- "generado": "2026-10-18T06:34:52.026Z",
- "estado": "cola",
+ "generado": "2026-10-18T13:25:35.170Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -49,9 +49,7 @@
    "fecha": "2026-10-18"
   }
  ],
- "cola": [
-  "dbd392a"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -90,7 +88,7 @@
   "ajuste manual: fila \"Kosten van schulden\" (financiero) -7.455, en lugar de \"Kosten van schulden\" (2026-10-18, costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18))",
   "ajuste manual: fila \"Andere financiële kosten\" (financiero) -90.425, en lugar de \"Andere financiële kosten\" (2026-10-18, costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18))",
   "duda de localizar que no afecta la carga: b55 repite costes de personal del balance social que ya están en la nota 6.10.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
  ],
  "reintentar": [
   {

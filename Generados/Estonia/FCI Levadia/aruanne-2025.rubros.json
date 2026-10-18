@@ -3,14 +3,14 @@
   "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2025.pdf",
   "club": "fci-levadia",
   "year": 2025,
-  "generatedAt": "2026-10-18T06:09:34.626Z",
+  "generatedAt": "2026-10-18T13:04:15.099Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
       "label": "Piletitulu Eesti-siseste võistlustustel",
       "lado": "revenue",
-      "page": 15,
-      "section": "estado",
+      "page": 12,
+      "section": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\"",
       "values": [
         0.018498
       ],
@@ -19,8 +19,8 @@
     {
       "label": "Piletitulu UEFA klubisarjades osalemisest",
       "lado": "revenue",
-      "page": 15,
-      "section": "estado",
+      "page": 12,
+      "section": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\"",
       "values": [
         0.035304
       ],
@@ -29,8 +29,8 @@
     {
       "label": "Hooajapiletite müügitulu",
       "lado": "revenue",
-      "page": 15,
-      "section": "estado",
+      "page": 12,
+      "section": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\"",
       "values": [
         0.00115
       ],
@@ -39,127 +39,147 @@
     {
       "label": "Reklaamitulu",
       "lado": "revenue",
-      "page": 15,
-      "section": "estado",
+      "page": 12,
+      "section": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\"",
       "values": [
-        0.262708
+        0.265208
       ],
       "glosa": "Ingresos por publicidad"
     },
     {
       "label": "Tulu ülekandeõiguste müügist",
       "lado": "revenue",
-      "page": 15,
-      "section": "estado",
+      "page": 12,
+      "section": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\"",
       "values": [
         0.014
       ],
-      "glosa": "Ingresos por derechos de retransmisión"
-    },
-    {
-      "label": "Tulu mängijate üleminekutest klubist välja",
-      "lado": "revenue",
-      "page": 15,
-      "section": "estado",
-      "values": [
-        0.070137
-      ],
-      "glosa": "Ingresos por traspasos de jugadores"
+      "glosa": "Ingresos por venta de derechos de retransmisión"
     },
     {
       "label": "Klubi sümboolikaga toodete müügitulu",
       "lado": "revenue",
-      "page": 15,
-      "section": "estado",
+      "page": 12,
+      "section": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\"",
       "values": [
-        0.00675
+        0.006751
       ],
-      "glosa": "Ingresos por venta de productos oficiales"
+      "glosa": "Ingresos por venta de productos oficiales del club"
     },
     {
       "label": "Staadioni rent",
       "lado": "revenue",
-      "page": 15,
-      "section": "estado",
+      "page": 12,
+      "section": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\"",
       "values": [
-        0.033656
+        0.013416
       ],
       "glosa": "Alquiler del estadio"
     },
     {
       "label": "Muud tulud",
       "lado": "revenue",
-      "page": 15,
-      "section": "estado",
+      "page": 12,
+      "section": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\"",
       "values": [
-        0.004525
+        0.00496
       ],
       "glosa": "Otros ingresos"
     },
     {
-      "label": "UEFA toetused",
+      "label": "Tulu mängijate üleminekutest klubist välja",
       "lado": "revenue",
-      "page": 15,
+      "page": 5,
       "section": "estado",
       "values": [
-        1.119199
+        0.075136
+      ],
+      "glosa": "Ingresos por traspaso de jugadores"
+    },
+    {
+      "label": "UEFA toetused",
+      "lado": "revenue",
+      "page": 12,
+      "section": "nota que desglosa \"Annetused ja toetused\"",
+      "values": [
+        1.119198
       ],
       "glosa": "Subvenciones de la UEFA"
     },
     {
-      "label": "EJL toetused",
+      "label": "Riigi ja/või KOV toetused",
       "lado": "revenue",
-      "page": 15,
-      "section": "estado",
+      "page": 12,
+      "section": "nota que desglosa \"Annetused ja toetused\"",
       "values": [
-        0.002189
+        0.141954
       ],
-      "glosa": "Subvenciones de la Federación Estonia de Fútbol (EJL)"
+      "glosa": "Subvenciones del Estado y/o administraciones locales"
     },
     {
       "label": "Toetus kogukonnajuht",
       "lado": "revenue",
-      "page": 15,
-      "section": "estado",
+      "page": 12,
+      "section": "nota que desglosa \"Annetused ja toetused\"",
       "values": [
         0.00864
       ],
-      "glosa": "Subvención para el responsable de la comunidad"
-    },
-    {
-      "label": "Töötasu hüvitimise",
-      "lado": "revenue",
-      "page": 15,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Compensación salarial"
+      "glosa": "Subvención para el responsable de comunidad"
     },
     {
       "label": "Riiklik treenerite tööjōukulude toetus",
       "lado": "revenue",
-      "page": 15,
-      "section": "estado",
+      "page": 12,
+      "section": "nota que desglosa \"Annetused ja toetused\"",
       "values": [
-        0
+        0.073752
       ],
       "glosa": "Subvención estatal para costes laborales de entrenadores"
     },
     {
+      "label": "EJL toetused",
+      "lado": "revenue",
+      "page": 12,
+      "section": "nota que desglosa \"Annetused ja toetused\"",
+      "values": [
+        0.050925
+      ],
+      "glosa": "Subvenciones de la Federación Estonia de Fútbol (EJL)"
+    },
+    {
+      "label": "Seotud osapoolte toetused/annetused",
+      "lado": "revenue",
+      "page": 12,
+      "section": "nota que desglosa \"Annetused ja toetused\"",
+      "values": [
+        0.2535
+      ],
+      "glosa": "Subvenciones y donaciones de partes vinculadas"
+    },
+    {
       "label": "Mitteseotud osapoolte toetused/annetused",
       "lado": "revenue",
-      "page": 15,
-      "section": "estado",
+      "page": 12,
+      "section": "nota que desglosa \"Annetused ja toetused\"",
       "values": [
-        0.005577
+        0.018108
       ],
       "glosa": "Subvenciones y donaciones de partes no vinculadas"
     },
     {
+      "label": "Noormängijate osavõtutasud",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.575148
+      ],
+      "glosa": "Cuotas de participación de jugadores juveniles"
+    },
+    {
       "label": "Tulu liikmemaksudest",
       "lado": "revenue",
-      "page": 15,
+      "page": 5,
       "section": "estado",
       "values": [
         0.00003
@@ -169,68 +189,68 @@
     {
       "label": "Mängijate palgakulu",
       "lado": "expense",
-      "page": 15,
+      "page": 5,
       "section": "estado",
       "values": [
         0.344085
       ],
-      "glosa": "Gastos salariales de los jugadores"
+      "glosa": "Gastos salariales de jugadores"
     },
     {
       "label": "Sotsiaalmaks mängijate töötasudelt",
       "lado": "expense",
-      "page": 15,
+      "page": 5,
       "section": "estado",
       "values": [
         0.116593
       ],
-      "glosa": "Seguridad social sobre salarios de los jugadores"
+      "glosa": "Seguridad social sobre salarios de jugadores"
     },
     {
       "label": "Mängijatele makstav sportlasetoetus",
       "lado": "expense",
-      "page": 15,
+      "page": 5,
       "section": "estado",
       "values": [
         0.422455
       ],
-      "glosa": "Ayudas y becas deportivas pagadas a jugadores"
+      "glosa": "Ayudas deportivas abonadas a jugadores"
+    },
+    {
+      "label": "Mängijatele makstud stipendiumid",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.0554
+      ],
+      "glosa": "Becas abonadas a jugadores"
     },
     {
       "label": "Muu personali palgakulu",
       "lado": "expense",
-      "page": 15,
+      "page": 5,
       "section": "estado",
       "values": [
-        0.411928
+        1.026003
       ],
-      "glosa": "Gastos salariales de otro personal"
+      "glosa": "Gastos salariales del resto del personal"
     },
     {
       "label": "Sotsiaalmaks muu personali töötasudelt",
       "lado": "expense",
-      "page": 15,
+      "page": 5,
       "section": "estado",
       "values": [
-        0.138842
+        0.346401
       ],
-      "glosa": "Seguridad social sobre salarios de otro personal"
-    },
-    {
-      "label": "Kulu mängijate üleminekutest klubisse",
-      "lado": "expense",
-      "page": 15,
-      "section": "estado",
-      "values": [
-        0.07215
-      ],
-      "glosa": "Gastos por traspasos de jugadores"
+      "glosa": "Seguridad social sobre salarios del resto del personal"
     },
     {
       "label": "Kulutused turvalisusele",
       "lado": "expense",
-      "page": 15,
-      "section": "estado",
+      "page": 12,
+      "section": "nota que desglosa \"Tegevuskulud\"",
       "values": [
         0.030277
       ],
@@ -239,18 +259,18 @@
     {
       "label": "Trükised jm materjalid",
       "lado": "expense",
-      "page": 15,
-      "section": "estado",
+      "page": 12,
+      "section": "nota que desglosa \"Tegevuskulud\"",
       "values": [
-        0.010106
+        0.010105
       ],
-      "glosa": "Material impreso y otros materiales"
+      "glosa": "Material impreso y otros suministros"
     },
     {
       "label": "Muud klassifitseerimata kodumängu korralduskulud",
       "lado": "expense",
-      "page": 15,
-      "section": "estado",
+      "page": 12,
+      "section": "nota que desglosa \"Tegevuskulud\"",
       "values": [
         0.034304
       ],
@@ -259,110 +279,100 @@
     {
       "label": "Eesti meistrivōistluste osavōtutasu",
       "lado": "expense",
-      "page": 15,
-      "section": "estado",
+      "page": 12,
+      "section": "nota que desglosa \"Tegevuskulud\"",
       "values": [
-        0.01254
+        0.01274
       ],
-      "glosa": "Cuota de participación en el Campeonato de Estonia"
+      "glosa": "Cuota de inscripción en el campeonato de Estonia"
     },
     {
       "label": "Lähetuskulud",
       "lado": "expense",
-      "page": 15,
-      "section": "estado",
+      "page": 12,
+      "section": "nota que desglosa \"Tegevuskulud\"",
       "values": [
-        0.308778
+        0.430603
       ],
       "glosa": "Gastos de viaje y desplazamientos"
     },
     {
       "label": "Turundus-, sponsorlus- ja reklaamikulud",
       "lado": "expense",
-      "page": 15,
-      "section": "estado",
+      "page": 12,
+      "section": "nota que desglosa \"Tegevuskulud\"",
       "values": [
-        0.008574
+        0.008768
       ],
       "glosa": "Gastos de marketing, patrocinio y publicidad"
     },
     {
       "label": "Klubisümboolikaga toodete omahind",
       "lado": "expense",
-      "page": 15,
-      "section": "estado",
+      "page": 12,
+      "section": "nota que desglosa \"Tegevuskulud\"",
       "values": [
         0.01079
       ],
-      "glosa": "Coste de ventas de productos oficiales"
+      "glosa": "Coste de ventas de productos oficiales del club"
     },
     {
       "label": "Klubile kuuluvate ja tema poolt renditud hoonete ja rajatisega seotud kulud",
       "lado": "expense",
-      "page": 15,
-      "section": "estado",
+      "page": 12,
+      "section": "nota que desglosa \"Tegevuskulud\"",
       "values": [
-        0.060071
+        0.178571
       ],
-      "glosa": "Gastos vinculados a edificios e instalaciones propios y arrendados"
+      "glosa": "Gastos de edificios e instalaciones propios y arrendados por el club"
     },
     {
       "label": "Klubi administeerimiskulud",
       "lado": "expense",
-      "page": 15,
-      "section": "estado",
+      "page": 12,
+      "section": "nota que desglosa \"Tegevuskulud\"",
       "values": [
-        0.0404
+        0.049258
       ],
       "glosa": "Gastos de administración del club"
     },
     {
-      "label": "Muud kulud",
-      "lado": "expense",
-      "page": 15,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Otros gastos"
-    },
-    {
       "label": "Muud tegevuskulud",
       "lado": "expense",
-      "page": 15,
-      "section": "estado",
+      "page": 12,
+      "section": "nota que desglosa \"Tegevuskulud\"",
       "values": [
-        0.252333
+        0.307809
       ],
       "glosa": "Otros gastos de explotación"
     },
     {
-      "label": "Pōhivara kulum",
+      "label": "Kulu mängijate üleminekutest klubisse",
       "lado": "expense",
-      "page": 15,
+      "page": 5,
       "section": "estado",
       "values": [
-        0.134844
+        0.104323
       ],
-      "glosa": "Amortización del inmovilizado material"
+      "glosa": "Gastos por fichajes y traspasos de jugadores al club"
     },
     {
-      "label": "Liikmemaks",
+      "label": "Pōhivara kulum",
       "lado": "expense",
-      "page": 15,
+      "page": 5,
       "section": "estado",
       "values": [
-        0.103226
+        0.135535
       ],
-      "glosa": "Cuotas de afiliación"
+      "glosa": "Amortización del inmovilizado"
     },
     {
       "label": "Ärikulud",
       "lado": "expense",
-      "page": 15,
+      "page": 5,
       "section": "estado",
       "values": [
-        0
+        0.000016
       ],
       "glosa": "Gastos de explotación"
     }

@@ -1,0 +1,544 @@
+{
+ "pdf": "Clubes/Estonia/Tartu Tammeka/aruanne-2025.pdf",
+ "md": "Clubes/Estonia/Tartu Tammeka/aruanne-2025.md",
+ "generado": "2026-10-18T13:25:26.328Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Tartu Tammeka/aruanne-2025.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne 01.01-31.12.2025 con tulemiaruanne (L132) (revisión del alta, subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "2.202013 = 2.202013",
+   "suma": 2.2020129999999996,
+   "impreso": 2.202013
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "1.685591 = 1.685591",
+   "suma": 1.6855909999999996,
+   "impreso": 1.6855909999999998
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 5.551115123125783e-17
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Liikmetelt saadud tasud\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de localizar confirmada por las sumas (cuadro-duplicado, \"Annetused ja toetused\"): ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (b23) por ser un reagrupamiento del mismo total de annetused ja toetused que ya abre b22?",
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Annetused ja toetused\"): ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L489-L490) por ser otra apertura del mismo renglón ya desglosado en b22?"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 2.202013,
+  "gastos": 1.685591,
+  "financiero": -0.027484,
+  "impuesto": 0,
+  "resultadoImpreso": 0.488938,
+  "resultadoParaCargar": 0.488938,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Liikmetelt saadud tasud",
+   "lado": "ingreso",
+   "M": 0.500373,
+   "pagina": 5,
+   "linea": 139,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Tartu Linnavalitsus",
+   "lado": "ingreso",
+   "M": 0.30883,
+   "pagina": 15,
+   "linea": 470,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Eesti Jalgpalli Liit",
+   "lado": "ingreso",
+   "M": 0.201636,
+   "pagina": 15,
+   "linea": 472,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "UEFA Solidaarsustoetus",
+   "lado": "ingreso",
+   "M": 0.4516,
+   "pagina": 15,
+   "linea": 473,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Spordikoolituse- ja Teabe Sihtasutus",
+   "lado": "ingreso",
+   "M": 0.092436,
+   "pagina": 15,
+   "linea": 474,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Füüsilised ja juriidilised isikud",
+   "lado": "ingreso",
+   "M": 0.054058,
+   "pagina": 15,
+   "linea": 475,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Tartu Vallavalitsus",
+   "lado": "ingreso",
+   "M": 0.004,
+   "pagina": 15,
+   "linea": 476,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Eesti Kultuurikapital",
+   "lado": "ingreso",
+   "M": 0.00785,
+   "pagina": 15,
+   "linea": 477,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Elva Vallavalitus",
+   "lado": "ingreso",
+   "M": 0.0003,
+   "pagina": 15,
+   "linea": 478,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Luunja Vallavalitsus",
+   "lado": "ingreso",
+   "M": 0.001925,
+   "pagina": 15,
+   "linea": 480,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Kambja Vallavalitsus",
+   "lado": "ingreso",
+   "M": 0.00672,
+   "pagina": 15,
+   "linea": 481,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Kastre Vallavalitsus",
+   "lado": "ingreso",
+   "M": 0.0009,
+   "pagina": 15,
+   "linea": 482,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Tulu varustuse müügist",
+   "lado": "ingreso",
+   "M": 0.012485,
+   "pagina": 16,
+   "linea": 500,
+   "origen": "nota que desglosa \"Tulu ettevõtlusest\""
+  },
+  {
+   "etiqueta": "Reklaamitulu",
+   "lado": "ingreso",
+   "M": 0.335448,
+   "pagina": 16,
+   "linea": 501,
+   "origen": "nota que desglosa \"Tulu ettevõtlusest\""
+  },
+  {
+   "etiqueta": "Tulu piletite müügist",
+   "lado": "ingreso",
+   "M": 0.0114,
+   "pagina": 16,
+   "linea": 502,
+   "origen": "nota que desglosa \"Tulu ettevõtlusest\""
+  },
+  {
+   "etiqueta": "Tulu muust äritegevusest",
+   "lado": "ingreso",
+   "M": 0.162712,
+   "pagina": 16,
+   "linea": 503,
+   "origen": "nota que desglosa \"Tulu ettevõtlusest\""
+  },
+  {
+   "etiqueta": "Mängijate üleminekutega seotud tulu",
+   "lado": "ingreso",
+   "M": 0.04765,
+   "pagina": 16,
+   "linea": 504,
+   "origen": "nota que desglosa \"Tulu ettevõtlusest\""
+  },
+  {
+   "etiqueta": "Tulu väljaku rendist",
+   "lado": "ingreso",
+   "M": 0.000588,
+   "pagina": 16,
+   "linea": 505,
+   "origen": "nota que desglosa \"Tulu ettevõtlusest\""
+  },
+  {
+   "etiqueta": "Muud tulud",
+   "lado": "ingreso",
+   "M": 0.001102,
+   "pagina": 5,
+   "linea": 142,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Üür ja rent",
+   "lado": "gasto",
+   "M": 0.004879,
+   "pagina": 16,
+   "linea": 514,
+   "origen": "nota que desglosa \"Sihtotstarbeliselt finantseeritud projektide otsesed kulud\""
+  },
+  {
+   "etiqueta": "Palgakulu - elukutselised mängijad",
+   "lado": "gasto",
+   "M": 0.142483,
+   "pagina": 18,
+   "linea": 577,
+   "origen": "nota que desglosa \"Sihtotstarbeliselt finantseeritud projektide otsesed kulud\" > desglose de \"Tööjõukulud\""
+  },
+  {
+   "etiqueta": "Sotsiaalmaksud - elukutselised mängijad",
+   "lado": "gasto",
+   "M": 0.050374,
+   "pagina": 18,
+   "linea": 578,
+   "origen": "nota que desglosa \"Sihtotstarbeliselt finantseeritud projektide otsesed kulud\" > desglose de \"Tööjõukulud\""
+  },
+  {
+   "etiqueta": "Palgakulu - muu personal",
+   "lado": "gasto",
+   "M": 0.533378,
+   "pagina": 18,
+   "linea": 579,
+   "origen": "nota que desglosa \"Sihtotstarbeliselt finantseeritud projektide otsesed kulud\" > desglose de \"Tööjõukulud\""
+  },
+  {
+   "etiqueta": "Sotsiaalmaksud - muu personal",
+   "lado": "gasto",
+   "M": 0.190189,
+   "pagina": 18,
+   "linea": 580,
+   "origen": "nota que desglosa \"Sihtotstarbeliselt finantseeritud projektide otsesed kulud\" > desglose de \"Tööjõukulud\""
+  },
+  {
+   "etiqueta": "Spordibaaside rent",
+   "lado": "gasto",
+   "M": 0.103629,
+   "pagina": 16,
+   "linea": 516,
+   "origen": "nota que desglosa \"Sihtotstarbeliselt finantseeritud projektide otsesed kulud\""
+  },
+  {
+   "etiqueta": "Turniiride, võistluste osavõtutasud",
+   "lado": "gasto",
+   "M": 0.01331,
+   "pagina": 16,
+   "linea": 517,
+   "origen": "nota que desglosa \"Sihtotstarbeliselt finantseeritud projektide otsesed kulud\""
+  },
+  {
+   "etiqueta": "Spordivarustus",
+   "lado": "gasto",
+   "M": 0.015431,
+   "pagina": 16,
+   "linea": 518,
+   "origen": "nota que desglosa \"Sihtotstarbeliselt finantseeritud projektide otsesed kulud\""
+  },
+  {
+   "etiqueta": "Sporditoetus",
+   "lado": "gasto",
+   "M": 0.102369,
+   "pagina": 16,
+   "linea": 527,
+   "origen": "nota que desglosa \"Jagatud annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Spordistipendium",
+   "lado": "gasto",
+   "M": 0.0341,
+   "pagina": 16,
+   "linea": 528,
+   "origen": "nota que desglosa \"Jagatud annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Eesti Jalgpalli Liit toetusfond",
+   "lado": "gasto",
+   "M": 0.015,
+   "pagina": 16,
+   "linea": 529,
+   "origen": "nota que desglosa \"Jagatud annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Üür ja rent",
+   "lado": "gasto",
+   "M": 0.035732,
+   "pagina": 17,
+   "linea": 540,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Elektrienergia",
+   "lado": "gasto",
+   "M": 0.006,
+   "pagina": 17,
+   "linea": 542,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\" > desglose de \"Energia\""
+  },
+  {
+   "etiqueta": "Soojusenergia",
+   "lado": "gasto",
+   "M": 0.000173,
+   "pagina": 17,
+   "linea": 543,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\" > desglose de \"Energia\""
+  },
+  {
+   "etiqueta": "Kütus",
+   "lado": "gasto",
+   "M": 0.002679,
+   "pagina": 17,
+   "linea": 544,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\" > desglose de \"Energia\""
+  },
+  {
+   "etiqueta": "Veevarustusteenused",
+   "lado": "gasto",
+   "M": 0.000575,
+   "pagina": 17,
+   "linea": 545,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Mitmesugused bürookulud",
+   "lado": "gasto",
+   "M": 0.005943,
+   "pagina": 17,
+   "linea": 546,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Lähetuskulud",
+   "lado": "gasto",
+   "M": 0.010895,
+   "pagina": 17,
+   "linea": 547,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Koolituskulud",
+   "lado": "gasto",
+   "M": 0.004405,
+   "pagina": 17,
+   "linea": 548,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Kulu ebatõenäoliselt laekuvatest nõuetest",
+   "lado": "gasto",
+   "M": 0.006973,
+   "pagina": 17,
+   "linea": 549,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Spordivarustus",
+   "lado": "gasto",
+   "M": 0.029059,
+   "pagina": 17,
+   "linea": 550,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Transport",
+   "lado": "gasto",
+   "M": 0.076344,
+   "pagina": 17,
+   "linea": 551,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Turniiride, võistluste osavõtutasud",
+   "lado": "gasto",
+   "M": 0.131998,
+   "pagina": 17,
+   "linea": 552,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Mängijate üleminekutega seotud kulud",
+   "lado": "gasto",
+   "M": 0.0045,
+   "pagina": 17,
+   "linea": 553,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Treeninglaager",
+   "lado": "gasto",
+   "M": 0.026135,
+   "pagina": 17,
+   "linea": 554,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Võistluste, ürituste korraldamiskulud",
+   "lado": "gasto",
+   "M": 0.010587,
+   "pagina": 17,
+   "linea": 555,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Turvateenus",
+   "lado": "gasto",
+   "M": 0.007556,
+   "pagina": 17,
+   "linea": 556,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Litsentsitasud",
+   "lado": "gasto",
+   "M": 0.00818,
+   "pagina": 17,
+   "linea": 557,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Meditsiinitarvikud, taastumisvahendid",
+   "lado": "gasto",
+   "M": 0.005515,
+   "pagina": 17,
+   "linea": 558,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Reklaamikulud",
+   "lado": "gasto",
+   "M": 0.002549,
+   "pagina": 17,
+   "linea": 559,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Raamatupidamine",
+   "lado": "gasto",
+   "M": 0.02016,
+   "pagina": 17,
+   "linea": 560,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Ehitusmaterjal ja -teenus",
+   "lado": "gasto",
+   "M": 0.017556,
+   "pagina": 17,
+   "linea": 561,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Isikliku auto kasutamise kompensatsioon",
+   "lado": "gasto",
+   "M": 0.032032,
+   "pagina": 17,
+   "linea": 562,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Mängijate üleminekutega seotud vahendustasu",
+   "lado": "gasto",
+   "M": 0.0048,
+   "pagina": 17,
+   "linea": 563,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Muud",
+   "lado": "gasto",
+   "M": 0.015252,
+   "pagina": 17,
+   "linea": 564,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Põhivarade kulum ja väärtuse langus",
+   "lado": "gasto",
+   "M": 0.012312,
+   "pagina": 5,
+   "linea": 148,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Muud kulud",
+   "lado": "gasto",
+   "M": 0.002539,
+   "pagina": 5,
+   "linea": 149,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Intressikulud",
+   "M": -0.019979,
+   "linea": 152
+  },
+  {
+   "etiqueta": "Muud finantstulud ja -kulud",
+   "M": -0.007505,
+   "linea": 153
+  }
+ ],
+ "impuesto": []
+}

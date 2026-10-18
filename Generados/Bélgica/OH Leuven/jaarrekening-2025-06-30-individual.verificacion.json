@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf",
  "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.md",
- "generado": "2026-10-18T06:34:52.552Z",
- "estado": "cola",
+ "generado": "2026-10-18T13:25:35.193Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -39,12 +39,7 @@
    "fecha": "2026-10-18"
   }
  ],
- "cola": [
-  "2e02168",
-  "0e3d017",
-  "0e3d017",
-  "cbb3372"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -88,7 +83,10 @@
   "ajuste manual: fila \"Andere financiële kosten\" (financiero) -1.985, en lugar de \"Andere financiële kosten\" (2026-10-18, costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18))",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b79 es una versión condensada del mismo estado de resultados 30/06/2025, solo con la columna del ejercicio.",
-  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de localizar ya contestada para el club (fila-ilegible, \"Omzet\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
+  "duda de localizar ya contestada para el club (fila-ilegible, \"Andere financiële opbrengsten\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Andere financiële opbrengsten\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Bezoldigingen, sociale lasten en pensioenen\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

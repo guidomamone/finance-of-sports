@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.pdf",
   "club": "beerschot",
   "year": 2025,
-  "generatedAt": "2026-10-18T06:17:46.522Z",
+  "generatedAt": "2026-10-18T13:08:06.324Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         2.778568
       ],
-      "glosa": "Patrocinio"
+      "glosa": "Patrocinios"
     },
     {
       "label": "TV rechten",
@@ -50,7 +50,7 @@
       "label": "Andere bedrijfsopbrengsten",
       "lado": "revenue",
       "page": 8,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         7.180163
       ],
@@ -60,37 +60,17 @@
       "label": "Niet-recurrente bedrijfsopbrengsten",
       "lado": "revenue",
       "page": 8,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.00244
       ],
       "glosa": "Ingresos de explotación no recurrentes"
     },
     {
-      "label": "Bedrijfskosten",
-      "lado": "expense",
-      "page": 8,
-      "section": "estado",
-      "values": [
-        20.897734
-      ],
-      "glosa": "Gastos de explotación"
-    },
-    {
-      "label": "Handelsgoederen, grond- en hulpstoffen",
-      "lado": "expense",
-      "page": 8,
-      "section": "estado",
-      "values": [
-        0.904473
-      ],
-      "glosa": "Mercaderías, materias primas y auxiliares"
-    },
-    {
       "label": "Aankopen",
       "lado": "expense",
       "page": 8,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.925607
       ],
@@ -100,17 +80,17 @@
       "label": "Voorraad: afname (toename) (+)/(-)",
       "lado": "expense",
       "page": 8,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        0.021134
+        -0.021134
       ],
-      "glosa": "Existencias: disminución (aumento) (+)/(-)"
+      "glosa": "Variación de existencias: disminución (aumento) (+)/(-)"
     },
     {
       "label": "Diensten en diverse goederen",
       "lado": "expense",
       "page": 8,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         7.523193
       ],
@@ -124,7 +104,7 @@
       "values": [
         9.380292
       ],
-      "glosa": "Sueldos, salarios y prestaciones sociales directas"
+      "glosa": "Remuneraciones y beneficios sociales directos"
     },
     {
       "label": "Werkgeversbijdragen voor sociale verzekeringen",
@@ -134,7 +114,7 @@
       "values": [
         1.435486
       ],
-      "glosa": "Cotizaciones a la seguridad social a cargo de la empresa"
+      "glosa": "Aportaciones patronales a la seguridad social"
     },
     {
       "label": "Andere personeelskosten",
@@ -150,11 +130,11 @@
       "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
       "lado": "expense",
       "page": 8,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.891583
       ],
-      "glosa": "Amortizaciones y correcciones de valor sobre gastos de constitución, inmovilizado intangible y material"
+      "glosa": "Amortizaciones y deterioros sobre gastos de constitución, inmovilizado intangible y material"
     },
     {
       "label": "Teruggenomen",
@@ -162,7 +142,7 @@
       "page": 24,
       "section": "nota que desglosa \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\"",
       "values": [
-        0.00821
+        -0.00821
       ],
       "glosa": "Reversiones"
     },
@@ -172,19 +152,9 @@
       "page": 24,
       "section": "nota que desglosa \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\"",
       "values": [
-        0.056624
+        -0.056624
       ],
       "glosa": "Reversiones"
-    },
-    {
-      "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
-      "lado": "expense",
-      "page": 8,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Provisiones para riesgos y gastos: dotaciones (aplicaciones y reversiones) (+)/(-)"
     },
     {
       "label": "Bedrijfsbelastingen en -taksen",
@@ -210,7 +180,7 @@
       "label": "Niet-recurrente bedrijfskosten",
       "lado": "expense",
       "page": 8,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.002623
       ],

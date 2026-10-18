@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/RAAL La Louvière/wf-2024-2025-2677fac4.pdf",
  "md": "Clubes/Bélgica/RAAL La Louvière/wf-2024-2025-2677fac4.md",
- "generado": "2026-10-18T06:17:47.108Z",
- "estado": "cola",
+ "generado": "2026-10-18T13:25:35.291Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -11,11 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "f820b44",
-  "f820b44"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Bélgica/RAAL La Louvière/wf-2024-2025-2677fac4.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "2024-25 trae el consolidado (RAAL SC + Services + Jeunes) con estado completo y el individual solo con marge brute: se carga el consolidado (CONVENCIONES-DATOS, perímetro y dos documentos del mismo ejercicio) (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -49,7 +57,9 @@
   }
  ],
  "notas": [
-  "escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)"
+  "escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en wf-2024-2025-2677fac4.pdf",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en wf-2024-2025-2677fac4.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

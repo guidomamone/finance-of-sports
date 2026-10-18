@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2025-06-30-individual.pdf",
  "md": "Clubes/Bélgica/RWDM/jaarrekening-2025-06-30-individual.md",
- "generado": "2026-10-18T06:34:53.765Z",
- "estado": "cola",
+ "generado": "2026-10-18T13:25:35.315Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -75,10 +75,7 @@
    "fecha": "2026-10-18"
   }
  ],
- "cola": [
-  "e2bc95f",
-  "5096db5"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -125,8 +122,9 @@
   "escalón \"subtotal repetido\": \"Handelsgoederen, grond- en hulpstoffen\" (L275) repite la fila de abajo \"Aankopen\" (L276); se saltea",
   "escalón \"subtotal repetido\": cerró la lectura 4 sin contar dos veces el subtotal que repite el renglón de arriba",
   "la lectura base no cerraba; cerró con la lectura 4",
-  "duda de extraer que no afecta la carga: L925 tiene celda vacía en Boekjaar y 6.184 en el año anterior; se cargó con actual vacío.",
-  "3 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de localizar ya contestada para el club (escala, \"Te bestemmen winst (verlies) van het boekjaar\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
+  "duda de extraer que no afecta la carga: L925 tiene celda vacía en Boekjaar y 6.184 en el año anterior; se cargó con actual vacío."
  ],
  "reintentar": null,
  "reintentado": false,

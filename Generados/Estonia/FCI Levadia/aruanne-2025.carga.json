@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2025.pdf",
- "generado": "2026-10-18T06:11:42.902Z",
+ "generado": "2026-10-18T13:25:28.305Z",
  "frena": [
   {
    "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 5 caso(s) en la cola humana (node tools/cola.mjs)"
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
   },
   {
    "etapa": "categorizacion",
@@ -12,10 +12,16 @@
   },
   {
    "etapa": "club",
-   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; la ficha del alta tiene preguntas en id, country, reportingCurrency"
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (fcilevadia-ee)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
   }
  ],
- "avisos": [],
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del club, 2026-10-18: 2025 trae los dos estados (konsolideeritud L142-177 y Lisa 15, la MTÜ sola, L554-606); las controladas son dos escuelas de fútbol del club: consolidado (CONVENCIONES-DATOS, regla del perímetro, punto 2). (revisión del alta, subagente Sonnet, revisado por Claude 2026-10-18))"
+ ],
  "ejercicio": null,
  "md": "Clubes/Estonia/FCI Levadia/aruanne-2025.md",
  "reemplaza": false,
@@ -27,5 +33,7 @@
   "confianza": "media",
   "anual": "calendario"
  },
- "cortadoEn": "club"
+ "clubId": "fcilevadia-ee",
+ "year": 2025,
+ "cortadoEn": "filas"
 }

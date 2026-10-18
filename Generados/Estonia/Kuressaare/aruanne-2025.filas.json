@@ -2,12 +2,12 @@
  "pdf": "Clubes/Estonia/Kuressaare/aruanne-2025.pdf",
  "md": "Clubes/Estonia/Kuressaare/aruanne-2025.md",
  "mdSha1": "0555056122b54a6126d690d8d6e948e33ae8aeb2",
- "ubicacionSha1": "8763a15a3aa105e789a92de92ee8a2f2486433c1",
+ "ubicacionSha1": "b5c633594b14782e9ee2c52f3e169d2e8e39b12b",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-18T06:06:25.516Z",
+ "generado": "2026-10-18T13:25:23.508Z",
  "ubicacion": {
   "estado": [
-   "b33"
+   "b5"
   ],
   "notas_ingresos": [
    "b19",
@@ -23,9 +23,9 @@
  },
  "escalas": [
   {
-   "bloque": "b33",
+   "bloque": "b5",
    "escala": "unidades",
-   "evidencia": "L741: (eurodes)"
+   "evidencia": "L176: (eurodes)"
   },
   {
    "bloque": "b19",
@@ -40,7 +40,7 @@
   {
    "bloque": "b21",
    "escala": "unidades",
-   "evidencia": "Continúa Lisa 10 (L557: eurodes)"
+   "evidencia": "Continuación de Lisa 10 (L557: eurodes), sin indicación propia"
   },
   {
    "bloque": "b22",
@@ -65,28 +65,38 @@
  ],
  "filas": [
   {
-   "bloque": "b33",
-   "linea": 746,
+   "bloque": "b5",
+   "linea": 181,
+   "etiqueta": "Liikmetelt saadud tasud",
+   "actual": "201 870",
+   "anterior": "188 162",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 182,
    "etiqueta": "Annetused ja toetused",
-   "actual": "349 453",
-   "anterior": "196 075",
+   "actual": "479 460",
+   "anterior": "280 276",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": null
   },
   {
-   "bloque": "b33",
-   "linea": 747,
+   "bloque": "b5",
+   "linea": 183,
    "etiqueta": "Tulu ettevõtlusest",
-   "actual": "17 106",
-   "anterior": "11 286",
+   "actual": "56 763",
+   "anterior": "42 731",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": null
   },
   {
-   "bloque": "b33",
-   "linea": 748,
+   "bloque": "b5",
+   "linea": 184,
    "etiqueta": "Muud tulud",
    "actual": "0",
    "anterior": "2 160",
@@ -95,49 +105,49 @@
    "detalla_a": null
   },
   {
-   "bloque": "b33",
-   "linea": 749,
+   "bloque": "b5",
+   "linea": 185,
    "etiqueta": "Kokku tulud",
-   "actual": "366 559",
-   "anterior": "209 521",
+   "actual": "738 093",
+   "anterior": "513 329",
    "tipo": "total",
    "lado": "ingreso",
    "detalla_a": null
   },
   {
-   "bloque": "b33",
-   "linea": 751,
+   "bloque": "b5",
+   "linea": 187,
    "etiqueta": "Jagatud annetused ja toetused",
-   "actual": "-23 924",
-   "anterior": "-12 760",
+   "actual": "-110 395",
+   "anterior": "-92 660",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": null
   },
   {
-   "bloque": "b33",
-   "linea": 752,
+   "bloque": "b5",
+   "linea": 188,
    "etiqueta": "Mitmesugused tegevuskulud",
-   "actual": "-218 921",
-   "anterior": "-159 969",
+   "actual": "-237 681",
+   "anterior": "-207 749",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": null
   },
   {
-   "bloque": "b33",
-   "linea": 753,
+   "bloque": "b5",
+   "linea": 189,
    "etiqueta": "Tööjõukulud",
-   "actual": "-238 317",
-   "anterior": "-152 601",
+   "actual": "-467 724",
+   "anterior": "-414 910",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": null
   },
   {
-   "bloque": "b33",
-   "linea": 754,
-   "etiqueta": "Põhivara kulum ja väärtuse langus",
+   "bloque": "b5",
+   "linea": 190,
+   "etiqueta": "Põhivarade kulum ja väärtuse langus",
    "actual": "-596",
    "anterior": "-450",
    "tipo": "renglon",
@@ -145,51 +155,61 @@
    "detalla_a": null
   },
   {
-   "bloque": "b33",
-   "linea": 755,
+   "bloque": "b5",
+   "linea": 191,
    "etiqueta": "Muud kulud",
-   "actual": "-5 592",
-   "anterior": "-2 508",
+   "actual": "-7 593",
+   "anterior": "-3 178",
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": null
   },
   {
-   "bloque": "b33",
-   "linea": 756,
+   "bloque": "b5",
+   "linea": 192,
    "etiqueta": "Kokku kulud",
-   "actual": "-487 350",
-   "anterior": "-328 288",
+   "actual": "-823 989",
+   "anterior": "-718 947",
    "tipo": "total",
    "lado": "gasto",
    "detalla_a": null
   },
   {
-   "bloque": "b33",
-   "linea": 757,
+   "bloque": "b5",
+   "linea": 193,
    "etiqueta": "Põhitegevuse tulem",
-   "actual": "-120 791",
-   "anterior": "-118 767",
+   "actual": "-85 896",
+   "anterior": "-205 618",
    "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
   },
   {
-   "bloque": "b33",
-   "linea": 758,
-   "etiqueta": "Muud finantstulud ja -kulud",
-   "actual": "-11 379",
-   "anterior": "-6 838",
+   "bloque": "b5",
+   "linea": 194,
+   "etiqueta": "Intressitulud",
+   "actual": "6",
+   "anterior": "1",
    "tipo": "renglon",
    "lado": "financiero",
    "detalla_a": null
   },
   {
-   "bloque": "b33",
-   "linea": 759,
+   "bloque": "b5",
+   "linea": 195,
+   "etiqueta": "Intressikulud",
+   "actual": "-13 806",
+   "anterior": "-8 666",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 196,
    "etiqueta": "Aruandeaasta tulem",
-   "actual": "-132 170",
-   "anterior": "-125 605",
+   "actual": "-99 696",
+   "anterior": "-214 283",
    "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
@@ -202,7 +222,7 @@
    "anterior": "188 162",
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": null
+   "detalla_a": "Liikmetelt saadud tasud"
   },
   {
    "bloque": "b19",
@@ -210,9 +230,9 @@
    "etiqueta": "Kokku liikmetelt saadud tasud",
    "actual": "201 870",
    "anterior": "188 162",
-   "tipo": "subtotal",
+   "tipo": "total",
    "lado": "ingreso",
-   "detalla_a": null
+   "detalla_a": "Liikmetelt saadud tasud"
   },
   {
    "bloque": "b20",
@@ -260,7 +280,27 @@
    "etiqueta": "Kokku annetused ja toetused",
    "actual": "479 460",
    "anterior": "280 276",
-   "tipo": "subtotal",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Annetused ja toetused"
+  },
+  {
+   "bloque": "b21",
+   "linea": 571,
+   "etiqueta": "Rahaline annetus",
+   "actual": "479 460",
+   "anterior": "280 276",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Annetused ja toetused"
+  },
+  {
+   "bloque": "b21",
+   "linea": 572,
+   "etiqueta": "Kokku annetused ja toetused",
+   "actual": "479 460",
+   "anterior": "280 276",
+   "tipo": "total",
    "lado": "ingreso",
    "detalla_a": "Annetused ja toetused"
   },
@@ -320,7 +360,7 @@
    "etiqueta": "Kokku tulu ettevõtlusest",
    "actual": "56 763",
    "anterior": "42 731",
-   "tipo": "subtotal",
+   "tipo": "total",
    "lado": "ingreso",
    "detalla_a": "Tulu ettevõtlusest"
   },
@@ -360,7 +400,7 @@
    "etiqueta": "Kokku jagatud annetused ja toetused",
    "actual": "110 395",
    "anterior": "92 660",
-   "tipo": "subtotal",
+   "tipo": "total",
    "lado": "gasto",
    "detalla_a": "Jagatud annetused ja toetused"
   },
@@ -500,7 +540,7 @@
    "etiqueta": "Kokku mitmesugused tegevuskulud",
    "actual": "237 681",
    "anterior": "207 749",
-   "tipo": "subtotal",
+   "tipo": "total",
    "lado": "gasto",
    "detalla_a": "Mitmesugused tegevuskulud"
   },
@@ -550,65 +590,37 @@
    "etiqueta": "Kokku tööjõukulud",
    "actual": "467 724",
    "anterior": "414 910",
-   "tipo": "subtotal",
+   "tipo": "total",
    "lado": "gasto",
    "detalla_a": "Tööjõukulud"
   }
  ],
  "total_ingresos": {
-  "linea": 749,
-  "actual": "366 559"
+  "linea": 185,
+  "actual": "738 093"
  },
  "total_gastos": {
-  "linea": 756,
-  "actual": "-487 350"
+  "linea": 192,
+  "actual": "-823 989"
  },
  "resultado": {
-  "linea": 759,
-  "actual": "-132 170",
-  "anterior": "-125 605"
+  "linea": 196,
+  "actual": "-99 696",
+  "anterior": "-214 283"
  },
  "dudas": [
   {
-   "pregunta": "¿Se reemplaza el estado b33 'Konsolideerimata tulemiaruanne' (L740, no consolidado) por el estado de resultados consolidado principal del informe, con el que sí cuadran las notas?",
-   "propuesta": "sí",
-   "tema": "perimetro",
-   "renglon": "",
-   "texto": "b33 es el estado no consolidado (Lisa 18) y sus importes no coinciden con las notas (ej. Annetused ja toetused 349 453 vs 479 460 en L565; Tööjõukulud 238 317 vs 467 724 en L633).",
-   "bloques": [
-    "b33",
-    "b20",
-    "b22",
-    "b23",
-    "b24",
-    "b25"
-   ],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se cargan las filas de Lisa 9 'Liikmetelt saadud tasud' (L547-L548, 201 870) como ingreso aunque no hay renglón de cuotas de socios en b33?",
-   "propuesta": "sí",
-   "tema": "perimetro",
-   "renglon": "",
-   "texto": "b19 no tiene renglón correspondiente en el estado no consolidado b33, probablemente sí en el estado consolidado.",
-   "bloques": [
-    "b19",
-    "b33"
-   ],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L569-L572) por repetir el total de Lisa 10?",
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (b21, L569-L572) por ser un desglose alternativo duplicado de 'Annetused ja toetused' ya detallado en b20?",
    "propuesta": "sí",
    "tema": "cuadro-duplicado",
    "renglon": "Annetused ja toetused",
-   "texto": "b21 es otro corte del mismo total 479 460 de L565; cargarlo duplicaría el importe.",
+   "texto": "b21 vuelve a desglosar el mismo total 479 460 (L572) por naturaleza de la donación, lo que duplicaría el detalle de b20 si se suman ambos.",
    "bloques": [
     "b21",
     "b20"
    ],
-   "afecta_carga": false
+   "afecta_carga": true
   }
  ],
- "observaciones": "Estado b33 en euros. Las notas no cuadran con b33 (no consolidado); ver dudas de perímetro. b21 no se extrajo por duplicado. L634 (cantidad media de empleados, 24/22) no es importe y se omitió. Importes de gasto en notas vienen en positivo y en el estado en negativo, se copiaron tal cual."
+ "observaciones": "Escala en euros (eurodes) en todos los bloques. Se excluyó L634 (Töötajate keskmine arv, cantidad de empleados, no es importe). No hay impuesto a las ganancias. Los totales de las notas coinciden con los renglones del estado."
 }

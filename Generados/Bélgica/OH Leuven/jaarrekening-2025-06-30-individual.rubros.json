@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf",
   "club": "oh-leuven",
   "year": 2025,
-  "generatedAt": "2026-10-18T06:17:46.933Z",
+  "generatedAt": "2026-10-18T13:08:06.410Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -37,16 +37,6 @@
       "glosa": "Ingresos de explotación no recurrentes"
     },
     {
-      "label": "Bedrijfskosten",
-      "lado": "expense",
-      "page": 9,
-      "section": "estado",
-      "values": [
-        47.707467
-      ],
-      "glosa": "Gastos de explotación"
-    },
-    {
       "label": "Aankopen",
       "lado": "expense",
       "page": 9,
@@ -54,7 +44,7 @@
       "values": [
         1.52052
       ],
-      "glosa": "Aprovisionamientos"
+      "glosa": "Compras"
     },
     {
       "label": "Voorraad: afname (toename)",
@@ -120,19 +110,19 @@
       "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)",
       "lado": "expense",
       "page": 9,
-      "section": "estado",
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
       "values": [
-        0.004378
+        -0.004378
       ],
-      "glosa": "Pérdidas por deterioro de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones)"
+      "glosa": "Deterioro de valor de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones)"
     },
     {
       "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen)",
       "lado": "expense",
       "page": 9,
-      "section": "estado",
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
       "values": [
-        0.316581
+        -0.316581
       ],
       "glosa": "Provisiones para riesgos y gastos: dotaciones (aplicaciones y reversiones)"
     },

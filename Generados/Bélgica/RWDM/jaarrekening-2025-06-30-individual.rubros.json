@@ -2,8 +2,8 @@
   "md": "Clubes/Bélgica/RWDM/jaarrekening-2025-06-30-individual.md",
   "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2025-06-30-individual.pdf",
   "club": "rwdm",
-  "year": null,
-  "generatedAt": "2026-10-18T06:17:47.235Z",
+  "year": 2025,
+  "generatedAt": "2026-10-18T13:08:06.472Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -25,16 +25,6 @@
         10.904952
       ],
       "glosa": "Otros ingresos de explotación"
-    },
-    {
-      "label": "Handelsgoederen, grond- en hulpstoffen",
-      "lado": "expense",
-      "page": 8,
-      "section": "estado",
-      "values": [
-        0.74886
-      ],
-      "glosa": "Mercaderías, materias primas y materias auxiliares"
     },
     {
       "label": "Aankopen",
@@ -64,7 +54,7 @@
       "values": [
         7.691859
       ],
-      "glosa": "Remuneraciones y prestaciones sociales directas"
+      "glosa": "Remuneraciones y beneficios sociales directos"
     },
     {
       "label": "Werkgeversbijdragen voor sociale verzekeringen",
@@ -94,7 +84,7 @@
       "values": [
         2.5493
       ],
-      "glosa": "Amortizaciones y correcciones de valor de gastos de establecimiento, del inmovilizado intangible y material"
+      "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, inmovilizado intangible y material"
     },
     {
       "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
@@ -104,7 +94,7 @@
       "values": [
         1.1895
       ],
-      "glosa": "Provisiones para riesgos y gastos: dotaciones (aplicaciones y reversiones) (+)/(-)"
+      "glosa": "Provisiones para riesgos y gastos: dotaciones (utilizaciones y reversiones) (+)/(-)"
     },
     {
       "label": "Bedrijfsbelastingen en -taksen",
@@ -134,7 +124,7 @@
       "values": [
         0.934104
       ],
-      "glosa": "Pérdidas por enajenación de inmovilizado intangible y material"
+      "glosa": "Pérdidas en la enajenación de inmovilizado intangible y material"
     },
     {
       "label": "Andere niet-recurrente bedrijfskosten",
