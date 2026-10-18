@@ -168,19 +168,19 @@
   `wp-json/wp/v2/media?search=revisione`). Todos sin salvedades, con texto, transcriptos con pdftotext.
 - Skills (con el ok de Guido): `club-sourcing/paises/Italia.md` suma dónde publica cada club el informe del auditor; `club-sourcing/SKILL.md`,
   que el informe suele ser un documento aparte; `worktree.md`, el rsync con `--no-links`.
-- FALTA EN EL PDF: 88 a 60. Los PDF nuevos, copiados a la carpeta principal (rsync `--no-links`). ASSET_V 1299 en la rama.
+- To-do 282 a, escaneos transcriptos con Mistral (firma y opinión cotejadas con Tesseract): Napoli 2019 (Baker Tilly Revisa), 2021
+  (Ria Grant Thornton) y 2023-2025 (RSM), Torino 2018-2019 (FV & C. S.A.S.), y Lazio 2026, que pasa del informe individual al del
+  consolidado. Todos sin salvedades.
+- FALTA EN EL PDF: 88 a 53. Los PDF nuevos, copiados a la carpeta principal (rsync `--no-links`). ASSET_V 1300 en la rama.
 
 ### Qué queda (para TODO)
 
 - 282 a: Lazio 2017 (las dos capturas de Wayback están truncadas en 1 MiB y cifradas; el sitio da 404 y 1Info pide cuenta: candidato a
-  mail al club). Lazio 2026 cita el informe individual: falta transcribir `Lazio-relazione-revisione-consolidata-2025-26.pdf` (escaneo,
-  9 págs.) y pasar la línea al consolidado. Lazio 2006 y 2011-2013 figuran `sin_informe`, pero el informe del consolidado está en la API
+  mail al club). Lazio 2006 y 2011-2013 figuran `sin_informe`, pero el informe del consolidado está en la API
   del club (2011-2013) y en Wayback (2006).
 - 282 a: Roma 2022, el informe del consolidado (el sitio lista "consolidato" pero el link baja el del individual; Wayback no lo tiene).
 - 282 a: Juventus figura con perímetro "individual" en su evidencia; si el sitio publicara el consolidado, las líneas de 2022-2025 cambian
   de informe (los dos están bajados, `Juventus-report-audit-consolidated-financial-statements-*`).
-- 282 a, escaneos ya bajados que esperan Mistral: Napoli 2019, 2021 (Wayback), 2023-2025 (sitio del club) y Torino 2018-2019
-  (`Clubes/Italia/<Club>/<Club>-relazione-revisione-AAAA.pdf`), más Lazio 2026.
 - 282 a, Italia sin documento: Napoli 2018 y 2020 (el host viejo `cdn.sscnapoli.iquii.info` no responde y Wayback no los tiene), Hellas
   Verona 2020-2024 (el sitio solo lista el último año; Wayback y las rutas probables del CDN, nada) y Bologna 2025 (Firecrawl `/map` del
   sitio no encuentra el informe). Candidatos a mail.
