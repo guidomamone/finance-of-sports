@@ -1,3 +1,5 @@
+> ARCHIVADO (Versión 715, 2026-10-18): cierre de la rama onboarding, ya pasado a TODO, CHANGELOG, ESTADO, CONVENCIONES-DATOS y HALLAZGOS. Rutas y números de ese día.
+
 # Cierre de la rama `onboarding` (worktree `../fos-onboarding`)
 
 Para que la principal lo pase a TODO, CHANGELOG y ESTADO al mergear (skill de arranque, `worktree.md`). Se va completando durante la sesión.

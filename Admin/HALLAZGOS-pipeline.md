@@ -107,6 +107,11 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
 Defectos medidos que hoy no afectan ningún dato publicado ni frenan nada. Cada uno dice cuándo se retoma; si pasa, vuelve a `Admin/TODO.md`.
 Salieron del TODO el 2026-10-15 (pedido de Guido: hacían ruido en la lista).
 
+Del onboarding de Países Bajos (2026-10-17):
+- `pdftotext` pierde las ligaduras en las fuentes Calibri CID ("Ne o-omzet", "ac va", "Toelich ng") en NEC Holding 2023-24, FC Den Bosch
+  2022-24 y Fortuna Sittard 2022-24; las cifras están bien y la categorización la hace una IA. Retomar si un rótulo roto frena localizar
+  o la categorización (Sparta 2021-22 tenía "w inst-en-verliesrekening" en el título del estado: se unió a mano).
+
 Del to-do 237 (diagnóstico por subagentes Sonnet, 2026-10-16):
 - 237 b) Un renglón que junta amortización de pases y depreciación (Moreirense 2022 y 2025) se carga entero a la parte mayor; la parte chica
   es menos del 3% de los gastos. Retomar: otro club con la parte menor de más del 10% de los gastos.

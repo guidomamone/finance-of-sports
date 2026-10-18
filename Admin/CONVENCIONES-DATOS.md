@@ -346,3 +346,10 @@ asociación es dueño de parte de ella y lleva lo demás. No se generaliza la en
    el sitio mostraría un club grande facturando lo de sus modalidades. Va a descartados con la cita. Casos: Porto 2019-20 (la FC Porto
    SAD es subsidiaria, cuentas individuales del club), Braga 2020-21 (la Braga SAD es "associada", el club no consolida), Rio Ave 2014-15
    (el fútbol pasó a la SDUQ en 2013). Si el documento del club es CONSOLIDADO con la sociedad, trae el fútbol y sí se carga.
+
+## REGLA: dos documentos distintos del mismo club y ejercicio
+
+Decisión de Guido (2026-10-17, limpieza de las transcripciones de Países Bajos). Cuando hay dos documentos DISTINTOS del mismo club y
+ejercicio (p. ej. el jaarverslag del club y el depósito en la KvK): entra el que trae el estado de resultados completo de la entidad del
+club; si los dos lo traen, el más completo (con notas). El otro va a `Admin/registros/documentos-descartados.txt`. Los idénticos byte a
+byte no hace falta: el inventario los marca `duplicado`.

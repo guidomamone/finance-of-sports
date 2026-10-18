@@ -71,3 +71,7 @@ los documentos de "Stichting Óók FC Volendam" por esta ambigüedad — queda a
 confirmar antes de cualquier carga de datos futura.
 
 ## Último chequeo: 2026-09-17.
+
+## Pendiente de sourcing (cierre de la rama onboarding)
+
+- PEC Zwolle jaarverslag 2023-24 y 2024-25: los bajados están dañados; hoy se carga el depósito en la KvK (2026-10-17).

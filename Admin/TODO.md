@@ -27,7 +27,11 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 1. **Caja y deuda**: quedan 27 años sin ninguno de los dos y 9 datos sueltos, todos frenados por el documento o por el to-do 263 (lista en el 260).
    - 262: compuerta del total de deuda financiera impreso. 263: ajuste por PDF y año (destraba Dortmund y RB Leipzig).
 
-2. **Transcripciones por subagentes** (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia): limpiar lo que no es del club, los duplicados y los arreglos chicos; validarlas (unos US$ 0,10 cada 50) y cargarlas.
+2. **Transcripciones por subagentes** (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia). La limpieza está hecha. Después del merge de pipeline, en este orden:
+   - validar `Admin/lotes/subagentes-validar.txt` (~US$ 3,47);
+   - transcribir con Mistral `Admin/lotes/mistral-despues-del-merge.txt` (36 documentos, ~US$ 6);
+   - lotes de carga por país (el alta con un solo año);
+   - quedan 319 `.md` viejos sin tablas en `Admin/lotes/sin-tablas-6paises.txt` (decidir subagentes o Mistral).
 
 3. **Mejoras de proyecto**: menos proceso y más distribución: que un hincha pueda compartir el link de su club con preview, que Google lo encuentre y que un periodista pueda citarlo; y dejar los datos listos (licencia, esquema, ids estables) por si algún día se cobra una API. Detalle en los to-dos 240 a 259.
 
@@ -49,6 +53,7 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 * 230: abaratar localizar y extraer
 * 232: mejoras de script que dejó Grecia
 * 279: la tool que duplicaba claves en club-leagues/ru.js
+* 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
@@ -57,11 +62,14 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 * 165 c: altas de los países nuevos que faltan
 * 195: gestiones (presidentes) sin fuente confirmada (se puede ir haciendo con cada país)
 * 276 y 277: listas de equipos que no salen; Parma 2018 en club-leagues
+* 284 y 285: Fredrikstad y Sarpsborg 08 sobre el FLI; transcribir Viking Fotball AS
+* 283: Vålerenga y Aalesund, sumar el AS y el FLI (con nota en Finanzas)
 * 273: estadio y sponsor de cada ejercicio (definir los campos con Guido antes de juntar)
 
 **E. Pantallas**
 * 275: faltantes y estimados en Ligas (estimado bien claro, aparte de lo real)
 * 274: consolidado de cada liga: total de ingresos por categoría (mockup con Design antes)
+* 280, 281 y 282: Finanzas, las entidades del club, lo de las otras entidades y quién audita
 * 272: cartel de primera visita sin uso (borrarlo o reubicarlo)
 
 **E2. Distribución (depende de 246)**
@@ -110,7 +118,8 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
        Reglas que salieron de Portugal (en CONVENCIONES-DATOS o en las respuestas de la cola): qué entidad se carga cuando el fútbol está
        en una SAD; "Outros" toma la categoría del bloque; cuadros de inventario y de bruto a neto afuera; palcos y cativos a stadium_other;
        ejercicio de 11 meses por cambio de cierre se carga.
-    b1) ESTONIA Y BÉLGICA POR SUBAGENTES (decisión de Guido, 2026-10-15: usar el límite semanal de la suscripción en vez de API para
+    b1) (2026-10-18: la limpieza de lo de abajo está hecha y mergeada, rama onboarding; lo que sigue está en el punto 2 del ORDEN. Lo
+       de "proponer a descartados" ya está en descartados.) ESTONIA Y BÉLGICA POR SUBAGENTES (decisión de Guido, 2026-10-15: usar el límite semanal de la suscripción en vez de API para
        transcribir países 100% digitales). Estonia: los 66 .md hechos (commit "Estonia: 66 transcripciones"). Falta: (1) correr
        `pipeline.mjs --lista` sobre los PDFs de Estonia (solo hace la validación gratis, ya tienen .md) y después el lote; (2) Bélgica: los
        61 .md hechos y commiteados; falta lo mismo que Estonia (`pipeline.mjs --lista` y el lote). (3) Suiza: 36 .md hechos y
@@ -254,6 +263,32 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 274. CONSOLIDADO DE CADA LIGA (pedido de Guido, 2026-10-18). Que cada liga y ejercicio muestre su total: la suma de los ingresos de sus
    clubes por categoría (derechos de TV, comercial, estadio, pases, etc.). Decir siempre cuántos clubes de cuántos entran en la suma (los
    que faltan no se estiman, ver 266 y 270) y no mezclar monedas ni ejercicios. Mockup con Design antes de codear.
+280. FINANZAS: LAS ENTIDADES DEL CLUB (pedido de Guido, 2026-10-17). Listar todas las entidades del club (nombres legales; SAD, SDUQ, AS,
+   FLI, holding, fundación), cuál es la que se carga y cuáles no, con una nota explicativa para periodistas. Casos: Viking Fotball AS /
+   Viking Fotballklubb; Molde Fotballklubb / Molde Fotball AS; St. Gallen AG / Event AG; Luzern FCL Holding AG / FC Luzern-Innerschweiz
+   AG; Basel AG / Verein; NEC Holding / Stichting Maatschappelijk; VVV-Venlo B.V. / Foundation; Pardubice a.s. / FK Junior z.s.
+   Detalle con citas: `Admin/registros/cola-borradores/altas-2026-10-17.md`.
+281. FINANZAS: INGRESOS RESUMIDOS DE LAS OTRAS ENTIDADES (pedido de Guido, 2026-10-17). Los documentos ya están, casi todos en
+   `documentos-descartados.txt`: Molde Fotball AS, VVV Foundation, NEC Stichting Maatschappelijk, Basel Verein, St. Gallen Event AG,
+   FK Junior Pardubice z.s., RKC Stichting Samen. Definir qué se muestra y de dónde se lee. Va después del 280.
+282. FINANZAS: QUIÉN AUDITA Y QUÉ DICE EL INFORME (pedido de Guido, 2026-10-17). El auditor (p. ej. Deloitte) y el dictamen en pocas
+   palabras (sin salvedades / con salvedades / incertidumbre sobre la continuidad). El dato está en los `.md` de casi todos los documentos.
+283. VÅLERENGA Y AALESUND: SUMAR EL AS Y EL FLI EN UN SOLO AÑO (pedido de Guido, 2026-10-17). El AS tiene los ingresos comerciales y el
+   FLI los sueldos, que el AS le paga como transferencia (Vålerenga Elite 2023: 85,4 M de sueldos; el AS le transfiere 87,5 M); ninguno
+   consolida. Sumar los dos documentos sin contar dos veces la transferencia, con una nota en Finanzas que explique la suma.
+284. FREDRIKSTAD Y SARPSBORG 08: EL CLUB ES EL FLI (pedido de Guido, 2026-10-17). Fredrikstad: el FLI (Fredrikstad Fotballklubb) tiene
+   los sueldos y no deposita cuentas desde 2019, así que hay 2012-2018; antes de cerrarlo, abrir `wf-src-FFK_-_Årsmøte_2025.pdf`; para
+   2008-2011 solo existe el AS. Sarpsborg 08: el alta se hizo sobre un AS inversor sin empleados; rehacerla sobre el FLI "Sarpsborg 08
+   Fotballforening" (sus 14 PDFs no tienen `.md`). Pardubice: no darle el alta con lo que hay (es FK Junior z.s.); el sourcing de la a.s.
+   lo hace Guido.
+285. VIKING: TRANSCRIBIR LOS PDFs DE VIKING FOTBALL AS (pedido de Guido, 2026-10-17). Es el club desde el 2026-10-17 y hoy solo los del
+   FLI tienen `.md`.
+286. EL ENSAYO DE pipeline.mjs NO ANTICIPA EL REHACER CON MISTRAL (cierre de onboarding). `--lista` muestra un `.md` sin tablas como
+   "texto (Claude solo en págs. dudosas)" y `--ejecutar` lo rehace con Mistral (~US$ 0,17 por documento; la corrida de los 6 países
+   estimó US$ 27,83 y se cortó en 40 de 566). Que el ensayo los cuente como "rehacer con Mistral" con su costo. Ya avisado a pipeline.
+287. QUE NO SE REPITA LA LIMPIEZA (cierre de onboarding; escalones, uno por vez). `audit.js` `carpeta-doble` (dos carpetas de un país
+   con PDFs de la misma huella) y `club-sourcing` (mirar la entidad de la portada al guardar y no abrir una segunda carpeta del club).
+   Un `.md` sin PDF no es error (Ajax, PSV, Feyenoord y AZ 2023-25 son la fuente publicada de lo cargado).
 270. ESTIMAR UN CLUB QUE NUNCA CARGAMOS (pedido de Guido, 2026-10-17; los años que le faltan a un club que tenemos ya se estiman y
    publican en data/estimados/). Apagado: hoy da 50% de error con la posición en la tabla contra 56% de la mediana de la liga. Volver a
    medir (`node tools/estimar.mjs --medir`) cuando haya más clubes cargados y prenderlo solo si le gana a la mediana con un error que Guido

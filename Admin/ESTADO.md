@@ -87,8 +87,9 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 - Transcripción con subagentes (sin API, con el límite de la suscripción): para PDFs digitales, un subagente Sonnet por documento sigue
   `Admin/transcripcion-subagentes/reglas.md` y se controla con `check-transcripcion-fidelidad.js` y
   `Admin/transcripcion-subagentes/comparar-numeros.mjs` (números del .md contra el texto del PDF). Después el pipeline sigue igual
-  (`pipeline.mjs --lista` valida gratis y el lote localiza). Transcriptos así y esperando validación: Estonia, Bélgica, Suiza, Países
-  Bajos, parte de Turquía (Beşiktaş) y parte de Colombia; el detalle, en el TODO 165 b1 (y por documento, en
+  (`pipeline.mjs --lista` valida gratis y el lote localiza). Transcriptos así, limpios (fuera lo que no es del club, lo que no
+  trae estado de resultados y las segundas versiones) y esperando validación: Estonia, Bélgica, Suiza, Países Bajos, parte de Turquía
+  (Beşiktaş) y parte de Colombia; qué sigue, en el punto 2 del ORDEN del TODO (el detalle viejo, en el 165 b1) (y por documento, en
   `Admin/transcripcion-subagentes/avance-<fecha>.md`). Un digital es el que `pdftotext` lee con 10 o más cifras y 300 o más letras
   por página en promedio; el resto va por Mistral. Las páginas imagen (informes del auditor) se leen del render: el comparador no
   las puede cotejar y se aceptan si sus totales coinciden con el balance.
@@ -110,6 +111,9 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   CHANGELOG y ESTADO, las otras dejan su cierre en `Admin/sesiones/<rama>.md` (skill de arranque, `worktree.md`).
 - El plan para Guido (solo lo pendiente, corto) vive en el panel Plan de la app; su copia durable es el bloque ORDEN de `Admin/TODO.md`
   (tandas A-G por dependencias), y el detalle, en los to-dos.
+- Dos documentos distintos del mismo club y ejercicio: entra el que trae el estado de resultados completo de la entidad del club (si los
+  dos, el más completo); el otro, a descartados (regla en `Admin/CONVENCIONES-DATOS.md`). Antes de transcribir por subagentes se lee la
+  portada (paso 0 de `Admin/transcripcion-subagentes/reglas.md`).
 - Club asociación o sociedad (SAD/SDUQ): se elige entidad solo cuando hay dos documentos del mismo ejercicio; el de la otra va a
   `documentos-descartados.txt`, y entonces `alta-club.mjs` y el lote dejan de verlo. Un documento único del club que no trae el fútbol (la
   SAD no consolida) no se carga. Regla en `Admin/CONVENCIONES-DATOS.md`.

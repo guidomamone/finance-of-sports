@@ -145,3 +145,7 @@ elementos del array antes de decodificar, no solo el primero (afecta a archivos 
 Actualizar si aparece un canal nuevo que sirva para más de un club (ej. si la TFF resulta tener
 algún índice agregado que hoy no se encontró). Última sesión: 2026-09-18 (segunda continuación,
 browser pane ya funcionando).
+
+## Pendiente de sourcing (cierre de la rama onboarding)
+
+- Beşiktaş 2012, 2013 y 2024: el estado financiero completo (cotiza: KAP). Lo bajado es solo el informe de gestión (2026-10-17).

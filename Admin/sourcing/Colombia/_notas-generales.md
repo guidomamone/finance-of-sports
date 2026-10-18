@@ -178,3 +178,7 @@ El inventario (`tools/inventario-transcripciones.mjs`) marca como `duplicado` el
 - **"Sin documentos" (404 en documentos-adicionales)** = registro en SIIS sin PDF depositado: Alianza 2017-18, América de Cali 2016-17, Atlético Bucaramanga 2021, Atlético FC 2016 y 2021, Bogotá FC 2017, Boyacá Chicó 2017-18, Cortuluá 2020, Deportes Quindío 2022-25, Fortaleza 2016, Jaguares 2016, Junior 2018 y 2020-22, La Equidad 2018, Llaneros 2021, Millonarios 2015 y 2023, Patriotas 2021, Tigres 2016, Unión Magdalena 2016-17 y 2019-20, Toros 2023. No reintentar.
 - **Independiente Medellín NO era un dead-end**: su sociedad es **EL EQUIPO DEL PUEBLO S.A.** (NIT 900577148); 10 ejercicios 2016-2025 bajados. Lección: cuando un club "no aparece en SIIS", probar los apodos y marcas del club como razón social, no solo su nombre.
 - **Deportivo Cali**: SIIS solo tiene 2025 (la Asociación Deportivo Cali anterior no depositaba en SIIS); **Deportivo Pereira**: 2024 y 2025 (el club se constituyó en 2022).
+
+## Pendiente de sourcing (cierre de la rama onboarding)
+
+- Deportes Tolima: `dictamen-revisor-fiscal-2025.pdf` es idéntico al de 2024; falta el de 2025 (2026-10-17).

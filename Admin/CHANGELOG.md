@@ -15,6 +15,29 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 715 — Merge de onboarding: limpieza de las transcripciones por subagentes, gestiones y altas (2026-10-18)
+
+Sesión en el worktree `fos-onboarding`. Merge a mano por el `<title>` (la rama traía el viejo en la línea de la versión: ganó main);
+generados regenerados, ASSET_V 1251, auditoría P0 0 / P1 0.
+
+- Limpieza de las transcripciones por subagentes (ORDEN punto 2). A descartados: lo que no es del club (NEC Stichting, RKC Samen, VVV
+  Foundation, Titanes, Toros); lo que no trae estado de resultados (Grasshopper, Beşiktaş 2012/2013/2024, Corsarios 2025, Basel Verein
+  2021); segundas versiones del mismo ejercicio en Países Bajos (Ajax, AZ, Twente, De Graafschap, Go Ahead Eagles, PEC Zwolle, Sparta,
+  Telstar); 523 certificaciones y dictámenes de Colombia con estados financieros del mismo año; los 5 informes Deloitte de la Pro League;
+  los 18 documentos de Molde Fotball AS. Titanes y Toros (básquet y béisbol) salen del repo por `.gitignore`.
+- Carpetas dobles unificadas (Thun, St. Gallen, NEC). Arreglos chicos en los .md de Ajax, Sparta, ADO y Go Ahead Eagles.
+- Transcriptos por subagentes: NEC Holding 2023-24, Beşiktaş 2014-2017 y 2020, De Graafschap 2021-22, Sparta 2021-22, VVV 2021-22 y 2022-23.
+- 36 .md belgas sin tablas rehechos con Mistral y validados (corrida cortada en 40 de 566, ~US$ 6,75).
+- Gestiones (to-do 195): 49 de 25 clubes de Portugal (129 casos de la cola contestados) y 9 de clubes sin caso en la cola (Fortaleza,
+  Novorizontino, Ituano, Ceará, Pari NN, Once Caldas, Mönchengladbach).
+- Altas (165 c): nombre legal de Lommel SK, Patro Eisden, St. Gallen, Luzern (FCL Holding AG) y Lokeren-Temse; Viking = Viking Fotball AS;
+  Molde = el FLI.
+- `Admin/transcripcion-subagentes/reglas.md`: paso 0 (leer la portada; no transcribir lo que no es del club o no trae estado de resultados).
+- Regla nueva en CONVENCIONES-DATOS: dos documentos distintos del mismo club y ejercicio. HALLAZGOS: ligaduras de Calibri CID en
+  `pdftotext`. Pendientes de sourcing en las notas de Turquía, Países Bajos y Colombia. Esperan a los clubes (dudas-por-club.md): Estoril
+  2025, Cruzeiro 2024-25, Amazonas 2024, Novorizontino 2010.
+- TODO: punto 2 del ORDEN con lo que sigue; nuevos 280 a 287.
+
 ## Versión 714 — Merge de datos-sourcing: faltantes por liga, listas nuevas y estimados (2026-10-18)
 
 Sesión en el worktree `fos-datos`. Merge a mano por un conflicto en `tools/worktree.mjs preparar` (las dos ramas habían arreglado la
