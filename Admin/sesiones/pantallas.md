@@ -37,3 +37,7 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
   (`js/principal.js`), después de mergear lo de finanzas.
 - Buscador: `window.GRUPOS_INDICE = [{id, nombre, alias, clubIds}]` en `data/entidades/_grupos.js` (eager); pantallas suma el resultado
   "Grupo" en `js/selector.js`, que llama a `GRUPO_VIEW.show(id)`.
+- Aviso de finanzas (rama finanzas, commit b334aef): `data/entidades/_grupos.js` ya lo carga eager `index.html`, en el bloque de finanzas
+  (después de `js/finanzas-multi.js`): no sumar otro script. Trae `window.GRUPOS_INDICE = [{ id, nombre, alias, clubIds, clubes:[{clubId|null,
+  nombre, control, desde, hasta}] }]` y `window.ENTIDADES_PAISES`. Finanzas también tocó una línea de `js/principal.js`, en
+  `refreshFinanzas()` (`FIN_ESTRUCTURA.render`), fuera del bloque de la URL.
