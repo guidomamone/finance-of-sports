@@ -69,3 +69,25 @@
 ## Qué deja de ser cierto en ESTADO
 
 - "Finanzas multi-año": suma la tarjeta Estructura (de quién son los números, dueños y grupo), desde `data/entidades/`.
+
+## Después del merge del 2026-10-18
+
+### Qué cambió (para CHANGELOG)
+
+- To-do 281, la pantalla: la tarjeta Estructura muestra, en la entidad que no se carga, sus ingresos del mismo ejercicio ("Ingresos
+  2021/22: 4,57 M EUR · equivale al 19,6 % de los ingresos de <la SAD>", con "ver los ingresos en el balance"). El % sale solo con la
+  misma moneda y el mismo cierre (contra `officialTotalRevenue` del club); con otro cierre dice "Ingresos del ejercicio cerrado el
+  31/12/2021" y que no se compara. También: los accionistas con participación menor de la entidad cargada (la asociación de Braga, 36,99 %)
+  aparecen en "Relacionadas, fuera de estos números"; con un solo dueño la caja dice "Dueño"; sin dueños registrados el título es "La
+  entidad de estos números". Mockup aprobado: artboard "Vitória y Tondela (to-do 281)" de "Pantallas FoS". ASSET_V 1260 en la rama
+  (el merge lo resuelve con main).
+
+### Qué queda (para TODO)
+
+- 281: transcribir por subagentes los ~17 documentos de entidades de clubes portugueses publicados (Porto 3, Braga 2022-23, Marítimo 5,
+  Belenenses, Chaves, Vizela 2, Académica, União de Leiria) y cargar su línea de ingresos (va con el 294, que da de alta las entidades).
+- 282 y 242 sin empezar.
+
+### Qué deja de ser cierto en ESTADO
+
+- La tarjeta Estructura de Finanzas suma los ingresos de las otras entidades del club (to-do 281), donde el registro los tiene.
