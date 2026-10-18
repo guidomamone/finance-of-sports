@@ -39,13 +39,24 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
   `cargar.mjs`. También en `tools/bfo-rusia.mjs`, que escribe con `escribir()` sin pasar por el `main()` de cargar (aviso de fos-pipeline);
   ahí no frena un año ya cargado que solo se reescribe. Ojo: el estadio de Rusia no sale de Wikipedia (0 de 66), así que todo año ruso
   nuevo frena hasta completarlo a mano. ASSET_V 1255 (los archivos de `data/contexto/` todavía no los carga el sitio: los va a mostrar fos-pantallas en Finanzas).
+- **To-do 273: índice de sponsors y marcas** (pedido de Guido: página por sponsor y por marca técnica, con su histórico y los equipos que
+  sponsorea hoy; los equipos de toda la liga, los que el sitio no tiene en gris). `estadio-sponsor.mjs` ahora guarda una caché por liga-año
+  con TODOS los equipos (`tools/club-league-reference/contexto/<iso>.json`; `--todas` para todas las listas, `--actuales` para la temporada
+  en curso de cada liga; una página inexistente queda anotada). Lo guardado de cada club no cambió (932 de 932 iguales).
+  `tools/generate-sponsors.js` (nuevo) → `data/sponsors.js`: 2402 sponsors y marcas (965 con algún club del sitio), 431 liga-años, "hoy" en
+  52 ligas; ~650 KB. Un equipo se une a un club del sitio por nombre (un filial, "Benfica B", solo con su nombre exacto). Nombres unificados
+  a mano en `tools/sponsor-alias.json` (17 variantes de espacio o ".com", y Fly Emirates = Emirates; las "X Group" no, sin verificar).
+  `alias.json`: "Inter Milan" → inter-it y "Sporting de Braga" → braga-pt. Corre con los generadores de `cargar.mjs` y `alta-club.mjs`, y
+  `audit.js` lo chequea (`sponsors-desfasado`, P1). ASSET_V 1256.
 
 ## Qué queda (TODO)
 
 - Borrar los to-dos 276 y 277 (resueltos; el 277 con la premisa vencida, ver arriba).
 - 273 sigue abierto: completar a mano (`tools/contexto-manual.json`) los 238 ejercicios cargados sin estadio o sin sponsor
   (`node tools/estadio-sponsor.mjs --ensayo` los lista); mostrarlo en Finanzas (fos-pantallas); la página de cada sponsor (pedido de Guido:
-  su histórico y qué equipos sponsorea hoy).
+  su histórico y qué equipos sponsorea hoy: los datos están en `data/sponsors.js`; falta la pantalla). Lo cargado a mano en
+  `contexto-manual.json` todavía no entra al índice de sponsors (está por año de ejercicio, no por liga-temporada). `data/sponsors.js`
+  pesa ~650 KB: si la pantalla lo carga entero, partirlo (por letra o por liga).
 - La skill `club-or-year-onboarding` y `Admin/PIPELINE.md` tienen que nombrar la compuerta nueva de `cargar.mjs` (la skill, con ok de Guido).
 
 ## Qué deja de ser cierto en ESTADO
