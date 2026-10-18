@@ -89,7 +89,7 @@ lineas.forEach((l, i) => {
     if (!o.id || !o.nombre) return err(n, 'entidad sin id o sin nombre');
     if (entidades.has(o.id)) return err(n, `id repetido "${o.id}" (ya está en la línea ${entidades.get(o.id)._n})`);
     if (!FORMAS.has(o.forma)) err(n, `forma desconocida "${o.forma}"`);
-    if (!/^[A-Z]{2}$/.test(o.pais || '')) err(n, `país sin código ISO de 2 letras`);
+    if (o.pais != null && !/^[A-Z]{2}$/.test(o.pais)) err(n, `país que no es un código ISO de 2 letras`); // sin pais: el documento no lo dice
     entidades.set(o.id, o);
   } else if (o.tipo === 'relacion') {
     if (!RELS.has(o.rel)) err(n, `rel desconocida "${o.rel}"`);

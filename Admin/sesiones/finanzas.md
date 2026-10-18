@@ -153,6 +153,17 @@
 - `tools/entidades.mjs --con <borrador>`: verifica el registro más un borrador sin escribir (para subagentes).
 - Diez subagentes llenan el registro de entidades (Inter 2018-2024 con Suning; City Football Group; Marinakis: Forest, Olympiacos, Rio
   Ave; Friedkin: Roma, Everton; 777 y Eagle; Portugal en tres tandas; Benfica; Sporting). Sus borradores quedan en el scratchpad de la
-  sesión (`ent/out/*.jsonl`) y se suman con `ent/juntar.sh`. Si este cierre no dice abajo "294: juntado", el registro todavía no los tiene.
+  sesión y se sumaron al registro.
+- 294: juntado. El registro tiene 44 clubes con estructura (todos los portugueses con su SAD/SDUQ y el % del club asociación año por año,
+  Inter, Chelsea, Man City, Girona, Forest, Olympiacos, Roma, Everton, Genoa, Standard, Vasco, Botafogo, Crystal Palace) y 9 grupos
+  multiclub (BlueCo, City Football Group, Marinakis, Friedkin, 777 Partners, Eagle Football, Suning, QSI, Black Knight), 219 entidades y
+  326 relaciones, todas con cita verificada. Correcciones al juntar: sin país las entidades cuyo país el documento no dice (la tool ahora
+  lo acepta); Rio Ave: el 20 % del club asociación, que ningún documento imprime, pasó a relacionada sin %; Bournemouth con su clubId.
+  ASSET_V 1261.
+- Para TODO (294): cargas que no entraron porque tools/quien.mjs no saca el año del nombre del PDF (Boavista 2024 `RCSAD-23-24_1-3`,
+  Marítimo 2024 `…30jun24`, Portimonense 2022-2025 `Relatorio-Contas-21-22_assinado` y hermanos): falta un ajuste `anio` en
+  ajustes-manuales; dudas de los subagentes: Man City (cómo se conecta Manchester City Limited con CFG; Newton Investment como "ultimate
+  parent"), Bahía y Yokohama (clubes del sitio que el grupo CFG no lista), la relación Dan Friedkin → The Friedkin Group, la frase del PSG
+  en QSI (verificar contra Wikipedia), los clubes externos de 777 sin fecha de salida.
 - Para una sesión futura: Spartak 2022 (transcribir el informe palabra por palabra), los 72 informes de auditoría a conseguir, y los casos
   de altas-2026-10-17 en el registro de entidades cuando esos clubes estén publicados.
