@@ -170,11 +170,12 @@ export function calcular() {
     for (const n of l.clubs) {
       const u = unir(l.iso, n);
       // posición final (to-do 270): el nombre de la lista de equipos en la tabla de posiciones de la misma página (mismo nombre, o la
-      // misma familia de nombres si es uno solo)
-      if (u?.clubId && l.posiciones) {
+      // misma familia de nombres si es uno solo). Un club que no está en el sitio va por su nombre ("#Las Palmas"): lo usa el estimado de
+      // club nuevo.
+      if (l.posiciones) {
         let i = l.posiciones.indexOf(n);
         if (i < 0) { const c = l.posiciones.map((x, k) => [x, k]).filter(([x]) => norm(x) && (norm(x) === norm(n) || norm(x).startsWith(norm(n) + ' ') || norm(n).startsWith(norm(x) + ' '))); if (c.length === 1) i = c[0][1]; }
-        if (i >= 0) posiciones[`${l.liga}|${l.anio}|${u.clubId}`] = { pos: i + 1, de: l.posiciones.length, partida };
+        if (i >= 0) posiciones[`${l.liga}|${l.anio}|${u?.clubId || '#' + n}`] = { pos: i + 1, de: l.posiciones.length, partida };
       }
       if (!u) (sinUnir[l.iso] ??= new Set()).add(n);
       let e;

@@ -1,0 +1,5 @@
+// GENERADO por tools/estimar.mjs: no editar a mano. ESTIMACIONES, no datos reales: ingreso en millones de USD del año, rango del 80% (lo-hi) y error mediano medido (%).
+window.ESTIMADOS = window.ESTIMADOS || {};
+window.ESTIMADOS["jp-j1"] = {
+  2025: [{"n":"Albirex Niigata","revenue":25.708,"lo":8.752,"hi":77.08,"caso":"nuevo","error":50,"de":[]},{"n":"Avispa Fukuoka","revenue":50.203,"lo":17.09,"hi":150.52,"caso":"nuevo","error":50,"de":[]},{"n":"Fagiano Okayama","revenue":46.174,"lo":15.719,"hi":138.44,"caso":"nuevo","error":50,"de":[]},{"n":"Kashiwa Reysol","revenue":115.89,"lo":39.452,"hi":347.464,"caso":"nuevo","error":50,"de":[]},{"n":"Kyoto Sanga","revenue":106.589,"lo":36.286,"hi":319.579,"caso":"nuevo","error":50,"de":[]},{"n":"Machida Zelvia","revenue":82.931,"lo":28.232,"hi":248.647,"caso":"nuevo","error":50,"de":[]},{"n":"Shimizu S-Pulse","revenue":42.468,"lo":14.457,"hi":127.33,"caso":"nuevo","error":50,"de":[]},{"n":"Shonan Bellmare","revenue":27.952,"lo":9.515,"hi":83.805,"caso":"nuevo","error":50,"de":[]}],
+};

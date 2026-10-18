@@ -45,7 +45,6 @@ window.CLUB_SELECTOR = (function(){
 
   var LS_CLUB    = 'fos_club';
   var LS_RECENTS = 'fos_recent_clubs';
-  var LS_COACH   = 'fos_coach_club';
 
   // LOGGING DE BÚSQUEDAS Y COMPARACIONES: Worker + KV propios (Cloudflare Web Analytics no puede loggear el texto tipeado).
   // Gateado por hostname a propósito: una sesión de trabajo (preview local, el sitio visitado a mano para debug) no es un visitante
@@ -471,7 +470,6 @@ window.CLUB_SELECTOR = (function(){
   }
 
   function abrirModalYa(i, desde, q){
-    hideCoach();
     origen = desde || 'finanzas';
     modalLado = i || 0;
     mpTrack('selector_opened', { origen:origen });
@@ -2700,24 +2698,6 @@ window.CLUB_SELECTOR = (function(){
   }
 
   // ---------------------------------------------------------------------------
-  // EL CARTELITO "Elegí tu club acá" (coach mark). Se muestra una sola vez, hasta
-  // que el visitante elige un club o lo cierra.
-  // ---------------------------------------------------------------------------
-  function hideCoach(){
-    var c = $('coachMark');
-    if(!c) return;
-    c.hidden = true;
-    try { localStorage.setItem(LS_COACH, '1'); } catch(e){}
-  }
-  function maybeCoach(){
-    var c = $('coachMark');
-    if(!c) return;
-    var seen = false;
-    try { seen = !!localStorage.getItem(LS_COACH); } catch(e){}
-    c.hidden = seen || !!api.getClub();
-  }
-
-  // ---------------------------------------------------------------------------
   // EL SELECTOR DENTRO DE FINANZAS. Sin club es lo único que hay para hacer en esa pantalla; con club, es cómo se cambia.
   // ---------------------------------------------------------------------------
   // La bajada del título con club: liga · país · cuántos balances y presupuestos hay y de qué ejercicio a qué ejercicio. Sale del
@@ -2801,7 +2781,6 @@ window.CLUB_SELECTOR = (function(){
     // activo (`applyClubMode`), así que es el único punto donde enterarse sin
     // inventar un canal nuevo.
     renderFinSelector();
-    maybeCoach();
     var id = api.getClub();
     var crest = $('cbCrest'), name = $('cbName'), eyebrow = $('cbEyebrow');
     if(!crest) return;
@@ -2869,8 +2848,6 @@ window.CLUB_SELECTOR = (function(){
         renderBusqueda();
       }, 160);
     });
-    var cx = $('coachX');
-    if(cx) cx.addEventListener('click', function(e){ e.stopPropagation(); hideCoach(); });
 
     document.addEventListener('keydown', function(ev){
       if(ev.key === 'Escape' && isOpen()) close();
