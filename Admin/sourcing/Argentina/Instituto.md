@@ -80,6 +80,7 @@ se destrabó desde el 2026-09-22) y ver si ya existe algo del 2025-26.
   - Memoria: https://drive.google.com/file/d/1z6G0bsahemZren2qqW4BZ1Re9rdHlQO6/view
   - Balance General: https://drive.google.com/file/d/1yMZVWt2hKGRj01YYzzseIQQ_mzOcRY0f/view
   - Informe de la Comisión Revisora de Cuentas: https://drive.google.com/file/d/1P8WaNNrNY9m3F4-2_a65pONhFnJAfWuc/view
-- Sin bajar todavía (a `Clubes/Argentina/Instituto/` como `balance-general-2024-2025.pdf`, `memoria-2024-2025.pdf` e
-  `informe-comision-revisora-2024-2025.pdf`, el patrón de la carpeta).
+- Bajados (Guido, 2026-10-18) a `Clubes/Argentina/Instituto/`: `balance-general-2024-2025.pdf` (Estados contables del Ejercicio
+  N°71, 1/7/2024 a 30/6/2025, moneda homogénea: balance general, estado de recursos y gastos y anexos), `memoria-2024-2025.pdf` e
+  `informe-comision-revisora-2024-2025.pdf`. Falta transcribir y cargar (onboarding).
 - Último chequeo: 2026-10-18.
