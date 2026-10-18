@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2025.pdf",
  "md": "Clubes/Estonia/FCI Levadia/aruanne-2025.md",
- "generado": "2026-10-18T06:09:34.626Z",
+ "generado": "2026-10-18T06:37:59.058Z",
  "estado": "cola",
  "clubId": null,
  "year": 2025,
@@ -11,13 +11,20 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2025.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne 01.01-31.12.2025 con tulemiaruanne (L142-177) (revisión del alta, subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
  "cola": [
-  "f9f6891",
-  "4fe92c7",
-  "4fe92c7",
-  "b84ad8c",
-  "f72d6cb"
+  "f9f6891"
  ],
  "chequeos": [
   {
@@ -46,7 +53,11 @@
    "detalle": "club nuevo"
   }
  ],
- "notas": [],
+ "notas": [
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): corregir consolidado, en aruanne-2025.pdf",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): corregir consolidado, en aruanne-2025.pdf",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en aruanne-2025.pdf"
+ ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,

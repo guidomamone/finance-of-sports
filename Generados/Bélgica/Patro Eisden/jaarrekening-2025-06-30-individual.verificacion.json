@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.md",
- "generado": "2026-10-18T06:17:47.031Z",
+ "generado": "2026-10-18T06:34:53.163Z",
  "estado": "cola",
  "clubId": null,
  "year": 2025,
@@ -11,9 +11,22 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "-293.069",
+   "linea": 201,
+   "etiqueta": "Recurrente financiële kosten",
+   "lado": "financiero",
+   "reemplaza": "Recurrente financiële kosten",
+   "motivo": "costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
  "cola": [
-  "ffa7be2",
   "54ece03",
   "0ecbf61",
   "a9efb7d"
@@ -31,9 +44,9 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 1.842818 - gastos 6.557502 ± financiero 11.272015 ± impuesto 0.027259 no da el impreso 5.946137",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)",
+   "dif": 0.0022029999999970684
   },
   {
    "nombre": "año anterior cargado",
@@ -42,7 +55,9 @@
   }
  ],
  "notas": [
-  "duda de localizar que no afecta la carga: b23 repite gastos de personal por tipo de jornada, sin abrir categorías del estado."
+  "ajuste manual: fila \"Recurrente financiële kosten\" (financiero) -293.069, en lugar de \"Recurrente financiële kosten\" (2026-10-18, costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "duda de localizar que no afecta la carga: b23 repite gastos de personal por tipo de jornada, sin abrir categorías del estado.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -50,12 +65,12 @@
  "totales": {
   "ingresos": 1.842818,
   "gastos": 6.557502,
-  "financiero": 11.272015,
+  "financiero": 10.685877,
   "impuesto": 0.027259,
   "resultadoImpreso": 5.946137,
   "resultadoParaCargar": 5.946137,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -125,7 +140,7 @@
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -140,14 +155,14 @@
   },
   {
    "etiqueta": "Recurrente financiële kosten",
-   "M": 0.293069,
+   "M": -0.293069,
    "linea": 201
   }
  ],
  "impuesto": [
   {
    "etiqueta": "Belastingen op het resultaat (+)/(-)",
-   "M": 0.027259,
+   "M": -0.027259,
    "linea": 206
   }
  ]

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2025.pdf",
  "md": "Clubes/Estonia/Nõmme Kalju/aruanne-2025.md",
- "generado": "2026-10-18T06:09:34.727Z",
- "estado": "cola",
+ "generado": "2026-10-18T06:37:59.569Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -11,10 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "f14a4dc"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2025.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne 01.01-31.12.2025 con tulemiaruanne (L219-247) (revisión del alta, subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -49,6 +58,7 @@
  ],
  "notas": [
   "duda de localizar que no afecta la carga: Es un movimiento de financiación con fines específicos; el desglose de ingresos ya está en Lisa 9 (b21).",
+  "duda de localizar ya contestada para el club (cuadro-duplicado, \"Kokku annetused ja toetused\"): aceptar, en aruanne-2025.pdf",
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Annetused ja toetused\"): ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L661-L663) por ser un segundo desglose de 'Annetused ja toetused' ya cubierto por L649-L655?"
  ],
  "reintentar": null,

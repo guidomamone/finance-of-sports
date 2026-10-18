@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.md",
- "generado": "2026-10-18T06:17:46.522Z",
+ "generado": "2026-10-18T06:33:56.373Z",
  "estado": "cola",
  "clubId": null,
  "year": 2025,
@@ -11,9 +11,48 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "-25.436",
+   "linea": 327,
+   "etiqueta": "Regularisering van belastingen en terugneming van voorzieningen voor belastingen",
+   "lado": "impuesto",
+   "reemplaza": "Regularisering van belastingen en terugneming van voorzieningen voor belastingen",
+   "motivo": "resta del impuesto: Belastingen 35.016 - 25.436 = 9.580 impreso (L325-327) (subagente Sonnet, revisado por Claude)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "-6.684",
+   "linea": 318,
+   "etiqueta": "Kosten van schulden",
+   "lado": "financiero",
+   "reemplaza": "Kosten van schulden",
+   "motivo": "costo financiero (65/66B, L316-318): resta",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "-321.178",
+   "linea": 320,
+   "etiqueta": "Andere financiële kosten",
+   "lado": "financiero",
+   "reemplaza": "Andere financiële kosten",
+   "motivo": "costo financiero (65/66B, L316-320): resta",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
  "cola": [
-  "9d94e4e",
   "ad3b5f7",
   "20d9ecc",
   "ffc5c44"
@@ -21,21 +60,24 @@
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": true,
-   "detalle": "17.587332 = 17.587332",
-   "suma": 17.587332,
-   "impreso": 17.587332
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "total de gastos",
-   "ok": true,
-   "detalle": "\"Bedrijfskosten\" 20.897734 cierra; además se suman 14 línea(s) fuera de ese total (21.974143)"
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 17.587332 - gastos 42.871877 ± financiero 0.432087 ± impuesto 0.060452 no da el impreso -3.543618",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)",
+   "dif": 0.000001000000000139778
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
    "nombre": "año anterior cargado",
@@ -46,8 +88,17 @@
  "notas": [
   "la nota de \"Niet-recurrente bedrijfsopbrengsten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la nota de \"Niet-recurrente bedrijfskosten\" no suma el renglón (0.002623 contra 0.002623, sumando sus renglones): quedó el renglón del estado",
+  "ajuste manual: fila \"Regularisering van belastingen en terugneming van voorzieningen voor belastingen\" (impuesto) -25.436, en lugar de \"Regularisering van belastingen en terugneming van voorzieningen voor belastingen\" (2026-10-18, resta del impuesto: Belastingen 35.016 - 25.436 = 9.580 impreso (L325-327) (subagente Sonnet, revisado por Claude))",
+  "ajuste manual: fila \"Kosten van schulden\" (financiero) -6.684, en lugar de \"Kosten van schulden\" (2026-10-18, costo financiero (65/66B, L316-318): resta)",
+  "ajuste manual: fila \"Andere financiële kosten\" (financiero) -321.178, en lugar de \"Andere financiële kosten\" (2026-10-18, costo financiero (65/66B, L316-320): resta)",
+  "escalón \"nota exacta en la lectura 5\": \"Omzet\" (L283) se abre en las 4 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\" (L293) se abre en las 3 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\" (L295) se abre en las 2 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Andere bedrijfskosten\" (L297) se abre en las 2 filas de su nota, que suman exacto el renglón",
+  "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar que no afecta la carga: b61/b62 resumen la cuenta de resultados con las mismas cifras que el estado oficial VOL-kap 4.",
-  "duda de extraer que no afecta la carga: Los importes 'Teruggenomen' (L817, L820) restan pero se imprimen positivos."
+  "duda de extraer que no afecta la carga: Los importes 'Teruggenomen' (L817, L820) restan pero se imprimen positivos.",
+  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": [
   {
@@ -66,13 +117,13 @@
  ],
  "totales": {
   "ingresos": 17.587332,
-  "gastos": 42.871877,
-  "financiero": 0.432087,
-  "impuesto": 0.060452,
+  "gastos": 20.897734,
+  "financiero": -0.223637,
+  "impuesto": 0.00958,
   "resultadoImpreso": -3.543618,
   "resultadoParaCargar": -3.543618,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -113,7 +164,7 @@
    "M": 7.180163,
    "pagina": 8,
    "linea": 286,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Niet-recurrente bedrijfsopbrengsten",
@@ -121,23 +172,7 @@
    "M": 0.00244,
    "pagina": 8,
    "linea": 287,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Bedrijfskosten",
-   "lado": "gasto",
-   "M": 20.897734,
-   "pagina": 8,
-   "linea": 288,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Handelsgoederen, grond- en hulpstoffen",
-   "lado": "gasto",
-   "M": 0.904473,
-   "pagina": 8,
-   "linea": 289,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Aankopen",
@@ -145,15 +180,15 @@
    "M": 0.925607,
    "pagina": 8,
    "linea": 290,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Voorraad: afname (toename) (+)/(-)",
    "lado": "gasto",
-   "M": 0.021134,
+   "M": -0.021134,
    "pagina": 8,
    "linea": 291,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Diensten en diverse goederen",
@@ -161,7 +196,7 @@
    "M": 7.523193,
    "pagina": 8,
    "linea": 292,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Bezoldigingen en rechtstreekse sociale voordelen",
@@ -193,12 +228,12 @@
    "M": 0.891583,
    "pagina": 8,
    "linea": 294,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Teruggenomen",
    "lado": "gasto",
-   "M": 0.00821,
+   "M": -0.00821,
    "pagina": 24,
    "linea": 817,
    "origen": "nota que desglosa \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\""
@@ -206,18 +241,10 @@
   {
    "etiqueta": "Teruggenomen",
    "lado": "gasto",
-   "M": 0.056624,
+   "M": -0.056624,
    "pagina": 24,
    "linea": 820,
    "origen": "nota que desglosa \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\""
-  },
-  {
-   "etiqueta": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
-   "lado": "gasto",
-   "M": 0,
-   "pagina": 8,
-   "linea": 296,
-   "origen": "estado"
   },
   {
    "etiqueta": "Bedrijfsbelastingen en -taksen",
@@ -241,12 +268,12 @@
    "M": 0.002623,
    "pagina": 8,
    "linea": 299,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   }
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -256,19 +283,19 @@
   },
   {
    "etiqueta": "Kosten van schulden",
-   "M": 0.006684,
+   "M": -0.006684,
    "linea": 318
   },
   {
    "etiqueta": "Andere financiële kosten",
-   "M": 0.321178,
+   "M": -0.321178,
    "linea": 320
   }
  ],
  "impuesto": [
   {
    "etiqueta": "Belastingen",
-   "M": 0.035016,
+   "M": -0.035016,
    "linea": 326
   },
   {
@@ -276,5 +303,40 @@
    "M": 0.025436,
    "linea": 327
   }
- ]
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "pendiente",
+  "clave": "7f4c060fabc2095985c2858de434fb43df33e2b8",
+  "rango": [
+   279,
+   334
+  ],
+  "lineasCargadas": [
+   784,
+   785,
+   786,
+   787,
+   286,
+   287,
+   290,
+   291,
+   292,
+   798,
+   799,
+   801,
+   294,
+   817,
+   820,
+   825,
+   826,
+   299,
+   314,
+   318,
+   320,
+   326,
+   327
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 279 a 334 del .md):\nL280: | | Toel. | Codes | Boekjaar | Vorig boekjaar |\nL281: | --- | --- | --- | --- | --- |\nL282: | Bedrijfsopbrengsten |  | 70/76A | 17.587.332 | 9.439.186 |\nL283: | Omzet | 6.10 | 70 | 10.404.729 | 6.146.056 |\nL284: | Voorraad goederen in bewerking en gereed product en bestellingen in uitvoering: toename (afname) (+)/(-) |  | 71 |  |  |\nL285: | Geproduceerde vaste activa |  | 72 |  |  |\nL286: | Andere bedrijfsopbrengsten | 6.10 | 74 | 7.180.163 | 1.700.645 |\nL287: | Niet-recurrente bedrijfsopbrengsten | 6.12 | 76A | 2.440 | 1.592.485 |\nL288: | Bedrijfskosten |  | 60/66A | 20.897.734 | 12.935.553 |\nL289: | Handelsgoederen, grond- en hulpstoffen |  | 60 | 904.473 | 851.094 |\nL290: | Aankopen |  | 600/8 | 925.607 | 854.137 |\nL291: | Voorraad: afname (toename) (+)/(-) |  | 609 | -21.134 | -3.043 |\nL292: | Diensten en diverse goederen |  | 61 | 7.523.193 | 4.803.384 |\nL293: | Bezoldigingen, sociale lasten en pensioenen (+)/(-) | 6.10 | 62 | 11.054.610 | 6.204.560 |\nL294: | Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa |  | 630 | 891.583 | 773.319 |\nL295: | Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) | 6.10 | 631/4 | -64.834 | 64.834 |\nL296: | Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-) | 6.10 | 635/8 | 0 | -19.282 |\nL297: | Andere bedrijfskosten | 6.10 | 640/8 | 586.086 | 109.665 |\nL298: | Als herstructureringskosten geactiveerde bedrijfskosten (-) |  | 649 |  |  |\nL299: | Niet-recurrente bedrijfskosten | 6.12 | 66A | 2.623 | 147.979 |\nL300: | Bedrijfswinst (Bedrijfsverlies) (+)/(-) |  | 9901 | -3.310.401 | -3.496.367 |\nL302: Page 8 of 52\nL304: --- pág. 9 ---\nL306: N° 0698992391 VOL-kap 4\nL308: | | Toel. | Codes | Boekjaar | Vorig boekjaar |\nL309: | --- | --- | --- | --- | --- |\nL310: | Financiële opbrengsten |  | 75/76B | 104.225 | 108.284 |\nL311: | Recurrente financiële opbrengsten |  | 75 | 104.225 | 108.284 |\nL312: | Opbrengsten uit financiële vaste activa |  | 750 |  |  |\nL313: | Opbrengsten uit vlottende activa |  | 751 |  |  |\nL314: | Andere financiële opbrengsten | 6.11 | 752/9 | 104.225 | 108.284 |\nL315: | Niet-recurrente financiële opbrengsten | 6.12 | 76B |  |  |\nL316: | Financiële kosten |  | 65/66B | 327.862 | 41.950 |\nL317: | Recurrente financiële kosten | 6.11 | 65 | 327.862 | 41.950 |\nL318: | Kosten van schulden |  | 650 | 6.684 | 2.661 |\nL319: | Waardeverminderingen op vlottende activa andere dan voorraden, bestellingen in uitvoering en handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) |  | 651 |  |  |\nL320: | Andere financiële kosten |  | 652/9 | 321.178 | 39.289 |\nL321: | Niet-recurrente financiële kosten | 6.12 | 66B |  |  |\nL322: | Winst (Verlies) van het boekjaar vóór belasting (+)/(-) |  | 9903 | -3.534.039 | -3.430.033 |\nL323: | Onttrekking aan de uitgestelde belastingen |  | 780 |  |  |\nL324: | Overboeking naar de uitgestelde belastingen |  | 680 |  |  |\nL325: | Belastingen op het resultaat (+)/(-) | 6.13 | 67/77 | 9.580 | 231.384 |\nL326: | Belastingen |  | 670/3 | 35.016 | 231.384 |\nL327: | Regularisering van belastingen en terugneming van voorzieningen voor belastingen |  | 77 | 25.436 | 0 |\nL328: | Winst (Verlies) van het boekjaar (+)/(-) |  | 9904 | -3.543.618 | -3.661.417 |\nL329: | Onttrekking aan de belastingvrije reserves |  | 789 |  |  |\nL330: | Overboeking naar de belastingvrije reserves |  | 689 |  |  |\nL331: | Te bestemmen winst (verlies) van het boekjaar (+)/(-) |  | 9905 | -3.543.618 | -3.661.417 |\nL333: Page 9 of 52\n\nLO QUE SE CARGA:\n- ingreso · \"Ticketing en abonnementen\" · 2.21594 · L784 (de una nota)\n- ingreso · \"Sponsoring\" · 2.778568 · L785 (de una nota)\n- ingreso · \"TV rechten\" · 2.506463 · L786 (de una nota)\n- ingreso · \"Commercieel\" · 2.903758 · L787 (de una nota)\n- ingreso · \"Andere bedrijfsopbrengsten\" · 7.180163 · L286\n- ingreso · \"Niet-recurrente bedrijfsopbrengsten\" · 0.00244 · L287\n- gasto · \"Aankopen\" · 0.925607 · L290\n- gasto · \"Voorraad: afname (toename) (+)/(-)\" · -0.021134 · L291\n- gasto · \"Diensten en diverse goederen\" · 7.523193 · L292\n- gasto · \"Bezoldigingen en rechtstreekse sociale voordelen\" · 9.380292 · L798 (de una nota)\n- gasto · \"Werkgeversbijdragen voor sociale verzekeringen\" · 1.435486 · L799 (de una nota)\n- gasto · \"Andere personeelskosten\" · 0.238832 · L801 (de una nota)\n- gasto · \"Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële v\" · 0.891583 · L294\n- gasto · \"Teruggenomen\" · -0.00821 · L817 (de una nota)\n- gasto · \"Teruggenomen\" · -0.056624 · L820 (de una nota)\n- gasto · \"Bedrijfsbelastingen en -taksen\" · 0.158064 · L825 (de una nota)\n- gasto · \"Andere\" · 0.428022 · L826 (de una nota)\n- gasto · \"Niet-recurrente bedrijfskosten\" · 0.002623 · L299\n- financiero · \"Andere financiële opbrengsten\" · 0.104225 · L314\n- financiero · \"Kosten van schulden\" · -0.006684 · L318\n- financiero · \"Andere financiële kosten\" · -0.321178 · L320\n- impuesto · \"Belastingen\" · -0.035016 · L326\n- impuesto · \"Regularisering van belastingen en terugneming van voorzieningen voor belastingen\" · 0.025436 · L327"
+ }
 }

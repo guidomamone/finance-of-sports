@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2022-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2022-06-30-individual.md",
- "generado": "2026-10-18T06:17:46.558Z",
+ "generado": "2026-10-18T06:35:28.690Z",
  "estado": "cola",
  "clubId": null,
  "year": 2022,
@@ -11,7 +11,21 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2022-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "-6",
+   "linea": 245,
+   "etiqueta": "Recurrente financiële kosten",
+   "lado": "financiero",
+   "reemplaza": "Recurrente financiële kosten",
+   "motivo": "costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
  "cola": [
   "2c3c79d",
   "835a224"
@@ -30,7 +44,7 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (como impresos)",
+   "detalle": "cierra (financiero invertido)",
    "dif": 9.999999999992654e-7
   },
   {
@@ -40,6 +54,7 @@
   }
  ],
  "notas": [
+  "ajuste manual: fila \"Recurrente financiële kosten\" (financiero) -6, en lugar de \"Recurrente financiële kosten\" (2026-10-18, costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18))",
   "duda de localizar que no afecta la carga: b11 muestra datos de personal en FTE y 'Geactiveerde interesten', que no desglosan importes de ingresos ni de gastos del estado."
  ],
  "reintentar": null,
@@ -48,12 +63,12 @@
  "totales": {
   "ingresos": 0.002369,
   "gastos": 0,
-  "financiero": 0.000006,
+  "financiero": -0.000006,
   "impuesto": 0.002215,
   "resultadoImpreso": -0.004591,
   "resultadoParaCargar": -0.004591,
   "resultadoFinal": null,
-  "lecturaSignos": "como impresos"
+  "lecturaSignos": "financiero invertido"
  },
  "lineas": [
   {
@@ -106,7 +121,7 @@
   }
  ],
  "signosCarga": {
-  "financiero": 1,
+  "financiero": -1,
   "impuesto": 1
  },
  "financiero": [

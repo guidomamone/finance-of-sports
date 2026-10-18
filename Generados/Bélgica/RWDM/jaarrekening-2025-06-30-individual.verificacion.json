@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2025-06-30-individual.pdf",
  "md": "Clubes/Bélgica/RWDM/jaarrekening-2025-06-30-individual.md",
- "generado": "2026-10-18T06:17:47.235Z",
+ "generado": "2026-10-18T06:34:53.765Z",
  "estado": "cola",
  "clubId": null,
- "year": null,
+ "year": 2025,
  "escala": {
   "valor": "no se sabe",
   "escalon": 0,
@@ -21,14 +21,63 @@
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "-6.145.338",
+   "linea": 304,
+   "etiqueta": "Kosten van schulden",
+   "lado": "financiero",
+   "reemplaza": "Kosten van schulden",
+   "motivo": "costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "-133.987",
+   "linea": 305,
+   "etiqueta": "Waardeverminderingen op vlottende activa andere dan voorraden, bestellingen in uitvoering en handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "financiero",
+   "reemplaza": "Waardeverminderingen op vlottende activa andere dan voorraden, bestellingen in uitvoering en handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "motivo": "costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "-67.030",
+   "linea": 306,
+   "etiqueta": "Andere financiële kosten",
+   "lado": "financiero",
+   "reemplaza": "Andere financiële kosten",
+   "motivo": "costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "-55.000",
+   "linea": 307,
+   "etiqueta": "Niet-recurrente financiële kosten",
+   "lado": "financiero",
+   "reemplaza": "Niet-recurrente financiële kosten",
+   "motivo": "costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
   }
  ],
  "cola": [
-  "9f64c5f",
-  "3534e8e",
   "e2bc95f",
-  "5096db5",
-  "8ffba4e"
+  "5096db5"
  ],
  "chequeos": [
   {
@@ -40,37 +89,57 @@
   },
   {
    "nombre": "total de gastos",
-   "ok": false,
-   "detalle": "las líneas suman 23.499256 y el total impreso dice 22.750396"
+   "ok": true,
+   "detalle": "22.750396 = 22.750396",
+   "suma": 22.750396,
+   "impreso": 22.750396
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 15.174326 - gastos 23.499256 ± financiero 6.411863 ± impuesto 0.57858 no da el impreso -14.545496",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)",
+   "dif": 9.999999992515995e-7
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
   "escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)",
-  "duda de extraer que no afecta la carga: L925 tiene celda vacía en Boekjaar y 6.184 en el año anterior; se cargó con actual vacío."
+  "ajuste manual: fila \"Kosten van schulden\" (financiero) -6.145.338, en lugar de \"Kosten van schulden\" (2026-10-18, costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "ajuste manual: fila \"Waardeverminderingen op vlottende activa andere dan voorraden, bestellingen in uitvoering en handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\" (financiero) -133.987, en lugar de \"Waardeverminderingen op vlottende activa andere dan voorraden, bestellingen in uitvoering en handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\" (2026-10-18, costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "ajuste manual: fila \"Andere financiële kosten\" (financiero) -67.030, en lugar de \"Andere financiële kosten\" (2026-10-18, costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "ajuste manual: fila \"Niet-recurrente financiële kosten\" (financiero) -55.000, en lugar de \"Niet-recurrente financiële kosten\" (2026-10-18, costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "escalón \"subtotal repetido\": \"Handelsgoederen, grond- en hulpstoffen\" (L275) repite la fila de abajo \"Aankopen\" (L276); se saltea",
+  "escalón \"subtotal repetido\": cerró la lectura 4 sin contar dos veces el subtotal que repite el renglón de arriba",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de extraer que no afecta la carga: L925 tiene celda vacía en Boekjaar y 6.184 en el año anterior; se cargó con actual vacío.",
+  "3 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 15.174326,
-  "gastos": 23.499256,
-  "financiero": 6.411863,
+  "gastos": 22.750396,
+  "financiero": -6.390847,
   "impuesto": 0.57858,
   "resultadoImpreso": -14.545496,
   "resultadoParaCargar": -14.545496,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -87,14 +156,6 @@
    "M": 10.904952,
    "pagina": 8,
    "linea": 272,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Handelsgoederen, grond- en hulpstoffen",
-   "lado": "gasto",
-   "M": 0.74886,
-   "pagina": 8,
-   "linea": 275,
    "origen": "estado"
   },
   {
@@ -188,7 +249,7 @@
  ],
  "signosCarga": {
   "financiero": 1,
-  "impuesto": 1
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -198,29 +259,29 @@
   },
   {
    "etiqueta": "Kosten van schulden",
-   "M": 6.145338,
+   "M": -6.145338,
    "linea": 304
   },
   {
    "etiqueta": "Waardeverminderingen op vlottende activa andere dan voorraden, bestellingen in uitvoering en handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
-   "M": 0.133987,
+   "M": -0.133987,
    "linea": 305
   },
   {
    "etiqueta": "Andere financiële kosten",
-   "M": 0.06703,
+   "M": -0.06703,
    "linea": 306
   },
   {
    "etiqueta": "Niet-recurrente financiële kosten",
-   "M": 0.055,
+   "M": -0.055,
    "linea": 307
   }
  ],
  "impuesto": [
   {
    "etiqueta": "Belastingen",
-   "M": 0.57858,
+   "M": -0.57858,
    "linea": 312
   }
  ]

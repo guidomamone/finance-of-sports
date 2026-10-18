@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.md",
- "generado": "2026-10-18T06:17:46.855Z",
+ "generado": "2026-10-18T06:34:52.026Z",
  "estado": "cola",
  "clubId": null,
- "year": null,
+ "year": 2025,
  "escala": {
   "valor": "unidades",
   "escalon": 0,
@@ -21,11 +21,36 @@
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "-7.455",
+   "linea": 306,
+   "etiqueta": "Kosten van schulden",
+   "lado": "financiero",
+   "reemplaza": "Kosten van schulden",
+   "motivo": "costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "-90.425",
+   "linea": 308,
+   "etiqueta": "Andere financiële kosten",
+   "lado": "financiero",
+   "reemplaza": "Andere financiële kosten",
+   "motivo": "costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
   }
  ],
  "cola": [
-  "dbd392a",
-  "d9b0df2"
+  "dbd392a"
  ],
  "chequeos": [
   {
@@ -45,19 +70,27 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero invertido)",
-   "dif": 0.0077859999999994045
+   "detalle": "cierra (impuesto invertido)",
+   "dif": 0.00017200000000272553
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
   "la nota de \"Niet-recurrente bedrijfsopbrengsten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la nota de \"Niet-recurrente bedrijfskosten\" no suma el renglón (0.749155 contra 0.749155, sumando sus renglones): quedó el renglón del estado",
-  "duda de localizar que no afecta la carga: b55 repite costes de personal del balance social que ya están en la nota 6.10."
+  "ajuste manual: fila \"Kosten van schulden\" (financiero) -7.455, en lugar de \"Kosten van schulden\" (2026-10-18, costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "ajuste manual: fila \"Andere financiële kosten\" (financiero) -90.425, en lugar de \"Andere financiële kosten\" (2026-10-18, costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "duda de localizar que no afecta la carga: b55 repite costes de personal del balance social que ya están en la nota 6.10.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": [
   {
@@ -77,12 +110,12 @@
  "totales": {
   "ingresos": 9.565805,
   "gastos": 30.344272,
-  "financiero": 0.123925,
+  "financiero": -0.071835,
   "impuesto": 0.022238,
   "resultadoImpreso": -20.872368,
   "resultadoParaCargar": -20.872368,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero invertido"
+  "lecturaSignos": "impuesto invertido"
  },
  "lineas": [
   {
@@ -199,13 +232,13 @@
   }
  ],
  "signosCarga": {
-  "financiero": -1,
-  "impuesto": 1
+  "financiero": 1,
+  "impuesto": -1
  },
  "financiero": [
   {
    "etiqueta": "Andere financiële opbrengsten",
-   "M": -0.026045,
+   "M": 0.026045,
    "linea": 302
   },
   {
@@ -222,7 +255,7 @@
  "impuesto": [
   {
    "etiqueta": "Belastingen",
-   "M": 0.022238,
+   "M": -0.022238,
    "linea": 314
   },
   {

@@ -1,0 +1,19 @@
+## Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.pdf
+  [9d94e4e] etapa verificar · no-cierra
+      Qué mirar: resultado del ejercicio: ingresos 17.587332 - gastos 42.871877 ± financiero 0.432087 ± impuesto 0.060452 no da el impreso -3.543618. Revisar si falta o sobra alguna fila, o si hay un renglón del lado equivocado.
+      Abrí el PDF en la página 8 del visor (la hoja tiene impreso "8" al pie).
+      En la transcripción (Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.md), líneas 282-331.
+  [ad3b5f7] etapa verificar · duda-tema
+      Pregunta: ¿Se confirma que todos los bloques están en euros (unidades), aunque ninguno lo indique?  (por qué: Ningún bloque imprime la escala; el formato del balance belga NBB es en euros.)
+      Abrí el PDF en la página 8 del visor (la hoja tiene impreso "8" al pie).
+      En la transcripción (Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.md), líneas 280-300.
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
+  [20d9ecc] etapa verificar · duda-tema
+      Pregunta: ¿Se carga la línea 'Kosten voor de vennootschap' (L831, 159.186) de uitzendkrachten como detalle de 'Diensten en diverse goederen'?  (por qué: L831 es el costo de personal interino (cuenta 617), que integra servicios y bienes diversos, pero es un detalle parcial.)
+      Abrí el PDF en la página 24 del visor (la hoja tiene impreso "24" al pie).
+      En la transcripción (Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.md), líneas 831-831.
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
+  [ffc5c44] etapa verificar · primer-anio
+      Qué mirar: Primer año automático de este club (club nuevo): no hay año anterior cargado para comparar. Revisar que los ingresos (17.587332), los gastos (42.871877) y el resultado coincidan con el estado de resultados impreso.
+      Abrí el PDF en la página 8 del visor (la hoja tiene impreso "8" al pie).
+      En la transcripción (Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.md), líneas 282-331.

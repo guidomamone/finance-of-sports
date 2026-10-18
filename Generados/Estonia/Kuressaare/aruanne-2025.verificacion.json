@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/Kuressaare/aruanne-2025.pdf",
  "md": "Clubes/Estonia/Kuressaare/aruanne-2025.md",
- "generado": "2026-10-18T06:09:34.681Z",
- "estado": "cola",
+ "generado": "2026-10-18T06:37:59.100Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -11,13 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "1c5a785",
-  "1c5a785",
-  "1c5a785",
-  "1c5a785"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Kuressaare/aruanne-2025.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne 01.01-31.12.2025 con tulemiaruanne (L175-202) (revisión del alta, subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -56,6 +62,10 @@
   "la nota de \"Jagatud annetused ja toetused\" no suma el renglón (0.110395 contra 0.023924, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Mitmesugused tegevuskulud\" no suma el renglón (0.237681 contra 0.218921, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Tööjõukulud\" no suma el renglón (0.467724 contra 0.238317, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): corregir no, en aruanne-2025.pdf",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): corregir no, en aruanne-2025.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"-\"): corregir no, en aruanne-2025.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"-\"): corregir no, en aruanne-2025.pdf",
   "duda de extraer que no afecta la carga: b21 es otro corte del mismo total 479 460 de L565; cargarlo duplicaría el importe."
  ],
  "reintentar": [

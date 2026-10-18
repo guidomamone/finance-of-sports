@@ -1,0 +1,19 @@
+## Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf
+  [fb43936] etapa verificar · no-cierra
+      Qué mirar: resultado del ejercicio: ingresos 2.788355 - gastos 3.62035 ± financiero 0.034622 ± impuesto 0.014803 no da el impreso -0.962223. Revisar si falta o sobra alguna fila, o si hay un renglón del lado equivocado.
+      Abrí el PDF en la página 7 del visor (la hoja tiene impreso "7" al pie).
+      En la transcripción (Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.md), líneas 255-281.
+  [2ca99ab] etapa verificar · duda-tema
+      Pregunta: ¿Se cargan los importes de b13 y b19 como euros (unidades) pese a que el bloque no imprime la escala?  (por qué: Ni b13 (L250-L281) ni b19 (L450-L465) indican la unidad monetaria; el esquema belga abreviado normalmente está en euros.)
+      Abrí el PDF en la página 7 del visor (la hoja tiene impreso "7" al pie).
+      En la transcripción (Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.md), líneas 250-465.
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
+  [8002a09] etapa verificar · duda-de-extraer
+      Pregunta: ¿Se carga 'Brutomarge' (L255) como ingreso neto aunque es margen bruto (omzet menos compras) y no ingresos brutos?  (por qué: El esquema abreviado no muestra Omzet (L257 vacío) ni compras (L258), sólo el margen bruto en L255.)
+      Abrí el PDF en la página 7 del visor (la hoja tiene impreso "7" al pie).
+      En la transcripción (Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.md), líneas 255-258.
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
+  [1f88ca6] etapa verificar · primer-anio
+      Qué mirar: Primer año automático de este club (club nuevo): no hay año anterior cargado para comparar. Revisar que los ingresos (2.788355), los gastos (3.62035) y el resultado coincidan con el estado de resultados impreso.
+      Abrí el PDF en la página 7 del visor (la hoja tiene impreso "7" al pie).
+      En la transcripción (Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.md), líneas 255-281.
