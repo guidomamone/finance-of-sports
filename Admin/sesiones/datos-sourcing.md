@@ -110,3 +110,24 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
 - 273: 140 ejercicios cargados sin estadio o sin sponsor (casi todos sin sponsor: ligas de ascenso y años viejos sin tabla de kits en
   ninguna Wikipedia). `node tools/estadio-sponsor.mjs --ensayo` los lista; van a `tools/contexto-manual.json` con fuente.
 - `tools/generate-sponsors.js` todavía no suma lo de `contexto-manual.json` (está por año de ejercicio, no por liga-temporada).
+
+## Después del segundo merge del 2026-10-18
+
+- **To-do 252: la revisión mensual de ejercicios nuevos** (Guido: mensual, no semanal; que baje el PDF a Clubes/). `tools/ejercicios-nuevos.mjs`
+  (nuevo, gratis): para cada club cargado, el ejercicio que sigue al último real cargado y si ya debería estar publicado (cierre + 4
+  meses); lee las URLs del canal de su nota de sourcing (la carpeta sale de la evidencia de carga), busca links a PDF que nombran esa
+  temporada y los estados financieros (filtro por nombre de archivo: fuera actas, dictámenes, edictos, presupuestos; un nombre sin
+  palabras como "2-2023_2024.pdf" vale), y si la carpeta ya tiene un PDF de esa temporada no es nuevo (falta cargarlo). Con `--escribir`
+  baja el PDF a `Clubes/<País>/<Club>/` (nombre ASCII; nunca pisa uno existente), escribe la sección "## Ejercicios nuevos (tarea
+  mensual)" de `Admin/sourcing/README.md` (antes del índice de países, que no toca), el registro `Admin/registros/ejercicios-nuevos.json`
+  (lo ya avisado no se repite) y, si bajó algo, regenera `data/faltantes/`, sube ASSET_V y regenera `fuentes/`.
+  Primera corrida (2026-10-18): 1 PDF nuevo (Amazonas 2025, `Clubes/Brasil/Amazonas/demonstracoes-contabeis-2025-faf-1.pdf`, **copiado
+  con rsync a la carpeta principal**), 14 clubes con el PDF ya en la carpeta sin cargar, 45 páginas para revisar con el navegador (37 notas
+  sin URL, 2 clubes sin carpeta en la evidencia, el resto captcha o JavaScript), 196 todavía en plazo. ASSET_V 1273.
+- Tarea programada mensual (día 1, 9:00, en esta Mac, carpeta principal): corre el script y revisa con el navegador las páginas que el
+  script no pudo leer. Ver "Qué queda".
+
+### Qué queda (TODO)
+
+- 252: las 37 notas de sourcing sin URL del canal (la tarea las marca "a revisar" todos los meses): agregarles la URL.
+- 252: los 14 clubes con el PDF del ejercicio siguiente ya bajado y sin cargar (los lista `node tools/ejercicios-nuevos.mjs`): onboarding.
