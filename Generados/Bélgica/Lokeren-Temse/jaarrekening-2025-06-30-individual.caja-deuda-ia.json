@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-18T14:07:32.033Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "",
+ "caja": {
+  "lineas": [
+   153
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Formato estándar belga (BNB) en euros sin indicación explícita de escala en las páginas provistas; se asume unidades (EUR). Las líneas de financiële schulden (183, 191) están vacías en el ejercicio, por lo que no hay deuda financiera; las 'Overige schulden' (L201, 45.534) no son préstamos bancarios."
+}

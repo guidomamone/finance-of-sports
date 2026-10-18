@@ -15,4 +15,12 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'cerclebrugge-be':  { 2025: 'be-proleague' },
   'dender-be':        { 2025: 'be-proleague' },
   'zultewaregem-be':  { 2025: 'liga-no-catalogada' },
+  'liersesk-be': { 2025: null },
+  'lokerentemse-be': { 2025: null },
+  'lommelsk-be': { 2025: null },
+  'ohleuven-be': { 2025: null },
+  'patroeisden-be': { 2025: null },
+  'rwdm-be': { 2025: null },
+  'beerschot-be': { 2025: null },
+  'raallalouviere-be': { 2025: null },
 });

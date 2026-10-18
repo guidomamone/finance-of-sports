@@ -1,0 +1,19 @@
+## Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.pdf
+  [ffa7be2] etapa verificar · no-cierra
+      Qué mirar: resultado del ejercicio: ingresos 1.842818 - gastos 6.557502 ± financiero 11.272015 ± impuesto 0.027259 no da el impreso 5.946137. Revisar si falta o sobra alguna fila, o si hay un renglón del lado equivocado.
+      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
+      En la transcripción (Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.md), líneas 184-210.
+  [54ece03] etapa verificar · duda-tema
+      Pregunta: ¿Se toman los importes del estado (L179-L210) como euros en unidades?  (por qué: No hay frase de escala impresa en b4 ni b14; el formato belga abreviado suele ir en euros.)
+      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
+      En la transcripción (Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.md), líneas 182-210.
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
+  [0ecbf61] etapa verificar · duda-de-extraer
+      Pregunta: ¿Se carga la Brutomarge (L184) como único dato de ingresos operativos, sabiendo que Omzet (L186) y otros ingresos no se informan por separado en el esquema abreviado?  (por qué: El esquema abreviado neta ingresos y compras en la Brutomarge (L184) y no hay total de ingresos impreso.)
+      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
+      En la transcripción (Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.md), líneas 184-184.
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
+  [a9efb7d] etapa verificar · primer-anio
+      Qué mirar: Primer año automático de este club (club nuevo): no hay año anterior cargado para comparar. Revisar que los ingresos (1.842818), los gastos (6.557502) y el resultado coincidan con el estado de resultados impreso.
+      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
+      En la transcripción (Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.md), líneas 184-210.

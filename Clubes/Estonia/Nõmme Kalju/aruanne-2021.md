@@ -600,60 +600,57 @@ Mittetulundusühing Nõmme Kalju FC 2021. a. majandusaasta aruanne
 
 --- pág. 17 ---
 
-Mittetulundusühing Nõmme Kalju FC 2021. a. majandusaasta aruanne
+17
+
+Mittetulundusühing Nõmme Kalju FC | 2021. a. majandusaasta aruanne
 
 2020. ja 2021.a a erakorralised kulud hõlmavad ettenägematuid kulutusi COVID-19 viiruse leviku ennetamiseks ja tõkestamiseks.
 
-| Mängijate üleminekutasud sh, | 2021 | 2020 |
-| --- | --- | --- |
-| Tasud vahendajatele/agenditasud: | 0 | 1 000 |
-| Mängijaõigused: | 4 200 | 3 600 |
+Mängijate üleminekutasud sh, 2021 2020
+Tasud vahendajatele/agenditasud: 0 1 000
+Mängijaõigused: 4 200 3 600
 
 ## Lisa 12 Tööjõukulud
 
 (eurodes)
 
 | | 2021 | 2020 |
-| --- | --- | --- |
+|---|---|---|
 | Palgakulu | 369 025 | 397 619 |
 | Sotsiaalmaksud | 124 355 | 133 712 |
 | Puhkusereserv | 1 203 | 5 883 |
-| Kokku tööjõukulud | 494 583 | 537 214 |
+| **Kokku tööjõukulud** | **494 583** | **537 214** |
 | Töötajate keskmine arv taandatuna täistööajale | 35 | 38 |
 
-| Palgakulu | 2021 | 2020 |
-| --- | --- | --- |
-| - sh. mängijate tasud | 134 930 | 147 389 |
-| - sh. treenerite tasud | 129 760 | 149 276 |
-| - sh. muu personali tasud | 104 335 | 100 954 |
+Palgakulu 2021 2020
+- sh. mängijate tasud 134 930 147 389
+- sh. treenerite tasud 129 760 149 276
+- sh. muu personali tasud 104 335 100 954
 
 Sh. Töötukassa palgatoetuse meetmetest finantseeritud osa:
-
-| 2021 | 2020 |
-| --- | --- |
-| 129 879 | 71 010 |
+2021 2020
+129 879 71 010
 
 ## Lisa 13 Seotud osapooled
 
 (eurodes)
 
-| Liikmete arv majandusaasta lõpu seisuga | 31.12.2021 | 31.12.2020 |
-| --- | --- | --- |
+| Liikmete arv majandusaasta lõpu seisuga | | |
+|---|---|---|
+| | **31.12.2021** | **31.12.2020** |
 | Füüsilisest isikust liikmete arv | 2 | 2 |
 
-Saldod seotud osapooltega rühmade lõikes
+**Saldod seotud osapooltega rühmade lõikes**
 
 | LÜHIAJALISED | 31.12.2021 | 31.12.2020 |
-| --- | --- | --- |
-| Nõuded ja ettemaksed | | |
+|---|---|---|
+| **Nõuded ja ettemaksed** | | |
 | Asutajad ja liikmed | 8 485 | 4 730 |
 | Sidusettevõtjad | 0 | 70 |
 | Tegev- ja kõrgem juhtkond ning olulise osalusega eraisikust omanikud ning nende valitseva või olulise mõju all olevad ettevõtjad | 45 | 659 |
-| Kokku nõuded ja ettemaksed | 8 530 | 5 459 |
-| Laenukohustised | | |
+| **Kokku nõuded ja ettemaksed** | **8 530** | **5 459** |
+| **Laenukohustised** | | |
 | Tegev- ja kõrgem juhtkond ning olulise osalusega eraisikust omanikud ning nende valitseva või olulise mõju all olevad ettevõtjad | 500 | 0 |
-
-17
 
 --- pág. 18 ---
 

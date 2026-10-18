@@ -449,54 +449,51 @@ Technischer Leiter Nachwuchs
 
 --- pág. 15 ---
 
-Investitionen in unsere Zukunft
+# Investitionen in unsere Zukunft
 Einnahmen und Ausgaben der Nachwuchsabteilung
 
-Investitionen in unseren Nachwuchs (in 1000 CHF)
+**Investitionen in unseren Nachwuchs** (Y-Achse: 1'000 CHF, 0 bis 3'500)
 
 | | Einnahmen | Investition Nachwuchs | Ausgaben |
-| --- | --- | --- | --- |
-| 2016/17 | 1’471 | 1’214 | 2’685 |
-| 2017/18 | 1’729 | 1’341 | 3’070 |
+|---|---|---|---|
+| 2016/17 | 1'471 | 1'214 | 2'685 |
+| 2017/18 | 1'729 | 1'341 | 3'070 |
 
-Ausgaben pro Junior im Geschäftsjahr 2017/18: 14’018 CHF
+**Ausgaben pro Junior im Geschäftsjahr 2017/18:** 14'018 CHF
 
-| Lohnaufwand | Spielbetrieb | Gemeinkosten | Fahrzeuge und Infrastruktur | Diverse Kosten |
-| --- | --- | --- | --- | --- |
-| 66% | 10% | 10% | 3% | 11% |
+Legende: Lohnaufwand; Spielbetrieb; Gemeinkosten; Fahrzeuge und Infrastruktur; Diverse Kosten
+Prozentwerte im Diagramm: 66%, 11%, 10%, 10%, 3%
 
-Einnahmen pro Junior im Geschäftsjahr 2017/18: 7’895 CHF
+**Einnahmen pro Junior im Geschäftsjahr 2017/18:** 7'895 CHF
 
-| Sponsoren-, Sport Toto-, J+S-Entschädigungen | Spenden und karitative Einnahmen (inkl. SFAZ*) | Ausbildungsbeiträge der Eltern | Unterstützung SFV | Diverse Einnahmen |
-| --- | --- | --- | --- | --- |
-| 21% | 19% | 13% | 25% | 22% |
+Legende: Sponsoren, Sport Toto, J+S-Entschädigungen; Spenden und karitative Einnahmen (inkl. SFAZ*); Ausbildungsbeiträge der Eltern; Unterstützung SFV; Diverse Einnahmen
+Prozentwerte im Diagramm: 21%, 19%, 13%, 25%, 22%
+\* Stiftung Fussballakademie Zentralschweiz
 
-* Stiftung Fussballakademie Zentralschweiz
+**Um die besten Fussballtalente der Innerschweiz zu finden und zu fördern, investiert der FC Luzern viel Zeit, Herzblut und auch finanzielle Ressourcen.**
 
-Um die besten Fussballtalente der Innerschweiz zu finden und zu fördern, investiert der FC Luzern viel Zeit, Herzblut und auch finanzielle Ressourcen.
+Von der Löwenschule bis zur U-21, vom 9-jährigen „Knirps" bis zum jungen Erwachsenen fördert und begleitet die FCL-Nachwuchsabteilung begabte junge Kicker. Die individuellen Bedürfnisse und Ansprüche der Talente ändern sich dabei ständig. Der fünfjährige Dario braucht eine ganz andere Förderung und Unterstützung als ein 20-Jähriger.
 
-Von der Löwenschule bis zur U-21, vom 9-jährigen „Knirps“ bis zum jungen Erwachsenen fördert und begleitet die FCL-Nachwuchsabteilung begabte junge Kicker. Die individuellen Bedürfnisse und Ansprüche der Talente ändern sich dabei ständig. Der fünfjährige Dario braucht eine ganz andere Förderung und Unterstützung als ein 20-Jähriger.
+## 86 Trainer und Funktionäre arbeiten im Nachwuchs.
 
-86 Trainer und Funktionäre arbeiten im Nachwuchs.
-
-Viele kompetente Fachleute ...
-Um das ganze Spektrum dieser unterschiedlichen individuellen Bedürfnisse stufengerecht abzudecken, beschäftigt die FC LUZERN Gruppe weit über 80 eigene Nachwuchs-Spezialisten. Die Löwenschule zum Beispiel umfasste 2017/18 neben den 354 Kids im E-Juniorenalter über 30 Trainer mit hoher Fach- und Methodenkompetenz, darunter ehemalige Super-League-Spieler, diplomierte Turn- und Sportlehrer und Fussballinstruktoren des Schweizerischen Fussballverbandes (SFV).
+**Viele kompetente Fachleute ...**
+Um das ganze Spektrum dieser unterschiedlichen individuellen Bedürfnisse stufengerecht abzudecken, beschäftigt die FC LUZERN Gruppe weit über 80 eigene Nachwuchs-Spezialisten.
+Die Löwenschule zum Beispiel umfasste 2017/18 neben den 354 Kids im E-Juniorenalter über 30 Trainer mit hoher Fach- und Methodenkompetenz, darunter ehemalige Super-League-Spieler, diplomierte Turn- und Sportlehrer und Fussball-Instruktoren des Schweizerischen Fussballverbandes (SFV).
 Ab der U-15 werden die Jugendlichen dann nicht mehr nur sportlich, sondern auch schulisch und pädagogisch eng betreut und begleitet. Sie haben z. B. die Möglichkeit, eine auf ihre Bedürfnisse angepasste Matura oder Berufslehre zu absolvierten.
 
-... und wertvolle Partnerschaften
+**... und wertvolle Partnerschaften**
 Für die sportliche Talententwicklung stützt sich der FC Luzern auf Partnerschaften mit den Clubs der Region, dem Innerschweizer Verband (IFV) und dem SFV. Mit dem durch den SFV geförderten Projekt Footeco werden ab der Stufe FE-13 mindestens drei qualitativ gute Trainings mit für diese Stufe ausgebildeten Trainern pro Woche und ein Spiel am Wochenende organisiert.
 
 Für die persönliche und berufliche Entwicklung der jungen Erwachsenen ab der Stufe U-15 verfügt die FC LUZERN Gruppe über verschiedene Schulpartnerschaften für die Vollendung der obligatorischen Schulzeit einerseits oder zur Absolvierung einer Berufslehre oder des Sportgymnasiums andererseits.
 Die Unterbringung und Betreuung externer Spieler auf der Basis angemessener pädagogisch-psychologischer Strukturen sowie die räumliche Nähe von Sport und Bildung garantiert der Campus der nahestehenden Stiftung Pilatus Akademie.
-Sehr gefreut haben wir uns im Geschäftsjahr 2017/18 über die Vergabe des Qualitätslabels „Nachwuchs Leistungszentrum SFV“ durch den SFV. Für diese Zertifizierung mussten umfangreiche und überzeugende Konzepte in den vier Bereichen Fussball, Betreuung und Begleitung, Schulische und berufliche Ausbildung sowie Sichtung und Selektion erarbeitet und umgesetzt werden. Sie belegt eindrücklich die exzellente Nachwuchsarbeit, die im FC Luzern geleistet wird.
+Sehr gefreut haben wir uns im Geschäftsjahr 2017/18 über die Vergabe des Qualitätslabels „Nachwuchs Leistungszentrum SFV" durch den SFV. Für diese Zertifizierung mussten umfangreiche und überzeugende Konzepte in den vier Bereichen Fussball, Betreuung und Begleitung, Schulische und berufliche Ausbildung sowie Sichtung und Selektion erarbeitet und umgesetzt werden. Sie belegt eindrücklich die exzellente Nachwuchsarbeit, die im FC Luzern geleistet wird.
 
-Investition in die Zukunft
+**Investition in die Zukunft**
 Dieses Engagement hat natürlich auch seinen Preis. Schlüsselkennzahlen und weitere Informationen dazu zeigen wir in der Spartenrechnung auf Seite 9. Detaillierte finanzielle Angaben zum Nachwuchsbereich sind auch im Finanzbericht ab Seite 35 enthalten.
-An dieser Stelle nur so viel: Im Geschäftsjahr 2017/18 haben wir uns die Nachwuchsabteilung rund 3,1 Mio. CHF oder gut 14‘000 CHF pro Junior kosten lassen. Dem stehen Einnahmen von 1,7 Mio. CHF bzw. knapp CHF 7‘900 pro Junior gegenüber.
+An dieser Stelle nur so viel: Im Geschäftsjahr 2017/18 haben wir uns die Nachwuchsabteilung rund 3,1 Mio. CHF oder gut 14'000 CHF pro Junior kosten lassen. Dem stehen Einnahmen von 1,7 Mio. CHF bzw. knapp CHF 7'900 pro Junior gegenüber.
 Und wissen Sie was? Die Differenz betrachten wir nicht als Defizit, sondern als sehr sinnvolle Investition in unsere Jugend, die unsere Zukunft ist.
 
-FC LUZERN Gruppe | Geschäftsbericht 2017/18 13
-13
+FC LUZERN Gruppe | Geschäftsbericht 2017/18 — 13
 
 --- pág. 16 ---
 
@@ -783,57 +780,52 @@ FC LUZERN Gruppe | Geschäftsbericht 2017/18 23
 
 # DER SPIELBETRIEB
 
-Kosten des Spielbetriebs
+## Kosten des Spielbetriebs
 Ausgewählte Positionen (nicht abschliessend)
 
-Kosten des Spielbetriebs, Meisterschaft 2017/18 (in 1000 CHF)
+**Kosten des Spielbetriebs, Meisterschaft 2017/18** (Y-Achse: 1'000 CHF, 0 bis 1500)
 
 | | Sicherheitskosten | Übrige Kosten |
-| --- | --- | --- |
-| 2016/17 | 1’133 | 1’249 |
-| 2017/18 | 1’128 | 1’169 |
+|---|---|---|
+| 2016/17 | 1'133 | 1'249 |
+| 2017/18 | 1'128 | 1'169 |
 
-Sicherheitskosten pro Spiel, Meisterschaft 2017/18: 62’673 CHF
+**Sicherheitskosten pro Spiel, Meisterschaft 2017/18:** 62'673 CHF
 
-| Ordnungsdienst | Polizei | Fanarbeit | Rettungsdienst und Sanität | Diverse Kosten |
-| --- | --- | --- | --- | --- |
-| 39% | 44% | 9% | 2% | 6% |
+Legende: Ordnungsdienst; Polizei; Fanarbeit; Rettungsdienst und Sanität; Diverse Kosten
+Prozentwerte im Diagramm: 39%, 44%, 9%, 2%, 6%
 
-Übrige Kosten pro Spiel, Meisterschaft 2017/18: 64’918 CHF
+**Übrige Kosten pro Spiel, Meisterschaft 2017/18:** 64'918 CHF
 
-| Billettesteuern | Öffentlicher Verkehr | Rasen, Trainingsplatz und Allmend-Süd | Reinigung Stadion | Bussen |
-| --- | --- | --- | --- | --- |
-| 39% | 23% | 21% | 13% | 4% |
+Legende: Billettsteuern; Öffentlicher Verkehr; Rasen, Trainingsplatz und Allmend-Süd; Reinigung Stadion; Bussen
+Prozentwerte im Diagramm: 39%, 23%, 21%, 13%, 4%
 
-Ein Heimspiel des FC Luzern, elf Mann stehen auf dem Platz, das Stadion ist gut gefüllt, das Fernsehen anwesend – alles wie immer, alles ganz normal.
+**Ein Heimspiel des FC Luzern, elf Mann stehen auf dem Platz, das Stadion ist gut gefüllt, das Fernsehen anwesend – alles wie immer, alles ganz normal.**
 
-Ein ganz normales Heimspiel
-Viele der durchschnittlich über 10’000 Fans kommen mit dem Zug; ziemlich bequem erreicht man die swissporarena in zwei bis drei Minuten vom Hauptbahnhof Luzern aus.
+**Ein ganz normales Heimspiel**
+Viele der durchschnittlich über 10'000 Fans kommen mit dem Zug; ziemlich bequem erreicht man die swissporarena in zwei bis drei Minuten vom Hauptbahnhof Luzern aus.
 Auf die hungrigen und durstigen Fans warten an den fünf Getränke- und Verpflegungsständen vor und zehn im Stadion heisse Würste und Hamburger und kalte Getränke.
-In den Lounges wird für die VIPs Champagner und ein Gourmet-Menu serviert.
-Für Ruhe und Ordnung sorgt der eigene Sicherheitsdienst mit rund 210 Stewards und Hostessen im Stadion. Speditiv passieren die Fans mit den zuvor im Internet gekauften Tickets oder ihren Saisonkarten die Einlasskontrollen und finden sich auf ihren Plätzen ein. Auf allfällige Notfälle sind Sanität und Rettungsdienst jederzeit bestens vorbereitet.
+In den Lounges wird für die VIPs Champagner und ein Gourmet-Menu serviert. Für Ruhe und Ordnung sorgt der eigene Sicherheitsdienst mit rund 210 Stewards und Hostessen im Stadion. Speditiv passieren die Fans mit den zuvor im Internet gekauften Tickets oder ihren Saisonkarten die Einlasskontrollen und finden sich auf ihren Plätzen ein. Auf allfällige Notfälle sind Sanität und Rettungsdienst jederzeit bestens vorbereitet.
 
 Die potente Flutlichtanlage lässt den gepflegten Naturrasen hell erleuchten. Wiederholungen und Zeitlupen werden auf den zwei 40 Quadratmetern grossen LED-Screens sowie 112 Monitoren im Publikumsbereich gezeigt. Für ein angenehmes Hörerlebnis sorgen neben den Fans 900 im ganzen Stadion verteilte Lautsprecher. Das Fernsehen überträgt live, und viele Journalisten haben einen der 70 für sie reservierten Plätze eingenommen. Der Schiedsrichter pfeift an, der Match läuft.
 
-380 Stewards, Hostessen und Cateringmitarbeiter waren in der Saison 2017/18 bei jedem Heimspiel im Einsatz.
-
-Die Organisation und Logistik dahinter
-Damit normale Heimspiele einwandfrei und reibungslos vonstattengehen, müssen ganz viele Räder ineinandergreifen. Dafür sind pro Spieltag rund 450 Personen im Einsatz, verantwortlich für Ticketing, Sicherheit, Zugangskontrolle, Technik, Conferencing und vieles mehr.
-Dazu hier nur ein kleines Zahlenbeispiel: In der Saison 2017/18 besuchten insgesamt fast 181’000 Zuschauer die 18 Meisterschaftsheimspiele des FC Luzern. Dabei wurden 35’823 Bratwürste, 14’847 Hamburger und 141’868 4-dl-Becher Bier konsumiert.
-
-Was Heimspiele kosten
+**Was Heimspiele kosten**
 Heimspiele bringen auch Einnahmen, gute Stimmung und oft auch Punkte. Aber Heimspiele haben natürlich auch ihren Preis.
-Fast 2,3 Mio. CHF hat die FC LUZERN Gruppe 2017/18 für Sicherheit und Diverses aufgewendet. Das sind – wie aus oben stehender Grafik ersichtlich ist – über 127’000 CHF pro Spieltag, und das, ohne Kosten der 1. Mannschaft oder diejenigen der freiwilligen Helfer miteinzubeziehen.
+Fast 2,3 Mio. CHF hat die FC LUZERN Gruppe 2017/18 für Sicherheit und Diverses aufgewendet. Das sind – wie aus oben stehender Grafik ersichtlich ist – über 127'000 CHF pro Spieltag, und das, ohne Kosten der 1. Mannschaft oder diejenigen der freiwilligen Helfer miteinzubeziehen.
+
+## 380 Stewards, Hostessen und Cateringmitarbeiter waren in der Saison 2017/18 bei jedem Heimspiel im Einsatz.
+
+**Die Organisation und Logistik dahinter**
+Damit normale Heimspiele einwandfrei und reibungslos vonstattengehen, müssen ganz viele Räder ineinandergreifen. Dafür sind pro Spieltag rund 450 Personen im Einsatz, verantwortlich für Ticketing, Sicherheit, Zugangskontrolle, Technik, Conferencing und vieles mehr.
+Dazu hier nur ein kleines Zahlenbeispiel: In der Saison 2017/18 besuchten insgesamt fast 181'000 Zuschauer die 18 Meisterschaftsheimspiele des FC Luzern. Dabei wurden 35'823 Bratwürste, 14'847 Hamburger und 141'868 4-dl-Becher Bier konsumiert.
 
 Der Schiedsrichter pfeift ab, das Spiel ist aus. Die Zuschauer strömen aus dem Stadion, das gereinigt wird. Die Spieler und Trainer geben noch Interviews, die Monitore und Lautsprecher sind ausgeschaltet, die Lichter werden langsam gelöscht. Alles hat einwandfrei und reibungslos funktioniert. Einmal mehr.
 
 Ein ganz normales Heimspiel, elf Mann standen auf dem Platz, alle Zuschauer sind schnell und sicher nach Hause gekommen – alles wie immer, alles ganz normal.
 
-Böbi und sein Team haben einmal mehr ganze Arbeit geleistet!
+**Böbi und sein Team haben einmal mehr ganze Arbeit geleistet!**
 
-6
-24
-24 FC LUZERN Gruppe | Geschäftsbericht 2017/18
+24 — FC LUZERN Gruppe | Geschäftsbericht 2017/18
 
 --- pág. 27 ---
 

@@ -14,3 +14,5 @@
 - Número de empresa tomado de companyweb.be (búsqueda web); confirmado contra el nombre del depositante en la BNB. Los ejercicios en modelo abreviado (`Verkort`) pueden no traer cuenta de resultados completa: revisar al transcribir.
 - Serie más larga: 16 depósitos.
 - Último chequeo: 2026-10-08.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2025 desde `Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.pdf` (sourceId `patroeisden-be-jaarrekening-2025-06-30-individual`).

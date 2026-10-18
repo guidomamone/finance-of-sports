@@ -1,0 +1,13 @@
+## Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf
+  [e952e5e] etapa cargar · categoria
+      Pregunta: ¿"Aankopen" (1.52052 en millones de la moneda del documento) va como "Otros gastos"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 9 del visor (la hoja tiene impreso "9" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [2d1848b] etapa cargar · categoria
+      Pregunta: ¿"Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa" (4.957136 en millones de la moneda del documento) va como "Amortización de pases"?  (por qué: la categorización le dio 0.55 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 9 del visor (la hoja tiene impreso "9" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [33a6082] etapa cargar · categoria
+      Pregunta: ¿"Niet-recurrente bedrijfskosten" (1.141007 en millones de la moneda del documento) va como "Ítems excepcionales"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 9 del visor (la hoja tiene impreso "9" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)

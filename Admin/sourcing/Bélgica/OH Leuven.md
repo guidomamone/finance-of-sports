@@ -37,3 +37,5 @@ se abrió ninguno de los 2 PDFs para confirmarlo por tiempo.
 
 - Último chequeo: 2026-09-17.
 Color de marca: null — nl.wikipedia: camiseta local blanca con acentos verde, rojo y negro (escudo con trazos verde/rojo/negro); blanco con acento, verificado 2026-10-09
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2025 desde `Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf` (sourceId `ohleuven-be-jaarrekening-2025-06-30-individual`).

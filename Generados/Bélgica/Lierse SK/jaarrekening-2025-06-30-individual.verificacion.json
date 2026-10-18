@@ -1,0 +1,245 @@
+{
+ "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-18T13:54:29.960Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "-33.924",
+   "linea": 272,
+   "etiqueta": "Recurrente financiële kosten",
+   "lado": "financiero",
+   "reemplaza": "Recurrente financiële kosten",
+   "motivo": "costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": null,
+   "etiqueta": "(sale) Waarvan: niet-recurrente bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "reemplazaLinea": 256,
+   "motivo": "76A (L256, 82.200) es 'waarvan', ya dentro de la Brutomarge 2.706.155 (L255) (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "247.280",
+   "linea": 260,
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "reemplaza": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "motivo": "la nota separa el 630 (407.089): intangibles Geboekt 8079 = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "motivo": "la nota separa el 630 (407.089): intangibles Geboekt 8079 = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "159.809",
+   "linea": 260,
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "la nota separa el 630 (407.089): intangibles Geboekt 8079 = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "categoria",
+   "valor": "depreciation",
+   "linea": null,
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "motivo": "la nota separa el 630 (407.089): intangibles Geboekt 8079 = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "cierre",
+   "valor": "2025-06-30",
+   "linea": null,
+   "motivo": "boekjaar 01-07-2024 tot 30-06-2025 (.md L36); el 30-10-2025 es la fecha de la asamblea (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)",
+   "dif": 9.999999999177334e-7
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "ajuste manual: fila \"Recurrente financiële kosten\" (financiero) -33.924, en lugar de \"Recurrente financiële kosten\" (2026-10-18, costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "ajuste manual: sale la fila \"L256\" (2026-10-18, 76A (L256, 82.200) es 'waarvan', ya dentro de la Brutomarge 2.706.155 (L255) (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "ajuste manual: fila \"Afschrijvingen immateriële vaste activa (spelers)\" (gasto) 247.280, en lugar de \"Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa\" (2026-10-18, la nota separa el 630 (407.089): intangibles Geboekt 8079 = spelers (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "ajuste manual: fila \"Afschrijvingen materiële vaste activa\" (gasto) 159.809 (2026-10-18, la nota separa el 630 (407.089): intangibles Geboekt 8079 = spelers (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "duda de localizar que no afecta la carga: El pedido dice cierre 2025-10-30, que es la fecha de la asamblea que aprobó las cuentas (b3); el ejercicio cierra el 30-06-2025 (b4).",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 2.706155,
+  "gastos": 3.62035,
+  "financiero": -0.033226,
+  "impuesto": 0.014803,
+  "resultadoImpreso": -0.962223,
+  "resultadoParaCargar": -0.962223,
+  "resultadoFinal": null,
+  "lecturaSignos": "impuesto invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Brutomarge (+)/(-)",
+   "lado": "ingreso",
+   "M": 2.706155,
+   "pagina": 7,
+   "linea": 255,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "gasto",
+   "M": 3.139021,
+   "pagina": 7,
+   "linea": 259,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andere bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.050448,
+   "pagina": 7,
+   "linea": 263,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.023792,
+   "pagina": 7,
+   "linea": 265,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "M": 0.24728,
+   "pagina": 7,
+   "linea": 260,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.159809,
+   "pagina": 7,
+   "linea": 260,
+   "origen": "ajuste manual"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "M": 0.000698,
+   "linea": 268
+  },
+  {
+   "etiqueta": "Recurrente financiële kosten",
+   "M": -0.033924,
+   "linea": 272
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen op het resultaat (+)/(-)",
+   "M": -0.014803,
+   "linea": 277
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "08a99b6dac8b6779829806df2791e011174c6556",
+  "rango": [
+   252,
+   284
+  ],
+  "lineasCargadas": [
+   255,
+   259,
+   263,
+   265,
+   260,
+   260,
+   268,
+   272,
+   277
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 252 a 284 del .md):\nL252: |  | Toel. | Codes | Boekjaar | Vorig boekjaar |\nL253: | --- | --- | --- | --- | --- |\nL254: | Bedrijfsopbrengsten en bedrijfskosten |  |  |  |  |\nL255: | Brutomarge (+)/(-) |  | 9900 | 2.706.155 | 2.895.671 |\nL256: | Waarvan: niet-recurrente bedrijfsopbrengsten |  | 76A | 82.200 | 53.788 |\nL257: | Omzet |  | 70 |  |  |\nL258: | Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen |  | 60/61 |  |  |\nL259: | Bezoldigingen, sociale lasten en pensioenen (+)/(-) |  | 62 | 3.139.021 | 2.556.688 |\nL260: | Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa |  | 630 | 407.089 | 381.564 |\nL261: | Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) |  | 631/4 |  |  |\nL262: | Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-) |  | 635/8 |  |  |\nL263: | Andere bedrijfskosten |  | 640/8 | 50.448 | 18.830 |\nL264: | Als herstructureringskosten geactiveerde bedrijfskosten (-) |  | 649 |  |  |\nL265: | Niet-recurrente bedrijfskosten |  | 66A | 23.792 | 23.422 |\nL266: | Bedrijfswinst (Bedrijfsverlies) (+)/(-) |  | 9901 | -914.195 | -84.832 |\nL267: | Financiële opbrengsten | 6.4 | 75/76B | 698 | 4.349 |\nL268: | Recurrente financiële opbrengsten |  | 75 | 698 | 4.349 |\nL269: | Waarvan: kapitaal- en interestsubsidies |  | 753 |  |  |\nL270: | Niet-recurrente financiële opbrengsten |  | 76B |  |  |\nL271: | Financiële kosten | 6.4 | 65/66B | 33.924 | 17.305 |\nL272: | Recurrente financiële kosten |  | 65 | 33.924 | 17.305 |\nL273: | Niet-recurrente financiële kosten |  | 66B |  |  |\nL274: | Winst (Verlies) van het boekjaar vóór belasting (+)/(-) |  | 9903 | -947.420 | -97.788 |\nL275: | Onttrekking aan de uitgestelde belastingen |  | 780 |  |  |\nL276: | Overboeking naar de uitgestelde belastingen |  | 680 |  |  |\nL277: | Belastingen op het resultaat (+)/(-) |  | 67/77 | 14.803 | 10.092 |\nL278: | Winst (Verlies) van het boekjaar (+)/(-) |  | 9904 | -962.223 | -107.880 |\nL279: | Onttrekking aan de belastingvrije reserves |  | 789 |  |  |\nL280: | Overboeking naar de belastingvrije reserves |  | 689 |  |  |\nL281: | Te bestemmen winst (verlies) van het boekjaar (+)/(-) |  | 9905 | -962.223 | -107.880 |\nL283: Page 7 of 27\n\nLO QUE SE CARGA:\n- ingreso · \"Brutomarge (+)/(-)\" · 2.706155 · L255\n- gasto · \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\" · 3.139021 · L259\n- gasto · \"Andere bedrijfskosten\" · 0.050448 · L263\n- gasto · \"Niet-recurrente bedrijfskosten\" · 0.023792 · L265\n- gasto · \"Afschrijvingen immateriële vaste activa (spelers)\" · 0.24728 · L260\n- gasto · \"Afschrijvingen materiële vaste activa\" · 0.159809 · L260\n- financiero · \"Recurrente financiële opbrengsten\" · 0.000698 · L268\n- financiero · \"Recurrente financiële kosten\" · -0.033924 · L272\n- impuesto · \"Belastingen op het resultaat (+)/(-)\" · -0.014803 · L277"
+ }
+}

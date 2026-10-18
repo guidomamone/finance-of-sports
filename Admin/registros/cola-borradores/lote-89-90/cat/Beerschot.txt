@@ -1,0 +1,30 @@
+## Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.pdf
+  [91156ad] etapa cargar · categoria
+      Pregunta: ¿"Ticketing en abonnementen" (2.21594 en millones de la moneda del documento) va como "Recaudación de entradas"?  (por qué: la categorización le dio 0.65 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 23 del visor (la hoja tiene impreso "23" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [819565f] etapa cargar · categoria
+      Pregunta: ¿"Aankopen" (0.925607 en millones de la moneda del documento) va como "Otros gastos"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 8 del visor (la hoja tiene impreso "8" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [e7af633] etapa cargar · categoria
+      Pregunta: ¿"Andere personeelskosten" (0.238832 en millones de la moneda del documento) va como "Salarios del plantel"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 23 del visor (la hoja tiene impreso "23" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [4dc7977] etapa cargar · categoria
+      Pregunta: ¿"Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa" (0.891583 en millones de la moneda del documento) va como "Amortización de pases"?  (por qué: la categorización le dio 0.55 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 8 del visor (la hoja tiene impreso "8" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [a4b60fb] etapa cargar · categoria
+      Pregunta: ¿"Teruggenomen" (0.00821 en millones de la moneda del documento) va como "Otras amortizaciones"?  (por qué: la categorización le dio 0.5 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 24 del visor (la hoja tiene impreso "24" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [13d2376] etapa cargar · perfil
+      Pregunta: ¿Beerschot tiene socios que le pagan una cuota (cuotas sociales, mensalidades, sócio-torcedor, membresía)?  (por qué: en 2025 "Cuotas sociales" da 0; si el club tiene, falta un desglose y se reintenta; si no tiene, el 0 es real. Queda guardado en Admin/registros/perfil-clubes.jsonl para todos sus años.)
+      Propuesta del sistema: responder corregir --valor sí | corregir --valor no (o mandar un agente a buscar)
+  [c086857] etapa cargar · perfil
+      Pregunta: ¿Beerschot tiene otros deportes (básquet, vóley, futsal...) con ingresos o gastos en sus estados financieros?  (por qué: en 2025 "Otras secciones deportivas" da 0; si el club tiene, falta un desglose y se reintenta; si no tiene, el 0 es real. Queda guardado en Admin/registros/perfil-clubes.jsonl para todos sus años.)
+      Propuesta del sistema: responder corregir --valor sí | corregir --valor no (o mandar un agente a buscar)
+  [14fa4a7] etapa cargar · gestion
+      Qué mirar: ¿Quién condujo Beerschot en el ejercicio 2025 (cierre 2025-06-30)? Ninguna gestión confirmada de data/gestiones/be.js lo cubre. Completar las gestiones del club en ese archivo (formato y regla: Admin/ARQUITECTURA.md, "Gestiones"; el porqué de cada fecha va a Admin/carga-clubes/<club>.md, no al archivo): nombre, corto, cargo 'Presidente' (en una sociedad, el dueño solo si es una persona con nombre), desde (fecha en que ASUMIÓ), hasta (o null), fuente (URL), confirmada:true. Si el país no tiene archivo, crearlo y sumar 'be' a PAISES de js/finanzas-anios.js. Una SAF o sociedad anónima sin dueño persona no tiene gestión: responder descartar. Firmantes en la transcripción: no se encontraron. Después: node tools/cola.mjs --responder <id> aceptar.
+      Propuesta del sistema: completar data/gestiones y responder aceptar (o descartar si el club no tiene presidente persona)

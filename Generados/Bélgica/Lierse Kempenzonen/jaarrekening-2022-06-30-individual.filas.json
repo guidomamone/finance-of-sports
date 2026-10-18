@@ -1,0 +1,195 @@
+{
+ "pdf": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2022-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2022-06-30-individual.md",
+ "mdSha1": "b06fafee672b21989d64471ab1011fee3665d3f1",
+ "ubicacionSha1": "51f4a2c5f9ab071e9eb3f5d35e6630b522461a87",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T06:13:33.505Z",
+ "ubicacion": {
+  "estado": [
+   "b6"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b6",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica la escala; los modelos belgas de la NBB suelen expresarse en euros (unidades), pero no está impreso en el bloque."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b6",
+   "linea": 228,
+   "etiqueta": "Brutomarge (+)/(-)",
+   "actual": "-2.369",
+   "anterior": "558.356",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 232,
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "actual": "0",
+   "anterior": "1.288.440",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 233,
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "actual": "0",
+   "anterior": "66.604",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 234,
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "actual": "0",
+   "anterior": "11.340",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 236,
+   "etiqueta": "Andere bedrijfskosten",
+   "actual": "0",
+   "anterior": "10.882",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 238,
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "actual": "0",
+   "anterior": "20.000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 239,
+   "etiqueta": "Bedrijfswinst (Bedrijfsverlies) (+)/(-)",
+   "actual": "-2.369",
+   "anterior": "-838.911",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 240,
+   "etiqueta": "Financiële opbrengsten",
+   "actual": "0",
+   "anterior": "30",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 241,
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "actual": "0",
+   "anterior": "30",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 244,
+   "etiqueta": "Financiële kosten",
+   "actual": "6",
+   "anterior": "24.528",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 245,
+   "etiqueta": "Recurrente financiële kosten",
+   "actual": "6",
+   "anterior": "24.528",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 247,
+   "etiqueta": "Winst (Verlies) van het boekjaar vóór belasting (+)/(-)",
+   "actual": "-2.376",
+   "anterior": "-863.409",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 250,
+   "etiqueta": "Belastingen op het resultaat (+)/(-)",
+   "actual": "2.215",
+   "anterior": "47.616",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 251,
+   "etiqueta": "Winst (Verlies) van het boekjaar (+)/(-)",
+   "actual": "-4.591",
+   "anterior": "-911.025",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 254,
+   "etiqueta": "Te bestemmen winst (verlies) van het boekjaar (+)/(-)",
+   "actual": "-4.591",
+   "anterior": "-911.025",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 251,
+  "actual": "-4.591",
+  "anterior": "-911.025"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el bloque b6 en unidades (euros), aunque la escala no esté impresa en el bloque?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El encabezado del estado (L223-L225) no indica escala; el modelo abreviado belga suele presentarse en euros.",
+   "bloques": [
+    "b6"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Esquema abreviado belga: ingresos y compras netos en 'Brutomarge' (L228), sin Omzet ni total de ingresos/gastos impresos. En el ejercicio 2022 la actividad es prácticamente nula (gastos operativos en 0). L254 repite el resultado del ejercicio."
+}

@@ -1,0 +1,216 @@
+{
+ "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2025.pdf",
+ "md": "Clubes/Estonia/Harju JK Laagri/aruanne-2025.md",
+ "mdSha1": "afa03a85d1fefe3ac1ed405c974a520e2f25259f",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T06:05:03.230Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    10
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    23,
+    42
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    65,
+    86
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    97,
+    113
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    124,
+    142
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    153,
+    159
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    232,
+    240
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    242,
+    248
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    253,
+    260
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    271,
+    280
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 10,
+   "lineas": [
+    282,
+    287
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 10,
+   "lineas": [
+    292,
+    297
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 10,
+   "lineas": [
+    301,
+    304
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 10,
+   "lineas": [
+    309,
+    314
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 11,
+   "lineas": [
+    325,
+    329
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 11,
+   "lineas": [
+    333,
+    349
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 11,
+   "lineas": [
+    353,
+    358
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 12,
+   "lineas": [
+    375,
+    378
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 12,
+   "lineas": [
+    382,
+    386
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 12,
+   "lineas": [
+    388,
+    391
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 12,
+   "lineas": [
+    393,
+    397
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 13,
+   "lineas": [
+    410,
+    412
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 14,
+   "lineas": [
+    421,
+    423
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b12",
+  "b13",
+  "b14"
+ ],
+ "notas_gastos": [
+  "b15",
+  "b16",
+  "b17"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(eurodes)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2025",
+ "columna_anterior": "2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Tulemiaruanne (b4) individual de MTÜ, en euros. b13 detalla annetused como rahaline (mismo total que b12), se incluye como desglose. b17 incluye fila de número medio de empleados (no es importe monetario)."
+}

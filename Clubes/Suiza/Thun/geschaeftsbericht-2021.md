@@ -281,12 +281,14 @@ Seite 10 Seite 11
 
 # ERFOLGSRECHNUNG
 
+Seite 12
+
 | | 2021 01.01.2021 - 31.12.2021 in CHF | 2020 01.01.2020 - 31.12.2020 in CHF |
-| --- | --- | --- |
+|---|---|---|
 | Ertrag Eintrittsgelder | 536'019.41 | 642'813.80 |
 | Ertrag Werbung/Sponsoring | 4'508'859.19 | 5'005'062.66 |
 | Ertrag Übertragungsrechte | 973'736.30 | 1'733'169.71 |
-| Transferertrag | 122'569.22 | 787'655.00 |
+| Transfererträg | 122'569.22 | 787'655.00 |
 | Ertrag aus Ausleihgebühren | 0.00 | 41'500.00 |
 | Ertrag aus Events & Stadionvermietung | 170'782.31 | 95'581.78 |
 | Ertrag Handel | 199'304.90 | 115'030.55 |
@@ -294,14 +296,14 @@ Seite 10 Seite 11
 | Ertrag Amateur-/Jugendfussball | 407'105.40 | 330'647.50 |
 | Sonstiger Ertrag | 102'244.60 | 97'354.30 |
 | Erlösminderungen | -18'238.08 | -25'483.58 |
-| Total Nettoerlös aus Lieferungen und Leistungen | 7'228'399.05 | 8'966'899.82 |
-| Total Materialaufwand | -647'045.02 | -686'043.04 |
-| Bruttogewinn I | 6'581'354.03 | 8'280'856.78 |
+| **Total Nettoerlös aus Lieferungen und Leistungen** | **7'228'399.05** | **8'966'899.82** |
+| **Total Materialaufwand** | **-647'045.02** | **-686'043.04** |
+| **Bruttogewinn I** | **6'581'354.03** | **8'280'856.78** |
 | Löhne und Gehälter | -4'126'512.17 | -4'362'838.50 |
 | Sozialversicherungen | -958'192.80 | -1'249'494.40 |
 | Übriger Personalaufwand | -648'630.92 | -221'244.23 |
-| Total Personalaufwand | -5'733'335.89 | -5'833'577.13 |
-| Bruttogewinn II | 848'018.14 | 2'447'279.65 |
+| **Total Personalaufwand** | **-5'733'335.89** | **-5'833'577.13** |
+| **Bruttogewinn II** | **848'018.14** | **2'447'279.65** |
 | Aufwand Spielbetrieb | -1'124'098.58 | -951'977.94 |
 | Transferaufwand | -78'702.53 | -151'925.00 |
 | Werbeaufwand | -756'826.64 | -906'260.27 |
@@ -309,97 +311,86 @@ Seite 10 Seite 11
 | Mietaufwand | -544'649.14 | -473'512.44 |
 | Aufwand Verwaltung + Unterhalt | -435'013.96 | -653'454.34 |
 | Fahrzeugaufwand / Sonstiges | -86'675.00 | -81'444.62 |
-| Total übriger betrieblicher Aufwand | -3'108'474.27 | -3'254'283.21 |
-| Betriebserfolg (EBITDA) | -2'260'456.13 | -807'003.56 |
+| **Total übriger betrieblicher Aufwand** | **-3'108'474.27** | **-3'254'283.21** |
+| **Betriebserfolg (EBITDA)** | **-2'260'456.13** | **-807'003.56** |
 | Abschreibungen Sachanlagen | -91'279.57 | -87'411.40 |
 | Abschreibungen immaterielle Werte | -498'300.00 | -1'036'948.00 |
-| Total Abschreibungen | -589'579.57 | -1'124'359.40 |
-| Betriebserfolg (EBIT) | -2'850'035.70 | -1'931'362.96 |
+| **Total Abschreibungen** | **-589'579.57** | **-1'124'359.40** |
+| **Betriebserfolg (EBIT)** | **-2'850'035.70** | **-1'931'362.96** |
 | Finanzaufwand | -86'977.49 | -166'705.01 |
 | Finanzertrag | 22.27 | 203.12 |
-| Total Finanzerfolg | -86'955.22 | -166'501.89 |
-| Betriebserfolg (EBT) | -2'936'990.92 | -2'097'864.85 |
-| Total Ausserordentlicher Erfolg | 1'116'005.00 | 615'619.00 |
-| Jahresverlust vor Steuern | -1'820'985.92 | -1'482'245.85 |
-| Total Steuern | -710.05 | -2'210.00 |
-| Jahresverlust | -1'821'695.97 | -1'484'455.85 |
-
-FC THUN AG, Thun
+| **Total Finanzerfolg** | **-86'955.22** | **-166'501.89** |
+| **Betriebserfolg (EBT)** | **-2'936'990.92** | **-2'097'864.85** |
+| **Total Ausserordentlicher Erfolg** | **1'116'005.00** | **615'619.00** |
+| **Jahresverlust vor Steuern** | **-1'820'985.92** | **-1'482'245.85** |
+| **Total Steuern** | **-710.05** | **-2'210.00** |
+| **Jahresverlust** | **-1'821'695.97** | **-1'484'455.85** |
 
 # ANHANG ZUR JAHRESRECHNUNG
 
-### 1. Angaben über die in der Jahresrechnung angewandten Grundsätze
+Seite 13
+
+**1. Angaben über die in der Jahresrechnung angewandten Grundsätze**
 
 Die vorliegende Jahresrechnung wurde gemäss den Vorschriften des Schweizer Gesetzes, insbesondere des 32. Titels des Obligationenrechtes über die kaufmännische Buchführung und Rechnungslegung (Art. 957 bis 962a) erstellt.
 
 Die Rechnungslegung erfordert vom Verwaltungsrat und der Geschäftsleitung Schätzungen und Beurteilungen, welche die Höhe der ausgewiesenen Vermögenswerte und Verbindlichkeiten sowie Eventualverbindlichkeiten im Zeitpunkt der Bilanzierung, aber auch Aufwendungen und Erträge der Berichtsperiode beeinflussen können. Der Verwaltungsrat entscheidet dabei jeweils im eigenen Ermessen über die Ausnutzung der bestehenden gesetzlichen Bewertungs- und Bilanzierungsspielräume. Zum Wohle der Gesellschaft können dabei im Rahmen des Vorsichtsprinzips Abschreibungen, Wertberichtigungen und Rückstellungen über das betriebswirtschaftlich benötigte Ausmass hinaus gebildet werden.
 
-### 2. Erläuterungen zu Positionen der Bilanz und Erfolgsrechnung
+**2. Erläuterungen zu Positionen der Bilanz und Erfolgsrechnung**
 
-#### 2.1 Debitoren
-
+**2.1 Debitoren**
 Sämtliche Forderungen bestehen gegenüber Dritten.
 
-#### 2.2 Warenvorräte
-
+**2.2 Warenvorräte**
 Das Total von TCHF 90 entspricht dem Wert der Materialvorräte des Fanshops per 31.12.2021.
 
-#### 2.3 Aktive Rechnungsabgrenzungen
-
+**2.3 Aktive Rechnungsabgrenzungen**
 Die grössten Positionen resultieren aus bereits verbuchten Verbindlichkeiten für das Geschäftsjahr 2022 (TCHF 205), Taggeldentschädigungen (TCHF 37). J+S-Gelder (TCHF 29). Spendengelder Härzbluet FC Thun (TCHF 57). TV-Gelder CH-Cup (TCHF 25) und offenen Sponsorengeldern (TCHF 63).
 
-#### 2.4 Immaterielle Anlagen
-
+**2.4 Immaterielle Anlagen**
 Die Spielerwerte werden zu Anschaffungskosten aktiviert und über die Vertragslaufzeit respektive maximal 36 Monate abgeschrieben. Die im 2021 getätigten Neuverpflichtungen konnten grösstenteils ablösefrei getätigt werden.
 
-#### 2.5 Passive Rechnungsabgrenzungen
-
+**2.5 Passive Rechnungsabgrenzungen**
 Die grössten Positionen resultieren aus bereits verrechneten Erträgen Werbung/Vermarktung Kalenderjahr 2022 (TCHF 1'553), Saisonkartenerträgen Kalenderjahr 2022 (TCHF 181) und ausstehenden Rechnungen bezüglich Gegengeschäften von Partnerfirmen (TCHF 179). Zudem hat die FC Thun AG im Kalenderjahr 2021 für das Stabilisierungspaket 2021 den Betrag von TCHF 331 erhalten. Zum Zeitpunkt der Revision der Jahresrechnung ist nicht klar, ob dieser Betrag zurückerstattet werden muss (Erfolgsneutrale Verbuchung in der Buchhaltung 2021).
 
-#### 2.6 Verbürgter COVID-19-Kredit
-
+**2.6 Verbürgter COVID-19-Kredit**
 Die Amortisation des zinslosen Überbrückungskredites erfolgt quartalsweise mit CHF 20'833.35, erstmals per 31.03.2022. Die mit der Solidarbürgschaft verbundenen Restriktionen gemäss Art. 6 der COVID-19-Solidaritätsbürgschaftsverordnung werden beachtet.
 
-#### 2.7 Bundesdarlehen
-
+**2.7 Bundesdarlehen**
 Um die wirtschaftlichen Folgen der COVID-19-Pandemie sowie der zur Eindämmung der Pandemie erforderlich gewordenen, vom Schweizerischen Bundesrat getroffenen Massnahmen für den professionellen und semiprofessionellen Sport in der Schweiz abzufedern, hat die Schweizerische Bundesversammlung in Art. 13 des Covid-19-Gesetzes die Grundlage dafür geschaffen, dass der Bund die entsprechenden Klubs - mit zinslosen Darlehen - unterstützen kann.
+
 Die FC Thun AG hat diese Option wahrgenommen und im Geschäftsjahr 2021 ein Darlehen in der Höhe von TCHF 2'500 erhalten. Dieses Darlehen wird über eine Vertragsdauer bis 31.12.2030 gewährt.
+
 Das Darlehen ist in jährlichen Raten von jeweils CHF 312'500 beginnend ab 31.12.2023 zurückzuzahlen.
 
-#### 2.8 Ausserordentlicher Ertrag
-
+**2.8 Ausserordentlicher Ertrag**
 Der ausserordentliche Erfolg von TCHF 1'116 entspricht dem finanziellen Beitrag aus dem Stabilisierungspaket 2020 sowie den A-Fonds-perdu-Beiträgen des Bundes. Die Gelder aus dem Stabilisierungspaket sind für die Unterstützung des Nachwuchssportes vorgesehen. Die A-Fonds-perdu-Beiträge sind für die Ausfälle der Ticketingeinnahmen respektive deren Deckung bestimmt.
 
-#### 2.9 Unternehmensfortführung
-
+**2.9 Unternehmensfortführung**
 Infolge wirtschaftlicher Auswirkungen der COVID-19-Pandemie und den finanziellen Nachwirkungen des Abstiegs in die Challenge League auf die Saison 2020/21 musste im Geschäftsjahr 2021, wie bereits im Vorjahr, ein hoher Verlust hingenommen werden. Die sich daraus ergebende Überschuldung konnte mit Rangrücktritten auf Passivdarlehen mehr als abgedeckt werden. Der Verwaltungsrat hat für das Geschäftsjahr 2022 verschiedene Sanierungsmassnahmen festgelegt um die Ertragslage zu verbesseren, den Betriebsaufwand zu reduzieren und die Kapitalbasis zu stärken. Aufgrund der eingeleiteten Massnahmen ist der Verwaltungsrat überzeugt, dass die Unternehmensfortführung sichergestellt werden kann.
 
+*(Ausschnitt am Seitenende, nur teilweise lesbar)*
+
 | | 31.12.2021 in CHF | 31.12.2020 in CHF |
-| --- | --- | --- |
+|---|---|---|
 | **2.10 Fälligkeit langfristige verzinsliche Verbindlichkeiten** | | |
-| fällig innerhalb von 1 bis 5 Jahren | 900'000.00 | 900'000.00 |
+| fällig innerhalb von 1 bis 5 Jahren | [ilegible] | [ilegible] |
 | **2.11 Eigene Aktien** | | |
-| **Bestand eigene Aktien (Namenaktien)** | | |
-| Bestand eigene Aktien Vorperiode - nominal | 15'430.00 | 15'570.00 |
-| Bestand 31.12.2020 (Stück 1'543) | | |
-| Käufe 01.01.2021 - 31.12.2021 (Stück 0) | 0.00 | 1'000.00 |
-| Rücknahmen 01.01.2021 - 31.12.2021 (Stück 0) | 0.00 | 50.00 |
-| Verkäufe 01.01.2021 - 31.12.2021 (Stück 2) | -20.00 | -1'190.00 |
-| Umwandlung Inhaberaktien (Stück 1'200) | 12'000.00 | 0.00 |
-| **Bestand 31.12.2021 (Stück 2'741)** | 27'410.00 | 15'430.00 |
-| **Bestand eigene Aktien (Inhaberaktien)** | | |
-| Bestand 31.12.2021 = 0 / Bestand 31.12.2020 = 6'000 | 0.00 | 12'000.00 |
-| (Umwandlung Inhaberaktien in Namenaktien im 2021) | | |
-| **Bestand eigene Aktien (Nennwert) in % Nominalkapital** | 22.8 % | 22.9 % |
-| **3. Weitere Angaben** | | |
+| Bestand eigene Aktien (Namenaktien) | | |
+| Bestand eigene Aktien Vorperiode - nominal | | |
+| Bestand 31.12.2020 | [ilegible] | [ilegible] |
+| Käufe 01.01.2021 - 31.12.2021 | [ilegible] | [ilegible] |
+| Rücknahmen 01.01.2021 - 31.12.2021 | [ilegible] | [ilegible] |
+| Verkäufe 01.01.2021 - 31.12.2021 | [ilegible] | [ilegible] |
+| Umwandlung Inhaberaktien | [ilegible] | [ilegible] |
+| Bestand 31.12.2021 | [ilegible] | [ilegible] |
+| Bestand eigene Aktien (Inhaberaktien) | [ilegible] | [ilegible] |
+| Bestand eigene Aktien (Nennwert) in % Nominalkapital | [ilegible] | [ilegible] |
+| **Weitere Angaben** | | |
 | 3.1 Anzahl Mitarbeiter: Anzahl Vollzeitstellen im Jahresdurchschnitt | unter 250 | unter 250 |
-| 3.2 Honorar der Revisionsstelle: Revisionsdienstleistungen | 11'160.00 | 11'505.00 |
-| 3.2 Honorar der Revisionsstelle: andere Dienstleistungen | 12'615.00 | 14'140.00 |
-| 3.3 Vergütungen an Agenten und Vermittler: Vergütungen an Agenten und Vermittler | 77'000.00 | 128'500.00 |
-
-FC THUN AG, Thun
-
-Seite 12 Seite 13
+| 3.2 Honorar der Revisionsstelle: Revisionsdienstleistungen | [ilegible] | [ilegible] |
+| andere Dienstleistungen | [ilegible] | [ilegible] |
+| 3.3 Vergütungen an Agenten und Vermittler | [ilegible] | [ilegible] |
 
 --- pág. 8 ---
 

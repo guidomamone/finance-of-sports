@@ -7,7 +7,7 @@ Estado de Situacion Financiera Comparativo al 31 de Diciembre de 2020
 
 | ACTIVO | Nota | 31-dic.-20 | 31-dic.-19 | Var Relativa | PASIVO | Nota | 31-dic.-20 | 31-dic.-19 | Var Relativa |
 | :--- | :---: | :---: | :---: | :---: | :--- | :---: | :---: | :---: | :---: |
-| **ACTIVO CORRIENTE** | | **3.696.862.454** | **2.790.243.357** | **32,5%** | **PASIVO CORRIENTE** | | **1.411.680.471** | **606.951.353** | **133,7%** |
+| **ACTIVO CORRIENTE** | | **3.696.862.454** | **2.790.243.357** | **32,5%** | **PASIVO CORRIENTE** | | **1.418.680.471** | **606.951.353** | **133,7%** |
 | EFECTIVO Y EQUIVALENTES AL EFECTIVO | 1 | 496.445.180 | 0 | | OBLIGACIONES FINANCIERAS | 8 | 611.584.363 | 0 | |
 | CUENTAS POR COBRAR COMERCIALES | 2 | 110.570.479 | 17.250.000 | 100,0% | ACREEDORES COMERCIALES | 9 | 3.828.822 | 4.960.000 | 100,0% |
 | OTRAS CUENTAS POR COBRAR | 3 | 2.957.004.087 | 2.772.993.357 | 6,6% | OTROS ACREEDORES | 10 | 35.810.657 | 31.535.000 | 100,0% |
@@ -284,64 +284,66 @@ Los anticipos por impuestos se reflejarán en las cuentas por cobrar como un ant
 
 --- pág. 7 ---
 
-NOTA 5: Propiedad planta y equipo
+**NOTA 5: Propiedad planta y equipo**
 
-El Club Deportivo Boyaca Chico, reconocerá dentro de sus estados financieros un activo fijo si es probable que los beneficios economicos futuros asociados con la partida, fluirán a la sociedad y el costo de la partida pueden ser medidos confiablemente. El activo será reconocido al costo equivalente al efectivo desembolsado; y el monto minimo para reconocerlo sera de 2 S.M.LV. De acuerdo a la politica contable se efectuará la medición posterior de sus activos por dos métodos: Costo Histórico: el cual medira la maquinaria y equipo (Equipo de oficina, equipo de computo, flota y equipo de transporte y componentes), dado que los precios de mercado no presentan fluctuaciones significativas y tienen un mercado de facil acceso para su enajenacion; Por el Valor Razonable se mediran los terrenos: dado que no se encuentran sujetos a depreciacion y generalmente los precios de las finca raiz presentan comportamiento ascendentes, igualmente con las edificaciones, puesto que son susceptibles de adquirir un mayor valor.
+El Club Deportivo Boyaca Chico, reconocerá dentro de sus estados financieros un activo fijo si es probable que los beneficios económicos futuros asociados con la partida, fluirán a la sociedad y el costo de la partida pueden ser medidos confiablemente. El activo será reconocido al costo equivalente al efectivo desembolsado, y el monto mínimo para reconocerlo sera de 2 S.M.LV. De acuerdo a la politica contable se efectuara la medición posterior de sus activos por dos métodos: Costo Histórico: el cual medira la maquinaria y equipo (Equipo de oficina, equipo de computo, flota y equipo de transporte y componentes), dado que los precios de mercado no presentan fluctuaciones significativas y tienen un mercado de facil acceso para su enajenacion. Por el Valor Razonable se mediran los terrenos: dado que no se encuentran sujetos a depreciacion y generalmente los precios de las finca raíz presentan comportamiento ascendentes, igualmente con las edificaciones, puesto que son susceptibles de adquirir un mayor valor.
 
 La composicion de los activos fijos de la empresa es:
 
 | | 31-dic.-20 | 31-dic.-19 |
 | :--- | :---: | :---: |
-| Terrenos | $ 110.661.316 | $ 110.661.316 |
+| Terrenos | $ 110.661.318 | $ 110.661.318 |
 | Maquinaria y Equipo | $ 2.701.300 | $ 2.701.300 |
 | Equipo de oficina | $ 20.008.126 | $ 20.008.126 |
-| Equipo de computación y comunicaciones | $ 6.992.830 | $ 6.992.830 |
+| Equipo de computación y comunicaciones | $ 8.992.830 | $ 8.992.830 |
 | Flota y Equipo de Transporte | $ 160.966.999 | $ 160.966.999 |
 | Acueducto Plantas y Redes | $ 2.201.681 | $ 2.201.681 |
-| Depreciacion acumulada | ($ 126.933.796) | ($ 111.001.935) |
-| **Total..........................** | **$ 176.598.456** | **$ 194.530.319** |
+| Depreciacion acumulada | ($ 128.933.798) | ($ 111.001.935) |
+| **Total..........** | **$ 176.598.456** | **$ 194.530.319** |
 
-NOTA 6: Intangibles
+**NOTAS 6: Intangibles**
 
-La sociedad reconocera un activo intangible solo si es probable obtener beneficios futuros; su costo o valor puede ser medido con fiabilidad;
+La sociedad reconocera un activo intangible solo si es probable obtener beneficios futuros, su costo o valor puede ser medido con fiabilidad.
 
-Medicion Posterior: se medirán los activos intangibles despues de su reconocimiento inicial, al costo menos cualquier amortizacion acumulada y pérdida por deterioro de valor, según lo estipulado en la seccion 18.  
-Se reconocera la vida útil de un activo intangible como finita, si no se puede realizar la estimacion fiable de la vida útil, se supondra que esta sera de 10 años; Se iniciara la amortizacion del activo cuando se encuentre en las condiciones necesarias para ser usado y finalizar cuando se de de baja.
+Medicion Posterior: se medirán los activos intangibles despues de su reconocimiento inicial, al costo menos cualquier amortizacion acumulada y perdida por deterioro de valor, según lo estipulado en la seccion 18.
 
-El método de amortización, será el de línea recta, el cual se prevé reflejará el consumo de beneficios economicos futuros, que se deriven de los activos intangibles.
+Se reconocera la vida útil de un activo intangible como finita, si no se puede realizar la estimacion fiable de la vida útil, se supondra que esta sera de 10 años. Se iniciara la amortizacion del activo cuando se encuentre en las condiciones necesarias para ser usado y finalizar cuando se da de baja.
+
+El método de amortización, será el de línea recta, el cual se prevé reflejara el consumo de beneficios economicos futuros, que se deriven de los activos intangibles.
 
 | | 31-dic.-20 | 31-dic.-19 |
 | :--- | :---: | :---: |
 | Derechos Deportivos * | $ 1.012.447.200 | $ 1.181.188.400 |
-| **Total..........................** | **$ 1.012.447.200** | **$ 1.181.188.400** |
+| **Total** | **$ 1.012.447.200** | **$ 1.181.188.400** |
 
 *Valor que se amortiza con respecto al valor de los derechos de portivos de la plantilla de jugadores profesionales
 
-NOTAS 7: Otros Activos
+**NOTAS 7: Otros Activos**
 
 | | 31-dic.-20 | 31-dic.-19 |
 | :--- | :---: | :---: |
 | Otros activos diversos | $ 67.345.000 | $ 67.345.000 |
-| **Total..........................** | **$ 67.345.000** | **$ 67.345.000** |
+| **Total..........** | **$ 67.345.000** | **$ 67.345.000** |
 
-NOTA 8: Obligaciones financieras
+**NOTA 8: Obligaciones financieras**
 
-La sociedad medira un pasivo financiero al valor razonable:  
-La sociedad adquirio una obligacion financiera con el Banco Colpatria a 4 años, para fortalecimiento institucional y construccion de la sede deportiva en el Municipio de Soraca (Boyaca) por medio de la Division Mayor de Futbol Colombiano (DIMAYOR), durante el año 2017 por valor de $ 1.300.000.000 para atender la operatividad de la empresa, por las mismas razones se adquirio un nuevo crédito con la misma entidad en el mes de diciembre de 2018, por valor de $ 900.000.000, y prestamos a facturas por derechos de TV por lo anterior los saldos respectivos a las obligaciones al finalizar el periodo fiscal es:
+La sociedad medira un pasivo financiero al valor razonable.
+
+La sociedad adquirio una obligacion financiera con el Banco Colpatria a 4 años, para fortalecimiento institucional y construccion de la sede deportiva en el Municipio de Soraca (Boyaca) por medio de la Division Mayor De Futbol Colombiano (DIMAYOR), durante el año 2017 por valor de $ 1.300.000.000 para atender la operatividad de la empresa, por las mismas razones se adquirio un nuevo crédito con la misma entidad en el mes de diciembre de 2018, por valor de $ 900.000.000, y prestamos a facturas por derechos de TV por lo anterior los saldos respectivos a las obligaciones al finalizar el periodo fiscal es:
 
 | | 31-dic.-20 | 31-dic.-19 |
 | :--- | :---: | :---: |
 | Prestamos Bancarios - Dimayor | $ 1.109.222.287 | $ 1.398.829.775 |
 | Prestamos Derechos de TV | $ 611.584.363 | $ 0 |
-| **Total..........................** | **$ 1.720.786.650** | **$ 1.398.829.775** |
+| **Total..........** | **$ 1.720.786.650** | **$ 1.398.829.775** |
 
-NOTA 9: Acreedores comerciales
+**NOTA 9: Acreedores comerciales**
 
 | | 31-dic.-20 | 31-dic.-19 |
 | :--- | :---: | :---: |
 | Nacionales | $ 3.828.822 | $ 4.960.000 |
 | Del exterior | $ 0 | $ 0 |
-| **Total..........................** | **$ 3.828.822** | **$ 4.960.000** |
+| **Total..........** | **$ 3.828.822** | **$ 4.960.000** |
 
 --- pág. 8 ---
 

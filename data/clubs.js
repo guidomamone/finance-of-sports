@@ -262,6 +262,23 @@ const clubs = {
   'casapia-pt': { id:'casapia-pt', name:'Casa Pia', displayName:'Casa Pia', country:'PT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#000000' },
   'mafra-pt': { id:'mafra-pt', name:'Clube Desportivo de Mafra – Futebol, SAD', displayName:'Mafra', country:'PT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#008000' },
   'avs-pt': { id:'avs-pt', name:'AVS', displayName:'AVS', country:'PT', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FF0000' },
+  'floratallinn-ee': { id:'floratallinn-ee', name:'Jalgpalliklubi FCF', displayName:'Flora Tallinn', country:'EE', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#008000' },
+  'harjujklaagri-ee': { id:'harjujklaagri-ee', name:'MTÜ Harju Jalgpalliklubi Laagri', displayName:'Harju JK Laagri', country:'EE', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#EF0000' },
+  'kuressaare-ee': { id:'kuressaare-ee', name:'Jalgpalliklubi FC Kuressaare', displayName:'Kuressaare', country:'EE', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#F7D64E' },
+  'nommekalju-ee': { id:'nommekalju-ee', name:'Mittetulundusühing Nõmme Kalju FC', displayName:'Nõmme Kalju', country:'EE', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#000000' },
+  'tartutammeka-ee': { id:'tartutammeka-ee', name:'Mittetulundusühing Jalgpallikool Tammeka', displayName:'Tartu Tammeka', country:'EE', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#002FE0' },
+  'liersesk-be': { id:'liersesk-be', name:'Lierse SK', displayName:'Lierse SK', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FFDD00' },
+  'lokerentemse-be': { id:'lokerentemse-be', name:'Koninklijke Sporting Club Lokeren - Temse VZW', displayName:'Lokeren-Temse', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
+  'lommelsk-be': { id:'lommelsk-be', name:'Voetbalclub Lommel SK NV', displayName:'Lommel SK', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#009150' },
+  'ohleuven-be': { id:'ohleuven-be', name:'OH Leuven CV', displayName:'OH Leuven', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:null },
+  'patroeisden-be': { id:'patroeisden-be', name:'Patro Eisden Maasmechelen VZW', displayName:'Patro Eisden', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#660099' },
+  'rwdm-be': { id:'rwdm-be', name:'RWDM', displayName:'RWDM', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#FF0000' },
+  'fcilevadia-ee': { id:'fcilevadia-ee', name:'FCI Levadia MTÜ', displayName:'FCI Levadia', country:'EE', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#008100' },
+  'narvatrans-ee': { id:'narvatrans-ee', name:'Jalgpalliklubi Narva Trans', displayName:'Narva Trans', country:'EE', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#EC152F' },
+  'paidelinnameeskond-ee': { id:'paidelinnameeskond-ee', name:'Jalgpalliklubi Paide Linnameeskond', displayName:'Paide Linnameeskond', country:'EE', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#001C4C' },
+  'tallinnakalev-ee': { id:'tallinnakalev-ee', name:'Jalgpalliklubi Tallinna Kalev', displayName:'Tallinna Kalev', country:'EE', reportingCurrency:'EUR', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#000000' },
+  'beerschot-be': { id:'beerschot-be', name:'Beerschot', displayName:'Beerschot', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#6104D2' },
+  'raallalouviere-be': { id:'raallalouviere-be', name:'RAAL La Louvière SC', displayName:'RAAL La Louvière', country:'BE', reportingCurrency:'EUR', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#009150' },
 };
 
 // Source: de dónde sale cada número; `reliability` es lo que distingue dato oficial, de prensa o placeholder.

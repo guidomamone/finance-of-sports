@@ -1,0 +1,223 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-18T13:54:21.076Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "-293.069",
+   "linea": 201,
+   "etiqueta": "Recurrente financiële kosten",
+   "lado": "financiero",
+   "reemplaza": "Recurrente financiële kosten",
+   "motivo": "costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "92.871",
+   "linea": 190,
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "reemplaza": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "motivo": "la nota separa el 630 (252.396): los inmateriales son transferencias de jugadores (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "motivo": "la nota separa el 630 (252.396): los inmateriales son transferencias de jugadores (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "159.525",
+   "linea": 190,
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "la nota separa el 630 (252.396): los inmateriales son transferencias de jugadores (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "categoria",
+   "valor": "depreciation",
+   "linea": null,
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "motivo": "la nota separa el 630 (252.396): los inmateriales son transferencias de jugadores (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)",
+   "dif": 0.0022029999999970684
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "ajuste manual: fila \"Recurrente financiële kosten\" (financiero) -293.069, en lugar de \"Recurrente financiële kosten\" (2026-10-18, costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "ajuste manual: fila \"Afschrijvingen immateriële vaste activa (spelers)\" (gasto) 92.871, en lugar de \"Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa\" (2026-10-18, la nota separa el 630 (252.396): los inmateriales son transferencias de jugadores (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "ajuste manual: fila \"Afschrijvingen materiële vaste activa\" (gasto) 159.525 (2026-10-18, la nota separa el 630 (252.396): los inmateriales son transferencias de jugadores (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "duda de localizar que no afecta la carga: b23 repite gastos de personal por tipo de jornada, sin abrir categorías del estado.",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 1.842818,
+  "gastos": 6.557502,
+  "financiero": 10.685877,
+  "impuesto": 0.027259,
+  "resultadoImpreso": 5.946137,
+  "resultadoParaCargar": 5.946137,
+  "resultadoFinal": null,
+  "lecturaSignos": "impuesto invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Brutomarge (+)/(-)",
+   "lado": "ingreso",
+   "M": 1.841008,
+   "pagina": 5,
+   "linea": 184,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Waarvan: niet-recurrente bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "M": 0.00181,
+   "pagina": 5,
+   "linea": 185,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "gasto",
+   "M": 6.166674,
+   "pagina": 5,
+   "linea": 189,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "gasto",
+   "M": 0.002006,
+   "pagina": 5,
+   "linea": 191,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 5,
+   "linea": 192,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andere bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.092926,
+   "pagina": 5,
+   "linea": 193,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.0435,
+   "pagina": 5,
+   "linea": 195,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "M": 0.092871,
+   "pagina": 5,
+   "linea": 190,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.159525,
+   "pagina": 5,
+   "linea": 190,
+   "origen": "ajuste manual"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "M": 0.128946,
+   "linea": 198
+  },
+  {
+   "etiqueta": "Niet-recurrente financiële opbrengsten",
+   "M": 10.85,
+   "linea": 199
+  },
+  {
+   "etiqueta": "Recurrente financiële kosten",
+   "M": -0.293069,
+   "linea": 201
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen op het resultaat (+)/(-)",
+   "M": -0.027259,
+   "linea": 206
+  }
+ ]
+}

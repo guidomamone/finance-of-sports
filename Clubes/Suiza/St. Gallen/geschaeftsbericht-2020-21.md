@@ -853,15 +853,22 @@ Beträge in CHF 1’000
 
 --- pág. 13 ---
 
-FC St.Gallen AG
-Zürcher Strasse 464
-9015 St.Gallen
-T: +41 71 314 14 14
+GRÜEWISS IM HERZ FCSG 1879 ST. GALLEN
 
-FC St.Gallen Event AG
-Zürcher Strasse 464
-9015 St.Gallen
-T: +41 71 314 14 14
+**FC St.Gallen AG**  
+Zürcher Strasse 464  
+9015 St.Gallen  
+T: +41 71 314 14 14  
 
-info@fcsg.ch
-www.fcsg.ch
+**FC St.Gallen Event AG**  
+Zürcher Strasse 464  
+9015 St.Gallen  
+T: +41 71 314 14 14  
+
+info@fcsg.ch  
+www.fcsg.ch  
+
+---
+
+St.Galler Kantonalbank | kybun Switzerland | Schützengarten | JAKO | ZIMA | GNG | mettler2invest | BERIT KLINIK
+

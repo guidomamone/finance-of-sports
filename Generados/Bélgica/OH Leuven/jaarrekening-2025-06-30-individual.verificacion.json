@@ -1,0 +1,304 @@
+{
+ "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-18T13:54:21.006Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "-1.000.850",
+   "linea": 494,
+   "etiqueta": "Kosten van schulden",
+   "lado": "financiero",
+   "reemplaza": "Kosten van schulden",
+   "motivo": "costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "-1.985",
+   "linea": 496,
+   "etiqueta": "Andere financiële kosten",
+   "lado": "financiero",
+   "reemplaza": "Andere financiële kosten",
+   "motivo": "costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "4.196.505",
+   "linea": 468,
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "reemplaza": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "motivo": "la nota separa el 630 (4.957.136): intangibles = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "motivo": "la nota separa el 630 (4.957.136): intangibles = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "760.631",
+   "linea": 468,
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "la nota separa el 630 (4.957.136): intangibles = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "categoria",
+   "valor": "depreciation",
+   "linea": null,
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "motivo": "la nota separa el 630 (4.957.136): intangibles = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "42.316788 = 42.316789",
+   "suma": 42.316787999999995,
+   "impreso": 42.316789
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "47.707468 = 47.707467",
+   "suma": 47.707468,
+   "impreso": 47.707467
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)",
+   "dif": 0.0000010000000036924916
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Niet-recurrente bedrijfskosten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "ajuste manual: fila \"Kosten van schulden\" (financiero) -1.000.850, en lugar de \"Kosten van schulden\" (2026-10-18, costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "ajuste manual: fila \"Andere financiële kosten\" (financiero) -1.985, en lugar de \"Andere financiële kosten\" (2026-10-18, costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "ajuste manual: fila \"Afschrijvingen immateriële vaste activa (spelers)\" (gasto) 4.196.505, en lugar de \"Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa\" (2026-10-18, la nota separa el 630 (4.957.136): intangibles = spelers (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "ajuste manual: fila \"Afschrijvingen materiële vaste activa\" (gasto) 760.631 (2026-10-18, la nota separa el 630 (4.957.136): intangibles = spelers (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar que no afecta la carga: b79 es una versión condensada del mismo estado de resultados 30/06/2025, solo con la columna del ejercicio.",
+  "duda de localizar ya contestada para el club (fila-ilegible, \"Omzet\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
+  "duda de localizar ya contestada para el club (fila-ilegible, \"Andere financiële opbrengsten\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Andere financiële opbrengsten\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Bezoldigingen, sociale lasten en pensioenen\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 42.316788,
+  "gastos": 47.707468,
+  "financiero": -0.936107,
+  "impuesto": 0.207954,
+  "resultadoImpreso": -6.53474,
+  "resultadoParaCargar": -6.53474,
+  "resultadoFinal": null,
+  "lecturaSignos": "impuesto invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Omzet",
+   "lado": "ingreso",
+   "M": 34.487424,
+   "pagina": 9,
+   "linea": 457,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andere bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "M": 7.637273,
+   "pagina": 9,
+   "linea": 460,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Niet-recurrente bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "M": 0.192091,
+   "pagina": 9,
+   "linea": 461,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aankopen",
+   "lado": "gasto",
+   "M": 1.52052,
+   "pagina": 9,
+   "linea": 464,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Voorraad: afname (toename)",
+   "lado": "gasto",
+   "M": 0.006668,
+   "pagina": 9,
+   "linea": 465,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Diensten en diverse goederen",
+   "lado": "gasto",
+   "M": 13.036915,
+   "pagina": 9,
+   "linea": 466,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "620",
+   "lado": "gasto",
+   "M": 22.959673,
+   "pagina": 24,
+   "linea": 1527,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\""
+  },
+  {
+   "etiqueta": "621",
+   "lado": "gasto",
+   "M": 2.928919,
+   "pagina": 24,
+   "linea": 1528,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\""
+  },
+  {
+   "etiqueta": "623",
+   "lado": "gasto",
+   "M": 0.76072,
+   "pagina": 24,
+   "linea": 1530,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\""
+  },
+  {
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)",
+   "lado": "gasto",
+   "M": -0.004378,
+   "pagina": 9,
+   "linea": 469,
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
+  },
+  {
+   "etiqueta": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen)",
+   "lado": "gasto",
+   "M": -0.316581,
+   "pagina": 9,
+   "linea": 470,
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
+  },
+  {
+   "etiqueta": "Andere bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.716869,
+   "pagina": 9,
+   "linea": 471,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "lado": "gasto",
+   "M": 1.141007,
+   "pagina": 9,
+   "linea": 473,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "M": 4.196505,
+   "pagina": 9,
+   "linea": 468,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.760631,
+   "pagina": 9,
+   "linea": 468,
+   "origen": "ajuste manual"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Andere financiële opbrengsten",
+   "M": 0.066728,
+   "linea": 490
+  },
+  {
+   "etiqueta": "Kosten van schulden",
+   "M": -1.00085,
+   "linea": 494
+  },
+  {
+   "etiqueta": "Andere financiële kosten",
+   "M": -0.001985,
+   "linea": 496
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen",
+   "M": -0.207954,
+   "linea": 502
+  }
+ ]
+}

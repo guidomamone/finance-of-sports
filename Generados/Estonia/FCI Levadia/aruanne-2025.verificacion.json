@@ -1,0 +1,406 @@
+{
+ "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2025.pdf",
+ "md": "Clubes/Estonia/FCI Levadia/aruanne-2025.md",
+ "generado": "2026-10-18T14:04:47.550Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2025.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne 01.01-31.12.2025 con tulemiaruanne (L142-177) (revisión del alta, subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2025.pdf",
+   "campo": "fila",
+   "valor": "-279.290",
+   "linea": 172,
+   "etiqueta": "Finantskulud",
+   "lado": "financiero",
+   "reemplaza": "Finantskulud",
+   "motivo": "costo financiero del consolidado (L172): resta; 2.675.678 - 3.624.036 + 8.037 - 279.290 = -1.219.611 impreso (L173) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "2.675678 = 2.675678",
+   "suma": 2.6756779999999996,
+   "impreso": 2.675678
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "3.624036 = 3.624036",
+   "suma": 3.624036,
+   "impreso": 3.624036
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 2.220446049250313e-16
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+  }
+ ],
+ "notas": [
+  "ajuste manual: fila \"Finantskulud\" (financiero) -279.290, en lugar de \"Finantskulud\" (2026-10-18, costo financiero del consolidado (L172): resta; 2.675.678 - 3.624.036 + 8.037 - 279.290 = -1.219.611 impreso (L173) (Claude 2026-10-18))",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): corregir consolidado, en aruanne-2025.pdf",
+  "duda de localizar que no afecta la carga: b15 solo indica que las donaciones son en dinero, sin nuevo desglose.",
+  "duda de extraer que no afecta la carga: LISA 10 repite L157 y L161 y agrupa los sotsiaalmaks (462 994 = 116 593 + 346 401); su total 1 833 082 no corresponde a ningún renglón del estado porque excluye sportlasetoetus y stipendiumid."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 2.675678,
+  "gastos": 3.624036,
+  "financiero": -0.271253,
+  "impuesto": 0,
+  "resultadoImpreso": -1.219611,
+  "resultadoParaCargar": -1.219611,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Piletitulu Eesti-siseste võistlustustel",
+   "lado": "ingreso",
+   "M": 0.018498,
+   "pagina": 12,
+   "linea": 415,
+   "origen": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\""
+  },
+  {
+   "etiqueta": "Piletitulu UEFA klubisarjades osalemisest",
+   "lado": "ingreso",
+   "M": 0.035304,
+   "pagina": 12,
+   "linea": 416,
+   "origen": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\""
+  },
+  {
+   "etiqueta": "Hooajapiletite müügitulu",
+   "lado": "ingreso",
+   "M": 0.00115,
+   "pagina": 12,
+   "linea": 417,
+   "origen": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\""
+  },
+  {
+   "etiqueta": "Reklaamitulu",
+   "lado": "ingreso",
+   "M": 0.265208,
+   "pagina": 12,
+   "linea": 418,
+   "origen": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\""
+  },
+  {
+   "etiqueta": "Tulu ülekandeõiguste müügist",
+   "lado": "ingreso",
+   "M": 0.014,
+   "pagina": 12,
+   "linea": 419,
+   "origen": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\""
+  },
+  {
+   "etiqueta": "Klubi sümboolikaga toodete müügitulu",
+   "lado": "ingreso",
+   "M": 0.006751,
+   "pagina": 12,
+   "linea": 420,
+   "origen": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\""
+  },
+  {
+   "etiqueta": "Staadioni rent",
+   "lado": "ingreso",
+   "M": 0.013416,
+   "pagina": 12,
+   "linea": 421,
+   "origen": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\""
+  },
+  {
+   "etiqueta": "Muud tulud",
+   "lado": "ingreso",
+   "M": 0.00496,
+   "pagina": 12,
+   "linea": 423,
+   "origen": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\""
+  },
+  {
+   "etiqueta": "Tulu mängijate üleminekutest klubist välja",
+   "lado": "ingreso",
+   "M": 0.075136,
+   "pagina": 5,
+   "linea": 148,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "UEFA toetused",
+   "lado": "ingreso",
+   "M": 1.119198,
+   "pagina": 12,
+   "linea": 393,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Riigi ja/või KOV toetused",
+   "lado": "ingreso",
+   "M": 0.141954,
+   "pagina": 12,
+   "linea": 394,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Toetus kogukonnajuht",
+   "lado": "ingreso",
+   "M": 0.00864,
+   "pagina": 12,
+   "linea": 395,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Riiklik treenerite tööjōukulude toetus",
+   "lado": "ingreso",
+   "M": 0.073752,
+   "pagina": 12,
+   "linea": 397,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "EJL toetused",
+   "lado": "ingreso",
+   "M": 0.050925,
+   "pagina": 12,
+   "linea": 398,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Seotud osapoolte toetused/annetused",
+   "lado": "ingreso",
+   "M": 0.2535,
+   "pagina": 12,
+   "linea": 400,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Mitteseotud osapoolte toetused/annetused",
+   "lado": "ingreso",
+   "M": 0.018108,
+   "pagina": 12,
+   "linea": 401,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Noormängijate osavõtutasud",
+   "lado": "ingreso",
+   "M": 0.575148,
+   "pagina": 5,
+   "linea": 151,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Tulu liikmemaksudest",
+   "lado": "ingreso",
+   "M": 0.00003,
+   "pagina": 5,
+   "linea": 152,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Mängijate palgakulu",
+   "lado": "gasto",
+   "M": 0.344085,
+   "pagina": 5,
+   "linea": 157,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sotsiaalmaks mängijate töötasudelt",
+   "lado": "gasto",
+   "M": 0.116593,
+   "pagina": 5,
+   "linea": 158,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Mängijatele makstav sportlasetoetus",
+   "lado": "gasto",
+   "M": 0.422455,
+   "pagina": 5,
+   "linea": 159,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Mängijatele makstud stipendiumid",
+   "lado": "gasto",
+   "M": 0.0554,
+   "pagina": 5,
+   "linea": 160,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Muu personali palgakulu",
+   "lado": "gasto",
+   "M": 1.026003,
+   "pagina": 5,
+   "linea": 161,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sotsiaalmaks muu personali töötasudelt",
+   "lado": "gasto",
+   "M": 0.346401,
+   "pagina": 5,
+   "linea": 162,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Kulutused turvalisusele",
+   "lado": "gasto",
+   "M": 0.030277,
+   "pagina": 12,
+   "linea": 431,
+   "origen": "nota que desglosa \"Tegevuskulud\""
+  },
+  {
+   "etiqueta": "Trükised jm materjalid",
+   "lado": "gasto",
+   "M": 0.010105,
+   "pagina": 12,
+   "linea": 432,
+   "origen": "nota que desglosa \"Tegevuskulud\""
+  },
+  {
+   "etiqueta": "Muud klassifitseerimata kodumängu korralduskulud",
+   "lado": "gasto",
+   "M": 0.034304,
+   "pagina": 12,
+   "linea": 433,
+   "origen": "nota que desglosa \"Tegevuskulud\""
+  },
+  {
+   "etiqueta": "Eesti meistrivōistluste osavōtutasu",
+   "lado": "gasto",
+   "M": 0.01274,
+   "pagina": 12,
+   "linea": 434,
+   "origen": "nota que desglosa \"Tegevuskulud\""
+  },
+  {
+   "etiqueta": "Lähetuskulud",
+   "lado": "gasto",
+   "M": 0.430603,
+   "pagina": 12,
+   "linea": 435,
+   "origen": "nota que desglosa \"Tegevuskulud\""
+  },
+  {
+   "etiqueta": "Turundus-, sponsorlus- ja reklaamikulud",
+   "lado": "gasto",
+   "M": 0.008768,
+   "pagina": 12,
+   "linea": 436,
+   "origen": "nota que desglosa \"Tegevuskulud\""
+  },
+  {
+   "etiqueta": "Klubisümboolikaga toodete omahind",
+   "lado": "gasto",
+   "M": 0.01079,
+   "pagina": 12,
+   "linea": 437,
+   "origen": "nota que desglosa \"Tegevuskulud\""
+  },
+  {
+   "etiqueta": "Klubile kuuluvate ja tema poolt renditud hoonete ja rajatisega seotud kulud",
+   "lado": "gasto",
+   "M": 0.178571,
+   "pagina": 12,
+   "linea": 438,
+   "origen": "nota que desglosa \"Tegevuskulud\""
+  },
+  {
+   "etiqueta": "Klubi administeerimiskulud",
+   "lado": "gasto",
+   "M": 0.049258,
+   "pagina": 12,
+   "linea": 439,
+   "origen": "nota que desglosa \"Tegevuskulud\""
+  },
+  {
+   "etiqueta": "Muud tegevuskulud",
+   "lado": "gasto",
+   "M": 0.307809,
+   "pagina": 12,
+   "linea": 441,
+   "origen": "nota que desglosa \"Tegevuskulud\""
+  },
+  {
+   "etiqueta": "Kulu mängijate üleminekutest klubisse",
+   "lado": "gasto",
+   "M": 0.104323,
+   "pagina": 5,
+   "linea": 166,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Pōhivara kulum",
+   "lado": "gasto",
+   "M": 0.135535,
+   "pagina": 5,
+   "linea": 168,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Ärikulud",
+   "lado": "gasto",
+   "M": 0.000016,
+   "pagina": 5,
+   "linea": 169,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finantstulud",
+   "M": 0.008037,
+   "linea": 171
+  },
+  {
+   "etiqueta": "Finantskulud",
+   "M": -0.27929,
+   "linea": 172
+  }
+ ],
+ "impuesto": []
+}

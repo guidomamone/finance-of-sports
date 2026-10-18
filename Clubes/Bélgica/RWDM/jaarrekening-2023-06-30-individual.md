@@ -671,26 +671,32 @@ JAARVERSLAG
 
 --- pág. 23 ---
 
-Racing White Daring Molenbeek Future
-Naamloze vennootschap
-Charles Malisstraat 61,
-1080 Sint-Jans-Molenbeek
-(de “Vennootschap”)
+DocuSign Envelope ID: FAFAAB99-5574-4F42-BB97-C982F28827E8
 
-Ondernemingsnummer: 0714.982.050 (RPR Brussel, Nederlandstalige afdeling)
-BTW-nummer: BE 0714.982.050
+**Racing White Daring Molenbeek Future**  
+Naamloze vennootschap  
+Charles Malisstraat 61,  
+1080 Sint-Jans-Molenbeek  
+(de “**Vennootschap**”)  
 
-JAARVERSLAG OVER HET BOEKJAAR AFGESLOTEN PER 30 JUNI 2023
+*Ondernemingsnummer: 0714.982.050 (RPR Brussel, Nederlandstalige afdeling)*  
+*BTW-nummer: BE 0714.982.050*
+
+---
+
+**JAARVERSLAG OVER HET BOEKJAAR AFGESLOTEN PER 30 JUNI 2023**
+
+---
 
 Wij hebben de eer u verslag uit te brengen over de toestand van de Vennootschap betreffende het boekjaar dat afgesloten werd op 30 juni 2023.
 
 Dit jaarverslag alsmede de jaarrekening worden te uwer beschikking gesteld.
 
-1. ONTWIKKELINGEN, RESULTATEN EN RISICO'S VAN DE VENNOOTSCHAP
+### 1. ONTWIKKELINGEN, RESULTATEN EN RISICO'S VAN DE VENNOOTSCHAP
 
-1.1. COMMENTAAR OP DE JAARREKENING
+#### 1.1. COMMENTAAR OP DE JAARREKENING
 
-Het boekjaar sluit met een **te bestemmen verlies** van 8.026.247,13 EUR, terwijl vorig boekjaar het te bestemmen verlies van het boekjaar 1.743.453,73 EUR bedroeg.
+Het boekjaar sluit met een te bestemmen **verlies** van 8.026.247,13 EUR, terwijl vorig boekjaar het te bestemmen verlies van het boekjaar 1.743.453,73 EUR bedroeg.
 
 Het verlies kan als volgt gedetailleerd worden:
 
@@ -706,84 +712,96 @@ De raad van bestuur stelt dan ook dat het boekjaar per 30 juni 2023 sluit met ee
 
 De **belastingen op het resultaat** bedragen 2.771,81 EUR.
 
-Bijgevolg stelt de raad van bestuur vast dat de **te bestemmen verlies van het boekjaar** 8,026.247,13 EUR bedraagt.
+Bijgevolg stelt de raad van bestuur vast dat de **te bestemmen verlies van het boekjaar** 8.026.247,13 EUR bedraagt.
 
-1.2. BESCHRIJVING VAN DE VOORNAAMSTE RISICO'S EN ONZEKERHEDEN WAARMEE DE VENNOOTSCHAP GECONFRONTEERD WORDT
+#### 1.2. BESCHRIJVING VAN DE VOORNAAMSTE RISICO'S EN ONZEKERHEDEN WAARMEE DE VENNOOTSCHAP GECONFRONTEERD WORDT
 
 Overeenkomstig artikel 3:6, §1, 1° van het Wetboek van vennootschappen en verenigingen, bevestigt de raad van bestuur dat er geen noemenswaardige strategische, operationele,
 
 1
 
+Page 23 of 35
+
 --- pág. 24 ---
+
+DocuSign Envelope ID: FAFAAB99-5574-4F42-BB97-C982F28827E8
 
 financiële risico's of risico's van behoorlijke naleving, noch onzekerheden zijn waarmee de Vennootschap wordt geconfronteerd.
 
-2. BESTEMMING VAN HET RESULTAAT
+### 2. BESTEMMING VAN HET RESULTAAT
 
 De raad van bestuur stelt voor het resultaat van het boekjaar afgesloten per 30 juni 2023 als volgt te bestemmen:
 
+| | |
+| :--- | ---: |
 | - te bestemmen verlies van het boekjaar: | 8.026.247,13 EUR |
-| --- | --- |
 | - overgedragen verlies: | 2.144.690,07 EUR |
-| - te bestemmen verlies: | 10.170.937,20 EUR |
+| **- te bestemmen verlies:** | **10.170.937,20 EUR** |
 
 Tevens kan, op 30 juni 2023, het eigen vermogen van de Vennootschap als volgt opgedeeld worden:
 
+| | |
+| :--- | ---: |
 | - geplaatst kapitaal: | 1,423,110,00 EUR |
-| --- | --- |
 | - wettelijke reserve: | 0,00 EUR |
 | - beschikbare reserves: | 0,00 EUR |
 | - belastingvrije reserves: | 0,00 EUR |
 | - overgedragen winst (verlies) op 30 juni 2023: | -10.170.937,20 EUR |
-| - eigen vermogen op 30 juni 2023 | -8.747.827,20 EUR |
+| **- eigen vermogen op 30 juni 2023** | **-8.747.827,20 EUR** |
 
-3. INFORMATIE OVER BELANGRIJKE GEBEURTENISSEN NA AFSLUITING VAN HET BOEKJAAR
+### 3. INFORMATIE OVER BELANGRIJKE GEBEURTENISSEN NA AFSLUITING VAN HET BOEKJAAR
 
 De raad van bestuur wenst u op de hoogte te brengen dat er zich geen belangrijke gebeurtenissen voorgedaan hebben na de afsluiting van het boekjaar.
 
-4. INLICHTINGEN OVER DE OMSTANDIGHEDEN DIE DE ONTWIKKELING VAN DE VENNOOTSCHAP AANMERKELIJK KUNNEN BEÏNVLOEDEN, VOOR ZOVER ZIJ NIET VAN DIE AARD ZIJN DAT ZIJ ERNSTIG NADEEL ZOUDEN BEROKKENEN AAN DE VENNOOTSCHAP
+### 4. INLICHTINGEN OVER DE OMSTANDIGHEDEN DIE DE ONTWIKKELING VAN DE VENNOOTSCHAP AANMERKELIJK KUNNEN BEÏNVLOEDEN, VOOR ZOVER ZIJ NIET VAN DIE AARD ZIJN DAT ZIJ ERNSTIG NADEEL ZOUDEN BEROKKENEN AAN DE VENNOOTSCHAP
 
 De raad van bestuur meldt u tevens dat er zich geen omstandigheden hebben voorgedaan die de ontwikkeling van de Vennootschap aanmerkelijk kunnen beïnvloeden.
 
-5. ONDERZOEK & ONTWIKKELINGSACTIVITEITEN
+### 5. ONDERZOEK & ONTWIKKELINGSACTIVITEITEN
 
 Tijdens het boekjaar afgesloten per 30 juni 2023 werden geen onderzoeks- en ontwikkelingsactiviteiten opgestart.
 
-6. BIJKANTOREN VAN DE VENNOOTSCHAP
+### 6. BIJKANTOREN VAN DE VENNOOTSCHAP
 
 De Vennootschap heeft geen bijkantoren.
 
-7. GOING CONCERN – ARTIKEL 3:6, §1, 6° WVV
+### 7. GOING CONCERN – ARTIKEL 3:6, §1, 6° WVV
 
 2
 
+Page 24 of 35
+
 --- pág. 25 ---
+
+DocuSign Envelope ID: FAFAAB99-5574-4F42-BB97-C982F28827E8
 
 De raad van bestuur ontving van haar aandeelhouder Eagle Football Holdings Bidco Limited een brief van ondersteuning, waarin hij zijn verbintenis bevestigt om het financiële welzijn van de Vennootschap in stand te houden en te ondersteunen teneinde het overgedragen verlies volgens de jaarrekening per 30 juni 2023 (ten bedrage van 10.170.937,20 EUR) en eventuele andere verliezen, die de Vennootschap zou lijden in het boekjaar dat eindigt op 30 juni 2024, te dekken.
 
 Uit de balans per 30 juni 2023 blijkt een overgedragen verlies van 10.170.937,20 EUR zodat artikel 3:6, §1, 6° van het Wetboek van vennootschappen en verenigingen van toepassing is. De bestuurders beslissen de waardering in het perspectief van de continuïteit op te maken. De onderneming is in staat om aan al haar betalingsverplichtingen op korte termijn te voldoen mits de blijvende steun van haar aandeelhouder. Deze steun is verzekerd gezien de ontvangen brief van ondersteuning.
 
-8. KAPITAALVERHOGINGEN OF UITGIFTE VAN CONVERTEERBARE OBLIGATIES OF OBLIGATIES MET VOORKEURRECHT BIJ TOEPASSING VAN HET TOEGESTAAN KAPITAAL
+### 8. KAPITAALVERHOGINGEN OF UITGIFTE VAN CONVERTEERBARE OBLIGATIES OF OBLIGATIES MET VOORKEURRECHT BIJ TOEPASSING VAN HET TOEGESTAAN KAPITAAL
 
 Er is geen informatie die in dit verband meegedeeld dient te worden.
 
-9. VERKRIJGING VAN EIGEN AANDELEN
+### 9. VERKRIJGING VAN EIGEN AANDELEN
 
 Gedurende het boekjaar afgesloten per 30 juni 2023, heeft de Vennootschap noch zelf, noch middels een persoon handelend in eigen naam maar voor rekening van de Vennootschap, eigen aandelen verkregen.
 
-10. BELANGENCONFLICTEN
+### 10. BELANGENCONFLICTEN
 
-Uittruksel uit de notulen van de vergadering van de raad van bestuur van de Vennootschap van 10 februari 2023:
+Uittreksel uit de notulen van de vergadering van de raad van bestuur van de Vennootschap van 10 februari 2023:
 
 “5. Consultancyovereenkomst
 
 De Vennootschap heeft de intentie om een consultancyovereenkomst te onderhandelen met MFCL Consulting (een besloten vennootschap naar Belgisch recht met maatschappelijke zetel te Louizalaan 523, 1050 Brussel en ingeschreven in het Rechtspersonenregister onder nummer 0442.637.031) (de “Consultancyovereenkomst”). Gelet op het feit dat de heer Thierry Dailly optreedt als vertegenwoordiger van MFCL Consulting BV onder de Consultancyovereenkomst waarbij de Vennootschap de contracterende wederpartij is, heeft de heer Thierry Dailly een belangenconflict van vermogensrechtelijke aard in de zin van artikel 7:96 §1, lid 1 van het Wetboek van Vennootschappen en Verenigingen. De heer Thierry Dailly heeft de overige bestuurders (zijnde de heer John Textor en de heer Danilo Caixeiro) op de hoogte gebracht van dit vermogensrechtelijk belangenconflict en heeft vervolgens de vergadering (althans voor dit besluit) verlaten.”
 
-11. GEBRUIK VAN FINANCIËLE INSTRUMENTEN
+### 11. GEBRUIK VAN FINANCIËLE INSTRUMENTEN
 
 In uitvoering van artikel 3:6, §1, 8° van het Wetboek van vennootschappen en verenigingen, meldt de raad van bestuur dat er geen financiële instrumenten werden gebruikt die van betekenis
 
 3
+
+Page 25 of 35
 
 --- pág. 26 ---
 

@@ -32,65 +32,67 @@ smart fit
 
 --- pág. 2 ---
 
-DEPORTIVO
-BOYACÁ CHICÓ
-FÚTBOL CLUB S.A.
-
-B. CHICÓ F.C.
-
 # ESTADOS FINANCIEROS COMPARATIVOS A DICIEMBRE 31 DE 2025 – 2024
 
-|  DEPORTIVO BOYACÁ CHICÓ FÚTBOL CLUB S.A.  |   |   |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  NIT 830.100.504 - 0  |   |   |   |   |   |   |   |   |   |
-|  Estado de Situación Financiera Comparativo al 31 de Diciembre de 2025  |   |   |   |   |   |   |   |   |   |
-|  (Cifras en pesos Colombianos)  |   |   |   |   |   |   |   |   |   |
-|  Cuentas | Nota | Dic 31-2023 | Dic 31-2024 | Var Relativa | Cuentas | Nota | Dic 31-2023 | Dic 31-2024 | Var Relativa  |
-|  **ACTIVO CORRIENTE** |  | **1.230.503.299,00** | **1.361.976.513,00** | **9,8%** | **PASIVO CORRIENTE** |  | **1.700.022.593,00** | **1.400.864.896,00** | **24,1%**  |
-|  EFECTIVO Y EQUIVALENTES AL EFECTIVO | 3 | 333.940.694,00 | 441.174.314,00 | -24,3% | OBLIGACIONES FINANCIERAS | 8 | 319.167.704,00 | 666.527.066,00 | 100,0%  |
-|  CUENTAS POR COBRAR COMERCIALES | 4 | 558.874.293,00 | 612.695.199,00 | 100,0% | PROVEEDORES - CUENTAS POR PAGAR COMERCIALES | 9 | 0,00 | 39.438.501,00 | -100,0%  |
-|  ANTICIPOS DE IMPUESTOS Y/O SALDOS A FAVOR | 5 | 338.138.312,00 | 308.007.000,00 | 9,8% | PASIVOS PARA CONTINGENCIAS |  | 383.131.107,00 | 0,00 | 100,0%  |
-|   |  |  |  |  | OTROS ACREEDORES-COSTOS Y GASTOS POR PAGAR | 10 | 24.471.300,00 | 20.706.400,00 | 100,0%  |
-|   |  |  |  |  | IMPUESTOS CORRIENTES POR PAGAR | 11 | 525.163.150,00 | 500.594.511,00 | 4,9%  |
-|   |  |  |  |  | PASIVOS POR BENEFICIOS A EMPLEADOS | 12 | 245.089.332,00 | 142.400.198,00 | 72,1%  |
-|   |  |  |  |  | OTROS PASIVOS | 13 | 253.000.000,00 | 40.188.160,00 | 529,5%  |
-|  **ACTIVO NO CORRIENTE** |  | **7.315.197.227,00** | **6.402.342.465,00** | **13,2%** | **PASIVO NO CORRIENTE** |  | **0,00** | **0,00** | **0,0%**  |
-|  OTRAS CUENTAS POR COBRAR |  | 0,00 | 0,00 | 0,0% | OBLIGACIONES FINANCIERAS |  | 0,00 | 0,00 | 0,0%  |
-|  PROPIEDAD PLANTA Y EQUIPO | 6 | 6.058.524.051,00 | 4.749.869.619,00 | 27,6% | PASIVO CUENTAS POR PAGAR SOCIOS | 14 | 0,00 | 0,00 | 0,0%  |
-|  INTANGIBLES | 7 | 1.256.673.176,00 | 1.712.472.846,00 | 100,0% | **TOTAL PASIVO** |  | **1.700.022.593,00** | **1.400.864.896,00** | **24,1%**  |
-|   |  |  |  |  | CAPITAL SUSCRITO Y PAGADO | 15 | 540.000.000,00 | 540.000.000,00 | 0,0%  |
-|   |  |  |  |  | RESERVAS | 15 | 1.123.648.353,00 | 1.123.648.353,00 | 0,0%  |
-|   |  |  |  |  | GANANCIAS ACUMULADAS | 15 | 4.750.715.729,00 | 4.042.645.636,00 | 17,5%  |
-|   |  |  |  |  | RESULTADO DEL EJERCICIO | 15 | 381.763.851,00 | 708.070.093,00 | -46,1%  |
-|   |  |  |  |  | **TOTAL PATRIMONIO** |  | **6.796.127.933,00** | **6.414.364.062,00** | **6,0%**  |
-|  **TOTAL ACTIVO** |  | **8.546.150.526,00** | **7.834.218.978,00** | **9,2%** | **TOTAL PASIVO + PATRIMONIO** |  | **8.546.150.526,00** | **7.834.218.978,00** | **9,2%**  |
-|  |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |
+DEPORTIVO BOYACÁ CHICÓ FÚTBOL CLUB S.A.
+
+DEPORTIVO BOYACA CHICO FUTBOL CLUB S.A.
+
+NIT 830.100.504 - 0
+
+Estado de Situación Financiera Comparativo al 31 de Diciembre de 2025
+
+(Cifras en pesos Colombianos)
+
+| Cuentas | Nota | Dic 31-2025 | Dic 31-2024 | Var Relativa |
+|---|---|---|---|---|
+| **ACTIVO CORRIENTE** | | **1.230.953.299,00** | **1.361.876.513,00** | **-9,6%** |
+| EFECTIVO Y EQUIVALENTES AL EFECTIVO | 3 | 333.940.694,00 | 441.174.314,00 | -24,3% |
+| CUENTAS POR COBRAR COMERCIALES | 4 | 558.874.293,00 | 612.695.199,00 | 100,0% |
+| ANTICIPOS DE IMPUESTOS Y/O SALDOS A FAVOR | 5 | 338.138.312,00 | 308.007.000,00 | 9,8% |
+| **ACTIVO NO CORRIENTE** | | **7.315.197.227,00** | **6.462.342.465,00** | **13,2%** |
+| OTRAS CUENTAS POR COBRAR | | 0,00 | 0,00 | 0,0% |
+| PROPIEDAD PLANTA Y EQUIPO | 6 | 6.058.524.051,00 | 4.749.869.619,00 | 27,6% |
+| INTANGIBLES | 7 | 1.256.673.176,00 | 1.712.472.846,00 | 100,0% |
+| **TOTAL ACTIVO** | | **8.546.150.526,00** | **7.824.218.978,00** | **9,2%** |
+
+| Cuentas | Nota | Dic 31-2025 | Dic 31-2024 | Var Relativa |
+|---|---|---|---|---|
+| **PASIVO CORRIENTE** | | **1.750.022.593,00** | **1.409.854.896,00** | **24,1%** |
+| OBLIGACIONES FINANCIERAS | 8 | 319.167.704,00 | 666.527.066,00 | 100,0% |
+| PROVEEDORES - CUENTAS POR PAGAR COMERCIALES | 9 | 0,00 | 39.438.561,00 | -100,0% |
+| PASIVOS PARA CONTINGENCIAS | | 383.131.107,00 | 0,00 | 100,0% |
+| OTROS ACREEDORES-COSTOS Y GASTOS POR PAGAR | 10 | 24.471.300,00 | 20.706.400,00 | 100,0% |
+| IMPUESTOS CORRIENTES POR PAGAR | 11 | 525.163.150,00 | 500.594.511,00 | 4,9% |
+| PASIVOS POR BENEFICIOS A EMPLEADOS | 12 | 245.089.332,00 | 142.400.198,00 | 72,1% |
+| OTROS PASIVOS | 13 | 253.000.000,00 | 40.188.160,00 | 529,5% |
+| **PASIVO NO CORRIENTE** | | **0,00** | **0,00** | **0,0%** |
+| OBLIGACIONES FINANCIERAS | | 0,00 | 0,00 | 0,0% |
+| PASIVO CUENTAS POR PAGAR SOCIOS | 14 | 0,00 | 0,00 | 0,0% |
+| ***TOTAL PASIVO*** | | **1.750.022.593,00** | **1.409.854.896,00** | **24,1%** |
+| CAPITAL SUSCRITO Y PAGADO | 15 | 540.000.000,00 | 540.000.000,00 | 0,0% |
+| RESERVAS | 15 | 1.123.648.353,00 | 1.123.648.353,00 | 0,0% |
+| GANANCIAS ACUMULADAS | 15 | 4.750.715.729,00 | 4.042.045.636,00 | 17,5% |
+| RESULTADO DEL EJERCICIO | 15 | 381.763.851,00 | 708.070.093,00 | -46,1% |
+| ***TOTAL PATRIMONIO*** | | **6.796.127.933,00** | **6.414.364.082,00** | **6,0%** |
+| ***TOTAL PASIVO + PATRIMONIO*** | | **8.546.150.526,00** | **7.824.218.978,00** | **9,2%** |
+
+Nicolas Pimentel Vallejo
+Representante Legal
+C.C. No. 1.136.879.954 de Bogotá
+
+Yamile Campos Ledesma
+Contador Publico TP 213512 - T
+C.C. No. 39.780.649 Usaquén
+
+Nancy Pérez Moscoso
+Revisor Fiscal TP 30701 - T
+C.C. No. 51.690.844 Bogotá
 
 Deportivo Boyacá Chicó F.C. S.A.
 Nit: 830.100.504.0
 
-LA DISCULPA
-Ortadero
-444
-Car Business Shop
-IMPORTANTE DE
-CONTACTO
-
-Prometido del sol
-
-geus
-
-smart fit
+Pool · LA DISCULPA Oriadero · Prometido del sol · 444 Car Business Shop · Zeus · smart fit
 
 --- pág. 3 ---
 
@@ -203,59 +205,59 @@ smart fit
 
 --- pág. 5 ---
 
-DEPORTIVO
-BOYACÁ CHICÓ
-FÚTBOL CLUB S.A.
+# DEPORTIVO BOYACÁ CHICÓ FÚTBOL CLUB S.A.
 
-B. CHICÓ F.C.
+## ESTADO DE FLUJO DE EFECTIVO
 
-# ESTADO DE FLUJO DE EFECTIVO
+### DEPORTIVO BOYACA CHICO FUTBOL CLUB S.A.
+**NIT 830.100.504 - 0**  
+**ESTADO DE FLUJOS DE EFECTIVO METODO INDIRECTO A DICIEMBRE 31 DE 2025 - 2024**  
+*(Cifras Expresadas en pesos Colombianos y/o salvo que se indique otra cosa)*
 
-|  DEPORTIVO BOYACÁ CHICÓ FÚTBOL CLUB S.A.  |   |   |
-| --- | --- | --- |
-|  NIT 830.100.504 - 0  |   |   |
-|  ESTADO DE FLUJOS DE EFECTIVO METODO INDIRECTO A DICIEMBRE 31 DE 2025 -2024  |   |   |
-|  (Cifras Expresadas en pesos Colombianos y/o salvo que se indique otra cosa)  |   |   |
-|  CONCEPTO | Diciembre 31 2025 | Diciembre 31 2024  |
-|  **ACTIVIDAD DE OPERACIÓN** |  |   |
-|  Utilidad Neta del Ejercicio | 381.763.851,00 | 708.070.093,00  |
-|  **PARTIDAS QUE NO AFECTAN EL EFECTIVO** |  |   |
-|  Depreciación | 79.345.568,00 | 88.526.496,00  |
-|  Amortizaciones | 459.603.156,00 | 455.023.057,00  |
-|  Ajuste Adopción NIIF | 0,00 | 0,00  |
-|  **EFECTIVOS NETOS DE RESULTADO** | 920.712.575,00 | 1.251.619.646,00  |
-|  **ACTIVIDADES DE OPERACIÓN** |  |   |
-|  Más: Cambios en las Partidas Operacionales | 0,00 | 0,00  |
-|  (+) : Aumento Obligaciones Laborales | 102.689.134,00 | 67.100.500,00  |
-|  (+) : Aumento Prestamos Recibidos | 702.292.811,00 | 0,00  |
-|  **EFECTIVO GENERADOS EN ACTIVIDADES DE OPERACIÓN** | 1.725.694.520,00 | 1.318.720.146,00  |
-|  **(-) : ACTIVIDADES DE INVERSION** |  |   |
-|  Compras de Propiedad, Planta y Equipo | -1.388.000.000,00 | -1.333.990.192,00  |
-|  Devolución de Propiedad, Planta y Equipo |  |   |
-|  Recuperación de Activos Corrientes en proceso judicial |  | -265.920.383,00  |
-|  **FLUJO DE EFECTIVO NETO EN ACTIVIDADES DE INVERSION** | -1.388.000.000,00 | -1.599.910.575,00  |
-|  **(-) : ACTIVIDADES DE FINANCIACIÓN** |  |   |
-|  (+) : Aumento o disminución del Capital de trabajo | 381.763.851,00 | 202.641.726,00  |
-|  (+) : Aumento de pasivos no corrientes | 0,00 | 0,00  |
-|  **FLUJO DE EFECTIVO NETO EN ACTIVIDADES DE FINANCIACIÓN** | 381.763.851,00 | -202.641.726,00  |
-|  Aumento o Disminución del Efectivo Equivalente en el ejercicio | -488.997.472,00 | -483.832.155,00  |
-|  Saldo Inicial del periodo en Efectivo y Equivalente | 441.174.315,00 | 1.127.648.196,00  |
-|  **DISPONIBLE A DICIEMBRE 31 DE 2025** | 333.940.694,00 | 441.174.315,00  |
-|  |   |   |
-|  Nicolas Pimentel Vallejo Representante Legal C.C. No. 1.136.879.954 de Bogotá | Yamile Campos Ledesma Contador Público TP 213512 - T C.C. No. 39.788.649 Usaquén | Nancy Pérez Moscoso Revisor Fiscal TP 36781 - T C.C. No. 51.698.844 Bogotá  |
+| CONCEPTO | Diciembre 31 2025 | Diciembre 31 2024 |
+| :--- | :---: | :---: |
+| **ACTIVIDAD DE OPERACIÓN** | | |
+| Utilidad Neta del Ejercicio | 381.763.851,00 | 708.070.093,00 |
+| **PARTIDAS QUE NO AFECTAN EL EFECTIVO** | | |
+| Depreciación | 79.345.568,00 | 88.526.496,00 |
+| Amortizaciones | 459.603.156,00 | 455.023.057,00 |
+| Ajuste Adopcion NIIF | 0,00 | 0,00 |
+| **EFECTIVOS NETOS DE RESULTADO** | **920.712.575,00** | **1.251.619.646,00** |
+| **ACTIVIDADES DE OPERACIÓN** | | |
+| Mas: Cambios en las Partidas Operacionales | 0,00 | 0,00 |
+| (+) : Aumento Obligaciones Laborales | 102.689.134,00 | 67.100.500,00 |
+| (+) : Aumento Prestamos Recibidos | 702.292.811,00 | 0,00 |
+| **EFECTIVO GENERADOS EN ACTIVIDADES DE OPERACIÓN** | **1.725.694.520,00** | **1.318.720.146,00** |
+| **(-) : ACTIVIDADES DE INVERSION** | | |
+| Compras de Propiedad, Planta y Equipo | -1.388.000.000,00 | -1.333.990.192,00 |
+| Devolución de Propiedad, Planta y Equipo | | |
+| Recuperaciónde Activos Corrientes en proceso judicial | | -265.920.383,00 |
+| **FLUJO DE EFECTIVO NETO EN ACTIVIDADES DE INVERSION** | **-1.388.000.000,00** | **-1.599.910.575,00** |
+| **(-) : ACTIVIDADES DE FINANCIACIÓN** | | |
+| (+) : Aumento o disminución del Capital de trabajo | 381.763.851,00 | 202.641.726,00 |
+| (+) : Aumento de pasivos no corrientes | 0,00 | 0,00 |
+| **FLUJO DE EFECTIVO NETO EN ACTIVIDADES DE FINANCIACIÓN** | **381.763.851,00** | **-202.641.726,00** |
+| Aumento o Disminución del Efectivo Equivalente en el ejercicio | -488.997.472,00 | -483.832.155,00 |
+| Saldo Inicial del periodo en Efectivo y Equivalente | 441.174.315,00 | 1.127.648.196,00 |
+| **DISPONIBLE A DICIEMBRE 31 DE 2025** | **333.940.694,00** | **441.174.315,00** |
 
-# NOTAS A LOS ESTADOS FINANCIEROS
+Nicolas Pimentel Vallejo  
+Representante Legal  
+C.C. No. 1.136.879.954 de Bogotá  
 
-Deportivo Boyacá Chicó F.C. S.A.
-Nit: 830.100.504.0
+Yamile Campos Ledesma  
+Contador Publico TP 213512 - T  
+C.C. No. 39.780.649 Usaquén  
 
-La DiSCULPA
-Ortadero
-444
-Car Business Shop
-Prometido del sol
-gens
-smart fit
+Nancy Pérez Moscoso  
+Revisor Fiscal TP 36701 - T  
+C.C. No. 51.690.844 Bogotá  
+
+### NOTAS A LOS ESTADOS FINANCIEROS
+
+Deportivo Boyacá Chicó F.C. S.A.  
+Nit: 830.100.504.0  
+Pool | LA DISCULPA - Criadero - | Prometido del sol | 444 Car Business Shop | geus | smart fit
 
 --- pág. 6 ---
 

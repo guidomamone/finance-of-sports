@@ -9,23 +9,23 @@ GESCHÄFTSBERICHT 2019/20
 # FAKTEN ZUR SAISON 2019/20
 
 | Rang Saison 2019/20 | Punkte Saison 2019/20 | Tore geschossen | Tore erhalten |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | 6. | 46 | 42 | 50 |
 
-| Bester Torschütze | Anzahl Tore | Debüts eigener Junioren in der 1. Mannschaft | Platz in der SFL-Rangliste „Effizienzkriterien“ |
-| --- | --- | --- | --- |
-| Francesco Margiotta | 11 | 22. | 3. |
+| Bester Torschütze | Anzahl Tore | Debüts eigener Junioren in der 1. Mannschaft | Platz in der SFL-Rangliste „Effizienzkriterien" |
+|---|---|---|---|
+| Francesco Margiotta | [12 Fussball-Symbole] | 11 | 3. |
 
-pro Heimspiel Saison 2019/20
-
-6’025 108’447
+| pro Heimspiel | Saison 2019/20 |
+|---|---|
+| 6'025 | 108'447 |
 
 | FCL-TV DAS MAGAZIN Views | Instagram Follower | Facebook Fans |
-| --- | --- | --- |
-| 1,25 Mio. | 26’000 | 59’767 |
+|---|---|---|
+| 1,25 Mio. | 26'000 | 59'767 |
 
 | Mio. CHF Umsatz | Ø Anzahl Mitarbeitende | Mio. CHF in den Nachwuchs |
-| --- | --- | --- |
+|---|---|---|
 | 21,2 | 166,0 | 2,9 |
 
 --- pág. 3 ---

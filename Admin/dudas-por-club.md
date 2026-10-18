@@ -1958,3 +1958,5 @@ Ni los balances ni una búsqueda web dan las fechas; el detalle de cada caso est
   Ferreira Júnior, fechas "2010 a 2014" sin fuente abrible) queda igual sin confirmar.
 - **OFI Crete 2018**: al 30/6/2018 el club estaba bajo una administración provisoria de 7 miembros (juzgado de Heraklion, 11/1/2018) sin
   presidente nombrado; queda sin gestión (decisión de Guido, 2026-10-15) salvo que el ΓΕΜΗ diga quién la presidía.
+
+**Paide Linnameeskond (Estonia)**: en el informe 2025, Lisa 10 ("Jagatud annetused ja toetused"), ¿a quién se pagan los "Stipendiumid" (40.300 €) y los "Toetused" (391.099 €): a jugadores del primer equipo o a deportistas de la academia? Se cargaron como sueldos del plantel (wages_squad), igual que los pagos a deportistas de Nõmme Kalju y Flora (2026-10-18).

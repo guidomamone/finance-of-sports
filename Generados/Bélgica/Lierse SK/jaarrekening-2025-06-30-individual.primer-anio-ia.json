@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.md",
+ "clave": "08a99b6dac8b6779829806df2791e011174c6556",
+ "generado": "2026-10-18T13:54:29.924Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Sin problemas. La Brutomarge figura como renglón de partida en el esquema abreviado belga, porque no se publican Omzet ni Handelsgoederen. La amortización de L260 (0.407089) está abierta en sus partes, 0.24728 + 0.159809, sin cargar el total. Los financieros se cargan por sus componentes recurrentes y no por los subtotales de L267 y L271. El resultado da -962.223, igual al impreso."
+ }
+}

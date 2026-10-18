@@ -1,0 +1,20 @@
+## Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.pdf
+  [6d00558] etapa cargar · categoria
+      Pregunta: ¿"Aankopen" (0.205706 en millones de la moneda del documento) va como "Otros gastos"?  (por qué: la categorización le dio 0.7 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 8 del visor (la hoja tiene impreso "8" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [5c7c44c] etapa cargar · categoria
+      Pregunta: ¿"Andere personeelskosten" (1.10555 en millones de la moneda del documento) va como "Salarios del plantel"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 24 del visor (la hoja tiene impreso "24" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [9f536c8] etapa cargar · categoria
+      Pregunta: ¿"Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa" (6.264419 en millones de la moneda del documento) va como "Amortización de pases"?  (por qué: la categorización le dio 0.55 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 8 del visor (la hoja tiene impreso "8" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [6b2a58c] etapa cargar · categoria
+      Pregunta: ¿"Niet-recurrente bedrijfskosten" (0.749155 en millones de la moneda del documento) va como "Ítems excepcionales"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 8 del visor (la hoja tiene impreso "8" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [c1ba216] etapa cargar · gestion
+      Qué mirar: ¿Quién condujo Voetbalclub Lommel SK NV en el ejercicio 2025 (cierre 2025-06-30)? Ninguna gestión confirmada de data/gestiones/be.js lo cubre. Completar las gestiones del club en ese archivo (formato y regla: Admin/ARQUITECTURA.md, "Gestiones"; el porqué de cada fecha va a Admin/carga-clubes/<club>.md, no al archivo): nombre, corto, cargo 'Presidente' (en una sociedad, el dueño solo si es una persona con nombre), desde (fecha en que ASUMIÓ), hasta (o null), fuente (URL), confirmada:true. Si el país no tiene archivo, crearlo y sumar 'be' a PAISES de js/finanzas-anios.js. Una SAF o sociedad anónima sin dueño persona no tiene gestión: responder descartar. Firmantes en la transcripción: no se encontraron. Después: node tools/cola.mjs --responder <id> aceptar.
+      Propuesta del sistema: completar data/gestiones y responder aceptar (o descartar si el club no tiene presidente persona)

@@ -401,36 +401,64 @@ Tarjeta Profesional 36.278-T
 
 --- pág. 17 ---
 
-## ESTADOS FINANCIEROS COMPARATIVOS A DICIEMBRE 31 DE 2023 – 2022
-
-### Estado de Situación financiera comparativo a diciembre 31 de 2023-2022 (Reexpresados)
-
-|  DEPORTIVO BOYACA CHICO FUTBOL CLUB S.A. NIT. 839.100.504 - 6  |   |   |   |   |   |   |   |   |   |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  Estado de Situación Financiera Comparativo al 31 de Diciembre de 2022 (Reexpresados)  |   |   |   |   |   |   |   |   |   |
-|  (Cifras en pesos Colombianos)  |   |   |   |   |   |   |   |   |   |
-|  Reexpresados |   |   |   |   | Reexpresados  |   |   |   |   |
-|   | Nota | Dic. 31-2023 | Dec. 31-2022 | Var Relativo |  | Nota | Dic. 31-2023 | Dec. 31-2022 | Var Relativo  |
-|  **ACTIVO CORRIENTE** |  | **1,331,375,188.88** | **1,006,086,726.89** | **15.7%** | **PASIVO CORRIENTE** |  | **995,606,141.07** | **1,417,788,887.89** | **-30.9%**  |
-|  EFFECTIVO Y EQUIVALENTES AL EFECTIVO | 3 | 922,427,865.28 | 427,673,999.09 | 115.7% | OBLIGACIONES FINANCIERAS | 9 | 0.00 | 332,138,004.00 | -100.0%  |
-|  CUENTAS POR COBRAR COMERCIALES | 4 | 0.00 | 480,491,066.00 | -100.0% | PROVEEDORES | 10 | 19,796,000.00 | 0.00 | 100.0%  |
-|  ANTICIPOS DE IMPUESTOS Y/O SALDOS A FAVOR | 5 | 378,942,300.38 | 187,920,661.00 | 101.7% | ACREEDORES COMERCIALES | 11 | 0.00 | 3,828,822.00 | -100.0%  |
-|   |  |  |  |  | OTROS ACREEDORES-COSTOS Y GASTOS POR PAGAR | 12 | 28,069,700.00 | 100,083,700.00 | 100.0%  |
-|   |  |  |  |  | IMPUESTOS CORRIENTES POR PAGAR | 13 | 572,640,749.77 | 466,894,000.00 | 22.9%  |
-|   |  |  |  |  | PASIVOS POR BENEFICIOS A EMPLEADOS | 14 | 75,299,897.80 | 93,697,056.99 | -19.6%  |
-|   |  |  |  |  | OTROS PASIVOS |  | 0.00 | 421,947,305.00 |   |
-|  **ACTIVO NO CORRIENTE** |  | **1,930,937,442.54** | **2,252,031,977.41** | **14.7%** | **PASIVO NO CORRIENTE** |  | **1,236,893,027.59** | **41,459,396.04** | **3457.4%**  |
-|  OTRAS CUENTAS POR COBRAR | 6 | 0.00 | 2,782,968,247.41 | -100.0% | OBLIGACIONES FINANCIERAS | 15 | 0.00 | 48,458,396.00 | -100.0%  |
-|  PROPIEDAD PLANTA Y EQUIPO | 7 | 3,783,441,539.00 | 149,633,730.00 | 2428.5% | PASIVO CUENTAS POR PAGAR SOCIOS | 16 | 1,236,893,027.59 | 0.00 |   |
-|  INTANGIBLES | 8 | 2,167,495,903.00 | 2,280,250,000.00 | 100.0% | **TOTAL PASIVO** |  | **1,932,701,173.16** | **1,469,246,333.99** | **31.1%**  |
-|   |  |  |  |  | CAPITAL SUSCRITO Y PAGADO | 17 | 540,000,000.00 | 540,000,000.00 | 0.0%  |
-|   |  |  |  |  | RESERVAS | 17 | 270,000,000.00 | 240,829,459.00 | 12.1%  |
-|   |  |  |  |  | GANANCIAS ACUMULADAS | 17 | 3,510,168,754.37 | 3,446,244,634.17 | 1.9%  |
-|   |  |  |  |  | RESULTADO DEL EJERCICIO | 17 | 999,437,678.14 | 615,615,326.34 | 62.3%  |
-|   |  |  |  |  | **TOTAL PATRIMONIO** |  | **5,319,696,432.51** | **4,642,859,419.51** | **9.3%**  |
-|  **TOTAL ACTIVO** |  | **7,232,357,687.66** | **6,306,937,733.59** | **15.9%** | **TOTAL PASIVO Y PATRIMONIO** |  | **7,232,357,687.66** | **6,306,937,733.59** | **15.9%**  |
-
 17
+
+# ESTADOS FINANCIEROS COMPARATIVOS A DICIEMBRE 31 DE 2023 – 2022
+
+## Estado de Situación financiera comparativo a diciembre 31 de 2023-2022 (Reexpresados)
+
+**DEPORTIVO BOYACA CHICO FUTBOL CLUB S.A.**
+**NIT 830.100.504 - 0**
+
+**Estado de Situación Financiera Comparativo al 31 de Diciembre de 2022 (Reexpresados)**
+*(Cifras en pesos Colombianos)*
+
+**Activo**
+
+| | Nota | Dic 31-2023 | Dic 31-2022 | Var Relativa |
+|---|---|---|---|---|
+| | | Reexpresados | Reexpresados | |
+| **ACTIVO CORRIENTE** | | 1,301,370,165.66 | 1,096,085,726.09 | 18.7% |
+| EFECTIVO Y EQUIVALENTES AL EFECTIVO | 3 | 922,427,865.28 | 427,673,999.09 | 115.7% |
+| CUENTAS POR COBRAR COMERCIALES | 4 | 0.00 | 480,491,066.00 | -100.0% |
+| ANTICIPOS DE IMPUESTOS Y/O SALDOS A FAVOR | 5 | 378,942,300.38 | 187,920,661.00 | 101.7% |
+| **ACTIVO NO CORRIENTE** | | 5,950,937,442.00 | 5,212,851,977.41 | 14.2% |
+| OTRAS CUENTAS POR COBRAR | 6 | 0.00 | 2,782,968,247.41 | -100.0% |
+| PROPIEDAD PLANTA Y EQUIPO | 7 | 3,783,441,539.00 | 149,633,730.00 | 2428.5% |
+| INTANGIBLES | 8 | 2,167,495,903.00 | 2,280,250,000.00 | 100.0% |
+| **TOTAL ACTIVO** | | 7,252,307,607.66 | 6,308,937,703.50 | 15.0% |
+
+**Pasivo y Patrimonio**
+
+| | Nota | Dic 31-2023 | Dic 31-2022 | Var Relativa |
+|---|---|---|---|---|
+| | | Reexpresados | Reexpresados | |
+| **PASIVO CORRIENTE** | | 695,808,147.57 | 1,417,788,887.99 | -50.9% |
+| OBLIGACIONES FINANCIERAS | 9 | 0.00 | 332,138,004.00 | -100.0% |
+| PROVEEDORES | 10 | 19,798,000.00 | 0.00 | 100.0% |
+| ACREEDORES COMERCIALES | 11 | 0.00 | 3,828,822.00 | -100.0% |
+| OTROS ACREEDORES-COSTOS Y GASTOS POR PAGAR | 12 | 28,069,700.00 | 100,083,700.00 | 100.0% |
+| IMPUESTOS CORRIENTES POR PAGAR | 13 | 572,640,749.77 | 466,094,000.00 | 22.9% |
+| PASIVOS POR BENEFICIOS A EMPLEADOS | 14 | 75,299,697.80 | 93,697,056.99 | -19.6% |
+| OTROS PASIVOS | | 0.00 | 421,947,305.00 | |
+| **PASIVO NO CORRIENTE** | | 1,236,893,027.59 | 48,459,396.00 | 2452.4% |
+| OBLIGACIONES FINANCIERAS | 15 | 0.00 | 48,459,396.00 | -100.0% |
+| PASIVO CUENTAS POR PAGAR SOCIOS | 16 | 1,236,893,027.59 | 0.00 | |
+| **TOTAL PASIVO** | | 1,932,701,175.16 | 1,466,248,283.99 | 31.8% |
+| CAPITAL SUSCRITO Y PAGADO | 17 | 540,000,000.00 | 540,000,000.00 | 0.0% |
+| RESERVAS | 17 | 270,000,000.00 | 240,829,459.00 | 12.1% |
+| GANANCIAS ACUMULADAS | 17 | 3,510,168,754.37 | 3,446,244,634.17 | 1.9% |
+| RESULTADO DEL EJERCICIO | 17 | 999,437,678.14 | 615,615,326.34 | 62.3% |
+| **TOTAL PATRIMONIO** | | 5,319,606,432.51 | 4,842,689,419.51 | 9.8% |
+| **TOTAL PASIVO + PATRIMONIO** | | 7,252,307,607.66 | 6,308,937,703.50 | 15.0% |
+
+Firmas:
+
+| | | |
+|---|---|---|
+| Nicolas Pimentel Vallejo | Yamile Campos Ledesma | Oscar German Aranguren Aranguren |
+| Representante Legal | Contador Publico TP 213512 - T | Revisor Fiscal TP 36278 - T |
+| C.C. No. 1.136.879.954 de Bogota D.C. | C.C. No. 39.780.649 Usaquén | C.C. No. 9.527.877 de Sogamoso Boyaca |
 
 --- pág. 18 ---
 
@@ -464,27 +492,35 @@ Tarjeta Profesional 36.278-T
 
 --- pág. 19 ---
 
-## ESTADO DE CAMBIOS EN EL PATRIMONIO
-
-|  DEPORTIVO BOYACA CHICO FUTBOL CLUB S.A. NIT 530.100.504 - 0  |   |   |
-| --- | --- | --- |
-|  Estado de Cambio en el Patrimonio al 31 de Diciembre de 2023  |   |   |
-|   | 2023 | 2022  |
-|  **Patrimonio al comienzo del Periodo** | **4,842,689,420** | **1,947,456,079**  |
-|  Ganancia (Perdida) | 999,437,678 | 615,615,326  |
-|  **Resultado Integral Total** | **999,437,678** | **615,615,326**  |
-|  Capital Social | 540,000,000 | 540,000,000  |
-|  Reservas Apropiadas | 270,000,000 | 240,829,459  |
-|  Utilidades Acomuladas del Ejercicio | 3,510,168,754 | 3,446,244,634  |
-|  **Patrimonio Total** | **4,320,168,754** | **4,227,074,093**  |
-|  **Total incremento en El Patrimonio** | **93,094,661** | **0**  |
-|   |  | **2,627,952,614**  |
-|  **Patrimonio al Final del Periodo** | **5,319,606,433** | **4,842,689,420**  |
-|  |   |   |
-|  |   |   |
-|  **Nicolas Pimentel Vallejo** Representante Legal C.C. No. 1.136.879.954 de Bogota D.C. | **Yamile Campos Ledesma** Contador Publico TP 213512 - T C.C. No. 39.780.649 Usaquén | **Oscar German Aranguren Aranguren** Revisor Fiscal TP 36278 - T C.C. No. 9.527.877 de Sogamoso Boyaca  |
-
 19
+
+# ESTADO DE CAMBIOS EN EL PATRIMONIO
+
+**DEPORTIVO BOYACA CHICO FUTBOL CLUB S.A.**
+**NIT 830.100.504 - 0**
+
+**Estado de Cambio en el Patrimonio al 31 de Diciembre de 2023**
+
+| | 2023 | 2022 |
+|---|---|---|
+| **Patrimonio al comienzo del Periodo** | 4,842,689,420 | 1,947,456,079 |
+| Ganancia (Perdida) | 999,437,678 | 615,615,326 |
+| **Resultado Integral Total** | 999,437,678 | 615,615,326 |
+| Capital Social | 540,000,000 | 540,000,000 |
+| Reservas Apropiadas | 270,000,000 | 240,829,459 |
+| Utilidades Acomuladas del Ejercicio | 3,510,168,754 | 3,446,244,634 |
+| **Patrimonio Total** | 4,320,168,754 | 4,227,074,093 |
+| **Total incremento en El Patrimonio** | 93,094,661 | 0 |
+| | | 2,627,952,614 |
+| **Patrimonio al Final del Periodo** | 5,319,606,433 | 4,842,689,420 |
+
+Firmas:
+
+| | | |
+|---|---|---|
+| Nicolas Pimentel Vallejo | Yamile Campos Ledesma | Oscar German Aranguren Aranguren |
+| Representante Legal | Contador Publico TP 213512 - T | Revisor Fiscal TP 36278 - T |
+| C.C. No. 1.136.879.954 de Bogota D.C. | C.C. No. 39.780.649 Usaquén | C.C. No. 9.527.877 de Sogamoso Boyaca |
 
 --- pág. 20 ---
 

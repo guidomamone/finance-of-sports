@@ -1,0 +1,8 @@
+## Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.pdf
+  [2195269] etapa cargar · categoria
+      Pregunta: ¿"Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa" (0.252396 en millones de la moneda del documento) va como "Depreciación"?  (por qué: la categorización le dio 0.55 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [1d92c2f] etapa cargar · gestion
+      Qué mirar: ¿Quién condujo Patro Eisden Maasmechelen VZW en el ejercicio 2025 (cierre 2025-06-30)? Ninguna gestión confirmada de data/gestiones/be.js lo cubre. Completar las gestiones del club en ese archivo (formato y regla: Admin/ARQUITECTURA.md, "Gestiones"; el porqué de cada fecha va a Admin/carga-clubes/<club>.md, no al archivo): nombre, corto, cargo 'Presidente' (en una sociedad, el dueño solo si es una persona con nombre), desde (fecha en que ASUMIÓ), hasta (o null), fuente (URL), confirmada:true. Si el país no tiene archivo, crearlo y sumar 'be' a PAISES de js/finanzas-anios.js. Una SAF o sociedad anónima sin dueño persona no tiene gestión: responder descartar. Firmantes en la transcripción: L48: VERENIGDE STATEN / Begin van het mandaat : Einde van het mandaat : Voorzitter van de Raad van Bestuur. Después: node tools/cola.mjs --responder <id> aceptar.
+      Propuesta del sistema: completar data/gestiones y responder aceptar (o descartar si el club no tiene presidente persona)

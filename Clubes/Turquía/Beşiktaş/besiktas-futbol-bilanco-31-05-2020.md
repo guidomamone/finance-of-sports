@@ -142,37 +142,42 @@ Sermaye Piyasası Kurulu'nca yayımlanan bağımsız denetim standartlarına ve 
 
 --- pág. 8 ---
 
+JPA
+INTERNATIONAL
+
 ARKAN & ERGİN
 Audit, Tax, SAS
 Turkey
-(JPA International)
 
 Diğer hususların yanı sıra, denetim sırasında tespit ettiğimiz önemli iç kontrol eksiklikleri dâhil olmak üzere, bağımsız denetimin planlanan kapsamı ve zamanlaması ile önemli denetim bulgularını üst yönetimden sorumlu olanlara bildirmekteyiz.
 
 Bağımsızlığa ilişkin etik hükümlere uygunluk sağladığımızı üst yönetimden sorumlu olanlara bildirmiş bulunmaktayız. Ayrıca bağımsızlık üzerinde etkisi olduğu düşünülebilecek tüm ilişkiler ve diğer hususlar ile varsa, ilgili önlemleri üst yönetimden sorumlu olanlara iletmiş bulunmaktayız.
 
-Üst yönetimden sorumlu olanlara bildirilen konular arasından, cari döneme ait konsolide finansal tabloların bağımsız denetiminde en çok önem arz eden konuları yani kilit denetim konularını belirlemekteyiz. Mevzuatın konunun kamuya açıklanmasına izin vermediği durumlarda veya konuyu kamuya açıklamanın doğacağı olumsuz sonuçların, kamuya açıklamanın doğacağı kamu yararını aşacağının makul şekilde beklendiği oldukça istisnai durumlarda, ilgili hususun bağımsız denetçi raporumuzda bildirilmemesine karar verebiliriz.
+Üst yönetimden sorumlu olanlara bildirilen konular arasından, cari döneme ait konsolide finansal tabloların bağımsız denetiminde en çok önem arz eden konuları yani kilit denetim konularını belirlemekteyiz. Mevzuatın konunun kamuya açıklanmasına izin vermediği durumlarda veya konuyu kamuya açıklamanın doğuracağı olumsuz sonuçların, kamuya açıklamanın doğuracağı kamu yararını aşacağının makul şekilde beklendiği oldukça istisnai durumlarda, ilgili hususun bağımsız denetçi raporumuzda bildirilmemesine karar verebiliriz.
 
-## Diğer İlgili Mevzuattan Kaynaklanan Bağımsız Denetçi Yükümlülükleri Hakkında Raporlar
+**Diğer İlgili Mevzuattan Kaynaklanan Bağımsız Denetçi Yükümlülükleri Hakkında Raporlar**
 
 1) 6102 sayılı Türk Ticaret Kanunu'nun ("TTK") 398'inci maddesinin dördüncü fıkrası uyarınca düzenlenen Riskin Erken Saptanması Sistemi ve Komitesi Hakkında Denetçi Raporu 10 Ağustos 2020 tarihinde Grup'un Yönetim Kurulu'na sunulmuştur.
 
-2) TTK'nın 402'nci maddesinin dördüncü fıkrası uyarınca Şirket'in 1 Haziran 2019 - 31 Mayıs 2020 hesap döneminde defter tutma düzeninin, konsolide finansal tabloların, Kanun ile Şirket esas sözleşmesinin finansal raporlamaya ilişkin hükümlere uygun olmadığına dair, yukarıda dikkat çekilen husus bölümünde belirtilen konu haricinde önemli bir hususa rastlanmamıştır.
+2) TTK'nın 402'nci maddesinin dördüncü fıkrası uyarınca Şirket'in 1 Haziran 2019 – 31 Mayıs 2020 hesap döneminde defter tutma düzeninin, konsolide finansal tabloların, Kanun ile Şirket esas sözleşmesinin finansal raporlamaya ilişkin hükümlerine uygun olmadığına dair, yukarıda dikkat çekilen husus bölümünde belirtilen konu haricinde önemli bir hususa rastlanmamıştır.
 
 3) TTK'nın 402'nci maddesinin dördüncü fıkrası uyarınca Yönetim Kurulu, tarafımıza denetim kapsamında istenen açıklamaları yapmış ve talep edilen belgeleri vermiştir.
 
-Arkan Ergin Uluslararası Bağımsız Denetim A.Ş.
+Arkan Ergin Uluslararası Bağımsız Denetim A.Ş.  
 Member of JPA International
 
-[firma y sello ilegible]
+[Firma y sello]
 
-Burhan Akçakıl, SMMM
+Burhan Akçakıl, SMMM  
 Sorumlu Denetçi
 
-10 Ağustos, 2020
+10 Ağustos, 2020  
 İstanbul, Türkiye
 
-(6)
+Arkan Ergin Uluslararası Bağımsız Denetim AŞ)  
+Member of JPA International  
+Maslak Office Building, Sümer Sokak No 4, Kat 2, 34485 Maslak, İstanbul  
+T +90 212 370 0700 F +90 212 370 0849 www.jpatr.com
 
 --- pág. 9 ---
 

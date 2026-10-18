@@ -6,3 +6,5 @@
 - **Ejercicios en disco** (`Clubes/Estonia/Tartu Tammeka/aruanne-<año>.pdf`): 2019-2025 (7), con texto nativo, 26-29 págs. Auditado todos los años según el registro; 2025 consolidado.
 - **Canal**: `https://ariregister.rik.ee/eng/company/80315611` → tabla de informes anuales → `PDF` (URL `.../company/80315611/file/<id>`, sin login). Más años disponibles en el registro (2009-2018) que no se bajaron (el objetivo era 5).
 - Último chequeo: 2026-10-03.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2025 desde `Clubes/Estonia/Tartu Tammeka/aruanne-2025.pdf` (sourceId `tartutammeka-ee-aruanne-2025`).

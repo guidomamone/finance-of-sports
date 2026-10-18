@@ -1,0 +1,502 @@
+{
+ "pdf": "Clubes/Bélgica/RAAL La Louvière/wf-2024-2025-2677fac4.pdf",
+ "generado": "2026-10-18T14:31:02.875Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (raallalouviere-be)"
+  }
+ ],
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del documento, 2026-10-18: 2024-25 trae el consolidado (RAAL SC + Services + Jeunes) con estado completo y el individual solo con marge brute: se carga el consolidado (CONVENCIONES-DATOS, perímetro y dos documentos del mismo ejercicio) (subagente Sonnet, revisado por Claude 2026-10-18))"
+ ],
+ "ejercicio": {
+  "clubId": "raallalouviere-be",
+  "year": 2025,
+  "cierre": "2025-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Chiffre d'affaires",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 4.615173,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Autres produits d'exploitation",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.536293,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Produits d'exploitation non récurrents",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.145299,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Achats",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.511554,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Stocks: réduction (augmentation)",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.013739,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Services et biens divers",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -3.72582,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Rémunérations, charges sociales et pensions",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -3.535934,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 1,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.558871,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises)",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.017902,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Autres charges d'exploitation",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.09718,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 1,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Charges d'exploitation non récurrentes",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.003193,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2025-06-30",
+   "sourceId": "raallalouviere-be-wf-2024-2025-2677fac4",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 0.029283,
+   "tax": -0.010503,
+   "extraRows": [
+    {
+     "label": "Autres produits financiers",
+     "value": 0.120161
+    },
+    {
+     "label": "Autres charges financières",
+     "value": -0.090878
+    },
+    {
+     "label": "Impôts",
+     "value": -0.010503
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Chiffre d'affaires",
+     "lado": "revenue",
+     "importe": 4.615173,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 6.296765,
+   "officialTotalExpenses": 8.464193,
+   "officialPAT": -2.148648
+  },
+  "source": {
+   "id": "raallalouviere-be-wf-2024-2025-2677fac4",
+   "clubId": "raallalouviere-be",
+   "title": "RAAL La Louvière SC — wf-2024-2025-2677fac4 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Bélgica/RAAL La Louvière/wf-2024-2025-2677fac4.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
+ "md": "Clubes/Bélgica/RAAL La Louvière/wf-2024-2025-2677fac4.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "raallalouviere-be",
+ "year": 2025,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Bélgica/RAAL La Louvière/wf-2024-2025-2677fac4.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "2024-25 trae el consolidado (RAAL SC + Services + Jeunes) con estado completo y el individual solo con marge brute: se carga el consolidado (CONVENCIONES-DATOS, perímetro y dos documentos del mismo ejercicio) (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "seleccion": {
+  "filas": 14,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Chiffre d'affaires",
+   "page": 7,
+   "native": 4.615173,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 4.615173,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 4.615173
+  },
+  {
+   "label": "Autres produits d'exploitation",
+   "page": 7,
+   "native": 1.536293,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.536293,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.536293
+  },
+  {
+   "label": "Produits d'exploitation non récurrents",
+   "page": 7,
+   "native": 0.145299,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.145299,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.145299
+  },
+  {
+   "label": "Achats",
+   "page": 7,
+   "native": 0.511554,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.511554,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Achats (600/8) es compra de mercadería y material. Precedente belga: Aankopen/Handelsgoederen va a other_expenses en Anderlecht, Genk, Gent, Westerlo y otros. [Cuenta de resultados pág. 7: \"Achats | 600/8 | 511.554\"]",
+   "destino": "expense",
+   "amountNative": -0.511554
+  },
+  {
+   "label": "Stocks: réduction (augmentation)",
+   "page": 7,
+   "native": 0.013739,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.013739,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.013739
+  },
+  {
+   "label": "Services et biens divers",
+   "page": 7,
+   "native": 3.72582,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.72582,
+   "cat": "other_expenses",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.72582
+  },
+  {
+   "label": "Rémunérations, charges sociales et pensions",
+   "page": 7,
+   "native": 3.535934,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.535934,
+   "cat": "wages_squad",
+   "conf": 0.9,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.535934
+  },
+  {
+   "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+   "page": 7,
+   "native": 0.558871,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.558871,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): No son derechos de jugadores: el único inmaterial del estado 6.2.1 son \"Frais de développement\" (actés 26.000); el resto de los 558.871 es material (actés 347.123 + 105.781 + 72.251 + otros). Sin derechos de jugadores no corresponde player_amortisation. Mismo criterio que Dender (630 combinado a dep [Estado de inmovilizados incorporales 6.2.1, \"FRAIS DE DÉVELOPPEMENT\", Actés 8071 = 26.000; materiales Actés 8271 = 347.123, 8272 = 105.781, 8273 = 72.251; cuenta de resultados pág. 7: 630 = 558.871]",
+   "destino": "expense",
+   "amountNative": -0.558871
+  },
+  {
+   "label": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises)",
+   "page": 7,
+   "native": 0.017902,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.017902,
+   "cat": "other_expenses",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.017902
+  },
+  {
+   "label": "Autres charges d'exploitation",
+   "page": 7,
+   "native": 0.09718,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.09718,
+   "cat": "other_expenses",
+   "conf": 0.93,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.09718
+  },
+  {
+   "label": "Charges d'exploitation non récurrentes",
+   "page": 7,
+   "native": 0.003193,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.003193,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Charges d'exploitation non récurrentes (66A, nota 6.12) es gasto no recurrente. La mayoría de los clubes belgas lo cargan en exceptional_items (Genk, Gent, Cercle, Dender, Sint-Truiden, Zulte, Lokeren, Lierse SK); solo Standard Liège lo dejó en other_expenses. Importe mínimo (3.193). [Cuenta de resultados pág. 7: \"Charges d'exploitation non récurrentes | 6.12 | 66A | 3.193\"]",
+   "destino": "expense",
+   "amountNative": -0.003193
+  },
+  {
+   "label": "Autres produits financiers",
+   "page": null,
+   "native": 0.120161,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Autres charges financières",
+   "page": null,
+   "native": -0.090878,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Impôts",
+   "page": null,
+   "native": -0.010503,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 6.296765,
+  "expSum": -8.461,
+  "officialTotalRevenue": 6.296765,
+  "officialTotalExpenses": 8.464193,
+  "officialPAT": -2.148648,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -2.148648,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 6.296765
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 8.464193
+  }
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "sin caché de rosters para be (tools/club-league-reference/be.json)",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó, P3 liga-sin-verificar); para resolverla: resolve-wikipedia-season-page.mjs + fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (2 de 2 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-18)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Bélgica (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2025-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2025-06-30 = 0.8532 (Cierre BCE al 30/6/2025 (1 EUR = 1,172 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "raallalouviere-be-wf-2024-2025-2677fac4",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": null,
+   "fuente": "sin caché de rosters para be (tools/club-league-reference/be.json)",
+   "estado": "pendiente"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 3,
+  "lineasGasto": 8,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

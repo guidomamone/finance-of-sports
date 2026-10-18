@@ -63,21 +63,27 @@ Jalgpalliklubi Tallinna Kalev 2025. a. majandusaasta aruanne
 ## Tegevusaruanne
 
 Majandusaasta aruanne on konsolideeritud grupis Jalgpalliklubi Tallinna Kalev ja Tallinna Kalevi Jalgpallikool. Jalgpalliklubi Tallinna Kalev ja Jalgpallikooli eesmärk on jalgpalliga tegelemine ja selle arendamine. Meie klubi missiooniks on pakkuda kõikidele kalevlastele võimalust areneda nii füüsiliselt, vaimselt kui ka emotsionaalselt unustamata ära oma isikupära. Peame oluliseks julgustada kalevlasi hoolitsema lisaks oma füüsilisele tervisele ka vaimse tervise eest.
+
 Peamine tegevus on esindusvõistkondadele treeningute ja mängude korraldamine ning eesmärgiks on osaleda Eesti Meistrivõistlustel kõrgeimal tasemel. Samuti viiakse läbi muid jalgpalli arendamisega seotud tegevusi nagu erinevate turniiride, reklaamiürituste ja ettevõtetele suunatud ürituste korraldamine.
+
 Seoses langemisega Esiliigasse seisab esindusmeeskond 2026. hooajal silmitsi noorenduskuuri läbimisega. Klubi strateegiline suund on anda suurem roll oma noormängijatele, kuna klubi DNA keskmes on noored.
+
 Tallinna Kalevi 2025. aasta tulu koosneb sponsorlusest, omavalitsuselt, riigilt ja alaliidult saadavatest toetustest noortespordi arendamiseks, UEFA solidaarsusmaksest klubidele, lapsevanemate liikmemaksudest ning ettevõtlustulust spordivõistluste korraldamisel ja treeningväljakute väljarentimisel.
+
 Põhilised kulud on jalgpallitreenerite ja mängijate palgad, staadionite ja treeningbaaside rendid, spordivarustus, koolitused, laagrid, transport, meditsiiniteenused jne.
+
 MTÜ tööd korraldab kaheliikmeline juhatus. Igapäevase juhtimisega tegelevad klubi spordidirektor, tegevjuht ja noortetöö juht. Klubi keskmine töötajate arv oli 55. Tööjõukulud olid 1 295 882 eurot. Juhatuse liikmetele arvestati töötasu 57 508 eurot.
 
-Peamised finantssuhtarvud
+**Peamised finantssuhtarvud**
 
 | | 2025 | 2024 |
-| --- | --- | --- |
+|---|---|---|
 | Lühiajaliste võlgnevuste kattekordaja | 1,00 | 0,14 |
 | Netovara muutus % | 29,54 | -3,81 |
 
 Lühiajalise võlgnevuse kattekordaja kajastab ettevõtte võimet katta võlausaldajate lühiajalised nõuded käibevaraga.
 Lühiajalise võlgnevuse kattekordaja = käibevara / lühiajalised kohustised
+
 Netovara muutus % = (lõppnetovara - algnetovara) / algnetovara
 
 Loeme aasta 2025 toimetuleku jätkusuutlikuks ning läheme kindlameelselt ning motiveeritult vastu aastale 2026.
