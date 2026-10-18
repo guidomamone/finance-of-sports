@@ -31,13 +31,14 @@
   `Ligas/España/LaLiga/`, con sus `.md`. Auditor Netadia Europa, S.L.P. (por encargo del CSD), sin salvedades. Líneas de
   `LIGA_AUDITORIA` para `es-laliga` y `es-segunda`, 2025.
 - Lega Serie A: nota de sourcing; el bilancio existe y lo audita una società di revisione (estatuto), pero no se publica: candidato a mail.
+- Liga Portugal: nota de sourcing; el Relatório e Contas solo se manda a los asociados (estatuto, art. 42.º): candidato a mail.
 - J.League: balance, resultados e informe del auditor 2025 desde el registro japonés de entidades de interés público (koeki-info.go.jp),
   en `Ligas/Japón/J.League/`. Auditor 太陽有限責任監査法人 (Grant Thornton Taiyo), opinión limpia. Línea `jp-j1` 2025.
 
 ### Qué queda
 
-- Seguir con Liga Portugal, AFA, CBF, EFL y el resto.
-- Lega Serie A: decidir si se le escribe (Guido).
+- Seguir con AFA, CBF, EFL y el resto.
+- Lega Serie A y Liga Portugal: decidir si se les escribe (Guido).
 
 ### PDF copiados a la carpeta principal (rsync)
 
