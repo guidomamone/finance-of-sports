@@ -1,5 +1,7 @@
 # Unión Magdalena (Unión Magdalena S.A., Santa Marta)
 
+**Página del canal**: https://siis.ia.supersociedades.gov.co/ (registro de Supersociedades, por NIT 891700992; se arma con JavaScript, pero por debajo es una API JSON: `_notas-generales.md`, "SIIS ya NO necesita browser"). El club no publica en su sitio.
+
 **Ángulos**: sitio oficial: no intentado esta sesión · regulador/país: agotado (SIIS API, serie completa bajada) · Wayback CDX: no aplica · búsqueda web: no aplica · barrido: 2 (Sonnet) — 2026-10-03
 
 - **Club nuevo de la sesión 2026-09-22, pero el más pobre de los 7 nuevos: un solo ejercicio con PDF

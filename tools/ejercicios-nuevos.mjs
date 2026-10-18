@@ -207,10 +207,15 @@ async function main() {
     // nuevo: está bajado y falta cargarlo, que es otro trabajo (node tools/estado.mjs)
     const dosAnios = (f) => !mmdd.startsWith('12') && f.includes(String(anio - 1)) && f.includes(String(anio)) && f.indexOf(String(anio - 1)) < f.lastIndexOf(String(anio));
     if ([...enCarpeta].some((f) => /\.pdf$/.test(f) && (fs.some((x) => f.includes(x.toLowerCase())) || dosAnios(f)))) { yaBajado.push({ id, nombre: c.n || CLUBS[id]?.displayName || id, anio }); continue; }
+    // un ejercicio POSTERIOR ya bajado (Unión Magdalena: cargado 2018; 2019-2021 nunca se depositaron en el registro y 2022-2025 están en
+    // la carpeta): lo que falta es cargar, no buscar. Vale el año más nuevo que nombra un PDF de estados financieros de la carpeta, hasta
+    // el año en curso (no un presupuesto ni un informe de pases: Académica "Orcamento-2025-2026", Banfield "informe-mercado-de-pases-2026")
+    const posterior = Math.max(0, ...[...enCarpeta].filter((f) => /\.pdf$/.test(f) && FINANCIERO.test(f) && !NO_FINANCIERO.test(f)).flatMap((f) => [...f.matchAll(/(?<!\d)(20\d{2})(?!\d)/g)].map((m) => +m[1])).filter((y) => y > anio && y <= new Date().getFullYear()));
+    if (posterior) { yaBajado.push({ id, nombre: c.n || CLUBS[id]?.displayName || id, anio: posterior }); continue; }
     // canales que solo se ven con el navegador: la tarea los revisa con estas instrucciones (skill club-sourcing, paises/Brasil.md y Chile.md)
     const nota = existsSync(resolve(ROOT, 'Admin', 'sourcing', `${carpeta}.md`)) ? readFileSync(resolve(ROOT, 'Admin', 'sourcing', `${carpeta}.md`), 'utf8') : '';
     if (/P[áa]gina del canal\**[^\n]*:\s*ninguna/i.test(nota)) { sinCanal.push(id); continue; } // club desaparecido o sin canal vivo
-    if (!urls.length && /futebolpaulista\.com\.br/i.test(nota)) { aMano.push({ id, nombre, anio, motivo: `repositorio de la Federação Paulista (Cloudflare: con el navegador): abrir https://futebolpaulista.com.br/Institucional/Financas.aspx y, desde la consola, ListaFinanca.ashx?periodoSelecionado=${anio} con el header X-Requested-With: XMLHttpRequest; buscar "${nombre}"`, urls: [] }); continue; }
+    if (!urls.length && /futebolpaulista\.com\.br/i.test(nota)) { aMano.push({ id, nombre, anio, motivo: `repositorio de la Federação Paulista (Cloudflare: con el navegador): abrir https://futebolpaulista.com.br/A-Federacao/Financas.aspx y, desde la consola, fetch('/Handlers/Institucional/ListaFinanca.ashx?periodoSelecionado=${anio}') con el header X-Requested-With: XMLHttpRequest; buscar "${nombre}"`, urls: [] }); continue; }
     const rutCmf = (nota.match(/cmfchile\.cl\/[^\s)]*rut=(\d+)/) || [])[1];
     if (!urls.length && rutCmf) { aMano.push({ id, nombre, anio, motivo: `CMF (pide clics reales): https://www.cmfchile.cl/institucional/mercados/entidad.php?mercado=V&rut=${rutCmf}&tipoentidad=RVEMI, pestaña "Información Financiera" (no "EEFF Filiales"), cierre 12/${anio}`, urls: [] }); continue; }
     if (!urls.length) { aMano.push({ id, nombre, anio, motivo: `sin URL en Admin/sourcing/${carpeta}.md`, urls: [] }); continue; }

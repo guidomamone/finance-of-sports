@@ -27,6 +27,8 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Estádio Municipal de Arouca","capacidad":5600,"sponsor":"Construções Carlos Pinho","marca":"Skita","temporada":"2024–25 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377871167"},
   },
   'avs-pt': {
+    2021: {"estadio":"Estádio Municipal de Rio Maior","capacidad":7000,"marca":"Adidas","temporada":"2020–21 Liga Portugal 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356212901"},
+    2023: {"estadio":"Estádio Municipal de Rio Maior","capacidad":7000,"marca":"Adidas","temporada":"2022–23 Liga Portugal 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356212674"},
     2024: {"estadio":"Estádio do CD Aves","capacidad":6230,"sponsor":"Mercainos","marca":"Adidas","temporada":"2023–24 Liga Portugal 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377062262"},
   },
   'belenenses-pt': {

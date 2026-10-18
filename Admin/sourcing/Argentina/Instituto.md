@@ -1,9 +1,8 @@
 # Instituto (Córdoba)
 
-**Ángulos**: sitio oficial: agotado para 2024-25 (reconfirmado, sin adjunto — ver Chequeo
-2026-09-22) · parcial para 2025-26: convocatoria a asamblea ya publicada (17/10/2026) pero el
-ejercicio todavía no cerró/aprobó, nada para descargar todavía · Wayback CDX: no aplica esta ronda
-· búsqueda web: no intentado esta ronda · regulador/país: no aplica — 2026-09-26
+**Ángulos**: sitio oficial: ENCONTRADO 2024-25 (la nota de la asamblea del 25/08/2025 ahora trae los 3 Drive; ver Chequeo
+2026-10-18) · 2025-26: convocatoria publicada, asamblea el 17/10/2026, sin documento todavía · Wayback CDX: no aplica esta ronda ·
+búsqueda web: no intentado esta ronda · regulador/país: no aplica — 2026-10-18
 
 - Balance General / Estados Contables, Ejercicio N°70 (2023-24) — Drive linkeado desde noticia
   oficial institutoacc.com.ar/index.php/fue-aprobada-la-asamblea-general-ordinaria-y-extraordinaria-superavit-historico/
@@ -73,3 +72,14 @@ se destrabó desde el 2026-09-22) y ver si ya existe algo del 2025-26.
   ejercicio 2023-24: el documento apareció recién después de su propia asamblea). Vale la pena que
   una sesión futura vuelva a mirar este club después del 17/10/2026.
 - Último chequeo: 2026-09-26.
+
+## Chequeo 2026-10-18 (revisión mensual, con el navegador)
+
+- La nota https://institutoacc.com.ar/index.php/fue-aprobada-la-asamblea-general-ordinaria-2/ (25/08/2025, asamblea que aprobó el
+  ejercicio cerrado el 30/06/2025) ahora enlaza los tres documentos en Google Drive (el chequeo del 2026-09-22 la vio sin adjuntos):
+  - Memoria: https://drive.google.com/file/d/1z6G0bsahemZren2qqW4BZ1Re9rdHlQO6/view
+  - Balance General: https://drive.google.com/file/d/1yMZVWt2hKGRj01YYzzseIQQ_mzOcRY0f/view
+  - Informe de la Comisión Revisora de Cuentas: https://drive.google.com/file/d/1P8WaNNrNY9m3F4-2_a65pONhFnJAfWuc/view
+- Sin bajar todavía (a `Clubes/Argentina/Instituto/` como `balance-general-2024-2025.pdf`, `memoria-2024-2025.pdf` e
+  `informe-comision-revisora-2024-2025.pdf`, el patrón de la carpeta).
+- Último chequeo: 2026-10-18.
