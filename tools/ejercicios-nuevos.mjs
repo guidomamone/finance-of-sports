@@ -207,6 +207,11 @@ async function main() {
     // nuevo: está bajado y falta cargarlo, que es otro trabajo (node tools/estado.mjs)
     const dosAnios = (f) => !mmdd.startsWith('12') && f.includes(String(anio - 1)) && f.includes(String(anio)) && f.indexOf(String(anio - 1)) < f.lastIndexOf(String(anio));
     if ([...enCarpeta].some((f) => /\.pdf$/.test(f) && (fs.some((x) => f.includes(x.toLowerCase())) || dosAnios(f)))) { yaBajado.push({ id, nombre: c.n || CLUBS[id]?.displayName || id, anio }); continue; }
+    // un ejercicio POSTERIOR ya bajado (Unión Magdalena: cargado 2018; 2019-2021 nunca se depositaron en el registro y 2022-2025 están en
+    // la carpeta): lo que falta es cargar, no buscar. Vale el año más nuevo que nombra un PDF de estados financieros de la carpeta, hasta
+    // el año en curso (no un presupuesto ni un informe de pases: Académica "Orcamento-2025-2026", Banfield "informe-mercado-de-pases-2026")
+    const posterior = Math.max(0, ...[...enCarpeta].filter((f) => /\.pdf$/.test(f) && FINANCIERO.test(f) && !NO_FINANCIERO.test(f)).flatMap((f) => [...f.matchAll(/(?<!\d)(20\d{2})(?!\d)/g)].map((m) => +m[1])).filter((y) => y > anio && y <= new Date().getFullYear()));
+    if (posterior) { yaBajado.push({ id, nombre: c.n || CLUBS[id]?.displayName || id, anio: posterior }); continue; }
     // canales que solo se ven con el navegador: la tarea los revisa con estas instrucciones (skill club-sourcing, paises/Brasil.md y Chile.md)
     const nota = existsSync(resolve(ROOT, 'Admin', 'sourcing', `${carpeta}.md`)) ? readFileSync(resolve(ROOT, 'Admin', 'sourcing', `${carpeta}.md`), 'utf8') : '';
     if (/P[áa]gina del canal\**[^\n]*:\s*ninguna/i.test(nota)) { sinCanal.push(id); continue; } // club desaparecido o sin canal vivo
