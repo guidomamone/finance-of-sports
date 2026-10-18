@@ -594,6 +594,14 @@ window.I18N.strings.en = {
   "liga.est.many": "estimates",
   "liga.est.note": "Estimate: the club's accounts for this year are not on the site. The figure is our own calculation, from its other years or, when there are none, from the league and its table position; it is not club data. The total includes estimates only when more than half of the league has real accounts.",
   "liga.cv.missingEst": "clubs in that season: they appear in the table with an estimated revenue (*).",
+  // Finanzas: estadio y camiseta
+  "ctx.title": "Stadium and shirt",
+  "ctx.sub": "Where the club played and who was on the shirt each season. This is context: sponsorship money is in Revenue, under Commercial / Sponsors.",
+  "ctx.estadio": "Stadium",
+  "ctx.capacidad": "Capacity",
+  "ctx.sponsor": "Shirt sponsor",
+  "ctx.marca": "Kit manufacturer",
+  "ctx.fuente": "Source",
   // Finanzas: citar y descargar
   "footer.metodologia": "Methodology",
   "citar.title": "Cite and download",

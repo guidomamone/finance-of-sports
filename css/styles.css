@@ -973,7 +973,15 @@
   .aud-x{font-size:13px;color:#45474d;line-height:1.45;}
   .aud-link{flex:0 0 auto;font-size:13px;}
   .aud-ver{font-size:13px;}
-    /* Finanzas: citar y descargar (js/citar.js) */
+    /* Finanzas: estadio y camiseta (js/contexto.js) */
+  .ctx-tabla{width:100%;min-width:480px;border-collapse:collapse;font-size:14px;}
+  .ctx-tabla th,.ctx-tabla td{text-align:left;padding:10px;border-bottom:1px solid #f0f0ee;vertical-align:top;text-transform:none;letter-spacing:normal;}
+  .ctx-tabla thead th{font-size:14px;font-weight:800;color:var(--azul);border-bottom:1px solid var(--border);}
+  .ctx-tabla tbody th{font-weight:600;color:#45474d;white-space:nowrap;padding-left:0;}
+  .ctx-nada{color:#9a9a9a;}
+  .ctx-tabla tr:last-child th,.ctx-tabla tr:last-child td{border-bottom:0;font-size:12.5px;}
+  .ctx-fuente-l{color:var(--muted);}
+  /* Finanzas: citar y descargar (js/citar.js) */
   .citar-card{display:flex;flex-direction:column;gap:16px;}
   .citar-grilla{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:20px;}
   .citar-bloque{display:flex;flex-direction:column;gap:10px;min-width:0;}
