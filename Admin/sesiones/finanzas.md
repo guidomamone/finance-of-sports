@@ -46,7 +46,11 @@
   entidades con su carga 2025. Lommel SK: la entidad que ya estaba como controlada de CFG suma `clubId` (entra a la página del grupo CFG
   como club con balance) y Voetbalclub Lommel United VZW `vinculada`, con 1 acción de 60.488 (jaarrekening 2025 L694-695). Patro Eisden
   Maasmechelen VZW y Koninklijke Sporting Club Lokeren - Temse VZW, una entidad cada uno, sin dueños. Registro: 50 clubes, 226 entidades,
-  333 relaciones. ASSET_V 1279 en la rama.
+  333 relaciones.
+- To-do 282 b: Spartak 2022, el informe del auditor transcripto palabra por palabra de las 3 páginas escaneadas
+  (`Clubes/Rusia/Spartak Moscow/2022-auditorskoe-zaklyuchenie.md`, nuevo) y su línea: ООО «Аудиторская компания «Мариллион», sin
+  salvedades, sin incertidumbre sobre la continuidad (firmado el 23-03-2023). Quedan 72 informes sin transcribir, todos "FALTA EN EL PDF".
+  ASSET_V 1280 en la rama.
 
 ### Qué queda (para TODO)
 
