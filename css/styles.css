@@ -953,7 +953,27 @@
   .lg-sindatos summary{cursor:pointer;font-weight:700;font-size:14px;color:#45474d;}
   .lg-sindatos p{margin:10px 0 0;font-size:13.5px;color:var(--muted);line-height:1.6;}
   @media (max-width:600px){ .lg-pais{grid-template-columns:1fr;gap:8px;padding:12px 16px;} }
-  /* Ligas: estimados en la tabla de ingresos */
+  /* Finanzas: quién auditó estos números (js/auditoria.js) */
+  .aud-lista{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;}
+  .aud-fila{display:flex;flex-wrap:wrap;align-items:flex-start;gap:6px 16px;padding:12px 0;border-top:1px solid #f0f0ee;}
+  .aud-fila:first-child{border-top:0;}
+  .aud-anio{flex:0 0 72px;font-weight:800;color:var(--azul);font-size:15px;}
+  .aud-quien{flex:1 1 220px;min-width:0;display:flex;flex-direction:column;gap:2px;}
+  .aud-nombre{font-size:15px;font-weight:700;}
+  .aud-gris{color:var(--muted);}
+  .aud-sub{font-size:12.5px;color:var(--muted);}
+  .aud-que{flex:2 1 300px;min-width:0;display:flex;flex-direction:column;gap:6px;}
+  .aud-chips{display:flex;flex-wrap:wrap;gap:6px;}
+  .aud-chip{display:inline-flex;align-items:center;min-height:28px;padding:0 10px;border-radius:999px;font-size:13px;font-weight:700;}
+  .aud-ok{background:#e3f1e7;color:#1b5e33;}
+  .aud-salv{background:#fde9c8;color:#8a4b00;}
+  .aud-mal{background:#fbe1de;color:#9b2c1f;}
+  .aud-gris.aud-chip,.aud-chip.aud-gris{background:#eef0f3;color:#45474d;}
+  .aud-nosabe{background:#f4f4f2;color:var(--muted);font-weight:600;}
+  .aud-x{font-size:13px;color:#45474d;line-height:1.45;}
+  .aud-link{flex:0 0 auto;font-size:13px;}
+  .aud-ver{font-size:13px;}
+    /* Ligas: estimados en la tabla de ingresos */
   .lg-est-tag{flex:0 0 auto;white-space:nowrap;color:#8a4b00;font-weight:600;}
   .lg-fila.estimada .lg-club{flex-wrap:wrap;row-gap:0;}
   .lg-fila.estimada .lg-est-tag{padding-left:2px;}

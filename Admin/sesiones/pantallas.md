@@ -104,10 +104,18 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
 
 ## Después del segundo merge del 2026-10-18
 
+### Qué cambió (para CHANGELOG)
+
+- To-do 282, Finanzas: tarjeta "Quién auditó estos números" (`js/auditoria.js`, `#finAuditoria`, link "Auditoría" en el índice de la
+  página). Una fila por ejercicio elegido, del más nuevo al más viejo: el auditor (nombre corto; debajo el legal y si es firma, contador
+  o organismo), el dictamen como etiqueta de color con una frase simple, "Duda sobre la continuidad" aparte, y "ver en el balance" a la
+  transcripción. Un ejercicio sin dato dice "Todavía no lo revisamos" (no es "sin informe"). Sin ningún dato del club, la tarjeta y su
+  link se esconden. `data/auditoria/_paises.js` se carga eager; el país, al elegir un club. Mockup aprobado: "Finanzas · quién auditó
+  estos números" de "Pantallas FoS". Probado con Vitória (BDO, continuidad), Almagro (persona), Dinamo Zagreb (con salvedades), Akhmat
+  (sin informe) y River (sin dato: escondida). ASSET_V 1267.
+
 ### Qué queda (para TODO)
 
 - 282, Ligas: `data/auditoria/_ligas.js` (`window.LIGA_AUDITORIA[ligaId][anio] = { entidad:{nombre, legal?}, auditor, dictamen,
   continuidad, fuente }`, rama finanzas, commit 5c212ed) está vacío: no hay balance de ninguna entidad organizadora. Ligas no muestra
   nada hasta que haya uno (conseguirlos lo propone finanzas como sourcing).
-- 282, Finanzas: mockup "Finanzas · quién auditó estos números" en "Pantallas FoS", esperando el ok de Guido; el código espera el
-  próximo merge de finanzas (el dato está en su rama, 6e88784).
