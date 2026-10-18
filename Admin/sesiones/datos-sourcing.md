@@ -50,7 +50,7 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
   `audit.js` lo chequea (`sponsors-desfasado`, P1). ASSET_V 1256.
 - **To-do 273: estadio de Rusia.** Las páginas rusas lo traen en una galería de fichas (sección "Venues"), no en tabla: lector nuevo
   `galeriaEstadios()` en `estadio-sponsor.mjs` (bloques club / estadio / capacidad, se acepta uno solo si las tres filas tienen las mismas
-  celdas). Rusia: estadio de 0 a 55 de 66 ejercicios; total, estadio 82%.
+  celdas). Rusia: estadio de 0 a 55 de 66 ejercicios; total, estadio 82%. ASSET_V 1257.
 
 ## Qué queda (TODO)
 
