@@ -242,6 +242,113 @@ async function paginaLocal(iso, liga, anio, partida, equiposEn) {
   return null;
 }
 
+// TERCERA FUENTE: LA TABLA DE HISTORIA DE CAMISETAS DE LA PÁGINA DEL CLUB (diseño aprobado por Guido, 2026-10-18). Para los ejercicios a
+// los que las páginas de temporada no les dieron sponsor o marca (ligas de ascenso, años viejos): la página del club trae una tabla
+// "Período | Marca | Sponsor" ("Kit manufacturers and shirt sponsors", "Material e patrocinadores", "Indumentaria y patrocinador").
+// QUÉ PÁGINA: la que la página de temporada enlaza en la fila del club (no una búsqueda por nombre: "Racing" o "Nacional" serían de otro
+// club), y desde ella la de la Wikipedia del país por el enlace entre idiomas; además tiene que tener la ficha de club de fútbol.
+// COMPUERTA DEL RANGO: el ejercicio toma el valor de las filas cuyo período lo contiene, y vale solo si todas las lecturas posibles del
+// período dan el mismo valor (ver `filasDelEjercicio`); una celda vacía o dos valores distintos: nada. "Ninguno" no completa (no es un nombre).
+// Si la inglesa y la del país dan valores distintos, tampoco. Solo completa sponsor y marca que falten, con su fuente (`fuenteClub`,
+// campos en `club`).
+const LANG_PAIS = { pt: 'pt', br: 'pt', ar: 'es', co: 'es', pe: 'es', cl: 'es', uy: 'es', mx: 'es', es: 'es', it: 'it', ru: 'ru', gr: 'el', ee: 'et', be: 'nl', nl: 'nl', de: 'de', dk: 'da', tr: 'tr', fr: 'fr', ch: 'de' };
+const FICHA_CLUB = /\{\{\s*(Infobox football club|Info\/Futebol|Info\/Clube de futebol|Info\/Clube|Ficha de club|Ficha de equipo de fútbol|Squadra di calcio|Sportverein|Футбольный клуб|Карточка футбольного клуба|Κουτί πληροφοριών ποδοσφαιρικής ομάδας|Infobox voetbalclub|Infobox Fußballverein|Jalgpalliklubi)/i;
+async function api(lang, q) {
+  for (let i = 0; i < 3; i++) {
+    await dormir(1500 * (i ? 4 * i : 1));
+    try { const r = await fetch(`https://${lang}.wikipedia.org/w/api.php?${q}&format=json`, { headers: { 'User-Agent': 'finance-of-sports/1.0 (https://financeofsports.com; research, pocas consultas)' } }); return JSON.parse(await r.text()); } catch { /* reintenta */ }
+  }
+  return null;
+}
+// el artículo que la página de temporada enlaza para el club: el destino de los [[Destino|Texto]] cuyo texto o destino es el club (gana
+// el nombre exacto; uno parcial, solo si hay un único destino)
+function enlaceDelClub(wikitext, nombres) {
+  const ex = new Set(), pa = new Set();
+  for (const m of sinRefs(wikitext).matchAll(/\[\[([^\]|#]+)(?:\|([^\]]+))?\]\]/g)) {
+    const dest = m[1].trim(); if (/^(File|Image|Archivo|Arquivo|Category|Categoria|Categoría)\s*:/i.test(dest) || /^\d{4}/.test(dest)) continue;
+    const textos = [m[2] || dest, dest];
+    if (textos.some((x) => nombres.some((nm) => corto(nm) === corto(x)))) ex.add(dest);
+    else if (textos.some((x) => nombres.some((nm) => pega(nm, x)))) pa.add(dest);
+  }
+  if (ex.size === 1) return [...ex][0];
+  if (!ex.size && pa.size === 1) return [...pa][0];
+  return null; // ninguno o varios: no se adivina
+}
+// solo las tablas que no tienen otra adentro (Almagro pone la tabla de marcas dentro de una tabla de maquetación)
+function tablasInternas(wikitext) {
+  const out = []; let from = 0;
+  while (true) {
+    const ini = wikitext.indexOf('{|', from); if (ini === -1) break;
+    const fin = wikitext.indexOf('\n|}', ini); if (fin === -1) break;
+    const otra = wikitext.indexOf('{|', ini + 2);
+    if (otra !== -1 && otra < fin) { from = otra; continue; }
+    out.push(...tablas(wikitext.slice(ini, fin) + '\n|}')); from = fin + 3;
+  }
+  return out;
+}
+// "1977/78" o "2008/09–2011/12" (temporadas: por el año en que terminan), "1904–1970", "1995", "2010–present" (años)
+const HOY = new Date().getFullYear();
+function periodo(c) {
+  const s = cleanTexto(c).replace(/present[e]?|actualidad|atualidade|atual|actual|hoy|oggi|heden|heute|настоящее время|σήμερα|today/gi, String(HOY));
+  const temp = [...s.matchAll(/(\d{4})\s*\/\s*(\d{2}|\d{4})(?!\d)|(\d{4})\s*[–-]\s*(\d{2})(?!\d)/g)].map((m) => {
+    const a = +(m[1] || m[3]), b = m[2] || m[4]; const fin = b.length === 4 ? +b : Math.floor(a / 100) * 100 + +b + (+b < a % 100 ? 100 : 0);
+    return fin === a + 1 ? fin : null;
+  });
+  if (temp.length && temp.every((x) => x)) return { tipo: 'temporadas', a: Math.min(...temp), b: Math.max(...temp) };
+  if (temp.length) return null;
+  const anios = [...s.matchAll(/(?<!\d)(1[89]\d{2}|20\d{2})(?!\d)/g)].map((m) => +m[1]);
+  if (!anios.length) return null;
+  const abierto = /\d{4}\s*[–-]\s*$/.test(s); // "2010–"
+  return { tipo: 'anios', a: Math.min(...anios), b: abierto ? HOY : Math.max(...anios) };
+}
+const NINGUNO = /^(none|no|nenhum|nenhuma|ninguno|ninguna|nessuno|нет|καμία|geen|keiner|kein|–|—|-)$|^(no|sin|sem|без|senza)\s+(shirt\s+)?(sponsors?|patrocin\w*|спонсора?|sponsor)$/i;
+// un valor de la tabla ya limpio: un enlace que quedó ("{{bandera}} [[Archivo:...]] [[Kimo (marca)|Kimo]]": cleanTexto toma el primer
+// enlace y si es un archivo devuelve el resto sin desenlazar) vale su texto; "Ninguno", "No sponsors"... es '∅'. Se aplica también al
+// leer la caché, así un ajuste acá no obliga a volver a bajar las páginas.
+const valorLimpio = (v) => { const x = String(v || '').replace(/\[\[(?:[^\]|]*\|)?([^\]]+)\]\]/g, '$1').replace(/\s+/g, ' ').trim(); return !x ? '' : x === '∅' || NINGUNO.test(x) ? '∅' : x; };
+// las tablas de camisetas de una página: { marca: [{ p, v }], sponsor: [{ p, v }] } (p = período; v = nombre, '∅' = ninguno, '' = vacío)
+function camisetasDePagina(wikitext) {
+  const out = { marca: [], sponsor: [] };
+  for (const t of tablasInternas(wikitext)) {
+    const e = t.encabezado;
+    const iP = col(e, /^(period|período|periodo|years?|año|años|ano|anos|temporada|temporadas|season|seasons|época|stagione|anni|сезон|годы|период|περίοδος|έτος|seizoen|jaar|zeitraum|saison)\b/i);
+    if (iP < 0) continue;
+    const iKit = col(e, /kit|manufacturer|outfitter|supplier|fornecedor|material|indumentaria|proveedor|fabricante|marca|fornitore|ausrüster|производител|экипиров|προμηθευτ|kledingsponsor|leverancier/i, /sponsor(?!.*kit)|patrocin|logo/i);
+    const iSp = col(e, /sponsor|patrocin|спонсор|χορηγ/i, /back|sleeve|short|secondary|tecnic|técnic|costas|manga|espalda|kit|kleding|logo/i);
+    if (iKit < 0 && iSp < 0) continue;
+    for (const f of t.grilla) {
+      const p = periodo(f[iP]); if (!p) continue;
+      const val = (x) => valorLimpio(cleanTexto(x));
+      if (iKit >= 0) out.marca.push({ p, v: val(f[iKit]) });
+      if (iSp >= 0) out.sponsor.push({ p, v: val(f[iSp]) });
+    }
+  }
+  return out;
+}
+// las filas cuyo período contiene el ejercicio. Club con ejercicio de año calendario (cierre en diciembre): el año. Club con cierre a mitad
+// de año: la temporada que termina ese año. Una fila de temporadas ("2008/09") se lee sin dudas. Una fila de años ("2009–2012") tiene dos
+// lecturas en un club de temporada partida: hasta la temporada que TERMINA en 2012, o hasta la que EMPIEZA en 2012. Si la tabla encadena
+// sus filas con el mismo año en el borde (1987–1990, 1990–1994...), es la primera (la otra se pisaría); si no, valen las dos y el
+// ejercicio toma TODAS las filas que alguna lectura le da (si dan valores distintos, nada).
+function filasDelEjercicio(filas, y, calendario) {
+  const anios = filas.filter((f) => f.p.tipo === 'anios').sort((a, b) => a.p.a - b.p.a);
+  const encadena = anios.length > 1 && anios.every((f, i) => i === 0 || f.p.a >= anios[i - 1].p.b) && anios.some((f, i) => i > 0 && f.p.a === anios[i - 1].p.b);
+  return filas.filter(({ p }) => {
+    if (p.tipo === 'temporadas') return calendario ? p.a - 1 <= y && y <= p.b : p.a <= y && y <= p.b;
+    if (calendario) return p.a <= y && y <= p.b;
+    if (p.a === p.b) return y === p.a || y === p.a + 1;
+    return encadena ? p.a + 1 <= y && y <= p.b : p.a + 1 <= y && y <= p.b + 1;
+  });
+}
+function valorDelEjercicio(filas, y, calendario) {
+  const fs = filasDelEjercicio(filas, y, calendario); if (!fs.length) return { v: null, por: 'sin fila' };
+  const vs = [...new Set(fs.map((f) => valorLimpio(f.v)))];
+  if (vs.includes('')) return { v: null, por: 'celda vacía' };
+  if (vs.length > 1 && !vs.every((v) => pega(v, vs[0]))) return { v: null, por: `ambiguo (${vs.join(' | ')})` };
+  if (vs[0] === '∅') return { v: null, por: 'la tabla dice ninguno' };
+  return { v: vs[0], por: null };
+}
+
 // CACHÉ POR LIGA-AÑO: tools/club-league-reference/contexto/<iso>.json, { liga: { año: { pagina, lang, revid, estadios, kits } } }. Una página
 // se baja una vez; lo que se lee de ella para cada club y para el índice de sponsors sale de acá (--refrescar la vuelve a bajar).
 const CTX_DIR = resolve(REF, 'contexto');
@@ -290,7 +397,7 @@ async function main() {
   if (soloClub && soloAnio && !pares.some(([id, y]) => id === soloClub && y === +soloAnio)) pares.push([soloClub, +soloAnio, arg('--cierre'), soloLiga || CL[soloClub]?.[soloAnio]]);
   for (const [id, y, ciY, ligaY] of pares) {
     if (soloClub && id !== soloClub) continue; if (soloAnio && String(y) !== String(soloAnio)) continue;
-    const e = { id, y: +y, iso: (CLUBS[id]?.country || id.split('-').pop()).toLowerCase().slice(0, 2) };
+    const e = { id, y: +y, ci: ciY, iso: (CLUBS[id]?.country || id.split('-').pop()).toLowerCase().slice(0, 2) };
     const liga = ligaY; if (soloLiga && liga !== soloLiga) continue;
     if (!liga) { sinLiga++; ejercicios.push(e); continue; }
     e.liga = liga; e.iso = liga.slice(0, 2);
@@ -357,7 +464,59 @@ async function main() {
     for (const iso of tocados) guardarCtx(iso, ctx[iso]);
   }
 
-  const n = { est: 0, cap: 0, sp: 0, kit: 0, soloActualViejo: 0 }; const porLiga = {}; const salida = {}; const faltan = [];
+  // --camisetas: la tabla de historia de camisetas de la página del club, para los clubes con algún ejercicio sin sponsor o sin marca
+  // (caché: tools/club-league-reference/contexto/_clubes.json, { clubId: { enlace, en, local } }; null = se buscó y no hubo)
+  const CLUBES_F = resolve(CTX_DIR, '_clubes.json');
+  const clubesCache = existsSync(CLUBES_F) ? JSON.parse(readFileSync(CLUBES_F, 'utf8')) : {};
+  if (args.includes('--camisetas')) {
+    const faltaKit = (e) => { const p = leida(e); if (!p) return true; const r = delClub(p, nombresDe(e)); if (r.soloActual && !e.ultima) return true; return !r.sponsor || !r.marca; };
+    const pedir = [...new Set(ejercicios.filter((e) => e.page && faltaKit(e)).map((e) => e.id))].filter((id) => refrescar || !clubesCache[id]);
+    console.log(`páginas de club: ${pedir.length} clubes para buscar`);
+    const temporadas = new Map(); // "lang|título" -> wikitext
+    for (const [i, id] of pedir.entries()) {
+      const r = { enlace: null, en: null, local: null };
+      // el enlace, desde la página de temporada de alguno de sus ejercicios (la más nueva primero)
+      for (const e of ejercicios.filter((x) => x.id === id && leida(x)?.pagina).sort((a, b) => b.y - a.y)) {
+        const p = leida(e); const k = `${p.lang}|${p.pagina}`;
+        if (!temporadas.has(k)) temporadas.set(k, (await pagina(p.pagina, p.lang))?.wikitext || '');
+        const dest = enlaceDelClub(temporadas.get(k), nombresDe(e));
+        if (dest) { r.enlace = { lang: p.lang, titulo: dest }; break; }
+      }
+      if (r.enlace) {
+        const q = await api(r.enlace.lang, `action=query&titles=${encodeURIComponent(r.enlace.titulo)}&redirects=1&prop=langlinks&lllimit=500`);
+        const pg = Object.values(q?.query?.pages || {})[0];
+        if (pg && !('missing' in pg)) {
+          const titulos = { [r.enlace.lang]: pg.title }; for (const l of pg.langlinks || []) titulos[l.lang] = l['*'];
+          const local = LANG_PAIS[ejercicios.find((x) => x.id === id).iso];
+          for (const [clave, lang] of [['en', 'en'], ['local', local]]) {
+            if (!lang || !titulos[lang] || (clave === 'local' && lang === 'en')) continue;
+            const art = await pagina(titulos[lang], lang);
+            if (!art || !FICHA_CLUB.test(art.wikitext)) { r[clave] = { pagina: titulos[lang], lang, sinFicha: true }; continue; }
+            r[clave] = { pagina: art.titulo, lang, revid: art.revid, ...camisetasDePagina(art.wikitext) };
+          }
+        }
+      }
+      clubesCache[id] = r;
+      if ((i + 1) % 10 === 0) { console.error(`  ${i + 1}/${pedir.length}`); writeFileSync(CLUBES_F, JSON.stringify(clubesCache, null, 1) + '\n', 'utf8'); }
+    }
+    mkdirSync(CTX_DIR, { recursive: true }); writeFileSync(CLUBES_F, JSON.stringify(clubesCache, null, 1) + '\n', 'utf8');
+  }
+  // lo que la página del club da para un ejercicio: { sponsor, marca, fuente, motivo } (motivo: por qué no dio, para el ensayo)
+  const deClub = (e) => {
+    const c = clubesCache[e.id]; if (!c) return null;
+    const mes = Number((e.ci || cierreDelClub(CLUBS[e.id], e.y).slice(5)).slice(0, 2)); const calendario = mes === 12;
+    const out = { motivo: {} };
+    for (const campo of ['sponsor', 'marca']) {
+      const vals = ['en', 'local'].map((k) => c[k]?.[campo]?.length ? { k, ...valorDelEjercicio(c[k][campo], e.y, calendario) } : null).filter(Boolean);
+      const con = vals.filter((x) => x.v);
+      if (con.length === 2 && !pega(con[0].v, con[1].v) && con[0].v !== con[1].v) { out.motivo[campo] = `en y del país distintos (${con[0].v} | ${con[1].v})`; continue; }
+      if (con.length) { const pg = c[con[0].k]; out[campo] = con[0].v; (out.url ??= {})[campo] = `https://${pg.lang}.wikipedia.org/w/index.php?oldid=${pg.revid}`; }
+      else out.motivo[campo] = !c.enlace ? 'sin enlace al club' : !vals.length ? (c.en?.sinFicha || c.local?.sinFicha ? 'página sin ficha de club' : 'sin tabla de camisetas') : vals.map((x) => `${x.k}: ${x.por}`).join('; ');
+    }
+    return out;
+  };
+
+  const n = { est: 0, cap: 0, sp: 0, kit: 0, soloActualViejo: 0, club: 0 }; const muestraClub = []; const motivosClub = {}; const porLiga = {}; const salida = {}; const faltan = [];
   for (const e of ejercicios) {
     const L = (porLiga[e.liga || '(sin liga)'] ??= { n: 0, est: 0, sp: 0 }); L.n++;
     let d = null;
@@ -377,6 +536,14 @@ async function main() {
         for (const k of puso) d[k] = rl[k];
         if (puso.length) Object.assign(d, { fuenteLocal: `https://${p.local.lang}.wikipedia.org/w/index.php?oldid=${p.local.revid}`, local: puso });
       }
+    }
+    // lo que todavía falta de sponsor y marca, de la tabla de camisetas de la página del club (si se bajó con --camisetas); la fuente de
+    // cada campo, en `club` ({ campo: permalink })
+    const dc = deClub(e);
+    if (dc) {
+      const puso = ['sponsor', 'marca'].filter((k) => d?.[k] == null && dc[k]);
+      if (puso.length) { d ??= {}; for (const k of puso) d[k] = dc[k]; d.club = Object.fromEntries(puso.map((k) => [k, dc.url[k]])); n.club++; muestraClub.push(`${e.id} ${e.y}: ${puso.map((k) => `${k} ${dc[k]}`).join(', ')} (${puso.map((k) => dc.url[k]).join(' ')})`); }
+      for (const k of ['sponsor', 'marca']) if (d?.[k] == null && dc.motivo[k]) { const m = dc.motivo[k].replace(/\(.*\)/, '(...)'); motivosClub[`${k}: ${m}`] = (motivosClub[`${k}: ${m}`] || 0) + 1; if (detalle) console.log(`  club ${e.id} ${e.y} ${k}: ${dc.motivo[k]}`); }
     }
     // el mismo estadio escrito de dos formas se unifica por club (tools/estadio-alias.json; un cambio de nombre real no está ahí)
     if (d?.estadio && aliasEst[e.id]?.[d.estadio]) d.estadio = aliasEst[e.id][d.estadio];
@@ -410,6 +577,8 @@ async function main() {
   }
   const tot = ejercicios.length || 1; const pc = (x) => `${x} (${Math.round((100 * x) / tot)}%)`;
   console.log(`\nde ${ejercicios.length} ejercicios: estadio ${pc(n.est)} · capacidad ${pc(n.cap)} · sponsor ${pc(n.sp)} · marca ${pc(n.kit)}`);
+  if (n.club) { console.log(`completados con la página del club: ${n.club} ejercicios`); for (const x of muestraClub) console.log(`  ${x}`); }
+  if (Object.keys(motivosClub).length) { console.log('página del club, lo que no dio:'); for (const [m, k] of Object.entries(motivosClub).sort((a, b) => b[1] - a[1])) console.log(`  ${k} · ${m}`); }
   if (n.soloActualViejo) console.log(`descartados por tabla de kits "solo la actual" en una temporada vieja: ${n.soloActualViejo}`);
   if (!soloClub) {
     console.log('\npor liga (ejercicios · con estadio · con sponsor):');

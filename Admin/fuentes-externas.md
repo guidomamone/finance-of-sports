@@ -14,7 +14,7 @@ supone nada. Antes de usar una fuente nueva, sumala acá.
 | Dato | Fuente | Dónde vive |
 |---|---|---|
 | Qué clubes juegan cada liga | Wikipedia (páginas de temporada, API de MediaWiki) | `tools/fetch-club-league-reference.mjs` → `tools/club-league-reference/`, `data/club-leagues/` |
-| Estadio, capacidad, sponsor, marca | Wikipedia, revisión fijada (oldid) | `tools/estadio-sponsor.mjs` → `data/contexto/`, `data/sponsors.js`; lo manual en `tools/contexto-manual.json` |
+| Estadio, capacidad, sponsor, marca | Wikipedia, revisión fijada (oldid): páginas de temporada y, para sponsor y marca que falten, la tabla de camisetas de la página del club (`--camisetas`) | `tools/estadio-sponsor.mjs` → `data/contexto/`, `data/sponsors.js`; lo manual en `tools/contexto-manual.json` |
 | Presidentes (gestiones) | Wikipedia y prensa, con `fuente` por gestión | `tools/gestiones-tanda.mjs` → `data/gestiones/` |
 | Tipo de cambio cuando el balance no declara uno (`FX_CLOSE`) | Bancos centrales (tabla de abajo) | `tools/fetch-fx-reference.mjs` → `tools/fx-reference/`, `data/currency-map.js` |
 | Deflactores | BEA vía FRED (USD), Eurostat (EUR) | `fetch-fx-reference.mjs --deflactores` → `data/deflactores.js` |
