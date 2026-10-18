@@ -175,3 +175,15 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
   tenían el 2025), busca la carpeta por nombre cuando la evidencia de carga no la nombra (Argentinos Juniors, RB Bragantino) y avisa si
   `--club` no existe. Corrida de hoy: 0 nuevos, 35 ya bajados sin cargar, 11 a revisar con el navegador (portales con JavaScript o caídos,
   Unternehmensregister, la FPF), 1 sin canal vivo. Solo queda sin URL Unión Magdalena (Colombia, de fos-onboarding).
+- **273: ligas que seguían en null, 16 más.** `ligas-sin-verificar.mjs`: reusa la sección de la página guardada (las listas paulistas son
+  de la Wikipedia en portugués, sección "Participantes"), prueba el año solo y las dos formas partidas, tiene nombres extra por liga
+  (Chile 2011-2017: "Campeonato Nacional Primera División"), vuelve a bajar una lista guardada si el club no está y la nueva contiene a
+  toda la vieja (le faltaba un grupo), reconoce la fila con espacios o sin comillas, y `--detalle`/`--club` para diagnosticar. Lector
+  (`fetch-club-league-reference.mjs`): sin tabla de equipos, junta las tablas de posiciones de grupos disjuntos de 8+ equipos (Super
+  League 2 griega: Norte y Sur). `--contra-cache`: solo cambia `gr-superleague2 2024` por la regla nueva, y es la mejora (suma el grupo
+  Sur): aplicada. Escritas con evidencia: Católica 2011-2016 (Primera), Ferroviária 2010 (Paulista A3) y 2012-2014 (A2), Kifisia 2022,
+  2023 y 2025 (Super League 2), Levadiakos 2022 (Super League 2), Fredericia 2019 (1st Division) y, a mano, Racing 2026 (Primera: "Racing"
+  está en las dos listas de 2026, el de la Nacional es Racing de Córdoba). Estadio 97%, sponsor 86%. ASSET_V 1276.
+  Siguen sin liga, a propósito: Novorizontino 2010 (Segunda División paulista, fuera del catálogo), Dynamo Makhachkala 2021 (tercera
+  categoría rusa, "liga-no-catalogada"), AVS 2021 y 2023 (ejercicios de la sociedad anterior con otro nombre: identidad a confirmar),
+  Racing 2027 (presupuesto, no cerró) y Zulte Waregem 2025 (Bélgica, fos-onboarding).

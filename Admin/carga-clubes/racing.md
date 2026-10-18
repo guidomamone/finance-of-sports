@@ -271,6 +271,12 @@ _antes de la fila 10 (`Pago de remuneraciones otras actividades deportivas`):_
 (Versión 550, to-do 101) los cuatro sub-ítems de "Egresos de otras secciones" como líneas: el colegio es `education_expense`, como 2009-2018.
 ```
 
+### Liga
+
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18), a mano: ar-primera. El nombre "Racing" está en dos listas de 2026: "2026 Argentine Primera División" (Racing Club, Avellaneda) y "2026 Primera Nacional" (Racing de Córdoba). Racing Club juega la Primera; la compuerta de nombre exacto no podía decidir. Antes: null.
+```
+
 ### Presupuesto financiero
 
 ```text

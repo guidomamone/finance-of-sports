@@ -12,6 +12,9 @@ Object.assign(window.CLUB_CONTEXT, {
   'fckobenhavn-dk': {
     2024: {"estadio":"Parken","capacidad":38009,"sponsor":"Unibet","marca":"Adidas","temporada":"2024–25 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371243611"},
   },
+  'fredericia-dk': {
+    2019: {"estadio":"Monjasa Park","capacidad":4000,"sponsor":"Monjasa","marca":"Hummel","temporada":"2019–20 Danish 1st Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1328192521"},
+  },
   'midtjylland-dk': {
     2019: {"estadio":"MCH Arena","capacidad":11800,"sponsor":"Det Faglige Hus","marca":"Nike","temporada":"2018–19 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1324790591"},
   },

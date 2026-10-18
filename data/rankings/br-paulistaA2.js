@@ -12,4 +12,28 @@ window.RANKINGS["br-paulistaA2"] = {
         mix:[["Comercial / Sponsors",0.014],["Estadio",0.099],["Televisión",0.077],["Otros ingresos",0.001]] },
     ],
   },
+  2014: {
+    leagueSize: null,
+    clubs: [
+      { id:"ferroviaria-br", revenue:2.116, reportType:"official_balance_sheet",
+        sourceId:"ferroviaria-br-balanco-2014-b",
+        mix:[["Cuotas Sociales",0.008],["Comercial / Sponsors",1.329],["Estadio",0.057],["Televisión",0.051],["Venta de Jugadores",0.169],["Otros ingresos",0.502]] },
+    ],
+  },
+  2013: {
+    leagueSize: null,
+    clubs: [
+      { id:"ferroviaria-br", revenue:1.696, reportType:"official_balance_sheet",
+        sourceId:"ferroviaria-br-balanco-2013-b",
+        mix:[["Cuotas Sociales",0.016],["Comercial / Sponsors",1.093],["Estadio",0.058],["Televisión",0.06],["Otros ingresos",0.47]] },
+    ],
+  },
+  2012: {
+    leagueSize: null,
+    clubs: [
+      { id:"ferroviaria-br", revenue:2.086, reportType:"official_balance_sheet",
+        sourceId:"ferroviaria-br-balanco-2012",
+        mix:[["Comercial / Sponsors",1.041],["Estadio",0.259],["Televisión",0.052],["Venta de Jugadores",0.106],["Otros ingresos",0.628]] },
+    ],
+  },
 };

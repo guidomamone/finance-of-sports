@@ -75,6 +75,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2021: {"estadio":"Presidente Juan Domingo Perón","capacidad":55389,"sponsor":"Aeroset","marca":"Kappa","temporada":"2021 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274410"},
     2024: {"estadio":"Presidente Juan Domingo Perón","capacidad":53389,"sponsor":"RCA","marca":"Kappa","temporada":"2024 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1365223058"},
     2025: {"estadio":"Presidente Juan Domingo Perón","capacidad":55880,"sponsor":"Betsson","marca":"Kappa","temporada":"2025 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371131086"},
+    2026: {"estadio":"Presidente Juan Domingo Perón","capacidad":55880,"sponsor":"Betsson","marca":"Nike","temporada":"2026 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380814375"},
   },
   'river': {
     2021: {"estadio":"Monumental Antonio Vespucio Liberti","capacidad":70074,"sponsor":"Turkish Airlines","marca":"Adidas","temporada":"2021 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274410"},

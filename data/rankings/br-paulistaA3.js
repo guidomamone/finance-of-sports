@@ -17,4 +17,13 @@ window.RANKINGS["br-paulistaA3"] = {
         mix:[["Comercial / Sponsors",0.544],["Estadio",0.079],["Televisión",0.014],["Venta de Jugadores",0.028],["Otros ingresos",0.066]] },
     ],
   },
+  2010: {
+    leagueSize: null,
+    clubs: [
+      { id:"ferroviaria-br", revenue:0.949, reportType:"official_balance_sheet",
+        sourceId:"ferroviaria-br-balanco-2010",
+        mix:[["Comercial / Sponsors",0.613],["Fútbol profesional (sin desglosar por la fuente)",0.346],["Otros ingresos",-0.01]],
+        incluidos:[["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+    ],
+  },
 };

@@ -158,6 +158,12 @@ grossDebt = Langfristet gæld + Kortfristet gæld, EXCLUYE Periodeafgrænsningsp
 cash = Likvide beholdninger.
 ```
 
+### Liga
+
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): dk-1division, verificado contra la lista de equipos de "2019–20 Danish 1st Division" (Wikipedia; tools/club-league-reference/dk.json, dk-1division 2020). Antes: liga-no-catalogada.
+```
+
 ## Gestiones
 
 _antes de Morten Rahbek Hansen (data/gestiones/dk.js):_

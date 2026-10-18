@@ -55,12 +55,16 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Peristeri Stadium","capacidad":9050,"sponsor":"Novibet","marca":"Capelli","temporada":"2024–25 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376143603"},
   },
   'kifisia-gr': {
+    2022: {"estadio":"Municipal Kifisia Stadium","capacidad":1050,"sponsor":"Peugeot","marca":"Macron","temporada":"2021–22 Super League Greece 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376313759"},
+    2023: {"estadio":"Zirineio Municipal Stadium","capacidad":1650,"sponsor":"Peugeot","marca":"Lotto","temporada":"2022–23 Super League Greece 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376913839"},
     2024: {"estadio":"Michalis Kritikopoulos Stadium","capacidad":4851,"sponsor":"Novibet","marca":"Lotto","temporada":"2023–24 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376143509"},
+    2025: {"estadio":"Zirineio Municipal Stadium","capacidad":1650,"temporada":"2024–25 Super League Greece 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373226048"},
   },
   'levadiakos-gr': {
     2019: {"estadio":"Levadia Municipal Stadium","capacidad":5915,"marca":"Legea","temporada":"2018–19 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376492636"},
     2020: {"estadio":"Levadia Municipal Stadium","capacidad":5915,"sponsor":"Kompotis","marca":"Legea","temporada":"2019–20 Super League Greece 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1334262827"},
     2021: {"estadio":"Levadia Municipal Stadium","capacidad":5915,"sponsor":"Kompotis","marca":"Kappa","temporada":"2020–21 Super League Greece 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1343120819"},
+    2022: {"estadio":"Levadia Municipal Stadium","capacidad":5915,"sponsor":"Kompotis","marca":"Legea","temporada":"2021–22 Super League Greece 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376313759"},
     2023: {"estadio":"Levadia Municipal Stadium","capacidad":5915,"sponsor":"Betshop","marca":"Macron","temporada":"2022–23 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1370050785"},
     2024: {"estadio":"Levadia Municipal Stadium","capacidad":5915,"marca":"Macron","temporada":"2023–24 Super League Greece 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373226187"},
     2025: {"estadio":"Levadia Municipal Stadium","capacidad":5915,"sponsor":"monobala","marca":"Macron","temporada":"2024–25 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376143603"},

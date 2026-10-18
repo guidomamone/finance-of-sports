@@ -5,6 +5,12 @@ window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
 Object.assign(window.CLUB_CONTEXT, {
   'catolica-cl': {
     2010: {"temporada":"2010 Primera Division of Chile","fuente":"https://en.wikipedia.org/w/index.php?oldid=1272725356"},
+    2011: {"estadio":"San Carlos de Apoquindo","temporada":"2011 Campeonato Nacional Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380299251"},
+    2012: {"estadio":"San Carlos de Apoquindo","temporada":"2012 Campeonato Nacional Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380299151"},
+    2013: {"estadio":"San Carlos de Apoquindo","temporada":"2013–14 Campeonato Nacional Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1328399457"},
+    2014: {"estadio":"San Carlos de Apoquindo","sponsor":"DirecTV","marca":"Umbro","temporada":"2014–15 Campeonato Nacional Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372286663"},
+    2015: {"estadio":"San Carlos de Apoquindo","sponsor":"DirecTV","marca":"Umbro","temporada":"2015–16 Campeonato Nacional Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1357177916"},
+    2016: {"estadio":"San Carlos de Apoquindo","sponsor":"DirecTV","marca":"Umbro","temporada":"2015–16 Campeonato Nacional Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1357177916"},
     2017: {"estadio":"San Carlos de Apoquindo","capacidad":15000,"sponsor":"DirecTV","marca":"Umbro","temporada":"2017 Campeonato Nacional Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375079111","fuenteLocal":"https://es.wikipedia.org/w/index.php?oldid=175861587","local":["estadio","capacidad"]},
     2018: {"estadio":"San Carlos de Apoquindo","capacidad":15281,"sponsor":"DirecTV","marca":"Umbro","temporada":"2018 Campeonato Nacional Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374153592","fuenteLocal":"https://es.wikipedia.org/w/index.php?oldid=175861331","local":["estadio","capacidad"]},
     2019: {"estadio":"San Carlos de Apoquindo","capacidad":14118,"sponsor":"DirecTV","marca":"Under Armour","temporada":"2019 Campeonato Nacional Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374666848"},

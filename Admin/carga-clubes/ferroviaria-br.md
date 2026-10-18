@@ -1146,6 +1146,10 @@ tools/caja-deuda.mjs (2026-10-17): cash escalón 0 (compuerta: ajuste manual): a
 2014: tools/cargar.mjs 2026-10-10, SIN VERIFICAR
 ```
 
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): br-paulistaA2, verificado contra la lista de equipos de "Campeonato Paulista de Futebol de 2014 - Série A2" (Wikipedia; tools/club-league-reference/br.json, br-paulistaA2 2014). Antes: sin fila.
+```
+
 ## 2013
 
 ### Ingresos
@@ -1290,6 +1294,10 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 2013: tools/cargar.mjs 2026-10-10, SIN VERIFICAR
 ```
 
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): br-paulistaA2, verificado contra la lista de equipos de "Campeonato Paulista de Futebol de 2013 - Série A2" (Wikipedia; tools/club-league-reference/br.json, br-paulistaA2 2013). Antes: sin fila.
+```
+
 ## 2012
 
 ### Ingresos
@@ -1355,6 +1363,10 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 2012: tools/cargar.mjs 2026-10-10, SIN VERIFICAR
 ```
 
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): br-paulistaA2, verificado contra la lista de equipos de "Campeonato Paulista de Futebol de 2012 - Série A2" (Wikipedia; tools/club-league-reference/br.json, br-paulistaA2 2012). Antes: sin fila.
+```
+
 ## 2010
 
 ### Ingresos
@@ -1398,6 +1410,12 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 
 ```text
 tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Empréstimos circulante 236.558,81 + Empréstimos exigível a longo prazo 72.264,77. OCR de escaneo; total pasivo cierra con el total impreso 1.652.042,46. Parcelamentos de tributos 59.372,00 excluido.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Caixa e equivalentes de caixa 239.557,25. Transcripción Mistral OCR de escaneo. Nota 3: caja 239 mil + Bradesco 1,0 mil = 240 mil. El auditor dice que la cuenta caja no refleja adecuadamente la posición (ressalva).
+```
+
+### Liga
+
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): br-paulistaA3, verificado contra la lista de equipos de "Campeonato Paulista de Futebol de 2010 - Série A3" (Wikipedia; tools/club-league-reference/br.json, br-paulistaA3 2010). Antes: sin fila.
 ```
 
 ## Gestiones

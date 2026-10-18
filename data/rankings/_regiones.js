@@ -16,13 +16,14 @@ window.RANKINGS_INDICE = {
   "co-primeraB": [2018,2,null],
   "de-2bundesliga": [2025,2,null],
   "de-bundesliga": [2024,10,null],
+  "dk-1division": [2019,1,null],
   "dk-superliga": [2024,5,null],
   "es-laliga": [2025,14,20],
   "es-segunda": [2025,3,null],
   "gb-championship": [2025,3,null],
   "gb-premierleague": [2025,16,null],
   "gr-superleague": [2025,12,null],
-  "gr-superleague2": [2024,2,null],
+  "gr-superleague2": [2023,3,null],
   "hr-hnl": [2025,5,null],
   "it-seriea": [2025,16,null],
   "it-serieb": [2024,3,null],
@@ -39,7 +40,7 @@ window.RANKINGS_INDICE = {
   "ru-premierliga": [2025,16,null],
 };
 window.RANKINGS_REGION = {
-  mundo: { year:2025, total:196, clubs:[
+  mundo: { year:2025, total:197, clubs:[
     { id:"realmadrid", league:"es-laliga", revenue:1388.522 },
     { id:"fcbarcelona", league:"es-laliga", revenue:1167.798 },
     { id:"bayernmunich-de", league:"de-bundesliga", revenue:1085.912 },

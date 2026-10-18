@@ -7,6 +7,9 @@ window.RANKINGS["gr-superleague2"] = {
       { id:"aellarissa-gr", revenue:3.966, reportType:"official_balance_sheet",
         sourceId:"aellarissa-gr-ael-notes-elp-2025-06-30-a",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.696],["Otros ingresos",1.27]] },
+      { id:"kifisia-gr", revenue:1.454, reportType:"official_balance_sheet",
+        sourceId:"kifisia-gr-notes-2025-06-30",
+        mix:[["Comercial / Sponsors",0.604],["Estadio",0.02],["Televisión",0.047],["Premios por competencias",0.423],["Venta de Jugadores",0.07],["Otros ingresos",0.289]] },
     ],
   },
   2024: {
@@ -29,6 +32,9 @@ window.RANKINGS["gr-superleague2"] = {
       { id:"panserraikos-gr", revenue:1.057, reportType:"official_balance_sheet",
         sourceId:"panserraikos-gr-income-stmt-2023-06-30",
         mix:[["Comercial / Sponsors",0.421],["Estadio",0.188],["Televisión",0.084],["Venta de Jugadores",0.311],["Otros ingresos",0.053]] },
+      { id:"kifisia-gr", revenue:0.911, reportType:"official_balance_sheet",
+        sourceId:"kifisia-gr-notes-2023-06-30",
+        mix:[["Comercial / Sponsors",0.625],["Estadio",0.038],["Televisión",0.046],["Otros ingresos",0.202]] },
     ],
   },
   2022: {
@@ -37,6 +43,13 @@ window.RANKINGS["gr-superleague2"] = {
       { id:"aellarissa-gr", revenue:2.423, reportType:"official_balance_sheet",
         sourceId:"aellarissa-gr-ael-fs-2022-06-30",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.148],["Otros ingresos",0.275]] },
+      { id:"levadiakos-gr", revenue:2.045, reportType:"official_balance_sheet",
+        sourceId:"levadiakos-gr-fs-2022-06-30",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.038],["Otros ingresos",2.007]] },
+      { id:"kifisia-gr", revenue:0.494, reportType:"official_balance_sheet",
+        sourceId:"kifisia-gr-notes-2022-06-30",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.412],["Otros ingresos",0.081]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2021: {

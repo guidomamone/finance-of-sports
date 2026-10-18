@@ -221,6 +221,10 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 tools/cargar.mjs (2026-10-13): null, SIN VERIFICAR (no aparece en los rosters cacheados de 2022 (gr-superleague, gr-superleague2): puede haber jugado otra división).
 ```
 
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): gr-superleague2, verificado contra la lista de equipos de "2021–22 Super League Greece 2" (Wikipedia; tools/club-league-reference/gr.json, gr-superleague2 2022). Antes: sin fila.
+```
+
 ## 2021
 
 ### Ingresos
