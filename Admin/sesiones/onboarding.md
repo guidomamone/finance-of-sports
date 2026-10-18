@@ -34,6 +34,12 @@ Para que la principal lo pase a TODO, CHANGELOG y ESTADO al mergear (skill de ar
   Criterio aplicado (de `pt.md`): club dueño de la SAD → presidente del club (Sporting 2001-2003 con Dias da Cunha aunque la SAD la
   presidía Ribeiro Telles; Marítimo 2021-22 con Rui Fontes aunque firma João Martins); dueño sociedad → presidente que firma.
 
+- `Admin/transcripcion-subagentes/reglas.md`: paso 0 (leer portada e índice; no transcribir lo que no es del club o no trae estado de
+  resultados). Aprobado por Guido el 2026-10-18.
+- Para después del merge de pipeline, en este orden: (1) validar `Admin/lotes/subagentes-validar.txt` (~US$ 3,47); (2) transcribir con
+  Mistral `Admin/lotes/mistral-despues-del-merge.txt` (36: el año más reciente de cada club sin tablas y Viking AS 2025; ~US$ 6, mirar el
+  ensayo ya arreglado); (3) lotes de carga por país, alta con un solo año.
+
 ## Regla nueva (para `Admin/CONVENCIONES-DATOS.md`)
 
 - Dos documentos distintos del mismo club y ejercicio (p. ej. el jaarverslag del club y el depósito en la KvK): entra el que trae el
