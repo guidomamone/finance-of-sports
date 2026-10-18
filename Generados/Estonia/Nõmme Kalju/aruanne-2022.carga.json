@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2022.pdf",
- "generado": "2026-10-18T18:34:33.824Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Muud UEFA toetused\" -> competition_bonus 0.6; \"kaupade, teenuste müük\" -> other_income 0.6"
-  }
- ],
+ "generado": "2026-10-18T18:44:39.290Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-18: 2022-2024 traen los dos estados (konsolideeritud + Lisa 'Emaettevõtte konsolideerimata tulemiaruanne', 2022 L56, 2023 L50, 2024 L50); la controlada es la escuela de fútbol del club: consolidado (CONVENCIONES-DATOS, regla del perímetro, punto 2) (Claude 2026-10-18))",
   "gestión: ningún presidente confirmado cubre 2022 (cierre 2022-12-31); pregunta en la cola (no frena)"
@@ -53,9 +48,9 @@
     "amountNative": 0.014636,
     "disclosureLevel": "aggregated",
     "_pag": 16,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "EJL toetused",
@@ -163,9 +158,9 @@
     "amountNative": 0.002695,
     "disclosureLevel": "aggregated",
     "_pag": 16,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Muud tulud",
@@ -527,11 +522,11 @@
    "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
    "signoFijo": 0.014636,
    "cat": "competition_bonus",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Aporte de la UEFA: competition_bonus (regla fijada para pagos de solidaridad y demás aportes UEFA). [Muud UEFA toetused 14.636 (aruanne-2022.md L584)]",
    "destino": "revenue",
    "amountNative": 0.014636
   },
@@ -695,11 +690,11 @@
    "origen": "verificacion (nota que desglosa \"Tulu ettevõtlusest\")",
    "signoFijo": 0.002695,
    "cat": "other_income",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Venta de bienes y servicios sin detalle: other_income, igual que 'Kaupade, teenuste müük' de Nõmme 2025 y 2024 (cargado). [kaupade, teenuste müük 2.695 (aruanne-2022.md L612)]",
    "destino": "revenue",
    "amountNative": 0.002695
   },
@@ -1187,8 +1182,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 16,
   "lineasGasto": 22,
   "metaFilas": 4,

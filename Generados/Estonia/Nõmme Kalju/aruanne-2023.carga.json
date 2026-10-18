@@ -1,15 +1,10 @@
 {
  "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2023.pdf",
- "generado": "2026-10-18T18:34:33.916Z",
- "frena": [
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-18T18:44:39.379Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-18: 2022-2024 traen los dos estados (konsolideeritud + Lisa 'Emaettevõtte konsolideerimata tulemiaruanne', 2022 L56, 2023 L50, 2024 L50); la controlada es la escuela de fútbol del club: consolidado (CONVENCIONES-DATOS, regla del perímetro, punto 2) (Claude 2026-10-18))",
-  "materialidad: \"Kaupade, teenuste müük\" va como other_income con 0.6 (las dudas de ingresos suman 0.16% de su lado)",
+  "\"Televisión\" en 0: real, por ajuste manual (2026-10-18, fila de TV (L639) en 0 en 2023; los 2.000 son de la otra columna (subagente Sonnet, revisado por Claude 2026-10-18))",
   "gestión: ningún presidente confirmado cubre 2023 (cierre 2023-12-31); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -154,9 +149,9 @@
     "amountNative": 0.001629,
     "disclosureLevel": "aggregated",
     "_pag": 18,
-    "_escalon": "materialidad",
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.16% (≤ 1%) y esta tiene 0.6"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
@@ -428,6 +423,16 @@
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2023.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "fila de TV (L639) en 0 en 2023; los 2.000 son de la otra columna (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
   }
  ],
  "seleccion": {
@@ -642,11 +647,11 @@
    "origen": "verificacion (nota que desglosa \"Tulu ettevõtlusest\")",
    "signoFijo": 0.001629,
    "cat": "other_income",
-   "conf": 0.6,
-   "escalon": "materialidad",
-   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.16% (≤ 1%) y esta tiene 0.6",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": false,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Venta de bienes y servicios sin detalle: other_income, igual que 'Kaupade, teenuste müük' de Nõmme 2025 y 2024 (cargado). [kaupade, teenuste müük 2.695 (aruanne-2022.md L612)]",
    "destino": "revenue",
    "amountNative": 0.001629
   },
@@ -994,12 +999,6 @@
    "destino": "netInterest"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (estado)": "gastos sin signo (se invierten)",
@@ -1088,8 +1087,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 14,
   "lineasGasto": 21,
   "metaFilas": 2,

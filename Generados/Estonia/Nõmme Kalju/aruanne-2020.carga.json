@@ -1,20 +1,11 @@
 {
  "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2020.pdf",
- "generado": "2026-10-18T18:34:33.631Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Jalgpallikooli tegevustoetus\" -> youth_other_sports_expense 0.65; \"Tööjõukulud\" -> wages_squad 0.6"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-18T18:44:39.115Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-18: 2022-2024 traen los dos estados (konsolideeritud + Lisa 'Emaettevõtte konsolideerimata tulemiaruanne', 2022 L56, 2023 L50, 2024 L50); la controlada es la escuela de fútbol del club: consolidado (CONVENCIONES-DATOS, regla del perímetro, punto 2) (Claude 2026-10-18))",
-  "materialidad: \"EJL Naiste meistriliiga kvaliteedi tõus\" va como womens_football con 0.6 (las dudas de ingresos suman 0.94% de su lado)",
-  "materialidad: \"kaupade, teenuste müük\" va como other_income con 0.6 (las dudas de ingresos suman 0.94% de su lado)",
+  "materialidad: \"EJL Naiste meistriliiga kvaliteedi tõus\" va como womens_football con 0.6 (las dudas de ingresos suman 0.75% de su lado)",
+  "\"Televisión\" en 0: real, por ajuste manual (2026-10-18, fila de TV (L577) en 0 en 2020; los 19.085 son de la otra columna (subagente Sonnet, revisado por Claude 2026-10-18))",
   "gastos: ningún total impreso igual a la suma de las líneas (-1.150799); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2020 (cierre 2020-12-31); pregunta en la cola (no frena)"
  ],
@@ -102,7 +93,7 @@
     "_pag": 16,
     "_escalon": "materialidad",
     "_conf": 0.6,
-    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.94% (≤ 1%) y esta tiene 0.6"
+    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.75% (≤ 1%) y esta tiene 0.6"
    },
    {
     "rawLabel": "Toetused treeningute korraldamiseks",
@@ -190,9 +181,9 @@
     "amountNative": 0.001986,
     "disclosureLevel": "aggregated",
     "_pag": 16,
-    "_escalon": "materialidad",
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.94% (≤ 1%) y esta tiene 0.6"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Muud tulud",
@@ -222,9 +213,9 @@
     "amountNative": -0.0225,
     "disclosureLevel": "aggregated",
     "_pag": 17,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sportlastoetused",
@@ -362,9 +353,9 @@
     "amountNative": -0.466204,
     "disclosureLevel": "aggregated",
     "_pag": 6,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Põhivarade kulum ja väärtuse langus",
@@ -449,6 +440,16 @@
    "valor": "official_balance_sheet",
    "linea": null,
    "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L197) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2020.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "fila de TV (L577) en 0 en 2020; los 19.085 son de la otra columna (subagente Sonnet, revisado por Claude 2026-10-18)",
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-18"
@@ -576,7 +577,7 @@
    "cat": "womens_football",
    "conf": 0.6,
    "escalon": "materialidad",
-   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.94% (≤ 1%) y esta tiene 0.6",
+   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.75% (≤ 1%) y esta tiene 0.6",
    "enLista": true,
    "enCola": false,
    "destino": "revenue",
@@ -711,11 +712,11 @@
    "origen": "verificacion (nota que desglosa \"Tulu ettevõtlusest\")",
    "signoFijo": 0.001986,
    "cat": "other_income",
-   "conf": 0.6,
-   "escalon": "materialidad",
-   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.94% (≤ 1%) y esta tiene 0.6",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": false,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Venta de bienes y servicios sin detalle: other_income, igual que 'Kaupade, teenuste müük' de Nõmme 2025 y 2024 (cargado). [kaupade, teenuste müük 2.695 (aruanne-2022.md L612)]",
    "destino": "revenue",
    "amountNative": 0.001986
   },
@@ -757,11 +758,11 @@
    "origen": "verificacion (nota que desglosa \"Jagatud annetused ja toetused\")",
    "signoFijo": 0.0225,
    "cat": "youth_other_sports_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Es un GASTO (Lisa 13 Jagatud annetused ja toetused): apoyo operativo que el club da a su escuela de fútbol Nõmme Kalju FC Jalgpallikool. La categoría propuesta ('Otras secciones deportivas (juvenil, otros deportes, básquet)') es youth_other_sports_expense, la misma de 'Sporditoetus' de Tartu 2025 y  [Jalgpallikooli tegevustoetus 22 500 (aruanne-2020.md Lisa 13, L595)]",
    "destino": "expense",
    "amountNative": -0.0225
   },
@@ -971,11 +972,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.466204,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18: renglón de personal entero a wages_squad (club-data-mapping: Sueldos del Personal -> wages_squad), igual que Tallinna Kalev",
    "destino": "expense",
    "amountNative": -0.466204
   },
@@ -1052,12 +1053,6 @@
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
    "destino": "netInterest"
-  }
- ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
   }
  ],
  "signos": {
@@ -1142,8 +1137,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 18,
   "lineasGasto": 18,
   "metaFilas": 4,

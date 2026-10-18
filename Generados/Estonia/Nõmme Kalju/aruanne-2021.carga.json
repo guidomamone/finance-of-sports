@@ -1,19 +1,10 @@
 {
  "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2021.pdf",
- "generado": "2026-10-18T18:34:33.733Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"- sh. treenerite tasud\" -> wages_squad 0.75"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-18T18:44:39.205Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-18: 2022-2024 traen los dos estados (konsolideeritud + Lisa 'Emaettevõtte konsolideerimata tulemiaruanne', 2022 L56, 2023 L50, 2024 L50); la controlada es la escuela de fútbol del club: consolidado (CONVENCIONES-DATOS, regla del perímetro, punto 2) (Claude 2026-10-18))",
-  "materialidad: \"kaupade, teenuste müük\" va como other_income con 0.6 (las dudas de ingresos suman 0.15% de su lado)",
+  "\"Televisión\" en 0: real, por ajuste manual (2026-10-18, fila en 0 (L560); mismo caso que el 2025 del club (Claude 2026-10-18))",
   "gestión: ningún presidente confirmado cubre 2021 (cierre 2021-12-31); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -168,9 +159,9 @@
     "amountNative": 0.001344,
     "disclosureLevel": "aggregated",
     "_pag": 16,
-    "_escalon": "materialidad",
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.15% (≤ 1%) y esta tiene 0.6"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Muud tulud",
@@ -340,9 +331,9 @@
     "amountNative": -0.12976,
     "disclosureLevel": "aggregated",
     "_pag": 17,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "- sh. muu personali tasud",
@@ -453,6 +444,16 @@
    "valor": "official_balance_sheet",
    "linea": null,
    "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L172) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2021.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "fila en 0 (L560); mismo caso que el 2025 del club (Claude 2026-10-18)",
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-18"
@@ -685,11 +686,11 @@
    "origen": "verificacion (nota que desglosa \"Tulu ettevõtlusest\")",
    "signoFijo": 0.001344,
    "cat": "other_income",
-   "conf": 0.6,
-   "escalon": "materialidad",
-   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.15% (≤ 1%) y esta tiene 0.6",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": false,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Venta de bienes y servicios sin detalle: other_income, igual que 'Kaupade, teenuste müük' de Nõmme 2025 y 2024 (cargado). [kaupade, teenuste müük 2.695 (aruanne-2022.md L612)]",
    "destino": "revenue",
    "amountNative": 0.001344
   },
@@ -945,11 +946,11 @@
    "origen": "verificacion (nota que desglosa \"Tööjõukulud\" > desglose de \"Palgakulu\")",
    "signoFijo": 0.12976,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Mismo criterio que 7198467: los tres 'sh.' (134.930 + 129.760 + 104.335) suman exacto Palgakulu 369.025 y se separan; entrenadores -> wages_squad, 'muu personali tasud' -> admin_general_expense. [- sh. treenerite tasud 129 760 (aruanne-2021.md Lisa 12, L627); Palgakulu 369 025 (L619)]",
    "destino": "expense",
    "amountNative": -0.12976
   },
@@ -1064,12 +1065,6 @@
    "destino": "netInterest"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (estado)": "gastos sin signo (se invierten)",
@@ -1159,8 +1154,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 16,
   "lineasGasto": 21,
   "metaFilas": 3,
