@@ -187,3 +187,17 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
   Siguen sin liga, a propósito: Novorizontino 2010 (Segunda División paulista, fuera del catálogo), Dynamo Makhachkala 2021 (tercera
   categoría rusa, "liga-no-catalogada"), AVS 2021 y 2023 (ejercicios de la sociedad anterior con otro nombre: identidad a confirmar),
   Racing 2027 (presupuesto, no cerró) y Zulte Waregem 2025 (Bélgica, fos-onboarding).
+
+### Qué queda (TODO), al cerrar la sesión
+
+- 273: ~135 ejercicios cargados sin estadio o sin sponsor (110 sin sponsor, 25 sin estadio; `node tools/estadio-sponsor.mjs --ensayo
+  --detalle` los lista). Concentrados en pocos clubes: Ferroviária 11, Novorizontino 10, Sporting CP 8 (años viejos), Fortaleza CEIF 7,
+  Almagro 6, AEL 6, Goiás 5, Criciúma/Católica/Benfica/Alianza Lima 4. **Diseño aprobado por Guido (2026-10-18), sin implementar**:
+  un modo de `estadio-sponsor.mjs` que, para cada club con huecos, busque su página en Wikipedia (inglés y la del país) y lea la tabla
+  de historia de camisetas ("Kit manufacturers and shirt sponsors" / "Indumentaria y patrocinador" / "Fornecedores e patrocinadores":
+  período, marca, sponsor); el ejercicio toma la fila cuyo rango de años lo contiene. Compuerta: la página es del club (el título lo
+  nombra y el texto menciona su país o liga) y el rango se lee sin ambigüedad (dos filas que se pisan en un año: ninguna). Solo completa
+  lo que falta, con fuente aparte (como `fuenteLocal`). Ensayo primero, con muestra para Guido. Lo que no salga, a mano con fuente.
+- 273: `tools/generate-sponsors.js` no suma lo de `contexto-manual.json` (está por año de ejercicio, no por liga-temporada).
+- 273: AVS 2021 y 2023 sin liga: son ejercicios de la sociedad anterior, con otro nombre; confirmar la identidad de la entidad.
+- 252: Unión Magdalena (Colombia, de fos-onboarding) sin URL del canal; 35 PDFs ya bajados sin cargar (onboarding).
