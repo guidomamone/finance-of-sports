@@ -35,7 +35,7 @@ window.RANKINGS_INDICE = {
   "pt-liga3": [2023,3,null],
   "pt-ligaportugal2": [2024,12,null],
   "pt-primeiraliga": [2023,16,null],
-  "ru-pervayaliga": [2022,3,null],
+  "ru-pervayaliga": [2022,4,null],
   "ru-premierliga": [2025,16,null],
 };
 window.RANKINGS_REGION = {

@@ -17,3 +17,11 @@ ids de liga nombran el escalón) están UNA sola vez, en la cabecera de
 `data/club-leagues.js`. No se copian acá.
 ============================================================================
 ```
+
+## Verificación 2026-10-17 (to-do 266)
+
+Cruzado con las listas de Wikipedia de `tools/club-league-reference/ru.json` (ejercicio al 31/12 del año y = la temporada que arranca
+ese año, la que termina en y+1). Coinciden todos los clubes salvo Dynamo Makhachkala, que estaba en la Premier 2021-2023 y no jugó ahí:
+2021 en la FNL-2 (tercera, fuera del catálogo: `liga-no-catalogada`), 2022 y 2023 en la Primera Liga (está en las listas 2022-23 y
+2023-24 de la FNL), 2024 y 2025 en la Premier (listas 2024-25 y 2025-26). El archivo tenía cada club repetido hasta 3 veces (58 claves
+duplicadas; JavaScript se queda con la última, así que no cambiaba nada salvo Makhachkala): se reescribió sin repetidos.

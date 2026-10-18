@@ -27,7 +27,7 @@ const principal = () => resolve(git(['rev-parse', '--path-format=absolute', '--g
 
 // Lo que regenera cada carga: en un conflicto, gana main y después se regenera.
 const GENERADO = (f) => f === 'index.html' || f === 'fuentes.html' || f === 'sitemap.xml' || f.startsWith('fuentes/') || f === 'Admin/ESTADO-clubes.md'
-  || f === 'data/club-index.js' || f.startsWith('data/rankings/');
+  || f === 'data/club-index.js' || f.startsWith('data/rankings/') || f.startsWith('data/faltantes/') || f === 'Admin/sourcing/pendientes.md' || f.startsWith('data/estimados/');
 const DOCS_PRINCIPAL = ['Admin/TODO.md', 'Admin/CHANGELOG.md', 'Admin/ESTADO.md'];
 
 function preparar(destino) {
@@ -35,7 +35,9 @@ function preparar(destino) {
   if (!existsSync(join(wt, '.git'))) throw new Error(`${wt} no es un worktree (no tiene .git)`);
   if (wt === main) throw new Error('esa es la carpeta principal');
   const lista = git(['ls-files', '--others', '--ignored', '--exclude-standard', '-z'], main).split('\0').filter(Boolean)
-    .filter((f) => !/(^|\/)\.DS_Store$/.test(f) && !f.endsWith('/')); // una carpeta con su propio .git (un worktree en .claude/worktrees/) no se enlaza
+    // Ni una carpeta con su propio .git (git la lista entera, con / al final) ni lo de .claude/worktrees/ (los otros worktrees, que en la
+    // principal figuran como ignorados): enlazarlos hacía fallar el comando.
+    .filter((f) => !/(^|\/)\.DS_Store$/.test(f) && !f.endsWith('/') && !f.startsWith('.claude/worktrees/'));
   let hechos = 0, ya = 0;
   for (const f of lista) {
     const dst = join(wt, f); let existe = false; try { lstatSync(dst); existe = true; } catch {}
@@ -74,7 +76,7 @@ async function mergear(rama) {
   const { publicarCambios, snapshot } = await import('./cargar.mjs');
   const r = publicarCambios(snapshot([]), [], []);
   if (!r.ok) { git(['merge', '--abort']); throw new Error(`audit.js dio P0/P1 después del merge; no se mergeó nada. ${r.motivo}`); }
-  git(['add', '-A', '--', 'index.html', 'fuentes.html', 'fuentes', 'sitemap.xml', 'Admin/ESTADO-clubes.md', 'data/club-index.js', 'data/rankings']);
+  git(['add', '-A', '--', 'index.html', 'fuentes.html', 'fuentes', 'sitemap.xml', 'Admin/ESTADO-clubes.md', 'data/club-index.js', 'data/rankings', 'data/faltantes', 'Admin/sourcing/pendientes.md', ...(existsSync(resolve(ROOT, 'data', 'estimados')) ? ['data/estimados'] : [])]);
   const cierres = tocados.filter((f) => f.startsWith('Admin/sesiones/'));
   git(['commit', '-q', '-m', `Merge de ${rama}${conflictos.length ? ` (${conflictos.length} generados resueltos con main y regenerados)` : ''}\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`]);
   console.log(`mergeado ${rama}: ${tocados.length} archivos de la rama, ${conflictos.length} conflictos en lo generado (resueltos), auditoría ${r.audit}.`);

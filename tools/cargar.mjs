@@ -1100,7 +1100,7 @@ export function publicarCambios(snap, extra, escritos) {
     escritos.push(`index.html (ASSET_V ${actual} -> ${nuevo})`);
   }
   // generadores + auditoría
-  for (const g of ['tools/generate-club-index.js', 'tools/generate-fuentes-page.js', 'tools/generate-rankings.js', 'tools/generate-como-corre-stats.js'].filter((g) => existsSync(resolve(ROOT, g)))) {
+  for (const g of ['tools/generate-club-index.js', 'tools/generate-fuentes-page.js', 'tools/generate-rankings.js', 'tools/generate-como-corre-stats.js', 'tools/faltantes-liga.mjs', 'tools/estimar.mjs'].filter((g) => existsSync(resolve(ROOT, g)))) {
     const r = runNode(g, []); if (r.code !== 0) throw new Error(`${g} falló (código ${r.code}): ${r.out.slice(-500)}`);
   }
   const audit = runNode('tools/audit.js', ['--quiet']);
