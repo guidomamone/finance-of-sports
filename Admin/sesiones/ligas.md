@@ -22,3 +22,29 @@
 ## PDF copiados a la carpeta principal (rsync)
 
 - `Ligas/Inglaterra/Premier League/premier-league-group-accounts-2024-25.pdf`
+
+## Después del merge del 2026-10-18
+
+### Qué cambió
+
+- LaLiga: cuentas consolidadas 2024-25 de la LNFP (cartera PDF de laliga.com/transparencia: cuentas firmadas + informe, digitales) en
+  `Ligas/España/LaLiga/`, con sus `.md`. Auditor Netadia Europa, S.L.P. (por encargo del CSD), sin salvedades. Líneas de
+  `LIGA_AUDITORIA` para `es-laliga` y `es-segunda`, 2025.
+- Lega Serie A: nota de sourcing; el bilancio existe y lo audita una società di revisione (estatuto), pero no se publica: candidato a mail.
+- Liga Portugal: nota de sourcing; el Relatório e Contas solo se manda a los asociados (estatuto, art. 42.º): candidato a mail.
+- AFA: nota de sourcing; el balance al 30-06-2025 con informe del auditor existe (boletín 6772) pero no se publica; IGJ con clave fiscal.
+- CBF: nota de sourcing; se conocen los links de los PDF auditados (2013-2025), pero el CDN de la CBF no deja bajarlos desde acá.
+- J.League: balance, resultados e informe del auditor 2025 desde el registro japonés de entidades de interés público (koeki-info.go.jp),
+  en `Ligas/Japón/J.League/`. Auditor 太陽有限責任監査法人 (Grant Thornton Taiyo), opinión limpia. Línea `jp-j1` 2025.
+
+### Qué queda
+
+- CBF: Guido baja el PDF 2025 desde su navegador (link en `Admin/sourcing/Ligas/cbf.md`); después, transcribirlo y cargar la línea.
+- Seguir con EFL y el resto.
+- Lega Serie A, Liga Portugal y AFA: decidir si se les escribe (y, para la AFA, si se pide a la IGJ) (Guido).
+
+### PDF copiados a la carpeta principal (rsync)
+
+- `Ligas/España/LaLiga/laliga-cartera-cuentas-consolidadas-2024-25.pdf`, `laliga-cuentas-anuales-consolidadas-2024-25.pdf`,
+  `laliga-informe-auditoria-consolidado-2024-25.pdf`
+- `Ligas/Japón/J.League/jleague-kashitaishohyo-2025.pdf`, `jleague-sonekikeisansho-2025.pdf`, `jleague-kansahokoku-2025.pdf`
