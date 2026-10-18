@@ -75,12 +75,22 @@ const tracked = execSync('git -c core.quotepath=off ls-files -z "Clubes/*.md"', 
   .split('\0').filter(f => f && !/\/(_|README)/.test(f));
 const trackedSet = new Set(tracked.map(f => f.normalize('NFC')));
 const conBalance = (id, y) => /balance/.test(generic[id]?.fiscalYearMeta?.[y]?.reportType || '');
+// Un documento parcial (documentos-parciales.txt) cuenta solo si el sitio igual publica ese año desde él: su informe opina sobre lo que se
+// muestra. Caso: Atalanta 2022 (Guido, 2026-10-18). El sourceId es el clubId más el nombre del archivo, a veces sin su primera palabra
+// (el club): "atalanta-it-bilancio-consolidato-2022" de "Atalanta-bilancio-consolidato-2022.pdf".
+const slug = (s) => s.toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const esFuenteDe = (pdf, id, y) => {
+  const sid = String(generic[id]?.fiscalYearMeta?.[y]?.sourceId || ''), b = slug(pdf.split('/').pop().replace(/\.pdf$/, ''));
+  return !!sid && (sid.endsWith(b) || sid === `${id}-${b.split('-').slice(1).join('-')}`);
+};
 const mdsDe = {};
 for (const md of tracked) {
   const pdf = md.replace(/\.md$/, '.pdf');
-  if (desc.has(pdf.normalize('NFC')) || parciales.includes(pdf.normalize('NFC'))) continue;
+  if (desc.has(pdf.normalize('NFC'))) continue;
+  const parcial = parciales.includes(pdf.normalize('NFC'));
   const q = quien(join(ROOT, pdf));
   if (q.error || q.clubDeCarpeta || !conBalance(q.clubId, q.year)) continue;
+  if (parcial && !esFuenteDe(pdf, q.clubId, q.year)) continue;
   (mdsDe[`${q.clubId}|${q.year}`] ||= []).push(md);
 }
 
