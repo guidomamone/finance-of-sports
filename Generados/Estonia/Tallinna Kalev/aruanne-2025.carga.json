@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Estonia/Tallinna Kalev/aruanne-2025.pdf",
- "generado": "2026-10-18T13:52:22.503Z",
+ "generado": "2026-10-18T14:04:50.168Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (tallinnakalev-ee)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
@@ -1212,7 +1208,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 11,
   "lineasGasto": 28,
   "metaFilas": 3,

@@ -9,4 +9,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'fcilevadia-ee': { 2025: null },
   'narvatrans-ee': { 2025: null },
   'paidelinnameeskond-ee': { 2025: null },
+  'tallinnakalev-ee': { 2025: null },
 });
