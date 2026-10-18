@@ -167,6 +167,68 @@ Generados/Estonia/Nõmme Kalju/aruanne-2024.categorias.json (escalón de cada fi
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/Nõmme Kalju/aruanne-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/Nõmme Kalju/aruanne-2022.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Liikmetelt saadud tasud | pág. 7, precedente |
+| 2 | Riigi ja omavalitsuste toetus | pág. 16, precedente |
+| 3 | UEFA solidaarsustoetus | pág. 16, precedente |
+| 4 | Muud UEFA toetused | pág. 16, precedente |
+| 5 | EJL toetused | pág. 16, precedente |
+| 6 | Toetused treeningute korraldamiseks | pág. 16, Jev 0.97 |
+| 7 | Muud toetused ECA, LHV, Töötukassa juhendustasu | pág. 16, Jev 0.99 |
+| 8 | Riiklik noorteraha | pág. 16, precedente |
+| 9 | Piletitulu Eesti sisesed võistlused | pág. 16, precedente |
+| 10 | Mängijaõiguste müük | pág. 16, precedente |
+| 11 | TV õiguste müük | pág. 16, precedente |
+| 12 | Renditulu | pág. 16, precedente |
+| 13 | Muu äritegevus | pág. 16, precedente |
+| 14 | Tulu sponsoritelt | pág. 16, precedente |
+| 15 | kaupade, teenuste müük | pág. 16, precedente |
+| 16 | Muud tulud | pág. 7, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Maksuvabad stipendiumid | pág. 17, precedente |
+| 2 | Sportlastoetused | pág. 17, precedente |
+| 3 | Mängijate ülemineku kulud | pág. 17, Jev 0.93 |
+| 4 | Kodumängude korralduskulud | pág. 17, precedente |
+| 5 | Eesti meistrivõistluste osavõtutasu | pág. 17, precedente |
+| 6 | Võistkondade välissõitude kulud | pág. 17, precedente |
+| 7 | Turundus-, sponsorlus- ja reklaamikulud | pág. 17, precedente |
+| 8 | Klubisümboolikaga toodete omahind | pág. 17, precedente |
+| 9 | Klubile kuuluvate ja tema kasutuses olevate hoonete ja rajatistega seotud kulud | pág. 17, precedente |
+| 10 | Klubi administreerimiskulud | pág. 17, precedente |
+| 11 | Meditsiinitarvikud- ja teenused | pág. 17, precedente |
+| 12 | Mänguvormid jm varustus | pág. 17, precedente |
+| 13 | Erakorralised kulud | pág. 17, Jev 1 |
+| 14 | Lootusetute nõuete allahindluskulu | pág. 17, Jev 0.99 |
+| 15 | Muud klassifitseerimata tegevuskulud | pág. 17, Jev 0.96 |
+| 16 | Mängijate palgakulu | pág. 17, precedente |
+| 17 | Mängijate töötasudelt makstud maksud | pág. 17, precedente |
+| 18 | Muu personali palgakulu | pág. 17, precedente |
+| 19 | Muu personali töötasudelt makstud maksud | pág. 17, precedente |
+| 20 | Puhkusereserv | pág. 17, precedente |
+| 21 | Põhivarade kulum ja väärtuse langus | pág. 7, precedente |
+| 22 | Muud kulud | pág. 7, precedente |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("# TULEMIARUANNE", .md L187) (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2021
 
 ### Ingresos
@@ -392,4 +454,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Nõmme Kalju/aruanne-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### nommekalju-ee-aruanne-2022
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Nõmme Kalju/aruanne-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

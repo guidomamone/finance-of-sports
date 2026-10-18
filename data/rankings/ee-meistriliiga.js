@@ -86,7 +86,7 @@ window.RANKINGS["ee-meistriliiga"] = {
   },
   2022: {
     leagueSize: 10,
-    sinDato: ["nommekalju-ee","tallinnakalev-ee","tartutammeka-ee"],
+    sinDato: ["tallinnakalev-ee","tartutammeka-ee"],
     clubs: [
       { id:"floratallinn-ee", revenue:3.871, reportType:"official_balance_sheet",
         sourceId:"floratallinn-ee-aruanne-2022",
@@ -97,6 +97,9 @@ window.RANKINGS["ee-meistriliiga"] = {
       { id:"paidelinnameeskond-ee", revenue:2.475, reportType:"official_balance_sheet",
         sourceId:"paidelinnameeskond-ee-aruanne-2022",
         mix:[["Cuotas Sociales",0.1],["Comercial / Sponsors",0.612],["Estadio",0.064],["Televisión",0.014],["Premios por competencias",1.04],["Venta de Jugadores",0.342],["Otros ingresos",0.303]] },
+      { id:"nommekalju-ee", revenue:0.881, reportType:"official_balance_sheet",
+        sourceId:"nommekalju-ee-aruanne-2022",
+        mix:[["Cuotas Sociales",0.229],["Comercial / Sponsors",0.042],["Estadio",0.003],["Televisión",0.002],["Premios por competencias",0.101],["Venta de Jugadores",0.058],["Otras secciones deportivas",0.004],["Otros ingresos",0.441]] },
       { id:"narvatrans-ee", revenue:0.57, reportType:"official_balance_sheet",
         sourceId:"narvatrans-ee-aruanne-2022",
         mix:[["Cuotas Sociales",0.092],["Comercial / Sponsors",0.068],["Estadio",0.004],["Venta de Jugadores",0.037],["Otras secciones deportivas",0.055],["Otros ingresos",0.314]] },

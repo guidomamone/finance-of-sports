@@ -2,9 +2,9 @@
 window.ESTIMADOS = window.ESTIMADOS || {};
 window.ESTIMADOS["ee-meistriliiga"] = {
   2019: [{"id":"tartutammeka-ee","revenue":1.414,"lo":0.792,"hi":2.682,"caso":"afuera","error":26,"de":[2020]}],
-  2020: [{"id":"tallinnakalev-ee","revenue":0.73,"lo":0.487,"hi":1.11,"caso":"entre","error":19,"de":[2019,2024]}],
-  2021: [{"id":"narvatrans-ee","revenue":0.571,"lo":0.381,"hi":0.869,"caso":"entre","error":19,"de":[2020,2022]},{"id":"tartutammeka-ee","revenue":1.619,"lo":1.08,"hi":2.462,"caso":"entre","error":19,"de":[2020,2025]}],
-  2022: [{"id":"nommekalju-ee","revenue":1.19,"lo":0.794,"hi":1.808,"caso":"entre","error":19,"de":[2021,2024]},{"id":"tallinnakalev-ee","revenue":1.235,"lo":0.824,"hi":1.877,"caso":"entre","error":19,"de":[2019,2024]},{"id":"tartutammeka-ee","revenue":1.875,"lo":1.251,"hi":2.851,"caso":"entre","error":19,"de":[2020,2025]}],
-  2023: [{"id":"nommekalju-ee","revenue":1.36,"lo":0.907,"hi":2.067,"caso":"entre","error":19,"de":[2021,2024]},{"id":"tallinnakalev-ee","revenue":1.575,"lo":1.051,"hi":2.394,"caso":"entre","error":19,"de":[2019,2024]},{"id":"tartutammeka-ee","revenue":2.103,"lo":1.403,"hi":3.197,"caso":"entre","error":19,"de":[2020,2025]}],
-  2024: [{"id":"tartutammeka-ee","revenue":2.332,"lo":1.556,"hi":3.545,"caso":"entre","error":19,"de":[2020,2025]}],
+  2020: [{"id":"tallinnakalev-ee","revenue":0.73,"lo":0.489,"hi":1.109,"caso":"entre","error":19,"de":[2019,2024]}],
+  2021: [{"id":"narvatrans-ee","revenue":0.571,"lo":0.382,"hi":0.868,"caso":"entre","error":19,"de":[2020,2022]},{"id":"tartutammeka-ee","revenue":1.619,"lo":1.084,"hi":2.461,"caso":"entre","error":19,"de":[2020,2025]}],
+  2022: [{"id":"tallinnakalev-ee","revenue":1.235,"lo":0.827,"hi":1.877,"caso":"entre","error":19,"de":[2019,2024]},{"id":"tartutammeka-ee","revenue":1.875,"lo":1.255,"hi":2.85,"caso":"entre","error":19,"de":[2020,2025]}],
+  2023: [{"id":"nommekalju-ee","revenue":1.17,"lo":0.783,"hi":1.778,"caso":"entre","error":19,"de":[2022,2024]},{"id":"tallinnakalev-ee","revenue":1.575,"lo":1.054,"hi":2.393,"caso":"entre","error":19,"de":[2019,2024]},{"id":"tartutammeka-ee","revenue":2.103,"lo":1.408,"hi":3.196,"caso":"entre","error":19,"de":[2020,2025]}],
+  2024: [{"id":"tartutammeka-ee","revenue":2.332,"lo":1.561,"hi":3.544,"caso":"entre","error":19,"de":[2020,2025]}],
 };

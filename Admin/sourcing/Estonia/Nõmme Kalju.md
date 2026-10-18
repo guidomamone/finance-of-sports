@@ -16,3 +16,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2020 desde `Clubes/Estonia/Nõmme Kalju/aruanne-2020.pdf` (sourceId `nommekalju-ee-aruanne-2020`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2021 desde `Clubes/Estonia/Nõmme Kalju/aruanne-2021.pdf` (sourceId `nommekalju-ee-aruanne-2021`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2022 desde `Clubes/Estonia/Nõmme Kalju/aruanne-2022.pdf` (sourceId `nommekalju-ee-aruanne-2022`).
