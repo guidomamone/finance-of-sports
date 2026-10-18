@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.pdf",
   "club": "patro-eisden",
   "year": 2025,
-  "generatedAt": "2026-10-18T06:17:47.032Z",
+  "generatedAt": "2026-10-18T13:54:21.076Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -37,16 +37,6 @@
       "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
     },
     {
-      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-      "lado": "expense",
-      "page": 5,
-      "section": "estado",
-      "values": [
-        0.252396
-      ],
-      "glosa": "Amortizaciones y deterioros de valor de gastos de constitución, inmovilizado intangible y material"
-    },
-    {
       "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
       "lado": "expense",
       "page": 5,
@@ -54,7 +44,7 @@
       "values": [
         0.002006
       ],
-      "glosa": "Deterioros de valor de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
+      "glosa": "Deterioro de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
     },
     {
       "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
@@ -85,6 +75,26 @@
         0.0435
       ],
       "glosa": "Gastos de explotación no recurrentes"
+    },
+    {
+      "label": "Afschrijvingen immateriële vaste activa (spelers)",
+      "lado": "expense",
+      "page": 5,
+      "section": "ajuste manual",
+      "values": [
+        0.092871
+      ],
+      "glosa": "Amortización de inmovilizado intangible (jugadores)"
+    },
+    {
+      "label": "Afschrijvingen materiële vaste activa",
+      "lado": "expense",
+      "page": 5,
+      "section": "ajuste manual",
+      "values": [
+        0.159525
+      ],
+      "glosa": "Amortización de inmovilizado material"
     }
   ]
 }

@@ -2,11 +2,11 @@
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.md",
  "club": "patro-eisden",
  "year": 2025,
- "generatedAt": "2026-10-18T13:10:00.004Z",
- "rubrosHuella": "39d8d189d54b241f4a376dd8b8db8f3a247cb4e7",
- "jevHuella": "bacffc263abb26caed8066f124b404dfe898dd81",
+ "generatedAt": "2026-10-18T13:55:33.230Z",
+ "rubrosHuella": "66c183392d6b24a41b3844f5fd59ae72417cfde7",
+ "jevHuella": "7cfadff802bdb9cdd4bf09d0744e8ac75587ece1",
  "modelo": "claude-opus-5-5",
- "costUsd": 0.0072248,
+ "costUsd": 0,
  "rubros": [
   {
    "label": "Brutomarge (+)/(-)",
@@ -48,24 +48,10 @@
    "confianza": 0.92
   },
   {
-   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "lado": "expense",
-   "section": "estado",
-   "glosa": "Amortizaciones y deterioros de valor de gastos de constitución, inmovilizado intangible y material",
-   "page": 5,
-   "pendiente": true,
-   "jev": "depreciation",
-   "jevConf": 0.53,
-   "escalon": 2,
-   "categoria": "depreciation",
-   "confianza": 0.55,
-   "motivo": "Línea única de amortizaciones intangibles y materiales; dender la mapea a depreciation, anderlecht a pases"
-  },
-  {
    "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
    "lado": "expense",
    "section": "estado",
-   "glosa": "Deterioros de valor de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)",
+   "glosa": "Deterioro de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)",
    "page": 5,
    "pendiente": false,
    "ya": "other_expenses",
@@ -112,6 +98,32 @@
    "jevConf": 0.9,
    "categoria": "exceptional_items",
    "confianza": 0.9
+  },
+  {
+   "label": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "expense",
+   "section": "ajuste manual",
+   "glosa": "Amortización de inmovilizado intangible (jugadores)",
+   "page": 5,
+   "pendiente": false,
+   "ya": "player_amortisation",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "player_amortisation",
+   "confianza": 1
+  },
+  {
+   "label": "Afschrijvingen materiële vaste activa",
+   "lado": "expense",
+   "section": "ajuste manual",
+   "glosa": "Amortización de inmovilizado material",
+   "page": 5,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "depreciation",
+   "confianza": 1
   }
  ]
 }
