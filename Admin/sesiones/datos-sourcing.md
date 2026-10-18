@@ -1,6 +1,53 @@
 # Cierre de la sesión datos-sourcing (rama `datos-sourcing`, worktree `../fos-datos`)
 
-BORRADOR: se completa al cerrar. Lo pasa la sesión principal a TODO, CHANGELOG y ESTADO al mergear (skill de arranque, `worktree.md`).
+Lo pasa la sesión principal a TODO, CHANGELOG y ESTADO al mergear (skill de arranque, `worktree.md`): `node tools/worktree.mjs mergear
+datos-sourcing`. Auditoría de la rama: P0 0 / P1 0. Sin push.
+
+## Qué cambió (para el CHANGELOG)
+
+- **To-do 266, hecho.** `tools/faltantes-liga.mjs`: por liga y año, qué clubes jugaron (listas de Wikipedia) y en qué estado está cada
+  uno (cargado / en-mano / buscado / rebuscar / sin-buscar / cerrado). Genera `data/faltantes/<liga>.js` (para Ligas) y
+  `Admin/sourcing/pendientes.md` (la lista de sourcing, por país, liga más alta y año más reciente primero). El año de un club sale de su
+  fecha de cierre (un 31/12 en liga de temporada partida es la temporada siguiente). Alias confirmados en
+  `tools/club-league-reference/alias.json` (`--sugerir` lista candidatos; `--print`: la medición, 0 alias rotos, 0 alias que faltan).
+  Medido hoy: 7187 club-años en 376 liga-años; cargado 860, en-mano 1452, buscado 2630, sin-buscar 2245 (882 clubes).
+- **Se mantiene solo:** `cargar.mjs` corre `faltantes-liga.mjs` y `estimar.mjs` con los otros generadores; `audit.js` da P1
+  `faltantes-desfasado` y `estimados-desfasado`; `worktree.mjs mergear` los trata como generados.
+- **Listas de equipos:** 57 liga-años nuevos (Argentina 2009-2026 y Primera Nacional, Bundesliga, LaLiga, Dinamarca, Chile, Perú,
+  Croacia, J1, Liga MX) con `tools/listas-lote.mjs` (compuerta: título con la temporada y la liga, tamaño conocido, todos los clubes del
+  sitio adentro); posiciones finales guardadas en 272 liga-años. `fetch-club-league-reference.mjs` más firme: redirecciones, "Club
+  information", tablas de posiciones en plantillas aparte y con `team_order`, códigos con tilde, `{{sort}}`, estadios y atributos de celda
+  fuera, `--json`, User-Agent con el sitio. Medido contra las 320 listas guardadas (`--revalidar`, `--contra-cache`): 26 corregidas a
+  mano, Perú 2020 sacada (traía ciudades).
+- **To-do 270, hecho en lo que se decidió.** `tools/estimar.mjs`: regresión medida con validación cruzada (`--medir`). Un año que falta
+  de un club que tenemos: regresión 22% = interpolar a mano 22%, así que se publica la interpolación simple (18% de error entre dos
+  reales, 25% antes o después, con rango del 80%): `data/estimados/<liga>.js`, 439 club-años en 25 ligas. Club que nunca cargamos: 50%
+  con la posición en la tabla (61% sin ella) contra 56% de la mediana de la liga; queda APAGADO hasta tener más datos (Guido).
+  Lo real gana: nunca hay estimado para un año cargado, se regenera en cada carga, P1 si conviven (probado).
+- **Datos:** `data/club-leagues/ru.js` sin las 58 claves repetidas y con Dynamo Makhachkala 2021 en tercera (`liga-no-catalogada`) y
+  2022-2023 en la Primera Liga (estaba en la Premier); rankings rusos regenerados. Verificación en `Admin/ligas-por-pais/ru.md`.
+- `tools/worktree.mjs preparar`: no enlaza los otros worktrees (`.claude/worktrees/` figura como ignorado en la principal y fallaba).
+
+## Qué queda pendiente (para el TODO)
+
+- **Pantallas:** mostrar `data/faltantes/` en Ligas y `data/estimados/` con el rótulo "estimado" (detalle abajo).
+- **270, club nuevo:** volver a medir (`node tools/estimar.mjs --medir`) cuando haya más clubes cargados; prenderlo solo si le gana a la
+  mediana de la liga con un error que Guido acepte. Otra variable a probar: partidos contra clubes con finanzas (no se midió).
+- **Listas que no salen:** Primera B Metro (sin página con tabla), Pro League belga 2024-25 (el lector no la entiende), Serie C (3
+  grupos por página), Perú 2020 (la tabla pone la ciudad primero). `node tools/listas-lote.mjs` las reintenta.
+- **A revisar:** `data/club-leagues/` pone a Parma en la Serie C en 2018 y en 2017-18 jugó la Serie B.
+- **Carpetas duplicadas en `Clubes/`:** Cardiff y Swansea en `Inglaterra/` y `Gales/`; `Suiza/FC St. Gallen` y `Suiza/St. Gallen`.
+  `faltantes-liga` las lee juntas; no se tocó nada (los PDF no se borran sin chequear el pipeline).
+- **Mejora de script:** `data/club-leagues/ru.js` acumulaba claves repetidas: la tool que lo escribe (probablemente `bfo-rusia.mjs` o
+  `alta-club.mjs`) agrega sin mirar si ya está.
+- Una sesión de sourcing ahora puede arrancar de `Admin/sourcing/pendientes.md` (sin-buscar y rebuscar), en vez de elegir a mano.
+
+## Qué cambia en ESTADO
+
+- Nuevo: por liga y año se sabe qué clubes faltan y en qué estado (`faltantes-liga.mjs`, generado en cada carga); la lista de pendientes
+  de sourcing es `Admin/sourcing/pendientes.md` (generada, no se edita).
+- Nuevo: estimaciones publicadas aparte de lo real, solo años que faltan de clubes que tenemos (`estimar.mjs`); club nuevo apagado.
+- Las listas de Wikipedia (`tools/club-league-reference/`) cubren 376 liga-años y guardan la posición final donde la tabla está completa.
 
 ## Para el worktree de pantallas
 
