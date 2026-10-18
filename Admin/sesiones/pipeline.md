@@ -48,6 +48,12 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
   (prueba-completa + Bélgica y Estonia, con los derivados de la principal copiados un rato): idénticos. Comparar siempre con signo se
   probó y no entra (cambiaba Novorizontino 2014-b, AVS 2023-24 y Portimonense 2022-23, pérdidas impresas sin signo).
 
+- **Los costos financieros belgas (to-do 298 b, parte 1).** `tools/vocabulario.mjs` FIN_GASTO: nl `financiele kosten`, `kosten van schulden`;
+  fr `charges des dettes`. El escalón "financiero por rótulo" de verificar les pone el signo. Caso: Beerschot 2025 cierra exacto sin sus 2
+  ajustes `fila` de signo (antes, el resultado no daba y sumaba 15 líneas fuera del total de gastos). Medido: los 9 belgas sin sus ajustes de
+  signo, ninguno empeora (Beerschot y OH Leuven pasan a cerrar); 376 documentos con los ajustes actuales, 375 idénticos (OH Leuven 2025, en la
+  cola en los dos, deja de sumar dos veces los gastos); prueba-completa (358) idéntica con el archivo final.
+
 ## Qué queda pendiente (para TODO)
 
 - **Escribir caja y deuda en `data/`, en la carpeta principal después del merge** (sin API: escalón 0). Junto con lo que ya dejó la
@@ -73,7 +79,7 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
 
 ## Qué deja de ser cierto en ESTADO
 
-- Los to-dos 288, 289 y 290 se cierran, y la letra a) del 298 (290: Genoa 2022 deja de dar un valor mal; el valor publicado depende del 291).
+- Los to-dos 288, 289 y 290 se cierran, y las letras a) y b1) del 298 (290: Genoa 2022 deja de dar un valor mal; el valor publicado depende del 291).
 - RB Leipzig 2023-2024 y HSV 2024 dejan de estar "sin escala del documento" en caja-deuda.
 
 ## Para fos-onboarding (cómo se carga)
@@ -82,3 +88,4 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
 - caja-deuda pregunta a Sonnet (no a Opus) en el escalón 2 desde el merge: con las respuestas guardadas, lo que se escribe no cambia; en un documento nuevo, contesta Sonnet.
 - `claveFamilia` saca ahora la numeración "bis" (to-do 290): `cargar.mjs` y `verificar.mjs` medidos idénticos (Italia y prueba-completa); cambia solo qué filas "bis" ve el diccionario de deuda de caja-deuda.
 - `verificar.mjs` (to-do 298 a): un documento con resultado impreso negativo que solo cerraba con las filas dadas vuelta (en valor absoluto) ya no cierra: va a la cola. En los 376 medidos no cambió ninguno.
+- `vocabulario.mjs` FIN_GASTO suma tres rótulos belgas (to-do 298 b1): un documento NBB nuevo cierra con "financiero por rótulo" sin el ajuste `fila` de signo de los costos financieros; los ajustes ya puestos siguen dando lo mismo.

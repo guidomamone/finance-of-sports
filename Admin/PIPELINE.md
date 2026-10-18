@@ -261,6 +261,8 @@ Mitigaciones:
   cobrados / ingresos financieros suman, pagados / gastos financieros restan; un rótulo que no dice o dice las dos cosas queda como está
   impreso; listas FIN_INGRESO / FIN_GASTO de `tools/vocabulario.mjs`), con la misma compuerta EXACTA. Caso: Volos 2021-2025 imprime los
   intereses cobrados y pagados los dos en positivo; en bloque, 2021 y 2025 entraban por la tolerancia con el cobrado cargado como gasto.
+  Bélgica (to-do 298 b1): el esquema NBB imprime los costos financieros (65/66B, "Kosten van schulden", "Charges des dettes") en positivo;
+  están en FIN_GASTO y este escalón les pone el signo sin ajustes `fila` (Beerschot 2025).
 - c) Año anterior cargado: la columna del año anterior contra lo que tiene el sitio.
 - d) Año vecino: si el documento del año siguiente ya pasó por extraer, su columna "año anterior" tiene que coincidir.
 - e) Redondeo: si solo falta menos de media unidad por fila, se agrega una fila "Diferencia de redondeo".

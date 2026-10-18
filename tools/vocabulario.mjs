@@ -460,8 +460,11 @@ export const VOCABULARIO = {
     es: ['gastos financieros', 'gasto financiero', 'intereses pagados', 'costos financieros', 'costes financieros'],
     pt: ['despesas financeiras', 'despesa financeira', 'juros passivos', 'juros pagos', 'encargos financeiros', 'gastos similares suportados'],
     en: ['finance costs', 'finance cost', 'financial expense*', 'financial costs', 'interest expense', 'interest payable', 'interest paid'],
-    de: ['zinsaufwand', 'zinsaufwendungen', 'zinsen und ahnliche aufwendungen', 'finanzaufwand', 'finanzaufwendungen'], fr: ['charges financieres'],
-    it: ['oneri finanziari', 'interessi passivi'], nl: ['financiele lasten', 'rentelasten'],
+    // (to-do 298 b1, ok de Guido 2026-10-18) el esquema NBB belga: "Financiële kosten" (65/66B), "Recurrente/Andere financiële kosten",
+    // "Kosten van schulden" (650) y en francés "Charges des dettes" se imprimen positivos; con el rótulo, verificar.mjs les pone el signo
+    // (escalón "financiero por rótulo"). Caso: Beerschot 2025 cierra exacto sin sus ajustes `fila` de signo. Medido: 376 documentos, 375 idénticos.
+    de: ['zinsaufwand', 'zinsaufwendungen', 'zinsen und ahnliche aufwendungen', 'finanzaufwand', 'finanzaufwendungen'], fr: ['charges financieres', 'charges des dettes'],
+    it: ['oneri finanziari', 'interessi passivi'], nl: ['financiele lasten', 'rentelasten', 'financiele kosten', 'kosten van schulden'],
     da: ['finansielle omkostninger', 'renteudgifter'], no: ['finanskostnader', 'rentekostnader', 'finansielle kostnader'],
     sv: ['finansiella kostnader', 'rantekostnader'], hr: ['financijski rashodi', 'rashodi od kamata'], cs: ['financni naklady', 'nakladove uroky'],
     pl: ['koszty finansowe'], tr: ['finansman giderleri', 'finansal giderler', 'faiz giderleri'],
