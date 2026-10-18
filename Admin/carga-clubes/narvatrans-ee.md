@@ -282,6 +282,49 @@ Generados/Estonia/Narva Trans/aruanne-2022.categorias.json (escalón de cada fil
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/Narva Trans/aruanne-2021.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/Narva Trans/aruanne-2021.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Liikmetelt saadud tasud | pág. 5, precedente |
+| 2 | Riigi ja/või KOV toetused | pág. 12, Jev 1 |
+| 3 | EJL toetused | pág. 12, Jev 0.92 |
+| 4 | UEFA solidaarsustoetus noorte- ja kogukonnatööle | pág. 12, precedente |
+| 5 | Mitteseotud osapoolte toetused/annetused | pág. 12, precedente |
+| 6 | Tulu ettevõtlusest | pág. 5, Jev 1 |
+| 7 | Muud tulud | pág. 5, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Mitmesugused tegevuskulud | pág. 5, precedente |
+| 2 | Palgakulu | pág. 14, precedente |
+| 3 | Sotsiaalmaksud | pág. 14, precedente |
+| 4 | töötuskindlustusmaks ettevõttest | pág. 14, precedente |
+| 5 | Sportlase toetus/stipendium | pág. 14, Claude 0.85 |
+| 6 | Muud kulud | pág. 5, precedente |
+
+### Meta
+
+```text
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L125) (Claude 2026-10-18)
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Televisión. sin ninguna fila de derechos de TV en el estado consolidado ni en sus notas (grep ülekandeõigus/teleõigus: 0); mismo caso que el 2025 del club (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-18): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2019, 2020, 2022, 2023, 2024, 2025): Organización de partidos, Administración y gastos generales
+```
+
 ## 2020
 
 ### Ingresos
@@ -438,4 +481,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Narva Trans/aruanne-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### narvatrans-ee-aruanne-2021
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Narva Trans/aruanne-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

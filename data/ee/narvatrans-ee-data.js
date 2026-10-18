@@ -84,6 +84,15 @@ const narvatranseeRevenueLinesByYear = {
     { rawLabel:'Muud klassifitseerimata äritulud', normalizedCategory:'other_income', amountNative:0.017905, disclosureLevel:'aggregated' },
     { rawLabel:'Tulu mängijaõiguste müügist', normalizedCategory:'player_sales', amountNative:0.03036, disclosureLevel:'aggregated' },
   ],
+  2021: [
+    { rawLabel:'Liikmetelt saadud tasud', normalizedCategory:'member_dues', amountNative:0.056015, disclosureLevel:'aggregated' },
+    { rawLabel:'Riigi ja/või KOV toetused', normalizedCategory:'other_income', amountNative:0.176628, disclosureLevel:'aggregated' },
+    { rawLabel:'EJL toetused', normalizedCategory:'other_income', amountNative:0.149214, disclosureLevel:'aggregated' },
+    { rawLabel:'UEFA solidaarsustoetus noorte- ja kogukonnatööle', normalizedCategory:'youth_football', amountNative:0.02317, disclosureLevel:'aggregated' },
+    { rawLabel:'Mitteseotud osapoolte toetused/annetused', normalizedCategory:'other_income', amountNative:0.000928, disclosureLevel:'aggregated' },
+    { rawLabel:'Tulu ettevõtlusest', normalizedCategory:'sponsorship_commercial', amountNative:0.071924, disclosureLevel:'aggregated' },
+    { rawLabel:'Muud tulud', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
+  ],
 };
 const narvatranseeExpenseLinesByYear = {
   2025: [
@@ -217,6 +226,14 @@ const narvatranseeExpenseLinesByYear = {
     { rawLabel:'Sotsiaalmaks muu personali töötasudelt', normalizedCategory:'admin_general_expense', amountNative:-0.050455, disclosureLevel:'aggregated' },
     { rawLabel:'Muud kulud', normalizedCategory:'other_expenses', amountNative:-0.008879, disclosureLevel:'aggregated' },
   ],
+  2021: [
+    { rawLabel:'Mitmesugused tegevuskulud', normalizedCategory:'lump_football_operations_expense', amountNative:-0.118794, disclosureLevel:'aggregated' },
+    { rawLabel:'Palgakulu', normalizedCategory:'wages_squad', amountNative:-0.226123, disclosureLevel:'aggregated' },
+    { rawLabel:'Sotsiaalmaksud', normalizedCategory:'wages_squad', amountNative:-0.068902, disclosureLevel:'aggregated' },
+    { rawLabel:'töötuskindlustusmaks ettevõttest', normalizedCategory:'wages_squad', amountNative:-0.001794, disclosureLevel:'aggregated' },
+    { rawLabel:'Sportlase toetus/stipendium', normalizedCategory:'wages_squad', amountNative:-0.154071, disclosureLevel:'aggregated' },
+    { rawLabel:'Muud kulud', normalizedCategory:'other_expenses', amountNative:-0.008425, disclosureLevel:'aggregated' },
+  ],
 };
 const narvatranseeFiscalYearMeta = {
   2025: {
@@ -293,6 +310,20 @@ const narvatranseeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:0.8154, officialTotalExpenses:0.79334, officialPAT:0.023813,
   },
+  2021: {
+    incluidoEn:{ match_organisation_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, admin_general_expense:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
+    currency:'EUR', fxRef:'EUR@2021-12-31',
+    sourceId:'narvatrans-ee-aruanne-2021',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0.000161, tax:0,
+    sinDesglose: [
+      {renglon:'Mitmesugused tegevuskulud', lado:'expense', importe:0.118794, motivo:'precedente del país: 1 clubes (Harju JK Laagri), titulo:kulud · Claude 2026-10-18 (subagente Sonnet): Igual que 66fbf41: \'Mitmesugused tegevuskulud\' (63.321) es el único gasto operativo, sin nota que lo abra ni personal; se carga como bolsón sin desglosar. Cierra: 63.321+664 (Muud kulud)=63.985 = total impreso. Alternativa: other_expenses. Confirmar junto con 66fbf41. [aruanne-2024.md L97-99 (\'Mitmesugused tegevuskulud -63 321\', \'Kokku kulud -63 985\'); Lisa 4 L218 \'ei ole töötajaid\']'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0.477879, officialTotalExpenses:0.578109, officialPAT:-0.100068,
+  },
 };
 const narvatranseePresupuestoOverlayByYear = {};
 
@@ -337,6 +368,11 @@ Object.assign(sources, {
   'narvatrans-ee-aruanne-2023': {
     id:'narvatrans-ee-aruanne-2023', clubId:'narvatrans-ee',
     title:'Jalgpalliklubi Narva Trans — aruanne-2023 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'narvatrans-ee-aruanne-2021': {
+    id:'narvatrans-ee-aruanne-2021', clubId:'narvatrans-ee',
+    title:'Jalgpalliklubi Narva Trans — aruanne-2021 (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
