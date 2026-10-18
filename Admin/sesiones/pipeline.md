@@ -13,6 +13,12 @@ La sesión principal pasa esto a CHANGELOG, TODO y ESTADO al mergear, y después
   iguales, 13 → 11 distintos, sin errores nuevos; caja, lote y ensayo de clubes idénticos. La compuerta del total impreso (el diseño
   original del to-do) quedó en HALLAZGOS con su medición.
 - **`tools/worktree.mjs preparar`:** saltea las otras copias de `.claude/worktrees/` (reventaba con ENOENT en la primera).
+- **Batch API de Anthropic: `tools/lote-batch.mjs`** (mismo lote y mismo modelo, mitad de precio). Corre `lote.mjs` por olas con
+  `FOS_CLAUDE_BATCH=1` (`tools/claude-batch.mjs`): lo que necesita a Claude se anota en una cola, se manda junto, y el lote vuelve a pasar.
+  Lo usan `claude-llamada.mjs` y `categorizar-claude.mjs`; la transcripción y el tope largo de extraer siguen directos; sin `--reintentar`.
+  Candado propio (una corrida a la vez) y el costo anotado una vez, al recoger. Prueba real: Rapid Wien 2023-24, todas las etapas, US$ 0,085
+  (directo ~US$ 0,17). Sin batch, el lote y el perímetro dan idéntico. `candado.mjs` acepta otro archivo de candado.
+- **Jev en perimetro-a2 (to-do 233): medido y descartado** (21 bien, 2 MAL en 23 decisiones; HALLAZGOS). El código se revirtió.
 
 ## Qué queda pendiente (para TODO)
 
@@ -27,6 +33,15 @@ La sesión principal pasa esto a CHANGELOG, TODO y ESTADO al mergear, y después
   finanziatori".
 - **Duda de criterio (Guido decide; no se reabrió):** ¿el factoring de "debiti verso altri finanziatori" es deuda? En Monza 2024 se
   decidió que no (ajuste del 2026-10-17: 0); en Genoa 2022 el sitio publica 95,7 M que lo incluyen (30,4 M con Banca Sistema, .md L2637).
+
+- **Opus → Sonnet, tarea por tarea y medido** (localizar, extraer, caja-deuda, categorizar, perimetro-a2): siguiente paso de este worktree.
+- **`pipeline.mjs`: el ensayo no anticipa "sin tablas"** (lo encontró la sesión onboarding: Bélgica, ensayo US$ 27,83, la corrida ~US$ 0,17
+  por documento porque rehace el .md con Mistral). Quedan 481 .md así (Bélgica 268, Colombia 208).
+- **Lo que queda del 233 y el 230 se reemplaza** por la Batch API (hecha) y Opus → Sonnet. Jev no sirve para localizar (máximo 255
+  opciones por pregunta y no sigue matices); queda para opciones cerradas y cortas.
+- **`pedirJev` está dos veces** si se vuelve a usar en otra tool (la copia de `caja-deuda.mjs` es la única viva hoy).
+- **Merge:** esta rama agrega líneas a `Admin/registros/ajustes-manuales.jsonl` y `claude-api.jsonl`; si la otra rama también, el conflicto
+  es de líneas agregadas al final y se resuelve con las de las dos.
 
 ## Qué deja de ser cierto en ESTADO
 
