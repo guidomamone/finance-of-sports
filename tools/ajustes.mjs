@@ -51,6 +51,10 @@
 //                     (la pregunta "¿se carga en ITL o se convierte a EUR?" queda respondida) y autoriza el cambio de moneda del club en la
 //                     compuerta 'moneda' de cargar.mjs. Hace falta además el tipo de cambio de ese cierre en FX_CLOSE (data/currency-map.js).
 //                     Caso: Lazio 1998-99, 1999-00 y 2000-01 en liras.
+//   escala            (to-do 289) valor = unidades | miles | millones: la escala de las cifras de ESE año en el documento, tal cual la imprime.
+//                     Escalón 0 de la escala del año en tools/caja-deuda.mjs (escalaDe), antes de factorPorIngresos; con --anio si el PDF
+//                     alimenta dos años. Casos: RB Leipzig 2024 (comparativo "30.06.2024 TEUR"; el 2025 del mismo PDF está en EUR), RB Leipzig
+//                     2023 y HSV 2024 (transcripciones viejas sin tablas: factorPorIngresos no encuentra escala).
 //   fx                (Versión 373) el tipo de cambio de cierre, en moneda por 1 USD: escalón 0 de la escalera del tipo de cambio
 //                     (tools/alta-club.mjs proponerFx, que también usa cargar.mjs). Casos: AC Milan 2021-22 y 2022-23.
 //   fila              (Versión 368) una fila del resultado que la extracción no trajo, o trajo mal: etiqueta, lado (ingreso, gasto,
@@ -68,7 +72,7 @@
 //   node tools/ajustes.mjs                                     lista todos (club, año, campo, valor, motivo)
 //   node tools/ajustes.mjs --agregar "<pdf>" <campo> [--valor "..."] --motivo "..." [--evidencia "pág. N del visor, .md L..."]
 //        fila además: --etiqueta "..." --lado ingreso|gasto|financiero|impuesto [--linea N] [--reemplaza "etiqueta extraída" | --reemplaza-linea N]
-//        caja / deuda además: [--anio AAAA] si el PDF alimenta dos años del sitio (to-do 263, ajusteDelAnio).
+//        caja / deuda / escala además: [--anio AAAA] si el PDF alimenta dos años del sitio (to-do 263, ajusteDelAnio).
 //        [--autor X]: quién lo decidió. Sin --autor firma quien corre el comando (autorPorDefecto, abajo).
 //   import { ajusteDe, ajustesDe } from './ajustes.mjs'        lo que usan los scripts
 // ============================================================================
@@ -79,7 +83,7 @@ import { derivado } from './rutas.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const ARCHIVO = resolve(ROOT, 'Admin', 'registros', 'ajustes-manuales.jsonl');
-export const CAMPOS = ['no-recargar', 'filas-a-mano', 'estado', 'resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro', 'cierre', 'reportType', 'confirmado', 'caja', 'deuda', 'deuda-incluye', 'incluye', 'name', 'moneda'];
+export const CAMPOS = ['no-recargar', 'filas-a-mano', 'estado', 'resultado-final', 'sin-dudas', 'fila', 'fx', 'cero-real', 'desglose', 'anio', 'categoria', 'perimetro', 'cierre', 'reportType', 'confirmado', 'caja', 'deuda', 'deuda-incluye', 'incluye', 'name', 'moneda', 'escala'];
 export const LADOS = ['ingreso', 'gasto', 'financiero', 'impuesto'];
 
 // (to-do 224) UNA LECTURA POR PROCESO, igual que leer() de cola.mjs: 18 de los 36 s de `verificar.mjs --lista` sobre 237 documentos eran
@@ -104,11 +108,11 @@ export function ajusteDe(pdf, campo) {
 }
 // AJUSTE POR PDF Y AÑO (to-do 263, ok de Guido 2026-10-17). Un mismo PDF puede alimentar dos años del sitio (el del documento y su
 // comparativo): Dortmund 2024 y 2025 salen de geschaeftsbericht-2024-25, RB Leipzig 2024 y 2025 de jahresabschluss-2024-25. Con el ajuste
-// buscado solo por PDF los dos años recibían el mismo valor (el de 2025). `caja` y `deuda` pueden llevar `anio` (--anio AAAA).
+// buscado solo por PDF los dos años recibían el mismo valor (el de 2025). `caja`, `deuda` y `escala` (to-do 289) pueden llevar `anio` (--anio AAAA).
 // COMPUERTA (una sola): el ajuste con `anio` vale solo para ese año; el ajuste SIN `anio` vale solo si el PDF alimenta UN año del sitio
 // (`unSoloAnio`), que es como funcionaba en todos los otros PDFs. Si alimenta dos o más y no hay ajuste de ese año, no decide: el año baja
 // al escalón siguiente de su escalera, como un año sin ajuste.
-export const CAMPOS_POR_ANIO = ['caja', 'deuda'];
+export const CAMPOS_POR_ANIO = ['caja', 'deuda', 'escala'];
 export function ajusteDelAnio(pdf, campo, anio, unSoloAnio) {
   const vivos = ajustesDe(pdf).filter((a) => a.campo === campo);
   return vivos.find((a) => a.anio != null && String(a.anio) === String(anio)) || (unSoloAnio ? vivos.find((a) => a.anio == null) || null : null);
@@ -177,6 +181,10 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     // pinta "Incluido en <fila>" o "Posiblemente incluido en <fila>") y no lo trata como una categoría en 0 que debería tener número.
     // Caso: Bahia 2024-2025, member_dues dentro de matchday_competition ("Sócios e bilheteria").
     if (campo === 'incluye' && (!flag('--valor') || !flag('--categoria'))) { console.error('incluye necesita --valor <categoría en 0> y --categoria <donde está> [--posible]'); process.exit(1); }
+    // (to-do 289) escala = la escala de las cifras de ESE año en el documento (unidades | miles | millones), tal cual la imprime (la cita va en
+    // --motivo/--evidencia): escalón 0 de la escala del año en caja-deuda.mjs (escalaDe), antes de factorPorIngresos. Con --anio si el PDF
+    // alimenta dos años. Caso: RB Leipzig 2024, comparativo "30.06.2024 TEUR" del jahresabschluss-2024-25 (el año 2025 está en EUR).
+    if (campo === 'escala' && !['unidades', 'miles', 'millones'].includes(flag('--valor'))) { console.error('escala necesita --valor unidades|miles|millones'); process.exit(1); }
     if (campo === 'deuda' && !flag('--valor')) { console.error('deuda necesita --valor (el número tal cual impreso)'); process.exit(1); }
     if (campo === 'confirmado' && (!flag('--linea') || !flag('--valor'))) { console.error('confirmado necesita --linea N y --valor "el número tal cual en el .md"'); process.exit(1); }
     if (campo === 'moneda' && !/^[A-Z]{3}$/.test(flag('--valor') || '')) { console.error('moneda necesita --valor con el código ISO de 3 letras (ITL, DEM...)'); process.exit(1); }

@@ -884,6 +884,21 @@ export function factorPorIngresos(filas, lineas, md = null) { // `md` sin uso (l
   return mejor?.fac || null;
 }
 
+// LA ESCALA DEL AÑO (to-do 289, ok de Guido 2026-10-18). Escalera de UN dato, la escala con la que se leen las cifras de un año en su documento:
+//   ESCALÓN 0  ajuste manual `escala` (tools/ajustes.mjs: unidades | miles | millones, por PDF y año como `caja` y `deuda`), la escala que el
+//              documento imprime para ese año. Es una decisión con cita: no pasa por compuerta.
+//   ESCALÓN 1  factorPorIngresos, como antes.
+//   nada ──► null ("sin escala del documento").
+// La usan todos los lugares de contexto() que antes llamaban a factorPorIngresos (el año, sus precedentes, el año anterior y el siguiente) y
+// --medir --escalas. Casos: RB Leipzig 2024, comparativo del jahresabschluss-2024-25 impreso en TEUR ("30.06.2024 TEUR") con el 2025 en EUR:
+// factorPorIngresos daba unidades y un ajuste de caja "783" daba 0,000783 M. RB Leipzig 2023 y HSV 2024: transcripciones viejas sin tablas,
+// factorPorIngresos no encuentra escala y ningún ajuste de caja o deuda entraba (completarClub pide la escala).
+export function escalaDe(md, anio, filas, lineas, anios) {
+  const aj = ajusteDelAnio(md.replace(/\.md$/i, '.pdf'), 'escala', anio, anios.filter((x) => x.md === md).length === 1);
+  if (aj && FACTOR_ESCALA[aj.valor]) return FACTOR_ESCALA[aj.valor];
+  return factorPorIngresos(filas, lineas, md);
+}
+
 // ---------------------------------------------------------------- ESCALÓN 2: IA
 const FACTOR_ESCALA = { unidades: 1e-6, miles: 1e-3, millones: 1 };
 const SCHEMA_IA = {
@@ -933,14 +948,14 @@ export function criterioDeudaDe(familias) {
 // y las filas del documento siguiente. `conocidos[cual][anio]` = el valor cargado en el sitio.
 function contexto({ d, anios, a, cual, filasDe, conocidos }) {
   const filas = filasDe(a.md);
-  const factor = factorPorIngresos(filas, d.revenueLinesByYear?.[a.anio], a.md);
+  const factor = escalaDe(a.md, a.anio, filas, d.revenueLinesByYear?.[a.anio], anios);
   const precedentes = Object.entries(conocidos[cual]).filter(([y]) => y !== a.anio).sort(([x], [y]) => Math.abs(x - a.anio) - Math.abs(y - a.anio)).slice(0, 3)
-    .map(([y, v]) => { const o = anios.find((z) => z.anio === y && z.md); return o ? { anio: y, valor: v, filas: filasDe(o.md), factor: factorPorIngresos(filasDe(o.md), d.revenueLinesByYear?.[y], o.md) } : null; }).filter(Boolean);
+    .map(([y, v]) => { const o = anios.find((z) => z.anio === y && z.md); return o ? { anio: y, valor: v, filas: filasDe(o.md), factor: escalaDe(o.md, y, filasDe(o.md), d.revenueLinesByYear?.[y], anios) } : null; }).filter(Boolean);
   const sig = anios.find((o) => Number(o.anio) === Number(a.anio) + 1 && o.md);
   const ant = anios.find((o) => Number(o.anio) === Number(a.anio) - 1 && o.md);
   return { filas, factor, precedentes, anterior: conocidos[cual][String(Number(a.anio) - 1)] ?? null, siguiente: sig ? filasDe(sig.md) : null,
-    anteriorDoc: ant ? filasDe(ant.md) : null, factorAnterior: ant ? factorPorIngresos(filasDe(ant.md), d.revenueLinesByYear?.[ant.anio], ant.md) : null,
-    factorSiguiente: sig ? factorPorIngresos(filasDe(sig.md), d.revenueLinesByYear?.[sig.anio], sig.md) : null,
+    anteriorDoc: ant ? filasDe(ant.md) : null, factorAnterior: ant ? escalaDe(ant.md, ant.anio, filasDe(ant.md), d.revenueLinesByYear?.[ant.anio], anios) : null,
+    factorSiguiente: sig ? escalaDe(sig.md, sig.anio, filasDe(sig.md), d.revenueLinesByYear?.[sig.anio], anios) : null,
     extraDeuda: String(ajusteClubODoc(a.md.replace(/\.md$/i, '.pdf'), 'deuda-incluye')?.valor || '').split(';').map((t) => t.trim()).filter(Boolean),
     ingresos: (d.revenueLinesByYear?.[a.anio] || []).reduce((s, l) => s + (l.amountNative || 0), 0) || null }; // (to-do 260 e) para el techo de la compuerta
 }
@@ -975,7 +990,7 @@ async function medir({ club = null, detalle = false, ia = false, jev = false, ej
     if (club && clubId !== club) continue;
     const anios = aniosDe(d, S).filter((x) => x.md); const filasDe = filasCache();
     // (Versión 456) --escalas: la escala que eligió factorPorIngresos para cada año (para medir cambios de la escala).
-    if (escalas) for (const a of anios) console.log(`  escala ${clubId} ${a.anio}: ${factorPorIngresos(filasDe(a.md), d.revenueLinesByYear?.[a.anio], a.md)}`);
+    if (escalas) for (const a of anios) console.log(`  escala ${clubId} ${a.anio}: ${a.md ? escalaDe(a.md, a.anio, filasDe(a.md), d.revenueLinesByYear?.[a.anio], anios) : null}`);
     // Cada año se lee como nuevo: los conocidos son lo cargado en el sitio, SIN el propio año (no se aprende la respuesta).
     for (const a of anios) for (const cual of ['grossDebt', 'cash']) {
       const real = a.m[cual]; if (real == null) continue;

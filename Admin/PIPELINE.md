@@ -720,6 +720,12 @@ busca por PDF y AÑO (to-do 263). Si un PDF alimenta dos años del club (el del 
 geschaeftsbericht-2024-25), el ajuste lleva `--anio AAAA` y vale solo para ese año; uno sin año vale solo si el PDF alimenta un único año.
 Sin ajuste de ese año, el escalón 0 no decide y el año sigue por la escalera.
 
+La escala del año (`escalaDe`, to-do 289) es su propia escalera: escalón 0, el ajuste manual `escala` (`unidades` | `miles` | `millones`,
+la que el documento imprime para ese año, también por PDF y año con `--anio`); escalón 1, `factorPorIngresos` (la escala con la que más
+ingresos cargados del año aparecen en el documento); si ninguno da, el año queda "sin escala del documento" y no entra ni un ajuste de
+`caja` o `deuda`. Hace falta cuando el comparativo va en otra escala que el año corriente (RB Leipzig 2024: "30.06.2024 TEUR" en el
+jahresabschluss-2024-25, con el 2025 en EUR) o cuando una transcripción vieja sin tablas no deja encontrar la escala (RB Leipzig 2023, HSV 2024).
+
 Diccionario de deuda en italiano (escalón 1, `DEUDA_FINANCIERA` de `tools/vocabulario.mjs`): banche, debiti finanziari, obbligazioni y soci
 per finanziamenti (to-do 262). "Altri finanziatori" (factoring) no entra: el criterio no es el mismo en todos los clubes (Monza 2024 no lo
 cuenta, Genoa 2022 sí).
