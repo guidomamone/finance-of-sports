@@ -378,7 +378,7 @@ ${idx.join('\n')}
   // reporte "desactualizado" cada día aunque no cambie ningún dato, que es exactamente el
   // bug que ya tuvo el footer de esta página (commit 411beaf). Un sitemap sin lastmod es
   // válido: le dice al buscador qué URLs existen, que es lo que hace falta acá.
-  const urls = ['index.html', 'fuentes.html', ...Object.keys(porClub).sort().map(id => `fuentes/${id}.html`)];
+  const urls = ['index.html', 'fuentes.html', 'metodologia.html', ...Object.keys(porClub).sort().map(id => `fuentes/${id}.html`)];
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <!-- GENERADO por tools/generate-fuentes-page.js. No editar a mano. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

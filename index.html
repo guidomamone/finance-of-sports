@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title data-i18n="site.title">El deporte en Números | Las finanzas de los clubes, directo de la fuente</title>
-<link rel="stylesheet" href="css/styles.css?v=1267">
+<link rel="stylesheet" href="css/styles.css?v=1269">
 <!-- Cloudflare Web Analytics -->
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3deae274c6f346eab1a19f78e41ac035"}'></script>
 <!-- End Cloudflare Web Analytics -->
@@ -297,6 +297,7 @@
       <a href="#ligaSimWrap" data-i18n="finanzas.idx.otra">En otra liga</a>
       <a href="#finEstructura" data-i18n="estr.idx" hidden>Estructura</a>
       <a href="#finAuditoria" data-i18n="aud.idx" hidden>Auditoría</a>
+      <a href="#finCitar" data-i18n="citar.title" hidden>Citar y descargar</a>
       <a href="#finanzasFuentesCard" data-i18n="nav.fuentes">Fuentes</a>
     </nav>
 
@@ -528,6 +529,32 @@
       </div>
     </div>
 
+    <!-- CITAR Y DESCARGAR: la cita sugerida, el link y el CSV de lo que se está viendo. La llena FIN_CITAR (js/citar.js). -->
+    <div class="card citar-card" id="finCitar" hidden style="margin-top:22px;">
+      <h2 data-i18n="citar.title">Citar y descargar</h2>
+      <p class="subtitle" data-i18n="citar.sub">Para una nota, un video o una planilla: cómo citar lo que estás viendo y los datos para bajar.</p>
+      <div class="citar-grilla">
+        <div class="citar-bloque">
+          <h3 data-i18n="citar.citaT">Cita sugerida</h3>
+          <blockquote class="citar-texto"></blockquote>
+          <div class="citar-botones">
+            <button type="button" class="citar-btn citar-copiar" data-i18n="citar.copiar">Copiar la cita</button>
+            <button type="button" class="citar-btn citar-sec citar-link" data-i18n="citar.copiarLink">Copiar el link</button>
+          </div>
+          <p class="citar-nota" data-i18n="citar.citaNota">La cita y el link cambian con lo que elegís: ejercicios, moneda, inflación y formato.</p>
+        </div>
+        <div class="citar-bloque">
+          <h3 data-i18n="citar.csvT">Descargar los datos</h3>
+          <p class="citar-csv-que"></p>
+          <div class="citar-botones">
+            <button type="button" class="citar-btn citar-csv"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg><span data-i18n="citar.csv">Descargar CSV</span></button>
+          </div>
+          <p class="citar-nota" data-i18n="citar.csvNota">Se abre en Excel, Google Sheets o Numbers.</p>
+        </div>
+      </div>
+      <a class="citar-metodo" href="metodologia.html" data-i18n="citar.metodo">Cómo armamos estos números: la metodología →</a>
+    </div>
+
     <!-- FICHA DE FUENTE: se arma de `sources{}` + la meta del ejercicio, así que no se desincroniza cuando entra un club nuevo. Se
          llena en renderFuentesCard(), js/finanzas-render.js. -->
     <div class="card" id="finanzasFuentesCard" style="margin-top:22px;">
@@ -689,6 +716,8 @@
        encontraría. -->
   <a href="fuentes.html" style="color:inherit;opacity:.7;" data-i18n="footer.fuentes">Todas las fuentes del sitio</a>
   <span style="opacity:.5;"> · </span>
+  <a href="metodologia.html" style="color:inherit;opacity:.7;" data-i18n="footer.metodologia">Metodología</a>
+  <span style="opacity:.5;"> · </span>
   <a href="privacidad.html" style="color:inherit;opacity:.7;" data-i18n="footer.privacidad">Privacidad</a>
   <span style="opacity:.5;"> · </span>
   <a href="terminos.html" style="color:inherit;opacity:.7;" data-i18n="footer.terminos">Términos de uso</a>
@@ -736,47 +765,48 @@
 <!-- ASSET_V: versión de los assets propios, para invalidar el cache del navegador en cada deploy (si no, un visitante se queda
      con un js/*.js viejo mientras el HTML es nuevo). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o `data/`. Lo leen
      también los cargadores dinámicos (loadClubData, I18N.load, loadRanking). -->
-<script>window.ASSET_V = '1267';</script>
-<script src="data/lang/langs.js?v=1267"></script>
-<script src="js/i18n.js?v=1267"></script>
-<script src="data/clubs.js?v=1267"></script>
+<script>window.ASSET_V = '1269';</script>
+<script src="data/lang/langs.js?v=1269"></script>
+<script src="js/i18n.js?v=1269"></script>
+<script src="data/clubs.js?v=1269"></script>
 <!-- data/club-index.js: el índice liviano de TODOS los clubes (nombre, país, calidad del dato, ejercicios), GENERADO por
      tools/generate-club-index.js. Lo que hay que mostrar de un club ANTES de entrar a él vive adentro de data/<país>/<club>-data.js, que
      no se carga hasta que el visitante lo elige. -->
-<script src="data/club-index.js?v=1267"></script>
+<script src="data/club-index.js?v=1269"></script>
 <!-- data/leagues.js: el CATÁLOGO de la taxonomía del selector (deportes, regiones, países, ligas). NO tiene membresía: qué club
      jugó en qué liga es (club, ejercicio) y vive en data/club-leagues.js. Ver la cabecera de data/leagues.js ("no existe ninguna
      arista club → liga sin año"). -->
-<script src="data/leagues.js?v=1267"></script>
-<script src="data/club-leagues.js?v=1267"></script>
-<script src="data/category-map.js?v=1267"></script>
-<script src="data/site-labels.js?v=1267"></script>
-<script src="data/currency-map.js?v=1267"></script>
-<script src="data/sources-view.js?v=1267"></script>
+<script src="data/leagues.js?v=1269"></script>
+<script src="data/club-leagues.js?v=1269"></script>
+<script src="data/category-map.js?v=1269"></script>
+<script src="data/site-labels.js?v=1269"></script>
+<script src="data/currency-map.js?v=1269"></script>
+<script src="data/sources-view.js?v=1269"></script>
 <!-- Ningún data file de club se carga acá: el sitio abre en la portada sin club, y CUALQUIER club entra por loadClubData() cuando
      el visitante lo elige. -->
-<script src="js/info-tip.js?v=1267"></script>
-<script src="data/deflactores.js?v=1267"></script>
-<script src="js/finanzas-calc.js?v=1267"></script>
-<script src="js/finanzas-render.js?v=1267"></script>
-<script src="js/finanzas-anios.js?v=1267"></script>
-<script src="js/finanzas-multi.js?v=1267"></script>
+<script src="js/info-tip.js?v=1269"></script>
+<script src="data/deflactores.js?v=1269"></script>
+<script src="js/finanzas-calc.js?v=1269"></script>
+<script src="js/finanzas-render.js?v=1269"></script>
+<script src="js/finanzas-anios.js?v=1269"></script>
+<script src="js/finanzas-multi.js?v=1269"></script>
 <!-- Estructura del club: el índice de grupos multiclub (chico, lo usa también el buscador) y la tarjeta de Finanzas. -->
-<script src="data/entidades/_grupos.js?v=1267"></script>
-<script src="js/finanzas-estructura.js?v=1267"></script>
-<script src="js/grupo.js?v=1267"></script>
+<script src="data/entidades/_grupos.js?v=1269"></script>
+<script src="js/finanzas-estructura.js?v=1269"></script>
+<script src="js/grupo.js?v=1269"></script>
 <!-- Quién auditó cada balance: qué países tienen dato (chico) y la tarjeta de Finanzas, que baja el país al elegir un club. -->
-<script src="data/auditoria/_paises.js?v=1267"></script>
-<script src="js/auditoria.js?v=1267"></script>
+<script src="data/auditoria/_paises.js?v=1269"></script>
+<script src="js/auditoria.js?v=1269"></script>
+<script src="js/citar.js?v=1269"></script>
 <!-- js/selector.js: el selector de club. Se alimenta solo de clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja todos
      los clubes sin bajar un solo data/<país>/<club>-data.js. -->
-<script src="js/selector.js?v=1267"></script>
-<script src="data/destacados.js?v=1267"></script>
-<script src="js/liga.js?v=1267"></script>
+<script src="js/selector.js?v=1269"></script>
+<script src="data/destacados.js?v=1269"></script>
+<script src="js/liga.js?v=1269"></script>
 <!-- js/cuenta.js: login con Google vía Supabase + guardado automático de búsquedas. No sabe cómo se renderiza el resto del sitio:
      recibe `reopen` por CUENTA.init() y expone notifyStateChange() para que index.html avise cuando cambia el club/año. -->
-<script src="js/cuenta.js?v=1267"></script>
-<script src="js/principal.js?v=1267"></script>
+<script src="js/cuenta.js?v=1269"></script>
+<script src="js/principal.js?v=1269"></script>
 
 </body>
 </html>
