@@ -1,76 +1,85 @@
 ## Clubes/Estonia/FCI Levadia/aruanne-2025.pdf
 ## Clubes/Estonia/FCI Levadia/aruanne-2019.pdf
-  [9cb7eaf] etapa verificar · duda-de-extraer
-      Pregunta: ¿Se carga 'sh eraldis riigieelarvest' (L384, 7 062) solo como dato informativo 'de lo cual', sin sumarlo al desglose de 'Annetused ja toetused'?  (por qué: L384 es un 'sh' (de lo cual) posterior al total, no una partida aditiva.)
-      Abrí el PDF en la página 12 del visor (la hoja tiene impreso "12" al pie).
-      En la transcripción (Clubes/Estonia/FCI Levadia/aruanne-2019.md), líneas 384-384.
-      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
-
+  [85327ad] etapa cargar · categoria
+      Pregunta: ¿"Liikmemaks" (0.323479 en millones de la moneda del documento) va como "Organización de partidos"?  (por qué: la categorización le dio 0.55 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 13 del visor (la hoja tiene impreso "13" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [7d9f486] etapa cargar · categoria
+      Pregunta: ¿"Kulu mängijate üleminekutest klubisse" (0.0061 en millones de la moneda del documento) va como "Amortización de pases"?  (por qué: la categorización le dio 0.7 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 13 del visor (la hoja tiene impreso "13" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [a7887d7] etapa cargar · perfil
+      Pregunta: ¿FCI Levadia MTÜ tiene otros deportes (básquet, vóley, futsal...) con ingresos o gastos en sus estados financieros?  (por qué: en 2019 "Otras secciones deportivas" da 0; si el club tiene, falta un desglose y se reintenta; si no tiene, el 0 es real. Queda guardado en Admin/registros/perfil-clubes.jsonl para todos sus años.)
+      Propuesta del sistema: responder corregir --valor sí | corregir --valor no (o mandar un agente a buscar)
 ## Clubes/Estonia/FCI Levadia/aruanne-2020.pdf
-  [3c72815] etapa verificar · anio-vecino
-      Qué mirar: Los ingresos de 2020 no coinciden entre este documento y aruanne-2021.pdf (0.786551 contra 1.073554). Puede ser una reexpresión del año en el documento siguiente (pasa), otra tabla u otro perímetro.
-      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
-  [4be9995] etapa verificar · no-cierra
-      Qué mirar: documento del año 2021: ingresos de 2020: 0.786551 en este documento y 1.073554 en aruanne-2021.pdf (columna del año anterior). Revisar si falta o sobra alguna fila, o si hay un renglón del lado equivocado.
-      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
-      En la transcripción (Clubes/Estonia/FCI Levadia/aruanne-2020.md), líneas 118-130.
-  [6413705] etapa verificar · duda-de-extraer
-      Pregunta: ¿Se deja afuera la fila 'sh eraldis riigieelarvest' 7 141 (L352) por ser un 'de los cuales' y no una partida sumable?  (por qué: L352 es una partida informativa incluida dentro del total; no se extrajo.)
-      Abrí el PDF en la página 11 del visor (la hoja tiene impreso "11" al pie).
-      En la transcripción (Clubes/Estonia/FCI Levadia/aruanne-2020.md), líneas 352-352.
-      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
-
-## Clubes/Estonia/FCI Levadia/aruanne-2021.pdf
-  [9eabb21] etapa verificar · anio-vecino
-      Qué mirar: Los ingresos de 2021 no coinciden entre este documento y aruanne-2022.pdf (1.397931 contra 1.683891). Puede ser una reexpresión del año en el documento siguiente (pasa), otra tabla u otro perímetro.
-      Abrí el PDF en la página 5 del visor (no encontré número impreso al pie).
-  [0a0b4e3] etapa verificar · anio-vecino
-      Qué mirar: Los ingresos de 2020 no coinciden entre este documento y aruanne-2020.pdf (1.073554 contra 0.786551). Puede ser una reexpresión del año en el documento siguiente (pasa), otra tabla u otro perímetro.
-      Abrí el PDF en la página 5 del visor (no encontré número impreso al pie).
-  [e1382c7] etapa verificar · no-cierra
-      Qué mirar: documento del año 2022: ingresos de 2021: 1.397931 en este documento y 1.683891 en aruanne-2022.pdf (columna del año anterior). Revisar si falta o sobra alguna fila, o si hay un renglón del lado equivocado.
-      Abrí el PDF en la página 5 del visor (no encontré número impreso al pie).
-      En la transcripción (Clubes/Estonia/FCI Levadia/aruanne-2021.md), líneas 108-130.
-  [7de1525] etapa verificar · no-cierra
-      Qué mirar: documento del año 2020: ingresos de 2020: 0.786551 en aruanne-2020.pdf y 1.073554 en este documento (columna del año anterior). Revisar si falta o sobra alguna fila, o si hay un renglón del lado equivocado.
-      Abrí el PDF en la página 5 del visor (no encontré número impreso al pie).
-      En la transcripción (Clubes/Estonia/FCI Levadia/aruanne-2021.md), líneas 108-130.
-
-## Clubes/Estonia/FCI Levadia/aruanne-2022.pdf
-  [611e90a] etapa verificar · anio-vecino
-      Qué mirar: Los ingresos de 2021 no coinciden entre este documento y aruanne-2021.pdf (1.683891 contra 1.397931). Puede ser una reexpresión del año en el documento siguiente (pasa), otra tabla u otro perímetro.
-      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
-  [9b86fdf] etapa verificar · no-cierra
-      Qué mirar: documento del año 2021: ingresos de 2021: 1.397931 en aruanne-2021.pdf y 1.683891 en este documento (columna del año anterior). Revisar si falta o sobra alguna fila, o si hay un renglón del lado equivocado.
-      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
-      En la transcripción (Clubes/Estonia/FCI Levadia/aruanne-2022.md), líneas 128-153.
-  [0b7549c] etapa verificar · duda-de-extraer
-      Pregunta: ¿Se cargan las filas 'Sellest kajastatud sihtotstarbeliselt finantseeritud projektide otsese kuluna' (L142, L145, L147) solo como informativas ('de los cuales'), sin sumarlas ni restarlas del total de gastos?  (por qué: Son partidas 'de las cuales'. El total de L150 (2 744 777,00) se obtiene sin restarlas ni sumarlas.)
-      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
-      En la transcripción (Clubes/Estonia/FCI Levadia/aruanne-2022.md), líneas 150-150.
-      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
-
-## Clubes/Estonia/FCI Levadia/aruanne-2023.pdf
-  [8d76f0d] etapa verificar · duda-tema
-      Pregunta: ¿Se deja afuera de la carga la LISA 10 'Tööjōukulud' (L468-L471) porque su total 1 472 014,00 no coincide con el (vahesumma) de personal del estado (1 779 200,00, L155)?  (por qué: La nota excluye sportlasetoetus y stipendiumid y agrupa sotsiaalmaksud; sus filas ya están detalladas en el estado (L148-L153).)
-      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
-      En la transcripción (Clubes/Estonia/FCI Levadia/aruanne-2023.md), líneas 148-153.
-      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
-  [c391e32] etapa verificar · duda-de-extraer
-      Pregunta: ¿Se dejan afuera las filas 'Sellest kajastatud sihtotstarbeliselt finantseeritud projektide otsese kuluna' (L154 y L157) por ser informativas ('de lo cual') y no sumar al total?  (por qué: L154 (749 434,00) y L157 (26 448,00) son un 'de los cuales' y no entran en los subtotales L155 ni L160.)
-      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
-      En la transcripción (Clubes/Estonia/FCI Levadia/aruanne-2023.md), líneas 154-160.
-      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
-
-## Clubes/Estonia/FCI Levadia/aruanne-2024.pdf
-  [8f8456b] etapa verificar · duda-tema
-      Pregunta: ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (b16), que reparte el mismo total de annetused ja toetused de b15 en dinerarias y no dinerarias?  (por qué: b16 es otra apertura del mismo total que b15; puede duplicar si se cargan ambos.)
+  [7bd502b] etapa cargar · categoria
+      Pregunta: ¿"Liikmemaks" (0.072986 en millones de la moneda del documento) va como "Organización de partidos"?  (por qué: la categorización le dio 0.55 de confianza, menos que el mínimo 0.8)
       Abrí el PDF en la página 12 del visor (la hoja tiene impreso "12" al pie).
-      En la transcripción (Clubes/Estonia/FCI Levadia/aruanne-2024.md), líneas 401-405.
-      Propuesta del sistema: no (responder aceptar si estás de acuerdo; corregir --valor "sí" si no)
-  [ae249f0] etapa verificar · duda-de-extraer
-      Pregunta: ¿Las filas 'Sellest kajastatud sihtotstarbeliselt finantseeritud projektide otsese kuluna' (L144 y L147) son solo informativas y no se suman como gasto?  (por qué: Son 'de lo cual' y el total de gastos L150 (3 392 165,00) se obtiene restándolas; las marqué lado otro.)
-      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
-      En la transcripción (Clubes/Estonia/FCI Levadia/aruanne-2024.md), líneas 150-150.
-      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
-
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [631195a] etapa cargar · categoria
+      Pregunta: ¿"Kulu mängijate üleminekutest klubisse" (0.02025 en millones de la moneda del documento) va como "Amortización de pases"?  (por qué: la categorización le dio 0.7 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 12 del visor (la hoja tiene impreso "12" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [041748e] etapa cargar · perfil
+      Pregunta: ¿FCI Levadia MTÜ tiene otros deportes (básquet, vóley, futsal...) con ingresos o gastos en sus estados financieros?  (por qué: en 2020 "Otras secciones deportivas" da 0; si el club tiene, falta un desglose y se reintenta; si no tiene, el 0 es real. Queda guardado en Admin/registros/perfil-clubes.jsonl para todos sus años.)
+      Propuesta del sistema: responder corregir --valor sí | corregir --valor no (o mandar un agente a buscar)
+## Clubes/Estonia/FCI Levadia/aruanne-2021.pdf
+  [3c59ca6] etapa cargar · categoria
+      Pregunta: ¿"EJL toetused noortetööle" (0.004146 en millones de la moneda del documento) va como "Otros ingresos"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 11 del visor (no encontré número impreso al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [80f168e] etapa cargar · categoria
+      Pregunta: ¿"Arengustipendiumid" (0.034 en millones de la moneda del documento) va como "Otros ingresos"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 11 del visor (no encontré número impreso al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [7a4de15] etapa cargar · categoria
+      Pregunta: ¿"Kulu mängijate üleminekutest klubisse" (0.072287 en millones de la moneda del documento) va como "Amortización de pases"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 11 del visor (no encontré número impreso al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [c38fea1] etapa cargar · categoria
+      Pregunta: ¿"Toitluskulud" (0.0012 en millones de la moneda del documento) va como "Organización de partidos"?  (por qué: la categorización le dio 0.5 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 11 del visor (no encontré número impreso al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [21e5949] etapa cargar · categoria
+      Pregunta: ¿"Meditsiinitarvikud - ja teenused" (0.02967 en millones de la moneda del documento) va como "Otros gastos"?  (por qué: la categorización le dio 0.5 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 11 del visor (no encontré número impreso al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+## Clubes/Estonia/FCI Levadia/aruanne-2022.pdf
+  [13b1b82] etapa cargar · categoria
+      Pregunta: ¿"EJL toetused noortetööle" (0.005717 en millones de la moneda del documento) va como "Otros ingresos"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 12 del visor (la hoja tiene impreso "12" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [6d20fe0] etapa cargar · categoria
+      Pregunta: ¿"Arengustipendiumid" (0.029178 en millones de la moneda del documento) va como "Otros ingresos"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 12 del visor (la hoja tiene impreso "12" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [bf1d5f8] etapa cargar · categoria
+      Pregunta: ¿"Kulu mängijate üleminekutest klubisse" (0.041067 en millones de la moneda del documento) va como "Amortización de pases"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 12 del visor (la hoja tiene impreso "12" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [a409b6c] etapa cargar · categoria
+      Pregunta: ¿"Meditsiinitarvikud - ja teenused" (0.031674 en millones de la moneda del documento) va como "Otros gastos"?  (por qué: la categorización le dio 0.5 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 12 del visor (la hoja tiene impreso "12" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+## Clubes/Estonia/FCI Levadia/aruanne-2023.pdf
+  [94f21ad] etapa cargar · categoria
+      Pregunta: ¿"EJL toetused noortetööle" (0.017986 en millones de la moneda del documento) va como "Otros ingresos"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 12 del visor (la hoja tiene impreso "12" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [d905e4f] etapa cargar · categoria
+      Pregunta: ¿"Arengustipendiumid" (0.029688 en millones de la moneda del documento) va como "Otros ingresos"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 12 del visor (la hoja tiene impreso "12" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [24049f8] etapa cargar · categoria
+      Pregunta: ¿"Kulu mängijate üleminekutest klubisse" (0.01486 en millones de la moneda del documento) va como "Amortización de pases"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 12 del visor (la hoja tiene impreso "12" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [86c8e84] etapa cargar · categoria
+      Pregunta: ¿"Meditsiinitarvikud - ja teenused" (0.016952 en millones de la moneda del documento) va como "Otros gastos"?  (por qué: la categorización le dio 0.5 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 12 del visor (la hoja tiene impreso "12" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+## Clubes/Estonia/FCI Levadia/aruanne-2024.pdf
+  [036c0ad] etapa cargar · categoria
+      Pregunta: ¿"Kulu mängijate üleminekutest klubisse" (0.136033 en millones de la moneda del documento) va como "Amortización de pases"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 12 del visor (la hoja tiene impreso "12" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)

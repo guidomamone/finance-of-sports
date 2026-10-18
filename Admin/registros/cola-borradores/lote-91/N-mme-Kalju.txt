@@ -1,81 +1,38 @@
 ## Clubes/Estonia/Nõmme Kalju/aruanne-2025.pdf
-## Clubes/Estonia/Nõmme Kalju/aruanne-2022.pdf
-  [339ba1d] etapa cargar · perimetro
-      Pregunta: ¿2022 se carga INDIVIDUAL, como 2025 (el año cargado más cercano)?  (por qué: El documento parece ser solo del GRUPO consolidado (66 menciones, ninguna de estados individuales). ¿El grupo es "el club", o hay que buscar los estados individuales de la sociedad que juega? Criterio usado hasta ahora ( Documento: consolidado; años cargados: 2025 individual)
-      Propuesta del sistema: sí (responder aceptar; si no, corregir --valor individual|consolidado)
-  [88c87cb] etapa verificar · duda-tema
-      Pregunta: ¿Los importes del Tulemiaruanne consolidado (b5) están en euros (unidades)?  (por qué: No se ve ninguna línea 'eurodes' o 'tuhandetes eurodes' sobre b5.)
-      Abrí el PDF en la página 7 del visor (la hoja tiene impreso "7" al pie).
-      En la transcripción (Clubes/Estonia/Nõmme Kalju/aruanne-2022.md), líneas 191-211.
-      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
-  [0d8bc3a] etapa verificar · duda-tema
-      Pregunta: ¿Se deja afuera la fila 'Aruandeperioodi lõpus arvestatud, kuid bilansipäevaks väljamaksmata summad' (L631, 800) por ser un dato informativo de saldos impagos y no una partida de gasto?  (por qué: L631 está debajo del total y no suma en él.)
-      Abrí el PDF en la página 17 del visor (la hoja tiene impreso "17" al pie).
-      En la transcripción (Clubes/Estonia/Nõmme Kalju/aruanne-2022.md), líneas 631-631.
-      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
-  [0b93078] etapa verificar · duda-tema
-      Pregunta: ¿Se dejan afuera las filas L671 (promedio de empleados, 36) y L672 (parte financiada por Töötukassa, 0) de Lisa 13 por no ser partidas de gasto?  (por qué: L671 es una cantidad de personas y L672 un 'sh.' informativo, posteriores al total.)
-      Abrí el PDF en la página 17 del visor (la hoja tiene impreso "17" al pie).
-      En la transcripción (Clubes/Estonia/Nõmme Kalju/aruanne-2022.md), líneas 671-672.
-      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
-
-## Clubes/Estonia/Nõmme Kalju/aruanne-2023.pdf
-  [8311a90] etapa cargar · perimetro
-      Pregunta: ¿2023 se carga INDIVIDUAL, como 2025 (el año cargado más cercano)?  (por qué: El documento parece ser solo del GRUPO consolidado (40 menciones, ninguna de estados individuales). ¿El grupo es "el club", o hay que buscar los estados individuales de la sociedad que juega? Criterio usado hasta ahora ( Documento: consolidado; años cargados: 2025 individual)
-      Propuesta del sistema: sí (responder aceptar; si no, corregir --valor individual|consolidado)
-  [2bd095d] etapa verificar · duda-de-localizar
-      Pregunta: ¿Se deja afuera de la carga el desglose en texto de 'Mängijate üleminekukulud' (agenditasud / mängijaõigused) del bloque b26?  (por qué: b26 abre en texto un renglón de la nota 12 en comisiones a agentes y derechos de jugadores; podría usarse como sub-desglose.)
-      Abrí el PDF en la página 19 del visor (la hoja tiene impreso "19" al pie).
-      En la transcripción (Clubes/Estonia/Nõmme Kalju/aruanne-2023.md), líneas 687-689.
-      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
-
-## Clubes/Estonia/Nõmme Kalju/aruanne-2024.pdf
-  [2543acb] etapa cargar · perimetro
-      Pregunta: ¿2024 se carga INDIVIDUAL, como 2025 (el año cargado más cercano)?  (por qué: El documento parece ser solo del GRUPO consolidado (40 menciones, ninguna de estados individuales). ¿El grupo es "el club", o hay que buscar los estados individuales de la sociedad que juega? Criterio usado hasta ahora ( Documento: consolidado; años cargados: 2025 individual)
-      Propuesta del sistema: sí (responder aceptar; si no, corregir --valor individual|consolidado)
-  [ea8a595] etapa verificar · duda-tema
-      Pregunta: ¿Se deja afuera de la carga el tulemiaruanne individual de la matriz 'Emaettevõtte konsolideerimata tulemiaruanne' (b37) y se carga solo el consolidado b4?  (por qué: El documento trae el estado consolidado (b4, pág. 7) y el individual de la matriz (b37, pág. 23); el club usa consolidado.)
-      Abrí el PDF en la página 7 del visor (la hoja tiene impreso "7" al pie).
-      En la transcripción (Clubes/Estonia/Nõmme Kalju/aruanne-2024.md), líneas 234-253.
-      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
-  [df2387c] etapa verificar · duda-de-extraer
-      Pregunta: ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L635-L638), que muestra 440 078 en 2024 contra 472 901 del estado?  (por qué: L637-L638 es una clasificación alternativa (dineraria/no dineraria) cuyo total 2024 no coincide con L238 ni L631, y la Lisa 9 (b21) ya desglosa el renglón.)
-      Abrí el PDF en la página 17 del visor (la hoja tiene impreso "17" al pie).
-      En la transcripción (Clubes/Estonia/Nõmme Kalju/aruanne-2024.md), líneas 238-638.
-      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
-
 ## Clubes/Estonia/Nõmme Kalju/aruanne-2019.pdf
-  [d0101e7] etapa verificar · anio-vecino
-      Qué mirar: Los ingresos de 2019 no coinciden entre este documento y aruanne-2020.pdf (1.874869 contra 1.979553). Puede ser una reexpresión del año en el documento siguiente (pasa), otra tabla u otro perímetro.
-      Abrí el PDF en la página 6 del visor (la hoja tiene impreso "6" al pie).
-  [90b3dd6] etapa verificar · no-cierra
-      Qué mirar: documento del año 2020: ingresos de 2019: 1.874869 en este documento y 1.979553 en aruanne-2020.pdf (columna del año anterior). Revisar si falta o sobra alguna fila, o si hay un renglón del lado equivocado.
-      Abrí el PDF en la página 6 del visor (la hoja tiene impreso "6" al pie).
-      En la transcripción (Clubes/Estonia/Nõmme Kalju/aruanne-2019.md), líneas 157-173.
-
-## Clubes/Estonia/Nõmme Kalju/aruanne-2020.pdf
-  [7aaf628] etapa verificar · anio-vecino
-      Qué mirar: Los ingresos de 2019 no coinciden entre este documento y aruanne-2019.pdf (1.979553 contra 1.874869). Puede ser una reexpresión del año en el documento siguiente (pasa), otra tabla u otro perímetro.
-      Abrí el PDF en la página 6 del visor (la hoja tiene impreso "6" al pie).
-  [0ac8b9a] etapa verificar · no-cierra
-      Qué mirar: documento del año 2019: ingresos de 2019: 1.874869 en aruanne-2019.pdf y 1.979553 en este documento (columna del año anterior). Revisar si falta o sobra alguna fila, o si hay un renglón del lado equivocado.
-      Abrí el PDF en la página 6 del visor (la hoja tiene impreso "6" al pie).
-      En la transcripción (Clubes/Estonia/Nõmme Kalju/aruanne-2020.md), líneas 203-221.
-  [18e7c77] etapa verificar · duda-tema
-      Pregunta: ¿Se deja afuera el cuadro 'Rahalised ja mitterahalised annetused' (b16) por ser un desglose alternativo del mismo total de Annetused ja toetused ya abierto en b15?  (por qué: b16 abre el mismo total que b15 por otro criterio (rahaline/mitterahaline); cargar ambos duplicaría el renglón.)
-      Abrí el PDF en la página 16 del visor (la hoja tiene impreso "16" al pie).
-      En la transcripción (Clubes/Estonia/Nõmme Kalju/aruanne-2020.md), líneas 545-557.
-      Propuesta del sistema: no (responder aceptar si estás de acuerdo; corregir --valor "sí" si no)
-  [1aee80c] etapa verificar · duda-de-extraer
-      Pregunta: ¿Se acepta que Lisa 15 (Kokku tööjõukulud 537 214, L629) incluye 71 010 (L630) imputados al renglón 'Sihtotstarbeliselt finantseeritud projektide otsesed kulud', de modo que 537 214 − 71 010 = 466 204 del estado?  (por qué: El total de la nota (L629) no coincide con el estado (L212: -466 204); la diferencia es la fila 'Sellest...' de L630.)
+  [a1c95b8] etapa cargar · categoria
+      Pregunta: ¿"Muu äritegevuse kulu" (0.000046 en millones de la moneda del documento) va como "Otros gastos"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
       Abrí el PDF en la página 17 del visor (la hoja tiene impreso "17" al pie).
-      En la transcripción (Clubes/Estonia/Nõmme Kalju/aruanne-2020.md), líneas 212-630.
-      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
-
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [7198467] etapa cargar · categoria
+      Pregunta: ¿"- sh. treenerite tasud" (0.120977 en millones de la moneda del documento) va como "Salarios del plantel"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 17 del visor (la hoja tiene impreso "17" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [f52f447] etapa cargar · perfil
+      Pregunta: ¿Mittetulundusühing Nõmme Kalju FC tiene otros deportes (básquet, vóley, futsal...) con ingresos o gastos en sus estados financieros?  (por qué: en 2019 "Otras secciones deportivas" da 0; si el club tiene, falta un desglose y se reintenta; si no tiene, el 0 es real. Queda guardado en Admin/registros/perfil-clubes.jsonl para todos sus años.)
+      Propuesta del sistema: responder corregir --valor sí | corregir --valor no (o mandar un agente a buscar)
+## Clubes/Estonia/Nõmme Kalju/aruanne-2020.pdf
+  [795fe4b] etapa cargar · categoria
+      Pregunta: ¿"Jalgpallikooli tegevustoetus" (0.0225 en millones de la moneda del documento) va como "Otras secciones deportivas (juvenil, otros deportes, básquet)"?  (por qué: la categorización le dio 0.65 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 17 del visor (la hoja tiene impreso "17" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [5da31e7] etapa cargar · categoria
+      Pregunta: ¿"Tööjõukulud" (0.466204 en millones de la moneda del documento) va como "Salarios del plantel"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 6 del visor (la hoja tiene impreso "6" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
 ## Clubes/Estonia/Nõmme Kalju/aruanne-2021.pdf
-  [77a7850] etapa verificar · duda-tema
-      Pregunta: ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (b17), que reparte el mismo total de donaciones de b16 en dinero/no dinero?  (por qué: b17 es otra apertura del mismo total que b16; cargar ambos podría duplicar.)
-      Abrí el PDF en la página 15 del visor (la hoja tiene impreso "15" al pie).
-      En la transcripción (Clubes/Estonia/Nõmme Kalju/aruanne-2021.md), líneas 523-533.
-      Propuesta del sistema: no (responder aceptar si estás de acuerdo; corregir --valor "sí" si no)
-
+  [044ab3c] etapa cargar · categoria
+      Pregunta: ¿"- sh. treenerite tasud" (0.12976 en millones de la moneda del documento) va como "Salarios del plantel"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 17 del visor (la hoja tiene impreso "17" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+## Clubes/Estonia/Nõmme Kalju/aruanne-2022.pdf
+  [18d3012] etapa cargar · categoria
+      Pregunta: ¿"Muud UEFA toetused" (0.014636 en millones de la moneda del documento) va como "Premios por competencias"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 16 del visor (la hoja tiene impreso "16" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [1d41da7] etapa cargar · categoria
+      Pregunta: ¿"kaupade, teenuste müük" (0.002695 en millones de la moneda del documento) va como "Otros ingresos"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 16 del visor (la hoja tiene impreso "16" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+## Clubes/Estonia/Nõmme Kalju/aruanne-2023.pdf
+## Clubes/Estonia/Nõmme Kalju/aruanne-2024.pdf

@@ -1,58 +1,39 @@
 ## Clubes/Estonia/Tallinna Kalev/aruanne-2025.pdf
-## Clubes/Estonia/Tallinna Kalev/aruanne-2020.pdf
-  [ed8fbbe] etapa verificar · duda-tema
-      Pregunta: ¿Se carga Lisa 13 (L524-L528, total 192 966) como desglose de 'Tööjõukulud' (-81 353) aunque incluye 111 613 imputados a 'Sihtotstarbeliselt finantseeritud projektide otsesed kulud' (L529)?  (por qué: 192 966 - 111 613 = 81 353: la nota abarca dos renglones del estado (L130 y L127) y L529 es la parte reclasificada.)
-      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
-      En la transcripción (Clubes/Estonia/Tallinna Kalev/aruanne-2020.md), líneas 127-529.
-      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
-
-## Clubes/Estonia/Tallinna Kalev/aruanne-2021.pdf
-  [d99f7f7] etapa verificar · duda-de-extraer
-      Pregunta: ¿Se cargan las filas 'sh ...' (L444-L448) como desglose alternativo de 'Kokku annetused ja toetused', sin sumarlas a L441-L442?  (por qué: L444-L448 son un 'de lo cual' que suma 108 575 igual que L441-L442; cargar ambos duplicaría.)
-      Abrí el PDF en la página 13 del visor (la hoja tiene impreso "13" al pie).
-      En la transcripción (Clubes/Estonia/Tallinna Kalev/aruanne-2021.md), líneas 441-448.
-      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
-  [d96b52e] etapa verificar · duda-de-extraer
-      Pregunta: ¿Se carga la nota de tööjõukulud (L531-L536) aunque 133 974 - 74 664 = 59 310 no coincide con 'Tööjõukulud' -62 964 (L130)?  (por qué: La nota b23 incluye costos ya imputados a proyectos (L536) y aun así no concilia con L130 por 3 654.)
-      Abrí el PDF en la página 15 del visor (la hoja tiene impreso "15" al pie).
-      En la transcripción (Clubes/Estonia/Tallinna Kalev/aruanne-2021.md), líneas 130-536.
-      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
-
-## Clubes/Estonia/Tallinna Kalev/aruanne-2022.pdf
-  [c86796d] etapa verificar · anio-vecino
-      Qué mirar: Los ingresos de 2022 no coinciden entre este documento y aruanne-2023.pdf (0.489272 contra 0.974863). Puede ser una reexpresión del año en el documento siguiente (pasa), otra tabla u otro perímetro.
-      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
-  [6bbd144] etapa verificar · no-cierra
-      Qué mirar: documento del año 2023: ingresos de 2022: 0.489272 en este documento y 0.974863 en aruanne-2023.pdf (columna del año anterior). Revisar si falta o sobra alguna fila, o si hay un renglón del lado equivocado.
-      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
-      En la transcripción (Clubes/Estonia/Tallinna Kalev/aruanne-2022.md), líneas 120-134.
-  [41f22a6] etapa verificar · duda-tema
-      Pregunta: ¿Se cargan las filas de Lisa 13 (L543-L546) como desglose de 'Tööjõukulud' aunque su total 194 293 (L547) no coincide con el 183 029 del estado (L128)?  (por qué: L547 194 293 menos L548 16 982 da 177 311, distinto de 183 029 (L128); en 2021 tampoco cuadra (133 974-74 664 ≠ 62 964), el perímetro de la nota difiere del estado.)
-      Abrí el PDF en la página 16 del visor (la hoja tiene impreso "16" al pie).
-      En la transcripción (Clubes/Estonia/Tallinna Kalev/aruanne-2022.md), líneas 128-548.
-      Propuesta del sistema: no (responder aceptar si estás de acuerdo; corregir --valor "sí" si no)
-
-## Clubes/Estonia/Tallinna Kalev/aruanne-2023.pdf
-  [03b8cd3] etapa verificar · anio-vecino
-      Qué mirar: Los ingresos de 2022 no coinciden entre este documento y aruanne-2022.pdf (0.974863 contra 0.489272). Puede ser una reexpresión del año en el documento siguiente (pasa), otra tabla u otro perímetro.
-      Abrí el PDF en la página 6 del visor (la hoja tiene impreso "6" al pie).
-  [fdeee2f] etapa verificar · no-cierra
-      Qué mirar: documento del año 2022: ingresos de 2022: 0.489272 en aruanne-2022.pdf y 0.974863 en este documento (columna del año anterior). Revisar si falta o sobra alguna fila, o si hay un renglón del lado equivocado.
-      Abrí el PDF en la página 6 del visor (la hoja tiene impreso "6" al pie).
-      En la transcripción (Clubes/Estonia/Tallinna Kalev/aruanne-2023.md), líneas 152-167.
-  [c995ce5] etapa verificar · duda-de-extraer
-      Pregunta: ¿Se dejan afuera de la carga las filas 'sh ...' de Lisa 10 (L532-L536), que son un desglose alternativo por origen del mismo total 518 683?  (por qué: Las filas 'sh' (L532-L536) suman 518 683, igual que L529-L530; cargar ambas duplicaría el renglón.)
-      Abrí el PDF en la página 17 del visor (la hoja tiene impreso "17" al pie).
-      En la transcripción (Clubes/Estonia/Tallinna Kalev/aruanne-2023.md), líneas 529-536.
-      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
-
 ## Clubes/Estonia/Tallinna Kalev/aruanne-2019.pdf
-  [69da70a] etapa cargar · perfil
-      Pregunta: ¿Jalgpalliklubi Tallinna Kalev tiene socios que le pagan una cuota (cuotas sociales, mensalidades, sócio-torcedor, membresía)?  (por qué: en 2019 "Cuotas sociales" da 0; si el club tiene, falta un desglose y se reintenta; si no tiene, el 0 es real. Queda guardado en Admin/registros/perfil-clubes.jsonl para todos sus años.)
-      Propuesta del sistema: responder corregir --valor sí | corregir --valor no (o mandar un agente a buscar)
-  [0c01a54] etapa cargar · categoria
-      Pregunta: ¿"Renditulud" (0.190502 en millones de la moneda del documento) va como "Otros ingresos"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
-      Abrí el PDF en la página 13 del visor (la hoja tiene impreso "13" al pie).
-      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
-
 ## Clubes/Estonia/Tallinna Kalev/aruanne-2024.pdf
+## Clubes/Estonia/Tallinna Kalev/aruanne-2020.pdf
+  [180ae45] etapa cargar · categoria
+      Pregunta: ¿"Isikliku sõiduauto kasutus" (0.003 en millones de la moneda del documento) va como "Administración y gastos generales"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 15 del visor (la hoja tiene impreso "15" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [11bac2e] etapa cargar · categoria
+      Pregunta: ¿"Tööjõukulud" (0.081353 en millones de la moneda del documento) va como "Salarios del plantel"?  (por qué: la categorización le dio 0.55 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+## Clubes/Estonia/Tallinna Kalev/aruanne-2021.pdf
+  [c888787] etapa cargar · categoria
+      Pregunta: ¿"SOS Lasteküla" (0.000025 en millones de la moneda del documento) va como "Otros gastos"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 14 del visor (la hoja tiene impreso "14" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [b5c1260] etapa cargar · categoria
+      Pregunta: ¿"Isikliku sõiduauto kasutus" (0.00515 en millones de la moneda del documento) va como "Administración y gastos generales"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 15 del visor (la hoja tiene impreso "15" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [83ea47d] etapa cargar · categoria
+      Pregunta: ¿"Tööjõukulud" (0.062964 en millones de la moneda del documento) va como "Salarios del plantel"?  (por qué: la categorización le dio 0.55 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+## Clubes/Estonia/Tallinna Kalev/aruanne-2022.pdf
+  [9ac12c7] etapa cargar · categoria
+      Pregunta: ¿"Tööjõurent" (0.00397 en millones de la moneda del documento) va como "Administración y gastos generales"?  (por qué: la categorización le dio 0.5 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 16 del visor (la hoja tiene impreso "16" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [eb51be6] etapa cargar · categoria
+      Pregunta: ¿"Isikliku sõiduauto kasutus" (0.004603 en millones de la moneda del documento) va como "Administración y gastos generales"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 16 del visor (la hoja tiene impreso "16" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [463d385] etapa cargar · categoria
+      Pregunta: ¿"Tööjõukulud" (0.183029 en millones de la moneda del documento) va como "Salarios del plantel"?  (por qué: la categorización le dio 0.55 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+## Clubes/Estonia/Tallinna Kalev/aruanne-2023.pdf
