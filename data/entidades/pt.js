@@ -2728,6 +2728,53 @@ Object.assign(window.CLUB_ENTIDADES, {
     "fuente": {
      "md": "Clubes/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.md",
      "linea": 1281
+    },
+    "ingresos": {
+     "2021": {
+      "total": 4.501,
+      "moneda": "EUR",
+      "cierre": "2021-07-31",
+      "fuente": {
+       "md": "Clubes/Portugal/Maritimo/CSM_DFs-jul21.md",
+       "linea": 549
+      }
+     },
+     "2022": {
+      "total": 5.07,
+      "moneda": "EUR",
+      "cierre": "2022-07-31",
+      "fuente": {
+       "md": "Clubes/Portugal/Maritimo/CSM_DFs-jul22.md",
+       "linea": 591
+      }
+     },
+     "2023": {
+      "total": 6.13,
+      "moneda": "EUR",
+      "cierre": "2023-07-31",
+      "fuente": {
+       "md": "Clubes/Portugal/Maritimo/CSM_DFs-jul23.md",
+       "linea": 535
+      }
+     },
+     "2024": {
+      "total": 4.538,
+      "moneda": "EUR",
+      "cierre": "2024-07-31",
+      "fuente": {
+       "md": "Clubes/Portugal/Maritimo/CSM_RC_31.07.2024-v2.md",
+       "linea": 573
+      }
+     },
+     "2025": {
+      "total": 5.586,
+      "moneda": "EUR",
+      "cierre": "2025-07-31",
+      "fuente": {
+       "md": "Clubes/Portugal/Maritimo/CSM_RC-31.07.2025.md",
+       "linea": 559
+      }
+     }
     }
    },
    "maritimo-sad": {
