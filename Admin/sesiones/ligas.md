@@ -7,11 +7,11 @@
 - `tools/auditoria.mjs` acepta citas de `.md` trackeados en `Ligas/` (solo en `trackedSet`; coordinado con fos-finanzas).
 - Premier League: cuentas del grupo 2024-25 (Companies House 02719699) bajadas y transcriptas; auditor Deloitte LLP, sin salvedades.
   Primera línea de `window.LIGA_AUDITORIA` (`gb-premierleague`, 2025).
-- DFL: nota de sourcing; el Konzernabschluss 2024-25 está en Unternehmensregister detrás de un captcha.
+- DFL: nota de sourcing; el Konzernabschluss 2024-25 está en Unternehmensregister detrás de captcha y login.
 
 ## Qué queda (para TODO)
 
-- DFL: bajar el Konzernabschluss 2024-25 cuando Guido marque el captcha.
+- DFL: el Konzernabschluss 2024-25 pide login en Unternehmensregister (gestión de Guido); probar antes Bundesanzeiger y el sitio de la DFL.
 - Seguir con las entidades en el orden del plan: LaLiga, Lega Serie A, J.League, Liga Portugal, AFA, CBF, EFL y el resto.
 - AUF (Uruguay): en espera, sin liga uruguaya en `data/leagues.js` (Guido: no resolverlo todavía).
 
