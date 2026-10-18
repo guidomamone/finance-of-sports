@@ -2,6 +2,19 @@
 window.CLUB_AUDITORIA = window.CLUB_AUDITORIA || {};
 Object.assign(window.CLUB_AUDITORIA, {
  "catolica-cl": {
+  "2010": {
+   "auditor": {
+    "nombre": "EY",
+    "tipo": "firma",
+    "legal": "Ernst & Young Ltda."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2010.informe-auditor.md",
+    "linea": 24
+   }
+  },
   "2011": {
    "auditor": {
     "nombre": "Auditores Humphreys Ltda.",

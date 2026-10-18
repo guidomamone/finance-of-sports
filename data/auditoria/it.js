@@ -1266,6 +1266,19 @@ Object.assign(window.CLUB_AUDITORIA, {
     "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-esercizio-2024-25.md",
     "linea": 44
    }
+  },
+  "2026": {
+   "auditor": {
+    "nombre": "Deloitte",
+    "tipo": "firma",
+    "legal": "Deloitte & Touche S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-esercizio-2025-26.md",
+    "linea": 25
+   }
   }
  },
  "monza-it": {
@@ -1418,6 +1431,32 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2025-consolidato.md",
     "linea": 1602
+   }
+  }
+ },
+ "salernitana-it": {
+  "2022": {
+   "auditor": {
+    "nombre": "Audirevi S.p.A.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Salernitana/Salernitana-relazione-revisione-30-giugno-2022.md",
+    "linea": 27
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "Audirevi S.p.A.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Salernitana/Salernitana-relazione-revisione-30-giugno-2023.md",
+    "linea": 33
    }
   }
  },

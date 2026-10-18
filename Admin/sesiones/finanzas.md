@@ -122,9 +122,21 @@
   casos), que no se publica y cuenta como pendiente; `auditor.nombre` puede ser null si el informe no imprime quién firma (Gimnasia
   2023-2025), con nota.
 
+- 282, informes que faltaban: 30 transcriptos por subagentes solo en sus páginas (archivos nuevos `<pdf>.informe-auditor.md` al lado del
+  PDF, o el `.md` del PDF que es solo el informe: Rusia, Salernitana, Lazio 2025-26, Católica 2010), con su línea; los .md validados no se
+  tocaron. De los 73 que siguen como `falta_transcripcion`, 72 son "FALTA EN EL PDF": el informe existe pero no está en ningún PDF que
+  tenemos (Lazio 2014-2024, Napoli 2018-2025, Torino 2018-2025, Hellas Verona 2020-2025, Cremonese, Roma 2013 y 2022-2025, Juventus 2022 y
+  2024, Bologna 2025, Hamburgo 2024-2025, Marítimo, Nacional, Académico de Viseu, Alverca, Casa Pia, Chaves, Rio Ave 2016-17, Vizela 2022,
+  Mafra, Felgueiras 2024, San Lorenzo 2012, OFI 2018, Fortaleza CEIF 2025, …); 1 es de transcripción (Spartak 2022: la del subagente se
+  descartó por no ser fiel).
+
 ### Qué queda (para TODO)
 
-- 282: transcribir los informes que faltan (103 club-años, `node tools/auditoria.mjs --pendientes`: Lazio 2014-2026, Napoli 2018-2025,
+- 282: sourcing de los 72 informes del auditor que no están en nuestros PDF (`node tools/auditoria.mjs --pendientes`, nota "FALTA EN EL
+  PDF"); transcribir Spartak 2022 palabra por palabra.
+- 281: Chaves 2022-23 trae en Relatorio_Atividades-e-Contas-2022_2023.pdf (págs. 36-39) el informe del auditor de la asociación (RCVM,
+  incertidumbre material): sirve para la entidad asociación.
+- (viejo, ya resuelto en parte) 282: transcribir los informes que faltan (103 club-años, `node tools/auditoria.mjs --pendientes`: Lazio 2014-2026, Napoli 2018-2025,
   Torino 2018-2025, Hellas Verona, Cremonese, Roma 2013 y 2022-2025, Juventus 2022 y 2024, Racing 2009-2011, 2014 y 2020, Marítimo,
   Académico de Viseu, Rusia (Spartak, Zenit, Lokomotiv, Dynamo Moscú y otros, con el PDF del informe sin transcribir), entre otros) y
   escribir su línea; los 23 balances sin .md.

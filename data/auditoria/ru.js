@@ -51,6 +51,18 @@ Object.assign(window.CLUB_AUDITORIA, {
    "dictamen": "sin_informe",
    "continuidad": false,
    "fuente": null
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "ООО «Аудит-Право»",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/Akron Tolyatti/2025-auditorskoe-zaklyuchenie.md",
+    "linea": 18
+   }
   }
  },
  "baltikakaliningrad-ru": {
@@ -64,6 +76,30 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Rusia/Baltika Kaliningrad/2022-auditorskoe-zaklyuchenie.md",
     "linea": 32
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "ООО «ГЛОБАЛС АУДИТ»",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Rusia/Baltika Kaliningrad/2023-auditorskoe-zaklyuchenie.md",
+    "linea": 29
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "ООО «НАЛОГИНФОРМ»",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Rusia/Baltika Kaliningrad/2024-auditorskoe-zaklyuchenie.md",
+    "linea": 25
    }
   },
   "2025": {
@@ -80,6 +116,18 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "cskamoscow-ru": {
+  "2021": {
+   "auditor": {
+    "nombre": "ООО «Эрнст энд Янг»",
+    "tipo": "firma"
+   },
+   "dictamen": "con_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Rusia/CSKA Moscow/2021-auditorskoe-zaklyuchenie.md",
+    "linea": 65
+   }
+  },
   "2022": {
    "auditor": null,
    "dictamen": "sin_informe",
@@ -91,6 +139,18 @@ Object.assign(window.CLUB_AUDITORIA, {
    "dictamen": "sin_informe",
    "continuidad": false,
    "fuente": null
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "Общество с ограниченной ответственностью «Центр аудиторских технологий и решений - аудиторские услуги»",
+    "tipo": "firma"
+   },
+   "dictamen": "con_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/CSKA Moscow/2024-auditorskoe-zaklyuchenie.md",
+    "linea": 85
+   }
   },
   "2025": {
    "auditor": null,
@@ -144,11 +204,59 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "dynamomoscow-ru": {
+  "2021": {
+   "auditor": {
+    "nombre": "Юникон Акционерное Общество",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/Dynamo Moscow/2021-auditorskoe-zaklyuchenie.md",
+    "linea": 29
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "Юникон Акционерное Общество",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/Dynamo Moscow/2022-auditorskoe-zaklyuchenie.md",
+    "linea": 42
+   }
+  },
   "2023": {
    "auditor": null,
    "dictamen": "sin_informe",
    "continuidad": false,
    "fuente": null
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "Юникон Акционерное Общество",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/Dynamo Moscow/2024-auditorskoe-zaklyuchenie.md",
+    "linea": 44
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Юникон Акционерное Общество",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/Dynamo Moscow/2025-auditorskoe-zaklyuchenie.md",
+    "linea": 44
+   }
   }
  },
  "krasnodar-ru": {
@@ -272,6 +380,68 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Rusia/Krylia Sovetov Samara/2025-auditorskoe-zaklyuchenie.md",
     "linea": 25
+   }
+  }
+ },
+ "lokomotivmoscow-ru": {
+  "2021": {
+   "auditor": {
+    "nombre": "ООО «Эрнст энд Янг»",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/Lokomotiv Moscow/2021-auditorskoe-zaklyuchenie.md",
+    "linea": 46
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "ООО «Центр аудиторских технологий и решений – аудиторские услуги»",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/Lokomotiv Moscow/2022-auditorskoe-zaklyuchenie.md",
+    "linea": 46
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "ООО «Центр аудиторских технологий и решений – аудиторские услуги»",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/Lokomotiv Moscow/2023-auditorskoe-zaklyuchenie.md",
+    "linea": 56
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "ООО «Центр аудиторских технологий и решений – аудиторские услуги»",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/Lokomotiv Moscow/2024-auditorskoe-zaklyuchenie.md",
+    "linea": 56
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "ООО «Б1 – Аудит»",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/Lokomotiv Moscow/2025-auditorskoe-zaklyuchenie.md",
+    "linea": 56
    }
   }
  },
@@ -431,6 +601,42 @@ Object.assign(window.CLUB_AUDITORIA, {
    "dictamen": "sin_informe",
    "continuidad": false,
    "fuente": null
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "ООО «АКК «Кроу Аудэкс»",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/Rubin Kazan/2023-auditorskoe-zaklyuchenie.md",
+    "linea": 36
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "ООО «Аудиторско-консалтинговая компания «Аудэкс»",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/Rubin Kazan/2024-auditorskoe-zaklyuchenie.md",
+    "linea": 39
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "ООО «Аудиторско-консалтинговая компания «Аудэкс»",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/Rubin Kazan/2025-auditorskoe-zaklyuchenie.md",
+    "linea": 38
+   }
   }
  },
  "sochi-ru": {
@@ -492,6 +698,118 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Rusia/Sochi/2025-auditorskoe-zaklyuchenie.md",
     "linea": 21
+   }
+  }
+ },
+ "spartakmoscow-ru": {
+  "2021": {
+   "auditor": {
+    "nombre": "ООО «Аудиторская компания «Мариллион»",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/Spartak Moscow/2021-auditorskoe-zaklyuchenie.md",
+    "linea": 17
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "ООО «Аудиторская компания «Мариллион»",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/Spartak Moscow/2023-auditorskoe-zaklyuchenie.md",
+    "linea": 25
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "ООО «Аудиторская компания «Мариллион»",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/Spartak Moscow/2024-auditorskoe-zaklyuchenie.md",
+    "linea": 26
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "АО «Кэпт»",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/Spartak Moscow/2025-auditorskoe-zaklyuchenie.md",
+    "linea": 33
+   }
+  }
+ },
+ "zenit-ru": {
+  "2021": {
+   "auditor": {
+    "nombre": "Юникон Акционерное Общество",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/Zenit/2021-auditorskoe-zaklyuchenie.md",
+    "linea": 27
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "Юникон Акционерное Общество",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/Zenit/2022-auditorskoe-zaklyuchenie.md",
+    "linea": 31
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "Юникон Акционерное Общество",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/Zenit/2023-auditorskoe-zaklyuchenie.md",
+    "linea": 33
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "АО «Кэпт»",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/Zenit/2024-auditorskoe-zaklyuchenie.md",
+    "linea": 33
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "АО «Кэпт»",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/Zenit/2025-auditorskoe-zaklyuchenie.md",
+    "linea": 31
    }
   }
  }
