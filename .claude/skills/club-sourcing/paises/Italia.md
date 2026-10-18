@@ -91,3 +91,25 @@ Ninguno se envía por ahora. Cada envío lo aprueba Guido y se hace con `club-ou
 La FIR y la FITP entran al sitio (decisión de Guido). Los entes que controlan (Zebre, FITP Business &
 Media, Sportcast, Mario Belardinelli) y Sport e Salute quedan como PDFs de contexto hasta que Guido
 decida.
+
+## Informes del auditor (relazione della società di revisione)
+
+- Casi nunca vienen dentro del fascicolo del bilancio: el club los sube como PDF aparte en la misma página, y una búsqueda del
+  bilancio no los ve. Buscarlos por su nombre ("relazione società di revisione", "relazione di revisione").
+- Dónde está cada uno (último chequeo 2026-10-18):
+  - Lazio: API del widget `sslazio.it/api/widget/attachment?offset=N&id_category=37|38`, desde 2011, individual y consolidado
+    por separado. El anterior a 2015 sale del Wayback de `images/documents/investors/`.
+  - Juventus: el mismo `<select>` de Investor Relations trae "Report on the audit of the (consolidated) financial statements".
+  - Roma: `asroma.com/it/club/corporate/bilanci-e-relazioni-2` (separato y consolidato); hasta 2015, Wayback de
+    `asroma.it/pdf/corporate/bilanci_e_relazioni/`.
+  - Napoli: `sscnapoli.it/bilancio/` desde 2020; los CDN viejos cambiaron (`cdn-assets.` devuelve 17 bytes, `cdn.sscnapoli.iquii.info`
+    no responde): Wayback. 2019 y 2021, Wayback de `sscnapoli.it/shared/UserFiles/`.
+  - Torino: `torinofc.it/relazioni_e_bilanci`, uno por año desde 2018.
+  - Cremonese: mediateca de WordPress, `wp-json/wp/v2/media?search=revisione&mime_type=application/pdf`.
+  - Hellas Verona: `www.hellasverona.it/club/relazione-e-bilanci` (sin prefijo de idioma) lista solo el último año. El navegador
+    redirige a `/en`, que no muestra los PDF: pedir el HTML con curl y `Accept-Language: it`.
+  - Bologna: no publica el informe (Firecrawl `/map` del sitio solo trae los fascicoli).
+- Una cotizante publica dos informes (individual y consolidado): va el del perímetro que publica el sitio.
+- El texto del link no garantiza el archivo: en Roma 2022 el link "consolidato" baja el separato. Leer el título de la primera
+  página antes de usarlo.
+- Un PDF cifrado truncado a 1 MiB en Wayback (Lazio 2017) no se recupera: ni qpdf ni extraer las imágenes JPEG del archivo.

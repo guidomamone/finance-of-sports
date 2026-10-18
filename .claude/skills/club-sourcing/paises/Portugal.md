@@ -23,3 +23,13 @@
   ninguna copia completa sobrevive en ningún archivo consultado — a diferencia de un dead-end por
   falta de disclosure, acá el club SÍ publicó pero la evidencia se perdió. Vale la pena pedirle al
   club que resuba (ver `Admin/dudas-por-club.md`).
+
+## Informe del auditor (Certificação Legal das Contas)
+
+- Las SAD chicas no publican la CLC por separado, y los PDF de relatório e contas que suben a su sitio terminan antes del informe aunque
+  el índice lo liste (Marítimo, Portimonense). Probado el 2026-10-18 en once clubes (Académico de Viseu, Alverca, Casa Pia, Chaves,
+  Felgueiras, Mafra, Marítimo, Nacional, Rio Ave, Vizela, Portimonense): página del club, mediateca de WordPress, Firecrawl `/map`,
+  CDX de Wayback de dominio completo y arquivo.pt, sin ningún hallazgo. La única vía es pedírsela al club.
+- arquivo.pt y la CMVM sirven para las cotizantes (Benfica, Sporting, Porto), no para estas.
+- En Chaves, el relatório de la asociación (Grupo Desportivo de Chaves) trae su propio informe de auditoría: es de otra entidad y no
+  vale para la SAD.

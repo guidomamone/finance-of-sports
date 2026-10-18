@@ -1,6 +1,6 @@
 # Lazio (S.S. Lazio)
 
-**Ángulos**: sitio oficial: agotado (API `sslazio.it/api/widget/attachment?id_category=37/38`) · Wayback CDX: agotado (`finance.sslazio.it/documents/`, `media.sslazio.it/200507/`) · búsqueda web: Exa (Borsa Italiana 2004) · regulador/país: Borsa Italiana (parcial) · barrido: 3 (Sonnet+Exa) — 2026-10-07
+**Ángulos**: sitio oficial: agotado (API `sslazio.it/api/widget/attachment?id_category=37/38`, con los informes del auditor desde 2011) · Wayback CDX: agotado (`sslazio.it/images/documents/investors/`; el informe 2016-17 solo está truncado y cifrado) · búsqueda web: Exa (Borsa Italiana 2004) · regulador/país: Borsa Italiana (parcial); 1Info pide cuenta · barrido: 4 (Opus) — 2026-10-18
 
 
 - **Deporte**: Fútbol
@@ -124,3 +124,16 @@ Se completó 2014/15 a 2023/24:
 - Cargado en el sitio por tools/cargar.mjs (2026-10-09): ejercicio 2004 desde `Clubes/Italia/Lazio/Lazio-bilancio-2003-04.pdf` (sourceId `lazio-it-bilancio-2003-04`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-09): ejercicio 2016 desde `Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2015-16.pdf` (sourceId `lazio-it-bilancio-separato-consolidato-2015-16`).
+
+## Informes del auditor (to-do 282 a, 2026-10-18)
+
+- El informe de la società di revisione va en un PDF aparte del bilancio, uno por el individual y otro por el consolidado, en la misma API
+  del widget (categorías 37 y 38) desde 2011. Se bajaron los dos de 2013-14 a 2023-24 (salvo 2016-17) como
+  `Lazio-relazione-revisione-bilancio-{esercizio,consolidato}-AAAA-AA.pdf`; 2019-20 salió de Wayback
+  (`images/documents/investors/Relazione_Deloitte_bil_SSLAZIO_{civil,cons}30062020.pdf`).
+- La línea de auditoría cita el del consolidado (el perímetro publicado; Guido, 2026-10-18). PwC hasta 2017-18, Deloitte desde 2018-19.
+- 2016-17: las dos capturas de Wayback (`Relazione-PWC-SS-Lazio-{separato,consolidato}-30-giugno-2017.pdf`, 2019-11 y 2021-02) llegan
+  truncadas a 1 MiB y el PDF está cifrado (AES): no se recupera ninguna página. El sitio vivo da 404 y 1Info (el almacenamiento regulado
+  de Consob que usa Lazio) pide cuenta. Candidato a mail al club.
+- Pendiente: los informes del consolidado 2010-11 a 2012-13 están en la API y 2005-06 en Wayback (`09.10.06 - relaz società di revisione
+  bilancio al 30.06.06.pdf`), pero esos años figuran como `sin_informe` en el registro de auditoría.

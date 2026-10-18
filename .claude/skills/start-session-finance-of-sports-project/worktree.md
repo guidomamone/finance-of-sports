@@ -11,6 +11,10 @@ la principal. Evitá tocar una tool o un club que tenga otra sesión.
 **Al cerrar:** en vez de esos tres, escribí `Admin/sesiones/<rama>.md`: qué cambió (lo de CHANGELOG), qué quedó pendiente (lo de TODO) y qué
 deja de ser cierto en ESTADO. Commit.
 
+Un PDF bajado en la copia se pasa a la carpeta principal con `rsync -a --no-links` (los symlinks de `preparar` apuntan a la
+principal y un `rsync -a` los copia encima del archivo real, que queda como un link a sí mismo). Después,
+`find <principal>/Clubes -type l` tiene que dar vacío.
+
 **En la principal, para mergear:** `node tools/worktree.mjs mergear <rama>`. Resuelve lo generado (ASSET_V, `fuentes/`, índices, rankings)
 con main, regenera y audita. Frena si la rama tocó los tres documentos o si hay un conflicto real. Después pasá `Admin/sesiones/<rama>.md` a
 TODO, CHANGELOG y ESTADO, y archivalo en `Admin/Archive/`.

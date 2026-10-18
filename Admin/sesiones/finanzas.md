@@ -135,3 +135,87 @@
 - Decisión pendiente de Guido: si los ingresos de la otra entidad incluyen los "Juros e rendimentos similares obtidos" (hoy sí, en
   Marítimo 2021-2025 y Porto 2020, 2024 y 2025; no se suman los renglones netos de imparidad ni de provisiones). Si es que no, sacar ese
   renglón de esas 8 líneas `ingresos` de `Admin/registros/entidades.jsonl` y correr `node tools/entidades.mjs`.
+
+## Sesión 3 (2026-10-18)
+
+### Decisiones (para CONVENCIONES-DATOS)
+
+- Ingresos de la otra entidad (to-do 281; Guido delegó en la principal, 2026-10-18): se suman todos los renglones de ingresos de su estado
+  de resultados, incluidos los "Juros e rendimentos similares obtidos"; solo queda afuera lo que se contaría dos veces (la ganancia por la
+  parte de la SAD, "Ganhos imputados de subsidiárias"). Revisadas las 17 líneas `ingresos` de `Admin/registros/entidades.jsonl`: todas lo
+  siguen, sin cambios. Marítimo 2021-2025 y Porto 2020, 2024 y 2025 suman sus juros; Belenenses 2025 y Vizela 2023-2024 tienen el renglón en
+  "-" o 0,00; la línea de Tondela 2021 es el "Total" de su lista, que ya incluye "Juros obtidos"; Vitória 2022, Braga 2021 y 2023, Académica
+  2023 y Chaves 2023 no traen ese renglón.
+- Qué informe del auditor va en la línea de auditoría cuando el documento trae dos (individual y consolidado): el del perímetro que publica
+  el sitio (Guido, 2026-10-18, "coherencia de perímetro").
+
+### Qué cambió (para CHANGELOG)
+
+- To-do 282 a, Lazio (perímetro consolidado): los informes del auditor del consolidado de 2014-2016 y 2018-2025, de la API de documentos
+  del club (`sslazio.it/api/widget/attachment?id_category=37|38`; 2019-20 de Wayback), transcriptos con Mistral y cada cita cotejada con una
+  segunda lectura (Tesseract, y la imagen de la firma de 2021). PwC hasta 2018, Deloitte desde 2019; todos sin salvedades y sin
+  incertidumbre material (2022: ÉNFASIS CONTINUIDAD, la continuidad es un aspecto clave de la revisión). Lazio 2025 pasa a citar el informe
+  del consolidado (`Lazio-relazione-revisione-consolidata-2024-25.md`, que ya estaba). También se transcribieron los del individual (no se
+  citan; sus PDF, a `documentos-descartados.txt`).
+- To-do 282 a, Juventus (perímetro individual): 2022 y 2024, del selector de Investor Relations del club ("Report on the audit of the
+  financial statements", con texto); los dos con salvedades (Deloitte). Juventus 2025 pasa a citar el informe individual (antes, el del
+  consolidado).
+- To-do 282 a, Roma (perímetro consolidado): 2023-2025 del sitio del club (Deloitte; BDO Italia desde 2025; ÉNFASIS CONTINUIDAD, sin
+  incertidumbre material) y 2013 de Wayback (BDO S.p.A.).
+- To-do 282 a, Napoli 2022 (Ria Grant Thornton; el CDN actual devuelve 17 bytes, salió de Wayback), Torino 2020-2025 (Ria Grant
+  Thornton, BDO Italia, BDO Audit Services; `torinofc.it/relazioni_e_bilanci` publica el informe de cada año), Hellas Verona 2025
+  (Audirevi; ÉNFASIS CONTINUIDAD) y Cremonese 2022-2025 (EY, después BDO Italia; 2022 ÉNFASIS CONTINUIDAD; de la mediateca de WordPress,
+  `wp-json/wp/v2/media?search=revisione`). Todos sin salvedades, con texto, transcriptos con pdftotext.
+- Skills (con el ok de Guido): `club-sourcing/paises/Italia.md` suma dónde publica cada club el informe del auditor; `club-sourcing/SKILL.md`,
+  que el informe suele ser un documento aparte; `worktree.md`, el rsync con `--no-links`.
+- To-do 282 a, escaneos transcriptos con Mistral (firma y opinión cotejadas con Tesseract): Napoli 2019 (Baker Tilly Revisa), 2021
+  (Ria Grant Thornton) y 2023-2025 (RSM), Torino 2018-2019 (FV & C. S.A.S.), y Lazio 2026, que pasa del informe individual al del
+  consolidado. Todos sin salvedades.
+- To-do 282 a, Fortaleza CEIF 2025: dictamen del revisor fiscal de SIIS (radicado 2026-01-381454), sin salvedades.
+- To-do 282 a, OFI 2018: el informe del auditor (ΣΟΛ/Crowe, firma Παναγιώτης Γ. Θεοδωρόπουλος) depositado en el ΓΕΜΗ el 27-03-2019
+  ('Εκθεσή Ορκωτών'); sin salvedades, con un énfasis de liquidez (ÉNFASIS CONTINUIDAD).
+- To-do 282 a, Hamburgo 2025: el Bestätigungsvermerk de BDO AG (uneingeschränkt, 17-10-2025), copiado de la publicación HTML del
+  Jahresabschluss en el Unternehmensregister (HRB 191603; Guido resolvió el captcha) a `fussball-ag-bestaetigungsvermerk-2024-25.md`.
+- FALTA EN EL PDF: 88 a 50.
+- To-do 294, Bahia: el eslabón de la holding pasa a ser City Football Group (Midco) Limited > City Football Group Brazil (`controla`,
+  sin %, desde 2024), con cita externa al QSA del CNPJ 49.242.727/0001-74 (City Football Brazil Ltda; único socio CFG Midco) vía
+  BrasilAPI; antes era City Football Group > CFG Brazil citado con el contrato de la S.A.F. BrasilAPI, sumada a `Admin/fuentes-externas.md`
+  (decisión de Guido, 2026-10-18: esa fuente, sin porcentaje). Ningún club del borrador `altas-2026-10-17.md` está publicado todavía.
+- To-do 281, União de Leiria 2023-24: la línea `ingresos` de la asociación sale de la columna comparativa (jun 2024) de la Demonstração
+  de Resultados del relatório 2024-25 (`RELATORIO-E-CONTAS-DE-JUL2024-A-JUN2025_UDL.md`, pág. 22): 449.215,23 € (vendas e serviços,
+  subsídios, outros rendimentos y juros obtidos), igual al "Total dos rendimentos" del informe de gestión; fuera el renglón neto de
+  justo valor. Cifras cotejadas con el texto del PDF. Con esto el 281 queda cerrado. Los PDF nuevos, copiados a la carpeta principal (rsync `--no-links`). ASSET_V 1300 en la rama.
+
+### Qué queda (para TODO)
+
+- 282 a: Lazio 2017 (las dos capturas de Wayback están truncadas en 1 MiB y cifradas; el sitio da 404 y 1Info pide cuenta: candidato a
+  mail al club). Lazio 2006 y 2011-2013 figuran `sin_informe`, pero el informe del consolidado está en la API
+  del club (2011-2013) y en Wayback (2006).
+- 282 a: Roma 2022, el informe del consolidado (el sitio lista "consolidato" pero el link baja el del individual; Wayback no lo tiene).
+- 282 a: Juventus figura con perímetro "individual" en su evidencia; si el sitio publicara el consolidado, las líneas de 2022-2025 cambian
+  de informe (los dos están bajados, `Juventus-report-audit-consolidated-financial-statements-*`).
+- 282 a, Italia sin documento: Napoli 2018 y 2020 (el host viejo `cdn.sscnapoli.iquii.info` no responde y Wayback no los tiene), Hellas
+  Verona 2020-2024 (el sitio solo lista el último año; Wayback y las rutas probables del CDN, nada) y Bologna 2025 (Firecrawl `/map` del
+  sitio no encuentra el informe). Candidatos a mail.
+- 282 a, Portugal (25: Académico de Viseu 2022-2025, Alverca 2024-2025, Casa Pia 2022, Chaves 2022-2023, Felgueiras 2024, Mafra 2024,
+  Marítimo 2021-2025, Nacional 2022-2025, Rio Ave 2016-2017, Vizela 2022, Portimonense 2022-2024): ningún canal público los tiene. Probé
+  (2026-10-18) la página de relatório e contas de cada club, la mediateca de WordPress (`search=certificacao|parecer|auditoria`),
+  Firecrawl `/map` de los once dominios, el CDX de Wayback de dominio completo y arquivo.pt. Las versiones publicadas son las mismas que
+  tenemos (mismo md5 o mismas páginas): Marítimo y Portimonense listan la Certificação Legal das Contas en el índice pero el PDF publicado
+  termina antes. Candidatos a mail al club (pedir la CLC de cada ejercicio).
+
+### Gotcha (ya escrito en `worktree.md` con el ok de Guido)
+
+- Copiar PDF del worktree a la carpeta principal con `rsync -a` copia también los symlinks que crea `worktree.mjs preparar`, que apuntan
+  a la principal: el archivo real de la principal queda reemplazado por un link a sí mismo. Pasó con dos PDF de Lazio (los informes del
+  individual de 2025 y 2026); se recuperaron bajándolos otra vez del sitio del club (mismas páginas que su .md). La forma segura: copiar
+  solo archivos regulares, por ejemplo `rsync -a --no-links` o `find … -type f` como lista.
+
+### Qué queda del 282 a
+
+- Hamburgo 2024 (2023-24): no aparece en las 8 páginas de resultados de "HSV Fußball AG" en el Unternehmensregister (el 2024-25 sí);
+  probar la lista "Hinterlegte Jahresabschlussunterlagen" de la ficha de la KGaA (HRB 191603) o la de la AG vieja (HRB 47576). Cada
+  publicación pide un captcha que tiene que resolver una persona.
+- Sin canal público (candidatos a mail): San Lorenzo 2011 y 2012 (el informe de Deloitte "se extiende en documento aparte", que el club
+  nunca subió; el `balance_2012.pdf` de Wayback es el mismo archivo que tenemos), Argentinos 2015 (Wayback del dominio, sin PDF de
+  balance) y los 10 japoneses 2025 (los clubes publican el 決算公告, solo el balance, sin auditor; Frontale 2025 confirmado).

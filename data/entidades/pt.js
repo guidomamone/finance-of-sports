@@ -5430,6 +5430,17 @@ Object.assign(window.CLUB_ENTIDADES, {
     "fuente": {
      "md": "Clubes/Portugal/União de Leiria/Relatorio-Contas-UDL-SAD_2022-2023.md",
      "linea": 115
+    },
+    "ingresos": {
+     "2024": {
+      "total": 0.449,
+      "moneda": "EUR",
+      "cierre": "2024-06-30",
+      "fuente": {
+       "md": "Clubes/Portugal/União de Leiria/RELATORIO-E-CONTAS-DE-JUL2024-A-JUN2025_UDL.md",
+       "linea": 598
+      }
+     }
     }
    }
   },

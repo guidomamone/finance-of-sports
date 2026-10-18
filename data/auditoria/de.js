@@ -111,6 +111,21 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
+ "hamburgersv-de": {
+  "2025": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO AG Wirtschaftsprüfungsgesellschaft"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Alemania/Hamburger SV/fussball-ag-bestaetigungsvermerk-2024-25.md",
+    "linea": 17
+   }
+  }
+ },
  "hoffenheim-de": {
   "2024": {
    "auditor": {

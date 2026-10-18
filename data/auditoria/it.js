@@ -290,6 +290,19 @@ Object.assign(window.CLUB_AUDITORIA, {
     "linea": 8207
    }
   },
+  "2013": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/AS Roma/AS-Roma-relazione-revisione-consolidato-2013.md",
+    "linea": 42
+   }
+  },
   "2014": {
    "auditor": {
     "nombre": "BDO",
@@ -392,6 +405,45 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2021.md",
     "linea": 9297
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "Deloitte",
+    "tipo": "firma",
+    "legal": "Deloitte & Touche S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/AS Roma/AS-Roma-relazione-revisione-consolidato-2023.md",
+    "linea": 31
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "Deloitte",
+    "tipo": "firma",
+    "legal": "Deloitte & Touche S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/AS Roma/AS-Roma-relazione-revisione-consolidato-2024.md",
+    "linea": 30
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO Italia S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/AS Roma/AS-Roma-relazione-revisione-consolidato-2025.md",
+    "linea": 34
    }
   }
  },
@@ -657,6 +709,60 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
+ "cremonese-it": {
+  "2022": {
+   "auditor": {
+    "nombre": "EY",
+    "tipo": "firma",
+    "legal": "EY S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Cremonese/Cremonese-relazione-revisione-2022.md",
+    "linea": 30
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO Italia S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Cremonese/Cremonese-relazione-revisione-2023.md",
+    "linea": 37
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO Italia S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Cremonese/Cremonese-relazione-revisione-2024.md",
+    "linea": 35
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO Italia S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Cremonese/Cremonese-relazione-revisione-2025.md",
+    "linea": 35
+   }
+  }
+ },
  "fiorentina-it": {
   "2019": {
    "auditor": {
@@ -762,6 +868,20 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Italia/Genoa/Genoa-bilancio-30.06.2025-individual.md",
     "linea": 3915
+   }
+  }
+ },
+ "hellasverona-it": {
+  "2025": {
+   "auditor": {
+    "nombre": "Audirevi S.p.A.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Hellas Verona/Hellas-Verona-relazione-revisione-2025.md",
+    "linea": 33
    }
   }
  },
@@ -1119,6 +1239,19 @@ Object.assign(window.CLUB_AUDITORIA, {
     "linea": 7331
    }
   },
+  "2022": {
+   "auditor": {
+    "nombre": "Deloitte",
+    "tipo": "firma",
+    "legal": "Deloitte & Touche S.p.A."
+   },
+   "dictamen": "con_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Juventus/Juventus-report-audit-financial-statements-2021-22.md",
+    "linea": 33
+   }
+  },
   "2023": {
    "auditor": {
     "nombre": "Deloitte",
@@ -1132,6 +1265,19 @@ Object.assign(window.CLUB_AUDITORIA, {
     "linea": 9146
    }
   },
+  "2024": {
+   "auditor": {
+    "nombre": "Deloitte",
+    "tipo": "firma",
+    "legal": "Deloitte & Touche S.p.A."
+   },
+   "dictamen": "con_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Juventus/Juventus-report-audit-financial-statements-2023-24.md",
+    "linea": 34
+   }
+  },
   "2025": {
    "auditor": {
     "nombre": "Deloitte",
@@ -1142,7 +1288,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    "continuidad": false,
    "fuente": {
     "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2024-25.md",
-    "linea": 12350
+    "linea": 16886
    }
   }
  },
@@ -1268,6 +1414,136 @@ Object.assign(window.CLUB_AUDITORIA, {
    "continuidad": false,
    "fuente": null
   },
+  "2014": {
+   "auditor": {
+    "nombre": "PwC",
+    "tipo": "firma",
+    "legal": "PricewaterhouseCoopers SpA"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-consolidato-2013-14.md",
+    "linea": 34
+   }
+  },
+  "2015": {
+   "auditor": {
+    "nombre": "PwC",
+    "tipo": "firma",
+    "legal": "PricewaterhouseCoopers SpA"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-consolidato-2014-15.md",
+    "linea": 36
+   }
+  },
+  "2016": {
+   "auditor": {
+    "nombre": "PwC",
+    "tipo": "firma",
+    "legal": "PricewaterhouseCoopers SpA"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-consolidato-2015-16.md",
+    "linea": 58
+   }
+  },
+  "2018": {
+   "auditor": {
+    "nombre": "PwC",
+    "tipo": "firma",
+    "legal": "PricewaterhouseCoopers SpA"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-consolidato-2017-18.md",
+    "linea": 38
+   }
+  },
+  "2019": {
+   "auditor": {
+    "nombre": "Deloitte",
+    "tipo": "firma",
+    "legal": "Deloitte & Touche S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-consolidato-2018-19.md",
+    "linea": 35
+   }
+  },
+  "2020": {
+   "auditor": {
+    "nombre": "Deloitte",
+    "tipo": "firma",
+    "legal": "Deloitte & Touche S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-consolidato-2019-20.md",
+    "linea": 36
+   }
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "Deloitte",
+    "tipo": "firma",
+    "legal": "Deloitte & Touche S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-consolidato-2020-21.md",
+    "linea": 35
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "Deloitte",
+    "tipo": "firma",
+    "legal": "Deloitte & Touche S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-consolidato-2021-22.md",
+    "linea": 39
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "Deloitte",
+    "tipo": "firma",
+    "legal": "Deloitte & Touche S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-consolidato-2022-23.md",
+    "linea": 36
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "Deloitte",
+    "tipo": "firma",
+    "legal": "Deloitte & Touche S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-consolidato-2023-24.md",
+    "linea": 39
+   }
+  },
   "2025": {
    "auditor": {
     "nombre": "Deloitte",
@@ -1277,8 +1553,8 @@ Object.assign(window.CLUB_AUDITORIA, {
    "dictamen": "sin_salvedades",
    "continuidad": false,
    "fuente": {
-    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-esercizio-2024-25.md",
-    "linea": 44
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-consolidata-2024-25.md",
+    "linea": 39
    }
   },
   "2026": {
@@ -1290,8 +1566,8 @@ Object.assign(window.CLUB_AUDITORIA, {
    "dictamen": "sin_salvedades",
    "continuidad": false,
    "fuente": {
-    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-esercizio-2025-26.md",
-    "linea": 25
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-consolidata-2025-26.md",
+    "linea": 40
    }
   }
  },
@@ -1333,6 +1609,86 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Italia/Monza/Monza-bilancio-2024.md",
     "linea": 2801
+   }
+  }
+ },
+ "napoli-it": {
+  "2019": {
+   "auditor": {
+    "nombre": "Baker Tilly",
+    "tipo": "firma",
+    "legal": "Baker Tilly Revisa S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Napoli/Napoli-relazione-revisione-2019.md",
+    "linea": 55
+   }
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "Grant Thornton",
+    "tipo": "firma",
+    "legal": "Ria Grant Thornton S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Napoli/Napoli-relazione-revisione-2021.md",
+    "linea": 35
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "Grant Thornton",
+    "tipo": "firma",
+    "legal": "Ria Grant Thornton S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Napoli/Napoli-relazione-revisione-2022.md",
+    "linea": 24
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM Società di Revisione e Organizzazione Contabile S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Napoli/Napoli-relazione-revisione-2023.md",
+    "linea": 62
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM Società di Revisione e Organizzazione Contabile S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Napoli/Napoli-relazione-revisione-2024.md",
+    "linea": 62
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM Società di Revisione e Organizzazione Contabile S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Napoli/Napoli-relazione-revisione-2025.md",
+    "linea": 65
    }
   }
  },
@@ -1631,6 +1987,110 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2025.md",
     "linea": 2399
+   }
+  }
+ },
+ "torino-it": {
+  "2018": {
+   "auditor": {
+    "nombre": "FV & C. S.A.S.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Torino/Torino-relazione-revisione-2018.md",
+    "linea": 40
+   }
+  },
+  "2019": {
+   "auditor": {
+    "nombre": "FV & C. S.A.S.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Torino/Torino-relazione-revisione-2019.md",
+    "linea": 44
+   }
+  },
+  "2020": {
+   "auditor": {
+    "nombre": "Grant Thornton",
+    "tipo": "firma",
+    "legal": "Ria Grant Thornton S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Torino/Torino-relazione-revisione-2020.md",
+    "linea": 27
+   }
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "Grant Thornton",
+    "tipo": "firma",
+    "legal": "Ria Grant Thornton S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Torino/Torino-relazione-revisione-2021.md",
+    "linea": 27
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "Grant Thornton",
+    "tipo": "firma",
+    "legal": "Ria Grant Thornton S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Torino/Torino-relazione-revisione-2022.md",
+    "linea": 24
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO Italia S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Torino/Torino-relazione-revisione-2023.md",
+    "linea": 35
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO Italia S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Torino/Torino-relazione-revisione-2024.md",
+    "linea": 34
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO Audit Services S.r.l."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Torino/Torino-relazione-revisione-2025.md",
+    "linea": 36
    }
   }
  },

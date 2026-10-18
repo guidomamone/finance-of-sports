@@ -66,6 +66,8 @@ Cómo estructurar la sesión de onboarding completa (una vez que ya hay un PDF e
   Cloudflare/challenge JS en cada país), preferí de entrada `fetch()+Blob+<a download>` desde la
   consola del Browser pane: ese método SÍ se puede apuntar con un nombre de archivo que ya incluya la
   carpeta destino, y evita el paso extra de mover.
+- **El informe del auditor es un documento aparte casi siempre** (Italia, Juventus, Lazio, Torino…): si el balance cargado no lo
+  trae, buscarlo en la misma página del club antes de anotar "FALTA EN EL PDF". El detalle por país, en `paises/<País>.md`.
 - **Antes de cargar cualquier PDF encontrado en un país nuevo al sitio**, releer `club-data-mapping` sección 5 (conversión a USD; detalle en `club-data-mapping/referencia/fx.md`) y `club-data-mapping/referencia/formato-simplificado.md, "grossDebt"`: ambas asumen implícitamente el criterio
   argentino de "moneda homogénea"/RT6, que puede no aplicar en otro país con otra normativa contable.
 - **Búsquedas en worktrees separados** (varias sesiones en paralelo sobre distintos países/clubes): se
