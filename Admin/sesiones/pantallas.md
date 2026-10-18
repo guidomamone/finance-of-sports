@@ -178,3 +178,16 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
   Mockup: "Página de sponsor · Betano" de "Pantallas FoS". Los tres errores del dato que vio pantallas (markup pegado al nombre, el
   estadio de Boca con dos nombres, Sparta con dos nombres) los arregló fos-datos (datos-sourcing 9720f5e64c); un cambio de nombre real
   del estadio queda como histórico.
+
+## Después del quinto merge del 2026-10-18
+
+### Qué cambió (para CHANGELOG)
+
+- "Estadio y camiseta" (`js/contexto.js`): un campo que salió de la Wikipedia del país (listado en `local`) lleva a `fuenteLocal`, y el
+  link dice "Wikipedia (es)"; la de la temporada sigue diciendo "Wikipedia: <temporada>". ASSET_V 1275.
+
+### Qué queda (para TODO)
+
+- 297, sponsors en el buscador: fos-datos hizo `data/sponsors-indice.js` (`window.SPONSORS_INDICE = [[id, nombre, roles], …]`, ~95 KB,
+  2416 entradas; datos-sourcing bb4f6c6b46, sin mergear). Plan: cargarlo recién al abrir el buscador (no de entrada) y sumar el
+  resultado "Sponsors y marcas" que lleva a `SPONSOR_VIEW.abrir(id)`. Espera el merge de datos-sourcing y el fast-forward.
