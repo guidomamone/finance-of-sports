@@ -236,6 +236,8 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 281. FINANZAS: INGRESOS DE LAS OTRAS ENTIDADES (pedido de Guido, 2026-10-17). Hecho para Portugal: 14 asociaciones-año transcriptas con su
    línea de ingresos (Vizela, Belenenses, Chaves, Académica, Braga, Marítimo, Porto…; 17 líneas de ingresos en el registro). Falta: União
    de Leiria, cuyo PDF no trae el estado de resultados (sourcing).
+   Decisión pendiente de Guido: si los ingresos de la otra entidad incluyen los "Juros e rendimentos similares obtidos" (hoy los suman
+   Marítimo y Porto; no se suman los renglones netos de imparidad ni de provisiones).
 282. QUIÉN AUDITA: LO QUE QUEDA (pedido de Guido, 2026-10-17). Los 942 balances tienen línea, la tarjeta de Finanzas está (con el
    "alcance" de una revisión limitada, procedimientos acordados, propósito especial o cuentas del grupo). Falta: (a) sourcing de los 88
    informes del auditor que no están en ningún PDF nuestro (`node tools/auditoria.mjs --pendientes`, "FALTA EN EL PDF"); (f) que el pipeline
