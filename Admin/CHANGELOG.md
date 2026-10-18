@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 749 — Merge de pipeline 2: el estado belga por códigos NBB (2026-10-18)
+
+Sin conflictos; P0 0 / P1 0.
+
+- To-do 298 t: `tools/nbb.mjs` (nuevo) lee el estado de resultados NBB por sus códigos legales (signos, detalle o renglón nunca los dos,
+  Brutomarge abreviada abierta con su residuo); `verificar.mjs` suma el escalón "códigos NBB" con la compuerta de todos los totales impresos
+  exactos. Medido: 358 documentos de otros países idénticos; 17 belgas de la cola a OK, ninguno al revés; los 10 años belgas publicados igual.
+- Bélgica ya no espera a la t; espera a la u. Patro Eisden 2025 y Lommel SK 2018 y 2025, con errores chicos de la carga vieja: a decidir (298 t2).
+
 ## Versión 748 — Merge de datos 2: camisetas de Wikipedia y ejercicios nuevos (2026-10-18)
 
 Lo generado regenerado; ASSET_V 1308, P0 0 / P1 0.

@@ -40,3 +40,5 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
 - Un documento belga con el estado NBB con códigos se verifica por sus códigos: las filas que llegan a la categorización son las hojas del
   esquema (con el rótulo que extrajo la IA en esa línea, o el del .md). Una fila de nota sigue abriendo su renglón si suma.
 - Un documento belga con ajustes `fila` se verifica como antes.
+
+## Después del merge de la 298 t (2026-10-18)

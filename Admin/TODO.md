@@ -271,7 +271,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    los clubes del borrador `Admin/registros/cola-borradores/altas-2026-10-17.md` cuando onboarding los publique (Viking, Vålerenga, Luzern,
    St. Gallen, Molde, Go Ahead Eagles, Basel, Pardubice, Aalesund, Fredrikstad, Sarpsborg 08; el borrador tiene la entidad de cada uno con
    cita). Después, fast-forward de la rama finanzas.
-298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, o y r, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
+298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, o, r y t, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
    vez; el detalle con casos, en `Admin/Archive/sesion-onboarding-2026-10-18-2.md`). a) CIERRE FALSO en verificar.mjs: compara en valor
    absoluto y da "cierra" con una fila del lado o signo equivocado (Lierse Kempenzonen 2022 habría cargado un gasto como ingreso): lo más
    grave. b) Esquema NBB belga en verificar.mjs y cargar.mjs: costos financieros 65/66B positivos, renglones "(+)/(-)" por valor absoluto,
@@ -284,11 +284,10 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    perímetros distintos, ceros reales y perfil que se repreguntan). q) el ensayo de lote.mjs cobra la categorización de todos los documentos de
    la lista, también los ya cargados o categorizados. El detalle
    de l a q, en `Admin/Archive/sesion-onboarding-2026-10-18-4.md`. s) periodo.mjs / localizar toman el inicio del boekjaar como cierre
-   cuando el ejercicio empieza en junio y eligen la columna "Vorig boekjaar" (vacía) sin aviso (Beerschot 2019 -correction). t) PRIMERO, con
-   la u (Bélgica espera a las dos; decisión de Guido: sin ajustes a mano): lo del esquema NBB que la b no cubrió, 7 reglas revisadas contra
-   el .md (60/66A y 600/8 + 609 sumados además de sus renglones; el waarvan del 76A; la Brutomarge 9900 perdida o sin signo; el residuo
-   implícito de la Brutomarge; el financiero abreviado con el mismo signo; reversiones (+)/(-) 631/4, 635/8 y 77 en positivo; OH Leuven 2021
-   con el resumen del jaarverslag). u) la compuerta del 273 frena todo año nuevo sin liga en data/club-leagues (Bélgica solo tiene 2025):
+   cuando el ejercicio empieza en junio y eligen la columna "Vorig boekjaar" (vacía) sin aviso (Beerschot 2019 -correction). t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en
+   ellos: Patro Eisden 2025 (ingresos +1.810 por el waarvan 76A, gastos +4.012 por el 631/4), Lommel SK 2025 (gastos +172, el 609) y Lommel SK
+   2018 (−182 de financiero) cerraron por tolerancia con errores chicos: decidir con Guido si se corrigen (escalón: correr el NBB también
+   con ajustes si el resultado sigue exacto). PRIMERO: u) la compuerta del 273 frena todo año nuevo sin liga en data/club-leagues (Bélgica solo tiene 2025):
    que la carga resuelva la liga con la compuerta de ligas-sin-verificar antes; faltan las listas de las ligas amateur belgas. v) el final
    de lote.mjs lista como frenados los originales que salteó por su -correction. El detalle de s a v, con líneas y montos, en
    `Admin/Archive/sesion-onboarding-2026-10-18-5.md`. k) alta-club.mjs / cargar-lote.mjs escriben la liga del alta en null aunque
