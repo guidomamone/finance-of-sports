@@ -102,11 +102,15 @@
     (2,18 M €), Braga 2022-23 (5,67 M €) y Marítimo 2020-21 a 2024-25 (cierre 31 de julio; suma también los juros obtidos; 2025 = 5.586.395,
     igual al total de rendimentos del informe de gestión).
   - União de Leiria 2023-24: el PDF es solo el anexo (dos veces), sin DR: transcripto, sin línea de ingresos.
+  - Porto (Futebol Clube do Porto): 2019-20 (11,40 M €), 2023-24 (17,88 M €) y 2024-25 (15,70 M €, la DR va en miles: `unidad` 1000),
+    siempre de la DR individual de la asociación, no del consolidado del grupo que el mismo documento trae. Transcriptos en tramos de
+    ~50 págs.; los [verificar] se resolvieron contra la imagen de la página; dos notas de transcripción marcadas como tales en 2019-20.
+  - Criterio aplicado (para CONVENCIONES-DATOS, si Guido lo confirma): "todos los renglones de ingresos" incluye los "Juros e rendimentos
+    similares obtidos" (Marítimo, Porto); no incluye los renglones netos de imparidad ni de provisiones.
 
 ### Qué queda (para TODO)
 
-- 281: Porto (relatórios 2019-20, 2023-24 y 2024-25 de la asociación) en curso. União de Leiria 2023-24: falta un documento con la DR de
-  la asociación para su línea de ingresos.
+- 281: União de Leiria 2023-24, un documento con la DR de la asociación para su línea de ingresos. El resto del 281 está hecho.
 
 ### Qué deja de ser cierto en ESTADO
 
