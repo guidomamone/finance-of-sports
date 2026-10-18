@@ -10,3 +10,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2025 desde `Clubes/Estonia/Tartu Tammeka/aruanne-2025.pdf` (sourceId `tartutammeka-ee-aruanne-2025`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2020 desde `Clubes/Estonia/Tartu Tammeka/aruanne-2020.pdf` (sourceId `tartutammeka-ee-aruanne-2020`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2019 desde `Clubes/Estonia/Tartu Tammeka/aruanne-2019.pdf` (sourceId `tartutammeka-ee-aruanne-2019`).

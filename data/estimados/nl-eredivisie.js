@@ -1,5 +1,5 @@
 // GENERADO por tools/estimar.mjs: no editar a mano. ESTIMACIONES, no datos reales: ingreso en millones de USD del año, rango del 80% (lo-hi) y error mediano medido (%).
 window.ESTIMADOS = window.ESTIMADOS || {};
 window.ESTIMADOS["nl-eredivisie"] = {
-  2023: [{"id":"ajax-nl","revenue":158.687,"lo":88.97,"hi":300.734,"caso":"afuera","error":26,"de":[2024]},{"id":"az-nl","revenue":92.126,"lo":51.651,"hi":174.591,"caso":"afuera","error":26,"de":[2024]},{"id":"feyenoord-nl","revenue":172.725,"lo":96.841,"hi":327.339,"caso":"afuera","error":26,"de":[2024]},{"id":"psv-nl","revenue":191.495,"lo":107.364,"hi":362.909,"caso":"afuera","error":26,"de":[2024]}],
+  2023: [{"id":"ajax-nl","revenue":158.687,"lo":89.014,"hi":300.532,"caso":"afuera","error":26,"de":[2024]},{"id":"az-nl","revenue":92.126,"lo":51.677,"hi":174.474,"caso":"afuera","error":26,"de":[2024]},{"id":"feyenoord-nl","revenue":172.725,"lo":96.889,"hi":327.119,"caso":"afuera","error":26,"de":[2024]},{"id":"psv-nl","revenue":191.495,"lo":107.417,"hi":362.666,"caso":"afuera","error":26,"de":[2024]}],
 };
