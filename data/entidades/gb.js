@@ -792,6 +792,15 @@ Object.assign(window.CLUB_ENTIDADES, {
      "linea": 1033
     }
    },
+   "city-football-group-midco": {
+    "nombre": "City Football Group (Midco) Limited",
+    "forma": "holding",
+    "pais": "GB",
+    "fuente": {
+     "md": "Clubes/España/Girona FC/informe-auditoria-cuentas-anuales-2024-2025.md",
+     "linea": 6811
+    }
+   },
    "manchester-city-limited": {
     "nombre": "Manchester City Limited",
     "forma": "holding",
@@ -834,35 +843,42 @@ Object.assign(window.CLUB_ENTIDADES, {
     }
    },
    {
-    "de": "sheikh-mansour",
-    "a": "mancity-fc",
+    "de": "city-football-group-midco",
+    "a": "manchester-city-limited",
     "rel": "controla",
-    "desde": 2024,
-    "hasta": 2025,
+    "desde": 2023,
+    "nota": {
+     "es": "75 % o más de las acciones y los votos (registro de Companies House, desde el 3 de octubre de 2022; antes, City Football Group Limited).",
+     "en": "75% or more of the shares and votes (Companies House register, since 3 October 2022; before that, City Football Group Limited)."
+    },
     "fuente": {
-     "md": "Clubes/Inglaterra/Manchester City/manchester-city-full-accounts-2024-25.md",
-     "linea": 2236
+     "url": "https://find-and-update.company-information.service.gov.uk/company/02989498/persons-with-significant-control"
     }
    },
    {
     "de": "city-football-group",
-    "a": "mancity-fc",
+    "a": "city-football-group-midco",
     "rel": "controla",
-    "desde": 2024,
-    "hasta": 2025,
+    "desde": 2022,
+    "nota": {
+     "es": "75 % o más de las acciones y los votos (registro de Companies House).",
+     "en": "75% or more of the shares and votes (Companies House register)."
+    },
     "fuente": {
-     "md": "Clubes/Inglaterra/Manchester City/manchester-city-full-accounts-2024-25.md",
-     "linea": 1033
+     "url": "https://find-and-update.company-information.service.gov.uk/company/14120242/persons-with-significant-control"
     }
    },
    {
     "de": "sheikh-mansour",
     "a": "city-football-group",
     "rel": "controla",
-    "desde": 2024,
-    "hasta": 2025,
+    "desde": 2017,
+    "nota": {
+     "es": "75 % o más de las acciones y los votos (registro de Companies House). Las cuentas del club nombran como sociedad dueña última a Newton Investment and Development LLC, de Abu Dhabi, también 100 % suya.",
+     "en": "75% or more of the shares and votes (Companies House register). The club's accounts name Newton Investment and Development LLC, of Abu Dhabi, also wholly his, as the ultimate parent company."
+    },
     "fuente": {
-     "url": "https://en.wikipedia.org/wiki/City_Football_Group"
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08355862/persons-with-significant-control"
     }
    }
   ]

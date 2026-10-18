@@ -249,7 +249,7 @@ window.GRUPOS = {
    "nombre": "His Highness Sheikh Mansour bin Zayed Al Nahyan",
    "pais": "AE",
    "fuente": {
-    "url": "https://en.wikipedia.org/wiki/City_Football_Group"
+    "url": "https://find-and-update.company-information.service.gov.uk/company/08355862/persons-with-significant-control"
    }
   },
   "clubes": [
@@ -263,7 +263,20 @@ window.GRUPOS = {
     "hasta": 2025,
     "fuente": {
      "md": "Clubes/Inglaterra/Manchester City/manchester-city-full-accounts-2024-25.md",
-     "linea": 1033
+     "linea": 2236
+    }
+   },
+   {
+    "clubId": "girona-es",
+    "nombre": "Girona Futbol Club, S.A.D.",
+    "pais": "ES",
+    "control": false,
+    "pct": 47.85,
+    "desde": 2025,
+    "hasta": 2025,
+    "fuente": {
+     "md": "Clubes/España/Girona FC/informe-auditoria-cuentas-anuales-2024-2025.md",
+     "linea": 6811
     }
    },
    {
@@ -324,18 +337,6 @@ window.GRUPOS = {
     "pais": "AU",
     "control": true,
     "pct": null,
-    "desde": 2025,
-    "hasta": 2025,
-    "fuente": {
-     "url": "https://en.wikipedia.org/wiki/City_Football_Group"
-    }
-   },
-   {
-    "clubId": "girona-es",
-    "nombre": "Girona Futbol Club, S.A.D.",
-    "pais": "ES",
-    "control": false,
-    "pct": 47,
     "desde": 2025,
     "hasta": 2025,
     "fuente": {

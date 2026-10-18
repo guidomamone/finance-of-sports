@@ -108,24 +108,29 @@ Object.assign(window.CLUB_ENTIDADES, {
   },
   "relaciones": [
    {
-    "de": "sheikh-mansour",
-    "a": "city-football-group",
+    "de": "city-football-group",
+    "a": "city-football-group-midco",
     "rel": "controla",
-    "desde": 2024,
-    "hasta": 2025,
+    "desde": 2022,
+    "nota": {
+     "es": "75 % o más de las acciones y los votos (registro de Companies House).",
+     "en": "75% or more of the shares and votes (Companies House register)."
+    },
     "fuente": {
-     "url": "https://en.wikipedia.org/wiki/City_Football_Group"
+     "url": "https://find-and-update.company-information.service.gov.uk/company/14120242/persons-with-significant-control"
     }
    },
    {
-    "de": "city-football-group",
-    "a": "girona-fc-sad",
-    "rel": "participa",
-    "pct": 47,
-    "desde": 2025,
-    "hasta": 2025,
+    "de": "sheikh-mansour",
+    "a": "city-football-group",
+    "rel": "controla",
+    "desde": 2017,
+    "nota": {
+     "es": "75 % o más de las acciones y los votos (registro de Companies House). Las cuentas del club nombran como sociedad dueña última a Newton Investment and Development LLC, de Abu Dhabi, también 100 % suya.",
+     "en": "75% or more of the shares and votes (Companies House register). The club's accounts name Newton Investment and Development LLC, of Abu Dhabi, also wholly his, as the ultimate parent company."
+    },
     "fuente": {
-     "url": "https://en.wikipedia.org/wiki/City_Football_Group"
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08355862/persons-with-significant-control"
     }
    },
    {
