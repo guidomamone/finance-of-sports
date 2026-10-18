@@ -6,3 +6,5 @@
 - **Ejercicios en disco** (`Clubes/Estonia/Kuressaare/aruanne-<año>.pdf`): 2019-2025 (7), 15-27 págs. NO auditado 2019-2024; auditado 2025 (27 págs.).
 - **Canal**: `https://ariregister.rik.ee/eng/company/80052525` → tabla de informes anuales → `PDF` (URL `.../company/80052525/file/<id>`, sin login). Más años disponibles en el registro (2009-2018) que no se bajaron (el objetivo era 5).
 - Último chequeo: 2026-10-03.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2025 desde `Clubes/Estonia/Kuressaare/aruanne-2025.pdf` (sourceId `kuressaare-ee-aruanne-2025`).
