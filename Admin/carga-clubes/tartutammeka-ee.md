@@ -128,6 +128,90 @@ tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-18): null, SIN VERIFICAR (sin caché de rosters para ee (tools/club-league-reference/ee.json)).
 ```
 
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/Tartu Tammeka/aruanne-2020.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/Tartu Tammeka/aruanne-2020.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Liikmetelt saadud tasud | pág. 5, precedente |
+| 2 | Tartu Linnavalitsus | pág. 14, precedente |
+| 3 | Tartu Spordiliit | pág. 14, Claude 0.85 |
+| 4 | Eesti Jalgpalli Liit | pág. 14, precedente |
+| 5 | UEFA Solidaarsustoetus | pág. 14, precedente |
+| 6 | Spordikoolituse- ja Teabe Sihtasutus | pág. 14, precedente |
+| 7 | Kultuuriministeerium | pág. 14, Claude 0.8 |
+| 8 | Füüsilised ja juriidilised isikud | pág. 14, precedente |
+| 9 | Tartu Vallavalitsus | pág. 14, precedente |
+| 10 | Eesti Töötukassa | pág. 14, Jev 0.96 |
+| 11 | Haridus- ja Teadusministeerium | pág. 14, Jev 0.97 |
+| 12 | Varustus | pág. 15, Claude 0.9 |
+| 13 | Reklaam | pág. 15, Jev 1 |
+| 14 | Tulu piletite müügist | pág. 15, precedente |
+| 15 | Tulu muust äritegevusest | pág. 15, precedente |
+| 16 | Mängija üleminekutasu | pág. 15, Jev 1 |
+| 17 | Tulu väljaku rendist | pág. 15, precedente |
+| 18 | Muud tulud | pág. 5, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Üür ja rent | pág. 15, precedente |
+| 2 | Tööjõukulud - elukutselised mängijad | pág. 17, Jev 0.98 |
+| 3 | Sotsiaalmaksud - elukutselised mängijad | pág. 17, precedente |
+| 4 | Tööjõukulud - muu personal | pág. 17, Jev 0.99 |
+| 5 | Sotsiaalmaksud - muu personal | pág. 17, precedente |
+| 6 | Spordibaaside rent | pág. 15, precedente |
+| 7 | Turniiride, võistluste osavõtutasud | pág. 15, precedente |
+| 8 | Spordivarustus | pág. 15, precedente |
+| 9 | Stipendiumid | pág. 15, precedente |
+| 10 | Annetus Vähiravifondile Kingitud Elu | pág. 15, precedente |
+| 11 | Mängijate preemiad | pág. 15, Jev 0.98 |
+| 12 | Sissemakse fondi | pág. 15, precedente |
+| 13 | Sporditoetus | pág. 15, precedente |
+| 14 | Spordistipendium | pág. 15, precedente |
+| 15 | Üür ja rent | pág. 16, precedente |
+| 16 | Elektrienergia | pág. 16, precedente |
+| 17 | Kütus | pág. 16, precedente |
+| 18 | Veevarustusteenused | pág. 16, precedente |
+| 19 | Mitmesugused bürookulud | pág. 16, precedente |
+| 20 | Lähetuskulud | pág. 16, precedente |
+| 21 | Koolituskulud | pág. 16, precedente |
+| 22 | Kulu ebatõenäoliselt laekuvatest nõuetest | pág. 16, precedente |
+| 23 | Spordivarustus | pág. 16, precedente |
+| 24 | Transport | pág. 16, precedente |
+| 25 | Turniiride, võistluste osavõtutasud | pág. 16, precedente |
+| 26 | Mängijate üleminekutasud | pág. 16, Jev 0.96 |
+| 27 | Treeninglaager | pág. 16, precedente |
+| 28 | Võistluste, ürituste korraldamiskulud | pág. 16, precedente |
+| 29 | Turvateenus | pág. 16, precedente |
+| 30 | Litsentsitasud | pág. 16, precedente |
+| 31 | Meditsiinitarvikud, taastumisvahendid | pág. 16, precedente |
+| 32 | Autokulud | pág. 16, Jev 0.99 |
+| 33 | Reklaamikulud | pág. 16, precedente |
+| 34 | Raamatupidamine | pág. 16, precedente |
+| 35 | Ehitusmaterjal ja -teenus | pág. 16, precedente |
+| 36 | Isikliku auto kasutamise kompensatsioon | pág. 16, precedente |
+| 37 | Juriidilised kulud | pág. 16, precedente |
+| 38 | Konsultatsioonid, projektijuhtimine | pág. 16, Jev 1 |
+| 39 | Muud | pág. 16, precedente |
+| 40 | Põhivarade kulum ja väärtuse langus | pág. 5, precedente |
+| 41 | Muud kulud | pág. 5, precedente |
+
+### Meta
+
+```text
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L152) (Claude 2026-10-18)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Televisión. sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## Fuentes
 
 ### tartutammeka-ee-aruanne-2025
@@ -136,4 +220,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Tartu Tammeka/aruanne-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### tartutammeka-ee-aruanne-2020
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Tartu Tammeka/aruanne-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

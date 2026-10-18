@@ -1,22 +1,10 @@
 {
  "pdf": "Clubes/Estonia/Tartu Tammeka/aruanne-2020.pdf",
- "generado": "2026-10-18T15:16:21.418Z",
- "frena": [
-  {
-   "etapa": "alta:reportType",
-   "motivo": "¿El documento trae un estado de resultados (o de recursos y gastos) anual cargable, o hay que buscar los estados en otro documento del club?"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "3 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Annetus Vähiravifondile Kingitud Elu\" -> other_expenses 0.75; \"Sissemakse fondi\" -> other_expenses 0.65; \"Juriidilised kulud\" -> admin_general_expense 0.75"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-18T18:16:07.128Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-18: 2025 trae los dos; la única controlada, OÜ Sepa Jalgpallikeskus, administra el estadio del club: consolidado (regla 2). (revisión del alta, subagente Sonnet, revisado por Claude 2026-10-18))",
+  "\"Televisión\" en 0: real, por ajuste manual (2026-10-18, sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18))",
   "gestión: ningún presidente confirmado cubre 2020 (cierre 2020-12-31); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -303,9 +291,9 @@
     "amountNative": -0.001682,
     "disclosureLevel": "aggregated",
     "_pag": 15,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Mängijate preemiad",
@@ -323,9 +311,9 @@
     "amountNative": -0.004386,
     "disclosureLevel": "aggregated",
     "_pag": 15,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sporditoetus",
@@ -573,9 +561,9 @@
     "amountNative": -0.195913,
     "disclosureLevel": "aggregated",
     "_pag": 16,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Konsultatsioonid, projektijuhtimine",
@@ -665,7 +653,28 @@
  },
  "clubId": "tartutammeka-ee",
  "year": 2020,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Tartu Tammeka/aruanne-2020.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L152) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Tartu Tammeka/aruanne-2020.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
  "seleccion": {
   "filas": 61,
   "notasUsadas": [],
@@ -1092,11 +1101,11 @@
    "origen": "verificacion (nota que desglosa \"Jagatud annetused ja toetused\")",
    "signoFijo": 0.001682,
    "cat": "other_expenses",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Donación a un fondo de beneficencia (Vähiravifond Kingitud Elu, contra el cáncer) dentro de Jagatud annetused ja toetused; no es beca ni apoyo a jugadores. other_expenses. [Annetus Vähiravifondile Kingitud Elu -1 682 (aruanne-2020 L578)]",
    "destino": "expense",
    "amountNative": -0.001682
   },
@@ -1123,11 +1132,11 @@
    "origen": "verificacion (nota que desglosa \"Jagatud annetused ja toetused\")",
    "signoFijo": 0.004386,
    "cat": "other_expenses",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Sissemakse fondi' (aporte a un fondo, 4.386; 10.974 en 2019) en Jagatud annetused ja toetused: el documento no dice qué fondo. Mismo criterio que 'Eesti Jalgpalli Liit toetusfond' de Tartu 2025 (other_expenses). Monto chico; candidata a dudas-por-club si el fondo fuera de jugadores. [Sissemakse fondi -4 386 (aruanne-2020 L580)]",
    "destino": "expense",
    "amountNative": -0.004386
   },
@@ -1506,11 +1515,11 @@
    "origen": "verificacion (nota que desglosa \"Mitmesugused tegevuskulud\")",
    "signoFijo": 0.195913,
    "cat": "admin_general_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Honorarios legales: el propio documento aclara que son del litigio entre el club y el NK Otok croata por derechos de jugadores; son costo de abogados, no costo de traspaso (player_amortisation es para el pago por adquisición o comisión de agentes del traspaso). admin_general_expense. Monto alto y pu [Juriidilised kulud -195 913; 'Juriidilised kulud on seotud ... NK Otok'i vahel tekkinud mängijaõiguste teemalisest vaidlusest' (aruanne-2020 L621, L626)]",
    "destino": "expense",
    "amountNative": -0.195913
   },
@@ -1597,12 +1606,6 @@
    "destino": "netInterest"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (estado)": "gastos sin signo (se invierten)",
@@ -1663,8 +1666,8 @@
   },
   "reportType": {
    "valor": "official_balance_sheet",
-   "fuente": "el .md no tiene ninguna palabra de estado contable reconocible",
-   "estado": "pregunta"
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L152) (Claude 2026-10-18)",
+   "estado": "ok"
   },
   "perimetro": {
    "valor": "consolidado",
@@ -1693,8 +1696,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 3,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 18,
   "lineasGasto": 41,
   "metaFilas": 2,
