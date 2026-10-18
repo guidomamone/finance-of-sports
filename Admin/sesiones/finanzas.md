@@ -22,7 +22,17 @@
   que no es un consolidado. Los ingresos los copia `tools/entidades.mjs` de `data/rankings/` a `_grupos-detalle.js` (se baja al abrir un
   grupo), sin recalcular. Se llega desde la tarjeta Estructura (nombre del grupo, en la frase y en su caja). ASSET_V 1257.
 
+- To-do 281, el dato: línea `ingresos` en `Admin/registros/entidades.jsonl` (los renglones de ingresos citados de una entidad que no se
+  carga ese año; la suma da el total) con su chequeo en `tools/entidades.mjs`, que los publica en `data/entidades/<país>.js`. Piloto
+  Portugal: Vitória 2021/22 (la asociación tiene 65,8 % de la SAD; ingresos 4,57 M €), Tondela (año calendario 2021, 0,37 M €) y Braga
+  (36,98 % en 2020/21 y 36,99 % en 2022/23; ingresos 2020/21, que el sitio no muestra porque la SAD 2020/21 no está cargada). Rio Ave
+  2014-15 queda afuera: ese año de la SDUQ no está cargado.
+
 ## Decisiones de Guido (2026-10-18), para CONVENCIONES-DATOS
+
+- Ingresos de una entidad que no se carga (to-do 281): todos los renglones de ingresos de su estado de resultados, sin la ganancia por su
+  parte de la sociedad que se carga (en Portugal, "Ganhos imputados de subsidiárias"), que se contaría dos veces. Con la misma moneda y
+  el mismo cierre que el club, se muestra qué % son de los ingresos del club.
 
 - El total de un grupo multiclub suma solo los clubes que el grupo controla (más del 50 %); las participaciones menores se listan aparte.
 - La pertenencia de un club a un grupo puede citarse con una fuente externa (url y fecha) cuando el balance no lo dice.
@@ -43,7 +53,12 @@
   - Buscador: `data/entidades/_grupos.js` es `window.GRUPOS_INDICE = [{ id, nombre, alias, clubIds }]`, chico y eager (ya lo genera
     `tools/entidades.mjs`; el detalle va aparte en `_grupos-detalle.js`). Pantallas suma el resultado "Grupo" en `js/selector.js`, que llama a
     `GRUPO_VIEW.show(id)`.
-- 281, 282, 242 sin empezar.
+- 281: los ~17 documentos de entidades de clubes portugueses publicados sin transcribir (Porto 3, Braga 2022-23, Marítimo 5,
+  Belenenses, Chaves, Vizela 2, Académica, União de Leiria), por subagentes, y después su línea de ingresos. La pantalla del 281, con
+  mockup (artboard "Vitória y Tondela (to-do 281)").
+- 282, 242 sin empezar.
+- Visto de paso (para el 294): Qatar Sports Investments (dueño del PSG) tiene 29,60 % de la Braga SAD (Relato_rio-Contas-2022-23-SAD.md
+  L1613): participación menor de un grupo multiclub.
 
 ## Para PANTALLA (excepción aprobada por Guido, 2026-10-18)
 
