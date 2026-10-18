@@ -242,6 +242,14 @@ window.RANKINGS["br-serieB"] = {
         mix:[["Cuotas Sociales",1.723],["Comercial / Sponsors",0.139],["Televisión",2.248],["Venta de Jugadores",0.689]] },
     ],
   },
+  2014: {
+    leagueSize: null,
+    clubs: [
+      { id:"vilanova-br", revenue:2.303, reportType:"official_balance_sheet",
+        sourceId:"vilanova-br-notas-explicativas-2014",
+        mix:[["Cuotas Sociales",0.115],["Comercial / Sponsors",0.346],["Televisión",0.712],["Venta de Jugadores",0.251],["Otras secciones deportivas",0.048],["Fútbol profesional (sin desglosar por la fuente)",0.74],["Otros ingresos",0.092]] },
+    ],
+  },
   2012: {
     leagueSize: null,
     clubs: [

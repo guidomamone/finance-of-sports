@@ -17,7 +17,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'newells-ar': { 2019: 'ar-primera' },
   'banfield-ar': { 2020: 'ar-primera' },
   'gimnasiaesgrima-ar': { 2023: 'ar-primera', 2024: 'ar-primera', 2025: 'ar-primera', 2026: 'ar-primera' },
-  'ferrocarriloeste-ar': { 2022: null, 2023: null },
+  'ferrocarriloeste-ar': { 2022: 'ar-primeranacional', 2023: 'ar-primeranacional' },
   'godoycruz-ar': { 2020: 'ar-primera' },
   'losandes-ar': { 2020: 'ar-primerab', 2021: 'ar-primerab' },
 });

@@ -4,6 +4,9 @@ window.RANKINGS["ar-primeranacional"] = {
   2023: {
     leagueSize: null,
     clubs: [
+      { id:"ferrocarriloeste-ar", revenue:11.776, reportType:"official_balance_sheet",
+        sourceId:"ferrocarriloeste-ar-balance-119-2022-23",
+        mix:[["Cuotas Sociales",3.427],["Comercial / Sponsors",0.19],["Estadio",0.187],["Televisión",0.45],["Premios por competencias",0.032],["Venta de Jugadores",1.791],["Educación",1.031],["Otras secciones deportivas",3.438],["Otros ingresos",1.229]] },
       { id:"almagro-ar", revenue:1.209, reportType:"official_balance_sheet",
         sourceId:"almagro-ar-balance-2023",
         mix:[["Cuotas Sociales",0.062],["Comercial / Sponsors",0.188],["Estadio",0.301],["Televisión",0.405],["Premios por competencias",0.037],["Otras secciones deportivas",0.019],["Otros ingresos",0.197]] },
@@ -12,6 +15,9 @@ window.RANKINGS["ar-primeranacional"] = {
   2022: {
     leagueSize: null,
     clubs: [
+      { id:"ferrocarriloeste-ar", revenue:9.05, reportType:"official_balance_sheet",
+        sourceId:"ferrocarriloeste-ar-estados-contables-118-2021-22",
+        mix:[["Cuotas Sociales",2.903],["Comercial / Sponsors",0.333],["Estadio",0.157],["Televisión",0.544],["Premios por competencias",0.02],["Educación",0.885],["Otras secciones deportivas",2.862],["Otros ingresos",1.346]] },
       { id:"almagro-ar", revenue:0.915, reportType:"official_balance_sheet",
         sourceId:"almagro-ar-balance-2022",
         mix:[["Cuotas Sociales",0.054],["Comercial / Sponsors",0.103],["Estadio",0.029],["Televisión",0.406],["Venta de Jugadores",0.107],["Otras secciones deportivas",0.017],["Otros ingresos",0.199]] },

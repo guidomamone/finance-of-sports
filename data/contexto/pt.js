@@ -15,6 +15,9 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Estádio do Fontelo","capacidad":6785,"sponsor":"Palácio do Gelo","marca":"Joma","temporada":"2024–25 Liga Portugal 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356212163"},
   },
   'alverca-pt': {
+    2022: {"temporada":"2021–22 Liga 3 (Portugal)","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376276515"},
+    2023: {"temporada":"2022–23 Liga 3 (Portugal)","fuente":"https://en.wikipedia.org/w/index.php?oldid=1363229907"},
+    2024: {"temporada":"2023–24 Liga 3 (Portugal)","fuente":"https://en.wikipedia.org/w/index.php?oldid=1363229853"},
     2025: {"estadio":"Complexo Desportivo FC Alverca","capacidad":2500,"sponsor":"Century 21 Imo Team","marca":"Kappa","temporada":"2024–25 Liga Portugal 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356212163"},
   },
   'arouca-pt': {

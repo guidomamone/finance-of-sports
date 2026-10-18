@@ -215,6 +215,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2023: {"estadio":"São Januário","capacidad":24584,"sponsor":"Pixbet","marca":"Kappa","temporada":"2023 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380432551"},
   },
   'vilanova-br': {
+    2014: {"estadio":"Serra Dourada","capacidad":41574,"marca":"Finta","temporada":"2014 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1220012653"},
     2015: {"temporada":"2015 Campeonato Brasileiro Série C","fuente":"https://en.wikipedia.org/w/index.php?oldid=1318917634"},
     2016: {"estadio":"Serra Dourada","capacidad":41574,"sponsor":"Sicoob","marca":"Rinat","temporada":"2016 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1290796333"},
     2017: {"sponsor":"Caixa","marca":"Rinat","temporada":"2017 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1205768499"},

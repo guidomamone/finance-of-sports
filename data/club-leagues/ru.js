@@ -15,6 +15,6 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'dynamomoscow-ru': { 2021: 'ru-premierliga', 2022: 'ru-premierliga', 2023: 'ru-premierliga', 2024: 'ru-premierliga', 2025: 'ru-premierliga' },
   'lokomotivmoscow-ru': { 2021: 'ru-premierliga', 2022: 'ru-premierliga', 2023: 'ru-premierliga', 2024: 'ru-premierliga', 2025: 'ru-premierliga' },
   'rubinkazan-ru': { 2021: 'ru-premierliga', 2022: 'ru-pervayaliga', 2023: 'ru-premierliga', 2024: 'ru-premierliga', 2025: 'ru-premierliga' },
-  'spartakmoscow-ru': { 2021: null, 2022: 'ru-premierliga', 2023: 'ru-premierliga', 2024: 'ru-premierliga', 2025: 'ru-premierliga' },
+  'spartakmoscow-ru': { 2021: 'ru-premierliga', 2022: 'ru-premierliga', 2023: 'ru-premierliga', 2024: 'ru-premierliga', 2025: 'ru-premierliga' },
   'zenit-ru': { 2021: 'ru-premierliga', 2022: 'ru-premierliga', 2023: 'ru-premierliga', 2024: 'ru-premierliga', 2025: 'ru-premierliga' },
 });

@@ -607,6 +607,12 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento siguiente): "Empréstimos de Conselheiros" pág. 1 + "Empréstimos de Terceiros" pág. 1 + "Empréstimos Bancários" pág. 1; cash escalón 1b (compuerta: documento siguiente): "Disponível" pág. 1
 ```
 
+### Liga
+
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): br-serieB, verificado contra la lista de equipos de "2014 Campeonato Brasileiro Série B" (Wikipedia; tools/club-league-reference/br.json, br-serieB 2014). Antes: sin fila.
+```
+
 ## Gestiones
 
 _investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_

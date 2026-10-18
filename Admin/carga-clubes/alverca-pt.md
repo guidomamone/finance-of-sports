@@ -162,6 +162,10 @@ tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguien
 tools/cargar.mjs (2026-10-15): null, SIN VERIFICAR (no aparece en los rosters cacheados de 2024 (pt-primeiraliga, pt-ligaportugal2): puede haber jugado otra división).
 ```
 
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): pt-liga3, verificado contra la lista de equipos de "2023–24 Liga 3 (Portugal)" (Wikipedia; tools/club-league-reference/pt.json, pt-liga3 2024). Antes: sin fila.
+```
+
 ## 2023
 
 ### Ingresos
@@ -209,6 +213,12 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguiente): "Caixa e depósitos bancários" pág. 1
 ```
 
+### Liga
+
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): pt-liga3, verificado contra la lista de equipos de "2022–23 Liga 3 (Portugal)" (Wikipedia; tools/club-league-reference/pt.json, pt-liga3 2023). Antes: sin fila.
+```
+
 ## 2022
 
 ### Ingresos
@@ -249,6 +259,10 @@ tools/caja-deuda.mjs (2026-10-16): cash escalón 1 (compuerta: documento siguien
 
 ```text
 alta-club.mjs (2026-10-15): null, SIN VERIFICAR (no aparece en los rosters cacheados de 2022 (pt-primeiraliga, pt-ligaportugal2): puede haber jugado otra división).
+```
+
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): pt-liga3, verificado contra la lista de equipos de "2021–22 Liga 3 (Portugal)" (Wikipedia; tools/club-league-reference/pt.json, pt-liga3 2022). Antes: sin fila.
 ```
 
 ## Fuentes

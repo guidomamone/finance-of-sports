@@ -310,6 +310,10 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón R (compuerta: JSON del añ
 2021: tools/cargar.mjs 2026-10-10, SIN VERIFICAR
 ```
 
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): ru-premierliga, verificado contra la lista de equipos de "2021–22 Russian Premier League" (Wikipedia; tools/club-league-reference/ru.json, ru-premierliga 2022). Antes: sin fila.
+```
+
 ## Gestiones
 
 _investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_

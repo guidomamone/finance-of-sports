@@ -1,6 +1,14 @@
 // GENERADO por tools/generate-rankings.js: no editar a mano (el formato, en la cabecera del generador).
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["cl-primera"] = {
+  2025: {
+    leagueSize: null,
+    clubs: [
+      { id:"catolica-cl", revenue:28.497, reportType:"official_balance_sheet",
+        sourceId:"catolica-cl-estados-financieros-2025",
+        mix:[["Cuotas Sociales",0.307],["Comercial / Sponsors",11.651],["Estadio",7.358],["Televisión",5.623],["Venta de Jugadores",2.062],["Otras secciones deportivas",0.569],["Otros ingresos",0.928]] },
+    ],
+  },
   2024: {
     leagueSize: null,
     clubs: [
@@ -41,6 +49,54 @@ window.RANKINGS["cl-primera"] = {
       { id:"udechile-cl", revenue:16.889, reportType:"official_balance_sheet",
         sourceId:"udechile-cl-estados-financieros-2022",
         mix:[["Comercial / Sponsors",7.042],["Estadio",2.997],["Televisión",5.093],["Premios por competencias",0.008],["Venta de Jugadores",0.522],["Otros ingresos",1.226]] },
+    ],
+  },
+  2021: {
+    leagueSize: null,
+    clubs: [
+      { id:"catolica-cl", revenue:16.761, reportType:"official_balance_sheet",
+        sourceId:"catolica-cl-estados-financieros-2021",
+        mix:[["Cuotas Sociales",0.276],["Comercial / Sponsors",7.187],["Estadio",0.738],["Televisión",7.666],["Venta de Jugadores",0.509],["Otras secciones deportivas",0.282],["Otros ingresos",0.104]] },
+    ],
+  },
+  2020: {
+    leagueSize: null,
+    clubs: [
+      { id:"catolica-cl", revenue:21.692, reportType:"official_balance_sheet",
+        sourceId:"catolica-cl-estados-financieros-2020",
+        mix:[["Cuotas Sociales",0.14],["Comercial / Sponsors",6.282],["Estadio",1.031],["Televisión",9.972],["Venta de Jugadores",3.858],["Otras secciones deportivas",0.109],["Otros ingresos",0.3]] },
+    ],
+  },
+  2019: {
+    leagueSize: null,
+    clubs: [
+      { id:"catolica-cl", revenue:23.103, reportType:"official_balance_sheet",
+        sourceId:"catolica-cl-estados-financieros-2019",
+        mix:[["Cuotas Sociales",0.271],["Comercial / Sponsors",5.869],["Estadio",2.701],["Televisión",7.637],["Venta de Jugadores",3.969],["Otras secciones deportivas",0.334],["Otros ingresos",2.323]] },
+    ],
+  },
+  2018: {
+    leagueSize: null,
+    clubs: [
+      { id:"catolica-cl", revenue:16.25, reportType:"official_balance_sheet",
+        sourceId:"catolica-cl-estados-financieros-2018",
+        mix:[["Cuotas Sociales",0.141],["Comercial / Sponsors",5.14],["Estadio",2.183],["Televisión",7.277],["Venta de Jugadores",1.056],["Otras secciones deportivas",0.403],["Otros ingresos",0.05]] },
+    ],
+  },
+  2017: {
+    leagueSize: null,
+    clubs: [
+      { id:"catolica-cl", revenue:18.204, reportType:"official_balance_sheet",
+        sourceId:"catolica-cl-estados-financieros-2017",
+        mix:[["Cuotas Sociales",0.168],["Comercial / Sponsors",5.677],["Estadio",1.937],["Televisión",6.109],["Venta de Jugadores",3.66],["Otras secciones deportivas",0.543],["Otros ingresos",0.109]] },
+    ],
+  },
+  2010: {
+    leagueSize: null,
+    clubs: [
+      { id:"catolica-cl", revenue:7.431, reportType:"official_balance_sheet",
+        sourceId:"catolica-cl-estados-financieros-2010",
+        mix:[["Cuotas Sociales",0.149],["Comercial / Sponsors",2.311],["Estadio",1.78],["Televisión",2.301],["Venta de Jugadores",0.429],["Otras secciones deportivas",0.259],["Otros ingresos",0.202]] },
     ],
   },
 };

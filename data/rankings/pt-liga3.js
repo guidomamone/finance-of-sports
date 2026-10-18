@@ -12,6 +12,9 @@ window.RANKINGS["pt-liga3"] = {
   2024: {
     leagueSize: null,
     clubs: [
+      { id:"alverca-pt", revenue:0.808, reportType:"official_balance_sheet",
+        sourceId:"alverca-pt-relatorio-contas-2023-24",
+        mix:[["Venta de Jugadores",0.623],["Fútbol profesional (sin desglosar por la fuente)",0.074],["Otros ingresos",0.112]] },
       { id:"academica-pt", revenue:0.486, reportType:"official_balance_sheet",
         sourceId:"academica-pt-rc-sduq-2023-2024",
         mix:[["Comercial / Sponsors",0.236],["Estadio",0.042],["Venta de Jugadores",0.022],["Otros ingresos",0.186]] },
@@ -23,6 +26,9 @@ window.RANKINGS["pt-liga3"] = {
   2023: {
     leagueSize: null,
     clubs: [
+      { id:"alverca-pt", revenue:0.899, reportType:"official_balance_sheet",
+        sourceId:"alverca-pt-relatorio-contas-2022-23",
+        mix:[["Venta de Jugadores",0.754],["Fútbol profesional (sin desglosar por la fuente)",0.069],["Otros ingresos",0.075]] },
       { id:"academica-pt", revenue:0.8, reportType:"official_balance_sheet",
         sourceId:"academica-pt-10-rc-sduq-2022-2023",
         mix:[["Comercial / Sponsors",0.099],["Estadio",0.013],["Venta de Jugadores",0.039],["Otros ingresos",0.65]] },
@@ -40,6 +46,9 @@ window.RANKINGS["pt-liga3"] = {
       { id:"torreense-pt", revenue:2.425, reportType:"official_balance_sheet",
         sourceId:"torreense-pt-sad-relatoriocontas2021-2022",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.06],["Otros ingresos",2.365]] },
+      { id:"alverca-pt", revenue:0.158, reportType:"official_balance_sheet",
+        sourceId:"alverca-pt-relatorio-contas-2021-22",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.097],["Otros ingresos",0.061]] },
       { id:"felgueiras-pt", revenue:0.149, reportType:"official_balance_sheet",
         sourceId:"felgueiras-pt-fecho-de-contas-sad-2021-2022",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.144],["Otros ingresos",0.004]] },

@@ -32,6 +32,10 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Jorge Luis Hirschi","capacidad":30018,"sponsor":"Saint-Gobain","marca":"RUGE","temporada":"2024 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1365223058"},
     2025: {"estadio":"Jorge Luis Hirschi","capacidad":30000,"sponsor":"Saint-Gobain","marca":"RUGE","temporada":"2025 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371131086"},
   },
+  'ferrocarriloeste-ar': {
+    2022: {"estadio":"Ricardo Etcheverry","capacidad":24442,"temporada":"2022 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1345354861"},
+    2023: {"estadio":"Ricardo Etcheverri","capacidad":24442,"temporada":"2023 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1316703963"},
+  },
   'gimnasiaesgrima-ar': {
     2023: {"estadio":"Juan Carmelo Zerillo","capacidad":24544,"sponsor":"RapiCuota$","marca":"Givova","temporada":"2023 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274459"},
     2024: {"estadio":"Juan Carmelo Zerillo","capacidad":24500,"sponsor":"Rapicuotas","marca":"Givova","temporada":"2024 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1365223058"},

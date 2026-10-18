@@ -118,5 +118,9 @@ Object.assign(window.CLUB_CONTEXT, {
     2019: {"estadio":"Neapoli Municipal Stadium","capacidad":2500,"sponsor":"Goalbet","marca":"Luanvi","temporada":"2018–19 Football League (Greece)","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374491896"},
     2020: {"estadio":"Panthessaliko Stadium","capacidad":22700,"sponsor":"EBOL","marca":"Luanvi","temporada":"2019–20 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376492647"},
     2021: {"estadio":"Panthessaliko Stadium","capacidad":22700,"sponsor":"EBOL","marca":"Luanvi","temporada":"2020–21 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375822960"},
+    2022: {"estadio":"Panthessaliko Stadium","capacidad":22700,"sponsor":"Interwetten","marca":"Luanvi","temporada":"2021–22 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376143441"},
+    2023: {"estadio":"Panthessaliko Stadium","capacidad":22700,"sponsor":"Interwetten","marca":"Luanvi","temporada":"2022–23 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1370050785"},
+    2024: {"estadio":"Panthessaliko Stadium","capacidad":22700,"sponsor":"Novibet","marca":"Admiral","temporada":"2023–24 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376143509"},
+    2025: {"estadio":"Panthessaliko Stadium","capacidad":22700,"sponsor":"Novibet","marca":"Admiral","temporada":"2024–25 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376143603"},
   },
 });

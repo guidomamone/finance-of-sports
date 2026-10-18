@@ -63,9 +63,21 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
   (Otkritie Bank Arena); Akron 2021-2023 corregido a "Kristall (Zhigulyovsk)" (la tabla daba la ciudad; Vedomosti). championat.com no sirve como fuente por temporada (muestra el nombre de hoy en temporadas viejas). Después, con la pista de
   Gemini que trajo Guido verificada contra fuentes: Spartak 2023 (ejercicio = año calendario 2023, "Otkritie Bank Arena" hasta el
   31/12/2023 según TASS/fomag) y Baltika 2024 (Rostec Arena, dp.ru). Rusia: estadio en todos los ejercicios. ASSET_V 1261. Un dato manual guarda su fuente aparte (`fuenteManual` y `manual`: los campos que puso) y la de Wikipedia sigue en `fuente`.
+- **To-do 273: ligas en null** (pedido de Guido: completarlas, sin liga no hay de dónde leer estadio y sponsor). `tools/ligas-sin-verificar.mjs`
+  (nuevo): para cada ejercicio cargado con la liga en null, prueba las ligas del club en otros años y las demás del país con listas (baja la
+  lista que falte, con el título de otra temporada de la misma liga), y decide solo si el club está con su nombre EXACTO (o un alias) en una
+  sola. Medido: un parcial "único en la lista" daba Novorizontino 2010 en la Série A como "Grêmio" y Dynamo Makhachkala 2021 en la Premier
+  como "Dynamo"; por eso solo exacto. Alias confirmados en `alias.json`: "Volos" → volosnfc-gr, "Spartak" → spartakmoscow-ru. Escritas 18
+  ligas en `data/club-leagues/` con evidencia en `Admin/carga-clubes/` (Alverca 2022-2024 Liga 3, Católica 2010 y 2017-2021 y 2025,
+  Ferro 2022-2023, Spartak 2021, Vila Nova 2014, Volos 2022-2025); generadores corridos (los estimados solo mueven el ancho de sus rangos).
+  No toca los países de fos-onboarding. Estadio 88%, sponsor 86%. ASSET_V 1263.
 
 ## Qué queda (TODO)
 
+- Ligas que siguen en null (20 ejercicios): Católica 2011-2016 (Chile jugó 2013-14 a 2016-17 con calendario europeo y Apertura/Clausura:
+  otro título de página), Ferroviária 2010-2014 y Novorizontino 2010 (Paulistas sin lista), Kifisia 2022-2025, Levadiakos 2022, AVS 2021 y
+  2023, Dynamo Makhachkala 2021 (FNL-2, liga fuera del catálogo), Fredericia 2019 (sin fila en dk.js), Zulte Waregem 2025 (Bélgica,
+  fos-onboarding), y Racing 2026 (está en dos listas: Racing de Avellaneda y Racing de Córdoba; falta un alias).
 - Borrar los to-dos 276 y 277 (resueltos; el 277 con la premisa vencida, ver arriba).
 - 273 sigue abierto: completar a mano (`tools/contexto-manual.json`) los 238 ejercicios cargados sin estadio o sin sponsor
   (`node tools/estadio-sponsor.mjs --ensayo` los lista); mostrarlo en Finanzas (fos-pantallas); la página de cada sponsor (pedido de Guido:

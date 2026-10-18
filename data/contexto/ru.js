@@ -99,6 +99,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Fisht Olympic Stadium","capacidad":45994,"sponsor":"Betcity","marca":"Casa Sportiva","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
   },
   'spartakmoscow-ru': {
+    2021: {"sponsor":"Lukoil","marca":"Nike","temporada":"2021–22 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376304705"},
     2022: {"estadio":"Otkritie Bank Arena","sponsor":"Lukoil","marca":"Nike","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016","fuenteManual":"https://www.sport-express.ru/football/rfpl/news/1741358/","manual":["estadio"]},
     2023: {"estadio":"Otkritie Bank Arena","sponsor":"Lukoil","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312","fuenteManual":"https://fomag.ru/news-streem/lukoyl-podal-zayavku-na-registratsiyu-tovarnogo-znaka-lukoyl-arena/","manual":["estadio"]},
     2024: {"estadio":"Lukoil Arena","capacidad":44929,"sponsor":"Lukoil","marca":"Jögel","temporada":"2024–25 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378137266"},

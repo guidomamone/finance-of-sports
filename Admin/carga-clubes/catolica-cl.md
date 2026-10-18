@@ -240,6 +240,12 @@ tools/cargar.mjs (2026-10-01). grossDebt/cash: no se leen por script todavía (n
 tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 0 (compuerta: año anterior): "Otros pasivos financieros, corrientes" pág. 8 + "Otros pasivos financieros, no corrientes" pág. 8; cash escalón 0 (compuerta: año anterior): "Efectivo y equivalentes al efectivo" pág. 7
 ```
 
+### Liga
+
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): cl-primera, verificado contra la lista de equipos de "2025 Chilean Primera División" (Wikipedia; tools/club-league-reference/cl.json, cl-primera 2025). Antes: sin fila.
+```
+
 ## 2024
 
 ### Ingresos
@@ -500,6 +506,12 @@ tools/cargar.mjs (2026-10-01). grossDebt/cash: no se leen por script todavía (n
 tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 0 (compuerta: año anterior): "Otros pasivos financieros, corrientes" pág. 7 + "Otros pasivos financieros, no corrientes" pág. 7; cash escalón 0 (compuerta: año anterior): "Efectivo y equivalentes al efectivo" pág. 6
 ```
 
+### Liga
+
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): cl-primera, verificado contra la lista de equipos de "2021 Chilean Primera División" (Wikipedia; tools/club-league-reference/cl.json, cl-primera 2021). Antes: sin fila.
+```
+
 ## 2020
 
 ### Ingresos
@@ -565,6 +577,12 @@ tools/cargar.mjs (2026-10-01). grossDebt/cash: no se leen por script todavía (n
 tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 0 (compuerta: documento siguiente): "Otros pasivos financieros, corrientes" pág. 7 + "Otros pasivos financieros, no corrientes" pág. 7; cash escalón 0 (compuerta: año anterior): "Efectivo y equivalentes al efectivo" pág. 6
 ```
 
+### Liga
+
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): cl-primera, verificado contra la lista de equipos de "2020 Chilean Primera División" (Wikipedia; tools/club-league-reference/cl.json, cl-primera 2020). Antes: sin fila.
+```
+
 ## 2019
 
 ### Ingresos
@@ -626,6 +644,12 @@ tools/cargar.mjs (2026-10-01)
 ```text
 tools/cargar.mjs (2026-10-01). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: año anterior): vocabulario: ninguna fila de deuda financiera (balance completo) = 0; cash escalón 0 (compuerta: año anterior): "Efectivo y equivalentes al efectivo" pág. 6
+```
+
+### Liga
+
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): cl-primera, verificado contra la lista de equipos de "2019 Chilean Primera División" (Wikipedia; tools/club-league-reference/cl.json, cl-primera 2019). Antes: sin fila.
 ```
 
 ## 2018
@@ -694,6 +718,12 @@ tools/cargar.mjs (2026-10-03)
 tools/cargar.mjs (2026-10-03). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+### Liga
+
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): cl-primera, verificado contra la lista de equipos de "2018 Chilean Primera División" (Wikipedia; tools/club-league-reference/cl.json, cl-primera 2018). Antes: sin fila.
+```
+
 ## 2017
 
 ### Ingresos
@@ -758,6 +788,12 @@ tools/cargar.mjs (2026-10-02)
 ```text
 tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: documento siguiente): vocabulario: ninguna fila de deuda financiera (balance completo) = 0; cash escalón 0 (compuerta: año anterior): "Efectivo y equivalentes al efectivo" pág. 6
+```
+
+### Liga
+
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): cl-primera, verificado contra la lista de equipos de "2017 Chilean Primera División" (Wikipedia; tools/club-league-reference/cl.json, cl-primera 2017). Antes: sin fila.
 ```
 
 ## 2016
@@ -1150,6 +1186,12 @@ tools/cargar.mjs (2026-10-02)
 ```text
 tools/cargar.mjs (2026-10-02). grossDebt/cash: no se leen por script todavía (null = sin dato). netInterest/tax: filas de resultado financiero / impuesto del estado.
 tools/caja-deuda.mjs (2026-10-02): grossDebt escalón 1 (compuerta: documento siguiente): vocabulario: ninguna fila de deuda financiera (balance completo) = 0; cash escalón 0 (compuerta: documento siguiente): "Efectivo y Equivalentes al Efectivo" pág. 4
+```
+
+### Liga
+
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): cl-primera, verificado contra la lista de equipos de "2010 Chilean Primera División" (Wikipedia; tools/club-league-reference/cl.json, cl-primera 2010). Antes: sin fila.
 ```
 
 ## Gestiones

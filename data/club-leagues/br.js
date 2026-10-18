@@ -41,6 +41,6 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'paysandu-br': { 2021: 'br-serieC', 2023: 'br-serieC', 2024: 'br-serieB', 2025: 'br-serieB' },
   'cuiaba-br': { 2022: 'br-serieA', 2024: 'br-serieA', 2025: 'br-serieB', 2023: 'br-serieA' },
   'ferroviaria-br': { 2010: null, 2023: 'br-serieD', 2025: 'br-serieB', 2012: null, 2013: null, 2014: null, 2015: 'br-paulistaA2', 2016: 'br-paulistaA1', 2018: 'br-serieD', 2021: 'br-serieD', 2024: 'br-serieC', 2022: 'br-serieD', 2017: 'br-paulistaA1' },
-  'vilanova-br': { 2014: null, 2025: 'br-serieB', 2015: 'br-serieC', 2016: 'br-serieB', 2017: 'br-serieB', 2021: 'br-serieB', 2022: 'br-serieB', 2023: 'br-serieB', 2024: 'br-serieB' },
+  'vilanova-br': { 2014: 'br-serieB', 2025: 'br-serieB', 2015: 'br-serieC', 2016: 'br-serieB', 2017: 'br-serieB', 2021: 'br-serieB', 2022: 'br-serieB', 2023: 'br-serieB', 2024: 'br-serieB' },
   'remo-br': { 2021: 'br-serieB', 2025: 'br-serieB', 2022: 'br-serieC', 2019: 'br-serieC', 2020: 'br-serieC', 2023: 'br-serieC', 2024: 'br-serieC' },
 });
