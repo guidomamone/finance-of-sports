@@ -12,7 +12,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2022: {"estadio":"Estádio do Fontelo","capacidad":6912,"sponsor":"Palácio do Gelo","marca":"Macron","temporada":"2021–22 Liga Portugal 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356212786"},
     2023: {"estadio":"Estádio do Fontelo","capacidad":6912,"sponsor":"Palácio do Gelo","marca":"Joma","temporada":"2022–23 Liga Portugal 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356212674"},
     2024: {"estadio":"Estádio do Fontelo","capacidad":6912,"sponsor":"Palácio do Gelo","marca":"Joma","temporada":"2023–24 Liga Portugal 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377062262"},
-    2025: {"estadio":"Estádio Municipal do Fontelo","capacidad":6785,"sponsor":"Palácio do Gelo","marca":"Joma","temporada":"2024–25 Liga Portugal 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356212163"},
+    2025: {"estadio":"Estádio do Fontelo","capacidad":6785,"sponsor":"Palácio do Gelo","marca":"Joma","temporada":"2024–25 Liga Portugal 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356212163"},
   },
   'alverca-pt': {
     2025: {"estadio":"Complexo Desportivo FC Alverca","capacidad":2500,"sponsor":"Century 21 Imo Team","marca":"Kappa","temporada":"2024–25 Liga Portugal 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356212163"},
@@ -90,7 +90,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2022: {"sponsor":"Placard","marca":"Macron","temporada":"2021–22 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376298805"},
     2023: {"estadio":"Estádio Municipal 22 de Junho","capacidad":5186,"sponsor":"Placard","marca":"Macron","temporada":"2022–23 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376890467"},
     2024: {"estadio":"Estádio Municipal 22 de Junho","capacidad":5186,"sponsor":"Placard","marca":"Macron","temporada":"2023–24 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377547480"},
-    2025: {"estadio":"Estádio Municipal de Famalicão","capacidad":5186,"sponsor":"Placard.pt","marca":"Macron","temporada":"2024–25 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377871167"},
+    2025: {"estadio":"Estádio Municipal 22 de Junho","capacidad":5186,"sponsor":"Placard.pt","marca":"Macron","temporada":"2024–25 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377871167"},
   },
   'felgueiras-pt': {
     2022: {"temporada":"2021–22 Liga 3 (Portugal)","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376276515"},
@@ -123,7 +123,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2022: {"sponsor":"Placard","marca":"CDT","temporada":"2021–22 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376298805"},
     2023: {"estadio":"Parque de Jogos Comendador Joaquim de Almeida Freitas","capacidad":6150,"sponsor":"Placard","marca":"CDT","temporada":"2022–23 Liga Portugal 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356212674"},
     2024: {"estadio":"Parque de Jogos Comendador Joaquim de Almeida Freitas","capacidad":6150,"sponsor":"Placard","marca":"CDT","temporada":"2023–24 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377547480"},
-    2025: {"estadio":"Estádio Comendador Joaquim de Almeida Freitas","capacidad":6150,"sponsor":"Placard.pt","marca":"CDT","temporada":"2024–25 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377871167"},
+    2025: {"estadio":"Parque de Jogos Comendador Joaquim de Almeida Freitas","capacidad":6150,"sponsor":"Placard.pt","marca":"CDT","temporada":"2024–25 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377871167"},
   },
   'nacional-pt': {
     2022: {"estadio":"Estádio da Madeira","capacidad":5200,"marca":"Hummel","temporada":"2021–22 Liga Portugal 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356212786"},
@@ -227,6 +227,6 @@ Object.assign(window.CLUB_CONTEXT, {
     2022: {"sponsor":"Vizela","marca":"Lacatoni","temporada":"2021–22 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376298805"},
     2023: {"estadio":"Estádio do FC Vizela","capacidad":6000,"sponsor":"Vizela","marca":"Lacatoni","temporada":"2022–23 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376890467"},
     2024: {"estadio":"Estádio do FC Vizela","capacidad":6000,"sponsor":"Solverde","marca":"Kappa","temporada":"2023–24 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377547480"},
-    2025: {"estadio":"Estádio do Futebol Clube de Vizela","capacidad":6000,"sponsor":"Solverde","marca":"Kappa","temporada":"2024–25 Liga Portugal 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356212163"},
+    2025: {"estadio":"Estádio do FC Vizela","capacidad":6000,"sponsor":"Solverde","marca":"Kappa","temporada":"2024–25 Liga Portugal 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356212163"},
   },
 });

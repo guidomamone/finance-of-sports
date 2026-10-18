@@ -72,7 +72,7 @@ function construir() {
     const pa = cs.filter((c) => c.nombres.some((n) => pega(n, equipo))); return pa.length === 1 ? pa[0].id : null;
   };
 
-  const actuales = {}, fuentes = {}, lista = {};
+  const actuales = {}, fuentes = {}, lista = {}; const filas = [];
   const agregar = (nombre, rol, entrada) => {
     const n = canon(nombre); const id = slug(n); if (!id) return;
     const s = (lista[id] ??= { n, roles: [], e: [] });
@@ -91,13 +91,18 @@ function construir() {
         const p = j[liga][y]; if (!p || !p.revid) continue;
         fuentes[`${liga}|${y}`] = `https://${p.lang || 'en'}.wikipedia.org/w/index.php?oldid=${p.revid}`;
         const t = (p.kits || []).find((k) => !k.soloActual || y === ultima); if (!t) continue;
-        for (const f of t.filas) {
-          const clubId = unir(iso, f.club);
-          for (const sp of partes(f.sponsor)) agregar(sp, 'c', [liga, y, f.club, clubId]);
-          for (const mk of partes(f.marca)) agregar(mk, 'm', [liga, y, f.club, clubId]);
-        }
+        for (const f of t.filas) filas.push({ iso, liga, y, f, clubId: unir(iso, f.club) });
       }
     }
+  }
+  // un equipo que el sitio no tiene puede venir con dos nombres ("AC Sparta Prague" en 2027, "Sparta Prague" en 2025): por país y nombre
+  // normalizado (sin "FC", "AC"...), vale el de la temporada más nueva. Uno del sitio lo agrupa la pantalla por clubId.
+  const canonEq = {};
+  for (const r of [...filas].sort((a, b) => b.y - a.y)) { const k = `${r.iso}|${corto(r.f.club)}`; if (!canonEq[k]) canonEq[k] = r.f.club; }
+  for (const r of filas) {
+    const equipo = r.clubId ? r.f.club : canonEq[`${r.iso}|${corto(r.f.club)}`] || r.f.club;
+    for (const sp of partes(r.f.sponsor)) agregar(sp, 'c', [r.liga, r.y, equipo, r.clubId]);
+    for (const mk of partes(r.f.marca)) agregar(mk, 'm', [r.liga, r.y, equipo, r.clubId]);
   }
   const ordenado = {};
   for (const id of Object.keys(lista).sort()) { const s = lista[id]; s.roles.sort(); s.e.sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]) || a[2].localeCompare(b[2])); ordenado[id] = s; }

@@ -7,7 +7,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Municipal Carlos Zamith","capacidad":5000,"sponsor":"Reals, TVLar, Protteina Distribuidora","marca":"Onça (club manufactured kit)","temporada":"2024 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377693248"},
   },
   'americamineiro-br': {
-    2023: {"estadio":"Independência","capacidad":23018,"sponsor":"Estrela Bet","marca":"Volt Sport","temporada":"2023 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380432551"},
+    2023: {"estadio":"Arena Independência","capacidad":23018,"sponsor":"Estrela Bet","marca":"Volt Sport","temporada":"2023 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380432551"},
     2024: {"estadio":"Arena Independência","capacidad":23018,"sponsor":"EstrelaBet","marca":"Volt Sport","temporada":"2024 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377693248"},
     2025: {"estadio":"Arena Independência","capacidad":23018,"sponsor":"MC Games Bet","marca":"Volt Sport","temporada":"2025 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221996"},
   },
@@ -127,9 +127,9 @@ Object.assign(window.CLUB_CONTEXT, {
     2015: {"estadio":"Serra Dourada","capacidad":41574,"sponsor":"None","marca":"Kappa","temporada":"2015 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532968"},
     2016: {"estadio":"Serra Dourada","capacidad":41574,"marca":"Dryworld","temporada":"2016 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1290796333"},
     2017: {"sponsor":"Caixa","marca":"Topper","temporada":"2017 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1205768499"},
-    2021: {"estadio":"Serrinha","capacidad":6300,"sponsor":"PixBet","marca":"Gr33n (Club manufactured kit)","temporada":"2021 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375901408"},
-    2022: {"estadio":"Serrinha","capacidad":14450,"sponsor":"Pixbet","marca":"Gr33n (club manufactured kit)","temporada":"2022 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376404620"},
-    2023: {"estadio":"Serrinha","capacidad":14450,"sponsor":"Esportes da Sorte","marca":"Gr33n (club manufactured kit)","temporada":"2023 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380432551"},
+    2021: {"estadio":"Estádio da Serrinha","capacidad":6300,"sponsor":"PixBet","marca":"Gr33n (Club manufactured kit)","temporada":"2021 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375901408"},
+    2022: {"estadio":"Estádio da Serrinha","capacidad":14450,"sponsor":"Pixbet","marca":"Gr33n (club manufactured kit)","temporada":"2022 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376404620"},
+    2023: {"estadio":"Estádio da Serrinha","capacidad":14450,"sponsor":"Esportes da Sorte","marca":"Gr33n (club manufactured kit)","temporada":"2023 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380432551"},
     2024: {"estadio":"Estádio da Serrinha","capacidad":14450,"sponsor":"BETesporte","marca":"Gr33n (club manufactured kit)","temporada":"2024 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377693248"},
     2025: {"estadio":"Estádio da Serrinha","capacidad":14450,"sponsor":"Viva Sorte Bet","marca":"Diadora","temporada":"2025 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221996"},
   },
@@ -179,8 +179,8 @@ Object.assign(window.CLUB_CONTEXT, {
   'paysandu-br': {
     2021: {"marca":"Lobo (Club manufactured kit)","temporada":"2021 Campeonato Brasileiro Série C","fuente":"https://en.wikipedia.org/w/index.php?oldid=1323110476"},
     2023: {"estadio":"Estádio da Curuzu","capacidad":16200,"sponsor":"Banpará","marca":"Lobo (club manufactured kit)","temporada":"2023 Campeonato Brasileiro Série C","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375636456"},
-    2024: {"estadio":"Curuzu","capacidad":16200,"sponsor":"Banpará","marca":"Lobo (club manufactured kit)","temporada":"2024 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377693248"},
-    2025: {"estadio":"Curuzu","capacidad":16200,"sponsor":"Banpará","marca":"Lobo","temporada":"2025 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221996"},
+    2024: {"estadio":"Estádio da Curuzu","capacidad":16200,"sponsor":"Banpará","marca":"Lobo (club manufactured kit)","temporada":"2024 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377693248"},
+    2025: {"estadio":"Estádio da Curuzu","capacidad":16200,"sponsor":"Banpará","marca":"Lobo","temporada":"2025 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221996"},
   },
   'pontepreta-br': {
     2022: {"estadio":"Moisés Lucarelli","capacidad":19728,"sponsor":"PixBet","marca":"1900 (club manufactured kit)","temporada":"2022 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376405033"},
@@ -201,7 +201,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Baenão","capacidad":13792,"sponsor":"ObaBet","marca":"Volt Sport","temporada":"2025 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221996"},
   },
   'santos-br': {
-    2024: {"estadio":"Urbano Caldeira","capacidad":16068,"sponsor":"Blaze, AQBank","marca":"Umbro","temporada":"2024 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377693248"},
+    2024: {"estadio":"Vila Belmiro","capacidad":16068,"sponsor":"Blaze, AQBank","marca":"Umbro","temporada":"2024 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377693248"},
     2025: {"estadio":"Vila Belmiro","capacidad":16068,"sponsor":"Bet7K","marca":"Umbro","temporada":"2025 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221411"},
   },
   'saopaulo-br': {

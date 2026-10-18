@@ -51,6 +51,12 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
 - **To-do 273: estadio de Rusia.** Las páginas rusas lo traen en una galería de fichas (sección "Venues"), no en tabla: lector nuevo
   `galeriaEstadios()` en `estadio-sponsor.mjs` (bloques club / estadio / capacidad, se acepta uno solo si las tres filas tienen las mismas
   celdas). Rusia: estadio de 0 a 55 de 66 ejercicios; total, estadio 82%. ASSET_V 1257.
+- **To-do 273: limpieza (avisos de fos-pantallas).** El lector ya no deja pegado un atributo de celda ("nowrap data-sort-value=… |", 5
+  valores, también limpiados en la caché). `tools/estadio-alias.json` (nuevo, por club) unifica el mismo estadio escrito de dos formas
+  (La Bombonera = Alberto J. Armando, "Olimpico" = "Stadio Olimpico"...; 28 clubes); un cambio de nombre real (Allianz Stadium, Gewiss,
+  Mâs Monumental, MorumBIS, Ozon Arena) queda. `--escribir` reconstruye todo desde la caché por liga-año (no baja lo que ya está).
+  `generate-sponsors.js`: un equipo sin club con dos nombres ("AC Sparta Prague" / "Sparta Prague") se unifica por país y nombre
+  normalizado, con el de la temporada más nueva. ASSET_V 1258.
 
 ## Qué queda (TODO)
 

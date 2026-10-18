@@ -24,7 +24,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'boca': {
     2022: {"estadio":"Alberto J. Armando","capacidad":54000,"marca":"Adidas","temporada":"2022 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274426"},
     2023: {"estadio":"Alberto J. Armando","capacidad":54000,"sponsor":"Betsson","marca":"Adidas","temporada":"2023 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274459"},
-    2025: {"estadio":"La Bombonera","capacidad":54000,"sponsor":"Betsson","marca":"Adidas","temporada":"2025 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371131086"},
+    2025: {"estadio":"Alberto J. Armando","capacidad":54000,"sponsor":"Betsson","marca":"Adidas","temporada":"2025 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371131086"},
   },
   'estudianteslp': {
     2022: {"estadio":"Jorge Luis Hirschi","capacidad":30000,"sponsor":"B•play","marca":"RUGE","temporada":"2022 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274426"},
@@ -42,7 +42,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2020: {"estadio":"Malvinas Argentinas","capacidad":40268,"sponsor":"CATA Internacional","marca":"Kelme","temporada":"2019–20 Superliga Argentina","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274402"},
   },
   'independiente': {
-    2024: {"estadio":"Libertadores de América","capacidad":44000,"sponsor":"Jeluz","marca":"Puma","temporada":"2024 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1365223058"},
+    2024: {"estadio":"Libertadores de América - Ricardo Enrique Bochini","capacidad":44000,"sponsor":"Jeluz","marca":"Puma","temporada":"2024 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1365223058"},
     2026: {"estadio":"Libertadores de América - Ricardo Enrique Bochini","capacidad":52853,"sponsor":"Sports.bet.ar","marca":"Puma","temporada":"2026 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380814375"},
   },
   'instituto': {
@@ -56,7 +56,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2019: {"estadio":"Marcelo Bielsa","capacidad":38095,"sponsor":"Grupo Márquez","marca":"Umbro","temporada":"2018–19 Superliga Argentina","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274375"},
   },
   'racing': {
-    2009: {"estadio":"Presidente Perón","capacidad":51000,"sponsor":"Banco Macro","marca":"Penalty","temporada":"2008–09 Argentine Primera División season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1379931934"},
+    2009: {"estadio":"Presidente Juan Domingo Perón","capacidad":51000,"sponsor":"Banco Macro","marca":"Penalty","temporada":"2008–09 Argentine Primera División season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1379931934"},
     2010: {"estadio":"Presidente Juan Domingo Perón","capacidad":51389,"sponsor":"Banco Macro","marca":"Penalty","temporada":"2009–10 Argentine Primera División season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1379932278"},
     2011: {"estadio":"Presidente Juan Domingo Perón","capacidad":51389,"sponsor":"Banco Hipotecario","marca":"Olympikus","temporada":"2010–11 Argentine Primera División season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1351556007"},
     2012: {"estadio":"Presidente Juan Domingo Perón","capacidad":51389,"sponsor":"Banco Hipotecario","marca":"Olympikus","temporada":"2011–12 Argentine Primera División season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377837855"},
@@ -64,13 +64,13 @@ Object.assign(window.CLUB_CONTEXT, {
     2014: {"estadio":"Presidente Juan Domingo Perón","capacidad":55389,"sponsor":"Banco Hipotecario","marca":"Topper","temporada":"2014 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371814754"},
     2015: {"sponsor":"Banco Hipotecario","marca":"Topper","temporada":"2015 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372460557"},
     2016: {"estadio":"Presidente Juan Domingo Perón","capacidad":55389,"sponsor":"RCA","marca":"Topper","temporada":"2016 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373111774"},
-    2017: {"estadio":"Presidente Perón","capacidad":55389,"sponsor":"RCA","marca":"Topper","temporada":"2016–17 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376662029"},
-    2018: {"estadio":"Presidente Perón","capacidad":55389,"sponsor":"RCA","marca":"Kappa","temporada":"2017–18 Superliga Argentina","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375639843"},
-    2019: {"estadio":"Presidente Perón","capacidad":55389,"sponsor":"RCA","marca":"Kappa","temporada":"2018–19 Superliga Argentina","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274375"},
-    2020: {"estadio":"Presidente Perón","capacidad":55389,"sponsor":"RCA","marca":"Kappa","temporada":"2019–20 Superliga Argentina","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274402"},
-    2021: {"estadio":"Presidente Perón","capacidad":55389,"sponsor":"Aeroset","marca":"Kappa","temporada":"2021 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274410"},
-    2024: {"estadio":"El Cilindro","capacidad":53389,"sponsor":"RCA","marca":"Kappa","temporada":"2024 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1365223058"},
-    2025: {"estadio":"El Cilindro","capacidad":55880,"sponsor":"Betsson","marca":"Kappa","temporada":"2025 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371131086"},
+    2017: {"estadio":"Presidente Juan Domingo Perón","capacidad":55389,"sponsor":"RCA","marca":"Topper","temporada":"2016–17 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376662029"},
+    2018: {"estadio":"Presidente Juan Domingo Perón","capacidad":55389,"sponsor":"RCA","marca":"Kappa","temporada":"2017–18 Superliga Argentina","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375639843"},
+    2019: {"estadio":"Presidente Juan Domingo Perón","capacidad":55389,"sponsor":"RCA","marca":"Kappa","temporada":"2018–19 Superliga Argentina","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274375"},
+    2020: {"estadio":"Presidente Juan Domingo Perón","capacidad":55389,"sponsor":"RCA","marca":"Kappa","temporada":"2019–20 Superliga Argentina","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274402"},
+    2021: {"estadio":"Presidente Juan Domingo Perón","capacidad":55389,"sponsor":"Aeroset","marca":"Kappa","temporada":"2021 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274410"},
+    2024: {"estadio":"Presidente Juan Domingo Perón","capacidad":53389,"sponsor":"RCA","marca":"Kappa","temporada":"2024 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1365223058"},
+    2025: {"estadio":"Presidente Juan Domingo Perón","capacidad":55880,"sponsor":"Betsson","marca":"Kappa","temporada":"2025 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371131086"},
   },
   'river': {
     2021: {"estadio":"Monumental Antonio Vespucio Liberti","capacidad":70074,"sponsor":"Turkish Airlines","marca":"Adidas","temporada":"2021 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274410"},

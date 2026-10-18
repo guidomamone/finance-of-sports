@@ -7,7 +7,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2022: {"estadio":"Akhmat-Arena","capacidad":30597,"sponsor":"Akhmat Foundation","marca":"Joma","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016"},
     2023: {"estadio":"Akhmat-Arena","capacidad":30597,"sponsor":"TBA","marca":"Joma","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
     2024: {"estadio":"Akhmat-Arena","capacidad":30597,"sponsor":"Akhmat Foundation","marca":"Joma","temporada":"2024–25 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378137266"},
-    2025: {"estadio":"Akhmat Arena","capacidad":30000,"sponsor":"Akhmat Foundation","marca":"Joma","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
+    2025: {"estadio":"Akhmat-Arena","capacidad":30000,"sponsor":"Akhmat Foundation","marca":"Joma","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
   },
   'akrontolyatti-ru': {
     2021: {"estadio":"Zhigulyovsk","capacidad":1565,"temporada":"2021–22 Russian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376304530"},
@@ -68,7 +68,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2022: {"estadio":"Gazovik Stadium","capacidad":10046,"marca":"Adidas","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016"},
     2023: {"estadio":"Gazovik Stadium","capacidad":10046,"sponsor":"TBA","marca":"Adidas","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
     2024: {"estadio":"Gazovik Stadium","capacidad":10046,"sponsor":"EcoGas","marca":"Adidas","temporada":"2024–25 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378137266"},
-    2025: {"estadio":"Gazovik","capacidad":10046,"sponsor":"EcoGas","marca":"PRIMERA","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
+    2025: {"estadio":"Gazovik Stadium","capacidad":10046,"sponsor":"EcoGas","marca":"PRIMERA","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
   },
   'parinizhnynovgorod-ru': {
     2021: {"estadio":"Nizhny Novgorod Stadium","capacidad":44899,"sponsor":"Parimatch","marca":"Jako","temporada":"2021–22 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376304705"},
@@ -86,7 +86,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'rubinkazan-ru': {
     2021: {"estadio":"Ak Bars Arena","capacidad":45093,"sponsor":"TAIF","marca":"Jako","temporada":"2021–22 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376304705"},
-    2022: {"estadio":"Kazan Arena","capacidad":45379,"temporada":"2022–23 Russian First League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1306958477"},
+    2022: {"estadio":"Ak Bars Arena","capacidad":45379,"temporada":"2022–23 Russian First League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1306958477"},
     2023: {"estadio":"Ak Bars Arena","capacidad":45093,"sponsor":"Kazan Orgsintez","marca":"Jako","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
     2024: {"estadio":"Ak Bars Arena","capacidad":42398,"sponsor":"Kazanorgsintez","marca":"Rubin","temporada":"2024–25 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378137266"},
     2025: {"estadio":"Ak Bars Arena","capacidad":43284,"sponsor":"Kazanorgsintez","marca":"Rubin","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
@@ -96,7 +96,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2022: {"estadio":"Fisht Olympic Stadium","capacidad":47659,"marca":"Puma","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016"},
     2023: {"estadio":"Fisht Olympic Stadium","capacidad":47659,"sponsor":"Liga Stavok","marca":"Puma","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
     2024: {"temporada":"2024–25 Russian First League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341848735"},
-    2025: {"estadio":"Fisht","capacidad":45994,"sponsor":"Betcity","marca":"Casa Sportiva","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
+    2025: {"estadio":"Fisht Olympic Stadium","capacidad":45994,"sponsor":"Betcity","marca":"Casa Sportiva","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
   },
   'spartakmoscow-ru': {
     2022: {"sponsor":"Lukoil","marca":"Nike","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016"},

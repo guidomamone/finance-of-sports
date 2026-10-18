@@ -67,7 +67,8 @@ function celdasDeLinea(l, marca) { // "| a || b" o "! a !! b"
   return l.replace(/^\s*[|!]/, '').split(marca === '!' ? /!!|\|\|/ : /\|\|/);
 }
 function atributos(c) { // "rowspan=2 style=... | texto" -> { rowspan, texto }
-  const m = c.match(/^\s*((?:\s*(?:rowspan|colspan|style|align|class|scope|data-sort-value|bgcolor|width)\s*=\s*(?:"[^"]*"|[^\s|]*))+)\s*\|(?!\|)([\s\S]*)$/i);
+  // "nowrap" va suelto o como nowrap="" ("nowrap data-sort-value=\"Monchengladbach\" | Borussia Mönchengladbach", kits de la Bundesliga)
+  const m = c.match(/^\s*((?:\s*(?:(?:rowspan|colspan|style|align|valign|class|scope|data-sort-value|bgcolor|width|nowrap)\s*=\s*(?:"[^"]*"|[^\s|]*)|nowrap))+)\s*\|(?!\|)([\s\S]*)$/i);
   if (!m || /\[\[|\{\{/.test(m[1])) return { rowspan: 1, colspan: 1, texto: c };
   return { rowspan: Number((m[1].match(/rowspan\s*=\s*"?(\d+)/i) || [])[1] || 1), colspan: Number((m[1].match(/colspan\s*=\s*"?(\d+)/i) || [])[1] || 1), texto: m[2] };
 }
@@ -105,6 +106,7 @@ function tablas(wikitext) {
   });
 }
 function cleanTexto(c) {
+  c = atributos(String(c || '')).texto; // un atributo de celda que llegó hasta acá no es parte del nombre
   // un <br> separa dos nombres ("Palácio<br>do Gelo"): espacio, no nada; un enlace externo "[https://... Efapel]" vale su texto
   let s = sinRefs(String(c || '')).replace(/<br\s*\/?>/gi, ' ').replace(/\[https?:\/\/[^\s\]]+\s+([^\]]+)\]/g, '$1').replace(/^\s*\|/, '');
   s = s.replace(/\{\{\s*sort\s*\|[^|}]*\|([^}]*)\}\}/gi, '$1');
@@ -188,7 +190,8 @@ function delClub(p, nombres) {
 // CACHÉ POR LIGA-AÑO: tools/club-league-reference/contexto/<iso>.json, { liga: { año: { pagina, lang, revid, estadios, kits } } }. Una página
 // se baja una vez; lo que se lee de ella para cada club y para el índice de sponsors sale de acá (--refrescar la vuelve a bajar).
 const CTX_DIR = resolve(REF, 'contexto');
-function cacheCtx(iso) { const f = resolve(CTX_DIR, `${iso}.json`); return existsSync(f) ? JSON.parse(readFileSync(f, 'utf8')) : {}; }
+const _ctx = new Map();
+function cacheCtx(iso) { if (!_ctx.has(iso)) { const f = resolve(CTX_DIR, `${iso}.json`); _ctx.set(iso, existsSync(f) ? JSON.parse(readFileSync(f, 'utf8')) : {}); } return _ctx.get(iso); }
 function guardarCtx(iso, j) { mkdirSync(CTX_DIR, { recursive: true }); writeFileSync(resolve(CTX_DIR, `${iso}.json`), JSON.stringify(j, null, 1) + '\n', 'utf8'); }
 
 const OUT = resolve(ROOT, 'data', 'contexto');
@@ -222,6 +225,7 @@ async function main() {
   const refrescar = args.includes('--refrescar');
   if (!escribir && !args.includes('--ensayo')) { console.error('Uso: --ensayo | --escribir [--club <id> [--anio <año>]] [--refrescar] [--liga <ligaId>] [--detalle]'); process.exit(1); }
   const manual = existsSync(MANUAL) ? JSON.parse(readFileSync(MANUAL, 'utf8')) : {};
+  const ALIAS_EST = resolve(ROOT, 'tools', 'estadio-alias.json'); const aliasEst = existsSync(ALIAS_EST) ? JSON.parse(readFileSync(ALIAS_EST, 'utf8')) : {};
   const previoPais = guardado(); const previo = Object.assign({}, ...Object.values(previoPais));
 
   const ejercicios = []; let sinLiga = 0, sinLista = 0;
@@ -242,7 +246,8 @@ async function main() {
     ejercicios.push(e);
   }
   // con --escribir, un club-año ya guardado no se vuelve a leer (salvo --refrescar); las páginas salen de la caché por liga-año
-  const yaEsta = (e) => !refrescar && previo[e.id]?.[e.y]?.fuente;
+  // lo ya guardado se usa solo si la caché por liga-año no tiene la página (todo sale de la caché: --escribir no baja lo que ya está)
+  const yaEsta = (e) => !refrescar && previo[e.id]?.[e.y]?.fuente && !cacheCtx(e.iso)[e.liga]?.[e.s]?.revid;
   const necesarias = new Map(); // "liga|año" -> { iso, liga, s, page, lang }
   for (const e of ejercicios) if (e.page && !(escribir && yaEsta(e))) necesarias.set(`${e.liga}|${e.s}`, { iso: e.iso, liga: e.liga, s: e.s, page: e.page, lang: e.lang });
   // --todas: todas las liga-años de la caché de listas, aunque el sitio no tenga ningún club cargado ahí (el índice de sponsors cuenta los
@@ -288,6 +293,8 @@ async function main() {
       if (r.soloActual && !e.ultima && (r.sponsor || r.marca)) { n.soloActualViejo++; r.sponsor = null; r.marca = null; }
       d = { estadio: r.estadio, capacidad: r.capacidad, sponsor: r.sponsor, marca: r.marca, temporada: p.pagina, fuente: `https://${p.lang}.wikipedia.org/w/index.php?oldid=${p.revid}` };
     }
+    // el mismo estadio escrito de dos formas se unifica por club (tools/estadio-alias.json; un cambio de nombre real no está ahí)
+    if (d?.estadio && aliasEst[e.id]?.[d.estadio]) d.estadio = aliasEst[e.id][d.estadio];
     // lo manual gana, campo por campo; sin fuente no vale
     const m = manual[e.id]?.[e.y];
     if (m) {

@@ -24,7 +24,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2021: {"estadio":"Alcazar Stadium","capacidad":13108,"sponsor":"Thrakis Gefseis","marca":"Legea","temporada":"2020–21 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375822960"},
     2022: {"estadio":"Alcazar Stadium","capacidad":13108,"sponsor":"Thrakis Gefseis","marca":"Legea","temporada":"2021–22 Super League Greece 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376313759"},
     2023: {"estadio":"Alcazar Stadium","capacidad":13108,"sponsor":"N/A","marca":"Legea","temporada":"2022–23 Super League Greece 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376913839"},
-    2024: {"estadio":"AEL Arena","capacidad":16118,"marca":"Legea","temporada":"2023–24 Super League Greece 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373226187"},
+    2024: {"estadio":"AEL FC Arena","capacidad":16118,"marca":"Legea","temporada":"2023–24 Super League Greece 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373226187"},
     2025: {"estadio":"AEL FC Arena","capacidad":16118,"temporada":"2024–25 Super League Greece 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373226048"},
   },
   'aris-gr': {
@@ -62,7 +62,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2020: {"estadio":"Levadia Municipal Stadium","capacidad":5915,"sponsor":"Kompotis","marca":"Legea","temporada":"2019–20 Super League Greece 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1334262827"},
     2021: {"estadio":"Levadia Municipal Stadium","capacidad":5915,"sponsor":"Kompotis","marca":"Kappa","temporada":"2020–21 Super League Greece 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1343120819"},
     2023: {"estadio":"Levadia Municipal Stadium","capacidad":5915,"sponsor":"Betshop","marca":"Macron","temporada":"2022–23 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1370050785"},
-    2024: {"estadio":"Livadeia Municipal Stadium","capacidad":5915,"marca":"Macron","temporada":"2023–24 Super League Greece 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373226187"},
+    2024: {"estadio":"Levadia Municipal Stadium","capacidad":5915,"marca":"Macron","temporada":"2023–24 Super League Greece 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373226187"},
     2025: {"estadio":"Levadia Municipal Stadium","capacidad":5915,"sponsor":"monobala","marca":"Macron","temporada":"2024–25 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376143603"},
   },
   'oficrete-gr': {
