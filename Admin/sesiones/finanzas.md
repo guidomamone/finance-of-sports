@@ -106,3 +106,7 @@
   esta línea (pedidos a fos-pantallas y fos-pipeline con el contrato).
 - Qué queda: los 905 balances restantes por subagentes (tandas por país); Católica 2010: el índice del .md lista el informe de los
   auditores pero la transcripción no lo trae (salta de la pág. 2 a la 3), hay que retranscribir esa parte antes de su línea.
+- La entidad que organiza una liga (AFA, LFP; Guido lo aclaró vía pantallas): `tools/auditoria.mjs` acepta líneas con `ligaId` y
+  `entidad`, y genera `data/auditoria/_ligas.js` (`window.LIGA_AUDITORIA`, contrato acordado con pantallas). Hoy vacío: no hay en el
+  proyecto ningún balance propio de una entidad organizadora (las carpetas `Clubes/*/_…` son informes agregados de liga). Para TODO:
+  sourcing de esos balances (AFA, LFP, Premier League, Lega Serie A…), con su informe del auditor.
