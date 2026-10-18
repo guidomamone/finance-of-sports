@@ -1,0 +1,278 @@
+{
+ "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2023-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/RWDM/jaarrekening-2023-06-30-individual.md",
+ "mdSha1": "c37019b7395fad7ef8f98eab36771ca63199cd9b",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:24.769Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    25,
+    31
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    111,
+    114
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    124,
+    150
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    156,
+    186
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    192,
+    216
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    224,
+    252
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    260,
+    276
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    286,
+    302
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    308,
+    331
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    337,
+    364
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 12,
+   "lineas": [
+    372,
+    376
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 12,
+   "lineas": [
+    378,
+    403
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 13,
+   "lineas": [
+    411,
+    423
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 14,
+   "lineas": [
+    431,
+    452
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 15,
+   "lineas": [
+    458,
+    475
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 16,
+   "lineas": [
+    491,
+    493
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 17,
+   "lineas": [
+    513,
+    516
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 17,
+   "lineas": [
+    518,
+    523
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 17,
+   "lineas": [
+    525,
+    527
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 20,
+   "lineas": [
+    645,
+    647
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 21,
+   "lineas": [
+    662,
+    664
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 24,
+   "lineas": [
+    735,
+    739
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 24,
+   "lineas": [
+    743,
+    750
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 34,
+   "lineas": [
+    967,
+    971
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 34,
+   "lineas": [
+    973,
+    996
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 35,
+   "lineas": [
+    1004,
+    1006
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 35,
+   "lineas": [
+    1008,
+    1010
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 35,
+   "lineas": [
+    1014,
+    1021
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 35,
+   "lineas": [
+    1023,
+    1027
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 35,
+   "lineas": [
+    1029,
+    1033
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b13"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "de JAARREKENING in EURO (modelo NBB abreviado VKT, importes en euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el bloque b13 (personeel, opbrengsten en kosten van uitzonderlijke omvang, financiële resultaten) como nota de gastos?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "b13 mezcla datos de personal (no monetarios) con desgloses de resultados no recurrentes y financieros que abren renglones del estado b6.",
+   "bloques": [
+    "b13"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales en modelo abreviado (VKT) del Banco Nacional de Bélgica. El estado de resultados es b6 (Resultatenrekening, comienza en Brutomarge, abreviado). b7 es destino del resultado; b24 (sociale balans, personeelskosten) se excluye porque solo repite el gasto de personal."
+}

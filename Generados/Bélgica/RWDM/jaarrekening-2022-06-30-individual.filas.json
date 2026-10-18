@@ -1,0 +1,244 @@
+{
+ "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2022-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/RWDM/jaarrekening-2022-06-30-individual.md",
+ "mdSha1": "22018cb4a7bda8323621440e02d0e9b5f5cc0232",
+ "ubicacionSha1": "5995ac82093d01317e7b01180449c89e020eccfe",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:27:58.972Z",
+ "ubicacion": {
+  "estado": [
+   "b12"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b18"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b12",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala en el bloque; las cuentas anuales belgas suelen estar en euros (unidades)"
+  },
+  {
+   "bloque": "b18",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala en el bloque"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b12",
+   "linea": 247,
+   "etiqueta": "Brutomarge",
+   "actual": "1.082.130",
+   "anterior": "1.547.882",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 248,
+   "etiqueta": "Waarvan: niet-recurrente bedrijfsopbrengsten",
+   "actual": "15.452",
+   "anterior": "5.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 251,
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen",
+   "actual": "2.644.238",
+   "anterior": "1.758.356",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 252,
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "actual": "141.046",
+   "anterior": "75.693",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 253,
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)",
+   "actual": "17.243",
+   "anterior": "-36.391",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 255,
+   "etiqueta": "Andere bedrijfskosten",
+   "actual": "10.160",
+   "anterior": "1.639",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 257,
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "actual": "",
+   "anterior": "138.274",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 258,
+   "etiqueta": "Bedrijfswinst (Bedrijfsverlies)",
+   "actual": "-1.730.556",
+   "anterior": "-389.689",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 259,
+   "etiqueta": "Financiële opbrengsten",
+   "actual": "762",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 260,
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "actual": "762",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 263,
+   "etiqueta": "Financiële kosten",
+   "actual": "13.660",
+   "anterior": "4.664",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 264,
+   "etiqueta": "Recurrente financiële kosten",
+   "actual": "13.660",
+   "anterior": "4.664",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 266,
+   "etiqueta": "Winst (Verlies) van het boekjaar vóór belasting",
+   "actual": "-1.743.454",
+   "anterior": "-394.353",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 269,
+   "etiqueta": "Belastingen op het resultaat",
+   "actual": "",
+   "anterior": "1.894",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 270,
+   "etiqueta": "Winst (Verlies) van het boekjaar",
+   "actual": "-1.743.454",
+   "anterior": "-396.247",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 273,
+   "etiqueta": "Te bestemmen winst (verlies) van het boekjaar",
+   "actual": "-1.743.454",
+   "anterior": "-396.247",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 453,
+   "etiqueta": "Niet-recurrente bedrijfsopbrengsten",
+   "actual": "15.452",
+   "anterior": "5.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Waarvan: niet-recurrente bedrijfsopbrengsten"
+  },
+  {
+   "bloque": "b18",
+   "linea": 456,
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "actual": "",
+   "anterior": "138.274",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Niet-recurrente bedrijfskosten"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 270,
+  "actual": "-1.743.454",
+  "anterior": "-396.247"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes de b12 y b18 como euros en unidades aunque el documento no imprima la escala?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No hay frase de escala en L241-L273 ni L443-L459; el formato belga se presenta en euros.",
+   "bloques": [
+    "b12",
+    "b18"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se acepta cargar la Brutomarge (L247) como ingreso neto, sin Omzet ni compras, por ser esquema abreviado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Brutomarge",
+   "texto": "Omzet (L249) y compras (L250) vienen vacíos; solo se informa margen bruto neto.",
+   "bloques": [
+    "b12"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Esquema abreviado belga: el margen bruto ya neta ventas y compras. Los renglones sin importe en Boekjaar (L257, L269) se incluyen por tener importe en el año anterior, con actual vacío. Las filas de b18 L452 y L455 (totales no recurrentes) duplican las de detalle y se omiten; L450 es plantilla de personal, no importe."
+}

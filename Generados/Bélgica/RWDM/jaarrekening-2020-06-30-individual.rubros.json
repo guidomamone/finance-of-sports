@@ -1,0 +1,70 @@
+{
+  "md": "Clubes/Bélgica/RWDM/jaarrekening-2020-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2020-06-30-individual.pdf",
+  "club": "rwdm-be",
+  "year": 2020,
+  "generatedAt": "2026-10-18T15:28:00.598Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Brutomarge (+)/(-)",
+      "lado": "revenue",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.890922
+      ],
+      "glosa": "Margen bruto (+)/(-)"
+    },
+    {
+      "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.808101
+      ],
+      "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
+    },
+    {
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.062384
+      ],
+      "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material"
+    },
+    {
+      "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.016847
+      ],
+      "glosa": "Correcciones de valor sobre existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.001486
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Niet-recurrente bedrijfskosten",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.001649
+      ],
+      "glosa": "Gastos de explotación no recurrentes"
+    }
+  ]
+}

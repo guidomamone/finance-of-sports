@@ -1,0 +1,151 @@
+{
+ "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2023-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/RWDM/jaarrekening-2023-06-30-individual.md",
+ "generado": "2026-10-18T15:42:14.606Z",
+ "estado": "cola",
+ "clubId": "rwdm-be",
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "a384c43"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)",
+   "dif": 0.0005609999999993676
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2023: 1.628714 en este documento y 1.628714 en jaarrekening-2024-06-30-individual.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 1.097582 en jaarrekening-2022-06-30-individual.pdf y 1.097582 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Waarvan: niet-recurrente bedrijfsopbrengsten\" tiene todas sus filas en 0 y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"Niet-recurrente bedrijfskosten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
+  "duda de extraer que no afecta la carga: Esquema abreviado: Omzet (L228) y 60/61 (L229) vienen vacíos y solo se informa el margen bruto neto."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 1.628714,
+  "gastos": 9.469568,
+  "financiero": 0.183182,
+  "impuesto": 0.002772,
+  "resultadoImpreso": -8.026247,
+  "resultadoParaCargar": -8.026247,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Brutomarge (+)/(-)",
+   "lado": "ingreso",
+   "M": 1.628714,
+   "pagina": 7,
+   "linea": 226,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Waarvan: niet-recurrente bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 7,
+   "linea": 227,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "gasto",
+   "M": 7.935338,
+   "pagina": 7,
+   "linea": 230,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "gasto",
+   "M": 1.378945,
+   "pagina": 7,
+   "linea": 231,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (+)/(-) (terugnemingen)",
+   "lado": "gasto",
+   "M": 0.000696,
+   "pagina": 7,
+   "linea": 232,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andere bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.101918,
+   "pagina": 7,
+   "linea": 234,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.052671,
+   "pagina": 7,
+   "linea": 236,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "M": -0.000281,
+   "linea": 239
+  },
+  {
+   "etiqueta": "Recurrente financiële kosten",
+   "M": -0.182901,
+   "linea": 243
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen op het resultaat (+)/(-)",
+   "M": -0.002772,
+   "linea": 248
+  }
+ ]
+}

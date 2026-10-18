@@ -1,0 +1,36 @@
+{
+ "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2023-06-30-individual.pdf",
+ "generado": "2026-10-18T15:42:31.473Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 1 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Bélgica/RWDM/jaarrekening-2023-06-30-individual.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2023-06-30",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "het boekjaar dat de periode dekt van 01-07-2022 tot 30-06-2023"
+  },
+  "confianza": "alta",
+  "anual": "temporada"
+ },
+ "clubId": "rwdm-be",
+ "year": 2023,
+ "cortadoEn": "filas"
+}

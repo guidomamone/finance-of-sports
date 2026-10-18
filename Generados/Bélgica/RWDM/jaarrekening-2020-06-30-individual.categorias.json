@@ -1,0 +1,92 @@
+{
+ "md": "Clubes/Bélgica/RWDM/jaarrekening-2020-06-30-individual.md",
+ "club": "rwdm-be",
+ "year": 2020,
+ "generatedAt": "2026-10-18T15:42:27.385Z",
+ "rubrosHuella": "dd7fdc1f78dca5918d40d965bb45ab3a193cf15c",
+ "jevHuella": "a94a7870916863d703f724e7fece155b109fb4e4",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.012163,
+ "rubros": [
+  {
+   "label": "Brutomarge (+)/(-)",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Margen bruto (+)/(-)",
+   "page": 8,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "lump_football_operations",
+   "confianza": 0.99
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)",
+   "page": 8,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "wages_squad",
+   "confianza": 0.99
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material",
+   "page": 8,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "depreciation",
+   "confianza": 1
+  },
+  {
+   "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Correcciones de valor sobre existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)",
+   "page": 8,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "other_expenses",
+   "confianza": 0.99
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 8,
+   "pendiente": true,
+   "jev": "other_expenses",
+   "jevConf": 0.89,
+   "escalon": 2,
+   "categoria": "other_expenses",
+   "confianza": 0.88,
+   "motivo": "Club usa 'Andere' -> other_expenses; otros clubes belgas igual"
+  },
+  {
+   "label": "Niet-recurrente bedrijfskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de explotación no recurrentes",
+   "page": 8,
+   "pendiente": true,
+   "jev": "exceptional_items",
+   "jevConf": 0.89,
+   "escalon": 2,
+   "categoria": "exceptional_items",
+   "confianza": 0.9,
+   "motivo": "Igual a 'Andere niet-recurrente bedrijfskosten' del club -> exceptional_items"
+  }
+ ]
+}

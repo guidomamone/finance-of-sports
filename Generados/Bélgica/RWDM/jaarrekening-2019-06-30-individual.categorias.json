@@ -1,0 +1,25 @@
+{
+ "md": "Clubes/Bélgica/RWDM/jaarrekening-2019-06-30-individual.md",
+ "club": "rwdm-be",
+ "year": 2019,
+ "generatedAt": "2026-10-18T15:39:25.956Z",
+ "rubrosHuella": "fa705afe5b52fdc1e52ce50be02e24ab104f9212",
+ "jevHuella": "b16f145e6e52736930da937a4932c9a12c6c5a49",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortizaciones y correcciones de valor de gastos de establecimiento, inmovilizado intangible y material",
+   "page": 6,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "depreciation",
+   "confianza": 1
+  }
+ ]
+}

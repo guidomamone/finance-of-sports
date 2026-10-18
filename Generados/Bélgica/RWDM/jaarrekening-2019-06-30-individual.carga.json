@@ -1,0 +1,238 @@
+{
+ "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2019-06-30-individual.pdf",
+ "generado": "2026-10-18T15:42:31.182Z",
+ "frena": [
+  {
+   "etapa": "alta:anio",
+   "motivo": "El nombre del archivo sugiere el ejercicio 2019, pero las fechas de cierre del documento son de 2024. ¿Qué ejercicio es?"
+  },
+  {
+   "etapa": "alta:cierre",
+   "motivo": "El nombre del archivo dice cierre 2019-06-30, pero el contenido cierra en el mes 11. ¿Cuál es el cierre de este ejercicio?"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "reintento",
+   "motivo": "categorías en 0 que deberían tener número: Salarios del plantel, Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+  },
+  {
+   "etapa": "tie-out",
+   "motivo": "ninguna fila de ingresos con categoría aceptable"
+  }
+ ],
+ "avisos": [
+  "primer ejercicio de la sociedad (7 meses, desde 2018-11-30): la columna del año anterior no tiene importes; se carga como el año, con nota pública",
+  "el documento cierra 2019-11-30 (ejercicio desde el 12-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?",
+  "gestión: ningún presidente confirmado cubre 2019 (cierre 2019-11-30); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "rwdm-be",
+  "year": 2019,
+  "cierre": "2019-11-30",
+  "perimetro": "individual",
+  "revenueLines": [],
+  "expenseLines": [
+   {
+    "rawLabel": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.00157,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2019-11-30",
+   "sourceId": "rwdm-be-jaarrekening-2019-06-30-individual",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.000013,
+   "tax": 0,
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": null,
+   "officialTotalExpenses": 0.00157,
+   "officialPAT": -0.001583
+  },
+  "source": {
+   "id": "rwdm-be-jaarrekening-2019-06-30-individual",
+   "clubId": "rwdm-be",
+   "title": "RWDM — jaarrekening-2019-06-30-individual (ejercicio 2019)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Bélgica/RWDM/jaarrekening-2019-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Bélgica/RWDM/jaarrekening-2019-06-30-individual.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "otro",
+  "meses": 7,
+  "inicio": "2018-11-30",
+  "cierre": "2019-06-30",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "met betrekking tot het boekjaar dat de periode dekt van 30-11-2018 tot 30-06-2019"
+  },
+  "confianza": "alta"
+ },
+ "primerEjercicio": {
+  "meses": 7,
+  "inicio": "2018-11-30",
+  "cierre": "2019-06-30"
+ },
+ "clubId": "rwdm-be",
+ "year": 2019,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 2,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "page": 6,
+   "native": 0.00157,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.00157,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): El documento NO confirma que los inmateriales sean derechos de jugadores: el rubro se llama \"Concessies, octrooien, licenties, knowhow, merken\" y las reglas de valoración no mencionan jugadores. Criterio Dender (no forzar player_amortisation sin confirmación textual). Pero es muy probable que sean p [Pág. 9: \"CONCESSIES, OCTROOIEN, LICENTIES, KNOWHOW, MERKEN\" Geboekt 8072 = 2.015.008; pág. 12 en adelante Geboekt 8271 = 361.697, 8272 = 133.429, 8273 = 24.005, 8275 = 15.161; pág. 8: 630 = 2.549.300]",
+   "destino": "expense",
+   "amountNative": -0.00157
+  },
+  {
+   "label": "Recurrente financiële kosten",
+   "page": null,
+   "native": -0.000013,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "reintentar": [
+  {
+   "categoria": "Salarios del plantel",
+   "lado": "gasto"
+  },
+  {
+   "categoria": "Televisión",
+   "lado": "ingreso"
+  },
+  {
+   "categoria": "Estadio",
+   "lado": "ingreso"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 0,
+  "expSum": -0.00157,
+  "officialTotalRevenue": null,
+  "officialTotalExpenses": 0.00157,
+  "officialPAT": -0.001583,
+  "verificacion": {
+   "pat": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.001583,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 0.00157
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "EUR@2019-11-30",
+  "fx": 0.910581,
+  "source": "market_close",
+  "label": "Tipo de referencia del Banco Central Europeo, última rueda hábil antes del cierre (2019-11-29, 2019-11-30 no es día hábil)"
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "sin caché de rosters para be (tools/club-league-reference/be.json)",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó, P3 liga-sin-verificar); para resolverla: resolve-wikipedia-season-page.mjs + fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2019,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien)",
+   "estado": "pregunta"
+  },
+  "cierre": {
+   "valor": "2019-11-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (6 de 9 fechas de fin de mes caen en el mes 11))",
+   "estado": "pregunta"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el nombre del archivo dice que son los estados individuales (\"jaarrekening-2019-06-30-individual.pdf\"), y no hay un consolidado del mismo ejercicio en la carpeta",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Bélgica (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2019-11-30",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 0.910581. --escribir agrega 'EUR@2019-11-30' a FX_CLOSE",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "rwdm-be-jaarrekening-2019-06-30-individual",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": null,
+   "fuente": "sin caché de rosters para be (tools/club-league-reference/be.json)",
+   "estado": "pendiente"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 6,
+  "lineasIngreso": 0,
+  "lineasGasto": 1,
+  "metaFilas": 1,
+  "excluidas": 0
+ }
+}

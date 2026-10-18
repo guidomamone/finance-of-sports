@@ -1,0 +1,276 @@
+{
+ "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2024-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/RWDM/jaarrekening-2024-06-30-individual.md",
+ "mdSha1": "40c7d215b7be9a6e1314e8437b25b4767069f3f9",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:24.926Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    25,
+    31
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    115,
+    118
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    130,
+    156
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    164,
+    194
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    202,
+    226
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    236,
+    264
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    274,
+    290
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    302,
+    318
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    326,
+    349
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    357,
+    384
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 12,
+   "lineas": [
+    394,
+    423
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 13,
+   "lineas": [
+    433,
+    445
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 14,
+   "lineas": [
+    455,
+    477
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 15,
+   "lineas": [
+    485,
+    502
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 15,
+   "lineas": [
+    504,
+    506
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 16,
+   "lineas": [
+    520,
+    522
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 16,
+   "lineas": [
+    526,
+    528
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 16,
+   "lineas": [
+    532,
+    534
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 17,
+   "lineas": [
+    544,
+    553
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 17,
+   "lineas": [
+    555,
+    557
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 17,
+   "lineas": [
+    559,
+    566
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 19,
+   "lineas": [
+    663,
+    665
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 20,
+   "lineas": [
+    682,
+    684
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 22,
+   "lineas": [
+    704,
+    708
+   ],
+   "tipo": "texto"
+  },
+  "b25": {
+   "pagina": 23,
+   "lineas": [
+    754,
+    758
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 23,
+   "lineas": [
+    762,
+    768
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 33,
+   "lineas": [
+    978,
+    982
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 33,
+   "lineas": [
+    984,
+    1007
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 34,
+   "lineas": [
+    1017,
+    1021
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 34,
+   "lineas": [
+    1025,
+    1040
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "de JAARREKENING in EURO (b1); modelo normalizado VKT con importes en euros",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'RESULTATEN' de la pág. 13 (b12, personal y resultados de magnitud excepcional) por no desglosar renglones con importes relevantes del estado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "b12 contiene personal medio y una sección de ingresos/gastos excepcionales con pocos importes; parece no abrir renglones del estado.",
+   "bloques": [
+    "b12"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales en modelo abreviado belga (VKT). El estado de resultados es b6 (RESULTATENREKENING, parte desde Brutomarge, sin desglose de Omzet). No hay notas de desglose de ingresos o gastos; b27 (sociale balans) da personeelskosten pero es información social, no se elige."
+}

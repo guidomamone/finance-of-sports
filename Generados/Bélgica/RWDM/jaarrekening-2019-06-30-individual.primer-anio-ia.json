@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Bélgica/RWDM/jaarrekening-2019-06-30-individual.md",
+ "clave": "89852870bf53ffea76fd27eeb1826ad3b1027ef3",
+ "generado": "2026-10-18T15:37:12.559Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Lo cargado cubre los únicos renglones con importe: amortizaciones (L206, 1.570) y costos financieros recurrentes (L218, 13), que son el detalle de L217. No se cargan subtotales ni totales. El resultado da -1.583, igual a L224. Los importes están expresados en euros y se convirtieron a millones."
+ }
+}

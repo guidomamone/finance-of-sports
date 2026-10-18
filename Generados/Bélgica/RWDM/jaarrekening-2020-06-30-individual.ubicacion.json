@@ -1,0 +1,216 @@
+{
+ "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2020-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/RWDM/jaarrekening-2020-06-30-individual.md",
+ "mdSha1": "d1a3889071293ec7d546ebfd5541c0a4fc95e628",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:24.512Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    25,
+    33
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    148,
+    174
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    182,
+    230
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 8,
+   "lineas": [
+    240,
+    268
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 9,
+   "lineas": [
+    278,
+    294
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 10,
+   "lineas": [
+    306,
+    322
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    330,
+    353
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    363,
+    392
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 13,
+   "lineas": [
+    402,
+    414
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 14,
+   "lineas": [
+    424,
+    432
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 14,
+   "lineas": [
+    434,
+    436
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    438,
+    445
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 15,
+   "lineas": [
+    512,
+    520
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 18,
+   "lineas": [
+    622,
+    626
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 27,
+   "lineas": [
+    873,
+    874
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 27,
+   "lineas": [
+    878,
+    882
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 27,
+   "lineas": [
+    884,
+    907
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 28,
+   "lineas": [
+    917,
+    919
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 28,
+   "lineas": [
+    921,
+    923
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 28,
+   "lineas": [
+    927,
+    934
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 28,
+   "lineas": [
+    936,
+    940
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 28,
+   "lineas": [
+    942,
+    946
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b9",
+  "b16"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING IN EURO (modelo belga normalizado, importes en euros sin indicación de miles)",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El ejercicio anterior (30-11 a 30-06, período corto de la constitución) se carga igual como columna 'Vorig boekjaar'?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "b1 indica que el ejercicio anterior cubre del 30-11 al 30-06, un período no anual.",
+   "bloques": [
+    "b1",
+    "b4"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales belgas, modelo abreviado (VKT). Estado de resultados en b4 (Resultatenrekening, presenta Brutomarge). b9 y b16 informan personal y gastos de personal; b16 corresponde al balance social. Se excluyen el balance (b2, b3), la resultaatverwerking (b5, b14), el activo fijo (b6, b7, b13), las deudas (b8), las partes vinculadas (b10) y las formaciones (b20-b22)."
+}

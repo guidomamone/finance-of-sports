@@ -1,0 +1,270 @@
+{
+ "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2021-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/RWDM/jaarrekening-2021-06-30-individual.md",
+ "mdSha1": "2bf1ebc281ef973c8620c678d2efa3e766565f55",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:24.607Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    3,
+    5
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    11,
+    22
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    24,
+    25
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 1,
+   "lineas": [
+    27,
+    30
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    138,
+    165
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 6,
+   "lineas": [
+    173,
+    227
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 7,
+   "lineas": [
+    237,
+    266
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 8,
+   "lineas": [
+    276,
+    292
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    304,
+    321
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    329,
+    353
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    361,
+    389
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 12,
+   "lineas": [
+    399,
+    429
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 13,
+   "lineas": [
+    439,
+    452
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 14,
+   "lineas": [
+    462,
+    501
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 14,
+   "lineas": [
+    503,
+    505
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 14,
+   "lineas": [
+    507,
+    509
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 15,
+   "lineas": [
+    521,
+    525
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 15,
+   "lineas": [
+    527,
+    530
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 15,
+   "lineas": [
+    532,
+    534
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 16,
+   "lineas": [
+    544,
+    553
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 16,
+   "lineas": [
+    555,
+    558
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 16,
+   "lineas": [
+    560,
+    568
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 17,
+   "lineas": [
+    635,
+    645
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 20,
+   "lineas": [
+    747,
+    751
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 30,
+   "lineas": [
+    1038,
+    1039
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 30,
+   "lineas": [
+    1043,
+    1047
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 30,
+   "lineas": [
+    1049,
+    1072
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 31,
+   "lineas": [
+    1082,
+    1087
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 31,
+   "lineas": [
+    1091,
+    1107
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b7"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b13"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING IN EURO (modelo NBB abreviado, importes en euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el cuadro 'RESULTATEN' (b13) como desglose de gastos (personal / resultados financieros)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "b13 incluye personal y resultados financieros; puede contener solo datos de plantilla sin importes que abran renglones del estado.",
+   "bloques": [
+    "b13"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales en modelo abreviado (VKT) de RWDM Future, ejercicio cerrado el 30-06-2021. El estado de resultados es b7 (Resultatenrekening), que parte de la brutomarge. b13 es la nota 6.4 Resultaten. b26 (personeelskosten del balance social) duplica gastos de personal y no se elige. Se excluyen el balance, la resultaatverwerking, el activo fijo, las deudas y los compromisos."
+}
