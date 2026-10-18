@@ -1857,6 +1857,86 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
+ "torino-it": {
+  "2020": {
+   "auditor": {
+    "nombre": "Grant Thornton",
+    "tipo": "firma",
+    "legal": "Ria Grant Thornton S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Torino/Torino-relazione-revisione-2020.md",
+    "linea": 27
+   }
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "Grant Thornton",
+    "tipo": "firma",
+    "legal": "Ria Grant Thornton S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Torino/Torino-relazione-revisione-2021.md",
+    "linea": 27
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "Grant Thornton",
+    "tipo": "firma",
+    "legal": "Ria Grant Thornton S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Torino/Torino-relazione-revisione-2022.md",
+    "linea": 24
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO Italia S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Torino/Torino-relazione-revisione-2023.md",
+    "linea": 35
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO Italia S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Torino/Torino-relazione-revisione-2024.md",
+    "linea": 34
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO Audit Services S.r.l."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Torino/Torino-relazione-revisione-2025.md",
+    "linea": 36
+   }
+  }
+ },
  "udinese-it": {
   "2022": {
    "auditor": {
