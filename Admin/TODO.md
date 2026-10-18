@@ -62,7 +62,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 
 **E. Pantallas**
 * 282: quién audita, lo que queda (88 informes a conseguir; la compuerta del pipeline)
-* 281: ingresos de las otras entidades (falta transcribir los documentos de Portugal)
+* 281: ingresos de las otras entidades (falta União de Leiria, sin estado de resultados)
 * 294: registro de entidades, lo que queda (los clubes del borrador cuando estén publicados)
 
 **E2. Distribución (depende de 246)**
@@ -236,10 +236,9 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    `node tools/estadio-sponsor.mjs --ensayo` los lista; incluye los años de Estonia y Bélgica de los lotes 91-92, que onboarding carga
    con las tools de su rama, sin la compuerta); que `generate-sponsors.js` sume lo de `contexto-manual.json`; nombrar la compuerta nueva en
    `Admin/PIPELINE.md` y en la skill `club-or-year-onboarding` (la skill, con ok de Guido).
-281. FINANZAS: INGRESOS DE LAS OTRAS ENTIDADES (pedido de Guido, 2026-10-17). El dato y la pantalla están (tarjeta Estructura, piloto
-   Portugal). Falta: transcribir por subagentes los ~17 documentos de entidades de clubes portugueses publicados sin `.md` (Porto 3, Braga
-   2022-23, Marítimo 5, Belenenses, Chaves, Vizela 2, Académica, União de Leiria) y cargar su línea de ingresos (va con el 294). Chaves 2022-23: el informe del auditor de la
-   asociación está en Relatorio_Atividades-e-Contas-2022_2023.pdf, págs. 36-39 (RCVM, incertidumbre material).
+281. FINANZAS: INGRESOS DE LAS OTRAS ENTIDADES (pedido de Guido, 2026-10-17). Hecho para Portugal: 14 asociaciones-año transcriptas con su
+   línea de ingresos (Vizela, Belenenses, Chaves, Académica, Braga, Marítimo, Porto…; 17 líneas de ingresos en el registro). Falta: União
+   de Leiria, cuyo PDF no trae el estado de resultados (sourcing).
 282. QUIÉN AUDITA: LO QUE QUEDA (pedido de Guido, 2026-10-17). Los 942 balances tienen línea, la tarjeta de Finanzas está (con el
    "alcance" de una revisión limitada, procedimientos acordados, propósito especial o cuentas del grupo). Falta: (a) sourcing de los 88
    informes del auditor que no están en ningún PDF nuestro (`node tools/auditoria.mjs --pendientes`, "FALTA EN EL PDF"); (f) que el pipeline

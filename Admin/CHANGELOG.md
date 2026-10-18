@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 735 — Merge de finanzas: los ingresos de las asociaciones portuguesas (2026-10-18)
+
+- To-do 281: 14 documentos de asociaciones portuguesas (Vizela, Belenenses, Chaves, Académica, Braga, Marítimo, Porto 2024-25 en cuatro
+  tramos) transcriptos por subagentes, con su línea de ingresos verificada; la tarjeta Estructura los muestra. 17 líneas de ingresos en
+  el registro de entidades. Falta União de Leiria. ASSET_V 1289, P0 0 / P1 0.
+
 ## Versión 734 — Merges de ligas y pantallas: la Premier League y la cobertura de ligas en el tablero (2026-10-18)
 
 Los dos a mano: generados con main y regenerados; ASSET_V 1288, P0 0 / P1 0. Después, fast-forward de pantallas para el 282 en Ligas.
