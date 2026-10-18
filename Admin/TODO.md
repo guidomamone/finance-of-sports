@@ -24,7 +24,7 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 297 (cuando esté el índice) y 282 en Ligas (cuando haya el dato del 295) · finanzas cerrada (lo que queda del 281, 282 y 294, sin asignar) · pipeline 289, 290, 288, 232, 279, 286, 287 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
+Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 297 (cuando esté el índice) y 282 en Ligas (cuando haya el dato del 295) · finanzas 281, 282, 294 · pipeline 289, 290, 288, 232, 279, 286, 287, 298 · onboarding 292, 238, 285, 284, 283, 195, 165 c, 299 ·
 datos-sourcing 273 (completar el dato), 297 (el índice), 252, 295 · Reino Unido (261) en su propia sesión · la principal: 268, 291, 250, 244 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
@@ -45,12 +45,14 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 232: mejoras de script que dejó Grecia
 * 279: la tool que duplicaba claves en club-leagues/ru.js
 * 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar
+* 298: mejoras de script de Estonia y Bélgica (primero la a, el cierre falso)
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
 * 238: llevar a 0 los documentos que quedaron a mitad de camino
 * 261: Reino Unido, transcripción por subagentes
 * 165 c: altas de los países nuevos que faltan
+* 299: ligas de Estonia en data/leagues.js
 * 195: gestiones (presidentes) sin fuente confirmada (se puede ir haciendo con cada país)
 * 295: balances de las entidades que organizan las ligas (AFA, LFP…), para la auditoría en Ligas
 * 284 y 285: Fredrikstad y Sarpsborg 08 sobre el FLI; transcribir Viking Fotball AS
@@ -285,16 +287,27 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    successivo" y "altri finanziatori".
 291. DUDA PARA GUIDO: ¿EL FACTORING ES DEUDA? En Monza 2024 se decidió que no (ajuste del 2026-10-17: 0); en Genoa 2022 el sitio publica
    95,7 M que lo incluyen (30,4 M con Banca Sistema, .md L2637). Decidir un criterio; no se reabrió nada.
-292. TRANSCRIPCIONES POR SUBAGENTES: VALIDAR, MISTRAL Y CARGAR (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia; la limpieza
-   está hecha, ver el 165 b1). En este orden: validar `Admin/lotes/subagentes-validar.txt` (~US$ 3,47); transcribir con Mistral
-   `Admin/lotes/mistral-despues-del-merge.txt` (36 documentos, ~US$ 6); lotes de carga por país (el alta con un solo año); y decidir
-   subagentes o Mistral para los 319 `.md` viejos sin tablas de `Admin/lotes/sin-tablas-6paises.txt`.
-294. REGISTRO DE ENTIDADES: LO QUE QUEDA (pedido de Guido, 2026-10-18). Ya tiene 44 clubes y 9 grupos multiclub (219 entidades, 326
-   relaciones, con cita verificada). Falta: (a) un ajuste `anio` en ajustes-manuales para las cargas que `tools/quien.mjs` no fecha por el
-   nombre del PDF (Boavista 2024 `RCSAD-23-24_1-3`, Marítimo 2024 `…30jun24`, Portimonense 2022-2025 `Relatorio-Contas-21-22_assinado` y
-   hermanos); (b) dudas de los subagentes: cómo se conecta Manchester City Limited con CFG (Newton Investment como "ultimate parent"), Bahía
-   y Yokohama (clubes del sitio que CFG no lista), Dan Friedkin → The Friedkin Group, la frase del PSG en QSI, los clubes externos de 777
-   sin fecha de salida; (c) los casos de `Admin/registros/cola-borradores/altas-2026-10-17.md` cuando esos clubes estén publicados.
+292. TRANSCRIPCIONES POR SUBAGENTES: CARGAR (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia). Validación (326 listas) y Mistral
+   hechos; Estonia y Bélgica dados de alta (lotes 89 y 90, 17 clubes). Falta: los lotes de carga por país que siguen (91-92 en curso,
+   después Suiza, Países Bajos, Colombia, Beşiktaş); OH Leuven 2022 y Llaneros 2022, que siguen sin tablas (ver 298 e); decidir subagentes
+   o Mistral para los 319 `.md` viejos sin tablas de `Admin/lotes/sin-tablas-6paises.txt`, después de medir el 298 e.
+294. REGISTRO DE ENTIDADES: LO QUE QUEDA (pedido de Guido, 2026-10-18). Tiene 47 clubes y 9 grupos (las dudas de los subagentes ya se
+   resolvieron con cita). Falta: (c) los casos de `Admin/registros/cola-borradores/altas-2026-10-17.md` cuyos clubes ya están publicados
+   (Lommel SK, Patro Eisden, Lokeren-Temse entraron con onboarding); Bahia: el eslabón CFG > City Football Group Brazil se cita con el
+   contrato de la S.A.F., sin %; una cita del registro societario de Brasil (QSA del CNPJ) lo dejaría directo.
+298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; cada letra es un escalón a diseñar con el ok de Guido, uno por
+   vez; el detalle con casos, en `Admin/Archive/sesion-onboarding-2026-10-18-2.md`). a) CIERRE FALSO en verificar.mjs: compara en valor
+   absoluto y da "cierra" con una fila del lado o signo equivocado (Lierse Kempenzonen 2022 habría cargado un gasto como ingreso): lo más
+   grave. b) Esquema NBB belga en verificar.mjs y cargar.mjs: costos financieros 65/66B positivos, renglones "(+)/(-)" por valor absoluto,
+   el 76A sumado aparte, y verificar y la propuesta que no leen igual el signo; una regla por código NBB. c) caja-deuda.mjs: lee el código
+   NBB "54/58" como importe; un club con un solo año nunca pasa la compuerta del vecino; tres estonios "sin páginas de balance". d)
+   perimetro-senales.mjs no ve los dos estados de los informes estonios. e) pipeline.mjs: un .md viejo con marca de la preparación vieja
+   nunca se marca `sin-tablas` (OH Leuven 2022, Llaneros 2022; puede frenar buena parte de los 319). f) periodo.mjs no saca el cierre NBB
+   cuando las fechas vienen en celdas (9 belgas y 1 estonio). g) la cola admite una sola categoría por fila: un "partir según la nota" con
+   la suma exacta como compuerta. h) un `no_es_rubro` puede dejar a un padre sin hijos: que la cola avise. i) alta-club.mjs: un país nuevo
+   frena hasta agregar su fila a PAISES: que la proponga.
+299. LIGAS DE ESTONIA (datos). No están en `data/leagues.js`: propuesto `ee-meistriliiga` (tier 1) y `ee-esiliiga` (tier 2). Las 9 altas
+   estonias quedan con liga null hasta entonces.
 270. ESTIMAR UN CLUB QUE NUNCA CARGAMOS: VOLVER A MEDIR (pedido de Guido, 2026-10-17). Está PRENDIDO desde el 2026-10-18 (decisión de
    Guido: en Ligas todo club sin balance figura como estimado), con 50% de error (regresión sin historia: mediana de la liga-año, división,
    posición en la tabla). Volver a medir (`node tools/estimar.mjs --medir`) cuando haya más clubes cargados. Variable sin medir: partidos

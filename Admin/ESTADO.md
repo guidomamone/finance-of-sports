@@ -99,6 +99,9 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   contestarlos primero (subagentes por grupos de clubes, con un archivo de criterio común). El lote vuelve a verificar solo un documento
   con respuestas nuevas; aun así, antes de pasar el comando conviene el ensayo de `cargar.mjs --desde-verificacion` de cada documento,
   porque frenos de la carga (signo del resultado, filas del otro lado) no se ven en la verificación.
+- Estonia es un país del sitio desde el 2026-10-18 (lote 89: Flora, Harju JK Laagri, Kuressaare, Nõmme Kalju, Tartu Tammeka, FCI
+  Levadia, Narva Trans, Paide, Tallinna Kalev), con liga null hasta que estén sus ligas (to-do 299); Bélgica suma Lierse SK, Lokeren-Temse,
+  Lommel SK, OH Leuven, Patro Eisden, RWDM, Beerschot y RAAL La Louvière (lote 90). Caja y deuda de esos clubes, vacías hasta sus años vecinos.
 - Portugal está cargado salvo Benfica 2014-15 (en HALLAZGOS; to-do 165 b0). Caja y deuda: lo que falta está frenado por el documento o por la escala del año (lista en el to-do 260). Un ajuste `caja` / `deuda` puede llevar año (`ajustes.mjs --anio`), para un PDF que alimenta dos años. Rusia sale de los códigos del balance del fisco (caja 1250, deuda 1410 + 1510). Los préstamos de socios cuentan como deuda (Guido, 2026-10-17). Del to-do 237
   queda solo `al` (Guido la dejó para después). Los años en escudos (PTE) se cargan en su moneda con la paridad fija al euro, como las liras.
   Un ejercicio de transición por cambio de cierre (11 meses que encadenan con el cierre anterior y el siguiente) se carga con nota pública.
@@ -152,7 +155,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 - Finanzas tiene la tarjeta Estructura ("De quién son estos números": entidad y perímetro, cadena de dueños, controladas, clubes del
   mismo grupo y nota para periodistas) y la página del grupo multiclub (`?tab=grupo`, clubes que controla y total por año), desde
   `data/entidades/` (lo genera `tools/entidades.mjs` del registro `Admin/registros/entidades.jsonl`, con cita por línea). El registro tiene
-  44 clubes y 9 grupos multiclub (to-do 294). Donde el registro los tiene, la tarjeta muestra también los ingresos de la otra entidad del club.
+  47 clubes y 9 grupos multiclub (to-do 294). Donde el registro los tiene, la tarjeta muestra también los ingresos de la otra entidad del club.
 - Para periodistas: la tarjeta "Citar y descargar" de Finanzas (cita sugerida de lo que se ve, copiar la cita o el link, CSV por rubro y
   ejercicio con moneda, tipo de cambio y documento; sin dato va vacío, nunca 0) y la página pública `metodologia.html` (link en el pie).
 - Quién auditó cada balance: `Admin/registros/auditoria.jsonl` (con citas) y `tools/auditoria.mjs`, que genera `data/auditoria/` (902 de

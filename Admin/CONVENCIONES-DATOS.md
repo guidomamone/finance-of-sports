@@ -365,6 +365,8 @@ Decisiones de Guido (2026-10-18). El registro es `Admin/registros/entidades.json
 - El total de un grupo multiclub suma solo los clubes que el grupo controla (más del 50 %); las participaciones menores se listan aparte.
 - La pertenencia de un club a un grupo puede citarse con una fuente externa (url y fecha) cuando el balance no lo dice.
 - Un dueño persona (Marinakis, Friedkin) cuenta como grupo, igual que una empresa, con el nombre que imprimen los documentos.
+- Cuando el balance no dice quién es el dueño de una sociedad intermedia, la cita se busca en el registro público (Companies House, PSC)
+  antes que deducirla (Guido, 2026-10-18).
 
 ## REGLA: el dictamen del auditor (registro de auditoría)
 

@@ -15,6 +15,20 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 727 — Merges de finanzas y onboarding: entidades y 17 clubes nuevos de Estonia y Bélgica (2026-10-18)
+
+Finanzas y onboarding, a mano: `index.html` con main en los dos (solo habían cambiado la versión), `ajustes-manuales.jsonl` con las
+líneas de las dos ramas (JSON válido, sin repetidas); generados regenerados, ASSET_V 1278, P0 0 / P1 0. auditAll: 276 clubes, 2663
+checks que cierran, 0 que no. Después, fast-forward de la rama finanzas para el 294 (c).
+
+- To-do 294 a y b: ajustes `anio` de 8 PDF portugueses (Boavista, Marítimo, Portimonense) y las dudas de entidades resueltas con cita
+  (Man City por Companies House, Yokohama, Bahia en CFG, Friedkin, PSG, 777). 47 clubes con estructura.
+- To-do 292: validadas las 326 transcripciones de subagentes (US$ 2,53) y Mistral para 3 documentos (US$ 0,64). Lotes 89 (Estonia) y 90
+  (Bélgica): 17 clubes nuevos, con la cola contestada por subagentes y revisada contra el .md; el 630 belga partido por la nota de activos.
+  Estonia, país nuevo.
+- Regla nueva en CONVENCIONES-DATOS (el dueño de una sociedad intermedia, del registro público). TODO: 292 y 294 al día; nuevos 298
+  (mejoras de script de Estonia y Bélgica, para pipeline) y 299 (ligas de Estonia).
+
 ## Versión 726 — Merge de pantallas: estadio y camiseta, y la página por sponsor (2026-10-18)
 
 `node tools/worktree.mjs mergear pantallas`, sin conflictos, P0 0 / P1 0, ASSET_V 1274.
