@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Italia/Como/Como-fascicolo-bilancio-2024.md",
+ "generado": "2026-10-18T05:50:38.100Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   386,
+   388
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no muestra líneas de debiti verso banche ni otros préstamos financieros. Las deudas son con proveedores, controlantes (L452, incluye un reembolso por una prenda a Banca Passadore, no un préstamo), entes del sector, tributarias y otras, por lo que se considera que no hay deuda financiera explícita. La caja se tomó como depósitos bancarios y efectivo (L386 y L388), cuyo total es L389."
+}

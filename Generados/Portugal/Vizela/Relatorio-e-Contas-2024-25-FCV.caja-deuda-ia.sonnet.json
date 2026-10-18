@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Portugal/Vizela/Relatorio-e-Contas-2024-25-FCV.md",
+ "generado": "2026-10-18T05:53:28.213Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Capital Social de 1 000 000.00€ totalmente realizado",
+ "caja": {
+  "lineas": [
+   505
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance (L490-L532) está en euros sin indicación de miles; no hay préstamos ni obligaciones financieras en el pasivo, solo provisiones, proveedores, deudas por traspasos, Estado y otras deudas a pagar. Los intereses en resultados (L582) no se corresponden con ninguna línea de deuda en el balance."
+}

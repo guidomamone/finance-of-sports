@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Grecia/AEK Athens/AEK_Notes_IFRS_2021-06-30.md",
+ "generado": "2026-10-18T05:49:32.193Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "caja": {
+  "lineas": [
+   425
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   436
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda no corriente: Μακροπρόθεσμες Δανειακές Υποχρεώσεις (L436) = 5.029.327. En el balance no hay línea de préstamos corrientes: L444 (arrendamiento financiero corriente) está vacía en 2021. La nota de liquidez (L1127) muestra préstamos de corto plazo por 1.008.907 que no figuran en el balance, así que no los incluí. L445 y L447 no se incluyen porque no son deuda financiera."
+}

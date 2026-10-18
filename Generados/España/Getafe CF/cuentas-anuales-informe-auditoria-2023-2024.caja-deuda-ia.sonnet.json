@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/España/Getafe CF/cuentas-anuales-informe-auditoria-2023-2024.md",
+ "generado": "2026-10-18T05:51:14.454Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "A 30 de junio de 2.024",
+ "caja": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   533,
+   607
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance está en euros sin indicación de escala (importes con céntimos). Las páginas del activo no aparecen, así que no se encontró la línea de efectivo. En el pasivo no corriente los importes están desalineados de sus etiquetas (L533 sin valor propio; el valor 12.620.000,00 de L566 corresponde a entidades de crédito a largo plazo), por lo que la línea de deuda no corriente es dudosa. La deuda corriente con entidades de crédito se toma de L607 (12.037.500,00). Los préstamos participativos (L534, L608) y las deudas con entidades deportivas no se incluyeron por ser dudosos."
+}

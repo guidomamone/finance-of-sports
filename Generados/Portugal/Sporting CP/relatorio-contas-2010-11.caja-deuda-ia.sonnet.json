@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2010-11.md",
+ "generado": "2026-10-18T05:53:08.611Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "EUR'000 30.Jun.11",
+ "caja": {
+  "lineas": [
+   2439
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   2453,
+   2459
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usó el balance oficial (L2428-2466) con columna 30.Jun.11. Dívida financeira no corriente (42.289) y corriente (53.271). La nota 32 muestra que incluye VMOC componente deuda, factoring, letras descontadas y descubiertos."
+}

@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Brasil/Botafogo-SP/demonstracoes-contabeis-2023-2024.md",
+ "generado": "2026-10-18T05:50:20.147Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Em reais)",
+ "caja": {
+  "lineas": [
+   59
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no tiene préstamos bancarios ni financieros. Las Partes Relacionadas no corrientes (L114) incluyen mútuos del accionista Trexx, pero están mezcladas con obligaciones de derecho de uso e inversiones a pagar, y no son deuda bancaria; las Obrigações com Arrendamento (L106, L113) son arrendamientos, así que quedaron excluidas. Si se considerara deuda financiera el mútuo con el accionista, habría que revisar L114."
+}

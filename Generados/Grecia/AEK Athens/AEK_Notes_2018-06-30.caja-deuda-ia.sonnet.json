@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Grecia/AEK Athens/AEK_Notes_2018-06-30.md",
+ "generado": "2026-10-18T05:49:30.653Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "caja": {
+  "lineas": [
+   446
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   460,
+   473
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se tomaron los préstamos no corrientes (L460, préstamo de Leskira Holdings) y corrientes (L473). Se excluyeron 'Μακροπρόθεσμες Υποχρεώσεις πληρωτέες στην Επόμενη Χρήση' (L474) y las otras obligaciones por no ser claramente préstamos."
+}

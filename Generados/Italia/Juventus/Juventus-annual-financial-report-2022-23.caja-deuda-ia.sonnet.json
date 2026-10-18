@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2022-23.md",
+ "generado": "2026-10-18T05:51:40.228Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Amounts in Euro",
+ "caja": {
+  "lineas": [
+   4800
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   4827,
+   4835
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance principal (pp. 140-141) está en euros completos; las tablas pro-forma están en miles de euros, pero se usó el balance histórico. La deuda 'Loans and other financial payables' incluye préstamos y otros pasivos financieros (corriente y no corriente). No se incluyeron las deudas con clubes por campañas de traspasos."
+}

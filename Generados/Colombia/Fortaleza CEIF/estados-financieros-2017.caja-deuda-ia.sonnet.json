@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.md",
+ "generado": "2026-10-18T05:51:08.690Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expresados en miles de pesos Colombianos)",
+ "caja": {
+  "lineas": [
+   273
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "No se incluye el estado de situación financiera completo, solo las notas. La caja sale del total de la nota 6 (L273). Las notas de pasivos muestran cuentas por pagar comerciales, impuestos, beneficios a empleados y otros pasivos no financieros, sin préstamos ni obligaciones financieras; por eso deuda.ninguna es true, aunque esto es provisional hasta ver el balance completo."
+}

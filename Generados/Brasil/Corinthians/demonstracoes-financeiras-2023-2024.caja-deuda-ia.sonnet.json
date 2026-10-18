@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Corinthians/demonstracoes-financeiras-2023-2024.md",
+ "generado": "2026-10-18T05:50:38.736Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de reais)",
+ "caja": {
+  "lineas": [
+   270
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   356,
+   369
+  ],
+  "ninguna": false
+ },
+ "observaciones": "En el pasivo las etiquetas (L311, L327) están separadas de los valores (L356, L369). Se asignan por orden y nota 10: corriente 227.722 (L356) y no corriente 16.950 (L369), columna 31/12/2024. Los 'Tributos parcelados' y 'Fornecedores' no se incluyen como deuda financiera."
+}

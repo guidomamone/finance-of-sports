@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Brasil/Bahia/demonstracoes-financeiras-2024.md",
+ "generado": "2026-10-18T05:50:08.946Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de Reais)",
+ "caja": {
+  "lineas": [
+   177
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no tiene préstamos ni financiamientos bancarios, ni corrientes ni no corrientes. Las 'Partes relacionadas' (L189, 679.901) son préstamos de socios, pero no están identificadas como deuda financiera bancaria, por lo que no las incluí; conviene revisar la nota 7."
+}

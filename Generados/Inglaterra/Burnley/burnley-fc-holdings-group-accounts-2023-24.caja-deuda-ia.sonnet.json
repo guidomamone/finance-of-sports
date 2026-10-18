@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Inglaterra/Burnley/burnley-fc-holdings-group-accounts-2023-24.md",
+ "generado": "2026-10-18T05:50:26.092Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£000",
+ "caja": {
+  "lineas": [
+   738
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "El balance del grupo solo muestra acreedores agregados (corriente y no corriente) sin desglosar préstamos; la nota 34 indica préstamos de £112,393k (L2351) pero esa línea no es del balance, por lo que no se eligió. La columna 2024 de caja es 8,910 (L791), la línea de etiqueta es L738."
+}

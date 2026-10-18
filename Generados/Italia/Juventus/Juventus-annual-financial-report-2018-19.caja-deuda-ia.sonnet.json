@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2018-19.md",
+ "generado": "2026-10-18T05:51:39.222Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "The amounts shown in the financial statements are in Euro.",
+ "caja": {
+  "lineas": [
+   1071
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1099,
+   1105
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance en euros completos (columna 30/06/2019); las notas usan miles de euros. Deuda = 'Loans and other financial payables' no corriente (L1099) y corriente (L1105). La línea de caja se llama 'Cash'."
+}

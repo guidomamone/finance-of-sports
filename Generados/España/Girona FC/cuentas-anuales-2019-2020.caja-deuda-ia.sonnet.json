@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/España/Girona FC/cuentas-anuales-2019-2020.md",
+ "generado": "2026-10-18T05:51:15.619Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Marque la casilla correspondiente según exprese las cifras en unidades, miles o millones de euros.",
+ "caja": {
+  "lineas": [
+   643
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   731,
+   749
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La casilla de escala no se distingue en el OCR; se asume unidades porque las cifras llevan céntimos. Deuda con entidades de crédito: LP (L731) sin importe, CP (L749) 1.064,12. Excluí 'otros pasivos financieros' (L734, L752) y deudas con empresas del grupo (L735) por no ser préstamos bancarios o financieros explícitos. L643 es el total de efectivo, que incluye la tesorería de L644."
+}

@@ -1,0 +1,26 @@
+{
+ "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2019-20.md",
+ "generado": "2026-10-18T05:51:30.499Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   704
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   782,
+   783,
+   785,
+   786,
+   788,
+   789,
+   791
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caja: se eligió el total de Disponibilità liquide (L704, valor 88.505.854 al 30/06/2020), que suma depósitos bancarios y efectivo. Deuda: se incluyen obligaciones, deudas con socios por financiamiento, deudas con bancos y con otros financiadores, corriente y no corriente. Las deudas con socios por financiamiento (L785-786) son financieras pero podrían discutirse. Se excluyeron las deudas con empresas del grupo (L797-804), por no figurar como financieras en el balance. La línea L791 solo tiene un guion en 2020."
+}

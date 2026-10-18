@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Colombia/Independiente Santa Fe/estados-financieros-2025.md",
+ "generado": "2026-10-18T05:52:56.932Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Expresado en pesos colombianos)",
+ "caja": {
+  "lineas": [
+   22
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   116,
+   123
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Otros Pasivos Financieros corrientes (L116) no tiene desglose en las páginas dadas; el no corriente (L123) es el total de pasivos Ley 1116, donde las Obligaciones Financieras son solo 1.242.561.656 (L1292), el resto son cuentas por pagar, fideicomiso y litigios. Elegí L116 y L123 por ser las líneas del balance, pero L123 sobrestima la deuda financiera."
+}

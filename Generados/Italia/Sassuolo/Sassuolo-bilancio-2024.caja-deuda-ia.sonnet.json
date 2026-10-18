@@ -1,0 +1,24 @@
+{
+ "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2024.md",
+ "generado": "2026-10-18T05:53:02.663Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "31 dicembre 2024 31 dicembre 2023",
+ "caja": {
+  "lineas": [
+   502
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   530,
+   531,
+   533,
+   534,
+   536
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance civilístico (L454-L557) está en euros enteros; el reclasificado usa Euro/000 pero se ignoró. Deuda incluye préstamos de socios (Mapei), bancos y otros financiadores; se excluyeron los débitos con controlante por tesorería centralizada (L541) por ser cuenta corriente intragrupo, aunque podrían considerarse financieros."
+}

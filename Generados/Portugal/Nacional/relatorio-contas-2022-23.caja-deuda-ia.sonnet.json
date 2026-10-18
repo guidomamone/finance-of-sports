@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Nacional/relatorio-contas-2022-23.md",
+ "generado": "2026-10-18T05:52:13.635Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"financiamentos obtidos\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "(montantes em euros)",
+ "caja": {
+  "lineas": [
+   88
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   100,
+   105
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Columna 30-jun-23: financiamentos obtidos no corrente es '-' (L100) y corriente 565.522 (L105); se incluye L100 por ser la línea no corriente aunque su valor 2023 sea cero."
+}

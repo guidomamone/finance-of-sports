@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Genoa/Genoa-bilancio-30.06.2025-individual.md",
+ "generado": "2026-10-18T05:51:12.523Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"debiti verso istituti di previdenza e di sicurezza sociale\" + \"riserv vers c futuro aumento capitale\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "Valori in €",
+ "caja": {
+  "lineas": [
+   251
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   309,
+   260
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda según el criterio del club: total debiti verso istituti di previdenza e sicurezza sociale (L309, 2.599.294) + versamenti in conto futuro aumento di capitale (L260, 5.000.000). No se incluyen los debiti verso banche ni verso altri finanziatori, por el criterio indicado. La escala está en euros enteros; la frase 'Valori in €' proviene de la nota integrativa."
+}

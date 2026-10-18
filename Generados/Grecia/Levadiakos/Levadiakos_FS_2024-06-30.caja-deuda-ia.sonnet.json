@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2024-06-30.md",
+ "generado": "2026-10-18T05:52:03.314Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Οι οικονομικές καταστάσεις παρουσιάζονται σε Ευρώ.",
+ "caja": {
+  "lineas": [
+   35
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance está en euros con céntimos, por eso la escala es unidades. No hay préstamos ni obligaciones bancarias: el pasivo es solo corriente y se compone de deudas comerciales, impuestos, seguridad social y otras deudas. 'Λοιπές υποχρεώσεις' (L54) es una cuenta genérica y no se tomó como deuda financiera."
+}

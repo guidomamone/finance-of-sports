@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2015-16.md",
+ "generado": "2026-10-18T05:53:09.725Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "EUR'000 30.Jun.16",
+ "caja": {
+  "lineas": [
+   2571
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   2584,
+   2589
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda = Financiamientos obtidos no corriente (L2584) y corriente (L2589) del balance a 30.Jun.16; suman 132.055, coincide con la nota 30."
+}

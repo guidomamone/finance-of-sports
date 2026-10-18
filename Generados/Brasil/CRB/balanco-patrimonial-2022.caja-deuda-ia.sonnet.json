@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/CRB/balanco-patrimonial-2022.md",
+ "generado": "2026-10-18T05:50:40.628Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(em reais)",
+ "caja": {
+  "lineas": [
+   12
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   26
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los 'Tributos parcelados' (L33) son deuda tributaria, no financiera, por lo que se excluyen. Hay una inconsistencia menor en el superávit del ejercicio entre columnas, pero no afecta caja ni deuda."
+}

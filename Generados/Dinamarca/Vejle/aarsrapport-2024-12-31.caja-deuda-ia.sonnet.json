@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Dinamarca/Vejle/aarsrapport-2024-12-31.md",
+ "generado": "2026-10-18T05:53:23.587Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "t.kr.",
+ "caja": {
+  "lineas": [
+   622
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   658,
+   660
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El pasivo está desordenado: etiquetas (L646-L673) y valores (L686-L701) en bloques separados, por lo que el mapeo es por orden. Hay 16 etiquetas de partida y 16 valores. Etiquetas y valores: Aktiekapital 1.052, Reserve 36, Overført resultat 21.024, Egenkapital 719.936 (cifras corruptas por OCR), Leasingforpligtelser 658, Ansvarlig lånekapital 23.203, Anden gæld LP 3.621, Langfristede total 27.482, Kortfristet del 267, Leverandører 4.042, Gæld til selskabsdeltagere (9, Anden gæld 2.443, Periodeafgrænsning 4.929, Kortfristede total 11.681. La asignación es incierta: por orden, Leasingforpligtelser=658 (L690), Ansvarlig lånekapital=23.203 (L691), Kortfristet del af langfristede=267 (L694). Se eligieron líneas con etiquetas en L658 (préstamo subordinado) y L664 (parte corriente de deuda a largo plazo), omitiendo leasing y anden gæld. Corrijo la lista abajo."
+}

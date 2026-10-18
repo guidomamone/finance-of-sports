@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Portugal/Casa Pia/relatorio-contas-2021-22.md",
+ "generado": "2026-10-18T05:50:27.606Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Euros",
+ "caja": {
+  "lineas": [
+   304
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no tiene préstamos bancarios ni financieros. Los suprimentos del Club (817.335 €) están dentro de 'Outras dívidas a pagar' (L319), que es una línea agregada, así que no se incluyó como deuda financiera. Escala en euros, sin miles."
+}

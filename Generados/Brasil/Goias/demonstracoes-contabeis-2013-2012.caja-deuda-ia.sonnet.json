@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2013-2012.md",
+ "generado": "2026-10-18T05:51:16.727Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(EM REAIS)",
+ "caja": {
+  "lineas": [
+   86
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   123,
+   132
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se tomó la columna 2013. Deuda financiera = Empréstimos e financiamentos corriente (L123) y no corriente (L132). Se excluyeron Títulos a pagar y Tributos parcelados por no ser préstamos bancarios o financieros."
+}

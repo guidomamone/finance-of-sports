@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2025.md",
+ "generado": "2026-10-18T05:50:07.514Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"emprestimos e financiamentos\" (o sus equivalentes en este documento).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+ "caja": {
+  "lineas": [
+   128
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   156,
+   157,
+   173
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda = empréstimos bancários (circulante L156 y no circulante L173) más empréstimos de terceiros (L157, solo circulante), que son el equivalente de 'empréstimos e financiamentos' en este balance. Se excluyen las obligaciones tributarias (PGFN/CARF) y los credores de la recuperação judicial/CNRD. Las aplicaciones financieras (L129) no se incluyen en caja."
+}

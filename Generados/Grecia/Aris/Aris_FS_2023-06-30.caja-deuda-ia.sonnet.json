@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Grecia/Aris/Aris_FS_2023-06-30.md",
+ "generado": "2026-10-18T05:49:44.254Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"τραπεζικα και αλλα μακροπροθεσμα δανεια\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "caja": {
+  "lineas": [
+   332
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   345,
+   353
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El criterio es la suma de 'Τραπεζικά και άλλα μακροπρόθεσμα δάνεια'. En 2023 esa línea no corriente está en cero ('-'). El préstamo corriente 'Τραπεζικά και άλλα δάνεια' (L345, 2.561.630) se incluye como equivalente. Las cuentas por pagar por traspasos no se cuentan como deuda financiera."
+}

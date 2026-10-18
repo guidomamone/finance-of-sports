@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Portugal/Estoril Praia/relatorio-contas-2021-22.md",
+ "generado": "2026-10-18T05:50:56.428Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"aumento\" + \"financiamentos obtidos de entidades do grupo e outras partes relacionadas\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "(valores expressos em euros)",
+ "caja": {
+  "lineas": [
+   770
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   782,
+   783,
+   791
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Criterio del club: financiamentos obtidos (no corriente 782 y corriente 791, equivalente a 'aumento') + financiamentos obtidos de entidades do grupo (783, solo no corriente). Se usó el balance formal (L755-797), no el resumen del informe de gestión."
+}

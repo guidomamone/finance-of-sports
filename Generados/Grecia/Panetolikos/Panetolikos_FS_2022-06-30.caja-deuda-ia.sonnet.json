@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2022-06-30.md",
+ "generado": "2026-10-18T05:52:33.634Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Ποσά σε ΕΥΡΩ)",
+ "caja": {
+  "lineas": [
+   727
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Los préstamos (L760) y los préstamos bancarios (L764) figuran en 0,00, y el documento indica que la empresa no tiene endeudamiento bancario (L163). La partida de 675.223,80 en L1346 es una deuda con el accionista principal, pendiente de capitalizar, y no se incluyó como deuda financiera. El cuadro de vencimientos (L180) la presenta como 'Δανεισμός', lo que genera cierta duda."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Botafogo/demonstracoes-financeiras-2025.md",
+ "generado": "2026-10-18T05:50:18.783Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de reais)",
+ "caja": {
+  "lineas": [
+   1271
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1304,
+   1313
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usó la columna Consolidado 31/12/2025 (la de cierre más reciente). Empréstimos e financiamentos corriente (L1304) y no corriente (L1313). Se excluyeron los pasivos de arrendamiento y las partes relacionadas."
+}

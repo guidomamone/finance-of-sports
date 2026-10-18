@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2025.md",
+ "generado": "2026-10-18T05:51:20.016Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em Reais - R$)",
+ "caja": {
+  "lineas": [
+   147
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   174,
+   183
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Las Aplicações Financeiras no circulantes (L157) son inversiones, no se incluyeron en caja; la deuda corresponde a Empréstimos e financiamentos corriente y no corriente."
+}

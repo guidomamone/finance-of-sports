@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Alemania/Hamburger SV/fussball-ag-jahresabschluss-2024-25.md",
+ "generado": "2026-10-18T05:51:29.366Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "EUR",
+ "caja": {
+  "lineas": [
+   147
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   216,
+   217
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda: Anleihen (L216) y Verbindlichkeiten gegenüber Kreditinstituten (L217). El Lagebericht indica Finanzverbindlichkeiten de TEUR 22.030, por lo que parte de los préstamos (unos TEUR 15.555) estaría dentro de Sonstige Verbindlichkeiten (L222), que también incluye impuestos; no se incluyó por no poder separarla. Se excluyó la Wandelschuldverschreibung (L212, 30 M EUR, instrumento híbrido de conversión a acciones). El balance no indica la escala; son importes en EUR completos."
+}

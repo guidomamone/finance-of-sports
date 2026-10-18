@@ -1,0 +1,24 @@
+{
+ "md": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2014.md",
+ "generado": "2026-10-18T05:50:35.268Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"debiti finanziari a breve termine\" + \"posizione finanziaria netta a medio lungo termine\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "€ 98.074.812",
+ "caja": {
+  "lineas": [
+   158
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   237,
+   238,
+   241,
+   242,
+   234
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El documento está en euros enteros, sin frase explícita de escala; la evidencia es un importe en € sin redondeo. Las 'posizione finanziaria netta' del documento son netas (L1822-1823), así que se aproximó la deuda con las líneas del balance: bancos corrientes y no corrientes (L237, L238), otros financiadores corrientes y no corrientes (L241, L242) y financiación de socios (L234). La inclusión de L234 y de otros financiadores es dudosa."
+}

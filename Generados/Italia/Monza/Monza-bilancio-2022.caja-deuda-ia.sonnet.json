@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Italia/Monza/Monza-bilancio-2022.md",
+ "generado": "2026-10-18T05:52:11.190Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(valori in unità di euro)",
+ "caja": {
+  "lineas": [
+   488
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Caja: se eligió el total de Disponibilidades liquide (L488), que suma depositi bancari y denaro in cassa. Deuda: 'debiti verso banche' y 'debiti verso soci per finanziamenti' valen 0 en 2022, así que no hay deuda financiera en el balance. Existe un conto corrente finanziario intercompany con Fininvest, pero figura como crédito de 4.001.031 en las partes relacionadas y no como línea de deuda del balance."
+}

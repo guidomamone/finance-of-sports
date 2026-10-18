@@ -1,0 +1,25 @@
+{
+ "md": "Clubes/Alemania/1. FC Köln/jahresabschluss-2023-24.md",
+ "generado": "2026-10-18T05:51:44.685Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "EUR EUR EUR",
+ "caja": {
+  "lineas": [
+   48,
+   109
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   69,
+   73,
+   94,
+   95,
+   98
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance está desordenado: las etiquetas (L48, L69, L73) están separadas de sus importes. Caja: 'Kassenbestand und Guthaben bei Kreditinstituten' (L48) con importe 11.882.740,29 (L109) a 30.06.2024; la columna 2023 es 12.140.786,92. Deuda a 30.06.2024: Anleihen 4.687.800,00 (L97) y Verbindlichkeiten gegenüber Kreditinstituten 12.274.839,58 (L98); el mapeo de líneas es aproximado. L94 y L95 son importes de patrimonio neto (Genussrechtskapital 6.500.000 y Bilanzgewinn 16.689.760,60), por lo que no deberían ser deuda. Se recomienda revisar: la deuda correcta sería L97 (Anleihen) y L98 (Kreditinstitute). La escala está en euros enteros."
+}

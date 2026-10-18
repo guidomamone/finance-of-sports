@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Grecia/AEK Athens/AEK_oikonomikes_katastaseis.md",
+ "generado": "2026-10-18T05:49:29.629Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "caja": {
+  "lineas": [
+   363
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   378
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera: solo la línea de préstamos a largo plazo (L378, 2.775.000; préstamo sin interés de Oil Tank Engineering & Consulting). No hay deuda financiera corriente (préstamos a corto plazo = 0 en la nota de liquidez L1139). L389 'Μακροπρόθεσμες Υποχρεώσεις πληρωτέες στην Επόμενη Χρήση' y L380 son otras obligaciones (probablemente de jugadores), no se incluyen como deuda financiera, aunque es dudoso."
+}

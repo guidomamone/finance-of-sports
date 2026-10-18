@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Alemania/1. FC Köln/jahresabschluss-2024-25.md",
+ "generado": "2026-10-18T05:51:48.547Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "EUR",
+ "caja": {
+  "lineas": [
+   105
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   97,
+   99
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance está desordenado: las etiquetas y los valores aparecen separados. Los valores de 30.06.2025 se asignaron por posición y se verificaron con la suma de Verbindlichkeiten (31.996.690,64). Caja = L105 (Kassenbestand und Guthaben bei Kreditinstituten). Deuda = Anleihen (L97) y Verbindlichkeiten gegenüber Kreditinstituten (L99); el balance no separa corriente y no corriente. Los bonos se incluyeron como deuda financiera, aunque el criterio menciona sobre todo préstamos."
+}

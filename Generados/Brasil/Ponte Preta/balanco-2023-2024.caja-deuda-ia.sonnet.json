@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Brasil/Ponte Preta/balanco-2023-2024.md",
+ "generado": "2026-10-18T05:52:42.343Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Valores Expressos em reais",
+ "caja": {
+  "lineas": [
+   15
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance está muy desordenado por el OCR: los valores no están alineados con sus rótulos. La línea L15 (Caixa e Bancos) no tiene valor propio, pero el valor correspondiente parece ser 17.357.068 / 1.122.641 (L39). En el pasivo no hay préstamos ni financiamientos bancarios; solo aparecen Títulos a Pagar (L41, L52), parcelamientos de impuestos, acuerdos laborales y provisiones, que no se consideran deuda financiera según el criterio indicado."
+}

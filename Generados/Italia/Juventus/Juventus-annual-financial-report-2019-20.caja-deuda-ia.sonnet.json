@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2019-20.md",
+ "generado": "2026-10-18T05:51:39.319Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Amounts in euro",
+ "caja": {
+  "lineas": [
+   1261
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1290,
+   1297
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda = 'Loans and other financial payables' no corriente (L1290) y corriente (L1297) al 30/06/2020. Los pasivos con otros clubes por campañas de transferencias no se incluyeron por no ser préstamos bancarios o financieros."
+}

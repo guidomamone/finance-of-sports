@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Santa Clara/relatorio-contas-sad-2021-22.md",
+ "generado": "2026-10-18T05:52:55.384Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"financiamentos obtidos\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "Euros",
+ "caja": {
+  "lineas": [
+   278
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   293,
+   300
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Columna 30.06.2022. Financiamentos obtidos no corrente es 0 ('-') en 2022 y corriente 1.058.637,33; se incluyen ambas líneas por criterio del club. El balance está en euros sin redondeo (unidades)."
+}

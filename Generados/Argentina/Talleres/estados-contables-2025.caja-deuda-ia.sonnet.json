@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Argentina/Talleres/estados-contables-2025.md",
+ "generado": "2026-10-18T05:53:14.221Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(expresado en moneda de cierre - en pesos sin centavos-)",
+ "caja": {
+  "lineas": [
+   246
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Caja: se tomó 'Caja y bancos' (L246); 'Inversiones financieras' (L247) no se incluyó. El balance no muestra préstamos ni obligaciones financieras separados; 'Otras deudas' (L268, L272) es genérico y no se puede confirmar que incluya deuda financiera."
+}

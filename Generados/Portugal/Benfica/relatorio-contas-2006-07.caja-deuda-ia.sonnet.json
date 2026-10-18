@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2006-07.md",
+ "generado": "2026-10-18T05:50:11.486Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valores em euros",
+ "caja": {
+  "lineas": [
+   833
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   863,
+   864,
+   870,
+   871
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caja: se eligió el subtotal 'Depósitos bancários e caixa' (L833), que ya suma depósitos (L831) y caixa (L832). Deuda: incluye empréstimos por obrigações (L863 no corriente; L870 corriente, con saldo cero en 2007) y dívidas a instituições de crédito (L864 no corriente, L871 corriente). Se excluyen proveedores de inmovilizado y otros acreedores."
+}

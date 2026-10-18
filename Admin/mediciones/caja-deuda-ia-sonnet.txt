@@ -1,0 +1,963 @@
+  IA: 10/606
+  IA: 20/606
+  IA: 30/606
+  IA: 40/606
+  IA: 50/606
+  IA: 60/606
+  IA: 70/606
+  IA: 80/606
+  IA: 90/606
+  IA: 100/606
+  IA: 110/606
+  IA: 120/606
+  IA: 130/606
+  IA: 140/606
+  IA: 150/606
+  IA: 160/606
+  IA: 170/606
+  IA: 180/606
+  IA: 190/606
+  IA: 200/606
+  IA: 210/606
+  IA: 220/606
+  IA: 230/606
+  IA: 240/606
+  IA: 250/606
+  IA: 260/606
+  IA: 270/606
+  IA: 280/606
+  IA: 290/606
+  IA: 300/606
+  IA: 310/606
+  IA: 320/606
+  IA: 330/606
+  IA: 340/606
+  IA: 350/606
+  IA: 360/606
+  IA: 370/606
+  IA: 380/606
+  IA: 390/606
+  IA: 400/606
+  IA: 410/606
+  IA: 420/606
+  IA: 430/606
+  IA: 440/606
+  IA: 450/606
+  IA: 460/606
+  IA: 470/606
+  IA: 480/606
+  IA: 490/606
+  IA: 500/606
+  IA: 510/606
+  IA: 520/606
+  IA: 530/606
+  IA: 540/606
+  IA: 550/606
+  IA: 560/606
+  IA: 570/606
+  IA: 580/606
+  IA: 590/606
+  IA: 600/606
+
+IA: US$ 12.37 (las respuestas guardadas no se vuelven a pagar)
+
+## DEUDA: {"total":752,"iguales":210,"distintos":14,"sinDato":528}
+   escalón 0: {"total":89,"iguales":81,"distintos":8,"sinDato":0}
+   escalón 1: {"total":89,"iguales":87,"distintos":2,"sinDato":0}
+   escalón 1b: {"total":0,"iguales":0,"distintos":0,"sinDato":0}
+   escalón 2: {"total":46,"iguales":42,"distintos":4,"sinDato":0}
+   pasó la compuerta por año anterior: {"total":181,"iguales":173,"distintos":8,"sinDato":0}
+   pasó la compuerta por documento siguiente: {"total":43,"iguales":37,"distintos":6,"sinDato":0}
+   pasó la compuerta por documento anterior: {"total":0,"iguales":0,"distintos":0,"sinDato":0}
+   DISTINTOS de lo cargado (14):
+     acmilan-it 2018: script 1.21 (escalón 1, documento siguiente, vocabulario) · sitio 164.271 · filas: "4 debiti verso banche" 1210 (pág. 42, L901)
+     asroma-it 2012: script 26.438 (escalón 0, año anterior, precedente del club (2011: finanziamenti a breve termine)) · sitio 77.264 · filas: "Finanziamenti a breve termine" 26438 (pág. 87, L2619)
+     athleticoparanaense-br 2024: script 0.356 (escalón 0, documento siguiente, precedente del club (2025: emprestimos e financiamentos)) · sitio 0.518 · filas: "Empréstimos e financiamentos" 356 (pág. 15, L479)
+     atromitos-gr 2021: script 1.230736 (escalón 0, año anterior, precedente del club (2020: δανεια)) · sitio 1.780686 · filas: "Δάνεια" 1230736.34 (pág. 8, L210)
+     atromitos-gr 2022: script 5.023377 (escalón 0, año anterior, precedente del club (2021: δανεια + τραπεζικα δανεια)) · sitio 5.435877 · filas: "Δάνεια" 4008147.21 (pág. 8, L218) + "Τραπεζικά δάνεια" 1015230.03 (pág. 8, L224)
+     az-nl 2024: script 7.333 (escalón 2, documento siguiente, IA) · sitio 39.275 · filas: "Schulden aan kredietinstellingen" 7333 (pág. 18, L747)
+     bahia-br 2025: script 790.726 (escalón 0, año anterior, precedente del club (2024: despesas tributarias + intangivel + outros ativos e despesas antecipadas)) · sitio 36.841 · filas: "Despesas tributárias" 1576 (pág. 7, L224) + "Intangível" 777895 (pág. 6, L181) + "Outros ativos e despesas antecipadas" 11255 (pág. 6, L173)
+     fortalezaceif-co 2021: script 102.513 (escalón 2, año anterior, IA) · sitio 295.846 · filas: "Total Prestamos y Sobregiros Bancarios" 102513 (pág. 20, L859)
+     levadiakos-gr 2022: script 0.0564 (escalón 0, año anterior, precedente del club (2021: αξιογραφα εμπορικων απαιτησεων)) · sitio 0.127179 · filas: "Αξιόγραφα εμπορικών απαιτήσεων" 56400 (pág. 25, L849)
+     parma-it 2017: script 0.031888 (escalón 2, año anterior, IA) · sitio 0.781888 · filas: "Totale debiti verso banche" 31888 (pág. 9, L284)
+     psv-nl 2024: script 45.706 (escalón 2, documento siguiente, IA) · sitio 163.391 · filas: "Achtergestelde leningen" 45100 (pág. 37, L1645) + "Overige schulden" 404 (pág. 37, L1647) + "Aflossingsverplichting langlopende schul" 202 (pág. 37, L1653)
+     tottenham-gb 2024: script 855.254 (escalón 0, documento siguiente, precedente del club (2025: in more than one year but not more than two years + interest bearing loans and borrowings)) · sitio 851.448 · filas: "In more than one year but not more than " 3806 (pág. 40, L2373) + "Interest-bearing loans and borrowings" 851448 (pág. 21, L1296)
+     tottenham-gb 2025: script 847.666 (escalón 0, año anterior, precedente del club (2024: interest bearing loans and borrowings)) · sitio 851.652 · filas: "Interest-bearing loans and borrowings" 847666 (pág. 24, L1506)
+     udechile-cl 2022: script 14798.291 (escalón 1, documento siguiente, vocabulario) · sitio 14307.914 · filas: "Otros pasivos financieros, corrientes" 490377 (pág. 6, L188) + "Otros pasivos financieros, no corrientes" 13817537 (pág. 6, L200) + "Otros pasivos financieros" 490377 (pág. 82, L3942)
+     sin dato: academicoviseu-pt 2023 (sitio 16.291914): escalón 0: sin propuesta; escalón 1 (16.291914): no coincide con documento siguiente (29.449073 en el siguiente); escalón 2 (16.291914): no coincide con documento siguiente (18.214318 en el siguiente)
+     sin dato: academicoviseu-pt 2024 (sitio 25.141914): escalón 0: sin propuesta; escalón 1 (4.800614): no coincide con año anterior (29.449073 contra 16.291914 cargado); escalón 2 (4.800614): no coincide con año anterior (29.449073 contra 16.291914 cargado) ni documento siguiente (40.683828 en el siguiente)
+     sin dato: academicoviseu-pt 2025 (sitio 28.741914): escalón 0 (62.283828): ningún año vecino para comparar; escalón 1 (33.541914): ningún año vecino para comparar; escalón 2 (33.541914): ningún año vecino para comparar
+     sin dato: acmilan-it 2008 (sitio 261.927): escalón 0: sin propuesta; escalón 1 (59.258): no coincide con documento siguiente (0.059 en el siguiente); escalón 2: sin propuesta
+     sin dato: acmilan-it 2010 (sitio 298.48): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (298.48): no coincide con año anterior (288.47 contra 303.294 cargado) ni documento siguiente (31.406 en el siguiente)
+     sin dato: acmilan-it 2011 (sitio 291.948): escalón 0: sin propuesta; escalón 1 (152330.001): no coincide con año anterior (142701.216 contra 298.48 cargado); escalón 2 (291.948): no coincide con documento siguiente (38.16 en el siguiente)
+     sin dato: acmilan-it 2012 (sitio 251.084): escalón 0: sin propuesta; escalón 1 (113752.742): ningún año vecino para comparar; escalón 2 (251.084): no coincide con documento siguiente (52.093 en el siguiente)
+     sin dato: acmilan-it 2013 (sitio 259.579): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (260.805): ningún año vecino para comparar
+     sin dato: acmilan-it 2019 (sitio 95.543): escalón 0: sin propuesta; escalón 1 (1.259): no coincide con año anterior (1.21 contra 164.271 cargado) ni documento siguiente (1.253 en el siguiente); escalón 2 (95.543): no coincide con año anterior (23.751 contra 164.271 cargado) ni documento siguiente (1.48 en el siguiente)
+     sin dato: acmilan-it 2020 (sitio 115.176): escalón 0: sin propuesta; escalón 1 (1.259): no coincide con año anterior (1.253 contra 95.543 cargado); escalón 2 (116.429): no coincide con año anterior (114.196 contra 95.543 cargado)
+     sin dato: acmilan-it 2021 (sitio 125.218): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (125.218): no coincide con año anterior (155.317 contra 115.176 cargado) ni documento siguiente (1.818 en el siguiente)
+     sin dato: acmilan-it 2022 (sitio 71.114): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (71.114): no coincide con documento siguiente (1.674 en el siguiente)
+     sin dato: acmilan-it 2023 (sitio 70.962): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: acmilan-it 2024 (sitio 98.768): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (98.768): no coincide con documento siguiente (48.277 en el siguiente)
+     sin dato: aekathens-gr 2016 (sitio 2.775): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (2.775): no coincide con documento siguiente (2.368222 en el siguiente)
+     sin dato: aekathens-gr 2017 (sitio 3.213188): escalón 0 (0): las filas propuestas suman 0 (un cero sale solo por "ninguna fila"); escalón 1: sin propuesta; escalón 2 (0): las filas propuestas suman 0 (un cero sale solo por "ninguna fila")
+     sin dato: aekathens-gr 2019 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: aekathens-gr 2020 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: aekathens-gr 2021 (sitio 6.038235): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: la fila "Μακροπρόθεσμες Δανειακές Υποχρεώσεις" (5.029327) y su nota (6.038235) pasan las dos: la nota dice que la fila es solo una parte; no decide
+     sin dato: aekathens-gr 2023 (sitio 1.084606): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.000006): no coincide con año anterior (1.084606 contra 5.190328 cargado)
+     sin dato: aekathens-gr 2024 (sitio 10.980917): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: aekathens-gr 2025 (sitio 20.208174): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: aellarissa-gr 2016 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: aellarissa-gr 2017 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: aellarissa-gr 2018 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: aellarissa-gr 2019 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: agf-dk 2021 (sitio 4.627): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: ajax-nl 2024 (sitio 296.182): escalón 0 (359.819): no coincide con documento siguiente (76.582 en el siguiente); escalón 1: sin propuesta; escalón 2 (197.748): ningún año vecino para comparar
+     sin dato: ajax-nl 2025 (sitio 219.259): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (103.694): no coincide con año anterior (109.166 contra 296.182 cargado)
+     sin dato: alianzalima-pe 2023 (sitio 47.027776): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (65.761361): no coincide con año anterior (66.813747 contra 50.038719 cargado)
+     sin dato: amazonas-br 2024 (sitio 0.9230075): escalón 0: sin propuesta; escalón 1 (0.923008): ningún año vecino para comparar; escalón 2: sin propuesta
+     sin dato: americadecali-co 2025 (sitio 11835.971): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (11835.971): ningún año vecino para comparar
+     sin dato: americamineiro-br 2023 (sitio 22.705352): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (22.705352): ningún año vecino para comparar
+     sin dato: americamineiro-br 2024 (sitio 29.444135): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (29.444135): no coincide con documento siguiente (30.505732 en el siguiente)
+     sin dato: americamineiro-br 2025 (sitio 36.494416): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (36.494416): no coincide con año anterior (28.539668 contra 29.444135 cargado)
+     sin dato: anderlecht-be 2025 (sitio 57.066235): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: antwerp-be 2025 (sitio 50.748888): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: aris-gr 2019 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0): las filas propuestas suman 0 (un cero sale solo por "ninguna fila")
+     sin dato: aris-gr 2021 (sitio 1.550983): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.109349): ningún año vecino para comparar
+     sin dato: aris-gr 2022 (sitio 0.05467): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.05467): no coincide con año anterior (0.10934 contra 1.550983 cargado)
+     sin dato: aris-gr 2023 (sitio 2.56163): escalón 0 (0.05467): ningún año vecino para comparar; escalón 1: sin propuesta; escalón 2 (2.6163): ningún año vecino para comparar
+     sin dato: arouca-pt 2024 (sitio 0): escalón 0: sin propuesta; escalón 1 (0.026438): ningún año vecino para comparar; escalón 2 (0.026438): ningún año vecino para comparar
+     sin dato: arouca-pt 2025 (sitio 0.836991): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.838991): ningún año vecino para comparar
+     sin dato: arsenal-gb 2024 (sitio 341.784): escalón 0: sin propuesta; escalón 1 (3.16): ningún año vecino para comparar; escalón 2: sin propuesta
+     sin dato: arsenal-gb 2025 (sitio 358.294): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: asroma-it 2005 (sitio 7.745): escalón 0: sin propuesta; escalón 1 (2.206): ningún año vecino para comparar; escalón 2 (7.85): ningún año vecino para comparar
+     sin dato: asroma-it 2006 (sitio 2.184589): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (2.184589): no coincide con año anterior (7.320901 contra 7.745 cargado)
+     sin dato: asroma-it 2014 (sitio 136.934): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (136.934): no coincide con documento siguiente (123.04 en el siguiente)
+     sin dato: asroma-it 2015 (sitio 176.65): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (176.65): no coincide con documento siguiente (316.796 en el siguiente)
+     sin dato: asroma-it 2016 (sitio 190.713): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (190.713): no coincide con documento siguiente (313.384 en el siguiente)
+     sin dato: asroma-it 2017 (sitio 261.084): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (261.084): no coincide con documento siguiente (463.476 en el siguiente)
+     sin dato: asroma-it 2019 (sitio 255.451): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: asroma-it 2020 (sitio 289.87): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: asroma-it 2021 (sitio 308.42): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: asroma-it 2022 (sitio 355.912): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: asroma-it 2023 (sitio 497.408828): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (497.408828): no coincide con documento siguiente (54.399597 en el siguiente)
+     sin dato: asroma-it 2024 (sitio 476.262404): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (476.262404): no coincide con documento siguiente (99.659142 en el siguiente)
+     sin dato: asterastripolis-gr 2019 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0): las filas propuestas suman 0 (un cero sale solo por "ninguna fila")
+     sin dato: asterastripolis-gr 2020 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: asterastripolis-gr 2021 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0): las filas propuestas suman 0 (un cero sale solo por "ninguna fila")
+     sin dato: astonvilla-gb 2025 (sitio 110.571): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: atalanta-it 2018 (sitio 16.36048): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (16.36048): no coincide con documento siguiente (35.492958 en el siguiente)
+     sin dato: atalanta-it 2019 (sitio 20.314364): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (20.314364): no coincide con año anterior (15.804689 contra 16.36048 cargado) ni documento siguiente (19.42987 en el siguiente)
+     sin dato: atalanta-it 2020 (sitio 22.909495): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (22.909495): no coincide con documento siguiente (21.42584 en el siguiente)
+     sin dato: atalanta-it 2021 (sitio 21.77355): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (21.77355): no coincide con documento siguiente (15.963374 en el siguiente)
+     sin dato: atalanta-it 2023 (sitio 25.505291): escalón 0 (6.625936): no coincide con año anterior (6.981691 contra 21.404467 cargado); escalón 1: sin propuesta; escalón 2 (25.505291): no coincide con documento siguiente (6.625936 en el siguiente)
+     sin dato: atalanta-it 2024 (sitio 41.771339): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (41.771339): no coincide con documento siguiente (17.585315 en el siguiente)
+     sin dato: athleticclub 2025 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: athleticoparanaense-br 2025 (sitio 0.13): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.292): no coincide con año anterior (106.249 contra 0.518 cargado)
+     sin dato: atleticogoianiense 2025 (sitio 9.666): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (4.288): ningún año vecino para comparar
+     sin dato: atleticomadrid 2025 (sitio 61.04928): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: atleticomineiro-br 2023 (sitio 465.387): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (34465387992.753): ningún año vecino para comparar
+     sin dato: atleticomineiro-br 2024 (sitio 554.702): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (3.649573146538795e+22): ningún año vecino para comparar
+     sin dato: atleticomineiro-br 2025 (sitio 721.757): escalón 0: sin propuesta; escalón 1 (674177495.731): no coincide con año anterior (1057297941.834 contra 554.702 cargado); escalón 2 (3.867417749573206e+22): ningún año vecino para comparar
+     sin dato: atlnacional-co 2025 (sitio 15948.285): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: atromitos-gr 2016 (sitio 0.50325): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.50325): ningún año vecino para comparar
+     sin dato: augsburg-de 2024 (sitio 35.487566): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: augsburg-de 2025 (sitio 27.810112): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: avai-br 2021 (sitio 24.775698): escalón 0: sin propuesta; escalón 1 (0): no coincide con documento siguiente (9613 en el siguiente); escalón 2 (13.392535): ningún año vecino para comparar
+     sin dato: avai-br 2022 (sitio 0.479): escalón 0 (0.479): no coincide con año anterior (9.613 contra 24.775698 cargado); escalón 1 (0.479): no coincide con año anterior (9.613 contra 24.775698 cargado); escalón 2 (1.973): no coincide con año anterior (1.337 contra 24.775698 cargado)
+     sin dato: avai-br 2025 (sitio 11.948): escalón 0: sin propuesta; escalón 1 (11.948): ningún año vecino para comparar; escalón 2 (11.948): ningún año vecino para comparar
+     sin dato: avs-pt 2021 (sitio 0): escalón 0 (2.150787): ningún año vecino para comparar; escalón 1 (2.150787): ningún año vecino para comparar; escalón 2: sin propuesta
+     sin dato: avs-pt 2023 (sitio 4.495141): escalón 0: sin propuesta; escalón 1 (4.495141): ningún año vecino para comparar; escalón 2 (4.495141): ningún año vecino para comparar
+     sin dato: az-nl 2025 (sitio 37.578): escalón 0: sin propuesta; escalón 1 (12.667): ningún año vecino para comparar; escalón 2 (6.667): no coincide con año anterior (7.333 contra 39.275 cargado)
+     sin dato: bahia-br 2024 (sitio 679.901): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: belenenses-pt 2024 (sitio 0): escalón 0 (0.01): ningún año vecino para comparar; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: belenenses-pt 2025 (sitio 0.00631): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: benfica-pt 2006 (sitio 82.968529): escalón 0: sin propuesta; escalón 1 (82.968529): ningún año vecino para comparar; escalón 2 (97.968529): ningún año vecino para comparar
+     sin dato: benfica-pt 2007 (sitio 94.7): escalón 0: sin propuesta; escalón 1 (109.7): ningún año vecino para comparar; escalón 2 (109.7): ningún año vecino para comparar
+     sin dato: benfica-pt 2008 (sitio 51.31749): escalón 0: sin propuesta; escalón 1 (51.31749): no coincide con año anterior (95.491642 contra 94.7 cargado); escalón 2 (51.31749): no coincide con año anterior (95.491642 contra 94.7 cargado) ni documento siguiente (80.199804 en el siguiente)
+     sin dato: benfica-pt 2013 (sitio 278.424678): escalón 0: sin propuesta; escalón 1 (278.424678): no coincide con documento siguiente (281.79 en el siguiente); escalón 2 (278.424678): no coincide con documento siguiente (231.6 en el siguiente)
+     sin dato: benfica-pt 2014 (sitio 317.54): escalón 0: sin propuesta; escalón 1 (317.54): no coincide con año anterior (281.79 contra 278.424678 cargado); escalón 2 (317.54): no coincide con año anterior (281.79 contra 278.424678 cargado)
+     sin dato: benfica-pt 2019 (sitio 145.341): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (145.341): no coincide con documento siguiente (185.88 en el siguiente)
+     sin dato: boavista-pt 2024 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: boca 2022 (sitio 2863.64336): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: boca 2023 (sitio 3348.078759): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: bologna-it 2020 (sitio 17.648509): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: bologna-it 2021 (sitio 27.840347): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: bologna-it 2022 (sitio 33.777668): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (26.642668): no coincide con año anterior (20.705347 contra 27.840347 cargado) ni documento siguiente (0.449111 en el siguiente)
+     sin dato: bologna-it 2023 (sitio 39.826029): escalón 0: sin propuesta; escalón 1 (39.826029): no coincide con documento siguiente (34.612066 en el siguiente); escalón 2 (39.826029): no coincide con documento siguiente (34.612066 en el siguiente)
+     sin dato: bologna-it 2024 (sitio 38.074624): escalón 0: sin propuesta; escalón 1 (38.074624): no coincide con año anterior (34.612066 contra 39.826029 cargado); escalón 2 (38.074624): no coincide con año anterior (34.612066 contra 39.826029 cargado)
+     sin dato: botafogo 2023 (sitio 358.871): escalón 0: sin propuesta; escalón 1 (10563.441): ningún año vecino para comparar; escalón 2 (10563.441): ningún año vecino para comparar
+     sin dato: botafogo 2024 (sitio 48.112): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (48.112): no coincide con año anterior (377.592 contra 358.871 cargado)
+     sin dato: botafogo 2025 (sitio 138.972): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: botafogosp-br 2024 (sitio 53.593257): escalón 0: sin propuesta; escalón 1 (0.12335): ningún año vecino para comparar; escalón 2: sin propuesta
+     sin dato: bournemouth-gb 2024 (sitio 122.779): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: bournemouth-gb 2025 (sitio 48.905): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: boyacachico-co 2024 (sitio 666.527066): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (441.174314): ningún año vecino para comparar
+     sin dato: braga-pt 2020 (sitio 15.147675): escalón 0: sin propuesta; escalón 1 (0.000011): ningún año vecino para comparar; escalón 2 (0.000023): ningún año vecino para comparar
+     sin dato: braga-pt 2022 (sitio 10.900224): escalón 0: sin propuesta; escalón 1 (0.000011): no coincide con documento siguiente (2.974718 en el siguiente); escalón 2 (0.000023): no coincide con documento siguiente (5.949436 en el siguiente)
+     sin dato: braga-pt 2023 (sitio 7.109167): escalón 0: sin propuesta; escalón 1 (0.000011): no coincide con año anterior (2.974718 contra 10.900224 cargado) ni documento siguiente (2.3305 en el siguiente); escalón 2 (0.000023): no coincide con año anterior (7.109167 contra 10.900224 cargado) ni documento siguiente (4.661 en el siguiente)
+     sin dato: braga-pt 2024 (sitio 14.12263): escalón 0: sin propuesta; escalón 1 (0.000011): no coincide con año anterior (2.3305 contra 7.109167 cargado) ni documento siguiente (15.556786 en el siguiente); escalón 2 (0.000023): no coincide con año anterior (14.12263 contra 7.109167 cargado) ni documento siguiente (31.113572 en el siguiente)
+     sin dato: braga-pt 2025 (sitio 21.6437): escalón 0: sin propuesta; escalón 1 (0.000011): no coincide con año anterior (15.556786 contra 14.12263 cargado); escalón 2 (0.000023): no coincide con año anterior (21.6437 contra 14.12263 cargado)
+     sin dato: brentford-gb 2024 (sitio 98.347): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: brentford-gb 2025 (sitio 132.072): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: brighton-gb 2024 (sitio 229.2): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: brighton-gb 2025 (sitio 336.069): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: brondby-dk 2020 (sitio 0): escalón 0: sin propuesta; escalón 1 (0): las filas propuestas suman 0 (un cero sale solo por "ninguna fila"); escalón 2 (0.02428): ningún año vecino para comparar
+     sin dato: burnley-gb 2024 (sitio 112.393): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: burnley-gb 2025 (sitio 142.372): escalón 0: sin propuesta; escalón 1 (112.393): no coincide con año anterior (29.979 contra 112.393 cargado); escalón 2: sin propuesta
+     sin dato: casapia-pt 2022 (sitio 0.817335): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: casapia-pt 2024 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (2.263479): no coincide con año anterior (1.614154 contra 0.851121 cargado)
+     sin dato: casapia-pt 2025 (sitio 0): escalón 0 (0.024323): no coincide con año anterior (0.098356 contra 0 cargado); escalón 1: sin propuesta; escalón 2 (0.024323): no coincide con año anterior (0.098356 contra 0 cargado)
+     sin dato: catolica-cl 2010 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: catolica-cl 2011 (sitio 0): escalón 0: sin propuesta; escalón 1 (34.267): no coincide con año anterior (2.961 contra 0 cargado); escalón 2 (34.267): no coincide con año anterior (2.961 contra 0 cargado)
+     sin dato: catolica-cl 2012 (sitio 0): escalón 0: sin propuesta; escalón 1 (34.267): ningún año vecino para comparar; escalón 2: sin propuesta
+     sin dato: catolica-cl 2013 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: catolica-cl 2014 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: catolica-cl 2015 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: catolica-cl 2016 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: catolica-cl 2017 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: catolica-cl 2018 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: ceara-br 2024 (sitio 47.159): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: ceara-br 2025 (sitio 84.732): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: celtavigo 2025 (sitio 60.315351): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: cerclebrugge-be 2025 (sitio 19.177608): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: chapecoense-br 2017 (sitio 0): escalón 0: sin propuesta; escalón 1 (0.000034): ningún año vecino para comparar; escalón 2: sin propuesta
+     sin dato: chapecoense-br 2021 (sitio 14.025): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (16.553): ningún año vecino para comparar
+     sin dato: charleroi-be 2025 (sitio 10.64103): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: chaves-pt 2022 (sitio 4.014513): escalón 0: sin propuesta; escalón 1 (0.000014): no coincide con documento siguiente (0.957302 en el siguiente); escalón 2 (0.000014): no coincide con documento siguiente (0.957302 en el siguiente)
+     sin dato: chelsea-gb 2025 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: chievoverona-it 2014 (sitio 23.264651): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (23.264651): no coincide con documento siguiente (14.171942 en el siguiente)
+     sin dato: chievoverona-it 2015 (sitio 24.381547): escalón 0 (24.381547): no coincide con año anterior (21.688651 contra 23.264651 cargado); escalón 1 (17.705538): no coincide con año anterior (18.246892 contra 23.264651 cargado); escalón 2 (24.381547): no coincide con año anterior (22.47834 contra 23.264651 cargado) ni documento siguiente (16.621658 en el siguiente)
+     sin dato: clubbrugge-be 2025 (sitio 98.745): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: colocolo-cl 2023 (sitio 2804.415): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (2811.656): ningún año vecino para comparar
+     sin dato: colocolo-cl 2024 (sitio 1872.558): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: como-it 2024 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: como-it 2025 (sitio 0): escalón 0: sin propuesta; escalón 1 (0.0005): ningún año vecino para comparar; escalón 2: sin propuesta
+     sin dato: corinthians-br 2024 (sitio 244.672): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: corinthians-br 2025 (sitio 250.032): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (11146793330.372): ningún año vecino para comparar
+     sin dato: coritiba 2023 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: coritiba 2024 (sitio 49.4): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (55.884752): no coincide con año anterior (31.38477 contra 0 cargado)
+     sin dato: crb-br 2020 (sitio 0): escalón 0 (0.080674): ningún año vecino para comparar; escalón 1 (0.080674): ningún año vecino para comparar; escalón 2 (0.080674): ningún año vecino para comparar
+     sin dato: crb-br 2022 (sitio 1): escalón 0: sin propuesta; escalón 1 (1): ningún año vecino para comparar; escalón 2 (1): ningún año vecino para comparar
+     sin dato: crb-br 2023 (sitio 0): escalón 0 (1): ningún año vecino para comparar; escalón 1 (1): ningún año vecino para comparar; escalón 2 (1): ningún año vecino para comparar
+     sin dato: cremonese-it 2022 (sitio 3.586714): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (3.586714): no coincide con documento siguiente (3.081666 en el siguiente)
+     sin dato: cremonese-it 2023 (sitio 2.123081): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (2.123081): no coincide con documento siguiente (5.277076 en el siguiente)
+     sin dato: cremonese-it 2024 (sitio 1.06442): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (1.558065): no coincide con documento siguiente (0.937154 en el siguiente)
+     sin dato: cremonese-it 2025 (sitio 0.180527): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.29277): ningún año vecino para comparar
+     sin dato: criciuma-br 2016 (sitio 9.241157): escalón 0 (9.225135): no coincide con documento siguiente (9.241157 en el siguiente); escalón 1 (9.225135): no coincide con documento siguiente (9.241157 en el siguiente); escalón 2 (9.225135): no coincide con documento siguiente (9.241157 en el siguiente)
+     sin dato: criciuma-br 2018 (sitio 7.808872): escalón 0 (0.143196): no coincide con documento siguiente (7.665676 en el siguiente); escalón 1: sin propuesta; escalón 2 (7.808872): no coincide con documento siguiente (15.331352 en el siguiente)
+     sin dato: criciuma-br 2019 (sitio 9.208141): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (9.351337): no coincide con documento siguiente (18.416282 en el siguiente)
+     sin dato: criciuma-br 2020 (sitio 8.178546): escalón 0: sin propuesta; escalón 1 (108.178546): no coincide con documento siguiente (8.178546 en el siguiente); escalón 2 (108.178546): no coincide con documento siguiente (8.178546 en el siguiente)
+     sin dato: criciuma-br 2021 (sitio 11.552238): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (11.552238): no coincide con documento siguiente (2.863958 en el siguiente)
+     sin dato: criciuma-br 2023 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: criciuma-br 2024 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: criciuma-br 2025 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: cruzeiro 2022 (sitio 19.719): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (19.719): no coincide con documento siguiente (10 en el siguiente)
+     sin dato: cruzeiro 2023 (sitio 16.514): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (29.728): ningún año vecino para comparar
+     sin dato: cruzeiro 2024 (sitio 37.329): escalón 0: sin propuesta; escalón 1 (15.009): ningún año vecino para comparar; escalón 2 (15.009): ningún año vecino para comparar
+     sin dato: crystalpalace-gb 2024 (sitio 157.905): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: crystalpalace-gb 2025 (sitio 121.918): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: cuiaba-br 2022 (sitio 0.876854): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.876854): no coincide con documento siguiente (0.679986 en el siguiente)
+     sin dato: cuiaba-br 2023 (sitio 0.841269): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.841269): no coincide con documento siguiente (0.380414 en el siguiente)
+     sin dato: cuiaba-br 2024 (sitio 15.82396): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (15.82396): no coincide con documento siguiente (31.3471 en el siguiente)
+     sin dato: cuiaba-br 2025 (sitio 20.72526): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (50.824402): no coincide con año anterior (86.334855 contra 15.82396 cargado)
+     sin dato: dender-be 2025 (sitio 21.68247): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: depcali-co 2025 (sitio 40639.552): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: deportivoalaves 2025 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: deportivopereira-co 2025 (sitio 11271.366835): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: dinamozagreb-hr 2024 (sitio 3.7): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (3.7): ningún año vecino para comparar
+     sin dato: dortmund-de 2024 (sitio 28.701): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.0084): ningún año vecino para comparar
+     sin dato: dortmund-de 2025 (sitio 34.173): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.0084): ningún año vecino para comparar
+     sin dato: eintrachtfrankfurt-de 2024 (sitio 57.069177): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: eintrachtfrankfurt-de 2025 (sitio 60.715487): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: elche-es 2024 (sitio 13.134695): escalón 0: sin propuesta; escalón 1 (10.402222): ningún año vecino para comparar; escalón 2 (804554.180102): ningún año vecino para comparar
+     sin dato: elche-es 2025 (sitio 13.047943): escalón 0: sin propuesta; escalón 1 (0.000007): ningún año vecino para comparar; escalón 2: sin propuesta
+     sin dato: envigado 2025 (sitio 3236.656641): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: espanyol-es 2024 (sitio 0.425716): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (9.364016): ningún año vecino para comparar
+     sin dato: espanyol-es 2025 (sitio 0.0417): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0): las filas propuestas suman 0 (un cero sale solo por "ninguna fila")
+     sin dato: estorilpraia-pt 2022 (sitio 4.186669): escalón 0 (4.188124): ningún año vecino para comparar; escalón 1: sin propuesta; escalón 2 (4.186669): no coincide con documento siguiente (4.188909 en el siguiente)
+     sin dato: estorilpraia-pt 2024 (sitio 3.2): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (3.2): no coincide con año anterior (3.171979 contra 3.176534 cargado) ni documento siguiente (3.21911 en el siguiente)
+     sin dato: estorilpraia-pt 2025 (sitio 2.82343): escalón 0: sin propuesta; escalón 1 (2.82343): no coincide con año anterior (3.2234 contra 3.2 cargado); escalón 2 (2.82343): ningún año vecino para comparar
+     sin dato: estreladaamadora-pt 2022 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: everton-gb 2024 (sitio 593.772): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (593772341385393700000): ningún año vecino para comparar
+     sin dato: everton-gb 2025 (sitio 468.542): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: fcbarcelona 2025 (sitio 305.155): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: fckobenhavn-dk 2024 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: felgueiras-pt 2022 (sitio 1.054922): escalón 0: sin propuesta; escalón 1 (1.054922): ningún año vecino para comparar; escalón 2 (1.054922): ningún año vecino para comparar
+     sin dato: felgueiras-pt 2024 (sitio 2.431543): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (2.431573): ningún año vecino para comparar
+     sin dato: ferroviaria-br 2010 (sitio 0.308824): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.308824): ningún año vecino para comparar
+     sin dato: ferroviaria-br 2012 (sitio 0.374357): escalón 0: sin propuesta; escalón 1 (0.374357): ningún año vecino para comparar; escalón 2 (null): la fila "Caixa e equivalentes de caixa" es de caja, no de deuda
+     sin dato: ferroviaria-br 2013 (sitio 0.551307): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: ferroviaria-br 2015 (sitio 0.328437): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: ferroviaria-br 2017 (sitio 0.313741): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: ferroviaria-br 2018 (sitio 0.15109): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: ferroviaria-br 2021 (sitio 1.018695): escalón 0 (1.018695): ningún año vecino para comparar; escalón 1 (1.018695): ningún año vecino para comparar; escalón 2 (null): la fila "Caixa e equivalentes de caixa" es de caja, no de deuda
+     sin dato: ferroviaria-br 2022 (sitio 1.286961): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: feyenoord-nl 2024 (sitio 97.781): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.0045): ningún año vecino para comparar
+     sin dato: feyenoord-nl 2025 (sitio 113.356): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.0027): no coincide con año anterior (0.0045 contra 97.781 cargado)
+     sin dato: fiorentina-it 2019 (sitio 37.5): escalón 0: sin propuesta; escalón 1 (37.5): ningún año vecino para comparar; escalón 2 (37.5): ningún año vecino para comparar
+     sin dato: fiorentina-it 2021 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: fiorentina-it 2022 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: fiorentina-it 2024 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: fiorentina-it 2025 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: flamengo-br 2024 (sitio 912.581): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: flamengo-br 2025 (sitio 1038.223): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: fluminense-br 2024 (sitio 31.479): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (31.479): no coincide con documento siguiente (0.062958 en el siguiente)
+     sin dato: fortaleza-br 2025 (sitio 60.166): escalón 0: sin propuesta; escalón 1 (60.166): ningún año vecino para comparar; escalón 2 (60.166): ningún año vecino para comparar
+     sin dato: fortalezaceif-co 2017 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: fortalezaceif-co 2022 (sitio 238.144): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: fredericia-dk 2019 (sitio 4.905334): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: fulham-gb 2024 (sitio 44.398): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: fulham-gb 2025 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: genk-be 2025 (sitio 34.505065): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: genoa-it 2022 (sitio 95.695407): escalón 0: sin propuesta; escalón 1 (65.244155): ningún año vecino para comparar; escalón 2 (95.695407): ningún año vecino para comparar
+     sin dato: genoa-it 2023 (sitio 117.945105): escalón 0: sin propuesta; escalón 1 (59.260952): ningún año vecino para comparar; escalón 2 (104.015778): no coincide con año anterior (96.169533 contra 95.695407 cargado)
+     sin dato: genoa-it 2025 (sitio 142.883095): escalón 0: sin propuesta; escalón 1 (40.139196): ningún año vecino para comparar; escalón 2 (7.599294): ningún año vecino para comparar
+     sin dato: gent-be 2025 (sitio 70.411806): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: getafe-es 2024 (sitio 77.934725): escalón 0: sin propuesta; escalón 1 (13.889684): ningún año vecino para comparar; escalón 2: sin propuesta
+     sin dato: getafe-es 2025 (sitio 85.300451): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: girona-es 2020 (sitio 3.167): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.06354): ningún año vecino para comparar
+     sin dato: girona-es 2025 (sitio 47.221): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.12714): ningún año vecino para comparar
+     sin dato: godoycruz-ar 2020 (sitio 80.537132): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: goias-br 2009 (sitio 11.62032): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (8.475011): no coincide con año anterior (2.698513 contra 2.740459 cargado)
+     sin dato: goias-br 2010 (sitio 17.105828): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: goias-br 2011 (sitio 12.908137): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: goias-br 2012 (sitio 6.595948): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: goias-br 2013 (sitio 15.664904): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (12.519595): no coincide con año anterior (3.450639 contra 6.595948 cargado) ni documento siguiente (14.190069 en el siguiente)
+     sin dato: goias-br 2014 (sitio 20.131595): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (16.986286): no coincide con año anterior (12.519595 contra 15.664904 cargado)
+     sin dato: goias-br 2015 (sitio 16.979765): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: goias-br 2016 (sitio 3.783969): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: goias-br 2017 (sitio 3.179515): escalón 0: sin propuesta; escalón 1 (0.034206): no coincide con año anterior (0.63866 contra 3.783969 cargado); escalón 2 (null): la fila "Caixa e equivalentes de caixa" es de caja, no de deuda
+     sin dato: goias-br 2021 (sitio 5.900035): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (5.367526): no coincide con documento siguiente (8.687048 en el siguiente)
+     sin dato: goias-br 2022 (sitio 0.408029): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.616058): no coincide con documento siguiente (0.816058 en el siguiente)
+     sin dato: goias-br 2023 (sitio 0.415513): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.415513): no coincide con documento siguiente (0.291366 en el siguiente)
+     sin dato: goias-br 2024 (sitio 0.308756): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.308756): no coincide con documento siguiente (0.2872 en el siguiente)
+     sin dato: gorica-hr 2025 (sitio 0.12651): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: gremio 2024 (sitio 99.636): escalón 0: sin propuesta; escalón 1 (83.303): ningún año vecino para comparar; escalón 2 (74.982): ningún año vecino para comparar
+     sin dato: guarani-br 2024 (sitio 144.944): escalón 0: sin propuesta; escalón 1 (11.484): ningún año vecino para comparar; escalón 2 (11.484): ningún año vecino para comparar
+     sin dato: guarani-br 2025 (sitio 142.494): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (null): la fila "Caixa e equivalentes de caixa 4 6.535 1.554 Empréstimos" es de caja, no de deuda
+     sin dato: hajduksplit-hr 2024 (sitio 5.124513): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: hamburgersv-de 2025 (sitio 22.03): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: hellasverona-it 2020 (sitio 4.530032): escalón 0: sin propuesta; escalón 1 (522.593): ningún año vecino para comparar; escalón 2 (4530.032): no coincide con documento siguiente (10.167296 en el siguiente)
+     sin dato: hellasverona-it 2021 (sitio 28.642564): escalón 0: sin propuesta; escalón 1 (19.934054): no coincide con año anterior (0.52259 contra 4.530032 cargado) ni documento siguiente (19934.054 en el siguiente); escalón 2 (28.642564): no coincide con documento siguiente (28642.564 en el siguiente)
+     sin dato: hellasverona-it 2023 (sitio 70.132617): escalón 0: sin propuesta; escalón 1 (23.641279): no coincide con año anterior (30.87656 contra 44.071284 cargado); escalón 2 (70.132617): no coincide con año anterior (43.467581 contra 44.071284 cargado)
+     sin dato: hellasverona-it 2024 (sitio 89.756114): escalón 0: sin propuesta; escalón 1 (18594812503875310): no coincide con año anterior (23641279513657616 contra 70.132617 cargado); escalón 2 (18594812503875384): no coincide con año anterior (23641279513657664 contra 70.132617 cargado)
+     sin dato: hellasverona-it 2025 (sitio 91.309222): escalón 0: sin propuesta; escalón 1 (1346547340746829.2): no coincide con año anterior (18594812503875310 contra 89.756114 cargado); escalón 2 (1346547340746907.2): no coincide con año anterior (18594812503875384 contra 89.756114 cargado)
+     sin dato: hoffenheim-de 2024 (sitio 58.277885): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: hoffenheim-de 2025 (sitio 79.418182): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: inter-it 2018 (sitio 521.327443): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (717327.443): no coincide con documento siguiente (881889.187 en el siguiente)
+     sin dato: inter-it 2019 (sitio 461.411832): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (461411.832): no coincide con documento siguiente (868581.475 en el siguiente)
+     sin dato: inter-it 2020 (sitio 411.170787): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (411170.879): ningún año vecino para comparar
+     sin dato: inter-it 2021 (sitio 471.528523): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (471528.523): no coincide con año anterior (411170.787 contra 411.170787 cargado) ni documento siguiente (107121.681 en el siguiente)
+     sin dato: inter-it 2022 (sitio 489.232216): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (548312.438): no coincide con documento siguiente (1287540.957 en el siguiente)
+     sin dato: inter-it 2023 (sitio 537.865658): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (537865.658): no coincide con documento siguiente (81968.744 en el siguiente)
+     sin dato: inter-it 2024 (sitio 441.503236): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (441503.236): ningún año vecino para comparar
+     sin dato: inter-it 2025 (sitio 397.894115): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (444.188907): ningún año vecino para comparar
+     sin dato: internacional-br 2024 (sitio 189.031): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: internacional-br 2025 (sitio 188.975): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: istra-hr 2025 (sitio 2.521332): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (562409.521409): ningún año vecino para comparar
+     sin dato: ituano 2024 (sitio 10.847429): escalón 0: sin propuesta; escalón 1 (1.884006): ningún año vecino para comparar; escalón 2 (11.15184): ningún año vecino para comparar
+     sin dato: junior-co 2025 (sitio 8213.691): escalón 0: sin propuesta; escalón 1 (8213.691): ningún año vecino para comparar; escalón 2: sin propuesta
+     sin dato: juventude-br 2020 (sitio 0.73381295): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: juventus-it 2003 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: juventus-it 2004 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: juventus-it 2005 (sitio 24.973807): escalón 0: sin propuesta; escalón 1 (24973.807): no coincide con año anterior (24973.807 contra 0 cargado); escalón 2 (24973.807): no coincide con año anterior (24973.807 contra 0 cargado)
+     sin dato: juventus-it 2007 (sitio 18.712257): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (18.712257): no coincide con año anterior (14.208028 contra 14.927923 cargado)
+     sin dato: juventus-it 2008 (sitio 17.509964): escalón 0: sin propuesta; escalón 1 (17.509964): no coincide con documento siguiente (18.074452 en el siguiente); escalón 2 (17.509964): no coincide con documento siguiente (32.826716 en el siguiente)
+     sin dato: juventus-it 2009 (sitio 16.592999): escalón 0: sin propuesta; escalón 1 (16.592999): no coincide con año anterior (18.074452 contra 17.509964 cargado); escalón 2 (16.592999): no coincide con año anterior (18.074452 contra 17.509964 cargado) ni documento siguiente (29.982324 en el siguiente)
+     sin dato: juventus-it 2023 (sitio 375.882071): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (375.882071): no coincide con documento siguiente (220.975644 en el siguiente)
+     sin dato: juvestabia-it 2024 (sitio 0.510448): escalón 0: sin propuesta; escalón 1 (0.040406): ningún año vecino para comparar; escalón 2 (0.510448): ningún año vecino para comparar
+     sin dato: kifisia-gr 2022 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: kifisia-gr 2023 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: kifisia-gr 2024 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: kifisia-gr 2025 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: koln-de 2024 (sitio 37.862442): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: koln-de 2025 (sitio 31.996691): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: lazio-it 1999 (sitio 122520.344094): escalón 0: sin propuesta; escalón 1 (0.00016): ningún año vecino para comparar; escalón 2 (122520.344094): ningún año vecino para comparar
+     sin dato: lazio-it 2001 (sitio 279759.28434): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (144.483612): no coincide con año anterior (197.83655 contra 383064.976667 cargado)
+     sin dato: lazio-it 2004 (sitio 69.411197): escalón 0: sin propuesta; escalón 1 (20.716041): ningún año vecino para comparar; escalón 2 (74.212809): ningún año vecino para comparar
+     sin dato: lazio-it 2005 (sitio 47.767416): escalón 0: sin propuesta; escalón 1 (46.710973): no coincide con año anterior (59.195344 contra 69.411197 cargado); escalón 2 (9.288113): no coincide con año anterior (30.931894 contra 69.411197 cargado)
+     sin dato: lazio-it 2007 (sitio 4.205682): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (815.206022): no coincide con documento siguiente (4201.23 en el siguiente)
+     sin dato: lazio-it 2008 (sitio 4.940476): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (4290.398): no coincide con año anterior (3551.152 contra 4.205682 cargado) ni documento siguiente (4289.709 en el siguiente)
+     sin dato: lazio-it 2009 (sitio 11.918135): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (41511918.475): no coincide con año anterior (4940.476 contra 4.940476 cargado)
+     sin dato: lazio-it 2010 (sitio 5.661468): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (5661.468): no coincide con año anterior (11918.135 contra 11.918135 cargado) ni documento siguiente (5000.051 en el siguiente)
+     sin dato: lazio-it 2011 (sitio 13.933772): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (33065.044): no coincide con documento siguiente (29318.653 en el siguiente)
+     sin dato: lazio-it 2012 (sitio 10.187298): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (2346187.298): no coincide con año anterior (13933.772 contra 13.933772 cargado) ni documento siguiente (30051.456 en el siguiente)
+     sin dato: lazio-it 2013 (sitio 14.933184): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (8404.437): no coincide con año anterior (650 contra 10.187298 cargado) ni documento siguiente (11.43008 en el siguiente)
+     sin dato: lazio-it 2014 (sitio 20.816936): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (20.816936): no coincide con documento siguiente (34078.008 en el siguiente)
+     sin dato: lazio-it 2015 (sitio 20.897685): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (9204.17): no coincide con año anterior (7387.712 contra 20.816936 cargado) ni documento siguiente (2.205455 en el siguiente)
+     sin dato: lazio-it 2016 (sitio 30.466393): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (15.465365): no coincide con año anterior (9.20417 contra 20.897685 cargado) ni documento siguiente (8879.339 en el siguiente)
+     sin dato: lazio-it 2017 (sitio 46.760677): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (46760.677): no coincide con año anterior (30466.393 contra 30.466393 cargado) ni documento siguiente (14641.47143 en el siguiente)
+     sin dato: lazio-it 2018 (sitio 50.458129): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (50458.129): no coincide con año anterior (46760.677 contra 46.760677 cargado) ni documento siguiente (44248.467 en el siguiente)
+     sin dato: lazio-it 2019 (sitio 59.51634): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (59516.34): no coincide con año anterior (50458.129 contra 50.458129 cargado) ni documento siguiente (53823.042 en el siguiente)
+     sin dato: lazio-it 2020 (sitio 61.118249): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (18205.776): no coincide con año anterior (14415.405 contra 59.51634 cargado) ni documento siguiente (18.205776 en el siguiente)
+     sin dato: lazio-it 2021 (sitio 39.201445): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (13.389155): no coincide con año anterior (24.583618 contra 61.118249 cargado)
+     sin dato: lazio-it 2022 (sitio 59.82718): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (53.506137): no coincide con año anterior (32.28273 contra 39.201445 cargado) ni documento siguiente (78.006532 en el siguiente)
+     sin dato: lazio-it 2023 (sitio 60.675268): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (54.087659): no coincide con año anterior (53.506137 contra 59.82718 cargado) ni documento siguiente (35.026584 en el siguiente)
+     sin dato: lazio-it 2024 (sitio 53.209025): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (53.209025): no coincide con documento siguiente (15.486072 en el siguiente)
+     sin dato: lazio-it 2025 (sitio 72.357699): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (72.357699): no coincide con documento siguiente (8.165972 en el siguiente)
+     sin dato: lazio-it 2026 (sitio 128.239481): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (124.32971): no coincide con año anterior (67.563981 contra 72.357699 cargado)
+     sin dato: leeds-gb 2024 (sitio 60.297537): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: leeds-gb 2025 (sitio 58.824929): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: levadiakos-gr 2019 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: levadiakos-gr 2020 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: levadiakos-gr 2023 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: levadiakos-gr 2024 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: levadiakos-gr 2025 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: levante-es 2025 (sitio 121.12351): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (103.07996): ningún año vecino para comparar
+     sin dato: liverpool-gb 2024 (sitio 314.295): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: liverpool-gb 2025 (sitio 285.256): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: losandes-ar 2020 (sitio 59.358045): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: losandes-ar 2021 (sitio 67.996953): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: mafra-pt 2024 (sitio 2.745454): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (2.745454): ningún año vecino para comparar
+     sin dato: mancity-gb 2024 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: mancity-gb 2025 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: maritimo-pt 2025 (sitio 0.073434): escalón 0: sin propuesta; escalón 1 (0.144025): ningún año vecino para comparar; escalón 2 (0.144025): ningún año vecino para comparar
+     sin dato: mechelen-be 2025 (sitio 27.9558): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: midtjylland-dk 2019 (sitio 1.22): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: millonarios-co 2025 (sitio 28.34): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: monchengladbach-de 2023 (sitio 107.105528): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: monchengladbach-de 2024 (sitio 107.921968): escalón 0: sin propuesta; escalón 1 (null): sin escala del documento; escalón 2 (null): sin escala del documento
+     sin dato: monza-it 2022 (sitio 0): escalón 0: sin propuesta; escalón 1 (0): las filas propuestas suman 0 (un cero sale solo por "ninguna fila"); escalón 2: sin propuesta
+     sin dato: monza-it 2024 (sitio 0): escalón 0: sin propuesta; escalón 1 (0): las filas propuestas suman 0 (un cero sale solo por "ninguna fila"); escalón 2 (13.5): no coincide con año anterior (0 contra 0.127833 cargado)
+     sin dato: moreirense-pt 2023 (sitio 1.559941): escalón 0 (1.559941): no coincide con documento siguiente (0.809941 en el siguiente); escalón 1: sin propuesta; escalón 2 (1.559941): no coincide con documento siguiente (1.619883 en el siguiente)
+     sin dato: moreirense-pt 2024 (sitio 1.559941): escalón 0 (0.809941): no coincide con año anterior (0.809941 contra 1.559941 cargado); escalón 1: sin propuesta; escalón 2 (1.559941): no coincide con documento siguiente (1.619882 en el siguiente)
+     sin dato: nacional-pt 2022 (sitio 0.555941): escalón 0 (0.555941): no coincide con documento siguiente (NaN en el siguiente); escalón 1 (0.555941): ningún año vecino para comparar; escalón 2 (0.555941): no coincide con documento siguiente (0.9828 en el siguiente)
+     sin dato: nacional-pt 2023 (sitio 0.565522): escalón 0 (0.630063): no coincide con documento siguiente (NaN en el siguiente); escalón 1 (0.630063): ningún año vecino para comparar; escalón 2 (0.630063): no coincide con documento siguiente (1.131044 en el siguiente)
+     sin dato: nacional-pt 2024 (sitio 0.738674): escalón 0 (0.738674): no coincide con documento siguiente (NaN en el siguiente); escalón 1 (0.738674): ningún año vecino para comparar; escalón 2 (0.738674): no coincide con documento siguiente (0.925186 en el siguiente)
+     sin dato: nacional-pt 2025 (sitio 0.450199): escalón 0 (0.72628): ningún año vecino para comparar; escalón 1 (0.72628): ningún año vecino para comparar; escalón 2 (0.450199): no coincide con año anterior (0.462593 contra 0.738674 cargado)
+     sin dato: napoli-it 2018 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: napoli-it 2019 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: napoli-it 2020 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: newcastle-gb 2025 (sitio 58.314): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: nordsjaelland-dk 2024 (sitio 20.625): escalón 0: sin propuesta; escalón 1 (null): sin escala del documento; escalón 2 (null): sin escala del documento
+     sin dato: nottinghamforest-gb 2024 (sitio 95.847): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: nottinghamforest-gb 2025 (sitio 146.485): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: novorizontino-br 2010 (sitio 0.5353): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: novorizontino-br 2013 (sitio 1.346066): escalón 0: sin propuesta; escalón 1 (1.346066): ningún año vecino para comparar; escalón 2 (1.346066): ningún año vecino para comparar
+     sin dato: novorizontino-br 2014 (sitio 4.56282): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: novorizontino-br 2016 (sitio 15.993335): escalón 0: sin propuesta; escalón 1 (15.981014): no coincide con año anterior (10.173049 contra 10.240466 cargado); escalón 2 (0.000149): ningún año vecino para comparar
+     sin dato: novorizontino-br 2017 (sitio 19.791449): escalón 0: sin propuesta; escalón 1 (19.757737): no coincide con año anterior (15.978042 contra 15.993335 cargado); escalón 2 (19.748744): no coincide con año anterior (15.965049 contra 15.993335 cargado)
+     sin dato: novorizontino-br 2020 (sitio 40.059): escalón 0 (40.05): ningún año vecino para comparar; escalón 1: sin propuesta; escalón 2 (null): la fila "Caixa e equivalentes de caixa" es de caja, no de deuda
+     sin dato: novorizontino-br 2021 (sitio 51.884): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (null): la fila "Caixa e equivalentes de caixa" es de caja, no de deuda
+     sin dato: novorizontino-br 2022 (sitio 70.311934): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (null): la fila "Caixa e equivalentes de caixa" es de caja, no de deuda
+     sin dato: oficrete-gr 2018 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: oficrete-gr 2019 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: oficrete-gr 2020 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: oficrete-gr 2021 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: oficrete-gr 2022 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: oficrete-gr 2023 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: oficrete-gr 2024 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: oficrete-gr 2025 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0): las filas propuestas suman 0 (un cero sale solo por "ninguna fila")
+     sin dato: olympiacos-gr 2016 (sitio 6.055517): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (6.055517): no coincide con documento siguiente (7.550956 en el siguiente)
+     sin dato: olympiacos-gr 2017 (sitio 13.304981): escalón 0 (3.320798): no coincide con año anterior (0 contra 6.055517 cargado); escalón 1: sin propuesta; escalón 2 (12.730598): no coincide con año anterior (0 contra 6.055517 cargado) ni documento siguiente (6.641596 en el siguiente)
+     sin dato: olympiacos-gr 2019 (sitio 0.88): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.88): no coincide con documento siguiente (0 en el siguiente)
+     sin dato: olympiacos-gr 2020 (sitio 15.63126): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (37.436716): no coincide con año anterior (15.252038 contra 0.88 cargado)
+     sin dato: olympiacos-gr 2021 (sitio 9.606985): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (9.606985): no coincide con documento siguiente (9.402707 en el siguiente)
+     sin dato: olympiacos-gr 2022 (sitio 9.250086): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (9.250086): no coincide con documento siguiente (4.921061 en el siguiente)
+     sin dato: olympiacos-gr 2023 (sitio 2.463209): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (2.463209): no coincide con documento siguiente (0.7842 en el siguiente)
+     sin dato: olympiacos-gr 2024 (sitio 3.746808): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (3.746808): no coincide con documento siguiente (0.538044 en el siguiente)
+     sin dato: oncecaldas 2022 (sitio 137.188): escalón 0: sin propuesta; escalón 1 (0): las filas propuestas suman 0 (un cero sale solo por "ninguna fila")
+     sin dato: oncecaldas 2023 (sitio 0): escalón 0: sin propuesta; escalón 1 (0): las filas propuestas suman 0 (un cero sale solo por "ninguna fila")
+     sin dato: oncecaldas 2025 (sitio 366.562): escalón 0: sin propuesta; escalón 1 (754.062): ningún año vecino para comparar; escalón 2: sin propuesta
+     sin dato: operarioferroviario-br 2024 (sitio 0.425): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.0621): ningún año vecino para comparar
+     sin dato: operarioferroviario-br 2025 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (null): la fila "1 Caixa e equivalentes de caixa" es de caja, no de deuda
+     sin dato: osasuna-es 2022 (sitio 45.839328): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (45.839328): ningún año vecino para comparar
+     sin dato: osasuna-es 2024 (sitio 50.186677): escalón 0: sin propuesta; escalón 1 (42.776733): ningún año vecino para comparar; escalón 2 (50.186677): ningún año vecino para comparar
+     sin dato: osijek-hr 2025 (sitio 11.470126): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: pacosdeferreira-pt 2020 (sitio 1.40705): escalón 0 (1.40705): ningún año vecino para comparar; escalón 1: sin propuesta; escalón 2 (1.40705): ningún año vecino para comparar
+     sin dato: palmeiras-br 2024 (sitio 39.759): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: palmeiras-br 2025 (sitio 0.234): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.0021): no coincide con año anterior (10.254 contra 39.759 cargado)
+     sin dato: panathinaikos-gr 2025 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (2.32554): ningún año vecino para comparar
+     sin dato: panetolikos-gr 2017 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: panetolikos-gr 2018 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: panetolikos-gr 2020 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: panetolikos-gr 2021 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: panetolikos-gr 2022 (sitio 0.675224): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: panetolikos-gr 2023 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: panetolikos-gr 2024 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: panetolikos-gr 2025 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: panserraikos-gr 2023 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: panserraikos-gr 2025 (sitio 0.009): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: paok-gr 2017 (sitio 13.262671): escalón 0 (9): ningún año vecino para comparar; escalón 1: sin propuesta; escalón 2 (9): ningún año vecino para comparar
+     sin dato: paok-gr 2022 (sitio 8.9): escalón 0 (8.9): ningún año vecino para comparar; escalón 1: sin propuesta; escalón 2 (17.8): ningún año vecino para comparar
+     sin dato: paok-gr 2025 (sitio 1.2): escalón 0 (3.8): ningún año vecino para comparar; escalón 1: sin propuesta; escalón 2 (5): ningún año vecino para comparar
+     sin dato: parma-it 2016 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: parma-it 2018 (sitio 1.651735): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (1.651735): no coincide con año anterior (0.031888 contra 0.781888 cargado)
+     sin dato: parma-it 2019 (sitio 6.046988): escalón 0 (1.333): ningún año vecino para comparar; escalón 1: sin propuesta; escalón 2 (4.606988): no coincide con año anterior (0.651735 contra 1.651735 cargado)
+     sin dato: parma-it 2021 (sitio 61.655824): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (3.348112): ningún año vecino para comparar
+     sin dato: parma-it 2022 (sitio 64.644893): escalón 0: sin propuesta; escalón 1 (1.632651): ningún año vecino para comparar; escalón 2 (1.632651): no coincide con año anterior (1.83985 contra 61.655824 cargado)
+     sin dato: parma-it 2023 (sitio 58.466487): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (1.44062): no coincide con año anterior (1.631823 contra 64.644893 cargado)
+     sin dato: parma-it 2024 (sitio 40.409646): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: parma-it 2025 (sitio 67.701484): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (7.100827): no coincide con año anterior (0.000563 contra 40.409646 cargado)
+     sin dato: paysandu-br 2021 (sitio 4.812387): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: paysandu-br 2023 (sitio 2.502032): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: paysandu-br 2024 (sitio 2.494467): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: paysandu-br 2025 (sitio 11.220038): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: pontepreta-br 2022 (sitio 156.048883): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: pontepreta-br 2023 (sitio 155.365802): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: pontepreta-br 2024 (sitio 175.746869): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: portimonense-pt 2022 (sitio 5.003016): escalón 0: sin propuesta; escalón 1 (0.008915): no coincide con documento siguiente (0.000015 en el siguiente); escalón 2 (0.01783): no coincide con documento siguiente (0.00003 en el siguiente)
+     sin dato: portimonense-pt 2023 (sitio 5.334376): escalón 0: sin propuesta; escalón 1 (0.000009): no coincide con año anterior (0.000015 contra 5.003016 cargado) ni documento siguiente (0.000015 en el siguiente); escalón 2 (0.000018): no coincide con año anterior (0.00003 contra 5.003016 cargado) ni documento siguiente (0.00003 en el siguiente)
+     sin dato: portimonense-pt 2024 (sitio 8.195353): escalón 0: sin propuesta; escalón 1 (0.000019): no coincide con año anterior (0.000015 contra 5.334376 cargado) ni documento siguiente (0.000015 en el siguiente); escalón 2 (0.000038): no coincide con año anterior (0.00003 contra 5.334376 cargado) ni documento siguiente (0.00003 en el siguiente)
+     sin dato: portimonense-pt 2025 (sitio 4.552255): escalón 0: sin propuesta; escalón 1 (0.000009): no coincide con año anterior (0.000015 contra 8.195353 cargado); escalón 2 (0.000018): no coincide con año anterior (0.00003 contra 8.195353 cargado)
+     sin dato: porto-pt 2016 (sitio 182.087482): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (182.087482): no coincide con documento siguiente (89.485708 en el siguiente)
+     sin dato: porto-pt 2017 (sitio 195.311241): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (195.311241): no coincide con documento siguiente (69.014534 en el siguiente)
+     sin dato: porto-pt 2018 (sitio 281.083121): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (281.083121): no coincide con documento siguiente (137.187148 en el siguiente)
+     sin dato: porto-pt 2021 (sitio 300.659951): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (300.659951): no coincide con documento siguiente (410.855 en el siguiente)
+     sin dato: porto-pt 2022 (sitio 280.19032): escalón 0: sin propuesta; escalón 1 (98.342537): ningún año vecino para comparar; escalón 2 (284.19032): no coincide con documento siguiente (379.639204 en el siguiente)
+     sin dato: porto-pt 2023 (sitio 303.514104): escalón 0: sin propuesta; escalón 1 (128.864241): ningún año vecino para comparar; escalón 2 (303.514104): no coincide con documento siguiente (332.874562 en el siguiente)
+     sin dato: porto-pt 2024 (sitio 247.502568): escalón 0: sin propuesta; escalón 1 (107.530921): ningún año vecino para comparar; escalón 2 (249.002568): no coincide con documento siguiente (480.572 en el siguiente)
+     sin dato: porto-pt 2025 (sitio 272.502): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (247.502): ningún año vecino para comparar
+     sin dato: psv-nl 2025 (sitio 140.827): escalón 0: sin propuesta; escalón 1 (0.052): no coincide con año anterior (0.052 contra 163.391 cargado); escalón 2 (45.503): no coincide con año anterior (45.706 contra 163.391 cargado)
+     sin dato: randers-dk 2023 (sitio 2.062693): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (1.626121): ningún año vecino para comparar
+     sin dato: rayovallecano-es 2025 (sitio 1.202364): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: rbleipzig-de 2022 (sitio 99.905): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: rbleipzig-de 2025 (sitio 162.104): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: rcdmallorca-es 2025 (sitio 59.60432): escalón 0: sin propuesta; escalón 1 (4.623084): ningún año vecino para comparar; escalón 2: sin propuesta
+     sin dato: realbetis 2025 (sitio 129.106402): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: realmadrid 2025 (sitio 141.014): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: realoviedo-es 2025 (sitio 8.124554): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: remo-br 2023 (sitio 1.197909): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: remo-br 2024 (sitio 1.017021): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: rijeka-hr 2024 (sitio 14.092288): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (14.092288): ningún año vecino para comparar
+     sin dato: rioave-pt 2016 (sitio 1.992155): escalón 0 (1.992155): no coincide con documento siguiente (NaN en el siguiente); escalón 1 (1.992155): ningún año vecino para comparar; escalón 2 (1.992155): no coincide con documento siguiente (2.782734 en el siguiente)
+     sin dato: rioave-pt 2017 (sitio 3.596528): escalón 0: sin propuesta; escalón 1 (4.197317): ningún año vecino para comparar; escalón 2 (16.027821): no coincide con documento siguiente (28.459084 en el siguiente)
+     sin dato: rioave-pt 2022 (sitio 3.584): escalón 0 (6.168): no coincide con documento siguiente (3.584 en el siguiente); escalón 1 (6.168): ningún año vecino para comparar; escalón 2 (6.168): no coincide con documento siguiente (7.168 en el siguiente)
+     sin dato: salernitana-it 2022 (sitio 1.913877): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (475.3113): ningún año vecino para comparar
+     sin dato: salernitana-it 2023 (sitio 31.556675): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (31.714071): no coincide con año anterior (2.18631 contra 1.913877 cargado)
+     sin dato: sampdoria-it 2018 (sitio 25.839781): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (25839.781): no coincide con documento siguiente (0 en el siguiente)
+     sin dato: sampdoria-it 2019 (sitio 52.266886): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (52266.886): no coincide con año anterior (25839.781 contra 25.839781 cargado) ni documento siguiente (6501.192 en el siguiente)
+     sin dato: sampdoria-it 2020 (sitio 66.92714): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (66927.14): no coincide con año anterior (52266.886 contra 52.266886 cargado) ni documento siguiente (18.887464 en el siguiente)
+     sin dato: santaclara-pt 2022 (sitio 1.058637): escalón 0 (6.403953): no coincide con documento siguiente (NaN en el siguiente); escalón 1 (6.403953): ningún año vecino para comparar; escalón 2 (6.403953): ningún año vecino para comparar
+     sin dato: santaclara-pt 2023 (sitio 11.145): escalón 0 (12.203637): no coincide con documento siguiente (NaN en el siguiente); escalón 1 (12.203637): ningún año vecino para comparar; escalón 2 (12.203637): no coincide con documento siguiente (22.29 en el siguiente)
+     sin dato: santafe-co 2025 (sitio 4645.154895): escalón 0: sin propuesta; escalón 1 (4781.05389): ningún año vecino para comparar; escalón 2 (14175.175311): ningún año vecino para comparar
+     sin dato: santos-br 2024 (sitio 129.591): escalón 0: sin propuesta; escalón 1 (11129.591): ningún año vecino para comparar; escalón 2 (11129.591): ningún año vecino para comparar
+     sin dato: santos-br 2025 (sitio 94.338): escalón 0: sin propuesta; escalón 1 (83085136.465): ningún año vecino para comparar; escalón 2 (83085136.465): ningún año vecino para comparar
+     sin dato: saopaulo-br 2023 (sitio 217.528): escalón 0: sin propuesta; escalón 1 (9.826): ningún año vecino para comparar; escalón 2: sin propuesta
+     sin dato: saopaulo-br 2024 (sitio 259.26): escalón 0: sin propuesta; escalón 1 (0.0111): ningún año vecino para comparar; escalón 2: sin propuesta
+     sin dato: sassuolo-it 2018 (sitio 63.064746): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (38435.023): no coincide con documento siguiente (19298.618 en el siguiente)
+     sin dato: sassuolo-it 2019 (sitio 106.503984): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (46822.505): no coincide con año anterior (38435.023 contra 63.064746 cargado) ni documento siguiente (12219.019 en el siguiente)
+     sin dato: sassuolo-it 2020 (sitio 116.255552): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (20892.857): no coincide con año anterior (26822.505 contra 106.503984 cargado)
+     sin dato: sassuolo-it 2021 (sitio 142.127929): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (44211.489): no coincide con año anterior (15000 contra 116.255552 cargado)
+     sin dato: sassuolo-it 2022 (sitio 110.413428): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (27107.143): no coincide con año anterior (50104.346 contra 142.127929 cargado) ni documento siguiente (17925.216 en el siguiente)
+     sin dato: sassuolo-it 2023 (sitio 122.773536): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (58479.674): no coincide con año anterior (77416.43 contra 110.413428 cargado) ni documento siguiente (29375.195 en el siguiente)
+     sin dato: sassuolo-it 2024 (sitio 86.280473): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (49245.749): no coincide con año anterior (58479.674 contra 122.773536 cargado) ni documento siguiente (4684.394 en el siguiente)
+     sin dato: sassuolo-it 2025 (sitio 56.870575): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (53060.889): no coincide con año anterior (49245.749 contra 86.280473 cargado)
+     sin dato: sevillafc 2025 (sitio 268.353): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: silkeborg-dk 2024 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: sinttruiden-be 2025 (sitio 24.290111): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: slavenbelupo-hr 2025 (sitio 1.179036): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: sonderjyske-dk 2022 (sitio 14.080333): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: sportingcp-pt 2000 (sitio 3205.706): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (2306.568): no coincide con documento siguiente (900.463 en el siguiente)
+     sin dato: sportingcp-pt 2002 (sitio 36.371): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (33.441): no coincide con año anterior (8.23 contra 5115.922 cargado) ni documento siguiente (24.486 en el siguiente)
+     sin dato: sportingcp-pt 2003 (sitio 32.497): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (38.16): no coincide con año anterior (24.486 contra 36.371 cargado)
+     sin dato: sportingcp-pt 2004 (sitio 30.708): escalón 0: sin propuesta; escalón 1 (30.708): no coincide con año anterior (32.491 contra 32.497 cargado); escalón 2 (30.708): no coincide con año anterior (32.491 contra 32.497 cargado) ni documento siguiente (10 en el siguiente)
+     sin dato: sportingcp-pt 2005 (sitio 25.728): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.05): no coincide con año anterior (0.031 contra 30.708 cargado) ni documento siguiente (0.023 en el siguiente)
+     sin dato: sportingcp-pt 2006 (sitio 34.766): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (33): no coincide con año anterior (15 contra 25.728 cargado)
+     sin dato: sportingcp-pt 2007 (sitio 35.364): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0): las filas propuestas suman 0 (un cero sale solo por "ninguna fila")
+     sin dato: sportingcp-pt 2008 (sitio 43.767): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (43.767): no coincide con año anterior (35.084 contra 35.364 cargado)
+     sin dato: sportingcp-pt 2011 (sitio 95.56): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (95.56): no coincide con documento siguiente (84.578 en el siguiente)
+     sin dato: sportingcp-pt 2013 (sitio 157.856): escalón 0 (56.458): no coincide con año anterior (80.291 contra 116.366 cargado); escalón 1: sin propuesta; escalón 2 (157.856): no coincide con documento siguiente (112.916 en el siguiente)
+     sin dato: sportingcp-pt 2014 (sitio 180.737): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (180.737): no coincide con documento siguiente (63.36 en el siguiente)
+     sin dato: sportingcp-pt 2015 (sitio 130.053): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (130.053): no coincide con documento siguiente (160.688 en el siguiente)
+     sin dato: sportingcp-pt 2016 (sitio 132.055): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (132.055): no coincide con documento siguiente (176.238 en el siguiente)
+     sin dato: sportingcp-pt 2017 (sitio 127.371): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (127.371): no coincide con documento siguiente (72.53 en el siguiente)
+     sin dato: sportingcp-pt 2018 (sitio 111.243): escalón 0 (36.488): no coincide con año anterior (36.265 contra 127.371 cargado); escalón 1: sin propuesta; escalón 2 (111.243): no coincide con documento siguiente (72.976 en el siguiente)
+     sin dato: sportingcp-pt 2023 (sitio 138.253): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (138.253): no coincide con documento siguiente (156.486 en el siguiente)
+     sin dato: sportrecife-br 2025 (sitio 26.786): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (26.793): ningún año vecino para comparar
+     sin dato: standardliege-be 2025 (sitio 23.461701): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: stuttgart-de 2023 (sitio 125.909849): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: stuttgart-de 2024 (sitio 140.706446): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: sunderland-gb 2024 (sitio 8.289): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: sunderland-gb 2025 (sitio 25.217): escalón 0: sin propuesta; escalón 1 (8.289): ningún año vecino para comparar; escalón 2: sin propuesta
+     sin dato: talleres-ar 2024 (sitio 21486.534385): escalón 0: sin propuesta; escalón 1 (4719.255755): ningún año vecino para comparar; escalón 2: sin propuesta
+     sin dato: talleres-ar 2025 (sitio 30269.641516): escalón 0: sin propuesta; escalón 1 (3369.721904): no coincide con año anterior (6207.709022 contra 21486.534385 cargado); escalón 2: sin propuesta
+     sin dato: tondela-pt 2021 (sitio 0.880361): escalón 0: sin propuesta; escalón 1 (0.880361): ningún año vecino para comparar; escalón 2 (0.880361): ningún año vecino para comparar
+     sin dato: torino-it 2018 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: torino-it 2019 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: torino-it 2020 (sitio 30): escalón 0: sin propuesta; escalón 1 (30): ningún año vecino para comparar; escalón 2: sin propuesta
+     sin dato: torino-it 2021 (sitio 30): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (30000): no coincide con año anterior (30000 contra 30 cargado) ni documento siguiente (17843.504 en el siguiente)
+     sin dato: torino-it 2024 (sitio 47.3): escalón 0: sin propuesta; escalón 1 (47361.05): ningún año vecino para comparar; escalón 2 (47300): no coincide con año anterior (1375000040000 contra 53.75 cargado)
+     sin dato: torino-it 2025 (sitio 57.059587): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (57.059): ningún año vecino para comparar
+     sin dato: udinese-it 2022 (sitio 81.313388): escalón 0: sin propuesta; escalón 1 (81.313388): ningún año vecino para comparar; escalón 2 (81.313388): ningún año vecino para comparar
+     sin dato: udinese-it 2025 (sitio 58.477675): escalón 0 (34.845738): ningún año vecino para comparar; escalón 1 (34.845738): ningún año vecino para comparar; escalón 2 (34.845738): ningún año vecino para comparar
+     sin dato: unionmagdalena-co 2018 (sitio 1058.314): escalón 0: sin propuesta; escalón 1 (1058.314): ningún año vecino para comparar; escalón 2 (1058.314): ningún año vecino para comparar
+     sin dato: unionsg-be 2025 (sitio 31.660587): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: valenciacf 2025 (sitio 121.693): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: varazdin-hr 2025 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: vascodagama-br 2023 (sitio 44.654): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (62.654): ningún año vecino para comparar
+     sin dato: vejle-dk 2024 (sitio 24.128): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: viborg-dk 2024 (sitio 29.385639): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (975935.073365): ningún año vecino para comparar
+     sin dato: vilanova-br 2021 (sitio 67.059933): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (67.059933): no coincide con documento siguiente (0.10167 en el siguiente)
+     sin dato: vilanova-br 2022 (sitio 78.489087): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (78.489087): no coincide con documento siguiente (1.312885 en el siguiente)
+     sin dato: vilanova-br 2023 (sitio 86.833975): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (86.833975): no coincide con documento siguiente (3.657294 en el siguiente)
+     sin dato: vilanova-br 2024 (sitio 93.498102): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (93.498102): no coincide con documento siguiente (2.1 en el siguiente)
+     sin dato: vilanova-br 2025 (sitio 94.946): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (3.959): no coincide con año anterior (1.14 contra 93.498102 cargado)
+     sin dato: villarrealcf 2024 (sitio 116.355224): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: vitoria-br 2025 (sitio 10.273): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: vizela-pt 2022 (sitio 0): escalón 0: sin propuesta; escalón 1 (0.002021): ningún año vecino para comparar; escalón 2: sin propuesta
+     sin dato: vizela-pt 2023 (sitio 0): escalón 0: sin propuesta; escalón 1 (0): las filas propuestas suman 0 (un cero sale solo por "ninguna fila"); escalón 2 (0): las filas propuestas suman 0 (un cero sale solo por "ninguna fila")
+     sin dato: vizela-pt 2024 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: vizela-pt 2025 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: volosnfc-gr 2021 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: volosnfc-gr 2022 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: volosnfc-gr 2023 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: volosnfc-gr 2024 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: volosnfc-gr 2025 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: werderbremen-de 2023 (sitio 34.772): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: werderbremen-de 2024 (sitio 30.182383): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: werderbremen-de 2025 (sitio 31.388): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: westerlo-be 2025 (sitio 39.407332): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: westham-gb 2025 (sitio 20.799): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: wolves-gb 2024 (sitio 100.609): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: wolves-gb 2025 (sitio 101.394): escalón 0: sin propuesta; escalón 1 (79455100.609): ningún año vecino para comparar; escalón 2: sin propuesta
+     sin dato: zultewaregem-be 2025 (sitio 29.448037): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+
+## CAJA: {"total":760,"iguales":421,"distintos":7,"sinDato":332}
+   escalón 0: {"total":342,"iguales":336,"distintos":6,"sinDato":0}
+   escalón 1: {"total":47,"iguales":46,"distintos":1,"sinDato":0}
+   escalón 1b: {"total":0,"iguales":0,"distintos":0,"sinDato":0}
+   escalón 2: {"total":39,"iguales":39,"distintos":0,"sinDato":0}
+   pasó la compuerta por año anterior: {"total":346,"iguales":339,"distintos":7,"sinDato":0}
+   pasó la compuerta por documento siguiente: {"total":82,"iguales":82,"distintos":0,"sinDato":0}
+   pasó la compuerta por documento anterior: {"total":0,"iguales":0,"distintos":0,"sinDato":0}
+   DISTINTOS de lo cargado (7):
+     acmilan-it 2025: script 27.913 (escalón 0, año anterior, precedente del club (2022: 1 depositi bancari e postali + 3 denaro e valori in cassa)) · sitio 27.957 · filas: "1 depositi bancari e postali" 27872 (pág. 34, L787) + "3 denaro e valori in cassa" 41 (pág. 34, L788)
+     arouca-pt 2024: script 1.106226 (escalón 0, año anterior, precedente del club (2023: depositos a ordem)) · sitio 3.506226 · filas: "Depósitos à ordem" 1106226.09 (pág. 28, L1135)
+     juventus-it 2005: script 18.451 (escalón 0, año anterior, precedente del club (2004: bank and post office deposits + cash at bank and in hand)) · sitio 6.53872 · filas: "Bank and post-office deposits" 18440 (pág. 65, L1523) + "Cash at bank and in hand" 11 (pág. 65, L1524)
+     lazio-it 2006: script 11.061034 (escalón 0, año anterior, precedente del club (2005: danaro e valori in cassa + depositi bancari e postali)) · sitio 11.062915 · filas: "3) Danaro e valori in cassa" 15528 (pág. 23, L717) + "1) Depositi bancari e postali" 11045506 (pág. 23, L715)
+     napoli-it 2019: script 105.07203 (escalón 0, año anterior, precedente del club (2018: depositi bancari e postali)) · sitio 105.087098 · filas: "1) Depositi bancari e postali" 105072030 (pág. 5, L170)
+     napoli-it 2023: script 168.919537 (escalón 0, año anterior, precedente del club (2022: depositi bancari e postali)) · sitio 168.94598 · filas: "1) Depositi bancari e postali" 168919537 (pág. 4, L141)
+     wolves-gb 2025: script 3.943 (escalón 1, año anterior, vocabulario) · sitio 33.439 · filas: "Cash at bank and in hand" 3943 (pág. 22, L1083)
+     sin dato: acmilan-it 2008 (sitio 4.825): escalón 0 (4.812): no coincide con documento siguiente (4.825 en el siguiente); escalón 1 (4.809): no coincide con documento siguiente (0.004 en el siguiente); escalón 2 (4.825): no coincide con documento siguiente (106.819 en el siguiente)
+     sin dato: acmilan-it 2009 (sitio 2.437): escalón 0: sin propuesta; escalón 1 (2.423): no coincide con año anterior (0.004 contra 4.825 cargado) ni documento siguiente (0.071 en el siguiente); escalón 2 (2.437): no coincide con documento siguiente (156.144 en el siguiente)
+     sin dato: acmilan-it 2010 (sitio 2.436): escalón 0: sin propuesta; escalón 1 (2.356): no coincide con año anterior (0.071 contra 2.437 cargado) ni documento siguiente (0.015 en el siguiente); escalón 2 (2.436): no coincide con documento siguiente (29.525 en el siguiente)
+     sin dato: acmilan-it 2011 (sitio 1.171): escalón 0 (1.348): ningún año vecino para comparar; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: acmilan-it 2012 (sitio 3.725): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (3.725): no coincide con documento siguiente (171.184 en el siguiente)
+     sin dato: acmilan-it 2013 (sitio 3.217): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (3.283): ningún año vecino para comparar
+     sin dato: acmilan-it 2018 (sitio 24.776): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (24.776): no coincide con documento siguiente (258.804 en el siguiente)
+     sin dato: acmilan-it 2019 (sitio 12.527): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (12.527): no coincide con documento siguiente (271.381 en el siguiente)
+     sin dato: acmilan-it 2020 (sitio 11.284): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (11.284): no coincide con documento siguiente (23.629 en el siguiente)
+     sin dato: acmilan-it 2021 (sitio 23.589): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: acmilan-it 2022 (sitio 42.727): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (42.727): no coincide con documento siguiente (320.066 en el siguiente)
+     sin dato: acmilan-it 2023 (sitio 81.783): escalón 0 (81.772): no coincide con año anterior (42.704 contra 42.727 cargado) ni documento siguiente (81.742 en el siguiente); escalón 1: sin propuesta; escalón 2 (81.783): no coincide con documento siguiente (363.334 en el siguiente)
+     sin dato: acmilan-it 2024 (sitio 39.086): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (39.086): no coincide con documento siguiente (370.268 en el siguiente)
+     sin dato: aekathens-gr 2016 (sitio 0.612826): escalón 0 (0.612826): no coincide con documento siguiente (0 en el siguiente); escalón 1: sin propuesta; escalón 2 (0.612826): no coincide con documento siguiente (0 en el siguiente)
+     sin dato: aekathens-gr 2017 (sitio 1.785823): escalón 0 (1.785823): no coincide con año anterior (0 contra 0.612826 cargado); escalón 1: sin propuesta; escalón 2 (1.785823): no coincide con año anterior (0 contra 0.612826 cargado)
+     sin dato: agf-dk 2021 (sitio 29.347): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: alianzalima-pe 2023 (sitio 3.371734): escalón 0: sin propuesta; escalón 1 (0.001776): no coincide con año anterior (438.69287 contra 6.131999 cargado); escalón 2 (0.001776): no coincide con año anterior (438.69287 contra 6.131999 cargado)
+     sin dato: alianzalima-pe 2024 (sitio 2.709729): escalón 0: sin propuesta; escalón 1 (0.003719): no coincide con año anterior (0.104177 contra 3.371734 cargado); escalón 2 (0.003719): no coincide con año anterior (0.104177 contra 3.371734 cargado)
+     sin dato: amazonas-br 2024 (sitio 0.12759833): escalón 0: sin propuesta; escalón 1 (0.127598): ningún año vecino para comparar; escalón 2 (0.127598): ningún año vecino para comparar
+     sin dato: americadecali-co 2025 (sitio 870.325): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: anderlecht-be 2025 (sitio 1.516035): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: antwerp-be 2025 (sitio 4.159718): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: aris-gr 2019 (sitio 0.4205): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.4205): ningún año vecino para comparar
+     sin dato: aris-gr 2021 (sitio 0.649382): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.000007): ningún año vecino para comparar
+     sin dato: arouca-pt 2022 (sitio 0.130645): escalón 0: sin propuesta; escalón 1 (0.000004): no coincide con documento siguiente (1.362593 en el siguiente); escalón 2 (0.000004): no coincide con documento siguiente (1.362593 en el siguiente)
+     sin dato: arouca-pt 2023 (sitio 1.362593): escalón 0: sin propuesta; escalón 1 (0.000004): no coincide con año anterior (1.362593 contra 0.130645 cargado) ni documento siguiente (3.506226 en el siguiente); escalón 2 (0.000004): no coincide con año anterior (1.362593 contra 0.130645 cargado) ni documento siguiente (3.506226 en el siguiente)
+     sin dato: arouca-pt 2025 (sitio 5.055547): escalón 0 (0.010047): no coincide con año anterior (1.106226 contra 3.506226 cargado); escalón 1 (0.000004): no coincide con año anterior (5.055547 contra 3.506226 cargado); escalón 2 (0.000004): no coincide con año anterior (5.055547 contra 3.506226 cargado)
+     sin dato: arsenal-gb 2024 (sitio 66.819): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: arsenal-gb 2025 (sitio 55.994): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: asroma-it 2005 (sitio 2.631): escalón 0: sin propuesta; escalón 1 (2.631): ningún año vecino para comparar; escalón 2 (2.631): ningún año vecino para comparar
+     sin dato: asroma-it 2006 (sitio 12.903696): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (12.903696): no coincide con año anterior (2.569019 contra 2.631 cargado)
+     sin dato: asroma-it 2010 (sitio 1.923): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: asroma-it 2013 (sitio 8.643): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: asroma-it 2019 (sitio 18.092): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: asroma-it 2020 (sitio 7.706): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: asroma-it 2021 (sitio 22.824): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: asroma-it 2022 (sitio 22.821): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: astonvilla-gb 2025 (sitio 6.299): escalón 0: sin propuesta; escalón 1 (6.299): ningún año vecino para comparar; escalón 2 (6.299): ningún año vecino para comparar
+     sin dato: athleticclub 2025 (sitio 46.086948): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: atleticogoianiense 2025 (sitio 0.767): escalón 0: sin propuesta; escalón 1 (0.662): ningún año vecino para comparar; escalón 2 (0.662): ningún año vecino para comparar
+     sin dato: atleticomadrid 2025 (sitio 130.17651): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: atleticomineiro-br 2023 (sitio 191.231): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (50537140.931): ningún año vecino para comparar
+     sin dato: atleticomineiro-br 2024 (sitio 3.382): escalón 0: sin propuesta; escalón 1 (43.068): no coincide con año anterior (50.537 contra 191.231 cargado); escalón 2 (43.068): no coincide con año anterior (50.537 contra 191.231 cargado)
+     sin dato: atleticomineiro-br 2025 (sitio 5.939): escalón 0: sin propuesta; escalón 1 (47.364): no coincide con año anterior (43.068 contra 3.382 cargado); escalón 2 (47.364): no coincide con año anterior (43.068 contra 3.382 cargado)
+     sin dato: atlnacional-co 2025 (sitio 17130.558): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: atromitos-gr 2016 (sitio 0.08901): escalón 0 (0.08901): ningún año vecino para comparar; escalón 1: sin propuesta; escalón 2 (0.08901): ningún año vecino para comparar
+     sin dato: augsburg-de 2024 (sitio 15.706786): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: augsburg-de 2025 (sitio 14.134535): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: avai-br 2023 (sitio 6.204): escalón 0 (6.204): no coincide con documento siguiente (0.095 en el siguiente); escalón 1 (6.204): no coincide con documento siguiente (0.095 en el siguiente); escalón 2 (6.204): no coincide con documento siguiente (0.095 en el siguiente)
+     sin dato: avai-br 2024 (sitio 2.288): escalón 0 (2.288): no coincide con año anterior (0.095 contra 6.204 cargado); escalón 1 (2.288): no coincide con año anterior (0.095 contra 6.204 cargado); escalón 2 (2.288): no coincide con año anterior (0.095 contra 6.204 cargado)
+     sin dato: avs-pt 2021 (sitio 0.003188): escalón 0 (0.003188): ningún año vecino para comparar; escalón 1 (0.003188): ningún año vecino para comparar; escalón 2 (0.003188): ningún año vecino para comparar
+     sin dato: avs-pt 2023 (sitio 0.443569): escalón 0: sin propuesta; escalón 1 (0.443569): ningún año vecino para comparar; escalón 2 (0.443569): ningún año vecino para comparar
+     sin dato: benfica-pt 2006 (sitio 0.182432): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: benfica-pt 2007 (sitio 4.669757): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: benfica-pt 2022 (sitio 24.069): escalón 0 (24.069): no coincide con documento siguiente (5.326 en el siguiente); escalón 1 (24.069): no coincide con documento siguiente (5.326 en el siguiente); escalón 2 (24.069): no coincide con documento siguiente (5.326 en el siguiente)
+     sin dato: benfica-pt 2023 (sitio 28.623): escalón 0 (16.295): no coincide con año anterior (5.326 contra 24.069 cargado) ni documento siguiente (44.072 en el siguiente); escalón 1 (28.623): no coincide con documento siguiente (44.072 en el siguiente); escalón 2 (28.623): no coincide con documento siguiente (44.072 en el siguiente)
+     sin dato: benfica-pt 2024 (sitio 20.409): escalón 0 (5.326): no coincide con año anterior (44.072 contra 28.623 cargado) ni documento siguiente (28.623 en el siguiente); escalón 1 (20.409): no coincide con documento siguiente (28.623 en el siguiente); escalón 2 (20.409): no coincide con documento siguiente (28.623 en el siguiente)
+     sin dato: benfica-pt 2025 (sitio 6.376): escalón 0: sin propuesta; escalón 1 (6.376): no coincide con documento siguiente (28.623 en el siguiente); escalón 2 (6.376): no coincide con documento siguiente (28.623 en el siguiente)
+     sin dato: boavista-pt 2024 (sitio 0.051557): escalón 0: sin propuesta; escalón 1 (0.000529): ningún año vecino para comparar; escalón 2 (0.000529): ningún año vecino para comparar
+     sin dato: boca 2022 (sitio 311.870166): escalón 0 (311.870166): no coincide con documento siguiente (672.330557 en el siguiente); escalón 1 (311.870166): no coincide con documento siguiente (672.330557 en el siguiente); escalón 2 (311.870166): no coincide con documento siguiente (672.330557 en el siguiente)
+     sin dato: boca 2023 (sitio 568.183797): escalón 0 (568.183797): no coincide con año anterior (672.330557 contra 311.870166 cargado); escalón 1 (568.183797): no coincide con año anterior (672.330557 contra 311.870166 cargado); escalón 2 (568.183797): no coincide con año anterior (672.330557 contra 311.870166 cargado)
+     sin dato: bologna-it 2020 (sitio 2.790809): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: bologna-it 2021 (sitio 12.056249): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: bologna-it 2023 (sitio 14.457636): escalón 0 (14.457056): no coincide con documento siguiente (13.883864 en el siguiente); escalón 1: sin propuesta; escalón 2 (14.457636): no coincide con documento siguiente (0.000014 en el siguiente)
+     sin dato: bologna-it 2024 (sitio 18.103022): escalón 0 (18.102639): no coincide con año anterior (13.883864 contra 14.457636 cargado); escalón 1 (18.103022): no coincide con año anterior (13.884153 contra 14.457636 cargado); escalón 2 (0.000018): no coincide con año anterior (0.000014 contra 14.457636 cargado) ni documento siguiente (18.103022 en el siguiente)
+     sin dato: botafogo 2023 (sitio 16.057): escalón 0: sin propuesta; escalón 1 (16.057): ningún año vecino para comparar; escalón 2 (16.057): ningún año vecino para comparar
+     sin dato: botafogosp-br 2024 (sitio 0.013588): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.013588): ningún año vecino para comparar
+     sin dato: boyacachico-co 2024 (sitio 441.174314): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (441.174314): ningún año vecino para comparar
+     sin dato: braga-pt 2020 (sitio 17.039809): escalón 0 (17.039809): ningún año vecino para comparar; escalón 1 (17.039809): ningún año vecino para comparar; escalón 2 (17.039809): ningún año vecino para comparar
+     sin dato: brighton-gb 2024 (sitio 14.966): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: brighton-gb 2025 (sitio 39.836): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: brondby-dk 2020 (sitio 22.985): escalón 0: sin propuesta; escalón 1 (22.985): ningún año vecino para comparar; escalón 2 (22.985): ningún año vecino para comparar
+     sin dato: burnley-gb 2024 (sitio 8.91): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: burnley-gb 2025 (sitio 12.909): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: catolica-cl 2015 (sitio 202.578): escalón 0 (202.578): no coincide con documento siguiente (1822.249 en el siguiente); escalón 1 (202.578): no coincide con documento siguiente (1822.249 en el siguiente); escalón 2 (202.578): no coincide con documento siguiente (1822.249 en el siguiente)
+     sin dato: catolica-cl 2016 (sitio 3256.284): escalón 0 (3256.284): no coincide con año anterior (1822.249 contra 202.578 cargado); escalón 1 (3256.284): no coincide con año anterior (1822.249 contra 202.578 cargado); escalón 2 (3256.284): no coincide con año anterior (1822.249 contra 202.578 cargado)
+     sin dato: ceara-br 2024 (sitio 0.619): escalón 0 (2.11042): no coincide con documento siguiente (0.619156 en el siguiente); escalón 1 (2.11042): no coincide con documento siguiente (0.619156 en el siguiente); escalón 2 (2.11042): no coincide con documento siguiente (0.619156 en el siguiente)
+     sin dato: celtavigo 2025 (sitio 13.97507): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: cerclebrugge-be 2025 (sitio 6.900418): escalón 0: sin propuesta; escalón 1 (6.900418): ningún año vecino para comparar; escalón 2: sin propuesta
+     sin dato: chapecoense-br 2017 (sitio 8.340897): escalón 0 (0.000027): ningún año vecino para comparar; escalón 1: sin propuesta; escalón 2 (8.340897): ningún año vecino para comparar
+     sin dato: chapecoense-br 2021 (sitio 2.531): escalón 0: sin propuesta; escalón 1 (2.531): ningún año vecino para comparar; escalón 2 (2.531): ningún año vecino para comparar
+     sin dato: charleroi-be 2025 (sitio 0.898948): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: chaves-pt 2022 (sitio 0.157337): escalón 0: sin propuesta; escalón 1 (0.000013): no coincide con documento siguiente (0.453309 en el siguiente); escalón 2 (0.000013): no coincide con documento siguiente (0.453309 en el siguiente)
+     sin dato: chelsea-gb 2025 (sitio 49.009): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: clubbrugge-be 2025 (sitio 21.401): escalón 0: sin propuesta; escalón 1 (21.401): ningún año vecino para comparar; escalón 2 (21.401): ningún año vecino para comparar
+     sin dato: como-it 2024 (sitio 3.297846): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (3297.846): no coincide con documento siguiente (4.129461 en el siguiente)
+     sin dato: como-it 2025 (sitio 7.712721): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (7.712721): no coincide con año anterior (4.129462 contra 3.297846 cargado)
+     sin dato: corinthians-br 2024 (sitio 12.699): escalón 0: sin propuesta; escalón 1 (0.0127): ningún año vecino para comparar; escalón 2 (0.0127): ningún año vecino para comparar
+     sin dato: corinthians-br 2025 (sitio 26.019): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: coritiba 2023 (sitio 11.830912): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: criciuma-br 2020 (sitio 0.016676): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.416676): no coincide con documento siguiente (0.016676 en el siguiente)
+     sin dato: dender-be 2025 (sitio 0.044976): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: depcali-co 2025 (sitio 21158.174): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: deportivoalaves 2025 (sitio 5.216203): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: deportivopereira-co 2025 (sitio 9.65677): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: dinamozagreb-hr 2024 (sitio 0.562542): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (562542.790271): ningún año vecino para comparar
+     sin dato: dortmund-de 2024 (sitio 4.36): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: dortmund-de 2025 (sitio 20.633): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: eintrachtfrankfurt-de 2024 (sitio 3.666443): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: eintrachtfrankfurt-de 2025 (sitio 4.383441): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: elche-es 2024 (sitio 23.896009): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (23.896009): ningún año vecino para comparar
+     sin dato: elche-es 2025 (sitio 14.55): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: envigado 2025 (sitio 9181.759716): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: espanyol-es 2025 (sitio 13.950791): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: fcbarcelona 2025 (sitio 136.328): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: fckobenhavn-dk 2024 (sitio 76.684): escalón 0: sin propuesta; escalón 1 (76684102.463): ningún año vecino para comparar; escalón 2 (76684102.463): ningún año vecino para comparar
+     sin dato: ferroviaria-br 2010 (sitio 0.239557): escalón 0: sin propuesta; escalón 1 (0.239557): ningún año vecino para comparar; escalón 2 (0.239557): ningún año vecino para comparar
+     sin dato: ferroviaria-br 2012 (sitio 0.000884): escalón 0 (0.000884): ningún año vecino para comparar; escalón 1 (0.000884): ningún año vecino para comparar; escalón 2 (0.000884): ningún año vecino para comparar
+     sin dato: ferroviaria-br 2013 (sitio 0.005877): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: ferroviaria-br 2014 (sitio 0.090656): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: ferroviaria-br 2015 (sitio 0.004477): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: ferroviaria-br 2017 (sitio 0.004179): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: ferroviaria-br 2018 (sitio 0.017067): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: ferroviaria-br 2021 (sitio 0.258722): escalón 0 (0.258722): ningún año vecino para comparar; escalón 1 (0.258722): ningún año vecino para comparar; escalón 2 (0.258722): ningún año vecino para comparar
+     sin dato: ferroviaria-br 2022 (sitio 0.699194): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: feyenoord-nl 2024 (sitio 0.062): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.0015): no coincide con documento siguiente (14.648 en el siguiente)
+     sin dato: feyenoord-nl 2025 (sitio 14.648): escalón 0: sin propuesta; escalón 1 (0.0015): no coincide con año anterior (14.648 contra 0.062 cargado); escalón 2 (0.0015): no coincide con año anterior (14.648 contra 0.062 cargado)
+     sin dato: fiorentina-it 2019 (sitio 7.485661): escalón 0 (7.485661): ningún año vecino para comparar; escalón 1: sin propuesta; escalón 2 (7.485662): ningún año vecino para comparar
+     sin dato: flamengo-br 2024 (sitio 70.557): escalón 0: sin propuesta; escalón 1 (70557234.487): 70557234.487 es 56466.8 veces los ingresos del año (techo 3) y ninguna otra escala cae debajo; escalón 2 (70557234.487): 70557234.487 es 56466.8 veces los ingresos del año (techo 3) y ninguna otra escala cae debajo
+     sin dato: flamengo-br 2025 (sitio 143.941): escalón 0: sin propuesta; escalón 1 (3143.941): no coincide con año anterior (70557191.714 contra 70.557 cargado); escalón 2 (3143.941): no coincide con año anterior (70557191.714 contra 70.557 cargado)
+     sin dato: fluminense-br 2024 (sitio 10.423): escalón 0: sin propuesta; escalón 1 (10.423): no coincide con documento siguiente (0.010423 en el siguiente); escalón 2 (10.423): no coincide con documento siguiente (0.010423 en el siguiente)
+     sin dato: fortaleza-br 2025 (sitio 4.074): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (12.136): ningún año vecino para comparar
+     sin dato: fortalezaceif-co 2019 (sitio 169.648): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: fortalezaceif-co 2020 (sitio 151.365): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: fortalezaceif-co 2021 (sitio 20.036): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: fortalezaceif-co 2022 (sitio 241.766): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: fredericia-dk 2019 (sitio 1.182138): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: fulham-gb 2024 (sitio 32.768): escalón 0: sin propuesta; escalón 1 (32.768): ningún año vecino para comparar; escalón 2 (32.768): ningún año vecino para comparar
+     sin dato: fulham-gb 2025 (sitio 13.172): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: genk-be 2025 (sitio 3.500316): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: genoa-it 2022 (sitio 1.16452): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (1.16452): no coincide con documento siguiente (89.023768 en el siguiente)
+     sin dato: genoa-it 2025 (sitio 2.280076): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (2.280076): ningún año vecino para comparar
+     sin dato: gent-be 2025 (sitio 9.057614): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: getafe-es 2024 (sitio 3.374345): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: getafe-es 2025 (sitio 6.450427): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: gilvicente-pt 2023 (sitio 0.067204): escalón 0 (0.067204): no coincide con documento siguiente (0.147451 en el siguiente); escalón 1 (0.067204): no coincide con documento siguiente (0.147451 en el siguiente); escalón 2 (0.067204): no coincide con documento siguiente (0.147451 en el siguiente)
+     sin dato: gilvicente-pt 2024 (sitio 1.064865): escalón 0 (1.064865): no coincide con año anterior (0.147451 contra 0.067204 cargado) ni documento siguiente (1.051947 en el siguiente); escalón 1 (1.064865): no coincide con año anterior (0.147451 contra 0.067204 cargado) ni documento siguiente (1.051947 en el siguiente); escalón 2 (1.064865): no coincide con año anterior (0.147451 contra 0.067204 cargado) ni documento siguiente (1.051947 en el siguiente)
+     sin dato: gilvicente-pt 2025 (sitio 0.186924): escalón 0 (0.186924): no coincide con año anterior (1.051947 contra 1.064865 cargado); escalón 1 (0.186924): no coincide con año anterior (1.051947 contra 1.064865 cargado); escalón 2 (0.186924): no coincide con año anterior (1.051947 contra 1.064865 cargado)
+     sin dato: girona-es 2020 (sitio 3.856412): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.0127): ningún año vecino para comparar
+     sin dato: girona-es 2025 (sitio 11.121773): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.0127): ningún año vecino para comparar
+     sin dato: godoycruz-ar 2020 (sitio 161.039724): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: goias-br 2008 (sitio 0.010013): escalón 0: sin propuesta; escalón 1 (0.010013): ningún año vecino para comparar; escalón 2 (0.010013): ningún año vecino para comparar
+     sin dato: goias-br 2010 (sitio 0.105864): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: goias-br 2011 (sitio 0.105387): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: goias-br 2012 (sitio 9.051718): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: goias-br 2015 (sitio 0.019481): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: goias-br 2016 (sitio 1.553501): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: gorica-hr 2025 (sitio 0.002263): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: gremio 2024 (sitio 11.145): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (11.145): ningún año vecino para comparar
+     sin dato: guarani-br 2024 (sitio 0.298): escalón 0: sin propuesta; escalón 1 (4298.19): ningún año vecino para comparar; escalón 2 (4298.19): ningún año vecino para comparar
+     sin dato: guarani-br 2025 (sitio 6.535): escalón 0: sin propuesta; escalón 1 (0.001018): ningún año vecino para comparar; escalón 2 (0.001018): ningún año vecino para comparar
+     sin dato: hajduksplit-hr 2024 (sitio 1.414039): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (1414039.465381): ningún año vecino para comparar
+     sin dato: hamburgersv-de 2025 (sitio 35.985966): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: hellasverona-it 2020 (sitio 6.206891): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (6206.891): no coincide con documento siguiente (12.993058 en el siguiente)
+     sin dato: hellasverona-it 2021 (sitio 8.972): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (8.972): no coincide con documento siguiente (46606.665 en el siguiente)
+     sin dato: hellasverona-it 2022 (sitio 12.002952): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (12002.952): no coincide con año anterior (8972 contra 8.972 cargado) ni documento siguiente (90.480163 en el siguiente)
+     sin dato: hoffenheim-de 2024 (sitio 35.578492): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: hoffenheim-de 2025 (sitio 41.681699): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: inter-it 2018 (sitio 45.070948): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (45070.948): no coincide con documento siguiente (1141.407 en el siguiente)
+     sin dato: inter-it 2019 (sitio 54.666197): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: inter-it 2020 (sitio 88.505854): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: inter-it 2023 (sitio 100.515644): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: internacional-br 2024 (sitio 3.77): escalón 0: sin propuesta; escalón 1 (0.003771): ningún año vecino para comparar; escalón 2: sin propuesta
+     sin dato: internacional-br 2025 (sitio 2.261): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: istra-hr 2025 (sitio 0.114452): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: ituano 2024 (sitio 0.054008): escalón 0: sin propuesta; escalón 1 (0.054008): ningún año vecino para comparar; escalón 2 (0.054008): ningún año vecino para comparar
+     sin dato: junior-co 2025 (sitio 9012.064): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: juventude-br 2020 (sitio 0.02633058): escalón 0: sin propuesta; escalón 1 (7.858884): ningún año vecino para comparar; escalón 2 (0.026331): ningún año vecino para comparar
+     sin dato: juvestabia-it 2024 (sitio 0.049496): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.049496): ningún año vecino para comparar
+     sin dato: koln-de 2024 (sitio 11.88274): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: koln-de 2025 (sitio 6.197026): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: lazio-it 1999 (sitio 11725.696826): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (11725.696826): no coincide con documento siguiente (6.055817 en el siguiente)
+     sin dato: lazio-it 2000 (sitio 148248.073498): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (148248.073498): no coincide con documento siguiente (76.56374 en el siguiente)
+     sin dato: lazio-it 2001 (sitio 988.25167): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.510389): no coincide con año anterior (76.56374 contra 148248.073498 cargado)
+     sin dato: lazio-it 2007 (sitio 3.316854): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (3.316854): no coincide con documento siguiente (3316.854 en el siguiente)
+     sin dato: lazio-it 2008 (sitio 9.269875): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (9269.875): no coincide con año anterior (3316.854 contra 3.316854 cargado) ni documento siguiente (5374.872 en el siguiente)
+     sin dato: lazio-it 2009 (sitio 5.724069): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (5724.069): no coincide con año anterior (9269.875 contra 9.269875 cargado) ni documento siguiente (5481.921 en el siguiente)
+     sin dato: lazio-it 2010 (sitio 5.098203): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (5098.203): no coincide con año anterior (5724.069 contra 5.724069 cargado) ni documento siguiente (2887.29 en el siguiente)
+     sin dato: lazio-it 2011 (sitio 4.92426): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (3602.45): no coincide con año anterior (2887.29 contra 5.098203 cargado)
+     sin dato: lazio-it 2012 (sitio 10.159614): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (10159.614): no coincide con año anterior (4924.26 contra 4.92426 cargado) ni documento siguiente (8338.443 en el siguiente)
+     sin dato: lazio-it 2013 (sitio 8.361559): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (8361.559): no coincide con año anterior (10159.614 contra 10.159614 cargado) ni documento siguiente (5.93819 en el siguiente)
+     sin dato: lazio-it 2014 (sitio 3.958477): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (3.958477): no coincide con documento siguiente (2882.46 en el siguiente)
+     sin dato: lazio-it 2015 (sitio 2.940539): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (2940.539): no coincide con año anterior (3958.477 contra 3.958477 cargado) ni documento siguiente (0.42932 en el siguiente)
+     sin dato: lazio-it 2016 (sitio 3.621951): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (3.621951): no coincide con documento siguiente (2551.267 en el siguiente)
+     sin dato: lazio-it 2017 (sitio 3.027958): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (3027.958): no coincide con año anterior (3621.951 contra 3.621951 cargado) ni documento siguiente (519.568 en el siguiente)
+     sin dato: lazio-it 2018 (sitio 4.131819): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (4131.819): no coincide con año anterior (3027.958 contra 3.027958 cargado) ni documento siguiente (1512.451 en el siguiente)
+     sin dato: lazio-it 2019 (sitio 3.90351): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (3903.51): no coincide con año anterior (4131.819 contra 4.131819 cargado) ni documento siguiente (1226.282 en el siguiente)
+     sin dato: lazio-it 2020 (sitio 11.327566): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (2777.817): no coincide con año anterior (1226.282 contra 3.90351 cargado) ni documento siguiente (2.777817 en el siguiente)
+     sin dato: lazio-it 2021 (sitio 13.891881): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (13.891881): no coincide con documento siguiente (2.74743 en el siguiente)
+     sin dato: lazio-it 2022 (sitio 13.783337): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (2.110378): no coincide con año anterior (2.74743 contra 13.891881 cargado)
+     sin dato: lazio-it 2023 (sitio 12.478285): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (1.744606): no coincide con año anterior (2.110378 contra 13.783337 cargado)
+     sin dato: lazio-it 2024 (sitio 15.091641): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (15.091641): no coincide con documento siguiente (1.849143 en el siguiente)
+     sin dato: lazio-it 2025 (sitio 6.057272): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (6.057272): no coincide con documento siguiente (4.727745 en el siguiente)
+     sin dato: lazio-it 2026 (sitio 1.839627): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (1.083614): no coincide con año anterior (4.727745 contra 6.057272 cargado)
+     sin dato: leeds-gb 2024 (sitio 5.008994): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (5.008994): ningún año vecino para comparar
+     sin dato: leeds-gb 2025 (sitio 33.952665): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: levante-es 2025 (sitio 0.60815): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (13.60815): ningún año vecino para comparar
+     sin dato: losandes-ar 2020 (sitio 2.476216): escalón 0: sin propuesta; escalón 1 (0.000002): no coincide con documento siguiente (0.169809 en el siguiente); escalón 2 (0.000004): no coincide con documento siguiente (8.159819 en el siguiente)
+     sin dato: losandes-ar 2021 (sitio 8.159819): escalón 0: sin propuesta; escalón 1 (0.000002): no coincide con año anterior (0.169809 contra 2.476216 cargado); escalón 2 (0.000004): no coincide con año anterior (8.159819 contra 2.476216 cargado)
+     sin dato: mafra-pt 2024 (sitio 0.181615): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.181615): ningún año vecino para comparar
+     sin dato: mechelen-be 2025 (sitio 3.134613): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: midtjylland-dk 2019 (sitio 53.452): escalón 0: sin propuesta; escalón 1 (0.053453): ningún año vecino para comparar; escalón 2 (0.053453): ningún año vecino para comparar
+     sin dato: millonarios-co 2025 (sitio 6465.046): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: mirassol 2024 (sitio 11.583747): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (11.583747): ningún año vecino para comparar
+     sin dato: monchengladbach-de 2023 (sitio 0.493335): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: monza-it 2022 (sitio 2.185119): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (2.185119): no coincide con documento siguiente (60.9601 en el siguiente)
+     sin dato: napoli-it 2025 (sitio 174.441453): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (174441453210.492): ningún año vecino para comparar
+     sin dato: newcastle-gb 2025 (sitio 12.701): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: nordsjaelland-dk 2024 (sitio 16.943338): escalón 0: sin propuesta; escalón 1 (null): sin escala del documento; escalón 2 (null): sin escala del documento
+     sin dato: nottinghamforest-gb 2024 (sitio 0.029): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: nottinghamforest-gb 2025 (sitio 13.224): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: novorizontino-br 2010 (sitio 0.000014): escalón 0: sin propuesta; escalón 1 (0.000014): ningún año vecino para comparar; escalón 2 (0.000014): ningún año vecino para comparar
+     sin dato: novorizontino-br 2013 (sitio 1.106882): escalón 0 (1.106882): ningún año vecino para comparar; escalón 1 (1.106882): ningún año vecino para comparar; escalón 2 (0.004272): ningún año vecino para comparar
+     sin dato: novorizontino-br 2014 (sitio 0.018189): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: novorizontino-br 2017 (sitio 0.115299): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.012671): no coincide con documento siguiente (0.115 en el siguiente)
+     sin dato: novorizontino-br 2022 (sitio 0.146924): escalón 0 (0.72173): no coincide con documento siguiente (0.146924 en el siguiente); escalón 1 (0.72173): no coincide con documento siguiente (0.146924 en el siguiente); escalón 2 (0.72173): no coincide con documento siguiente (0.146924 en el siguiente)
+     sin dato: oficrete-gr 2018 (sitio 0.060826): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: oficrete-gr 2019 (sitio 0.084684): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: oficrete-gr 2021 (sitio 0.761742): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: oficrete-gr 2022 (sitio 0.279353): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: oficrete-gr 2023 (sitio 0.247006): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: oficrete-gr 2024 (sitio 0.396045): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: oncecaldas 2022 (sitio 1265.57): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: oncecaldas 2023 (sitio 7063.322): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: oncecaldas 2024 (sitio 4580.663): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: oncecaldas 2025 (sitio 7559.569): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: osasuna-es 2022 (sitio 6.029247): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (6.029247): ningún año vecino para comparar
+     sin dato: osasuna-es 2024 (sitio 3.067461): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (3.067461): ningún año vecino para comparar
+     sin dato: osijek-hr 2025 (sitio 1.585818): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.000007): ningún año vecino para comparar
+     sin dato: pacosdeferreira-pt 2020 (sitio 0.01827): escalón 0 (0.01827): ningún año vecino para comparar; escalón 1 (0.01827): ningún año vecino para comparar; escalón 2 (0.01827): ningún año vecino para comparar
+     sin dato: palmeiras-br 2024 (sitio 38.363): escalón 0: sin propuesta; escalón 1 (1.325): ningún año vecino para comparar; escalón 2 (1.325): ningún año vecino para comparar
+     sin dato: palmeiras-br 2025 (sitio 118.371): escalón 0: sin propuesta; escalón 1 (1.907): no coincide con año anterior (1.325 contra 38.363 cargado); escalón 2 (1.907): no coincide con año anterior (1.325 contra 38.363 cargado)
+     sin dato: panathinaikos-gr 2025 (sitio 1.474426): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (1.620564): ningún año vecino para comparar
+     sin dato: panetolikos-gr 2022 (sitio 0.222422): escalón 0 (0.222422): no coincide con documento siguiente (0.254909 en el siguiente); escalón 1: sin propuesta; escalón 2 (0.222422): no coincide con documento siguiente (0.254909 en el siguiente)
+     sin dato: panetolikos-gr 2023 (sitio 0.254909): escalón 0 (0.000007): no coincide con año anterior (0.254909 contra 0.222422 cargado) ni documento siguiente (0.298815 en el siguiente); escalón 1: sin propuesta; escalón 2 (0.000007): no coincide con año anterior (0.254909 contra 0.222422 cargado) ni documento siguiente (0.298815 en el siguiente)
+     sin dato: panetolikos-gr 2024 (sitio 0.298815): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.000006): no coincide con año anterior (0.298815 contra 0.254909 cargado) ni documento siguiente (0.222825 en el siguiente)
+     sin dato: panetolikos-gr 2025 (sitio 0.222825): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.000006): no coincide con año anterior (0.222825 contra 0.298815 cargado)
+     sin dato: panserraikos-gr 2023 (sitio 0.118978): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: panserraikos-gr 2025 (sitio 0.203968): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: paok-gr 2017 (sitio 1.874677): escalón 0 (1.874677): ningún año vecino para comparar; escalón 1: sin propuesta; escalón 2 (1.874677): ningún año vecino para comparar
+     sin dato: parma-it 2021 (sitio 13.604274): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (13.604274): ningún año vecino para comparar
+     sin dato: parma-it 2022 (sitio 15.786022): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (15.786022): no coincide con año anterior (13.748136 contra 13.604274 cargado)
+     sin dato: parma-it 2023 (sitio 14.308296): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (14.308296): no coincide con año anterior (15.362604 contra 15.786022 cargado)
+     sin dato: parma-it 2024 (sitio 6.830192): escalón 0 (6.830192): no coincide con documento siguiente (6.912479 en el siguiente); escalón 1: sin propuesta; escalón 2 (6.830192): no coincide con documento siguiente (6.912479 en el siguiente)
+     sin dato: parma-it 2025 (sitio 10.788917): escalón 0 (10.788917): no coincide con año anterior (6.912479 contra 6.830192 cargado); escalón 1: sin propuesta; escalón 2 (10.788917): no coincide con año anterior (6.912479 contra 6.830192 cargado)
+     sin dato: paysandu-br 2021 (sitio 0.253575): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: paysandu-br 2023 (sitio 0.350177): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: paysandu-br 2024 (sitio 0.494191): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: paysandu-br 2025 (sitio 1.156354): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: pontepreta-br 2022 (sitio 0.043848): escalón 0: sin propuesta; escalón 1 (8.263039): ningún año vecino para comparar; escalón 2 (8.263039): ningún año vecino para comparar
+     sin dato: pontepreta-br 2023 (sitio 0.067135): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: pontepreta-br 2024 (sitio 16.148531): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: porto-pt 2016 (sitio 7.392033): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.000414): no coincide con documento siguiente (0.007392 en el siguiente)
+     sin dato: porto-pt 2017 (sitio 14.74335): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.000414): no coincide con año anterior (14.74335 contra 7.392033 cargado) ni documento siguiente (0.014743 en el siguiente)
+     sin dato: porto-pt 2018 (sitio 29.020109): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.000414): no coincide con año anterior (29.020109 contra 14.74335 cargado) ni documento siguiente (0.02902 en el siguiente)
+     sin dato: porto-pt 2019 (sitio 9.48963): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.000414): no coincide con año anterior (9.48963 contra 29.020109 cargado)
+     sin dato: porto-pt 2021 (sitio 8.655377): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.000414): no coincide con documento siguiente (5.05782 en el siguiente)
+     sin dato: porto-pt 2022 (sitio 5.05782): escalón 0: sin propuesta; escalón 1 (0.000414): no coincide con año anterior (5.05782 contra 8.655377 cargado) ni documento siguiente (19.957769 en el siguiente); escalón 2 (0.000414): no coincide con año anterior (5.05782 contra 8.655377 cargado) ni documento siguiente (19.957769 en el siguiente)
+     sin dato: porto-pt 2023 (sitio 19.957769): escalón 0: sin propuesta; escalón 1 (0.000414): no coincide con año anterior (19.957769 contra 5.05782 cargado); escalón 2 (0.000414): no coincide con año anterior (19.957769 contra 5.05782 cargado)
+     sin dato: porto-pt 2024 (sitio 3.518768): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (3.518768): no coincide con año anterior (19.774846 contra 19.957769 cargado) ni documento siguiente (18.409 en el siguiente)
+     sin dato: porto-pt 2025 (sitio 18.409): escalón 0 (3.519): no coincide con año anterior (18.409 contra 3.518768 cargado); escalón 1: sin propuesta; escalón 2 (3.519): no coincide con año anterior (18.409 contra 3.518768 cargado)
+     sin dato: psv-nl 2024 (sitio 21.859): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (21.859): ningún año vecino para comparar
+     sin dato: randers-dk 2023 (sitio 11.464548): escalón 0: sin propuesta; escalón 1 (11.464548): ningún año vecino para comparar; escalón 2 (11.464548): ningún año vecino para comparar
+     sin dato: rayovallecano-es 2025 (sitio 39.714987): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: rbleipzig-de 2022 (sitio 4.104803): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: rbleipzig-de 2025 (sitio 0.714562): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: rcdmallorca-es 2025 (sitio 3.599131): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (3.599131): ningún año vecino para comparar
+     sin dato: realbetis 2025 (sitio 15.954506): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: realmadrid 2025 (sitio 175.827): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: realoviedo-es 2025 (sitio 1.433716): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: remo-br 2019 (sitio 0.351275): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: remo-br 2020 (sitio 0.344803): escalón 0: sin propuesta; escalón 1 (1.585173): ningún año vecino para comparar; escalón 2 (1.585173): ningún año vecino para comparar
+     sin dato: remo-br 2023 (sitio 0.767822): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: remo-br 2024 (sitio 0.150907): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: rijeka-hr 2024 (sitio 1.691323): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (1.691323): ningún año vecino para comparar
+     sin dato: salernitana-it 2022 (sitio 7.02114): escalón 0 (7021.14): no coincide con documento siguiente (7.221109 en el siguiente); escalón 1 (7021.14): no coincide con documento siguiente (7.221109 en el siguiente); escalón 2 (7021.14): no coincide con documento siguiente (7.221109 en el siguiente)
+     sin dato: salernitana-it 2023 (sitio 5.459064): escalón 0: sin propuesta; escalón 1 (5.459063): no coincide con año anterior (7.221109 contra 7.02114 cargado); escalón 2 (5.459063): no coincide con año anterior (7.221109 contra 7.02114 cargado)
+     sin dato: sampdoria-it 2018 (sitio 3.856659): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: sampdoria-it 2019 (sitio 5.004152): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (5004.152): no coincide con año anterior (3856.659 contra 3.856659 cargado) ni documento siguiente (124999.497 en el siguiente)
+     sin dato: sampdoria-it 2020 (sitio 8.013182): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (8013.183): no coincide con año anterior (5004.152 contra 5.004152 cargado) ni documento siguiente (201.60635 en el siguiente)
+     sin dato: santafe-co 2025 (sitio 684.927123): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (684.927123): ningún año vecino para comparar
+     sin dato: santos-br 2024 (sitio 0.17): escalón 0: sin propuesta; escalón 1 (5170.582): ningún año vecino para comparar; escalón 2 (5170.582): ningún año vecino para comparar
+     sin dato: santos-br 2025 (sitio 0.295): escalón 0: sin propuesta; escalón 1 (5295.17): ningún año vecino para comparar; escalón 2 (5295.17): ningún año vecino para comparar
+     sin dato: saopaulo-br 2023 (sitio 3.346): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: sassuolo-it 2021 (sitio 0.680768): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (680.768): no coincide con año anterior (519.731 contra 0.519731 cargado) ni documento siguiente (71847.573 en el siguiente)
+     sin dato: sassuolo-it 2022 (sitio 0.612155): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (612.155): no coincide con año anterior (680.768 contra 0.680768 cargado) ni documento siguiente (105264.869 en el siguiente)
+     sin dato: sassuolo-it 2023 (sitio 2.876997): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (2876.997): no coincide con año anterior (612.155 contra 0.612155 cargado) ni documento siguiente (93480.019 en el siguiente)
+     sin dato: sassuolo-it 2024 (sitio 0.396273): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (396.273): no coincide con año anterior (2876.997 contra 2.876997 cargado) ni documento siguiente (65608.342 en el siguiente)
+     sin dato: sevillafc 2025 (sitio 39.247): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: silkeborg-dk 2024 (sitio 20.522): escalón 0: sin propuesta; escalón 1 (20.522): ningún año vecino para comparar; escalón 2 (20.522): ningún año vecino para comparar
+     sin dato: sinttruiden-be 2025 (sitio 3.805795): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: slavenbelupo-hr 2025 (sitio 0.026003): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (0.000003): ningún año vecino para comparar
+     sin dato: sonderjyske-dk 2022 (sitio 0.014547): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: sportingcp-pt 2002 (sitio 4.817): escalón 0: sin propuesta; escalón 1 (4.817): no coincide con año anterior (2.152 contra 431.489 cargado); escalón 2: sin propuesta
+     sin dato: sportingcp-pt 2008 (sitio 0.332): escalón 0: sin propuesta; escalón 1 (0.332): no coincide con año anterior (1.038 contra 26.316 cargado); escalón 2 (0.332): no coincide con año anterior (1.038 contra 26.316 cargado)
+     sin dato: sportrecife-br 2025 (sitio 2.388): escalón 0: sin propuesta; escalón 1 (83.775): ningún año vecino para comparar; escalón 2 (83.775): ningún año vecino para comparar
+     sin dato: standardliege-be 2025 (sitio 0.311835): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: stuttgart-de 2023 (sitio 9.153243): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: stuttgart-de 2024 (sitio 10.438385): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: sunderland-gb 2024 (sitio 0): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: sunderland-gb 2025 (sitio 20.711): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: talleres-ar 2024 (sitio 220.025129): escalón 0: sin propuesta; escalón 1 (0.000002): no coincide con documento siguiente (519.884887 en el siguiente); escalón 2 (0.000002): no coincide con documento siguiente (519.884887 en el siguiente)
+     sin dato: talleres-ar 2025 (sitio 519.884887): escalón 0: sin propuesta; escalón 1 (0.000002): no coincide con año anterior (519.884887 contra 220.025129 cargado); escalón 2 (0.000002): no coincide con año anterior (519.884887 contra 220.025129 cargado)
+     sin dato: tondela-pt 2021 (sitio 1.262584): escalón 0: sin propuesta; escalón 1 (1.262584): ningún año vecino para comparar; escalón 2 (1.262584): ningún año vecino para comparar
+     sin dato: tottenham-gb 2024 (sitio 78.974): escalón 0 (78974198.265): no coincide con documento siguiente (78.974 en el siguiente); escalón 1: sin propuesta; escalón 2 (78974198.265): no coincide con documento siguiente (78.974 en el siguiente)
+     sin dato: udinese-it 2022 (sitio 44.180419): escalón 0: sin propuesta; escalón 1 (0.165648): ningún año vecino para comparar; escalón 2 (44.180419): ningún año vecino para comparar
+     sin dato: udinese-it 2025 (sitio 1.948196): escalón 0 (1.948196): ningún año vecino para comparar; escalón 1: sin propuesta; escalón 2 (1.948196): ningún año vecino para comparar
+     sin dato: unionmagdalena-co 2018 (sitio 1494.693): escalón 0: sin propuesta; escalón 1 (1494.693): ningún año vecino para comparar; escalón 2 (1494.693): ningún año vecino para comparar
+     sin dato: unionsg-be 2025 (sitio 1.27532): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: valenciacf 2025 (sitio 31.752): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: varazdin-hr 2025 (sitio 2.079826): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2 (2.079826): ningún año vecino para comparar
+     sin dato: vascodagama-br 2023 (sitio 79.922): escalón 0: sin propuesta; escalón 1 (0.079923): ningún año vecino para comparar; escalón 2 (0.079923): ningún año vecino para comparar
+     sin dato: vejle-dk 2024 (sitio 4.548): escalón 0: sin propuesta; escalón 1 (null): sin escala del documento; escalón 2 (null): sin escala del documento
+     sin dato: viborg-dk 2024 (sitio 30.026932): escalón 0: sin propuesta; escalón 1 (30.026932): ningún año vecino para comparar; escalón 2 (30.026932): ningún año vecino para comparar
+     sin dato: vilanova-br 2021 (sitio 0.340353): escalón 0: sin propuesta; escalón 1 (0.340353): ningún año vecino para comparar; escalón 2 (0.340353): ningún año vecino para comparar
+     sin dato: vilanova-br 2024 (sitio 0.496737): escalón 0 (0.496737): no coincide con documento siguiente (0.312 en el siguiente); escalón 1 (0.496737): no coincide con documento siguiente (0.312 en el siguiente); escalón 2 (0.496737): no coincide con documento siguiente (0.312 en el siguiente)
+     sin dato: vilanova-br 2025 (sitio 0.016): escalón 0 (0.016): no coincide con año anterior (0.312 contra 0.496737 cargado); escalón 1 (0.016): no coincide con año anterior (0.312 contra 0.496737 cargado); escalón 2 (0.016): no coincide con año anterior (0.312 contra 0.496737 cargado)
+     sin dato: villarrealcf 2024 (sitio 47.616789): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: vitoria-br 2025 (sitio 0.066): escalón 0: sin propuesta; escalón 1 (66.228): ningún año vecino para comparar; escalón 2 (66.228): ningún año vecino para comparar
+     sin dato: vizela-pt 2023 (sitio 0.034828): escalón 0 (0.034828): no coincide con documento siguiente (0.147399 en el siguiente); escalón 1: sin propuesta; escalón 2 (0.000013): no coincide con año anterior (0.034828 contra 0.479759 cargado) ni documento siguiente (0.147399 en el siguiente)
+     sin dato: volosnfc-gr 2021 (sitio 1.419534): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: volosnfc-gr 2022 (sitio 0.794381): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: volosnfc-gr 2023 (sitio 2.063576): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: volosnfc-gr 2024 (sitio 1.440092): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: volosnfc-gr 2025 (sitio 1.536396): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: werderbremen-de 2023 (sitio 18.966331): escalón 0: sin propuesta; escalón 1: sin propuesta
+     sin dato: werderbremen-de 2024 (sitio 39.593507): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: werderbremen-de 2025 (sitio 29.59003): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: westerlo-be 2025 (sitio 0.13509): escalón 0: sin propuesta; escalón 1 (0.090238): ningún año vecino para comparar; escalón 2: sin propuesta
+     sin dato: westham-gb 2025 (sitio 0.422): escalón 0: sin propuesta; escalón 1 (0.422): ningún año vecino para comparar; escalón 2 (0.422): ningún año vecino para comparar
+     sin dato: wolves-gb 2024 (sitio 30.563): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta
+     sin dato: zultewaregem-be 2025 (sitio 0.629659): escalón 0: sin propuesta; escalón 1: sin propuesta; escalón 2: sin propuesta

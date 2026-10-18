@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Inglaterra/West Ham United/west-ham-united-full-accounts-2024-25.md",
+ "generado": "2026-10-18T05:53:29.638Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£000 £000",
+ "caja": {
+  "lineas": [
+   1375
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   2233,
+   2235,
+   2236
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance principal agrupa los acreedores sin desglosar la deuda; las líneas de deuda salen de la nota 16 (Total Borrowings): debentures por 611, préstamo garantizado de Barclays corriente (1,621) y no corriente (2,256). No se incluye el sobregiro porque no aparece con saldo."
+}

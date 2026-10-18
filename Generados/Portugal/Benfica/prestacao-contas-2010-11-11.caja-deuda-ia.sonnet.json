@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Benfica/prestacao-contas-2010-11-11.md",
+ "generado": "2026-10-18T05:50:12.595Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "EM 30 DE JUNHO DE 2010 E EM 30 DE JUNHO DE 2009",
+ "caja": {
+  "lineas": [
+   6331
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   6343,
+   6352
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los encabezados de columna parecen invertidos: la columna rotulada 30.06.09 trae los valores consolidados grandes (total activo 381,2 M€, que el informe de gestión atribuye al cierre 2010), y 30.06.10 trae los valores pequeños. Se tomó la columna consolidada de 381.231.590 como el cierre más reciente (2010), no la rotulada 30.06.10. Las cifras están en euros enteros y no hay frase explícita de escala; la evidencia es la cabecera del balance. Las líneas elegidas son Empréstimos obtidos no corriente (L6343) y corriente (L6352)."
+}

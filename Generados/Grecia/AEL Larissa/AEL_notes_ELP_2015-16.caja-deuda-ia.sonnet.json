@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2015-16.md",
+ "generado": "2026-10-18T05:49:34.416Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε μονάδες Ευρώ",
+ "caja": {
+  "lineas": [
+   39
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no muestra préstamos ni obligaciones bancarias. Solo aparecen 'Λοιπές μακροπρόθεσμες υποχρεώσεις' (L63) y 'Λοιπές υποχρεώσεις' (L69), que no se identifican como deuda financiera, por lo que no se incluyeron."
+}

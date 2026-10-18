@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Italia/Napoli/Napoli-bilancio-2025.md",
+ "generado": "2026-10-18T05:52:15.652Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "la valuta di riferimento è l'Euro.",
+ "caja": {
+  "lineas": [
+   170
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   220
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los importes están en euros enteros (sin miles). Caja: total Disponibilità liquide (L170). Deuda: Debiti verso Banche, total L220, que ya incluye las porciones corriente (L222) y no corriente (L223), por eso no se suman."
+}

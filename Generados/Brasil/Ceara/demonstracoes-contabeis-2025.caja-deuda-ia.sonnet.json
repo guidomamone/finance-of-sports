@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Ceara/demonstracoes-contabeis-2025.md",
+ "generado": "2026-10-18T05:50:31.740Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Em reais",
+ "caja": {
+  "lineas": [
+   552
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   594,
+   606
+  ],
+  "ninguna": false
+ },
+ "observaciones": "En el pasivo las etiquetas y los valores están separados en columnas; los montos de Empréstimos e Financiamentos (L594 corriente y L606 no corriente) no se pueden asociar con certeza a una línea numérica. Se eligieron las líneas de etiqueta."
+}

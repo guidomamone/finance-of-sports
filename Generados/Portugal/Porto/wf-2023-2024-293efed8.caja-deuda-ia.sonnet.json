@@ -1,0 +1,25 @@
+{
+ "md": "Clubes/Portugal/Porto/wf-2023-2024-293efed8.md",
+ "generado": "2026-10-18T05:52:46.786Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Euros",
+ "caja": {
+  "lineas": [
+   954
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   973,
+   974,
+   975,
+   984,
+   985,
+   986
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usó el balance consolidado (30.06.2024). No hay encabezado explícito de escala; los importes están en euros enteros (la nota dice 'Euros'). Se excluyeron los pasivos de locación (arrendamientos) por no estar en el criterio de préstamos bancarios/financieros."
+}

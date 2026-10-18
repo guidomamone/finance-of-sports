@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2011.md",
+ "generado": "2026-10-18T05:50:28.520Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "M$",
+ "caja": {
+  "lineas": [
+   87
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   112
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance solo indica 'M$' (miles de pesos chilenos). La única deuda financiera es 'Pasivos financieros no corrientes' (L112); no hay pasivos financieros corrientes separados. La nota 14 se cita tanto para cuentas por pagar comerciales como para pasivos financieros, por lo que la composición exacta es dudosa."
+}

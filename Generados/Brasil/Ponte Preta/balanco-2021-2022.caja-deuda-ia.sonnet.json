@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Brasil/Ponte Preta/balanco-2021-2022.md",
+ "generado": "2026-10-18T05:52:41.307Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Valores Expressos em reais",
+ "caja": {
+  "lineas": [
+   16
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Caja y Bancos (L16) es la caja. No hay préstamos ni obligaciones bancarias o financieras explícitas; los Títulos a Pagar (L18, L36) y las deudas fiscales o laborales parecen ser obligaciones comerciales o de otro tipo, por lo que no se incluyeron. Es dudoso si los Títulos a Pagar no corrientes de 111 millones son deuda financiera."
+}

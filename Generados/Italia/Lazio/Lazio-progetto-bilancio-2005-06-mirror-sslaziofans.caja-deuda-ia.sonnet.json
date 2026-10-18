@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-progetto-bilancio-2005-06-mirror-sslaziofans.md",
+ "generado": "2026-10-18T05:51:47.463Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"accenti\" + \"i capitale sociale\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "Gli importi indicati negli schemi di Stato Patrimoniale e di Conto Economico sono espressi in Euro ed i valori in nota integrativa sono espressi in migliaia di Euro.",
+ "caja": {
+  "lineas": [
+   718
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   752,
+   753,
+   754
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Escala: los esquemas del balance están en Euro (unidades); la reclasificación y la nota integrativa en miles/millones. Caja = total disponibilidades líquidas (L718). Deuda = débitos con socios por financiación (0 en 2006), débitos con bancos y débitos con otros financiadores (0 en 2006), equivalentes a los criterios 'accenti' + 'capitale sociale' del club. Los encabezados de L666 dicen 30/06/2005 en ambas columnas, pero se toma la columna más reciente (30/06/2006), según el pasivo de L730."
+}

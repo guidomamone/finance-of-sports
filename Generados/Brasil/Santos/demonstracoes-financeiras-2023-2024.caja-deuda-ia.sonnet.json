@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Santos/demonstracoes-financeiras-2023-2024.md",
+ "generado": "2026-10-18T05:52:57.071Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "Valores expressos em milhares de Reais, exceto quando indicado de outra forma",
+ "caja": {
+  "lineas": [
+   600
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   632,
+   649
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La línea circulante L632 se titula 'Empréstimos e Antecipação de recebíveis' y puede incluir anticipos de recebíveis además de préstamos. La aplicación financiera (L601) no se incluyó como equivalente de caja."
+}

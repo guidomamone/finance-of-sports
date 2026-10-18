@@ -1,0 +1,24 @@
+{
+ "md": "Clubes/Portugal/Porto/wf-2024-2025-6b41056f.md",
+ "generado": "2026-10-18T05:52:48.503Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(montantes expressos em milhares de euros)",
+ "caja": {
+  "lineas": [
+   5307
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   5337,
+   5338,
+   5348,
+   5349,
+   5350
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usó el balance consolidado, columna 30.06.2025. La deuda incluye empréstimos obrigacionistas, otros empréstimos y empréstimos bancários (corriente y no corriente); se excluyen los pasivos de locación (arrendamientos). El balance individual de la SAD aparece también pero se prefirió el consolidado."
+}

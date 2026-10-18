@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Países Bajos/AZ/jaarrekening-2024-25.md",
+ "generado": "2026-10-18T05:50:09.118Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "€ x 1000",
+ "caja": {
+  "lineas": [
+   768
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   802
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se toma el balance consolidado (L768 caja, L802 deuda con entidades de crédito no corriente 6.667). La parte corriente de 667 (amortización del próximo año) está dentro de 'Overige schulden' de corto plazo y no figura como línea separada. La línea L803 'Overige schulden' no corriente incluye el préstamo del municipio de Zaanstad (4.306) pero se mezcla con otras deudas, por lo que no se incluyó."
+}

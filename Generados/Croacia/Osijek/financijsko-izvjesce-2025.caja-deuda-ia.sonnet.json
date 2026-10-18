@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Croacia/Osijek/financijsko-izvjesce-2025.md",
+ "generado": "2026-10-18T05:52:30.595Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(svi iznosi iskazani u eurima)",
+ "caja": {
+  "lineas": [
+   376
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   412,
+   414,
+   470
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los valores están separados de las etiquetas, así que el emparejamiento es por orden. Caja 2025 = 1.585.818 €. Deuda: descubierto bancario 690.000 (L412), préstamos corrientes 272.989 (L414) y préstamos no corrientes 11.470.126 (L470). Incluí el descubierto bancario como financiación bancaria; es dudoso. Excluí el factoring de transferencias (L420) y las deudas con partes vinculadas."
+}

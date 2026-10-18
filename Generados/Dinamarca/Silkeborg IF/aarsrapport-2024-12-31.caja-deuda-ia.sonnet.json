@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Dinamarca/Silkeborg IF/aarsrapport-2024-12-31.md",
+ "generado": "2026-10-18T05:53:03.134Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "DKK'000",
+ "caja": {
+  "lineas": [
+   529
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "No hay préstamos bancarios ni financieros. Los anticipos de clientes (L544, L546) y las cuentas por pagar a accionistas y directivos (L549, DKK 14,048k, posiblemente de naturaleza financiera pero no se describe como préstamo) no se consideran deuda financiera."
+}

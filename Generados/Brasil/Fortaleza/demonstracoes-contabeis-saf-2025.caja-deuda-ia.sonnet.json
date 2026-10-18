@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Fortaleza/demonstracoes-contabeis-saf-2025.md",
+ "generado": "2026-10-18T05:51:07.505Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Em milhares de Reais)",
+ "caja": {
+  "lineas": [
+   179
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   181,
+   193
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda = Empréstimos e financiamentos corriente (L181, 35.966) y no corriente (L193, 24.200), total 60.166 según nota 22. Se excluyen arrendamientos y cuentas por pagar por transferencia de jugadores."
+}

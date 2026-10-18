@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Udinese/Udinese-bilancio-2021-22.md",
+ "generado": "2026-10-18T05:53:20.381Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Bilancio al 30/06/2022 (importi in euro, sin indicación de miles: p.ej. 'Capitale sociale: 15.127.000,00' y 'Riserva da compilazione in unità di Euro')",
+ "caja": {
+  "lineas": [
+   791
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   811,
+   814
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se tomaron los totales de obbligazioni (L811) y debiti verso banche (L814), que ya incluyen la parte corriente y no corriente; no se sumaron las sublíneas esigibili. Los debiti verso imprese controllanti (L820) y verso settore specifico no se incluyeron por ser comerciales/intragrupo y no préstamos bancarios o financieros claros. La escala no está indicada con una frase explícita de 'miles', se infiere unidades en euros."
+}

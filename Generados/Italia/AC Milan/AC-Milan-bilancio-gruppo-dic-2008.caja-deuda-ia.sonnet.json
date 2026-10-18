@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2008.md",
+ "generado": "2026-10-18T05:49:23.751Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "in migliaia di Euro",
+ "caja": {
+  "lineas": [
+   814
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   958,
+   964,
+   974,
+   980
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa el balance consolidado del Gruppo Milan al 31.12.2008. Caja: total disponibilidades líquidas (L814). Deuda: bancos (corriente y no corriente) y otros financiadores (corriente y no corriente). Se excluyen los débitos con socios por financiaciones (L948, 59 mil), por ser mínimos y de naturaleza distinta. Las líneas de valores están separadas de sus etiquetas en el layout, por eso se eligieron las líneas de importes del ejercicio 2008."
+}

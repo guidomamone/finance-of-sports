@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Perú/Alianza Lima/estado-financiero-2023.md",
+ "generado": "2026-10-18T05:49:38.699Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"mayo 25 2023 deuda concursal\" + \"nda e arquina (socio) deuda concursal\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "(Expresado en Soles)",
+ "caja": {
+  "lineas": [
+   35
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   36,
+   43
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance no muestra líneas 'deuda concursal' con ese nombre; como equivalente se usaron 'Otras cuentas por pagar' corriente (L36) y no corriente (L43), que probablemente contienen la deuda concursal según las notas (Nota 12). Es dudoso porque pueden incluir otros conceptos. El texto OCR del balance está mezclado en dos columnas."
+}

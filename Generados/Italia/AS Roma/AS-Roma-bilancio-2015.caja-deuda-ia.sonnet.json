@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2015.md",
+ "generado": "2026-10-18T05:49:50.050Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"finanziamenti a breve termine\" (o sus equivalentes en este documento).",
+ "escala": "miles",
+ "escala_evidencia": "Valori in € /000",
+ "caja": {
+  "lineas": [
+   1866
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1900,
+   1908
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance no tiene una línea llamada 'finanziamenti a breve termine'. Se tomaron las dos líneas 'Finanziamenti', la no corriente (L1900) y la corriente (L1908). Las 'Attività finanziarie correnti' son un activo y no se incluyeron."
+}

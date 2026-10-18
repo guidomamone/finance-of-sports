@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2023-24.md",
+ "generado": "2026-10-18T05:50:14.102Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "valores em milhares de euros",
+ "caja": {
+  "lineas": [
+   3735
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   3748,
+   3752
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usó el balance oficial (Demonstração da posição financeira, L3721-L3758), columna 30.06.24. Empréstimos obtidos no corriente (L3752) y no corriente (L3748) incluyen préstamos bancarios y obligacionistas; no se sumaron los acréscimos de juros del informe de gestión."
+}

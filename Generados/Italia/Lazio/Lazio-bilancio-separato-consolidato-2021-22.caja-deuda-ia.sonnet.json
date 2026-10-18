@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2021-22.md",
+ "generado": "2026-10-18T05:51:57.806Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Valori in Euro",
+ "caja": {
+  "lineas": [
+   967
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   988,
+   997
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se tomó el balance separado de S.S. Lazio (L948-L1005), no el consolidado. Deuda = 'Debiti finanziari' no corrientes (L988) y corrientes (L997). Se excluyeron los debiti verso parti correlate (L998) por no ser préstamos bancarios o financieros explícitos. Las notas están en miles de euros, pero el balance está en euros."
+}

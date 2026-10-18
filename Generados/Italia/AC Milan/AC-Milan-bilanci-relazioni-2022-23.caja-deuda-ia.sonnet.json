@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2022-23.md",
+ "generado": "2026-10-18T05:49:28.286Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(in migliaia di Euro)",
+ "caja": {
+  "lineas": [
+   694
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   749,
+   750,
+   752,
+   753
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera: debiti verso banche (L749 y L750, ambos en cero en 2023) y debiti verso altri finanziatori corriente y no corriente (L752, L753). Obbligazioni y debiti verso soci están en cero. Excluidos los debiti verso enti - settore specifico (deudas del sector fútbol, no financieras). Caja es el total de disponibilità liquide (L694)."
+}

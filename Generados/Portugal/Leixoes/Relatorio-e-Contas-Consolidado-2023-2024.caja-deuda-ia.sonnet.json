@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Leixoes/Relatorio-e-Contas-Consolidado-2023-2024.md",
+ "generado": "2026-10-18T05:52:00.764Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Moeda: EUR",
+ "caja": {
+  "lineas": [
+   171
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   188,
+   196
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance en euros sin indicación de miles; se toma escala unidades. Deuda = Financiamentos obtidos no corriente (L188) y corriente (L196); según la nota 12 son préstamos de participantes de capital (accionistas)."
+}

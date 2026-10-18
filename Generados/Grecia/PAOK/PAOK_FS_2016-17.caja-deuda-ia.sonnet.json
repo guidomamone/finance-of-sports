@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Grecia/PAOK/PAOK_FS_2016-17.md",
+ "generado": "2026-10-18T05:52:34.723Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"δανεια\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "Λοιπές μακροπρόθεσμες υποχρεώσεις | 10.1.2 | 0,00 | 50.443,43",
+ "caja": {
+  "lineas": [
+   113
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   146
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El documento no declara la escala de forma explícita; las cifras están en euros con decimales (p. ej. 1.874.677,48), por lo que se asume unidades. La evidencia es una línea de muestra, no una frase de escala. La deuda es la línea 'Δάνεια' (L146, préstamo convertible en bonos de 9.000.000 €); no hay deuda corriente separada."
+}

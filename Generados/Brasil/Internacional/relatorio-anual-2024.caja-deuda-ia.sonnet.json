@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Internacional/relatorio-anual-2024.md",
+ "generado": "2026-10-18T05:51:35.638Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de Reais — R$)",
+ "caja": {
+  "lineas": [
+   1093
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1158,
+   1174
+  ],
+  "ninguna": false
+ },
+ "observaciones": "En el texto las etiquetas y los valores están en líneas separadas. Elegí las líneas con los valores: caja L1093 (nota 5, 3.770), empréstimos e financiamentos corriente L1158 (nota 13, 133.162) y no corriente L1174 (nota 13, 55.228, el OCR muestra 'I3'). La correspondencia con las etiquetas se dedujo por el orden de las líneas."
+}

@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Argentina/Los Andes/balance-ejercicio-105-2020-21.md",
+ "generado": "2026-10-18T05:52:05.611Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Expresado en moneda de cierre - Ver nota unidad de medida (NOTA 1)",
+ "caja": {
+  "lineas": [
+   43,
+   44
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no declara una escala explícita (se asume unidades por los importes con centavos). Caja (L43) y Bancos (L44) se suman como efectivo. No hay préstamos ni deudas bancarias o financieras visibles; solo deudas operativas, sociales y previsionales, otras deudas y provisiones para juicios, cuyo detalle está en notas no incluidas."
+}

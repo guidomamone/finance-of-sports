@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/America Mineiro/demonstracoes-financeiras-2023.md",
+ "generado": "2026-10-18T05:49:39.714Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em reais, exceto quando especificado)",
+ "caja": {
+  "lineas": [
+   218
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   249,
+   256
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usó la columna Consolidado 2023. Se excluyeron 'Empréstimos pessoas ligadas' (L257, préstamos con partes relacionadas) por no ser deuda bancaria/financiera; si se los considerara deuda, habría que sumar L257."
+}

@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Italia/Parma/Parma-bilancio-30.06.2017-individual.md",
+ "generado": "2026-10-18T05:52:37.407Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Euro",
+ "caja": {
+  "lineas": [
+   249
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   284
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance está en euros enteros sin indicación de miles; la frase 'Euro' proviene de las tablas de la relación del Collegio Sindacale. Caja = Totale disponibilità liquide (L249). Deuda = Totale debiti verso banche (L284), solo corriente; no hay deuda no corriente. Los debiti verso controllanti (L293) no se incluyen por ser deuda con la matriz, no préstamos bancarios."
+}

@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Inglaterra/Arsenal/arsenal-holdings-group-accounts-2023-24.md",
+ "generado": "2026-10-18T05:49:45.746Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£°000",
+ "caja": {
+  "lineas": [
+   1456
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "El balance muestra solo 'Creditors: amounts falling due within/after one year' (L1458, L1461) como totales agregados, que mezclan deuda bancaria, cuentas comerciales y pagos diferidos por jugadores; el desglose de préstamos está en notas no incluidas, por eso no se eligen líneas de deuda. La evidencia de escala aparece con OCR distorsionado (£'000)."
+}

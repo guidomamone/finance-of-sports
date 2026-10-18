@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Bélgica/Anderlecht/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-18T05:49:42.346Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Resultatenrekening (in EUR)",
+ "caja": {
+  "lineas": [
+   419
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Las páginas del balance incluyen solo el activo (Liquide middelen L419: 1.516.035 EUR). El pasivo (schulden, financiële schulden/kredietinstellingen) no aparece en las páginas dadas, por lo que no se pueden identificar líneas de deuda financiera; deuda.ninguna=false porque el balance está incompleto. Los importes están en euros enteros."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2024.md",
+ "generado": "2026-10-18T05:53:25.857Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Em reais)",
+ "caja": {
+  "lineas": [
+   445
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   460,
+   474
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance expresado en reais sin multiplicador (unidades). Deuda financiera = Empréstimos e financiamentos corriente (L460) y no corriente (L474), columna 2024. Se excluyen parcelamentos de impuestos, contingencias y proveedores. Aplicação financeira (L449) no se incluyó como caja."
+}

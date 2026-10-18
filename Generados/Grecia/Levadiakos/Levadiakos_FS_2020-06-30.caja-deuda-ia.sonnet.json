@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2020-06-30.md",
+ "generado": "2026-10-18T05:52:01.869Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "ΚΑΤΑΣΤΑΣΗ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΗΣ ΘΕΣΗΣ ΤΗΣ 30/6/2020",
+ "caja": {
+  "lineas": [
+   37
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El documento no indica escala explícita; los importes aparecen en euros con céntimos, por lo que se asume unidades. No hay préstamos ni obligaciones bancarias en el pasivo: solo deudas comerciales, impuestos, seguridad social y otras deudas."
+}

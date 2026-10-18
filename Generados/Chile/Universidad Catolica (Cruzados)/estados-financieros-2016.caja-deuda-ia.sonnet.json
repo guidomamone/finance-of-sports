@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2016.md",
+ "generado": "2026-10-18T05:50:29.886Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "Miles de pesos",
+ "caja": {
+  "lineas": [
+   88
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no muestra préstamos ni obligaciones financieras corrientes ni no corrientes. Solo hay cuentas por pagar comerciales y a relacionadas, que no cuentan como deuda financiera según el criterio. Aun así, los costos financieros de L191 son pequeños (M$8.412)."
+}

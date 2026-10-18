@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/America Mineiro/demonstracoes-financeiras-2024.md",
+ "generado": "2026-10-18T05:49:40.603Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(VALORES EXPRESSOS EM REAIS)",
+ "caja": {
+  "lineas": [
+   232
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   270,
+   281
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usó la columna Consolidado 2024. Deuda = Empréstimos corriente (L270) y no corriente (L281). Se excluyeron Empréstimos pessoas ligadas (L282), Arrendamentos, Bancos - saldo devedor (L275) y derivativos por no ser préstamos bancarios/financieros según el criterio; L275 (saldo devedor, descubierto) y L282 son dudosos."
+}

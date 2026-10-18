@@ -1,0 +1,25 @@
+{
+ "md": "Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2013.md",
+ "generado": "2026-10-18T05:49:26.698Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "in migliaia di Euro",
+ "caja": {
+  "lineas": [
+   816,
+   817
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   854,
+   856,
+   857,
+   859,
+   860
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa el balance consolidado (L763-L879) al 31.12.2013. Caja = depósitos bancarios (L816) + efectivo (L817); el total de L818 queda fuera por incluir ambas. Deuda = préstamos de socios (L854), bancos corriente y no corriente (L856-857) y otros financiadores corriente y no corriente (L859-860). Excluí proveedores, deudas con entes del sector, compartecipaciones y deudas con controladas o controlantes. Incluir los préstamos de socios es una decisión discutible."
+}

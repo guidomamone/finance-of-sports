@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2011-12.md",
+ "generado": "2026-10-18T05:51:53.709Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   3473
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   3501,
+   3516,
+   3518,
+   3527
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El documento trae balance separado (L811-910) y consolidado (L3432-3532); elegí el consolidado. Los debiti finanziari correnti y no correnti están en 0 o casi 0. La deuda real está en 'Debiti verso altri finanziatori' (9,5 M) y en los debiti finanziari verso parti correlate (0,65 M). Esa clasificación es dudosa."
+}

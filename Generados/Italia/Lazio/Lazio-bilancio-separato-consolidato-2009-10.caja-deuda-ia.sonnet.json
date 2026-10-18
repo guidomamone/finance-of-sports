@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2009-10.md",
+ "generado": "2026-10-18T05:51:51.323Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   3405
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   3444,
+   3446
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El documento incluye balance separado (L718-809) y consolidado (L3369-3457); elegí el consolidado al 30/06/2010. La deuda financiera suma los débitos financieros corrientes (51 €) y los débitos con otros financiadores (5.661.417 €, subpartida de otros pasivos corrientes). No hay deuda financiera no corriente."
+}

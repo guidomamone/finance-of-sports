@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Arouca/relatorio-contas-2023-24.md",
+ "generado": "2026-10-18T05:49:45.418Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Montantes expressos em EURO",
+ "caja": {
+  "lineas": [
+   449
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   494,
+   500
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Las líneas de Financiamentos obtidos (L494 no corriente y L500 corriente) están vacías a 30-06-2024 y solo tienen saldo en 2023 (22.912,50 y 3.525,00); son apoyos reembolsables de la FPF por COVID. Con el cierre 2024 la deuda financiera es cero, pero se señalan las líneas igualmente."
+}

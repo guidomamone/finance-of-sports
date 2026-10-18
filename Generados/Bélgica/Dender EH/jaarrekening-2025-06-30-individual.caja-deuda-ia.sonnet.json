@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Bélgica/Dender EH/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-18T05:50:51.412Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING",
+ "caja": {
+  "lineas": [
+   163
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   193
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance belga no indica escala explícita; los importes están en euros enteros (unidades), por lo que la evidencia es solo el encabezado. La deuda financiera a largo plazo (L193, 21.682.470) figura como 'Overige leningen' (otros préstamos); L195 es un desglose ya incluido en L193, por eso se elige solo L193. No hay deuda financiera a corto plazo (L201-L203 vacías)."
+}

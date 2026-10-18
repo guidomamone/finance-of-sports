@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Criciuma/demonstrativo-financeiro-2021.md",
+ "generado": "2026-10-18T05:50:45.152Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "( Valores expressos em unidades de reais )",
+ "caja": {
+  "lineas": [
+   172
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   224,
+   235
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caja tomada de 'Caixa e Equivalentes de Caixa' (L172), no del subtotal Disponibilidades. Deuda: Empréstimos e Financiamentos corriente (L224) y no corriente (L235), ejercicio 31/dez/2021. No se incluyen Luvas e Ant. de Dir. de Transmissão ni proveedores."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2017-06-30.md",
+ "generado": "2026-10-18T05:52:23.148Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"λοιπεσ χρηματοοικονομικεσ υποχρεωσεισ\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "(ποσά σε €)",
+ "caja": {
+  "lineas": [
+   306
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   332,
+   342
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se tomó la columna Όμιλος (consolidado) al 30/6/2017. Deuda = 'Λοιπές χρηματοοικονομικές υποχρεώσεις' no corriente (L332) y corriente (L342), según el criterio indicado. Las 'Δανειακές υποχρεώσεις' (L341, 574.382,97 corriente; no corriente 0) quedan fuera por ese criterio."
+}

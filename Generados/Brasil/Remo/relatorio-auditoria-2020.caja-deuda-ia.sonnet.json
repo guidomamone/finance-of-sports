@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/Remo/relatorio-auditoria-2020.md",
+ "generado": "2026-10-18T05:52:50.978Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Valor de Ativo e Passivo: R$ 39.433.055,31 (Trinta e Nove Milhões Quatrocentos e Trinta e Três Mil e Cinqüenta e Cinco Reais e Trinta e Um Centavos).",
+ "caja": {
+  "lineas": [
+   140
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   155
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Disponibilidades (L140, 1.585.173,42) es el agregado de efectivo; Caixa (L141) y Bancos (L142) no suman ese total, por lo que se eligió L140. Solo hay Empréstimos e Financiamentos en el pasivo corriente; las Obrigações a Longo Prazo (L161) no están desglosadas y no se incluyeron."
+}

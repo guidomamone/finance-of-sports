@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Atletico Mineiro/relatorio-integrado-saf-2025.md",
+ "generado": "2026-10-18T05:50:02.771Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Em milhares de Reais)",
+ "caja": {
+  "lineas": [
+   5356
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   5357,
+   5366
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se tomó la columna Consolidado 31/12/2025 (en el balance, las líneas L5356, L5357 y L5366 contienen también Controladora y 2024 en la misma fila). Empréstimos e financiamentos corriente (685.206) y no corriente (372.091) suman 1.057.297, coincidente con la nota 19. No se incluyeron las debêntures (Operações de debêntures, L5362) por no estar en el criterio de préstamos y financiamientos; podrían considerarse deuda financiera."
+}

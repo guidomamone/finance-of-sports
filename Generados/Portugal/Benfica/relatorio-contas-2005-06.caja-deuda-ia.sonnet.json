@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2005-06.md",
+ "generado": "2026-10-18T05:50:10.770Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valores em Euros",
+ "caja": {
+  "lineas": [
+   639
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   673,
+   674,
+   680,
+   681
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caja: se toma el subtotal de Depósitos bancários e caixa (L639, 182.432), que ya incluye L637 y L638. Deuda: obligaciones no convertibles y deudas con instituciones de crédito, a largo y a corto plazo, del ejercicio 31.07.06. En L673 el valor de 2006 es '-' (el empréstimo obrigacionista pasa a corto plazo en L680). Se excluyen proveedores de inmovilizado y otros acreedores."
+}

@@ -1,0 +1,16 @@
+{
+ "md": "Clubes/Bélgica/Standard Liège/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-18T05:53:13.418Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "13.342.433,52 EUR",
+ "caja": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Los pasivos del balance (dettes financières, valeurs disponibles) no figuran en las páginas extraídas: solo está el activo. En L308 'Valeurs disponibles' no tiene importe visible, y en L344 (54/58) hay 311.835, que correspondería a esa partida, pero no está claro por la numeración desalineada. La escala son euros en unidades, sin leyenda explícita de 'miles'; la evidencia es un importe expresado en EUR completos. El texto menciona la amortización anticipada de deudas financieras, pero no hay líneas de pasivo para elegir."
+}

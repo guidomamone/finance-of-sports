@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/España/Girona FC/informe-auditoria-cuentas-anuales-2024-2025.md",
+ "generado": "2026-10-18T05:51:16.095Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Euros: 09001",
+ "caja": {
+  "lineas": [
+   649
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   751,
+   754,
+   769,
+   772
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La casilla de unidad marcada es Euros (el OCR muestra 'Euros: os001'; las cifras llevan céntimos, por lo que la escala es unidades). Se incluyen deudas con entidades de crédito y otros pasivos financieros, corrientes y no corrientes. Se excluyen las deudas con empresas del grupo y los proveedores a largo plazo. Otros pasivos financieros (L754, L772) son dudosos porque podrían no ser préstamos bancarios."
+}

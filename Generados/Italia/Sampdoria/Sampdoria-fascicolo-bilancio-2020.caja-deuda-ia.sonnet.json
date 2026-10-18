@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2020.md",
+ "generado": "2026-10-18T05:52:54.722Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "31 dicembre 2020",
+ "caja": {
+  "lineas": [
+   940
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   981,
+   982,
+   984,
+   985
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance oficial (stato patrimoniale) está en euros enteros, sin leyenda de escala; los prospectos riclasificati usan Euro/000. Caja = total disponibilidades líquidas (L940). Deuda = deudas con bancos (corriente y no corriente) y con otros financiadores (corriente y no corriente); se excluyen acconti, proveedores y deudas con entes del sector."
+}

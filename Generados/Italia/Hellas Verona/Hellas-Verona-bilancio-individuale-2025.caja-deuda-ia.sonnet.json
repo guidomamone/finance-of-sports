@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2025.md",
+ "generado": "2026-10-18T05:51:27.195Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Euro",
+ "caja": {
+  "lineas": [
+   152
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   189,
+   190
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance en euros enteros (la nota integrativa usa 'Euro/000' solo en sus tablas de detalle). Caja: total Disponibilidades liquide (L152). Deuda: Debiti verso banche (L189, total corriente + no corriente en una línea con sus desgloses) y Debiti verso altri finanziatori (L190, total; L200 y L202 son su desglose). Es dudoso que 'altri finanziatori' sea deuda puramente financiera, pero se incluyó por tratarse de financiadores distintos de bancos."
+}

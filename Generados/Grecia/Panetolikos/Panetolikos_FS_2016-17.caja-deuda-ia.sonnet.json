@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2016-17.md",
+ "generado": "2026-10-18T05:52:31.115Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Ποσά σε ΕΥΡΩ)",
+ "caja": {
+  "lineas": [
+   548
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no muestra préstamos ni deuda bancaria. El informe de gestión dice 'Η εταιρεία δεν έχει τραπεζικό δανεισμό' y la tabla de liquidez muestra Δανεισμός = 0,00. Las 'Λοιπές υποχρεώσεις' (L585) no se tomaron como deuda financiera, aunque son elevadas y podrían incluir anticipos de accionistas."
+}

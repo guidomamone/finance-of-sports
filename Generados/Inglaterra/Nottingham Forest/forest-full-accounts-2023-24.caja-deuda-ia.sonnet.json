@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Inglaterra/Nottingham Forest/forest-full-accounts-2023-24.md",
+ "generado": "2026-10-18T05:52:17.053Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£000 £000",
+ "caja": {
+  "lineas": [
+   618
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "El balance solo muestra 'Creditors' agregados (L620 corriente, L626 no corriente), que incluyen deuda financiera junto con cuentas comerciales; el desglose de préstamos está en notas no incluidas, por lo que no se puede elegir una línea de deuda financiera pura. Caja es 'Cash at bank and in hand' (L618, valor 29 en 2024). Escala por columnas '£000'."
+}

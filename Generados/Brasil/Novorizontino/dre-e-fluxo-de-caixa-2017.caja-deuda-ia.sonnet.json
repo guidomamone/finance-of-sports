@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/dre-e-fluxo-de-caixa-2017.md",
+ "generado": "2026-10-18T05:52:20.327Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"debitos com partes relacionadas\" + \"emprestimos\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "| Conta | 31/12/2017 | 31/12/2016 |",
+ "caja": {
+  "lineas": [
+   13
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   116
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance no declara escala explícita; los valores están en reales (unidades) con formato brasileño. Caja: se eligió 'CAIXA E EQUIVALENTES DE CAIXA' (L13), sin incluir bancos (L15, que son recursos públicos) ni inversiones temporales. Deuda: no hay 'débitos com partes relacionadas' separados; se usó 'EMPRESTIMOS E FINANCIAMENTOS' no corriente (L116, préstamos de I-9 Sports y mútuo de persona física). Las instituciones financieras del pasivo corriente (L107, bancos con saldo deudor y recursos públicos) no se incluyeron por no encajar en el criterio del club."
+}

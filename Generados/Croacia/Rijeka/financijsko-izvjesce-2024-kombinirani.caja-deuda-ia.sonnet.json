@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Croacia/Rijeka/financijsko-izvjesce-2024-kombinirani.md",
+ "generado": "2026-10-18T05:52:50.786Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "EUR",
+ "caja": {
+  "lineas": [
+   298
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   323,
+   337
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los importes están en EUR sin indicación de miles ni millones. Se excluyen las obligaciones con entidades del grupo (L338), el factoring de transferencias (L326) y las deudas de transferencias por no ser préstamos bancarios o financieros según el criterio. L322 (descubiertos) está vacía."
+}

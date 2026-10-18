@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/España/Levante UD/cuentas-anuales-consolidadas-2024-2025.md",
+ "generado": "2026-10-18T05:52:04.403Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Datos expresados en miles de euros)",
+ "caja": {
+  "lineas": [
+   356
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   371,
+   377,
+   378
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Criterio dudoso: la deuda a largo plazo (L371/L372) se compone solo de 'Otros pasivos financieros' (incluye préstamos participativos de LaLiga), por lo que se toma L371 como total no corriente. En el corto plazo se incluyen entidades de crédito (L377) y otros pasivos financieros (L378). Se excluyen las deudas con empresas del grupo (L373, L379, L380) y los acreedores comerciales."
+}

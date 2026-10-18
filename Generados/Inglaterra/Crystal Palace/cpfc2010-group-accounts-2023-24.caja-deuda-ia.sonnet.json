@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Inglaterra/Crystal Palace/cpfc2010-group-accounts-2023-24.md",
+ "generado": "2026-10-18T05:50:47.870Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£'000",
+ "caja": {
+  "lineas": [
+   720
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "El balance consolidado solo muestra acreedores agregados (L723 a menos de un año, L729 a más de un año) sin desglosar préstamos bancarios o financieros; el detalle está en las notas 14 y 15, que no se incluyeron. No se puede elegir una línea de deuda financiera sin inventar, así que la lista queda vacía y ninguna=false."
+}

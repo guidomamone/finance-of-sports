@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/Cremonese/Cremonese-bilancio-2022.md",
+ "generado": "2026-10-18T05:50:42.476Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "BILANCIO DI ESERCIZIO AL 30 GIUGNO 2022",
+ "caja": {
+  "lineas": [
+   86
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   116,
+   117,
+   120,
+   121
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance no indica escala explícita; los importes están en euros enteros (unidades). Deuda: bancos y otros financiadores, corriente y no corriente, tomados de las líneas detalladas (no los totales L118/L122). Se excluyen los préstamos de socios (L113, que valen 0 en 2022) y los demás débitos (tributarios, otros)."
+}

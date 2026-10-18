@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/Operario Ferroviario/demonstracoes-financeiras-2025.md",
+ "generado": "2026-10-18T05:52:26.316Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Em milhares de Reais)",
+ "caja": {
+  "lineas": [
+   143
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   143
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Revisar: la línea 143 mezcla en una misma fila el activo (caja 1.363 en 2025) y el pasivo (Empréstimos e financiamentos, '-' en 2025 y 425 en 2024); en 2025 la deuda financiera es cero y no hay deuda no corriente."
+}

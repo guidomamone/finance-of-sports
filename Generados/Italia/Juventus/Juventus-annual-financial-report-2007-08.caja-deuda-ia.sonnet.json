@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2007-08.md",
+ "generado": "2026-10-18T05:51:39.439Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "€/000",
+ "caja": {
+  "lineas": [
+   1351
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1376,
+   1383
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance principal (L1329-L1389) presenta cifras en euros completos, sin indicación de miles; '€/000' aparece solo en la tabla de notas sobre derechos de jugadores (L1986), que sí está en miles. Deuda: 'Bonds and other financial liabilities' no corriente (L1376) y corriente (L1383), ejercicio al 30/06/2008."
+}

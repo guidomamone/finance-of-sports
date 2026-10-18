@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2025.md",
+ "generado": "2026-10-18T05:53:25.566Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Em milhares de reais)",
+ "caja": {
+  "lineas": [
+   1116
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1136,
+   1145
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera = Empréstimos e financiamentos corriente (L1136) y no corriente (L1145), ejercicio 2025. Se excluyen proveedores, cuentas por pagar por transferencia de jugadores y otras cuentas por pagar."
+}

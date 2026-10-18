@@ -1,0 +1,25 @@
+{
+ "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2020-21-en.md",
+ "generado": "2026-10-18T05:51:30.368Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "amounts in Euro",
+ "caja": {
+  "lineas": [
+   538
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   575,
+   576,
+   578,
+   579,
+   581,
+   582
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caja: se eligió el total de 'Cash at bank and on hand' (L538), que incluye depósitos bancarios y efectivo. Deuda: bonos (corriente y no corriente), préstamo de accionistas y préstamo bancario (corriente y no corriente). El préstamo de accionistas (L578-579) es financiero pero podría discutirse. Se excluyen anticipos, proveedores y deudas con instituciones del sector."
+}

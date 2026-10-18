@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Grecia/Kifisia/Kifisia_notes_2025-06-30.md",
+ "generado": "2026-10-18T05:51:42.701Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ευρώ (κεφάλαιο: 70.000 μετοχές των 10 ευρώ); cifras con decimales sin mención de miles",
+ "caja": {
+  "lineas": [
+   350
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no declara la escala de forma explícita; los importes se presentan con decimales exactos en euros, por lo que se asume unidades. No hay préstamos bancarios ni deuda financiera en el pasivo (solo deudas comerciales, impuestos, seguridad social y otras)."
+}

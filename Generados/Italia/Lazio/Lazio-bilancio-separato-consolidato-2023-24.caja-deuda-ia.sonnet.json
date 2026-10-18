@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2023-24.md",
+ "generado": "2026-10-18T05:51:59.426Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   4469
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   4491,
+   4500
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usó el balance consolidado del Gruppo S.S. Lazio al 30/06/2024, porque es el que figura en las páginas 115-116. El balance separado de la capogruppo (L1245, L1267, L1276) muestra cifras distintas. Los debiti finanziari corrientes y no corrientes incluyen deudas con partes relacionadas y arrendamientos; no se pudo desglosar."
+}

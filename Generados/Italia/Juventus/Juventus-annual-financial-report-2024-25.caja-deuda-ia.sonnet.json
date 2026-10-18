@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2024-25.md",
+ "generado": "2026-10-18T05:51:40.472Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "amounts in Euro",
+ "caja": {
+  "lineas": [
+   12592
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   12616,
+   12624
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usan los estados individuales (statutory) en euros completos al 30 de junio de 2025. Las líneas de deuda son 'Bank loans and other financial liabilities' no corriente y corriente. Las tablas pro-forma están en miles de euros, pero no se usaron."
+}

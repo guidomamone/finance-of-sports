@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2003-04.md",
+ "generado": "2026-10-18T05:53:06.190Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de euros)",
+ "caja": {
+  "lineas": [
+   512
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   537,
+   541
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caja: se eligió el subtotal Depósitos Bancários e Caixa (L512, 3 484), que suma Caixa, Depósitos Bancários y Depósitos a Prazo. Deuda: Dívidas a Instituições de Crédito de largo plazo (L537) y de corto plazo (L541). Las obligaciones (empréstimo obrigacionista) no aparecen por separado en el balance; podrían estar en Outras Dívidas, que no se incluyó. Ejercicio de 11 meses cerrado el 30 JUN 04."
+}

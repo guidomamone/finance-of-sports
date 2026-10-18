@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Santos/demonstracoes-financeiras-2024-2025.md",
+ "generado": "2026-10-18T05:52:57.610Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de Reais, exceto quando indicado de outra forma)",
+ "caja": {
+  "lineas": [
+   711
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   743,
+   762
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caja tomada de L711 (295 mil en 2025). La línea corriente 'Empréstimos e Antecipação de recebíveis' (L743) incluye anticipos de recebíveis, pero se tomó como deuda financiera. No se incluyeron los parcelamentos tributarios ni los acuerdos judiciales. La aplicación financiera (L712) no se incluyó como caja."
+}

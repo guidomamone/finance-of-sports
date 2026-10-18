@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2009-2008.md",
+ "generado": "2026-10-18T05:51:17.206Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "DE DEZEMBRO DE 2009 E 2008 (em Reais)",
+ "caja": {
+  "lineas": [
+   23
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   50,
+   68
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se excluyeron el mútuo con JF Esportes (L51, en disputa judicial) y los préstamos de terceros (L52, saldo 0 en 2009) por no ser deuda bancaria o financiera según el criterio. Los títulos y valores mobiliarios (L24) son una inversión aparte y no se incluyeron en caja."
+}

@@ -1,0 +1,25 @@
+{
+ "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2021-22.md",
+ "generado": "2026-10-18T05:52:46.190Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "| ATIVO | Notas | 30 junho 2022 | 30 junho 2021* (reexpresso) |",
+ "caja": {
+  "lineas": [
+   852
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   870,
+   871,
+   872,
+   879,
+   880,
+   881
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance no declara la escala explícitamente; los valores están en euros completos (unidades). Columna 30 junio 2022. Deuda: empréstimos bancários, obrigacionistas y outros empréstimos, no corrientes y corrientes (L870 es '-' en 2022). No se incluyó 'Outros credores' (L882) ni proveedores."
+}

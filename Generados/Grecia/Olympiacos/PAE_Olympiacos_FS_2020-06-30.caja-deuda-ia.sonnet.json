@@ -1,0 +1,24 @@
+{
+ "md": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2020-06-30.md",
+ "generado": "2026-10-18T05:52:24.341Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"λογαριασμοι εισπρακτεοι απο μετεγγραφεσ ποδοσφαιριστων\" + \"μετοχικο κεφαλαιο\" + \"υποχρεωσεισ μισθωσεων\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "(ποσά σε €)",
+ "caja": {
+  "lineas": [
+   308
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   301,
+   307,
+   312,
+   333,
+   342
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usó la columna Όμιλος (Grupo) al 30/6/2020. Criterio del club: cuentas por cobrar por traspasos (L301 no corriente y L307 corriente), capital social (L312) y obligaciones por arrendamientos (L333 no corriente y L342 corriente). No se incluyeron los préstamos (L331) ni otros pasivos financieros (L332, L341), porque el criterio del club no los menciona; es dudoso si debían incluirse."
+}

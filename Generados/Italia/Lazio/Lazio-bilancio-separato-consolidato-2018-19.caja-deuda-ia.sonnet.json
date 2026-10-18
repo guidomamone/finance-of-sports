@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2018-19.md",
+ "generado": "2026-10-18T05:51:55.994Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   3494
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   3523,
+   3536,
+   3538
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se eligió el balance consolidado (pp. 101-102, 30/06/2019), que coincide con la PFN consolidada de 55,61 M. Deuda: Debiti finanziari-altri finanziatori non correnti (L3523), Debiti finanziari correnti (L3536) y Debiti verso altri finanziatori corrientes (L3538, 39,99 M), que la PFN trata como deuda financiera corriente. Si se usara el balance separado serían L933 para caja y L962, L975, L977, L986 para deuda. Los debiti verso enti settore specifico y los tributari se excluyen como no financieros."
+}

@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2021-22.md",
+ "generado": "2026-10-18T05:49:28.675Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(in migliaia di Euro)",
+ "caja": {
+  "lineas": [
+   645
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   700,
+   701,
+   703,
+   704
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caja: total disponibilità liquide (L645, suma de L643 y L644). Deuda: debiti verso banche y verso altri finanziatori, corriente y no corriente (L701 es 0 en 2022). Se excluyen proveedores, enti settore specifico y otros. Encabezado de la columna comparativa dice 30.06.2020 (probable error tipográfico); se usa la columna 30.06.2022."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Bologna/Bologna-bilancio-individuale-2023-24.md",
+ "generado": "2026-10-18T05:50:18.448Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Bilancio al 30/06/2024 (importi espressi in Euro, senza indicazione di migliaia)",
+ "caja": {
+  "lineas": [
+   1136
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1154,
+   1156
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance está en euros sin indicación de miles ni millones; la frase de escala no aparece literalmente, se infiere de los importes completos. La deuda incluye los préstamos de socios (L1154, 9.235.000) y las deudas con bancos (L1156, 28.839.624, que ya suman la parte corriente y no corriente de L1157-1158). Se excluyeron proveedores, deudas tributarias y deudas con otros clubes."
+}

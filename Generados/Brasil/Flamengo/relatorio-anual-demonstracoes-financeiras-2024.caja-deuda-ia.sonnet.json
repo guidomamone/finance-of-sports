@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Brasil/Flamengo/relatorio-anual-demonstracoes-financeiras-2024.md",
+ "generado": "2026-10-18T05:51:06.244Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Em milhares de reais)",
+ "caja": {
+  "lineas": [
+   901
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Se usó la columna Controladora 2024 para caja (70.557); el consolidado 2024 muestra 91.841. El balance no tiene préstamos ni financiamientos bancarios; solo hay cuentas por pagar por transferencia de jugadores, proveedores y outorga a pagar (concesión de bien público, consolidado), que no se consideran deuda financiera bancaria. Caja restrita (L902) excluida."
+}

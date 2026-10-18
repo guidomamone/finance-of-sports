@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Croacia/Hajduk Split/financijsko-izvjesce-2024.md",
+ "generado": "2026-10-18T05:51:23.180Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "EUR EUR",
+ "caja": {
+  "lineas": [
+   320
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   402,
+   429
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los valores de las obligaciones están en columnas separadas de las etiquetas. Mapeo por orden: L400 corresponde a Prekoračenja (0), L402 a Bankovni i ostali zajmovi corrientes (5.124.513), L429 a Bankovni i ostali zajmovi no corrientes (5.303.267). Los valores de las líneas L400-L425 y L427-L448 están desalineados respecto de las etiquetas, por lo que el mapeo es probable pero no seguro. No se indica escala explícita; los importes están en EUR sin abreviaturas."
+}

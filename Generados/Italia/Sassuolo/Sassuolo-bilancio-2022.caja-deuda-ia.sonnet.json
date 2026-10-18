@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2022.md",
+ "generado": "2026-10-18T05:53:01.190Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Euro",
+ "caja": {
+  "lineas": [
+   521
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   560,
+   561,
+   563
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance está en euros enteros (las tablas de la nota integrativa usan Euro/000). Caja = total Disponibilità liquide (L521), que suma depósitos bancarios y efectivo. Deuda = débitos con bancos (corriente y no corriente) y con otros financiadores (L563). No incluí los débitos con la controlante Mapei (L568-569, 83,3 M€) porque en la nota se describen como mezcla de cash pooling, financiación y operaciones comerciales y no se desglosan; podrían ser en parte deuda financiera."
+}

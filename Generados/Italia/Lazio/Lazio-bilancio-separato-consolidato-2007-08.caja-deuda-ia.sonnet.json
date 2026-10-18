@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2007-08.md",
+ "generado": "2026-10-18T05:51:48.665Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"debiti verso banche\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   3309
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   3337,
+   3351
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Hay dos balances: separado (L716-L820, la columna del activo con encabezado de fechas confuso, sin disponibilidades legibles para 2008) y consolidado (L3267-L3370, con columnas 30/06/2008 y 30/06/2007). Se eligió el consolidado, que tiene datos completos. Deuda = Debiti finanziari non correnti (1.132.300) + Debiti finanziari correnti (3.158.098), que son los debiti bancari según la posizione finanziaria. Se excluyeron los 'Debiti verso altri finanziatori' (L3353) porque no son deuda bancaria."
+}

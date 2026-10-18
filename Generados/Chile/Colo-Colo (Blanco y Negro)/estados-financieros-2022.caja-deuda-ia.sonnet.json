@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2022.md",
+ "generado": "2026-10-18T05:50:36.306Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"cuentas por pagar empresas relacionadas\" (o sus equivalentes en este documento).",
+ "escala": "miles",
+ "escala_evidencia": "(Cifras en miles de pesos - M$)",
+ "caja": {
+  "lineas": [
+   192
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   227,
+   234
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance no tiene líneas de cuentas por pagar a empresas relacionadas; se usó como equivalente 'Otros pasivos financieros' corrientes (L227) y no corrientes (L234), que son la deuda financiera. Las cuentas por pagar comerciales (L229) y los otros pasivos no financieros (L231, L236) quedaron fuera."
+}

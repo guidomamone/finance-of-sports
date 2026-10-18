@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2021.md",
+ "generado": "2026-10-18T05:51:18.629Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em Reais - R$)",
+ "caja": {
+  "lineas": [
+   160
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   161,
+   169
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Columna 2021 (cierre más reciente). Deuda = Empréstimos e financiamentos corriente (L161) y no corriente (L169); no se incluyen proveedores ni obligaciones fiscales."
+}

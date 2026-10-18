@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Portugal/Vizela/Relatorio-Contas-FCV-2021-22.md",
+ "generado": "2026-10-18T05:53:28.077Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "1 000 000.00€",
+ "caja": {
+  "lineas": [
+   387
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance (L370-L411) no tiene líneas de deuda financiera: el pasivo no corriente es 0,00 y el pasivo corriente solo incluye proveedores, Estado y otros pasivos corrientes. La nota 17.3 h) Financiamentos obtidos (L1284-L1296) muestra todo en 0,00. No hay una frase explícita de escala; los importes están en euros completos, por eso se usa 'unidades'. El balance está rotulado 31-12-2021, aunque el informe habla del ejercicio 2021/22 con cierre el 30/06/2022."
+}

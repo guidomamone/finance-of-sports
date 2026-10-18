@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2024.md",
+ "generado": "2026-10-18T05:50:00.511Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"esigibili entro l esercizio successivo\" + \"esigibili oltre l esercizio successivo\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   120
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   154,
+   155
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los importes del balance están en euros sin redondeo (unidades); la frase 'valori in Euro' proviene de una tabla de la nota integrativa, no del balance. Caja = Totale (IV) Disponibilità liquide (L120). Deuda = debiti verso banche, esigibili entro 12 mesi (L154) y oltre 12 mesi (L155), 30/06/2024. Se excluyen los debiti verso enti-settore specifico (transferencias de jugadores) por no ser deuda bancaria."
+}

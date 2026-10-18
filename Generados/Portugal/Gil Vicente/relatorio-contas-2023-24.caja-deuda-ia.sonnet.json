@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Gil Vicente/relatorio-contas-2023-24.md",
+ "generado": "2026-10-18T05:51:14.607Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em euros)",
+ "caja": {
+  "lineas": [
+   760
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   772,
+   778
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance consolidado oficial (L736-783) en euros completos; se usan sus líneas. 'Financiamentos obtidos' corriente (L778) y no corriente (L772); el no corriente son préstamos de asociados, incluidos en la rúbrica de financiamientos. Hay un cuadro resumen en la gestión rotulado 'Milhares' (L407) pero corresponde al gráfico de gastos, no al balance."
+}

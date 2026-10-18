@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Bélgica/Genk/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-18T05:51:12.694Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "TOTAAL VAN DE ACTIVA 20/58 102.229.325 110.935.083",
+ "caja": {
+  "lineas": [
+   251
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "El activo está en euros enteros, sin leyenda explícita de escala; la evidencia es el total del activo (102.229.325) que coincide con el informe de gestión (102.229.325 €). Liquide middelen (L251) es la caja; Geldbeleggingen (L250) quedó fuera. Las páginas dadas contienen solo el ACTIVO; el pasivo (con las líneas de deuda financiera, Financiële schulden) no aparece, por lo que no se puede identificar deuda y se deja vacía sin marcar 'ninguna'."
+}

@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2002-03.md",
+ "generado": "2026-10-18T05:51:35.766Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "The tables in the Balance Sheet and Income Statement are expressed to the nearest Euro",
+ "caja": {
+  "lineas": [
+   1777
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Caja: se toma el total de 'IV) Cash at bank and in hand' (L1777), que suma depósitos bancarios (L1775) y efectivo (L1776). El pasivo del balance no tiene préstamos bancarios ni financieros; los pagos 'Due to specific sector' son deudas con clubes/LNP, no deuda financiera. El gasto por intereses bancarios es mínimo (150 mil)."
+}

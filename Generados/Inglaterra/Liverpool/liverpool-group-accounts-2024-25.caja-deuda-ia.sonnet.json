@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2024-25.md",
+ "generado": "2026-10-18T05:52:04.286Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£000",
+ "caja": {
+  "lineas": [
+   797
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "El balance consolidado solo muestra 'Creditors' agregados (L799 y L802) sin desglosar préstamos bancarios; la deuda financiera (deuda bancaria neta e intercompany) se detalla solo en las notas 13 y 14, que no están en las páginas. No se eligen totales de acreedores por incluir cuentas comerciales."
+}

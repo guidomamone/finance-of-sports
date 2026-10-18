@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2021.md",
+ "generado": "2026-10-18T05:53:23.930Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Em reais)",
+ "caja": {
+  "lineas": [
+   172
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   195,
+   210
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se tomó la columna 2021. Deuda financiera = Empréstimos e Financiamentos corriente (L195) y no corriente (L210). Se excluyeron 'Contrato de Empréstimos de Atletas' (L197), parcelamientos de impuestos y contingencias por no ser préstamos bancarios o financieros."
+}

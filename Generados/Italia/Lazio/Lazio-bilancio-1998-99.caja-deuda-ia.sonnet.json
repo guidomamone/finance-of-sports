@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-1998-99.md",
+ "generado": "2026-10-18T05:51:44.002Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "30/06/1999 Lire",
+ "caja": {
+  "lineas": [
+   715
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   762,
+   764,
+   765
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usó el balance statutario en lire (cifras completas, escala unidades); el reclasificado está en miliardi di lire. Deuda: bancos entro l'anno (762), bancos oltre l'anno (764, valor 0) y otros financiadores (765). Existe también versión en euros, no usada."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Corinthians/demonstracoes-financeiras-2024-2025.md",
+ "generado": "2026-10-18T05:50:39.642Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"futebol\" + \"outras contas a receber\" (o sus equivalentes en este documento).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de reais)",
+ "caja": {
+  "lineas": [
+   1328
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1358,
+   1369
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El criterio indicado (futebol + outras contas a receber) corresponde a activos y no tiene equivalente en este balance; se usó deuda financiera estándar: Empréstimos e financiamentos corriente (146.782) y no corriente (103.250) de 2025. No se incluyeron parcelamentos tributários ni fornecedores. Las líneas de valores del activo están separadas de sus etiquetas, la caja se asignó por orden (26.019)."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2019-20.md",
+ "generado": "2026-10-18T05:51:56.449Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   893
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   922,
+   935
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se tomó el balance separado (S.S. Lazio S.p.A.) al 30/06/2020. Deuda: debiti finanziari non correnti (L922) y correnti (L935, igual a 0). No se incluyeron L937 (debiti verso altri finanziatori, dentro de otras pasivos corrientes) ni L945 (deudas con partes relacionadas), que podrían ser financieras pero no están claramente clasificadas como tales. Existe también el balance consolidado, con caja en L3427 y deuda en L3456 y L3469."
+}

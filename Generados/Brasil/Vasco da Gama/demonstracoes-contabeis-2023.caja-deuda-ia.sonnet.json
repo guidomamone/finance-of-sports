@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Vasco da Gama/demonstracoes-contabeis-2023.md",
+ "generado": "2026-10-18T05:53:21.547Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Em milhares de reais)",
+ "caja": {
+  "lineas": [
+   1191
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1227,
+   1239
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera = Empréstimos e financiamentos circulante (L1227: 44.406) y no circulante (L1239: 248). Se excluyen arrendamientos, parcelamentos y regime centralizado de execuções por no ser préstamos/obligaciones financieras según el criterio. La nota de riesgo de liquidez (L3288) muestra un valor contable de 13.422 para empréstimos y financiamentos, distinto del balance; se usó el balance."
+}

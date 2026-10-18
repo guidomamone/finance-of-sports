@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-2004-05.md",
+ "generado": "2026-10-18T05:51:46.163Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"debiti verso altri finanziatori\" + \"debiti verso banche entro l anno\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "30/06/2005 in Euro",
+ "caja": {
+  "lineas": [
+   813
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   846,
+   847
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance en Euro sin indicar miles; se usa el total de disponibilidades líquidas (L813). Deuda = debiti verso banche (L846) + debiti verso altri finanziatori (L847) según el criterio del club; se excluyen los debiti verso soci per finanziamento (L845)."
+}

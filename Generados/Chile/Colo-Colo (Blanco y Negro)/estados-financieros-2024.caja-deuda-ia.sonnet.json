@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2024.md",
+ "generado": "2026-10-18T05:50:37.318Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Cifras en miles de pesos - M$)",
+ "caja": {
+  "lineas": [
+   194
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Los otros pasivos financieros corrientes (L229) y no corrientes (L236) son 0 o '-' al 31.12.2024 (solo 10.148 M$ en 2023), así que no hay deuda financiera en el ejercicio 2024. Los otros pasivos no financieros no son deuda financiera."
+}

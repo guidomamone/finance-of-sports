@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2008-2007.md",
+ "generado": "2026-10-18T05:51:17.007Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Em Reais)",
+ "caja": {
+  "lineas": [
+   15
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   140,
+   142
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda: 'Empréstimos e financiamentos' (L140) y 'Empréstimos de terceiros' (L142), ambos corrientes. No hay préstamos no corrientes separados. El mútuo con JF Esportes (L141) se excluyó por figurar como cuenta a pagar; es dudoso. Columna 2008."
+}

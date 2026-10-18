@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Grecia/PAOK/PAOK_FS_2021-06-30.md",
+ "generado": "2026-10-18T05:52:36.795Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"δανεια\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "caja": {
+  "lineas": [
+   395
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   419,
+   431
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los importes del balance figuran en euros con céntimos (sin indicar miles); la frase de escala procede de la tabla de la nota 28. Deuda = Δάνεια no corriente (L419, 0 en 2021) + parte corriente de préstamos a largo plazo (L431, 8.900.000). Los préstamos con partes vinculadas de la nota 10.2.2 corresponden al ejercicio anterior y no se incluyen."
+}

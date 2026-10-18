@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Nacional/relatorio-contas-2023-24.md",
+ "generado": "2026-10-18T05:52:13.491Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"financiamentos obtidos\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "(montantes em euros)",
+ "caja": {
+  "lineas": [
+   83
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   95,
+   103
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda = Financiamentos obtidos no corrente (L95) y corriente (L103) al 30-jun-24; el balance está en euros sin escalar."
+}

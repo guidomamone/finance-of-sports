@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2020-2021.md",
+ "generado": "2026-10-18T05:50:33.132Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+ "caja": {
+  "lineas": [
+   143
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   186,
+   193
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se tomó la columna Consolidado 2021 (la del cierre más reciente). Deuda = Empréstimos corriente (L186) y no corriente (L193). Los 'Contrato de Concessão de Direitos' y 'Outras obrigações' no se incluyeron por no ser préstamos financieros."
+}

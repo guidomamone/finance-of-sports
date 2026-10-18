@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Brasil/Flamengo/relatorio-anual-demonstracoes-financeiras-2025.md",
+ "generado": "2026-10-18T05:51:06.970Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Em milhares de reais)",
+ "caja": {
+  "lineas": [
+   625
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Se tomó la columna Consolidado 2025 (191.714). El balance no muestra préstamos ni financiamientos bancarios, ni corrientes ni no corrientes. Las obligaciones de 'Fornecedores e outras obrigações' y la 'Outorga a pagar de concessão de uso de bem público' (L663, L670) no son deuda financiera según el criterio. El caja restrito (L626) no se incluyó."
+}

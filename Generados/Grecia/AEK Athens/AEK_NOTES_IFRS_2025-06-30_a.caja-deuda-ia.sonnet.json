@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Grecia/AEK Athens/AEK_NOTES_IFRS_2025-06-30_a.md",
+ "generado": "2026-10-18T05:49:34.321Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "caja": {
+  "lineas": [
+   428
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no muestra préstamos bancarios ni financieros. Hay pasivos por arrendamiento (L439, L445), otras obligaciones a largo plazo (L441, L446) y proveedores, pero ninguno es deuda financiera según el criterio indicado. Las cifras figuran en euros completos; la leyenda 'Ποσά σε €' aparece en el estado de resultados, no en el balance."
+}

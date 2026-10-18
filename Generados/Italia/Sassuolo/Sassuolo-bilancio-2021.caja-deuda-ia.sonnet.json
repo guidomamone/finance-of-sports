@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2021.md",
+ "generado": "2026-10-18T05:53:00.395Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "31 dicembre 2021",
+ "caja": {
+  "lineas": [
+   507
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   542,
+   543
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance oficial en euros completos (unidades); la relazione sulla gestione usa Euro/000 pero el balance civilístico no declara escala. Deuda: debiti verso banche (L542, corriente 5.892.857 + no corriente 9.107.143) y verso altri finanziatori (L543). Los debiti verso controlante Mapei (L546, cash pooling y finanziamento) podrían ser deuda financiera pero la línea mezcla conceptos comerciales y financieros, por lo que se excluyó."
+}

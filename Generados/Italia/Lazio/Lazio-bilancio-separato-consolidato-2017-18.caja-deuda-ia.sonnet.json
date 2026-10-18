@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2017-18.md",
+ "generado": "2026-10-18T05:51:58.414Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   3410
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   3437,
+   3450,
+   3452
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El documento trae un balance separado (L878-L978) y uno consolidado (L3372-L3463); elegí el consolidado. Incluí 'Debiti verso altri finanziatori' (L3452, 27,47 M€) porque la posición financiera neta del documento (L4239) lo cuenta como deuda financiera, aunque figura dentro de 'Altre passività correnti' (L3451), que no incluí por ser un subtotal."
+}

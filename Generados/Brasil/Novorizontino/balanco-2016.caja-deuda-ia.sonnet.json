@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/balanco-2016.md",
+ "generado": "2026-10-18T05:52:19.022Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(valores expressos em milhares de reais)",
+ "caja": {
+  "lineas": [
+   14
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   19,
+   22
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caja: se eligió solo 'Caixa e Equivalentes de Caixa' (L14), sin las inversiones temporarias. Deuda: 'Bancos C/ Devedoras' (L19, cuenta corriente garantizada Bradesco, corriente) y 'Empréstimos e Mútuos' (L22, no corriente, principalmente I-9 Sports Ltda). Las cifras detalladas de las páginas del libro contable están en reales, no en miles."
+}

@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/Ferroviaria/balanco-2012.md",
+ "generado": "2026-10-18T05:51:02.455Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Em reais",
+ "caja": {
+  "lineas": [
+   136
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   136
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Revisar: la línea de deuda es L136 en el balance, pero ese número corresponde al renglón combinado con caja (Empréstimos corriente en la misma fila que Caixa). No hay deuda financiera no corriente identificada por separado: el Exigível a longo prazo (L146, nota 12) corresponde a obligaciones tributarias, no a préstamos. Los mútuos con partes relacionadas (L143) no se incluyeron por ser con personas físicas vinculadas."
+}

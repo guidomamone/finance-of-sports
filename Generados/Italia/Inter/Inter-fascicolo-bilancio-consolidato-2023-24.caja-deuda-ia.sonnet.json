@@ -1,0 +1,25 @@
+{
+ "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2023-24.md",
+ "generado": "2026-10-18T05:51:32.215Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "amounts in Euro",
+ "caja": {
+  "lineas": [
+   1168
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1214,
+   1215,
+   1217,
+   1218,
+   1220,
+   1222
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera: bonos (corriente y no corriente), préstamos de accionistas (corriente y no corriente), préstamo bancario corriente y otros financiamientos corrientes. Los préstamos de accionistas y 'other financing' son criterio discutible, pero se incluyen como deuda financiera. Caja: se toma el total de 'Cash at bank and on hand' (L1168), que ya suma L1166 y L1167."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2013-14-pos-AG.md",
+ "generado": "2026-10-18T05:50:12.599Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "VALORES EM VALORES DE AURA",
+ "caja": {
+  "lineas": [
+   2632
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   2646,
+   2654
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usó la columna consolidada 30.06.14. La escala es dudosa: la leyenda del balance está corrupta por el OCR ('VALORES EM VALORES DE AURA'). Otras notas dicen 'milhares de euros', y las cifras (p. ej. capital social 115.000) sugieren que están en miles de euros, pero el texto del balance no lo dice, así que se eligió 'unidades' por la evidencia literal. Los derivados (L2647) no se incluyeron como deuda."
+}

@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Inglaterra/Nottingham Forest/forest-full-accounts-2024-25.md",
+ "generado": "2026-10-18T05:52:18.040Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£000 £000",
+ "caja": {
+  "lineas": [
+   741
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Cash at bank and in hand 2025 = 13,224 (L741). The balance sheet shows only aggregate creditors (due within one year: 161,181; after one year: 145,326) with no separate line for bank loans or borrowings, so no financial debt line can be identified from the balance sheet itself; the detail would be in the creditors notes, which were not provided. I left deuda empty and did not mark it as none, because the aggregate creditors likely include borrowings (e.g. loans from NF Football Investments)."
+}

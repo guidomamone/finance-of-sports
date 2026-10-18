@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Brasil/Vila Nova/balanco-patrimonial-2017.md",
+ "generado": "2026-10-18T05:53:24.266Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Em Reais)",
+ "caja": {
+  "lineas": [
+   14
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   67,
+   68,
+   69
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caja: L14 (Bens Numerários) es el subtotal de Caixa más Bancos (L15 y L16), que se incluyen en él. Deuda: se incluyeron Empréstimos de Conselheiros, de Terceiros y Bancários, todos no corrientes. Los Empréstimos de Conselheiros y de Terceiros no son estrictamente bancarios, pero son préstamos financieros. Se excluyeron los Parcelamentos de Tributos. No hay préstamos en el pasivo corriente."
+}

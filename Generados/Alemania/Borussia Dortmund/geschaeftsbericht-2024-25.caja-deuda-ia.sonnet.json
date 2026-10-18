@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Alemania/Borussia Dortmund/geschaeftsbericht-2024-25.md",
+ "generado": "2026-10-18T05:50:53.864Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "EUR '000",
+ "caja": {
+  "lineas": [
+   2918
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   2962,
+   2969
+  ],
+  "ninguna": false
+ },
+ "observaciones": "En el balance consolidado (NIIF) los importes de las líneas L2918, L2962 y L2969 no aparecen en el texto extraído; solo figuran los porcentajes del total. Las cifras tienen que venir de las notas: caja EUR 20,633 mil; préstamos bancarios EUR 33,599 mil, de los cuales EUR 5,148 mil son corrientes. Se excluyen arrendamientos y otras deudas financieras. El balance individual HGB (matriz) muestra 'Liabilities to banks' 33,599 (L9091) y caja 20,147 (L9051), pero se prefirió el consolidado."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-relazione-finanziaria-annuale-2024-25.md",
+ "generado": "2026-10-18T05:51:59.342Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   5626
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   5649,
+   5658
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El documento incluye el balance individual de la sociedad (L1840, L1863, L1872) y el consolidado (L5626, L5649, L5658); elegí el consolidado por ser el del grupo. Los importes están en euros enteros. No incluí los debiots correntes verso controllate ni los arrendamientos (diritti d'uso) porque no aparecen como línea separada en el balance."
+}

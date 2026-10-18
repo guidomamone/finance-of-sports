@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Inglaterra/Burnley/burnley-fc-holdings-group-accounts-2024-25.md",
+ "generado": "2026-10-18T05:50:27.266Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£000",
+ "caja": {
+  "lineas": [
+   679
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "El balance consolidado solo muestra 'Creditors: amounts falling due within one year' (L681) y 'after more than one year' (L687) como totales de acreedores, sin desglosar préstamos. La nota de variación de deuda neta (L2232) indica Borrowings de £142,372k, pero no es una línea del balance y el desglose corriente/no corriente no aparece, por lo que no se eligió ninguna línea. La caja es 12,909 (2025)."
+}

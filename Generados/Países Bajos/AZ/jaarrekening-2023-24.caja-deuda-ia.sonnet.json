@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Países Bajos/AZ/jaarrekening-2023-24.md",
+ "generado": "2026-10-18T05:50:08.891Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "€ x 1000",
+ "caja": {
+  "lineas": [
+   713
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   747
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se tomó el balance consolidado (30 jun 2024). Deuda financiera: solo 'Schulden aan kredietinstellingen' no corriente (L747, 7.333). La parte corriente de 667 está dentro de 'Overige schulden' corrientes (L754), sin línea propia. Las 'Overige schulden' no corrientes (L748) incluyen el préstamo de Zaanstad (4.511) pero mezclan otras deudas, por eso no se incluyeron."
+}

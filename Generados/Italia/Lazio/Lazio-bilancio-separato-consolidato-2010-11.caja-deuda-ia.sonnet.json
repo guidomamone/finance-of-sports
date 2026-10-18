@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2010-11.md",
+ "generado": "2026-10-18T05:51:50.375Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   800
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   838,
+   840,
+   848
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se tomó el balance separado de S.S. Lazio S.p.A. al 30/06/2011 (L765-L854), no el consolidado. Deuda financiera: debiti finanziari correnti (L838), debiti verso altri finanziatori (L840) y debiti finanziari correnti verso parti correlate (L848, incluye controladas y asociadas). No hay deuda financiera no corriente separada; los debiti tributari no se incluyen por ser deuda fiscal. La inclusión de L840 y L848 es un criterio interpretativo."
+}

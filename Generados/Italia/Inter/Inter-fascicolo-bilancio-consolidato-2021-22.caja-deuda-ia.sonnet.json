@@ -1,0 +1,25 @@
+{
+ "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2021-22.md",
+ "generado": "2026-10-18T05:51:31.048Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "amounts in Euro",
+ "caja": {
+  "lineas": [
+   534
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   570,
+   571,
+   573,
+   574,
+   576,
+   577
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance en euros completos (30 June 2022). Caja = total efectivo (L534, suma de L532 y L533). Deuda incluye bonos, préstamos de accionistas (Shareholders' loan) y préstamos bancarios, corriente y no corriente; los préstamos de accionistas son discutibles como deuda financiera pero se incluyen por ser financiamiento."
+}
