@@ -36,7 +36,9 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
   **Compuerta en `tools/cargar.mjs`** (`compuertaContexto()`, un solo punto antes de `escribir()`, acordado con fos-pipeline para que la
   del auditor del to-do 282 vaya al lado): corre `estadio-sponsor.mjs --escribir --club <id> --anio <año> --liga <liga> --cierre <MM-DD>`
   y no escribe si falta estadio o sponsor. `alta-club.mjs` no la necesita: da de alta el club sin ejercicios, y el primero pasa por
-  `cargar.mjs`. ASSET_V 1255 (los archivos de `data/contexto/` todavía no los carga el sitio: los va a mostrar fos-pantallas en Finanzas).
+  `cargar.mjs`. También en `tools/bfo-rusia.mjs`, que escribe con `escribir()` sin pasar por el `main()` de cargar (aviso de fos-pipeline);
+  ahí no frena un año ya cargado que solo se reescribe. Ojo: el estadio de Rusia no sale de Wikipedia (0 de 66), así que todo año ruso
+  nuevo frena hasta completarlo a mano. ASSET_V 1255 (los archivos de `data/contexto/` todavía no los carga el sitio: los va a mostrar fos-pantallas en Finanzas).
 
 ## Qué queda (TODO)
 
