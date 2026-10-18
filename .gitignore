@@ -155,3 +155,7 @@ Admin/registros/.candado.lock
 # Los Generados del balance del municipio de Kallithea (ver "Documento que no es del club", arriba): va acá, después del
 # !Generados/**/*.json que los volvería a incluir.
 Generados/Grecia/Athens Kallithea/**
+
+# Los datos del dashboard de usuarios y visitas (tools/dashboard-usuarios.mjs): se rehacen cada semana y se suben al artifact; no son
+# caché de nada. Después del !Generados/**/*.json, por lo mismo que Kallithea.
+Generados/dashboard-usuarios/**
