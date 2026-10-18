@@ -288,3 +288,11 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
 - Nuevo (a decidir): en 223 de los 227 liga-años con lista de Wikipedia `leagueSize` es null, aunque la lista existe y alimenta los
   estimados: sin él no hay "N de los M" en el subtítulo ni "Faltan…". ¿El tamaño sale de la lista (`LEAGUE_SIZE_BY_YEAR`,
   `tools/listas-lote.mjs`)?
+
+### 254 + 243: primera lectura del KV (2026-10-18)
+
+- El token de `Admin/api-keys/cloudflare.env` ya tiene "Workers KV Storage · Read" (lo sumó Guido): la API lista el namespace
+  `FOS_LOGS`. Tiene 11 claves, cada una un contador sin fecha (`search:hit:<texto>`, `search:miss:<texto>`,
+  `compare:<a> __vs__ <b>`), todas en 1. Sin resultado: "atalanta" (ya cargado: Atalanta entró el 2026-10-17), "allipuvis",
+  "celular" y "triangula" (ruido). Comparar: un par. Web Analytics: 90 visitas muestreadas en 30 días (US, IN, RU, CA), unas 9 reales.
+  Todavía no hay un club que se busque y falte; el embudo de Mixpanel no se puede leer desde acá (el conector solo trae eventos en vivo).
