@@ -20,6 +20,17 @@ To-dos de la sesión, en orden: 250 (hooks), 244 (licencia), 300 (auditoría pro
     que no) y en vivo en esta sesión: los commits del 4 y el 5 pasaron por la auditoría, y una prueba que mencionaba ESTADO se frenó.
   - Los chequeos de Bash leen el texto del comando: un comando que solo MENCIONA una de esas rutas junto a algo que escribe (por ejemplo, una
     prueba con el JSON del hook adentro) también se frena. Es el precio de no parsear shell; pasó una vez probando.
+- To-do 244, licencia (decisiones de Guido, 2026-10-18): el Formato simplificado bajo CC BY-NC 4.0 (libre citando, también en medios con
+  publicidad; el uso comercial, la reventa, la descarga masiva u otra API necesitan licencia comercial). La API, cuando exista, es paga
+  para todos y no se cobra nada más. Los documentos de los clubes y sus transcripciones no llevan la licencia del sitio; lo de Wikipedia
+  va con CC BY-SA 4.0; el código, todos los derechos reservados. "Sin fines de lucro" sale de términos y privacidad.
+  - `terminos.html`: sección "Licencia y reuso". `metodologia.html`: sección "Fuentes externas" (tabla dato / fuente / condiciones).
+  - `Admin/fuentes-externas.md` (nuevo): de dónde sale cada dato externo, dónde vive en el repo y qué permiten los términos de cada
+    fuente (leídos en su página, con la URL), y las consecuencias para la API.
+
+## Decisiones de Guido (2026-10-18), para CONVENCIONES
+
+- Una fuente externa nueva se suma a `Admin/fuentes-externas.md` (términos leídos en su página) antes de publicar datos que salgan de ella.
 
 ## Qué deja de ser cierto en ESTADO
 
@@ -27,9 +38,21 @@ To-dos de la sesión, en orden: 250 (hooks), 244 (licencia), 300 (auditoría pro
   `tools/hooks/pre-tool.mjs`): audit.js antes de cada commit publicable (frena con P0/P1; `[sin-audit]` con el ok de Guido), y piden
   permiso editar skills, `git push` y borrar en `Clubes/`; en un worktree rechazan escribir TODO, CHANGELOG y ESTADO. Qué chequea cada
   uno: la cabecera del script."
+- "Objetivo del proyecto": sigue siendo cierto que todo el sitio es gratis, pero ya hay licencia: el Formato simplificado bajo CC BY-NC
+  4.0 y el uso comercial con licencia aparte; la API, si se hace, es paga para todos (`terminos.html`; fuentes y términos en
+  `Admin/fuentes-externas.md`). El "plan pago" de la frase vieja (analítica avanzada + tweets) se reemplaza por eso.
 
 ## Qué queda (para TODO)
 
-- 250: se borra (resuelto).
+- 250 y 244: se borran (resueltos).
+- Al 249 (API), sumarle: un ejercicio convertido con una cotización de BCRA, SII, Banco de Rusia o Bank of England (restringen el uso
+  comercial) se sirve en la moneda del club o se pide permiso (`Admin/fuentes-externas.md`, "Consecuencias").
+- Nuevo (pipeline): bajar el deflactor de EE.UU. directo de la BEA en vez de FRED, que prohíbe el scraping y guardar copias
+  (`tools/fetch-fx-reference.mjs --deflactores`).
+- Nuevo (pantallas): la pestaña Mercado de Pases muestra datos inventados ("Jugador A", montos de relleno) en Boca, River y Racing, con la
+  nota "Fuente: Transfermarkt + reportes de club (placeholder)" (`index.html`). Esconderla o vaciarla hasta tener datos reales.
+- Nuevo (pantallas): el pie de `index.html` dice "Proyecto personal, sin fines de lucro" (y `data/lang/en.js`, "non-profit"). Guido lo
+  sacó de términos y privacidad; falta ahí (sube ASSET_V, por eso no se tocó en esta rama).
+- Nuevo (sitio): la lista de ligas no muestra la cita de Wikipedia (sponsor y contexto sí): sumarla, con la licencia CC BY-SA.
 - Las sesiones que ya estaban abiertas antes del merge toman los hooks recién en una sesión nueva (o cuando Claude Code relee
   `.claude/settings.json`); los worktrees, después del fast-forward.
