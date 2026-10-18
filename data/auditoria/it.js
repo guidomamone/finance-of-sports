@@ -709,6 +709,60 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
+ "cremonese-it": {
+  "2022": {
+   "auditor": {
+    "nombre": "EY",
+    "tipo": "firma",
+    "legal": "EY S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Cremonese/Cremonese-relazione-revisione-2022.md",
+    "linea": 30
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO Italia S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Cremonese/Cremonese-relazione-revisione-2023.md",
+    "linea": 37
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO Italia S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Cremonese/Cremonese-relazione-revisione-2024.md",
+    "linea": 35
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO Italia S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Cremonese/Cremonese-relazione-revisione-2025.md",
+    "linea": 35
+   }
+  }
+ },
  "fiorentina-it": {
   "2019": {
    "auditor": {
