@@ -42,6 +42,12 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
   caja-deuda pasó a Sonnet; perimetro-a2, localizar, extraer y categorizar siguen en Opus, cada uno con su medición en HALLAZGOS. Gasto de las
   mediciones de esta sesión: US$ 40,95 (caja-deuda 12,37; perimetro-a2 13,82; localizar 3,97; extraer 10,79).
 
+- **El cierre falso de verificar (to-do 298 a).** `tools/verificar.mjs` (`cierraRes`): un resultado impreso NEGATIVO tiene que cerrar con su
+  signo; el valor absoluto queda para el impreso positivo o sin signo (escalera del to-do 198). Caso: Lierse Kempenzonen 2022 (impreso −4.591)
+  cerraba "financiero invertido" con +4.590; ahora no cierra con esa lectura. Medido con `medir-verificar` sobre 376 documentos
+  (prueba-completa + Bélgica y Estonia, con los derivados de la principal copiados un rato): idénticos. Comparar siempre con signo se
+  probó y no entra (cambiaba Novorizontino 2014-b, AVS 2023-24 y Portimonense 2022-23, pérdidas impresas sin signo).
+
 ## Qué queda pendiente (para TODO)
 
 - **Escribir caja y deuda en `data/`, en la carpeta principal después del merge** (sin API: escalón 0). Junto con lo que ya dejó la
@@ -67,7 +73,7 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
 
 ## Qué deja de ser cierto en ESTADO
 
-- Los to-dos 288, 289 y 290 se cierran (290: Genoa 2022 deja de dar un valor mal; el valor publicado depende del 291).
+- Los to-dos 288, 289 y 290 se cierran, y la letra a) del 298 (290: Genoa 2022 deja de dar un valor mal; el valor publicado depende del 291).
 - RB Leipzig 2023-2024 y HSV 2024 dejan de estar "sin escala del documento" en caja-deuda.
 
 ## Para fos-onboarding (cómo se carga)

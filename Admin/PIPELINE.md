@@ -361,7 +361,8 @@ Mitigaciones:
 - **Resultado impreso, escalón 2** (Versión 415, ampliado en la 592): si no hay resultado en los bloques, una línea PREJUÍZO / SUPERÁVIT /
   "UTILE (PERDITA) DELL'ESERCIZIO" pegada al último bloque (hasta 4 líneas; en italiano el signo lo da el importe, entre paréntesis = pérdida);
   compuerta: alguna lectura cierra con él exacto. `ANTES_RE` reconoce también "prima delle imposte", el checo "před zdaněním" y el griego "προ φόρων" (sin "προ φόρων, χρηματοδοτικών…" ni "προ φόρων και τόκων", que son el resultado operativo).
-- **Signo del resultado que se carga** (to-do 198). La compuerta del resultado compara valores absolutos; el signo que se le pasa a la carga:
+- **Signo del resultado que se carga** (to-do 198). La compuerta del resultado compara valores absolutos, salvo cuando el resultado
+  impreso es negativo: ese trae su signo y tiene que cerrar con signo (to-do 298 a; Lierse Kempenzonen 2022 cerraba con las filas dadas vuelta); el signo que se le pasa a la carga:
   escalón 0 el ajuste `resultado-final`; escalón 1 el impreso tal cual; escalón 2 el signo de las filas, solo si el resultado del ejercicio
   cerró EXACTO con el signo opuesto Y el documento dice que el impreso es una pérdida sin signo (etiqueta de pérdida y no de las dos cosas:
   "Prejuízo" sí, "Superávit/Déficit" no; o la marca D de balancete; o los ingresos impresos en negativo). Sin señal, frena como siempre.
