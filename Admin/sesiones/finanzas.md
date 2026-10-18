@@ -75,8 +75,8 @@
 - To-do 282 e: campo opcional `alcance` en `auditoria.jsonl` (validado por `tools/auditoria.mjs`, con nota obligatoria, publicado en
   `CLUB_AUDITORIA[club][año].alcance`): `revision_limitada` (Como 2025), `procedimientos_acordados` (Osijek 2025: el informe dice que no es
   auditoría ni revisión), `proposito_especial` (Kifisia 2022-2024, estados para la licencia) y `grupo` (Club América 2025, cuentas de
-  Ollamani). Criciúma 2015-2019 queda como auditoría plena, con nota (el título dice "revisão especial" pero audita y opina). La pantalla la
-  hace fos-pantallas con el contrato que le pasé. ASSET_V 1283 en la rama.
+  Ollamani). Criciúma 2015-2019 queda como auditoría plena, con nota (el título dice "revisão especial" pero audita y opina). La pantalla ya
+  está en la rama pantallas (a8ad97ac3b, "del grupo dueño del club" para `grupo`): anda cuando se mergeen las dos ramas. ASSET_V 1283 en la rama.
 
 ### Qué queda (para TODO)
 
@@ -87,3 +87,32 @@
 ### Qué deja de ser cierto en ESTADO
 
 - El registro de entidades tiene 50 clubes con estructura (no 47).
+
+## Después del segundo merge del 2026-10-18
+
+### Qué cambió (para CHANGELOG)
+
+- To-do 281: documentos de las asociaciones de clubes portugueses transcriptos por subagentes Sonnet (texto de `pdftotext -layout` por
+  página, o la imagen en los escaneos; chequeos `check-transcripcion-fidelidad.js` y `comparar-numeros.mjs` en los digitales) y su línea
+  `ingresos` en el registro de entidades (verificada por `tools/entidades.mjs`; todos los renglones de ingresos de la DR, sin los "Ganhos
+  imputados de subsidiárias"):
+  - Vizela: Futebol Clube de Vizela, entidad nueva (20 % de la SAD, citado de las cuentas de la SAD 2022-23 a 2024-25); cuentas 2023 y 2024
+    (año calendario, escaneos) con su línea.
+  - Belenenses 2024-25 (3,55 M €), Chaves 2022-23 (0,84 M €; trae el informe del auditor RCVM de la asociación), Académica 2022-23
+    (2,18 M €), Braga 2022-23 (5,67 M €) y Marítimo 2020-21 a 2024-25 (cierre 31 de julio; suma también los juros obtidos; 2025 = 5.586.395,
+    igual al total de rendimentos del informe de gestión).
+  - União de Leiria 2023-24: el PDF es solo el anexo (dos veces), sin DR: transcripto, sin línea de ingresos.
+  - Porto (Futebol Clube do Porto): 2019-20 (11,40 M €), 2023-24 (17,88 M €) y 2024-25 (15,70 M €, la DR va en miles: `unidad` 1000),
+    siempre de la DR individual de la asociación, no del consolidado del grupo que el mismo documento trae. Transcriptos en tramos de
+    ~50 págs.; los [verificar] se resolvieron contra la imagen de la página; dos notas de transcripción marcadas como tales en 2019-20.
+  - Criterio aplicado (para CONVENCIONES-DATOS, si Guido lo confirma): "todos los renglones de ingresos" incluye los "Juros e rendimentos
+    similares obtidos" (Marítimo, Porto); no incluye los renglones netos de imparidad ni de provisiones.
+
+### Qué queda (para TODO)
+
+- 281: União de Leiria 2023-24, un documento con la DR de la asociación para su línea de ingresos. El resto del 281 está hecho.
+
+### Qué deja de ser cierto en ESTADO
+
+- La tarjeta Estructura muestra los ingresos de la asociación en Vizela, Belenenses, Chaves, Académica, Braga 2022-23 y Marítimo (además de
+  Vitória, Tondela y Braga 2020-21).

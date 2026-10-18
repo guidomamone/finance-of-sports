@@ -53,6 +53,17 @@ Object.assign(window.CLUB_ENTIDADES, {
     "fuente": {
      "md": "Clubes/Portugal/Académica/9-RC-SDUQ-2021-2022.md",
      "linea": 460
+    },
+    "ingresos": {
+     "2023": {
+      "total": 2.177,
+      "moneda": "EUR",
+      "cierre": "2023-06-30",
+      "fuente": {
+       "md": "Clubes/Portugal/Académica/OAF-RC-2022-2023.md",
+       "linea": 176
+      }
+     }
     }
    }
   },
@@ -566,6 +577,17 @@ Object.assign(window.CLUB_ENTIDADES, {
     "fuente": {
      "md": "Clubes/Portugal/Belenenses/Belenenses-SDUQ-Relatorio-e-Contas-2023-2024.md",
      "linea": 44
+    },
+    "ingresos": {
+     "2025": {
+      "total": 3.55,
+      "moneda": "EUR",
+      "cierre": "2025-06-30",
+      "fuente": {
+       "md": "Clubes/Portugal/Belenenses/cfb-demonstracoes-financeiras-em-30-junho-25.md",
+       "linea": 140
+      }
+     }
     }
    }
   },
@@ -1586,6 +1608,15 @@ Object.assign(window.CLUB_ENTIDADES, {
        "md": "Clubes/Portugal/Braga/relatorio-contas-2020-21.md",
        "linea": 2004
       }
+     },
+     "2023": {
+      "total": 5.674,
+      "moneda": "EUR",
+      "cierre": "2023-06-30",
+      "fuente": {
+       "md": "Clubes/Portugal/Braga/RC-2022-23-SCB.md",
+       "linea": 1276
+      }
      }
     }
    }
@@ -1844,6 +1875,17 @@ Object.assign(window.CLUB_ENTIDADES, {
     "fuente": {
      "md": "Clubes/Portugal/Chaves/RC-2021-2022_compressed-1.md",
      "linea": 236
+    },
+    "ingresos": {
+     "2023": {
+      "total": 0.843,
+      "moneda": "EUR",
+      "cierre": "2023-06-30",
+      "fuente": {
+       "md": "Clubes/Portugal/Chaves/Relatorio_Atividades-e-Contas-2022_2023.md",
+       "linea": 178
+      }
+     }
     }
    }
   },
@@ -2686,6 +2728,53 @@ Object.assign(window.CLUB_ENTIDADES, {
     "fuente": {
      "md": "Clubes/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.md",
      "linea": 1281
+    },
+    "ingresos": {
+     "2021": {
+      "total": 4.501,
+      "moneda": "EUR",
+      "cierre": "2021-07-31",
+      "fuente": {
+       "md": "Clubes/Portugal/Maritimo/CSM_DFs-jul21.md",
+       "linea": 549
+      }
+     },
+     "2022": {
+      "total": 5.07,
+      "moneda": "EUR",
+      "cierre": "2022-07-31",
+      "fuente": {
+       "md": "Clubes/Portugal/Maritimo/CSM_DFs-jul22.md",
+       "linea": 591
+      }
+     },
+     "2023": {
+      "total": 6.13,
+      "moneda": "EUR",
+      "cierre": "2023-07-31",
+      "fuente": {
+       "md": "Clubes/Portugal/Maritimo/CSM_DFs-jul23.md",
+       "linea": 535
+      }
+     },
+     "2024": {
+      "total": 4.538,
+      "moneda": "EUR",
+      "cierre": "2024-07-31",
+      "fuente": {
+       "md": "Clubes/Portugal/Maritimo/CSM_RC_31.07.2024-v2.md",
+       "linea": 573
+      }
+     },
+     "2025": {
+      "total": 5.586,
+      "moneda": "EUR",
+      "cierre": "2025-07-31",
+      "fuente": {
+       "md": "Clubes/Portugal/Maritimo/CSM_RC-31.07.2025.md",
+       "linea": 559
+      }
+     }
     }
    },
    "maritimo-sad": {
@@ -3461,6 +3550,35 @@ Object.assign(window.CLUB_ENTIDADES, {
     "fuente": {
      "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2015-16.md",
      "linea": 1153
+    },
+    "ingresos": {
+     "2020": {
+      "total": 11.403,
+      "moneda": "EUR",
+      "cierre": "2020-06-30",
+      "fuente": {
+       "md": "Clubes/Portugal/Porto/relatorio-contas-2019-20.md",
+       "linea": 1071
+      }
+     },
+     "2024": {
+      "total": 17.885,
+      "moneda": "EUR",
+      "cierre": "2024-06-30",
+      "fuente": {
+       "md": "Clubes/Portugal/Porto/relatorio-contas-2023-24.md",
+       "linea": 3897
+      }
+     },
+     "2025": {
+      "total": 15.698,
+      "moneda": "EUR",
+      "cierre": "2025-06-30",
+      "fuente": {
+       "md": "Clubes/Portugal/Porto/relatorio-contas-2024-25.md",
+       "linea": 7285
+      }
+     }
     }
    },
    "porto-comercial": {
@@ -5496,6 +5614,39 @@ Object.assign(window.CLUB_ENTIDADES, {
    }
   ],
   "entidades": {
+   "fc-vizela-clube": {
+    "nombre": "Futebol Clube de Vizela",
+    "forma": "asociacion",
+    "pais": "PT",
+    "que": {
+     "es": "El club fundador, accionista de la SAD",
+     "en": "The founding club, a shareholder of the SAD"
+    },
+    "fuente": {
+     "md": "Clubes/Portugal/Vizela/Relatorio-e-Contas-Exercicio-2024.md",
+     "linea": 61
+    },
+    "ingresos": {
+     "2023": {
+      "total": 0.281,
+      "moneda": "EUR",
+      "cierre": "2023-12-31",
+      "fuente": {
+       "md": "Clubes/Portugal/Vizela/Relatorio-e-Contas-Exercicio-2023.md",
+       "linea": 67
+      }
+     },
+     "2024": {
+      "total": 0.308,
+      "moneda": "EUR",
+      "cierre": "2024-12-31",
+      "fuente": {
+       "md": "Clubes/Portugal/Vizela/Relatorio-e-Contas-Exercicio-2024.md",
+       "linea": 71
+      }
+     }
+    }
+   },
    "vizela-sad": {
     "nombre": "Futebol Clube de Vizela Futebol SAD",
     "forma": "sociedad",
@@ -5507,6 +5658,43 @@ Object.assign(window.CLUB_ENTIDADES, {
     }
    }
   },
-  "relaciones": []
+  "relaciones": [
+   {
+    "de": "fc-vizela-clube",
+    "a": "vizela-sad",
+    "rel": "participa",
+    "pct": 20,
+    "desde": 2023,
+    "hasta": 2023,
+    "fuente": {
+     "md": "Clubes/Portugal/Vizela/Relatorio-e-Contas-FCV-2022-23_Aprovadas.md",
+     "linea": 1058
+    }
+   },
+   {
+    "de": "fc-vizela-clube",
+    "a": "vizela-sad",
+    "rel": "participa",
+    "pct": 20,
+    "desde": 2024,
+    "hasta": 2024,
+    "fuente": {
+     "md": "Clubes/Portugal/Vizela/Relatorio-Gestao-e-contas-FCV-2023-24-Ass.md",
+     "linea": 1082
+    }
+   },
+   {
+    "de": "fc-vizela-clube",
+    "a": "vizela-sad",
+    "rel": "participa",
+    "pct": 20,
+    "desde": 2025,
+    "hasta": 2025,
+    "fuente": {
+     "md": "Clubes/Portugal/Vizela/Relatorio-e-Contas-2024-25-FCV.md",
+     "linea": 1008
+    }
+   }
+  ]
  }
 });
