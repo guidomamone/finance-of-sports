@@ -5,4 +5,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'harjujklaagri-ee': { 2025: null },
   'kuressaare-ee': { 2025: null },
   'nommekalju-ee': { 2025: null },
+  'tartutammeka-ee': { 2025: null },
 });
