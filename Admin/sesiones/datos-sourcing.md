@@ -48,6 +48,9 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
   a mano en `tools/sponsor-alias.json` (17 variantes de espacio o ".com", y Fly Emirates = Emirates; las "X Group" no, sin verificar).
   `alias.json`: "Inter Milan" → inter-it y "Sporting de Braga" → braga-pt. Corre con los generadores de `cargar.mjs` y `alta-club.mjs`, y
   `audit.js` lo chequea (`sponsors-desfasado`, P1). ASSET_V 1256.
+- **To-do 273: estadio de Rusia.** Las páginas rusas lo traen en una galería de fichas (sección "Venues"), no en tabla: lector nuevo
+  `galeriaEstadios()` en `estadio-sponsor.mjs` (bloques club / estadio / capacidad, se acepta uno solo si las tres filas tienen las mismas
+  celdas). Rusia: estadio de 0 a 55 de 66 ejercicios; total, estadio 82%.
 
 ## Qué queda (TODO)
 
@@ -57,6 +60,10 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
   su histórico y qué equipos sponsorea hoy: los datos están en `data/sponsors.js`; falta la pantalla). Lo cargado a mano en
   `contexto-manual.json` todavía no entra al índice de sponsors (está por año de ejercicio, no por liga-temporada). `data/sponsors.js`
   pesa ~650 KB: si la pantalla lo carga entero, partirlo (por letra o por liga).
+- Rusia: 13 ejercicios sin estadio (Krylia Sovetov 2021-2025, Spartak 2022-2023, Akron 2024-2025, Dynamo Makhachkala 2024-2025, Baltika
+  2024, Sochi 2024): sus fichas están pegadas al mapa de la galería. Van a `contexto-manual.json` con una fuente que dé el nombre de cada
+  temporada (los nombres comerciales cambian: Samara Arena / Solidarnost Samara Arena, Otkritie Arena / Lukoil Arena); premierliga.ru
+  pide captcha.
 - La skill `club-or-year-onboarding` y `Admin/PIPELINE.md` tienen que nombrar la compuerta nueva de `cargar.mjs` (la skill, con ok de Guido).
 
 ## Qué deja de ser cierto en ESTADO

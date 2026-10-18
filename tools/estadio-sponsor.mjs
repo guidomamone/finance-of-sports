@@ -122,6 +122,29 @@ function capacidad(c) {
 }
 const col = (enc, re, no) => enc.findIndex((h) => re.test(h) && !(no && no.test(h)));
 
+// GALERÍA DE ESTADIOS (Rusia: sección "Venues"). No es una tabla por club sino bloques de fichas: una fila "! [[Club]]" por club, abajo
+// una fila con el estadio de cada uno y otra con "Capacity: '''67,800'''". Se lee por bloques y se acepta uno solo si las tres filas tienen
+// la misma cantidad de celdas (una celda con colspan/rowspan, el mapa, desarma el bloque y se descarta).
+function galeriaEstadios(wikitext) {
+  const ini = wikitext.search(/^===?\s*(Venues|Stadiums)\s*===?\s*$/mi); if (ini < 0) return [];
+  const sec = wikitext.slice(ini).split('\n').slice(1); const out = [];
+  let clubes = [], estadios = [], caps = [], fase = 'clubes';
+  const cerrar = () => { if (clubes.length && clubes.length === estadios.length && estadios.length === caps.length) clubes.forEach((c, i) => out.push({ club: c, estadio: estadios[i], capacidad: caps[i] })); clubes = []; estadios = []; caps = []; fase = 'clubes'; };
+  for (const l of sec) {
+    if (/^==[^=]/.test(l) || /^\|\}/.test(l)) { cerrar(); if (/^==[^=]/.test(l)) break; continue; }
+    // "!colspan=3| [[Club]]" (2024-25): el colspan de una ficha no desarma nada; un rowspan o una celda vacía (el mapa) sí
+    if (/^\s*!/.test(l)) { if (fase !== 'clubes') cerrar(); clubes.push(cleanTexto(atributos(l.replace(/^\s*!/, '')).texto)); continue; }
+    if (/^\|-/.test(l) || !/^\s*\|/.test(l)) continue;
+    const a = atributos(l.replace(/^\s*\|/, '')); const c = a.texto;
+    if (a.rowspan > 1 || !c.trim() || /Location map/i.test(c)) { cerrar(); continue; }
+    if (/\[\[(File|Image):/i.test(c)) continue;
+    if (/Capacity:/i.test(c)) { fase = 'caps'; caps.push(capacidad(c.replace(/'''/g, ''))); continue; }
+    if (clubes.length) { fase = 'estadios'; estadios.push(cleanTexto(c) || null); }
+  }
+  cerrar();
+  return out.filter((x) => x.club && x.estadio);
+}
+
 // las filas de TODOS los equipos de la página, ya limpias: una lista por tabla (estadios: club, estadio, capacidad; kits: club, sponsor,
 // marca), para guardarlas en la caché por liga-año y sacar de ahí cada club del sitio y el índice de sponsors (equipos de toda la liga)
 function leerPagina(wikitext) {
@@ -135,6 +158,8 @@ function leerPagina(wikitext) {
     if (iEst >= 0 && iCap >= 0) estadios.push(filas((f) => ({ club: cleanTexto(f[iClub]), estadio: cleanTexto(f[iEst]) || null, capacidad: capacidad(f[iCap]) })));
     if (iKit >= 0 || iSp >= 0) kits.push({ soloActual: t.soloActual, filas: filas((f) => ({ club: cleanTexto(f[iClub]), sponsor: iSp >= 0 ? cleanTexto(f[iSp]) || null : null, marca: iKit >= 0 ? cleanTexto(f[iKit]) || null : null })) });
   }
+  // sin tabla de estadios, la galería ("Venues" de las páginas rusas)
+  if (!estadios.length) { const g = galeriaEstadios(wikitext); if (g.length) estadios.push(g); }
   return { estadios, kits };
 }
 
