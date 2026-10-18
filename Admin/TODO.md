@@ -24,7 +24,7 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 297 (cuando esté el índice) y 282 en Ligas (cuando haya el dato del 295) · finanzas 281, 282, 294 · pipeline 289, 290, 288, 232, 279, 286, 287, 298 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
+Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 253 y 282 en Ligas (cuando haya el dato del 295) · finanzas 281, 282, 294 · pipeline 289, 290, 288, 232, 279, 286, 287, 298 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
 datos-sourcing 273 (completar el dato), 252, 295 · Reino Unido (261) en su propia sesión · proyecto 250, 244, 300 · la principal: 268, 291 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
@@ -58,7 +58,6 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 284 y 285: Fredrikstad y Sarpsborg 08 sobre el FLI; transcribir Viking Fotball AS
 * 283: Vålerenga y Aalesund, sumar el AS y el FLI (con nota en Finanzas)
 * 273: estadio y sponsor, lo que queda (completar a mano, nombrar la compuerta)
-* 297: sponsors en el buscador (índice chico de fos-datos, resultado de fos-pantallas)
 
 **E. Pantallas**
 * 282: quién audita, lo que queda (72 informes a conseguir, Spartak, OCR, revisores no plenos)
@@ -238,10 +237,6 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    `node tools/estadio-sponsor.mjs --ensayo` los lista; incluye los años de Estonia y Bélgica de los lotes 91-92, que onboarding carga
    con las tools de su rama, sin la compuerta); que `generate-sponsors.js` sume lo de `contexto-manual.json`; nombrar la compuerta nueva en
    `Admin/PIPELINE.md` y en la skill `club-or-year-onboarding` (la skill, con ok de Guido).
-297. SPONSORS EN EL BUSCADOR (cierre de pantallas, 2026-10-18). La página por sponsor existe, pero el buscador no los encuentra:
-   `data/sponsors.js` pesa ~650 KB y no se carga de entrada. Hace falta un índice chico (id y nombre) que genere
-   `tools/generate-sponsors.js` (ya está: `data/sponsors-indice.js`, ~95 KB) y el resultado "Sponsors y marcas" en el buscador
-   (fos-pantallas).
 281. FINANZAS: INGRESOS DE LAS OTRAS ENTIDADES (pedido de Guido, 2026-10-17). El dato y la pantalla están (tarjeta Estructura, piloto
    Portugal). Falta: transcribir por subagentes los ~17 documentos de entidades de clubes portugueses publicados sin `.md` (Porto 3, Braga
    2022-23, Marítimo 5, Belenenses, Chaves, Vizela 2, Académica, União de Leiria) y cargar su línea de ingresos (va con el 294). Chaves 2022-23: el informe del auditor de la

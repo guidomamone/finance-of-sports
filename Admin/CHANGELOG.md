@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 730 — Merge de pantallas: sponsors y marcas en el buscador (2026-10-18)
+
+`node tools/worktree.mjs mergear pantallas`, sin conflictos, P0 0 / P1 0.
+
+- To-do 297: grupo "Sponsors y marcas" en el buscador (hasta 6; tocar uno abre su página). `data/sponsors-indice.js` se baja la primera
+  vez que se busca, no al entrar. Probado: "adid" encuentra Adidas.
+- TODO: fuera el 297; pantallas toma el 253 (tablero del pipeline para el celular).
+
 ## Versión 729 — Merge de onboarding: Estonia en Ligas (2026-10-18)
 
 A mano: `tools/club-league-reference/alias.json` unido clave por clave (las dos ramas sumaron alias; 92, sin choques), generados con main
