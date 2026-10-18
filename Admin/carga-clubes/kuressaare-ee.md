@@ -104,6 +104,53 @@ tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-18): null, SIN VERIFICAR (sin caché de rosters para ee (tools/club-league-reference/ee.json)).
 ```
 
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/Kuressaare/aruanne-2019.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/Kuressaare/aruanne-2019.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Liikmetelt saadud tasud | pág. 5, precedente |
+| 2 | UEFA solidaarsustoetus | pág. 11, precedente |
+| 3 | EJL toetused | pág. 11, precedente |
+| 4 | Riigi ja/või kohaliku omavalitsuse toetused | pág. 11, precedente |
+| 5 | Muud toetused | pág. 11, precedente |
+| 6 | Muud tulud | pág. 11, Jev 0.99 |
+| 7 | Reklaam | pág. 11, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Üür ja rent | pág. 12, precedente |
+| 2 | Energia | pág. 12, Jev 0.99 |
+| 3 | Veevarustusteenused | pág. 12, Jev 1 |
+| 4 | Mitmesugused bürookulud | pág. 12, precedente |
+| 5 | Koolituskulud | pág. 12, precedente |
+| 6 | Riiklikud ja kohalikud maksud | pág. 12, precedente |
+| 7 | Võistluste ja treeningutega seotud kulud | pág. 12, Jev 0.98 |
+| 8 | Muud | pág. 12, precedente |
+| 9 | EJL litsentsiga töötajate (v.a. mängijad) palgakulu | pág. 12, precedente |
+| 10 | EJL litsentsiga töötajate (v.a. mängijad) maksud | pág. 12, precedente |
+| 11 | Mängijate palgakulu | pág. 12, precedente |
+| 12 | Sotsiaalmaks mängijate töötasudelt | pág. 12, precedente |
+| 13 | Põhivarade kulum ja väärtuse langus | pág. 5, precedente |
+| 14 | Muud kulud | pág. 5, precedente |
+
+### Meta
+
+```text
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L107) (Claude 2026-10-18)
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Televisión. sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Estadio. sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## Fuentes
 
 ### kuressaare-ee-aruanne-2025
@@ -112,4 +159,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Kuressaare/aruanne-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### kuressaare-ee-aruanne-2019
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Kuressaare/aruanne-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

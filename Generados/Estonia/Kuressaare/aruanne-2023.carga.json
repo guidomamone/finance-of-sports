@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Estonia/Kuressaare/aruanne-2023.pdf",
- "generado": "2026-10-18T15:16:19.404Z",
- "frena": [
-  {
-   "etapa": "alta:reportType",
-   "motivo": "¿El documento trae un estado de resultados (o de recursos y gastos) anual cargable, o hay que buscar los estados en otro documento del club?"
-  }
- ],
+ "generado": "2026-10-18T18:16:04.182Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-18: 2025 trae los dos (tulemiaruanne consolidado L175-202 y Lisa 18 konsolideerimata L740-765); la controlada es la escuela de fútbol del club y el individual deja afuera más de la mitad del ingreso: consolidado (regla 2). (revisión del alta, subagente Sonnet, revisado por Claude 2026-10-18))",
   "gestión: ningún presidente confirmado cubre 2023 (cierre 2023-12-31); pregunta en la cola (no frena)"
@@ -325,7 +320,18 @@
  },
  "clubId": "kuressaare-ee",
  "year": 2023,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Kuressaare/aruanne-2023.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"### Tulemiaruanne\", .md L117) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
  "seleccion": {
   "filas": 27,
   "notasUsadas": [],
@@ -798,8 +804,8 @@
   },
   "reportType": {
    "valor": "official_balance_sheet",
-   "fuente": "el .md no tiene ninguna palabra de estado contable reconocible",
-   "estado": "pregunta"
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): majandusaasta aruanne anual con estado de resultados (\"### Tulemiaruanne\", .md L117) (Claude 2026-10-18)",
+   "estado": "ok"
   },
   "perimetro": {
    "valor": "consolidado",
@@ -828,8 +834,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 9,
   "lineasGasto": 17,
   "metaFilas": 1,
