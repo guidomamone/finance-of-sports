@@ -19,6 +19,7 @@ supone nada. Antes de usar una fuente nueva, sumala acá.
 | Tipo de cambio cuando el balance no declara uno (`FX_CLOSE`) | Bancos centrales (tabla de abajo) | `tools/fetch-fx-reference.mjs` → `tools/fx-reference/`, `data/currency-map.js` |
 | Deflactores | BEA vía FRED (USD), Eurostat (EUR) | `fetch-fx-reference.mjs --deflactores` → `data/deflactores.js` |
 | Colores de cada club | footylogos.com | `tools/fetch-brand-color-reference.mjs` → `tools/brand-color-reference/` |
+| Socios de una sociedad brasileña (QSA del CNPJ), cuando el balance no dice quién es el dueño de una intermedia | BrasilAPI (espejo de la base pública de CNPJ de la Receita Federal), con url y fecha en la cita | `Admin/registros/entidades.jsonl` (cita externa) → `data/entidades/` |
 | Pases | Ninguna: son datos de relleno ("Jugador A", montos inventados) en Boca, River y Racing | `data/ar/*-data.js`, `pasesData` |
 
 ## Términos de cada fuente
@@ -37,6 +38,7 @@ supone nada. Antes de usar una fuente nueva, sumala acá.
 | BIS | Terms of permitted use | Sí | Sí, sin cargo extra al usuario | BIS como fuente | data.bis.org/help/legal |
 | TRM (datos.gov.co) | CC BY-SA 4.0 | Sí | Sí | "Superintendencia Financiera de Colombia" | datos.gov.co (dataset mcec-87by) |
 | SII Chile | Términos del sitio | Sí | **No: uso personal; para uso público o comercial pide autorización escrita** | Mencionar la fuente | sii.cl/sobre_el_sii/terminos_sitio_web.html |
+| BrasilAPI (CNPJ) | Código MIT; "Termos de Uso" en elaboración (beta): pide no consultar en forma automatizada ni masiva | No especificado | No especificado | No especificada | github.com/BrasilAPI/BrasilAPI (README, "Termos de Uso") |
 | Banco de Rusia | "About the site" | Sí, con link | **Contradictorio** (un párrafo lo prohíbe) | Hipervínculo | cbr.ru/eng/about/ |
 | CNB (Chequia) | Disclaimer | Sí, sin modificar | No lo prohíbe | CNB como fuente | cnb.cz (disclaimer-copyright) |
 | HNB (Croacia) | Terms of use | Sí, sin alterar | No lo menciona | HNB como fuente | hnb.hr/en/terms-of-use |

@@ -73,6 +73,15 @@ Object.assign(window.CLUB_ENTIDADES, {
      "linea": 1033
     }
    },
+   "city-football-group-midco": {
+    "nombre": "City Football Group (Midco) Limited",
+    "forma": "holding",
+    "pais": "GB",
+    "fuente": {
+     "md": "Clubes/España/Girona FC/informe-auditoria-cuentas-anuales-2024-2025.md",
+     "linea": 6811
+    }
+   },
    "sheikh-mansour": {
     "nombre": "His Highness Sheikh Mansour bin Zayed Al Nahyan",
     "forma": "persona",
@@ -121,18 +130,29 @@ Object.assign(window.CLUB_ENTIDADES, {
     }
    },
    {
-    "de": "city-football-group",
+    "de": "city-football-group-midco",
     "a": "cfg-brazil",
     "rel": "controla",
     "desde": 2024,
-    "hasta": 2025,
     "nota": {
-     "es": "El documento dice que el contrato de la S.A.F. se firmó con el City Football Group y que City Football Group Brazil es la holding controladora; no imprime el % del grupo en esa holding.",
-     "en": "The document says the S.A.F. contract was signed with City Football Group and that City Football Group Brazil is the controlling holding; it does not print the group's % in that holding."
+     "es": "La holding se llama City Football Brazil Ltda (CNPJ 49.242.727/0001-74). En el registro de la Receita Federal su único socio es City Football Group (Midco) Limited, sin porcentaje.",
+     "en": "The holding is City Football Brazil Ltda (CNPJ 49.242.727/0001-74). In the Brazilian federal tax register its only partner is City Football Group (Midco) Limited, with no percentage."
     },
     "fuente": {
-     "md": "Clubes/Brasil/Bahia/demonstracoes-financeiras-2025.md",
-     "linea": 393
+     "url": "https://brasilapi.com.br/api/cnpj/v1/49242727000174"
+    }
+   },
+   {
+    "de": "city-football-group",
+    "a": "city-football-group-midco",
+    "rel": "controla",
+    "desde": 2022,
+    "nota": {
+     "es": "75 % o más de las acciones y los votos (registro de Companies House).",
+     "en": "75% or more of the shares and votes (Companies House register)."
+    },
+    "fuente": {
+     "url": "https://find-and-update.company-information.service.gov.uk/company/14120242/persons-with-significant-control"
     }
    },
    {

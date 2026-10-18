@@ -176,7 +176,11 @@
   ('Εκθεσή Ορκωτών'); sin salvedades, con un énfasis de liquidez (ÉNFASIS CONTINUIDAD).
 - To-do 282 a, Hamburgo 2025: el Bestätigungsvermerk de BDO AG (uneingeschränkt, 17-10-2025), copiado de la publicación HTML del
   Jahresabschluss en el Unternehmensregister (HRB 191603; Guido resolvió el captcha) a `fussball-ag-bestaetigungsvermerk-2024-25.md`.
-- FALTA EN EL PDF: 88 a 50. Los PDF nuevos, copiados a la carpeta principal (rsync `--no-links`). ASSET_V 1300 en la rama.
+- FALTA EN EL PDF: 88 a 50.
+- To-do 294, Bahia: el eslabón de la holding pasa a ser City Football Group (Midco) Limited > City Football Group Brazil (`controla`,
+  sin %, desde 2024), con cita externa al QSA del CNPJ 49.242.727/0001-74 (City Football Brazil Ltda; único socio CFG Midco) vía
+  BrasilAPI; antes era City Football Group > CFG Brazil citado con el contrato de la S.A.F. BrasilAPI, sumada a `Admin/fuentes-externas.md`
+  (decisión de Guido, 2026-10-18: esa fuente, sin porcentaje). Ningún club del borrador `altas-2026-10-17.md` está publicado todavía. Los PDF nuevos, copiados a la carpeta principal (rsync `--no-links`). ASSET_V 1300 en la rama.
 
 ### Qué queda (para TODO)
 
