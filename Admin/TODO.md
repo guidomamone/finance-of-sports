@@ -24,8 +24,8 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas (sin trabajo asignado) · finanzas 281, 282, 294 · pipeline 289, 290, 288, 232, 279, 286, 287, 298, 301 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
-datos-sourcing 273 (completar el dato), 252 · ligas 295 · Reino Unido (261) en su propia sesión · proyecto 250, 244, 300 · la principal: 268, 291 y los merges; el 246 va
+Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 303, 304, 305, 254 + 243 · finanzas 281, 282, 294 · pipeline 289, 290, 288, 232, 279, 286, 287, 298, 301, 302 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
+datos-sourcing 273 (completar el dato), 252 · ligas 295 · Reino Unido (261) en su propia sesión · proyecto 300 · la principal: 268, 291 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
 Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
@@ -37,8 +37,6 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 
 **B. Bases baratas que después cuestan caro cambiar**
 * 300: auditoría programada semanal (y el dashboard al día)
-* 250: hooks: auditoría antes del commit, skills, ASSET_V (vuelve automáticas reglas que hoy dependen de acordarse)
-* 244: licencia del dataset y de cada fuente (lo que alguien copie sin licencia no se recupera)
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos)
 
 **C. Abaratar antes del onboarding grande**
@@ -48,6 +46,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar
 * 298: mejoras de script de Estonia y Bélgica (a y b1 hechas; los años belgas de los lotes 91-92 esperan b y o)
 * 301: gasto.mjs --json se corta en un pipe
+* 302: el deflactor de EE.UU. desde la BEA, no FRED
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
@@ -61,6 +60,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 273: estadio y sponsor, lo que queda (completar a mano, nombrar la compuerta)
 
 **E. Pantallas**
+* 303, 304 y 305: Mercado de Pases con datos inventados; "sin fines de lucro" en el pie; la cita de Wikipedia en Ligas
 * 282: quién audita, lo que queda (88 informes a conseguir; la compuerta del pipeline)
 * 281: ingresos de las otras entidades (falta União de Leiria, sin estado de resultados)
 * 294: registro de entidades, lo que queda (los clubes del borrador cuando estén publicados)
@@ -80,7 +80,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 249: API en dominio propio (último; no construirla ahora)
 
 **G. Orden de la casa**
-* 255: consolidar las reglas repartidas (después de 250: lo chequeable ya pasó a hooks)
+* 255: consolidar las reglas repartidas (lo chequeable ya pasó a hooks)
 * 256: CHANGELOG corto
 * 257: skills que faltan (después de 255)
 * 237 al: anexo UEFA para abrir las ventas (lo dejaste para después)
@@ -184,9 +184,6 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    WhatsApp y Google no ejecutan JS: sin esto la preview es la portada y nadie que busque "deuda de Boca" llega. Mockups con Design antes de codear.
 243. LO QUE SE BUSCA SIN RESULTADO GUÍA EL SOURCING (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker ya registra las búsquedas que no encuentran club: esa lista decide qué
    club se carga después (junto con el repaso de métricas, to-do 254).
-244. LICENCIA DEL DATASET Y DE CADA FUENTE (mejoras de proyecto, pedido de Guido 2026-10-16). Hoy data/**/*.js y Clubes/**/*.md se bajan sin licencia (terminos.html no dice nada).
-   Definir una (p. ej. CC BY-NC) y anotar, por fuente externa (ligas, pases, cotizaciones, deflactores, presidentes), de dónde sale y si
-   permite reventa. Es lo que después permite cobrar el uso comercial.
 245. DATOS COMO JSON CON ESQUEMA (mejoras de proyecto, pedido de Guido 2026-10-16). Hoy son JS (`const xRevenueLinesByYear = {...}`), sin versión de esquema, con la unidad implícita
    (millones) y la moneda en otro archivo. JSON con schema_version, unit/scale/currency explícitos y fecha de corte, como fuente; el JS del
    sitio se genera desde ahí.
@@ -197,9 +194,9 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 248. TAXONOMÍA GENÉRICA + SUBCATEGORÍAS POR DEPORTE (mejoras de proyecto, pedido de Guido 2026-10-16). Una capa genérica (ingresos y gastos operativos, deuda) y las subcategorías de cada
    deporte debajo, para que wages_squad no quede como campo de primer nivel de una API (ver to-do 130).
 249. API EN DOMINIO PROPIO (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker está en una cuenta personal (square-sky-ca25.guidomamone91.workers.dev). Una API, si se hace, va en
-   api.financeofsports.com desde el primer día. No construirla ahora.
-250. HOOKS DE CLAUDE CODE (mejoras de proyecto, pedido de Guido 2026-10-16). Hoy no hay ninguno. Candidatos: audit.js antes de cada commit; bloquear la edición de .claude/skills/ sin el
-   ok de Guido; avisar si cambió data/ y no subió ASSET_V. Lo que una máquina puede chequear sale del texto de las reglas.
+   api.financeofsports.com desde el primer día. No construirla ahora. Un ejercicio convertido con una cotización de BCRA,
+   SII, Banco de Rusia o Bank of England (restringen el uso comercial) se sirve en la moneda del club o se pide permiso
+   (`Admin/fuentes-externas.md`, "Consecuencias").
 252. EJERCICIOS NUEVOS: LO QUE QUEDA (pedido de Guido; mensual). La revisión está hecha: `tools/ejercicios-nuevos.mjs` y una tarea programada
    (día 1, 9:00, carpeta principal) que baja el PDF a `Clubes/` y anota en `Admin/sourcing/README.md`. Falta: agregarles la URL del canal
    a las 37 notas de sourcing que no la tienen (la tarea las marca "a revisar" todos los meses); cargar los 14 clubes que ya tienen el PDF
@@ -308,6 +305,14 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    solo si algo sale de P0 0 / P1 0 o un año deja de cerrar.
 301. gasto.mjs --json SE CORTA EN UN PIPE (visto armando el tablero, 2026-10-18). `node tools/gasto.mjs --json | …` corta la salida a los
    64 KB: el proceso sale antes de vaciar stdout. Mejora de script chica.
+302. DEFLACTOR DE EE.UU. DESDE LA BEA (cierre de proyecto, 2026-10-18). FRED prohíbe el scraping y guardar copias: bajarlo directo de la BEA
+   (`tools/fetch-fx-reference.mjs --deflactores`).
+303. MERCADO DE PASES CON DATOS INVENTADOS (cierre de proyecto). La pestaña muestra "Jugador A" y montos de relleno en Boca, River y Racing, con
+   la nota "Fuente: Transfermarkt + reportes de club (placeholder)" (`index.html`). Esconderla o vaciarla hasta tener datos reales.
+304. EL PIE DEL SITIO DICE "SIN FINES DE LUCRO" (cierre de proyecto). Guido lo sacó de términos y privacidad; falta en el pie de `index.html` y
+   en `data/lang/en.js` ("non-profit").
+305. LA LISTA DE LIGAS SIN LA CITA DE WIKIPEDIA (cierre de proyecto). Sponsor y contexto la tienen; la lista de equipos de cada liga sale de
+   Wikipedia y no lo dice: sumar la cita, con la licencia CC BY-SA.
 270. ESTIMAR UN CLUB QUE NUNCA CARGAMOS: VOLVER A MEDIR (pedido de Guido, 2026-10-17). Está PRENDIDO desde el 2026-10-18 (decisión de
    Guido: en Ligas todo club sin balance figura como estimado), con 50% de error (regresión sin historia: mediana de la liga-año, división,
    posición en la tabla). Volver a medir (`node tools/estimar.mjs --medir`) cuando haya más clubes cargados. Variable sin medir: partidos

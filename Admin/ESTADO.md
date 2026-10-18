@@ -19,11 +19,11 @@ deja de ser cierto, se reemplaza, no se apila una línea nueva al lado de la vie
 ## Objetivo del proyecto
 
 Un sitio de finanzas de clubes de fútbol (multi-club), pensado para hinchas, periodistas y
-creadores de contenido. **Todo el sitio es gratis, y por ahora se queda así** (decisión de
-Guido: no hay corte free/paid que definir ni paywall que construir). La idea de un plan pago
-(analítica avanzada + tweets pre-armados, suscripciones vía dLocal Go) queda como posibilidad,
-no como trabajo pendiente. Presupuesto casi cero, sigue siendo un proyecto hobby de Guido: no
-gastar en infraestructura que no haga falta todavía.
+creadores de contenido. **Todo el sitio es gratis. Licencia (decisión de Guido, 2026-10-18): el Formato simplificado bajo CC BY-NC 4.0 (libre citando,
+también en medios con publicidad); el uso comercial, la reventa, la descarga masiva u otra API necesitan licencia aparte; la API, si se
+hace, es paga para todos. Los documentos de los clubes no llevan la licencia del sitio, lo de Wikipedia va con CC BY-SA 4.0 y el código
+tiene todos los derechos reservados (`terminos.html`; fuentes y términos en `Admin/fuentes-externas.md`). Presupuesto casi cero, sigue
+siendo un proyecto hobby de Guido: no gastar en infraestructura que no haga falta todavía.
 
 Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" en inglés (clave
 `site.name`, ver `data/lang/en.js`). Dominio: **financeofsports.com**. Carpeta y repo:
@@ -118,6 +118,9 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   CHANGELOG y ESTADO, las otras dejan su cierre en `Admin/sesiones/<rama>.md` (skill de arranque, `worktree.md`). Qué worktree hace qué:
   el "Reparto en worktrees" arriba del ORDEN de `Admin/TODO.md`. Una rama que sigue abierta después de un merge escribe lo nuevo de su
   cierre debajo de una línea con la fecha del merge; un worktree no mergea main en su rama: la principal le hace un fast-forward.
+- Hooks de Claude Code (`.claude/settings.json` → `tools/hooks/pre-tool.mjs`): `audit.js` antes de cada commit publicable (frena con P0/P1;
+  `[sin-audit]` con el ok de Guido), y piden permiso editar skills, `git push` y borrar en `Clubes/`; en un worktree rechazan escribir TODO,
+  CHANGELOG y ESTADO. Qué chequea cada uno: la cabecera del script.
 - Estadio, capacidad, sponsor de camiseta y marca técnica de cada club y ejercicio: `data/contexto/<iso>.js` (`tools/estadio-sponsor.mjs`,
   de Wikipedia con el permalink de la revisión; lo manual en `tools/contexto-manual.json` con fuente). `cargar.mjs` no escribe un año
   nuevo sin estadio y sponsor (`compuertaContexto()`; también `bfo-rusia.mjs`). Donde la temporada en inglés no lo trae, el estadio y la capacidad salen de la Wikipedia del país

@@ -94,6 +94,10 @@ cuando la tarea las toca: `Admin/CONVENCIONES-DATOS.md` (al cargar o corregir da
   incluido) y
   los 2 skills de `.claude/skills/` se limpiaron de em dashes en esta sesión.
 
+- UNA FUENTE EXTERNA NUEVA SE ANOTA ANTES DE PUBLICAR (Guido, 2026-10-18). Antes de publicar datos que salgan de una fuente externa nueva
+  (una cotización, un deflactor, una lista, Wikipedia…), se suma a `Admin/fuentes-externas.md` con sus términos leídos en su página: qué
+  permite y si deja reventa. La licencia del sitio está en `terminos.html` ("Licencia y reuso").
+
 ## Índice de las reglas que viven en otro archivo
 
 - DÓNDE PUEDE VIVIR UN DATO INVENTADO, Y DÓNDE NO (Versión 152, actualizada en la 155 cuando el → `Admin/CONVENCIONES-DATOS.md`

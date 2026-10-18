@@ -15,6 +15,19 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 737 — Merge de proyecto: hooks y licencia (2026-10-18)
+
+`node tools/worktree.mjs mergear proyecto`, sin conflictos, P0 0 / P1 0 (ok de Guido: los hooks cambian la configuración de todas las sesiones).
+
+- To-do 250: hooks de Claude Code (`.claude/settings.json` → `tools/hooks/pre-tool.mjs`): `audit.js` antes de cada commit publicable,
+  permiso para editar skills, para `git push` y para borrar en `Clubes/`; en un worktree, no se escriben TODO, CHANGELOG ni ESTADO.
+- To-do 244: licencia (decisiones de Guido): el Formato simplificado bajo CC BY-NC 4.0, uso comercial con licencia aparte, la API paga para
+  todos; documentos de los clubes sin la licencia del sitio; Wikipedia con CC BY-SA 4.0; el código, todos los derechos reservados.
+  `terminos.html` ("Licencia y reuso"), `metodologia.html` ("Fuentes externas") y `Admin/fuentes-externas.md`.
+- Regla nueva en CONVENCIONES (una fuente externa nueva se anota antes de publicar). TODO: fuera 250 y 244; el 249 suma las cotizaciones que
+  restringen el uso comercial; nuevos 302 (deflactor desde la BEA), 303 (Mercado de Pases inventado), 304 ("sin fines de lucro" en el pie) y
+  305 (la cita de Wikipedia en Ligas).
+
 ## Versión 736 — Merge de pantallas: las cuentas de la liga (2026-10-18)
 
 - To-do 282 en Ligas: tarjeta "Las cuentas de la liga" (`js/auditoria.js`, desde `js/liga.js`): la entidad que organiza la liga, quién
