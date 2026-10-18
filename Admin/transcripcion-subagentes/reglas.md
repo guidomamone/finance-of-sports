@@ -3,6 +3,11 @@
 Proyecto en /Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports. Hay procesos del pipeline corriendo: NO corras pipeline.mjs,
 lote.mjs ni inventario-transcripciones.mjs, y no toques Admin/ ni ningún otro archivo que no sea tu .md.
 
+- **Paso 0, antes de transcribir:** leé la portada y el índice (`pdftotext -l 3`). Si la entidad no es el club de fútbol (una fundación,
+  el club juvenil, otra sociedad del grupo, otro deporte, una entidad que no es del club), o si el documento no trae estado de resultados
+  (informe de gestión solo, anuario, certificación, dictamen del auditor, informe de la liga), **no lo transcribas**. Devolvé en una línea
+  "no transcripto: <motivo>, pág. N: '<cita>'" para que Claude lo proponga a `documentos-descartados.txt`. Si la carpeta del club ya tiene
+  un documento del mismo ejercicio, decilo también.
 - Salida: el mismo nombre del PDF con .md, al lado del PDF (archivo nuevo).
 - Archivos intermedios (partes del .md, imágenes): solo en una subcarpeta propia del scratchpad con el nombre del club y el año
   (`<scratchpad>/<club>-<año>/`). Hay otros subagentes trabajando en paralelo con nombres como part1.md: en la carpeta común se pisan.
