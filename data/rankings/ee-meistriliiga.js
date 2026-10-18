@@ -50,11 +50,14 @@ window.RANKINGS["ee-meistriliiga"] = {
   },
   2023: {
     leagueSize: 10,
-    sinDato: ["fcilevadia-ee","narvatrans-ee","nommekalju-ee","paidelinnameeskond-ee","tallinnakalev-ee","tartutammeka-ee"],
+    sinDato: ["fcilevadia-ee","narvatrans-ee","nommekalju-ee","tallinnakalev-ee","tartutammeka-ee"],
     clubs: [
       { id:"floratallinn-ee", revenue:3.703, reportType:"official_balance_sheet",
         sourceId:"floratallinn-ee-aruanne-2023",
         mix:[["Cuotas Sociales",0.869],["Comercial / Sponsors",0.206],["Estadio",0.139],["Televisión",0.025],["Premios por competencias",1.574],["Venta de Jugadores",-0.013],["Otros ingresos",0.902]] },
+      { id:"paidelinnameeskond-ee", revenue:1.982, reportType:"official_balance_sheet",
+        sourceId:"paidelinnameeskond-ee-aruanne-2023",
+        mix:[["Cuotas Sociales",0.125],["Comercial / Sponsors",0.925],["Estadio",0.006],["Televisión",0.003],["Premios por competencias",0.475],["Venta de Jugadores",0.074],["Otros ingresos",0.373]] },
       { id:"kuressaare-ee", revenue:0.361, reportType:"official_balance_sheet",
         sourceId:"kuressaare-ee-aruanne-2023",
         mix:[["Comercial / Sponsors",0.008],["Estadio",0.001],["Premios por competencias",0.056],["Fútbol profesional (sin desglosar por la fuente)",0.016],["Otros ingresos",0.281]],
