@@ -124,7 +124,9 @@ async function main() {
   const obj = {};
   for (const [id, ys] of Object.entries(CL)) for (const [y, liga] of Object.entries(ys)) {
     if (!NOMBRES[liga]) continue;
-    const mes = Number(cierreDelClub(CLUBS[id], +y).slice(5, 7)); const partida = NOMBRES[liga][1];
+    // el cierre de ESE ejercicio (club-index `ci`), como faltantes-liga.mjs: Parma cerró el 30/6 de 2016 a 2019 aunque su regla sea el
+    // 31/12, y con la regla su 2017 (Serie C 2016-17) caía en la temporada 2017-18 (to-do 277)
+    const mes = Number((CI[id]?.ci?.[y] || cierreDelClub(CLUBS[id], +y).slice(5)).slice(0, 2)); const partida = NOMBRES[liga][1];
     const anio = partida && mes >= 9 ? +y + 1 : +y;
     const iso = liga.slice(0, 2); if (cache[iso]?.leagues?.[liga]?.[anio]) continue;
     (obj[`${liga}|${anio}`] ??= { liga, anio, iso, ids: new Set() }).ids.add(id);
