@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 733 — Merge de datos-sourcing: la revisión mensual de ejercicios nuevos (2026-10-18)
+
+- To-do 252 (Guido: mensual): `tools/ejercicios-nuevos.mjs` (gratis) revisa, por club cargado, si el ejercicio que sigue ya debería estar
+  publicado y lo busca en el canal de su nota de sourcing; baja el PDF a `Clubes/` y anota en `Admin/sourcing/README.md`. Tarea programada
+  mensual (día 1, 9:00). Primera corrida: Amazonas 2025 nuevo; 14 clubes con el PDF ya bajado sin cargar; 45 páginas para el navegador.
+- TODO: el 252 queda con las URLs que faltan y los 14 clubes para cargar.
+
 ## Versión 732 — Merges de finanzas y pantallas: auditoría completa y el alcance de cada revisión (2026-10-18)
 
 Los dos a mano: generados con main y regenerados, `index.html` con la versión de cada rama; ASSET_V 1285, P0 0 / P1 0. Probado: Como

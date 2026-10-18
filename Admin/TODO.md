@@ -68,7 +68,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 **E2. Distribución (depende de 246)**
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
 * 254 + 243: repaso mensual de métricas y lo que se busca sin resultado (eligen qué club sumar en D)
-* 252: tarea semanal que busca ejercicios nuevos (los clubes publican entre septiembre y diciembre: cuanto antes, mejor)
+* 252: ejercicios nuevos, lo que queda (URLs de 37 notas; cargar 14 clubes con el PDF ya bajado)
 * 259: material de difusión (después de 241: el deck tiene que poder linkear)
 
 **F. Datos para afuera (cuando haya tiempo; nada urgente)**
@@ -200,9 +200,10 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    api.financeofsports.com desde el primer día. No construirla ahora.
 250. HOOKS DE CLAUDE CODE (mejoras de proyecto, pedido de Guido 2026-10-16). Hoy no hay ninguno. Candidatos: audit.js antes de cada commit; bloquear la edición de .claude/skills/ sin el
    ok de Guido; avisar si cambió data/ y no subió ASSET_V. Lo que una máquina puede chequear sale del texto de las reglas.
-252. TAREA PROGRAMADA: EJERCICIOS NUEVOS (mejoras de proyecto, pedido de Guido 2026-10-16). Los clubes publican una vez por año (casi todos entre septiembre y diciembre). Una tarea semanal
-   revisa reguladores y webs de los clubes cargados y deja los links en Admin/sourcing/README.md (con Claude in Chrome para los portales con
-   sesión o formularios difíciles).
+252. EJERCICIOS NUEVOS: LO QUE QUEDA (pedido de Guido; mensual). La revisión está hecha: `tools/ejercicios-nuevos.mjs` y una tarea programada
+   (día 1, 9:00, carpeta principal) que baja el PDF a `Clubes/` y anota en `Admin/sourcing/README.md`. Falta: agregarles la URL del canal
+   a las 37 notas de sourcing que no la tienen (la tarea las marca "a revisar" todos los meses); cargar los 14 clubes que ya tienen el PDF
+   del ejercicio siguiente bajado (`node tools/ejercicios-nuevos.mjs` los lista; onboarding).
 254. REPASO MENSUAL DE MÉTRICAS (MIXPANEL Y NETLIFY) (mejoras de proyecto, pedido de Guido 2026-10-16). Qué clubes se buscan y no están, y dónde se corta el embudo del selector.
    Con números, revisar qué fue al panel "Más opciones" de Finanzas (rediseño del 265: hoy es criterio, no dato).
 255. CONSOLIDAR LAS REGLAS (mejoras de proyecto, pedido de Guido 2026-10-16). CLAUDE.md, las memorias, 7 skills, CONVENCIONES, CONVENCIONES-DATOS, PANTALLA y PIPELINE: una regla en tres

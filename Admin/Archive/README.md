@@ -56,3 +56,4 @@ Qué hay hoy:
 - `sesion-onboarding-2026-10-18-3.md` — copia del cierre de onboarding en el merge de la 729 (Estonia en Ligas).
 - `sesion-pantallas-2026-10-18-e.md` — copia del cierre de pantallas en el merge de la 731 (297 y 253).
 - `sesion-finanzas-2026-10-18-3.md` y `sesion-pantallas-2026-10-18-f.md` — copias de los cierres en el merge de la 732 (auditoría completa y el alcance).
+- `sesion-datos-sourcing-2026-10-18-d.md` — copia del cierre de datos-sourcing en el merge de la 733 (252).
