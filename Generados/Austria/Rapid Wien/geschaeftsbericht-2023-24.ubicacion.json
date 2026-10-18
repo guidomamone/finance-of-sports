@@ -1,0 +1,224 @@
+{
+ "pdf": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2023-24.pdf",
+ "md": "Clubes/Austria/Rapid Wien/geschaeftsbericht-2023-24.md",
+ "mdSha1": "5328cf653bda1c32bf9935a98bb25e5e1a0b7271",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-17T19:05:00.503Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    54,
+    62
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    138,
+    144
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    192,
+    196
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    238,
+    242
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    294,
+    298
+   ],
+   "tipo": "texto"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    338,
+    342
+   ],
+   "tipo": "texto"
+  },
+  "b7": {
+   "pagina": 12,
+   "lineas": [
+    394,
+    398
+   ],
+   "tipo": "texto"
+  },
+  "b8": {
+   "pagina": 13,
+   "lineas": [
+    444,
+    450
+   ],
+   "tipo": "texto"
+  },
+  "b9": {
+   "pagina": 14,
+   "lineas": [
+    500,
+    504
+   ],
+   "tipo": "texto"
+  },
+  "b10": {
+   "pagina": 15,
+   "lineas": [
+    554,
+    558
+   ],
+   "tipo": "texto"
+  },
+  "b11": {
+   "pagina": 16,
+   "lineas": [
+    608,
+    612
+   ],
+   "tipo": "texto"
+  },
+  "b12": {
+   "pagina": 17,
+   "lineas": [
+    651,
+    655
+   ],
+   "tipo": "texto"
+  },
+  "b13": {
+   "pagina": 18,
+   "lineas": [
+    703,
+    707
+   ],
+   "tipo": "texto"
+  },
+  "b14": {
+   "pagina": 19,
+   "lineas": [
+    753,
+    757
+   ],
+   "tipo": "texto"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    801,
+    805
+   ],
+   "tipo": "texto"
+  },
+  "b16": {
+   "pagina": 22,
+   "lineas": [
+    847,
+    866
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 23,
+   "lineas": [
+    880,
+    896
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 26,
+   "lineas": [
+    1034,
+    1037
+   ],
+   "tipo": "texto"
+  },
+  "b19": {
+   "pagina": 26,
+   "lineas": [
+    1039,
+    1064
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 27,
+   "lineas": [
+    1072,
+    1076
+   ],
+   "tipo": "texto"
+  },
+  "b21": {
+   "pagina": 28,
+   "lineas": [
+    1132,
+    1136
+   ],
+   "tipo": "texto"
+  },
+  "b22": {
+   "pagina": 30,
+   "lineas": [
+    1241,
+    1245
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b19"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes impresos sin indicación de escala y con todos los dígitos (ej. Umsatzerlöse 41.436.186), lo que indica euros en unidades.",
+ "moneda": "EUR",
+ "columna_ejercicio": "2023/24",
+ "columna_anterior": "2022/23",
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la GuV de la pág. 26 (b19) como estado del ejercicio aunque el documento no indique si es consolidada o individual (encabezado solo 'SK RAPID')?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El club usa consolidado en años cargados y b19 no dice el perímetro; es la única GuV del documento.",
+   "bloques": [
+    "b19"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Las páginas 27-28 'Erläuterungen zur Gewinn-und-Verlust-Rechnung' contienen gráficos o cuadros con desglose de Umsatzerlöse que no se transcribieron?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Umsatzerlöse",
+   "texto": "b20 y b21 solo transcriben el título; podría haber desglose en imagen.",
+   "bloques": [
+    "b20",
+    "b21"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Único estado de resultados: b19 (pág. 26), columnas 2023/24 y 2022/23, en EUR sin escala. Los bloques b2-b15 son textos de revista (Saisonrückblick) sin cifras contables; b16-b17 son balance; b20-b21 son títulos de notas sin contenido transcripto; b22 es estadística de socios. No se indica perímetro consolidado/individual."
+}
