@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Estonia/Tartu Tammeka/aruanne-2020.pdf",
  "md": "Clubes/Estonia/Tartu Tammeka/aruanne-2020.md",
- "generado": "2026-10-18T15:16:15.644Z",
+ "generado": "2026-10-18T18:06:09.850Z",
  "estado": "ok",
  "clubId": "tartutammeka-ee",
  "year": 2020,
@@ -11,7 +11,28 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Tartu Tammeka/aruanne-2020.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L152) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Tartu Tammeka/aruanne-2020.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -59,7 +80,7 @@
   "la nota de \"Liikmetelt saadud tasud\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "duda de localizar que no afecta la carga: El documento es consolidado (b1) y b36 es el estado no consolidado de la matriz; se carga el consolidado b5.",
   "duda de localizar que no afecta la carga: b24 abre el total por tipo de donación con un solo renglón; puede ser redundante con b23.",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Annetused ja toetused\"): ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (b24, L541-L542) por repetir el total de Annetused ja toetused ya desglosado en b23?"
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Annetused ja toetused\"): corregir sí, en aruanne-2019.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

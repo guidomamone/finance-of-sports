@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2023.pdf",
  "md": "Clubes/Estonia/Nõmme Kalju/aruanne-2023.md",
- "generado": "2026-10-18T15:16:15.458Z",
- "estado": "cola",
+ "generado": "2026-10-18T18:06:09.787Z",
+ "estado": "ok",
  "clubId": "nommekalju-ee",
  "year": 2023,
  "escala": {
@@ -11,10 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "2bd095d"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2023.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L221) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",

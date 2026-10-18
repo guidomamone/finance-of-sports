@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2024.pdf",
  "md": "Clubes/Estonia/Nõmme Kalju/aruanne-2024.md",
- "generado": "2026-10-18T15:16:15.461Z",
- "estado": "cola",
+ "generado": "2026-10-18T18:06:09.791Z",
+ "estado": "ok",
  "clubId": "nommekalju-ee",
  "year": 2024,
  "escala": {
@@ -11,12 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "ea8a595",
-  "ea8a595",
-  "df2387c"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2024.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L231) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -60,6 +67,8 @@
   }
  ],
  "notas": [
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en aruanne-2024.pdf",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en aruanne-2024.pdf",
   "duda de extraer que no afecta la carga: L699-L700 de b26 repiten las filas ya extraídas de b25; solo se cargan L703-L704.",
   "duda de extraer que no afecta la carga: Diferencia de 1 euro entre nota y estado (L716 vs L245)."
  ],

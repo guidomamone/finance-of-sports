@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2019.pdf",
  "md": "Clubes/Estonia/Nõmme Kalju/aruanne-2019.md",
- "generado": "2026-10-18T15:16:15.419Z",
- "estado": "cola",
+ "generado": "2026-10-18T18:06:09.772Z",
+ "estado": "ok",
  "clubId": "nommekalju-ee",
  "year": 2019,
  "escala": {
@@ -11,11 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "d0101e7",
-  "90b3dd6"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2019.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L150) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -63,7 +71,7 @@
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: El documento solo presenta estados de la MTÜ Nõmme Kalju FC sin mención a consolidación.",
   "duda de localizar que no afecta la carga: b16 solo reclasifica el total de donaciones de b15 en monetarias, sin abrir más.",
-  "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; cuadro-duplicado, \"Annetused ja toetused\"): ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L503-L504) por ser una reclasificación del mismo total de Annetused ja toetused ya desglosado en b15?",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Annetused ja toetused\"): aceptar, en aruanne-2021.pdf",
   "duda de extraer que no afecta la carga: L160 muestra un ingreso negativo; la suma de ingresos con -52 342 da 1 874 869, coherente con L161."
  ],
  "reintentar": null,

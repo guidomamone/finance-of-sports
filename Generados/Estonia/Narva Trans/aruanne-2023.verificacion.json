@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/Narva Trans/aruanne-2023.pdf",
  "md": "Clubes/Estonia/Narva Trans/aruanne-2023.md",
- "generado": "2026-10-18T15:16:15.396Z",
- "estado": "cola",
+ "generado": "2026-10-18T18:06:09.761Z",
+ "estado": "ok",
  "clubId": "narvatrans-ee",
  "year": 2023,
  "escala": {
@@ -11,10 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "e6dbca1"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Narva Trans/aruanne-2023.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L139) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",

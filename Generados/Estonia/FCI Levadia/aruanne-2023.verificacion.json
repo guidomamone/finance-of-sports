@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2023.pdf",
  "md": "Clubes/Estonia/FCI Levadia/aruanne-2023.md",
- "generado": "2026-10-18T15:16:15.184Z",
- "estado": "cola",
+ "generado": "2026-10-18T18:06:09.682Z",
+ "estado": "ok",
  "clubId": "fcilevadia-ee",
  "year": 2023,
  "escala": {
@@ -11,11 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "8d76f0d",
-  "c391e32"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2023.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Konsolideeritud tulude-kulude aruanne\", .md L133) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -61,7 +69,8 @@
  "notas": [
   "duda de localizar ya contestada para el club (antes de su alta) (perimetro, \"-\"): corregir consolidado, en aruanne-2025.pdf",
   "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en aruanne-2025.pdf",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Annetused ja toetused\"): ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L419-L421) por ser una reapertura alternativa de 'Annetused ja toetused' ya desglosado en LISA 7?"
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Annetused ja toetused\"): corregir sí, en aruanne-2024.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"(vahesumma)\"): aceptar, en aruanne-2023.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

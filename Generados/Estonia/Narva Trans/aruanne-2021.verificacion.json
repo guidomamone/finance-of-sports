@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/Narva Trans/aruanne-2021.pdf",
  "md": "Clubes/Estonia/Narva Trans/aruanne-2021.md",
- "generado": "2026-10-18T15:16:15.391Z",
- "estado": "cola",
+ "generado": "2026-10-18T18:06:09.754Z",
+ "estado": "ok",
  "clubId": "narvatrans-ee",
  "year": 2021,
  "escala": {
@@ -11,13 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "ccb7e07",
-  "1a33256",
-  "d2267de",
-  "4a930f5"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Narva Trans/aruanne-2021.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L125) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -61,6 +67,8 @@
   }
  ],
  "notas": [
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): corregir no, en aruanne-2021.pdf",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Mitmesugused tegevuskulud\"): aceptar, en aruanne-2021.pdf",
   "duda de extraer que no afecta la carga: L944 tiene la celda 2021 vacía y 0 en 2020; la nota suma igual sin ella."
  ],
  "reintentar": null,

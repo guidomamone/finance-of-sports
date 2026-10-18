@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/Kuressaare/aruanne-2024.pdf",
  "md": "Clubes/Estonia/Kuressaare/aruanne-2024.md",
- "generado": "2026-10-18T15:16:15.349Z",
- "estado": "cola",
+ "generado": "2026-10-18T18:06:09.744Z",
+ "estado": "ok",
  "clubId": "kuressaare-ee",
  "year": 2024,
  "escala": {
@@ -11,11 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "5d3fca5",
-  "88c4a98"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Kuressaare/aruanne-2024.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L107) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",

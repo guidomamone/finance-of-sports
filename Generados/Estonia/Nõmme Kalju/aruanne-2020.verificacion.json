@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2020.pdf",
  "md": "Clubes/Estonia/Nõmme Kalju/aruanne-2020.md",
- "generado": "2026-10-18T15:16:15.423Z",
- "estado": "cola",
+ "generado": "2026-10-18T18:06:09.776Z",
+ "estado": "ok",
  "clubId": "nommekalju-ee",
  "year": 2020,
  "escala": {
@@ -11,13 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "7aaf628",
-  "0ac8b9a",
-  "18e7c77",
-  "1aee80c"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2020.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L197) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -63,7 +69,8 @@
  "notas": [
   "la nota de \"Tööjõukulud\" no suma el renglón (0.537214 contra 0.466204, sumando sus renglones): quedó el renglón del estado",
   "duda de localizar que no afecta la carga: El documento solo presenta estados de la asociación (Mittetulundusühing), sin estado consolidado.",
-  "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; cuadro-duplicado, \"Annetused ja toetused\"): ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L563-L565) por ser un desglose alternativo del mismo renglón ya detallado en Lisa 11?"
+  "duda de localizar ya contestada para el club (cuadro-duplicado, \"Annetused ja toetused\"): aceptar, en aruanne-2021.pdf",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Annetused ja toetused\"): aceptar, en aruanne-2021.pdf"
  ],
  "reintentar": [
   {

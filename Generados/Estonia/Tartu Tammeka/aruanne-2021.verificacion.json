@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/Tartu Tammeka/aruanne-2021.pdf",
  "md": "Clubes/Estonia/Tartu Tammeka/aruanne-2021.md",
- "generado": "2026-10-18T15:16:15.666Z",
- "estado": "cola",
+ "generado": "2026-10-18T18:06:09.854Z",
+ "estado": "ok",
  "clubId": "tartutammeka-ee",
  "year": 2021,
  "escala": {
@@ -11,10 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "3881ac4"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Tartu Tammeka/aruanne-2021.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L147) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -59,7 +68,7 @@
  ],
  "notas": [
   "la nota de \"Liikmetelt saadud tasud\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Annetused ja toetused\"): ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L522-L523) por repetir el total de Annetused ja toetused con otra apertura?"
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Annetused ja toetused\"): corregir sí, en aruanne-2019.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

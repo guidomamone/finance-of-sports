@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2021.pdf",
  "md": "Clubes/Estonia/FCI Levadia/aruanne-2021.md",
- "generado": "2026-10-18T15:16:15.175Z",
- "estado": "cola",
+ "generado": "2026-10-18T18:06:09.670Z",
+ "estado": "ok",
  "clubId": "fcilevadia-ee",
  "year": 2021,
  "escala": {
@@ -11,13 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "9eabb21",
-  "0a0b4e3",
-  "e1382c7",
-  "7de1525"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2021.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Konsolideeritud tulude-kulude aruanne\", .md L103) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -63,7 +69,7 @@
  "notas": [
   "duda de localizar ya contestada para el club (antes de su alta) (perimetro, \"-\"): corregir consolidado, en aruanne-2025.pdf",
   "duda de localizar ya contestada para el club (antes de su alta) (perimetro, \"-\"): corregir consolidado, en aruanne-2025.pdf",
-  "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; cuadro-duplicado, \"Annetused ja toetused\"): ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L336-L339)?",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Annetused ja toetused\"): corregir sí, en aruanne-2024.pdf",
   "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; cuadro-duplicado, \"Tööjõukulud\"): ¿Se deja afuera de la carga la nota 'LISA 9. Tööjõukulud' (L384-L386)?"
  ],
  "reintentar": null,

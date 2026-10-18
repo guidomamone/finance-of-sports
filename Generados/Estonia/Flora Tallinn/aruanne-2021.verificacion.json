@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/Flora Tallinn/aruanne-2021.pdf",
  "md": "Clubes/Estonia/Flora Tallinn/aruanne-2021.md",
- "generado": "2026-10-18T15:16:15.219Z",
- "estado": "cola",
+ "generado": "2026-10-18T18:06:09.707Z",
+ "estado": "ok",
  "clubId": "floratallinn-ee",
  "year": 2021,
  "escala": {
@@ -11,12 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "b7f0193",
-  "1ad9a8c",
-  "53fe905"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Flora Tallinn/aruanne-2021.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L163) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -60,7 +67,7 @@
   }
  ],
  "notas": [
-  "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; cuadro-duplicado, \"Annetused ja toetused\"): ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L741-L743) por ser un desglose alternativo del mismo total ya desglosado en b30?",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Annetused ja toetused\"): aceptar, en aruanne-2023.pdf",
   "duda de extraer que no afecta la carga: La pérdida por diferencia de cambio de 1 479 está dentro de Muud kulud (L180), en el resultado operativo."
  ],
  "reintentar": null,

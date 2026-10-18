@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/Tallinna Kalev/aruanne-2021.pdf",
  "md": "Clubes/Estonia/Tallinna Kalev/aruanne-2021.md",
- "generado": "2026-10-18T15:16:15.611Z",
- "estado": "cola",
+ "generado": "2026-10-18T18:06:09.826Z",
+ "estado": "ok",
  "clubId": "tallinnakalev-ee",
  "year": 2021,
  "escala": {
@@ -11,11 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "d99f7f7",
-  "d96b52e"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Tallinna Kalev/aruanne-2021.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L115) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",

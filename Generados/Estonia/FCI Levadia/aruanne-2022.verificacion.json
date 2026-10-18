@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2022.pdf",
  "md": "Clubes/Estonia/FCI Levadia/aruanne-2022.md",
- "generado": "2026-10-18T15:16:15.180Z",
- "estado": "cola",
+ "generado": "2026-10-18T18:06:09.678Z",
+ "estado": "ok",
  "clubId": "fcilevadia-ee",
  "year": 2022,
  "escala": {
@@ -11,12 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "611e90a",
-  "9b86fdf",
-  "0b7549c"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2022.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Konsolideeritud tulude-kulude aruanne\", .md L123) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",

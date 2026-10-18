@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Estonia/Narva Trans/aruanne-2024.pdf",
  "md": "Clubes/Estonia/Narva Trans/aruanne-2024.md",
- "generado": "2026-10-18T15:16:15.399Z",
+ "generado": "2026-10-18T18:06:09.765Z",
  "estado": "ok",
  "clubId": "narvatrans-ee",
  "year": 2024,
@@ -11,7 +11,28 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Narva Trans/aruanne-2024.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L79) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Narva Trans/aruanne-2024.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "fila 'Tulu ülekandeõiguste müügist' en 0 en 2024 (L458; los 3.000 son de la columna 2023) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {

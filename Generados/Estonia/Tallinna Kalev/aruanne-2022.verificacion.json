@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/Tallinna Kalev/aruanne-2022.pdf",
  "md": "Clubes/Estonia/Tallinna Kalev/aruanne-2022.md",
- "generado": "2026-10-18T15:16:15.614Z",
- "estado": "cola",
+ "generado": "2026-10-18T18:06:09.830Z",
+ "estado": "ok",
  "clubId": "tallinnakalev-ee",
  "year": 2022,
  "escala": {
@@ -11,12 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "c86796d",
-  "6bbd144",
-  "41f22a6"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Tallinna Kalev/aruanne-2022.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L114) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -63,7 +70,8 @@
   "la nota de \"Tööjõukulud\" no suma el renglón (0.194293 contra 0.183029, sumando sus renglones): quedó el renglón del estado",
   "duda de localizar que no afecta la carga: El informe es de una sola entidad (MTÜ, registrikood 80176115) y no aparece ningún estado consolidado.",
   "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; cuadro-duplicado, \"Annetused ja toetused\"): ¿Se dejan afuera de la carga las filas 'sh ...' de Lisa 9 (L457-L461), por ser un desglose alternativo por origen del mismo total 266 328?",
-  "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; cuadro-duplicado, \"Annetused ja toetused\"): ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L465-L468)?"
+  "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; cuadro-duplicado, \"Annetused ja toetused\"): ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L465-L468)?",
+  "duda de extraer ya contestada para el club (perimetro, \"Tööjõukulud\"): aceptar, en aruanne-2022.pdf"
  ],
  "reintentar": [
   {

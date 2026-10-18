@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2022.pdf",
  "md": "Clubes/Estonia/Nõmme Kalju/aruanne-2022.md",
- "generado": "2026-10-18T15:16:15.455Z",
- "estado": "cola",
+ "generado": "2026-10-18T18:06:09.784Z",
+ "estado": "ok",
  "clubId": "nommekalju-ee",
  "year": 2022,
  "escala": {
@@ -11,13 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "88c87cb",
-  "0d8bc3a",
-  "0b93078",
-  "88c87cb"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2022.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"# TULEMIARUANNE\", .md L187) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -63,9 +69,13 @@
  "notas": [
   "escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)",
   "la nota de \"Mängijate ülemineku kulud\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en aruanne-2022.pdf",
   "duda de localizar que no afecta la carga: El club carga el consolidado y b5 es el Tulemiaruanne consolidado.",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Annetused ja toetused\"): ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L593-L597), por ser otra apertura del mismo renglón ya desglosado en Lisa 9?",
-  "duda de extraer que no afecta la carga: L668 repite la etiqueta de L666 pero su importe es la suma de L666 y L667."
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Annetused ja toetused\"): aceptar, en aruanne-2021.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"Jagatud annetused ja toetused\"): aceptar, en aruanne-2022.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"Tööjõukulud\"): aceptar, en aruanne-2022.pdf",
+  "duda de extraer que no afecta la carga: L668 repite la etiqueta de L666 pero su importe es la suma de L666 y L667.",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en aruanne-2022.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

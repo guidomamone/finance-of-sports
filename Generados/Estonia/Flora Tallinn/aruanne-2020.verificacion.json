@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/Flora Tallinn/aruanne-2020.pdf",
  "md": "Clubes/Estonia/Flora Tallinn/aruanne-2020.md",
- "generado": "2026-10-18T15:16:15.216Z",
- "estado": "cola",
+ "generado": "2026-10-18T18:06:09.702Z",
+ "estado": "ok",
  "clubId": "floratallinn-ee",
  "year": 2020,
  "escala": {
@@ -11,10 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "97fa8ba"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Flora Tallinn/aruanne-2020.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"### Tulemiaruanne\", .md L152) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -59,7 +68,8 @@
  ],
  "notas": [
   "duda de localizar que no afecta la carga: El informe es consolidado (b5) y el club se carga consolidado; b45 es el individual.",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Annetused ja toetused\"): ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L685-L687), que reclasifica el mismo total de Annetused ja toetused?",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en aruanne-2024.pdf",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Annetused ja toetused\"): aceptar, en aruanne-2023.pdf",
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Staadioni rent\"): ¿Se deja afuera de la carga el cuadro de inversiones inmobiliarias (L497-L498), cuyo renditulu 61 412 ya figura como 'Staadioni rent' en Lisa 15?",
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Kasutusrendikulud\"): ¿Se deja afuera el cuadro de arrendamiento operativo (L582, Kasutusrendikulu 3 855), que difiere de 'Kasutusrendikulud' 4 361 en Lisa 17?"
  ],

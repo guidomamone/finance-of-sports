@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Estonia/Paide Linnameeskond/aruanne-2024.pdf",
  "md": "Clubes/Estonia/Paide Linnameeskond/aruanne-2024.md",
- "generado": "2026-10-18T15:16:15.568Z",
+ "generado": "2026-10-18T18:06:09.812Z",
  "estado": "ok",
  "clubId": "paidelinnameeskond-ee",
  "year": 2024,
@@ -11,7 +11,18 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Paide Linnameeskond/aruanne-2024.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L149) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {

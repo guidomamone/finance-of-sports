@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/Tartu Tammeka/aruanne-2022.pdf",
  "md": "Clubes/Estonia/Tartu Tammeka/aruanne-2022.md",
- "generado": "2026-10-18T15:16:15.669Z",
- "estado": "cola",
+ "generado": "2026-10-18T18:06:09.859Z",
+ "estado": "ok",
  "clubId": "tartutammeka-ee",
  "year": 2022,
  "escala": {
@@ -11,10 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "0bdbd74"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Tartu Tammeka/aruanne-2022.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L144) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -60,8 +69,8 @@
  "notas": [
   "la nota de \"Liikmetelt saadud tasud\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "duda de localizar que no afecta la carga: b37 es el estado de resultados individual (no consolidado) de la matriz; el club carga consolidado.",
-  "duda de localizar confirmada por las sumas (cuadro-duplicado, \"Annetused ja toetused\"): ¿Se deja afuera la tabla 'Rahalised ja mitterahalised annetused' (b23) por repetir el total de annetused ja toetused de b22?",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Annetused ja toetused\"): ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L509-L512), que reclasifica el mismo total de Annetused ja toetused ya desglosado en L494-L505?"
+  "duda de localizar ya contestada para el club (cuadro-duplicado, \"Annetused ja toetused\"): corregir sí, en aruanne-2019.pdf",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Annetused ja toetused\"): corregir sí, en aruanne-2019.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

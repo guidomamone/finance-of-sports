@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/Flora Tallinn/aruanne-2023.pdf",
  "md": "Clubes/Estonia/Flora Tallinn/aruanne-2023.md",
- "generado": "2026-10-18T15:16:15.226Z",
- "estado": "cola",
+ "generado": "2026-10-18T18:06:09.716Z",
+ "estado": "ok",
  "clubId": "floratallinn-ee",
  "year": 2023,
  "escala": {
@@ -11,11 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "aefba0e",
-  "d8df865"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Flora Tallinn/aruanne-2023.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L153) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -60,7 +68,8 @@
  ],
  "notas": [
   "duda de localizar que no afecta la carga: El club carga consolidado; b5 es el tulemiaruanne consolidado (informe 'KONSOLIDEERITUD') y b42 es el no consolidado.",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Annetused ja toetused\"): ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L729-L731) por ser un desglose alternativo del mismo renglón ya desglosado en Lisa 12?"
+  "duda de localizar ya contestada para el club (cuadro-duplicado, \"Annetused ja toetused\"): aceptar, en aruanne-2023.pdf",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Annetused ja toetused\"): aceptar, en aruanne-2023.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

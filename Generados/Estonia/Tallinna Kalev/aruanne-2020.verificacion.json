@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/Tallinna Kalev/aruanne-2020.pdf",
  "md": "Clubes/Estonia/Tallinna Kalev/aruanne-2020.md",
- "generado": "2026-10-18T15:16:15.607Z",
- "estado": "cola",
+ "generado": "2026-10-18T18:06:09.823Z",
+ "estado": "ok",
  "clubId": "tallinnakalev-ee",
  "year": 2020,
  "escala": {
@@ -11,10 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "ed8fbbe"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Tallinna Kalev/aruanne-2020.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L116) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -62,7 +71,8 @@
   "duda de localizar que no afecta la carga: El documento es el informe anual de una asociación sin indicación de consolidación; solo hay un estado de resultados.",
   "duda de localizar que no afecta la carga: El gasto de arrendamiento operativo probablemente ya está en 'Üür ja rent' de b23.",
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Annetused ja toetused\"): ¿Se dejan afuera de la carga las filas 'sh ...' de Lisa 9 (L441-L445), que son un desglose alternativo por origen del mismo total 260 972?",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Annetused ja toetused\"): ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L451-L452)?"
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Annetused ja toetused\"): ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L451-L452)?",
+  "duda de extraer ya contestada para el club (perimetro, \"Tööjõukulud\"): aceptar, en aruanne-2022.pdf"
  ],
  "reintentar": [
   {

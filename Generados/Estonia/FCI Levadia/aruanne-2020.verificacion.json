@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2020.pdf",
  "md": "Clubes/Estonia/FCI Levadia/aruanne-2020.md",
- "generado": "2026-10-18T15:16:15.142Z",
- "estado": "cola",
+ "generado": "2026-10-18T18:06:09.635Z",
+ "estado": "ok",
  "clubId": "fcilevadia-ee",
  "year": 2020,
  "escala": {
@@ -11,12 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "3c72815",
-  "4be9995",
-  "6413705"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2020.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L112) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",

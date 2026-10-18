@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/Flora Tallinn/aruanne-2022.pdf",
  "md": "Clubes/Estonia/Flora Tallinn/aruanne-2022.md",
- "generado": "2026-10-18T15:16:15.223Z",
- "estado": "cola",
+ "generado": "2026-10-18T18:06:09.711Z",
+ "estado": "ok",
  "clubId": "floratallinn-ee",
  "year": 2022,
  "escala": {
@@ -11,12 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "afe425b",
-  "0d19d11",
-  "4c9c188"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Flora Tallinn/aruanne-2022.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"# Tulemiaruanne\", .md L192) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -60,8 +67,9 @@
   }
  ],
  "notas": [
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en aruanne-2024.pdf",
   "duda de localizar que no afecta la carga: La nota b9 indica que 2021 se modificó retroactivamente por el cambio en el reconocimiento de ingresos por venta de jugadores.",
-  "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; cuadro-duplicado, \"Annetused ja toetused\"): ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L904-L906), que es una segunda apertura del mismo renglón 'Annetused ja toetused' ya desglosado en b28?",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Annetused ja toetused\"): aceptar, en aruanne-2023.pdf",
   "duda de extraer que no afecta la carga: Es pérdida por diferencia de cambio (L998) pero el estado la incluye en 'Muud kulud' antes del resultado operativo."
  ],
  "reintentar": null,

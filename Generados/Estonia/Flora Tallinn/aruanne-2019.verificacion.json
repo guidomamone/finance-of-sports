@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Estonia/Flora Tallinn/aruanne-2019.pdf",
  "md": "Clubes/Estonia/Flora Tallinn/aruanne-2019.md",
- "generado": "2026-10-18T15:16:15.191Z",
+ "generado": "2026-10-18T18:06:09.697Z",
  "estado": "ok",
  "clubId": "floratallinn-ee",
  "year": 2019,
@@ -11,7 +11,18 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Flora Tallinn/aruanne-2019.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L145) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -53,7 +64,7 @@
  "notas": [
   "duda de localizar que no afecta la carga: Es una nota de inversiones inmobiliarias (Lisa 7) y no se ve a qué renglón del estado de resultados corresponde.",
   "duda de localizar que no afecta la carga: Es una fila única de la Lisa 10 que probablemente ya está en 'Üür ja rent' de la Lisa 16.",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Annetused ja toetused\"): ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L692-L694) por ser un segundo desglose alternativo de 'Annetused ja toetused' ya desglosado en Lisa 14?"
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Annetused ja toetused\"): aceptar, en aruanne-2023.pdf"
  ],
  "reintentar": null,
  "reintentado": false,
