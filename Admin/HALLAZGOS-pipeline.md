@@ -54,6 +54,11 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   individual). De los otros, 121 no entran en la API (máximo 255 opciones por pregunta) y 29 sin estado. Revertido (código en el commit
   70c91b6f3, medición en `Admin/mediciones/perimetro-a2-jev-medicion.txt`). Lo que enseñó: Jev sirve para opciones cerradas y cortas sin
   matices (filas del balance en caja y deuda), no para criterios con trampas que hay que explicarle.
+- **Sonnet en vez de Opus en perimetro-a2** (to-do 288, 2026-10-18, US$ 13,82 entre las dos corridas): misma entrada y misma compuerta,
+  contra el ajuste `perimetro` de 202 documentos (`Admin/mediciones/perimetro-a2-verdad-ajustes.tsv`). Opus: 119 bien · 2 MAL · 81 cola;
+  Sonnet: 83 bien · 5 MAL · 114 cola. Sonnet mete 4 errores que Opus no tiene (Rapid Wien 2017-18, 2019-20 y 2023-24 y Trabzonspor
+  2021-22: "individual" donde el ajuste dice consolidado) y manda a la cola 36 que Opus decidía bien (casi todo Sandefjord). No entra: A2 sigue
+  en Opus. El flag `--modelo` queda para volver a medir. Mediciones: `Admin/mediciones/perimetro-a2-opus.txt` y `perimetro-a2-sonnet.txt`.
 
 ## 2026-10-08, dos trampas que costaron una corrida
 

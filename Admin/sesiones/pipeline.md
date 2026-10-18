@@ -25,6 +25,10 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
   nuevo. Las respuestas de Opus guardadas se siguen usando; con ellas más las de Sonnet donde no había: deuda 215 / 18, caja 423 / 7 (antes
   211 / 18 y 417 / 7). Ensayo de los 259 clubes idéntico. No se repitió Opus (piso de variación): la compuerta contra lo cargado ya pasaba.
 
+- **Opus → Sonnet, segunda tarea: perimetro-a2 (to-do 288), medida y NO adoptada.** `tools/perimetro-senales.mjs --modelo opus|sonnet` (con
+  --jev) y la verdad `Admin/mediciones/perimetro-a2-verdad-ajustes.tsv` (202 documentos, del ajuste `perimetro`). Sonnet: 4 errores que Opus no
+  tiene. A2 sigue en Opus (HALLAZGOS-pipeline.md). Costo de la medición US$ 13,82 (Opus repagó 100 documentos, no ~35: caché vieja).
+
 ## Qué queda pendiente (para TODO)
 
 - **Escribir caja y deuda en `data/`, en la carpeta principal después del merge** (sin API: escalón 0). Junto con lo que ya dejó la
