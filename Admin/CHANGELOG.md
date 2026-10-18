@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 741 — Merge de onboarding: Estonia completa (2026-10-18)
+
+`.jsonl` con las líneas de las dos ramas, lo generado regenerado; ASSET_V 1297, P0 0 / P1 0.
+
+- Estonia: los 54 años 2019-2025 de los 9 clubes en el sitio (lote 91 en tres corridas por Batch API; cola contestada con subagentes Sonnet
+  revisados; 37 ceros reales de TV y estadio con cita; Narva Trans consolidado a nivel club). Entraron sin la compuerta de estadio y sponsor.
+- Lote 92 (Bélgica): Lommel SK 2018 y RWDM 2020; el resto espera las tools de main.
+- Duda al club: FCI Levadia, "Liikmemaks" 2019-2020. Mejoras de script q y r sumadas al 298.
+
 ## Versión 740 — Merge de ligas (2026-10-18)
 
 ASSET_V 1296, `fuentes.html` regenerada, P0 0 / P1 0.

@@ -286,7 +286,10 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    la suma exacta como compuerta. h) un `no_es_rubro` puede dejar a un padre sin hijos: que la cola avise. i) alta-club.mjs: un país nuevo
    frena hasta agregar su fila a PAISES: que la proponga. o) dos versiones "-correction" del mismo ejercicio entran juntas al lote (Bélgica): que
    entre una sola. l) a p) más casos de onboarding (reportType por año de un club existente, perímetro de la carga, año vecino con
-   perímetros distintos, ceros reales y perfil que se repreguntan): el detalle, en el cierre de onboarding. k) alta-club.mjs / cargar-lote.mjs escriben la liga del alta en null aunque
+   perímetros distintos, ceros reales y perfil que se repreguntan). q) el ensayo de lote.mjs cobra la categorización de todos los documentos de
+   la lista, también los ya cargados o categorizados. r) caja-deuda.mjs en Estonia: 0 de 126 datos, porque localizar no guarda dónde está el
+   balance (bilanss); y dejó sin commitear una caja equivocada de Tallinna Kalev 2019-2020 (descartada): ver de qué escalón salió. El detalle
+   de l a r, en `Admin/Archive/sesion-onboarding-2026-10-18-4.md`. k) alta-club.mjs / cargar-lote.mjs escriben la liga del alta en null aunque
    `altas-revision.jsonl` traiga las ligas verificadas (las 17 altas de los lotes 89-90): que el alta las tome de la revisión.
 301. gasto.mjs --json SE CORTA EN UN PIPE (visto armando el tablero, 2026-10-18). `node tools/gasto.mjs --json | …` corta la salida a los
    64 KB: el proceso sale antes de vaciar stdout. Mejora de script chica.
