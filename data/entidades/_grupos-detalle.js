@@ -61,7 +61,7 @@ window.GRUPOS = {
     "control": true,
     "pct": null,
     "desde": 2022,
-    "hasta": null,
+    "hasta": 2024,
     "fuente": {
      "url": "https://en.wikipedia.org/wiki/777_Partners"
     }
