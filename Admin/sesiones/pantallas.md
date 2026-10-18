@@ -71,3 +71,15 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
   que estar en finanzas"; link de salto, bloque o fila de la ficha, a decidir con él). Datos por club y temporada: estadio, capacidad,
   sponsor de camiseta (frente) y marca técnica, con el link a la versión exacta de la página de Wikipedia de la temporada; sin monto. Los
   junta fos-datos y todavía no existen: no armar la pantalla hasta que fos-datos avise el formato y el archivo.
+
+### Qué cambió, 271 (para CHANGELOG)
+
+- To-do 271: un link copiado abre lo mismo que se estaba viendo. Se suman a la URL, solo cuando no son los de siempre: `moneda` (la del
+  club, si no es USD), `real=1` (ajustado por inflación, en Finanzas y en Comparar) y `formato=club` (Finanzas); y los dos lados de
+  Comparar, `a` y `b` (`ladoAURL()` / `ladoDeURL()` en `js/principal.js`): `c.boca:2024,river` (clubes; sin año = el más reciente),
+  `l.es-laliga.2025` (liga), bloques separados por `~`, `.s` / `.p` solo si el agregado no es el de siempre. Un club, liga o moneda
+  que el sitio no tiene se ignora. Sin la clave, el valor de siempre ("atrás" desde un link en pesos vuelve a USD). `js/selector.js`
+  expone `lados()`, `real()`, `setLados()` y avisa cada cambio por `onCambio` (`CLUB_SELECTOR.init`). Mi Cuenta sigue guardando su
+  propio formato. Probado: Boca en ARS y formato del club, `real=1`, Boca vs River 2024 con inflación, LaLiga vs dos clubes, ida y
+  vuelta, y links con datos inexistentes. ASSET_V 1264.
+- Borrar el 271.

@@ -1669,6 +1669,7 @@ window.CLUB_SELECTOR = (function(){
     // Sin botón "Comparar": con los dos lados llenos, el resultado se arma solo y se rehace con cada cambio de un card.
     if(lado[0] && lado[1]) aplicar();
     else { mostrando = false; renderResultado(); }
+    if(api.onCambio) api.onCambio();
   }
 
   function card(i){
@@ -1912,7 +1913,7 @@ window.CLUB_SELECTOR = (function(){
     barra.hidden = !listo;
     barra.querySelectorAll('#cdRealToggle button').forEach(function(b){
       b.classList.toggle('active', (b.dataset.real === '1') === cmpReal);
-      b.onclick = function(){ cmpReal = b.dataset.real === '1'; renderControles(); renderResultado(); };
+      b.onclick = function(){ cmpReal = b.dataset.real === '1'; renderControles(); renderResultado(); if(api.onCambio) api.onCambio(); };
     });
     if(!listo || !cmpReal){ nota.hidden = true; return; }
     var ys = paresDe(lado[0]).concat(paresDe(lado[1])).map(function(p){ return p[1]; }).filter(Boolean);
@@ -2858,6 +2859,8 @@ window.CLUB_SELECTOR = (function(){
     // El selector no sabe navegar ni cargar un ranking: index.html le pasa qué hacer cuando se eligió una liga, y este archivo solo
     // decide CUÁNDO se eligió una.
     api.pickLeague = hooks.pickLeague || api.pickLeague;
+    // Comparar avisa cada cambio de un lado o del ajuste por inflación: index.html lo escribe en la URL.
+    api.onCambio = hooks.onCambio || null;
 
     $('clubBtn').addEventListener('click', function(){ open(false); });
     $('modalX').addEventListener('click', close);
@@ -2912,6 +2915,16 @@ window.CLUB_SELECTOR = (function(){
     paresDeLado: function(l){ return paresDe(l); },
     // "Valores ajustados por inflación" de Comparar: lo usa el toggle de la barra.
     setReal: function(v){ cmpReal = !!v; renderControles(); if(mostrando) renderResultado(); },
+    // Para la URL: los dos lados como están (null = card vacío), el ajuste por inflación, y armar los dos lados desde bloques.
+    lados: function(){ return [lado[0], lado[1]]; },
+    real: function(){ return cmpReal; },
+    setLados: function(ba, bb){
+      lado[0] = ba && ba.length ? ladoDesde(ba) : null;
+      lado[1] = bb && bb.length ? ladoDesde(bb) : null;
+      stGuardado = [null, null];
+      mostrando = false;
+      render();
+    },
     baseReal: baseReal
   };
 })();

@@ -300,6 +300,8 @@
     pickClub: selectClub,
     // Elegir una LIGA en el selector aterriza en la pestaña Ligas.
     pickLeague: (leagueId, year) => LIGA_VIEW.show(leagueId, year).then(() => irASeccion('liga')),
+    // Cada cambio de un lado de Comparar o de su ajuste por inflación va a la URL, sin sumar entradas al historial.
+    onCambio: () => escribirURL('replace'),
   });
 
   // js/cuenta.js no sabe cargar un club ni cambiar de pestaña: se le pasa reopenSavedSearch() para que reabrir una búsqueda
@@ -624,7 +626,39 @@
   // solo estas claves: `?multi=0`, `?audit=1` y las demás quedan como estaban. `var` y no `let`: refreshFinanzas() y la vista de
   // Ligas llaman a escribirURL() desde el INIT, antes de este bloque, y `urlLista` las frena hasta haber leído la URL de entrada.
   // ==========================================================================
-  var URL_CLAVES = ['tab', 'club', 'anios', 'liga', 'anio', 'grupo'];
+  // `moneda`, `real` y `formato` van solo cuando no son los de siempre (USD, sin ajustar, formato simplificado): un link común queda
+  // corto. `a` y `b` son los dos lados de Comparar (ladoAURL()).
+  var URL_CLAVES = ['tab', 'club', 'anios', 'liga', 'anio', 'grupo', 'moneda', 'real', 'formato', 'a', 'b'];
+  // UN LADO DE COMPARAR EN TEXTO: bloques separados por "~"; un bloque de clubes es "c.<club>:<año>,<club>:<año>" (sin año = el más
+  // reciente) y uno de liga "l.<liga>.<años separados por coma>"; al final ".s" (suma) o ".p" (promedio) solo si no es el de siempre
+  // (clubes suman, ligas promedian). `?tab=vs&a=c.boca:2024&b=c.river:2024`, `b=l.es-laliga.2025`.
+  function ladoAURL(l){
+    if(!l || !l.bloques || !l.bloques.length) return null;
+    return l.bloques.map(b => {
+      const agg = b.kind === 'liga' ? (b.agg === 'suma' ? '.s' : '') : (b.agg === 'promedio' ? '.p' : '');
+      if(b.kind === 'liga') return 'l.' + b.league + '.' + (b.years || []).join(',') + agg;
+      return 'c.' + (b.pares || []).map(p => p[0] + (p[1] != null ? ':' + p[1] : '')).join(',') + agg;
+    }).join('~');
+  }
+  // Lo inverso. Un club o una liga que el sitio no tiene se descartan (el link viejo no rompe nada); sin bloques válidos, el lado queda vacío.
+  function ladoDeURL(txt){
+    if(!txt) return null;
+    const bloques = [];
+    txt.split('~').forEach(s => {
+      const partes = s.split('.');
+      let agg = null;
+      if(partes.length > 2 && (partes[partes.length - 1] === 's' || partes[partes.length - 1] === 'p')) agg = partes.pop() === 's' ? 'suma' : 'promedio';
+      if(partes[0] === 'l' && partes.length === 3 && (window.LEAGUES || {})[partes[1]]){
+        const years = partes[2].split(',').map(Number).filter(y => Number.isInteger(y) && y > 1800);
+        if(years.length) bloques.push({ kind:'liga', league:partes[1], years, agg:agg || 'promedio' });
+      } else if(partes[0] === 'c' && partes.length === 2){
+        const pares = partes[1].split(',').map(x => x.split(':')).filter(p => clubs[p[0]])
+          .map(p => [p[0], p[1] && Number.isInteger(Number(p[1])) ? Number(p[1]) : null]);
+        if(pares.length) bloques.push({ kind:'clubes', pares, agg:agg || 'suma' });
+      }
+    });
+    return bloques.length ? bloques : null;
+  }
   var urlLista = false, aplicandoURL = false;
   function estadoActual(){
     const tab = (document.querySelector('#mainNav button.active') || {}).dataset?.section || 'inicio';
@@ -633,6 +667,16 @@
     if(tab === 'finanzas' && currentClub){
       e.club = currentClub;
       if(FIN_SEL.years().length) e.anios = FIN_SEL.years().join(',');
+      if(currentCurrency !== 'USD') e.moneda = currentCurrency;
+      if(window.FIN_REAL && FIN_REAL.activo()) e.real = 1;
+      if(!simplifyFormat) e.formato = 'club';
+    }
+    if(tab === 'vs'){
+      const l = CLUB_SELECTOR.lados();
+      const a = ladoAURL(l[0]), b = ladoAURL(l[1]);
+      if(a) e.a = a;
+      if(b) e.b = b;
+      if(CLUB_SELECTOR.real()) e.real = 1;
     }
     if(tab === 'liga'){
       const c = LIGA_VIEW.current();
@@ -646,7 +690,7 @@
     const p = new URLSearchParams(location.search);
     URL_CLAVES.forEach(k => p.delete(k));
     Object.entries(estadoActual()).forEach(([k, v]) => p.set(k, v));
-    const q = p.toString().replace(/%2C/g, ',');
+    const q = p.toString().replace(/%2C/g, ',').replace(/%3A/g, ':').replace(/%7E/g, '~');
     const url = location.pathname + (q ? '?' + q : '') + location.hash;
     if(url === location.pathname + location.search + location.hash) return;
     history[modo === 'push' ? 'pushState' : 'replaceState'](null, '', url);
@@ -660,13 +704,25 @@
     const liga = p.get('liga');
     const anio = Number(p.get('anio')) || null;
     const grupo = p.get('grupo');
+    const moneda = p.get('moneda'), real = p.get('real') === '1', formatoClub = p.get('formato') === 'club';
     aplicandoURL = true;
     let paso = Promise.resolve();
     if(club && clubs[club] && club !== currentClub) paso = selectClub(club);
     return paso.then(() => {
-      if(tab === 'finanzas' && club && club === currentClub && anios.length){
-        FIN_SEL.set(anios);
+      if(tab === 'finanzas' && club && club === currentClub){
+        if(anios.length) FIN_SEL.set(anios);
+        // Moneda, inflación y formato: lo que dice la URL, y sin la clave el de siempre ("atrás" desde un link en pesos vuelve a USD).
+        // La moneda va después de cargar el club: populateCurrencyToggle() la lleva a USD si el club no la tiene.
+        currentCurrency = moneda && moneda === (clubs[club] || {}).reportingCurrency ? moneda : 'USD';
+        populateCurrencyToggle(club);
+        if(window.FIN_REAL) FIN_REAL.set(real);
+        simplifyFormat = !formatoClub;
+        document.querySelectorAll('#simplifyToggle button').forEach(b => b.classList.toggle('active', (b.dataset.simplify === '1') === simplifyFormat));
         refreshFinanzas();
+      }
+      if(tab === 'vs' && (p.has('a') || p.has('b'))){
+        CLUB_SELECTOR.setReal(real);
+        CLUB_SELECTOR.setLados(ladoDeURL(p.get('a')), ladoDeURL(p.get('b')));
       }
       if(tab === 'liga') return (liga && (window.LEAGUES || {})[liga]) ? LIGA_VIEW.show(liga, anio) : LIGA_VIEW.frio();
       if(tab === 'grupo' && window.GRUPO_VIEW && (window.GRUPOS_INDICE || []).some(g => g.id === grupo)) return GRUPO_VIEW.show(grupo);
