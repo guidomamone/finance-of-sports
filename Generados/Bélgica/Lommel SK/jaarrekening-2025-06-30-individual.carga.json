@@ -1,18 +1,14 @@
 {
  "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.pdf",
- "generado": "2026-10-18T13:25:37.759Z",
+ "generado": "2026-10-18T13:55:34.130Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (lommelsk-be)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "4 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Aankopen\" -> other_expenses 0.7; \"Andere personeelskosten\" -> wages_squad 0.6; \"Afschrijvingen en waardeverminderingen o\" -> player_amortisation 0.55; \"Niet-recurrente bedrijfskosten\" -> exceptional_items 0.75"
   }
  ],
  "avisos": [
-  "gastos: ningún total impreso igual a la suma de las líneas (-29.595117); queda la suma, verificada por el resultado del ejercicio",
+  "gastos: ningún total impreso igual a la suma de las líneas (-30.168572); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -59,9 +55,9 @@
     "amountNative": -0.205706,
     "disclosureLevel": "aggregated",
     "_pag": 8,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Voorraad: afname (toename) (+)/(-)",
@@ -109,19 +105,9 @@
     "amountNative": -1.10555,
     "disclosureLevel": "aggregated",
     "_pag": 24,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
-   },
-   {
-    "rawLabel": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-    "normalizedCategory": "player_amortisation",
-    "amountNative": -6.264419,
-    "disclosureLevel": "aggregated",
-    "_pag": 8,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
@@ -154,14 +140,44 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "Niet-recurrente bedrijfskosten",
-    "normalizedCategory": "exceptional_items",
-    "amountNative": -0.749155,
+    "rawLabel": "Afschrijvingen immateriële vaste activa (spelers)",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -5.674313,
     "disclosureLevel": "aggregated",
     "_pag": 8,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-18): la nota separa el 630 (6.264.419; materiales 590.105 + 1 de redondeo para cerrar con el estado) (subagente Sonnet, revisado por Claude 2026-10-18)"
+   },
+   {
+    "rawLabel": "Afschrijvingen materiële vaste activa",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.590106,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-18): la nota separa el 630 (6.264.419; materiales 590.105 + 1 de redondeo para cerrar con el estado) (subagente Sonnet, revisado por Claude 2026-10-18)"
+   },
+   {
+    "rawLabel": "Minderwaarden bij de realisatie van immateriële vaste activa (spelers)",
+    "normalizedCategory": "player_impairment",
+    "amountNative": -0.573455,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-18): nota 6.12 abre el 66A (749.155): 6630 = 573.455 (pérdida en baja de jugadores) + 175.700 (subagente Sonnet, revisado por Claude 2026-10-18)"
+   },
+   {
+    "rawLabel": "Andere niet-recurrente bedrijfskosten",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.1757,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-18): nota 6.12 abre el 66A (749.155): 6630 = 573.455 (pérdida en baja de jugadores) + 175.700 (subagente Sonnet, revisado por Claude 2026-10-18)"
    }
   ],
   "fiscalYearMeta": {
@@ -207,7 +223,7 @@
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 9.565805,
-   "officialTotalExpenses": 29.595117,
+   "officialTotalExpenses": 30.168572,
    "officialPAT": -20.872368
   },
   "source": {
@@ -267,10 +283,106 @@
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "5.674.313",
+   "linea": 282,
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "reemplaza": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "motivo": "la nota separa el 630 (6.264.419; materiales 590.105 + 1 de redondeo para cerrar con el estado) (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "motivo": "la nota separa el 630 (6.264.419; materiales 590.105 + 1 de redondeo para cerrar con el estado) (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "590.106",
+   "linea": 282,
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "la nota separa el 630 (6.264.419; materiales 590.105 + 1 de redondeo para cerrar con el estado) (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "categoria",
+   "valor": "depreciation",
+   "linea": null,
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "motivo": "la nota separa el 630 (6.264.419; materiales 590.105 + 1 de redondeo para cerrar con el estado) (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "573.455",
+   "linea": 287,
+   "etiqueta": "Minderwaarden bij de realisatie van immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "reemplaza": "Niet-recurrente bedrijfskosten",
+   "motivo": "nota 6.12 abre el 66A (749.155): 6630 = 573.455 (pérdida en baja de jugadores) + 175.700 (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "categoria",
+   "valor": "player_impairment",
+   "linea": null,
+   "etiqueta": "Minderwaarden bij de realisatie van immateriële vaste activa (spelers)",
+   "motivo": "nota 6.12 abre el 66A (749.155): 6630 = 573.455 (pérdida en baja de jugadores) + 175.700 (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "175.700",
+   "linea": 287,
+   "etiqueta": "Andere niet-recurrente bedrijfskosten",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "nota 6.12 abre el 66A (749.155): 6630 = 573.455 (pérdida en baja de jugadores) + 175.700 (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "categoria",
+   "valor": "exceptional_items",
+   "linea": null,
+   "etiqueta": "Andere niet-recurrente bedrijfskosten",
+   "motivo": "nota 6.12 abre el 66A (749.155): 6630 = 573.455 (pérdida en baja de jugadores) + 175.700 (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
   }
  ],
  "seleccion": {
-  "filas": 19,
+  "filas": 21,
   "notasUsadas": [],
   "refM": null
  },
@@ -328,11 +440,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.205706,
    "cat": "other_expenses",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Compras de mercadería (código 600/8). Mismo criterio que Anderlecht y Antwerp (Aankopen = other_expenses). [L278: 'Aankopen | 600/8 | 205.706 | 224.607' (pág. 8)]",
    "destino": "expense",
    "amountNative": -0.205706
   },
@@ -404,29 +516,13 @@
    "origen": "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\")",
    "signoFijo": 1.10555,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 623 es parte de Personeelskosten: 13.808.240 + 1.953.435 + 1.105.550 = 16.867.225, igual al 62 impreso (16.867.226, redondeo). Precedente belga: Andere personeelskosten dentro de wages_squad. [L832: 'Andere personeelskosten | 623 | 1.105.550 | 807.499' (Nota 6.10, pág. 24); L281 '62 | 16.867.226']",
    "destino": "expense",
    "amountNative": -1.10555
-  },
-  {
-   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "page": 8,
-   "native": 6.264419,
-   "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 6.264419,
-   "cat": "player_amortisation",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "enCola": true,
-   "destino": "expense",
-   "amountNative": -6.264419
   },
   {
    "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
@@ -474,20 +570,68 @@
    "amountNative": -0.641219
   },
   {
-   "label": "Niet-recurrente bedrijfskosten",
+   "label": "Afschrijvingen immateriële vaste activa (spelers)",
    "page": 8,
-   "native": 0.749155,
+   "native": 5.674313,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0.749155,
-   "cat": "exceptional_items",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 5.674313,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-18): la nota separa el 630 (6.264.419; materiales 590.105 + 1 de redondeo para cerrar con el estado) (subagente Sonnet, revisado por Claude 2026-10-18)",
    "enLista": true,
-   "enCola": true,
+   "ladoRechazado": false,
    "destino": "expense",
-   "amountNative": -0.749155
+   "amountNative": -5.674313
+  },
+  {
+   "label": "Afschrijvingen materiële vaste activa",
+   "page": 8,
+   "native": 0.590106,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.590106,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-18): la nota separa el 630 (6.264.419; materiales 590.105 + 1 de redondeo para cerrar con el estado) (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -0.590106
+  },
+  {
+   "label": "Minderwaarden bij de realisatie van immateriële vaste activa (spelers)",
+   "page": 8,
+   "native": 0.573455,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.573455,
+   "cat": "player_impairment",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-18): nota 6.12 abre el 66A (749.155): 6630 = 573.455 (pérdida en baja de jugadores) + 175.700 (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -0.573455
+  },
+  {
+   "label": "Andere niet-recurrente bedrijfskosten",
+   "page": 8,
+   "native": 0.1757,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.1757,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-18): nota 6.12 abre el 66A (749.155): 6630 = 573.455 (pérdida en baja de jugadores) + 175.700 (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -0.1757
   },
   {
    "label": "Andere financiële opbrengsten",
@@ -550,15 +694,16 @@
    "verificacion (estado)": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\")": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Andere bedrijfskosten\")": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
   "revSum": 9.565805,
-  "expSum": -29.595117,
+  "expSum": -30.168572,
   "officialTotalRevenue": 9.565805,
-  "officialTotalExpenses": 29.595117,
+  "officialTotalExpenses": 30.168572,
   "officialPAT": -20.872368,
   "verificacion": {
    "pat": "impreso",
@@ -627,9 +772,9 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 3,
-  "lineasGasto": 11,
+  "lineasGasto": 13,
   "metaFilas": 5,
   "excluidas": 0
  }
