@@ -35,7 +35,7 @@ window.RANKINGS["ee-meistriliiga"] = {
   },
   2024: {
     leagueSize: 10,
-    sinDato: ["kuressaare-ee","tartutammeka-ee"],
+    sinDato: ["tartutammeka-ee"],
     clubs: [
       { id:"fcilevadia-ee", revenue:4.15, reportType:"official_balance_sheet",
         sourceId:"fcilevadia-ee-aruanne-2024",
@@ -55,6 +55,9 @@ window.RANKINGS["ee-meistriliiga"] = {
       { id:"narvatrans-ee", revenue:0.597, reportType:"official_balance_sheet",
         sourceId:"narvatrans-ee-aruanne-2024",
         mix:[["Cuotas Sociales",0.085],["Comercial / Sponsors",0.053],["Estadio",0.006],["Premios por competencias",0.028],["Venta de Jugadores",0.004],["Otras secciones deportivas",0.056],["Otros ingresos",0.365]] },
+      { id:"kuressaare-ee", revenue:0.218, reportType:"official_balance_sheet",
+        sourceId:"kuressaare-ee-aruanne-2024",
+        mix:[["Comercial / Sponsors",0.006],["Estadio",0.006],["Premios por competencias",0.068],["Otros ingresos",0.138]] },
     ],
   },
   2023: {

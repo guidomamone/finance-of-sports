@@ -104,6 +104,60 @@ tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-18): null, SIN VERIFICAR (sin caché de rosters para ee (tools/club-league-reference/ee.json)).
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/Kuressaare/aruanne-2024.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/Kuressaare/aruanne-2024.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | UEFA solidaarsustoetus | pág. 12, precedente |
+| 2 | EJL toetused | pág. 12, precedente |
+| 3 | Riigi ja/või kohaliku omavalitsuse toetused | pág. 12, precedente |
+| 4 | Muud toetused | pág. 12, precedente |
+| 5 | Sponsorlus- ja reklaamitulu | pág. 13, precedente |
+| 6 | Piletitulu | pág. 13, precedente |
+| 7 | Klubi sümboolikaga toodete müügitulu | pág. 13, precedente |
+| 8 | Muu tulu ettevõtlusest | pág. 13, precedente |
+| 9 | Muud tulud | pág. 5, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Üür ja rent | pág. 13, precedente |
+| 2 | Energia | pág. 13, Jev 0.99 |
+| 3 | Mitmesugused bürookulud | pág. 13, precedente |
+| 4 | Koolituskulud | pág. 13, precedente |
+| 5 | Riiklikud ja kohalikud maksud | pág. 13, precedente |
+| 6 | Kodumängu korralduskulud | pág. 13, precedente |
+| 7 | Eesti meistrivõistluste osavõtutasu | pág. 13, precedente |
+| 8 | Võistkondade välissõitude- ja lähetuskulud | pág. 13, precedente |
+| 9 | Turundus-, sponsorlus- ja reklaamikulud | pág. 13, precedente |
+| 10 | Müüdud toodete ja muu varustuse maksumus | pág. 13, precedente |
+| 11 | Klubile kuuluvate ja tema poolt renditud hoonete ja rajatistega seotud kulud | pág. 13, precedente |
+| 12 | Mängijatele makstav sportlasetoetus | pág. 13, Jev 1 |
+| 13 | Liikmemaksud | pág. 13, precedente |
+| 14 | Muud | pág. 13, precedente |
+| 15 | EJL litsentsiga töötajate (v.a. mängijad) palgakulu | pág. 14, precedente |
+| 16 | EJL litsentsiga töötajate (v.a. mängijad) maksud | pág. 14, precedente |
+| 17 | Mängijate palgakulu | pág. 14, precedente |
+| 18 | Sotsiaalmaks mängijate töötasudelt | pág. 14, precedente |
+| 19 | Põhivarade kulum ja väärtuse langus | pág. 5, precedente |
+| 20 | Muud kulud | pág. 5, precedente |
+
+### Meta
+
+```text
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L107) (Claude 2026-10-18)
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Televisión. sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2023
 
 ### Ingresos
@@ -401,4 +455,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Kuressaare/aruanne-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### kuressaare-ee-aruanne-2024
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Kuressaare/aruanne-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
