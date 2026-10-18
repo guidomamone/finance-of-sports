@@ -6,3 +6,5 @@
 - **Ejercicios en disco** (`Clubes/Estonia/Harju JK Laagri/aruanne-<año>.pdf`): solo 2023-2025 (3; el club se registró en 2023), 11-14 págs., NO auditado. Falta el club antecesor (Harju JK, fundado antes): no se buscó su entidad.
 - **Canal**: `https://ariregister.rik.ee/eng/company/80620596` → tabla de informes anuales → `PDF` (URL `.../company/80620596/file/<id>`, sin login). Más años disponibles en el registro (2009-2018) que no se bajaron (el objetivo era 5).
 - Último chequeo: 2026-10-03.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2025 desde `Clubes/Estonia/Harju JK Laagri/aruanne-2025.pdf` (sourceId `harjujklaagri-ee-aruanne-2025`).
