@@ -109,6 +109,73 @@ tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-18): null, SIN VERIFICAR (sin caché de rosters para ee (tools/club-league-reference/ee.json)).
 ```
 
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/FCI Levadia/aruanne-2021.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/FCI Levadia/aruanne-2021.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Piletitulu Eesti-siseste võistlustustel | pág. 11, precedente |
+| 2 | Piletitulu UEFA klubisarjades osalemisest | pág. 11, precedente |
+| 3 | Hooajapiletite müügitulu | pág. 11, precedente |
+| 4 | Reklaamitulu | pág. 11, precedente |
+| 5 | Tulu ülekandeõiguste müügist | pág. 11, precedente |
+| 6 | Tulu mängijate üleminekutest klubist välja | pág. 11, Jev 1 |
+| 7 | Klubi sümboolikaga toodete müügitulu | pág. 11, precedente |
+| 8 | Staadioni rent | pág. 11, precedente |
+| 9 | Tulu turniiride/laagrite korraldamisest | pág. 11, Jev 0.99 |
+| 10 | Muud tulud | pág. 5, Jev 1 |
+| 11 | UEFA toetused | pág. 11, precedente |
+| 12 | Riigi ja/või KOV toetused | pág. 11, precedente |
+| 13 | Toetus kogukonnajuht | pág. 11, precedente |
+| 14 | Töötasu hüvitimise | pág. 11, Jev 0.98 |
+| 15 | Riiklik treenerite tööjõukulude toetus | pág. 11, precedente |
+| 16 | EJL toetused noortetööle | pág. 11, precedente |
+| 17 | Arengustipendiumid | pág. 11, precedente |
+| 18 | Mitteseotud osapoolte toetused/annetused | pág. 11, precedente |
+| 19 | Noormängijate osavõtutasud | pág. 5, precedente |
+| 20 | Tulu liikmemaksudest | pág. 5, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Mängijate palgakulu | pág. 5, precedente |
+| 2 | Sotsiaalmaks mängijate töötasudelt | pág. 5, precedente |
+| 3 | Mängijatele makstav sportlasetoetus | pág. 5, precedente |
+| 4 | Mängijatele makstud stipendiumid | pág. 5, precedente |
+| 5 | Muu personali palgakulu | pág. 5, precedente |
+| 6 | Sotsiaalmaks muu personali töötasudelt | pág. 5, precedente |
+| 7 | Kulu mängijate üleminekutest klubisse | pág. 11, precedente |
+| 8 | Kulutused turvalisusele | pág. 11, precedente |
+| 9 | Toitluskulud | pág. 11, precedente |
+| 10 | Trükised jm materjalid | pág. 11, precedente |
+| 11 | Muud klassifitseerimata kodumängu korralduskulud | pág. 11, precedente |
+| 12 | Eesti meistrivõistluste osavõtutasu | pág. 11, precedente |
+| 13 | Lähetuskulud | pág. 11, precedente |
+| 14 | Turundus-, sponsorlus- ja reklaamikulud | pág. 11, precedente |
+| 15 | Klubisümboolikaga toodete omahind | pág. 11, precedente |
+| 16 | Klubile kuuluvate ja tema poolt renditud hoonete ja rajatisega seotud kulud | pág. 11, precedente |
+| 17 | Klubi administeerimiskulud | pág. 11, precedente |
+| 18 | Meditsiinitarvikud - ja teenused | pág. 11, precedente |
+| 19 | Mänguvormid jm varustus | pág. 11, Jev 1 |
+| 20 | Muud kulud | pág. 11, Jev 1 |
+| 21 | Muud tegevuskulud | pág. 11, precedente |
+| 22 | Põhivara kulum | pág. 5, precedente |
+| 23 | Ärikulud | pág. 5, precedente |
+
+### Meta
+
+```text
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Konsolideeritud tulude-kulude aruanne", .md L103) (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2020
 
 ### Ingresos
@@ -229,4 +296,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/FCI Levadia/aruanne-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### fcilevadia-ee-aruanne-2021
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/FCI Levadia/aruanne-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

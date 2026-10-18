@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 276 clubes, 975 ejercicios, 19 países.
+TOTAL: 276 clubes, 976 ejercicios, 19 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -164,7 +164,7 @@ DK (11)
   Viborg FF        1 ejercicio (2023/2024), balance, DKK
 
 EE (9)
-  FCI Levadia          3 ejercicios (2019, 2020, 2025), balance, EUR, sin deuda/caja
+  FCI Levadia          4 ejercicios (2019, 2020, 2021, 2025), balance, EUR, sin deuda/caja
   Flora Tallinn        5 ejercicios (2019, 2020, 2023, 2024, 2025), balance, EUR, sin deuda/caja
   Harju JK Laagri      3 ejercicios (2023 a 2025), balance, EUR, sin deuda/caja
   Kuressaare           5 ejercicios (2019, 2020, 2021, 2023, 2025), balance, EUR, sin deuda/caja
