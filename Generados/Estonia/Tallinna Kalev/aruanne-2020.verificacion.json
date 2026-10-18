@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Estonia/Tallinna Kalev/aruanne-2020.pdf",
  "md": "Clubes/Estonia/Tallinna Kalev/aruanne-2020.md",
- "generado": "2026-10-18T18:15:08.344Z",
+ "generado": "2026-10-18T18:34:29.175Z",
  "estado": "ok",
  "clubId": "tallinnakalev-ee",
  "year": 2020,
@@ -46,6 +46,11 @@
    "dif": 4.163336342344337e-17
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2019 de este documento suma ingresos 0.521859; el sitio tiene 0.521859"
+  },
+  {
    "nombre": "documento del año 2021",
    "ok": true,
    "detalle": "ingresos de 2020: 0.5758 en este documento y 0.5758 en aruanne-2021.pdf (columna del año anterior)"
@@ -54,16 +59,6 @@
    "nombre": "documento del año 2019",
    "ok": true,
    "detalle": "ingresos de 2019: 0.521859 en aruanne-2019.pdf y 0.521859 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [

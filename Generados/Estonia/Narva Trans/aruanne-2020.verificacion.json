@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Estonia/Narva Trans/aruanne-2020.pdf",
  "md": "Clubes/Estonia/Narva Trans/aruanne-2020.md",
- "generado": "2026-10-18T18:15:07.970Z",
+ "generado": "2026-10-18T18:34:28.968Z",
  "estado": "cola",
  "clubId": "narvatrans-ee",
  "year": 2020,
@@ -69,24 +69,19 @@
    "dif": 4.163336342344337e-17
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2019 de este documento suma ingresos 0.465788; el sitio tiene 0.465788"
+  },
+  {
    "nombre": "documento del año 2021",
    "ok": false,
-   "detalle": "ingresos de 2020: 0.478467 en este documento y 0.576168 en aruanne-2021.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2020: 0.478467 en este documento y 0.585674 en aruanne-2021.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2019",
    "ok": true,
    "detalle": "ingresos de 2019: 0.465788 en aruanne-2019.pdf y 0.465788 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [],

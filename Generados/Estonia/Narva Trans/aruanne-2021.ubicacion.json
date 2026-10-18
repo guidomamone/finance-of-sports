@@ -3,7 +3,7 @@
  "md": "Clubes/Estonia/Narva Trans/aruanne-2021.md",
  "mdSha1": "7abb3ab9f0904af9154ad22c4b3bf1f10766625e",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-18T18:14:18.607Z",
+ "generado": "2026-10-18T18:33:37.891Z",
  "bloques": {
   "b1": {
    "pagina": 1,
@@ -411,19 +411,27 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se carga el juego de la pág. 1-14 (b4, b16-b19, bajo 'KONSOLIDEERITUD MAJANDUSAASTA ARUANNE') como consolidado y se deja afuera el de las págs. 15-28 (b25, b39-b42, 'MAJANDUSAASTA ARUANNE') como individual?",
+   "pregunta": "¿Se carga el juego de páginas 4-14 (b4, b16-b19), bajo el título 'KONSOLIDEERITUD MAJANDUSAASTA ARUANNE', como consolidado y se deja afuera el de páginas 18-28 (b25, b39-b42), bajo el título 'MAJANDUSAASTA ARUANNE', por ser el individual?",
    "propuesta": "sí",
    "tema": "perimetro",
    "renglon": "",
-   "texto": "El documento trae dos juegos de estados; el primero tiene título consolidado (b1) y el segundo sin esa palabra (b22), con renglones distintos (b4 tiene 'Liikmetelt saadud tasud', b25 no).",
+   "texto": "El documento trae dos juegos de estados. El de pág. 1 (b1) dice 'KONSOLIDEERITUD'. El de pág. 15 (b22) no lo dice, y su tulemiaruanne b25 tiene menos filas: no incluye 'Liikmetelt saadud tasud'.",
    "bloques": [
     "b1",
     "b4",
     "b22",
-    "b25"
+    "b25",
+    "b16",
+    "b17",
+    "b18",
+    "b19",
+    "b39",
+    "b40",
+    "b41",
+    "b42"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "Dos juegos de estados: págs. 1-14 consolidado (b4 tulemiaruanne; notas b16 Annetused ja toetused, b17 Tulu ettevõtlusest, b18 Mitmesugused tegevuskulud, b19 Tööjõukulud) y págs. 15-28 aparentemente individual (b25; notas b39, b40, b41, b42). Se elige el consolidado, perímetro usado en años anteriores."
+ "observaciones": "Hay dos juegos completos de estados. Consolidado (pág. 1 'KONSOLIDEERITUD'): balance b3, resultados b4, notas b16 (Annetused ja toetused), b17 (Tulu ettevõtlusest), b18 (Mitmesugused tegevuskulud) y b19 (Tööjõukulud). Individual (pág. 15): balance b24, resultados b25, notas b39, b40, b41 y b42. Elegí el consolidado porque es el perímetro que el club usa en sus años ya cargados."
 }

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Estonia/Flora Tallinn/aruanne-2021.pdf",
  "md": "Clubes/Estonia/Flora Tallinn/aruanne-2021.md",
- "generado": "2026-10-18T18:15:07.666Z",
+ "generado": "2026-10-18T18:34:28.873Z",
  "estado": "ok",
  "clubId": "floratallinn-ee",
  "year": 2021,
@@ -46,6 +46,11 @@
    "dif": 3.2751579226442118e-15
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2020 de este documento suma ingresos 3.608798; el sitio tiene 3.608798"
+  },
+  {
    "nombre": "documento del año 2022",
    "ok": false,
    "detalle": "ingresos de 2021: 5.913409 en este documento y 6.213409 en aruanne-2022.pdf (columna del año anterior)"
@@ -54,16 +59,6 @@
    "nombre": "documento del año 2020",
    "ok": true,
    "detalle": "ingresos de 2020: 3.608798 en aruanne-2020.pdf y 3.608798 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [

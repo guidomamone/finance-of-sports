@@ -4,7 +4,7 @@
  "mdSha1": "7abb3ab9f0904af9154ad22c4b3bf1f10766625e",
  "ubicacionSha1": "417746118611d5de93c2a3ed0a640c7495ae83c3",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-18T18:14:55.783Z",
+ "generado": "2026-10-18T18:34:12.234Z",
  "ubicacion": {
   "estado": [
    "b4"
@@ -72,6 +72,16 @@
    "etiqueta": "Tulu ettevõtlusest",
    "actual": "71 924",
    "anterior": "205 807",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 134,
+   "etiqueta": "Muud tulud",
+   "actual": "",
+   "anterior": "9 506",
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": null
@@ -522,29 +532,40 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se asigna 'Liikmemaksud' (L435, 56 015) de la Lisa 9 al renglón 'Liikmetelt saadud tasud' del estado y no a 'Tulu ettevõtlusest'?",
+   "pregunta": "¿Se trata la nota 9 (L434-L441, total 127 939) como desglose conjunto de 'Liikmetelt saadud tasud' (56 015) y 'Tulu ettevõtlusest' (71 924), asignando 'Liikmemaksud' (L435) al primero?",
    "propuesta": "sí",
    "tema": "perimetro",
    "renglon": "Tulu ettevõtlusest",
-   "texto": "La Lisa 9 suma 127 939 (L441) y el estado muestra 71 924 (L133); la diferencia es exactamente 56 015 = Liikmetelt saadud tasud (L131), que también remite a la nota 9.",
+   "texto": "El total de L441 (127 939) = 56 015 + 71 924, y L435 repite los 56 015 de L131, que también refiere a Lisa 9.",
    "bloques": [
-    "b4",
-    "b17"
+    "b17",
+    "b4"
    ],
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se deja la Lisa 9 de 2020 sin conciliar, aunque 251 522 menos 28 733 (222 789) no coincide con 205 807 del estado (L133)?",
+   "pregunta": "¿Se asigna 'Muu tulu' (L440, 3752) a 'Tulu ettevõtlusest' aunque podría corresponder a 'Muud tulud' del estado (vacío en 2021)?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Tulu ettevõtlusest",
+   "texto": "L134 'Muud tulud' está vacío en 2021 y L440 está dentro del total de la nota 9 que cuadra con L131+L133.",
+   "bloques": [
+    "b17",
+    "b4"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga 'Veevarustusteenused' (L453, 161) como renglón propio y no como parte de 'Energia' (L449)?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "Tulu ettevõtlusest",
-   "texto": "En la columna 2020 la nota y el estado difieren en 16 982 (posiblemente 'Muud tulud' 9 506 u otra reclasificación); solo afecta al año anterior.",
+   "renglon": "Energia",
+   "texto": "3 444+1 638+1 721 = 6 803 (L449), por lo que L453 no forma parte de Energia.",
    "bloques": [
-    "b4",
-    "b17"
+    "b18"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "Todo en euros. 'Energia' (L449) es subtotal de L450-L452. Se excluye L482 (número medio de empleados, no es importe). Lisa 11 suma 450 890 vs 450 889 impreso: redondeo. 'Muud kulud' y 'Muud finantstulud ja -kulud' no tienen nota."
+ "observaciones": "Escala en euros (unidades) en todos los bloques. Los gastos en el estado van con signo negativo y en las notas en positivo. Energia (L449) es subtotal de L450-L452. 'Muud tulud' L134 sin importe 2021. L482 (número medio de empleados) no es importe y se excluyó."
 }

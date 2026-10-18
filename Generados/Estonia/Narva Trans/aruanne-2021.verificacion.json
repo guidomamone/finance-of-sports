@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Estonia/Narva Trans/aruanne-2021.pdf",
  "md": "Clubes/Estonia/Narva Trans/aruanne-2021.md",
- "generado": "2026-10-18T18:15:07.975Z",
+ "generado": "2026-10-18T18:34:28.974Z",
  "estado": "cola",
  "clubId": "narvatrans-ee",
  "year": 2021,
@@ -26,6 +26,7 @@
  "cola": [
   "9c35dd4",
   "c7ff245",
+  "66017e7",
   "66017e7"
  ],
  "chequeos": [
@@ -57,7 +58,7 @@
   {
    "nombre": "documento del año 2020",
    "ok": false,
-   "detalle": "ingresos de 2020: 0.478467 en aruanne-2020.pdf y 0.576168 en este documento (columna del año anterior)"
+   "detalle": "ingresos de 2020: 0.478467 en aruanne-2020.pdf y 0.585674 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
@@ -74,7 +75,7 @@
   "la nota de \"Tulu ettevõtlusest\" no suma el renglón (0.071924 contra 0.071924, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Mitmesugused tegevuskulud\" no suma el renglón (0.111982 contra 0.118794, sumando sus renglones): quedó el renglón del estado",
   "duda de localizar ya contestada para el club (perimetro, \"-\"): corregir no, en aruanne-2021.pdf",
-  "duda de extraer que no afecta la carga: En la columna 2020 la nota y el estado difieren en 16 982 (posiblemente 'Muud tulud' 9 506 u otra reclasificación); solo afecta al año anterior."
+  "duda de extraer que no afecta la carga: 3 444+1 638+1 721 = 6 803 (L449), por lo que L453 no forma parte de Energia."
  ],
  "reintentar": [
   {
@@ -158,6 +159,14 @@
    "M": 0.071924,
    "pagina": 5,
    "linea": 133,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Muud tulud",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 5,
+   "linea": 134,
    "origen": "estado"
   },
   {
