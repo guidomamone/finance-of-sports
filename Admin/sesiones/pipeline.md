@@ -54,4 +54,5 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
 ## Para fos-onboarding (cómo se carga)
 
 - Nada cambia mientras un documento no tenga un ajuste `escala`. El campo nuevo `escala` existe solo en esta rama hasta el merge.
+- caja-deuda pregunta a Sonnet (no a Opus) en el escalón 2 desde el merge: con las respuestas guardadas, lo que se escribe no cambia; en un documento nuevo, contesta Sonnet.
 - `claveFamilia` saca ahora la numeración "bis" (to-do 290): `cargar.mjs` y `verificar.mjs` medidos idénticos (Italia y prueba-completa); cambia solo qué filas "bis" ve el diccionario de deuda de caja-deuda.
