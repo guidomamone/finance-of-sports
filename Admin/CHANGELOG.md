@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 745 — Merge de onboarding 2: lote 92 de Bélgica (2026-10-18)
+
+Sin conflictos; P0 0 / P1 0.
+
+- Lote 92 (Bélgica 2013-2024, ~US$ 1,65): 0 años escritos; 37 frenan en verificar, 2 en la compuerta de estadio y sponsor. 58 respuestas
+  de la cola que no tocan importes, aplicadas; las que cambian números esperan las mejoras t y u del 298 (Guido: sin ajustes a mano).
+- Con ok de Guido: las 5 versiones originales reemplazadas por su -correction, a documentos descartados; RWDM 2019 (7 meses sin
+  actividad), a parciales. Mejoras s a v sumadas al 298.
+
 ## Versión 744 — Merge de pipeline: caja y deuda en Bélgica y Estonia (2026-10-18)
 
 ASSET_V 1301, P0 0 / P1 0. La sesión pipeline cerró.

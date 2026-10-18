@@ -287,7 +287,15 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    entre una sola. l) a p) más casos de onboarding (reportType por año de un club existente, perímetro de la carga, año vecino con
    perímetros distintos, ceros reales y perfil que se repreguntan). q) el ensayo de lote.mjs cobra la categorización de todos los documentos de
    la lista, también los ya cargados o categorizados. El detalle
-   de l a q, en `Admin/Archive/sesion-onboarding-2026-10-18-4.md`. k) alta-club.mjs / cargar-lote.mjs escriben la liga del alta en null aunque
+   de l a q, en `Admin/Archive/sesion-onboarding-2026-10-18-4.md`. s) periodo.mjs / localizar toman el inicio del boekjaar como cierre
+   cuando el ejercicio empieza en junio y eligen la columna "Vorig boekjaar" (vacía) sin aviso (Beerschot 2019 -correction). t) PRIMERO, con
+   la u (Bélgica espera a las dos; decisión de Guido: sin ajustes a mano): lo del esquema NBB que la b no cubrió, 7 reglas revisadas contra
+   el .md (60/66A y 600/8 + 609 sumados además de sus renglones; el waarvan del 76A; la Brutomarge 9900 perdida o sin signo; el residuo
+   implícito de la Brutomarge; el financiero abreviado con el mismo signo; reversiones (+)/(-) 631/4, 635/8 y 77 en positivo; OH Leuven 2021
+   con el resumen del jaarverslag). u) la compuerta del 273 frena todo año nuevo sin liga en data/club-leagues (Bélgica solo tiene 2025):
+   que la carga resuelva la liga con la compuerta de ligas-sin-verificar antes; faltan las listas de las ligas amateur belgas. v) el final
+   de lote.mjs lista como frenados los originales que salteó por su -correction. El detalle de s a v, con líneas y montos, en
+   `Admin/Archive/sesion-onboarding-2026-10-18-5.md`. k) alta-club.mjs / cargar-lote.mjs escriben la liga del alta en null aunque
    `altas-revision.jsonl` traiga las ligas verificadas (las 17 altas de los lotes 89-90): que el alta las tome de la revisión.
 301. gasto.mjs --json SE CORTA EN UN PIPE (visto armando el tablero, 2026-10-18). `node tools/gasto.mjs --json | …` corta la salida a los
    64 KB: el proceso sale antes de vaciar stdout. Mejora de script chica.

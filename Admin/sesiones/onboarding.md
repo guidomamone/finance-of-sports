@@ -213,3 +213,5 @@ como letras para fos-pipeline, sin aplicarlas.
      (Beerschot 2019, Lokeren-Temse 2023, Lommel SK 2021 y Patro Eisden 2020 y 2024 originales): confunde el conteo. Ya en descartados no
      deberían volver a aparecer; confirmarlo en la próxima corrida.
 - Por dónde seguir: Bélgica espera a la t y la u. Lo demás del plan sigue igual (292 resto, 238, 285, 284, 283, 195, 165 c).
+
+## Después del cuarto merge del 2026-10-18
