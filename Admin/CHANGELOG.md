@@ -15,6 +15,17 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 742 — Merge de pantallas: cita de Wikipedia en Ligas (2026-10-18)
+
+Lo generado regenerado; ASSET_V 1298, P0 0 / P1 0. La sesión pantallas cerró.
+
+- To-do 305: Ligas cita la lista de clubes de la temporada (Wikipedia, página, idioma, fecha de lectura y CC BY-SA 4.0), solo cuando la
+  pantalla la usa. `generate-rankings.js` escribe `wiki` en cada liga-año (227 hoy); `citaLista()` en `js/liga.js`.
+- Ligas ya no dice "Nadie verificó todavía cuántos equipos jugaron esta temporada…" (contradecía la lista citada).
+- Finanzas: `scroll-margin-top` para Estadio y camiseta, Estructura, Auditoría y Citar (el índice fijo tapaba el título).
+- 254 + 243: primera lectura del KV de búsquedas (11 claves, ningún club pedido que falte; unas 9 visitas reales en 30 días). Se borran:
+  "nadie usa el site, así que por ahora no hagamos nada" (Guido). Nuevo to-do 309 (tamaño de liga desde la lista de Wikipedia).
+
 ## Versión 741 — Merge de onboarding: Estonia completa (2026-10-18)
 
 `.jsonl` con las líneas de las dos ramas, lo generado regenerado; ASSET_V 1297, P0 0 / P1 0.

@@ -186,7 +186,8 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 
 - Inicio: qué es el sitio, el buscador como acción principal y rankings del mundo y de América por ejercicio más tarjetas de liga, desde
   `data/rankings/_regiones.js` (lo escribe `tools/generate-rankings.js` en cada carga). Ligas: buscador, regiones y una fila por país; la
-  liga elegida con ranking de barras, composición apilada y simulador. No hay pestaña Fuentes ni botón del club en el header: se busca con
+  liga elegida con ranking de barras, composición apilada y simulador. Debajo, de dónde sale la lista de clubes de la temporada (Wikipedia, CC BY-SA 4.0;
+  `wiki` de cada liga-año en `data/rankings/`, de `tools/club-league-reference/`). No hay pestaña Fuentes ni botón del club en el header: se busca con
   "Buscar un club o una liga" (Ctrl/Cmd K) y el club se nombra en el título de Finanzas.
 - El estado va en la URL: pestaña, club, años, liga y ejercicio, y solo cuando no son los de siempre la moneda, `real=1` (inflación),
   `formato=club` y los dos lados de Comparar (`a`, `b`); también el grupo multiclub (`?tab=grupo&grupo=…`). Se lee al abrir y con
@@ -204,8 +205,8 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 
 ### Techo del modelo (no es una tarea)
 
-- La taxonomía es de fútbol (`player_sales`, `wages_squad`, `youth_football`) y las pestañas Pases/Resultados/Títulos y
-  `gestionesByClub` también. Un club de otro deporte entra hoy con media taxonomía vacía y 3 pestañas sin sentido.
+- La taxonomía es de fútbol (`player_sales`, `wages_squad`, `youth_football`) y las pestañas Resultados/Títulos y
+  `gestionesByClub` también. Un club de otro deporte entra hoy con media taxonomía vacía y 2 pestañas sin sentido.
 
 ### Sitio, publicación y analytics
 

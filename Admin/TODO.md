@@ -24,7 +24,7 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 305, 254 + 243 · finanzas 281, 282, 294 · pipeline 290, 232, 279, 286, 287, 298 (c a r), 301, 302, 306, 307 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
+Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): finanzas 281, 282, 294 · pipeline 290, 232, 279, 286, 287, 298 (c a r), 301, 302, 306, 307 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
 datos-sourcing 273 (completar el dato), 252 · ligas 295 · Reino Unido (261) en su propia sesión · la principal: 291 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
@@ -58,14 +58,12 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 273: estadio y sponsor, lo que queda (completar a mano, nombrar la compuerta)
 
 **E. Pantallas**
-* 305: la cita de Wikipedia en la lista de equipos de cada liga
 * 282: quién audita, lo que queda (88 informes a conseguir; la compuerta del pipeline)
 * 281: ingresos de las otras entidades (falta União de Leiria, sin estado de resultados)
 * 294: registro de entidades, lo que queda (los clubes del borrador cuando estén publicados)
 
 **E2. Distribución (depende de 246)**
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
-* 254 + 243: repaso mensual de métricas y lo que se busca sin resultado (eligen qué club sumar en D)
 * 252: ejercicios nuevos, lo que queda (URLs de 37 notas; cargar 14 clubes con el PDF ya bajado)
 * 259: material de difusión (después de 241: el deck tiene que poder linkear)
 
@@ -180,8 +178,6 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 241. LINK DEDICADO, NIVEL 2: RUTAS REALES, TARJETA AL COMPARTIR Y SEO (mejoras de proyecto, pedido de Guido 2026-10-16). `/club/<id>` y `/liga/<id>` pre-generadas (redirect de Netlify +
    un generador de HTML por club, como `fuentes/<club>.html`), con título, descripción y OG image ("Boca Juniors · Ingresos 2025: US$ 120 M").
    WhatsApp y Google no ejecutan JS: sin esto la preview es la portada y nadie que busque "deuda de Boca" llega. Mockups con Design antes de codear.
-243. LO QUE SE BUSCA SIN RESULTADO GUÍA EL SOURCING (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker ya registra las búsquedas que no encuentran club: esa lista decide qué
-   club se carga después (junto con el repaso de métricas, to-do 254).
 245. DATOS COMO JSON CON ESQUEMA (mejoras de proyecto, pedido de Guido 2026-10-16). Hoy son JS (`const xRevenueLinesByYear = {...}`), sin versión de esquema, con la unidad implícita
    (millones) y la moneda en otro archivo. JSON con schema_version, unit/scale/currency explícitos y fecha de corte, como fuente; el JS del
    sitio se genera desde ahí.
@@ -199,8 +195,6 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    (día 1, 9:00, carpeta principal) que baja el PDF a `Clubes/` y anota en `Admin/sourcing/README.md`. Falta: agregarles la URL del canal
    a las 37 notas de sourcing que no la tienen (la tarea las marca "a revisar" todos los meses); cargar los 14 clubes que ya tienen el PDF
    del ejercicio siguiente bajado (`node tools/ejercicios-nuevos.mjs` los lista; onboarding).
-254. REPASO MENSUAL DE MÉTRICAS (MIXPANEL Y NETLIFY) (mejoras de proyecto, pedido de Guido 2026-10-16). Qué clubes se buscan y no están, y dónde se corta el embudo del selector.
-   Con números, revisar qué fue al panel "Más opciones" de Finanzas (rediseño del 265: hoy es criterio, no dato).
 255. CONSOLIDAR LAS REGLAS (mejoras de proyecto, pedido de Guido 2026-10-16). CLAUDE.md, las memorias, 7 skills, CONVENCIONES, CONVENCIONES-DATOS, PANTALLA y PIPELINE: una regla en tres
    lugares es lo que hace que una sesión contradiga a otra. Pasada de consolidación; lo chequeable va a hooks (250) o a audit.js.
 256. CHANGELOG CORTO (mejoras de proyecto, pedido de Guido 2026-10-16). Casi 3.000 líneas y git ya guarda la historia: dejar los últimos 30 días y archivar el resto en Admin/Archive/.
@@ -295,8 +289,6 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    64 KB: el proceso sale antes de vaciar stdout. Mejora de script chica.
 302. DEFLACTOR DE EE.UU. DESDE LA BEA (cierre de proyecto, 2026-10-18). FRED prohíbe el scraping y guardar copias: bajarlo directo de la BEA
    (`tools/fetch-fx-reference.mjs --deflactores`).
-305. LA LISTA DE LIGAS SIN LA CITA DE WIKIPEDIA (cierre de proyecto). Sponsor y contexto la tienen; la lista de equipos de cada liga sale de
-   Wikipedia y no lo dice: sumar la cita, con la licencia CC BY-SA.
 306. MILAN 2018 EN caja-deuda --medir (cierre de pipeline). 1,21 M contra 164,27 M publicados: las filas de deuda son "a) entro / b) oltre 12
    mesi" debajo de un título sin importe ("1 obbligazioni", "5 debiti verso altri finanziatori"; AC-Milan-bilanci-relazioni-2017-18.md
    L895-904) y el diccionario solo ve "4 debiti verso banche". Sin daño hoy (año cargado).
@@ -304,6 +296,9 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    suma. `tools/gasto.mjs` da el número bueno.
 308. NOMBRAR EN LA SKILL club-data-mapping EL CRITERIO DE LOS BONOS CONVERTIBLES (con ok de Guido: es una skill). Ya está en
    CONVENCIONES-DATOS; la skill tiene que decirlo donde habla de deuda.
+309. TAMAÑO DE LIGA DESDE LA LISTA DE WIKIPEDIA (cierre de pantallas, a decidir con Guido). En 223 de los 227 liga-años con lista de
+   Wikipedia (`wiki` en `data/rankings/<liga>.js`) `leagueSize` es null, aunque la lista existe y alimenta los estimados: sin él no hay
+   "N de los M" en el subtítulo de Ligas ni "Faltan…". ¿El tamaño sale de la lista (`LEAGUE_SIZE_BY_YEAR`, `tools/listas-lote.mjs`)?
 270. ESTIMAR UN CLUB QUE NUNCA CARGAMOS: VOLVER A MEDIR (pedido de Guido, 2026-10-17). Está PRENDIDO desde el 2026-10-18 (decisión de
    Guido: en Ligas todo club sin balance figura como estimado), con 50% de error (regresión sin historia: mediana de la liga-año, división,
    posición en la tabla). Volver a medir (`node tools/estimar.mjs --medir`) cuando haya más clubes cargados. Variable sin medir: partidos
