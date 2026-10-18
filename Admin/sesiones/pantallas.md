@@ -119,3 +119,16 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
 - 282, Ligas: `data/auditoria/_ligas.js` (`window.LIGA_AUDITORIA[ligaId][anio] = { entidad:{nombre, legal?}, auditor, dictamen,
   continuidad, fuente }`, rama finanzas, commit 5c212ed) está vacío: no hay balance de ninguna entidad organizadora. Ligas no muestra
   nada hasta que haya uno (conseguirlos lo propone finanzas como sourcing).
+
+## Después del tercer merge del 2026-10-18
+
+### Qué queda (para TODO)
+
+- 242 (para periodistas): mockup en "Pantallas FoS" ("Finanzas · usar estos números" y "Metodología, página pública"), esperando el
+  ok de Guido.
+- 273 (aviso de fos-datos): el dato está en la rama datos-sourcing (943e423cdb), sin mergear. `data/contexto/<iso>.js`, uno por país
+  (18 hoy; index.html no los carga): `window.CLUB_CONTEXT[clubId][año] = { estadio, capacidad, sponsor, marca, temporada, fuente,
+  fuenteManual? }`; un campo que no se sabe no aparece; `fuente` es el permalink a la revisión de Wikipedia; sponsor puede traer varios
+  separados por coma o barra. Cobertura de 932 ejercicios: estadio 79 %, sponsor 85 %, marca 87 %. Pedidos de Guido: (1) verlo en
+  Finanzas (link de salto o bloque, a decidir con él); (2) una página por sponsor con su histórico y los equipos que sponsorea hoy, que
+  espera un índice de sponsors con nombres unificados que va a generar fos-datos (no armarla sobre data/contexto/).
