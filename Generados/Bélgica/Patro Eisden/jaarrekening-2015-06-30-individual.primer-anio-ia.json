@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2015-06-30-individual.md",
+ "clave": "efcc8f5cac93ebce501f5fbdd617390e9b9089cc",
+ "generado": "2026-10-18T19:16:21.134Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Lo cargado cubre todos los renglones del ejercicio. Las tres filas de nota (377.459 + 90.548 + 26.934 = 494.941 ≈ 494.942) reemplazan a L199 y su diferencia es de redondeo. La Brutomarge (L194) y los resultados intermedios (L205, L208) y final (L211) no se cargan, como corresponde. El resultado da 933.485 + 5.293 − 397.827 − 494.941 − 1.500 − 4.472 + 9.327 − 206 = 49.159 ≈ 49.158."
+ }
+}

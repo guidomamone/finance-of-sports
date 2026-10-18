@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2024-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2024-06-30-individual.md",
- "generado": "2026-10-18T19:01:12.305Z",
+ "generado": "2026-10-18T19:16:21.142Z",
  "estado": "cola",
  "clubId": "lokerentemse-be",
  "year": 2024,
@@ -18,8 +18,7 @@
   "a1bb0f0",
   "c7f0574",
   "2e32357",
-  "75764e0",
-  "3c6f252"
+  "75764e0"
  ],
  "chequeos": [
   {
@@ -57,6 +56,11 @@
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
   }
  ],
  "notas": [
@@ -165,7 +169,7 @@
  ],
  "primerAnio": {
   "escalon": 3,
-  "estado": "pendiente",
+  "estado": "confirmado",
   "clave": "7505ab6119d177864ba58a62408673d85cf1c38e",
   "rango": [
    211,

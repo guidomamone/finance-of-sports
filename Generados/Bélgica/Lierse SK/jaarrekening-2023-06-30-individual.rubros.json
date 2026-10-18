@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2023-06-30-individual.pdf",
   "club": "liersesk-be",
   "year": 2023,
-  "generatedAt": "2026-10-18T15:27:59.497Z",
+  "generatedAt": "2026-10-18T19:16:11.946Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -15,16 +15,6 @@
         2.555937
       ],
       "glosa": "Margen bruto (+)/(-)"
-    },
-    {
-      "label": "Waarvan: niet-recurrente bedrijfsopbrengsten",
-      "lado": "revenue",
-      "page": 7,
-      "section": "estado",
-      "values": [
-        0.357625
-      ],
-      "glosa": "De los cuales: ingresos de explotación no recurrentes"
     },
     {
       "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
@@ -44,7 +34,7 @@
       "values": [
         0.311289
       ],
-      "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, inmovilizado intangible y material"
+      "glosa": "Amortizaciones y pérdidas por deterioro de gastos de constitución, inmovilizado intangible y material"
     },
     {
       "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (+)/(-) (terugnemingen)",
@@ -54,7 +44,7 @@
       "values": [
         0.000941
       ],
-      "glosa": "Correcciones de valor sobre existencias, pedidos en curso y deudores comerciales: dotaciones (+)/(-) (reversiones)"
+      "glosa": "Pérdidas por deterioro de existencias, pedidos en curso y créditos comerciales: dotaciones (+)/(-) (reversiones)"
     },
     {
       "label": "Andere bedrijfskosten",

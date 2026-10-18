@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2024-06-30-individual.md",
+ "clave": "7505ab6119d177864ba58a62408673d85cf1c38e",
+ "generado": "2026-10-18T19:16:16.614Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Lo cargado cubre todos los renglones con importe del ejercicio: brutomarge 988.874 menos gastos operativos (1.236.175 + 33.948 - 16.419 + 12.923 + 13.466) da -291.219, más financieros (2.231 + 16.808 - 35.423) da -307.603, menos impuesto 54 da -307.657, igual al impreso. Los financieros se cargan por sus partes (L228, L229, L231) y no por los totales L227/L230. La fila L215 está en cero (el importe 116.250 es del año anterior), así que no altera el resultado."
+ }
+}

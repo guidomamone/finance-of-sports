@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2022-06-30-individual.pdf",
   "club": "liersesk-be",
   "year": 2022,
-  "generatedAt": "2026-10-18T15:37:11.340Z",
+  "generatedAt": "2026-10-18T19:16:11.944Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -15,16 +15,6 @@
         1.673036
       ],
       "glosa": "Margen bruto (+)/(-)"
-    },
-    {
-      "label": "Waarvan: niet-recurrente bedrijfsopbrengsten",
-      "lado": "revenue",
-      "page": 7,
-      "section": "estado",
-      "values": [
-        0.047856
-      ],
-      "glosa": "De los cuales: ingresos de explotación no recurrentes"
     },
     {
       "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
@@ -44,17 +34,17 @@
       "values": [
         0.363908
       ],
-      "glosa": "Amortizaciones y deterioros de valor de gastos de constitución, inmovilizado intangible y material"
+      "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, inmovilizado intangible y material"
     },
     {
       "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
       "lado": "expense",
       "page": 7,
-      "section": "estado",
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
       "values": [
-        0.01134
+        -0.01134
       ],
-      "glosa": "Deterioros de valor de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
+      "glosa": "Correcciones de valor sobre existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
     },
     {
       "label": "Andere bedrijfskosten",

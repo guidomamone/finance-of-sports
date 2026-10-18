@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2023-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Beerschot/jaarrekening-2023-06-30-individual.md",
- "generado": "2026-10-18T19:01:12.152Z",
+ "generado": "2026-10-18T19:16:11.929Z",
  "estado": "cola",
  "clubId": "beerschot-be",
  "year": 2023,
@@ -68,8 +68,7 @@
   "duda de localizar que no afecta la carga: b58 es una versión resumida del estado oficial VOL-kap 4 en el informe de gestión.",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
   "duda de extraer que no afecta la carga: L916+L921+L922 suman 87.056 vs 87.055 en L357 (redondeo), pero la etiqueta duplicada en L921/L922 es rara.",
-  "duda de extraer que no afecta la carga: L859 duplica la Omzet por mercado; anterior difiere en 25.000 de L326.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L859 duplica la Omzet por mercado; anterior difiere en 25.000 de L326."
  ],
  "reintentar": null,
  "reintentado": false,

@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2023-06-30-individual.pdf",
   "club": "beerschot-be",
   "year": 2023,
-  "generatedAt": "2026-10-18T15:27:59.276Z",
+  "generatedAt": "2026-10-18T19:16:11.929Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         1.547474
       ],
-      "glosa": "Patrocinios"
+      "glosa": "Patrocinio"
     },
     {
       "label": "TV rechten",
@@ -44,7 +44,7 @@
       "values": [
         1.532653
       ],
-      "glosa": "Ingresos comerciales"
+      "glosa": "Comercial"
     },
     {
       "label": "Andere bedrijfsopbrengsten",
@@ -67,26 +67,6 @@
       "glosa": "Ingresos de explotación no recurrentes"
     },
     {
-      "label": "Bedrijfskosten",
-      "lado": "expense",
-      "page": 9,
-      "section": "estado",
-      "values": [
-        13.032675
-      ],
-      "glosa": "Gastos de explotación"
-    },
-    {
-      "label": "Handelsgoederen, grond- en hulpstoffen",
-      "lado": "expense",
-      "page": 9,
-      "section": "estado",
-      "values": [
-        0.515074
-      ],
-      "glosa": "Mercaderías, materias primas y materiales auxiliares"
-    },
-    {
       "label": "Aankopen",
       "lado": "expense",
       "page": 9,
@@ -100,9 +80,9 @@
       "label": "Voorraad: afname (toename) (+)/(-)",
       "lado": "expense",
       "page": 9,
-      "section": "estado",
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
       "values": [
-        0.047404
+        -0.047404
       ],
       "glosa": "Existencias: disminución (aumento) (+)/(-)"
     },
@@ -124,7 +104,7 @@
       "values": [
         5.192447
       ],
-      "glosa": "Remuneraciones y ventajas sociales directas"
+      "glosa": "Remuneraciones y prestaciones sociales directas"
     },
     {
       "label": "Werkgeversbijdragen voor sociale verzekeringen",
@@ -134,7 +114,7 @@
       "values": [
         0.795922
       ],
-      "glosa": "Cotizaciones a la seguridad social a cargo de la empresa"
+      "glosa": "Aportaciones patronales a la seguridad social"
     },
     {
       "label": "Andere personeelskosten",
@@ -154,7 +134,7 @@
       "values": [
         1.042042
       ],
-      "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, inmovilizado intangible y material"
+      "glosa": "Amortizaciones y correcciones de valor sobre gastos de constitución, inmovilizado intangible y material"
     },
     {
       "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
@@ -164,7 +144,7 @@
       "values": [
         0.022836
       ],
-      "glosa": "Pérdidas por deterioro de existencias, pedidos en curso y deudores comerciales: dotaciones (reversiones) (+)/(-)"
+      "glosa": "Correcciones de valor sobre existencias, pedidos en curso y deudores comerciales: dotaciones (reversiones) (+)/(-)"
     },
     {
       "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
@@ -204,7 +184,7 @@
       "values": [
         0.147979
       ],
-      "glosa": "Amortizaciones y correcciones de valor no recurrentes de gastos de constitución, inmovilizado intangible y material"
+      "glosa": "Amortizaciones y correcciones de valor no recurrentes sobre gastos de constitución, inmovilizado intangible y material"
     },
     {
       "label": "Minderwaarden bij de realisatie van immateriële en materiële vaste activa",

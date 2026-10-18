@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2024-06-30-individual.pdf",
  "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2024-06-30-individual.md",
- "generado": "2026-10-18T19:01:12.593Z",
+ "generado": "2026-10-18T19:16:12.120Z",
  "estado": "cola",
  "clubId": "ohleuven-be",
  "year": 2024,
@@ -67,8 +67,7 @@
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b77 es una presentación resumida del mismo estado de resultados dentro del jaarverslag.",
   "duda de localizar que no afecta la carga: El sociaal balans repite gastos de personal ya desglosados en la nota 6.10 (b43).",
-  "duda de extraer que no afecta la carga: La tabla está desalineada (L1817, L1820 muestran códigos en la columna de importes); 17.250+6.977=24.227 confirma.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: La tabla está desalineada (L1817, L1820 muestran códigos en la columna de importes); 17.250+6.977=24.227 confirma."
  ],
  "reintentar": null,
  "reintentado": false,

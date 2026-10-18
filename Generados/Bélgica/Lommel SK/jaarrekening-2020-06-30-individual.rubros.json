@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2020-06-30-individual.pdf",
   "club": "lommelsk-be",
   "year": 2020,
-  "generatedAt": "2026-10-18T15:37:11.497Z",
+  "generatedAt": "2026-10-18T19:16:11.973Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -15,16 +15,6 @@
         0.929507
       ],
       "glosa": "Margen bruto (+)/(-)"
-    },
-    {
-      "label": "Waarvan: niet-recurrente bedrijfsopbrengsten",
-      "lado": "revenue",
-      "page": 7,
-      "section": "estado",
-      "values": [
-        0.35
-      ],
-      "glosa": "De los cuales: ingresos de explotación no recurrentes"
     },
     {
       "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
@@ -54,7 +44,7 @@
       "values": [
         0.002
       ],
-      "glosa": "Correcciones de valor sobre existencias, contratos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
+      "glosa": "Correcciones de valor sobre existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
     },
     {
       "label": "Andere bedrijfskosten",

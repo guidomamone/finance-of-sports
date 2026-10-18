@@ -3,7 +3,7 @@
  "md": "Clubes/Bélgica/Beerschot/jaarrekening-2019-06-30-individual-correction.md",
  "mdSha1": "8906907c7b1bd408d611442a03e8798824fce544",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-18T15:20:21.098Z",
+ "generado": "2026-10-18T19:15:21.989Z",
  "bloques": {
   "b1": {
    "pagina": 4,
@@ -367,33 +367,27 @@
   "b25",
   "b26"
  ],
- "notas_gastos": [
-  "b24",
-  "b25",
-  "b26"
- ],
+ "notas_gastos": [],
  "escala": "unidades",
- "escala_evidencia": "Formulario normalizado belga (VOL) en EUR; el informe del comisario indica '30/06/2019 (in EUR)'",
+ "escala_evidencia": "Formato estándar BNB (VOL) de jaarrekening en EUR; el resumen del jaarverslag indica '30/06/2019 (in EUR)'",
  "moneda": "EUR",
- "columna_ejercicio": "Vorig boekjaar",
- "columna_anterior": null,
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
  "perimetro": "individual",
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se carga el ejercicio cerrado 2018-06-29 desde la columna 'Vorig boekjaar' de la resultatenrekening (b3) y de las notas b24-b26 de esta jaarrekening de 2019?",
+   "pregunta": "¿Se deja afuera de la carga el resumen 'Resultatenrekening 30/06/2019 (in EUR)' del jaarverslag (b37) por duplicar el estado b3?",
    "propuesta": "sí",
-   "tema": "columna",
+   "tema": "cuadro-duplicado",
    "renglon": "",
-   "texto": "El documento es la jaarrekening cerrada al 30/06/2019; el ejercicio pedido figura solo como año anterior y no hay columna previa a él.",
+   "texto": "b37 es un resumen condensado del mismo estado de resultados del modelo VOL 4 (b3).",
    "bloques": [
-    "b3",
-    "b24",
-    "b25",
-    "b26"
+    "b37",
+    "b3"
    ],
-   "afecta_carga": true
+   "afecta_carga": false
   }
  ],
- "observaciones": "Cuentas anuales individuales (modelo VOL) de Beerschot cerradas al 30/06/2019; el ejercicio pedido (cierre 2018) corresponde a la columna 'Vorig boekjaar'. b24 desglosa omzet, otros ingresos y gastos de personal; b25 resultados financieros; b26 ingresos/gastos no recurrentes. b37 es un resumen del informe del comisario solo de 2019; se excluye."
+ "observaciones": "Cuentas anuales individuales (modelo completo BNB VOL) de Beerschot, ejercicio cerrado 30/06/2019. Estado de resultados en b3. b24 (Bedrijfsresultaten) desglosa omzet por categoría y gastos de personal; b25 resultados financieros; b26 ingresos y gastos no recurrentes (contienen tanto ingresos como gastos). b37 es un resumen duplicado en el informe de gestión. Cuadros de personal (b38-b44) son balance social, no se eligen."
 }

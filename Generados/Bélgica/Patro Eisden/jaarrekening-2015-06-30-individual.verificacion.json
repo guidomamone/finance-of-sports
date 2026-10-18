@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2015-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2015-06-30-individual.md",
- "generado": "2026-10-18T19:01:12.623Z",
+ "generado": "2026-10-18T19:16:21.165Z",
  "estado": "cola",
  "clubId": "patroeisden-be",
  "year": 2015,
@@ -16,8 +16,7 @@
   "9ae0446",
   "9f0ccc9",
   "3d8fd95",
-  "aab6c3b",
-  "2433bdf"
+  "aab6c3b"
  ],
  "chequeos": [
   {
@@ -52,13 +51,19 @@
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2014: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
   }
  ],
  "notas": [
   "escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)",
   "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
-  "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; columna, \"Bedrijfsopbrengsten\"): ¿Se deja sin año anterior a 'Bedrijfsopbrengsten' (L195) y 'Handelsgoederen...' (L198), porque el año anterior solo informa Brutomarge 266.761?"
+  "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; columna, \"Bedrijfsopbrengsten\"): ¿Se deja sin año anterior a 'Bedrijfsopbrengsten' (L195) y 'Handelsgoederen...' (L198), porque el año anterior solo informa Brutomarge 266.761?",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -158,7 +163,7 @@
  "impuesto": [],
  "primerAnio": {
   "escalon": 3,
-  "estado": "pendiente",
+  "estado": "confirmado",
   "clave": "efcc8f5cac93ebce501f5fbdd617390e9b9089cc",
   "rango": [
    191,

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2024-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Beerschot/jaarrekening-2024-06-30-individual.md",
- "generado": "2026-10-18T19:01:12.174Z",
+ "generado": "2026-10-18T19:16:11.934Z",
  "estado": "cola",
  "clubId": "beerschot-be",
  "year": 2024,
@@ -70,8 +70,7 @@
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b53 es la comparación de cifras clave del jaarverslag que repite los renglones de la resultatenrekening.",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Omzet\"): ¿Se deja afuera de la carga el desglose geográfico 'België' (L867) por duplicar el total de Omzet?",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Omzet\"): ¿Se deja afuera de la carga el desglose geográfico 'België' (L867) por duplicar el total de Omzet?"
  ],
  "reintentar": [
   {
