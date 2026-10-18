@@ -220,6 +220,8 @@ Mitigaciones:
 ### 5 Extraer
 
 - a) `extraer.mjs` (IA, ~US$ 0,20 de mediana según lo gastado en `Admin/registros/api/claude-api.jsonl`; hasta ~US$ 0,35 en documentos largos) recibe solo los bloques elegidos, con cada línea numerada.
+  Medición de modelo (to-do 288): `--lista <x> --modelo opus|sonnet` escribe `.filas.<modelo>.json`; `medir-verificar.mjs --filas <modelo>`
+  verifica con esas filas (y restaura las de la carga).
 - b) Devuelve las filas tal cual: etiqueta, importe, año anterior, tipo (renglón, subtotal, total, resultado), lado (ingreso, gasto,
   financiero, impuesto), qué renglón del estado desglosa cada fila de nota, y la escala de cada bloque.
 - c) Una nota puede desglosar un renglón de otra nota (desglose anidado). De un cuadro por segmento toma solo la columna del segmento que
