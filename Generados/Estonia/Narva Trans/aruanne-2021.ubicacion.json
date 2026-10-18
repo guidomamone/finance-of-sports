@@ -3,7 +3,7 @@
  "md": "Clubes/Estonia/Narva Trans/aruanne-2021.md",
  "mdSha1": "7abb3ab9f0904af9154ad22c4b3bf1f10766625e",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-18T14:46:53.933Z",
+ "generado": "2026-10-18T18:14:18.607Z",
  "bloques": {
   "b1": {
    "pagina": 1,
@@ -392,15 +392,15 @@
  },
  "sin_estado": false,
  "estado": [
-  "b25"
+  "b4"
  ],
  "notas_ingresos": [
-  "b39",
-  "b40"
+  "b16",
+  "b17"
  ],
  "notas_gastos": [
-  "b41",
-  "b42"
+  "b18",
+  "b19"
  ],
  "escala": "unidades",
  "escala_evidencia": "(eurodes)",
@@ -411,25 +411,19 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se carga el juego individual (pág. 15-28, b25 y notas b39-b42) y se deja afuera el juego bajo 'KONSOLIDEERITUD MAJANDUSAASTA ARUANNE' (pág. 1-14, b4 y notas b16-b19)?",
+   "pregunta": "¿Se carga el juego de la pág. 1-14 (b4, b16-b19, bajo 'KONSOLIDEERITUD MAJANDUSAASTA ARUANNE') como consolidado y se deja afuera el de las págs. 15-28 (b25, b39-b42, 'MAJANDUSAASTA ARUANNE') como individual?",
    "propuesta": "sí",
    "tema": "perimetro",
    "renglon": "",
-   "texto": "El documento trae dos juegos de estados 2021 con cifras distintas; el primero se titula consolidado y el club carga individual.",
+   "texto": "El documento trae dos juegos de estados; el primero tiene título consolidado (b1) y el segundo sin esa palabra (b22), con renglones distintos (b4 tiene 'Liikmetelt saadud tasud', b25 no).",
    "bloques": [
+    "b1",
     "b4",
-    "b16",
-    "b17",
-    "b18",
-    "b19",
-    "b25",
-    "b39",
-    "b40",
-    "b41",
-    "b42"
+    "b22",
+    "b25"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "Documento con dos juegos: pág. 1-14 titulado 'KONSOLIDEERITUD MAJANDUSAASTA ARUANNE' (estado b4, notas b16-b19) y pág. 15-28 'MAJANDUSAASTA ARUANNE' (estado b25, notas b39-b42), que se toma como individual según el perímetro histórico del club. Importes en euros."
+ "observaciones": "Dos juegos de estados: págs. 1-14 consolidado (b4 tulemiaruanne; notas b16 Annetused ja toetused, b17 Tulu ettevõtlusest, b18 Mitmesugused tegevuskulud, b19 Tööjõukulud) y págs. 15-28 aparentemente individual (b25; notas b39, b40, b41, b42). Se elige el consolidado, perímetro usado en años anteriores."
 }

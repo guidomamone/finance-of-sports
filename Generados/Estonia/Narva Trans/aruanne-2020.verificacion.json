@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/Narva Trans/aruanne-2020.pdf",
  "md": "Clubes/Estonia/Narva Trans/aruanne-2020.md",
- "generado": "2026-10-18T18:06:09.751Z",
- "estado": "ok",
+ "generado": "2026-10-18T18:15:07.970Z",
+ "estado": "cola",
  "clubId": "narvatrans-ee",
  "year": 2020,
  "escala": {
@@ -43,7 +43,10 @@
    "fecha": "2026-10-18"
   }
  ],
- "cola": [],
+ "cola": [
+  "07df8e3",
+  "35fee00"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -67,8 +70,8 @@
   },
   {
    "nombre": "documento del año 2021",
-   "ok": true,
-   "detalle": "ingresos de 2020: 0.478467 en este documento y 0.478467 en aruanne-2021.pdf (columna del año anterior)"
+   "ok": false,
+   "detalle": "ingresos de 2020: 0.478467 en este documento y 0.576168 en aruanne-2021.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2019",

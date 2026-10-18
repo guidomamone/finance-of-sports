@@ -1,26 +1,22 @@
 {
  "pdf": "Clubes/Estonia/Narva Trans/aruanne-2021.pdf",
- "generado": "2026-10-18T15:16:19.763Z",
+ "generado": "2026-10-18T18:16:04.524Z",
  "frena": [
   {
    "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 4 caso(s) en la cola humana (node tools/cola.mjs)"
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 3 caso(s) en la cola humana (node tools/cola.mjs)"
   },
   {
    "etapa": "categorizacion",
    "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
   },
   {
-   "etapa": "alta:reportType",
-   "motivo": "¿El documento trae un estado de resultados (o de recursos y gastos) anual cargable, o hay que buscar los estados en otro documento del club?"
-  },
-  {
    "etapa": "filas",
-   "motivo": "la verificación tiene 4 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "motivo": "la verificación tiene 3 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
-  "perímetro: individual (ajuste manual del club, 2026-10-18: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 1 ejercicio(s) con un solo perímetro (individual); 7 documento(s) mirados)"
+  "perímetro: consolidado (ajuste manual del club, 2026-10-18: 2021 y 2024 traen los dos estados; la controlada es la escuela de fútbol del club (Jalgpallikool Narva Trans): consolidado (CONVENCIONES-DATOS, regla del perímetro, punto 2). Reemplaza el individual de perimetro-senales (subagente Sonnet, revisado por Claude 2026-10-18))"
  ],
  "ejercicio": null,
  "md": "Clubes/Estonia/Narva Trans/aruanne-2021.md",

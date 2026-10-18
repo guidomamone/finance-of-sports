@@ -1,33 +1,18 @@
 {
  "pdf": "Clubes/Estonia/Narva Trans/aruanne-2019.pdf",
- "generado": "2026-10-18T15:16:19.538Z",
- "frena": [
-  {
-   "etapa": "alta:reportType",
-   "motivo": "¿El documento trae un estado de resultados (o de recursos y gastos) anual cargable, o hay que buscar los estados en otro documento del club?"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "6 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"EJLiidu toetused noortoole\" -> youth_football 0.7; \"muud\" -> other_income 0; \"Kaubandustegevus\" -> sponsorship_commercial 0.6; \"Jalgpallikooli seotud kulud\" -> youth_other_sports_expense 0.75; \"Varustuskulud\" -> other_expenses 0.75"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-18T18:16:04.360Z",
+ "frena": [],
  "avisos": [
-  "perímetro: individual (ajuste manual del club, 2026-10-18: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 1 ejercicio(s) con un solo perímetro (individual); 7 documento(s) mirados)",
+  "perímetro: consolidado (ajuste manual del club, 2026-10-18: 2021 y 2024 traen los dos estados; la controlada es la escuela de fútbol del club (Jalgpallikool Narva Trans): consolidado (CONVENCIONES-DATOS, regla del perímetro, punto 2). Reemplaza el individual de perimetro-senales (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "\"Televisión\" en 0: real, por ajuste manual (2026-10-18, sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18))",
+  "\"Estadio\" en 0: real, por ajuste manual (2026-10-18, fila en 0 (L460); mismo caso que el 2025 del club (Claude 2026-10-18))",
   "gestión: ningún presidente confirmado cubre 2019 (cierre 2019-12-31); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
   "clubId": "narvatrans-ee",
   "year": 2019,
   "cierre": "2019-12-31",
-  "perimetro": "individual",
+  "perimetro": "consolidado",
   "revenueLines": [
    {
     "rawLabel": "Omavalitsuse toetus",
@@ -45,9 +30,9 @@
     "amountNative": 0.001792,
     "disclosureLevel": "aggregated",
     "_pag": 12,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "UEFA solidaarsustoetus",
@@ -75,9 +60,9 @@
     "amountNative": 0.033626,
     "disclosureLevel": "aggregated",
     "_pag": 12,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Reklaam",
@@ -105,9 +90,9 @@
     "amountNative": 0.008503,
     "disclosureLevel": "aggregated",
     "_pag": 13,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
@@ -227,9 +212,9 @@
     "amountNative": -0.0006,
     "disclosureLevel": "aggregated",
     "_pag": 13,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Varustuskulud",
@@ -237,9 +222,9 @@
     "amountNative": -0.032157,
     "disclosureLevel": "aggregated",
     "_pag": 13,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Majanduskulud",
@@ -307,9 +292,9 @@
     "amountNative": -0.001239,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Muud kulud",
@@ -344,7 +329,7 @@
    "title": "Jalgpalliklubi Narva Trans — aruanne-2019 (ejercicio 2019)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Narva Trans/aruanne-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Narva Trans/aruanne-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
   }
  },
  "md": "Clubes/Estonia/Narva Trans/aruanne-2019.md",
@@ -359,7 +344,38 @@
  },
  "clubId": "narvatrans-ee",
  "year": 2019,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Narva Trans/aruanne-2019.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L116) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Narva Trans/aruanne-2019.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Narva Trans/aruanne-2019.pdf",
+   "campo": "cero-real",
+   "valor": "Estadio",
+   "linea": null,
+   "motivo": "fila en 0 (L460); mismo caso que el 2025 del club (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
  "seleccion": {
   "filas": 30,
   "notasUsadas": [],
@@ -389,11 +405,11 @@
    "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
    "signoFijo": 0.001792,
    "cat": "youth_football",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Subsidio de la federación (EJL) rotulado explícitamente para juveniles ('noortoole' = trabajo con jóvenes); coherente con 'UEFA solidaarsustoetus noorte- ja kogukonnatööle' del club en youth_football. El 'EJLiidu toetused' genérico del 2025 va a other_income; este rótulo tiene destino juvenil. [aruanne-2019.md L441 'EJLiidu toetused noortoole 1 792']",
    "destino": "revenue",
    "amountNative": 0.001792
   },
@@ -437,12 +453,12 @@
    "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
    "signoFijo": 0.033626,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'muud' = otros dentro de Annetused ja toetused (ingreso). Cuidado: la tabla de generados lo tenía con 'ya: other_expenses' (precedente del lado gasto); al ser ingreso es other_income. [aruanne-2019.md L444 'muud 33 626' dentro de Lisa 8 Annetused ja toetused]",
    "destino": "revenue",
    "amountNative": 0.033626
   },
@@ -484,11 +500,11 @@
    "origen": "verificacion (nota que desglosa \"Tulu ettevõtlusest\")",
    "signoFijo": 0.008503,
    "cat": "sponsorship_commercial",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Kaubandustegevus = actividad comercial (venta de mercadería del club) dentro de Tulu ettevõtlusest; merchandising va a sponsorship_commercial (igual que 'Klubi sümboolikaga toodete müügitulu' del 2025). [aruanne-2019.md L463 'Kaubandustegevus 8 503']",
    "destino": "revenue",
    "amountNative": 0.008503
   },
@@ -665,11 +681,11 @@
    "origen": "verificacion (nota que desglosa \"Mitmesugused tegevuskulud\")",
    "signoFijo": 0.0006,
    "cat": "youth_other_sports_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Gastos de la escuela de fútbol (juveniles): la categoría de gasto de juveniles es youth_other_sports_expense. [aruanne-2019.md L486 'Jalgpallikooli seotud kulud 600']",
    "destino": "expense",
    "amountNative": -0.0006
   },
@@ -681,11 +697,11 @@
    "origen": "verificacion (nota que desglosa \"Mitmesugused tegevuskulud\")",
    "signoFijo": 0.032157,
    "cat": "other_expenses",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Gasto de equipamiento: igual que 'Mänguvormid ja varustus' del 2025 de Narva y 'Varustus, mänguvormid' de Harju (other_expenses). [aruanne-2019.md L488 'Varustuskulud 32 157']",
    "destino": "expense",
    "amountNative": -0.032157
   },
@@ -788,11 +804,11 @@
    "origen": "verificacion (nota que desglosa \"Tööjõukulud\")",
    "signoFijo": 0.001239,
    "cat": "wages_squad",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Cargas sociales van con el sueldo de su sector; en 2019 Tööjõukulud no separa sectores y 'Palgakulu' y 'Sotsiaalmaksud' ya están en wages_squad: el seguro de desempleo del empleador sigue a ellos. [aruanne-2019.md L507-510 (Lisa 11)]",
    "destino": "expense",
    "amountNative": -0.001239
   },
@@ -821,16 +837,6 @@
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
    "destino": "netInterest"
-  }
- ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
   }
  ],
  "signos": {
@@ -891,11 +897,11 @@
   },
   "reportType": {
    "valor": "official_balance_sheet",
-   "fuente": "el .md no tiene ninguna palabra de estado contable reconocible",
-   "estado": "pregunta"
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L116) (Claude 2026-10-18)",
+   "estado": "ok"
   },
   "perimetro": {
-   "valor": "individual",
+   "valor": "consolidado",
    "fuente": "ajuste manual (2026-10-18)",
    "estado": "ok"
   },
@@ -921,8 +927,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 4,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 8,
   "lineasGasto": 21,
   "metaFilas": 1,

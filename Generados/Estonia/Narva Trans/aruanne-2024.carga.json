@@ -1,25 +1,17 @@
 {
  "pdf": "Clubes/Estonia/Narva Trans/aruanne-2024.pdf",
- "generado": "2026-10-18T15:16:19.971Z",
- "frena": [
-  {
-   "etapa": "alta:reportType",
-   "motivo": "¿El documento trae un estado de resultados (o de recursos y gastos) anual cargable, o hay que buscar los estados en otro documento del club?"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-18T18:16:04.791Z",
+ "frena": [],
  "avisos": [
-  "perímetro: individual (ajuste manual del club, 2026-10-18: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 1 ejercicio(s) con un solo perímetro (individual); 7 documento(s) mirados)",
+  "perímetro: consolidado (ajuste manual del club, 2026-10-18: 2021 y 2024 traen los dos estados; la controlada es la escuela de fútbol del club (Jalgpallikool Narva Trans): consolidado (CONVENCIONES-DATOS, regla del perímetro, punto 2). Reemplaza el individual de perimetro-senales (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "\"Televisión\" en 0: real, por ajuste manual (2026-10-18, fila 'Tulu ülekandeõiguste müügist' en 0 en 2024 (L458; los 3.000 son de la columna 2023) (Claude 2026-10-18))",
   "gestión: ningún presidente confirmado cubre 2024 (cierre 2024-12-31); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
   "clubId": "narvatrans-ee",
   "year": 2024,
   "cierre": "2024-12-31",
-  "perimetro": "individual",
+  "perimetro": "consolidado",
   "revenueLines": [
    {
     "rawLabel": "Liikmetelt saadud tasud",
@@ -380,7 +372,7 @@
    "title": "Jalgpalliklubi Narva Trans — aruanne-2024 (ejercicio 2024)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Narva Trans/aruanne-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Narva Trans/aruanne-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
   }
  },
  "md": "Clubes/Estonia/Narva Trans/aruanne-2024.md",
@@ -399,7 +391,28 @@
  },
  "clubId": "narvatrans-ee",
  "year": 2024,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Narva Trans/aruanne-2024.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L79) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Narva Trans/aruanne-2024.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "fila 'Tulu ülekandeõiguste müügist' en 0 en 2024 (L458; los 3.000 son de la columna 2023) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
  "seleccion": {
   "filas": 35,
   "notasUsadas": [],
@@ -927,12 +940,6 @@
    "destino": "netInterest"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (estado)": "gastos sin signo (se invierten)",
@@ -991,11 +998,11 @@
   },
   "reportType": {
    "valor": "official_balance_sheet",
-   "fuente": "el .md no tiene ninguna palabra de estado contable reconocible",
-   "estado": "pregunta"
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L79) (Claude 2026-10-18)",
+   "estado": "ok"
   },
   "perimetro": {
-   "valor": "individual",
+   "valor": "consolidado",
    "fuente": "ajuste manual (2026-10-18)",
    "estado": "ok"
   },
@@ -1021,8 +1028,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 13,
   "lineasGasto": 19,
   "metaFilas": 3,

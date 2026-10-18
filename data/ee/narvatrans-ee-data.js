@@ -16,6 +16,16 @@ const narvatranseeRevenueLinesByYear = {
     { rawLabel:'Klubi peasponsorilt saadud tulu', normalizedCategory:'sponsorship_commercial', amountNative:0.012, disclosureLevel:'aggregated' },
     { rawLabel:'Muud tulud', normalizedCategory:'other_income', amountNative:0.002196, disclosureLevel:'aggregated' },
   ],
+  2019: [
+    { rawLabel:'Omavalitsuse toetus', normalizedCategory:'other_income', amountNative:0.08998, disclosureLevel:'aggregated' },
+    { rawLabel:'EJLiidu toetused noortoole', normalizedCategory:'youth_football', amountNative:0.001792, disclosureLevel:'aggregated' },
+    { rawLabel:'UEFA solidaarsustoetus', normalizedCategory:'competition_bonus', amountNative:0.011327, disclosureLevel:'aggregated' },
+    { rawLabel:'UEFA solidaarsustoetus', normalizedCategory:'competition_bonus', amountNative:0.25747, disclosureLevel:'aggregated' },
+    { rawLabel:'muud', normalizedCategory:'other_income', amountNative:0.033626, disclosureLevel:'aggregated' },
+    { rawLabel:'Reklaam', normalizedCategory:'sponsorship_commercial', amountNative:0.05559, disclosureLevel:'aggregated' },
+    { rawLabel:'Sponsorlus-ja reklaamitulu', normalizedCategory:'sponsorship_commercial', amountNative:0.0075, disclosureLevel:'aggregated' },
+    { rawLabel:'Kaubandustegevus', normalizedCategory:'sponsorship_commercial', amountNative:0.008503, disclosureLevel:'aggregated' },
+  ],
 };
 const narvatranseeExpenseLinesByYear = {
   2025: [
@@ -41,6 +51,29 @@ const narvatranseeExpenseLinesByYear = {
     { rawLabel:'Põhivarade kulum ja väärtuse langus', normalizedCategory:'depreciation', amountNative:-0.000774, disclosureLevel:'aggregated' },
     { rawLabel:'Muud kulud', normalizedCategory:'other_expenses', amountNative:-0.008123, disclosureLevel:'aggregated' },
   ],
+  2019: [
+    { rawLabel:'Üür ja rent', normalizedCategory:'admin_general_expense', amountNative:-0.011184, disclosureLevel:'aggregated' },
+    { rawLabel:'Elektrienergia', normalizedCategory:'admin_general_expense', amountNative:-0.004659, disclosureLevel:'aggregated' },
+    { rawLabel:'Soojusenergia', normalizedCategory:'admin_general_expense', amountNative:-0.00035, disclosureLevel:'aggregated' },
+    { rawLabel:'Kütus', normalizedCategory:'admin_general_expense', amountNative:-0.001697, disclosureLevel:'aggregated' },
+    { rawLabel:'Veevarustusteenused', normalizedCategory:'admin_general_expense', amountNative:-0.000956, disclosureLevel:'aggregated' },
+    { rawLabel:'Mitmesugused bürookulud', normalizedCategory:'admin_general_expense', amountNative:-0.019872, disclosureLevel:'aggregated' },
+    { rawLabel:'Lähetuskulud', normalizedCategory:'match_organisation_expense', amountNative:-0.00065, disclosureLevel:'aggregated' },
+    { rawLabel:'Koolituskulud', normalizedCategory:'admin_general_expense', amountNative:-0.001463, disclosureLevel:'aggregated' },
+    { rawLabel:'Riiklikud ja kohalikud maksud', normalizedCategory:'admin_general_expense', amountNative:-0.000473, disclosureLevel:'aggregated' },
+    { rawLabel:'Kulu ebatõenäoliselt laekuvatest nõuetest', normalizedCategory:'other_expenses', amountNative:-0.00138, disclosureLevel:'aggregated' },
+    { rawLabel:'Mangude ja treeningute kulud', normalizedCategory:'match_organisation_expense', amountNative:-0.02132, disclosureLevel:'aggregated' },
+    { rawLabel:'Jalgpallikooli seotud kulud', normalizedCategory:'youth_other_sports_expense', amountNative:-0.0006, disclosureLevel:'aggregated' },
+    { rawLabel:'Varustuskulud', normalizedCategory:'other_expenses', amountNative:-0.032157, disclosureLevel:'aggregated' },
+    { rawLabel:'Majanduskulud', normalizedCategory:'admin_general_expense', amountNative:-0.015495, disclosureLevel:'aggregated' },
+    { rawLabel:'Med kulud', normalizedCategory:'admin_general_expense', amountNative:-0.003136, disclosureLevel:'aggregated' },
+    { rawLabel:'Turniirikulud', normalizedCategory:'match_organisation_expense', amountNative:-0.032601, disclosureLevel:'aggregated' },
+    { rawLabel:'Muud', normalizedCategory:'other_expenses', amountNative:-0.000178, disclosureLevel:'aggregated' },
+    { rawLabel:'Palgakulu', normalizedCategory:'wages_squad', amountNative:-0.156591, disclosureLevel:'aggregated' },
+    { rawLabel:'Sotsiaalmaksud', normalizedCategory:'wages_squad', amountNative:-0.051116, disclosureLevel:'aggregated' },
+    { rawLabel:'töötuskindlustusmaks eetevõtest', normalizedCategory:'wages_squad', amountNative:-0.001239, disclosureLevel:'aggregated' },
+    { rawLabel:'Muud kulud', normalizedCategory:'other_expenses', amountNative:-0.016325, disclosureLevel:'aggregated' },
+  ],
 };
 const narvatranseeFiscalYearMeta = {
   2025: {
@@ -56,6 +89,16 @@ const narvatranseeFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:1.003789, officialTotalExpenses:0.835826, officialPAT:0.169846,
+  },
+  2019: {
+    currency:'EUR', fxRef:'EUR@2019-12-31',
+    sourceId:'narvatrans-ee-aruanne-2019',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0.000072, tax:0,
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0.465788, officialTotalExpenses:0.373442, officialPAT:0.092418,
   },
 };
 const narvatranseePresupuestoOverlayByYear = {};
@@ -76,6 +119,11 @@ Object.assign(sources, {
   'narvatrans-ee-aruanne-2025': {
     id:'narvatrans-ee-aruanne-2025', clubId:'narvatrans-ee',
     title:'Jalgpalliklubi Narva Trans — aruanne-2025 (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'narvatrans-ee-aruanne-2019': {
+    id:'narvatrans-ee-aruanne-2019', clubId:'narvatrans-ee',
+    title:'Jalgpalliklubi Narva Trans — aruanne-2019 (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
