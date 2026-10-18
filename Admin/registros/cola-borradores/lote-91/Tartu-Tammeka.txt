@@ -1,0 +1,50 @@
+## Clubes/Estonia/Tartu Tammeka/aruanne-2025.pdf
+## Clubes/Estonia/Tartu Tammeka/aruanne-2019.pdf
+  [18b54e3] etapa verificar · duda-tema
+      Pregunta: ¿Se deja afuera de la carga el cuadro 'Rahaline annetus' de pág. 15 (b25) por ser parte del desglose de Annetused ja toetused ya abierto en b23?  (por qué: b25 parece la continuación de Lisa 12 (b23) en la página siguiente; hay que confirmar si suma con b23 o repite el total.)
+      Abrí el PDF en la página 14 del visor (la hoja tiene impreso "14" al pie).
+      En la transcripción (Clubes/Estonia/Tartu Tammeka/aruanne-2019.md), líneas 564-574.
+      Propuesta del sistema: no (responder aceptar si estás de acuerdo; corregir --valor "sí" si no)
+
+## Clubes/Estonia/Tartu Tammeka/aruanne-2021.pdf
+  [3881ac4] etapa verificar · duda-de-extraer
+      Pregunta: ¿Se cargan Elektrienergia, Soojusenergia y Kütus (L586-L588) como apertura de Energia (L585)?  (por qué: L586-L588 suman 17 098 = Energia, por lo que son un sub-desglose y no partidas adicionales.)
+      Abrí el PDF en la página 17 del visor (la hoja tiene impreso "17" al pie).
+      En la transcripción (Clubes/Estonia/Tartu Tammeka/aruanne-2021.md), líneas 586-588.
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
+
+## Clubes/Estonia/Tartu Tammeka/aruanne-2022.pdf
+  [0bdbd74] etapa verificar · duda-de-extraer
+      Pregunta: ¿Se cargan Elektrienergia, Soojusenergia y Kütus (L569-L571) como desglose de 'Energia' (L568) y no como partidas directas de Mitmesugused tegevuskulud?  (por qué: 8 620 + 2 598 + 2 463 = 13 681 coincide con Energia en L568, lo que indica que son subpartidas y contarlas aparte duplicaría el gasto.)
+      Abrí el PDF en la página 17 del visor (la hoja tiene impreso "17" al pie).
+      En la transcripción (Clubes/Estonia/Tartu Tammeka/aruanne-2022.md), líneas 568-568.
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
+
+## Clubes/Estonia/Tartu Tammeka/aruanne-2023.pdf
+  [818ac5b] etapa verificar · duda-de-extraer
+      Pregunta: ¿Se trata 'Energia' (L582) como subtotal de Elektrienergia, Soojusenergia y Kütus (L583-L585), dejando Veevarustusteenused (L586) como renglón aparte?  (por qué: L583+L584+L585 = 10 372 = L582; sin esto se contaría doble la energía.)
+      Abrí el PDF en la página 17 del visor (la hoja tiene impreso "17" al pie).
+      En la transcripción (Clubes/Estonia/Tartu Tammeka/aruanne-2023.md), líneas 582-585.
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
+
+## Clubes/Estonia/Tartu Tammeka/aruanne-2024.pdf
+  [1cc5429] etapa verificar · duda-tema
+      Pregunta: ¿Se deja afuera de la carga el 'Konsolideerimata tulemiaruanne' (Lisa 20, b39) y se carga solo el tulemiaruanne consolidado de la pág. 5 (b5)?  (por qué: El estado principal b5 es consolidado (los ratios b3 dicen 'Konsolideeritud') y b39 es el individual de la MTÜ; el club carga consolidado.)
+      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
+      En la transcripción (Clubes/Estonia/Tartu Tammeka/aruanne-2024.md), líneas 148-166.
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
+
+## Clubes/Estonia/Tartu Tammeka/aruanne-2020.pdf
+  [8317cd6] etapa cargar · categoria
+      Pregunta: ¿"Annetus Vähiravifondile Kingitud Elu" (0.001682 en millones de la moneda del documento) va como "Otros gastos"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 15 del visor (la hoja tiene impreso "15" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [efe6fa7] etapa cargar · categoria
+      Pregunta: ¿"Sissemakse fondi" (0.004386 en millones de la moneda del documento) va como "Otros gastos"?  (por qué: la categorización le dio 0.65 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 15 del visor (la hoja tiene impreso "15" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [99968d5] etapa cargar · categoria
+      Pregunta: ¿"Juriidilised kulud" (0.195913 en millones de la moneda del documento) va como "Administración y gastos generales"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 16 del visor (la hoja tiene impreso "16" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+

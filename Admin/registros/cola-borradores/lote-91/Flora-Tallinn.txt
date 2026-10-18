@@ -1,0 +1,69 @@
+## Clubes/Estonia/Flora Tallinn/aruanne-2025.pdf
+## Clubes/Estonia/Flora Tallinn/aruanne-2020.pdf
+  [97fa8ba] etapa verificar · duda-tema
+      Pregunta: ¿Las notas Lisa 14-19 (b31-b37) corresponden a las cifras consolidadas del estado b5?  (por qué: Las notas no indican perímetro; se asume consolidado al ir con los estados principales.)
+      Abrí el PDF en la página 19 del visor (la hoja tiene impreso "19" al pie).
+      En la transcripción (Clubes/Estonia/Flora Tallinn/aruanne-2020.md), líneas 672-679.
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
+
+## Clubes/Estonia/Flora Tallinn/aruanne-2021.pdf
+  [b7f0193] etapa verificar · anio-vecino
+      Qué mirar: Los ingresos de 2021 no coinciden entre este documento y aruanne-2022.pdf (5.913409 contra 6.213409). Puede ser una reexpresión del año en el documento siguiente (pasa), otra tabla u otro perímetro.
+      Abrí el PDF en la página 6 del visor (la hoja tiene impreso "6" al pie).
+  [1ad9a8c] etapa verificar · no-cierra
+      Qué mirar: documento del año 2022: ingresos de 2021: 5.913409 en este documento y 6.213409 en aruanne-2022.pdf (columna del año anterior). Revisar si falta o sobra alguna fila, o si hay un renglón del lado equivocado.
+      Abrí el PDF en la página 6 del visor (la hoja tiene impreso "6" al pie).
+      En la transcripción (Clubes/Estonia/Flora Tallinn/aruanne-2021.md), líneas 170-185.
+  [53fe905] etapa verificar · duda-de-extraer
+      Pregunta: ¿Se cargan 'Elektrienergia' (L784) y 'Kütus' (L785) como desglose de 'Energia' (L783) y no como partidas adicionales de gastos operativos?  (por qué: 9 099 + 8 785 = 17 884 (L783), por lo que son subpartidas de Energia y sumarlas duplicaría.)
+      Abrí el PDF en la página 21 del visor (la hoja tiene impreso "21" al pie).
+      En la transcripción (Clubes/Estonia/Flora Tallinn/aruanne-2021.md), líneas 783-783.
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
+
+## Clubes/Estonia/Flora Tallinn/aruanne-2022.pdf
+  [afe425b] etapa verificar · anio-vecino
+      Qué mirar: Los ingresos de 2021 no coinciden entre este documento y aruanne-2021.pdf (6.213409 contra 5.913409). Puede ser una reexpresión del año en el documento siguiente (pasa), otra tabla u otro perímetro.
+      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
+  [0d19d11] etapa verificar · no-cierra
+      Qué mirar: documento del año 2021: ingresos de 2021: 5.913409 en aruanne-2021.pdf y 6.213409 en este documento (columna del año anterior). Revisar si falta o sobra alguna fila, o si hay un renglón del lado equivocado.
+      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
+      En la transcripción (Clubes/Estonia/Flora Tallinn/aruanne-2022.md), líneas 199-215.
+  [4c9c188] etapa verificar · duda-tema
+      Pregunta: ¿Se deja afuera de la carga el estado de resultados no consolidado 'Lisa 20 Tulemiaruanne konsolideerimata 2022' (b45) y se carga solo el consolidado b5?  (por qué: El documento es un informe consolidado (b1) y el club se carga en consolidado; b45 es el estado individual de la entidad matriz.)
+      Abrí el PDF en la página 24 del visor (la hoja tiene impreso "24" al pie).
+      En la transcripción (Clubes/Estonia/Flora Tallinn/aruanne-2022.md), líneas 1107-1126.
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
+
+## Clubes/Estonia/Flora Tallinn/aruanne-2023.pdf
+  [aefba0e] etapa verificar · duda-tema
+      Pregunta: ¿Se deja afuera el cuadro 'Rahalised ja mitterahalised annetused' (b28) si sólo repite el total de b27 en otra apertura?  (por qué: b28 abre el mismo total que b27 por naturaleza (rahaline/mitterahaline); cargar ambos podría duplicar.)
+      Abrí el PDF en la página 19 del visor (la hoja tiene impreso "19" al pie).
+      En la transcripción (Clubes/Estonia/Flora Tallinn/aruanne-2023.md), líneas 715-723.
+      Propuesta del sistema: no (responder aceptar si estás de acuerdo; corregir --valor "sí" si no)
+  [d8df865] etapa verificar · duda-de-extraer
+      Pregunta: ¿Se cargan 'Elektrienergia' (L775) y 'Kütus' (L776) como desglose de 'Energia' (L774) y no como partidas adicionales de Lisa 15?  (por qué: 7 254 + 17 436 = 24 690 (L774-L776), por lo que parecen subpartidas; sumarlas aparte duplicaría importes.)
+      Abrí el PDF en la página 21 del visor (la hoja tiene impreso "21" al pie).
+      En la transcripción (Clubes/Estonia/Flora Tallinn/aruanne-2023.md), líneas 774-776.
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
+
+## Clubes/Estonia/Flora Tallinn/aruanne-2024.pdf
+  [7ce32a7] etapa verificar · duda-tema
+      Pregunta: ¿Las notas 12-17 (b24, b26-b30) desglosan las cifras del tulemiaruanne consolidado (b5) y no las del individual (b39)?  (por qué: Las notas no indican perímetro; hay que verificar que sus totales coinciden con b5.)
+      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
+      En la transcripción (Clubes/Estonia/Flora Tallinn/aruanne-2024.md), líneas 159-177.
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
+
+## Clubes/Estonia/Flora Tallinn/aruanne-2019.pdf
+  [4525c2c] etapa cargar · categoria
+      Pregunta: ¿"Liikmemaksud tütarklubidele" (0.009405 en millones de la moneda del documento) va como "Otros gastos"?  (por qué: la categorización le dio 0.45 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 21 del visor (la hoja tiene impreso "21" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [7572260] etapa cargar · categoria
+      Pregunta: ¿"Stipendiumid" (0.242295 en millones de la moneda del documento) va como "Salarios del plantel"?  (por qué: la categorización le dio 0.55 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 21 del visor (la hoja tiene impreso "21" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [f5c30f1] etapa cargar · categoria
+      Pregunta: ¿"Jalgpalliga mitteseotud tegevuste kulud" (0.010707 en millones de la moneda del documento) va como "Otros gastos"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 22 del visor (la hoja tiene impreso "22" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+

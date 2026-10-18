@@ -1,0 +1,98 @@
+## Clubes/Estonia/Narva Trans/aruanne-2025.pdf
+## Clubes/Estonia/Narva Trans/aruanne-2021.pdf
+  [ccb7e07] etapa verificar · anio-vecino
+      Qué mirar: Los ingresos de 2021 no coinciden entre este documento y aruanne-2022.pdf (0.307422 contra 0.477879). Puede ser una reexpresión del año en el documento siguiente (pasa), otra tabla u otro perímetro.
+      Abrí el PDF en la página 19 del visor (la hoja tiene impreso "5" al pie).
+  [1a33256] etapa verificar · no-cierra
+      Qué mirar: documento del año 2022: ingresos de 2021: 0.307422 en este documento y 0.477879 en aruanne-2022.pdf (columna del año anterior). Revisar si falta o sobra alguna fila, o si hay un renglón del lado equivocado.
+      Abrí el PDF en la página 19 del visor (la hoja tiene impreso "5" al pie).
+      En la transcripción (Clubes/Estonia/Narva Trans/aruanne-2021.md), líneas 621-631.
+  [d2267de] etapa verificar · duda-tema
+      Pregunta: ¿Se carga el juego individual (pág. 15-28, b25 y notas b39-b42) y se deja afuera el juego bajo 'KONSOLIDEERITUD MAJANDUSAASTA ARUANNE' (pág. 1-14, b4 y notas b16-b19)?  (por qué: El documento trae dos juegos de estados 2021 con cifras distintas; el primero se titula consolidado y el club carga individual.)
+      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
+      En la transcripción (Clubes/Estonia/Narva Trans/aruanne-2021.md), líneas 128-143.
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
+  [4a930f5] etapa verificar · duda-tema
+      Pregunta: ¿Se confirma que los renglones de Lisa 10 (L956-L971, con Energia sin sus componentes L958-L960) suman 116 827 frente al total impreso 116 831 (L972) y se cargan tal cual?  (por qué: La suma 2021 de Lisa 10 difiere en 4 del total L972 y en 2020 la suma (129 684) difiere en unos 5 957 del total 123 727; puede haber un importe mal transcripto.)
+      Abrí el PDF en la página 27 del visor (la hoja tiene impreso "13" al pie).
+      En la transcripción (Clubes/Estonia/Narva Trans/aruanne-2021.md), líneas 972-972.
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
+
+## Clubes/Estonia/Narva Trans/aruanne-2022.pdf
+  [2dc5c36] etapa verificar · anio-vecino
+      Qué mirar: Los ingresos de 2021 no coinciden entre este documento y aruanne-2021.pdf (0.477879 contra 0.307422). Puede ser una reexpresión del año en el documento siguiente (pasa), otra tabla u otro perímetro.
+      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
+  [60c3271] etapa verificar · no-cierra
+      Qué mirar: documento del año 2021: ingresos de 2021: 0.307422 en aruanne-2021.pdf y 0.477879 en este documento (columna del año anterior). Revisar si falta o sobra alguna fila, o si hay un renglón del lado equivocado.
+      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
+      En la transcripción (Clubes/Estonia/Narva Trans/aruanne-2022.md), líneas 141-155.
+  [9e98dd5] etapa verificar · duda-de-extraer
+      Pregunta: ¿Se dejan afuera de la carga las filas 'sh eraldis riigieelarvest' y 'sh eraldis kohaliku omavalitsuse eelarvest' (L458-L459) por ser 'de los cuales' ya incluidos en 'Riigi ja KOV toetused'?  (por qué: L458-L459 son aperturas 'sh' (de los cuales) que no suman al total y duplicarían importes.)
+      Abrí el PDF en la página 12 del visor (la hoja tiene impreso "12" al pie).
+      En la transcripción (Clubes/Estonia/Narva Trans/aruanne-2022.md), líneas 458-459.
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
+
+## Clubes/Estonia/Narva Trans/aruanne-2023.pdf
+  [e6dbca1] etapa verificar · duda-de-extraer
+      Pregunta: ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L533-L534, Rahaline annetus 2 369)?  (por qué: El cuadro b16 rotula 'Kokku annetused ja toetused' con 2 369, que no coincide con el total de 547 354 (L525) ni con ninguna fila de b15, y no tiene escala; parece una revelación aparte de donaciones dentro de b15.)
+      Abrí el PDF en la página 13 del visor (la hoja tiene impreso "13" al pie).
+      En la transcripción (Clubes/Estonia/Narva Trans/aruanne-2023.md), líneas 525-525.
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
+
+## Clubes/Estonia/Narva Trans/aruanne-2019.pdf
+  [a2dea65] etapa cargar · perfil
+      Pregunta: ¿Jalgpalliklubi Narva Trans tiene socios que le pagan una cuota (cuotas sociales, mensalidades, sócio-torcedor, membresía)?  (por qué: en 2019 "Cuotas sociales" da 0; si el club tiene, falta un desglose y se reintenta; si no tiene, el 0 es real. Queda guardado en Admin/registros/perfil-clubes.jsonl para todos sus años.)
+      Propuesta del sistema: responder corregir --valor sí | corregir --valor no (o mandar un agente a buscar)
+  [215620a] etapa cargar · perfil
+      Pregunta: ¿Jalgpalliklubi Narva Trans tiene otros deportes (básquet, vóley, futsal...) con ingresos o gastos en sus estados financieros?  (por qué: en 2019 "Otras secciones deportivas" da 0; si el club tiene, falta un desglose y se reintenta; si no tiene, el 0 es real. Queda guardado en Admin/registros/perfil-clubes.jsonl para todos sus años.)
+      Propuesta del sistema: responder corregir --valor sí | corregir --valor no (o mandar un agente a buscar)
+  [b444a18] etapa cargar · categoria
+      Pregunta: ¿"EJLiidu toetused noortoole" (0.001792 en millones de la moneda del documento) va como "Fútbol juvenil"?  (por qué: la categorización le dio 0.7 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 12 del visor (la hoja tiene impreso "12" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [90d6325] etapa cargar · categoria
+      Pregunta: ¿"muud" (0.033626 en millones de la moneda del documento) va como "Otros ingresos"?  (por qué: la categorización le dio 0 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 12 del visor (la hoja tiene impreso "12" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [823df33] etapa cargar · categoria
+      Pregunta: ¿"Kaubandustegevus" (0.008503 en millones de la moneda del documento) va como "Comercial / sponsors"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 13 del visor (la hoja tiene impreso "13" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [2295d88] etapa cargar · categoria
+      Pregunta: ¿"Jalgpallikooli seotud kulud" (0.0006 en millones de la moneda del documento) va como "Otras secciones deportivas (juvenil, otros deportes, básquet)"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 13 del visor (la hoja tiene impreso "13" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [4951f40] etapa cargar · categoria
+      Pregunta: ¿"Varustuskulud" (0.032157 en millones de la moneda del documento) va como "Otros gastos"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 13 del visor (la hoja tiene impreso "13" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [6dd518c] etapa cargar · categoria
+      Pregunta: ¿"töötuskindlustusmaks eetevõtest" (0.001239 en millones de la moneda del documento) va como "Salarios del plantel"?  (por qué: la categorización le dio 0.65 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 14 del visor (la hoja tiene impreso "14" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+
+## Clubes/Estonia/Narva Trans/aruanne-2020.pdf
+  [a7fec57] etapa cargar · perfil
+      Pregunta: ¿Jalgpalliklubi Narva Trans tiene socios que le pagan una cuota (cuotas sociales, mensalidades, sócio-torcedor, membresía)?  (por qué: en 2020 "Cuotas sociales" da 0; si el club tiene, falta un desglose y se reintenta; si no tiene, el 0 es real. Queda guardado en Admin/registros/perfil-clubes.jsonl para todos sus años.)
+      Propuesta del sistema: responder corregir --valor sí | corregir --valor no (o mandar un agente a buscar)
+  [702f1ed] etapa cargar · perfil
+      Pregunta: ¿Jalgpalliklubi Narva Trans tiene otros deportes (básquet, vóley, futsal...) con ingresos o gastos en sus estados financieros?  (por qué: en 2020 "Otras secciones deportivas" da 0; si el club tiene, falta un desglose y se reintenta; si no tiene, el 0 es real. Queda guardado en Admin/registros/perfil-clubes.jsonl para todos sus años.)
+      Propuesta del sistema: responder corregir --valor sí | corregir --valor no (o mandar un agente a buscar)
+  [e3c4fdf] etapa cargar · categoria
+      Pregunta: ¿"muud" (0.003713 en millones de la moneda del documento) va como "Otros ingresos"?  (por qué: la categorización le dio 0 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 12 del visor (la hoja tiene impreso "12" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [bbc284c] etapa cargar · categoria
+      Pregunta: ¿"Kaubandustegevus" (0.00974 en millones de la moneda del documento) va como "Comercial / sponsors"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 13 del visor (la hoja tiene impreso "13" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [213d88e] etapa cargar · categoria
+      Pregunta: ¿"Varustuskulud" (0.03267 en millones de la moneda del documento) va como "Otros gastos"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 13 del visor (la hoja tiene impreso "13" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [25a5573] etapa cargar · categoria
+      Pregunta: ¿"töötuskindlustusmaks eetevõtest" (0.000987 en millones de la moneda del documento) va como "Salarios del plantel"?  (por qué: la categorización le dio 0.65 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 14 del visor (la hoja tiene impreso "14" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+
+## Clubes/Estonia/Narva Trans/aruanne-2024.pdf
