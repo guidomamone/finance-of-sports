@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/Narva Trans/aruanne-2021.pdf",
  "md": "Clubes/Estonia/Narva Trans/aruanne-2021.md",
- "generado": "2026-10-18T18:44:30.320Z",
- "estado": "ok",
+ "generado": "2026-10-18T18:52:35.631Z",
+ "estado": "cola",
  "clubId": "narvatrans-ee",
  "year": 2021,
  "escala": {
@@ -21,9 +21,21 @@
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Narva Trans/aruanne-2021.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "sin ninguna fila de derechos de TV en el estado consolidado ni en sus notas (grep ülekandeõigus/teleõigus: 0); mismo caso que el 2025 del club (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
   }
  ],
- "cola": [],
+ "cola": [
+  "e1098cb"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -46,6 +58,11 @@
    "dif": 0.000001000000000001
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": false,
+   "detalle": "la columna 2020 de este documento suma ingresos 0.585674; el sitio tiene 0.478467"
+  },
+  {
    "nombre": "documento del año 2022",
    "ok": true,
    "detalle": "ingresos de 2021: 0.477879 en este documento y 0.477879 en aruanne-2022.pdf (columna del año anterior)"
@@ -54,16 +71,6 @@
    "nombre": "documento del año 2020",
    "ok": false,
    "detalle": "ingresos de 2020: 0.478467 en aruanne-2020.pdf y 0.585674 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [

@@ -112,3 +112,8 @@ j) DATOS (no script): Estonia no tiene ligas en `data/leagues.js`; propuesto `ee
 - Lote 91, segunda corrida: 22 años de Estonia escritos (26 en el sitio contando los 2025). Cola contestada en dos vueltas (97 + 49 casos,
   subagentes Sonnet revisados por Claude); 37 ceros reales de TV y estadio con cita; Narva Trans consolidado a nivel club (2021 rehecho);
   duda al club: FCI Levadia, "Liikmemaks" 2019-2020.
+- Lote 91, tercera corrida: 27 años más; Estonia completa salvo Narva Trans 2021 (contestado: diferencia de perímetro, falta una corrida).
+  r) caja-deuda.mjs en Estonia: 0 de 126 datos escritos. En casi todos los años "sin páginas de balance": localizar no guarda la ubicación
+     del balance (bilanss) de los informes estonios, así que ni Jev ni la IA tienen dónde mirar. Y en la corrida con años vecinos dejó SIN
+     COMMITEAR una caja equivocada de Tallinna Kalev 2019 (0,005455 contra "Raha 1 770" del balance, L90 y L172) y 2020 (0,028424): se
+     descartó (git checkout); revisar de qué escalón salió y por qué escribió sin commit.

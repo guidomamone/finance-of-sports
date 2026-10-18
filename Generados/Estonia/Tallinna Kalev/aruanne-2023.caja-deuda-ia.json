@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Estonia/Tallinna Kalev/aruanne-2023.md",
+ "generado": "2026-10-18T18:51:59.909Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(eurodes)",
+ "caja": {
+  "lineas": [
+   117
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   127,
+   131
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Laenukohustised corriente (L127) y no corriente (L131); cifras en euros."
+}
