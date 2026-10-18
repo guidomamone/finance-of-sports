@@ -41,7 +41,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 232: mejoras de script que dejó Grecia
 * 279: la tool que duplicaba claves en club-leagues/ru.js
 * 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar
-* 298: mejoras de script de Estonia y Bélgica (a, b y o hechas; siguen c a p)
+* 298: mejoras de script de Estonia y Bélgica (a, b y o hechas; siguen c a r)
 * 306, 307 y 308: Milan 2018; el gasto que imprime localizar; los bonos convertibles en la skill
 * 301: gasto.mjs --json se corta en un pipe
 * 302: el deflactor de EE.UU. desde la BEA, no FRED
@@ -61,6 +61,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 282: quién audita, lo que queda (88 informes a conseguir; la compuerta del pipeline)
 * 281: ingresos de las otras entidades (falta União de Leiria, sin estado de resultados)
 * 294: registro de entidades, lo que queda (los clubes del borrador cuando estén publicados)
+* 309: tamaño de liga desde la lista de Wikipedia (a decidir con Guido)
 
 **E2. Distribución (depende de 246)**
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
