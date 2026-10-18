@@ -62,7 +62,11 @@
     informe en el documento: Harju JK Laagri 2025 (ninguna mención de un auditor) y RAAL La Louvière 2025 (la lista de comisarios está
     vacía). Boavista 2024: abstención (escusa de opinião) con incertidumbre material; Portimonense 2025: con salvedades e incertidumbre
     material. Incertidumbre material también en Lierse, Lommel, Patro Eisden, RWDM, FCI Levadia, Kuressaare, Tallinna Kalev y Paide.
-  ASSET_V 1281 en la rama.
+- To-do 282 d: las 6 firmas del OCR ruidoso, verificadas contra la imagen del PDF. Corregidas: Getafe 2024 y 2025 "Grupo P&L Auditores,
+  S.L." (no "PEL"), Union SG 2025 "C² Réviseurs & Associés SRL", Elche 2025 "Fides Audit Assurance, S.L." (sin "Auditores", que es el
+  sello del colegio), Goiás 2008 "Terco Grant Thornton Auditores Independentes" (el nombre está en un logo junto a la firma; Henrique
+  Vinicius da Paz es el contador del club). Confirmada: Godoy Cruz 2020 "Carlos E. Bermejillo".
+  ASSET_V 1282 en la rama.
 
 ### Qué queda (para TODO)
 

@@ -264,7 +264,7 @@ Object.assign(window.CLUB_AUDITORIA, {
  "unionsg-be": {
   "2025": {
    "auditor": {
-    "nombre": "Réviseurs & Associés SRL",
+    "nombre": "C² Réviseurs & Associés SRL",
     "tipo": "firma"
    },
    "dictamen": "sin_salvedades",
