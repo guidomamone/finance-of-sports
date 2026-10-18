@@ -155,6 +155,18 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "lommelsk-be": {
+  "2018": {
+   "auditor": {
+    "nombre": "Van Havermaet Bedrijfsrevisoren CVBA",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2018-06-30-individual.md",
+    "linea": 634
+   }
+  },
   "2025": {
    "auditor": {
     "nombre": "PKF Bofidi Audit BV",
@@ -219,6 +231,18 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "rwdm-be": {
+  "2020": {
+   "auditor": {
+    "nombre": "vyvey & co, bedrijfsrevisoren bv",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Bélgica/RWDM/jaarrekening-2020-06-30-individual.md",
+    "linea": 757
+   }
+  },
   "2025": {
    "auditor": {
     "nombre": "vyvey & co, bedrijfsrevisoren bv",

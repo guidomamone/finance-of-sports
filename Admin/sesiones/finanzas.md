@@ -228,3 +228,14 @@
   informe (2007-2009 nombran a Deloitte como società di revisione y traen sus honorarios, 2010 dice que el balance está sujeto a la
   revisión de PwC, y de 2006 hay una captura de Wayback del informe, truncada a 1 MiB), pero el informe no está en ningún canal: la API
   de documentos del club empieza en 2011 y Wayback no los tiene. Así el sitio dice "Todavía no lo revisamos" en vez de "sin informe".
+- To-do 282: los 52 balances nuevos de Estonia (2019-2024 de los 9 clubes que cargó onboarding) y de Bélgica (Lommel 2018, RWDM 2020) ya
+  tienen línea (0 sin línea). Los de Estonia, por 9 subagentes Sonnet con un criterio común (`Generados/auditoria/_criterio-ee.md`, no se
+  trackea) y las citas verificadas por `tools/auditoria.mjs`: 24 sin salvedades, 11 sin salvedades con incertidumbre material sobre la
+  continuidad, 14 sin informe (Kuressaare 2019-2024, Harju JK Laagri 2023-2024, Tallinna Kalev 2019-2022, Nõmme Kalju 2020, Narva Trans
+  2023; revisados con grep: ninguna mención de auditoría) y Nõmme Kalju 2021 `falta_transcripcion` (el informe 2022 dice que el
+  vandeaudiitor anterior se abstuvo sobre los saldos iniciales al 31-12-2020). Firmas: EL Finants, Brokerman Audit, ANTIMAR, K-Kreedit,
+  Assertum Audit, I.S. Audiitorteenuste OÜ. Criterio aplicado: un "Asjaolu rõhutamine" cuyo cuerpo dice "olulise ebakindluse" cuenta como
+  incertidumbre material (true); uno que dice solo "ebakindlus", sin "oluline", es ÉNFASIS CONTINUIDAD (false). Los belgas, a mano:
+  Van Havermaet y Vyvey & Co, sin salvedades.
+- `tools/auditoria.mjs --extractos` no reconoce el informe en estonio ("SÕLTUMATU VANDEAUDIITORI ARUANNE", "Meie arvates"): los 50
+  extractos salieron vacíos. Mejora de script para el TODO.
