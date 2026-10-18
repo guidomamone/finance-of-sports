@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Moreirense/relatorio-contas-2023-24.md",
+ "generado": "2026-10-18T05:52:12.239Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"financiamentos obtidos\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "(Euro)",
+ "caja": {
+  "lineas": [
+   395
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   410,
+   415
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usan las líneas 'Financiamentos obtidos' del balance principal (no corriente 809.941,46 y corriente 750.000,00; suman 1.559.941,46, igual que la nota 17.1). El balance Anexo E las muestra como deudas a entidades del grupo/partes relacionadas, pero se eligieron las del balance principal."
+}

@@ -45,6 +45,8 @@
 // USO:
 //   node tools/caja-deuda.mjs --medir [--club <clubId>] [--detalle] [--escalas]                         MEDICIÓN sobre los años ya cargados (ver abajo)
 //   node tools/caja-deuda.mjs --medir --ia [--ejecutar]                                       ...con el escalón 2 (sin --ejecutar: ensayo; con: API)
+//   node tools/caja-deuda.mjs --medir --ia --modelo opus|sonnet [--ejecutar]                  ...el escalón 2 con ESE modelo, para comparar (to-do 288):
+//        respuestas aparte (.caja-deuda-ia.<modelo>.json), que no pisan ni usan las guardadas; solo medición, no escribe nada más.
 //   node tools/caja-deuda.mjs --medir --jev [--ejecutar]                                      ...con el escalón 1b, Jev (sin --ejecutar: ensayo con cota alta)
 //   node tools/caja-deuda.mjs --personal --medir [--ejecutar]                                 el dato "personal" (staffCost) contra Admin/mediciones/personal-verdad.tsv
 //   node tools/caja-deuda.mjs --personal --club <id> [--ejecutar] [--escribir]                completarlo en un club publicado
@@ -379,7 +381,9 @@ export function filasDelMd(md) {
     // balancete ("2.2.01 EMPRESTIMOS...", "29 2201010001 - I-9 SPORTS"): la familia y la etiqueta impresa no cambian. Caso: Novorizontino
     // 2013-2017, "2.2.01 EMPRESTIMOS E FINANCIAMENTOS" no la reconocía el escalón 1 de deuda.
     // (Versión 459) también una numeración de lista al principio ("4)", "a)", "IV.", "12."): Juventus 2005-06 L1967 "4) Due to banks".
-    const sinCodigo = etiqueta.replace(/^\s*(?:\d+\s+)?\d+(?:[.\-]\d+)*\s*(?:-\s+)?(?=\p{L})/u, '').replace(/^\s*(?:\d{1,2}|[a-z]|[ivxlc]{1,5})[.)]\s+(?=\p{L})/iu, '');
+    // (to-do 290, ok de Guido 2026-10-18) y la numeración italiana "4 bis)", "5-bis)", "15 bis )" (y "ter"), antes que lo de arriba: sin esto
+    // "4 bis) Debiti verso banche" quedaba "bis) Debiti verso banche" y el diccionario no la veía. Caso: Genoa 2022 (pág. 8, L304-312).
+    const sinCodigo = etiqueta.replace(/^\s*\d{1,2}\s?-?\s?(?:bis|ter)\s?[.)]\s+(?=\p{L})/iu, '').replace(/^\s*(?:\d+\s+)?\d+(?:[.\-]\d+)*\s*(?:-\s+)?(?=\p{L})/u, '').replace(/^\s*(?:\d{1,2}|[a-z]|[ivxlc]{1,5})[.)]\s+(?=\p{L})/iu, '');
     const cd = (String(crudos[0] ?? '').match(/\s([CD])\s*$/i) || [])[1]?.toUpperCase() || null; // (Versión 423) marca de balancete
     const codigo = ((etiqueta.match(/^\s*(?:\d{1,4}\s+)?(\d+(?:\.\d+)+|\d{4,})\s/) || [])[1] || '').replace(/\./g, '') || null;
     // (to-do 228) el número de nota de la fila (la celda de la columna de notas, "6.15") y lo que dice su nota.
@@ -884,6 +888,21 @@ export function factorPorIngresos(filas, lineas, md = null) { // `md` sin uso (l
   return mejor?.fac || null;
 }
 
+// LA ESCALA DEL AÑO (to-do 289, ok de Guido 2026-10-18). Escalera de UN dato, la escala con la que se leen las cifras de un año en su documento:
+//   ESCALÓN 0  ajuste manual `escala` (tools/ajustes.mjs: unidades | miles | millones, por PDF y año como `caja` y `deuda`), la escala que el
+//              documento imprime para ese año. Es una decisión con cita: no pasa por compuerta.
+//   ESCALÓN 1  factorPorIngresos, como antes.
+//   nada ──► null ("sin escala del documento").
+// La usan todos los lugares de contexto() que antes llamaban a factorPorIngresos (el año, sus precedentes, el año anterior y el siguiente) y
+// --medir --escalas. Casos: RB Leipzig 2024, comparativo del jahresabschluss-2024-25 impreso en TEUR ("30.06.2024 TEUR") con el 2025 en EUR:
+// factorPorIngresos daba unidades y un ajuste de caja "783" daba 0,000783 M. RB Leipzig 2023 y HSV 2024: transcripciones viejas sin tablas,
+// factorPorIngresos no encuentra escala y ningún ajuste de caja o deuda entraba (completarClub pide la escala).
+export function escalaDe(md, anio, filas, lineas, anios) {
+  const aj = ajusteDelAnio(md.replace(/\.md$/i, '.pdf'), 'escala', anio, anios.filter((x) => x.md === md).length === 1);
+  if (aj && FACTOR_ESCALA[aj.valor]) return FACTOR_ESCALA[aj.valor];
+  return factorPorIngresos(filas, lineas, md);
+}
+
 // ---------------------------------------------------------------- ESCALÓN 2: IA
 const FACTOR_ESCALA = { unidades: 1e-6, miles: 1e-3, millones: 1 };
 const SCHEMA_IA = {
@@ -905,9 +924,20 @@ Elegí, para la columna del ejercicio pedido (la del cierre más reciente):
 - observaciones: una frase si algo es dudoso. No inventes líneas: si no está, dejá la lista vacía.`;
 
 // Pide a la IA las líneas (una llamada por documento). ejecutar=false: ensayo (tokens y costo estimados).
-export async function porIA({ md, mdText, filas, criterioDeuda, ejecutar = false, rehacer = false }) {
-  const out = resolve(ROOT, derivado(md, '.caja-deuda-ia.json'));
+// (to-do 288) `modelo` (opus | sonnet), solo desde --medir --modelo: la respuesta va a su propio archivo y no se mezcla con la guardada.
+const MODELOS_IA = { opus: 'claude-opus-5-5', sonnet: 'claude-sonnet-5-5' };
+// (to-do 288, ok de Guido 2026-10-18) EL MODELO DEL ESCALÓN 2 ES SONNET. Medido en los 606 documentos de los años cargados (--medir --ia
+// --modelo sonnet, US$ 12,37): deuda 210 iguales / 14 distintos contra 211 / 18 de Opus, caja 421 / 7 contra 417 / 7; ningún distinto que
+// Opus no tuviera (dejan de decidir mal Dortmund 2025, Levadiakos 2025, Monza 2024 y Novorizontino 2017). Cuesta la mitad. Las respuestas
+// de Opus ya guardadas (.caja-deuda-ia.json) se siguen usando; sin ellas, la de Sonnet de la medición (.caja-deuda-ia.sonnet.json), y si
+// tampoco hay, se le pregunta a Sonnet.
+const MODELO_TAREA = 'sonnet';
+export async function porIA({ md, mdText, filas, criterioDeuda, ejecutar = false, rehacer = false, modelo = null }) {
+  const out = resolve(ROOT, derivado(md, modelo ? `.caja-deuda-ia.${modelo}.json` : '.caja-deuda-ia.json'));
   if (!rehacer && existsSync(out)) return { datos: JSON.parse(readFileSync(out, 'utf8')), costo: 0, guardado: true };
+  const deLaMedicion = resolve(ROOT, derivado(md, `.caja-deuda-ia.${MODELO_TAREA}.json`));
+  if (!modelo && !rehacer && existsSync(deLaMedicion)) return { datos: JSON.parse(readFileSync(deLaMedicion, 'utf8')), costo: 0, guardado: true };
+  const idModelo = MODELOS_IA[modelo || MODELO_TAREA];
   const paginas = [...new Set(filas.filter((f) => f.balance).map((f) => f.pagina))];
   if (!paginas.length) return { error: 'sin páginas de balance' };
   const L = mdText.split('\n'); const PAG = /^---\s*pág\.\s*(\d+)\s*---/i; let pag = 1; const lineas = [];
@@ -915,10 +945,10 @@ export async function porIA({ md, mdText, filas, criterioDeuda, ejecutar = false
   const texto = lineas.join('\n').slice(0, 60000);
   const user = `Documento: ${md.split('/').slice(1).join(' / ')}.\nCriterio de deuda de este club: ${criterioDeuda}\n\nPÁGINAS DEL BALANCE (${paginas.join(', ')} del visor):\n${texto}`;
   const { llamarClaude, tokensDe, usdEstimado } = await import('./claude-llamada.mjs');
-  if (!ejecutar) return { ensayo: true, usd: usdEstimado(tokensDe(SYSTEM_IA + user), 400) };
-  const r = await llamarClaude({ system: SYSTEM_IA, user, schema: SCHEMA_IA, tarea: 'caja-deuda', pdf: md.replace(/\.md$/, '.pdf'), maxTokens: 2000 });
+  if (!ejecutar) return { ensayo: true, usd: usdEstimado(tokensDe(SYSTEM_IA + user), 400, idModelo) };
+  const r = await llamarClaude({ system: SYSTEM_IA, user, schema: SCHEMA_IA, tarea: modelo ? `caja-deuda-medir-${modelo}` : 'caja-deuda', pdf: md.replace(/\.md$/, '.pdf'), maxTokens: 2000, modelo: idModelo });
   if (r.error) return { error: r.error, costo: r.costo || 0 };
-  writeFileSync(out, JSON.stringify({ md, generado: new Date().toISOString(), criterioDeuda, ...r.datos }, null, 1));
+  writeFileSync(out, JSON.stringify({ md, generado: new Date().toISOString(), modelo: idModelo, criterioDeuda, ...r.datos }, null, 1));
   return { datos: r.datos, costo: r.costo || 0 };
 }
 
@@ -933,14 +963,14 @@ export function criterioDeudaDe(familias) {
 // y las filas del documento siguiente. `conocidos[cual][anio]` = el valor cargado en el sitio.
 function contexto({ d, anios, a, cual, filasDe, conocidos }) {
   const filas = filasDe(a.md);
-  const factor = factorPorIngresos(filas, d.revenueLinesByYear?.[a.anio], a.md);
+  const factor = escalaDe(a.md, a.anio, filas, d.revenueLinesByYear?.[a.anio], anios);
   const precedentes = Object.entries(conocidos[cual]).filter(([y]) => y !== a.anio).sort(([x], [y]) => Math.abs(x - a.anio) - Math.abs(y - a.anio)).slice(0, 3)
-    .map(([y, v]) => { const o = anios.find((z) => z.anio === y && z.md); return o ? { anio: y, valor: v, filas: filasDe(o.md), factor: factorPorIngresos(filasDe(o.md), d.revenueLinesByYear?.[y], o.md) } : null; }).filter(Boolean);
+    .map(([y, v]) => { const o = anios.find((z) => z.anio === y && z.md); return o ? { anio: y, valor: v, filas: filasDe(o.md), factor: escalaDe(o.md, y, filasDe(o.md), d.revenueLinesByYear?.[y], anios) } : null; }).filter(Boolean);
   const sig = anios.find((o) => Number(o.anio) === Number(a.anio) + 1 && o.md);
   const ant = anios.find((o) => Number(o.anio) === Number(a.anio) - 1 && o.md);
   return { filas, factor, precedentes, anterior: conocidos[cual][String(Number(a.anio) - 1)] ?? null, siguiente: sig ? filasDe(sig.md) : null,
-    anteriorDoc: ant ? filasDe(ant.md) : null, factorAnterior: ant ? factorPorIngresos(filasDe(ant.md), d.revenueLinesByYear?.[ant.anio], ant.md) : null,
-    factorSiguiente: sig ? factorPorIngresos(filasDe(sig.md), d.revenueLinesByYear?.[sig.anio], sig.md) : null,
+    anteriorDoc: ant ? filasDe(ant.md) : null, factorAnterior: ant ? escalaDe(ant.md, ant.anio, filasDe(ant.md), d.revenueLinesByYear?.[ant.anio], anios) : null,
+    factorSiguiente: sig ? escalaDe(sig.md, sig.anio, filasDe(sig.md), d.revenueLinesByYear?.[sig.anio], anios) : null,
     extraDeuda: String(ajusteClubODoc(a.md.replace(/\.md$/i, '.pdf'), 'deuda-incluye')?.valor || '').split(';').map((t) => t.trim()).filter(Boolean),
     ingresos: (d.revenueLinesByYear?.[a.anio] || []).reduce((s, l) => s + (l.amountNative || 0), 0) || null }; // (to-do 260 e) para el techo de la compuerta
 }
@@ -965,17 +995,17 @@ const filasCache = () => { const c = new Map(); return (md) => { if (!c.has(md))
 
 // La IA de un documento (guardada o, con ejecutar, pedida). Devuelve { datos } | { ensayo, usd } | { error }.
 async function iaDe(md, filas, club) {
-  return porIA({ md, mdText: readFileSync(resolve(ROOT, md), 'utf8'), filas, criterioDeuda: criterioDeudaDe(club?.familias || []), ejecutar: iaDe.ejecutar });
+  return porIA({ md, mdText: readFileSync(resolve(ROOT, md), 'utf8'), filas, criterioDeuda: criterioDeudaDe(club?.familias || []), ejecutar: iaDe.ejecutar, modelo: iaDe.modelo || null });
 }
 
-async function medir({ club = null, detalle = false, ia = false, jev = false, ejecutar = false, escalas = false } = {}) {
-  const { G, S } = sitio(); iaDe.ejecutar = ejecutar;
+async function medir({ club = null, detalle = false, ia = false, jev = false, ejecutar = false, escalas = false, modelo = null } = {}) {
+  const { G, S } = sitio(); iaDe.ejecutar = ejecutar; iaDe.modelo = modelo;
   const casos = [];
   for (const [clubId, d] of Object.entries(G)) {
     if (club && clubId !== club) continue;
     const anios = aniosDe(d, S).filter((x) => x.md); const filasDe = filasCache();
     // (Versión 456) --escalas: la escala que eligió factorPorIngresos para cada año (para medir cambios de la escala).
-    if (escalas) for (const a of anios) console.log(`  escala ${clubId} ${a.anio}: ${factorPorIngresos(filasDe(a.md), d.revenueLinesByYear?.[a.anio], a.md)}`);
+    if (escalas) for (const a of anios) console.log(`  escala ${clubId} ${a.anio}: ${a.md ? escalaDe(a.md, a.anio, filasDe(a.md), d.revenueLinesByYear?.[a.anio], anios) : null}`);
     // Cada año se lee como nuevo: los conocidos son lo cargado en el sitio, SIN el propio año (no se aprende la respuesta).
     for (const a of anios) for (const cual of ['grossDebt', 'cash']) {
       const real = a.m[cual]; if (real == null) continue;
@@ -1314,7 +1344,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     process.exit(0);
   }
   if (A.includes('--personal')) { if (A.includes('--medir')) await medirPersonal({ ejecutar: A.includes('--ejecutar'), club: flag('--club') }); else if (flag('--club')) await completarPersonal(flag('--club'), { ejecutar: A.includes('--ejecutar'), escribir: A.includes('--escribir'), partir: A.includes('--partir') }); process.exit(0); }
-  if (A.includes('--medir')) { await medir({ club: flag('--club'), detalle: A.includes('--detalle'), ia: A.includes('--ia'), jev: A.includes('--jev'), escalas: A.includes('--escalas'), ejecutar: A.includes('--ejecutar') }); process.exit(0); }
+  if (flag('--modelo') != null && (!A.includes('--medir') || !A.includes('--ia') || !MODELOS_IA[flag('--modelo')])) { console.error('--modelo opus|sonnet va solo con --medir --ia'); process.exit(1); }
+  if (A.includes('--medir')) { await medir({ club: flag('--club'), detalle: A.includes('--detalle'), ia: A.includes('--ia'), jev: A.includes('--jev'), escalas: A.includes('--escalas'), ejecutar: A.includes('--ejecutar'), modelo: flag('--modelo') }); process.exit(0); }
   if (flag('--club')) { const r = await completarClub(flag('--club'), { ejecutar: A.includes('--ejecutar'), escribir: A.includes('--escribir') }); process.exit(r.error ? 1 : 0); }
   console.error('Uso: node tools/caja-deuda.mjs --club <clubId> [--ejecutar] [--escribir]  |  --medir [--club x] [--ia [--ejecutar]] [--detalle]'); process.exit(1);
 }

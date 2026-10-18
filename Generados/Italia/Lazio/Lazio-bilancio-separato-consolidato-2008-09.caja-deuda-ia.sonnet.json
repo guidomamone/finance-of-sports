@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2008-09.md",
+ "generado": "2026-10-18T05:51:52.864Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "TOTALE ATTIVO 166.196.353",
+ "caja": {
+  "lineas": [
+   3319
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   3345,
+   3359,
+   3361
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El documento incluye bilancio separato (L713-814) y consolidado (L3277-3378); elegí el consolidado. El balance no declara la escala, pero los importes están en euros enteros. Incluí L3361 (debiti verso altri finanziatori, 10,7 M€) por ser deuda financiera, aunque figura dentro de otras pasivos corrientes; es dudoso."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/America Mineiro/demonstracoes-financeiras-2025.md",
+ "generado": "2026-10-18T05:49:41.691Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(VALORES EXPRESSOS EM REAIS)",
+ "caja": {
+  "lineas": [
+   298
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   336,
+   348
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se tomó la columna Consolidado 2025. Los empréstimos (nota 10) corriente (L336) y no corriente (L348) son las únicas líneas explícitas de deuda financiera; Arrendamentos (L341, L350) y Empréstimos pessoas ligadas (L339, sin valor) se excluyeron. Varias líneas del balance no tienen etiqueta legible, por lo que no se pueden identificar con certeza."
+}

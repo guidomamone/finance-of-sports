@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2019.md",
+ "generado": "2026-10-18T05:52:59.747Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Bilancio al 31 dicembre 2019",
+ "caja": {
+  "lineas": [
+   489
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   518,
+   519,
+   521
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance oficial está en euros enteros, sin indicación de miles. Se excluyen los debiti verso controllanti (L525, L526: cash pooling y finanziamento Mapei, que incluye 35.000.000 a largo plazo) por no ser préstamos bancarios ni de otros financiadores según el criterio. Podrían considerarse deuda financiera si se incluyera a la controlante. Caja: total de disponibilidades líquidas (L489), que ya suma bancos y efectivo."
+}

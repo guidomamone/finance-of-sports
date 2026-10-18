@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2023-24.md",
+ "generado": "2026-10-18T05:52:00.497Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "£",
+ "caja": {
+  "lineas": [
+   856
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   860,
+   863
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance consolidado no desglosa la deuda financiera: solo muestra los acreedores totales a menos y a más de un año (L860 y L863), que incluyen cuentas comerciales y otras partidas, así que son una aproximación. Hay que ver la nota 17 y la 18 para el detalle de préstamos. Las cifras están en libras (£) completas, sin indicar miles ni millones. Se usó la columna 2024 del consolidado."
+}

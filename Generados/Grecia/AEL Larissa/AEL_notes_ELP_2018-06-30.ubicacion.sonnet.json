@@ -1,0 +1,56 @@
+{
+ "pdf": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2018-06-30.pdf",
+ "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2018-06-30.md",
+ "mdSha1": "d105fb5b74b34f6e5ce787ec8dead7d6b8dc003c",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:19:30.656Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    27,
+    68
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    78,
+    94
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    196,
+    207
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    225,
+    231
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con dos decimales (p. ej. 2.710.883,11) y sin mención de miles o millones en el encabezado del estado de resultados",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2018",
+ "columna_anterior": "30/6/2017",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El estado de resultados es b2 (pág. 3). Los demás bloques son el balance (b1), datos generales de la sociedad (b3) y firmas (b4). El documento no trae notas que desglosen ingresos o gastos. Perímetro individual porque solo hay un estado de resultados de la sociedad AEL."
+}

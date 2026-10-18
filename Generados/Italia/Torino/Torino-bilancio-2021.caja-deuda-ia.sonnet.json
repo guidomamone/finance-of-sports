@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Torino/Torino-bilancio-2021.md",
+ "generado": "2026-10-18T05:53:16.216Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Bilancio al 31 dicembre 2021",
+ "caja": {
+  "lineas": [
+   461
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   493,
+   494
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance oficial (L416-L518) está en euros enteros, sin indicación de miles; el resumen de la gerencia (L119) usa 'valori migliaia di Euro', pero se eligieron las líneas del balance estatutario. La deuda son los Debiti verso banche (corriente 1.250.000 y no corriente 28.750.000)."
+}

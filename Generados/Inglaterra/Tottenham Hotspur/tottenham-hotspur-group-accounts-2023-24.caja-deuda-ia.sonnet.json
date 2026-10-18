@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Inglaterra/Tottenham Hotspur/tottenham-hotspur-group-accounts-2023-24.md",
+ "generado": "2026-10-18T05:53:17.629Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£’000",
+ "caja": {
+  "lineas": [
+   1287
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1296
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usó el balance consolidado (L1271-L1309), no el de la Sociedad. La deuda financiera son los préstamos que devengan interés, todos no corrientes (bancarios y otros, garantizados). No hay deuda corriente. No se incluyeron los pasivos por arrendamiento, que están dentro de Trade and other payables."
+}

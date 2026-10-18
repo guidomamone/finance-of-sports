@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Cruzeiro/informativo-financeiro-2025.md",
+ "generado": "2026-10-18T05:50:47.954Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "Em milhares de Reais, exceto quando indicado de outra forma",
+ "caja": {
+  "lineas": [
+   181
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   241,
+   256
+  ],
+  "ninguna": false
+ },
+ "observaciones": "No hay línea de préstamos bancarios; se tomó 'Títulos emitidos' (notas comerciales), corriente y no corriente, como deuda financiera. Las obligaciones con partes relacionadas (auxilio financiero Cruzeiro Associação, centros de treinamento, partes relacionadas a pagar) podrían ser financieras pero se excluyeron por criterio estricto de préstamos."
+}

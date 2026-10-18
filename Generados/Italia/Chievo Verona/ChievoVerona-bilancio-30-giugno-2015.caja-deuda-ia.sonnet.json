@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/Chievo Verona/ChievoVerona-bilancio-30-giugno-2015.md",
+ "generado": "2026-10-18T05:50:36.075Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"debiti finanziari a breve termine\" + \"posizione finanziaria netta a medio lungo termine\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "€ 103.808.899",
+ "caja": {
+  "lineas": [
+   737
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   780,
+   784,
+   781,
+   777
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Criterio del club: debiti finanziari a breve (quota a breve bancos 7.720.602 + otros financiadores 9.984.936 = 17.705.538) + PFN a medio-largo plazo. La PFN m/l del informe de gestión (6.676.009) equivale a deuda bancaria no corriente 4.421.612 + préstamo de socios 2.254.397, que se incluyen. Balance en euros enteros sin indicación explícita de escala; la evidencia es un importe en €."
+}

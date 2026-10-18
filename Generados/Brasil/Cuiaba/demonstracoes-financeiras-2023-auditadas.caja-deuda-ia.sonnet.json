@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.md",
+ "generado": "2026-10-18T05:50:50.939Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em reais)",
+ "caja": {
+  "lineas": [
+   186
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   224,
+   229
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Columna 2023 (cierre más recente). Deuda = Empréstimos e Financiamentos corriente (L224) y no corriente (L229)."
+}

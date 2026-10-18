@@ -25,6 +25,8 @@ node tools/gasto-doc.mjs --lista <lista> --desde <ISO> [--hasta <ISO>]       # l
 `lote.mjs` corre las etapas 3 a 8 sobre una lista chica. Avisa (sin frenar) si un documento de la lista está también en otra `Admin/lotes/lote-*.txt`
 (to-do 232 g): una lista cerrada va a `Admin/Archive/lotes/`. También avisa un documento de un club de la lista que está sin localizar y cuyo ejercicio
 no cubre ni la lista ni un año cargado (to-do 232 q): se suma a la lista o va a `documentos-descartados.txt`.
+Si la lista trae un documento y su versión corregida (`<doc>.pdf` y `<doc>-correction.pdf`, Bélgica; to-do 298 o), entra solo la corrección:
+el original se saltea en esa corrida y el final lo lista como propuesta para `documentos-descartados.txt` (con el ok de Guido).
 - El registro (`Admin/registros/transcripciones-estado.jsonl`) se recalcula entero en ~1 min (todos los PDFs de Clubes/, sobre todo `quien.mjs --pendientes` para saber
   qué está cargado). `pipeline.mjs` con `--lista`/`--dir` y `lote.mjs` recalculan solo su lista (`--solo`, ~1 s) y copian las demás
   líneas; el recálculo entero queda para `estado.mjs --actualizar` y las corridas sin alcance. Medido: el registro sale idéntico.
@@ -122,6 +124,7 @@ Mitigaciones:
   primeras y últimas filas.
 - b) `localizar.mjs` (IA, ~US$ 0,05) ve las fichas y elige: los bloques del estado de resultados, las notas de ingresos y de gastos, la
   escala, la moneda, las columnas y el perímetro.
+  Medición de modelo (to-do 288): `--lista <x> --modelo opus|sonnet` escribe `.ubicacion.<modelo>.json`, sin pisar el de la corrida.
 - c) Si el documento no tiene estado de resultados (memoria sola, dictamen), queda como fuente.
 - d) **Compuerta antes de pagar** (Versión 441, `antes-de-localizar.mjs`; solo documentos sin `.ubicacion.json`):
 
@@ -145,6 +148,7 @@ Mitigaciones:
                   estados de los dos perímetros → cola. Solo al ejecutar (~US$ 0,02 por documento; caché Generados/_cache/claude-perimetro.jsonl).
                   Medición: Admin/mediciones/perimetro-a2-medicion.txt (75 documentos, 15 clubes); --exportar-a2 arma los pedidos para medir
                   sin API (los contestan subagentes de la sesión y se agregan a la caché)
+                  (to-do 288) --modelo opus|sonnet (con --jev): A2 con ese modelo para medir, contra Admin/mediciones/perimetro-a2-verdad-ajustes.tsv
                   Auditoría a posteriori (to-do 227): los ajustes que escribe la regla del club nombran en su `evidencia` los
                   documentos que decidió A2; `--auditar-a2 <carpeta>` arma un pedido por documento para un subagente (grupo o
                   sociedad sola, con cita). Se corre después de cada país nuevo. La carpeta de `--auditar-a2` y la de
@@ -218,6 +222,8 @@ Mitigaciones:
 ### 5 Extraer
 
 - a) `extraer.mjs` (IA, ~US$ 0,20 de mediana según lo gastado en `Admin/registros/api/claude-api.jsonl`; hasta ~US$ 0,35 en documentos largos) recibe solo los bloques elegidos, con cada línea numerada.
+  Medición de modelo (to-do 288): `--lista <x> --modelo opus|sonnet` escribe `.filas.<modelo>.json`; `medir-verificar.mjs --filas <modelo>`
+  verifica con esas filas (y restaura las de la carga).
 - b) Devuelve las filas tal cual: etiqueta, importe, año anterior, tipo (renglón, subtotal, total, resultado), lado (ingreso, gasto,
   financiero, impuesto), qué renglón del estado desglosa cada fila de nota, y la escala de cada bloque.
 - c) Una nota puede desglosar un renglón de otra nota (desglose anidado). De un cuadro por segmento toma solo la columna del segmento que
@@ -257,6 +263,11 @@ Mitigaciones:
   cobrados / ingresos financieros suman, pagados / gastos financieros restan; un rótulo que no dice o dice las dos cosas queda como está
   impreso; listas FIN_INGRESO / FIN_GASTO de `tools/vocabulario.mjs`), con la misma compuerta EXACTA. Caso: Volos 2021-2025 imprime los
   intereses cobrados y pagados los dos en positivo; en bloque, 2021 y 2025 entraban por la tolerancia con el cobrado cargado como gasto.
+  Bélgica (to-do 298 b1): el esquema NBB imprime los costos financieros (65/66B, "Kosten van schulden", "Charges des dettes") en positivo;
+  están en FIN_GASTO y este escalón les pone el signo sin ajustes `fila` (Beerschot 2025).
+  Escalón "de los cuales" (to-do 298 b3): una fila que empieza con "Waarvan:", "dont", "davon", "of which", "de los cuales"... (DE_LOS_CUALES
+  de `tools/vocabulario.mjs`) es una parte de la de arriba. Si ninguna lectura cerró, se prueban la 4 y la 5 sin esas filas; compuerta,
+  cierre EXACTO. Caso: el 76A belga debajo de la Brutomarge (Lierse SK y Patro Eisden 2025), que antes pedía un ajuste `fila` en 0.
 - c) Año anterior cargado: la columna del año anterior contra lo que tiene el sitio.
 - d) Año vecino: si el documento del año siguiente ya pasó por extraer, su columna "año anterior" tiene que coincidir.
 - e) Redondeo: si solo falta menos de media unidad por fila, se agrega una fila "Diferencia de redondeo".
@@ -357,7 +368,8 @@ Mitigaciones:
 - **Resultado impreso, escalón 2** (Versión 415, ampliado en la 592): si no hay resultado en los bloques, una línea PREJUÍZO / SUPERÁVIT /
   "UTILE (PERDITA) DELL'ESERCIZIO" pegada al último bloque (hasta 4 líneas; en italiano el signo lo da el importe, entre paréntesis = pérdida);
   compuerta: alguna lectura cierra con él exacto. `ANTES_RE` reconoce también "prima delle imposte", el checo "před zdaněním" y el griego "προ φόρων" (sin "προ φόρων, χρηματοδοτικών…" ni "προ φόρων και τόκων", que son el resultado operativo).
-- **Signo del resultado que se carga** (to-do 198). La compuerta del resultado compara valores absolutos; el signo que se le pasa a la carga:
+- **Signo del resultado que se carga** (to-do 198). La compuerta del resultado compara valores absolutos, salvo cuando el resultado
+  impreso es negativo: ese trae su signo y tiene que cerrar con signo (to-do 298 a; Lierse Kempenzonen 2022 cerraba con las filas dadas vuelta); el signo que se le pasa a la carga:
   escalón 0 el ajuste `resultado-final`; escalón 1 el impreso tal cual; escalón 2 el signo de las filas, solo si el resultado del ejercicio
   cerró EXACTO con el signo opuesto Y el documento dice que el impreso es una pérdida sin signo (etiqueta de pérdida y no de las dos cosas:
   "Prejuízo" sí, "Superávit/Déficit" no; o la marca D de balancete; o los ingresos impresos en negativo). Sin señal, frena como siempre.
@@ -711,7 +723,9 @@ sección Rusia de `Admin/COMO-CORRE-EL-PROYECTO.html`; el detalle de cada escal�
 
 Comando aparte, con el club ya publicado: completa `cash` y `grossDebt` de cada año cargado donde el sitio tiene null (nunca pisa un valor
 cargado) y nunca frena. Medir: `node tools/caja-deuda.mjs --medir [--club <id>] [--detalle] [--escalas]` (gratis); `--medir --jev` y
-`--medir --ia` (escalones 1b y 2; sin `--ejecutar`, ensayo); `--personal --medir` (staffCost contra `Admin/mediciones/personal-verdad.tsv`).
+`--medir --ia` (escalones 1b y 2; sin `--ejecutar`, ensayo); `--medir --ia --modelo opus|sonnet` (to-do 288: el escalón 2 con
+ese modelo, respuestas aparte en `.caja-deuda-ia.<modelo>.json`, solo para comparar); el escalón 2 usa Sonnet (to-do 288: medido en los 606 documentos de
+los años cargados, menos distintos que Opus y la mitad del precio); las respuestas de Opus ya guardadas se siguen usando. `--personal --medir` (staffCost contra `Admin/mediciones/personal-verdad.tsv`).
 Escribir: `--club <id> --ejecutar --escribir` (el valor en `data/`, sin comentario; de dónde salió, en la meta del año en
 `Admin/carga-clubes/<club>.md`). Cuestan API los escalones 1b (Jev, centavos por club) y 2 (IA): esa corrida la hace Guido.
 
@@ -720,8 +734,15 @@ busca por PDF y AÑO (to-do 263). Si un PDF alimenta dos años del club (el del 
 geschaeftsbericht-2024-25), el ajuste lleva `--anio AAAA` y vale solo para ese año; uno sin año vale solo si el PDF alimenta un único año.
 Sin ajuste de ese año, el escalón 0 no decide y el año sigue por la escalera.
 
+La escala del año (`escalaDe`, to-do 289) es su propia escalera: escalón 0, el ajuste manual `escala` (`unidades` | `miles` | `millones`,
+la que el documento imprime para ese año, también por PDF y año con `--anio`); escalón 1, `factorPorIngresos` (la escala con la que más
+ingresos cargados del año aparecen en el documento); si ninguno da, el año queda "sin escala del documento" y no entra ni un ajuste de
+`caja` o `deuda`. Hace falta cuando el comparativo va en otra escala que el año corriente (RB Leipzig 2024: "30.06.2024 TEUR" en el
+jahresabschluss-2024-25, con el 2025 en EUR) o cuando una transcripción vieja sin tablas no deja encontrar la escala (RB Leipzig 2023, HSV 2024).
+
 Diccionario de deuda en italiano (escalón 1, `DEUDA_FINANCIERA` de `tools/vocabulario.mjs`): banche, debiti finanziari, obbligazioni y soci
-per finanziamenti (to-do 262). "Altri finanziatori" (factoring) no entra: el criterio no es el mismo en todos los clubes (Monza 2024 no lo
+per finanziamenti (to-do 262). La numeración italiana "4 bis)", "5-bis)", "15 bis )" sale de la etiqueta igual que "4)" (to-do 290), así que
+las filas "… oltre l'esercizio successivo" (largo plazo) también entran. "Altri finanziatori" (factoring) no entra: el criterio no es el mismo en todos los clubes (Monza 2024 no lo
 cuenta, Genoa 2022 sí).
 
 ```

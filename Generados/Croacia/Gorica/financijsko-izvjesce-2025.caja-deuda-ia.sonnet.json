@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Croacia/Gorica/financijsko-izvjesce-2025.md",
+ "generado": "2026-10-18T05:51:25.899Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "EUR",
+ "caja": {
+  "lineas": [
+   872
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   901,
+   903,
+   923
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los valores del balance están separados de sus etiquetas por el OCR, así que asigné las líneas contando filas. Incluí el descubierto bancario (L901) y los préstamos corrientes (L903, 0 en 2025). Los préstamos no corrientes son L923. Las obligaciones con el grupo (L924, 2.160.000) no se incluyeron por ser con partes relacionadas."
+}

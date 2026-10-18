@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2020.md",
+ "generado": "2026-10-18T05:53:00.124Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Euro 1.745.898",
+ "caja": {
+  "lineas": [
+   523
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   557,
+   558
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance oficial está en euros enteros (el riclassificato y la nota integrativa usan Euro/000). Caja = total Disponibilidades líquidas (L523). Deuda = débitos con bancos corriente y no corriente; en 2020 los débitos con otros financiadores son 0 (L560). Los débitos con la controlante Mapei (L565, L566, cash pooling y préstamos) son en gran parte financieros pero no se incluyeron por no ser bancarios ni con financiadores externos; es dudoso."
+}

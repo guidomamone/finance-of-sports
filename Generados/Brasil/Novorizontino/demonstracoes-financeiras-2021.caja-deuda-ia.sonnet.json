@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.md",
+ "generado": "2026-10-18T05:52:21.224Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de reais)",
+ "caja": {
+  "lineas": [
+   174
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   174,
+   187
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caja en L174 (952 en 2021). La deuda corresponde a Empréstimos e financiamentos corriente (L174, 87) y no corriente (L187, 12). Se excluyen los débitos con partes relacionadas y los alquileres a pagar por no ser deuda bancaria o financiera según el criterio."
+}

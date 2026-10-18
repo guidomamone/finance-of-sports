@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/Juve Stabia/Juve Stabia-bilancio-2024-IFRS-SEC-6K.md",
+ "generado": "2026-10-18T05:51:40.895Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Amounts in euro",
+ "caja": {
+  "lineas": [
+   95
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   109,
+   111,
+   119,
+   121
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda al 30/06/2024: préstamos no corrientes (L109), pasivos financieros con parte relacionada (L111, préstamos subordinados de accionistas reclasificados como pasivo financiero según IAS 32), préstamos corrientes (L119) y endeudamiento a corto plazo (L121). La inclusión de L111 es una decisión de criterio, ya que se trata de deuda con partes relacionadas."
+}

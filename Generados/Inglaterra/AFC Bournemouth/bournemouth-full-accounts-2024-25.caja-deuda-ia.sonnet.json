@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2024-25.md",
+ "generado": "2026-10-18T05:50:20.732Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£'000",
+ "caja": {
+  "lineas": [
+   805
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   810,
+   815
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Columna 30 June 2025. Deuda corriente (L810) figura con '-' en 2025, solo cuenta la no corriente (48,905). Pasivos por arrendamiento excluidos por el criterio. El encabezado de escala aparece como £°000 por OCR (£'000)."
+}

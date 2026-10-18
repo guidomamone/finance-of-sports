@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Academico Viseu/wf-2024-2025-efe7ad0a.md",
+ "generado": "2026-10-18T05:49:22.810Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"financiamentos obtidos\" + \"suprimentos hobra gmbh co kg\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "Em 30 de junho de 2025",
+ "caja": {
+  "lineas": [
+   223
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   236,
+   242
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance está en euros sin indicación de miles (valores con decimales), por lo que se asume unidades. Los 'Financiamentos obtidos' (L236 no corriente, L242 corriente) corresponden según la nota 8 a los suprimentos de HOBRA GMBH & CO. KG, por eso no hay una línea separada de suprimentos."
+}

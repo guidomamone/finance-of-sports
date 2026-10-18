@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2023.md",
+ "generado": "2026-10-18T05:49:59.678Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"esigibili entro 12 mesi\" + \"esigibili oltre 12 mesi\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "Tutti i valori elencati nelle tabelle della presente informativa sono espressi all'unità di Euro.",
+ "caja": {
+  "lineas": [
+   119
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   153,
+   154
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caja: total Disponibilità liquide (L119, suma de L117 y L118). Deuda: solo Debiti verso banche, esigibili entro 12 mesi (L153) y oltre 12 mesi (L154). No se incluyen otros debiti (tributari, altri, verso enti settore specifico) por no ser deuda financiera bancaria; los derivados activos no cuentan."
+}

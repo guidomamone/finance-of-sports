@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Dinamarca/Viborg FF/aarsrapport-2024-06-30.md",
+ "generado": "2026-10-18T05:53:21.854Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "DKK DKK",
+ "caja": {
+  "lineas": [
+   1972
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   2026,
+   2030,
+   2032
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance está en DKK sin indicación de miles, por lo que se toma como unidades; las notas usan t.DKK solo para sus propias cifras. La deuda incluye deuda hipotecaria (L2026), la parte corriente de deuda a largo plazo (L2030) y deuda con otras entidades de crédito (L2032). L2028 no se incluye porque es un subtotal de L2026."
+}

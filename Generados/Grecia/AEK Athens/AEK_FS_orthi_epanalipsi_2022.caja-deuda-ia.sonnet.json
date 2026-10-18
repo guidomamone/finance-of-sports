@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Grecia/AEK Athens/AEK_FS_orthi_epanalipsi_2022.md",
+ "generado": "2026-10-18T05:49:32.592Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε € ",
+ "caja": {
+  "lineas": [
+   434
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   445
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance en euros sin escala (unidades). Deuda: solo la línea de Μακροπρόθεσμες Δανειακές Υποχρεώσεις (L445); no hay préstamo corriente separado. L452 (obligaciones de arrendamiento financiero corriente, 467.249) quedó fuera por ser arrendamiento y no préstamo bancario; L453 y L454 son obligaciones por fichajes, no deuda financiera."
+}

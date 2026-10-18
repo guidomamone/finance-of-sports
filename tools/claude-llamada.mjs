@@ -11,7 +11,8 @@
 //   - REGISTRO de cada llamada en Admin/registros/api/claude-api.jsonl con su tarea y su costo, para que tools/gasto.mjs la cuente.
 //   - `stream: true` (to-do 197): la respuesta llega por streaming (SSE). Hace falta para topes de salida grandes (más de ~16.000 tokens): sin
 //     streaming, una respuesta larga puede pasar el tiempo máximo de la conexión. La usa el escalón 1 de extraer.mjs (128.000 tokens).
-// Modelo: Claude Opus 5.5 (el del proyecto), esfuerzo bajo por defecto. Sin SDK: el proyecto no tiene package.json (mismo criterio que
+// Modelo: Claude Opus 5.5 (el del proyecto), esfuerzo bajo por defecto. (to-do 288) `modelo` cambia el de UNA llamada (el pedido, el costo y
+// la estimación); sin `modelo`, Opus como siempre. Cada tarea pasa a Sonnet solo después de medirla. Sin SDK: el proyecto no tiene package.json (mismo criterio que
 // categorizar-claude.mjs, que tiene la clave en Admin/api-keys/claude-api.env y la tabla de precios).
 //
 // USO:
@@ -35,7 +36,7 @@ export { enviarColaBatch, pendientesEnCola, enBatch } from './claude-batch.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
-const { readKey, costOf } = await import('./categorizar-claude.mjs');
+const { readKey, costOf, PRICES } = await import('./categorizar-claude.mjs');
 process.argv = argvAntes;
 
 export const MODELO = 'claude-opus-5-5';
@@ -63,8 +64,8 @@ async function leerStream(res) {
 
 // Lo que se hace con una respuesta de la API (directa o de la Batch API): registro, costo y { datos } / { error }.
 // `registrar: false` en el modo batch: el costo ya lo anotó claude-batch.mjs al recoger el envío (una vez por pedido).
-function procesar(j, { tarea, pdf, t0, factor = 1, registrar = true }) {
-  const costo = costOf(MODELO, j.usage) * factor;
+function procesar(j, { tarea, pdf, t0, factor = 1, registrar = true, modelo = MODELO }) {
+  const costo = costOf(modelo, j.usage) * factor;
   if (registrar) appendFileSync(resolve(ROOT, 'Admin', 'registros', 'api', 'claude-api.jsonl'), JSON.stringify({ ts: new Date().toISOString(), tarea, pdf, model: j.model, promptTokenCount: j.usage?.input_tokens, cacheReadTokens: j.usage?.cache_read_input_tokens, candidatesTokenCount: j.usage?.output_tokens, costUsd: Number(costo.toFixed(6)), elapsedMs: Date.now() - t0, stopReason: j.stop_reason, ...(factor !== 1 ? { batch: true } : {}) }) + '\n');
   if (j.stop_reason === 'refusal') return { error: `refusal: ${JSON.stringify(j.stop_details)}`, costo };
   if (j.stop_reason === 'max_tokens') return { error: 'respuesta cortada por el tope de salida (max_tokens)', costo };
@@ -72,13 +73,13 @@ function procesar(j, { tarea, pdf, t0, factor = 1, registrar = true }) {
   try { return { datos: JSON.parse(texto), costo }; } catch { return { error: `JSON inválido (stop=${j.stop_reason})`, costo }; }
 }
 
-export async function llamarClaude({ system, user, schema, tarea, pdf = null, esfuerzo = 'low', maxTokens = 16000, timeoutMs = 300000, stream = false }) {
+export async function llamarClaude({ system, user, schema, tarea, pdf = null, esfuerzo = 'low', maxTokens = 16000, timeoutMs = 300000, stream = false, modelo = MODELO }) {
   clave ||= readKey();
-  const body = { model: MODELO, ...(stream ? { stream: true } : {}), max_tokens: maxTokens, system: [{ type: 'text', text: system, cache_control: { type: 'ephemeral' } }], messages: [{ role: 'user', content: user }], output_config: { effort: esfuerzo, format: { type: 'json_schema', schema } }, fallbacks: 'default' };
+  const body = { model: modelo, ...(stream ? { stream: true } : {}), max_tokens: maxTokens, system: [{ type: 'text', text: system, cache_control: { type: 'ephemeral' } }], messages: [{ role: 'user', content: user }], output_config: { effort: esfuerzo, format: { type: 'json_schema', schema } }, fallbacks: 'default' };
   if (enBatch() && !stream) {
     const id = idBatch(body);
     const r = respuestaBatch(id);
-    if (r?.mensaje) return procesar(r.mensaje, { tarea, pdf, t0: Date.now(), factor: FACTOR_BATCH, registrar: false });
+    if (r?.mensaje) return procesar(r.mensaje, { tarea, pdf, t0: Date.now(), factor: FACTOR_BATCH, registrar: false, modelo });
     if (r?.error) return { error: `Batch API: ${r.error}`, costo: 0 };
     anotarEnCola(id, body, tarea, pdf); return { pendiente: true, costo: 0 };
   }
@@ -90,7 +91,7 @@ export async function llamarClaude({ system, user, schema, tarea, pdf = null, es
     catch (e) { ultimo = String(e); await sleep(3000 * (intento + 1)); continue; }
     if (res.ok) {
       let j; try { j = stream ? await leerStream(res) : await res.json(); } catch (e) { ultimo = String(e); await sleep(3000 * (intento + 1)); continue; }
-      return procesar(j, { tarea, pdf, t0 });
+      return procesar(j, { tarea, pdf, t0, modelo });
     }
     ultimo = `HTTP ${res.status}: ${(await res.text()).slice(0, 300)}`;
     if (res.status === 429 || res.status >= 500) { await sleep(5000 * (intento + 1)); continue; }
@@ -101,5 +102,5 @@ export async function llamarClaude({ system, user, schema, tarea, pdf = null, es
 
 // Estimación grosera de tokens de un texto (para los ensayos): ~3,5 caracteres por token en los idiomas del corpus.
 export const tokensDe = (texto) => Math.ceil(String(texto).length / 3.5);
-// Precio de Opus 5.5 por millón de tokens (el mismo de categorizar-claude.mjs PRICES): entrada 4, salida 20. En modo batch, la mitad.
-export const usdEstimado = (tokEntrada, tokSalida) => ((tokEntrada * 4 + tokSalida * 20) / 1e6) * (enBatch() ? FACTOR_BATCH : 1);
+// Precio por millón de tokens del modelo (categorizar-claude.mjs PRICES; Opus 5.5: entrada 4, salida 20). En modo batch, la mitad.
+export const usdEstimado = (tokEntrada, tokSalida, modelo = MODELO) => { const p = PRICES[modelo] || PRICES[MODELO]; return ((tokEntrada * p.in + tokSalida * p.out) / 1e6) * (enBatch() ? FACTOR_BATCH : 1); };

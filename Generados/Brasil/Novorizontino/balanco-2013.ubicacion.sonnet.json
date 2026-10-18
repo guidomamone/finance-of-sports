@@ -1,0 +1,74 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/balanco-2013.pdf",
+ "md": "Clubes/Brasil/Novorizontino/balanco-2013.md",
+ "mdSha1": "aaa7032157ba2e000b330657cef0e9fdff926d52",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:12:58.366Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    12,
+    36
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    52,
+    78
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    88,
+    95
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 3,
+   "lineas": [
+    112,
+    166
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 4,
+   "lineas": [
+    182,
+    223
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 4,
+   "lineas": [
+    228,
+    232
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4",
+  "b5",
+  "b6"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con centavos (ej. PREJUÍZO 728.230,75), sin indicación de miles o millones",
+ "moneda": "BRL",
+ "columna_ejercicio": "VALOR",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El estado de resultados (receitas y despesas operacionais) está en b4 y continúa en b5; b6 trae el resultado final (PREJUÍZO 728.230,75). b1 y b2 son balance (activo y pasivo) y b3 es el cierre con firmas. No hay notas explicativas, y el documento tiene una sola columna sin año anterior."
+}

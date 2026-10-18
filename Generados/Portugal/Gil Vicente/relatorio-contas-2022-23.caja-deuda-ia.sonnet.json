@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Gil Vicente/relatorio-contas-2022-23.md",
+ "generado": "2026-10-18T05:51:14.618Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em euros)",
+ "caja": {
+  "lineas": [
+   766
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   779,
+   784
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usó el balance individual (L751-L789), con la columna 30 jun.23. Deuda = Financiamentos obtidos no corriente (L779) y corriente (L784); incluyen 'Outros Empréstimos' (mútuos de asociados) y contas caucionadas según la nota 15. El resumen del informe de gestión (L363, L368) repite estos mismos valores, por eso no se incluyó."
+}

@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Dinamarca/FC København/aarsrapport-2024-12-31.md",
+ "generado": "2026-10-18T05:50:59.304Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "t.kr.",
+ "caja": {
+  "lineas": [
+   442
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Likvide beholdninger (L442) es la caja. El balance no tiene préstamos bancarios ni financieros explícitos; solo 'Anden gæld' (otras deudas, L491 y L498), 'Deposita' y deudas comerciales o con empresas del grupo, que no se pueden identificar como deuda financiera sin las notas. La escala t.kr. significa miles de coronas danesas."
+}

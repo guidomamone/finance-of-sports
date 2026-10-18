@@ -1,0 +1,254 @@
+{
+ "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2018.pdf",
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2018.md",
+ "mdSha1": "ff6f2ace8d1849ec4b2035dd73cde7c64ac47ad7",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:08:15.622Z",
+ "bloques": {
+  "b1": {
+   "pagina": 4,
+   "lineas": [
+    133,
+    139
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 8,
+   "lineas": [
+    267,
+    271
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    281,
+    286
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    296,
+    299
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 9,
+   "lineas": [
+    311,
+    314
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 9,
+   "lineas": [
+    322,
+    326
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 10,
+   "lineas": [
+    346,
+    358
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    364,
+    370
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    380,
+    385
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    393,
+    396
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    404,
+    410
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 12,
+   "lineas": [
+    424,
+    429
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    441,
+    449
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 13,
+   "lineas": [
+    485,
+    496
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 13,
+   "lineas": [
+    502,
+    506
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 14,
+   "lineas": [
+    520,
+    524
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 14,
+   "lineas": [
+    538,
+    543
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 15,
+   "lineas": [
+    559,
+    567
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 15,
+   "lineas": [
+    573,
+    581
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 15,
+   "lineas": [
+    583,
+    590
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 15,
+   "lineas": [
+    596,
+    601
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 16,
+   "lineas": [
+    617,
+    652
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 17,
+   "lineas": [
+    662,
+    702
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 18,
+   "lineas": [
+    712,
+    735
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 18,
+   "lineas": [
+    741,
+    750
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 19,
+   "lineas": [
+    764,
+    768
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 19,
+   "lineas": [
+    774,
+    780
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "miles",
+ "escala_evidencia": "(Valores expresados en miles de pesos Colombianos)",
+ "moneda": "COP",
+ "columna_ejercicio": "A 31 de Diciembre de 2018",
+ "columna_anterior": "A 31 de Diciembre de 2017 Reexp",
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Falta en la transcripción el estado de resultados 2018 (entre las páginas 15 y 19 solo hay notas y el índice no muestra ningún bloque de estado)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice solo contiene notas (efectivo, cuentas por cobrar, ingresos, costos, gastos); no aparece ningún cuadro de estado de resultados con totales y resultado del ejercicio.",
+   "bloques": [
+    "b19",
+    "b21",
+    "b22",
+    "b25",
+    "b27"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "No se ve ningún bloque del estado de resultados del ejercicio 2018. Hay notas de ingresos (b19, b20), costo de ventas (b21), gastos operacionales (b22, b23, b24), otros gastos (b25) y financieros (b27), pero sin estado no las elijo como notas. Si el estado existe pero no fue transcrito, habría que recuperarlo; luego esas notas serían candidatas. Faltan en el índice los bloques b1 y b26."
+}

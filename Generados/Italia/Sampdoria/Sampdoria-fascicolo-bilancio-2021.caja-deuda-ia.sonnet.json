@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2021.md",
+ "generado": "2026-10-18T05:52:55.083Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "31 DICEMBRE 2021",
+ "caja": {
+  "lineas": [
+   795
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   827,
+   828,
+   830,
+   831
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los prospetti contabili (stato patrimoniale) están en euros enteros, sin indicación de escala; los resúmenes de la relazione están en Euro/000. Deuda = debiti verso banche y verso altri finanziatori, corrientes y no corrientes (L831 es 0 en 2021)."
+}

@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Inglaterra/Newcastle United/newcastle-united-group-accounts-2024-25.md",
+ "generado": "2026-10-18T05:52:15.996Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£000 £000",
+ "caja": {
+  "lineas": [
+   1089
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Balance consolidado 2025: la caja es 'Cash at bank and in hand' (L1089, valor 22,991 por orden de cifras, aunque la alineación OCR es incierta). El balance solo muestra 'Creditors' agregados (L1091, L1097) sin desglosar préstamos; la deuda financiera está en las notas, que no se incluyen, por lo que no se eligen líneas."
+}

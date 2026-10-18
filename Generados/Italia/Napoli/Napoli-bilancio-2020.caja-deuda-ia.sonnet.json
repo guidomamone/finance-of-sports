@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Italia/Napoli/Napoli-bilancio-2020.md",
+ "generado": "2026-10-18T05:52:15.675Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "redatto in unità Euro",
+ "caja": {
+  "lineas": [
+   170,
+   171
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Caja = depositi bancari e postali (L170) + denaro e valori in cassa (L171); el total L172 incluye ambas. El pasivo no tiene debiti verso banche ni otros préstamos financieros; los debiti v/Enti settore specifico (L214) son deudas con ligas/clubes por fichajes y no se consideran deuda financiera."
+}

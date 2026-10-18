@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Bélgica/Mechelen/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-18T05:52:08.202Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "balanstotaal van € 41.691.868,74",
+ "caja": {
+  "lineas": [
+   248
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Solo se aportó el activo del balance (L142-L250); el pasivo (schulden, financiële schulden, kredietinstellingen) no figura en las páginas, por lo que no se puede identificar la deuda financiera. La escala se infiere de los importes en euros completos; el documento no declara una escala explícita en el balance."
+}

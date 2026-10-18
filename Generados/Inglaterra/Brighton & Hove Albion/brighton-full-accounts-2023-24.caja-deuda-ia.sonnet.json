@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2023-24.md",
+ "generado": "2026-10-18T05:50:25.176Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "is rounded to the nearest thousand",
+ "caja": {
+  "lineas": [
+   854
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Los importes de la tabla están desordenados (£000). El balance solo muestra 'Cash at bank and in hand' (L854, 2024: 2,909, la segunda cifra de la columna del activo), sin desglose de préstamos bancarios. Los acreedores (L856-L865) agrupan importes adeudados a la matriz (£229.2m) y comerciales; no hay línea separada de deuda financiera, por lo que dejo la lista vacía sin marcar 'ninguna' porque el detalle está en notas no incluidas."
+}

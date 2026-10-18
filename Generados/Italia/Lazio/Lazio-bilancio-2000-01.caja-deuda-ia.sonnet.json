@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-2000-01.md",
+ "generado": "2026-10-18T05:51:45.057Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"debiti verso altri finanziatori\" + \"verso banche entro l anno\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "STATO PATRIMONIALE PASSIVO IN EURO",
+ "caja": {
+  "lineas": [
+   809
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   841,
+   842
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance está en euros (30/06/2001), con una versión paralela en lire (L1068, L1100, L1101). Se eligen las líneas en euros. Los 'Debiti verso banche' no distinguen entre corriente y no corriente, y se usan junto con 'Debiti verso altri finanziatori' como equivalentes del criterio. La escala 'Lire miliardi' del estado reclasificado (L709) es otra presentación y no se usó."
+}

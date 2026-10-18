@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Grecia/PAOK/PAOK_FS_2019-06-30.md",
+ "generado": "2026-10-18T05:52:36.131Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"βραχυπροθεσμο μεροσ μακροπροθεσμων δανειων\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "Όπως προκύπτει από τις οικονομικές καταστάσεις... 5.278 χιλ. ευρώ (solo en el informe de gestión); el balance está en euros con céntimos, p. ej. 2.986.246,06",
+ "caja": {
+  "lineas": [
+   371
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   400
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance está en euros completos con decimales; no hay una frase explícita de escala en el balance. La deuda es el préstamo convertible de 8.900.000 (L400, largo plazo); no hay parte corriente de préstamos por separado. Las 'Λοιπές μακροπρόθεσμες υποχρεώσεις' (L401) son obligaciones fiscales, no deuda financiera."
+}

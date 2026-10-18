@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Ferroviaria/balanco-2010.md",
+ "generado": "2026-10-18T05:51:01.635Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Em Reais)",
+ "caja": {
+  "lineas": [
+   116
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   133,
+   140
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance está en reais (unidades) con centavos, aunque las notas usan 'R$ mil'. Deuda = Empréstimos corriente (L133) y no corriente (L140); no incluye parcelamentos de tributos ni proveedores."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2022-23.md",
+ "generado": "2026-10-18T05:50:17.579Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Capitale sociale: 5.976.255,00",
+ "caja": {
+  "lineas": [
+   800
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   822,
+   838
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance no declara escala explícita; los importes están en euros enteros (unidades). Caja = Totale disponibilita' liquide (L800). Deuda = debiti verso banche totales (L838, ya incluye corriente y no corriente) más debiti verso soci per finanziamenti (L822, 8.235.000), que es financiación de accionistas; podría excluirse según el criterio."
+}

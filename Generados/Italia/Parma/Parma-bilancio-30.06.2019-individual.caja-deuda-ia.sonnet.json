@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Parma/Parma-bilancio-30.06.2019-individual.md",
+ "generado": "2026-10-18T05:52:39.347Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"esigibili entro l esercizio successivo\" + \"reale mutua\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "Il bilancio dell'esercizio chiuso al 30 giugno 2019 è redatto in unità di euro.",
+ "caja": {
+  "lineas": [
+   463
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   497,
+   498,
+   501
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Criterio: 'esigibili entro/oltre l'esercizio successivo' de debiti verso banche (L497, L498) y verso altri finanziatori (L501). Se excluyen proveedores, controladas, controlantes, tributarios y otros debiti. 'Reale Mutua' aparece solo como emisor de fideiussioni (garantía), no como deuda en balance. Los debiti verso controllanti (L511, 1.440.000) podrían ser financieros, pero no se incluyen por falta de evidencia."
+}

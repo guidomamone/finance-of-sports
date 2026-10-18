@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Países Bajos/PSV/jaarverslag-2023-24.md",
+ "generado": "2026-10-18T05:52:47.770Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Bedragen in EUR x 1.000)",
+ "caja": {
+  "lineas": [
+   1614
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1645,
+   1647,
+   1653
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance consolidado a 30 jun 2024. Deuda financiera: préstamos subordinados (L1645), otras deudas con prestamistas/leasing (L1647) y vencimiento corriente de deudas a largo plazo (L1653, que incluye préstamos subordinados y otras deudas a largo plazo). Excluidas las deudas por transfers y las deudas fiscales (aplazamiento Covid)."
+}

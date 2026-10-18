@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Torino/Torino-bilancio-2024.md",
+ "generado": "2026-10-18T05:53:17.445Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Bilancio al 31 dicembre 2024",
+ "caja": {
+  "lineas": [
+   412
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   448,
+   449
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance oficial (L363-L461) está en euros enteros, por eso la escala es unidades; las tablas de la relazione sulla gestione están en miles de euros (L77, L99). Caja: total disponibilidades líquidas (L412). Deuda: préstamos del socio controlante U.T. Communications (L448) y deudas con bancos (L449), cada línea con tramo corriente y no corriente; las deudas con clubes de fútbol y proveedores quedan excluidas por ser comerciales."
+}

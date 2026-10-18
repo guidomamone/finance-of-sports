@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Países Bajos/PSV/jaarverslag-2024-25.md",
+ "generado": "2026-10-18T05:52:49.187Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Bedragen in EUR x 1.000)",
+ "caja": {
+  "lineas": [
+   1408
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1453,
+   1455,
+   1463
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usó el balance consolidado al 30 de junio de 2025. Deuda: préstamos subordinados (L1453), otras deudas a largo plazo con prestamistas por el leasing del sonido del estadio (L1455) y la parte corriente de las deudas a largo plazo (L1463, que incluye 100 de préstamos subordinados y 107 de otras deudas). Se excluyen las deudas por transfers, los acreedores comerciales y las otras deudas corrientes (L1466). La línea L1408 tiene el número de caja de L1409 en formato de balance: la caja es 'Liquide middelen (9)' con 9.155, aunque en el texto aparece en L1408 junto al subtotal de activos fijos materiales; no se descarta que la numeración difiera."
+}

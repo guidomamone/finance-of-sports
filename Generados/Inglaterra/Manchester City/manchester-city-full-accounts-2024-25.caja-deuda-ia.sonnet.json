@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Inglaterra/Manchester City/manchester-city-full-accounts-2024-25.md",
+ "generado": "2026-10-18T05:52:06.604Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£000",
+ "caja": {
+  "lineas": [
+   724
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no tiene líneas separadas de préstamos. Hay un préstamo intragrupo de £102.0m (City Football Group USA, Eurobond) que se menciona en la nota 25 y está dentro de 'Trade and other payables' no corriente (L741), que es un agregado mixto; no se incluye como deuda financiera. L722 tiene OCR dañado (§51,216)."
+}

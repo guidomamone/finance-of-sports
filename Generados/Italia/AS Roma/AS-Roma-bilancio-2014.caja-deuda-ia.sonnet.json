@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2014.md",
+ "generado": "2026-10-18T05:49:49.443Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"finanziamenti a breve termine\" + \"finanziamenti a lungo termine\" (o sus equivalentes en este documento).",
+ "escala": "miles",
+ "escala_evidencia": "Valori in € /000",
+ "caja": {
+  "lineas": [
+   2070
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   2107,
+   2116
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda = Finanziamenti no corrientes (L2107, 61.520) + Finanziamenti corrientes (L2116, 75.414), columna 30/06/2014. Caja = Disponibilità liquide (L2070, 4.858). Las Attività finanziarie correnti (L2065) no se incluyen."
+}

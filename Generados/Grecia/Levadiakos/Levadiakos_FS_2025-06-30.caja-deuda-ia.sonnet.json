@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2025-06-30.md",
+ "generado": "2026-10-18T05:52:04.124Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "30/6/2025 | 30/6/2024 (importes en euros con decimales, ej. 686.527,67; \"ευρώ 623.023,38\")",
+ "caja": {
+  "lineas": [
+   570
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no declara escala explícita; los importes están en euros exactos con decimales. Las 'Λοιπές μακροπρόθεσμες υποχρεώσεις' (L585, 43.729,46) corresponden según el informe de gestión a una obligación por arrendamiento financiero de un autobús, pero en el balance no figuran como préstamos bancarios, por lo que no las incluí como deuda; no hay préstamos ni obligaciones bancarias en el balance."
+}

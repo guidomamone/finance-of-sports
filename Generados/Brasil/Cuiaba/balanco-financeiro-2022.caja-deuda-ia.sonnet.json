@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Cuiaba/balanco-financeiro-2022.md",
+ "generado": "2026-10-18T05:50:48.971Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Valores Expressos em Reais (R$)",
+ "caja": {
+  "lineas": [
+   325
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   367,
+   372
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El documento incluye dos versiones del balance con los mismos valores (internas L12/L25/L31 y auditadas L325/L367/L372); se usaron las líneas del balance auditado, columna 2022."
+}

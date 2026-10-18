@@ -1,0 +1,55 @@
+{
+ "pdf": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2025-06-30.pdf",
+ "md": "Clubes/Grecia/Volos NFC/Volos_income_stmt_2025-06-30.md",
+ "mdSha1": "55eceb22502eccc6cfda4fef0de6ea5e9749cb6c",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:20:30.995Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    7,
+    25
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra ninguna frase de escala (como «σε χιλιάδες ευρώ») sobre el cuadro.",
+ "moneda": "EUR",
+ "columna_ejercicio": "2024-2025",
+ "columna_anterior": null,
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El cuadro b1 está expresado en euros enteros (sin miles)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No se ve ninguna indicación de escala en las líneas superiores del bloque b1.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿El cuadro b1 es del perímetro individual de la sociedad ΒΟΛΟΣ Ν.Π.Σ. ΠΑΕ?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El título menciona solo a la sociedad y no hay indicación de consolidación.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Solo hay un bloque: estado de resultados por función (Κατάσταση αποτελεσμάτων κατά λειτουργία) del período 2024-2025, con una sola columna de importes. No hay columna del año anterior ni notas de desglose."
+}

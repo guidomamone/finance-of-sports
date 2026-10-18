@@ -54,6 +54,24 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   individual). De los otros, 121 no entran en la API (máximo 255 opciones por pregunta) y 29 sin estado. Revertido (código en el commit
   70c91b6f3, medición en `Admin/mediciones/perimetro-a2-jev-medicion.txt`). Lo que enseñó: Jev sirve para opciones cerradas y cortas sin
   matices (filas del balance en caja y deuda), no para criterios con trampas que hay que explicarle.
+- **Sonnet en vez de Opus en perimetro-a2** (to-do 288, 2026-10-18, US$ 13,82 entre las dos corridas): misma entrada y misma compuerta,
+  contra el ajuste `perimetro` de 202 documentos (`Admin/mediciones/perimetro-a2-verdad-ajustes.tsv`). Opus: 119 bien · 2 MAL · 81 cola;
+  Sonnet: 83 bien · 5 MAL · 114 cola. Sonnet mete 4 errores que Opus no tiene (Rapid Wien 2017-18, 2019-20 y 2023-24 y Trabzonspor
+  2021-22: "individual" donde el ajuste dice consolidado) y manda a la cola 36 que Opus decidía bien (casi todo Sandefjord). No entra: A2 sigue
+  en Opus. El flag `--modelo` queda para volver a medir. Mediciones: `Admin/mediciones/perimetro-a2-opus.txt` y `perimetro-a2-sonnet.txt`.
+- **Sonnet en vez de Opus en localizar** (to-do 288, 2026-10-18, US$ 3,97, `prueba-mediana`): de 77 documentos comparables, los bloques del
+  estado de resultados son los mismos en 76 de 76 (Torino 2020 es a mano), pero las notas de ingresos o gastos cambian en 45 (agrega o saca
+  un bloque; Estoril 2021-22 suma b47 y b48 a gastos, Chaves 2021-22 saca b48) y el perímetro pasa a "no se sabe" en 7. Sin extraer y
+  verificar no se sabe cuál acierta, y el ahorro es ~US$ 0,025 por documento: localizar sigue en Opus (decisión de Guido). Para retomarlo,
+  extraer + verificar con `.ubicacion.sonnet.json` en esos 45. Comparación: `Admin/mediciones/localizar-opus-vs-sonnet.txt`.
+- **Sonnet en vez de Opus en extraer** (to-do 288, 2026-10-18, `prueba-rapida`, 44 documentos; Opus otra vez US$ 7,44 y Sonnet US$ 3,35):
+  verificar con cada juego de filas contra lo cargado (los 2 `filas-a-mano` no se miden). Opus nuevo: 21 cargan igual, 8 cierran con otra
+  carga, 13 a la cola con los MISMOS totales (dudas nuevas sin respuesta en la cola), 0 con otros totales. Sonnet: 15 igual, 9 con otra
+  carga, 8 a la cola con los mismos totales y 10 a la cola con OTROS totales (lee mal importes o filas). No entra: extraer sigue en Opus.
+  Lo que enseñó: repetir la extracción con el mismo modelo ya cambia 8 cargas de 42 (el piso de variación es alto: cualquier cambio de
+  extraer se mide contra una segunda corrida, no contra lo cargado). Mediciones: `Admin/mediciones/extraer-verificar-cargado-vs-*.txt`.
+- **Sonnet en categorizar**: ya medido antes (`Admin/mediciones/test-categorizar-claude.md`, 259 rubros: 74,9% contra 81,1% de Opus, peor
+  calibrado); en el cierre del to-do 288 (2026-10-18) no se volvió a medir. Sigue en Opus.
 
 ## 2026-10-08, dos trampas que costaron una corrida
 
@@ -115,6 +133,12 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   Admin/mediciones/perimetro-a2-medicion-recorte-232e.txt. El contexto alrededor de los títulos le sirve a Claude para ubicar el estado.
 
 ## Conocido, sin daño hoy (no se trabaja salvo que algo cambie)
+- **Renglones NBB "(+)/(-)" impresos negativos (to-do 298 b2, 2026-10-18): no se reproduce.** El onboarding de Bélgica vio el 631/4 de
+  Beerschot 2025 (−64.834) entrar positivo y necesitó un ajuste `fila`. Con el código de hoy (y el 298 b1), Beerschot sin ese ajuste ni los
+  de signo financiero da el renglón negativo, abierto por su nota ("Teruggenomen" −8.210 y −56.624, L817 y L820), y cierra con la lectura 5;
+  OH Leuven 2025 da el 631/4 y el 635/8 negativos con la lectura 4. La propuesta de cargar.mjs lleva el signo de la verificación (`signoFijo`).
+  No se pudo correr la propuesta de Beerschot acá (las categorías tienen que rehacerse con los rubros nuevos). Retomar si un documento NBB
+  nuevo vuelve a necesitar un ajuste `fila` de signo para un renglón "(+)/(-)".
 
 Defectos medidos que hoy no afectan ningún dato publicado ni frenan nada. Cada uno dice cuándo se retoma; si pasa, vuelve a `Admin/TODO.md`.
 Salieron del TODO el 2026-10-15 (pedido de Guido: hacían ruido en la lista).

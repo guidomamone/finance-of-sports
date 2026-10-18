@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2023.md",
+ "generado": "2026-10-18T05:51:19.040Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em Reais - R$)",
+ "caja": {
+  "lineas": [
+   142
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   169,
+   178
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Cifras en reales sin escala de miles ni millones. Deuda financiera = Empréstimos e financiamentos corriente (L169) y no corriente (L178), columna 2023."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Portimonense/Relatorio-Contas-23-24_assinado.md",
+ "generado": "2026-10-18T05:52:42.475Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "EURO",
+ "caja": {
+  "lineas": [
+   994
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1008,
+   1013
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance en euros con céntimos, sin escala en miles. Financiamentos obtidos (no corriente y corriente) incluyen locações financeiras y suprimentos de accionistas (Nota 9); se incluyen ambos porque son financiamiento."
+}

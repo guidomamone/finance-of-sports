@@ -1,0 +1,278 @@
+{
+ "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2023-24.pdf",
+ "md": "Clubes/Portugal/Nacional/relatorio-contas-2023-24.md",
+ "mdSha1": "ceed686f2363a8a0aa5d84b94e1bc627e14d1689",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:10:57.697Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    71,
+    108
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    127,
+    144
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    163,
+    188
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    207,
+    218
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    222,
+    232
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 9,
+   "lineas": [
+    304,
+    310
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    377,
+    383
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    403,
+    418
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 12,
+   "lineas": [
+    424,
+    428
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    441,
+    453
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 13,
+   "lineas": [
+    459,
+    473
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    484,
+    487
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 14,
+   "lineas": [
+    495,
+    498
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 14,
+   "lineas": [
+    500,
+    506
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 14,
+   "lineas": [
+    514,
+    519
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 15,
+   "lineas": [
+    533,
+    549
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 15,
+   "lineas": [
+    555,
+    562
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 16,
+   "lineas": [
+    576,
+    603
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 17,
+   "lineas": [
+    618,
+    632
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 18,
+   "lineas": [
+    654,
+    695
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 19,
+   "lineas": [
+    708,
+    726
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 20,
+   "lineas": [
+    742,
+    756
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 20,
+   "lineas": [
+    764,
+    772
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 21,
+   "lineas": [
+    785,
+    799
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 21,
+   "lineas": [
+    807,
+    817
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 22,
+   "lineas": [
+    832,
+    854
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 23,
+   "lineas": [
+    868,
+    888
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 24,
+   "lineas": [
+    903,
+    913
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 24,
+   "lineas": [
+    919,
+    922
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b23",
+  "b24",
+  "b25"
+ ],
+ "notas_gastos": [
+  "b26",
+  "b27",
+  "b28",
+  "b29"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(montantes em euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "30-jun-24 12 meses",
+ "columna_anterior": "30-jun-23 12 meses",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se usa la columna '30-jun-24 13 meses' del cuadro 15.1 (b23) como importe del ejercicio, pese a que el estado de resultados (b2) dice '12 meses'?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Total das Vendas e Prestações de Serviços",
+   "texto": "El encabezado de b23 dice '13 meses' mientras que el estado y las demás notas dicen '12 meses'; probablemente es un error tipográfico.",
+   "bloques": [
+    "b23",
+    "b2"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados individual (Demonstração dos Resultados, b2) en euros, ejercicio cerrado el 30-jun-2024 con comparativo 30-jun-2023. Notas 15.1 (ventas y prestaciones de servicios), 15.2 (otros rendimientos), 16 (subsidios), 17 (FSE), 18 (personal), 19 (otros gastos) y 20 (provisiones). No se eligen balance, flujos, patrimonio, impuestos ni cuadros de activos fijos o intangibles. El cuadro b12 es por jugador y no se elige."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2013-14.md",
+ "generado": "2026-10-18T05:53:09.465Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "EUR'000",
+ "caja": {
+  "lineas": [
+   2435
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   2451,
+   2455
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se tomó la columna 30.Jun.14. Deuda financiera = Financiamentos obtidos no corriente (31.680) + corriente (149.057) = 180.737, que coincide con la nota 30."
+}

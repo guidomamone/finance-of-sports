@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2019-06-30.md",
+ "generado": "2026-10-18T05:49:36.851Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"δανεια\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "No hay indicación explícita de escala; los importes figuran en euros con decimales (p. ej. 307.579,07)",
+ "caja": {
+  "lineas": [
+   42
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Caja: Ταμειακά διαθέσιμα και ισοδύναμα (L42). No hay línea de δάνεια como pasivo; L33 'Δάνεια και απαιτήσεις' es un activo financiero (préstamos y cuentas por cobrar), no deuda. Las obligaciones de largo plazo (L57) son 'otras' sin detalle de préstamos, y la nota 19 indica que no hay obligaciones por préstamos a más de 5 años."
+}

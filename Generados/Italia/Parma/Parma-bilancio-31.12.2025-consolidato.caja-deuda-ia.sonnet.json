@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2025-consolidato.md",
+ "generado": "2026-10-18T05:52:41.382Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Stato patrimoniale consolidato (importi espressi in euro, senza indicazione di migliaia: es. 'Totale disponibilità liquide | 10.788.917')",
+ "caja": {
+  "lineas": [
+   444
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   482
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El documento no indica la escala con una frase explícita; los importes están en euros enteros. Caja: total de disponibilidades líquidas (L444, que suma L442 y L443). Deuda financiera: solo 'debiti verso banche' (L482, todo corriente). Los débitos con la controladora (L490) podrían ser financieros, pero no se pueden confirmar como préstamos y no se incluyeron."
+}

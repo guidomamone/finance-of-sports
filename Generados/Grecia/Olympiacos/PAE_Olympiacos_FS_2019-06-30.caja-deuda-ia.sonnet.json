@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Grecia/Olympiacos/PAE_Olympiacos_FS_2019-06-30.md",
+ "generado": "2026-10-18T05:52:23.347Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(ποσά σε €)",
+ "caja": {
+  "lineas": [
+   327
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   359
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La única línea de deuda financiera es 'Λοιπές χρηματοοικονομικές υποχρεώσεις' (otras obligaciones financieras, corriente, 880.000 €); no hay préstamos bancarios no corrientes en el balance. Se tomó la columna Όμιλος (Grupo) al 30/6/2019."
+}

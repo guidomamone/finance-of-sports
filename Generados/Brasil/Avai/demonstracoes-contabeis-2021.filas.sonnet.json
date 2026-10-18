@@ -1,0 +1,538 @@
+{
+ "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf",
+ "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.md",
+ "mdSha1": "f60c96bc760004b80d5112d4b66a40912220689f",
+ "ubicacionSha1": "773e010e5357b30d7602a70eb8a4fc98e7f4310d",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T14:33:58.782Z",
+ "ubicacion": {
+  "estado": [
+   "b6"
+  ],
+  "notas_ingresos": [
+   "b49"
+  ],
+  "notas_gastos": [
+   "b51"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b6",
+   "escala": "unidades",
+   "evidencia": "L117: (Em reais)"
+  },
+  {
+   "bloque": "b49",
+   "escala": "unidades",
+   "evidencia": "L922: sin indicación de escala; importes en reais como el estado"
+  },
+  {
+   "bloque": "b51",
+   "escala": "unidades",
+   "evidencia": "L965: sin indicación de escala; importes en reais como el estado"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b6",
+   "linea": 121,
+   "etiqueta": "Receita Bruta",
+   "actual": "25.303.151",
+   "anterior": "44.035.052",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 122,
+   "etiqueta": ". Receitas do Futebol Profissional",
+   "actual": "25.303.151",
+   "anterior": "44.035.052",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 123,
+   "etiqueta": ". Receitas de Mensalidades dos Sócios",
+   "actual": "3.488.065",
+   "anterior": "4.258.094",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 124,
+   "etiqueta": ". Receitas de Negociação de Atletas Profissionais",
+   "actual": "2.509.456",
+   "anterior": "25.828.160",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 125,
+   "etiqueta": ". Receitas Arrendaments, Patrocínios e Publicidades",
+   "actual": "3.473.746",
+   "anterior": "3.057.393",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 126,
+   "etiqueta": ". Receitas de Repasses da Loteria Timemania",
+   "actual": "619.095",
+   "anterior": "723.827",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 127,
+   "etiqueta": ". Receitas de Venda e uso Marca",
+   "actual": "1.124.980",
+   "anterior": "659.223",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 128,
+   "etiqueta": ". Receitas TV e transmissão jogos",
+   "actual": "12.936.521",
+   "anterior": "7.871.024",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 129,
+   "etiqueta": ". Receitas Diversas",
+   "actual": "1.123.890",
+   "anterior": "1.476.241",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 130,
+   "etiqueta": ". Receita Financeira",
+   "actual": "27.397",
+   "anterior": "161.090",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 131,
+   "etiqueta": "Custo Operacional Bruto",
+   "actual": "43.772.256",
+   "anterior": "34.404.582",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 132,
+   "etiqueta": ". Custos Futebol Profissional total",
+   "actual": "41.707.360",
+   "anterior": "32.665.767",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 133,
+   "etiqueta": ". Custos Futebol Profissional",
+   "actual": "37.345.703",
+   "anterior": "32.154.070",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 134,
+   "etiqueta": ". Despesas financeiras deságio",
+   "actual": "3.995.456",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 135,
+   "etiqueta": ". Custos Futebol Feminino",
+   "actual": "354.097",
+   "anterior": "503.518",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 136,
+   "etiqueta": ". Custos Esportes Olímpicos",
+   "actual": "12.103",
+   "anterior": "8.179",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 137,
+   "etiqueta": ". Futebol Amador (Custos - Transferência)",
+   "actual": "2.064.896",
+   "anterior": "1.738.815",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 138,
+   "etiqueta": ". Custos do Futebol Categoria de Base",
+   "actual": "7.805.604",
+   "anterior": "4.482.749",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 139,
+   "etiqueta": ". ( - ) Transferência para o Imobilizado",
+   "actual": "(5.740.708)",
+   "anterior": "(2.743.935)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 140,
+   "etiqueta": "Resultado da Atividade Esportiva",
+   "actual": "(18.469.105)",
+   "anterior": "9.630.470",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 141,
+   "etiqueta": "Despesas Operacionais",
+   "actual": "15.142.893",
+   "anterior": "7.727.015",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 142,
+   "etiqueta": ". Administrativas",
+   "actual": "12.192.491",
+   "anterior": "6.936.299",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 143,
+   "etiqueta": ". Depreciação e Amortização do Imobilizado",
+   "actual": "260.315",
+   "anterior": "279.368",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 144,
+   "etiqueta": ". Despesas Financeiras",
+   "actual": "2.690.087",
+   "anterior": "511.348",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 145,
+   "etiqueta": "Despesas Avaí Store",
+   "actual": "855.694",
+   "anterior": "578.033",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 146,
+   "etiqueta": ". Materiais e despesas diversas",
+   "actual": "96.396",
+   "anterior": "92.864",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 147,
+   "etiqueta": ". CMV e Icms",
+   "actual": "759.297",
+   "anterior": "485.169",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 148,
+   "etiqueta": "Superávit / Déficit Exercício",
+   "actual": "(34.467.692)",
+   "anterior": "1.325.422",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b49",
+   "linea": 926,
+   "etiqueta": ". Receitas de Mensalidades dos Sócios",
+   "actual": "3.488.065",
+   "anterior": "4.258.094",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": ". Receitas de Mensalidades dos Sócios"
+  },
+  {
+   "bloque": "b49",
+   "linea": 927,
+   "etiqueta": ". Receitas de Bilheteria com Jogos",
+   "actual": "285.603",
+   "anterior": "182.619",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": ". Receitas Diversas"
+  },
+  {
+   "bloque": "b49",
+   "linea": 928,
+   "etiqueta": ". Receitas de Negociação de Atletas Profissionais",
+   "actual": "1.921.831",
+   "anterior": "25.828.160",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": ". Receitas de Negociação de Atletas Profissionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 929,
+   "etiqueta": ". Receitas de Arrendamentos e Locações",
+   "actual": "357.676",
+   "anterior": "77.015",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": ". Receitas Arrendaments, Patrocínios e Publicidades"
+  },
+  {
+   "bloque": "b49",
+   "linea": 930,
+   "etiqueta": ". Receitas de Patrocínio",
+   "actual": "2.681.328",
+   "anterior": "2.967.509",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": ". Receitas Arrendaments, Patrocínios e Publicidades"
+  },
+  {
+   "bloque": "b49",
+   "linea": 931,
+   "etiqueta": ". Receitas de Repasses da Loteria Timemania",
+   "actual": "619.095",
+   "anterior": "723.827",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": ". Receitas de Repasses da Loteria Timemania"
+  },
+  {
+   "bloque": "b49",
+   "linea": 932,
+   "etiqueta": ". Receitas de Publicidade",
+   "actual": "434.742",
+   "anterior": "12.868",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": ". Receitas Arrendaments, Patrocínios e Publicidades"
+  },
+  {
+   "bloque": "b49",
+   "linea": 933,
+   "etiqueta": ". Receitas Transmissão Jogos Campeonato Catarinense",
+   "actual": "569.707",
+   "anterior": "414.139",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": ". Receitas TV e transmissão jogos"
+  },
+  {
+   "bloque": "b49",
+   "linea": 934,
+   "etiqueta": ". Receitas Premiação",
+   "actual": "47.500",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": ". Receitas Diversas"
+  },
+  {
+   "bloque": "b49",
+   "linea": 935,
+   "etiqueta": ". Receitas de Venda de Material Esportivo",
+   "actual": "1.038.064",
+   "anterior": "584.100",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": ". Receitas de Venda e uso Marca"
+  },
+  {
+   "bloque": "b49",
+   "linea": 936,
+   "etiqueta": ". Receitas de Uso da Marca",
+   "actual": "86.916",
+   "anterior": "75.123",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": ". Receitas de Venda e uso Marca"
+  },
+  {
+   "bloque": "b49",
+   "linea": 937,
+   "etiqueta": ". Receitas de Doações",
+   "actual": "-",
+   "anterior": "20.900",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": ". Receitas Diversas"
+  },
+  {
+   "bloque": "b49",
+   "linea": 938,
+   "etiqueta": ". Receitas de Empréstimos de Jogadores",
+   "actual": "587.625",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": ". Receitas de Negociação de Atletas Profissionais"
+  },
+  {
+   "bloque": "b49",
+   "linea": 939,
+   "etiqueta": ". Receitas TV Campeonato Brasileiro",
+   "actual": "7.884.012",
+   "anterior": "6.734.266",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": ". Receitas TV e transmissão jogos"
+  },
+  {
+   "bloque": "b49",
+   "linea": 940,
+   "etiqueta": ". Receitas de CBF - Copa Brasil",
+   "actual": "4.197.200",
+   "anterior": "540.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": ". Receitas TV e transmissão jogos"
+  },
+  {
+   "bloque": "b49",
+   "linea": 941,
+   "etiqueta": ". Receitas Diversas",
+   "actual": "1.076.890",
+   "anterior": "1.455.341",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": ". Receitas Diversas"
+  },
+  {
+   "bloque": "b49",
+   "linea": 942,
+   "etiqueta": ". Receita Financeira",
+   "actual": "27.397",
+   "anterior": "161.090",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": ". Receita Financeira"
+  },
+  {
+   "bloque": "b49",
+   "linea": 943,
+   "etiqueta": ". Total Receitas",
+   "actual": "25.303.651",
+   "anterior": "44.035.052",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Receita Bruta"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 121,
+  "actual": "25.303.151"
+ },
+ "total_gastos": {
+  "linea": 131,
+  "actual": "43.772.256"
+ },
+ "resultado": {
+  "linea": 148,
+  "actual": "(34.467.692)",
+  "anterior": "1.325.422"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el desglose de Custos do Futebol Profissional (L969-L1003, b51), que no se cargó por no estar clara su relación línea a línea con el estado?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": ". Custos Futebol Profissional",
+   "texto": "El cuadro b51 L969-L1003 tiene 2.021/2.020 como encabezado y su total 41.707.360 coincide con L132, pero incluye renglones que el estado muestra aparte (L134-L136); hay que decidir cómo cargarlo.",
+   "bloques": [
+    "b51",
+    "b6"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se acepta la diferencia de 500 entre Total Receitas de la nota (25.303.651, L943) y Receita Bruta del estado (25.303.151, L121)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Receita Bruta",
+   "texto": "Los totales difieren en 500 (L121 vs L943), y la nota de Negociação de Atletas (1.921.831) no coincide con el estado (2.509.456).",
+   "bloques": [
+    "b6",
+    "b49"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Nota de ingresos: algunas asignaciones detalla_a son inferidas por afinidad de concepto; el estado agrupa distinto. Nota de costos b51 no extraída (ver dudas)."
+}

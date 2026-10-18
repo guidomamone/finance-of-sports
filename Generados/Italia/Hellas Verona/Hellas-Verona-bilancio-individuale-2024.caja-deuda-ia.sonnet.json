@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2024.md",
+ "generado": "2026-10-18T05:51:26.650Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Euro (importes completos sin indicación de miles en el balance, p. ej. 'Totale attivo 166.770.740')",
+ "caja": {
+  "lineas": [
+   125
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   160,
+   161
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caja: se usa el total de Disponibilidades liquidas (L125, suma de depósitos L123 y efectivo L124). Deuda: Debiti verso banche (L160, total 18.594.812 con corriente y no corriente en la misma celda) y Debiti verso altri finanziatori (L161, 71.161.302, desglose corriente/no corriente en L169-L171 incluido en el total). El balance no declara escala explícita; los importes están en euros enteros. Obbligazioni y debiti verso soci per finanziamenti son 0."
+}

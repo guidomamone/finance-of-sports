@@ -1,0 +1,26 @@
+{
+ "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2024-25.md",
+ "generado": "2026-10-18T05:51:32.407Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   825
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   863,
+   864,
+   866,
+   867,
+   869,
+   870,
+   872
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caja: total Disponibilità liquide (L825), que suma L823 y L824. Deuda: obligaciones, deudas con socios por financiación, deudas con bancos y con otros financiadores, corriente y no corriente; los debiti verso enti settore-specifico (cuentas por pagar del mercado de fichajes) quedan excluidos. Las deudas con socios por financiación (L866, L867) y con otros financiadores (L872) se incluyeron por ser financieras, pero es un criterio discutible."
+}

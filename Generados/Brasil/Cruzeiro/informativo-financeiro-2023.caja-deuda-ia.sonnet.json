@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Cruzeiro/informativo-financeiro-2023.md",
+ "generado": "2026-10-18T05:50:47.347Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "Em milhares de Reais, exceto quando indicado de outra forma",
+ "caja": {
+  "lineas": [
+   79
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   132,
+   147
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera = Empréstimos e financiamentos corriente (L132: 15.009) y no corriente (L147: sin saldo en 2023, '-'). Excluí obligaciones con partes relacionadas, AFAC y títulos emitidos por no ser préstamos bancarios según el criterio indicado."
+}

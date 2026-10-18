@@ -1,0 +1,288 @@
+{
+ "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.md",
+ "mdSha1": "24f3096fb449277503685c36e121b1db2b2cd4a1",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:08:10.936Z",
+ "bloques": {
+  "b1": {
+   "pagina": 4,
+   "lineas": [
+    135,
+    141
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 8,
+   "lineas": [
+    269,
+    273
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 9,
+   "lineas": [
+    291,
+    300
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    312,
+    316
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 9,
+   "lineas": [
+    322,
+    325
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 10,
+   "lineas": [
+    335,
+    336
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 10,
+   "lineas": [
+    346,
+    351
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    357,
+    362
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    364,
+    369
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    385,
+    391
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    395,
+    400
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    412,
+    418
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    454,
+    456
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 13,
+   "lineas": [
+    466,
+    475
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 13,
+   "lineas": [
+    481,
+    485
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 13,
+   "lineas": [
+    491,
+    495
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 14,
+   "lineas": [
+    515,
+    518
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 14,
+   "lineas": [
+    526,
+    530
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 14,
+   "lineas": [
+    536,
+    543
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 14,
+   "lineas": [
+    547,
+    552
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 15,
+   "lineas": [
+    562,
+    566
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 15,
+   "lineas": [
+    572,
+    577
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 15,
+   "lineas": [
+    585,
+    606
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 16,
+   "lineas": [
+    616,
+    657
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 17,
+   "lineas": [
+    667,
+    685
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 17,
+   "lineas": [
+    691,
+    710
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 18,
+   "lineas": [
+    720,
+    748
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 18,
+   "lineas": [
+    754,
+    761
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 19,
+   "lineas": [
+    771,
+    772
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 19,
+   "lineas": [
+    778,
+    783
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 19,
+   "lineas": [
+    789,
+    794
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "miles",
+ "escala_evidencia": "(Valores expresados en miles de pesos Colombianos)",
+ "moneda": "COP",
+ "columna_ejercicio": "A 31 de Diciembre de 2017",
+ "columna_anterior": "A 31 de Diciembre de 2016",
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El PDF contiene un estado de resultados del ejercicio 2017 (en páginas que no aparecen en el índice, antes de la página 8)?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice solo trae bloques desde la pág. 8 (notas); no se ve el estado de resultados, solo sus notas 19 a 25 de ingresos y gastos.",
+   "bloques": [
+    "b19",
+    "b22",
+    "b23",
+    "b26",
+    "b28",
+    "b30",
+    "b31"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "No hay ningún bloque con el estado de resultados; los bloques empiezan en la nota 6. Las notas 19 a 25 (ingresos, costo de ventas, gastos de administración y de ventas, otros gastos, otros ingresos, costos financieros) existen, pero no las clasifico mientras no se confirme el estado. Si se encuentra, deberían ir b19, b20, b21 como notas de ingresos y b22 a b28, b30, b31 como notas de gastos o ingresos según corresponda."
+}

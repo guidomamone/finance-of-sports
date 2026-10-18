@@ -1,0 +1,24 @@
+{
+ "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2025.md",
+ "generado": "2026-10-18T05:53:03.563Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "31 dicembre 2025 31 dicembre 2024",
+ "caja": {
+  "lineas": [
+   517
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   545,
+   546,
+   548,
+   549,
+   551
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance está en euros enteros, sin leyenda de escala explícita; la nota integrativa usa Euro/000 solo en sus tablas. Caja: línea 517 (total disponibilidades líquidas, suma de L515 y L516). Deuda: incluye préstamos de socios (L545-546), bancos (L548-549) y otros financiadores (L551). Los préstamos de socios son dudosos, ya que la controladora Mapei es parte relacionada, pero son financiamiento. Excluidos los débitos con controlantes (L556) por ser cash pooling y los débitos con entidades del sector específico."
+}

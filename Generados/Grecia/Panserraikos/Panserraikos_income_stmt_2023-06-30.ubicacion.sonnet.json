@@ -1,0 +1,50 @@
+{
+ "pdf": "Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2023-06-30.pdf",
+ "md": "Clubes/Grecia/Panserraikos/Panserraikos_income_stmt_2023-06-30.md",
+ "mdSha1": "99103566d2471d7e71b911569de5a88f3899fa82",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:20:27.079Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    8,
+    30
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    34,
+    36
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    38,
+    45
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1",
+  "b2",
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "(Ποσά σε Ευρώ)",
+ "moneda": "EUR",
+ "columna_ejercicio": "1/7/2022- 30/6/2023",
+ "columna_anterior": "1/7/2021- 30/6/2022",
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El estado de resultados ocupa b1 (pág. 1) y continúa en b2 y b3 (pág. 2). No hay notas ni desgloses en el índice. El documento no indica si es individual o consolidado; se trata de una sola sociedad (Panserraikos Ποδοσφαιρική ΑΕ), por lo que probablemente sea individual."
+}

@@ -1,0 +1,297 @@
+{
+ "pdf": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf",
+ "md": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.md",
+ "mdSha1": "587b9f9e97097f942ee9ee056d443b6625b78a1f",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:11:57.483Z",
+ "bloques": {
+  "b1": {
+   "pagina": 11,
+   "lineas": [
+    311,
+    315
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 15,
+   "lineas": [
+    414,
+    462
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 16,
+   "lineas": [
+    478,
+    502
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 17,
+   "lineas": [
+    518,
+    561
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 21,
+   "lineas": [
+    743,
+    748
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 22,
+   "lineas": [
+    763,
+    789
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 23,
+   "lineas": [
+    805,
+    824
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 24,
+   "lineas": [
+    845,
+    862
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 24,
+   "lineas": [
+    870,
+    872
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 24,
+   "lineas": [
+    876,
+    880
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 24,
+   "lineas": [
+    884,
+    888
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 24,
+   "lineas": [
+    890,
+    891
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 25,
+   "lineas": [
+    905,
+    930
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 26,
+   "lineas": [
+    950,
+    963
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 26,
+   "lineas": [
+    975,
+    979
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 27,
+   "lineas": [
+    994,
+    1002
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 27,
+   "lineas": [
+    1016,
+    1041
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 28,
+   "lineas": [
+    1061,
+    1068
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 28,
+   "lineas": [
+    1074,
+    1081
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 29,
+   "lineas": [
+    1099,
+    1128
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 29,
+   "lineas": [
+    1142,
+    1155
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 30,
+   "lineas": [
+    1171,
+    1175
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 30,
+   "lineas": [
+    1183,
+    1197
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 31,
+   "lineas": [
+    1209,
+    1226
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 32,
+   "lineas": [
+    1242,
+    1276
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 33,
+   "lineas": [
+    1290,
+    1302
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 35,
+   "lineas": [
+    1357,
+    1415
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 36,
+   "lineas": [
+    1437,
+    1483
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 37,
+   "lineas": [
+    1494,
+    1537
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 38,
+   "lineas": [
+    1561,
+    1583
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b15",
+  "b16",
+  "b17"
+ ],
+ "notas_gastos": [
+  "b24",
+  "b25",
+  "b26",
+  "b14"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Importes en euros con céntimos (ej. 63.051,69; capital 200.000,00 €), sin indicación de miles",
+ "moneda": "EUR",
+ "columna_ejercicio": "PERÍODOS 2024 (30 de junho de 2024)",
+ "columna_anterior": "PERÍODOS 2023 (30 de junho de 2023)",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Las columnas de b3 son 2024 y 2023 en ese orden (la primera es el ejercicio cerrado el 30-06-2024)?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El índice solo muestra el encabezado 'PERÍODOS' sin ver los años; debe confirmarse el orden de columnas.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el anexo b28/b29 (Demonstração dos Resultados, formato federativo con columnas ED-1, ED-2, ED-3)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "Es un formato de reporte a la Liga que repite el estado de resultados con más apertura (bilheteira, patrocínios, televisão); ED-3 parece ser el ejercicio actual pero no es seguro, y podría servir como desglose de ingresos.",
+   "bloques": [
+    "b28",
+    "b29"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado individual de Mafra Futebol SAD (SNC-PE), Demonstração dos Resultados por Natureza en b3. Los bloques b28 y b29 son un anexo de la Liga con columnas ED-1/2/3, sin identificar año; no se eligen. b14 (CMVMC) se incluye como nota de gastos. Se excluyen balance, flujos, activos fijos, impuestos, locações y otros cuadros no relacionados con el estado."
+}

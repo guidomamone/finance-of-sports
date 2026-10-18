@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/São Paulo/demonstracoes-financeiras-2023-2024.md",
+ "generado": "2026-10-18T05:53:00.950Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de reais)",
+ "caja": {
+  "lineas": [
+   1070
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1137,
+   1149
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Las cifras del pasivo están separadas de sus rótulos (L1136 en adelante) y las asigné por orden. Deuda 2024: Instituições financeiras circulante (126.229) y no circulante (133.081). Dejé afuera 'Empréstimos com terceiros' (L1138) porque en 2024 figura '-' y solo tiene 8.478 en 2023."
+}

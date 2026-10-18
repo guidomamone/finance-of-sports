@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Grecia/OFI Crete/OFI_notes_2020-06-30.md",
+ "generado": "2026-10-18T05:52:21.393Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "ΙΣΟΛΟΓΙΣΜΟΣ της 30/06/2020 (importes en euros con decimales, sin indicación de miles)",
+ "caja": {
+  "lineas": [
+   156
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no indica escala explícita; los importes aparecen con decimales completos (euros). No hay préstamos ni obligaciones bancarias en el pasivo; solo deudas comerciales, impuestos y otras deudas (L185 'Λοιπές υποχρεώσεις' no se identifica como financiera sin ver la nota 10.2.2)."
+}

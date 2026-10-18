@@ -1,0 +1,16 @@
+{
+ "md": "Clubes/Alemania/RB Leipzig/jahresabschluss-2024-25.md",
+ "generado": "2026-10-18T05:52:50.230Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "TEUR",
+ "caja": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Las páginas dadas no contienen el balance completo: solo un fragmento del activo fijo (inmovilizado) y el dictamen del auditor. No aparecen efectivo ni deuda financiera, por lo que no se puede elegir ninguna línea. La escala se deduce de la cabecera de columnas 'TEUR' (miles de euros)."
+}

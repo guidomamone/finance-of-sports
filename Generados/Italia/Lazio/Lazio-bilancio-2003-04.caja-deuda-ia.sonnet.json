@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-2003-04.md",
+ "generado": "2026-10-18T05:51:45.769Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"accenti\" + \"i capitale sociale\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "30/06/2004 in Euro",
+ "caja": {
+  "lineas": [
+   1107
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1138,
+   1139,
+   1140
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Criterio interpretado como las líneas de deuda financiera: Debiti verso banche (L1138), Debiti verso altri finanziatori (L1139) y Accordi (L1140), este último como equivalente al criterio 'accenti'/'accordi'. La mención a 'i capitale sociale' no se pudo mapear con certeza; se asumió que corresponde a los debiti verso altri finanziatori. Caja: se eligió el total de disponibilidades líquidas (L1107)."
+}

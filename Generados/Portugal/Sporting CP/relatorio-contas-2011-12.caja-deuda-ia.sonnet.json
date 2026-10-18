@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2011-12.md",
+ "generado": "2026-10-18T05:53:08.346Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "EUR'000",
+ "caja": {
+  "lineas": [
+   2185
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   2199,
+   2203
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usó el balance oficial (L2174-L2210), columna 30.Jun.12; las mismas líneas aparecen en L551, L565 y L569 (resumen de situación patrimonial). La deuda financiera corriente y no corriente figura en dos líneas separadas (Dívida financeira, nota 20)."
+}

@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Grecia/AEK Athens/AEK_Notes_2020-06-30.md",
+ "generado": "2026-10-18T05:49:32.481Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "caja": {
+  "lineas": [
+   456
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Los préstamos a largo plazo (L467) figuran en '-' para 2020 y 2019, por lo que no hay deuda financiera bancaria. Las obligaciones por arrendamiento (L468, L475) son pasivos por arrendamiento NIIF 16 y no préstamos, así que no se incluyeron. 'Μακροπρόθεσμες Υποχρεώσεις πληρωτέες στην Επόμενη Χρήση' (L476) y 'Λοιπές Μακροπρόθεσμες Υποχρεώσεις' (L470) parecen deudas comerciales o por traspasos de jugadores, no préstamos. El texto menciona una prenda sobre derechos de TV con Piraeus Bank, pero el balance no muestra deuda bancaria."
+}

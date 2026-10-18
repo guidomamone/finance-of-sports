@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2001.md",
+ "generado": "2026-10-18T05:53:06.130Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"dividas a instituicoes de credito\" + \"dividas a instituicoes de credito conta corrente\" (o sus equivalentes en este documento).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de euros)",
+ "caja": {
+  "lineas": [
+   451
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   433,
+   437
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance es del 31 jul 2002 (columna más reciente, aunque el archivo se llama 2001). Caja: se tomó el subtotal de Depósitos Bancários e Caixa (452) en L451, que suma L449 y L450. Deuda: Dívidas a Instituições de Crédito de largo plazo (L433) y de corto plazo (L437); no hay línea separada de conta corrente."
+}

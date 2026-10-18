@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2022-23-pos-AG.md",
+ "generado": "2026-10-18T05:50:13.790Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "valores em milhares de euros",
+ "caja": {
+  "lineas": [
+   3403
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   3416,
+   3421
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usó el estado de posición financiera oficial (pág. 109): 'Empréstimos obtidos' no corriente (L3416) y corriente (L3421), que incluyen préstamos bancarios y obligacionistas; no se sumó el cuadro de gestión (L930-L933) para evitar duplicar."
+}

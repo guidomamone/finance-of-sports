@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2010.md",
+ "generado": "2026-10-18T05:49:47.958Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "Valori in € /000",
+ "caja": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   5442
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Las páginas aportadas incluyen solo el pasivo; el activo (con efectivo y equivalentes) no aparece, por lo que no se puede identificar la línea de caja. La deuda financiera es 'Finanziamenti a breve termine' (L5442, 11.896); en el pasivo no corriente no hay líneas de préstamos financieros."
+}

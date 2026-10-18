@@ -1,0 +1,26 @@
+{
+ "md": "Clubes/Italia/Inter/Inter-fascicolo-bilancio-consolidato-2018-19.md",
+ "generado": "2026-10-18T05:51:29.494Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   543
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   745,
+   746,
+   748,
+   749,
+   751,
+   752,
+   754
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los valores del activo están separados de sus etiquetas, por lo que la línea de caja (L543 'Totale' de Disponibilità liquide) es el total de la sección IV (depósitos bancarios y efectivo). La deuda incluye obligaciones, préstamos de socios, deudas bancarias y con otros financiadores, corrientes y no corrientes; se excluyen proveedores, enti settore specifico y empresas del grupo no financieras."
+}

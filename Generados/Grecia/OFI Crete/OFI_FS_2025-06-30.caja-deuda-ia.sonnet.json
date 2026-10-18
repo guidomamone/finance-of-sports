@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Grecia/OFI Crete/OFI_FS_2025-06-30.md",
+ "generado": "2026-10-18T05:52:21.640Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "€ 232.768,75",
+ "caja": {
+  "lineas": [
+   150
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   176,
+   180,
+   181
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los préstamos a largo plazo (L176), los préstamos bancarios a corto plazo (L180) y la parte corriente de los préstamos a largo plazo (L181) figuran en 0,00 para 2025. No hay frase explícita de escala; los importes están en euros con céntimos, por lo que se asume unidades. La línea L177 (otras obligaciones a largo plazo) no se incluyó por no ser claramente deuda financiera."
+}

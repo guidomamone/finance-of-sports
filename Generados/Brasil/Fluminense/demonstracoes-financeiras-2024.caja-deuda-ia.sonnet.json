@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Fluminense/demonstracoes-financeiras-2024.md",
+ "generado": "2026-10-18T05:51:06.910Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "Informações em milhares de Reais",
+ "caja": {
+  "lineas": [
+   701
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   721,
+   733
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera = Empréstimos e financiamentos corriente (L721) y no corriente (L733). Se excluyen tributos parcelados y cuentas por pagar por transferencia de jugadores por no ser préstamos."
+}

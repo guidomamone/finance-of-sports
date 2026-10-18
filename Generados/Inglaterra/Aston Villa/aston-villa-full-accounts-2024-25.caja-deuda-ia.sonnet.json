@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Inglaterra/Aston Villa/aston-villa-full-accounts-2024-25.md",
+ "generado": "2026-10-18T05:49:56.726Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£000",
+ "caja": {
+  "lineas": [
+   860
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "El balance solo muestra 'Creditors' agregados (L864 y L869), sin préstamos bancarios ni financieros desglosados; el detalle está en las notas 14 y 15, que no se incluyen. Por eso no elegí ninguna línea de deuda y no la marco como inexistente."
+}

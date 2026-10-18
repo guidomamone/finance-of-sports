@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2021.md",
+ "generado": "2026-10-18T05:51:02.943Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"emprestimos\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "Em reais",
+ "caja": {
+  "lineas": [
+   150
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   150
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La deuda es solo la línea Empréstimos del pasivo circulante (L150); no hay empréstimos en el no circulante. Los parcelamentos de impostos y el adiantamento para futuro aumento de capital no se incluyen porque no son empréstimos. Las líneas 150 de caja y deuda comparten número porque el balance está en dos columnas en la misma fila."
+}

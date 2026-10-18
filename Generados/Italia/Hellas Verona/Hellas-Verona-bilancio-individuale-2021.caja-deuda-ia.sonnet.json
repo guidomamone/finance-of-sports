@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2021.md",
+ "generado": "2026-10-18T05:51:24.066Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "30 giugno 2021",
+ "caja": {
+  "lineas": [
+   121
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   157,
+   160,
+   163
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance está en euros enteros, sin leyenda de escala explícita; la frase citada es la fecha de cierre de la columna. La caja usa el total de Disponibilidades liquides (L121). La deuda incluye los préstamos de socios (L157), los débitos con bancos (L160) y los débitos con otros financiadores (L163), todos con el total corriente más no corriente de cada rubro. Se excluyen proveedores, deudas tributarias y deudas con entes del sector específico (transferencias de jugadores)."
+}

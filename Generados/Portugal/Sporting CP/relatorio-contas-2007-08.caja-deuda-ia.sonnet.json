@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2007-08.md",
+ "generado": "2026-10-18T05:53:07.375Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "EUR'000",
+ "caja": {
+  "lineas": [
+   1023
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1036,
+   1042
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Columna 30.Jun.08. Deuda = Empréstimos no corriente (15 000) + corriente (28 767), que incluye el empréstimo obrigacionista reclasificado a corto plazo y descubiertos bancarios."
+}

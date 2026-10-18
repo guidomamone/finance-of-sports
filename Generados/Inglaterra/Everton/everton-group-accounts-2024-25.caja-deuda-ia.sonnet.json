@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Inglaterra/Everton/everton-group-accounts-2024-25.md",
+ "generado": "2026-10-18T05:50:59.116Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£000",
+ "caja": {
+  "lineas": [
+   1128
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   2613
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance consolidado no desglosa préstamos: sólo muestra 'Creditors' agregados. La deuda se tomó de la nota 23 (Other Loans, L2613), cuya columna de grupo 2025 aparece como 468,542 con OCR dudoso. Cifras del balance en £000 (la columna 2025 es la primera en cada bloque)."
+}

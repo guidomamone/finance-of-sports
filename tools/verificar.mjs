@@ -43,7 +43,7 @@ import { cierrePorVecinos } from './cierre-vecinos.mjs';
 import { VERSION_AMPLIADO } from './indice-bloques.mjs';
 import { norm as normNum } from './verify-numbers.mjs';
 import { ajusteDe, ajustesDe } from './ajustes.mjs';
-import { FIN_INGRESO_RE, FIN_GASTO_RE, INGRESOS_RE, GASTOS_RE, normalizar } from './vocabulario.mjs';
+import { FIN_INGRESO_RE, FIN_GASTO_RE, INGRESOS_RE, GASTOS_RE, DE_LOS_CUALES_RE, normalizar } from './vocabulario.mjs';
 import { DESCARTADOS, PARCIALES } from './etapa-doc.mjs';
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
 const { loadSite, parseNumber } = await import('./datos-sitio.mjs');
@@ -849,6 +849,12 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       // (cerca). Antes ganaba la primera que entraba en la tolerancia aunque otra fuera exacta. Caso: Cremonese 2025 (.md L183-198),
       // ingresos − gastos −8.054.278; "financiero e impuesto invertidos" daba −6.976.885 (8.522 EUR de diferencia, dentro de la tolerancia) y
       // ganaba, con el financiero cargado +4.261 contra (4.261) impreso; "impuesto invertido" da −6.985.407, el impreso exacto.
+      // (to-do 298 a, ok de Guido 2026-10-18) UN RESULTADO IMPRESO NEGATIVO TRAE SU SIGNO: tiene que cerrar con signo. La comparación en valor
+      // absoluto queda para el impreso positivo o sin signo (la pérdida impresa sin signo, escalera del to-do 198 más abajo). Antes una lectura con
+      // las filas dadas vuelta cerraba contra un negativo impreso. Caso: Lierse Kempenzonen 2022, impreso −4.591; Brutomarge −2.369 leída como
+      // ingreso +2.369 y el financiero invertido daban +4.590 y "cierra (financiero invertido)". Medido: 376 documentos idénticos (prueba-completa,
+      // Bélgica y Estonia); comparar siempre con signo cambiaba Novorizontino 2014-b, AVS 2023-24 y Portimonense 2022-23 (pérdidas sin signo).
+      const cierraRes = (x, exacto, tol) => (objetivo < 0 ? (exacto ? Math.abs(x - objetivo) <= tol : cerca(x, objetivo)) : (exacto ? Math.abs(Math.abs(x) - Math.abs(objetivo)) <= tol : cerca(Math.abs(x), Math.abs(objetivo))));
       const COMBOS = [[1, 1, 'como impresos'], [-1, -1, 'financiero e impuesto invertidos'], [1, -1, 'impuesto invertido'], [-1, 1, 'financiero invertido']];
       const tol5 = Math.max(1e-6, 0.5 * [...ing, ...gas, ...finL].reduce((a, f) => a + (f.u || 0), 0)); // exacto, a media unidad por fila
       const patDe = (sf, si) => suma(ing) - suma(gas) + sf * conSigno(finL) + (conImp ? si * conSigno(imp) : 0);
@@ -856,7 +862,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         for (const [sf, si, nm] of COMBOS) {
           if (!conImp && si === -1) continue;
           const pat = patDe(sf, si);
-          if (exacto ? Math.abs(Math.abs(pat) - Math.abs(objetivo)) <= tol5 : cerca(Math.abs(pat), Math.abs(objetivo))) { okRes = true; difRes = Math.abs(Math.abs(pat) - Math.abs(objetivo)); lect = nm; exactoRes = exacto; break; }
+          if (cierraRes(pat, exacto, tol5)) { okRes = true; difRes = Math.abs(Math.abs(pat) - Math.abs(objetivo)); lect = nm; exactoRes = exacto; break; }
         }
         if (okRes) break;
         // (to-do 212, escalón 2, aprobado por Guido el 2026-10-13) EL SIGNO DE CADA FILA DEL FINANCIERO POR SU RÓTULO, entre los signos en
@@ -867,7 +873,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         if (exacto && finL.some((f) => signoRotulo(f)) && Math.abs(conSignoRotulo(finL) - conSigno(finL)) > 1e-9) {
           for (const si of conImp ? [1, -1] : [1]) {
             const pat = suma(ing) - suma(gas) + conSignoRotulo(finL) + (conImp ? si * conSigno(imp) : 0);
-            if (Math.abs(Math.abs(pat) - Math.abs(objetivo)) <= tol5) { okRes = true; difRes = Math.abs(Math.abs(pat) - Math.abs(objetivo)); lect = si === 1 ? 'financiero por rótulo' : 'financiero por rótulo, impuesto invertido'; exactoRes = true; break; }
+            if (cierraRes(pat, true, tol5)) { okRes = true; difRes = Math.abs(Math.abs(pat) - Math.abs(objetivo)); lect = si === 1 ? 'financiero por rótulo' : 'financiero por rótulo, impuesto invertido'; exactoRes = true; break; }
           }
           if (okRes) break;
         }
@@ -888,6 +894,19 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // compuerta que la 4 (totales impresos y resultado). Solo si la base cambia (hay un subtotal repetido).
     if (n === 4 && hayRepetido) { const er = evaluar(4, false, null, { ing: ing4r, gas: gas4r }); if (er.okRes) algunaCierraRes = true; if (er.cierra) { E = er; escalonSubRep = true; break; } }
     if (n === 4 && cambiaSigno4e) { const es = evaluar(4, false, null, { ing: ing4e, gas: gas4e }); if (es.okRes) algunaCierraRes = true; if (es.cierra) { E = es; escalonSignoDoc = true; notas.push('escalón "signo del documento": los ajustes `fila` con el signo contrario al de su lado en el estado restan; cerró la lectura 4'); break; } }
+  }
+  // ESCALÓN "de los cuales" (to-do 298 b3, ok de Guido 2026-10-18). Una fila que empieza con "Waarvan:" / "dont" / "davon" / "of which" /
+  // "de los cuales" (vocabulario.mjs DE_LOS_CUALES) es una PARTE de la de arriba: sumada aparte, cuenta dos veces. No se saca siempre (manta
+  // corta): solo si NINGUNA lectura cerró, se prueban las lecturas 4 y 5 sin esas filas. Compuerta: cierra EXACTO. Caso: Lierse SK 2025 (L255-256),
+  // Brutomarge 2.706.155 y debajo "Waarvan: niet-recurrente bedrijfsopbrengsten" 82.200; Patro Eisden 2025 (1.810). Antes, un ajuste `fila` en 0.
+  let escalonDeLosCuales = false;
+  const esDeLosCuales = (f) => f.tipo === 'renglon' && DE_LOS_CUALES_RE.test(normalizar(f.etiqueta || ''));
+  if (!E && [...ing4, ...gas4, ...ing5, ...gas5].some(esDeLosCuales)) {
+    for (const [n, i0, g0] of [[4, ing4, gas4], [5, ing5, gas5]]) {
+      const e = evaluar(n, false, null, { ing: i0.filter((f) => !esDeLosCuales(f)), gas: g0.filter((f) => !esDeLosCuales(f)) });
+      if (e.cierra && e.exacto) { E = e; escalonDeLosCuales = true; break; }
+    }
+    if (escalonDeLosCuales) notas.push(`escalón "de los cuales": cerró la lectura ${E.nivel} sin las filas ${[...ing4, ...gas4, ...ing5, ...gas5].filter(esDeLosCuales).map((f) => `"${String(f.etiqueta).slice(0, 50)}" L${f.linea}`).filter((x, i, a) => a.indexOf(x) === i).join(', ')} (una parte de la fila de arriba)`);
   }
   if (!E && !algunaCierraRes && fin5Todos.length > fin5.length) { const e = evaluar(5, true); if (e.cierra) { E = e; escalonAjFin = true; } } // to-do 156 B
   // ESCALÓN "17) resta" (to-do 155, escalón 2, aprobado por Guido el 2026-10-07). El formato del Codice Civile imprime el renglón 17)
@@ -1176,7 +1195,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         const dM = Math.sign(fila.M || 1) * (Math.abs(alt) - Math.abs(actualN)) * mult(fila.bloque);
         const efecto = ing.includes(fila) ? dM : gas.includes(fila) ? -dM : fin.includes(fila) ? sf * dM : imp.includes(fila) && conImpR ? si * dM : 0;
         const tolR = Math.max(1e-6, 0.5 * [...ing, ...gas, ...fin].reduce((a, f) => a + (f.u || 0), 0));
-        const cierraCon = (x) => (E.exacto ? Math.abs(Math.abs(x) - Math.abs(objetivo)) <= tolR : cerca(Math.abs(x), Math.abs(objetivo)));
+        const cierraCon = (x) => (objetivo < 0 ? (E.exacto ? Math.abs(x - objetivo) <= tolR : cerca(x, objetivo)) : (E.exacto ? Math.abs(Math.abs(x) - Math.abs(objetivo)) <= tolR : cerca(Math.abs(x), Math.abs(objetivo)))); // (to-do 298 a) como cierraRes
         if (efecto && cierraCon(pat) && !cierraCon(pat + efecto)) { confirma = true; porque = `con la segunda lectura (${nc.segundaLeyo}) el resultado daría ${r6(pat + efecto)} y no cierra`; }
       } else if (alt == null && E.exacto) { confirma = true; porque = 'sin segunda lectura parecida, y el resultado cierra exacto con él'; }
       if (confirma) { confirmadosPorSumas.push({ linea: nc.linea, numero: nc.numero }); notas.push(`línea ${nc.linea}: ${nc.numero} no está en el ${V.modo === 'digital' ? 'texto del PDF' : 'segunda lectura'}; las sumas lo confirman (${porque})`); continue; }

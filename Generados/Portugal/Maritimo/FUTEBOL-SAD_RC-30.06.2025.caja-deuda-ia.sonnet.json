@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Maritimo/FUTEBOL-SAD_RC-30.06.2025.md",
+ "generado": "2026-10-18T05:52:06.672Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Euros",
+ "caja": {
+  "lineas": [
+   893
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   907,
+   914
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Financiamentos obtidos no corriente (L907) es '-' en 2025 (70 591 en 2024); se incluye igualmente junto con el corriente (L914: 73 434)."
+}

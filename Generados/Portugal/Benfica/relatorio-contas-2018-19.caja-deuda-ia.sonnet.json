@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Benfica/relatorio-contas-2018-19.md",
+ "generado": "2026-10-18T05:50:13.250Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "versão em milhares de euros",
+ "caja": {
+  "lineas": [
+   2649
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   2663,
+   2669
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usó la columna consolidada 30.06.19 de la posición financiera (L2632-2676). Los préstamos de Benfica Estádio y Benfica TV (847) están en pasivos mantenidos para la venta y no se incluyeron. Los derivados no se contaron como deuda. La caja ajustada sin reclasificación IFRS 5 sería 21 602, pero el balance publicado muestra 16 295."
+}

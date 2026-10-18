@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2012-13.md",
+ "generado": "2026-10-18T05:51:51.618Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   3479
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   3507,
+   3522,
+   3532
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usó el balance consolidado (pp. 95-96), cuya fecha de cierre más reciente es 30/06/2013. Deuda: Debiti finanziari non correnti (L3507), correnti (L3522) y correnti verso parti correlate (L3532). Se excluyó 'Debiti verso altri finanziatori' (L3524, dentro de Altre passività correnti) porque es subpartida de otro agregado, aunque en la PFN del documento incluye anticipos de factoring."
+}

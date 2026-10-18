@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Colombia/America de Cali/estados-financieros-2025.md",
+ "generado": "2026-10-18T05:49:40.043Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(EXPRESADO EN MILES DE PESOS COLOMBIANOS)",
+ "caja": {
+  "lineas": [
+   27
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   92,
+   108
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La línea de efectivo (L27) aparece sin cifra en su renglón; el valor de Diciembre de 2025 (870,325, L56) se asocia por orden de columna. Se excluyeron los pasivos del acuerdo de reorganización (L110) por no ser deuda financiera según el criterio."
+}

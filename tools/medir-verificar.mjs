@@ -24,6 +24,8 @@
 // (el chequeo del año vecino lee del .verificacion.json del otro con qué lectura y escalón cerró): hace falta para un cambio que cambia
 // cómo cierra un documento. Antes y después, con el mismo N.
 // --script <tools/archivo.mjs> (default tools/verificar.mjs): para medir el ANTES con una copia de la versión vieja dentro de tools/.
+// --filas <modelo> (to-do 288): verificar.mjs lee, en lugar del .filas.json de cada documento, el .filas.<modelo>.json de extraer.mjs --modelo
+// (sin ese archivo, el documento queda sin filas y sale como error). El .filas.json original se restaura al final con el resto.
 // ============================================================================
 
 import { readdirSync, existsSync, readFileSync, writeFileSync, copyFileSync, mkdirSync, rmSync, mkdtempSync } from 'node:fs';
@@ -36,9 +38,10 @@ const A = process.argv.slice(2);
 const flag = (f) => { const i = A.indexOf(f); return i >= 0 ? A[i + 1] : null; };
 const r6 = (x) => (typeof x === 'number' ? Math.round(x * 1e6) / 1e6 : x);
 
+const FILAS = flag('--filas');
+const baseDe = (pdf) => join(ROOT, 'Generados', pdf.replace(/^Clubes\//, '').replace(/\.pdf$/i, ''));
 const derivados = (pdf) => { // Clubes/<País>/<Club>/<doc>.pdf -> Generados/<País>/<Club>/<doc>.<ext>
-  const base = join(ROOT, 'Generados', pdf.replace(/^Clubes\//, '').replace(/\.pdf$/i, ''));
-  return ['.verificacion.json', '.rubros.json'].map((e) => base + e);
+  return ['.verificacion.json', '.rubros.json', ...(FILAS ? ['.filas.json'] : [])].map((e) => baseDe(pdf) + e);
 };
 
 function medir(lista, salida, pasadas = 1, script = 'tools/verificar.mjs') {
@@ -50,6 +53,8 @@ function medir(lista, salida, pasadas = 1, script = 'tools/verificar.mjs') {
   for (const f of archivosReg) copyFileSync(join(reg, f), join(copia, f));
   const previos = new Map(); // derivado -> ruta de su copia (o null si no existía)
   docs.forEach((pdf, i) => derivados(pdf).forEach((d, j) => { if (existsSync(d)) { const c = join(copia, `d${i}-${j}`); copyFileSync(d, c); previos.set(d, c); } else previos.set(d, null); }));
+  // (to-do 288) --filas: las filas del modelo en lugar de las de la carga (la copia de seguridad ya está hecha arriba)
+  if (FILAS) for (const pdf of docs) { const alt = `${baseDe(pdf)}.filas.${FILAS}.json`; const f = `${baseDe(pdf)}.filas.json`; if (existsSync(alt)) copyFileSync(alt, f); else if (existsSync(f)) rmSync(f); }
   const cola = `${salida}.cola.jsonl`; copyFileSync(join(reg, 'cola-revision.jsonl'), cola);
   let out = '';
   try {

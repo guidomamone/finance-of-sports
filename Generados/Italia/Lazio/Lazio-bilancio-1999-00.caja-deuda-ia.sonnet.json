@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-1999-00.md",
+ "generado": "2026-10-18T05:51:44.217Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"debiti verso altri finanziatori\" + \"verso banche entro l anno\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "30/06/2000 Lire",
+ "caja": {
+  "lineas": [
+   1041
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1073,
+   1074
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance en Lire (L1025-L1107) está en unidades de lira, sin escala; se descartó el de Euro y el reclasificado en miliardi. Caja: total disponibilidades líquidas (L1041). Deuda: 'Debiti verso banche entro l'anno' (L1073) + 'Debiti verso altri finanziatori' (L1074), según el criterio indicado."
+}

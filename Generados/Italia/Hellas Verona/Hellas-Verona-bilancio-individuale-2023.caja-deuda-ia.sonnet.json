@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2023.md",
+ "generado": "2026-10-18T05:51:26.103Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "30 giugno 2023",
+ "caja": {
+  "lineas": [
+   152,
+   153
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   237,
+   242
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance en euros completos, sin leyenda explícita de escala (la nota usa 'Euro/000' solo en detalles). Caja = depósitos bancarios (L152) + efectivo (L153). Deuda: debiti verso banche total (L237, incluye corriente y no corriente) y debiti verso altri finanziatori total (L242, 46,5M; sus líneas corriente/no corriente L249-250 ya incluidas en el total). Obbligazioni y soci en 0 en 2023."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2015-16.md",
+ "generado": "2026-10-18T05:52:51.502Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"financiamentos obtidos\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "30-06-2016 | 30-06-2015 (valores en € con céntimos, p. ej. 103.073,95 €)",
+ "caja": {
+  "lineas": [
+   121
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   138,
+   145
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance no indica escala explícita; los importes están en euros con céntimos, por lo que se asume unidades. Deuda = Financiamentos obtidos no corriente (L138) y corriente (L145). L140 está mal rotulada y es un subtotal del pasivo no corriente."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Grecia/Panathinaikos/Panathinaikos_annual_FR_2025-06-30.md",
+ "generado": "2026-10-18T05:52:30.983Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε € '",
+ "caja": {
+  "lineas": [
+   923
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   938,
+   946
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se tomó la columna del Grupo (Ο ΟΜΙΛΟΣ) al 30/6/2025. Los importes están en euros (el encabezado dice 'Ποσά σε € '), sin indicar miles. El balance no muestra préstamos bancarios; la única deuda financiera son las obligaciones por arrendamiento financiero (L938 no corriente, L946 corriente), que se incluyeron como el mejor equivalente. Las 'otras obligaciones a largo plazo' (L940) no se incluyeron porque su naturaleza no está clara."
+}

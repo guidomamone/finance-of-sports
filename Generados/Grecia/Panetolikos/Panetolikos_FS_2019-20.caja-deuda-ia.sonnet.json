@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2019-20.md",
+ "generado": "2026-10-18T05:52:31.659Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Ποσά σε ΕΥΡΩ)",
+ "caja": {
+  "lineas": [
+   618
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Balance completo sin préstamos: el documento dice 'Η εταιρεία δεν έχει τραπεζικό δανεισμό' y la línea Δανεισμός es 0,00. Las obligaciones son solo comerciales, fiscales y otras."
+}

@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Grecia/Aris/Aris_FS_audited_art47_2022-06-30.md",
+ "generado": "2026-10-18T05:49:43.094Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"τραπεζικα και αλλα δανεια\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "caja": {
+  "lineas": [
+   493
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   512
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda: solo \"Τραπεζικά και άλλα μακροπρόθεσμα δάνεια\" (L512), no hay línea corriente equivalente. Se excluye la cuenta por pagar a partes relacionadas (L513, sin saldo en 2022)."
+}

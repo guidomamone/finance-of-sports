@@ -1,0 +1,25 @@
+{
+ "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2022-23.md",
+ "generado": "2026-10-18T05:52:46.325Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "30 junho 2023",
+ "caja": {
+  "lineas": [
+   944
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   962,
+   963,
+   964,
+   971,
+   972,
+   973
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance no declara la escala (miles/millones); las cifras están en euros completos, así que se asume unidades. La frase de evidencia es el encabezado de columna, no una indicación explícita de escala. 'Outros empréstimos' (notas 21) se incluyó como deuda financiera por estar en la nota de empréstimos."
+}

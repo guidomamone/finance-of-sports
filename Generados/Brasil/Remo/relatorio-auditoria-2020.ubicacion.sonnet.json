@@ -1,0 +1,92 @@
+{
+ "pdf": "Clubes/Brasil/Remo/relatorio-auditoria-2020.pdf",
+ "md": "Clubes/Brasil/Remo/relatorio-auditoria-2020.md",
+ "mdSha1": "1bf7bee0ac36011f0d1be289183124877f3a1415",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:09:30.763Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    19,
+    27
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    136,
+    166
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    189,
+    204
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    220,
+    222
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 9,
+   "lineas": [
+    224,
+    243
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 10,
+   "lineas": [
+    260,
+    277
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    293,
+    313
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con centavos (12.351.668,08) sin indicación de miles o millones; moneda reales brasileños.",
+ "moneda": "BRL",
+ "columna_ejercicio": "01/01/2020 a 31/12/2020",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la fila 'Resultado Financeiro' (194.092,83) como parte de las Despesas Operacionais (4.943.560,99 = 4.555.340,59 + 194.092,83 + otro importe)?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Despesas Operacionais",
+   "texto": "Las Despesas Operacionais (4.943.560,99) no coinciden con la suma de 4.555.340,59 + 194.092,83 = 4.749.433,42; la diferencia de 194.127,57 no está explicada en el cuadro.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Solo hay un estado de resultados (b3, DRE individual del club, sin comparativo del año anterior). Los demás bloques son balance (b2), DMPL (b5, b6) y texto de cabecera o firmas (b4, b7). No hay notas explicativas con desglose de ingresos o gastos."
+}

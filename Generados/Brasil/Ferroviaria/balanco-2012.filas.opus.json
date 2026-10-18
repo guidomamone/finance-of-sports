@@ -1,0 +1,326 @@
+{
+ "pdf": "Clubes/Brasil/Ferroviaria/balanco-2012.pdf",
+ "md": "Clubes/Brasil/Ferroviaria/balanco-2012.md",
+ "mdSha1": "531b455c95756143dc120c00d015d241159ed8eb",
+ "ubicacionSha1": "0060c78348204cdff9489c9a76b612a1fe2787fe",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:02:44.007Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "unidades",
+   "evidencia": "L169: Em reais"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 173,
+   "etiqueta": "RECEITAS OPERACIONAIS",
+   "actual": "4.262.001,99",
+   "anterior": "2.422.717,81",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 174,
+   "etiqueta": "Renda de jogos",
+   "actual": "528.636,89",
+   "anterior": "104.646,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 175,
+   "etiqueta": "Venda de atletas",
+   "actual": "217.006,60",
+   "anterior": "30.000,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 176,
+   "etiqueta": "Cotas de TV Campeonato Paulista Série A-2",
+   "actual": "106.000,00",
+   "anterior": "100.000,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 177,
+   "etiqueta": "Doação de Materiais esportivos",
+   "actual": "67.625,60",
+   "anterior": "4.611,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 178,
+   "etiqueta": "Sócio torcedor",
+   "actual": "-",
+   "anterior": "13.705,36",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 179,
+   "etiqueta": "Vendas líquidas de produtos",
+   "actual": "50.868,50",
+   "anterior": "87.670,04",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 180,
+   "etiqueta": "Patrocínios",
+   "actual": "1.061.000,00",
+   "anterior": "1.598.802,63",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 181,
+   "etiqueta": "Recuperação de despesas",
+   "actual": "229.607,84",
+   "anterior": "240.600,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 182,
+   "etiqueta": "Contratos de parcerias",
+   "actual": "909.720,75",
+   "anterior": "250.000,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 183,
+   "etiqueta": "Com doação",
+   "actual": "1.000.000,00",
+   "anterior": "15.765,39",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 184,
+   "etiqueta": "Publicidades",
+   "actual": "105.254,40",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 185,
+   "etiqueta": "Aviso prévio descontado",
+   "actual": "400,00",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 186,
+   "etiqueta": "deduções das receitas",
+   "actual": "(14.118,59)",
+   "anterior": "(23.082,61)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 187,
+   "etiqueta": "CUSTOS",
+   "actual": "(3.369.240,06)",
+   "anterior": "(1.925.642,71)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 188,
+   "etiqueta": "Com atividade esportiva - Profissional",
+   "actual": "(1.834.030,87)",
+   "anterior": "(484.383,54)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 189,
+   "etiqueta": "Com pessoal - Atletas Profissionais",
+   "actual": "(1.406.851,05)",
+   "anterior": "(1.419.117,37)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 190,
+   "etiqueta": "Com mercadorias",
+   "actual": "(32.323,39)",
+   "anterior": "(22.141,80)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 191,
+   "etiqueta": "CUSTOS-Formação de Atletas",
+   "actual": "(96.034,75)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 192,
+   "etiqueta": "LUCRO OPERACIONAL BRUTO",
+   "actual": "892.761,93",
+   "anterior": "497.075,10",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 193,
+   "etiqueta": "DESPESAS OPERACIONAIS",
+   "actual": "1.101.162,64",
+   "anterior": "972.283,46",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 194,
+   "etiqueta": "Gerais e administrativas",
+   "actual": "360.339,11",
+   "anterior": "473.338,63",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 195,
+   "etiqueta": "Depreciações e amortizações",
+   "actual": "385.642,03",
+   "anterior": "2.581,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 196,
+   "etiqueta": "Pessoal",
+   "actual": "136.093,00",
+   "anterior": "400.295,56",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 197,
+   "etiqueta": "Serviços de terceiros",
+   "actual": "51.020,68",
+   "anterior": "41.590,06",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 198,
+   "etiqueta": "Tributárias",
+   "actual": "14.421,85",
+   "anterior": "(67.247,17)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 199,
+   "etiqueta": "Financeiras",
+   "actual": "153.645,97",
+   "anterior": "121.725,38",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 200,
+   "etiqueta": "LUCRO ANTES DO IR e CS",
+   "actual": "(208.400,71)",
+   "anterior": "(475.208,36)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 202,
+   "etiqueta": "PREJUÍZO DOS EXERCÍCIOS",
+   "actual": "(208.400,71)",
+   "anterior": "(475.208,36)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 173,
+  "actual": "4.262.001,99"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 202,
+  "actual": "(208.400,71)",
+  "anterior": "(475.208,36)"
+ },
+ "dudas": [],
+ "observaciones": "Despesas operacionais (L193-L199) impresas en positivo aunque restan; Tributárias 2011 negativa (L198). Provisão IR (L201) sin importe en 2012 y '-' en 2011, no se extrajo. No hay total de gastos único impreso (Custos L187 y Despesas L193 por separado). Financeiras (L199) incluida dentro de despesas operacionais."
+}

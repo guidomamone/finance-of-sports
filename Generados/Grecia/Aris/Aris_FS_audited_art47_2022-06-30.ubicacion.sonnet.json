@@ -1,0 +1,167 @@
+{
+ "pdf": "Clubes/Grecia/Aris/Aris_FS_audited_art47_2022-06-30.pdf",
+ "md": "Clubes/Grecia/Aris/Aris_FS_audited_art47_2022-06-30.md",
+ "mdSha1": "664f1149efb1e9fd7a23410b6b5ecaad262d6ad4",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:19:39.364Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    56,
+    78
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    267,
+    273
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 11,
+   "lineas": [
+    433,
+    455
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 12,
+   "lineas": [
+    490,
+    522
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 13,
+   "lineas": [
+    557,
+    559
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 13,
+   "lineas": [
+    563,
+    567
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 13,
+   "lineas": [
+    571,
+    575
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 13,
+   "lineas": [
+    577,
+    580
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 14,
+   "lineas": [
+    616,
+    620
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 17,
+   "lineas": [
+    766,
+    774
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 22,
+   "lineas": [
+    1051,
+    1065
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 22,
+   "lineas": [
+    1071,
+    1084
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 23,
+   "lineas": [
+    1131,
+    1150
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 25,
+   "lineas": [
+    1235,
+    1239
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 25,
+   "lineas": [
+    1243,
+    1250
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 25,
+   "lineas": [
+    1256,
+    1264
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b15",
+  "b16"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε € (encabezado de la tabla del estado de resultados, importes en euros completos)",
+ "moneda": "EUR",
+ "columna_ejercicio": "30.06.2022",
+ "columna_anterior": "30.06.2021",
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de conciliación 'Συμφωνία καθαρής θέσης και αποτελεσμάτων βάσει Δ.Λ.Π' (b9, pág. 14) por ser una conciliación y no un desglose de ingresos o gastos?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El cuadro b9 concilia patrimonio y resultado entre normas locales (ΕΛΠ) y el reglamento de la federación, no abre renglones del estado.",
+   "bloques": [
+    "b9"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "El documento muestra un solo estado de resultados (b3, pág. 11), sin distinción visible entre individual y consolidado; por eso el perímetro queda como 'no se sabe'. No hay nota de desglose de ingresos entre los bloques indexados. Las notas de gastos son b15 (gastos de personal) y b16 (otros gastos operativos). Se excluyen balance (b4), flujo de efectivo (b5-b8), conciliación (b9), vidas útiles (b10), activo fijo (b11, b12) y patrimonio (b13)."
+}

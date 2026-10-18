@@ -1,0 +1,430 @@
+{
+ "pdf": "Clubes/Brasil/Criciuma/demonstracoes-financeiras-2022.pdf",
+ "md": "Clubes/Brasil/Criciuma/demonstracoes-financeiras-2022.md",
+ "mdSha1": "e4814770d51611bedb232dedb4cdaa1a9402d508",
+ "ubicacionSha1": "1b197acee78b733564c1004c6b6019699e030666",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:06:33.887Z",
+ "ubicacion": {
+  "estado": [
+   "b6"
+  ],
+  "notas_ingresos": [
+   "b28",
+   "b29",
+   "b30"
+  ],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b6",
+   "escala": "unidades",
+   "evidencia": "L236: ( Valores expressos em unidades de reais )"
+  },
+  {
+   "bloque": "b28",
+   "escala": "unidades",
+   "evidencia": "Sin frase propia; total L856 coincide con L240 del estado en unidades"
+  },
+  {
+   "bloque": "b29",
+   "escala": "unidades",
+   "evidencia": "Continuación de nota 17; total L856 27.268.558 igual a L240"
+  },
+  {
+   "bloque": "b30",
+   "escala": "unidades",
+   "evidencia": "Sin frase propia; totales L865/L873 coinciden con L251/L252 del estado"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b6",
+   "linea": 240,
+   "etiqueta": "RECEITA OPERACIONAL BRUTA",
+   "actual": "27.268.558",
+   "anterior": "15.285.977",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 241,
+   "etiqueta": "CUSTOS E DESPESAS OPERACIONAIS",
+   "actual": "(23.790.402)",
+   "anterior": "(18.023.240)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 242,
+   "etiqueta": "Departamento Futebol Profissional",
+   "actual": "(15.977.814)",
+   "anterior": "(11.524.382)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 243,
+   "etiqueta": "Departamento Futebol de Base",
+   "actual": "(1.902.868)",
+   "anterior": "(1.628.007)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 244,
+   "etiqueta": "Departamento Futebol Feminino",
+   "actual": "(263.722)",
+   "anterior": "(306.311)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 245,
+   "etiqueta": "Departamento Administrativo",
+   "actual": "(1.385.459)",
+   "anterior": "(1.246.346)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 246,
+   "etiqueta": "Departamento de Patrimônio",
+   "actual": "(3.584.477)",
+   "anterior": "(2.960.509)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 247,
+   "etiqueta": "Despesas Tributárias",
+   "actual": "(708.285)",
+   "anterior": "(357.685)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 248,
+   "etiqueta": "Outras receitas Operacionais",
+   "actual": "32.222",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 249,
+   "etiqueta": "SUPERÁVIT / DÉFICIT ANTES DO RESULTADO FINANCEIRO",
+   "actual": "3.478.156",
+   "anterior": "(2.737.263)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 250,
+   "etiqueta": "RESULTADO FINANCEIRO",
+   "actual": "(1.207.001)",
+   "anterior": "(270.722)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 251,
+   "etiqueta": "Despesas Financeiras",
+   "actual": "(1.251.577)",
+   "anterior": "(292.431)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 252,
+   "etiqueta": "Receitas Financeiras",
+   "actual": "44.576",
+   "anterior": "21.709",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 253,
+   "etiqueta": "SUPERÁVIT / DÉFICIT DO EXERCÍCIO",
+   "actual": "2.271.155",
+   "anterior": "(3.007.985)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b28",
+   "linea": 830,
+   "etiqueta": "Receita com transmissão",
+   "actual": "11.274.214",
+   "anterior": "7.707.719",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "bloque": "b28",
+   "linea": 831,
+   "etiqueta": "Receita com sócios",
+   "actual": "7.566.451",
+   "anterior": "1.721.452",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "bloque": "b28",
+   "linea": 832,
+   "etiqueta": "Receita com patrocínios",
+   "actual": "2.803.500",
+   "anterior": "1.885.235",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "bloque": "b29",
+   "linea": 849,
+   "etiqueta": "Receita de subvenções",
+   "actual": "754.519",
+   "anterior": "342.203",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "bloque": "b29",
+   "linea": 850,
+   "etiqueta": "Receita com negociação de atletas",
+   "actual": "1.023.163",
+   "anterior": "227.584",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "bloque": "b29",
+   "linea": 851,
+   "etiqueta": "Receita com jogos",
+   "actual": "1.203.175",
+   "anterior": "159.630",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "bloque": "b29",
+   "linea": 852,
+   "etiqueta": "Reversão contingências – Rescisão Parcial GA",
+   "actual": "0",
+   "anterior": "2.390.899",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "bloque": "b29",
+   "linea": 853,
+   "etiqueta": "Receita com licenciamento – royalties",
+   "actual": "736.857",
+   "anterior": "196.884",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "bloque": "b29",
+   "linea": 854,
+   "etiqueta": "Receita Timemania - CEF",
+   "actual": "736.819",
+   "anterior": "221.413",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "bloque": "b29",
+   "linea": 855,
+   "etiqueta": "Demais Receitas",
+   "actual": "1.170.360",
+   "anterior": "432.958",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "bloque": "b29",
+   "linea": 856,
+   "etiqueta": "Total",
+   "actual": "27.268.558",
+   "anterior": "15.285.977",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "bloque": "b30",
+   "linea": 863,
+   "etiqueta": "Descontos obtidos",
+   "actual": "11.369",
+   "anterior": "4.980",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas Financeiras"
+  },
+  {
+   "bloque": "b30",
+   "linea": 864,
+   "etiqueta": "Demais receitas financeiras",
+   "actual": "33.207",
+   "anterior": "16.729",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas Financeiras"
+  },
+  {
+   "bloque": "b30",
+   "linea": 865,
+   "etiqueta": "Total",
+   "actual": "44.576",
+   "anterior": "21.709",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Receitas Financeiras"
+  },
+  {
+   "bloque": "b30",
+   "linea": 867,
+   "etiqueta": "Juros sobre empréstimos",
+   "actual": "(426.277)",
+   "anterior": "(88.299)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "bloque": "b30",
+   "linea": 868,
+   "etiqueta": "Despesas e comissões bancárias",
+   "actual": "(70.880)",
+   "anterior": "(90.145)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "bloque": "b30",
+   "linea": 869,
+   "etiqueta": "Descontos concedidos",
+   "actual": "(19.323)",
+   "anterior": "(4.280)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "bloque": "b30",
+   "linea": 870,
+   "etiqueta": "Encargos s/ tributos em atraso",
+   "actual": "(251.294)",
+   "anterior": "(105.859)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "bloque": "b30",
+   "linea": 871,
+   "etiqueta": "Taxa Cobrança – Minha Entrada",
+   "actual": "(474.023)",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "bloque": "b30",
+   "linea": 872,
+   "etiqueta": "Juros passivos",
+   "actual": "(9.780)",
+   "anterior": "(3.848)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "bloque": "b30",
+   "linea": 873,
+   "etiqueta": "Total",
+   "actual": "(1.251.577)",
+   "anterior": "(292.431)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "bloque": "b30",
+   "linea": 874,
+   "etiqueta": "Resultado Financeiro",
+   "actual": "(1.207.001)",
+   "anterior": "(270.722)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "RESULTADO FINANCEIRO"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 240,
+  "actual": "27.268.558"
+ },
+ "total_gastos": {
+  "linea": 241,
+  "actual": "(23.790.402)"
+ },
+ "resultado": {
+  "linea": 253,
+  "actual": "2.271.155",
+  "anterior": "(3.007.985)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'Outras receitas Operacionais' (L248, 32.222) como ingreso aunque está dentro del bloque de 'CUSTOS E DESPESAS OPERACIONAIS'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Outras receitas Operacionais",
+   "texto": "L248 figura entre los gastos operativos pero es una receita positiva que se compensa dentro del total L241 (23.790.402 neto).",
+   "bloques": [
+    "b6"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "La nota 17 continúa de b28 a b29; su total (L856) coincide con L240. La nota 18 (b30) cuadra con L250-L252. No hay notas de gastos operativos. Columnas de notas tituladas 31/dez./2022 y 31/dez./2021."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Ituano/relatorio-auditoria-2024.md",
+ "generado": "2026-10-18T05:51:33.236Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em reais)",
+ "caja": {
+  "lineas": [
+   163
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   167,
+   178
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda: Emprestimos corriente (L167) y Emprestimos LP e Antecipação de Direitos no corriente (L178). Se excluyen parcelamento de impostos (L177), obligaciones tributarias y otras obligaciones con terceros por no ser deuda financiera clara."
+}

@@ -1,0 +1,44 @@
+{
+ "pdf": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2019-06-30.pdf",
+ "md": "Clubes/Grecia/OFI Crete/OFI_income_stmt_2019-06-30.md",
+ "mdSha1": "0b3c92db0001b4ed8eec3b60075c75319bdd7e50",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:19:54.033Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    20
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra ninguna frase de escala (por ejemplo «σε χιλιάδες»); solo se ve el título y el encabezado.",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2019",
+ "columna_anterior": "30/6/2018",
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Indica el documento que las cifras de la Κατάσταση Αποτελεσμάτων (b1) están en euros sin redondeo (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No aparece ninguna línea de escala sobre la tabla b1; se asume unidades en euros por ser el estándar griego, pero hay que confirmarlo.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Un único bloque: estado de resultados por función (κατά λειτουργία) con columnas 30/6/2019 y 30/6/2018. No hay notas con desglose entre los bloques indexados. Perímetro sin indicar; probablemente individual."
+}

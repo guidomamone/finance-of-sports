@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/Cruzeiro/informativo-financeiro-2024.md",
+ "generado": "2026-10-18T05:50:48.718Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(em milhares de reais, exceto quando indicado de outra forma)",
+ "caja": {
+  "lineas": [
+   198
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   259
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Empréstimos e financiamentos (L259) es cero en 2024 (15.009 en 2023); no hay préstamos no corrientes con ese nombre. Los 'Títulos emitidos' (L266, L283) y las obligaciones con partes relacionadas no se incluyeron por no ser préstamos bancarios/financieros según el criterio; L278 está rotulada 'Impostos e contribuições' con nota 15, probablemente impuestos. Se eligió L259 aunque su valor 2024 sea '-'."
+}

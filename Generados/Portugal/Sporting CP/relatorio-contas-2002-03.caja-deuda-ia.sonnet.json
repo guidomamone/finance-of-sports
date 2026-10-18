@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Portugal/Sporting CP/relatorio-contas-2002-03.md",
+ "generado": "2026-10-18T05:53:05.343Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"clientes c corrente\" + \"dividas a instituicoes de credito\" (o sus equivalentes en este documento).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de euros)",
+ "caja": {
+  "lineas": [
+   409
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   400,
+   391,
+   395
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caja: subtotal Depósitos Bancários e Caixa (4 228 = 4 222 + 6) en L409. Deuda según el criterio del club: Clientes, Conta Corrente (L400, 14 783, activo circulante) + Dívidas a Instituições de Crédito de largo plazo (L391, 17 396) y de corto plazo (L395, 15 101). La inclusión de Clientes c/corrente como deuda es atípica, pero se aplica el criterio indicado."
+}

@@ -1,0 +1,186 @@
+{
+ "pdf": "Clubes/Portugal/Paços de Ferreira/contas22_23.pdf",
+ "md": "Clubes/Portugal/Paços de Ferreira/contas22_23.md",
+ "mdSha1": "e1cfe1ed1548d5aeb8abf4e1c902e43b7299768e",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:17:46.260Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    7,
+    46
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    58,
+    75
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    87,
+    116
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    126,
+    136
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 4,
+   "lineas": [
+    140,
+    152
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 15,
+   "lineas": [
+    391,
+    400
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 15,
+   "lineas": [
+    402,
+    411
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 16,
+   "lineas": [
+    421,
+    428
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 17,
+   "lineas": [
+    442,
+    452
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 18,
+   "lineas": [
+    466,
+    498
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 19,
+   "lineas": [
+    510,
+    517
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 19,
+   "lineas": [
+    523,
+    529
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 20,
+   "lineas": [
+    547,
+    553
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 20,
+   "lineas": [
+    557,
+    559
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 21,
+   "lineas": [
+    571,
+    579
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 22,
+   "lineas": [
+    593,
+    599
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 22,
+   "lineas": [
+    605,
+    609
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 23,
+   "lineas": [
+    625,
+    630
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 24,
+   "lineas": [
+    656,
+    661
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b6",
+  "b7",
+  "b8"
+ ],
+ "notas_gastos": [
+  "b9",
+  "b10",
+  "b11",
+  "b12",
+  "b13"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Cifras en euros con céntimos en el texto del informe (ej. 'gastos totais ... 9.253.448,74 €'); el cuadro no indica escala",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/06/2023",
+ "columna_anterior": "30/06/2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados por naturaleza en b2 (pág. 2), individual. Los encabezados de b2 son 'Períodos' y las columnas de fecha están en las filas siguientes; en las notas son 30/06/2023 y 30/06/2022. b14 (impuesto corriente), b15 (ratios), b16-b17 (financiamentos), b19 (por jugador) no se eligen. b18 no figura en el índice."
+}

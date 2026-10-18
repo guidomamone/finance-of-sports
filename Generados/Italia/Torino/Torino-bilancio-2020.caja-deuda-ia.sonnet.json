@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Torino/Torino-bilancio-2020.md",
+ "generado": "2026-10-18T05:53:15.449Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"passivita correnti finanziarie\" + \"passivita finanziarie non correnti\" (o sus equivalentes en este documento).",
+ "escala": "miles",
+ "escala_evidencia": "(valori migliaia di Euro)",
+ "caja": {
+  "lineas": [
+   113
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   125,
+   130
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda = Passività finanziarie non correnti (30.000) + Passività finanziarie correnti (L130, sin importe en 2020 ni 2019). Caja: Disponibilità liquide 27.824 (L113); el detalle de la PFN muestra depósitos 27.816 + efectivo 8."
+}

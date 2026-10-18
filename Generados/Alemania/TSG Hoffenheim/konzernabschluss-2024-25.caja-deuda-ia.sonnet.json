@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Alemania/TSG Hoffenheim/konzernabschluss-2024-25.md",
+ "generado": "2026-10-18T05:51:28.509Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "30.06.2025 (columna actual en €, columna anterior en T€)",
+ "caja": {
+  "lineas": [
+   182
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   280
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Las cifras de 2025 están en euros completos (el año anterior en T€). La línea de caja L157 (Kassenbestand...) se corresponde con 41.681.699 (L182). La deuda corresponde a Verbindlichkeiten gegenüber Kreditinstituten (L253), valor L284 = 44.237.864 según el orden de la columna; la asignación por posición es incierta."
+}

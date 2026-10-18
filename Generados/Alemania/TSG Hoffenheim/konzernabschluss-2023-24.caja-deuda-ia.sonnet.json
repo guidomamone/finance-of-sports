@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Alemania/TSG Hoffenheim/konzernabschluss-2023-24.md",
+ "generado": "2026-10-18T05:51:27.373Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "30.06.2024",
+ "caja": {
+  "lineas": [
+   157
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   249
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Las cifras del ejercicio 30.06.2024 están en euros (unidades); la columna comparativa 2023 está en T€. No hay una frase explícita de escala para 2024. Los valores numéricos de caja (L182: 35.578.492) y de deuda con bancos (L282 aprox. 20.040.914) se asignaron por posición y el orden de las columnas es incierto, por lo que la correspondencia es dudosa. Solo hay una partida de deuda financiera (Verbindlichkeiten gegenüber Kreditinstituten), sin desglose corriente/no corriente."
+}

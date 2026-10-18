@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/Guarani/demonstracoes-financeiras-2023-2024.md",
+ "generado": "2026-10-18T05:51:21.826Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Em milhares de reais)",
+ "caja": {
+  "lineas": [
+   9
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   31
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera = Empréstimos corrientes (484 en 2024); no hay préstamos bancarios no corrientes en el balance. Excluidas Antecipações (adelantos de ingresos/alienación judicial), Recuperação Judicial y Contingências por no ser préstamos financieros. Las Aplicações financeiras (L10) no se incluyen como caja."
+}

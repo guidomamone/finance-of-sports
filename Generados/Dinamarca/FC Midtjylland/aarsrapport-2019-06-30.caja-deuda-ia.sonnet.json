@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Dinamarca/FC Midtjylland/aarsrapport-2019-06-30.md",
+ "generado": "2026-10-18T05:52:11.193Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "TDKK",
+ "caja": {
+  "lineas": [
+   2074
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   2103,
+   2159,
+   2162
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda: créditos hipotecarios (no corriente L2103, corriente L2159) y Kreditinstitutter (L2162, 0 en 2019). En el tramo no corriente las cifras están separadas de las etiquetas, por eso se cita la línea de la etiqueta. Se excluyeron los leasings (L2106, L2165) por ser dudosos según el criterio."
+}

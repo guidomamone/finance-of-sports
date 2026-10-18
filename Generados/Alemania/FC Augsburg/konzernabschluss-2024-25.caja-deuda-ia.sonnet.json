@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Alemania/FC Augsburg/konzernabschluss-2024-25.md",
+ "generado": "2026-10-18T05:50:05.487Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "EUR",
+ "caja": {
+  "lineas": [
+   90
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "El balance está incompleto: las páginas no incluyen la sección de pasivo con Verbindlichkeiten (deudas con bancos), por lo que no se pudo identificar deuda financiera. Los importes están en EUR sin escala. La caja (Kassenbestand, Guthaben bei Kreditinstituten) se asignó a L90 (14.134.534,62) por el orden de los valores, aunque la maquetación es confusa."
+}

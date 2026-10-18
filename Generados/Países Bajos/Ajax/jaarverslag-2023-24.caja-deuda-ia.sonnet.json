@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Países Bajos/Ajax/jaarverslag-2023-24.md",
+ "generado": "2026-10-18T05:49:38.024Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"desinvesteringen\" + \"eindbalans\" (o sus equivalentes en este documento).",
+ "escala": "miles",
+ "escala_evidencia": "BEDRAGEN x EUR 1.000",
+ "caja": {
+  "lineas": [
+   4051
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   4024,
+   4025,
+   4034,
+   4035
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El criterio 'desinvesteringen + eindbalans' corresponde a la nota de inmovilizado intangible (fichajes), no a deuda financiera del balance; no es aplicable aquí. Como aproximación se tomaron las deudas con carácter financiero: leaseverplichtingen (no corriente y corriente) y overige schulden (no corriente y corriente). Es dudoso que las overige schulden sean estrictamente financieras, ya que pueden incluir deudas por transferencias. Las effecten (L4049) no se incluyeron en caja."
+}

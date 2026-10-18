@@ -1,0 +1,286 @@
+{
+ "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2021-22.pdf",
+ "md": "Clubes/Portugal/Nacional/relatorio-contas-2021-22.md",
+ "mdSha1": "3f2ff3e1d2dff1a504d6e26d30e384f741df3d56",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:19:09.873Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    74,
+    109
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    126,
+    143
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    160,
+    186
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    205,
+    214
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    218,
+    227
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 9,
+   "lineas": [
+    295,
+    302
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    368,
+    374
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    396,
+    411
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 12,
+   "lineas": [
+    417,
+    429
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    443,
+    457
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 13,
+   "lineas": [
+    463,
+    479
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    491,
+    495
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 14,
+   "lineas": [
+    503,
+    521
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 15,
+   "lineas": [
+    537,
+    542
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 15,
+   "lineas": [
+    544,
+    550
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 15,
+   "lineas": [
+    556,
+    563
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 16,
+   "lineas": [
+    577,
+    599
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 16,
+   "lineas": [
+    605,
+    610
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 17,
+   "lineas": [
+    623,
+    634
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 18,
+   "lineas": [
+    658,
+    680
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 19,
+   "lineas": [
+    693,
+    707
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 19,
+   "lineas": [
+    713,
+    729
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 20,
+   "lineas": [
+    745,
+    756
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 21,
+   "lineas": [
+    771,
+    791
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 21,
+   "lineas": [
+    797,
+    812
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 22,
+   "lineas": [
+    826,
+    845
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 22,
+   "lineas": [
+    853,
+    865
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 23,
+   "lineas": [
+    879,
+    890
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 23,
+   "lineas": [
+    898,
+    901
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 23,
+   "lineas": [
+    907,
+    910
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b23",
+  "b25",
+  "b28"
+ ],
+ "notas_gastos": [
+  "b24",
+  "b26",
+  "b27",
+  "b29",
+  "b30"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Importes en la Demonstração dos Resultados impresos en unidades de euro completas (ej. 782.474), sin mención de miles",
+ "moneda": "EUR",
+ "columna_ejercicio": "30-jun-22 12 meses",
+ "columna_anterior": "30-jun-21 12 meses",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Imposto sobre o rendimento' (b16), cuyas columnas dicen 2021 y 2020 en vez de 30-jun-22 y 30-jun-21?",
+   "propuesta": "no",
+   "tema": "columna",
+   "renglon": "Imposto sobre rendimento do período",
+   "texto": "El encabezado de b16 usa 2021/2020 aunque el texto de arriba habla de períodos a 30 de junio de 2022 y 2021; es una nota de impuestos y no la elegí.",
+   "bloques": [
+    "b16"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados individual de Clube Desportivo Nacional, SAD (b2), con columnas 30-jun-22 y 30-jun-21 de 12 meses. Notas de ingresos: subsidios (b23), otros rendimientos (b25), ventas y prestaciones de servicios (b28). Notas de gastos: FSE (b24), personal (b26), otros gastos (b27), intereses (b29), provisiones (b30). Se excluyen balance, flujos, patrimonio, activos fijos y los cuadros por jugador (b12). La nota de impuestos (b16, b17) no se eligió."
+}

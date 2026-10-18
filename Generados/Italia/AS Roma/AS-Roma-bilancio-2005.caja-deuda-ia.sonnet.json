@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2005.md",
+ "generado": "2026-10-18T05:49:47.962Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"esigibili entro l esercizio successivo\" (o sus equivalentes en este documento).",
+ "escala": "miles",
+ "escala_evidencia": "EURO/000",
+ "caja": {
+  "lineas": [
+   3750
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   3757,
+   3759,
+   3760,
+   3761
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Es un estado patrimoniale riclassificato, no el balance civilístico completo. Se tomaron las líneas de deuda financiera con columna total (entro + oltre 12 meses) de 2005: bancos, otros financiadores, controladas y asociadas; no se usó el subtotal INDEBITAMENTO FINANZIARIO. El criterio 'esigibili entro l'esercizio successivo' no se puede aplicar tal cual, porque en este documento los debiti verso banche tienen una parte a más de 12 meses de 66 mil euros."
+}

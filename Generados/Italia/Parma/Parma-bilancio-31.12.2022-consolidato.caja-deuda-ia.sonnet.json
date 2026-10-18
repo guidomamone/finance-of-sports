@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.md",
+ "generado": "2026-10-18T05:52:40.427Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "BILANCIO CONSOLIDATO al 31 dicembre 2022",
+ "caja": {
+  "lineas": [
+   493
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   531,
+   532,
+   533,
+   534
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance está en euros enteros, sin mención explícita de escala; se asume unidades. Caja: se toma el total de Disponibilidades liquidas (L493 = depósitos bancarios L491 + efectivo L492). Deuda: Debiti verso banche, tramo corriente (L531) y no corriente (L532), más Debiti verso altri finanziatori (L533 y L534, saldo 0 en 2022). Los Debiti verso controllanti (L540, 63M) y verso ente specifico (L553) no se incluyen por no ser préstamos bancarios claros; podrían ser financiación del accionista."
+}

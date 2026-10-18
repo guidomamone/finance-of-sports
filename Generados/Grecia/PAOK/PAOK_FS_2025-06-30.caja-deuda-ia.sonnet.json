@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Grecia/PAOK/PAOK_FS_2025-06-30.md",
+ "generado": "2026-10-18T05:52:36.503Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"δανεια\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε €",
+ "caja": {
+  "lineas": [
+   381
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   411,
+   414
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Cierre 30/6/2025. Deuda = Δάνεια no corriente (L411, en '-' en 2025) y Βραχυπρόθεσμα Δάνεια corriente (L414, 1.200.000). Importes en euros completos con decimales."
+}

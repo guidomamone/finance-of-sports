@@ -1,0 +1,465 @@
+{
+ "pdf": "Clubes/Portugal/Gil Vicente/relatorio-contas-2022-23.pdf",
+ "md": "Clubes/Portugal/Gil Vicente/relatorio-contas-2022-23.md",
+ "mdSha1": "1b3de0a1cc5db0c5c639eb16c312fbee3093f398",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:16:28.597Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    23,
+    33
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 9,
+   "lineas": [
+    220,
+    231
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 10,
+   "lineas": [
+    252,
+    257
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 13,
+   "lineas": [
+    336,
+    373
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 17,
+   "lineas": [
+    492,
+    517
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 17,
+   "lineas": [
+    521,
+    539
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 18,
+   "lineas": [
+    555,
+    573
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 18,
+   "lineas": [
+    577,
+    585
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 24,
+   "lineas": [
+    744,
+    749
+   ],
+   "tipo": "texto"
+  },
+  "b10": {
+   "pagina": 24,
+   "lineas": [
+    751,
+    789
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 25,
+   "lineas": [
+    809,
+    816
+   ],
+   "tipo": "texto"
+  },
+  "b12": {
+   "pagina": 25,
+   "lineas": [
+    818,
+    838
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 26,
+   "lineas": [
+    869,
+    875
+   ],
+   "tipo": "texto"
+  },
+  "b14": {
+   "pagina": 26,
+   "lineas": [
+    877,
+    906
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 27,
+   "lineas": [
+    930,
+    933
+   ],
+   "tipo": "texto"
+  },
+  "b16": {
+   "pagina": 36,
+   "lineas": [
+    1255,
+    1290
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 37,
+   "lineas": [
+    1310,
+    1340
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 38,
+   "lineas": [
+    1356,
+    1368
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 38,
+   "lineas": [
+    1370,
+    1373
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 38,
+   "lineas": [
+    1375,
+    1376
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 38,
+   "lineas": [
+    1382,
+    1386
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 38,
+   "lineas": [
+    1392,
+    1395
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 38,
+   "lineas": [
+    1399,
+    1405
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 39,
+   "lineas": [
+    1419,
+    1425
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 39,
+   "lineas": [
+    1429,
+    1453
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 40,
+   "lineas": [
+    1479,
+    1483
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 40,
+   "lineas": [
+    1485,
+    1491
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 41,
+   "lineas": [
+    1507,
+    1532
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 42,
+   "lineas": [
+    1552,
+    1564
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 42,
+   "lineas": [
+    1576,
+    1584
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 43,
+   "lineas": [
+    1595,
+    1601
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 43,
+   "lineas": [
+    1611,
+    1615
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 43,
+   "lineas": [
+    1621,
+    1627
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 44,
+   "lineas": [
+    1649,
+    1657
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 45,
+   "lineas": [
+    1684,
+    1690
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 45,
+   "lineas": [
+    1702,
+    1706
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 46,
+   "lineas": [
+    1722,
+    1754
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 47,
+   "lineas": [
+    1777,
+    1786
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 47,
+   "lineas": [
+    1794,
+    1797
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 48,
+   "lineas": [
+    1817,
+    1832
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 48,
+   "lineas": [
+    1842,
+    1848
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 49,
+   "lineas": [
+    1864,
+    1903
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 50,
+   "lineas": [
+    1919,
+    1925
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 50,
+   "lineas": [
+    1929,
+    1934
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 50,
+   "lineas": [
+    1940,
+    1945
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 51,
+   "lineas": [
+    1960,
+    1971
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 51,
+   "lineas": [
+    1979,
+    1989
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 52,
+   "lineas": [
+    2011,
+    2036
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 53,
+   "lineas": [
+    2052,
+    2088
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 53,
+   "lineas": [
+    2092,
+    2100
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 55,
+   "lineas": [
+    2150,
+    2152
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 55,
+   "lineas": [
+    2156,
+    2158
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 58,
+   "lineas": [
+    2244,
+    2250
+   ],
+   "tipo": "tabla"
+  },
+  "b54": {
+   "pagina": 58,
+   "lineas": [
+    2254,
+    2258
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b12"
+ ],
+ "notas_ingresos": [
+  "b40",
+  "b41",
+  "b45"
+ ],
+ "notas_gastos": [
+  "b23",
+  "b42",
+  "b43",
+  "b46"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2022-2023 12 MESES",
+ "columna_anterior": "2021-2022 12 MESES",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El estado de resultados individual por naturaleza está en b12 (pág. 25). b3 es un resumen del informe de gestión y no se elige. Las notas 18 (b40), 19 (b41) y 22 (b45) abren los ingresos. Las notas 7 CMVMC (b23), 20 FSE (b42), 21 personal (b43) y 23 otros gastos (b46) abren los gastos. La nota 24 de resultado financiero (b47) no se incluye porque son intereses y no ingresos ni gastos operativos."
+}

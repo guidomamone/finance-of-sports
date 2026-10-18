@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/AC Milan/AC-Milan-bilanci-relazioni-2018-19.md",
+ "generado": "2026-10-18T05:49:26.635Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(valori in migliaia di Euro)",
+ "caja": {
+  "lineas": [
+   802
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   852,
+   854
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Cierre 30.06.2019. Caja = total disponibilità liquide (L802, incluye L800 y L801). Deuda financiera = debiti verso banche (L852) y debiti verso altri finanziatori entro 12 mesi (L854); obbligazioni y soci per finanziamenti son 0 en 2019 y debiti verso altri finanziatori oltre 12 mesi es 0. Excluidos debiti verso enti - settore specifico (deudas del sector fútbol, no préstamos financieros) y proveedores."
+}

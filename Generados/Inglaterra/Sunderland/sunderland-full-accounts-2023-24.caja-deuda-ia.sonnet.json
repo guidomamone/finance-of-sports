@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2023-24.md",
+ "generado": "2026-10-18T05:53:12.657Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£'000 £'000",
+ "caja": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "deuda": {
+  "lineas": [
+   1509
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance muestra 'Cash at bank' (L809) sin valor visible en la columna 2024; el 2024 tiene solo un descubierto bancario de 8,289 (L1509, nota 14). La caja de 2023 sería 2,086, pero en 2024 no aparece (probablemente cero), por eso se marca ninguna. Los importes adeudados a la matriz (L1510) y a empresas del grupo (L1511) no se incluyeron como deuda financiera, ya que son financiación de accionistas que se convertirá en capital, no préstamos bancarios."
+}

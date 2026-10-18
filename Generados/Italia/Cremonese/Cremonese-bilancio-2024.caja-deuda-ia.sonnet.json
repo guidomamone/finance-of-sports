@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/Cremonese/Cremonese-bilancio-2024.md",
+ "generado": "2026-10-18T05:50:43.484Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Capitale Sociale 339.558,00 Euro interamente versato",
+ "caja": {
+  "lineas": [
+   83
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   110,
+   111,
+   114,
+   115
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los importes están en euros enteros; no hay una leyenda explícita de escala, por eso se cita el capital social en euros. La deuda incluye debiti verso banche (110, 111) y debiti verso altri finanziatori (114, 115, la línea 115 solo tiene valor en 2023). La línea 115 no tiene importe en 2024. Se excluyen los otros debiti (L130, L131), que son sobre todo deudas con otros clubes por traspasos."
+}

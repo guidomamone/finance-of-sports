@@ -1,0 +1,16 @@
+{
+ "md": "Clubes/Alemania/Werder Bremen/konzernabschluss-2023-24.md",
+ "generado": "2026-10-18T05:53:28.953Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "TEUR",
+ "caja": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Las páginas aportadas contienen solo el anexo (Konzernanhang), no la tabla del balance: no hay líneas de efectivo ni de deuda financiera con importes. El anexo cita importes en TEUR y en EUR, por lo que la escala del balance no es segura; la escala 'unidades' es provisional."
+}

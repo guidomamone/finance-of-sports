@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2022.md",
+ "generado": "2026-10-18T05:52:22.218Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"debitos com partes relacionadas\" + \"emprestimos e financiamentos\" + \"passivo a descoberto\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "Em reais",
+ "caja": {
+  "lineas": [
+   250
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   250,
+   258,
+   259,
+   263
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Criterio del club: partes relacionadas (L258) + empréstimos bancários corriente (L250 es caja; el corriente es L250 solo en la tabla, ver nota) + no corriente (L259) + passivo a descoberto (L263, negativo). Atención: L250 contiene en la misma fila caja (activo) y empréstimos bancários corrientes (pasivo); se incluye la misma línea en ambas listas. El passivo a descoberto es negativo (-68.813.182). Documento escaneado con OCR, cifras a verificar."
+}

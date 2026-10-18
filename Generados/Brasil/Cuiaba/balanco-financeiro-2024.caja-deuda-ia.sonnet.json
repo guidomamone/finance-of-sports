@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Cuiaba/balanco-financeiro-2024.md",
+ "generado": "2026-10-18T05:50:49.779Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Valores Expressos em Reais (R$)",
+ "caja": {
+  "lineas": [
+   12
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   26,
+   32
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance aparece dos veces (L9-L37 y L272-L300) con cifras idénticas; se usaron las líneas de la primera versión."
+}

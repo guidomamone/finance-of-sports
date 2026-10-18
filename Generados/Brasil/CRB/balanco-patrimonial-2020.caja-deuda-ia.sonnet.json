@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/CRB/balanco-patrimonial-2020.md",
+ "generado": "2026-10-18T05:50:40.981Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"emprestimos e financiamentos\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "(em reais)",
+ "caja": {
+  "lineas": [
+   12
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   25
+  ],
+  "ninguna": false
+ },
+ "observaciones": "En 2020 la línea de Empréstimos e financiamentos (L25) figura con '-', es decir 0; solo tenía saldo en 2019. Los tributos parcelados (L32) y las obligaciones con terceros (L31) no se incluyeron por no ser préstamos y financiamientos."
+}

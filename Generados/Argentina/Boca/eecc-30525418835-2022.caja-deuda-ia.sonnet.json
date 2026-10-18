@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Argentina/Boca/eecc-30525418835-2022.md",
+ "generado": "2026-10-18T05:50:14.930Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Expresado en moneda homogénea y en pesos - Nota 2.2.)",
+ "caja": {
+  "lineas": [
+   889
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Las líneas 'Deudas' (L904, L909) son comerciales, de fútbol, fiscales y laborales (proveedores, acreedores, remuneraciones), sin préstamos bancarios ni financieros identificables, por lo que no se las toma como deuda financiera. Las 'Inversiones' (L890) no se incluyeron en caja."
+}

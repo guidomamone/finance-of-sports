@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Bologna/Bologna-bilancio-consolidato-2021-22.md",
+ "generado": "2026-10-18T05:50:18.269Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Bilancio consolidato al 30-06-2022 (importi in euro, sin indicación de miles; cifras completas como 14.322.901)",
+ "caja": {
+  "lineas": [
+   116
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   146,
+   147
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El documento no declara la escala explícitamente; se infiere unidades (euros) por las cifras completas. Deuda = debiti verso banche corriente (L146) y no corriente (L147). Los debiti verso soci per finanziamenti (L142-L143, 7.135.000) son préstamos de accionistas y quedan fuera por criterio de préstamos bancarios/financieros; podrían incluirse si se considera deuda financiera."
+}

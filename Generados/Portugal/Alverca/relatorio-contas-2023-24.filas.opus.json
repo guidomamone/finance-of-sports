@@ -1,0 +1,514 @@
+{
+ "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.pdf",
+ "md": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.md",
+ "mdSha1": "5dc7633085baa1b3eb8e758dd0adb4ef13569f08",
+ "ubicacionSha1": "855aa5bc61b2c609ad0835f2e2c70edeb36a0027",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:19:39.411Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [
+   "b10"
+  ],
+  "notas_gastos": [
+   "b16",
+   "b17",
+   "b19"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "unidades",
+   "evidencia": "L273: Unidade Monetária: euro"
+  },
+  {
+   "bloque": "b10",
+   "escala": "unidades",
+   "evidencia": "L679: importes con céntimos y símbolo € (69 051,01 €)"
+  },
+  {
+   "bloque": "b16",
+   "escala": "unidades",
+   "evidencia": "L813: Total 1 171 360 € coincide con 1.171.360,47 del estado"
+  },
+  {
+   "bloque": "b17",
+   "escala": "unidades",
+   "evidencia": "L833: Total 2 437 682 € coincide con 2.437.682,09 del estado"
+  },
+  {
+   "bloque": "b19",
+   "escala": "unidades",
+   "evidencia": "L927: importes con céntimos y símbolo €"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 277,
+   "etiqueta": "Vendas e serviços prestados",
+   "actual": "69.051,01",
+   "anterior": "63.877,53",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 278,
+   "etiqueta": "Subsídios à exploração",
+   "actual": "63.231,00",
+   "anterior": "54.881,93",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 279,
+   "etiqueta": "Fornecimentos e serviços externos",
+   "actual": "(1.171.360,47)",
+   "anterior": "(1.441.895,21)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 280,
+   "etiqueta": "Gastos com o pessoal",
+   "actual": "(2.437.682,09)",
+   "anterior": "(2.575.619,75)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 281,
+   "etiqueta": "Outros rendimentos",
+   "actual": "522.591,60",
+   "anterior": "706.546,25",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 282,
+   "etiqueta": "Outros gastos",
+   "actual": "(247.028,99)",
+   "anterior": "(38.683,83)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 283,
+   "etiqueta": "Resultado antes de depreciações, gastos de financiamentos e impostos",
+   "actual": "(3.201.207,89)",
+   "anterior": "(3.228.891,09)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 284,
+   "etiqueta": "Gastos/reversões de depreciação e de amortização",
+   "actual": "(19.459,29)",
+   "anterior": "(20.295,45)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 285,
+   "etiqueta": "Resultado operacional (antes de gastos de financiamento e impostos)",
+   "actual": "(3.220.667,18)",
+   "anterior": "(3.249.186,54)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 286,
+   "etiqueta": "Juros e gastos similares suportados",
+   "actual": "0,00",
+   "anterior": "(28,58)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 287,
+   "etiqueta": "Resultado antes de impostos",
+   "actual": "(3.220.667,18)",
+   "anterior": "(3.249.215,12)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 288,
+   "etiqueta": "Imposto sobre o rendimento do período",
+   "actual": "(9.830,27)",
+   "anterior": "(7.798,48)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 289,
+   "etiqueta": "Resultado líquido do período",
+   "actual": "(3.230.497,45)",
+   "anterior": "(3.257.013,60)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 679,
+   "etiqueta": "Prestações de serviços",
+   "actual": "69 051,01 €",
+   "anterior": "63 877,53 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Vendas e serviços prestados"
+  },
+  {
+   "bloque": "b10",
+   "linea": 680,
+   "etiqueta": "Total...",
+   "actual": "69 051,01 €",
+   "anterior": "63 877,53 €",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Vendas e serviços prestados"
+  },
+  {
+   "bloque": "b16",
+   "linea": 808,
+   "etiqueta": "Serviços Especializados",
+   "actual": "736 232 €",
+   "anterior": "782 433 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b16",
+   "linea": 809,
+   "etiqueta": "Materiais",
+   "actual": "67 239 €",
+   "anterior": "77 650 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b16",
+   "linea": 810,
+   "etiqueta": "Energia e Fluidos",
+   "actual": "7 643 €",
+   "anterior": "30 491 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b16",
+   "linea": 811,
+   "etiqueta": "Deslocações e Estadas",
+   "actual": "140 160 €",
+   "anterior": "206 322 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b16",
+   "linea": 812,
+   "etiqueta": "Serviços Diversos",
+   "actual": "220 087 €",
+   "anterior": "344 999 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b16",
+   "linea": 813,
+   "etiqueta": "Total",
+   "actual": "1 171 360 €",
+   "anterior": "1 441 895 €",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Fornecimentos e serviços externos"
+  },
+  {
+   "bloque": "b17",
+   "linea": 827,
+   "etiqueta": "Remunerações dos Órgãos Sociais",
+   "actual": "15 619 €",
+   "anterior": "- €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b17",
+   "linea": 828,
+   "etiqueta": "Remuneração do Pessoal",
+   "actual": "1 899 121 €",
+   "anterior": "1 684 174 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b17",
+   "linea": 829,
+   "etiqueta": "Encargos sobre remunerações",
+   "actual": "193 792 €",
+   "anterior": "207 941 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b17",
+   "linea": 830,
+   "etiqueta": "Seguros de Acidentes de Trabalho",
+   "actual": "98 178 €",
+   "anterior": "129 531 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b17",
+   "linea": 831,
+   "etiqueta": "Indemnizações",
+   "actual": "5 000 €",
+   "anterior": "93 316 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b17",
+   "linea": 832,
+   "etiqueta": "Outros Gastos com Pessoal",
+   "actual": "227 971 €",
+   "anterior": "462 658 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b17",
+   "linea": 833,
+   "etiqueta": "Total",
+   "actual": "2 437 682 €",
+   "anterior": "2 575 620 €",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos com o pessoal"
+  },
+  {
+   "bloque": "b19",
+   "linea": 927,
+   "etiqueta": "Impostos",
+   "actual": "20 454,04 €",
+   "anterior": "13 252,71 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b19",
+   "linea": 928,
+   "etiqueta": "Correções relativas a períodos anteriores",
+   "actual": "301 340,00 €",
+   "anterior": "2 814,09 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b19",
+   "linea": 929,
+   "etiqueta": "Donativos",
+   "actual": "- €",
+   "anterior": "500,00 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b19",
+   "linea": 930,
+   "etiqueta": "Multas e penalidades",
+   "actual": "21 955,50 €",
+   "anterior": "20 052,50 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b19",
+   "linea": 931,
+   "etiqueta": "Despesas não devidamente documentadas",
+   "actual": "2 471,02 €",
+   "anterior": "505,49 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b19",
+   "linea": 932,
+   "etiqueta": "Outros não especificados",
+   "actual": "808,43 €",
+   "anterior": "1 559,04 €",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b19",
+   "linea": 933,
+   "etiqueta": "Total",
+   "actual": "347 028,99 €",
+   "anterior": "38 683,83 €",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Outros gastos"
+  },
+  {
+   "bloque": "b19",
+   "linea": 935,
+   "etiqueta": "Rendimentos Suplementares",
+   "actual": "24 153,57 €",
+   "anterior": "- €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos"
+  },
+  {
+   "bloque": "b19",
+   "linea": 936,
+   "etiqueta": "Descontos de pronto pagamento obtidos",
+   "actual": "0,01 €",
+   "anterior": "11,09 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos"
+  },
+  {
+   "bloque": "b19",
+   "linea": 937,
+   "etiqueta": "Alienações diretas de inscrição desportiva",
+   "actual": "581 500,00 €",
+   "anterior": "694 020,93 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos"
+  },
+  {
+   "bloque": "b19",
+   "linea": 938,
+   "etiqueta": "Correções relativas a períodos anteriores",
+   "actual": "4 102,68 €",
+   "anterior": "3 093,05 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos"
+  },
+  {
+   "bloque": "b19",
+   "linea": 939,
+   "etiqueta": "Recuperação de encargos",
+   "actual": "- €",
+   "anterior": "2 949,02 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos"
+  },
+  {
+   "bloque": "b19",
+   "linea": 940,
+   "etiqueta": "Outros rendimentos",
+   "actual": "500,00 €",
+   "anterior": "- €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos"
+  },
+  {
+   "bloque": "b19",
+   "linea": 941,
+   "etiqueta": "Outros não especificados",
+   "actual": "12 335,39 €",
+   "anterior": "8 474,16 €",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos"
+  },
+  {
+   "bloque": "b19",
+   "linea": 942,
+   "etiqueta": "Total",
+   "actual": "622 591,65 €",
+   "anterior": "708 548,25 €",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Outros rendimentos"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 289,
+  "actual": "(3.230.497,45)",
+  "anterior": "(3.257.013,60)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el desglose de 'Outros gastos' de b19 (L927-L933, total 347 028,99 €) aunque el estado muestre (247.028,99) en L282?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Outros gastos",
+   "texto": "El total de la nota (L933) y la suma de sus partidas superan en 100.000 € al renglón del estado (L282); posible error de transcripción o de la nota.",
+   "bloques": [
+    "b19",
+    "b2"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga el desglose de 'Outros rendimentos' de b19 (L935-L942, total 622 591,65 €) aunque el estado muestre 522.591,60 en L281?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Outros rendimentos",
+   "texto": "El total de la nota (L942) difiere en 100.000,05 € del estado (L281), y el año anterior también difiere (708 548,25 vs 706.546,25).",
+   "bloques": [
+    "b19",
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado b2 en euros con céntimos; notas en euros (b16 y b17 redondeadas a la unidad). No se imprime total de ingresos ni de gastos. El desglose de 'Subsídios à exploração' (nota 15) y de depreciaciones no está en los bloques recibidos. Las notas b19 no cuadran con el estado por ~100.000 € en ambos renglones."
+}

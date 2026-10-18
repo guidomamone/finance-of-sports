@@ -1,0 +1,24 @@
+{
+ "md": "Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2012.md",
+ "generado": "2026-10-18T05:49:26.007Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "in migliaia di Euro",
+ "caja": {
+  "lineas": [
+   652
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   692,
+   694,
+   695,
+   697,
+   698
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa el balance consolidado del Gruppo Milan (31.12.2012, en miles de euros); el balance individual de A.C. Milan S.p.A. (L3075 en adelante) está en unidades. Deuda: préstamos de socios (L692), bancos corriente y no corriente (L694, L695) y otros financiadores corriente y no corriente (L697, L698). Caja: total de disponibilidades líquidas (L652)."
+}

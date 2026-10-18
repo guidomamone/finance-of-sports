@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2021-individual.md",
+ "generado": "2026-10-18T05:52:39.014Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "I prospetti di Stato Patrimoniale, di Conto Economico, di Rendiconto Finanziario e la Nota Integrativa sono espressi in unità di Euro.",
+ "caja": {
+  "lineas": [
+   509
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   543,
+   546
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se incluyen debiti verso banche (total, corriente + no corriente) y debiti verso altri finanziatori; los debiti verso controllanti (L553, 59,8 M) no se incluyen por ser deuda con la matriz, aunque podrían ser financieros."
+}

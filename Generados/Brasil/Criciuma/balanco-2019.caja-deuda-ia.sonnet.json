@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Criciuma/balanco-2019.md",
+ "generado": "2026-10-18T05:50:44.532Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"emprestimo e financiamentos\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "( Valores expressos em unidades de reais )",
+ "caja": {
+  "lineas": [
+   25
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   55,
+   63
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Empréstimos e Financiamentos circulante es '-' en 2019 (L55, sin saldo); se incluye por aparecer en el balance, el saldo de 2019 está solo en no corriente (L63)."
+}

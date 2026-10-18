@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Italia/Fiorentina/Fiorentina-bilancio-2023-24.md",
+ "generado": "2026-10-18T05:51:06.024Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Bilancio al 30 giugno 2024 (importi espressi in euro, senza indicazione di migliaia: ad es. 'Totale disponibilità liquide | 22.291.413')",
+ "caja": {
+  "lineas": [
+   788
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El documento no indica explícitamente la escala; las cifras están en euros enteros. En el pasivo (D) no figuran bancos ni otros financiadores: solo anticipos, proveedores, deudas tributarias, previsionales, otras deudas y deudas con entes del sector específico (operaciones de fichajes), que no se consideran deuda financiera. Caja: se eligió el total de disponibilidades líquidas (L788), que suma depósitos bancarios y efectivo."
+}

@@ -1,0 +1,16 @@
+{
+ "md": "Clubes/Bélgica/Charleroi/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-18T05:50:34.395Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "dont le total du bilan s’élève à 21.196.284 EUR",
+ "caja": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Solo se muestra la página del activo (hasta 'Créances à un an au plus' etc.) y las líneas de importe están separadas de sus etiquetas. Valeurs disponibles (L282) y su importe no se pueden emparejar con certeza: la columna de importes va de L302 a L309; L308 (54/58, 898.948) sería probable 'Valeurs disponibles' y L307 (51/53 1.600.833) 'Autres placements', pero el total de 2.499.780 del informe de gestión coincide con 1.600.833 + 898.948, por lo que caja serían L307 y L308 (placements de trésorerie + valeurs disponibles). La página del pasivo no está incluida, por lo que no se puede identificar la deuda financiera (el informe de gestión menciona 1.042.154 € de dettes financières a 30/06/25). Escala: importes en euros sin indicación de miles."
+}

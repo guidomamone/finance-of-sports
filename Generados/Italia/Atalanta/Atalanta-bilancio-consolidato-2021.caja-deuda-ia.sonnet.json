@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2021.md",
+ "generado": "2026-10-18T05:49:58.018Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(valori in Euro)",
+ "caja": {
+  "lineas": [
+   134
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   170,
+   171
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance está en euros enteros; la frase de escala proviene de la tabla de la nota integrativa ('valori in Euro'), no del encabezado del balance. Caja: total Disponibilità liquide (L134) que incluye depósitos bancarios y efectivo. Deuda: Debiti verso banche, tramos corriente (L170) y no corriente (L171); se excluye el subtotal L172 para no duplicar. Los debitos con Enti settore specifico y proveedores no son deuda financiera."
+}

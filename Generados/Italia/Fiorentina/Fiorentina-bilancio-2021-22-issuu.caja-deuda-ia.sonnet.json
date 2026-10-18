@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Italia/Fiorentina/Fiorentina-bilancio-2021-22-issuu.md",
+ "generado": "2026-10-18T05:51:05.241Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Bilancio al 30 giugno 2022 (importi espressi in euro, senza indicazione di migliaia: es. 'TOTALE ATTIVO | 366.000.484')",
+ "caja": {
+  "lineas": [
+   908
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El documento no indica la escala de forma explícita; las cifras están en euros completos. El pasivo (D) no tiene líneas de deuda bancaria o financiera; solo deudas comerciales, tributarias, con la liga (enti settore specifico) y otras, por lo que no se incluyeron."
+}

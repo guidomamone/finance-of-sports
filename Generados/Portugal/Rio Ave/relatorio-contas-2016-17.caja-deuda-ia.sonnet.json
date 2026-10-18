@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2016-17.md",
+ "generado": "2026-10-18T05:52:51.774Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"financiamentos obtidos\" + \"outras contas a pagar\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "(Valores em euros)",
+ "caja": {
+  "lineas": [
+   325
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   344,
+   350,
+   351
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Criterio: financiamentos obtidos + outras dívidas a pagar, corrente y no corriente, columna 30-06-2017. En el no corriente solo hay 'Outras dívidas a pagar' (L344), sin financiamentos obtidos en 2017. La escala se infiere de '(Valores em euros)' en la nota 4.1 y de los importes con símbolo €."
+}

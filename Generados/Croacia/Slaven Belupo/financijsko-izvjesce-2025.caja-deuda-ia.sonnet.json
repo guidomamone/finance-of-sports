@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Croacia/Slaven Belupo/financijsko-izvjesce-2025.md",
+ "generado": "2026-10-18T05:53:05.225Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(svi iznosi u eurima)",
+ "caja": {
+  "lineas": [
+   212
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   225
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los valores están en una columna aparte de las etiquetas. L212 corresponde a 26.003 (L258) y L225 a 1.179.036 (L266) para 31.12.2025. La línea de deuda mezcla descubiertos bancarios y préstamos, y no hay separación entre corriente y no corriente."
+}

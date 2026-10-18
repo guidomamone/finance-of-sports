@@ -1,0 +1,24 @@
+{
+ "md": "Clubes/Italia/Sampdoria/Sampdoria-fascicolo-bilancio-2018.md",
+ "generado": "2026-10-18T05:52:54.111Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "31 dicembre 2018",
+ "caja": {
+  "lineas": [
+   897,
+   898
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   933,
+   934,
+   936,
+   937
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance está en euros enteros; no hay leyenda explícita de escala (solo las tablas de la nota integrativa dicen Euro/000). Caja: depósitos bancarios (L897) y efectivo (L898); la línea del total (L899) no se incluye. Deuda: bancos y otros financiadores, corriente y no corriente; no hay obligaciones ni préstamos de socios (valor 0). Los 'Debiti verso Enti-Settore specifico' son deudas del sector fútbol, no deuda financiera, y quedan fuera."
+}

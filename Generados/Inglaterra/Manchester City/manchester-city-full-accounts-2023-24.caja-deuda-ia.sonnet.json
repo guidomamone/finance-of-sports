@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Inglaterra/Manchester City/manchester-city-full-accounts-2023-24.md",
+ "generado": "2026-10-18T05:52:06.508Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£000",
+ "caja": {
+  "lineas": [
+   723
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no muestra préstamos ni obligaciones financieras en el pasivo corriente ni en el no corriente (solo cuentas por pagar comerciales, ingresos diferidos y derivados). Los pasivos por arrendamiento tampoco aparecen como línea separada en el balance. La cifra de activo corriente total de 2023 está mal reconocida por OCR ($47,225)."
+}

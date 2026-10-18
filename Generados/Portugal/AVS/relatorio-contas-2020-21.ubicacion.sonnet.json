@@ -1,0 +1,315 @@
+{
+ "pdf": "Clubes/Portugal/AVS/relatorio-contas-2020-21.pdf",
+ "md": "Clubes/Portugal/AVS/relatorio-contas-2020-21.md",
+ "mdSha1": "36ef6b53b441c01fc7631e8744bb7d30379f810c",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:14:32.064Z",
+ "bloques": {
+  "b1": {
+   "pagina": 6,
+   "lineas": [
+    175,
+    186
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 12,
+   "lineas": [
+    371,
+    374
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 12,
+   "lineas": [
+    379,
+    387
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 13,
+   "lineas": [
+    407,
+    443
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 14,
+   "lineas": [
+    456,
+    476
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 15,
+   "lineas": [
+    489,
+    508
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 16,
+   "lineas": [
+    521,
+    540
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 17,
+   "lineas": [
+    553,
+    596
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 19,
+   "lineas": [
+    622,
+    627
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 24,
+   "lineas": [
+    805,
+    817
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 24,
+   "lineas": [
+    827,
+    832
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 24,
+   "lineas": [
+    836,
+    839
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 25,
+   "lineas": [
+    855,
+    874
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 25,
+   "lineas": [
+    880,
+    887
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 26,
+   "lineas": [
+    910,
+    926
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 26,
+   "lineas": [
+    930,
+    942
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 27,
+   "lineas": [
+    984,
+    992
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 27,
+   "lineas": [
+    1000,
+    1010
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 28,
+   "lineas": [
+    1028,
+    1036
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 28,
+   "lineas": [
+    1044,
+    1050
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 28,
+   "lineas": [
+    1058,
+    1070
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 29,
+   "lineas": [
+    1088,
+    1097
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 29,
+   "lineas": [
+    1111,
+    1118
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 30,
+   "lineas": [
+    1142,
+    1154
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 31,
+   "lineas": [
+    1184,
+    1190
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 31,
+   "lineas": [
+    1198,
+    1219
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 32,
+   "lineas": [
+    1236,
+    1248
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 32,
+   "lineas": [
+    1258,
+    1262
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 32,
+   "lineas": [
+    1276,
+    1286
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 33,
+   "lineas": [
+    1308,
+    1313
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 33,
+   "lineas": [
+    1321,
+    1335
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 34,
+   "lineas": [
+    1373,
+    1376
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [
+  "b19",
+  "b22",
+  "b23",
+  "b21"
+ ],
+ "notas_gastos": [
+  "b17",
+  "b18",
+  "b20",
+  "b21",
+  "b14"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Unidade monetária Euro)",
+ "moneda": "EUR",
+ "columna_ejercicio": "PERÍODOS: 07/20 - 06/21",
+ "columna_anterior": "PERÍODOS: 07/19 - 06/20",
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de resultado de las operaciones (3.3) del informe de gestión (b1), por ser un resumen que repite importes ya abiertos en el estado?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Volume de negócios",
+   "texto": "El cuadro b1 de la pág. 6 resume el resultado de las operaciones y repite cifras del estado b5.",
+   "bloques": [
+    "b1",
+    "b5"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Es el estado de resultados b5 de la sociedad individual (sin consolidar), pese a que incluye la línea 'Interesses que não controlam'?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Interesses que não controlam",
+   "texto": "No hay indicación de consolidación en los títulos; la línea de interesses que não controlam es el formato estándar y no implica consolidación.",
+   "bloques": [
+    "b5"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados por naturaleza en b5 (pág. 14), en euros. Notas de gastos: FSE (b17), personal (b18), otros gastos (b20), intereses (b21) y amortizaciones de intangibles (b14). Notas de ingresos: otros ingresos (b19), réditos (b22), subsidios (b23), intereses (b21). Las notas de impuestos (b24) no se eligen por ser conciliación fiscal."
+}

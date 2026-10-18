@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2025.md",
+ "generado": "2026-10-18T05:50:02.064Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"esigibili entro l esercizio successivo\" + \"esigibili oltre l esercizio successivo\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "valori in Euro",
+ "caja": {
+  "lineas": [
+   114
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   149,
+   150
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Cifras en euros enteros. Como deuda financiera tomé solo los Debiti verso banche, corriente (L149) y no corriente (L150). Los demás debiti (proveedores, tributarios, controladoras, enti settore specifico) no los consideré financieros. La escala sale de la tabla de la nota integrativa, no del encabezado del balance."
+}

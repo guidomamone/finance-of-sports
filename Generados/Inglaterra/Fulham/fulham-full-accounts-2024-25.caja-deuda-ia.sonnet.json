@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2024-25.md",
+ "generado": "2026-10-18T05:51:11.199Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£000 £'000",
+ "caja": {
+  "lineas": [
+   825
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "El balance sólo muestra 'Creditors amounts falling due within one year' (L827) y 'after more than one year' (L830) como totales agregados, sin desglose de préstamos; los préstamos del accionista (sin intereses, pagaderos a la vista) están incluidos ahí pero no hay línea separada de deuda financiera en el balance. Se dejó la lista vacía; el desglose estaría en las notas, que no se incluyen."
+}

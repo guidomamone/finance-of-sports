@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/Vila Nova/notas-explicativas-2014.md",
+ "generado": "2026-10-18T05:53:22.875Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Em Reais)",
+ "caja": {
+  "lineas": [
+   15
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   63
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caja: se eligió Bens Numerários (L15), que es el total del Disponível sin duplicar Caja y Bancos. Deuda: solo Empréstimos Bancários (L63), que es no corriente; no hay deuda bancaria corriente. Los empréstimos de conselheiros (L61) y de terceiros (L62) no son bancarios y quedan fuera según el criterio, aunque podrían considerarse deuda financiera."
+}

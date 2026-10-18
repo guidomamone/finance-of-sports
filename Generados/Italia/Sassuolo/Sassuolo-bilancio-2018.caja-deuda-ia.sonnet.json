@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Sassuolo/Sassuolo-bilancio-2018.md",
+ "generado": "2026-10-18T05:52:58.024Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Euro",
+ "caja": {
+  "lineas": [
+   503
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   532,
+   533,
+   535
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance civilistico en euros enteros (el riclassificato está en miles). Caja = total Disponibilità liquide (L503). Deuda: bancos corriente y no corriente más otros financiadores (L535). Excluidos cash pooling con Mapei (L539, comercial/financiero mixto) y deudas con Enti-Settore specifico."
+}

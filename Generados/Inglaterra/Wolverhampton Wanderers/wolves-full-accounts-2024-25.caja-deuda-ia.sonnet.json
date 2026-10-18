@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2024-25.md",
+ "generado": "2026-10-18T05:53:30.814Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£000",
+ "caja": {
+  "lineas": [
+   1083
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1814,
+   1846
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La línea de caja (L1083) está mal leída por el OCR (\"9439,\" para 2025; 2024: 30,563), probablemente 9,439. Los préstamos bancarios no figuran en el balance principal, solo en las notas 16 y 17: corriente 21,939 (L1814) y no corriente 79,455 (L1846). El ejercicio es de 13 meses cerrado el 30 de junio de 2025."
+}

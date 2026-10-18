@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2024-25.md",
+ "generado": "2026-10-18T05:52:01.064Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "£",
+ "caja": {
+  "lineas": [
+   914
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Balance consolidado con columna 2025 (primera). Caja: 'Cash at bank and in hand' (L859) corresponde a 33,952,665 en L914. La deuda financiera no se desglosa en el balance: está agrupada en 'Creditors: amounts falling due within one year' (L916) y 'after more than one year' (L919), que mezclan acreedores comerciales y otros, por lo que no se eligen como deuda; el detalle está en las notas. Escala en unidades (£) sin mención de miles/millones."
+}

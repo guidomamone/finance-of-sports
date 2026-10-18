@@ -1,0 +1,221 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.pdf",
+ "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.md",
+ "mdSha1": "e2ebeafacb3888a1a6245294784d59f6110a3d9d",
+ "modelo": "claude-sonnet-5-5",
+ "generado": "2026-10-18T13:13:04.281Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    40,
+    43
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    77,
+    80
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    108,
+    111
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 7,
+   "lineas": [
+    170,
+    195
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 8,
+   "lineas": [
+    210,
+    221
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 9,
+   "lineas": [
+    236,
+    240
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 10,
+   "lineas": [
+    256,
+    262
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 11,
+   "lineas": [
+    278,
+    307
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 21,
+   "lineas": [
+    573,
+    584
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 21,
+   "lineas": [
+    588,
+    592
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 22,
+   "lineas": [
+    602,
+    606
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 22,
+   "lineas": [
+    612,
+    617
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 22,
+   "lineas": [
+    623,
+    629
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 23,
+   "lineas": [
+    643,
+    648
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 24,
+   "lineas": [
+    656,
+    704
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 25,
+   "lineas": [
+    712,
+    716
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 25,
+   "lineas": [
+    722,
+    727
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 26,
+   "lineas": [
+    737,
+    742
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 27,
+   "lineas": [
+    764,
+    771
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 28,
+   "lineas": [
+    795,
+    807
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 28,
+   "lineas": [
+    815,
+    822
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 29,
+   "lineas": [
+    834,
+    847
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 29,
+   "lineas": [
+    855,
+    858
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 29,
+   "lineas": [
+    862,
+    869
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [
+  "b20"
+ ],
+ "notas_gastos": [
+  "b21",
+  "b22"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "2021",
+ "columna_anterior": "2020 (Reapresentado)",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El documento presenta un único conjunto de estados (Grêmio Novorizontino, entidad individual). El estado de resultados es la Demonstração dos Déficits (b5). Las notas 15 (Receita líquida), 16 (Custos) y 17 (Despesas gerais e administrativas) desglosan los renglones. No se eligen b9 (efectos de la reapresentación), b11 (contas a receber), b13 ni b14 (intangível) porque son notas de balance o de activos. Los bloques b1 a b3 son el informe del auditor y no tienen cifras relevantes."
+}

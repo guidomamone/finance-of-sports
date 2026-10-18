@@ -1,0 +1,25 @@
+{
+ "md": "Clubes/Portugal/Porto/relatorio-contas-consolidadas-2020-21.md",
+ "generado": "2026-10-18T05:52:45.371Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "valores em milhares de euros",
+ "caja": {
+  "lineas": [
+   836
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   854,
+   855,
+   856,
+   863,
+   864,
+   865
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La escala indicada ('valores em milhares de euros') corresponde al resumen de la página 22; el balance consolidado detallado (L817-L873) muestra cifras en euros completos, por eso escala = unidades y se usan las líneas del balance detallado. Deuda = préstamos bancarios, obligacionistas y otros préstamos, corriente + no corriente, ejercicio 30/jun/21."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/España/RCD Espanyol/cuentas-anuales-gestion-auditoria-2023-2024.md",
+ "generado": "2026-10-18T05:50:55.610Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Euros Nota 30/6/2024 30/6/2023",
+ "caja": {
+  "lineas": [
+   364
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   396,
+   405
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se tomó como caja la línea 'Efectivo y otros activos líquidos equivalentes' (L364, la L365 es su detalle). Como deuda financiera se tomaron solo las deudas con entidades de crédito, no corriente (L396, 0,00 en 2024) y corriente (L405). Quedan fuera los otros pasivos financieros (L397: 61.700), las deudas con empresas del grupo (L398, L407) y las deudas con características especiales (L400, L417), que probablemente son préstamos participativos pero no se consideraron deuda bancaria según el criterio. La escala está en euros, en unidades, con decimales completos."
+}

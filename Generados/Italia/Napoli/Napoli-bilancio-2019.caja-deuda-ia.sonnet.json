@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Italia/Napoli/Napoli-bilancio-2019.md",
+ "generado": "2026-10-18T05:52:14.671Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "redatto in unità Euro",
+ "caja": {
+  "lineas": [
+   172
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Caja: total Disponibilità liquide (L172), que suma depósitos bancarios y efectivo. En el pasivo no hay préstamos ni deudas bancarias o financieras. Los 'Debiti v/Enti settore specifico' (L203) son deudas con clubes y entidades del sector por fichajes, es decir, comerciales, y no se incluyeron."
+}

@@ -1,0 +1,26 @@
+{
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2023.md",
+ "generado": "2026-10-18T05:49:52.764Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(valori in Euro)",
+ "caja": {
+  "lineas": [
+   857
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   899,
+   900,
+   903,
+   905,
+   906,
+   908,
+   909
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usó el balance consolidado (pág. 24-25), columna 30/06/2023. Deuda: obbligazioni, debiti verso soci per finanziamenti, debiti verso banche y verso altri finanziatori, corriente y no corriente. Los préstamos de los accionistas (L903) son financieros, aunque no sean bancarios. El balance separado de la sociedad matriz (pág. 67-68) no se usó."
+}

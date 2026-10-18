@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2020.md",
+ "generado": "2026-10-18T05:49:57.838Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Valori espressi in unità",
+ "caja": {
+  "lineas": [
+   245
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   280,
+   281
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caja: Totale (IV) Disponibilità liquide (L245), que suma depositi bancari y cassa. Deuda: Debiti verso banche corriente (L280) y no corriente (L281), en euros. La frase de escala proviene de la tabla de personal; el balance muestra cifras completas en euros sin indicar escala. No hay otros préstamos financieros separados; los debiti verso controllanti no se incluyen por ser probablemente comerciales o fiscales."
+}

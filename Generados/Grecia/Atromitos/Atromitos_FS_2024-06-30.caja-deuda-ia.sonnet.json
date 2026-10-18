@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Grecia/Atromitos/Atromitos_FS_2024-06-30.md",
+ "generado": "2026-10-18T05:50:04.363Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "ΙΣΟΛΟΓΙΣΜΟΣ της 30/06/2024",
+ "caja": {
+  "lineas": [
+   189
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   216,
+   221,
+   222
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance no declara escala explícita; los importes están en euros con decimales (p.ej. 28.117,93), por lo que se asume unidades. Deuda: Δάνεια no corriente (L216), Τραπεζικά δάνεια corriente (L221) y parte corriente de préstamos a largo plazo (L222). Se excluyen otras obligaciones a largo plazo, subvenciones y pasivos comerciales."
+}

@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/balanco-2010.md",
+ "generado": "2026-10-18T05:52:18.565Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(em reais)",
+ "caja": {
+  "lineas": [
+   22
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "La tabla del pasivo está truncada: los títulos 'Empréstimos e Financiamentos' (L22, L25) y los detalles (Banco Bradesco c/ Movimento, Mútuo I-9 Sports) aparecen sin importes en la columna del pasivo, por lo que no se puede asignar una línea de deuda con valor. Se eligió la línea 22 (Disponibilidades, 13,60) como caja; la línea 23 (Caixa) tiene el mismo valor y es el detalle."
+}

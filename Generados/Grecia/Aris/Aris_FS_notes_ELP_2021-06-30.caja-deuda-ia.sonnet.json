@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Grecia/Aris/Aris_FS_notes_ELP_2021-06-30.md",
+ "generado": "2026-10-18T05:49:43.022Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"τραπεζικα και αλλα δανεια\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "ποσά σε €",
+ "caja": {
+  "lineas": [
+   802
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   860,
+   861
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda: se suman las dos líneas no corrientes de préstamos (Δάνεια, L860, y Δάνεια σε όμιλο οντοτήτων και συνδεδεμένα μέρη, L861). No hay deuda financiera corriente separada en el balance. L861 corresponde a un préstamo cedido (nota 21) y se incluye por ser un préstamo bajo el mismo encabezado."
+}

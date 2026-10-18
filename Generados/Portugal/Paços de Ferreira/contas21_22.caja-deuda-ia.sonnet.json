@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Portugal/Paços de Ferreira/contas21_22.md",
+ "generado": "2026-10-18T05:52:29.500Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"financiamentos obtidos\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "Balanço em 30 de Junho de 2022",
+ "caja": {
+  "lineas": [
+   23
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   41
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los valores están en euros sin indicación de miles (unidades). En 30-06-2022 el financiamiento no corriente (L36) está vacío, por lo que solo se toma el corriente (L41)."
+}

@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Italia/Napoli/Napoli-bilancio-2024.md",
+ "generado": "2026-10-18T05:52:16.027Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "redatto in unità Euro",
+ "caja": {
+  "lineas": [
+   147
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   182
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caja: se eligió el total de Disponibilità liquide (L147), que suma depósitos bancarios (L145) y efectivo (L146). Deuda: Debiti verso Banche (L182) es el total e ya incluye la parte corriente y no corriente (L183-L184), así que no se sumaron esas líneas. En L184 el dato de 2023 (50.524.973) parece inconsistente con el total 2023 (51.614.070), pero no afecta a la columna 2024."
+}

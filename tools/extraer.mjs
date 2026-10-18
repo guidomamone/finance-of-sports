@@ -25,6 +25,8 @@
 //   node tools/extraer.mjs "<pdf>" [...]        ENSAYO (sin API)
 //   node tools/extraer.mjs "<pdf>" --ejecutar   (necesita el .ubicacion.json de localizar.mjs; --rehacer fuerza)
 //   node tools/extraer.mjs --lista <archivo> [--ejecutar]
+//   node tools/extraer.mjs --lista <archivo> --modelo opus|sonnet [--ejecutar]   (to-do 288) MEDICIÓN: la extracción con ese modelo, en
+//        .filas.<modelo>.json (no pisa ni usa el .filas.json; los documentos `filas-a-mano` se saltean). La lee medir-verificar.mjs --filas.
 // ============================================================================
 
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
@@ -104,13 +106,17 @@ export function estimarExtraerSinBloques(pdf) {
 // `filas-a-mano` con valor distinto de "no" (el último ajuste del documento gana)
 export const esAMano = (pdf) => { const a = ajusteDe(pdf, 'filas-a-mano'); return !!a && String(a.valor ?? '').trim().toLowerCase() !== 'no'; };
 
-export async function extraer(pdf, { registro, ejecutar = false, rehacer = false, reintento = null } = {}) {
+// (to-do 288) `modelo` (opus | sonnet), solo desde la medición del CLI: otro archivo y ese modelo en las llamadas.
+const MODELOS = { opus: 'claude-opus-5-5', sonnet: 'claude-sonnet-5-5' };
+export async function extraer(pdf, { registro, ejecutar = false, rehacer = false, reintento = null, modelo = null } = {}) {
+  const idModelo = modelo ? MODELOS[modelo] : MODELO;
   const e = registro.find((x) => x.pdf === pdf) || {}; const md = e.md || pdf.replace(/\.pdf$/, '.md');
   const pUb = resolve(ROOT, derivado(md, '.ubicacion.json', { crear: false }));
   if (!existsSync(pUb)) return { error: 'falta el .ubicacion.json (correr localizar.mjs antes)' };
   const ub = JSON.parse(readFileSync(pUb, 'utf8'));
   if (ub.sin_estado) return { sinEstado: true };
-  const out = resolve(ROOT, derivado(md, '.filas.json'));
+  const out = resolve(ROOT, derivado(md, modelo ? `.filas.${modelo}.json` : '.filas.json'));
+  if (modelo && esAMano(pdf)) return { error: 'filas-a-mano: no se mide' };
   // AJUSTE MANUAL `filas-a-mano` (Versión 614, tools/ajustes.mjs): las filas de este documento se armaron o corrigieron a mano; ni --rehacer las pisa.
   if (existsSync(out) && esAMano(pdf)) return { hecho: true, archivo: out, datos: JSON.parse(readFileSync(out, 'utf8')), costo: 0, protegido: true };
   if (!rehacer && existsSync(out)) return { hecho: true, archivo: out, datos: JSON.parse(readFileSync(out, 'utf8')), costo: 0 };
@@ -124,7 +130,7 @@ export async function extraer(pdf, { registro, ejecutar = false, rehacer = false
   // las 155 extracciones reales (US$ 24,03): con 4.000 tokens de salida fijos el ensayo daba US$ 14,76 y subestimaba más de 30% en 68
   // llamadas; con 2 x la entrada da US$ 25,96 y subestima en 5 (la salida real es 1 a 2,5 veces la entrada, mediana 1,9). Juventus 2023-24:
   // entrada 6.951, real US$ 0,31, antes US$ 0,11, ahora US$ 0,31.
-  if (!ejecutar) { const t = tokensDe(SYSTEM + user); return { ensayo: true, tokens: t, usd: usdEstimado(t, 2 * t) }; }
+  if (!ejecutar) { const t = tokensDe(SYSTEM + user); return { ensayo: true, tokens: t, usd: usdEstimado(t, 2 * t, idModelo) }; }
   // LAS NOTAS HACEN DE ESTADO (Versión 360; ver localizar.mjs PEDIDO_NOTAS_COMO_ESTADO): solo si localizar las eligió así.
   const notasComoEstado = ub.estadoDesdeNotas ? `\n\n${INSTRUCCION_NOTAS_COMO_ESTADO}` : '';
   const extra = notasComoEstado + (reintento?.length ? `\n\nREINTENTO: en la extracción anterior ${reintento.map((x) => (x.categoria ? `no apareció ninguna fila de "${x.categoria}" (buscala en el cuadro que abre el renglón que la contiene)` : `el desglose de "${x.renglon}" no sumó su renglón (las filas sumaron ${x.suma}, el renglón es ${x.objetivo})`)).join('; ')}. Revisá que estén TODAS las filas del cuadro, también las que tienen "-" en alguna columna. En un cuadro por segmento: si el renglón es de un segmento, usá la columna de ese segmento; si el renglón es del total (un renglón del estado de resultados, como "Costo de ventas"), usá la columna de TOTALES.` : '');
@@ -133,16 +139,16 @@ export async function extraer(pdf, { registro, ejecutar = false, rehacer = false
   // reintenta una vez con 128.000 (el máximo del modelo) por streaming, que hace falta para salidas largas. Compuerta, la misma de siempre:
   // la respuesta termina sola y el JSON es válido; si tampoco, el error sigue como antes (cola). Caso: Ferroviária dre-2022, libro contable
   // de 9 páginas y ~580 cuentas, cortado a los 32.000 (US$ 0,72 sin resultado).
-  const tarea = reintento?.length ? 'extraer-reintento' : 'extraer';
-  let r = await llamarClaude({ system: SYSTEM + extra, user, schema: SCHEMA, tarea, pdf, maxTokens: 32000 });
+  const tarea = `${reintento?.length ? 'extraer-reintento' : 'extraer'}${modelo ? `-medir-${modelo}` : ''}`;
+  let r = await llamarClaude({ system: SYSTEM + extra, user, schema: SCHEMA, tarea, pdf, maxTokens: 32000, modelo: idModelo });
   if (r.pendiente) return { pendiente: true, costo: 0 }; // modo batch: la respuesta llega en la ola siguiente (claude-llamada.mjs)
   if (r.error && /max_tokens/.test(r.error)) {
     const costo0 = r.costo || 0;
-    r = await llamarClaude({ system: SYSTEM + extra, user, schema: SCHEMA, tarea: `${tarea}-tope-largo`, pdf, maxTokens: 128000, stream: true, timeoutMs: 45 * 60000 });
+    r = await llamarClaude({ system: SYSTEM + extra, user, schema: SCHEMA, tarea: `${tarea}-tope-largo`, pdf, maxTokens: 128000, stream: true, timeoutMs: 45 * 60000, modelo: idModelo });
     r = { ...r, costo: (r.costo || 0) + costo0 };
   }
   if (r.error) return { error: r.error, costo: r.costo };
-  const datos = { pdf, md, mdSha1: shaMd(md), ubicacionSha1: huellaUbicacion(ub), modelo: MODELO, generado: new Date().toISOString(), ubicacion: { estado: ub.estado, notas_ingresos: ub.notas_ingresos, notas_gastos: ub.notas_gastos }, ...r.datos }; // ubicacionSha1: to-do 237 ai (cache-al-dia.mjs, ubicacionAlDia)
+  const datos = { pdf, md, mdSha1: shaMd(md), ubicacionSha1: huellaUbicacion(ub), modelo: idModelo, generado: new Date().toISOString(), ubicacion: { estado: ub.estado, notas_ingresos: ub.notas_ingresos, notas_gastos: ub.notas_gastos }, ...r.datos }; // ubicacionSha1: to-do 237 ai (cache-al-dia.mjs, ubicacionAlDia)
   writeFileSync(out, JSON.stringify(datos, null, 1));
   return { hecho: true, archivo: out, datos, costo: r.costo };
 }
@@ -152,8 +158,10 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   if (!docs.length) { console.error('Uso: node tools/extraer.mjs "<pdf>" [--ejecutar] [--rehacer]  |  --lista <archivo>'); process.exit(1); }
   const registro = readFileSync(resolve(ROOT, 'Admin', 'registros', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
   let usd = 0;
+  const modelo = flag('--modelo');
+  if (modelo != null && !MODELOS[modelo]) { console.error('--modelo opus|sonnet'); process.exit(1); }
   for (const pdf of docs) {
-    const r = await extraer(pdf, { registro, ejecutar: ARGS.includes('--ejecutar'), rehacer: ARGS.includes('--rehacer') });
+    const r = await extraer(pdf, { registro, ejecutar: ARGS.includes('--ejecutar'), rehacer: ARGS.includes('--rehacer'), ...(modelo ? { modelo } : {}) });
     if (r.ensayo) { usd += r.usd; console.log(`  ensayo ${pdf}: ~${r.tokens} tokens, ~US$ ${r.usd.toFixed(3)}`); }
     else if (r.sinEstado) console.log(`  ${pdf}: sin estado de resultados (queda como fuente)`);
     else if (r.error) console.log(`  ${pdf}: ${r.error}`);

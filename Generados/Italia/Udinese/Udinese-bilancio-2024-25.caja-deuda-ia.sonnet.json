@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Udinese/Udinese-bilancio-2024-25.md",
+ "generado": "2026-10-18T05:53:19.533Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"debiti verso banche\" + \"obbligazioni\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "Valori in €",
+ "caja": {
+  "lineas": [
+   816
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   849,
+   852
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda = obbligazioni (L849, total 6.079.500) + debiti verso banche (L852, total 28.766.238), ya incluyen corriente y no corriente. Se excluyen los debiti verso altri finanziatori (L855) según el criterio indicado. Cifras en euros, sin escala reducida."
+}

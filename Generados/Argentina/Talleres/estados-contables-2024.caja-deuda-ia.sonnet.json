@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Argentina/Talleres/estados-contables-2024.md",
+ "generado": "2026-10-18T05:53:12.929Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(expresado en moneda de cierre - en pesos sin centavos)",
+ "caja": {
+  "lineas": [
+   272
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no tiene préstamos ni deudas bancarias o financieras. Las únicas líneas de pasivo son cuentas por pagar, remuneraciones, cargas fiscales, otros pasivos y previsiones, que no son deuda financiera. Se tomó Caja y bancos como efectivo; Inversiones (L273) queda fuera por falta de detalle sobre si son equivalentes de efectivo."
+}

@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Bélgica/Antwerp/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-18T05:49:42.615Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "EUR 44.745.000,00",
+ "caja": {
+  "lineas": [
+   345
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Solo se aportó el lado del activo del balance (Liquide middelen, L345). El pasivo (schulden/financiële schulden) no está en las páginas dadas, por lo que no se puede identificar la deuda financiera. La nota menciona un préstamo a nivel de Goala (diciembre 2024) y un posible refinanciamiento, pero no hay línea de balance. Los importes se presentan en euros completos, sin cabecera explícita de escala; la evidencia es una cifra en EUR completos."
+}

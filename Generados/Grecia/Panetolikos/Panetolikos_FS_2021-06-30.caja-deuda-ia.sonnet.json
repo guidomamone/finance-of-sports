@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2021-06-30.md",
+ "generado": "2026-10-18T05:52:32.853Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Ποσά σε ΕΥΡΩ)",
+ "caja": {
+  "lineas": [
+   727
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Los préstamos (Δάνεια, L760) están en 0,00 y la empresa declara que no tiene deuda bancaria (L171). L761 'Λοιπές μακροπρόθεσμες υποχρεώσεις' (15.711,01) figura como 'Δανεισμός' en la tabla de liquidez (L186), pero es una partida sin detalle y no un préstamo bancario, por eso la excluí de la deuda financiera."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2021-06-30.md",
+ "generado": "2026-10-18T05:52:02.050Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "ευρώ 1.405.056,48",
+ "caja": {
+  "lineas": [
+   34
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   54,
+   58
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance no declara la escala de forma explícita; las cifras figuran en euros con decimales, por lo que se asume unidades. Deuda: préstamos estatales no corrientes (L54, Κρατικά δάνεια) y préstamos a corto plazo (L58, Βραχυπρόθεσμα δάνεια)."
+}

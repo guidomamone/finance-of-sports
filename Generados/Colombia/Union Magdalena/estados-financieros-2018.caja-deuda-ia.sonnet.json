@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Colombia/Union Magdalena/estados-financieros-2018.md",
+ "generado": "2026-10-18T05:53:19.265Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Expresado en miles de pesos Colombianos)",
+ "caja": {
+  "lineas": [
+   77
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   89,
+   96
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se tomaron las obligaciones financieras corrientes (L89) y a largo plazo (L96) de la columna Dic. 31 de 2018."
+}

@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Italia/AC Milan/AC-Milan-bilancio-gruppo-dic-2011.md",
+ "generado": "2026-10-18T05:49:25.731Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "in migliaia di Euro",
+ "caja": {
+  "lineas": [
+   806
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   879,
+   880,
+   882,
+   883
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa el balance consolidado del Gruppo (31.12.2011, en miles de euros). Caja: total disponibilità liquide (L806). Deuda: debiti verso banche y verso altri finanziatori, tramos corriente y no corriente. Excluidos proveedores, deudas tributarias, compartecipazioni y deudas con enti settore specifico. Las páginas 92-93 son el balance individual de AC Milan S.p.A. en unidades, no se usan."
+}

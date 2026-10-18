@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Portugal/Paços de Ferreira/47-DEMONSTRACOES-FINANCEIRAS_compressed.md",
+ "generado": "2026-10-18T05:52:28.395Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"financiamentos obtidos\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "Balanço em 30 de junho de 2020",
+ "caja": {
+  "lineas": [
+   32
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   48
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance no indica escala explícita; las cifras están en euros con céntimos (unidades). Solo hay 'Financiamentos obtidos' corriente (L48); no hay línea no corriente. Documento escaneado con OCR: conviene verificar las cifras contra el PDF."
+}

@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2021.md",
+ "generado": "2026-10-18T05:51:09.662Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "Expresados en miles de pesos colombianos",
+ "caja": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   859
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Las páginas son notas, no el balance completo: no aparece la línea de efectivo y equivalentes, por eso caja queda vacía. La deuda financiera se toma de la nota 12 (Total Préstamos y Sobregiros Bancarios, corto plazo, 102.513 en 2021). No se ve parte no corriente de préstamos. Los 'Otros pasivos financieros' (nota 14) son impuestos por pagar y se excluyen."
+}

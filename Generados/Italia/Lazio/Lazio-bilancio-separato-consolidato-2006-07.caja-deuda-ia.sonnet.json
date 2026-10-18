@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Italia/Lazio/Lazio-bilancio-separato-consolidato-2006-07.md",
+ "generado": "2026-10-18T05:51:48.359Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"accenti\" + \"i capitale sociale\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "Euro",
+ "caja": {
+  "lineas": [
+   3515
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   3543,
+   3556,
+   3558
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Hay dos balances (separado L818-L918 y consolidado L3473-L3575); se usó el consolidado por ser el más completo, con columna 30/06/2007. Los importes están en euros enteros (los comentarios usan €/000 en las tablas explicativas). La deuda se compone de debiti finanziari non correnti (0), debiti finanziari correnti y debiti verso altri finanziatori (41.1), coherente con la posizione finanziaria netta del consolidado (L4173 y L4176). El criterio 'accenti + capitale sociale' no tiene equivalente literal, así que se aplicó el análogo."
+}

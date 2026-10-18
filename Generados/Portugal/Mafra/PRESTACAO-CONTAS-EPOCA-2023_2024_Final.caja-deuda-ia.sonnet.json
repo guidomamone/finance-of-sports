@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.md",
+ "generado": "2026-10-18T05:52:07.018Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Balanço em 30 de junho de 2024",
+ "caja": {
+  "lineas": [
+   432
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   451,
+   457
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Cifras en euros, sin indicación de miles ni millones (formato 181.614,69). Deuda = Financiamentos obtidos no corriente (L451) y corriente (L457) del balance principal; los anexos duplican esas cifras (L1383, L1396) y no se eligieron. Los Financiamentos obtidos incluyen 900.000 de participantes de capital y 1.827.996,60 de otros financiadores, además de las instituciones financieras."
+}

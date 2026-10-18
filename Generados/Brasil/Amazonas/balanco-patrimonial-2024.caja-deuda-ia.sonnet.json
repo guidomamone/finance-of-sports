@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Amazonas/balanco-patrimonial-2024.md",
+ "generado": "2026-10-18T05:49:39.359Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "R$ 127.598,33",
+ "caja": {
+  "lineas": [
+   16
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   17,
+   30
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los valores figuran en reales (R$) con centavos, sin mención de miles ni millones. La línea 17 (Empréstimos e Financiamentos corriente) figura con valor cero ('-'). La no corriente (L30) es R$ 923.007,50. Caja tomada de 'Disponibilidades' (L16). En L16, L17 y L30 el balance, el activo y el pasivo comparten línea de texto."
+}

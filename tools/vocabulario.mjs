@@ -99,7 +99,10 @@ const NOTA_REF_RE = /\(\s*(nota|notas|note|notes|anexo|anexos|annex|n\.?)?\s*[0-
 export function claveFamilia(etiqueta) {
   let t = String(etiqueta ?? '').split(/<br\s*\/?>/i)[0];
   t = normalizar(t.replace(/[*_#`]/g, ' '));
-  t = t.replace(/^\s*(\(?[0-9]{1,2}(\.[0-9]{1,2})*[.)]|\(?[a-z][.)]|\(?[ivx]{1,5}[.)])\s+/, '');
+  // (to-do 290, ok de Guido 2026-10-18) la numeración italiana "4 bis)", "5-bis)", "17bis)", "15 bis )" (y "ter") sale igual que "4)". Antes
+  // "4 bis) Debiti verso banche oltre l'esercizio successivo" no empezaba con "debiti verso banche" y el diccionario de deuda no la veía.
+  // Caso: Genoa 2022 (pág. 8, L304-312), 3 bis) soci 1.300.000 y 4 bis) banche 48.266.122.
+  t = t.replace(/^\s*(\(?[0-9]{1,2}(\.[0-9]{1,2})*(\s?-?\s?(bis|ter)\s?)?[.)]|\(?[a-z][.)]|\(?[ivx]{1,5}[.)])\s+/, '');
   t = t.replace(NOTA_REF_RE, ' ');
   return t.replace(/[^\p{L}\p{N}() ]+/gu, ' ').replace(/\s+/g, ' ').replace(/\(\s+/g, '(').replace(/\s+\)/g, ')').trim();
 }
@@ -457,12 +460,22 @@ export const VOCABULARIO = {
     es: ['gastos financieros', 'gasto financiero', 'intereses pagados', 'costos financieros', 'costes financieros'],
     pt: ['despesas financeiras', 'despesa financeira', 'juros passivos', 'juros pagos', 'encargos financeiros', 'gastos similares suportados'],
     en: ['finance costs', 'finance cost', 'financial expense*', 'financial costs', 'interest expense', 'interest payable', 'interest paid'],
-    de: ['zinsaufwand', 'zinsaufwendungen', 'zinsen und ahnliche aufwendungen', 'finanzaufwand', 'finanzaufwendungen'], fr: ['charges financieres'],
-    it: ['oneri finanziari', 'interessi passivi'], nl: ['financiele lasten', 'rentelasten'],
+    // (to-do 298 b1, ok de Guido 2026-10-18) el esquema NBB belga: "Financiële kosten" (65/66B), "Recurrente/Andere financiële kosten",
+    // "Kosten van schulden" (650) y en francés "Charges des dettes" se imprimen positivos; con el rótulo, verificar.mjs les pone el signo
+    // (escalón "financiero por rótulo"). Caso: Beerschot 2025 cierra exacto sin sus ajustes `fila` de signo. Medido: 376 documentos, 375 idénticos.
+    de: ['zinsaufwand', 'zinsaufwendungen', 'zinsen und ahnliche aufwendungen', 'finanzaufwand', 'finanzaufwendungen'], fr: ['charges financieres', 'charges des dettes'],
+    it: ['oneri finanziari', 'interessi passivi'], nl: ['financiele lasten', 'rentelasten', 'financiele kosten', 'kosten van schulden'],
     da: ['finansielle omkostninger', 'renteudgifter'], no: ['finanskostnader', 'rentekostnader', 'finansielle kostnader'],
     sv: ['finansiella kostnader', 'rantekostnader'], hr: ['financijski rashodi', 'rashodi od kamata'], cs: ['financni naklady', 'nakladove uroky'],
     pl: ['koszty finansowe'], tr: ['finansman giderleri', 'finansal giderler', 'faiz giderleri'],
     el: ['χρεωστικοι τοκοι', 'χρηματοοικονομικα εξοδα', 'εξοδα τοκων'], ru: ['проценты к уплате', 'финансовые расходы'], ja: ['支払利息', '金融費用'],
+  },
+
+  // ---- "DE LOS CUALES" al comienzo de una etiqueta (to-do 298 b3, verificar.mjs): la fila es una PARTE de la de arriba, no un renglón más.
+  // Caso: Bélgica, esquema abreviado, "Waarvan: niet-recurrente bedrijfsopbrengsten" (76A) debajo de la Brutomarge (Lierse SK 2025, L256).
+  DE_LOS_CUALES: {
+    es: ['de los cuales', 'de las cuales', 'del cual', 'de la cual'], pt: ['dos quais', 'das quais'], en: ['of which'], de: ['davon'],
+    fr: ['dont'], it: ['di cui'], nl: ['waarvan'], da: ['heraf'], no: ['herav'], sv: ['varav'],
   },
 
   // ---- TOTAL DE INGRESOS al comienzo de una etiqueta (proponer-carga.mjs: detecta la fila del total de ingresos del documento).
@@ -655,6 +668,7 @@ export const TOTAL_FIN_RE = compilar(T('TOTAL_FIN'), 'fin');
 // (to-do 212) signo de una fila del financiero por su rótulo; se prueban sobre normalizar(etiqueta)
 export const FIN_INGRESO_RE = compilar(T('FIN_INGRESO'));
 export const FIN_GASTO_RE = compilar(T('FIN_GASTO'));
+export const DE_LOS_CUALES_RE = compilar(T('DE_LOS_CUALES'), 'inicio');
 export const TOTAL_RE = new RegExp(`${TOTAL_INICIO_RE.source}|${TOTAL_FIN_RE.source}`, 'u');
 export const esTotal = (etiqueta) => TOTAL_RE.test(normalizar(etiqueta));
 export const TOTAL_INGRESOS_RE = compilar(T('TOTAL_INGRESOS'), 'inicio');
