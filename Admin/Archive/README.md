@@ -52,3 +52,4 @@ Qué hay hoy:
 - `sesion-finanzas-2026-10-18-final.md` — el cierre completo de la sesión finanzas (280 a 282, 294). Archivado en la 724.
 - `sesion-datos-sourcing-2026-10-18-b.md` — copia del cierre de datos-sourcing (276, 277 y el 273), pasada en la 725; la rama siguió abierta.
 - `sesion-finanzas-2026-10-18-2.md` y `sesion-onboarding-2026-10-18-2.md` — copias de los cierres de la segunda sesión de finanzas (294 a y b) y de onboarding (Estonia y Bélgica, mejoras de script del 298), pasadas en la 727.
+- `sesion-datos-sourcing-2026-10-18-c.md` y `sesion-pantallas-2026-10-18-d.md` — copias de los cierres en el merge de la 728.

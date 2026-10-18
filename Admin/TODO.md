@@ -25,7 +25,7 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 297 (cuando esté el índice) y 282 en Ligas (cuando haya el dato del 295) · finanzas 281, 282, 294 · pipeline 289, 290, 288, 232, 279, 286, 287, 298 · onboarding 292, 238, 285, 284, 283, 195, 165 c, 299 ·
-datos-sourcing 273 (completar el dato), 297 (el índice), 252, 295 · Reino Unido (261) en su propia sesión · proyecto 250, 244, 300 · la principal: 268, 291 y los merges; el 246 va
+datos-sourcing 273 (completar el dato), 252, 295 · Reino Unido (261) en su propia sesión · proyecto 250, 244, 300 · la principal: 268, 291 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
 Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
@@ -235,12 +235,13 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    tools/cloudflare-visitas.mjs --json y subir los archivos; se puede programar).
 273. ESTADIO Y SPONSOR: LO QUE QUEDA (pedido de Guido, 2026-10-18). El dato está en main (`data/contexto/<iso>.js`, `tools/estadio-sponsor.mjs`,
    lo manual en `tools/contexto-manual.json` con fuente) y `cargar.mjs` no escribe un año nuevo sin estadio y sponsor. Falta: completar a
-   mano los ejercicios ya cargados sin estadio o sin sponsor (`node tools/estadio-sponsor.mjs --ensayo` los lista; fos-datos tiene un
-   diseño de fuente en lote esperando el ok de Guido); nombrar la compuerta nueva en
+   mano los ~140 ejercicios ya cargados sin estadio o sin sponsor (casi todos sin sponsor: ascensos y años viejos sin tabla de kits;
+   `node tools/estadio-sponsor.mjs --ensayo` los lista); que `generate-sponsors.js` sume lo de `contexto-manual.json`; nombrar la compuerta nueva en
    `Admin/PIPELINE.md` y en la skill `club-or-year-onboarding` (la skill, con ok de Guido).
 297. SPONSORS EN EL BUSCADOR (cierre de pantallas, 2026-10-18). La página por sponsor existe, pero el buscador no los encuentra:
    `data/sponsors.js` pesa ~650 KB y no se carga de entrada. Hace falta un índice chico (id y nombre) que genere
-   `tools/generate-sponsors.js` (fos-datos) y después el resultado "Sponsors" en el buscador (fos-pantallas).
+   `tools/generate-sponsors.js` (ya está: `data/sponsors-indice.js`, ~95 KB) y el resultado "Sponsors y marcas" en el buscador
+   (fos-pantallas).
 281. FINANZAS: INGRESOS DE LAS OTRAS ENTIDADES (pedido de Guido, 2026-10-17). El dato y la pantalla están (tarjeta Estructura, piloto
    Portugal). Falta: transcribir por subagentes los ~17 documentos de entidades de clubes portugueses publicados sin `.md` (Porto 3, Braga
    2022-23, Marítimo 5, Belenenses, Chaves, Vizela 2, Académica, União de Leiria) y cargar su línea de ingresos (va con el 294). Chaves 2022-23: el informe del auditor de la

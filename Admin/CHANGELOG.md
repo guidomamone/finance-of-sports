@@ -15,6 +15,17 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 728 — Merges de datos-sourcing y pantallas: Wikipedia del país e índice de sponsors (2026-10-18)
+
+Los dos a mano: generados (`data/estimados/`, `fuentes/`) con main y regenerados, `index.html` con la versión de cada rama; ASSET_V 1280,
+P0 0 / P1 0. Después, fast-forward de pantallas para el 297.
+
+- To-do 273: `estadio-sponsor.mjs --local` toma estadio y capacidad de la Wikipedia del país (pt, es, it, ru) cuando la página nombra al
+  menos el 60% de los equipos; estadio de 88% a 96%. Un sponsor "TBA" o sin letras, y una capacidad menor a 100, cuentan como dato que
+  falta. `data/sponsors-indice.js` (~95 KB) para el buscador.
+- "Estadio y camiseta": un campo de la Wikipedia del país linkea a esa página ("Wikipedia (es)").
+- TODO: 273 y 297 al día.
+
 ## Versión 727 — Merges de finanzas y onboarding: entidades y 17 clubes nuevos de Estonia y Bélgica (2026-10-18)
 
 Finanzas y onboarding, a mano: `index.html` con main en los dos (solo habían cambiado la versión), `ajustes-manuales.jsonl` con las
