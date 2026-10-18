@@ -75,8 +75,11 @@ window.RANKINGS["ee-meistriliiga"] = {
   },
   2022: {
     leagueSize: 10,
-    sinDato: ["fcilevadia-ee","floratallinn-ee","kuressaare-ee","narvatrans-ee","nommekalju-ee","tallinnakalev-ee","tartutammeka-ee"],
+    sinDato: ["floratallinn-ee","kuressaare-ee","narvatrans-ee","nommekalju-ee","tallinnakalev-ee","tartutammeka-ee"],
     clubs: [
+      { id:"fcilevadia-ee", revenue:2.484, reportType:"official_balance_sheet",
+        sourceId:"fcilevadia-ee-aruanne-2022",
+        mix:[["Cuotas Sociales",0],["Comercial / Sponsors",0.544],["Estadio",0.034],["Televisión",0.002],["Premios por competencias",1.099],["Venta de Jugadores",0.149],["Otras secciones deportivas",0.319],["Otros ingresos",0.337]] },
       { id:"paidelinnameeskond-ee", revenue:2.475, reportType:"official_balance_sheet",
         sourceId:"paidelinnameeskond-ee-aruanne-2022",
         mix:[["Cuotas Sociales",0.1],["Comercial / Sponsors",0.612],["Estadio",0.064],["Televisión",0.014],["Premios por competencias",1.04],["Venta de Jugadores",0.342],["Otros ingresos",0.303]] },
