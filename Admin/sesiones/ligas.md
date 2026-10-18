@@ -22,3 +22,20 @@
 ## PDF copiados a la carpeta principal (rsync)
 
 - `Ligas/Inglaterra/Premier League/premier-league-group-accounts-2024-25.pdf`
+
+## Después del merge del 2026-10-18
+
+### Qué cambió
+
+- LaLiga: cuentas consolidadas 2024-25 de la LNFP (cartera PDF de laliga.com/transparencia: cuentas firmadas + informe, digitales) en
+  `Ligas/España/LaLiga/`, con sus `.md`. Auditor Netadia Europa, S.L.P. (por encargo del CSD), sin salvedades. Líneas de
+  `LIGA_AUDITORIA` para `es-laliga` y `es-segunda`, 2025.
+
+### Qué queda
+
+- Seguir con Lega Serie A, J.League, Liga Portugal, AFA, CBF, EFL y el resto.
+
+### PDF copiados a la carpeta principal (rsync)
+
+- `Ligas/España/LaLiga/laliga-cartera-cuentas-consolidadas-2024-25.pdf`, `laliga-cuentas-anuales-consolidadas-2024-25.pdf`,
+  `laliga-informe-auditoria-consolidado-2024-25.pdf`
