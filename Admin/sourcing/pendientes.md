@@ -800,7 +800,7 @@ GENERADO por `node tools/faltantes-liga.mjs`: no editar a mano. Club-años que j
 - Pirata — sin-buscar: 2019 (pe-liga1)
 - Real Garcilaso — sin-buscar: 2019 (pe-liga1)
 
-## Portugal (84 clubes, 389 club-años)
+## Portugal (83 clubes, 385 club-años)
 
 - Farense — sin-buscar: 2025 (pt-primeiraliga), 2024 (pt-primeiraliga), 2023 (pt-ligaportugal2), 2022 (pt-ligaportugal2), 2021 (pt-primeiraliga), 2020 (pt-ligaportugal2), 2019 (pt-ligaportugal2), 2016 (pt-ligaportugal2), 2015 (pt-ligaportugal2), 2014 (pt-ligaportugal2), 2003 (pt-ligaportugal2), 2002 (pt-primeiraliga), 2001 (pt-primeiraliga), 2000 (pt-primeiraliga)
 - Penafiel — sin-buscar: 2025 (pt-ligaportugal2), 2024 (pt-ligaportugal2), 2023 (pt-ligaportugal2), 2022 (pt-ligaportugal2), 2021 (pt-ligaportugal2), 2020 (pt-ligaportugal2), 2019 (pt-ligaportugal2), 2018 (pt-ligaportugal2), 2017 (pt-ligaportugal2), 2016 (pt-ligaportugal2), 2015 (pt-primeiraliga), 2014 (pt-ligaportugal2), 2013 (pt-ligaportugal2), 2012 (pt-ligaportugal2), 2011 (pt-ligaportugal2), 2010 (pt-ligaportugal2), 2007 (pt-ligaportugal2), 2006 (pt-primeiraliga), 2005 (pt-primeiraliga), 2004 (pt-ligaportugal2), 2003 (pt-ligaportugal2), 2002 (pt-ligaportugal2), 2001 (pt-ligaportugal2), 2000 (pt-ligaportugal2)
@@ -824,7 +824,6 @@ GENERADO por `node tools/faltantes-liga.mjs`: no editar a mano. Club-años que j
 - Sp. Covilhã — sin-buscar: 2025 (pt-liga3), 2024 (pt-liga3), 2023 (pt-ligaportugal2), 2022 (pt-ligaportugal2), 2021 (pt-ligaportugal2), 2020 (pt-ligaportugal2), 2019 (pt-ligaportugal2)
 - Sporting B — sin-buscar: 2025 (pt-liga3), 2024 (pt-liga3), 2023 (pt-liga3), 2022 (pt-liga3), 2014 (pt-ligaportugal2)
 - Länk Vilaverdense — sin-buscar: 2024 (pt-ligaportugal2), 2023 (pt-liga3)
-- Vilafranquense — sin-buscar: 2023 (pt-ligaportugal2), 2022 (pt-ligaportugal2), 2021 (pt-ligaportugal2), 2020 (pt-ligaportugal2)
 - Cova da Piedade — sin-buscar: 2022 (pt-liga3), 2021 (pt-ligaportugal2), 2020 (pt-ligaportugal2), 2019 (pt-ligaportugal2), 2018 (pt-ligaportugal2), 2017 (pt-ligaportugal2)
 - Vitória de Guimarães B — sin-buscar: 2022 (pt-liga3), 2019 (pt-ligaportugal2), 2018 (pt-ligaportugal2), 2017 (pt-ligaportugal2), 2016 (pt-ligaportugal2), 2015 (pt-ligaportugal2), 2013 (pt-ligaportugal2)
 - Real — sin-buscar: 2018 (pt-ligaportugal2)

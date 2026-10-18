@@ -97,6 +97,9 @@ window.RANKINGS["pt-ligaportugal2"] = {
       { id:"estreladaamadora-pt", revenue:2.05, reportType:"official_balance_sheet",
         sourceId:"estreladaamadora-pt-relatorio-contas-2022-23",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.17],["Otros ingresos",0.88]] },
+      { id:"avs-pt", revenue:2.006, reportType:"official_balance_sheet",
+        sourceId:"avs-pt-relatorio-contas-2022-23",
+        mix:[["Televisión",0.44],["Otras secciones deportivas",0.046],["Fútbol profesional (sin desglosar por la fuente)",1.275],["Otros ingresos",0.245]] },
       { id:"academicoviseu-pt", revenue:1.868, reportType:"official_balance_sheet",
         sourceId:"academicoviseu-pt-wf-2022-2023-b797bc64",
         mix:[["Comercial / Sponsors",0.245],["Estadio",0.201],["Televisión",0.489],["Premios por competencias",0.227],["Otros ingresos",0.706]] },
@@ -130,6 +133,15 @@ window.RANKINGS["pt-ligaportugal2"] = {
       { id:"academicoviseu-pt", revenue:1.132, reportType:"official_balance_sheet",
         sourceId:"academicoviseu-pt-wf-src-rc21-22",
         mix:[["Comercial / Sponsors",0.095],["Televisión",0.467],["Premios por competencias",0.022],["Otros ingresos",0.548]] },
+    ],
+  },
+  2021: {
+    leagueSize: null,
+    wiki: {"t":"2020–21 Liga Portugal 2","lang":"en","at":"2026-09-30","n":18},
+    clubs: [
+      { id:"avs-pt", revenue:1.071, reportType:"official_balance_sheet",
+        sourceId:"avs-pt-relatorio-contas-2020-21",
+        mix:[["Televisión",0.416],["Otras secciones deportivas",0.014],["Fútbol profesional (sin desglosar por la fuente)",0.443],["Otros ingresos",0.198]] },
     ],
   },
   2019: {

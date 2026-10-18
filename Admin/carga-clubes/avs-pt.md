@@ -163,6 +163,10 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 tools/cargar.mjs (2026-10-16): null, SIN VERIFICAR (no aparece en los rosters cacheados de 2023 (pt-primeiraliga, pt-ligaportugal2, pt-liga3): puede haber jugado otra división).
 ```
 
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): pt-ligaportugal2, verificado contra la lista de equipos de "2022–23 Liga Portugal 2" (Wikipedia; tools/club-league-reference/pt.json, pt-ligaportugal2 2023). Antes: sin fila. En la lista figura como "Vilafranquense": es la misma SAD con el nombre anterior (UD Vilafranquense – Futebol, SAD, NIPC 510 779 301, el mismo de AVS Futebol SAD; Clubes/Portugal/AVS/relatorio-contas-2022-23.md); alias "Vilafranquense" → avs-pt en alias.json.
+```
+
 ## 2021
 
 ### Ingresos
@@ -216,6 +220,10 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 
 ```text
 tools/cargar.mjs (2026-10-16): null, SIN VERIFICAR (no aparece en los rosters cacheados de 2021 (pt-primeiraliga, pt-ligaportugal2): puede haber jugado otra división).
+```
+
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): pt-ligaportugal2, verificado contra la lista de equipos de "2020–21 Liga Portugal 2" (Wikipedia; tools/club-league-reference/pt.json, pt-ligaportugal2 2021). Antes: sin fila. En la lista figura como "Vilafranquense": es la misma SAD con el nombre anterior (UD Vilafranquense – Futebol, SAD, NIPC 510 779 301, el mismo de AVS Futebol SAD; Clubes/Portugal/AVS/relatorio-contas-2020-21.md); alias "Vilafranquense" → avs-pt en alias.json.
 ```
 
 ## Gestiones
