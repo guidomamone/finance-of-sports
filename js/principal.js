@@ -274,7 +274,7 @@
   // applyClubMode(): la única función que decide qué se ve según haya club o no. Hoy todas las pestañas funcionan sin club (Finanzas
   // sin club es el card del selector); TABS_SIN_CLUB queda para una pestaña futura que no signifique nada sin uno: se escondería
   // hasta que lo haya, y si el visitante estaba en ella, vuelve a Inicio.
-  const TABS_SIN_CLUB = ['inicio', 'vs', 'liga', 'finanzas', 'cuenta'];
+  const TABS_SIN_CLUB = ['inicio', 'vs', 'liga', 'finanzas', 'cuenta', 'grupo'];
   function applyClubMode(){
     const cold = !currentClub;
     document.getElementById('mainNav').style.display = '';
@@ -624,7 +624,7 @@
   // solo estas claves: `?multi=0`, `?audit=1` y las demás quedan como estaban. `var` y no `let`: refreshFinanzas() y la vista de
   // Ligas llaman a escribirURL() desde el INIT, antes de este bloque, y `urlLista` las frena hasta haber leído la URL de entrada.
   // ==========================================================================
-  var URL_CLAVES = ['tab', 'club', 'anios', 'liga', 'anio'];
+  var URL_CLAVES = ['tab', 'club', 'anios', 'liga', 'anio', 'grupo'];
   var urlLista = false, aplicandoURL = false;
   function estadoActual(){
     const tab = (document.querySelector('#mainNav button.active') || {}).dataset?.section || 'inicio';
@@ -638,6 +638,7 @@
       const c = LIGA_VIEW.current();
       if(c.league){ e.liga = c.league; if(c.year) e.anio = c.year; }
     }
+    if(tab === 'grupo' && window.GRUPO_VIEW && GRUPO_VIEW.current().grupo) e.grupo = GRUPO_VIEW.current().grupo;
     return e;
   }
   function escribirURL(modo){
@@ -658,6 +659,7 @@
     const anios = (p.get('anios') || '').split(',').map(Number).filter(Number.isFinite).filter(Boolean);
     const liga = p.get('liga');
     const anio = Number(p.get('anio')) || null;
+    const grupo = p.get('grupo');
     aplicandoURL = true;
     let paso = Promise.resolve();
     if(club && clubs[club] && club !== currentClub) paso = selectClub(club);
@@ -667,6 +669,7 @@
         refreshFinanzas();
       }
       if(tab === 'liga') return (liga && (window.LEAGUES || {})[liga]) ? LIGA_VIEW.show(liga, anio) : LIGA_VIEW.frio();
+      if(tab === 'grupo' && window.GRUPO_VIEW && (window.GRUPOS_INDICE || []).some(g => g.id === grupo)) return GRUPO_VIEW.show(grupo);
     }).then(() => {
       const btn = document.querySelector('#mainNav button[data-section="' + tab + '"]');
       if(btn && !btn.hidden && !btn.classList.contains('active')) irASeccion(tab);

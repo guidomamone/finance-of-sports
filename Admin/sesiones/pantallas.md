@@ -54,3 +54,13 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
   falta de pantallas, después de mergear finanzas: (1) 'grupo' en `URL_CLAVES` / `estadoActual()` / `aplicarURL()`; (2) 'grupo' en
   `TABS_SIN_CLUB` de `js/principal.js` (si no, abrir un grupo sin club elegido rebota a Inicio); (3) el resultado "Grupo" del buscador
   con `GRUPOS_INDICE`, que llama a `GRUPO_VIEW.abrir(id)`. Al cambiar el idioma, `GRUPO_VIEW.refresh()` redibuja.
+
+## Después del merge del 2026-10-18
+
+### Qué cambió (para CHANGELOG)
+
+- Grupo multiclub enganchado (contrato con finanzas): `?tab=grupo&grupo=<id>` en la URL (`URL_CLAVES`, `estadoActual()` y
+  `aplicarURL()` de `js/principal.js`; un grupo que no está en `GRUPOS_INDICE` se ignora), 'grupo' en `TABS_SIN_CLUB` (sin club ya no
+  rebota a Inicio) y el resultado "Grupos multiclub" del buscador (`renderBusqueda()` en `js/selector.js`, por nombre o alias; no aparece
+  en Comparar), que cierra el panel y llama a `GRUPO_VIEW.abrir(id)`. Probado: el link abre BlueCo sin club, el buscador lo encuentra
+  con "blue", y "atrás" vuelve. ASSET_V 1263.

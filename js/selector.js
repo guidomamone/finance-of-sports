@@ -2610,6 +2610,32 @@ window.CLUB_SELECTOR = (function(){
       }
     }
 
+    // LOS GRUPOS MULTICLUB (data/entidades/_grupos.js, eager): por nombre o alias. No son un lado de Comparar, así que en ese camino no
+    // aparecen; elegir uno cierra el panel y abre su página.
+    if(origen !== 'vs'){
+      var grupos = (window.GRUPOS_INDICE || []).filter(function(g){
+        return [g.nombre].concat(g.alias || []).some(function(a){ return norm(a).indexOf(q) >= 0; });
+      });
+      if(grupos.length && window.GRUPO_VIEW){
+        caja.appendChild(el('p', 'busca-grupo', t('sel.busca.grupos', 'Grupos multiclub')));
+        var gg = el('div', 'op-grid clubes');
+        grupos.forEach(function(g){
+          var n = (g.clubes || []).length;
+          gg.appendChild(opcionBtn({
+            id:g.id, icon:'🔗', label:g.nombre,
+            sub:t('sel.grupo.sub', 'Grupo multiclub'),
+            meta:n + ' ' + (n === 1 ? t('sel.grupo.club1', 'club') : t('sel.grupo.clubN', 'clubes'))
+          }, false, function(id){
+            $('modalQ').value = '';
+            close();
+            GRUPO_VIEW.abrir(id);
+          }));
+        });
+        caja.appendChild(gg);
+        hits += grupos.length;
+      }
+    }
+
     var txt = indiceBusqueda();
     var clubesHit = ordenados(Object.keys(txt).filter(function(id){
       return txt[id].indexOf(q) >= 0;
