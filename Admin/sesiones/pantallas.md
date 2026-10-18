@@ -122,10 +122,23 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
 
 ## Después del tercer merge del 2026-10-18
 
+### Qué cambió (para CHANGELOG)
+
+- To-do 242, para periodistas. (1) Tarjeta "Citar y descargar" en Finanzas, antes de Fuentes y con su link en el índice de la página
+  (`js/citar.js`, `#finCitar`; nombre elegido por Guido, como "Download" / "Cite" de Our World in Data o el Banco Mundial): la cita
+  sugerida de lo que se ve (club, documento y cierre, unidad, tipo de cambio, inflación, formato y el link con las claves de la URL),
+  "Copiar la cita", "Copiar el link" y "Descargar CSV". El CSV trae una fila por rubro y ejercicio (ingresos, gastos, otros resultados,
+  total de ingresos, resultado neto y deuda), en la unidad que se ve, con la moneda original, el tipo de cambio y su origen, si está
+  ajustado, el documento y su link; sin dato va vacío, nunca 0. Los números salen del motor (`computeYearGeneric()`,
+  `nativeReportFor()`, `nativeDisplayVal()`, `filaDeuda()`). (2) Página pública `metodologia.html` (estilo de `terminos.html`, solo en
+  castellano): fuentes, formato, dólares, inflación, deuda, estimados, auditoría y cómo citar; link en el footer de index.html y en
+  `sitemap.xml` (`tools/generate-fuentes-page.js`); silenciada en `tools/audit-ignore.json` como página para el visitante. Mockup
+  aprobado: "Finanzas · citar y descargar" y "Metodología, página pública" de "Pantallas FoS". Probado: Boca 2024/25 en USD y 2021/22
+  a 2024/25 en ARS (cita, CSV con 57 filas, nombre del archivo). ASSET_V 1269.
+
 ### Qué queda (para TODO)
 
-- 242 (para periodistas): mockup en "Pantallas FoS" ("Finanzas · usar estos números" y "Metodología, página pública"), esperando el
-  ok de Guido.
+- Borrar el 242.
 - 273 (aviso de fos-datos): el dato está en la rama datos-sourcing (943e423cdb), sin mergear. `data/contexto/<iso>.js`, uno por país
   (18 hoy; index.html no los carga): `window.CLUB_CONTEXT[clubId][año] = { estadio, capacidad, sponsor, marca, temporada, fuente,
   fuenteManual? }`; un campo que no se sabe no aparece; `fuente` es el permalink a la revisión de Wikipedia; sponsor puede traer varios

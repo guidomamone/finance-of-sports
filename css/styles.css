@@ -973,6 +973,19 @@
   .aud-x{font-size:13px;color:#45474d;line-height:1.45;}
   .aud-link{flex:0 0 auto;font-size:13px;}
   .aud-ver{font-size:13px;}
+    /* Finanzas: citar y descargar (js/citar.js) */
+  .citar-card{display:flex;flex-direction:column;gap:16px;}
+  .citar-grilla{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:20px;}
+  .citar-bloque{display:flex;flex-direction:column;gap:10px;min-width:0;}
+  .citar-bloque h3{margin:0;font-size:15px;}
+  .citar-texto{margin:0;padding:14px 16px;background:#f4f6fa;border-radius:10px;font-size:14px;line-height:1.55;overflow-wrap:anywhere;}
+  .citar-botones{display:flex;flex-wrap:wrap;gap:8px;}
+  .citar-btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:10px;border:1px solid var(--azul);
+    background:var(--azul);color:#fff;font:inherit;font-size:14px;font-weight:700;cursor:pointer;}
+  .citar-btn.citar-sec{background:#fff;color:var(--azul);border-color:#c9ced8;}
+  .citar-csv-que{margin:0;font-size:14px;color:#45474d;line-height:1.5;}
+  .citar-nota{margin:0;font-size:12.5px;color:var(--muted);line-height:1.5;}
+  .citar-metodo{align-self:flex-start;display:inline-flex;align-items:center;min-height:44px;font-size:14px;font-weight:700;}
     /* Ligas: estimados en la tabla de ingresos */
   .lg-est-tag{flex:0 0 auto;white-space:nowrap;color:#8a4b00;font-weight:600;}
   .lg-fila.estimada .lg-club{flex-wrap:wrap;row-gap:0;}
