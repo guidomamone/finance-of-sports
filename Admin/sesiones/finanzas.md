@@ -146,3 +146,10 @@
   siguen, sin cambios. Marítimo 2021-2025 y Porto 2020, 2024 y 2025 suman sus juros; Belenenses 2025 y Vizela 2023-2024 tienen el renglón en
   "-" o 0,00; la línea de Tondela 2021 es el "Total" de su lista, que ya incluye "Juros obtidos"; Vitória 2022, Braga 2021 y 2023, Académica
   2023 y Chaves 2023 no traen ese renglón.
+
+### Gotcha (para la skill de arranque, `worktree.md`; no la edité sin tu ok)
+
+- Copiar PDF del worktree a la carpeta principal con `rsync -a` copia también los symlinks que crea `worktree.mjs preparar`, que apuntan
+  a la principal: el archivo real de la principal queda reemplazado por un link a sí mismo. Pasó con dos PDF de Lazio (los informes del
+  individual de 2025 y 2026); se recuperaron bajándolos otra vez del sitio del club (mismas páginas que su .md). La forma segura: copiar
+  solo archivos regulares, por ejemplo `rsync -a --no-links` o `find … -type f` como lista.
