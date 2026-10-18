@@ -15,6 +15,17 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 732 — Merges de finanzas y pantallas: auditoría completa y el alcance de cada revisión (2026-10-18)
+
+Los dos a mano: generados con main y regenerados, `index.html` con la versión de cada rama; ASSET_V 1285, P0 0 / P1 0. Probado: Como
+2024/25 con "Revisión limitada" en la tarjeta de auditoría.
+
+- To-do 294 c: Lommel SK, Patro Eisden y Lokeren-Temse en el registro de entidades (Lommel, en la página del grupo CFG): 50 clubes.
+- To-do 282: Spartak 2022 transcripto palabra por palabra; los 40 balances sin línea, cerrados (942 con línea; los 10 japoneses 2025 y
+  otros 6 pasan a "FALTA EN EL PDF", 88 en total); las 6 firmas del OCR verificadas contra la imagen (Getafe, Union SG, Elche, Goiás
+  corregidas); campo `alcance` (revisión limitada, procedimientos acordados, propósito especial, grupo) y la tarjeta que lo muestra.
+- TODO: 282 y 294 con lo que queda.
+
 ## Versión 731 — Merge de pantallas: el tablero del pipeline (2026-10-18)
 
 `node tools/worktree.mjs mergear pantallas`, sin conflictos, P0 0 / P1 0.

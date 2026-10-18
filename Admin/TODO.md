@@ -61,9 +61,9 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 273: estadio y sponsor, lo que queda (completar a mano, nombrar la compuerta)
 
 **E. Pantallas**
-* 282: quién audita, lo que queda (72 informes a conseguir, Spartak, OCR, revisores no plenos)
+* 282: quién audita, lo que queda (88 informes a conseguir; la compuerta del pipeline)
 * 281: ingresos de las otras entidades (falta transcribir los documentos de Portugal)
-* 294: registro de entidades, lo que queda (ajustes de año y dudas)
+* 294: registro de entidades, lo que queda (los clubes del borrador cuando estén publicados)
 
 **E2. Distribución (depende de 246)**
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
@@ -239,13 +239,10 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    Portugal). Falta: transcribir por subagentes los ~17 documentos de entidades de clubes portugueses publicados sin `.md` (Porto 3, Braga
    2022-23, Marítimo 5, Belenenses, Chaves, Vizela 2, Académica, União de Leiria) y cargar su línea de ingresos (va con el 294). Chaves 2022-23: el informe del auditor de la
    asociación está en Relatorio_Atividades-e-Contas-2022_2023.pdf, págs. 36-39 (RCVM, incertidumbre material).
-282. QUIÉN AUDITA: LO QUE QUEDA (pedido de Guido, 2026-10-17). El registro cubre 902 de 925 balances y la tarjeta de Finanzas está.
-   Falta: (a) sourcing de los 72 informes del auditor que no están en ningún PDF nuestro (`node tools/auditoria.mjs --pendientes`, nota
-   "FALTA EN EL PDF": Lazio, Napoli, Torino, Hellas Verona, Roma, Juventus, Hamburgo, varios de Portugal…); (b) Spartak 2022, transcribir el
-   informe palabra por palabra; (c) los 23 balances sin .md; (d) nombres de firma tomados de OCR ruidoso, verificar contra el PDF (Union SG
-   2025, Getafe 2024-2025, Elche 2025, Goiás 2008, Godoy Cruz 2020); (e) revisores que firman sin ser auditoría plena (Criciúma 2015-2019,
-   Osijek 2025, Como 2025, Kifisia 2022-2024, Club América 2025): decidir cómo se muestran; (f) que el pipeline exija la línea al dar de
-   alta un club (fos-pipeline); (g) en Ligas, la entidad organizadora (295).
+282. QUIÉN AUDITA: LO QUE QUEDA (pedido de Guido, 2026-10-17). Los 942 balances tienen línea, la tarjeta de Finanzas está (con el
+   "alcance" de una revisión limitada, procedimientos acordados, propósito especial o cuentas del grupo). Falta: (a) sourcing de los 88
+   informes del auditor que no están en ningún PDF nuestro (`node tools/auditoria.mjs --pendientes`, "FALTA EN EL PDF"); (f) que el pipeline
+   exija la línea al dar de alta un club (fos-pipeline); (g) en Ligas, la entidad organizadora (295).
 295. BALANCES DE LAS ENTIDADES QUE ORGANIZAN LAS LIGAS (sale del 282; aclaración de Guido, 2026-10-18). En Ligas, la auditoría que se
    muestra es la del balance propio de la entidad organizadora (AFA, LFP, Premier League, Lega Serie A…). No hay ninguno en el proyecto
    (las carpetas `Clubes/*/_…` son informes agregados de liga). Sourcing de esos balances con su informe del auditor; después, su línea en
@@ -286,10 +283,10 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    hechos; Estonia y Bélgica dados de alta (lotes 89 y 90, 17 clubes). Falta: los lotes de carga por país que siguen (91-92 en curso,
    después Suiza, Países Bajos, Colombia, Beşiktaş); OH Leuven 2022 y Llaneros 2022, que siguen sin tablas (ver 298 e); decidir subagentes
    o Mistral para los 319 `.md` viejos sin tablas de `Admin/lotes/sin-tablas-6paises.txt`, después de medir el 298 e.
-294. REGISTRO DE ENTIDADES: LO QUE QUEDA (pedido de Guido, 2026-10-18). Tiene 47 clubes y 9 grupos (las dudas de los subagentes ya se
-   resolvieron con cita). Falta: (c) los casos de `Admin/registros/cola-borradores/altas-2026-10-17.md` cuyos clubes ya están publicados
-   (Lommel SK, Patro Eisden, Lokeren-Temse entraron con onboarding); Bahia: el eslabón CFG > City Football Group Brazil se cita con el
-   contrato de la S.A.F., sin %; una cita del registro societario de Brasil (QSA del CNPJ) lo dejaría directo.
+294. REGISTRO DE ENTIDADES: LO QUE QUEDA (pedido de Guido, 2026-10-18). Tiene 50 clubes y 9 grupos. Falta: los clubes del borrador
+   `Admin/registros/cola-borradores/altas-2026-10-17.md` cuando estén publicados (Viking, Vålerenga, Luzern, St. Gallen, Molde, Go Ahead
+   Eagles, Basel, Pardubice, Aalesund, Fredrikstad, Sarpsborg 08; el borrador tiene la entidad de cada uno con cita); Bahia: una cita del
+   registro societario de Brasil (QSA del CNPJ) para el eslabón CFG > City Football Group Brazil.
 298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; cada letra es un escalón a diseñar con el ok de Guido, uno por
    vez; el detalle con casos, en `Admin/Archive/sesion-onboarding-2026-10-18-2.md`). a) CIERRE FALSO en verificar.mjs: compara en valor
    absoluto y da "cierra" con una fila del lado o signo equivocado (Lierse Kempenzonen 2022 habría cargado un gasto como ingreso): lo más
