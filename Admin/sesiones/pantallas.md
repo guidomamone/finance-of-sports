@@ -22,10 +22,13 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
   Cuando el total de la tabla suma estimados, una franja rayada "Estimados, sin categoría*" hace que los dos totales coincidan; si no,
   solo lo real. Nota de los clubes sin desglosar. Colores: los de "De dónde sale la plata" (`paletaMix()`). Mockup: "Ligas · consolidado
   de la liga" de "Pantallas FoS". ASSET_V 1260.
+- To-do 272: borrado el cartel de primera visita "Elegí tu club acá" (colgaba del botón del club, que ya no está en el header): HTML en
+  `index.html`, `hideCoach` / `maybeCoach` y `LS_COACH` en `js/selector.js`, `.coach` en `css/styles.css` y `selector.coach` en
+  `data/lang/en.js`. La puerta del visitante nuevo es el buscador de Inicio. ASSET_V 1261.
 
 ## Qué queda (para TODO)
 
-- Borrar el 293, el 275 y el 274.
+- Borrar el 293, el 275, el 274 y el 272.
 - La parte de "faltantes" del 275 (la lista de quiénes faltan y por qué) se descartó en el diseño: Guido quiere que todo club sin balance
   figure como estimado, sin motivos. `data/faltantes/` sigue alimentando a `estimar.mjs`.
 - 270, club nuevo: quedó prendido con 50% de error; volver a medir (`node tools/estimar.mjs --medir`) cuando haya más clubes cargados.

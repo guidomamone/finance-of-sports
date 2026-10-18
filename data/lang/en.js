@@ -286,7 +286,6 @@ window.I18N.strings.en = {
   "selector.aria": "Pick a club",
   "selector.search.ph": "Search a club, a league or a country\u2026  (e.g. \"boca\", \"laliga\", \"japan\")",
   "selector.close": "Close",
-  "selector.coach": "Pick your club here",
   "selector.soon": "coming soon",
   "selector.club": "club",
   "selector.clubs": "clubs",
