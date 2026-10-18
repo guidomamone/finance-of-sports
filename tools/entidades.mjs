@@ -26,6 +26,7 @@
 // CHEQUEOS (sale con código 1 si alguno falla):
 //   - cada cita de documento: el texto está en esa línea del .md (±3 líneas, espacios normalizados) y el .md está trackeado en Clubes/;
 //   - cada cita externa: url https, fecha AAAA-MM-DD y texto;
+//   - (los ingresos del total de cada grupo salen de data/rankings/: si cambian, --check avisa que esto quedó viejo)
 //   - cada carga: el club y el año están cargados en el sitio y el documento citado es de ese club y ese año (tools/quien.mjs);
 //   - ids únicos, relaciones y cargas que apuntan a entidades que existen, códigos de forma/rel/perímetro conocidos, sin ciclos de control.
 // AVISOS (no frenan): clubes del sitio con una línea "otra entidad" en documentos-descartados.txt y sin ninguna entidad en el registro.
@@ -45,6 +46,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, rmSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import { execSync } from 'node:child_process';
+import vm from 'node:vm';
 import { loadSite } from './datos-sitio.mjs';
 import { quien } from './quien.mjs';
 
@@ -182,6 +184,16 @@ for (const clubId of [...new Set(cargas.map(c => c.clubId))].sort()) {
 
 // Grupos: los clubes bajo la cabeza del grupo (controla o participa, a cualquier profundidad), con el tramo de años de la relación directa
 // con el club. Un club del grupo que no está en el sitio queda con clubId null y se muestra sin link.
+// Los ingresos de cada club-ejercicio, en millones de USD y formato simplificado, tal como los publica data/rankings/ (el motor real,
+// tools/generate-rankings.js): el total de un grupo es la suma de esos números, sin recalcular nada acá.
+const ingresosRanking = {};
+{
+  const ctx = vm.createContext({ window: {} });
+  for (const f of readdirSync(join(ROOT, 'data/rankings')).filter(f => f.endsWith('.js') && !f.startsWith('_')))
+    vm.runInContext(readFileSync(join(ROOT, 'data/rankings', f), 'utf8'), ctx);
+  for (const liga of Object.values(ctx.window.RANKINGS || {}))
+    for (const [anio, r] of Object.entries(liga)) for (const c of r.clubs || []) (ingresosRanking[c.id] ||= {})[anio] = c.revenue;
+}
 const grupos = {};
 for (const g of [...entidades.values()].filter(e => e.grupo)) {
   const clubesG = [];
@@ -190,12 +202,19 @@ for (const g of [...entidades.values()].filter(e => e.grupo)) {
     for (const r of relaciones.filter(r => r.de === id && r.rel !== 'vinculada')) {
       const hijo = entidades.get(r.a), ctrl = control && r.rel === 'controla';
       const clubDeHijo = hijo.clubId || cargas.find(c => c.entidad === hijo.id)?.clubId || null;
-      if (hijo.forma === 'club' || clubDeHijo) clubesG.push({ clubId: clubDeHijo, nombre: hijo.nombre, control: ctrl, pct: r.pct ?? null, desde: r.desde ?? null, hasta: r.hasta ?? null, fuente: citaPublica(r.cita) });
+      if (hijo.forma === 'club' || clubDeHijo) clubesG.push({ clubId: clubDeHijo, nombre: hijo.nombre, pais: hijo.pais, control: ctrl, pct: r.pct ?? null, desde: r.desde ?? null, hasta: r.hasta ?? null, fuente: citaPublica(r.cita) });
       else bajar(r.a, ctrl, visto);
     }
   };
   bajar(g.id, true);
-  grupos[g.grupo.id || g.id] = { nombre: g.grupo.nombre || g.nombre, alias: g.grupo.alias || [], entidad: g.id, clubes: clubesG };
+  // El dueño último del grupo: hacia arriba por `controla` desde la cabeza.
+  let top = null;
+  for (let id = g.id, r; (r = relaciones.find(x => x.a === id && x.rel === 'controla')); id = r.de) top = r;
+  const ingresos = {};
+  for (const c of clubesG) if (c.clubId && c.control && ingresosRanking[c.clubId]) ingresos[c.clubId] = ingresosRanking[c.clubId];
+  grupos[g.grupo.id || g.id] = { nombre: g.grupo.nombre || g.nombre, alias: g.grupo.alias || [], entidad: g.id, legal: g.nombre, pais: g.pais,
+    fuente: citaPublica(g.cita), duenoUltimo: top ? { nombre: entidades.get(top.de).nombre, pais: entidades.get(top.de).pais, fuente: citaPublica(top.cita) } : null,
+    clubes: clubesG, ingresos };
 }
 
 // --- escribir o comparar ---------------------------------------------------------------------------------------------------------------------

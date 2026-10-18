@@ -109,8 +109,9 @@ const FIN_ESTRUCTURA = (function(){
       const e = ent(id);
       const partes = [forma(e.forma), e.pais ? pais(e.pais) : ''];
       if(rel && rel.desde != null) partes.push(t('estr.desde', 'desde') + ' ' + etiqueta(clubId, rel.desde));
-      if(e.grupo) partes.push(e.grupo.nombre);
-      return partes.filter(Boolean).map(esc).join(' · ');
+      const txt = partes.filter(Boolean).map(esc).join(' · ');
+      const g = e.grupo && (window.GRUPOS_INDICE || []).find(x => x.id === e.grupo.id);
+      return g ? txt + ' · ' + grupoLink(g) : txt;
     };
     const arriba = cadena(d, propia, y);
     const cajas = arriba.map((a, i) => caja(a.id,
@@ -154,10 +155,16 @@ const FIN_ESTRUCTURA = (function(){
       </div>
       ${nota ? `<p class="estr-nota"><strong>${esc(t('estr.periodistas', 'Para periodistas:'))}</strong> ${esc(nota)}</p>` : ''}`;
   }
-  // La página del grupo la abre GRUPO_VIEW (js/grupo.js) cuando existe; mientras tanto el grupo se nombra sin link.
+  // La página del grupo la abre GRUPO_VIEW (js/grupo.js); el href sirve para abrirla en otra pestaña.
   function grupoLink(g){
-    return window.GRUPO_VIEW ? `<a href="?tab=grupo&amp;grupo=${esc(encodeURIComponent(g.id))}">${esc(g.nombre)}</a>` : `<strong>${esc(g.nombre)}</strong>`;
+    return `<a href="?tab=grupo&amp;grupo=${esc(encodeURIComponent(g.id))}" data-grupo="${esc(g.id)}">${esc(g.nombre)}</a>`;
   }
+  document.addEventListener('click', e => {
+    const a = e.target.closest && e.target.closest('#finEstructura a[data-grupo]');
+    if(!a || !window.GRUPO_VIEW || e.metaKey || e.ctrlKey) return;
+    e.preventDefault();
+    GRUPO_VIEW.abrir(a.dataset.grupo);
+  });
 
   return { cargar, render };
 })();

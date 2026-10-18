@@ -14,7 +14,13 @@
   mismo grupo fuera, y la nota para periodistas; "El dueño, ejercicio por ejercicio" cuando hay estructura de más de un año. Sin datos
   del club, la tarjeta y el link se esconden. Mockup aprobado: artboards "Finanzas · estructura del club" de "Pantallas FoS".
   `index.html` carga eager `data/entidades/_grupos.js` (`GRUPOS_INDICE`, `ENTIDADES_PAISES`); `js/principal.js` suma una línea en
-  `refreshFinanzas()` (no toca el bloque de la URL). ASSET_V 1256.
+  `refreshFinanzas()` (no toca el bloque de la URL).
+- To-do 280 c: página del grupo multiclub (`js/grupo.js`, sección `#grupo`, `window.GRUPO_VIEW = { show, abrir, current, refresh }`).
+  Arriba, el grupo, su país y su dueño último, con su link al balance; tabla de clubes controlados (link a los del sitio, "sin balance"
+  los demás, liga del sitio o país, desde qué ejercicio, ingresos del último año, de dónde sale); participaciones de 50 % o menos
+  aparte; gráfico de barras apiladas por año (M USD, formato simplificado), cuántos clubes con balance de cuántos por año, y el aviso de
+  que no es un consolidado. Los ingresos los copia `tools/entidades.mjs` de `data/rankings/` a `_grupos-detalle.js` (se baja al abrir un
+  grupo), sin recalcular. Se llega desde la tarjeta Estructura (nombre del grupo, en la frase y en su caja). ASSET_V 1257.
 
 ## Decisiones de Guido (2026-10-18), para CONVENCIONES-DATOS
 
@@ -27,21 +33,22 @@
 - 280: el registro tiene 2 clubes. Faltan los otros ejercicios de Chelsea e Inter (Suning antes de 2024), Portugal (los avisos de
   `node tools/entidades.mjs`), los casos de `cola-borradores/altas-2026-10-17.md` cuando esos clubes estén publicados, y los grupos con dos o
   más clubes cargados (City Football Group, Marinakis, Friedkin, 777 Partners, Eagle Football).
-- 280 b (Finanzas) y 280 c (página del grupo y su total), con mockup antes.
 - CONTRATO CON fos-pantallas (acordado 2026-10-18; lo engancha pantallas después de mergear esta rama):
   - URL `?tab=grupo&grupo=<grupoId>` (p. ej. `blueco`). El lector de URL ("EL ESTADO EN LA URL" de `js/principal.js`: `URL_CLAVES`,
     `estadoActual()`, `aplicarURL()`) lo toca solo pantallas (to-do 271): finanzas no lo edita.
-  - Finanzas pone en `index.html` una sección propia `data-section="grupo"` y su botón en `#mainNav` con `hidden` (lo necesita
-    `irASeccion()`), y en `js/grupo.js` `window.GRUPO_VIEW = { show(grupoId) -> Promise, current() -> { grupo } }`.
+  - HECHO por finanzas: la sección `#grupo` y su botón en `#mainNav` (`hidden`, y el CSS lo saca del menú aunque `applyClubMode()` le
+    saque el `hidden`), y `js/grupo.js` con `window.GRUPO_VIEW = { show(grupoId) -> Promise, current() -> { grupo } }`.
+  - FALTA de pantallas: `grupo` en `URL_CLAVES`/`estadoActual()`/`aplicarURL()` (hoy la URL queda `?tab=grupo` sin el id) y `grupo` en
+    `TABS_SIN_CLUB` de `js/principal.js` (sin eso, abrir un grupo sin club elegido, desde el buscador, rebota a Inicio).
   - Buscador: `data/entidades/_grupos.js` es `window.GRUPOS_INDICE = [{ id, nombre, alias, clubIds }]`, chico y eager (ya lo genera
     `tools/entidades.mjs`; el detalle va aparte en `_grupos-detalle.js`). Pantallas suma el resultado "Grupo" en `js/selector.js`, que llama a
     `GRUPO_VIEW.show(id)`.
 - 281, 282, 242 sin empezar.
 
-## Para PANTALLA (regla nueva o excepción, a confirmar con Guido)
+## Para PANTALLA (excepción aprobada por Guido, 2026-10-18)
 
-- La tarjeta Estructura lleva, en cada entidad, un link "ver en el balance" (o "ver en <dominio>" para una cita externa) a la
-  transcripción. No dice "Fuente:", que la regla de PANTALLA ("la fuente NUNCA va adentro de un card") prohíbe; la cita por entidad es
+- Excepción a "la fuente NUNCA va adentro de un card": la tarjeta Estructura (y la página del grupo) lleva, en cada entidad, un link
+  "ver en el balance" (o "ver en <dominio>" para una cita externa) a la transcripción, sin la palabra "Fuente:". La cita por entidad es
   el dato que pide el periodista.
 
 ## Qué deja de ser cierto en ESTADO
