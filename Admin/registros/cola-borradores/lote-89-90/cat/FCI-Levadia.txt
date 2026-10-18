@@ -1,0 +1,10 @@
+## Clubes/Estonia/FCI Levadia/aruanne-2025.pdf
+  [f9f6891] etapa verificar · no-cierra
+      Qué mirar: resultado del ejercicio: ingresos 1.582363 - gastos 2.512296 ± financiero 0.283963 ± impuesto 0 no da el impreso -1.197822. Revisar si falta o sobra alguna fila, o si hay un renglón del lado equivocado.
+      Abrí el PDF en la página 15 del visor (la hoja tiene impreso "15" al pie).
+      En la transcripción (Clubes/Estonia/FCI Levadia/aruanne-2025.md), líneas 559-602.
+  [5ea3e72] etapa verificar · duda-de-extraer
+      Pregunta: ¿Se cargan las filas 'Sellest kajastatud sihtotstarbeliselt finantseeritud projektide otsese kuluna' (L163: 1 215 300,00; L167: 92 340,00) solo como dato informativo 'del cual', sin restarlas ni sumarlas a los gastos?  (por qué: El subtotal L164 (2 310 937,00) y el total L170 (3 624 036,00) cierran sin incluir esas filas, por lo que son 'de lo cual'.)
+      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
+      En la transcripción (Clubes/Estonia/FCI Levadia/aruanne-2025.md), líneas 164-170.
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)

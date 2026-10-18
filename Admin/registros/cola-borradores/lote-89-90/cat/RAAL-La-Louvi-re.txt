@@ -1,0 +1,13 @@
+## Clubes/Bélgica/RAAL La Louvière/wf-2024-2025-2677fac4.pdf
+  [14a7f05] etapa cargar · categoria
+      Pregunta: ¿"Achats" (0.511554 en millones de la moneda del documento) va como "Otros gastos"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 7 del visor (la hoja tiene impreso "7" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [0de9c4d] etapa cargar · categoria
+      Pregunta: ¿"Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles" (0.558871 en millones de la moneda del documento) va como "Amortización de pases"?  (por qué: la categorización le dio 0.45 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 7 del visor (la hoja tiene impreso "7" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [9584ed7] etapa cargar · categoria
+      Pregunta: ¿"Charges d'exploitation non récurrentes" (0.003193 en millones de la moneda del documento) va como "Otros gastos"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 7 del visor (la hoja tiene impreso "7" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)

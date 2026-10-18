@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2025.pdf",
  "md": "Clubes/Estonia/FCI Levadia/aruanne-2025.md",
- "generado": "2026-10-18T13:25:26.174Z",
+ "generado": "2026-10-18T13:33:26.968Z",
  "estado": "cola",
  "clubId": null,
  "year": 2025,
@@ -21,10 +21,22 @@
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2025.pdf",
+   "campo": "fila",
+   "valor": "-279.290",
+   "linea": 172,
+   "etiqueta": "Finantskulud",
+   "lado": "financiero",
+   "reemplaza": "Finantskulud",
+   "motivo": "costo financiero del consolidado (L172): resta; 2.675.678 - 3.624.036 + 8.037 - 279.290 = -1.219.611 impreso (L173) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
   }
  ],
  "cola": [
-  "f9f6891",
   "5ea3e72"
  ],
  "chequeos": [
@@ -44,20 +56,27 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 2.675678 - gastos 3.624036 ± financiero 0.287327 ± impuesto 0 no da el impreso -1.219611",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 2.220446049250313e-16
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
+  "ajuste manual: fila \"Finantskulud\" (financiero) -279.290, en lugar de \"Finantskulud\" (2026-10-18, costo financiero del consolidado (L172): resta; 2.675.678 - 3.624.036 + 8.037 - 279.290 = -1.219.611 impreso (L173) (Claude 2026-10-18))",
   "duda de localizar ya contestada para el club (perimetro, \"-\"): corregir consolidado, en aruanne-2025.pdf",
   "duda de localizar que no afecta la carga: b15 solo indica que las donaciones son en dinero, sin nuevo desglose.",
-  "duda de extraer que no afecta la carga: LISA 10 repite L157 y L161 y agrupa los sotsiaalmaks (462 994 = 116 593 + 346 401); su total 1 833 082 no corresponde a ningún renglón del estado porque excluye sportlasetoetus y stipendiumid."
+  "duda de extraer que no afecta la carga: LISA 10 repite L157 y L161 y agrupa los sotsiaalmaks (462 994 = 116 593 + 346 401); su total 1 833 082 no corresponde a ningún renglón del estado porque excluye sportlasetoetus y stipendiumid.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -65,12 +84,12 @@
  "totales": {
   "ingresos": 2.675678,
   "gastos": 3.624036,
-  "financiero": 0.287327,
+  "financiero": -0.271253,
   "impuesto": 0,
   "resultadoImpreso": -1.219611,
   "resultadoParaCargar": -1.219611,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -382,7 +401,7 @@
   },
   {
    "etiqueta": "Finantskulud",
-   "M": 0.27929,
+   "M": -0.27929,
    "linea": 172
   }
  ],

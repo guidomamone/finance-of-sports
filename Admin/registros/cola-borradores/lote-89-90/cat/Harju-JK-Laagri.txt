@@ -1,0 +1,50 @@
+## Clubes/Estonia/Harju JK Laagri/aruanne-2025.pdf
+  [f166929] etapa cargar · categoria
+      Pregunta: ¿"Mängijatele makstav sportlasestipendium" (0.101532 en millones de la moneda del documento) va como "Salarios del plantel"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 11 del visor (la hoja tiene impreso "11" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [5feb838] etapa cargar · categoria
+      Pregunta: ¿"Mängijatele makstav sportlasetoetus" (0.029933 en millones de la moneda del documento) va como "Salarios del plantel"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 11 del visor (la hoja tiene impreso "11" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [79fcdd7] etapa cargar · categoria
+      Pregunta: ¿"Muud tehnilisele personalile tehtud väljamaksed" (0.087609 en millones de la moneda del documento) va como "Salarios del plantel"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 11 del visor (la hoja tiene impreso "11" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [b50965a] etapa cargar · categoria
+      Pregunta: ¿"Konsultatsioonid, koolitused" (0.020146 en millones de la moneda del documento) va como "Administración y gastos generales"?  (por qué: la categorización le dio 0.7 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 11 del visor (la hoja tiene impreso "11" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [bfd9413] etapa cargar · categoria
+      Pregunta: ¿"Transpordikulud" (0.015924 en millones de la moneda del documento) va como "Organización de partidos"?  (por qué: la categorización le dio 0.7 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 11 del visor (la hoja tiene impreso "11" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [6b84b87] etapa cargar · categoria
+      Pregunta: ¿"Mängijate üleminekukulud" (0.017904 en millones de la moneda del documento) va como "Amortización de pases"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 11 del visor (la hoja tiene impreso "11" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [467c1a6] etapa cargar · categoria
+      Pregunta: ¿"Varustus, mänguvormid" (0.014306 en millones de la moneda del documento) va como "Organización de partidos"?  (por qué: la categorización le dio 0.5 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 11 del visor (la hoja tiene impreso "11" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [9d18fda] etapa cargar · categoria
+      Pregunta: ¿"Meditsiinitarvikud,-teenused" (0.013987 en millones de la moneda del documento) va como "Organización de partidos"?  (por qué: la categorización le dio 0.45 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 11 del visor (la hoja tiene impreso "11" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [973bea8] etapa cargar · categoria
+      Pregunta: ¿"Palgakulu" (0.063831 en millones de la moneda del documento) va como "Salarios del plantel"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 11 del visor (la hoja tiene impreso "11" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [4a3e792] etapa cargar · categoria
+      Pregunta: ¿"Sotsiaalmaksud" (0.021575 en millones de la moneda del documento) va como "Salarios del plantel"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 11 del visor (la hoja tiene impreso "11" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [4d47e8c] etapa cargar · perfil
+      Pregunta: ¿MTÜ Harju Jalgpalliklubi Laagri tiene socios que le pagan una cuota (cuotas sociales, mensalidades, sócio-torcedor, membresía)?  (por qué: en 2025 "Cuotas sociales" da 0; si el club tiene, falta un desglose y se reintenta; si no tiene, el 0 es real. Queda guardado en Admin/registros/perfil-clubes.jsonl para todos sus años.)
+      Propuesta del sistema: responder corregir --valor sí | corregir --valor no (o mandar un agente a buscar)
+  [9c2d069] etapa cargar · perfil
+      Pregunta: ¿MTÜ Harju Jalgpalliklubi Laagri tiene otros deportes (básquet, vóley, futsal...) con ingresos o gastos en sus estados financieros?  (por qué: en 2025 "Otras secciones deportivas" da 0; si el club tiene, falta un desglose y se reintenta; si no tiene, el 0 es real. Queda guardado en Admin/registros/perfil-clubes.jsonl para todos sus años.)
+      Propuesta del sistema: responder corregir --valor sí | corregir --valor no (o mandar un agente a buscar)
+  [53802e4] etapa cargar · gestion
+      Qué mirar: ¿Quién condujo MTÜ Harju Jalgpalliklubi Laagri en el ejercicio 2025 (cierre 2025-12-31)? Ninguna gestión confirmada de data/gestiones/ee.js lo cubre. Completar las gestiones del club en ese archivo (formato y regla: Admin/ARQUITECTURA.md, "Gestiones"; el porqué de cada fecha va a Admin/carga-clubes/<club>.md, no al archivo): nombre, corto, cargo 'Presidente' (en una sociedad, el dueño solo si es una persona con nombre), desde (fecha en que ASUMIÓ), hasta (o null), fuente (URL), confirmada:true. Si el país no tiene archivo, crearlo y sumar 'ee' a PAISES de js/finanzas-anios.js. Una SAF o sociedad anónima sin dueño persona no tiene gestión: responder descartar. Firmantes en la transcripción: no se encontraron. Después: node tools/cola.mjs --responder <id> aceptar.
+      Propuesta del sistema: completar data/gestiones y responder aceptar (o descartar si el club no tiene presidente persona)

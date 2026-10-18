@@ -1,0 +1,48 @@
+## Clubes/Estonia/Nõmme Kalju/aruanne-2025.pdf
+  [57ba43a] etapa cargar · categoria
+      Pregunta: ¿"UEFA solidaarsustoetus" (1.144759 en millones de la moneda del documento) va como "Otros ingresos"?  (por qué: la categorización le dio 0.5 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 18 del visor (la hoja tiene impreso "18" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [7c063eb] etapa cargar · categoria
+      Pregunta: ¿"EJL toetused" (0.056625 en millones de la moneda del documento) va como "Otros ingresos"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 18 del visor (la hoja tiene impreso "18" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [4947de4] etapa cargar · categoria
+      Pregunta: ¿"Piletitulu UEFA klubisarjades osalemisest" (0.01411 en millones de la moneda del documento) va como "Recaudación de entradas"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 18 del visor (la hoja tiene impreso "18" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [d31e426] etapa cargar · categoria
+      Pregunta: ¿"Muu äritegevus" (0.020024 en millones de la moneda del documento) va como "Otros ingresos"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 18 del visor (la hoja tiene impreso "18" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [3e96448] etapa cargar · categoria
+      Pregunta: ¿"Maksuvabad stipendiumid" (0.04148 en millones de la moneda del documento) va como "Otras secciones deportivas (juvenil, otros deportes, básquet)"?  (por qué: la categorización le dio 0.5 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 19 del visor (la hoja tiene impreso "19" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [10799ec] etapa cargar · categoria
+      Pregunta: ¿"Sportlastoetused" (0.221754 en millones de la moneda del documento) va como "Otras secciones deportivas (juvenil, otros deportes, básquet)"?  (por qué: la categorización le dio 0.4 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 19 del visor (la hoja tiene impreso "19" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [18373de] etapa cargar · categoria
+      Pregunta: ¿"Mängijaõigused" (0.0036 en millones de la moneda del documento) va como "Amortización de pases"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 19 del visor (la hoja tiene impreso "19" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [96aa540] etapa cargar · categoria
+      Pregunta: ¿"Klubile kuuluvate ja tema kasutuses olevate hoonete ja rajatistega seotud kulud" (0.108918 en millones de la moneda del documento) va como "Administración y gastos generales"?  (por qué: la categorización le dio 0.65 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 19 del visor (la hoja tiene impreso "19" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [8de2fb6] etapa cargar · categoria
+      Pregunta: ¿"Meditsiinitarvikud- ja teenused" (0.021097 en millones de la moneda del documento) va como "Otros gastos"?  (por qué: la categorización le dio 0.5 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 19 del visor (la hoja tiene impreso "19" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [03ed1fc] etapa cargar · categoria
+      Pregunta: ¿"Muu personali palgakulu" (0.303392 en millones de la moneda del documento) va como "Administración y gastos generales"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 19 del visor (la hoja tiene impreso "19" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [87cea9c] etapa cargar · categoria
+      Pregunta: ¿"Puhkusereserv" (0.001431 en millones de la moneda del documento) va como "Administración y gastos generales"?  (por qué: la categorización le dio 0.4 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 19 del visor (la hoja tiene impreso "19" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [cc5a58c] etapa cargar · gestion
+      Qué mirar: ¿Quién condujo Mittetulundusühing Nõmme Kalju FC en el ejercicio 2025 (cierre 2025-12-31)? Ninguna gestión confirmada de data/gestiones/ee.js lo cubre. Completar las gestiones del club en ese archivo (formato y regla: Admin/ARQUITECTURA.md, "Gestiones"; el porqué de cada fecha va a Admin/carga-clubes/<club>.md, no al archivo): nombre, corto, cargo 'Presidente' (en una sociedad, el dueño solo si es una persona con nombre), desde (fecha en que ASUMIÓ), hasta (o null), fuente (URL), confirmada:true. Si el país no tiene archivo, crearlo y sumar 'ee' a PAISES de js/finanzas-anios.js. Una SAF o sociedad anónima sin dueño persona no tiene gestión: responder descartar. Firmantes en la transcripción: no se encontraron. Después: node tools/cola.mjs --responder <id> aceptar.
+      Propuesta del sistema: completar data/gestiones y responder aceptar (o descartar si el club no tiene presidente persona)
