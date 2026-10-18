@@ -176,7 +176,7 @@ function proponer({ carpeta, anio, A, clubId, club, alta }) {
 // ---------------------------------------------------------------------------
 const carpetas = readdirSync(DIR, { withFileTypes: true }).filter((d) => d.isDirectory() && !d.name.startsWith('_') && (!SOLO || d.name === SOLO)).map((d) => d.name).sort();
 const { analizar } = await import('./alta-club.mjs');
-const { cargarSitio, escribir } = await import('./cargar.mjs');
+const { cargarSitio, escribir, compuertaContexto } = await import('./cargar.mjs');
 let sitio = cargarSitio();
 const altas = new Map(leerJsonl(resolve(ROOT, 'Admin', 'registros', 'altas-club.jsonl')).map((o) => [o.carpeta, o]));
 const revision = new Map(leerJsonl(resolve(ROOT, 'Admin', 'registros', 'altas-revision.jsonl')).map((o) => [o.clubId, o]));
@@ -235,6 +235,9 @@ for (const nombre of carpetas) {
     const P = proponer({ carpeta, anio: y, A, clubId, club, alta });
     if (!P.ejercicio.fiscalYearMeta.sourceId || (!P.ejercicio.fiscalYearMeta.fxRef)) { console.log(`      ${y}: sin sourceId o sin tipo de cambio (${JSON.stringify(alta.ejercicio?.campos?.find((c) => c.campo === 'fxRef') || {}).slice(0, 160)})`); continue; }
     if (yaEnSitio(y)) { if (!P.escalon2.length) continue; P.reemplaza = true; }
+    // la compuerta de estadio y sponsor de cargar.mjs (to-do 273) vale también acá, que escribe sin pasar por su main(); un año ya
+    // cargado que solo se reescribe no se frena
+    if (!P.reemplaza && !compuertaContexto(P)) { console.log(`      ${y}: NO escrito: falta estadio o sponsor (tools/contexto-manual.json)`); continue; }
     const res = escribir(P);
     if (!res.ok) { console.log(`      ${y}: NO escrito: ${res.motivo.slice(0, 200)}`); continue; }
     git('add', '-A', '--', 'data', 'index.html', 'fuentes', 'Admin/sourcing', 'fuentes.html', 'sitemap.xml', 'Admin/carga-clubes', 'Admin/ESTADO-clubes.md', 'Admin/COMO-CORRE-EL-PROYECTO.html', 'Admin/registros/altas-club.jsonl', `${carpeta}/bfo-${y}-datos.md`);

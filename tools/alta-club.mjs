@@ -1500,7 +1500,7 @@ ${filaLiga}});
     }
 
     // 8. Generadores + auditoría
-    const gens = ['tools/generate-club-index.js', 'tools/generate-fuentes-page.js', 'tools/generate-rankings.js', 'tools/generate-como-corre-stats.js'].filter((g) => existsSync(resolve(ROOT, g)));
+    const gens = ['tools/generate-club-index.js', 'tools/generate-fuentes-page.js', 'tools/generate-rankings.js', 'tools/generate-como-corre-stats.js', 'tools/generate-sponsors.js'].filter((g) => existsSync(resolve(ROOT, g)));
     const salidaGen = [];
     for (const g of gens) {
       const res = runNode(g, []);

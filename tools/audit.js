@@ -798,6 +798,7 @@ const GENERADORES = [
   ['auditoria.mjs',             'data/auditoria/ (quién audita cada balance, to-do 282)', 'auditoria-desfasado'],
   ['entidades.mjs',             'data/entidades/ (estructura de cada club, to-do 280)', 'entidades-desfasado'],
   ['estimar.mjs',               'data/estimados/ (y ningún estimado al lado de un año real)', 'estimados-desfasado'], // to-do 270; sin la carpeta, no chequea
+  ['generate-sponsors.js',      'data/sponsors.js (sponsors y marcas de cada liga)', 'sponsors-desfasado'], // to-do 273; une equipos a clubes del sitio
 ];
 function checkGenerados() {
   for (const [script, que, code] of GENERADORES) {

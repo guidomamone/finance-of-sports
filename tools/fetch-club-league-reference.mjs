@@ -123,8 +123,13 @@ function parseWikitableTeams(tableWikitext) {
     const esEstado = (l) => /^\|\s*rowspan\s*=\s*"?\d+"?[^|]*\|.*\{\{\s*flag(icon)?\s*\|/i.test(l); // también {{nowrap|{{flagicon|...}}}}
     const firstCellLine = lines.find((l) => l.startsWith('|') && !l.startsWith('|}') && !esEstado(l));
     if (!firstCellLine) continue;
-    const cell = firstCellLine.replace(/^\|\s*/, '');
-    const name = cleanWikilinkCell(cell);
+    let name = cleanWikilinkCell(firstCellLine.replace(/^\|\s*/, ''));
+    // (to-do 276) una 1ª celda que es solo un número (la matrícula belga: "| 35" y después "| [[R.S.C. Anderlecht|Anderlecht]]") no es el
+    // club: el club es la celda siguiente. Caso: "2024–25 Belgian Pro League", que daba 16 números.
+    if (name && !/\p{L}/u.test(name)) {
+      const sig = lines.slice(lines.indexOf(firstCellLine) + 1).find((l) => l.startsWith('|') && !l.startsWith('|}') && !esEstado(l));
+      name = sig ? cleanWikilinkCell(sig.replace(/^\|\s*/, '')) : '';
+    }
     if (name) teams.push(name);
   }
   return teams;
@@ -156,6 +161,26 @@ function tablasDeSportsTable(wikitext) {
   }).filter((l) => l.length);
 }
 
+// (to-do 276) LIGAS POR GRUPOS: la Serie C trae una sección por grupo ("== Group A (North) ==" o "==== Group A ... ====" dentro de
+// "Teams"), con una tabla de equipos cada una; la regla de la tabla más grande se queda con un solo grupo, y sin sección "Teams" no
+// encuentra nada ("2023–24 Serie C"). Acá: la mejor tabla de cada grupo (la de más equipos únicos), y la unión de todas. Solo con 2 grupos
+// o más y al menos 8 equipos en cada uno; si una letra aparece dos veces (estadios y tablas de posiciones), vale la que más equipos da.
+function equiposPorGrupo(wikitext) {
+  const heads = [...wikitext.matchAll(/^(=+)\s*(?:Group|Girone)\s+([A-Z])\b[^=\n]*?\1\s*$/gm)];
+  const porLetra = {};
+  for (const h of heads) {
+    const nivel = h[1].length, desde = h.index + h[0].length;
+    const fin = [...wikitext.slice(desde).matchAll(/^(=+)[^=\n].*?\1\s*$/gm)].find((m) => m[1].length <= nivel);
+    const texto = wikitext.slice(desde, fin ? desde + fin.index : undefined);
+    const mejor = extractAllWikitables(texto).map((t) => [...new Set(parseWikitableTeams(t))]).sort((a, b) => b.length - a.length)[0] || [];
+    if (mejor.length > (porLetra[h[2]]?.length || 0)) porLetra[h[2]] = mejor;
+  }
+  const grupos = Object.values(porLetra);
+  if (grupos.length < 2 || grupos.some((g) => g.length < 8)) return null;
+  return { teams: [...new Set(grupos.flat())], grupos: grupos.length, letras: Object.keys(porLetra).join(', ') };
+}
+
+let GRUPOS = 0; // cuántos grupos tuvo la lista (equiposPorGrupo); va en el --json para que listas-lote ajuste el tope de equipos
 let SOLO_JSON = false; // --json (to-do 266): imprime { teams, seccion } y NO escribe la caché; lo usa tools/listas-lote.mjs para la compuerta
 
 let POSICIONES = null; // ver main()
@@ -163,7 +188,7 @@ function guardar(teams, { wikipediaTitle, leagueId, year, pais, lang, seccion })
   // posiciones solo si la tabla tiene EXACTAMENTE tantos equipos como la lista y está completa: una tabla de una zona, de un playoff o
   // con un nombre que no se pudo leer (Paços de Ferreira en "2012–13 Primeira Liga") no es la tabla final; ese año va sin posición
   const posiciones = POSICIONES && !POSICIONES.incompleta && POSICIONES.length === teams.length ? [...POSICIONES] : null;
-  if (SOLO_JSON) { console.log(JSON.stringify({ teams, seccion, posiciones })); return; }
+  if (SOLO_JSON) { console.log(JSON.stringify({ teams, seccion, posiciones, ...(GRUPOS ? { grupos: GRUPOS } : {}) })); return; }
   const sec = { name: seccion };
   mkdirSync(refDir, { recursive: true });
   const cachePath = resolve(refDir, `${pais}.json`);
@@ -222,6 +247,17 @@ async function main() {
   //   COMPUERTA  al menos 4 equipos únicos (si no, no se escribe nada, como antes)
   const sec = extractTeamsSection(wikitext, section);
   const tables = sec ? extractAllWikitables(sec.text) : [];
+  // ESCALÓN "grupos" (to-do 276): si la unión de los grupos es MÁS grande que lo que da la sección de equipos y contiene todo lo que da,
+  // es la liga entera (la sección daba un solo grupo, o nada). Con la misma lista (Série C de Brasil, grupos de una fase) no cambia nada.
+  if (!COMPARAR) {
+    const g = equiposPorGrupo(wikitext);
+    const deSeccion = tables.length ? [...new Set(tables.map((t) => [...new Set(parseWikitableTeams(t))]).sort((a, b) => b.length - a.length)[0])] : [];
+    if (g && g.teams.length > deSeccion.length && deSeccion.every((n) => g.teams.includes(n))) {
+      GRUPOS = g.grupos;
+      guardar(g.teams, { wikipediaTitle, leagueId, year, pais, lang, seccion: `grupos ${g.letras}` });
+      return;
+    }
+  }
   if (!tables.length) {
     if (COMPARAR) { console.log(JSON.stringify({ comparar: true, igual: true, sinTablas: true })); return; } // el escalón 1 no elige tabla: nada que comparar
     const st = equiposDeSportsTable(wikitext);

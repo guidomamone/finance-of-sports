@@ -1,0 +1,86 @@
+{
+  "_comentario": "To-do 273. Estadio, capacidad, sponsor de camiseta (frente) y marca técnica cargados a mano, por club y ejercicio, para lo que tools/estadio-sponsor.mjs no lee de Wikipedia o lee mal. Gana sobre Wikipedia campo por campo. Sin \"fuente\" (la memoria del club, su web, una nota de prensa) no se usa. Un club sin sponsor ese año: \"sponsor\": \"sin sponsor\" con su fuente. Forma: { \"<clubId>\": { \"<año>\": { \"estadio\": \"...\", \"capacidad\": 0, \"sponsor\": \"...\", \"marca\": \"...\", \"fuente\": \"<url>\" } } }",
+  "kryliasovetovsamara-ru": {
+    "2021": {
+      "estadio": "Solidarnost Samara Arena",
+      "capacidad": 44918,
+      "fuente": "https://bigenc.ru/c/solidarnost-samara-arena-b75087"
+    },
+    "2022": {
+      "estadio": "Solidarnost Samara Arena",
+      "capacidad": 44918,
+      "fuente": "https://bigenc.ru/c/solidarnost-samara-arena-b75087"
+    },
+    "2023": {
+      "estadio": "Solidarnost Samara Arena",
+      "capacidad": 44918,
+      "fuente": "https://bigenc.ru/c/solidarnost-samara-arena-b75087"
+    },
+    "2024": {
+      "estadio": "Solidarnost Samara Arena",
+      "capacidad": 44918,
+      "fuente": "https://bigenc.ru/c/solidarnost-samara-arena-b75087"
+    },
+    "2025": {
+      "estadio": "Solidarnost Samara Arena",
+      "capacidad": 44918,
+      "fuente": "https://bigenc.ru/c/solidarnost-samara-arena-b75087"
+    }
+  },
+  "akrontolyatti-ru": {
+    "2024": {
+      "estadio": "Solidarnost Samara Arena",
+      "capacidad": 44918,
+      "fuente": "https://www.vedomosti.ru/sport/football/articles/2025/01/03/1084766-debyut-goda-chastnii-klub-akron-vorvalsya-v-premer-ligu-i-obigral-chempiona"
+    },
+    "2025": {
+      "estadio": "Solidarnost Samara Arena",
+      "capacidad": 44918,
+      "fuente": "https://www.vedomosti.ru/sport/football/articles/2025/01/03/1084766-debyut-goda-chastnii-klub-akron-vorvalsya-v-premer-ligu-i-obigral-chempiona"
+    },
+    "2021": {
+      "estadio": "Kristall (Zhigulyovsk)",
+      "fuente": "https://www.vedomosti.ru/sport/football/articles/2023/08/18/990832-chastnii-klub-iz-tolyatti-rvetsya-v-rpl"
+    },
+    "2022": {
+      "estadio": "Kristall (Zhigulyovsk)",
+      "fuente": "https://www.vedomosti.ru/sport/football/articles/2023/08/18/990832-chastnii-klub-iz-tolyatti-rvetsya-v-rpl"
+    },
+    "2023": {
+      "estadio": "Kristall (Zhigulyovsk)",
+      "fuente": "https://www.vedomosti.ru/sport/football/articles/2023/08/18/990832-chastnii-klub-iz-tolyatti-rvetsya-v-rpl"
+    }
+  },
+  "dynamomakhachkala-ru": {
+    "2024": {
+      "estadio": "Anzhi-Arena",
+      "fuente": "https://www.championat.com/football/_russiapl/tournament/5980/match/1175524/"
+    },
+    "2025": {
+      "estadio": "Anzhi-Arena",
+      "fuente": "https://www.championat.com/football/_russiapl/tournament/6594/match/1251474/"
+    }
+  },
+  "sochi-ru": {
+    "2024": {
+      "estadio": "Fisht Olympic Stadium",
+      "fuente": "https://news.sportbox.ru/Vidy_sporta/Futbol/stats/stadium_1295441877"
+    }
+  },
+  "spartakmoscow-ru": {
+    "2022": {
+      "estadio": "Otkritie Bank Arena",
+      "fuente": "https://www.sport-express.ru/football/rfpl/news/1741358/"
+    },
+    "2023": {
+      "estadio": "Otkritie Bank Arena",
+      "fuente": "https://fomag.ru/news-streem/lukoyl-podal-zayavku-na-registratsiyu-tovarnogo-znaka-lukoyl-arena/"
+    }
+  },
+  "baltikakaliningrad-ru": {
+    "2024": {
+      "estadio": "Rostec Arena",
+      "fuente": "https://www.dp.ru/a/2024/06/04/besprozvannih-dogovorilsja"
+    }
+  }
+}

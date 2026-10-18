@@ -1,0 +1,53 @@
+// GENERADO por tools/estadio-sponsor.mjs --escribir: estadio, capacidad, sponsor de camiseta (frente) y marca técnica de cada
+// club y ejercicio, con su fuente (la revisión exacta de la página de temporada de Wikipedia, o la de tools/contexto-manual.json, que gana).
+// No editar a mano: lo que falta o está mal va a tools/contexto-manual.json.
+window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
+Object.assign(window.CLUB_CONTEXT, {
+  'americadecali-co': {
+    2025: {"estadio":"Pascual Guerrero","capacidad":38588,"sponsor":"Águila","marca":"Le Coq Sportif","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
+  },
+  'atlnacional-co': {
+    2025: {"estadio":"Atanasio Girardot","capacidad":44863,"sponsor":"Betsson","marca":"Nike","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
+  },
+  'boyacachico-co': {
+    2024: {"estadio":"La Independencia","capacidad":20630,"marca":"Geus","temporada":"2024 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341692752"},
+  },
+  'depcali-co': {
+    2025: {"estadio":"Deportivo Cali","capacidad":42000,"sponsor":"Wplay, Pastas La Muñeca, FluoCardent","marca":"Hillside","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
+  },
+  'deportivopereira-co': {
+    2025: {"estadio":"Hernán Ramírez Villegas","capacidad":30297,"sponsor":"Aeropuerto Internacional Matecaña","marca":"Oto","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
+  },
+  'envigado': {
+    2025: {"estadio":"Polideportivo Sur","capacidad":14000,"sponsor":"Pool, Colanta","marca":"Aleta","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
+  },
+  'fortalezaceif-co': {
+    2017: {"temporada":"2017 Categoría Primera B season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1321615242"},
+    2018: {"estadio":"Municipal de Cota","capacidad":4000,"temporada":"2018 Categoría Primera B season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264206"},
+    2019: {"estadio":"Municipal de Cota","capacidad":4000,"temporada":"2019 Categoría Primera B season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1348361981"},
+    2020: {"estadio":"Municipal de Cota","capacidad":4000,"temporada":"2020 Torneo DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1329564901"},
+    2021: {"estadio":"Municipal de Cota","capacidad":4000,"temporada":"2021 Torneo DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1329564875"},
+    2022: {"estadio":"Metropolitano de Techo","capacidad":8000,"temporada":"2022 Torneo DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1333837080"},
+    2023: {"estadio":"Metropolitano de Techo","capacidad":8000,"temporada":"2023 Torneo DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1329564812"},
+    2024: {"estadio":"Metropolitano de Techo","capacidad":10000,"sponsor":"BetPlay, Colanta, Pool, Gencell Pharma","marca":"Kimo","temporada":"2024 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341692752"},
+    2025: {"estadio":"Metropolitano de Techo","capacidad":10000,"sponsor":"Stake","marca":"Go Rigo Go","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
+  },
+  'junior-co': {
+    2025: {"estadio":"Metropolitano Roberto Meléndez","capacidad":46692,"sponsor":"Olímpica, Águila, Tecnoglass","marca":"Adidas","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
+  },
+  'millonarios-co': {
+    2025: {"estadio":"Nemesio Camacho El Campín","capacidad":39512,"sponsor":"Cerveza Andina","marca":"Adidas","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
+  },
+  'oncecaldas': {
+    2022: {"estadio":"Palogrande","capacidad":28678,"temporada":"2022 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376520069"},
+    2023: {"estadio":"Palogrande","capacidad":28678,"sponsor":"Colanta, BetPlay, Wakate","marca":"Hillside","temporada":"2023 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377160814"},
+    2024: {"estadio":"Palogrande","capacidad":31611,"sponsor":"Colanta, BetPlay, Wakate","marca":"Boman","temporada":"2024 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341692752"},
+    2025: {"estadio":"Palogrande","capacidad":31611,"sponsor":"Colanta, BetPlay, Wakate","marca":"Boman","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
+  },
+  'santafe-co': {
+    2025: {"estadio":"Nemesio Camacho El Campín","capacidad":39512,"sponsor":"Colanta, BetPlay","marca":"Fila","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
+  },
+  'unionmagdalena-co': {
+    2018: {"estadio":"Sierra Nevada","capacidad":16000,"temporada":"2018 Categoría Primera B season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264206"},
+  },
+});

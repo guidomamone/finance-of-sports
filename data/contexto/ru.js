@@ -1,0 +1,114 @@
+// GENERADO por tools/estadio-sponsor.mjs --escribir: estadio, capacidad, sponsor de camiseta (frente) y marca técnica de cada
+// club y ejercicio, con su fuente (la revisión exacta de la página de temporada de Wikipedia, o la de tools/contexto-manual.json, que gana).
+// No editar a mano: lo que falta o está mal va a tools/contexto-manual.json.
+window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
+Object.assign(window.CLUB_CONTEXT, {
+  'akhmatgrozny-ru': {
+    2022: {"estadio":"Akhmat-Arena","capacidad":30597,"sponsor":"Akhmat Foundation","marca":"Joma","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016"},
+    2023: {"estadio":"Akhmat-Arena","capacidad":30597,"sponsor":"TBA","marca":"Joma","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
+    2024: {"estadio":"Akhmat-Arena","capacidad":30597,"sponsor":"Akhmat Foundation","marca":"Joma","temporada":"2024–25 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378137266"},
+    2025: {"estadio":"Akhmat-Arena","capacidad":30000,"sponsor":"Akhmat Foundation","marca":"Joma","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
+  },
+  'akrontolyatti-ru': {
+    2021: {"estadio":"Kristall (Zhigulyovsk)","capacidad":1565,"temporada":"2021–22 Russian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376304530","fuenteManual":"https://www.vedomosti.ru/sport/football/articles/2023/08/18/990832-chastnii-klub-iz-tolyatti-rvetsya-v-rpl","manual":["estadio"]},
+    2022: {"estadio":"Kristall (Zhigulyovsk)","capacidad":1565,"temporada":"2022–23 Russian First League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1306958477","fuenteManual":"https://www.vedomosti.ru/sport/football/articles/2023/08/18/990832-chastnii-klub-iz-tolyatti-rvetsya-v-rpl","manual":["estadio"]},
+    2023: {"estadio":"Kristall (Zhigulyovsk)","capacidad":3065,"temporada":"2023–24 Russian First League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1300491265","fuenteManual":"https://www.vedomosti.ru/sport/football/articles/2023/08/18/990832-chastnii-klub-iz-tolyatti-rvetsya-v-rpl","manual":["estadio"]},
+    2024: {"estadio":"Solidarnost Samara Arena","capacidad":44918,"sponsor":"Fonbet","marca":"Jögel","temporada":"2024–25 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378137266","fuenteManual":"https://www.vedomosti.ru/sport/football/articles/2025/01/03/1084766-debyut-goda-chastnii-klub-akron-vorvalsya-v-premer-ligu-i-obigral-chempiona","manual":["estadio","capacidad"]},
+    2025: {"estadio":"Solidarnost Samara Arena","capacidad":44918,"sponsor":"Fonbet","marca":"Jögel","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814","fuenteManual":"https://www.vedomosti.ru/sport/football/articles/2025/01/03/1084766-debyut-goda-chastnii-klub-akron-vorvalsya-v-premer-ligu-i-obigral-chempiona","manual":["estadio","capacidad"]},
+  },
+  'baltikakaliningrad-ru': {
+    2022: {"estadio":"Arena Baltika","capacidad":35212,"temporada":"2022–23 Russian First League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1306958477"},
+    2023: {"estadio":"Kaliningrad Stadium","capacidad":35016,"sponsor":"Rostec","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
+    2024: {"estadio":"Rostec Arena","temporada":"2024–25 Russian First League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341848735","fuenteManual":"https://www.dp.ru/a/2024/06/04/besprozvannih-dogovorilsja","manual":["estadio"]},
+    2025: {"estadio":"Rostec Arena","capacidad":33399,"sponsor":"Rostec","marca":"Jako","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
+  },
+  'cskamoscow-ru': {
+    2021: {"estadio":"VEB Arena","capacidad":30457,"sponsor":"VEB.RF","marca":"Joma","temporada":"2021–22 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376304705"},
+    2022: {"estadio":"VEB Arena","capacidad":30457,"sponsor":"Wildberries","marca":"Joma","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016"},
+    2023: {"estadio":"VEB Arena","capacidad":30457,"sponsor":"Wildberries","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
+    2024: {"estadio":"VEB Arena","capacidad":30114,"sponsor":"Apotheka","marca":"CSKA","temporada":"2024–25 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378137266"},
+    2025: {"estadio":"VEB Arena","capacidad":29071,"sponsor":"Apotheka","marca":"PRIMERA","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
+  },
+  'dynamomakhachkala-ru': {
+    2022: {"estadio":"Dynamo Stadium","capacidad":15200,"temporada":"2022–23 Russian First League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1306958477"},
+    2023: {"estadio":"Trud Stadium","capacidad":5600,"temporada":"2023–24 Russian First League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1300491265"},
+    2024: {"estadio":"Anzhi-Arena","sponsor":"Magnit","marca":"Joma","temporada":"2024–25 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378137266","fuenteManual":"https://www.championat.com/football/_russiapl/tournament/5980/match/1175524/","manual":["estadio"]},
+    2025: {"estadio":"Anzhi-Arena","sponsor":"Magnit","marca":"Dynamo Makhachkala","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814","fuenteManual":"https://www.championat.com/football/_russiapl/tournament/6594/match/1251474/","manual":["estadio"]},
+  },
+  'dynamomoscow-ru': {
+    2021: {"estadio":"VTB Arena","capacidad":26319,"sponsor":"VTB","marca":"Puma","temporada":"2021–22 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376304705"},
+    2022: {"estadio":"VTB Arena","capacidad":26319,"sponsor":"BetBoom","marca":"Puma","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016"},
+    2023: {"estadio":"VTB Arena","capacidad":26319,"sponsor":"BetBoom","marca":"Puma","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
+    2024: {"estadio":"VTB Arena","capacidad":25716,"sponsor":"BetBoom","marca":"Puma","temporada":"2024–25 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378137266"},
+    2025: {"estadio":"VTB Arena","capacidad":25716,"sponsor":"BetBoom","marca":"Bosco","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
+  },
+  'krasnodar-ru': {
+    2021: {"estadio":"Krasnodar Stadium","capacidad":34291,"sponsor":"Winline","marca":"Puma","temporada":"2021–22 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376304705"},
+    2022: {"estadio":"Krasnodar Stadium","capacidad":34291,"sponsor":"Winline","marca":"Puma","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016"},
+    2023: {"estadio":"Krasnodar Stadium","capacidad":34291,"sponsor":"Winline","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
+    2024: {"estadio":"Krasnodar Stadium","capacidad":35179,"sponsor":"Winline","marca":"Krasnodar","temporada":"2024–25 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378137266"},
+    2025: {"estadio":"Ozon Arena","capacidad":33395,"sponsor":"Winline","marca":"Krasnodar","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
+  },
+  'kryliasovetovsamara-ru': {
+    2021: {"estadio":"Solidarnost Samara Arena","capacidad":44918,"sponsor":"Sogaz","marca":"Puma","temporada":"2021–22 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376304705","fuenteManual":"https://bigenc.ru/c/solidarnost-samara-arena-b75087","manual":["estadio","capacidad"]},
+    2022: {"estadio":"Solidarnost Samara Arena","capacidad":44918,"sponsor":"Fonbet","marca":"Puma","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016","fuenteManual":"https://bigenc.ru/c/solidarnost-samara-arena-b75087","manual":["estadio","capacidad"]},
+    2023: {"estadio":"Solidarnost Samara Arena","capacidad":44918,"sponsor":"Fonbet","marca":"Puma","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312","fuenteManual":"https://bigenc.ru/c/solidarnost-samara-arena-b75087","manual":["estadio","capacidad"]},
+    2024: {"estadio":"Solidarnost Samara Arena","capacidad":44918,"sponsor":"Fonbet","marca":"Puma","temporada":"2024–25 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378137266","fuenteManual":"https://bigenc.ru/c/solidarnost-samara-arena-b75087","manual":["estadio","capacidad"]},
+    2025: {"estadio":"Solidarnost Samara Arena","capacidad":44918,"sponsor":"Fonbet","marca":"Kelme","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814","fuenteManual":"https://bigenc.ru/c/solidarnost-samara-arena-b75087","manual":["estadio","capacidad"]},
+  },
+  'lokomotivmoscow-ru': {
+    2021: {"estadio":"RZD Arena","capacidad":27320,"sponsor":"RZhD","marca":"Adidas","temporada":"2021–22 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376304705"},
+    2022: {"estadio":"RZD Arena","capacidad":27320,"sponsor":"RZhD","marca":"Adidas","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016"},
+    2023: {"estadio":"RZD Arena","capacidad":27320,"sponsor":"RZD","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
+    2024: {"estadio":"RZD Arena","capacidad":27032,"sponsor":"Russian Railways","marca":"Lokomotiv","temporada":"2024–25 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378137266"},
+    2025: {"estadio":"RZD Arena","capacidad":27084,"sponsor":"RZD","marca":"Lokomotiv","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
+  },
+  'orenburg-ru': {
+    2021: {"estadio":"Gazovik Stadium","capacidad":7520,"temporada":"2021–22 Russian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376304530"},
+    2022: {"estadio":"Gazovik Stadium","capacidad":10046,"marca":"Adidas","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016"},
+    2023: {"estadio":"Gazovik Stadium","capacidad":10046,"sponsor":"TBA","marca":"Adidas","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
+    2024: {"estadio":"Gazovik Stadium","capacidad":10046,"sponsor":"EcoGas","marca":"Adidas","temporada":"2024–25 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378137266"},
+    2025: {"estadio":"Gazovik Stadium","capacidad":10046,"sponsor":"EcoGas","marca":"PRIMERA","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
+  },
+  'parinizhnynovgorod-ru': {
+    2021: {"estadio":"Nizhny Novgorod Stadium","capacidad":44899,"sponsor":"Parimatch","marca":"Jako","temporada":"2021–22 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376304705"},
+    2022: {"estadio":"Nizhny Novgorod Stadium","capacidad":44899,"sponsor":"Pari","marca":"Jako","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016"},
+    2023: {"estadio":"Nizhny Novgorod Stadium","capacidad":44899,"sponsor":"PARI","marca":"Jako","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
+    2024: {"estadio":"Nizhny Novgorod Stadium","capacidad":44242,"sponsor":"Pari","marca":"Jako","temporada":"2024–25 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378137266"},
+    2025: {"estadio":"Sovcombank Arena","capacidad":42532,"sponsor":"Pari","marca":"Jako","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
+  },
+  'rostov-ru': {
+    2021: {"estadio":"Rostov Arena","capacidad":45000,"sponsor":"TNS Energo","marca":"Puma","temporada":"2021–22 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376304705"},
+    2022: {"estadio":"Rostov Arena","capacidad":45000,"sponsor":"TNS EnergoBetBoom","marca":"Puma","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016"},
+    2023: {"estadio":"Rostov Arena","capacidad":45000,"sponsor":"Fonbet; TNS energo; Samolet","marca":"Puma","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
+    2024: {"estadio":"Rostov Arena","capacidad":43472,"sponsor":"TNS Energo Rostov-on-Don","marca":"Puma","temporada":"2024–25 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378137266"},
+    2025: {"estadio":"Rostov Arena","capacidad":45415,"sponsor":"Fonbet","marca":"Puma","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
+  },
+  'rubinkazan-ru': {
+    2021: {"estadio":"Ak Bars Arena","capacidad":45093,"sponsor":"TAIF","marca":"Jako","temporada":"2021–22 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376304705"},
+    2022: {"estadio":"Ak Bars Arena","capacidad":45379,"temporada":"2022–23 Russian First League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1306958477"},
+    2023: {"estadio":"Ak Bars Arena","capacidad":45093,"sponsor":"Kazan Orgsintez","marca":"Jako","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
+    2024: {"estadio":"Ak Bars Arena","capacidad":42398,"sponsor":"Kazanorgsintez","marca":"Rubin","temporada":"2024–25 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378137266"},
+    2025: {"estadio":"Ak Bars Arena","capacidad":43284,"sponsor":"Kazanorgsintez","marca":"Rubin","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
+  },
+  'sochi-ru': {
+    2021: {"estadio":"Fisht Olympic Stadium","capacidad":47659,"marca":"Puma","temporada":"2021–22 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376304705"},
+    2022: {"estadio":"Fisht Olympic Stadium","capacidad":47659,"marca":"Puma","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016"},
+    2023: {"estadio":"Fisht Olympic Stadium","capacidad":47659,"sponsor":"Liga Stavok","marca":"Puma","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
+    2024: {"estadio":"Fisht Olympic Stadium","temporada":"2024–25 Russian First League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341848735","fuenteManual":"https://news.sportbox.ru/Vidy_sporta/Futbol/stats/stadium_1295441877","manual":["estadio"]},
+    2025: {"estadio":"Fisht Olympic Stadium","capacidad":45994,"sponsor":"Betcity","marca":"Casa Sportiva","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
+  },
+  'spartakmoscow-ru': {
+    2022: {"estadio":"Otkritie Bank Arena","sponsor":"Lukoil","marca":"Nike","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016","fuenteManual":"https://www.sport-express.ru/football/rfpl/news/1741358/","manual":["estadio"]},
+    2023: {"estadio":"Otkritie Bank Arena","sponsor":"Lukoil","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312","fuenteManual":"https://fomag.ru/news-streem/lukoyl-podal-zayavku-na-registratsiyu-tovarnogo-znaka-lukoyl-arena/","manual":["estadio"]},
+    2024: {"estadio":"Lukoil Arena","capacidad":44929,"sponsor":"Lukoil","marca":"Jögel","temporada":"2024–25 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378137266"},
+    2025: {"estadio":"Lukoil Arena","capacidad":44897,"sponsor":"Lukoil","marca":"Jögel","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
+  },
+  'zenit-ru': {
+    2021: {"estadio":"Krestovsky Stadium","capacidad":67800,"sponsor":"Gazprom","marca":"Nike","temporada":"2021–22 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376304705"},
+    2022: {"estadio":"Krestovsky Stadium","capacidad":67800,"sponsor":"Gazprom","marca":"Joma","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016"},
+    2023: {"estadio":"Krestovsky Stadium","capacidad":67800,"sponsor":"Gazprom","marca":"Joma","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
+    2024: {"estadio":"Krestovsky Stadium","capacidad":60228,"sponsor":"Gazprom","marca":"Kelme","temporada":"2024–25 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378137266"},
+    2025: {"estadio":"Gazprom Arena","capacidad":60177,"sponsor":"Gazprom","marca":"Jögel","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
+  },
+});
