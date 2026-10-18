@@ -30,7 +30,7 @@
 
 ## Qué queda (para TODO)
 
-- 280: el registro tiene 2 clubes. Faltan los otros ejercicios de Chelsea e Inter (Suning antes de 2024), Portugal (los avisos de
+- 280: el registro tiene 2 clubes (ya es el to-do 294 en main, commit 275d3ec7a). Faltan los otros ejercicios de Chelsea e Inter (Suning antes de 2024), Portugal (los avisos de
   `node tools/entidades.mjs`), los casos de `cola-borradores/altas-2026-10-17.md` cuando esos clubes estén publicados, y los grupos con dos o
   más clubes cargados (City Football Group, Marinakis, Friedkin, 777 Partners, Eagle Football).
 - CONTRATO CON fos-pantallas (acordado 2026-10-18; lo engancha pantallas después de mergear esta rama):
