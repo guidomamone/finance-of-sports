@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 722 — Merge de pantallas: quién auditó, en Finanzas (2026-10-18)
+
+`node tools/worktree.mjs mergear pantallas`, sin conflictos, P0 0 / P1 0, ASSET_V 1267.
+
+- To-do 282, Finanzas: tarjeta "Quién auditó estos números" (`js/auditoria.js`): una fila por ejercicio con el auditor, el dictamen
+  como etiqueta de color, la duda sobre la continuidad aparte y "ver en el balance". Sin dato, "Todavía no lo revisamos"; sin ningún
+  dato del club, escondida. En Ligas espera el balance de alguna entidad organizadora (to-do 295).
+
 ## Versión 721 — Merge de finanzas: ingresos de las otras entidades y el dato de auditoría (2026-10-18)
 
 `node tools/worktree.mjs mergear finanzas` (lo generado con main y regenerado), P0 0 / P1 0; después, los dos commits de sesiones de

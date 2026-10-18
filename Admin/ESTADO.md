@@ -147,7 +147,8 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   `data/entidades/` (lo genera `tools/entidades.mjs` del registro `Admin/registros/entidades.jsonl`, con cita por línea). Hoy hay pocos
   clubes en el registro (to-do 294). Donde el registro los tiene, la tarjeta muestra también los ingresos de la otra entidad del club.
 - Quién auditó cada balance: `Admin/registros/auditoria.jsonl` (con citas) y `tools/auditoria.mjs`, que genera `data/auditoria/` (por
-  ahora un piloto; to-do 282). Un club-año sin línea es "no sabemos", no "sin informe".
+  ahora un piloto; to-do 282). En Finanzas, la tarjeta "Quién auditó estos números"; un club-año sin línea dice "Todavía no lo
+  revisamos", no "sin informe", y sin ningún dato del club la tarjeta se esconde.
 - Finanzas muestra varios ejercicios a la vez: el título es el club; cards de ejercicios (default, los últimos 5 con balance) y
   fila de gestión; KPIs con comparación y sparkline; gráfico de evolución arriba de la tabla; Estado de resultados y Deuda con una
   columna por año (rubro desplegable, % del total, presupuesto al lado del balance); valores ajustados por inflación (deflactor del
