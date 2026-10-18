@@ -48,3 +48,5 @@
 - `Ligas/España/LaLiga/laliga-cartera-cuentas-consolidadas-2024-25.pdf`, `laliga-cuentas-anuales-consolidadas-2024-25.pdf`,
   `laliga-informe-auditoria-consolidado-2024-25.pdf`
 - `Ligas/Japón/J.League/jleague-kashitaishohyo-2025.pdf`, `jleague-sonekikeisansho-2025.pdf`, `jleague-kansahokoku-2025.pdf`
+
+## Después del merge del 2026-10-18 (2)

@@ -238,9 +238,12 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    exija la línea al dar de alta un club (fos-pipeline). En Ligas ya está la tarjeta "Las cuentas de la liga": cada entidad que entra
    por el 295 aparece sola.
 295. BALANCES DE LAS ENTIDADES QUE ORGANIZAN LAS LIGAS (fos-ligas; aclaración de Guido, 2026-10-18). Hecho: Premier League 2024-25
-   (Deloitte, sin salvedades) en `Ligas/` y en `data/auditoria/_ligas.js`. Sigue, en este orden: LaLiga, Lega Serie A, J.League, Liga
-   Portugal, AFA, CBF, EFL y el resto. DFL: el Konzernabschluss pide login en el Unternehmensregister (gestión de Guido) y el sitio tiene
-   captcha; probar antes el Bundesanzeiger. AUF (Uruguay): en espera, el sitio no tiene liga uruguaya (Guido).
+   (Deloitte), LaLiga 2024-25 (LNFP, Netadia) y J.League 2025 (Grant Thornton Taiyo), en `Ligas/` y en `data/auditoria/_ligas.js`. Falta:
+   (a) CBF: Guido baja el PDF 2025 desde su navegador (link en `Admin/sourcing/Ligas/cbf.md`; el CDN no deja desde acá), después
+   transcribir y cargar la línea; (b) Lega Serie A, Liga Portugal y AFA no publican el balance (existe y se audita): decidir si se les
+   escribe, y para la AFA si se pide a la IGJ (Guido); (c) seguir con EFL y el resto. DFL: el Konzernabschluss pide login en el
+   Unternehmensregister (gestión de Guido) y el sitio tiene captcha; probar antes el Bundesanzeiger. AUF (Uruguay): en espera, el sitio no
+   tiene liga uruguaya (Guido).
 283. VÅLERENGA Y AALESUND: SUMAR EL AS Y EL FLI EN UN SOLO AÑO (pedido de Guido, 2026-10-17). El AS tiene los ingresos comerciales y el
    FLI los sueldos, que el AS le paga como transferencia (Vålerenga Elite 2023: 85,4 M de sueldos; el AS le transfiere 87,5 M); ninguno
    consolida. Sumar los dos documentos sin contar dos veces la transferencia, con una nota en Finanzas que explique la suma.

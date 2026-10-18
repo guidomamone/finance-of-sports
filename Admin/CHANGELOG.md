@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 740 — Merge de ligas (2026-10-18)
+
+ASSET_V 1296, `fuentes.html` regenerada, P0 0 / P1 0.
+
+- To-do 295: LaLiga 2024-25 (cuentas consolidadas de la LNFP, auditor Netadia Europa, sin salvedades; `es-laliga` y `es-segunda`) y
+  J.League 2025 (koeki-info.go.jp, Grant Thornton Taiyo, opinión limpia; `jp-j1`) en `Ligas/` y en `LIGA_AUDITORIA`.
+- Notas de sourcing: Lega Serie A, Liga Portugal y AFA (el balance existe y se audita, pero no se publica); CBF (los links están; el CDN
+  no deja bajarlos desde acá).
+
 ## Versión 739 — Merge de proyecto: auditoría programada (2026-10-18)
 
 - To-do 300: tarea programada `fos-auditoria-semanal` (lunes 8:10, carpeta principal, fuera del repo): `audit.js --quiet`, dashboard de
