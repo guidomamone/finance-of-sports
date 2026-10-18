@@ -175,6 +175,68 @@ Generados/Estonia/Tallinna Kalev/aruanne-2024.categorias.json (escalón de cada 
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/Tallinna Kalev/aruanne-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/Tallinna Kalev/aruanne-2022.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Sihtfinantseerimine tegevuskuludeks | pág. 14, precedente |
+| 2 | Mittesihtotsatarbelised annetused ja toetused | pág. 14, precedente |
+| 3 | Renditulud staadionite või selle rajatiste väljarentimisest | pág. 15, Jev 1 |
+| 4 | Piletitulu | pág. 15, precedente |
+| 5 | Tulu turniiride korraldamisest | pág. 15, precedente |
+| 6 | Tulu mängijaõiguste müügist | pág. 15, precedente |
+| 7 | Klubi peasponsorilt saadud tulu | pág. 15, precedente |
+| 8 | Tulu teistelt sponsoritelt | pág. 15, precedente |
+| 9 | Muud tulud | pág. 15, Jev 1 |
+| 10 | Muud tulud | pág. 5, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Sihtotstarbeliselt finantseeritud projektide otsesed kulud | pág. 5, Jev 1 |
+| 2 | Sportlasetoetus | pág. 15, precedente |
+| 3 | Sportlase stipendium | pág. 15, precedente |
+| 4 | Üür ja rent | pág. 16, Jev 0.98 |
+| 5 | Tööjõurent | pág. 16, precedente |
+| 6 | Elektrienergia | pág. 16, precedente |
+| 7 | Soojusenergia | pág. 16, precedente |
+| 8 | Kütus | pág. 16, Jev 0.99 |
+| 9 | Veevarustusteenused | pág. 16, precedente |
+| 10 | Mitmesugused bürookulud | pág. 16, precedente |
+| 11 | Lähetuskulud | pág. 16, precedente |
+| 12 | Koolituskulud | pág. 16, precedente |
+| 13 | Kulu ebatõenäoliselt laekuvatest nõuetest | pág. 16, Jev 0.99 |
+| 14 | Reklaam | pág. 16, precedente |
+| 15 | Liikmemaksud | pág. 16, precedente |
+| 16 | Proportsiooniga tagastamatu käibemaks | pág. 16, precedente |
+| 17 | Staadioni ja saali rent | pág. 16, precedente |
+| 18 | Transport | pág. 16, precedente |
+| 19 | Meditsiinitarvikud- ja teenused | pág. 16, precedente |
+| 20 | Spordivarustus | pág. 16, precedente |
+| 21 | Isikliku sõiduauto kasutus | pág. 16, precedente |
+| 22 | Mängijate soetuskulud | pág. 16, Claude 0.85 |
+| 23 | Laagrite-ja turniiride korralduskulud | pág. 16, precedente |
+| 24 | Muud | pág. 16, precedente |
+| 25 | Tööjõukulud | pág. 5, precedente |
+| 26 | Põhivarade kulum ja väärtuse langus | pág. 5, precedente |
+| 27 | Muud kulud | pág. 5, precedente |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L114) (Claude 2026-10-18)
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Televisión. sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2021
 
 ### Ingresos
@@ -383,4 +445,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Tallinna Kalev/aruanne-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### tallinnakalev-ee-aruanne-2022
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Tallinna Kalev/aruanne-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
