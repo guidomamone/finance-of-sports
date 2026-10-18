@@ -296,3 +296,10 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
   `compare:<a> __vs__ <b>`), todas en 1. Sin resultado: "atalanta" (ya cargado: Atalanta entró el 2026-10-17), "allipuvis",
   "celular" y "triangula" (ruido). Comparar: un par. Web Analytics: 90 visitas muestreadas en 30 días (US, IN, RU, CA), unas 9 reales.
   Todavía no hay un club que se busque y falte; el embudo de Mixpanel no se puede leer desde acá (el conector solo trae eventos en vivo).
+- Para TODO: borrar el 254 y el 243 (Guido: "nadie usa el site, así que por ahora no hagamos nada al respecto").
+
+### Qué cambió (para CHANGELOG), después
+
+- Finanzas: los saltos del índice a Auditoría y a Citar y descargar dejaban el título de la tarjeta debajo del índice fijo. Les faltaba
+  el `scroll-margin-top` de las demás (`css/styles.css`); se sumó a `#finContexto`, `#finEstructura`, `#finAuditoria` y `#finCitar`.
+  Probado en Racing a 1400 px y en teléfono: todas quedan a unos 20 px del índice. ASSET_V 1298.

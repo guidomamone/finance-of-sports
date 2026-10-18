@@ -518,7 +518,7 @@
   .fin-indice a{padding:10px 14px;font-size:14px;color:#45474d;text-decoration:none;white-space:nowrap;border-bottom:3px solid transparent;}
   .fin-indice a:hover{color:var(--azul);}
   .fin-indice a.activo{color:var(--azul);font-weight:700;border-bottom-color:var(--oro);}
-  #finTrendCard,#finPL,#finDeuda,#ligaSimWrap,#finanzasFuentesCard{scroll-margin-top:120px;}
+  #finTrendCard,#finPL,#finDeuda,#finContexto,#ligaSimWrap,#finEstructura,#finAuditoria,#finCitar,#finanzasFuentesCard{scroll-margin-top:120px;}
   @media (max-width:700px){ .fin-indice{top:56px;} }
   /* Entre 701 y 900 el header tiene varias filas y alto variable: ahí el índice no queda fijo. */
   @media (min-width:701px) and (max-width:900px){ .fin-indice{position:static;} }
