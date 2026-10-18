@@ -146,6 +146,34 @@
   siguen, sin cambios. Marítimo 2021-2025 y Porto 2020, 2024 y 2025 suman sus juros; Belenenses 2025 y Vizela 2023-2024 tienen el renglón en
   "-" o 0,00; la línea de Tondela 2021 es el "Total" de su lista, que ya incluye "Juros obtidos"; Vitória 2022, Braga 2021 y 2023, Académica
   2023 y Chaves 2023 no traen ese renglón.
+- Qué informe del auditor va en la línea de auditoría cuando el documento trae dos (individual y consolidado): el del perímetro que publica
+  el sitio (Guido, 2026-10-18, "coherencia de perímetro").
+
+### Qué cambió (para CHANGELOG)
+
+- To-do 282 a, Lazio (perímetro consolidado): los informes del auditor del consolidado de 2014-2016 y 2018-2025, de la API de documentos
+  del club (`sslazio.it/api/widget/attachment?id_category=37|38`; 2019-20 de Wayback), transcriptos con Mistral y cada cita cotejada con una
+  segunda lectura (Tesseract, y la imagen de la firma de 2021). PwC hasta 2018, Deloitte desde 2019; todos sin salvedades y sin
+  incertidumbre material (2022: ÉNFASIS CONTINUIDAD, la continuidad es un aspecto clave de la revisión). Lazio 2025 pasa a citar el informe
+  del consolidado (`Lazio-relazione-revisione-consolidata-2024-25.md`, que ya estaba). También se transcribieron los del individual (no se
+  citan; sus PDF, a `documentos-descartados.txt`).
+- To-do 282 a, Juventus (perímetro individual): 2022 y 2024, del selector de Investor Relations del club ("Report on the audit of the
+  financial statements", con texto); los dos con salvedades (Deloitte). Juventus 2025 pasa a citar el informe individual (antes, el del
+  consolidado).
+- To-do 282 a, Roma (perímetro consolidado): 2023-2025 del sitio del club (Deloitte; BDO Italia desde 2025; ÉNFASIS CONTINUIDAD, sin
+  incertidumbre material) y 2013 de Wayback (BDO S.p.A.).
+- FALTA EN EL PDF: 88 a 72. Los PDF nuevos, copiados a la carpeta principal (rsync `--no-links`). ASSET_V 1295 en la rama.
+
+### Qué queda (para TODO)
+
+- 282 a: Lazio 2017 (las dos capturas de Wayback están truncadas en 1 MiB y cifradas; el sitio da 404 y 1Info pide cuenta: candidato a
+  mail al club). Lazio 2026 cita el informe individual: falta transcribir `Lazio-relazione-revisione-consolidata-2025-26.pdf` (escaneo,
+  9 págs.) y pasar la línea al consolidado. Lazio 2006 y 2011-2013 figuran `sin_informe`, pero el informe del consolidado está en la API
+  del club (2011-2013) y en Wayback (2006).
+- 282 a: Roma 2022, el informe del consolidado (el sitio lista "consolidato" pero el link baja el del individual; Wayback no lo tiene).
+- 282 a: Juventus figura con perímetro "individual" en su evidencia; si el sitio publicara el consolidado, las líneas de 2022-2025 cambian
+  de informe (los dos están bajados, `Juventus-report-audit-consolidated-financial-statements-*`).
+- 282 a, el resto de Italia: Napoli 8, Torino 8, Hellas Verona 6, Cremonese 4, Bologna 1.
 
 ### Gotcha (para la skill de arranque, `worktree.md`; no la edité sin tu ok)
 
