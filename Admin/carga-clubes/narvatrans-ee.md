@@ -165,6 +165,59 @@ Generados/Estonia/Narva Trans/aruanne-2024.categorias.json (escalón de cada fil
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/Narva Trans/aruanne-2020.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/Narva Trans/aruanne-2020.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Sihtfinantseerimine tegevuskuludeks | pág. 12, Jev 0.97 |
+| 2 | Omavalitsuse toetus | pág. 12, Jev 1 |
+| 3 | EJLiidu toetused | pág. 12, precedente |
+| 4 | UEFA solidaarsustoetus | pág. 12, precedente |
+| 5 | muud | pág. 12, precedente |
+| 6 | Reklaam | pág. 13, Jev 1 |
+| 7 | Sponsorlus-ja reklaamitulu | pág. 13, Jev 1 |
+| 8 | Kaubandustegevus | pág. 13, precedente |
+| 9 | Muud | pág. 13, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Elektrienergia | pág. 13, Jev 1 |
+| 2 | Soojusenergia | pág. 13, Jev 0.99 |
+| 3 | Kütus | pág. 13, Jev 0.99 |
+| 4 | Veevarustusteenused | pág. 13, Jev 1 |
+| 5 | Mitmesugused bürookulud | pág. 13, Jev 0.91 |
+| 6 | Koolituskulud | pág. 13, Claude 0.8 |
+| 7 | Riiklikud ja kohalikud maksud | pág. 13, Jev 1 |
+| 8 | Mangude ja treeningute kulud | pág. 13, Claude 0.8 |
+| 9 | Varustuskulud | pág. 13, precedente |
+| 10 | Majanduskulud | pág. 13, Jev 0.96 |
+| 11 | Med kulud | pág. 13, Claude 0.85 |
+| 12 | Turniirikulud | pág. 13, Jev 1 |
+| 13 | Muud | pág. 13, Jev 1 |
+| 14 | Palgakulu | pág. 14, precedente |
+| 15 | Sotsiaalmaksud | pág. 14, Jev 0.98 |
+| 16 | töötuskindlustusmaks eetevõtest | pág. 14, precedente |
+| 17 | Sportlase toetus | pág. 14, Claude 0.85 |
+| 18 | Muud kulud | pág. 5, precedente |
+
+### Meta
+
+```text
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L114) (Claude 2026-10-18)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Televisión. sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Estadio. fila en 0 (L438); mismo caso que el 2025 del club (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2019
 
 ### Ingresos
@@ -244,4 +297,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Narva Trans/aruanne-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### narvatrans-ee-aruanne-2020
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Narva Trans/aruanne-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Estonia/Narva Trans/aruanne-2023.pdf",
- "generado": "2026-10-18T18:34:33.457Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Kooli poolt renditud hoonete ja rajatist\" -> admin_general_expense 0.7"
-  }
- ],
+ "generado": "2026-10-18T18:44:38.950Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-18: 2021 y 2024 traen los dos estados; la controlada es la escuela de fútbol del club (Jalgpallikool Narva Trans): consolidado (CONVENCIONES-DATOS, regla del perímetro, punto 2). Reemplaza el individual de perimetro-senales (subagente Sonnet, revisado por Claude 2026-10-18))",
   "gestión: ningún presidente confirmado cubre 2023 (cierre 2023-12-31); pregunta en la cola (no frena)"
@@ -295,9 +290,9 @@
     "amountNative": -0.0725,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Turundus-, sponsorlus- ja reklaamikulud",
@@ -854,11 +849,11 @@
    "origen": "verificacion (nota que desglosa \"Mitmesugused tegevuskulud\")",
    "signoFijo": 0.0725,
    "cat": "admin_general_expense",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Costos de edificios e instalaciones alquilados por la escuela: igual que 'Klubile kuuluvate ja tema poolt renditud hoonete ja rajatistega seotud kulud' de Narva 2025 (admin_general_expense, respuesta de Guido). [Kooli poolt renditud hoonete ja rajatistega seotud kulud 72 500 (aruanne-2023.md Lisa de gastos, L575)]",
    "destino": "expense",
    "amountNative": -0.0725
   },
@@ -1084,8 +1079,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 16,
   "lineasGasto": 20,
   "metaFilas": 1,

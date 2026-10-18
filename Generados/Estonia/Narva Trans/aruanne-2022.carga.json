@@ -1,19 +1,10 @@
 {
  "pdf": "Clubes/Estonia/Narva Trans/aruanne-2022.pdf",
- "generado": "2026-10-18T18:34:33.376Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Treeningtasu\" -> youth_football 0.55"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-18T18:44:38.855Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-18: 2021 y 2024 traen los dos estados; la controlada es la escuela de fútbol del club (Jalgpallikool Narva Trans): consolidado (CONVENCIONES-DATOS, regla del perímetro, punto 2). Reemplaza el individual de perimetro-senales (subagente Sonnet, revisado por Claude 2026-10-18))",
-  "materialidad: \"Kooli poolt renditud hoonete ja rajatistega seotud kulud\" va como admin_general_expense con 0.7 (las dudas de gastos suman 0.10% de su lado)",
+  "\"Televisión\" en 0: real, por ajuste manual (2026-10-18, sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18))",
   "gestión: ningún presidente confirmado cubre 2022 (cierre 2022-12-31); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -34,13 +25,13 @@
    },
    {
     "rawLabel": "Treeningtasu",
-    "normalizedCategory": "youth_football",
+    "normalizedCategory": "member_dues",
     "amountNative": 0.070651,
     "disclosureLevel": "aggregated",
     "_pag": 12,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sihtfinantseerimine tegevuskuludeks",
@@ -260,9 +251,9 @@
     "amountNative": -0.000685,
     "disclosureLevel": "aggregated",
     "_pag": 13,
-    "_escalon": "materialidad",
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.10% (≤ 1%) y esta tiene 0.7"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Muud",
@@ -406,6 +397,16 @@
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Narva Trans/aruanne-2022.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
   }
  ],
  "seleccion": {
@@ -436,12 +437,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Liikmetelt saadud tasud\")",
    "signoFijo": 0.070651,
-   "cat": "youth_football",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "member_dues",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Treeningtasu' es un INGRESO dentro de Lisa 5 Liikmetelt saadud tasud (junto a Liikmemaksud 16.000; 86.651 en total, igual que el renglón del estado). No es fútbol juvenil. Precedente cerrado: Narva 2025 'Treeningutasu' 100.436 -> member_dues. La misma cifra del 2021 (56.015) ya va a member_dues (ve [Treeningtasu 70 651 (aruanne-2022.md Lisa 5, L442); Liikmetelt saadud tasud 86 651 (L141)]",
    "destino": "revenue",
    "amountNative": 0.070651
   },
@@ -772,11 +773,11 @@
    "origen": "verificacion (nota que desglosa \"Mitmesugused tegevuskulud\")",
    "signoFijo": 0.000685,
    "cat": "admin_general_expense",
-   "conf": 0.7,
-   "escalon": "materialidad",
-   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.10% (≤ 1%) y esta tiene 0.7",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": false,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Costos de edificios e instalaciones alquilados por la escuela: igual que 'Klubile kuuluvate ja tema poolt renditud hoonete ja rajatistega seotud kulud' de Narva 2025 (admin_general_expense, respuesta de Guido). [Kooli poolt renditud hoonete ja rajatistega seotud kulud 72 500 (aruanne-2023.md Lisa de gastos, L575)]",
    "destino": "expense",
    "amountNative": -0.000685
   },
@@ -936,12 +937,6 @@
    "destino": "netInterest"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"Liikmetelt saadud tasud\")": "gastos con signo",
@@ -1030,8 +1025,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 12,
   "lineasGasto": 20,
   "metaFilas": 3,
