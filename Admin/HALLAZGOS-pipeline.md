@@ -133,6 +133,12 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   Admin/mediciones/perimetro-a2-medicion-recorte-232e.txt. El contexto alrededor de los títulos le sirve a Claude para ubicar el estado.
 
 ## Conocido, sin daño hoy (no se trabaja salvo que algo cambie)
+- **Renglones NBB "(+)/(-)" impresos negativos (to-do 298 b2, 2026-10-18): no se reproduce.** El onboarding de Bélgica vio el 631/4 de
+  Beerschot 2025 (−64.834) entrar positivo y necesitó un ajuste `fila`. Con el código de hoy (y el 298 b1), Beerschot sin ese ajuste ni los
+  de signo financiero da el renglón negativo, abierto por su nota ("Teruggenomen" −8.210 y −56.624, L817 y L820), y cierra con la lectura 5;
+  OH Leuven 2025 da el 631/4 y el 635/8 negativos con la lectura 4. La propuesta de cargar.mjs lleva el signo de la verificación (`signoFijo`).
+  No se pudo correr la propuesta de Beerschot acá (las categorías tienen que rehacerse con los rubros nuevos). Retomar si un documento NBB
+  nuevo vuelve a necesitar un ajuste `fila` de signo para un renglón "(+)/(-)".
 
 Defectos medidos que hoy no afectan ningún dato publicado ni frenan nada. Cada uno dice cuándo se retoma; si pasa, vuelve a `Admin/TODO.md`.
 Salieron del TODO el 2026-10-15 (pedido de Guido: hacían ruido en la lista).
