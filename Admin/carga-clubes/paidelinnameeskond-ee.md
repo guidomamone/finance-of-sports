@@ -106,6 +106,60 @@ tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-18): null, SIN VERIFICAR (sin caché de rosters para ee (tools/club-league-reference/ee.json)).
 ```
 
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/Paide Linnameeskond/aruanne-2019.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/Paide Linnameeskond/aruanne-2019.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Liikmetelt saadud tasud | pág. 6, precedente |
+| 2 | Sihtfinantseerimine tegevuskuludeks | pág. 13, precedente |
+| 3 | Järvamaa Maavalitsus | pág. 13, Jev 0.97 |
+| 4 | Tapa Vallavalitsus | pág. 13, Jev 1 |
+| 5 | Paide Linnavalitsus | pág. 13, Jev 0.98 |
+| 6 | Türi Spordikluubide Liit MTÜ | pág. 13, precedente |
+| 7 | LHV | pág. 13, precedente |
+| 8 | Spordikoolituse ja-teabe SA Spordikoolituse ja-teabe S | pág. 13, precedente |
+| 9 | Türi Vallavalitsus | pág. 13, Jev 1 |
+| 10 | Järvamaa Omavalitsuse Liit | pág. 13, Jev 0.99 |
+| 11 | UEFA solidarsus | pág. 13, Claude 0.9 |
+| 12 | UEFA solidarsus | pág. 13, Claude 0.9 |
+| 13 | Väljaku äärde ja reklaamtahvlitele paigaldatud reklaam | pág. 14, precedente |
+| 14 | Tulud mängijaõiguste müügist | pág. 14, precedente |
+| 15 | Muud tulud | pág. 6, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Sihtotstarbeliselt finantseeritud projektide otsesed kulud | pág. 6, precedente |
+| 2 | Jagatud annetused ja toetused | pág. 6, Jev 0.98 |
+| 3 | Üür ja rent | pág. 14, Jev 0.98 |
+| 4 | Mitmesugused bürookulud | pág. 14, Jev 0.93 |
+| 5 | Lähetuskulud | pág. 14, precedente |
+| 6 | Koolituskulud | pág. 14, precedente |
+| 7 | Riiklikud ja kohalikud maksud | pág. 14, Jev 1 |
+| 8 | Kulu ebatõenäoliselt laekuvatest nõuetest | pág. 14, Jev 0.98 |
+| 9 | mängude ja treeningute kulud | pág. 14, precedente |
+| 10 | Palgakulu | pág. 14, precedente |
+| 11 | Sotsiaalmaksud | pág. 14, precedente |
+| 12 | Põhivarade kulum ja väärtuse langus | pág. 6, Jev 1 |
+| 13 | Muud kulud | pág. 6, precedente |
+
+### Meta
+
+```text
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L159) (Claude 2026-10-18)
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Televisión. sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Estadio. sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## Fuentes
 
 ### paidelinnameeskond-ee-aruanne-2025
@@ -114,4 +168,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Paide Linnameeskond/aruanne-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### paidelinnameeskond-ee-aruanne-2019
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Paide Linnameeskond/aruanne-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

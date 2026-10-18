@@ -1,21 +1,9 @@
 {
  "pdf": "Clubes/Estonia/Paide Linnameeskond/aruanne-2021.pdf",
- "generado": "2026-10-18T15:16:20.623Z",
- "frena": [
-  {
-   "etapa": "alta:reportType",
-   "motivo": "¿El documento trae un estado de resultados (o de recursos y gastos) anual cargable, o hay que buscar los estados en otro documento del club?"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"mängude ja treeningute kulud\" -> match_organisation_expense 0.75"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-18T18:16:06.018Z",
+ "frena": [],
  "avisos": [
+  "\"Televisión\" en 0: real, por ajuste manual (2026-10-18, sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18))",
   "gestión: ningún presidente confirmado cubre 2021 (cierre 2021-12-31); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -282,9 +270,9 @@
     "amountNative": -0.116057,
     "disclosureLevel": "aggregated",
     "_pag": 13,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Palgakulu",
@@ -374,7 +362,28 @@
  },
  "clubId": "paidelinnameeskond-ee",
  "year": 2021,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Paide Linnameeskond/aruanne-2021.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L134) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Paide Linnameeskond/aruanne-2021.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
  "seleccion": {
   "filas": 32,
   "notasUsadas": [],
@@ -771,11 +780,11 @@
    "origen": "verificacion (nota que desglosa \"Mitmesugused tegevuskulud\")",
    "signoFijo": 0.116057,
    "cat": "match_organisation_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Misma fila y mismo criterio que 2019: match_organisation_expense. El 116.057 coincide con la columna 2021 del aruanne-2022. [mängude ja treeningute kulud 116 057 (aruanne-2021; 2022 comparativo L530)]",
    "destino": "expense",
    "amountNative": -0.116057
   },
@@ -864,12 +873,6 @@
    "destino": "netInterest"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (estado)": "gastos sin signo (se invierten)",
@@ -928,8 +931,8 @@
   },
   "reportType": {
    "valor": "official_balance_sheet",
-   "fuente": "el .md no tiene ninguna palabra de estado contable reconocible",
-   "estado": "pregunta"
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L134) (Claude 2026-10-18)",
+   "estado": "ok"
   },
   "perimetro": {
    "valor": "individual",
@@ -958,8 +961,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 3,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 16,
   "lineasGasto": 14,
   "metaFilas": 2,

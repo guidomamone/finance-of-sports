@@ -18,6 +18,23 @@ const paidelinnameeskondeeRevenueLinesByYear = {
     { rawLabel:'Renditulu', normalizedCategory:'other_income', amountNative:0.025844, disclosureLevel:'aggregated' },
     { rawLabel:'Muud tulud', normalizedCategory:'other_income', amountNative:0.000335, disclosureLevel:'aggregated' },
   ],
+  2019: [
+    { rawLabel:'Liikmetelt saadud tasud', normalizedCategory:'member_dues', amountNative:0.065457, disclosureLevel:'aggregated' },
+    { rawLabel:'Sihtfinantseerimine tegevuskuludeks', normalizedCategory:'other_income', amountNative:0.017318, disclosureLevel:'aggregated' },
+    { rawLabel:'Järvamaa Maavalitsus', normalizedCategory:'other_income', amountNative:0.008107, disclosureLevel:'aggregated' },
+    { rawLabel:'Tapa Vallavalitsus', normalizedCategory:'other_income', amountNative:0.005231, disclosureLevel:'aggregated' },
+    { rawLabel:'Paide Linnavalitsus', normalizedCategory:'other_income', amountNative:0.049544, disclosureLevel:'aggregated' },
+    { rawLabel:'Türi Spordikluubide Liit MTÜ', normalizedCategory:'other_income', amountNative:0.0035, disclosureLevel:'aggregated' },
+    { rawLabel:'LHV', normalizedCategory:'other_income', amountNative:0.001023, disclosureLevel:'aggregated' },
+    { rawLabel:'Spordikoolituse ja-teabe SA Spordikoolituse ja-teabe S', normalizedCategory:'other_income', amountNative:0.042478, disclosureLevel:'aggregated' },
+    { rawLabel:'Türi Vallavalitsus', normalizedCategory:'other_income', amountNative:0.005, disclosureLevel:'aggregated' },
+    { rawLabel:'Järvamaa Omavalitsuse Liit', normalizedCategory:'other_income', amountNative:0.0025, disclosureLevel:'aggregated' },
+    { rawLabel:'UEFA solidarsus', normalizedCategory:'competition_bonus', amountNative:0.021764, disclosureLevel:'aggregated' },
+    { rawLabel:'UEFA solidarsus', normalizedCategory:'competition_bonus', amountNative:-0.015, disclosureLevel:'aggregated' },
+    { rawLabel:'Väljaku äärde ja reklaamtahvlitele paigaldatud reklaam', normalizedCategory:'sponsorship_commercial', amountNative:0.249497, disclosureLevel:'aggregated' },
+    { rawLabel:'Tulud mängijaõiguste müügist', normalizedCategory:'player_sales', amountNative:0.1241, disclosureLevel:'aggregated' },
+    { rawLabel:'Muud tulud', normalizedCategory:'other_income', amountNative:0.015296, disclosureLevel:'aggregated' },
+  ],
 };
 const paidelinnameeskondeeExpenseLinesByYear = {
   2025: [
@@ -40,6 +57,21 @@ const paidelinnameeskondeeExpenseLinesByYear = {
     { rawLabel:'Sotsiaalmaks muu personali töötasudelt', normalizedCategory:'admin_general_expense', amountNative:-0.309395, disclosureLevel:'aggregated' },
     { rawLabel:'Muud kulud', normalizedCategory:'other_expenses', amountNative:-0.020332, disclosureLevel:'aggregated' },
   ],
+  2019: [
+    { rawLabel:'Sihtotstarbeliselt finantseeritud projektide otsesed kulud', normalizedCategory:'other_expenses', amountNative:-0.153289, disclosureLevel:'aggregated' },
+    { rawLabel:'Jagatud annetused ja toetused', normalizedCategory:'other_expenses', amountNative:-0.095612, disclosureLevel:'aggregated' },
+    { rawLabel:'Üür ja rent', normalizedCategory:'admin_general_expense', amountNative:-0.002698, disclosureLevel:'aggregated' },
+    { rawLabel:'Mitmesugused bürookulud', normalizedCategory:'admin_general_expense', amountNative:-0.001816, disclosureLevel:'aggregated' },
+    { rawLabel:'Lähetuskulud', normalizedCategory:'match_organisation_expense', amountNative:-0.004895, disclosureLevel:'aggregated' },
+    { rawLabel:'Koolituskulud', normalizedCategory:'admin_general_expense', amountNative:-0.00576, disclosureLevel:'aggregated' },
+    { rawLabel:'Riiklikud ja kohalikud maksud', normalizedCategory:'admin_general_expense', amountNative:-0.000256, disclosureLevel:'aggregated' },
+    { rawLabel:'Kulu ebatõenäoliselt laekuvatest nõuetest', normalizedCategory:'other_expenses', amountNative:-0.003351, disclosureLevel:'aggregated' },
+    { rawLabel:'mängude ja treeningute kulud', normalizedCategory:'match_organisation_expense', amountNative:-0.093049, disclosureLevel:'aggregated' },
+    { rawLabel:'Palgakulu', normalizedCategory:'wages_squad', amountNative:-0.326659, disclosureLevel:'aggregated' },
+    { rawLabel:'Sotsiaalmaksud', normalizedCategory:'wages_squad', amountNative:-0.110416, disclosureLevel:'aggregated' },
+    { rawLabel:'Põhivarade kulum ja väärtuse langus', normalizedCategory:'depreciation', amountNative:-0.002092, disclosureLevel:'aggregated' },
+    { rawLabel:'Muud kulud', normalizedCategory:'other_expenses', amountNative:-0.006669, disclosureLevel:'aggregated' },
+  ],
 };
 const paidelinnameeskondeeFiscalYearMeta = {
   2025: {
@@ -55,6 +87,16 @@ const paidelinnameeskondeeFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:4.099722, officialTotalExpenses:3.925944, officialPAT:0.120462,
+  },
+  2019: {
+    currency:'EUR', fxRef:'EUR@2019-12-31',
+    sourceId:'paidelinnameeskond-ee-aruanne-2019',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.000989, tax:0,
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0.595815, officialTotalExpenses:0.806562, officialPAT:-0.211736,
   },
 };
 const paidelinnameeskondeePresupuestoOverlayByYear = {};
@@ -75,6 +117,11 @@ Object.assign(sources, {
   'paidelinnameeskond-ee-aruanne-2025': {
     id:'paidelinnameeskond-ee-aruanne-2025', clubId:'paidelinnameeskond-ee',
     title:'Jalgpalliklubi Paide Linnameeskond — aruanne-2025 (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'paidelinnameeskond-ee-aruanne-2019': {
+    id:'paidelinnameeskond-ee-aruanne-2019', clubId:'paidelinnameeskond-ee',
+    title:'Jalgpalliklubi Paide Linnameeskond — aruanne-2019 (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

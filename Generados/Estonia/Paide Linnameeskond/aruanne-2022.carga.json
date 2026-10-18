@@ -1,16 +1,7 @@
 {
  "pdf": "Clubes/Estonia/Paide Linnameeskond/aruanne-2022.pdf",
- "generado": "2026-10-18T15:16:20.700Z",
- "frena": [
-  {
-   "etapa": "alta:reportType",
-   "motivo": "¿El documento trae un estado de resultados (o de recursos y gastos) anual cargable, o hay que buscar los estados en otro documento del club?"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"mängude ja treeningute kulud\" -> match_organisation_expense 0.75"
-  }
- ],
+ "generado": "2026-10-18T18:16:06.097Z",
+ "frena": [],
  "avisos": [
   "gestión: ningún presidente confirmado cubre 2022 (cierre 2022-12-31); pregunta en la cola (no frena)"
  ],
@@ -278,9 +269,9 @@
     "amountNative": -0.193922,
     "disclosureLevel": "aggregated",
     "_pag": 15,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Muud",
@@ -400,7 +391,18 @@
  },
  "clubId": "paidelinnameeskond-ee",
  "year": 2022,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Paide Linnameeskond/aruanne-2022.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L153) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
  "seleccion": {
   "filas": 35,
   "notasUsadas": [],
@@ -797,11 +799,11 @@
    "origen": "verificacion (nota que desglosa \"Mitmesugused tegevuskulud\")",
    "signoFijo": 0.193922,
    "cat": "match_organisation_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Misma fila y mismo criterio que 2019: match_organisation_expense. [mängude ja treeningute kulud 193 922 (aruanne-2022 L530)]",
    "destino": "expense",
    "amountNative": -0.193922
   },
@@ -992,8 +994,8 @@
   },
   "reportType": {
    "valor": "official_balance_sheet",
-   "fuente": "el .md no tiene ninguna palabra de estado contable reconocible",
-   "estado": "pregunta"
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L153) (Claude 2026-10-18)",
+   "estado": "ok"
   },
   "perimetro": {
    "valor": "individual",
@@ -1022,8 +1024,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 17,
   "lineasGasto": 16,
   "metaFilas": 2,

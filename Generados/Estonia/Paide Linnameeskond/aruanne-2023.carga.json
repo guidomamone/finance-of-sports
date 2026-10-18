@@ -1,16 +1,7 @@
 {
  "pdf": "Clubes/Estonia/Paide Linnameeskond/aruanne-2023.pdf",
- "generado": "2026-10-18T15:16:20.776Z",
- "frena": [
-  {
-   "etapa": "alta:reportType",
-   "motivo": "¿El documento trae un estado de resultados (o de recursos y gastos) anual cargable, o hay que buscar los estados en otro documento del club?"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"mängude ja treeningute kulud\" -> match_organisation_expense 0.75"
-  }
- ],
+ "generado": "2026-10-18T18:16:06.186Z",
+ "frena": [],
  "avisos": [
   "gestión: ningún presidente confirmado cubre 2023 (cierre 2023-12-31); pregunta en la cola (no frena)"
  ],
@@ -268,9 +259,9 @@
     "amountNative": -0.120587,
     "disclosureLevel": "aggregated",
     "_pag": 15,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "mängijate soetuskulud",
@@ -390,7 +381,18 @@
  },
  "clubId": "paidelinnameeskond-ee",
  "year": 2023,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Paide Linnameeskond/aruanne-2023.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L150) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
  "seleccion": {
   "filas": 34,
   "notasUsadas": [],
@@ -773,11 +775,11 @@
    "origen": "verificacion (nota que desglosa \"Mitmesugused tegevuskulud\")",
    "signoFijo": 0.120587,
    "cat": "match_organisation_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Misma fila y mismo criterio que 2019: match_organisation_expense. [mängude ja treeningute kulud 120 587 (aruanne-2023, Lisa de Mitmesugused tegevuskulud)]",
    "destino": "expense",
    "amountNative": -0.120587
   },
@@ -969,8 +971,8 @@
   },
   "reportType": {
    "valor": "official_balance_sheet",
-   "fuente": "el .md no tiene ninguna palabra de estado contable reconocible",
-   "estado": "pregunta"
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L150) (Claude 2026-10-18)",
+   "estado": "ok"
   },
   "perimetro": {
    "valor": "individual",
@@ -999,8 +1001,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 16,
   "lineasGasto": 16,
   "metaFilas": 2,

@@ -8,3 +8,5 @@
 - Último chequeo: 2026-10-03.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2025 desde `Clubes/Estonia/Paide Linnameeskond/aruanne-2025.pdf` (sourceId `paidelinnameeskond-ee-aruanne-2025`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2019 desde `Clubes/Estonia/Paide Linnameeskond/aruanne-2019.pdf` (sourceId `paidelinnameeskond-ee-aruanne-2019`).

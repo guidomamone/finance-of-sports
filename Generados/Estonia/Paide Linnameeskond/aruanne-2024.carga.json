@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Estonia/Paide Linnameeskond/aruanne-2024.pdf",
- "generado": "2026-10-18T15:16:20.853Z",
- "frena": [
-  {
-   "etapa": "alta:reportType",
-   "motivo": "¿El documento trae un estado de resultados (o de recursos y gastos) anual cargable, o hay que buscar los estados en otro documento del club?"
-  }
- ],
+ "generado": "2026-10-18T18:16:06.267Z",
+ "frena": [],
  "avisos": [
   "gestión: ningún presidente confirmado cubre 2024 (cierre 2024-12-31); pregunta en la cola (no frena)"
  ],
@@ -396,7 +391,18 @@
  },
  "clubId": "paidelinnameeskond-ee",
  "year": 2024,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Paide Linnameeskond/aruanne-2024.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L149) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
  "seleccion": {
   "filas": 35,
   "notasUsadas": [],
@@ -991,8 +997,8 @@
   },
   "reportType": {
    "valor": "official_balance_sheet",
-   "fuente": "el .md no tiene ninguna palabra de estado contable reconocible",
-   "estado": "pregunta"
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L149) (Claude 2026-10-18)",
+   "estado": "ok"
   },
   "perimetro": {
    "valor": "individual",
@@ -1021,8 +1027,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 15,
   "lineasGasto": 18,
   "metaFilas": 2,
