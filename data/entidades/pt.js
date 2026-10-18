@@ -1394,6 +1394,79 @@ Object.assign(window.CLUB_ENTIDADES, {
    }
   ]
  },
+ "boavista-pt": {
+  "cargas": [
+   {
+    "anio": 2024,
+    "entidad": "boavista-sad",
+    "perimetro": "individual",
+    "fuente": {
+     "md": "Clubes/Portugal/Boavista/RCSAD-23-24_1-3.md",
+     "linea": 784
+    }
+   }
+  ],
+  "entidades": {
+   "boavista-clube": {
+    "nombre": "Boavista Futebol Clube",
+    "forma": "asociacion",
+    "pais": "PT",
+    "que": {
+     "es": "El club fundador, accionista de la SAD",
+     "en": "The founding club, a shareholder of the SAD"
+    },
+    "fuente": {
+     "md": "Clubes/Portugal/Boavista/RCSAD-23-24_2-3.md",
+     "linea": 503
+    }
+   },
+   "boavista-sad": {
+    "nombre": "Boavista Futebol Clube, Futebol, SAD",
+    "forma": "sociedad",
+    "pais": "PT",
+    "clubId": "boavista-pt",
+    "fuente": {
+     "md": "Clubes/Portugal/Boavista/RCSAD-23-24_1-3.md",
+     "linea": 784
+    }
+   },
+   "jogo-bonito-group": {
+    "nombre": "Jogo Bonito Group",
+    "forma": "holding",
+    "pais": "LU",
+    "fuente": {
+     "md": "Clubes/Portugal/Boavista/RCSAD-23-24_2-3.md",
+     "linea": 535
+    }
+   }
+  },
+  "relaciones": [
+   {
+    "de": "jogo-bonito-group",
+    "a": "boavista-sad",
+    "rel": "controla",
+    "pct": 67.62,
+    "desde": 2024,
+    "hasta": 2024,
+    "fuente": {
+     "md": "Clubes/Portugal/Boavista/RCSAD-23-24_2-3.md",
+     "linea": 503
+    }
+   },
+   {
+    "de": "boavista-clube",
+    "a": "boavista-sad",
+    "rel": "participa",
+    "pct": 10,
+    "desde": 2024,
+    "hasta": 2024,
+    "fuente": {
+     "md": "Clubes/Portugal/Boavista/RCSAD-23-24_2-3.md",
+     "linea": 503
+    }
+   }
+  ]
+ },
  "braga-pt": {
   "cargas": [
    {
@@ -2583,6 +2656,15 @@ Object.assign(window.CLUB_ENTIDADES, {
     }
    },
    {
+    "anio": 2024,
+    "entidad": "maritimo-sad",
+    "perimetro": "individual",
+    "fuente": {
+     "md": "Clubes/Portugal/Maritimo/Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.md",
+     "linea": 3
+    }
+   },
+   {
     "anio": 2025,
     "entidad": "maritimo-sad",
     "perimetro": "individual",
@@ -3095,6 +3177,129 @@ Object.assign(window.CLUB_ENTIDADES, {
     "fuente": {
      "md": "Clubes/Portugal/Paços de Ferreira/contas22_23.md",
      "linea": 196
+    }
+   }
+  ]
+ },
+ "portimonense-pt": {
+  "cargas": [
+   {
+    "anio": 2022,
+    "entidad": "portimonense-sad",
+    "perimetro": "individual",
+    "fuente": {
+     "md": "Clubes/Portugal/Portimonense/Relatorio-Contas-21-22_assinado.md",
+     "linea": 3
+    }
+   },
+   {
+    "anio": 2023,
+    "entidad": "portimonense-sad",
+    "perimetro": "individual",
+    "fuente": {
+     "md": "Clubes/Portugal/Portimonense/Relatorio-Contas-22-23_assinado.md",
+     "linea": 371
+    }
+   },
+   {
+    "anio": 2024,
+    "entidad": "portimonense-sad",
+    "perimetro": "individual",
+    "fuente": {
+     "md": "Clubes/Portugal/Portimonense/Relatorio-Contas-23-24_assinado.md",
+     "linea": 351
+    }
+   },
+   {
+    "anio": 2025,
+    "entidad": "portimonense-sad",
+    "perimetro": "individual",
+    "fuente": {
+     "md": "Clubes/Portugal/Portimonense/Relatorio-Contas-24-25_assinado.md",
+     "linea": 374
+    }
+   }
+  ],
+  "entidades": {
+   "for-gool": {
+    "nombre": "For Gool Company Ltd",
+    "forma": "sociedad",
+    "fuente": {
+     "md": "Clubes/Portugal/Portimonense/Relatorio-Contas-21-22_assinado.md",
+     "linea": 564
+    }
+   },
+   "portimonense-sad": {
+    "nombre": "Portimonense Futebol SAD",
+    "forma": "sociedad",
+    "pais": "PT",
+    "clubId": "portimonense-pt",
+    "fuente": {
+     "md": "Clubes/Portugal/Portimonense/Relatorio-Contas-21-22_assinado.md",
+     "linea": 3
+    }
+   },
+   "portimonense-sporting-clube": {
+    "nombre": "Portimonense Sporting Clube",
+    "forma": "asociacion",
+    "pais": "PT",
+    "que": {
+     "es": "El club fundador, titular de las acciones de categoría A",
+     "en": "The founding club, holder of the Category A shares"
+    },
+    "fuente": {
+     "md": "Clubes/Portugal/Portimonense/Relatorio-Contas-21-22_assinado.md",
+     "linea": 562
+    }
+   }
+  },
+  "relaciones": [
+   {
+    "de": "portimonense-sporting-clube",
+    "a": "portimonense-sad",
+    "rel": "participa",
+    "pct": 10,
+    "desde": 2022,
+    "hasta": 2024,
+    "fuente": {
+     "md": "Clubes/Portugal/Portimonense/Relatorio-Contas-21-22_assinado.md",
+     "linea": 562
+    }
+   },
+   {
+    "de": "portimonense-sporting-clube",
+    "a": "portimonense-sad",
+    "rel": "participa",
+    "pct": 5,
+    "desde": 2025,
+    "hasta": 2025,
+    "fuente": {
+     "md": "Clubes/Portugal/Portimonense/Relatorio-Contas-24-25_assinado.md",
+     "linea": 599
+    }
+   },
+   {
+    "de": "for-gool",
+    "a": "portimonense-sad",
+    "rel": "controla",
+    "pct": 85.88,
+    "desde": 2022,
+    "hasta": 2024,
+    "fuente": {
+     "md": "Clubes/Portugal/Portimonense/Relatorio-Contas-21-22_assinado.md",
+     "linea": 564
+    }
+   },
+   {
+    "de": "for-gool",
+    "a": "portimonense-sad",
+    "rel": "controla",
+    "pct": 92.94,
+    "desde": 2025,
+    "hasta": 2025,
+    "fuente": {
+     "md": "Clubes/Portugal/Portimonense/Relatorio-Contas-24-25_assinado.md",
+     "linea": 601
     }
    }
   ]
