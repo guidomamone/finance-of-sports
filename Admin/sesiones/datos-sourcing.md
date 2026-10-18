@@ -144,9 +144,7 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
 
 ### Qué queda (TODO)
 
-- 252: la nota de Unión Magdalena (Colombia) sin URL del canal; es de
-  fos-onboarding). Inglaterra y Alemania probablemente sean de registro (Companies House, Unternehmensregister), como Dinamarca: canal
-  por API en el script, no URL.
+- 252: la nota de Unión Magdalena (Colombia) sin URL del canal (Colombia es de fos-onboarding).
 - 26 clubes con el PDF del ejercicio siguiente ya bajado y sin cargar (los lista `node tools/ejercicios-nuevos.mjs`): onboarding.
 - **252: Inglaterra y Alemania, también por el canal.** Reino Unido: el número de Companies House de la nota ("Companies House n° 04250459";
   en Arsenal el del grupo) y `tools/companies-house-fetch.mjs --list --json` (salida nueva: la serie con fecha de cierre, tipo y URL); el
