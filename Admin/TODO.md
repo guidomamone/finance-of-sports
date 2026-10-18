@@ -235,7 +235,8 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    quedan para sourcing Hamburgo 2024 (ficha de la KGaA HRB 191603 o de la AG vieja HRB 47576 en el Unternehmensregister; captcha por
    publicación, lo resuelve Guido), Lazio 2006 y 2011-2013 (figuran `sin_informe`, pero el del consolidado está en la API del club y en
    Wayback) y Roma 2022 (el link de "consolidato" baja el individual). Si el sitio publicara el consolidado de Juventus, sus líneas 2022-2025
-   cambian de informe (los dos están bajados). (f) que el pipeline exija la línea al dar de alta un club (fos-pipeline). En Ligas ya está la
+   cambian de informe (los dos están bajados). (f) que el pipeline exija la línea al dar de alta un club (fos-pipeline). (g) `tools/auditoria.mjs --extractos` no reconoce el informe en
+   estonio ("SÕLTUMATU VANDEAUDIITORI ARUANNE", "Meie arvates"): los extractos salen vacíos (mejora de script). En Ligas ya está la
    tarjeta "Las cuentas de la liga": cada entidad que entra por el 295 aparece sola.
 295. BALANCES DE LAS ENTIDADES QUE ORGANIZAN LAS LIGAS (fos-ligas; aclaración de Guido, 2026-10-18). Hecho: Premier League 2024-25
    (Deloitte), LaLiga 2024-25 (LNFP, Netadia) y J.League 2025 (Grant Thornton Taiyo), en `Ligas/` y en `data/auditoria/_ligas.js`. Falta:

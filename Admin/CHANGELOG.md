@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 747 — Merge de finanzas: auditoría de Estonia y Bélgica (2026-10-18)
+
+Sin conflictos; P0 0 / P1 0.
+
+- To-do 282: los 52 balances nuevos de Estonia y Bélgica tienen línea de auditoría (vuelve a haber 0 sin línea); en Estonia, subagentes
+  Sonnet con criterio común y citas verificadas por `auditoria.mjs` (un "Asjaolu rõhutamine" con "olulise ebakindluse" es incertidumbre
+  material). Lazio 2006-2010 pasan de `sin_informe` a `falta_transcripcion` (hubo informe, no está en ningún canal).
+
 ## Versión 746 — Merge de finanzas: informes del auditor y União de Leiria (2026-10-18)
 
 `documentos-descartados.txt` con las líneas de las dos ramas; ASSET_V 1303, P0 0 / P1 0.

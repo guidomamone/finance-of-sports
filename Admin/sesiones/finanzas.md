@@ -239,3 +239,5 @@
   Van Havermaet y Vyvey & Co, sin salvedades.
 - `tools/auditoria.mjs --extractos` no reconoce el informe en estonio ("SÕLTUMATU VANDEAUDIITORI ARUANNE", "Meie arvates"): los 50
   extractos salieron vacíos. Mejora de script para el TODO.
+
+## Después del segundo merge de la sesión 3 (2026-10-18)
