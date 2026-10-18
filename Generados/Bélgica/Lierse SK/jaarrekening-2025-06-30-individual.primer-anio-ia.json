@@ -1,13 +1,13 @@
 {
  "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.md",
- "clave": "42fc676d48836c03dec410e108672811e1697354",
- "generado": "2026-10-18T13:08:17.123Z",
+ "clave": "08a99b6dac8b6779829806df2791e011174c6556",
+ "generado": "2026-10-18T13:54:29.924Z",
  "fuente": "API",
  "datos": {
   "faltan": [],
   "sobran": [],
   "repetidas": [],
   "lado_equivocado": [],
-  "observacion": "Esquema abreviado belga: la Brutomarge es el renglón de partida (incluye los ingresos no recurrentes de L256, que es un 'waarvan' y no se carga aparte). Se cargan los gastos operativos L259, L260, L263 y L265, el resultado financiero desglosado (L268 y L272, sin repetir sus totales L267/L271) y el impuesto L277. Cuadra: 2,706155 - 3,139021 - 0,407089 - 0,050448 - 0,023792 = -0,914195; luego + 0,000698 - 0,033924 - 0,014803 = -0,962223. Sin problemas."
+  "observacion": "Sin problemas. La Brutomarge figura como renglón de partida en el esquema abreviado belga, porque no se publican Omzet ni Handelsgoederen. La amortización de L260 (0.407089) está abierta en sus partes, 0.24728 + 0.159809, sin cargar el total. Los financieros se cargan por sus componentes recurrentes y no por los subtotales de L267 y L271. El resultado da -962.223, igual al impreso."
  }
 }

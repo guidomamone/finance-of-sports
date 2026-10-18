@@ -1,7 +1,7 @@
 {
  "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.md",
- "generatedAt": "2026-10-18T13:09:34.161Z",
- "rubrosHuella": "37639d2b4b38d8fc38a827de1703347e75e1eed2",
+ "generatedAt": "2026-10-18T13:55:29.237Z",
+ "rubrosHuella": "c03e1134ba2f81ac905505fb9b85939cd25a1401",
  "rubros": [
   {
    "label": "Brutomarge (+)/(-)",
@@ -10,21 +10,7 @@
    "section": "estado",
    "choice": "lump_football_operations",
    "confidence": 0.95,
-   "top3": [
-    [
-     "lump_football_operations",
-     0.95
-    ],
-    [
-     "other_income",
-     0.05
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1036
+   "desdeCache": true
   },
   {
    "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
@@ -33,67 +19,7 @@
    "section": "estado",
    "choice": "wages_squad",
    "confidence": 0.92,
-   "top3": [
-    [
-     "wages_squad",
-     0.93
-    ],
-    [
-     "admin_general_expense",
-     0.03
-    ],
-    [
-     "other_expenses",
-     0.03
-    ]
-   ],
-   "tokens": 1063
-  },
-  {
-   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "lado": "expense",
-   "page": 7,
-   "section": "estado",
-   "choice": "depreciation",
-   "confidence": 0.5,
-   "top3": [
-    [
-     "depreciation",
-     0.54
-    ],
-    [
-     "player_amortisation",
-     0.39
-    ],
-    [
-     "other_amortisation",
-     0.04
-    ]
-   ],
-   "tokens": 1151
-  },
-  {
-   "label": "Niet-recurrente bedrijfskosten",
-   "lado": "expense",
-   "page": 7,
-   "section": "estado",
-   "choice": "exceptional_items",
-   "confidence": 0.87,
-   "top3": [
-    [
-     "exceptional_items",
-     0.88
-    ],
-    [
-     "admin_general_expense",
-     0.06
-    ],
-    [
-     "other_expenses",
-     0.04
-    ]
-   ],
-   "tokens": 1057
+   "desdeCache": true
   },
   {
    "label": "Andere bedrijfskosten",
@@ -102,21 +28,62 @@
    "section": "estado",
    "choice": "other_expenses",
    "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Niet-recurrente bedrijfskosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "choice": "exceptional_items",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Afschrijvingen materiële vaste activa",
+   "lado": "expense",
+   "page": 7,
+   "section": "ajuste manual",
+   "choice": "depreciation",
+   "confidence": 1,
    "top3": [
     [
-     "other_expenses",
-     0.87
+     "depreciation",
+     1
     ],
     [
-     "admin_general_expense",
-     0.11
+     "wages_squad",
+     0
     ],
     [
-     "match_organisation_expense",
-     0.01
+     "player_amortisation",
+     0
     ]
    ],
-   "tokens": 1015
+   "tokens": 1088
+  },
+  {
+   "label": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "expense",
+   "page": 7,
+   "section": "ajuste manual",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1132
   }
  ]
 }

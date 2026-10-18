@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.md",
- "generado": "2026-10-18T13:46:53.128Z",
+ "generado": "2026-10-18T13:54:29.960Z",
  "estado": "ok",
  "clubId": null,
  "year": 2025,
@@ -120,6 +120,11 @@
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
   }
  ],
  "notas": [
@@ -218,7 +223,7 @@
  ],
  "primerAnio": {
   "escalon": 3,
-  "estado": "pendiente",
+  "estado": "confirmado",
   "clave": "08a99b6dac8b6779829806df2791e011174c6556",
   "rango": [
    252,

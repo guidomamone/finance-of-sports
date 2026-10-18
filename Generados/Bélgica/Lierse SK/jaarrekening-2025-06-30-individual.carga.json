@@ -1,18 +1,10 @@
 {
  "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf",
- "generado": "2026-10-18T13:25:37.588Z",
+ "generado": "2026-10-18T13:55:33.874Z",
  "frena": [
-  {
-   "etapa": "periodo",
-   "motivo": "el nombre del archivo dice otro cierre que el contenido (2025-10-30): confirmar qué ejercicio es antes de cargarlo"
-  },
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (liersesk-be)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Afschrijvingen en waardeverminderingen o\" -> depreciation 0.6"
   }
  ],
  "avisos": [
@@ -48,16 +40,6 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-    "normalizedCategory": "depreciation",
-    "amountNative": -0.407089,
-    "disclosureLevel": "aggregated",
-    "_pag": 7,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
-   },
-   {
     "rawLabel": "Andere bedrijfskosten",
     "normalizedCategory": "other_expenses",
     "amountNative": -0.050448,
@@ -76,6 +58,26 @@
     "_escalon": 2,
     "_conf": 0.8,
     "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen immateriële vaste activa (spelers)",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -0.24728,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-18): la nota separa el 630 (407.089): intangibles Geboekt 8079 = spelers (subagente Sonnet, revisado por Claude 2026-10-18)"
+   },
+   {
+    "rawLabel": "Afschrijvingen materiële vaste activa",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.159809,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-18): la nota separa el 630 (407.089): intangibles Geboekt 8079 = spelers (subagente Sonnet, revisado por Claude 2026-10-18)"
    }
   ],
   "fiscalYearMeta": {
@@ -130,11 +132,10 @@
  "periodo": {
   "tipo": "anual",
   "meses": 12,
-  "cierre": "2025-10-30",
-  "evidencia": null,
-  "confianza": "media",
+  "cierre": "2025-06-30",
   "anual": "temporada",
-  "nombreNoCoincide": true
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-18): boekjaar 01-07-2024 tot 30-06-2025 (.md L36); el 30-10-2025 es la fecha de la asamblea (subagente Sonnet, revisado por Claude 2026-10-18)"
  },
  "clubId": "liersesk-be",
  "year": 2025,
@@ -165,10 +166,68 @@
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "247.280",
+   "linea": 260,
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "reemplaza": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "motivo": "la nota separa el 630 (407.089): intangibles Geboekt 8079 = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "motivo": "la nota separa el 630 (407.089): intangibles Geboekt 8079 = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "159.809",
+   "linea": 260,
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "la nota separa el 630 (407.089): intangibles Geboekt 8079 = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "categoria",
+   "valor": "depreciation",
+   "linea": null,
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "motivo": "la nota separa el 630 (407.089): intangibles Geboekt 8079 = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "cierre",
+   "valor": "2025-06-30",
+   "linea": null,
+   "motivo": "boekjaar 01-07-2024 tot 30-06-2025 (.md L36); el 30-10-2025 es la fecha de la asamblea (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
   }
  ],
  "seleccion": {
-  "filas": 8,
+  "filas": 9,
   "notasUsadas": [],
   "refM": null
  },
@@ -204,22 +263,6 @@
    "amountNative": -3.139021
   },
   {
-   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "page": 7,
-   "native": 0.407089,
-   "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0.407089,
-   "cat": "depreciation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "enCola": true,
-   "destino": "expense",
-   "amountNative": -0.407089
-  },
-  {
    "label": "Andere bedrijfskosten",
    "page": 7,
    "native": 0.050448,
@@ -248,6 +291,38 @@
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.023792
+  },
+  {
+   "label": "Afschrijvingen immateriële vaste activa (spelers)",
+   "page": 7,
+   "native": 0.24728,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.24728,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-18): la nota separa el 630 (407.089): intangibles Geboekt 8079 = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -0.24728
+  },
+  {
+   "label": "Afschrijvingen materiële vaste activa",
+   "page": 7,
+   "native": 0.159809,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.159809,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-18): la nota separa el 630 (407.089): intangibles Geboekt 8079 = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -0.159809
   },
   {
    "label": "Recurrente financiële opbrengsten",
@@ -286,6 +361,7 @@
  "signos": {
   "porTabla": {
    "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
@@ -322,12 +398,12 @@
  "procedencia": {
   "anio": {
    "valor": 2025,
-   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): boekjaar 01-07-2024 tot 30-06-2025 (.md L36); el 30-10-2025 es la fecha de la asamblea (subagente Sonnet, revisado por Claude 2026-10-18)",
    "estado": "ok"
   },
   "cierre": {
    "valor": "2025-06-30",
-   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2025-06-30) y contenido del .md (8 de 10 fechas de fin de mes))",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): boekjaar 01-07-2024 tot 30-06-2025 (.md L36); el 30-10-2025 es la fecha de la asamblea (subagente Sonnet, revisado por Claude 2026-10-18))",
    "estado": "ok"
   },
   "reportType": {
@@ -363,9 +439,9 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 1,
   "lineasIngreso": 1,
-  "lineasGasto": 4,
+  "lineasGasto": 5,
   "metaFilas": 3,
   "excluidas": 0
  }

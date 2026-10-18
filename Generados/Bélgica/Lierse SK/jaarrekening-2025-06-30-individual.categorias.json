@@ -2,11 +2,11 @@
  "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.md",
  "club": "lierse-sk",
  "year": 2025,
- "generatedAt": "2026-10-18T13:09:45.870Z",
- "rubrosHuella": "37639d2b4b38d8fc38a827de1703347e75e1eed2",
- "jevHuella": "520701050f5b6480fe84193bf02356d488d3b988",
+ "generatedAt": "2026-10-18T13:55:30.833Z",
+ "rubrosHuella": "c03e1134ba2f81ac905505fb9b85939cd25a1401",
+ "jevHuella": "f695564f40974aa4221f620edab50ad8449b588e",
  "modelo": "claude-opus-5-5",
- "costUsd": 0.010336799999999998,
+ "costUsd": 0,
  "rubros": [
   {
    "label": "Brutomarge (+)/(-)",
@@ -35,32 +35,21 @@
    "confianza": 0.92
   },
   {
-   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "lado": "expense",
-   "section": "estado",
-   "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, de inmovilizado intangible y material",
-   "page": 7,
-   "pendiente": true,
-   "jev": "depreciation",
-   "jevConf": 0.5,
-   "escalon": 2,
-   "categoria": "depreciation",
-   "confianza": 0.6,
-   "motivo": "Amortización combinada intangible y material; en abreviado belga sin desglose suele mapearse a depreciation; podría incluir pases."
-  },
-  {
    "label": "Andere bedrijfskosten",
    "lado": "expense",
    "section": "estado",
    "glosa": "Otros gastos de explotación",
    "page": 7,
-   "pendiente": true,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 2,
+   "confCache": 0.85,
+   "motivo": "Otros gastos de explotación; igual que anderlecht y otros clubes belgas.",
    "jev": "other_expenses",
    "jevConf": 0.86,
-   "escalon": 2,
+   "desdeCache": true,
    "categoria": "other_expenses",
-   "confianza": 0.85,
-   "motivo": "Otros gastos de explotación; igual que anderlecht y otros clubes belgas."
+   "confianza": 0.85
   },
   {
    "label": "Niet-recurrente bedrijfskosten",
@@ -68,13 +57,42 @@
    "section": "estado",
    "glosa": "Gastos de explotación no recurrentes",
    "page": 7,
-   "pendiente": true,
+   "pendiente": false,
+   "ya": "exceptional_items",
+   "escalon": 2,
+   "confCache": 0.8,
+   "motivo": "Gastos no recurrentes; mayoría de clubes belgas a exceptional_items.",
    "jev": "exceptional_items",
    "jevConf": 0.87,
-   "escalon": 2,
+   "desdeCache": true,
    "categoria": "exceptional_items",
-   "confianza": 0.8,
-   "motivo": "Gastos no recurrentes; mayoría de clubes belgas a exceptional_items."
+   "confianza": 0.8
+  },
+  {
+   "label": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "expense",
+   "section": "ajuste manual",
+   "glosa": "Amortizaciones del inmovilizado intangible (jugadores)",
+   "page": 7,
+   "pendiente": false,
+   "ya": "player_amortisation",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "player_amortisation",
+   "confianza": 1
+  },
+  {
+   "label": "Afschrijvingen materiële vaste activa",
+   "lado": "expense",
+   "section": "ajuste manual",
+   "glosa": "Amortizaciones del inmovilizado material",
+   "page": 7,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "depreciation",
+   "confianza": 1
   }
  ]
 }

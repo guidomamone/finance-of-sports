@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf",
   "club": "lierse-sk",
   "year": 2025,
-  "generatedAt": "2026-10-18T13:08:06.345Z",
+  "generatedAt": "2026-10-18T13:54:20.932Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -27,16 +27,6 @@
       "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
     },
     {
-      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-      "lado": "expense",
-      "page": 7,
-      "section": "estado",
-      "values": [
-        0.407089
-      ],
-      "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, de inmovilizado intangible y material"
-    },
-    {
       "label": "Andere bedrijfskosten",
       "lado": "expense",
       "page": 7,
@@ -55,6 +45,26 @@
         0.023792
       ],
       "glosa": "Gastos de explotación no recurrentes"
+    },
+    {
+      "label": "Afschrijvingen immateriële vaste activa (spelers)",
+      "lado": "expense",
+      "page": 7,
+      "section": "ajuste manual",
+      "values": [
+        0.24728
+      ],
+      "glosa": "Amortizaciones del inmovilizado intangible (jugadores)"
+    },
+    {
+      "label": "Afschrijvingen materiële vaste activa",
+      "lado": "expense",
+      "page": 7,
+      "section": "ajuste manual",
+      "values": [
+        0.159809
+      ],
+      "glosa": "Amortizaciones del inmovilizado material"
     }
   ]
 }
