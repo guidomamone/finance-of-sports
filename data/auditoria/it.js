@@ -1268,6 +1268,136 @@ Object.assign(window.CLUB_AUDITORIA, {
    "continuidad": false,
    "fuente": null
   },
+  "2014": {
+   "auditor": {
+    "nombre": "PwC",
+    "tipo": "firma",
+    "legal": "PricewaterhouseCoopers SpA"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-consolidato-2013-14.md",
+    "linea": 34
+   }
+  },
+  "2015": {
+   "auditor": {
+    "nombre": "PwC",
+    "tipo": "firma",
+    "legal": "PricewaterhouseCoopers SpA"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-consolidato-2014-15.md",
+    "linea": 36
+   }
+  },
+  "2016": {
+   "auditor": {
+    "nombre": "PwC",
+    "tipo": "firma",
+    "legal": "PricewaterhouseCoopers SpA"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-consolidato-2015-16.md",
+    "linea": 58
+   }
+  },
+  "2018": {
+   "auditor": {
+    "nombre": "PwC",
+    "tipo": "firma",
+    "legal": "PricewaterhouseCoopers SpA"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-consolidato-2017-18.md",
+    "linea": 38
+   }
+  },
+  "2019": {
+   "auditor": {
+    "nombre": "Deloitte",
+    "tipo": "firma",
+    "legal": "Deloitte & Touche S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-consolidato-2018-19.md",
+    "linea": 35
+   }
+  },
+  "2020": {
+   "auditor": {
+    "nombre": "Deloitte",
+    "tipo": "firma",
+    "legal": "Deloitte & Touche S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-consolidato-2019-20.md",
+    "linea": 36
+   }
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "Deloitte",
+    "tipo": "firma",
+    "legal": "Deloitte & Touche S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-consolidato-2020-21.md",
+    "linea": 35
+   }
+  },
+  "2022": {
+   "auditor": {
+    "nombre": "Deloitte",
+    "tipo": "firma",
+    "legal": "Deloitte & Touche S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-consolidato-2021-22.md",
+    "linea": 39
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "Deloitte",
+    "tipo": "firma",
+    "legal": "Deloitte & Touche S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-consolidato-2022-23.md",
+    "linea": 36
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "Deloitte",
+    "tipo": "firma",
+    "legal": "Deloitte & Touche S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-consolidato-2023-24.md",
+    "linea": 39
+   }
+  },
   "2025": {
    "auditor": {
     "nombre": "Deloitte",
@@ -1277,8 +1407,8 @@ Object.assign(window.CLUB_AUDITORIA, {
    "dictamen": "sin_salvedades",
    "continuidad": false,
    "fuente": {
-    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-esercizio-2024-25.md",
-    "linea": 44
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-consolidata-2024-25.md",
+    "linea": 39
    }
   },
   "2026": {
