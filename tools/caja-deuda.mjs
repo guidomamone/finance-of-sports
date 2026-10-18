@@ -45,6 +45,8 @@
 // USO:
 //   node tools/caja-deuda.mjs --medir [--club <clubId>] [--detalle] [--escalas]                         MEDICIÓN sobre los años ya cargados (ver abajo)
 //   node tools/caja-deuda.mjs --medir --ia [--ejecutar]                                       ...con el escalón 2 (sin --ejecutar: ensayo; con: API)
+//   node tools/caja-deuda.mjs --medir --ia --modelo opus|sonnet [--ejecutar]                  ...el escalón 2 con ESE modelo, para comparar (to-do 288):
+//        respuestas aparte (.caja-deuda-ia.<modelo>.json), que no pisan ni usan las guardadas; solo medición, no escribe nada más.
 //   node tools/caja-deuda.mjs --medir --jev [--ejecutar]                                      ...con el escalón 1b, Jev (sin --ejecutar: ensayo con cota alta)
 //   node tools/caja-deuda.mjs --personal --medir [--ejecutar]                                 el dato "personal" (staffCost) contra Admin/mediciones/personal-verdad.tsv
 //   node tools/caja-deuda.mjs --personal --club <id> [--ejecutar] [--escribir]                completarlo en un club publicado
@@ -922,8 +924,10 @@ Elegí, para la columna del ejercicio pedido (la del cierre más reciente):
 - observaciones: una frase si algo es dudoso. No inventes líneas: si no está, dejá la lista vacía.`;
 
 // Pide a la IA las líneas (una llamada por documento). ejecutar=false: ensayo (tokens y costo estimados).
-export async function porIA({ md, mdText, filas, criterioDeuda, ejecutar = false, rehacer = false }) {
-  const out = resolve(ROOT, derivado(md, '.caja-deuda-ia.json'));
+// (to-do 288) `modelo` (opus | sonnet), solo desde --medir --modelo: la respuesta va a su propio archivo y no se mezcla con la guardada.
+const MODELOS_IA = { opus: 'claude-opus-5-5', sonnet: 'claude-sonnet-5-5' };
+export async function porIA({ md, mdText, filas, criterioDeuda, ejecutar = false, rehacer = false, modelo = null }) {
+  const out = resolve(ROOT, derivado(md, modelo ? `.caja-deuda-ia.${modelo}.json` : '.caja-deuda-ia.json'));
   if (!rehacer && existsSync(out)) return { datos: JSON.parse(readFileSync(out, 'utf8')), costo: 0, guardado: true };
   const paginas = [...new Set(filas.filter((f) => f.balance).map((f) => f.pagina))];
   if (!paginas.length) return { error: 'sin páginas de balance' };
@@ -932,8 +936,8 @@ export async function porIA({ md, mdText, filas, criterioDeuda, ejecutar = false
   const texto = lineas.join('\n').slice(0, 60000);
   const user = `Documento: ${md.split('/').slice(1).join(' / ')}.\nCriterio de deuda de este club: ${criterioDeuda}\n\nPÁGINAS DEL BALANCE (${paginas.join(', ')} del visor):\n${texto}`;
   const { llamarClaude, tokensDe, usdEstimado } = await import('./claude-llamada.mjs');
-  if (!ejecutar) return { ensayo: true, usd: usdEstimado(tokensDe(SYSTEM_IA + user), 400) };
-  const r = await llamarClaude({ system: SYSTEM_IA, user, schema: SCHEMA_IA, tarea: 'caja-deuda', pdf: md.replace(/\.md$/, '.pdf'), maxTokens: 2000 });
+  if (!ejecutar) return { ensayo: true, usd: usdEstimado(tokensDe(SYSTEM_IA + user), 400, modelo ? MODELOS_IA[modelo] : undefined) };
+  const r = await llamarClaude({ system: SYSTEM_IA, user, schema: SCHEMA_IA, tarea: modelo ? `caja-deuda-medir-${modelo}` : 'caja-deuda', pdf: md.replace(/\.md$/, '.pdf'), maxTokens: 2000, ...(modelo ? { modelo: MODELOS_IA[modelo] } : {}) });
   if (r.error) return { error: r.error, costo: r.costo || 0 };
   writeFileSync(out, JSON.stringify({ md, generado: new Date().toISOString(), criterioDeuda, ...r.datos }, null, 1));
   return { datos: r.datos, costo: r.costo || 0 };
@@ -982,11 +986,11 @@ const filasCache = () => { const c = new Map(); return (md) => { if (!c.has(md))
 
 // La IA de un documento (guardada o, con ejecutar, pedida). Devuelve { datos } | { ensayo, usd } | { error }.
 async function iaDe(md, filas, club) {
-  return porIA({ md, mdText: readFileSync(resolve(ROOT, md), 'utf8'), filas, criterioDeuda: criterioDeudaDe(club?.familias || []), ejecutar: iaDe.ejecutar });
+  return porIA({ md, mdText: readFileSync(resolve(ROOT, md), 'utf8'), filas, criterioDeuda: criterioDeudaDe(club?.familias || []), ejecutar: iaDe.ejecutar, modelo: iaDe.modelo || null });
 }
 
-async function medir({ club = null, detalle = false, ia = false, jev = false, ejecutar = false, escalas = false } = {}) {
-  const { G, S } = sitio(); iaDe.ejecutar = ejecutar;
+async function medir({ club = null, detalle = false, ia = false, jev = false, ejecutar = false, escalas = false, modelo = null } = {}) {
+  const { G, S } = sitio(); iaDe.ejecutar = ejecutar; iaDe.modelo = modelo;
   const casos = [];
   for (const [clubId, d] of Object.entries(G)) {
     if (club && clubId !== club) continue;
@@ -1331,7 +1335,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     process.exit(0);
   }
   if (A.includes('--personal')) { if (A.includes('--medir')) await medirPersonal({ ejecutar: A.includes('--ejecutar'), club: flag('--club') }); else if (flag('--club')) await completarPersonal(flag('--club'), { ejecutar: A.includes('--ejecutar'), escribir: A.includes('--escribir'), partir: A.includes('--partir') }); process.exit(0); }
-  if (A.includes('--medir')) { await medir({ club: flag('--club'), detalle: A.includes('--detalle'), ia: A.includes('--ia'), jev: A.includes('--jev'), escalas: A.includes('--escalas'), ejecutar: A.includes('--ejecutar') }); process.exit(0); }
+  if (flag('--modelo') != null && (!A.includes('--medir') || !A.includes('--ia') || !MODELOS_IA[flag('--modelo')])) { console.error('--modelo opus|sonnet va solo con --medir --ia'); process.exit(1); }
+  if (A.includes('--medir')) { await medir({ club: flag('--club'), detalle: A.includes('--detalle'), ia: A.includes('--ia'), jev: A.includes('--jev'), escalas: A.includes('--escalas'), ejecutar: A.includes('--ejecutar'), modelo: flag('--modelo') }); process.exit(0); }
   if (flag('--club')) { const r = await completarClub(flag('--club'), { ejecutar: A.includes('--ejecutar'), escribir: A.includes('--escribir') }); process.exit(r.error ? 1 : 0); }
   console.error('Uso: node tools/caja-deuda.mjs --club <clubId> [--ejecutar] [--escribir]  |  --medir [--club x] [--ia [--ejecutar]] [--detalle]'); process.exit(1);
 }
