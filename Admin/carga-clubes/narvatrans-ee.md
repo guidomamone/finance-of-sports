@@ -165,6 +165,63 @@ Generados/Estonia/Narva Trans/aruanne-2024.categorias.json (escalón de cada fil
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/Narva Trans/aruanne-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/Narva Trans/aruanne-2022.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Liikmemaksud | pág. 12, Jev 1 |
+| 2 | Treeningtasu | pág. 12, precedente |
+| 3 | Sihtfinantseerimine tegevuskuludeks | pág. 12, Jev 0.97 |
+| 4 | Riigi ja KOV toetused | pág. 12, Jev 1 |
+| 5 | EJLiidu toetused | pág. 12, precedente |
+| 6 | UEFA solidaarsustoetus noorte- ja kogukonnatööle | pág. 12, precedente |
+| 7 | Mitteseotud osapoolte toetused/annetused | pág. 12, precedente |
+| 8 | Väljaku äärde ja reklaamtahvlitele paigaldatud reklaam | pág. 12, precedente |
+| 9 | Muu klassifitseerimata sponsorlus- ja reklaamitulu | pág. 12, Claude 0.9 |
+| 10 | Klubi sümboolikaga toodete müügitulu | pág. 12, precedente |
+| 11 | Piletitulu | pág. 12, precedente |
+| 12 | Tulu mängijaõiguste müügist | pág. 5, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Kulu mängijaõiguste soetamisest ja ülemineku registreerimistasudest | pág. 13, precedente |
+| 2 | Kodumängu korralduskulud | pág. 13, precedente |
+| 3 | Võistkondade välissõitude- ja lähetuskulud | pág. 13, precedente |
+| 4 | Klubisümboolikaga toodete omahind | pág. 13, precedente |
+| 5 | Klubile kuuluvate ja tema poolt renditud hoonete ja rajatistega seotud kulud | pág. 13, precedente |
+| 6 | Klubi administreerimiskulud | pág. 13, precedente |
+| 7 | Meditsiinitarvikud- ja teenused | pág. 13, precedente |
+| 8 | Mänguvormid jm varustus | pág. 13, precedente |
+| 9 | Muu äritegevuse kulu/koolitus, riigilõiv | pág. 13, Jev 0.96 |
+| 10 | Muud klassifitseerimata tegevuskulud | pág. 13, Jev 0.97 |
+| 11 | Eesti meistrivõistluste osavõtutasu | pág. 13, precedente |
+| 12 | Kooli poolt renditud hoonete ja rajatistega seotud kulud | pág. 13, precedente |
+| 13 | Muud | pág. 13, Jev 1 |
+| 14 | Mängijate palgakulu | pág. 13, precedente |
+| 15 | Sotsiaalmaks mängijate töötasudelt | pág. 13, precedente |
+| 16 | Mängijatele makstav sportlasetoetus | pág. 13, precedente |
+| 17 | Mängijatele makstav EJL arengustipendium | pág. 13, precedente |
+| 18 | Muu personali palgakulu | pág. 13, precedente |
+| 19 | Sotsiaalmaks muu personali töötasudelt | pág. 13, Jev 0.96 |
+| 20 | Muud kulud | pág. 5, precedente |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L134) (Claude 2026-10-18)
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Televisión. sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2020
 
 ### Ingresos
@@ -305,4 +362,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Narva Trans/aruanne-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### narvatrans-ee-aruanne-2022
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Narva Trans/aruanne-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

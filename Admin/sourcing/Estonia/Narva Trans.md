@@ -14,3 +14,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2024 desde `Clubes/Estonia/Narva Trans/aruanne-2024.pdf` (sourceId `narvatrans-ee-aruanne-2024`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2020 desde `Clubes/Estonia/Narva Trans/aruanne-2020.pdf` (sourceId `narvatrans-ee-aruanne-2020`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2022 desde `Clubes/Estonia/Narva Trans/aruanne-2022.pdf` (sourceId `narvatrans-ee-aruanne-2022`).
