@@ -108,6 +108,29 @@ const fcilevadiaeeRevenueLinesByYear = {
     { rawLabel:'Noormängijate osavõtutasud', normalizedCategory:'youth_football', amountNative:0.33804, disclosureLevel:'aggregated' },
     { rawLabel:'Tulu liikmemaksudest', normalizedCategory:'member_dues', amountNative:0.00003, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Piletitulu Eesti-siseste võistlustustel', normalizedCategory:'matchday_competition', amountNative:0.021306, disclosureLevel:'aggregated' },
+    { rawLabel:'Piletitulu UEFA klubisarjades osalemisest', normalizedCategory:'matchday_competition', amountNative:0.006231, disclosureLevel:'aggregated' },
+    { rawLabel:'Hooajapiletite müügitulu', normalizedCategory:'season_tickets', amountNative:0.001164, disclosureLevel:'aggregated' },
+    { rawLabel:'Reklaamitulu', normalizedCategory:'sponsorship_commercial', amountNative:0.654495, disclosureLevel:'aggregated' },
+    { rawLabel:'Tulu ülekandeõiguste müügist', normalizedCategory:'broadcasting', amountNative:0.015, disclosureLevel:'aggregated' },
+    { rawLabel:'Tulu mängijate üleminekutest klubist välja', normalizedCategory:'player_sales', amountNative:0.63735, disclosureLevel:'aggregated' },
+    { rawLabel:'Klubi sümboolikaga toodete müügitulu', normalizedCategory:'sponsorship_commercial', amountNative:0.005054, disclosureLevel:'aggregated' },
+    { rawLabel:'Staadioni rent', normalizedCategory:'stadium_other', amountNative:0.015648, disclosureLevel:'aggregated' },
+    { rawLabel:'Tulu turniiride/laagrite korraldamisest', normalizedCategory:'other_income', amountNative:0.142996, disclosureLevel:'aggregated' },
+    { rawLabel:'Muud tulud', normalizedCategory:'other_income', amountNative:0.004277, disclosureLevel:'aggregated' },
+    { rawLabel:'UEFA toetused', normalizedCategory:'competition_bonus', amountNative:1.669386, disclosureLevel:'aggregated' },
+    { rawLabel:'Riigi ja/või KOV toetused', normalizedCategory:'other_income', amountNative:0.118966, disclosureLevel:'aggregated' },
+    { rawLabel:'Toetus kogukonnajuht', normalizedCategory:'other_income', amountNative:0.00864, disclosureLevel:'aggregated' },
+    { rawLabel:'Töötasu hüvitimise', normalizedCategory:'other_income', amountNative:0.003403, disclosureLevel:'aggregated' },
+    { rawLabel:'Riiklik treenerite tööjōukulude toetus', normalizedCategory:'other_income', amountNative:0.086522, disclosureLevel:'aggregated' },
+    { rawLabel:'EJL toetused', normalizedCategory:'other_income', amountNative:0.016757, disclosureLevel:'aggregated' },
+    { rawLabel:'Arengustipendiumid', normalizedCategory:'other_income', amountNative:0.036, disclosureLevel:'aggregated' },
+    { rawLabel:'Seotud osapoolte toetused/annetused', normalizedCategory:'other_income', amountNative:0.139, disclosureLevel:'aggregated' },
+    { rawLabel:'Mitteseotud osapoolte toetused/annetused', normalizedCategory:'other_income', amountNative:0.016047, disclosureLevel:'aggregated' },
+    { rawLabel:'Noormängijate osavõtutasud', normalizedCategory:'youth_football', amountNative:0.396549, disclosureLevel:'aggregated' },
+    { rawLabel:'Tulu liikmemaksudest', normalizedCategory:'member_dues', amountNative:0.00003, disclosureLevel:'aggregated' },
+  ],
 };
 const fcilevadiaeeExpenseLinesByYear = {
   2025: [
@@ -235,6 +258,28 @@ const fcilevadiaeeExpenseLinesByYear = {
     { rawLabel:'Pōhivara kulum', normalizedCategory:'depreciation', amountNative:-0.198766, disclosureLevel:'aggregated' },
     { rawLabel:'Ärikulud', normalizedCategory:'other_expenses', amountNative:-0.000153, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Mängijate palgakulu', normalizedCategory:'wages_squad', amountNative:-0.318164, disclosureLevel:'aggregated' },
+    { rawLabel:'Sotsiaalmaks mängijate töötasudelt', normalizedCategory:'wages_squad', amountNative:-0.10746, disclosureLevel:'aggregated' },
+    { rawLabel:'Mängijatele makstav sportlasetoetus', normalizedCategory:'wages_squad', amountNative:-0.375541, disclosureLevel:'aggregated' },
+    { rawLabel:'Mängijatele makstud stipendiumid', normalizedCategory:'wages_squad', amountNative:-0.04873, disclosureLevel:'aggregated' },
+    { rawLabel:'Muu personali palgakulu', normalizedCategory:'admin_general_expense', amountNative:-0.871501, disclosureLevel:'aggregated' },
+    { rawLabel:'Sotsiaalmaks muu personali töötasudelt', normalizedCategory:'admin_general_expense', amountNative:-0.291665, disclosureLevel:'aggregated' },
+    { rawLabel:'Kulu mängijate üleminekutest klubisse', normalizedCategory:'player_amortisation', amountNative:-0.136033, disclosureLevel:'aggregated' },
+    { rawLabel:'Kulutused turvalisusele', normalizedCategory:'match_organisation_expense', amountNative:-0.025218, disclosureLevel:'aggregated' },
+    { rawLabel:'Trükised jm materjalid', normalizedCategory:'match_organisation_expense', amountNative:-0.005978, disclosureLevel:'aggregated' },
+    { rawLabel:'Muud klassifitseerimata kodumängu korralduskulud', normalizedCategory:'match_organisation_expense', amountNative:-0.016722, disclosureLevel:'aggregated' },
+    { rawLabel:'Eesti meistrivōistluste osavōtutasu', normalizedCategory:'match_organisation_expense', amountNative:-0.01226, disclosureLevel:'aggregated' },
+    { rawLabel:'Lähetuskulud', normalizedCategory:'match_organisation_expense', amountNative:-0.363552, disclosureLevel:'aggregated' },
+    { rawLabel:'Turundus-, sponsorlus- ja reklaamikulud', normalizedCategory:'admin_general_expense', amountNative:-0.007582, disclosureLevel:'aggregated' },
+    { rawLabel:'Klubisümboolikaga toodete omahind', normalizedCategory:'other_expenses', amountNative:-0.005376, disclosureLevel:'aggregated' },
+    { rawLabel:'Klubile kuuluvate ja tema poolt renditud hoonete ja rajatisega seotud kulud', normalizedCategory:'admin_general_expense', amountNative:-0.159836, disclosureLevel:'aggregated' },
+    { rawLabel:'Klubi administeerimiskulud', normalizedCategory:'admin_general_expense', amountNative:-0.06582, disclosureLevel:'aggregated' },
+    { rawLabel:'Muud kulud', normalizedCategory:'other_expenses', amountNative:-0.002948, disclosureLevel:'aggregated' },
+    { rawLabel:'Muud tegevuskulud', normalizedCategory:'other_expenses', amountNative:-0.287677, disclosureLevel:'aggregated' },
+    { rawLabel:'Pōhivara kulum', normalizedCategory:'depreciation', amountNative:-0.280508, disclosureLevel:'aggregated' },
+    { rawLabel:'Ärikulud', normalizedCategory:'other_expenses', amountNative:-0.009594, disclosureLevel:'aggregated' },
+  ],
 };
 const fcilevadiaeeFiscalYearMeta = {
   2025: {
@@ -313,6 +358,20 @@ const fcilevadiaeeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:1.922401, officialTotalExpenses:2.846436, officialPAT:-1.144518,
   },
+  2024: {
+    currency:'EUR', fxRef:'EUR@2024-12-31',
+    sourceId:'fcilevadia-ee-aruanne-2024',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.303709, tax:0,
+    extraRows: [
+      {label:'Finantstulud', value:-0.001334},
+      {label:'Finantskulud', value:-0.302375},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:3.994821, officialTotalExpenses:3.392165, officialPAT:0.301615,
+  },
 };
 const fcilevadiaeePresupuestoOverlayByYear = {};
 
@@ -357,6 +416,11 @@ Object.assign(sources, {
   'fcilevadia-ee-aruanne-2023': {
     id:'fcilevadia-ee-aruanne-2023', clubId:'fcilevadia-ee',
     title:'FCI Levadia MTÜ — aruanne-2023 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'fcilevadia-ee-aruanne-2024': {
+    id:'fcilevadia-ee-aruanne-2024', clubId:'fcilevadia-ee',
+    title:'FCI Levadia MTÜ — aruanne-2024 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

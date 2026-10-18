@@ -109,6 +109,71 @@ tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-18): null, SIN VERIFICAR (sin caché de rosters para ee (tools/club-league-reference/ee.json)).
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/FCI Levadia/aruanne-2024.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/FCI Levadia/aruanne-2024.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Piletitulu Eesti-siseste võistlustustel | pág. 12, precedente |
+| 2 | Piletitulu UEFA klubisarjades osalemisest | pág. 12, precedente |
+| 3 | Hooajapiletite müügitulu | pág. 12, precedente |
+| 4 | Reklaamitulu | pág. 12, precedente |
+| 5 | Tulu ülekandeõiguste müügist | pág. 12, precedente |
+| 6 | Tulu mängijate üleminekutest klubist välja | pág. 12, Jev 1 |
+| 7 | Klubi sümboolikaga toodete müügitulu | pág. 12, precedente |
+| 8 | Staadioni rent | pág. 12, precedente |
+| 9 | Tulu turniiride/laagrite korraldamisest | pág. 12, Jev 0.99 |
+| 10 | Muud tulud | pág. 12, precedente |
+| 11 | UEFA toetused | pág. 12, precedente |
+| 12 | Riigi ja/või KOV toetused | pág. 12, precedente |
+| 13 | Toetus kogukonnajuht | pág. 12, precedente |
+| 14 | Töötasu hüvitimise | pág. 12, Jev 0.98 |
+| 15 | Riiklik treenerite tööjōukulude toetus | pág. 12, precedente |
+| 16 | EJL toetused | pág. 12, precedente |
+| 17 | Arengustipendiumid | pág. 12, precedente |
+| 18 | Seotud osapoolte toetused/annetused | pág. 12, precedente |
+| 19 | Mitteseotud osapoolte toetused/annetused | pág. 12, precedente |
+| 20 | Noormängijate osavõtutasud | pág. 5, precedente |
+| 21 | Tulu liikmemaksudest | pág. 5, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Mängijate palgakulu | pág. 5, precedente |
+| 2 | Sotsiaalmaks mängijate töötasudelt | pág. 5, precedente |
+| 3 | Mängijatele makstav sportlasetoetus | pág. 5, precedente |
+| 4 | Mängijatele makstud stipendiumid | pág. 5, precedente |
+| 5 | Muu personali palgakulu | pág. 5, precedente |
+| 6 | Sotsiaalmaks muu personali töötasudelt | pág. 5, precedente |
+| 7 | Kulu mängijate üleminekutest klubisse | pág. 12, precedente |
+| 8 | Kulutused turvalisusele | pág. 12, precedente |
+| 9 | Trükised jm materjalid | pág. 12, precedente |
+| 10 | Muud klassifitseerimata kodumängu korralduskulud | pág. 12, precedente |
+| 11 | Eesti meistrivōistluste osavōtutasu | pág. 12, precedente |
+| 12 | Lähetuskulud | pág. 12, precedente |
+| 13 | Turundus-, sponsorlus- ja reklaamikulud | pág. 12, precedente |
+| 14 | Klubisümboolikaga toodete omahind | pág. 12, precedente |
+| 15 | Klubile kuuluvate ja tema poolt renditud hoonete ja rajatisega seotud kulud | pág. 12, precedente |
+| 16 | Klubi administeerimiskulud | pág. 12, precedente |
+| 17 | Muud kulud | pág. 12, Jev 1 |
+| 18 | Muud tegevuskulud | pág. 12, precedente |
+| 19 | Pōhivara kulum | pág. 5, precedente |
+| 20 | Ärikulud | pág. 5, precedente |
+
+### Meta
+
+```text
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Konsolideeritud tulude-kulude aruanne", .md L124) (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2023
 
 ### Ingresos
@@ -450,4 +515,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/FCI Levadia/aruanne-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### fcilevadia-ee-aruanne-2024
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/FCI Levadia/aruanne-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
