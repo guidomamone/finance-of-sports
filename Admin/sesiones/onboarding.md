@@ -87,8 +87,6 @@ detalle con citas de cada club está en `Admin/registros/cola-borradores/altas-2
   documento (Guido la cortó en 40 de 566, ~US$ 6,75). Arreglo: que el ensayo cuente esos documentos como "rehacer con Mistral" con su
   costo. Mientras tanto, la lista se separó: `Admin/lotes/subagentes-validar.txt` (con tablas, ~US$ 3,47) y
   `Admin/lotes/sin-tablas-6paises.txt` (481 `.md` viejos sin tablas, sobre todo Bélgica y Colombia: decidir subagentes o Mistral).
-- Revisar contra el PDF `Clubes/Portugal/Felgueiras/Fecho-contas-2022-2023.md`: según el subagente de gestiones trae texto de un informe
-  de gestión que habla de 2016 y del 31/12/2023 (¿otro documento mezclado en la transcripción?). Felgueiras 2023 está cargado.
 - Para HALLAZGOS, "Conocido, sin daño hoy": `pdftotext` pierde las ligaduras en las fuentes Calibri CID ("Ne o-omzet", "ac va",
   "Toelich ng") en NEC Holding 2023-24, FC Den Bosch 2022-24 y Fortuna Sittard 2022-24; las cifras están bien y la categorización la
   hace una IA. Retomarlo si un rótulo roto frena localizar o la categorización (Sparta 2021-22 tenía "w inst-en-verliesrekening" en el
