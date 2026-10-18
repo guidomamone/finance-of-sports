@@ -37,6 +37,8 @@
 //   node tools/perimetro-senales.mjs --verdad Admin/mediciones/perimetro-verdad.tsv --jev    # con Jev (~US$ 0,0001 por documento)
 //   node tools/perimetro-senales.mjs --lista Admin/lotes/lote-NN.txt [--jev]                  # sin verdad: solo la propuesta
 //   node tools/perimetro-senales.mjs --lista Admin/mediciones/perimetro-a2-lista.txt --jev   # medición del paso A2 (clubes con ajuste, otro idioma)
+//   node tools/perimetro-senales.mjs --verdad Admin/mediciones/perimetro-a2-verdad-ajustes.tsv --jev [--modelo sonnet]   # (to-do 288) A2 contra
+//        el ajuste `perimetro` de cada documento; --modelo opus|sonnet: el paso A2 con ese modelo (Sonnet con su propia clave de caché, no pisa las de Opus)
 //   node tools/perimetro-senales.mjs --md "Clubes/Italia/AC Milan/x.md" --detalle      # un documento, con cada tabla encontrada
 //   node tools/perimetro-senales.mjs --md "Clubes/Grecia/Aris/x.md" --ver-a2           # el texto que recibiría Claude en A2 (gratis)
 //   node tools/perimetro-senales.mjs --lista <txt> --exportar-a2 <carpeta>             # los pedidos de A2 sin caché, para contestarlos sin API
@@ -64,6 +66,11 @@ function carpetaDeTrabajo(flag, ruta) {
   process.exit(1);
 }
 const USE_JEV = args.includes('--jev');
+// (to-do 288) --modelo: el modelo del paso A2 en ESTA corrida, para medir. Opus (sin --modelo) es el de siempre y usa las claves de caché de
+// siempre; con otro modelo, la clave incluye el modelo y la respuesta no se mezcla con las de Opus.
+const MODELOS_A2 = { opus: 'claude-opus-5-5', sonnet: 'claude-sonnet-5-5' };
+const MODELO_A2 = flagVal('--modelo');
+if (MODELO_A2 != null && (!MODELOS_A2[MODELO_A2] || !USE_JEV)) { console.error('--modelo opus|sonnet va solo con --jev'); process.exit(1); }
 const DETALLE = args.includes('--detalle');
 
 export const UMBRAL_C1 = 0.05;
@@ -323,16 +330,16 @@ async function pasoA2(mdRel, lineas) {
   if (!tit.some((t) => t.tabla)) return { motivo: 'ningún título con tabla' };
   const portada = portadaDelDocumento(lineas);
   const user = textoA2(tit, portada);
-  const clave = createHash('sha1').update(JSON.stringify([SISTEMA_A2, user])).digest('hex');
+  const clave = createHash('sha1').update(JSON.stringify(MODELO_A2 && MODELO_A2 !== 'opus' ? [SISTEMA_A2, user, MODELOS_A2[MODELO_A2]] : [SISTEMA_A2, user])).digest('hex');
   if (!cacheA2) { cacheA2 = new Map(); if (existsSync(CACHE_A2)) for (const l of readFileSync(CACHE_A2, 'utf8').split('\n')) { if (!l.trim()) continue; try { const j = JSON.parse(l); cacheA2.set(j.clave, j); } catch { /* línea rota */ } } }
   let datos = cacheA2.get(clave)?.datos;
   if (!datos) {
     const { llamarClaude } = await import('./claude-llamada.mjs');
-    const r = await llamarClaude({ system: SISTEMA_A2, user, schema: ESQUEMA_A2, tarea: 'perimetro-a2', pdf: mdRel.replace(/\.md$/, '.pdf'), maxTokens: 2000 });
+    const r = await llamarClaude({ system: SISTEMA_A2, user, schema: ESQUEMA_A2, tarea: MODELO_A2 && MODELO_A2 !== 'opus' ? `perimetro-a2-medir-${MODELO_A2}` : 'perimetro-a2', pdf: mdRel.replace(/\.md$/, '.pdf'), maxTokens: 2000, ...(MODELO_A2 ? { modelo: MODELOS_A2[MODELO_A2] } : {}) });
     if (r.pendiente) return { pendiente: true }; // modo batch: la respuesta llega en la ola siguiente
     if (r.error) return { error: r.error };
     datos = r.datos;
-    mkdirSync(dirname(CACHE_A2), { recursive: true }); appendFileSync(CACHE_A2, JSON.stringify({ clave, md: mdRel, datos }) + '\n'); cacheA2.set(clave, { datos });
+    mkdirSync(dirname(CACHE_A2), { recursive: true }); appendFileSync(CACHE_A2, JSON.stringify({ clave, md: mdRel, ...(MODELO_A2 && MODELO_A2 !== 'opus' ? { modelo: MODELOS_A2[MODELO_A2] } : {}), datos }) + '\n'); cacheA2.set(clave, { datos });
   }
   // La compuerta.
   const est = tit.find((t) => t.tabla && t.linea === datos.linea_estado);
