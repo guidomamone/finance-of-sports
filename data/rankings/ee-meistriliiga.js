@@ -62,7 +62,7 @@ window.RANKINGS["ee-meistriliiga"] = {
   },
   2023: {
     leagueSize: 10,
-    sinDato: ["tallinnakalev-ee","tartutammeka-ee"],
+    sinDato: ["tartutammeka-ee"],
     clubs: [
       { id:"floratallinn-ee", revenue:3.703, reportType:"official_balance_sheet",
         sourceId:"floratallinn-ee-aruanne-2023",
@@ -73,6 +73,9 @@ window.RANKINGS["ee-meistriliiga"] = {
       { id:"paidelinnameeskond-ee", revenue:1.982, reportType:"official_balance_sheet",
         sourceId:"paidelinnameeskond-ee-aruanne-2023",
         mix:[["Cuotas Sociales",0.125],["Comercial / Sponsors",0.925],["Estadio",0.006],["Televisión",0.003],["Premios por competencias",0.475],["Venta de Jugadores",0.074],["Otros ingresos",0.373]] },
+      { id:"tallinnakalev-ee", revenue:1.391, reportType:"official_balance_sheet",
+        sourceId:"tallinnakalev-ee-aruanne-2023",
+        mix:[["Cuotas Sociales",0.518],["Comercial / Sponsors",0.188],["Estadio",0.016],["Venta de Jugadores",0.021],["Otros ingresos",0.648]] },
       { id:"nommekalju-ee", revenue:1.148, reportType:"official_balance_sheet",
         sourceId:"nommekalju-ee-aruanne-2023",
         mix:[["Cuotas Sociales",0.29],["Comercial / Sponsors",0.336],["Estadio",0.006],["Premios por competencias",0.073],["Venta de Jugadores",0.011],["Otras secciones deportivas",0.004],["Otros ingresos",0.428]] },

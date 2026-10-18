@@ -175,6 +175,71 @@ Generados/Estonia/Tallinna Kalev/aruanne-2024.categorias.json (escalón de cada 
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/Tallinna Kalev/aruanne-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/Tallinna Kalev/aruanne-2023.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Liikmetelt saadud tasud | pág. 6, precedente |
+| 2 | Sihtfinantseerimine tegevuskuludeks | pág. 17, precedente |
+| 3 | Mittesihtotsatarbelised annetused ja toetused | pág. 17, precedente |
+| 4 | Renditulu staadioni või selle rajatiste väljarentimisest | pág. 18, precedente |
+| 5 | Piletitulu | pág. 18, precedente |
+| 6 | Tulu turniiride korraldamisest | pág. 18, precedente |
+| 7 | Tulu mängijaõiguste müügist | pág. 18, precedente |
+| 8 | Klubi peasponsorilt saadud tulu | pág. 18, precedente |
+| 9 | Tulu teistelt sponsoritelt | pág. 18, precedente |
+| 10 | Muud klassifitseerimata äritulud | pág. 18, precedente |
+| 11 | Muud tulud | pág. 6, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Sportlasetoetus | pág. 18, precedente |
+| 2 | Sportlase stipendium | pág. 18, precedente |
+| 3 | Elektrienergia | pág. 19, precedente |
+| 4 | Soojusenergia | pág. 19, precedente |
+| 5 | Veevarustusteenused | pág. 19, precedente |
+| 6 | Mitmesugused bürookulud | pág. 19, precedente |
+| 7 | Lähetuskulud | pág. 19, precedente |
+| 8 | Koolituskulud | pág. 19, precedente |
+| 9 | Kulu ebatõenäoliselt laekuvatest nõuetest | pág. 19, Jev 0.99 |
+| 10 | Reklaam | pág. 19, precedente |
+| 11 | Liiga liikmemaksud | pág. 19, precedente |
+| 12 | Proportsiooniga tagastamatu käibemaks | pág. 19, precedente |
+| 13 | Staadioni ja saali rent | pág. 19, precedente |
+| 14 | Transport | pág. 19, precedente |
+| 15 | Meditsiinitarvikud- ja teenused | pág. 19, precedente |
+| 16 | Spordivarustus | pág. 19, precedente |
+| 17 | Mängijaõiguste ülemineku kulud | pág. 19, precedente |
+| 18 | Laagrite-ja turniiride korralduskulud | pág. 19, precedente |
+| 19 | Ruumide rent | pág. 19, precedente |
+| 20 | Autodega seotud kulud | pág. 19, precedente |
+| 21 | Turvateenused | pág. 19, precedente |
+| 22 | Muud | pág. 19, precedente |
+| 23 | Mängijate palgakulu | pág. 19, precedente |
+| 24 | Sotsiaalmaksud mängijate töötasudelt | pág. 19, precedente |
+| 25 | Muu personali palgakulu | pág. 19, precedente |
+| 26 | Sotsiaalmaksukulu muu personali töötasudelt | pág. 19, precedente |
+| 27 | Puhkusekohustuse reserv | pág. 19, precedente |
+| 28 | Põhivarade kulum ja väärtuse langus | pág. 6, precedente |
+| 29 | Muud kulud | pág. 6, precedente |
+
+### Meta
+
+```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L146) (Claude 2026-10-18)
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Televisión. sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2022
 
 ### Ingresos
@@ -453,4 +518,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Tallinna Kalev/aruanne-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### tallinnakalev-ee-aruanne-2023
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Tallinna Kalev/aruanne-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
