@@ -27,6 +27,10 @@ Para que la principal lo pase a TODO, CHANGELOG y ESTADO al mergear (skill de ar
   Pro League.
 - Gestiones (to-do 195): Portugal, 49 gestiones confirmadas de 25 clubes (tanda-2026-10-17); 129 casos de la cola contestados. Estoril
   2025 sin gestión (a `dudas-por-club.md`). Brasil (CRB, Cuiabá, Ferroviária, Goiás) sigue esperando a los clubes; OFI 2018 sin gestión.
+  Clubes sin caso en la cola (tanda-2026-10-18, armada a mano con el formato de --armar): 9 gestiones confirmadas (Fortaleza 2025 con el
+  presidente del consejo de la SAF, Novorizontino 2013-2025, Ituano 2024, Ceará 2024-25, Pari NN 2021-22, Once Caldas 2024-25,
+  Mönchengladbach 2023). A `dudas-por-club.md`: Cruzeiro 2024-25 (fecha del cierre de la compra de la SAF), Amazonas 2024, Novorizontino
+  2010. Con esto, del 195 solo queda lo que espera respuesta de los clubes.
   Criterio aplicado (de `pt.md`): club dueño de la SAD → presidente del club (Sporting 2001-2003 con Dias da Cunha aunque la SAD la
   presidía Ribeiro Telles; Marítimo 2021-22 con Rui Fontes aunque firma João Martins); dueño sociedad → presidente que firma.
 
