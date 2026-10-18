@@ -144,7 +144,7 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
 
 ### Qué queda (TODO)
 
-- 252: notas sin URL del canal (Argentina 4, Brasil 3, Perú, Italia y Chile 1; Colombia 2 es de
+- 252: notas sin URL del canal (Brasil 3, Perú, Italia y Chile 1; Colombia 2 es de
   fos-onboarding). Inglaterra y Alemania probablemente sean de registro (Companies House, Unternehmensregister), como Dinamarca: canal
   por API en el script, no URL.
 - 26 clubes con el PDF del ejercicio siguiente ya bajado y sin cargar (los lista `node tools/ejercicios-nuevos.mjs`): onboarding.
@@ -162,3 +162,10 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
   página se leyó sin el PDF. Hallazgo: **Torreense 2024-25** (`Clubes/Portugal/Torreense/sad_relatoriocontas2024-2025v2.pdf`, **copiado
   con rsync a la carpeta principal**; ahí `data/faltantes/` queda viejo hasta el merge, que lo regenera). Corrida de hoy: 1 nuevo, 28 ya
   bajados sin cargar, 23 a revisar con el navegador, 11 revisados sin publicar. ASSET_V 1274.
+- **252: Argentina.** "Página del canal" en las 4 notas (Almagro `clubalmagro.com.ar`, Banfield `clubabanfield.org`, Ferro
+  `ferrocarriloeste.org.ar`, Los Andes `losandesoficial.com/index.php/balances`). El script ahora: (a) reconoce el NÚMERO de ejercicio que
+  sigue ("BALANCE 106.pdf" en Los Andes), aprendido del desfase número/año de los archivos de la carpeta ("balance-ejercicio-105-2020-21");
+  (b) mira el texto del link y el título de la mediateca, no solo el nombre del archivo (Ferro sube con nombres opacos); (c) prueba la
+  mediateca de WordPress aunque la página se arme con JavaScript (Banfield). Resultado: Ferro 2024 ya bajado, Los Andes y Banfield
+  revisados sin publicar, Almagro a revisar (el sitio no responde; sus PDFs solo están en Wayback). Corrida de hoy: 0 nuevos, 30 ya
+  bajados, 18 a revisar con el navegador.

@@ -89,21 +89,16 @@ salió. Lo nuevo va arriba. Un PDF bajado queda en su carpeta de Clubes/ y esper
 
 ### 2026-10-18
 
-- Ejercicio 2025 de Torreense — https://torreense.com/files/SAD_RelatorioContas2024-2025V2.pdf — encontrado por la tarea mensual el 2026-10-18; bajado a Clubes/Portugal/Torreense/sad_relatoriocontas2024-2025v2.pdf
-- Revisados y todavía no publicados (se vuelve a mirar el mes que viene): Académica 2025, Arsenal 2026, AVS 2025, Felgueiras 2025, Godoy Cruz 2021, Juve Stabia 2025, Liverpool 2026, Mafra 2025, San Lorenzo 2018, Tondela 2022, West Ham United 2026
-- Ya bajados y sin cargar (para el onboarding): AGF 2022, Amazonas 2025, Brøndby 2021, Chapecoense 2022, Chaves 2024, Colo-Colo 2025, Coritiba 2025, Dinamo Zagreb 2025, Estrela da Amadora 2024, FC København 2025, FC Fredericia 2020, Grêmio 2025, Hajduk Split 2025, Juventude 2021, FC Midtjylland 2020, FC Nordsjælland 2025, CA Osasuna 2025, Ponte Preta 2025, Randers FC 2024, Rijeka 2025, São Paulo 2025, Silkeborg IF 2025, SønderjyskE 2023, União de Leiria 2025, Vasco da Gama 2024, Vejle 2025, Viborg FF 2025, Villarreal CF 2025
+- Revisados y todavía no publicados (se vuelve a mirar el mes que viene): Académica 2025, Arsenal 2026, AVS 2025, Banfield 2021, Boavista 2025, Felgueiras 2025, Godoy Cruz 2021, Juve Stabia 2025, Liverpool 2026, Los Andes 2022, Mafra 2025, Sampdoria 2022, San Lorenzo 2018, Tondela 2022, West Ham United 2026
+- Ya bajados y sin cargar (para el onboarding): AGF 2022, Amazonas 2025, Brøndby 2021, Chapecoense 2022, Chaves 2024, Colo-Colo 2025, Coritiba 2025, Dinamo Zagreb 2025, Estrela da Amadora 2024, FC København 2025, Ferro Carril Oeste 2024, FC Fredericia 2020, Grêmio 2025, Hajduk Split 2025, Juventude 2021, FC Midtjylland 2020, FC Nordsjælland 2025, CA Osasuna 2025, Ponte Preta 2025, Randers FC 2024, Rijeka 2025, São Paulo 2025, Silkeborg IF 2025, SønderjyskE 2023, Torreense 2025, União de Leiria 2025, Vasco da Gama 2024, Vejle 2025, Viborg FF 2025, Villarreal CF 2025
 - A revisar con el navegador: Alianza Lima, ejercicio 2025 — sin URL en Admin/sourcing/Perú/Alianza Lima.md
-- A revisar con el navegador: Almagro, ejercicio 2024 — sin URL en Admin/sourcing/Argentina/Almagro.md
+- A revisar con el navegador: Almagro, ejercicio 2024 — ninguna página se pudo leer (https://clubalmagro.com.ar/ (fetch failed))
 - A revisar con el navegador: Argentinos Juniors, ejercicio 2020 — sin carpeta en la evidencia de carga
-- A revisar con el navegador: Banfield, ejercicio 2021 — sin URL en Admin/sourcing/Argentina/Banfield.md
-- A revisar con el navegador: Boavista, ejercicio 2025 — ninguna página se pudo leer (https://www.boavistafc.pt/ (captcha o página vacía: se arma con JavaScript))
 - A revisar con el navegador: Botafogo-SP, ejercicio 2025 — sin URL en Admin/sourcing/Brasil/Botafogo-SP.md
 - A revisar con el navegador: Boyacá Chicó, ejercicio 2025 — sin URL en Admin/sourcing/Colombia/Boyaca Chico.md
 - A revisar con el navegador: Chievo Verona, ejercicio 2017 — sin URL en Admin/sourcing/Italia/Chievo Verona.md
-- A revisar con el navegador: Ferro Carril Oeste, ejercicio 2024 — sin URL en Admin/sourcing/Argentina/Ferro Carril Oeste.md
 - A revisar con el navegador: Instituto ACC, ejercicio 2025 — ninguna página se pudo leer (https://institutoacc.com.ar/index.php/fue-aprobada-la-asamblea-general-ordinaria-2/ (captcha o página vacía: se arma con JavaScript) ; https://institutoacc.com.ar/index.php/convocatoria-a-asamblea-general-ordinaria-2026/ (captcha o página vacía: se arma con JavaScript))
 - A revisar con el navegador: Ituano, ejercicio 2025 — sin URL en Admin/sourcing/Brasil/Ituano.md
-- A revisar con el navegador: Los Andes, ejercicio 2022 — sin URL en Admin/sourcing/Argentina/Los Andes.md
 - A revisar con el navegador: Mirassol, ejercicio 2025 — sin URL en Admin/sourcing/Brasil/Mirassol.md
 - A revisar con el navegador: Borussia Mönchengladbach, ejercicio 2025 — registro con formulario: en https://www.unternehmensregister.de buscar «Borussia VfL 1900 Mönchengladbach GmbH», Jahresabschluss o Konzernabschluss del ejercicio
 - A revisar con el navegador: Monza, ejercicio 2025 — ninguna página se pudo leer (https://acmonza.com/en/informazioni-finanziarie/ (HTTP 403))
@@ -111,7 +106,6 @@ salió. Lo nuevo va arriba. Un PDF bajado queda en su carpeta de Clubes/ y esper
 - A revisar con el navegador: RB Bragantino, ejercicio 2025 — sin carpeta en la evidencia de carga
 - A revisar con el navegador: River Plate, ejercicio 2025 — ninguna página se pudo leer (https://www.cnv.gov.ar/SitioWeb/Empresas/Empresa/30526748448 (tardó más de 30 s) ; https://aif2.cnv.gov.ar/api/ValetKeyProvider/GetPublicValetKey/ (HTTP 400) ; https://blob.cnv.gov.ar/BlobWebService.svc/DownloadBlob/ (HTTP 400) ; https://www.argentina.gob.ar/servicio/solicitar-un-informe-de-balances-presentados-en-la-inspeccion-general-de-justicia (HTTP 403))
 - A revisar con el navegador: Salernitana, ejercicio 2024 — ninguna página se pudo leer (https://salernitana.it/societa/bilancio-e-relazioni/ (HTTP 404))
-- A revisar con el navegador: Sampdoria, ejercicio 2022 — ninguna página se pudo leer (https://sampdoria.it/wp-content/uploads/ (HTTP 403))
 - A revisar con el navegador: VfB Stuttgart, ejercicio 2025 — registro con formulario: en https://www.unternehmensregister.de buscar «VfB Stuttgart 1893 AG», Jahresabschluss o Konzernabschluss del ejercicio
 - A revisar con el navegador: Universidad de Chile, ejercicio 2025 — sin URL en Admin/sourcing/Chile/Universidad de Chile (Azul Azul).md
 - A revisar con el navegador: Unión Magdalena, ejercicio 2019 — sin URL en Admin/sourcing/Colombia/Union Magdalena.md

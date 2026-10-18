@@ -116,13 +116,14 @@ async function bajar(url, binario = false) {
     const html = await r.text(); return { html, final: r.url };
   } catch (e) { return { error: e.name === 'AbortError' ? 'tardó más de 30 s' : e.message }; }
 }
+// links a PDF de la página, con el texto del link (un archivo con nombre opaco, "firm-lw3939232.pdf", puede decir "Balance 2024" en el link)
 function linksPdf(html, base) {
-  const out = new Set();
-  for (const m of html.matchAll(/href\s*=\s*["']([^"']+)["']/gi)) {
+  const out = new Map();
+  for (const m of html.matchAll(/<a\b[^>]*href\s*=\s*["']([^"']+)["'][^>]*>([\s\S]{0,300}?)<\/a>/gi)) {
     const h = m[1].replace(/&amp;/g, '&'); if (!/\.pdf(\?|#|$)/i.test(h) && !/download|descarg|document/i.test(h)) continue;
-    try { out.add(new URL(h, base).href); } catch { /* href roto */ }
+    try { const u = new URL(h, base).href; out.set(u, ((out.get(u) || '') + ' ' + m[2].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ')).trim()); } catch { /* href roto */ }
   }
-  return [...out];
+  return [...out].map(([url, texto]) => ({ url, texto }));
 }
 const dormir = (ms) => new Promise((r) => setTimeout(r, ms));
 // los PDFs de la mediateca de WordPress del sitio (wp-json/wp/v2/media); [] si el sitio no es WordPress o no lo expone
@@ -132,7 +133,7 @@ async function mediatecaWP(url) {
   let out = [];
   try {
     const r = await fetch(`${base}/wp-json/wp/v2/media?per_page=100&mime_type=application/pdf&orderby=date&order=desc`, { headers: UA, signal: AbortSignal.timeout(30000) });
-    if (r.ok) { const j = await r.json(); if (Array.isArray(j)) out = j.map((m) => m.source_url).filter(Boolean); }
+    if (r.ok) { const j = await r.json(); if (Array.isArray(j)) out = j.filter((m) => m.source_url).map((m) => ({ url: m.source_url, texto: String(m.title?.rendered || '').replace(/<[^>]+>/g, ' ') })); }
   } catch { /* no es WordPress */ }
   _media.set(base, out); return out;
 }
@@ -197,22 +198,29 @@ async function main() {
     // nuevo: está bajado y falta cargarlo, que es otro trabajo (node tools/estado.mjs)
     const dosAnios = (f) => !mmdd.startsWith('12') && f.includes(String(anio - 1)) && f.includes(String(anio)) && f.indexOf(String(anio - 1)) < f.lastIndexOf(String(anio));
     if ([...enCarpeta].some((f) => /\.pdf$/.test(f) && (fs.some((x) => f.includes(x.toLowerCase())) || dosAnios(f)))) { yaBajado.push({ id, nombre: c.n || CLUBS[id]?.displayName || id, anio }); continue; }
+    // clubes que numeran sus ejercicios (Argentina: "balance-ejercicio-105-2020-21.pdf"): el número del ejercicio que sigue, por el
+    // desfase número/año que ya muestran los archivos de la carpeta
+    let numEj = null;
+    for (const f of enCarpeta) { const m = f.match(/ejercicio[-_ ]?n?[°º]?[-_ ]?(\d{2,3})\D+(\d{4})(?:[-_](\d{2,4}))?/); if (m) { const fin = m[3] ? +m[2] + 1 : +m[2]; const n = anio - fin + +m[1]; if (numEj == null || n > numEj) numEj = n; } }
     const fallas = []; const nuevos = [];
     for (const u of urls) {
       await dormir(1000);
-      const p = await bajar(u);
-      if (p.error) { fallas.push(`${u} (${p.error})`); continue; }
-      if (/captcha|cf-challenge|are you a robot|smartcaptcha/i.test(p.html) || p.html.length < 2000) { fallas.push(`${u} (captcha o página vacía: se arma con JavaScript)`); continue; }
-      // además de los links de la página, la mediateca de WordPress del dominio (skill club-sourcing, 0.1: PDFs que ninguna página enlaza)
-      const media = await mediatecaWP(p.final);
-      for (const l of [...linksPdf(p.html, p.final), ...media]) {
-        const txt = decodeURIComponent(l); if (!fs.some((f) => txt.includes(f))) continue;
+      let p = await bajar(u);
+      const fallo = p.error ? p.error : (/captcha|cf-challenge|are you a robot|smartcaptcha/i.test(p.html) || p.html.length < 2000) ? 'captcha o página vacía: se arma con JavaScript' : null;
+      // la mediateca de WordPress del dominio (skill club-sourcing, 0.1: PDFs que ninguna página enlaza); responde aunque la página se
+      // arme con JavaScript (Banfield)
+      const media = await mediatecaWP(p.final || u);
+      if (fallo && !media.length) { fallas.push(`${u} (${fallo})`); continue; }
+      if (fallo) p = { html: '', final: u };
+      for (const { url: l, texto } of [...linksPdf(p.html, p.final), ...media]) {
+        const arch = decodeURIComponent(basename(new URL(l).pathname)); const todo = `${decodeURIComponent(l)} ${texto}`;
+        // la temporada (en el link, su texto o el título de la mediateca) o el número de ejercicio que sigue ("BALANCE 106.pdf", Los Andes)
+        const porNumero = numEj != null && new RegExp(`(^|\\D)${numEj}(\\D|$)`).test(`${arch} ${texto}`) && /balance|ejercicio|memoria|estados/i.test(`${arch} ${texto}`);
+        if (!fs.some((f) => todo.includes(f)) && !porNumero) continue;
         // que el archivo nombre los estados financieros, y no un acta, un dictamen o un edicto (São Paulo: "ato administrativo";
-        // Chapecoense: "Parecer Conselho Fiscal")
-        const arch = basename(new URL(l).pathname);
-        // un nombre sin palabras ("2-2023_2024.pdf", Estrela da Amadora) vale: solo dice la temporada
-        const sinPalabras = !/\p{L}{3,}/u.test(decodeURIComponent(arch).replace(/\.pdf$/i, ''));
-        if ((!FINANCIERO.test(decodeURIComponent(arch)) && !sinPalabras) || NO_FINANCIERO.test(decodeURIComponent(arch))) continue;
+        // Chapecoense: "Parecer Conselho Fiscal"); el nombre o el texto del link; un nombre sin palabras ("2-2023_2024.pdf") vale
+        const sinPalabras = !/\p{L}{3,}/u.test(arch.replace(/\.pdf$/i, ''));
+        if ((!FINANCIERO.test(`${arch} ${texto}`) && !/balance/i.test(`${arch} ${texto}`) && !sinPalabras) || NO_FINANCIERO.test(`${arch} ${texto}`)) continue;
         if (yaAvisados.has(l) || enCarpeta.has(basename(new URL(l).pathname).toLowerCase())) continue;
         nuevos.push(l);
       }
