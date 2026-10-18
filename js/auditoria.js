@@ -89,6 +89,28 @@ const FIN_AUDITORIA = (function(){
     card.querySelector('.aud-lista').innerHTML = anios.map(y => fila(clubId, y, d[y] || d[String(y)])).join('');
   }
 
-  return { render };
+  // LAS CUENTAS DE LA LIGA (pestaña Ligas): la entidad que organiza la liga, su auditor y qué dijo, del ejercicio elegido
+  // (window.LIGA_AUDITORIA, data/auditoria/_ligas.js; mismo vocabulario que los clubes). Sin dato de ese año, nada: Ligas no muestra la tarjeta.
+  function cardLiga(leagueId, year){
+    const a = ((window.LIGA_AUDITORIA || {})[leagueId] || {})[year];
+    if(!a || !a.entidad) return null;
+    const al = alcance(a.alcance);
+    const d = al && al.reemplaza ? [al.chip, 'gris', al.x] : dictamen(a.dictamen);
+    const au = a.auditor;
+    const ent = a.entidad.legal || a.entidad.nombre;
+    const frase = esc(ent) + ', ' + esc(t('aud.liga.org', 'la entidad que organiza la liga, publica su propio balance.'))
+      + (au ? ' ' + esc(t('aud.liga.lo', 'Lo auditó')) + ` <strong>${esc(au.nombre)}</strong>` + (au.legal && au.legal !== au.nombre ? ' (' + esc(au.legal) + ')' : '') + '.'
+            : ' ' + esc(t('aud.liga.sin', 'No trae informe de un auditor.')));
+    const extra = al && !al.reemplaza ? `<span class="aud-chip aud-gris">${esc(al.chip)}</span>` : '';
+    const cont = a.continuidad ? `<span class="aud-chip aud-salv">${esc(t('aud.cont', 'Duda sobre la continuidad'))}</span>` : '';
+    const ver = a.fuente && a.fuente.md ? `<a class="aud-ver" href="${esc(encodeURI(a.fuente.md))}" target="_blank" rel="noopener">${esc(t('estr.ver.doc', 'ver en el balance'))}</a>` : '';
+    const card = document.createElement('section');
+    card.className = 'card aud-liga';
+    card.innerHTML = `<div class="aud-liga-txt"><h2>${esc(t('aud.liga.title', 'Las cuentas de la liga'))}</h2><p>${frase}</p></div>
+      <div class="aud-liga-der"><span class="aud-chip aud-${d[1]}" title="${esc(d[2])}">${esc(d[0])}</span>${extra}${cont}${ver}</div>`;
+    return card;
+  }
+
+  return { render, cardLiga };
 })();
 window.FIN_AUDITORIA = FIN_AUDITORIA;

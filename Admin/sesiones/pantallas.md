@@ -229,3 +229,21 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
   programada o un paso al final de `lote.mjs` / del merge.
 - Mejora de script (vista armando el 253): `node tools/gasto.mjs --json` se corta a los 64 KB cuando la salida va por un pipe (el
   proceso sale antes de vaciar stdout).
+
+## Después del noveno merge del 2026-10-18
+
+### Qué cambió (para CHANGELOG)
+
+- Tablero del pipeline: cobertura de cada liga en su última temporada cerrada (`ligas.csv` de `tools/tablero.mjs`; data/faltantes/ sin
+  la temporada `reciente`): cuántas completas, con 50 % o más y por debajo, y la lista con el porcentaje. Subida con la foto de hoy: 56
+  ligas, ninguna completa, 13 con 50 % o más, 43 por debajo.
+- To-do 282 en Ligas: tarjeta "Las cuentas de la liga" arriba de "La liga en total" (`FIN_AUDITORIA.cardLiga()` en `js/auditoria.js`,
+  llamada desde `pintar()` de `js/liga.js`): la entidad que organiza la liga, quién la auditó y qué dijo, con el mismo vocabulario que
+  los clubes (dictamen, alcance, continuidad) y "ver en el balance". Solo aparece si `LIGA_AUDITORIA[liga][ejercicio]` tiene dato;
+  `data/auditoria/_ligas.js` se carga de entrada en `index.html`. Mockup aprobado: "Ligas · quién auditó a la liga" de "Pantallas FoS".
+  Probado: Premier League 2025 (Deloitte, sin salvedades); 2024 y LaLiga, sin tarjeta. `data/faltantes/br-serieB.js` regenerado
+  (`faltantes-liga.mjs`; el audit lo marcaba desfasado). ASSET_V 1289.
+
+### Qué queda (para TODO)
+
+- Borrar el 282 en Ligas: queda solo el dato (más entidades organizadoras, to-do 295).

@@ -973,6 +973,11 @@
   .aud-x{font-size:13px;color:#45474d;line-height:1.45;}
   .aud-link{flex:0 0 auto;font-size:13px;}
   .aud-ver{font-size:13px;}
+  .aud-liga{display:flex;flex-wrap:wrap;align-items:center;gap:10px 20px;}
+  .aud-liga-txt{flex:1 1 320px;min-width:0;display:flex;flex-direction:column;gap:3px;}
+  .aud-liga-txt h2{margin:0;font-size:15px;}
+  .aud-liga-txt p{margin:0;font-size:14px;color:#45474d;line-height:1.5;}
+  .aud-liga-der{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;}
     /* La página de un sponsor o una marca (js/sponsor.js) */
   #mainNav button[data-section="sponsor"]{display:none;}
   .spo-view{display:flex;flex-direction:column;gap:16px;}

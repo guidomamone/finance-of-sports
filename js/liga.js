@@ -306,6 +306,9 @@ window.LIGA_VIEW = (function(){
     }
 
     wrap.appendChild(encabezado(r));
+    // Quién auditó a la entidad que organiza la liga, si su balance de ese ejercicio está cargado (js/auditoria.js).
+    var cuentasLiga = window.FIN_AUDITORIA && FIN_AUDITORIA.cardLiga ? FIN_AUDITORIA.cardLiga(st.league, st.year) : null;
+    if(cuentasLiga) wrap.appendChild(cuentasLiga);
     var filasSim = st.simulados.map(function(s){ return s.fila; });
     wrap.appendChild(consolidado(r, filasSim));
     var grilla = el('div', 'lg-grilla');
