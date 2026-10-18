@@ -319,7 +319,7 @@ window.GRUPOS = {
     }
    },
    {
-    "clubId": null,
+    "clubId": "lommelsk-be",
     "nombre": "Voetbalclub Lommel SK NV",
     "pais": "BE",
     "control": true,

@@ -37,3 +37,24 @@
 ## Qué deja de ser cierto en ESTADO
 
 - "Finanzas multi-año": el registro de entidades tiene 47 clubes (no 44) y 9 grupos multiclub.
+
+## Después del merge del 2026-10-18
+
+### Qué cambió (para CHANGELOG)
+
+- To-do 294 c: los clubes de `altas-2026-10-17.md` publicados en main (los tres belgas que cargó onboarding) entran al registro de
+  entidades con su carga 2025. Lommel SK: la entidad que ya estaba como controlada de CFG suma `clubId` (entra a la página del grupo CFG
+  como club con balance) y Voetbalclub Lommel United VZW `vinculada`, con 1 acción de 60.488 (jaarrekening 2025 L694-695). Patro Eisden
+  Maasmechelen VZW y Koninklijke Sporting Club Lokeren - Temse VZW, una entidad cada uno, sin dueños. Registro: 50 clubes, 226 entidades,
+  333 relaciones. ASSET_V 1279 en la rama.
+
+### Qué queda (para TODO)
+
+- 294 c: los otros clubes del borrador (Viking, Vålerenga, Luzern, St. Gallen, Molde, Go Ahead Eagles, Basel, Pardubice, Aalesund,
+  Fredrikstad, Sarpsborg 08) cuando estén publicados; el borrador tiene la entidad de cada uno con cita.
+- 282 c: con los 17 clubes nuevos de onboarding, los balances sin línea de auditoría pasan de 23 a 40 (`node tools/auditoria.mjs
+  --pendientes`).
+
+### Qué deja de ser cierto en ESTADO
+
+- El registro de entidades tiene 50 clubes con estructura (no 47).
