@@ -1544,6 +1544,21 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
+ "napoli-it": {
+  "2022": {
+   "auditor": {
+    "nombre": "Grant Thornton",
+    "tipo": "firma",
+    "legal": "Ria Grant Thornton S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Napoli/Napoli-relazione-revisione-2022.md",
+    "linea": 24
+   }
+  }
+ },
  "parma-it": {
   "2016": {
    "auditor": {
