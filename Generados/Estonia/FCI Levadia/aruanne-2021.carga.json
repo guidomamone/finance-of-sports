@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2021.pdf",
- "generado": "2026-10-18T18:34:32.501Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "5 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"EJL toetused noortetööle\" -> other_income 0.75; \"Arengustipendiumid\" -> other_income 0.6; \"Kulu mängijate üleminekutest klubisse\" -> player_amortisation 0.6; \"Toitluskulud\" -> match_organisation_expense 0.5; \"Meditsiinitarvikud - ja teenused\" -> other_expenses 0.5"
-  }
- ],
+ "generado": "2026-10-18T18:44:37.946Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-18: 2025 trae los dos estados (konsolideeritud L142-177 y Lisa 15, la MTÜ sola, L554-606); las controladas son dos escuelas de fútbol del club: consolidado (CONVENCIONES-DATOS, regla del perímetro, punto 2). (revisión del alta, subagente Sonnet, revisado por Claude 2026-10-18))",
   "gestión: ningún presidente confirmado cubre 2021 (cierre 2021-12-31); pregunta en la cola (no frena)"
@@ -169,13 +164,13 @@
    },
    {
     "rawLabel": "EJL toetused noortetööle",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "youth_football",
     "amountNative": 0.004146,
     "disclosureLevel": "aggregated",
     "_pag": 11,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Arengustipendiumid",
@@ -183,9 +178,9 @@
     "amountNative": 0.034,
     "disclosureLevel": "aggregated",
     "_pag": 11,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Mitteseotud osapoolte toetused/annetused",
@@ -285,9 +280,9 @@
     "amountNative": -0.072287,
     "disclosureLevel": "aggregated",
     "_pag": 11,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Kulutused turvalisusele",
@@ -305,9 +300,9 @@
     "amountNative": -0.0012,
     "disclosureLevel": "aggregated",
     "_pag": 11,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Trükised jm materjalid",
@@ -395,9 +390,9 @@
     "amountNative": -0.02967,
     "disclosureLevel": "aggregated",
     "_pag": 11,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Mänguvormid jm varustus",
@@ -748,12 +743,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
    "signoFijo": 0.004146,
-   "cat": "other_income",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "youth_football",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Subsidio de la federación (EJL) rotulado para trabajo juvenil ('noortetööle'): youth_football, igual que 'EJLiidu toetused noortoole' de Narva 2019 (respuesta de Guido). El 'EJL toetused' genérico de 2025 va a other_income; este rótulo tiene destino juvenil. [EJL toetused noortetööle 4 146 (aruanne-2021.md Lisa 6, L329, columna 2021)]",
    "destino": "revenue",
    "amountNative": 0.004146
   },
@@ -765,11 +760,11 @@
    "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
    "signoFijo": 0.034,
    "cat": "other_income",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Es un ingreso (beca de desarrollo recibida dentro de Annetused ja toetused), no un pago a jugadores, así que la regla de becas a wages_squad (lado gasto) no aplica. Sin destino explícito: other_income. Nótese que el club paga aparte 'Mängijatele makstud stipendiumid' (gasto, wages_squad). [Arengustipendiumid 34 000 (aruanne-2021.md Lisa 6, L330, columna 2021)]",
    "destino": "revenue",
    "amountNative": 0.034
   },
@@ -918,11 +913,11 @@
    "origen": "verificacion (nota que desglosa \"Tegevuskulud\")",
    "signoFijo": 0.072287,
    "cat": "player_amortisation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Costo de traspaso de jugadores hacia el club: player_amortisation. [Kulu mängijate üleminekutest klubisse 72 287 (aruanne-2021.md Lisa 8, L361)]",
    "destino": "expense",
    "amountNative": -0.072287
   },
@@ -949,11 +944,11 @@
    "origen": "verificacion (nota que desglosa \"Tegevuskulud\")",
    "signoFijo": 0.0012,
    "cat": "match_organisation_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Comidas dentro del bloque de gastos de partido (seguridad, impresos, gastos de organización de partidos locales). Misma familia que 'Trükised jm materjalid' de 2025 (match_organisation_expense). [Toitluskulud 1 200 (aruanne-2021.md Lisa 8, L363, entre Kulutused turvalisusele y Muud klassifitseerimata kodumängu korralduskulud)]",
    "destino": "expense",
    "amountNative": -0.0012
   },
@@ -1087,11 +1082,11 @@
    "origen": "verificacion (nota que desglosa \"Tegevuskulud\")",
    "signoFijo": 0.02967,
    "cat": "other_expenses",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Insumos y servicios médicos sin categoría propia: other_expenses, como Nõmme 2025, Tartu 2025 y Kalev 2025 (Narva 2025 los puso en admin_general_expense, minoría). [Meditsiinitarvikud - ja teenused 29 670 (aruanne-2021.md Lisa 8, L372, columna 2021)]",
    "destino": "expense",
    "amountNative": -0.02967
   },
@@ -1279,8 +1274,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 20,
   "lineasGasto": 23,
   "metaFilas": 2,

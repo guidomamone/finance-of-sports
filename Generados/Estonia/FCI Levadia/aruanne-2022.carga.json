@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2022.pdf",
- "generado": "2026-10-18T18:34:32.595Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "4 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"EJL toetused noortetööle\" -> other_income 0.75; \"Arengustipendiumid\" -> other_income 0.6; \"Kulu mängijate üleminekutest klubisse\" -> player_amortisation 0.6; \"Meditsiinitarvikud - ja teenused\" -> other_expenses 0.5"
-  }
- ],
+ "generado": "2026-10-18T18:44:38.036Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-18: 2025 trae los dos estados (konsolideeritud L142-177 y Lisa 15, la MTÜ sola, L554-606); las controladas son dos escuelas de fútbol del club: consolidado (CONVENCIONES-DATOS, regla del perímetro, punto 2). (revisión del alta, subagente Sonnet, revisado por Claude 2026-10-18))",
   "gestión: ningún presidente confirmado cubre 2022 (cierre 2022-12-31); pregunta en la cola (no frena)"
@@ -159,13 +154,13 @@
    },
    {
     "rawLabel": "EJL toetused noortetööle",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "youth_football",
     "amountNative": 0.005717,
     "disclosureLevel": "aggregated",
     "_pag": 12,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Arengustipendiumid",
@@ -173,9 +168,9 @@
     "amountNative": 0.029178,
     "disclosureLevel": "aggregated",
     "_pag": 12,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Mitteseotud osapoolte toetused/annetused",
@@ -275,9 +270,9 @@
     "amountNative": -0.041067,
     "disclosureLevel": "aggregated",
     "_pag": 12,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Kulutused turvalisusele",
@@ -375,9 +370,9 @@
     "amountNative": -0.031674,
     "disclosureLevel": "aggregated",
     "_pag": 12,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Mänguvormid jm varustus",
@@ -703,12 +698,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
    "signoFijo": 0.005717,
-   "cat": "other_income",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "youth_football",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Mismo criterio que 3c59ca6: subsidio EJL para trabajo juvenil -> youth_football. [EJL toetused noortetööle 5 717 (aruanne-2022, Lisa Annetused ja toetused)]",
    "destino": "revenue",
    "amountNative": 0.005717
   },
@@ -720,11 +715,11 @@
    "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
    "signoFijo": 0.029178,
    "cat": "other_income",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Mismo criterio que 80f168e: ingreso recibido, other_income. [Arengustipendiumid 29 178 (aruanne-2022, Lisa Annetused ja toetused)]",
    "destino": "revenue",
    "amountNative": 0.029178
   },
@@ -873,11 +868,11 @@
    "origen": "verificacion (nota que desglosa \"Tegevuskulud\")",
    "signoFijo": 0.041067,
    "cat": "player_amortisation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Costo de traspaso de jugadores hacia el club: player_amortisation. [Kulu mängijate üleminekutest klubisse 41 067 (aruanne-2022, Mitmesugused tegevuskulud)]",
    "destino": "expense",
    "amountNative": -0.041067
   },
@@ -1026,11 +1021,11 @@
    "origen": "verificacion (nota que desglosa \"Tegevuskulud\")",
    "signoFijo": 0.031674,
    "cat": "other_expenses",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Insumos y servicios médicos: other_expenses (ver 21e5949). [Meditsiinitarvikud - ja teenused 31 674 (aruanne-2022, Mitmesugused tegevuskulud)]",
    "destino": "expense",
    "amountNative": -0.031674
   },
@@ -1203,8 +1198,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 19,
   "lineasGasto": 21,
   "metaFilas": 2,

@@ -1,16 +1,7 @@
 {
  "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2019.pdf",
- "generado": "2026-10-18T18:34:32.122Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Liikmemaks\" -> match_organisation_expense 0.55; \"Kulu mängijate üleminekutest klubisse\" -> player_amortisation 0.7"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-18T18:44:37.552Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-18: 2025 trae los dos estados (konsolideeritud L142-177 y Lisa 15, la MTÜ sola, L554-606); las controladas son dos escuelas de fútbol del club: consolidado (CONVENCIONES-DATOS, regla del perímetro, punto 2). (revisión del alta, subagente Sonnet, revisado por Claude 2026-10-18))",
   "gestión: ningún presidente confirmado cubre 2019 (cierre 2019-12-31); pregunta en la cola (no frena)"
@@ -195,13 +186,13 @@
    },
    {
     "rawLabel": "Liikmemaks",
-    "normalizedCategory": "match_organisation_expense",
+    "normalizedCategory": "admin_general_expense",
     "amountNative": -0.323479,
     "disclosureLevel": "aggregated",
     "_pag": 13,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Kulu mängijate üleminekutest klubisse",
@@ -209,9 +200,9 @@
     "amountNative": -0.0061,
     "disclosureLevel": "aggregated",
     "_pag": 13,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Muud tegevuskulud",
@@ -572,12 +563,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Mitmesugused tegevuskulud\")",
    "signoFijo": 0.323479,
-   "cat": "match_organisation_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Liikmemaks' 323.479 es GASTO (Lisa 9 Mitmesugused tegevuskulud), una cuota que el club paga, no un ingreso de socios. Precedente: Kuressaare 2025 'Liikmemaksud' como gasto -> admin_general_expense (respuesta de Guido). No es organización de partidos. Monto muy alto (50% de los 639.257 de Lisa 9; 72 [Liikmemaks 323 479 dentro de Kokku mitmesugused tegevuskulud 639 257 (aruanne-2019.md Lisa 9, L434-437)]",
    "destino": "expense",
    "amountNative": -0.323479
   },
@@ -589,11 +580,11 @@
    "origen": "verificacion (nota que desglosa \"Mitmesugused tegevuskulud\")",
    "signoFijo": 0.0061,
    "cat": "player_amortisation",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Costo de traspaso de jugadores hacia el club: player_amortisation (Levadia 2025 'Kulu mängijate üleminekutest klubisse', respuesta de Guido). La nota aclara que no se capitaliza. [Kulu mängijate üleminekutest klubisse 6 100 (aruanne-2019.md L435); 'Mängijate soetamise kulusid ei kapitaliseerita' L439]",
    "destino": "expense",
    "amountNative": -0.0061
   },
@@ -758,8 +749,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 9,
   "lineasGasto": 14,
   "metaFilas": 1,

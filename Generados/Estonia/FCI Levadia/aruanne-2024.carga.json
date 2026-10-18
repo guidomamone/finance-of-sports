@@ -1,15 +1,9 @@
 {
  "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2024.pdf",
- "generado": "2026-10-18T18:34:32.780Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Kulu mängijate üleminekutest klubisse\" -> player_amortisation 0.6"
-  }
- ],
+ "generado": "2026-10-18T18:44:38.215Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-18: 2025 trae los dos estados (konsolideeritud L142-177 y Lisa 15, la MTÜ sola, L554-606); las controladas son dos escuelas de fútbol del club: consolidado (CONVENCIONES-DATOS, regla del perímetro, punto 2). (revisión del alta, subagente Sonnet, revisado por Claude 2026-10-18))",
-  "materialidad: \"Arengustipendiumid\" va como other_income con 0.6 (las dudas de ingresos suman 0.90% de su lado)",
   "gestión: ningún presidente confirmado cubre 2024 (cierre 2024-12-31); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -184,9 +178,9 @@
     "amountNative": 0.036,
     "disclosureLevel": "aggregated",
     "_pag": 12,
-    "_escalon": "materialidad",
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.90% (≤ 1%) y esta tiene 0.6"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Seotud osapoolte toetused/annetused",
@@ -296,9 +290,9 @@
     "amountNative": -0.136033,
     "disclosureLevel": "aggregated",
     "_pag": 12,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Kulutused turvalisusele",
@@ -745,11 +739,11 @@
    "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
    "signoFijo": 0.036,
    "cat": "other_income",
-   "conf": 0.6,
-   "escalon": "materialidad",
-   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de ingresos suman 0.90% (≤ 1%) y esta tiene 0.6",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": false,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Mismo criterio que 80f168e: ingreso recibido, other_income. [Arengustipendiumid 29 688 (aruanne-2023, Lisa Annetused ja toetused)]",
    "destino": "revenue",
    "amountNative": 0.036
   },
@@ -913,11 +907,11 @@
    "origen": "verificacion (nota que desglosa \"Tegevuskulud\")",
    "signoFijo": 0.136033,
    "cat": "player_amortisation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Costo de traspaso de jugadores hacia el club: player_amortisation. Monto mayor que en años anteriores (136.033); es el mismo renglón. [Kulu mängijate üleminekutest klubisse 136 033 (aruanne-2024, Mitmesugused tegevuskulud)]",
    "destino": "expense",
    "amountNative": -0.136033
   },
@@ -1227,8 +1221,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 21,
   "lineasGasto": 20,
   "metaFilas": 2,

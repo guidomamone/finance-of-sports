@@ -109,6 +109,53 @@ tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-18): null, SIN VERIFICAR (sin caché de rosters para ee (tools/club-league-reference/ee.json)).
 ```
 
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/FCI Levadia/aruanne-2019.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/FCI Levadia/aruanne-2019.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Liikmetelt saadud tasud | pág. 5, Jev 1 |
+| 2 | Annetused ja toetused | pág. 5, Jev 0.99 |
+| 3 | Piletide müük | pág. 13, Jev 1 |
+| 4 | Reklaamiteenused | pág. 13, Jev 1 |
+| 5 | Staadioni rent | pág. 13, precedente |
+| 6 | Jalgpallurite ülemineku registreerimistasu | pág. 13, Jev 0.94 |
+| 7 | Televisiooni ülekanne | pág. 13, Jev 1 |
+| 8 | Muud | pág. 13, Jev 1 |
+| 9 | Muud tulud | pág. 5, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Üür ja rent | pág. 13, Jev 0.99 |
+| 2 | Elektrienergia | pág. 13, Jev 1 |
+| 3 | Kütus | pág. 13, Jev 1 |
+| 4 | Mitmesugused bürookulud | pág. 13, Claude 0.85 |
+| 5 | Lähetuskulud | pág. 13, precedente |
+| 6 | Koolituskulud | pág. 13, precedente |
+| 7 | Riiklikud ja kohalikud maksud | pág. 13, Jev 1 |
+| 8 | Mängude ja treeningute kulud | pág. 13, Claude 0.85 |
+| 9 | Liikmemaks | pág. 13, precedente |
+| 10 | Kulu mängijate üleminekutest klubisse | pág. 13, precedente |
+| 11 | Muud tegevuskulud | pág. 13, precedente |
+| 12 | Palgakulu | pág. 14, precedente |
+| 13 | Sotsiaalmaksud | pág. 14, precedente |
+| 14 | Põhivarade kulum ja väärtuse langus | pág. 5, Jev 1 |
+
+### Meta
+
+```text
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L128) (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## Fuentes
 
 ### fcilevadia-ee-aruanne-2025
@@ -117,4 +164,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/FCI Levadia/aruanne-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### fcilevadia-ee-aruanne-2019
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/FCI Levadia/aruanne-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
