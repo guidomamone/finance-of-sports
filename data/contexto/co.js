@@ -22,13 +22,13 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Polideportivo Sur","capacidad":14000,"sponsor":"Pool, Colanta","marca":"Aleta","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
   },
   'fortalezaceif-co': {
-    2017: {"estadio":"Municipal Héctor El Zipa González","temporada":"2017 Categoría Primera B season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1321615242","fuenteLocal":"https://es.wikipedia.org/w/index.php?oldid=173741340","local":["estadio"]},
+    2017: {"estadio":"Municipal Héctor El Zipa González","marca":"FSS","temporada":"2017 Categoría Primera B season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1321615242","fuenteLocal":"https://es.wikipedia.org/w/index.php?oldid=173741340","local":["estadio"],"club":{"marca":"https://es.wikipedia.org/w/index.php?oldid=175586109"}},
     2018: {"estadio":"Municipal de Cota","capacidad":4000,"temporada":"2018 Categoría Primera B season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264206"},
-    2019: {"estadio":"Municipal de Cota","capacidad":4000,"temporada":"2019 Categoría Primera B season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1348361981"},
-    2020: {"estadio":"Municipal de Cota","capacidad":4000,"temporada":"2020 Torneo DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1329564901"},
-    2021: {"estadio":"Municipal de Cota","capacidad":4000,"temporada":"2021 Torneo DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1329564875"},
-    2022: {"estadio":"Metropolitano de Techo","capacidad":8000,"temporada":"2022 Torneo DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1333837080"},
-    2023: {"estadio":"Metropolitano de Techo","capacidad":8000,"temporada":"2023 Torneo DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1329564812"},
+    2019: {"estadio":"Municipal de Cota","capacidad":4000,"marca":"Fortaleza CEIF","temporada":"2019 Categoría Primera B season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1348361981","club":{"marca":"https://es.wikipedia.org/w/index.php?oldid=175586109"}},
+    2020: {"estadio":"Municipal de Cota","capacidad":4000,"marca":"Fortaleza CEIF","temporada":"2020 Torneo DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1329564901","club":{"marca":"https://es.wikipedia.org/w/index.php?oldid=175586109"}},
+    2021: {"estadio":"Municipal de Cota","capacidad":4000,"marca":"Kimo","temporada":"2021 Torneo DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1329564875","club":{"marca":"https://es.wikipedia.org/w/index.php?oldid=175586109"}},
+    2022: {"estadio":"Metropolitano de Techo","capacidad":8000,"marca":"Kimo","temporada":"2022 Torneo DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1333837080","club":{"marca":"https://es.wikipedia.org/w/index.php?oldid=175586109"}},
+    2023: {"estadio":"Metropolitano de Techo","capacidad":8000,"marca":"Kimo","temporada":"2023 Torneo DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1329564812","club":{"marca":"https://es.wikipedia.org/w/index.php?oldid=175586109"}},
     2024: {"estadio":"Metropolitano de Techo","capacidad":10000,"sponsor":"BetPlay, Colanta, Pool, Gencell Pharma","marca":"Kimo","temporada":"2024 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341692752"},
     2025: {"estadio":"Metropolitano de Techo","capacidad":10000,"sponsor":"Stake","marca":"Go Rigo Go","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
   },
@@ -48,6 +48,6 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Nemesio Camacho El Campín","capacidad":39512,"sponsor":"Colanta, BetPlay","marca":"Fila","temporada":"2025 Liga DIMAYOR","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264356"},
   },
   'unionmagdalena-co': {
-    2018: {"estadio":"Sierra Nevada","capacidad":16000,"temporada":"2018 Categoría Primera B season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264206"},
+    2018: {"estadio":"Sierra Nevada","capacidad":16000,"sponsor":"Alcaldía de Santa Marta","marca":"FSS","temporada":"2018 Categoría Primera B season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367264206","club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=174862459","marca":"https://es.wikipedia.org/w/index.php?oldid=174862459"}},
   },
 });

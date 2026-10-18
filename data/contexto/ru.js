@@ -25,7 +25,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'cskamoscow-ru': {
     2021: {"estadio":"VEB Arena","capacidad":30457,"sponsor":"VEB.RF","marca":"Joma","temporada":"2021–22 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376304705"},
     2022: {"estadio":"VEB Arena","capacidad":30457,"sponsor":"Wildberries","marca":"Joma","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016"},
-    2023: {"estadio":"VEB Arena","capacidad":30457,"sponsor":"Wildberries","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
+    2023: {"estadio":"VEB Arena","capacidad":30457,"sponsor":"Wildberries","marca":"Joma","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312","club":{"marca":"https://en.wikipedia.org/w/index.php?oldid=1380831311"}},
     2024: {"estadio":"VEB Arena","capacidad":30114,"sponsor":"Apotheka","marca":"CSKA","temporada":"2024–25 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378137266"},
     2025: {"estadio":"VEB Arena","capacidad":29071,"sponsor":"Apotheka","marca":"PRIMERA","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
   },

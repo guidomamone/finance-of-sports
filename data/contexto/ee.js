@@ -1,0 +1,83 @@
+// GENERADO por tools/estadio-sponsor.mjs --escribir: estadio, capacidad, sponsor de camiseta (frente) y marca técnica de cada
+// club y ejercicio, con su fuente (la revisión exacta de la página de temporada de Wikipedia, o la de tools/contexto-manual.json, que gana).
+// No editar a mano: lo que falta o está mal va a tools/contexto-manual.json.
+window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
+Object.assign(window.CLUB_CONTEXT, {
+  'fcilevadia-ee': {
+    2019: {"estadio":"A. Le Coq Arena","capacidad":14336,"sponsor":"Viimsi Keevitus","marca":"Adidas","temporada":"2019 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1320299915"},
+    2020: {"estadio":"A. Le Coq Arena","capacidad":14336,"sponsor":"Viimsi Keevitus","marca":"Adidas","temporada":"2020 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1326351098"},
+    2021: {"estadio":"A. Le Coq Arena","capacidad":14336,"sponsor":"Viimsi Keevitus","marca":"Adidas","temporada":"2021 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375997204"},
+    2022: {"estadio":"A. Le Coq Arena","capacidad":14336,"sponsor":"Admirals","marca":"Adidas","temporada":"2022 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1344593668"},
+    2023: {"estadio":"A. Le Coq Arena","capacidad":14336,"sponsor":"Admirals","marca":"Macron","temporada":"2023 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377178895"},
+    2024: {"estadio":"A. Le Coq Arena","capacidad":14336,"sponsor":"Viimsi Keevitus","marca":"Macron","temporada":"2024 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377802768"},
+    2025: {"estadio":"A. Le Coq Arena","capacidad":14336,"sponsor":"Viimsi Keevitus","marca":"Macron","temporada":"2025 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378408894"},
+  },
+  'floratallinn-ee': {
+    2019: {"estadio":"A. Le Coq Arena","capacidad":14336,"sponsor":"Tele2","marca":"Nike","temporada":"2019 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1320299915"},
+    2020: {"estadio":"A. Le Coq Arena","capacidad":14336,"sponsor":"Tele2","marca":"Nike","temporada":"2020 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1326351098"},
+    2021: {"estadio":"A. Le Coq Arena","capacidad":14336,"sponsor":"Optibet","marca":"Nike","temporada":"2021 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375997204"},
+    2022: {"estadio":"A. Le Coq Arena","capacidad":14336,"sponsor":"Optibet","marca":"Nike","temporada":"2022 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1344593668"},
+    2023: {"estadio":"A. Le Coq Arena","capacidad":14336,"sponsor":"Optibet","marca":"Nike","temporada":"2023 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377178895"},
+    2024: {"estadio":"A. Le Coq Arena","capacidad":14336,"sponsor":"Optibet","marca":"Nike","temporada":"2024 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377802768"},
+    2025: {"estadio":"A. Le Coq Arena","capacidad":14336,"sponsor":"Optibet","marca":"Nike","temporada":"2025 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378408894"},
+  },
+  'harjujklaagri-ee': {
+    2023: {"estadio":"Laagri Stadium","capacidad":500,"sponsor":"Enemat","marca":"Adidas","temporada":"2023 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377178895"},
+    2024: {"estadio":"Laagri Stadium","capacidad":400,"marca":"Adidas","temporada":"2024 Esiliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1330565653"},
+    2025: {"estadio":"Laagri Stadium","capacidad":500,"marca":"Adidas","temporada":"2025 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378408894"},
+  },
+  'kuressaare-ee': {
+    2019: {"estadio":"Kuressaare linnastaadion","capacidad":1000,"sponsor":"Euronics","marca":"Nike","temporada":"2019 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1320299915"},
+    2020: {"estadio":"Kuressaare linnastaadion","capacidad":1000,"marca":"Nike","temporada":"2020 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1326351098"},
+    2021: {"estadio":"Kuressaare linnastaadion","capacidad":1000,"marca":"Nike","temporada":"2021 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375997204"},
+    2022: {"estadio":"Kuressaare linnastaadion","capacidad":1000,"marca":"Nike","temporada":"2022 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1344593668"},
+    2023: {"estadio":"Kuressaare linnastaadion","capacidad":1000,"sponsor":"Visit Saaremaa","marca":"Nike","temporada":"2023 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377178895"},
+    2024: {"estadio":"Kuressaare linnastaadion","capacidad":1000,"sponsor":"Visit Saaremaa","marca":"Nike","temporada":"2024 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377802768"},
+    2025: {"estadio":"Kuressaare linnastaadion","capacidad":1000,"sponsor":"Visit Saaremaa","marca":"Nike","temporada":"2025 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378408894"},
+  },
+  'narvatrans-ee': {
+    2019: {"estadio":"Narva Kreenholm Stadium","capacidad":1065,"sponsor":"Sportland","marca":"Nike","temporada":"2019 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1320299915"},
+    2020: {"estadio":"Narva Kreenholm Stadium","capacidad":1065,"sponsor":"Sportland","marca":"Nike","temporada":"2020 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1326351098"},
+    2021: {"estadio":"Narva Kreenholm Stadium","capacidad":1065,"sponsor":"Sportland","marca":"Nike","temporada":"2021 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375997204"},
+    2022: {"estadio":"Narva Kreenholm Stadium","capacidad":1065,"sponsor":"Sportland","marca":"Nike","temporada":"2022 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1344593668"},
+    2023: {"estadio":"Narva Kreenholm Stadium","capacidad":1065,"sponsor":"Sportland","marca":"Nike","temporada":"2023 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377178895"},
+    2024: {"estadio":"Narva Kreenholm Stadium","capacidad":1065,"sponsor":"Sportland","marca":"Nike","temporada":"2024 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377802768"},
+    2025: {"estadio":"Kalev-Fama Stadium","capacidad":1000,"sponsor":"Sportland","marca":"Nike","temporada":"2025 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378408894"},
+  },
+  'nommekalju-ee': {
+    2019: {"estadio":"Hiiu Stadium","capacidad":650,"sponsor":"help.ee","marca":"Adidas","temporada":"2019 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1320299915","club":{"sponsor":"https://en.wikipedia.org/w/index.php?oldid=1377476025"}},
+    2020: {"estadio":"Hiiu Stadium","capacidad":650,"sponsor":"Paf","marca":"Adidas","temporada":"2020 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1326351098"},
+    2021: {"estadio":"Kadrioru staadion","capacidad":4750,"sponsor":"Rämmar","marca":"Adidas","temporada":"2021 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375997204"},
+    2022: {"estadio":"Sportland Arena","capacidad":1161,"sponsor":"Rämmar","marca":"Adidas","temporada":"2022 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1344593668"},
+    2023: {"estadio":"TNTK Stadium","capacidad":800,"sponsor":"Marsbet","marca":"Adidas","temporada":"2023 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377178895"},
+    2024: {"estadio":"Hiiu Stadium","capacidad":570,"sponsor":"Marsbet","marca":"Adidas","temporada":"2024 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377802768"},
+    2025: {"estadio":"Hiiu Stadium","capacidad":570,"sponsor":"Marsbet","marca":"Adidas","temporada":"2025 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378408894"},
+  },
+  'paidelinnameeskond-ee': {
+    2019: {"estadio":"Paide linnastaadion","capacidad":268,"sponsor":"Verston","marca":"Nike","temporada":"2019 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1320299915"},
+    2020: {"estadio":"Paide linnastaadion","capacidad":268,"sponsor":"Verston","marca":"Nike","temporada":"2020 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1326351098"},
+    2021: {"estadio":"Paide linnastaadion","capacidad":1000,"sponsor":"Verston","marca":"Nike","temporada":"2021 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375997204"},
+    2022: {"estadio":"Paide linnastaadion","capacidad":500,"sponsor":"Exmet, Verston","marca":"Nike","temporada":"2022 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1344593668"},
+    2023: {"estadio":"Paide linnastaadion","capacidad":500,"sponsor":"Exmet, Verston","marca":"Nike","temporada":"2023 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377178895"},
+    2024: {"estadio":"Paide linnastaadion","capacidad":500,"sponsor":"Verston","marca":"Capelli","temporada":"2024 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377802768"},
+    2025: {"estadio":"Paide linnastaadion","capacidad":500,"sponsor":"Verston","marca":"Capelli","temporada":"2025 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378408894"},
+  },
+  'tallinnakalev-ee': {
+    2019: {"estadio":"Kalevi Keskstaadion artificial turf","capacidad":570,"sponsor":"Coolbet","marca":"Nike","temporada":"2019 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1320299915"},
+    2020: {"estadio":"Kadriorg Stadium","capacidad":5000,"sponsor":"Coolbet","marca":"Macron","temporada":"2020 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1326351098"},
+    2021: {"estadio":"Kalevi Keskstaadion artificial turf","capacidad":270,"sponsor":"Coolbet","marca":"Macron","temporada":"2021 Esiliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1304349791"},
+    2022: {"estadio":"Kadriorg Stadium","capacidad":5000,"sponsor":"Coolbet","marca":"Macron","temporada":"2022 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1344593668"},
+    2023: {"estadio":"Kadriorg Stadium","capacidad":5000,"sponsor":"Unibet","marca":"Macron","temporada":"2023 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377178895"},
+    2024: {"estadio":"Kadriorg Stadium","capacidad":5000,"sponsor":"Unibet","marca":"Macron","temporada":"2024 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377802768"},
+    2025: {"estadio":"Kadriorg Stadium","capacidad":5000,"sponsor":"Unibet","marca":"Macron","temporada":"2025 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378408894"},
+  },
+  'tartutammeka-ee': {
+    2019: {"estadio":"Tartu Tamme Stadium","capacidad":1500,"sponsor":"Metec","marca":"Nike","temporada":"2019 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1320299915"},
+    2020: {"estadio":"Tartu Tamme Stadium","capacidad":1500,"sponsor":"Metec","marca":"Nike","temporada":"2020 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1326351098"},
+    2021: {"estadio":"Tartu Tamme Stadium","capacidad":1500,"sponsor":"Metec","marca":"Nike","temporada":"2021 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375997204"},
+    2022: {"estadio":"Tartu Tamme Stadium","capacidad":1500,"marca":"Nike","temporada":"2022 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1344593668"},
+    2023: {"estadio":"Tartu Tamme Stadium","capacidad":1500,"sponsor":"Giga Ehitus","marca":"Nike","temporada":"2023 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377178895"},
+    2024: {"estadio":"Tartu Tamme Stadium","capacidad":1638,"marca":"Nike","temporada":"2024 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377802768"},
+    2025: {"estadio":"Tamme Stadium","capacidad":1750,"sponsor":"Livida","marca":"Nike","temporada":"2025 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378408894"},
+  },
+});

@@ -4,10 +4,10 @@
 window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
 Object.assign(window.CLUB_CONTEXT, {
   'alianzalima-pe': {
-    2019: {"estadio":"Alejandro Villanueva","capacidad":35000,"temporada":"2019 Liga 1 (Peru)","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374780916"},
-    2020: {"estadio":"Alejandro Villanueva","capacidad":35000,"temporada":"2020 Liga 1 (Peru)","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375528065"},
-    2021: {"estadio":"Alejandro Villanueva","capacidad":35938,"temporada":"2021 Liga 1 (Peru)","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375989309"},
-    2022: {"estadio":"Alejandro Villanueva","capacidad":35938,"temporada":"2022 Liga 1 (Peru)","fuente":"https://en.wikipedia.org/w/index.php?oldid=1327025435"},
+    2019: {"estadio":"Alejandro Villanueva","capacidad":35000,"sponsor":"Banco Pichincha","temporada":"2019 Liga 1 (Peru)","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374780916","club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=175785954"}},
+    2020: {"estadio":"Alejandro Villanueva","capacidad":35000,"sponsor":"Banco Pichincha","temporada":"2020 Liga 1 (Peru)","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375528065","club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=175785954"}},
+    2021: {"estadio":"Alejandro Villanueva","capacidad":35938,"sponsor":"Banco Pichincha","temporada":"2021 Liga 1 (Peru)","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375989309","club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=175785954"}},
+    2022: {"estadio":"Alejandro Villanueva","capacidad":35938,"sponsor":"Marcadores247.com","temporada":"2022 Liga 1 (Peru)","fuente":"https://en.wikipedia.org/w/index.php?oldid=1327025435","club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=175785954"}},
     2023: {"estadio":"Alejandro Villanueva","capacidad":35938,"sponsor":"Apuesta Total","marca":"Nike","temporada":"2023 Liga 1 (Peru)","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377160261"},
     2024: {"estadio":"Alejandro Villanueva","capacidad":35938,"sponsor":"Apuesta Total","marca":"Nike","temporada":"2024 Liga 1 (Peru)","fuente":"https://en.wikipedia.org/w/index.php?oldid=1363263642"},
   },

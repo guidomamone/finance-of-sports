@@ -4,17 +4,17 @@
 window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
 Object.assign(window.CLUB_CONTEXT, {
   'almagro-ar': {
-    2018: {"estadio":"Tres de Febrero","temporada":"2018–19 Primera B Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1301907154","fuenteLocal":"https://es.wikipedia.org/w/index.php?oldid=171101706","local":["estadio"]},
-    2019: {"estadio":"Tres de Febrero","temporada":"2019–20 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1286604817","fuenteLocal":"https://es.wikipedia.org/w/index.php?oldid=175068991","local":["estadio"]},
-    2020: {"estadio":"Tres de Febrero","temporada":"2019–20 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1286604817","fuenteLocal":"https://es.wikipedia.org/w/index.php?oldid=175068991","local":["estadio"]},
-    2021: {"estadio":"Tres de Febrero","temporada":"2021 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1332763147","fuenteLocal":"https://es.wikipedia.org/w/index.php?oldid=175881155","local":["estadio"]},
+    2018: {"estadio":"Tres de Febrero","sponsor":"Sport Club","marca":"Rodano","temporada":"2018–19 Primera B Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1301907154","fuenteLocal":"https://es.wikipedia.org/w/index.php?oldid=171101706","local":["estadio"],"club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=175451630","marca":"https://es.wikipedia.org/w/index.php?oldid=175451630"}},
+    2019: {"estadio":"Tres de Febrero","sponsor":"Sport Club","temporada":"2019–20 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1286604817","fuenteLocal":"https://es.wikipedia.org/w/index.php?oldid=175068991","local":["estadio"],"club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=175451630"}},
+    2020: {"estadio":"Tres de Febrero","sponsor":"Sport Club","marca":"Retiel","temporada":"2019–20 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1286604817","fuenteLocal":"https://es.wikipedia.org/w/index.php?oldid=175068991","local":["estadio"],"club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=175451630","marca":"https://es.wikipedia.org/w/index.php?oldid=175451630"}},
+    2021: {"estadio":"Tres de Febrero","sponsor":"Sport Club","marca":"Retiel","temporada":"2021 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1332763147","fuenteLocal":"https://es.wikipedia.org/w/index.php?oldid=175881155","local":["estadio"],"club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=175451630","marca":"https://es.wikipedia.org/w/index.php?oldid=175451630"}},
     2022: {"estadio":"Tres de Febrero","capacidad":12500,"temporada":"2022 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1345354861"},
-    2023: {"estadio":"Tres de Febrero","capacidad":12500,"temporada":"2023 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1316703963"},
+    2023: {"estadio":"Tres de Febrero","capacidad":12500,"sponsor":"Magazzino","marca":"Sport Lyon","temporada":"2023 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1316703963","club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=175451630","marca":"https://es.wikipedia.org/w/index.php?oldid=175451630"}},
   },
   'argentinosjuniors': {
     2015: {"sponsor":"Provincia NET","marca":"Joma","temporada":"2015 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372460557"},
     2016: {"estadio":"Diego Armando Maradona","capacidad":25500,"sponsor":"Autocrédito","marca":"Joma","temporada":"2016 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373111774"},
-    2017: {"estadio":"Diego Armando Maradona","capacidad":380,"temporada":"2016–17 Primera B Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1174497719","fuenteLocal":"https://es.wikipedia.org/w/index.php?oldid=172229349","local":["estadio","capacidad"]},
+    2017: {"estadio":"Diego Armando Maradona","capacidad":380,"sponsor":"Autocrédito","marca":"Macron","temporada":"2016–17 Primera B Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1174497719","fuenteLocal":"https://es.wikipedia.org/w/index.php?oldid=172229349","local":["estadio","capacidad"],"club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=175811618","marca":"https://es.wikipedia.org/w/index.php?oldid=175811618"}},
     2018: {"estadio":"Diego Armando Maradona","capacidad":25000,"sponsor":"Autocrédito","marca":"Reusch","temporada":"2017–18 Superliga Argentina","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375639843"},
     2019: {"estadio":"Diego Armando Maradona","capacidad":25000,"sponsor":"Autocrédito","marca":"Reusch","temporada":"2018–19 Superliga Argentina","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274375"},
   },
@@ -22,7 +22,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2020: {"estadio":"Florencio Sola","capacidad":34901,"sponsor":"Seguros Orbis","marca":"Givova","temporada":"2019–20 Superliga Argentina","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274402"},
   },
   'boca': {
-    2022: {"estadio":"Alberto J. Armando","capacidad":54000,"marca":"Adidas","temporada":"2022 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274426"},
+    2022: {"estadio":"Alberto J. Armando","capacidad":54000,"sponsor":"Qatar Airways","marca":"Adidas","temporada":"2022 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274426","club":{"sponsor":"https://en.wikipedia.org/w/index.php?oldid=1379993919"}},
     2023: {"estadio":"Alberto J. Armando","capacidad":54000,"sponsor":"Betsson","marca":"Adidas","temporada":"2023 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274459"},
     2025: {"estadio":"Alberto J. Armando","capacidad":54000,"sponsor":"Betsson","marca":"Adidas","temporada":"2025 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371131086"},
   },
@@ -33,7 +33,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Jorge Luis Hirschi","capacidad":30000,"sponsor":"Saint-Gobain","marca":"RUGE","temporada":"2025 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371131086"},
   },
   'ferrocarriloeste-ar': {
-    2022: {"estadio":"Ricardo Etcheverry","capacidad":24442,"temporada":"2022 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1345354861"},
+    2022: {"estadio":"Ricardo Etcheverry","capacidad":24442,"sponsor":"Avalian","temporada":"2022 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1345354861","club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=175881249"}},
     2023: {"estadio":"Ricardo Etcheverri","capacidad":24442,"temporada":"2023 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1316703963"},
   },
   'gimnasiaesgrima-ar': {
@@ -53,8 +53,8 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Juan Domingo Perón","capacidad":35535,"sponsor":"Banco Macro","marca":"Givova","temporada":"2024 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1365223058"},
   },
   'losandes-ar': {
-    2020: {"estadio":"Eduardo Gallardón","capacidad":35000,"temporada":"Campeonato de Primera B 2019-20 (Argentina)","fuente":"https://es.wikipedia.org/w/index.php?oldid=170581856"},
-    2021: {"estadio":"Eduardo Gallardón","capacidad":38000,"temporada":"Campeonato de Primera B 2021 (Argentina)","fuente":"https://es.wikipedia.org/w/index.php?oldid=175068019"},
+    2020: {"estadio":"Eduardo Gallardón","capacidad":35000,"sponsor":"Secco","marca":"Mitre","temporada":"Campeonato de Primera B 2019-20 (Argentina)","fuente":"https://es.wikipedia.org/w/index.php?oldid=170581856","club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=175768690","marca":"https://es.wikipedia.org/w/index.php?oldid=175768690"}},
+    2021: {"estadio":"Eduardo Gallardón","capacidad":38000,"sponsor":"Secco","marca":"Mitre","temporada":"Campeonato de Primera B 2021 (Argentina)","fuente":"https://es.wikipedia.org/w/index.php?oldid=175068019","club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=175768690","marca":"https://es.wikipedia.org/w/index.php?oldid=175768690"}},
   },
   'newells-ar': {
     2019: {"estadio":"Marcelo Bielsa","capacidad":38095,"sponsor":"Grupo Márquez","marca":"Umbro","temporada":"2018–19 Superliga Argentina","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274375"},
