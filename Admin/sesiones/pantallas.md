@@ -84,6 +84,10 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
   arsenal-gb 2024 (Deloitte, sin salvedades), dinamozagreb-hr 2024 (con salvedades), vitoriaguimaraes-pt 2022 (BDO, continuidad true),
   almagro-ar 2018 (auditor persona), akhmatgrozny-ru 2022 (sin_informe). Un club-año que no está en CLUB_AUDITORIA es "no sabemos", no
   "sin informe".
+  Ligas: `data/auditoria/_ligas.js` (`window.LIGA_AUDITORIA[ligaId][anio] = { entidad:{nombre, legal?}, auditor, dictamen, continuidad,
+  fuente }`, rama finanzas, commit 5c212ed) está vacío: no hay balance de ninguna entidad organizadora. Ligas no muestra nada hasta
+  que haya uno (conseguirlos lo propone finanzas como sourcing). Mockup de Finanzas: "Finanzas · quién auditó estos números" de
+  "Pantallas FoS", esperando el ok de Guido.
 
 ### Qué cambió, 271 (para CHANGELOG)
 
