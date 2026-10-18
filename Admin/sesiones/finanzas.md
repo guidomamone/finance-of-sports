@@ -88,10 +88,27 @@
 
 - El registro de entidades tiene 50 clubes con estructura (no 47).
 
-## 281 (en curso al cortar por límite de uso)
+## Después del segundo merge del 2026-10-18
 
-- Hecho: Vizela (asociación Futebol Clube de Vizela, 20 % de la SAD; cuentas 2023 y 2024 transcriptas de escaneo; ingresos 2023 y 2024)
-  y Belenenses 2025 (cfb-demonstracoes-financeiras-em-30-junho-25.md, chequeos 0 P1/P2 y 1000 de 1000 números; ingresos 3.549.835 €).
-- Queda: Leiria, Braga (2 tramos), Marítimo (5), Chaves, Académica y Porto (3). Texto e imágenes por página en el scratchpad de la sesión
-  (t281/<club>-<año>/), instrucciones en t281/INSTRUCCIONES.md. Subagentes de la primera tanda pueden haber dejado .md sin chequear:
-  correr check-transcripcion-fidelidad.js y comparar-numeros.mjs antes de usarlos; Braga y Marítimo 2021 van en parte1.md + parte2.md.
+### Qué cambió (para CHANGELOG)
+
+- To-do 281: documentos de las asociaciones de clubes portugueses transcriptos por subagentes Sonnet (texto de `pdftotext -layout` por
+  página, o la imagen en los escaneos; chequeos `check-transcripcion-fidelidad.js` y `comparar-numeros.mjs` en los digitales) y su línea
+  `ingresos` en el registro de entidades (verificada por `tools/entidades.mjs`; todos los renglones de ingresos de la DR, sin los "Ganhos
+  imputados de subsidiárias"):
+  - Vizela: Futebol Clube de Vizela, entidad nueva (20 % de la SAD, citado de las cuentas de la SAD 2022-23 a 2024-25); cuentas 2023 y 2024
+    (año calendario, escaneos) con su línea.
+  - Belenenses 2024-25 (3,55 M €), Chaves 2022-23 (0,84 M €; trae el informe del auditor RCVM de la asociación), Académica 2022-23
+    (2,18 M €), Braga 2022-23 (5,67 M €) y Marítimo 2020-21 a 2024-25 (cierre 31 de julio; suma también los juros obtidos; 2025 = 5.586.395,
+    igual al total de rendimentos del informe de gestión).
+  - União de Leiria 2023-24: el PDF es solo el anexo (dos veces), sin DR: transcripto, sin línea de ingresos.
+
+### Qué queda (para TODO)
+
+- 281: Porto (relatórios 2019-20, 2023-24 y 2024-25 de la asociación) en curso. União de Leiria 2023-24: falta un documento con la DR de
+  la asociación para su línea de ingresos.
+
+### Qué deja de ser cierto en ESTADO
+
+- La tarjeta Estructura muestra los ingresos de la asociación en Vizela, Belenenses, Chaves, Académica, Braga 2022-23 y Marítimo (además de
+  Vitória, Tondela y Braga 2020-21).
