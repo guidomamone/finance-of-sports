@@ -139,6 +139,12 @@ Ejercicio 2024 (01.07.2023-30.06.2024). Fuente: jahresabschluss-2024-25.md, colu
 "1. Juli 2023 bis 30. Juni 2024" (pág. 5, GuV; pág. 8, Anhang 4.1 Umsatzerlöse — reconcilia exacto).
 ```
 
+### Meta
+
+```text
+tools/caja-deuda.mjs (2026-10-18): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-18): Claude 2026-10-18 (leído en el balance por subagente Sonnet y revisado, criterio de deuda financiera): Verbindlichkeiten aus Darlehen (Gesellschafter) Vorjahr TEUR 153.717; sin Vorabdividende ni Lieferungen. Cruce: jahresabschluss-2023-24 L522; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-18): Claude 2026-10-18 (leído en el balance por subagente Sonnet y revisado, criterio de deuda financiera): Kassenbestand und Guthaben bei Kreditinstituten 783 TEUR (30.06.2024, comparativo). Cruce: 783.143,15 EUR en jahresabschluss-2023-24 L235
+```
+
 ## 2023
 
 ### Ingresos
@@ -146,6 +152,12 @@ Ejercicio 2024 (01.07.2023-30.06.2024). Fuente: jahresabschluss-2024-25.md, colu
 ```text
 Ejercicio 2023 (01.07.2022-30.06.2023). Fuente: jahresabschluss-2022-23.md, pág. 5 (GuV) y pág.
 8 (Anhang 4.1, SOLO 3 categorías este ejercicio, ver comentario de cabecera).
+```
+
+### Meta
+
+```text
+tools/caja-deuda.mjs (2026-10-18): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-18): Claude 2026-10-18 (leído en el balance por subagente Sonnet y revisado, criterio de deuda financiera): Verbindlichkeiten aus Darlehen (Gesellschafter) TEUR 111.731; sin Vorabdividende 2.908 ni Lieferungen 347. Cruce: Verbindlichkeitenspiegel de jahresabschluss-2023-24 L553; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-18): Claude 2026-10-18 (leído en el balance por subagente Sonnet y revisado, criterio de deuda financiera): Kassenbestand und Guthaben bei Kreditinstituten 765.425,23 EUR (30.06.2023), en TEUR (el .md trae "765.425 ,23", espacio del OCR). Cruce: 765 TEUR en el comparativo de jahresabschluss-2023-24 L262
 ```
 
 ## 2022

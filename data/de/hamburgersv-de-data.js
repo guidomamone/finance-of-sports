@@ -49,7 +49,7 @@ const hamburgersvDeFiscalYearMeta = {
     currency:'EUR', fxRef:'EUR@2024-06-30',
     sourceId:'hamburgersv-de-fussball-ag-jahresabschluss-2024',
     reportType:'official_balance_sheet',
-    grossDebt:null, cash:null,
+    grossDebt:57.848, cash:35.723519,
     gestionId:'actual',
     netInterest:-1.505000,
     tax:-1.201294,

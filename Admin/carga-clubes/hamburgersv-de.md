@@ -146,6 +146,10 @@ officialPAT = Jahresüberschuss impreso EXACTO (2.146.705,69 EUR), el único nú
 ejercicio que llegó sin ambigüedad en la tabla garbled.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-18): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-18): Guido 2026-10-18 (decisión: el bono convertible cuenta como deuda). Finanzverbindlichkeiten 57.848 TEUR (30.06.2024) = Anleihen 10.415 + Kreditinstitute 292 + sonstige Finanzverbindlichkeiten 47.141, que incluyen la Wandelschuldverschreibung de TEUR 30.000 (L567). Leído por subagente Sonnet y revisado. Cruce: comparativo de fussball-ag-jahresabschluss-2024-25 L647; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-18): Claude 2026-10-18 (leído en el balance por subagente Sonnet y revisado, criterio de deuda financiera): III. Kassenbestand, Guthaben bei Kreditinstituten 35.723.518,58 EUR (30.06.2024), en TEUR; el .md está desordenado, confirmado con pdftotext -layout. Cruce: comparativo de fussball-ag-jahresabschluss-2024-25 L147
+```
+
 ## Gestiones
 
 _investigado por un subagente (Sonnet) con fuente por gestión, 2026-10-13; to-do 195:_
