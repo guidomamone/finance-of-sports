@@ -117,3 +117,4 @@ j) DATOS (no script): Estonia no tiene ligas en `data/leagues.js`; propuesto `ee
      del balance (bilanss) de los informes estonios, así que ni Jev ni la IA tienen dónde mirar. Y en la corrida con años vecinos dejó SIN
      COMMITEAR una caja equivocada de Tallinna Kalev 2019 (0,005455 contra "Raha 1 770" del balance, L90 y L172) y 2020 (0,028424): se
      descartó (git checkout); revisar de qué escalón salió y por qué escribió sin commit.
+- ESTONIA COMPLETA: los 54 años 2019-2025 de los 9 clubes en el sitio (Narva Trans 2021 el último). Listas 89, 89-rehacer, 91 y 91-rehacer archivadas en Admin/Archive/lotes/. Bélgica (listas 90 y 92) espera correr con las tools de main (mejoras b y o, compuerta de estadio y sponsor del 273).
