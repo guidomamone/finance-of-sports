@@ -2,10 +2,10 @@
 window.ESTIMADOS = window.ESTIMADOS || {};
 window.ESTIMADOS["gr-superleague"] = {
   2016: [{"id":"panetolikos-gr","revenue":3.719,"lo":2.084,"hi":7.054,"caso":"afuera","error":26,"de":[2017]},{"id":"paok-gr","revenue":35.353,"lo":19.811,"hi":67.044,"caso":"afuera","error":26,"de":[2017]}],
-  2017: [{"id":"asterastripolis-gr","revenue":3.873,"lo":2.17,"hi":7.345,"caso":"afuera","error":26,"de":[2019]},{"id":"atromitos-gr","revenue":5.221,"lo":3.433,"hi":7.938,"caso":"entre","error":19,"de":[2016,2019]},{"id":"levadiakos-gr","revenue":2.792,"lo":1.565,"hi":5.295,"caso":"afuera","error":26,"de":[2019]}],
-  2018: [{"id":"asterastripolis-gr","revenue":3.962,"lo":2.22,"hi":7.513,"caso":"afuera","error":26,"de":[2019]},{"id":"atromitos-gr","revenue":4.743,"lo":3.119,"hi":7.211,"caso":"entre","error":19,"de":[2016,2019]},{"id":"levadiakos-gr","revenue":2.856,"lo":1.6,"hi":5.416,"caso":"afuera","error":26,"de":[2019]},{"id":"paok-gr","revenue":43.86,"lo":28.841,"hi":66.676,"caso":"entre","error":19,"de":[2017,2019]}],
-  2019: [{"id":"panetolikos-gr","revenue":3.461,"lo":2.276,"hi":5.262,"caso":"entre","error":19,"de":[2018,2020]}],
-  2020: [{"id":"aris-gr","revenue":6.923,"lo":4.553,"hi":10.525,"caso":"entre","error":19,"de":[2019,2021]}],
+  2017: [{"id":"asterastripolis-gr","revenue":3.873,"lo":2.17,"hi":7.345,"caso":"afuera","error":26,"de":[2019]},{"id":"atromitos-gr","revenue":5.221,"lo":3.483,"hi":7.937,"caso":"entre","error":19,"de":[2016,2019]},{"id":"levadiakos-gr","revenue":2.792,"lo":1.565,"hi":5.295,"caso":"afuera","error":26,"de":[2019]}],
+  2018: [{"id":"asterastripolis-gr","revenue":3.962,"lo":2.22,"hi":7.513,"caso":"afuera","error":26,"de":[2019]},{"id":"atromitos-gr","revenue":4.743,"lo":3.164,"hi":7.211,"caso":"entre","error":19,"de":[2016,2019]},{"id":"levadiakos-gr","revenue":2.856,"lo":1.6,"hi":5.416,"caso":"afuera","error":26,"de":[2019]},{"id":"paok-gr","revenue":43.86,"lo":29.26,"hi":66.674,"caso":"entre","error":19,"de":[2017,2019]}],
+  2019: [{"id":"panetolikos-gr","revenue":3.461,"lo":2.309,"hi":5.261,"caso":"entre","error":19,"de":[2018,2020]}],
+  2020: [{"id":"aris-gr","revenue":6.923,"lo":4.619,"hi":10.525,"caso":"entre","error":19,"de":[2019,2021]}],
   2023: [{"id":"panathinaikos-gr","revenue":64.138,"lo":35.942,"hi":121.632,"caso":"afuera","error":26,"de":[2025]}],
-  2024: [{"id":"panathinaikos-gr","revenue":65.78,"lo":36.862,"hi":124.747,"caso":"afuera","error":26,"de":[2025]},{"id":"panserraikos-gr","revenue":2.771,"lo":1.822,"hi":4.212,"caso":"entre","error":19,"de":[2023,2025]}],
+  2024: [{"id":"panathinaikos-gr","revenue":65.78,"lo":36.862,"hi":124.747,"caso":"afuera","error":26,"de":[2025]},{"id":"panserraikos-gr","revenue":2.771,"lo":1.849,"hi":4.212,"caso":"entre","error":19,"de":[2023,2025]}],
 };

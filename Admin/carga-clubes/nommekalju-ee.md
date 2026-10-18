@@ -167,6 +167,68 @@ Generados/Estonia/Nõmme Kalju/aruanne-2024.categorias.json (escalón de cada fi
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/Nõmme Kalju/aruanne-2021.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/Nõmme Kalju/aruanne-2021.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Liikmetelt saadud tasud | pág. 6, precedente |
+| 2 | Mittesihtotsatarbelised annetused ja toetused | pág. 15, Jev 1 |
+| 3 | Riigi ja omavalitsuste toetus | pág. 15, precedente |
+| 4 | UEFA solidaarsustoetus | pág. 15, precedente |
+| 5 | EJL toetused | pág. 15, precedente |
+| 6 | Toetused treeningute korraldamiseks | pág. 15, Jev 0.97 |
+| 7 | Muud toetused ECA, LHV, Töötukassa juhendustasu | pág. 15, Jev 0.99 |
+| 8 | Riiklik noorteraha | pág. 15, precedente |
+| 9 | Töötukassa töötasu toetuse sihtfinantseerimine | pág. 15, Jev 0.98 |
+| 10 | Piletitulu Eesti sisesed võistlused | pág. 16, precedente |
+| 11 | Mängijaõiguste müük | pág. 16, precedente |
+| 12 | Renditulu | pág. 16, precedente |
+| 13 | Muu äritegevus | pág. 16, precedente |
+| 14 | Tulu sponsoritelt | pág. 16, precedente |
+| 15 | kaupade, teenuste müük | pág. 16, precedente |
+| 16 | Muud tulud | pág. 6, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Sportlastoetused | pág. 16, precedente |
+| 2 | Maksuvabad stipendiumid | pág. 16, precedente |
+| 3 | Mängijate ülemineku kulud | pág. 16, Jev 0.93 |
+| 4 | Kodumängude korralduskulud | pág. 16, precedente |
+| 5 | Eesti meistrivõistluste osavõtutasu | pág. 16, precedente |
+| 6 | Võistkondade välissõitude kulud | pág. 16, precedente |
+| 7 | Turundus-, sponsorlus- ja reklaamikulud | pág. 16, precedente |
+| 8 | Klubisümboolikaga toodete omahind | pág. 16, precedente |
+| 9 | Klubile kuuluvate ja tema kasutuses olevate hoonete ja rajatistega seotud kulud | pág. 16, precedente |
+| 10 | Klubi administreerimiskulud | pág. 16, precedente |
+| 11 | Meditsiinitarvikud- ja teenused | pág. 16, precedente |
+| 12 | Mänguvormid jm varustus | pág. 16, precedente |
+| 13 | Erakorralised kulud | pág. 16, Jev 1 |
+| 14 | Muud klassifitseerimata tegevuskulud | pág. 16, Jev 0.96 |
+| 15 | - sh. mängijate tasud | pág. 17, Jev 1 |
+| 16 | - sh. treenerite tasud | pág. 17, precedente |
+| 17 | - sh. muu personali tasud | pág. 17, Claude 0.9 |
+| 18 | Sotsiaalmaksud | pág. 17, precedente |
+| 19 | Puhkusereserv | pág. 17, precedente |
+| 20 | Põhivarade kulum ja väärtuse langus | pág. 6, precedente |
+| 21 | Muud kulud | pág. 6, precedente |
+
+### Meta
+
+```text
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L172) (Claude 2026-10-18)
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Televisión. fila en 0 (L560); mismo caso que el 2025 del club (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2020
 
 ### Ingresos
@@ -322,4 +384,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Nõmme Kalju/aruanne-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### nommekalju-ee-aruanne-2021
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Nõmme Kalju/aruanne-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
