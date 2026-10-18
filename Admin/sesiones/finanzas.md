@@ -172,7 +172,9 @@
   (Ria Grant Thornton) y 2023-2025 (RSM), Torino 2018-2019 (FV & C. S.A.S.), y Lazio 2026, que pasa del informe individual al del
   consolidado. Todos sin salvedades.
 - To-do 282 a, Fortaleza CEIF 2025: dictamen del revisor fiscal de SIIS (radicado 2026-01-381454), sin salvedades.
-- FALTA EN EL PDF: 88 a 52. Los PDF nuevos, copiados a la carpeta principal (rsync `--no-links`). ASSET_V 1300 en la rama.
+- To-do 282 a, OFI 2018: el informe del auditor (ΣΟΛ/Crowe, firma Παναγιώτης Γ. Θεοδωρόπουλος) depositado en el ΓΕΜΗ el 27-03-2019
+  ('Εκθεσή Ορκωτών'); sin salvedades, con un énfasis de liquidez (ÉNFASIS CONTINUIDAD).
+- FALTA EN EL PDF: 88 a 51. Los PDF nuevos, copiados a la carpeta principal (rsync `--no-links`). ASSET_V 1300 en la rama.
 
 ### Qué queda (para TODO)
 
@@ -199,9 +201,11 @@
   individual de 2025 y 2026); se recuperaron bajándolos otra vez del sitio del club (mismas páginas que su .md). La forma segura: copiar
   solo archivos regulares, por ejemplo `rsync -a --no-links` o `find … -type f` como lista.
 
-### Qué queda del 282 a (al cortar la sesión por límite de uso)
+### Qué queda del 282 a
 
-- Hamburgo 2024-2025: el Bundesanzeiger llega hasta el ejercicio 2021-22; los siguientes están en el Unternehmensregister (buscar
-  "HSV Fußball AG"; el buscador pide clics reales y aceptar solo las cookies necesarias). No llegué a abrirlos.
-- OFI 2018 (ΓΕΜΗ, ver `club-sourcing/paises/Grecia.md`), San Lorenzo 2011-2012 y Argentinos 2015 (memorias anteriores) y los 10
-  japoneses 2025 (probablemente sin canal público): sin buscar todavía.
+- Hamburgo 2025: el Jahresabschluss 2024-25 de la HSV Fußball AG & Co. KGaA está en el Unternehmensregister (HRB 191603, publicado el
+  22-06-2026), pero abrirlo pide un captcha ("Ich bin ein Mensch") que tiene que resolver una persona. Hamburgo 2024 (2023-24) no
+  apareció en la primera página de resultados (probablemente bajo "HSV Fußball AG", HRB 47576). El Bundesanzeiger llega hasta 2021-22.
+- Sin canal público (candidatos a mail): San Lorenzo 2011 y 2012 (el informe de Deloitte "se extiende en documento aparte", que el club
+  nunca subió; el `balance_2012.pdf` de Wayback es el mismo archivo que tenemos), Argentinos 2015 (Wayback del dominio, sin PDF de
+  balance) y los 10 japoneses 2025 (los clubes publican el 決算公告, solo el balance, sin auditor; Frontale 2025 confirmado).
