@@ -91,3 +91,19 @@ j) DATOS (no script): Estonia no tiene ligas en `data/leagues.js`; propuesto `ee
 
 ## Después del segundo merge del 2026-10-18
 (El 299 y la k ya pasaron a main: TODO, CHANGELOG 729, ESTADO. Lo nuevo va acá.)
+- Lotes 91 (Estonia, 54) y 92 (Bélgica, 55) por Batch API: 2 años escritos (Lommel SK 2018, RWDM 2020); 231 casos en la cola (Bélgica ~150,
+  Estonia ~95). Mejoras de script nuevas, para el 298 (sin aplicar):
+  l) El alta vuelve a preguntar el tipo de documento (`reportType`) en CADA año de un club ya dado de alta: 50 de 54 documentos estonios
+     frenan por eso, y el ajuste `reportType` no se puede poner a nivel club (solo perimetro, deuda-incluye y name). Que un club existente
+     herede el tipo de sus años cargados del mismo formato de documento, o que `reportType` se pueda fijar para la carpeta.
+  m) La compuerta del perímetro en la carga compara con el año cargado más cercano y no con el ajuste del club: Nõmme Kalju 2022-2024
+     preguntan "¿individual como 2025?" aunque el club tiene ajuste `perimetro` consolidado (2025 es individual por ser su único estado).
+  n) La comparación con el año vecino (anio-vecino / no-cierra "columna del año anterior") compara perímetros distintos: FCI Levadia 2020
+     da ingresos 786.551 (la MTÜ sola) contra 1.073.554 de la columna comparativa del consolidado 2021; 13 casos así en Estonia. Que la
+     compuerta compare el mismo perímetro, o que lo diga en la pregunta.
+  o) Dos versiones de un mismo ejercicio (`-correction` y la original en Beerschot 2019, Lokeren-Temse 2023, Lommel SK 2021, Patro Eisden
+     2020 y 2024) entran juntas al lote y cada una abre sus casos: 21 casos de "año vecino" en Bélgica salen de ahí. Que el lote elija una
+     antes de localizar (la regla de CONVENCIONES-DATOS, dos documentos del mismo ejercicio) y mande la otra a descartados con ok.
+  p) Ceros reales que se repiten cada año (Televisión y Estadio en los clubes estonios chicos, Cuotas sociales en Beerschot): el ajuste
+     `cero-real` es por documento y vuelve a frenar cada año; y el perfil del club (socios, otros deportes) se pregunta de nuevo en cada
+     documento hasta que se contesta. Un cero real confirmado del club debería valer para sus otros años del mismo formato.
