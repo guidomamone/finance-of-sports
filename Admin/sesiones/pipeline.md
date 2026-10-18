@@ -118,10 +118,19 @@ Lo de arriba ya lo pasó la principal (merge 621acf6cea, CHANGELOG 738). Lo nuev
   Medido: `--medir` y ensayo de los 259 clubes idénticos; con los belgas nuevos (datos de la principal copiados un rato), 10 cajas: Beerschot
   2025 0,204; Lierse SK 2025 0,003; Lokeren-Temse 2025 0,045; Lommel SK 2018 0,139 y 2025 0,890; Patro Eisden 2025 0,012; RAAL 2025 1,631;
   RWDM 2020 0,050 y 2025 0,183 (M EUR). OH Leuven 2025 sigue sin dato (su .md no trae el 20/58 con código).
+- **Estonia en caja-deuda (to-do 298 c3 y r).** `tools/vocabulario.mjs` et: `bilanss` (TITULO_BALANCE), `raha` (CAJA), `laenukohustised`
+  (DEUDA_FINANCIERA). Medido con los 9 clubes estonios de la principal copiados un rato: "sin páginas de balance" 108 → 0; datos para escribir
+  2 → 32 (24 cajas y 8 deudas, confirmados por el documento vecino; Tallinna Kalev 2019 0,00177 = "Raha 1 770" L90). `--medir` y ensayo de
+  los 259 clubes de la rama idénticos. La "caja equivocada" de Tallinna Kalev de onboarding: 0,028424 y 0,005455 son las cajas BUENAS de
+  2023 (L117) y 2024 (L110); en esa corrida quedaron atadas a 2019 y 2020. Con los datos de hoy cada una cae en su año; no se reprodujo.
 
 ### Qué queda pendiente (para TODO)
 - **Escribir esas cajas en `data/`, en la carpeta principal después del merge** (gratis; sin `--ejecutar`, solo el escalón NBB y lo guardado):
   `for c in beerschot-be liersesk-be lokerentemse-be lommelsk-be patroeisden-be raallalouviere-be rwdm-be; do node tools/caja-deuda.mjs --club $c --escribir; done`
+- **Escribir caja y deuda de Estonia en `data/`, en la carpeta principal después del merge** (gratis; sin `--ejecutar`):
+  `for c in fcilevadia-ee floratallinn-ee kuressaare-ee narvatrans-ee nommekalju-ee paidelinnameeskond-ee tallinnakalev-ee; do node tools/caja-deuda.mjs --club $c --escribir; done`
+- **Si vuelve a pasar que caja-deuda ata un valor al año equivocado** (Tallinna Kalev en la corrida de onboarding: las cajas de 2023 y 2024
+  escritas en 2019 y 2020), mirar qué `.md` devolvió `mdDeFuente` para esos años (la nota de la fuente en `Admin/carga-clubes/`).
 - **Mejorar la caja y la deuda de un año sin vecino (pedido de Guido, 2026-10-18).** Hoy es solo la caja belga por código. Falta: (1) una
   compuerta de primer año para cualquier país (que el dato cuadre con el balance del propio documento, no solo NBB); (2) la deuda belga, que
   necesita decidir el criterio (¿el 42 entra?; Union SG tiene 31,66 M cargados y 7,62 M por códigos financieros, ¿qué suma de más?); (3) OH
@@ -131,3 +140,4 @@ Lo de arriba ya lo pasó la principal (merge 621acf6cea, CHANGELOG 738). Lo nuev
 - caja-deuda deja de leer los códigos NBB como importes: en un club belga, Jev ya no tiene guardada la respuesta (cambian las filas), y un
   `--ejecutar` paga ~US$ 0,07 por club en Jev.
 - caja-deuda (to-do 298 c2): un año belga sin vecino escribe la caja del código 54/58 (si el balance cuadra); antes quedaba sin dato. La deuda sigue igual.
+- `vocabulario.mjs` suma el estonio (to-do 298 c3): caja-deuda encuentra el balance estonio y propone caja y deuda; nada cambia en otros países.

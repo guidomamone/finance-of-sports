@@ -738,6 +738,9 @@ Caja de un año SIN VECINO en el esquema NBB belga (to-do 298 c2): la escalera n
 código 54/58 (la celda que sigue al código) si el balance del propio documento cuadra (20/58 = 10/49). Solo la caja: la deuda por códigos
 (170/4, 42, 43) no coincide con el criterio con que se cargó Bélgica (`cajaNBB` en `tools/caja-deuda.mjs`).
 
+Estonio en el diccionario (to-do 298 c3): `bilanss` (título del balance), `raha` (caja) y `laenukohustised` (préstamos) en `tools/vocabulario.mjs`.
+Sin ellos ninguna fila estonia era del balance y caja-deuda daba "sin páginas de balance".
+
 La escala del año (`escalaDe`, to-do 289) es su propia escalera: escalón 0, el ajuste manual `escala` (`unidades` | `miles` | `millones`,
 la que el documento imprime para ese año, también por PDF y año con `--anio`); escalón 1, `factorPorIngresos` (la escala con la que más
 ingresos cargados del año aparecen en el documento); si ninguno da, el año queda "sin escala del documento" y no entra ni un ajuste de
