@@ -14,6 +14,8 @@
 //   ni cita de dictamen). Vocabulario provisorio: se ajusta con los casos (Guido, 2026-10-18).
 //   continuidad: true si el informe marca una incertidumbre material sobre la continuidad (empresa en funcionamiento, going concern),
 //   con su cita en citas.continuidad; es aparte del dictamen. Otros párrafos de énfasis no se registran.
+//   La entidad que organiza una liga (AFA, LFP) va con "ligaId" (de data/leagues.js) en vez de "clubId" y con "entidad":{"nombre","legal"?};
+//   sus citas no pasan por quien.mjs (no es un club del sitio). Sale en data/auditoria/_ligas.js (window.LIGA_AUDITORIA[ligaId][anio]).
 //   nota (opcional): una aclaración interna para la próxima sesión; no se publica.
 //
 // CHEQUEOS (código 1 si alguno falla): JSON y códigos válidos; el club y el año tienen un balance cargado; cada cita está en su línea
@@ -37,6 +39,7 @@ import { resolve, join } from 'node:path';
 import { execSync } from 'node:child_process';
 import { loadSite } from './datos-sitio.mjs';
 import { quien } from './quien.mjs';
+import vm from 'node:vm';
 
 const ROOT = resolve(import.meta.dirname, '..');
 const REGISTRO = 'Admin/registros/auditoria.jsonl';
@@ -77,24 +80,31 @@ for (const md of tracked) {
 // --- leer y verificar el registro -------------------------------------------------------------------------------------------------------
 const norm = (s) => String(s).replace(/[‘’´`]/g, "'").replace(/[“”«»]/g, '"').replace(/\s+/g, ' ').trim().toLowerCase();
 const cache = new Map();
-function chequearCita(n, c, clubId, anio, que) {
+function chequearCita(n, c, clubId, anio, que, sinAnio = false) {
   if (!c || !c.md || !Number.isInteger(c.linea) || !c.texto) return err(n, `cita de ${que} incompleta (md, linea, texto)`);
   if (!trackedSet.has(c.md.normalize('NFC'))) return err(n, `cita de ${que}: ${c.md} no está trackeado`);
   if (!cache.has(c.md)) cache.set(c.md, readFileSync(join(ROOT, c.md), 'utf8').split('\n'));
   const ls = cache.get(c.md);
   if (!norm(ls.slice(Math.max(0, c.linea - 4), c.linea + 3).join(' ')).includes(norm(c.texto))) err(n, `cita de ${que}: el texto no está en ${c.md}:${c.linea} (±3)`);
+  if (sinAnio) return;
   const q = quien(join(ROOT, c.md.replace(/\.md$/, '.pdf')), clubId);
   if (q.error || q.year !== anio) err(n, `cita de ${que}: ${c.md} es del ejercicio ${q.year ?? '?'}, no del ${anio}`);
 }
 const lineas = existsSync(join(ROOT, REGISTRO)) ? readFileSync(join(ROOT, REGISTRO), 'utf8').split('\n') : [];
-const registro = new Map();
+// Las ligas del sitio, para las líneas de la entidad que organiza una liga (`ligaId` en vez de `clubId`).
+const ligas = (() => { const ctx = vm.createContext({ window: {} }); vm.runInContext(readFileSync(join(ROOT, 'data/leagues.js'), 'utf8') + ';window.L=LEAGUES;', ctx); return ctx.window.L || {}; })();
+const registro = new Map(), registroLigas = new Map();
 lineas.forEach((l, i) => {
   const n = i + 1;
   if (!l.trim()) return;
   let o; try { o = JSON.parse(l); } catch (e) { return err(n, `JSON inválido (${e.message})`); }
-  const k = `${o.clubId}|${o.anio}`;
-  if (registro.has(k)) return err(n, `${k} repetido`);
-  if (!conBalance(o.clubId, o.anio)) err(n, `${k}: no hay un balance cargado de ese ejercicio`);
+  const esLiga = !!o.ligaId;
+  const k = esLiga ? `liga:${o.ligaId}|${o.anio}` : `${o.clubId}|${o.anio}`;
+  if (registro.has(k) || registroLigas.has(k)) return err(n, `${k} repetido`);
+  if (esLiga) {
+    if (!ligas[o.ligaId]) err(n, `ligaId "${o.ligaId}" no está en data/leagues.js`);
+    if (!o.entidad || !o.entidad.nombre) err(n, 'una línea de liga lleva entidad.nombre (quién organiza la liga: AFA, LFP)');
+  } else if (!conBalance(o.clubId, o.anio)) err(n, `${k}: no hay un balance cargado de ese ejercicio`);
   if (!DICTAMENES.has(o.dictamen)) err(n, `dictamen desconocido "${o.dictamen}"`);
   if (typeof o.continuidad !== 'boolean') err(n, 'continuidad tiene que ser true o false');
   const c = o.citas || {};
@@ -102,11 +112,11 @@ lineas.forEach((l, i) => {
     if (o.auditor) err(n, 'sin_informe no lleva auditor');
   } else {
     if (!o.auditor || !o.auditor.nombre || !TIPOS.has(o.auditor.tipo)) err(n, 'auditor sin nombre o con tipo desconocido');
-    chequearCita(n, c.auditor, o.clubId, o.anio, 'auditor');
-    chequearCita(n, c.dictamen, o.clubId, o.anio, 'dictamen');
+    chequearCita(n, c.auditor, o.clubId, o.anio, 'auditor', esLiga);
+    chequearCita(n, c.dictamen, o.clubId, o.anio, 'dictamen', esLiga);
   }
-  if (o.continuidad) chequearCita(n, c.continuidad, o.clubId, o.anio, 'continuidad');
-  registro.set(k, o);
+  if (o.continuidad) chequearCita(n, c.continuidad, o.clubId, o.anio, 'continuidad', esLiga);
+  (esLiga ? registroLigas : registro).set(k, o);
 });
 
 // --- extractos para el subagente -------------------------------------------------------------------------------------------------------
@@ -168,6 +178,11 @@ const CAB = '// Generado por tools/auditoria.mjs desde Admin/registros/auditoria
 const archivos = {};
 for (const [p, d] of Object.entries(porPais))
   archivos[`${p}.js`] = `${CAB}window.CLUB_AUDITORIA = window.CLUB_AUDITORIA || {};\nObject.assign(window.CLUB_AUDITORIA, ${JSON.stringify(d, null, 1)});\n`;
+const porLiga = {};
+for (const o of registroLigas.values()) { const c = o.citas || {};
+  (porLiga[o.ligaId] ||= {})[o.anio] = { entidad: o.entidad, auditor: corto(o.auditor) || null, dictamen: o.dictamen, continuidad: o.continuidad,
+    fuente: c.dictamen ? { md: c.dictamen.md, linea: c.dictamen.linea } : null }; }
+archivos['_ligas.js'] = `${CAB}window.LIGA_AUDITORIA = ${JSON.stringify(porLiga, null, 1)};\n`;
 archivos['_paises.js'] = `${CAB}window.AUDITORIA_PAISES = ${JSON.stringify(Object.keys(porPais).sort())};\n`;
 
 if (pendientes.length) console.error(`Aviso: ${pendientes.length} balances cargados sin línea en ${REGISTRO} (node tools/auditoria.mjs --pendientes).`);
