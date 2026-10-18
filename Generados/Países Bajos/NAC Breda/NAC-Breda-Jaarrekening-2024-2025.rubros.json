@@ -1,0 +1,250 @@
+{
+  "md": "Clubes/Países Bajos/NAC Breda/NAC-Breda-Jaarrekening-2024-2025.md",
+  "pdf": "Clubes/Países Bajos/NAC Breda/NAC-Breda-Jaarrekening-2024-2025.pdf",
+  "club": "nac-breda",
+  "year": 2025,
+  "generatedAt": "2026-10-18T23:21:27.892Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Wedstrijdbaten",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"NETTO-OMZET\"",
+      "values": [
+        3.930225
+      ],
+      "glosa": "Ingresos por días de partido"
+    },
+    {
+      "label": "Sponsoring",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"NETTO-OMZET\"",
+      "values": [
+        7.580148
+      ],
+      "glosa": "Patrocinios"
+    },
+    {
+      "label": "Media gerelateerde baten",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"NETTO-OMZET\"",
+      "values": [
+        2.834542
+      ],
+      "glosa": "Ingresos por derechos audiovisuales"
+    },
+    {
+      "label": "Merchandising",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"NETTO-OMZET\"",
+      "values": [
+        0.271365
+      ],
+      "glosa": "Merchandising"
+    },
+    {
+      "label": "Food & Beverage",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"NETTO-OMZET\"",
+      "values": [
+        1.337949
+      ],
+      "glosa": "Alimentos y bebidas"
+    },
+    {
+      "label": "Opleidingen",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"NETTO-OMZET\"",
+      "values": [
+        0.272455
+      ],
+      "glosa": "Ingresos por formación"
+    },
+    {
+      "label": "Overige baten",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"NETTO-OMZET\"",
+      "values": [
+        2.449265
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Opbrengst vergoedingssommen",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"NETTO-OMZET\"",
+      "values": [
+        3.05268
+      ],
+      "glosa": "Ingresos por traspasos de jugadores"
+    },
+    {
+      "label": "Overige bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.013004
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Wedstrijd- en trainingskosten",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Kosten uitbesteed werk en overige externe kosten\"",
+      "values": [
+        1.707815
+      ],
+      "glosa": "Gastos de partidos y entrenamientos"
+    },
+    {
+      "label": "Huisvestingkosten",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Kosten uitbesteed werk en overige externe kosten\"",
+      "values": [
+        2.878863
+      ],
+      "glosa": "Gastos de instalaciones e inmuebles"
+    },
+    {
+      "label": "Verkoopkosten",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Kosten uitbesteed werk en overige externe kosten\"",
+      "values": [
+        1.661898
+      ],
+      "glosa": "Gastos de venta"
+    },
+    {
+      "label": "Overige kosten",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Kosten uitbesteed werk en overige externe kosten\"",
+      "values": [
+        1.29113
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Brutoloon",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Lonen en salarissen\"",
+      "values": [
+        7.931277
+      ],
+      "glosa": "Sueldos y salarios brutos"
+    },
+    {
+      "label": "Wedstrijdpremies",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Lonen en salarissen\"",
+      "values": [
+        0.273594
+      ],
+      "glosa": "Primas por partidos"
+    },
+    {
+      "label": "Overige personeelskosten",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Lonen en salarissen\"",
+      "values": [
+        2.731781
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Pensioenpremies",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Sociale lasten\"",
+      "values": [
+        0.135313
+      ],
+      "glosa": "Aportaciones a planes de pensiones"
+    },
+    {
+      "label": "Sociale lasten",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Sociale lasten\"",
+      "values": [
+        0.944243
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Bedrijfsgebouwen en -terreinen",
+      "lado": "expense",
+      "page": 38,
+      "section": "nota que desglosa \"Afschrijvingen\"",
+      "values": [
+        0.10118
+      ],
+      "glosa": "Terrenos y construcciones"
+    },
+    {
+      "label": "Machines en installaties",
+      "lado": "expense",
+      "page": 38,
+      "section": "nota que desglosa \"Afschrijvingen\"",
+      "values": [
+        0.131275
+      ],
+      "glosa": "Maquinaria e instalaciones"
+    },
+    {
+      "label": "Andere vaste bedrijfsmiddelen",
+      "lado": "expense",
+      "page": 38,
+      "section": "nota que desglosa \"Afschrijvingen\"",
+      "values": [
+        0.167653
+      ],
+      "glosa": "Otro inmovilizado material"
+    },
+    {
+      "label": "Afschrijvingen vergoedingssommen clubs",
+      "lado": "expense",
+      "page": 38,
+      "section": "nota que desglosa \"Afschrijvingen\"",
+      "values": [
+        0.572525
+      ],
+      "glosa": "Amortización de derechos de traspaso"
+    },
+    {
+      "label": "Afschrijvingen hand- en tekengelden",
+      "lado": "expense",
+      "page": 38,
+      "section": "nota que desglosa \"Afschrijvingen\"",
+      "values": [
+        0.181389
+      ],
+      "glosa": "Amortización de primas de fichaje"
+    },
+    {
+      "label": "Overige bedrijfskosten",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.04608
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

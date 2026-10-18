@@ -1,0 +1,296 @@
+{
+ "pdf": "Clubes/Países Bajos/Telstar/Telstar-Jaarverslag-2024-2025-full.pdf",
+ "md": "Clubes/Países Bajos/Telstar/Telstar-Jaarverslag-2024-2025-full.md",
+ "generado": "2026-10-18T23:21:28.052Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/Telstar/Telstar-Jaarverslag-2024-2025-full.pdf",
+   "campo": "cierre",
+   "valor": "2025-06-30",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): jaarrekening 2024-2025, balans per 30 juni 2025",
+   "evidencia": "Telstar-Jaarverslag-2024-2025-full.md L53",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  }
+ ],
+ "cola": [
+  "0885bba",
+  "c8070e6"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "5.76 = 5.76",
+   "suma": 5.760000000000001,
+   "impreso": 5.76
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "5.55 = 5.55",
+   "suma": 5.55,
+   "impreso": 5.55
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 8.326672684688674e-16
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+  }
+ ],
+ "notas": [],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 5.76,
+  "gastos": 5.55,
+  "financiero": -0.029,
+  "impuesto": 0.139,
+  "resultadoImpreso": 0.32,
+  "resultadoParaCargar": 0.32,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Wedstrijdbaten",
+   "lado": "ingreso",
+   "M": 0.929,
+   "pagina": 22,
+   "linea": 779,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Sponsoring",
+   "lado": "ingreso",
+   "M": 2.354,
+   "pagina": 22,
+   "linea": 780,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Media gerelateerde baten",
+   "lado": "ingreso",
+   "M": 0.825,
+   "pagina": 22,
+   "linea": 781,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Merchandising & Business to Consumer activiteiten",
+   "lado": "ingreso",
+   "M": 0.087,
+   "pagina": 22,
+   "linea": 782,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Food & Beverage",
+   "lado": "ingreso",
+   "M": 0.904,
+   "pagina": 22,
+   "linea": 783,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Resultaat vergoedingssommen",
+   "lado": "ingreso",
+   "M": 0.322,
+   "pagina": 22,
+   "linea": 784,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Overige baten",
+   "lado": "ingreso",
+   "M": 0.339,
+   "pagina": 22,
+   "linea": 785,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Lonen en salarissen",
+   "lado": "gasto",
+   "M": 1.503,
+   "pagina": 22,
+   "linea": 792,
+   "origen": "nota que desglosa \"Personeelskosten\""
+  },
+  {
+   "etiqueta": "Sociale lasten",
+   "lado": "gasto",
+   "M": 0.306,
+   "pagina": 22,
+   "linea": 794,
+   "origen": "nota que desglosa \"Personeelskosten\""
+  },
+  {
+   "etiqueta": "Pensioenlasten",
+   "lado": "gasto",
+   "M": 0.026,
+   "pagina": 22,
+   "linea": 795,
+   "origen": "nota que desglosa \"Personeelskosten\""
+  },
+  {
+   "etiqueta": "Overige",
+   "lado": "gasto",
+   "M": 1.029,
+   "pagina": 22,
+   "linea": 796,
+   "origen": "nota que desglosa \"Personeelskosten\""
+  },
+  {
+   "etiqueta": "Bedrijfsgebouwen en -terreinen",
+   "lado": "gasto",
+   "M": 0.284,
+   "pagina": 22,
+   "linea": 812,
+   "origen": "nota que desglosa \"Afschrijvingen materiële vaste activa\""
+  },
+  {
+   "etiqueta": "Overige bedrijfsmiddelen",
+   "lado": "gasto",
+   "M": 0.086,
+   "pagina": 22,
+   "linea": 814,
+   "origen": "nota que desglosa \"Afschrijvingen materiële vaste activa\""
+  },
+  {
+   "etiqueta": "Kostprijs Food & Beverage",
+   "lado": "gasto",
+   "M": 0.504,
+   "pagina": 23,
+   "linea": 837,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\""
+  },
+  {
+   "etiqueta": "Kostprijs merchandise",
+   "lado": "gasto",
+   "M": 0.052,
+   "pagina": 23,
+   "linea": 839,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\""
+  },
+  {
+   "etiqueta": "Verkoop",
+   "lado": "gasto",
+   "M": 0.083,
+   "pagina": 23,
+   "linea": 840,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\""
+  },
+  {
+   "etiqueta": "Overige",
+   "lado": "gasto",
+   "M": 0.276,
+   "pagina": 23,
+   "linea": 842,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\""
+  },
+  {
+   "etiqueta": "Huur",
+   "lado": "gasto",
+   "M": 0.145,
+   "pagina": 23,
+   "linea": 847,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\""
+  },
+  {
+   "etiqueta": "Onderhoud",
+   "lado": "gasto",
+   "M": 0.055,
+   "pagina": 23,
+   "linea": 849,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\""
+  },
+  {
+   "etiqueta": "Gas, water en electra",
+   "lado": "gasto",
+   "M": 0.086,
+   "pagina": 23,
+   "linea": 850,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\""
+  },
+  {
+   "etiqueta": "Schoonmaakkosten",
+   "lado": "gasto",
+   "M": 0.055,
+   "pagina": 23,
+   "linea": 851,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\""
+  },
+  {
+   "etiqueta": "Belastingen en zakelijke lasten",
+   "lado": "gasto",
+   "M": 0.014,
+   "pagina": 23,
+   "linea": 852,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\""
+  },
+  {
+   "etiqueta": "Overige huisvestingskosten",
+   "lado": "gasto",
+   "M": 0.031,
+   "pagina": 23,
+   "linea": 853,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\""
+  },
+  {
+   "etiqueta": "Wedstrijd- en trainingskosten",
+   "lado": "gasto",
+   "M": 0.732,
+   "pagina": 23,
+   "linea": 831,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\""
+  },
+  {
+   "etiqueta": "Algemene kosten",
+   "lado": "gasto",
+   "M": 0.283,
+   "pagina": 23,
+   "linea": 832,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Som der financiële baten en lasten",
+   "M": -0.029,
+   "linea": 252
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belasting",
+   "M": 0.139,
+   "linea": 254
+  }
+ ]
+}

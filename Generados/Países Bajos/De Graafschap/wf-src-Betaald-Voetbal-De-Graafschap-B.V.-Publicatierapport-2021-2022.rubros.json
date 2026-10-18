@@ -1,0 +1,80 @@
+{
+  "md": "Clubes/Países Bajos/De Graafschap/wf-src-Betaald-Voetbal-De-Graafschap-B.V.-Publicatierapport-2021-2022.md",
+  "pdf": "Clubes/Países Bajos/De Graafschap/wf-src-Betaald-Voetbal-De-Graafschap-B.V.-Publicatierapport-2021-2022.pdf",
+  "club": "de-graafschap",
+  "year": 2022,
+  "generatedAt": "2026-10-18T23:21:27.432Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Netto-omzet",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        8.272005
+      ],
+      "glosa": "Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "Lonen en salarissen",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        3.492133
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Sociale lasten",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.610169
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Pensioenlasten",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.084659
+      ],
+      "glosa": "Gastos por pensiones"
+    },
+    {
+      "label": "Resultaat vergoedingssommen",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
+      "values": [
+        -0.05146
+      ],
+      "glosa": "Resultado por traspasos de jugadores"
+    },
+    {
+      "label": "Afschrijvingen materiële vaste activa",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.261379
+      ],
+      "glosa": "Amortización del inmovilizado material"
+    },
+    {
+      "label": "Overige bedrijfskosten",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        4.324265
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

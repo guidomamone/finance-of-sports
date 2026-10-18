@@ -1,0 +1,230 @@
+{
+  "md": "Clubes/Países Bajos/ADO Den Haag/jaarrekening2024-25.md",
+  "pdf": "Clubes/Países Bajos/ADO Den Haag/jaarrekening2024-25.pdf",
+  "club": "ado-den-haag",
+  "year": 2025,
+  "generatedAt": "2026-10-18T23:21:27.346Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Wedstrijdbaten",
+      "lado": "revenue",
+      "page": 16,
+      "section": "nota que desglosa \"Netto-omzet (11,12)\"",
+      "values": [
+        1.777882
+      ],
+      "glosa": "Ingresos por días de partido"
+    },
+    {
+      "label": "Sponsoring",
+      "lado": "revenue",
+      "page": 16,
+      "section": "nota que desglosa \"Netto-omzet (11,12)\"",
+      "values": [
+        5.45522
+      ],
+      "glosa": "Patrocinios"
+    },
+    {
+      "label": "Media gerelateerde baten",
+      "lado": "revenue",
+      "page": 16,
+      "section": "nota que desglosa \"Netto-omzet (11,12)\"",
+      "values": [
+        1.135526
+      ],
+      "glosa": "Ingresos audiovisuales y de medios"
+    },
+    {
+      "label": "Prijzengeld",
+      "lado": "revenue",
+      "page": 16,
+      "section": "nota que desglosa \"Netto-omzet (11,12)\"",
+      "values": [
+        0.377553
+      ],
+      "glosa": "Premios deportivos"
+    },
+    {
+      "label": "Horeca",
+      "lado": "revenue",
+      "page": 16,
+      "section": "nota que desglosa \"Netto-omzet (11,12)\"",
+      "values": [
+        2.287066
+      ],
+      "glosa": "Hostelería y restauración"
+    },
+    {
+      "label": "Merchandise",
+      "lado": "revenue",
+      "page": 16,
+      "section": "nota que desglosa \"Netto-omzet (11,12)\"",
+      "values": [
+        0.534193
+      ],
+      "glosa": "Merchandising"
+    },
+    {
+      "label": "Subsidies en giften",
+      "lado": "revenue",
+      "page": 16,
+      "section": "nota que desglosa \"Netto-omzet (11,12)\"",
+      "values": [
+        0.048882
+      ],
+      "glosa": "Subvenciones y donaciones"
+    },
+    {
+      "label": "Overige baten",
+      "lado": "revenue",
+      "page": 16,
+      "section": "nota que desglosa \"Netto-omzet (11,12)\"",
+      "values": [
+        1.85163
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Resultaat vergoedingssommen (16)",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        1.098265
+      ],
+      "glosa": "Resultado por traspasos de jugadores (16)"
+    },
+    {
+      "label": "Lonen en salarissen",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Personeelskosten (13)\"",
+      "values": [
+        7.443314
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Sociale lasten",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Personeelskosten (13)\"",
+      "values": [
+        1.258234
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Pensioenlasten",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Personeelskosten (13)\"",
+      "values": [
+        0.157357
+      ],
+      "glosa": "Gastos por pensiones"
+    },
+    {
+      "label": "Overige personeelskosten",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Personeelskosten (13)\"",
+      "values": [
+        1.296673
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Vergoedingssommen",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Afschrijvingen (14)\" > desglose de \"Immateriële vaste activa\"",
+      "values": [
+        0.369136
+      ],
+      "glosa": "Amortización de derechos federativos (traspasos)"
+    },
+    {
+      "label": "Software",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Afschrijvingen (14)\" > desglose de \"Immateriële vaste activa\"",
+      "values": [
+        0.001083
+      ],
+      "glosa": "Aplicaciones informáticas"
+    },
+    {
+      "label": "Goodwill",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Afschrijvingen (14)\" > desglose de \"Immateriële vaste activa\"",
+      "values": [
+        0.02
+      ],
+      "glosa": "Fondo de comercio"
+    },
+    {
+      "label": "Allocatie amortisatie vergoedingssommen",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Afschrijvingen (14)\" > desglose de \"Immateriële vaste activa\"",
+      "values": [
+        -0.369136
+      ],
+      "glosa": "Asignación de amortización de derechos de traspaso"
+    },
+    {
+      "label": "Materiële vaste activa",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Afschrijvingen (14)\"",
+      "values": [
+        0.3782
+      ],
+      "glosa": "Inmovilizado material"
+    },
+    {
+      "label": "Huisvestingskosten",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Overige bedrijfskosten (15)\"",
+      "values": [
+        3.127141
+      ],
+      "glosa": "Gastos de instalaciones"
+    },
+    {
+      "label": "Wedstrijd- en trainingskosten",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Overige bedrijfskosten (15)\"",
+      "values": [
+        1.870848
+      ],
+      "glosa": "Gastos de partidos y entrenamientos"
+    },
+    {
+      "label": "Verkoopkosten",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Overige bedrijfskosten (15)\"",
+      "values": [
+        2.986742
+      ],
+      "glosa": "Gastos de venta"
+    },
+    {
+      "label": "Algemene kosten",
+      "lado": "expense",
+      "page": 17,
+      "section": "nota que desglosa \"Overige bedrijfskosten (15)\"",
+      "values": [
+        1.539528
+      ],
+      "glosa": "Gastos generales"
+    }
+  ]
+}

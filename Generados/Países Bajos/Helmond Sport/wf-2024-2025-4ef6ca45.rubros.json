@@ -1,0 +1,50 @@
+{
+  "md": "Clubes/Países Bajos/Helmond Sport/wf-2024-2025-4ef6ca45.md",
+  "pdf": "Clubes/Países Bajos/Helmond Sport/wf-2024-2025-4ef6ca45.pdf",
+  "club": "helmond-sport",
+  "year": 2025,
+  "generatedAt": "2026-10-18T23:21:27.777Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Omzet",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        5.135616
+      ],
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "Resultaat vergoedingssommen",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.196967
+      ],
+      "glosa": "Resultado por traspasos de jugadores"
+    },
+    {
+      "label": "Afschrijvingen",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.056242
+      ],
+      "glosa": "Amortizaciones"
+    },
+    {
+      "label": "Overige kosten",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        7.426289
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

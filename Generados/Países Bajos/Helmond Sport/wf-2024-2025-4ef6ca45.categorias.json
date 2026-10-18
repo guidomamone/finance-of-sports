@@ -1,0 +1,66 @@
+{
+ "md": "Clubes/Países Bajos/Helmond Sport/wf-2024-2025-4ef6ca45.md",
+ "club": "helmond-sport",
+ "year": 2025,
+ "generatedAt": "2026-10-18T23:25:36.417Z",
+ "rubrosHuella": "3966c06eae63a5206b03f2f928b2bdb290e20805",
+ "jevHuella": "35efc615926ba9a2145a6991222b3171828e3a13",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.0070568,
+ "rubros": [
+  {
+   "label": "Omzet",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Cifra de negocios",
+   "page": 1,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "lump_football_operations",
+   "confianza": 1
+  },
+  {
+   "label": "Resultaat vergoedingssommen",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Resultado por traspasos de jugadores",
+   "page": 1,
+   "pendiente": false,
+   "ya": "player_sales",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "player_sales",
+   "confianza": 1
+  },
+  {
+   "label": "Afschrijvingen",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortizaciones",
+   "page": 1,
+   "pendiente": true,
+   "jev": "player_amortisation",
+   "jevConf": 0.38,
+   "escalon": 2,
+   "categoria": "depreciation",
+   "confianza": 0.6,
+   "motivo": "Amortizaciones genéricas separadas de traspasos; probablemente bienes tangibles, aunque podría incluir pases."
+  },
+  {
+   "label": "Overige kosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 1,
+   "pendiente": true,
+   "jev": "other_expenses",
+   "jevConf": 0.68,
+   "escalon": 2,
+   "categoria": "other_expenses",
+   "confianza": 0.75,
+   "motivo": "Otros gastos de explotación sin desglose, catch-all other_expenses."
+  }
+ ]
+}

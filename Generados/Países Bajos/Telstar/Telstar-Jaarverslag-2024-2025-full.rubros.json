@@ -1,155 +1,260 @@
 {
- "md": "Clubes/Países Bajos/Telstar/Telstar-Jaarverslag-2024-2025-full.md",
- "pdf": "Clubes/Países Bajos/Telstar/Telstar-Jaarverslag-2024-2025-full.pdf",
- "club": "telstar",
- "year": 2025,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T22:07:28.085Z",
- "tieOuts": {
-  "cierran": 0,
-  "noCierran": 0
- },
- "warnings": [
-  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
- ],
- "estadoDeResultados": true,
- "seleccion": {
-  "ok": true,
-  "filas": 13,
-  "notasUsadas": [
-   "20",
-   "16",
-   "19"
+  "md": "Clubes/Países Bajos/Telstar/Telstar-Jaarverslag-2024-2025-full.md",
+  "pdf": "Clubes/Países Bajos/Telstar/Telstar-Jaarverslag-2024-2025-full.pdf",
+  "club": "telstar",
+  "year": 2025,
+  "generatedAt": "2026-10-18T23:21:28.052Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Wedstrijdbaten",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        0.929
+      ],
+      "glosa": "Ingresos por días de partido"
+    },
+    {
+      "label": "Sponsoring",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        2.354
+      ],
+      "glosa": "Patrocinios"
+    },
+    {
+      "label": "Media gerelateerde baten",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        0.825
+      ],
+      "glosa": "Ingresos por medios y retransmisiones"
+    },
+    {
+      "label": "Merchandising & Business to Consumer activiteiten",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        0.087
+      ],
+      "glosa": "Merchandising y actividades de venta al público"
+    },
+    {
+      "label": "Food & Beverage",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        0.904
+      ],
+      "glosa": "Alimentos y bebidas"
+    },
+    {
+      "label": "Resultaat vergoedingssommen",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        0.322
+      ],
+      "glosa": "Resultado por traspasos de jugadores"
+    },
+    {
+      "label": "Overige baten",
+      "lado": "revenue",
+      "page": 22,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        0.339
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Lonen en salarissen",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        1.503
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Sociale lasten",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        0.306
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Pensioenlasten",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        0.026
+      ],
+      "glosa": "Gastos por pensiones"
+    },
+    {
+      "label": "Overige",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        1.029
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Bedrijfsgebouwen en -terreinen",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Afschrijvingen materiële vaste activa\"",
+      "values": [
+        0.284
+      ],
+      "glosa": "Edificios y terrenos"
+    },
+    {
+      "label": "Overige bedrijfsmiddelen",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Afschrijvingen materiële vaste activa\"",
+      "values": [
+        0.086
+      ],
+      "glosa": "Otros elementos de inmovilizado"
+    },
+    {
+      "label": "Kostprijs Food & Beverage",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\"",
+      "values": [
+        0.504
+      ],
+      "glosa": "Coste de ventas de alimentos y bebidas"
+    },
+    {
+      "label": "Kostprijs merchandise",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\"",
+      "values": [
+        0.052
+      ],
+      "glosa": "Coste de ventas de merchandising"
+    },
+    {
+      "label": "Verkoop",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\"",
+      "values": [
+        0.083
+      ],
+      "glosa": "Gastos de venta"
+    },
+    {
+      "label": "Overige",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\"",
+      "values": [
+        0.276
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Huur",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\"",
+      "values": [
+        0.145
+      ],
+      "glosa": "Alquileres"
+    },
+    {
+      "label": "Onderhoud",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\"",
+      "values": [
+        0.055
+      ],
+      "glosa": "Mantenimiento"
+    },
+    {
+      "label": "Gas, water en electra",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\"",
+      "values": [
+        0.086
+      ],
+      "glosa": "Gas, agua y electricidad"
+    },
+    {
+      "label": "Schoonmaakkosten",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\"",
+      "values": [
+        0.055
+      ],
+      "glosa": "Gastos de limpieza"
+    },
+    {
+      "label": "Belastingen en zakelijke lasten",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\"",
+      "values": [
+        0.014
+      ],
+      "glosa": "Impuestos y tasas"
+    },
+    {
+      "label": "Overige huisvestingskosten",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\"",
+      "values": [
+        0.031
+      ],
+      "glosa": "Otros costes de inmuebles"
+    },
+    {
+      "label": "Wedstrijd- en trainingskosten",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Overige bedrijfskosten\"",
+      "values": [
+        0.732
+      ],
+      "glosa": "Gastos de partidos y entrenamientos"
+    },
+    {
+      "label": "Algemene kosten",
+      "lado": "expense",
+      "page": 23,
+      "section": "nota que desglosa \"Overige bedrijfskosten\"",
+      "values": [
+        0.283
+      ],
+      "glosa": "Gastos generales"
+    }
   ]
- },
- "ladoConocido": 11,
- "rubros": [
-  {
-   "label": "Netto-omzet",
-   "lado": "revenue",
-   "page": 8,
-   "section": "# Winst- en verliesrekening over 2024/2025",
-   "values": [
-    0.00576
-   ],
-   "origen": "renglón del estado abierto en una nota",
-   "esAncla": true
-  },
-  {
-   "label": "Sponsoring",
-   "lado": "revenue",
-   "page": 22,
-   "section": "# Toelichting op de winst- en verliesrekening over 2024/2025",
-   "values": [
-    0.002354
-   ],
-   "origen": "nota 20 (ancla 7)",
-   "ancla": "Netto-omzet"
-  },
-  {
-   "label": "Media gerelateerde baten",
-   "lado": "revenue",
-   "page": 22,
-   "section": "# Toelichting op de winst- en verliesrekening over 2024/2025",
-   "values": [
-    0.000825
-   ],
-   "origen": "nota 20 (ancla 7)",
-   "ancla": "Netto-omzet"
-  },
-  {
-   "label": "Merchandising & Business to Consumer activiteiten",
-   "lado": "revenue",
-   "page": 22,
-   "section": "# Toelichting op de winst- en verliesrekening over 2024/2025",
-   "values": [
-    0.000087
-   ],
-   "origen": "nota 20 (ancla 7)",
-   "ancla": "Netto-omzet"
-  },
-  {
-   "label": "Food & Beverage",
-   "lado": "revenue",
-   "page": 22,
-   "section": "# Toelichting op de winst- en verliesrekening over 2024/2025",
-   "values": [
-    0.000904
-   ],
-   "origen": "nota 20 (ancla 7)",
-   "ancla": "Netto-omzet"
-  },
-  {
-   "label": "Resultaat vergoedingssommen",
-   "lado": "revenue",
-   "page": 22,
-   "section": "# Toelichting op de winst- en verliesrekening over 2024/2025",
-   "values": [
-    0.000322
-   ],
-   "origen": "nota 20 (ancla 7)",
-   "ancla": "Netto-omzet"
-  },
-  {
-   "label": "Overige baten",
-   "lado": "revenue",
-   "page": 22,
-   "section": "# Toelichting op de winst- en verliesrekening over 2024/2025",
-   "values": [
-    0.000339
-   ],
-   "origen": "nota 20 (ancla 7)",
-   "ancla": "Netto-omzet"
-  },
-  {
-   "label": "Personeelskosten",
-   "lado": "expense",
-   "page": 8,
-   "section": "# Winst- en verliesrekening over 2024/2025",
-   "values": [
-    0.002864
-   ],
-   "origen": "estado 7"
-  },
-  {
-   "label": "Afschrijvingen materiële vaste activa",
-   "lado": "expense",
-   "page": 8,
-   "section": "# Winst- en verliesrekening over 2024/2025",
-   "values": [
-    0.00037
-   ],
-   "origen": "estado 7"
-  },
-  {
-   "label": "Overige bedrijfskosten",
-   "lado": "expense",
-   "page": 8,
-   "section": "# Winst- en verliesrekening over 2024/2025",
-   "values": [
-    0.002316
-   ],
-   "origen": "estado 7"
-  },
-  {
-   "label": "Som der financiële baten en lasten",
-   "lado": null,
-   "page": 8,
-   "section": "# Winst- en verliesrekening over 2024/2025",
-   "values": [
-    -0.000029
-   ],
-   "origen": "estado 7"
-  },
-  {
-   "label": "Belasting",
-   "lado": "expense",
-   "page": 8,
-   "section": "# Winst- en verliesrekening over 2024/2025",
-   "values": [
-    0.000139
-   ],
-   "origen": "estado 7"
-  }
- ]
 }

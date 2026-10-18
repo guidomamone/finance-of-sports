@@ -1,0 +1,243 @@
+{
+ "pdf": "Clubes/Países Bajos/FC Dordrecht/wf-2024-2025-602d6b96.pdf",
+ "md": "Clubes/Países Bajos/FC Dordrecht/wf-2024-2025-602d6b96.md",
+ "mdSha1": "232812500c8480a7ab0e82d0127cb68c3abe4bb6",
+ "ubicacionSha1": "94de60f72e08ad8ed3028fae0ec84809930b77e7",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T23:13:14.760Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica escala; importes con separador de miles sugieren unidades (euros)."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 186,
+   "etiqueta": "Netto-omzet",
+   "actual": "4,680.373",
+   "anterior": "3,607,448",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 188,
+   "etiqueta": "Lonen en salarissen (10)",
+   "actual": "2,008,539",
+   "anterior": "1,656,458",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 189,
+   "etiqueta": "Sociale lasten",
+   "actual": "415,736",
+   "anterior": "359,660",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 190,
+   "etiqueta": "Pensioenlasten",
+   "actual": "3,541",
+   "anterior": "4,795",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 191,
+   "etiqueta": "Overige personeelskosten",
+   "actual": "855.319",
+   "anterior": "613,066",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 192,
+   "etiqueta": "Afschrijvingen",
+   "actual": "164,875",
+   "anterior": "205,359",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 193,
+   "etiqueta": "Huisvestingskosten",
+   "actual": "442,573",
+   "anterior": "434,607",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 194,
+   "etiqueta": "Kantoorkosten",
+   "actual": "371,400",
+   "anterior": "291,403",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 195,
+   "etiqueta": "Verkoopkosten",
+   "actual": "861,632",
+   "anterior": "842,581",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 196,
+   "etiqueta": "Algemene kosten",
+   "actual": "451,614",
+   "anterior": "535,445",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 197,
+   "etiqueta": "Som der kosten",
+   "actual": "5,575,229",
+   "anterior": "4,943,374",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 198,
+   "etiqueta": "Bedrijfsresultaat",
+   "actual": "-894,856",
+   "anterior": "-1,335,926",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 199,
+   "etiqueta": "Financiële baten en lasten",
+   "actual": "-44,471",
+   "anterior": "-67,030",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 200,
+   "etiqueta": "Resultaat vergoedingssommen",
+   "actual": "1,156,388",
+   "anterior": "746,111",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 201,
+   "etiqueta": "Resultaat voor belastingen",
+   "actual": "217,061",
+   "anterior": "-656,845",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 202,
+   "etiqueta": "Belastingen",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 203,
+   "etiqueta": "Nettoresultaat",
+   "actual": "217,061",
+   "anterior": "-656,845",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 186,
+  "actual": "4,680.373"
+ },
+ "total_gastos": {
+  "linea": 197,
+  "actual": "5,575,229"
+ },
+ "resultado": {
+  "linea": 203,
+  "actual": "217,061",
+  "anterior": "-656,845"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se confirma en el PDF que la escala del estado (L182-L203) es unidades de euro?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El bloque no declara escala; los importes parecen en euros sin redondeo.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿El importe de Netto-omzet en L186 es 4.680.373 euros (el punto es error de OCR por coma de miles)?",
+   "propuesta": "sí",
+   "tema": "fila-ilegible",
+   "renglon": "Netto-omzet",
+   "texto": "L186 muestra '4,680.373' con separadores mixtos; 4.680.373 - 5.575.229 = -894.856 cuadra con Bedrijfsresultaat.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿El importe de Overige personeelskosten en L191 es 855.319 euros (punto como separador de miles)?",
+   "propuesta": "sí",
+   "tema": "fila-ilegible",
+   "renglon": "Overige personeelskosten",
+   "texto": "L191 muestra '855.319' con punto; la suma de gastos con 855.319 da 5.575.229 de L197.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Solo estado de resultados consolidado, sin notas de desglose. 'Resultaat vergoedingssommen' (L200, resultado por transferencias de jugadores) se dejó como 'otro', fuera de ingresos y gastos operativos. Los totales cuadran: 4.680.373-5.575.229=-894.856; -894.856-44.471+1.156.388=217.061."
+}

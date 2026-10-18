@@ -1,0 +1,297 @@
+{
+ "pdf": "Clubes/Países Bajos/NAC Breda/NAC-Breda-Jaarrekening-2024-2025.pdf",
+ "md": "Clubes/Países Bajos/NAC Breda/NAC-Breda-Jaarrekening-2024-2025.md",
+ "generado": "2026-10-18T23:21:27.891Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "no se sabe",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "2f94d5e"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "21.741633 = 21.741633",
+   "suma": 21.741632999999997,
+   "impreso": 21.741633
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "20.756016 = 20.756016",
+   "suma": 20.756015999999995,
+   "impreso": 20.756016
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo)",
+   "dif": 1.3322676295501878e-15
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Overige bedrijfsopbrengsten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "el desglose de \"Sociale lasten\" (3 filas) no suma la fila: quedó la fila",
+  "duda de extraer que no afecta la carga: L648 imprime 46.969 positivo pero el resultado antes de impuestos (938.648) implica que es un cargo neto (985.617-46.969)."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Sociale lasten",
+   "suma": 1.079556,
+   "objetivo": 0.944243
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Sociale lasten",
+   "suma": 1.079556,
+   "objetivo": 0.944243
+  }
+ ],
+ "totales": {
+  "ingresos": 21.741633,
+  "gastos": 20.756016,
+  "financiero": 0.092817,
+  "impuesto": 0,
+  "resultadoImpreso": 0.938648,
+  "resultadoParaCargar": 0.938648,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Wedstrijdbaten",
+   "lado": "ingreso",
+   "M": 3.930225,
+   "pagina": 36,
+   "linea": 1393,
+   "origen": "nota que desglosa \"NETTO-OMZET\""
+  },
+  {
+   "etiqueta": "Sponsoring",
+   "lado": "ingreso",
+   "M": 7.580148,
+   "pagina": 36,
+   "linea": 1394,
+   "origen": "nota que desglosa \"NETTO-OMZET\""
+  },
+  {
+   "etiqueta": "Media gerelateerde baten",
+   "lado": "ingreso",
+   "M": 2.834542,
+   "pagina": 36,
+   "linea": 1395,
+   "origen": "nota que desglosa \"NETTO-OMZET\""
+  },
+  {
+   "etiqueta": "Merchandising",
+   "lado": "ingreso",
+   "M": 0.271365,
+   "pagina": 36,
+   "linea": 1396,
+   "origen": "nota que desglosa \"NETTO-OMZET\""
+  },
+  {
+   "etiqueta": "Food & Beverage",
+   "lado": "ingreso",
+   "M": 1.337949,
+   "pagina": 36,
+   "linea": 1397,
+   "origen": "nota que desglosa \"NETTO-OMZET\""
+  },
+  {
+   "etiqueta": "Opleidingen",
+   "lado": "ingreso",
+   "M": 0.272455,
+   "pagina": 36,
+   "linea": 1398,
+   "origen": "nota que desglosa \"NETTO-OMZET\""
+  },
+  {
+   "etiqueta": "Overige baten",
+   "lado": "ingreso",
+   "M": 2.449265,
+   "pagina": 36,
+   "linea": 1399,
+   "origen": "nota que desglosa \"NETTO-OMZET\""
+  },
+  {
+   "etiqueta": "Opbrengst vergoedingssommen",
+   "lado": "ingreso",
+   "M": 3.05268,
+   "pagina": 36,
+   "linea": 1400,
+   "origen": "nota que desglosa \"NETTO-OMZET\""
+  },
+  {
+   "etiqueta": "Overige bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "M": 0.013004,
+   "pagina": 16,
+   "linea": 637,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Wedstrijd- en trainingskosten",
+   "lado": "gasto",
+   "M": 1.707815,
+   "pagina": 37,
+   "linea": 1422,
+   "origen": "nota que desglosa \"Kosten uitbesteed werk en overige externe kosten\""
+  },
+  {
+   "etiqueta": "Huisvestingkosten",
+   "lado": "gasto",
+   "M": 2.878863,
+   "pagina": 37,
+   "linea": 1423,
+   "origen": "nota que desglosa \"Kosten uitbesteed werk en overige externe kosten\""
+  },
+  {
+   "etiqueta": "Verkoopkosten",
+   "lado": "gasto",
+   "M": 1.661898,
+   "pagina": 37,
+   "linea": 1424,
+   "origen": "nota que desglosa \"Kosten uitbesteed werk en overige externe kosten\""
+  },
+  {
+   "etiqueta": "Overige kosten",
+   "lado": "gasto",
+   "M": 1.29113,
+   "pagina": 37,
+   "linea": 1425,
+   "origen": "nota que desglosa \"Kosten uitbesteed werk en overige externe kosten\""
+  },
+  {
+   "etiqueta": "Brutoloon",
+   "lado": "gasto",
+   "M": 7.931277,
+   "pagina": 37,
+   "linea": 1433,
+   "origen": "nota que desglosa \"Lonen en salarissen\""
+  },
+  {
+   "etiqueta": "Wedstrijdpremies",
+   "lado": "gasto",
+   "M": 0.273594,
+   "pagina": 37,
+   "linea": 1434,
+   "origen": "nota que desglosa \"Lonen en salarissen\""
+  },
+  {
+   "etiqueta": "Overige personeelskosten",
+   "lado": "gasto",
+   "M": 2.731781,
+   "pagina": 37,
+   "linea": 1435,
+   "origen": "nota que desglosa \"Lonen en salarissen\""
+  },
+  {
+   "etiqueta": "Pensioenpremies",
+   "lado": "gasto",
+   "M": 0.135313,
+   "pagina": 37,
+   "linea": 1446,
+   "origen": "nota que desglosa \"Sociale lasten\""
+  },
+  {
+   "etiqueta": "Sociale lasten",
+   "lado": "gasto",
+   "M": 0.944243,
+   "pagina": 37,
+   "linea": 1447,
+   "origen": "nota que desglosa \"Sociale lasten\""
+  },
+  {
+   "etiqueta": "Bedrijfsgebouwen en -terreinen",
+   "lado": "gasto",
+   "M": 0.10118,
+   "pagina": 38,
+   "linea": 1459,
+   "origen": "nota que desglosa \"Afschrijvingen\""
+  },
+  {
+   "etiqueta": "Machines en installaties",
+   "lado": "gasto",
+   "M": 0.131275,
+   "pagina": 38,
+   "linea": 1460,
+   "origen": "nota que desglosa \"Afschrijvingen\""
+  },
+  {
+   "etiqueta": "Andere vaste bedrijfsmiddelen",
+   "lado": "gasto",
+   "M": 0.167653,
+   "pagina": 38,
+   "linea": 1461,
+   "origen": "nota que desglosa \"Afschrijvingen\""
+  },
+  {
+   "etiqueta": "Afschrijvingen vergoedingssommen clubs",
+   "lado": "gasto",
+   "M": 0.572525,
+   "pagina": 38,
+   "linea": 1469,
+   "origen": "nota que desglosa \"Afschrijvingen\""
+  },
+  {
+   "etiqueta": "Afschrijvingen hand- en tekengelden",
+   "lado": "gasto",
+   "M": 0.181389,
+   "pagina": 38,
+   "linea": 1470,
+   "origen": "nota que desglosa \"Afschrijvingen\""
+  },
+  {
+   "etiqueta": "Overige bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.04608,
+   "pagina": 16,
+   "linea": 643,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Rentebaten en soortgelijke opbrengsten",
+   "M": 0.022924,
+   "linea": 646
+  },
+  {
+   "etiqueta": "Rentelasten en soortgelijke kosten",
+   "M": -0.069893,
+   "linea": 647
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen",
+   "M": null,
+   "linea": 650
+  }
+ ]
+}

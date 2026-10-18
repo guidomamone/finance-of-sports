@@ -1,0 +1,146 @@
+{
+ "pdf": "Clubes/Países Bajos/FC Volendam/Volendam-Jaarcijfers-2024-2025.pdf",
+ "md": "Clubes/Países Bajos/FC Volendam/Volendam-Jaarcijfers-2024-2025.md",
+ "mdSha1": "ef09f742ca295c5f8b51264e85c2aad8175845ba",
+ "ubicacionSha1": "7cc6282d54e454dcfd752e6ce8171cbdb93ed0fe",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T23:15:41.264Z",
+ "ubicacion": {
+  "estado": [
+   "b5"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b5",
+   "escala": "unidades",
+   "evidencia": "L150: (Bedragen in €)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b5",
+   "linea": 155,
+   "etiqueta": "Netto-omzet",
+   "actual": "10.714.978",
+   "anterior": "17.211.607",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 157,
+   "etiqueta": "Lonen en salarissen",
+   "actual": "3.957.954",
+   "anterior": "5.668.384",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 158,
+   "etiqueta": "Sociale lasten en pensioenen",
+   "actual": "745.370",
+   "anterior": "801.367",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 159,
+   "etiqueta": "Afschrijving vaste activa",
+   "actual": "648.395",
+   "anterior": "421.113",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 160,
+   "etiqueta": "Overige bedrijfskosten",
+   "actual": "6.162.643",
+   "anterior": "7.743.615",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 161,
+   "etiqueta": "",
+   "actual": "11.514.362",
+   "anterior": "14.634.479",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 162,
+   "etiqueta": "Bedrijfsresultaat",
+   "actual": "-799.383",
+   "anterior": "2.577.128",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 163,
+   "etiqueta": "Financiële baten en lasten",
+   "actual": "-28.337",
+   "anterior": "-103.635",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 164,
+   "etiqueta": "Resultaat uit gewone bedrijfsvoering voor belasting",
+   "actual": "-827.720",
+   "anterior": "2.473.492",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 165,
+   "etiqueta": "Belastingen",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 166,
+   "etiqueta": "Resultaat na belasting",
+   "actual": "-827.720",
+   "anterior": "2.473.492",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": {
+  "linea": 161,
+  "actual": "11.514.362"
+ },
+ "resultado": {
+  "linea": 166,
+  "actual": "-827.720",
+  "anterior": "2.473.492"
+ },
+ "dudas": [],
+ "observaciones": "Estado de resultados sin notas de desglose provistas. El total de ingresos no se imprime como fila separada; Netto-omzet (L155) es el único renglón de ingresos. El total de gastos (L161) no tiene etiqueta impresa."
+}

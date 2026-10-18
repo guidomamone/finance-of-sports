@@ -1,0 +1,169 @@
+{
+ "pdf": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2023-2024.pdf",
+ "md": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2023-2024.md",
+ "mdSha1": "3899674981c4201cbbb0d8d595ba0e50e0256f82",
+ "ubicacionSha1": "e16eddf058502104e2fbf7ed4d5c855d25e187bb",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T23:12:27.645Z",
+ "ubicacion": {
+  "estado": [
+   "b5"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b5",
+   "escala": "unidades",
+   "evidencia": "L197: (Bedragen in €)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b5",
+   "linea": 202,
+   "etiqueta": "netto-omzet",
+   "actual": "10.082.985",
+   "anterior": "9.471.692",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 204,
+   "etiqueta": "lonen en salarissen",
+   "actual": "4.879.159",
+   "anterior": "4.190.041",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 205,
+   "etiqueta": "sociale lasten",
+   "actual": "690.253",
+   "anterior": "575.409",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 206,
+   "etiqueta": "pensioenen",
+   "actual": "52.281",
+   "anterior": "82.736",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 207,
+   "etiqueta": "afschrijving vaste activa",
+   "actual": "402.815",
+   "anterior": "375.164",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 208,
+   "etiqueta": "overige bedrijfskosten",
+   "actual": "4.101.825",
+   "anterior": "3.633.771",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 209,
+   "etiqueta": "",
+   "actual": "10.126.333",
+   "anterior": "8.857.121",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 210,
+   "etiqueta": "Bedrijfsresultaat",
+   "actual": "-43.348",
+   "anterior": "614.571",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 211,
+   "etiqueta": "financiële baten en lasten",
+   "actual": "-18.713",
+   "anterior": "-75.716",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 212,
+   "etiqueta": "Resultaat uit gewone bedrijfsvoering voor belasting",
+   "actual": "-62.061",
+   "anterior": "538.855",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 213,
+   "etiqueta": "belastingen",
+   "actual": "409.864",
+   "anterior": "-276.484",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 214,
+   "etiqueta": "resultaat deelneming",
+   "actual": "109.017",
+   "anterior": "-26.211",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 215,
+   "etiqueta": "Bedrijfsresultaat",
+   "actual": "456.820",
+   "anterior": "236.160",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 202,
+  "actual": "10.082.985"
+ },
+ "total_gastos": {
+  "linea": 209,
+  "actual": "10.126.333"
+ },
+ "resultado": {
+  "linea": 215,
+  "actual": "456.820",
+  "anterior": "236.160"
+ },
+ "dudas": [],
+ "observaciones": "Estado de resultados en euros. El total de gastos (L209) no tiene etiqueta impresa. La línea final L215 repite la etiqueta 'Bedrijfsresultaat', pero por posición y por la aritmética (-62.061 + 409.864 + 109.017 = 456.820) corresponde al resultado del ejercicio. Los ingresos se componen solo de netto-omzet; no hay notas de desglose."
+}

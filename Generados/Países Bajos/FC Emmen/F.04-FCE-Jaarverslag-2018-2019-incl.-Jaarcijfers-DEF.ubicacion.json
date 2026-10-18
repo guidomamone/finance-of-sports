@@ -1,0 +1,84 @@
+{
+ "pdf": "Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2018-2019-incl.-Jaarcijfers-DEF.pdf",
+ "md": "Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2018-2019-incl.-Jaarcijfers-DEF.md",
+ "mdSha1": "80eb187b06c863500c92788aadc43ed12d15e3dc",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T23:13:58.953Z",
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    63,
+    67
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 5,
+   "lineas": [
+    69,
+    77
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    83,
+    112
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    118,
+    134
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    138,
+    143
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 5,
+   "lineas": [
+    145,
+    147
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "miles",
+ "escala_evidencia": "in EUR * 1.000",
+ "moneda": "EUR",
+ "columna_ejercicio": "2018-2019",
+ "columna_anterior": null,
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la 'VERLIES EN WINSTREKENING' (b3) como estado individual de FC Emmen B.V., sin columna del año anterior?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El documento es una publicación resumida (licencia KNVB) de FC Emmen B.V.; aparece 'Resultaat deelneming', lo que sugiere un perímetro individual con participación, y el estado solo muestra la columna 2018-2019.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Publicación resumida de cifras según la licencia KNVB: incluye el balance (b1, b2), la cuenta de resultados (b3) y el flujo de efectivo (b4), todo en la pág. 5. No hay notas de desglose. El estado b3 solo tiene la columna 2018-2019."
+}

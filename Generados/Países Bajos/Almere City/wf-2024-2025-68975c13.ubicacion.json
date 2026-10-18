@@ -1,0 +1,76 @@
+{
+ "pdf": "Clubes/Países Bajos/Almere City/wf-2024-2025-68975c13.pdf",
+ "md": "Clubes/Países Bajos/Almere City/wf-2024-2025-68975c13.md",
+ "mdSha1": "030351491bd46fbecd162daf4c0f5aa952b3e4c2",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T23:11:35.301Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    9,
+    16
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 9,
+   "lineas": [
+    357,
+    373
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 10,
+   "lineas": [
+    385,
+    399
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 10,
+   "lineas": [
+    405,
+    422
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 11,
+   "lineas": [
+    434,
+    461
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "(Bedragen in ) — la unidad está vacía en la transcripción, probablemente '€' o 'euro'",
+ "moneda": "EUR",
+ "columna_ejercicio": "2024/2025",
+ "columna_anterior": "2023/2024",
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes de la Winst-en-verliesrekening (b4) están en euros (unidades) y no en miles de euros?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "La línea '(Bedragen in )' perdió la unidad en la transcripción, así que no se sabe si dice € o x €1.000.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Es un informe resumido (wf = formato KNVB) con balance (b2, b3), estado de resultados (b4) y flujo de efectivo (b5), sin notas de desglose. Solo se elige b4. El perímetro no se indica; probablemente es individual."
+}

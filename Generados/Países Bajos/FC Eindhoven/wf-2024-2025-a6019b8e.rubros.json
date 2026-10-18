@@ -1,0 +1,220 @@
+{
+  "md": "Clubes/Países Bajos/FC Eindhoven/wf-2024-2025-a6019b8e.md",
+  "pdf": "Clubes/Países Bajos/FC Eindhoven/wf-2024-2025-a6019b8e.pdf",
+  "club": "fc-eindhoven",
+  "year": 2025,
+  "generatedAt": "2026-10-18T23:21:27.595Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Wedstrijdbaten",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        0.245796
+      ],
+      "glosa": "Ingresos por día de partido"
+    },
+    {
+      "label": "Sponsoring",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        2.594104
+      ],
+      "glosa": "Patrocinios"
+    },
+    {
+      "label": "Media gerelateerde baten",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        0.864691
+      ],
+      "glosa": "Ingresos por derechos audiovisuales"
+    },
+    {
+      "label": "Merchandise",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        0.053163
+      ],
+      "glosa": "Merchandising"
+    },
+    {
+      "label": "Horeca",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        0.505989
+      ],
+      "glosa": "Restauración y hostelería"
+    },
+    {
+      "label": "Prijzengeld",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        0.219257
+      ],
+      "glosa": "Premios deportivos"
+    },
+    {
+      "label": "Subsidies",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        0.131255
+      ],
+      "glosa": "Subvenciones"
+    },
+    {
+      "label": "Overige baten",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        0.792862
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Resultaat vergoedingssommen",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        0.561077
+      ],
+      "glosa": "Resultado por traspasos de jugadores"
+    },
+    {
+      "label": "Lonen en salarissen",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        2.075105
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Sociale lasten",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        0.447548
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Pensioenlasten",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        0.054277
+      ],
+      "glosa": "Gastos de pensiones"
+    },
+    {
+      "label": "Overige personeelskosten",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        0.79855
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Vergoedingssommen",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Afschrijvingen\"",
+      "values": [
+        0.03
+      ],
+      "glosa": "Indemnizaciones por traspaso"
+    },
+    {
+      "label": "Allocatie amortisatie vergoedingssommen",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Afschrijvingen\"",
+      "values": [
+        -0.03
+      ],
+      "glosa": "Imputación de amortización de derechos de traspaso"
+    },
+    {
+      "label": "Bedrijfsgebouwen en -terreinen",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Afschrijvingen\"",
+      "values": [
+        0.027797
+      ],
+      "glosa": "Terrenos y construcciones"
+    },
+    {
+      "label": "Andere vaste bedrijfsmiddelen",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Afschrijvingen\"",
+      "values": [
+        0.150301
+      ],
+      "glosa": "Otro inmovilizado material"
+    },
+    {
+      "label": "Huisvestingskosten",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Overige bedrijfskosten\"",
+      "values": [
+        0.370103
+      ],
+      "glosa": "Gastos de instalaciones"
+    },
+    {
+      "label": "Wedstrijd- en trainingskosten",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Overige bedrijfskosten\"",
+      "values": [
+        0.702204
+      ],
+      "glosa": "Gastos de partidos y entrenamientos"
+    },
+    {
+      "label": "Verkoopkosten",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Overige bedrijfskosten\"",
+      "values": [
+        0.801964
+      ],
+      "glosa": "Gastos de comercialización"
+    },
+    {
+      "label": "Algemene kosten",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Overige bedrijfskosten\"",
+      "values": [
+        0.489312
+      ],
+      "glosa": "Gastos generales"
+    }
+  ]
+}

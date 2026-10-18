@@ -1,0 +1,145 @@
+{
+ "pdf": "Clubes/Países Bajos/De Graafschap/wf-src-Betaald-Voetbal-De-Graafschap-B.V.-Publicatierapport-2021-2022.pdf",
+ "md": "Clubes/Países Bajos/De Graafschap/wf-src-Betaald-Voetbal-De-Graafschap-B.V.-Publicatierapport-2021-2022.md",
+ "generado": "2026-10-18T23:21:27.432Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2022,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "47d5f78"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "8.721145 = 8.721145",
+   "suma": 8.721145,
+   "impreso": 8.721145
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.1102230246251565e-16
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "gastos y resultado coinciden con lo impreso a 0,01% o menos y el otro total no está impreso (queda determinado): no hace falta la revisión del primer año (to-do 214, escalón 2)"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 4"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 8.272005,
+  "gastos": 8.721145,
+  "financiero": -0.035869,
+  "impuesto": 0,
+  "resultadoImpreso": -0.485009,
+  "resultadoParaCargar": -0.485009,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Netto-omzet",
+   "lado": "ingreso",
+   "M": 8.272005,
+   "pagina": 6,
+   "linea": 79,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lonen en salarissen",
+   "lado": "gasto",
+   "M": 3.492133,
+   "pagina": 6,
+   "linea": 80,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sociale lasten",
+   "lado": "gasto",
+   "M": 0.610169,
+   "pagina": 6,
+   "linea": 81,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Pensioenlasten",
+   "lado": "gasto",
+   "M": 0.084659,
+   "pagina": 6,
+   "linea": 82,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Resultaat vergoedingssommen",
+   "lado": "gasto",
+   "M": -0.05146,
+   "pagina": 6,
+   "linea": 83,
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
+  },
+  {
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.261379,
+   "pagina": 6,
+   "linea": 84,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Overige bedrijfskosten",
+   "lado": "gasto",
+   "M": 4.324265,
+   "pagina": 6,
+   "linea": 85,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Rentelasten en soortgelijke kosten",
+   "M": -0.035869,
+   "linea": 88
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen",
+   "M": null,
+   "linea": 90
+  }
+ ]
+}

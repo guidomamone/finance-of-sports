@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Países Bajos/FC Volendam/Volendam-Jaarcijfers-2024-2025.md",
+  "pdf": "Clubes/Países Bajos/FC Volendam/Volendam-Jaarcijfers-2024-2025.pdf",
+  "club": "fc-volendam",
+  "year": 2025,
+  "generatedAt": "2026-10-18T23:21:27.717Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Netto-omzet",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        10.714978
+      ],
+      "glosa": "Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "Lonen en salarissen",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        3.957954
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Sociale lasten en pensioenen",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.74537
+      ],
+      "glosa": "Cargas sociales y pensiones"
+    },
+    {
+      "label": "Afschrijving vaste activa",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.648395
+      ],
+      "glosa": "Amortización del inmovilizado"
+    },
+    {
+      "label": "Overige bedrijfskosten",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        6.162643
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

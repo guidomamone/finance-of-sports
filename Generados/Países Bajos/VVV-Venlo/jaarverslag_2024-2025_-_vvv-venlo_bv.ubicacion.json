@@ -1,0 +1,52 @@
+{
+ "pdf": "Clubes/Países Bajos/VVV-Venlo/jaarverslag_2024-2025_-_vvv-venlo_bv.pdf",
+ "md": "Clubes/Países Bajos/VVV-Venlo/jaarverslag_2024-2025_-_vvv-venlo_bv.md",
+ "mdSha1": "dcc61db1d2bb4ce0e3c7b82fdbccc419158d692e",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T23:21:10.120Z",
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    160,
+    178
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    188,
+    195
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "miles",
+ "escala_evidencia": "(€ x 1.000)",
+ "moneda": "EUR",
+ "columna_ejercicio": "Total",
+ "columna_anterior": null,
+ "perimetro": "no se sabe",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿La tabla 'Exploitatierekening over het seizoen 2024/2025' (b1) tiene una sola columna de importes del ejercicio 2024/2025, sin columna del año anterior?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El encabezado es 'Concept | Detalle | Total' y no muestra una columna comparativa 2023/2024; la columna 'Detalle' parece de subtotales.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El documento parece un resumen del informe anual (jaarverslag): tiene una cuenta de explotación resumida en miles de euros (b1) y el balance (b2), que se excluye. No hay notas que desglosen ingresos o gastos. Por el nombre, VVV-Venlo BV, sería individual, pero no se indica."
+}

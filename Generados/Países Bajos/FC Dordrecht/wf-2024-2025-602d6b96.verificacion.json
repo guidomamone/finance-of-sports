@@ -1,0 +1,166 @@
+{
+ "pdf": "Clubes/Países Bajos/FC Dordrecht/wf-2024-2025-602d6b96.pdf",
+ "md": "Clubes/Países Bajos/FC Dordrecht/wf-2024-2025-602d6b96.md",
+ "generado": "2026-10-18T23:21:27.573Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "ffd343b",
+  "a8547cb",
+  "a8547cb",
+  "9031e34"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "0.00468 = 0.00468",
+   "suma": 0.004680372999999999,
+   "impreso": 0.004680372999999999
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "5.575229 = 5.575229",
+   "suma": 5.575229,
+   "impreso": 5.575228999999999
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 0.00468 - gastos 5.575229 ± financiero -0.044471 ± impuesto 0 no da el impreso 0.217061",
+   "dif": null
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: La transcripción muestra '4,680.373' y '855.319' con punto mezclado; la suma de costos (5,575,229) cuadra con 855,319 y el resultado operativo con 4,680,373.",
+  "duda de extraer que no afecta la carga: L186 muestra '4,680.373' con separadores mixtos; 4.680.373 - 5.575.229 = -894.856 cuadra con Bedrijfsresultaat.",
+  "duda de extraer que no afecta la carga: L191 muestra '855.319' con punto; la suma de gastos con 855.319 da 5.575.229 de L197."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0.00468,
+  "gastos": 5.575229,
+  "financiero": -0.044471,
+  "impuesto": 0,
+  "resultadoImpreso": 0.217061,
+  "resultadoParaCargar": 0.217061,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Netto-omzet",
+   "lado": "ingreso",
+   "M": 0.00468,
+   "pagina": 6,
+   "linea": 186,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lonen en salarissen (10)",
+   "lado": "gasto",
+   "M": 2.008539,
+   "pagina": 6,
+   "linea": 188,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sociale lasten",
+   "lado": "gasto",
+   "M": 0.415736,
+   "pagina": 6,
+   "linea": 189,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Pensioenlasten",
+   "lado": "gasto",
+   "M": 0.003541,
+   "pagina": 6,
+   "linea": 190,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Overige personeelskosten",
+   "lado": "gasto",
+   "M": 0.855319,
+   "pagina": 6,
+   "linea": 191,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen",
+   "lado": "gasto",
+   "M": 0.164875,
+   "pagina": 6,
+   "linea": 192,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Huisvestingskosten",
+   "lado": "gasto",
+   "M": 0.442573,
+   "pagina": 6,
+   "linea": 193,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Kantoorkosten",
+   "lado": "gasto",
+   "M": 0.3714,
+   "pagina": 6,
+   "linea": 194,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Verkoopkosten",
+   "lado": "gasto",
+   "M": 0.861632,
+   "pagina": 6,
+   "linea": 195,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Algemene kosten",
+   "lado": "gasto",
+   "M": 0.451614,
+   "pagina": 6,
+   "linea": 196,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Financiële baten en lasten",
+   "M": -0.044471,
+   "linea": 199
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen",
+   "M": 0,
+   "linea": 202
+  }
+ ]
+}

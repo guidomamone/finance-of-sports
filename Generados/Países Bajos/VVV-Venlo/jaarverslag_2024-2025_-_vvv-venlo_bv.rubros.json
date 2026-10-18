@@ -1,0 +1,100 @@
+{
+  "md": "Clubes/Países Bajos/VVV-Venlo/jaarverslag_2024-2025_-_vvv-venlo_bv.md",
+  "pdf": "Clubes/Países Bajos/VVV-Venlo/jaarverslag_2024-2025_-_vvv-venlo_bv.pdf",
+  "club": "vvv-venlo",
+  "year": 2025,
+  "generatedAt": "2026-10-18T23:21:28.071Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Omzet",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        5.718
+      ],
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "Resultaat vergoedingsommen",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        0.166
+      ],
+      "glosa": "Resultado por traspaso de jugadores"
+    },
+    {
+      "label": "Personeelskosten",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        3.783
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Verkoopkosten",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        1.354
+      ],
+      "glosa": "Gastos de comercialización"
+    },
+    {
+      "label": "Huisvestingskosten",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.541
+      ],
+      "glosa": "Gastos de instalaciones"
+    },
+    {
+      "label": "Wedstrijd-trainingskosten",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.83
+      ],
+      "glosa": "Gastos de partidos y entrenamientos"
+    },
+    {
+      "label": "Algemene kosten",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.347
+      ],
+      "glosa": "Gastos generales"
+    },
+    {
+      "label": "Afsch. Materiele vaste activa",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.429
+      ],
+      "glosa": "Amortización del inmovilizado material"
+    },
+    {
+      "label": "Afschrijving vergoedingsommen",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
+      "values": [
+        0.078
+      ],
+      "glosa": "Amortización de derechos de traspaso"
+    }
+  ]
+}

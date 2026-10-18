@@ -1,0 +1,190 @@
+{
+  "md": "Clubes/Países Bajos/Fortuna Sittard/Fortuna-Sittard-Jaarrekening-2024-2025.md",
+  "pdf": "Clubes/Países Bajos/Fortuna Sittard/Fortuna-Sittard-Jaarrekening-2024-2025.pdf",
+  "club": "fortuna-sittard",
+  "year": 2025,
+  "generatedAt": "2026-10-18T23:21:27.758Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Wedstrijdbaten",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        1.727112
+      ],
+      "glosa": "Ingresos por partidos"
+    },
+    {
+      "label": "Sponsoring",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        4.469011
+      ],
+      "glosa": "Patrocinios"
+    },
+    {
+      "label": "Media gerelateerde baten",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        3.702271
+      ],
+      "glosa": "Ingresos por derechos audiovisuales"
+    },
+    {
+      "label": "Prijzengeld",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        1.583777
+      ],
+      "glosa": "Premios deportivos"
+    },
+    {
+      "label": "Horeca",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        0.465455
+      ],
+      "glosa": "Restauración y catering"
+    },
+    {
+      "label": "Merchandise",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        0.4057
+      ],
+      "glosa": "Merchandising"
+    },
+    {
+      "label": "Subsidies en giften",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        0.085618
+      ],
+      "glosa": "Subvenciones y donaciones"
+    },
+    {
+      "label": "Overige baten",
+      "lado": "revenue",
+      "page": 42,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        1.499285
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Lonen en salarissen",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        8.449354
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Sociale lasten",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        0.740801
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Pensioenlasten",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        0.070536
+      ],
+      "glosa": "Gastos de pensiones"
+    },
+    {
+      "label": "Overige personeelslasten",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        1.951531
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Afschrijvingen",
+      "lado": "expense",
+      "page": 20,
+      "section": "estado",
+      "values": [
+        0.451017
+      ],
+      "glosa": "Amortizaciones"
+    },
+    {
+      "label": "Huisvestingskosten",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Overige bedrijfskosten\"",
+      "values": [
+        1.508057
+      ],
+      "glosa": "Gastos de instalaciones"
+    },
+    {
+      "label": "Wedstrijd- en trainingskosten",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Overige bedrijfskosten\"",
+      "values": [
+        1.058843
+      ],
+      "glosa": "Gastos de partidos y entrenamientos"
+    },
+    {
+      "label": "Verkoopkosten",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Overige bedrijfskosten\"",
+      "values": [
+        1.616086
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Algemene kosten",
+      "lado": "expense",
+      "page": 42,
+      "section": "nota que desglosa \"Overige bedrijfskosten\"",
+      "values": [
+        0.71619
+      ],
+      "glosa": "Gastos generales"
+    },
+    {
+      "label": "Afschrijving en resultaat vergoedingssommen",
+      "lado": "expense",
+      "page": 20,
+      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
+      "values": [
+        0.508729
+      ],
+      "glosa": "Amortización y resultado por traspasos"
+    }
+  ]
+}

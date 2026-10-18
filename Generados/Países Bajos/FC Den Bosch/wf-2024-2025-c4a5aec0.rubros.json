@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Países Bajos/FC Den Bosch/wf-2024-2025-c4a5aec0.md",
+  "pdf": "Clubes/Países Bajos/FC Den Bosch/wf-2024-2025-c4a5aec0.pdf",
+  "club": "fc-den-bosch",
+  "year": 2025,
+  "generatedAt": "2026-10-18T23:21:27.505Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Netto-omzet",
+      "lado": "revenue",
+      "page": 17,
+      "section": "estado",
+      "values": [
+        5.133797
+      ],
+      "glosa": "Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "Afschrijving en resultaat vergoedingssommen",
+      "lado": "revenue",
+      "page": 17,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        0.405859
+      ],
+      "glosa": "Amortización y resultado por derechos de traspaso"
+    },
+    {
+      "label": "Personeelskosten",
+      "lado": "expense",
+      "page": 17,
+      "section": "estado",
+      "values": [
+        3.864955
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Afschrijvingen",
+      "lado": "expense",
+      "page": 17,
+      "section": "estado",
+      "values": [
+        0.165585
+      ],
+      "glosa": "Amortizaciones"
+    },
+    {
+      "label": "Overige bedrijfskosten",
+      "lado": "expense",
+      "page": 17,
+      "section": "estado",
+      "values": [
+        2.845217
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

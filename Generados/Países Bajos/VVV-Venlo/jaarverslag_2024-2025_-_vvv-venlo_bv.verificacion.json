@@ -1,0 +1,184 @@
+{
+ "pdf": "Clubes/Países Bajos/VVV-Venlo/jaarverslag_2024-2025_-_vvv-venlo_bv.pdf",
+ "md": "Clubes/Países Bajos/VVV-Venlo/jaarverslag_2024-2025_-_vvv-venlo_bv.md",
+ "generado": "2026-10-18T23:22:04.871Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.5543122344752192e-15
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar confirmada por las sumas (columna, \"-\"): ¿La tabla 'Exploitatierekening over het seizoen 2024/2025' (b1) tiene una sola columna de importes del ejercicio 2024/2025, sin columna del año anterior?",
+  "duda de extraer que no afecta la carga: Los importes de detalle del mismo ejercicio están en la columna 'Detalle' y suman los totales de L170 (7.284) y L175 (88).",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 5.884,
+  "gastos": 7.362,
+  "financiero": -0.082,
+  "impuesto": 0,
+  "resultadoImpreso": -1.56,
+  "resultadoParaCargar": -1.56,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Omzet",
+   "lado": "ingreso",
+   "M": 5.718,
+   "pagina": 5,
+   "linea": 162,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Resultaat vergoedingsommen",
+   "lado": "ingreso",
+   "M": 0.166,
+   "pagina": 5,
+   "linea": 174,
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)"
+  },
+  {
+   "etiqueta": "Personeelskosten",
+   "lado": "gasto",
+   "M": 3.783,
+   "pagina": 5,
+   "linea": 164,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Verkoopkosten",
+   "lado": "gasto",
+   "M": 1.354,
+   "pagina": 5,
+   "linea": 165,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Huisvestingskosten",
+   "lado": "gasto",
+   "M": 0.541,
+   "pagina": 5,
+   "linea": 166,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Wedstrijd-trainingskosten",
+   "lado": "gasto",
+   "M": 0.83,
+   "pagina": 5,
+   "linea": 167,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Algemene kosten",
+   "lado": "gasto",
+   "M": 0.347,
+   "pagina": 5,
+   "linea": 168,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afsch. Materiele vaste activa",
+   "lado": "gasto",
+   "M": 0.429,
+   "pagina": 5,
+   "linea": 169,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijving vergoedingsommen",
+   "lado": "gasto",
+   "M": 0.078,
+   "pagina": 5,
+   "linea": 173,
+   "origen": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Rentelasten",
+   "M": -0.082,
+   "linea": 172
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Vennootschapsbelasting",
+   "M": 0,
+   "linea": 177
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "f056d2f47e80c21582b12d4733d310bf938d9b20",
+  "rango": [
+   159,
+   181
+  ],
+  "lineasCargadas": [
+   162,
+   174,
+   164,
+   165,
+   166,
+   167,
+   168,
+   169,
+   173,
+   172,
+   177
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 159 a 181 del .md):\nL160: | Concept | Detalle | Total |\nL161: | --- | --- | --- |\nL162: | Omzet | | 5.718 |\nL163: | Lasten | | |\nL164: | Personeelskosten | 3.783 | |\nL165: | Verkoopkosten | 1.354 | |\nL166: | Huisvestingskosten | 541 | |\nL167: | Wedstrijd-trainingskosten | 830 | |\nL168: | Algemene kosten | 347 | |\nL169: | Afsch. Materiele vaste activa | 429 | |\nL170: | | | 7.284 |\nL171: | Bedrijfsresultaat | | -1.566 |\nL172: | Rentelasten | | -82 |\nL173: | Afschrijving vergoedingsommen | -78 | |\nL174: | Resultaat vergoedingsommen | 166 | |\nL175: | Resultaat vergoedingsommen | | 88 |\nL176: | Resultaat uit gewone bedrijfsuitoefening voor belastingen | | -1.560 |\nL177: | Vennootschapsbelasting | | 0 |\nL178: | Netto resultaat na belastingen | | -1.560 |\nL180: --- pág. 6 ---\n\nLO QUE SE CARGA:\n- ingreso · \"Omzet\" · 5.718 · L162\n- ingreso · \"Resultaat vergoedingsommen\" · 0.166 · L174\n- gasto · \"Personeelskosten\" · 3.783 · L164\n- gasto · \"Verkoopkosten\" · 1.354 · L165\n- gasto · \"Huisvestingskosten\" · 0.541 · L166\n- gasto · \"Wedstrijd-trainingskosten\" · 0.83 · L167\n- gasto · \"Algemene kosten\" · 0.347 · L168\n- gasto · \"Afsch. Materiele vaste activa\" · 0.429 · L169\n- gasto · \"Afschrijving vergoedingsommen\" · 0.078 · L173\n- financiero · \"Rentelasten\" · -0.082 · L172\n- impuesto · \"Vennootschapsbelasting\" · 0 · L177"
+ }
+}

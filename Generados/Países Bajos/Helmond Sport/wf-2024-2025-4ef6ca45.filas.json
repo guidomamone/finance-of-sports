@@ -1,0 +1,123 @@
+{
+ "pdf": "Clubes/Países Bajos/Helmond Sport/wf-2024-2025-4ef6ca45.pdf",
+ "md": "Clubes/Países Bajos/Helmond Sport/wf-2024-2025-4ef6ca45.md",
+ "mdSha1": "743518d17c46efc225bf241627e5e8db20d9f041",
+ "ubicacionSha1": "ab24cfc1f973c69d578516d47e54b99ab950dc7e",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T23:16:36.222Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "Importes impresos en € con todos los dígitos (ej. '€ 5.135.616'), sin indicación de miles o millones; la suma Omzet - Afschrijvingen - Overige kosten cuadra con Bedrijfsresultaat."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 29,
+   "etiqueta": "Omzet",
+   "actual": "€ 5.135.616",
+   "anterior": "€ 6.302.610",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 30,
+   "etiqueta": "Afschrijvingen",
+   "actual": "€ 56.242",
+   "anterior": "€ 79.386",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 31,
+   "etiqueta": "Overige kosten",
+   "actual": "€ 7.426.289",
+   "anterior": "€ 6.163.315",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 32,
+   "etiqueta": "Bedrijfsresultaat",
+   "actual": "€ -2.346.915",
+   "anterior": "€ 59.909",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 33,
+   "etiqueta": "Resultaat vergoedingssommen",
+   "actual": "€ 196.967",
+   "anterior": "€ 724.584",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 34,
+   "etiqueta": "Financiële baten en lasten",
+   "actual": "€ -79.618",
+   "anterior": "€ -17.852",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 35,
+   "etiqueta": "Resultaat voor belastingen",
+   "actual": "€ -2.229.566",
+   "anterior": "€ 766.641",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 36,
+   "etiqueta": "Belastingen",
+   "actual": "€ -",
+   "anterior": "€ -",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 37,
+   "etiqueta": "Resultaat na belastingen",
+   "actual": "€ -2.229.566",
+   "anterior": "€ 766.641",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 37,
+  "actual": "€ -2.229.566",
+  "anterior": "€ 766.641"
+ },
+ "dudas": [],
+ "observaciones": "Estado de resultados resumido sin notas de desglose. No se imprimen totales de ingresos ni de gastos. 'Resultaat vergoedingssommen' (resultado neto por transferencias) se clasificó como ingreso; es un neto. Las sumas cuadran: 5.135.616 - 56.242 - 7.426.289 = -2.346.915; -2.346.915 + 196.967 - 79.618 = -2.229.566."
+}

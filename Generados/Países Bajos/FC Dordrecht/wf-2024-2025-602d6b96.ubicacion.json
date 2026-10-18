@@ -1,0 +1,71 @@
+{
+ "pdf": "Clubes/Países Bajos/FC Dordrecht/wf-2024-2025-602d6b96.pdf",
+ "md": "Clubes/Países Bajos/FC Dordrecht/wf-2024-2025-602d6b96.md",
+ "mdSha1": "232812500c8480a7ab0e82d0127cb68c3abe4bb6",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T23:12:59.469Z",
+ "bloques": {
+  "b1": {
+   "pagina": 4,
+   "lineas": [
+    132,
+    154
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 5,
+   "lineas": [
+    162,
+    174
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 6,
+   "lineas": [
+    184,
+    203
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "No hay frase de escala; los importes (ej. Netto-omzet 4,680,373; Nettoresultaat 217,061) son consistentes con euros en unidades para un club de este tamaño.",
+ "moneda": "EUR",
+ "columna_ejercicio": "1-7-2024 / 30-6-2025",
+ "columna_anterior": "1-7-2023 / 30-6-2024",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan Netto-omzet como 4,680,373 y Overige personeelskosten como 855,319, leyendo el punto como separador de miles?",
+   "propuesta": "sí",
+   "tema": "fila-ilegible",
+   "renglon": "Netto-omzet",
+   "texto": "La transcripción muestra '4,680.373' y '855.319' con punto mezclado; la suma de costos (5,575,229) cuadra con 855,319 y el resultado operativo con 4,680,373.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Los importes del estado de resultados están en euros (unidades) y no en miles?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El índice no muestra ninguna leyenda de escala sobre b3.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Solo el estado consolidado de FC Dordrecht Holding B.V. (b3). b1 y b2 son el balance. Las notas referenciadas (9, 10, 11) no aparecen entre los bloques con cifras del índice."
+}

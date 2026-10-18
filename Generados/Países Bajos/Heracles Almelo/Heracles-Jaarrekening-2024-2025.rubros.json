@@ -1,0 +1,840 @@
+{
+  "md": "Clubes/Países Bajos/Heracles Almelo/Heracles-Jaarrekening-2024-2025.md",
+  "pdf": "Clubes/Países Bajos/Heracles Almelo/Heracles-Jaarrekening-2024-2025.pdf",
+  "club": "heracles-almelo",
+  "year": 2025,
+  "generatedAt": "2026-10-18T23:21:27.830Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Seizoenkaarten",
+      "lado": "revenue",
+      "page": 44,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Wedstrijdbaten\"",
+      "values": [
+        1.865736
+      ],
+      "glosa": "Abonos de temporada"
+    },
+    {
+      "label": "Vriendschappelijke wedstrijden",
+      "lado": "revenue",
+      "page": 44,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Wedstrijdbaten\"",
+      "values": [
+        0.034901
+      ],
+      "glosa": "Partidos amistosos"
+    },
+    {
+      "label": "Competitie",
+      "lado": "revenue",
+      "page": 44,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Wedstrijdbaten\"",
+      "values": [
+        0.611568
+      ],
+      "glosa": "Competición liguera"
+    },
+    {
+      "label": "Beker",
+      "lado": "revenue",
+      "page": 44,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Wedstrijdbaten\"",
+      "values": [
+        0.17865
+      ],
+      "glosa": "Competición de copa"
+    },
+    {
+      "label": "TV gelden",
+      "lado": "revenue",
+      "page": 44,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Media gerelateerde baten\"",
+      "values": [
+        4.559302
+      ],
+      "glosa": "Derechos audiovisuales"
+    },
+    {
+      "label": "Opbrengst loten",
+      "lado": "revenue",
+      "page": 44,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Media gerelateerde baten\"",
+      "values": [
+        0.047983
+      ],
+      "glosa": "Ingresos por sorteos y rifas"
+    },
+    {
+      "label": "Reclame (borden)",
+      "lado": "revenue",
+      "page": 44,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Sponsoring en reclame\"",
+      "values": [
+        1.924851
+      ],
+      "glosa": "Publicidad estática (vallas)"
+    },
+    {
+      "label": "Business seats",
+      "lado": "revenue",
+      "page": 44,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Sponsoring en reclame\"",
+      "values": [
+        2.439162
+      ],
+      "glosa": "Asientos VIP"
+    },
+    {
+      "label": "Business units en Skyboxen",
+      "lado": "revenue",
+      "page": 44,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Sponsoring en reclame\"",
+      "values": [
+        1.592618
+      ],
+      "glosa": "Palcos VIP y palcos privados"
+    },
+    {
+      "label": "Overige sponsoring",
+      "lado": "revenue",
+      "page": 44,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Sponsoring en reclame\"",
+      "values": [
+        1.352884
+      ],
+      "glosa": "Otros patrocinios"
+    },
+    {
+      "label": "Merchandising",
+      "lado": "revenue",
+      "page": 44,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        0.362797
+      ],
+      "glosa": "Merchandising"
+    },
+    {
+      "label": "Diverse baten",
+      "lado": "revenue",
+      "page": 45,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Overige baten\"",
+      "values": [
+        2.633532
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Solidariteitsbijdrage UEFA",
+      "lado": "revenue",
+      "page": 45,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Overige baten\"",
+      "values": [
+        0.901265
+      ],
+      "glosa": "Contribución de solidaridad de la UEFA"
+    },
+    {
+      "label": "Plaatsingspremie K.N.V.B. Beker",
+      "lado": "revenue",
+      "page": 45,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Overige baten\"",
+      "values": [
+        0.3925
+      ],
+      "glosa": "Prima por clasificación Copa KNVB"
+    },
+    {
+      "label": "Graspremie",
+      "lado": "revenue",
+      "page": 45,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Overige baten\"",
+      "values": [
+        0.35
+      ],
+      "glosa": "Prima por terreno de juego"
+    },
+    {
+      "label": "Vergoedingen Eredivisie Media",
+      "lado": "revenue",
+      "page": 45,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Overige baten\"",
+      "values": [
+        0.182771
+      ],
+      "glosa": "Compensaciones de Eredivisie Media"
+    },
+    {
+      "label": "Heffing K.N.V.B. 2,5%",
+      "lado": "revenue",
+      "page": 45,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Overige baten\"",
+      "values": [
+        0.077529
+      ],
+      "glosa": "Tasa KNVB 2,5%"
+    },
+    {
+      "label": "Horeca gelden",
+      "lado": "revenue",
+      "page": 45,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Overige baten\"",
+      "values": [
+        0.028546
+      ],
+      "glosa": "Ingresos por servicios de restauración"
+    },
+    {
+      "label": "Huuropbrengsten",
+      "lado": "revenue",
+      "page": 45,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Overige baten\"",
+      "values": [
+        0.014121
+      ],
+      "glosa": "Ingresos por arrendamientos"
+    },
+    {
+      "label": "Project stimulatiefonds-jeugd",
+      "lado": "revenue",
+      "page": 45,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Overige baten\"",
+      "values": [
+        0.0262
+      ],
+      "glosa": "Proyecto fondo de fomento del fútbol base"
+    },
+    {
+      "label": "Sperwer/Plus",
+      "lado": "revenue",
+      "page": 45,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Huurinkomsten uit bedrijfsruimten\"",
+      "values": [
+        0.301283
+      ],
+      "glosa": "Sperwer/Plus"
+    },
+    {
+      "label": "Basic-Fit Nederland B.V.",
+      "lado": "revenue",
+      "page": 45,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Huurinkomsten uit bedrijfsruimten\"",
+      "values": [
+        0.181104
+      ],
+      "glosa": "Basic-Fit Nederland B.V."
+    },
+    {
+      "label": "Van Iersel",
+      "lado": "revenue",
+      "page": 45,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Huurinkomsten uit bedrijfsruimten\"",
+      "values": [
+        0.065957
+      ],
+      "glosa": "Van Iersel"
+    },
+    {
+      "label": "Supportersverenigingen",
+      "lado": "revenue",
+      "page": 45,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Huurinkomsten uit bedrijfsruimten\"",
+      "values": [
+        0.036707
+      ],
+      "glosa": "Peñas y asociaciones de aficionados"
+    },
+    {
+      "label": "Partygroep Twente B.V.",
+      "lado": "revenue",
+      "page": 45,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Huurinkomsten uit bedrijfsruimten\"",
+      "values": [
+        0.19
+      ],
+      "glosa": "Partygroep Twente B.V."
+    },
+    {
+      "label": "Uptown Consultancy",
+      "lado": "revenue",
+      "page": 45,
+      "section": "nota que desglosa \"Netto-omzet\" > desglose de \"Huurinkomsten uit bedrijfsruimten\"",
+      "values": [
+        0.017
+      ],
+      "glosa": "Uptown Consultancy"
+    },
+    {
+      "label": "Overige bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Lonen en salarissen",
+      "lado": "expense",
+      "page": 45,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        9.53132
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Sociale lasten",
+      "lado": "expense",
+      "page": 45,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        0.998218
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Pensioenlasten",
+      "lado": "expense",
+      "page": 45,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        0.173065
+      ],
+      "glosa": "Gastos por planes de pensiones"
+    },
+    {
+      "label": "Overige personeelskosten",
+      "lado": "expense",
+      "page": 45,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        1.182255
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Afschrijvingen op materiële vaste activa",
+      "lado": "expense",
+      "page": 19,
+      "section": "estado",
+      "values": [
+        1.60651
+      ],
+      "glosa": "Amortización del inmovilizado material"
+    },
+    {
+      "label": "Gas, water en elektra",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Huisvestingskosten\"",
+      "values": [
+        0.577921
+      ],
+      "glosa": "Gas, agua y electricidad"
+    },
+    {
+      "label": "Schoonmaakkosten",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Huisvestingskosten\"",
+      "values": [
+        0.389537
+      ],
+      "glosa": "Gastos de limpieza"
+    },
+    {
+      "label": "Huur parkeerruimte",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Huisvestingskosten\"",
+      "values": [
+        0.123562
+      ],
+      "glosa": "Alquiler de aparcamientos"
+    },
+    {
+      "label": "Onroerende zaakbelasting",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Huisvestingskosten\"",
+      "values": [
+        0.116046
+      ],
+      "glosa": "Impuesto sobre bienes inmuebles"
+    },
+    {
+      "label": "Onderhoud gebouwen",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Huisvestingskosten\"",
+      "values": [
+        0.092077
+      ],
+      "glosa": "Mantenimiento de edificios"
+    },
+    {
+      "label": "Huur voetbalacademie",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Huisvestingskosten\"",
+      "values": [
+        0.05986
+      ],
+      "glosa": "Alquiler de la academia de fútbol"
+    },
+    {
+      "label": "Veldonderhoud",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Huisvestingskosten\"",
+      "values": [
+        0.130536
+      ],
+      "glosa": "Mantenimiento del terreno de juego"
+    },
+    {
+      "label": "Ledigen containers",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Huisvestingskosten\"",
+      "values": [
+        0.023052
+      ],
+      "glosa": "Recogida y gestión de residuos"
+    },
+    {
+      "label": "Onderhoud liften",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Huisvestingskosten\"",
+      "values": [
+        0.014205
+      ],
+      "glosa": "Mantenimiento de ascensores"
+    },
+    {
+      "label": "Overige huisvestingskosten",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Huisvestingskosten\"",
+      "values": [
+        0.14466
+      ],
+      "glosa": "Otros costes de instalaciones e inmuebles"
+    },
+    {
+      "label": "Reis- en verblijfkosten",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Wedstrijd- en trainingskosten\"",
+      "values": [
+        0.396162
+      ],
+      "glosa": "Gastos de viaje y estancia"
+    },
+    {
+      "label": "Bewakingskosten",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Wedstrijd- en trainingskosten\"",
+      "values": [
+        0.335498
+      ],
+      "glosa": "Gastos de seguridad y vigilancia"
+    },
+    {
+      "label": "Kleding en materialen",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Wedstrijd- en trainingskosten\"",
+      "values": [
+        0.220113
+      ],
+      "glosa": "Equipaciones e indumentaria deportiva"
+    },
+    {
+      "label": "Kosten jeugdopleiding en scheidsrechters",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Wedstrijd- en trainingskosten\"",
+      "values": [
+        0.200012
+      ],
+      "glosa": "Gastos de fútbol base y arbitrajes"
+    },
+    {
+      "label": "Medische begeleiding",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Wedstrijd- en trainingskosten\"",
+      "values": [
+        0.160094
+      ],
+      "glosa": "Asistencia y servicios médicos"
+    },
+    {
+      "label": "Sfeeracties",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Wedstrijd- en trainingskosten\"",
+      "values": [
+        0.043832
+      ],
+      "glosa": "Animación en el estadio"
+    },
+    {
+      "label": "Kosten Voetbalacademie",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Wedstrijd- en trainingskosten\"",
+      "values": [
+        0.109926
+      ],
+      "glosa": "Gastos de la academia de fútbol"
+    },
+    {
+      "label": "Ontvangstkosten wedstrijden",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Wedstrijd- en trainingskosten\"",
+      "values": [
+        0.060586
+      ],
+      "glosa": "Gastos de protocolo y recepción de partidos"
+    },
+    {
+      "label": "Vergoedingen stewards",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Wedstrijd- en trainingskosten\"",
+      "values": [
+        0.060065
+      ],
+      "glosa": "Retribución de auxiliares de estadio (stewards)"
+    },
+    {
+      "label": "Schade en boetes",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Wedstrijd- en trainingskosten\"",
+      "values": [
+        0.056238
+      ],
+      "glosa": "Daños y sanciones"
+    },
+    {
+      "label": "Trainingskampkosten",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Wedstrijd- en trainingskosten\"",
+      "values": [
+        0.049378
+      ],
+      "glosa": "Gastos de concentraciones y pretemporada"
+    },
+    {
+      "label": "Overige",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Wedstrijd- en trainingskosten\"",
+      "values": [
+        0.047647
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Promotiekosten wedstrijden",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Wedstrijd- en trainingskosten\"",
+      "values": [
+        0.025608
+      ],
+      "glosa": "Gastos de promoción de partidos"
+    },
+    {
+      "label": "Geluidsinstallatie",
+      "lado": "expense",
+      "page": 46,
+      "section": "nota que desglosa \"Wedstrijd- en trainingskosten\"",
+      "values": [
+        0.008987
+      ],
+      "glosa": "Sistema de megafonía y sonido"
+    },
+    {
+      "label": "Consumenten verwervingskosten",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Verkoopkosten\"",
+      "values": [
+        0.56643
+      ],
+      "glosa": "Costes de captación de clientes particulares (B2C)"
+    },
+    {
+      "label": "Kosten businessclub",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Verkoopkosten\"",
+      "values": [
+        0.231451
+      ],
+      "glosa": "Gastos del club de negocios"
+    },
+    {
+      "label": "KNVB heffing",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Verkoopkosten\"",
+      "values": [
+        0.229581
+      ],
+      "glosa": "Tasa KNVB"
+    },
+    {
+      "label": "Inkoopkosten merchandise",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Verkoopkosten\"",
+      "values": [
+        0.229255
+      ],
+      "glosa": "Coste de adquisición de mercancías"
+    },
+    {
+      "label": "Business verwervingskosten",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Verkoopkosten\"",
+      "values": [
+        0.176698
+      ],
+      "glosa": "Costes de captación de empresas (B2B)"
+    },
+    {
+      "label": "Overige verkoopkosten",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Verkoopkosten\"",
+      "values": [
+        0.147346
+      ],
+      "glosa": "Otros costes de venta"
+    },
+    {
+      "label": "Kosten Ticketing",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Verkoopkosten\"",
+      "values": [
+        0.067142
+      ],
+      "glosa": "Gastos de venta de entradas y taquilla"
+    },
+    {
+      "label": "Reclame- en advertentiekosten",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Verkoopkosten\"",
+      "values": [
+        0.033213
+      ],
+      "glosa": "Gastos de publicidad y propaganda"
+    },
+    {
+      "label": "Communicatiekosten",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Verkoopkosten\"",
+      "values": [
+        0.014718
+      ],
+      "glosa": "Gastos de comunicación"
+    },
+    {
+      "label": "Specials",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Verkoopkosten\"",
+      "values": [
+        0.014135
+      ],
+      "glosa": "Acciones especiales"
+    },
+    {
+      "label": "Dotatie voorziening dubieuze vorderingen op handelsdebiteuren",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Verkoopkosten\"",
+      "values": [
+        0.020089
+      ],
+      "glosa": "Dotación a la provisión por deterioro de créditos comerciales"
+    },
+    {
+      "label": "Inkoopkosten horeca voetbalacademie",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Verkoopkosten\"",
+      "values": [
+        0.007162
+      ],
+      "glosa": "Aprovisionamientos de hostelería de la academia de fútbol"
+    },
+    {
+      "label": "Kosten automatisering",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Kantoorkosten\"",
+      "values": [
+        0.254569
+      ],
+      "glosa": "Gastos de tecnologías de la información y sistemas"
+    },
+    {
+      "label": "Porti",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Kantoorkosten\"",
+      "values": [
+        0.018958
+      ],
+      "glosa": "Gastos de franqueo y correos"
+    },
+    {
+      "label": "Bank- en incassokosten",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Kantoorkosten\"",
+      "values": [
+        0.020261
+      ],
+      "glosa": "Gastos bancarios y de gestión de cobro"
+    },
+    {
+      "label": "Telefoonkosten",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Kantoorkosten\"",
+      "values": [
+        0.011145
+      ],
+      "glosa": "Gastos telefónicos"
+    },
+    {
+      "label": "Kantoorbenodigdheden",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Kantoorkosten\"",
+      "values": [
+        0.009936
+      ],
+      "glosa": "Material de oficina"
+    },
+    {
+      "label": "Advieskosten",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Algemene kosten\"",
+      "values": [
+        0.082755
+      ],
+      "glosa": "Gastos de asesoramiento y consultoría"
+    },
+    {
+      "label": "Kosten business bestuur",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Algemene kosten\"",
+      "values": [
+        0.109308
+      ],
+      "glosa": "Gastos de la directiva empresarial"
+    },
+    {
+      "label": "Verzekeringskosten",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Algemene kosten\"",
+      "values": [
+        0.26088
+      ],
+      "glosa": "Primas de seguros"
+    },
+    {
+      "label": "Representatiekosten",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Algemene kosten\"",
+      "values": [
+        0.122699
+      ],
+      "glosa": "Gastos de representación"
+    },
+    {
+      "label": "Accountantskosten",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Algemene kosten\"",
+      "values": [
+        0.099406
+      ],
+      "glosa": "Gastos de auditoría y contabilidad"
+    },
+    {
+      "label": "Scoutingskosten",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Algemene kosten\"",
+      "values": [
+        0.148768
+      ],
+      "glosa": "Gastos de ojeo y seguimiento (scouting)"
+    },
+    {
+      "label": "Abonnementen en contributies",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Algemene kosten\"",
+      "values": [
+        0.053652
+      ],
+      "glosa": "Suscripciones y cuotas de afiliación"
+    },
+    {
+      "label": "Vrijval van kostenreserveringen",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Algemene kosten\"",
+      "values": [
+        0.154854
+      ],
+      "glosa": "Reversión de provisiones para gastos"
+    },
+    {
+      "label": "Administratiekosten",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Algemene kosten\"",
+      "values": [
+        0.007574
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Overige algemene kosten",
+      "lado": "expense",
+      "page": 47,
+      "section": "nota que desglosa \"Algemene kosten\"",
+      "values": [
+        0.009316
+      ],
+      "glosa": "Otros gastos generales"
+    }
+  ]
+}

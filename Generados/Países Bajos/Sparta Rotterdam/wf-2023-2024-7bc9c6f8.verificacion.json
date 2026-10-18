@@ -1,0 +1,179 @@
+{
+ "pdf": "Clubes/Países Bajos/Sparta Rotterdam/wf-2023-2024-7bc9c6f8.pdf",
+ "md": "Clubes/Países Bajos/Sparta Rotterdam/wf-2023-2024-7bc9c6f8.md",
+ "generado": "2026-10-18T23:21:28.013Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/Sparta Rotterdam/wf-2023-2024-7bc9c6f8.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "perimetro-senales.mjs: el ejercicio 2024-06-30 se publicó solo consolidado (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 6 ejercicio(s) con un solo perímetro (consolidado); 7 documento(s) mirados",
+   "evidencia": "A2 (Claude): Clubes/Países Bajos/Sparta Rotterdam/wf-2023-2024-7bc9c6f8.md",
+   "autor": "perimetro-senales",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [
+  "1d551bd",
+  "4b516f5",
+  "1f3fd6f",
+  "884800e",
+  "377fba8",
+  "daa21be"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Netto-omzet\" 18.058718 cierra; además se suman 1 línea(s) fuera de ese total (2.729133)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": false,
+   "detalle": "las líneas suman 21.59345 y el total impreso dice 19.928027"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 20.787851 - gastos 21.59345 ± financiero -0.138885 ± impuesto 0.938225 no da el impreso 0.200363",
+   "dif": null
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 20.787851,
+  "gastos": 21.59345,
+  "financiero": -0.138885,
+  "impuesto": 0.938225,
+  "resultadoImpreso": 0.200363,
+  "resultadoParaCargar": 0.200363,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Netto-omzet",
+   "lado": "ingreso",
+   "M": 18.058718,
+   "pagina": 40,
+   "linea": 1799,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Resultaat vergoedingssommen",
+   "lado": "ingreso",
+   "M": 2.729133,
+   "pagina": 40,
+   "linea": 1811,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lonen",
+   "lado": "gasto",
+   "M": 11.420257,
+   "pagina": 66,
+   "linea": 3245,
+   "origen": "nota que desglosa \"Personeelskosten\""
+  },
+  {
+   "etiqueta": "Overige lasten uit hoofde van personeelsbeloningen",
+   "lado": "gasto",
+   "M": 1.009513,
+   "pagina": 66,
+   "linea": 3246,
+   "origen": "nota que desglosa \"Personeelskosten\""
+  },
+  {
+   "etiqueta": "Horecakosten",
+   "lado": "gasto",
+   "M": 0.285215,
+   "pagina": 40,
+   "linea": 1802,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Verkoopkosten",
+   "lado": "gasto",
+   "M": 1.884033,
+   "pagina": 40,
+   "linea": 1803,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Huisvestingskosten",
+   "lado": "gasto",
+   "M": 2.083432,
+   "pagina": 40,
+   "linea": 1804,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Wedstrijd- en trainingskosten",
+   "lado": "gasto",
+   "M": 1.233579,
+   "pagina": 40,
+   "linea": 1805,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Algemene kosten",
+   "lado": "gasto",
+   "M": 1.028426,
+   "pagina": 40,
+   "linea": 1806,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijving op materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.983572,
+   "pagina": 40,
+   "linea": 1807,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijving vergoedingssommen",
+   "lado": "gasto",
+   "M": 1.665423,
+   "pagina": 40,
+   "linea": 1810,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Rentebaten en -lasten en soortgelijke kosten",
+   "M": -0.138885,
+   "linea": 1814
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen",
+   "M": 0.938225,
+   "linea": 1816
+  }
+ ]
+}

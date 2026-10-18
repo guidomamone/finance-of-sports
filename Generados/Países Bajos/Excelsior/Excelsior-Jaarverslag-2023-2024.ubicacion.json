@@ -1,0 +1,84 @@
+{
+ "pdf": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2023-2024.pdf",
+ "md": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2023-2024.md",
+ "mdSha1": "3899674981c4201cbbb0d8d595ba0e50e0256f82",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T23:12:17.783Z",
+ "bloques": {
+  "b1": {
+   "pagina": 7,
+   "lineas": [
+    127,
+    146
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 8,
+   "lineas": [
+    165,
+    168
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    172,
+    175
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 8,
+   "lineas": [
+    179,
+    186
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 9,
+   "lineas": [
+    199,
+    215
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 10,
+   "lineas": [
+    228,
+    250
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "(Bedragen in €)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2023/2024",
+ "columna_anterior": "2022/2023",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El bloque b5 (winst-en-verliesrekening, pág. 9) termina en 'Bedrijfsresultaat' sin mostrar el resultado neto del ejercicio (456.820), y hay que buscar las filas faltantes en otra página?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Bedrijfsresultaat",
+   "texto": "La última fila del índice de b5 es 'Bedrijfsresultaat', después de 'resultaat deelneming'; puede ser un error de etiqueta y no faltar ningún renglón.",
+   "bloques": [
+    "b5"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Documento abreviado: balance consolidado (b1-b4), estado de resultados consolidado (b5) y flujo de efectivo (b6). No hay notas con desglose de ingresos ni de gastos. El resultado del ejercicio en el balance es 456.820 € (2022/2023: 236.160 €)."
+}

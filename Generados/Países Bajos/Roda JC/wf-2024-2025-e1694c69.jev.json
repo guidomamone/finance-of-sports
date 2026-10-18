@@ -1,0 +1,122 @@
+{
+ "md": "Clubes/Países Bajos/Roda JC/wf-2024-2025-e1694c69.md",
+ "generatedAt": "2026-10-18T23:25:21.809Z",
+ "rubrosHuella": "e807f244ab7a6884a59fe06e656690fb76446861",
+ "rubros": [
+  {
+   "label": "Netto-omzet",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1097
+  },
+  {
+   "label": "Personeelskosten",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "wages_squad",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Overige bedrijfskosten",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_expenses",
+     0.8
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Resultaat vergoedingssommen",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Afschrijvingen",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "player_amortisation",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "player_amortisation",
+     0.45
+    ],
+    [
+     "other_amortisation",
+     0.33
+    ],
+    [
+     "depreciation",
+     0.2
+    ]
+   ],
+   "tokens": 1020
+  }
+ ]
+}
