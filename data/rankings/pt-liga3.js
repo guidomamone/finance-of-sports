@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["pt-liga3"] = {
   2025: {
     leagueSize: null,
+    wiki: {"t":"2024–25 Liga 3 (Portugal)","lang":"en","at":"2026-10-15","n":20},
     clubs: [
       { id:"belenenses-pt", revenue:0.889, reportType:"official_balance_sheet",
         sourceId:"belenenses-pt-sduq-demonstracoes-financeiras-30junho2025",
@@ -11,6 +12,7 @@ window.RANKINGS["pt-liga3"] = {
   },
   2024: {
     leagueSize: null,
+    wiki: {"t":"2023–24 Liga 3 (Portugal)","lang":"en","at":"2026-10-15","n":20},
     clubs: [
       { id:"alverca-pt", revenue:0.808, reportType:"official_balance_sheet",
         sourceId:"alverca-pt-relatorio-contas-2023-24",
@@ -25,6 +27,7 @@ window.RANKINGS["pt-liga3"] = {
   },
   2023: {
     leagueSize: null,
+    wiki: {"t":"2022–23 Liga 3 (Portugal)","lang":"en","at":"2026-10-15","n":24},
     clubs: [
       { id:"alverca-pt", revenue:0.899, reportType:"official_balance_sheet",
         sourceId:"alverca-pt-relatorio-contas-2022-23",
@@ -42,6 +45,7 @@ window.RANKINGS["pt-liga3"] = {
   },
   2022: {
     leagueSize: null,
+    wiki: {"t":"2021–22 Liga 3 (Portugal)","lang":"en","at":"2026-10-15","n":24},
     clubs: [
       { id:"torreense-pt", revenue:2.425, reportType:"official_balance_sheet",
         sourceId:"torreense-pt-sad-relatoriocontas2021-2022",

@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["br-paulistaA2"] = {
   2015: {
     leagueSize: null,
+    wiki: {"t":"Campeonato Paulista de Futebol de 2015 - Série A2","lang":"pt","at":"2026-10-03","n":20},
     clubs: [
       { id:"ferroviaria-br", revenue:1.195, reportType:"official_balance_sheet",
         sourceId:"ferroviaria-br-balanco-2015-b",

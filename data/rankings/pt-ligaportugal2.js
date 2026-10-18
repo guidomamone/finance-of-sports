@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["pt-ligaportugal2"] = {
   2025: {
     leagueSize: null,
+    wiki: {"t":"2024–25 Liga Portugal 2","lang":"en","at":"2026-09-30","n":18},
     clubs: [
       { id:"portimonense-pt", revenue:11.211, reportType:"official_balance_sheet",
         sourceId:"portimonense-pt-relatorio-contas-24-25-assinado",
@@ -34,6 +35,7 @@ window.RANKINGS["pt-ligaportugal2"] = {
   },
   2024: {
     leagueSize: null,
+    wiki: {"t":"2023–24 Liga Portugal 2","lang":"en","at":"2026-09-30","n":18},
     clubs: [
       { id:"torreense-pt", revenue:8.736, reportType:"official_balance_sheet",
         sourceId:"torreense-pt-sad-relatoriocontas2023-2024",
@@ -77,6 +79,7 @@ window.RANKINGS["pt-ligaportugal2"] = {
   },
   2023: {
     leagueSize: null,
+    wiki: {"t":"2022–23 Liga Portugal 2","lang":"en","at":"2026-10-09","n":18},
     clubs: [
       { id:"torreense-pt", revenue:6.002, reportType:"official_balance_sheet",
         sourceId:"torreense-pt-sad-relatoriocontas2022-2023",
@@ -104,6 +107,7 @@ window.RANKINGS["pt-ligaportugal2"] = {
   },
   2022: {
     leagueSize: null,
+    wiki: {"t":"2021–22 Liga Portugal 2","lang":"en","at":"2026-09-30","n":18},
     clubs: [
       { id:"rioave-pt", revenue:7.101, reportType:"official_balance_sheet",
         sourceId:"rioave-pt-relatorio-contas-2021-22",
@@ -130,6 +134,7 @@ window.RANKINGS["pt-ligaportugal2"] = {
   },
   2019: {
     leagueSize: null,
+    wiki: {"t":"2018–19 LigaPro","lang":"en","at":"2026-10-15","n":18},
     clubs: [
       { id:"famalicao-pt", revenue:1.988, reportType:"official_balance_sheet",
         sourceId:"famalicao-pt-relatorio-contas-2018-19",

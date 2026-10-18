@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["br-serieA"] = {
   2025: {
     leagueSize: null,
+    wiki: {"t":"2025 Campeonato Brasileiro Série A","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"flamengo-br", revenue:347.575, reportType:"official_balance_sheet",
         sourceId:"flamengo-br-demonstracoes-2025",
@@ -52,6 +53,7 @@ window.RANKINGS["br-serieA"] = {
   },
   2024: {
     leagueSize: null,
+    wiki: {"t":"2024 Campeonato Brasileiro Série A","lang":"en","at":"2026-09-28","n":20},
     clubs: [
       { id:"palmeiras-br", revenue:205.313, reportType:"official_balance_sheet",
         sourceId:"palmeiras-br-demonstracoes-2024",
@@ -103,6 +105,7 @@ window.RANKINGS["br-serieA"] = {
   },
   2023: {
     leagueSize: null,
+    wiki: {"t":"2023 Campeonato Brasileiro Série A","lang":"en","at":"2026-10-02","n":20},
     clubs: [
       { id:"saopaulo-br", revenue:138.178, reportType:"official_balance_sheet",
         sourceId:"saopaulo-br-demonstracoes-2023",
@@ -136,6 +139,7 @@ window.RANKINGS["br-serieA"] = {
   },
   2022: {
     leagueSize: null,
+    wiki: {"t":"2022 Campeonato Brasileiro Série A","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"cuiaba-br", revenue:25.556, reportType:"official_balance_sheet",
         sourceId:"cuiaba-br-balanco-financeiro-2022",
@@ -151,6 +155,7 @@ window.RANKINGS["br-serieA"] = {
   },
   2021: {
     leagueSize: null,
+    wiki: {"t":"2021 Campeonato Brasileiro Série A","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"chapecoense-br", revenue:10.948, reportType:"official_balance_sheet",
         sourceId:"chapecoense-br-demonstracoes-2020-2021",
@@ -159,6 +164,7 @@ window.RANKINGS["br-serieA"] = {
   },
   2017: {
     leagueSize: null,
+    wiki: {"t":"2017 Campeonato Brasileiro Série A","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"chapecoense-br", revenue:29.581, reportType:"official_balance_sheet",
         sourceId:"chapecoense-br-demonstracoes-2017",
@@ -167,6 +173,7 @@ window.RANKINGS["br-serieA"] = {
   },
   2015: {
     leagueSize: null,
+    wiki: {"t":"2015 Campeonato Brasileiro Série A","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"goias-br", revenue:18.012, reportType:"official_balance_sheet",
         sourceId:"goias-br-demonstracoes-contabeis-2015-2014",
@@ -175,6 +182,7 @@ window.RANKINGS["br-serieA"] = {
   },
   2014: {
     leagueSize: null,
+    wiki: {"t":"2014 Campeonato Brasileiro Série A","lang":"en","at":"2026-10-03","n":20},
     clubs: [
       { id:"goias-br", revenue:23.569, reportType:"official_balance_sheet",
         sourceId:"goias-br-demonstracoes-contabeis-2014-2013",
@@ -186,6 +194,7 @@ window.RANKINGS["br-serieA"] = {
   },
   2013: {
     leagueSize: null,
+    wiki: {"t":"2013 Campeonato Brasileiro Série A","lang":"en","at":"2026-10-03","n":20},
     clubs: [
       { id:"goias-br", revenue:21.803, reportType:"official_balance_sheet",
         sourceId:"goias-br-demonstracoes-contabeis-2013-2012",
@@ -198,6 +207,7 @@ window.RANKINGS["br-serieA"] = {
   },
   2010: {
     leagueSize: null,
+    wiki: {"t":"2010 Campeonato Brasileiro Série A","lang":"en","at":"2026-10-03","n":20},
     clubs: [
       { id:"goias-br", revenue:18.223, reportType:"official_balance_sheet",
         sourceId:"goias-br-demonstracoes-contabeis-2010-2009",
@@ -206,6 +216,7 @@ window.RANKINGS["br-serieA"] = {
   },
   2009: {
     leagueSize: null,
+    wiki: {"t":"2009 Campeonato Brasileiro Série A","lang":"en","at":"2026-10-03","n":20},
     clubs: [
       { id:"goias-br", revenue:17.18, reportType:"official_balance_sheet",
         sourceId:"goias-br-demonstracoes-contabeis-2009-2008",
@@ -214,6 +225,7 @@ window.RANKINGS["br-serieA"] = {
   },
   2008: {
     leagueSize: null,
+    wiki: {"t":"2008 Campeonato Brasileiro Série A","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"goias-br", revenue:8.662, reportType:"official_balance_sheet",
         sourceId:"goias-br-demonstracoes-contabeis-2008-2007",

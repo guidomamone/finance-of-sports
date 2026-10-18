@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["pt-primeiraliga"] = {
   2026: {
     leagueSize: null,
+    wiki: {"t":"2025–26 Primeira Liga","lang":"en","at":"2026-10-15","n":18},
     clubs: [
       { id:"benfica-pt", revenue:370.076, reportType:"official_balance_sheet",
         sourceId:"benfica-pt-relatorio-contas-2025-26",
@@ -11,6 +12,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2025: {
     leagueSize: null,
+    wiki: {"t":"2024–25 Primeira Liga","lang":"en","at":"2026-10-17","n":18},
     clubs: [
       { id:"benfica-pt", revenue:407.825, reportType:"official_balance_sheet",
         sourceId:"benfica-pt-relatorio-contas-2024-25-pos-ag",
@@ -59,6 +61,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2024: {
     leagueSize: null,
+    wiki: {"t":"2023–24 Primeira Liga","lang":"en","at":"2026-09-30","n":18},
     clubs: [
       { id:"benfica-pt", revenue:274.46, reportType:"official_balance_sheet",
         sourceId:"benfica-pt-relatorio-contas-2023-24",
@@ -110,6 +113,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2023: {
     leagueSize: null,
+    wiki: {"t":"2022–23 Primeira Liga","lang":"en","at":"2026-10-09","n":18},
     clubs: [
       { id:"benfica-pt", revenue:309.369, reportType:"official_balance_sheet",
         sourceId:"benfica-pt-relatorio-contas-2022-23-pos-ag",
@@ -164,6 +168,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2022: {
     leagueSize: null,
+    wiki: {"t":"2021–22 Primeira Liga","lang":"en","at":"2026-09-30","n":18},
     clubs: [
       { id:"porto-pt", revenue:279.011, reportType:"official_balance_sheet",
         sourceId:"porto-pt-relatorio-contas-consolidadas-2021-22",
@@ -217,6 +222,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2021: {
     leagueSize: null,
+    wiki: {"t":"2020–21 Primeira Liga","lang":"en","at":"2026-09-30","n":18},
     clubs: [
       { id:"porto-pt", revenue:318.869, reportType:"official_balance_sheet",
         sourceId:"porto-pt-relatorio-contas-consolidadas-2020-21",
@@ -251,6 +257,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2020: {
     leagueSize: null,
+    wiki: {"t":"2019–20 Primeira Liga","lang":"en","at":"2026-10-09","n":18},
     clubs: [
       { id:"benfica-pt", revenue:319.27, reportType:"official_balance_sheet",
         sourceId:"benfica-pt-relatorio-contas-2019-20-pos-ag",
@@ -277,6 +284,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2019: {
     leagueSize: null,
+    wiki: {"t":"2018–19 Primeira Liga","lang":"en","at":"2026-10-09","n":18},
     clubs: [
       { id:"porto-pt", revenue:304.102, reportType:"official_balance_sheet",
         sourceId:"porto-pt-relatorio-contas-consolidadas-2018-19",
@@ -294,6 +302,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2018: {
     leagueSize: null,
+    wiki: {"t":"2017–18 Primeira Liga","lang":"en","at":"2026-10-09","n":18},
     clubs: [
       { id:"benfica-pt", revenue:232.289, reportType:"official_balance_sheet",
         sourceId:"benfica-pt-relatorio-contas-2017-18",
@@ -311,6 +320,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2017: {
     leagueSize: null,
+    wiki: {"t":"2016–17 Primeira Liga","lang":"en","at":"2026-10-09","n":18},
     clubs: [
       { id:"benfica-pt", revenue:286.704, reportType:"official_balance_sheet",
         sourceId:"benfica-pt-relatorio-contas-2016-17-pos-ag",
@@ -331,6 +341,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2016: {
     leagueSize: null,
+    wiki: {"t":"2015–16 Primeira Liga","lang":"en","at":"2026-10-09","n":18},
     clubs: [
       { id:"benfica-pt", revenue:230.886, reportType:"official_balance_sheet",
         sourceId:"benfica-pt-relatorio-contas-2015-16",
@@ -351,6 +362,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2015: {
     leagueSize: null,
+    wiki: {"t":"2014–15 Primeira Liga","lang":"en","at":"2026-09-30","n":18},
     clubs: [
       { id:"sportingcp-pt", revenue:96.655, reportType:"official_balance_sheet",
         sourceId:"sportingcp-pt-relatorio-contas-2014-15",
@@ -359,6 +371,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2014: {
     leagueSize: null,
+    wiki: {"t":"2013–14 Primeira Liga","lang":"en","at":"2026-10-15","n":16},
     clubs: [
       { id:"benfica-pt", revenue:246.871, reportType:"official_balance_sheet",
         sourceId:"benfica-pt-relatorio-contas-2013-14-pos-ag",
@@ -370,6 +383,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2013: {
     leagueSize: null,
+    wiki: {"t":"2012–13 Primeira Liga","lang":"en","at":"2026-10-15","n":16},
     clubs: [
       { id:"benfica-pt", revenue:169.639, reportType:"official_balance_sheet",
         sourceId:"benfica-pt-relatorio-contas-2012-13-pos-ag",
@@ -381,6 +395,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2012: {
     leagueSize: null,
+    wiki: {"t":"2011–12 Primeira Liga","lang":"en","at":"2026-10-15","n":16},
     clubs: [
       { id:"benfica-pt", revenue:151.119, reportType:"official_balance_sheet",
         sourceId:"benfica-pt-relatorio-contas-2011-12",
@@ -392,6 +407,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2011: {
     leagueSize: null,
+    wiki: {"t":"2010–11 Primeira Liga","lang":"en","at":"2026-10-15","n":16},
     clubs: [
       { id:"sportingcp-pt", revenue:77.373, reportType:"official_balance_sheet",
         sourceId:"sportingcp-pt-relatorio-contas-2010-11",
@@ -400,6 +416,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2010: {
     leagueSize: null,
+    wiki: {"t":"2009–10 Primeira Liga","lang":"en","at":"2026-10-17","n":16},
     clubs: [
       { id:"benfica-pt", revenue:107.208, reportType:"official_balance_sheet",
         sourceId:"benfica-pt-prestacao-contas-2010-11-11",
@@ -408,6 +425,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2009: {
     leagueSize: null,
+    wiki: {"t":"2008–09 Primeira Liga","lang":"en","at":"2026-10-17","n":16},
     clubs: [
       { id:"benfica-pt", revenue:73.993, reportType:"official_balance_sheet",
         sourceId:"benfica-pt-prestacao-contas-2009-11-03",
@@ -416,6 +434,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2008: {
     leagueSize: null,
+    wiki: {"t":"2007–08 Primeira Liga","lang":"en","at":"2026-10-17","n":16},
     clubs: [
       { id:"benfica-pt", revenue:99.376, reportType:"official_balance_sheet",
         sourceId:"benfica-pt-relatorio-contas-2007-08",
@@ -427,6 +446,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2007: {
     leagueSize: null,
+    wiki: {"t":"2006–07 Primeira Liga","lang":"en","at":"2026-10-17","n":16},
     clubs: [
       { id:"benfica-pt", revenue:113.96, reportType:"official_balance_sheet",
         sourceId:"benfica-pt-relatorio-contas-2006-07",
@@ -438,6 +458,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2006: {
     leagueSize: null,
+    wiki: {"t":"2005–06 Primeira Liga","lang":"en","at":"2026-10-17","n":18},
     clubs: [
       { id:"benfica-pt", revenue:80.655, reportType:"official_balance_sheet",
         sourceId:"benfica-pt-relatorio-contas-2005-06",
@@ -449,6 +470,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2005: {
     leagueSize: null,
+    wiki: {"t":"2004–05 Primeira Liga","lang":"en","at":"2026-10-15","n":18},
     clubs: [
       { id:"sportingcp-pt", revenue:120.642, reportType:"official_balance_sheet",
         sourceId:"sportingcp-pt-relatorio-contas-2004-05",
@@ -457,6 +479,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2004: {
     leagueSize: null,
+    wiki: {"t":"2003–04 Primeira Liga","lang":"en","at":"2026-10-15","n":18},
     clubs: [
       { id:"sportingcp-pt", revenue:40.798, reportType:"official_balance_sheet",
         sourceId:"sportingcp-pt-relatorio-contas-2003-04",
@@ -465,6 +488,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2003: {
     leagueSize: null,
+    wiki: {"t":"2002–03 Primeira Liga","lang":"en","at":"2026-10-15","n":18},
     clubs: [
       { id:"sportingcp-pt", revenue:29.93, reportType:"official_balance_sheet",
         sourceId:"sportingcp-pt-relatorio-contas-2002-03",
@@ -473,6 +497,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2002: {
     leagueSize: null,
+    wiki: {"t":"2001–02 Primeira Liga","lang":"en","at":"2026-10-15","n":17},
     clubs: [
       { id:"sportingcp-pt", revenue:35.855, reportType:"official_balance_sheet",
         sourceId:"sportingcp-pt-relatorio-contas-2001",
@@ -481,6 +506,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2001: {
     leagueSize: null,
+    wiki: {"t":"2000–01 Primeira Liga","lang":"en","at":"2026-10-15","n":17},
     clubs: [
       { id:"sportingcp-pt", revenue:28.034, reportType:"official_balance_sheet",
         sourceId:"sportingcp-pt-relatorio-contas-2000",
@@ -490,6 +516,7 @@ window.RANKINGS["pt-primeiraliga"] = {
   },
   2000: {
     leagueSize: null,
+    wiki: {"t":"1999–2000 Primeira Liga","lang":"en","at":"2026-10-15","n":18},
     clubs: [
       { id:"sportingcp-pt", revenue:31.243, reportType:"official_balance_sheet",
         sourceId:"sportingcp-pt-relatorio-contas-1999",

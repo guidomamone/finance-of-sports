@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["ar-primera"] = {
   2026: {
     leagueSize: null,
+    wiki: {"t":"2026 Argentine Primera División","lang":"en","at":"2026-10-17","n":30},
     clubs: [
       { id:"independiente", revenue:71.617, reportType:"official_balance_sheet",
         sourceId:"independiente-estados-contables-2025-26",
@@ -14,6 +15,7 @@ window.RANKINGS["ar-primera"] = {
   },
   2025: {
     leagueSize: null,
+    wiki: {"t":"2025 Argentine Primera División","lang":"en","at":"2026-10-17","n":30},
     clubs: [
       { id:"boca", revenue:197.518, reportType:"official_balance_sheet",
         sourceId:"boca-balance-2024-25",
@@ -43,6 +45,7 @@ window.RANKINGS["ar-primera"] = {
   },
   2024: {
     leagueSize: 28,
+    wiki: {"t":"2024 Argentine Primera División","lang":"en","at":"2026-10-17","n":28},
     clubs: [
       { id:"river", revenue:217.861, reportType:"unofficial_mirror",
         sourceId:"river-estados-contables-2023-24",
@@ -78,6 +81,7 @@ window.RANKINGS["ar-primera"] = {
   },
   2023: {
     leagueSize: null,
+    wiki: {"t":"2023 Argentine Primera División","lang":"en","at":"2026-10-17","n":28},
     clubs: [
       { id:"boca", revenue:102.139, reportType:"official_balance_sheet",
         sourceId:"boca-balance-2022-23",
@@ -101,6 +105,7 @@ window.RANKINGS["ar-primera"] = {
   },
   2022: {
     leagueSize: null,
+    wiki: {"t":"2022 Argentine Primera División","lang":"en","at":"2026-10-17","n":28},
     clubs: [
       { id:"boca", revenue:114.212, reportType:"official_balance_sheet",
         sourceId:"boca-balance-2021-22",
@@ -118,6 +123,7 @@ window.RANKINGS["ar-primera"] = {
   },
   2021: {
     leagueSize: null,
+    wiki: {"t":"2021 Argentine Primera División","lang":"en","at":"2026-10-17","n":26},
     clubs: [
       { id:"river", revenue:92.942, reportType:"official_balance_sheet",
         sourceId:"river-estados-contables-2020-2021",
@@ -132,6 +138,7 @@ window.RANKINGS["ar-primera"] = {
   },
   2020: {
     leagueSize: null,
+    wiki: {"t":"2019–20 Argentine Primera División","lang":"en","at":"2026-10-17","n":24},
     clubs: [
       { id:"racing", revenue:32.929, reportType:"official_budget_and_balance",
         sourceId:"racing-balance-2019-20",
@@ -149,6 +156,7 @@ window.RANKINGS["ar-primera"] = {
   },
   2019: {
     leagueSize: null,
+    wiki: {"t":"2018–19 Argentine Primera División","lang":"en","at":"2026-10-17","n":26},
     clubs: [
       { id:"racing", revenue:40.401, reportType:"official_budget",
         sourceId:"racing-presupuesto-2018-19",
@@ -167,6 +175,7 @@ window.RANKINGS["ar-primera"] = {
   },
   2018: {
     leagueSize: null,
+    wiki: {"t":"2017–18 Argentine Primera División","lang":"en","at":"2026-10-17","n":28},
     clubs: [
       { id:"racing", revenue:48.835, reportType:"official_budget_and_balance",
         sourceId:"racing-balance-2018",
@@ -181,6 +190,7 @@ window.RANKINGS["ar-primera"] = {
   },
   2017: {
     leagueSize: null,
+    wiki: {"t":"2016–17 Argentine Primera División","lang":"en","at":"2026-10-17","n":30},
     clubs: [
       { id:"sanlorenzo", revenue:46.906, reportType:"official_balance_sheet",
         sourceId:"sanlorenzo-memoria-y-balance-2016-17",
@@ -195,6 +205,7 @@ window.RANKINGS["ar-primera"] = {
   },
   2016: {
     leagueSize: null,
+    wiki: {"t":"2016 Argentine Primera División","lang":"en","at":"2026-10-17","n":30},
     clubs: [
       { id:"racing", revenue:41.266, reportType:"official_budget_and_balance",
         sourceId:"racing-balance-2016",
@@ -212,6 +223,7 @@ window.RANKINGS["ar-primera"] = {
   },
   2015: {
     leagueSize: null,
+    wiki: {"t":"2015 Argentine Primera División","lang":"en","at":"2026-10-17","n":30},
     clubs: [
       { id:"sanlorenzo", revenue:48.817, reportType:"official_balance_sheet",
         sourceId:"sanlorenzo-memoria-y-balance-2014-15",
@@ -229,6 +241,7 @@ window.RANKINGS["ar-primera"] = {
   },
   2014: {
     leagueSize: null,
+    wiki: {"t":"2014 Argentine Primera División","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"racing", revenue:36.431, reportType:"official_budget_and_balance",
         sourceId:"racing-balance-2014",
@@ -241,6 +254,7 @@ window.RANKINGS["ar-primera"] = {
   },
   2013: {
     leagueSize: null,
+    wiki: {"t":"2012–13 Argentine Primera División season","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"sanlorenzo", revenue:33.769, reportType:"official_balance_sheet",
         sourceId:"sanlorenzo-memoria-y-balance-2012-13",
@@ -252,6 +266,7 @@ window.RANKINGS["ar-primera"] = {
   },
   2012: {
     leagueSize: null,
+    wiki: {"t":"2011–12 Argentine Primera División season","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"racing", revenue:39.101, reportType:"official_balance_sheet",
         sourceId:"racing-balance-2012",
@@ -263,6 +278,7 @@ window.RANKINGS["ar-primera"] = {
   },
   2011: {
     leagueSize: null,
+    wiki: {"t":"2010–11 Argentine Primera División season","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"racing", revenue:25.477, reportType:"official_balance_sheet",
         sourceId:"racing-balance-2011",
@@ -274,6 +290,7 @@ window.RANKINGS["ar-primera"] = {
   },
   2010: {
     leagueSize: null,
+    wiki: {"t":"2009–10 Argentine Primera División","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"racing", revenue:18.419, reportType:"official_balance_sheet",
         sourceId:"racing-balance-2010",
@@ -282,6 +299,7 @@ window.RANKINGS["ar-primera"] = {
   },
   2009: {
     leagueSize: null,
+    wiki: {"t":"2008–09 Argentine Primera División","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"racing", revenue:22.881, reportType:"official_balance_sheet",
         sourceId:"racing-balance-2009",

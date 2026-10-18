@@ -1092,6 +1092,7 @@
   .lg-mix-nota{grid-column:2;font-size:11.5px;color:var(--muted);}
   .lg-avisos{margin-top:16px;}
   .lg-avisos p{margin:0;font-size:13px;color:var(--muted);line-height:1.6;}
+  .lg-avisos p.lg-cita-lista{margin-top:6px;}
   /* TO-DO 83: "¿cómo le iría este/estos club(es) en otra liga?". `.liga-sim-panel`
      es el contenedor neutro (siempre visible, aunque no haya nada simulado — ahí
      vive el buscador de "sumar un club"); `.liga-sim-activa` es la caja ámbar de

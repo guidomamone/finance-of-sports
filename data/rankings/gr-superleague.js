@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["gr-superleague"] = {
   2025: {
     leagueSize: null,
+    wiki: {"t":"2024–25 Super League Greece","lang":"en","at":"2026-09-28","n":14},
     clubs: [
       { id:"olympiacos-gr", revenue:123.705, reportType:"official_balance_sheet",
         sourceId:"olympiacos-gr-pae-olympiacos-ifrs-fs-2025-06-30",
@@ -46,6 +47,7 @@ window.RANKINGS["gr-superleague"] = {
   },
   2024: {
     leagueSize: null,
+    wiki: {"t":"2023–24 Super League Greece","lang":"en","at":"2026-10-03","n":14},
     clubs: [
       { id:"olympiacos-gr", revenue:71.972, reportType:"official_balance_sheet",
         sourceId:"olympiacos-gr-pae-olympiacos-consolidated-ifrs-fs-2024-06-30",
@@ -83,6 +85,7 @@ window.RANKINGS["gr-superleague"] = {
   },
   2023: {
     leagueSize: null,
+    wiki: {"t":"2022–23 Super League Greece","lang":"en","at":"2026-09-30","n":14},
     clubs: [
       { id:"olympiacos-gr", revenue:55.527, reportType:"official_balance_sheet",
         sourceId:"olympiacos-gr-pae-olympiacos-consolidated-ifrs-fs-2023-06-30",
@@ -119,6 +122,7 @@ window.RANKINGS["gr-superleague"] = {
   },
   2022: {
     leagueSize: null,
+    wiki: {"t":"2021–22 Super League Greece","lang":"en","at":"2026-09-30","n":14},
     clubs: [
       { id:"olympiacos-gr", revenue:69.355, reportType:"official_balance_sheet",
         sourceId:"olympiacos-gr-pae-olympiacos-fs-2022-06-30",
@@ -153,6 +157,7 @@ window.RANKINGS["gr-superleague"] = {
   },
   2021: {
     leagueSize: null,
+    wiki: {"t":"2020–21 Super League Greece","lang":"en","at":"2026-09-30","n":14},
     clubs: [
       { id:"olympiacos-gr", revenue:96.745, reportType:"official_balance_sheet",
         sourceId:"olympiacos-gr-pae-olympiacos-fs-2021-06-30",
@@ -191,6 +196,7 @@ window.RANKINGS["gr-superleague"] = {
   },
   2020: {
     leagueSize: null,
+    wiki: {"t":"2019–20 Super League Greece","lang":"en","at":"2026-10-03","n":14},
     clubs: [
       { id:"olympiacos-gr", revenue:92.335, reportType:"official_balance_sheet",
         sourceId:"olympiacos-gr-pae-olympiacos-fs-2020-06-30",
@@ -225,6 +231,7 @@ window.RANKINGS["gr-superleague"] = {
   },
   2019: {
     leagueSize: null,
+    wiki: {"t":"2018–19 Super League Greece","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"olympiacos-gr", revenue:69.465, reportType:"official_balance_sheet",
         sourceId:"olympiacos-gr-pae-olympiacos-fs-2019-06-30",
@@ -259,6 +266,7 @@ window.RANKINGS["gr-superleague"] = {
   },
   2018: {
     leagueSize: null,
+    wiki: {"t":"2017–18 Super League Greece","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"olympiacos-gr", revenue:97.176, reportType:"official_balance_sheet",
         sourceId:"olympiacos-gr-pae-olympiacos-fs-2018-06-30",
@@ -277,6 +285,7 @@ window.RANKINGS["gr-superleague"] = {
   },
   2017: {
     leagueSize: null,
+    wiki: {"t":"2016–17 Super League Greece","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"olympiacos-gr", revenue:89.976, reportType:"official_balance_sheet",
         sourceId:"olympiacos-gr-pae-olympiacos-fs-2017-06-30",
@@ -298,6 +307,7 @@ window.RANKINGS["gr-superleague"] = {
   },
   2016: {
     leagueSize: null,
+    wiki: {"t":"2015–16 Super League Greece","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"olympiacos-gr", revenue:80.905, reportType:"official_balance_sheet",
         sourceId:"olympiacos-gr-pae-olympiacos-chrimatooikonomikes-katastaseis-2016-06-30",

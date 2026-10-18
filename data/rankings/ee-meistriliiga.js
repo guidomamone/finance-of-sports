@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["ee-meistriliiga"] = {
   2025: {
     leagueSize: 10,
+    wiki: {"t":"2025 Meistriliiga","lang":"en","at":"2026-10-18","n":10},
     clubs: [
       { id:"paidelinnameeskond-ee", revenue:4.817, reportType:"official_balance_sheet",
         sourceId:"paidelinnameeskond-ee-aruanne-2025",

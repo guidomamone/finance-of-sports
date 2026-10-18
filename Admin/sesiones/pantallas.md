@@ -267,3 +267,22 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
 ### Qué deja de ser cierto en ESTADO
 
 - Nada (ESTADO ya no nombraba Pases como pestaña visible; el "Techo del modelo" sigue nombrando Pases/Resultados/Títulos: sacar Pases).
+
+## Después del merge del 303 y el 304 (2026-10-18)
+
+### Qué cambió (para CHANGELOG)
+
+- To-do 305: Ligas cita de dónde sale la lista de clubes de la temporada, con la licencia. `tools/generate-rankings.js` lee
+  `tools/club-league-reference/<iso2>.json` y escribe en cada liga-año de `data/rankings/<liga>.js` un `wiki` = { t, lang, at, n }
+  (página, idioma, día en que se leyó, cantidad de clubes): hoy 227 liga-años. `js/liga.js` (`citaLista()`) suma, debajo de las
+  salvedades, "La lista de los N clubes de la temporada sale de Wikipedia: <página> (en inglés), leída el <fecha>, bajo licencia
+  CC BY-SA 4.0", con link a la página y a la licencia; solo cuando la pantalla usa la lista (el "de los M" o los estimados). El link va a
+  la página de hoy, no a la revisión leída (decisión de Guido: las listas no guardan el número de revisión). Mockup aprobado: "Ligas ·
+  de dónde sale la lista de clubes (to-do 305)" de "Pantallas FoS". Probado: Argentina 2024, Serie A 2023 y en inglés. ASSET_V 1296.
+
+### Qué queda (para TODO)
+
+- Borrar el 305.
+- Nuevo (a decidir): en 223 de los 227 liga-años con lista de Wikipedia, `leagueSize` es null y Ligas dice "Nadie verificó todavía
+  cuántos equipos jugaron esta temporada", aunque la lista existe y alimenta los estimados (y ahora se cita). O el tamaño sale de la
+  lista (`LEAGUE_SIZE_BY_YEAR`, `tools/listas-lote.mjs`), o la salvedad cambia de texto.

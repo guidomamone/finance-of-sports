@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["it-seriec"] = {
   2024: {
     leagueSize: null,
+    wiki: {"t":"2023–24 Serie C","lang":"en","at":"2026-10-18","n":60},
     clubs: [
       { id:"juvestabia-it", revenue:4.392, reportType:"official_balance_sheet",
         sourceId:"juvestabia-it-bilancio-2024-ifrs-sec-6k",
@@ -11,6 +12,7 @@ window.RANKINGS["it-seriec"] = {
   },
   2017: {
     leagueSize: null,
+    wiki: {"t":"2016–17 Lega Pro","lang":"en","at":"2026-10-09","n":60},
     clubs: [
       { id:"parma-it", revenue:7.591, reportType:"official_balance_sheet",
         sourceId:"parma-it-bilancio-30-06-2017-individual",

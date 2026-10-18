@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["ru-pervayaliga"] = {
   2024: {
     leagueSize: null,
+    wiki: {"t":"2023–24 Russian First League","lang":"en","at":"2026-10-10","n":18},
     clubs: [
       { id:"sochi-ru", revenue:32.226, reportType:"official_balance_sheet",
         sourceId:"sochi-ru-bfo-2024-datos",
@@ -15,6 +16,7 @@ window.RANKINGS["ru-pervayaliga"] = {
   },
   2023: {
     leagueSize: null,
+    wiki: {"t":"2022–23 Russian First League","lang":"en","at":"2026-10-10","n":18},
     clubs: [
       { id:"akrontolyatti-ru", revenue:6.383, reportType:"official_balance_sheet",
         sourceId:"akrontolyatti-ru-bfo-2023-datos",
@@ -28,6 +30,7 @@ window.RANKINGS["ru-pervayaliga"] = {
   },
   2022: {
     leagueSize: null,
+    wiki: {"t":"2021–22 Russian First Division","lang":"en","at":"2026-10-10","n":20},
     clubs: [
       { id:"rubinkazan-ru", revenue:74.163, reportType:"official_balance_sheet",
         sourceId:"rubinkazan-ru-bfo-2022-datos",

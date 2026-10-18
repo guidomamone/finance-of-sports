@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["hr-hnl"] = {
   2025: {
     leagueSize: null,
+    wiki: {"t":"2024–25 Croatian Football League","lang":"en","at":"2026-10-17","n":10},
     clubs: [
       { id:"osijek-hr", revenue:22.101, reportType:"official_balance_sheet",
         sourceId:"osijek-hr-financijsko-izvjesce-2025",

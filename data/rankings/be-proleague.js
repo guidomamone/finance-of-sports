@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["be-proleague"] = {
   2025: {
     leagueSize: null,
+    wiki: {"t":"2024–25 Belgian Pro League","lang":"en","at":"2026-10-18","n":16},
     clubs: [
       { id:"clubbrugge-be", revenue:180.728, reportType:"official_balance_sheet",
         sourceId:"clubbrugge-be-jaarrekening-2025",

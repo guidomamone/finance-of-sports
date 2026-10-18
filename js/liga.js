@@ -930,7 +930,36 @@ window.LIGA_VIEW = (function(){
       'Un club sin ejercicio cargado no aparece con una barra en cero: simplemente no está.'));
 
     caja.appendChild(el('p', null, out.join(' ')));
+    var cita = citaLista(r);
+    if(cita) caja.appendChild(cita);
     return caja;
+  }
+
+  // DE DÓNDE SALE LA LISTA DE CLUBES: la tabla de equipos de la página de la temporada en Wikipedia (`wiki` del ranking, de
+  // tools/generate-rankings.js). Se cita con su licencia solo cuando la pantalla la usa: para el "de los M" o para los estimados.
+  function citaLista(r){
+    var w = r.wiki;
+    if(!w || (r.leagueSize == null && !filasEstimadas(st.league, st.year).length)) return null;
+    var lang = document.documentElement.lang || 'es';
+    var p = el('p', 'lg-cita-lista');
+    var a = el('a', null, w.t);
+    a.href = 'https://' + w.lang + '.wikipedia.org/wiki/' + encodeURIComponent(w.t.replace(/ /g, '_'));
+    a.target = '_blank'; a.rel = 'noopener';
+    var lic = el('a', null, 'CC BY-SA 4.0');
+    lic.href = 'https://creativecommons.org/licenses/by-sa/4.0/deed.' + (lang === 'en' ? 'en' : 'es');
+    lic.target = '_blank'; lic.rel = 'noopener';
+    var idioma = w.lang === lang ? '' : ' (' + (w.lang === 'en' ? t('liga.cita.en', 'en inglés') : w.lang) + ')';
+    var fecha = '';
+    if(w.at){
+      var d = new Date(w.at + 'T12:00:00Z');
+      if(!isNaN(d)) fecha = ', ' + t('liga.cita.leida', 'leída el') + ' ' + d.toLocaleDateString(lang, { day:'numeric', month:'numeric', year:'numeric', timeZone:'UTC' });
+    }
+    p.appendChild(document.createTextNode(t('liga.cita.pre', 'La lista de los') + ' ' + w.n + ' ' + t('liga.cita.mid', 'clubes de la temporada sale de Wikipedia:') + ' '));
+    p.appendChild(a);
+    p.appendChild(document.createTextNode(idioma + fecha + ', ' + t('liga.cita.lic', 'bajo licencia') + ' '));
+    p.appendChild(lic);
+    p.appendChild(document.createTextNode('.'));
+    return p;
   }
 
   // --------------------------------------------------------------------------

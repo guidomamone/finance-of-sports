@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["ru-premierliga"] = {
   2025: {
     leagueSize: null,
+    wiki: {"t":"2024–25 Russian Premier League","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"zenit-ru", revenue:318, reportType:"official_balance_sheet",
         sourceId:"zenit-ru-bfo-2025-datos",
@@ -69,6 +70,7 @@ window.RANKINGS["ru-premierliga"] = {
   },
   2024: {
     leagueSize: null,
+    wiki: {"t":"2023–24 Russian Premier League","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"zenit-ru", revenue:231.786, reportType:"official_balance_sheet",
         sourceId:"zenit-ru-bfo-2024-datos",
@@ -128,6 +130,7 @@ window.RANKINGS["ru-premierliga"] = {
   },
   2023: {
     leagueSize: null,
+    wiki: {"t":"2022–23 Russian Premier League","lang":"en","at":"2026-10-09","n":16},
     clubs: [
       { id:"zenit-ru", revenue:243.387, reportType:"official_balance_sheet",
         sourceId:"zenit-ru-bfo-2023-datos",
@@ -188,6 +191,7 @@ window.RANKINGS["ru-premierliga"] = {
   },
   2022: {
     leagueSize: null,
+    wiki: {"t":"2021–22 Russian Premier League","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"zenit-ru", revenue:246.323, reportType:"official_balance_sheet",
         sourceId:"zenit-ru-bfo-2022-datos",
@@ -239,6 +243,7 @@ window.RANKINGS["ru-premierliga"] = {
   },
   2021: {
     leagueSize: null,
+    wiki: {"t":"2020–21 Russian Premier League","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"zenit-ru", revenue:234.555, reportType:"official_balance_sheet",
         sourceId:"zenit-ru-bfo-2021-datos",
