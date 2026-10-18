@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 736 — Merge de pantallas: las cuentas de la liga (2026-10-18)
+
+- To-do 282 en Ligas: tarjeta "Las cuentas de la liga" (`js/auditoria.js`, desde `js/liga.js`): la entidad que organiza la liga, quién
+  auditó su balance y qué dijo, con el link a la transcripción. Probada con la Premier League 2025 (Deloitte). `index.html` carga
+  `data/auditoria/_ligas.js`. ASSET_V 1290, P0 0 / P1 0.
+
 ## Versión 735 — Merge de finanzas: los ingresos de las asociaciones portuguesas (2026-10-18)
 
 - To-do 281: 14 documentos de asociaciones portuguesas (Vizela, Belenenses, Chaves, Académica, Braga, Marítimo, Porto 2024-25 en cuatro

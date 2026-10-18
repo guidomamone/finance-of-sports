@@ -24,7 +24,7 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 282 en Ligas (cuando haya el dato del 295) · finanzas 281, 282, 294 · pipeline 289, 290, 288, 232, 279, 286, 287, 298, 301 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
+Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas (sin trabajo asignado) · finanzas 281, 282, 294 · pipeline 289, 290, 288, 232, 279, 286, 287, 298, 301 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
 datos-sourcing 273 (completar el dato), 252 · ligas 295 · Reino Unido (261) en su propia sesión · proyecto 250, 244, 300 · la principal: 268, 291 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
@@ -242,7 +242,8 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 282. QUIÉN AUDITA: LO QUE QUEDA (pedido de Guido, 2026-10-17). Los 942 balances tienen línea, la tarjeta de Finanzas está (con el
    "alcance" de una revisión limitada, procedimientos acordados, propósito especial o cuentas del grupo). Falta: (a) sourcing de los 88
    informes del auditor que no están en ningún PDF nuestro (`node tools/auditoria.mjs --pendientes`, "FALTA EN EL PDF"); (f) que el pipeline
-   exija la línea al dar de alta un club (fos-pipeline); (g) en Ligas, la entidad organizadora (295).
+   exija la línea al dar de alta un club (fos-pipeline). En Ligas ya está la tarjeta "Las cuentas de la liga": cada entidad que entra
+   por el 295 aparece sola.
 295. BALANCES DE LAS ENTIDADES QUE ORGANIZAN LAS LIGAS (fos-ligas; aclaración de Guido, 2026-10-18). Hecho: Premier League 2024-25
    (Deloitte, sin salvedades) en `Ligas/` y en `data/auditoria/_ligas.js`. Sigue, en este orden: LaLiga, Lega Serie A, J.League, Liga
    Portugal, AFA, CBF, EFL y el resto. DFL: el Konzernabschluss pide login en el Unternehmensregister (gestión de Guido) y el sitio tiene
