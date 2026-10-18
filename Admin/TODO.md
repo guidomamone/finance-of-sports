@@ -24,7 +24,7 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 305, 254 + 243 · finanzas 281, 282, 294 · pipeline 290, 232, 279, 286, 287, 298 (c a p), 301, 302, 306, 307 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
+Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 305, 254 + 243 · finanzas 281, 282, 294 · pipeline 290, 232, 279, 286, 287, 298 (c a r), 301, 302, 306, 307 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
 datos-sourcing 273 (completar el dato), 252 · ligas 295 · Reino Unido (261) en su propia sesión · la principal: 291 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
