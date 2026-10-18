@@ -120,3 +120,10 @@ j) DATOS (no script): Estonia no tiene ligas en `data/leagues.js`; propuesto `ee
 - ESTONIA COMPLETA: los 54 años 2019-2025 de los 9 clubes en el sitio (Narva Trans 2021 el último). Listas 89, 89-rehacer, 91 y 91-rehacer archivadas en Admin/Archive/lotes/. Bélgica (listas 90 y 92) espera correr con las tools de main (mejoras b y o, compuerta de estadio y sponsor del 273).
 
 ## Después del tercer merge del 2026-10-18
+
+- Bélgica con las tools de main (b y o): verificar gratis sobre el lote 92 da 41 de 50 resultados que cierran (antes fallaban 27); el lote
+  saltea las 5 versiones originales que tienen -correction (Beerschot 2019, Lokeren-Temse 2023, Lommel SK 2021, Patro Eisden 2020 y 2024).
+  Lista 90 archivada (las 8 altas belgas 2025 ya en el sitio). Beerschot 2019 -correction: ajuste de cierre 30-06-2019 y lista lote-92-rehacer.
+- Mejora de script nueva (para el 298, s): periodo.mjs / localizar toman el INICIO del boekjaar como cierre cuando el ejercicio empieza en
+  junio (Beerschot 2019 -correction: "van 29-06-2018 tot 30-06-2019" -> ejercicio 2018) y localizar elige la columna "Vorig boekjaar"
+  (vacía): 0 filas extraídas, sin aviso de por qué.
