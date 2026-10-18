@@ -10,6 +10,8 @@
 //   1. el ejercicio que sigue al último real cargado (sin presupuestos) y si ya debería estar publicado: su cierre + MESES_PUBLICACION;
 //   2. la carpeta de Clubes/ sale de la evidencia de carga (Admin/carga-clubes/<clubId>.md, "desde Clubes/<País>/<Club>/") y la nota de
 //      sourcing es Admin/sourcing/<País>/<Club>.md; de la nota salen las URLs del canal (completas o `dominio/ruta`);
+//      DINAMARCA no usa página: el CVR de la nota y la API del registro (distribution.virk.dk), el informe anual del ejercicio que cierra
+//      en la fecha esperada; baja el PDF o el .xhtml (iXBRL) como aarsrapport-AAAA-MM-DD.<ext>, el nombre que ya usa la carpeta;
 //   3. baja cada página y busca links a PDF que nombran la temporada esperada ("2025-26", "2025/26", "2025_26", "2026" si el club cierra
 //      en diciembre). Un PDF que ya está en la carpeta (mismo nombre) no se vuelve a bajar.
 // Una página que no se pudo leer (captcha, se arma con JavaScript, sin URL en la nota, error) va a una lista aparte: la revisa la tarea
@@ -61,6 +63,24 @@ function urlsDe(carpeta) {
   // fuera: archivos, buscadores y agregadores que no son del club
   return [...new Set(out.map((u) => u.replace(/[.,;:]+$/, '')))].filter((u) => !/\.(pdf|xlsx?|zip)(\?|$)/i.test(u) && !/google\.|wikipedia\.|web\.archive|transfermarkt|worldfootball|bing\./i.test(u)).slice(0, 4);
 }
+// el CVR danés de la nota de sourcing ("CVR 83 83 99 10" o "CVR 83839910")
+function cvrDe(carpeta) {
+  const f = resolve(ROOT, 'Admin', 'sourcing', `${carpeta}.md`); if (!existsSync(f)) return null;
+  const m = readFileSync(f, 'utf8').match(/CVR[^0-9\n]{0,15}((?:\d\s?){8})/); return m ? m[1].replace(/\s/g, '') : null;
+}
+// el informe anual (AARSRAPPORT, no el semestral) del ejercicio que cierra en `fecha`: PDF si hay, si no el .xhtml (iXBRL)
+async function virkDk(cvr, fecha) {
+  try {
+    const r = await fetch(`http://distribution.virk.dk/offentliggoerelser/_search?q=cvrNummer:${cvr}&size=50&sort=regnskab.regnskabsperiode.slutDato:desc`, { headers: UA });
+    if (!r.ok) return { error: `HTTP ${r.status}` };
+    const hits = (await r.json()).hits?.hits || [];
+    const h = hits.find((x) => x._source?.regnskab?.regnskabsperiode?.slutDato === fecha); if (!h) return null;
+    const docs = (h._source.dokumenter || []).filter((d) => d.dokumentType === 'AARSRAPPORT');
+    const d = docs.find((x) => /pdf/.test(x.dokumentMimeType)) || docs.find((x) => /xhtml/.test(x.dokumentMimeType));
+    return d ? { url: d.dokumentUrl, ext: /pdf/.test(d.dokumentMimeType) ? 'pdf' : 'xhtml' } : null;
+  } catch (e) { return { error: e.message }; }
+}
+
 // cómo puede aparecer la temporada esperada en un link
 function formas(anio, calendario) {
   const a = anio - 1, yy = String(anio).slice(2), aa = String(a).slice(2);
@@ -100,15 +120,27 @@ async function main() {
     const mmdd = c.ci?.[ultimo] || cierreDelClub(CLUBS[id], anio).slice(5);
     const cierre = new Date(`${anio}-${mmdd}T00:00:00Z`); const debe = new Date(cierre); debe.setUTCMonth(debe.getUTCMonth() + MESES_PUBLICACION);
     if (debe > new Date()) { esperando.push(id); continue; }
+    const fs = [...formas(anio, mmdd.startsWith('12')), `${anio}-${mmdd}`]; // también la fecha de cierre ("aarsrapport-2025-06-30.xhtml")
     const carpeta = carpetaDe(id); const urls = carpeta ? urlsDe(carpeta) : [];
     const nombre = c.n || CLUBS[id]?.displayName || id;
+    // DINAMARCA: el canal es la API del registro (distribution.virk.dk, por CVR), no una página (skill club-sourcing, paises/Dinamarca.md)
+    const cvr = carpeta && String(c.c).toLowerCase() === 'dk' ? cvrDe(carpeta) : null;
+    if (cvr) {
+      const enCarpetaDk = existsSync(resolve(ROOT, 'Clubes', carpeta)) ? readdirSync(resolve(ROOT, 'Clubes', carpeta)) : [];
+      const fecha = `${anio}-${mmdd}`;
+      // la fecha de cierre o la temporada en el nombre (SønderjyskE pasó de junio a septiembre: "aarsrapport-2022-2023-09-30-transicion")
+      if (enCarpetaDk.some((f) => fs.some((x) => f.toLowerCase().includes(x.toLowerCase())))) { yaBajado.push({ id, nombre: c.n || CLUBS[id]?.displayName || id, anio }); continue; }
+      const doc = await virkDk(cvr, fecha);
+      if (doc?.error) { aMano.push({ id, nombre, anio, motivo: `API del registro danés: ${doc.error}`, urls: [] }); continue; }
+      if (doc && !(registro[id]?.anio === anio && registro[id].pdfs.includes(doc.url))) { encontrados.push({ id, nombre, anio, carpeta, pdfs: [doc.url], nombres: { [doc.url]: `aarsrapport-${fecha}.${doc.ext}` } }); }
+      continue;
+    }
     if (!carpeta || !urls.length) { aMano.push({ id, nombre, anio, motivo: carpeta ? `sin URL en Admin/sourcing/${carpeta}.md` : 'sin carpeta en la evidencia de carga', urls: [] }); continue; }
-    const fs = formas(anio, mmdd.startsWith('12'));
     const yaAvisados = new Set(registro[id]?.anio === anio ? registro[id].pdfs : []);
     const enCarpeta = new Set(existsSync(resolve(ROOT, 'Clubes', carpeta)) ? readdirSync(resolve(ROOT, 'Clubes', carpeta)).map((f) => f.toLowerCase()) : []);
     // si la carpeta ya tiene un documento de esa temporada (con cualquier nombre: Chapecoense "demonstracoes-contabeis-2022.pdf"), no es
     // nuevo: está bajado y falta cargarlo, que es otro trabajo (node tools/estado.mjs)
-    if ([...enCarpeta].some((f) => /\.pdf$/.test(f) && fs.some((x) => f.includes(x.toLowerCase())))) { yaBajado.push(id); continue; }
+    if ([...enCarpeta].some((f) => /\.pdf$/.test(f) && fs.some((x) => f.includes(x.toLowerCase())))) { yaBajado.push({ id, nombre: c.n || CLUBS[id]?.displayName || id, anio }); continue; }
     const fallas = []; const nuevos = [];
     for (const u of urls) {
       await dormir(1000);
@@ -134,6 +166,7 @@ async function main() {
   for (const e of encontrados) console.log(`NUEVO ${e.nombre} (${e.id}) ejercicio ${e.anio}: ${e.pdfs.join(' | ')}`);
   console.log(`\n${encontrados.length} clubes con un PDF nuevo; ${aMano.length} para revisar con el navegador; ${esperando.length} todavía en plazo (cierre + ${MESES_PUBLICACION} meses); ${yaBajado.length} ya tienen el PDF en su carpeta (falta cargarlo).`);
   for (const a of aMano) console.log(`  A MANO ${a.nombre} (${a.id}) ejercicio ${a.anio}: ${a.motivo}${a.urls.length ? ` — ${a.urls.join(' ; ')}` : ''}`);
+  if (yaBajado.length) console.log(`  YA EN SU CARPETA, SIN CARGAR: ${yaBajado.map((y) => `${y.nombre} ${y.anio}`).join(', ')}`);
 
   if (ESCRIBIR) {
     const lineas = [];
@@ -141,15 +174,18 @@ async function main() {
       const dir = resolve(ROOT, 'Clubes', e.carpeta); mkdirSync(dir, { recursive: true }); const bajados = [];
       for (const u of e.pdfs) {
         const r = await bajar(u, true);
-        if (r.error || !r.buf || (!/pdf/i.test(r.tipo) && r.buf.subarray(0, 4).toString() !== '%PDF')) continue;
+        const dado = e.nombres?.[u];
+        if (r.error || !r.buf || (!dado?.endsWith('.xhtml') && !/pdf/i.test(r.tipo) && r.buf.subarray(0, 4).toString() !== '%PDF')) continue;
         // nombre en ASCII y minúscula, como el resto de Clubes/ ("Demonstrações Contábeis 2025 FAF(1).pdf" -> "demonstracoes-contabeis-2025-faf-1.pdf")
-        let nom = basename(decodeURIComponent(new URL(u).pathname)).replace(/\.pdf$/i, '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9._-]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') + '.pdf';
+        let nom = dado || basename(decodeURIComponent(new URL(u).pathname)).replace(/\.pdf$/i, '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9._-]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') + '.pdf';
+        if (dado) nom = dado;
         if (existsSync(resolve(dir, nom))) continue; // nunca se pisa un PDF (no hay git para recuperarlo)
         writeFileSync(resolve(dir, nom), r.buf); bajados.push(`Clubes/${e.carpeta}/${nom}`);
       }
       lineas.push(`- Ejercicio ${e.anio} de ${e.nombre} — ${e.pdfs[0]} — encontrado por la tarea mensual el ${HOY}${bajados.length ? `; bajado a ${bajados.join(', ')}` : ' (no se pudo bajar: revisar el link)'}`);
       registro[e.id] = { anio: e.anio, pdfs: [...new Set([...(registro[e.id]?.anio === e.anio ? registro[e.id].pdfs : []), ...e.pdfs])], revisado: HOY };
     }
+    if (yaBajado.length) lineas.push(`- Ya bajados y sin cargar (para el onboarding): ${yaBajado.map((y) => `${y.nombre} ${y.anio}`).join(', ')}`);
     for (const a of aMano) lineas.push(`- A revisar con el navegador: ${a.nombre}, ejercicio ${a.anio} — ${a.motivo}${a.urls.length ? ` (${a.urls.join(' ; ')})` : ''}`);
     escribirReadme(lineas);
     // un PDF nuevo en Clubes/ cambia data/faltantes/ (cuenta lo que está "en mano"): se regenera, sube ASSET_V (un archivo de data/
@@ -175,6 +211,10 @@ function escribirReadme(lineas) {
   if (!md.includes(TIT)) {
     const i = md.indexOf('\n---\n\n## Índice de países'); if (i < 0) throw new Error('no encontré el "---" antes de "## Índice de países" en Admin/sourcing/README.md');
     md = md.slice(0, i) + `\n\n${TIT}\n\nLo escribe tools/ejercicios-nuevos.mjs una vez por mes (to-do 252): el ejercicio que sigue al último cargado de cada club, si ya\nsalió. Lo nuevo va arriba. Un PDF bajado queda en su carpeta de Clubes/ y espera el onboarding.\n\n${bloque}` + md.slice(i);
+  } else if (md.includes(`\n### ${HOY}\n`)) {
+    // una segunda corrida el mismo día reemplaza el bloque de ese día
+    const i = md.indexOf(`\n### ${HOY}\n`) + 1; const fin = [md.indexOf('\n### ', i + 4), md.indexOf('\n---\n', i)].filter((x) => x > 0).sort((a, b) => a - b)[0];
+    md = md.slice(0, i) + bloque + md.slice(fin);
   } else {
     const i = md.indexOf(TIT); const j = md.indexOf('\n### ', i); const k = md.indexOf('\n---\n', i);
     const pos = j >= 0 && j < k ? j + 1 : k + 1;

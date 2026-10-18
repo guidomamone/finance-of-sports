@@ -131,3 +131,20 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
 
 - 252: las 37 notas de sourcing sin URL del canal (la tarea las marca "a revisar" todos los meses): agregarles la URL.
 - 252: los 14 clubes con el PDF del ejercicio siguiente ya bajado y sin cargar (los lista `node tools/ejercicios-nuevos.mjs`): onboarding.
+
+## Después del tercer merge del 2026-10-18
+
+- **252: Dinamarca sin URL, resuelto por el canal y no por la nota.** El canal danés es la API del registro (`distribution.virk.dk`, por
+  CVR), no una página. `ejercicios-nuevos.mjs` saca el CVR de la nota ("CVR 83 83 99 10", con espacios) y pide el informe anual
+  (AARSRAPPORT, no el semestral) del ejercicio que cierra en la fecha esperada; lo baja como `aarsrapport-AAAA-MM-DD.<pdf|xhtml>`, el
+  nombre que ya usa la carpeta. "Ya bajado" reconoce también la fecha de cierre o la temporada en el nombre (SønderjyskE pasó de junio a
+  septiembre: "aarsrapport-2022-2023-09-30-transicion"). Los 11 clubes daneses ya tienen el informe del ejercicio siguiente en su carpeta.
+- El script nombra los clubes con el PDF ya bajado y sin cargar (consola y una línea del README), y una segunda corrida el mismo día
+  reemplaza el bloque de ese día. Corrida de hoy: 26 ya bajados sin cargar, 34 a revisar con el navegador (antes 45), 0 nuevos.
+
+### Qué queda (TODO)
+
+- 252: notas sin URL del canal (Portugal 9, Argentina 4, Inglaterra 3, Brasil 3, Alemania 2, Perú, Italia y Chile 1; Colombia 2 es de
+  fos-onboarding). Inglaterra y Alemania probablemente sean de registro (Companies House, Unternehmensregister), como Dinamarca: canal
+  por API en el script, no URL.
+- 26 clubes con el PDF del ejercicio siguiente ya bajado y sin cargar (los lista `node tools/ejercicios-nuevos.mjs`): onboarding.
