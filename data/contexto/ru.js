@@ -10,9 +10,9 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Akhmat-Arena","capacidad":30000,"sponsor":"Akhmat Foundation","marca":"Joma","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
   },
   'akrontolyatti-ru': {
-    2021: {"estadio":"Zhigulyovsk","capacidad":1565,"temporada":"2021–22 Russian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376304530"},
-    2022: {"estadio":"Zhigulyovsk","capacidad":1565,"temporada":"2022–23 Russian First League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1306958477"},
-    2023: {"estadio":"Zhigulyovsk","capacidad":3065,"temporada":"2023–24 Russian First League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1300491265"},
+    2021: {"estadio":"Kristall (Zhigulyovsk)","capacidad":1565,"temporada":"2021–22 Russian First Division","fuente":"https://www.vedomosti.ru/sport/football/articles/2023/08/18/990832-chastnii-klub-iz-tolyatti-rvetsya-v-rpl"},
+    2022: {"estadio":"Kristall (Zhigulyovsk)","capacidad":1565,"temporada":"2022–23 Russian First League","fuente":"https://www.vedomosti.ru/sport/football/articles/2023/08/18/990832-chastnii-klub-iz-tolyatti-rvetsya-v-rpl"},
+    2023: {"estadio":"Kristall (Zhigulyovsk)","capacidad":3065,"temporada":"2023–24 Russian First League","fuente":"https://www.vedomosti.ru/sport/football/articles/2023/08/18/990832-chastnii-klub-iz-tolyatti-rvetsya-v-rpl"},
     2024: {"estadio":"Solidarnost Samara Arena","capacidad":44918,"sponsor":"Fonbet","marca":"Jögel","temporada":"2024–25 Russian Premier League","fuente":"https://www.vedomosti.ru/sport/football/articles/2025/01/03/1084766-debyut-goda-chastnii-klub-akron-vorvalsya-v-premer-ligu-i-obigral-chempiona"},
     2025: {"estadio":"Solidarnost Samara Arena","capacidad":44918,"sponsor":"Fonbet","marca":"Jögel","temporada":"2025–26 Russian Premier League","fuente":"https://www.vedomosti.ru/sport/football/articles/2025/01/03/1084766-debyut-goda-chastnii-klub-akron-vorvalsya-v-premer-ligu-i-obigral-chempiona"},
   },
