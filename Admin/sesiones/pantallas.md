@@ -64,3 +64,10 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
   rebota a Inicio) y el resultado "Grupos multiclub" del buscador (`renderBusqueda()` en `js/selector.js`, por nombre o alias; no aparece
   en Comparar), que cierra el panel y llama a `GRUPO_VIEW.abrir(id)`. Probado: el link abre BlueCo sin club, el buscador lo encuentra
   con "blue", y "atrás" vuelve. ASSET_V 1263.
+
+### Qué queda (para TODO)
+
+- To-do 273 (aviso de fos-datos, 2026-10-18): el estadio y el sponsor de cada club y ejercicio tienen que verse en Finanzas (Guido: "tiene
+  que estar en finanzas"; link de salto, bloque o fila de la ficha, a decidir con él). Datos por club y temporada: estadio, capacidad,
+  sponsor de camiseta (frente) y marca técnica, con el link a la versión exacta de la página de Wikipedia de la temporada; sin monto. Los
+  junta fos-datos y todavía no existen: no armar la pantalla hasta que fos-datos avise el formato y el archivo.
