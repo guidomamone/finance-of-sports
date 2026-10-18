@@ -50,6 +50,8 @@
 //   node tools/entidades.mjs            verifica y escribe data/entidades/
 //   node tools/entidades.mjs --check    verifica y compara sin escribir (código 1 si falla o quedó viejo; lo corre audit.js)
 //   node tools/entidades.mjs --print    verifica e imprime la estructura de cada club
+//   node tools/entidades.mjs --con <archivo> [--print]   verifica el registro más un borrador, sin escribir (los números de línea
+//                                       que pasan del largo del registro son del borrador)
 // ============================================================================
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, rmSync } from 'node:fs';
 import { resolve, join } from 'node:path';
@@ -63,7 +65,7 @@ const REGISTRO = 'Admin/registros/entidades.jsonl';
 const DESCARTADOS = 'Admin/registros/documentos-descartados.txt';
 const OUT = join(ROOT, 'data/entidades');
 const args = process.argv.slice(2);
-const CHECK = args.includes('--check'), PRINT = args.includes('--print');
+const CHECK = args.includes('--check') || args.includes('--con'), PRINT = args.includes('--print');
 
 const FORMAS = new Set(['club', 'sociedad', 'holding', 'asociacion', 'fundacion', 'fondo', 'persona']);
 const RELS = new Set(['controla', 'participa', 'vinculada']);
@@ -73,7 +75,10 @@ const errores = [], avisos = [];
 const err = (n, msg) => errores.push(`${REGISTRO}:${n}: ${msg}`);
 
 // --- leer el registro ---------------------------------------------------------------------------------------------------------------
-const lineas = existsSync(join(ROOT, REGISTRO)) ? readFileSync(join(ROOT, REGISTRO), 'utf8').split('\n') : [];
+// --con <archivo>: verifica el registro MÁS las líneas de ese archivo (un borrador de un subagente) sin escribir nada.
+const CON = (() => { const i = args.indexOf('--con'); return i >= 0 ? args[i + 1] : null; })();
+const lineas = [...(existsSync(join(ROOT, REGISTRO)) ? readFileSync(join(ROOT, REGISTRO), 'utf8').split('\n') : []),
+  ...(CON ? readFileSync(resolve(CON), 'utf8').split('\n') : [])];
 const entidades = new Map(), relaciones = [], cargas = [], ingresos = [];
 lineas.forEach((l, i) => {
   const n = i + 1;
