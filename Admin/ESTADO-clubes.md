@@ -132,12 +132,12 @@ COLOMBIA (12)
 ALEMANIA (11)
   1. FC Köln                2 ejercicios (2023/2024 a 2024/2025), balance, EUR
   Bayern Munich             4 ejercicios (2020/2021, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
-  Borussia Dortmund         2 ejercicios (2023/2024 a 2024/2025), balance, EUR, sin deuda/caja
+  Borussia Dortmund         2 ejercicios (2023/2024 a 2024/2025), balance, EUR
   Borussia Mönchengladbach  2 ejercicios (2023 a 2024), balance, EUR
   Eintracht Frankfurt       2 ejercicios (2023/2024 a 2024/2025), balance, EUR
   FC Augsburg               2 ejercicios (2023/2024 a 2024/2025), balance, EUR
   Hamburger SV              2 ejercicios (2023/2024 a 2024/2025), balance, EUR
-  RB Leipzig                4 ejercicios (2021/2022 a 2024/2025), balance, EUR, sin deuda/caja
+  RB Leipzig                4 ejercicios (2021/2022 a 2024/2025), balance, EUR
   TSG Hoffenheim            2 ejercicios (2023/2024 a 2024/2025), balance, EUR
   VfB Stuttgart             2 ejercicios (2023 a 2024), balance, EUR
   Werder Bremen             3 ejercicios (2022/2023 a 2024/2025), balance, EUR

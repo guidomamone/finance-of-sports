@@ -124,6 +124,12 @@ Ejercicio 2025 (01.07.2024-30.06.2025). Fuente: jahresabschluss-2024-25.md, pág
 (Anhang 4.1, con la corrección de "Sonstigem" documentada en el comentario de cabecera).
 ```
 
+### Meta
+
+```text
+tools/caja-deuda.mjs (2026-10-18): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): (to-do 263) el mismo valor que el ajuste sin año del 2026-10-17, ahora atado al año 2025: el PDF alimenta 2024 y 2025. Verbindlichkeiten aus Darlehen (Gesellschafter, Red Bull GmbH) TEUR 162.104 al 30/06/2025.; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): (to-do 263) el mismo valor que el ajuste sin año del 2026-10-17, ahora atado al año 2025: el PDF alimenta 2024 y 2025. Kassenbestand und Guthaben bei Kreditinstituten 714.561,87 EUR al 30/06/2025 (RB Leipzig GmbH, HGB individual); el valor va en miles, como el ajuste sin año.
+```
+
 ## 2024
 
 ### Ingresos
@@ -149,6 +155,12 @@ Ejercicio 2023 (01.07.2022-30.06.2023). Fuente: jahresabschluss-2022-23.md, pág
 ```text
 Ejercicio 2022 (01.07.2021-30.06.2022). Fuente: jahresabschluss-2021-22.md, pág. 5 (GuV) y pág.
 8 (Anhang 4.1, SOLO 3 categorías este ejercicio, mismo caso que 2022/23, ver comentario de cabecera).
+```
+
+### Meta
+
+```text
+tools/caja-deuda.mjs (2026-10-18): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Verbindlichkeiten aus Darlehen (Gesellschafter) TEUR 99.905. Darlehen del Gesellschafter (Red Bull GmbH) dentro de 'Verbindlichkeiten gegenüber Unternehmen mit Beteiligungsverhältnis' (la nota las identifica como Verbindlichkeiten aus Darlehen, besichert por Transferforderungen); excluidos Vorabdividende, Lieferungen y Leistungen, Verbindlichkeiten aus Transfer. Balance sin deudas con bancos. (valor en la escala del documento, miles: el ajuste se multiplica por ella); cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): Claude 2026-10-17 (leído en el balance por subagente Sonnet, criterio de deuda financiera): Kassenbestand und Guthaben bei Kreditinstituten 4.104.803,48 EUR (30/06/2022). RasenBallsport Leipzig GmbH (cuenta única HGB, sin Konzern); EUR completos. (valor en la escala del documento, miles: el ajuste se multiplica por ella)
 ```
 
 ## Gestiones

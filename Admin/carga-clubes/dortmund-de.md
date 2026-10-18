@@ -84,6 +84,10 @@ Ejercicio 2025 (01.07.2024-30.06.2025). Fuente: geschaeftsbericht-2024-25.md, p�
 Financial result = 14.334 + 1.974 - 3.954 = 12.354 (documento redondea a 12.355). tax = -2.929 - 0.410.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-18): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): (to-do 263) el mismo valor que el ajuste sin año del 2026-10-17, ahora atado al año 2025: el PDF alimenta 2024 y 2025. Financial liabilities 34,173 TEUR al 30/06/2025 = no corriente 29,025 + corriente 5,148 (excluye lease liabilities).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): (to-do 263) el mismo valor que el ajuste sin año del 2026-10-17, ahora atado al año 2025: el PDF alimenta 2024 y 2025. Bank balances and cash-in-hand 20,633 TEUR al 30/06/2025 (Konzern, EUR '000).
+```
+
 ## 2024
 
 ### Ingresos
@@ -98,6 +102,10 @@ Ejercicio 2024 (01.07.2023-30.06.2024). Fuente: geschaeftsbericht-2024-25.md, co
 ```text
 Financial result HGB = Income from p&l transfer agreements (17.570) + Other interest income
 (2.686) - Interest expenses (5.756) = 14.500. tax = Taxes on income (-4.319) + Other taxes (-0.243).
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-18): grossDebt escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): (to-do 263) comparativo del informe 2024/25: financial liabilities 28,701 TEUR al 30/06/2024 = no corriente 26,077 + corriente 2,624, mismo criterio que 2025 (excluye lease liabilities).; cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-17): (to-do 263) comparativo del informe 2024/25: Bank balances and cash-in-hand 4,360 TEUR al 30/06/2024 (Konzern, EUR '000).
 ```
 
 ## Gestiones
