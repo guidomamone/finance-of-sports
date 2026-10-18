@@ -60,8 +60,9 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
 - **To-do 273: Rusia por fuera de Wikipedia** (ok de Guido: web del club o fuente equivalente). En `tools/contexto-manual.json`, 11
   ejercicios: Krylia Sovetov 2021-2025 y Akron 2024-2025 (Solidarnost Samara Arena, 44.918; Gran Enciclopedia Rusa y Vedomosti), Dynamo
   Makhachkala 2024-2025 (Anzhi-Arena, sin capacidad: championat dice 28.000 y sport-express 30.000), Sochi 2024 (Fisht) y Spartak 2022
-  (Otkritie Bank Arena); Akron 2021-2023 corregido a "Kristall (Zhigulyovsk)" (la tabla daba la ciudad; Vedomosti). championat.com no sirve como fuente por temporada (muestra el nombre de hoy en temporadas viejas). Estadio: 86%
-  del total; Rusia, 64 de 66. ASSET_V 1261. Un dato manual guarda su fuente aparte (`fuenteManual` y `manual`: los campos que puso) y la de Wikipedia sigue en `fuente`.
+  (Otkritie Bank Arena); Akron 2021-2023 corregido a "Kristall (Zhigulyovsk)" (la tabla daba la ciudad; Vedomosti). championat.com no sirve como fuente por temporada (muestra el nombre de hoy en temporadas viejas). Después, con la pista de
+  Gemini que trajo Guido verificada contra fuentes: Spartak 2023 (ejercicio = año calendario 2023, "Otkritie Bank Arena" hasta el
+  31/12/2023 según TASS/fomag) y Baltika 2024 (Rostec Arena, dp.ru). Rusia: estadio en todos los ejercicios. ASSET_V 1261. Un dato manual guarda su fuente aparte (`fuenteManual` y `manual`: los campos que puso) y la de Wikipedia sigue en `fuente`.
 
 ## Qué queda (TODO)
 
@@ -71,9 +72,6 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
   su histórico y qué equipos sponsorea hoy: los datos están en `data/sponsors.js`; falta la pantalla). Lo cargado a mano en
   `contexto-manual.json` todavía no entra al índice de sponsors (está por año de ejercicio, no por liga-temporada). `data/sponsors.js`
   pesa ~650 KB: si la pantalla lo carga entero, partirlo (por letra o por liga).
-- Rusia: 2 ejercicios sin estadio. Spartak 2023 (temporada 2023-24: el contrato de "Otkritie Bank Arena" vencía a fines de 2023 y no se
-  encontró la fecha oficial del cambio a "Lukoil Arena") y Baltika 2024 (2024-25: no se sabe si jugó en el estadio Baltika o en la Rostec
-  Arena). premierliga.ru pide captcha.
 - La skill `club-or-year-onboarding` y `Admin/PIPELINE.md` tienen que nombrar la compuerta nueva de `cargar.mjs` (la skill, con ok de Guido).
 
 ## Qué deja de ser cierto en ESTADO

@@ -19,7 +19,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'baltikakaliningrad-ru': {
     2022: {"estadio":"Arena Baltika","capacidad":35212,"temporada":"2022–23 Russian First League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1306958477"},
     2023: {"estadio":"Kaliningrad Stadium","capacidad":35016,"sponsor":"Rostec","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
-    2024: {"temporada":"2024–25 Russian First League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341848735"},
+    2024: {"estadio":"Rostec Arena","temporada":"2024–25 Russian First League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341848735","fuenteManual":"https://www.dp.ru/a/2024/06/04/besprozvannih-dogovorilsja","manual":["estadio"]},
     2025: {"estadio":"Rostec Arena","capacidad":33399,"sponsor":"Rostec","marca":"Jako","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
   },
   'cskamoscow-ru': {
@@ -100,7 +100,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'spartakmoscow-ru': {
     2022: {"estadio":"Otkritie Bank Arena","sponsor":"Lukoil","marca":"Nike","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016","fuenteManual":"https://www.sport-express.ru/football/rfpl/news/1741358/","manual":["estadio"]},
-    2023: {"sponsor":"Lukoil","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
+    2023: {"estadio":"Otkritie Bank Arena","sponsor":"Lukoil","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312","fuenteManual":"https://fomag.ru/news-streem/lukoyl-podal-zayavku-na-registratsiyu-tovarnogo-znaka-lukoyl-arena/","manual":["estadio"]},
     2024: {"estadio":"Lukoil Arena","capacidad":44929,"sponsor":"Lukoil","marca":"Jögel","temporada":"2024–25 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378137266"},
     2025: {"estadio":"Lukoil Arena","capacidad":44897,"sponsor":"Lukoil","marca":"Jögel","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
   },
