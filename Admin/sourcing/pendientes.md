@@ -439,6 +439,25 @@ GENERADO por `node tools/faltantes-liga.mjs`: no editar a mano. Club-años que j
 - Numancia — sin-buscar: 2020 (es-segunda)
 - Ponferradina — sin-buscar: 2020 (es-segunda)
 
+## Estonia (16 clubes, 31 club-años)
+
+- Vaprus — sin-buscar: 2025 (ee-meistriliiga), 2024 (ee-meistriliiga), 2023 (ee-meistriliiga), 2022 (ee-meistriliiga), 2021 (ee-meistriliiga)
+- Elva — sin-buscar: 2024 (ee-esiliiga), 2021 (ee-esiliiga)
+- FCI Levadia U21 — sin-buscar: 2024 (ee-esiliiga), 2021 (ee-esiliiga)
+- Flora U21 — sin-buscar: 2024 (ee-esiliiga), 2021 (ee-esiliiga)
+- Nõmme United — sin-buscar: 2024 (ee-meistriliiga), 2021 (ee-esiliiga)
+- Paide Linnameeskond U21 — sin-buscar: 2024 (ee-esiliiga), 2021 (ee-esiliiga)
+- Tabasalu — sin-buscar: 2024 (ee-esiliiga)
+- Tallinn — sin-buscar: 2024 (ee-esiliiga)
+- Tallinna Kalev U21 — sin-buscar: 2024 (ee-esiliiga)
+- Viimsi — sin-buscar: 2024 (ee-esiliiga)
+- Welco — sin-buscar: 2024 (ee-esiliiga), 2021 (ee-esiliiga)
+- Legion — sin-buscar: 2022 (ee-meistriliiga), 2021 (ee-meistriliiga), 2020 (ee-meistriliiga)
+- Maardu Linnameeskond — sin-buscar: 2021 (ee-esiliiga), 2019 (ee-meistriliiga)
+- Pärnu Jalgpalliklubi — sin-buscar: 2021 (ee-esiliiga)
+- Tammeka U21 — sin-buscar: 2021 (ee-esiliiga)
+- Tulevik — sin-buscar: 2021 (ee-meistriliiga), 2020 (ee-meistriliiga), 2019 (ee-meistriliiga)
+
 ## Grecia (54 clubes, 168 club-años)
 
 - Iraklis — sin-buscar: 2025 (gr-superleague2), 2024 (gr-superleague2), 2023 (gr-superleague2), 2022 (gr-superleague2), 2019 (gr-superleague2), 2017 (gr-superleague), 2016 (gr-superleague)

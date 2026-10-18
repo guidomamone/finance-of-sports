@@ -29,3 +29,5 @@ ninguno entre los descendidos de esa temporada (Beerschot y Kortrijk, 16° y
 15° en la fase regular, eliminados en los playoffs de descenso).
 ============================================================================
 ```
+
+- 2026-10-18 (rama onboarding, lotes 90): temporada 2024-25 (ejercicio 2025) de las 8 altas, de la página "2024–25 Belgian Pro League" y "2024–25 Challenger Pro League" de en.wikipedia (revisión del alta, subagente Sonnet): Beerschot y OH Leuven en la Pro League; Lierse SK, Lokeren-Temse, Lommel SK, Patro Eisden, RAAL La Louvière y RWDM en la Challenger Pro League.

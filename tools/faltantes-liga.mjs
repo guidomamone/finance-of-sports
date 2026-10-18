@@ -43,7 +43,7 @@ const HOY = new Date();
 // País (carpeta de Clubes/ y de Admin/sourcing/) de cada iso2 de las listas. Inglaterra trae clubes galeses en sus ligas.
 const PAISES = {
   ar: ['Argentina'], at: ['Austria'], be: ['Bélgica'], br: ['Brasil'], ch: ['Suiza'], cl: ['Chile'], cn: ['China'], co: ['Colombia'],
-  cz: ['República Checa'], de: ['Alemania'], dk: ['Dinamarca'], ec: ['Ecuador'], es: ['España'], gb: ['Inglaterra', 'Gales'],
+  cz: ['República Checa'], de: ['Alemania'], dk: ['Dinamarca'], ec: ['Ecuador'], ee: ['Estonia'], es: ['España'], gb: ['Inglaterra', 'Gales'],
   gr: ['Grecia'], hr: ['Croacia'], it: ['Italia'], jp: ['Japón'], kr: ['Corea del Sur'], mx: ['México'], nl: ['Países Bajos'],
   no: ['Noruega'], pe: ['Perú'], pt: ['Portugal'], ru: ['Rusia'], tr: ['Turquía'],
 };

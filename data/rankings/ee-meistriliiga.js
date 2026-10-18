@@ -1,0 +1,36 @@
+// GENERADO por tools/generate-rankings.js: no editar a mano (el formato, en la cabecera del generador).
+window.RANKINGS = window.RANKINGS || {};
+window.RANKINGS["ee-meistriliiga"] = {
+  2025: {
+    leagueSize: 10,
+    clubs: [
+      { id:"paidelinnameeskond-ee", revenue:4.817, reportType:"official_balance_sheet",
+        sourceId:"paidelinnameeskond-ee-aruanne-2025",
+        mix:[["Cuotas Sociales",0.181],["Comercial / Sponsors",0.558],["Estadio",0.042],["Televisión",0.088],["Premios por competencias",1.514],["Venta de Jugadores",1.487],["Otros ingresos",0.947]] },
+      { id:"floratallinn-ee", revenue:3.925, reportType:"official_balance_sheet",
+        sourceId:"floratallinn-ee-aruanne-2025",
+        mix:[["Cuotas Sociales",1.277],["Comercial / Sponsors",0.321],["Estadio",0.094],["Televisión",0.006],["Premios por competencias",1.196],["Venta de Jugadores",0.095],["Otros ingresos",0.936]] },
+      { id:"fcilevadia-ee", revenue:3.144, reportType:"official_balance_sheet",
+        sourceId:"fcilevadia-ee-aruanne-2025",
+        mix:[["Cuotas Sociales",0],["Comercial / Sponsors",0.32],["Estadio",0.08],["Televisión",0.016],["Premios por competencias",1.315],["Venta de Jugadores",0.088],["Otras secciones deportivas",0.676],["Otros ingresos",0.648]] },
+      { id:"nommekalju-ee", revenue:2.979, reportType:"official_balance_sheet",
+        sourceId:"nommekalju-ee-aruanne-2025",
+        mix:[["Cuotas Sociales",0.304],["Comercial / Sponsors",0.206],["Estadio",0.024],["Televisión",0.016],["Premios por competencias",1.345],["Venta de Jugadores",0.685],["Otras secciones deportivas",0.003],["Otros ingresos",0.395]] },
+      { id:"tallinnakalev-ee", revenue:2.79, reportType:"official_balance_sheet",
+        sourceId:"tallinnakalev-ee-aruanne-2025",
+        mix:[["Cuotas Sociales",0.984],["Comercial / Sponsors",0.312],["Estadio",0.14],["Venta de Jugadores",0.063],["Otros ingresos",1.292]] },
+      { id:"tartutammeka-ee", revenue:2.587, reportType:"official_balance_sheet",
+        sourceId:"tartutammeka-ee-aruanne-2025",
+        mix:[["Cuotas Sociales",0.588],["Comercial / Sponsors",0.409],["Estadio",0.013],["Premios por competencias",0.531],["Venta de Jugadores",0.056],["Otros ingresos",0.991]] },
+      { id:"narvatrans-ee", revenue:1.179, reportType:"official_balance_sheet",
+        sourceId:"narvatrans-ee-aruanne-2025",
+        mix:[["Cuotas Sociales",0.118],["Comercial / Sponsors",0.07],["Estadio",0.007],["Venta de Jugadores",0.274],["Otras secciones deportivas",0.306],["Otros ingresos",0.405]] },
+      { id:"kuressaare-ee", revenue:0.867, reportType:"official_balance_sheet",
+        sourceId:"kuressaare-ee-aruanne-2025",
+        mix:[["Cuotas Sociales",0.237],["Comercial / Sponsors",0.014],["Estadio",0.006],["Premios por competencias",0.263],["Otros ingresos",0.346]] },
+      { id:"harjujklaagri-ee", revenue:0.463, reportType:"official_balance_sheet",
+        sourceId:"harjujklaagri-ee-aruanne-2025",
+        mix:[["Comercial / Sponsors",0.092],["Venta de Jugadores",0.022],["Otros ingresos",0.349]] },
+    ],
+  },
+};
