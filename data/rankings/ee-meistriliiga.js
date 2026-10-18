@@ -64,6 +64,15 @@ window.RANKINGS["ee-meistriliiga"] = {
         mix:[["Comercial / Sponsors",0.187]] },
     ],
   },
+  2022: {
+    leagueSize: 10,
+    sinDato: ["fcilevadia-ee","floratallinn-ee","kuressaare-ee","narvatrans-ee","nommekalju-ee","tallinnakalev-ee","tartutammeka-ee"],
+    clubs: [
+      { id:"paidelinnameeskond-ee", revenue:2.475, reportType:"official_balance_sheet",
+        sourceId:"paidelinnameeskond-ee-aruanne-2022",
+        mix:[["Cuotas Sociales",0.1],["Comercial / Sponsors",0.612],["Estadio",0.064],["Televisión",0.014],["Premios por competencias",1.04],["Venta de Jugadores",0.342],["Otros ingresos",0.303]] },
+    ],
+  },
   2021: {
     leagueSize: 10,
     sinDato: ["fcilevadia-ee","floratallinn-ee","narvatrans-ee","nommekalju-ee","tartutammeka-ee"],

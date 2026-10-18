@@ -189,7 +189,7 @@ window.CLUB_INDEX = {
   "osasuna-es": {"n":"CA Osasuna","c":"ES","q":"full","y":2,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "osijek-hr": {"n":"Osijek","c":"HR","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "pacosdeferreira-pt": {"n":"Paços de Ferreira","c":"PT","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2020,"official_balance_sheet"]]},
-  "paidelinnameeskond-ee": {"n":"Paide Linnameeskond","c":"EE","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"]]},
+  "paidelinnameeskond-ee": {"n":"Paide Linnameeskond","c":"EE","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"]]},
   "palmeiras-br": {"n":"Palmeiras","c":"BR","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "panathinaikos-gr": {"n":"Panathinaikos","c":"GR","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "panetolikos-gr": {"n":"Panetolikos","c":"GR","q":"full","y":8,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"]]},

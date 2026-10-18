@@ -6,5 +6,5 @@ window.ESTIMADOS["ar-primeranacional"] = {
   2018: [{"id":"losandes-ar","revenue":1.335,"lo":0.742,"hi":2.54,"caso":"afuera","error":26,"de":[2020]}],
   2019: [{"id":"losandes-ar","revenue":1.357,"lo":0.754,"hi":2.582,"caso":"afuera","error":26,"de":[2020]}],
   2022: [{"id":"instituto","revenue":18.567,"lo":10.319,"hi":35.328,"caso":"afuera","error":26,"de":[2024]}],
-  2023: [{"id":"racing","revenue":58.159,"lo":38.93,"hi":88.055,"caso":"entre","error":19,"de":[2021,2024]}],
+  2023: [{"id":"racing","revenue":58.159,"lo":38.958,"hi":87.972,"caso":"entre","error":19,"de":[2021,2024]}],
 };
