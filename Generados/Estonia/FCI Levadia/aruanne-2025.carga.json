@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2025.pdf",
- "generado": "2026-10-18T13:52:21.551Z",
+ "generado": "2026-10-18T14:04:49.714Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (fcilevadia-ee)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "7 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"UEFA toetused\" -> competition_bonus 0.6; \"Mängijatele makstav sportlasetoetus\" -> wages_squad 0.7; \"Mängijatele makstud stipendiumid\" -> wages_squad 0.55; \"Trükised jm materjalid\" -> match_organisation_expense 0.5; \"Klubile kuuluvate ja tema poolt renditud\" -> admin_general_expense 0.65"
   }
  ],
  "avisos": [
@@ -117,9 +113,9 @@
     "amountNative": 1.119198,
     "disclosureLevel": "aggregated",
     "_pag": 12,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Riigi ja/või KOV toetused",
@@ -229,9 +225,9 @@
     "amountNative": -0.422455,
     "disclosureLevel": "aggregated",
     "_pag": 5,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Mängijatele makstud stipendiumid",
@@ -239,9 +235,9 @@
     "amountNative": -0.0554,
     "disclosureLevel": "aggregated",
     "_pag": 5,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Muu personali palgakulu",
@@ -279,9 +275,9 @@
     "amountNative": -0.010105,
     "disclosureLevel": "aggregated",
     "_pag": 12,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Muud klassifitseerimata kodumängu korralduskulud",
@@ -339,9 +335,9 @@
     "amountNative": -0.178571,
     "disclosureLevel": "aggregated",
     "_pag": 12,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Klubi administeerimiskulud",
@@ -369,9 +365,9 @@
     "amountNative": -0.104323,
     "disclosureLevel": "aggregated",
     "_pag": 5,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Pōhivara kulum",
@@ -389,9 +385,9 @@
     "amountNative": -0.000016,
     "disclosureLevel": "aggregated",
     "_pag": 5,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía no_es_rubro con 0.75 (fila verificada: no se excluye sola): se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -615,11 +611,11 @@
    "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
    "signoFijo": 1.119198,
    "cat": "competition_bonus",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18: mismo criterio que los demás clubes estonios del lote 89 (UEFA -> competition_bonus, pagos a jugadores -> wages_squad, traspasos -> player_amortisation)",
    "destino": "revenue",
    "amountNative": 1.119198
   },
@@ -782,11 +778,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.422455,
    "cat": "wages_squad",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18: mismo criterio que los demás clubes estonios del lote 89 (UEFA -> competition_bonus, pagos a jugadores -> wages_squad, traspasos -> player_amortisation)",
    "destino": "expense",
    "amountNative": -0.422455
   },
@@ -798,11 +794,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.0554,
    "cat": "wages_squad",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18: mismo criterio que los demás clubes estonios del lote 89 (UEFA -> competition_bonus, pagos a jugadores -> wages_squad, traspasos -> player_amortisation)",
    "destino": "expense",
    "amountNative": -0.0554
   },
@@ -859,11 +855,11 @@
    "origen": "verificacion (nota que desglosa \"Tegevuskulud\")",
    "signoFijo": 0.010105,
    "cat": "match_organisation_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18: mismo criterio que los demás clubes estonios del lote 89 (UEFA -> competition_bonus, pagos a jugadores -> wages_squad, traspasos -> player_amortisation)",
    "destino": "expense",
    "amountNative": -0.010105
   },
@@ -950,11 +946,11 @@
    "origen": "verificacion (nota que desglosa \"Tegevuskulud\")",
    "signoFijo": 0.178571,
    "cat": "admin_general_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18: mismo criterio que los demás clubes estonios del lote 89 (UEFA -> competition_bonus, pagos a jugadores -> wages_squad, traspasos -> player_amortisation)",
    "destino": "expense",
    "amountNative": -0.178571
   },
@@ -996,11 +992,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.104323,
    "cat": "player_amortisation",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18: mismo criterio que los demás clubes estonios del lote 89 (UEFA -> competition_bonus, pagos a jugadores -> wages_squad, traspasos -> player_amortisation)",
    "destino": "expense",
    "amountNative": -0.104323
   },
@@ -1027,12 +1023,12 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.000016,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía no_es_rubro con 0.75 (fila verificada: no se excluye sola): se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18: mismo criterio que los demás clubes estonios del lote 89 (UEFA -> competition_bonus, pagos a jugadores -> wages_squad, traspasos -> player_amortisation)",
    "destino": "expense",
    "amountNative": -0.000016
   },
@@ -1147,7 +1143,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 18,
   "lineasGasto": 19,
   "metaFilas": 2,

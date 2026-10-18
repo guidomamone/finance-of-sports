@@ -97,6 +97,7 @@ window.CLUB_INDEX = {
   "everton-gb": {"n":"Everton","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "famalicao-pt": {"n":"Famalicão","c":"PT","q":"full","y":7,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"]]},
   "fcbarcelona": {"n":"FC Barcelona","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
+  "fcilevadia-ee": {"n":"FCI Levadia","c":"EE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "fckobenhavn-dk": {"n":"FC København","c":"DK","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "fctokyo": {"n":"FC Tokyo","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "felgueiras-pt": {"n":"Felgueiras","c":"PT","q":"full","y":3,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
