@@ -24,8 +24,7 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 293, 275, 274, 272,
-271 · finanzas 280, 281, 282, 242, 294 · pipeline 289, 290, 288, 232, 279, 286, 287 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
+Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 271 y enganchar la página del grupo (280 c) · finanzas 280, 281, 282, 242, 294 · pipeline 289, 290, 288, 232, 279, 286, 287 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
 datos-sourcing 276, 277, 273, 252 · Reino Unido (261) en su propia sesión · la principal: 268, 291, 250, 244 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
@@ -59,12 +58,8 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 273: estadio y sponsor de cada ejercicio (definir los campos con Guido antes de juntar)
 
 **E. Pantallas**
-* 293: Ligas, las tarjetas de cada país parecen decir que hay un solo año por liga
-* 275: faltantes y estimados en Ligas (estimado bien claro, aparte de lo real)
-* 274: consolidado de cada liga: total de ingresos por categoría (mockup con Design antes)
 * 280, 281 y 282: Finanzas, las entidades del club, lo de las otras entidades y quién audita
 * 294: llenar el registro de entidades (después del merge de finanzas)
-* 272: cartel de primera visita sin uso (borrarlo o reubicarlo)
 
 **E2. Distribución (depende de 246)**
 * 271: lo que falta del estado en la URL (moneda, inflación, formato y Comparar)
@@ -77,7 +72,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 **F. Datos para afuera (cuando haya tiempo; nada urgente)**
 * 248: taxonomía genérica y subcategorías por deporte (antes del esquema; resuelve también 130 y 183)
 * 130 y 183: otros deportes, polideportivos e Italia fuera del fútbol (después de 248)
-* 270: estimar un club que nunca cargamos (volver a medir con más datos)
+* 270: estimado de club nuevo, prendido con 50% de error: volver a medir con más datos
 * 245: datos como JSON con esquema
 * 247: registro público de correcciones (sobre 245)
 * 249: API en dominio propio (último; no construirla ahora)
@@ -239,15 +234,9 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    tools/cloudflare-visitas.mjs --json y subir los archivos; se puede programar).
 271. EL ESTADO EN LA URL, LO QUE FALTA (cierre de la sesión pantallas, 2026-10-17). Ya van pestaña, club, años, liga y ejercicio
    (`?tab=…&club=…&anios=…&liga=…&anio=…`); faltan la moneda, la inflación, el formato y Comparar.
-272. CARTEL DE PRIMERA VISITA SIN USO (cierre de la sesión pantallas, 2026-10-17). "Elegí tu club acá" colgaba del botón del club, que salió
-   del header; `showCoach` / `hideCoach` en `js/selector.js` quedaron sin uso visible. Borrarlo o reubicarlo (la puerta para un visitante
-   nuevo hoy es el buscador de Inicio).
 273. ESTADIO Y SPONSOR DE CADA EJERCICIO (pedido de Guido, 2026-10-18). Conseguir, por club y ejercicio, el estadio (cuál, y su capacidad)
    y el sponsor principal, con su fuente, como contexto de los números. Definir con Guido qué campos exactamente (¿sponsor de camiseta?
    ¿monto, si es público?) y de dónde salen antes de juntar nada.
-274. CONSOLIDADO DE CADA LIGA (pedido de Guido, 2026-10-18). Que cada liga y ejercicio muestre su total: la suma de los ingresos de sus
-   clubes por categoría (derechos de TV, comercial, estadio, pases, etc.). Decir siempre cuántos clubes de cuántos entran en la suma (los
-   que faltan no se estiman, ver 266 y 270) y no mezclar monedas ni ejercicios. Mockup con Design antes de codear.
 280. FINANZAS: LAS ENTIDADES DEL CLUB (pedido de Guido, 2026-10-17). Listar todas las entidades del club (nombres legales; SAD, SDUQ, AS,
    FLI, holding, fundación), cuál es la que se carga y cuáles no, con una nota explicativa para periodistas. Casos: Viking Fotball AS /
    Viking Fotballklubb; Molde Fotballklubb / Molde Fotball AS; St. Gallen AG / Event AG; Luzern FCL Holding AG / FC Luzern-Innerschweiz
@@ -294,10 +283,6 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    está hecha, ver el 165 b1). En este orden: validar `Admin/lotes/subagentes-validar.txt` (~US$ 3,47); transcribir con Mistral
    `Admin/lotes/mistral-despues-del-merge.txt` (36 documentos, ~US$ 6); lotes de carga por país (el alta con un solo año); y decidir
    subagentes o Mistral para los 319 `.md` viejos sin tablas de `Admin/lotes/sin-tablas-6paises.txt`.
-293. LIGAS: LAS TARJETAS DE CADA PAÍS PARECEN DECIR QUE HAY UN SOLO AÑO (pedido de Guido, 2026-10-18). En el estado frío de Ligas cada
-   liga dice, por ejemplo, "Primera División 10 de 28 · 2024", "Primera Nacional 1 club · 2023": se lee como que de esa liga solo hay
-   información de ese año, cuando hay varios ejercicios. Que la tarjeta diga el rango o la cantidad de ejercicios con datos (y de qué año
-   es el "10 de 28"), o que el año se entienda como "el más reciente". Mockup antes de codear.
 294. LLENAR EL REGISTRO DE ENTIDADES (sigue al 280; pedido de Guido, 2026-10-18, vía fos-finanzas). `Admin/registros/entidades.jsonl`
    (llega con el merge de la rama finanzas) tiene solo Chelsea 2025 e Inter 2025. Faltan: (1) los otros ejercicios de Chelsea e Inter
    (Suning antes de 2024); (2) Portugal, club asociación y SAD: los avisos de `node tools/entidades.mjs`; (3) los grupos con dos o más
@@ -305,15 +290,10 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    Partners (Genoa, Standard, Vasco), Eagle Football (Botafogo, parte de Crystal Palace); (4) los casos de
    `Admin/registros/cola-borradores/altas-2026-10-17.md`, cuando esos clubes estén publicados. Con subagentes: cada línea lleva una cita
    del .md, o url y fecha si es externa, y `tools/entidades.mjs` la verifica.
-270. ESTIMAR UN CLUB QUE NUNCA CARGAMOS (pedido de Guido, 2026-10-17; los años que le faltan a un club que tenemos ya se estiman y
-   publican en data/estimados/). Apagado: hoy da 50% de error con la posición en la tabla contra 56% de la mediana de la liga. Volver a
-   medir (`node tools/estimar.mjs --medir`) cuando haya más clubes cargados y prenderlo solo si le gana a la mediana con un error que Guido
-   acepte. Variable sin medir: partidos contra clubes con finanzas.
-275. LIGAS MUESTRA LOS FALTANTES Y LOS ESTIMADOS (cierre de la sesión datos-sourcing, 2026-10-18). `data/faltantes/<liga>.js` ("12 de 14
-   clubes con balance" y los que faltan con el motivo en palabras; `reciente` para un año que todavía no puede estar) y
-   `data/estimados/<liga>.js` con el rótulo "estimado" bien claro, siempre aparte de lo real (otro estilo, el rango, el error y de qué
-   años sale), nunca sumado a un total real sin decirlo (pedido de Guido). El formato de los dos: `Admin/Archive/sesion-datos-sourcing-2026-10-18.md`,
-   "Para el worktree de pantallas". Va con el 274.
+270. ESTIMAR UN CLUB QUE NUNCA CARGAMOS: VOLVER A MEDIR (pedido de Guido, 2026-10-17). Está PRENDIDO desde el 2026-10-18 (decisión de
+   Guido: en Ligas todo club sin balance figura como estimado), con 50% de error (regresión sin historia: mediana de la liga-año, división,
+   posición en la tabla). Volver a medir (`node tools/estimar.mjs --medir`) cuando haya más clubes cargados. Variable sin medir: partidos
+   contra clubes con finanzas.
 276. LISTAS DE EQUIPOS QUE NO SALEN (faltantes-liga). Primera B Metro (sin página con tabla), Pro League belga 2024-25 (el lector no la
    entiende), Serie C (3 grupos por página), Perú 2020 (la tabla pone la ciudad primero). `node tools/listas-lote.mjs` las reintenta.
 277. PARMA EN LA SERIE C EN 2018 (data/club-leagues/). En 2017-18 jugó la Serie B: verificar y corregir.

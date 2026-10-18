@@ -15,6 +15,20 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 718 — Merge de pantallas: Ligas con estimados y consolidado (2026-10-18)
+
+`node tools/worktree.mjs mergear pantallas`, sin conflictos; P0 0 / P1 0; estimar y faltantes-liga "al día". La rama sigue abierta
+(271 y la página del grupo).
+
+- To-do 293: en el estado frío de Ligas cada liga muestra solo su nombre (antes "N clubes · año" se leía como un solo ejercicio).
+- Estimado de club nuevo PRENDIDO (decisión de Guido): todo club de la lista de una liga sin balance ese año tiene estimado (regresión
+  sin historia, 50% de error medido); de 439 a 4750 club-años estimados en 34 ligas. `faltantes-liga.mjs` guarda la posición de todos.
+- To-do 275: los estimados en la tabla de ingresos de Ligas, con "(estimado)*", barra rayada, rango y error; total de la liga con
+  estimados cuando más de la mitad tiene balance real. La lista de "faltan y por qué" se descartó (Guido).
+- To-do 274: "La liga en total, por categoría", con la franja de estimados cuando el total los suma.
+- To-do 272: fuera el cartel de primera visita y su código. ASSET_V 1261.
+- TODO: fuera 293, 275, 274 y 272; el 270 queda como "volver a medir".
+
 ## Versión 717 — El plan, todo en to-dos (2026-10-18)
 
 - TODO: el ORDEN ya no tiene los tres puntos de arriba (pedido de Guido): caja y deuda son los 289 a 291, las transcripciones por

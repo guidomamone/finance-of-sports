@@ -134,8 +134,10 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 
 - Por liga y año se sabe qué clubes faltan y en qué estado (`tools/faltantes-liga.mjs`, generado en cada carga); la lista de pendientes de
   sourcing es `Admin/sourcing/pendientes.md` (generada, no se edita): una sesión de sourcing puede arrancar de ahí.
-- Estimaciones publicadas aparte de lo real (`data/estimados/`, `tools/estimar.mjs`): solo años que faltan de clubes que tenemos, por
-  interpolación entre sus años reales; club que nunca cargamos, apagado (to-do 270). Todavía no se muestran en el sitio (to-do 275).
+- Estimaciones (`data/estimados/`, `tools/estimar.mjs`): los años que le faltan a un club que tenemos, por interpolación entre sus años
+  reales, y todo club de la lista de una liga sin balance ese año (club nuevo: regresión sin historia, error alto, ver el to-do 270). Se
+  muestran en Ligas dentro de la tabla de ingresos con "(estimado)*", rango y error; el total de la liga los suma solo cuando más de la
+  mitad tiene balance real, y la composición y el simulador usan solo lo real. Arriba de la tabla, "La liga en total, por categoría".
 - Las listas de Wikipedia (`tools/club-league-reference/`) cubren 376 liga-años y guardan la posición final donde la tabla está completa.
 
 ### Finanzas multi-año
