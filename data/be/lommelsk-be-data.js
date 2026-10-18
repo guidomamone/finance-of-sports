@@ -4,6 +4,9 @@ const lommelskbeRevenueLinesByYear = {
     { rawLabel:'Andere bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:3.872782, disclosureLevel:'aggregated' },
     { rawLabel:'Niet-recurrente bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:2.003764, disclosureLevel:'aggregated' },
   ],
+  2018: [
+    { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations', amountNative:0.891255, disclosureLevel:'aggregated' },
+  ],
 };
 const lommelskbeExpenseLinesByYear = {
   2025: [
@@ -20,6 +23,12 @@ const lommelskbeExpenseLinesByYear = {
     { rawLabel:'Afschrijvingen materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.590106, disclosureLevel:'aggregated' },
     { rawLabel:'Minderwaarden bij de realisatie van immateriële vaste activa (spelers)', normalizedCategory:'player_impairment', amountNative:-0.573455, disclosureLevel:'aggregated' },
     { rawLabel:'Andere niet-recurrente bedrijfskosten', normalizedCategory:'exceptional_items', amountNative:-0.1757, disclosureLevel:'aggregated' },
+  ],
+  2018: [
+    { rawLabel:'Bezoldigingen, sociale lasten en pensioenen (+)/(-)', normalizedCategory:'wages_squad', amountNative:-0.990199, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa', normalizedCategory:'player_amortisation', amountNative:-0.519, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.002679, disclosureLevel:'aggregated' },
+    { rawLabel:'Niet-recurrente bedrijfskosten', normalizedCategory:'exceptional_items', amountNative:-0.00732, disclosureLevel:'aggregated' },
   ],
 };
 const lommelskbeFiscalYearMeta = {
@@ -43,6 +52,19 @@ const lommelskbeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:9.565805, officialTotalExpenses:30.168572, officialPAT:-20.872368,
   },
+  2018: {
+    currency:'EUR', fxRef:'EUR@2018-06-30',
+    sourceId:'lommelsk-be-jaarrekening-2018-06-30-individual',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0, tax:0,
+    sinDesglose: [
+      {renglon:'Brutomarge (+)/(-)', lado:'revenue', importe:0.891255, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0.891255, officialTotalExpenses:1.519198, officialPAT:-0.628125,
+  },
 };
 const lommelskbePresupuestoOverlayByYear = {};
 
@@ -62,6 +84,11 @@ Object.assign(sources, {
   'lommelsk-be-jaarrekening-2025-06-30-individual': {
     id:'lommelsk-be-jaarrekening-2025-06-30-individual', clubId:'lommelsk-be',
     title:'Voetbalclub Lommel SK NV — jaarrekening-2025-06-30-individual (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'lommelsk-be-jaarrekening-2018-06-30-individual': {
+    id:'lommelsk-be-jaarrekening-2018-06-30-individual', clubId:'lommelsk-be',
+    title:'Voetbalclub Lommel SK NV — jaarrekening-2018-06-30-individual (ejercicio 2018)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

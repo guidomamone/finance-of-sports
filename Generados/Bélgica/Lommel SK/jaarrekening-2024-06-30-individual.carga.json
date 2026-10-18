@@ -1,0 +1,36 @@
+{
+ "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2024-06-30-individual.pdf",
+ "generado": "2026-10-18T15:39:28.469Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 3 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 3 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2024-06-30-individual.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2024-06-30",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "het boekjaar dat de periode dekt van 01-07-2023 tot 30-06-2024"
+  },
+  "confianza": "alta",
+  "anual": "temporada"
+ },
+ "clubId": "lommelsk-be",
+ "year": 2024,
+ "cortadoEn": "filas"
+}

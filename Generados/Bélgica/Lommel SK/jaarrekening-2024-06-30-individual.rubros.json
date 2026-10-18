@@ -1,0 +1,150 @@
+{
+  "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2024-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2024-06-30-individual.pdf",
+  "club": "lommelsk-be",
+  "year": 2024,
+  "generatedAt": "2026-10-18T15:28:00.145Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Omzet",
+      "lado": "revenue",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        3.605166
+      ],
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "Andere bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        3.557468
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Niet-recurrente bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        17.50412
+      ],
+      "glosa": "Ingresos de explotación no recurrentes"
+    },
+    {
+      "label": "Aankopen",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.224607
+      ],
+      "glosa": "Compras"
+    },
+    {
+      "label": "Voorraad: afname (toename) (+)/(-)",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.001719
+      ],
+      "glosa": "Variación de existencias: disminución (aumento) (+)/(-)"
+    },
+    {
+      "label": "Diensten en diverse goederen",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        5.51756
+      ],
+      "glosa": "Servicios y bienes diversos"
+    },
+    {
+      "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        12.730046
+      ],
+      "glosa": "Remuneraciones y prestaciones sociales directas"
+    },
+    {
+      "label": "Werkgeversbijdragen voor sociale verzekeringen",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        1.652467
+      ],
+      "glosa": "Aportaciones patronales a la seguridad social"
+    },
+    {
+      "label": "Andere personeelskosten",
+      "lado": "expense",
+      "page": 24,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        0.807499
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        5.820455
+      ],
+      "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, inmovilizado intangible y material"
+    },
+    {
+      "label": "Bedrijfsbelastingen en -taksen",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Andere bedrijfskosten\"",
+      "values": [
+        0.005288
+      ],
+      "glosa": "Impuestos y tasas de explotación"
+    },
+    {
+      "label": "Andere",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Andere bedrijfskosten\"",
+      "values": [
+        0.765501
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Minderwaarden bij de realisatie van immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Niet-recurrente bedrijfskosten\"",
+      "values": [
+        0.923578
+      ],
+      "glosa": "Pérdidas en la enajenación de inmovilizado intangible y material"
+    },
+    {
+      "label": "Andere niet-recurrente bedrijfskosten",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Niet-recurrente bedrijfskosten\"",
+      "values": [
+        4.610306
+      ],
+      "glosa": "Otros gastos de explotación no recurrentes"
+    }
+  ]
+}

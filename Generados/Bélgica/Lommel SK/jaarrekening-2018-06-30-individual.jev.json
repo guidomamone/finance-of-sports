@@ -1,0 +1,122 @@
+{
+ "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2018-06-30-individual.md",
+ "generatedAt": "2026-10-18T15:33:35.043Z",
+ "rubrosHuella": "744c39e61f423d9e343b0ddfbbc96870692f0a22",
+ "rubros": [
+  {
+   "label": "Niet-recurrente bedrijfskosten",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "exceptional_items",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "exceptional_items",
+     0.93
+    ],
+    [
+     "match_organisation_expense",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.85
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Brutomarge (+)/(-)",
+   "lado": "revenue",
+   "page": 6,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1092
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "depreciation",
+     0.79
+    ],
+    [
+     "player_amortisation",
+     0.19
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1162
+  }
+ ]
+}

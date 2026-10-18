@@ -1,0 +1,180 @@
+{
+ "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2020-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2020-06-30-individual.md",
+ "mdSha1": "6f5b082e8eac11fd85a567569a85082bb7c4accb",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:27:56.699Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    18,
+    26
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 5,
+   "lineas": [
+    113,
+    139
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 6,
+   "lineas": [
+    147,
+    195
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 7,
+   "lineas": [
+    205,
+    233
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 8,
+   "lineas": [
+    243,
+    259
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 9,
+   "lineas": [
+    271,
+    287
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 10,
+   "lineas": [
+    295,
+    318
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 11,
+   "lineas": [
+    326,
+    353
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 12,
+   "lineas": [
+    363,
+    392
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    402,
+    414
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 14,
+   "lineas": [
+    424,
+    443
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    453,
+    455
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 16,
+   "lineas": [
+    482,
+    489
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 16,
+   "lineas": [
+    493,
+    495
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 17,
+   "lineas": [
+    527,
+    535
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 18,
+   "lineas": [
+    572,
+    576
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 18,
+   "lineas": [
+    578,
+    601
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 19,
+   "lineas": [
+    611,
+    615
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 19,
+   "lineas": [
+    619,
+    634
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b10"
+ ],
+ "notas_gastos": [
+  "b10"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING IN EURO (modelo VKT belga, importes en euros sin escala; ej. 1.686.104 en b10)",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Cuentas anuales individuales en modelo abreviado (VKT) de Lommel SK. Estado de resultados: b4 (Resultatenrekening, parte con brutomarge). b10 desglosa los renglones no recurrentes (bedrijfs- y financiële opbrengsten/kosten), sirve para ingresos y gastos. Se excluyen balance (b2, b3), resultaatverwerking (b5), activos fijos (b6-b8), deudas (b9), compromisos (b11), relaciones vinculadas (b13), reglas de valoración (b15) y balance social (b16-b19)."
+}

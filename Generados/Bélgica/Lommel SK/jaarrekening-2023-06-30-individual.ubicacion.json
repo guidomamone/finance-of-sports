@@ -1,0 +1,230 @@
+{
+ "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2023-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2023-06-30-individual.md",
+ "mdSha1": "97c70e95281224ee5694cbf2930b0f9ee9dc07d8",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:23.044Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    27,
+    28
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    38,
+    40
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    116,
+    117
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    129,
+    156
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    164,
+    195
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 6,
+   "lineas": [
+    203,
+    227
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 7,
+   "lineas": [
+    237,
+    266
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 8,
+   "lineas": [
+    276,
+    292
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    304,
+    321
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    329,
+    353
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    361,
+    389
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 12,
+   "lineas": [
+    399,
+    429
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 13,
+   "lineas": [
+    439,
+    452
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 14,
+   "lineas": [
+    462,
+    484
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 15,
+   "lineas": [
+    492,
+    510
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 15,
+   "lineas": [
+    512,
+    514
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 16,
+   "lineas": [
+    528,
+    531
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 16,
+   "lineas": [
+    535,
+    537
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 16,
+   "lineas": [
+    541,
+    543
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 17,
+   "lineas": [
+    567,
+    575
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 23,
+   "lineas": [
+    747,
+    751
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 23,
+   "lineas": [
+    753,
+    776
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 24,
+   "lineas": [
+    786,
+    791
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 24,
+   "lineas": [
+    795,
+    811
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b7"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b13"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING in EURO",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga como nota de gastos el cuadro 'RESULTATEN' (b13) aunque sobre todo trae datos de personal y financieros?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Bezoldigingen, sociale lasten en pensioenen",
+   "texto": "b13 (VKT-kap 6.4) puede abrir los gastos de personal y los resultados financieros, pero en parte son cantidades de empleados y no importes.",
+   "bloques": [
+    "b13"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Es un modelo abreviado (VKT) de cuentas individuales y parte de la Brutomarge, así que los ingresos no están desglosados. El estado de resultados es b7. La nota 6.4 (b13) puede desglosar los gastos de personal y los financieros. El balance social (b21) solo repite los gastos de personal, por eso no se elige."
+}
