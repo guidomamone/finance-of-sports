@@ -1,14 +1,14 @@
 {
  "pdf": "Clubes/Estonia/Paide Linnameeskond/aruanne-2025.pdf",
- "generado": "2026-10-18T13:25:29.022Z",
+ "generado": "2026-10-18T13:52:22.403Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (paidelinnameeskond-ee)"
   },
   {
-   "etapa": "categoria-en-cola",
-   "motivo": "12 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Türi Spordikluubide Liit MTÜ\" -> other_income 0.75; \"LHV\" -> sponsorship_commercial 0.5; \"Spordikoolituse ja-teabe SA Spordikoolit\" -> youth_football 0.45; \"UEFA solidarsustoetus\" -> competition_bonus 0.55; \"Eesti Jalgpalliliidu toetused\" -> other_income 0.5"
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
@@ -56,29 +56,29 @@
     "amountNative": 0.001,
     "disclosureLevel": "aggregated",
     "_pag": 13,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "LHV",
-    "normalizedCategory": "sponsorship_commercial",
+    "normalizedCategory": "other_income",
     "amountNative": 0.004653,
     "disclosureLevel": "aggregated",
     "_pag": 13,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Spordikoolituse ja-teabe SA Spordikoolituse ja-teabe S",
-    "normalizedCategory": "youth_football",
+    "normalizedCategory": "other_income",
     "amountNative": 0.084895,
     "disclosureLevel": "aggregated",
     "_pag": 13,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "UEFA solidarsustoetus",
@@ -86,9 +86,9 @@
     "amountNative": 1.288571,
     "disclosureLevel": "aggregated",
     "_pag": 13,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Eesti Jalgpalliliidu toetused",
@@ -96,9 +96,9 @@
     "amountNative": 0.04074,
     "disclosureLevel": "aggregated",
     "_pag": 13,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "KOV toetus",
@@ -116,9 +116,9 @@
     "amountNative": 0.002122,
     "disclosureLevel": "aggregated",
     "_pag": 13,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Väljaku äärde ja reklaamtahvlitele paigaldatud reklaam",
@@ -198,29 +198,29 @@
     "amountNative": -0.164939,
     "disclosureLevel": "aggregated",
     "_pag": 5,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Stipendiumid",
-    "normalizedCategory": "youth_other_sports_expense",
+    "normalizedCategory": "wages_squad",
     "amountNative": -0.0403,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Toetused",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "wages_squad",
     "amountNative": -0.391099,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Lähetuskulud",
@@ -238,19 +238,19 @@
     "amountNative": -0.111662,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 2,
-    "_conf": 0.4,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "mängijate soetuskulud",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "player_amortisation",
     "amountNative": -0.435571,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 1,
-    "_conf": 0.96,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Klubi administreerimiskulud",
@@ -278,9 +278,9 @@
     "amountNative": -0.191538,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Kodumängu korralduskulud (v.a staadioni rent)",
@@ -348,9 +348,9 @@
     "amountNative": -0.912946,
     "disclosureLevel": "aggregated",
     "_pag": 15,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sotsiaalmaks muu personali töötasudelt",
@@ -491,11 +491,11 @@
    "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
    "signoFijo": 0.001,
    "cat": "other_income",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Donación de una unión de clubes deportivos (Türi) dentro de Annetused ja toetused. [aruanne-2025.md L465 (Lisa 8: Türi Spordikluubide Liit MTÜ 1 000)]",
    "destino": "revenue",
    "amountNative": 0.001
   },
@@ -506,12 +506,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
    "signoFijo": 0.004653,
-   "cat": "sponsorship_commercial",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): LHV está en Lisa 8 'Annetused ja toetused' (donación), no en Tulu ettevõtlusest donde Paide registra sus sponsors (reklaam, L474). Nõmme agrupa 'Muud toetused ECA, LHV' en other_income. Monto chico. [aruanne-2025.md L466 (LHV 4 653); L474 (la publicidad va aparte en Lisa 9)]",
    "destino": "revenue",
    "amountNative": 0.004653
   },
@@ -522,12 +522,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
    "signoFijo": 0.084895,
-   "cat": "youth_football",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): SA Spordikoolituse ja -teabe (fundación estatal de capacitación deportiva) otorga subsidio en Annetused ja toetused; misma entidad que en Tartu (other_income). Es un subsidio público, no un ingreso de fútbol juvenil propiamente. [aruanne-2025.md L467 (Spordikoolituse ja-teabe SA 84 895)]",
    "destino": "revenue",
    "amountNative": 0.084895
   },
@@ -539,11 +539,11 @@
    "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
    "signoFijo": 1.288571,
    "cat": "competition_bonus",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Pago de solidaridad UEFA por participación en torneos de clubes; precedente Flora/Kuressaare y Guido (aris-gr, olympiacos-gr, rioave-pt). [aruanne-2025.md L468 (UEFA solidarsustoetus 1 288 571)]",
    "destino": "revenue",
    "amountNative": 1.288571
   },
@@ -555,11 +555,11 @@
    "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
    "signoFijo": 0.04074,
    "cat": "other_income",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Aporte de la federación estonia (EJL). [aruanne-2025.md L469 (Eesti Jalgpalliliidu toetused 40 740)]",
    "destino": "revenue",
    "amountNative": 0.04074
   },
@@ -586,11 +586,11 @@
    "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
    "signoFijo": 0.002122,
    "cat": "player_sales",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): FIFA RSTP = reglamento de estatuto y transferencias: compensación de formación / mecanismo de solidaridad; precedente de Guido: solidaridad FIFA -> player_sales (rioave, tondela, braga, nacional). Monto chico (2.122). [aruanne-2025.md L471 (FIFA RSTP 2 122)]",
    "destino": "revenue",
    "amountNative": 0.002122
   },
@@ -707,11 +707,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.164939,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Gastos directos de proyectos con financiación finalista, espejo de 'Sihtfinantseerimine'; sin desglose en el documento (solo la línea del estado de resultados). Igual que Nõmme. [aruanne-2025.md L149 (Sihtotstarbeliselt finantseeritud projektide otsesed kulud -164 939)]",
    "destino": "expense",
    "amountNative": -0.164939
   },
@@ -722,12 +722,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Jagatud annetused ja toetused\")",
    "signoFijo": 0.0403,
-   "cat": "youth_other_sports_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Stipendiumid 40.300 (Lisa 10) sin destinatario; como 'sportlasestipendium' de Flora y Narva. Pregunta al club en dudas-por-club",
    "destino": "expense",
    "amountNative": -0.0403
   },
@@ -738,12 +738,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Jagatud annetused ja toetused\")",
    "signoFijo": 0.391099,
-   "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Toetused 391.099 (Lisa 10) sin destinatario; como 'Sportlastoetused' de Nõmme. Pregunta al club en dudas-por-club",
    "destino": "expense",
    "amountNative": -0.391099
   },
@@ -770,11 +770,11 @@
    "origen": "verificacion (nota que desglosa \"Mitmesugused tegevuskulud\")",
    "signoFijo": 0.111662,
    "cat": "admin_general_expense",
-   "conf": 0.4,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Koolituskulud' = capacitación (cursos, formación); mismo criterio que Flora, Kuressaare, Harju y Narva (admin_general_expense). El documento no lo desglosa. [aruanne-2025.md L508 (Lisa 11: Koolituskulud 111 662)]",
    "destino": "expense",
    "amountNative": -0.111662
   },
@@ -785,11 +785,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Mitmesugused tegevuskulud\")",
    "signoFijo": 0.435571,
-   "cat": "other_expenses",
-   "conf": 0.96,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): mismo criterio que Tallinna Kalev (costos de traspaso de jugadores) / costo de mercadería vendida (L509)",
    "destino": "expense",
    "amountNative": -0.435571
   },
@@ -831,11 +832,11 @@
    "origen": "verificacion (nota que desglosa \"Mitmesugused tegevuskulud\")",
    "signoFijo": 0.191538,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Costos de edificios e instalaciones alquilados o propios: mantenimiento de sede/estadio. [aruanne-2025.md L512 (Klubile kuuluvate ja tema poolt renditud hoonete ja rajatistega seotud kulud 191 538)]",
    "destino": "expense",
    "amountNative": -0.191538
   },
@@ -937,11 +938,11 @@
    "origen": "verificacion (nota que desglosa \"Tööjõukulud\")",
    "signoFijo": 0.912946,
    "cat": "admin_general_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Otro personal (no jugadores) sin desglose técnico/admin; convención estonia cerrada: admin_general_expense, igual que sus cargas sociales (L533). Ojo: incluye entrenadores de 27 grupos juveniles; no se puede separar con el documento. [aruanne-2025.md L532 (Lisa 12: Muu personali palgakulu 912 946)]",
    "destino": "expense",
    "amountNative": -0.912946
   },

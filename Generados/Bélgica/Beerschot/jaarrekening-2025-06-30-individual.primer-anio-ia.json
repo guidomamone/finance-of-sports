@@ -1,13 +1,13 @@
 {
  "md": "Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.md",
- "clave": "7f4c060fabc2095985c2858de434fb43df33e2b8",
- "generado": "2026-10-18T13:08:12.745Z",
+ "clave": "ff16edeecb55691097cb789794630e2e03cd896c",
+ "generado": "2026-10-18T13:54:26.129Z",
  "fuente": "API",
  "datos": {
   "faltan": [],
   "sobran": [],
   "repetidas": [],
   "lado_equivocado": [],
-  "observacion": "La carga cubre todos los renglones del ejercicio. Omzet (L283, 10,404729) se abre por nota en Ticketing, Sponsoring, TV rechten y Commercieel, que suman 10,404729. Personeel (L293, 11,05461) se abre en tres partes que suman 11,05461. Waardeverminderingen (L295, -0,064834) se abre en dos terugnemingen que suman -0,064834. Andere bedrijfskosten (L297, 0,586086) se abre en Bedrijfsbelastingen y Andere, que suman 0,586086. Los subtotales no se cargan y los signos son correctos."
+  "observacion": "La omzet (L283, 10,404729) se carga abierta por la nota (2,21594+2,778568+2,506463+2,903758=10,404729). Las remuneraciones (L293, 11,05461) también se cargan abiertas por la nota (9,380292+1,435486+0,238832). Las reversiones de waardeverminderingen (L295, -0,064834) se cargan como -0,00821 y -0,056624, y las andere bedrijfskosten (L297, 0,586086) como 0,158064 y 0,428022. Las amortizaciones de L294 (0,891583) se cargan divididas en tres partes. Ingresos, gastos, financieros e impuestos están en el lado correcto, y no se cargan subtotales."
  }
 }

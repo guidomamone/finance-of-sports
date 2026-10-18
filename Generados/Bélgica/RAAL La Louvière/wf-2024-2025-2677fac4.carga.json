@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Bélgica/RAAL La Louvière/wf-2024-2025-2677fac4.pdf",
- "generado": "2026-10-18T13:25:38.058Z",
+ "generado": "2026-10-18T13:55:34.448Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (raallalouviere-be)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "3 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Achats\" -> other_expenses 0.6; \"Amortissements et réductions de valeur s\" -> player_amortisation 0.45; \"Charges d'exploitation non récurrentes\" -> other_expenses 0.6"
   }
  ],
  "avisos": [
@@ -58,9 +54,9 @@
     "amountNative": -0.511554,
     "disclosureLevel": "aggregated",
     "_pag": 7,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Stocks: réduction (augmentation)",
@@ -94,13 +90,13 @@
    },
    {
     "rawLabel": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
-    "normalizedCategory": "player_amortisation",
+    "normalizedCategory": "depreciation",
     "amountNative": -0.558871,
     "disclosureLevel": "aggregated",
     "_pag": 7,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises)",
@@ -124,13 +120,13 @@
    },
    {
     "rawLabel": "Charges d'exploitation non récurrentes",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "exceptional_items",
     "amountNative": -0.003193,
     "disclosureLevel": "aggregated",
     "_pag": 7,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -263,11 +259,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.511554,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Achats (600/8) es compra de mercadería y material. Precedente belga: Aankopen/Handelsgoederen va a other_expenses en Anderlecht, Genk, Gent, Westerlo y otros. [Cuenta de resultados pág. 7: \"Achats | 600/8 | 511.554\"]",
    "destino": "expense",
    "amountNative": -0.511554
   },
@@ -323,12 +319,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 0.558871,
-   "cat": "player_amortisation",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): No son derechos de jugadores: el único inmaterial del estado 6.2.1 son \"Frais de développement\" (actés 26.000); el resto de los 558.871 es material (actés 347.123 + 105.781 + 72.251 + otros). Sin derechos de jugadores no corresponde player_amortisation. Mismo criterio que Dender (630 combinado a dep [Estado de inmovilizados incorporales 6.2.1, \"FRAIS DE DÉVELOPPEMENT\", Actés 8071 = 26.000; materiales Actés 8271 = 347.123, 8272 = 105.781, 8273 = 72.251; cuenta de resultados pág. 7: 630 = 558.871]",
    "destino": "expense",
    "amountNative": -0.558871
   },
@@ -369,12 +365,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 0.003193,
-   "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Charges d'exploitation non récurrentes (66A, nota 6.12) es gasto no recurrente. La mayoría de los clubes belgas lo cargan en exceptional_items (Genk, Gent, Cercle, Dender, Sint-Truiden, Zulte, Lokeren, Lierse SK); solo Standard Liège lo dejó en other_expenses. Importe mínimo (3.193). [Cuenta de resultados pág. 7: \"Charges d'exploitation non récurrentes | 6.12 | 66A | 3.193\"]",
    "destino": "expense",
    "amountNative": -0.003193
   },
@@ -421,7 +417,7 @@
  },
  "totales": {
   "revSum": 6.296765,
-  "expSum": -8.464193,
+  "expSum": -8.461,
   "officialTotalRevenue": 6.296765,
   "officialTotalExpenses": 8.464193,
   "officialPAT": -2.148648,
@@ -497,7 +493,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 3,
   "lineasGasto": 8,
   "metaFilas": 3,
