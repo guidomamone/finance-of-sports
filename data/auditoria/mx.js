@@ -10,6 +10,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    },
    "dictamen": "sin_salvedades",
    "continuidad": false,
+   "alcance": "grupo",
    "fuente": {
     "md": "Clubes/México/Club América/reporte-financiero-ollamani-2025-auditado.md",
     "linea": 987

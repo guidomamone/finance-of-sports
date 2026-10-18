@@ -532,6 +532,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    },
    "dictamen": "sin_salvedades",
    "continuidad": false,
+   "alcance": "proposito_especial",
    "fuente": {
     "md": "Clubes/Grecia/Kifisia/Kifisia_notes_2022-06-30.md",
     "linea": 411
@@ -544,6 +545,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    },
    "dictamen": "sin_salvedades",
    "continuidad": false,
+   "alcance": "proposito_especial",
    "fuente": {
     "md": "Clubes/Grecia/Kifisia/Kifisia_notes_2023-06-30.md",
     "linea": 371
@@ -556,6 +558,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    },
    "dictamen": "sin_salvedades",
    "continuidad": false,
+   "alcance": "proposito_especial",
    "fuente": {
     "md": "Clubes/Grecia/Kifisia/Kifisia_notes_2024-06-30.md",
     "linea": 385

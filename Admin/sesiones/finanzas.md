@@ -22,6 +22,12 @@
 
 ## Decisiones de Guido (2026-10-18), para CONVENCIONES-DATOS
 
+- Alcance del informe (282 e): sin campo es una auditoría plena de las cuentas del club; una revisión limitada, unos procedimientos
+  acordados, una auditoría de estados para la licencia o una de las cuentas del grupo dueño llevan `alcance` y se muestran distinto. El
+  título del informe no manda: un "revisão especial" que audita con seguridad razonable y opina es auditoría plena. Los japoneses salen
+  del resumen de la J.League sin informe: FALTA EN EL PDF, no "sin informe". Un documento parcial que es la fuente del año publicado vale
+  para la línea de auditoría.
+
 - Cuando el balance no dice quién es el dueño de una sociedad intermedia, la cita se busca en el registro público (Companies House, PSC)
   antes que deducirla.
 
@@ -66,7 +72,11 @@
   S.L." (no "PEL"), Union SG 2025 "C² Réviseurs & Associés SRL", Elche 2025 "Fides Audit Assurance, S.L." (sin "Auditores", que es el
   sello del colegio), Goiás 2008 "Terco Grant Thornton Auditores Independentes" (el nombre está en un logo junto a la firma; Henrique
   Vinicius da Paz es el contador del club). Confirmada: Godoy Cruz 2020 "Carlos E. Bermejillo".
-  ASSET_V 1282 en la rama.
+- To-do 282 e: campo opcional `alcance` en `auditoria.jsonl` (validado por `tools/auditoria.mjs`, con nota obligatoria, publicado en
+  `CLUB_AUDITORIA[club][año].alcance`): `revision_limitada` (Como 2025), `procedimientos_acordados` (Osijek 2025: el informe dice que no es
+  auditoría ni revisión), `proposito_especial` (Kifisia 2022-2024, estados para la licencia) y `grupo` (Club América 2025, cuentas de
+  Ollamani). Criciúma 2015-2019 queda como auditoría plena, con nota (el título dice "revisão especial" pero audita y opina). La pantalla la
+  hace fos-pantallas con el contrato que le pasé. ASSET_V 1283 en la rama.
 
 ### Qué queda (para TODO)
 

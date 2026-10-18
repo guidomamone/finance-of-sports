@@ -23,6 +23,12 @@
 //   sobre una parte del balance y abstención sobre el resto es abstencion.
 //   La entidad que organiza una liga (AFA, LFP) va con "ligaId" (de data/leagues.js) en vez de "clubId" y con "entidad":{"nombre","legal"?};
 //   sus citas no pasan por quien.mjs (no es un club del sitio). Sale en data/auditoria/_ligas.js (window.LIGA_AUDITORIA[ligaId][anio]).
+//   alcance (opcional, con nota; sin el campo es una auditoría plena de las cuentas del club). Decisión de Guido, 2026-10-18:
+//     revision_limitada         revisión limitada (ISRE 2410 y similares): "no encontramos nada", no es una auditoría (Como 2025).
+//     procedimientos_acordados  procedimientos acordados: la firma comprobó cifras puntuales; ni auditoría ni revisión (Osijek 2025).
+//     proposito_especial        auditoría de estados preparados para la licencia de la federación, no de las cuentas legales (Kifisia).
+//     grupo                     auditoría de las cuentas del grupo dueño del club, no del club solo (Club América 2025, Ollamani).
+//   Un "relatório de revisão especial" que audita con seguridad razonable y da opinión es una auditoría plena (Criciúma 2015-2019).
 //   nota (opcional): una aclaración interna para la próxima sesión; no se publica.
 //
 // CHEQUEOS (código 1 si alguno falla): JSON y códigos válidos; el club y el año tienen un balance cargado; cada cita está en su línea
@@ -38,7 +44,7 @@
 //                                                    importan (informe del auditor, opinión, firma), con número de línea, para el
 //                                                    subagente; y Generados/auditoria/_lista.txt
 //
-// QUÉ GENERA: data/auditoria/<país>.js (window.CLUB_AUDITORIA[clubId][anio] = { auditor, dictamen, continuidad, fuente:{md,linea} })
+// QUÉ GENERA: data/auditoria/<país>.js (window.CLUB_AUDITORIA[clubId][anio] = { auditor, dictamen, continuidad, alcance?, fuente:{md,linea} })
 // y data/auditoria/_paises.js (window.AUDITORIA_PAISES, los países con archivo).
 // ============================================================================
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, rmSync } from 'node:fs';
@@ -58,6 +64,7 @@ const CHECK = args.includes('--check');
 
 const DICTAMENES = new Set(['sin_salvedades', 'con_salvedades', 'adverso', 'abstencion', 'sin_informe', 'falta_transcripcion']);
 const TIPOS = new Set(['firma', 'persona', 'organismo']);
+const ALCANCES = new Set(['revision_limitada', 'procedimientos_acordados', 'proposito_especial', 'grupo']);
 // El nombre corto de cada red, para que "Deloitte & Touche SpA" y "Deloitte LLP" sean el mismo auditor en el sitio.
 const REDES = [[/deloitte/i, 'Deloitte'], [/pricewaterhouse|\bpwc\b/i, 'PwC'], [/\bkpmg\b/i, 'KPMG'], [/ernst\s*&\s*young|\bey\b/i, 'EY'],
   [/\bbdo\b/i, 'BDO'], [/grant\s*thornton/i, 'Grant Thornton'], [/mazars/i, 'Forvis Mazars'], [/\brsm\b/i, 'RSM'], [/baker\s*tilly/i, 'Baker Tilly'],
@@ -135,6 +142,11 @@ lineas.forEach((l, i) => {
     chequearCita(n, c.dictamen, o.clubId, o.anio, 'dictamen', esLiga);
   }
   if (o.continuidad) chequearCita(n, c.continuidad, o.clubId, o.anio, 'continuidad', esLiga);
+  if ('alcance' in o) {
+    if (!ALCANCES.has(o.alcance)) err(n, `alcance desconocido "${o.alcance}"`);
+    if (!o.auditor) err(n, 'alcance va solo con un informe que tiene auditor');
+    if (!o.nota) err(n, 'alcance lleva una nota que diga qué dice el informe');
+  }
   (esLiga ? registroLigas : registro).set(k, o);
 });
 
@@ -193,7 +205,8 @@ for (const o of [...registro.values()].filter(o => o.dictamen !== 'falta_transcr
   const pais = clubs[o.clubId].country.toLowerCase();
   const c = o.citas || {};
   const fuente = c.dictamen ? { md: c.dictamen.md, linea: c.dictamen.linea } : null;
-  ((porPais[pais] ||= {})[o.clubId] ||= {})[o.anio] = { auditor: corto(o.auditor) || null, dictamen: o.dictamen, continuidad: o.continuidad, fuente };
+  ((porPais[pais] ||= {})[o.clubId] ||= {})[o.anio] = { auditor: corto(o.auditor) || null, dictamen: o.dictamen, continuidad: o.continuidad,
+    ...(o.alcance ? { alcance: o.alcance } : {}), fuente };
 }
 const CAB = '// Generado por tools/auditoria.mjs desde Admin/registros/auditoria.jsonl. No editar a mano.\n';
 const archivos = {};

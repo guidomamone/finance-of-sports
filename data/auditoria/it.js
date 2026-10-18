@@ -650,6 +650,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    },
    "dictamen": "sin_salvedades",
    "continuidad": false,
+   "alcance": "revision_limitada",
    "fuente": {
     "md": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.md",
     "linea": 1751
