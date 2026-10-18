@@ -162,8 +162,10 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   `data/rankings/_regiones.js` (lo escribe `tools/generate-rankings.js` en cada carga). Ligas: buscador, regiones y una fila por país; la
   liga elegida con ranking de barras, composición apilada y simulador. No hay pestaña Fuentes ni botón del club en el header: se busca con
   "Buscar un club o una liga" (Ctrl/Cmd K) y el club se nombra en el título de Finanzas.
-- El estado va en la URL (`?tab=…&club=…&anios=…&liga=…&anio=…`), se lee al abrir y con "atrás"; la moneda, la inflación, el formato y
-  Comparar todavía no (to-do 271). Cómo está hecho: `Admin/PANTALLA.md`. Mockups: artifact de Design "Pantallas FoS".
+- El estado va en la URL: pestaña, club, años, liga y ejercicio, y solo cuando no son los de siempre la moneda, `real=1` (inflación),
+  `formato=club` y los dos lados de Comparar (`a`, `b`); también el grupo multiclub (`?tab=grupo&grupo=…`). Se lee al abrir y con
+  "atrás"; un club, liga o moneda que el sitio no tiene se ignora. Cómo está hecho: `Admin/PANTALLA.md`. Mockups: artifact de Design
+  "Pantallas FoS".
 
 ### Comparar con el diseño de Finanzas
 

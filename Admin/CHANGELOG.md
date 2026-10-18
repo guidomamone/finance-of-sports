@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 720 — Merge de pantallas: el grupo en la URL y el buscador, y el 271 (2026-10-18)
+
+`node tools/worktree.mjs mergear pantallas`, sin conflictos; P0 0 / P1 0; ASSET_V 1264. Probado: un link de Comparar con inflación.
+
+- Grupo multiclub enganchado: `?tab=grupo&grupo=<id>` en la URL, 'grupo' en `TABS_SIN_CLUB` y el resultado "Grupos multiclub" del buscador.
+- To-do 271: un link copiado abre lo mismo que se estaba viendo: `moneda`, `real=1`, `formato=club` y los dos lados de Comparar (`a`, `b`).
+- TODO: fuera el 271; el 273 y el 282 con lo que se definió (campos de estadio y sponsor; auditoría también de la entidad organizadora).
+
 ## Versión 719 — Merge de finanzas: estructura del club y grupos multiclub (2026-10-18)
 
 Merge a mano: `data/lang/en.js` con los bloques de las dos ramas (pantallas y finanzas), `index.html` con los scripts de finanzas;

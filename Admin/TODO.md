@@ -24,7 +24,7 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 271 y enganchar la página del grupo (280 c) · finanzas 281, 282, 242, 294 · pipeline 289, 290, 288, 232, 279, 286, 287 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
+Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 282 (pantalla) y 273 (pantalla, cuando esté el dato) · finanzas 281, 282, 242, 294 · pipeline 289, 290, 288, 232, 279, 286, 287 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
 datos-sourcing 276, 277, 273, 252 · Reino Unido (261) en su propia sesión · la principal: 268, 291, 250, 244 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
@@ -62,7 +62,6 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 294: llenar el registro de entidades
 
 **E2. Distribución (depende de 246)**
-* 271: lo que falta del estado en la URL (moneda, inflación, formato y Comparar)
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
 * 254 + 243: repaso mensual de métricas y lo que se busca sin resultado (eligen qué club sumar en D)
 * 242: para periodistas: CSV, cómo citar y metodología pública
@@ -232,17 +231,19 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    del Worker fos-supabase-ping el 2026-10-19 12 UTC (Cloudflare → fos-supabase-ping → Logs); (b) que el dashboard
    https://claude.ai/artifact/7kPta8U7BxyiGRKAyayHhA se actualice solo (hoy: correr tools/supabase/stats.mjs --json y
    tools/cloudflare-visitas.mjs --json y subir los archivos; se puede programar).
-271. EL ESTADO EN LA URL, LO QUE FALTA (cierre de la sesión pantallas, 2026-10-17). Ya van pestaña, club, años, liga y ejercicio
-   (`?tab=…&club=…&anios=…&liga=…&anio=…`); faltan la moneda, la inflación, el formato y Comparar.
-273. ESTADIO Y SPONSOR DE CADA EJERCICIO (pedido de Guido, 2026-10-18). Conseguir, por club y ejercicio, el estadio (cuál, y su capacidad)
-   y el sponsor principal, con su fuente, como contexto de los números. Definir con Guido qué campos exactamente (¿sponsor de camiseta?
-   ¿monto, si es público?) y de dónde salen antes de juntar nada.
+273. ESTADIO Y SPONSOR DE CADA EJERCICIO (pedido de Guido, 2026-10-18). Por club y temporada: estadio, capacidad, sponsor de camiseta
+   (frente) y marca técnica, con el link a la versión exacta de la página de Wikipedia de la temporada; sin monto. Los junta fos-datos.
+   Se ve en Finanzas (Guido: "tiene que estar en finanzas"; link de salto, bloque o fila de la ficha, a decidir con él); la pantalla,
+   recién cuando fos-datos avise el formato y el archivo.
 281. FINANZAS: INGRESOS RESUMIDOS DE LAS OTRAS ENTIDADES (pedido de Guido, 2026-10-17). El dato ya está (línea `ingresos` del registro de
    entidades, piloto Portugal: Vitória 2021/22, Tondela 2021, Braga). Falta: transcribir por subagentes los ~17 documentos de entidades de
    clubes portugueses publicados sin `.md` (Porto 3, Braga 2022-23, Marítimo 5, Belenenses, Chaves, Vizela 2, Académica, União de
    Leiria) y sumar su línea de ingresos; y la pantalla, con mockup (artboard "Vitória y Tondela (to-do 281)" de "Pantallas FoS").
-282. FINANZAS: QUIÉN AUDITA Y QUÉ DICE EL INFORME (pedido de Guido, 2026-10-17). El auditor (p. ej. Deloitte) y el dictamen en pocas
-   palabras (sin salvedades / con salvedades / incertidumbre sobre la continuidad). El dato está en los `.md` de casi todos los documentos.
+282. QUIÉN AUDITA Y QUÉ DICE EL INFORME (pedido de Guido, 2026-10-17). El auditor y el dictamen en pocas palabras (sin salvedades /
+   con salvedades / adverso / abstención / sin informe; duda sobre la continuidad), en Finanzas, con el link "ver en el balance". También en
+   Ligas, pero del balance propio de la entidad que organiza la liga (AFA, LFP), no de los clubes (aclaración de Guido); el sitio todavía
+   no tiene esas entidades. El dato está en piloto en la rama finanzas (19 balances, `data/auditoria/`); un club-año que no está es "no
+   sabemos", no "sin informe". El pipeline va a exigir el dato al dar de alta un club (fos-pipeline). Mockup antes de codear.
 283. VÅLERENGA Y AALESUND: SUMAR EL AS Y EL FLI EN UN SOLO AÑO (pedido de Guido, 2026-10-17). El AS tiene los ingresos comerciales y el
    FLI los sueldos, que el AS le paga como transferencia (Vålerenga Elite 2023: 85,4 M de sueldos; el AS le transfiere 87,5 M); ninguno
    consolida. Sumar los dos documentos sin contar dos veces la transferencia, con una nota en Finanzas que explique la suma.
