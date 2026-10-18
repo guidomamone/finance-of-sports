@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title data-i18n="site.title">El deporte en Números | Las finanzas de los clubes, directo de la fuente</title>
-<link rel="stylesheet" href="css/styles.css?v=1272">
+<link rel="stylesheet" href="css/styles.css?v=1274">
 <!-- Cloudflare Web Analytics -->
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3deae274c6f346eab1a19f78e41ac035"}'></script>
 <!-- End Cloudflare Web Analytics -->
@@ -40,6 +40,7 @@
       <button data-section="cuenta" data-i18n="nav.cuenta">Mi Cuenta</button>
       <!-- La página de un grupo multiclub: se llega desde Finanzas o el buscador, no desde el menú (el CSS la saca del menú). -->
       <button data-section="grupo" data-i18n="nav.grupo" hidden>Grupo</button>
+      <button data-section="sponsor" data-i18n="spo.nav" hidden>Sponsor</button>
     </nav>
     <div class="m-extra">
       <div class="m-idioma"><span data-i18n="header.langLabel">Idioma</span><div class="m-idioma-op" id="mIdioma"></div></div>
@@ -294,6 +295,7 @@
       <a href="#finTrendCard" data-i18n="finanzas.idx.trend">Evolución</a>
       <a href="#finPL" data-i18n="finanzas.pl.title">Estado de resultados</a>
       <a href="#finDeuda" data-i18n="finanzas.debt.title">Deuda</a>
+      <a href="#finContexto" data-i18n="ctx.title" hidden>Estadio y camiseta</a>
       <a href="#ligaSimWrap" data-i18n="finanzas.idx.otra">En otra liga</a>
       <a href="#finEstructura" data-i18n="estr.idx" hidden>Estructura</a>
       <a href="#finAuditoria" data-i18n="aud.idx" hidden>Auditoría</a>
@@ -345,6 +347,14 @@
       <!-- En la vista multi-año y más de un ejercicio, esta reemplaza a la de arriba. La llena FIN_MULTI_DEBT, js/finanzas-multi.js. -->
       <div class="table-scroll"><table id="finanzasDebtMulti" class="pl-multi" hidden><thead></thead><tbody></tbody></table></div>
       <p class="source-note" id="finanzasDebtNote" style="color:var(--azul);font-weight:600;"></p>
+    </div>
+
+    <!-- ESTADIO Y CAMISETA: estadio, capacidad, sponsor de camiseta y marca técnica de cada ejercicio elegido, con su fuente. La llena
+         FIN_CONTEXTO (js/contexto.js); sin datos del club se esconde, con su link del índice. -->
+    <div class="card ctx-card" id="finContexto" hidden>
+      <h2 data-i18n="ctx.title">Estadio y camiseta</h2>
+      <p class="subtitle" data-i18n="ctx.sub">Dónde jugó el club y quién estuvo en la camiseta cada temporada. Es contexto: la plata de los sponsors está en Ingresos, dentro de Comercial / Sponsors.</p>
+      <div class="table-scroll"><table class="ctx-tabla"><thead></thead><tbody></tbody></table></div>
     </div>
 
     <!-- "¿Cómo le iría este club en otra liga?": simulación por plata, no predicción deportiva. Es una pregunta con respuesta, así
@@ -680,6 +690,12 @@
     <div id="grupoView" class="grupo-view"></div>
   </section>
 
+  <!-- SPONSOR O MARCA TÉCNICA: su página, con los equipos de hoy y todas sus temporadas. La llena SPONSOR_VIEW (js/sponsor.js), que baja
+       data/sponsors.js recién al abrirla (es grande). -->
+  <section id="sponsor">
+    <div id="sponsorView" class="spo-view"></div>
+  </section>
+
   <section id="cuenta">
     <h1 data-i18n="cuenta.title">Mi Cuenta</h1>
     <p class="subtitle" data-i18n="cuenta.sub">Iniciá sesión para que tus búsquedas queden guardadas.</p>
@@ -765,48 +781,50 @@
 <!-- ASSET_V: versión de los assets propios, para invalidar el cache del navegador en cada deploy (si no, un visitante se queda
      con un js/*.js viejo mientras el HTML es nuevo). SUBIR ESTE NÚMERO cada vez que cambia un archivo de `js/` o `data/`. Lo leen
      también los cargadores dinámicos (loadClubData, I18N.load, loadRanking). -->
-<script>window.ASSET_V = '1272';</script>
-<script src="data/lang/langs.js?v=1272"></script>
-<script src="js/i18n.js?v=1272"></script>
-<script src="data/clubs.js?v=1272"></script>
+<script>window.ASSET_V = '1274';</script>
+<script src="data/lang/langs.js?v=1274"></script>
+<script src="js/i18n.js?v=1274"></script>
+<script src="data/clubs.js?v=1274"></script>
 <!-- data/club-index.js: el índice liviano de TODOS los clubes (nombre, país, calidad del dato, ejercicios), GENERADO por
      tools/generate-club-index.js. Lo que hay que mostrar de un club ANTES de entrar a él vive adentro de data/<país>/<club>-data.js, que
      no se carga hasta que el visitante lo elige. -->
-<script src="data/club-index.js?v=1272"></script>
+<script src="data/club-index.js?v=1274"></script>
 <!-- data/leagues.js: el CATÁLOGO de la taxonomía del selector (deportes, regiones, países, ligas). NO tiene membresía: qué club
      jugó en qué liga es (club, ejercicio) y vive en data/club-leagues.js. Ver la cabecera de data/leagues.js ("no existe ninguna
      arista club → liga sin año"). -->
-<script src="data/leagues.js?v=1272"></script>
-<script src="data/club-leagues.js?v=1272"></script>
-<script src="data/category-map.js?v=1272"></script>
-<script src="data/site-labels.js?v=1272"></script>
-<script src="data/currency-map.js?v=1272"></script>
-<script src="data/sources-view.js?v=1272"></script>
+<script src="data/leagues.js?v=1274"></script>
+<script src="data/club-leagues.js?v=1274"></script>
+<script src="data/category-map.js?v=1274"></script>
+<script src="data/site-labels.js?v=1274"></script>
+<script src="data/currency-map.js?v=1274"></script>
+<script src="data/sources-view.js?v=1274"></script>
 <!-- Ningún data file de club se carga acá: el sitio abre en la portada sin club, y CUALQUIER club entra por loadClubData() cuando
      el visitante lo elige. -->
-<script src="js/info-tip.js?v=1272"></script>
-<script src="data/deflactores.js?v=1272"></script>
-<script src="js/finanzas-calc.js?v=1272"></script>
-<script src="js/finanzas-render.js?v=1272"></script>
-<script src="js/finanzas-anios.js?v=1272"></script>
-<script src="js/finanzas-multi.js?v=1272"></script>
+<script src="js/info-tip.js?v=1274"></script>
+<script src="data/deflactores.js?v=1274"></script>
+<script src="js/finanzas-calc.js?v=1274"></script>
+<script src="js/finanzas-render.js?v=1274"></script>
+<script src="js/finanzas-anios.js?v=1274"></script>
+<script src="js/finanzas-multi.js?v=1274"></script>
 <!-- Estructura del club: el índice de grupos multiclub (chico, lo usa también el buscador) y la tarjeta de Finanzas. -->
-<script src="data/entidades/_grupos.js?v=1272"></script>
-<script src="js/finanzas-estructura.js?v=1272"></script>
-<script src="js/grupo.js?v=1272"></script>
+<script src="data/entidades/_grupos.js?v=1274"></script>
+<script src="js/finanzas-estructura.js?v=1274"></script>
+<script src="js/grupo.js?v=1274"></script>
 <!-- Quién auditó cada balance: qué países tienen dato (chico) y la tarjeta de Finanzas, que baja el país al elegir un club. -->
-<script src="data/auditoria/_paises.js?v=1272"></script>
-<script src="js/auditoria.js?v=1272"></script>
-<script src="js/citar.js?v=1272"></script>
+<script src="data/auditoria/_paises.js?v=1274"></script>
+<script src="js/auditoria.js?v=1274"></script>
+<script src="js/citar.js?v=1274"></script>
+<script src="js/contexto.js?v=1274"></script>
+<script src="js/sponsor.js?v=1274"></script>
 <!-- js/selector.js: el selector de club. Se alimenta solo de clubs.js + club-index.js + leagues.js + club-leagues.js: dibuja todos
      los clubes sin bajar un solo data/<país>/<club>-data.js. -->
-<script src="js/selector.js?v=1272"></script>
-<script src="data/destacados.js?v=1272"></script>
-<script src="js/liga.js?v=1272"></script>
+<script src="js/selector.js?v=1274"></script>
+<script src="data/destacados.js?v=1274"></script>
+<script src="js/liga.js?v=1274"></script>
 <!-- js/cuenta.js: login con Google vía Supabase + guardado automático de búsquedas. No sabe cómo se renderiza el resto del sitio:
      recibe `reopen` por CUENTA.init() y expone notifyStateChange() para que index.html avise cuando cambia el club/año. -->
-<script src="js/cuenta.js?v=1272"></script>
-<script src="js/principal.js?v=1272"></script>
+<script src="js/cuenta.js?v=1274"></script>
+<script src="js/principal.js?v=1274"></script>
 
 </body>
 </html>

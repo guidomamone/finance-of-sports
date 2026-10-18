@@ -133,6 +133,7 @@
     if(window.FIN_ESTRUCTURA) FIN_ESTRUCTURA.render(currentClub, FIN_SEL.years());
     if(window.FIN_AUDITORIA) FIN_AUDITORIA.render(currentClub, FIN_SEL.years());
     if(window.FIN_CITAR) FIN_CITAR.render(currentClub, FIN_SEL.years());
+    if(window.FIN_CONTEXTO) FIN_CONTEXTO.render(currentClub, FIN_SEL.years());
     if(window.FIN_REAL_UI) FIN_REAL_UI.render(currentClub, FIN_SEL.years());
     // Guardado en Mi Cuenta: cada vez que el club/año/gestión se asienta se avisa a js/cuenta.js, que guarda solo (no es un botón).
     // Sin sesión, o en la portada, CUENTA.notifyStateChange no hace nada.
@@ -276,7 +277,7 @@
   // applyClubMode(): la única función que decide qué se ve según haya club o no. Hoy todas las pestañas funcionan sin club (Finanzas
   // sin club es el card del selector); TABS_SIN_CLUB queda para una pestaña futura que no signifique nada sin uno: se escondería
   // hasta que lo haya, y si el visitante estaba en ella, vuelve a Inicio.
-  const TABS_SIN_CLUB = ['inicio', 'vs', 'liga', 'finanzas', 'cuenta', 'grupo'];
+  const TABS_SIN_CLUB = ['inicio', 'vs', 'liga', 'finanzas', 'cuenta', 'grupo', 'sponsor'];
   function applyClubMode(){
     const cold = !currentClub;
     document.getElementById('mainNav').style.display = '';
@@ -311,6 +312,9 @@
   CUENTA.init({
     reopen: reopenSavedSearch,
   });
+
+  // La página de un sponsor tampoco sabe cargar un club: tocar un equipo lleva a su Finanzas por el mismo camino que el selector.
+  if(window.SPONSOR_VIEW) SPONSOR_VIEW.init({ irAClub: id => selectClub(id).then(() => irASeccion('finanzas')) });
 
   // La vista de liga tampoco sabe navegar ni cargar un club: se le pasa qué hacer cuando
   // el visitante clickea una barra o una fila de la tabla, que es ir a Finanzas de ese club.
@@ -630,7 +634,7 @@
   // ==========================================================================
   // `moneda`, `real` y `formato` van solo cuando no son los de siempre (USD, sin ajustar, formato simplificado): un link común queda
   // corto. `a` y `b` son los dos lados de Comparar (ladoAURL()).
-  var URL_CLAVES = ['tab', 'club', 'anios', 'liga', 'anio', 'grupo', 'moneda', 'real', 'formato', 'a', 'b'];
+  var URL_CLAVES = ['tab', 'club', 'anios', 'liga', 'anio', 'grupo', 'sponsor', 'moneda', 'real', 'formato', 'a', 'b'];
   // UN LADO DE COMPARAR EN TEXTO: bloques separados por "~"; un bloque de clubes es "c.<club>:<año>,<club>:<año>" (sin año = el más
   // reciente) y uno de liga "l.<liga>.<años separados por coma>"; al final ".s" (suma) o ".p" (promedio) solo si no es el de siempre
   // (clubes suman, ligas promedian). `?tab=vs&a=c.boca:2024&b=c.river:2024`, `b=l.es-laliga.2025`.
@@ -685,6 +689,7 @@
       if(c.league){ e.liga = c.league; if(c.year) e.anio = c.year; }
     }
     if(tab === 'grupo' && window.GRUPO_VIEW && GRUPO_VIEW.current().grupo) e.grupo = GRUPO_VIEW.current().grupo;
+    if(tab === 'sponsor' && window.SPONSOR_VIEW && SPONSOR_VIEW.current().sponsor) e.sponsor = SPONSOR_VIEW.current().sponsor;
     return e;
   }
   function escribirURL(modo){
@@ -705,7 +710,7 @@
     const anios = (p.get('anios') || '').split(',').map(Number).filter(Number.isFinite).filter(Boolean);
     const liga = p.get('liga');
     const anio = Number(p.get('anio')) || null;
-    const grupo = p.get('grupo');
+    const grupo = p.get('grupo'), sponsor = p.get('sponsor');
     const moneda = p.get('moneda'), real = p.get('real') === '1', formatoClub = p.get('formato') === 'club';
     aplicandoURL = true;
     let paso = Promise.resolve();
@@ -728,6 +733,8 @@
       }
       if(tab === 'liga') return (liga && (window.LEAGUES || {})[liga]) ? LIGA_VIEW.show(liga, anio) : LIGA_VIEW.frio();
       if(tab === 'grupo' && window.GRUPO_VIEW && (window.GRUPOS_INDICE || []).some(g => g.id === grupo)) return GRUPO_VIEW.show(grupo);
+      // Un sponsor que no existe lo dice la propia página ("No encontramos ese sponsor"): para saberlo hay que bajar data/sponsors.js.
+      if(tab === 'sponsor' && window.SPONSOR_VIEW && sponsor) return SPONSOR_VIEW.show(sponsor);
     }).then(() => {
       const btn = document.querySelector('#mainNav button[data-section="' + tab + '"]');
       if(btn && !btn.hidden && !btn.classList.contains('active')) irASeccion(tab);
@@ -804,6 +811,7 @@
     // refreshFinanzas(), acá arriba, ya redibuja la ficha de Fuentes de Finanzas.
     // La pestaña Ligas también arma todo su contenido en JS.
     LIGA_VIEW.refresh();
+    if(window.SPONSOR_VIEW) SPONSOR_VIEW.refresh();
     pintarConteoInicio();
     rotularMenuMovil();
     pintarVistaFin();

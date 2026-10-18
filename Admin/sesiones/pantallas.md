@@ -148,14 +148,28 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
 
 ## Después del cuarto merge del 2026-10-18
 
+### Qué cambió (para CHANGELOG)
+
+- To-do 273: tarjeta "Estadio y camiseta" en Finanzas, después de Deuda y con su link en el índice de la página (`js/contexto.js`,
+  `#finContexto`): una columna por ejercicio elegido, filas estadio, capacidad, sponsor de camiseta y marca técnica ("—" si no se sabe),
+  y la fuente de cada ejercicio (la temporada de Wikipedia; si algún campo se cargó a mano, también `fuenteManual`). Carga
+  `data/contexto/<país>.js` al elegir un club; sin dato del club, la tarjeta y su link se esconden. Mockup aprobado: "Finanzas · estadio
+  y camiseta" de "Pantallas FoS". Probado con Boca (3 ejercicios) y Akron Tolyatti (campos a mano). ASSET_V 1273.
+
+- To-do 296: página de cada sponsor de camiseta y marca técnica (`js/sponsor.js`, sección `#sponsor`, `?tab=sponsor&sponsor=<id>`):
+  rol, nombre y resumen ("Hoy en N equipos · M equipos desde …, en K ligas"), los equipos de hoy (tocar uno lleva a su Finanzas; los que
+  el sitio no tiene, en gris y sin link) y todas las temporadas como una línea de tiempo (una fila por equipo, un cuadro por temporada;
+  naranja camiseta, azul marca si tiene los dos roles), con la fuente de Wikipedia de cada liga. `data/sponsors.js` se baja recién al
+  abrir la página. Se llega tocando el sponsor o la marca en "Estadio y camiseta" (se resuelve por club y rol). 'sponsor' en
+  `URL_CLAVES`, `estadoActual()`, `aplicarURL()` y `TABS_SIN_CLUB`; se redibuja al cambiar el idioma. Mockup aprobado: "Página de
+  sponsor · Betano" de "Pantallas FoS". Probado: Betano (6 hoy, 15 equipos, 9 ligas), Betsson desde Boca y "atrás", Adidas (191 equipos,
+  30 temporadas), escritorio y teléfono. ASSET_V 1274.
+
 ### Qué queda (para TODO)
 
-- 273: mockup "Finanzas · estadio y camiseta" en "Pantallas FoS" (tarjeta con una columna por ejercicio: estadio, capacidad, sponsor de
-  camiseta y marca técnica, y el link a la temporada de Wikipedia). El código espera `data/contexto/` en main (merge de datos-sourcing
-  y fast-forward). Rareza del dato para fos-datos: el mismo estadio sale como "Alberto J. Armando" y "La Bombonera" según la temporada.
-  Detalle del dato (datos-sourcing 28dc4265a5): un ejercicio con campos cargados a mano trae `fuenteManual` (url) y `manual` (la
-  lista de campos, por ejemplo ["estadio","capacidad"]); `fuente` sigue siendo la revisión de Wikipedia para los demás. Sin página de
-  Wikipedia, solo hay `fuente` y es la manual. La fuente de un campo que está en `manual` es `fuenteManual`.
+- Borrar el 273 y el 296.
+- Los sponsors no aparecen en el buscador: `data/sponsors.js` pesa ~650 KB y no se carga de entrada. Para sumarlos haría falta un
+  índice chico (id y nombre) que genere `tools/generate-sponsors.js`.
 - 296, página por sponsor y por marca técnica (aviso de fos-datos, rama datos-sourcing f45caf8dba, sin mergear): `data/sponsors.js`
   (generado por `tools/generate-sponsors.js`, ~650 KB: cargarlo solo en esa página; fos-datos lo parte por letra o liga si hace falta).
   `window.SPONSORS = { actuales: { ligaId: año }, fuentes: { "ligaId|año": url }, lista: { id: { n, roles: ["c"|"m"], e: [[ligaId,
