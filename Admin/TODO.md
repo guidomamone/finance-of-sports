@@ -25,7 +25,7 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 297 (cuando esté el índice) y 282 en Ligas (cuando haya el dato del 295) · finanzas 281, 282, 294 · pipeline 289, 290, 288, 232, 279, 286, 287, 298 · onboarding 292, 238, 285, 284, 283, 195, 165 c, 299 ·
-datos-sourcing 273 (completar el dato), 297 (el índice), 252, 295 · Reino Unido (261) en su propia sesión · la principal: 268, 291, 250, 244 y los merges; el 246 va
+datos-sourcing 273 (completar el dato), 297 (el índice), 252, 295 · Reino Unido (261) en su propia sesión · proyecto 250, 244, 300 · la principal: 268, 291 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
 Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
@@ -36,6 +36,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 292: transcripciones por subagentes de los 6 países: validar, Mistral y cargar
 
 **B. Bases baratas que después cuestan caro cambiar**
+* 300: auditoría programada semanal (y el dashboard al día)
 * 250: hooks: auditoría antes del commit, skills, ASSET_V (vuelve automáticas reglas que hoy dependen de acordarse)
 * 244: licencia del dataset y de cada fuente (lo que alguien copie sin licencia no se recupera)
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos)
@@ -308,6 +309,9 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    frena hasta agregar su fila a PAISES: que la proponga.
 299. LIGAS DE ESTONIA (datos). No están en `data/leagues.js`: propuesto `ee-meistriliiga` (tier 1) y `ee-esiliiga` (tier 2). Las 9 altas
    estonias quedan con liga null hasta entonces.
+300. AUDITORÍA PROGRAMADA (pedido de Guido, 2026-10-18). Una tarea programada semanal en la Mac de Guido que corra `node tools/audit.js` y
+   `auditAll()` (preview con `?audit=1`), actualice el dashboard de usuarios y visitas (tools/supabase/stats.mjs y tools/cloudflare-visitas.mjs,
+   cierra lo que queda del 268) y avise solo si algo sale de P0 0 / P1 0 o un año deja de cerrar.
 270. ESTIMAR UN CLUB QUE NUNCA CARGAMOS: VOLVER A MEDIR (pedido de Guido, 2026-10-17). Está PRENDIDO desde el 2026-10-18 (decisión de
    Guido: en Ligas todo club sin balance figura como estimado), con 50% de error (regresión sin historia: mediana de la liga-año, división,
    posición en la tabla). Volver a medir (`node tools/estimar.mjs --medir`) cuando haya más clubes cargados. Variable sin medir: partidos
