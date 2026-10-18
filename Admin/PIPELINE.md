@@ -267,6 +267,17 @@ Mitigaciones:
   intereses cobrados y pagados los dos en positivo; en bloque, 2021 y 2025 entraban por la tolerancia con el cobrado cargado como gasto.
   Bélgica (to-do 298 b1): el esquema NBB imprime los costos financieros (65/66B, "Kosten van schulden", "Charges des dettes") en positivo;
   están en FIN_GASTO y este escalón les pone el signo sin ajustes `fila` (Beerschot 2025).
+  Escalón "códigos NBB" (to-do 298 t; `tools/nbb.mjs`, que trae la escalera y los casos): un estado belga con los códigos legales del
+  esquema NBB (de 70/76A, 70/74 o 9900 hasta 9904; en tabla o en texto suelto) se lee por sus códigos: se cargan las hojas del esquema
+  con el signo de su código (las reversiones "(+)/(-)" negativas restan; el detalle 600/8 + 609 o 650/652/9 si suma su renglón, nunca
+  los dos; la Brutomarge abreviada se abre en Omzet/60/61 + el residuo implícito solo si el residuo no es negativo, y si no queda sin
+  abrir: negativa, como gasto). Compuerta: cierran EXACTO (media unidad por fila) todos los totales impresos de la columna del año; si
+  no, la escalera de siempre. No corre si el documento tiene ajustes `fila` (manda el ajuste). Con esas filas la escalera prueba primero
+  la lectura 4. Dos escalones más, con la misma lectura: el chequeo del año vecino compara los códigos 9904 y 9901 impresos de las dos
+  columnas cuando los ingresos se presentan distinto (Brutomarge abierta en un año y no en el otro, reclasificaciones, esquema abreviado
+  contra completo), y el caso "primer año" no hace falta (cada código tiene un solo lado). Medido sobre prueba-completa + los 60 belgas
+  con verificación: los 358 de otros países idénticos; en Bélgica 17 documentos pasan de cola a OK, ninguno de OK a cola, y la carga de
+  los 10 años belgas publicados reproduce lo publicado (10 de 10, como antes). Ensayo gratis: `node tools/nbb.mjs "<archivo.md>"`.
   Escalón "de los cuales" (to-do 298 b3): una fila que empieza con "Waarvan:", "dont", "davon", "of which", "de los cuales"... (DE_LOS_CUALES
   de `tools/vocabulario.mjs`) es una parte de la de arriba. Si ninguna lectura cerró, se prueban la 4 y la 5 sin esas filas; compuerta,
   cierre EXACTO. Caso: el 76A belga debajo de la Brutomarge (Lierse SK y Patro Eisden 2025), que antes pedía un ajuste `fila` en 0.
