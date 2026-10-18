@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2019-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2019-06-30-individual.md",
- "generado": "2026-10-18T15:37:11.481Z",
+ "generado": "2026-10-18T15:46:15.531Z",
  "estado": "cola",
  "clubId": "lommelsk-be",
  "year": 2019,
@@ -44,6 +44,11 @@
    "dif": 0.0069330000000003
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2018 de este documento suma ingresos 0.891255; el sitio tiene 0.891255"
+  },
+  {
    "nombre": "documento del año 2020",
    "ok": true,
    "detalle": "ingresos de 2019: 1.392528 en este documento y 1.392528 en jaarrekening-2020-06-30-individual.pdf (columna del año anterior)"
@@ -52,11 +57,6 @@
    "nombre": "documento del año 2018",
    "ok": true,
    "detalle": "ingresos de 2018: 0.891255 en jaarrekening-2018-06-30-individual.pdf y 0.891255 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
   }
  ],
  "notas": [

@@ -1,0 +1,114 @@
+{
+ "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2023-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2023-06-30-individual.md",
+ "generado": "2026-10-18T15:46:15.518Z",
+ "estado": "cola",
+ "clubId": "lokerentemse-be",
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "76b4466",
+  "0704560",
+  "3134728",
+  "a1be83c",
+  "b4f36e4",
+  "7c5b083",
+  "d8519df"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 0.591204 - gastos 1.16095 ± financiero 0 ± impuesto 0 no da el impreso -0.593986",
+   "dif": null
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": false,
+   "detalle": "ingresos de 2023: 0.591204 en este documento y 0.893627 en jaarrekening-2024-06-30-individual.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": false,
+   "detalle": "ingresos de 2022: 1.448549 en jaarrekening-2022-06-30-individual.pdf y 0.731659 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: b10 tiene personal y resultados financieros con pocos importes (5); puede que solo aporte plantilla media y no importes de gasto.",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0.591204,
+  "gastos": 1.16095,
+  "financiero": 0,
+  "impuesto": 0,
+  "resultadoImpreso": -0.593986,
+  "resultadoParaCargar": -0.593986,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Brutomarge (+)/(-)",
+   "lado": "ingreso",
+   "M": 0.591204,
+   "pagina": 5,
+   "linea": 195,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "gasto",
+   "M": 1.069496,
+   "pagina": 5,
+   "linea": 200,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.080193,
+   "pagina": 5,
+   "linea": 201,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andere bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.011261,
+   "pagina": 5,
+   "linea": 204,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [],
+ "impuesto": []
+}

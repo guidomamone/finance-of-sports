@@ -1,0 +1,30 @@
+{
+  "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2021-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2021-06-30-individual.pdf",
+  "club": "liersesk-be",
+  "year": 2021,
+  "generatedAt": "2026-10-18T15:27:59.426Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Brutomarge (+)/(-)",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.001436
+      ],
+      "glosa": "Margen bruto (+)/(-)"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.000201
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

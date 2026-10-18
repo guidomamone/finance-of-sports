@@ -1,0 +1,118 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2013-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2013-06-30-individual.md",
+ "mdSha1": "7ee392af3afac04de2e72d95cbceb3b63de35312",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:23.673Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    24,
+    32
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    84,
+    121
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    129,
+    171
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    181,
+    201
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    213,
+    246
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    256,
+    272
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    286,
+    290
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 8,
+   "lineas": [
+    292,
+    315
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    325,
+    330
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 9,
+   "lineas": [
+    334,
+    350
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b6"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Modelo normalizado belga de la Balanscentrale (VKT-vzw), importes en euros sin indicación de miles",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el cuadro 'RESULTATEN' (b6, toelichting 4.5) como desglose de los gastos del estado de resultados (personeelskosten, voorzieningen, financiële kosten)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Bezoldigingen, sociale lasten en pensioenen",
+   "texto": "b6 mezcla datos de personal (cantidad de empleados) con desgloses de gastos de personal y resultados financieros.",
+   "bloques": [
+    "b6"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales de una VZW belga en modelo abreviado. El estado de resultados es b4 (Resultatenrekening), que arranca con Brutomarge, así que los ingresos no aparecen desglosados. b6 abre gastos de personal y partidas financieras. Quedan afuera el balance (b2, b3), la nota de deudas (b5) y el balance social (b7, b8, b10). La escala en unidades se infiere del modelo normalizado y no se vio una frase explícita."
+}

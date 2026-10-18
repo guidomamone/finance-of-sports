@@ -1,0 +1,605 @@
+{
+ "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2022-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Beerschot/jaarrekening-2022-06-30-individual.md",
+ "mdSha1": "93a4fa9bcab66c16ad88ea4977fbbcd571ce20d6",
+ "ubicacionSha1": "53c08ad9d8bf71a9318013c863af37f12d103737",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:27:56.453Z",
+ "ubicacion": {
+  "estado": [
+   "b6",
+   "b7"
+  ],
+  "notas_ingresos": [
+   "b28",
+   "b30",
+   "b31"
+  ],
+  "notas_gastos": [
+   "b29"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b6",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala en el bloque (formato BNB, habitualmente en euros)"
+  },
+  {
+   "bloque": "b7",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala en el bloque"
+  },
+  {
+   "bloque": "b28",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala en el bloque"
+  },
+  {
+   "bloque": "b29",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala en el bloque"
+  },
+  {
+   "bloque": "b30",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala en el bloque"
+  },
+  {
+   "bloque": "b31",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala en el bloque"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b6",
+   "linea": 321,
+   "etiqueta": "Bedrijfsopbrengsten",
+   "actual": "9.234.687",
+   "anterior": "9.325.713",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 322,
+   "etiqueta": "Omzet",
+   "actual": "6.472.600",
+   "anterior": "5.999.114",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 325,
+   "etiqueta": "Andere bedrijfsopbrengsten",
+   "actual": "2.658.177",
+   "anterior": "3.326.599",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 326,
+   "etiqueta": "Niet-recurrente bedrijfsopbrengsten",
+   "actual": "103.910",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 327,
+   "etiqueta": "Bedrijfskosten",
+   "actual": "18.748.604",
+   "anterior": "15.106.275",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 328,
+   "etiqueta": "Handelsgoederen, grond- en hulpstoffen",
+   "actual": "705.033",
+   "anterior": "305.482",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 329,
+   "etiqueta": "Aankopen",
+   "actual": "750.977",
+   "anterior": "395.011",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 330,
+   "etiqueta": "Voorraad: afname (toename) (+)/(-)",
+   "actual": "-45.943",
+   "anterior": "-89.529",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 331,
+   "etiqueta": "Diensten en diverse goederen",
+   "actual": "5.444.145",
+   "anterior": "4.467.328",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 332,
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "actual": "10.375.030",
+   "anterior": "8.892.568",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 333,
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "actual": "1.312.994",
+   "anterior": "1.099.921",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 334,
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "actual": "75.526",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 336,
+   "etiqueta": "Andere bedrijfskosten",
+   "actual": "86.887",
+   "anterior": "116.439",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 338,
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "actual": "748.987",
+   "anterior": "224.536",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 339,
+   "etiqueta": "Bedrijfswinst (Bedrijfsverlies) (+)/(-)",
+   "actual": "-9.513.917",
+   "anterior": "-5.780.562",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 349,
+   "etiqueta": "Financiële opbrengsten",
+   "actual": "5.212",
+   "anterior": "9.988",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 350,
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "actual": "5.212",
+   "anterior": "9.988",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 353,
+   "etiqueta": "Andere financiële opbrengsten",
+   "actual": "5.212",
+   "anterior": "9.988",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 355,
+   "etiqueta": "Financiële kosten",
+   "actual": "58.107",
+   "anterior": "10.827",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 356,
+   "etiqueta": "Recurrente financiële kosten",
+   "actual": "58.107",
+   "anterior": "10.827",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 357,
+   "etiqueta": "Kosten van schulden",
+   "actual": "21.412",
+   "anterior": "2.122",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 359,
+   "etiqueta": "Andere financiële kosten",
+   "actual": "36.695",
+   "anterior": "8.706",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 361,
+   "etiqueta": "Winst (Verlies) van het boekjaar vóór belasting (+)/(-)",
+   "actual": "-9.566.812",
+   "anterior": "-5.781.401",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 364,
+   "etiqueta": "Belastingen op het resultaat (+)/(-)",
+   "actual": "-832",
+   "anterior": "19.845",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 365,
+   "etiqueta": "Belastingen",
+   "actual": "10.000",
+   "anterior": "20.000",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 366,
+   "etiqueta": "Regularisering van belastingen en terugneming van voorzieningen voor belastingen",
+   "actual": "10.832",
+   "anterior": "155",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 367,
+   "etiqueta": "Winst (Verlies) van het boekjaar (+)/(-)",
+   "actual": "-9.565.981",
+   "anterior": "-5.801.246",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 370,
+   "etiqueta": "Te bestemmen winst (verlies) van het boekjaar (+)/(-)",
+   "actual": "-9.565.981",
+   "anterior": "-5.801.246",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b28",
+   "linea": 823,
+   "etiqueta": "Ticketing & abonnementen",
+   "actual": "2.209.239",
+   "anterior": "1.623.378",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Omzet"
+  },
+  {
+   "bloque": "b28",
+   "linea": 824,
+   "etiqueta": "Sponsoring",
+   "actual": "1.536.379",
+   "anterior": "1.264.861",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Omzet"
+  },
+  {
+   "bloque": "b28",
+   "linea": 825,
+   "etiqueta": "TV rechten",
+   "actual": "1.115.001",
+   "anterior": "2.036.710",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Omzet"
+  },
+  {
+   "bloque": "b28",
+   "linea": 826,
+   "etiqueta": "Commercieel",
+   "actual": "1.611.980",
+   "anterior": "1.074.166",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Omzet"
+  },
+  {
+   "bloque": "b28",
+   "linea": 830,
+   "etiqueta": "Exploitatiesubsidies en vanwege de overheid ontvangen compenserende bedragen",
+   "actual": "2.303.611",
+   "anterior": "2.376.796",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Andere bedrijfsopbrengsten"
+  },
+  {
+   "bloque": "b28",
+   "linea": 837,
+   "etiqueta": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "actual": "8.131.706",
+   "anterior": "7.325.568",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)"
+  },
+  {
+   "bloque": "b28",
+   "linea": 838,
+   "etiqueta": "Werkgeversbijdragen voor sociale verzekeringen",
+   "actual": "979.455",
+   "anterior": "503.370",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)"
+  },
+  {
+   "bloque": "b28",
+   "linea": 839,
+   "etiqueta": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+   "actual": "1.035.198",
+   "anterior": "840.219",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)"
+  },
+  {
+   "bloque": "b28",
+   "linea": 840,
+   "etiqueta": "Andere personeelskosten",
+   "actual": "228.672",
+   "anterior": "223.412",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)"
+  },
+  {
+   "bloque": "b29",
+   "linea": 855,
+   "etiqueta": "Geboekt",
+   "actual": "53.285",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)"
+  },
+  {
+   "bloque": "b29",
+   "linea": 858,
+   "etiqueta": "Geboekt",
+   "actual": "22.241",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)"
+  },
+  {
+   "bloque": "b29",
+   "linea": 864,
+   "etiqueta": "Bedrijfsbelastingen en -taksen",
+   "actual": "83.949",
+   "anterior": "103.764",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Andere bedrijfskosten"
+  },
+  {
+   "bloque": "b29",
+   "linea": 865,
+   "etiqueta": "Andere",
+   "actual": "2.938",
+   "anterior": "12.675",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Andere bedrijfskosten"
+  },
+  {
+   "bloque": "b30",
+   "linea": 890,
+   "etiqueta": "Positieve betalingsverschillen",
+   "actual": "5.212",
+   "anterior": "9.988",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Andere financiële opbrengsten"
+  },
+  {
+   "bloque": "b30",
+   "linea": 906,
+   "etiqueta": "Negatieve resultaten uit de omrekening van vreemde valuta",
+   "actual": "507",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Andere financiële kosten"
+  },
+  {
+   "bloque": "b30",
+   "linea": 907,
+   "etiqueta": "Intresten leveranciers",
+   "actual": "32.514",
+   "anterior": "4.863",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Andere financiële kosten"
+  },
+  {
+   "bloque": "b30",
+   "linea": 908,
+   "etiqueta": "Negatieve betalingsverschillen",
+   "actual": "2.791",
+   "anterior": "102",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Andere financiële kosten"
+  },
+  {
+   "bloque": "b30",
+   "linea": 909,
+   "etiqueta": "Negatieve betalingsverschillen",
+   "actual": "883",
+   "anterior": "3.741",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Andere financiële kosten"
+  },
+  {
+   "bloque": "b31",
+   "linea": 923,
+   "etiqueta": "Terugneming van afschrijvingen en van waardeverminderingen op immateriële en materiële vaste activa",
+   "actual": "102.893",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Niet-recurrente bedrijfsopbrengsten"
+  },
+  {
+   "bloque": "b31",
+   "linea": 925,
+   "etiqueta": "Meerwaarden bij de realisatie van immateriële en materiële vaste activa",
+   "actual": "1.016",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Niet-recurrente bedrijfsopbrengsten"
+  },
+  {
+   "bloque": "b31",
+   "linea": 934,
+   "etiqueta": "Niet-recurrente afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "actual": "0",
+   "anterior": "224.536",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Niet-recurrente bedrijfskosten"
+  },
+  {
+   "bloque": "b31",
+   "linea": 936,
+   "etiqueta": "Minderwaarden bij de realisatie van immateriële en materiële vaste activa",
+   "actual": "639.770",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Niet-recurrente bedrijfskosten"
+  },
+  {
+   "bloque": "b31",
+   "linea": 937,
+   "etiqueta": "Andere niet-recurrente bedrijfskosten",
+   "actual": "109.217",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Niet-recurrente bedrijfskosten"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 321,
+  "actual": "9.234.687"
+ },
+ "total_gastos": {
+  "linea": 327,
+  "actual": "18.748.604"
+ },
+ "resultado": {
+  "linea": 367,
+  "actual": "-9.565.981",
+  "anterior": "-5.801.246"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'België' 6.497.600 (L828) solo como desglose geográfico sin sumarlo, dado que difiere de Omzet 6.472.600 (L322)?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Omzet",
+   "texto": "L828 desglose geográfico (6.497.600) no coincide con Omzet L322 (6.472.600) por 25.000; es una vista alternativa y se deja afuera.",
+   "bloques": [
+    "b28",
+    "b6"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿El importe 507 de L906 corresponde a la columna Boekjaar (y Vorig boekjaar vacío)?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Andere financiële kosten",
+   "texto": "En L906 hay un solo importe; la suma 507+32.514+2.791+883=36.695 cuadra con L359, por lo que es del ejercicio actual.",
+   "bloques": [
+    "b30"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Escala no impresa en los bloques; formato estándar BNB en euros (unidades). Las líneas de personal (cantidades, horas) se omitieron por no ser importes monetarios, salvo L870 'Kosten voor de vennootschap' 54.804 (uitzendkrachten, código 617) que forma parte de Diensten en diverse goederen y no se cargó como desglose. Los cuatro rubros de L823-L826 suman 6.472.599 vs Omzet 6.472.600 (redondeo)."
+}

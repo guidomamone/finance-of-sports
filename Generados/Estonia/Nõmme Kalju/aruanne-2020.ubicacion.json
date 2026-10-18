@@ -1,0 +1,296 @@
+{
+ "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2020.pdf",
+ "md": "Clubes/Estonia/Nõmme Kalju/aruanne-2020.md",
+ "mdSha1": "909c0f73c681ee644c819a6f641aef60ab35c429",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:54:30.193Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    10
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    29,
+    55
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    164,
+    189
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    200,
+    221
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    232,
+    259
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    270,
+    276
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    368,
+    382
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 11,
+   "lineas": [
+    384,
+    398
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 12,
+   "lineas": [
+    409,
+    418
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    434,
+    455
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 14,
+   "lineas": [
+    473,
+    482
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    484,
+    491
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 15,
+   "lineas": [
+    502,
+    512
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 15,
+   "lineas": [
+    514,
+    524
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 16,
+   "lineas": [
+    545,
+    557
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 16,
+   "lineas": [
+    561,
+    565
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 16,
+   "lineas": [
+    570,
+    582
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 17,
+   "lineas": [
+    593,
+    597
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 17,
+   "lineas": [
+    602,
+    617
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 17,
+   "lineas": [
+    624,
+    631
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 17,
+   "lineas": [
+    633,
+    635
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 18,
+   "lineas": [
+    651,
+    654
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 18,
+   "lineas": [
+    658,
+    665
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 18,
+   "lineas": [
+    669,
+    672
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 18,
+   "lineas": [
+    676,
+    679
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 18,
+   "lineas": [
+    681,
+    683
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 19,
+   "lineas": [
+    689,
+    691
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 20,
+   "lineas": [
+    716,
+    718
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 21,
+   "lineas": [
+    724,
+    726
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 21,
+   "lineas": [
+    730,
+    734
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b15",
+  "b16",
+  "b17"
+ ],
+ "notas_gastos": [
+  "b18",
+  "b19",
+  "b20"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(eurodes)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2020",
+ "columna_anterior": "2019",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se acepta cargar el estado individual de la MTÜ Nõmme Kalju FC (b4) aunque el club venía cargándose como consolidado?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El documento solo presenta estados de la asociación (Mittetulundusühing), sin estado consolidado.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja afuera el cuadro 'Rahalised ja mitterahalised annetused' (b16) por ser un desglose alternativo del mismo total de Annetused ja toetused ya abierto en b15?",
+   "propuesta": "no",
+   "tema": "cuadro-duplicado",
+   "renglon": "Annetused ja toetused",
+   "texto": "b16 abre el mismo total que b15 por otro criterio (rahaline/mitterahaline); cargar ambos duplicaría el renglón.",
+   "bloques": [
+    "b15",
+    "b16"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados (Tulemiaruanne) en b4, en euros. Notas: Lisa 11 annetused (b15, b16), Lisa 12 tulu ettevõtlusest (b17), Lisa 13 jagatud annetused (b18), Lisa 14 mitmesugused tegevuskulud (b19), Lisa 15 tööjõukulud (b20). Solo existe perímetro individual."
+}

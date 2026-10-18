@@ -1,0 +1,133 @@
+{
+ "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2021-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2021-06-30-individual.md",
+ "mdSha1": "09c42287027e1c7adde14d4f4fc67556c1f37e1b",
+ "ubicacionSha1": "157ec0d55290d9d1a420031663fb6935e93ce7c2",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:37:10.501Z",
+ "ubicacion": {
+  "estado": [
+   "b22"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b22",
+   "escala": "unidades",
+   "evidencia": "Importes con decimales (ej. -3.872.471,42 en L2490), sin indicación expresa de escala; se infieren unidades (EUR)."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b22",
+   "linea": 2490,
+   "etiqueta": "Afschrijvingen & waardeverminderingen",
+   "actual": "-3.872.471,42",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b22",
+   "linea": 2491,
+   "etiqueta": "Andere bedrijfskosten",
+   "actual": "-239.968,25",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b22",
+   "linea": 2492,
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "actual": "-73.867,57",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b22",
+   "linea": 2493,
+   "etiqueta": "Verlies uit gewone bedrijfsoefening",
+   "actual": "-16.880.416,00",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b22",
+   "linea": 2494,
+   "etiqueta": "Financieel resultaat",
+   "actual": "-181.103,26",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b22",
+   "linea": 2495,
+   "etiqueta": "Verlies van het boekjaar voor belasting",
+   "actual": "-17.061.519 26",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b22",
+   "linea": 2496,
+   "etiqueta": "Belasting op het resultaat",
+   "actual": "0,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": null,
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera de la carga los importes sin etiqueta -8.407.269,20 (L2487) y -15.530.659,47 (L2488)?",
+   "propuesta": "sí",
+   "tema": "fila-ilegible",
+   "renglon": "",
+   "texto": "L2487 y L2488 traen importes sin etiqueta visible (el inicio del estado está cortado), no se sabe a qué renglón corresponden.",
+   "bloques": [
+    "b22"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Falta en la transcripción la parte superior del estado de resultados (ingresos y otros gastos) antes de L2487?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El bloque b22 empieza con importes sueltos; faltan los ingresos y gastos operativos previos.",
+   "bloques": [
+    "b22"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿El resultado del ejercicio después de impuestos no está impreso tras L2496?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Verlies van het boekjaar voor belasting",
+   "texto": "El bloque termina en L2496 sin renglón de resultado neto; el resultado antes de impuestos es -17.061.519 26 (L2495, separador decimal ilegible) y el impuesto 0,00.",
+   "bloques": [
+    "b22"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado parcial de OH Leuven al 30/06/2021, sin columna de año anterior. Importes en EUR con decimales. Faltan ingresos y etiquetas de L2487-L2488."
+}

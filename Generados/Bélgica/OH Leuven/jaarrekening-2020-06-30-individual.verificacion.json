@@ -1,0 +1,288 @@
+{
+ "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.md",
+ "generado": "2026-10-18T15:46:15.548Z",
+ "estado": "cola",
+ "clubId": "ohleuven-be",
+ "year": 2020,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "79d5b84",
+  "98af732"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "7.628062 = 7.628061",
+   "suma": 7.628062,
+   "impreso": 7.628061
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "21.866696 = 21.866695",
+   "suma": 21.866695999999994,
+   "impreso": 21.866695
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)",
+   "dif": 0.005159999999994724
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": null,
+   "detalle": "no se puede comparar: jaarrekening-2021-06-30-individual.pdf no trae la columna del año anterior"
+  },
+  {
+   "nombre": "documento del año 2019",
+   "ok": true,
+   "detalle": "ingresos de 2019: 2.801941 en jaarrekening-2019-06-30-individual.pdf y 2.80194 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\" no suma el renglón (0.032891 contra 0.02665, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Niet-recurrente bedrijfskosten\" no suma el renglón (0.674559 contra 0.674559, sumando sus renglones): quedó el renglón del estado",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar que no afecta la carga: b26 es una versión resumida de la cuenta de resultados ya presente en b5 (VOL 4).",
+  "duda de localizar que no afecta la carga: b1 indica que el ejercicio anterior va de 01-01 a 30-06, no es un período de 12 meses comparable.",
+  "duda de extraer que no afecta la carga: En b20 (texto sin tabla) L1613 tiene un solo importe y 567.917+106.642=674.559 cuadra con el actual.",
+  "duda de extraer que no afecta la carga: La nota b21 sólo tiene columna Boekjaar (L1650) y 610 coincide con L442.",
+  "duda de extraer que no afecta la carga: Ningún bloque imprime la escala; el formulario BNB usa euros."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "suma": 0.032891,
+   "objetivo": 0.02665
+  },
+  {
+   "renglon": "Niet-recurrente bedrijfskosten",
+   "suma": 0.674559,
+   "objetivo": 0.674559
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "suma": 0.032891,
+   "objetivo": 0.02665
+  },
+  {
+   "renglon": "Niet-recurrente bedrijfskosten",
+   "suma": 0.674559,
+   "objetivo": 0.674559
+  }
+ ],
+ "totales": {
+  "ingresos": 7.628062,
+  "gastos": 21.866696,
+  "financiero": 0.204074,
+  "impuesto": 0.00061,
+  "resultadoImpreso": -14.438158,
+  "resultadoParaCargar": -14.438158,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ticketing & lidgelden",
+   "lado": "ingreso",
+   "M": 0.651304,
+   "pagina": 24,
+   "linea": 1491,
+   "origen": "nota que desglosa \"Omzet\""
+  },
+  {
+   "etiqueta": "Sponsoring",
+   "lado": "ingreso",
+   "M": 1.694148,
+   "pagina": 24,
+   "linea": 1492,
+   "origen": "nota que desglosa \"Omzet\""
+  },
+  {
+   "etiqueta": "TV rechten",
+   "lado": "ingreso",
+   "M": 1.016292,
+   "pagina": 24,
+   "linea": 1493,
+   "origen": "nota que desglosa \"Omzet\""
+  },
+  {
+   "etiqueta": "Commercieel",
+   "lado": "ingreso",
+   "M": 0.833343,
+   "pagina": 24,
+   "linea": 1494,
+   "origen": "nota que desglosa \"Omzet\""
+  },
+  {
+   "etiqueta": "Andere",
+   "lado": "ingreso",
+   "M": 1.146521,
+   "pagina": 24,
+   "linea": 1495,
+   "origen": "nota que desglosa \"Omzet\""
+  },
+  {
+   "etiqueta": "Andere bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "M": 2.057654,
+   "pagina": 8,
+   "linea": 411,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Niet-recurrente bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "M": 0.2288,
+   "pagina": 8,
+   "linea": 412,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aankopen",
+   "lado": "gasto",
+   "M": 0.621447,
+   "pagina": 8,
+   "linea": 415,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Voorraad: afname (toename) (+)/(-)",
+   "lado": "gasto",
+   "M": -0.05327,
+   "pagina": 8,
+   "linea": 416,
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
+  },
+  {
+   "etiqueta": "Diensten en diverse goederen",
+   "lado": "gasto",
+   "M": 7.550802,
+   "pagina": 8,
+   "linea": 417,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "lado": "gasto",
+   "M": 8.664017,
+   "pagina": 24,
+   "linea": 1506,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "Werkgeversbijdragen voor sociale verzekeringen",
+   "lado": "gasto",
+   "M": 0.778962,
+   "pagina": 24,
+   "linea": 1507,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+   "lado": "gasto",
+   "M": 0.021302,
+   "pagina": 24,
+   "linea": 1508,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "Andere personeelskosten",
+   "lado": "gasto",
+   "M": 0.424093,
+   "pagina": 24,
+   "linea": 1509,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "gasto",
+   "M": 3.016365,
+   "pagina": 8,
+   "linea": 419,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "gasto",
+   "M": 0.02665,
+   "pagina": 8,
+   "linea": 420,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bedrijfsbelastingen en -taksen",
+   "lado": "gasto",
+   "M": 0.093198,
+   "pagina": 24,
+   "linea": 1524,
+   "origen": "nota que desglosa \"Andere bedrijfskosten\""
+  },
+  {
+   "etiqueta": "Andere",
+   "lado": "gasto",
+   "M": 0.048571,
+   "pagina": 24,
+   "linea": 1525,
+   "origen": "nota que desglosa \"Andere bedrijfskosten\""
+  },
+  {
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.674559,
+   "pagina": 8,
+   "linea": 424,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Andere financiële opbrengsten",
+   "M": -0.00258,
+   "linea": 430
+  },
+  {
+   "etiqueta": "Kosten van schulden",
+   "M": -0.187652,
+   "linea": 434
+  },
+  {
+   "etiqueta": "Andere financiële kosten",
+   "M": -0.013842,
+   "linea": 436
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen",
+   "M": -0.00061,
+   "linea": 442
+  }
+ ]
+}

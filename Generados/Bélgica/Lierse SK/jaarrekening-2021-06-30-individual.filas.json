@@ -1,0 +1,166 @@
+{
+ "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2021-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2021-06-30-individual.md",
+ "mdSha1": "6cf20cebf46927f8ed36d68a50888d88f9a93b28",
+ "ubicacionSha1": "3275628a196be72ec1327038147988951c740bdf",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:27:56.463Z",
+ "ubicacion": {
+  "estado": [
+   "b5"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b5",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica la escala (L205-L207); en cuentas anuales belgas (NBB) los importes suelen ir en euros (unidades), pero no está impreso."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b5",
+   "linea": 210,
+   "etiqueta": "Brutomarge (+)/(-)",
+   "actual": "-1.436",
+   "anterior": "-1.475",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 218,
+   "etiqueta": "Andere bedrijfskosten",
+   "actual": "201",
+   "anterior": "98",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 221,
+   "etiqueta": "Bedrijfswinst (Bedrijfsverlies) (+)/(-)",
+   "actual": "-1.637",
+   "anterior": "-1.573",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 222,
+   "etiqueta": "Financiële opbrengsten",
+   "actual": "20.343",
+   "anterior": "44.754",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 223,
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "actual": "20.343",
+   "anterior": "44.754",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 226,
+   "etiqueta": "Financiële kosten",
+   "actual": "30",
+   "anterior": "54.420",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 227,
+   "etiqueta": "Recurrente financiële kosten",
+   "actual": "30",
+   "anterior": "54.420",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 229,
+   "etiqueta": "Winst (Verlies) van het boekjaar vóór belasting (+)/(-)",
+   "actual": "18.676",
+   "anterior": "-11.238",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 232,
+   "etiqueta": "Belastingen op het resultaat (+)/(-)",
+   "actual": "4.467",
+   "anterior": "8.184",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 233,
+   "etiqueta": "Winst (Verlies) van het boekjaar (+)/(-)",
+   "actual": "14.209",
+   "anterior": "-19.422",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 236,
+   "etiqueta": "Te bestemmen winst (verlies) van het boekjaar (+)/(-)",
+   "actual": "14.209",
+   "anterior": "-19.422",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 233,
+  "actual": "14.209",
+  "anterior": "-19.422"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes del bloque b5 en unidades (euros), dado que el PDF no imprime la escala?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El esquema abreviado NBB (L205-L236) no indica escala; habitualmente es en euros.",
+   "bloques": [
+    "b5"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga 'Brutomarge (+)/(-)' (L210, -1.436) como único dato de ingresos, ya que Omzet (L212) no se informa por ser esquema abreviado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Brutomarge (+)/(-)",
+   "texto": "El esquema abreviado compensa ventas y compras en el margen bruto (L210) y no muestra ingresos brutos.",
+   "bloques": [
+    "b5"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas individuales en esquema abreviado: no hay total de ingresos ni de gastos impreso. El resultado del ejercicio pasa de -19.422 a 14.209, impulsado por ingresos financieros recurrentes (L223). Las filas sin importe (L211-L217, L219-L220, L224-L225, L228, L230-L231, L234-L235) se omiten."
+}

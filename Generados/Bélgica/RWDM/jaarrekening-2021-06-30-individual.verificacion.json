@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2021-06-30-individual.pdf",
  "md": "Clubes/Bélgica/RWDM/jaarrekening-2021-06-30-individual.md",
- "generado": "2026-10-18T15:42:14.602Z",
+ "generado": "2026-10-18T15:46:15.717Z",
  "estado": "cola",
  "clubId": "rwdm-be",
  "year": 2021,
@@ -50,6 +50,11 @@
    "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2020 de este documento suma ingresos 0.890922; el sitio tiene 0.890922"
+  },
+  {
    "nombre": "documento del año 2022",
    "ok": true,
    "detalle": "ingresos de 2021: 1.552882 en este documento y 1.552882 en jaarrekening-2022-06-30-individual.pdf (columna del año anterior)"
@@ -58,11 +63,6 @@
    "nombre": "documento del año 2020",
    "ok": true,
    "detalle": "ingresos de 2020: 0.890922 en jaarrekening-2020-06-30-individual.pdf y 0.890922 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
   }
  ],
  "notas": [

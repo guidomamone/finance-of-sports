@@ -1,0 +1,238 @@
+{
+ "pdf": "Clubes/Estonia/Narva Trans/aruanne-2023.pdf",
+ "md": "Clubes/Estonia/Narva Trans/aruanne-2023.md",
+ "mdSha1": "256ba72103454554b05685626853a32abe97be0d",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:46:54.128Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    11
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    33,
+    54
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    113,
+    131
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    143,
+    157
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    169,
+    180
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    192,
+    198
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    331,
+    334
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 11,
+   "lineas": [
+    432,
+    436
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    442,
+    448
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    450,
+    456
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 12,
+   "lineas": [
+    468,
+    475
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 12,
+   "lineas": [
+    477,
+    484
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    490,
+    493
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 12,
+   "lineas": [
+    499,
+    504
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 13,
+   "lineas": [
+    516,
+    527
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 13,
+   "lineas": [
+    531,
+    534
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 13,
+   "lineas": [
+    540,
+    550
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 14,
+   "lineas": [
+    562,
+    577
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 14,
+   "lineas": [
+    583,
+    592
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 14,
+   "lineas": [
+    598,
+    601
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 15,
+   "lineas": [
+    615,
+    618
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 16,
+   "lineas": [
+    631,
+    634
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 17,
+   "lineas": [
+    644,
+    646
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 17,
+   "lineas": [
+    650,
+    653
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b14",
+  "b15",
+  "b16",
+  "b17"
+ ],
+ "notas_gastos": [
+  "b18",
+  "b19",
+  "b20"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(eurodes)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2023",
+ "columna_anterior": "2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se trata el estado 'Tulemiaruanne' (b4) como individual pese a que la portada (b1) dice 'KONSOLIDEERITUD MAJANDUSAASTA ARUANNE'?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "La portada dice consolidado pero el estado y las notas corresponden solo a Jalgpalliklubi Narva Trans, sin indicios de un grupo.",
+   "bloques": [
+    "b1",
+    "b4"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Asociación sin fines de lucro (MTÜ). Su estado de resultados es el Tulemiaruanne (b4), con importes en euros. Las notas de ingresos son: Lisa 6, cuotas de socios (b14); Lisa 7, donaciones y subvenciones (b15 y b16); y Lisa 8, ingresos por actividad empresarial (b17). Las notas de gastos son: Lisa 9, gastos operativos varios (b18); Lisa 10, gastos de personal (b19); y Lisa 11, otros gastos (b20). Lisa 11 (b20) solo trae la columna 2023. Aunque la portada dice consolidado, solo aparece una entidad, así que se tomó el perímetro individual."
+}

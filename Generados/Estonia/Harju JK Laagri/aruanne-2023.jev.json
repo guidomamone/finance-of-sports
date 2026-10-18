@@ -1,0 +1,53 @@
+{
+ "md": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.md",
+ "generatedAt": "2026-10-18T15:05:32.748Z",
+ "rubrosHuella": "8ee2dd62ca7d1907e13281564ec0884a3e8804e3",
+ "rubros": [
+  {
+   "label": "Mitmesugused tegevuskulud",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "admin_general_expense",
+     0.25
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Tulu ettevõtlusest",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_income",
+     0.6
+    ],
+    [
+     "sponsorship_commercial",
+     0.38
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 1030
+  }
+ ]
+}

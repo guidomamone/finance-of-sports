@@ -1,0 +1,145 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2021-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2021-06-30-individual.md",
+ "generado": "2026-10-18T15:46:15.682Z",
+ "estado": "cola",
+ "clubId": "patroeisden-be",
+ "year": 2021,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "da2b0f5",
+  "fde27d4",
+  "00c952b",
+  "99ddcc5"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 0.140857 - gastos 0.407233 ± financiero 0.031252 ± impuesto 0.002711 no da el impreso -0.582029",
+   "dif": null
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2021: 0.140857 en este documento y 0.140857 en jaarrekening-2022-06-30-individual.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": false,
+   "detalle": "ingresos de 2020: 0.751904 en jaarrekening-2020-06-30-individual-correction.pdf y 0.277991 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Niet-recurrente bedrijfskosten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de localizar que no afecta la carga: El bloque b10 mezcla datos de personal (VTE) con posibles desgloses de kosten; solo se ven primeras y últimas filas.",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0.140857,
+  "gastos": 0.407233,
+  "financiero": 0.031252,
+  "impuesto": 0.002711,
+  "resultadoImpreso": -0.582029,
+  "resultadoParaCargar": -0.582029,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Brutomarge (+)/(-)",
+   "lado": "ingreso",
+   "M": 0.140857,
+   "pagina": 7,
+   "linea": 232,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "gasto",
+   "M": 0.362273,
+   "pagina": 7,
+   "linea": 237,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "gasto",
+   "M": 0.015368,
+   "pagina": 7,
+   "linea": 239,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+   "lado": "gasto",
+   "M": 0.001573,
+   "pagina": 7,
+   "linea": 240,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andere bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.022966,
+   "pagina": 7,
+   "linea": 241,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.005053,
+   "pagina": 7,
+   "linea": 243,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "M": 0.000012,
+   "linea": 246
+  },
+  {
+   "etiqueta": "Recurrente financiële kosten",
+   "M": 0.03124,
+   "linea": 249
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen op het resultaat (+)/(-)",
+   "M": 0.002711,
+   "linea": 254
+  }
+ ]
+}

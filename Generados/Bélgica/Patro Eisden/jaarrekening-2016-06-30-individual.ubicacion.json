@@ -1,0 +1,118 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2016-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2016-06-30-individual.md",
+ "mdSha1": "f74cb57cec26c4b764f74e39ae946f48de3daff9",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:23.754Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    23,
+    31
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    102,
+    139
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    147,
+    189
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    199,
+    219
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    229,
+    238
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    249,
+    265
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    279,
+    283
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 8,
+   "lineas": [
+    285,
+    308
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    318,
+    323
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 9,
+   "lineas": [
+    327,
+    343
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b6"
+ ],
+ "escala": "no se sabe",
+ "escala_evidencia": "Formato NBB (VKT-vzw); normalmente los importes se expresan en euros sin decimales, pero el índice no muestra la frase de escala.",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes de la Resultatenrekening (b4) están expresados en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El modelo abreviado VKT de la Balanscentrale se presenta en euros, pero en el índice no se ve la mención de la escala.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales en el modelo abreviado para asociaciones (VKT-vzw). La b4 es la Resultatenrekening, que empieza en Brutomarge, así que los ingresos no aparecen detallados. La b6 (Toelichting resultaten, 5.5) desglosa los gastos de personal y los resultados financieros. Se excluyen las b2 y b3 (balance), la b5 (destino del resultado) y las b7 a b10 (balance social)."
+}

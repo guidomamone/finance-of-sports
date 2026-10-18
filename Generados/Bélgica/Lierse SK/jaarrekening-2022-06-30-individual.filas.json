@@ -1,0 +1,276 @@
+{
+ "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2022-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2022-06-30-individual.md",
+ "mdSha1": "d17c5d9bf9d2647dc433aec067f620aa49c87892",
+ "ubicacionSha1": "62ffd7f47b8089a4aa8e9962d60a2a7c38db7cc3",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:37:09.841Z",
+ "ubicacion": {
+  "estado": [
+   "b6"
+  ],
+  "notas_ingresos": [
+   "b13"
+  ],
+  "notas_gastos": [
+   "b13"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b6",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala en el bloque; modelo belga abreviado normalmente en euros (unidades)."
+  },
+  {
+   "bloque": "b13",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala en el bloque."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b6",
+   "linea": 236,
+   "etiqueta": "Brutomarge (+)/(-)",
+   "actual": "1.673.036",
+   "anterior": "-1.436",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 237,
+   "etiqueta": "Waarvan: niet-recurrente bedrijfsopbrengsten",
+   "actual": "47.856",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 240,
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "actual": "1.735.126",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 241,
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "actual": "363.908",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 242,
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "actual": "-11.340",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 244,
+   "etiqueta": "Andere bedrijfskosten",
+   "actual": "13.125",
+   "anterior": "201",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 246,
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "actual": "125.954",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 247,
+   "etiqueta": "Bedrijfswinst (Bedrijfsverlies) (+)/(-)",
+   "actual": "-553.737",
+   "anterior": "-1.637",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 248,
+   "etiqueta": "Financiële opbrengsten",
+   "actual": "3.435",
+   "anterior": "20.343",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 249,
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "actual": "3.435",
+   "anterior": "20.343",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 252,
+   "etiqueta": "Financiële kosten",
+   "actual": "6.715",
+   "anterior": "30",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 253,
+   "etiqueta": "Recurrente financiële kosten",
+   "actual": "6.715",
+   "anterior": "30",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 255,
+   "etiqueta": "Winst (Verlies) van het boekjaar vóór belasting (+)/(-)",
+   "actual": "-557.017",
+   "anterior": "18.676",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 258,
+   "etiqueta": "Belastingen op het resultaat (+)/(-)",
+   "actual": "0",
+   "anterior": "4.467",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 259,
+   "etiqueta": "Winst (Verlies) van het boekjaar (+)/(-)",
+   "actual": "-557.017",
+   "anterior": "14.209",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 262,
+   "etiqueta": "Te bestemmen winst (verlies) van het boekjaar (+)/(-)",
+   "actual": "-557.017",
+   "anterior": "14.209",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 438,
+   "etiqueta": "Niet-recurrente opbrengsten",
+   "actual": "47.856",
+   "anterior": "0",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Waarvan: niet-recurrente bedrijfsopbrengsten"
+  },
+  {
+   "bloque": "b13",
+   "linea": 439,
+   "etiqueta": "Niet-recurrente bedrijfsopbrengsten",
+   "actual": "47.856",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Waarvan: niet-recurrente bedrijfsopbrengsten"
+  },
+  {
+   "bloque": "b13",
+   "linea": 441,
+   "etiqueta": "Niet-recurrente kosten",
+   "actual": "125.954",
+   "anterior": "0",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Niet-recurrente bedrijfskosten"
+  },
+  {
+   "bloque": "b13",
+   "linea": 442,
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "actual": "125.954",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Niet-recurrente bedrijfskosten"
+  },
+  {
+   "bloque": "b13",
+   "linea": 445,
+   "etiqueta": "Geactiveerde interesten",
+   "actual": "164",
+   "anterior": "30",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Recurrente financiële kosten"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 259,
+  "actual": "-557.017",
+  "anterior": "14.209"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes del estado (L236-L262) como unidades de euro aunque el bloque no imprima la escala?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El bloque b6 no indica escala; el modelo abreviado belga se presenta en euros.",
+   "bloques": [
+    "b6",
+    "b13"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga 'Geactiveerde interesten' (L445, 164) como detalle de 'Recurrente financiële kosten' sabiendo que son intereses activados y no un componente de ese gasto?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Recurrente financiële kosten",
+   "texto": "L445 informa intereses activados (cuenta 6502), que se restan de los costos financieros y no los desglosan.",
+   "bloques": [
+    "b13"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Esquema abreviado: la Brutomarge (L236) neta ingresos y compras; no hay total de ingresos ni de gastos impreso. El personal medio (L436) no es importe y se omitió."
+}

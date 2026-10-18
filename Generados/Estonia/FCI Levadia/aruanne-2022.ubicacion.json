@@ -1,0 +1,265 @@
+{
+ "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2022.pdf",
+ "md": "Clubes/Estonia/FCI Levadia/aruanne-2022.md",
+ "mdSha1": "89e5cd89df567aa2507c8a2a06b28e6fe140f71f",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:46:46.573Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    13
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    25,
+    46
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    86,
+    117
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    125,
+    153
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    161,
+    190
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    198,
+    202
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    229,
+    234
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    274,
+    283
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    291,
+    309
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    311,
+    321
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    329,
+    338
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    342,
+    352
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    360,
+    370
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 12,
+   "lineas": [
+    374,
+    377
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 12,
+   "lineas": [
+    381,
+    393
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 12,
+   "lineas": [
+    397,
+    414
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 13,
+   "lineas": [
+    422,
+    428
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 13,
+   "lineas": [
+    436,
+    458
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 13,
+   "lineas": [
+    462,
+    465
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 14,
+   "lineas": [
+    478,
+    523
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 15,
+   "lineas": [
+    531,
+    577
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 16,
+   "lineas": [
+    585,
+    615
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 17,
+   "lineas": [
+    627,
+    629
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 19,
+   "lineas": [
+    696,
+    698
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 20,
+   "lineas": [
+    704,
+    706
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 20,
+   "lineas": [
+    710,
+    715
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b13",
+  "b15"
+ ],
+ "notas_gastos": [
+  "b16",
+  "b17"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Las notas indican 'eurodes' (en euros), p.ej. LISA 3; no hay indicación de miles.",
+ "moneda": "EUR",
+ "columna_ejercicio": "2022",
+ "columna_anterior": "2021",
+ "perimetro": "ambos",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el estado individual 'LISA 13. Spordiklubi FC Levadia tulude-kulude aruanne' (b21) y se usa el consolidado b4?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "b21 es el estado de resultados individual de la entidad madre; el club carga consolidado.",
+   "bloques": [
+    "b21",
+    "b4"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Las notas LISA 6-9 (b13, b15, b16, b17) desglosan las cifras consolidadas del estado b4 y no las individuales?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "Las notas no indican perímetro; se ubican antes de los estados individuales, por lo que se asumen consolidadas.",
+   "bloques": [
+    "b13",
+    "b15",
+    "b16",
+    "b17"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "b4 es el estado de resultados consolidado (pág. 5); b21 (LISA 13) es el individual de Spordiklubi FC Levadia. Columnas en orden 2021 | 2022: tomar la segunda. b14 es subdetalle de donaciones, no elegido; b18/b19 partes relacionadas, no elegidos."
+}

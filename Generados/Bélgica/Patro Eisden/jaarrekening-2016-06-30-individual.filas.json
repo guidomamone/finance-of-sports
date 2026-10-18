@@ -1,0 +1,236 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2016-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2016-06-30-individual.md",
+ "mdSha1": "f74cb57cec26c4b764f74e39ae946f48de3daff9",
+ "ubicacionSha1": "a67399fc97f00335179e06b277ee3af32992bf68",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:27:58.793Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b6"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la unidad en el bloque (esquema belga normalmente en euros)"
+  },
+  {
+   "bloque": "b6",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la unidad en el bloque"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 202,
+   "etiqueta": "Brutomarge (+)/(-)",
+   "actual": "264.750",
+   "anterior": "535.658",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 203,
+   "etiqueta": "Bedrijfsopbrengsten",
+   "actual": "727.579",
+   "anterior": "993.485",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 206,
+   "etiqueta": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+   "actual": "462.829",
+   "anterior": "397.827",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 207,
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "actual": "804.278",
+   "anterior": "494.942",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 209,
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "actual": "",
+   "anterior": "1.500",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 211,
+   "etiqueta": "Andere bedrijfskosten",
+   "actual": "25.483",
+   "anterior": "4.752",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 213,
+   "etiqueta": "Positief (Negatief) bedrijfsresultaat (+)/(-)",
+   "actual": "-565.011",
+   "anterior": "34.464",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 214,
+   "etiqueta": "Financiële opbrengsten",
+   "actual": "527",
+   "anterior": "9.327",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 215,
+   "etiqueta": "Financiële kosten",
+   "actual": "136",
+   "anterior": "206",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 216,
+   "etiqueta": "Positief (Negatief) resultaat uit de gewone bedrijfsuitoefening (+)/(-)",
+   "actual": "-564.620",
+   "anterior": "43.585",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 217,
+   "etiqueta": "Uitzonderlijke opbrengsten",
+   "actual": "",
+   "anterior": "5.293",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 218,
+   "etiqueta": "Uitzonderlijke kosten",
+   "actual": "",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 219,
+   "etiqueta": "Positief (Negatief) resultaat van het boekjaar (+)/(-)",
+   "actual": "-564.620",
+   "anterior": "49.158",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 257,
+   "etiqueta": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "actual": "589.012",
+   "anterior": "377.459",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)"
+  },
+  {
+   "bloque": "b6",
+   "linea": 258,
+   "etiqueta": "Werkgeversbijdragen voor sociale verzekeringen",
+   "actual": "121.829",
+   "anterior": "90.548",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)"
+  },
+  {
+   "bloque": "b6",
+   "linea": 259,
+   "etiqueta": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+   "actual": "9.283",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)"
+  },
+  {
+   "bloque": "b6",
+   "linea": 260,
+   "etiqueta": "Andere personeelskosten",
+   "actual": "51.846",
+   "anterior": "26.934",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)"
+  },
+  {
+   "bloque": "b6",
+   "linea": 261,
+   "etiqueta": "Ouderdoms- en overlevingspensioenen",
+   "actual": "32.308",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 203,
+  "actual": "727.579"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 219,
+  "actual": "-564.620",
+  "anterior": "49.158"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes del estado (b4) y de la nota (b6) en euros (unidades), aunque el bloque no imprime la escala?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Ni L197 ni L246 indican la unidad monetaria; el esquema belga suele presentarse en euros.",
+   "bloques": [
+    "b4",
+    "b6"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Esquema abreviado belga para asociaciones: no hay total de gastos impreso. Bedrijfsopbrengsten 727.579 - gastos (462.829+804.278+25.483) = -565.011, coincide con L213. Se omitieron las filas de cantidad de personal (L253-L254) por no ser importes. La suma de la nota de personal (L257-L261) da 804.278 y coincide con L207."
+}

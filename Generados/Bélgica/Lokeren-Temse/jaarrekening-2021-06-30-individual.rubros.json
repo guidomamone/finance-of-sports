@@ -1,0 +1,70 @@
+{
+  "md": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2021-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2021-06-30-individual.pdf",
+  "club": "lokerentemse-be",
+  "year": 2021,
+  "generatedAt": "2026-10-18T15:37:11.425Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Omzet",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.805246
+      ],
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.488692
+      ],
+      "glosa": "Mercaderías, materias primas y auxiliares, servicios y bienes diversos"
+    },
+    {
+      "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.207898
+      ],
+      "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
+    },
+    {
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.168361
+      ],
+      "glosa": "Amortizaciones y correcciones de valor de gastos de establecimiento, inmovilizado intangible y material"
+    },
+    {
+      "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Correcciones de valor sobre existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.001816
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

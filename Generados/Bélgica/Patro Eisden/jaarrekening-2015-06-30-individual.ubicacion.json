@@ -1,0 +1,118 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2015-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2015-06-30-individual.md",
+ "mdSha1": "014ba4fcee335388999da554c9b2939cd8c83a17",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:27:58.740Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    24,
+    32
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    94,
+    131
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    139,
+    181
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    191,
+    211
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    221,
+    230
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    242,
+    258
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    272,
+    276
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 8,
+   "lineas": [
+    278,
+    301
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    311,
+    316
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 9,
+   "lineas": [
+    320,
+    336
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b6"
+ ],
+ "escala": "no se sabe",
+ "escala_evidencia": "Modelo normalizado belga (VKT-vzw); no se ve en el índice una frase de escala. Estos modelos se presentan en euros (unidades); los importes de b6 (377.459) son coherentes con unidades.",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes de la resultatenrekening (b4) están expresados en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No se ve ninguna frase de escala; el modelo VKT-vzw del NBB se presenta normalmente en euros.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales en modelo abreviado de vzw. El estado de resultados es b4 (RESULTATENREKENING). b6 desglosa los gastos de personal (códigos 620-624). b7 y b8 (sociale balans) y b10 (formación) no se usan. b2 y b3 son el balance y b5 es el destino del resultado, por lo que se excluyen."
+}

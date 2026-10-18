@@ -1,0 +1,39 @@
+{
+ "pdf": "Clubes/Estonia/Kuressaare/aruanne-2022.pdf",
+ "generado": "2026-10-18T15:16:19.339Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 1 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "alta:reportType",
+   "motivo": "¿El documento trae un estado de resultados (o de recursos y gastos) anual cargable, o hay que buscar los estados en otro documento del club?"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del club, 2026-10-18: 2025 trae los dos (tulemiaruanne consolidado L175-202 y Lisa 18 konsolideerimata L740-765); la controlada es la escuela de fútbol del club y el individual deja afuera más de la mitad del ingreso: consolidado (regla 2). (revisión del alta, subagente Sonnet, revisado por Claude 2026-10-18))"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Estonia/Kuressaare/aruanne-2022.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2022-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "kuressaare-ee",
+ "year": 2022,
+ "cortadoEn": "filas"
+}

@@ -1,0 +1,166 @@
+{
+ "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2024-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2024-06-30-individual.md",
+ "mdSha1": "e8502ebd6fcbe706421a232d232dbe469b35d8c1",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:22.648Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    18,
+    26
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    126,
+    153
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    161,
+    201
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    211,
+    240
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    250,
+    257
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    269,
+    286
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    294,
+    320
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    330,
+    360
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    370,
+    383
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    393,
+    401
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 12,
+   "lineas": [
+    405,
+    408
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 12,
+   "lineas": [
+    410,
+    412
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 13,
+   "lineas": [
+    428,
+    432
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 13,
+   "lineas": [
+    434,
+    457
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 14,
+   "lineas": [
+    467,
+    470
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 14,
+   "lineas": [
+    474,
+    490
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b9"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING in EURO (modelo belga verkort schema VZW, importes en euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el cuadro 6.4 'RESULTATEN' (b9) como nota de gastos, por los personeelskosten y demás detalles de resultados?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Bezoldigingen, sociale lasten en pensioenen",
+   "texto": "b9 mezcla datos de personal (FTE) con posibles importes de gastos de personal y resultados financieros; hay que confirmar que desglosa renglones de b4.",
+   "bloques": [
+    "b9"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales de una VZW en modelo abreviado (VKT-VZW), ejercicio 01-07-2023 a 30-06-2024. El estado de resultados es b4 (Resultatenrekening), que parte de Brutomarge, por lo que los ingresos no se abren. b5 es la afectación del resultado, b2 y b3 son el balance, b6 y b7 son activo fijo, b8 son deudas y b13 a b16 son el balance social; todos quedan excluidos."
+}

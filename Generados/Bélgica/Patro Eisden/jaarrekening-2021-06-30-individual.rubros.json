@@ -1,0 +1,70 @@
+{
+  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2021-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2021-06-30-individual.pdf",
+  "club": "patroeisden-be",
+  "year": 2021,
+  "generatedAt": "2026-10-18T15:28:00.526Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Brutomarge (+)/(-)",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.140857
+      ],
+      "glosa": "Margen bruto (+)/(-)"
+    },
+    {
+      "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.362273
+      ],
+      "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
+    },
+    {
+      "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.015368
+      ],
+      "glosa": "Deterioro de valor de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
+    },
+    {
+      "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.001573
+      ],
+      "glosa": "Provisiones para riesgos y gastos: dotaciones (aplicaciones y reversiones) (+)/(-)"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.022966
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Niet-recurrente bedrijfskosten",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.005053
+      ],
+      "glosa": "Gastos de explotación no recurrentes"
+    }
+  ]
+}

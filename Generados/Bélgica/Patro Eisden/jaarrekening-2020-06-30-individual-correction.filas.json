@@ -1,0 +1,234 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2020-06-30-individual-correction.pdf",
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2020-06-30-individual-correction.md",
+ "mdSha1": "2d34f5c9d6d363d588e7a3a70371ee57cd53a38b",
+ "ubicacionSha1": "f504450a40d0eef2cd88d4769e2570f660b55a89",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:27:58.797Z",
+ "ubicacion": {
+  "estado": [
+   "b5"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b9"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b5",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica la escala; en las cuentas belgas (modelo NBB) los importes suelen estar en euros (unidades), pero no está impreso."
+  },
+  {
+   "bloque": "b9",
+   "escala": "no se sabe",
+   "evidencia": "Sin importes monetarios y sin frase de escala."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b5",
+   "linea": 217,
+   "etiqueta": "Brutomarge (+)/(-)",
+   "actual": "277.991",
+   "anterior": "144.946",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 219,
+   "etiqueta": "Omzet",
+   "actual": "568.892",
+   "anterior": "362.776",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 220,
+   "etiqueta": "Lidgeld, schenkingen, legaten en subsidies",
+   "actual": "183.012",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 221,
+   "etiqueta": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+   "actual": "423.072",
+   "anterior": "217.830",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 222,
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "actual": "995.646",
+   "anterior": "447.348",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 224,
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "actual": "5.750",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 225,
+   "etiqueta": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+   "actual": "-55.215",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 226,
+   "etiqueta": "Andere bedrijfskosten",
+   "actual": "11.157",
+   "anterior": "52.324",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 229,
+   "etiqueta": "Bedrijfswinst (Bedrijfsverlies) (+)/(-)",
+   "actual": "-679.347",
+   "anterior": "-354.726",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 230,
+   "etiqueta": "Financiële opbrengsten",
+   "actual": "110",
+   "anterior": "38",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 231,
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "actual": "110",
+   "anterior": "38",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 233,
+   "etiqueta": "Financiële kosten",
+   "actual": "28.196",
+   "anterior": "1.160",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 234,
+   "etiqueta": "Recurrente financiële kosten",
+   "actual": "28.196",
+   "anterior": "1.160",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 236,
+   "etiqueta": "Winst (Verlies) van het boekjaar vóór belasting (+)/(-)",
+   "actual": "-707.433",
+   "anterior": "-355.848",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 239,
+   "etiqueta": "Belastingen op het resultaat (+)/(-)",
+   "actual": "131",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 240,
+   "etiqueta": "Winst (Verlies) van het boekjaar (+)/(-)",
+   "actual": "-707.564",
+   "anterior": "-355.848",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 243,
+   "etiqueta": "Te bestemmen winst (verlies) van het boekjaar (+)/(-)",
+   "actual": "-707.564",
+   "anterior": "-355.848",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 240,
+  "actual": "-707.564",
+  "anterior": "-355.848"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes de b5 como euros (unidades) aunque el documento no imprima la escala?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Ni b5 ni b9 indican la escala; el modelo NBB normalmente presenta importes en euros.",
+   "bloques": [
+    "b5",
+    "b9"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera la Brutomarge (L217) como subtotal y se cargan Omzet (L219) y Lidgeld (L220) como ingresos y L221 como gasto?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Brutomarge (+)/(-)",
+   "texto": "En el esquema abreviado la Brutomarge (L217) agrega ingresos menos compras (568.892+183.012-423.072-50.841?); no cuadra exactamente con L219-L221, posiblemente por otras partidas no detalladas.",
+   "bloques": [
+    "b5"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados belga (VZW, modelo abreviado). No hay totales impresos de ingresos ni de gastos. b9 no contiene importes (solo personal en FTE: 18/18, no monetario), por eso no se extrajeron filas. La Brutomarge 277.991 no coincide con 568.892+183.012-423.072=328.832; diferencia 50.841 posiblemente por otros ingresos/variación de existencias no desglosados."
+}

@@ -1,0 +1,91 @@
+{
+ "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2019-06-30-individual-correction.pdf",
+ "md": "Clubes/Bélgica/Beerschot/jaarrekening-2019-06-30-individual-correction.md",
+ "mdSha1": "8906907c7b1bd408d611442a03e8798824fce544",
+ "ubicacionSha1": "ff7466e6c538516d318babd79592fa917b4fd932",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:27:56.444Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b24",
+   "b25",
+   "b26"
+  ],
+  "notas_gastos": [
+   "b24",
+   "b25",
+   "b26"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala; formato normalizado belga suele ser en euros (unidades)."
+  },
+  {
+   "bloque": "b24",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala."
+  },
+  {
+   "bloque": "b25",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala."
+  },
+  {
+   "bloque": "b26",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala."
+  }
+ ],
+ "filas": [],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": null,
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes de la columna 'Boekjaar' (L246-L286) como ejercicio pedido, dado que la columna 'Vorig boekjaar' pedida está vacía en todos los bloques?",
+   "propuesta": "no",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El ejercicio pedido es 'Vorig boekjaar' (cierre 2018-06-29), pero esa columna no tiene ningún importe en b3, b24, b25 ni b26; los importes están solo en 'Boekjaar', que correspondería a otro ejercicio.",
+   "bloques": [
+    "b3",
+    "b24",
+    "b25",
+    "b26"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Corresponde este documento (cuentas 2019-06-30, versión corrección) al ejercicio con cierre 2018-06-29, o hay que buscar la columna comparativa en otro PDF?",
+   "propuesta": "sí",
+   "tema": "cuadro-de-otro-anio",
+   "renglon": "",
+   "texto": "La columna 'Boekjaar' podría ser el ejercicio 2018-2019 y la comparativa no está impresa (L244), por lo que el ejercicio pedido podría no estar en este documento.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se confirma que la escala de b3, b24, b25 y b26 es unidades (euros), aunque no se imprime?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Ningún bloque indica la escala; el formato normalizado del BNB se presenta en euros.",
+   "bloques": [
+    "b3",
+    "b24",
+    "b25",
+    "b26"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "No se extrajeron filas: la columna del ejercicio pedido ('Vorig boekjaar') está vacía en todos los bloques. Si se decide usar 'Boekjaar', los totales serían: Bedrijfsopbrengsten L246 7.890.565, Bedrijfskosten L252 11.480.790, Winst (Verlies) van het boekjaar L283 -3.595.660."
+}

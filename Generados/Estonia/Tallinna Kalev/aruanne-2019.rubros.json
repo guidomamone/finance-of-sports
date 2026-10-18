@@ -1,0 +1,240 @@
+{
+  "md": "Clubes/Estonia/Tallinna Kalev/aruanne-2019.md",
+  "pdf": "Clubes/Estonia/Tallinna Kalev/aruanne-2019.pdf",
+  "club": "tallinnakalev-ee",
+  "year": 2019,
+  "generatedAt": "2026-10-18T14:54:31.711Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Sihtfinantseerimine tegevuskuludeks",
+      "lado": "revenue",
+      "page": 13,
+      "section": "nota que desglosa \"Annetused ja toetused\"",
+      "values": [
+        0.014369
+      ],
+      "glosa": "Subvenciones para gastos de explotación"
+    },
+    {
+      "label": "Mittesihtotstarbelised annetused ja toetused",
+      "lado": "revenue",
+      "page": 13,
+      "section": "nota que desglosa \"Annetused ja toetused\"",
+      "values": [
+        0.148756
+      ],
+      "glosa": "Donaciones y ayudas no finalistas"
+    },
+    {
+      "label": "Renditulud",
+      "lado": "revenue",
+      "page": 13,
+      "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+      "values": [
+        0.190502
+      ],
+      "glosa": "Ingresos por arrendamientos"
+    },
+    {
+      "label": "Reklaami müük",
+      "lado": "revenue",
+      "page": 13,
+      "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+      "values": [
+        0.15999
+      ],
+      "glosa": "Ingresos por publicidad"
+    },
+    {
+      "label": "Muud tulud",
+      "lado": "revenue",
+      "page": 13,
+      "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+      "values": [
+        0.008141
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Muud tulud",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.000101
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Üür ja rent",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.011013
+      ],
+      "glosa": "Arrendamientos y cánones"
+    },
+    {
+      "label": "Elektrienergia",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\" > desglose de \"Energia\"",
+      "values": [
+        0.015152
+      ],
+      "glosa": "Energía eléctrica"
+    },
+    {
+      "label": "Kütus",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\" > desglose de \"Energia\"",
+      "values": [
+        0.006302
+      ],
+      "glosa": "Combustible"
+    },
+    {
+      "label": "Veevarustusteenused",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.006015
+      ],
+      "glosa": "Suministro de agua"
+    },
+    {
+      "label": "Mitmesugused bürookulud",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.007932
+      ],
+      "glosa": "Gastos diversos de oficina"
+    },
+    {
+      "label": "Lähetuskulud",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.00178
+      ],
+      "glosa": "Gastos de viaje y dietas"
+    },
+    {
+      "label": "Koolituskulud",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.004971
+      ],
+      "glosa": "Gastos de formación"
+    },
+    {
+      "label": "Treeninglaagrid",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.053414
+      ],
+      "glosa": "Concentraciones de entrenamiento"
+    },
+    {
+      "label": "Liikmemaksud",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.001975
+      ],
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "Proportsiooniga tagastamatu käibemaks",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.018267
+      ],
+      "glosa": "IVA no deducible por prorrata"
+    },
+    {
+      "label": "Staadioni ja saali rent",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.075419
+      ],
+      "glosa": "Alquiler de estadio y pabellón"
+    },
+    {
+      "label": "Transport",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.029693
+      ],
+      "glosa": "Transporte"
+    },
+    {
+      "label": "Muud",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.019877
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Palgakulu",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Tööjõukulud\"",
+      "values": [
+        0.156052
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Sotsiaalmaksud",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Tööjõukulud\"",
+      "values": [
+        0.054339
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Põhivarade kulum ja väärtuse langus",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.003045
+      ],
+      "glosa": "Amortización y deterioro del inmovilizado"
+    },
+    {
+      "label": "Muud kulud",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.004418
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
+}

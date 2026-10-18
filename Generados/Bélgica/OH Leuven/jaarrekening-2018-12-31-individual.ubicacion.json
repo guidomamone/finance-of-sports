@@ -1,0 +1,264 @@
+{
+ "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2018-12-31-individual.pdf",
+ "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2018-12-31-individual.md",
+ "mdSha1": "132cc0117f497af4c75a0782578109b85e1f43b1",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:27:57.065Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    130,
+    134
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 5,
+   "lineas": [
+    212,
+    215
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 6,
+   "lineas": [
+    337,
+    342
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    389,
+    394
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 11,
+   "lineas": [
+    721,
+    738
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 18,
+   "lineas": [
+    1322,
+    1327
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 18,
+   "lineas": [
+    1329,
+    1336
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 18,
+   "lineas": [
+    1338,
+    1343
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 18,
+   "lineas": [
+    1345,
+    1363
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 18,
+   "lineas": [
+    1365,
+    1373
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 21,
+   "lineas": [
+    1472,
+    1482
+   ],
+   "tipo": "texto"
+  },
+  "b12": {
+   "pagina": 21,
+   "lineas": [
+    1485,
+    1495
+   ],
+   "tipo": "texto"
+  },
+  "b13": {
+   "pagina": 21,
+   "lineas": [
+    1499,
+    1510
+   ],
+   "tipo": "texto"
+  },
+  "b14": {
+   "pagina": 21,
+   "lineas": [
+    1514,
+    1531
+   ],
+   "tipo": "texto"
+  },
+  "b15": {
+   "pagina": 22,
+   "lineas": [
+    1538,
+    1552
+   ],
+   "tipo": "texto"
+  },
+  "b16": {
+   "pagina": 22,
+   "lineas": [
+    1565,
+    1569
+   ],
+   "tipo": "texto"
+  },
+  "b17": {
+   "pagina": 23,
+   "lineas": [
+    1580,
+    1624
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 25,
+   "lineas": [
+    1723,
+    1733
+   ],
+   "tipo": "texto"
+  },
+  "b19": {
+   "pagina": 26,
+   "lineas": [
+    1751,
+    1757
+   ],
+   "tipo": "texto"
+  },
+  "b20": {
+   "pagina": 26,
+   "lineas": [
+    1764,
+    1767
+   ],
+   "tipo": "texto"
+  },
+  "b21": {
+   "pagina": 26,
+   "lineas": [
+    1773,
+    1777
+   ],
+   "tipo": "texto"
+  },
+  "b22": {
+   "pagina": 27,
+   "lineas": [
+    1788,
+    1793
+   ],
+   "tipo": "texto"
+  },
+  "b23": {
+   "pagina": 27,
+   "lineas": [
+    1798,
+    1802
+   ],
+   "tipo": "texto"
+  },
+  "b24": {
+   "pagina": 27,
+   "lineas": [
+    1806,
+    1810
+   ],
+   "tipo": "texto"
+  },
+  "b25": {
+   "pagina": 27,
+   "lineas": [
+    1817,
+    1820
+   ],
+   "tipo": "texto"
+  },
+  "b26": {
+   "pagina": 32,
+   "lineas": [
+    2154,
+    2162
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 33,
+   "lineas": [
+    2213,
+    2223
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 43,
+   "lineas": [
+    2814,
+    2829
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [
+  "b17"
+ ],
+ "notas_gastos": [
+  "b17",
+  "b18"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Formulario VOL del NBB en euros (b27: '31/12/2018 (in euro)'); los importes del índice se ven en euros sin escala.",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Está la RESULTATENREKENING del modelo VOL (normalmente págs. 7-8) en el PDF y hay que transcribirla, ya que no aparece en el índice de bloques?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice pasa del pasivo (b4, pág. 6) a notas de activo fijo (b5, pág. 11) sin bloque del estado de resultados.",
+   "bloques": [
+    "b4",
+    "b5"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales (modelo VOL del NBB) de OH Leuven al 31-12-2018. No se encontró en el índice el estado de resultados; solo están sus notas: b17 (6.10 Bedrijfsresultaten: desglose de Netto-omzet por categoría y gastos de personal, otros gastos operativos y depreciaciones) y b18 (gastos no recurrentes). Se excluyen balance (b2-b4, b27), capital, deudas, impuestos, garantías y formación."
+}

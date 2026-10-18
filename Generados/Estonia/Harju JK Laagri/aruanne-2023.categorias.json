@@ -1,0 +1,46 @@
+{
+ "md": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.md",
+ "club": "harjujklaagri-ee",
+ "year": 2023,
+ "generatedAt": "2026-10-18T15:13:39.534Z",
+ "rubrosHuella": "8ee2dd62ca7d1907e13281564ec0884a3e8804e3",
+ "jevHuella": "f2307410c8b78effe5f3b026047bf8e0c24e4250",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Tulu ettevõtlusest",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Ingresos por actividades empresariales",
+   "page": 5,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 2,
+   "confCache": 0.7,
+   "motivo": "ingresos empresariales genéricos; club usa other_income para 'Teenuste müük'",
+   "jev": "other_income",
+   "jevConf": 0.57,
+   "desdeCache": true,
+   "categoria": "other_income",
+   "confianza": 0.7
+  },
+  {
+   "label": "Mitmesugused tegevuskulud",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 5,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 2,
+   "confCache": 0.65,
+   "motivo": "gastos de explotación diversos sin desglose; catch-all",
+   "jev": "other_expenses",
+   "jevConf": 0.67,
+   "desdeCache": true,
+   "categoria": "other_expenses",
+   "confianza": 0.65
+  }
+ ]
+}

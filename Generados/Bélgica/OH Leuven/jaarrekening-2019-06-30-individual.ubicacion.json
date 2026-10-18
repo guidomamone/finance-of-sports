@@ -1,0 +1,220 @@
+{
+ "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2019-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2019-06-30-individual.md",
+ "mdSha1": "24fab3a43a1e55c689f9a0011153d7f109c6325b",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:27:57.615Z",
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    183,
+    186
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    307,
+    312
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 6,
+   "lineas": [
+    336,
+    338
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    360,
+    365
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 11,
+   "lineas": [
+    722,
+    743
+   ],
+   "tipo": "texto"
+  },
+  "b6": {
+   "pagina": 18,
+   "lineas": [
+    1355,
+    1369
+   ],
+   "tipo": "texto"
+  },
+  "b7": {
+   "pagina": 18,
+   "lineas": [
+    1373,
+    1377
+   ],
+   "tipo": "texto"
+  },
+  "b8": {
+   "pagina": 21,
+   "lineas": [
+    1469,
+    1479
+   ],
+   "tipo": "texto"
+  },
+  "b9": {
+   "pagina": 21,
+   "lineas": [
+    1482,
+    1492
+   ],
+   "tipo": "texto"
+  },
+  "b10": {
+   "pagina": 21,
+   "lineas": [
+    1496,
+    1507
+   ],
+   "tipo": "texto"
+  },
+  "b11": {
+   "pagina": 21,
+   "lineas": [
+    1511,
+    1522
+   ],
+   "tipo": "texto"
+  },
+  "b12": {
+   "pagina": 22,
+   "lineas": [
+    1529,
+    1549
+   ],
+   "tipo": "texto"
+  },
+  "b13": {
+   "pagina": 25,
+   "lineas": [
+    1767,
+    1770
+   ],
+   "tipo": "texto"
+  },
+  "b14": {
+   "pagina": 25,
+   "lineas": [
+    1777,
+    1787
+   ],
+   "tipo": "texto"
+  },
+  "b15": {
+   "pagina": 26,
+   "lineas": [
+    1805,
+    1811
+   ],
+   "tipo": "texto"
+  },
+  "b16": {
+   "pagina": 26,
+   "lineas": [
+    1828,
+    1832
+   ],
+   "tipo": "texto"
+  },
+  "b17": {
+   "pagina": 29,
+   "lineas": [
+    1989,
+    2043
+   ],
+   "tipo": "texto"
+  },
+  "b18": {
+   "pagina": 33,
+   "lineas": [
+    2257,
+    2267
+   ],
+   "tipo": "texto"
+  },
+  "b19": {
+   "pagina": 34,
+   "lineas": [
+    2273,
+    2281
+   ],
+   "tipo": "texto"
+  },
+  "b20": {
+   "pagina": 34,
+   "lineas": [
+    2288,
+    2299
+   ],
+   "tipo": "texto"
+  },
+  "b21": {
+   "pagina": 44,
+   "lineas": [
+    2861,
+    2876
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b20"
+ ],
+ "notas_ingresos": [
+  "b13"
+ ],
+ "notas_gastos": [
+  "b14"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Resultatenrekening / 30/06/2019 / {in Euro)",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/06/2019",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado de resultados resumido de la pág. 34 (b20, en euros con decimales) como estado principal, dado que no aparece en el índice el formulario oficial de resultados (resultatenrekening de la pág. 7-8)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice no muestra el esquema normalizado de resultados del depósito BNB; solo el resumen del informe en pág. 34 (b20).",
+   "bloques": [
+    "b20"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se acepta que 'Nier-recurrente bedrijfskosten' -38.764,39 en b20 difiere de los 38.126 de la nota b14 y se carga el importe del estado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Nier-recurrente bedrijfskosten",
+   "texto": "La nota b14 indica 38.126 y el estado b20 38.764,39; diferencia de 638 no explicable por redondeo.",
+   "bloques": [
+    "b20",
+    "b14"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales (modelo VOL) de OH Leuven al 30/06/2019. Estado: resumen de resultados en euros (b20). Notas: b13 niet-recurrente opbrengsten (1.179 ≈ Uitzonderlijke opbrengsten 1.178,83), b14 niet-recurrente kosten (miles no: euros redondeados, columnas boekjaar y vorig boekjaar). b15-b16 impuestos/IVA, balance y deudas excluidos."
+}

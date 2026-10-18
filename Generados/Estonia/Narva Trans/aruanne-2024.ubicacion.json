@@ -1,0 +1,298 @@
+{
+ "pdf": "Clubes/Estonia/Narva Trans/aruanne-2024.pdf",
+ "md": "Clubes/Estonia/Narva Trans/aruanne-2024.md",
+ "mdSha1": "ef2feb9937c7e3db1adc60e798eb1476d73d2691",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:46:54.230Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    11,
+    33
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    50,
+    71
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    82,
+    99
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    110,
+    128
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    139,
+    145
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 9,
+   "lineas": [
+    265,
+    268
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    354,
+    358
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 11,
+   "lineas": [
+    363,
+    368
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    370,
+    376
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    387,
+    392
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 12,
+   "lineas": [
+    394,
+    401
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 12,
+   "lineas": [
+    406,
+    409
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    414,
+    418
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 13,
+   "lineas": [
+    429,
+    440
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 13,
+   "lineas": [
+    444,
+    447
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 13,
+   "lineas": [
+    452,
+    461
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 14,
+   "lineas": [
+    472,
+    487
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 14,
+   "lineas": [
+    492,
+    501
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 14,
+   "lineas": [
+    506,
+    509
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 15,
+   "lineas": [
+    520,
+    522
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 15,
+   "lineas": [
+    526,
+    529
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 15,
+   "lineas": [
+    531,
+    534
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 15,
+   "lineas": [
+    536,
+    539
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 16,
+   "lineas": [
+    552,
+    573
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 17,
+   "lineas": [
+    584,
+    600
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 18,
+   "lineas": [
+    611,
+    631
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 19,
+   "lineas": [
+    642,
+    648
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 20,
+   "lineas": [
+    660,
+    662
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 23,
+   "lineas": [
+    763,
+    765
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 24,
+   "lineas": [
+    771,
+    773
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b13",
+  "b14",
+  "b15",
+  "b16"
+ ],
+ "notas_gastos": [
+  "b17",
+  "b18",
+  "b19"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(eurodes)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2024",
+ "columna_anterior": "2023",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el segundo 'Tulemiaruanne' de la pág. 17 (b25), que parece una repetición del estado de la pág. 5 (b3)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b25 repite el estado de resultados en otro formato (sin el renglón 'Liikmetelt saadud tasud' en las primeras filas), probablemente la versión del formulario del registro.",
+   "bloques": [
+    "b25",
+    "b3"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (b15), por ser solo un detalle de las donaciones ya incluidas en la nota 7 (b14)?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Annetused ja toetused",
+   "texto": "b15 tiene una sola fila de donación más el total; podría solaparse con b14.",
+   "bloques": [
+    "b15",
+    "b14"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Asociación sin fines de lucro, estados individuales en euros. Las págs. 16-19 (b24-b27) parecen repetir los estados en el formato del registro; se usa el estado de la pág. 5 (b3) con sus notas 6 a 11."
+}

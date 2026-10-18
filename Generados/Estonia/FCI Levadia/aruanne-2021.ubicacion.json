@@ -1,0 +1,258 @@
+{
+ "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2021.pdf",
+ "md": "Clubes/Estonia/FCI Levadia/aruanne-2021.md",
+ "mdSha1": "c72790ceab0502f92def81e23b8ddb590a96861f",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:46:46.487Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    6,
+    14
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    55,
+    99
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    105,
+    130
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    136,
+    164
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    170,
+    174
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    192,
+    198
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    214,
+    219
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    257,
+    264
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    270,
+    288
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    292,
+    301
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 10,
+   "lineas": [
+    305,
+    316
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    322,
+    332
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 11,
+   "lineas": [
+    336,
+    339
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 11,
+   "lineas": [
+    343,
+    355
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 11,
+   "lineas": [
+    359,
+    376
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 12,
+   "lineas": [
+    382,
+    387
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 12,
+   "lineas": [
+    395,
+    411
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 12,
+   "lineas": [
+    415,
+    418
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 13,
+   "lineas": [
+    424,
+    467
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 14,
+   "lineas": [
+    473,
+    520
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 15,
+   "lineas": [
+    526,
+    554
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 16,
+   "lineas": [
+    564,
+    566
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 18,
+   "lineas": [
+    632,
+    634
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 19,
+   "lineas": [
+    640,
+    642
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 19,
+   "lineas": [
+    646,
+    651
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b12",
+  "b13",
+  "b14"
+ ],
+ "notas_gastos": [
+  "b15",
+  "b16"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Raamatupidamise aastaaruanne on koostatud eurodes.",
+ "moneda": "EUR",
+ "columna_ejercicio": "2021",
+ "columna_anterior": "2020",
+ "perimetro": "ambos",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el estado individual de Spordiklubi FC Levadia (LISA 12, b20) y se usa solo el consolidado b3?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "b20 es el estado de resultados individual de la matriz; el club carga consolidado (b3).",
+   "bloques": [
+    "b20",
+    "b3"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Las notas LISA 6-9 (b12-b16) corresponden a cifras consolidadas y no solo a la matriz?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "Las notas no indican explícitamente el perímetro; hay que verificar que sus totales cuadren con b3.",
+   "bloques": [
+    "b12",
+    "b14",
+    "b15",
+    "b16"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "b3 es el tulude-kulude aruanne consolidado (columna 2021 es la segunda, 2020 primera). b20 (LISA 12) es el individual de SK FC Levadia, b19 y b21 su balance y flujos individuales. Columnas en orden 2020 | 2021."
+}

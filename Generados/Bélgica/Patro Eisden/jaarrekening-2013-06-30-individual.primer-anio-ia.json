@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2013-06-30-individual.md",
+ "clave": "c6345bb89f44712c8b9a41597f23cfb9908704d2",
+ "generado": "2026-10-18T15:37:12.556Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Lo cargado coincide con el estado. Los cuatro renglones de la nota (L264-L268) suman 319.899 y reemplazan a L189. La brutomarge (L184) y los resultados intermedios (L195, L198, L201) son subtotales y no se cargan. Los renglones en blanco del ejercicio (L196, L199, L200) no faltan. El resultado da -80.484, igual al impreso."
+ }
+}

@@ -1,0 +1,50 @@
+{
+  "md": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2023-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2023-06-30-individual.pdf",
+  "club": "lokerentemse-be",
+  "year": 2023,
+  "generatedAt": "2026-10-18T15:27:59.814Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Brutomarge (+)/(-)",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.591204
+      ],
+      "glosa": "Margen bruto (+)/(-)"
+    },
+    {
+      "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        1.069496
+      ],
+      "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
+    },
+    {
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.080193
+      ],
+      "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.011261
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

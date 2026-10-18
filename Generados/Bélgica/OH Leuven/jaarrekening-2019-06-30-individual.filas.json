@@ -1,0 +1,232 @@
+{
+ "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2019-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2019-06-30-individual.md",
+ "mdSha1": "24fab3a43a1e55c689f9a0011153d7f109c6325b",
+ "ubicacionSha1": "eddae4403d88c40fc4b024d99367602f6ec67361",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:37:10.497Z",
+ "ubicacion": {
+  "estado": [
+   "b20"
+  ],
+  "notas_ingresos": [
+   "b13"
+  ],
+  "notas_gastos": [
+   "b14"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b20",
+   "escala": "unidades",
+   "evidencia": "L2287: {in Euro)"
+  },
+  {
+   "bloque": "b13",
+   "escala": "unidades",
+   "evidencia": "No se indica; importes coinciden con euros enteros (1.179 vs 1.178,83 en b20)"
+  },
+  {
+   "bloque": "b14",
+   "escala": "unidades",
+   "evidencia": "No se indica; importes en euros enteros (38.126 vs 38.764,39 en b20)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b20",
+   "linea": 2288,
+   "etiqueta": "Omzet",
+   "actual": "2.800.761,82",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 2289,
+   "etiqueta": "Handelsgoederen",
+   "actual": "-158.750,48",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 2290,
+   "etiqueta": "Diensten en diverse goederen",
+   "actual": "-3.422.019,09",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 2291,
+   "etiqueta": "Personeelskosten",
+   "actual": "-5.341.596,63",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 2292,
+   "etiqueta": "Afschrijvingen & waardeverminderingen",
+   "actual": "-1.403.146,47",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 2293,
+   "etiqueta": "Andere bedrijfskosten",
+   "actual": "-115.145,74",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 2294,
+   "etiqueta": "Nier-recurrente bedrijfskosten",
+   "actual": "-38.764,39",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 2295,
+   "etiqueta": "Verlies uit gewone bedrijfsoefening",
+   "actual": "-7.678.660,98",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 2296,
+   "etiqueta": "Financieel resultaat",
+   "actual": "-182.587,73",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 2297,
+   "etiqueta": "Verlies van het boekjaar voor belasting",
+   "actual": "-7.861.248,71",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 2298,
+   "etiqueta": "Uitzonderlijke opbrengsten",
+   "actual": "1.178,83",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 2299,
+   "etiqueta": "Verlies van het boekjaar",
+   "actual": "-7.860.069,88",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 1770,
+   "etiqueta": "Andere niet-recurrente bedrijfsopbrengsten 764/8",
+   "actual": "1.179",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Uitzonderlijke opbrengsten"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1778,
+   "etiqueta": "Niet-recurrente bedrijfskosten 66A",
+   "actual": "38.126",
+   "anterior": "55.293",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Nier-recurrente bedrijfskosten"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1785,
+   "etiqueta": "Andere niet-recurrente bedrijfskosten 664/7",
+   "actual": "38.126",
+   "anterior": "277.319",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Niet-recurrente bedrijfskosten 66A"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 2299,
+  "actual": "-7.860.069,88",
+  "anterior": null
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la nota b14 (38.126) como desglose de 'Nier-recurrente bedrijfskosten' aunque el estado imprime -38.764,39?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Nier-recurrente bedrijfskosten",
+   "texto": "Diferencia de 638 entre L1778 (38.126) y L2294 (-38.764,39), mayor que redondeo.",
+   "bloques": [
+    "b14",
+    "b20"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se dejan afuera L1780 (16.250) y L1782 (-238.276) por corresponder solo a la columna del año anterior?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Niet-recurrente bedrijfskosten 66A",
+   "texto": "L1780 y L1782 tienen un único importe que cuadra con el año anterior (16.250-238.276+277.319=55.293).",
+   "bloques": [
+    "b14"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se omite L1777 'NIET-RECURRENTE KOSTEN 66' por duplicar L1778?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Niet-recurrente bedrijfskosten 66A",
+   "texto": "L1777 y L1778 tienen los mismos importes 38.126/55.293.",
+   "bloques": [
+    "b14"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "El estado b20 sólo tiene columna 30/06/2019; no hay año anterior. Las notas son del formulario BNB en euros enteros."
+}

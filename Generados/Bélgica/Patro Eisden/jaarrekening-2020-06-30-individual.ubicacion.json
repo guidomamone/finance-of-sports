@@ -1,0 +1,118 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2020-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2020-06-30-individual.md",
+ "mdSha1": "006cd48de0f259713fbcc06a34a09906dd121c76",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:24.132Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    19,
+    27
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    91,
+    117
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    125,
+    164
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    174,
+    202
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    212,
+    219
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    229,
+    242
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    256,
+    260
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    262,
+    285
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    295,
+    298
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    302,
+    318
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b6"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING IN EURO",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Resultaten' de la pág. 8 (b6), si solo trae datos de personal y la línea 'Geactiveerde interesten'?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El bloque b6 tiene solo 4 importes y parece información de personal; podría no desglosar ningún renglón de gastos del estado.",
+   "bloques": [
+    "b6"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Jaarrekening individual de una VZW en el modelo abreviado belga. El estado de resultados es b4 (Resultatenrekening), que arranca en la brutomarge. El bloque b6 (6.4 Resultaten) se incluye de forma tentativa como nota de gastos de personal. Se excluyen el balance (b2, b3), la resultaatverwerking (b5), la sociale balans (b7, b8) y las opleidingen (b10)."
+}

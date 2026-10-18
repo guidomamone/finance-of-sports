@@ -1,0 +1,221 @@
+{
+ "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2024.pdf",
+ "md": "Clubes/Estonia/Harju JK Laagri/aruanne-2024.md",
+ "mdSha1": "d4a129d655339fd8837e7f3d814aa1f1f3e34f0e",
+ "ubicacionSha1": "04e83a3603e9cafbf46affc3effb87f0c28f0d6b",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:54:30.078Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [
+   "b7",
+   "b8",
+   "b9"
+  ],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "unidades",
+   "evidencia": "L88: (eurodes)"
+  },
+  {
+   "bloque": "b7",
+   "escala": "unidades",
+   "evidencia": "L187: (eurodes)"
+  },
+  {
+   "bloque": "b8",
+   "escala": "unidades",
+   "evidencia": "Sin frase propia; continuación de Lisa 2 (L187: (eurodes))"
+  },
+  {
+   "bloque": "b9",
+   "escala": "unidades",
+   "evidencia": "L208: (eurodes)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 93,
+   "etiqueta": "Annetused ja toetused",
+   "actual": "2 500",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 94,
+   "etiqueta": "Tulu ettevõtlusest",
+   "actual": "48 202",
+   "anterior": "168 999",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 95,
+   "etiqueta": "Kokku tulud",
+   "actual": "50 702",
+   "anterior": "168 999",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 97,
+   "etiqueta": "Mitmesugused tegevuskulud",
+   "actual": "-63 321",
+   "anterior": "-63 521",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 98,
+   "etiqueta": "Muud kulud",
+   "actual": "-664",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 99,
+   "etiqueta": "Kokku kulud",
+   "actual": "-63 985",
+   "anterior": "-63 521",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 100,
+   "etiqueta": "Põhitegevuse tulem",
+   "actual": "-13 283",
+   "anterior": "105 478",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 101,
+   "etiqueta": "Muud finantstulud ja -kulud",
+   "actual": "2",
+   "anterior": "123",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 102,
+   "etiqueta": "Aruandeaasta tulem",
+   "actual": "-13 281",
+   "anterior": "105 601",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 191,
+   "etiqueta": "Sihtotstarbelised annetused ja toetused-Riigi ja KOV toetused",
+   "actual": "2 500",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Annetused ja toetused"
+  },
+  {
+   "bloque": "b7",
+   "linea": 192,
+   "etiqueta": "Kokku annetused ja toetused",
+   "actual": "2 500",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Annetused ja toetused"
+  },
+  {
+   "bloque": "b8",
+   "linea": 198,
+   "etiqueta": "Rahaline annetus",
+   "actual": "2 500",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Annetused ja toetused"
+  },
+  {
+   "bloque": "b8",
+   "linea": 199,
+   "etiqueta": "Kokku annetused ja toetused",
+   "actual": "2 500",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Annetused ja toetused"
+  },
+  {
+   "bloque": "b9",
+   "linea": 212,
+   "etiqueta": "Reklaamitulu",
+   "actual": "48 202",
+   "anterior": "168 999",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Tulu ettevõtlusest"
+  },
+  {
+   "bloque": "b9",
+   "linea": 213,
+   "etiqueta": "Kokku tulu ettevõtlusest",
+   "actual": "48 202",
+   "anterior": "168 999",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Tulu ettevõtlusest"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 95,
+  "actual": "50 702"
+ },
+ "total_gastos": {
+  "linea": 99,
+  "actual": "-63 985"
+ },
+ "resultado": {
+  "linea": 102,
+  "actual": "-13 281",
+  "anterior": "105 601"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L196-L199) por ser una segunda apertura del mismo renglón 'Annetused ja toetused' ya desglosado en L191-L192?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Annetused ja toetused",
+   "texto": "b8 (L198-L199) desglosa los mismos 2 500 de Lisa 2 con otro criterio (rahaline/mitterahaline), cargar ambos duplicaría el importe.",
+   "bloques": [
+    "b7",
+    "b8"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Las notas b7 y b8 no traen columna del año anterior. El año anterior es un período irregular (09.01.2023 - 31.12.2023). Muud finantstulud ja -kulud (L101) clasificado como financiero."
+}

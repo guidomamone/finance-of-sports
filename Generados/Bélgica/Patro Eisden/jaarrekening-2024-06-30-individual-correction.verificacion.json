@@ -1,0 +1,161 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2024-06-30-individual-correction.pdf",
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2024-06-30-individual-correction.md",
+ "generado": "2026-10-18T15:46:15.689Z",
+ "estado": "cola",
+ "clubId": "patroeisden-be",
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "cc030a0",
+  "4d28baf",
+  "07ad3d2"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (impuesto invertido)",
+   "dif": 0.00583000000000089
+  },
+  {
+   "nombre": "documento del año 2025",
+   "ok": true,
+   "detalle": "ingresos de 2024: 3.068851 en este documento y 3.068851 en jaarrekening-2025-06-30-individual.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": false,
+   "detalle": "ingresos de 2023: 0.270348 en jaarrekening-2023-06-30-individual.pdf y 0.255583 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Waarvan: niet-recurrente bedrijfsopbrengsten\" tiene todas sus filas en 0 y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"Niet-recurrente bedrijfskosten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de localizar que no afecta la carga: b14 abre los ingresos y gastos no recurrentes que en b4 aparecen como 'waarvan'.",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 3.068851,
+  "gastos": 6.064444,
+  "financiero": 0.198043,
+  "impuesto": 0.00653,
+  "resultadoImpreso": -2.80991,
+  "resultadoParaCargar": -2.80991,
+  "resultadoFinal": null,
+  "lecturaSignos": "impuesto invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Brutomarge (+)/(-)",
+   "lado": "ingreso",
+   "M": 3.068851,
+   "pagina": 5,
+   "linea": 172,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Waarvan: niet-recurrente bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 5,
+   "linea": 173,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "gasto",
+   "M": 5.819894,
+   "pagina": 5,
+   "linea": 177,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.129484,
+   "pagina": 5,
+   "linea": 178,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "gasto",
+   "M": 0.011831,
+   "pagina": 5,
+   "linea": 179,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+   "lado": "gasto",
+   "M": 0.007439,
+   "pagina": 5,
+   "linea": 180,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andere bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.020365,
+   "pagina": 5,
+   "linea": 181,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.075431,
+   "pagina": 5,
+   "linea": 183,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "M": 0.175858,
+   "linea": 186
+  },
+  {
+   "etiqueta": "Recurrente financiële kosten",
+   "M": 0.022185,
+   "linea": 189
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen op het resultaat (+)/(-)",
+   "M": -0.00653,
+   "linea": 194
+  }
+ ]
+}

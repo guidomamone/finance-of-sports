@@ -1,0 +1,101 @@
+{
+ "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2019-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2019-06-30-individual.md",
+ "mdSha1": "93c524877d277fd8a3be214357a4c2cec9854e38",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:22.208Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    3,
+    5
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    18,
+    24
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    132,
+    159
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    167,
+    216
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    226,
+    255
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    265,
+    281
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    291,
+    321
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    370,
+    378
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING IN EURO (b2); los modelos normalizados belgas (VKT) se presentan en euro, sin decimales",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿La columna 'Vorig boekjaar' de la resultatenrekening (b5) está vacía, porque es el primer ejercicio (09-07 a 30-06)?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El ejercicio empieza el 09-07 según b2, lo que sugiere un primer ejercicio sin comparativo.",
+   "bloques": [
+    "b5",
+    "b2"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales con modelo abreviado (VKT). La resultatenrekening (b5) arranca en la Brutomarge, sin abrir la cifra de negocios. No hay notas que desglosen ingresos o gastos. El b6 es la distribución del resultado y el b7 es el estado de deudas, así que se excluyen."
+}

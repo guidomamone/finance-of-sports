@@ -1,0 +1,30 @@
+{
+  "md": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.md",
+  "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.pdf",
+  "club": "harjujklaagri-ee",
+  "year": 2023,
+  "generatedAt": "2026-10-18T15:09:23.023Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Tulu ettevõtlusest",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.168999
+      ],
+      "glosa": "Ingresos por actividades empresariales"
+    },
+    {
+      "label": "Mitmesugused tegevuskulud",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.063521
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

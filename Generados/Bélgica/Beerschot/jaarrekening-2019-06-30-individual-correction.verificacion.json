@@ -1,0 +1,77 @@
+{
+ "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2019-06-30-individual-correction.pdf",
+ "md": "Clubes/Bélgica/Beerschot/jaarrekening-2019-06-30-individual-correction.md",
+ "generado": "2026-10-18T15:46:15.347Z",
+ "estado": "cola",
+ "clubId": "beerschot-be",
+ "year": 2018,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "e2b25ab",
+  "28e3d66",
+  "28e3d66",
+  "18e91df",
+  "47d0a04"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": null,
+   "detalle": "extraer.mjs no encontró el resultado impreso"
+  },
+  {
+   "nombre": "número impreso para cerrar",
+   "ok": false,
+   "detalle": "el documento no imprime totales ni resultado en los bloques elegidos: no hay cómo confirmar las sumas"
+  },
+  {
+   "nombre": "documento del año 2019",
+   "ok": null,
+   "detalle": "no se puede comparar: jaarrekening-2019-06-30-individual.pdf no trae la columna del año anterior"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2017: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "duda de extraer que no afecta la carga: Ningún bloque indica la escala; el formato normalizado del BNB se presenta en euros."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0,
+  "gastos": 0,
+  "financiero": 0,
+  "impuesto": 0,
+  "resultadoImpreso": null,
+  "resultadoParaCargar": null,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [],
+ "impuesto": []
+}

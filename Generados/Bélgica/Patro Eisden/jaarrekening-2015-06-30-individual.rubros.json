@@ -1,0 +1,90 @@
+{
+  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2015-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2015-06-30-individual.pdf",
+  "club": "patroeisden-be",
+  "year": 2015,
+  "generatedAt": "2026-10-18T15:37:12.044Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.933485
+      ],
+      "glosa": "Ingresos de explotación"
+    },
+    {
+      "label": "Uitzonderlijke opbrengsten",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.005293
+      ],
+      "glosa": "Ingresos excepcionales"
+    },
+    {
+      "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.397827
+      ],
+      "glosa": "Mercaderías, materias primas y auxiliares, servicios y bienes diversos"
+    },
+    {
+      "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+      "lado": "expense",
+      "page": 7,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        0.377459
+      ],
+      "glosa": "Remuneraciones y prestaciones sociales directas"
+    },
+    {
+      "label": "Werkgeversbijdragen voor sociale verzekeringen",
+      "lado": "expense",
+      "page": 7,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        0.090548
+      ],
+      "glosa": "Cotizaciones patronales a la seguridad social"
+    },
+    {
+      "label": "Andere personeelskosten",
+      "lado": "expense",
+      "page": 7,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        0.026934
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.0015
+      ],
+      "glosa": "Correcciones de valor de existencias, pedidos en curso y deudores comerciales: dotaciones (reversiones) (+)/(-)"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.004472
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

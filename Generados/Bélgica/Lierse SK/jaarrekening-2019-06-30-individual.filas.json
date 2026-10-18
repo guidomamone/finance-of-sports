@@ -1,0 +1,136 @@
+{
+ "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2019-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2019-06-30-individual.md",
+ "mdSha1": "93c524877d277fd8a3be214357a4c2cec9854e38",
+ "ubicacionSha1": "33b8a45a6e2ed3bff6c67b035bb8564c1a3101b5",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:27:56.460Z",
+ "ubicacion": {
+  "estado": [
+   "b5"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b5",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica la escala; en las jaarrekening belgas (modelo NBB) los importes suelen estar en euros (unidades), pero no está impreso en el bloque."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b5",
+   "linea": 229,
+   "etiqueta": "Brutomarge (+)/(-)",
+   "actual": "-1.372",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 234,
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "actual": "2.479",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 240,
+   "etiqueta": "Bedrijfswinst (Bedrijfsverlies) (+)/(-)",
+   "actual": "-3.851",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 245,
+   "etiqueta": "Financiële kosten",
+   "actual": "27",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 246,
+   "etiqueta": "Recurrente financiële kosten",
+   "actual": "27",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financiële kosten"
+  },
+  {
+   "bloque": "b5",
+   "linea": 248,
+   "etiqueta": "Winst (Verlies) van het boekjaar vóór belasting (+)/(-)",
+   "actual": "-3.878",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 252,
+   "etiqueta": "Winst (Verlies) van het boekjaar (+)/(-)",
+   "actual": "-3.878",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 255,
+   "etiqueta": "Te bestemmen winst (verlies) van het boekjaar (+)/(-)",
+   "actual": "-3.878",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 252,
+  "actual": "-3.878",
+  "anterior": null
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Los importes del estado de resultados (b5, L229-L255) están expresados en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El bloque b5 no imprime la escala; el modelo abreviado NBB suele presentarse en euros.",
+   "bloques": [
+    "b5"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga la Brutomarge (L229, -1.372) como único dato de ingresos/costos operativos, sin Omzet ni compras desglosados?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Brutomarge (+)/(-)",
+   "texto": "Esquema abreviado: Omzet (L231) y 60/61 (L232) vienen vacíos y solo se imprime el margen bruto neto.",
+   "bloques": [
+    "b5"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Esquema abreviado belga. La columna 'Vorig boekjaar' está vacía en todas las filas (posible primer ejercicio o columna no transcripta). No hay total de ingresos ni de gastos impresos; la Brutomarge negativa resume ingresos menos costos operativos."
+}

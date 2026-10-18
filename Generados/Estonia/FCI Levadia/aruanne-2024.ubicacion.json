@@ -1,0 +1,280 @@
+{
+ "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2024.pdf",
+ "md": "Clubes/Estonia/FCI Levadia/aruanne-2024.md",
+ "mdSha1": "778a425127417f315b85e804713031a37cfe058e",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:46:46.723Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    13
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    25,
+    48
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    75,
+    77
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    88,
+    118
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    126,
+    153
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 6,
+   "lineas": [
+    161,
+    189
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 7,
+   "lineas": [
+    197,
+    204
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 8,
+   "lineas": [
+    232,
+    237
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    288,
+    296
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    304,
+    322
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 10,
+   "lineas": [
+    324,
+    334
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    342,
+    351
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 11,
+   "lineas": [
+    355,
+    364
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 11,
+   "lineas": [
+    368,
+    374
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 12,
+   "lineas": [
+    385,
+    397
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 12,
+   "lineas": [
+    401,
+    405
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 12,
+   "lineas": [
+    409,
+    422
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 12,
+   "lineas": [
+    426,
+    441
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 13,
+   "lineas": [
+    449,
+    455
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 13,
+   "lineas": [
+    464,
+    473
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 13,
+   "lineas": [
+    477,
+    480
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 14,
+   "lineas": [
+    495,
+    537
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 15,
+   "lineas": [
+    545,
+    591
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 16,
+   "lineas": [
+    599,
+    626
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 16,
+   "lineas": [
+    630,
+    637
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 17,
+   "lineas": [
+    649,
+    651
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 20,
+   "lineas": [
+    724,
+    726
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 21,
+   "lineas": [
+    732,
+    734
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [
+  "b15",
+  "b16",
+  "b17"
+ ],
+ "notas_gastos": [
+  "b18",
+  "b19"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Las notas indican 'eurodes' (en euros), p. ej. LISA 3 (b10); el estado no indica otra escala.",
+ "moneda": "EUR",
+ "columna_ejercicio": "2024",
+ "columna_anterior": "2023",
+ "perimetro": "ambos",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el estado individual 'LISA 14. FCI Levadia MTÜ tulude-kulude aruanne' (b23) y se usa solo el consolidado b5?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El club carga el consolidado; b23 es el estado individual de FCI Levadia MTÜ.",
+   "bloques": [
+    "b23",
+    "b5"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (b16), que reparte el mismo total de annetused ja toetused de b15 en dinerarias y no dinerarias?",
+   "propuesta": "no",
+   "tema": "cuadro-duplicado",
+   "renglon": "Annetused ja toetused",
+   "texto": "b16 es otra apertura del mismo total que b15; puede duplicar si se cargan ambos.",
+   "bloques": [
+    "b16",
+    "b15"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado consolidado de resultados: b5 (pág. 5). Notas consolidadas: LISA 7 donaciones (b15, b16), LISA 8 ingresos de actividad (b17), LISA 9 otros gastos operativos (b18), LISA 10 gastos de personal (b19). Estado individual de FCI Levadia MTÜ: b23 (LISA 14), no elegido. Las notas tienen encabezados '31.12.2023/31.12.2024', equivalentes a los ejercicios 2023/2024."
+}

@@ -1,0 +1,279 @@
+{
+ "pdf": "Clubes/Estonia/Kuressaare/aruanne-2023.pdf",
+ "md": "Clubes/Estonia/Kuressaare/aruanne-2023.md",
+ "mdSha1": "36f4328af3ce4a3e103da378a58be0862e3b90d8",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:46:53.483Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    11
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    31,
+    50
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    86,
+    109
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    121,
+    136
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    148,
+    170
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    182,
+    188
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    226,
+    228
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    274,
+    283
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    285,
+    297
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    309,
+    318
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    324,
+    341
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 12,
+   "lineas": [
+    353,
+    365
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    367,
+    378
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 12,
+   "lineas": [
+    384,
+    390
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 12,
+   "lineas": [
+    394,
+    397
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 13,
+   "lineas": [
+    409,
+    416
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 13,
+   "lineas": [
+    422,
+    437
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 13,
+   "lineas": [
+    443,
+    450
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 14,
+   "lineas": [
+    464,
+    467
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 14,
+   "lineas": [
+    471,
+    482
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 14,
+   "lineas": [
+    484,
+    487
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 14,
+   "lineas": [
+    489,
+    493
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 14,
+   "lineas": [
+    495,
+    498
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 14,
+   "lineas": [
+    500,
+    503
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 15,
+   "lineas": [
+    513,
+    515
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 16,
+   "lineas": [
+    527,
+    529
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 17,
+   "lineas": [
+    539,
+    541
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 17,
+   "lineas": [
+    545,
+    547
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b14",
+  "b15",
+  "b16"
+ ],
+ "notas_gastos": [
+  "b17",
+  "b18"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(eurodes)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2023",
+ "columna_anterior": "2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el tulemiaruanne individual (b4) aunque el club suele cargarse como consolidado?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El documento es un aruanne de una sola entidad (MTÜ) sin estados consolidados.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (b15) por repetir el total de Lisa 6?",
+   "propuesta": "no",
+   "tema": "cuadro-duplicado",
+   "renglon": "Kokku annetused ja toetused",
+   "texto": "b15 parece reclasificar donaciones monetarias y solo tiene 2 filas.",
+   "bloques": [
+    "b15",
+    "b14"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Entidad individual (Jalgpalliklubi FC Kuressaare), no hay consolidado. Estado de resultados en b4; notas: Lisa 6 annetused (b14, b15), Lisa 7 tulu ettevõtlusest (b16), Lisa 8 tegevuskulud (b17), Lisa 9 tööjõukulud (b18). b24 compras a partes relacionadas no se usa."
+}

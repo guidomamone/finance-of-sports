@@ -1,0 +1,39 @@
+{
+ "pdf": "Clubes/Estonia/Tallinna Kalev/aruanne-2023.pdf",
+ "generado": "2026-10-18T15:16:21.199Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 3 caso(s) en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "alta:reportType",
+   "motivo": "¿El documento trae un estado de resultados (o de recursos y gastos) anual cargable, o hay que buscar los estados en otro documento del club?"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 3 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del club, 2026-10-18: 2025 trae los dos (pág. 5 consolidado y la entidad sola L653-711); la controlada es la escuela de fútbol del club: consolidado (regla 2). (revisión del alta, subagente Sonnet, revisado por Claude 2026-10-18))"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Estonia/Tallinna Kalev/aruanne-2023.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2023-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "tallinnakalev-ee",
+ "year": 2023,
+ "cortadoEn": "filas"
+}

@@ -1,0 +1,150 @@
+{
+  "md": "Clubes/Bélgica/Beerschot/jaarrekening-2019-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2019-06-30-individual.pdf",
+  "club": "beerschot-be",
+  "year": 2019,
+  "generatedAt": "2026-10-18T15:37:11.160Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ticketing & abonnementen",
+      "lado": "revenue",
+      "page": 19,
+      "section": "nota que desglosa \"Omzet\"",
+      "values": [
+        2.115177
+      ],
+      "glosa": "Taquilla y abonos"
+    },
+    {
+      "label": "Sponsoring",
+      "lado": "revenue",
+      "page": 19,
+      "section": "nota que desglosa \"Omzet\"",
+      "values": [
+        1.153285
+      ],
+      "glosa": "Patrocinio"
+    },
+    {
+      "label": "TV rechten",
+      "lado": "revenue",
+      "page": 19,
+      "section": "nota que desglosa \"Omzet\"",
+      "values": [
+        1.139974
+      ],
+      "glosa": "Derechos de televisión"
+    },
+    {
+      "label": "Commercieel",
+      "lado": "revenue",
+      "page": 19,
+      "section": "nota que desglosa \"Omzet\"",
+      "values": [
+        1.413328
+      ],
+      "glosa": "Comercial"
+    },
+    {
+      "label": "Andere",
+      "lado": "revenue",
+      "page": 19,
+      "section": "nota que desglosa \"Omzet\"",
+      "values": [
+        0.031766
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Andere bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        2.012267
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Niet-recurrente bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.024768
+      ],
+      "glosa": "Ingresos de explotación no recurrentes"
+    },
+    {
+      "label": "Aankopen",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.825475
+      ],
+      "glosa": "Compras"
+    },
+    {
+      "label": "Voorraad: afname (toename) (+)/(-)",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
+      "values": [
+        -0.05233
+      ],
+      "glosa": "Existencias: disminución (aumento) (+)/(-)"
+    },
+    {
+      "label": "Diensten en diverse goederen",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        4.364733
+      ],
+      "glosa": "Servicios y bienes diversos"
+    },
+    {
+      "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        5.813112
+      ],
+      "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
+    },
+    {
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.429397
+      ],
+      "glosa": "Amortizaciones y deterioros de valor de gastos de constitución, inmovilizado intangible y material"
+    },
+    {
+      "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.048014
+      ],
+      "glosa": "Deterioros de valor de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.05239
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

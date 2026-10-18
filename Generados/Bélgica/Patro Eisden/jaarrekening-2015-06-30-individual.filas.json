@@ -1,0 +1,237 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2015-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2015-06-30-individual.md",
+ "mdSha1": "014ba4fcee335388999da554c9b2939cd8c83a17",
+ "ubicacionSha1": "6fa1fa852300eadf578a35514eece29b453ef4ea",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:37:11.024Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b6"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "no se sabe",
+   "evidencia": "No figura frase de escala en el bloque; formato belga de cuentas anuales suele ser en euros (unidades)."
+  },
+  {
+   "bloque": "b6",
+   "escala": "no se sabe",
+   "evidencia": "No figura frase de escala en el bloque."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 194,
+   "etiqueta": "Brutomarge (+)/(-)",
+   "actual": "535.658",
+   "anterior": "266.761",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 195,
+   "etiqueta": "Bedrijfsopbrengsten",
+   "actual": "933.485",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 198,
+   "etiqueta": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+   "actual": "397.827",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 199,
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "actual": "494.942",
+   "anterior": "362.814",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 201,
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "actual": "1.500",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 203,
+   "etiqueta": "Andere bedrijfskosten",
+   "actual": "4.472",
+   "anterior": "6.252",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 205,
+   "etiqueta": "Positief (Negatief) bedrijfsresultaat (+)/(-)",
+   "actual": "34.744",
+   "anterior": "-102.305",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 206,
+   "etiqueta": "Financiële opbrengsten",
+   "actual": "9.327",
+   "anterior": "13.635",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 207,
+   "etiqueta": "Financiële kosten",
+   "actual": "206",
+   "anterior": "621",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 208,
+   "etiqueta": "Positief (Negatief) resultaat uit de gewone bedrijfsuitoefening (+)/(-)",
+   "actual": "43.865",
+   "anterior": "-89.291",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 209,
+   "etiqueta": "Uitzonderlijke opbrengsten",
+   "actual": "5.293",
+   "anterior": "3.113",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 211,
+   "etiqueta": "Positief (Negatief) resultaat van het boekjaar (+)/(-)",
+   "actual": "49.158",
+   "anterior": "-86.178",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 250,
+   "etiqueta": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "actual": "377.459",
+   "anterior": "354.452",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)"
+  },
+  {
+   "bloque": "b6",
+   "linea": 251,
+   "etiqueta": "Werkgeversbijdragen voor sociale verzekeringen",
+   "actual": "90.548",
+   "anterior": "4.570",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)"
+  },
+  {
+   "bloque": "b6",
+   "linea": 252,
+   "etiqueta": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)"
+  },
+  {
+   "bloque": "b6",
+   "linea": 253,
+   "etiqueta": "Andere personeelskosten",
+   "actual": "26.934",
+   "anterior": "3.792",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)"
+  },
+  {
+   "bloque": "b6",
+   "linea": 254,
+   "etiqueta": "Ouderdoms- en overlevingspensioenen",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 195,
+  "actual": "933.485"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 211,
+  "actual": "49.158",
+  "anterior": "-86.178"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes del estado (b4) como unidades de euro?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Ni b4 ni b6 imprimen la escala; el formato belga de cuentas anuales se presenta en euros.",
+   "bloques": [
+    "b4",
+    "b6"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja sin año anterior a 'Bedrijfsopbrengsten' (L195) y 'Handelsgoederen...' (L198), porque el año anterior solo informa Brutomarge 266.761?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Bedrijfsopbrengsten",
+   "texto": "En L195 y L198 la columna Vorig boekjaar está vacía; el esquema abreviado solo muestra la margen bruta del año anterior.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Esquema abreviado belga: Brutomarge (L194) = Bedrijfsopbrengsten 933.485 - Handelsgoederen 397.827 = 535.658. El detalle de personal de b6 (L250-L254) suma 494.941, una unidad menos que L199 (redondeo). No se extrajeron las filas de cantidad de empleados (L246-L247) por no ser importes."
+}

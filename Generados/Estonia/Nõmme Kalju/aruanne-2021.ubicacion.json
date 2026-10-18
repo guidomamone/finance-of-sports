@@ -1,0 +1,306 @@
+{
+ "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2021.pdf",
+ "md": "Clubes/Estonia/Nõmme Kalju/aruanne-2021.md",
+ "mdSha1": "407ec9551b30e9aab63b73e19ce76751fd7fea56",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:54:30.270Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    10
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    28,
+    51
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    142,
+    164
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    176,
+    195
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    207,
+    232
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    244,
+    250
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 10,
+   "lineas": [
+    312,
+    317
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 11,
+   "lineas": [
+    355,
+    370
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    372,
+    386
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    400,
+    409
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 13,
+   "lineas": [
+    421,
+    443
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    463,
+    472
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 14,
+   "lineas": [
+    476,
+    482
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 15,
+   "lineas": [
+    494,
+    505
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 15,
+   "lineas": [
+    507,
+    517
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 15,
+   "lineas": [
+    523,
+    533
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 15,
+   "lineas": [
+    537,
+    541
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 16,
+   "lineas": [
+    553,
+    565
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 16,
+   "lineas": [
+    571,
+    576
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 16,
+   "lineas": [
+    582,
+    597
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 17,
+   "lineas": [
+    609,
+    611
+   ],
+   "tipo": "texto"
+  },
+  "b22": {
+   "pagina": 17,
+   "lineas": [
+    617,
+    623
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 17,
+   "lineas": [
+    625,
+    628
+   ],
+   "tipo": "texto"
+  },
+  "b24": {
+   "pagina": 17,
+   "lineas": [
+    638,
+    641
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 17,
+   "lineas": [
+    645,
+    653
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 18,
+   "lineas": [
+    659,
+    664
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 18,
+   "lineas": [
+    666,
+    669
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 18,
+   "lineas": [
+    673,
+    675
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 19,
+   "lineas": [
+    693,
+    695
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 20,
+   "lineas": [
+    701,
+    703
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 20,
+   "lineas": [
+    707,
+    711
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b16",
+  "b17",
+  "b18"
+ ],
+ "notas_gastos": [
+  "b19",
+  "b20",
+  "b21",
+  "b22",
+  "b23"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(eurodes)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2021",
+ "columna_anterior": "2020",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado individual de la MTÜ Nõmme Kalju FC (b4) aunque los años anteriores se cargaron como consolidado?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El documento solo presenta estados de la asociación (Mittetulundusühing), sin consolidado.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (b17), que reparte el mismo total de donaciones de b16 en dinero/no dinero?",
+   "propuesta": "no",
+   "tema": "cuadro-duplicado",
+   "renglon": "Annetused ja toetused",
+   "texto": "b17 es otra apertura del mismo total que b16; cargar ambos podría duplicar.",
+   "bloques": [
+    "b16",
+    "b17"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado individual (no hay consolidado) en euros. b21 detalla costos de transferencias de jugadores de la nota 11; b23 abre Palgakulu de la nota 12."
+}

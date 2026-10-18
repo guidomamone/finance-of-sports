@@ -1,0 +1,270 @@
+{
+ "pdf": "Clubes/Estonia/Kuressaare/aruanne-2024.pdf",
+ "md": "Clubes/Estonia/Kuressaare/aruanne-2024.md",
+ "mdSha1": "813883d25347280a73017fa8696e4d8bed4316a8",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:46:53.573Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    10
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    23,
+    42
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    76,
+    99
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    110,
+    126
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    137,
+    160
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    171,
+    177
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    213,
+    215
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    255,
+    264
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    266,
+    275
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    286,
+    294
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    299,
+    316
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 12,
+   "lineas": [
+    327,
+    339
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    341,
+    353
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 12,
+   "lineas": [
+    358,
+    364
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 12,
+   "lineas": [
+    368,
+    371
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 13,
+   "lineas": [
+    382,
+    389
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 13,
+   "lineas": [
+    394,
+    414
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 14,
+   "lineas": [
+    425,
+    432
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 14,
+   "lineas": [
+    439,
+    442
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 14,
+   "lineas": [
+    446,
+    458
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 14,
+   "lineas": [
+    460,
+    464
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 15,
+   "lineas": [
+    472,
+    476
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 15,
+   "lineas": [
+    478,
+    481
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 15,
+   "lineas": [
+    483,
+    486
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 15,
+   "lineas": [
+    490,
+    492
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 16,
+   "lineas": [
+    504,
+    508
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 17,
+   "lineas": [
+    518,
+    520
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b14",
+  "b16"
+ ],
+ "notas_gastos": [
+  "b17",
+  "b18"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(eurodes)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2024",
+ "columna_anterior": "2023",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (b15), que solo repite el total de annetused ja toetused ya abierto en b14?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Annetused ja toetused",
+   "texto": "b15 clasifica el mismo total por tipo de donación (rahaline/mitterahaline), no agrega categorías nuevas.",
+   "bloques": [
+    "b15",
+    "b14"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se acepta cargar este aruanne individual de MTÜ aunque los años anteriores del club figuren como consolidado?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El documento solo tiene estados de la asociación (sin konsolideeritud), mientras el club tiene años cargados como consolidado.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Informe anual estonio de MTÜ Jalgpalliklubi FC Kuressaare, en euros. Tulemiaruanne en b4. Notas: Lisa 6 Annetused ja toetused (b14), Lisa 7 Tulu ettevõtlusest (b16), Lisa 8 Mitmesugused tegevuskulud (b17), Lisa 9 Tööjõukulud (b18). Solo hay estados individuales; no hay consolidado. b24 (compras a partes relacionadas) y b25 (remuneración de dirección) no se eligen."
+}

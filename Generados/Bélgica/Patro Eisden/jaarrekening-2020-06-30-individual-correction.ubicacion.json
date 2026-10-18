@@ -1,0 +1,210 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2020-06-30-individual-correction.pdf",
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2020-06-30-individual-correction.md",
+ "mdSha1": "2d34f5c9d6d363d588e7a3a70371ee57cd53a38b",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:24.048Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    20,
+    28
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    92,
+    95
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    132,
+    158
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    166,
+    205
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    215,
+    243
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    253,
+    260
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    270,
+    274
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    276,
+    278
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    296,
+    309
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    319,
+    356
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 12,
+   "lineas": [
+    373,
+    376
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 12,
+   "lineas": [
+    387,
+    390
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 13,
+   "lineas": [
+    400,
+    409
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 13,
+   "lineas": [
+    411,
+    413
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 14,
+   "lineas": [
+    434,
+    438
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 14,
+   "lineas": [
+    440,
+    463
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 15,
+   "lineas": [
+    473,
+    476
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 15,
+   "lineas": [
+    480,
+    496
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 18,
+   "lineas": [
+    621,
+    623
+   ],
+   "tipo": "texto"
+  },
+  "b20": {
+   "pagina": 19,
+   "lineas": [
+    651,
+    653
+   ],
+   "tipo": "texto"
+  },
+  "b21": {
+   "pagina": 20,
+   "lineas": [
+    673,
+    675
+   ],
+   "tipo": "texto"
+  },
+  "b22": {
+   "pagina": 21,
+   "lineas": [
+    703,
+    705
+   ],
+   "tipo": "texto"
+  },
+  "b23": {
+   "pagina": 22,
+   "lineas": [
+    733,
+    735
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b9"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING IN EURO (b1)",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Jaarrekening individual de VKT-vzw (Patro Eisden), modelo belga abreviado de asociación. Estado de resultados en b5 (Resultatenrekening, empieza en Brutomarge). b9 (6.4 Resultaten) contiene datos de personal y financieros; se incluye como posible desglose de gastos, aunque tiene solo 2 importes y puede no aportar. El resto son balance, destino del resultado, compromisos, balance social e informe del auditor."
+}

@@ -1,0 +1,36 @@
+{
+ "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2019-06-30-individual.pdf",
+ "generado": "2026-10-18T15:46:19.869Z",
+ "frena": [
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 3 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [
+  "ejercicio de transición por cambio de cierre (6 meses al 2019-06-30): encadena con el cierre anterior 2018-12-31 y el siguiente 2020-06-30; se carga como el año, con nota pública (to-do 237 ab)"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2019-06-30-individual.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "semestral",
+  "meses": 6,
+  "cierre": "2019-06-30",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "met betrekking tot het boekjaar dat de periode dekt van 01-01-2019 tot 30-06-2019"
+  },
+  "confianza": "alta"
+ },
+ "transicion": {
+  "meses": 6,
+  "inicio": "2019-01-01",
+  "cierre": "2019-06-30",
+  "anterior": "2018-12-31",
+  "siguiente": "2020-06-30"
+ },
+ "clubId": "ohleuven-be",
+ "year": 2019,
+ "cortadoEn": "filas"
+}

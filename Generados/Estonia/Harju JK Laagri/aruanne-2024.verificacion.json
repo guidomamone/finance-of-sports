@@ -1,0 +1,135 @@
+{
+ "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2024.pdf",
+ "md": "Clubes/Estonia/Harju JK Laagri/aruanne-2024.md",
+ "generado": "2026-10-18T15:16:15.252Z",
+ "estado": "ok",
+ "clubId": "harjujklaagri-ee",
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "0.050702 = 0.050702",
+   "suma": 0.050702,
+   "impreso": 0.050702
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "0.063985 = 0.063985",
+   "suma": 0.063985,
+   "impreso": 0.063985
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 3.469446951953614e-18
+  },
+  {
+   "nombre": "documento del año 2025",
+   "ok": true,
+   "detalle": "ingresos de 2024: 0.050702 en este documento y 0.050702 en aruanne-2025.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2023: 0.168999 en aruanne-2023.pdf y 0.168999 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Annetused ja toetused\" no suma el renglón (0.005 contra 0.0025, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Tulu ettevõtlusest\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de localizar confirmada por las sumas (cuadro-duplicado, \"Annetused ja toetused\"): ¿Se cargan ambos cuadros de la Lisa 2 (b7 por tipo de toetus y b8 'Rahaline annetus') como desgloses alternativos del mismo renglón 'Annetused ja toetused'?",
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Annetused ja toetused\"): ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L196-L199) por ser una segunda apertura del mismo renglón 'Annetused ja toetused' ya desglosado en L191-L192?"
+ ],
+ "reintentar": [
+  {
+   "renglon": "Annetused ja toetused",
+   "suma": 0.005,
+   "objetivo": 0.0025
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Annetused ja toetused",
+   "suma": 0.005,
+   "objetivo": 0.0025
+  }
+ ],
+ "totales": {
+  "ingresos": 0.050702,
+  "gastos": 0.063985,
+  "financiero": 0.000002,
+  "impuesto": 0,
+  "resultadoImpreso": -0.013281,
+  "resultadoParaCargar": -0.013281,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Annetused ja toetused",
+   "lado": "ingreso",
+   "M": 0.0025,
+   "pagina": 5,
+   "linea": 93,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Tulu ettevõtlusest",
+   "lado": "ingreso",
+   "M": 0.048202,
+   "pagina": 5,
+   "linea": 94,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Mitmesugused tegevuskulud",
+   "lado": "gasto",
+   "M": 0.063321,
+   "pagina": 5,
+   "linea": 97,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Muud kulud",
+   "lado": "gasto",
+   "M": 0.000664,
+   "pagina": 5,
+   "linea": 98,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Muud finantstulud ja -kulud",
+   "M": 0.000002,
+   "linea": 101
+  }
+ ],
+ "impuesto": []
+}

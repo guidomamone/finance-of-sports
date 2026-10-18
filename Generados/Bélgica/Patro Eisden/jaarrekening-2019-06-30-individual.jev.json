@@ -1,0 +1,70 @@
+{
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2019-06-30-individual.md",
+ "generatedAt": "2026-10-18T15:33:36.474Z",
+ "rubrosHuella": "748e6772c71d0ba0d283c15ad4f267e270779fa0",
+ "rubros": [
+  {
+   "label": "Bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 7,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "lado": "expense",
+   "page": 9,
+   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Werkgeversbijdragen voor sociale verzekeringen",
+   "lado": "expense",
+   "page": 9,
+   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+   "lado": "expense",
+   "page": 9,
+   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+   "choice": "wages_squad",
+   "confidence": 0.43,
+   "desdeCache": true
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Uitzonderlijke kosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "desdeCache": true
+  }
+ ]
+}

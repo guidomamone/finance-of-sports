@@ -1,0 +1,271 @@
+{
+ "md": "Clubes/Bélgica/Beerschot/jaarrekening-2022-06-30-individual.md",
+ "generatedAt": "2026-10-18T15:33:34.712Z",
+ "rubrosHuella": "f2ebeee25fe6e8751c95dc6d98dcdfc4243da235",
+ "rubros": [
+  {
+   "label": "Ticketing & abonnementen",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Omzet\"",
+   "choice": "matchday_competition",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Sponsoring",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Omzet\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "TV rechten",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Omzet\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Commercieel",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Omzet\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Andere bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 9,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Aankopen",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Voorraad: afname (toename) (+)/(-)",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado (lectura 4: signo impreso, resta en su lado)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Diensten en diverse goederen",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Werkgeversbijdragen voor sociale verzekeringen",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Andere personeelskosten",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+   "choice": "wages_squad",
+   "confidence": 0.74,
+   "desdeCache": true
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Bedrijfsbelastingen en -taksen",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Andere bedrijfskosten\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Andere",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Andere bedrijfskosten\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Geboekt",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\"",
+   "choice": "player_impairment",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "player_impairment",
+     0.5599999999999999
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "other_amortisation",
+     0.03
+    ]
+   ],
+   "tokens": 851
+  },
+  {
+   "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+   "choice": "wages_squad",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "wages_squad",
+     0.5
+    ],
+    [
+     "admin_general_expense",
+     0.38
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Terugneming van afschrijvingen en van waardeverminderingen op immateriële en materiële vaste activa",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Niet-recurrente bedrijfsopbrengsten\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1117
+  },
+  {
+   "label": "Meerwaarden bij de realisatie van immateriële en materiële vaste activa",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Niet-recurrente bedrijfsopbrengsten\"",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "player_sales",
+     0.03
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1086
+  },
+  {
+   "label": "Andere niet-recurrente bedrijfskosten",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Niet-recurrente bedrijfskosten\"",
+   "choice": "exceptional_items",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "exceptional_items",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "Minderwaarden bij de realisatie van immateriële en materiële vaste activa",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Niet-recurrente bedrijfskosten\"",
+   "choice": "exceptional_items",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "exceptional_items",
+     0.93
+    ],
+    [
+     "player_impairment",
+     0.05
+    ],
+    [
+     "depreciation",
+     0.01
+    ]
+   ],
+   "tokens": 1200
+  }
+ ]
+}

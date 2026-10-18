@@ -1,0 +1,80 @@
+{
+  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2020-06-30-individual-correction.md",
+  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2020-06-30-individual-correction.pdf",
+  "club": "patroeisden-be",
+  "year": 2020,
+  "generatedAt": "2026-10-18T15:28:00.341Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Omzet",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.568892
+      ],
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "Lidgeld, schenkingen, legaten en subsidies",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.183012
+      ],
+      "glosa": "Cuotas de socios, donaciones, legados y subvenciones"
+    },
+    {
+      "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.423072
+      ],
+      "glosa": "Mercaderías, materias primas y auxiliares, servicios y bienes diversos"
+    },
+    {
+      "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.995646
+      ],
+      "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
+    },
+    {
+      "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.00575
+      ],
+      "glosa": "Deterioros de valor de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
+    },
+    {
+      "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.055215
+      ],
+      "glosa": "Provisiones para riesgos y gastos: dotaciones (aplicaciones y reversiones) (+)/(-)"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.011157
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

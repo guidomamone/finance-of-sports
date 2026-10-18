@@ -1,0 +1,161 @@
+{
+ "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2024.pdf",
+ "md": "Clubes/Estonia/Harju JK Laagri/aruanne-2024.md",
+ "mdSha1": "d4a129d655339fd8837e7f3d814aa1f1f3e34f0e",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:46:53.060Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    10
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    23,
+    38
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    61,
+    79
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    90,
+    102
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    113,
+    127
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    138,
+    143
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    189,
+    192
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 8,
+   "lineas": [
+    196,
+    199
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    210,
+    213
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 9,
+   "lineas": [
+    225,
+    228
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 9,
+   "lineas": [
+    232,
+    236
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 9,
+   "lineas": [
+    238,
+    241
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 9,
+   "lineas": [
+    243,
+    246
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 11,
+   "lineas": [
+    265,
+    267
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 12,
+   "lineas": [
+    277,
+    279
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b7",
+  "b8",
+  "b9"
+ ],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "(eurodes)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2024",
+ "columna_anterior": "09.01.2023 - 31.12.2023",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan ambos cuadros de la Lisa 2 (b7 por tipo de toetus y b8 'Rahaline annetus') como desgloses alternativos del mismo renglón 'Annetused ja toetused'?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Annetused ja toetused",
+   "texto": "b7 y b8 tienen ambos total 'Kokku annetused ja toetused', abren el mismo renglón con distinto criterio (origen vs. monetaria/no monetaria); no hay que sumarlos.",
+   "bloques": [
+    "b7",
+    "b8"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "MTÜ individual, sin consolidado. Tulemiaruanne en b4 (euros). Ejercicio anterior es período corto desde 09.01.2023 (fundación). Lisa 2 (b7,b8) y Lisa 3 (b9) abren ingresos. No hay notas de gastos con cifras. b11-b13 son saldos y préstamos con partes relacionadas, excluidos."
+}

@@ -1,0 +1,160 @@
+{
+ "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2024-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2024-06-30-individual.md",
+ "generado": "2026-10-18T15:46:15.528Z",
+ "estado": "cola",
+ "clubId": "lokerentemse-be",
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "3c2a964",
+  "96c0226",
+  "5fa77a3",
+  "a1bb0f0",
+  "c7f0574",
+  "2e32357",
+  "75764e0",
+  "3c6f252"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 0.988874 - gastos 1.312931 ± financiero 0.054462 ± impuesto 0.000054 no da el impreso -0.307657",
+   "dif": null
+  },
+  {
+   "nombre": "documento del año 2025",
+   "ok": false,
+   "detalle": "ingresos de 2024: 0.988874 en este documento y 1.842763 en jaarrekening-2025-06-30-individual.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": false,
+   "detalle": "ingresos de 2023: 1.620693 en jaarrekening-2023-06-30-individual-correction.pdf y 0.893627 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0.988874,
+  "gastos": 1.312931,
+  "financiero": 0.054462,
+  "impuesto": 0.000054,
+  "resultadoImpreso": -0.307657,
+  "resultadoParaCargar": -0.307657,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Brutomarge (+)/(-)",
+   "lado": "ingreso",
+   "M": 0.988874,
+   "pagina": 6,
+   "linea": 214,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Waarvan: niet-recurrente bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 6,
+   "linea": 215,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "gasto",
+   "M": 1.236175,
+   "pagina": 6,
+   "linea": 219,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.033948,
+   "pagina": 6,
+   "linea": 220,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "gasto",
+   "M": 0.016419,
+   "pagina": 6,
+   "linea": 221,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andere bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.012923,
+   "pagina": 6,
+   "linea": 223,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.013466,
+   "pagina": 6,
+   "linea": 225,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "M": 0.002231,
+   "linea": 228
+  },
+  {
+   "etiqueta": "Niet-recurrente financiële opbrengsten",
+   "M": 0.016808,
+   "linea": 229
+  },
+  {
+   "etiqueta": "Recurrente financiële kosten",
+   "M": 0.035423,
+   "linea": 231
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen op het resultaat (+)/(-)",
+   "M": 0.000054,
+   "linea": 236
+  }
+ ]
+}

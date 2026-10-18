@@ -1,0 +1,220 @@
+{
+ "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2024-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2024-06-30-individual.md",
+ "mdSha1": "2bb74f80ee942cce4bf05bb74e94006633213b2a",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:27:56.569Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    18,
+    24
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    116,
+    117
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    129,
+    155
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    163,
+    193
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    201,
+    225
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    235,
+    263
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    273,
+    289
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    301,
+    317
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    325,
+    348
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    356,
+    383
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 12,
+   "lineas": [
+    393,
+    397
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 12,
+   "lineas": [
+    399,
+    424
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 13,
+   "lineas": [
+    434,
+    446
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 14,
+   "lineas": [
+    456,
+    459
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 14,
+   "lineas": [
+    463,
+    464
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 14,
+   "lineas": [
+    468,
+    470
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 14,
+   "lineas": [
+    472,
+    474
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 25,
+   "lineas": [
+    703,
+    707
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 25,
+   "lineas": [
+    709,
+    732
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 26,
+   "lineas": [
+    742,
+    744
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 26,
+   "lineas": [
+    746,
+    748
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 26,
+   "lineas": [
+    752,
+    759
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 26,
+   "lineas": [
+    761,
+    765
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 26,
+   "lineas": [
+    767,
+    771
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6"
+ ],
+ "notas_ingresos": [
+  "b13"
+ ],
+ "notas_gastos": [
+  "b13"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "de JAARREKENING in EURO (b1); importes del modelo abreviado VKT impresos en euros sin indicación de miles",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Jaarrekening individual en modelo abreviado (VKT). La resultatenrekening es b6 (empieza en Brutomarge e incluye la afectación). b13 desglosa los ingresos y gastos no recurrentes (76A/66A) que figuran como 'waarvan' en b6. Se excluyen balance (b3-b5), resultaatverwerking (b7), activos fijos (b8-b10), deudas (b11-b12), partes vinculadas (b14) y sociale balans/formación (b18-b24)."
+}

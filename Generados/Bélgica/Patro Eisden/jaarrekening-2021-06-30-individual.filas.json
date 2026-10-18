@@ -1,0 +1,234 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2021-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2021-06-30-individual.md",
+ "mdSha1": "415cab66835e2ac2674c9da2f2503d17b0345532",
+ "ubicacionSha1": "a69f9cda1cfc22225d9c5f00a30c50055d84cc79",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:27:58.799Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b10"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "no se sabe",
+   "evidencia": "No figura frase de escala en el bloque; cuentas anuales belgas suelen expresarse en euros (unidades)."
+  },
+  {
+   "bloque": "b10",
+   "escala": "no se sabe",
+   "evidencia": "No figura frase de escala en el bloque."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 232,
+   "etiqueta": "Brutomarge (+)/(-)",
+   "actual": "-140.857",
+   "anterior": "277.991",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 237,
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "actual": "362.273",
+   "anterior": "995.647",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 239,
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "actual": "15.368",
+   "anterior": "5.750",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 240,
+   "etiqueta": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+   "actual": "1.573",
+   "anterior": "-55.215",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 241,
+   "etiqueta": "Andere bedrijfskosten",
+   "actual": "22.966",
+   "anterior": "11.157",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 243,
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "actual": "5.053",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 244,
+   "etiqueta": "Bedrijfswinst (Bedrijfsverlies) (+)/(-)",
+   "actual": "-548.090",
+   "anterior": "-679.347",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 245,
+   "etiqueta": "Financiële opbrengsten",
+   "actual": "12",
+   "anterior": "110",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 246,
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "actual": "12",
+   "anterior": "110",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 248,
+   "etiqueta": "Financiële kosten",
+   "actual": "31.240",
+   "anterior": "28.196",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 249,
+   "etiqueta": "Recurrente financiële kosten",
+   "actual": "31.240",
+   "anterior": "28.196",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 251,
+   "etiqueta": "Winst (Verlies) van het boekjaar vóór belasting (+)/(-)",
+   "actual": "-579.318",
+   "anterior": "-707.433",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 254,
+   "etiqueta": "Belastingen op het resultaat (+)/(-)",
+   "actual": "2.711",
+   "anterior": "131",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 255,
+   "etiqueta": "Winst (Verlies) van het boekjaar (+)/(-)",
+   "actual": "-582.029",
+   "anterior": "-707.563",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 258,
+   "etiqueta": "Te bestemmen winst (verlies) van het boekjaar (+)/(-)",
+   "actual": "-582.029",
+   "anterior": "-707.563",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 359,
+   "etiqueta": "Niet-recurrente kosten",
+   "actual": "5.053",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Niet-recurrente bedrijfskosten"
+  },
+  {
+   "bloque": "b10",
+   "linea": 360,
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "actual": "5.053",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Niet-recurrente bedrijfskosten"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 255,
+  "actual": "-582.029",
+  "anterior": "-707.563"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la Brutomarge (L232, -140.857) como único renglón de ingresos, dado que el esquema abreviado no separa Omzet ni compras?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Brutomarge (+)/(-)",
+   "texto": "El esquema abreviado (L232-L236) compensa ingresos y costos de bienes/servicios en la brutomarge, sin importes de Omzet.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se toman los importes de b4 y b10 como expresados en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Ningún bloque imprime la escala; las cuentas anuales belgas se presentan en euros.",
+   "bloques": [
+    "b4",
+    "b10"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Esquema abreviado belga de asociación (VZW). La nota b10 solo detalla gastos no recurrentes (5.053), que coinciden con L243. Personal medio L354 (25,6 FTE) no es importe y se excluye. L258 repite el resultado del ejercicio."
+}
