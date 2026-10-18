@@ -145,3 +145,22 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
   separados por coma o barra. Cobertura de 932 ejercicios: estadio 79 %, sponsor 85 %, marca 87 %. Pedidos de Guido: (1) verlo en
   Finanzas (link de salto o bloque, a decidir con él); (2) una página por sponsor con su histórico y los equipos que sponsorea hoy, que
   espera un índice de sponsors con nombres unificados que va a generar fos-datos (no armarla sobre data/contexto/).
+
+## Después del cuarto merge del 2026-10-18
+
+### Qué queda (para TODO)
+
+- 273: mockup "Finanzas · estadio y camiseta" en "Pantallas FoS" (tarjeta con una columna por ejercicio: estadio, capacidad, sponsor de
+  camiseta y marca técnica, y el link a la temporada de Wikipedia). El código espera `data/contexto/` en main (merge de datos-sourcing
+  y fast-forward). Rareza del dato para fos-datos: el mismo estadio sale como "Alberto J. Armando" y "La Bombonera" según la temporada.
+  Detalle del dato (datos-sourcing 28dc4265a5): un ejercicio con campos cargados a mano trae `fuenteManual` (url) y `manual` (la
+  lista de campos, por ejemplo ["estadio","capacidad"]); `fuente` sigue siendo la revisión de Wikipedia para los demás. Sin página de
+  Wikipedia, solo hay `fuente` y es la manual. La fuente de un campo que está en `manual` es `fuenteManual`.
+- 296, página por sponsor y por marca técnica (aviso de fos-datos, rama datos-sourcing f45caf8dba, sin mergear): `data/sponsors.js`
+  (generado por `tools/generate-sponsors.js`, ~650 KB: cargarlo solo en esa página; fos-datos lo parte por letra o liga si hace falta).
+  `window.SPONSORS = { actuales: { ligaId: año }, fuentes: { "ligaId|año": url }, lista: { id: { n, roles: ["c"|"m"], e: [[ligaId,
+  año, equipo, clubId|null, rol]] } } }`. "Hoy" = entradas con año === actuales[ligaId]; histórico = todas, de la más nueva a la más
+  vieja. Entran todos los equipos de la liga; los que el sitio no tiene, en gris y sin link. Año = temporada (2027 = 2026-27).
+  Mockup: "Página de sponsor · Betano" de "Pantallas FoS". Los tres errores del dato que vio pantallas (markup pegado al nombre, el
+  estadio de Boca con dos nombres, Sparta con dos nombres) los arregló fos-datos (datos-sourcing 9720f5e64c); un cambio de nombre real
+  del estadio queda como histórico.
