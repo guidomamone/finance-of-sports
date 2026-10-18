@@ -146,6 +146,8 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   mismo grupo y nota para periodistas) y la página del grupo multiclub (`?tab=grupo`, clubes que controla y total por año), desde
   `data/entidades/` (lo genera `tools/entidades.mjs` del registro `Admin/registros/entidades.jsonl`, con cita por línea). Hoy hay pocos
   clubes en el registro (to-do 294). Donde el registro los tiene, la tarjeta muestra también los ingresos de la otra entidad del club.
+- Para periodistas: la tarjeta "Citar y descargar" de Finanzas (cita sugerida de lo que se ve, copiar la cita o el link, CSV por rubro y
+  ejercicio con moneda, tipo de cambio y documento; sin dato va vacío, nunca 0) y la página pública `metodologia.html` (link en el pie).
 - Quién auditó cada balance: `Admin/registros/auditoria.jsonl` (con citas) y `tools/auditoria.mjs`, que genera `data/auditoria/` (por
   ahora un piloto; to-do 282). En Finanzas, la tarjeta "Quién auditó estos números"; un club-año sin línea dice "Todavía no lo
   revisamos", no "sin informe", y sin ningún dato del club la tarjeta se esconde.
@@ -217,7 +219,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 
 ### Dónde vive cada cosa
 
-- Raíz: las páginas del sitio (`index.html`, `fuentes.html`, `privacidad.html`, `terminos.html`, `sitemap.xml`), `netlify.toml` y `CLAUDE.md`.
+- Raíz: las páginas del sitio (`index.html`, `fuentes.html`, `metodologia.html`, `privacidad.html`, `terminos.html`, `sitemap.xml`), `netlify.toml` y `CLAUDE.md`.
 - `data/`: lo que el sitio carga. Un archivo por club en `data/<país>/<clubId>-data.js` (país = código ISO en minúscula); los
   compartidos (`clubs.js`, `leagues.js`, …) sueltos; `club-leagues/`, `gestiones/`, `rankings/` y `lang/`. Las tools arman la ruta de un
   club solo con `tools/data-clubes.js`.

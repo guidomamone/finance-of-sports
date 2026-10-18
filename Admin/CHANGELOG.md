@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 723 — Merge de pantallas: citar, descargar y metodología (2026-10-18)
+
+`node tools/worktree.mjs mergear pantallas`, sin conflictos, P0 0 / P1 0, ASSET_V 1269.
+
+- To-do 242: tarjeta "Citar y descargar" en Finanzas (`js/citar.js`): cita sugerida de lo que se ve, copiar la cita o el link y un CSV
+  por rubro y ejercicio desde el motor; página pública `metodologia.html` (fuentes, formato, dólares, inflación, deuda, estimados,
+  auditoría y cómo citar), en el pie y en `sitemap.xml`. Probado con Boca en USD y ARS.
+- TODO: fuera el 242; el 273 con el formato del dato; nuevo 296 (página por sponsor).
+
 ## Versión 722 — Merge de pantallas: quién auditó, en Finanzas (2026-10-18)
 
 `node tools/worktree.mjs mergear pantallas`, sin conflictos, P0 0 / P1 0, ASSET_V 1267.

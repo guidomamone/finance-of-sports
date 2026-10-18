@@ -24,7 +24,7 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 242, 273 (pantalla, cuando esté el dato) y 282 en Ligas (cuando haya el dato del 295) · finanzas 281, 282, 294 · pipeline 289, 290, 288, 232, 279, 286, 287 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
+Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 273, 296 (pantalla, cuando esté el dato) y 282 en Ligas (cuando haya el dato del 295) · finanzas 281, 282, 294 · pipeline 289, 290, 288, 232, 279, 286, 287 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
 datos-sourcing 276, 277, 273, 252, 295 · Reino Unido (261) en su propia sesión · la principal: 268, 291, 250, 244 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
@@ -56,7 +56,8 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 295: balances de las entidades que organizan las ligas (AFA, LFP…), para la auditoría en Ligas
 * 284 y 285: Fredrikstad y Sarpsborg 08 sobre el FLI; transcribir Viking Fotball AS
 * 283: Vålerenga y Aalesund, sumar el AS y el FLI (con nota en Finanzas)
-* 273: estadio y sponsor de cada ejercicio (definir los campos con Guido antes de juntar)
+* 273: estadio y sponsor de cada ejercicio (el dato, en datos-sourcing; la pantalla, en pantallas)
+* 296: página por sponsor (espera el índice de sponsors de fos-datos)
 
 **E. Pantallas**
 * 282: quién audita (los ~905 balances que faltan; la tarjeta de Finanzas ya está)
@@ -66,9 +67,8 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 **E2. Distribución (depende de 246)**
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
 * 254 + 243: repaso mensual de métricas y lo que se busca sin resultado (eligen qué club sumar en D)
-* 242: para periodistas: CSV, cómo citar y metodología pública
 * 252: tarea semanal que busca ejercicios nuevos (los clubes publican entre septiembre y diciembre: cuanto antes, mejor)
-* 259: material de difusión (después de 241 y 242: el deck tiene que poder linkear)
+* 259: material de difusión (después de 241: el deck tiene que poder linkear)
 
 **F. Datos para afuera (cuando haya tiempo; nada urgente)**
 * 248: taxonomía genérica y subcategorías por deporte (antes del esquema; resuelve también 130 y 183)
@@ -182,8 +182,6 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 241. LINK DEDICADO, NIVEL 2: RUTAS REALES, TARJETA AL COMPARTIR Y SEO (mejoras de proyecto, pedido de Guido 2026-10-16). `/club/<id>` y `/liga/<id>` pre-generadas (redirect de Netlify +
    un generador de HTML por club, como `fuentes/<club>.html`), con título, descripción y OG image ("Boca Juniors · Ingresos 2025: US$ 120 M").
    WhatsApp y Google no ejecutan JS: sin esto la preview es la portada y nadie que busque "deuda de Boca" llega. Mockups con Design antes de codear.
-242. PARA PERIODISTAS: CSV, CÓMO CITAR Y METODOLOGÍA PÚBLICA (mejoras de proyecto, pedido de Guido 2026-10-16). Descarga en CSV por club y año, un "cómo citar" con link, y una página
-   pública de metodología (cómo se categoriza, cómo se convierte a USD, cómo se ajusta por inflación).
 243. LO QUE SE BUSCA SIN RESULTADO GUÍA EL SOURCING (mejoras de proyecto, pedido de Guido 2026-10-16). El Worker ya registra las búsquedas que no encuentran club: esa lista decide qué
    club se carga después (junto con el repaso de métricas, to-do 254).
 244. LICENCIA DEL DATASET Y DE CADA FUENTE (mejoras de proyecto, pedido de Guido 2026-10-16). Hoy data/**/*.js y Clubes/**/*.md se bajan sin licencia (terminos.html no dice nada).
@@ -234,9 +232,11 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    https://claude.ai/artifact/7kPta8U7BxyiGRKAyayHhA se actualice solo (hoy: correr tools/supabase/stats.mjs --json y
    tools/cloudflare-visitas.mjs --json y subir los archivos; se puede programar).
 273. ESTADIO Y SPONSOR DE CADA EJERCICIO (pedido de Guido, 2026-10-18). Por club y temporada: estadio, capacidad, sponsor de camiseta
-   (frente) y marca técnica, con el link a la versión exacta de la página de Wikipedia de la temporada; sin monto. Los junta fos-datos.
-   Se ve en Finanzas (Guido: "tiene que estar en finanzas"; link de salto, bloque o fila de la ficha, a decidir con él); la pantalla,
-   recién cuando fos-datos avise el formato y el archivo.
+   y marca técnica, con el permalink a la revisión de Wikipedia; sin monto. El dato lo junta fos-datos (`data/contexto/<iso>.js`, en su
+   rama; cobertura de 932 ejercicios: estadio 79 %, sponsor 85 %, marca 87 %). Se ve en Finanzas (link de salto o bloque, a decidir con
+   Guido): fos-pantallas, después del merge de datos-sourcing.
+296. PÁGINA POR SPONSOR (pedido de Guido, 2026-10-18). Cada sponsor con su histórico y los equipos que sponsorea hoy. Espera un índice de
+   sponsors con nombres unificados que genera fos-datos (no armarla sobre `data/contexto/`). Después del 273.
 281. FINANZAS: INGRESOS DE LAS OTRAS ENTIDADES (pedido de Guido, 2026-10-17). El dato y la pantalla están (tarjeta Estructura, piloto
    Portugal). Falta: transcribir por subagentes los ~17 documentos de entidades de clubes portugueses publicados sin `.md` (Porto 3, Braga
    2022-23, Marítimo 5, Belenenses, Chaves, Vizela 2, Académica, União de Leiria) y cargar su línea de ingresos (va con el 294).
