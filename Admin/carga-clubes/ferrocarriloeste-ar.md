@@ -190,6 +190,12 @@ officialTotalRevenue = Total Recursos Ordinarios (2.838.730.671,99) + Recupero D
 Verificado exacto: revenue + expenses = 83.636.976,52 = "Superávit (deficit) Operativo".
 ```
 
+### Liga
+
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): ar-primeranacional, verificado contra la lista de equipos de "2023 Primera Nacional" (Wikipedia; tools/club-league-reference/ar.json, ar-primeranacional 2023). Antes: sin fila.
+```
+
 ## 2022
 
 ### Meta
@@ -203,6 +209,12 @@ officialTotalRevenue = Total Recursos Ordinarios (1.050.575.536,66) + Recupero D
 impreso. officialPAT = "Superávit (Deficit) del Ejercicio" impreso. Verificado exacto:
 revenue + expenses = "Superávit (deficit) Operativo" (6.245.701,63); + netInterest =
 256.901.915,58 = officialPAT.
+```
+
+### Liga
+
+```text
+tools/ligas-sin-verificar.mjs (2026-10-18): ar-primeranacional, verificado contra la lista de equipos de "2022 Primera Nacional" (Wikipedia; tools/club-league-reference/ar.json, ar-primeranacional 2022). Antes: sin fila.
 ```
 
 ## Gestiones

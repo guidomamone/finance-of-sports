@@ -1,5 +1,1191 @@
 {
  "cl-primera": {
+  "2010": {
+   "pagina": "2010 Primera Division of Chile",
+   "lang": "en",
+   "revid": 1272725356,
+   "estadios": [],
+   "kits": [],
+   "local": null
+  },
+  "2017": {
+   "pagina": "2017 Campeonato Nacional Primera División",
+   "lang": "en",
+   "revid": 1375079111,
+   "estadios": [],
+   "kits": [
+    {
+     "soloActual": false,
+     "filas": [
+      {
+       "club": "Audax Italiano",
+       "sponsor": "Traverso",
+       "marca": "Macron"
+      },
+      {
+       "club": "Colo-Colo",
+       "sponsor": "DirecTV",
+       "marca": "Under Armour"
+      },
+      {
+       "club": "Curicó Unido",
+       "sponsor": "Multihogar",
+       "marca": "Onefit"
+      },
+      {
+       "club": "Deportes Antofagasta",
+       "sponsor": "Minera Escondida",
+       "marca": "Cafu"
+      },
+      {
+       "club": "Deportes Iquique",
+       "sponsor": "UNAP",
+       "marca": "Rete"
+      },
+      {
+       "club": "Deportes Temuco",
+       "sponsor": "Rosen",
+       "marca": "Joma"
+      },
+      {
+       "club": "Everton",
+       "sponsor": "Viña del Mar",
+       "marca": "Pirma"
+      },
+      {
+       "club": "Huachipato",
+       "sponsor": "PF",
+       "marca": "Mitre"
+      },
+      {
+       "club": "O'Higgins",
+       "sponsor": "VTR",
+       "marca": "New Balance"
+      },
+      {
+       "club": "Palestino",
+       "sponsor": "Bank of Palestine",
+       "marca": "Training"
+      },
+      {
+       "club": "San Luis",
+       "sponsor": "PF",
+       "marca": "Luanvi"
+      },
+      {
+       "club": "Santiago Wanderers",
+       "sponsor": "Terminal Pacifico Sur Valparaiso",
+       "marca": "Macron"
+      },
+      {
+       "club": "Unión Española",
+       "sponsor": "Universidad SEK",
+       "marca": "Kappa"
+      },
+      {
+       "club": "Universidad Católica",
+       "sponsor": "DirecTV",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Universidad de Chile",
+       "sponsor": "Chevrolet",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Universidad de Concepción",
+       "sponsor": "Universidad de Concepción",
+       "marca": "KS7"
+      }
+     ]
+    }
+   ],
+   "local": {
+    "pagina": "Torneo de Transición 2017 (Chile)",
+    "lang": "es",
+    "revid": 175861587,
+    "estadios": [
+     [
+      {
+       "club": "[[Audax Italiano La Florida|Audax Italiano]]",
+       "estadio": "Bicentenario de La Florida",
+       "capacidad": 12000
+      },
+      {
+       "club": "[[Club Social y Deportivo Colo-Colo|Colo-Colo]]",
+       "estadio": "Monumental",
+       "capacidad": 47000
+      },
+      {
+       "club": "[[Club de Deportes Provincial Curicó Unido|Curicó Unido]]",
+       "estadio": "La Granja",
+       "capacidad": 8278
+      },
+      {
+       "club": "[[Club de Deportes Antofagasta|Deportes Antofagasta]]",
+       "estadio": "Bicentenario Calvo y Bascuñán",
+       "capacidad": 21000
+      },
+      {
+       "club": "[[Club de Deportes Iquique|Deportes Iquique]]",
+       "estadio": "Municipal de Cavancha",
+       "capacidad": 5500
+      },
+      {
+       "club": "[[Club de Deportes Temuco|Deportes Temuco]]",
+       "estadio": "Bicentenario Germán Becker",
+       "capacidad": 18500
+      },
+      {
+       "club": "[[Everton de Viña del Mar|Everton]]",
+       "estadio": "Sausalito",
+       "capacidad": 23000
+      },
+      {
+       "club": "[[Club Deportivo Huachipato|Huachipato]]",
+       "estadio": "Huachipato-CAP Acero",
+       "capacidad": 10500
+      },
+      {
+       "club": "[[Club Deportivo O'Higgins|O'Higgins]]",
+       "estadio": "El Teniente",
+       "capacidad": 15000
+      },
+      {
+       "club": "[[Club Deportivo Palestino|Palestino]]",
+       "estadio": "Municipal de La Cisterna",
+       "capacidad": 10000
+      },
+      {
+       "club": "[[San Luis de Quillota|San Luis]]",
+       "estadio": "Lucio Fariña Fernández",
+       "capacidad": 7703
+      },
+      {
+       "club": "[[Club de Deportes Santiago Wanderers|Santiago Wanderers]]",
+       "estadio": "Elías Figueroa Brander",
+       "capacidad": 21000
+      },
+      {
+       "club": "[[Unión Española]]",
+       "estadio": "Santa Laura Universidad-SEK",
+       "capacidad": 20000
+      },
+      {
+       "club": "[[Club Deportivo Universidad Católica (fútbol)|Universidad Católica]]",
+       "estadio": "San Carlos de Apoquindo",
+       "capacidad": 15000
+      },
+      {
+       "club": "[[Club Universidad de Chile|Universidad de Chile]]",
+       "estadio": "Nacional Julio Martínez Pradanos",
+       "capacidad": 48500
+      },
+      {
+       "club": "[[Club Deportivo Universidad de Concepción (fútbol)|Universidad de Concepción]]",
+       "estadio": "Ester Roa Rebolledo",
+       "capacidad": 30500
+      }
+     ],
+     [
+      {
+       "club": "Universidad de Chile",
+       "estadio": "Nacional Julio Martínez Prádanos",
+       "capacidad": null
+      },
+      {
+       "club": "Colo-Colo",
+       "estadio": "Monumental",
+       "capacidad": null
+      },
+      {
+       "club": "Santiago Wanderers",
+       "estadio": "Elías Figueroa Brander",
+       "capacidad": null
+      },
+      {
+       "club": "Deportes Temuco",
+       "estadio": "Germán Becker",
+       "capacidad": null
+      },
+      {
+       "club": "Universidad Católica",
+       "estadio": "San Carlos de Apoquindo",
+       "capacidad": null
+      },
+      {
+       "club": "Everton",
+       "estadio": "Sausalito",
+       "capacidad": null
+      },
+      {
+       "club": "Unión Española",
+       "estadio": "Santa Laura",
+       "capacidad": null
+      },
+      {
+       "club": "O'Higgins",
+       "estadio": "El Teniente",
+       "capacidad": null
+      },
+      {
+       "club": "Huachipato",
+       "estadio": "Huachipato-CAP Acero",
+       "capacidad": null
+      },
+      {
+       "club": "Deportes Antofagasta",
+       "estadio": "Calvo y Bascuñán",
+       "capacidad": null
+      },
+      {
+       "club": "Curicó Unido",
+       "estadio": "La Granja",
+       "capacidad": null
+      },
+      {
+       "club": "Audax Italiano",
+       "estadio": "Bicentenario de La Florida",
+       "capacidad": null
+      },
+      {
+       "club": "Palestino",
+       "estadio": "La Cisterna",
+       "capacidad": null
+      },
+      {
+       "club": "San Luis",
+       "estadio": "Lucio Fariña Fernández",
+       "capacidad": null
+      },
+      {
+       "club": "Universidad de Concepción",
+       "estadio": "Ester Roa Rebolledo",
+       "capacidad": null
+      },
+      {
+       "club": "Deportes Iquique",
+       "estadio": "Cavancha",
+       "capacidad": null
+      }
+     ]
+    ],
+    "kits": [
+     {
+      "soloActual": false,
+      "filas": [
+       {
+        "club": "[[Audax Italiano La Florida|Audax Italiano]]",
+        "sponsor": "Traverso",
+        "marca": null
+       },
+       {
+        "club": "[[Club Social y Deportivo Colo-Colo|Colo-Colo]]",
+        "sponsor": "DirecTV",
+        "marca": null
+       },
+       {
+        "club": "[[Club de Deportes Provincial Curicó Unido|Curicó Unido]]",
+        "sponsor": "Multihogar",
+        "marca": null
+       },
+       {
+        "club": "[[Club de Deportes Antofagasta|Deportes Antofagasta]]",
+        "sponsor": "Escondida",
+        "marca": null
+       },
+       {
+        "club": "[[Club de Deportes Iquique|Deportes Iquique]]",
+        "sponsor": "UNAP",
+        "marca": null
+       },
+       {
+        "club": "[[Club de Deportes Temuco|Deportes Temuco]]",
+        "sponsor": "Rosen",
+        "marca": null
+       },
+       {
+        "club": "[[Everton de Viña del Mar|Everton]]",
+        "sponsor": "Fox Sports Chile",
+        "marca": null
+       },
+       {
+        "club": "[[Club Deportivo Huachipato|Huachipato]]",
+        "sponsor": "PF",
+        "marca": null
+       },
+       {
+        "club": "[[Club Deportivo O'Higgins|O'Higgins]]",
+        "sponsor": "VTR",
+        "marca": null
+       },
+       {
+        "club": "[[Club Deportivo Palestino|Palestino]]",
+        "sponsor": "Bank Of Palestine",
+        "marca": null
+       },
+       {
+        "club": "[[San Luis de Quillota|San Luis]]",
+        "sponsor": "PF",
+        "marca": null
+       },
+       {
+        "club": "[[Club de Deportes Santiago Wanderers|Santiago Wanderers]]",
+        "sponsor": "TPS",
+        "marca": null
+       },
+       {
+        "club": "[[Unión Española]]",
+        "sponsor": "USEK",
+        "marca": null
+       },
+       {
+        "club": "[[Club Deportivo Universidad Católica (fútbol)|Universidad Católica]]",
+        "sponsor": "DirecTV",
+        "marca": null
+       },
+       {
+        "club": "[[Club Universidad de Chile|Universidad de Chile]]",
+        "sponsor": "Chevrolet",
+        "marca": null
+       },
+       {
+        "club": "[[Club Deportivo Universidad de Concepción (fútbol)|Universidad de Concepción]]",
+        "sponsor": "UdeC",
+        "marca": null
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "2018": {
+   "pagina": "2018 Campeonato Nacional Primera División",
+   "lang": "en",
+   "revid": 1374153592,
+   "estadios": [],
+   "kits": [
+    {
+     "soloActual": false,
+     "filas": [
+      {
+       "club": "Audax Italiano",
+       "sponsor": "Traverso",
+       "marca": "Macron"
+      },
+      {
+       "club": "Colo-Colo",
+       "sponsor": "MG Motor",
+       "marca": "Under Armour"
+      },
+      {
+       "club": "Curicó Unido",
+       "sponsor": "Multihogar",
+       "marca": "Onefit"
+      },
+      {
+       "club": "Deportes Antofagasta",
+       "sponsor": "Minera Escondida",
+       "marca": "Cafu"
+      },
+      {
+       "club": "Deportes Iquique",
+       "sponsor": "UNAP",
+       "marca": "Rete"
+      },
+      {
+       "club": "Deportes Temuco",
+       "sponsor": "Rosen",
+       "marca": "Joma"
+      },
+      {
+       "club": "Everton",
+       "sponsor": "Fox Sports",
+       "marca": "Pirma"
+      },
+      {
+       "club": "Huachipato",
+       "sponsor": "PF",
+       "marca": "Mitre"
+      },
+      {
+       "club": "O'Higgins",
+       "sponsor": "VTR",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Palestino",
+       "sponsor": "Bank of Palestine",
+       "marca": "Training"
+      },
+      {
+       "club": "San Luis",
+       "sponsor": "PF",
+       "marca": "Capelli Sport"
+      },
+      {
+       "club": "Unión Española",
+       "sponsor": "Universidad SEK",
+       "marca": "Kappa"
+      },
+      {
+       "club": "Unión La Calera",
+       "sponsor": "PF",
+       "marca": "KS7"
+      },
+      {
+       "club": "Universidad Católica",
+       "sponsor": "DirecTV",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Universidad de Chile",
+       "sponsor": "Chevrolet",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Universidad de Concepción",
+       "sponsor": "Universidad de Concepción",
+       "marca": "KS7"
+      }
+     ]
+    }
+   ],
+   "local": {
+    "pagina": "Primera División de Chile 2018",
+    "lang": "es",
+    "revid": 175861331,
+    "estadios": [
+     [
+      {
+       "club": "[[Audax Italiano La Florida|Audax Italiano]]",
+       "estadio": "Bicentenario de La Florida",
+       "capacidad": 12000
+      },
+      {
+       "club": "[[Club Social y Deportivo Colo-Colo|Colo-Colo]]",
+       "estadio": "Monumental",
+       "capacidad": 47347
+      },
+      {
+       "club": "[[Club de Deportes Provincial Curicó Unido|Curicó Unido]]",
+       "estadio": "La Granja",
+       "capacidad": 8278
+      },
+      {
+       "club": "[[Club de Deportes Antofagasta|Deportes Antofagasta]]",
+       "estadio": "Bicentenario Calvo y Bascuñán",
+       "capacidad": 21000
+      },
+      {
+       "club": "[[Club de Deportes Iquique|Deportes Iquique]]",
+       "estadio": "Municipal de Cavancha",
+       "capacidad": 5500
+      },
+      {
+       "club": "[[Club de Deportes Temuco|Deportes Temuco]]",
+       "estadio": "Bicentenario Germán Becker",
+       "capacidad": 18000
+      },
+      {
+       "club": "[[Everton de Viña del Mar|Everton]]",
+       "estadio": "Sausalito",
+       "capacidad": 21000
+      },
+      {
+       "club": "[[Club Deportivo Huachipato|Huachipato]]",
+       "estadio": "Huachipato-CAP Acero",
+       "capacidad": 10500
+      },
+      {
+       "club": "[[Club Deportivo O'Higgins|O'Higgins]]",
+       "estadio": "El Teniente",
+       "capacidad": 14000
+      },
+      {
+       "club": "[[Club Deportivo Palestino|Palestino]]",
+       "estadio": "Municipal de La Cisterna",
+       "capacidad": 12000
+      },
+      {
+       "club": "[[San Luis de Quillota|San Luis]]",
+       "estadio": "Lucio Fariña Fernández",
+       "capacidad": 7500
+      },
+      {
+       "club": "[[Unión Española]]",
+       "estadio": "Santa Laura Universidad-SEK",
+       "capacidad": 19000
+      },
+      {
+       "club": "[[Deportes Unión La Calera|Unión La Calera]]",
+       "estadio": "Lucio Fariña Fernández",
+       "capacidad": 7700
+      },
+      {
+       "club": "[[Club Deportivo Universidad Católica (fútbol)|Universidad Católica]]",
+       "estadio": "San Carlos de Apoquindo",
+       "capacidad": 15281
+      },
+      {
+       "club": "[[Club Universidad de Chile|Universidad de Chile]]",
+       "estadio": "Nacional Julio Martínez Pradanos",
+       "capacidad": 49000
+      },
+      {
+       "club": "[[Club Deportivo Universidad de Concepción (fútbol)|Universidad de Concepción]]",
+       "estadio": "Ester Roa Rebolledo",
+       "capacidad": 33000
+      }
+     ]
+    ],
+    "kits": [
+     {
+      "soloActual": false,
+      "filas": [
+       {
+        "club": "[[Audax Italiano La Florida|Audax Italiano]]",
+        "sponsor": "Traverso",
+        "marca": null
+       },
+       {
+        "club": "[[Club Social y Deportivo Colo-Colo|Colo-Colo]]",
+        "sponsor": "MG Motor",
+        "marca": null
+       },
+       {
+        "club": "[[Club de Deportes Provincial Curicó Unido|Curicó Unido]]",
+        "sponsor": "Multihogar",
+        "marca": null
+       },
+       {
+        "club": "[[Club de Deportes Antofagasta|Deportes Antofagasta]]",
+        "sponsor": "Minera Escondida",
+        "marca": null
+       },
+       {
+        "club": "[[Club de Deportes Iquique|Deportes Iquique]]",
+        "sponsor": "Universidad Arturo Prat",
+        "marca": null
+       },
+       {
+        "club": "[[Club de Deportes Temuco|Deportes Temuco]]",
+        "sponsor": "Rosen",
+        "marca": null
+       },
+       {
+        "club": "[[Everton de Viña del Mar|Everton]]",
+        "sponsor": "Fox Sports",
+        "marca": null
+       },
+       {
+        "club": "[[Club Deportivo Huachipato|Huachipato]]",
+        "sponsor": "PF Alimentos",
+        "marca": null
+       },
+       {
+        "club": "[[Club Deportivo O'Higgins|O'Higgins]]",
+        "sponsor": "VTR",
+        "marca": null
+       },
+       {
+        "club": "[[Club Deportivo Palestino|Palestino]]",
+        "sponsor": "Bank of Palestine",
+        "marca": null
+       },
+       {
+        "club": "[[San Luis de Quillota|San Luis]]",
+        "sponsor": "PF Alimentos",
+        "marca": null
+       },
+       {
+        "club": "[[Unión Española]]",
+        "sponsor": "USEK",
+        "marca": null
+       },
+       {
+        "club": "[[Deportes Unión La Calera|Unión La Calera]]",
+        "sponsor": "PF Alimentos",
+        "marca": null
+       },
+       {
+        "club": "[[Club Deportivo Universidad Católica (fútbol)|Universidad Católica]]",
+        "sponsor": "DirecTV",
+        "marca": null
+       },
+       {
+        "club": "[[Club Universidad de Chile|Universidad de Chile]]",
+        "sponsor": "Chevrolet",
+        "marca": null
+       },
+       {
+        "club": "[[Club Deportivo Universidad de Concepción (fútbol)|Universidad de Concepción]]",
+        "sponsor": "Salazar Israel",
+        "marca": null
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "2019": {
+   "pagina": "2019 Campeonato Nacional Primera División",
+   "lang": "en",
+   "revid": 1374666848,
+   "estadios": [
+    [
+     {
+      "club": "Audax Italiano",
+      "estadio": "Bicentenario de La Florida",
+      "capacidad": 12000
+     },
+     {
+      "club": "Cobresal",
+      "estadio": "El Cobre",
+      "capacidad": 12000
+     },
+     {
+      "club": "Colo-Colo",
+      "estadio": "Monumental David Arellano",
+      "capacidad": 47347
+     },
+     {
+      "club": "Coquimbo Unido",
+      "estadio": "Francisco Sánchez Rumoroso",
+      "capacidad": 18750
+     },
+     {
+      "club": "Curicó Unido",
+      "estadio": "La Granja",
+      "capacidad": 8278
+     },
+     {
+      "club": "Deportes Antofagasta",
+      "estadio": "Calvo y Bascuñán",
+      "capacidad": 21178
+     },
+     {
+      "club": "Deportes Iquique",
+      "estadio": "Cavancha",
+      "capacidad": 5500
+     },
+     {
+      "club": "Everton",
+      "estadio": "Sausalito",
+      "capacidad": 22360
+     },
+     {
+      "club": "Huachipato",
+      "estadio": "Huachipato-CAP Acero",
+      "capacidad": 10500
+     },
+     {
+      "club": "O'Higgins",
+      "estadio": "El Teniente",
+      "capacidad": 13849
+     },
+     {
+      "club": "Palestino",
+      "estadio": "Municipal de La Cisterna",
+      "capacidad": 8000
+     },
+     {
+      "club": "Unión Española",
+      "estadio": "Santa Laura-Universidad SEK",
+      "capacidad": 19000
+     },
+     {
+      "club": "Unión La Calera",
+      "estadio": "Nicolás Chahuán Nazar",
+      "capacidad": 9200
+     },
+     {
+      "club": "Universidad Católica",
+      "estadio": "San Carlos de Apoquindo",
+      "capacidad": 14118
+     },
+     {
+      "club": "Universidad de Chile",
+      "estadio": "Nacional Julio Martínez Prádanos",
+      "capacidad": 48665
+     },
+     {
+      "club": "Universidad de Concepción",
+      "estadio": "Alcaldesa Ester Roa Rebolledo",
+      "capacidad": 30448
+     }
+    ]
+   ],
+   "kits": [
+    {
+     "soloActual": false,
+     "filas": [
+      {
+       "club": "Audax Italiano",
+       "sponsor": "Traverso",
+       "marca": "Macron"
+      },
+      {
+       "club": "Cobresal",
+       "sponsor": "PF",
+       "marca": "KS7"
+      },
+      {
+       "club": "Colo-Colo",
+       "sponsor": "MG Motor",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Coquimbo Unido",
+       "sponsor": "PF",
+       "marca": "CAFU"
+      },
+      {
+       "club": "Curicó Unido",
+       "sponsor": "Multihogar",
+       "marca": "OneFit"
+      },
+      {
+       "club": "Deportes Antofagasta",
+       "sponsor": "Minera Escondida",
+       "marca": "CAFU"
+      },
+      {
+       "club": "Deportes Iquique",
+       "sponsor": "UNAP",
+       "marca": "Rete"
+      },
+      {
+       "club": "Everton",
+       "sponsor": "Marathonbet",
+       "marca": "Pirma"
+      },
+      {
+       "club": "Huachipato",
+       "sponsor": "PF",
+       "marca": "OneFit"
+      },
+      {
+       "club": "O'Higgins",
+       "sponsor": "Sun Monticello",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Palestino",
+       "sponsor": "Bank of Palestine",
+       "marca": "Capelli Sport"
+      },
+      {
+       "club": "Unión Española",
+       "sponsor": "Universidad SEK",
+       "marca": "Kappa"
+      },
+      {
+       "club": "Unión La Calera",
+       "sponsor": "PF",
+       "marca": "Lyon"
+      },
+      {
+       "club": "Universidad Católica",
+       "sponsor": "DirecTV",
+       "marca": "Under Armour"
+      },
+      {
+       "club": "Universidad de Chile",
+       "sponsor": "Petrobras",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Universidad de Concepción",
+       "sponsor": "Algoritmos",
+       "marca": "KS7"
+      }
+     ]
+    }
+   ]
+  },
+  "2020": {
+   "pagina": "2020 Campeonato Nacional Primera División",
+   "lang": "en",
+   "revid": 1375451659,
+   "estadios": [
+    [
+     {
+      "club": "Audax Italiano",
+      "estadio": "Bicentenario de La Florida",
+      "capacidad": 12000
+     },
+     {
+      "club": "Cobresal",
+      "estadio": "El Cobre",
+      "capacidad": 12000
+     },
+     {
+      "club": "Colo-Colo",
+      "estadio": "Monumental David Arellano",
+      "capacidad": 47347
+     },
+     {
+      "club": "Coquimbo Unido",
+      "estadio": "Francisco Sánchez Rumoroso",
+      "capacidad": 18750
+     },
+     {
+      "club": "Curicó Unido",
+      "estadio": "La Granja",
+      "capacidad": 8278
+     },
+     {
+      "club": "Deportes Antofagasta",
+      "estadio": "Calvo y Bascuñán",
+      "capacidad": 21178
+     },
+     {
+      "club": "Deportes Iquique",
+      "estadio": "Tierra de Campeones",
+      "capacidad": 13171
+     },
+     {
+      "club": "Deportes La Serena",
+      "estadio": "La Portada",
+      "capacidad": 18243
+     },
+     {
+      "club": "Everton",
+      "estadio": "Sausalito",
+      "capacidad": 22360
+     },
+     {
+      "club": "Huachipato",
+      "estadio": "Huachipato-CAP Acero",
+      "capacidad": 10500
+     },
+     {
+      "club": "O'Higgins",
+      "estadio": "El Teniente",
+      "capacidad": 13849
+     },
+     {
+      "club": "Palestino",
+      "estadio": "Municipal de La Cisterna",
+      "capacidad": 8000
+     },
+     {
+      "club": "Santiago Wanderers",
+      "estadio": "Elías Figueroa Brander",
+      "capacidad": 20575
+     },
+     {
+      "club": "Unión Española",
+      "estadio": "Santa Laura-Universidad SEK",
+      "capacidad": 19000
+     },
+     {
+      "club": "Unión La Calera",
+      "estadio": "Nicolás Chahuán Nazar",
+      "capacidad": 9200
+     },
+     {
+      "club": "Universidad Católica",
+      "estadio": "San Carlos de Apoquindo",
+      "capacidad": 14118
+     },
+     {
+      "club": "Universidad de Chile",
+      "estadio": "Nacional Julio Martínez Prádanos",
+      "capacidad": 48665
+     },
+     {
+      "club": "Universidad de Concepción",
+      "estadio": "Alcaldesa Ester Roa Rebolledo",
+      "capacidad": 30448
+     }
+    ]
+   ],
+   "kits": [
+    {
+     "soloActual": false,
+     "filas": [
+      {
+       "club": "Audax Italiano",
+       "sponsor": "Traverso",
+       "marca": "Macron"
+      },
+      {
+       "club": "Cobresal",
+       "sponsor": "PF",
+       "marca": "KS7"
+      },
+      {
+       "club": "Colo-Colo",
+       "sponsor": "MG Motor",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Coquimbo Unido",
+       "sponsor": "PF",
+       "marca": "CAFU"
+      },
+      {
+       "club": "Curicó Unido",
+       "sponsor": "Multihogar",
+       "marca": "OneFit"
+      },
+      {
+       "club": "Deportes Antofagasta",
+       "sponsor": "Minera Escondida",
+       "marca": "CAFU"
+      },
+      {
+       "club": "Deportes Iquique",
+       "sponsor": "UNAP",
+       "marca": "Rete"
+      },
+      {
+       "club": "Deportes La Serena",
+       "sponsor": null,
+       "marca": "OneFit"
+      },
+      {
+       "club": "Everton",
+       "sponsor": "Claro",
+       "marca": "Charly"
+      },
+      {
+       "club": "Huachipato",
+       "sponsor": "PF",
+       "marca": "OneFit"
+      },
+      {
+       "club": "O'Higgins",
+       "sponsor": "Sun Monticello",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Palestino",
+       "sponsor": "Bank of Palestine",
+       "marca": "Capelli Sport"
+      },
+      {
+       "club": "Santiago Wanderers",
+       "sponsor": "TPS",
+       "marca": "Macron"
+      },
+      {
+       "club": "Unión Española",
+       "sponsor": "Universidad SEK",
+       "marca": "Kappa"
+      },
+      {
+       "club": "Unión La Calera",
+       "sponsor": "PF",
+       "marca": "OneFit"
+      },
+      {
+       "club": "Universidad Católica",
+       "sponsor": "BICE",
+       "marca": "Under Armour"
+      },
+      {
+       "club": "Universidad de Chile",
+       "sponsor": "Petrobras",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Universidad de Concepción",
+       "sponsor": "PF",
+       "marca": "KS7"
+      }
+     ]
+    }
+   ]
+  },
+  "2021": {
+   "pagina": "2021 Campeonato Nacional Primera División",
+   "lang": "en",
+   "revid": 1375902440,
+   "estadios": [
+    [
+     {
+      "club": "Audax Italiano",
+      "estadio": "Bicentenario de La Florida",
+      "capacidad": 12000
+     },
+     {
+      "club": "Cobresal",
+      "estadio": "El Cobre",
+      "capacidad": 12000
+     },
+     {
+      "club": "Colo-Colo",
+      "estadio": "Monumental David Arellano",
+      "capacidad": 47347
+     },
+     {
+      "club": "Curicó Unido",
+      "estadio": "La Granja",
+      "capacidad": 8278
+     },
+     {
+      "club": "Deportes Antofagasta",
+      "estadio": "Calvo y Bascuñán",
+      "capacidad": 21178
+     },
+     {
+      "club": "Deportes La Serena",
+      "estadio": "La Portada",
+      "capacidad": 18243
+     },
+     {
+      "club": "Deportes Melipilla",
+      "estadio": "Roberto Bravo Santibáñez",
+      "capacidad": 6000
+     },
+     {
+      "club": "Everton",
+      "estadio": "Sausalito",
+      "capacidad": 22360
+     },
+     {
+      "club": "Huachipato",
+      "estadio": "Huachipato-CAP Acero",
+      "capacidad": 10500
+     },
+     {
+      "club": "Ñublense",
+      "estadio": "Nelson Oyarzún Arenas",
+      "capacidad": 12000
+     },
+     {
+      "club": "O'Higgins",
+      "estadio": "El Teniente",
+      "capacidad": 13849
+     },
+     {
+      "club": "Palestino",
+      "estadio": "Municipal de La Cisterna",
+      "capacidad": 8000
+     },
+     {
+      "club": "Santiago Wanderers",
+      "estadio": "Elías Figueroa Brander",
+      "capacidad": 20575
+     },
+     {
+      "club": "Unión Española",
+      "estadio": "Santa Laura-Universidad SEK",
+      "capacidad": 19000
+     },
+     {
+      "club": "Unión La Calera",
+      "estadio": "Nicolás Chahuán Nazar",
+      "capacidad": 9200
+     },
+     {
+      "club": "Universidad Católica",
+      "estadio": "San Carlos de Apoquindo",
+      "capacidad": 14118
+     },
+     {
+      "club": "Universidad de Chile",
+      "estadio": "Nacional Julio Martínez Prádanos",
+      "capacidad": 48665
+     }
+    ]
+   ],
+   "kits": [
+    {
+     "soloActual": false,
+     "filas": [
+      {
+       "club": "Audax Italiano",
+       "sponsor": "Traverso",
+       "marca": "Macron"
+      },
+      {
+       "club": "Cobresal",
+       "sponsor": "PF",
+       "marca": "KS7"
+      },
+      {
+       "club": "Colo-Colo",
+       "sponsor": "Pilsen del Sur",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Curicó Unido",
+       "sponsor": "Multihogar",
+       "marca": "OneFit"
+      },
+      {
+       "club": "Deportes Antofagasta",
+       "sponsor": "Minera Escondida",
+       "marca": "Claus-7"
+      },
+      {
+       "club": "Deportes La Serena",
+       "sponsor": "Betano",
+       "marca": "Macron"
+      },
+      {
+       "club": "Deportes Melipilla",
+       "sponsor": "Ariztía",
+       "marca": "Training"
+      },
+      {
+       "club": "Everton",
+       "sponsor": "Claro",
+       "marca": "Charly"
+      },
+      {
+       "club": "Huachipato",
+       "sponsor": "PF",
+       "marca": "OneFit"
+      },
+      {
+       "club": "Ñublense",
+       "sponsor": "Fanaloza",
+       "marca": "OneFit"
+      },
+      {
+       "club": "O'Higgins",
+       "sponsor": "Sun Monticello",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Palestino",
+       "sponsor": "Bank of Palestine",
+       "marca": "Capelli Sport"
+      },
+      {
+       "club": "Santiago Wanderers",
+       "sponsor": "TCL",
+       "marca": "Macron"
+      },
+      {
+       "club": "Unión Española",
+       "sponsor": "Universidad SEK",
+       "marca": "Kappa"
+      },
+      {
+       "club": "Unión La Calera",
+       "sponsor": "PF",
+       "marca": "Siker"
+      },
+      {
+       "club": "Universidad Católica",
+       "sponsor": "BICE",
+       "marca": "Under Armour"
+      },
+      {
+       "club": "Universidad de Chile",
+       "sponsor": "Petrobras",
+       "marca": "Adidas"
+      }
+     ]
+    }
+   ]
+  },
   "2022": {
    "pagina": "2022 Campeonato Nacional Primera División",
    "lang": "en",
@@ -508,6 +1694,182 @@
        "club": "Unión Española",
        "sponsor": "Universidad SEK",
        "marca": "Kappa"
+      },
+      {
+       "club": "Unión La Calera",
+       "sponsor": "GWM",
+       "marca": "Givova"
+      },
+      {
+       "club": "Universidad Católica",
+       "sponsor": "BICE",
+       "marca": "Puma"
+      },
+      {
+       "club": "Universidad de Chile",
+       "sponsor": "JugaBet",
+       "marca": "Adidas"
+      }
+     ]
+    }
+   ]
+  },
+  "2025": {
+   "pagina": "2025 Liga de Primera",
+   "lang": "en",
+   "revid": 1357232443,
+   "estadios": [
+    [
+     {
+      "club": "Audax Italiano",
+      "estadio": "Bicentenario de La Florida",
+      "capacidad": 11637
+     },
+     {
+      "club": "Cobresal",
+      "estadio": "El Cobre",
+      "capacidad": 11240
+     },
+     {
+      "club": "Colo-Colo",
+      "estadio": "Monumental David Arellano",
+      "capacidad": 43667
+     },
+     {
+      "club": "Coquimbo Unido",
+      "estadio": "Francisco Sánchez Rumoroso",
+      "capacidad": 15809
+     },
+     {
+      "club": "Deportes Iquique",
+      "estadio": "Tierra de Campeones",
+      "capacidad": 13171
+     },
+     {
+      "club": "Deportes La Serena",
+      "estadio": "La Portada",
+      "capacidad": 17134
+     },
+     {
+      "club": "Deportes Limache",
+      "estadio": "Nicolás Chahuán Nazar",
+      "capacidad": 8353
+     },
+     {
+      "club": "Everton",
+      "estadio": "Sausalito",
+      "capacidad": 21754
+     },
+     {
+      "club": "Huachipato",
+      "estadio": "Huachipato-CAP Acero",
+      "capacidad": 10032
+     },
+     {
+      "club": "Ñublense",
+      "estadio": "Nelson Oyarzún Arenas",
+      "capacidad": 11319
+     },
+     {
+      "club": "O'Higgins",
+      "estadio": "El Teniente",
+      "capacidad": 12476
+     },
+     {
+      "club": "Palestino",
+      "estadio": "Municipal de La Cisterna",
+      "capacidad": 8000
+     },
+     {
+      "club": "Unión Española",
+      "estadio": "Santa Laura-Universidad SEK",
+      "capacidad": 19887
+     },
+     {
+      "club": "Unión La Calera",
+      "estadio": "Nicolás Chahuán Nazar",
+      "capacidad": 8353
+     },
+     {
+      "club": "Universidad Católica",
+      "estadio": "Claro Arena",
+      "capacidad": 20249
+     },
+     {
+      "club": "Universidad de Chile",
+      "estadio": "Nacional Julio Martínez Prádanos",
+      "capacidad": 46190
+     }
+    ]
+   ],
+   "kits": [
+    {
+     "soloActual": false,
+     "filas": [
+      {
+       "club": "Audax Italiano",
+       "sponsor": "Traverso",
+       "marca": "Macron"
+      },
+      {
+       "club": "Cobresal",
+       "sponsor": "Pullman Bus",
+       "marca": "KS7"
+      },
+      {
+       "club": "Colo-Colo",
+       "sponsor": "JugaBet",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Coquimbo Unido",
+       "sponsor": "RojaBet",
+       "marca": "Capelli Sport"
+      },
+      {
+       "club": "Deportes Iquique",
+       "sponsor": "Collahuasi",
+       "marca": "Rete"
+      },
+      {
+       "club": "Deportes La Serena",
+       "sponsor": "Estelarbet",
+       "marca": "Fiume"
+      },
+      {
+       "club": "Deportes Limache",
+       "sponsor": "Pin-Up Casino, Transportes CVU",
+       "marca": "Claus-7"
+      },
+      {
+       "club": "Everton",
+       "sponsor": "Terrawind",
+       "marca": "Charly"
+      },
+      {
+       "club": "Huachipato",
+       "sponsor": "1XBET",
+       "marca": "Marathon"
+      },
+      {
+       "club": "Ñublense",
+       "sponsor": "Stake",
+       "marca": "Capelli Sport"
+      },
+      {
+       "club": "O'Higgins",
+       "sponsor": "BC.GAME",
+       "marca": "Joma"
+      },
+      {
+       "club": "Palestino",
+       "sponsor": "Bank of Palestine",
+       "marca": "Capelli Sport"
+      },
+      {
+       "club": "Unión Española",
+       "sponsor": "Universidad SEK",
+       "marca": "Reebok"
       },
       {
        "club": "Unión La Calera",

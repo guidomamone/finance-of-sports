@@ -14,7 +14,7 @@
 // "HOY". La última temporada que la caché tiene de cada liga, si su año es el actual o posterior: `actuales[liga]`. La pantalla marca "hoy"
 // las entradas de esa temporada. Una tabla de kits "solo la actual" vale solo en esa temporada.
 //
-// SALIDA: data/sponsors.js
+// SALIDA: data/sponsors.js (y data/sponsors-indice.js: [[id, nombre, roles]], chico, para el buscador)
 //   window.SPONSORS = { actuales: { liga: año }, fuentes: { "liga|año": url }, lista: { id: { n, roles, e: [[liga, año, equipo, clubId|null, rol]] } } }
 //   rol: "c" camiseta (frente), "m" marca técnica.
 //
@@ -31,6 +31,7 @@ const ROOT = path.resolve(__dirname, '..');
 const REF = path.join(ROOT, 'tools', 'club-league-reference');
 const CTX = path.join(REF, 'contexto');
 const OUT = path.join(ROOT, 'data', 'sponsors.js');
+const OUT_INDICE = path.join(ROOT, 'data', 'sponsors-indice.js'); // chico, para el buscador (lo pidió fos-pantallas): se carga de entrada
 const ALIAS = path.join(ROOT, 'tools', 'sponsor-alias.json');
 
 const norm = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
@@ -48,7 +49,7 @@ function sitio() {
 }
 
 // "Fly Emirates/Etihad (in cup matches)" -> ["Fly Emirates", "Etihad"]
-const partes = (txt) => String(txt || '').replace(/\([^)]*\)/g, ' ').split(/\s*[,;/]\s*/).map((x) => x.replace(/\s+/g, ' ').trim()).filter((x) => x && x !== '-' && !/^(none|no sponsor|sin sponsor|—|–)$/i.test(x));
+const partes = (txt) => String(txt || '').replace(/\([^)]*\)/g, ' ').split(/\s*[,;/]\s*/).map((x) => x.replace(/\s+/g, ' ').trim()).filter((x) => x && x !== '-' && !/^(none|no sponsor|sin sponsor|tba|tbd|tbc|n\/?a|nil|—|–|\?)$/i.test(x) && /\p{L}/u.test(x)); // sin letras ("0", "22") no es un nombre
 
 function construir() {
   const { CI, CLUBS, alias, listas } = sitio();
@@ -124,6 +125,16 @@ ${ids.map((id) => `    ${JSON.stringify(id)}: ${JSON.stringify(d.lista[id])},`).
 `;
 }
 
+function textoIndice(d) {
+  const filas = Object.keys(d.lista).map((id) => [id, d.lista[id].n, d.lista[id].roles]);
+  return `// GENERADO por tools/generate-sponsors.js: el índice de sponsors y marcas técnicas para el buscador ([id, nombre, roles]; rol "c" camiseta,
+// "m" marca técnica). El detalle de cada uno está en data/sponsors.js. No editar a mano.
+window.SPONSORS_INDICE = [
+${filas.map((f) => `  ${JSON.stringify(f)},`).join('\n')}
+];
+`;
+}
+
 function candidatos(d) {
   // claves "parecidas": sin acentos ni signos, sin ".com", sin "fly " adelante
   const clave = (n) => norm(n).replace(/\b(com|bet|ltd|sa|spa|group)\b/g, '').replace(/^fly /, '').replace(/ /g, '');
@@ -135,12 +146,12 @@ function candidatos(d) {
 
 const d = construir();
 if (process.argv.includes('--candidatos')) { candidatos(d); process.exit(0); }
-const t = texto(d);
+const t = texto(d); const ti = textoIndice(d);
 if (process.argv.includes('--check')) {
-  const viejo = fs.existsSync(OUT) ? fs.readFileSync(OUT, 'utf8') : '';
-  if (viejo !== t) { console.log('data/sponsors.js quedó viejo: node tools/generate-sponsors.js'); process.exit(1); }
-  console.log('data/sponsors.js al día.'); process.exit(0);
+  const viejo = fs.existsSync(OUT) ? fs.readFileSync(OUT, 'utf8') : ''; const viejoI = fs.existsSync(OUT_INDICE) ? fs.readFileSync(OUT_INDICE, 'utf8') : '';
+  if (viejo !== t || viejoI !== ti) { console.log('data/sponsors.js o data/sponsors-indice.js quedó viejo: node tools/generate-sponsors.js'); process.exit(1); }
+  console.log('data/sponsors.js y data/sponsors-indice.js al día.'); process.exit(0);
 }
-fs.writeFileSync(OUT, t, 'utf8');
+fs.writeFileSync(OUT, t, 'utf8'); fs.writeFileSync(OUT_INDICE, ti, 'utf8');
 const conClub = Object.values(d.lista).filter((s) => s.e.some((e) => e[3])).length;
 console.log(`data/sponsors.js: ${Object.keys(d.lista).length} sponsors y marcas (${conClub} con algún club del sitio), ${Object.keys(d.fuentes).length} liga-años, ${Object.keys(d.actuales).length} ligas con temporada actual; ${(t.length / 1024).toFixed(0)} KB`);

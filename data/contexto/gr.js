@@ -23,7 +23,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2020: {"estadio":"AEL FC Arena","capacidad":16118,"sponsor":"Thrakis Gefseis","marca":"Legea","temporada":"2019–20 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376492647"},
     2021: {"estadio":"Alcazar Stadium","capacidad":13108,"sponsor":"Thrakis Gefseis","marca":"Legea","temporada":"2020–21 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375822960"},
     2022: {"estadio":"Alcazar Stadium","capacidad":13108,"sponsor":"Thrakis Gefseis","marca":"Legea","temporada":"2021–22 Super League Greece 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376313759"},
-    2023: {"estadio":"Alcazar Stadium","capacidad":13108,"sponsor":"N/A","marca":"Legea","temporada":"2022–23 Super League Greece 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376913839"},
+    2023: {"estadio":"Alcazar Stadium","capacidad":13108,"marca":"Legea","temporada":"2022–23 Super League Greece 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376913839"},
     2024: {"estadio":"AEL FC Arena","capacidad":16118,"marca":"Legea","temporada":"2023–24 Super League Greece 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373226187"},
     2025: {"estadio":"AEL FC Arena","capacidad":16118,"temporada":"2024–25 Super League Greece 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373226048"},
   },
@@ -58,7 +58,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Michalis Kritikopoulos Stadium","capacidad":4851,"sponsor":"Novibet","marca":"Lotto","temporada":"2023–24 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376143509"},
   },
   'levadiakos-gr': {
-    2019: {"estadio":"Levadia Municipal Stadium","capacidad":5915,"sponsor":"N/A","marca":"Legea","temporada":"2018–19 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376492636"},
+    2019: {"estadio":"Levadia Municipal Stadium","capacidad":5915,"marca":"Legea","temporada":"2018–19 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376492636"},
     2020: {"estadio":"Levadia Municipal Stadium","capacidad":5915,"sponsor":"Kompotis","marca":"Legea","temporada":"2019–20 Super League Greece 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1334262827"},
     2021: {"estadio":"Levadia Municipal Stadium","capacidad":5915,"sponsor":"Kompotis","marca":"Kappa","temporada":"2020–21 Super League Greece 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1343120819"},
     2023: {"estadio":"Levadia Municipal Stadium","capacidad":5915,"sponsor":"Betshop","marca":"Macron","temporada":"2022–23 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1370050785"},
@@ -93,7 +93,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'panetolikos-gr': {
     2017: {"estadio":"Panetolikos Stadium","capacidad":7000,"sponsor":"Pame Stoixima","marca":"Legea","temporada":"2016–17 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373608816"},
     2018: {"estadio":"Panetolikos Stadium","capacidad":7000,"sponsor":"Pame Stoixima","marca":"Legea","temporada":"2017–18 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375017279"},
-    2020: {"estadio":"Panetolikos Stadium","capacidad":7321,"sponsor":"N/A","marca":"Givova","temporada":"2019–20 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376492647"},
+    2020: {"estadio":"Panetolikos Stadium","capacidad":7321,"marca":"Givova","temporada":"2019–20 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376492647"},
     2021: {"estadio":"Panetolikos Stadium","capacidad":7321,"sponsor":"Car.gr","marca":"Givova","temporada":"2020–21 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375822960"},
     2022: {"estadio":"Panetolikos Stadium","capacidad":7321,"sponsor":"Shopflix.gr","marca":"Givova","temporada":"2021–22 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376143441"},
     2023: {"estadio":"Panetolikos Stadium","capacidad":7321,"sponsor":"Interwetten","marca":"Givova","temporada":"2022–23 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1370050785"},
@@ -118,5 +118,9 @@ Object.assign(window.CLUB_CONTEXT, {
     2019: {"estadio":"Neapoli Municipal Stadium","capacidad":2500,"sponsor":"Goalbet","marca":"Luanvi","temporada":"2018–19 Football League (Greece)","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374491896"},
     2020: {"estadio":"Panthessaliko Stadium","capacidad":22700,"sponsor":"EBOL","marca":"Luanvi","temporada":"2019–20 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376492647"},
     2021: {"estadio":"Panthessaliko Stadium","capacidad":22700,"sponsor":"EBOL","marca":"Luanvi","temporada":"2020–21 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375822960"},
+    2022: {"estadio":"Panthessaliko Stadium","capacidad":22700,"sponsor":"Interwetten","marca":"Luanvi","temporada":"2021–22 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376143441"},
+    2023: {"estadio":"Panthessaliko Stadium","capacidad":22700,"sponsor":"Interwetten","marca":"Luanvi","temporada":"2022–23 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1370050785"},
+    2024: {"estadio":"Panthessaliko Stadium","capacidad":22700,"sponsor":"Novibet","marca":"Admiral","temporada":"2023–24 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376143509"},
+    2025: {"estadio":"Panthessaliko Stadium","capacidad":22700,"sponsor":"Novibet","marca":"Admiral","temporada":"2024–25 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376143603"},
   },
 });
