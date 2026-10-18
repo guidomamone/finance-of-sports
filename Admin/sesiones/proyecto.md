@@ -15,13 +15,21 @@ To-dos de la sesión, en orden: 250 (hooks), 244 (licencia), 300 (auditoría pro
   - `push-con-ok`: `git push` le pide permiso a Guido cada vez (`git stash push` no).
   - `docs-de-la-principal`: en un worktree, escribir `Admin/TODO.md`, `CHANGELOG.md` o `ESTADO.md` se rechaza con el motivo y el
     `Admin/sesiones/<rama>.md` que corresponde. En la principal no hace nada.
+  - `pdfs-con-ok`: borrar en `Clubes/` (rm, unlink, trash, `find -delete`) o un `git clean -x` le pide permiso a Guido.
+  - Lo que no le toca a un chequeo sale en unos 20 ms sin llamar a git. Probado con el JSON del hook por stdin (cada caso, el que frena y el
+    que no) y en vivo en esta sesión: los commits del 4 y el 5 pasaron por la auditoría, y una prueba que mencionaba ESTADO se frenó.
   - Los chequeos de Bash leen el texto del comando: un comando que solo MENCIONA una de esas rutas junto a algo que escribe (por ejemplo, una
     prueba con el JSON del hook adentro) también se frena. Es el precio de no parsear shell; pasó una vez probando.
 
 ## Qué deja de ser cierto en ESTADO
 
-- (pendiente: se completa al cerrar el 250)
+- No deja nada falso, suma una línea (al lado de "Sesiones en paralelo"): "Hooks de Claude Code (`.claude/settings.json` →
+  `tools/hooks/pre-tool.mjs`): audit.js antes de cada commit publicable (frena con P0/P1; `[sin-audit]` con el ok de Guido), y piden
+  permiso editar skills, `git push` y borrar en `Clubes/`; en un worktree rechazan escribir TODO, CHANGELOG y ESTADO. Qué chequea cada
+  uno: la cabecera del script."
 
 ## Qué queda (para TODO)
 
-- (pendiente)
+- 250: se borra (resuelto).
+- Las sesiones que ya estaban abiertas antes del merge toman los hooks recién en una sesión nueva (o cuando Claude Code relee
+  `.claude/settings.json`); los worktrees, después del fast-forward.

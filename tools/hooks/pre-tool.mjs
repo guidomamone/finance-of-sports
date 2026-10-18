@@ -15,6 +15,8 @@
 //   push-con-ok              `git push` le pide permiso a Guido cada vez: un push a main despliega en Netlify (free tier, ~25 deploys/mes).
 //   docs-de-la-principal     en un worktree, escribir Admin/TODO.md, CHANGELOG.md o ESTADO.md se rechaza: los escribe solo la principal; el
 //                            cierre de la rama va en Admin/sesiones/<rama>.md (skill de arranque, worktree.md). En la principal no hace nada.
+//   pdfs-con-ok              borrar en Clubes/ (rm, unlink, trash, find -delete) o un `git clean` con -x/-X le pide permiso a Guido: los PDF
+//                            no se trackean y no hay copia de dónde recuperarlos; antes hay que chequear las referencias del pipeline.
 //
 // Entrada: el JSON del hook por stdin. Salida: nada (sigue normal) o el JSON de PreToolUse con permissionDecision "deny" / "ask".
 // ============================================================================
@@ -88,8 +90,18 @@ function docsDeLaPrincipal(cmd) {
     + `Admin/sesiones/${rama}.md (qué cambió, qué queda, qué deja de ser cierto en ESTADO). Ver la skill de arranque, worktree.md.`);
 }
 
+function pdfsConOk(cmd) {
+  const borraEnClubes = /\bClubes\b/.test(cmd) && /\b(rm|unlink|trash)\s|\s-delete\b/.test(cmd);
+  const gitCleanIgnorados = GIT_SUB('clean').test(cmd) && /\s-\w*[xX]/.test(cmd);
+  if (borraEnClubes || gitCleanIgnorados) {
+    decidir('ask', 'Esto puede borrar PDFs de Clubes/. No se trackean y no hay copia de dónde recuperarlos: ¿Guido lo pidió y se chequearon '
+      + 'las referencias del pipeline (tools/quien.mjs, el registro)?');
+  }
+}
+
 const cmd = herramienta === 'Bash' ? params.command || '' : '';
 skillsConOk(cmd);
 pushConOk(cmd);
 docsDeLaPrincipal(cmd);
+pdfsConOk(cmd);
 if (herramienta === 'Bash') auditAntesDelCommit(cmd);
