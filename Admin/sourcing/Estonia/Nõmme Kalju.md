@@ -6,3 +6,5 @@
 - **Ejercicios en disco** (`Clubes/Estonia/Nõmme Kalju/aruanne-<año>.pdf`): 2019-2025 (7), con texto nativo, 20-31 págs. 2019-2021 NO auditados según el registro, auditado desde 2022 (el 2022 y 2023 son consolidados, KONSOLIDEERITUD). Hay también 'informes expirados' duplicados (versión reemplazada); se bajó siempre la vigente. El 2022 salió en la 2da pasada (la 1ra devolvió una página de desafío de Cloudflare en vez del PDF).
 - **Canal**: `https://ariregister.rik.ee/eng/company/80048819` → tabla de informes anuales → `PDF` (URL `.../company/80048819/file/<id>`, sin login). Más años disponibles en el registro (2009-2018) que no se bajaron (el objetivo era 5).
 - Último chequeo: 2026-10-03.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2025 desde `Clubes/Estonia/Nõmme Kalju/aruanne-2025.pdf` (sourceId `nommekalju-ee-aruanne-2025`).
