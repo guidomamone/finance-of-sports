@@ -1,122 +1,135 @@
 {
   "_comentario": "Nombre de una lista de Wikipedia -> el mismo club con otro nombre, cuando el nombre normalizado no alcanza (lo lee tools/faltantes-liga.mjs). Cada entrada es { clubId } (club del sitio), { carpeta: 'País/Club' } (Clubes/) o { sourcing: 'País/Club' } (Admin/sourcing/). Solo el MISMO club (renombrado, con sponsor, en otro idioma); nunca un filial, un homónimo ni el club nuevo que ocupó la plaza de uno disuelto. Candidatos: node tools/faltantes-liga.mjs --sugerir.",
-  "at": { "Rheindorf Altach": { "sourcing": "Austria/SCR Altach" } },
+  "at": {
+    "Rheindorf Altach": {"sourcing": "Austria/SCR Altach"}
+  },
   "br": {
-    "Red Bull Bragantino": { "clubId": "rbbragantino-br" },
-    "Bragantino": { "clubId": "rbbragantino-br" },
-    "Atlético Paranaense": { "clubId": "athleticoparanaense-br" }
+    "Red Bull Bragantino": {"clubId": "rbbragantino-br"},
+    "Bragantino": {"clubId": "rbbragantino-br"},
+    "Atlético Paranaense": {"clubId": "athleticoparanaense-br"}
   },
   "cn": {
-    "Shandong Luneng Taishan": { "sourcing": "China/Shandong Taishan" },
-    "Shanghai SIPG": { "sourcing": "China/Shanghai Port" },
-    "Shanghai Greenland Shenhua": { "sourcing": "China/Shanghai Shenhua" },
-    "Tianjin TEDA": { "sourcing": "China/Tianjin Jinmen Tiger" }
+    "Shandong Luneng Taishan": {"sourcing": "China/Shandong Taishan"},
+    "Shanghai SIPG": {"sourcing": "China/Shanghai Port"},
+    "Shanghai Greenland Shenhua": {"sourcing": "China/Shanghai Shenhua"},
+    "Tianjin TEDA": {"sourcing": "China/Tianjin Jinmen Tiger"}
   },
   "co": {
-    "Santa Fe": { "clubId": "santafe-co" },
-    "Patriotas F.C.": { "carpeta": "Colombia/Patriotas Boyaca" },
-    "Fortaleza F.C.": { "clubId": "fortalezaceif-co" },
-    "Itagüí Leones": { "carpeta": "Colombia/Leones FC" },
-    "Rionegro Águilas": { "carpeta": "Colombia/Aguilas Doradas" },
-    "Itagüí/Águilas Pereira": { "carpeta": "Colombia/Aguilas Doradas" }
+    "Santa Fe": {"clubId": "santafe-co"},
+    "Patriotas F.C.": {"carpeta": "Colombia/Patriotas Boyaca"},
+    "Fortaleza F.C.": {"clubId": "fortalezaceif-co"},
+    "Itagüí Leones": {"carpeta": "Colombia/Leones FC"},
+    "Rionegro Águilas": {"carpeta": "Colombia/Aguilas Doradas"},
+    "Itagüí/Águilas Pereira": {"carpeta": "Colombia/Aguilas Doradas"}
   },
   "cz": {
-    "Sparta Prague": { "carpeta": "República Checa/Sparta Praha" },
-    "AC Sparta Prague": { "carpeta": "República Checa/Sparta Praha" },
-    "Slavia Prague": { "carpeta": "República Checa/Slavia Praha" },
-    "SK Slavia Prague": { "carpeta": "República Checa/Slavia Praha" },
-    "Bohemians Prague": { "carpeta": "República Checa/Bohemians Praha 1905" },
-    "FC Bohemians 1905": { "carpeta": "República Checa/Bohemians Praha 1905" },
-    "Bohemians 1905": { "carpeta": "República Checa/Bohemians Praha 1905" },
-    "Brno": { "carpeta": "República Checa/FC Zbrojovka Brno" },
-    "1. FC Brno": { "carpeta": "República Checa/FC Zbrojovka Brno" },
-    "Boby Brno": { "carpeta": "República Checa/FC Zbrojovka Brno" },
-    "Tescoma Zlín": { "carpeta": "República Checa/Zlín" },
-    "FC Tescoma Zlín": { "carpeta": "República Checa/Zlín" },
-    "Fastav Zlín": { "carpeta": "República Checa/Zlín" },
-    "FC Fastav Zlín": { "carpeta": "República Checa/Zlín" },
-    "FC Trinity Zlín": { "carpeta": "República Checa/Zlín" },
-    "FK Jablonec 97": { "carpeta": "República Checa/Jablonec" },
-    "1. FC Slovácko": { "carpeta": "República Checa/Slovácko" },
-    "Dukla Prague": { "carpeta": "República Checa/Dukla Praha" },
-    "FK Dukla Prague": { "carpeta": "República Checa/Dukla Praha" },
-    "MFK Karviná": { "carpeta": "República Checa/Karviná" },
-    "Jihlava": { "carpeta": "República Checa/FC Vysocina Jihlava" },
-    "Prostějov": { "carpeta": "República Checa/1 SK Prostejov" },
-    "Sokolov": { "carpeta": "República Checa/FK Banik Sokolov" },
-    "České Budějovice": { "carpeta": "República Checa/Dynamo Ceske Budejovice" },
-    "FC Sellier & Bellot Vlašim": { "carpeta": "República Checa/FC Vlasim" },
-    "Chrudim": { "carpeta": "República Checa/MFK Chrudim" },
-    "FC Silon Táborsko": { "carpeta": "República Checa/FC Taborsko" }
+    "Sparta Prague": {"carpeta": "República Checa/Sparta Praha"},
+    "AC Sparta Prague": {"carpeta": "República Checa/Sparta Praha"},
+    "Slavia Prague": {"carpeta": "República Checa/Slavia Praha"},
+    "SK Slavia Prague": {"carpeta": "República Checa/Slavia Praha"},
+    "Bohemians Prague": {"carpeta": "República Checa/Bohemians Praha 1905"},
+    "FC Bohemians 1905": {"carpeta": "República Checa/Bohemians Praha 1905"},
+    "Bohemians 1905": {"carpeta": "República Checa/Bohemians Praha 1905"},
+    "Brno": {"carpeta": "República Checa/FC Zbrojovka Brno"},
+    "1. FC Brno": {"carpeta": "República Checa/FC Zbrojovka Brno"},
+    "Boby Brno": {"carpeta": "República Checa/FC Zbrojovka Brno"},
+    "Tescoma Zlín": {"carpeta": "República Checa/Zlín"},
+    "FC Tescoma Zlín": {"carpeta": "República Checa/Zlín"},
+    "Fastav Zlín": {"carpeta": "República Checa/Zlín"},
+    "FC Fastav Zlín": {"carpeta": "República Checa/Zlín"},
+    "FC Trinity Zlín": {"carpeta": "República Checa/Zlín"},
+    "FK Jablonec 97": {"carpeta": "República Checa/Jablonec"},
+    "1. FC Slovácko": {"carpeta": "República Checa/Slovácko"},
+    "Dukla Prague": {"carpeta": "República Checa/Dukla Praha"},
+    "FK Dukla Prague": {"carpeta": "República Checa/Dukla Praha"},
+    "MFK Karviná": {"carpeta": "República Checa/Karviná"},
+    "Jihlava": {"carpeta": "República Checa/FC Vysocina Jihlava"},
+    "Prostějov": {"carpeta": "República Checa/1 SK Prostejov"},
+    "Sokolov": {"carpeta": "República Checa/FK Banik Sokolov"},
+    "České Budějovice": {"carpeta": "República Checa/Dynamo Ceske Budejovice"},
+    "FC Sellier & Bellot Vlašim": {"carpeta": "República Checa/FC Vlasim"},
+    "Chrudim": {"carpeta": "República Checa/MFK Chrudim"},
+    "FC Silon Táborsko": {"carpeta": "República Checa/FC Taborsko"}
   },
-  "gb": { "Milton Keynes Dons": { "carpeta": "Inglaterra/MK Dons" } },
+  "gb": {
+    "Milton Keynes Dons": {"carpeta": "Inglaterra/MK Dons"}
+  },
   "ar": {
-    "Estudiantes (LP)": { "clubId": "estudianteslp" },
-    "Gimnasia y Esgrima (LP)": { "clubId": "gimnasiaesgrima-ar" },
-    "Talleres (C)": { "clubId": "talleres-ar" },
-    "San Martín (T)": { "carpeta": "Argentina/San Martín (Tucumán)" },
-    "San Martín (SJ)": { "sourcing": "Argentina/San Martín (San Juan)" },
-    "Gimnasia y Esgrima (M)": { "sourcing": "Argentina/Gimnasia y Esgrima Mendoza" },
-    "Gimnasia y Esgrima (J)": { "sourcing": "Argentina/Gimnasia y Esgrima (Jujuy)" },
-    "Estudiantes (RC)": { "sourcing": "Argentina/Estudiantes Rio Cuarto" },
-    "Estudiantes (BA)": { "sourcing": "Argentina/Estudiantes (Buenos Aires - Caseros)" },
-    "Mitre (SdE)": { "sourcing": "Argentina/Mitre (Santiago del Estero)" },
-    "Agropecuario Argentino": { "sourcing": "Argentina/Agropecuario (Carlos Casares)" }
+    "Estudiantes (LP)": {"clubId": "estudianteslp"},
+    "Gimnasia y Esgrima (LP)": {"clubId": "gimnasiaesgrima-ar"},
+    "Talleres (C)": {"clubId": "talleres-ar"},
+    "San Martín (T)": {"carpeta": "Argentina/San Martín (Tucumán)"},
+    "San Martín (SJ)": {"sourcing": "Argentina/San Martín (San Juan)"},
+    "Gimnasia y Esgrima (M)": {"sourcing": "Argentina/Gimnasia y Esgrima Mendoza"},
+    "Gimnasia y Esgrima (J)": {"sourcing": "Argentina/Gimnasia y Esgrima (Jujuy)"},
+    "Estudiantes (RC)": {"sourcing": "Argentina/Estudiantes Rio Cuarto"},
+    "Estudiantes (BA)": {"sourcing": "Argentina/Estudiantes (Buenos Aires - Caseros)"},
+    "Mitre (SdE)": {"sourcing": "Argentina/Mitre (Santiago del Estero)"},
+    "Agropecuario Argentino": {"sourcing": "Argentina/Agropecuario (Carlos Casares)"}
   },
   "de": {
-    "Union Berlin": { "sourcing": "Alemania/1. FC Union Berlin" },
-    "1899 Hoffenheim": { "clubId": "hoffenheim-de" },
-    "Mainz 05": { "sourcing": "Alemania/1. FSV Mainz 05" }
+    "Union Berlin": {"sourcing": "Alemania/1. FC Union Berlin"},
+    "1899 Hoffenheim": {"clubId": "hoffenheim-de"},
+    "Mainz 05": {"sourcing": "Alemania/1. FSV Mainz 05"}
   },
   "es": {
-    "Alavés": { "clubId": "deportivoalaves" },
-    "Espanyol": { "clubId": "espanyol-es" },
-    "Mallorca": { "clubId": "rcdmallorca-es" },
-    "Oviedo": { "clubId": "realoviedo-es" },
-    "Valladolid": { "carpeta": "España/Real Valladolid" },
-    "Deportivo La Coruña": { "carpeta": "España/RC Deportivo" },
-    "Zaragoza": { "carpeta": "España/Real Zaragoza" }
+    "Alavés": {"clubId": "deportivoalaves"},
+    "Espanyol": {"clubId": "espanyol-es"},
+    "Mallorca": {"clubId": "rcdmallorca-es"},
+    "Oviedo": {"clubId": "realoviedo-es"},
+    "Valladolid": {"carpeta": "España/Real Valladolid"},
+    "Deportivo La Coruña": {"carpeta": "España/RC Deportivo"},
+    "Zaragoza": {"carpeta": "España/Real Zaragoza"}
   },
-  "mx": { "Guadalajara": { "sourcing": "México/Chivas Guadalajara" } },
-  "dk": { "Copenhagen": { "clubId": "fckobenhavn-dk" } },
+  "mx": {
+    "Guadalajara": {"sourcing": "México/Chivas Guadalajara"}
+  },
+  "dk": {
+    "Copenhagen": {"clubId": "fckobenhavn-dk"}
+  },
   "gr": {
-    "Volos": { "clubId": "volosnfc-gr" },
-    "A.E. Kifisia": { "clubId": "kifisia-gr" },
-    "Kallithea": { "carpeta": "Grecia/Athens Kallithea" }
+    "Volos": {"clubId": "volosnfc-gr"},
+    "A.E. Kifisia": {"clubId": "kifisia-gr"},
+    "Kallithea": {"carpeta": "Grecia/Athens Kallithea"}
   },
   "it": {
-    "Inter Milan": { "clubId": "inter-it" },
-    "Internazionale": { "clubId": "inter-it" },
-    "ChievoVerona": { "clubId": "chievoverona-it" },
-    "Delta Rovigo": { "sourcing": "Italia/Rovigo Delta" },
-    "AZ Picerno": { "sourcing": "Italia/Picerno" }
+    "Inter Milan": {"clubId": "inter-it"},
+    "Internazionale": {"clubId": "inter-it"},
+    "ChievoVerona": {"clubId": "chievoverona-it"},
+    "Delta Rovigo": {"sourcing": "Italia/Rovigo Delta"},
+    "AZ Picerno": {"sourcing": "Italia/Picerno"}
   },
   "kr": {
-    "Sangju Sangmu": { "sourcing": "Corea del Sur/Gimcheon Sangmu" },
-    "Ulsan Hyundai": { "sourcing": "Corea del Sur/Ulsan HD" },
-    "Daejeon Citizen": { "carpeta": "Corea del Sur/Daejeon Hana Citizen" }
+    "Sangju Sangmu": {"sourcing": "Corea del Sur/Gimcheon Sangmu"},
+    "Ulsan Hyundai": {"sourcing": "Corea del Sur/Ulsan HD"},
+    "Daejeon Citizen": {"carpeta": "Corea del Sur/Daejeon Hana Citizen"}
   },
-  "no": { "Sarpsborg": { "carpeta": "Noruega/Sarpsborg 08" } },
+  "no": {
+    "Sarpsborg": {"carpeta": "Noruega/Sarpsborg 08"}
+  },
   "pt": {
-    "Sporting de Braga": { "clubId": "braga-pt" },
-    "Leiria": { "clubId": "uniaodeleiria-pt" },
-    "Desportivo de Chaves": { "clubId": "chaves-pt" },
-    "Grupo Desportivo '''Estoril-Praia'''": { "clubId": "estorilpraia-pt" },
-    "Clube Desportivo '''Feirense'''": { "carpeta": "Portugal/Feirense" },
-    "Clube Desportivo '''Santa Clara'''": { "clubId": "santaclara-pt" }
+    "Sporting de Braga": {"clubId": "braga-pt"},
+    "Leiria": {"clubId": "uniaodeleiria-pt"},
+    "Desportivo de Chaves": {"clubId": "chaves-pt"},
+    "Grupo Desportivo '''Estoril-Praia'''": {"clubId": "estorilpraia-pt"},
+    "Clube Desportivo '''Feirense'''": {"carpeta": "Portugal/Feirense"},
+    "Clube Desportivo '''Santa Clara'''": {"clubId": "santaclara-pt"}
   },
   "ru": {
-    "Spartak": { "clubId": "spartakmoscow-ru" },
-    "Dynamo": { "clubId": "dynamomoscow-ru" },
-    "Nizhny Novgorod": { "clubId": "parinizhnynovgorod-ru" }
+    "Spartak": {"clubId": "spartakmoscow-ru"},
+    "Dynamo": {"clubId": "dynamomoscow-ru"},
+    "Nizhny Novgorod": {"clubId": "parinizhnynovgorod-ru"}
   },
   "tr": {
-    "Istanbul BB": { "carpeta": "Turquía/İstanbul Başakşehir" },
-    "Başakşehir": { "carpeta": "Turquía/İstanbul Başakşehir" },
-    "Gaziantep B.B.": { "carpeta": "Turquía/Gaziantep FK" },
-    "Gazişehir Gaziantep": { "carpeta": "Turquía/Gaziantep FK" }
+    "Istanbul BB": {"carpeta": "Turquía/İstanbul Başakşehir"},
+    "Başakşehir": {"carpeta": "Turquía/İstanbul Başakşehir"},
+    "Gaziantep B.B.": {"carpeta": "Turquía/Gaziantep FK"},
+    "Gazişehir Gaziantep": {"carpeta": "Turquía/Gaziantep FK"}
   },
   "be": {
-    "Union SG": { "clubId": "unionsg-be" }
+    "Union SG": {"clubId": "unionsg-be"}
+  },
+  "ee": {
+    "Tammeka": {"clubId": "tartutammeka-ee"}
   }
 }
