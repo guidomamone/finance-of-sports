@@ -173,3 +173,43 @@ wages_squad) y FCI Levadia ("Liikmemaks" 2019-2020 que el club paga, cargado com
 con costo en el último mensaje, terminado en `; osascript ...; say "lote terminado"`; scripts en el scratchpad corridos con `node` (sin
 variables, sin `cd`, sin espacios escapados, sin `git -C`: si no, cada comando le pide permiso a Guido); las mejoras de script van al cierre
 como letras para fos-pipeline, sin aplicarlas.
+
+## Onboarding 2
+
+- Lote 92 de Bélgica corrido (lote-92-rehacer y lote-92, ~US$ 1,65): 0 años escritos. De 50 documentos: 37 frenan en la verificación con
+  casos en la cola, 3 en la categorización, 2 piden reintento, 3 sin propuesta (OH Leuven 2017 sin estado; 2018 y 2022 con páginas en
+  imagen), 3 ya estaban en el sitio y 2 listos pero frenados por la compuerta de estadio y sponsor (Lommel SK 2020 y 2022).
+- Cola belga contestada por subagentes Sonnet, un borrador por club (126 casos sin contar gestión). Aplicadas las 58 respuestas que no tocan
+  importes (perfiles en 0 reales, el 617 dentro del 61, el desglose geográfico del Omzet no se carga, cuadros que solo respaldan, etc.).
+  QUEDAN SIN APLICAR, a propósito, las que cambian números: Guido (2026-10-18) decidió esperar a las mejoras t y u para cargar Bélgica, en
+  vez de unos 20 ajustes a mano. Los borradores con las cuentas (para revisar contra el script nuevo) están en el scratchpad de esta sesión;
+  lo esencial va en las letras t y u.
+- Con ok de Guido: las 5 versiones originales reemplazadas por su -correction a documentos-descartados.txt; RWDM 2019 (primer ejercicio,
+  7 meses sin actividad) a documentos-parciales.txt. Patro Eisden 2020 -correction: la Brutomarge impresa (277.991, L219-221) no cierra
+  con su propio desglose (568.892 + 183.012 - 423.072 = 328.832); Guido: se carga la Brutomarge impresa, sin abrir, con nota (va con la t).
+- Mejoras de script nuevas para el 298:
+  t) Esquema NBB belga, lo que la mejora b no cubrió (verificar.mjs / la propuesta de carga). Casos revisados contra el .md:
+     1. Suma el total "Bedrijfskosten 60/66A" ADEMÁS de sus renglones, y los subrenglones "Aankopen 600/8" y "Voorraad 609" además del 60:
+        Beerschot 2021 da gastos 30,7 M en vez de 15,1 M (L294-305). Regla: en el NBB, 60/66A y 70/76A son totales y 600/8 y 609 son
+        detalle del 60.
+     2. El "waarvan" del 76A se suma aparte: Lommel SK 2023, 74.960 (L241) además de la Brutomarge 1.253.901.
+     3. La Brutomarge (esquema abreviado, código 9900) se pierde o se lee sin signo: Lierse SK 2019 (-1.372, L229) y 2020 (-1.475, L257),
+        Lierse Kempenzonen 2022 (-2.369, L228) y Patro Eisden 2021 (-140.857, L232) y 2023 (-246.781) quedan con ingreso 0 o positivo.
+     4. Brutomarge con Omzet y 60/61 impresos: falta el residuo implícito como ingreso (Lokeren-Temse 2021 76.401, 2022 64.280,
+        2023 -correction 551.469; Patro Eisden 2022 768.543 y 2023 1.451.259); cuando el 60/61 está impreso y se carga como gasto, la
+        Brutomarge no se suma otra vez.
+     5. Financiero del esquema abreviado: suma los ingresos financieros (75) y los costos (65) con el mismo signo en vez de restarlos
+        (Lokeren-Temse 2021-2023, Patro Eisden 2021-2022).
+     6. Renglones "(+)/(-)" de reversión leídos en positivo: 631/4 y 635/8 (Patro Eisden 2022 635/8 -45.749, L220; 2023 631/4 -9.781 y
+        635/8 -12.882, L224) y el 77 "Regularisering van belastingen" que resta del impuesto (Beerschot 2021, 155, L324).
+     7. OH Leuven 2021 toma el resumen del jaarverslag (ingresos 0, gastos 4.186.307) y no el estado de la pág. 8 del visor (L387-529:
+        ingresos 11.399.352, gastos 28.279.768, resultado -17.061.519).
+  u) La compuerta de estadio y sponsor (to-do 273) frena TODO año nuevo de un club cuya liga de ese año no está en data/club-leagues:
+     cargar.mjs no le pasa --liga y estadio-sponsor.mjs dice "sin liga en club-leagues" (Lommel SK 2020 y 2022). Bélgica solo tiene la liga
+     2025 de cada club, y ligas-sin-verificar.mjs solo mira años ya cargados. Que la carga de un año nuevo resuelva su liga con la misma
+     compuerta de ligas-sin-verificar (candidatas: las ligas del club en otros años y las del país con listas) antes de la compuerta del
+     273. Faltan además las listas de las ligas amateur belgas (Patro Eisden, Lokeren-Temse, Lierse SK, RWDM antes de ascender).
+  v) El final de lote.mjs lista en "Frenados" los documentos que el mismo lote salteó por estar reemplazados por su -correction
+     (Beerschot 2019, Lokeren-Temse 2023, Lommel SK 2021 y Patro Eisden 2020 y 2024 originales): confunde el conteo. Ya en descartados no
+     deberían volver a aparecer; confirmarlo en la próxima corrida.
+- Por dónde seguir: Bélgica espera a la t y la u. Lo demás del plan sigue igual (292 resto, 238, 285, 284, 283, 195, 165 c).
