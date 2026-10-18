@@ -24,8 +24,8 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-1. **Caja y deuda**: quedan 27 años sin ninguno de los dos y 9 datos sueltos, todos frenados por el documento o por el to-do 263 (lista en el 260).
-   - 262: compuerta del total de deuda financiera impreso. 263: ajuste por PDF y año (destraba Dortmund y RB Leipzig).
+1. **Caja y deuda**: lo que falta está frenado por el documento o por la escala del año (lista en el 260).
+   - 289: la escala del año (Leipzig 2023-2024, HSV 2024). 290: Genoa 2022. 291: duda del factoring (Guido decide).
 
 2. **Transcripciones por subagentes** (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia). La limpieza está hecha. Después del merge de pipeline, en este orden:
    - validar `Admin/lotes/subagentes-validar.txt` (~US$ 3,47);
@@ -41,7 +41,7 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
 * 268: dashboard de usuarios y visitas: confirmar el cron (19/10) y que se actualice solo
-* 262 y 263: caja y deuda, lo que queda (compuerta del total impreso; ajuste por PDF y año)
+* 289, 290 y 291: caja y deuda, lo que queda (escala del año, Genoa 2022, duda del factoring)
 
 **B. Bases baratas que después cuestan caro cambiar**
 * 250: hooks: auditoría antes del commit, skills, ASSET_V (vuelve automáticas reglas que hoy dependen de acordarse)
@@ -49,8 +49,7 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos)
 
 **C. Abaratar antes del onboarding grande**
-* 233: usar Jev (más barato) en otras etapas
-* 230: abaratar localizar y extraer
+* 288: Opus → Sonnet, tarea por tarea y medido (la Batch API ya está)
 * 232: mejoras de script que dejó Grecia
 * 279: la tool que duplicaba claves en club-leagues/ru.js
 * 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar
@@ -235,18 +234,9 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
    Geschäftsbericht); Japón 2025 (10 clubes) y América, Argentinos Juniors 2019 y Unión 2022-2024 (la fuente no nombra la transcripción);
    Volos 2019-2020 (formato Β.5 solo con totales); Ferroviária 2014 (al PDF le falta la página del pasivo no corriente); Remo 2019 (sin
    balance); Mirassol 2024 (solo el informe del auditor); Alverca 2022-2025 y Estrela 2023 (montos con accionistas sin nota de préstamo:
-   preguntar al club); HSV 2024 y RB Leipzig 2023 (sin escala del documento); Dortmund 2024-2025 y RB Leipzig 2022-2025 (to-do 263).
+   preguntar al club); HSV 2024 y RB Leipzig 2023-2024 (la escala del año: to-do 289). Dortmund 2024-2025 y RB Leipzig 2022 y 2025, escritos el 2026-10-18.
    Pendiente de mirar: Ferroviária 2023-2025, "Partes relacionadas" no corriente (3.844.165) puede ser un préstamo de una parte
    relacionada (con el criterio de socios, contaría); hoy la deuda es solo "Empréstimos".
-262. DEUDA PARTIDA EN VARIAS FILAS (caja-deuda.mjs; ok de Guido, 2026-10-17). Cuando la deuda financiera está repartida (bancos, bonos,
-   socios, otros financiadores), el script propone la fila que reconoce y la compuerta la confirma porque el vecino repite el mismo error
-   (Bologna, Genoa, Chievo y Milan 2018 quedaron incompletas). Escalón: si el documento imprime su total de deuda financiera ("Totale debiti
-   finanziari", posición financiera neta, nota de deuda), la propuesta tiene que coincidir con él; si no, no pasa. Caso: Bologna 2025, 19,4 M
-   propuestos contra 28,6 M del total. Medir con `caja-deuda.mjs --medir` y el ensayo de todos los clubes.
-
-263. AJUSTE POR PDF Y AÑO (caja-deuda.mjs / ajustes.mjs). Un ajuste `caja` / `deuda` se busca por PDF, y dos años cargados desde el mismo
-   documento (el año y su comparativo: Dortmund 2024 y 2025 desde geschaeftsbericht-2024-25, RB Leipzig 2024 y 2025 desde
-   jahresabschluss-2024-25) reciben el mismo valor. Escalón: el ajuste puede llevar `anio`, y si lo lleva vale solo para ese año.
 
 268. MI CUENTA Y EL DASHBOARD DE USUARIOS Y VISITAS (pedido de Guido, 2026-10-17). Falta: (a) confirmar la primera corrida del cron
    del Worker fos-supabase-ping el 2026-10-19 12 UTC (Cloudflare → fos-supabase-ping → Logs); (b) que el dashboard
@@ -285,10 +275,26 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
    FLI tienen `.md`.
 286. EL ENSAYO DE pipeline.mjs NO ANTICIPA EL REHACER CON MISTRAL (cierre de onboarding). `--lista` muestra un `.md` sin tablas como
    "texto (Claude solo en págs. dudosas)" y `--ejecutar` lo rehace con Mistral (~US$ 0,17 por documento; la corrida de los 6 países
-   estimó US$ 27,83 y se cortó en 40 de 566). Que el ensayo los cuente como "rehacer con Mistral" con su costo. Ya avisado a pipeline.
+   estimó US$ 27,83 y se cortó en 40 de 566). Que el ensayo los cuente como "rehacer con Mistral" con su costo. Quedan 481 .md así
+   (Bélgica 268, Colombia 208). Ya avisado a pipeline.
 287. QUE NO SE REPITA LA LIMPIEZA (cierre de onboarding; escalones, uno por vez). `audit.js` `carpeta-doble` (dos carpetas de un país
    con PDFs de la misma huella) y `club-sourcing` (mirar la entidad de la portada al guardar y no abrir una segunda carpeta del club).
    Un `.md` sin PDF no es error (Ajax, PSV, Feyenoord y AZ 2023-25 son la fuente publicada de lo cargado).
+288. OPUS → SONNET, TAREA POR TAREA Y MEDIDO (reemplaza a los viejos 233 y 230; cierre de pipeline, 2026-10-18). La Batch API ya está
+   hecha (`tools/lote-batch.mjs`, mismo lote y modelo a mitad de precio, opcional y más lento). Sigue pasar a Sonnet localizar, extraer,
+   caja-deuda, categorizar y perimetro-a2, una por vez, con medición antes y después. Jev no sirve para localizar ni perimetro-a2
+   (HALLAZGOS): queda para opciones cerradas y cortas. CÓMO MEDIR un cambio de extraer: rehacerlo cuesta ~US$ 6 por corrida sobre `prueba-
+   mediana.txt` (34 documentos) y la IA no responde igual dos veces (6 de 34 documentos y el 3,5% de las etiquetas cambian con el MISMO
+   código), así que hay que correr también el "antes" y comparar contra ese piso. El comparador usado (propuesta de `cargar.mjs --lista
+   <x> --salida <x.jsonl>`, línea por línea: etiqueta, categoría, importe y totales) vivía en el scratch de la sesión: subirlo a `tools/`
+   como `comparar-cargas.mjs` si se vuelve a medir. Restaurar después `Generados/` de los clubes de prueba y la cola con `git checkout`.
+289. LA ESCALA DEL AÑO EN CAJA-DEUDA (cierre de pipeline). RB Leipzig 2024: el comparativo al 30.06.2024 del jahresabschluss-2024-25 está
+   en TEUR (caja 783, préstamos de Red Bull 153.717, .md L531), pero `caja-deuda.mjs` detecta para ese año la escala EUR, así que un
+   ajuste "tal cual impreso" daría 0,15 M. Mismo problema que Leipzig 2023 y HSV 2024: la escala del año, no el ajuste.
+290. GENOA 2022 SIGUE MAL EN caja-deuda --medir (15,7 M contra 95,7 M publicados): le faltan las filas "4 bis) … oltre l'esercizio
+   successivo" y "altri finanziatori".
+291. DUDA PARA GUIDO: ¿EL FACTORING ES DEUDA? En Monza 2024 se decidió que no (ajuste del 2026-10-17: 0); en Genoa 2022 el sitio publica
+   95,7 M que lo incluyen (30,4 M con Banca Sistema, .md L2637). Decidir un criterio; no se reabrió nada.
 270. ESTIMAR UN CLUB QUE NUNCA CARGAMOS (pedido de Guido, 2026-10-17; los años que le faltan a un club que tenemos ya se estiman y
    publican en data/estimados/). Apagado: hoy da 50% de error con la posición en la tabla contra 56% de la mediana de la liga. Volver a
    medir (`node tools/estimar.mjs --medir`) cuando haya más clubes cargados y prenderlo solo si le gana a la mediana con un error que Guido
@@ -309,9 +315,9 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.
     e) `perimetro-a2` le pasa a la IA hasta ~42.000 tokens de entrada para contestar ~130 (Olympiacos 2018: US$ 0,17 por llamada); en
-       Grecia fue el 20% del gasto de API. Mirar qué texto le hace falta de verdad (to-do 230 lo deja como tercer cambio).
+       Grecia fue el 20% del gasto de API. Mirar qué texto le hace falta de verdad (hoy, to-do 288).
        PROBADO Y DESCARTADO (2026-10-14): recortar los textos debajo de los títulos sin tabla pierde 7 decisiones y mete 2 errores
-       (Admin/HALLAZGOS-pipeline.md). Lo que queda por probar: que Jev haga una primera pasada barata (to-do 233) o achicar solo la parte
+       (Admin/HALLAZGOS-pipeline.md). Lo que queda por probar: que Jev haga una primera pasada barata (medido y descartado: HALLAZGOS; hoy, to-do 288) o achicar solo la parte
        de las notas que viene DESPUÉS del estado de resultados.
 
 195. GESTIONES SIN FUENTE (solo entran las `confirmada: true`). Una tanda nueva se arma sola desde los casos de la cola con
@@ -324,37 +330,6 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
       Mönchengladbach 2023 (Rolf Königs). Para investigarlos con la herramienta hay que armarles un lote (--club no los encuentra sin caso).
     Las dudas de cada club, en "## Gestiones" de su `Admin/carga-clubes/<club>.md`; los casos `firmo` (la gestión cambió entre el cierre y
     la aprobación del balance), ahí mismo, sin cargar.
-
-233. JEV EN OTRAS ETAPAS DEL PIPELINE (pedido de Guido, 2026-10-14). Jev (typesafe.ai, `tools/jev-categorizar.mjs`) cuesta ~US$ 42 por MIL
-    MILLONES de tokens de entrada y hoy solo categoriza (etapa 7). Ver, etapa por etapa, si puede hacer lo que hoy hace Claude Opus o un
-    escalón de reglas por idioma, como escalón barato antes de la IA cara (nunca reemplazando una compuerta): caja y deuda (232 t),
-    `perimetro-a2` (le pasa hasta ~42.000 tokens a Opus para una respuesta corta, 20% del gasto de API en Grecia), localizar (elegir los
-    bloques del estado y las notas del índice de bloques), el período y el cierre (232 i), el nombre legal del alta (232 o), las preguntas
-    de perfil (socios / otros deportes, 232 c) y una primera mirada a los casos de la cola. Cada una se mide como Jev en la etapa 7
-    (`--backtest`): contra lo ya decidido, contando los errores con confianza ALTA, antes de entrar como escalón.
-    Cómo se usa Jev hoy: `tools/jev-categorizar.mjs` (la clave y el cliente están ahí; resultados de backtests en
-    `Admin/mediciones/backtests/jev/` y `Admin/mediciones/test-jev-resultados.md`). Jev devuelve una categoría y probabilidades por
-    categoría: sirve para elegir entre opciones cerradas (qué fila es caja, si es grupo o sociedad, si hay socios). Empezar por la etapa
-    con respuesta cerrada y verdad conocida: caja y deuda (los años ya cargados de `caja-deuda.mjs --medir`) o el perímetro (los ajustes
-    `perimetro` ya decididos y auditados, ver `--auditar-a2`).
-    HECHO: caja y deuda (escalón 1b de caja-deuda.mjs, 2026-10-14). Lo que enseñó la medición: Jev elige bien la fila, pero destapó dos
-    agujeros de la compuerta que también afectaban a los otros escalones (la trampa del cero y las cifras con forma imposible del OCR), y
-    errores del sitio (Colo-Colo 0/0, PAOK 2021, Panetolikos 2022: 232 ab). También hecho: el dato "personal" (staffCost, caja-deuda.mjs --personal). Siguen: perimetro-a2,
-    localizar, período y cierre, nombre legal, perfil y la primera mirada a la cola.
-
-230. AHORRAR EN LAS ETAPAS 3 A 5 (pedido de Guido, 2026-10-14: el lote 71 de Grecia estima ~US$ 17 para localizar y extraer 45 documentos).
-    Mirar dónde se va la plata (`node tools/gasto.mjs` y `Admin/registros/api/claude-api.jsonl` por tarea y por documento: localizar,
-    extraer, validar-bloques) y qué se puede bajar sin perder exactitud: documentos que no son estados (informes del auditor, memorias) que
-    igual pasan por localizar; páginas de más en lo que recibe extraer; un modelo más barato o menos esfuerzo para lo que hoy hace Opus;
-    caché entre años del mismo club. Medir antes y después con `Admin/lotes/prueba-completa.txt` (lo cargado idéntico) y el costo por
-    documento.
-    HECHO el 2026-10-14: el desglose del gasto (Grecia, lotes 71 y 74: extraer 47%, perimetro-a2 20%, localizar 22%) y la "salida corta" de
-    extraer, medida y DESCARTADA (Admin/HALLAZGOS-pipeline.md: −17% de costo pero 17 de 34 documentos cargaban distinto). Lo que queda:
-    perimetro-a2 (232 e) y Jev (233). CÓMO MEDIR un cambio de extraer: rehacerlo cuesta ~US$ 6 por corrida sobre `prueba-mediana.txt`
-    (34 documentos) y la IA no responde igual dos veces (6 de 34 documentos y el 3,5% de las etiquetas cambian con el MISMO código), así
-    que hay que correr también el "antes" y comparar contra ese piso. El comparador usado (propuesta de `cargar.mjs --lista <x> --salida
-    <x.jsonl>`, línea por línea: etiqueta, categoría, importe y totales) vivía en el scratch de la sesión: subirlo a `tools/` como
-    `comparar-cargas.mjs` si se vuelve a medir. Restaurar después `Generados/` de los clubes de prueba y la cola con `git checkout`.
 
 130. OTROS DEPORTES Y CLUBES POLIDEPORTIVOS: ¿ENTRAN AL SITIO, Y CON QUÉ ESQUEMA? (Sudamérica y México). Minas Tênis Clube/Náutico,
     Paulistano, Praia Clube y Pinheiros publican un balance que consolida todos los deportes (cuotas,

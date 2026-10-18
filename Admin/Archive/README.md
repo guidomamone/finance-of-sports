@@ -44,3 +44,4 @@ Qué hay hoy:
 - `sesion-pantallas-2026-10-17.md` — el cierre de la sesión `pantallas` (worktree): qué cambió, qué quedó y qué dejó de ser cierto. Pasado a TODO, CHANGELOG y ESTADO. Archivado en la 712.
 - `sesion-datos-sourcing-2026-10-18.md` — el cierre de la sesión `datos-sourcing`: faltantes por liga, listas, estimados, y el formato de `data/faltantes/` y `data/estimados/` para pantallas (lo cita el to-do 275). Archivado en la 714.
 - `sesion-onboarding-2026-10-18.md` — el cierre de la rama `onboarding`: limpieza de las transcripciones por subagentes, gestiones, altas y los to-dos 280 a 287. Archivado en la 715.
+- `sesion-pipeline-2026-10-18.md` — el cierre de la sesión `pipeline`: ajuste por año, deuda italiana, Batch API y los to-dos 288 a 291. Archivado en la 716.

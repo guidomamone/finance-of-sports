@@ -99,7 +99,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   contestarlos primero (subagentes por grupos de clubes, con un archivo de criterio común). El lote vuelve a verificar solo un documento
   con respuestas nuevas; aun así, antes de pasar el comando conviene el ensayo de `cargar.mjs --desde-verificacion` de cada documento,
   porque frenos de la carga (signo del resultado, filas del otro lado) no se ven en la verificación.
-- Portugal está cargado salvo Benfica 2014-15 (en HALLAZGOS; to-do 165 b0). Caja y deuda: de 919 años con balance, 27 no tienen ni caja ni deuda, todos frenados por el documento (lista en el to-do 260). Rusia sale de los códigos del balance del fisco (caja 1250, deuda 1410 + 1510). Los préstamos de socios cuentan como deuda (Guido, 2026-10-17). Del to-do 237
+- Portugal está cargado salvo Benfica 2014-15 (en HALLAZGOS; to-do 165 b0). Caja y deuda: lo que falta está frenado por el documento o por la escala del año (lista en el to-do 260). Un ajuste `caja` / `deuda` puede llevar año (`ajustes.mjs --anio`), para un PDF que alimenta dos años. Rusia sale de los códigos del balance del fisco (caja 1250, deuda 1410 + 1510). Los préstamos de socios cuentan como deuda (Guido, 2026-10-17). Del to-do 237
   queda solo `al` (Guido la dejó para después). Los años en escudos (PTE) se cargan en su moneda con la paridad fija al euro, como las liras.
   Un ejercicio de transición por cambio de cierre (11 meses que encadenan con el cierre anterior y el siguiente) se carga con nota pública.
 - `lote.mjs` saltea desde la etapa 3 los documentos cuyo año ya está en el sitio (salvo `--reintentar`): volver a correr una lista
@@ -120,7 +120,7 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 - Qué hay cargado de cada club (ejercicios, tipo de documento, moneda, deuda y caja): `Admin/ESTADO-clubes.md`, generado por
   `node tools/generate-club-index.js`. El detalle de cada año (fuente, qué es real y qué no) está en la evidencia del club, `Admin/carga-clubes/<clubId>.md`.
 - Grecia está cargada (qué hay y qué falta por club: to-do 165 a y `Admin/ESTADO-clubes.md`). Las mejoras de
-  script que dejó su onboarding: to-do 232; Jev en otras etapas: to-do 233.
+  script que dejó su onboarding: to-do 232; abaratar etapas (Opus → Sonnet): to-do 288; la Batch API (`tools/lote-batch.mjs`) ya está.
 - Brasil, Italia y Rusia se cargaron por el pipeline (Rusia por su camino propio); en los documentos italianos viejos quedan ajustes
   manuales donde el script no da idéntico, y dos ejercicios (Lazio 2012-13, AS Roma 2021) llevan el ajuste `no-recargar` porque lo publicado
   es más detallado que lo que lee el script. Un ejercicio de menos de 12 meses no se carga: queda en `Admin/registros/documentos-parciales.txt` con el

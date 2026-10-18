@@ -15,6 +15,22 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 716 — Merge de pipeline: ajuste por año, deuda italiana y Batch API; caja y deuda de Dortmund y Leipzig (2026-10-18)
+
+Sesión en el worktree `fos-pipeline`. Merge a mano: `tools/worktree.mjs` con la versión de main (mismo arreglo de `preparar`, más
+completo) y los tres registros `.jsonl` con las líneas de las dos ramas (JSON válido, sin repetidas); ASSET_V 1252, P0 0 / P1 0.
+
+- To-do 263: un ajuste `caja` / `deuda` puede llevar `--anio` (`tools/ajustes.mjs`); en `caja-deuda.mjs` el escalón 0 toma el del año.
+- To-do 262: el diccionario de deuda italiano suma obbligazioni y préstamos de socios (`--medir`: 164 → 168 iguales, 13 → 11 distintos, sin
+  errores nuevos). La compuerta del total impreso se midió, no servía y quedó en HALLAZGOS.
+- Batch API (`tools/lote-batch.mjs` y `tools/claude-batch.mjs`): el mismo lote y modelo a mitad de precio (Rapid Wien 2023-24, todas las
+  etapas, US$ 0,085 contra ~0,17). Opcional y más lento.
+- Jev en perimetro-a2: 2 errores en 23 decisiones; revertido y en HALLAZGOS.
+- Caja y deuda escritas sin API: Dortmund 2024-2025 y RB Leipzig 2022 y 2025. Antes hubo que poner `grossDebt:null, cash:null` en esos
+  años (el formato viejo no tenía la clave y `caja-deuda.mjs` no escribía). auditAll: 2612 cierran, 0 no. ASSET_V 1253.
+- TODO: fuera 262, 263, 233 y 230; nuevos 288 (Opus → Sonnet), 289 (escala del año), 290 (Genoa 2022) y 291 (duda del factoring); el 286
+  con los 481 .md sin tablas.
+
 ## Versión 715 — Merge de onboarding: limpieza de las transcripciones por subagentes, gestiones y altas (2026-10-18)
 
 Sesión en el worktree `fos-onboarding`. Merge a mano por el `<title>` (la rama traía el viejo en la línea de la versión: ganó main);

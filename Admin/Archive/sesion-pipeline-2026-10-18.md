@@ -1,3 +1,5 @@
+> ARCHIVADO (Versión 716, 2026-10-18): cierre de la sesión pipeline, ya pasado a TODO, CHANGELOG y ESTADO. Rutas y números de ese día.
+
 # Cierre de la sesión del worktree `pipeline` (rama `pipeline`)
 
 La sesión principal pasa esto a CHANGELOG, TODO y ESTADO al mergear, y después lo archiva en `Admin/Archive/`.
