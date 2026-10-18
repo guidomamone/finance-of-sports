@@ -319,7 +319,7 @@ window.GRUPOS = {
     }
    },
    {
-    "clubId": null,
+    "clubId": "lommelsk-be",
     "nombre": "Voetbalclub Lommel SK NV",
     "pais": "BE",
     "control": true,
@@ -378,6 +378,9 @@ window.GRUPOS = {
    "mancity-gb": {
     "2024": 910.035,
     "2025": 954.828
+   },
+   "lommelsk-be": {
+    "2025": 11.212
    }
   }
  },

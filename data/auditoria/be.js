@@ -30,6 +30,20 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
+ "beerschot-be": {
+  "2025": {
+   "auditor": {
+    "nombre": "DPO Bedrijfsrevisoren BV",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.md",
+    "linea": 1503
+   }
+  }
+ },
  "cerclebrugge-be": {
   "2025": {
    "auditor": {
@@ -112,6 +126,48 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
+ "liersesk-be": {
+  "2025": {
+   "auditor": {
+    "nombre": "vyvey & co, bedrijfsrevisoren bv",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.md",
+    "linea": 651
+   }
+  }
+ },
+ "lokerentemse-be": {
+  "2025": {
+   "auditor": {
+    "nombre": "CLYBOUW Bedrijfsrevisoren",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2025-06-30-individual.md",
+    "linea": 595
+   }
+  }
+ },
+ "lommelsk-be": {
+  "2025": {
+   "auditor": {
+    "nombre": "PKF Bofidi Audit BV",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.md",
+    "linea": 1413
+   }
+  }
+ },
  "mechelen-be": {
   "2025": {
    "auditor": {
@@ -123,6 +179,56 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Bélgica/Mechelen/jaarrekening-2025-06-30-individual.md",
     "linea": 2276
+   }
+  }
+ },
+ "ohleuven-be": {
+  "2025": {
+   "auditor": {
+    "nombre": "PKF Bofidi Audit BV",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.md",
+    "linea": 2610
+   }
+  }
+ },
+ "patroeisden-be": {
+  "2025": {
+   "auditor": {
+    "nombre": "PKF Bofidi Audit BV",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.md",
+    "linea": 739
+   }
+  }
+ },
+ "raallalouviere-be": {
+  "2025": {
+   "auditor": null,
+   "dictamen": "sin_informe",
+   "continuidad": false,
+   "fuente": null
+  }
+ },
+ "rwdm-be": {
+  "2025": {
+   "auditor": {
+    "nombre": "vyvey & co, bedrijfsrevisoren bv",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Bélgica/RWDM/jaarrekening-2025-06-30-individual.md",
+    "linea": 1561
    }
   }
  },
@@ -158,7 +264,7 @@ Object.assign(window.CLUB_AUDITORIA, {
  "unionsg-be": {
   "2025": {
    "auditor": {
-    "nombre": "Réviseurs & Associés SRL",
+    "nombre": "C² Réviseurs & Associés SRL",
     "tipo": "firma"
    },
    "dictamen": "sin_salvedades",

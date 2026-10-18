@@ -714,6 +714,18 @@ Object.assign(window.CLUB_AUDITORIA, {
     "linea": 17
    }
   },
+  "2022": {
+   "auditor": {
+    "nombre": "ООО «Аудиторская компания «Мариллион»",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Rusia/Spartak Moscow/2022-auditorskoe-zaklyuchenie.md",
+    "linea": 19
+   }
+  },
   "2023": {
    "auditor": {
     "nombre": "ООО «Аудиторская компания «Мариллион»",

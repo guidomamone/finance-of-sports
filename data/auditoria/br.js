@@ -883,8 +883,9 @@ Object.assign(window.CLUB_AUDITORIA, {
  "goias-br": {
   "2008": {
    "auditor": {
-    "nombre": "Auditores Independentes (CRC SP-018.196/O-8)",
-    "tipo": "firma"
+    "nombre": "Grant Thornton",
+    "tipo": "firma",
+    "legal": "Terco Grant Thornton Auditores Independentes"
    },
    "dictamen": "con_salvedades",
    "continuidad": false,

@@ -2,6 +2,19 @@
 window.CLUB_AUDITORIA = window.CLUB_AUDITORIA || {};
 Object.assign(window.CLUB_AUDITORIA, {
  "aekathens-gr": {
+  "2016": {
+   "auditor": {
+    "nombre": "Forvis Mazars",
+    "tipo": "firma",
+    "legal": "MAZARS Ορκωτοί Ελεγκτές Λογιστές"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Grecia/AEK Athens/AEK_oikonomikes_katastaseis.md",
+    "linea": 316
+   }
+  },
   "2017": {
    "auditor": {
     "nombre": "Forvis Mazars",
@@ -519,6 +532,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    },
    "dictamen": "sin_salvedades",
    "continuidad": false,
+   "alcance": "proposito_especial",
    "fuente": {
     "md": "Clubes/Grecia/Kifisia/Kifisia_notes_2022-06-30.md",
     "linea": 411
@@ -531,6 +545,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    },
    "dictamen": "sin_salvedades",
    "continuidad": false,
+   "alcance": "proposito_especial",
    "fuente": {
     "md": "Clubes/Grecia/Kifisia/Kifisia_notes_2023-06-30.md",
     "linea": 371
@@ -543,6 +558,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    },
    "dictamen": "sin_salvedades",
    "continuidad": false,
+   "alcance": "proposito_especial",
    "fuente": {
     "md": "Clubes/Grecia/Kifisia/Kifisia_notes_2024-06-30.md",
     "linea": 385

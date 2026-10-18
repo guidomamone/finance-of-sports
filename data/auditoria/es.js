@@ -60,7 +60,7 @@ Object.assign(window.CLUB_AUDITORIA, {
   },
   "2025": {
    "auditor": {
-    "nombre": "Fides Audit Assurance, S.L. Auditores",
+    "nombre": "Fides Audit Assurance, S.L.",
     "tipo": "firma"
    },
    "dictamen": "sin_salvedades",
@@ -115,7 +115,7 @@ Object.assign(window.CLUB_AUDITORIA, {
  "getafe-es": {
   "2024": {
    "auditor": {
-    "nombre": "Grupo PEL Auditores, S.L.",
+    "nombre": "Grupo P&L Auditores, S.L.",
     "tipo": "firma"
    },
    "dictamen": "sin_salvedades",
@@ -127,7 +127,7 @@ Object.assign(window.CLUB_AUDITORIA, {
   },
   "2025": {
    "auditor": {
-    "nombre": "Grupo PEL Auditores, S.L.",
+    "nombre": "Grupo P&L Auditores, S.L.",
     "tipo": "firma"
    },
    "dictamen": "sin_salvedades",

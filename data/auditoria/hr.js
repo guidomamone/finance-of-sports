@@ -66,6 +66,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    },
    "dictamen": "sin_salvedades",
    "continuidad": false,
+   "alcance": "procedimientos_acordados",
    "fuente": {
     "md": "Clubes/Croacia/Osijek/financijsko-izvjesce-2025.md",
     "linea": 156

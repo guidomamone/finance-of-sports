@@ -128,6 +128,18 @@ Object.assign(window.CLUB_AUDITORIA, {
     "linea": 4261
    }
   },
+  "2023": {
+   "auditor": {
+    "nombre": "BECHER Y ASOCIADOS S.R.L.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Argentina/Boca/balance-01-07-22-al-30-06-23-firmado.md",
+    "linea": 6119
+   }
+  },
   "2025": {
    "auditor": {
     "nombre": "Becher y Asociados S.R.L.",
@@ -601,6 +613,18 @@ Object.assign(window.CLUB_AUDITORIA, {
    "continuidad": false,
    "fuente": null
   },
+  "2023": {
+   "auditor": {
+    "nombre": "Paula Peresin",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Argentina/Union/memoria-y-balance-117.md",
+    "linea": 3044
+   }
+  },
   "2024": {
    "auditor": {
     "nombre": "Paula Peresin",
@@ -611,6 +635,18 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Argentina/Union/estados-contables-118-2023-2024.md",
     "linea": 2867
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "Paula Peresin",
+    "tipo": "persona"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Argentina/Union/memoria-y-balance-119.md",
+    "linea": 1986
    }
   }
  },

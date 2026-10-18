@@ -446,6 +446,19 @@ Object.assign(window.CLUB_AUDITORIA, {
     "linea": 2184
    }
   },
+  "2022": {
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO Italia S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2022.md",
+    "linea": 2669
+   }
+  },
   "2023": {
    "auditor": {
     "nombre": "Deloitte",
@@ -637,6 +650,7 @@ Object.assign(window.CLUB_AUDITORIA, {
    },
    "dictamen": "sin_salvedades",
    "continuidad": false,
+   "alcance": "revision_limitada",
    "fuente": {
     "md": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2025.md",
     "linea": 1751

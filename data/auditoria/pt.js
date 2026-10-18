@@ -404,6 +404,20 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
+ "boavista-pt": {
+  "2024": {
+   "auditor": {
+    "nombre": "PALM – Pereira, Almeida, Linhares, Monteiro & Associados, SROC, Lda",
+    "tipo": "firma"
+   },
+   "dictamen": "abstencion",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Portugal/Boavista/RCSAD-23-24_3-3.md",
+    "linea": 1047
+   }
+  }
+ },
  "braga-pt": {
   "2016": {
    "auditor": {
@@ -916,6 +930,20 @@ Object.assign(window.CLUB_AUDITORIA, {
    "dictamen": "sin_informe",
    "continuidad": false,
    "fuente": null
+  }
+ },
+ "portimonense-pt": {
+  "2025": {
+   "auditor": {
+    "nombre": "Galvão, Nunes, Tavares & Associados Sociedade de Revisores Oficiais de Contas, Lda.",
+    "tipo": "firma"
+   },
+   "dictamen": "con_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Clubes/Portugal/Portimonense/Relatorio-Contas-24-25_assinado.md",
+    "linea": 2450
+   }
   }
  },
  "porto-pt": {
