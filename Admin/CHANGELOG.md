@@ -15,6 +15,18 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 721 — Merge de finanzas: ingresos de las otras entidades y el dato de auditoría (2026-10-18)
+
+`node tools/worktree.mjs mergear finanzas` (lo generado con main y regenerado), P0 0 / P1 0; después, los dos commits de sesiones de
+pantallas y el fast-forward de su rama, para que codee la pantalla del 282.
+
+- To-do 281, la pantalla: la tarjeta Estructura muestra los ingresos de la entidad que no se carga, con el % de los del club cuando
+  coinciden moneda y cierre; accionistas menores de la entidad cargada en "Relacionadas".
+- To-do 282, el dato: `Admin/registros/auditoria.jsonl` y `tools/auditoria.mjs` (verifica citas y genera `data/auditoria/`; `audit.js`
+  da P1 si queda viejo). Piloto de 19 balances de 16 países por subagentes: 2 con salvedades, 2 con duda sobre la continuidad, 2 sin
+  informe. Acepta la entidad organizadora de una liga (`_ligas.js`, hoy vacío).
+- TODO: 281 y 282 con lo que falta; nuevo 295 (balances de las entidades organizadoras de las ligas).
+
 ## Versión 720 — Merge de pantallas: el grupo en la URL y el buscador, y el 271 (2026-10-18)
 
 `node tools/worktree.mjs mergear pantallas`, sin conflictos; P0 0 / P1 0; ASSET_V 1264. Probado: un link de Comparar con inflación.

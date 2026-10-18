@@ -53,12 +53,14 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 165 c: altas de los países nuevos que faltan
 * 195: gestiones (presidentes) sin fuente confirmada (se puede ir haciendo con cada país)
 * 276 y 277: listas de equipos que no salen; Parma 2018 en club-leagues
+* 295: balances de las entidades que organizan las ligas (AFA, LFP…), para la auditoría en Ligas
 * 284 y 285: Fredrikstad y Sarpsborg 08 sobre el FLI; transcribir Viking Fotball AS
 * 283: Vålerenga y Aalesund, sumar el AS y el FLI (con nota en Finanzas)
 * 273: estadio y sponsor de cada ejercicio (definir los campos con Guido antes de juntar)
 
 **E. Pantallas**
-* 281 y 282: Finanzas, los ingresos de las otras entidades (falta transcribir y la pantalla) y quién audita
+* 282: quién audita (la pantalla de Finanzas y los ~905 balances que faltan)
+* 281: ingresos de las otras entidades (falta transcribir los documentos de Portugal)
 * 294: llenar el registro de entidades
 
 **E2. Distribución (depende de 246)**
@@ -235,15 +237,18 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    (frente) y marca técnica, con el link a la versión exacta de la página de Wikipedia de la temporada; sin monto. Los junta fos-datos.
    Se ve en Finanzas (Guido: "tiene que estar en finanzas"; link de salto, bloque o fila de la ficha, a decidir con él); la pantalla,
    recién cuando fos-datos avise el formato y el archivo.
-281. FINANZAS: INGRESOS RESUMIDOS DE LAS OTRAS ENTIDADES (pedido de Guido, 2026-10-17). El dato ya está (línea `ingresos` del registro de
-   entidades, piloto Portugal: Vitória 2021/22, Tondela 2021, Braga). Falta: transcribir por subagentes los ~17 documentos de entidades de
-   clubes portugueses publicados sin `.md` (Porto 3, Braga 2022-23, Marítimo 5, Belenenses, Chaves, Vizela 2, Académica, União de
-   Leiria) y sumar su línea de ingresos; y la pantalla, con mockup (artboard "Vitória y Tondela (to-do 281)" de "Pantallas FoS").
-282. QUIÉN AUDITA Y QUÉ DICE EL INFORME (pedido de Guido, 2026-10-17). El auditor y el dictamen en pocas palabras (sin salvedades /
-   con salvedades / adverso / abstención / sin informe; duda sobre la continuidad), en Finanzas, con el link "ver en el balance". También en
-   Ligas, pero del balance propio de la entidad que organiza la liga (AFA, LFP), no de los clubes (aclaración de Guido); el sitio todavía
-   no tiene esas entidades. El dato está en piloto en la rama finanzas (19 balances, `data/auditoria/`); un club-año que no está es "no
-   sabemos", no "sin informe". El pipeline va a exigir el dato al dar de alta un club (fos-pipeline). Mockup antes de codear.
+281. FINANZAS: INGRESOS DE LAS OTRAS ENTIDADES (pedido de Guido, 2026-10-17). El dato y la pantalla están (tarjeta Estructura, piloto
+   Portugal). Falta: transcribir por subagentes los ~17 documentos de entidades de clubes portugueses publicados sin `.md` (Porto 3, Braga
+   2022-23, Marítimo 5, Belenenses, Chaves, Vizela 2, Académica, União de Leiria) y cargar su línea de ingresos (va con el 294).
+282. QUIÉN AUDITA Y QUÉ DICE EL INFORME (pedido de Guido, 2026-10-17). El dato está en main en piloto: `Admin/registros/auditoria.jsonl`
+   y `tools/auditoria.mjs` (verifica citas, genera `data/auditoria/`), 19 balances de 16 países. Falta: los ~905 balances restantes por
+   subagentes, en tandas por país (`node tools/auditoria.mjs --pendientes`); Católica 2010, retranscribir el informe de los auditores
+   (falta en el .md); la pantalla de Finanzas (fos-pantallas, mockup aprobado) y que el pipeline exija la línea al dar de alta un club
+   (fos-pipeline). Un club-año sin línea es "no sabemos", no "sin informe". El vocabulario del dictamen es provisorio.
+295. BALANCES DE LAS ENTIDADES QUE ORGANIZAN LAS LIGAS (sale del 282; aclaración de Guido, 2026-10-18). En Ligas, la auditoría que se
+   muestra es la del balance propio de la entidad organizadora (AFA, LFP, Premier League, Lega Serie A…). No hay ninguno en el proyecto
+   (las carpetas `Clubes/*/_…` son informes agregados de liga). Sourcing de esos balances con su informe del auditor; después, su línea en
+   el registro de auditoría (`ligaId` + `entidad`, `data/auditoria/_ligas.js`).
 283. VÅLERENGA Y AALESUND: SUMAR EL AS Y EL FLI EN UN SOLO AÑO (pedido de Guido, 2026-10-17). El AS tiene los ingresos comerciales y el
    FLI los sueldos, que el AS le paga como transferencia (Vålerenga Elite 2023: 85,4 M de sueldos; el AS le transfiere 87,5 M); ninguno
    consolida. Sumar los dos documentos sin contar dos veces la transferencia, con una nota en Finanzas que explique la suma.
