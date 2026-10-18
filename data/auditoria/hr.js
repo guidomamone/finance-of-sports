@@ -15,5 +15,105 @@ Object.assign(window.CLUB_AUDITORIA, {
     "linea": 165
    }
   }
+ },
+ "gorica-hr": {
+  "2025": {
+   "auditor": {
+    "nombre": "Russell Bedford Croatia — Revizija d.o.o.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Croacia/Gorica/financijsko-izvjesce-2025.md",
+    "linea": 561
+   }
+  }
+ },
+ "hajduksplit-hr": {
+  "2024": {
+   "auditor": {
+    "nombre": "Kalibović i partneri d.o.o.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Croacia/Hajduk Split/financijsko-izvjesce-2024.md",
+    "linea": 158
+   }
+  }
+ },
+ "istra-hr": {
+  "2025": {
+   "auditor": {
+    "nombre": "CONSULTUM KOMPARIĆ d.o.o.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Croacia/Istra 1961/financijsko-izvjesce-2025.md",
+    "linea": 206
+   }
+  }
+ },
+ "osijek-hr": {
+  "2025": {
+   "auditor": {
+    "nombre": "Werkmann d.o.o.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Croacia/Osijek/financijsko-izvjesce-2025.md",
+    "linea": 156
+   }
+  }
+ },
+ "rijeka-hr": {
+  "2024": {
+   "auditor": {
+    "nombre": "KPMG",
+    "tipo": "firma",
+    "legal": "KPMG Croatia d.o.o. za reviziju"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Croacia/Rijeka/financijsko-izvjesce-2024.md",
+    "linea": 213
+   }
+  }
+ },
+ "slavenbelupo-hr": {
+  "2025": {
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM Croatia d.o.o."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Croacia/Slaven Belupo/financijsko-izvjesce-2025.md",
+    "linea": 103
+   }
+  }
+ },
+ "varazdin-hr": {
+  "2025": {
+   "auditor": {
+    "nombre": "DTTC Consulting i revizija d.o.o.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Croacia/Varaždin/financijsko-izvjesce-2025.md",
+    "linea": 78
+   }
+  }
  }
 });

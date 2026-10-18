@@ -110,3 +110,60 @@
   `entidad`, y genera `data/auditoria/_ligas.js` (`window.LIGA_AUDITORIA`, contrato acordado con pantallas). Hoy vacío: no hay en el
   proyecto ningún balance propio de una entidad organizadora (las carpetas `Clubes/*/_…` son informes agregados de liga). Para TODO:
   sourcing de esos balances (AFA, LFP, Premier League, Lega Serie A…), con su informe del auditor.
+
+## Después del segundo merge del 2026-10-18
+
+### Qué cambió (para CHANGELOG)
+
+- To-do 282, el registro lleno: `Admin/registros/auditoria.jsonl` cubre 902 de los 925 balances (81 tandas de subagentes Sonnet por país,
+  con un criterio común y un verificador de citas). Resultado: 509 sin salvedades, 144 con salvedades, 7 abstenciones, 139 sin informe en
+  el documento, 116 con incertidumbre material sobre la continuidad; 42 auditores son personas. `data/auditoria/` regenerado.
+- `tools/auditoria.mjs`: código interno `falta_transcripcion` (el documento muestra que el informe existe, pero el .md no lo trae: 103
+  casos), que no se publica y cuenta como pendiente; `auditor.nombre` puede ser null si el informe no imprime quién firma (Gimnasia
+  2023-2025), con nota.
+
+- 282, informes que faltaban: 30 transcriptos por subagentes solo en sus páginas (archivos nuevos `<pdf>.informe-auditor.md` al lado del
+  PDF, o el `.md` del PDF que es solo el informe: Rusia, Salernitana, Lazio 2025-26, Católica 2010), con su línea; los .md validados no se
+  tocaron. De los 73 que siguen como `falta_transcripcion`, 72 son "FALTA EN EL PDF": el informe existe pero no está en ningún PDF que
+  tenemos (Lazio 2014-2024, Napoli 2018-2025, Torino 2018-2025, Hellas Verona 2020-2025, Cremonese, Roma 2013 y 2022-2025, Juventus 2022 y
+  2024, Bologna 2025, Hamburgo 2024-2025, Marítimo, Nacional, Académico de Viseu, Alverca, Casa Pia, Chaves, Rio Ave 2016-17, Vizela 2022,
+  Mafra, Felgueiras 2024, San Lorenzo 2012, OFI 2018, Fortaleza CEIF 2025, …); 1 es de transcripción (Spartak 2022: la del subagente se
+  descartó por no ser fiel).
+
+### Qué queda (para TODO)
+
+- 282: sourcing de los 72 informes del auditor que no están en nuestros PDF (`node tools/auditoria.mjs --pendientes`, nota "FALTA EN EL
+  PDF"); transcribir Spartak 2022 palabra por palabra.
+- 281: Chaves 2022-23 trae en Relatorio_Atividades-e-Contas-2022_2023.pdf (págs. 36-39) el informe del auditor de la asociación (RCVM,
+  incertidumbre material): sirve para la entidad asociación.
+- (viejo, ya resuelto en parte) 282: transcribir los informes que faltan (103 club-años, `node tools/auditoria.mjs --pendientes`: Lazio 2014-2026, Napoli 2018-2025,
+  Torino 2018-2025, Hellas Verona, Cremonese, Roma 2013 y 2022-2025, Juventus 2022 y 2024, Racing 2009-2011, 2014 y 2020, Marítimo,
+  Académico de Viseu, Rusia (Spartak, Zenit, Lokomotiv, Dynamo Moscú y otros, con el PDF del informe sin transcribir), entre otros) y
+  escribir su línea; los 23 balances sin .md.
+- (Resuelto en la sesión) Criterio de Guido para el dictamen, aplicado al registro y escrito en el encabezado de tools/auditoria.mjs:
+  énfasis de continuidad sin "incertidumbre material" = false (17 corregidos); alcanza el título del párrafo; manda el párrafo de opinión
+  sobre el título de la base (5 corregidos: San Lorenzo 2015-16, Remo 2019 y 2025, Aris 2019); abstención parcial = abstencion (San
+  Lorenzo 2013). Para CONVENCIONES-DATOS.
+- 282: nombres de firma tomados de OCR ruidoso, a verificar contra el PDF (Union SG 2025, Getafe 2024-2025, Elche 2025, Goiás 2008,
+  Godoy Cruz 2020); revisores que firman sin ser auditoría plena (Criciúma 2015-2019 "revisión especial", Osijek 2025, Como 2025 revisión
+  limitada, Kifisia 2022-2024 estados para licenciamiento, Club América 2025 ficha BMV de Ollamani).
+
+### 294 (en curso al cerrar)
+
+- `tools/entidades.mjs --con <borrador>`: verifica el registro más un borrador sin escribir (para subagentes).
+- Diez subagentes llenan el registro de entidades (Inter 2018-2024 con Suning; City Football Group; Marinakis: Forest, Olympiacos, Rio
+  Ave; Friedkin: Roma, Everton; 777 y Eagle; Portugal en tres tandas; Benfica; Sporting). Sus borradores quedan en el scratchpad de la
+  sesión y se sumaron al registro.
+- 294: juntado. El registro tiene 44 clubes con estructura (todos los portugueses con su SAD/SDUQ y el % del club asociación año por año,
+  Inter, Chelsea, Man City, Girona, Forest, Olympiacos, Roma, Everton, Genoa, Standard, Vasco, Botafogo, Crystal Palace) y 9 grupos
+  multiclub (BlueCo, City Football Group, Marinakis, Friedkin, 777 Partners, Eagle Football, Suning, QSI, Black Knight), 219 entidades y
+  326 relaciones, todas con cita verificada. Correcciones al juntar: sin país las entidades cuyo país el documento no dice (la tool ahora
+  lo acepta); Rio Ave: el 20 % del club asociación, que ningún documento imprime, pasó a relacionada sin %; Bournemouth con su clubId.
+  ASSET_V 1261.
+- Para TODO (294): cargas que no entraron porque tools/quien.mjs no saca el año del nombre del PDF (Boavista 2024 `RCSAD-23-24_1-3`,
+  Marítimo 2024 `…30jun24`, Portimonense 2022-2025 `Relatorio-Contas-21-22_assinado` y hermanos): falta un ajuste `anio` en
+  ajustes-manuales; dudas de los subagentes: Man City (cómo se conecta Manchester City Limited con CFG; Newton Investment como "ultimate
+  parent"), Bahía y Yokohama (clubes del sitio que el grupo CFG no lista), la relación Dan Friedkin → The Friedkin Group, la frase del PSG
+  en QSI (verificar contra Wikipedia), los clubes externos de 777 sin fecha de salida.
+- Para una sesión futura: Spartak 2022 (transcribir el informe palabra por palabra), los 72 informes de auditoría a conseguir, y los casos
+  de altas-2026-10-17 en el registro de entidades cuando esos clubes estén publicados.

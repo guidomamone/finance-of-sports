@@ -12,8 +12,15 @@
 //   auditor.tipo: firma | persona | organismo. Una persona va con su nombre como lo imprime el documento (decisión de Guido).
 //   dictamen: sin_salvedades | con_salvedades | adverso | abstencion | sin_informe (el documento no trae informe del auditor: sin auditor
 //   ni cita de dictamen). Vocabulario provisorio: se ajusta con los casos (Guido, 2026-10-18).
+//   falta_transcripcion: el documento muestra que el informe existe (el índice lo lista, los estados remiten a él, el fisco nombra al
+//   auditor) pero el .md no lo trae; no se publica (no es "sin informe") y cuenta como pendiente hasta transcribirlo. Lleva nota.
+//   auditor.nombre puede ser null cuando el informe no imprime quién firma; la nota lo dice.
 //   continuidad: true si el informe marca una incertidumbre material sobre la continuidad (empresa en funcionamiento, going concern),
 //   con su cita en citas.continuidad; es aparte del dictamen. Otros párrafos de énfasis no se registran.
+//   CRITERIO (Guido, 2026-10-18): (1) un énfasis que habla de continuidad, patrimonio negativo o apoyo del accionista sin decir que haya
+//   una incertidumbre material es continuidad false, con nota "ÉNFASIS CONTINUIDAD:"; (2) alcanza con que lo diga el título del párrafo;
+//   (3) si el título de la base dice "con salvedades" y el párrafo de opinión es limpio, manda el párrafo de opinión; (4) opinión limpia
+//   sobre una parte del balance y abstención sobre el resto es abstencion.
 //   La entidad que organiza una liga (AFA, LFP) va con "ligaId" (de data/leagues.js) en vez de "clubId" y con "entidad":{"nombre","legal"?};
 //   sus citas no pasan por quien.mjs (no es un club del sitio). Sale en data/auditoria/_ligas.js (window.LIGA_AUDITORIA[ligaId][anio]).
 //   nota (opcional): una aclaración interna para la próxima sesión; no se publica.
@@ -49,7 +56,7 @@ const args = process.argv.slice(2);
 const flag = (n) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : null; };
 const CHECK = args.includes('--check');
 
-const DICTAMENES = new Set(['sin_salvedades', 'con_salvedades', 'adverso', 'abstencion', 'sin_informe']);
+const DICTAMENES = new Set(['sin_salvedades', 'con_salvedades', 'adverso', 'abstencion', 'sin_informe', 'falta_transcripcion']);
 const TIPOS = new Set(['firma', 'persona', 'organismo']);
 // El nombre corto de cada red, para que "Deloitte & Touche SpA" y "Deloitte LLP" sean el mismo auditor en el sitio.
 const REDES = [[/deloitte/i, 'Deloitte'], [/pricewaterhouse|\bpwc\b/i, 'PwC'], [/\bkpmg\b/i, 'KPMG'], [/ernst\s*&\s*young|\bey\b/i, 'EY'],
@@ -108,10 +115,12 @@ lineas.forEach((l, i) => {
   if (!DICTAMENES.has(o.dictamen)) err(n, `dictamen desconocido "${o.dictamen}"`);
   if (typeof o.continuidad !== 'boolean') err(n, 'continuidad tiene que ser true o false');
   const c = o.citas || {};
-  if (o.dictamen === 'sin_informe') {
-    if (o.auditor) err(n, 'sin_informe no lleva auditor');
+  if (o.dictamen === 'sin_informe' || o.dictamen === 'falta_transcripcion') {
+    if (o.auditor) err(n, `${o.dictamen} no lleva auditor`);
+    if (o.dictamen === 'falta_transcripcion' && !o.nota) err(n, 'falta_transcripcion lleva una nota que diga qué falta');
   } else {
-    if (!o.auditor || !o.auditor.nombre || !TIPOS.has(o.auditor.tipo)) err(n, 'auditor sin nombre o con tipo desconocido');
+    if (!o.auditor || !TIPOS.has(o.auditor.tipo) || !('nombre' in o.auditor)) err(n, 'auditor sin tipo conocido o sin el campo nombre');
+    if (o.auditor && o.auditor.nombre === null && !o.nota) err(n, 'auditor con nombre null: la nota dice por qué no consta');
     chequearCita(n, c.auditor, o.clubId, o.anio, 'auditor', esLiga);
     chequearCita(n, c.dictamen, o.clubId, o.anio, 'dictamen', esLiga);
   }
@@ -147,9 +156,11 @@ function extracto(mds) {
 const pendientes = [];
 for (const [id, c] of Object.entries(generic)) for (const y of Object.keys(c.fiscalYearMeta || {}).map(Number))
   if (conBalance(id, y) && !registro.has(`${id}|${y}`)) pendientes.push({ id, y, mds: mdsDe[`${id}|${y}`] || [] });
+const faltan = [...registro.values()].filter(o => o.dictamen === 'falta_transcripcion');
 
 if (args.includes('--pendientes')) {
   for (const p of pendientes) console.log(`${p.id}:${p.y}\t${p.mds.length ? p.mds.join(' | ') : '(sin .md)'}`);
+  for (const o of faltan) console.log(`${o.clubId}:${o.anio}\tFALTA EN LA TRANSCRIPCIÓN: ${o.nota}`);
   console.error(`${pendientes.length} balances sin línea en ${REGISTRO}.`);
   process.exit(0);
 }
@@ -166,9 +177,9 @@ if (args.includes('--extractos')) {
 if (errores.length) { console.error(errores.join('\n') + `\n\n${errores.length} error(es): no se escribe nada.`); process.exit(1); }
 
 // --- generar ------------------------------------------------------------------------------------------------------------------------------
-const corto = (a) => { if (!a || a.tipo !== 'firma') return a; const r = REDES.find(([re]) => re.test(a.nombre)); return r ? { ...a, nombre: r[1], legal: a.nombre } : a; };
+const corto = (a) => { if (!a || a.tipo !== 'firma' || !a.nombre) return a; const r = REDES.find(([re]) => re.test(a.nombre)); return r ? { ...a, nombre: r[1], legal: a.nombre } : a; };
 const porPais = {};
-for (const o of [...registro.values()].sort((a, b) => a.clubId.localeCompare(b.clubId) || a.anio - b.anio)) {
+for (const o of [...registro.values()].filter(o => o.dictamen !== 'falta_transcripcion').sort((a, b) => a.clubId.localeCompare(b.clubId) || a.anio - b.anio)) {
   const pais = clubs[o.clubId].country.toLowerCase();
   const c = o.citas || {};
   const fuente = c.dictamen ? { md: c.dictamen.md, linea: c.dictamen.linea } : null;
@@ -185,7 +196,7 @@ for (const o of registroLigas.values()) { const c = o.citas || {};
 archivos['_ligas.js'] = `${CAB}window.LIGA_AUDITORIA = ${JSON.stringify(porLiga, null, 1)};\n`;
 archivos['_paises.js'] = `${CAB}window.AUDITORIA_PAISES = ${JSON.stringify(Object.keys(porPais).sort())};\n`;
 
-if (pendientes.length) console.error(`Aviso: ${pendientes.length} balances cargados sin línea en ${REGISTRO} (node tools/auditoria.mjs --pendientes).`);
+if (pendientes.length || faltan.length) console.error(`Aviso: ${pendientes.length} balances sin línea y ${faltan.length} con el informe sin transcribir (node tools/auditoria.mjs --pendientes).`);
 const actuales = existsSync(OUT) ? readdirSync(OUT).filter(f => f.endsWith('.js')) : [];
 if (CHECK) {
   const viejos = [...Object.keys(archivos).filter(f => !existsSync(join(OUT, f)) || readFileSync(join(OUT, f), 'utf8') !== archivos[f]), ...actuales.filter(f => !archivos[f])];
