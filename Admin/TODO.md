@@ -24,7 +24,7 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 303, 304, 305, 254 + 243 · finanzas 281, 282, 294 · pipeline 289, 290, 288, 232, 279, 286, 287, 298, 301, 302 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
+Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 305, 254 + 243 · finanzas 281, 282, 294 · pipeline 290, 232, 279, 286, 287, 298 (c a p), 301, 302, 306, 307 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
 datos-sourcing 273 (completar el dato), 252 · ligas 295 · Reino Unido (261) en su propia sesión · proyecto 300 · la principal: 268, 291 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
@@ -32,7 +32,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
 * 268: dashboard de usuarios y visitas: confirmar el cron (19/10) y que se actualice solo
-* 289, 290 y 291: caja y deuda, lo que queda (escala del año, Genoa 2022, duda del factoring)
+* 290 y 291: caja y deuda, lo que queda (Genoa 2022 y la duda del factoring)
 * 292: transcripciones por subagentes de los 6 países: validar, Mistral y cargar
 
 **B. Bases baratas que después cuestan caro cambiar**
@@ -40,11 +40,11 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos)
 
 **C. Abaratar antes del onboarding grande**
-* 288: Opus → Sonnet, tarea por tarea y medido (la Batch API ya está)
 * 232: mejoras de script que dejó Grecia
 * 279: la tool que duplicaba claves en club-leagues/ru.js
 * 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar
-* 298: mejoras de script de Estonia y Bélgica (a y b1 hechas; los años belgas de los lotes 91-92 esperan b y o)
+* 298: mejoras de script de Estonia y Bélgica (a, b y o hechas; siguen c a p)
+* 306, 307 y 308: Milan 2018; el gasto que imprime localizar; los bonos convertibles en la skill
 * 301: gasto.mjs --json se corta en un pipe
 * 302: el deflactor de EE.UU. desde la BEA, no FRED
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
@@ -60,7 +60,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 273: estadio y sponsor, lo que queda (completar a mano, nombrar la compuerta)
 
 **E. Pantallas**
-* 303, 304 y 305: Mercado de Pases con datos inventados; "sin fines de lucro" en el pie; la cita de Wikipedia en Ligas
+* 305: la cita de Wikipedia en la lista de equipos de cada liga
 * 282: quién audita, lo que queda (88 informes a conseguir; la compuerta del pipeline)
 * 281: ingresos de las otras entidades (falta União de Leiria, sin estado de resultados)
 * 294: registro de entidades, lo que queda (los clubes del borrador cuando estén publicados)
@@ -264,19 +264,9 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 287. QUE NO SE REPITA LA LIMPIEZA (cierre de onboarding; escalones, uno por vez). `audit.js` `carpeta-doble` (dos carpetas de un país
    con PDFs de la misma huella) y `club-sourcing` (mirar la entidad de la portada al guardar y no abrir una segunda carpeta del club).
    Un `.md` sin PDF no es error (Ajax, PSV, Feyenoord y AZ 2023-25 son la fuente publicada de lo cargado).
-288. OPUS → SONNET, TAREA POR TAREA Y MEDIDO (reemplaza a los viejos 233 y 230; cierre de pipeline, 2026-10-18). La Batch API ya está
-   hecha (`tools/lote-batch.mjs`, mismo lote y modelo a mitad de precio, opcional y más lento). Sigue pasar a Sonnet localizar, extraer,
-   caja-deuda, categorizar y perimetro-a2, una por vez, con medición antes y después. Jev no sirve para localizar ni perimetro-a2
-   (HALLAZGOS): queda para opciones cerradas y cortas. CÓMO MEDIR un cambio de extraer: rehacerlo cuesta ~US$ 6 por corrida sobre `prueba-
-   mediana.txt` (34 documentos) y la IA no responde igual dos veces (6 de 34 documentos y el 3,5% de las etiquetas cambian con el MISMO
-   código), así que hay que correr también el "antes" y comparar contra ese piso. El comparador usado (propuesta de `cargar.mjs --lista
-   <x> --salida <x.jsonl>`, línea por línea: etiqueta, categoría, importe y totales) vivía en el scratch de la sesión: subirlo a `tools/`
-   como `comparar-cargas.mjs` si se vuelve a medir. Restaurar después `Generados/` de los clubes de prueba y la cola con `git checkout`.
-289. LA ESCALA DEL AÑO EN CAJA-DEUDA (cierre de pipeline). RB Leipzig 2024: el comparativo al 30.06.2024 del jahresabschluss-2024-25 está
-   en TEUR (caja 783, préstamos de Red Bull 153.717, .md L531), pero `caja-deuda.mjs` detecta para ese año la escala EUR, así que un
-   ajuste "tal cual impreso" daría 0,15 M. Mismo problema que Leipzig 2023 y HSV 2024: la escala del año, no el ajuste.
-290. GENOA 2022 SIGUE MAL EN caja-deuda --medir (15,7 M contra 95,7 M publicados): le faltan las filas "4 bis) … oltre l'esercizio
-   successivo" y "altri finanziatori".
+290. GENOA 2022 EN caja-deuda --medir (cierre de pipeline). Con la regla de los "bis", la propuesta es 65,24 M contra 95,7 M publicados: faltan
+   las dos filas de altri finanziatori (factoring, 30,45 M), que dependen de la decisión del 291. La compuerta del documento siguiente no
+   confirma (en 2023 "3 bis) soci" tiene vacía la columna del año).
 291. DUDA PARA GUIDO: ¿EL FACTORING ES DEUDA? En Monza 2024 se decidió que no (ajuste del 2026-10-17: 0); en Genoa 2022 el sitio publica
    95,7 M que lo incluyen (30,4 M con Banca Sistema, .md L2637). Decidir un criterio; no se reabrió nada.
 292. TRANSCRIPCIONES POR SUBAGENTES: CARGAR (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia). Validación (326 listas) y Mistral
@@ -287,7 +277,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    `Admin/registros/cola-borradores/altas-2026-10-17.md` cuando estén publicados (Viking, Vålerenga, Luzern, St. Gallen, Molde, Go Ahead
    Eagles, Basel, Pardubice, Aalesund, Fredrikstad, Sarpsborg 08; el borrador tiene la entidad de cada uno con cita); Bahia: una cita del
    registro societario de Brasil (QSA del CNPJ) para el eslabón CFG > City Football Group Brazil.
-298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; cada letra es un escalón a diseñar con el ok de Guido, uno por
+298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, la b y la o, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
    vez; el detalle con casos, en `Admin/Archive/sesion-onboarding-2026-10-18-2.md`). a) CIERRE FALSO en verificar.mjs: compara en valor
    absoluto y da "cierra" con una fila del lado o signo equivocado (Lierse Kempenzonen 2022 habría cargado un gasto como ingreso): lo más
    grave. b) Esquema NBB belga en verificar.mjs y cargar.mjs: costos financieros 65/66B positivos, renglones "(+)/(-)" por valor absoluto,
@@ -309,12 +299,15 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    64 KB: el proceso sale antes de vaciar stdout. Mejora de script chica.
 302. DEFLACTOR DE EE.UU. DESDE LA BEA (cierre de proyecto, 2026-10-18). FRED prohíbe el scraping y guardar copias: bajarlo directo de la BEA
    (`tools/fetch-fx-reference.mjs --deflactores`).
-303. MERCADO DE PASES CON DATOS INVENTADOS (cierre de proyecto). La pestaña muestra "Jugador A" y montos de relleno en Boca, River y Racing, con
-   la nota "Fuente: Transfermarkt + reportes de club (placeholder)" (`index.html`). Esconderla o vaciarla hasta tener datos reales.
-304. EL PIE DEL SITIO DICE "SIN FINES DE LUCRO" (cierre de proyecto). Guido lo sacó de términos y privacidad; falta en el pie de `index.html` y
-   en `data/lang/en.js` ("non-profit").
 305. LA LISTA DE LIGAS SIN LA CITA DE WIKIPEDIA (cierre de proyecto). Sponsor y contexto la tienen; la lista de equipos de cada liga sale de
    Wikipedia y no lo dice: sumar la cita, con la licencia CC BY-SA.
+306. MILAN 2018 EN caja-deuda --medir (cierre de pipeline). 1,21 M contra 164,27 M publicados: las filas de deuda son "a) entro / b) oltre 12
+   mesi" debajo de un título sin importe ("1 obbligazioni", "5 debiti verso altri finanziatori"; AC-Milan-bilanci-relazioni-2017-18.md
+   L895-904) y el diccionario solo ve "4 debiti verso banche". Sin daño hoy (año cargado).
+307. localizar.mjs --lista --ejecutar IMPRIME "Gastado: US$ 0.00" (cierre de pipeline). El registro anota el costo real; el total del final no
+   suma. `tools/gasto.mjs` da el número bueno.
+308. NOMBRAR EN LA SKILL club-data-mapping EL CRITERIO DE LOS BONOS CONVERTIBLES (con ok de Guido: es una skill). Ya está en
+   CONVENCIONES-DATOS; la skill tiene que decirlo donde habla de deuda.
 270. ESTIMAR UN CLUB QUE NUNCA CARGAMOS: VOLVER A MEDIR (pedido de Guido, 2026-10-17). Está PRENDIDO desde el 2026-10-18 (decisión de
    Guido: en Ligas todo club sin balance figura como estimado), con 50% de error (regresión sin historia: mediana de la liga-año, división,
    posición en la tabla). Volver a medir (`node tools/estimar.mjs --medir`) cuando haya más clubes cargados. Variable sin medir: partidos

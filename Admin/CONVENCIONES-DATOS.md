@@ -377,3 +377,9 @@ Criterio de Guido (2026-10-18), también en el encabezado de `tools/auditoria.mj
 - Una abstención parcial es `abstencion`.
 - Un club-año sin línea es "no sabemos", no "sin informe"; un informe que existe pero no está transcripto (`falta_transcripcion`) no se
   publica y cuenta como pendiente. Un auditor persona va con su nombre como lo imprime el documento.
+
+## REGLA: bonos convertibles en la deuda
+
+Decisión de Guido (2026-10-18, HSV). Un bono convertible común (Wandelschuldverschreibung dentro de las deudas) es deuda financiera y entra
+en `grossDebt` (HSV 2024: 57.848 TEUR con la WSV de 30.000). Un convertible con conversión OBLIGATORIA en acciones, que el documento muestra
+como partida especial después del patrimonio (Sonderposten nach dem Eigenkapital), no es deuda (HSV 2025: 22,03 M, sin la WSV).

@@ -15,6 +15,19 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 738 — Merges de pipeline y pantallas; caja y deuda de Leipzig y HSV (2026-10-18)
+
+Pipeline a mano (los `.jsonl` con las líneas de las dos ramas), pantallas con su `index.html`; ASSET_V 1295, P0 0 / P1 0.
+
+- To-do 298 a, b y o: `verificar.mjs` exige el signo de un resultado impreso negativo; esquema NBB belga (costos financieros con el signo de
+  su rótulo; escalón "de los cuales" para Waarvan y 76A); en `lote.mjs` la versión "-correction" reemplaza al original. Medido: prueba-
+  completa idéntica y los 376 documentos sin cambios salvo los buscados (Lierse SK y Patro Eisden ahora cierran).
+- To-do 288 cerrado (solo caja-deuda pasó a Sonnet) y 289 (la escala del año): caja y deuda escritas de RB Leipzig 2023-2024 (deuda 111,7 y
+  153,7 M) y HSV 2024 (57,8 M con el bono convertible). Regla nueva de bonos convertibles en CONVENCIONES-DATOS.
+- To-dos 303 y 304: fuera la pestaña Mercado de Pases, que mostraba datos inventados, y "sin fines de lucro" del pie.
+- TODO: fuera 288, 289, 303 y 304; el 290 con lo que falta; nuevos 306 (Milan 2018), 307 (el gasto que imprime localizar) y 308 (los
+  convertibles en la skill).
+
 ## Versión 737 — Merge de proyecto: hooks y licencia (2026-10-18)
 
 `node tools/worktree.mjs mergear proyecto`, sin conflictos, P0 0 / P1 0 (ok de Guido: los hooks cambian la configuración de todas las sesiones).
