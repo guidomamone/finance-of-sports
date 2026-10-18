@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf",
  "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.md",
- "generado": "2026-10-18T13:25:35.193Z",
+ "generado": "2026-10-18T13:46:53.152Z",
  "estado": "ok",
  "clubId": null,
  "year": 2025,
@@ -34,6 +34,54 @@
    "lado": "financiero",
    "reemplaza": "Andere financiële kosten",
    "motivo": "costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "4.196.505",
+   "linea": 468,
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "reemplaza": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "motivo": "la nota separa el 630 (4.957.136): intangibles = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "motivo": "la nota separa el 630 (4.957.136): intangibles = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "760.631",
+   "linea": 468,
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "la nota separa el 630 (4.957.136): intangibles = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "categoria",
+   "valor": "depreciation",
+   "linea": null,
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "motivo": "la nota separa el 630 (4.957.136): intangibles = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-18"
@@ -81,6 +129,8 @@
   "la nota de \"Niet-recurrente bedrijfskosten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "ajuste manual: fila \"Kosten van schulden\" (financiero) -1.000.850, en lugar de \"Kosten van schulden\" (2026-10-18, costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18))",
   "ajuste manual: fila \"Andere financiële kosten\" (financiero) -1.985, en lugar de \"Andere financiële kosten\" (2026-10-18, costo financiero (Financiële kosten 65/66B): resta (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "ajuste manual: fila \"Afschrijvingen immateriële vaste activa (spelers)\" (gasto) 4.196.505, en lugar de \"Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa\" (2026-10-18, la nota separa el 630 (4.957.136): intangibles = spelers (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "ajuste manual: fila \"Afschrijvingen materiële vaste activa\" (gasto) 760.631 (2026-10-18, la nota separa el 630 (4.957.136): intangibles = spelers (subagente Sonnet, revisado por Claude 2026-10-18))",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b79 es una versión condensada del mismo estado de resultados 30/06/2025, solo con la columna del ejercicio.",
   "duda de localizar ya contestada para el club (fila-ilegible, \"Omzet\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
@@ -175,14 +225,6 @@
    "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\""
   },
   {
-   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "lado": "gasto",
-   "M": 4.957136,
-   "pagina": 9,
-   "linea": 468,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)",
    "lado": "gasto",
    "M": -0.004378,
@@ -213,6 +255,22 @@
    "pagina": 9,
    "linea": 473,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "M": 4.196505,
+   "pagina": 9,
+   "linea": 468,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.760631,
+   "pagina": 9,
+   "linea": 468,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {

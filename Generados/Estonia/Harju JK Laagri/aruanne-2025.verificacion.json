@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2025.pdf",
  "md": "Clubes/Estonia/Harju JK Laagri/aruanne-2025.md",
- "generado": "2026-10-18T13:25:26.200Z",
+ "generado": "2026-10-18T13:46:53.622Z",
  "estado": "ok",
  "clubId": null,
  "year": 2025,
@@ -18,6 +18,26 @@
    "valor": "official_balance_sheet",
    "linea": null,
    "motivo": "majandusaasta aruanne 01.01-31.12.2025 con tulemiaruanne (L94-119) (revisión del alta, subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2025.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "Lisa 6 L311-314 sin fila de TV (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2025.pdf",
+   "campo": "cero-real",
+   "valor": "Estadio",
+   "linea": null,
+   "motivo": "Lisa 6 L311-314 sin alquiler de estadio (subagente Sonnet, revisado por Claude 2026-10-18)",
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-18"

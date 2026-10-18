@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Estonia/Tallinna Kalev/aruanne-2025.pdf",
  "md": "Clubes/Estonia/Tallinna Kalev/aruanne-2025.md",
- "generado": "2026-10-18T13:25:26.307Z",
+ "generado": "2026-10-18T13:46:53.643Z",
  "estado": "ok",
  "clubId": null,
  "year": 2025,
@@ -18,6 +18,16 @@
    "valor": "official_balance_sheet",
    "linea": null,
    "motivo": "majandusaasta aruanne 01.01-31.12.2025 con tulemiaruanne (L135) (revisión del alta, subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Tallinna Kalev/aruanne-2025.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "Lisa 11 L507-516 sin fila de TV (subagente Sonnet, revisado por Claude 2026-10-18)",
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-18"

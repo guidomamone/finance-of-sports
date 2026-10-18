@@ -19,6 +19,13 @@ Se completa mientras se trabaja. No se tocan TODO, CHANGELOG ni ESTADO: la princ
   Levadia, Kuressaare, Tallinna Kalev, Flora y Tartu (regla 2: las controladas son escuelas de fútbol y el estadio). RAAL La Louvière
   2024-25: el consolidado (ajuste `perimetro`). `tools/alta-club.mjs`: Estonia en la tabla PAISES.
 
+- Categorías de los lotes 89 y 90 (117 casos de la cola, 4 subagentes Sonnet, un club por vez): 110 respuestas directas; el 630 belga
+  partido con ajustes `fila` + `categoria` según la nota de activos fijos (pases a player_amortisation, bienes de uso a depreciation,
+  goodwill a other_amortisation) en Beerschot, Lierse SK, Lommel SK, OH Leuven y Patro Eisden, como los belgas ya cargados; el 66A de
+  Lommel partido (player_impairment 573.455 + exceptional_items 175.700); el pago de solidaridad UEFA de los estonios, competition_bonus
+  en todos; ceros reales de TV (y estadio en Laagri) con cita; Lierse SK cierre 30-06-2025 (el 30-10-2025 es la asamblea). Colores de
+  las 17 altas en `altas-revision.jsonl` (RAAL cambia de null a verde). Pregunta al club: Paide (becas y apoyos de la Lisa 10).
+
 ## Qué queda (para TODO)
 - 292: validación y Mistral HECHOS (ver arriba). Falta: lotes de carga por país; OH Leuven 2022 y Llaneros 2022 (siguen sin tablas, ver
   mejoras de script); los 319 `.md` sin tablas. (Texto viejo del ensayo:
@@ -35,6 +42,11 @@ Se completa mientras se trabaja. No se tocan TODO, CHANGELOG ni ESTADO: la princ
 - Ninguno.
 
 ## Mejoras de script vistas (para fos-pipeline, sin aplicar)
+- La cola de categorías admite UNA categoría por fila: el 630 belga (amortizaciones) que la nota de activos fijos abre en pases y bienes
+  de uso hubo que partirlo a mano con ajustes `fila` + `categoria` en 5 de 8 documentos. Escalón posible: que la cola acepte un
+  "partir según la nota" con la suma exacta como compuerta.
+- Ligas de Estonia: no hay ids en `data/leagues.js` (propuesto `ee-meistriliiga` tier 1, `ee-esiliiga` tier 2); las 9 altas quedan
+  con liga null hasta sumarlos.
 - `verificar.mjs` con las jaarrekening belgas (NBB): los costos financieros (Financiële kosten 65/66B y sus renglones) entran en
   positivo y suman; los renglones con "(+)/(-)" impresos negativos (609, 631/4, 635/8) entran por su valor absoluto; el "Waarvan:
   niet-recurrente bedrijfsopbrengsten" (76A) del esquema abreviado se suma aparte cuando ya está en la Brutomarge. Casos: los 9 del

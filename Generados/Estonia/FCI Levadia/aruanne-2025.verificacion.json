@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2025.pdf",
  "md": "Clubes/Estonia/FCI Levadia/aruanne-2025.md",
- "generado": "2026-10-18T13:33:26.968Z",
- "estado": "cola",
+ "generado": "2026-10-18T13:46:53.611Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -36,9 +36,7 @@
    "fecha": "2026-10-18"
   }
  ],
- "cola": [
-  "5ea3e72"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -75,8 +73,7 @@
   "ajuste manual: fila \"Finantskulud\" (financiero) -279.290, en lugar de \"Finantskulud\" (2026-10-18, costo financiero del consolidado (L172): resta; 2.675.678 - 3.624.036 + 8.037 - 279.290 = -1.219.611 impreso (L173) (Claude 2026-10-18))",
   "duda de localizar ya contestada para el club (perimetro, \"-\"): corregir consolidado, en aruanne-2025.pdf",
   "duda de localizar que no afecta la carga: b15 solo indica que las donaciones son en dinero, sin nuevo desglose.",
-  "duda de extraer que no afecta la carga: LISA 10 repite L157 y L161 y agrupa los sotsiaalmaks (462 994 = 116 593 + 346 401); su total 1 833 082 no corresponde a ningún renglón del estado porque excluye sportlasetoetus y stipendiumid.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: LISA 10 repite L157 y L161 y agrupa los sotsiaalmaks (462 994 = 116 593 + 346 401); su total 1 833 082 no corresponde a ningún renglón del estado porque excluye sportlasetoetus y stipendiumid."
  ],
  "reintentar": null,
  "reintentado": false,
