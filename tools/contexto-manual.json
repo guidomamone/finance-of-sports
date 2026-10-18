@@ -1,0 +1,3 @@
+{
+  "_comentario": "To-do 273. Estadio, capacidad, sponsor de camiseta (frente) y marca técnica cargados a mano, por club y ejercicio, para lo que tools/estadio-sponsor.mjs no lee de Wikipedia o lee mal. Gana sobre Wikipedia campo por campo. Sin \"fuente\" (la memoria del club, su web, una nota de prensa) no se usa. Un club sin sponsor ese año: \"sponsor\": \"sin sponsor\" con su fuente. Forma: { \"<clubId>\": { \"<año>\": { \"estadio\": \"...\", \"capacidad\": 0, \"sponsor\": \"...\", \"marca\": \"...\", \"fuente\": \"<url>\" } } }"
+}

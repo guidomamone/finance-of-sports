@@ -59,7 +59,7 @@
 //     "## Fuentes" de Admin/carga-clubes/<club>.md; audit.js checkFuentesPublicas: las salvedades públicas las deriva sourceCaveats() de los campos). Y una línea en
 //     Admin/sourcing/<País>/<Club>.md si ese archivo existe.
 //
-// --escribir (solo si no quedó NINGÚN motivo para frenar): inserta el año en las tres estructuras del data/<país>/<club>-data.js y en sources{},
+// --escribir (solo si no quedó NINGÚN motivo para frenar, y si el ejercicio tiene estadio y sponsor: compuertaContexto(), to-do 273): inserta el año en las tres estructuras del data/<país>/<club>-data.js y en sources{},
 // la fila de liga en data/club-leagues/<iso2>.js, la cotización de mercado nueva en FX_CLOSE si hace falta, la línea de fuentes/, sube
 // ASSET_V (la constante Y cada `?v=` literal de index.html, salvo que ya esté subido respecto de HEAD), corre los 4 generadores y
 // `node tools/audit.js --quiet`. Si la auditoría da algún P0/P1, o cualquier paso falla, RESTAURA cada archivo tocado y borra lo creado
@@ -1110,6 +1110,23 @@ export function publicarCambios(snap, extra, escritos) {
 }
 export { snapshot, revertir, runNode };
 
+// COMPUERTA DE ESTADIO Y SPONSOR (to-do 273, pedido de Guido): un ejercicio nuevo no se escribe sin el estadio y el sponsor de camiseta de
+// ese club y año. tools/estadio-sponsor.mjs los lee de la página de temporada de Wikipedia (gratis), los guarda en data/contexto/<iso>.js
+// y sale con 1 si falta alguno; lo que falta se completa en tools/contexto-manual.json, con fuente. Función aparte, llamada en un solo
+// punto antes de escribir (la compuerta del auditor, to-do 282, va al lado).
+function compuertaContexto(P) {
+  const E = P.ejercicio; const meta = E?.fiscalYearMeta || {};
+  const cierre = meta.cierre || String(meta.fxRef || '').split('@')[1] || null;
+  const args = ['--escribir', '--club', E.clubId, '--anio', String(E.year)];
+  if (P.liga?.valor) args.push('--liga', P.liga.valor);
+  if (cierre && /^\d{4}-\d{2}-\d{2}$/.test(cierre)) args.push('--cierre', cierre.slice(5));
+  try { execFileSync('node', [resolve(ROOT, 'tools', 'estadio-sponsor.mjs'), ...args], { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }); return true; }
+  catch (e) {
+    console.error(`\nNo se escribe nada: falta el estadio o el sponsor de ${E.clubId} ${E.year} (compuerta del to-do 273).\n${String(e.stdout || '').split('\n').filter((l) => /falta|contexto-manual|sin liga|sin lista/.test(l)).join('\n') || e.message}`);
+    return false;
+  }
+}
+
 export function escribir(P) {
   const E = P.ejercicio; const id = E.clubId; const y = E.year;
   const dataRel = rutaData(id); const dataPath = resolve(ROOT, dataRel);
@@ -1355,6 +1372,7 @@ async function main() {
   if (ESCRIBIR) {
     const P = salidas[0];
     if (P.frena.length) { console.error(`\nNo se escribe nada: ${P.frena.length} motivo(s) para frenar.`); process.exit(1); }
+    if (!compuertaContexto(P)) process.exit(1);
     const r = escribir(P);
     console.error(r.ok ? `\nEscrito (${r.escritos.join(', ')}). Auditoría: ${r.audit}. No se commiteó nada.` : `\nREVERTIDO: ${r.motivo}\n${r.audit || ''}`);
     if (r.ok) console.error(lineaGitAdd(antesDeEscribir, cambiadosEnGit()));

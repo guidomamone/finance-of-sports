@@ -28,11 +28,25 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
   ejercicios con lista: estadio 83%, sponsor 89%, marca 91% (38 ejercicios sin liga en club-leagues y 3 sin lista quedan afuera).
   Huecos: estadio de Rusia (la página lo trae en un mapa, no en tabla), Brasil C/D y Paulistas, Liga 3 de Portugal, ascensos de
   Argentina y Colombia sin tabla de kits.
+- **To-do 273: guardado y compuerta.** `estadio-sponsor.mjs --escribir` escribe `data/contexto/<iso>.js` (18 países):
+  `window.CLUB_CONTEXT[clubId][año] = { estadio, capacidad, sponsor, marca, temporada, fuente }`, `fuente` = permalink con `oldid`. Lo ya
+  guardado no se vuelve a bajar (`--refrescar` sí). `tools/contexto-manual.json` (nuevo, vacío) gana campo por campo, con fuente
+  obligatoria. Una tabla de kits "solo la actual" vale solo en la última temporada de la liga en la caché. Sobre 932 ejercicios: estadio
+  79%, sponsor 85%, marca 87%; 238 sin estadio o sin sponsor (no se frenan: son ejercicios ya cargados).
+  **Compuerta en `tools/cargar.mjs`** (`compuertaContexto()`, un solo punto antes de `escribir()`, acordado con fos-pipeline para que la
+  del auditor del to-do 282 vaya al lado): corre `estadio-sponsor.mjs --escribir --club <id> --anio <año> --liga <liga> --cierre <MM-DD>`
+  y no escribe si falta estadio o sponsor. `alta-club.mjs` no la necesita: da de alta el club sin ejercicios, y el primero pasa por
+  `cargar.mjs`. ASSET_V 1255 (los archivos de `data/contexto/` todavía no los carga el sitio: los va a mostrar fos-pantallas en Finanzas).
 
 ## Qué queda (TODO)
 
 - Borrar los to-dos 276 y 277 (resueltos; el 277 con la premisa vencida, ver arriba).
+- 273 sigue abierto: completar a mano (`tools/contexto-manual.json`) los 238 ejercicios cargados sin estadio o sin sponsor
+  (`node tools/estadio-sponsor.mjs --ensayo` los lista); mostrarlo en Finanzas (fos-pantallas); la página de cada sponsor (pedido de Guido:
+  su histórico y qué equipos sponsorea hoy).
+- La skill `club-or-year-onboarding` y `Admin/PIPELINE.md` tienen que nombrar la compuerta nueva de `cargar.mjs` (la skill, con ok de Guido).
 
 ## Qué deja de ser cierto en ESTADO
 
-- Nada: ESTADO no nombra estas listas.
+- Nada de las listas: ESTADO no las nombra.
+- La lista de compuertas de `cargar.mjs` en ESTADO ("Pipeline") suma una: estadio y sponsor del ejercicio (to-do 273).

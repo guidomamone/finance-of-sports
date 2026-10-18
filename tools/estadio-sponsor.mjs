@@ -14,9 +14,14 @@
 // USO:
 //   node tools/estadio-sponsor.mjs --ensayo            mide la cobertura (no escribe nada)
 //   node tools/estadio-sponsor.mjs --ensayo --detalle  además, una línea por ejercicio
+//   node tools/estadio-sponsor.mjs --escribir          escribe data/contexto/<iso>.js; lo ya guardado no se vuelve a bajar (--refrescar sí)
+//   node tools/estadio-sponsor.mjs --escribir --club <id> [--anio <año>]
+//                                                      COMPUERTA del pipeline: guarda ese club y sale con 1 si a un ejercicio le falta
+//                                                      estadio o sponsor (se completa en tools/contexto-manual.json, con fuente);
+//                                                      para un año que todavía no está cargado: --liga <ligaId> --cierre <MM-DD>
 //   ... --liga <ligaId>                                  solo esa liga (para probar)
 // ============================================================================
-import { readFileSync, readdirSync } from 'node:fs';
+import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { createRequire } from 'node:module';
 import vm from 'node:vm';
@@ -97,14 +102,16 @@ function tablas(wikitext) {
   });
 }
 function cleanTexto(c) {
-  let s = sinRefs(String(c || ''));
+  // un <br> separa dos nombres ("Palácio<br>do Gelo"): espacio, no nada; un enlace externo "[https://... Efapel]" vale su texto
+  let s = sinRefs(String(c || '')).replace(/<br\s*\/?>/gi, ' ').replace(/\[https?:\/\/[^\s\]]+\s+([^\]]+)\]/g, '$1').replace(/^\s*\|/, '');
   s = s.replace(/\{\{\s*sort\s*\|[^|}]*\|([^}]*)\}\}/gi, '$1');
   // {{nowrap|Almería}} envuelve el nombre entero (kits de LaLiga): se desenvuelve; {{flagicon|...}} y {{ref|...}} se van abajo
   for (let k = 0; k < 3; k++) s = s.replace(/\{\{\s*(?:nowrap|nobreak|center|small|nobr|nowrap begin)\s*\|((?:[^{}]|\{\{[^{}]*\}\}|\[\[[^\]]*\]\])*)\}\}/gi, '$1');
   s = s.replace(/\{\{\s*(?:flagicon|flag icon|flagdeco|ref|efn|refn|#invoke:flag)[^{}]*\}\}/gi, '');
   const m = s.match(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/);
-  if (m && !/^(File|Image|Archivo):/i.test(m[1])) return (m[2] || m[1]).replace(/&nbsp;/g, ' ').trim();
-  return s.replace(/\[\[(?:File|Image|Archivo):[^\]]*\]\]/gi, '').replace(/\{\{[^{}]*\}\}/g, '').replace(/'''?/g, '').replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').trim();
+  if (m && !/^(File|Image|Archivo):/i.test(m[1])) return (m[2] || m[1]).replace(/&nbsp;/g, ' ').replace(/^[\s/,;|–-]+|[\s/,;|–-]+$/g, '').trim();
+  return s.replace(/\[\[(?:File|Image|Archivo):[^\]]*\]\]/gi, '').replace(/\{\{[^{}]*\}\}/g, '').replace(/'''?/g, '').replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ')
+    .replace(/\s+/g, ' ').replace(/^[\s/,;|–-]+|[\s/,;|–-]+$/g, '').trim(); // "Fastweb/" (un segundo sponsor que no se leyó)
 }
 function capacidad(c) {
   const s = sinRefs(String(c || '')).replace(/\{\{\s*(?:nts|formatnum|nowrap)\s*:?\|?\s*([^}|]*)[^}]*\}\}/gi, '$1');
@@ -134,46 +141,131 @@ function temporadaDe(club, y, ci, cache, liga) {
   return ls[y] ? y : null;
 }
 
+// lo que la página dice de UN club: { estadio, capacidad, sponsor, marca, soloActual } (null en lo que no encuentra)
+function delClub(p, nombres) {
+  // gana el nombre exacto; uno parcial vale solo si es el único ("Milan" pega con "Inter Milan", "Club Brugge" con "Cercle Brugge")
+  const fila = (x) => {
+    const nota = (f) => { const t = cleanTexto(f[x.iClub]); return nombres.some((nm) => corto(nm) === corto(t)) ? 2 : nombres.some((nm) => pega(nm, t)) ? 1 : 0; };
+    const ex = x.t.grilla.filter((f) => nota(f) === 2); if (ex.length) return ex[0];
+    const pa = x.t.grilla.filter((f) => nota(f) === 1); return pa.length === 1 ? pa[0] : null;
+  };
+  const r = { estadio: null, capacidad: null, sponsor: null, marca: null, soloActual: false };
+  for (const x of p.estadios) { const f = fila(x); if (f) { r.estadio = cleanTexto(f[x.iEst]) || null; r.capacidad = capacidad(f[x.iCap]); break; } }
+  for (const x of p.kits) { const f = fila(x); if (f) { if (x.iSp >= 0) r.sponsor = cleanTexto(f[x.iSp]) || null; if (x.iKit >= 0) r.marca = cleanTexto(f[x.iKit]) || null; r.soloActual = x.t.soloActual; break; } }
+  return r;
+}
+
+const OUT = resolve(ROOT, 'data', 'contexto');
+const MANUAL = resolve(ROOT, 'tools', 'contexto-manual.json');
+// lo ya guardado, por país: { iso: { clubId: { año: {...} } } }
+function guardado() {
+  const out = {};
+  if (existsSync(OUT)) for (const f of readdirSync(OUT).filter((f) => /^[a-z]{2}\.js$/.test(f))) {
+    const g = { window: {} }; vm.runInNewContext(readFileSync(resolve(OUT, f), 'utf8'), g); out[f.slice(0, 2)] = g.window.CLUB_CONTEXT || {};
+  }
+  return out;
+}
+function escribirPais(iso, clubes) {
+  mkdirSync(OUT, { recursive: true });
+  const orden = Object.keys(clubes).sort().map((id) => `  '${id}': {\n${Object.keys(clubes[id]).sort().map((y) => `    ${y}: ${JSON.stringify(clubes[id][y])},`).join('\n')}\n  },`).join('\n');
+  writeFileSync(resolve(OUT, `${iso}.js`), `// GENERADO por tools/estadio-sponsor.mjs --escribir: estadio, capacidad, sponsor de camiseta (frente) y marca técnica de cada
+// club y ejercicio, con su fuente (la revisión exacta de la página de temporada de Wikipedia, o la de tools/contexto-manual.json, que gana).
+// No editar a mano: lo que falta o está mal va a tools/contexto-manual.json.
+window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
+Object.assign(window.CLUB_CONTEXT, {
+${orden}
+});
+`, 'utf8');
+}
+
 async function main() {
   const { CI, CL, CLUBS, cache, alias } = cargar();
-  const detalle = process.argv.includes('--detalle');
-  const iL = process.argv.indexOf('--liga'); const soloLiga = iL >= 0 ? process.argv[iL + 1] : null; // para probar en una liga
+  const args = process.argv; const detalle = args.includes('--detalle'); const escribir = args.includes('--escribir');
+  const arg = (k) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : null; };
+  const soloLiga = arg('--liga'), soloClub = arg('--club'), soloAnio = arg('--anio');
+  const refrescar = args.includes('--refrescar');
+  if (!escribir && !args.includes('--ensayo')) { console.error('Uso: --ensayo | --escribir [--club <id> [--anio <año>]] [--refrescar] [--liga <ligaId>] [--detalle]'); process.exit(1); }
+  const manual = existsSync(MANUAL) ? JSON.parse(readFileSync(MANUAL, 'utf8')) : {};
+  const previoPais = guardado(); const previo = Object.assign({}, ...Object.values(previoPais));
+
   const ejercicios = []; let sinLiga = 0, sinLista = 0;
-  for (const [id, c] of Object.entries(CI)) for (const [y] of c.yrs || []) {
-    const liga = CL[id]?.[y]; if (!liga) { sinLiga++; continue; } if (soloLiga && liga !== soloLiga) continue;
-    const s = temporadaDe(CLUBS[id], +y, c.ci?.[y], cache, liga); if (s == null) { sinLista++; continue; }
-    const r = cache[liga.slice(0, 2)].leagues[liga][s];
-    ejercicios.push({ id, y: +y, liga, s, page: r.wikipediaPage, lang: r.lang || 'en', iso: liga.slice(0, 2) });
+  // los ejercicios cargados; con --club y --anio, también uno que todavía no está en el sitio (la compuerta de cargar.mjs corre ANTES de
+  // escribirlo): su liga sale de --liga (la que propone cargar.mjs) y su cierre de --cierre (MM-DD)
+  const pares = Object.entries(CI).flatMap(([id, c]) => (c.yrs || []).map(([y]) => [id, +y, c.ci?.[y], CL[id]?.[y]]));
+  if (soloClub && soloAnio && !pares.some(([id, y]) => id === soloClub && y === +soloAnio)) pares.push([soloClub, +soloAnio, arg('--cierre'), soloLiga || CL[soloClub]?.[soloAnio]]);
+  for (const [id, y, ciY, ligaY] of pares) {
+    if (soloClub && id !== soloClub) continue; if (soloAnio && String(y) !== String(soloAnio)) continue;
+    const e = { id, y: +y, iso: (CLUBS[id]?.country || id.split('-').pop()).toLowerCase().slice(0, 2) };
+    const liga = ligaY; if (soloLiga && liga !== soloLiga) continue;
+    if (!liga) { sinLiga++; ejercicios.push(e); continue; }
+    e.liga = liga; e.iso = liga.slice(0, 2);
+    const s = temporadaDe(CLUBS[id], +y, ciY, cache, liga); if (s == null) { sinLista++; ejercicios.push(e); continue; }
+    const r = cache[e.iso].leagues[liga][s];
+    // "solo la actual" vale solo en la última temporada que la caché tiene de esa liga
+    Object.assign(e, { s, page: r.wikipediaPage, lang: r.lang || 'en', ultima: s === Math.max(...Object.keys(cache[e.iso].leagues[liga]).map(Number)) });
+    ejercicios.push(e);
   }
-  const paginas = [...new Set(ejercicios.map((e) => `${e.lang}|${e.page}`))];
-  console.log(`${ejercicios.length} ejercicios con lista de equipos (${sinLiga} sin liga en club-leagues, ${sinLista} sin lista); ${paginas.length} páginas para bajar`);
+  // con --escribir, lo ya guardado no se vuelve a bajar (la revisión de la página cambia sola; el dato no), salvo --refrescar
+  const yaEsta = (e) => !refrescar && previo[e.id]?.[e.y]?.fuente;
+  const aBajar = ejercicios.filter((e) => e.page && !(escribir && yaEsta(e)));
+  const paginas = [...new Set(aBajar.map((e) => `${e.lang}|${e.page}`))];
+  console.log(`${ejercicios.length} ejercicios (${sinLiga} sin liga en club-leagues, ${sinLista} sin lista); ${paginas.length} páginas para bajar`);
   const leidas = {};
   for (const [i, k] of paginas.entries()) {
     const [lang, page] = k.split('|'); const p = await pagina(page, lang);
-    leidas[k] = p ? { ...p, ...leerPagina(p.wikitext) } : null;
+    leidas[k] = p ? { ...p, lang, ...leerPagina(p.wikitext) } : null;
     if ((i + 1) % 25 === 0) console.error(`  ${i + 1}/${paginas.length} páginas`);
   }
-  const n = { est: 0, cap: 0, sp: 0, kit: 0, soloActual: 0, sinPagina: 0 }; const porLiga = {};
+
+  const n = { est: 0, cap: 0, sp: 0, kit: 0, soloActualViejo: 0 }; const porLiga = {}; const salida = {}; const faltan = [];
   for (const e of ejercicios) {
-    const p = leidas[`${e.lang}|${e.page}`]; const L = (porLiga[e.liga] ??= { n: 0, est: 0, sp: 0 }); L.n++;
-    if (!p) { n.sinPagina++; continue; }
-    const nombres = [CI[e.id]?.n, CLUBS[e.id]?.displayName, CLUBS[e.id]?.name, ...Object.entries(alias[e.iso] || {}).filter(([, a]) => a.clubId === e.id).map(([x]) => x)].filter(Boolean);
-    // gana el nombre exacto; uno parcial vale solo si es el único ("Milan" pega con "Inter Milan", "Club Brugge" con "Cercle Brugge")
-    const fila = (x) => {
-      const nota = (f) => { const t = cleanTexto(f[x.iClub]); return nombres.some((nm) => corto(nm) === corto(t)) ? 2 : nombres.some((nm) => pega(nm, t)) ? 1 : 0; };
-      const ex = x.t.grilla.filter((f) => nota(f) === 2); if (ex.length) return ex[0];
-      const pa = x.t.grilla.filter((f) => nota(f) === 1); return pa.length === 1 ? pa[0] : null;
-    };
-    let est = null, cap = null, sp = null, kit = null, soloActual = false;
-    for (const x of p.estadios) { const f = fila(x); if (f) { est = cleanTexto(f[x.iEst]) || null; cap = capacidad(f[x.iCap]); break; } }
-    for (const x of p.kits) { const f = fila(x); if (f) { if (x.iSp >= 0) sp = cleanTexto(f[x.iSp]) || null; if (x.iKit >= 0) kit = cleanTexto(f[x.iKit]) || null; soloActual = x.t.soloActual; break; } }
-    if (est) { n.est++; L.est++; } if (cap) n.cap++; if (sp) { n.sp++; L.sp++; } if (kit) n.kit++; if ((sp || kit) && soloActual) n.soloActual++;
-    if (detalle) console.log(`${e.id} ${e.y} (${e.liga} ${e.s}): estadio ${est || '-'} | cap ${cap || '-'} | sponsor ${sp || '-'} | marca ${kit || '-'}${soloActual ? ' | KITS SOLO ACTUAL' : ''}`);
+    const L = (porLiga[e.liga || '(sin liga)'] ??= { n: 0, est: 0, sp: 0 }); L.n++;
+    let d = null;
+    if (escribir && yaEsta(e)) d = { ...previo[e.id][e.y] };
+    else if (e.page && leidas[`${e.lang}|${e.page}`]) {
+      const p = leidas[`${e.lang}|${e.page}`];
+      const nombres = [CI[e.id]?.n, CLUBS[e.id]?.displayName, CLUBS[e.id]?.name, ...Object.entries(alias[e.iso] || {}).filter(([, a]) => a.clubId === e.id).map(([x]) => x)].filter(Boolean);
+      const r = delClub(p, nombres);
+      if (r.soloActual && !e.ultima && (r.sponsor || r.marca)) { n.soloActualViejo++; r.sponsor = null; r.marca = null; }
+      d = { estadio: r.estadio, capacidad: r.capacidad, sponsor: r.sponsor, marca: r.marca, temporada: p.titulo, fuente: `https://${p.lang}.wikipedia.org/w/index.php?oldid=${p.revid}` };
+    }
+    // lo manual gana, campo por campo; sin fuente no vale
+    const m = manual[e.id]?.[e.y];
+    if (m) {
+      if (!m.fuente) { console.error(`contexto-manual.json: ${e.id} ${e.y} sin "fuente": no se usa`); }
+      else { d = { ...(d || {}), ...m, fuenteManual: m.fuente }; if (d.fuente === m.fuente) delete d.fuenteManual; }
+    }
+    const tiene = (k) => d && d[k] != null && d[k] !== '';
+    if (tiene('estadio')) { n.est++; L.est++; } if (tiene('capacidad')) n.cap++; if (tiene('sponsor')) { n.sp++; L.sp++; } if (tiene('marca')) n.kit++;
+    if (!tiene('estadio') || !tiene('sponsor')) faltan.push(`${e.id} ${e.y}${e.liga ? ` (${e.liga}${e.s ? ' ' + e.s : ', sin lista'})` : ' (sin liga en club-leagues)'}: falta ${[!tiene('estadio') && 'estadio', !tiene('sponsor') && 'sponsor'].filter(Boolean).join(' y ')}`);
+    if (d) { const limpio = Object.fromEntries(Object.entries(d).filter(([, v]) => v != null && v !== '')); if (Object.keys(limpio).length > 1) ((salida[e.iso] ??= {})[e.id] ??= {})[e.y] = limpio; }
+    if (detalle) console.log(`${e.id} ${e.y} (${e.liga || '-'} ${e.s || '-'}): estadio ${d?.estadio || '-'} | cap ${d?.capacidad || '-'} | sponsor ${d?.sponsor || '-'} | marca ${d?.marca || '-'}`);
   }
-  const pc = (x) => `${x} (${Math.round((100 * x) / ejercicios.length)}%)`;
-  console.log(`\nde ${ejercicios.length} ejercicios: estadio ${pc(n.est)} · capacidad ${pc(n.cap)} · sponsor ${pc(n.sp)} · marca ${pc(n.kit)} · página que no bajó ${n.sinPagina}`);
-  console.log(`kits de una tabla "solo la actual": ${n.soloActual}`);
-  console.log('\npor liga (ejercicios · con estadio · con sponsor):');
-  for (const [l, x] of Object.entries(porLiga).sort((a, b) => b[1].n - a[1].n)) console.log(`  ${l.padEnd(22)} ${x.n} · ${x.est} · ${x.sp}`);
+
+  if (escribir) {
+    // un país se reescribe con lo guardado más lo de esta corrida (una corrida de un club no borra a los demás)
+    const isos = Object.keys(salida);
+    for (const iso of isos) {
+      const base = Object.fromEntries(Object.entries(previoPais[iso] || {}).map(([id, ys]) => [id, { ...ys }]));
+      for (const [id, ys] of Object.entries(salida[iso])) base[id] = { ...(base[id] || {}), ...ys };
+      escribirPais(iso, base);
+    }
+    console.log(`escrito: ${[...isos].map((i) => `data/contexto/${i}.js`).join(', ') || 'nada'}`);
+  }
+  const tot = ejercicios.length || 1; const pc = (x) => `${x} (${Math.round((100 * x) / tot)}%)`;
+  console.log(`\nde ${ejercicios.length} ejercicios: estadio ${pc(n.est)} · capacidad ${pc(n.cap)} · sponsor ${pc(n.sp)} · marca ${pc(n.kit)}`);
+  if (n.soloActualViejo) console.log(`descartados por tabla de kits "solo la actual" en una temporada vieja: ${n.soloActualViejo}`);
+  if (!soloClub) {
+    console.log('\npor liga (ejercicios · con estadio · con sponsor):');
+    for (const [l, x] of Object.entries(porLiga).sort((a, b) => b[1].n - a[1].n)) console.log(`  ${l.padEnd(22)} ${x.n} · ${x.est} · ${x.sp}`);
+  }
+  // COMPUERTA (to-do 273): con --club, sale con 1 si a algún ejercicio le falta estadio o sponsor; lo usa el pipeline antes de cargar
+  if (faltan.length) {
+    console.log(`\n${faltan.length} ejercicios sin estadio o sin sponsor${soloClub ? '' : ' (los primeros 40)'}:`);
+    for (const f of faltan.slice(0, soloClub ? Infinity : 40)) console.log(`  ${f}`);
+    if (faltan.some((f) => f.includes('sin lista'))) console.log('Un ejercicio "sin lista": primero la lista de equipos de esa liga-año (node tools/listas-lote.mjs), y se vuelve a probar.');
+    console.log('Se completan a mano en tools/contexto-manual.json: { "<clubId>": { "<año>": { "estadio": "...", "capacidad": 0, "sponsor": "...", "marca": "...", "fuente": "<url>" } } }');
+    if (soloClub) process.exit(1);
+  }
 }
 main().catch((e) => { console.error(e.message); process.exit(1); });
