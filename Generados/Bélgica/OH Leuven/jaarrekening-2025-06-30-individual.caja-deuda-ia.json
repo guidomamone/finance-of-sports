@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-18T14:07:43.784Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "30/06/2025 (in euro)",
+ "caja": {
+  "lineas": [
+   369
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Las páginas del pasivo del balance (schulden, códigos 17/49) no están incluidas; solo aparece el resumen del jaarverslag (Schulden op meer dan 1 jaar 12.755.844,80 y op ten hoogste 1 jaar 7.571.330,95, L2449-L2450), que son totales sin desglose de deuda financiera. La nota de empresas vinculadas (L2135: 11.237.500 a más de un año) sugiere que la deuda es principalmente con la matriz King Power. Escala en unidades (euros); la evidencia está tomada del jaarverslag."
+}

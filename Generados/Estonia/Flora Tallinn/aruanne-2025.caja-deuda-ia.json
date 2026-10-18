@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Estonia/Flora Tallinn/aruanne-2025.md",
+ "generado": "2026-10-18T14:07:16.040Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(eurodes)",
+ "caja": {
+  "lineas": [
+   150
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   164,
+   168
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Laenukohustised corriente (L164) y no corriente (L168) como deuda financiera; Raha (L150) como efectivo."
+}
