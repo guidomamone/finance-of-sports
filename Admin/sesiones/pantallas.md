@@ -41,3 +41,8 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
   (después de `js/finanzas-multi.js`): no sumar otro script. Trae `window.GRUPOS_INDICE = [{ id, nombre, alias, clubIds, clubes:[{clubId|null,
   nombre, control, desde, hasta}] }]` y `window.ENTIDADES_PAISES`. Finanzas también tocó una línea de `js/principal.js`, en
   `refreshFinanzas()` (`FIN_ESTRUCTURA.render`), fuera del bloque de la URL.
+- La página del grupo está lista en la rama finanzas (commit 376b6b3): `section#grupo`, botón `#mainNav button[data-section="grupo"]` con
+  `hidden` (el CSS lo saca del menú) y `window.GRUPO_VIEW = { show(id) -> Promise, abrir(id), current() -> {grupo}, refresh() }`. Lo que
+  falta de pantallas, después de mergear finanzas: (1) 'grupo' en `URL_CLAVES` / `estadoActual()` / `aplicarURL()`; (2) 'grupo' en
+  `TABS_SIN_CLUB` de `js/principal.js` (si no, abrir un grupo sin club elegido rebota a Inicio); (3) el resultado "Grupo" del buscador
+  con `GRUPOS_INDICE`, que llama a `GRUPO_VIEW.abrir(id)`. Al cambiar el idioma, `GRUPO_VIEW.refresh()` redibuja.
