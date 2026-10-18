@@ -1,0 +1,267 @@
+{
+ "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.pdf",
+ "generado": "2026-10-18T18:16:03.682Z",
+ "frena": [],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-18: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 3 ejercicio(s) con un solo perímetro (individual); 3 documento(s) mirados)",
+  "\"Televisión\" en 0: real, por ajuste manual (2026-10-18, sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18))",
+  "\"Estadio\" en 0: real, por ajuste manual (2026-10-18, sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18))",
+  "gestión: ningún presidente confirmado cubre 2023 (cierre 2023-12-31); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "harjujklaagri-ee",
+  "year": 2023,
+  "cierre": "2023-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Tulu ettevõtlusest",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.168999,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Mitmesugused tegevuskulud",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -0.063521,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2023-12-31",
+   "sourceId": "harjujklaagri-ee-aruanne-2023",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 0.000123,
+   "tax": 0,
+   "sinDesglose": [
+    {
+     "renglon": "Mitmesugused tegevuskulud",
+     "lado": "expense",
+     "importe": 0.063521,
+     "motivo": "Claude 2026-10-18 (subagente Sonnet): Único gasto del año (63.521), sin ninguna nota que lo abra y sin personal ('no tiene trabajadores'): es un monto real que la fuente no separó, que el 2025 muestra que incluye pagos a jugadores/técnicos, traslados, medicina, traspasos. other_expenses lo escondería en 'Otros gastos' y haría ver $0 en  [aruanne-2023.md L93 'Mitmesugused tegevuskulud -63 521'; Lisa 2 L181 'Raamatupidamiskohustuslasel ei ole töötajaid'; sin notas de gastos en L145-212]"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 0.168999,
+   "officialTotalExpenses": 0.063521,
+   "officialPAT": 0.105601
+  },
+  "source": {
+   "id": "harjujklaagri-ee-aruanne-2023",
+   "clubId": "harjujklaagri-ee",
+   "title": "MTÜ Harju Jalgpalliklubi Laagri — aruanne-2023 (ejercicio 2023)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Harju JK Laagri/aruanne-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2023-12-31",
+  "anual": "calendario",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-18): del .md L8: \"| aruandeaasta lõpp: | 31.12.2023 |\" (Claude 2026-10-18)"
+ },
+ "clubId": "harjujklaagri-ee",
+ "year": 2023,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.pdf",
+   "campo": "cierre",
+   "valor": "2023-12-31",
+   "linea": null,
+   "motivo": "del .md L8: \"| aruandeaasta lõpp: | 31.12.2023 |\" (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"### Tulemiaruanne\", .md L84) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.pdf",
+   "campo": "cero-real",
+   "valor": "Estadio",
+   "linea": null,
+   "motivo": "sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "seleccion": {
+  "filas": 3,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Tulu ettevõtlusest",
+   "page": 5,
+   "native": 0.168999,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.168999,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): No es 'Otros ingresos': todo 'Tulu ettevõtlusest' es publicidad. El documento 2023 no trae notas, pero el 2024 abre su Lisa 3 y la columna 09.01.2023-31.12.2023 es 'Reklaamitulu 168 999' = el 100% de la línea (mismo monto exacto). Se usa el desglose solo para la naturaleza; el monto sale del propio  [aruanne-2023.md L90 'Tulu ettevõtlusest 168 999'; aruanne-2024.md L210-213 (Lisa 3: 'Reklaamitulu 48 202 | 168 999')]",
+   "destino": "revenue",
+   "amountNative": 0.168999
+  },
+  {
+   "label": "Mitmesugused tegevuskulud",
+   "page": 5,
+   "native": 0.063521,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.063521,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Único gasto del año (63.521), sin ninguna nota que lo abra y sin personal ('no tiene trabajadores'): es un monto real que la fuente no separó, que el 2025 muestra que incluye pagos a jugadores/técnicos, traslados, medicina, traspasos. other_expenses lo escondería en 'Otros gastos' y haría ver $0 en  [aruanne-2023.md L93 'Mitmesugused tegevuskulud -63 521'; Lisa 2 L181 'Raamatupidamiskohustuslasel ei ole töötajaid'; sin notas de gastos en L145-212]",
+   "destino": "expense",
+   "amountNative": -0.063521
+  },
+  {
+   "label": "Muud finantstulud ja -kulud",
+   "page": null,
+   "native": 0.000123,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 0.168999,
+  "expSum": -0.063521,
+  "officialTotalRevenue": 0.168999,
+  "officialTotalExpenses": 0.063521,
+  "officialPAT": 0.105601,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 0.105601,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 0.168999
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 0.063521
+  }
+ },
+ "liga": {
+  "valor": "ee-meistriliiga",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2023,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): del .md L8: \"| aruandeaasta lõpp: | 31.12.2023 |\" (Claude 2026-10-18)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2023-12-31",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): del .md L8: \"| aruandeaasta lõpp: | 31.12.2023 |\" (Claude 2026-10-18))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): majandusaasta aruanne anual con estado de resultados (\"### Tulemiaruanne\", .md L84) (Claude 2026-10-18)",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-18)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Estonia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2023-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2023-12-31 = 0.905 (Cierre BCE del viernes 29/12/2023 (el 31 es domingo, sin cotización) (1 EUR = 1,1050 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "harjujklaagri-ee-aruanne-2023",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "ee-meistriliiga",
+   "fuente": "data/club-leagues/ee.js ya tiene la fila",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 1,
+  "lineasGasto": 1,
+  "metaFilas": 1,
+  "excluidas": 0
+ }
+}

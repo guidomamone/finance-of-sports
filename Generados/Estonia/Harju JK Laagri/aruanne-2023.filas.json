@@ -1,0 +1,109 @@
+{
+ "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.pdf",
+ "md": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.md",
+ "mdSha1": "0ae4295218b58c1283d112aad8bcdacee842ce9d",
+ "ubicacionSha1": "def2c151e29a5402b73eda8d43d3a0df0df919b4",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:54:30.077Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "unidades",
+   "evidencia": "L85: (eurodes)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 90,
+   "etiqueta": "Tulu ettevõtlusest",
+   "actual": "168 999",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 91,
+   "etiqueta": "Kokku tulud",
+   "actual": "168 999",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 93,
+   "etiqueta": "Mitmesugused tegevuskulud",
+   "actual": "-63 521",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 94,
+   "etiqueta": "Kokku kulud",
+   "actual": "-63 521",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 95,
+   "etiqueta": "Põhitegevuse tulem",
+   "actual": "105 478",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 96,
+   "etiqueta": "Muud finantstulud ja -kulud",
+   "actual": "123",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 97,
+   "etiqueta": "Aruandeaasta tulem",
+   "actual": "105 601",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 91,
+  "actual": "168 999"
+ },
+ "total_gastos": {
+  "linea": 94,
+  "actual": "-63 521"
+ },
+ "resultado": {
+  "linea": 97,
+  "actual": "105 601",
+  "anterior": null
+ },
+ "dudas": [],
+ "observaciones": "Primer ejercicio (09.01.2023 - 31.12.2023), sin columna de año anterior. Importes en euros (unidades). No hay notas de desglose."
+}

@@ -1,0 +1,88 @@
+{
+ "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2021-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2021-06-30-individual.md",
+ "mdSha1": "6cf20cebf46927f8ed36d68a50888d88f9a93b28",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:22.317Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    3,
+    5
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    18,
+    26
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    115,
+    141
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    149,
+    197
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    207,
+    236
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    246,
+    262
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    272,
+    302
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    357,
+    365
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING IN EURO (modelo belga de microvennootschap, importes en euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Jaarrekening individual en microschema (VKT-inb). El estado de resultados es b5 (Resultatenrekening), que parte de la Brutomarge: los ingresos no se abren por categoría. b6 es la resultaatverwerking (destino del resultado) y b7 es el detalle de deudas: ambos quedan fuera. No hay notas que desglosen ingresos ni gastos."
+}

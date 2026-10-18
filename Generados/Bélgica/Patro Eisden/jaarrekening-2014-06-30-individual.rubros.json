@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2014-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2014-06-30-individual.pdf",
+  "club": "patroeisden-be",
+  "year": 2014,
+  "generatedAt": "2026-10-18T15:37:11.964Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Brutomarge (+)/(-)",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.266761
+      ],
+      "glosa": "Margen bruto (+)/(-)"
+    },
+    {
+      "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+      "lado": "expense",
+      "page": 7,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        0.354452
+      ],
+      "glosa": "Remuneraciones y beneficios sociales directos"
+    },
+    {
+      "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+      "lado": "expense",
+      "page": 7,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        0.00457
+      ],
+      "glosa": "Primas patronales para seguros complementarios"
+    },
+    {
+      "label": "Ouderdoms- en overlevingspensioenen",
+      "lado": "expense",
+      "page": 7,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        0.003792
+      ],
+      "glosa": "Pensiones de jubilación y supervivencia"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.006252
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

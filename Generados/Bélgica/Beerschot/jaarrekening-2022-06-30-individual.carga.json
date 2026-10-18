@@ -1,0 +1,778 @@
+{
+ "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2022-06-30-individual.pdf",
+ "generado": "2026-10-18T15:46:18.435Z",
+ "frena": [
+  {
+   "etapa": "reintento",
+   "motivo": "categorías en 0 que deberían tener número: Cuotas sociales. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+  }
+ ],
+ "avisos": [
+  "materialidad: \"Geboekt\" va como other_expenses con 0.75 (las dudas de gastos suman 0.40% de su lado)",
+  "materialidad: \"Geboekt\" va como other_expenses con 0.75 (las dudas de gastos suman 0.40% de su lado)",
+  "gastos: ningún total impreso igual a la suma de las líneas (-17.999617); queda la suma, verificada por el resultado del ejercicio",
+  "gestión: ningún presidente confirmado cubre 2022 (cierre 2022-06-30); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "beerschot-be",
+  "year": 2022,
+  "cierre": "2022-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Ticketing & abonnementen",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 2.209239,
+    "disclosureLevel": "aggregated",
+    "_pag": 25,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sponsoring",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 1.536379,
+    "disclosureLevel": "aggregated",
+    "_pag": 25,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "TV rechten",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 1.115001,
+    "disclosureLevel": "aggregated",
+    "_pag": 25,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Commercieel",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 1.61198,
+    "disclosureLevel": "aggregated",
+    "_pag": 25,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andere bedrijfsopbrengsten",
+    "normalizedCategory": "other_income",
+    "amountNative": 2.658177,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Terugneming van afschrijvingen en van waardeverminderingen op immateriële en materiële vaste activa",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.102893,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Meerwaarden bij de realisatie van immateriële en materiële vaste activa",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.001016,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Aankopen",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.750977,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Voorraad: afname (toename) (+)/(-)",
+    "normalizedCategory": "other_expenses",
+    "amountNative": 0.045943,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Diensten en diverse goederen",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -5.444145,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Bezoldigingen en rechtstreekse sociale voordelen",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -8.131706,
+    "disclosureLevel": "aggregated",
+    "_pag": 25,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Werkgeversbijdragen voor sociale verzekeringen",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.979455,
+    "disclosureLevel": "aggregated",
+    "_pag": 25,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.035198,
+    "disclosureLevel": "aggregated",
+    "_pag": 25,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andere personeelskosten",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.228672,
+    "disclosureLevel": "aggregated",
+    "_pag": 25,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -1.312994,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Geboekt",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.053285,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": "materialidad",
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.40% (≤ 1%) y esta tiene 0.75"
+   },
+   {
+    "rawLabel": "Geboekt",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.022241,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": "materialidad",
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.40% (≤ 1%) y esta tiene 0.75"
+   },
+   {
+    "rawLabel": "Bedrijfsbelastingen en -taksen",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.083949,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andere",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.002938,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Minderwaarden bij de realisatie van immateriële en materiële vaste activa",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.63977,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andere niet-recurrente bedrijfskosten",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.109217,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2022-06-30",
+   "sourceId": "beerschot-be-jaarrekening-2022-06-30-individual",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.063319,
+   "tax": 0.020832,
+   "extraRows": [
+    {
+     "label": "Andere financiële opbrengsten",
+     "value": -0.005212
+    },
+    {
+     "label": "Kosten van schulden",
+     "value": -0.021412
+    },
+    {
+     "label": "Andere financiële kosten",
+     "value": -0.036695
+    },
+    {
+     "label": "Belastingen",
+     "value": 0.01
+    },
+    {
+     "label": "Regularisering van belastingen en terugneming van voorzieningen voor belastingen",
+     "value": 0.010832
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 9.234685,
+   "officialTotalExpenses": 17.999617,
+   "officialPAT": -9.565981
+  },
+  "source": {
+   "id": "beerschot-be-jaarrekening-2022-06-30-individual",
+   "clubId": "beerschot-be",
+   "title": "Beerschot — jaarrekening-2022-06-30-individual (ejercicio 2022)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Bélgica/Beerschot/jaarrekening-2022-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Bélgica/Beerschot/jaarrekening-2022-06-30-individual.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2022-06-30",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "het boekjaar dat de periode dekt van 01/07/2021 tot 30/06/2022"
+  },
+  "confianza": "alta",
+  "anual": "temporada"
+ },
+ "clubId": "beerschot-be",
+ "year": 2022,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 26,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Ticketing & abonnementen",
+   "page": 25,
+   "native": 2.209239,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Omzet\")",
+   "signoFijo": 2.209239,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.209239
+  },
+  {
+   "label": "Sponsoring",
+   "page": 25,
+   "native": 1.536379,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Omzet\")",
+   "signoFijo": 1.536379,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.536379
+  },
+  {
+   "label": "TV rechten",
+   "page": 25,
+   "native": 1.115001,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Omzet\")",
+   "signoFijo": 1.115001,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.115001
+  },
+  {
+   "label": "Commercieel",
+   "page": 25,
+   "native": 1.61198,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Omzet\")",
+   "signoFijo": 1.61198,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.61198
+  },
+  {
+   "label": "Andere bedrijfsopbrengsten",
+   "page": 9,
+   "native": 2.658177,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.658177,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.658177
+  },
+  {
+   "label": "Terugneming van afschrijvingen en van waardeverminderingen op immateriële en materiële vaste activa",
+   "page": 28,
+   "native": 0.102893,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Niet-recurrente bedrijfsopbrengsten\")",
+   "signoFijo": 0.102893,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.102893
+  },
+  {
+   "label": "Meerwaarden bij de realisatie van immateriële en materiële vaste activa",
+   "page": 28,
+   "native": 0.001016,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Niet-recurrente bedrijfsopbrengsten\")",
+   "signoFijo": 0.001016,
+   "cat": "other_income",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.001016
+  },
+  {
+   "label": "Aankopen",
+   "page": 9,
+   "native": 0.750977,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.750977,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Compras de mercadería (código 600/8, parte de 'Handelsgoederen, grond- en hulpstoffen'). Precedente: Anderlecht 'Aankopen handelsgoederen, grond- en hulpstoffen' = other_expenses; Antwerp lo mismo. [L290: 'Aankopen | 600/8 | 925.607 | 854.137' (pág. 8)]",
+   "destino": "expense",
+   "amountNative": -0.750977
+  },
+  {
+   "label": "Voorraad: afname (toename) (+)/(-)",
+   "page": 9,
+   "native": 0.045943,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 4: signo impreso, resta en su lado))",
+   "signoFijo": -0.045943,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0.045943
+  },
+  {
+   "label": "Diensten en diverse goederen",
+   "page": 9,
+   "native": 5.444145,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.444145,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5.444145
+  },
+  {
+   "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "page": 25,
+   "native": 8.131706,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\")",
+   "signoFijo": 8.131706,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -8.131706
+  },
+  {
+   "label": "Werkgeversbijdragen voor sociale verzekeringen",
+   "page": 25,
+   "native": 0.979455,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\")",
+   "signoFijo": 0.979455,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.979455
+  },
+  {
+   "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+   "page": 25,
+   "native": 1.035198,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\")",
+   "signoFijo": 1.035198,
+   "cat": "wages_squad",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.035198
+  },
+  {
+   "label": "Andere personeelskosten",
+   "page": 25,
+   "native": 0.228672,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\")",
+   "signoFijo": 0.228672,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 623 es parte de Personeelskosten (620 + 621 + 623 = el 62 impreso, 11.054.610; 9.380.292 + 1.435.486 + 238.832 = 11.054.610). Precedente: Andere personeelskosten va como item dentro de wages_squad (Cercle Brugge, Mechelen, Sint-Truiden, Westerlo, Zulte Waregem); las cargas sociales siguen al sueldo. [L801: 'Andere personeelskosten | 623 | 238.832 | 23.170' (Nota 6.10, pág. 23)]",
+   "destino": "expense",
+   "amountNative": -0.228672
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "page": 9,
+   "native": 1.312994,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.312994,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): la fila se partió con ajustes fila + categoria según la nota de activos fijos (pases / bienes de uso)",
+   "destino": "expense",
+   "amountNative": -1.312994
+  },
+  {
+   "label": "Geboekt",
+   "page": 26,
+   "native": 0.053285,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\")",
+   "signoFijo": 0.053285,
+   "cat": "other_expenses",
+   "conf": 0.75,
+   "escalon": "materialidad",
+   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.40% (≤ 1%) y esta tiene 0.75",
+   "enLista": true,
+   "enCola": false,
+   "destino": "expense",
+   "amountNative": -0.053285
+  },
+  {
+   "label": "Geboekt",
+   "page": 26,
+   "native": 0.022241,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\")",
+   "signoFijo": 0.022241,
+   "cat": "other_expenses",
+   "conf": 0.75,
+   "escalon": "materialidad",
+   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.40% (≤ 1%) y esta tiene 0.75",
+   "enLista": true,
+   "enCola": false,
+   "destino": "expense",
+   "amountNative": -0.022241
+  },
+  {
+   "label": "Bedrijfsbelastingen en -taksen",
+   "page": 26,
+   "native": 0.083949,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Andere bedrijfskosten\")",
+   "signoFijo": 0.083949,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.083949
+  },
+  {
+   "label": "Andere",
+   "page": 26,
+   "native": 0.002938,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Andere bedrijfskosten\")",
+   "signoFijo": 0.002938,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.002938
+  },
+  {
+   "label": "Minderwaarden bij de realisatie van immateriële en materiële vaste activa",
+   "page": 28,
+   "native": 0.63977,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Niet-recurrente bedrijfskosten\")",
+   "signoFijo": 0.63977,
+   "cat": "exceptional_items",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.63977
+  },
+  {
+   "label": "Andere niet-recurrente bedrijfskosten",
+   "page": 28,
+   "native": 0.109217,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Niet-recurrente bedrijfskosten\")",
+   "signoFijo": 0.109217,
+   "cat": "exceptional_items",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.109217
+  },
+  {
+   "label": "Andere financiële opbrengsten",
+   "page": null,
+   "native": -0.005212,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Kosten van schulden",
+   "page": null,
+   "native": -0.021412,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Andere financiële kosten",
+   "page": null,
+   "native": -0.036695,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Belastingen",
+   "page": null,
+   "native": 0.01,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  },
+  {
+   "label": "Regularisering van belastingen en terugneming van voorzieningen voor belastingen",
+   "page": null,
+   "native": 0.010832,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "reintentar": [
+  {
+   "categoria": "Cuotas sociales"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Omzet\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Niet-recurrente bedrijfsopbrengsten\")": "gastos con signo",
+   "verificacion (estado (lectura 4: signo impreso, resta en su lado))": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Andere bedrijfskosten\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Niet-recurrente bedrijfskosten\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 9.234685,
+  "expSum": -17.999617,
+  "officialTotalRevenue": 9.234685,
+  "officialTotalExpenses": 17.999617,
+  "officialPAT": -9.565981,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -9.565981,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 9.234685
+  }
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "sin caché de rosters para be (tools/club-league-reference/be.json)",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó, P3 liga-sin-verificar); para resolverla: resolve-wikipedia-season-page.mjs + fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2022,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2022-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2022-06-30) y contenido del .md (19 de 21 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el nombre del archivo dice que son los estados individuales (\"jaarrekening-2022-06-30-individual.pdf\"), y no hay un consolidado del mismo ejercicio en la carpeta",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Bélgica (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2022-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2022-06-30 = 0.9627 (Cierre BCE al 30/6/2022 (1 EUR = 1,0387 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "beerschot-be-jaarrekening-2022-06-30-individual",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": null,
+   "fuente": "sin caché de rosters para be (tools/club-league-reference/be.json)",
+   "estado": "pendiente"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 7,
+  "lineasGasto": 14,
+  "metaFilas": 5,
+  "excluidas": 0
+ }
+}

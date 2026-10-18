@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-18T14:31:40.740Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Verschil (EUR)",
+ "caja": {
+  "lineas": [
+   193
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Las páginas del pasivo (VOL-kap 3.2, con el detalle de financiële schulden) no están incluidas; solo aparecen los totales de Schulden op meer dan een jaar (L1348) y op ten hoogste één jaar (L1349) del jaarverslag, que no permiten aislar la deuda financiera. La escala en unidades (euros) se infiere de las cifras del modelo VOL y de la columna 'Verschil (EUR)' del jaarverslag; el balance no la indica de forma explícita."
+}

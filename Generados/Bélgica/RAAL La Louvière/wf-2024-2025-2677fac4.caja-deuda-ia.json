@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Bélgica/RAAL La Louvière/wf-2024-2025-2677fac4.md",
+ "generado": "2026-10-18T14:34:21.512Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "",
+ "caja": {
+  "lineas": [
+   176
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   237,
+   249
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance belga en formato normalizado BNB, presentado en euros (unidades) aunque las páginas mostradas no incluyen una frase explícita de escala, por lo que escala_evidencia queda vacía. La línea 237 es el subtotal de deudas financieras no corrientes (código 170/4), que agrupa las líneas 241 y 242. La línea 249 corresponde a deudas a más de un año con vencimiento dentro del año (código 42); se asume que es financiera, pero podría incluir otras deudas. La línea 250 (deudas financieras corrientes, código 43) está vacía."
+}

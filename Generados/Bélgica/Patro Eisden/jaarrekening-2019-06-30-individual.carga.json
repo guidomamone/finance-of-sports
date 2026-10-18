@@ -1,0 +1,393 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2019-06-30-individual.pdf",
+ "generado": "2026-10-18T15:46:20.651Z",
+ "frena": [
+  {
+   "etapa": "categoria-en-cola",
+   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Bedrijfsopbrengsten\" -> other_income 0"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "reintento",
+   "motivo": "categorías en 0 que deberían tener número: Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+  }
+ ],
+ "avisos": [
+  "gestión: ningún presidente confirmado cubre 2019 (cierre 2019-06-30); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "patroeisden-be",
+  "year": 2019,
+  "cierre": "2019-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Bedrijfsopbrengsten",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.362776,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 2,
+    "_conf": 0,
+    "_fuenteCat": "categorias.json decía no_es_rubro con 0.6 (fila verificada: no se excluye sola): se propone la genérica de su lado"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.21783,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Bezoldigingen en rechtstreekse sociale voordelen",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.35269,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Werkgeversbijdragen voor sociale verzekeringen",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.072137,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.022521,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andere bedrijfskosten",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.052324,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Uitzonderlijke kosten",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2019-06-30",
+   "sourceId": "patroeisden-be-jaarrekening-2019-06-30-individual",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 0.001198,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Financiële opbrengsten",
+     "value": 0.000038
+    },
+    {
+     "label": "Financiële kosten",
+     "value": 0.00116
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 0.362776,
+   "officialTotalExpenses": 0.717502,
+   "officialPAT": -0.355848
+  },
+  "source": {
+   "id": "patroeisden-be-jaarrekening-2019-06-30-individual",
+   "clubId": "patroeisden-be",
+   "title": "Patro Eisden Maasmechelen VZW — jaarrekening-2019-06-30-individual (ejercicio 2019)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Bélgica/Patro Eisden/jaarrekening-2019-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2019-06-30-individual.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2019-06-30",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "met betrekking tot het boekjaar dat de periode dekt van 01-07-2018 tot 30-06-2019"
+  },
+  "confianza": "alta",
+  "anual": "temporada"
+ },
+ "clubId": "patroeisden-be",
+ "year": 2019,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 9,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Bedrijfsopbrengsten",
+   "page": 7,
+   "native": 0.362776,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.362776,
+   "cat": "other_income",
+   "conf": 0,
+   "escalon": 2,
+   "fuenteCat": "categorias.json decía no_es_rubro con 0.6 (fila verificada: no se excluye sola): se propone la genérica de su lado",
+   "enLista": true,
+   "ladoRechazado": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 0.362776
+  },
+  {
+   "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+   "page": 7,
+   "native": 0.21783,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.21783,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.21783
+  },
+  {
+   "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "page": 9,
+   "native": 0.35269,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\")",
+   "signoFijo": 0.35269,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.35269
+  },
+  {
+   "label": "Werkgeversbijdragen voor sociale verzekeringen",
+   "page": 9,
+   "native": 0.072137,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\")",
+   "signoFijo": 0.072137,
+   "cat": "wages_squad",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.072137
+  },
+  {
+   "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+   "page": 9,
+   "native": 0.022521,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\")",
+   "signoFijo": 0.022521,
+   "cat": "wages_squad",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.022521
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "page": 7,
+   "native": 0.052324,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.052324,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.052324
+  },
+  {
+   "label": "Uitzonderlijke kosten",
+   "page": 7,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0
+  },
+  {
+   "label": "Financiële opbrengsten",
+   "page": null,
+   "native": 0.000038,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Financiële kosten",
+   "page": null,
+   "native": 0.00116,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "reintentar": [
+  {
+   "categoria": "Televisión",
+   "lado": "ingreso"
+  },
+  {
+   "categoria": "Estadio",
+   "lado": "ingreso"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 0.362776,
+  "expSum": -0.717502,
+  "officialTotalRevenue": 0.362776,
+  "officialTotalExpenses": 0.717502,
+  "officialPAT": -0.355848,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.355848,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 0.362776
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 0.717502
+  }
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "sin caché de rosters para be (tools/club-league-reference/be.json)",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó, P3 liga-sin-verificar); para resolverla: resolve-wikipedia-season-page.mjs + fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2019,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2019-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2019-06-30) y contenido del .md (2 de 2 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el nombre del archivo dice que son los estados individuales (\"jaarrekening-2019-06-30-individual.pdf\"), y no hay un consolidado del mismo ejercicio en la carpeta",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Bélgica (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2019-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2019-06-30 = 0.878735 (Tipo de referencia del Banco Central Europeo, última rueda hábil antes del cierre (2019-06-28, 2019-06-30 no es día hábil))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "patroeisden-be-jaarrekening-2019-06-30-individual",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": null,
+   "fuente": "sin caché de rosters para be (tools/club-league-reference/be.json)",
+   "estado": "pendiente"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 4,
+  "lineasIngreso": 1,
+  "lineasGasto": 6,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

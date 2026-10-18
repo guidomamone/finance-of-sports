@@ -1,0 +1,99 @@
+{
+ "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2017-12-31-individual.pdf",
+ "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2017-12-31-individual.md",
+ "mdSha1": "428646103b2048e6f225226924a1f4c85a20aee2",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:23.233Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    165,
+    171
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    258,
+    264
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 6,
+   "lineas": [
+    397,
+    402
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    445,
+    450
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 13,
+   "lineas": [
+    935,
+    941
+   ],
+   "tipo": "texto"
+  },
+  "b6": {
+   "pagina": 16,
+   "lineas": [
+    1122,
+    1125
+   ],
+   "tipo": "texto"
+  },
+  "b7": {
+   "pagina": 16,
+   "lineas": [
+    1129,
+    1138
+   ],
+   "tipo": "texto"
+  },
+  "b8": {
+   "pagina": 17,
+   "lineas": [
+    1169,
+    1184
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "",
+ "moneda": "EUR",
+ "columna_ejercicio": "",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El PDF tiene una página con la resultatenrekening (códigos 70/76A, 9904) que no aparece entre los bloques transcritos?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice solo muestra balance (pág. 6), mandatarios, personal y formación; en una jaarrekening belga la resultatenrekening suele ir en las págs. 7-8 y no fue extraída.",
+   "bloques": [
+    "b3",
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales belgas (modelo abreviado/VKT). Los bloques con cifras son mandatos (b1, b2), balance/pasivo (b3, b4), relaciones con personas (b5) y el balance social (b6-b8). No se transcribió ningún bloque de la resultatenrekening, así que se marca sin_estado; conviene revisar si faltan páginas en la transcripción. Moneda supuesta EUR."
+}

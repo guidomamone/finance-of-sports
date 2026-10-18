@@ -1,0 +1,150 @@
+{
+ "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2023-06-30-individual-correction.pdf",
+ "md": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2023-06-30-individual-correction.md",
+ "mdSha1": "437542380a2dd2689cefbfd90097bc105e4a934b",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:22.523Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    18,
+    26
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    128,
+    154
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    162,
+    201
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    211,
+    239
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    249,
+    256
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    268,
+    284
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    292,
+    317
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    325,
+    352
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    362,
+    391
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    401,
+    413
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 13,
+   "lineas": [
+    427,
+    431
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 13,
+   "lineas": [
+    433,
+    456
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 14,
+   "lineas": [
+    466,
+    470
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 14,
+   "lineas": [
+    474,
+    490
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b10"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING in EURO",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se usa el cuadro 6.4 'RESULTATEN' (b10) solo como nota informativa sin cargar filas propias, dado que trae personal y resultados no recurrentes y no abre renglones del estado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "b10 mezcla datos de personal (FTE) con importes de resultados excepcionales y financieros que podrían no desglosar renglones del estado.",
+   "bloques": [
+    "b10"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales de VZW (modelo abreviado belga). Estado de resultados en b4 (Resultatenrekening), en euros. b10 (6.4 Resultaten) contiene datos de personal y resultados no recurrentes/financieros. Balance (b2,b3), resultaatverwerking (b5), activos fijos (b6-b8), deudas (b9) y balance social (b11-b14) excluidos."
+}

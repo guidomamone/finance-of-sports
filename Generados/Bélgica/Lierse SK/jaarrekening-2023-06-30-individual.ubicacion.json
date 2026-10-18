@@ -1,0 +1,207 @@
+{
+ "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2023-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2023-06-30-individual.md",
+ "mdSha1": "335d19778693b2fc3ce375f7eabe140f44884b27",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:22.383Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    4,
+    5
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    22,
+    23
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    33,
+    35
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 3,
+   "lineas": [
+    119,
+    120
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 4,
+   "lineas": [
+    132,
+    158
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 5,
+   "lineas": [
+    166,
+    196
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 6,
+   "lineas": [
+    204,
+    228
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 7,
+   "lineas": [
+    238,
+    267
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 8,
+   "lineas": [
+    277,
+    293
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 9,
+   "lineas": [
+    305,
+    322
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 10,
+   "lineas": [
+    330,
+    354
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    362,
+    390
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    400,
+    430
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 13,
+   "lineas": [
+    440,
+    453
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 14,
+   "lineas": [
+    463,
+    472
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 14,
+   "lineas": [
+    474,
+    477
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 14,
+   "lineas": [
+    479,
+    487
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 24,
+   "lineas": [
+    707,
+    711
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 24,
+   "lineas": [
+    713,
+    736
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 25,
+   "lineas": [
+    746,
+    751
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 25,
+   "lineas": [
+    755,
+    771
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b8"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b14"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING in EURO (modelo NBB, importes en euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la cuenta de resultados del ejercicio 01-07-2022 a 30-06-2023 (b8) como el ejercicio pedido, siendo que la fecha 2023-10-28 es la de aprobación por la junta general y no la de cierre?",
+   "propuesta": "sí",
+   "tema": "cuadro-de-otro-anio",
+   "renglon": "",
+   "texto": "En b3 la fecha 28-10-2023 figura como fecha de aprobación por la algemene vergadering, mientras que el ejercicio cierra el 30-06-2023.",
+   "bloques": [
+    "b3",
+    "b8"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales en modelo abreviado belga (VKT). La cuenta de resultados es b8 (kap 4). b14 (kap 6.4 Resultaten) aporta datos de personal y de resultados financieros, y conviene revisarlo como desglose de gastos. Los bloques b18-b21 son el balance social: cifras de personal, no desgloses del estado. Hay que confirmar la escala en euros mirando el PDF."
+}

@@ -1,0 +1,118 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2017-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2017-06-30-individual.md",
+ "mdSha1": "572be1ef53d02a15d8b127867452d809a4f21411",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:23.819Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    25,
+    31
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    127,
+    164
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    172,
+    214
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    224,
+    244
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    254,
+    263
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    275,
+    291
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    305,
+    309
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    311,
+    334
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    344,
+    349
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    353,
+    369
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b6"
+ ],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra la frase de escala; los modelos VKT-vzw de la NBB se presentan normalmente en euros (unidades).",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El estado de resultados (b4) está expresado en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El índice no muestra la frase de la escala arriba de la RESULTATENREKENING; en los modelos de la NBB suele ser euros.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales de la VZW, modelo abreviado (VKT-vzw). Estado de resultados: b4 (RESULTATENREKENING). b6 (Toelichting Resultaten) desglosa los gastos de personal y las provisiones; incluye cantidades de empleados, que no son importes. Quedan afuera: el balance (b2, b3), la resultaatverwerking (b5), el sociale balans (b7, b8) y las capacitaciones (b10)."
+}

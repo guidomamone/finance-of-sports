@@ -1,0 +1,389 @@
+{
+ "pdf": "Clubes/Estonia/Narva Trans/aruanne-2023.pdf",
+ "md": "Clubes/Estonia/Narva Trans/aruanne-2023.md",
+ "generado": "2026-10-18T18:44:30.366Z",
+ "estado": "ok",
+ "clubId": "narvatrans-ee",
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Narva Trans/aruanne-2023.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L139) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "0.8154 = 0.8154",
+   "suma": 0.8153999999999999,
+   "impreso": 0.8154
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "0.79334 = 0.79334",
+   "suma": 0.7933399999999999,
+   "impreso": 0.7933399999999999
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 2.7755575615628914e-17
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": null,
+   "detalle": "presentación distinta: ingresos de 2023 0.8154 y 0.7429; la diferencia es exactamente \"Kooli poolt renditud hoonete ja rajatistega seotud kulud\" (gasto, 72 500), que uno de los dos documentos netea"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 0.534448 en aruanne-2022.pdf y 0.534448 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Liikmetelt saadud tasud\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"Muud kulud\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de localizar que no afecta la carga: La portada dice consolidado pero el estado y las notas corresponden solo a Jalgpalliklubi Narva Trans, sin indicios de un grupo."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0.8154,
+  "gastos": 0.79334,
+  "financiero": 0.001753,
+  "impuesto": 0,
+  "resultadoImpreso": 0.023813,
+  "resultadoParaCargar": 0.023813,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Liikmetelt saadud tasud",
+   "lado": "ingreso",
+   "M": 0.08444,
+   "pagina": 5,
+   "linea": 146,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "sh eraldis riigieelarvest",
+   "lado": "ingreso",
+   "M": 0.039461,
+   "pagina": 13,
+   "linea": 526,
+   "origen": "nota que desglosa \"Annetused ja toetused\" > desglose de \"Riigi ja KOV toetused\""
+  },
+  {
+   "etiqueta": "sh eraldis kohaliku omavalitsuse eelarvest",
+   "lado": "ingreso",
+   "M": 0.115149,
+   "pagina": 13,
+   "linea": 527,
+   "origen": "nota que desglosa \"Annetused ja toetused\" > desglose de \"Riigi ja KOV toetused\""
+  },
+  {
+   "etiqueta": "EJLiidu toetused",
+   "lado": "ingreso",
+   "M": 0.077303,
+   "pagina": 13,
+   "linea": 520,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "UEFA solidaarsustoetus noorte- ja kogukonnatööle",
+   "lado": "ingreso",
+   "M": 0.304098,
+   "pagina": 13,
+   "linea": 521,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Mitteseotud osapoolte toetused/annetused",
+   "lado": "ingreso",
+   "M": 0.00008,
+   "pagina": 13,
+   "linea": 522,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Seotud osapoolte toetused/annetused",
+   "lado": "ingreso",
+   "M": 0.009569,
+   "pagina": 13,
+   "linea": 523,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Muud klassifitseerimata annetused ja toetused",
+   "lado": "ingreso",
+   "M": 0.001694,
+   "pagina": 13,
+   "linea": 524,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Väljaku äärde ja reklaamtahvlitele paigaldatud reklaam",
+   "lado": "ingreso",
+   "M": 0.044563,
+   "pagina": 13,
+   "linea": 542,
+   "origen": "nota que desglosa \"Tulu ettevõtlusest\""
+  },
+  {
+   "etiqueta": "Piletitulu",
+   "lado": "ingreso",
+   "M": 0.007544,
+   "pagina": 13,
+   "linea": 543,
+   "origen": "nota que desglosa \"Tulu ettevõtlusest\""
+  },
+  {
+   "etiqueta": "Klubi sümboolikaga toodete müügitulu",
+   "lado": "ingreso",
+   "M": 0.000234,
+   "pagina": 13,
+   "linea": 544,
+   "origen": "nota que desglosa \"Tulu ettevõtlusest\""
+  },
+  {
+   "etiqueta": "Muu klassifitseerimata sponsorlus- ja reklaamitulu",
+   "lado": "ingreso",
+   "M": 0.0075,
+   "pagina": 13,
+   "linea": 545,
+   "origen": "nota que desglosa \"Tulu ettevõtlusest\""
+  },
+  {
+   "etiqueta": "Tulu ülekandeõiguste müügist",
+   "lado": "ingreso",
+   "M": 0.003,
+   "pagina": 13,
+   "linea": 546,
+   "origen": "nota que desglosa \"Tulu ettevõtlusest\""
+  },
+  {
+   "etiqueta": "Renditulu staadioni või selle rajatiste väljarentimisest",
+   "lado": "ingreso",
+   "M": 0.0725,
+   "pagina": 13,
+   "linea": 547,
+   "origen": "nota que desglosa \"Tulu ettevõtlusest\""
+  },
+  {
+   "etiqueta": "Muud klassifitseerimata äritulud",
+   "lado": "ingreso",
+   "M": 0.017905,
+   "pagina": 13,
+   "linea": 548,
+   "origen": "nota que desglosa \"Tulu ettevõtlusest\""
+  },
+  {
+   "etiqueta": "Tulu mängijaõiguste müügist",
+   "lado": "ingreso",
+   "M": 0.03036,
+   "pagina": 13,
+   "linea": 549,
+   "origen": "nota que desglosa \"Tulu ettevõtlusest\""
+  },
+  {
+   "etiqueta": "Kulu mängijaõiguste soetamisest ja ülemineku registreerimistasudest",
+   "lado": "gasto",
+   "M": 0.035877,
+   "pagina": 14,
+   "linea": 564,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Kodumängu korralduskulud",
+   "lado": "gasto",
+   "M": 0.010957,
+   "pagina": 14,
+   "linea": 565,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Võistkondade välissõitude- ja lähetuskulud",
+   "lado": "gasto",
+   "M": 0.021652,
+   "pagina": 14,
+   "linea": 566,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Klubisümboolikaga toodete omahind",
+   "lado": "gasto",
+   "M": 0.00502,
+   "pagina": 14,
+   "linea": 567,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Klubile kuuluvate ja tema poolt renditud hoonete ja rajatistega seotud kulud",
+   "lado": "gasto",
+   "M": 0.025088,
+   "pagina": 14,
+   "linea": 568,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Klubi administreerimiskulud",
+   "lado": "gasto",
+   "M": 0.007513,
+   "pagina": 14,
+   "linea": 569,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Meditsiinitarvikud- ja teenused",
+   "lado": "gasto",
+   "M": 0.004127,
+   "pagina": 14,
+   "linea": 570,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Mänguvormid jm varustus",
+   "lado": "gasto",
+   "M": 0.037181,
+   "pagina": 14,
+   "linea": 571,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Muu äritegevuse kulu/koolitus, riigilõiv",
+   "lado": "gasto",
+   "M": 0.006011,
+   "pagina": 14,
+   "linea": 572,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Muud klassifitseerimata tegevuskulud",
+   "lado": "gasto",
+   "M": 0.037823,
+   "pagina": 14,
+   "linea": 573,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Eesti meistrivõistluste osavõtutasu",
+   "lado": "gasto",
+   "M": 0.007848,
+   "pagina": 14,
+   "linea": 574,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Kooli poolt renditud hoonete ja rajatistega seotud kulud",
+   "lado": "gasto",
+   "M": 0.0725,
+   "pagina": 14,
+   "linea": 575,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Turundus-, sponsorlus- ja reklaamikulud",
+   "lado": "gasto",
+   "M": 0.027849,
+   "pagina": 14,
+   "linea": 576,
+   "origen": "nota que desglosa \"Mitmesugused tegevuskulud\""
+  },
+  {
+   "etiqueta": "Mängijate palgakulu",
+   "lado": "gasto",
+   "M": 0.106111,
+   "pagina": 14,
+   "linea": 585,
+   "origen": "nota que desglosa \"Tööjõukulud\""
+  },
+  {
+   "etiqueta": "Sotsiaalmaks mängijate töötasudelt",
+   "lado": "gasto",
+   "M": 0.035722,
+   "pagina": 14,
+   "linea": 586,
+   "origen": "nota que desglosa \"Tööjõukulud\""
+  },
+  {
+   "etiqueta": "Mängijatele makstav sportlasetoetus",
+   "lado": "gasto",
+   "M": 0.107005,
+   "pagina": 14,
+   "linea": 587,
+   "origen": "nota que desglosa \"Tööjõukulud\""
+  },
+  {
+   "etiqueta": "Mängijatele makstav EJL arengustipendium",
+   "lado": "gasto",
+   "M": 0.0287,
+   "pagina": 14,
+   "linea": 588,
+   "origen": "nota que desglosa \"Tööjõukulud\""
+  },
+  {
+   "etiqueta": "Muu personali palgakulu",
+   "lado": "gasto",
+   "M": 0.157022,
+   "pagina": 14,
+   "linea": 589,
+   "origen": "nota que desglosa \"Tööjõukulud\""
+  },
+  {
+   "etiqueta": "Sotsiaalmaks muu personali töötasudelt",
+   "lado": "gasto",
+   "M": 0.050455,
+   "pagina": 14,
+   "linea": 590,
+   "origen": "nota que desglosa \"Tööjõukulud\""
+  },
+  {
+   "etiqueta": "Muud kulud",
+   "lado": "gasto",
+   "M": 0.008879,
+   "pagina": 5,
+   "linea": 153,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Muud finantstulud ja -kulud",
+   "M": 0.001753,
+   "linea": 156
+  }
+ ],
+ "impuesto": []
+}

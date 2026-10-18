@@ -1,0 +1,268 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2024-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2024-06-30-individual.md",
+ "mdSha1": "5a04d3a67704e1def1461c3882c0ae3ced458e1f",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:24.394Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    21,
+    29
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    95,
+    121
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    129,
+    168
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    178,
+    206
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    216,
+    223
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    235,
+    251
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    259,
+    284
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    292,
+    319
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    329,
+    332
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    334,
+    336
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    356,
+    360
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    362,
+    387
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    397,
+    409
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 13,
+   "lineas": [
+    419,
+    441
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 14,
+   "lineas": [
+    449,
+    467
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 14,
+   "lineas": [
+    469,
+    471
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 15,
+   "lineas": [
+    485,
+    487
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 15,
+   "lineas": [
+    491,
+    493
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 15,
+   "lineas": [
+    495,
+    497
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 16,
+   "lineas": [
+    507,
+    510
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 16,
+   "lineas": [
+    512,
+    517
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 16,
+   "lineas": [
+    519,
+    522
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 16,
+   "lineas": [
+    524,
+    526
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 17,
+   "lineas": [
+    540,
+    544
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 17,
+   "lineas": [
+    546,
+    569
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 18,
+   "lineas": [
+    579,
+    584
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 18,
+   "lineas": [
+    588,
+    604
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 23,
+   "lineas": [
+    753,
+    756
+   ],
+   "tipo": "texto"
+  },
+  "b29": {
+   "pagina": 24,
+   "lineas": [
+    784,
+    787
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING in EURO (b1); modelo normalizado belga VKT-VZW, importes en euros",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de personal de la nota 6.4 (b13), que incluye 'Opbrengsten en kosten van uitzonderlijke omvang' y resultados financieros, por no desglosar renglones del estado de resultados?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "b13 mezcla datos de personal con posibles detalles de resultados no recurrentes y financieros; parece información complementaria, no desglose.",
+   "bloques": [
+    "b13"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales de Patro Eisden Jeugd VZW (modelo abreviado VKT-VZW), ejercicio 01-07-2023 a 30-06-2024. El estado de resultados es b4 (Resultatenrekening, empieza con Brutomarge, sin desglose de omzet). b5 es destino del resultado, b24 personal del balance social; no se eligen."
+}

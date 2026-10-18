@@ -1,0 +1,176 @@
+{
+ "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2020-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2020-06-30-individual.md",
+ "mdSha1": "054aaa42e0534fe34352921c2f63aef71e54e985",
+ "ubicacionSha1": "20aa676518225398921463c26da68376c5219c86",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:27:56.462Z",
+ "ubicacion": {
+  "estado": [
+   "b7"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b7",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica la escala; los modelos belgas (NBB) suelen expresarse en euros (unidades), pero no está impreso en el bloque."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b7",
+   "linea": 257,
+   "etiqueta": "Brutomarge (+)/(-)",
+   "actual": "-1.475",
+   "anterior": "-1.372",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 262,
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "actual": "",
+   "anterior": "2.479",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 265,
+   "etiqueta": "Andere bedrijfskosten",
+   "actual": "98",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 268,
+   "etiqueta": "Bedrijfswinst (Bedrijfsverlies) (+)/(-)",
+   "actual": "-1.573",
+   "anterior": "-3.851",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 269,
+   "etiqueta": "Financiële opbrengsten",
+   "actual": "44.754",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 270,
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "actual": "44.754",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 273,
+   "etiqueta": "Financiële kosten",
+   "actual": "54.420",
+   "anterior": "27",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 274,
+   "etiqueta": "Recurrente financiële kosten",
+   "actual": "54.420",
+   "anterior": "27",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 276,
+   "etiqueta": "Winst (Verlies) van het boekjaar vóór belasting (+)/(-)",
+   "actual": "-11.238",
+   "anterior": "-3.878",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 279,
+   "etiqueta": "Belastingen op het resultaat (+)/(-)",
+   "actual": "8.184",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 280,
+   "etiqueta": "Winst (Verlies) van het boekjaar (+)/(-)",
+   "actual": "-19.422",
+   "anterior": "-3.878",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 283,
+   "etiqueta": "Te bestemmen winst (verlies) van het boekjaar (+)/(-)",
+   "actual": "-19.422",
+   "anterior": "-3.878",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 280,
+  "actual": "-19.422",
+  "anterior": "-3.878"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado de resultados de b7 (L252-L283) en unidades (euros), aunque el bloque no imprime la escala?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El bloque b7 no indica la escala; el modelo abreviado belga se presenta en euros.",
+   "bloques": [
+    "b7"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga la Brutomarge (L257, -1.475) como única partida de ingresos/gastos operativos, dado que Omzet (L259) y Handelsgoederen (L260) no tienen importe por ser esquema abreviado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Brutomarge (+)/(-)",
+   "texto": "El esquema abreviado sólo informa el margen bruto neto (L257); no hay total de ingresos ni de gastos impresos.",
+   "bloques": [
+    "b7"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Modelo abreviado NBB: los ingresos y gastos operativos se compensan en la Brutomarge. La fila L262 sólo tiene importe en el año anterior (2.479), por lo que actual queda vacío. La fila L283 repite el resultado del ejercicio. Los cálculos cuadran: -1.475-98=-1.573; -1.573+44.754-54.420=-11.239 (el impreso es -11.238, diferencia de redondeo); -11.238-8.184=-19.422."
+}

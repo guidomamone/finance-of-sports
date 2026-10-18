@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 276 clubes, 949 ejercicios, 19 países.
+TOTAL: 276 clubes, 1001 ejercicios, 19 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -62,12 +62,12 @@ BE (22)
   Gent                  1 ejercicio (2024/2025), balance, EUR
   Lierse SK             1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
   Lokeren-Temse         1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
-  Lommel SK             1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
+  Lommel SK             2 ejercicios (2017/2018, 2024/2025), balance, EUR, sin deuda/caja
   Mechelen              1 ejercicio (2024/2025), balance, EUR
   OH Leuven             1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
   Patro Eisden          1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
   RAAL La Louvière      1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
-  RWDM                  1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
+  RWDM                  2 ejercicios (2019/2020, 2024/2025), balance, EUR, sin deuda/caja
   Sint-Truiden          1 ejercicio (2024/2025), balance, EUR
   Standard Liège        1 ejercicio (2024/2025), balance, EUR
   Union Saint-Gilloise  1 ejercicio (2024/2025), balance, EUR
@@ -164,15 +164,15 @@ DK (11)
   Viborg FF        1 ejercicio (2023/2024), balance, DKK
 
 EE (9)
-  FCI Levadia          1 ejercicio (2025), balance, EUR, sin deuda/caja
-  Flora Tallinn        1 ejercicio (2025), balance, EUR, sin deuda/caja
-  Harju JK Laagri      1 ejercicio (2025), balance, EUR, sin deuda/caja
-  Kuressaare           1 ejercicio (2025), balance, EUR, sin deuda/caja
-  Narva Trans          1 ejercicio (2025), balance, EUR, sin deuda/caja
-  Nõmme Kalju          1 ejercicio (2025), balance, EUR, sin deuda/caja
-  Paide Linnameeskond  1 ejercicio (2025), balance, EUR, sin deuda/caja
-  Tallinna Kalev       1 ejercicio (2025), balance, EUR, sin deuda/caja
-  Tartu Tammeka        1 ejercicio (2025), balance, EUR, sin deuda/caja
+  FCI Levadia          7 ejercicios (2019 a 2025), balance, EUR, sin deuda/caja
+  Flora Tallinn        7 ejercicios (2019 a 2025), balance, EUR, sin deuda/caja
+  Harju JK Laagri      3 ejercicios (2023 a 2025), balance, EUR, sin deuda/caja
+  Kuressaare           7 ejercicios (2019 a 2025), balance, EUR, sin deuda/caja
+  Narva Trans          7 ejercicios (2019 a 2025), balance, EUR, sin deuda/caja
+  Nõmme Kalju          7 ejercicios (2019 a 2025), balance, EUR, sin deuda/caja
+  Paide Linnameeskond  7 ejercicios (2019 a 2025), balance, EUR, sin deuda/caja
+  Tallinna Kalev       7 ejercicios (2019 a 2025), balance, EUR, sin deuda/caja
+  Tartu Tammeka        7 ejercicios (2019 a 2025), balance, EUR, sin deuda/caja
 
 ESPAÑA (19)
   Athletic Club       1 ejercicio (2024/2025), balance, EUR

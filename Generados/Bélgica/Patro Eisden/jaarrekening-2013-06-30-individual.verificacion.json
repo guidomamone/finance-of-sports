@@ -1,0 +1,163 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2013-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2013-06-30-individual.md",
+ "generado": "2026-10-18T15:46:15.630Z",
+ "estado": "cola",
+ "clubId": "patroeisden-be",
+ "year": 2013,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "2aeb7e2"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)",
+   "dif": 4.163336342344337e-17
+  },
+  {
+   "nombre": "documento del año 2014",
+   "ok": null,
+   "detalle": "presentación distinta: ingresos de 2013 0.466399 y 0.244242; la diferencia es exactamente \"Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen\" (gasto, 222.157), que uno de los dos documentos netea"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2012: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0.466399,
+  "gastos": 0.546153,
+  "financiero": 0.00073,
+  "impuesto": 0,
+  "resultadoImpreso": -0.080484,
+  "resultadoParaCargar": -0.080484,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Omzet",
+   "lado": "ingreso",
+   "M": 0.466399,
+   "pagina": 5,
+   "linea": 186,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+   "lado": "gasto",
+   "M": 0.222157,
+   "pagina": 5,
+   "linea": 188,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "lado": "gasto",
+   "M": 0.283438,
+   "pagina": 7,
+   "linea": 264,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "Werkgeversbijdragen voor sociale verzekeringen",
+   "lado": "gasto",
+   "M": 0.022505,
+   "pagina": 7,
+   "linea": 265,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+   "lado": "gasto",
+   "M": 0.006999,
+   "pagina": 7,
+   "linea": 266,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "Ouderdoms- en overlevingspensioenen",
+   "lado": "gasto",
+   "M": 0.006957,
+   "pagina": 7,
+   "linea": 268,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "Andere bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.004097,
+   "pagina": 5,
+   "linea": 193,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Financiële opbrengsten",
+   "M": null,
+   "linea": 196
+  },
+  {
+   "etiqueta": "Financiële kosten",
+   "M": -0.00073,
+   "linea": 197
+  }
+ ],
+ "impuesto": [],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "c6345bb89f44712c8b9a41597f23cfb9908704d2",
+  "rango": [
+   181,
+   204
+  ],
+  "lineasCargadas": [
+   186,
+   188,
+   264,
+   265,
+   266,
+   268,
+   193,
+   196,
+   197
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 181 a 204 del .md):\nL181: | | Toel. | Codes | Boekjaar | Vorig boekjaar |\nL182: | --- | --- | --- | --- | --- |\nL183: | Bedrijfsopbrengsten en bedrijfskosten | | | | |\nL184: | Brutomarge (+)/(-) | | 9900 | 244.242 | 222.597 |\nL185: | Bedrijfsopbrengsten | | 70/74 | | |\nL186: | Omzet | | 70 | 466.399 | 492.854 |\nL187: | Lidgeld, schenkingen, legaten en subsidies | | 73 | | |\nL188: | Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen | | 60/61 | 222.157 | 270.258 |\nL189: | Bezoldigingen, sociale lasten en pensioenen (+)/(-) | 4.5 | 62 | 319.899 | 245.116 |\nL190: | Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa | | 630 | | |\nL191: | Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) | | 631/4 | | |\nL192: | Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-) | | 635/8 | | |\nL193: | Andere bedrijfskosten | | 640/8 | 4.097 | 4.117 |\nL194: | Als herstructureringskosten geactiveerde bedrijfskosten (-) | | 649 | | |\nL195: | Bedrijfswinst (Bedrijfsverlies) (+)/(-) | | 9901 | -79.753 | -26.636 |\nL196: | Financiële opbrengsten | 4.5 | 75 | | 346 |\nL197: | Financiële kosten | 4.5 | 65 | 730 | 556 |\nL198: | Winst (Verlies) uit de gewone bedrijfsuitoefening (+)/(-) | | 9902 | -80.484 | -26.846 |\nL199: | Uitzonderlijke opbrengsten | | 76 | | 60.000 |\nL200: | Uitzonderlijke kosten | | 66 | | |\nL201: | Winst (Verlies) van het boekjaar (+)/(-) | | 9904 | -80.484 | 33.154 |\nL203: 5/10\n\nLO QUE SE CARGA:\n- ingreso · \"Omzet\" · 0.466399 · L186\n- gasto · \"Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen\" · 0.222157 · L188\n- gasto · \"Bezoldigingen en rechtstreekse sociale voordelen\" · 0.283438 · L264 (de una nota)\n- gasto · \"Werkgeversbijdragen voor sociale verzekeringen\" · 0.022505 · L265 (de una nota)\n- gasto · \"Werkgeverspremies voor bovenwettelijke verzekeringen\" · 0.006999 · L266 (de una nota)\n- gasto · \"Ouderdoms- en overlevingspensioenen\" · 0.006957 · L268 (de una nota)\n- gasto · \"Andere bedrijfskosten\" · 0.004097 · L193\n- financiero · \"Financiële opbrengsten\" · 0 · L196\n- financiero · \"Financiële kosten\" · -0.00073 · L197"
+ }
+}

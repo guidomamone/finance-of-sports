@@ -1,0 +1,38 @@
+## Clubes/Estonia/Nõmme Kalju/aruanne-2025.pdf
+## Clubes/Estonia/Nõmme Kalju/aruanne-2019.pdf
+  [a1c95b8] etapa cargar · categoria
+      Pregunta: ¿"Muu äritegevuse kulu" (0.000046 en millones de la moneda del documento) va como "Otros gastos"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 17 del visor (la hoja tiene impreso "17" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [7198467] etapa cargar · categoria
+      Pregunta: ¿"- sh. treenerite tasud" (0.120977 en millones de la moneda del documento) va como "Salarios del plantel"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 17 del visor (la hoja tiene impreso "17" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [f52f447] etapa cargar · perfil
+      Pregunta: ¿Mittetulundusühing Nõmme Kalju FC tiene otros deportes (básquet, vóley, futsal...) con ingresos o gastos en sus estados financieros?  (por qué: en 2019 "Otras secciones deportivas" da 0; si el club tiene, falta un desglose y se reintenta; si no tiene, el 0 es real. Queda guardado en Admin/registros/perfil-clubes.jsonl para todos sus años.)
+      Propuesta del sistema: responder corregir --valor sí | corregir --valor no (o mandar un agente a buscar)
+## Clubes/Estonia/Nõmme Kalju/aruanne-2020.pdf
+  [795fe4b] etapa cargar · categoria
+      Pregunta: ¿"Jalgpallikooli tegevustoetus" (0.0225 en millones de la moneda del documento) va como "Otras secciones deportivas (juvenil, otros deportes, básquet)"?  (por qué: la categorización le dio 0.65 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 17 del visor (la hoja tiene impreso "17" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [5da31e7] etapa cargar · categoria
+      Pregunta: ¿"Tööjõukulud" (0.466204 en millones de la moneda del documento) va como "Salarios del plantel"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 6 del visor (la hoja tiene impreso "6" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+## Clubes/Estonia/Nõmme Kalju/aruanne-2021.pdf
+  [044ab3c] etapa cargar · categoria
+      Pregunta: ¿"- sh. treenerite tasud" (0.12976 en millones de la moneda del documento) va como "Salarios del plantel"?  (por qué: la categorización le dio 0.75 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 17 del visor (la hoja tiene impreso "17" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+## Clubes/Estonia/Nõmme Kalju/aruanne-2022.pdf
+  [18d3012] etapa cargar · categoria
+      Pregunta: ¿"Muud UEFA toetused" (0.014636 en millones de la moneda del documento) va como "Premios por competencias"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 16 del visor (la hoja tiene impreso "16" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+  [1d41da7] etapa cargar · categoria
+      Pregunta: ¿"kaupade, teenuste müük" (0.002695 en millones de la moneda del documento) va como "Otros ingresos"?  (por qué: la categorización le dio 0.6 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 16 del visor (la hoja tiene impreso "16" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+## Clubes/Estonia/Nõmme Kalju/aruanne-2023.pdf
+## Clubes/Estonia/Nõmme Kalju/aruanne-2024.pdf

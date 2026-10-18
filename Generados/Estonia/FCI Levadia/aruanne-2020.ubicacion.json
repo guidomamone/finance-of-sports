@@ -1,0 +1,313 @@
+{
+ "pdf": "Clubes/Estonia/FCI Levadia/aruanne-2020.pdf",
+ "md": "Clubes/Estonia/FCI Levadia/aruanne-2020.md",
+ "mdSha1": "680a5417dfea7b5e66a55a7210b9e5ff0fc8b2ab",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:46:46.390Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    10
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    28,
+    50
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    83,
+    104
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    115,
+    130
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    141,
+    162
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    173,
+    179
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    214,
+    218
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 8,
+   "lineas": [
+    226,
+    230
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    250,
+    259
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 9,
+   "lineas": [
+    261,
+    270
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 10,
+   "lineas": [
+    281,
+    290
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 10,
+   "lineas": [
+    295,
+    314
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 11,
+   "lineas": [
+    325,
+    333
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 11,
+   "lineas": [
+    335,
+    343
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 11,
+   "lineas": [
+    348,
+    352
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 11,
+   "lineas": [
+    356,
+    359
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 11,
+   "lineas": [
+    363,
+    367
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 12,
+   "lineas": [
+    378,
+    386
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 12,
+   "lineas": [
+    391,
+    395
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 12,
+   "lineas": [
+    400,
+    415
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 13,
+   "lineas": [
+    426,
+    431
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 13,
+   "lineas": [
+    436,
+    442
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 13,
+   "lineas": [
+    449,
+    451
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 13,
+   "lineas": [
+    455,
+    458
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 14,
+   "lineas": [
+    468,
+    475
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 14,
+   "lineas": [
+    477,
+    483
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 14,
+   "lineas": [
+    487,
+    490
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 14,
+   "lineas": [
+    494,
+    496
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 15,
+   "lineas": [
+    512,
+    514
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 17,
+   "lineas": [
+    578,
+    580
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 18,
+   "lineas": [
+    586,
+    588
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 18,
+   "lineas": [
+    592,
+    597
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b15",
+  "b16",
+  "b17",
+  "b18",
+  "b19",
+  "b22"
+ ],
+ "notas_gastos": [
+  "b20",
+  "b21"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(eurodes)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2020",
+ "columna_anterior": "2019",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga como individual el estado 'Tulemiaruanne' (b4), aunque los años previos del club figuran como consolidado?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El documento es de la asociación Spordiklubi FC Levadia sola, sin estados consolidados.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Las columnas del cuadro 'Sihtfinantseerimine tegevuskuludeks seal hulgas' (b17) están en orden 2019 y luego 2020, como dice el encabezado?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Sihtfinantseerimine tegevuskuludeks",
+   "texto": "El encabezado de b17 tiene el orden de años invertido respecto de las demás notas.",
+   "bloques": [
+    "b17"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Entidad sin fines de lucro (MTÜ) con estados individuales únicamente. b22 (finanzas) incluye ingresos y gastos financieros."
+}

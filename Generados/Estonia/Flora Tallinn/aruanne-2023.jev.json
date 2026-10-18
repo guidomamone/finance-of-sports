@@ -1,0 +1,367 @@
+{
+ "md": "Clubes/Estonia/Flora Tallinn/aruanne-2023.md",
+ "generatedAt": "2026-10-18T18:15:14.192Z",
+ "rubrosHuella": "0bffae32e109e12d4d9f1582494085d1919b83c1",
+ "rubros": [
+  {
+   "label": "Liikmetelt saadud tasud",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "UEFA solidaarsustoetus osalemise eest UEFA klubivõistlustel",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Riigi ja/või KOV toetus",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "EJL toetused",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Muud toetused",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Tulu piletimüügist",
+   "lado": "revenue",
+   "page": 20,
+   "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Tulu ülekandeõiguste müügist",
+   "lado": "revenue",
+   "page": 20,
+   "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Tulu mängijaõiguste müügist",
+   "lado": "revenue",
+   "page": 20,
+   "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sponsorlus- ja reklaamitulu",
+   "lado": "revenue",
+   "page": 20,
+   "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Staadioni rent",
+   "lado": "revenue",
+   "page": 20,
+   "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+   "choice": "stadium_other",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Muu tulu ettevõtlusest",
+   "lado": "revenue",
+   "page": 20,
+   "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+   "choice": "other_income",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Muud tulud",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Mängijatele makstav sportlasetoetus",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Jagatud annetused ja toetused\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Mängijatele makstav sportlasestipendium",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Jagatud annetused ja toetused\"",
+   "choice": "wages_squad",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Muud annetused",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Jagatud annetused ja toetused\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Üür ja rent",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Elektrienergia",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\" > desglose de \"Energia\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Kütus",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\" > desglose de \"Energia\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Mitmesugused bürookulud",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Lähetuskulud",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Koolituskulud",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Riiklikud ja kohalikud maksud",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Kulu ebatõenäoliselt laekuvatest nõuetest",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Võistluste ja treeningutega seotud kulud",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Kulud mängijate õiguste ostmisest",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "player_amortisation",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Reklaamikulud",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Konsultatsioonid",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Autokulud",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Kasutusrendikulud",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Pangateenused",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Staadioni halduskulud",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Müüdud kaup soetusmaksumuses",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Muud",
+   "lado": "expense",
+   "page": 22,
+   "section": "nota que desglosa \"Muud kulud\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Mängijate palgakulu",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Tööjõukulud\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sotsiaalmaks mängijate töötasudelt",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Tööjõukulud\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Muu personali palgakulu",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Tööjõukulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Sotsiaalmaks muu personali töötasudelt",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Tööjõukulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Põhivarade kulum ja väärtuse langus",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Kahjum valuutakursi muutustest",
+   "lado": "expense",
+   "page": 22,
+   "section": "nota que desglosa \"Muud kulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Esinduskulud",
+   "lado": "expense",
+   "page": 22,
+   "section": "nota que desglosa \"Muud kulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  }
+ ]
+}

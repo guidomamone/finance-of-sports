@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2022-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2022-06-30-individual.pdf",
+  "club": "lokerentemse-be",
+  "year": 2022,
+  "generatedAt": "2026-10-18T15:27:59.581Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Omzet",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        1.448549
+      ],
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.78117
+      ],
+      "glosa": "Mercaderías, materias primas y auxiliares, servicios y bienes diversos"
+    },
+    {
+      "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.768227
+      ],
+      "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
+    },
+    {
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.005042
+      ],
+      "glosa": "Amortizaciones y correcciones de valor sobre gastos de constitución, inmovilizado intangible y material"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.002548
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

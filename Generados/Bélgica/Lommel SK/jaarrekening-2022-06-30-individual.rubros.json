@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2022-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2022-06-30-individual.pdf",
+  "club": "lommelsk-be",
+  "year": 2022,
+  "generatedAt": "2026-10-18T15:28:00.022Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Brutomarge (+)/(-)",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        1.906439
+      ],
+      "glosa": "Margen bruto (+)/(-)"
+    },
+    {
+      "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        8.4832
+      ],
+      "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
+    },
+    {
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        4.523697
+      ],
+      "glosa": "Amortizaciones y correcciones de valor de gastos de establecimiento, inmovilizado intangible y material"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.007836
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Niet-recurrente bedrijfskosten",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.019352
+      ],
+      "glosa": "Gastos de explotación no recurrentes"
+    }
+  ]
+}

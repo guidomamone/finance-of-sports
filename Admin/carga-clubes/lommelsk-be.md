@@ -98,6 +98,41 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 alta-club.mjs (2026-10-18): null, SIN VERIFICAR (sin caché de rosters para be (tools/club-league-reference/be.json)).
 ```
 
+## 2018
+
+### Ingresos
+
+```text
+2018: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Bélgica/Lommel SK/jaarrekening-2018-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/Lommel SK/jaarrekening-2018-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Brutomarge (+)/(-) | pág. 6, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bezoldigingen, sociale lasten en pensioenen (+)/(-) | pág. 6, Jev 0.99 |
+| 2 | Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa | pág. 6, precedente |
+| 3 | Andere bedrijfskosten | pág. 6, Claude 0.88 |
+| 4 | Niet-recurrente bedrijfskosten | pág. 6, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-18): null, SIN VERIFICAR (sin caché de rosters para be (tools/club-league-reference/be.json)).
+```
+
 ## Fuentes
 
 ### lommelsk-be-jaarrekening-2025-06-30-individual
@@ -106,4 +141,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### lommelsk-be-jaarrekening-2018-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Bélgica/Lommel SK/jaarrekening-2018-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

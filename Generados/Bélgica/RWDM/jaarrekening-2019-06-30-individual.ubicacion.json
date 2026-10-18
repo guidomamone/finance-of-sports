@@ -1,0 +1,72 @@
+{
+ "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2019-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/RWDM/jaarrekening-2019-06-30-individual.md",
+ "mdSha1": "6ec2af6be0e6d1bc6fe1ee2228e3799d19001aeb",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:24.453Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    18,
+    24
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    107,
+    133
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    141,
+    189
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    199,
+    227
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    237,
+    253
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    309,
+    317
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING IN EURO (modelo micro belga NBB, importes en euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Cuentas anuales individuales en modelo micro (MIC). La resultatenrekening (b4) es el único estado de resultados. Arranca en Brutomarge, por lo que la cifra de negocios puede no estar desglosada. Es el primer ejercicio (30-11 a 30-06), así que la columna Vorig boekjaar probablemente está vacía. No hay notas que desglosen ingresos o gastos: b6 contiene las reglas de valoración y amortización, y b5 es la distribución del resultado."
+}

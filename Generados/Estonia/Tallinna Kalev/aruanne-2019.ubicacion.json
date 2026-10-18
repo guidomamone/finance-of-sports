@@ -1,0 +1,287 @@
+{
+ "pdf": "Clubes/Estonia/Tallinna Kalev/aruanne-2019.pdf",
+ "md": "Clubes/Estonia/Tallinna Kalev/aruanne-2019.md",
+ "mdSha1": "9ad027849db864b5de9f7036c928fb36e97fabce",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:46:55.027Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    6,
+    11
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    28,
+    49
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    86,
+    111
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    122,
+    137
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    148,
+    172
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    183,
+    190
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 10,
+   "lineas": [
+    288,
+    297
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    299,
+    309
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    314,
+    323
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    334,
+    350
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    357,
+    359
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    363,
+    366
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    379,
+    389
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 12,
+   "lineas": [
+    391,
+    397
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 13,
+   "lineas": [
+    408,
+    415
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 13,
+   "lineas": [
+    417,
+    422
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 13,
+   "lineas": [
+    427,
+    431
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 13,
+   "lineas": [
+    435,
+    438
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 13,
+   "lineas": [
+    443,
+    448
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 14,
+   "lineas": [
+    459,
+    476
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 14,
+   "lineas": [
+    481,
+    486
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 14,
+   "lineas": [
+    493,
+    495
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 14,
+   "lineas": [
+    499,
+    501
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 15,
+   "lineas": [
+    511,
+    514
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 15,
+   "lineas": [
+    516,
+    519
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 15,
+   "lineas": [
+    523,
+    525
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 16,
+   "lineas": [
+    538,
+    541
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 17,
+   "lineas": [
+    547,
+    549
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 17,
+   "lineas": [
+    553,
+    557
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b17",
+  "b18",
+  "b19"
+ ],
+ "notas_gastos": [
+  "b20",
+  "b21"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(eurodes)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2019",
+ "columna_anterior": "2018",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado individual (b4) aunque el club venía cargándose como consolidado?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El informe de Jalgpalliklubi Tallinna Kalev solo presenta estados individuales, no hay consolidado.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja afuera el cuadro 'Rahalised ja mitterahalised annetused' (b18) por repetir el total de Lisa 8?",
+   "propuesta": "no",
+   "tema": "cuadro-duplicado",
+   "renglon": "Kokku annetused ja toetused",
+   "texto": "b18 solo reclasifica las donaciones de b17 en dinerarias; no agrega importes nuevos.",
+   "bloques": [
+    "b17",
+    "b18"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Documento individual en euros (eurodes). Estado de resultados (Tulemiaruanne) en b4; notas: Lisa 8 donaciones (b17,b18), Lisa 9 ingresos de actividad (b19), Lisa 10 gastos diversos (b20), Lisa 11 personal (b21). Kasutusrent b11 es un gasto de alquiler ya incluido en b20, no se elige."
+}

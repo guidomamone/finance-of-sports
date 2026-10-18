@@ -1,0 +1,513 @@
+{
+ "md": "Clubes/Estonia/Tallinna Kalev/aruanne-2019.md",
+ "generatedAt": "2026-10-18T15:05:41.065Z",
+ "rubrosHuella": "b7bb58d286d362a0e35be1b60c8868f15cc76cfc",
+ "rubros": [
+  {
+   "label": "Renditulud",
+   "lado": "revenue",
+   "page": 13,
+   "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+   "choice": "stadium_other",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "stadium_other",
+     0.89
+    ],
+    [
+     "other_income",
+     0.11
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Mittesihtotstarbelised annetused ja toetused",
+   "lado": "revenue",
+   "page": 13,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1101
+  },
+  {
+   "label": "Kütus",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\" > desglose de \"Energia\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 921
+  },
+  {
+   "label": "Elektrienergia",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\" > desglose de \"Energia\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "Üür ja rent",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "Reklaami müük",
+   "lado": "revenue",
+   "page": 13,
+   "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1071
+  },
+  {
+   "label": "Sihtfinantseerimine tegevuskuludeks",
+   "lado": "revenue",
+   "page": 13,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1107
+  },
+  {
+   "label": "Muud tulud",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Proportsiooniga tagastamatu käibemaks",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1056
+  },
+  {
+   "label": "Staadioni ja saali rent",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Veevarustusteenused",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Treeninglaagrid",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Koolituskulud",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.59
+    ],
+    [
+     "education_expense",
+     0.31
+    ],
+    [
+     "youth_other_sports_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Liikmemaksud",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.78
+    ],
+    [
+     "match_organisation_expense",
+     0.18
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Lähetuskulud",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Mitmesugused bürookulud",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "Transport",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1000
+  },
+  {
+   "label": "Muud",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1002
+  },
+  {
+   "label": "Sotsiaalmaksud",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Tööjõukulud\"",
+   "choice": "wages_squad",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "wages_squad",
+     0.67
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Palgakulu",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Tööjõukulud\"",
+   "choice": "wages_squad",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "wages_squad",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Muud kulud",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Põhivarade kulum ja väärtuse langus",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1085
+  }
+ ]
+}

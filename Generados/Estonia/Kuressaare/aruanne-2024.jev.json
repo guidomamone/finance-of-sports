@@ -1,0 +1,380 @@
+{
+ "md": "Clubes/Estonia/Kuressaare/aruanne-2024.md",
+ "generatedAt": "2026-10-18T18:15:14.790Z",
+ "rubrosHuella": "8bf383ba42e8ced7448902ff3bffc6220d5f59fa",
+ "rubros": [
+  {
+   "label": "UEFA solidaarsustoetus",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "competition_bonus",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "EJL toetused",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Riigi ja/või kohaliku omavalitsuse toetused",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Muud toetused",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Piletitulu",
+   "lado": "revenue",
+   "page": 13,
+   "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Muu tulu ettevõtlusest",
+   "lado": "revenue",
+   "page": 13,
+   "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Muud tulud",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Üür ja rent",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Energia",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Mitmesugused bürookulud",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Koolituskulud",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Riiklikud ja kohalikud maksud",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Kodumängu korralduskulud",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Mängijatele makstav sportlasetoetus",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Liikmemaksud",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Muud",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "EJL litsentsiga töötajate (v.a. mängijad) palgakulu",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Tööjõukulud\"",
+   "choice": "wages_squad",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "EJL litsentsiga töötajate (v.a. mängijad) maksud",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Tööjõukulud\"",
+   "choice": "wages_squad",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Mängijate palgakulu",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Tööjõukulud\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sotsiaalmaks mängijate töötasudelt",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Tööjõukulud\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Põhivarade kulum ja väärtuse langus",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Muud kulud",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Klubile kuuluvate ja tema poolt renditud hoonete ja rajatistega seotud kulud",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1148
+  },
+  {
+   "label": "Klubi sümboolikaga toodete müügitulu",
+   "lado": "revenue",
+   "page": 13,
+   "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1093
+  },
+  {
+   "label": "Eesti meistrivõistluste osavõtutasu",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1089
+  },
+  {
+   "label": "Sponsorlus- ja reklaamitulu",
+   "lado": "revenue",
+   "page": 13,
+   "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1081
+  },
+  {
+   "label": "Turundus-, sponsorlus- ja reklaamikulud",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Võistkondade välissõitude- ja lähetuskulud",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1097
+  },
+  {
+   "label": "Müüdud toodete ja muu varustuse maksumus",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.35
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1062
+  }
+ ]
+}

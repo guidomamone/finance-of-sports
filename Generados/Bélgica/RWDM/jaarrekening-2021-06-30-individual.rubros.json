@@ -1,0 +1,80 @@
+{
+  "md": "Clubes/Bélgica/RWDM/jaarrekening-2021-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2021-06-30-individual.pdf",
+  "club": "rwdm-be",
+  "year": 2021,
+  "generatedAt": "2026-10-18T15:37:12.230Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Brutomarge (+)/(-)",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        1.547882
+      ],
+      "glosa": "Margen bruto (+)/(-)"
+    },
+    {
+      "label": "Waarvan: niet-recurrente bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.005
+      ],
+      "glosa": "De los cuales: ingresos de explotación no recurrentes"
+    },
+    {
+      "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        1.758356
+      ],
+      "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
+    },
+    {
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.075693
+      ],
+      "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, inmovilizado intangible y material"
+    },
+    {
+      "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
+      "values": [
+        -0.036391
+      ],
+      "glosa": "Pérdidas por deterioro de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.001639
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Niet-recurrente bedrijfskosten",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.138274
+      ],
+      "glosa": "Gastos de explotación no recurrentes"
+    }
+  ]
+}

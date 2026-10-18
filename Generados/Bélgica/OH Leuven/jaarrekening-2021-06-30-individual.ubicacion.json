@@ -1,0 +1,255 @@
+{
+ "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2021-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2021-06-30-individual.md",
+ "mdSha1": "09c42287027e1c7adde14d4f4fc67556c1f37e1b",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:27:57.750Z",
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    169,
+    172
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    293,
+    299
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 6,
+   "lineas": [
+    308,
+    311
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    327,
+    329
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    334,
+    337
+   ],
+   "tipo": "texto"
+  },
+  "b6": {
+   "pagina": 6,
+   "lineas": [
+    349,
+    355
+   ],
+   "tipo": "texto"
+  },
+  "b7": {
+   "pagina": 12,
+   "lineas": [
+    737,
+    758
+   ],
+   "tipo": "texto"
+  },
+  "b8": {
+   "pagina": 19,
+   "lineas": [
+    1354,
+    1368
+   ],
+   "tipo": "texto"
+  },
+  "b9": {
+   "pagina": 19,
+   "lineas": [
+    1372,
+    1375
+   ],
+   "tipo": "texto"
+  },
+  "b10": {
+   "pagina": 22,
+   "lineas": [
+    1487,
+    1497
+   ],
+   "tipo": "texto"
+  },
+  "b11": {
+   "pagina": 22,
+   "lineas": [
+    1500,
+    1510
+   ],
+   "tipo": "texto"
+  },
+  "b12": {
+   "pagina": 22,
+   "lineas": [
+    1514,
+    1525
+   ],
+   "tipo": "texto"
+  },
+  "b13": {
+   "pagina": 22,
+   "lineas": [
+    1529,
+    1540
+   ],
+   "tipo": "texto"
+  },
+  "b14": {
+   "pagina": 23,
+   "lineas": [
+    1547,
+    1567
+   ],
+   "tipo": "texto"
+  },
+  "b15": {
+   "pagina": 27,
+   "lineas": [
+    1874,
+    1880
+   ],
+   "tipo": "texto"
+  },
+  "b16": {
+   "pagina": 27,
+   "lineas": [
+    1887,
+    1890
+   ],
+   "tipo": "texto"
+  },
+  "b17": {
+   "pagina": 27,
+   "lineas": [
+    1896,
+    1900
+   ],
+   "tipo": "texto"
+  },
+  "b18": {
+   "pagina": 28,
+   "lineas": [
+    1912,
+    1917
+   ],
+   "tipo": "texto"
+  },
+  "b19": {
+   "pagina": 28,
+   "lineas": [
+    1923,
+    1939
+   ],
+   "tipo": "texto"
+  },
+  "b20": {
+   "pagina": 28,
+   "lineas": [
+    1943,
+    1959
+   ],
+   "tipo": "texto"
+  },
+  "b21": {
+   "pagina": 35,
+   "lineas": [
+    2428,
+    2438
+   ],
+   "tipo": "texto"
+  },
+  "b22": {
+   "pagina": 36,
+   "lineas": [
+    2490,
+    2496
+   ],
+   "tipo": "texto"
+  },
+  "b23": {
+   "pagina": 40,
+   "lineas": [
+    2748,
+    2751
+   ],
+   "tipo": "texto"
+  },
+  "b24": {
+   "pagina": 41,
+   "lineas": [
+    2815,
+    2817
+   ],
+   "tipo": "texto"
+  },
+  "b25": {
+   "pagina": 42,
+   "lineas": [
+    2865,
+    2867
+   ],
+   "tipo": "texto"
+  },
+  "b26": {
+   "pagina": 46,
+   "lineas": [
+    3120,
+    3135
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b22"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con decimales en euros (ej. -3.872.471,42) en el resumen del jaarverslag pág. 36",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/06/2021",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado de resultados desde el resumen del jaarverslag de la pág. 36 (b22), dado que la resultatenrekening del modelo BNB no aparece en el índice de bloques?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El índice no tiene bloque de la resultatenrekening oficial (págs. 7-8 probables); b22 es una versión resumida e incompleta, sus líneas superiores (-155.532,17; -8.407.269,20; -15.530.659,47) quedan fuera del bloque.",
+   "bloques": [
+    "b22"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Hay en el PDF páginas de la resultatenrekening (códigos 70/76A ... 9904) no transcritas que deberían usarse en lugar de b22?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Faltan ingresos (bedrijfsopbrengsten, omzet) y gastos de personal en lo transcrito; el estado completo debería existir en el modelo BNB.",
+   "bloques": [
+    "b22"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales (modelo BNB VOL-kap) de OH Leuven al 30/06/2021. Solo se identifica un fragmento del estado de resultados en b22 (pág. 36, comentario del jaarverslag), sin columna de año anterior. El resto de bloques son balance, deudas, garantías, impuestos, informe del auditor y balance social: excluidos."
+}

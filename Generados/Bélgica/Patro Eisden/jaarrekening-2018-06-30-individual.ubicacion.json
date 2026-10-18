@@ -1,0 +1,118 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2018-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2018-06-30-individual.md",
+ "mdSha1": "8cae63ab0839e75ad26fa7fe5579c78b80244296",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:23.897Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    25,
+    31
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    129,
+    166
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    174,
+    216
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    226,
+    246
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    256,
+    265
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    277,
+    293
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    309,
+    313
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    317,
+    340
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    350,
+    355
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    359,
+    375
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b6"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Esquema VKT-vzw del modelo belga de la Balanscentrale; se presenta en euros (sin indicación de miles en los bloques).",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el cuadro 'Toelichting - Resultaten' (b6) como desglose de gastos, en particular de los personeelskosten, afschrijvingen y voorzieningen de la resultatenrekening?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Bezoldigingen, sociale lasten en pensioenen",
+   "texto": "b6 trae sobre todo datos de personal y algunos importes de desglose de gastos; puede que solo tenga cifras informativas.",
+   "bloques": [
+    "b6"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales de una vzw (modelo abreviado VKT-vzw). El estado de resultados es b4 (Resultatenrekening, pág. 6). b6 es la nota de resultados (personal y otros desgloses). Se excluyen el balance (b2, b3), la distribución del resultado (b5) y el balance social o los cuadros de personal (b7-b10). En el modelo abreviado los ingresos aparecen dentro de la brutomarge, sin desglose de ingresos."
+}

@@ -1,0 +1,379 @@
+{
+ "md": "Clubes/Estonia/Narva Trans/aruanne-2022.md",
+ "generatedAt": "2026-10-18T18:15:15.065Z",
+ "rubrosHuella": "14cb3abc75099e9df9dd74f5522a39f0d313cd1a",
+ "rubros": [
+  {
+   "label": "Sihtfinantseerimine tegevuskuludeks",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "EJLiidu toetused",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "other_income",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "UEFA solidaarsustoetus noorte- ja kogukonnatööle",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "youth_football",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Mitteseotud osapoolte toetused/annetused",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Väljaku äärde ja reklaamtahvlitele paigaldatud reklaam",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Klubi sümboolikaga toodete müügitulu",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Piletitulu",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Tulu mängijaõiguste müügist",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Kulu mängijaõiguste soetamisest ja ülemineku registreerimistasudest",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Kodumängu korralduskulud",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Võistkondade välissõitude- ja lähetuskulud",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Klubile kuuluvate ja tema poolt renditud hoonete ja rajatistega seotud kulud",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Klubi administreerimiskulud",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Meditsiinitarvikud- ja teenused",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Mänguvormid jm varustus",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Muu äritegevuse kulu/koolitus, riigilõiv",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Muud klassifitseerimata tegevuskulud",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Eesti meistrivõistluste osavõtutasu",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Muud",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Mängijate palgakulu",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Tööjõukulud\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sotsiaalmaks mängijate töötasudelt",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Tööjõukulud\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Mängijatele makstav sportlasetoetus",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Tööjõukulud\"",
+   "choice": "wages_squad",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Mängijatele makstav EJL arengustipendium",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Tööjõukulud\"",
+   "choice": "wages_squad",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Muu personali palgakulu",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Tööjõukulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Sotsiaalmaks muu personali töötasudelt",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Tööjõukulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Muud kulud",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Kooli poolt renditud hoonete ja rajatistega seotud kulud",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.76
+    ],
+    [
+     "education_expense",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1109
+  },
+  {
+   "label": "Muu klassifitseerimata sponsorlus- ja reklaamitulu",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.89
+    ],
+    [
+     "other_income",
+     0.11
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "Klubisümboolikaga toodete omahind",
+   "lado": "expense",
+   "page": 13,
+   "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1084
+  },
+  {
+   "label": "Riigi ja KOV toetused",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1104
+  },
+  {
+   "label": "Liikmemaksud",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Liikmetelt saadud tasud\"",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Treeningtasu",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Liikmetelt saadud tasud\"",
+   "choice": "member_dues",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "member_dues",
+     0.52
+    ],
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "education",
+     0.08
+    ]
+   ],
+   "tokens": 1021
+  }
+ ]
+}

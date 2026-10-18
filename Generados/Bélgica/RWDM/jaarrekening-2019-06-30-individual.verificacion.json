@@ -1,0 +1,101 @@
+{
+ "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2019-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/RWDM/jaarrekening-2019-06-30-individual.md",
+ "generado": "2026-10-18T15:46:15.694Z",
+ "estado": "ok",
+ "clubId": "rwdm-be",
+ "year": 2019,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)",
+   "dif": 0
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": null,
+   "detalle": "no se puede comparar: jaarrekening-2020-06-30-individual.pdf no trae la columna del año anterior"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2018: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0,
+  "gastos": 0.00157,
+  "financiero": 0.000013,
+  "impuesto": 0,
+  "resultadoImpreso": -0.001583,
+  "resultadoParaCargar": -0.001583,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.00157,
+   "pagina": 6,
+   "linea": 206,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Recurrente financiële kosten",
+   "M": -0.000013,
+   "linea": 218
+  }
+ ],
+ "impuesto": [],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "89852870bf53ffea76fd27eeb1826ad3b1027ef3",
+  "rango": [
+   203,
+   230
+  ],
+  "lineasCargadas": [
+   206,
+   218
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 203 a 230 del .md):\nL203: | Omzet |  | 70 |  |  |\nL204: | Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen |  | 60/61 |  |  |\nL205: | Bezoldigingen, sociale lasten en pensioenen (+)/(-) |  | 62 |  |  |\nL206: | Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa |  | 630 | 1.570 |  |\nL207: | Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) |  | 631/4 |  |  |\nL208: | Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-) |  | 635/8 |  |  |\nL209: | Andere bedrijfskosten |  | 640/8 |  |  |\nL210: | Als herstructureringskosten geactiveerde bedrijfskosten (-) |  | 649 |  |  |\nL211: | Niet-recurrente bedrijfskosten |  | 66A |  |  |\nL212: | Bedrijfswinst (Bedrijfsverlies) (+)/(-) |  | 9901 | -1.570 |  |\nL213: | Financiële opbrengsten |  | 75/76B |  |  |\nL214: | Recurrente financiële opbrengsten |  | 75 |  |  |\nL215: | Waarvan: kapitaal- en interestsubsidies |  | 753 |  |  |\nL216: | Niet-recurrente financiële opbrengsten |  | 76B |  |  |\nL217: | Financiële kosten |  | 65/66B | 13 |  |\nL218: | Recurrente financiële kosten |  | 65 | 13 |  |\nL219: | Niet-recurrente financiële kosten |  | 66B |  |  |\nL220: | Winst (Verlies) van het boekjaar vóór belasting (+)/(-) |  | 9903 | -1.583 |  |\nL221: | Onttrekking aan de uitgestelde belastingen |  | 780 |  |  |\nL222: | Overboeking naar de uitgestelde belastingen |  | 680 |  |  |\nL223: | Belastingen op het resultaat (+)/(-) |  | 67/77 |  |  |\nL224: | Winst (Verlies) van het boekjaar (+)/(-) |  | 9904 | -1.583 |  |\nL225: | Onttrekking aan de belastingvrije reserves |  | 789 |  |  |\nL226: | Overboeking naar de belastingvrije reserves |  | 689 |  |  |\nL227: | Te bestemmen winst (verlies) van het boekjaar (+)/(-) |  | 9905 | -1.583 |  |\nL229: 6/10\n\nLO QUE SE CARGA:\n- gasto · \"Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële v\" · 0.00157 · L206\n- financiero · \"Recurrente financiële kosten\" · -0.000013 · L218"
+ }
+}

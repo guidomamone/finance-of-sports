@@ -1,0 +1,246 @@
+{
+ "pdf": "Clubes/Estonia/Narva Trans/aruanne-2019.pdf",
+ "md": "Clubes/Estonia/Narva Trans/aruanne-2019.md",
+ "mdSha1": "a360af0a9df5dcb942531dd9eb82c249c8105827",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:46:53.691Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    10
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    27,
+    48
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    89,
+    108
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    120,
+    133
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    145,
+    158
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    170,
+    176
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    260,
+    264
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    274,
+    276
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    328,
+    332
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    338,
+    343
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 10,
+   "lineas": [
+    345,
+    350
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    362,
+    375
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 11,
+   "lineas": [
+    381,
+    386
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 11,
+   "lineas": [
+    390,
+    395
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 12,
+   "lineas": [
+    409,
+    416
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 12,
+   "lineas": [
+    418,
+    423
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 12,
+   "lineas": [
+    429,
+    432
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 12,
+   "lineas": [
+    438,
+    445
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 13,
+   "lineas": [
+    457,
+    465
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 13,
+   "lineas": [
+    471,
+    493
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 14,
+   "lineas": [
+    505,
+    511
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 14,
+   "lineas": [
+    519,
+    522
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 14,
+   "lineas": [
+    526,
+    528
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 15,
+   "lineas": [
+    541,
+    545
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 17,
+   "lineas": [
+    635,
+    637
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 18,
+   "lineas": [
+    643,
+    645
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 18,
+   "lineas": [
+    649,
+    652
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b18",
+  "b19"
+ ],
+ "notas_gastos": [
+  "b20",
+  "b21"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(eurodes)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2019",
+ "columna_anterior": "2018",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados (Tulemiaruanne) individual en euros en b4. Notas: Lisa 8 Annetused ja toetused (b18) y Lisa 9 Tulu ettevõtlusest (b19) abren ingresos; Lisa 10 Mitmesugused tegevuskulud (b20) y Lisa 11 Tööjõukulud (b21) abren gastos. Se excluyen balance, flujo, patrimonio, activo fijo, préstamos, deudas y partes relacionadas."
+}

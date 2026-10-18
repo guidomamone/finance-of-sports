@@ -1,0 +1,183 @@
+{
+ "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2018-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2018-06-30-individual.md",
+ "mdSha1": "31ab4c4b73421133bb4796e3b96ddbf1c41f4f07",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:22.716Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    3,
+    5
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    25,
+    31
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    114,
+    141
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    149,
+    198
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    208,
+    237
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    247,
+    263
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    275,
+    292
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    300,
+    328
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    338,
+    351
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    361,
+    371
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    373,
+    376
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    378,
+    386
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    435,
+    443
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 14,
+   "lineas": [
+    505,
+    507
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 22,
+   "lineas": [
+    788,
+    792
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 22,
+   "lineas": [
+    794,
+    817
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 23,
+   "lineas": [
+    827,
+    832
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 23,
+   "lineas": [
+    836,
+    852
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b9"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING IN EURO (b2); formato verkort schema sin indicación de miles",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la columna 'Vorig boekjaar' del estado b5 como ejercicio anterior, aun si el periodo anterior es un primer ejercicio irregular o está vacío?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El periodo empieza el 29-06 (b2) y la sociedad parece reciente, la columna anterior podría estar vacía o cubrir un periodo distinto.",
+   "bloques": [
+    "b5",
+    "b2"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales en formato abreviado (VKT) belga. Estado de resultados en b5 (RESULTATENREKENING, parte desde Brutomarge). b9 (VKT 6.4 Resultaten) desglosa personal y resultados financieros. b6 es destino del resultado, b3/b4 balance, b15 balance social (no se cargan)."
+}

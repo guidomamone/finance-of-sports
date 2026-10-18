@@ -1,0 +1,398 @@
+{
+ "md": "Clubes/Bélgica/Beerschot/jaarrekening-2020-06-30-individual.md",
+ "generatedAt": "2026-10-18T15:33:34.382Z",
+ "rubrosHuella": "d3f5dd8d9fa703bdfd006a798667325d0d0ae4fa",
+ "rubros": [
+  {
+   "label": "Niet-recurrente bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1089
+  },
+  {
+   "label": "Andere bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "player_sales",
+     0.04
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Commercieel",
+   "lado": "revenue",
+   "page": 21,
+   "section": "nota que desglosa \"Omzet\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Ticketing & abonnementen",
+   "lado": "revenue",
+   "page": 21,
+   "section": "nota que desglosa \"Omzet\"",
+   "choice": "matchday_competition",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "matchday_competition",
+     0.85
+    ],
+    [
+     "season_tickets",
+     0.15
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "Sponsoring",
+   "lado": "revenue",
+   "page": 21,
+   "section": "nota que desglosa \"Omzet\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1050
+  },
+  {
+   "label": "Aankopen",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 953
+  },
+  {
+   "label": "Voorraad: afname (toename) (+)/(-)",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "TV rechten",
+   "lado": "revenue",
+   "page": 21,
+   "section": "nota que desglosa \"Omzet\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Diensten en diverse goederen",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Werkgeversbijdragen voor sociale verzekeringen",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "wages_squad",
+     0.97
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1112
+  },
+  {
+   "label": "Bedrijfsbelastingen en -taksen",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Andere bedrijfskosten\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "depreciation",
+     0.88
+    ],
+    [
+     "player_amortisation",
+     0.09
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 1162
+  },
+  {
+   "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1215
+  },
+  {
+   "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1076
+  },
+  {
+   "label": "Andere personeelskosten",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+   "choice": "wages_squad",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "wages_squad",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Andere",
+   "lado": "expense",
+   "page": 21,
+   "section": "nota que desglosa \"Andere bedrijfskosten\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 994
+  },
+  {
+   "label": "Niet-recurrente bedrijfskosten",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "exceptional_items",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "exceptional_items",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1043
+  }
+ ]
+}

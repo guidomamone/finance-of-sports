@@ -1,0 +1,118 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2019-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2019-06-30-individual.md",
+ "mdSha1": "0d21ff45d89e71c7b16f8c8e733b5b4e206e9049",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:23.973Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    25,
+    31
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 5,
+   "lineas": [
+    130,
+    167
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 6,
+   "lineas": [
+    175,
+    217
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 7,
+   "lineas": [
+    227,
+    247
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 8,
+   "lineas": [
+    257,
+    266
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 9,
+   "lineas": [
+    278,
+    294
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 10,
+   "lineas": [
+    308,
+    312
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    314,
+    337
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    347,
+    352
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    356,
+    372
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b6"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Los modelos belgas de la NBB (VKT-vzw) se presentan en euros; el índice no muestra ninguna frase que indique escala.",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes del estado de resultados (b4) en euros, sin multiplicar?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "En el índice no aparece ninguna línea del tipo 'in euro' o 'in duizenden euro' que confirme la escala.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Las cuentas anuales son individuales, según el modelo abreviado para vzw (VKT-vzw). El estado de resultados (Resultatenrekening) está en el bloque b4, en la página 7. El bloque b6 (Toelichting Resultaten) desglosa los personeelskosten y otros renglones de resultados. Se dejan afuera: el balance (b2, b3), la resultaatverwerking (b5) y la sociale balans (b7 a b10), que son datos de personal."
+}

@@ -1,0 +1,305 @@
+{
+ "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2019.pdf",
+ "md": "Clubes/Estonia/Nõmme Kalju/aruanne-2019.md",
+ "mdSha1": "776e8d451fbe3f5967611cdcb24a71a00a845f98",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:54:30.098Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    10
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    28,
+    55
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    119,
+    144
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    154,
+    173
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    183,
+    210
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    220,
+    226
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    310,
+    324
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 11,
+   "lineas": [
+    326,
+    340
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 12,
+   "lineas": [
+    352,
+    361
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    379,
+    399
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 14,
+   "lineas": [
+    417,
+    424
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    426,
+    434
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 15,
+   "lineas": [
+    444,
+    454
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 15,
+   "lineas": [
+    456,
+    466
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 16,
+   "lineas": [
+    490,
+    497
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 16,
+   "lineas": [
+    501,
+    504
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 16,
+   "lineas": [
+    510,
+    522
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 16,
+   "lineas": [
+    528,
+    531
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 17,
+   "lineas": [
+    540,
+    556
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 17,
+   "lineas": [
+    565,
+    571
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 17,
+   "lineas": [
+    573,
+    576
+   ],
+   "tipo": "texto"
+  },
+  "b22": {
+   "pagina": 18,
+   "lineas": [
+    590,
+    592
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 18,
+   "lineas": [
+    596,
+    602
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 18,
+   "lineas": [
+    606,
+    609
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 18,
+   "lineas": [
+    611,
+    614
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 18,
+   "lineas": [
+    618,
+    620
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 18,
+   "lineas": [
+    624,
+    625
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 19,
+   "lineas": [
+    631,
+    633
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 22,
+   "lineas": [
+    724,
+    726
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 23,
+   "lineas": [
+    732,
+    734
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 23,
+   "lineas": [
+    738,
+    742
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b15",
+  "b16",
+  "b17"
+ ],
+ "notas_gastos": [
+  "b18",
+  "b19",
+  "b20",
+  "b21"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(eurodes)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2019",
+ "columna_anterior": "2018",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado individual de la MTÜ (b4) aunque los años previos figuren como consolidado?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El documento solo presenta estados de la MTÜ Nõmme Kalju FC sin mención a consolidación.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja afuera el cuadro b16 (annetused rahalised/mitterahalised) por repetir el total de b15?",
+   "propuesta": "no",
+   "tema": "cuadro-duplicado",
+   "renglon": "Kokku annetused ja toetused",
+   "texto": "b16 solo reclasifica el total de donaciones de b15 en monetarias, sin abrir más.",
+   "bloques": [
+    "b15",
+    "b16"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados (Tulemiaruanne) en b4, en euros. Notas: Lisa 11 donaciones y subsidios (b15,b16), Lisa 12 ingresos de actividad (b17), Lisa 13 subsidios distribuidos (b18), Lisa 14 gastos operativos varios (b19), Lisa 15 gastos de personal (b20) con desglose de salarios en b21. Documento individual de una MTÜ, sin estado consolidado."
+}

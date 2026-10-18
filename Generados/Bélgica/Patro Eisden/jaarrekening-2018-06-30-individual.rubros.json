@@ -1,0 +1,110 @@
+{
+  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2018-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2018-06-30-individual.pdf",
+  "club": "patroeisden-be",
+  "year": 2018,
+  "generatedAt": "2026-10-18T15:28:00.289Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.314774
+      ],
+      "glosa": "Ingresos de explotación"
+    },
+    {
+      "label": "Uitzonderlijke opbrengsten",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Ingresos excepcionales"
+    },
+    {
+      "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.362096
+      ],
+      "glosa": "Mercaderías, materias primas y auxiliares, servicios y bienes diversos"
+    },
+    {
+      "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+      "lado": "expense",
+      "page": 8,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        0.303854
+      ],
+      "glosa": "Remuneraciones y prestaciones sociales directas"
+    },
+    {
+      "label": "Werkgeversbijdragen voor sociale verzekeringen",
+      "lado": "expense",
+      "page": 8,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        0.046338
+      ],
+      "glosa": "Cotizaciones patronales a la seguridad social"
+    },
+    {
+      "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+      "lado": "expense",
+      "page": 8,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        0.013993
+      ],
+      "glosa": "Primas patronales para seguros complementarios"
+    },
+    {
+      "label": "Andere personeelskosten",
+      "lado": "expense",
+      "page": 8,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        0.01397
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Ouderdoms- en overlevingspensioenen",
+      "lado": "expense",
+      "page": 8,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        0.000264
+      ],
+      "glosa": "Pensiones de jubilación y supervivencia"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.002611
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Uitzonderlijke kosten",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.1834
+      ],
+      "glosa": "Gastos excepcionales"
+    }
+  ]
+}

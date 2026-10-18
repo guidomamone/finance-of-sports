@@ -1,0 +1,50 @@
+{
+  "md": "Clubes/Estonia/Harju JK Laagri/aruanne-2024.md",
+  "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2024.pdf",
+  "club": "harjujklaagri-ee",
+  "year": 2024,
+  "generatedAt": "2026-10-18T14:54:31.223Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Annetused ja toetused",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.0025
+      ],
+      "glosa": "Donaciones y subvenciones"
+    },
+    {
+      "label": "Tulu ettevõtlusest",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.048202
+      ],
+      "glosa": "Ingresos de actividades empresariales"
+    },
+    {
+      "label": "Mitmesugused tegevuskulud",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.063321
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Muud kulud",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.000664
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2021-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2021-06-30-individual.md",
+ "mdSha1": "415cab66835e2ac2674c9da2f2503d17b0345532",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:24.206Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    19,
+    27
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 5,
+   "lineas": [
+    144,
+    171
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 6,
+   "lineas": [
+    179,
+    219
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 7,
+   "lineas": [
+    229,
+    258
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 8,
+   "lineas": [
+    268,
+    275
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 9,
+   "lineas": [
+    285,
+    313
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 10,
+   "lineas": [
+    323,
+    327
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    329,
+    332
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    337,
+    340
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    350,
+    363
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 12,
+   "lineas": [
+    373,
+    412
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 12,
+   "lineas": [
+    414,
+    416
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 13,
+   "lineas": [
+    429,
+    432
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 13,
+   "lineas": [
+    436,
+    440
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 13,
+   "lineas": [
+    442,
+    447
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 14,
+   "lineas": [
+    457,
+    466
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 14,
+   "lineas": [
+    468,
+    472
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 14,
+   "lineas": [
+    474,
+    478
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 15,
+   "lineas": [
+    492,
+    496
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 15,
+   "lineas": [
+    498,
+    521
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 16,
+   "lineas": [
+    531,
+    536
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 16,
+   "lineas": [
+    540,
+    556
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 20,
+   "lineas": [
+    708,
+    710
+   ],
+   "tipo": "texto"
+  },
+  "b24": {
+   "pagina": 21,
+   "lineas": [
+    734,
+    736
+   ],
+   "tipo": "texto"
+  },
+  "b25": {
+   "pagina": 22,
+   "lineas": [
+    762,
+    764
+   ],
+   "tipo": "texto"
+  },
+  "b26": {
+   "pagina": 23,
+   "lineas": [
+    793,
+    795
+   ],
+   "tipo": "texto"
+  },
+  "b27": {
+   "pagina": 24,
+   "lineas": [
+    821,
+    823
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b10"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING IN EURO (b1)",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el cuadro 'RESULTATEN' (6.4, pág. 11) como desglose de gastos de personal y financieros de la resultatenrekening?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El bloque b10 mezcla datos de personal (VTE) con posibles desgloses de kosten; solo se ven primeras y últimas filas.",
+   "bloques": [
+    "b10"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Jaarrekening individual de una vzw (modelo VKT-vzw) en euros. b4 es la resultatenrekening (abre con Brutomarge, modelo abreviado). b10 es la nota 6.4 Resultaten (personal y resultados financieros). Balance, resultaatverwerking, fondos, derechos fuera de balance, sociale balans e informe del auditor se excluyen."
+}

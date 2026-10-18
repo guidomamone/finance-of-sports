@@ -1,0 +1,235 @@
+{
+ "pdf": "Clubes/Estonia/Narva Trans/aruanne-2021.pdf",
+ "md": "Clubes/Estonia/Narva Trans/aruanne-2021.md",
+ "generado": "2026-10-18T18:56:31.001Z",
+ "estado": "ok",
+ "clubId": "narvatrans-ee",
+ "year": 2021,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Narva Trans/aruanne-2021.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L125) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Narva Trans/aruanne-2021.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "sin ninguna fila de derechos de TV en el estado consolidado ni en sus notas (grep ülekandeõigus/teleõigus: 0); mismo caso que el 2025 del club (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "0.477879 = 0.477879",
+   "suma": 0.477879,
+   "impreso": 0.477879
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "0.578109 = 0.578108",
+   "suma": 0.578109,
+   "impreso": 0.578108
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.000001000000000001
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": false,
+   "detalle": "la columna 2020 de este documento suma ingresos 0.585674; el sitio tiene 0.478467"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2021: 0.477879 en este documento y 0.477879 en aruanne-2022.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": false,
+   "detalle": "ingresos de 2020: 0.478467 en aruanne-2020.pdf y 0.585674 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Tulu ettevõtlusest\" no suma el renglón (0.071924 contra 0.071924, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Mitmesugused tegevuskulud\" no suma el renglón (0.111982 contra 0.118794, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): corregir no, en aruanne-2021.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"Tulu ettevõtlusest\"): aceptar, en aruanne-2021.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"Tulu ettevõtlusest\"): aceptar, en aruanne-2021.pdf",
+  "duda de extraer que no afecta la carga: 3 444+1 638+1 721 = 6 803 (L449), por lo que L453 no forma parte de Energia."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Tulu ettevõtlusest",
+   "suma": 0.071924,
+   "objetivo": 0.071924
+  },
+  {
+   "renglon": "Mitmesugused tegevuskulud",
+   "suma": 0.111982,
+   "objetivo": 0.118794
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Tulu ettevõtlusest",
+   "suma": 0.071924,
+   "objetivo": 0.071924
+  },
+  {
+   "renglon": "Mitmesugused tegevuskulud",
+   "suma": 0.111982,
+   "objetivo": 0.118794
+  }
+ ],
+ "totales": {
+  "ingresos": 0.477879,
+  "gastos": 0.578109,
+  "financiero": 0.000161,
+  "impuesto": 0,
+  "resultadoImpreso": -0.100068,
+  "resultadoParaCargar": -0.100068,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Liikmetelt saadud tasud",
+   "lado": "ingreso",
+   "M": 0.056015,
+   "pagina": 5,
+   "linea": 131,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Riigi ja/või KOV toetused",
+   "lado": "ingreso",
+   "M": 0.176628,
+   "pagina": 12,
+   "linea": 417,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "EJL toetused",
+   "lado": "ingreso",
+   "M": 0.149214,
+   "pagina": 12,
+   "linea": 418,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "UEFA solidaarsustoetus noorte- ja kogukonnatööle",
+   "lado": "ingreso",
+   "M": 0.02317,
+   "pagina": 12,
+   "linea": 419,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Mitteseotud osapoolte toetused/annetused",
+   "lado": "ingreso",
+   "M": 0.000928,
+   "pagina": 12,
+   "linea": 420,
+   "origen": "nota que desglosa \"Annetused ja toetused\""
+  },
+  {
+   "etiqueta": "Tulu ettevõtlusest",
+   "lado": "ingreso",
+   "M": 0.071924,
+   "pagina": 5,
+   "linea": 133,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Muud tulud",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 5,
+   "linea": 134,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Mitmesugused tegevuskulud",
+   "lado": "gasto",
+   "M": 0.118794,
+   "pagina": 5,
+   "linea": 137,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Palgakulu",
+   "lado": "gasto",
+   "M": 0.226123,
+   "pagina": 14,
+   "linea": 477,
+   "origen": "nota que desglosa \"Tööjõukulud\""
+  },
+  {
+   "etiqueta": "Sotsiaalmaksud",
+   "lado": "gasto",
+   "M": 0.068902,
+   "pagina": 14,
+   "linea": 478,
+   "origen": "nota que desglosa \"Tööjõukulud\""
+  },
+  {
+   "etiqueta": "töötuskindlustusmaks ettevõttest",
+   "lado": "gasto",
+   "M": 0.001794,
+   "pagina": 14,
+   "linea": 479,
+   "origen": "nota que desglosa \"Tööjõukulud\""
+  },
+  {
+   "etiqueta": "Sportlase toetus/stipendium",
+   "lado": "gasto",
+   "M": 0.154071,
+   "pagina": 14,
+   "linea": 480,
+   "origen": "nota que desglosa \"Tööjõukulud\""
+  },
+  {
+   "etiqueta": "Muud kulud",
+   "lado": "gasto",
+   "M": 0.008425,
+   "pagina": 5,
+   "linea": 139,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Muud finantstulud ja -kulud",
+   "M": 0.000161,
+   "linea": 142
+  }
+ ],
+ "impuesto": []
+}

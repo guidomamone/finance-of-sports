@@ -1,0 +1,190 @@
+{
+ "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2021-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2021-06-30-individual.md",
+ "mdSha1": "2fe85e6637f35bb85a7ec175794ec5deb910104a",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:22.903Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    25,
+    33
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    115,
+    142
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    150,
+    204
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    214,
+    243
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    253,
+    269
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    281,
+    298
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    306,
+    330
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    338,
+    366
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    376,
+    406
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    416,
+    429
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 13,
+   "lineas": [
+    439,
+    478
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    496,
+    499
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 15,
+   "lineas": [
+    522,
+    531
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 15,
+   "lineas": [
+    537,
+    539
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 16,
+   "lineas": [
+    572,
+    580
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 17,
+   "lineas": [
+    619,
+    623
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 17,
+   "lineas": [
+    625,
+    648
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 18,
+   "lineas": [
+    658,
+    663
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 18,
+   "lineas": [
+    667,
+    683
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b10"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING IN EURO",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se usa el bloque b10 (VKT-kap 6.4 Resultaten) solo como información de personal, sin cargar importes como desglose de gastos?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El bloque b10 trae sobre todo datos de personal (empleados en equivalentes de tiempo completo) e intereses activados, y puede no desglosar renglones del estado.",
+   "bloques": [
+    "b10"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales en el modelo abreviado belga (VKT). El estado de resultados es b4 y parte de la brutomarge, así que los ingresos no están abiertos. b10 es la nota de resultados (personal / intereses activados), de poco desglose. b16 (balance social) también trae los gastos de personal, pero no se elige."
+}

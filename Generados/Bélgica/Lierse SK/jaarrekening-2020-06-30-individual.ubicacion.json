@@ -1,0 +1,104 @@
+{
+ "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2020-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2020-06-30-individual.md",
+ "mdSha1": "054aaa42e0534fe34352921c2f63aef71e54e985",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:22.262Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    3,
+    5
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    18,
+    26
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    42,
+    50
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 2,
+   "lineas": [
+    58,
+    61
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    160,
+    187
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    195,
+    244
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    254,
+    283
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    293,
+    309
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    319,
+    349
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    402,
+    410
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b7"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING IN EURO (b2); modelo VKT belga, importes en euros",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Jaarrekening individual, verkort model (VKT). El estado de resultados es b7 (Resultatenrekening), que arranca con Brutomarge, sin abrir ingresos. No hay notas que desglosen ingresos o gastos: b8 es la resultaatverwerking (destino del resultado) y b9 es el estado de deudas. El ejercicio anterior va del 09-07 al 30-06, así que no es un año completo."
+}

@@ -1,0 +1,313 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2022-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2022-06-30-individual.md",
+ "mdSha1": "f322885bb5e90c1b0cf38172913ada49610fa5a1",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:27:58.814Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    19,
+    27
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    124,
+    151
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    159,
+    199
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    209,
+    238
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    248,
+    255
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    267,
+    284
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    292,
+    318
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    326,
+    354
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    364,
+    368
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    370,
+    372
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    378,
+    380
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 12,
+   "lineas": [
+    392,
+    422
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 13,
+   "lineas": [
+    432,
+    445
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 14,
+   "lineas": [
+    455,
+    477
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 15,
+   "lineas": [
+    485,
+    503
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 15,
+   "lineas": [
+    505,
+    507
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 16,
+   "lineas": [
+    521,
+    524
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 16,
+   "lineas": [
+    528,
+    530
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 16,
+   "lineas": [
+    536,
+    540
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 17,
+   "lineas": [
+    550,
+    556
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 17,
+   "lineas": [
+    560,
+    563
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 17,
+   "lineas": [
+    565,
+    570
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 17,
+   "lineas": [
+    572,
+    574
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 18,
+   "lineas": [
+    592,
+    596
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 18,
+   "lineas": [
+    598,
+    621
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 19,
+   "lineas": [
+    631,
+    636
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 19,
+   "lineas": [
+    640,
+    656
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 22,
+   "lineas": [
+    772,
+    780
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 25,
+   "lineas": [
+    859,
+    861
+   ],
+   "tipo": "texto"
+  },
+  "b30": {
+   "pagina": 26,
+   "lineas": [
+    893,
+    895
+   ],
+   "tipo": "texto"
+  },
+  "b31": {
+   "pagina": 27,
+   "lineas": [
+    925,
+    927
+   ],
+   "tipo": "texto"
+  },
+  "b32": {
+   "pagina": 28,
+   "lineas": [
+    971,
+    973
+   ],
+   "tipo": "texto"
+  },
+  "b33": {
+   "pagina": 29,
+   "lineas": [
+    1009,
+    1011
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b13"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING in EURO (formulario VKT-VZW, importes en euro)",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro b28 (impacto de costos e ingresos de ejercicios anteriores por código de cuenta)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "b28 no desglosa renglones del estado del ejercicio: muestra el impacto en el resultado del ejercicio anterior y tiene una fila ilegible (640/83).",
+   "bloques": [
+    "b28"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿El cuadro b13 (6.4 Resultaten) tiene importes de gastos de personal o financieros que desglosan renglones de b4 y conviene cargarlo?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "b13 incluye personal y resultados financieros (geactiveerde interesten); puede contener solo datos de plantilla.",
+   "bloques": [
+    "b13"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales de la VZW (modelo abreviado VKT-VZW). El estado de resultados es b4, que empieza en Brutomarge, así que los ingresos no están desglosados. b13 es la nota de resultados. b24 (sociale balans) muestra los gastos de personal, pero es información social y no se elige."
+}

@@ -1,0 +1,272 @@
+{
+ "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.md",
+ "mdSha1": "dd42fd3a85243d4137c0a70f34afb3b9c273e9b8",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:23.447Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    22,
+    27
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    54,
+    56
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 6,
+   "lineas": [
+    214,
+    217
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 7,
+   "lineas": [
+    342,
+    395
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 8,
+   "lineas": [
+    405,
+    447
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 12,
+   "lineas": [
+    650,
+    671
+   ],
+   "tipo": "texto"
+  },
+  "b7": {
+   "pagina": 19,
+   "lineas": [
+    1247,
+    1250
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 19,
+   "lineas": [
+    1252,
+    1261
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 19,
+   "lineas": [
+    1263,
+    1268
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 19,
+   "lineas": [
+    1270,
+    1288
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 19,
+   "lineas": [
+    1290,
+    1298
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 22,
+   "lineas": [
+    1380,
+    1390
+   ],
+   "tipo": "texto"
+  },
+  "b13": {
+   "pagina": 22,
+   "lineas": [
+    1393,
+    1403
+   ],
+   "tipo": "texto"
+  },
+  "b14": {
+   "pagina": 22,
+   "lineas": [
+    1407,
+    1418
+   ],
+   "tipo": "texto"
+  },
+  "b15": {
+   "pagina": 22,
+   "lineas": [
+    1422,
+    1433
+   ],
+   "tipo": "texto"
+  },
+  "b16": {
+   "pagina": 23,
+   "lineas": [
+    1440,
+    1460
+   ],
+   "tipo": "texto"
+  },
+  "b17": {
+   "pagina": 24,
+   "lineas": [
+    1486,
+    1530
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 25,
+   "lineas": [
+    1540,
+    1569
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 26,
+   "lineas": [
+    1590,
+    1596
+   ],
+   "tipo": "texto"
+  },
+  "b20": {
+   "pagina": 26,
+   "lineas": [
+    1608,
+    1627
+   ],
+   "tipo": "texto"
+  },
+  "b21": {
+   "pagina": 27,
+   "lineas": [
+    1652,
+    1658
+   ],
+   "tipo": "texto"
+  },
+  "b22": {
+   "pagina": 27,
+   "lineas": [
+    1675,
+    1679
+   ],
+   "tipo": "texto"
+  },
+  "b23": {
+   "pagina": 30,
+   "lineas": [
+    1836,
+    1890
+   ],
+   "tipo": "texto"
+  },
+  "b24": {
+   "pagina": 33,
+   "lineas": [
+    2013,
+    2021
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 34,
+   "lineas": [
+    2081,
+    2091
+   ],
+   "tipo": "texto"
+  },
+  "b26": {
+   "pagina": 35,
+   "lineas": [
+    2127,
+    2139
+   ],
+   "tipo": "texto"
+  },
+  "b27": {
+   "pagina": 45,
+   "lineas": [
+    2634,
+    2650
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [
+  "b17",
+  "b18",
+  "b19"
+ ],
+ "notas_gastos": [
+  "b20",
+  "b21"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING IN EURO (formulario normalizado BNB, importes en euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el resumen 'Resultatenrekening 30/06/2020 (in Euro)' del informe de gestión (b26) por duplicar la cuenta de resultados b5?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b26 es una versión resumida de la cuenta de resultados ya presente en b5 (VOL 4).",
+   "bloques": [
+    "b26",
+    "b5"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se carga la columna 'Vorig boekjaar' sabiendo que el ejercicio anterior cubre un período irregular (desde 01-01 hasta 30-06)?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "b1 indica que el ejercicio anterior va de 01-01 a 30-06, no es un período de 12 meses comparable.",
+   "bloques": [
+    "b1",
+    "b5"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales (modelo completo VOL) de OH Leuven al 30-06-2020. Estado de resultados en b5 (VOL 4). Notas: b17 (VOL 6.10 resultados operativos: desglose de cifra de negocios, gastos de personal, etc.), b18 (VOL 6.11 resultados financieros), b19/b20 (ingresos y gastos no recurrentes), b21 (impuestos sobre el resultado). b26 es un resumen del informe de gestión que duplica b5."
+}

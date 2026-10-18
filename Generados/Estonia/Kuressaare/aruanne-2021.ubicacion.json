@@ -1,0 +1,258 @@
+{
+ "pdf": "Clubes/Estonia/Kuressaare/aruanne-2021.pdf",
+ "md": "Clubes/Estonia/Kuressaare/aruanne-2021.md",
+ "mdSha1": "228653042c6010f66bde91abe5f97b63fd207ade",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:46:53.302Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    10
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    26,
+    45
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    81,
+    104
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    116,
+    132
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    144,
+    162
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    174,
+    180
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    220,
+    222
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    271,
+    281
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    283,
+    292
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    306,
+    314
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    320,
+    335
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 12,
+   "lineas": [
+    347,
+    357
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    359,
+    369
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 12,
+   "lineas": [
+    375,
+    381
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 12,
+   "lineas": [
+    385,
+    388
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 13,
+   "lineas": [
+    400,
+    405
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 13,
+   "lineas": [
+    411,
+    426
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 13,
+   "lineas": [
+    432,
+    439
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 14,
+   "lineas": [
+    453,
+    456
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 14,
+   "lineas": [
+    460,
+    464
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 14,
+   "lineas": [
+    466,
+    469
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 14,
+   "lineas": [
+    471,
+    474
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 14,
+   "lineas": [
+    476,
+    479
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 14,
+   "lineas": [
+    481,
+    484
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 15,
+   "lineas": [
+    498,
+    501
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 16,
+   "lineas": [
+    507,
+    509
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 16,
+   "lineas": [
+    513,
+    515
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b14",
+  "b16"
+ ],
+ "notas_gastos": [
+  "b17",
+  "b18"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(eurodes)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2021",
+ "columna_anterior": "2020",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (b15), que solo repite el total de annetused ja toetused?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Annetused ja toetused",
+   "texto": "b15 solo abre en rahaline annetus el mismo total que ya desglosa b14.",
+   "bloques": [
+    "b15"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Club sin grupo: solo estado individual (MTÜ), aunque los años previos figuren como consolidado. Estado de resultados (Tulemiaruanne) en b4, en euros. Notas: Lisa 6 donaciones (b14), Lisa 7 ingresos empresariales (b16), Lisa 8 gastos operativos (b17), Lisa 9 personal (b18). Transacciones con partes relacionadas (b23/b24) no se cargan."
+}

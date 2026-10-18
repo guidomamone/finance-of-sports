@@ -1,0 +1,145 @@
+{
+ "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.pdf",
+ "md": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.md",
+ "generado": "2026-10-18T18:42:55.188Z",
+ "estado": "ok",
+ "clubId": "harjujklaagri-ee",
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.pdf",
+   "campo": "cierre",
+   "valor": "2023-12-31",
+   "linea": null,
+   "motivo": "del .md L8: \"| aruandeaasta lõpp: | 31.12.2023 |\" (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"### Tulemiaruanne\", .md L84) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.pdf",
+   "campo": "cero-real",
+   "valor": "Estadio",
+   "linea": null,
+   "motivo": "sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "0.168999 = 0.168999",
+   "suma": 0.16899899999999998,
+   "impreso": 0.16899899999999998
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "0.063521 = 0.063521",
+   "suma": 0.063521,
+   "impreso": 0.063521
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.3877787807814457e-17
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2023: 0.168999 en este documento y 0.168999 en aruanne-2024.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 4"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0.168999,
+  "gastos": 0.063521,
+  "financiero": 0.000123,
+  "impuesto": 0,
+  "resultadoImpreso": 0.105601,
+  "resultadoParaCargar": 0.105601,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Tulu ettevõtlusest",
+   "lado": "ingreso",
+   "M": 0.168999,
+   "pagina": 5,
+   "linea": 90,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Mitmesugused tegevuskulud",
+   "lado": "gasto",
+   "M": 0.063521,
+   "pagina": 5,
+   "linea": 93,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Muud finantstulud ja -kulud",
+   "M": 0.000123,
+   "linea": 96
+  }
+ ],
+ "impuesto": []
+}

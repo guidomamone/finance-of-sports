@@ -109,6 +109,364 @@ tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-18): null, SIN VERIFICAR (sin caché de rosters para ee (tools/club-league-reference/ee.json)).
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/FCI Levadia/aruanne-2024.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/FCI Levadia/aruanne-2024.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Piletitulu Eesti-siseste võistlustustel | pág. 12, precedente |
+| 2 | Piletitulu UEFA klubisarjades osalemisest | pág. 12, precedente |
+| 3 | Hooajapiletite müügitulu | pág. 12, precedente |
+| 4 | Reklaamitulu | pág. 12, precedente |
+| 5 | Tulu ülekandeõiguste müügist | pág. 12, precedente |
+| 6 | Tulu mängijate üleminekutest klubist välja | pág. 12, Jev 1 |
+| 7 | Klubi sümboolikaga toodete müügitulu | pág. 12, precedente |
+| 8 | Staadioni rent | pág. 12, precedente |
+| 9 | Tulu turniiride/laagrite korraldamisest | pág. 12, Jev 0.99 |
+| 10 | Muud tulud | pág. 12, precedente |
+| 11 | UEFA toetused | pág. 12, precedente |
+| 12 | Riigi ja/või KOV toetused | pág. 12, precedente |
+| 13 | Toetus kogukonnajuht | pág. 12, precedente |
+| 14 | Töötasu hüvitimise | pág. 12, Jev 0.98 |
+| 15 | Riiklik treenerite tööjōukulude toetus | pág. 12, precedente |
+| 16 | EJL toetused | pág. 12, precedente |
+| 17 | Arengustipendiumid | pág. 12, precedente |
+| 18 | Seotud osapoolte toetused/annetused | pág. 12, precedente |
+| 19 | Mitteseotud osapoolte toetused/annetused | pág. 12, precedente |
+| 20 | Noormängijate osavõtutasud | pág. 5, precedente |
+| 21 | Tulu liikmemaksudest | pág. 5, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Mängijate palgakulu | pág. 5, precedente |
+| 2 | Sotsiaalmaks mängijate töötasudelt | pág. 5, precedente |
+| 3 | Mängijatele makstav sportlasetoetus | pág. 5, precedente |
+| 4 | Mängijatele makstud stipendiumid | pág. 5, precedente |
+| 5 | Muu personali palgakulu | pág. 5, precedente |
+| 6 | Sotsiaalmaks muu personali töötasudelt | pág. 5, precedente |
+| 7 | Kulu mängijate üleminekutest klubisse | pág. 12, precedente |
+| 8 | Kulutused turvalisusele | pág. 12, precedente |
+| 9 | Trükised jm materjalid | pág. 12, precedente |
+| 10 | Muud klassifitseerimata kodumängu korralduskulud | pág. 12, precedente |
+| 11 | Eesti meistrivōistluste osavōtutasu | pág. 12, precedente |
+| 12 | Lähetuskulud | pág. 12, precedente |
+| 13 | Turundus-, sponsorlus- ja reklaamikulud | pág. 12, precedente |
+| 14 | Klubisümboolikaga toodete omahind | pág. 12, precedente |
+| 15 | Klubile kuuluvate ja tema poolt renditud hoonete ja rajatisega seotud kulud | pág. 12, precedente |
+| 16 | Klubi administeerimiskulud | pág. 12, precedente |
+| 17 | Muud kulud | pág. 12, Jev 1 |
+| 18 | Muud tegevuskulud | pág. 12, precedente |
+| 19 | Pōhivara kulum | pág. 5, precedente |
+| 20 | Ärikulud | pág. 5, precedente |
+
+### Meta
+
+```text
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Konsolideeritud tulude-kulude aruanne", .md L124) (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/FCI Levadia/aruanne-2023.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/FCI Levadia/aruanne-2023.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Piletitulu Eesti-siseste võistlustustel | pág. 12, precedente |
+| 2 | Piletitulu UEFA klubisarjades osalemisest | pág. 12, precedente |
+| 3 | Hooajapiletite müügitulu | pág. 12, precedente |
+| 4 | Reklaamitulu | pág. 12, precedente |
+| 5 | Tulu ülekandeõiguste müügist | pág. 12, precedente |
+| 6 | Tulu mängijate üleminekutest klubist välja | pág. 12, Jev 1 |
+| 7 | Klubi sümboolikaga toodete müügitulu | pág. 12, precedente |
+| 8 | Staadioni rent | pág. 12, precedente |
+| 9 | Tulu turniiride/laagrite korraldamisest | pág. 12, Jev 0.99 |
+| 10 | Muud tulud | pág. 5, Jev 1 |
+| 11 | UEFA toetused | pág. 12, precedente |
+| 12 | Riigi ja/või KOV toetused | pág. 12, precedente |
+| 13 | Toetus kogukonnajuht | pág. 12, precedente |
+| 14 | Töötasu hüvitimise | pág. 12, Jev 0.98 |
+| 15 | Riiklik treenerite tööjōukulude toetus | pág. 12, precedente |
+| 16 | EJL toetused noortetööle | pág. 12, precedente |
+| 17 | Arengustipendiumid | pág. 12, precedente |
+| 18 | Seotud osapoolte toetused/annetused | pág. 12, precedente |
+| 19 | Mitteseotud osapoolte toetused/annetused | pág. 12, precedente |
+| 20 | Noormängijate osavõtutasud | pág. 5, precedente |
+| 21 | Tulu liikmemaksudest | pág. 5, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Mängijate palgakulu | pág. 5, precedente |
+| 2 | Sotsiaalmaks mängijate töötasudelt | pág. 5, precedente |
+| 3 | Mängijatele makstav sportlasetoetus | pág. 5, precedente |
+| 4 | Mängijatele makstud stipendiumid | pág. 5, precedente |
+| 5 | Muu personali palgakulu | pág. 5, precedente |
+| 6 | Sotsiaalmaks muu personali töötasudelt | pág. 5, precedente |
+| 7 | Kulu mängijate üleminekutest klubisse | pág. 12, precedente |
+| 8 | Kulutused turvalisusele | pág. 12, precedente |
+| 9 | Trükised jm materjalid | pág. 12, precedente |
+| 10 | Muud klassifitseerimata kodumängu korralduskulud | pág. 12, precedente |
+| 11 | Eesti meistrivōistluste osavōtutasu | pág. 12, precedente |
+| 12 | Lähetuskulud | pág. 12, precedente |
+| 13 | Turundus-, sponsorlus- ja reklaamikulud | pág. 12, precedente |
+| 14 | Klubisümboolikaga toodete omahind | pág. 12, precedente |
+| 15 | Klubile kuuluvate ja tema poolt renditud hoonete ja rajatisega seotud kulud | pág. 12, precedente |
+| 16 | Klubi administeerimiskulud | pág. 12, precedente |
+| 17 | Meditsiinitarvikud - ja teenused | pág. 12, precedente |
+| 18 | Mänguvormid jm varustus | pág. 12, Jev 1 |
+| 19 | Muud tegevuskulud | pág. 12, precedente |
+| 20 | Pōhivara kulum | pág. 5, precedente |
+| 21 | Ärikulud | pág. 5, precedente |
+
+### Meta
+
+```text
+2023: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Konsolideeritud tulude-kulude aruanne", .md L133) (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/FCI Levadia/aruanne-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/FCI Levadia/aruanne-2022.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Piletitulu Eesti-siseste võistlustustel | pág. 12, precedente |
+| 2 | Piletitulu UEFA klubisarjades osalemisest | pág. 12, precedente |
+| 3 | Hooajapiletite müügitulu | pág. 12, precedente |
+| 4 | Reklaamitulu | pág. 12, precedente |
+| 5 | Tulu ülekandeõiguste müügist | pág. 12, precedente |
+| 6 | Tulu mängijate üleminekutest klubist välja | pág. 12, Jev 1 |
+| 7 | Klubi sümboolikaga toodete müügitulu | pág. 12, precedente |
+| 8 | Staadioni rent | pág. 12, precedente |
+| 9 | Tulu turniiride/laagrite korraldamisest | pág. 12, Jev 0.99 |
+| 10 | Muud tulud | pág. 5, Jev 1 |
+| 11 | UEFA toetused | pág. 12, precedente |
+| 12 | Riigi ja/või KOV toetused | pág. 12, precedente |
+| 13 | Toetus kogukonnajuht | pág. 12, precedente |
+| 14 | Riiklik treenerite tööjōukulude toetus | pág. 12, precedente |
+| 15 | EJL toetused noortetööle | pág. 12, precedente |
+| 16 | Arengustipendiumid | pág. 12, precedente |
+| 17 | Mitteseotud osapoolte toetused/annetused | pág. 12, precedente |
+| 18 | Noormängijate osavõtutasud | pág. 5, precedente |
+| 19 | Tulu liikmemaksudest | pág. 5, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Mängijate palgakulu | pág. 5, precedente |
+| 2 | Sotsiaalmaks mängijate töötasudelt | pág. 5, precedente |
+| 3 | Mängijatele makstav sportlasetoetus | pág. 5, precedente |
+| 4 | Mängijatele makstud stipendiumid | pág. 5, precedente |
+| 5 | Muu personali palgakulu | pág. 5, precedente |
+| 6 | Sotsiaalmaks muu personali töötasudelt | pág. 5, precedente |
+| 7 | Kulu mängijate üleminekutest klubisse | pág. 12, precedente |
+| 8 | Kulutused turvalisusele | pág. 12, precedente |
+| 9 | Trükised jm materjalid | pág. 12, precedente |
+| 10 | Muud klassifitseerimata kodumängu korralduskulud | pág. 12, precedente |
+| 11 | Eesti meistrivōistluste osavōtutasu | pág. 12, precedente |
+| 12 | Lähetuskulud | pág. 12, precedente |
+| 13 | Turundus-, sponsorlus- ja reklaamikulud | pág. 12, precedente |
+| 14 | Klubisümboolikaga toodete omahind | pág. 12, precedente |
+| 15 | Klubile kuuluvate ja tema poolt renditud hoonete ja rajatisega seotud kulud | pág. 12, precedente |
+| 16 | Klubi administeerimiskulud | pág. 12, precedente |
+| 17 | Meditsiinitarvikud - ja teenused | pág. 12, precedente |
+| 18 | Mänguvormid jm varustus | pág. 12, Jev 1 |
+| 19 | Muud tegevuskulud | pág. 12, precedente |
+| 20 | Pōhivara kulum | pág. 5, precedente |
+| 21 | Ärikulud | pág. 5, precedente |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Konsolideeritud tulude-kulude aruanne", .md L123) (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/FCI Levadia/aruanne-2021.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/FCI Levadia/aruanne-2021.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Piletitulu Eesti-siseste võistlustustel | pág. 11, precedente |
+| 2 | Piletitulu UEFA klubisarjades osalemisest | pág. 11, precedente |
+| 3 | Hooajapiletite müügitulu | pág. 11, precedente |
+| 4 | Reklaamitulu | pág. 11, precedente |
+| 5 | Tulu ülekandeõiguste müügist | pág. 11, precedente |
+| 6 | Tulu mängijate üleminekutest klubist välja | pág. 11, Jev 1 |
+| 7 | Klubi sümboolikaga toodete müügitulu | pág. 11, precedente |
+| 8 | Staadioni rent | pág. 11, precedente |
+| 9 | Tulu turniiride/laagrite korraldamisest | pág. 11, Jev 0.99 |
+| 10 | Muud tulud | pág. 5, Jev 1 |
+| 11 | UEFA toetused | pág. 11, precedente |
+| 12 | Riigi ja/või KOV toetused | pág. 11, precedente |
+| 13 | Toetus kogukonnajuht | pág. 11, precedente |
+| 14 | Töötasu hüvitimise | pág. 11, Jev 0.98 |
+| 15 | Riiklik treenerite tööjõukulude toetus | pág. 11, precedente |
+| 16 | EJL toetused noortetööle | pág. 11, precedente |
+| 17 | Arengustipendiumid | pág. 11, precedente |
+| 18 | Mitteseotud osapoolte toetused/annetused | pág. 11, precedente |
+| 19 | Noormängijate osavõtutasud | pág. 5, precedente |
+| 20 | Tulu liikmemaksudest | pág. 5, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Mängijate palgakulu | pág. 5, precedente |
+| 2 | Sotsiaalmaks mängijate töötasudelt | pág. 5, precedente |
+| 3 | Mängijatele makstav sportlasetoetus | pág. 5, precedente |
+| 4 | Mängijatele makstud stipendiumid | pág. 5, precedente |
+| 5 | Muu personali palgakulu | pág. 5, precedente |
+| 6 | Sotsiaalmaks muu personali töötasudelt | pág. 5, precedente |
+| 7 | Kulu mängijate üleminekutest klubisse | pág. 11, precedente |
+| 8 | Kulutused turvalisusele | pág. 11, precedente |
+| 9 | Toitluskulud | pág. 11, precedente |
+| 10 | Trükised jm materjalid | pág. 11, precedente |
+| 11 | Muud klassifitseerimata kodumängu korralduskulud | pág. 11, precedente |
+| 12 | Eesti meistrivõistluste osavõtutasu | pág. 11, precedente |
+| 13 | Lähetuskulud | pág. 11, precedente |
+| 14 | Turundus-, sponsorlus- ja reklaamikulud | pág. 11, precedente |
+| 15 | Klubisümboolikaga toodete omahind | pág. 11, precedente |
+| 16 | Klubile kuuluvate ja tema poolt renditud hoonete ja rajatisega seotud kulud | pág. 11, precedente |
+| 17 | Klubi administeerimiskulud | pág. 11, precedente |
+| 18 | Meditsiinitarvikud - ja teenused | pág. 11, precedente |
+| 19 | Mänguvormid jm varustus | pág. 11, Jev 1 |
+| 20 | Muud kulud | pág. 11, Jev 1 |
+| 21 | Muud tegevuskulud | pág. 11, precedente |
+| 22 | Põhivara kulum | pág. 5, precedente |
+| 23 | Ärikulud | pág. 5, precedente |
+
+### Meta
+
+```text
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Konsolideeritud tulude-kulude aruanne", .md L103) (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/FCI Levadia/aruanne-2020.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/FCI Levadia/aruanne-2020.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Liikmetelt saadud tasud | pág. 5, Jev 1 |
+| 2 | Annetused ja toetused | pág. 5, Jev 0.99 |
+| 3 | Piletide müük | pág. 12, Jev 1 |
+| 4 | Reklaamiteenused | pág. 12, Jev 1 |
+| 5 | Staadioni rent | pág. 12, precedente |
+| 6 | Jalgpallurite ülemineku registreerimistasu | pág. 12, Jev 0.94 |
+| 7 | Televisiooni ülekanne | pág. 12, Jev 1 |
+| 8 | Muud | pág. 12, Jev 1 |
+| 9 | Ehitustööd | pág. 12, Jev 0.99 |
+| 10 | Muud | pág. 12, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Üür ja rent | pág. 12, Jev 0.99 |
+| 2 | Elektrienergia | pág. 12, Jev 1 |
+| 3 | Kütus | pág. 12, Jev 1 |
+| 4 | Mitmesugused bürookulud | pág. 12, Claude 0.85 |
+| 5 | Lähetuskulud | pág. 12, precedente |
+| 6 | Koolituskulud | pág. 12, precedente |
+| 7 | Riiklikud ja kohalikud maksud | pág. 12, Jev 1 |
+| 8 | Mängude ja treeningute kulud | pág. 12, Claude 0.85 |
+| 9 | Liikmemaks | pág. 12, precedente |
+| 10 | Kulu mängijate üleminekutest klubisse | pág. 12, precedente |
+| 11 | Muud tegevuskulud | pág. 12, precedente |
+| 12 | Sportlasetoetus | pág. 12, Claude 0.88 |
+| 13 | Palgakulu | pág. 13, precedente |
+| 14 | Sotsiaalmaksud | pág. 13, precedente |
+| 15 | Põhivarade kulum ja väärtuse langus | pág. 5, Jev 1 |
+
+### Meta
+
+```text
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L112) (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/FCI Levadia/aruanne-2019.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/FCI Levadia/aruanne-2019.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Liikmetelt saadud tasud | pág. 5, Jev 1 |
+| 2 | Annetused ja toetused | pág. 5, Jev 0.99 |
+| 3 | Piletide müük | pág. 13, Jev 1 |
+| 4 | Reklaamiteenused | pág. 13, Jev 1 |
+| 5 | Staadioni rent | pág. 13, precedente |
+| 6 | Jalgpallurite ülemineku registreerimistasu | pág. 13, Jev 0.94 |
+| 7 | Televisiooni ülekanne | pág. 13, Jev 1 |
+| 8 | Muud | pág. 13, Jev 1 |
+| 9 | Muud tulud | pág. 5, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Üür ja rent | pág. 13, Jev 0.99 |
+| 2 | Elektrienergia | pág. 13, Jev 1 |
+| 3 | Kütus | pág. 13, Jev 1 |
+| 4 | Mitmesugused bürookulud | pág. 13, Claude 0.85 |
+| 5 | Lähetuskulud | pág. 13, precedente |
+| 6 | Koolituskulud | pág. 13, precedente |
+| 7 | Riiklikud ja kohalikud maksud | pág. 13, Jev 1 |
+| 8 | Mängude ja treeningute kulud | pág. 13, Claude 0.85 |
+| 9 | Liikmemaks | pág. 13, precedente |
+| 10 | Kulu mängijate üleminekutest klubisse | pág. 13, precedente |
+| 11 | Muud tegevuskulud | pág. 13, precedente |
+| 12 | Palgakulu | pág. 14, precedente |
+| 13 | Sotsiaalmaksud | pág. 14, precedente |
+| 14 | Põhivarade kulum ja väärtuse langus | pág. 5, Jev 1 |
+
+### Meta
+
+```text
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L128) (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## Fuentes
 
 ### fcilevadia-ee-aruanne-2025
@@ -117,4 +475,52 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/FCI Levadia/aruanne-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### fcilevadia-ee-aruanne-2019
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/FCI Levadia/aruanne-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### fcilevadia-ee-aruanne-2020
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/FCI Levadia/aruanne-2020.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### fcilevadia-ee-aruanne-2021
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/FCI Levadia/aruanne-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### fcilevadia-ee-aruanne-2022
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/FCI Levadia/aruanne-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### fcilevadia-ee-aruanne-2023
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/FCI Levadia/aruanne-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### fcilevadia-ee-aruanne-2024
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/FCI Levadia/aruanne-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

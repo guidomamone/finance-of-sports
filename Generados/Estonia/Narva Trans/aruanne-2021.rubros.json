@@ -1,0 +1,140 @@
+{
+  "md": "Clubes/Estonia/Narva Trans/aruanne-2021.md",
+  "pdf": "Clubes/Estonia/Narva Trans/aruanne-2021.pdf",
+  "club": "narvatrans-ee",
+  "year": 2021,
+  "generatedAt": "2026-10-18T18:34:12.346Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Liikmetelt saadud tasud",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.056015
+      ],
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "Riigi ja/või KOV toetused",
+      "lado": "revenue",
+      "page": 12,
+      "section": "nota que desglosa \"Annetused ja toetused\"",
+      "values": [
+        0.176628
+      ],
+      "glosa": "Subvenciones del Estado y/o de administraciones locales"
+    },
+    {
+      "label": "EJL toetused",
+      "lado": "revenue",
+      "page": 12,
+      "section": "nota que desglosa \"Annetused ja toetused\"",
+      "values": [
+        0.149214
+      ],
+      "glosa": "Subvenciones de la federación (EJL)"
+    },
+    {
+      "label": "UEFA solidaarsustoetus noorte- ja kogukonnatööle",
+      "lado": "revenue",
+      "page": 12,
+      "section": "nota que desglosa \"Annetused ja toetused\"",
+      "values": [
+        0.02317
+      ],
+      "glosa": "Fondos de solidaridad de la UEFA para el fútbol juvenil y comunitario"
+    },
+    {
+      "label": "Mitteseotud osapoolte toetused/annetused",
+      "lado": "revenue",
+      "page": 12,
+      "section": "nota que desglosa \"Annetused ja toetused\"",
+      "values": [
+        0.000928
+      ],
+      "glosa": "Donaciones y subvenciones de partes no vinculadas"
+    },
+    {
+      "label": "Tulu ettevõtlusest",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.071924
+      ],
+      "glosa": "Ingresos por actividades comerciales"
+    },
+    {
+      "label": "Muud tulud",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Mitmesugused tegevuskulud",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.118794
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Palgakulu",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Tööjõukulud\"",
+      "values": [
+        0.226123
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Sotsiaalmaksud",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Tööjõukulud\"",
+      "values": [
+        0.068902
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "töötuskindlustusmaks ettevõttest",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Tööjõukulud\"",
+      "values": [
+        0.001794
+      ],
+      "glosa": "Cotizaciones al seguro de desempleo a cargo de la empresa"
+    },
+    {
+      "label": "Sportlase toetus/stipendium",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"Tööjõukulud\"",
+      "values": [
+        0.154071
+      ],
+      "glosa": "Becas y ayudas a deportistas"
+    },
+    {
+      "label": "Muud kulud",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.008425
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
+}

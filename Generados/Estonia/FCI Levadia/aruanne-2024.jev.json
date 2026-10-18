@@ -1,0 +1,390 @@
+{
+ "md": "Clubes/Estonia/FCI Levadia/aruanne-2024.md",
+ "generatedAt": "2026-10-18T18:15:13.304Z",
+ "rubrosHuella": "1b051d766a314af1360fa543551798b1b4d3a7c2",
+ "rubros": [
+  {
+   "label": "Piletitulu Eesti-siseste võistlustustel",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\"",
+   "choice": "matchday_competition",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Piletitulu UEFA klubisarjades osalemisest",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\"",
+   "choice": "matchday_competition",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Hooajapiletite müügitulu",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\"",
+   "choice": "season_tickets",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Reklaamitulu",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Tulu ülekandeõiguste müügist",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Tulu mängijate üleminekutest klubist välja",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Klubi sümboolikaga toodete müügitulu",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Staadioni rent",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\"",
+   "choice": "stadium_other",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Tulu turniiride/laagrite korraldamisest",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Muud tulud",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Tulu ettevōtlusest ja muud tulud\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "UEFA toetused",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "competition_bonus",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Riigi ja/või KOV toetused",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Toetus kogukonnajuht",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Töötasu hüvitimise",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Riiklik treenerite tööjōukulude toetus",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Arengustipendiumid",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "youth_football",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "Seotud osapoolte toetused/annetused",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Mitteseotud osapoolte toetused/annetused",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Noormängijate osavõtutasud",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "youth_football",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Tulu liikmemaksudest",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Mängijate palgakulu",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sotsiaalmaks mängijate töötasudelt",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Mängijatele makstav sportlasetoetus",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Mängijatele makstud stipendiumid",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Muu personali palgakulu",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sotsiaalmaks muu personali töötasudelt",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Kulu mängijate üleminekutest klubisse",
+   "lado": "expense",
+   "page": 12,
+   "section": "nota que desglosa \"Tegevuskulud\"",
+   "choice": "player_amortisation",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Kulutused turvalisusele",
+   "lado": "expense",
+   "page": 12,
+   "section": "nota que desglosa \"Tegevuskulud\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Trükised jm materjalid",
+   "lado": "expense",
+   "page": 12,
+   "section": "nota que desglosa \"Tegevuskulud\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Muud klassifitseerimata kodumängu korralduskulud",
+   "lado": "expense",
+   "page": 12,
+   "section": "nota que desglosa \"Tegevuskulud\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Eesti meistrivōistluste osavōtutasu",
+   "lado": "expense",
+   "page": 12,
+   "section": "nota que desglosa \"Tegevuskulud\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Lähetuskulud",
+   "lado": "expense",
+   "page": 12,
+   "section": "nota que desglosa \"Tegevuskulud\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Turundus-, sponsorlus- ja reklaamikulud",
+   "lado": "expense",
+   "page": 12,
+   "section": "nota que desglosa \"Tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Klubisümboolikaga toodete omahind",
+   "lado": "expense",
+   "page": 12,
+   "section": "nota que desglosa \"Tegevuskulud\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Klubile kuuluvate ja tema poolt renditud hoonete ja rajatisega seotud kulud",
+   "lado": "expense",
+   "page": 12,
+   "section": "nota que desglosa \"Tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Klubi administeerimiskulud",
+   "lado": "expense",
+   "page": 12,
+   "section": "nota que desglosa \"Tegevuskulud\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Muud kulud",
+   "lado": "expense",
+   "page": 12,
+   "section": "nota que desglosa \"Tegevuskulud\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Muud tegevuskulud",
+   "lado": "expense",
+   "page": 12,
+   "section": "nota que desglosa \"Tegevuskulud\"",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Pōhivara kulum",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Ärikulud",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "EJL toetused",
+   "lado": "revenue",
+   "page": 12,
+   "section": "nota que desglosa \"Annetused ja toetused\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1063
+  }
+ ]
+}

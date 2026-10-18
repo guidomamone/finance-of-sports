@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Estonia/Tallinna Kalev/aruanne-2025.pdf",
  "md": "Clubes/Estonia/Tallinna Kalev/aruanne-2025.md",
- "generado": "2026-10-18T14:04:47.618Z",
+ "generado": "2026-10-18T18:42:55.419Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "tallinnakalev-ee",
  "year": 2025,
  "escala": {
   "valor": "unidades",
@@ -57,17 +57,17 @@
   },
   {
    "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "club nuevo"
+   "ok": true,
+   "detalle": "la columna 2024 de este documento suma ingresos 1.911151; el sitio tiene 1.911151"
   },
   {
-   "nombre": "primer año",
+   "nombre": "documento del año 2024",
    "ok": true,
-   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+   "detalle": "ingresos de 2024: 1.911151 en aruanne-2024.pdf y 1.911151 en este documento (columna del año anterior)"
   }
  ],
  "notas": [
-  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en aruanne-2025.pdf",
+  "duda de localizar ya contestada para el club (antes de su alta) (perimetro, \"-\"): aceptar, en aruanne-2025.pdf",
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Annetused ja toetused\"): ¿Se dejan afuera de la carga los renglones 'sh ...' de Lisa 10 (L488-L492), que son una apertura alternativa por origen de las mismas donaciones?",
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Annetused ja toetused\"): ¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L496-L499)?",
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Mitmesugused tegevuskulud\"): ¿Se deja afuera de la carga el 'Kasutusrendikulu' 6 376 (L422) de la nota de arrendamientos?"

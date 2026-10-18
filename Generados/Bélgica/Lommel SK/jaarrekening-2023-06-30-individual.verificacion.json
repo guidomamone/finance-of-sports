@@ -1,0 +1,157 @@
+{
+ "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2023-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2023-06-30-individual.md",
+ "generado": "2026-10-18T15:46:15.539Z",
+ "estado": "cola",
+ "clubId": "lommelsk-be",
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2023-06-30-individual.pdf",
+   "campo": "cierre",
+   "valor": "2023-06-30",
+   "linea": null,
+   "motivo": "del .md L38: \"| het boekjaar dat de periode dekt van | 01-07-2022 | tot | 30-06-2023 |\" (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [
+  "7168e8a",
+  "c54968b",
+  "2abc90c",
+  "3ee4eb5",
+  "101b762"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 1.328861 - gastos 15.562627 ± financiero 0.043077 ± impuesto 0.109625 no da el impreso -14.449557",
+   "dif": null
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": false,
+   "detalle": "ingresos de 2023: 1.328861 en este documento y 5.806012 en jaarrekening-2024-06-30-individual.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 1.906439 en jaarrekening-2022-06-30-individual.pdf y 1.906439 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Waarvan: niet-recurrente bedrijfsopbrengsten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"Niet-recurrente bedrijfskosten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 1.328861,
+  "gastos": 15.562627,
+  "financiero": 0.043077,
+  "impuesto": 0.109625,
+  "resultadoImpreso": -14.449557,
+  "resultadoParaCargar": -14.449557,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Brutomarge",
+   "lado": "ingreso",
+   "M": 1.253901,
+   "pagina": 7,
+   "linea": 240,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Waarvan: niet-recurrente bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "M": 0.07496,
+   "pagina": 7,
+   "linea": 241,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen",
+   "lado": "gasto",
+   "M": 10.235268,
+   "pagina": 7,
+   "linea": 244,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "gasto",
+   "M": 5.282205,
+   "pagina": 7,
+   "linea": 245,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andere bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.029136,
+   "pagina": 7,
+   "linea": 248,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.016018,
+   "pagina": 7,
+   "linea": 250,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "M": 0.005936,
+   "linea": 253
+  },
+  {
+   "etiqueta": "Recurrente financiële kosten",
+   "M": 0.037141,
+   "linea": 257
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen op het resultaat",
+   "M": 0.109625,
+   "linea": 262
+  }
+ ]
+}

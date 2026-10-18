@@ -1,0 +1,90 @@
+{
+  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2022-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2022-06-30-individual.pdf",
+  "club": "patroeisden-be",
+  "year": 2022,
+  "generatedAt": "2026-10-18T15:37:12.185Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Brutomarge (+)/(-)",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.157091
+      ],
+      "glosa": "Margen bruto (+)/(-)"
+    },
+    {
+      "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.611452
+      ],
+      "glosa": "Mercaderías, materias primas y auxiliares, servicios y bienes diversos"
+    },
+    {
+      "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        2.12712
+      ],
+      "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
+    },
+    {
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.00835
+      ],
+      "glosa": "Amortizaciones y correcciones de valor sobre gastos de constitución, inmovilizado intangible y material"
+    },
+    {
+      "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (+)/(-) (terugnemingen)",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.0025
+      ],
+      "glosa": "Deterioros de valor de existencias, pedidos en curso y créditos comerciales: dotaciones (+)/(-) (reversiones)"
+    },
+    {
+      "label": "Voorzieningen voor risico's en kosten: toevoegingen (+)/(-) (bestedingen en terugnemingen)",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.045749
+      ],
+      "glosa": "Provisiones para riesgos y gastos: dotaciones (+)/(-) (aplicaciones y reversiones)"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.158584
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Niet-recurrente bedrijfskosten",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Gastos de explotación no recurrentes"
+    }
+  ]
+}

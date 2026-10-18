@@ -1,0 +1,71 @@
+{
+ "md": "Clubes/Estonia/Harju JK Laagri/aruanne-2024.md",
+ "generatedAt": "2026-10-18T15:05:33.014Z",
+ "rubrosHuella": "905847d4e8b1ba5f7a7c3710312705dee706bdb5",
+ "rubros": [
+  {
+   "label": "Tulu ettevõtlusest",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Mitmesugused tegevuskulud",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "desdeCache": true
+  },
+  {
+   "label": "Annetused ja toetused",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1081
+  },
+  {
+   "label": "Muud kulud",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1020
+  }
+ ]
+}

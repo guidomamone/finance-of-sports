@@ -1,0 +1,206 @@
+{
+ "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2021-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2021-06-30-individual.md",
+ "mdSha1": "23155d1573325ce7d346547f19a0544731bcba98",
+ "ubicacionSha1": "84c6e470837232ba092c021cfc82179b312c7190",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:37:09.845Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no imprime la moneda ni la escala; el formato del balance belga (NBB) suele estar en euros, en unidades."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 172,
+   "etiqueta": "Brutomarge (+)/(-)",
+   "actual": "392.955",
+   "anterior": "-37.856",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 174,
+   "etiqueta": "Omzet",
+   "actual": "805.246",
+   "anterior": "100.545",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 176,
+   "etiqueta": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+   "actual": "488.692",
+   "anterior": "161.249",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 177,
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "actual": "207.898",
+   "anterior": "34.218",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 178,
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "actual": "168.361",
+   "anterior": "6.758",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 179,
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "actual": "",
+   "anterior": "2.100",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 181,
+   "etiqueta": "Andere bedrijfskosten",
+   "actual": "1.816",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 184,
+   "etiqueta": "Bedrijfswinst (Bedrijfsverlies) (+)/(-)",
+   "actual": "14.880",
+   "anterior": "-80.933",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 185,
+   "etiqueta": "Financiële opbrengsten",
+   "actual": "41",
+   "anterior": "80",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 186,
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "actual": "41",
+   "anterior": "80",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 188,
+   "etiqueta": "Financiële kosten",
+   "actual": "9.539",
+   "anterior": "18",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 189,
+   "etiqueta": "Recurrente financiële kosten",
+   "actual": "9.539",
+   "anterior": "18",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 191,
+   "etiqueta": "Winst (Verlies) van het boekjaar vóór belasting (+)/(-)",
+   "actual": "5.382",
+   "anterior": "-80.870",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 195,
+   "etiqueta": "Winst (Verlies) van het boekjaar (+)/(-)",
+   "actual": "5.382",
+   "anterior": "-80.870",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 198,
+   "etiqueta": "Te bestemmen winst (verlies) van het boekjaar (+)/(-)",
+   "actual": "5.382",
+   "anterior": "-80.870",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 195,
+  "actual": "5.382",
+  "anterior": "-80.870"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes del estado de resultados de b4 (L172-L198) como euros en unidades?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El bloque no imprime la escala; el formato del balance belga (NBB) se presenta en euros, en unidades.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja la 'Brutomarge' (L172) solo como subtotal informativo, sabiendo que no se cargan como renglón los otros ingresos operativos (cód. 74) que incluye y que no se imprimen?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Brutomarge (+)/(-)",
+   "texto": "En L172, la Brutomarge (392.955) supera 'Omzet' menos 60/61 (316.554) en 76.401; el esquema abreviado no muestra por separado los otros ingresos operativos.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El estado está en esquema abreviado belga y no hay notas de desglose. No se imprimen el total de ingresos ni el de gastos. La cadena de resultados cierra: 392.955 - 207.898 - 168.361 - 1.816 = 14.880, y 14.880 + 41 - 9.539 = 5.382. Los renglones recurrentes de L186 y L189 detallan los subtotales financieros de L185 y L188; no deben sumarse dos veces."
+}

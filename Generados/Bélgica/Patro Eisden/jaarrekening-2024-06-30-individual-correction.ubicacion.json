@@ -1,0 +1,214 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2024-06-30-individual-correction.pdf",
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2024-06-30-individual-correction.md",
+ "mdSha1": "702acacae0e69da922a7f6542d03b598d8324c9d",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:24.322Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    18,
+    26
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    87,
+    113
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    121,
+    160
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    170,
+    198
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    208,
+    215
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    227,
+    243
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    251,
+    276
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    284,
+    311
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    321,
+    324
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    326,
+    328
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    348,
+    352
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    354,
+    379
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    389,
+    392
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 12,
+   "lineas": [
+    394,
+    401
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 13,
+   "lineas": [
+    415,
+    418
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 13,
+   "lineas": [
+    422,
+    426
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 13,
+   "lineas": [
+    432,
+    435
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 14,
+   "lineas": [
+    453,
+    457
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 14,
+   "lineas": [
+    459,
+    482
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 15,
+   "lineas": [
+    492,
+    494
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 15,
+   "lineas": [
+    496,
+    498
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 15,
+   "lineas": [
+    502,
+    517
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b14"
+ ],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING in EURO (b1); formulario NBB VKT-VZW en euros",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el cuadro de opbrengsten en kosten van uitzonderlijke omvang (b14) como desglose de los renglones no recurrentes del estado?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Niet-recurrente bedrijfsopbrengsten",
+   "texto": "b14 abre los ingresos y gastos no recurrentes que en b4 aparecen como 'waarvan'.",
+   "bloques": [
+    "b14"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales de la VZW en formato abreviado (VKT-VZW), presentadas en euros. El estado de resultados es b4 (Resultatenrekening, que empieza en la Brutomarge). b14 detalla los importes no recurrentes. Los cuadros de personal (b18) son de la Sociale balans y no se cargan como desglose. El documento es una corrección (correction)."
+}

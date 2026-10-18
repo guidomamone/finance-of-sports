@@ -1,0 +1,287 @@
+{
+ "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2018-06-30-individual.pdf",
+ "generado": "2026-10-18T15:39:27.963Z",
+ "frena": [],
+ "avisos": [
+  "gestión: ningún presidente confirmado cubre 2018 (cierre 2018-06-30); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "lommelsk-be",
+  "year": 2018,
+  "cierre": "2018-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Brutomarge (+)/(-)",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 0.891255,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.990199,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -0.519,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Andere bedrijfskosten",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.002679,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 2,
+    "_conf": 0.88,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Niet-recurrente bedrijfskosten",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.00732,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2018-06-30",
+   "sourceId": "lommelsk-be-jaarrekening-2018-06-30-individual",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 0,
+   "tax": 0,
+   "sinDesglose": [
+    {
+     "renglon": "Brutomarge (+)/(-)",
+     "lado": "revenue",
+     "importe": 0.891255,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 0.891255,
+   "officialTotalExpenses": 1.519198,
+   "officialPAT": -0.628125
+  },
+  "source": {
+   "id": "lommelsk-be-jaarrekening-2018-06-30-individual",
+   "clubId": "lommelsk-be",
+   "title": "Voetbalclub Lommel SK NV — jaarrekening-2018-06-30-individual (ejercicio 2018)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Bélgica/Lommel SK/jaarrekening-2018-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2018-06-30-individual.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2018-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "lommelsk-be",
+ "year": 2018,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 5,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Brutomarge (+)/(-)",
+   "page": 6,
+   "native": 0.891255,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.891255,
+   "cat": "lump_football_operations",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.891255
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "page": 6,
+   "native": 0.990199,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.990199,
+   "cat": "wages_squad",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.990199
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "page": 6,
+   "native": 0.519,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.519,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): la fila se partió con ajustes fila + categoria según la nota de activos fijos (pases / bienes de uso)",
+   "destino": "expense",
+   "amountNative": -0.519
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "page": 6,
+   "native": 0.002679,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.002679,
+   "cat": "other_expenses",
+   "conf": 0.88,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.002679
+  },
+  {
+   "label": "Niet-recurrente bedrijfskosten",
+   "page": 6,
+   "native": 0.00732,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.00732,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): la fila se partió con ajustes fila + categoria según la nota de activos fijos (pases / bienes de uso)",
+   "destino": "expense",
+   "amountNative": -0.00732
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 0.891255,
+  "expSum": -1.511878,
+  "officialTotalRevenue": 0.891255,
+  "officialTotalExpenses": 1.519198,
+  "officialPAT": -0.628125,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.628125,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 0.891255
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 1.519198
+  }
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "sin caché de rosters para be (tools/club-league-reference/be.json)",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó, P3 liga-sin-verificar); para resolverla: resolve-wikipedia-season-page.mjs + fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2018,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2018-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2018-06-30) y contenido del .md (8 de 10 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el nombre del archivo dice que son los estados individuales (\"jaarrekening-2018-06-30-individual.pdf\"), y no hay un consolidado del mismo ejercicio en la carpeta",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Bélgica (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2018-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2018-06-30 = 0.85778 (Tipo de referencia del Banco Central Europeo, última rueda hábil antes del cierre (2018-06-29, 2018-06-30 no es día hábil))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "lommelsk-be-jaarrekening-2018-06-30-individual",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": null,
+   "fuente": "sin caché de rosters para be (tools/club-league-reference/be.json)",
+   "estado": "pendiente"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 1,
+  "lineasGasto": 4,
+  "metaFilas": 0,
+  "excluidas": 0
+ }
+}

@@ -1,0 +1,313 @@
+{
+ "pdf": "Clubes/Estonia/Tallinna Kalev/aruanne-2021.pdf",
+ "md": "Clubes/Estonia/Tallinna Kalev/aruanne-2021.md",
+ "mdSha1": "b45a98f99f7584df588eff3003b9a80e7ab3df62",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:46:55.207Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    10
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    27,
+    50
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    82,
+    107
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    119,
+    137
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    149,
+    174
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    186,
+    193
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    249,
+    253
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    287,
+    291
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    297,
+    306
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    308,
+    317
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    331,
+    341
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    349,
+    361
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    375,
+    377
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 12,
+   "lineas": [
+    385,
+    395
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 12,
+   "lineas": [
+    397,
+    406
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 13,
+   "lineas": [
+    418,
+    425
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 13,
+   "lineas": [
+    427,
+    433
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 13,
+   "lineas": [
+    439,
+    448
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 13,
+   "lineas": [
+    452,
+    455
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 14,
+   "lineas": [
+    467,
+    477
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 14,
+   "lineas": [
+    483,
+    488
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 15,
+   "lineas": [
+    500,
+    521
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 15,
+   "lineas": [
+    529,
+    537
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 16,
+   "lineas": [
+    551,
+    553
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 16,
+   "lineas": [
+    557,
+    561
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 16,
+   "lineas": [
+    563,
+    567
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 16,
+   "lineas": [
+    569,
+    572
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 16,
+   "lineas": [
+    574,
+    577
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 16,
+   "lineas": [
+    581,
+    583
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 17,
+   "lineas": [
+    595,
+    597
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 18,
+   "lineas": [
+    603,
+    605
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 18,
+   "lineas": [
+    609,
+    613
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b18",
+  "b19",
+  "b20"
+ ],
+ "notas_gastos": [
+  "b21",
+  "b22",
+  "b23",
+  "b13"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(eurodes)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2021",
+ "columna_anterior": "2020",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado individual (b4) aunque el club usa consolidado en otros años, dado que el documento no tiene estado consolidado?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El informe anual de la asociación (MTÜ) solo presenta un Tulemiaruanne sin indicación de consolidado.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Kasutusrendikulu' (b13) por ser un detalle ya incluido en 'Üür ja rent' de la Lisa 12?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Kasutusrendikulu",
+   "texto": "El gasto de arrendamiento operativo probablemente ya está dentro de Mitmesugused tegevuskulud (b22).",
+   "bloques": [
+    "b13",
+    "b22"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Documento individual de la asociación (eurodes, unidades). Estado de resultados b4; notas de ingresos Lisa 9 (b18, b19 desglose de donaciones) y Lisa 10 (b20); gastos Lisa 11 (b21), Lisa 12 (b22), Lisa 13 (b23). b13 es detalle de alquiler operativo. b29 remuneración de directivos no se carga."
+}

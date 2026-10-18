@@ -7,6 +7,13 @@ const harjujklaagrieeRevenueLinesByYear = {
     { rawLabel:'Teenuste müük', normalizedCategory:'other_income', amountNative:0.00022, disclosureLevel:'aggregated' },
     { rawLabel:'Mängijaõiguste müük', normalizedCategory:'player_sales', amountNative:0.019, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Tulu ettevõtlusest', normalizedCategory:'sponsorship_commercial', amountNative:0.168999, disclosureLevel:'aggregated' },
+  ],
+  2024: [
+    { rawLabel:'Annetused ja toetused', normalizedCategory:'other_income', amountNative:0.0025, disclosureLevel:'aggregated' },
+    { rawLabel:'Tulu ettevõtlusest', normalizedCategory:'sponsorship_commercial', amountNative:0.048202, disclosureLevel:'aggregated' },
+  ],
 };
 const harjujklaagrieeExpenseLinesByYear = {
   2025: [
@@ -30,6 +37,13 @@ const harjujklaagrieeExpenseLinesByYear = {
     { rawLabel:'Sotsiaalmaksud', normalizedCategory:'wages_squad', amountNative:-0.021575, disclosureLevel:'aggregated' },
     { rawLabel:'Muud kulud', normalizedCategory:'other_expenses', amountNative:-0.000023, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Mitmesugused tegevuskulud', normalizedCategory:'lump_football_operations_expense', amountNative:-0.063521, disclosureLevel:'aggregated' },
+  ],
+  2024: [
+    { rawLabel:'Mitmesugused tegevuskulud', normalizedCategory:'lump_football_operations_expense', amountNative:-0.063321, disclosureLevel:'aggregated' },
+    { rawLabel:'Muud kulud', normalizedCategory:'other_expenses', amountNative:-0.000664, disclosureLevel:'aggregated' },
+  ],
 };
 const harjujklaagrieeFiscalYearMeta = {
   2025: {
@@ -46,6 +60,32 @@ const harjujklaagrieeFiscalYearMeta = {
     ],
     grossDebt:null, cash:null,
     officialTotalRevenue:0.393836, officialTotalExpenses:0.491618, officialPAT:-0.099691,
+  },
+  2023: {
+    currency:'EUR', fxRef:'EUR@2023-12-31',
+    sourceId:'harjujklaagri-ee-aruanne-2023',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0.000123, tax:0,
+    sinDesglose: [
+      {renglon:'Mitmesugused tegevuskulud', lado:'expense', importe:0.063521, motivo:'Claude 2026-10-18 (subagente Sonnet): Único gasto del año (63.521), sin ninguna nota que lo abra y sin personal (\'no tiene trabajadores\'): es un monto real que la fuente no separó, que el 2025 muestra que incluye pagos a jugadores/técnicos, traslados, medicina, traspasos. other_expenses lo escondería en \'Otros gastos\' y haría ver $0 en  [aruanne-2023.md L93 \'Mitmesugused tegevuskulud -63 521\'; Lisa 2 L181 \'Raamatupidamiskohustuslasel ei ole töötajaid\'; sin notas de gastos en L145-212]'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0.168999, officialTotalExpenses:0.063521, officialPAT:0.105601,
+  },
+  2024: {
+    currency:'EUR', fxRef:'EUR@2024-12-31',
+    sourceId:'harjujklaagri-ee-aruanne-2024',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0.000002, tax:0,
+    sinDesglose: [
+      {renglon:'Mitmesugused tegevuskulud', lado:'expense', importe:0.063321, motivo:'Claude 2026-10-18 (subagente Sonnet): Igual que 66fbf41: \'Mitmesugused tegevuskulud\' (63.321) es el único gasto operativo, sin nota que lo abra ni personal; se carga como bolsón sin desglosar. Cierra: 63.321+664 (Muud kulud)=63.985 = total impreso. Alternativa: other_expenses. Confirmar junto con 66fbf41. [aruanne-2024.md L97-99 (\'Mitmesugused tegevuskulud -63 321\', \'Kokku kulud -63 985\'); Lisa 4 L218 \'ei ole töötajaid\']'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0.050702, officialTotalExpenses:0.063985, officialPAT:-0.013281,
   },
 };
 const harjujklaagrieePresupuestoOverlayByYear = {};
@@ -66,6 +106,16 @@ Object.assign(sources, {
   'harjujklaagri-ee-aruanne-2025': {
     id:'harjujklaagri-ee-aruanne-2025', clubId:'harjujklaagri-ee',
     title:'MTÜ Harju Jalgpalliklubi Laagri — aruanne-2025 (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'harjujklaagri-ee-aruanne-2023': {
+    id:'harjujklaagri-ee-aruanne-2023', clubId:'harjujklaagri-ee',
+    title:'MTÜ Harju Jalgpalliklubi Laagri — aruanne-2023 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'harjujklaagri-ee-aruanne-2024': {
+    id:'harjujklaagri-ee-aruanne-2024', clubId:'harjujklaagri-ee',
+    title:'MTÜ Harju Jalgpalliklubi Laagri — aruanne-2024 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

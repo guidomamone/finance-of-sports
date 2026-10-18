@@ -1,0 +1,220 @@
+{
+  "md": "Clubes/Bélgica/Beerschot/jaarrekening-2023-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2023-06-30-individual.pdf",
+  "club": "beerschot-be",
+  "year": 2023,
+  "generatedAt": "2026-10-18T15:27:59.276Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ticketing & abonnementen",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Omzet\"",
+      "values": [
+        1.359895
+      ],
+      "glosa": "Taquilla y abonos"
+    },
+    {
+      "label": "Sponsoring",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Omzet\"",
+      "values": [
+        1.547474
+      ],
+      "glosa": "Patrocinios"
+    },
+    {
+      "label": "TV rechten",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Omzet\"",
+      "values": [
+        1.87025
+      ],
+      "glosa": "Derechos de televisión"
+    },
+    {
+      "label": "Commercieel",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Omzet\"",
+      "values": [
+        1.532653
+      ],
+      "glosa": "Ingresos comerciales"
+    },
+    {
+      "label": "Andere bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        1.536754
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Niet-recurrente bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.138504
+      ],
+      "glosa": "Ingresos de explotación no recurrentes"
+    },
+    {
+      "label": "Bedrijfskosten",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        13.032675
+      ],
+      "glosa": "Gastos de explotación"
+    },
+    {
+      "label": "Handelsgoederen, grond- en hulpstoffen",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.515074
+      ],
+      "glosa": "Mercaderías, materias primas y materiales auxiliares"
+    },
+    {
+      "label": "Aankopen",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.562478
+      ],
+      "glosa": "Compras"
+    },
+    {
+      "label": "Voorraad: afname (toename) (+)/(-)",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.047404
+      ],
+      "glosa": "Existencias: disminución (aumento) (+)/(-)"
+    },
+    {
+      "label": "Diensten en diverse goederen",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        4.638205
+      ],
+      "glosa": "Servicios y bienes diversos"
+    },
+    {
+      "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        5.192447
+      ],
+      "glosa": "Remuneraciones y ventajas sociales directas"
+    },
+    {
+      "label": "Werkgeversbijdragen voor sociale verzekeringen",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        0.795922
+      ],
+      "glosa": "Cotizaciones a la seguridad social a cargo de la empresa"
+    },
+    {
+      "label": "Andere personeelskosten",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+      "values": [
+        0.404243
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        1.042042
+      ],
+      "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, inmovilizado intangible y material"
+    },
+    {
+      "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.022836
+      ],
+      "glosa": "Pérdidas por deterioro de existencias, pedidos en curso y deudores comerciales: dotaciones (reversiones) (+)/(-)"
+    },
+    {
+      "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.057846
+      ],
+      "glosa": "Provisiones para riesgos y gastos: dotaciones (aplicaciones y reversiones) (+)/(-)"
+    },
+    {
+      "label": "Bedrijfsbelastingen en -taksen",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Andere bedrijfskosten\"",
+      "values": [
+        0.052372
+      ],
+      "glosa": "Impuestos y tasas de explotación"
+    },
+    {
+      "label": "Andere",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Andere bedrijfskosten\"",
+      "values": [
+        0.063425
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Niet-recurrente afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Niet-recurrente bedrijfskosten\"",
+      "values": [
+        0.147979
+      ],
+      "glosa": "Amortizaciones y correcciones de valor no recurrentes de gastos de constitución, inmovilizado intangible y material"
+    },
+    {
+      "label": "Minderwaarden bij de realisatie van immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Niet-recurrente bedrijfskosten\"",
+      "values": [
+        0.100285
+      ],
+      "glosa": "Pérdidas en la enajenación de inmovilizado intangible y material"
+    }
+  ]
+}

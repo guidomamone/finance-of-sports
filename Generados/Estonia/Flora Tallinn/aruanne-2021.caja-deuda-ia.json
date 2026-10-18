@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Estonia/Flora Tallinn/aruanne-2021.md",
+ "generado": "2026-10-18T18:51:49.076Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(eurodes)",
+ "caja": {
+  "lineas": [
+   131
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   144,
+   148
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Laenukohustised corriente (L144) y no corriente (L148); importes en euros."
+}

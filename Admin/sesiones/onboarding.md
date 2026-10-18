@@ -88,3 +88,33 @@ j) DATOS (no script): Estonia no tiene ligas en `data/leagues.js`; propuesto `ee
 - Nõmme Kalju: perímetro consolidado del club (2022-2024 traen los dos estados) e individual en 2025.
 - To-do 299 HECHO (3a1da22b36): Estonia en Ligas (Meistriliiga 2019-2025 y Esiliiga 2021 y 2024, con su tamaño, 10); verificado en el preview: estado frío "Meistriliiga 9 of 10 · 2025" y su ranking. De paso, las 8 altas belgas tenían la liga en null: ahora Pro League (Beerschot, OH Leuven) y Challenger Pro League (6). `tools/faltantes-liga.mjs`: Estonia en su tabla PAISES; alias "Tammeka" -> tartutammeka-ee.
 - Mejora de script (para el 298, letra k): `alta-club.mjs`/`cargar-lote.mjs` escriben la liga del alta en null aunque `Admin/registros/altas-revision.jsonl` traiga `ligas` verificadas (pasó con las 17 altas de los lotes 89-90): que el alta las tome de la revisión.
+
+## Después del segundo merge del 2026-10-18
+(El 299 y la k ya pasaron a main: TODO, CHANGELOG 729, ESTADO. Lo nuevo va acá.)
+- Lotes 91 (Estonia, 54) y 92 (Bélgica, 55) por Batch API: 2 años escritos (Lommel SK 2018, RWDM 2020); 231 casos en la cola (Bélgica ~150,
+  Estonia ~95). Mejoras de script nuevas, para el 298 (sin aplicar):
+  l) El alta vuelve a preguntar el tipo de documento (`reportType`) en CADA año de un club ya dado de alta: 50 de 54 documentos estonios
+     frenan por eso, y el ajuste `reportType` no se puede poner a nivel club (solo perimetro, deuda-incluye y name). Que un club existente
+     herede el tipo de sus años cargados del mismo formato de documento, o que `reportType` se pueda fijar para la carpeta.
+  m) La compuerta del perímetro en la carga compara con el año cargado más cercano y no con el ajuste del club: Nõmme Kalju 2022-2024
+     preguntan "¿individual como 2025?" aunque el club tiene ajuste `perimetro` consolidado (2025 es individual por ser su único estado).
+  n) La comparación con el año vecino (anio-vecino / no-cierra "columna del año anterior") compara perímetros distintos: FCI Levadia 2020
+     da ingresos 786.551 (la MTÜ sola) contra 1.073.554 de la columna comparativa del consolidado 2021; 13 casos así en Estonia. Que la
+     compuerta compare el mismo perímetro, o que lo diga en la pregunta.
+  o) Dos versiones de un mismo ejercicio (`-correction` y la original en Beerschot 2019, Lokeren-Temse 2023, Lommel SK 2021, Patro Eisden
+     2020 y 2024) entran juntas al lote y cada una abre sus casos: 21 casos de "año vecino" en Bélgica salen de ahí. Que el lote elija una
+     antes de localizar (la regla de CONVENCIONES-DATOS, dos documentos del mismo ejercicio) y mande la otra a descartados con ok.
+  p) Ceros reales que se repiten cada año (Televisión y Estadio en los clubes estonios chicos, Cuotas sociales en Beerschot): el ajuste
+     `cero-real` es por documento y vuelve a frenar cada año; y el perfil del club (socios, otros deportes) se pregunta de nuevo en cada
+     documento hasta que se contesta. Un cero real confirmado del club debería valer para sus otros años del mismo formato.
+  q) El ensayo de lote.mjs cobra la categorización (~US$ 0,03) de TODOS los documentos de la lista, también los que ya están en el sitio o
+     ya categorizados: lote 91 con 26 años en el sitio y el resto ya categorizado sigue estimando US$ 1,62.
+- Lote 91, segunda corrida: 22 años de Estonia escritos (26 en el sitio contando los 2025). Cola contestada en dos vueltas (97 + 49 casos,
+  subagentes Sonnet revisados por Claude); 37 ceros reales de TV y estadio con cita; Narva Trans consolidado a nivel club (2021 rehecho);
+  duda al club: FCI Levadia, "Liikmemaks" 2019-2020.
+- Lote 91, tercera corrida: 27 años más; Estonia completa salvo Narva Trans 2021 (contestado: diferencia de perímetro, falta una corrida).
+  r) caja-deuda.mjs en Estonia: 0 de 126 datos escritos. En casi todos los años "sin páginas de balance": localizar no guarda la ubicación
+     del balance (bilanss) de los informes estonios, así que ni Jev ni la IA tienen dónde mirar. Y en la corrida con años vecinos dejó SIN
+     COMMITEAR una caja equivocada de Tallinna Kalev 2019 (0,005455 contra "Raha 1 770" del balance, L90 y L172) y 2020 (0,028424): se
+     descartó (git checkout); revisar de qué escalón salió y por qué escribió sin commit.
+- ESTONIA COMPLETA: los 54 años 2019-2025 de los 9 clubes en el sitio (Narva Trans 2021 el último). Listas 89, 89-rehacer, 91 y 91-rehacer archivadas en Admin/Archive/lotes/. Bélgica (listas 90 y 92) espera correr con las tools de main (mejoras b y o, compuerta de estadio y sponsor del 273).

@@ -1,0 +1,179 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2016-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2016-06-30-individual.md",
+ "generado": "2026-10-18T15:46:15.635Z",
+ "estado": "cola",
+ "clubId": "patroeisden-be",
+ "year": 2016,
+ "escala": {
+  "valor": "no se sabe",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "234885d",
+  "e59e61c"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "0.727579 = 0.727579",
+   "suma": 0.727579,
+   "impreso": 0.727579
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.00027200000000005
+  },
+  {
+   "nombre": "documento del año 2017",
+   "ok": true,
+   "detalle": "ingresos de 2016: 0.727579 en este documento y 0.727579 en jaarrekening-2017-06-30-individual.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2015",
+   "ok": false,
+   "detalle": "ingresos de 2015: 0.938778 en jaarrekening-2015-06-30-individual.pdf y 0.998778 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2015: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)",
+  "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0.727579,
+  "gastos": 1.29259,
+  "financiero": 0.000663,
+  "impuesto": 0,
+  "resultadoImpreso": -0.56462,
+  "resultadoParaCargar": -0.56462,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "M": 0.727579,
+   "pagina": 5,
+   "linea": 203,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Uitzonderlijke opbrengsten",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 5,
+   "linea": 217,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+   "lado": "gasto",
+   "M": 0.462829,
+   "pagina": 5,
+   "linea": 206,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "lado": "gasto",
+   "M": 0.589012,
+   "pagina": 7,
+   "linea": 257,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "Werkgeversbijdragen voor sociale verzekeringen",
+   "lado": "gasto",
+   "M": 0.121829,
+   "pagina": 7,
+   "linea": 258,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+   "lado": "gasto",
+   "M": 0.009283,
+   "pagina": 7,
+   "linea": 259,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "Andere personeelskosten",
+   "lado": "gasto",
+   "M": 0.051846,
+   "pagina": 7,
+   "linea": 260,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "Ouderdoms- en overlevingspensioenen",
+   "lado": "gasto",
+   "M": 0.032308,
+   "pagina": 7,
+   "linea": 261,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
+  },
+  {
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 5,
+   "linea": 209,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andere bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.025483,
+   "pagina": 5,
+   "linea": 211,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Uitzonderlijke kosten",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 5,
+   "linea": 218,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Financiële opbrengsten",
+   "M": 0.000527,
+   "linea": 214
+  },
+  {
+   "etiqueta": "Financiële kosten",
+   "M": 0.000136,
+   "linea": 215
+  }
+ ],
+ "impuesto": []
+}

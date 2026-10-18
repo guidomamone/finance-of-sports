@@ -1,0 +1,36 @@
+## Clubes/Estonia/Narva Trans/aruanne-2025.pdf
+## Clubes/Estonia/Narva Trans/aruanne-2019.pdf
+## Clubes/Estonia/Narva Trans/aruanne-2020.pdf
+  [07df8e3] etapa verificar · anio-vecino
+      Qué mirar: Los ingresos de 2020 no coinciden entre este documento y aruanne-2021.pdf (0.478467 contra 0.576168). Puede ser una reexpresión del año en el documento siguiente (pasa), otra tabla u otro perímetro.
+      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
+  [35fee00] etapa verificar · no-cierra
+      Qué mirar: documento del año 2021: ingresos de 2020: 0.478467 en este documento y 0.576168 en aruanne-2021.pdf (columna del año anterior). Revisar si falta o sobra alguna fila, o si hay un renglón del lado equivocado.
+      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
+      En la transcripción (Clubes/Estonia/Narva Trans/aruanne-2020.md), líneas 120-130.
+
+## Clubes/Estonia/Narva Trans/aruanne-2024.pdf
+## Clubes/Estonia/Narva Trans/aruanne-2021.pdf
+  [9c35dd4] etapa verificar · anio-vecino
+      Qué mirar: Los ingresos de 2020 no coinciden entre este documento y aruanne-2020.pdf (0.576168 contra 0.478467). Puede ser una reexpresión del año en el documento siguiente (pasa), otra tabla u otro perímetro.
+      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
+  [c7ff245] etapa verificar · no-cierra
+      Qué mirar: documento del año 2020: ingresos de 2020: 0.478467 en aruanne-2020.pdf y 0.576168 en este documento (columna del año anterior). Revisar si falta o sobra alguna fila, o si hay un renglón del lado equivocado.
+      Abrí el PDF en la página 5 del visor (la hoja tiene impreso "5" al pie).
+      En la transcripción (Clubes/Estonia/Narva Trans/aruanne-2021.md), líneas 131-143.
+  [66017e7] etapa verificar · duda-tema
+      Pregunta: ¿Se asigna 'Liikmemaksud' (L435, 56 015) de la Lisa 9 al renglón 'Liikmetelt saadud tasud' del estado y no a 'Tulu ettevõtlusest'?  (por qué: La Lisa 9 suma 127 939 (L441) y el estado muestra 71 924 (L133); la diferencia es exactamente 56 015 = Liikmetelt saadud tasud (L131), que también remite a la nota 9.)
+      Abrí el PDF en la página 13 del visor (la hoja tiene impreso "13" al pie).
+      En la transcripción (Clubes/Estonia/Narva Trans/aruanne-2021.md), líneas 131-441.
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; corregir --valor "no" si no)
+
+## Clubes/Estonia/Narva Trans/aruanne-2022.pdf
+  [5594d1b] etapa cargar · categoria
+      Pregunta: ¿"Treeningtasu" (0.070651 en millones de la moneda del documento) va como "Fútbol juvenil"?  (por qué: la categorización le dio 0.55 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 12 del visor (la hoja tiene impreso "12" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)
+## Clubes/Estonia/Narva Trans/aruanne-2023.pdf
+  [7f412c9] etapa cargar · categoria
+      Pregunta: ¿"Kooli poolt renditud hoonete ja rajatistega seotud kulud" (0.0725 en millones de la moneda del documento) va como "Administración y gastos generales"?  (por qué: la categorización le dio 0.7 de confianza, menos que el mínimo 0.8)
+      Abrí el PDF en la página 14 del visor (la hoja tiene impreso "14" al pie).
+      Propuesta del sistema: sí (responder aceptar si estás de acuerdo; si no, corregir --valor <categoría> con una de data/category-map.js)

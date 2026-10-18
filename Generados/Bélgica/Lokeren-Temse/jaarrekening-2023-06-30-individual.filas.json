@@ -1,0 +1,194 @@
+{
+ "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2023-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2023-06-30-individual.md",
+ "mdSha1": "a7d11f4d99e7096787f884e5522be26fc8ec7389",
+ "ubicacionSha1": "ec2d969b3924c8778fcbd4af85850845da939683",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:27:56.685Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": [
+   "b10"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica escala; formato Belga abreviado normalmente en euros (unidades)."
+  },
+  {
+   "bloque": "b10",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica escala."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 195,
+   "etiqueta": "Brutomarge (+)/(-)",
+   "actual": "591.204",
+   "anterior": "731.659",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 200,
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "actual": "1.069.496",
+   "anterior": "768.227",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 201,
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "actual": "80.193",
+   "anterior": "5.042",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 204,
+   "etiqueta": "Andere bedrijfskosten",
+   "actual": "11.261",
+   "anterior": "2.548",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 207,
+   "etiqueta": "Bedrijfswinst (Bedrijfsverlies) (+)/(-)",
+   "actual": "-569.746",
+   "anterior": "-44.157",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 208,
+   "etiqueta": "Financiële opbrengsten",
+   "actual": "73",
+   "anterior": "1.217",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 209,
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "actual": "73",
+   "anterior": "1.217",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financiële opbrengsten"
+  },
+  {
+   "bloque": "b4",
+   "linea": 211,
+   "etiqueta": "Financiële kosten",
+   "actual": "24.312",
+   "anterior": "5.300",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 212,
+   "etiqueta": "Recurrente financiële kosten",
+   "actual": "24.312",
+   "anterior": "5.300",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financiële kosten"
+  },
+  {
+   "bloque": "b4",
+   "linea": 214,
+   "etiqueta": "Winst (Verlies) van het boekjaar vóór belasting (+)/(-)",
+   "actual": "-593.986",
+   "anterior": "-48.240",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 218,
+   "etiqueta": "Winst (Verlies) van het boekjaar (+)/(-)",
+   "actual": "-593.986",
+   "anterior": "-48.240",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 221,
+   "etiqueta": "Te bestemmen winst (verlies) van het boekjaar (+)/(-)",
+   "actual": "-593.986",
+   "anterior": "-48.240",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 400,
+   "etiqueta": "Geactiveerde interesten",
+   "actual": "9.739",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Recurrente financiële kosten"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 218,
+  "actual": "-593.986",
+  "anterior": "-48.240"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se confirma que los importes están en euros (unidades) para b4 y b10?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Ni b4 ni b10 imprimen la escala; las cuentas belgas abreviadas suelen ir en euros.",
+   "bloques": [
+    "b4",
+    "b10"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga 'Geactiveerde interesten' (L400, 9.739) como detalle de 'Recurrente financiële kosten'?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "Recurrente financiële kosten",
+   "texto": "Los intereses activados (código 6502) se restan de los costos financieros; no es un componente sumable del renglón L212.",
+   "bloques": [
+    "b10"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Esquema abreviado: el estado arranca en Brutomarge (L195), sin abrir Omzet ni costos de mercaderías, por lo que no hay total de ingresos ni de gastos impresos. El personal medio (L391) no es importe y se excluyó. No hay impuestos registrados."
+}

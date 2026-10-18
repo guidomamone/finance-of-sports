@@ -1,0 +1,250 @@
+{
+  "md": "Clubes/Estonia/Kuressaare/aruanne-2020.md",
+  "pdf": "Clubes/Estonia/Kuressaare/aruanne-2020.pdf",
+  "club": "kuressaare-ee",
+  "year": 2020,
+  "generatedAt": "2026-10-18T14:54:31.264Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Liikmetelt saadud tasud",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.047219
+      ],
+      "glosa": "Ingresos por cuotas de socios"
+    },
+    {
+      "label": "UEFA solidaarsustoetus",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Annetused ja toetused\"",
+      "values": [
+        0.022896
+      ],
+      "glosa": "Fondos de solidaridad de la UEFA"
+    },
+    {
+      "label": "EJL toetused",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Annetused ja toetused\"",
+      "values": [
+        0.086747
+      ],
+      "glosa": "Subvenciones de la federación (EJL)"
+    },
+    {
+      "label": "Riigi ja/või kohaliku omavalitsuse toetused",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Annetused ja toetused\"",
+      "values": [
+        0.050559
+      ],
+      "glosa": "Subvenciones del Estado y/o de administraciones locales"
+    },
+    {
+      "label": "Muud toetused",
+      "lado": "revenue",
+      "page": 11,
+      "section": "nota que desglosa \"Annetused ja toetused\"",
+      "values": [
+        0.001588
+      ],
+      "glosa": "Otras subvenciones"
+    },
+    {
+      "label": "Reklaam",
+      "lado": "revenue",
+      "page": 12,
+      "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+      "values": [
+        0.015833
+      ],
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Muud tulud",
+      "lado": "revenue",
+      "page": 12,
+      "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+      "values": [
+        0.006307
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Muud tulud",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.000001
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Üür ja rent",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.00264
+      ],
+      "glosa": "Arrendamientos y cánones"
+    },
+    {
+      "label": "Energia",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.001838
+      ],
+      "glosa": "Suministros de energía"
+    },
+    {
+      "label": "Mitmesugused bürookulud",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.005948
+      ],
+      "glosa": "Gastos diversos de oficina"
+    },
+    {
+      "label": "Koolituskulud",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.000908
+      ],
+      "glosa": "Gastos de formación"
+    },
+    {
+      "label": "Riiklikud ja kohalikud maksud",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.000254
+      ],
+      "glosa": "Tributos estatales y locales"
+    },
+    {
+      "label": "Võistluste ja treeningutega seotud kulud",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.097795
+      ],
+      "glosa": "Gastos relacionados con competiciones y entrenamientos"
+    },
+    {
+      "label": "Liikmemaksud",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.005722
+      ],
+      "glosa": "Cuotas de afiliación"
+    },
+    {
+      "label": "Mängijatele makstav sportlasetoetus",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.014046
+      ],
+      "glosa": "Ayudas deportivas pagadas a los jugadores"
+    },
+    {
+      "label": "Mängijatele makstav sportlasestipendium",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.0028
+      ],
+      "glosa": "Becas deportivas pagadas a los jugadores"
+    },
+    {
+      "label": "Muud",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.00085
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "EJL litsentsiga töötajate (v.a. mängijad) palgakulu",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Tööjõukulud\"",
+      "values": [
+        0.045555
+      ],
+      "glosa": "Gastos salariales del personal con licencia de la federación (excl. jugadores)"
+    },
+    {
+      "label": "EJL litsentsiga töötajate (v.a. mängijad) maksud",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Tööjõukulud\"",
+      "values": [
+        0.016246
+      ],
+      "glosa": "Cargas sociales e impuestos del personal con licencia de la federación (excl. jugadores)"
+    },
+    {
+      "label": "Mängijate palgakulu",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Tööjõukulud\"",
+      "values": [
+        0.025104
+      ],
+      "glosa": "Gastos salariales de los jugadores"
+    },
+    {
+      "label": "Sotsiaalmaks mängijate töötasudelt",
+      "lado": "expense",
+      "page": 12,
+      "section": "nota que desglosa \"Tööjõukulud\"",
+      "values": [
+        0.008705
+      ],
+      "glosa": "Seguridad social sobre los salarios de los jugadores"
+    },
+    {
+      "label": "Põhivarade kulum ja väärtuse langus",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.000543
+      ],
+      "glosa": "Amortización y deterioro del inmovilizado"
+    },
+    {
+      "label": "Muud kulud",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.00194
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
+}

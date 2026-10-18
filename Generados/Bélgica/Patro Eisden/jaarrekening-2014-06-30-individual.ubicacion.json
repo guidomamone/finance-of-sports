@@ -1,0 +1,118 @@
+{
+ "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2014-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2014-06-30-individual.md",
+ "mdSha1": "626f2c105c9bf306dd8090ff6b5288b00e3b5366",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:27:58.677Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    23,
+    31
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    93,
+    130
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    138,
+    180
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    190,
+    210
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    220,
+    229
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    240,
+    256
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    270,
+    274
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 8,
+   "lineas": [
+    276,
+    299
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    309,
+    314
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 9,
+   "lineas": [
+    318,
+    334
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b6"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Los importes del modelo VKT-vzw de la Nationale Bank se presentan en euros sin decimales (ej. 354.452 en Bezoldigingen), no se indica otra escala.",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja vacío el importe del ejercicio de 'Werkgeversbijdragen voor sociale verzekeringen' (código 621) en la nota b6, tal como aparece en la transcripción?",
+   "propuesta": "sí",
+   "tema": "fila-ilegible",
+   "renglon": "Werkgeversbijdragen voor sociale verzekeringen",
+   "texto": "En b6 la fila 621 tiene importe solo en Vorig boekjaar (22.505) y la celda del ejercicio está vacía; puede ser un error de transcripción.",
+   "bloques": [
+    "b6"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales de la vzw (modelo abreviado VKT). Estado de resultados en b4; b6 desglosa los gastos de personal. b5 es la afectación del resultado y b2/b3 son el balance, por lo que se excluyen. b7, b8 y b10 son el balance social y la formación del personal, por lo que también se excluyen."
+}

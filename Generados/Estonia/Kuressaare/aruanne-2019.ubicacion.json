@@ -1,0 +1,218 @@
+{
+ "pdf": "Clubes/Estonia/Kuressaare/aruanne-2019.pdf",
+ "md": "Clubes/Estonia/Kuressaare/aruanne-2019.md",
+ "mdSha1": "496b4d7f4119cad5a4939a9dc117865ec4819d8f",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:46:53.141Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    10
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    26,
+    45
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    77,
+    99
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    110,
+    124
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    135,
+    152
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    163,
+    169
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    231,
+    236
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    238,
+    243
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    248,
+    257
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    268,
+    286
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    297,
+    306
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    308,
+    317
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 11,
+   "lineas": [
+    322,
+    328
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 11,
+   "lineas": [
+    333,
+    337
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 12,
+   "lineas": [
+    348,
+    361
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 12,
+   "lineas": [
+    366,
+    373
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 12,
+   "lineas": [
+    380,
+    383
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 12,
+   "lineas": [
+    387,
+    389
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 13,
+   "lineas": [
+    399,
+    401
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 14,
+   "lineas": [
+    415,
+    419
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 15,
+   "lineas": [
+    425,
+    427
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 15,
+   "lineas": [
+    431,
+    433
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b13",
+  "b14"
+ ],
+ "notas_gastos": [
+  "b15",
+  "b16"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(eurodes)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2019",
+ "columna_anterior": "2018",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de compras y ventas con partes relacionadas 'Kaupade ja teenuste ostud ja müügid' (b19)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Es un detalle de transacciones con fundadores y miembros, no desglosa una categoría del estado de resultados.",
+   "bloques": [
+    "b19"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados individual (Tulemiaruanne) en b4, en euros. El club es una asociación (MTÜ) sin subsidiarias: no hay estado consolidado, a pesar de que en los años ya cargados el perímetro figura como consolidado. Notas de ingresos: Lisa 6 (donaciones y subsidios, b13) y Lisa 7 (ingresos de actividad comercial, b14). Notas de gastos: Lisa 8 (gastos operativos diversos, b15) y Lisa 9 (gastos de personal, b16). La fila de número medio de empleados de b16 no es un importe y no se carga."
+}

@@ -1,0 +1,260 @@
+{
+  "md": "Clubes/Estonia/Kuressaare/aruanne-2022.md",
+  "pdf": "Clubes/Estonia/Kuressaare/aruanne-2022.pdf",
+  "club": "kuressaare-ee",
+  "year": 2022,
+  "generatedAt": "2026-10-18T14:54:31.319Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Liikmetelt saadud tasud",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Cuotas recibidas de socios"
+    },
+    {
+      "label": "UEFA solidaarsustoetus",
+      "lado": "revenue",
+      "page": 12,
+      "section": "nota que desglosa \"Annetused ja toetused\"",
+      "values": [
+        0.047932
+      ],
+      "glosa": "Ingresos por solidaridad de la UEFA"
+    },
+    {
+      "label": "EJL toetused",
+      "lado": "revenue",
+      "page": 12,
+      "section": "nota que desglosa \"Annetused ja toetused\"",
+      "values": [
+        0.110149
+      ],
+      "glosa": "Subvenciones de la Federación (EJL)"
+    },
+    {
+      "label": "Riigi ja/või kohaliku omavalitsuse toetused",
+      "lado": "revenue",
+      "page": 12,
+      "section": "nota que desglosa \"Annetused ja toetused\"",
+      "values": [
+        0.046766
+      ],
+      "glosa": "Subvenciones del Estado y/o administraciones locales"
+    },
+    {
+      "label": "Muud toetused",
+      "lado": "revenue",
+      "page": 12,
+      "section": "nota que desglosa \"Annetused ja toetused\"",
+      "values": [
+        0.002637
+      ],
+      "glosa": "Otras subvenciones"
+    },
+    {
+      "label": "Reklaam",
+      "lado": "revenue",
+      "page": 13,
+      "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+      "values": [
+        0.0045
+      ],
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Mängijaõiguste müük",
+      "lado": "revenue",
+      "page": 13,
+      "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+      "values": [
+        0.060505
+      ],
+      "glosa": "Venta de derechos de jugadores"
+    },
+    {
+      "label": "Piletitulu",
+      "lado": "revenue",
+      "page": 13,
+      "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+      "values": [
+        0.000042
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Muu tulu ettevõtlusest",
+      "lado": "revenue",
+      "page": 13,
+      "section": "nota que desglosa \"Tulu ettevõtlusest\"",
+      "values": [
+        0.007517
+      ],
+      "glosa": "Otros ingresos de explotación comercial"
+    },
+    {
+      "label": "Üür ja rent",
+      "lado": "expense",
+      "page": 13,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.004788
+      ],
+      "glosa": "Arrendamientos y cánones"
+    },
+    {
+      "label": "Energia",
+      "lado": "expense",
+      "page": 13,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.000883
+      ],
+      "glosa": "Energía y suministros"
+    },
+    {
+      "label": "Mitmesugused bürookulud",
+      "lado": "expense",
+      "page": 13,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.006164
+      ],
+      "glosa": "Gastos diversos de oficina"
+    },
+    {
+      "label": "Koolituskulud",
+      "lado": "expense",
+      "page": 13,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.001181
+      ],
+      "glosa": "Gastos de formación"
+    },
+    {
+      "label": "Riiklikud ja kohalikud maksud",
+      "lado": "expense",
+      "page": 13,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.000254
+      ],
+      "glosa": "Impuestos estatales y locales"
+    },
+    {
+      "label": "Võistluste ja treeningutega seotud kulud",
+      "lado": "expense",
+      "page": 13,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.162079
+      ],
+      "glosa": "Gastos de competiciones y entrenamientos"
+    },
+    {
+      "label": "Liikmemaksud",
+      "lado": "expense",
+      "page": 13,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.007558
+      ],
+      "glosa": "Cuotas de afiliación"
+    },
+    {
+      "label": "Mängijatele makstav sportlasetoetus",
+      "lado": "expense",
+      "page": 13,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.010529
+      ],
+      "glosa": "Ayudas deportivas pagadas a los jugadores"
+    },
+    {
+      "label": "Mängijaõiguste ost",
+      "lado": "expense",
+      "page": 13,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.011074
+      ],
+      "glosa": "Adquisición de derechos de jugadores"
+    },
+    {
+      "label": "Muud",
+      "lado": "expense",
+      "page": 13,
+      "section": "nota que desglosa \"Mitmesugused tegevuskulud\"",
+      "values": [
+        0.00129
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "EJL litsentsiga töötajate (v.a. mängijad) palgakulu",
+      "lado": "expense",
+      "page": 13,
+      "section": "nota que desglosa \"Tööjõukulud\"",
+      "values": [
+        0.077094
+      ],
+      "glosa": "Gastos salariales del personal con licencia EJL (excl. jugadores)"
+    },
+    {
+      "label": "EJL litsentsiga töötajate (v.a. mängijad) maksud",
+      "lado": "expense",
+      "page": 13,
+      "section": "nota que desglosa \"Tööjõukulud\"",
+      "values": [
+        0.026793
+      ],
+      "glosa": "Impuestos y cargas sociales del personal con licencia EJL (excl. jugadores)"
+    },
+    {
+      "label": "Mängijate palgakulu",
+      "lado": "expense",
+      "page": 13,
+      "section": "nota que desglosa \"Tööjõukulud\"",
+      "values": [
+        0.02616
+      ],
+      "glosa": "Gastos salariales de los jugadores"
+    },
+    {
+      "label": "Sotsiaalmaks mängijate töötasudelt",
+      "lado": "expense",
+      "page": 13,
+      "section": "nota que desglosa \"Tööjõukulud\"",
+      "values": [
+        0.008842
+      ],
+      "glosa": "Seguridad social sobre salarios de los jugadores"
+    },
+    {
+      "label": "Põhivarade kulum ja väärtuse langus",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.000542
+      ],
+      "glosa": "Amortización y deterioro del inmovilizado material"
+    },
+    {
+      "label": "Muud kulud",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.002016
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

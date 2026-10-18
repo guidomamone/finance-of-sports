@@ -1,0 +1,971 @@
+{
+ "pdf": "Clubes/Estonia/Paide Linnameeskond/aruanne-2021.pdf",
+ "generado": "2026-10-18T18:16:06.018Z",
+ "frena": [],
+ "avisos": [
+  "\"Televisión\" en 0: real, por ajuste manual (2026-10-18, sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18))",
+  "gestión: ningún presidente confirmado cubre 2021 (cierre 2021-12-31); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "paidelinnameeskond-ee",
+  "year": 2021,
+  "cierre": "2021-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Liikmetelt saadud tasud",
+    "normalizedCategory": "member_dues",
+    "amountNative": 0.060994,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sihtfinantseerimine tegevuskuludeks",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.100822,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Mittesihtotsatarbelised annetused ja toetused",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.004,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Järvamaa Maavalitsus",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.0155,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Paide Linnavalitsus",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.07353,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Türi Spordikluubide Liit MTÜ",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.003564,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "LHV",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.001707,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Spordikoolituse ja-teabe SA Spordikoolituse ja-teabe S",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.061015,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Järvamaa Omavalitsuse Liit",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.0025,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "UEFA solidarsus",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 0.292165,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 2,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Väljaku äärde ja reklaamtahvlitele paigaldatud reklaam",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.286892,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Tulud mängijaõiguste müügist",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.085426,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Klubi sümboolikaga toodete müügitulu",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.001723,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Piletitulu",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 0.005106,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Muud tulud",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.008221,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Muud tulud",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.006855,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Sihtotstarbeliselt finantseeritud projektide otsesed kulud",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.322456,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Stipendiumid",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.0453,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "toetused",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.21886,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Üür ja rent",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.018641,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Mitmesugused bürookulud",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.009931,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 1,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Lähetuskulud",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.045994,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Koolituskulud",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.00959,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Riiklikud ja kohalikud maksud",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.00054,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Kulu ebatõenäoliselt laekuvatest nõuetest",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.04315,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "mängude ja treeningute kulud",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.116057,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Palgakulu",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.464424,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Sotsiaalmaksud",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.157706,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Põhivarade kulum ja väärtuse langus",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.002091,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Muud kulud",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.007526,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2021-12-31",
+   "sourceId": "paidelinnameeskond-ee-aruanne-2021",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.023737,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Intressikulud",
+     "value": -0.023738
+    },
+    {
+     "label": "Muud finantstulud ja -kulud",
+     "value": 0.000001
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 1.01002,
+   "officialTotalExpenses": 1.462266,
+   "officialPAT": -0.475983
+  },
+  "source": {
+   "id": "paidelinnameeskond-ee-aruanne-2021",
+   "clubId": "paidelinnameeskond-ee",
+   "title": "Jalgpalliklubi Paide Linnameeskond — aruanne-2021 (ejercicio 2021)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Paide Linnameeskond/aruanne-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Estonia/Paide Linnameeskond/aruanne-2021.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2021-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "paidelinnameeskond-ee",
+ "year": 2021,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Estonia/Paide Linnameeskond/aruanne-2021.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L134) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Paide Linnameeskond/aruanne-2021.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "seleccion": {
+  "filas": 32,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Liikmetelt saadud tasud",
+   "page": 5,
+   "native": 0.060994,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.060994,
+   "cat": "member_dues",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.060994
+  },
+  {
+   "label": "Sihtfinantseerimine tegevuskuludeks",
+   "page": 12,
+   "native": 0.100822,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
+   "signoFijo": 0.100822,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.100822
+  },
+  {
+   "label": "Mittesihtotsatarbelised annetused ja toetused",
+   "page": 12,
+   "native": 0.004,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
+   "signoFijo": 0.004,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.004
+  },
+  {
+   "label": "Järvamaa Maavalitsus",
+   "page": 12,
+   "native": 0.0155,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
+   "signoFijo": 0.0155,
+   "cat": "other_income",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.0155
+  },
+  {
+   "label": "Paide Linnavalitsus",
+   "page": 12,
+   "native": 0.07353,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
+   "signoFijo": 0.07353,
+   "cat": "other_income",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.07353
+  },
+  {
+   "label": "Türi Spordikluubide Liit MTÜ",
+   "page": 12,
+   "native": 0.003564,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
+   "signoFijo": 0.003564,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Donación de una unión de clubes deportivos (Türi) dentro de Annetused ja toetused. [aruanne-2025.md L465 (Lisa 8: Türi Spordikluubide Liit MTÜ 1 000)]",
+   "destino": "revenue",
+   "amountNative": 0.003564
+  },
+  {
+   "label": "LHV",
+   "page": 12,
+   "native": 0.001707,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
+   "signoFijo": 0.001707,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): LHV está en Lisa 8 'Annetused ja toetused' (donación), no en Tulu ettevõtlusest donde Paide registra sus sponsors (reklaam, L474). Nõmme agrupa 'Muud toetused ECA, LHV' en other_income. Monto chico. [aruanne-2025.md L466 (LHV 4 653); L474 (la publicidad va aparte en Lisa 9)]",
+   "destino": "revenue",
+   "amountNative": 0.001707
+  },
+  {
+   "label": "Spordikoolituse ja-teabe SA Spordikoolituse ja-teabe S",
+   "page": 12,
+   "native": 0.061015,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
+   "signoFijo": 0.061015,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): SA Spordikoolituse ja -teabe (fundación estatal de capacitación deportiva) otorga subsidio en Annetused ja toetused; misma entidad que en Tartu (other_income). Es un subsidio público, no un ingreso de fútbol juvenil propiamente. [aruanne-2025.md L467 (Spordikoolituse ja-teabe SA 84 895)]",
+   "destino": "revenue",
+   "amountNative": 0.061015
+  },
+  {
+   "label": "Järvamaa Omavalitsuse Liit",
+   "page": 12,
+   "native": 0.0025,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
+   "signoFijo": 0.0025,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.0025
+  },
+  {
+   "label": "UEFA solidarsus",
+   "page": 12,
+   "native": 0.292165,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
+   "signoFijo": 0.292165,
+   "cat": "competition_bonus",
+   "conf": 0.9,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.292165
+  },
+  {
+   "label": "Väljaku äärde ja reklaamtahvlitele paigaldatud reklaam",
+   "page": 13,
+   "native": 0.286892,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Tulu ettevõtlusest\")",
+   "signoFijo": 0.286892,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.286892
+  },
+  {
+   "label": "Tulud mängijaõiguste müügist",
+   "page": 13,
+   "native": 0.085426,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Tulu ettevõtlusest\")",
+   "signoFijo": 0.085426,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.085426
+  },
+  {
+   "label": "Klubi sümboolikaga toodete müügitulu",
+   "page": 13,
+   "native": 0.001723,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Tulu ettevõtlusest\")",
+   "signoFijo": 0.001723,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.001723
+  },
+  {
+   "label": "Piletitulu",
+   "page": 13,
+   "native": 0.005106,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Tulu ettevõtlusest\")",
+   "signoFijo": 0.005106,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.005106
+  },
+  {
+   "label": "Muud tulud",
+   "page": 13,
+   "native": 0.008221,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Tulu ettevõtlusest\")",
+   "signoFijo": 0.008221,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.008221
+  },
+  {
+   "label": "Muud tulud",
+   "page": 5,
+   "native": 0.006855,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.006855,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.006855
+  },
+  {
+   "label": "Sihtotstarbeliselt finantseeritud projektide otsesed kulud",
+   "page": 5,
+   "native": 0.322456,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.322456,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Gastos directos de proyectos con financiación finalista, espejo de 'Sihtfinantseerimine'; sin desglose en el documento (solo la línea del estado de resultados). Igual que Nõmme. [aruanne-2025.md L149 (Sihtotstarbeliselt finantseeritud projektide otsesed kulud -164 939)]",
+   "destino": "expense",
+   "amountNative": -0.322456
+  },
+  {
+   "label": "Stipendiumid",
+   "page": 13,
+   "native": 0.0453,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Jagatud annetused ja toetused\")",
+   "signoFijo": 0.0453,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Stipendiumid 40.300 (Lisa 10) sin destinatario; como 'sportlasestipendium' de Flora y Narva. Pregunta al club en dudas-por-club",
+   "destino": "expense",
+   "amountNative": -0.0453
+  },
+  {
+   "label": "toetused",
+   "page": 13,
+   "native": 0.21886,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Jagatud annetused ja toetused\")",
+   "signoFijo": 0.21886,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Toetused 391.099 (Lisa 10) sin destinatario; como 'Sportlastoetused' de Nõmme. Pregunta al club en dudas-por-club",
+   "destino": "expense",
+   "amountNative": -0.21886
+  },
+  {
+   "label": "Üür ja rent",
+   "page": 13,
+   "native": 0.018641,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Mitmesugused tegevuskulud\")",
+   "signoFijo": 0.018641,
+   "cat": "admin_general_expense",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.018641
+  },
+  {
+   "label": "Mitmesugused bürookulud",
+   "page": 13,
+   "native": 0.009931,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Mitmesugused tegevuskulud\")",
+   "signoFijo": 0.009931,
+   "cat": "admin_general_expense",
+   "conf": 0.93,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.009931
+  },
+  {
+   "label": "Lähetuskulud",
+   "page": 13,
+   "native": 0.045994,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Mitmesugused tegevuskulud\")",
+   "signoFijo": 0.045994,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.045994
+  },
+  {
+   "label": "Koolituskulud",
+   "page": 13,
+   "native": 0.00959,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Mitmesugused tegevuskulud\")",
+   "signoFijo": 0.00959,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Koolituskulud' = capacitación (cursos, formación); mismo criterio que Flora, Kuressaare, Harju y Narva (admin_general_expense). El documento no lo desglosa. [aruanne-2025.md L508 (Lisa 11: Koolituskulud 111 662)]",
+   "destino": "expense",
+   "amountNative": -0.00959
+  },
+  {
+   "label": "Riiklikud ja kohalikud maksud",
+   "page": 13,
+   "native": 0.00054,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Mitmesugused tegevuskulud\")",
+   "signoFijo": 0.00054,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.00054
+  },
+  {
+   "label": "Kulu ebatõenäoliselt laekuvatest nõuetest",
+   "page": 13,
+   "native": 0.04315,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Mitmesugused tegevuskulud\")",
+   "signoFijo": 0.04315,
+   "cat": "other_expenses",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.04315
+  },
+  {
+   "label": "mängude ja treeningute kulud",
+   "page": 13,
+   "native": 0.116057,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Mitmesugused tegevuskulud\")",
+   "signoFijo": 0.116057,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Misma fila y mismo criterio que 2019: match_organisation_expense. El 116.057 coincide con la columna 2021 del aruanne-2022. [mängude ja treeningute kulud 116 057 (aruanne-2021; 2022 comparativo L530)]",
+   "destino": "expense",
+   "amountNative": -0.116057
+  },
+  {
+   "label": "Palgakulu",
+   "page": 13,
+   "native": 0.464424,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Tööjõukulud\")",
+   "signoFijo": 0.464424,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "precedente del país: 1 clubes (Harju JK Laagri), nota:toojoukulud · Claude 2026-10-18 (subagente Sonnet): Tööjõukulud son todos de futbolistas profesionales. [Lisa 9 (L355, L360): 'Palgakulu 63 831'; 'Tööjõukulud on seotud professionaalsete jalgpalluritega']",
+   "destino": "expense",
+   "amountNative": -0.464424
+  },
+  {
+   "label": "Sotsiaalmaksud",
+   "page": 13,
+   "native": 0.157706,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Tööjõukulud\")",
+   "signoFijo": 0.157706,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "precedente del país: 1 clubes (Harju JK Laagri), nota:toojoukulud · Claude 2026-10-18 (subagente Sonnet): Cargas sociales con el sueldo de su sector (jugadores). [Lisa 9 (L356, L362): 'Sotsiaalmaksud 21 575'; 'Mängijate sotsiaalmaksud: 21 575']",
+   "destino": "expense",
+   "amountNative": -0.157706
+  },
+  {
+   "label": "Põhivarade kulum ja väärtuse langus",
+   "page": 5,
+   "native": 0.002091,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.002091,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.002091
+  },
+  {
+   "label": "Muud kulud",
+   "page": 5,
+   "native": 0.007526,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.007526,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.007526
+  },
+  {
+   "label": "Intressikulud",
+   "page": null,
+   "native": -0.023738,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Muud finantstulud ja -kulud",
+   "page": null,
+   "native": 0.000001,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Annetused ja toetused\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Tulu ettevõtlusest\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Jagatud annetused ja toetused\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Mitmesugused tegevuskulud\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Tööjõukulud\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 1.01002,
+  "expSum": -1.462266,
+  "officialTotalRevenue": 1.01002,
+  "officialTotalExpenses": 1.462266,
+  "officialPAT": -0.475983,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.475983,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 1.01002
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 1.462266
+  }
+ },
+ "liga": {
+  "valor": "ee-meistriliiga",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2021,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2021-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (44 de 51 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L134) (Claude 2026-10-18)",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Estonia (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2021-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2021-12-31 = 0.882924 (Tipo de referencia del Banco Central Europeo al 2021-12-31)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "paidelinnameeskond-ee-aruanne-2021",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "ee-meistriliiga",
+   "fuente": "data/club-leagues/ee.js ya tiene la fila",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 16,
+  "lineasGasto": 14,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

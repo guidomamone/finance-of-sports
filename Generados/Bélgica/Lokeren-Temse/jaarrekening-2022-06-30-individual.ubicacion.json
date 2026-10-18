@@ -1,0 +1,102 @@
+{
+ "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2022-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2022-06-30-individual.md",
+ "mdSha1": "61339665beba281634cf0de9bdede3539373002b",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:22.464Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    18,
+    26
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    80,
+    107
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    115,
+    156
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    166,
+    195
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    205,
+    212
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    224,
+    250
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    258,
+    286
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    296,
+    309
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b8"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING in EURO (b1)",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el cuadro 'RESULTATEN' (b8) como nota de gastos (personal y resultados financieros)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Bezoldigingen, sociale lasten en pensioenen",
+   "texto": "b8 tiene sobre todo cantidad de empleados (no monetario) y pocos importes; puede no desglosar renglones monetarios del estado.",
+   "bloques": [
+    "b8"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales de una VZW en el modelo abreviado belga (VKT-VZW), en euros. b4 es la resultatenrekening, que parte de la brutomarge y por eso no abre los ingresos. b8 abre datos de personal y de resultados financieros. b2 y b3 son el balance, b5 el destino del resultado y b6 y b7 los cuadros de activo fijo: no se eligen."
+}

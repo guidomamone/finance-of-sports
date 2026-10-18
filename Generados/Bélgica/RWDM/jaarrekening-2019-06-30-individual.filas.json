@@ -1,0 +1,115 @@
+{
+ "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2019-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/RWDM/jaarrekening-2019-06-30-individual.md",
+ "mdSha1": "6ec2af6be0e6d1bc6fe1ee2228e3799d19001aeb",
+ "ubicacionSha1": "7ad774fa7763fd18fd168528126bab1908b86d9b",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:27:58.968Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica la escala (las cuentas anuales belgas abreviadas suelen expresarse en euros, pero no está impreso en b4)."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 206,
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "actual": "1.570",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 212,
+   "etiqueta": "Bedrijfswinst (Bedrijfsverlies) (+)/(-)",
+   "actual": "-1.570",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 217,
+   "etiqueta": "Financiële kosten",
+   "actual": "13",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 218,
+   "etiqueta": "Recurrente financiële kosten",
+   "actual": "13",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 220,
+   "etiqueta": "Winst (Verlies) van het boekjaar vóór belasting (+)/(-)",
+   "actual": "-1.583",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 224,
+   "etiqueta": "Winst (Verlies) van het boekjaar (+)/(-)",
+   "actual": "-1.583",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 227,
+   "etiqueta": "Te bestemmen winst (verlies) van het boekjaar (+)/(-)",
+   "actual": "-1.583",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 224,
+  "actual": "-1.583",
+  "anterior": null
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes del estado de resultados (b4, L196-L227) como expresados en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El bloque b4 no imprime la escala; en los modelos belgas del BNB los importes suelen ir en euros, pero conviene confirmarlo en la portada o en el encabezado del PDF.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Es un formato abreviado belga, sin columna del año anterior con importes (probablemente es el primer ejercicio). No hay ingresos ni brutomarge impresos. Los únicos gastos son las amortizaciones (1.570) y los gastos financieros (13). La columna del año anterior está vacía en todas las filas."
+}

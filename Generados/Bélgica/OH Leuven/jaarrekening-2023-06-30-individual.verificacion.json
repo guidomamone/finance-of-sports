@@ -1,0 +1,227 @@
+{
+ "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2023-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2023-06-30-individual.md",
+ "generado": "2026-10-18T15:46:15.623Z",
+ "estado": "cola",
+ "clubId": "ohleuven-be",
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "42d4fad",
+  "ca845e4",
+  "ec2febf",
+  "09ce519"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "21.345701 = 21.345702",
+   "suma": 21.345701,
+   "impreso": 21.345702
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "\"Bedrijfskosten\" 39.138613 cierra; además se suman 12 línea(s) fuera de ese total (40.477885)"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 21.345701 - gastos 79.616498 ± financiero 0.809855 ± impuesto 0.265369 no da el impreso -18.833752",
+   "dif": null
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2023: 21.345701 en este documento y 21.345701 en jaarrekening-2024-06-30-individual.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: b76 es una versión resumida del estado de resultados ya cargado de b10-b11, solo con el ejercicio actual.",
+  "duda de extraer ya contestada para el club (antes de su alta) (fila-ilegible, \"Omzet\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
+  "duda de extraer ya contestada para el club (antes de su alta) (fila-ilegible, \"Andere financiële opbrengsten\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 21.345701,
+  "gastos": 79.616498,
+  "financiero": 0.809855,
+  "impuesto": 0.265369,
+  "resultadoImpreso": -18.833752,
+  "resultadoParaCargar": -18.833752,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Omzet",
+   "lado": "ingreso",
+   "M": 15.165926,
+   "pagina": 8,
+   "linea": 431,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andere bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "M": 6.144719,
+   "pagina": 8,
+   "linea": 434,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Niet-recurrente bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "M": 0.035056,
+   "pagina": 8,
+   "linea": 435,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bedrijfskosten",
+   "lado": "gasto",
+   "M": 39.138613,
+   "pagina": 8,
+   "linea": 436,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Handelsgoederen, grond- en hulpstoffen",
+   "lado": "gasto",
+   "M": 1.311638,
+   "pagina": 8,
+   "linea": 437,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aankopen",
+   "lado": "gasto",
+   "M": 1.325454,
+   "pagina": 8,
+   "linea": 438,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Voorraad: afname (toename)",
+   "lado": "gasto",
+   "M": 0.013817,
+   "pagina": 8,
+   "linea": 439,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Diensten en diverse goederen",
+   "lado": "gasto",
+   "M": 9.868559,
+   "pagina": 8,
+   "linea": 440,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "620",
+   "lado": "gasto",
+   "M": 19.53842,
+   "pagina": 24,
+   "linea": 1582,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\""
+  },
+  {
+   "etiqueta": "621",
+   "lado": "gasto",
+   "M": 2.423178,
+   "pagina": 24,
+   "linea": 1583,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\""
+  },
+  {
+   "etiqueta": "623",
+   "lado": "gasto",
+   "M": 0.683844,
+   "pagina": 24,
+   "linea": 1585,
+   "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\""
+  },
+  {
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "gasto",
+   "M": 4.128815,
+   "pagina": 8,
+   "linea": 442,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 8,
+   "linea": 443,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "640",
+   "lado": "gasto",
+   "M": 0.806932,
+   "pagina": 25,
+   "linea": 1646,
+   "origen": "nota que desglosa \"Andere bedrijfskosten\""
+  },
+  {
+   "etiqueta": "641/8",
+   "lado": "gasto",
+   "M": 0.062211,
+   "pagina": 25,
+   "linea": 1647,
+   "origen": "nota que desglosa \"Andere bedrijfskosten\""
+  },
+  {
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.315017,
+   "pagina": 8,
+   "linea": 447,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Andere financiële opbrengsten",
+   "M": 0.017192,
+   "linea": 464
+  },
+  {
+   "etiqueta": "Kosten van schulden",
+   "M": 0.792462,
+   "linea": 468
+  },
+  {
+   "etiqueta": "Andere financiële kosten",
+   "M": 0.000201,
+   "linea": 470
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen",
+   "M": 0.265369,
+   "linea": 476
+  }
+ ]
+}

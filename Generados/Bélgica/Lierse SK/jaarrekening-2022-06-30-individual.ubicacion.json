@@ -1,0 +1,188 @@
+{
+ "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2022-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2022-06-30-individual.md",
+ "mdSha1": "d17c5d9bf9d2647dc433aec067f620aa49c87892",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:27:56.475Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    19,
+    25
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    115,
+    116
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    128,
+    154
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    162,
+    192
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    200,
+    224
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    234,
+    262
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    272,
+    288
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    300,
+    316
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    324,
+    347
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    355,
+    382
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 12,
+   "lineas": [
+    392,
+    396
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 12,
+   "lineas": [
+    398,
+    423
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 13,
+   "lineas": [
+    433,
+    445
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 22,
+   "lineas": [
+    627,
+    631
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 22,
+   "lineas": [
+    633,
+    656
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 23,
+   "lineas": [
+    666,
+    668
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 23,
+   "lineas": [
+    670,
+    672
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 23,
+   "lineas": [
+    676,
+    683
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 23,
+   "lineas": [
+    685,
+    689
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 23,
+   "lineas": [
+    691,
+    695
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6"
+ ],
+ "notas_ingresos": [
+  "b13"
+ ],
+ "notas_gastos": [
+  "b13"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "de JAARREKENING in EURO (modelo NBB VKT, importes en euros sin decimales)",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Cuentas anuales individuales (modelo abreviado VKT) de Lierse SK. Estado de resultados en b6 (Resultatenrekening, pág. 7). b13 desglosa los renglones no recurrentes (76A/66A) del estado; sus filas de personal y de intereses activados no son importes de resultado a cargar. Balance (b3-b5), destino del resultado (b7), activo fijo (b8-b10), deudas (b11-b12) y balance social (b14-b20) excluidos. El año anterior muestra 0 en varias filas (probable primer ejercicio con actividad o con un ejercicio previo corto)."
+}

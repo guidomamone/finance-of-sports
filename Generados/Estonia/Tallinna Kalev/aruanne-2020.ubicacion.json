@@ -1,0 +1,312 @@
+{
+ "pdf": "Clubes/Estonia/Tallinna Kalev/aruanne-2020.pdf",
+ "md": "Clubes/Estonia/Tallinna Kalev/aruanne-2020.md",
+ "mdSha1": "66942863851e64633b377f9519ee3dc8bee27019",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:46:55.111Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    10
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    27,
+    50
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    83,
+    108
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    119,
+    137
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    148,
+    172
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    183,
+    189
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    247,
+    251
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    286,
+    290
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    295,
+    305
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    307,
+    316
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    329,
+    339
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    346,
+    357
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 11,
+   "lineas": [
+    364,
+    365
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 12,
+   "lineas": [
+    373,
+    375
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 12,
+   "lineas": [
+    382,
+    391
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 12,
+   "lineas": [
+    393,
+    403
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 13,
+   "lineas": [
+    414,
+    420
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 13,
+   "lineas": [
+    422,
+    429
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 13,
+   "lineas": [
+    436,
+    445
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 13,
+   "lineas": [
+    449,
+    452
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 14,
+   "lineas": [
+    463,
+    473
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 14,
+   "lineas": [
+    478,
+    483
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 15,
+   "lineas": [
+    494,
+    515
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 15,
+   "lineas": [
+    522,
+    530
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 16,
+   "lineas": [
+    543,
+    545
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 16,
+   "lineas": [
+    549,
+    551
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 16,
+   "lineas": [
+    555,
+    558
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 16,
+   "lineas": [
+    560,
+    563
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 16,
+   "lineas": [
+    567,
+    569
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 17,
+   "lineas": [
+    581,
+    583
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 18,
+   "lineas": [
+    589,
+    591
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 18,
+   "lineas": [
+    595,
+    599
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b19",
+  "b20",
+  "b21"
+ ],
+ "notas_gastos": [
+  "b22",
+  "b23",
+  "b24"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Tulemiaruanne (eurodes)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2020",
+ "columna_anterior": "2019",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado individual (b4) aunque el club tenga cargado perímetro consolidado en otros años?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El documento es el informe anual de una asociación sin indicación de consolidación; solo hay un estado de resultados.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Kasutusrendikulu' (b14) por ser un detalle de una fila ya incluida en Lisa 12?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Kasutusrendikulu",
+   "texto": "El gasto de arrendamiento operativo probablemente ya está en 'Üür ja rent' de b23.",
+   "bloques": [
+    "b14",
+    "b23"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados individual de la entidad sin fines de lucro (Tulemiaruanne, b4), en euros. Notas: Lisa 9 donaciones y subvenciones (b19, b20), Lisa 10 ingresos de actividad empresarial (b21), Lisa 11 donaciones distribuidas (b22), Lisa 12 gastos operativos diversos (b23), Lisa 13 gastos de personal (b24). No hay estados consolidados."
+}

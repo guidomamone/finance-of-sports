@@ -8,3 +8,7 @@
 - Último chequeo: 2026-10-03.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2025 desde `Clubes/Estonia/Harju JK Laagri/aruanne-2025.pdf` (sourceId `harjujklaagri-ee-aruanne-2025`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2023 desde `Clubes/Estonia/Harju JK Laagri/aruanne-2023.pdf` (sourceId `harjujklaagri-ee-aruanne-2023`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2024 desde `Clubes/Estonia/Harju JK Laagri/aruanne-2024.pdf` (sourceId `harjujklaagri-ee-aruanne-2024`).

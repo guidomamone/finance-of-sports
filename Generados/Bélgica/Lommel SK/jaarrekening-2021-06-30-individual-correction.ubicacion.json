@@ -1,0 +1,172 @@
+{
+ "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2021-06-30-individual-correction.pdf",
+ "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2021-06-30-individual-correction.md",
+ "mdSha1": "f9b51c6169c2e12309c2920fedde909dcb7cd38c",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:27:56.784Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    20,
+    28
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    109,
+    135
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    143,
+    196
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    206,
+    234
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    244,
+    260
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    272,
+    288
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    296,
+    319
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    327,
+    354
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    364,
+    393
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    403,
+    415
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 13,
+   "lineas": [
+    425,
+    464
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    481,
+    484
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 15,
+   "lineas": [
+    503,
+    511
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 16,
+   "lineas": [
+    546,
+    554
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 21,
+   "lineas": [
+    731,
+    735
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 21,
+   "lineas": [
+    737,
+    760
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 22,
+   "lineas": [
+    770,
+    775
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 22,
+   "lineas": [
+    779,
+    794
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b10"
+ ],
+ "notas_gastos": [
+  "b10"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "JAARREKENING IN EURO (modelo belga normalizado, importes en euros)",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Jaarrekening individual en modelo abreviado (VKT). Estado de resultados en b4 (Resultatenrekening, pág. 6). b10 desglosa los renglones no recurrentes (opbrengsten/kosten) del estado. b15 (sociale balans) contiene personeelskosten, pero es un dato del balance social y no un desglose del estado, por lo que no se incluye. Los bloques restantes corresponden a balance, resultaatverwerking, vaste activa, schulden y otros cuadros, que no se eligen."
+}

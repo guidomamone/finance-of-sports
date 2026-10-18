@@ -1,0 +1,30 @@
+{
+ "md": "Clubes/Bélgica/RWDM/jaarrekening-2019-06-30-individual.md",
+ "generatedAt": "2026-10-18T15:39:24.845Z",
+ "rubrosHuella": "fa705afe5b52fdc1e52ce50be02e24ab104f9212",
+ "rubros": [
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "page": 6,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "depreciation",
+     0.83
+    ],
+    [
+     "player_amortisation",
+     0.15
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1162
+  }
+ ]
+}

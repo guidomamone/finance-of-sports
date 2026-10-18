@@ -1,0 +1,154 @@
+{
+ "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2020-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2020-06-30-individual.md",
+ "generado": "2026-10-18T15:46:15.532Z",
+ "estado": "cola",
+ "clubId": "lommelsk-be",
+ "year": 2020,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "948da33"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 1.279507 - gastos 3.034235 ± financiero 1.412599 ± impuesto -0.00274 no da el impreso -0.773415",
+   "dif": null
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2020: 1.279507 en este documento y 1.279507 en jaarrekening-2021-06-30-individual-correction.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2019",
+   "ok": true,
+   "detalle": "ingresos de 2019: 1.392528 en jaarrekening-2019-06-30-individual.pdf y 1.392528 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
+  "duda de extraer que no afecta la carga: Esquema abreviado: Omzet (L209) y compras (L210) vienen vacíos, los ingresos brutos no son visibles."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 1.279507,
+  "gastos": 3.034235,
+  "financiero": 1.412599,
+  "impuesto": -0.00274,
+  "resultadoImpreso": -0.773415,
+  "resultadoParaCargar": -0.773415,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Brutomarge (+)/(-)",
+   "lado": "ingreso",
+   "M": 0.929507,
+   "pagina": 7,
+   "linea": 207,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Waarvan: niet-recurrente bedrijfsopbrengsten",
+   "lado": "ingreso",
+   "M": 0.35,
+   "pagina": 7,
+   "linea": 208,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "gasto",
+   "M": 2.346805,
+   "pagina": 7,
+   "linea": 211,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.619989,
+   "pagina": 7,
+   "linea": 212,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "gasto",
+   "M": 0.002,
+   "pagina": 7,
+   "linea": 213,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andere bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.045191,
+   "pagina": 7,
+   "linea": 215,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.02025,
+   "pagina": 7,
+   "linea": 217,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "M": 0.034482,
+   "linea": 220
+  },
+  {
+   "etiqueta": "Niet-recurrente financiële opbrengsten",
+   "M": 1.336104,
+   "linea": 222
+  },
+  {
+   "etiqueta": "Recurrente financiële kosten",
+   "M": 0.042013,
+   "linea": 224
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen op het resultaat (+)/(-)",
+   "M": -0.00274,
+   "linea": 229
+  }
+ ]
+}

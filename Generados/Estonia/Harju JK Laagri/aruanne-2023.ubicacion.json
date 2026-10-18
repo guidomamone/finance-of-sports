@@ -1,0 +1,120 @@
+{
+ "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.pdf",
+ "md": "Clubes/Estonia/Harju JK Laagri/aruanne-2023.md",
+ "mdSha1": "0ae4295218b58c1283d112aad8bcdacee842ce9d",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:46:47.481Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    5,
+    16
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    24,
+    36
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    59,
+    76
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    87,
+    97
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    108,
+    121
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    132,
+    135
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    194,
+    197
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    203,
+    207
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 9,
+   "lineas": [
+    209,
+    212
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    225,
+    227
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    236,
+    238
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    242,
+    244
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "(eurodes)",
+ "moneda": "EUR",
+ "columna_ejercicio": "09.01.2023 - 31.12.2023",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Primer ejercicio de la entidad (09.01.2023-31.12.2023), sin columna de año anterior. El estado de resultados (Tulemiaruanne) es b4. Las notas con cifras (b8, b9) son saldos y préstamos con partes relacionadas, no desgloses de ingresos ni de gastos. Se excluyen: b3 (balance), b5 (flujo de efectivo) y b6 (evolución del patrimonio)."
+}

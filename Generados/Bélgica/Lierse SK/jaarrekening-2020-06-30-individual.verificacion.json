@@ -1,0 +1,109 @@
+{
+ "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2020-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2020-06-30-individual.md",
+ "generado": "2026-10-18T15:46:15.503Z",
+ "estado": "cola",
+ "clubId": "liersesk-be",
+ "year": 2020,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "49e3bf4",
+  "39dd458"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 0 - gastos 0.000098 ± financiero 0.099174 ± impuesto 0.008184 no da el impreso -0.019422",
+   "dif": null
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2020: 0 en este documento y 0.001475 en jaarrekening-2021-06-30-individual.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2019",
+   "ok": null,
+   "detalle": "no se puede comparar: este documento no trae la columna del año anterior"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0,
+  "gastos": 0.000098,
+  "financiero": 0.099174,
+  "impuesto": 0.008184,
+  "resultadoImpreso": -0.019422,
+  "resultadoParaCargar": -0.019422,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 8,
+   "linea": 262,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andere bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.000098,
+   "pagina": 8,
+   "linea": 265,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "M": 0.044754,
+   "linea": 270
+  },
+  {
+   "etiqueta": "Recurrente financiële kosten",
+   "M": 0.05442,
+   "linea": 274
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen op het resultaat (+)/(-)",
+   "M": 0.008184,
+   "linea": 279
+  }
+ ]
+}

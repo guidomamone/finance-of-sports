@@ -1,0 +1,303 @@
+{
+ "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2022-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2022-06-30-individual.md",
+ "mdSha1": "6665fc7a09f5ee85395a2c24372f0920a7faff8c",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T15:20:22.984Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    117,
+    118
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    130,
+    156
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    164,
+    194
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    202,
+    226
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    236,
+    265
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    275,
+    291
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    303,
+    320
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    328,
+    352
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    360,
+    388
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    398,
+    428
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 13,
+   "lineas": [
+    438,
+    451
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    461,
+    483
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 15,
+   "lineas": [
+    491,
+    509
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 15,
+   "lineas": [
+    511,
+    513
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 15,
+   "lineas": [
+    515,
+    519
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 16,
+   "lineas": [
+    527,
+    531
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 16,
+   "lineas": [
+    533,
+    535
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 16,
+   "lineas": [
+    539,
+    541
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 17,
+   "lineas": [
+    553,
+    562
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 17,
+   "lineas": [
+    564,
+    569
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 17,
+   "lineas": [
+    571,
+    579
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 18,
+   "lineas": [
+    601,
+    609
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 21,
+   "lineas": [
+    694,
+    695
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 22,
+   "lineas": [
+    730,
+    731
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 23,
+   "lineas": [
+    762,
+    763
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 24,
+   "lineas": [
+    806,
+    807
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 25,
+   "lineas": [
+    825,
+    826
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 26,
+   "lineas": [
+    840,
+    844
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 26,
+   "lineas": [
+    846,
+    869
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 27,
+   "lineas": [
+    879,
+    881
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 27,
+   "lineas": [
+    883,
+    885
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 27,
+   "lineas": [
+    889,
+    905
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "Las cuentas anuales belgas del modelo NBB (VKT) se presentan normalmente en euros; el índice no muestra ninguna frase que indique la escala.",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "columna_anterior": "Vorig boekjaar",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes de la resultatenrekening (b5) están expresados en euros, en unidades?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El índice no muestra la escala; el modelo NBB suele estar en EUR en unidades (en b22 se menciona '0 EUR').",
+   "bloques": [
+    "b5"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿El estado b5 (modelo abreviado VKT) arranca en 'Brutomarge' sin mostrar por separado la omzet ni los costos de mercaderías?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Brutomarge (+)/(-)",
+   "texto": "En el esquema abreviado los ingresos se presentan netos dentro del margen bruto, así que no se pueden cargar los ingresos brutos.",
+   "bloques": [
+    "b5"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Cuentas anuales individuales con modelo abreviado belga (VKT). El estado de resultados es b5 (RESULTATENREKENING). El bloque b11 (6.4 RESULTATEN) solo trae datos de personal y de intereses activados, por lo que no desglosa renglones de ingresos ni de gastos. b28 es el balance social, con costos de personal informativos; no se elige."
+}

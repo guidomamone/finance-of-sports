@@ -1,0 +1,494 @@
+{
+ "pdf": "Clubes/Estonia/Kuressaare/aruanne-2022.pdf",
+ "md": "Clubes/Estonia/Kuressaare/aruanne-2022.md",
+ "mdSha1": "72fbc8af02d17827ca965de209fe7b3c1df9e95a",
+ "ubicacionSha1": "83a0f24408a2ccd6758642b6a28f61887eacb22b",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-18T14:54:30.083Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [
+   "b14",
+   "b15",
+   "b16"
+  ],
+  "notas_gastos": [
+   "b17",
+   "b18"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "unidades",
+   "evidencia": "L119: (eurodes)"
+  },
+  {
+   "bloque": "b14",
+   "escala": "unidades",
+   "evidencia": "L392: (eurodes)"
+  },
+  {
+   "bloque": "b15",
+   "escala": "unidades",
+   "evidencia": "sin frase propia; continuación de Lisa 6 (L392: (eurodes))"
+  },
+  {
+   "bloque": "b16",
+   "escala": "unidades",
+   "evidencia": "L416: (eurodes)"
+  },
+  {
+   "bloque": "b17",
+   "escala": "unidades",
+   "evidencia": "L427: (eurodes)"
+  },
+  {
+   "bloque": "b18",
+   "escala": "unidades",
+   "evidencia": "L447: (eurodes)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 124,
+   "etiqueta": "Liikmetelt saadud tasud",
+   "actual": "0",
+   "anterior": "10 787",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 125,
+   "etiqueta": "Annetused ja toetused",
+   "actual": "207 484",
+   "anterior": "209 603",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 126,
+   "etiqueta": "Tulu ettevõtlusest",
+   "actual": "72 564",
+   "anterior": "49 747",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 127,
+   "etiqueta": "Kokku tulud",
+   "actual": "280 048",
+   "anterior": "270 137",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 129,
+   "etiqueta": "Mitmesugused tegevuskulud",
+   "actual": "-205 800",
+   "anterior": "-167 645",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 130,
+   "etiqueta": "Tööjõukulud",
+   "actual": "-138 889",
+   "anterior": "-125 040",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 131,
+   "etiqueta": "Põhivarade kulum ja väärtuse langus",
+   "actual": "-542",
+   "anterior": "-543",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 132,
+   "etiqueta": "Muud kulud",
+   "actual": "-2 016",
+   "anterior": "-1 006",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 133,
+   "etiqueta": "Kokku kulud",
+   "actual": "-347 247",
+   "anterior": "-294 234",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 134,
+   "etiqueta": "Põhitegevuse tulem",
+   "actual": "-67 199",
+   "anterior": "-24 097",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 135,
+   "etiqueta": "Aruandeaasta tulem",
+   "actual": "-67 199",
+   "anterior": "-24 097",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 396,
+   "etiqueta": "UEFA solidaarsustoetus",
+   "actual": "47 932",
+   "anterior": "20 081",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Annetused ja toetused"
+  },
+  {
+   "bloque": "b14",
+   "linea": 397,
+   "etiqueta": "EJL toetused",
+   "actual": "110 149",
+   "anterior": "127 947",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Annetused ja toetused"
+  },
+  {
+   "bloque": "b14",
+   "linea": 398,
+   "etiqueta": "Riigi ja/või kohaliku omavalitsuse toetused",
+   "actual": "46 766",
+   "anterior": "59 820",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Annetused ja toetused"
+  },
+  {
+   "bloque": "b14",
+   "linea": 399,
+   "etiqueta": "Muud toetused",
+   "actual": "2 637",
+   "anterior": "1 755",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Annetused ja toetused"
+  },
+  {
+   "bloque": "b14",
+   "linea": 400,
+   "etiqueta": "Kokku annetused ja toetused",
+   "actual": "207 484",
+   "anterior": "209 603",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Annetused ja toetused"
+  },
+  {
+   "bloque": "b16",
+   "linea": 420,
+   "etiqueta": "Reklaam",
+   "actual": "4 500",
+   "anterior": "12 383",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Tulu ettevõtlusest"
+  },
+  {
+   "bloque": "b16",
+   "linea": 421,
+   "etiqueta": "Mängijaõiguste müük",
+   "actual": "60 505",
+   "anterior": "36 564",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Tulu ettevõtlusest"
+  },
+  {
+   "bloque": "b16",
+   "linea": 422,
+   "etiqueta": "Piletitulu",
+   "actual": "42",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Tulu ettevõtlusest"
+  },
+  {
+   "bloque": "b16",
+   "linea": 423,
+   "etiqueta": "Muu tulu ettevõtlusest",
+   "actual": "7 517",
+   "anterior": "800",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Tulu ettevõtlusest"
+  },
+  {
+   "bloque": "b16",
+   "linea": 424,
+   "etiqueta": "Kokku tulu ettevõtlusest",
+   "actual": "72 564",
+   "anterior": "49 747",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Tulu ettevõtlusest"
+  },
+  {
+   "bloque": "b17",
+   "linea": 431,
+   "etiqueta": "Üür ja rent",
+   "actual": "4 788",
+   "anterior": "4 540",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Mitmesugused tegevuskulud"
+  },
+  {
+   "bloque": "b17",
+   "linea": 432,
+   "etiqueta": "Energia",
+   "actual": "883",
+   "anterior": "157",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Mitmesugused tegevuskulud"
+  },
+  {
+   "bloque": "b17",
+   "linea": 433,
+   "etiqueta": "Elektrienergia",
+   "actual": "883",
+   "anterior": "157",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Energia"
+  },
+  {
+   "bloque": "b17",
+   "linea": 434,
+   "etiqueta": "Mitmesugused bürookulud",
+   "actual": "6 164",
+   "anterior": "4 831",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Mitmesugused tegevuskulud"
+  },
+  {
+   "bloque": "b17",
+   "linea": 435,
+   "etiqueta": "Koolituskulud",
+   "actual": "1 181",
+   "anterior": "818",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Mitmesugused tegevuskulud"
+  },
+  {
+   "bloque": "b17",
+   "linea": 436,
+   "etiqueta": "Riiklikud ja kohalikud maksud",
+   "actual": "254",
+   "anterior": "254",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Mitmesugused tegevuskulud"
+  },
+  {
+   "bloque": "b17",
+   "linea": 437,
+   "etiqueta": "Kulu ebatõenäoliselt laekuvatest nõuetest",
+   "actual": "0",
+   "anterior": "550",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Mitmesugused tegevuskulud"
+  },
+  {
+   "bloque": "b17",
+   "linea": 438,
+   "etiqueta": "Võistluste ja treeningutega seotud kulud",
+   "actual": "162 079",
+   "anterior": "141 900",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Mitmesugused tegevuskulud"
+  },
+  {
+   "bloque": "b17",
+   "linea": 439,
+   "etiqueta": "Liikmemaksud",
+   "actual": "7 558",
+   "anterior": "25",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Mitmesugused tegevuskulud"
+  },
+  {
+   "bloque": "b17",
+   "linea": 440,
+   "etiqueta": "Mängijatele makstav sportlasetoetus",
+   "actual": "10 529",
+   "anterior": "6 174",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Mitmesugused tegevuskulud"
+  },
+  {
+   "bloque": "b17",
+   "linea": 441,
+   "etiqueta": "Mängijatele makstav sportlasestipendium",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Mitmesugused tegevuskulud"
+  },
+  {
+   "bloque": "b17",
+   "linea": 442,
+   "etiqueta": "Mängijaõiguste ost",
+   "actual": "11 074",
+   "anterior": "8 351",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Mitmesugused tegevuskulud"
+  },
+  {
+   "bloque": "b17",
+   "linea": 443,
+   "etiqueta": "Muud",
+   "actual": "1 290",
+   "anterior": "45",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Mitmesugused tegevuskulud"
+  },
+  {
+   "bloque": "b17",
+   "linea": 444,
+   "etiqueta": "Kokku mitmesugused tegevuskulud",
+   "actual": "205 800",
+   "anterior": "167 645",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Mitmesugused tegevuskulud"
+  },
+  {
+   "bloque": "b18",
+   "linea": 451,
+   "etiqueta": "EJL litsentsiga töötajate (v.a. mängijad) palgakulu",
+   "actual": "77 094",
+   "anterior": "60 074",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Tööjõukulud"
+  },
+  {
+   "bloque": "b18",
+   "linea": 452,
+   "etiqueta": "EJL litsentsiga töötajate (v.a. mängijad) maksud",
+   "actual": "26 793",
+   "anterior": "21 086",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Tööjõukulud"
+  },
+  {
+   "bloque": "b18",
+   "linea": 453,
+   "etiqueta": "Mängijate palgakulu",
+   "actual": "26 160",
+   "anterior": "32 833",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Tööjõukulud"
+  },
+  {
+   "bloque": "b18",
+   "linea": 454,
+   "etiqueta": "Sotsiaalmaks mängijate töötasudelt",
+   "actual": "8 842",
+   "anterior": "11 047",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Tööjõukulud"
+  },
+  {
+   "bloque": "b18",
+   "linea": 455,
+   "etiqueta": "Kokku tööjõukulud",
+   "actual": "138 889",
+   "anterior": "125 040",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Tööjõukulud"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 127,
+  "actual": "280 048"
+ },
+ "total_gastos": {
+  "linea": 133,
+  "actual": "-347 247"
+ },
+ "resultado": {
+  "linea": 135,
+  "actual": "-67 199",
+  "anterior": "-24 097"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Rahalised ja mitterahalised annetused' (L404-L407)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Annetused ja toetused",
+   "texto": "Es otra apertura (monetaria/no monetaria) del mismo renglón ya desglosado en L396-L400; cargarla duplicaría.",
+   "bloques": [
+    "b15"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga 'Elektrienergia' (L433) como desglose de 'Energia' (L432) y no como partida adicional?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Energia",
+   "texto": "L433 repite el importe de L432 (883), parece sub-renglón.",
+   "bloques": [
+    "b17"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "L456 (cantidad media de empleados) no es importe monetario; se excluyó. Los gastos en las notas van en positivo y en el estado en negativo."
+}
