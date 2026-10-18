@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Estonia/Flora Tallinn/aruanne-2021.pdf",
- "generado": "2026-10-18T18:34:32.865Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Muud toetused UEFA-lt\" -> other_income 0.6"
-  }
- ],
+ "generado": "2026-10-18T18:44:38.299Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-18: 2025 trae los dos (tulemiaruanne consolidado L185-214 y Lisa 20 konsolideerimata); controladas (Lisa 6, L582-594): Kotka Staadion, dos escuelas de fútbol, Sport&Net Grupp OÜ, Soccernet OÜ: consolidado (regla 2). (revisión del alta, subagente Sonnet, revisado por Claude 2026-10-18))",
   "gestión: ningún presidente confirmado cubre 2021 (cierre 2021-12-31); pregunta en la cola (no frena)"
@@ -49,13 +44,13 @@
    },
    {
     "rawLabel": "Muud toetused UEFA-lt",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "competition_bonus",
     "amountNative": 0.07,
     "disclosureLevel": "aggregated",
     "_pag": 20,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Riigi ja/või KOV toetus",
@@ -578,12 +573,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
    "signoFijo": 0.07,
-   "cat": "other_income",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Aporte de la UEFA ('Muud toetused UEFA-lt'): competition_bonus, regla fijada para pagos de solidaridad y demás aportes UEFA (Flora 2025 'UEFA solidaarsustoetus' ya está así). [Muud toetused UEFA-lt 70.000 (aruanne-2021, Lisa Annetused ja toetused, pág. 20 del visor)]",
    "destino": "revenue",
    "amountNative": 0.07
   },
@@ -1310,8 +1305,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 14,
   "lineasGasto": 30,
   "metaFilas": 2,

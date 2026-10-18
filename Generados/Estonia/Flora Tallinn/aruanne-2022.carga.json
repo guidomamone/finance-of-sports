@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Estonia/Flora Tallinn/aruanne-2022.pdf",
- "generado": "2026-10-18T18:34:32.962Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Muud toetused UEFA-lt\" -> other_income 0.6; \"Kahjum kinnisvarainvesteeringute õiglase\" -> exceptional_items 0.5"
-  }
- ],
+ "generado": "2026-10-18T18:44:38.432Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-18: 2025 trae los dos (tulemiaruanne consolidado L185-214 y Lisa 20 konsolideerimata); controladas (Lisa 6, L582-594): Kotka Staadion, dos escuelas de fútbol, Sport&Net Grupp OÜ, Soccernet OÜ: consolidado (regla 2). (revisión del alta, subagente Sonnet, revisado por Claude 2026-10-18))",
   "gastos: ningún total impreso igual a la suma de las líneas (-4.640723); queda la suma, verificada por el resultado del ejercicio",
@@ -40,13 +35,13 @@
    },
    {
     "rawLabel": "Muud toetused UEFA-lt",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "competition_bonus",
     "amountNative": 0.278084,
     "disclosureLevel": "aggregated",
     "_pag": 19,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Riigi ja/või KOV toetus",
@@ -406,9 +401,9 @@
     "amountNative": -0.125,
     "disclosureLevel": "aggregated",
     "_pag": 22,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Kahjum valuutakursi muutustest",
@@ -548,12 +543,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Annetused ja toetused\")",
    "signoFijo": 0.278084,
-   "cat": "other_income",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Mismo criterio que 67833fe: aporte UEFA -> competition_bonus. [Muud toetused UEFA-lt 278.084 (aruanne-2022, Lisa Annetused ja toetused, pág. 19 del visor)]",
    "destino": "revenue",
    "amountNative": 0.278084
   },
@@ -1098,11 +1093,11 @@
    "origen": "verificacion (nota que desglosa \"Muud kulud\")",
    "signoFijo": 0.125,
    "cat": "exceptional_items",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Pérdida contable por revaluación (valor razonable) de propiedades de inversión, no monetaria y puntual (0 en 2021): ítem excepcional, no operativo. Es una de las líneas de Lisa 17 'Muud kulud' que el estado muestra como renglón propio. Alternativa menos probable: other_amortisation (cargo de fin de  [Kahjum kinnisvarainvesteeringute õiglase väärtuse muutusest 125 000 | 0 (aruanne-2022.md Lisa 17, L997); Kokku muud kulud 195 576 (L1002)]",
    "destino": "expense",
    "amountNative": -0.125
   },
@@ -1270,8 +1265,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 13,
   "lineasGasto": 29,
   "metaFilas": 3,

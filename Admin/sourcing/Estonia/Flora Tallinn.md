@@ -16,3 +16,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2023 desde `Clubes/Estonia/Flora Tallinn/aruanne-2023.pdf` (sourceId `floratallinn-ee-aruanne-2023`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2024 desde `Clubes/Estonia/Flora Tallinn/aruanne-2024.pdf` (sourceId `floratallinn-ee-aruanne-2024`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2021 desde `Clubes/Estonia/Flora Tallinn/aruanne-2021.pdf` (sourceId `floratallinn-ee-aruanne-2021`).

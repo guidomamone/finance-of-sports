@@ -243,6 +243,74 @@ Generados/Estonia/Flora Tallinn/aruanne-2023.categorias.json (escalón de cada f
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/Flora Tallinn/aruanne-2021.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/Flora Tallinn/aruanne-2021.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Liikmetelt saadud tasud | pág. 6, precedente |
+| 2 | UEFA solidaarsustoetus osalemise eest UEFA klubivõistlustel | pág. 20, precedente |
+| 3 | UEFA solidaarsustoetus noorte- ja kogukonnatööle | pág. 20, Jev 1 |
+| 4 | Muud toetused UEFA-lt | pág. 20, precedente |
+| 5 | Riigi ja/või KOV toetus | pág. 20, precedente |
+| 6 | EJL toetused | pág. 20, precedente |
+| 7 | Muud toetused | pág. 20, precedente |
+| 8 | Tulu piletimüügist | pág. 20, precedente |
+| 9 | Tulu ülekandeõiguste müügist | pág. 20, precedente |
+| 10 | Tulu mängijaõiguste müügist | pág. 20, precedente |
+| 11 | Väljaku äärde ja reklaamtahvlitele paigutatud reklaam | pág. 20, Jev 1 |
+| 12 | Staadioni rent | pág. 20, precedente |
+| 13 | Muu tulu ettevõtlusest | pág. 20, precedente |
+| 14 | Muud tulud | pág. 6, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Mängijatele makstav sportlasetoetus | pág. 20, precedente |
+| 2 | Mängijatele makstav sportlasestipendium | pág. 20, precedente |
+| 3 | Üür ja rent | pág. 21, precedente |
+| 4 | Elektrienergia | pág. 21, Jev 1 |
+| 5 | Kütus | pág. 21, Jev 0.99 |
+| 6 | Mitmesugused bürookulud | pág. 21, precedente |
+| 7 | Lähetuskulud | pág. 21, precedente |
+| 8 | Koolituskulud | pág. 21, precedente |
+| 9 | Riiklikud ja kohalikud maksud | pág. 21, precedente |
+| 10 | Kulu ebatõenäoliselt laekuvatest nõuetest | pág. 21, precedente |
+| 11 | Võistluste ja treeningutega seotud kulud | pág. 21, precedente |
+| 12 | Kulud mängijate õiguste ostmisest | pág. 21, precedente |
+| 13 | Reklaamikulud | pág. 21, precedente |
+| 14 | Konsultatsioonid | pág. 21, precedente |
+| 15 | Autokulud | pág. 21, precedente |
+| 16 | Kasutusrendikulud | pág. 21, precedente |
+| 17 | Pangateenused | pág. 21, precedente |
+| 18 | Staadioni halduskulud | pág. 21, precedente |
+| 19 | Müüdud kaup soetusmaksumuses | pág. 21, precedente |
+| 20 | Juriidilised kulud | pág. 21, Claude 0.8 |
+| 21 | Muud | pág. 21, precedente |
+| 22 | Mängijate palgakulu | pág. 21, precedente |
+| 23 | Sotsiaalmaks mängijate töötasudelt | pág. 21, precedente |
+| 24 | Muu personali palgakulu | pág. 21, precedente |
+| 25 | Sotsiaalmaks muu personali töötasudelt | pág. 21, precedente |
+| 26 | Põhivarade kulum ja väärtuse langus | pág. 6, precedente |
+| 27 | Kahjum valuutakursi muutustest | pág. 22, Jev 0.92 |
+| 28 | Esinduskulud | pág. 22, precedente |
+| 29 | Jalgpalliga mitteseotud tegevuste kulud | pág. 22, precedente |
+| 30 | Muud | pág. 22, precedente |
+
+### Meta
+
+```text
+2021: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L163) (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2020
 
 ### Ingresos
@@ -416,4 +484,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Flora Tallinn/aruanne-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### floratallinn-ee-aruanne-2021
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Flora Tallinn/aruanne-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
