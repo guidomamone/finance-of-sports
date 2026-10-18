@@ -307,6 +307,7 @@ const PAISES = {
   // con la bandera inglesa: dar de alta un club escocés es una decisión de producto.
   'Escocia':         { iso2: null, moneda: 'GBP', region: 'europa', en: 'Scotland', pregunta: 'El sitio no tiene país "Escocia": GB está catalogado como "Inglaterra" (🏴 inglesa) en data/leagues.js. ¿El club escocés va bajo GB con otro nombre/bandera, o hace falta un código propio (ej. "GB-SCT") en COUNTRIES?' },
   'España':          { iso2: 'ES', moneda: 'EUR', region: 'europa', en: 'Spain', legado: { codigo: 'ESP', desde: 2002, tokens: ['pesetas', 'ptas', 'esp'] } },
+  'Estonia':         { iso2: 'EE', moneda: 'EUR', region: 'europa', en: 'Estonia', legado: { codigo: 'EEK', desde: 2011, tokens: ['eek', 'kroon', 'krooni'] } },
   'Estados Unidos':  { iso2: 'US', moneda: 'USD', region: 'norteamerica', en: 'United States' },
   'Francia':         { iso2: 'FR', moneda: 'EUR', region: 'europa', en: 'France', legado: { codigo: 'FRF', desde: 2002, tokens: ['frf', 'francs'] } },
   'Grecia':          { iso2: 'GR', moneda: 'EUR', region: 'europa', en: 'Greece', legado: { codigo: 'GRD', desde: 2002, tokens: ['grd', 'δραχμ', 'drachm'] } },
@@ -330,7 +331,7 @@ const PAISES = {
   'Turquía':         { iso2: 'TR', moneda: 'TRY', region: 'europa', en: 'Turkey', legado: { codigo: 'TRL', desde: 2005, tokens: ['trl', 'türk lirası', 'turk lirasi'] } },
   'Ucrania':         { iso2: 'UA', moneda: 'UAH', region: 'europa', en: 'Ukraine' },
 };
-const NOMBRE_PAIS_ES = { DE: 'Alemania', AR: 'Argentina', AT: 'Austria', BR: 'Brasil', BE: 'Bélgica', CL: 'Chile', CN: 'China', CO: 'Colombia', KR: 'Corea del Sur', CR: 'Costa Rica', HR: 'Croacia', DK: 'Dinamarca', EC: 'Ecuador', ES: 'España', US: 'Estados Unidos', FR: 'Francia', GR: 'Grecia', GT: 'Guatemala', HN: 'Honduras', GB: 'Inglaterra', IT: 'Italia', JM: 'Jamaica', JP: 'Japón', MX: 'México', NO: 'Noruega', PA: 'Panamá', NL: 'Países Bajos', PE: 'Perú', PT: 'Portugal', CZ: 'República Checa', RU: 'Rusia', CH: 'Suiza', TR: 'Turquía', UA: 'Ucrania' };
+const NOMBRE_PAIS_ES = { DE: 'Alemania', AR: 'Argentina', AT: 'Austria', BR: 'Brasil', BE: 'Bélgica', CL: 'Chile', CN: 'China', CO: 'Colombia', KR: 'Corea del Sur', CR: 'Costa Rica', HR: 'Croacia', DK: 'Dinamarca', EC: 'Ecuador', EE: 'Estonia', ES: 'España', US: 'Estados Unidos', FR: 'Francia', GR: 'Grecia', GT: 'Guatemala', HN: 'Honduras', GB: 'Inglaterra', IT: 'Italia', JM: 'Jamaica', JP: 'Japón', MX: 'México', NO: 'Noruega', PA: 'Panamá', NL: 'Países Bajos', PE: 'Perú', PT: 'Portugal', CZ: 'República Checa', RU: 'Rusia', CH: 'Suiza', TR: 'Turquía', UA: 'Ucrania' };
 
 // Monedas: escala de visualización (mismo criterio que la cabecera de
 // data/currency-map.js: scale 1000 = "miles de millones", para monedas de valor
