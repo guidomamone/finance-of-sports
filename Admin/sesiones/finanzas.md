@@ -162,7 +162,11 @@
   consolidado).
 - To-do 282 a, Roma (perímetro consolidado): 2023-2025 del sitio del club (Deloitte; BDO Italia desde 2025; ÉNFASIS CONTINUIDAD, sin
   incertidumbre material) y 2013 de Wayback (BDO S.p.A.).
-- FALTA EN EL PDF: 88 a 72. Los PDF nuevos, copiados a la carpeta principal (rsync `--no-links`). ASSET_V 1295 en la rama.
+- To-do 282 a, Napoli 2022 (Ria Grant Thornton; el CDN actual devuelve 17 bytes, salió de Wayback), Torino 2020-2025 (Ria Grant
+  Thornton, BDO Italia, BDO Audit Services; `torinofc.it/relazioni_e_bilanci` publica el informe de cada año), Hellas Verona 2025
+  (Audirevi; ÉNFASIS CONTINUIDAD) y Cremonese 2022-2025 (EY, después BDO Italia; 2022 ÉNFASIS CONTINUIDAD; de la mediateca de WordPress,
+  `wp-json/wp/v2/media?search=revisione`). Todos sin salvedades, con texto, transcriptos con pdftotext.
+- FALTA EN EL PDF: 88 a 60. Los PDF nuevos, copiados a la carpeta principal (rsync `--no-links`). ASSET_V 1299 en la rama.
 
 ### Qué queda (para TODO)
 
@@ -173,7 +177,11 @@
 - 282 a: Roma 2022, el informe del consolidado (el sitio lista "consolidato" pero el link baja el del individual; Wayback no lo tiene).
 - 282 a: Juventus figura con perímetro "individual" en su evidencia; si el sitio publicara el consolidado, las líneas de 2022-2025 cambian
   de informe (los dos están bajados, `Juventus-report-audit-consolidated-financial-statements-*`).
-- 282 a, el resto de Italia: Napoli 8, Torino 8, Hellas Verona 6, Cremonese 4, Bologna 1.
+- 282 a, escaneos ya bajados que esperan Mistral: Napoli 2019, 2021 (Wayback), 2023-2025 (sitio del club) y Torino 2018-2019
+  (`Clubes/Italia/<Club>/<Club>-relazione-revisione-AAAA.pdf`), más Lazio 2026.
+- 282 a, Italia sin documento: Napoli 2018 y 2020 (el host viejo `cdn.sscnapoli.iquii.info` no responde y Wayback no los tiene), Hellas
+  Verona 2020-2024 (el sitio solo lista el último año; Wayback y las rutas probables del CDN, nada) y Bologna 2025 (Firecrawl `/map` del
+  sitio no encuentra el informe). Candidatos a mail.
 
 ### Gotcha (para la skill de arranque, `worktree.md`; no la edité sin tu ok)
 
