@@ -51,3 +51,5 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
 
 - "Estadio, capacidad, sponsor…": suma la página del club como tercera fuente para sponsor y marca (`--camisetas`, caché
   `_clubes.json`), cuando se escriba.
+
+## Después del merge del 2026-10-18 (Datos 2)

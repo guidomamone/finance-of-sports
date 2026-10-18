@@ -15,6 +15,17 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 748 — Merge de datos 2: camisetas de Wikipedia y ejercicios nuevos (2026-10-18)
+
+Lo generado regenerado; ASSET_V 1308, P0 0 / P1 0.
+
+- To-do 273: AVS 2021 y 2023 en Liga Portugal 2 (misma SAD que UD Vilafranquense, alias en `alias.json`); `generate-sponsors.js` suma lo
+  manual y lo de la página del club con su fuente; `estadio-sponsor.mjs --camisetas` lee la tabla de camisetas de la página del club (con
+  compuerta de rango; en ensayo, sin escribir: 46 ejercicios). `js/contexto.js` nombra esa fuente.
+- To-do 252: Unión Magdalena con canal (SIIS por NIT); el script reconoce un ejercicio posterior ya bajado; canales revisados con el
+  navegador (Instituto 2024-25 en Drive; Ituano, Monza, Salernitana y Alianza Lima todavía sin publicar); instrucción de la FPF corregida.
+- Nuevo to-do 312 (la página de sponsor no muestra la fuente propia).
+
 ## Versión 747 — Merge de finanzas: auditoría de Estonia y Bélgica (2026-10-18)
 
 Sin conflictos; P0 0 / P1 0.

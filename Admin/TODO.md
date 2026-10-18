@@ -194,10 +194,10 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    SII, Banco de Rusia o Bank of England (restringen el uso comercial) se sirve en la moneda del club o se pide permiso
    (`Admin/fuentes-externas.md`, "Consecuencias").
 252. EJERCICIOS NUEVOS: LO QUE QUEDA (pedido de Guido; mensual). La revisión está hecha: `tools/ejercicios-nuevos.mjs` y una tarea programada
-   (día 1, 9:00, carpeta principal) que baja el PDF a `Clubes/` y anota en `Admin/sourcing/README.md`; cada nota tiene URL o "Página del
-   canal" (o el canal es el registro: API danesa por CVR, Companies House por número). Falta: la nota de Unión Magdalena (Colombia) sin
-   canal; cargar los 35 clubes que ya tienen el PDF del ejercicio siguiente bajado (`node tools/ejercicios-nuevos.mjs` los lista;
-   onboarding); 11 canales se revisan con el navegador (portales con JavaScript, Unternehmensregister, la FPF).
+   (día 1, 9:00, carpeta principal); todas las notas tienen canal. Falta: bajar los 3 documentos de Instituto 2024-25 (Drive, anotados en la
+   nota) y onboardearlos; cargar los clubes con el PDF del ejercicio siguiente ya bajado (`node tools/ejercicios-nuevos.mjs` los lista;
+   onboarding); Gladbach y Stuttgart en el Unternehmensregister (formulario de búsqueda, con ok de Guido); el script no reconoce como "ya
+   bajado" un documento cuyo cierre cambió de fecha (River, agosto → diciembre).
 255. CONSOLIDAR LAS REGLAS (mejoras de proyecto, pedido de Guido 2026-10-16). CLAUDE.md, las memorias, 7 skills, CONVENCIONES, CONVENCIONES-DATOS, PANTALLA y PIPELINE: una regla en tres
    lugares es lo que hace que una sesión contradiga a otra. Pasada de consolidación; lo chequeable va a hooks (250) o a audit.js.
 256. CHANGELOG CORTO (mejoras de proyecto, pedido de Guido 2026-10-16). Casi 3.000 líneas y git ya guarda la historia: dejar los últimos 30 días y archivar el resto en Admin/Archive/.
@@ -219,16 +219,12 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    relacionada (con el criterio de socios, contaría); hoy la deuda es solo "Empréstimos".
 
 273. ESTADIO Y SPONSOR: LO QUE QUEDA (pedido de Guido, 2026-10-18). El dato está en main (`data/contexto/<iso>.js`, `tools/estadio-sponsor.mjs`,
-   lo manual en `tools/contexto-manual.json` con fuente) y `cargar.mjs` no escribe un año nuevo sin estadio y sponsor. Falta: (a) ~135
-   ejercicios cargados sin sponsor (110) o sin estadio (25), concentrados en pocos clubes (Ferroviária, Novorizontino, Sporting CP, Fortaleza
-   CEIF, Almagro, AEL; `node tools/estadio-sponsor.mjs --ensayo --detalle`). DISEÑO APROBADO (Guido, 2026-10-18), sin implementar: un modo
-   de `estadio-sponsor.mjs` que lea la tabla de historia de camisetas de la página del club en Wikipedia (inglés y la del país; "Kit
-   manufacturers and shirt sponsors" / "Indumentaria y patrocinador" / "Fornecedores e patrocinadores"), con el ejercicio en la fila
-   cuyo rango lo contiene; compuerta: la página es del club y el rango no es ambiguo; solo completa lo que falta, con fuente aparte; ensayo
-   con muestra para Guido; lo que no salga, a mano con fuente. (b) que `generate-sponsors.js` sume lo de `contexto-manual.json` (está por
-   ejercicio, no por liga-temporada). (c) AVS 2021 y 2023 sin liga: ejercicios de la sociedad anterior, confirmar la entidad. (d) nombrar la
-   compuerta en `Admin/PIPELINE.md` y en la skill `club-or-year-onboarding` (la skill, con ok de Guido). Siguen sin liga a propósito:
-   Novorizontino 2010, Dynamo Makhachkala 2021, Racing 2027 (presupuesto).
+   lo manual en `tools/contexto-manual.json` con fuente) y `cargar.mjs` no escribe un año nuevo sin estadio y sponsor. Falta: (a) `--camisetas`
+   (la tabla de camisetas de la página del club) está en ensayo: 46 ejercicios, los huecos pasan de 150 a 112; con el ok de Guido a la muestra,
+   `node tools/estadio-sponsor.mjs --escribir` y `node tools/generate-sponsors.js`. Lo que no sale (~112, casi todos sin sponsor: Ferroviária,
+   Novorizontino, Goiás, AEL, rusos y belgas de ascenso), a mano con fuente. Mejoras medidas: 21 sin enlace al club desde la temporada; Goiás
+   y otros con camisetas solo en plantillas `{{CamisaFutebol}}`. (d) nombrar la compuerta en `Admin/PIPELINE.md` y en la skill
+   `club-or-year-onboarding` (la skill, con ok de Guido). Siguen sin liga a propósito: Novorizontino 2010, Dynamo Makhachkala 2021, Racing 2027.
 282. QUIÉN AUDITA: LO QUE QUEDA (pedido de Guido, 2026-10-17). Los 942 balances tienen línea, la tarjeta de Finanzas está (con el
    "alcance" de una revisión limitada, procedimientos acordados, propósito especial o cuentas del grupo). Falta: (a) 50 informes del auditor
    que no están en ningún PDF nuestro (`node tools/auditoria.mjs --pendientes`, "FALTA EN EL PDF"): casi todos sin canal público, van al 311;
@@ -318,6 +314,8 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    ("Sesión 3"): Portugal 25 (la Certificação Legal das Contas: Académico de Viseu, Alverca, Casa Pia, Chaves, Felgueiras, Mafra, Marítimo,
    Nacional, Rio Ave, Vizela, Portimonense), Hellas Verona 2020-2024, Napoli 2018 y 2020, Lazio 2017, Bologna 2025, San Lorenzo 2011-2012,
    Argentinos 2015 y los 10 japoneses 2025 (publican el 決算公告, sin auditor).
+312. LA PÁGINA DE SPONSOR NO MUESTRA LA FUENTE PROPIA DE UNA ENTRADA (cierre de datos, pantallas). `generate-sponsors.js` ya pone como 6º
+   elemento de la entrada la fuente de lo que salió a mano o de la página del club; `js/sponsor.js` todavía muestra solo la fuente de la liga.
 309. TAMAÑO DE LIGA DESDE LA LISTA DE WIKIPEDIA (cierre de pantallas, a decidir con Guido). En 223 de los 227 liga-años con lista de
    Wikipedia (`wiki` en `data/rankings/<liga>.js`) `leagueSize` es null, aunque la lista existe y alimenta los estimados: sin él no hay
    "N de los M" en el subtítulo de Ligas ni "Faltan…". ¿El tamaño sale de la lista (`LEAGUE_SIZE_BY_YEAR`, `tools/listas-lote.mjs`)?
