@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 713 — To-dos 273 y 274 (2026-10-18)
+
+- TODO: 273 (estadio y sponsor de cada ejercicio) y 274 (consolidado de ingresos por categoría de cada liga), con su lugar en el ORDEN.
+
 ## Versión 712 — Merge de pantallas: Inicio, Ligas, Finanzas, "Estás viendo" y el estado en la URL (2026-10-17)
 
 Sesión en el worktree `fos-pantallas`, mockups aprobados en el artifact de Design "Pantallas FoS". Merge a mano: la tool frenó por el

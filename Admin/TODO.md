@@ -56,8 +56,10 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 * 165 c: altas de los países nuevos que faltan
 * 195: gestiones (presidentes) sin fuente confirmada (se puede ir haciendo con cada país)
 * 266: qué clubes le faltan a cada liga por año, como lista de sourcing
+* 273: estadio y sponsor de cada ejercicio (definir los campos con Guido antes de juntar)
 
 **E. Pantallas**
+* 274: consolidado de cada liga: total de ingresos por categoría (mockup con Design antes)
 * 272: cartel de primera visita sin uso (borrarlo o reubicarlo)
 
 **E2. Distribución (depende de 246)**
@@ -246,6 +248,12 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 272. CARTEL DE PRIMERA VISITA SIN USO (cierre de la sesión pantallas, 2026-10-17). "Elegí tu club acá" colgaba del botón del club, que salió
    del header; `showCoach` / `hideCoach` en `js/selector.js` quedaron sin uso visible. Borrarlo o reubicarlo (la puerta para un visitante
    nuevo hoy es el buscador de Inicio).
+273. ESTADIO Y SPONSOR DE CADA EJERCICIO (pedido de Guido, 2026-10-18). Conseguir, por club y ejercicio, el estadio (cuál, y su capacidad)
+   y el sponsor principal, con su fuente, como contexto de los números. Definir con Guido qué campos exactamente (¿sponsor de camiseta?
+   ¿monto, si es público?) y de dónde salen antes de juntar nada.
+274. CONSOLIDADO DE CADA LIGA (pedido de Guido, 2026-10-18). Que cada liga y ejercicio muestre su total: la suma de los ingresos de sus
+   clubes por categoría (derechos de TV, comercial, estadio, pases, etc.). Decir siempre cuántos clubes de cuántos entran en la suma (los
+   que faltan no se estiman, ver 266 y 270) y no mezclar monedas ni ejercicios. Mockup con Design antes de codear.
 270. MODELO QUE ESTIMA AÑOS Y CLUBES QUE NO TENEMOS (pedido de Guido, 2026-10-17). Estadístico: con lo que sí está cargado, estimar
    ingresos / gastos de un club-año sin balance a partir de la posición en la tabla, la liga, los partidos contra clubes con finanzas,
    el historial del club. Mostrarlo siempre como estimación, con su error medido (validación cruzada contra años reales) y aparte de lo
