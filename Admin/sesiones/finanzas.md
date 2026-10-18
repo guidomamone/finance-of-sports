@@ -180,7 +180,11 @@
 - To-do 294, Bahia: el eslabón de la holding pasa a ser City Football Group (Midco) Limited > City Football Group Brazil (`controla`,
   sin %, desde 2024), con cita externa al QSA del CNPJ 49.242.727/0001-74 (City Football Brazil Ltda; único socio CFG Midco) vía
   BrasilAPI; antes era City Football Group > CFG Brazil citado con el contrato de la S.A.F. BrasilAPI, sumada a `Admin/fuentes-externas.md`
-  (decisión de Guido, 2026-10-18: esa fuente, sin porcentaje). Ningún club del borrador `altas-2026-10-17.md` está publicado todavía. Los PDF nuevos, copiados a la carpeta principal (rsync `--no-links`). ASSET_V 1300 en la rama.
+  (decisión de Guido, 2026-10-18: esa fuente, sin porcentaje). Ningún club del borrador `altas-2026-10-17.md` está publicado todavía.
+- To-do 281, União de Leiria 2023-24: la línea `ingresos` de la asociación sale de la columna comparativa (jun 2024) de la Demonstração
+  de Resultados del relatório 2024-25 (`RELATORIO-E-CONTAS-DE-JUL2024-A-JUN2025_UDL.md`, pág. 22): 449.215,23 € (vendas e serviços,
+  subsídios, outros rendimentos y juros obtidos), igual al "Total dos rendimentos" del informe de gestión; fuera el renglón neto de
+  justo valor. Cifras cotejadas con el texto del PDF. Con esto el 281 queda cerrado. Los PDF nuevos, copiados a la carpeta principal (rsync `--no-links`). ASSET_V 1300 en la rama.
 
 ### Qué queda (para TODO)
 
