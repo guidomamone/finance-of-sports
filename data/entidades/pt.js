@@ -1608,6 +1608,15 @@ Object.assign(window.CLUB_ENTIDADES, {
        "md": "Clubes/Portugal/Braga/relatorio-contas-2020-21.md",
        "linea": 2004
       }
+     },
+     "2023": {
+      "total": 5.674,
+      "moneda": "EUR",
+      "cierre": "2023-06-30",
+      "fuente": {
+       "md": "Clubes/Portugal/Braga/RC-2022-23-SCB.md",
+       "linea": 1276
+      }
      }
     }
    }
