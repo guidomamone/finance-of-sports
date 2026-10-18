@@ -22,4 +22,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'patroeisden-be': { 2025: null },
   'rwdm-be': { 2025: null },
   'beerschot-be': { 2025: null },
+  'raallalouviere-be': { 2025: null },
 });
