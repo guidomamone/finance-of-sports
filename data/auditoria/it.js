@@ -1566,8 +1566,8 @@ Object.assign(window.CLUB_AUDITORIA, {
    "dictamen": "sin_salvedades",
    "continuidad": false,
    "fuente": {
-    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-esercizio-2025-26.md",
-    "linea": 25
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-consolidata-2025-26.md",
+    "linea": 40
    }
   }
  },
@@ -1613,6 +1613,32 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "napoli-it": {
+  "2019": {
+   "auditor": {
+    "nombre": "Baker Tilly",
+    "tipo": "firma",
+    "legal": "Baker Tilly Revisa S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Napoli/Napoli-relazione-revisione-2019.md",
+    "linea": 55
+   }
+  },
+  "2021": {
+   "auditor": {
+    "nombre": "Grant Thornton",
+    "tipo": "firma",
+    "legal": "Ria Grant Thornton S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Napoli/Napoli-relazione-revisione-2021.md",
+    "linea": 35
+   }
+  },
   "2022": {
    "auditor": {
     "nombre": "Grant Thornton",
@@ -1624,6 +1650,45 @@ Object.assign(window.CLUB_AUDITORIA, {
    "fuente": {
     "md": "Clubes/Italia/Napoli/Napoli-relazione-revisione-2022.md",
     "linea": 24
+   }
+  },
+  "2023": {
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM Società di Revisione e Organizzazione Contabile S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Napoli/Napoli-relazione-revisione-2023.md",
+    "linea": 62
+   }
+  },
+  "2024": {
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM Società di Revisione e Organizzazione Contabile S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Napoli/Napoli-relazione-revisione-2024.md",
+    "linea": 62
+   }
+  },
+  "2025": {
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM Società di Revisione e Organizzazione Contabile S.p.A."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Napoli/Napoli-relazione-revisione-2025.md",
+    "linea": 65
    }
   }
  },
@@ -1926,6 +1991,30 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "torino-it": {
+  "2018": {
+   "auditor": {
+    "nombre": "FV & C. S.A.S.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Torino/Torino-relazione-revisione-2018.md",
+    "linea": 40
+   }
+  },
+  "2019": {
+   "auditor": {
+    "nombre": "FV & C. S.A.S.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Torino/Torino-relazione-revisione-2019.md",
+    "linea": 44
+   }
+  },
   "2020": {
    "auditor": {
     "nombre": "Grant Thornton",
