@@ -27,8 +27,7 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
   Escribe Dortmund 2024-2025, RB Leipzig 2022-2025 y HSV 2024.
 - **Criterio nuevo de deuda (decisión de Guido, 2026-10-18), para `Admin/CONVENCIONES-DATOS.md` y la skill `club-data-mapping`:** un bono
   convertible (Wandelschuldverschreibung) es deuda financiera y entra en `grossDebt`. Caso: HSV 2024, 57.848 TEUR con la WSV de 30.000.
-  HSV 2025 (22,03 M, ya publicado) no la tiene porque el documento la saca de Verbindlichkeiten a una línea propia (B.): revisar si 2025
-  debería sumarla. No se tocó.
+  HSV 2025 no la suma (ver el criterio de abajo).
 
 - **Genoa 2022 en `--medir`:** con la regla de los "bis", la propuesta es 65,24 M (soci 1,3 + banche 15,68 + banche oltre 48,27). Para
   llegar a los 95,7 M publicados faltan las dos filas de altri finanziatori (factoring, 30,45 M): depende de la decisión del to-do 291.
@@ -36,8 +35,10 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
 - **Nuevo to-do, Milan 2018 en `--medir` (1,21 M contra 164,27 M publicados):** las filas de deuda son "a) entro 12 mesi" y "b) oltre 12
   mesi" debajo de un título sin importe ("1 obbligazioni", "5 debiti verso altri finanziatori"; AC-Milan-bilanci-relazioni-2017-18.md
   L895-904), y el diccionario solo ve "4 debiti verso banche" (la única con importe en su renglón). Sin daño hoy: es un año cargado.
-- **HSV 2025:** el sitio publica 22,03 M sin el bono convertible de 30 M. En 2025 el documento lo muestra como "Sonderposten nach dem
-  Eigenkapital" (conversión obligatoria en acciones antes del 29.06.2030; .md L395-406): queda la pregunta a Guido de si se suma.
+- **Criterio, para `Admin/CONVENCIONES-DATOS.md` y `club-data-mapping` (decisión de Guido, 2026-10-18):** un bono convertible con conversión
+  OBLIGATORIA en acciones, que el documento muestra como partida especial después del patrimonio (Sonderposten nach dem Eigenkapital), no
+  es deuda. HSV 2025 queda en 22,03 M (la Wandelschuldverschreibung de 30 M fuera; .md L395-406). Junto con el de arriba: convertible
+  común dentro de las deudas, sí; convertible obligatorio fuera de las deudas, no.
 
 ## Qué deja de ser cierto en ESTADO
 
