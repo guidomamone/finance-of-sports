@@ -208,7 +208,6 @@ window.I18N.strings.en = {
   "liga.cv.missing2": "of the",
   "liga.cv.missing3": "clubs in that season: the table total is the total of the ones loaded, not of the league.",
   "liga.cv.nodata": "in that season have a financial year loaded but no computable revenue, and are left out of the table:",
-  "liga.cv.nosize": "Nobody has verified yet how many teams played this season, so it is not possible to say what share of the league this is.",
   "liga.cv.zero": "A club with no financial year loaded does not show up as a zero bar: it is simply not there.",
   "liga.exercise": "Financial year",
   "liga.nodata": "No financial year of this league has been loaded yet.",

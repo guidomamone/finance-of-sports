@@ -886,10 +886,6 @@ window.LIGA_VIEW = (function(){
         + t('liga.cv.missing2', 'de los') + ' ' + r.leagueSize + ' '
         + t('liga.cv.missing3', 'clubes de esa temporada: el total de la tabla es el de los cargados, no el de la liga.'));
     }
-    if(r.leagueSize == null){
-      out.push(t('liga.cv.nosize',
-        'Nadie verificó todavía cuántos equipos jugaron esta temporada, así que no se puede decir qué porción de la liga es esto.'));
-    }
     if(r.sinDato && r.sinDato.length){
       out.push(nClubes(r.sinDato.length) + ' ' + t('liga.cv.nodata',
         'de esa temporada tienen ejercicio cargado pero sin ingreso calculable, y quedan afuera de la tabla:')

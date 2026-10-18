@@ -279,10 +279,12 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
   CC BY-SA 4.0", con link a la página y a la licencia; solo cuando la pantalla usa la lista (el "de los M" o los estimados). El link va a
   la página de hoy, no a la revisión leída (decisión de Guido: las listas no guardan el número de revisión). Mockup aprobado: "Ligas ·
   de dónde sale la lista de clubes (to-do 305)" de "Pantallas FoS". Probado: Argentina 2024, Serie A 2023 y en inglés. ASSET_V 1296.
+- Ligas ya no dice "Nadie verificó todavía cuántos equipos jugaron esta temporada…" (`liga.cv.nosize`, pedido de Guido): contradecía la
+  lista de Wikipedia que la misma página cita. ASSET_V 1297.
 
 ### Qué queda (para TODO)
 
 - Borrar el 305.
-- Nuevo (a decidir): en 223 de los 227 liga-años con lista de Wikipedia, `leagueSize` es null y Ligas dice "Nadie verificó todavía
-  cuántos equipos jugaron esta temporada", aunque la lista existe y alimenta los estimados (y ahora se cita). O el tamaño sale de la
-  lista (`LEAGUE_SIZE_BY_YEAR`, `tools/listas-lote.mjs`), o la salvedad cambia de texto.
+- Nuevo (a decidir): en 223 de los 227 liga-años con lista de Wikipedia `leagueSize` es null, aunque la lista existe y alimenta los
+  estimados: sin él no hay "N de los M" en el subtítulo ni "Faltan…". ¿El tamaño sale de la lista (`LEAGUE_SIZE_BY_YEAR`,
+  `tools/listas-lote.mjs`)?
