@@ -352,18 +352,20 @@ window.GRUPOS = {
   }
  },
  "friedkin": {
-  "nombre": "Friedkin Group",
+  "nombre": "Dan Friedkin",
   "alias": [
+   "Dan Friedkin",
+   "Thomas Dan Friedkin",
    "Friedkin Group",
    "The Friedkin Group",
    "Friedkin"
   ],
-  "entidad": "friedkin-group",
-  "legal": "The Friedkin Group, Inc.",
+  "entidad": "dan-friedkin",
+  "legal": "Thomas Dan Friedkin",
   "pais": "US",
   "fuente": {
-   "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2020.md",
-   "linea": 166
+   "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.md",
+   "linea": 210
   },
   "duenoUltimo": null,
   "clubes": [
@@ -372,12 +374,64 @@ window.GRUPOS = {
     "nombre": "A.S. Roma S.r.l.",
     "pais": "IT",
     "control": true,
-    "pct": null,
-    "desde": 2020,
+    "pct": 67.097,
+    "desde": 2011,
+    "hasta": 2011,
+    "fuente": {
+     "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2011-consolidato.md",
+     "linea": 585
+    }
+   },
+   {
+    "clubId": "asroma-it",
+    "nombre": "A.S. Roma S.r.l.",
+    "pais": "IT",
+    "control": true,
+    "pct": 78.038,
+    "desde": 2012,
+    "hasta": 2013,
+    "fuente": {
+     "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2012.md",
+     "linea": 335
+    }
+   },
+   {
+    "clubId": "asroma-it",
+    "nombre": "A.S. Roma S.r.l.",
+    "pais": "IT",
+    "control": true,
+    "pct": 79.044,
+    "desde": 2014,
+    "hasta": 2017,
+    "fuente": {
+     "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2014.md",
+     "linea": 254
+    }
+   },
+   {
+    "clubId": "asroma-it",
+    "nombre": "A.S. Roma S.r.l.",
+    "pais": "IT",
+    "control": true,
+    "pct": 83.284,
+    "desde": 2018,
+    "hasta": 2021,
+    "fuente": {
+     "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.md",
+     "linea": 200
+    }
+   },
+   {
+    "clubId": "asroma-it",
+    "nombre": "A.S. Roma S.r.l.",
+    "pais": "IT",
+    "control": true,
+    "pct": 100,
+    "desde": 2022,
     "hasta": null,
     "fuente": {
-     "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2021.md",
-     "linea": 439
+     "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.md",
+     "linea": 202
     }
    },
    {
@@ -385,12 +439,12 @@ window.GRUPOS = {
     "nombre": "Everton Football Club Company Limited",
     "pais": "GB",
     "control": true,
-    "pct": null,
+    "pct": 99.5,
     "desde": 2024,
     "hasta": null,
     "fuente": {
-     "md": "Clubes/Inglaterra/Everton/everton-group-accounts-2023-24.md",
-     "linea": 1413
+     "md": "Clubes/Inglaterra/Everton/everton-group-accounts-2024-25.md",
+     "linea": 1459
     }
    }
   ],
