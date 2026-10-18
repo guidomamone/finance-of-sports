@@ -30,12 +30,17 @@
 - LaLiga: cuentas consolidadas 2024-25 de la LNFP (cartera PDF de laliga.com/transparencia: cuentas firmadas + informe, digitales) en
   `Ligas/España/LaLiga/`, con sus `.md`. Auditor Netadia Europa, S.L.P. (por encargo del CSD), sin salvedades. Líneas de
   `LIGA_AUDITORIA` para `es-laliga` y `es-segunda`, 2025.
+- Lega Serie A: nota de sourcing; el bilancio existe y lo audita una società di revisione (estatuto), pero no se publica: candidato a mail.
+- J.League: balance, resultados e informe del auditor 2025 desde el registro japonés de entidades de interés público (koeki-info.go.jp),
+  en `Ligas/Japón/J.League/`. Auditor 太陽有限責任監査法人 (Grant Thornton Taiyo), opinión limpia. Línea `jp-j1` 2025.
 
 ### Qué queda
 
-- Seguir con Lega Serie A, J.League, Liga Portugal, AFA, CBF, EFL y el resto.
+- Seguir con Liga Portugal, AFA, CBF, EFL y el resto.
+- Lega Serie A: decidir si se le escribe (Guido).
 
 ### PDF copiados a la carpeta principal (rsync)
 
 - `Ligas/España/LaLiga/laliga-cartera-cuentas-consolidadas-2024-25.pdf`, `laliga-cuentas-anuales-consolidadas-2024-25.pdf`,
   `laliga-informe-auditoria-consolidado-2024-25.pdf`
+- `Ligas/Japón/J.League/jleague-kashitaishohyo-2025.pdf`, `jleague-sonekikeisansho-2025.pdf`, `jleague-kansahokoku-2025.pdf`
