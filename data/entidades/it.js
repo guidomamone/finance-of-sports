@@ -243,6 +243,17 @@ Object.assign(window.CLUB_ENTIDADES, {
     "nombre": "Thomas Dan Friedkin",
     "forma": "persona",
     "pais": "US",
+    "grupo": {
+     "id": "friedkin",
+     "nombre": "Dan Friedkin",
+     "alias": [
+      "Dan Friedkin",
+      "Thomas Dan Friedkin",
+      "Friedkin Group",
+      "The Friedkin Group",
+      "Friedkin"
+     ]
+    },
     "fuente": {
      "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.md",
      "linea": 210
@@ -252,15 +263,6 @@ Object.assign(window.CLUB_ENTIDADES, {
     "nombre": "The Friedkin Group, Inc.",
     "forma": "holding",
     "pais": "US",
-    "grupo": {
-     "id": "friedkin",
-     "nombre": "Friedkin Group",
-     "alias": [
-      "Friedkin Group",
-      "The Friedkin Group",
-      "Friedkin"
-     ]
-    },
     "fuente": {
      "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2020.md",
      "linea": 166
@@ -612,7 +614,7 @@ Object.assign(window.CLUB_ENTIDADES, {
    {
     "de": "friedkin-group",
     "a": "asroma",
-    "rel": "controla",
+    "rel": "vinculada",
     "desde": 2020,
     "fuente": {
      "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2021.md",

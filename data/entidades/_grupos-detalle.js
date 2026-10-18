@@ -61,7 +61,7 @@ window.GRUPOS = {
     "control": true,
     "pct": null,
     "desde": 2022,
-    "hasta": null,
+    "hasta": 2024,
     "fuente": {
      "url": "https://en.wikipedia.org/wiki/777_Partners"
     }
@@ -249,10 +249,36 @@ window.GRUPOS = {
    "nombre": "His Highness Sheikh Mansour bin Zayed Al Nahyan",
    "pais": "AE",
    "fuente": {
-    "url": "https://en.wikipedia.org/wiki/City_Football_Group"
+    "url": "https://find-and-update.company-information.service.gov.uk/company/08355862/persons-with-significant-control"
    }
   },
   "clubes": [
+   {
+    "clubId": "bahia-br",
+    "nombre": "Esporte Clube Bahia S.A.F.",
+    "pais": "BR",
+    "control": true,
+    "pct": 90,
+    "desde": 2024,
+    "hasta": 2024,
+    "fuente": {
+     "md": "Clubes/Brasil/Bahia/demonstracoes-financeiras-2024.md",
+     "linea": 1877
+    }
+   },
+   {
+    "clubId": "bahia-br",
+    "nombre": "Esporte Clube Bahia S.A.F.",
+    "pais": "BR",
+    "control": true,
+    "pct": 90,
+    "desde": 2025,
+    "hasta": 2025,
+    "fuente": {
+     "md": "Clubes/Brasil/Bahia/demonstracoes-financeiras-2025.md",
+     "linea": 1961
+    }
+   },
    {
     "clubId": "mancity-gb",
     "nombre": "Manchester City Football Club Limited",
@@ -263,7 +289,20 @@ window.GRUPOS = {
     "hasta": 2025,
     "fuente": {
      "md": "Clubes/Inglaterra/Manchester City/manchester-city-full-accounts-2024-25.md",
-     "linea": 1033
+     "linea": 2236
+    }
+   },
+   {
+    "clubId": "girona-es",
+    "nombre": "Girona Futbol Club, S.A.D.",
+    "pais": "ES",
+    "control": false,
+    "pct": 47.85,
+    "desde": 2025,
+    "hasta": 2025,
+    "fuente": {
+     "md": "Clubes/España/Girona FC/informe-auditoria-cuentas-anuales-2024-2025.md",
+     "linea": 6811
     }
    },
    {
@@ -329,21 +368,13 @@ window.GRUPOS = {
     "fuente": {
      "url": "https://en.wikipedia.org/wiki/City_Football_Group"
     }
-   },
-   {
-    "clubId": "girona-es",
-    "nombre": "Girona Futbol Club, S.A.D.",
-    "pais": "ES",
-    "control": false,
-    "pct": 47,
-    "desde": 2025,
-    "hasta": 2025,
-    "fuente": {
-     "url": "https://en.wikipedia.org/wiki/City_Football_Group"
-    }
    }
   ],
   "ingresos": {
+   "bahia-br": {
+    "2024": 44.984,
+    "2025": 99.121
+   },
    "mancity-gb": {
     "2024": 910.035,
     "2025": 954.828
@@ -351,18 +382,20 @@ window.GRUPOS = {
   }
  },
  "friedkin": {
-  "nombre": "Friedkin Group",
+  "nombre": "Dan Friedkin",
   "alias": [
+   "Dan Friedkin",
+   "Thomas Dan Friedkin",
    "Friedkin Group",
    "The Friedkin Group",
    "Friedkin"
   ],
-  "entidad": "friedkin-group",
-  "legal": "The Friedkin Group, Inc.",
+  "entidad": "dan-friedkin",
+  "legal": "Thomas Dan Friedkin",
   "pais": "US",
   "fuente": {
-   "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2020.md",
-   "linea": 166
+   "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.md",
+   "linea": 210
   },
   "duenoUltimo": null,
   "clubes": [
@@ -371,12 +404,64 @@ window.GRUPOS = {
     "nombre": "A.S. Roma S.r.l.",
     "pais": "IT",
     "control": true,
-    "pct": null,
-    "desde": 2020,
+    "pct": 67.097,
+    "desde": 2011,
+    "hasta": 2011,
+    "fuente": {
+     "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2011-consolidato.md",
+     "linea": 585
+    }
+   },
+   {
+    "clubId": "asroma-it",
+    "nombre": "A.S. Roma S.r.l.",
+    "pais": "IT",
+    "control": true,
+    "pct": 78.038,
+    "desde": 2012,
+    "hasta": 2013,
+    "fuente": {
+     "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2012.md",
+     "linea": 335
+    }
+   },
+   {
+    "clubId": "asroma-it",
+    "nombre": "A.S. Roma S.r.l.",
+    "pais": "IT",
+    "control": true,
+    "pct": 79.044,
+    "desde": 2014,
+    "hasta": 2017,
+    "fuente": {
+     "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2014.md",
+     "linea": 254
+    }
+   },
+   {
+    "clubId": "asroma-it",
+    "nombre": "A.S. Roma S.r.l.",
+    "pais": "IT",
+    "control": true,
+    "pct": 83.284,
+    "desde": 2018,
+    "hasta": 2021,
+    "fuente": {
+     "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2018.md",
+     "linea": 200
+    }
+   },
+   {
+    "clubId": "asroma-it",
+    "nombre": "A.S. Roma S.r.l.",
+    "pais": "IT",
+    "control": true,
+    "pct": 100,
+    "desde": 2022,
     "hasta": null,
     "fuente": {
-     "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2021.md",
-     "linea": 439
+     "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2022-consolidato.md",
+     "linea": 202
     }
    },
    {
@@ -384,12 +469,12 @@ window.GRUPOS = {
     "nombre": "Everton Football Club Company Limited",
     "pais": "GB",
     "control": true,
-    "pct": null,
+    "pct": 99.5,
     "desde": 2024,
     "hasta": null,
     "fuente": {
-     "md": "Clubes/Inglaterra/Everton/everton-group-accounts-2023-24.md",
-     "linea": 1413
+     "md": "Clubes/Inglaterra/Everton/everton-group-accounts-2024-25.md",
+     "linea": 1459
     }
    }
   ],
@@ -625,9 +710,21 @@ window.GRUPOS = {
     "control": true,
     "pct": 100,
     "desde": 2012,
-    "hasta": null,
+    "hasta": 2023,
     "fuente": {
      "url": "https://en.wikipedia.org/wiki/Qatar_Sports_Investments"
+    }
+   },
+   {
+    "clubId": null,
+    "nombre": "Paris Saint-Germain",
+    "pais": "FR",
+    "control": true,
+    "pct": null,
+    "desde": 2024,
+    "hasta": null,
+    "fuente": {
+     "url": "https://en.wikipedia.org/wiki/Paris_Saint-Germain_FC"
     }
    }
   ],
