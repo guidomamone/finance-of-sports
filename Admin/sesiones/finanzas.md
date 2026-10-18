@@ -69,3 +69,44 @@
 ## Qué deja de ser cierto en ESTADO
 
 - "Finanzas multi-año": suma la tarjeta Estructura (de quién son los números, dueños y grupo), desde `data/entidades/`.
+
+## Después del merge del 2026-10-18
+
+### Qué cambió (para CHANGELOG)
+
+- To-do 281, la pantalla: la tarjeta Estructura muestra, en la entidad que no se carga, sus ingresos del mismo ejercicio ("Ingresos
+  2021/22: 4,57 M EUR · equivale al 19,6 % de los ingresos de <la SAD>", con "ver los ingresos en el balance"). El % sale solo con la
+  misma moneda y el mismo cierre (contra `officialTotalRevenue` del club); con otro cierre dice "Ingresos del ejercicio cerrado el
+  31/12/2021" y que no se compara. También: los accionistas con participación menor de la entidad cargada (la asociación de Braga, 36,99 %)
+  aparecen en "Relacionadas, fuera de estos números"; con un solo dueño la caja dice "Dueño"; sin dueños registrados el título es "La
+  entidad de estos números". Mockup aprobado: artboard "Vitória y Tondela (to-do 281)" de "Pantallas FoS". ASSET_V 1260 en la rama
+  (el merge lo resuelve con main).
+
+### Qué queda (para TODO)
+
+- 281: transcribir por subagentes los ~17 documentos de entidades de clubes portugueses publicados (Porto 3, Braga 2022-23, Marítimo 5,
+  Belenenses, Chaves, Vizela 2, Académica, União de Leiria) y cargar su línea de ingresos (va con el 294, que da de alta las entidades).
+- 282 y 242 sin empezar.
+
+### Qué deja de ser cierto en ESTADO
+
+- La tarjeta Estructura de Finanzas suma los ingresos de las otras entidades del club (to-do 281), donde el registro los tiene.
+
+### 282, el dato (piloto)
+
+- Qué cambió: registro `Admin/registros/auditoria.jsonl` (una línea por club y año con balance: auditor y su tipo, dictamen con
+  vocabulario provisorio, continuidad aparte, citas del .md) y `tools/auditoria.mjs`, que arma los extractos para el subagente
+  (`--extractos`, en `Generados/auditoria/`), lista los pendientes (`--pendientes`), verifica las citas (que el texto esté en su línea y
+  que el .md sea de ese club y año) y genera `data/auditoria/<país>.js` y `_paises.js`; `audit.js` lo corre como generador
+  (`auditoria-desfasado`, P1). Piloto de 19 balances de 16 países por subagentes Sonnet (criterio común); 2 con salvedades (Académica
+  2022, Dinamo Zagreb 2024), 2 con incertidumbre sobre la continuidad (Académica 2022, Vitória 2022), 2 sin informe (Akhmat 2022:
+  el formulario del fisco dice "Обязательный аудит: нет"; Amazonas 2024: solo el balance).
+- Decisiones de Guido (2026-10-18): el vocabulario del dictamen es provisorio y se ajusta con los casos; un auditor persona va con su
+  nombre como lo imprime el documento; la pantalla de Finanzas y de Ligas la hace pantallas, y el pipeline no da de alta un club sin
+  esta línea (pedidos a fos-pantallas y fos-pipeline con el contrato).
+- Qué queda: los 905 balances restantes por subagentes (tandas por país); Católica 2010: el índice del .md lista el informe de los
+  auditores pero la transcripción no lo trae (salta de la pág. 2 a la 3), hay que retranscribir esa parte antes de su línea.
+- La entidad que organiza una liga (AFA, LFP; Guido lo aclaró vía pantallas): `tools/auditoria.mjs` acepta líneas con `ligaId` y
+  `entidad`, y genera `data/auditoria/_ligas.js` (`window.LIGA_AUDITORIA`, contrato acordado con pantallas). Hoy vacío: no hay en el
+  proyecto ningún balance propio de una entidad organizadora (las carpetas `Clubes/*/_…` son informes agregados de liga). Para TODO:
+  sourcing de esos balances (AFA, LFP, Premier League, Lega Serie A…), con su informe del auditor.

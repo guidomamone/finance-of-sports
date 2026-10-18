@@ -35,9 +35,9 @@ const FIN_ESTRUCTURA = (function(){
       fondo:t('estr.forma.fondo', 'Fondo'), persona:t('estr.forma.persona', 'Persona') }[f] || f;
   }
   // El link al documento no dice "Fuente:" (la cita de fuente de la página vive en la ficha de Fuentes): lleva a la transcripción.
-  function verFuente(f){
+  function verFuente(f, texto){
     if(!f) return '';
-    if(f.md) return `<a class="estr-ver" href="${esc(encodeURI(f.md))}" target="_blank" rel="noopener">${esc(t('estr.ver.doc', 'ver en el balance'))}</a>`;
+    if(f.md) return `<a class="estr-ver" href="${esc(encodeURI(f.md))}" target="_blank" rel="noopener">${esc(texto || t('estr.ver.doc', 'ver en el balance'))}</a>`;
     let host = f.url; try { host = new URL(f.url).hostname.replace(/^www\./, ''); } catch(e){}
     return `<a class="estr-ver" href="${esc(f.url)}" target="_blank" rel="noopener">${esc(t('estr.ver.url', 'ver en'))} ${esc(host)}</a>`;
   }
@@ -87,7 +87,8 @@ const FIN_ESTRUCTURA = (function(){
     const dentro = cargas[0].perimetro === 'consolidado'
       ? d.relaciones.filter(r => r.de === propia && r.rel === 'controla' && r.consolidada !== false && vale(r, y)) : [];
     const fuera = d.relaciones.filter(r => vale(r, y) && !dentro.includes(r) && (
-      (r.de === propia && (r.rel === 'participa' || r.rel === 'controla')) || (r.rel === 'vinculada' && (r.a === propia || r.de === propia))));
+      (r.de === propia && (r.rel === 'participa' || r.rel === 'controla')) || (r.a === propia && r.rel === 'participa') ||
+      (r.rel === 'vinculada' && (r.a === propia || r.de === propia))));
     const hermanos = grupo ? grupo.clubes.filter(c => c.clubId !== clubId && c.control && vale(c, y)) : [];
 
     // La frase de arriba.
@@ -102,12 +103,30 @@ const FIN_ESTRUCTURA = (function(){
         (hermanos.length ? ', ' + t('estr.frase.tambien', 'que también controla a') + ' ' + hermanos.map(c => esc(c.clubId ? ((clubs[c.clubId] || {}).displayName || c.nombre) : c.nombre)).join(', ') : '') + '.';
     }
 
+    const pct = r => r.pct != null ? String(r.pct).replace('.', lang() === 'es' ? ',' : '.') + ' %' : '';
+    // Los ingresos de una entidad que no se carga, del mismo ejercicio. El % de los del club, solo con la misma moneda y el mismo
+    // cierre; con otro cierre se dice cuál y no se compara.
+    const meta = ((window.CLUB_GENERIC_DATA || {})[clubId] || {}).fiscalYearMeta || {};
+    const ingresosDe = id => {
+      const g = (ent(id).ingresos || {})[y];
+      if(!g || id === propia) return '';
+      const monto = g.total.toLocaleString(lang() === 'es' ? 'es-AR' : 'en-GB', { minimumFractionDigits:2, maximumFractionDigits:2 }) + ' M ' + g.moneda;
+      const mismoCierre = g.cierre === cierreEjercicio(clubId, y);
+      const m = meta[y] || {};
+      let txt = mismoCierre ? t('estr.ing', 'Ingresos') + ' ' + etiqueta(clubId, y) + ': ' : t('estr.ing.cierre', 'Ingresos del ejercicio cerrado el') + ' ' + g.cierre.split('-').reverse().join('/') + ': ';
+      let extra = '';
+      if(mismoCierre && m.currency === g.moneda && m.officialTotalRevenue > 0)
+        extra = ' · ' + t('estr.ing.pct', 'equivale al') + ' ' + (100 * g.total / m.officialTotalRevenue).toFixed(1).replace('.', lang() === 'es' ? ',' : '.') + ' % ' + t('estr.ing.delclub', 'de los ingresos de') + ' ' + ent(propia).nombre;
+      else if(!mismoCierre) extra = ' · ' + t('estr.ing.nocompara', 'otro cierre que el club: no se compara');
+      return `<span class="estr-ing"><strong>${esc(txt + monto)}</strong>${esc(extra)}</span>${verFuente(g.fuente, t('estr.ver.ing', 'ver los ingresos en el balance'))}`;
+    };
     const caja = (id, rol, detalle, fuente, yo) => `<div class="estr-caja${yo ? ' estr-yo' : ''}">
         <span class="estr-rol">${esc(rol)}</span><span class="estr-nombre">${esc(ent(id).nombre)}</span>
-        <span class="estr-det">${detalle}</span>${verFuente(fuente)}</div>`;
+        <span class="estr-det">${detalle}</span>${tx(ent(id).que) && !yo ? `<span class="estr-det">${esc(tx(ent(id).que))}</span>` : ''}${verFuente(fuente)}${ingresosDe(id)}</div>`;
     const detalleDe = (id, rel) => {
       const e = ent(id);
       const partes = [forma(e.forma), e.pais ? pais(e.pais) : ''];
+      if(rel && rel.pct != null) partes.push(pct(rel));
       if(rel && rel.desde != null) partes.push(t('estr.desde', 'desde') + ' ' + etiqueta(clubId, rel.desde));
       const txt = partes.filter(Boolean).map(esc).join(' · ');
       const g = e.grupo && (window.GRUPOS_INDICE || []).find(x => x.id === e.grupo.id);
@@ -115,17 +134,17 @@ const FIN_ESTRUCTURA = (function(){
     };
     const arriba = cadena(d, propia, y);
     const cajas = arriba.map((a, i) => caja(a.id,
-      i === 0 ? t('estr.rol.ultimo', 'Dueño último') : ent(a.id).grupo ? t('estr.rol.grupo', 'Grupo multiclub') : i === arriba.length - 1 ? t('estr.rol.inmediato', 'Dueño inmediato') : t('estr.rol.intermedio', 'Holding intermedia'),
+      arriba.length === 1 ? t('estr.rol.dueno', 'Dueño') : i === 0 ? t('estr.rol.ultimo', 'Dueño último') : ent(a.id).grupo ? t('estr.rol.grupo', 'Grupo multiclub') : i === arriba.length - 1 ? t('estr.rol.inmediato', 'Dueño inmediato') : t('estr.rol.intermedio', 'Holding intermedia'),
       detalleDe(a.id, a.rel), a.rel.fuente, false));
     cajas.push(caja(propia, t('estr.rol.estos', 'Estos números'), detalleDe(propia) + (cargas[0].perimetro === 'consolidado' ? ' · ' + esc(t('estr.consolidado', 'consolidado')) : ''), cargas[0].fuente, true));
 
-    const fila = (id, txt, derecha, fuente) => `<li><span class="estr-li-txt"><span class="estr-nombre">${esc(ent(id).nombre)}</span>${txt ? `<span class="estr-det">${esc(txt)}</span>` : ''}</span>
+    const fila = (id, txt, derecha, fuente) => `<li><span class="estr-li-txt"><span class="estr-nombre">${esc(ent(id).nombre)}</span>${txt ? `<span class="estr-det">${esc(txt)}</span>` : ''}${ingresosDe(id)}</span>
         <span class="estr-li-der">${derecha ? esc(derecha) + ' · ' : ''}${verFuente(fuente)}</span></li>`;
-    const pct = r => r.pct != null ? String(r.pct).replace('.', lang() === 'es' ? ',' : '.') + ' %' : '';
     const filasDentro = dentro.map(r => fila(r.a, tx(ent(r.a).que), pct(r), r.fuente)).join('');
     const filasFuera = fuera.map(r => {
       const otro = r.a === propia ? r.de : r.a;
-      const porque = r.rel === 'participa' ? t('estr.fuera.part', 'Participación, fuera del consolidado')
+      const porque = r.rel === 'participa' && r.a === propia ? t('estr.fuera.accionista', 'Accionista, sin control')
+        : r.rel === 'participa' ? t('estr.fuera.part', 'Participación, fuera del consolidado')
         : r.rel === 'controla' ? t('estr.fuera.ctrl', 'Controlada, fuera de estos números') : t('estr.fuera.vinc', 'Relacionada, sin control');
       return fila(otro, [tx(ent(otro).que), porque].filter(Boolean).join('. '), pct(r), r.fuente);
     }).concat(hermanos.map(c => `<li><span class="estr-li-txt"><span class="estr-nombre">${c.clubId
@@ -147,7 +166,7 @@ const FIN_ESTRUCTURA = (function(){
     const nota = cargas.map(c => tx(c.nota)).filter(Boolean).join(' ');
     cuerpo.innerHTML = `<p class="estr-frase">${frase}</p>${duenos}
       <div class="estr-cols">
-        <div class="estr-col"><h3 class="estr-h3">${esc(t('estr.arriba', 'Arriba: los dueños'))}</h3><div class="estr-cadena">${cajas.join('')}</div></div>
+        <div class="estr-col"><h3 class="estr-h3">${esc(arriba.length ? t('estr.arriba', 'Arriba: los dueños') : t('estr.cargada', 'La entidad de estos números'))}</h3><div class="estr-cadena">${cajas.join('')}</div></div>
         <div class="estr-col">
           ${filasDentro ? `<h3 class="estr-h3 estr-verde">${esc(t('estr.dentro', 'Abajo: dentro de estos números'))}</h3><ul class="estr-lista">${filasDentro}</ul>` : ''}
           ${filasFuera ? `<h3 class="estr-h3 estr-ambar">${esc(t('estr.fuera', 'Relacionadas, fuera de estos números'))}</h3><ul class="estr-lista">${filasFuera}</ul>` : ''}

@@ -1101,6 +1101,7 @@
   .estr-dueno{min-width:92px;padding:8px 10px;border-radius:10px;border:1px solid var(--border);display:flex;flex-direction:column;gap:2px;font-size:12px;}
   .estr-dueno strong{font-size:13px;color:var(--azul);}
   .estr-dueno.estr-yo{border:2px solid var(--azul);background:#eef1f6;}
+  .estr-ing{display:block;margin-top:6px;padding:8px 10px;border-radius:8px;background:#f4f6f9;font-size:13.5px;color:var(--text);line-height:1.45;}
   .estr-nota{margin:18px 0 0;background:#eef1f6;border-radius:12px;padding:12px 16px;font-size:14px;line-height:1.5;color:var(--azul);}
   #finIndice a[hidden]{display:none;}
 
