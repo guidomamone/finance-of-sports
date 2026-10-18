@@ -34,7 +34,7 @@ Se completa mientras se trabaja. No se tocan TODO, CHANGELOG ni ESTADO: la princ
 
 
 ## Qué deja de ser cierto en ESTADO
-- Estonia es un país del sitio: Flora, Harju JK Laagri, Kuressaare, Nõmme Kalju y Tartu Tammeka 2025 cargados (lote 89). Bélgica suma Lierse SK, Lokeren-Temse, Lommel SK, OH Leuven, Patro Eisden y RWDM 2025 (lote 90). FCI Levadia, Narva Trans, Paide, Tallinna Kalev y Beerschot 2025 también. Las ligas estonias, sin id (liga null). RAAL La Louvière espera la decisión del alta.
+- Estonia es un país del sitio: Flora, Harju JK Laagri, Kuressaare, Nõmme Kalju y Tartu Tammeka 2025 cargados (lote 89). Bélgica suma Lierse SK, Lokeren-Temse, Lommel SK, OH Leuven, Patro Eisden y RWDM 2025 (lote 90). FCI Levadia, Narva Trans, Paide, Tallinna Kalev y Beerschot 2025 también. Las ligas estonias, sin id (liga null). RAAL La Louvière 2025 también (consolidado; el individual 2024-25 a descartados con ok de Guido). 17 clubes nuevos en total; caja y deuda vacías hasta que entren los años vecinos (lotes 91-92).
 
 ## Pantalla (para fos-finanzas)
 - Nada todavía.
