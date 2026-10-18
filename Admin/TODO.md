@@ -194,8 +194,8 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    SII, Banco de Rusia o Bank of England (restringen el uso comercial) se sirve en la moneda del club o se pide permiso
    (`Admin/fuentes-externas.md`, "Consecuencias").
 252. EJERCICIOS NUEVOS: LO QUE QUEDA (pedido de Guido; mensual). La revisión está hecha: `tools/ejercicios-nuevos.mjs` y una tarea programada
-   (día 1, 9:00, carpeta principal); todas las notas tienen canal. Falta: bajar los 3 documentos de Instituto 2024-25 (Drive, anotados en la
-   nota) y onboardearlos; cargar los clubes con el PDF del ejercicio siguiente ya bajado (`node tools/ejercicios-nuevos.mjs` los lista;
+   (día 1, 9:00, carpeta principal); todas las notas tienen canal. Falta: onboardear Instituto 2024-25 (Ejercicio N°71, bajado de Drive; anotado en la
+   nota; ya bajados) y onboardearlos; cargar los clubes con el PDF del ejercicio siguiente ya bajado (`node tools/ejercicios-nuevos.mjs` los lista;
    onboarding); Gladbach y Stuttgart en el Unternehmensregister cuando vuelva a responder (ok de Guido para el formulario); el script no reconoce como "ya
    bajado" un documento cuyo cierre cambió de fecha (River, agosto → diciembre).
 255. CONSOLIDAR LAS REGLAS (mejoras de proyecto, pedido de Guido 2026-10-16). CLAUDE.md, las memorias, 7 skills, CONVENCIONES, CONVENCIONES-DATOS, PANTALLA y PIPELINE: una regla en tres
