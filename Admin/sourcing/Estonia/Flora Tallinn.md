@@ -6,3 +6,5 @@
 - **Ejercicios en disco** (`Clubes/Estonia/Flora Tallinn/aruanne-<año>.pdf`): 2019-2025 (7), todos con capa de texto nativa, 30-34 págs. 2019-2023 titulados KONSOLIDEERITUD (consolida las entidades del grupo del club); 2024 y 2025 individuales. Auditados (el registro marca 'auditeeritud' todos los años; 2024-2025 categoría 'mediana').
 - **Canal**: `https://ariregister.rik.ee/eng/company/80052376` → tabla de informes anuales → `PDF` (URL `.../company/80052376/file/<id>`, sin login). Más años disponibles en el registro (2009-2018) que no se bajaron (el objetivo era 5).
 - Último chequeo: 2026-10-03.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2025 desde `Clubes/Estonia/Flora Tallinn/aruanne-2025.pdf` (sourceId `floratallinn-ee-aruanne-2025`).

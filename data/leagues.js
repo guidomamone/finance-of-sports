@@ -50,6 +50,7 @@ const COUNTRIES = {
   PT: { name:'Portugal',  key:'country.PT', flag:'🇵🇹', region:'europa' },
   RU: { name:'Rusia',     key:'country.RU', flag:'🇷🇺', region:'europa' },
   TR: { name:'Turquía',   key:'country.TR', flag:'🇹🇷', region:'europa' },
+  EE: { name:'Estonia', key:'country.EE', flag:'🇪🇪', region:'europa' },
 };
 
 // LIGAS. id `<iso2>-<slug>` que nombra el ESCALÓN; `tier` = el escalón (1 = primera). Sin `totalClubs`: el tamaño cambia por

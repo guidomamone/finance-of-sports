@@ -306,6 +306,7 @@ window.I18N.strings.en = {
   "region.africa": "Africa",
   "region.oceania": "Oceania",
   "country.AR": "Argentina",
+  "country.EE": "Estonia",
   "country.BR": "Brazil",
   "country.CO": "Colombia",
   "country.ES": "Spain",
