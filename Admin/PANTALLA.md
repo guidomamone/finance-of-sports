@@ -776,8 +776,9 @@ Texto movido sin cambios.
   de `js/finanzas-render.js`, y el contenido de Boca era HTML escrito a mano en
   ESTE archivo. Onboardear un presupuesto ya no toca ni el motor ni el HTML.
 - PESTAÑAS: Finanzas es la única con datos reales y es donde está todo el
-  trabajo. Mercado de Pases / Resultados Deportivos / Títulos están vacías o con
-  placeholder según el club. "Mi Cuenta" (to-do 70, Versiones 271-272, 2026-09-27) DEJÓ DE SER
+  trabajo. Resultados Deportivos / Títulos están vacías o con placeholder según el club. La pestaña
+  Mercado de Pases se borró (to-do 303, decisión de Guido): mostraba datos inventados; `pasesData`
+  queda como `[]` en cada club y nadie lo lee. "Mi Cuenta" (to-do 70, Versiones 271-272, 2026-09-27) DEJÓ DE SER
   UN STUB: login con Google vía Supabase y "Saved Searches" reales — cada club/comparación que se
   mira queda guardado solo (sin botón), con favoritos primero y el resto del historial después.
   No es un paywall (la decisión de ir todo gratis del 2026-09-14 sigue en pie): es que quien se

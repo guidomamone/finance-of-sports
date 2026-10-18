@@ -88,7 +88,7 @@ ARCHIVOS DEL PROYECTO (todos en finance-of-sports/, salvo que se diga otra cosa)
   P1), para que un club borrado o una membresía que cambia no deje un
   ranking de 1 en la portada sin avisar.
 - data/ar/river-data.js, data/ar/racing-data.js: datos de esos dos clubes
-  (ingresos/gastos por línea, mercado de pases, resultados deportivos,
+  (ingresos/gastos por línea, resultados deportivos,
   títulos), cada uno con comentarios explicando qué es real y qué es
   placeholder.
 - js/selector.js: ELEGIR Y COMPARAR, que desde la Versión 152 son lo mismo y
@@ -403,8 +403,8 @@ limpieza de una sola vez:
      de los clubes fuera de Argentina onboardeados hasta ahora) ya no hace falta inventar una
      entrada sintética "Gestión actual" solo para evitar un crash — podés dejarlo sin tocar
      directamente.
-  2. `pasesDataForClub`/`resultadosDataForClub`/`titulosDataForClub` (index.html) NO necesitan
-     ningún cambio manual: leen `CLUB_GENERIC_DATA[clubId].pasesData` (etc.) directo, y tu
+  2. `resultadosDataForClub`/`titulosDataForClub` (index.html) NO necesitan
+     ningún cambio manual: leen `CLUB_GENERIC_DATA[clubId].resultadosData` (etc.) directo, y tu
      `data/<país>/<club>-data.js` ya se autorregistra ahí (`window.CLUB_GENERIC_DATA.<club> = {...}`, ver
      el final de cualquier archivo de club ya cargado como plantilla) — con eso alcanza.
   3. `verifyTieOuts()` tampoco necesita ningún cambio manual: itera solo
@@ -661,7 +661,7 @@ Texto movido sin cambios. Lo que se ve en cada pantalla está en `Admin/PANTALLA
   redacciones distintas, y 18 de los 89 valores no decían nada. Ver
   `Admin/CONVENCIONES.md` y `club-data-mapping/referencia/fx.md`.
 - GESTIONES (`data/gestiones/<país>.js`, `window.CLUB_GESTIONES`): quién condujo cada club y desde/hasta cuándo.
-  Reemplaza a `gestionesByClub`, que sigue vivo solo para las pestañas ocultas Pases y Resultados. Un archivo por
+  Reemplaza a `gestionesByClub`, que sigue vivo solo para las pestañas ocultas Resultados y Comparar Gestiones. Un archivo por
   país, igual que `data/club-leagues/`: es un dato sobre personas, que se actualiza con cada elección, no con cada
   documento. Cada gestión:
   - `nombre`: el nombre completo, como lo publica la fuente; `corto`: el que va en el botón y en la franja del

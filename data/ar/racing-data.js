@@ -824,12 +824,7 @@ const racingPresupuestoOverlayByYear = {
   },
 };
 
-const racingPasesData = [
-  { gestion:'milito', anio:2025, ventana:'Verano', tipo:'Jugador', nombre:'Jugador C1 (placeholder)', movimiento:'Venta', monto:14.5 },
-  { gestion:'milito', anio:2025, ventana:'Invierno', tipo:'Jugador', nombre:'Jugador C2 (placeholder)', movimiento:'Compra', monto:-9.0 },
-  { gestion:'milito', anio:2024, ventana:'Verano', tipo:'DT', nombre:'DT continúa (Costas, placeholder)', movimiento:'Renovación', monto:0 },
-  { gestion:'blanco', anio:2024, ventana:'Invierno', tipo:'Jugador', nombre:'Jugador C3 (placeholder)', movimiento:'Venta', monto:7.0 },
-];
+const racingPasesData = [];
 
 const racingResultadosData = {
   milito: { titulosLocales:0, titulosInternacionales:1, mejorResultadoLibertadores:'Sin dato verificado todavía en esta gestión (breve, desde dic-2024)' },

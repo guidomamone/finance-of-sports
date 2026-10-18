@@ -99,12 +99,7 @@ const riverFiscalYearMeta = {
 
 const riverPresupuestoOverlayByYear = {};
 
-const riverPasesData = [
-  { gestion:'brito', anio:2024, ventana:'Verano', tipo:'Jugador', nombre:'Jugador R1 (placeholder)', movimiento:'Venta', monto:16.0 },
-  { gestion:'brito', anio:2024, ventana:'Invierno', tipo:'Jugador', nombre:'Jugador R2 (placeholder)', movimiento:'Compra', monto:-11.0 },
-  { gestion:'brito', anio:2023, ventana:'Verano', tipo:'DT', nombre:'DT entrante (Brito, placeholder)', movimiento:'Contratación', monto:0 },
-  { gestion:'donofrio', anio:2021, ventana:'Verano', tipo:'Jugador', nombre:'Jugador R3 (placeholder)', movimiento:'Venta', monto:9.5 },
-];
+const riverPasesData = [];
 
 const riverResultadosData = {
   brito: { titulosLocales:2, titulosInternacionales:0, mejorResultadoLibertadores:'Semifinalista (2024)' },

@@ -408,12 +408,6 @@
   }
 
 
-  function pasesNetSpend(clubId, gestionKey){
-    const data = pasesDataForClub(clubId) || [];
-    return data.filter(r => r.gestion === gestionKey && r.tipo === 'Jugador').reduce((s,r) => s+r.monto, 0);
-  }
-
-
   // allYearsRangeForClub() y yearKindForClub() no tienen consumidor hoy y se conservan a propósito: son helpers del motor, y
   // yearKindForClub() es la única rama que distingue `placeholder` de `pending_official`.
   // Todos los años del club, del más viejo al más nuevo, sin saltear ninguno del medio aunque no tenga datos.

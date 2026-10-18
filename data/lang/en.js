@@ -249,8 +249,6 @@ window.I18N.strings.en = {
   "nav.inicio": "Home",
   "nav.liga": "Leagues",
   "nav.vs": "Compare",
-  "pases.table.title": "Movements",
-  "pases.title": "Transfers",
   "resultados.table.title": "Trophies and competitions by year",
   "resultados.title": "On-pitch results",
   "section.expenses": "Costs",

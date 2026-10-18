@@ -563,24 +563,7 @@ const bocaFiscalYearMeta = {
     officialTotalRevenue:239392.104, officialTotalExpenses:235989.861, officialPAT:3402.243 },
 };
 
-const bocaPasesData = [
-  {gestion:'riquelme', anio:2025, ventana:'Invierno', tipo:'Jugador', nombre:'Jugador A', movimiento:'Venta', monto:18.5},
-  {gestion:'riquelme', anio:2025, ventana:'Verano', tipo:'Jugador', nombre:'Jugador B', movimiento:'Compra', monto:-14.0},
-  {gestion:'riquelme', anio:2024, ventana:'Verano', tipo:'Jugador', nombre:'Jugador C', movimiento:'Venta', monto:12.0},
-  {gestion:'riquelme', anio:2024, ventana:'Invierno', tipo:'Jugador', nombre:'Jugador D', movimiento:'Compra', monto:-9.5},
-  {gestion:'riquelme', anio:2023, ventana:'Verano', tipo:'DT', nombre:'DT entrante (Riquelme)', movimiento:'Contratación', monto:0},
-  {gestion:'ameal', anio:2023, ventana:'Invierno', tipo:'DT', nombre:'DT saliente (Ameal)', movimiento:'Salida', monto:0},
-  {gestion:'ameal', anio:2022, ventana:'Verano', tipo:'Jugador', nombre:'Jugador E', movimiento:'Compra', monto:-16.0},
-  {gestion:'ameal', anio:2022, ventana:'Invierno', tipo:'Jugador', nombre:'Jugador F', movimiento:'Compra', monto:-11.5},
-  {gestion:'ameal', anio:2021, ventana:'Verano', tipo:'Jugador', nombre:'Jugador G', movimiento:'Venta', monto:9.0},
-  {gestion:'ameal', anio:2023, ventana:'Verano', tipo:'Jugador', nombre:'Jugador H', movimiento:'Venta', monto:8.5},
-  {gestion:'ameal', anio:2021, ventana:'Invierno', tipo:'DT', nombre:'DT entrante (Ameal)', movimiento:'Contratación', monto:0},
-  {gestion:'angelici', anio:2019, ventana:'Verano', tipo:'Jugador', nombre:'Jugador I', movimiento:'Venta', monto:22.0},
-  {gestion:'angelici', anio:2018, ventana:'Invierno', tipo:'Jugador', nombre:'Jugador J', movimiento:'Venta', monto:11.5},
-  {gestion:'angelici', anio:2018, ventana:'Verano', tipo:'Jugador', nombre:'Jugador K', movimiento:'Compra', monto:-8.0},
-  {gestion:'angelici', anio:2019, ventana:'Invierno', tipo:'Jugador', nombre:'Jugador L', movimiento:'Compra', monto:-10.5},
-  {gestion:'angelici', anio:2018, ventana:'Verano', tipo:'DT', nombre:'DT entrante (Angelici)', movimiento:'Contratación', monto:0},
-];
+const bocaPasesData = [];
 
 const bocaResultadosData = {
   angelici:{titulosLocales:6, titulosInternacionales:0, mejorResultadoLibertadores:'Finalista (2012 y 2018)'},
