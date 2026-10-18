@@ -53,6 +53,17 @@ Object.assign(window.CLUB_ENTIDADES, {
     "fuente": {
      "md": "Clubes/Portugal/Académica/9-RC-SDUQ-2021-2022.md",
      "linea": 460
+    },
+    "ingresos": {
+     "2023": {
+      "total": 2.177,
+      "moneda": "EUR",
+      "cierre": "2023-06-30",
+      "fuente": {
+       "md": "Clubes/Portugal/Académica/OAF-RC-2022-2023.md",
+       "linea": 176
+      }
+     }
     }
    }
   },
@@ -1855,6 +1866,17 @@ Object.assign(window.CLUB_ENTIDADES, {
     "fuente": {
      "md": "Clubes/Portugal/Chaves/RC-2021-2022_compressed-1.md",
      "linea": 236
+    },
+    "ingresos": {
+     "2023": {
+      "total": 0.843,
+      "moneda": "EUR",
+      "cierre": "2023-06-30",
+      "fuente": {
+       "md": "Clubes/Portugal/Chaves/Relatorio_Atividades-e-Contas-2022_2023.md",
+       "linea": 178
+      }
+     }
     }
    }
   },
