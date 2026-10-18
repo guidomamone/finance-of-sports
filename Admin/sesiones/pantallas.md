@@ -101,3 +101,13 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
 
 - "El estado va en la URL (…); la moneda, la inflación, el formato y Comparar todavía no (to-do 271)": ya van (`moneda`, `real`,
   `formato`, `a`, `b`), y el grupo multiclub (`?tab=grupo&grupo=…`).
+
+## Después del segundo merge del 2026-10-18
+
+### Qué queda (para TODO)
+
+- 282, Ligas: `data/auditoria/_ligas.js` (`window.LIGA_AUDITORIA[ligaId][anio] = { entidad:{nombre, legal?}, auditor, dictamen,
+  continuidad, fuente }`, rama finanzas, commit 5c212ed) está vacío: no hay balance de ninguna entidad organizadora. Ligas no muestra
+  nada hasta que haya uno (conseguirlos lo propone finanzas como sourcing).
+- 282, Finanzas: mockup "Finanzas · quién auditó estos números" en "Pantallas FoS", esperando el ok de Guido; el código espera el
+  próximo merge de finanzas (el dato está en su rama, 6e88784).
