@@ -1,18 +1,10 @@
 {
  "pdf": "Clubes/Estonia/Narva Trans/aruanne-2025.pdf",
- "generado": "2026-10-18T13:52:22.217Z",
+ "generado": "2026-10-18T14:04:49.987Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (narvatrans-ee)"
-  },
-  {
-   "etapa": "tie-out-resultado",
-   "motivo": "resultado: ingresos 0.851003 + gastos -0.835826 + netInterest 0.001883 + tax 0 = 0.01706 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" 0.169846)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "ingresos: las filas suman 0.851003 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
   }
  ],
  "avisos": [
@@ -35,6 +27,26 @@
     "_escalon": 1,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "sh eraldis riigieelarvest",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.042848,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "sh eraldis kohaliku omavalitsuse eelarvest",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.109938,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "EJLiidu toetused",
@@ -379,11 +391,21 @@
    "assetSales": 0,
    "netInterest": 0.001883,
    "tax": 0,
+   "extraRows": [
+    {
+     "label": "Intressitulud",
+     "value": 0.001917
+    },
+    {
+     "label": "Intressikulud",
+     "value": -0.000034
+    }
+   ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": null,
+   "officialTotalRevenue": 1.003789,
    "officialTotalExpenses": 0.835826,
-   "officialPAT": null
+   "officialPAT": 0.169846
   },
   "source": {
    "id": "narvatrans-ee-aruanne-2025",
@@ -456,13 +478,14 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Annetused ja toetused\" > desglose de \"Riigi ja KOV toetused\")",
    "signoFijo": 0.042848,
-   "cat": "no_es_rubro",
+   "cat": "other_income",
    "conf": 1,
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Dato 'del cual' (sh): 42.848 + 109.938 = 152.786 = 'Riigi ja KOV toetused'; ya está cargado como renglón. Cargarlo duplica. Verificado: 152.786+146.930+260.100+14.319+13.537 = 587.672 total. [Lisa 10 (L579-580): 'sh eraldis riigieelarvest 42 848' bajo 'Kokku annetused ja toetused']",
-   "destino": "excluida"
+   "notaGuido": "Claude 2026-10-18: 'sh eraldis riigieelarvest' 42.848 es el detalle de 'Riigi ja KOV toetused' (L572, 579-580); como no_es_rubro se perdía el total",
+   "destino": "revenue",
+   "amountNative": 0.042848
   },
   {
    "label": "sh eraldis kohaliku omavalitsuse eelarvest",
@@ -471,13 +494,14 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Annetused ja toetused\" > desglose de \"Riigi ja KOV toetused\")",
    "signoFijo": 0.109938,
-   "cat": "no_es_rubro",
+   "cat": "other_income",
    "conf": 1,
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Ídem: 'sh' = del cual, subconjunto de 'Riigi ja KOV toetused 152 786'. [Lisa 10 (L580): 'sh eraldis kohaliku omavalitsuse eelarvest 109 938']",
-   "destino": "excluida"
+   "notaGuido": "Claude 2026-10-18: 'sh eraldis kohaliku omavalitsuse eelarvest' 109.938, detalle de 'Riigi ja KOV toetused' (L572, 580)",
+   "destino": "revenue",
+   "amountNative": 0.109938
   },
   {
    "label": "EJLiidu toetused",
@@ -1019,16 +1043,29 @@
    "verificacion (nota que desglosa \"Tööjõukulud\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 0.851003,
+  "revSum": 1.003789,
   "expSum": -0.835826,
-  "officialTotalRevenue": null,
+  "officialTotalRevenue": 1.003789,
   "officialTotalExpenses": 0.835826,
-  "officialPAT": null,
+  "officialPAT": 0.169846,
   "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
    "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 0.169846,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 1.003789
   },
   "expImpreso": {
    "label": "total de gastos (verificado)",
@@ -1086,10 +1123,10 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
-  "lineasIngreso": 13,
+  "motivos": 1,
+  "lineasIngreso": 15,
   "lineasGasto": 21,
   "metaFilas": 2,
-  "excluidas": 2
+  "excluidas": 0
  }
 }
