@@ -257,10 +257,12 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
   Boca, River y Racing seguían publicados. Fuera la sección de `index.html`, su código (`js/finanzas-render.js`, `js/principal.js`,
   `pasesNetSpend` de `js/finanzas-calc.js` y su fila en la Comparar Gestiones oculta) y las claves de `data/lang/en.js`; los tres
   `<club>PasesData` quedan `[]` como en los demás clubes. Probado en Boca, Racing y River, y en inglés, sin errores. ASSET_V 1293.
+- To-do 304: el pie dice "Proyecto personal." / "Personal project." (fuera "sin fines de lucro" / "non-profit", `index.html` y
+  `data/lang/en.js`), como ya estaba en términos y privacidad. ASSET_V 1294.
 
 ### Qué queda (para TODO)
 
-- Borrar el 303.
+- Borrar el 303 y el 304.
 
 ### Qué deja de ser cierto en ESTADO
 

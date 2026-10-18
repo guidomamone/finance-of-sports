@@ -128,7 +128,7 @@ window.I18N.strings.en = {
   "finanzas.view.board": "By board",
   "finanzas.view.year": "Year by year",
   "footer.fuentes": "Every source on the site",
-  "footer.note": "Personal project, non-profit.",
+  "footer.note": "Personal project.",
   "footer.privacidad": "Privacy",
   "footer.terminos": "Terms of use",
   "footer.text": "financeofsports.com publishes football clubs' financial data, taken from official balance sheets and budgets cited on each club's page. It does not represent any club, league or federation.",
