@@ -48,6 +48,7 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 * 233: usar Jev (más barato) en otras etapas
 * 230: abaratar localizar y extraer
 * 232: mejoras de script que dejó Grecia
+* 279: la tool que duplicaba claves en club-leagues/ru.js
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
@@ -55,10 +56,11 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 * El punto 2 del plan (transcripciones por subagentes) y Reino Unido (lo transcribe la otra sesión)
 * 165 c: altas de los países nuevos que faltan
 * 195: gestiones (presidentes) sin fuente confirmada (se puede ir haciendo con cada país)
-* 266: qué clubes le faltan a cada liga por año, como lista de sourcing
+* 276 y 277: listas de equipos que no salen; Parma 2018 en club-leagues
 * 273: estadio y sponsor de cada ejercicio (definir los campos con Guido antes de juntar)
 
 **E. Pantallas**
+* 275: faltantes y estimados en Ligas (estimado bien claro, aparte de lo real)
 * 274: consolidado de cada liga: total de ingresos por categoría (mockup con Design antes)
 * 272: cartel de primera visita sin uso (borrarlo o reubicarlo)
 
@@ -73,7 +75,7 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 **F. Datos para afuera (cuando haya tiempo; nada urgente)**
 * 248: taxonomía genérica y subcategorías por deporte (antes del esquema; resuelve también 130 y 183)
 * 130 y 183: otros deportes, polideportivos e Italia fuera del fútbol (después de 248)
-* 270: modelo que estima años y clubes sin balance (después de 266: necesita saber qué falta)
+* 270: estimar un club que nunca cargamos (volver a medir con más datos)
 * 245: datos como JSON con esquema
 * 247: registro público de correcciones (sobre 245)
 * 249: API en dominio propio (último; no construirla ahora)
@@ -85,6 +87,7 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 * 253: tablero del pipeline para el celular
 * 237 al: anexo UEFA para abrir las ventas (lo dejaste para después)
 * 51: proceso de mails a clubes
+* 278: carpetas duplicadas en Clubes/ (sin borrar PDFs)
 * 258: índice partido por país o liga (cuando la skill de escala lo diga)
 
 165. ALTAS DE CLUBES NUEVOS FUERA DE ITALIA (decisión de Guido, 2026-10-07; estado al 2026-10-10). Un país por vez, con el pipeline
@@ -236,9 +239,6 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
    documento (el año y su comparativo: Dortmund 2024 y 2025 desde geschaeftsbericht-2024-25, RB Leipzig 2024 y 2025 desde
    jahresabschluss-2024-25) reciben el mismo valor. Escalón: el ajuste puede llevar `anio`, y si lo lleva vale solo para ese año.
 
-266. CADA LIGA DICE QUÉ CLUBES LE FALTAN POR AÑO, Y AVISA A SOURCING (pedido de Guido, 2026-10-17). Con `data/club-leagues/` (quién jugó
-   cada temporada) contra lo cargado: por liga y año, los clubes sin ejercicio. Se ve en la pestaña Ligas y genera la lista de pendientes
-   de sourcing (`Admin/sourcing/`), sin duplicar lo ya buscado y descartado.
 268. MI CUENTA Y EL DASHBOARD DE USUARIOS Y VISITAS (pedido de Guido, 2026-10-17). Falta: (a) confirmar la primera corrida del cron
    del Worker fos-supabase-ping el 2026-10-19 12 UTC (Cloudflare → fos-supabase-ping → Logs); (b) que el dashboard
    https://claude.ai/artifact/7kPta8U7BxyiGRKAyayHhA se actualice solo (hoy: correr tools/supabase/stats.mjs --json y
@@ -254,10 +254,22 @@ Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 274. CONSOLIDADO DE CADA LIGA (pedido de Guido, 2026-10-18). Que cada liga y ejercicio muestre su total: la suma de los ingresos de sus
    clubes por categoría (derechos de TV, comercial, estadio, pases, etc.). Decir siempre cuántos clubes de cuántos entran en la suma (los
    que faltan no se estiman, ver 266 y 270) y no mezclar monedas ni ejercicios. Mockup con Design antes de codear.
-270. MODELO QUE ESTIMA AÑOS Y CLUBES QUE NO TENEMOS (pedido de Guido, 2026-10-17). Estadístico: con lo que sí está cargado, estimar
-   ingresos / gastos de un club-año sin balance a partir de la posición en la tabla, la liga, los partidos contra clubes con finanzas,
-   el historial del club. Mostrarlo siempre como estimación, con su error medido (validación cruzada contra años reales) y aparte de lo
-   real. Diseño y medición antes de mostrar nada.
+270. ESTIMAR UN CLUB QUE NUNCA CARGAMOS (pedido de Guido, 2026-10-17; los años que le faltan a un club que tenemos ya se estiman y
+   publican en data/estimados/). Apagado: hoy da 50% de error con la posición en la tabla contra 56% de la mediana de la liga. Volver a
+   medir (`node tools/estimar.mjs --medir`) cuando haya más clubes cargados y prenderlo solo si le gana a la mediana con un error que Guido
+   acepte. Variable sin medir: partidos contra clubes con finanzas.
+275. LIGAS MUESTRA LOS FALTANTES Y LOS ESTIMADOS (cierre de la sesión datos-sourcing, 2026-10-18). `data/faltantes/<liga>.js` ("12 de 14
+   clubes con balance" y los que faltan con el motivo en palabras; `reciente` para un año que todavía no puede estar) y
+   `data/estimados/<liga>.js` con el rótulo "estimado" bien claro, siempre aparte de lo real (otro estilo, el rango, el error y de qué
+   años sale), nunca sumado a un total real sin decirlo (pedido de Guido). El formato de los dos: `Admin/Archive/sesion-datos-sourcing-2026-10-18.md`,
+   "Para el worktree de pantallas". Va con el 274.
+276. LISTAS DE EQUIPOS QUE NO SALEN (faltantes-liga). Primera B Metro (sin página con tabla), Pro League belga 2024-25 (el lector no la
+   entiende), Serie C (3 grupos por página), Perú 2020 (la tabla pone la ciudad primero). `node tools/listas-lote.mjs` las reintenta.
+277. PARMA EN LA SERIE C EN 2018 (data/club-leagues/). En 2017-18 jugó la Serie B: verificar y corregir.
+278. CARPETAS DUPLICADAS EN Clubes/. Cardiff y Swansea en `Inglaterra/` y `Gales/`; `Suiza/FC St. Gallen` y `Suiza/St. Gallen`.
+   `faltantes-liga` las lee juntas. Unificar sin borrar ningún PDF y chequeando antes las referencias del pipeline.
+279. LA TOOL QUE DUPLICABA CLAVES EN data/club-leagues/ru.js (mejora de script). El archivo acumuló 58 claves repetidas: la tool que lo
+   escribe (probablemente `bfo-rusia.mjs` o `alta-club.mjs`) agrega sin mirar si la clave ya está.
 
 232. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO GRECIA (pedido de Guido, 2026-10-14: anotar lo que se aprende en el onboarding griego). Cada
     letra es un escalón a diseñar con su ok (skill club-or-year-onboarding, sección 3.b), uno por vez.

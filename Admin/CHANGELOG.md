@@ -15,6 +15,19 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 714 — Merge de datos-sourcing: faltantes por liga, listas nuevas y estimados (2026-10-18)
+
+Sesión en el worktree `fos-datos`. Merge a mano por un conflicto en `tools/worktree.mjs preparar` (las dos ramas habían arreglado la
+misma línea: quedaron las dos condiciones); generados regenerados, ASSET_V 1250, auditoría P0 0 / P1 0.
+
+- To-do 266 hecho: `tools/faltantes-liga.mjs` genera `data/faltantes/<liga>.js` y `Admin/sourcing/pendientes.md`; 7187 club-años en 376
+  liga-años y 882 clubes pendientes de sourcing. Lo corre `cargar.mjs`; `audit.js` da P1 si queda viejo.
+- 57 listas de liga nuevas (Argentina 2009-2026, Bundesliga, LaLiga…) con `tools/listas-lote.mjs`, y posiciones finales en 272 liga-años.
+- To-do 270: estimados de años faltantes por interpolación simple, publicados en `data/estimados/` (439 club-años, 18-25% de error
+  medido); club nuevo apagado.
+- Rusia corregida en club-leagues (Dynamo Makhachkala y 58 claves repetidas).
+- TODO: fuera el 266; el 270 queda reducido a "club nuevo"; nuevos 275 a 279.
+
 ## Versión 713 — To-dos 273 y 274 (2026-10-18)
 
 - TODO: 273 (estadio y sponsor de cada ejercicio) y 274 (consolidado de ingresos por categoría de cada liga), con su lugar en el ORDEN.

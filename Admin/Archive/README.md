@@ -42,3 +42,4 @@ Qué hay hoy:
 - `selector-merge-a-produccion.md` — era `Prototyping/Selector/MERGE-A-PRODUCCION.md`: cómo se llevó el prototipo 4 del selector a producción. Archivado el 2026-10-06 (to-do 109).
 - `CHANGELOG-v010-v299.md` — la primera parte de `Admin/CHANGELOG.md`: Versiones 10 a 299 (sourcing y onboarding manual, antes del pipeline), de la más nueva a la más vieja. Archivado en la 598.
 - `sesion-pantallas-2026-10-17.md` — el cierre de la sesión `pantallas` (worktree): qué cambió, qué quedó y qué dejó de ser cierto. Pasado a TODO, CHANGELOG y ESTADO. Archivado en la 712.
+- `sesion-datos-sourcing-2026-10-18.md` — el cierre de la sesión `datos-sourcing`: faltantes por liga, listas, estimados, y el formato de `data/faltantes/` y `data/estimados/` para pantallas (lo cita el to-do 275). Archivado en la 714.

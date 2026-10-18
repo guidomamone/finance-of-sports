@@ -1,3 +1,6 @@
+> ARCHIVADO (Versión 714, 2026-10-18): cierre de la sesión datos-sourcing, ya pasado a TODO, CHANGELOG y ESTADO. Rutas y números de ese día.
+> La sección "Para el worktree de pantallas" (formato de data/faltantes y data/estimados) la cita el to-do 275.
+
 # Cierre de la sesión datos-sourcing (rama `datos-sourcing`, worktree `../fos-datos`)
 
 Lo pasa la sesión principal a TODO, CHANGELOG y ESTADO al mergear (skill de arranque, `worktree.md`): `node tools/worktree.mjs mergear

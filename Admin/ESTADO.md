@@ -126,6 +126,14 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   es del dominio (un artículo de prensa) va a `Admin/registros/documentos-descartados.txt`. Sin transcribir: rugby, tenis y entes italianos; ver
   `Admin/sourcing/Italia/_notas-generales.md`. Las federaciones entran al sitio.
 
+### Qué falta de cada liga y estimados
+
+- Por liga y año se sabe qué clubes faltan y en qué estado (`tools/faltantes-liga.mjs`, generado en cada carga); la lista de pendientes de
+  sourcing es `Admin/sourcing/pendientes.md` (generada, no se edita): una sesión de sourcing puede arrancar de ahí.
+- Estimaciones publicadas aparte de lo real (`data/estimados/`, `tools/estimar.mjs`): solo años que faltan de clubes que tenemos, por
+  interpolación entre sus años reales; club que nunca cargamos, apagado (to-do 270). Todavía no se muestran en el sitio (to-do 275).
+- Las listas de Wikipedia (`tools/club-league-reference/`) cubren 376 liga-años y guardan la posición final donde la tabla está completa.
+
 ### Finanzas multi-año
 
 - Finanzas muestra varios ejercicios a la vez: el título es el club; cards de ejercicios (default, los últimos 5 con balance) y
