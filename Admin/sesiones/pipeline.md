@@ -141,6 +141,8 @@ Lo de arriba ya lo pasó la principal (merge 621acf6cea, CHANGELOG 738). Lo nuev
   compuerta de primer año para cualquier país (que el dato cuadre con el balance del propio documento, no solo NBB); (2) la deuda belga, que
   necesita decidir el criterio (¿el 42 entra?; Union SG tiene 31,66 M cargados y 7,62 M por códigos financieros, ¿qué suma de más?); (3) OH
   Leuven y los documentos cuyo .md no trae la columna de códigos.
+- **Sigue en el plan de esta rama (ya están en el TODO de main):** 298 e) a n), p) y q); 306 (Milan 2018); 307 (el "Gastado: US$ 0.00" de
+  localizar); 301 (gasto.mjs --json); 282 (el alta sin auditor); 232 e); 279; 286; 287. La sesión cerró por contexto (pedido de Guido).
 
 ### Para fos-onboarding
 - caja-deuda deja de leer los códigos NBB como importes: en un club belga, Jev ya no tiene guardada la respuesta (cambian las filas), y un
