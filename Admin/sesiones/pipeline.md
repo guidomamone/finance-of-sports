@@ -37,6 +37,11 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
   y `tools/medir-verificar.mjs --filas <modelo>`. Sobre prueba-rapida, Sonnet deja 10 documentos en la cola con otros totales (Opus nuevo: 0):
   sigue en Opus (HALLAZGOS-pipeline.md). US$ 10,79 entre las dos corridas.
 
+- **Opus → Sonnet, quinta tarea: categorizar (to-do 288), sin medir otra vez.** Ya estaba medido (`Admin/mediciones/test-categorizar-claude.md`,
+  259 rubros): Sonnet 74,9% contra 81,1% de Opus, peor calibrado, centavos de ahorro. Sigue en Opus. **El to-do 288 se cierra:** solo
+  caja-deuda pasó a Sonnet; perimetro-a2, localizar, extraer y categorizar siguen en Opus, cada uno con su medición en HALLAZGOS. Gasto de las
+  mediciones de esta sesión: US$ 40,95 (caja-deuda 12,37; perimetro-a2 13,82; localizar 3,97; extraer 10,79).
+
 ## Qué queda pendiente (para TODO)
 
 - **Escribir caja y deuda en `data/`, en la carpeta principal después del merge** (sin API: escalón 0). Junto con lo que ya dejó la
@@ -62,7 +67,7 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
 
 ## Qué deja de ser cierto en ESTADO
 
-- Los to-dos 289 y 290 se cierran (290: Genoa 2022 deja de dar un valor mal; el valor publicado depende del 291).
+- Los to-dos 288, 289 y 290 se cierran (290: Genoa 2022 deja de dar un valor mal; el valor publicado depende del 291).
 - RB Leipzig 2023-2024 y HSV 2024 dejan de estar "sin escala del documento" en caja-deuda.
 
 ## Para fos-onboarding (cómo se carga)

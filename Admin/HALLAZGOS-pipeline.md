@@ -70,6 +70,8 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   carga, 8 a la cola con los mismos totales y 10 a la cola con OTROS totales (lee mal importes o filas). No entra: extraer sigue en Opus.
   Lo que enseñó: repetir la extracción con el mismo modelo ya cambia 8 cargas de 42 (el piso de variación es alto: cualquier cambio de
   extraer se mide contra una segunda corrida, no contra lo cargado). Mediciones: `Admin/mediciones/extraer-verificar-cargado-vs-*.txt`.
+- **Sonnet en categorizar**: ya medido antes (`Admin/mediciones/test-categorizar-claude.md`, 259 rubros: 74,9% contra 81,1% de Opus, peor
+  calibrado); en el cierre del to-do 288 (2026-10-18) no se volvió a medir. Sigue en Opus.
 
 ## 2026-10-08, dos trampas que costaron una corrida
 
