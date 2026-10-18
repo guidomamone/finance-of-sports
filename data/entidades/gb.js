@@ -19,6 +19,7 @@ Object.assign(window.CLUB_ENTIDADES, {
     "forma": "holding",
     "pais": "GB",
     "grupo": {
+     "id": "blueco",
      "nombre": "BlueCo",
      "alias": [
       "BlueCo",

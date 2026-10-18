@@ -9,8 +9,8 @@
 // sitio. Una línea es una de tres cosas:
 //
 //   {"tipo":"entidad","id":"blueco-22","nombre":"Blueco 22 Limited","forma":"holding","pais":"GB","cita":{…}}
-//       forma: club | sociedad | holding | asociacion | fundacion | fondo | persona. `clubId` si es un club del sitio. `grupo` (con
-//       `alias`) si es la cabeza de un grupo multiclub: la que tiene página propia.
+//       forma: club | sociedad | holding | asociacion | fundacion | fondo | persona. `clubId` si es un club del sitio. `grupo` (con `id`
+//       para la URL, `nombre` y `alias`) si es la cabeza de un grupo multiclub: la que tiene página propia.
 //   {"tipo":"relacion","de":"blueco-22","a":"chelsea-fc-holdings","rel":"controla","pct":100,"desde":2023,"hasta":null,"cita":{…}}
 //       rel: controla (más del 50 %) | participa (minoría, con pct) | vinculada (sin control: una fundación, una sociedad hermana).
 //       `consolidada` (true/false) en una relación `controla`: si la controlada entra en el consolidado de la que controla.
@@ -30,7 +30,8 @@
 // AVISOS (no frenan): clubes del sitio con una línea "otra entidad" en documentos-descartados.txt y sin ninguna entidad en el registro.
 //
 // QUÉ GENERA: `data/entidades/<país>.js` (window.CLUB_ENTIDADES[clubId] = { cargas, entidades, relaciones }, solo lo que toca a ese club:
-// la cadena hacia arriba de cada entidad cargada, sus controladas y las vinculadas) y `data/entidades/_grupos.js` (window.GRUPOS[id] =
+// la cadena hacia arriba de cada entidad cargada, sus controladas y las vinculadas), `data/entidades/_grupos.js` (window.GRUPOS_INDICE =
+// [{ id, nombre, alias, clubIds }], chico y eager: lo lee el buscador de js/selector.js) y `data/entidades/_grupos-detalle.js` (window.GRUPOS[id] =
 // { nombre, alias, clubes:[{ clubId|null, nombre, control, pct, desde, hasta }] }). Las citas de documento se publican como
 // { md, linea } (la transcripción se publica); las externas, como { url }.
 //
@@ -192,7 +193,7 @@ for (const g of [...entidades.values()].filter(e => e.grupo)) {
     }
   };
   bajar(g.id, true);
-  grupos[g.id] = { nombre: g.grupo.nombre || g.nombre, alias: g.grupo.alias || [], entidad: g.id, clubes: clubesG };
+  grupos[g.grupo.id || g.id] = { nombre: g.grupo.nombre || g.nombre, alias: g.grupo.alias || [], entidad: g.id, clubes: clubesG };
 }
 
 // --- escribir o comparar ---------------------------------------------------------------------------------------------------------------------
@@ -203,7 +204,9 @@ for (const p of paises) {
   const delPais = Object.fromEntries(Object.entries(porClub).filter(([, c]) => c.pais === p).map(([id, { pais, ...resto }]) => [id, resto]));
   archivos[`${p}.js`] = `${CABECERA}window.CLUB_ENTIDADES = window.CLUB_ENTIDADES || {};\nObject.assign(window.CLUB_ENTIDADES, ${JSON.stringify(delPais, null, 1)});\n`;
 }
-archivos['_grupos.js'] = `${CABECERA}window.GRUPOS = ${JSON.stringify(grupos, null, 1)};\n`;
+const indice = Object.entries(grupos).map(([id, g]) => ({ id, nombre: g.nombre, alias: g.alias, clubIds: [...new Set(g.clubes.map(c => c.clubId).filter(Boolean))] }));
+archivos['_grupos.js'] = `${CABECERA}window.GRUPOS_INDICE = ${JSON.stringify(indice)};\n`;
+archivos['_grupos-detalle.js'] = `${CABECERA}window.GRUPOS = ${JSON.stringify(grupos, null, 1)};\n`;
 
 if (PRINT) {
   for (const [id, c] of Object.entries(porClub)) {

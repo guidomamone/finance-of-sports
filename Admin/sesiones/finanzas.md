@@ -20,8 +20,15 @@
 - 280: el registro tiene 2 clubes. Faltan los otros ejercicios de Chelsea e Inter (Suning antes de 2024), Portugal (los avisos de
   `node tools/entidades.mjs`), los casos de `cola-borradores/altas-2026-10-17.md` cuando esos clubes estén publicados, y los grupos con dos o
   más clubes cargados (City Football Group, Marinakis, Friedkin, 777 Partners, Eagle Football).
-- 280 b (Finanzas) y 280 c (página del grupo y su total), con mockup antes. Contrato propuesto a fos-pantallas: `?tab=grupo&grupo=<id>` y
-  el buscador lee `data/entidades/_grupos.js`; la página la hace `js/grupo.js`.
+- 280 b (Finanzas) y 280 c (página del grupo y su total), con mockup antes.
+- CONTRATO CON fos-pantallas (acordado 2026-10-18; lo engancha pantallas después de mergear esta rama):
+  - URL `?tab=grupo&grupo=<grupoId>` (p. ej. `blueco`). El lector de URL ("EL ESTADO EN LA URL" de `js/principal.js`: `URL_CLAVES`,
+    `estadoActual()`, `aplicarURL()`) lo toca solo pantallas (to-do 271): finanzas no lo edita.
+  - Finanzas pone en `index.html` una sección propia `data-section="grupo"` y su botón en `#mainNav` con `hidden` (lo necesita
+    `irASeccion()`), y en `js/grupo.js` `window.GRUPO_VIEW = { show(grupoId) -> Promise, current() -> { grupo } }`.
+  - Buscador: `data/entidades/_grupos.js` es `window.GRUPOS_INDICE = [{ id, nombre, alias, clubIds }]`, chico y eager (ya lo genera
+    `tools/entidades.mjs`; el detalle va aparte en `_grupos-detalle.js`). Pantallas suma el resultado "Grupo" en `js/selector.js`, que llama a
+    `GRUPO_VIEW.show(id)`.
 - 281, 282, 242 sin empezar.
 
 ## Qué deja de ser cierto en ESTADO
