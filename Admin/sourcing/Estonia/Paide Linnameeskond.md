@@ -12,3 +12,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2019 desde `Clubes/Estonia/Paide Linnameeskond/aruanne-2019.pdf` (sourceId `paidelinnameeskond-ee-aruanne-2019`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2020 desde `Clubes/Estonia/Paide Linnameeskond/aruanne-2020.pdf` (sourceId `paidelinnameeskond-ee-aruanne-2020`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2021 desde `Clubes/Estonia/Paide Linnameeskond/aruanne-2021.pdf` (sourceId `paidelinnameeskond-ee-aruanne-2021`).

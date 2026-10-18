@@ -66,8 +66,11 @@ window.RANKINGS["ee-meistriliiga"] = {
   },
   2021: {
     leagueSize: 10,
-    sinDato: ["fcilevadia-ee","floratallinn-ee","narvatrans-ee","nommekalju-ee","paidelinnameeskond-ee","tartutammeka-ee"],
+    sinDato: ["fcilevadia-ee","floratallinn-ee","narvatrans-ee","nommekalju-ee","tartutammeka-ee"],
     clubs: [
+      { id:"paidelinnameeskond-ee", revenue:1.144, reportType:"official_balance_sheet",
+        sourceId:"paidelinnameeskond-ee-aruanne-2021",
+        mix:[["Cuotas Sociales",0.069],["Comercial / Sponsors",0.327],["Estadio",0.006],["Premios por competencias",0.331],["Venta de Jugadores",0.097],["Otros ingresos",0.315]] },
       { id:"kuressaare-ee", revenue:0.306, reportType:"official_balance_sheet",
         sourceId:"kuressaare-ee-aruanne-2021",
         mix:[["Cuotas Sociales",0.012],["Comercial / Sponsors",0.014],["Premios por competencias",0.023],["Venta de Jugadores",0.041],["Otros ingresos",0.216]] },
