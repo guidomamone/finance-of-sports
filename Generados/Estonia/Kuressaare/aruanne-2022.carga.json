@@ -1,18 +1,10 @@
 {
  "pdf": "Clubes/Estonia/Kuressaare/aruanne-2022.pdf",
- "generado": "2026-10-18T18:34:33.063Z",
- "frena": [
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-18T18:44:38.532Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-18: 2025 trae los dos (tulemiaruanne consolidado L175-202 y Lisa 18 konsolideerimata L740-765); la controlada es la escuela de fútbol del club y el individual deja afuera más de la mitad del ingreso: consolidado (regla 2). (revisión del alta, subagente Sonnet, revisado por Claude 2026-10-18))",
+  "\"Televisión\" en 0: real, por ajuste manual (2026-10-18, sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18))",
   "gestión: ningún presidente confirmado cubre 2022 (cierre 2022-12-31); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -318,6 +310,16 @@
    "valor": "official_balance_sheet",
    "linea": null,
    "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L118) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Kuressaare/aruanne-2022.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)",
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-18"
@@ -712,12 +714,6 @@
    "amountNative": -0.002016
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (estado)": "gastos sin signo (se invierten)",
@@ -804,8 +800,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 9,
   "lineasGasto": 16,
   "metaFilas": 0,

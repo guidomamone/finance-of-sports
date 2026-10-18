@@ -72,8 +72,7 @@ window.RANKINGS["ee-meistriliiga"] = {
         mix:[["Cuotas Sociales",0.125],["Comercial / Sponsors",0.925],["Estadio",0.006],["Televisión",0.003],["Premios por competencias",0.475],["Venta de Jugadores",0.074],["Otros ingresos",0.373]] },
       { id:"kuressaare-ee", revenue:0.361, reportType:"official_balance_sheet",
         sourceId:"kuressaare-ee-aruanne-2023",
-        mix:[["Comercial / Sponsors",0.008],["Estadio",0.001],["Premios por competencias",0.056],["Fútbol profesional (sin desglosar por la fuente)",0.016],["Otros ingresos",0.281]],
-        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)",1]] },
+        mix:[["Comercial / Sponsors",0.008],["Estadio",0.001],["Premios por competencias",0.056],["Fútbol profesional (sin desglosar por la fuente)",0.016],["Otros ingresos",0.281]] },
       { id:"harjujklaagri-ee", revenue:0.187, reportType:"official_balance_sheet",
         sourceId:"harjujklaagri-ee-aruanne-2023",
         mix:[["Comercial / Sponsors",0.187]] },
@@ -81,7 +80,7 @@ window.RANKINGS["ee-meistriliiga"] = {
   },
   2022: {
     leagueSize: 10,
-    sinDato: ["kuressaare-ee","narvatrans-ee","nommekalju-ee","tallinnakalev-ee","tartutammeka-ee"],
+    sinDato: ["narvatrans-ee","nommekalju-ee","tallinnakalev-ee","tartutammeka-ee"],
     clubs: [
       { id:"floratallinn-ee", revenue:3.871, reportType:"official_balance_sheet",
         sourceId:"floratallinn-ee-aruanne-2022",
@@ -92,6 +91,9 @@ window.RANKINGS["ee-meistriliiga"] = {
       { id:"paidelinnameeskond-ee", revenue:2.475, reportType:"official_balance_sheet",
         sourceId:"paidelinnameeskond-ee-aruanne-2022",
         mix:[["Cuotas Sociales",0.1],["Comercial / Sponsors",0.612],["Estadio",0.064],["Televisión",0.014],["Premios por competencias",1.04],["Venta de Jugadores",0.342],["Otros ingresos",0.303]] },
+      { id:"kuressaare-ee", revenue:0.299, reportType:"official_balance_sheet",
+        sourceId:"kuressaare-ee-aruanne-2022",
+        mix:[["Comercial / Sponsors",0.005],["Estadio",0],["Premios por competencias",0.051],["Venta de Jugadores",0.065],["Otros ingresos",0.178]] },
     ],
   },
   2021: {
