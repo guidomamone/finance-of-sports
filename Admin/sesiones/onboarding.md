@@ -107,3 +107,8 @@ j) DATOS (no script): Estonia no tiene ligas en `data/leagues.js`; propuesto `ee
   p) Ceros reales que se repiten cada año (Televisión y Estadio en los clubes estonios chicos, Cuotas sociales en Beerschot): el ajuste
      `cero-real` es por documento y vuelve a frenar cada año; y el perfil del club (socios, otros deportes) se pregunta de nuevo en cada
      documento hasta que se contesta. Un cero real confirmado del club debería valer para sus otros años del mismo formato.
+  q) El ensayo de lote.mjs cobra la categorización (~US$ 0,03) de TODOS los documentos de la lista, también los que ya están en el sitio o
+     ya categorizados: lote 91 con 26 años en el sitio y el resto ya categorizado sigue estimando US$ 1,62.
+- Lote 91, segunda corrida: 22 años de Estonia escritos (26 en el sitio contando los 2025). Cola contestada en dos vueltas (97 + 49 casos,
+  subagentes Sonnet revisados por Claude); 37 ceros reales de TV y estadio con cita; Narva Trans consolidado a nivel club (2021 rehecho);
+  duda al club: FCI Levadia, "Liikmemaks" 2019-2020.
