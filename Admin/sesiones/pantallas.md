@@ -71,6 +71,12 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
   que estar en finanzas"; link de salto, bloque o fila de la ficha, a decidir con él). Datos por club y temporada: estadio, capacidad,
   sponsor de camiseta (frente) y marca técnica, con el link a la versión exacta de la página de Wikipedia de la temporada; sin monto. Los
   junta fos-datos y todavía no existen: no armar la pantalla hasta que fos-datos avise el formato y el archivo.
+- To-do 282 (pedido de Guido vía fos-finanzas, 2026-10-18): quién auditó cada balance y qué dice el informe, en Finanzas "y en liga si la
+  liga fue la auditada" (preguntarle a Guido qué quiere decir). Dato de finanzas, en piloto con 20 balances, sin commit: `data/auditoria/
+  _paises.js` (`window.AUDITORIA_PAISES`) y `data/auditoria/<país>.js` (`window.CLUB_AUDITORIA[clubId][anio] = { auditor: { nombre, tipo:
+  'firma'|'persona'|'organismo', legal? } | null, dictamen: 'sin_salvedades'|'con_salvedades'|'adverso'|'abstencion'|'sin_informe',
+  continuidad: bool, fuente: { md, linea } | null }`). Link "ver en el balance" a `fuente.md`, como en Estructura. Vocabulario
+  provisorio. Mockup antes de codear; esperar el hash de finanzas.
 
 ### Qué cambió, 271 (para CHANGELOG)
 
