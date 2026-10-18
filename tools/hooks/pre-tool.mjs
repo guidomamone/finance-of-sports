@@ -12,6 +12,7 @@
 //                            del commit lo saltea: solo con el ok de Guido, para un hallazgo que ya venía de main.
 //   skills-con-ok            escribir en .claude/skills/ (Edit, Write o un Bash que escribe) le pide permiso a Guido, aun en modo automático:
 //                            las skills no se editan sin mostrarle el texto y esperar su ok.
+//   push-con-ok              `git push` le pide permiso a Guido cada vez: un push a main despliega en Netlify (free tier, ~25 deploys/mes).
 //
 // Entrada: el JSON del hook por stdin. Salida: nada (sigue normal) o el JSON de PreToolUse con permissionDecision "deny" / "ask".
 // ============================================================================
@@ -67,6 +68,11 @@ function skillsConOk(cmd) {
   if (toca) decidir('ask', 'Esto escribe en .claude/skills/. Las skills no se editan sin el ok de Guido: ¿ya vio el texto del cambio en el chat?');
 }
 
+function pushConOk(cmd) {
+  if (GIT_SUB('push').test(cmd)) decidir('ask', 'git push necesita el ok explícito de Guido cada vez (un push a main despliega el sitio en Netlify).');
+}
+
 const cmd = herramienta === 'Bash' ? params.command || '' : '';
 skillsConOk(cmd);
+pushConOk(cmd);
 if (herramienta === 'Bash') auditAntesDelCommit(cmd);

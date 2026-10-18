@@ -12,6 +12,7 @@ To-dos de la sesión, en orden: 250 (hooks), 244 (licencia), 300 (auditoría pro
     ASSET_V: `audit.js` ya da P1 `asset-v-sin-subir` si cambió js/ o data/ sin tocar index.html.
   - `skills-con-ok`: escribir en `.claude/skills/` (Edit, Write, o un Bash con `sed -i`, `>`, `tee`, `mv`, `cp`, `rm`…) le pide permiso a
     Guido con el motivo, aun en modo automático. Leer (cat, grep, `sed -n`) no pregunta.
+  - `push-con-ok`: `git push` le pide permiso a Guido cada vez (`git stash push` no).
 
 ## Qué deja de ser cierto en ESTADO
 
