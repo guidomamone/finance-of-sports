@@ -15,6 +15,21 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 719 — Merge de finanzas: estructura del club y grupos multiclub (2026-10-18)
+
+Merge a mano: `data/lang/en.js` con los bloques de las dos ramas (pantallas y finanzas), `index.html` con los scripts de finanzas;
+generados regenerados, ASSET_V 1262, P0 0 / P1 0. La rama sigue abierta (281, 282, 242).
+
+- To-do 280 a: registro `Admin/registros/entidades.jsonl` con cita obligatoria y `tools/entidades.mjs` (verifica citas, cargas, ids y
+  ciclos de control; genera `data/entidades/`; `audit.js` da P1 si queda viejo). Primeros casos: Chelsea 2025 (BlueCo) e Inter 2025.
+- To-do 280 b: tarjeta "De quién son estos números" en Finanzas (`js/finanzas-estructura.js`).
+- To-do 280 c: página del grupo multiclub (`js/grupo.js`, sección `#grupo`); se llega desde la tarjeta Estructura. La URL y el buscador
+  los engancha pantallas.
+- To-do 281, el dato: línea `ingresos` en el registro; piloto Portugal (Vitória, Tondela, Braga).
+- Reglas nuevas en CONVENCIONES-DATOS (entidades, grupos, ingresos de otras entidades) y una excepción en PANTALLA (link "ver en el
+  balance" en la tarjeta Estructura).
+- TODO: fuera el 280; el 281 queda con lo que falta.
+
 ## Versión 718 — Merge de pantallas: Ligas con estimados y consolidado (2026-10-18)
 
 `node tools/worktree.mjs mergear pantallas`, sin conflictos; P0 0 / P1 0; estimar y faltantes-liga "al día". La rama sigue abierta

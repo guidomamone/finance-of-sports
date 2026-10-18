@@ -353,3 +353,15 @@ Decisión de Guido (2026-10-17, limpieza de las transcripciones de Países Bajos
 ejercicio (p. ej. el jaarverslag del club y el depósito en la KvK): entra el que trae el estado de resultados completo de la entidad del
 club; si los dos lo traen, el más completo (con notas). El otro va a `Admin/registros/documentos-descartados.txt`. Los idénticos byte a
 byte no hace falta: el inventario los marca `duplicado`.
+
+## REGLA: entidades del club, grupos multiclub e ingresos de las otras entidades
+
+Decisiones de Guido (2026-10-18). El registro es `Admin/registros/entidades.jsonl` (cada línea con su cita) y lo verifica
+`tools/entidades.mjs`.
+
+- Ingresos de una entidad que no se carga: todos los renglones de ingresos de su estado de resultados, sin la ganancia por su parte de la
+  sociedad que se carga (en Portugal, "Ganhos imputados de subsidiárias"), que se contaría dos veces. Con la misma moneda y el mismo
+  cierre que el club, se muestra qué % son de los ingresos del club.
+- El total de un grupo multiclub suma solo los clubes que el grupo controla (más del 50 %); las participaciones menores se listan aparte.
+- La pertenencia de un club a un grupo puede citarse con una fuente externa (url y fecha) cuando el balance no lo dice.
+- Un dueño persona (Marinakis, Friedkin) cuenta como grupo, igual que una empresa, con el nombre que imprimen los documentos.

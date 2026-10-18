@@ -46,3 +46,4 @@ Qué hay hoy:
 - `sesion-onboarding-2026-10-18.md` — el cierre de la rama `onboarding`: limpieza de las transcripciones por subagentes, gestiones, altas y los to-dos 280 a 287. Archivado en la 715.
 - `sesion-pipeline-2026-10-18.md` — el cierre de la sesión `pipeline`: ajuste por año, deuda italiana, Batch API y los to-dos 288 a 291. Archivado en la 716.
 - `sesion-pantallas-2026-10-18.md` — copia del cierre de pantallas (293, 275, 274, 272 y el estimado de club nuevo), pasada en la 718; la rama siguió con el 271 y el grupo.
+- `sesion-finanzas-2026-10-18.md` — copia del cierre de finanzas (280 y el dato del 281), pasada en la 719; la rama siguió con 281, 282 y 242.

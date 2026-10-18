@@ -205,6 +205,10 @@ sacó `sourceNote` de los 3 mapas de datos, donde quedaba contenido explicativo 
 cita (ej. la nota de "base de caja" de Racing), se renombró a `note` y se le sacó la frase "Fuente:
 ..." del principio, dejando solo la explicación.
 
+**Excepción (aprobada por Guido, 2026-10-18): la tarjeta Estructura y la página del grupo multiclub.** Cada entidad lleva un link "ver
+en el balance" (o "ver en <dominio>" para una cita externa) a la transcripción, sin la palabra "Fuente:": la cita por entidad es el dato
+que pide el periodista. No se extiende a otros cards.
+
 ## Verificar en el browser de verdad, no solo revisar los números a mano (ex §8)
 
 La cuenta a mano (verificar que `revenueLines`/`expenseLines` suman el total impreso del documento)

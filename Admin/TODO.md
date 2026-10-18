@@ -24,7 +24,7 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 271 y enganchar la página del grupo (280 c) · finanzas 280, 281, 282, 242, 294 · pipeline 289, 290, 288, 232, 279, 286, 287 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
+Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 271 y enganchar la página del grupo (280 c) · finanzas 281, 282, 242, 294 · pipeline 289, 290, 288, 232, 279, 286, 287 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
 datos-sourcing 276, 277, 273, 252 · Reino Unido (261) en su propia sesión · la principal: 268, 291, 250, 244 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
@@ -58,8 +58,8 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 273: estadio y sponsor de cada ejercicio (definir los campos con Guido antes de juntar)
 
 **E. Pantallas**
-* 280, 281 y 282: Finanzas, las entidades del club, lo de las otras entidades y quién audita
-* 294: llenar el registro de entidades (después del merge de finanzas)
+* 281 y 282: Finanzas, los ingresos de las otras entidades (falta transcribir y la pantalla) y quién audita
+* 294: llenar el registro de entidades
 
 **E2. Distribución (depende de 246)**
 * 271: lo que falta del estado en la URL (moneda, inflación, formato y Comparar)
@@ -237,14 +237,10 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 273. ESTADIO Y SPONSOR DE CADA EJERCICIO (pedido de Guido, 2026-10-18). Conseguir, por club y ejercicio, el estadio (cuál, y su capacidad)
    y el sponsor principal, con su fuente, como contexto de los números. Definir con Guido qué campos exactamente (¿sponsor de camiseta?
    ¿monto, si es público?) y de dónde salen antes de juntar nada.
-280. FINANZAS: LAS ENTIDADES DEL CLUB (pedido de Guido, 2026-10-17). Listar todas las entidades del club (nombres legales; SAD, SDUQ, AS,
-   FLI, holding, fundación), cuál es la que se carga y cuáles no, con una nota explicativa para periodistas. Casos: Viking Fotball AS /
-   Viking Fotballklubb; Molde Fotballklubb / Molde Fotball AS; St. Gallen AG / Event AG; Luzern FCL Holding AG / FC Luzern-Innerschweiz
-   AG; Basel AG / Verein; NEC Holding / Stichting Maatschappelijk; VVV-Venlo B.V. / Foundation; Pardubice a.s. / FK Junior z.s.
-   Detalle con citas: `Admin/registros/cola-borradores/altas-2026-10-17.md`.
-281. FINANZAS: INGRESOS RESUMIDOS DE LAS OTRAS ENTIDADES (pedido de Guido, 2026-10-17). Los documentos ya están, casi todos en
-   `documentos-descartados.txt`: Molde Fotball AS, VVV Foundation, NEC Stichting Maatschappelijk, Basel Verein, St. Gallen Event AG,
-   FK Junior Pardubice z.s., RKC Stichting Samen. Definir qué se muestra y de dónde se lee. Va después del 280.
+281. FINANZAS: INGRESOS RESUMIDOS DE LAS OTRAS ENTIDADES (pedido de Guido, 2026-10-17). El dato ya está (línea `ingresos` del registro de
+   entidades, piloto Portugal: Vitória 2021/22, Tondela 2021, Braga). Falta: transcribir por subagentes los ~17 documentos de entidades de
+   clubes portugueses publicados sin `.md` (Porto 3, Braga 2022-23, Marítimo 5, Belenenses, Chaves, Vizela 2, Académica, União de
+   Leiria) y sumar su línea de ingresos; y la pantalla, con mockup (artboard "Vitória y Tondela (to-do 281)" de "Pantallas FoS").
 282. FINANZAS: QUIÉN AUDITA Y QUÉ DICE EL INFORME (pedido de Guido, 2026-10-17). El auditor (p. ej. Deloitte) y el dictamen en pocas
    palabras (sin salvedades / con salvedades / incertidumbre sobre la continuidad). El dato está en los `.md` de casi todos los documentos.
 283. VÅLERENGA Y AALESUND: SUMAR EL AS Y EL FLI EN UN SOLO AÑO (pedido de Guido, 2026-10-17). El AS tiene los ingresos comerciales y el
@@ -289,7 +285,8 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    clubes cargados: City Football Group (Man City, Girona), Marinakis (Forest, Olympiacos, Rio Ave), Friedkin (Roma, Everton), 777
    Partners (Genoa, Standard, Vasco), Eagle Football (Botafogo, parte de Crystal Palace); (4) los casos de
    `Admin/registros/cola-borradores/altas-2026-10-17.md`, cuando esos clubes estén publicados. Con subagentes: cada línea lleva una cita
-   del .md, o url y fecha si es externa, y `tools/entidades.mjs` la verifica.
+   del .md, o url y fecha si es externa, y `tools/entidades.mjs` la verifica. Visto de paso: Qatar Sports Investments (dueño del
+   PSG) tiene 29,60 % de la Braga SAD (Relato_rio-Contas-2022-23-SAD.md L1613), participación menor de un grupo.
 270. ESTIMAR UN CLUB QUE NUNCA CARGAMOS: VOLVER A MEDIR (pedido de Guido, 2026-10-17). Está PRENDIDO desde el 2026-10-18 (decisión de
    Guido: en Ligas todo club sin balance figura como estimado), con 50% de error (regresión sin historia: mediana de la liga-año, división,
    posición en la tabla). Volver a medir (`node tools/estimar.mjs --medir`) cuando haya más clubes cargados. Variable sin medir: partidos
