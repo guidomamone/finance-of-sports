@@ -365,3 +365,13 @@ Decisiones de Guido (2026-10-18). El registro es `Admin/registros/entidades.json
 - El total de un grupo multiclub suma solo los clubes que el grupo controla (más del 50 %); las participaciones menores se listan aparte.
 - La pertenencia de un club a un grupo puede citarse con una fuente externa (url y fecha) cuando el balance no lo dice.
 - Un dueño persona (Marinakis, Friedkin) cuenta como grupo, igual que una empresa, con el nombre que imprimen los documentos.
+
+## REGLA: el dictamen del auditor (registro de auditoría)
+
+Criterio de Guido (2026-10-18), también en el encabezado de `tools/auditoria.mjs`. El vocabulario es provisorio y se ajusta con los casos.
+
+- Un párrafo de énfasis sobre la continuidad sin "incertidumbre material" no es duda sobre la continuidad (`continuidad: false`).
+- Alcanza el título del párrafo para clasificar; manda el párrafo de opinión sobre el título de la base.
+- Una abstención parcial es `abstencion`.
+- Un club-año sin línea es "no sabemos", no "sin informe"; un informe que existe pero no está transcripto (`falta_transcripcion`) no se
+  publica y cuenta como pendiente. Un auditor persona va con su nombre como lo imprime el documento.

@@ -144,12 +144,12 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 
 - Finanzas tiene la tarjeta Estructura ("De quién son estos números": entidad y perímetro, cadena de dueños, controladas, clubes del
   mismo grupo y nota para periodistas) y la página del grupo multiclub (`?tab=grupo`, clubes que controla y total por año), desde
-  `data/entidades/` (lo genera `tools/entidades.mjs` del registro `Admin/registros/entidades.jsonl`, con cita por línea). Hoy hay pocos
-  clubes en el registro (to-do 294). Donde el registro los tiene, la tarjeta muestra también los ingresos de la otra entidad del club.
+  `data/entidades/` (lo genera `tools/entidades.mjs` del registro `Admin/registros/entidades.jsonl`, con cita por línea). El registro tiene
+  44 clubes y 9 grupos multiclub (to-do 294). Donde el registro los tiene, la tarjeta muestra también los ingresos de la otra entidad del club.
 - Para periodistas: la tarjeta "Citar y descargar" de Finanzas (cita sugerida de lo que se ve, copiar la cita o el link, CSV por rubro y
   ejercicio con moneda, tipo de cambio y documento; sin dato va vacío, nunca 0) y la página pública `metodologia.html` (link en el pie).
-- Quién auditó cada balance: `Admin/registros/auditoria.jsonl` (con citas) y `tools/auditoria.mjs`, que genera `data/auditoria/` (por
-  ahora un piloto; to-do 282). En Finanzas, la tarjeta "Quién auditó estos números"; un club-año sin línea dice "Todavía no lo
+- Quién auditó cada balance: `Admin/registros/auditoria.jsonl` (con citas) y `tools/auditoria.mjs`, que genera `data/auditoria/` (902 de
+  925 balances; to-do 282). En Finanzas, la tarjeta "Quién auditó estos números"; un club-año sin línea dice "Todavía no lo
   revisamos", no "sin informe", y sin ningún dato del club la tarjeta se esconde.
 - Finanzas muestra varios ejercicios a la vez: el título es el club; cards de ejercicios (default, los últimos 5 con balance) y
   fila de gestión; KPIs con comparación y sparkline; gráfico de evolución arriba de la tabla; Estado de resultados y Deuda con una

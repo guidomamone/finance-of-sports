@@ -24,7 +24,7 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 273, 296 (pantalla, cuando esté el dato) y 282 en Ligas (cuando haya el dato del 295) · finanzas 281, 282, 294 · pipeline 289, 290, 288, 232, 279, 286, 287 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
+Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 273, 296 (pantalla, cuando esté el dato) y 282 en Ligas (cuando haya el dato del 295) · finanzas cerrada (lo que queda del 281, 282 y 294, sin asignar) · pipeline 289, 290, 288, 232, 279, 286, 287 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
 datos-sourcing 276, 277, 273, 252, 295 · Reino Unido (261) en su propia sesión · la principal: 268, 291, 250, 244 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
@@ -60,9 +60,9 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 296: página por sponsor (espera el índice de sponsors de fos-datos)
 
 **E. Pantallas**
-* 282: quién audita (los ~905 balances que faltan; la tarjeta de Finanzas ya está)
+* 282: quién audita, lo que queda (72 informes a conseguir, Spartak, OCR, revisores no plenos)
 * 281: ingresos de las otras entidades (falta transcribir los documentos de Portugal)
-* 294: llenar el registro de entidades
+* 294: registro de entidades, lo que queda (ajustes de año y dudas)
 
 **E2. Distribución (depende de 246)**
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
@@ -239,12 +239,15 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    sponsors con nombres unificados que genera fos-datos (no armarla sobre `data/contexto/`). Después del 273.
 281. FINANZAS: INGRESOS DE LAS OTRAS ENTIDADES (pedido de Guido, 2026-10-17). El dato y la pantalla están (tarjeta Estructura, piloto
    Portugal). Falta: transcribir por subagentes los ~17 documentos de entidades de clubes portugueses publicados sin `.md` (Porto 3, Braga
-   2022-23, Marítimo 5, Belenenses, Chaves, Vizela 2, Académica, União de Leiria) y cargar su línea de ingresos (va con el 294).
-282. QUIÉN AUDITA Y QUÉ DICE EL INFORME (pedido de Guido, 2026-10-17). El dato está en main en piloto: `Admin/registros/auditoria.jsonl`
-   y `tools/auditoria.mjs` (verifica citas, genera `data/auditoria/`), 19 balances de 16 países. Falta: los ~905 balances restantes por
-   subagentes, en tandas por país (`node tools/auditoria.mjs --pendientes`); Católica 2010, retranscribir el informe de los auditores
-   (falta en el .md); que el pipeline exija la línea al dar de alta un club (fos-pipeline); en Ligas, la auditoría
-   de la entidad organizadora, cuando haya balances (295). La tarjeta de Finanzas ya está. Un club-año sin línea es "no sabemos", no "sin informe". El vocabulario del dictamen es provisorio.
+   2022-23, Marítimo 5, Belenenses, Chaves, Vizela 2, Académica, União de Leiria) y cargar su línea de ingresos (va con el 294). Chaves 2022-23: el informe del auditor de la
+   asociación está en Relatorio_Atividades-e-Contas-2022_2023.pdf, págs. 36-39 (RCVM, incertidumbre material).
+282. QUIÉN AUDITA: LO QUE QUEDA (pedido de Guido, 2026-10-17). El registro cubre 902 de 925 balances y la tarjeta de Finanzas está.
+   Falta: (a) sourcing de los 72 informes del auditor que no están en ningún PDF nuestro (`node tools/auditoria.mjs --pendientes`, nota
+   "FALTA EN EL PDF": Lazio, Napoli, Torino, Hellas Verona, Roma, Juventus, Hamburgo, varios de Portugal…); (b) Spartak 2022, transcribir el
+   informe palabra por palabra; (c) los 23 balances sin .md; (d) nombres de firma tomados de OCR ruidoso, verificar contra el PDF (Union SG
+   2025, Getafe 2024-2025, Elche 2025, Goiás 2008, Godoy Cruz 2020); (e) revisores que firman sin ser auditoría plena (Criciúma 2015-2019,
+   Osijek 2025, Como 2025, Kifisia 2022-2024, Club América 2025): decidir cómo se muestran; (f) que el pipeline exija la línea al dar de
+   alta un club (fos-pipeline); (g) en Ligas, la entidad organizadora (295).
 295. BALANCES DE LAS ENTIDADES QUE ORGANIZAN LAS LIGAS (sale del 282; aclaración de Guido, 2026-10-18). En Ligas, la auditoría que se
    muestra es la del balance propio de la entidad organizadora (AFA, LFP, Premier League, Lega Serie A…). No hay ninguno en el proyecto
    (las carpetas `Clubes/*/_…` son informes agregados de liga). Sourcing de esos balances con su informe del auditor; después, su línea en
@@ -285,14 +288,12 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    está hecha, ver el 165 b1). En este orden: validar `Admin/lotes/subagentes-validar.txt` (~US$ 3,47); transcribir con Mistral
    `Admin/lotes/mistral-despues-del-merge.txt` (36 documentos, ~US$ 6); lotes de carga por país (el alta con un solo año); y decidir
    subagentes o Mistral para los 319 `.md` viejos sin tablas de `Admin/lotes/sin-tablas-6paises.txt`.
-294. LLENAR EL REGISTRO DE ENTIDADES (sigue al 280; pedido de Guido, 2026-10-18, vía fos-finanzas). `Admin/registros/entidades.jsonl`
-   (llega con el merge de la rama finanzas) tiene solo Chelsea 2025 e Inter 2025. Faltan: (1) los otros ejercicios de Chelsea e Inter
-   (Suning antes de 2024); (2) Portugal, club asociación y SAD: los avisos de `node tools/entidades.mjs`; (3) los grupos con dos o más
-   clubes cargados: City Football Group (Man City, Girona), Marinakis (Forest, Olympiacos, Rio Ave), Friedkin (Roma, Everton), 777
-   Partners (Genoa, Standard, Vasco), Eagle Football (Botafogo, parte de Crystal Palace); (4) los casos de
-   `Admin/registros/cola-borradores/altas-2026-10-17.md`, cuando esos clubes estén publicados. Con subagentes: cada línea lleva una cita
-   del .md, o url y fecha si es externa, y `tools/entidades.mjs` la verifica. Visto de paso: Qatar Sports Investments (dueño del
-   PSG) tiene 29,60 % de la Braga SAD (Relato_rio-Contas-2022-23-SAD.md L1613), participación menor de un grupo.
+294. REGISTRO DE ENTIDADES: LO QUE QUEDA (pedido de Guido, 2026-10-18). Ya tiene 44 clubes y 9 grupos multiclub (219 entidades, 326
+   relaciones, con cita verificada). Falta: (a) un ajuste `anio` en ajustes-manuales para las cargas que `tools/quien.mjs` no fecha por el
+   nombre del PDF (Boavista 2024 `RCSAD-23-24_1-3`, Marítimo 2024 `…30jun24`, Portimonense 2022-2025 `Relatorio-Contas-21-22_assinado` y
+   hermanos); (b) dudas de los subagentes: cómo se conecta Manchester City Limited con CFG (Newton Investment como "ultimate parent"), Bahía
+   y Yokohama (clubes del sitio que CFG no lista), Dan Friedkin → The Friedkin Group, la frase del PSG en QSI, los clubes externos de 777
+   sin fecha de salida; (c) los casos de `Admin/registros/cola-borradores/altas-2026-10-17.md` cuando esos clubes estén publicados.
 270. ESTIMAR UN CLUB QUE NUNCA CARGAMOS: VOLVER A MEDIR (pedido de Guido, 2026-10-17). Está PRENDIDO desde el 2026-10-18 (decisión de
    Guido: en Ligas todo club sin balance figura como estimado), con 50% de error (regresión sin historia: mediana de la liga-año, división,
    posición en la tabla). Volver a medir (`node tools/estimar.mjs --medir`) cuando haya más clubes cargados. Variable sin medir: partidos

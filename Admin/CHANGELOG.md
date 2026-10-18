@@ -15,6 +15,18 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 724 — Merge de finanzas, cierre de la sesión: auditoría de 902 balances y 44 clubes con estructura (2026-10-18)
+
+Merge a mano: `index.html` con main (los scripts de auditoría y citar que la rama no tenía; finanzas solo había cambiado la versión);
+generados regenerados, ASSET_V 1270, P0 0 / P1 0. Probado: Vitória con Auditoría, Estructura y Citar. La sesión de finanzas cerró.
+
+- To-do 282: el registro de auditoría cubre 902 de 925 balances (81 tandas de subagentes Sonnet por país, citas verificadas): 509 sin
+  salvedades, 144 con salvedades, 7 abstenciones, 139 sin informe en el documento, 116 con incertidumbre sobre la continuidad. 30
+  informes que faltaban, transcriptos (`<pdf>.informe-auditor.md`). Criterio del dictamen en CONVENCIONES-DATOS.
+- To-do 294: registro de entidades con 44 clubes y 9 grupos multiclub (BlueCo, City Football Group, Marinakis, Friedkin, 777 Partners,
+  Eagle Football, Suning, QSI, Black Knight), 219 entidades y 326 relaciones.
+- TODO: 282 y 294 quedan con lo que falta; nota de Chaves en el 281.
+
 ## Versión 723 — Merge de pantallas: citar, descargar y metodología (2026-10-18)
 
 `node tools/worktree.mjs mergear pantallas`, sin conflictos, P0 0 / P1 0, ASSET_V 1269.

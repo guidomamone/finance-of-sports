@@ -1,3 +1,5 @@
+> ARCHIVADO (Versión 724, 2026-10-18): cierre de la sesión finanzas (worktree fos-finanzas), pasado a TODO, CHANGELOG, ESTADO y CONVENCIONES-DATOS. La sesión cerró.
+
 # Sesión `finanzas` (worktree fos-finanzas): cierre para la principal
 
 ## Qué cambió (para CHANGELOG)

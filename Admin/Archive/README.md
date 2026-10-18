@@ -49,3 +49,4 @@ Qué hay hoy:
 - `sesion-finanzas-2026-10-18.md` — copia del cierre de finanzas (280 y el dato del 281), pasada en la 719; la rama siguió con 281, 282 y 242.
 - `sesion-pantallas-2026-10-18-b.md` — segunda copia del cierre de pantallas (el grupo en la URL y el 271), pasada en la 720.
 - `sesion-finanzas-2026-10-18-c.md` y `sesion-pantallas-2026-10-18-c.md` — copias de los cierres en el merge de la 721 (281 pantalla, 282 dato).
+- `sesion-finanzas-2026-10-18-final.md` — el cierre completo de la sesión finanzas (280 a 282, 294). Archivado en la 724.
