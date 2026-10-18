@@ -108,6 +108,63 @@ tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-18): null, SIN VERIFICAR (sin caché de rosters para ee (tools/club-league-reference/ee.json)).
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/Narva Trans/aruanne-2024.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/Narva Trans/aruanne-2024.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Liikmetelt saadud tasud | pág. 5, precedente |
+| 2 | sh eraldis riigieelarvest | pág. 13, precedente |
+| 3 | sh eraldis kohaliku omavalitsuse eelarvest | pág. 13, precedente |
+| 4 | EJLiidu toetused | pág. 13, precedente |
+| 5 | UEFA solidaarsustoetus noorte- ja kogukonnatööle | pág. 13, precedente |
+| 6 | Mitteseotud osapoolte toetused/annetused | pág. 13, precedente |
+| 7 | Seotud osapoolte toetused/annetused | pág. 13, precedente |
+| 8 | UEFA solidaarsustoetus osalemise eest UEFA klubivõistlustel | pág. 13, Jev 1 |
+| 9 | Väljaku äärde ja reklaamtahvlitele paigaldatud reklaam | pág. 13, precedente |
+| 10 | Piletitulu | pág. 13, precedente |
+| 11 | Klubi sümboolikaga toodete müügitulu | pág. 13, precedente |
+| 12 | Muud klassifitseerimata äritulud | pág. 13, precedente |
+| 13 | Tulu mängijaõiguste müügist | pág. 13, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Kulu mängijaõiguste soetamisest ja ülemineku registreerimistasudest | pág. 14, Claude 0.93 |
+| 2 | Kodumängu korralduskulud | pág. 14, precedente |
+| 3 | Võistkondade välissõitude- ja lähetuskulud | pág. 14, precedente |
+| 4 | Klubile kuuluvate ja tema poolt renditud hoonete ja rajatistega seotud kulud | pág. 14, precedente |
+| 5 | Klubi administreerimiskulud | pág. 14, precedente |
+| 6 | Mänguvormid jm varustus | pág. 14, precedente |
+| 7 | Muu äritegevuse kulu/koolitus, riigilõiv | pág. 14, Jev 0.96 |
+| 8 | Muud klassifitseerimata tegevuskulud | pág. 14, Jev 0.97 |
+| 9 | Eesti meistrivõistluste osavõtutasu | pág. 14, precedente |
+| 10 | Meditsiinitarvikud- ja teenused | pág. 14, precedente |
+| 11 | Muud | pág. 14, Jev 1 |
+| 12 | Mängijate palgakulu | pág. 14, precedente |
+| 13 | Sotsiaalmaks mängijate töötasudelt | pág. 14, precedente |
+| 14 | Mängijatele makstav sportlasetoetus | pág. 14, precedente |
+| 15 | Mängijatele makstav EJL arengustipendium | pág. 14, Claude 0.92 |
+| 16 | Muu personali palgakulu | pág. 14, precedente |
+| 17 | Sotsiaalmaks muu personali töötasudelt | pág. 14, Jev 0.96 |
+| 18 | Põhivarade kulum ja väärtuse langus | pág. 5, precedente |
+| 19 | Muud kulud | pág. 5, precedente |
+
+### Meta
+
+```text
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("## Tulemiaruanne", .md L79) (Claude 2026-10-18)
+2024: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cero-real = Televisión. fila 'Tulu ülekandeõiguste müügist' en 0 en 2024 (L458; los 3.000 son de la columna 2023) (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2019
 
 ### Ingresos
@@ -179,4 +236,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Narva Trans/aruanne-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### narvatrans-ee-aruanne-2024
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Narva Trans/aruanne-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

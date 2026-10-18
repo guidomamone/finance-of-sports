@@ -172,7 +172,7 @@ window.CLUB_INDEX = {
   "nacional-pt": {"n":"Nacional","c":"PT","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "nagoyagrampus": {"n":"Nagoya Grampus","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "napoli-it": {"n":"Napoli","c":"IT","q":"full","y":8,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"]]},
-  "narvatrans-ee": {"n":"Narva Trans","c":"EE","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2019,"official_balance_sheet"]]},
+  "narvatrans-ee": {"n":"Narva Trans","c":"EE","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2019,"official_balance_sheet"]]},
   "newcastle-gb": {"n":"Newcastle United","c":"GB","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "newells-ar": {"n":"Newell's Old Boys","c":"AR","q":"full","y":1,"last":2019,"yrs":[[2019,"official_balance_sheet"]]},
   "nommekalju-ee": {"n":"Nõmme Kalju","c":"EE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
