@@ -166,6 +166,8 @@
   Thornton, BDO Italia, BDO Audit Services; `torinofc.it/relazioni_e_bilanci` publica el informe de cada año), Hellas Verona 2025
   (Audirevi; ÉNFASIS CONTINUIDAD) y Cremonese 2022-2025 (EY, después BDO Italia; 2022 ÉNFASIS CONTINUIDAD; de la mediateca de WordPress,
   `wp-json/wp/v2/media?search=revisione`). Todos sin salvedades, con texto, transcriptos con pdftotext.
+- Skills (con el ok de Guido): `club-sourcing/paises/Italia.md` suma dónde publica cada club el informe del auditor; `club-sourcing/SKILL.md`,
+  que el informe suele ser un documento aparte; `worktree.md`, el rsync con `--no-links`.
 - FALTA EN EL PDF: 88 a 60. Los PDF nuevos, copiados a la carpeta principal (rsync `--no-links`). ASSET_V 1299 en la rama.
 
 ### Qué queda (para TODO)
@@ -183,7 +185,7 @@
   Verona 2020-2024 (el sitio solo lista el último año; Wayback y las rutas probables del CDN, nada) y Bologna 2025 (Firecrawl `/map` del
   sitio no encuentra el informe). Candidatos a mail.
 
-### Gotcha (para la skill de arranque, `worktree.md`; no la edité sin tu ok)
+### Gotcha (ya escrito en `worktree.md` con el ok de Guido)
 
 - Copiar PDF del worktree a la carpeta principal con `rsync -a` copia también los symlinks que crea `worktree.mjs preparar`, que apuntan
   a la principal: el archivo real de la principal queda reemplazado por un link a sí mismo. Pasó con dos PDF de Lazio (los informes del
