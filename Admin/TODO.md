@@ -27,7 +27,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 1. **Caja y deuda**: lo que falta está frenado por el documento o por la escala del año (lista en el 260).
    - 289: la escala del año (Leipzig 2023-2024, HSV 2024). 290: Genoa 2022. 291: duda del factoring (Guido decide).
 
-2. **Transcripciones por subagentes** (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia). La limpieza está hecha. Después del merge de pipeline, en este orden:
+2. **Transcripciones por subagentes** (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia). La limpieza está hecha y pipeline ya está mergeada; en este orden:
    - validar `Admin/lotes/subagentes-validar.txt` (~US$ 3,47);
    - transcribir con Mistral `Admin/lotes/mistral-despues-del-merge.txt` (36 documentos, ~US$ 6);
    - lotes de carga por país (el alta con un solo año);
