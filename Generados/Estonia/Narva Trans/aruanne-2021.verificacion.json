@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Estonia/Narva Trans/aruanne-2021.pdf",
  "md": "Clubes/Estonia/Narva Trans/aruanne-2021.md",
- "generado": "2026-10-18T18:34:28.974Z",
- "estado": "cola",
+ "generado": "2026-10-18T18:42:55.236Z",
+ "estado": "ok",
  "clubId": "narvatrans-ee",
  "year": 2021,
  "escala": {
@@ -23,12 +23,7 @@
    "fecha": "2026-10-18"
   }
  ],
- "cola": [
-  "9c35dd4",
-  "c7ff245",
-  "66017e7",
-  "66017e7"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -75,6 +70,8 @@
   "la nota de \"Tulu ettevõtlusest\" no suma el renglón (0.071924 contra 0.071924, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Mitmesugused tegevuskulud\" no suma el renglón (0.111982 contra 0.118794, sumando sus renglones): quedó el renglón del estado",
   "duda de localizar ya contestada para el club (perimetro, \"-\"): corregir no, en aruanne-2021.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"Tulu ettevõtlusest\"): aceptar, en aruanne-2021.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"Tulu ettevõtlusest\"): aceptar, en aruanne-2021.pdf",
   "duda de extraer que no afecta la carga: 3 444+1 638+1 721 = 6 803 (L449), por lo que L453 no forma parte de Energia."
  ],
  "reintentar": [

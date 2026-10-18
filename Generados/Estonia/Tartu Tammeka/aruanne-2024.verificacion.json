@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Estonia/Tartu Tammeka/aruanne-2024.pdf",
  "md": "Clubes/Estonia/Tartu Tammeka/aruanne-2024.md",
- "generado": "2026-10-18T18:34:29.374Z",
+ "generado": "2026-10-18T18:42:55.460Z",
  "estado": "ok",
  "clubId": "tartutammeka-ee",
  "year": 2024,
@@ -18,6 +18,16 @@
    "valor": "official_balance_sheet",
    "linea": null,
    "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L144) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Tartu Tammeka/aruanne-2024.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "sin ninguna fila de ese rubro en el estado ni en las notas; mismo caso que el 2025 del club (Claude 2026-10-18)",
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-18"

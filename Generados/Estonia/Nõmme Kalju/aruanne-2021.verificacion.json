@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2021.pdf",
  "md": "Clubes/Estonia/Nõmme Kalju/aruanne-2021.md",
- "generado": "2026-10-18T18:34:29.095Z",
+ "generado": "2026-10-18T18:42:55.274Z",
  "estado": "ok",
  "clubId": "nommekalju-ee",
  "year": 2021,
@@ -18,6 +18,16 @@
    "valor": "official_balance_sheet",
    "linea": null,
    "motivo": "majandusaasta aruanne anual con estado de resultados (\"## Tulemiaruanne\", .md L172) (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Estonia/Nõmme Kalju/aruanne-2021.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "fila en 0 (L560); mismo caso que el 2025 del club (Claude 2026-10-18)",
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-18"

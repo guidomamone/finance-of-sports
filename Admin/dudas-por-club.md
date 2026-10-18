@@ -1960,3 +1960,5 @@ Ni los balances ni una búsqueda web dan las fechas; el detalle de cada caso est
   presidente nombrado; queda sin gestión (decisión de Guido, 2026-10-15) salvo que el ΓΕΜΗ diga quién la presidía.
 
 **Paide Linnameeskond (Estonia)**: en el informe 2025, Lisa 10 ("Jagatud annetused ja toetused"), ¿a quién se pagan los "Stipendiumid" (40.300 €) y los "Toetused" (391.099 €): a jugadores del primer equipo o a deportistas de la academia? Se cargaron como sueldos del plantel (wages_squad), igual que los pagos a deportistas de Nõmme Kalju y Flora (2026-10-18).
+
+**FCI Levadia (Estonia)**: en los informes 2019 y 2020, ¿a quién se paga el gasto "Liikmemaks" (323.479 € en 2019 y 72.986 € en 2020)? Es una cuota que el club PAGA (no un ingreso de socios); se cargó como gastos de administración (admin_general_expense) (2026-10-18).

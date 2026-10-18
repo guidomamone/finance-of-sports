@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Estonia/Harju JK Laagri/aruanne-2024.pdf",
  "md": "Clubes/Estonia/Harju JK Laagri/aruanne-2024.md",
- "generado": "2026-10-18T18:15:07.775Z",
+ "generado": "2026-10-18T18:42:55.193Z",
  "estado": "ok",
  "clubId": "harjujklaagri-ee",
  "year": 2024,
@@ -66,6 +66,11 @@
    "dif": 3.469446951953614e-18
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2023 de este documento suma ingresos 0.168999; el sitio tiene 0.168999"
+  },
+  {
    "nombre": "documento del año 2025",
    "ok": true,
    "detalle": "ingresos de 2024: 0.050702 en este documento y 0.050702 en aruanne-2025.pdf (columna del año anterior)"
@@ -74,16 +79,6 @@
    "nombre": "documento del año 2023",
    "ok": true,
    "detalle": "ingresos de 2023: 0.168999 en aruanne-2023.pdf y 0.168999 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
