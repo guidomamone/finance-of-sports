@@ -18,3 +18,5 @@
 - Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2022 desde `Clubes/Estonia/Tartu Tammeka/aruanne-2022.pdf` (sourceId `tartutammeka-ee-aruanne-2022`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2023 desde `Clubes/Estonia/Tartu Tammeka/aruanne-2023.pdf` (sourceId `tartutammeka-ee-aruanne-2023`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2024 desde `Clubes/Estonia/Tartu Tammeka/aruanne-2024.pdf` (sourceId `tartutammeka-ee-aruanne-2024`).
