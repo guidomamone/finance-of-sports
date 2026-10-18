@@ -263,6 +263,9 @@ Mitigaciones:
   intereses cobrados y pagados los dos en positivo; en bloque, 2021 y 2025 entraban por la tolerancia con el cobrado cargado como gasto.
   Bélgica (to-do 298 b1): el esquema NBB imprime los costos financieros (65/66B, "Kosten van schulden", "Charges des dettes") en positivo;
   están en FIN_GASTO y este escalón les pone el signo sin ajustes `fila` (Beerschot 2025).
+  Escalón "de los cuales" (to-do 298 b3): una fila que empieza con "Waarvan:", "dont", "davon", "of which", "de los cuales"... (DE_LOS_CUALES
+  de `tools/vocabulario.mjs`) es una parte de la de arriba. Si ninguna lectura cerró, se prueban la 4 y la 5 sin esas filas; compuerta,
+  cierre EXACTO. Caso: el 76A belga debajo de la Brutomarge (Lierse SK y Patro Eisden 2025), que antes pedía un ajuste `fila` en 0.
 - c) Año anterior cargado: la columna del año anterior contra lo que tiene el sitio.
 - d) Año vecino: si el documento del año siguiente ya pasó por extraer, su columna "año anterior" tiene que coincidir.
 - e) Redondeo: si solo falta menos de media unidad por fila, se agrega una fila "Diferencia de redondeo".

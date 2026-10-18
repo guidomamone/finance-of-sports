@@ -54,6 +54,12 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
   signo, ninguno empeora (Beerschot y OH Leuven pasan a cerrar); 376 documentos con los ajustes actuales, 375 idénticos (OH Leuven 2025, en la
   cola en los dos, deja de sumar dos veces los gastos); prueba-completa (358) idéntica con el archivo final.
 
+- **Las filas "Waarvan:" (to-do 298 b, parte 3).** `tools/vocabulario.mjs` DE_LOS_CUALES (nl waarvan, fr dont, de davon, it di cui, en of
+  which, es de los cuales, pt dos quais, da heraf, no herav, sv varav) y en `tools/verificar.mjs` el escalón "de los cuales": si ninguna
+  lectura cerró, las lecturas 4 y 5 sin esas filas, compuerta exacta. Casos: Lierse SK 2025 (76A 82.200 bajo la Brutomarge 2.706.155) y Patro
+  Eisden 2025 cierran sin su ajuste `fila` en 0. Medido: 376 documentos, 374 idénticos; los 2 que cambian son esos dos (en la cola en los dos
+  casos acá, porque la rama no tiene sus otros ajustes). Parte 2 de la b ("(+)/(-)"): no se reproduce (HALLAZGOS).
+
 ## Qué queda pendiente (para TODO)
 
 - **Escribir caja y deuda en `data/`, en la carpeta principal después del merge** (sin API: escalón 0). Junto con lo que ya dejó la
@@ -79,7 +85,7 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
 
 ## Qué deja de ser cierto en ESTADO
 
-- Los to-dos 288, 289 y 290 se cierran, y las letras a) y b1) del 298 (290: Genoa 2022 deja de dar un valor mal; el valor publicado depende del 291).
+- Los to-dos 288, 289 y 290 se cierran, y las letras a) y b) del 298 (la parte 2 no se reproduce) (290: Genoa 2022 deja de dar un valor mal; el valor publicado depende del 291).
 - RB Leipzig 2023-2024 y HSV 2024 dejan de estar "sin escala del documento" en caja-deuda.
 
 ## Para fos-onboarding (cómo se carga)
@@ -89,3 +95,4 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
 - `claveFamilia` saca ahora la numeración "bis" (to-do 290): `cargar.mjs` y `verificar.mjs` medidos idénticos (Italia y prueba-completa); cambia solo qué filas "bis" ve el diccionario de deuda de caja-deuda.
 - `verificar.mjs` (to-do 298 a): un documento con resultado impreso negativo que solo cerraba con las filas dadas vuelta (en valor absoluto) ya no cierra: va a la cola. En los 376 medidos no cambió ninguno.
 - `vocabulario.mjs` FIN_GASTO suma tres rótulos belgas (to-do 298 b1): un documento NBB nuevo cierra con "financiero por rótulo" sin el ajuste `fila` de signo de los costos financieros; los ajustes ya puestos siguen dando lo mismo.
+- `verificar.mjs` escalón "de los cuales" (to-do 298 b3): un documento que no cerraba porque sumaba aparte una fila "Waarvan:"/"dont"/"davon" puede cerrar sin ella (solo si el cierre es exacto). Los ajustes `fila` en 0 ya puestos siguen dando lo mismo.

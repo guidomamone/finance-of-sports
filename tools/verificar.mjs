@@ -43,7 +43,7 @@ import { cierrePorVecinos } from './cierre-vecinos.mjs';
 import { VERSION_AMPLIADO } from './indice-bloques.mjs';
 import { norm as normNum } from './verify-numbers.mjs';
 import { ajusteDe, ajustesDe } from './ajustes.mjs';
-import { FIN_INGRESO_RE, FIN_GASTO_RE, INGRESOS_RE, GASTOS_RE, normalizar } from './vocabulario.mjs';
+import { FIN_INGRESO_RE, FIN_GASTO_RE, INGRESOS_RE, GASTOS_RE, DE_LOS_CUALES_RE, normalizar } from './vocabulario.mjs';
 import { DESCARTADOS, PARCIALES } from './etapa-doc.mjs';
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
 const { loadSite, parseNumber } = await import('./datos-sitio.mjs');
@@ -894,6 +894,19 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // compuerta que la 4 (totales impresos y resultado). Solo si la base cambia (hay un subtotal repetido).
     if (n === 4 && hayRepetido) { const er = evaluar(4, false, null, { ing: ing4r, gas: gas4r }); if (er.okRes) algunaCierraRes = true; if (er.cierra) { E = er; escalonSubRep = true; break; } }
     if (n === 4 && cambiaSigno4e) { const es = evaluar(4, false, null, { ing: ing4e, gas: gas4e }); if (es.okRes) algunaCierraRes = true; if (es.cierra) { E = es; escalonSignoDoc = true; notas.push('escalón "signo del documento": los ajustes `fila` con el signo contrario al de su lado en el estado restan; cerró la lectura 4'); break; } }
+  }
+  // ESCALÓN "de los cuales" (to-do 298 b3, ok de Guido 2026-10-18). Una fila que empieza con "Waarvan:" / "dont" / "davon" / "of which" /
+  // "de los cuales" (vocabulario.mjs DE_LOS_CUALES) es una PARTE de la de arriba: sumada aparte, cuenta dos veces. No se saca siempre (manta
+  // corta): solo si NINGUNA lectura cerró, se prueban las lecturas 4 y 5 sin esas filas. Compuerta: cierra EXACTO. Caso: Lierse SK 2025 (L255-256),
+  // Brutomarge 2.706.155 y debajo "Waarvan: niet-recurrente bedrijfsopbrengsten" 82.200; Patro Eisden 2025 (1.810). Antes, un ajuste `fila` en 0.
+  let escalonDeLosCuales = false;
+  const esDeLosCuales = (f) => f.tipo === 'renglon' && DE_LOS_CUALES_RE.test(normalizar(f.etiqueta || ''));
+  if (!E && [...ing4, ...gas4, ...ing5, ...gas5].some(esDeLosCuales)) {
+    for (const [n, i0, g0] of [[4, ing4, gas4], [5, ing5, gas5]]) {
+      const e = evaluar(n, false, null, { ing: i0.filter((f) => !esDeLosCuales(f)), gas: g0.filter((f) => !esDeLosCuales(f)) });
+      if (e.cierra && e.exacto) { E = e; escalonDeLosCuales = true; break; }
+    }
+    if (escalonDeLosCuales) notas.push(`escalón "de los cuales": cerró la lectura ${E.nivel} sin las filas ${[...ing4, ...gas4, ...ing5, ...gas5].filter(esDeLosCuales).map((f) => `"${String(f.etiqueta).slice(0, 50)}" L${f.linea}`).filter((x, i, a) => a.indexOf(x) === i).join(', ')} (una parte de la fila de arriba)`);
   }
   if (!E && !algunaCierraRes && fin5Todos.length > fin5.length) { const e = evaluar(5, true); if (e.cierra) { E = e; escalonAjFin = true; } } // to-do 156 B
   // ESCALÓN "17) resta" (to-do 155, escalón 2, aprobado por Guido el 2026-10-07). El formato del Codice Civile imprime el renglón 17)

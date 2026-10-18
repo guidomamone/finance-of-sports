@@ -471,6 +471,13 @@ export const VOCABULARIO = {
     el: ['χρεωστικοι τοκοι', 'χρηματοοικονομικα εξοδα', 'εξοδα τοκων'], ru: ['проценты к уплате', 'финансовые расходы'], ja: ['支払利息', '金融費用'],
   },
 
+  // ---- "DE LOS CUALES" al comienzo de una etiqueta (to-do 298 b3, verificar.mjs): la fila es una PARTE de la de arriba, no un renglón más.
+  // Caso: Bélgica, esquema abreviado, "Waarvan: niet-recurrente bedrijfsopbrengsten" (76A) debajo de la Brutomarge (Lierse SK 2025, L256).
+  DE_LOS_CUALES: {
+    es: ['de los cuales', 'de las cuales', 'del cual', 'de la cual'], pt: ['dos quais', 'das quais'], en: ['of which'], de: ['davon'],
+    fr: ['dont'], it: ['di cui'], nl: ['waarvan'], da: ['heraf'], no: ['herav'], sv: ['varav'],
+  },
+
   // ---- TOTAL DE INGRESOS al comienzo de una etiqueta (proponer-carga.mjs: detecta la fila del total de ingresos del documento).
   TOTAL_INGRESOS: {
     es: ['total de ingresos', 'total ingresos', 'total de recursos', 'total recursos', 'ingresos totales', 'recursos totales', 'ingresos de actividades ordinarias'],
@@ -661,6 +668,7 @@ export const TOTAL_FIN_RE = compilar(T('TOTAL_FIN'), 'fin');
 // (to-do 212) signo de una fila del financiero por su rótulo; se prueban sobre normalizar(etiqueta)
 export const FIN_INGRESO_RE = compilar(T('FIN_INGRESO'));
 export const FIN_GASTO_RE = compilar(T('FIN_GASTO'));
+export const DE_LOS_CUALES_RE = compilar(T('DE_LOS_CUALES'), 'inicio');
 export const TOTAL_RE = new RegExp(`${TOTAL_INICIO_RE.source}|${TOTAL_FIN_RE.source}`, 'u');
 export const esTotal = (etiqueta) => TOTAL_RE.test(normalizar(etiqueta));
 export const TOTAL_INGRESOS_RE = compilar(T('TOTAL_INGRESOS'), 'inicio');
