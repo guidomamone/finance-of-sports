@@ -1,31 +1,95 @@
 {
   "_comentario": "To-do 273. El mismo estadio escrito de dos formas en las páginas de Wikipedia, por club: { \"<clubId>\": { \"variante\": \"nombre que se muestra\" } }. Solo variantes (prefijo Stadio/Estádio, apodo, ortografía); un cambio de nombre real (naming rights, estadio nuevo, mudanza) NO va acá: ese año se llamaba así.",
-  "boca": { "La Bombonera": "Alberto J. Armando" },
-  "independiente": { "Libertadores de América": "Libertadores de América - Ricardo Enrique Bochini" },
-  "racing": { "Presidente Perón": "Presidente Juan Domingo Perón", "El Cilindro": "Presidente Juan Domingo Perón" },
-  "americamineiro-br": { "Independência": "Arena Independência" },
-  "goias-br": { "Serrinha": "Estádio da Serrinha" },
-  "paysandu-br": { "Curuzu": "Estádio da Curuzu" },
-  "santos-br": { "Urbano Caldeira": "Vila Belmiro" },
-  "levadiakos-gr": { "Livadeia Municipal Stadium": "Levadia Municipal Stadium" },
-  "aellarissa-gr": { "AEL Arena": "AEL FC Arena" },
-  "asroma-it": { "Olimpico": "Stadio Olimpico" },
-  "lazio-it": { "Olimpico": "Stadio Olimpico" },
-  "chievoverona-it": { "Marc'Antonio Bentegodi": "Stadio Marc'Antonio Bentegodi", "Stadio Marcantonio Bentegodi": "Stadio Marc'Antonio Bentegodi" },
-  "hellasverona-it": { "Marc'Antonio Bentegodi": "Stadio Marc'Antonio Bentegodi", "Stadio Marcantonio Bentegodi": "Stadio Marc'Antonio Bentegodi" },
-  "cremonese-it": { "Giovanni Zini": "Stadio Giovanni Zini" },
-  "genoa-it": { "Luigi Ferraris": "Stadio Luigi Ferraris" },
-  "parma-it": { "Ennio Tardini": "Stadio Ennio Tardini" },
-  "inter-it": { "Giuseppe Meazza": "San Siro", "Stadio Giuseppe Meazza": "San Siro" },
-  "acmilan-it": { "Giuseppe Meazza": "San Siro", "Stadio Giuseppe Meazza": "San Siro" },
-  "juventus-it": { "Olimpico di Torino": "Stadio Olimpico di Torino" },
-  "sassuolo-it": { "Mapei Stadium": "Mapei Stadium – Città del Tricolore" },
-  "academicoviseu-pt": { "Estádio Municipal do Fontelo": "Estádio do Fontelo" },
-  "vizela-pt": { "Estádio do Futebol Clube de Vizela": "Estádio do FC Vizela" },
-  "moreirense-pt": { "Estádio Comendador Joaquim de Almeida Freitas": "Parque de Jogos Comendador Joaquim de Almeida Freitas" },
-  "famalicao-pt": { "Estádio Municipal de Famalicão": "Estádio Municipal 22 de Junho" },
-  "akhmatgrozny-ru": { "Akhmat Arena": "Akhmat-Arena" },
-  "orenburg-ru": { "Gazovik": "Gazovik Stadium" },
-  "sochi-ru": { "Fisht": "Fisht Olympic Stadium" },
-  "rubinkazan-ru": { "Kazan Arena": "Ak Bars Arena" }
+  "boca": {
+    "La Bombonera": "Alberto J. Armando"
+  },
+  "independiente": {
+    "Libertadores de América": "Libertadores de América - Ricardo Enrique Bochini"
+  },
+  "racing": {
+    "Presidente Perón": "Presidente Juan Domingo Perón",
+    "El Cilindro": "Presidente Juan Domingo Perón"
+  },
+  "americamineiro-br": {
+    "Independência": "Arena Independência"
+  },
+  "goias-br": {
+    "Serrinha": "Estádio da Serrinha"
+  },
+  "paysandu-br": {
+    "Curuzu": "Estádio da Curuzu"
+  },
+  "santos-br": {
+    "Urbano Caldeira": "Vila Belmiro"
+  },
+  "levadiakos-gr": {
+    "Livadeia Municipal Stadium": "Levadia Municipal Stadium"
+  },
+  "aellarissa-gr": {
+    "AEL Arena": "AEL FC Arena"
+  },
+  "asroma-it": {
+    "Olimpico": "Stadio Olimpico",
+    "Stadio Olimpico di Roma": "Stadio Olimpico"
+  },
+  "lazio-it": {
+    "Olimpico": "Stadio Olimpico",
+    "Stadio Olimpico di Roma": "Stadio Olimpico"
+  },
+  "chievoverona-it": {
+    "Marc'Antonio Bentegodi": "Stadio Marc'Antonio Bentegodi",
+    "Stadio Marcantonio Bentegodi": "Stadio Marc'Antonio Bentegodi"
+  },
+  "hellasverona-it": {
+    "Marc'Antonio Bentegodi": "Stadio Marc'Antonio Bentegodi",
+    "Stadio Marcantonio Bentegodi": "Stadio Marc'Antonio Bentegodi"
+  },
+  "cremonese-it": {
+    "Giovanni Zini": "Stadio Giovanni Zini"
+  },
+  "genoa-it": {
+    "Luigi Ferraris": "Stadio Luigi Ferraris"
+  },
+  "parma-it": {
+    "Ennio Tardini": "Stadio Ennio Tardini"
+  },
+  "inter-it": {
+    "Giuseppe Meazza": "San Siro",
+    "Stadio Giuseppe Meazza": "San Siro"
+  },
+  "acmilan-it": {
+    "Giuseppe Meazza": "San Siro",
+    "Stadio Giuseppe Meazza": "San Siro"
+  },
+  "juventus-it": {
+    "Olimpico di Torino": "Stadio Olimpico di Torino"
+  },
+  "sassuolo-it": {
+    "Mapei Stadium": "Mapei Stadium – Città del Tricolore"
+  },
+  "academicoviseu-pt": {
+    "Estádio Municipal do Fontelo": "Estádio do Fontelo"
+  },
+  "vizela-pt": {
+    "Estádio do Futebol Clube de Vizela": "Estádio do FC Vizela"
+  },
+  "moreirense-pt": {
+    "Estádio Comendador Joaquim de Almeida Freitas": "Parque de Jogos Comendador Joaquim de Almeida Freitas",
+    "Estádio Com. Joaquim A. Freitas": "Parque de Jogos Comendador Joaquim de Almeida Freitas"
+  },
+  "famalicao-pt": {
+    "Estádio Municipal de Famalicão": "Estádio Municipal 22 de Junho"
+  },
+  "akhmatgrozny-ru": {
+    "Akhmat Arena": "Akhmat-Arena"
+  },
+  "orenburg-ru": {
+    "Gazovik": "Gazovik Stadium"
+  },
+  "sochi-ru": {
+    "Fisht": "Fisht Olympic Stadium"
+  },
+  "rubinkazan-ru": {
+    "Kazan Arena": "Ak Bars Arena"
+  }
 }

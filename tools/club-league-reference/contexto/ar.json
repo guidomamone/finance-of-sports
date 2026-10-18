@@ -5,7 +5,132 @@
    "lang": "en",
    "revid": 1174497719,
    "estadios": [],
-   "kits": []
+   "kits": [],
+   "local": {
+    "pagina": "Campeonato de Primera B Nacional 2016-17",
+    "lang": "es",
+    "revid": 172229349,
+    "estadios": [
+     [
+      {
+       "club": "All Boys",
+       "estadio": "Islas Malvinas",
+       "capacidad": 500
+      },
+      {
+       "club": "Almagro",
+       "estadio": "Tres de Febrero",
+       "capacidad": 0
+      },
+      {
+       "club": "Argentinos Juniors",
+       "estadio": "Diego Armando Maradona",
+       "capacidad": 380
+      },
+      {
+       "club": "Atlético Paraná",
+       "estadio": "Pedro Mutio",
+       "capacidad": 7000
+      },
+      {
+       "club": "Boca Unidos",
+       "estadio": "Leoncio Benítez",
+       "capacidad": 8000
+      },
+      {
+       "club": "Brown",
+       "estadio": "Lorenzo Arandilla",
+       "capacidad": 4500
+      },
+      {
+       "club": "Central Córdoba",
+       "estadio": "Alfredo Terrera",
+       "capacidad": 0
+      },
+      {
+       "club": "Chacarita Juniors",
+       "estadio": "Chacarita Juniors",
+       "capacidad": 844
+      },
+      {
+       "club": "Crucero del Norte",
+       "estadio": "Comandante Andrés Guacurarí",
+       "capacidad": 0
+      },
+      {
+       "club": "Douglas Haig",
+       "estadio": "Miguel Morales",
+       "capacidad": 0
+      },
+      {
+       "club": "Ferro Carril Oeste",
+       "estadio": "Arquitecto Ricardo Etcheverri",
+       "capacidad": 268
+      },
+      {
+       "club": "Flandria",
+       "estadio": "Carlos V",
+       "capacidad": 5000
+      },
+      {
+       "club": "Gimnasia y Esgrima",
+       "estadio": "23 de Agosto",
+       "capacidad": 500
+      },
+      {
+       "club": "Guillermo Brown",
+       "estadio": "Raúl Conti",
+       "capacidad": 0
+      },
+      {
+       "club": "Independiente Rivadavia",
+       "estadio": "Bautista Gargantini",
+       "capacidad": 0
+      },
+      {
+       "club": "Instituto",
+       "estadio": "Juan Domingo Perón",
+       "capacidad": 0
+      },
+      {
+       "club": "Juventud Unida",
+       "estadio": "De los Eucaliptos",
+       "capacidad": 5000
+      },
+      {
+       "club": "Los Andes",
+       "estadio": "Eduardo Gallardón",
+       "capacidad": 942
+      },
+      {
+       "club": "Nueva Chicago",
+       "estadio": "Nueva Chicago",
+       "capacidad": 0
+      },
+      {
+       "club": "Ramón Santamarina",
+       "estadio": "Municipal General San Martín",
+       "capacidad": 0
+      },
+      {
+       "club": "San Martín",
+       "estadio": "La Ciudadela",
+       "capacidad": 500
+      },
+      {
+       "club": "Sportivo Estudiantes",
+       "estadio": "Héctor Odicino-Pedro Benoza",
+       "capacidad": 0
+      },
+      {
+       "club": "Villa Dálmine",
+       "estadio": "El Coliseo de Mitre y Puccini",
+       "capacidad": 250
+      }
+     ]
+    ],
+    "kits": []
+   }
   },
   "2018": {
    "pagina": "2017–18 Primera B Nacional",
@@ -19,21 +144,511 @@
    "lang": "en",
    "revid": 1301907154,
    "estadios": [],
-   "kits": []
+   "kits": [],
+   "local": {
+    "pagina": "Campeonato de Primera B Nacional 2018-19",
+    "lang": "es",
+    "revid": 171101706,
+    "estadios": [
+     [
+      {
+       "club": "Agropecuario",
+       "estadio": "Ofelia Rosenzuaig",
+       "capacidad": 8000
+      },
+      {
+       "club": "Almagro",
+       "estadio": "Tres de Febrero",
+       "capacidad": 0
+      },
+      {
+       "club": "Arsenal",
+       "estadio": "Julio Humberto Grondona",
+       "capacidad": 300
+      },
+      {
+       "club": "Atlético de Rafaela",
+       "estadio": "Nuevo Monumental",
+       "capacidad": 660
+      },
+      {
+       "club": "Brown",
+       "estadio": "Lorenzo Arandilla",
+       "capacidad": 4500
+      },
+      {
+       "club": "Central Córdoba",
+       "estadio": "Alfredo Terrera",
+       "capacidad": 0
+      },
+      {
+       "club": "Chacarita Juniors",
+       "estadio": "Chacarita Juniors",
+       "capacidad": 530
+      },
+      {
+       "club": "Defensores de Belgrano",
+       "estadio": "Juan Pasquale",
+       "capacidad": 8300
+      },
+      {
+       "club": "Deportivo Morón",
+       "estadio": "Nuevo Francisco Urbano",
+       "capacidad": 0
+      },
+      {
+       "club": "Ferro Carril Oeste",
+       "estadio": "Arquitecto Ricardo Etcheverri",
+       "capacidad": 442
+      },
+      {
+       "club": "Gimnasia y Esgrima",
+       "estadio": "Víctor Antonio Legrotaglie",
+       "capacidad": 0
+      },
+      {
+       "club": "Gimnasia y Esgrima",
+       "estadio": "23 de Agosto",
+       "capacidad": 0
+      },
+      {
+       "club": "Guillermo Brown",
+       "estadio": "Raul Conti",
+       "capacidad": 500
+      },
+      {
+       "club": "Independiente Rivadavia",
+       "estadio": "Bautista Gargantini",
+       "capacidad": 0
+      },
+      {
+       "club": "Instituto",
+       "estadio": "Juan Domingo Perón",
+       "capacidad": 0
+      },
+      {
+       "club": "Los Andes",
+       "estadio": "Eduardo Gallardón",
+       "capacidad": 0
+      },
+      {
+       "club": "Mitre",
+       "estadio": "Doctores José y Antonio Castiglione",
+       "capacidad": 500
+      },
+      {
+       "club": "Nueva Chicago",
+       "estadio": "Nueva Chicago",
+       "capacidad": 0
+      },
+      {
+       "club": "Olimpo",
+       "estadio": "Roberto Natalio Carminatti",
+       "capacidad": 0
+      },
+      {
+       "club": "Platense",
+       "estadio": "Ciudad de Vicente López",
+       "capacidad": 50
+      },
+      {
+       "club": "Quilmes",
+       "estadio": "Centenario",
+       "capacidad": 200
+      },
+      {
+       "club": "Ramón Santamarina",
+       "estadio": "Municipal General San Martin",
+       "capacidad": 8762
+      },
+      {
+       "club": "Sarmiento",
+       "estadio": "Eva Perón",
+       "capacidad": 0
+      },
+      {
+       "club": "Temperley",
+       "estadio": "Alfredo Beranger",
+       "capacidad": 0
+      },
+      {
+       "club": "Villa Dálmine",
+       "estadio": "El Coliseo de Mitre y Puccini",
+       "capacidad": 250
+      }
+     ]
+    ],
+    "kits": []
+   }
   },
   "2020": {
    "pagina": "2019–20 Primera Nacional",
    "lang": "en",
    "revid": 1286604817,
    "estadios": [],
-   "kits": []
+   "kits": [],
+   "local": {
+    "pagina": "Campeonato de Primera Nacional 2019-20",
+    "lang": "es",
+    "revid": 175068991,
+    "estadios": [
+     [
+      {
+       "club": "Agropecuario",
+       "estadio": "Ofelia Rosenzuaig",
+       "capacidad": 8000
+      },
+      {
+       "club": "All Boys",
+       "estadio": "Islas Malvinas",
+       "capacidad": 500
+      },
+      {
+       "club": "Almagro",
+       "estadio": "Tres de Febrero",
+       "capacidad": 0
+      },
+      {
+       "club": "Alvarado",
+       "estadio": "José María Minella",
+       "capacidad": 354
+      },
+      {
+       "club": "Atlanta",
+       "estadio": "Don León Kolbowsky",
+       "capacidad": 0
+      },
+      {
+       "club": "Atlético de Rafaela",
+       "estadio": "Nuevo Monumental",
+       "capacidad": 0
+      },
+      {
+       "club": "Barracas Central",
+       "estadio": "Claudio Chiqui Tapia",
+       "capacidad": 4400
+      },
+      {
+       "club": "Belgrano",
+       "estadio": "Julio César Villagra",
+       "capacidad": 500
+      },
+      {
+       "club": "Brown",
+       "estadio": "Lorenzo Arandilla",
+       "capacidad": 4500
+      },
+      {
+       "club": "Chacarita Juniors",
+       "estadio": "Chacarita Juniors",
+       "capacidad": 530
+      },
+      {
+       "club": "Defensores de Belgrano",
+       "estadio": "Juan Pasquale",
+       "capacidad": 0
+      },
+      {
+       "club": "Deportivo Morón",
+       "estadio": "Nuevo Francisco Urbano",
+       "capacidad": 0
+      },
+      {
+       "club": "Deportivo Riestra",
+       "estadio": "Guillermo Laza",
+       "capacidad": 4000
+      },
+      {
+       "club": "Estudiantes",
+       "estadio": "Ciudad de Caseros",
+       "capacidad": 700
+      },
+      {
+       "club": "Estudiantes",
+       "estadio": "Antonio Candini",
+       "capacidad": 0
+      },
+      {
+       "club": "Ferro Carril Oeste",
+       "estadio": "Arquitecto Ricardo Etcheverri",
+       "capacidad": 442
+      },
+      {
+       "club": "Gimnasia y Esgrima",
+       "estadio": "23 de agosto",
+       "capacidad": 0
+      },
+      {
+       "club": "Gimnasia y Esgrima",
+       "estadio": "Víctor Antonio Legrotaglie",
+       "capacidad": 0
+      },
+      {
+       "club": "Guillermo Brown",
+       "estadio": "Raúl Conti",
+       "capacidad": 500
+      },
+      {
+       "club": "Independiente Rivadavia",
+       "estadio": "Bautista Gargantini",
+       "capacidad": 0
+      },
+      {
+       "club": "Instituto",
+       "estadio": "Juan Domingo Perón",
+       "capacidad": 0
+      },
+      {
+       "club": "Mitre",
+       "estadio": "Doctores José y Antonio Castiglione",
+       "capacidad": 500
+      },
+      {
+       "club": "Nueva Chicago",
+       "estadio": "Nueva Chicago",
+       "capacidad": 0
+      },
+      {
+       "club": "Platense",
+       "estadio": "Ciudad de Vicente López",
+       "capacidad": 530
+      },
+      {
+       "club": "Quilmes",
+       "estadio": "Centenario Ciudad de Quilmes",
+       "capacidad": 200
+      },
+      {
+       "club": "Ramón Santamarina",
+       "estadio": "Municipal General San Martín",
+       "capacidad": 8762
+      },
+      {
+       "club": "San Martín",
+       "estadio": "Ingeniero Hilario Sánchez",
+       "capacidad": 0
+      },
+      {
+       "club": "San Martín",
+       "estadio": "La Ciudadela",
+       "capacidad": 500
+      },
+      {
+       "club": "Sarmiento",
+       "estadio": "Eva Perón",
+       "capacidad": 0
+      },
+      {
+       "club": "Temperley",
+       "estadio": "Alfredo Beranger",
+       "capacidad": 0
+      },
+      {
+       "club": "Tigre",
+       "estadio": "José Dellagiovanna",
+       "capacidad": 282
+      },
+      {
+       "club": "Villa Dálmine",
+       "estadio": "El Coliseo de Mitre y Puccini",
+       "capacidad": 250
+      }
+     ]
+    ],
+    "kits": []
+   }
   },
   "2021": {
    "pagina": "2021 Primera Nacional",
    "lang": "en",
    "revid": 1332763147,
    "estadios": [],
-   "kits": []
+   "kits": [],
+   "local": {
+    "pagina": "Campeonato de Primera Nacional 2021",
+    "lang": "es",
+    "revid": 175881155,
+    "estadios": [
+     [
+      {
+       "club": "Agropecuario",
+       "estadio": "Ofelia Rosenzuaig",
+       "capacidad": 8000
+      },
+      {
+       "club": "All Boys",
+       "estadio": "Islas Malvinas",
+       "capacidad": 500
+      },
+      {
+       "club": "Almagro",
+       "estadio": "Tres de Febrero",
+       "capacidad": 0
+      },
+      {
+       "club": "Almirante Brown",
+       "estadio": "Fragata Presidente Sarmiento",
+       "capacidad": 0
+      },
+      {
+       "club": "Alvarado",
+       "estadio": "José María Minella",
+       "capacidad": 354
+      },
+      {
+       "club": "Atlanta",
+       "estadio": "Don León Kolbowsky",
+       "capacidad": 0
+      },
+      {
+       "club": "Atlético de Rafaela",
+       "estadio": "Nuevo Monumental",
+       "capacidad": 0
+      },
+      {
+       "club": "Barracas Central",
+       "estadio": "Claudio Chiqui Tapia",
+       "capacidad": 4400
+      },
+      {
+       "club": "Belgrano",
+       "estadio": "Julio César Villagra",
+       "capacidad": 500
+      },
+      {
+       "club": "Brown",
+       "estadio": "Lorenzo Arandilla",
+       "capacidad": 4500
+      },
+      {
+       "club": "Chacarita Juniors",
+       "estadio": "Chacarita Juniors",
+       "capacidad": 530
+      },
+      {
+       "club": "Defensores de Belgrano",
+       "estadio": "Juan Pasquale",
+       "capacidad": 0
+      },
+      {
+       "club": "Deportivo Maipú",
+       "estadio": "Omar Higinio Sperdutti",
+       "capacidad": 8000
+      },
+      {
+       "club": "Deportivo Morón",
+       "estadio": "Nuevo Francisco Urbano",
+       "capacidad": 0
+      },
+      {
+       "club": "Deportivo Riestra",
+       "estadio": "Guillermo Laza",
+       "capacidad": 4000
+      },
+      {
+       "club": "Estudiantes",
+       "estadio": "Ciudad de Caseros",
+       "capacidad": 700
+      },
+      {
+       "club": "Estudiantes",
+       "estadio": "Antonio Candini",
+       "capacidad": 0
+      },
+      {
+       "club": "Ferro Carril Oeste",
+       "estadio": "Arquitecto Ricardo Etcheverri",
+       "capacidad": 442
+      },
+      {
+       "club": "Gimnasia y Esgrima",
+       "estadio": "23 de Agosto",
+       "capacidad": 0
+      },
+      {
+       "club": "Gimnasia y Esgrima",
+       "estadio": "Víctor Antonio Legrotaglie",
+       "capacidad": 0
+      },
+      {
+       "club": "Güemes",
+       "estadio": "Arturo Miranda",
+       "capacidad": 0
+      },
+      {
+       "club": "Guillermo Brown",
+       "estadio": "Raúl Conti",
+       "capacidad": 500
+      },
+      {
+       "club": "Independiente Rivadavia",
+       "estadio": "Bautista Gargantini",
+       "capacidad": 0
+      },
+      {
+       "club": "Instituto",
+       "estadio": "Juan Domingo Perón",
+       "capacidad": 0
+      },
+      {
+       "club": "Mitre",
+       "estadio": "Doctores José y Antonio Castiglione",
+       "capacidad": 500
+      },
+      {
+       "club": "Nueva Chicago",
+       "estadio": "Nueva Chicago",
+       "capacidad": 0
+      },
+      {
+       "club": "Quilmes",
+       "estadio": "Centenario Ciudad de Quilmes",
+       "capacidad": 200
+      },
+      {
+       "club": "Ramón Santamarina",
+       "estadio": "Municipal General San Martín",
+       "capacidad": 8762
+      },
+      {
+       "club": "San Martín",
+       "estadio": "Ingeniero Hilario Sánchez",
+       "capacidad": 0
+      },
+      {
+       "club": "San Martín",
+       "estadio": "La Ciudadela",
+       "capacidad": 500
+      },
+      {
+       "club": "San Telmo",
+       "estadio": "Dr. Osvaldo Baletto",
+       "capacidad": 5500
+      },
+      {
+       "club": "Temperley",
+       "estadio": "Alfredo Beranger",
+       "capacidad": 0
+      },
+      {
+       "club": "Tigre",
+       "estadio": "José Dellagiovanna",
+       "capacidad": 282
+      },
+      {
+       "club": "Tristán Suárez",
+       "estadio": "20 de Octubre",
+       "capacidad": 7500
+      },
+      {
+       "club": "Villa Dálmine",
+       "estadio": "El Coliseo de Mitre y Puccini",
+       "capacidad": 250
+      }
+     ]
+    ],
+    "kits": []
+   }
   },
   "2022": {
    "pagina": "2022 Primera Nacional",
@@ -228,7 +843,202 @@
      }
     ]
    ],
-   "kits": []
+   "kits": [],
+   "local": {
+    "pagina": "Campeonato de Primera Nacional 2022",
+    "lang": "es",
+    "revid": 175069021,
+    "estadios": [
+     [
+      {
+       "club": "Agropecuario",
+       "estadio": "Ofelia Rosenzuaig",
+       "capacidad": 8000
+      },
+      {
+       "club": "All Boys",
+       "estadio": "Islas Malvinas",
+       "capacidad": 500
+      },
+      {
+       "club": "Almagro",
+       "estadio": "Tres de Febrero",
+       "capacidad": 0
+      },
+      {
+       "club": "Almirante Brown",
+       "estadio": "Fragata Presidente Sarmiento",
+       "capacidad": 0
+      },
+      {
+       "club": "Alvarado",
+       "estadio": "José María Minella",
+       "capacidad": 354
+      },
+      {
+       "club": "Atlanta",
+       "estadio": "Don León Kolbowsky",
+       "capacidad": 0
+      },
+      {
+       "club": "Atlético de Rafaela",
+       "estadio": "Nuevo Monumental",
+       "capacidad": 0
+      },
+      {
+       "club": "Belgrano",
+       "estadio": "Julio César Villagra",
+       "capacidad": 500
+      },
+      {
+       "club": "Brown",
+       "estadio": "Lorenzo Arandilla",
+       "capacidad": 4500
+      },
+      {
+       "club": "Chacarita Juniors",
+       "estadio": "Chacarita Juniors",
+       "capacidad": 530
+      },
+      {
+       "club": "Chaco For Ever",
+       "estadio": "Juan Alberto García",
+       "capacidad": 0
+      },
+      {
+       "club": "Defensores de Belgrano",
+       "estadio": "Juan Pasquale",
+       "capacidad": 0
+      },
+      {
+       "club": "Deportivo Madryn",
+       "estadio": "Abel Sastre",
+       "capacidad": 8000
+      },
+      {
+       "club": "Deportivo Maipú",
+       "estadio": "Omar Higinio Sperdutti",
+       "capacidad": 8000
+      },
+      {
+       "club": "Deportivo Morón",
+       "estadio": "Nuevo Francisco Urbano",
+       "capacidad": 0
+      },
+      {
+       "club": "Deportivo Riestra",
+       "estadio": "Guillermo Laza",
+       "capacidad": 4000
+      },
+      {
+       "club": "Estudiantes",
+       "estadio": "Ciudad de Caseros",
+       "capacidad": 700
+      },
+      {
+       "club": "Estudiantes",
+       "estadio": "Antonio Candini",
+       "capacidad": 0
+      },
+      {
+       "club": "Ferro Carril Oeste",
+       "estadio": "Arquitecto Ricardo Etcheverri",
+       "capacidad": 442
+      },
+      {
+       "club": "Flandria",
+       "estadio": "Carlos V",
+       "capacidad": 5000
+      },
+      {
+       "club": "Gimnasia y Esgrima",
+       "estadio": "23 de Agosto",
+       "capacidad": 0
+      },
+      {
+       "club": "Gimnasia y Esgrima",
+       "estadio": "Víctor Antonio Legrotaglie",
+       "capacidad": 0
+      },
+      {
+       "club": "Güemes",
+       "estadio": "Arturo Miranda",
+       "capacidad": 0
+      },
+      {
+       "club": "Guillermo Brown",
+       "estadio": "Raúl Conti",
+       "capacidad": 500
+      },
+      {
+       "club": "Independiente Rivadavia",
+       "estadio": "Bautista Gargantini",
+       "capacidad": 0
+      },
+      {
+       "club": "Instituto",
+       "estadio": "Juan Domingo Perón",
+       "capacidad": 0
+      },
+      {
+       "club": "Mitre",
+       "estadio": "Doctores José y Antonio Castiglione",
+       "capacidad": 500
+      },
+      {
+       "club": "Nueva Chicago",
+       "estadio": "Nueva Chicago",
+       "capacidad": 0
+      },
+      {
+       "club": "Quilmes",
+       "estadio": "Centenario Ciudad de Quilmes",
+       "capacidad": 200
+      },
+      {
+       "club": "Ramón Santamarina",
+       "estadio": "Municipal General San Martín",
+       "capacidad": 8762
+      },
+      {
+       "club": "Sacachispas",
+       "estadio": "Roberto Larrosa",
+       "capacidad": 4000
+      },
+      {
+       "club": "San Martín",
+       "estadio": "Ingeniero Hilario Sánchez",
+       "capacidad": 0
+      },
+      {
+       "club": "San Martín",
+       "estadio": "La Ciudadela",
+       "capacidad": 500
+      },
+      {
+       "club": "San Telmo",
+       "estadio": "Doctor Osvaldo Baletto",
+       "capacidad": 5500
+      },
+      {
+       "club": "Temperley",
+       "estadio": "Alfredo Beranger",
+       "capacidad": 0
+      },
+      {
+       "club": "Tristán Suárez",
+       "estadio": "20 de Octubre",
+       "capacidad": 7500
+      },
+      {
+       "club": "Villa Dálmine",
+       "estadio": "El Coliseo de Mitre y Puccini",
+       "capacidad": 250
+      }
+     ]
+    ],
+    "kits": []
+   }
   },
   "2023": {
    "pagina": "2023 Primera Nacional",
@@ -423,7 +1233,202 @@
      }
     ]
    ],
-   "kits": []
+   "kits": [],
+   "local": {
+    "pagina": "Campeonato de Primera Nacional 2023",
+    "lang": "es",
+    "revid": 175824438,
+    "estadios": [
+     [
+      {
+       "club": "Agropecuario",
+       "estadio": "Ofelia Rosenzuaig",
+       "capacidad": 8000
+      },
+      {
+       "club": "Aldosivi",
+       "estadio": "José María Minella",
+       "capacidad": 180
+      },
+      {
+       "club": "All Boys",
+       "estadio": "Islas Malvinas",
+       "capacidad": 500
+      },
+      {
+       "club": "Almagro",
+       "estadio": "Tres de Febrero",
+       "capacidad": 0
+      },
+      {
+       "club": "Almirante Brown",
+       "estadio": "Fragata Presidente Sarmiento",
+       "capacidad": 0
+      },
+      {
+       "club": "Alvarado",
+       "estadio": "José María Minella",
+       "capacidad": 35180
+      },
+      {
+       "club": "Atlanta",
+       "estadio": "Don León Kolbowsky",
+       "capacidad": 0
+      },
+      {
+       "club": "Atlético de Rafaela",
+       "estadio": "Nuevo Monumental",
+       "capacidad": 0
+      },
+      {
+       "club": "Brown",
+       "estadio": "Lorenzo Arandilla",
+       "capacidad": 4500
+      },
+      {
+       "club": "Chacarita Juniors",
+       "estadio": "Chacarita Juniors",
+       "capacidad": 530
+      },
+      {
+       "club": "Chaco For Ever",
+       "estadio": "Juan Alberto García",
+       "capacidad": 0
+      },
+      {
+       "club": "Defensores de Belgrano",
+       "estadio": "Juan Pasquale",
+       "capacidad": 0
+      },
+      {
+       "club": "Defensores Unidos",
+       "estadio": "Mario Losinno",
+       "capacidad": 6000
+      },
+      {
+       "club": "Deportivo Madryn",
+       "estadio": "Abel Sastre",
+       "capacidad": 8000
+      },
+      {
+       "club": "Deportivo Maipú",
+       "estadio": "Omar Higinio Sperdutti",
+       "capacidad": 8000
+      },
+      {
+       "club": "Deportivo Morón",
+       "estadio": "Nuevo Francisco Urbano",
+       "capacidad": 0
+      },
+      {
+       "club": "Deportivo Riestra",
+       "estadio": "Guillermo Laza",
+       "capacidad": 4000
+      },
+      {
+       "club": "Estudiantes",
+       "estadio": "Ciudad de Caseros",
+       "capacidad": 740
+      },
+      {
+       "club": "Estudiantes",
+       "estadio": "Antonio Candini",
+       "capacidad": 0
+      },
+      {
+       "club": "Ferro Carril Oeste",
+       "estadio": "Arquitecto Ricardo Etcheverri",
+       "capacidad": 442
+      },
+      {
+       "club": "Flandria",
+       "estadio": "Carlos V",
+       "capacidad": 5000
+      },
+      {
+       "club": "Gimnasia y Esgrima",
+       "estadio": "23 de Agosto",
+       "capacidad": 0
+      },
+      {
+       "club": "Gimnasia y Esgrima",
+       "estadio": "Víctor Antonio Legrotaglie",
+       "capacidad": 0
+      },
+      {
+       "club": "Güemes",
+       "estadio": "Arturo Miranda",
+       "capacidad": 0
+      },
+      {
+       "club": "Guillermo Brown",
+       "estadio": "Raúl Conti",
+       "capacidad": 500
+      },
+      {
+       "club": "Independiente Rivadavia",
+       "estadio": "Bautista Gargantini",
+       "capacidad": 0
+      },
+      {
+       "club": "Mitre",
+       "estadio": "Doctores José y Antonio Castiglione",
+       "capacidad": 500
+      },
+      {
+       "club": "Nueva Chicago",
+       "estadio": "Nueva Chicago",
+       "capacidad": 0
+      },
+      {
+       "club": "Patronato",
+       "estadio": "Presbítero Bartolomé Grella",
+       "capacidad": 0
+      },
+      {
+       "club": "Quilmes",
+       "estadio": "Centenario Ciudad de Quilmes",
+       "capacidad": 200
+      },
+      {
+       "club": "Racing",
+       "estadio": "Miguel Sancho",
+       "capacidad": 0
+      },
+      {
+       "club": "San Martín",
+       "estadio": "Ingeniero Hilario Sánchez",
+       "capacidad": 0
+      },
+      {
+       "club": "San Martín",
+       "estadio": "La Ciudadela",
+       "capacidad": 500
+      },
+      {
+       "club": "San Telmo",
+       "estadio": "Doctor Osvaldo Baletto",
+       "capacidad": 0
+      },
+      {
+       "club": "Temperley",
+       "estadio": "Alfredo Beranger",
+       "capacidad": 0
+      },
+      {
+       "club": "Tristán Suárez",
+       "estadio": "20 de Octubre",
+       "capacidad": 7500
+      },
+      {
+       "club": "Villa Dálmine",
+       "estadio": "El Coliseo de Mitre y Puccini",
+       "capacidad": 250
+      }
+     ]
+    ],
+    "kits": []
+   }
   },
   "2026": {
    "pagina": "2026 Primera Nacional",
@@ -2074,7 +3079,8 @@
       }
      ]
     }
-   ]
+   ],
+   "local": null
   },
   "2016": {
    "pagina": "2016 Argentine Primera División",
@@ -4166,7 +5172,157 @@
       }
      ]
     }
-   ]
+   ],
+   "local": {
+    "pagina": "Campeonato de Primera División 2022 (Argentina)",
+    "lang": "es",
+    "revid": 175123589,
+    "estadios": [
+     [
+      {
+       "club": "Aldosivi",
+       "estadio": "José María Minella",
+       "capacidad": 180
+      },
+      {
+       "club": "Argentinos Juniors",
+       "estadio": "Diego Armando Maradona",
+       "capacidad": 0
+      },
+      {
+       "club": "Arsenal",
+       "estadio": "Julio Humberto Grondona",
+       "capacidad": 300
+      },
+      {
+       "club": "Atlético Tucumán",
+       "estadio": "Monumental José Fierro",
+       "capacidad": 200
+      },
+      {
+       "club": "Banfield",
+       "estadio": "Florencio Sola",
+       "capacidad": 900
+      },
+      {
+       "club": "Barracas Central",
+       "estadio": "Claudio ''Chiqui'' Tapia",
+       "capacidad": 400
+      },
+      {
+       "club": "Boca Juniors",
+       "estadio": "Alberto J. Armando",
+       "capacidad": 0
+      },
+      {
+       "club": "Central Córdoba",
+       "estadio": "Alfredo Terrera",
+       "capacidad": 500
+      },
+      {
+       "club": "Colón",
+       "estadio": "Brigadier General Estanislao López",
+       "capacidad": 0
+      },
+      {
+       "club": "Defensa y Justicia",
+       "estadio": "Norberto Tomaghello",
+       "capacidad": 0
+      },
+      {
+       "club": "Estudiantes",
+       "estadio": "Jorge Luis Hirschi",
+       "capacidad": 530
+      },
+      {
+       "club": "Gimnasia y Esgrima",
+       "estadio": "Juan Carmelo Zerillo",
+       "capacidad": 500
+      },
+      {
+       "club": "Godoy Cruz",
+       "estadio": "Malvinas Argentinas",
+       "capacidad": 500
+      },
+      {
+       "club": "Huracán",
+       "estadio": "Tomás Adolfo Ducó",
+       "capacidad": 314
+      },
+      {
+       "club": "Independiente",
+       "estadio": "Libertadores de América-Ricardo Enrique Bochini",
+       "capacidad": 592
+      },
+      {
+       "club": "Lanús",
+       "estadio": "Ciudad de Lanús-Néstor Díaz Pérez",
+       "capacidad": 27
+      },
+      {
+       "club": "Newell's Old Boys",
+       "estadio": "Marcelo Bielsa",
+       "capacidad": 0
+      },
+      {
+       "club": "Patronato",
+       "estadio": "Presbítero Bartolomé Grella",
+       "capacidad": 0
+      },
+      {
+       "club": "Platense",
+       "estadio": "Ciudad de Vicente López",
+       "capacidad": 530
+      },
+      {
+       "club": "Racing Club",
+       "estadio": "Presidente Perón",
+       "capacidad": 0
+      },
+      {
+       "club": "River Plate",
+       "estadio": "Antonio Vespucio Liberti",
+       "capacidad": 54
+      },
+      {
+       "club": "Rosario Central",
+       "estadio": "Gigante de Arroyito",
+       "capacidad": 465
+      },
+      {
+       "club": "San Lorenzo",
+       "estadio": "Pedro Bidegain",
+       "capacidad": 964
+      },
+      {
+       "club": "Sarmiento",
+       "estadio": "Eva Perón",
+       "capacidad": 0
+      },
+      {
+       "club": "Talleres",
+       "estadio": "Mario Alberto Kempes",
+       "capacidad": 0
+      },
+      {
+       "club": "Tigre",
+       "estadio": "José Dellagiovanna",
+       "capacidad": 282
+      },
+      {
+       "club": "Unión",
+       "estadio": "15 de Abril",
+       "capacidad": 0
+      },
+      {
+       "club": "Vélez Sarsfield",
+       "estadio": "José Amalfitani",
+       "capacidad": 540
+      }
+     ]
+    ],
+    "kits": []
+   }
   },
   "2023": {
    "pagina": "2023 AFA Liga Profesional de Fútbol",
@@ -5527,7 +6683,8 @@
      }
     ]
    ],
-   "kits": []
+   "kits": [],
+   "local": null
   },
   "2021": {
    "pagina": "Campeonato de Primera B 2021 (Argentina)",
@@ -5622,7 +6779,8 @@
      }
     ]
    ],
-   "kits": []
+   "kits": [],
+   "local": null
   },
   "2026": {
    "pagina": "Campeonato de Primera B 2026 (Argentina)",

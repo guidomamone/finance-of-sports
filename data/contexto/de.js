@@ -14,8 +14,8 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Allianz Arena","capacidad":75000,"sponsor":"Deutsche Telekom","marca":"Adidas","temporada":"2024–25 Bundesliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378493397"},
   },
   'dortmund-de': {
-    2024: {"estadio":"Signal Iduna Park","capacidad":81365,"sponsor":"1&1","marca":"Puma","temporada":"2023–24 Bundesliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1379169331"},
-    2025: {"estadio":"Signal Iduna Park","capacidad":81365,"sponsor":"1&1","marca":"Puma","temporada":"2024–25 Bundesliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378493397"},
+    2024: {"estadio":"Signal Iduna Park","capacidad":81365,"marca":"Puma","temporada":"2023–24 Bundesliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1379169331"},
+    2025: {"estadio":"Signal Iduna Park","capacidad":81365,"marca":"Puma","temporada":"2024–25 Bundesliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378493397"},
   },
   'eintrachtfrankfurt-de': {
     2024: {"estadio":"Deutsche Bank Park","capacidad":58000,"sponsor":"Indeed.com","marca":"Nike","temporada":"2023–24 Bundesliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1379169331"},

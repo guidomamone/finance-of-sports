@@ -90,3 +90,23 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
 
 - Nada de las listas: ESTADO no las nombra.
 - La lista de compuertas de `cargar.mjs` en ESTADO ("Pipeline") suma una: estadio y sponsor del ejercicio (to-do 273).
+
+## Después del merge del 2026-10-18
+
+- **To-do 273: la Wikipedia del país como fuente en lote** (ok de Guido). `estadio-sponsor.mjs --local` busca la página de la misma
+  temporada en la Wikipedia local (pt, es, it, ru; tabla `LOCAL`) con la API de búsqueda, y la acepta solo si el título trae la temporada y
+  la página nombra al menos el 60% de los equipos de la lista en inglés. Queda en la caché por liga-año (clave `local`; null = se buscó y
+  no pasó). El lector aprende encabezados en esos idiomas ("Equipa", "Estádio, Cidade", "Squadra", "Proveedor"...), plantillas de club
+  ({{Futebol Benfica}}) y entidades HTML. De la página local se toman SOLO estadio y capacidad: MEDIDO, en "Liga1 2022 (Perú)" la tabla de
+  kits tiene las columnas corridas (ADT con sponsor "Huancayo", Alianza Lima con "Nike"). Lo que viene de ahí lleva `fuenteLocal` y la
+  lista `local` de campos. Estadio de 88% a 96% (891 de 932); capacidad 89%.
+- Limpieza (avisos de fos-pantallas): un sponsor "TBA", "TBD", "N/A" o sin letras ("0", "22") es un dato que falta; una capacidad menor a
+  100 también. Alias de estadio: "Stadio Olimpico di Roma" (Roma y Lazio), "Estádio Com. Joaquim A. Freitas" (Moreirense).
+- `generate-sponsors.js` escribe además `data/sponsors-indice.js` (pedido de fos-pantallas, para el buscador):
+  `window.SPONSORS_INDICE = [[id, nombre, roles]]`, ~95 KB; `--check` mira los dos. ASSET_V 1272 (main estaba en 1271).
+
+### Qué queda (TODO)
+
+- 273: 140 ejercicios cargados sin estadio o sin sponsor (casi todos sin sponsor: ligas de ascenso y años viejos sin tabla de kits en
+  ninguna Wikipedia). `node tools/estadio-sponsor.mjs --ensayo` los lista; van a `tools/contexto-manual.json` con fuente.
+- `tools/generate-sponsors.js` todavía no suma lo de `contexto-manual.json` (está por año de ejercicio, no por liga-temporada).

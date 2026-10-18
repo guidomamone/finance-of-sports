@@ -22,6 +22,7 @@
 //   node tools/estadio-sponsor.mjs --ensayo --todas    llena la caché por liga-año con TODAS las ligas de las listas (para el índice
 //                                                      de sponsors: tools/generate-sponsors.js)
 //   node tools/estadio-sponsor.mjs --ensayo --actuales la temporada en curso de cada liga (los sponsors de hoy), a la misma caché
+//   ... --local                                        además, la Wikipedia del país para los huecos (con compuerta; queda en la caché)
 //   ... --liga <ligaId>                                  solo esa liga (para probar)
 // ============================================================================
 import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
@@ -105,11 +106,14 @@ function tablas(wikitext) {
     return { encabezado: encabezado || [], grilla, soloActual: /ONLY CURRENT|current season only/i.test(antes + texto.slice(0, 400)) };
   });
 }
+const ENTIDADES = { '&ndash;': '–', '&mdash;': '—', '&amp;': '&', '&quot;': '"', '&#39;': "'", '&apos;': "'", '&nbsp;': ' ' };
 function cleanTexto(c) {
-  c = atributos(String(c || '')).texto; // un atributo de celda que llegó hasta acá no es parte del nombre
+  c = atributos(String(c || '')).texto.replace(/&(ndash|mdash|amp|quot|#39|apos|nbsp);/g, (m) => ENTIDADES[m]); // un atributo de celda que llegó hasta acá no es parte del nombre
   // un <br> separa dos nombres ("Palácio<br>do Gelo"): espacio, no nada; un enlace externo "[https://... Efapel]" vale su texto
   let s = sinRefs(String(c || '')).replace(/<br\s*\/?>/gi, ' ').replace(/\[https?:\/\/[^\s\]]+\s+([^\]]+)\]/g, '$1').replace(/^\s*\|/, '');
   s = s.replace(/\{\{\s*sort\s*\|[^|}]*\|([^}]*)\}\}/gi, '$1');
+  // {{Futebol Benfica}} (pt.wikipedia): la plantilla del club es el nombre
+  s = s.replace(/\{\{\s*(?:Futebol|Fútbol|Calcio)\s+([^|{}]+)[^{}]*\}\}/gi, '$1');
   // {{nowrap|Almería}} envuelve el nombre entero (kits de LaLiga): se desenvuelve; {{flagicon|...}} y {{ref|...}} se van abajo
   for (let k = 0; k < 3; k++) s = s.replace(/\{\{\s*(?:nowrap|nobreak|center|small|nobr|nowrap begin)\s*\|((?:[^{}]|\{\{[^{}]*\}\}|\[\[[^\]]*\]\])*)\}\}/gi, '$1');
   s = s.replace(/\{\{\s*(?:flagicon|flag icon|flagdeco|ref|efn|refn|#invoke:flag)[^{}]*\}\}/gi, '');
@@ -120,7 +124,8 @@ function cleanTexto(c) {
 }
 function capacidad(c) {
   const s = sinRefs(String(c || '')).replace(/\{\{\s*(?:nts|formatnum|nowrap)\s*:?\|?\s*([^}|]*)[^}]*\}\}/gi, '$1');
-  const m = s.match(/\d{1,3}(?:[.,\s ]\d{3})+|\d{3,6}/); return m ? Number(m[0].replace(/\D/g, '')) : null;
+  const m = s.match(/\d{1,3}(?:[.,\s ]\d{3})+|\d{3,6}/); const n = m ? Number(m[0].replace(/\D/g, '')) : null;
+  return n && n >= 100 ? n : null; // "0" o un número de dos cifras no es una capacidad
 }
 const col = (enc, re, no) => enc.findIndex((h) => re.test(h) && !(no && no.test(h)));
 
@@ -152,12 +157,19 @@ function galeriaEstadios(wikitext) {
 function leerPagina(wikitext) {
   const estadios = [], kits = [];
   for (const t of tablas(wikitext)) {
-    const e = t.encabezado; const iClub = col(e, /^(club|team|clubs|teams|equipo|squadra)\b/i);
+    // encabezados en inglés y en las Wikipedias del país (pt, es, it, ru): "Clube | Estádio | Capacidade", "Equipo | Estadio | Capacidad",
+    // "Squadra | Stadio | Capienza", "Клуб | Стадион | Вместимость"; marca: "Fornecedor / Material esportivo / Indumentaria / Fornitore
+    // tecnico / Производитель"; sponsor: "Patrocinador / Patrocínio / Sponsor (no el 'tecnico') / Спонсор"
+    const e = t.encabezado; const iClub = col(e, /^(club|team|clubs|teams|equipo|equipos|equipa|equipas|squadra|squadre|clube|clubes|time|equipe|клуб|команда)\b/i);
     if (iClub < 0) continue;
-    const iEst = col(e, /stadium|venue|ground|stadio|estadio|arena|home/i, /capacity|location|city/i), iCap = col(e, /capacity|capacidad|capienza/i);
-    const iKit = col(e, /kit|manufacturer|outfitter|supplier/i), iSp = col(e, /sponsor/i, /back|sleeve|short|secondary/i);
+    // "Estádio, Cidade" (pt-PT): una columna que EMPIEZA con estadio vale aunque nombre la ciudad; si no, sin ciudad ni capacidad
+    let iEst = col(e, /^(stadium|venue|ground|stadio|estadio|estádio|arena|стадион)/i);
+    if (iEst < 0) iEst = col(e, /stadium|venue|ground|stadio|estadio|estádio|arena|home|стадион/i, /capacity|capacidad|capacidade|capienza|location|city|ciudad|cidade|città|localidad|город|вместим/i);
+    const iCap = col(e, /capacity|capacidad|capacidade|capienza|вместим/i);
+    const iKit = col(e, /kit|manufacturer|outfitter|supplier|fornecedor|material|indumentaria|fornitore|sponsor tecnico|marca deportiva|производител|экипиров/i);
+    const iSp = col(e, /sponsor|patrocin|спонсор/i, /back|sleeve|short|secondary|tecnic|técnic|costas|manga|espalda/i);
     const filas = (f) => t.grilla.map(f).filter((x) => x.club);
-    if (iEst >= 0 && iCap >= 0) estadios.push(filas((f) => ({ club: cleanTexto(f[iClub]), estadio: cleanTexto(f[iEst]) || null, capacidad: capacidad(f[iCap]) })));
+    if (iEst >= 0) estadios.push(filas((f) => ({ club: cleanTexto(f[iClub]), estadio: cleanTexto(f[iEst]) || null, capacidad: iCap >= 0 ? capacidad(f[iCap]) : null })));
     if (iKit >= 0 || iSp >= 0) kits.push({ soloActual: t.soloActual, filas: filas((f) => ({ club: cleanTexto(f[iClub]), sponsor: iSp >= 0 ? cleanTexto(f[iSp]) || null : null, marca: iKit >= 0 ? cleanTexto(f[iKit]) || null : null })) });
   }
   // sin tabla de estadios, la galería ("Venues" de las páginas rusas)
@@ -182,9 +194,52 @@ function delClub(p, nombres) {
     const pa = filas.filter((f) => nota(f) === 1); return pa.length === 1 ? pa[0] : null;
   };
   const r = { estadio: null, capacidad: null, sponsor: null, marca: null, soloActual: false };
-  for (const t of p.estadios) { const f = fila(t); if (f) { r.estadio = f.estadio; r.capacidad = f.capacidad; break; } }
-  for (const t of p.kits) { const f = fila(t.filas); if (f) { r.sponsor = f.sponsor; r.marca = f.marca; r.soloActual = t.soloActual; break; } }
+  // una entidad HTML guardada en la caché antes de que el lector las decodificara ("José Alvalade &ndash; Século XXI")
+  // "TBA", "TBD", "N/A", "None", "—": la tabla dice que no se sabe; no es un nombre (Akhmat Grozny 2023: sponsor "TBA")
+  const dec = (v) => { if (typeof v !== 'string') return v; const x = v.replace(/&(ndash|mdash|amp|quot|#39|apos|nbsp);/g, (m) => ENTIDADES[m]).trim(); return /^(tba|tbd|tbc|n\/?a|none|no|nil|–|—|-|\?)$/i.test(x) || !/\p{L}/u.test(x) ? null : x; };
+  for (const t of p.estadios) { const f = fila(t); if (f) { r.estadio = dec(f.estadio); r.capacidad = f.capacidad >= 100 ? f.capacidad : null; break; } }
+  for (const t of p.kits) { const f = fila(t.filas); if (f) { r.sponsor = dec(f.sponsor); r.marca = dec(f.marca); r.soloActual = t.soloActual; break; } }
   return r;
+}
+
+// SEGUNDA FUENTE: LA WIKIPEDIA DEL PAÍS (ok de Guido, "fuente en lote" para los huecos). La página de la misma temporada en la Wikipedia
+// local trae tablas que la inglesa no tiene (temporadas viejas, ligas de ascenso, "Indumentaria y patrocinio"). Se busca con la API de
+// búsqueda (nombre de la liga + temporada); COMPUERTA: el título trae la temporada y la página nombra al menos el 60% de los equipos de la
+// lista en inglés de esa temporada. Solo completa campos que la inglesa no dio, con su propia fuente (`fuenteLocal`, campos en `local`).
+const LOCAL = {
+  pt: { lang: 'pt', ligas: { 'pt-primeiraliga': 'Primeira Liga', 'pt-ligaportugal2': 'Segunda Liga', 'pt-liga3': 'Liga 3 Portugal' } },
+  br: { lang: 'pt', ligas: { 'br-serieA': 'Campeonato Brasileiro de Futebol Série A', 'br-serieB': 'Campeonato Brasileiro de Futebol Série B', 'br-serieC': 'Campeonato Brasileiro de Futebol Série C', 'br-serieD': 'Campeonato Brasileiro de Futebol Série D', 'br-paulistaA1': 'Campeonato Paulista de Futebol', 'br-paulistaA2': 'Campeonato Paulista de Futebol Série A2', 'br-paulistaA3': 'Campeonato Paulista de Futebol Série A3' } },
+  it: { lang: 'it', ligas: { 'it-seriea': 'Serie A', 'it-serieb': 'Serie B', 'it-seriec': 'Serie C', 'it-seried': 'Serie D' } },
+  ar: { lang: 'es', ligas: { 'ar-primera': 'Primera División de Argentina', 'ar-primeranacional': 'Primera Nacional', 'ar-primerab': 'Primera B Metropolitana' } },
+  co: { lang: 'es', ligas: { 'co-primeraA': 'Liga Colombiana Primera A', 'co-primeraB': 'Torneo Primera B Colombia' } },
+  pe: { lang: 'es', ligas: { 'pe-liga1': 'Liga 1 Perú' } },
+  cl: { lang: 'es', ligas: { 'cl-primera': 'Primera División de Chile' } },
+  ru: { lang: 'ru', ligas: { 'ru-premierliga': 'Чемпионат России по футболу', 'ru-pervayaliga': 'Первая лига России по футболу' } },
+};
+async function buscarLocal(lang, q) {
+  for (let i = 0; i < 3; i++) {
+    await dormir(1500 * (i ? 4 * i : 1));
+    try { const r = await fetch(`https://${lang}.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(q)}&format=json&srlimit=6`, { headers: { 'User-Agent': 'finance-of-sports/1.0 (https://financeofsports.com; research, pocas consultas)' } }); return (JSON.parse(await r.text()).query?.search || []).map((x) => x.title); } catch { /* reintenta */ }
+  }
+  return [];
+}
+// formas de escribir la temporada en un título: "2004–05", "2004-05", "2004-2005", "2004/05", "2004/2005"; o "2021"
+function formasTemporada(anio, partida) {
+  const a = anio - 1, yy = String(anio).slice(2);
+  return partida ? [`${a}–${yy}`, `${a}-${yy}`, `${a}–${anio}`, `${a}-${anio}`, `${a}/${yy}`, `${a}/${anio}`] : [String(anio)];
+}
+async function paginaLocal(iso, liga, anio, partida, equiposEn) {
+  const cfg = LOCAL[iso]; const nombre = cfg?.ligas[liga]; if (!nombre) return null;
+  const formas = formasTemporada(anio, partida);
+  const titulos = await buscarLocal(cfg.lang, `${nombre} ${formas[partida ? 0 : 0]}`);
+  for (const t of titulos.filter((t) => formas.some((f) => t.includes(f)) && !(partida ? false : new RegExp(`${anio}[–/-]|[–/-]${anio}`).test(t)))) {
+    const p = await pagina(t, cfg.lang); if (!p) continue;
+    const r = leerPagina(p.wikitext);
+    const nombresPag = [...r.estadios.flat(), ...r.kits.flatMap((k) => k.filas)].map((x) => x.club);
+    const cubre = equiposEn.filter((eq) => nombresPag.some((n) => pega(n, eq))).length;
+    if (equiposEn.length && cubre / equiposEn.length >= 0.6) return { pagina: p.titulo, lang: cfg.lang, revid: p.revid, ...r };
+  }
+  return null;
 }
 
 // CACHÉ POR LIGA-AÑO: tools/club-league-reference/contexto/<iso>.json, { liga: { año: { pagina, lang, revid, estadios, kits } } }. Una página
@@ -280,6 +335,27 @@ async function main() {
   // la caché se guarda también en --ensayo: es lo bajado de Wikipedia, no un dato del sitio
   for (const iso of tocados) guardarCtx(iso, ctx[iso]);
   const leida = (e) => ctx[e.iso]?.[e.liga]?.[e.s] || null;
+  const nombresDe = (e) => [CI[e.id]?.n, CLUBS[e.id]?.displayName, CLUBS[e.id]?.name, ...Object.entries(alias[e.iso] || {}).filter(([, a]) => a.clubId === e.id).map(([x]) => x)].filter(Boolean);
+
+  // --local: la Wikipedia del país para las liga-años donde a algún ejercicio le falta estadio o sponsor (queda en la misma caché, clave
+  // `local`; null = se buscó y no hubo página que pase la compuerta)
+  if (args.includes('--local')) {
+    const pedir = new Map();
+    for (const e of ejercicios) {
+      const p = leida(e); if (!p || !LOCAL[e.iso]?.ligas[e.liga]) continue;
+      const r = delClub(p, nombresDe(e)); if (r.estadio && r.sponsor) continue;
+      if (!refrescar && p.local !== undefined) continue;
+      pedir.set(`${e.iso}|${e.liga}|${e.s}`, e);
+    }
+    console.log(`Wikipedia del país: ${pedir.size} liga-años para buscar`);
+    let i = 0;
+    for (const e of pedir.values()) {
+      const lst = cache[e.iso]?.leagues?.[e.liga]?.[e.s]; const partida = /[–-]\d{2,4}\b/.test(lst?.wikipediaPage || '');
+      ctx[e.iso][e.liga][e.s].local = await paginaLocal(e.iso, e.liga, e.s, partida, lst?.clubs || []); tocados.add(e.iso);
+      if (++i % 20 === 0) { console.error(`  ${i}/${pedir.size}`); for (const iso of tocados) guardarCtx(iso, ctx[iso]); }
+    }
+    for (const iso of tocados) guardarCtx(iso, ctx[iso]);
+  }
 
   const n = { est: 0, cap: 0, sp: 0, kit: 0, soloActualViejo: 0 }; const porLiga = {}; const salida = {}; const faltan = [];
   for (const e of ejercicios) {
@@ -288,10 +364,19 @@ async function main() {
     if (escribir && yaEsta(e)) d = { ...previo[e.id][e.y] };
     else if (e.page && leida(e)) {
       const p = leida(e);
-      const nombres = [CI[e.id]?.n, CLUBS[e.id]?.displayName, CLUBS[e.id]?.name, ...Object.entries(alias[e.iso] || {}).filter(([, a]) => a.clubId === e.id).map(([x]) => x)].filter(Boolean);
+      const nombres = nombresDe(e);
       const r = delClub(p, nombres);
       if (r.soloActual && !e.ultima && (r.sponsor || r.marca)) { n.soloActualViejo++; r.sponsor = null; r.marca = null; }
       d = { estadio: r.estadio, capacidad: r.capacidad, sponsor: r.sponsor, marca: r.marca, temporada: p.pagina, fuente: `https://${p.lang}.wikipedia.org/w/index.php?oldid=${p.revid}` };
+      // lo que la inglesa no dio, de la Wikipedia del país (si se bajó con --local)
+      if (p.local) {
+        const rl = delClub(p.local, nombres); if (rl.soloActual && !e.ultima) { rl.sponsor = null; rl.marca = null; }
+        // SOLO estadio y capacidad. MEDIDO (2026-10-18): en "Liga1 2022 (Perú)" la tabla de kits tiene las columnas corridas (ADT con
+        // sponsor "Huancayo", la ciudad; Alianza Lima con "Nike", la marca); los estadios de las páginas locales salieron bien en la muestra
+        const puso = ['estadio', 'capacidad'].filter((k) => d[k] == null && rl[k] != null);
+        for (const k of puso) d[k] = rl[k];
+        if (puso.length) Object.assign(d, { fuenteLocal: `https://${p.local.lang}.wikipedia.org/w/index.php?oldid=${p.local.revid}`, local: puso });
+      }
     }
     // el mismo estadio escrito de dos formas se unifica por club (tools/estadio-alias.json; un cambio de nombre real no está ahí)
     if (d?.estadio && aliasEst[e.id]?.[d.estadio]) d.estadio = aliasEst[e.id][d.estadio];

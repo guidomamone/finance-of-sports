@@ -5,7 +5,7 @@ window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
 Object.assign(window.CLUB_CONTEXT, {
   'akhmatgrozny-ru': {
     2022: {"estadio":"Akhmat-Arena","capacidad":30597,"sponsor":"Akhmat Foundation","marca":"Joma","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016"},
-    2023: {"estadio":"Akhmat-Arena","capacidad":30597,"sponsor":"TBA","marca":"Joma","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
+    2023: {"estadio":"Akhmat-Arena","capacidad":30597,"marca":"Joma","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
     2024: {"estadio":"Akhmat-Arena","capacidad":30597,"sponsor":"Akhmat Foundation","marca":"Joma","temporada":"2024–25 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378137266"},
     2025: {"estadio":"Akhmat-Arena","capacidad":30000,"sponsor":"Akhmat Foundation","marca":"Joma","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
   },
@@ -66,7 +66,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'orenburg-ru': {
     2021: {"estadio":"Gazovik Stadium","capacidad":7520,"temporada":"2021–22 Russian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376304530"},
     2022: {"estadio":"Gazovik Stadium","capacidad":10046,"marca":"Adidas","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016"},
-    2023: {"estadio":"Gazovik Stadium","capacidad":10046,"sponsor":"TBA","marca":"Adidas","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
+    2023: {"estadio":"Gazovik Stadium","capacidad":10046,"marca":"Adidas","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
     2024: {"estadio":"Gazovik Stadium","capacidad":10046,"sponsor":"EcoGas","marca":"Adidas","temporada":"2024–25 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378137266"},
     2025: {"estadio":"Gazovik Stadium","capacidad":10046,"sponsor":"EcoGas","marca":"PRIMERA","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
   },
