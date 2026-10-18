@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2024-06-30-individual.pdf",
   "club": "ohleuven-be",
   "year": 2024,
-  "generatedAt": "2026-10-18T15:37:11.885Z",
+  "generatedAt": "2026-10-18T19:16:12.121Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         24.749706
       ],
-      "glosa": "Importe neto de la cifra de negocios"
+      "glosa": "Cifra de negocios"
     },
     {
       "label": "Andere bedrijfsopbrengsten",
@@ -44,17 +44,17 @@
       "values": [
         1.557743
       ],
-      "glosa": "Aprovisionamientos"
+      "glosa": "Compras"
     },
     {
       "label": "Voorraad: afname (toename)",
       "lado": "expense",
       "page": 8,
-      "section": "estado",
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
       "values": [
-        0.001357
+        -0.001357
       ],
-      "glosa": "Variación de existencias: disminución (aumento)"
+      "glosa": "Existencias: disminución (aumento)"
     },
     {
       "label": "Diensten en diverse goederen",
@@ -104,7 +104,7 @@
       "values": [
         5.382524
       ],
-      "glosa": "Amortizaciones y correcciones de valor de gastos de establecimiento, inmovilizado intangible y material"
+      "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, inmovilizado intangible y material"
     },
     {
       "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)",
@@ -114,7 +114,7 @@
       "values": [
         0.007065
       ],
-      "glosa": "Correcciones de valor de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones)"
+      "glosa": "Pérdidas por deterioro de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones)"
     },
     {
       "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen)",

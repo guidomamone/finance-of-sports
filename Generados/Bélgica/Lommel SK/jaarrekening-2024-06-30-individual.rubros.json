@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2024-06-30-individual.pdf",
   "club": "lommelsk-be",
   "year": 2024,
-  "generatedAt": "2026-10-18T15:28:00.145Z",
+  "generatedAt": "2026-10-18T19:16:12.027Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -50,11 +50,11 @@
       "label": "Voorraad: afname (toename) (+)/(-)",
       "lado": "expense",
       "page": 8,
-      "section": "estado",
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
       "values": [
-        0.001719
+        -0.001719
       ],
-      "glosa": "Variación de existencias: disminución (aumento) (+)/(-)"
+      "glosa": "Existencias: disminución (aumento) (+)/(-)"
     },
     {
       "label": "Diensten en diverse goederen",
@@ -74,7 +74,7 @@
       "values": [
         12.730046
       ],
-      "glosa": "Remuneraciones y prestaciones sociales directas"
+      "glosa": "Remuneraciones y beneficios sociales directos"
     },
     {
       "label": "Werkgeversbijdragen voor sociale verzekeringen",
@@ -84,7 +84,7 @@
       "values": [
         1.652467
       ],
-      "glosa": "Aportaciones patronales a la seguridad social"
+      "glosa": "Cotizaciones patronales a la seguridad social"
     },
     {
       "label": "Andere personeelskosten",
@@ -134,7 +134,7 @@
       "values": [
         0.923578
       ],
-      "glosa": "Pérdidas en la enajenación de inmovilizado intangible y material"
+      "glosa": "Minusvalías en la enajenación de inmovilizado intangible y material"
     },
     {
       "label": "Andere niet-recurrente bedrijfskosten",

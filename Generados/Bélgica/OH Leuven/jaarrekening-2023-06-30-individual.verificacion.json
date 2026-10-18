@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2023-06-30-individual.pdf",
  "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2023-06-30-individual.md",
- "generado": "2026-10-18T15:46:15.623Z",
+ "generado": "2026-10-18T19:16:12.116Z",
  "estado": "cola",
  "clubId": "ohleuven-be",
  "year": 2023,
@@ -13,7 +13,6 @@
  },
  "ajustes": null,
  "cola": [
-  "42d4fad",
   "ca845e4",
   "ec2febf",
   "09ce519"
@@ -29,13 +28,20 @@
   {
    "nombre": "total de gastos",
    "ok": true,
-   "detalle": "\"Bedrijfskosten\" 39.138613 cierra; además se suman 12 línea(s) fuera de ese total (40.477885)"
+   "detalle": "39.138613 = 39.138613",
+   "suma": 39.138613,
+   "impreso": 39.138613
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 21.345701 - gastos 79.616498 ± financiero 0.809855 ± impuesto 0.265369 no da el impreso -18.833752",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 0
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2024",
@@ -46,9 +52,15 @@
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b76 es una versión resumida del estado de resultados ya cargado de b10-b11, solo con el ejercicio actual.",
   "duda de extraer ya contestada para el club (antes de su alta) (fila-ilegible, \"Omzet\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
   "duda de extraer ya contestada para el club (antes de su alta) (fila-ilegible, \"Andere financiële opbrengsten\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
@@ -58,13 +70,13 @@
  "faltasDesglose": null,
  "totales": {
   "ingresos": 21.345701,
-  "gastos": 79.616498,
+  "gastos": 39.138613,
   "financiero": 0.809855,
   "impuesto": 0.265369,
   "resultadoImpreso": -18.833752,
   "resultadoParaCargar": -18.833752,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
  },
  "lineas": [
   {
@@ -92,22 +104,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Bedrijfskosten",
-   "lado": "gasto",
-   "M": 39.138613,
-   "pagina": 8,
-   "linea": 436,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Handelsgoederen, grond- en hulpstoffen",
-   "lado": "gasto",
-   "M": 1.311638,
-   "pagina": 8,
-   "linea": 437,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Aankopen",
    "lado": "gasto",
    "M": 1.325454,
@@ -118,10 +114,10 @@
   {
    "etiqueta": "Voorraad: afname (toename)",
    "lado": "gasto",
-   "M": 0.013817,
+   "M": -0.013817,
    "pagina": 8,
    "linea": 439,
-   "origen": "estado"
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
   },
   {
    "etiqueta": "Diensten en diverse goederen",
@@ -197,8 +193,8 @@
   }
  ],
  "signosCarga": {
-  "financiero": 1,
-  "impuesto": 1
+  "financiero": "rótulo",
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -208,19 +204,19 @@
   },
   {
    "etiqueta": "Kosten van schulden",
-   "M": 0.792462,
+   "M": -0.792462,
    "linea": 468
   },
   {
    "etiqueta": "Andere financiële kosten",
-   "M": 0.000201,
+   "M": -0.000201,
    "linea": 470
   }
  ],
  "impuesto": [
   {
    "etiqueta": "Belastingen",
-   "M": 0.265369,
+   "M": -0.265369,
    "linea": 476
   }
  ]

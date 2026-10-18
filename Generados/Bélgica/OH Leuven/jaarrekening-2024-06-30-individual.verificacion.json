@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2024-06-30-individual.pdf",
  "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2024-06-30-individual.md",
- "generado": "2026-10-18T15:46:15.627Z",
+ "generado": "2026-10-18T19:16:12.120Z",
  "estado": "cola",
  "clubId": "ohleuven-be",
  "year": 2024,
@@ -13,7 +13,6 @@
  },
  "ajustes": null,
  "cola": [
-  "2fcec6c",
   "1128d9a",
   "9e2481b"
  ],
@@ -28,15 +27,20 @@
   {
    "nombre": "total de gastos",
    "ok": true,
-   "detalle": "45.808135 = 45.805422",
-   "suma": 45.808135,
+   "detalle": "45.805421 = 45.805422",
+   "suma": 45.805421,
    "impreso": 45.805422
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 31.458703 - gastos 45.808135 ± financiero 0.752038 ± impuesto 0.155921 no da el impreso -15.144471",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 3.552713678800501e-15
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2025",
@@ -52,9 +56,15 @@
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b77 es una presentación resumida del mismo estado de resultados dentro del jaarverslag.",
   "duda de localizar que no afecta la carga: El sociaal balans repite gastos de personal ya desglosados en la nota 6.10 (b43).",
   "duda de extraer que no afecta la carga: La tabla está desalineada (L1817, L1820 muestran códigos en la columna de importes); 17.250+6.977=24.227 confirma."
@@ -64,13 +74,13 @@
  "faltasDesglose": null,
  "totales": {
   "ingresos": 31.458703,
-  "gastos": 45.808135,
+  "gastos": 45.805421,
   "financiero": 0.752038,
   "impuesto": 0.155921,
   "resultadoImpreso": -15.144471,
   "resultadoParaCargar": -15.144471,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
  },
  "lineas": [
   {
@@ -108,10 +118,10 @@
   {
    "etiqueta": "Voorraad: afname (toename)",
    "lado": "gasto",
-   "M": 0.001357,
+   "M": -0.001357,
    "pagina": 8,
    "linea": 490,
-   "origen": "estado"
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
   },
   {
    "etiqueta": "Diensten en diverse goederen",
@@ -195,8 +205,8 @@
   }
  ],
  "signosCarga": {
-  "financiero": 1,
-  "impuesto": 1
+  "financiero": "rótulo",
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -206,19 +216,19 @@
   },
   {
    "etiqueta": "Kosten van schulden",
-   "M": 0.696818,
+   "M": -0.696818,
    "linea": 519
   },
   {
    "etiqueta": "Andere financiële kosten",
-   "M": 0.000117,
+   "M": -0.000117,
    "linea": 521
   }
  ],
  "impuesto": [
   {
    "etiqueta": "Belastingen",
-   "M": 0.155921,
+   "M": -0.155921,
    "linea": 527
   }
  ]

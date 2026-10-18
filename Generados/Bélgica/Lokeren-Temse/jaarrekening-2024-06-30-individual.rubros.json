@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2024-06-30-individual.pdf",
   "club": "lokerentemse-be",
   "year": 2024,
-  "generatedAt": "2026-10-18T15:27:59.941Z",
+  "generatedAt": "2026-10-18T19:16:11.968Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -44,17 +44,17 @@
       "values": [
         0.033948
       ],
-      "glosa": "Amortizaciones y deterioros de valor de gastos de establecimiento, de inmovilizado intangible y material"
+      "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material"
     },
     {
       "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
       "lado": "expense",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
       "values": [
-        0.016419
+        -0.016419
       ],
-      "glosa": "Deterioros de valor de existencias, contratos en curso y deudores comerciales: dotaciones (reversiones) (+)/(-)"
+      "glosa": "Correcciones de valor sobre existencias, pedidos en curso y deudores comerciales: dotaciones (reversiones) (+)/(-)"
     },
     {
       "label": "Andere bedrijfskosten",

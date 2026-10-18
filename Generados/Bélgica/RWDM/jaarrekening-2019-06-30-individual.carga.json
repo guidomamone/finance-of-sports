@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2019-06-30-individual.pdf",
- "generado": "2026-10-18T15:46:21.191Z",
+ "generado": "2026-10-18T19:18:20.926Z",
  "frena": [
   {
    "etapa": "alta:anio",
@@ -181,9 +181,9 @@
  },
  "liga": {
   "valor": null,
-  "fuente": "sin caché de rosters para be (tools/club-league-reference/be.json)",
+  "fuente": "no hay ninguna liga-temporada de be 2019 cacheada",
   "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó, P3 liga-sin-verificar); para resolverla: resolve-wikipedia-season-page.mjs + fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
  },
  "procedencia": {
   "anio": {
@@ -223,7 +223,7 @@
   },
   "liga": {
    "valor": null,
-   "fuente": "sin caché de rosters para be (tools/club-league-reference/be.json)",
+   "fuente": "no hay ninguna liga-temporada de be 2019 cacheada",
    "estado": "pendiente"
   }
  },

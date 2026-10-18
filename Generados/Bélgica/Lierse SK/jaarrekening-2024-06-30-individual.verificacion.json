@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2024-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2024-06-30-individual.md",
- "generado": "2026-10-18T15:46:15.511Z",
+ "generado": "2026-10-18T19:16:11.949Z",
  "estado": "cola",
  "clubId": "liersesk-be",
  "year": 2024,
@@ -13,7 +13,6 @@
  },
  "ajustes": null,
  "cola": [
-  "ac1f20e",
   "72dfbfe"
  ],
  "chequeos": [
@@ -29,9 +28,14 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 2.949459 - gastos 2.980504 ± financiero 0.021654 ± impuesto 0.010092 no da el impreso -0.10788",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 0.0000010000000001675335
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2025",
@@ -52,20 +56,22 @@
  "notas": [
   "la nota de \"Waarvan: niet-recurrente bedrijfsopbrengsten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la nota de \"Niet-recurrente bedrijfskosten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "escalón \"de los cuales\": cerró la lectura 4 sin las filas \"Waarvan: niet-recurrente bedrijfsopbrengsten\" L238 (una parte de la fila de arriba)",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 2.949459,
+  "ingresos": 2.895671,
   "gastos": 2.980504,
   "financiero": 0.021654,
   "impuesto": 0.010092,
   "resultadoImpreso": -0.10788,
   "resultadoParaCargar": -0.10788,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
  },
  "lineas": [
   {
@@ -74,14 +80,6 @@
    "M": 2.895671,
    "pagina": 7,
    "linea": 237,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Waarvan: niet-recurrente bedrijfsopbrengsten",
-   "lado": "ingreso",
-   "M": 0.053788,
-   "pagina": 7,
-   "linea": 238,
    "origen": "estado"
   },
   {
@@ -126,8 +124,8 @@
   }
  ],
  "signosCarga": {
-  "financiero": 1,
-  "impuesto": 1
+  "financiero": "rótulo",
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -137,14 +135,14 @@
   },
   {
    "etiqueta": "Recurrente financiële kosten",
-   "M": 0.017305,
+   "M": -0.017305,
    "linea": 254
   }
  ],
  "impuesto": [
   {
    "etiqueta": "Belastingen op het resultaat (+)/(-)",
-   "M": 0.010092,
+   "M": -0.010092,
    "linea": 259
   }
  ]

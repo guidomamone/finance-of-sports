@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2022-06-30-individual.pdf",
   "club": "rwdm-be",
   "year": 2022,
-  "generatedAt": "2026-10-18T15:37:12.248Z",
+  "generatedAt": "2026-10-18T19:16:12.230Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -15,16 +15,6 @@
         1.08213
       ],
       "glosa": "Margen bruto"
-    },
-    {
-      "label": "Waarvan: niet-recurrente bedrijfsopbrengsten",
-      "lado": "revenue",
-      "page": 7,
-      "section": "estado",
-      "values": [
-        0.015452
-      ],
-      "glosa": "De los cuales: ingresos de explotación no recurrentes"
     },
     {
       "label": "Bezoldigingen, sociale lasten en pensioenen",
@@ -44,7 +34,7 @@
       "values": [
         0.141046
       ],
-      "glosa": "Amortizaciones y correcciones de valor sobre gastos de constitución, inmovilizado intangible y material"
+      "glosa": "Amortizaciones y deterioros de valor sobre gastos de establecimiento, inmovilizado intangible y material"
     },
     {
       "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)",
@@ -54,7 +44,7 @@
       "values": [
         0.017243
       ],
-      "glosa": "Correcciones de valor sobre existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones)"
+      "glosa": "Deterioros de valor sobre existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones)"
     },
     {
       "label": "Andere bedrijfskosten",

@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2024-06-30-individual.pdf",
   "club": "beerschot-be",
   "year": 2024,
-  "generatedAt": "2026-10-18T15:27:59.331Z",
+  "generatedAt": "2026-10-18T19:16:11.934Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -37,16 +37,6 @@
       "glosa": "Ingresos de explotación no recurrentes"
     },
     {
-      "label": "Bedrijfskosten",
-      "lado": "expense",
-      "page": 9,
-      "section": "estado",
-      "values": [
-        12.935553
-      ],
-      "glosa": "Gastos de explotación"
-    },
-    {
       "label": "Aankopen",
       "lado": "expense",
       "page": 9,
@@ -60,9 +50,9 @@
       "label": "Voorraad: afname (toename) (+)/(-)",
       "lado": "expense",
       "page": 9,
-      "section": "estado",
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
       "values": [
-        0.003043
+        -0.003043
       ],
       "glosa": "Existencias: disminución (aumento) (+)/(-)"
     },
@@ -124,7 +114,7 @@
       "values": [
         0.00821
       ],
-      "glosa": "Contabilizado"
+      "glosa": "Dotaciones"
     },
     {
       "label": "Geboekt",
@@ -134,15 +124,15 @@
       "values": [
         0.056624
       ],
-      "glosa": "Contabilizado"
+      "glosa": "Dotaciones"
     },
     {
       "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
       "lado": "expense",
       "page": 9,
-      "section": "estado",
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
       "values": [
-        0.019282
+        -0.019282
       ],
       "glosa": "Provisiones para riesgos y gastos: dotaciones (aplicaciones y reversiones) (+)/(-)"
     },

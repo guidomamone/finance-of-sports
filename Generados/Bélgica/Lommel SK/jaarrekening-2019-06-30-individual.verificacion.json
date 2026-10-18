@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2019-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2019-06-30-individual.md",
- "generado": "2026-10-18T15:46:15.531Z",
+ "generado": "2026-10-18T19:16:11.971Z",
  "estado": "cola",
  "clubId": "lommelsk-be",
  "year": 2019,
@@ -40,8 +40,8 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (como impresos)",
-   "dif": 0.0069330000000003
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 9.999999996956888e-7
   },
   {
    "nombre": "año anterior cargado",
@@ -75,7 +75,7 @@
   "resultadoImpreso": -0.780604,
   "resultadoParaCargar": -0.780604,
   "resultadoFinal": null,
-  "lecturaSignos": "como impresos"
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
  },
  "lineas": [
   {
@@ -120,8 +120,8 @@
   }
  ],
  "signosCarga": {
-  "financiero": 1,
-  "impuesto": 1
+  "financiero": "rótulo",
+  "impuesto": -1
  },
  "financiero": [
   {
@@ -131,14 +131,14 @@
   },
   {
    "etiqueta": "Recurrente financiële kosten",
-   "M": 0.000727,
+   "M": -0.000727,
    "linea": 268
   }
  ],
  "impuesto": [
   {
    "etiqueta": "Belastingen op het resultaat (+)/(-)",
-   "M": 0.00274,
+   "M": -0.00274,
    "linea": 273
   }
  ]

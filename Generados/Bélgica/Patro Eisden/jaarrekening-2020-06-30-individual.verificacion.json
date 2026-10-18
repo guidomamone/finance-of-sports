@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2020-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2020-06-30-individual.md",
- "generado": "2026-10-18T15:46:15.680Z",
+ "generado": "2026-10-18T19:01:12.640Z",
  "estado": "cola",
  "clubId": "patroeisden-be",
  "year": 2020,
@@ -15,7 +15,6 @@
  "cola": [
   "ec4494a",
   "7d40207",
-  "be7321e",
   "a92825a",
   "cae5216",
   "a789a4f",
@@ -34,9 +33,9 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 0.654869 - gastos 1.190699 ± financiero 0.086263 ± impuesto 0 no da el impreso -0.505959",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo)",
+   "dif": 1.1102230246251565e-16
   },
   {
    "nombre": "documento del año 2021",
@@ -56,7 +55,8 @@
  ],
  "notas": [
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
-  "duda de extraer que no afecta la carga: L184 no tiene importe en Boekjaar; se cargó con actual vacío para conservar el año anterior."
+  "duda de extraer que no afecta la carga: L184 no tiene importe en Boekjaar; se cargó con actual vacío para conservar el año anterior.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -69,7 +69,7 @@
   "resultadoImpreso": -0.505959,
   "resultadoParaCargar": -0.505959,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "financiero por rótulo"
  },
  "lineas": [
   {
@@ -114,7 +114,7 @@
   }
  ],
  "signosCarga": {
-  "financiero": 1,
+  "financiero": "rótulo",
   "impuesto": 1
  },
  "financiero": [
@@ -130,9 +130,29 @@
   },
   {
    "etiqueta": "Recurrente financiële kosten",
-   "M": 0.028196,
+   "M": -0.028196,
    "linea": 193
   }
  ],
- "impuesto": []
+ "impuesto": [],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "pendiente",
+  "clave": "fe4b567d9052d17ffaec299277e3ee77a4b1066d",
+  "rango": [
+   173,
+   205
+  ],
+  "lineasCargadas": [
+   178,
+   180,
+   181,
+   184,
+   185,
+   190,
+   191,
+   193
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 173 a 205 del .md):\nL174: | Bedrijfsopbrengsten en bedrijfskosten | Toel. | Codes | Boekjaar | Vorig boekjaar |\nL175: | --- | --- | --- | --- | --- |\nL176: | Brutomarge (+)/(-) |  | 9900 | 251.711 | -47.322 |\nL177: | Waarvan: niet-recurrente bedrijfsopbrengsten |  | 76A |  |  |\nL178: | Omzet |  | 70 | 654.869 | 314.774 |\nL179: | Lidgeld, schenkingen, legaten en subsidies |  | 73 |  |  |\nL180: | Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen |  | 60/61 | 403.158 | 362.096 |\nL181: | Bezoldigingen, sociale lasten en pensioenen (+)/(-) |  | 62 | 778.215 | 378.419 |\nL182: | Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa |  | 630 |  |  |\nL183: | Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) |  | 631/4 |  |  |\nL184: | Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-) |  | 635/9 |  | 183.400 |\nL185: | Andere bedrijfskosten |  | 640/8 | 9.326 | 2.611 |\nL186: | Als herstructureringskosten geactiveerde bedrijfskosten (-) |  | 649 |  |  |\nL187: | Niet-recurrente bedrijfskosten |  | 66A |  |  |\nL188: | Bedrijfswinst (Bedrijfsverlies) (+)/(-) |  | 9901 | -535.830 | -611.752 |\nL189: | Financiële opbrengsten | 6.4 | 75/76B | 58.067 | 7.525 |\nL190: | Recurrente financiële opbrengsten |  | 75 | 110 | 7.525 |\nL191: | Niet-recurrente financiële opbrengsten |  | 76B | 57.957 |  |\nL192: | Financiële kosten | 6.4 | 65/66B | 28.196 | 3.975 |\nL193: | Recurrente financiële kosten |  | 65 | 28.196 | 3.975 |\nL194: | Niet-recurrente financiële kosten |  | 66B |  |  |\nL195: | Winst (Verlies) van het boekjaar vóór belasting (+)/(-) |  | 9903 | -505.959 | -608.202 |\nL196: | Onttrekking aan de uitgestelde belastingen |  | 780 |  |  |\nL197: | Overboeking naar de uitgestelde belastingen |  | 680 |  |  |\nL198: | Belastingen op het resultaat (+)/(-) |  | 67/77 |  |  |\nL199: | Winst (Verlies) van het boekjaar (+)/(-) |  | 9904 | -505.959 | -608.202 |\nL200: | Onttrekking aan de belastingvrije reserves |  | 789 |  |  |\nL201: | Overboeking naar de belastingvrije reserves |  | 689 |  |  |\nL202: | Te bestemmen winst (verlies) van het boekjaar (+)/(-) |  | 9905 | -505.959 | -608.202 |\nL204: 6/11\n\nLO QUE SE CARGA:\n- ingreso · \"Omzet\" · 0.654869 · L178\n- gasto · \"Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen\" · 0.403158 · L180\n- gasto · \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\" · 0.778215 · L181\n- gasto · \"Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)\" · 0 · L184\n- gasto · \"Andere bedrijfskosten\" · 0.009326 · L185\n- financiero · \"Recurrente financiële opbrengsten\" · 0.00011 · L190\n- financiero · \"Niet-recurrente financiële opbrengsten\" · 0.057957 · L191\n- financiero · \"Recurrente financiële kosten\" · -0.028196 · L193"
+ }
 }

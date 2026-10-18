@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2019-06-30-individual.pdf",
- "generado": "2026-10-18T15:46:20.651Z",
+ "generado": "2026-10-18T19:18:20.491Z",
  "frena": [
   {
    "etapa": "categoria-en-cola",
@@ -109,7 +109,7 @@
    "gestionId": null,
    "profitOnPlayerSales": 0,
    "assetSales": 0,
-   "netInterest": 0.001198,
+   "netInterest": -0.001122,
    "tax": 0,
    "extraRows": [
     {
@@ -118,7 +118,7 @@
     },
     {
      "label": "Financiële kosten",
-     "value": 0.00116
+     "value": -0.00116
     }
    ],
    "grossDebt": null,
@@ -279,7 +279,7 @@
   {
    "label": "Financiële kosten",
    "page": null,
-   "native": 0.00116,
+   "native": -0.00116,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
@@ -336,9 +336,9 @@
  },
  "liga": {
   "valor": null,
-  "fuente": "sin caché de rosters para be (tools/club-league-reference/be.json)",
+  "fuente": "no hay ninguna liga-temporada de be 2019 cacheada",
   "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó, P3 liga-sin-verificar); para resolverla: resolve-wikipedia-season-page.mjs + fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
  },
  "procedencia": {
   "anio": {
@@ -378,7 +378,7 @@
   },
   "liga": {
    "valor": null,
-   "fuente": "sin caché de rosters para be (tools/club-league-reference/be.json)",
+   "fuente": "no hay ninguna liga-temporada de be 2019 cacheada",
    "estado": "pendiente"
   }
  },

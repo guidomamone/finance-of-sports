@@ -120,3 +120,96 @@ j) DATOS (no script): Estonia no tiene ligas en `data/leagues.js`; propuesto `ee
 - ESTONIA COMPLETA: los 54 años 2019-2025 de los 9 clubes en el sitio (Narva Trans 2021 el último). Listas 89, 89-rehacer, 91 y 91-rehacer archivadas en Admin/Archive/lotes/. Bélgica (listas 90 y 92) espera correr con las tools de main (mejoras b y o, compuerta de estadio y sponsor del 273).
 
 ## Después del tercer merge del 2026-10-18
+
+- Bélgica con las tools de main (b y o): verificar gratis sobre el lote 92 da 41 de 50 resultados que cierran (antes fallaban 27); el lote
+  saltea las 5 versiones originales que tienen -correction (Beerschot 2019, Lokeren-Temse 2023, Lommel SK 2021, Patro Eisden 2020 y 2024).
+  Lista 90 archivada (las 8 altas belgas 2025 ya en el sitio). Beerschot 2019 -correction: ajuste de cierre 30-06-2019 y lista lote-92-rehacer.
+- Mejora de script nueva (para el 298, s): periodo.mjs / localizar toman el INICIO del boekjaar como cierre cuando el ejercicio empieza en
+  junio (Beerschot 2019 -correction: "van 29-06-2018 tot 30-06-2019" -> ejercicio 2018) y localizar elige la columna "Vorig boekjaar"
+  (vacía): 0 filas extraídas, sin aviso de por qué.
+
+### Para la sesión nueva (Onboarding 2): por dónde seguir (2026-10-18, cierre de Onboarding 1)
+
+Estado: carpeta limpia, todo commiteado. Las tools son las de main (la rama se adelantó a main después del tercer merge). Antes de
+nada: `node tools/worktree.mjs preparar /Users/guidopablomamonesoneira/Claude/Projects/fos-onboarding`.
+
+**1. Bélgica (to-do 292), lo que va primero.** Lista activa `Admin/lotes/lote-92.txt` (55 documentos, 2013-2024 de Beerschot, Lierse SK,
+Lokeren-Temse, Lommel SK, OH Leuven, Patro Eisden y RWDM; la 90, de las altas 2025, ya está archivada). Ya en el sitio: los 8 clubes belgas
+2025, Lommel SK 2018 y RWDM 2020. Con las tools de main (mejoras b y o), `verificar` gratis da 41 de 50 resultados que cierran. Primer
+comando (lo corre Guido, ~US$ 1,65):
+```
+cd /Users/guidopablomamonesoneira/Claude/Projects/fos-onboarding && caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-92-rehacer.txt --ejecutar --rehacer && caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-92.txt --ejecutar --cargar ; osascript -e 'display notification "Terminó el lote" with title "finance-of-sports" sound name "Glass"'; say "lote terminado"
+```
+`lote-92-rehacer.txt` es Beerschot 2019 -correction: se había localizado con la columna "Vorig boekjaar" (vacía, 0 filas); ya tiene el
+ajuste `cierre` 2019-06-30. Después: la cola belga con subagentes Sonnet, un club por vez. El método que funcionó en los lotes 89-91: armar
+los casos por club con un script (cola.mjs filtrado por carpeta, sin gestión), un subagente por grupo de clubes con el prompt "solo Read,
+Write y grep simple" (memoria subagentes-sin-bash), revisar los borradores grandes contra el .md y con `verificar.mjs` (gratis) antes de
+aplicarlos, y aplicar con un script (`cola.mjs --responder` / `ajustes.mjs --agregar`). Precedentes belgas ya decididos: el 630
+(amortizaciones) se parte según la nota de activos fijos (pases -> player_amortisation, bienes de uso -> depreciation, goodwill ->
+other_amortisation); el residuo implícito de la Brutomarge en el esquema abreviado va como other_income (Lokeren-Temse 2025, como Dender EH);
+la Brutomarge sin Omzet ni 60/61 es el ingreso operativo (lump_football_operations); el 76A "waarvan" no se suma aparte. Ojo: en main
+`cargar.mjs` frena un año nuevo sin estadio y sponsor (to-do 273); los años belgas pueden frenar por eso.
+DUDA ABIERTA para Guido: las 5 versiones originales reemplazadas por su -correction (Beerschot 2019, Lokeren-Temse 2023, Lommel SK 2021,
+Patro Eisden 2020 y 2024): ¿a `Admin/registros/documentos-descartados.txt`? (recomendado; el lote ya no las usa).
+Caja y deuda de los 17 clubes nuevos: vacía. Estonia no tiene dónde mirar (mejora r); en Bélgica cuidado con el código "54/58" leído como
+caja (mejora c). No correr `caja-deuda --escribir` en Bélgica sin mirar el valor contra el balance.
+
+**2. To-do 292, lo que queda además de Bélgica.** Los 319 `.md` viejos sin tablas de `Admin/lotes/sin-tablas-6paises.txt`: decidir
+subagentes o Mistral; antes, medir cuántos frena la mejora e (la marca vieja de Jev saltea el control "sin tablas": OH Leuven 2022 y Llaneros
+2022 son dos casos). Países Bajos, Suiza, Beşiktaş y Colombia de `subagentes-validar.txt` ya están validados (listo) y SIN lotes de carga:
+armar el alta de cada país con un solo año (el más reciente con estado de resultados), igual que Estonia y Bélgica (lotes 89-90).
+`Admin/lotes/subagentes-pb-co.txt`: revisar si quedó algo sin validar.
+
+**3. Los demás to-dos del plan, sin empezar:** 238 (estados intermedios del inventario a 0), 285 (Viking Fotball AS: el 2025 ya está
+transcripto por Mistral; faltan los otros años del AS), 284 (Fredrikstad y Sarpsborg 08 sobre el FLI; Fredrikstad: abrir antes
+`wf-src-FFK_-_Årsmøte_2025.pdf`; Pardubice no se da de alta), 283 (Vålerenga y Aalesund: sumar AS + FLI sin contar dos veces la
+transferencia; lo de pantalla, para fos-finanzas), 195 (gestiones de los clubes nuevos: todos los años de Estonia y Bélgica salieron con el
+aviso "ningún presidente confirmado"; `node tools/gestiones-tanda.mjs --armar --escribir`), 165 c (altas de los países nuevos).
+
+**4. Dudas al club ya anotadas en `Admin/dudas-por-club.md`:** Paide Linnameeskond (becas y apoyos de la Lisa 10, cargados como
+wages_squad) y FCI Levadia ("Liikmemaks" 2019-2020 que el club paga, cargado como admin_general_expense).
+
+**5. Cómo trabajó esta sesión (lo que le sirvió a Guido):** un paso por vez; ensayo gratis antes de cada comando pago; el comando entero
+con costo en el último mensaje, terminado en `; osascript ...; say "lote terminado"`; scripts en el scratchpad corridos con `node` (sin
+variables, sin `cd`, sin espacios escapados, sin `git -C`: si no, cada comando le pide permiso a Guido); las mejoras de script van al cierre
+como letras para fos-pipeline, sin aplicarlas.
+
+## Onboarding 2
+
+- Lote 92 de Bélgica corrido (lote-92-rehacer y lote-92, ~US$ 1,65): 0 años escritos. De 50 documentos: 37 frenan en la verificación con
+  casos en la cola, 3 en la categorización, 2 piden reintento, 3 sin propuesta (OH Leuven 2017 sin estado; 2018 y 2022 con páginas en
+  imagen), 3 ya estaban en el sitio y 2 listos pero frenados por la compuerta de estadio y sponsor (Lommel SK 2020 y 2022).
+- Cola belga contestada por subagentes Sonnet, un borrador por club (126 casos sin contar gestión). Aplicadas las 58 respuestas que no tocan
+  importes (perfiles en 0 reales, el 617 dentro del 61, el desglose geográfico del Omzet no se carga, cuadros que solo respaldan, etc.).
+  QUEDAN SIN APLICAR, a propósito, las que cambian números: Guido (2026-10-18) decidió esperar a las mejoras t y u para cargar Bélgica, en
+  vez de unos 20 ajustes a mano. Los borradores con las cuentas (para revisar contra el script nuevo) están en el scratchpad de esta sesión;
+  lo esencial va en las letras t y u.
+- Con ok de Guido: las 5 versiones originales reemplazadas por su -correction a documentos-descartados.txt; RWDM 2019 (primer ejercicio,
+  7 meses sin actividad) a documentos-parciales.txt. Patro Eisden 2020 -correction: la Brutomarge impresa (277.991, L219-221) no cierra
+  con su propio desglose (568.892 + 183.012 - 423.072 = 328.832); Guido: se carga la Brutomarge impresa, sin abrir, con nota (va con la t).
+- Mejoras de script nuevas para el 298:
+  t) Esquema NBB belga, lo que la mejora b no cubrió (verificar.mjs / la propuesta de carga). Casos revisados contra el .md:
+     1. Suma el total "Bedrijfskosten 60/66A" ADEMÁS de sus renglones, y los subrenglones "Aankopen 600/8" y "Voorraad 609" además del 60:
+        Beerschot 2021 da gastos 30,7 M en vez de 15,1 M (L294-305). Regla: en el NBB, 60/66A y 70/76A son totales y 600/8 y 609 son
+        detalle del 60.
+     2. El "waarvan" del 76A se suma aparte: Lommel SK 2023, 74.960 (L241) además de la Brutomarge 1.253.901.
+     3. La Brutomarge (esquema abreviado, código 9900) se pierde o se lee sin signo: Lierse SK 2019 (-1.372, L229) y 2020 (-1.475, L257),
+        Lierse Kempenzonen 2022 (-2.369, L228) y Patro Eisden 2021 (-140.857, L232) y 2023 (-246.781) quedan con ingreso 0 o positivo.
+     4. Brutomarge con Omzet y 60/61 impresos: falta el residuo implícito como ingreso (Lokeren-Temse 2021 76.401, 2022 64.280,
+        2023 -correction 551.469; Patro Eisden 2022 768.543 y 2023 1.451.259); cuando el 60/61 está impreso y se carga como gasto, la
+        Brutomarge no se suma otra vez.
+     5. Financiero del esquema abreviado: suma los ingresos financieros (75) y los costos (65) con el mismo signo en vez de restarlos
+        (Lokeren-Temse 2021-2023, Patro Eisden 2021-2022).
+     6. Renglones "(+)/(-)" de reversión leídos en positivo: 631/4 y 635/8 (Patro Eisden 2022 635/8 -45.749, L220; 2023 631/4 -9.781 y
+        635/8 -12.882, L224) y el 77 "Regularisering van belastingen" que resta del impuesto (Beerschot 2021, 155, L324).
+     7. OH Leuven 2021 toma el resumen del jaarverslag (ingresos 0, gastos 4.186.307) y no el estado de la pág. 8 del visor (L387-529:
+        ingresos 11.399.352, gastos 28.279.768, resultado -17.061.519).
+  u) La compuerta de estadio y sponsor (to-do 273) frena TODO año nuevo de un club cuya liga de ese año no está en data/club-leagues:
+     cargar.mjs no le pasa --liga y estadio-sponsor.mjs dice "sin liga en club-leagues" (Lommel SK 2020 y 2022). Bélgica solo tiene la liga
+     2025 de cada club, y ligas-sin-verificar.mjs solo mira años ya cargados. Que la carga de un año nuevo resuelva su liga con la misma
+     compuerta de ligas-sin-verificar (candidatas: las ligas del club en otros años y las del país con listas) antes de la compuerta del
+     273. Faltan además las listas de las ligas amateur belgas (Patro Eisden, Lokeren-Temse, Lierse SK, RWDM antes de ascender).
+  v) El final de lote.mjs lista en "Frenados" los documentos que el mismo lote salteó por estar reemplazados por su -correction
+     (Beerschot 2019, Lokeren-Temse 2023, Lommel SK 2021 y Patro Eisden 2020 y 2024 originales): confunde el conteo. Ya en descartados no
+     deberían volver a aparecer; confirmarlo en la próxima corrida.
+- Por dónde seguir: Bélgica espera a la t y la u. Lo demás del plan sigue igual (292 resto, 238, 285, 284, 283, 195, 165 c).

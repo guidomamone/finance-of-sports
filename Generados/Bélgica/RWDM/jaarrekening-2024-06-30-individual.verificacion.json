@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2024-06-30-individual.pdf",
  "md": "Clubes/Bélgica/RWDM/jaarrekening-2024-06-30-individual.md",
- "generado": "2026-10-18T15:46:15.727Z",
+ "generado": "2026-10-18T19:16:12.237Z",
  "estado": "cola",
  "clubId": "rwdm-be",
  "year": 2024,
@@ -31,8 +31,8 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero e impuesto invertidos)",
-   "dif": 0.0002730000000035204
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 9.999999974752427e-7
   },
   {
    "nombre": "documento del año 2025",
@@ -65,7 +65,7 @@
   "resultadoImpreso": -25.233035,
   "resultadoParaCargar": -25.233035,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero e impuesto invertidos"
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
  },
  "lineas": [
   {
@@ -118,13 +118,13 @@
   }
  ],
  "signosCarga": {
-  "financiero": -1,
+  "financiero": "rótulo",
   "impuesto": -1
  },
  "financiero": [
   {
    "etiqueta": "Recurrente financiële opbrengsten",
-   "M": -0.000137,
+   "M": 0.000137,
    "linea": 251
   },
   {

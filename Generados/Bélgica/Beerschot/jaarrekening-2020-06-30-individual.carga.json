@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2020-06-30-individual.pdf",
- "generado": "2026-10-18T15:46:18.217Z",
+ "generado": "2026-10-18T19:18:17.852Z",
  "frena": [
   {
    "etapa": "reintento",
@@ -198,12 +198,12 @@
    "gestionId": null,
    "profitOnPlayerSales": 0,
    "assetSales": 0,
-   "netInterest": -0.049408,
+   "netInterest": -0.042552,
    "tax": -0.021097,
    "extraRows": [
     {
      "label": "Andere financiële opbrengsten",
-     "value": -0.003428
+     "value": 0.003428
     },
     {
      "label": "Kosten van schulden",
@@ -521,7 +521,7 @@
   {
    "label": "Andere financiële opbrengsten",
    "page": null,
-   "native": -0.003428,
+   "native": 0.003428,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
@@ -614,9 +614,9 @@
  },
  "liga": {
   "valor": null,
-  "fuente": "sin caché de rosters para be (tools/club-league-reference/be.json)",
+  "fuente": "no hay ninguna liga-temporada de be 2020 cacheada",
   "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó, P3 liga-sin-verificar); para resolverla: resolve-wikipedia-season-page.mjs + fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
  },
  "procedencia": {
   "anio": {
@@ -656,7 +656,7 @@
   },
   "liga": {
    "valor": null,
-   "fuente": "sin caché de rosters para be (tools/club-league-reference/be.json)",
+   "fuente": "no hay ninguna liga-temporada de be 2020 cacheada",
    "estado": "pendiente"
   }
  },

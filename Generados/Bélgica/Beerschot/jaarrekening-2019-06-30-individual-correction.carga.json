@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2019-06-30-individual-correction.pdf",
- "generado": "2026-10-18T15:46:17.876Z",
+ "generado": "2026-10-18T19:18:17.734Z",
  "frena": [
   {
    "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 5 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "periodo",
-   "motivo": "el nombre del archivo dice otro cierre que el contenido (2018-06-29): confirmar qué ejercicio es antes de cargarlo"
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 1 caso(s) en la cola humana (node tools/cola.mjs)"
   },
   {
    "etapa": "categorizacion",
@@ -16,7 +12,7 @@
   },
   {
    "etapa": "filas",
-   "motivo": "la verificación tiene 5 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [],
@@ -26,11 +22,10 @@
  "periodo": {
   "tipo": "anual",
   "meses": 12,
-  "cierre": "2018-06-29",
-  "evidencia": null,
-  "confianza": "media",
+  "cierre": "2019-06-30",
   "anual": "temporada",
-  "nombreNoCoincide": true
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-18): boekjaar dat de periode dekt van 29-06-2018 tot 30-06-2019 (.md L28): el cierre es el 30-06-2019; localizar tomó la columna Vorig boekjaar (vacía) como si el ejercicio fuera 2018 (Claude 2026-10-18)"
  },
  "clubId": "beerschot-be",
  "year": 2019,
