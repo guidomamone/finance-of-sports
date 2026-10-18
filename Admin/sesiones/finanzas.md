@@ -174,7 +174,9 @@
 - To-do 282 a, Fortaleza CEIF 2025: dictamen del revisor fiscal de SIIS (radicado 2026-01-381454), sin salvedades.
 - To-do 282 a, OFI 2018: el informe del auditor (ΣΟΛ/Crowe, firma Παναγιώτης Γ. Θεοδωρόπουλος) depositado en el ΓΕΜΗ el 27-03-2019
   ('Εκθεσή Ορκωτών'); sin salvedades, con un énfasis de liquidez (ÉNFASIS CONTINUIDAD).
-- FALTA EN EL PDF: 88 a 51. Los PDF nuevos, copiados a la carpeta principal (rsync `--no-links`). ASSET_V 1300 en la rama.
+- To-do 282 a, Hamburgo 2025: el Bestätigungsvermerk de BDO AG (uneingeschränkt, 17-10-2025), copiado de la publicación HTML del
+  Jahresabschluss en el Unternehmensregister (HRB 191603; Guido resolvió el captcha) a `fussball-ag-bestaetigungsvermerk-2024-25.md`.
+- FALTA EN EL PDF: 88 a 50. Los PDF nuevos, copiados a la carpeta principal (rsync `--no-links`). ASSET_V 1300 en la rama.
 
 ### Qué queda (para TODO)
 
@@ -203,9 +205,9 @@
 
 ### Qué queda del 282 a
 
-- Hamburgo 2025: el Jahresabschluss 2024-25 de la HSV Fußball AG & Co. KGaA está en el Unternehmensregister (HRB 191603, publicado el
-  22-06-2026), pero abrirlo pide un captcha ("Ich bin ein Mensch") que tiene que resolver una persona. Hamburgo 2024 (2023-24) no
-  apareció en la primera página de resultados (probablemente bajo "HSV Fußball AG", HRB 47576). El Bundesanzeiger llega hasta 2021-22.
+- Hamburgo 2024 (2023-24): no aparece en las 8 páginas de resultados de "HSV Fußball AG" en el Unternehmensregister (el 2024-25 sí);
+  probar la lista "Hinterlegte Jahresabschlussunterlagen" de la ficha de la KGaA (HRB 191603) o la de la AG vieja (HRB 47576). Cada
+  publicación pide un captcha que tiene que resolver una persona.
 - Sin canal público (candidatos a mail): San Lorenzo 2011 y 2012 (el informe de Deloitte "se extiende en documento aparte", que el club
   nunca subió; el `balance_2012.pdf` de Wayback es el mismo archivo que tenemos), Argentinos 2015 (Wayback del dominio, sin PDF de
   balance) y los 10 japoneses 2025 (los clubes publican el 決算公告, solo el balance, sin auditor; Frontale 2025 confirmado).
