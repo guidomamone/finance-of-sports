@@ -331,7 +331,12 @@ export function filasDelMd(md) {
       // importe. Caso: AVS 2022-23 "| Financiamentos obtidos | 3;8;9;21; | 4.495.141,06 | 2.062.069,19 |" (L352) daba deuda 38.921. También
       // con números de nota con punto (to-do 260 c): Famalicão 2022-23 "| Caixa e depósitos bancários | 3.7.; 4. | 1 159 543,44 |" (L404) daba
       // caja 3,7. Un "3.7" suelto, sin ";", sigue siendo ambiguo (puede ser un decimal).
-      const esRefNota = (c) => /^\p{L}{1,2}\s?\.?\s?\d{1,3}(?:\.\d{1,2})?$/u.test(c) || /^\d{1,3}\.$/.test(c) || /^\d{1,2}(?:\.\d{1,2}){2,3}\.?$/.test(c) || /^\d{1,2}(?:\.\d{1,2})*\.?(?:\s*;\s*\d{1,2}(?:\.\d{1,2})*\.?)+\s*;?$/.test(c);
+      // (to-do 298 c1, ok de Guido 2026-10-18) y un CÓDIGO DE CUENTA NBB belga: un número con barra ("54/58", "631/4", "70/76A"; un importe
+      // nunca lleva barra) o pegado a una A/B ("76A", "66B"; la marca C/D de un balancete va separada por un espacio). Caso: Lierse SK 2025 L169
+      // "| Liquide middelen |  | 54/58 | 2.984 | 7.287 |" se leía 5.458: la misma caja 0,005458 en Lierse SK, Lokeren-Temse, Lommel SK, Patro
+      // Eisden y RWDM. Medido: --medir deuda 168 → 170 iguales (Académico de Viseu 2023-2024), sin distintos nuevos; ensayo de 259 clubes igual
+      // salvo Estrela da Amadora 2023 (sigue sin dato).
+      const esRefNota = (c) => /^\d{1,4}\/\d{1,4}[AB]?$/.test(c) || /^\d{2,4}[AB]$/.test(c) || /^\p{L}{1,2}\s?\.?\s?\d{1,3}(?:\.\d{1,2})?$/u.test(c) || /^\d{1,3}\.$/.test(c) || /^\d{1,2}(?:\.\d{1,2}){2,3}\.?$/.test(c) || /^\d{1,2}(?:\.\d{1,2})*\.?(?:\s*;\s*\d{1,2}(?:\.\d{1,2})*\.?)+\s*;?$/.test(c);
       // (to-do 223) una celda que termina en "%" es un porcentaje, nunca un importe. Caso: AEK 2019, la fila de ratios "| Άμεση ρευστότητα |
       // Ταμειακά διαθέσιμα | 7.935.424,59 | 52,44% |" (L161) daba 52,44 como "año anterior" de la caja, y la compuerta de 2018 la encontraba
       // antes que la fila del balance.

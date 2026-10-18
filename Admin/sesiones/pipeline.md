@@ -106,3 +106,14 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
 ## Después del merge del 2026-10-18
 
 Lo de arriba ya lo pasó la principal (merge 621acf6cea, CHANGELOG 738). Lo nuevo va acá.
+
+### Qué cambió
+- **El código NBB no es un importe (to-do 298 c, parte 1).** `tools/caja-deuda.mjs` (`esRefNota`): una celda con barra ("54/58", "631/4",
+  "70/76A") o un número pegado a A/B ("76A", "66B") es un código de cuenta. Antes, Lierse SK, Lokeren-Temse, Lommel SK, Patro Eisden y RWDM
+  daban la misma caja 0,005458 (el código 54/58); ahora el escalón 1 propone la caja impresa (Lierse SK 2025: 2.984 TEUR, L169). Medido:
+  `--medir` deuda 168 → 170 iguales (Académico de Viseu 2023 y 2024), sin distintos nuevos; ensayo de los 259 clubes igual salvo Estrela da
+  Amadora 2023 (sigue sin dato; el ensayo ahora ofrece la IA, US$ 0,01). Los belgas siguen sin dato hasta la parte 2 (un solo año, sin vecino).
+
+### Para fos-onboarding
+- caja-deuda deja de leer los códigos NBB como importes: en un club belga, Jev ya no tiene guardada la respuesta (cambian las filas), y un
+  `--ejecutar` paga ~US$ 0,07 por club en Jev.
