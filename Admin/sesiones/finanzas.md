@@ -7,7 +7,14 @@
   citas, que cada carga sea del documento de ese club y año (`quien.mjs`), los ids y los ciclos de control, y genera `data/entidades/<país>.js`
   y `data/entidades/_grupos.js`. `audit.js` lo corre como generador (`entidades-desfasado`, P1). Primeros casos: Chelsea 2025 (cadena hasta
   Blues Investment Holdings Parent, L.P.; grupo BlueCo con Strasbourg y Chelsea Women) e Inter 2025 (Oaktree, Grand Tower; M-I Stadio al 50 %
-  fuera del consolidado). El sitio todavía no lo lee.
+  fuera del consolidado).
+- To-do 280 b: Finanzas tiene la tarjeta "De quién son estos números" (`js/finanzas-estructura.js`, `#finEstructura`, link "Estructura"
+  en el índice de la página, entre "En otra liga" y "Fuentes"). Muestra, del ejercicio elegido más nuevo con estructura cargada: la
+  entidad y su perímetro, la cadena de dueños hasta el último, las controladas dentro de los números, las relacionadas y los clubes del
+  mismo grupo fuera, y la nota para periodistas; "El dueño, ejercicio por ejercicio" cuando hay estructura de más de un año. Sin datos
+  del club, la tarjeta y el link se esconden. Mockup aprobado: artboards "Finanzas · estructura del club" de "Pantallas FoS".
+  `index.html` carga eager `data/entidades/_grupos.js` (`GRUPOS_INDICE`, `ENTIDADES_PAISES`); `js/principal.js` suma una línea en
+  `refreshFinanzas()` (no toca el bloque de la URL). ASSET_V 1256.
 
 ## Decisiones de Guido (2026-10-18), para CONVENCIONES-DATOS
 
@@ -31,6 +38,12 @@
     `GRUPO_VIEW.show(id)`.
 - 281, 282, 242 sin empezar.
 
+## Para PANTALLA (regla nueva o excepción, a confirmar con Guido)
+
+- La tarjeta Estructura lleva, en cada entidad, un link "ver en el balance" (o "ver en <dominio>" para una cita externa) a la
+  transcripción. No dice "Fuente:", que la regla de PANTALLA ("la fuente NUNCA va adentro de un card") prohíbe; la cita por entidad es
+  el dato que pide el periodista.
+
 ## Qué deja de ser cierto en ESTADO
 
-- Nada todavía (el sitio no muestra entidades).
+- "Finanzas multi-año": suma la tarjeta Estructura (de quién son los números, dueños y grupo), desde `data/entidades/`.
