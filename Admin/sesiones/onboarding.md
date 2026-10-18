@@ -88,3 +88,6 @@ j) DATOS (no script): Estonia no tiene ligas en `data/leagues.js`; propuesto `ee
 - Nõmme Kalju: perímetro consolidado del club (2022-2024 traen los dos estados) e individual en 2025.
 - To-do 299 HECHO (3a1da22b36): Estonia en Ligas (Meistriliiga 2019-2025 y Esiliiga 2021 y 2024, con su tamaño, 10); verificado en el preview: estado frío "Meistriliiga 9 of 10 · 2025" y su ranking. De paso, las 8 altas belgas tenían la liga en null: ahora Pro League (Beerschot, OH Leuven) y Challenger Pro League (6). `tools/faltantes-liga.mjs`: Estonia en su tabla PAISES; alias "Tammeka" -> tartutammeka-ee.
 - Mejora de script (para el 298, letra k): `alta-club.mjs`/`cargar-lote.mjs` escriben la liga del alta en null aunque `Admin/registros/altas-revision.jsonl` traiga `ligas` verificadas (pasó con las 17 altas de los lotes 89-90): que el alta las tome de la revisión.
+
+## Después del segundo merge del 2026-10-18
+(El 299 y la k ya pasaron a main: TODO, CHANGELOG 729, ESTADO. Lo nuevo va acá.)
