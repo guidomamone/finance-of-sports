@@ -1114,7 +1114,7 @@ export { snapshot, revertir, runNode };
 // ese club y año. tools/estadio-sponsor.mjs los lee de la página de temporada de Wikipedia (gratis), los guarda en data/contexto/<iso>.js
 // y sale con 1 si falta alguno; lo que falta se completa en tools/contexto-manual.json, con fuente. Función aparte, llamada en un solo
 // punto antes de escribir (la compuerta del auditor, to-do 282, va al lado).
-function compuertaContexto(P) {
+export function compuertaContexto(P) {
   const E = P.ejercicio; const meta = E?.fiscalYearMeta || {};
   const cierre = meta.cierre || String(meta.fxRef || '').split('@')[1] || null;
   const args = ['--escribir', '--club', E.clubId, '--anio', String(E.year)];
