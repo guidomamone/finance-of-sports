@@ -148,3 +148,9 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
   fos-onboarding). Inglaterra y Alemania probablemente sean de registro (Companies House, Unternehmensregister), como Dinamarca: canal
   por API en el script, no URL.
 - 26 clubes con el PDF del ejercicio siguiente ya bajado y sin cargar (los lista `node tools/ejercicios-nuevos.mjs`): onboarding.
+- **252: Inglaterra y Alemania, también por el canal.** Reino Unido: el número de Companies House de la nota ("Companies House n° 04250459";
+  en Arsenal el del grupo) y `tools/companies-house-fetch.mjs --list --json` (salida nueva: la serie con fecha de cierre, tipo y URL); el
+  ejercicio que cierra en la fecha esperada se baja con el nombre que ya usa la carpeta (`<slug>-<group|full>-accounts-<temporada>.pdf`).
+  Arsenal, Liverpool y West Ham 2025-26 todavía no se presentaron (Companies House da 9 meses: llegan hacia febrero de 2027). Alemania: el
+  Unternehmensregister pide un formulario con sesión, así que el club queda "a revisar con el navegador" con la razón social exacta a buscar
+  (Mönchengladbach, Stuttgart). Nueva línea del README y de la consola: "el registro todavía no lo publicó".

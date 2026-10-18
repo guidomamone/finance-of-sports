@@ -10,6 +10,9 @@
 //   1. el ejercicio que sigue al último real cargado (sin presupuestos) y si ya debería estar publicado: su cierre + MESES_PUBLICACION;
 //   2. la carpeta de Clubes/ sale de la evidencia de carga (Admin/carga-clubes/<clubId>.md, "desde Clubes/<País>/<Club>/") y la nota de
 //      sourcing es Admin/sourcing/<País>/<Club>.md; de la nota salen las URLs del canal (completas o `dominio/ruta`);
+//      REINO UNIDO: Companies House por el número de la nota (tools/companies-house-fetch.mjs --list --json), el ejercicio que cierra en
+//      la fecha esperada, con el nombre que ya usa la carpeta (<slug>-<group|full>-accounts-<temporada>.pdf). ALEMANIA: el
+//      Unternehmensregister pide un formulario: va a "a revisar con el navegador" con la razón social a buscar.
 //      DINAMARCA no usa página: el CVR de la nota y la API del registro (distribution.virk.dk), el informe anual del ejercicio que cierra
 //      en la fecha esperada; baja el PDF o el .xhtml (iXBRL) como aarsrapport-AAAA-MM-DD.<ext>, el nombre que ya usa la carpeta;
 //   3. baja cada página y busca links a PDF que nombran la temporada esperada ("2025-26", "2025/26", "2025_26", "2026" si el club cierra
@@ -63,6 +66,23 @@ function urlsDe(carpeta) {
   // fuera: archivos, buscadores y agregadores que no son del club
   return [...new Set(out.map((u) => u.replace(/[.,;:]+$/, '')))].filter((u) => !/\.(pdf|xlsx?|zip)(\?|$)/i.test(u) && !/google\.|wikipedia\.|web\.archive|transfermarkt|worldfootball|bing\./i.test(u)).slice(0, 4);
 }
+// el número de Companies House de la nota ("Companies House n° **04250459**"): el primero que aparece así (en Arsenal, el del grupo)
+function numeroCH(carpeta) {
+  const f = resolve(ROOT, 'Admin', 'sourcing', `${carpeta}.md`); if (!existsSync(f)) return null;
+  const m = readFileSync(f, 'utf8').match(/Companies House n[°º.]?\s*\**\s*([A-Z]{2}\d{6}|\d{8})/); return m ? m[1] : null;
+}
+async function companiesHouse(num) {
+  const { execFileSync } = await import('node:child_process');
+  try { return JSON.parse(execFileSync('node', [resolve(ROOT, 'tools', 'companies-house-fetch.mjs'), num, '--list', '--json'], { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], timeout: 180000 }).trim().split('\n').pop()); }
+  catch (e) { return { error: String(e.stderr || e.message).trim().split('\n').pop().slice(0, 160) }; }
+}
+// la razón social alemana de la nota ("Entidad legal**: Borussia VfL 1900 Mönchengladbach GmbH (HRB 5742, ...")
+function razonSocialDE(carpeta) {
+  const f = resolve(ROOT, 'Admin', 'sourcing', `${carpeta}.md`); if (!existsSync(f)) return null;
+  const t = readFileSync(f, 'utf8'); if (!/unternehmensregister/i.test(t)) return null;
+  const m = t.match(/Entidad legal\**:\s*\**([^(\n*]+?(?:GmbH & Co\. KGaA|GmbH|AG & Co\. KGaA|KGaA|AG|e\. ?V\.))/); return m ? m[1].trim() : null;
+}
+
 // el CVR danés de la nota de sourcing ("CVR 83 83 99 10" o "CVR 83839910")
 function cvrDe(carpeta) {
   const f = resolve(ROOT, 'Admin', 'sourcing', `${carpeta}.md`); if (!existsSync(f)) return null;
@@ -112,7 +132,7 @@ const NO_FINANCIERO = /parecer|\bato\b|ato-administrativo|edital|convoca|\bata\b
 async function main() {
   const { CI, CLUBS } = cargar();
   const registro = existsSync(REGISTRO) ? JSON.parse(readFileSync(REGISTRO, 'utf8')) : {};
-  const encontrados = [], aMano = [], esperando = [], yaBajado = [];
+  const encontrados = [], aMano = [], esperando = [], yaBajado = [], noPublicado = [];
   for (const [id, c] of Object.entries(CI)) {
     if (SOLO && id !== SOLO) continue;
     const reales = (c.yrs || []).filter(([, t]) => t !== 'official_budget').map(([y]) => +y); if (!reales.length) continue;
@@ -123,6 +143,29 @@ async function main() {
     const fs = [...formas(anio, mmdd.startsWith('12')), `${anio}-${mmdd}`]; // también la fecha de cierre ("aarsrapport-2025-06-30.xhtml")
     const carpeta = carpetaDe(id); const urls = carpeta ? urlsDe(carpeta) : [];
     const nombre = c.n || CLUBS[id]?.displayName || id;
+    // REINO UNIDO: Companies House por número de sociedad ("Companies House n° 04250459" en la nota), con tools/companies-house-fetch.mjs
+    const chNum = carpeta && /^(gb|en|sc)$/i.test(String(c.c)) ? numeroCH(carpeta) : null;
+    if (chNum) {
+      const enCarpetaUk = existsSync(resolve(ROOT, 'Clubes', carpeta)) ? readdirSync(resolve(ROOT, 'Clubes', carpeta)) : [];
+      if (enCarpetaUk.some((f) => /\.pdf$/i.test(f) && fs.some((x) => f.toLowerCase().includes(x.toLowerCase())))) { yaBajado.push({ id, nombre, anio }); continue; }
+      const fecha = `${anio}-${mmdd}`; const serie = await companiesHouse(chNum);
+      if (serie?.error) { aMano.push({ id, nombre, anio, motivo: `Companies House ${chNum}: ${serie.error}`, urls: [] }); continue; }
+      const doc = serie.find((x) => x.date === fecha);
+      if (!doc) { noPublicado.push({ id, nombre, anio }); continue; }
+      const y = +fecha.slice(0, 4); const label = fecha.slice(5, 7) === '12' ? `${y}` : `${y - 1}-${String(y).slice(2)}`;
+      const slug = (enCarpetaUk.map((f) => (f.match(/^(.+?)-(group|full|medium|other)-accounts-/) || [])[1]).find(Boolean)) || carpeta.split('/').pop().normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      if (!(registro[id]?.anio === anio && registro[id].pdfs.includes(doc.url))) encontrados.push({ id, nombre, anio, carpeta, pdfs: [doc.url], nombres: { [doc.url]: `${slug}-${doc.type}-accounts-${label}.pdf` } });
+      continue;
+    }
+    // ALEMANIA: el Unternehmensregister pide un formulario con sesión (skill club-sourcing, paises/Alemania.md): lo revisa la tarea con el
+    // navegador, con la razón social exacta que hay que buscar
+    const razon = carpeta && String(c.c).toLowerCase() === 'de' ? razonSocialDE(carpeta) : null;
+    if (razon) {
+      const enCarpetaDe = existsSync(resolve(ROOT, 'Clubes', carpeta)) ? readdirSync(resolve(ROOT, 'Clubes', carpeta)) : [];
+      if (enCarpetaDe.some((f) => /\.pdf$/i.test(f) && fs.some((x) => f.toLowerCase().includes(x.toLowerCase())))) { yaBajado.push({ id, nombre, anio }); continue; }
+      aMano.push({ id, nombre, anio, motivo: `registro con formulario: en https://www.unternehmensregister.de buscar «${razon}», Jahresabschluss o Konzernabschluss del ejercicio`, urls: [] });
+      continue;
+    }
     // DINAMARCA: el canal es la API del registro (distribution.virk.dk, por CVR), no una página (skill club-sourcing, paises/Dinamarca.md)
     const cvr = carpeta && String(c.c).toLowerCase() === 'dk' ? cvrDe(carpeta) : null;
     if (cvr) {
@@ -132,6 +175,7 @@ async function main() {
       if (enCarpetaDk.some((f) => fs.some((x) => f.toLowerCase().includes(x.toLowerCase())))) { yaBajado.push({ id, nombre: c.n || CLUBS[id]?.displayName || id, anio }); continue; }
       const doc = await virkDk(cvr, fecha);
       if (doc?.error) { aMano.push({ id, nombre, anio, motivo: `API del registro danés: ${doc.error}`, urls: [] }); continue; }
+      if (!doc) noPublicado.push({ id, nombre, anio });
       if (doc && !(registro[id]?.anio === anio && registro[id].pdfs.includes(doc.url))) { encontrados.push({ id, nombre, anio, carpeta, pdfs: [doc.url], nombres: { [doc.url]: `aarsrapport-${fecha}.${doc.ext}` } }); }
       continue;
     }
@@ -166,6 +210,7 @@ async function main() {
   for (const e of encontrados) console.log(`NUEVO ${e.nombre} (${e.id}) ejercicio ${e.anio}: ${e.pdfs.join(' | ')}`);
   console.log(`\n${encontrados.length} clubes con un PDF nuevo; ${aMano.length} para revisar con el navegador; ${esperando.length} todavía en plazo (cierre + ${MESES_PUBLICACION} meses); ${yaBajado.length} ya tienen el PDF en su carpeta (falta cargarlo).`);
   for (const a of aMano) console.log(`  A MANO ${a.nombre} (${a.id}) ejercicio ${a.anio}: ${a.motivo}${a.urls.length ? ` — ${a.urls.join(' ; ')}` : ''}`);
+  if (noPublicado.length) console.log(`  EL REGISTRO TODAVÍA NO LO PUBLICÓ: ${noPublicado.map((y) => `${y.nombre} ${y.anio}`).join(', ')}`);
   if (yaBajado.length) console.log(`  YA EN SU CARPETA, SIN CARGAR: ${yaBajado.map((y) => `${y.nombre} ${y.anio}`).join(', ')}`);
 
   if (ESCRIBIR) {
@@ -185,6 +230,7 @@ async function main() {
       lineas.push(`- Ejercicio ${e.anio} de ${e.nombre} — ${e.pdfs[0]} — encontrado por la tarea mensual el ${HOY}${bajados.length ? `; bajado a ${bajados.join(', ')}` : ' (no se pudo bajar: revisar el link)'}`);
       registro[e.id] = { anio: e.anio, pdfs: [...new Set([...(registro[e.id]?.anio === e.anio ? registro[e.id].pdfs : []), ...e.pdfs])], revisado: HOY };
     }
+    if (noPublicado.length) lineas.push(`- El registro todavía no lo publicó (se vuelve a mirar el mes que viene): ${noPublicado.map((y) => `${y.nombre} ${y.anio}`).join(', ')}`);
     if (yaBajado.length) lineas.push(`- Ya bajados y sin cargar (para el onboarding): ${yaBajado.map((y) => `${y.nombre} ${y.anio}`).join(', ')}`);
     for (const a of aMano) lineas.push(`- A revisar con el navegador: ${a.nombre}, ejercicio ${a.anio} — ${a.motivo}${a.urls.length ? ` (${a.urls.join(' ; ')})` : ''}`);
     escribirReadme(lineas);
