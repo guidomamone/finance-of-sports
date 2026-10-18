@@ -24,19 +24,17 @@ const FIN_CONTEXTO = (function(){
 
   const etiqueta = (clubId, y) => esEjercicioCalendario(clubId, y) ? String(y) : (y - 1) + '/' + String(y).slice(2);
   const fuenteDe = (d, campo) => (d.manual || []).includes(campo) && d.fuenteManual ? d.fuenteManual : d.fuente;
-  // El nombre del sponsor o la marca lleva a su página (js/sponsor.js) cuando existe; si no, queda como texto.
-  function nombreConLink(txt){
-    if(!txt) return '';
+  // El nombre del sponsor o la marca lleva a su página (js/sponsor.js). Cuál es se resuelve al tocarlo, con data/sponsors.js, que es
+  // grande y no se baja para dibujar esta tarjeta. Un campo con varios ("A, B" o "A / B") da un link por nombre.
+  function nombreConLink(txt, clubId, rol){
     if(!window.SPONSOR_VIEW) return esc(txt);
-    return String(txt).split(/\s*[,/]\s*/).map(n => {
-      const id = SPONSOR_VIEW.idDe(n);
-      return id ? `<a href="?tab=sponsor&amp;sponsor=${esc(id)}" class="ctx-sponsor" data-sponsor="${esc(id)}">${esc(n)}</a>` : esc(n);
-    }).join(', ');
+    return String(txt).split(/\s*[,/]\s*/).filter(Boolean).map(n =>
+      `<a href="#" class="ctx-sponsor" data-nombre="${esc(n)}" data-club="${esc(clubId)}" data-rol="${rol}">${esc(n)}</a>`).join(', ');
   }
-  function celda(d, campo){
+  function celda(d, campo, clubId){
     if(!d || d[campo] == null || d[campo] === '') return '<td class="ctx-nada">—</td>';
     if(campo === 'capacidad') return `<td>${Number(d[campo]).toLocaleString(document.documentElement.lang || 'es')}</td>`;
-    if(campo === 'sponsor' || campo === 'marca') return `<td>${nombreConLink(d[campo])}</td>`;
+    if(campo === 'sponsor' || campo === 'marca') return `<td>${nombreConLink(d[campo], clubId, campo === 'sponsor' ? 'c' : 'm')}</td>`;
     return `<td>${esc(d[campo])}</td>`;
   }
 
@@ -68,8 +66,12 @@ const FIN_CONTEXTO = (function(){
       }).join('<br>') + '</td>';
     });
     tabla.querySelector('tbody').innerHTML = filas.map(([c, nombre]) =>
-      `<tr><th scope="row">${esc(nombre)}</th>${anios.map(y => celda(datos[y], c)).join('')}</tr>`).join('')
+      `<tr><th scope="row">${esc(nombre)}</th>${anios.map(y => celda(datos[y], c, clubId)).join('')}</tr>`).join('')
       + `<tr><th scope="row" class="ctx-fuente-l">${esc(t('ctx.fuente', 'Fuente'))}</th>${fuentes.join('')}</tr>`;
+    tabla.querySelectorAll('a.ctx-sponsor').forEach(a => a.addEventListener('click', ev => {
+      ev.preventDefault();
+      SPONSOR_VIEW.abrirDesde(a.dataset.nombre, a.dataset.club, a.dataset.rol);
+    }));
   }
 
   return { render };

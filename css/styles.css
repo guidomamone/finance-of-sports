@@ -973,7 +973,39 @@
   .aud-x{font-size:13px;color:#45474d;line-height:1.45;}
   .aud-link{flex:0 0 auto;font-size:13px;}
   .aud-ver{font-size:13px;}
-    /* Finanzas: estadio y camiseta (js/contexto.js) */
+    /* La página de un sponsor o una marca (js/sponsor.js) */
+  #mainNav button[data-section="sponsor"]{display:none;}
+  .spo-view{display:flex;flex-direction:column;gap:16px;}
+  .spo-head{display:flex;flex-direction:column;gap:6px;}
+  .spo-head h1{margin:0;font-size:34px;letter-spacing:-.02em;color:var(--azul);}
+  .spo-rol{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);}
+  .spo-resumen{margin:0;font-size:14px;color:var(--muted);}
+  .spo-card{display:flex;flex-direction:column;gap:12px;}
+  .spo-card h2{margin:0;font-size:18px;}
+  .spo-hoy-grilla{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:8px;}
+  .spo-hoy{display:flex;align-items:center;gap:10px;min-height:52px;padding:8px 12px;border-radius:10px;border:1px solid var(--border);
+    background:#fff;text-decoration:none;color:var(--text);}
+  a.spo-hoy:hover{border-color:var(--azul);}
+  .spo-hoy.spo-gris{background:#f4f4f2;color:#8a8a8a;}
+  .spo-hoy-txt{display:flex;flex-direction:column;min-width:0;}
+  .spo-hoy-n{font-size:14.5px;font-weight:700;}
+  .spo-hoy-l{font-size:12.5px;color:var(--muted);}
+  .spo-flag{font-size:16px;line-height:1;margin-right:6px;}
+  .spo-nota{margin:0;font-size:12.5px;color:var(--muted);line-height:1.5;}
+  .spo-tabla{border-collapse:collapse;font-size:14px;}
+  .spo-tabla th,.spo-tabla td{text-transform:none;letter-spacing:normal;}
+  .spo-tabla thead th{padding:6px 2px;font-size:12px;color:var(--muted);font-weight:700;text-align:center;}
+  .spo-tabla thead th:first-child{text-align:left;padding-right:12px;}
+  .spo-tabla tbody th{text-align:left;padding:6px 12px 6px 0;font-weight:600;white-space:nowrap;}
+  .spo-tabla tbody th a{color:var(--text);text-decoration:none;}
+  .spo-tabla tbody th a:hover{text-decoration:underline;}
+  .spo-tabla th.spo-gris{color:#8a8a8a;}
+  .spo-tabla td{padding:3px 2px;min-width:34px;}
+  .spo-c{display:block;height:18px;border-radius:4px;background:#f4f4f2;}
+  .spo-c.on{background:#e8501f;}
+  .spo-c.on.m{background:#4f86d9;}
+  .spo-c.gris{background:#c9ced8;}
+  /* Finanzas: estadio y camiseta (js/contexto.js) */
   .ctx-tabla{width:100%;min-width:480px;border-collapse:collapse;font-size:14px;}
   .ctx-tabla th,.ctx-tabla td{text-align:left;padding:10px;border-bottom:1px solid #f0f0ee;vertical-align:top;text-transform:none;letter-spacing:normal;}
   .ctx-tabla thead th{font-size:14px;font-weight:800;color:var(--azul);border-bottom:1px solid var(--border);}
