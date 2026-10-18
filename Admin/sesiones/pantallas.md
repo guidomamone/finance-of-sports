@@ -204,3 +204,13 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
 ### Qué queda (para TODO)
 
 - Borrar el 297.
+
+## Después del séptimo merge del 2026-10-18
+
+### Qué queda (para TODO)
+
+- 253, tablero del pipeline: mockup "Tablero del pipeline" en "Pantallas FoS" (escritorio y teléfono), esperando el ok de Guido. Plan:
+  un artifact de tipo Dashboard; `tools/tablero.mjs` (gratis) arma los archivos de datos desde `estado.mjs`, `cola.mjs`, los registros
+  de `gasto.mjs` y `Admin/outreach/`, y una sesión los sube al cerrar un lote (el tablero dice de cuándo es la foto).
+- Mejora de script (vista armando el 253): `node tools/gasto.mjs --json` se corta a los 64 KB cuando la salida va por un pipe (el
+  proceso sale antes de vaciar stdout). Además, el gasto de Claude API no se atribuye a un documento: por país solo se ven US$ 280 de 759.
