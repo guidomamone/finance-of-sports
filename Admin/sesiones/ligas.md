@@ -32,13 +32,14 @@
   `LIGA_AUDITORIA` para `es-laliga` y `es-segunda`, 2025.
 - Lega Serie A: nota de sourcing; el bilancio existe y lo audita una società di revisione (estatuto), pero no se publica: candidato a mail.
 - Liga Portugal: nota de sourcing; el Relatório e Contas solo se manda a los asociados (estatuto, art. 42.º): candidato a mail.
+- AFA: nota de sourcing; el balance al 30-06-2025 con informe del auditor existe (boletín 6772) pero no se publica; IGJ con clave fiscal.
 - J.League: balance, resultados e informe del auditor 2025 desde el registro japonés de entidades de interés público (koeki-info.go.jp),
   en `Ligas/Japón/J.League/`. Auditor 太陽有限責任監査法人 (Grant Thornton Taiyo), opinión limpia. Línea `jp-j1` 2025.
 
 ### Qué queda
 
-- Seguir con AFA, CBF, EFL y el resto.
-- Lega Serie A y Liga Portugal: decidir si se les escribe (Guido).
+- Seguir con CBF, EFL y el resto.
+- Lega Serie A, Liga Portugal y AFA: decidir si se les escribe (y, para la AFA, si se pide a la IGJ) (Guido).
 
 ### PDF copiados a la carpeta principal (rsync)
 
