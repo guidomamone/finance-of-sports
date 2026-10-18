@@ -158,3 +158,6 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
   `window.SPONSORS = { actuales: { ligaId: año }, fuentes: { "ligaId|año": url }, lista: { id: { n, roles: ["c"|"m"], e: [[ligaId,
   año, equipo, clubId|null, rol]] } } }`. "Hoy" = entradas con año === actuales[ligaId]; histórico = todas, de la más nueva a la más
   vieja. Entran todos los equipos de la liga; los que el sitio no tiene, en gris y sin link. Año = temporada (2027 = 2026-27).
+  Mockup: "Página de sponsor · Betano" de "Pantallas FoS". Los tres errores del dato que vio pantallas (markup pegado al nombre, el
+  estadio de Boca con dos nombres, Sparta con dos nombres) los arregló fos-datos (datos-sourcing 9720f5e64c); un cambio de nombre real
+  del estadio queda como histórico.
