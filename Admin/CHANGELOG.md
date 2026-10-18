@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 726 — Merge de pantallas: estadio y camiseta, y la página por sponsor (2026-10-18)
+
+`node tools/worktree.mjs mergear pantallas`, sin conflictos, P0 0 / P1 0, ASSET_V 1274.
+
+- To-do 273, la pantalla: tarjeta "Estadio y camiseta" en Finanzas (`js/contexto.js`): una columna por ejercicio, estadio, capacidad,
+  sponsor y marca, con la fuente de cada ejercicio (Wikipedia, o la manual si algo se cargó a mano). Probado con Boca y Akron.
+- To-do 296: página de cada sponsor de camiseta y marca técnica (`js/sponsor.js`, `?tab=sponsor&sponsor=…`): equipos de hoy y línea
+  de tiempo por temporada; se llega desde "Estadio y camiseta". Probado: Betano, Betsson desde Boca, Adidas (191 equipos).
+- TODO: fuera el 296; el 273 queda con completar a mano y nombrar la compuerta; nuevo 297 (sponsors en el buscador).
+
 ## Versión 725 — Merge de datos-sourcing: listas de liga, estadio y sponsor (2026-10-18)
 
 Merge a mano: `index.html` con main (datos solo había cambiado la versión); generados regenerados, ASSET_V 1271, P0 0 / P1 0. Después,

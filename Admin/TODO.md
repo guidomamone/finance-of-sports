@@ -24,8 +24,8 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 273, 296 (pantalla, cuando esté el dato) y 282 en Ligas (cuando haya el dato del 295) · finanzas cerrada (lo que queda del 281, 282 y 294, sin asignar) · pipeline 289, 290, 288, 232, 279, 286, 287 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
-datos-sourcing 273 (completar el dato), 252, 295 · Reino Unido (261) en su propia sesión · la principal: 268, 291, 250, 244 y los merges; el 246 va
+Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 297 (cuando esté el índice) y 282 en Ligas (cuando haya el dato del 295) · finanzas cerrada (lo que queda del 281, 282 y 294, sin asignar) · pipeline 289, 290, 288, 232, 279, 286, 287 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
+datos-sourcing 273 (completar el dato), 297 (el índice), 252, 295 · Reino Unido (261) en su propia sesión · la principal: 268, 291, 250, 244 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
 Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
@@ -55,8 +55,8 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 295: balances de las entidades que organizan las ligas (AFA, LFP…), para la auditoría en Ligas
 * 284 y 285: Fredrikstad y Sarpsborg 08 sobre el FLI; transcribir Viking Fotball AS
 * 283: Vålerenga y Aalesund, sumar el AS y el FLI (con nota en Finanzas)
-* 273: estadio y sponsor, lo que queda (completar a mano, la pantalla, nombrar la compuerta)
-* 296: página por sponsor y por marca (el dato ya está; la pantalla)
+* 273: estadio y sponsor, lo que queda (completar a mano, nombrar la compuerta)
+* 297: sponsors en el buscador (índice chico de fos-datos, resultado de fos-pantallas)
 
 **E. Pantallas**
 * 282: quién audita, lo que queda (72 informes a conseguir, Spartak, OCR, revisores no plenos)
@@ -233,12 +233,11 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 273. ESTADIO Y SPONSOR: LO QUE QUEDA (pedido de Guido, 2026-10-18). El dato está en main (`data/contexto/<iso>.js`, `tools/estadio-sponsor.mjs`,
    lo manual en `tools/contexto-manual.json` con fuente) y `cargar.mjs` no escribe un año nuevo sin estadio y sponsor. Falta: completar a
    mano los ejercicios ya cargados sin estadio o sin sponsor (`node tools/estadio-sponsor.mjs --ensayo` los lista; fos-datos tiene un
-   diseño de fuente en lote esperando el ok de Guido); mostrarlo en Finanzas (fos-pantallas); nombrar la compuerta nueva en
+   diseño de fuente en lote esperando el ok de Guido); nombrar la compuerta nueva en
    `Admin/PIPELINE.md` y en la skill `club-or-year-onboarding` (la skill, con ok de Guido).
-296. PÁGINA POR SPONSOR Y POR MARCA TÉCNICA (pedido de Guido, 2026-10-18). Cada sponsor con su histórico y los equipos que sponsorea hoy (los
-   de toda la liga, los que el sitio no tiene en gris). El dato está en main: `data/sponsors.js` (`tools/generate-sponsors.js`, nombres
-   unificados en `tools/sponsor-alias.json`). Pesa ~650 KB: si la pantalla lo carga entero, partirlo. Lo cargado a mano en
-   `contexto-manual.json` todavía no entra al índice. La pantalla, fos-pantallas.
+297. SPONSORS EN EL BUSCADOR (cierre de pantallas, 2026-10-18). La página por sponsor existe, pero el buscador no los encuentra:
+   `data/sponsors.js` pesa ~650 KB y no se carga de entrada. Hace falta un índice chico (id y nombre) que genere
+   `tools/generate-sponsors.js` (fos-datos) y después el resultado "Sponsors" en el buscador (fos-pantallas).
 281. FINANZAS: INGRESOS DE LAS OTRAS ENTIDADES (pedido de Guido, 2026-10-17). El dato y la pantalla están (tarjeta Estructura, piloto
    Portugal). Falta: transcribir por subagentes los ~17 documentos de entidades de clubes portugueses publicados sin `.md` (Porto 3, Braga
    2022-23, Marítimo 5, Belenenses, Chaves, Vizela 2, Académica, União de Leiria) y cargar su línea de ingresos (va con el 294). Chaves 2022-23: el informe del auditor de la
