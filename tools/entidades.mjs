@@ -18,6 +18,12 @@
 //   {"tipo":"carga","clubId":"chelsea-gb","anio":2025,"entidad":"chelsea-fc-holdings","perimetro":"consolidado","cita":{…}}
 //       de qué entidad son los números de ese ejercicio. La cita es del documento fuente de ese año.
 //
+//   {"tipo":"ingresos","entidad":"vitoria-sport-clube","anio":2022,"cierre":"2022-06-30","moneda":"EUR","total":4566468.26,
+//    "filas":[{"md":"Clubes/…/x.md","linea":1348,"texto":"Vendas e serviços prestados | 13;22 | 3 820 068,63 €","valor":3820068.63},…]}
+//       los ingresos de una entidad que NO se carga ese año (to-do 281), en la unidad del documento: los renglones de ingresos de su
+//       estado de resultados (o su total impreso, un solo renglón), sin la ganancia por su parte de la sociedad que se carga (en Portugal,
+//       "Ganhos imputados de subsidiárias"), que es resultado de esa sociedad y se contaría dos veces. `cierre` es su fecha de cierre, que
+//       puede no ser la del club (una asociación con año calendario). `unidad` (1000 si el documento está en miles; sin ella, 1).
 //   Cita de un documento: {"md":"Clubes/…/x.md","linea":3043,"texto":"The immediate parent company is Blueco 22 Midco Limited"}
 //   Cita externa (lo que el balance no dice, p. ej. los otros clubes del dueño): {"url":"https://…","fecha":"2026-10-18","texto":"…"}
 //   `que` ({es,en}) en una entidad: a qué se dedica, según el documento citado.
@@ -28,6 +34,8 @@
 //   - cada cita externa: url https, fecha AAAA-MM-DD y texto;
 //   - (los ingresos del total de cada grupo salen de data/rankings/: si cambian, --check avisa que esto quedó viejo)
 //   - cada carga: el club y el año están cargados en el sitio y el documento citado es de ese club y ese año (tools/quien.mjs);
+//   - cada línea de ingresos: cada renglón está en su línea del .md y su texto trae el valor; la suma de los renglones da el total;
+//     la entidad no es la que se carga ese año;
 //   - ids únicos, relaciones y cargas que apuntan a entidades que existen, códigos de forma/rel/perímetro conocidos, sin ciclos de control.
 // AVISOS (no frenan): clubes del sitio con una línea "otra entidad" en documentos-descartados.txt y sin ninguna entidad en el registro.
 //
@@ -47,7 +55,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, rmSync
 import { resolve, join } from 'node:path';
 import { execSync } from 'node:child_process';
 import vm from 'node:vm';
-import { loadSite } from './datos-sitio.mjs';
+import { loadSite, parseNumber } from './datos-sitio.mjs';
 import { quien } from './quien.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -66,7 +74,7 @@ const err = (n, msg) => errores.push(`${REGISTRO}:${n}: ${msg}`);
 
 // --- leer el registro ---------------------------------------------------------------------------------------------------------------
 const lineas = existsSync(join(ROOT, REGISTRO)) ? readFileSync(join(ROOT, REGISTRO), 'utf8').split('\n') : [];
-const entidades = new Map(), relaciones = [], cargas = [];
+const entidades = new Map(), relaciones = [], cargas = [], ingresos = [];
 lineas.forEach((l, i) => {
   const n = i + 1;
   if (!l.trim() || l.trim().startsWith('//')) return;
@@ -86,18 +94,23 @@ lineas.forEach((l, i) => {
   } else if (o.tipo === 'carga') {
     if (!PERIMETROS.has(o.perimetro)) err(n, `perímetro desconocido "${o.perimetro}"`);
     cargas.push(o);
+  } else if (o.tipo === 'ingresos') {
+    if (!Array.isArray(o.filas) || !o.filas.length) err(n, 'ingresos sin filas');
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(o.cierre || '') || !/^[A-Z]{3}$/.test(o.moneda || '') || typeof o.total !== 'number') err(n, 'ingresos sin cierre AAAA-MM-DD, moneda ISO o total');
+    ingresos.push(o);
   } else err(n, `tipo desconocido "${o.tipo}"`);
 });
 
 // --- citas ----------------------------------------------------------------------------------------------------------------------------
 const norm = (s) => String(s).replace(/[‘’´`]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, ' ').trim().toLowerCase();
 const mdCache = new Map();
-const tracked = new Set(execSync('git ls-files Clubes', { cwd: ROOT, encoding: 'utf8', maxBuffer: 64 << 20 }).split('\n'));
+// -z y sin quotepath: con acentos (Vitória Guimarães) git devuelve la ruta entre comillas y en octal; NFC para comparar igual.
+const tracked = new Set(execSync('git -c core.quotepath=off ls-files -z Clubes', { cwd: ROOT, encoding: 'utf8', maxBuffer: 64 << 20 }).split('\0').map(f => f.normalize('NFC')));
 function chequearCita(o) {
   const c = o.cita;
   if (!c) return err(o._n, 'sin cita');
   if (c.md) {
-    if (!tracked.has(c.md)) return err(o._n, `la cita apunta a un .md que no está trackeado: ${c.md}`);
+    if (!tracked.has(c.md.normalize('NFC'))) return err(o._n, `la cita apunta a un .md que no está trackeado: ${c.md}`);
     if (!Number.isInteger(c.linea) || !c.texto) return err(o._n, 'cita de documento sin linea o sin texto');
     if (!mdCache.has(c.md)) mdCache.set(c.md, readFileSync(join(ROOT, c.md), 'utf8').split('\n'));
     const ls = mdCache.get(c.md);
@@ -108,11 +121,25 @@ function chequearCita(o) {
   } else err(o._n, 'cita sin md ni url');
 }
 [...entidades.values(), ...relaciones, ...cargas].forEach(chequearCita);
+for (const g of ingresos) {
+  let suma = 0;
+  for (const f of g.filas || []) {
+    chequearCita({ _n: g._n, cita: f });
+    const nums = (String(f.texto).match(/\(?-?[\d][\d .,]*\d\)?|\d/g) || []).map(parseNumber).filter(v => v != null);
+    if (!nums.some(v => Math.abs(Math.abs(v) - Math.abs(f.valor)) < 0.005)) err(g._n, `el renglón "${f.texto}" no trae el valor ${f.valor}`);
+    suma += f.valor;
+  }
+  if (Math.abs(suma - g.total) > 0.01) err(g._n, `los renglones suman ${suma.toFixed(2)}, no el total ${g.total}`);
+}
 
 // --- referencias y el sitio -------------------------------------------------------------------------------------------------------------
 const { generic, clubs } = loadSite();
 for (const e of entidades.values()) if (e.clubId && !clubs[e.clubId]) err(e._n, `clubId "${e.clubId}" no está en data/clubs.js`);
 for (const r of relaciones) for (const k of ['de', 'a']) if (!entidades.has(r[k])) err(r._n, `${k}: "${r[k]}" no es una entidad del registro`);
+for (const g of ingresos) {
+  if (!entidades.has(g.entidad)) err(g._n, `entidad "${g.entidad}" no está en el registro`);
+  if (cargas.some(c => c.entidad === g.entidad && c.anio === g.anio)) err(g._n, `"${g.entidad}" es la entidad cargada en ${g.anio}: sus ingresos ya están en el sitio`);
+}
 const vistos = new Set();
 for (const c of cargas) {
   if (!entidades.has(c.entidad)) err(c._n, `entidad "${c.entidad}" no está en el registro`);
@@ -177,7 +204,12 @@ for (const clubId of [...new Set(cargas.map(c => c.clubId))].sort()) {
   porClub[clubId] = {
     pais: clubs[clubId].country.toLowerCase(),
     cargas: cs.map(c => pub(c, ['anio', 'entidad', 'perimetro', 'nota'])),
-    entidades: Object.fromEntries([...ids].sort().map(id => [id, pub(entidades.get(id), ['nombre', 'forma', 'pais', 'clubId', 'grupo', 'que'])])),
+    entidades: Object.fromEntries([...ids].sort().map(id => {
+      const e = pub(entidades.get(id), ['nombre', 'forma', 'pais', 'clubId', 'grupo', 'que']);
+      const ing = ingresos.filter(g => g.entidad === id).sort((a, b) => a.anio - b.anio);
+      if (ing.length) e.ingresos = Object.fromEntries(ing.map(g => [g.anio, { total: +(g.total * (g.unidad || 1) / 1e6).toFixed(3), moneda: g.moneda, cierre: g.cierre, fuente: citaPublica(g.filas[0]) }]));
+      return [id, e];
+    })),
     relaciones: [...rels].sort((a, b) => a._n - b._n).map(relPub),
   };
 }
@@ -250,5 +282,5 @@ if (CHECK) {
   mkdirSync(OUT, { recursive: true });
   for (const f of actuales) if (!archivos[f]) rmSync(join(OUT, f));
   for (const [f, s] of Object.entries(archivos)) writeFileSync(join(OUT, f), s);
-  console.log(`data/entidades/: ${Object.keys(archivos).length} archivos (${Object.keys(porClub).length} clubes, ${Object.keys(grupos).length} grupos, ${entidades.size} entidades, ${relaciones.length} relaciones).`);
+  console.log(`data/entidades/: ${Object.keys(archivos).length} archivos (${Object.keys(porClub).length} clubes, ${Object.keys(grupos).length} grupos, ${entidades.size} entidades, ${relaciones.length} relaciones, ${ingresos.length} ingresos).`);
 }
