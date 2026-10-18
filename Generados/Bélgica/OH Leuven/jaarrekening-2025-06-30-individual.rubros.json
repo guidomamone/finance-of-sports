@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf",
   "club": "oh-leuven",
   "year": 2025,
-  "generatedAt": "2026-10-18T13:08:06.410Z",
+  "generatedAt": "2026-10-18T13:54:21.006Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -44,7 +44,7 @@
       "values": [
         1.52052
       ],
-      "glosa": "Compras"
+      "glosa": "Aprovisionamientos"
     },
     {
       "label": "Voorraad: afname (toename)",
@@ -54,7 +54,7 @@
       "values": [
         0.006668
       ],
-      "glosa": "Variación de existencias: disminución (aumento)"
+      "glosa": "Existencias: disminución (aumento)"
     },
     {
       "label": "Diensten en diverse goederen",
@@ -97,16 +97,6 @@
       "glosa": "623"
     },
     {
-      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-      "lado": "expense",
-      "page": 9,
-      "section": "estado",
-      "values": [
-        4.957136
-      ],
-      "glosa": "Amortizaciones y pérdidas por deterioro de gastos de constitución, inmovilizado intangible y material"
-    },
-    {
       "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)",
       "lado": "expense",
       "page": 9,
@@ -114,7 +104,7 @@
       "values": [
         -0.004378
       ],
-      "glosa": "Deterioro de valor de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones)"
+      "glosa": "Deterioro de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones)"
     },
     {
       "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen)",
@@ -145,6 +135,26 @@
         1.141007
       ],
       "glosa": "Gastos de explotación no recurrentes"
+    },
+    {
+      "label": "Afschrijvingen immateriële vaste activa (spelers)",
+      "lado": "expense",
+      "page": 9,
+      "section": "ajuste manual",
+      "values": [
+        4.196505
+      ],
+      "glosa": "Amortización del inmovilizado intangible (jugadores)"
+    },
+    {
+      "label": "Afschrijvingen materiële vaste activa",
+      "lado": "expense",
+      "page": 9,
+      "section": "ajuste manual",
+      "values": [
+        0.760631
+      ],
+      "glosa": "Amortización del inmovilizado material"
     }
   ]
 }

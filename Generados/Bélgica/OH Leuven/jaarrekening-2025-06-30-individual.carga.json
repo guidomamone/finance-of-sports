@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf",
- "generado": "2026-10-18T13:25:37.857Z",
+ "generado": "2026-10-18T13:55:34.233Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (ohleuven-be)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "3 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Aankopen\" -> other_expenses 0.75; \"Afschrijvingen en waardeverminderingen o\" -> player_amortisation 0.55; \"Niet-recurrente bedrijfskosten\" -> exceptional_items 0.75"
   }
  ],
  "avisos": [
@@ -58,9 +54,9 @@
     "amountNative": -1.52052,
     "disclosureLevel": "aggregated",
     "_pag": 9,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Voorraad: afname (toename)",
@@ -113,16 +109,6 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-    "normalizedCategory": "player_amortisation",
-    "amountNative": -4.957136,
-    "disclosureLevel": "aggregated",
-    "_pag": 9,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
-   },
-   {
     "rawLabel": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)",
     "normalizedCategory": "other_expenses",
     "amountNative": 0.004378,
@@ -158,9 +144,29 @@
     "amountNative": -1.141007,
     "disclosureLevel": "aggregated",
     "_pag": 9,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Afschrijvingen immateriële vaste activa (spelers)",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -4.196505,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-18): la nota separa el 630 (4.957.136): intangibles = spelers (subagente Sonnet, revisado por Claude 2026-10-18)"
+   },
+   {
+    "rawLabel": "Afschrijvingen materiële vaste activa",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.760631,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-18): la nota separa el 630 (4.957.136): intangibles = spelers (subagente Sonnet, revisado por Claude 2026-10-18)"
    }
   ],
   "fiscalYearMeta": {
@@ -252,10 +258,58 @@
    "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "4.196.505",
+   "linea": 468,
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "reemplaza": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "motivo": "la nota separa el 630 (4.957.136): intangibles = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "motivo": "la nota separa el 630 (4.957.136): intangibles = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "fila",
+   "valor": "760.631",
+   "linea": 468,
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "la nota separa el 630 (4.957.136): intangibles = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf",
+   "campo": "categoria",
+   "valor": "depreciation",
+   "linea": null,
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "motivo": "la nota separa el 630 (4.957.136): intangibles = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
   }
  ],
  "seleccion": {
-  "filas": 18,
+  "filas": 19,
   "notasUsadas": [],
   "refM": null
  },
@@ -313,11 +367,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 1.52052,
    "cat": "other_expenses",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Compras de mercadería (código 600/8). Mismo criterio que Anderlecht y Antwerp. [L464: 'Aankopen | 600/8 | 1.520.520 | 1.557.743' (pág. 9)]",
    "destino": "expense",
    "amountNative": -1.52052
   },
@@ -397,22 +451,6 @@
    "amountNative": -0.76072
   },
   {
-   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "page": 9,
-   "native": 4.957136,
-   "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 4.957136,
-   "cat": "player_amortisation",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "enCola": true,
-   "destino": "expense",
-   "amountNative": -4.957136
-  },
-  {
    "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)",
    "page": 9,
    "native": 0.004378,
@@ -465,13 +503,45 @@
    "origen": "verificacion (estado)",
    "signoFijo": 1.141007,
    "cat": "exceptional_items",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Todo el 66A es el código 660 'Niet-recurrente afschrijvingen en waardeverminderingen op ... immateriële en materiële vaste activa' (1.141.007; 6630 y 664/7 solo en el año anterior). El documento no dice qué activos son: puede ser pases pero no está confirmado, así que no se fuerza player_impairment  [66A: '| (66A) | 1.141.007 | 24.227'; '| 660 | 1.141.007 |' (Nota 6.12, pág. 27); L473 'Niet-recurrente bedrijfskosten | 6.12 | 66A | 1.141.007' (pág. 9)]",
    "destino": "expense",
    "amountNative": -1.141007
+  },
+  {
+   "label": "Afschrijvingen immateriële vaste activa (spelers)",
+   "page": 9,
+   "native": 4.196505,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 4.196505,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-18): la nota separa el 630 (4.957.136): intangibles = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -4.196505
+  },
+  {
+   "label": "Afschrijvingen materiële vaste activa",
+   "page": 9,
+   "native": 0.760631,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 0.760631,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-18): la nota separa el 630 (4.957.136): intangibles = spelers (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "expense",
+   "amountNative": -0.760631
   },
   {
    "label": "Andere financiële opbrengsten",
@@ -523,6 +593,7 @@
    "verificacion (estado)": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen\")": "gastos sin signo (se invierten)",
    "verificacion (estado (lectura 4: signo impreso, resta en su lado))": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
@@ -600,9 +671,9 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 3,
-  "lineasGasto": 11,
+  "lineasGasto": 12,
   "metaFilas": 4,
   "excluidas": 0
  }
