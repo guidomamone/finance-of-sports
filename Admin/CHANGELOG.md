@@ -15,6 +15,16 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 744 — Merge de pipeline: caja y deuda en Bélgica y Estonia (2026-10-18)
+
+ASSET_V 1301, P0 0 / P1 0. La sesión pipeline cerró.
+
+- To-do 298 c: `caja-deuda.mjs` ya no lee un código NBB ("54/58", "76A") como importe, y la caja belga de un año sin vecino sale del
+  54/58 si el balance del documento cuadra (decisión de Guido: solo la caja). Estonio en `vocabulario.mjs` (298 c3 y r).
+- To-do 298 d: `perimetro-senales.mjs` no fija el perímetro del club con años de los dos estados sin voto; ensayo `--decidir-clubes --solo-cache`.
+- Escritas sin API: 10 cajas belgas y 10 cajas y 3 deudas estonias. La caja "equivocada" de Tallinna Kalev era buena, atada al año equivocado.
+- Nuevo to-do 310: caja y deuda de un año sin vecino para cualquier país, y el criterio de la deuda belga.
+
 ## Versión 743 — Merge de datos-sourcing (2026-10-18)
 
 Lo generado regenerado; ASSET_V 1299, P0 0 / P1 0. La sesión datos cerró.

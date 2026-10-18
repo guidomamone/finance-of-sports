@@ -275,22 +275,19 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    `Admin/registros/cola-borradores/altas-2026-10-17.md` cuando estén publicados (Viking, Vålerenga, Luzern, St. Gallen, Molde, Go Ahead
    Eagles, Basel, Pardubice, Aalesund, Fredrikstad, Sarpsborg 08; el borrador tiene la entidad de cada uno con cita); Bahia: una cita del
    registro societario de Brasil (QSA del CNPJ) para el eslabón CFG > City Football Group Brazil.
-298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, la b y la o, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
+298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, o y r, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
    vez; el detalle con casos, en `Admin/Archive/sesion-onboarding-2026-10-18-2.md`). a) CIERRE FALSO en verificar.mjs: compara en valor
    absoluto y da "cierra" con una fila del lado o signo equivocado (Lierse Kempenzonen 2022 habría cargado un gasto como ingreso): lo más
    grave. b) Esquema NBB belga en verificar.mjs y cargar.mjs: costos financieros 65/66B positivos, renglones "(+)/(-)" por valor absoluto,
-   el 76A sumado aparte, y verificar y la propuesta que no leen igual el signo; una regla por código NBB. c) caja-deuda.mjs: lee el código
-   NBB "54/58" como importe; un club con un solo año nunca pasa la compuerta del vecino; tres estonios "sin páginas de balance". d)
-   perimetro-senales.mjs no ve los dos estados de los informes estonios. e) pipeline.mjs: un .md viejo con marca de la preparación vieja
+   el 76A sumado aparte, y verificar y la propuesta que no leen igual el signo; una regla por código NBB. e) pipeline.mjs: un .md viejo con marca de la preparación vieja
    nunca se marca `sin-tablas` (OH Leuven 2022, Llaneros 2022; puede frenar buena parte de los 319). f) periodo.mjs no saca el cierre NBB
    cuando las fechas vienen en celdas (9 belgas y 1 estonio). g) la cola admite una sola categoría por fila: un "partir según la nota" con
    la suma exacta como compuerta. h) un `no_es_rubro` puede dejar a un padre sin hijos: que la cola avise. i) alta-club.mjs: un país nuevo
    frena hasta agregar su fila a PAISES: que la proponga. o) dos versiones "-correction" del mismo ejercicio entran juntas al lote (Bélgica): que
    entre una sola. l) a p) más casos de onboarding (reportType por año de un club existente, perímetro de la carga, año vecino con
    perímetros distintos, ceros reales y perfil que se repreguntan). q) el ensayo de lote.mjs cobra la categorización de todos los documentos de
-   la lista, también los ya cargados o categorizados. r) caja-deuda.mjs en Estonia: 0 de 126 datos, porque localizar no guarda dónde está el
-   balance (bilanss); y dejó sin commitear una caja equivocada de Tallinna Kalev 2019-2020 (descartada): ver de qué escalón salió. El detalle
-   de l a r, en `Admin/Archive/sesion-onboarding-2026-10-18-4.md`. k) alta-club.mjs / cargar-lote.mjs escriben la liga del alta en null aunque
+   la lista, también los ya cargados o categorizados. El detalle
+   de l a q, en `Admin/Archive/sesion-onboarding-2026-10-18-4.md`. k) alta-club.mjs / cargar-lote.mjs escriben la liga del alta en null aunque
    `altas-revision.jsonl` traiga las ligas verificadas (las 17 altas de los lotes 89-90): que el alta las tome de la revisión.
 301. gasto.mjs --json SE CORTA EN UN PIPE (visto armando el tablero, 2026-10-18). `node tools/gasto.mjs --json | …` corta la salida a los
    64 KB: el proceso sale antes de vaciar stdout. Mejora de script chica.
@@ -303,6 +300,11 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    suma. `tools/gasto.mjs` da el número bueno.
 308. NOMBRAR EN LA SKILL club-data-mapping EL CRITERIO DE LOS BONOS CONVERTIBLES (con ok de Guido: es una skill). Ya está en
    CONVENCIONES-DATOS; la skill tiene que decirlo donde habla de deuda.
+310. CAJA Y DEUDA DE UN AÑO SIN VECINO (pedido de Guido, 2026-10-18; cierre de pipeline). Hoy solo la caja belga sale del código 54/58
+   cuando el balance del documento cuadra. Falta: (1) una compuerta de primer año para cualquier país (que el dato cuadre con el balance del
+   propio documento); (2) la deuda belga, con criterio a decidir (¿el 42 entra?; Union SG tiene 31,66 M cargados y 7,62 M por códigos
+   financieros); (3) OH Leuven y los documentos cuyo .md no trae la columna de códigos. Si caja-deuda vuelve a atar un valor al año
+   equivocado (Tallinna Kalev en onboarding), mirar qué `.md` devolvió `mdDeFuente`.
 309. TAMAÑO DE LIGA DESDE LA LISTA DE WIKIPEDIA (cierre de pantallas, a decidir con Guido). En 223 de los 227 liga-años con lista de
    Wikipedia (`wiki` en `data/rankings/<liga>.js`) `leagueSize` es null, aunque la lista existe y alimenta los estimados: sin él no hay
    "N de los M" en el subtítulo de Ligas ni "Faltan…". ¿El tamaño sale de la lista (`LEAGUE_SIZE_BY_YEAR`, `tools/listas-lote.mjs`)?

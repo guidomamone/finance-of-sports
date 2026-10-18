@@ -107,7 +107,8 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
   porque frenos de la carga (signo del resultado, filas del otro lado) no se ven en la verificación.
 - Estonia es un país del sitio desde el 2026-10-18 (lote 89: Flora, Harju JK Laagri, Kuressaare, Nõmme Kalju, Tartu Tammeka, FCI
   Levadia, Narva Trans, Paide, Tallinna Kalev), completa: los 54 años 2019-2025 en el sitio; con sus ligas (Meistriliiga y Esiliiga) en Ligas; Bélgica suma Lierse SK, Lokeren-Temse,
-  Lommel SK, OH Leuven, Patro Eisden, RWDM, Beerschot y RAAL La Louvière (lote 90). Caja y deuda de esos clubes, vacías (en Estonia, localizar no guarda el balance).
+  Lommel SK, OH Leuven, Patro Eisden, RWDM, Beerschot y RAAL La Louvière (lote 90). Caja y deuda: Estonia con el vocabulario estonio (bilanss, raha, laenukohustised) y Bélgica solo la caja de un año
+  sin vecino, por el código NBB 54/58 si el balance del documento cuadra; la deuda belga espera criterio (to-do 310).
 - Portugal está cargado salvo Benfica 2014-15 (en HALLAZGOS; to-do 165 b0). Caja y deuda: lo que falta está frenado por el documento o por la escala del año (lista en el to-do 260). Un ajuste `caja` / `deuda` puede llevar año (`ajustes.mjs --anio`), para un PDF que alimenta dos años. Rusia sale de los códigos del balance del fisco (caja 1250, deuda 1410 + 1510). Los préstamos de socios cuentan como deuda (Guido, 2026-10-17). Del to-do 237
   queda solo `al` (Guido la dejó para después). Los años en escudos (PTE) se cargan en su moneda con la paridad fija al euro, como las liras.
   Un ejercicio de transición por cambio de cierre (11 meses que encadenan con el cierre anterior y el siguiente) se carga con nota pública.
