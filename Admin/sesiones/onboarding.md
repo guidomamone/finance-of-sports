@@ -31,3 +31,6 @@ Se completa mientras se trabaja. No se tocan TODO, CHANGELOG ni ESTADO: la princ
   (`listo-para-jev` o `sin-rubros`) nunca se marca `sin-tablas` ni se rehace con Mistral. Casos: OH Leuven 2022 (1 renglón de tabla,
   `jev: listo-para-jev`) y Llaneros 2022 (0 renglones, `jev: sin-rubros`); la segunda corrida de Mistral los dejó igual (0 documentos).
   Probablemente afecta a buena parte de los 319 de `sin-tablas-6paises.txt`.
+- `periodo.mjs` no saca el cierre de las jaarrekening belgas de la NBB cuando las fechas vienen en celdas de tabla
+  ("| het boekjaar dat de periode dekt van | 01-07-2024 | tot | 30-06-2025 |"): Lommel SK y RWDM 2025 frenaban antes de localizar
+  (se cargaron con ajuste `cierre`).
