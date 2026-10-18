@@ -96,6 +96,24 @@ const tartutammekaeeRevenueLinesByYear = {
     { rawLabel:'Tulu väljaku rendist', normalizedCategory:'other_income', amountNative:0.002247, disclosureLevel:'aggregated' },
     { rawLabel:'Muud tulud', normalizedCategory:'other_income', amountNative:0.01334, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Liikmetelt saadud tasud', normalizedCategory:'member_dues', amountNative:0.452094, disclosureLevel:'aggregated' },
+    { rawLabel:'Tartu Linnavalitsus', normalizedCategory:'other_income', amountNative:0.200771, disclosureLevel:'aggregated' },
+    { rawLabel:'Tartu Spordiliit', normalizedCategory:'other_income', amountNative:0.008691, disclosureLevel:'aggregated' },
+    { rawLabel:'Eesti Jalgpalli Liit', normalizedCategory:'other_income', amountNative:0.169375, disclosureLevel:'aggregated' },
+    { rawLabel:'UEFA Solidaarsustoetus', normalizedCategory:'competition_bonus', amountNative:0.146697, disclosureLevel:'aggregated' },
+    { rawLabel:'Spordikoolituse- ja Teabe Sihtasutus', normalizedCategory:'other_income', amountNative:0.095997, disclosureLevel:'aggregated' },
+    { rawLabel:'Füüsilised ja juriidilised isikud', normalizedCategory:'other_income', amountNative:0.035937, disclosureLevel:'aggregated' },
+    { rawLabel:'Tartu Vallavalitsus', normalizedCategory:'other_income', amountNative:0.00504, disclosureLevel:'aggregated' },
+    { rawLabel:'Eesti Kultuurikapital', normalizedCategory:'other_income', amountNative:0.00465, disclosureLevel:'aggregated' },
+    { rawLabel:'Sihtasutus Tartu Kultuurkapital', normalizedCategory:'other_income', amountNative:0.0001, disclosureLevel:'aggregated' },
+    { rawLabel:'Varustus', normalizedCategory:'sponsorship_commercial', amountNative:0.011796, disclosureLevel:'aggregated' },
+    { rawLabel:'Reklaam', normalizedCategory:'sponsorship_commercial', amountNative:0.087365, disclosureLevel:'aggregated' },
+    { rawLabel:'Tulu piletite müügist', normalizedCategory:'matchday_competition', amountNative:0.009075, disclosureLevel:'aggregated' },
+    { rawLabel:'Tulu muust äritegevusest', normalizedCategory:'other_income', amountNative:0.121155, disclosureLevel:'aggregated' },
+    { rawLabel:'Tulu väljaku rendist', normalizedCategory:'other_income', amountNative:0.003438, disclosureLevel:'aggregated' },
+    { rawLabel:'Muud tulud', normalizedCategory:'other_income', amountNative:0.002646, disclosureLevel:'aggregated' },
+  ],
 };
 const tartutammekaeeExpenseLinesByYear = {
   2025: [
@@ -301,6 +319,43 @@ const tartutammekaeeExpenseLinesByYear = {
     { rawLabel:'Põhivarade kulum ja väärtuse langus', normalizedCategory:'depreciation', amountNative:-0.060775, disclosureLevel:'aggregated' },
     { rawLabel:'Muud kulud', normalizedCategory:'other_expenses', amountNative:-0.000561, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Üür ja rent', normalizedCategory:'admin_general_expense', amountNative:-0.005125, disclosureLevel:'aggregated' },
+    { rawLabel:'Palgakulu - elukutselised mängijad', normalizedCategory:'wages_squad', amountNative:-0.08647, disclosureLevel:'aggregated' },
+    { rawLabel:'Sotsiaalmaksud - elukutselised mängijad', normalizedCategory:'wages_squad', amountNative:-0.02983, disclosureLevel:'aggregated' },
+    { rawLabel:'Palgakulu - muu personal', normalizedCategory:'admin_general_expense', amountNative:-0.468144, disclosureLevel:'aggregated' },
+    { rawLabel:'Sotsiaalmaksud - muu personal', normalizedCategory:'admin_general_expense', amountNative:-0.161904, disclosureLevel:'aggregated' },
+    { rawLabel:'Spordibaaside rent', normalizedCategory:'admin_general_expense', amountNative:-0.095946, disclosureLevel:'aggregated' },
+    { rawLabel:'Turniiride, võistluste osavõtutasud', normalizedCategory:'match_organisation_expense', amountNative:-0.013083, disclosureLevel:'aggregated' },
+    { rawLabel:'Spordivarustus', normalizedCategory:'other_expenses', amountNative:-0.011613, disclosureLevel:'aggregated' },
+    { rawLabel:'Annetus Vähiravifondile Kingitud Elu', normalizedCategory:'other_expenses', amountNative:-0.000655, disclosureLevel:'aggregated' },
+    { rawLabel:'Sporditoetus', normalizedCategory:'youth_other_sports_expense', amountNative:-0.086764, disclosureLevel:'aggregated' },
+    { rawLabel:'Spordistipendium', normalizedCategory:'youth_other_sports_expense', amountNative:-0.053475, disclosureLevel:'aggregated' },
+    { rawLabel:'Üür ja rent', normalizedCategory:'admin_general_expense', amountNative:-0.014983, disclosureLevel:'aggregated' },
+    { rawLabel:'Elektrienergia', normalizedCategory:'admin_general_expense', amountNative:-0.007707, disclosureLevel:'aggregated' },
+    { rawLabel:'Soojusenergia', normalizedCategory:'admin_general_expense', amountNative:-0.00052, disclosureLevel:'aggregated' },
+    { rawLabel:'Kütus', normalizedCategory:'admin_general_expense', amountNative:-0.002145, disclosureLevel:'aggregated' },
+    { rawLabel:'Veevarustusteenused', normalizedCategory:'admin_general_expense', amountNative:-0.0021, disclosureLevel:'aggregated' },
+    { rawLabel:'Mitmesugused bürookulud', normalizedCategory:'admin_general_expense', amountNative:-0.005031, disclosureLevel:'aggregated' },
+    { rawLabel:'Lähetuskulud', normalizedCategory:'match_organisation_expense', amountNative:-0.00124, disclosureLevel:'aggregated' },
+    { rawLabel:'Koolituskulud', normalizedCategory:'admin_general_expense', amountNative:-0.007311, disclosureLevel:'aggregated' },
+    { rawLabel:'Spordivarustus', normalizedCategory:'other_expenses', amountNative:-0.033742, disclosureLevel:'aggregated' },
+    { rawLabel:'Transport', normalizedCategory:'match_organisation_expense', amountNative:-0.082362, disclosureLevel:'aggregated' },
+    { rawLabel:'Turniiride, võistluste osavõtutasud', normalizedCategory:'match_organisation_expense', amountNative:-0.121358, disclosureLevel:'aggregated' },
+    { rawLabel:'Mängijate üleminekutasud', normalizedCategory:'other_expenses', amountNative:-0.0123, disclosureLevel:'aggregated' },
+    { rawLabel:'Treeninglaager', normalizedCategory:'match_organisation_expense', amountNative:-0.030059, disclosureLevel:'aggregated' },
+    { rawLabel:'Võistluste, ürituste korraldamiskulud', normalizedCategory:'match_organisation_expense', amountNative:-0.006853, disclosureLevel:'aggregated' },
+    { rawLabel:'Turvateenus', normalizedCategory:'match_organisation_expense', amountNative:-0.005952, disclosureLevel:'aggregated' },
+    { rawLabel:'Litsentsitasud', normalizedCategory:'match_organisation_expense', amountNative:-0.009702, disclosureLevel:'aggregated' },
+    { rawLabel:'Meditsiinitarvikud, taastumisvahendid', normalizedCategory:'other_expenses', amountNative:-0.009506, disclosureLevel:'aggregated' },
+    { rawLabel:'Reklaamikulud', normalizedCategory:'admin_general_expense', amountNative:-0.001311, disclosureLevel:'aggregated' },
+    { rawLabel:'Raamatupidamine', normalizedCategory:'admin_general_expense', amountNative:-0.02212, disclosureLevel:'aggregated' },
+    { rawLabel:'Ehitusmaterjal ja -teenus', normalizedCategory:'admin_general_expense', amountNative:-0.006221, disclosureLevel:'aggregated' },
+    { rawLabel:'Isikliku auto kasutamise kompensatsioon', normalizedCategory:'admin_general_expense', amountNative:-0.021048, disclosureLevel:'aggregated' },
+    { rawLabel:'Muud', normalizedCategory:'other_expenses', amountNative:-0.028778, disclosureLevel:'aggregated' },
+    { rawLabel:'Põhivarade kulum ja väärtuse langus', normalizedCategory:'depreciation', amountNative:-0.060661, disclosureLevel:'aggregated' },
+    { rawLabel:'Muud kulud', normalizedCategory:'other_expenses', amountNative:-0.002649, disclosureLevel:'aggregated' },
+  ],
 };
 const tartutammekaeeFiscalYearMeta = {
   2025: {
@@ -369,6 +424,20 @@ const tartutammekaeeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:1.212461, officialTotalExpenses:1.283864, officialPAT:-0.077647,
   },
+  2023: {
+    currency:'EUR', fxRef:'EUR@2023-12-31',
+    sourceId:'tartutammeka-ee-aruanne-2023',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.007507, tax:0,
+    extraRows: [
+      {label:'Intressikulud', value:-0.007509},
+      {label:'Muud finantstulud ja -kulud', value:0.000002},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:1.354827, officialTotalExpenses:1.508668, officialPAT:-0.161348,
+  },
 };
 const tartutammekaeePresupuestoOverlayByYear = {};
 
@@ -408,6 +477,11 @@ Object.assign(sources, {
   'tartutammeka-ee-aruanne-2022': {
     id:'tartutammeka-ee-aruanne-2022', clubId:'tartutammeka-ee',
     title:'Mittetulundusühing Jalgpallikool Tammeka — aruanne-2022 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'tartutammeka-ee-aruanne-2023': {
+    id:'tartutammeka-ee-aruanne-2023', clubId:'tartutammeka-ee',
+    title:'Mittetulundusühing Jalgpallikool Tammeka — aruanne-2023 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
