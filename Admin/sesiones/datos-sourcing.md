@@ -17,8 +17,16 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
     (hoy solo Primera B Metro: "Campeonato de Primera B 2019-20 (Argentina)", sección "Equipos participantes"), que se prueban solo si
     ningún título en inglés pasa la compuerta.
   - `alias.json`: "Union SG" → `unionsg-be` (clave `be` nueva).
-  - Ensayo: 5 de 5 liga-años pasan la compuerta (Primera B 2020 y 2021, Pro League 2025, Serie C 2024, Perú 2020).
+  - Ensayo: 5 de 5 liga-años pasan la compuerta. `--contra-cache`: 15 de 376 listas guardadas difieren de lo que baja hoy, pero el
+    lector viejo da lo mismo que el nuevo en las 15 (son cambios de Wikipedia o de reglas anteriores, no se tocaron).
+  - Guardadas las 5 listas (`listas-lote.mjs`): Primera B Metro 2020 (18) y 2021 (17), Pro League 2024-25 (16, `be.json` nuevo),
+    Serie C 2023-24 (60) y Liga 1 de Perú 2020 (19). `faltantes-liga.mjs` regenerado (`data/faltantes/` con `ar-primerab.js` y
+    `be-proleague.js` nuevos, `Admin/sourcing/pendientes.md`), ASSET_V 1254, `fuentes/` regenerado. `--print`: 0 alias rotos, 0 que faltan.
 
 ## Qué queda (TODO)
 
+- Borrar los to-dos 276 y 277 (resueltos; el 277 con la premisa vencida, ver arriba).
+
 ## Qué deja de ser cierto en ESTADO
+
+- Nada: ESTADO no nombra estas listas.
