@@ -1,18 +1,14 @@
 {
  "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2025-06-30-individual.pdf",
- "generado": "2026-10-18T13:25:38.150Z",
+ "generado": "2026-10-18T13:55:34.549Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (rwdm-be)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "5 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Aankopen\" -> other_expenses 0.6; \"Andere personeelskosten\" -> wages_squad 0.55; \"Afschrijvingen en waardeverminderingen o\" -> player_amortisation 0.6; \"Minderwaarden bij de realisatie van imma\" -> player_impairment 0.6; \"Andere niet-recurrente bedrijfskosten\" -> exceptional_items 0.75"
   }
  ],
  "avisos": [
-  "gastos: ningún total impreso igual a la suma de las líneas (-21.560226); queda la suma, verificada por el resultado del ejercicio",
+  "gastos: ningún total impreso igual a la suma de las líneas (-20.626122); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -49,9 +45,9 @@
     "amountNative": -0.74886,
     "disclosureLevel": "aggregated",
     "_pag": 8,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Diensten en diverse goederen",
@@ -89,19 +85,19 @@
     "amountNative": -1.046765,
     "disclosureLevel": "aggregated",
     "_pag": 25,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-    "normalizedCategory": "player_amortisation",
+    "normalizedCategory": "depreciation",
     "amountNative": -2.5493,
     "disclosureLevel": "aggregated",
     "_pag": 8,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
@@ -135,13 +131,13 @@
    },
    {
     "rawLabel": "Minderwaarden bij de realisatie van immateriële en materiële vaste activa",
-    "normalizedCategory": "player_impairment",
+    "normalizedCategory": "exceptional_items",
     "amountNative": -0.934104,
     "disclosureLevel": "aggregated",
     "_pag": 28,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Andere niet-recurrente bedrijfskosten",
@@ -149,9 +145,9 @@
     "amountNative": -0.00067,
     "disclosureLevel": "aggregated",
     "_pag": 28,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -201,7 +197,7 @@
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 15.174326,
-   "officialTotalExpenses": 21.560226,
+   "officialTotalExpenses": 20.626122,
    "officialPAT": -14.545496
   },
   "source": {
@@ -333,11 +329,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.74886,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Aankopen (600/8) es compra de mercadería; precedente belga other_expenses. [Cuenta de resultados pág. 8: \"Aankopen | 600/8 | 748.860\"]",
    "destino": "expense",
    "amountNative": -0.74886
   },
@@ -394,11 +390,11 @@
    "origen": "verificacion (nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\")",
    "signoFijo": 1.046765,
    "cat": "wages_squad",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Andere personeelskosten (623) es una parte del código 62; 7.691.859 + 1.231.501 + 1.046.765 = 9.970.125 = total 62. Precedente: Standard, Union SG, Mechelen y Westerlo lo dejan dentro de wages_squad como sub-ítem. Debe ser sub-ítem de la línea 62, no línea aparte, para no duplicar. [Bilan social pág. 25: \"Andere personeelskosten | 623 | 1.046765\"; pág. 8: \"Bezoldigingen, sociale lasten en pensioenen | 62 | 9.970.125\"]",
    "destino": "expense",
    "amountNative": -1.046765
   },
@@ -409,12 +405,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 2.5493,
-   "cat": "player_amortisation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): El documento NO confirma que los inmateriales sean derechos de jugadores: el rubro se llama \"Concessies, octrooien, licenties, knowhow, merken\" y las reglas de valoración no mencionan jugadores. Criterio Dender (no forzar player_amortisation sin confirmación textual). Pero es muy probable que sean p [Pág. 9: \"CONCESSIES, OCTROOIEN, LICENTIES, KNOWHOW, MERKEN\" Geboekt 8072 = 2.015.008; pág. 12 en adelante Geboekt 8271 = 361.697, 8272 = 133.429, 8273 = 24.005, 8275 = 15.161; pág. 8: 630 = 2.549.300]",
    "destino": "expense",
    "amountNative": -2.5493
   },
@@ -470,12 +466,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Niet-recurrente bedrijfskosten\")",
    "signoFijo": 0.934104,
-   "cat": "player_impairment",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Minderwaarden 6630 (pérdida en la venta de activos inmateriales y materiales, 934.104) es parte de 66A no recurrente. Como los inmateriales no están confirmados como pases, va a exceptional_items, coherente con el 630. Si Guido confirma que son pases, player_impairment (como Antwerp y Westerlo). [Pág. 28: \"Minderwaarden bij de realisatie van immateriële en materiële vaste activa | 6630 | 934.104\"; 66A total = 934.774]",
    "destino": "expense",
    "amountNative": -0.934104
   },
@@ -487,11 +483,11 @@
    "origen": "verificacion (nota que desglosa \"Niet-recurrente bedrijfskosten\")",
    "signoFijo": 0.00067,
    "cat": "exceptional_items",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Andere niet-recurrente bedrijfskosten (664/7) es no recurrente; 934.104 + 670 = 934.774 cierra con 66A. Precedente belga exceptional_items. [Pág. 28: \"Andere niet-recurrente bedrijfskosten | 664/7 | 670\"]",
    "destino": "expense",
    "amountNative": -0.00067
   },
@@ -574,9 +570,9 @@
  },
  "totales": {
   "revSum": 15.174326,
-  "expSum": -21.560226,
+  "expSum": -20.626122,
   "officialTotalRevenue": 15.174326,
-  "officialTotalExpenses": 21.560226,
+  "officialTotalExpenses": 20.626122,
   "officialPAT": -14.545496,
   "verificacion": {
    "pat": "impreso",
@@ -645,7 +641,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 2,
   "lineasGasto": 11,
   "metaFilas": 6,
