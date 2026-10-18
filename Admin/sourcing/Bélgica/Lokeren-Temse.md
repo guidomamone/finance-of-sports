@@ -14,3 +14,5 @@
 - Número de empresa tomado de companyweb.be (búsqueda web); confirmado contra el nombre del depositante en la BNB. Los ejercicios en modelo abreviado (`Verkort`) pueden no traer cuenta de resultados completa: revisar al transcribir.
 - Entidad pequeña (0,5 FTE en 2025): probablemente de poco valor para el sitio.
 - Último chequeo: 2026-10-08.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2025 desde `Clubes/Bélgica/Lokeren-Temse/jaarrekening-2025-06-30-individual.pdf` (sourceId `lokerentemse-be-jaarrekening-2025-06-30-individual`).

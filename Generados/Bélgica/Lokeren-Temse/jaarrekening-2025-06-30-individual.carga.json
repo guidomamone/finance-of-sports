@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2025-06-30-individual.pdf",
- "generado": "2026-10-18T13:25:37.677Z",
+ "generado": "2026-10-18T13:55:33.963Z",
  "frena": [
   {
    "etapa": "club",
@@ -8,7 +8,6 @@
   }
  ],
  "avisos": [
-  "materialidad: \"Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa\" va como depreciation con 0.6 (las dudas de gastos suman 0.00% de su lado)",
   "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -75,9 +74,9 @@
     "amountNative": 0,
     "disclosureLevel": "aggregated",
     "_pag": 6,
-    "_escalon": "materialidad",
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.00% (≤ 1%) y esta tiene 0.6"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
@@ -310,11 +309,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0,
    "cat": "depreciation",
-   "conf": 0.6,
-   "escalon": "materialidad",
-   "fuenteCat": "categorias.json · escalón de materialidad: las dudas de gastos suman 0.00% (≤ 1%) y esta tiene 0.6",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": false,
+   "notaGuido": "precedente del país: 2 clubes (Lierse SK, Patro Eisden), titulo:bedrijfsopbrengsten en bedrijfskosten · Claude 2026-10-18 (subagente Sonnet): la fila se partió con ajustes fila + categoria según la nota de activos fijos (pases / bienes de uso)",
    "destino": "expense",
    "amountNative": 0
   },

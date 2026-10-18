@@ -16,4 +16,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'dender-be':        { 2025: 'be-proleague' },
   'zultewaregem-be':  { 2025: 'liga-no-catalogada' },
   'liersesk-be': { 2025: null },
+  'lokerentemse-be': { 2025: null },
 });
