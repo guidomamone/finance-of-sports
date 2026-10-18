@@ -80,6 +80,10 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
   Aclaración de Guido: "liga" es el balance propio de la entidad que organiza la liga (AFA, LFP) y quién lo auditó, no marcar los
   clubes. El sitio no tiene esas entidades; se le propuso a finanzas `window.LIGA_AUDITORIA[leagueId][anio] = { entidad, auditor,
   dictamen, continuidad, fuente }`.
+  El dato de clubes está en la rama finanzas (commit 6e88784), llega a main con el próximo merge de finanzas: 19 balances. Para probar:
+  arsenal-gb 2024 (Deloitte, sin salvedades), dinamozagreb-hr 2024 (con salvedades), vitoriaguimaraes-pt 2022 (BDO, continuidad true),
+  almagro-ar 2018 (auditor persona), akhmatgrozny-ru 2022 (sin_informe). Un club-año que no está en CLUB_AUDITORIA es "no sabemos", no
+  "sin informe".
 
 ### Qué cambió, 271 (para CHANGELOG)
 
