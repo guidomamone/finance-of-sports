@@ -418,6 +418,18 @@ tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento si
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2020–21 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Marítimo".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-21.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+José Carlos Rodrigues Pereira (1997-07-04 a 2021-11-05): Presidente del Club Sport Marítimo desde el 4/7/1997 (dnoticias, 5/7/2017: 'a 4 de Julho de 1997'; Rui Fontes lo presidió de 1988 a 1997). Perdió la elección del 22/10/2021 ante Rui Fontes (65%) y la gestión nueva tomó posesión el 5/11/2021 (ver nota de Fontes): ese día se carga como 'hasta'. Renunció a la SAD tras perder (publico.pt 25/10/2021, traspaso hacia el 4/11) y en el balance 2021/22 (MaritimoSAD_RC_30.06.2022.md:133) el conselho de administração de la SAD cambia por cooptación el 4/11/2021, un día antes de la posesión del club. El balance de 30/6/2021 lo firma como 'Presidente' del conselho de administración de la SAD (MaritimoSAD_RC_30.06.2021.md:153 y :919); el balance 2021/22 lo lista como presidente hasta el 4/11/2021 (MaritimoSAD_RC_30.06.2022.md:120).
+Rui Emanuel Baptista Fontes (2021-11-05 a 2023-11-22): Ganó la elección del club el 22/10/2021 (65%, mandato 2021 a 2025) y tomó posesión el viernes 5/11/2021 a las 12:00 (dnoticias, 3/11/2021: 'a tomada de posse acontece na sexta-feira'; A Bola del 5/11/2021, 'Rui Fontes tomou posse esta sexta-feira'). Hasta el 22/11/2023: Gomes lo sucedió tras la elección anticipada del 17/11/2023 y fue empossado el miércoles 22/11/2023 (A Bola 22/11/2023). En la SAD fue presidente de la asamblea general desde el 2/12/2021 (MaritimoSAD_RC_30.06.2022.md:167, presidente del conselho de administração era João Luís Gouveia Martins, :175/:2097) y presidente del conselho de administração desde octubre de 2022 (MaritimoSAD_RC_30.06.2023.md:131-141 y firma en :2155). Cierre 2021/22: el balance lo firma Martins como presidente de la SAD, pero el presidente del club (criterio del país) es Fontes. Cierre 2022/23: el balance lo firma Fontes (MaritimoSAD_RC_30.06.2023.md:2155).
+Carlos André Rodrigues Gomes (2023-11-22 a hoy): Elegido presidente del club el 17/11/2023 (71,8% según el club; 71,2% según otras fuentes) con la lista A que sucedía a la dirección de Fontes (mandato 2023 a 2027); empossado el miércoles 22/11/2023 con Pedro Proença presente (A Bola, 22/11/2023: 'foi empossado como novo líder do clube'). La fecha 22/11/2023 sale de la fecha de publicación de la nota ('esta quarta-feira'). En la SAD fue cooptado presidente del conselho de administración el 23/11/2023 (Maritimo-Futebol-SAD_Relatorio-e-Contas-30jun24.md:165 y :171) y la AG de 15/2/2024 lo ratificó (:143, :153). Firma los balances 2024 y 2025 (FUTEBOL-SAD_RC-30.06.2025.md:118 y :811 'Carlos André Rodrigues Gomes (Presidente)').
+Duda: El balance 2021/22 (cierre 30/6/2022) lo firma João Luís Gouveia Martins como presidente del conselho de administração de la SAD, no Rui Fontes (presidente del club); se carga Fontes por el criterio del país (club dueño del 91% de la SAD). Si Guido prefiere el presidente que firma, ese ejercicio cambiaría de persona.
+Duda: Las fechas de asunción de Fontes (5/11/2021) y de Gomes (22/11/2023) salen del día de la semana que dicen las notas ('sexta-feira', 'quarta-feira') y su fecha de publicación; ninguna nota escribe el día calendario literal en el texto. No hay ambigüedad para los cierres, que caen a meses de distancia de los cambios.
+```
+
 ## Fuentes
 
 ### maritimo-pt-futebol-sad-rc-30-06-2025

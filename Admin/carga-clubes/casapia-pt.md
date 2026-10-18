@@ -329,6 +329,16 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 tools/cargar.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2021–22 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Casa Pia".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-14.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+Victor Domingos Seabra Franco (2006-01-01 a hoy): Presidente del Casa Pia AC desde 2006 (A Bola, 6/6/2025: 'iniciou funções em 2006', solo el año: día y mes 01); reelecto sin oposición en junio de 2025 para 2025-28, por lo que sigue (hasta null). Firma como 'Victor Domingos Seabra Franco - Presidente' los balances 2021/22 (relatorio-contas-2021-22.md:272, 334, 1089), 2022/23 (relatorio-contas-2022-23.md:190, 1036), 2023/24 (relatorio-contas-2023-24.md:175, 1213) y 2024/25 (relatorio-contas-2024-25.md:299, 1333). Capital de Casa Pia Atlético Clube - Futebol SDUQ, Lda detenido al 100% por el club (relatorio-contas-2024-25.md:771). Los datos de MSD Capital/Robert Platek (Wikipedia lista a Platek de dueño) no figuran en los informes ni hay fecha confirmada, por eso no se carga como dueño; la gestión fue la misma en los cuatro cierres.
+Duda: Inicio exacto en la presidencia no hallado (solo 2006; se usa 2006-01-01).
+Duda: Fecha y estructura de la entrada de MSD Capital (Robert Platek) en la SDUQ: una nota de A Bola 2025 habla de una sociedad con MSD Capital, pero el informe 2024/25 todavía muestra al club con el 100%; no verificado.
+```
+
 ## Fuentes
 
 ### casapia-pt-relatorio-contas-2024-25

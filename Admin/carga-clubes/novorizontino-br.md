@@ -1074,6 +1074,18 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 2010: tools/cargar.mjs 2026-10-03, SIN VERIFICAR
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-18/resultado-2.json, tools/gestiones-tanda.mjs, 2026-10-18):_
+
+```text
+Genilson da Rocha Santos (2012-01-01 a hoy): ESPN Brasil (artículo sobre el club, ver fuente) dice que está en la presidencia del club 'desde 2012': solo año, por eso desde = 2012-01-01 (día y mes asumidos). Contradice en parte al portal Hortolândia (entró en 2012 como coordinador de categorías de base), así que la fecha es la menos firme. Corroboración en los documentos: balanco-2015.md:163 ('PRESIDENTE'), balanco-2016.md:128 y balanco-patrimonial-2017.md:148 ('PRESIDENTE DA DIRETORIA EXECUTIVA'), demonstracoes-financeiras-2018.md:803, -2019.md:893, -2020.md:820, -2021.md:925, -2022.md:104 y 1061 (presidente da diretoria executiva); 2023 firmado digitalmente por él (demonstracoes-financeiras-2023.md:15). En balanco-2013.md:90 y balanco-2014-b.md:150 firma sin cargo (el CRC de esas líneas es del contador Cardoso). Desde dic-2023 es diretor-presidente de la SAF; sigue en 2026 (sitio oficial del club, jun-2026).
+SIN CONFIRMAR, no cargada: Alex Sandro Domingues Pereira (2010-03-01 a 2012-01-01), https://en.wikipedia.org/wiki/Gr%C3%AAmio_Novorizontino: Solo respaldo: Clubes/Brasil/Novorizontino/balanco-2010.md:36-41 lo firma como PRESIDENTE DA DIRETORIA EXECUTIVA (parecer del consejo fiscal del 27/01/2011, línea 45). Ninguna fuente web lo menciona como presidente en 2010-2011 (solo ogol.com.br lo lista como presidente, sin fechas y sin poder abrir la página: 403). desde 2010-03-01 = fundación del Grêmio Novorizontino (Wikipedia); hasta 2012-01-01 es un tope derivado del año de inicio de Genilson según ESPN, no una fecha de salida conocida. No publicar.
+Duda: Cierre 2010-12-31 sin cubrir: el balance 2010 lo firma Alex Sandro Domingues Pereira como presidente de la diretoria executiva, pero ninguna fuente web con fechas lo confirma. Pregunta para el club: quién presidió el Grêmio Novorizontino desde la fundación (marzo 2010) hasta que asumió Genilson, y con qué fechas.
+Duda: La fecha de asunción de Genilson (2012-01-01) sale de un solo medio (ESPN, 'desde 2012', sin mes); el portal Hortolândia lo ubica en 2012 solo como coordinador de base. No afecta los cierres 2013-2025, pero la fecha exacta es aproximada.
+Duda: No se pudo abrir ogol.com.br (403) ni el sitio oficial histórico del club para listas de presidentes.
+```
+
 ## Fuentes
 
 ### (general)

@@ -244,6 +244,18 @@ tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento si
 tools/cargar.mjs (2026-10-16): pt-liga3, verificado contra roster cacheado de "2021–22 Liga 3 (Portugal)" (tools/club-league-reference/pt.json), coincidencia exacta "Torreense".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-28.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+Bruno Manuel Ferreira Vitorino (2022-01-01 a 2024-06-30): Presidente del conselho de administração de la SAD: figura como tal en las memorias 2021/22 y 2022/23 (SAD_RelatorioContas2021-2022.md:85-87 y 130; SAD_RelatorioContas2022-2023.md:90-92 y 153) y firma la 'Mensagem do Presidente' de ambas. Desde: la ficha de la Câmara Municipal de Torres Vedras (cm-tvedras.pt/o/composicaocm/detalhes/27) lista 'Presidente do Conselho de Administração, SAD' 2022-2024 y Director General del club 2020-2022, solo con años: día 01/01 por convención (la fecha real de asunción no se halló; Record/flashscore dicen que llegó al club en 2020 como director general y después asumió la presidencia). Hasta: Record del 30/6/2024 informa su renuncia por motivos personales 'a partir deste domingo' (30/6/2024), con efecto inmediato; A Bola (17/6/2024) decía que seguía hasta fin de mes. La fuente es la de la salida; el desde sale de la ficha municipal. Cubre los cierres 2022-06-30 y 2023-06-30; el 2024-06-30 cae en su último día. Aprobaciones: 2021/22 firmado 8/9/2022 y aprobación en AG 30/9/2022 (SAD_RelatorioContas2021-2022.md:546 y 1166); 2022/23 firmado 7/9/2023, AG 28/9/2023 (SAD_RelatorioContas2022-2023.md:584 y 783); en ambos él seguía en el cargo.
+SIN CONFIRMAR, no cargada: André Rodrigues Baptista (2024-07-01 a hoy), https://www.record.pt/futebol/futebol-nacional/2--liga/torreense/detalhe/andre-baptista-assume-presidencia-da-sad-do-torreense: Sucedió a Vitorino. A Bola (7/6/2024) anunció que lo sucedería; Record (10/7/2024) informa que el club comunicó ese día que asumió la presidencia del conselho de administração. No hallé una nota con la fecha exacta de asunción: 2024-07-01 es la deducción (Vitorino salió el 30/6), por eso confirmada false. NO cubre ningún cierre cargado. Firma el relatório e contas 2023/24 como presidente (SAD_RelatorioContas2023-2024.md:90, 143, 690, 740), firmado el 6/9/2024 y con AG el 8/10/2024 (:605, :1397), pero el cierre del 30/6/2024 corresponde a la gestión de Vitorino: hay cambio de gestión entre el cierre y la aprobación. Más tarde Nuno Carvalho lo sucede (Record 'Nuno Carvalho é o novo presidente da SAD', salida de Baptista efectiva el 31/12, año sin confirmar): hasta queda null y no se carga a Carvalho.
+Duda: El inicio de Vitorino como presidente de la SAD solo figura con años (2022-2024) en la ficha municipal; si asumió después del 30/6/2022 el cierre 2022 sería de otra persona, pero firma la memoria 2021/22 como presidente del conselho (SAD_RelatorioContas2021-2022.md:85-87, 130). Falta una nota que dé la fecha.
+Duda: El cierre 2024-06-30 coincide con el último día de Vitorino (renuncia efectiva el domingo 30/6/2024, Record), mientras la memoria 2023/24 la firma Baptista: criterio adoptado, el cierre es de Vitorino; Guido puede preferir tratarlo como transición.
+Duda: Fecha de asunción de Baptista (¿1/7 o 10/7/2024?) y año de su salida y de la asunción de Nuno Carvalho no confirmados; no afectan a los cierres.
+```
+
 ## Fuentes
 
 ### torreense-pt-sad-relatoriocontas2023-2024

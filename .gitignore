@@ -74,6 +74,9 @@ Clubes/Argentina/River/estados-contables-leads/
 # Documento que no es del club (CLAUDE.md: se guarda pero no se trackea): el balance 2020 del municipio de Kallithea,
 # bajado como si fuera de Athens Kallithea (descartado, Admin/registros/documentos-descartados.txt).
 Clubes/Grecia/Athens Kallithea/
+# Mismo criterio: clubes de otro deporte bajados en el sourcing de Colombia (básquet y béisbol), descartados.
+Clubes/Colombia/Titanes de Barranquilla/
+Clubes/Colombia/Toros de Cordoba/
 
 # Los resúmenes de libros que Guido usa como base de conocimiento. Quedan LOCALES
 # a propósito: este repo es público y deploya a Netlify, así que commitearlos los

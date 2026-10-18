@@ -1,0 +1,53 @@
+{
+ "criterioPais": {
+  "BR": "Se cargó a Genilson da Rocha Santos, presidente de la asociación (firma los balances como presidente de la diretoria executiva) y, desde la SAF de dic-2023, su diretor-presidente, no a los Biasi (dos personas dueñas), igual que el criterio ya aplicado a Novorizontino: el ejecutivo que conduce el club."
+ },
+ "clubes": {
+  "novorizontino-br": {
+   "gestiones": [
+    {
+     "nombre": "Alex Sandro Domingues Pereira",
+     "corto": "Alex Sandro",
+     "cargo": "Presidente",
+     "desde": "2010-03-01",
+     "hasta": "2012-01-01",
+     "fuente": "https://en.wikipedia.org/wiki/Gr%C3%AAmio_Novorizontino",
+     "confirmada": false
+    },
+    {
+     "nombre": "Genilson da Rocha Santos",
+     "corto": "Genilson",
+     "cargo": "Presidente",
+     "desde": "2012-01-01",
+     "hasta": null,
+     "fuente": "https://www.espn.com.br/futebol/paulista/artigo/_/id/16384516/novorizontino-por-que-mudou-nome-antes-virar-saf-tem-palmeiras-como-exemplo-sucesso",
+     "confirmada": true
+    }
+   ],
+   "notas": {
+    "Alex Sandro Domingues Pereira": "Solo respaldo: Clubes/Brasil/Novorizontino/balanco-2010.md:36-41 lo firma como PRESIDENTE DA DIRETORIA EXECUTIVA (parecer del consejo fiscal del 27/01/2011, línea 45). Ninguna fuente web lo menciona como presidente en 2010-2011 (solo ogol.com.br lo lista como presidente, sin fechas y sin poder abrir la página: 403). desde 2010-03-01 = fundación del Grêmio Novorizontino (Wikipedia); hasta 2012-01-01 es un tope derivado del año de inicio de Genilson según ESPN, no una fecha de salida conocida. No publicar.",
+    "Genilson da Rocha Santos": "ESPN Brasil (artículo sobre el club, ver fuente) dice que está en la presidencia del club 'desde 2012': solo año, por eso desde = 2012-01-01 (día y mes asumidos). Contradice en parte al portal Hortolândia (entró en 2012 como coordinador de categorías de base), así que la fecha es la menos firme. Corroboración en los documentos: balanco-2015.md:163 ('PRESIDENTE'), balanco-2016.md:128 y balanco-patrimonial-2017.md:148 ('PRESIDENTE DA DIRETORIA EXECUTIVA'), demonstracoes-financeiras-2018.md:803, -2019.md:893, -2020.md:820, -2021.md:925, -2022.md:104 y 1061 (presidente da diretoria executiva); 2023 firmado digitalmente por él (demonstracoes-financeiras-2023.md:15). En balanco-2013.md:90 y balanco-2014-b.md:150 firma sin cargo (el CRC de esas líneas es del contador Cardoso). Desde dic-2023 es diretor-presidente de la SAF; sigue en 2026 (sitio oficial del club, jun-2026)."
+   },
+   "cubre": {
+    "2013-12-31": "Genilson da Rocha Santos",
+    "2014-12-31": "Genilson da Rocha Santos",
+    "2015-12-31": "Genilson da Rocha Santos",
+    "2016-12-31": "Genilson da Rocha Santos",
+    "2017-12-31": "Genilson da Rocha Santos",
+    "2018-12-31": "Genilson da Rocha Santos",
+    "2019-12-31": "Genilson da Rocha Santos",
+    "2020-12-31": "Genilson da Rocha Santos",
+    "2021-12-31": "Genilson da Rocha Santos",
+    "2022-12-31": "Genilson da Rocha Santos",
+    "2023-12-31": "Genilson da Rocha Santos",
+    "2024-12-31": "Genilson da Rocha Santos",
+    "2025-12-31": "Genilson da Rocha Santos"
+   },
+   "dudas": [
+    "Cierre 2010-12-31 sin cubrir: el balance 2010 lo firma Alex Sandro Domingues Pereira como presidente de la diretoria executiva, pero ninguna fuente web con fechas lo confirma. Pregunta para el club: quién presidió el Grêmio Novorizontino desde la fundación (marzo 2010) hasta que asumió Genilson, y con qué fechas.",
+    "La fecha de asunción de Genilson (2012-01-01) sale de un solo medio (ESPN, 'desde 2012', sin mes); el portal Hortolândia lo ubica en 2012 solo como coordinador de base. No afecta los cierres 2013-2025, pero la fecha exacta es aproximada.",
+    "No se pudo abrir ogol.com.br (403) ni el sitio oficial histórico del club para listas de presidentes."
+   ]
+  }
+ }
+}

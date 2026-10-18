@@ -366,6 +366,17 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2021–22 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Portimonense".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-24.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+Rodiney Sampaio da Silva (2017-05-30 a hoy): Presidente del conselho de administração de la SAD. La noticia oficial de la SAD 'Rodiney Sampaio assume a presidência da SAD' (martes 30/5/2017) dice que fue elegido en la asamblea general de la SAD (Fernando Rocha pasa a presidir la asamblea general; Robson Ponte lo reemplaza de director general); la página no da el día exacto de la asamblea, se usa la fecha de la noticia. Los cuatro balances lo nombran presidente y lo firman: Relatorio-Contas-21-22_assinado.md:141-143 y 475-476 (Portimão, 31/10/2022; mandato 2020/2022 nombrado en asamblea de febrero de 2020), Relatorio-Contas-22-23_assinado.md:192-194 y 517-518 (25/10/2023; mandato 2023/2025), Relatorio-Contas-23-24_assinado.md:176-178 y 495-497 (25/10/2024) y Relatorio-Contas-24-25_assinado.md:193-195 y 515-516 (27/10/2025). Sigue en el cargo según la página de contactos de la SAD y la ficha de Liga Portugal 2025-26. No hubo cambio de gestión entre cierre y aprobación en ningún ejercicio. Accionista: For Gool Company Ltd (relatório 21-22 línea 564 y 24-25 línea 601), sin persona dueña identificable en las fuentes; por eso se carga al presidente.
+Duda: Día exacto de la asamblea de mayo de 2017: la noticia oficial solo está fechada 30/5/2017 (no afecta ningún cierre).
+Duda: Venta de la SAD: Record (30/7/2024) anunció que Zhang Jindong tomaría el control en 2025 (80 millones de euros), con Edgar Vilaça al frente de la transición; el balance 2024/25 (27/10/2025) sigue con For Gool al 92,94% y Sampaio de presidente, y no se halló confirmación de que se haya cerrado. Si se cierra, habría que revisar la gestión.
+Duda: Quién está detrás de For Gool Company Ltd no figura en los balances ni se confirmó en una fuente seria; por eso no se carga un dueño.
+```
+
 ## Fuentes
 
 ### portimonense-pt-relatorio-contas-24-25-assinado

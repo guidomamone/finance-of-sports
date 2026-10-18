@@ -581,6 +581,21 @@ tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento si
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2019–20 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Santa Clara".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-26.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+Rui Miguel Melo Cordeiro (2015-06-01 a 2021-08-27): Presidente del club (elegido junio 2015, reelecto 2018 y mayo 2021) y presidente del conselho de administração de la SAD: el Açoriano Oriental del 25/6/2015 lo da como nuevo presidente de la SAD tras una asamblea de esa semana (la fecha exacta no figura: se usa 2015-06-01, mes, por convención día 01). Renunció el 24/8/2021 según el acta citada por la prensa; el relevo se oficializó el 27/8/2021 (Uzun nombrado esa tarde), y se usa el 27/8 como hasta para no dejar hueco. Documentos: relatorio-contas-sad-2019-20.md:257 lo lista Presidente a 30/6/2020 y el informe está firmado por él el 18/12/2020 (:319-321). El cierre 30/6/2021 le corresponde a él (renunció después del cierre), aunque el balance 2020/21 lo firma y aprueba la nueva administración (relatorio-contas-sad-2020-21.md:291 y :444, 6/12/2021, 'administração demitida', :41-:60): hay cambio de gestión entre cierre y aprobación.
+Ismail Uzun (2021-08-27 a 2022-07-14): Empresario turco, accionista; nombrado presidente del conselho de administração de la SAD el 27/8/2021 (Açoriano Oriental, 27/8/2021, 'foi nomeado, esta tarde'). Hasta que Vicintin compra la mayoría (14/7/2022, Record: compra las acciones de Glen Lau y Uzun). Documentos: relatorio-contas-sad-2020-21.md:321 lo lista Presidente. Cierre 30/6/2022: le corresponde; el balance 2021/22 ya lo emite la administración de Vicintin (relatorio-contas-sad-2021-22.md:110, :232): cambio de gestión entre cierre y aprobación.
+Bruno Bello Vicintin (2022-07-14 a 2024-06-21): Compró el 55,8% vía Ikarus Business y asumió la presidencia del conselho (Record, 14/7/2022: la compra se formalizó ese día y 'assumirá' la presidencia). El balance 2021/22 dice que el conselho fue nombrado en asamblea general del 22/7/2022 (relatorio-contas-sad-2021-22.md:110); se usa 2022-07-14 porque es la fecha que da la fuente web, no cambia ningún cierre. Dejó la presidencia en la asamblea del 21/6/2024 (Açoriano Oriental, 5/7/2024); sigue como accionista. Documentos: relatorio-contas-sad-2022-23.md:217 (Presidente a 30/6/2023) y :247 (vía Ikarus). El balance 2023/24 informa la renuncia (relatorio-contas-sad-2023-24.md:62).
+Klauss Lopes Câmara (2024-06-21 a hoy): CEO/vogal desde 2022; asume la presidencia en la asamblea del 21/6/2024 a pedido del accionista mayoritario (Açoriano Oriental, 5/7/2024; RTP Açores igual). Documentos: relatorio-contas-sad-2023-24.md:62 (indicado Presidente, informe del 25/10/2024) y relatorio-contas-sad-2024-25.md:58, :182 (todo el conselho reconducido para 2025/2028 en la asamblea del 25/2/2025; firma Klauss Câmara). Cubre los cierres 30/6/2024 y 30/6/2025.
+Duda: Fecha exacta de la asamblea de la SAD que eligió a Cordeiro en junio de 2015 (la prensa dice 'quarta-feira' de la semana del 25/6/2015, probablemente 24/6): se usa 2015-06-01. No afecta a los cierres cargados.
+Duda: Vicintin: la fuente web da el 14/7/2022 (formalización de la compra, 'assumirá'); el balance 2021/22 dice asamblea del 22/7/2022. No afecta a ningún cierre.
+Duda: Hasta de Cordeiro y desde de Uzun: renuncia en acta del 24/8/2021 y nombramiento de Uzun el 27/8/2021; se usa el 27/8. No afecta a ningún cierre.
+Duda: Algunas notas de prensa posteriores a 2024 tratan a Vicintin como presidente de la SAD (Diário da Lagoa, según el buscador); no se halló noticia de su regreso y el balance 2024/25 lo contradice (Klauss Câmara firma). Klauss queda con hasta null, a revisar.
+```
+
 ## Fuentes
 
 ### santaclara-pt-relatorio-contas-sad-2024-25

@@ -1,0 +1,9 @@
+{
+  "criterioPais": { "PT": "Casa Pia: se cargó al presidente del club, Victor Seabra Franco, que firma los cuatro balances de la SDUQ; el club (asociación) es el 100% de la sociedad en los documentos, sin dueño persona con nombre, como en Moreirense/Tondela." },
+  "clubes": { "casapia-pt": {
+    "gestiones": [ { "nombre": "Victor Domingos Seabra Franco", "corto": "Seabra Franco", "cargo": "Presidente", "desde": "2006-01-01", "hasta": null,
+      "fuente": "https://www.abola.pt/noticias/casa-pia-victor-seabra-franco-reeleito-por-unanimidade-2025060622291794849", "confirmada": true } ],
+    "notas": { "Victor Domingos Seabra Franco": "Presidente del Casa Pia AC desde 2006 (A Bola, 6/6/2025: 'iniciou funções em 2006', solo el año: día y mes 01); reelecto sin oposición en junio de 2025 para 2025-28, por lo que sigue (hasta null). Firma como 'Victor Domingos Seabra Franco - Presidente' los balances 2021/22 (relatorio-contas-2021-22.md:272, 334, 1089), 2022/23 (relatorio-contas-2022-23.md:190, 1036), 2023/24 (relatorio-contas-2023-24.md:175, 1213) y 2024/25 (relatorio-contas-2024-25.md:299, 1333). Capital de Casa Pia Atlético Clube - Futebol SDUQ, Lda detenido al 100% por el club (relatorio-contas-2024-25.md:771). Los datos de MSD Capital/Robert Platek (Wikipedia lista a Platek de dueño) no figuran en los informes ni hay fecha confirmada, por eso no se carga como dueño; la gestión fue la misma en los cuatro cierres." },
+    "cubre": { "2022-06-30": "Victor Domingos Seabra Franco", "2023-06-30": "Victor Domingos Seabra Franco", "2024-06-30": "Victor Domingos Seabra Franco", "2025-06-30": "Victor Domingos Seabra Franco" },
+    "dudas": [ "Inicio exacto en la presidencia no hallado (solo 2006; se usa 2006-01-01).", "Fecha y estructura de la entrada de MSD Capital (Robert Platek) en la SDUQ: una nota de A Bola 2025 habla de una sociedad con MSD Capital, pero el informe 2024/25 todavía muestra al club con el 100%; no verificado." ] } }
+}

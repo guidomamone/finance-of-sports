@@ -1,0 +1,12 @@
+{
+  "criterioPais": { "BR": "Se cargó al Diretor Presidente (Francisco Weslley Couto dos Santos, 'Wesley Couto'), fundador y dueño con nombre, que firma los balances; igual que en el resto de Brasil se carga al presidente del club o de la sociedad." },
+  "clubes": { "amazonas-br": {
+    "gestiones": [ { "nombre": "Francisco Weslley Couto dos Santos", "corto": "Wesley Couto", "cargo": "Presidente", "desde": "2019-05-23", "hasta": null,
+      "fuente": "https://fafamazonas.com.br/site/clubes/amazonas-f.-c./", "confirmada": false } ],
+    "notas": { "Francisco Weslley Couto dos Santos": "Es presidente al cierre 2024 sin ambigüedad: firma como Diretor Presidente el balance 2024 (Clubes/Brasil/Amazonas/balanco-patrimonial-2024.md:60-61 y 121-122, firma digital) y aparece como presidente en A Crítica (2025-01-09, pretemporada), en la FAF (listado actual) y en la Aleam (homenaje 2023-10-26). Lo que NO está confirmado es la fecha de asunción: 2019-05-23 es la fecha de fundación del club (Wikipedia en, FAF), que él lideró; ninguna fuente encontrada (A Crítica, Amazonas1 2024-01-22, Wikipedia, FAF, Aleam, Amazonas Atual) dice cuándo asumió la presidencia ni que lo hiciera ese día. Amazonas1 dice que Lissandro Breval 'deixou a diretoria do clube em 2022' (cargo directivo, no se dice cuál). El balance 2022-2023 también lo firma como Diretor Presidente (balancos-2022-2023.md:61-63, 153-156), así que cubre 2022 en adelante, pero no antes. Fuente apuntada a la FAF porque es la única que lo lista como presidente vigente; no da fechas, por eso confirmada=false." },
+    "cubre": { "2024-12-31": "Francisco Weslley Couto dos Santos" },
+    "dudas": [
+      "¿En qué fecha asumió Wesley Couto la presidencia del Amazonas FC: el día de la fundación (2019-05-23) o más tarde (p. ej. cuando Lissandro Breval dejó la directiva en 2022)? Pregunta para el club: acta de elección/posse y fecha.",
+      "En 2024 fue suspendido temporalmente del cargo por una agresión a un jugador (Rede Onda, según un intento anterior); duración no encontrada. El balance 2024 igual lo firma como Diretor Presidente (firma digital 04/08/2025)."
+    ] } }
+}

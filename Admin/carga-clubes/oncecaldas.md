@@ -411,6 +411,13 @@ Duda: Fecha exacta de asunción de Jaramillo (entre 2024-10-01 y 2024-10-09).
 Duda: Entre la renuncia y la llegada de Jaramillo la junta directiva decidía el día a día, según el comunicado del club.
 ```
 
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-18/resultado-8.json, tools/gestiones-tanda.mjs, 2026-10-18):_
+
+```text
+Daniel Jaramillo Vélez (2024-10-01 a hoy): Reemplazó a Tulio Mario Castrillón, que renunció el 01/10/2024 (Claro Sports, ya cargado). La Patria (09/10/2024, https://www.lapatria.com/deportes/este-es-el-ejecutivo-que-asumira-la-presidencia-del-once-caldas-en-reemplazo-de-castrillon) anunció que 'es o será' el presidente; La Patria (21/10/2024, fuente de la gestión) ya dice que fue nombrado interinamente en reemplazo de Castrillón; La Veintitrés (09/10/2024) lo ubica al frente 'desde la próxima semana'. Ninguna fuente da el día exacto de la posesión: se usa día 01 del mes de la salida de Castrillón (sin hueco entre gestiones) y el dato solo es aproximado en el día; los cierres 2024-12-31 y 2025-12-31 caen igual dentro de su gestión con cualquier día de octubre de 2024. Sigue presidente en octubre de 2026 (Publimetro 15/10/2026). Los balances lo corroboran: firma como Representante Legal la certificación 2024 (Clubes/Colombia/Once Caldas/certificacion-ef-2024.md:17, fechada el 28/04/2025) y la 2025 (certificacion-ef-2025.md:38; opinión de BDO del 11/03/2026), y figura en estados-financieros-2024.md:481 y estados-financieros-2025.md:2144. Sin cambio de gestión entre cierre y aprobación.
+Duda: Fecha exacta (día) de la asunción de Daniel Jaramillo en octubre de 2024: ninguna nota de prensa la da. Pregunta para el club: ¿en qué fecha tomó posesión como presidente y representante legal?
+```
+
 ## Fuentes
 
 ### oncecaldas-estados-financieros-2023

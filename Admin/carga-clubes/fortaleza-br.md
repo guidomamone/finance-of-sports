@@ -197,6 +197,18 @@ officialTotalRevenue = suma verificada de revenueLines (400,636 M BRL). official
 check (sí de officialPAT, vía operatingProfit). officialPAT = 'Prejuízo do exercício' impreso.
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-18/resultado-1.json, tools/gestiones-tanda.mjs, 2026-10-18):_
+
+```text
+Fabiano Barreira (2025-04-15 a 2026-01-15): Portal IN (16-04-2025) dice que fue elegido presidente del Conselho de Administração de la SAF 'na última terça-feira (15)', o sea el 15-04-2025 (el mes sale de inferir con la fecha de la nota). Seguía en el cargo el 28-12-2025: lideró la contratación de Pedro Martins como CEO (Diário do Nordeste/ESPN, 28-12-2025). Hasta = 2026-01-15: fecha de la nota de O Povo que anuncia a Bruno Cals (consejo aprobado el 14-01-2026, 98 votos a favor); NE45 (15-01-2026) dice que Cals sucede a Barreira. La fecha exacta de asunción de Cals no figura, por eso 15 es aproximada. Balance SAF 2025 (Clubes/Brasil/Fortaleza/demonstracoes-contabeis-saf-2025.md): aprobado por la Administración el 31-03-2026 (línea 628) y firmado digitalmente por Pedro Martins Gomes da Silva (CEO, líneas 205, 240, 276) y el contador José Orlando Belchior Ribeiro Filho; no firma el presidente del consejo.
+Bruno Cals (2026-01-15 a hoy): Era vicepresidente del Conselho; presidente desde el anuncio del 15-01-2026 (O Povo, NE45). No cubre ningún cierre pedido; se agrega para cerrar el hasta de Barreira.
+Duda: El balance 2025 de la SAF lo firma el CEO Pedro Martins (nombrado el 28-12-2025, antes lo era Marcelo Paz hasta el 27-12-2025), no el presidente del consejo. Si Guido prefiere cargar al ejecutivo en vez del presidente del consejo, el cierre 2025-12-31 queda sin fuente que fije el día de asunción de Martins (ninguna dice desde cuándo ejerce formalmente; Diário do Nordeste habla del 03-01-2026).
+Duda: Pregunta para el club: ¿desde qué fecha exacta Pedro Martins es CEO de Fortaleza EC SAF y hasta qué fecha lo fue Marcelo Paz?
+Duda: La presidencia de la asociación civil (José Rolim Machado, 2025-2027 según la tanda anterior) es distinta de la de la SAF; los balancetes de asociación no se usaron para decidir la gestión.
+```
+
 ## Fuentes
 
 ### fortaleza-br-demonstracoes-saf-2025

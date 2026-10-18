@@ -1,0 +1,10 @@
+{
+  "criterioPais": { "PT": "Se cargó al presidente del club (asociación) Carlos Pinho: Futebol Clube de Arouca – Futebol SDUQ, Lda. es una sociedad unipersonal cuyo único dueño es el club, sin persona o fondo con nombre que la conduzca (criterio de pt.js: dueño-club se carga el presidente)." },
+  "clubes": { "arouca-pt": {
+    "gestiones": [ { "nombre": "Carlos Pinho", "corto": "Pinho", "cargo": "Presidente", "desde": "2006-01-01", "hasta": null,
+                     "fuente": "https://observador.pt/2022/06/26/carlos-pinho-reeleito-para-o-oitavo-mandato-na-lideranca-do-arouca/", "confirmada": true } ],
+    "notas": { "Carlos Pinho": "Presidente del FC Arouca desde 2006 (Observador 26/6/2022 y Maisfutebol: 'desde 2006', solo el año, por eso desde 01/01; el club estaba aún en las distritales de Aveiro), reelecto en 2022 (octavo mandato, 2022-2025) y de nuevo en febrero de 2026 (mandato 2026/30, según Record/O Jogo/RTP), así que sigue en el cargo: hasta null. Los cuatro relatórios (relatorio-contas-2021-22.md:178, relatorio-contas-2022-23.md:155, relatorio-contas-2023-24.md:218, wf-2024-2025-78053ec5.md:188) los firma 'A Gerência' de la SDUQ sin nombrar a nadie, así que el balance no corrobora la persona; la fecha de firma es posterior al cierre en todos (nov. 2022, nov. 2022, nov. 2024, nov. 2025), sin cambio de presidente en esos períodos. Las fechas exactas de tomada de posse de 2006 no figuran en las fuentes halladas." },
+    "cubre": { "2022-06-30": "Carlos Pinho", "2023-06-30": "Carlos Pinho", "2024-06-30": "Carlos Pinho", "2025-06-30": "Carlos Pinho" },
+    "dudas": [ "Los relatórios solo dicen 'A Gerência' sin nombres: no se verificó en el balance que Pinho integre la gerencia de la SDUQ (es la figura del presidente del club, dueño único).",
+               "Fecha exacta de asunción en 2006 no hallada (solo el año); no afecta a los cierres 2022-2025." ] } }
+}

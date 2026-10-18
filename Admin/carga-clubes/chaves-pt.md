@@ -194,6 +194,15 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 tools/cargar.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2021–22 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Chaves".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-15.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+Francisco José Gomes de Carvalho (2013-01-01 a 2025-09-14): Record (14/9/2025): lidera la SAD 'desde 2013' (solo el año: día 01) y el domingo 14/9/2025 cumple su último partido (494.º) como presidente, fecha usada como hasta; la venta de la SAD al grupo mexicano Orlegi se confirmó el martes 16/9/2025 (sapo.pt, 17/9/2025) y la fecha formal del relevo no figura. Los dos relatórios (cierres 2022 y 2023) lo listan como Presidente del Conselho de Administração: Clubes/Portugal/Chaves/RC-2021-2022_compressed-1.md:141 (firma la mensagem do presidente, línea ~104, informe fechado el 31/10/2022 en la línea ~409) y Clubes/Portugal/Chaves/RC-2022-2023-com.md:80 (informe fechado el 31/10/2023, línea ~1720). Sin cambio de gestión entre cierre y aprobación.
+Duda: El mes y día exactos de asunción en 2013 no figuran en las fuentes halladas (solo 'desde 2013'). El hasta (14/9/2025) es la fecha de su último partido, no la del traspaso formal; no afecta a los cierres cargados.
+```
+
 ## Fuentes
 
 ### chaves-pt-rc-2022-2023-com

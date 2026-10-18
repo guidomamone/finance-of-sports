@@ -234,6 +234,16 @@ total 2024 sale del propio Balanço). cash = 'Caixa e Equivalentes de Caixa' (No
 netInterest = 'Receitas Financeiras' (0,675) - 'Despesas Financeiras' (19,999), Nota 25.
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-18/resultado-4.json, tools/gestiones-tanda.mjs, 2026-10-18):_
+
+```text
+João Paulo Silva (2023-03-29 a hoy): Elegido por el Conselho Deliberativo el 29-03-2023 (179 votos contra 47) para completar el mandato de Robinson de Castro, que renunció el 09-02-2023 (interino: Carlos Moraes, 2º vicepresidente). La Wikipedia (infobox de la temporada 2023) lo da como presidente 'from 29 March' y a Moraes 'until 29 March'; O Povo (https://mais.opovo.com.br/jornal/esportes/2023/03/30/joao-paulo-silva-vence-eleicao-e-assume-presidencia-do-ceara-ate-o-final-de-2024.html) titula 'vence eleição e assume presidência' pero no da fecha de posse formal; el 29-03 coincide con la elección. Reelecto el 28-11-2024 para 2025-2027, sin cambio de persona. Balance 2024: demonstracoes-contabeis-2024.md:306 lo nombra 'Presidente da Executiva João Paulo Silva' en la ata del Conselho Deliberativo que aprobó las cuentas. Balance 2025: demonstracoes-contabeis-2025.md:364-373 lo firma digitalmente como Presidente (sello 2026-05-11). Ninguno de los dos cierres está cerca de un cambio de gestión.
+Duda: El día formal de posse en 2023 no figura en prensa; se usa 29-03-2023 (elección, y fecha que da la Wikipedia). Pregunta al club: ¿qué día tomó posse João Paulo Silva? No afecta los cierres 2024/2025.
+Duda: Pedido de impeachment de conselheiros (mayo 2026) sin desenlace verificado; se asume que sigue (hasta:null).
+```
+
 ## Fuentes
 
 ### ceara-br-demonstracoes-2025

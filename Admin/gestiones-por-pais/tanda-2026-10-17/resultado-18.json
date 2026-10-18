@@ -1,0 +1,32 @@
+{
+  "criterioPais": { "PT": "Gil Vicente Futebol Clube - Futebol SDUQ, Lda. es una sociedad unipersonal cuyo único socio es el club (asociación sin fines de lucro, sin persona dueña): se carga el presidente de la dirección del club, que también preside la gerencia/órgão de gestão que firma el relatório e contas (mismo criterio que Moreirense, Rio Ave hasta 2024 y Vitória de Guimarães)." },
+  "clubes": {
+    "gilvicente-pt": {
+      "gestiones": [
+        { "nombre": "Francisco Dias da Silva", "corto": "Dias da Silva", "cargo": "Presidente", "desde": "2017-05-25", "hasta": "2024-02-01",
+          "fuente": "https://sportinforma.sapo.pt/futebol/segunda-liga/artigos/francisco-dias-da-silva-empossado-presidente-do-gil-vicente", "confirmada": true },
+        { "nombre": "Avelino Dias da Silva", "corto": "Avelino Dias da Silva", "cargo": "Presidente", "desde": "2024-02-01", "hasta": "2024-06-20",
+          "fuente": "https://gilvicentefc.pt/avelino-dias-da-silva-eleito-novo-presidente-do-gil-vicente-fc/", "confirmada": true },
+        { "nombre": "Rui Manuel Freitas da Silva", "corto": "Rui Silva", "cargo": "Presidente", "desde": "2024-06-20", "hasta": null,
+          "fuente": "https://www.record.pt/futebol/futebol-nacional/liga-betclic/gil-vicente/detalhe/rui-manuel-da-silva-vai-assumir-a-presidencia-do-gil-vicente", "confirmada": true }
+      ],
+      "notas": {
+        "Francisco Dias da Silva": "Presidente del club desde mayo de 2017 (reelecto en junio de 2020 y marzo de 2023; antes ya presidió 1989 a 1991 según es/pt.wikipedia). Sportinforma (26/5/2017) dice que fue empossado el jueves 25/5/2017; O Jogo (25/5/2017) dice 'desde este miércoles' (24/5): se usa el 25/5. Dejó el cargo el 1/2/2024 (gilvicentefc.pt: 'cessa hoje funções'; había anunciado su salida por motivos personales hacia el 3/1/2024, Record). Los balances de los cierres 30/6/2021 (relatorio-contas-2020-21.md:56-60 y 688-694, 13/9/2021), 30/6/2022 (wf-src-Relatorio_SDUQ_Final.md:70-73 y 569-573, 12/9/2022) y 30/6/2023 (relatorio-contas-2022-23.md:63-67 y 717-725, 11/9/2023) los firma como primer gerente del órgão de gestão de la SDUQ, junto con Francisco Senra da Silva y Pedro Ribeiro.",
+        "Avelino Dias da Silva": "Hermano de Francisco. Ganó la elección del 1/2/2024 (69%, 6.907 votos) y asumió ese mismo día (gilvicentefc.pt). Renunció el 20/6/2024 (comunicado del club citado por Record). Ningún cierre cargado cae en su período (30/6/2023 y 30/6/2024 quedan fuera). No firma ningún balance cargado.",
+        "Rui Manuel Freitas da Silva": "Hasta entonces presidente-adjunto; asumió el 20/6/2024 al renunciar Avelino (Record, que lo nombra 'Rui Manuel da Silva'; es.wikipedia: junio de 2024). Es el 'Presidente' de la Dirección en relatorio-contas-2023-24.md:74 y 1439, y figura primero en la Gerência de relatorio-contas-2024-25.md:62 y 784. AVISO: el ejercicio al 30/6/2024 fue conducido casi todo por Francisco (hasta 1/2/2024) y Avelino; Rui solo estaba en funciones los últimos 10 días, pero fue quien firmó y aprobó las cuentas (Barcelos, 13/9/2024, relatorio-contas-2023-24.md:713). Por la regla desde<=cierre<=hasta, el cierre 30/6/2024 es de Rui Silva."
+      },
+      "cubre": {
+        "2021-06-30": "Francisco Dias da Silva",
+        "2022-06-30": "Francisco Dias da Silva",
+        "2023-06-30": "Francisco Dias da Silva",
+        "2024-06-30": "Rui Manuel Freitas da Silva",
+        "2025-06-30": "Rui Manuel Freitas da Silva"
+      },
+      "dudas": [
+        "Día exacto de asunción de Francisco Dias da Silva en 2017: 24/5 (O Jogo) o 25/5 (Sportinforma); se usa 25/5 (no afecta ningún cierre).",
+        "La fuente de Francisco (Sportinforma) no se pudo abrir con WebFetch (redirige); las fechas salen del resultado de búsqueda de ese artículo y se corroboran con Observador/JN (mayo de 2017) y es.wikipedia (2017 a 2024).",
+        "Rui Silva: Record y Wikipedia lo llaman 'Rui Manuel da Silva'; los balances, 'Rui Manuel Freitas da Silva' (se usa el de los balances). No se halló página oficial que formalice la fecha de toma de posesión más allá del comunicado del 20/6/2024."
+      ]
+    }
+  }
+}

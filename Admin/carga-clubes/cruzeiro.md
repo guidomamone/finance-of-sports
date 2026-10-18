@@ -406,6 +406,16 @@ Duda: AVISO firmo: el balance 2023 se aprobó/firmó el 15-05-2024, después de 
 Duda: Ejecutivos distintos del dueño: Gabriel Lima CEO de la SAF en abril de 2024 (Terra); balances 2024 y 2025 firmados por Pedro Junio de Oliveira como Diretor Presidente (tanda anterior).
 ```
 
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-18/resultado-6.json, tools/gestiones-tanda.mjs, 2026-10-18):_
+
+```text
+Ronaldo Nazário (2022-01-01 a 2024-04-29): Controlador (90% vía Tara Sports). Itatiaia (29-04-2024) dice que geria la SAF desde enero de 2022; se usa 2022-01-01 (fuente da solo mes/año). Hasta 2024-04-29, firma de la venta. Balance 2023 confirma la firma del acuerdo en informativo-financeiro-2023.md:2101.
+SIN CONFIRMAR, no cargada: Pedro Lourenço de Oliveira (2024-04-29 a hoy), https://portalcruzeirense.com.br/tudo-sobre-como-ocorreu-a-compra-do-cruzeiro-por-pedrinho-bh/: Fecha 2024-04-29: firma/oficialización del traspaso de control (informativo-financeiro-2023.md:2101-2105; Portal Cruzeirense: 'passagem do controle ... oficializada em 29 de abril de 2024'). confirmada:false porque ninguna fuente fecha el cierre formal: el acuerdo estaba sujeto a CADE (aprobado 12-06-2024 según O Tempo) y a la concordancia de la Associação (sin fecha publicada). Es el primero del Conselho de Administração en informativo-financeiro-2024.md:2310 y 2025.md:2535. Cualquier fecha entre 29-04 y 12-06-2024 deja los cierres 2024 y 2025 en su gestión.
+Duda: ¿En qué fecha se cerró formalmente la compra de la SAF (cumplimiento de condiciones precedentes: CADE y concordancia de la Cruzeiro Associação)? Pregunta para el club. Se probaron Itatiaia, CNN Brasil, ESPN, O Tempo, Terra y Portal Cruzeirense: ninguna da fecha de cierre.
+Duda: Los balances 2024 y 2025 los firma Pedro Junio de Oliveira como Diretor Presidente (informativo-financeiro-2024.md:2300; 2025.md:2528), no el dueño; se cargó al dueño por la regla de SAF. Si Guido prefiere al ejecutivo, faltan sus fechas.
+Duda: Ronaldo sigue en el Conselho de Administración tras vender; no se carga como gestión.
+```
+
 ## Fuentes
 
 ### cruzeiro-informativo-financeiro-2025

@@ -890,6 +890,17 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2015–16 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Porto".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-25.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+Jorge Nuno de Lima Pinto da Costa (1982-04-23 a 2024-05-07): Elegido el 17/4/1982 y en funciones desde el 23/4/1982 (Wikipedia, que da 23/4/1982 a 7/5/2024; el propio relatório 2021/22 lo dice en Clubes/Portugal/Porto/relatorio-contas-consolidadas-2021-22.md:248). Hasta la toma de posesión de su sucesor el 7/5/2024 (el voto fue el 27/4/2024). Figura como presidente de la Direção y firma la Mensagem do Presidente en los relatórios 2015/16 a 2022/23 (p. ej. relatorio-contas-consolidadas-2018-19.md:126 y :238; relatorio-contas-consolidadas-2022-23.md:130 y :227). Cubre los cierres hasta 30/6/2023.
+Luís André de Pina Cabral e Villas-Boas (2024-05-07 a hoy): Elegido el 27/4/2024 (80,28%) y tomó posesión como presidente del club el martes 7/5/2024 en el Estádio do Dragão (Público, 7/5/2024; Observador mismo día). Presidente de la SAD desde la asamblea del 28/5/2024 (wf-2023-2024-293efed8.md:145, :7770 '28-Mai-2024'). Firma el relatório 2023/24 (wf-2023-2024-293efed8.md:83, :912). El cierre 30/6/2024 queda bajo su gestión, aunque el ejercicio 2023/24 corrió casi todo con Pinto da Costa. Cubre 2024 y 2025.
+Duda: El cierre 2024-06-30: el balance lo aprueba/firma la gestión de Villas-Boas pero el ejercicio (jul/2023 a jun/2024) fue en su mayor parte de Pinto da Costa (hasta 7/5/2024). Se asignó a Villas-Boas por la regla desde<=cierre.
+Duda: Wikipedia no explica por qué el cargo de Pinto da Costa termina el 7/5/2024 y no en la elección (27/4); la fecha de posesión del sucesor sí está confirmada por Público y Observador.
+```
+
 ## Fuentes
 
 ### porto-pt-wf-2024-2025-6b41056f

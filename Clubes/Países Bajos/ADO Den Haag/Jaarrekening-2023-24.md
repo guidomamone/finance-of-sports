@@ -133,6 +133,16 @@ N.V. ADO DEN HAAG 2023-2024
 
 --- pág. 5 ---
 
+Organogram
+
+AD · TD
+
+Onder AD: Commercieel Directeur; Manager Finance (Finance, H.R.); Manager Horeca (Commercie, Hospitality, Events); Manager MVO (MVO);
+Manager Marketing (Marketing, Communicatie, Media, Fanstore, Ticketing); Manager Veiligheid & Facilities (Veiligheid, Supporterszaken,
+Supportershome, Facilitair).
+
+Onder TD: Selectie; Hoofd Medische Staf; Hoofdtrainer; Academy Director; (T)M Vrouwenvoetbal.
+
 Afbeelding 1.
 
 ## Sportief
@@ -283,6 +293,26 @@ van laadpalen en het produceren van merchandise op basis van oude ballen van de 
 N.V. ADO DEN HAAG 2023-2024
 
 --- pág. 8 ---
+
+#ADOgeeft · Gezondheid · Beleving · Ontwikkeling · Leefomgeving · Mobiliteit · Energie · '23/'24
+
+| 500 | 15 | €4,18M | 11.700 | 12 | 66 | 1.900 | 5 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Activiteiten | Partners | Impact | Unieke contactmomenten | Projecten | Locaties | Deelnemers | Initiatieven |
+
+Elke geïnvesteerde euro levert €3,15 aan maatschappelijke impactwaarde op
+
+| | 20/21 | 21/22 | 22/23 | 23/24 |
+| --- | --- | --- | --- | --- |
+| 1,- | 1,23 | 1,73 | 1,98 | 3,15 |
+
+ADO Den Haag heeft een raakvlak met 14 van de internationaal gestelde Sustainable Development Goals (Uitleg MAEX)
+
+Verdeling leeftijdsgroepen in projecten
+
+| 10-20 | 20-40 | 40-60 | 60-80 | 80-100 |
+| --- | --- | --- | --- | --- |
+| 40% | 20% | 10% | 20% | 10% |
 
 Afbeelding 3
 

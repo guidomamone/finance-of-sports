@@ -757,6 +757,15 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: documento si
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2015–16 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Braga".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-13.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+António Salvador da Costa Rodrigues (2003-02-24 a hoy): DN (20 anos de António Salvador): 'Foi a 24 de fevereiro de 2003 que António Salvador ... assumiu a sociedade'; pt.wikipedia da 26/2/2003 (fecha de la invitación), se usa la del DN. Asumió la presidencia del club recién en abril de 2004 (RTP); en 2003 conducía la SAD, y la gestión sigue abierta (reelecto en 2021 sin oposición y recandidato en 2025). Los balances lo muestran como Presidente del Conselho de Administração: relatorio-contas-2015-16.md:217-219, relatorio-contas-2016-17.md:191-192, relatorio-contas-2019-20.md:118 (y 69), relatorio-contas-2021-22.md:157-158, Relato_rio-Contas-2022-23-SAD.md:149-151, relatorio-contas-2023-24.md:157-159, relatorio-contas-2024-25.md:141-143. relatorio-contas-2020-21.md:76 y 155 también lo nombran; ahí además consta que encabezó la lista única para el cuadrienio mayo 2021 a mayo 2025 (línea 1645). Ninguna transición entre cierre y aprobación.
+Duda: No se confirmó que siga en el cargo después de 2025: la fuente DN es de 2023; el documento 2024/25 (a junio de 2025) y un artículo de marzo de 2025 sobre su recandidatura lo muestran vigente, pero no se verificó el resultado de la elección de 2025.
+```
+
 ## Fuentes
 
 ### braga-pt-relatorio-contas-2024-25

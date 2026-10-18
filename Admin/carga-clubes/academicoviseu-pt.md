@@ -366,6 +366,16 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 1 (compuerta: documento si
 tools/cargar.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2021–22 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia única por palabras "Académico de Viseu" = "Academico Viseu".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-7.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+Mariano Maroto Lopez (2021-09-09 a hoy): Gerente (managing director) de HOBRA GmbH & Co. KG, que compró la mayoría de la SAD en agosto de 2021 (Observador, 13/8/2021: 51%, hoy 90%). El Jornal do Centro (artículo con fecha 09.09.21) dice que pasa a ser también presidente de la SAD; no da la fecha exacta de asunción, por eso `desde` usa la fecha de ese artículo (dentro de lo que cuenta: antes del primer cierre cargado, 30/6/2022, y el artículo de Observador del 13/8/2021 todavía mostraba a António Albino como presidente del club, que siguió de vocal del consejo en representación del club, 49% entonces). Sigue en el cargo: la página oficial del club (academicodeviseu.pt/sad.php) lo lista como Presidente do Conselho de Administração, y abola (13/5/2025) informa que dejó la presidencia del CLUB (asumida en junio de 2023) para dedicarse a la SAD. Los cuatro relatórios dicen lo mismo en el artículo 447 CSC: 'o Presidente do Conselho de Administração (Mariano Maroto Lopez) é gerente da Sociedade-mãe HOBRA' (wf-src-RC21_22.md:88, firmado 29/10/2022 (línea 119); wf-2022-2023-b797bc64.md:130, firmado 23/10/2023 (línea 166); wf-2023-2024-02d5741e.md:254, firmado 29/10/2024 (línea 272); wf-2024-2025-efe7ad0a.md:162, firmado 24/10/2025 (línea 180)). No hubo cambio de gestión entre ningún cierre y su aprobación.
+Duda: Fecha exacta de asunción de Maroto Lopez como presidente de la SAD: la prensa no la da (solo agosto/septiembre de 2021); se usó la fecha del artículo del Jornal do Centro (2021-09-09). No afecta a los cierres cargados (todos posteriores).
+Duda: La fuente (Jornal do Centro) tiene la fecha 09.09.21 según el sitio; el texto habla de la compra 'no passado mês de agosto'. Si Guido quiere el rigor estricto de 'fuente dice esas fechas', cambiar a confirmada:false no rompe nada salvo que el cierre 2022 quedaría sin gestión confirmada.
+```
+
 ## Fuentes
 
 ### academicoviseu-pt-wf-2024-2025-efe7ad0a

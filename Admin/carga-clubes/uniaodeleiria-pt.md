@@ -159,6 +159,18 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 tools/cargar.mjs (2026-10-16): pt-liga3, verificado contra roster cacheado de "2022–23 Liga 3 (Portugal)" (tools/club-league-reference/pt.json), coincidencia exacta "União de Leiria".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-29.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+Armando Marques (2020-10-01 a 2024-12-31): Presidente de la SAD: en la SAD desde octubre de 2020 (regiaodeleiria.pt y en.wikipedia: el 'ingreso' como inversor aprobado en asamblea general de octubre de 2020, sin día: se usa 2020-10-01). Ninguna fuente da el día de asunción de la presidencia ni confirma literalmente que fuera presidente desde ese mes; Mais Futebol (4/5/2023) y Record lo llaman 'presidente da SAD'. Su mandato terminó el 30/6/2024 pero siguió hasta fin de 2024 a pedido de los accionistas (regiaodeleiria.pt y A Bola, 10/2/2025): hasta = 2024-12-31 es aproximado (dice 'até final desse ano'). Los balances 30/6/2023 (Relatorio-Contas-UDL-SAD_2022-2023.md:53-57 y 880-884, fechado 25/7/2023) y 30/6/2024 (Relatorio-Contas-UDL-SAD_2023-2024.md:51 y 848-852, fechado 31/10/2024) están firmados 'A Administração' sin nombrar a nadie: la corroboración por balance no es posible, solo por prensa. Ambos cierres caen dentro de su mandato y los dos balances se aprobaron antes de su salida.
+Nélio Lucas (2025-02-10 a hoy): Nuevo presidente del conselho de administração de la SAD por indicación de los inversores (regiaodeleiria.pt y A Bola, ambos del 10/2/2025). Ninguna fuente da el día de asunción: se usa la fecha de la noticia (2025-02-10). Ligado a la SAD desde 2022 como inversor. No cubre ningún cierre cargado (el balance 2024/25, RELATORIO-E-CONTAS-DE-JUL2024-A-JUN2025_UDL.md, es del club asociación y trata la Dirección del club, no de la SAD).
+Duda: Día exacto de asunción de Armando Marques como presidente: solo hay mes (octubre de 2020) y por la entrada como inversor, no por una nota que lo nombre presidente. No afecta los cierres cargados (2023 y 2024).
+Duda: Fecha de salida de Marques (31/12/2024 es aproximada) y de asunción de Nélio Lucas (10/2/2025 es la fecha de la noticia): no hay comunicado oficial con el día.
+Duda: Los relatórios de la SAD no nombran a quien firma ('A Administração'), así que la gestión se apoya solo en prensa.
+```
+
 ## Fuentes
 
 ### uniaodeleiria-pt-relatorio-contas-udl-sad-2023-2024

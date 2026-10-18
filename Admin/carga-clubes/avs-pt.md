@@ -218,6 +218,20 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 tools/cargar.mjs (2026-10-16): null, SIN VERIFICAR (no aparece en los rosters cacheados de 2021 (pt-primeiraliga, pt-ligaportugal2): puede haber jugado otra división).
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-9.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+Osvaldo Carlos Voges (2020-05-01 a 2021-12-14): Record (14/12/2021) dice que asumió en mayo de 2020 (otras notas dicen junio): solo mes, día 01. Hasta 2021-12-14 = fecha de la nota de su despedida (reemplazado por Albarello según Renascença de esa misma fecha). El balance 2020/21 lo confirma: Clubes/Portugal/AVS/relatorio-contas-2020-21.md:380 (Voges, CARGO: PRESIDENTE) y :1485 (acta del 30/9/2021, 'Osvaldo Carlos Voges, na qualidade de Presidente do Conselho de administração'). Cubre el cierre 30/6/2021.
+Elias Barquete Albarello (2021-12-14 a 2022-03-02): Presidente de la SAD de Vilafranquense entre Voges y Sereno (Renascença 14/12/2021; Record 2/3/2022 dice que se fue por razones personales). Sin cierre cargado en este período; se carga para no dejar hueco.
+Henrique Sereno Fonseca (2022-03-02 a 2024-06-13): Volvió a la presidencia (Record 2/3/2022; fecha de la noticia, no hay fecha de asunción exacta). Hasta el 13/6/2024, comunicado oficial de salida (Soccerway/Record/zerozero). Los balances 2022/23 y 2023/24 se firman solo como 'A Administração' (relatorio-contas-2022-23.md:314; relatorio-contas-2023-24.md:441), sin nombre; la nota de partes relacionadas lista a Sereno como personal clave de gestión (2022-23.md:782, 2023-24.md:978) junto a Luis Miguel Socorro Matos Peixoto (director general/vicepresidente). Cubre el cierre 30/6/2023. Ojo: la SAD pasó de UD Vilafranquense a AVS Futebol SAD en abril/mayo de 2023, misma sociedad (NIPC 510 779 301).
+Rubens Takano Parreira (2024-06-14 a hoy): Accionista mayoritario de la SAD; nombrado presidente el 14/6/2024 (diariodesantotirso, fecha de la noticia; sucede a Sereno). Asumió ANTES del cierre 30/6/2024 pero el balance 2023/24 se firmó el 27/9/2024 (relatorio-contas-2023-24.md:439) ya bajo su gestión, sin nombrar firmante. Cubre el cierre 30/6/2024; el ejercicio 2023/24 transcurrió casi entero con Sereno (hasta el 13/6/2024).
+Duda: Fechas de asunción de Voges (mayo vs junio de 2020) y de Sereno (2/3/2022) salen de la fecha de la noticia, no de un acto formal.
+Duda: Una fuente sugiere que Sereno presidió ya entre dic. 2019 y oct. 2020; Record dice que Voges lo sucedió en mayo de 2020. No afecta a ningún cierre cargado.
+Duda: Para el cierre 2024-06-30 la regla del país cargaría a quien está al cierre (Parreira), aunque el ejercicio 2023/24 lo condujo Sereno casi todo: decidir si se usa 'firmo' (los balances no nombran firmante, por eso no se inventa).
+```
+
 ## Fuentes
 
 ### avs-pt-relatorio-contas-2023-24

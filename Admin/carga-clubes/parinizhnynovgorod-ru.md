@@ -391,6 +391,14 @@ Duda: Cierre 2025-12-31: Karasev asumió ~3 meses antes, casi todo el ejercicio 
 Duda: No encontré el día exacto de entrada en funciones de Izmailov (enero 2021) ni de Melik-Guseinov.
 ```
 
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-18/resultado-7.json, tools/gestiones-tanda.mjs, 2026-10-18):_
+
+```text
+Ravil Izmailov (2021-01-25 a 2023-07-21): Sportbox (19/01/2021, citando a Match TV): 'en los próximos días' asumirá como director general en lugar de Maxim Metlin; ya dirigía el club como director ejecutivo desde marzo 2020 (vz-nn.ru, 25/01/2021, anuncio del club). Una búsqueda atribuye a vz-nn la fórmula 'desde el 19 de enero', pero al abrir la página no pude ver esa frase, por eso el día 19 no está confirmado (confirmada=false solo por eso). Cualquier día de enero 2021 cubre ambos cierres. Ojo: fc-baltika.ru y footballfakts.ru dicen 2020, contradicho por las notas fechadas en enero 2021 (Metlin seguía de DG hasta entonces). Hasta 2023-07-21: iz.ru y pravda-nn.ru, el gobernador Nikitin anuncia que dejó el cargo (la gestión siguiente, Melik-Guseinov, ya está cargada con desde 2023-07-21). Corrobora el balance: 2022-poyasneniya.md:34 ('Единоличным исполнительным органом Клуба на 31.12.2022г. является генеральный директор Измайлов Равиль Камильевич') y :69 (cargo hasta 05.04.2024 según el documento, que difiere de la prensa; se usa la prensa) y firma en :577; 2022-auditorskoe-zaklyuchenie.md:73 lo nombra como directivo del club. | Claude 2026-10-18: desde = fecha en que vz-nn.ru informa el nombramiento por anuncio del club (Sportbox, 19/01/2021, lo anticipaba "en los próximos días"); los cierres 2021 y 2022 caen dentro con cualquier día de enero de 2021, y 2022-poyasneniya.md:34 lo da como director general al 31.12.2022.
+Duda: Día exacto en que Izmailov asumió como director general en enero 2021 (el club lo anunció entre el 19 y el 25/01/2021). Pregunta al club: ¿desde qué fecha rige su nombramiento como director general?
+Duda: El balance 2022 (2022-poyasneniya.md:69 y :622) dice que Izmailov fue director general 'hasta 05.04.2024', mientras que la prensa lo da fuera del cargo el 21/07/2023 (cuando asumió Melik-Guseinov). Puede ser que siguiera en el consejo/otro cargo hasta 2024; no afecta a los cierres 2021 y 2022.
+```
+
 ## Fuentes
 
 ### (general)

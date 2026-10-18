@@ -296,6 +296,20 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2021–22 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia exacta "Vizela".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-30.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+Diogo Godinho de Faria dos Santos (2016-01-01 a 2022-09-17): Presidente del conselho de administração de la SAD desde 2016, cuando la ampliación de capital dio el 80% a SECA (Edmund Chu; asamblea del 5/11/2016): Mais Futebol (17/9/2022) dice solo 'desde 2016', por eso desde 2016-01-01 (día y mes por convención, no son la fecha real). Salió al asumir Joaquim Ribeiro en la asamblea general de la SAD del 17/9/2022 (Mais Futebol; Relatorio-e-Contas-FCV-2022-23_Aprovadas.md:118 confirma 'Assembleia Geral de 17 de setembro de 2022, ata nº 15'). Digital de Vizela dice que su salida oficial fue el 15/9. El balance al 30/6/2022 lo cita como Presidente en Relatorio-Contas-FCV-2021-22.md:63 (Diogo Godinho de Faria dos Santos).
+Joaquim Fernando de Almeida Ribeiro (2022-09-17 a 2025-06-03): Nombrado presidente en la asamblea general del 17/9/2022 (Mais Futebol, publicado ese día; Relatorio-e-Contas-FCV-2022-23_Aprovadas.md:118 y :85 'Presidente: Joaquim Fernando de Almeida Ribeiro'). Dejó la presidencia y el consejo 'a partir del 3 de junho' de 2025 por motivos personales (comunicado del club del 2/6/2025). Firma los cierres 2023 y 2024: Relatorio-e-Contas-FCV-2022-23_Aprovadas.md:85 (informe del 25/10/2023) y Relatorio-Gestao-e-contas-FCV-2023-24-Ass.md:83 (informe del 23/10/2024). AVISO: el balance 2022/23 (30/6/2023) se redactó bajo su gestión, pero el 30/6/2024 también; ningún cambio entre cierre y aprobación.
+Pedro Jorge da Silva Rodrigues (2025-06-03 a 2026-06-30): Vicepresidente desde 2022, asumió la presidencia al salir Ribeiro (3/6/2025, comunicado del club del 2/6/2025). Presidente en Relatorio-e-Contas-2024-25-FCV.md:87 (informe del 23/10/2025). AVISO: la gestión cambió ENTRE el cierre y la aprobación solo en el sentido de que Rodrigues ya presidía el 30/6/2025 (asumió 3/6/2025, antes del cierre), así que no hay desfase. Anunció su salida para fines de junio de 2026 (A Bola, 29/5/2026; Wikipedia: 'fin de junio de 2026'); el 'hasta' 2026-06-30 es aproximado (no se halló fecha exacta) y no afecta ningún cierre. Su sucesor, João Ribas (agosto de 2026), no tiene ejercicio cargado: no se carga.
+Duda: Fecha exacta de asunción de Diogo Godinho en 2016 (la fuente da solo el año; la ampliación de capital con SECA fue el 5/11/2016): no afecta ningún cierre cargado.
+Duda: Fecha exacta de salida de Pedro Rodrigues en 2026: A Bola/Record anunciaron su salida para fines de junio de 2026; 'hasta' 2026-06-30 es aproximado. No afecta ningún cierre.
+Duda: La salida de Godinho: Digital de Vizela dice 15/9/2022 y la asamblea que nombra a Ribeiro es del 17/9/2022; se usa el 17/9 (acta nº 15 del propio informe). No afecta ningún cierre.
+Duda: La fuente de Pedro Rodrigues es la página de etiqueta del sitio oficial (fcvizela.pt/tag/pedro-rodrigues/), no la nota individual del comunicado del 2/6/2025.
+```
+
 ## Fuentes
 
 ### vizela-pt-relatorio-e-contas-2024-25-fcv

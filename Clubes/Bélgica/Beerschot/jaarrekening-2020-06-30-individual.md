@@ -1337,79 +1337,64 @@ Hierna worden de voornaamste gegevens uit de resultatenrekening beknopt weergege
 
 --- pág. 31 ---
 
-| | 30/06/2020 | % | 30/06/2019 | % |
-| --- | --- | --- | --- | --- |
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
 | Afschrijvingen | 691.688,38 | 13,54% | 429.397,37 | 7,34% |
-| Bedrijfswinst (Bedrijfsverlies) | -4.262.364,10 | -83,44% | -3.590.225,54 | -61,33% |
+| **Bedrijfswinst (Bedrijfsverlies)** | **-4.262.364,10** | **-83,44%** | **-3.590.225,54** | **-61,33%** |
 | Financieel resultaat | -42.551,71 | -0,83% | -5.434,55 | -0,09% |
 | Belasting op het resultaat | -21.097,48 | -0,41% | 0,00 | 0,00% |
-| Winst (verlies) van het boekjaar | -4.326.013,29 | -84,68% | -3.595.660,09 | -61,43% |
-| Te bestemmen winst (verlies van het boekjaar) | -4.326.013,29 | -84,68% | -3.595.660,09 | -61,43% |
+| **Winst (verlies) van het boekjaar** | **-4.326.013,29** | **-84,68%** | **-3.595.660,09** | **-61,43%** |
+| **Te bestemmen winst (verlies van het boekjaar)** | **-4.326.013,29** | **-84,68%** | **-3.595.660,09** | **-61,43%** |
 
-Resultaatverwerking
+**Resultaatverwerking**
 
 Wij stellen u voor aan het resultaat de volgende bestemming te geven (bedragen in EUR):
 
-| | | |
-| --- | --- | --- |
 | Te bestemmen verlies (-) | | -7.921.673,38 |
+| :--- | :--- | :--- |
 | - Te verwerken verlies van het boekjaar (-) | -4.326.013,29 | |
 | - Te verwerken verlies van het vorig boekjaar (-) | -3.595.660,09 | |
 | Over te dragen verlies (+) | | -7.921.673,38 |
 
-1.2. Ontwikkeling
+<u>1.2. Ontwikkeling</u>
 
-Uit de vergelijking van de resultatenrekening van de laatste 2 boekjaren blijkt dat de vennootschap aan de
-gestelde verwachtingen voldaan heeft.
+Uit de vergelijking van de resultatenrekening van de laatste 2 boekjaren blijkt dat de vennootschap aan de gestelde verwachtingen voldaan heeft.
 
-1.3. Positie van de vennootschap
+<u>1.3. Positie van de vennootschap</u>
 
 Uit deze cijfers blijkt dat de vennootschap zich verder als een belangrijke speler op de markt handhaaft.
 
-1.4. Risico's en onzekerheden
+<u>1.4. Risico's en onzekerheden</u>
 
-Het uitbreken van de Covid crisis begin maart heeft slechts een geringe financiële impact gehad op de cijfers van
-het afgesloten boekjaar gezien de normale competitie op 1 uitwedstrijd na werd afgewerkt. Enkel de Play Off 2
-wedstrijden hebben niet plaats gevonden.
+Het uitbreken van de Covid crisis begin maart heeft slechts een geringe financiële impact gehad op de cijfers van het afgesloten boekjaar gezien de normale competitie op 1 uitwedstrijd na werd afgewerkt. Enkel de Play Off 2 wedstrijden hebben niet plaats gevonden.
 
-2. Belangrijke gebeurtenissen na het einde van het boekjaar
+<u>**2. Belangrijke gebeurtenissen na het einde van het boekjaar**</u>
 
-Sinds het afsluiten van het boekjaar hebben er zich, buiten hetgeen vermeld onder 1.4, volgende gebeurtenissen
-voorgedaan die de resultaten en de financiële positie van de vennootschap op belangrijke wijze beïnvloeden : de
-club heeft begin augustus de promotie afgedwongen naar 1A.
+Sinds het afsluiten van het boekjaar hebben er zich, buiten hetgeen vermeld onder 1.4, volgende gebeurtenissen voorgedaan die de resultaten en de financiële positie van de vennootschap op belangrijke wijze beïnvloeden: de club heeft begin augustus de promotie afgedwongen naar 1A.
 
-Tijdens het afgesloten boekjaar werd de club geconfronteerd met een mogelijk juridisch geschil met K Rupel
-boom FC VZW. Niettegenstaande het feit dat de club overtuigd is, gesterkt door haar raadsheren, dat de kans
-op een materieel negatieve impact op de club beperkt is, is de uitkomst van dit geschil momenteel onzeker.
+Tijdens het afgesloten boekjaar werd de club geconfronteerd met een mogelijk juridisch geschil met K Rupel boom FC VZW. Niettegenstaande het feit dat de club overtuigd is, gesterkt door haar raadsheren, dat de kans op een materieel negatieve impact op de club beperkt is, is de uitkomst van dit geschil momenteel onzeker.
 
-3. Inlichtingen over de omstandigheden die de ontwikkeling van de vennootschap aanmerkelijk kunnen
-beïnvloeden.
+<u>**3. Inlichtingen over de omstandigheden die de ontwikkeling van de vennootschap aanmerkelijk kunnen beïnvloeden.**</u>
 
 Hiervoor verwijzen wij naar punt 1.2 tot en met 1.4.
 
-4. Onderzoek en ontwikkeling
+<u>**4. Onderzoek en ontwikkeling**</u>
 
 Op het gebied van onderzoek en ontwikkeling werden in het voorbije boekjaar geen activiteiten uitgevoerd.
 
-5. Bijkantoren
+<u>**5. Bijkantoren**</u>
 
 Nihil.
 
-6. Verantwoording waarderingsregels
+<u>**6. Verantwoording waarderingsregels**</u>
 
-Ingevolge artikel 3:6 van het Wetboek van vennootschappen en verenigingen dient het jaarverslag de
-verantwoording van de toepassing van de waarderingsregels in de veronderstelling van continuïteit te bevatten.
-Deze komt niet in het gedrang gezien de vennootschap kan rekenen op de verdere financiële steun van de
-aandeelhouders om het verlies te compenseren zodat de vennootschap minimaal de volgende 12 maanden in
-going concern kan blijven werken. De vennootschap kan aan al haar financiële verplichtingen voldoen, maar het
-bestuursorgaan beschikt op vandaag evenwel over onvoldoende informatie om de concrete gevolgen van de
-corona-crisis volledig te kunnen inschatten.
+Ingevolge artikel 3:6 van het Wetboek van vennootschappen en verenigingen dient het jaarverslag de verantwoording van de toepassing van de waarderingsregels in de veronderstelling van continuïteit te bevatten. Deze komt niet in het gedrang gezien de vennootschap kan rekenen op de verdere financiële steun van de aandeelhouders om het verlies te compenseren zodat de vennootschap minimaal de volgende 12 maanden in going concern kan blijven werken. De vennootschap kan aan al haar financiële verplichtingen voldoen, maar het bestuursorgaan beschikt op vandaag evenwel over onvoldoende informatie om de concrete gevolgen van de corona-crisis volledig te kunnen inschatten.
 
-7. Vermeldingen vereist door het Wetboek van vennootschappen en verenigingen
+<u>**7. Vermeldingen vereist door het Wetboek van vennootschappen en verenigingen**</u>
 
 Nihil.
 
-8. Informatie bij gebruik door de vennootschap van financiële instrumenten voor zover betekenisvol
+<u>**8. Informatie bij gebruik door de vennootschap van financiële instrumenten voor zover betekenisvol**</u>
 
 De vennootschap heeft geen gebruik gemaakt van dergelijke financiële instrumenten.
 

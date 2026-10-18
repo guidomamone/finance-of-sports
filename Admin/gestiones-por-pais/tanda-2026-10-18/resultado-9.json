@@ -1,0 +1,14 @@
+{
+  "criterioPais": { "DE": "Se cargó el Präsident del e.V. (Borussia VfL 1900 e.V.), que es quien conduce el club; la GmbH la dirigen Geschäftsführer, pero Königs era a la vez presidente y Geschäftsführer hasta el 19-3-2024." },
+  "clubes": { "monchengladbach-de": {
+    "gestiones": [
+      { "nombre": "Rolf Königs", "corto": "Königs", "cargo": "Präsident", "desde": "2004-04-01", "hasta": "2024-03-19",
+        "fuente": "https://fohlen-hautnah.de/neues-praesidium-bei-borussia-koenigs-tritt-zurueck-bonhof-uebernimmt/", "confirmada": true }
+    ],
+    "notas": {
+      "Rolf Königs": "fohlen-hautnah (19-3-2024) dice que era presidente desde abril de 2004 y que Bonhof asume 'mit sofortiger Wirkung' ese mismo día tras la elección del nuevo Präsidium por el Aufsichtsrat; por eso hasta 2024-03-19 (coincide con el 'desde' ya cargado de Bonhof). La fuente da solo mes para el inicio: desde con día 01 (de.wikipedia.org/wiki/Rolf_Königs da el 6-4-2004 como elección, sucediendo al fallecido Adalbert Jordan). Corroboración en los documentos: jahresabschluss-2023.md:18 (Geschäftsführung 2023 con Rolf Königs) y jahresabschluss-2024-aufsichtsratsbericht-nachtrag.md:105 ('Rolf Königs (bis 19. März 2024)'). El cierre 2023-12-31 queda dentro de su gestión."
+    },
+    "cubre": { "2023-12-31": "Rolf Königs" },
+    "dudas": []
+  } }
+}

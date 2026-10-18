@@ -356,6 +356,19 @@ tools/caja-deuda.mjs (2026-10-17): grossDebt escalón 0 (compuerta: ajuste manua
 tools/cargar.mjs (2026-10-16): pt-primeiraliga, verificado contra roster cacheado de "2021–22 Primeira Liga" (tools/club-league-reference/pt.json), coincidencia única por palabras "Estoril" = "Estoril Praia".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-16.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+Ignacio Beristain Borra (2021-01-01 a 2025-06-10): Presidente de la SAD 'desde enero de 2021' (a bola, 10/6/2025, solo mes y año: día 01). El 10/6/2025 el club anunció su salida 'antes de la nueva temporada', sin fecha efectiva (a bola, maisfutebol, RTP, Record); hasta = 2025-06-30 es una convención (fin del ejercicio), NO está en la fuente. Preside el consejo y firma los balances 2022, 2023 y 2024: relatorio-contas-2021-22.md:713-715 y 2700-2702, relatorio-contas-2022-23.md:666-668 y 2634-2635, relatorio-contas-2023-24.md:89 (Presidente) y 718-720. El balance 2025 (cierre 30/6/2025, aprobado el 28/10/2025) ya NO lo firma él: lo firma Begoña Santiago primero (relatorio-contas-2024-25.md:690-692 y 2512-2514) y en la lista del consejo (líneas 88-94) no figura. | hasta 2025-06-10: fecha del anuncio de su salida (A Bola); la salida efectiva no está publicada (corregido por Claude, 2026-10-17: el 2025-06-30 lo había supuesto el subagente).
+SIN CONFIRMAR, no cargada: Maria Begoña Santiago Ramos (2025-07-01 a hoy), https://www.record.pt/futebol/futebol-nacional/liga-betclic/estoril/detalhe/begona-santiago-explica-despertar-da-paixao-pelo-estorill-e-como-uma-familia: Vogal del consejo en 2023/24 (relatorio-contas-2023-24.md:90) y en 2024/25 (relatorio-contas-2024-25.md:90); presidenta de la SAD según estorilpraia.pt/institucional y la Liga Portugal 2025-26. Record (1/5/2026) dice que asumió 'hace unos siete meses' (aprox. octubre de 2025) cuando 'el presidente anterior se fue', sin fecha. desde = 2025-07-01 es solo una convención tras la salida de Beristain: NO confirmada.
+Duda: Cierre 2025-06-30: no se halló la fecha en que Beristain dejó el cargo ni la fecha en que asumió Begoña Santiago. El club anunció la salida el 10/6/2025 'antes de la nueva temporada'; el balance 2025 lo firma ella (28/10/2025) y Record sugiere que asumió hacia octubre de 2025. Hay que decidir si ese ejercicio va con Beristain (la cobertura actual, que sale de una convención) o con Santiago, o sin gestión. Buscar el comunicado del club o la CMVM/registro comercial.
+Duda: Fecha exacta de asunción de Beristain (solo se sabe enero de 2021); no afecta a ningún cierre cargado.
+Duda: Quién es el dueño: Globalon Football Holdings Group, S.L. (92,27% al 30/6/2025) es sociedad, y la prensa nombra a MSP Sports Capital como propietaria; no se cargó ninguna persona dueña.
+Duda: Cierre 2025-06-30 sin gestión: ¿quién presidía el conselho de administração de la Estoril Praia SAD al 30/6/2025? Beristain anunció su salida el 10/6/2025 y el balance 2024/25 (aprobado el 28/10/2025) lo firma Begoña Santiago.
+```
+
 ## Fuentes
 
 ### estorilpraia-pt-relatorio-contas-2024-25

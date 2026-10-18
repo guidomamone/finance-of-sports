@@ -236,6 +236,16 @@ tools/caja-deuda.mjs (2026-10-16): grossDebt escalón 1 (compuerta: documento si
 tools/cargar.mjs (2026-10-16): pt-ligaportugal2, verificado contra roster cacheado de "2021–22 Liga Portugal 2" (tools/club-league-reference/pt.json), coincidencia exacta "Académica".
 ```
 
+## Gestiones
+
+_investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-17/resultado-6.json, tools/gestiones-tanda.mjs, 2026-10-17):_
+
+```text
+Pedro Miguel Ribeiro (2022-06-15 a 2025-06-12): Elegido presidente de la AAC/OAF el sábado 4/6/2022 (625 votos contra 458 de Pedro Roxo; maisfutebol y Campeão das Províncias). La toma de posesión se reagendó para el 15/6/2022 a las 18:00 (Record/SAPO, titular 'reagendada para 15 de junho'; la página del club, academica-oaf.pt/presidente, lista su mandato como JUN 2022 - JUN 2025, sin día). No hallé una nota que confirme que la ceremonia se hizo ese día: el 15/6 es la fecha agendada. Cualquier día de junio de 2022 deja el cierre del 30/6/2022 dentro de su gestión. Fin: sucedido por Joaquim Reis, elegido el 1/6/2025; la toma de posesión de los nuevos órganos estaba anunciada para el 12/6/2025 (diariocoimbra.pt/2025/06/05/orgaos-sociais-da-academica-oaf-tomam-posse-a-12-de-junho/), tampoco confirmada con crónica de la ceremonia. Los balances no nombran al presidente: 'A Gerência' con firma sin nombre (9-RC-SDUQ-2021-2022.md:277-280 y 304-307; 10-RC-SDUQ-2022-2023.md:806; RC-SDUQ-2023-2024.md:826). El dictamen del Conselho Fiscal lo firma António Preto (10-RC-SDUQ-2022-2023.md:2979), que no es el presidente del club. RC-SDUQ-2023-2024.md:340 confirma que el sócio único iba a elecciones el 1 de junio (2025) y habría nueva gerencia. Cambio entre cierre y aprobación: el balance 2021/22 (cierre 30/6/2022) lo aprobó la gerencia el 8/1/2023 (9-RC-SDUQ-2021-2022.md:791), ya con Ribeiro; el 2022/23 se aprobó el 29/5/2024 (10-RC-SDUQ-2022-2023.md:2419) y el 2023/24 el 7/5/2025 (RC-SDUQ-2023-2024.md:816), todo dentro de su mandato; no hubo cambio de gestión entre cierre y aprobación.
+Duda: El día exacto de la asunción de Ribeiro (15/6/2022 era la fecha reagendada tras una disputa sobre el traspaso con Pedro Roxo) y de la salida (12/6/2025 anunciada) no están confirmados con crónica de la ceremonia; no afecta a ningún cierre.
+Duda: La gerencia de la SDUQ (los firmantes del balance) no se nombra en los documentos; se asume que la conduce el presidente del OAF por ser sócio único, sin fuente que lo diga con nombre.
+```
+
 ## Fuentes
 
 ### academica-pt-rc-sduq-2023-2024
