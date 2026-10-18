@@ -22,6 +22,12 @@ Lo que la principal pasa a TODO, CHANGELOG y ESTADO al mergear. Se va completand
   - Guardadas las 5 listas (`listas-lote.mjs`): Primera B Metro 2020 (18) y 2021 (17), Pro League 2024-25 (16, `be.json` nuevo),
     Serie C 2023-24 (60) y Liga 1 de Perú 2020 (19). `faltantes-liga.mjs` regenerado (`data/faltantes/` con `ar-primerab.js` y
     `be-proleague.js` nuevos, `Admin/sourcing/pendientes.md`), ASSET_V 1254, `fuentes/` regenerado. `--print`: 0 alias rotos, 0 que faltan.
+- **To-do 273 (en curso): `tools/estadio-sponsor.mjs --ensayo`.** Mide, sin escribir nada, cuánto estadio, capacidad, sponsor de camiseta
+  (frente) y marca técnica se puede leer de las páginas de temporada de Wikipedia que ya usan las listas, por ejercicio cargado.
+  Campos y fuente decididos por Guido (2026-10-18): esos 4, sin monto, fuente = revisión exacta de la página. Cobertura medida sobre 891
+  ejercicios con lista: estadio 83%, sponsor 89%, marca 91% (38 ejercicios sin liga en club-leagues y 3 sin lista quedan afuera).
+  Huecos: estadio de Rusia (la página lo trae en un mapa, no en tabla), Brasil C/D y Paulistas, Liga 3 de Portugal, ascensos de
+  Argentina y Colombia sin tabla de kits.
 
 ## Qué queda (TODO)
 
