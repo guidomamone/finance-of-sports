@@ -383,3 +383,9 @@ Criterio de Guido (2026-10-18), también en el encabezado de `tools/auditoria.mj
 Decisión de Guido (2026-10-18, HSV). Un bono convertible común (Wandelschuldverschreibung dentro de las deudas) es deuda financiera y entra
 en `grossDebt` (HSV 2024: 57.848 TEUR con la WSV de 30.000). Un convertible con conversión OBLIGATORIA en acciones, que el documento muestra
 como partida especial después del patrimonio (Sonderposten nach dem Eigenkapital), no es deuda (HSV 2025: 22,03 M, sin la WSV).
+
+- INGRESOS DE LA OTRA ENTIDAD (Guido delegó en la principal, 2026-10-18): se suman todos los renglones de ingresos de su estado de
+  resultados, incluidos los "Juros e rendimentos similares obtidos"; solo queda afuera lo que se contaría dos veces (la ganancia por la parte
+  de la SAD, "Ganhos imputados de subsidiárias").
+- DOS INFORMES DEL AUDITOR EN EL MISMO DOCUMENTO (individual y consolidado): la línea de auditoría usa el del perímetro que publica el sitio
+  (Guido, 2026-10-18: "coherencia de perímetro"). El otro se transcribe pero no se cita.

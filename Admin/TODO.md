@@ -24,7 +24,7 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): finanzas 281, 282, 294 · pipeline 298 (t y u primero: destraban Bélgica; después e a n, p, q, s, v), 310, 290, 232, 279, 286, 287, 301, 302, 306, 307 · onboarding 292 (resto; Bélgica espera la t y la u), 238, 285, 284, 283, 195, 165 c ·
+Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): finanzas 282, 294 (espera las altas del borrador) · pipeline 298 (t y u primero: destraban Bélgica; después e a n, p, q, s, v), 310, 290, 232, 279, 286, 287, 301, 302, 306, 307 · onboarding 292 (resto; Bélgica espera la t y la u), 238, 285, 284, 283, 195, 165 c ·
 datos-sourcing 273 (el modo de la tabla de camisetas, diseño aprobado), 252 · ligas 295 · Reino Unido (261) en su propia sesión · la principal: 291 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
@@ -59,8 +59,8 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 273: estadio y sponsor, lo que queda (completar a mano, nombrar la compuerta)
 
 **E. Pantallas**
-* 282: quién audita, lo que queda (88 informes a conseguir; la compuerta del pipeline)
-* 281: ingresos de las otras entidades (falta União de Leiria, sin estado de resultados)
+* 282: quién audita, lo que queda (50 informes; la compuerta del pipeline)
+* 311: pedirles a los clubes el informe del auditor que no está publicado (mails)
 * 294: registro de entidades, lo que queda (los clubes del borrador cuando estén publicados)
 * 309: tamaño de liga desde la lista de Wikipedia (a decidir con Guido)
 
@@ -229,16 +229,14 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    ejercicio, no por liga-temporada). (c) AVS 2021 y 2023 sin liga: ejercicios de la sociedad anterior, confirmar la entidad. (d) nombrar la
    compuerta en `Admin/PIPELINE.md` y en la skill `club-or-year-onboarding` (la skill, con ok de Guido). Siguen sin liga a propósito:
    Novorizontino 2010, Dynamo Makhachkala 2021, Racing 2027 (presupuesto).
-281. FINANZAS: INGRESOS DE LAS OTRAS ENTIDADES (pedido de Guido, 2026-10-17). Hecho para Portugal: 14 asociaciones-año transcriptas con su
-   línea de ingresos (Vizela, Belenenses, Chaves, Académica, Braga, Marítimo, Porto…; 17 líneas de ingresos en el registro). Falta: União
-   de Leiria, cuyo PDF no trae el estado de resultados (sourcing).
-   Decisión pendiente de Guido: si los ingresos de la otra entidad incluyen los "Juros e rendimentos similares obtidos" (hoy los suman
-   Marítimo y Porto; no se suman los renglones netos de imparidad ni de provisiones).
 282. QUIÉN AUDITA: LO QUE QUEDA (pedido de Guido, 2026-10-17). Los 942 balances tienen línea, la tarjeta de Finanzas está (con el
-   "alcance" de una revisión limitada, procedimientos acordados, propósito especial o cuentas del grupo). Falta: (a) sourcing de los 88
-   informes del auditor que no están en ningún PDF nuestro (`node tools/auditoria.mjs --pendientes`, "FALTA EN EL PDF"); (f) que el pipeline
-   exija la línea al dar de alta un club (fos-pipeline). En Ligas ya está la tarjeta "Las cuentas de la liga": cada entidad que entra
-   por el 295 aparece sola.
+   "alcance" de una revisión limitada, procedimientos acordados, propósito especial o cuentas del grupo). Falta: (a) 50 informes del auditor
+   que no están en ningún PDF nuestro (`node tools/auditoria.mjs --pendientes`, "FALTA EN EL PDF"): casi todos sin canal público, van al 311;
+   quedan para sourcing Hamburgo 2024 (ficha de la KGaA HRB 191603 o de la AG vieja HRB 47576 en el Unternehmensregister; captcha por
+   publicación, lo resuelve Guido), Lazio 2006 y 2011-2013 (figuran `sin_informe`, pero el del consolidado está en la API del club y en
+   Wayback) y Roma 2022 (el link de "consolidato" baja el individual). Si el sitio publicara el consolidado de Juventus, sus líneas 2022-2025
+   cambian de informe (los dos están bajados). (f) que el pipeline exija la línea al dar de alta un club (fos-pipeline). En Ligas ya está la
+   tarjeta "Las cuentas de la liga": cada entidad que entra por el 295 aparece sola.
 295. BALANCES DE LAS ENTIDADES QUE ORGANIZAN LAS LIGAS (fos-ligas; aclaración de Guido, 2026-10-18). Hecho: Premier League 2024-25
    (Deloitte), LaLiga 2024-25 (LNFP, Netadia) y J.League 2025 (Grant Thornton Taiyo), en `Ligas/` y en `data/auditoria/_ligas.js`. Falta:
    (a) CBF: Guido baja el PDF 2025 desde su navegador (link en `Admin/sourcing/Ligas/cbf.md`; el CDN no deja desde acá), después
@@ -272,10 +270,10 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    hechos; Estonia y Bélgica dados de alta (lotes 89 y 90, 17 clubes). Falta: los lotes de carga por país que siguen (91-92 en curso,
    después Suiza, Países Bajos, Colombia, Beşiktaş); OH Leuven 2022 y Llaneros 2022, que siguen sin tablas (ver 298 e); decidir subagentes
    o Mistral para los 319 `.md` viejos sin tablas de `Admin/lotes/sin-tablas-6paises.txt`, después de medir el 298 e.
-294. REGISTRO DE ENTIDADES: LO QUE QUEDA (pedido de Guido, 2026-10-18). Tiene 50 clubes y 9 grupos. Falta: los clubes del borrador
-   `Admin/registros/cola-borradores/altas-2026-10-17.md` cuando estén publicados (Viking, Vålerenga, Luzern, St. Gallen, Molde, Go Ahead
-   Eagles, Basel, Pardubice, Aalesund, Fredrikstad, Sarpsborg 08; el borrador tiene la entidad de cada uno con cita); Bahia: una cita del
-   registro societario de Brasil (QSA del CNPJ) para el eslabón CFG > City Football Group Brazil.
+294. REGISTRO DE ENTIDADES: LO QUE QUEDA (pedido de Guido, 2026-10-18). Tiene 50 clubes y 9 grupos (Bahia ya cita el QSA del CNPJ). Falta:
+   los clubes del borrador `Admin/registros/cola-borradores/altas-2026-10-17.md` cuando onboarding los publique (Viking, Vålerenga, Luzern,
+   St. Gallen, Molde, Go Ahead Eagles, Basel, Pardubice, Aalesund, Fredrikstad, Sarpsborg 08; el borrador tiene la entidad de cada uno con
+   cita). Después, fast-forward de la rama finanzas.
 298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, o y r, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
    vez; el detalle con casos, en `Admin/Archive/sesion-onboarding-2026-10-18-2.md`). a) CIERRE FALSO en verificar.mjs: compara en valor
    absoluto y da "cierra" con una fila del lado o signo equivocado (Lierse Kempenzonen 2022 habría cargado un gasto como ingreso): lo más
@@ -314,6 +312,11 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    propio documento); (2) la deuda belga, con criterio a decidir (¿el 42 entra?; Union SG tiene 31,66 M cargados y 7,62 M por códigos
    financieros); (3) OH Leuven y los documentos cuyo .md no trae la columna de códigos. Si caja-deuda vuelve a atar un valor al año
    equivocado (Tallinna Kalev en onboarding), mirar qué `.md` devolvió `mdDeFuente`.
+311. PEDIRLES A LOS CLUBES EL INFORME DEL AUDITOR (pedido de fos-finanzas y Guido, 2026-10-18; skill club-outreach, Guido aprueba cada
+   envío). Unos 50 club-años sin el informe en ningún canal público, con lo probado en `Admin/Archive/sesion-finanzas-2026-10-18-sesion3.md`
+   ("Sesión 3"): Portugal 25 (la Certificação Legal das Contas: Académico de Viseu, Alverca, Casa Pia, Chaves, Felgueiras, Mafra, Marítimo,
+   Nacional, Rio Ave, Vizela, Portimonense), Hellas Verona 2020-2024, Napoli 2018 y 2020, Lazio 2017, Bologna 2025, San Lorenzo 2011-2012,
+   Argentinos 2015 y los 10 japoneses 2025 (publican el 決算公告, sin auditor).
 309. TAMAÑO DE LIGA DESDE LA LISTA DE WIKIPEDIA (cierre de pantallas, a decidir con Guido). En 223 de los 227 liga-años con lista de
    Wikipedia (`wiki` en `data/rankings/<liga>.js`) `leagueSize` es null, aunque la lista existe y alimenta los estimados: sin él no hay
    "N de los M" en el subtítulo de Ligas ni "Faltan…". ¿El tamaño sale de la lista (`LEAGUE_SIZE_BY_YEAR`, `tools/listas-lote.mjs`)?

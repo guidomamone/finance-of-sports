@@ -15,6 +15,18 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 746 — Merge de finanzas: informes del auditor y União de Leiria (2026-10-18)
+
+`documentos-descartados.txt` con las líneas de las dos ramas; ASSET_V 1303, P0 0 / P1 0.
+
+- To-do 282 a: informes del auditor de Lazio, Juventus, Roma, Napoli, Torino, Hellas Verona, Cremonese, Fortaleza CEIF, OFI y Hamburgo
+  2025; FALTA EN EL PDF de 88 a 50. Lazio, Roma y Juventus citan el informe de su perímetro publicado.
+- To-do 281 cerrado: União de Leiria 2023-24 con su línea de ingresos (columna comparativa del relatório 2024-25).
+- To-do 294: Bahia cita el QSA del CNPJ (City Football Group Midco > City Football Group Brazil); BrasilAPI en `fuentes-externas.md`.
+- Skills (con ok de Guido): club-sourcing (dónde publica cada club italiano el informe del auditor; informe aparte; Portugal) y
+  worktree.md (rsync `--no-links`). CONVENCIONES-DATOS: ingresos de la otra entidad y qué informe va cuando hay dos.
+- Nuevo to-do 311: pedirles por mail a los clubes los ~50 informes que no están publicados.
+
 ## Versión 745 — Merge de onboarding 2: lote 92 de Bélgica (2026-10-18)
 
 Sin conflictos; P0 0 / P1 0.
