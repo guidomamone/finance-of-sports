@@ -110,3 +110,29 @@
   `entidad`, y genera `data/auditoria/_ligas.js` (`window.LIGA_AUDITORIA`, contrato acordado con pantallas). Hoy vacío: no hay en el
   proyecto ningún balance propio de una entidad organizadora (las carpetas `Clubes/*/_…` son informes agregados de liga). Para TODO:
   sourcing de esos balances (AFA, LFP, Premier League, Lega Serie A…), con su informe del auditor.
+
+## Después del segundo merge del 2026-10-18
+
+### Qué cambió (para CHANGELOG)
+
+- To-do 282, el registro lleno: `Admin/registros/auditoria.jsonl` cubre 902 de los 925 balances (81 tandas de subagentes Sonnet por país,
+  con un criterio común y un verificador de citas). Resultado: 509 sin salvedades, 144 con salvedades, 7 abstenciones, 139 sin informe en
+  el documento, 116 con incertidumbre material sobre la continuidad; 42 auditores son personas. `data/auditoria/` regenerado.
+- `tools/auditoria.mjs`: código interno `falta_transcripcion` (el documento muestra que el informe existe, pero el .md no lo trae: 103
+  casos), que no se publica y cuenta como pendiente; `auditor.nombre` puede ser null si el informe no imprime quién firma (Gimnasia
+  2023-2025), con nota.
+
+### Qué queda (para TODO)
+
+- 282: transcribir los informes que faltan (103 club-años, `node tools/auditoria.mjs --pendientes`: Lazio 2014-2026, Napoli 2018-2025,
+  Torino 2018-2025, Hellas Verona, Cremonese, Roma 2013 y 2022-2025, Juventus 2022 y 2024, Racing 2009-2011, 2014 y 2020, Marítimo,
+  Académico de Viseu, Rusia (Spartak, Zenit, Lokomotiv, Dynamo Moscú y otros, con el PDF del informe sin transcribir), entre otros) y
+  escribir su línea; los 23 balances sin .md.
+- 282: decisiones de Guido pendientes sobre el vocabulario (ver el mensaje del cierre): énfasis de continuidad sin "incertidumbre
+  material" (91 quedaron en false con nota "ÉNFASIS CONTINUIDAD:", y unos 20 de las primeras tandas en true); continuidad marcada por el
+  título del párrafo y no por el cuerpo (7); informes con "base para la opinión con salvedades" y párrafo de opinión limpio (11, tratados
+  distinto); abstención parcial (opinión limpia sobre el estado patrimonial y abstención sobre resultados: Racing 2016, Rosario Central
+  2023, San Lorenzo 2013 como con_salvedades).
+- 282: nombres de firma tomados de OCR ruidoso, a verificar contra el PDF (Union SG 2025, Getafe 2024-2025, Elche 2025, Goiás 2008,
+  Godoy Cruz 2020); revisores que firman sin ser auditoría plena (Criciúma 2015-2019 "revisión especial", Osijek 2025, Como 2025 revisión
+  limitada, Kifisia 2022-2024 estados para licenciamiento, Club América 2025 ficha BMV de Ollamani).
