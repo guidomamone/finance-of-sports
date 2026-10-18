@@ -4,8 +4,11 @@
 // histórico y los equipos que sponsorea hoy; las marcas técnicas también; los equipos de toda la liga, los que el sitio no tiene en gris).
 //
 // DE DÓNDE. La caché por liga-año de tools/estadio-sponsor.mjs (tools/club-league-reference/contexto/<iso>.json: las tablas de kits de cada
-// página de temporada de Wikipedia, con TODOS los equipos). Lo cargado a mano en tools/contexto-manual.json todavía NO entra (está por año
-// de ejercicio, no por liga-temporada: pendiente). Un equipo se une a un club del sitio por nombre (el exacto gana; uno parcial solo si es el único del país); si no, va sin clubId.
+// página de temporada de Wikipedia, con TODOS los equipos). Un equipo se une a un club del sitio por nombre (el exacto gana; uno parcial
+// solo si es el único del país); si no, va sin clubId. Además, lo de cada club del sitio que NO salió de la página de temporada (cargado a
+// mano en tools/contexto-manual.json o leído de la página del club): sale de data/contexto/<iso>.js (campos listados en `manual` o en
+// `club`), va en la liga y temporada de ese ejercicio (data/club-leagues/) con su fuente como 6º elemento, y reemplaza lo que la tabla de
+// la temporada decía de ese club en ese rol (una corrección a mano gana).
 //
 // NOMBRES. Una celda con varios sponsors se separa por coma, punto y coma o barra; lo que va entre paréntesis se saca ("(in cup matches)").
 // Dos nombres son el mismo sponsor SOLO si tools/sponsor-alias.json lo dice (a mano): "Fly Emirates" y "Emirates" no se unen solos. Con
@@ -15,7 +18,8 @@
 // las entradas de esa temporada. Una tabla de kits "solo la actual" vale solo en esa temporada.
 //
 // SALIDA: data/sponsors.js (y data/sponsors-indice.js: [[id, nombre, roles]], chico, para el buscador)
-//   window.SPONSORS = { actuales: { liga: año }, fuentes: { "liga|año": url }, lista: { id: { n, roles, e: [[liga, año, equipo, clubId|null, rol]] } } }
+//   window.SPONSORS = { actuales: { liga: año }, fuentes: { "liga|año": url }, lista: { id: { n, roles, e: [[liga, año, equipo, clubId|null, rol, fuente?]] } } }
+//   fuente: solo en una entrada que no salió de la página de temporada (la de esa temporada está en `fuentes`).
 //   rol: "c" camiseta (frente), "m" marca técnica.
 //
 // USO:
@@ -26,6 +30,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
+const { cierreDelClub } = require('./cierre-ejercicio.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const REF = path.join(ROOT, 'tools', 'club-league-reference');
@@ -45,14 +50,17 @@ function sitio() {
   const s = { window: {} }; s.window.window = s.window; const ctx = vm.createContext(s); vm.runInContext(fs.readFileSync(path.join(ROOT, 'data', 'clubs.js'), 'utf8'), ctx);
   const alias = JSON.parse(fs.readFileSync(path.join(REF, 'alias.json'), 'utf8'));
   const listas = {}; for (const f of fs.readdirSync(REF).filter((f) => /^[a-z]{2}\.json$/.test(f))) listas[f.slice(0, 2)] = JSON.parse(fs.readFileSync(path.join(REF, f), 'utf8'));
-  return { CI: ci.window.CLUB_INDEX, CLUBS: vm.runInContext('clubs', ctx), alias, listas };
+  const cl = { window: {} }; for (const f of fs.readdirSync(path.join(ROOT, 'data', 'club-leagues'))) vm.runInNewContext(fs.readFileSync(path.join(ROOT, 'data', 'club-leagues', f), 'utf8'), cl);
+  const cx = { window: {} }; const dirCtx = path.join(ROOT, 'data', 'contexto');
+  if (fs.existsSync(dirCtx)) for (const f of fs.readdirSync(dirCtx).filter((f) => /^[a-z]{2}\.js$/.test(f))) vm.runInNewContext(fs.readFileSync(path.join(dirCtx, f), 'utf8'), cx);
+  return { CI: ci.window.CLUB_INDEX, CLUBS: vm.runInContext('clubs', ctx), alias, listas, CL: cl.window.CLUB_LEAGUE_BY_YEAR, CONTEXTO: cx.window.CLUB_CONTEXT || {} };
 }
 
 // "Fly Emirates/Etihad (in cup matches)" -> ["Fly Emirates", "Etihad"]
 const partes = (txt) => String(txt || '').replace(/\([^)]*\)/g, ' ').split(/\s*[,;/]\s*/).map((x) => x.replace(/\s+/g, ' ').trim()).filter((x) => x && x !== '-' && !/^(none|no sponsor|sin sponsor|tba|tbd|tbc|n\/?a|nil|—|–|\?)$/i.test(x) && /\p{L}/u.test(x)); // sin letras ("0", "22") no es un nombre
 
 function construir() {
-  const { CI, CLUBS, alias, listas } = sitio();
+  const { CI, CLUBS, alias, listas, CL, CONTEXTO } = sitio();
   const aliasSp = fs.existsSync(ALIAS) ? JSON.parse(fs.readFileSync(ALIAS, 'utf8')) : {};
   const canon = (n) => (aliasSp[n] && typeof aliasSp[n] === 'string' ? aliasSp[n] : n);
   const anioActual = new Date().getFullYear();
@@ -74,11 +82,11 @@ function construir() {
   };
 
   const actuales = {}, fuentes = {}, lista = {}; const filas = [];
-  const agregar = (nombre, rol, entrada) => {
+  const agregar = (nombre, rol, entrada, fuente) => {
     const n = canon(nombre); const id = slug(n); if (!id) return;
     const s = (lista[id] ??= { n, roles: [], e: [] });
     if (!s.roles.includes(rol)) s.roles.push(rol);
-    s.e.push([...entrada, rol]);
+    s.e.push(fuente ? [...entrada, rol, fuente] : [...entrada, rol]);
   };
   const isos = fs.existsSync(CTX) ? fs.readdirSync(CTX).filter((f) => /^[a-z]{2}\.json$/.test(f)).map((f) => f.slice(0, 2)).sort() : [];
   for (const iso of isos) {
@@ -96,15 +104,33 @@ function construir() {
       }
     }
   }
+  // lo que no salió de la página de temporada (a mano o de la página del club), por ejercicio de un club del sitio. La temporada, como en
+  // tools/estadio-sponsor.mjs (temporadaDe): un club que cierra de septiembre en adelante en una liga de temporada partida juega la que
+  // termina el año siguiente
+  const extra = [];
+  for (const [id, ys] of Object.entries(CONTEXTO)) for (const [y, d] of Object.entries(ys)) {
+    const liga = CL[id]?.[y]; if (!liga) continue;
+    const iso = liga.slice(0, 2); const ls = listas[iso]?.leagues?.[liga] || {};
+    const mes = Number((CI[id]?.ci?.[y] || cierreDelClub(CLUBS[id], +y).slice(5)).slice(0, 2));
+    const partida = (a) => ls[a] && /[–-]\d{2,4}\b/.test(ls[a].wikipediaPage);
+    const temp = mes >= 9 && partida(+y + 1) ? +y + 1 : +y;
+    for (const [campo, rol] of [['sponsor', 'c'], ['marca', 'm']]) {
+      const fuente = (d.manual || []).includes(campo) ? d.fuenteManual || d.fuente : d.club?.[campo];
+      if (fuente && d[campo]) extra.push({ iso, liga, y: temp, clubId: id, equipo: CI[id]?.n || CLUBS[id]?.displayName || id, campo, rol, valor: d[campo], fuente });
+    }
+  }
+  const tapa = new Set(extra.map((x) => `${x.liga}|${x.y}|${x.clubId}|${x.campo}`));
   // un equipo que el sitio no tiene puede venir con dos nombres ("AC Sparta Prague" en 2027, "Sparta Prague" en 2025): por país y nombre
   // normalizado (sin "FC", "AC"...), vale el de la temporada más nueva. Uno del sitio lo agrupa la pantalla por clubId.
   const canonEq = {};
   for (const r of [...filas].sort((a, b) => b.y - a.y)) { const k = `${r.iso}|${corto(r.f.club)}`; if (!canonEq[k]) canonEq[k] = r.f.club; }
   for (const r of filas) {
     const equipo = r.clubId ? r.f.club : canonEq[`${r.iso}|${corto(r.f.club)}`] || r.f.club;
-    for (const sp of partes(r.f.sponsor)) agregar(sp, 'c', [r.liga, r.y, equipo, r.clubId]);
-    for (const mk of partes(r.f.marca)) agregar(mk, 'm', [r.liga, r.y, equipo, r.clubId]);
+    const tapado = (campo) => r.clubId && tapa.has(`${r.liga}|${r.y}|${r.clubId}|${campo}`);
+    if (!tapado('sponsor')) for (const sp of partes(r.f.sponsor)) agregar(sp, 'c', [r.liga, r.y, equipo, r.clubId]);
+    if (!tapado('marca')) for (const mk of partes(r.f.marca)) agregar(mk, 'm', [r.liga, r.y, equipo, r.clubId]);
   }
+  for (const x of extra) for (const v of partes(x.valor)) agregar(v, x.rol, [x.liga, x.y, x.equipo, x.clubId], x.fuente);
   const ordenado = {};
   for (const id of Object.keys(lista).sort()) { const s = lista[id]; s.roles.sort(); s.e.sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]) || a[2].localeCompare(b[2])); ordenado[id] = s; }
   return { actuales, fuentes, lista: ordenado };
