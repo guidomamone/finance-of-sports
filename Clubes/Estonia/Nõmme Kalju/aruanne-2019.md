@@ -532,14 +532,13 @@ Rahalised ja mitterahalised annetused
 
 --- pág. 17 ---
 
-Mittetulundusühing Nõmme Kalju FC 2019. a. majandusaasta aruanne
+Mittetulundusühing Nõmme Kalju FC                                                                 2019. a. majandusaasta aruanne
 
 ## Lisa 14 Mitmesugused tegevuskulud
-
 (eurodes)
 
 | | 2019 | 2018 |
-| --- | --- | --- |
+|---|---:|---:|
 | Mängijate ülemineku kulud | 5 360 | 50 815 |
 | Kodumängude korralduskulud | 49 851 | 37 478 |
 | Eesti meistrivõistluste osavõtutasu | 9 470 | 8 930 |
@@ -554,29 +553,29 @@ Mittetulundusühing Nõmme Kalju FC 2019. a. majandusaasta aruanne
 | Erakorralised kulud | 150 | 2 827 |
 | Muud klassifitseerimata tegevuskulud | 23 315 | 101 073 |
 | Muud | 0 | 15 086 |
-| Kokku mitmesugused tegevuskulud | 597 037 | 523 689 |
+| **Kokku mitmesugused tegevuskulud** | **597 037** | **523 689** |
 
 sealhulgas,
 Tasud vahendajatele/agenditasud: 2019. 1760€ ja 2018. 35000€
 Mängijaõigused: 2019. 3600€ ja 2018. 15715€
 
 ## Lisa 15 Tööjõukulud
-
 (eurodes)
 
 | | 2019 | 2018 |
-| --- | --- | --- |
+|---|---:|---:|
 | Palgakulu | 493 096 | 372 477 |
 | Sotsiaalmaksud | 166 450 | 127 214 |
 | Puhkusereserv | 2 219 | 2 089 |
-| Kokku tööjõukulud | 661 765 | 501 780 |
+| **Kokku tööjõukulud** | **661 765** | **501 780** |
 | Töötajate keskmine arv taandatuna täistööajale | 36 | 40 |
 
-| Palgakulu | 2019 | 2018 |
-| --- | --- | --- |
-| - sh. mängijate tasud | 264 165 | 185 041 |
-| - sh. treenerite tasud | 120 977 | 129 486 |
-| - sh. muu personali tasud | 107 954 | 57 950 |
+Palgakulu 2019 2018
+- sh. mängijate tasud 264 165 185 041
+- sh. treenerite tasud 120 977 129 486
+- sh. muu personali tasud 107 954 57 950
+
+17
 
 --- pág. 18 ---
 

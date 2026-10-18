@@ -72,41 +72,41 @@ C.C. No. 1.049.609.620 de Tunja Boyaca
 
 --- pág. 2 ---
 
-# DEPORTIVO BOYACA CHICO FUTBOL CLUB S.A.
+**DEPORTIVO BOYACA CHICO FUTBOL CLUB S.A.**
+**NIT 830.100.504 - 0**
 
-NIT 830.100.504 - 0
+**Estado del resultado integral y ganancias acumuladas comparativos, para el periodo terminado al 31 de Diciembre de 2.019**
 
-Estado del resultado integral y ganancias acumuladas comparativos, para el periodo terminado al 31 de Diciembre de 2.019
+*(Cifras en pesos Colombianos)*
 
-(Cifras en pesos Colombianos)
+| | Nota | 31-dic.-19 | 31-dic.-18 | Var Relativa |
+|---|---|---|---|---|
+| **INGRESOS OPERACIONALES** | | **6,713,347,227** | **9,025,638,865** | |
+| Venta Netas | 15 | 6,713,347,227 | 9,025,638,865 | -25.6% |
+| COSTO DE VENTAS | 16 | 4,853,758,052 | 7,150,712,856 | -32.1% |
+| **Ganancia bruta** | | **1,859,589,175** | **1,874,926,009** | -0.8% |
+| Otros ingresos | 17 | 8,500,360 | 33,689,822 | -74.8% |
+| Gastos de administración | 18 | 1,172,961,949 | 714,603,051 | 64.1% |
+| Otros gastos | 19 | 267,146,765 | 433,712,719 | -38.4% |
+| **Ganancia antes de impuestos** | | **427,980,821** | **760,300,061** | -43.7% |
+| Gasto por impuesto a las ganancias | 20 | 172,726,804 | 250,899,020 | -31.2% |
+| **Ganancia del año** | | **255,254,017** | **458,460,937** | -44.3% |
+| Ganancia acumulada al inicio del período | | 407,520,833 | 0 | |
+| Ganancia al inicio del período por adopción NIIF | | 0 | 0 | |
+| (-) Reservas | | 25,525,402 | 50,940,104 | |
+| (-) Distribución de utilidades | | 0 | 0 | |
+| (-+) Ajustes | | 0 | 0 | |
+| Ganancias acumuladas al final del ejercicio | | 688,300,252 | 509,401,041 | |
 
-|   | Nota | 31-dic.-19 | 31-dic.-18 | Var Relativa  |
-| --- | --- | --- | --- | --- |
-|  **INGRESOS OPERACIONALES** |  | **6,713,347,227** | **9,025,638,865** |   |
-|  Venta Netas | 15 | 6,713,347,227 | 9,025,638,865 | -25.6%  |
-|  COSTO DE VENTAS | 16 | 4,853,758,052 | 7,150,712,856 | -32.1%  |
-|  **Ganancia bruta** |  | **1,859,589,175** | **1,874,926,009** | **-0.8%**  |
-|  Otros ingresos | 17 | 8,500,360 | 33,689,822 | -74.8%  |
-|  Gastos de administración | 18 | 1,172,961,949 | 714,603,051 | 64.1%  |
-|  Otros gastos | 19 | 267,146,765 | 433,712,719 | -38.4%  |
-|  **Ganancia antes de impuestos** |  | **427,980,621** | **760,300,061** | **-43.7%**  |
-|  Gasto por impuesto a las ganancias | 20 | **172,726,804** | **250,899,020** | **-31.2%**  |
-|  **Ganancia del año** |  | **255,254,017** | **458,460,937** | **-44.3%**  |
-|  Ganancia acumulada al inicio del periodo |  | 407,520,833 | 0 |   |
-|  Ganancia al inicio del periodo por adopción NIIF |  | 0 | 0 |   |
-|  (-) Reservas |  | 25,525,402 | 50,940,104 |   |
-|  (-) Distribución de utilidades |  | 0 | 0 |   |
-|  (+) Ajustes |  | 0 | 0 |   |
-
-**Ricardo Hoyos Angel**
+(firma) Ricardo Hoyos Angel
 Representante Legal
 C.C. No. 79.241.437 de Bogota D.C.
 
-**Alvaro Alfonso Cuello Hoyos**
+(firma) Alvaro Alfonso Cuello Hoyos
 Contador Publico TP 218811 - T
 C.C. No. 1.102.798.113 de Sincelejo Sucre
 
-**Cristian Leonardo Suescun Perez**
+(firma) Cristian Leonardo Suescun Perez
 Revisor Fiscal TP 171686 - T
 C.C. No. 1.049.609.620 de Tunja Boyaca
 

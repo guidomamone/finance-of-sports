@@ -638,51 +638,49 @@ Mittetulundusühing Nõmme Kalju FC 2020. a. majandusaasta aruanne
 
 --- pág. 18 ---
 
+18
+
 Mittetulundusühing Nõmme Kalju FC 2020. a. majandusaasta aruanne
 
-| Palgakulu (jätk) | 2020 | 2019 |
-| --- | --- | --- |
-| - sh. treenerite tasud | 149 276 | 120 977 |
-| - sh. muu personali tasud | 100 954 | 107 954 |
+- sh. treenerite tasud 149 276 120 977
+- sh. muu personali tasud 100 954 107 954
 
 ## Lisa 16 Seotud osapooled
 (eurodes)
 
-Liikmete arv majandusaasta lõpu seisuga
-
+| Liikmete arv majandusaasta lõpu seisuga | | |
+|---|---|---|
 | | 31.12.2020 | 31.12.2019 |
-| --- | --- | --- |
 | Füüsilisest isikust liikmete arv | 2 | 2 |
 
-Saldod seotud osapooltega rühmade lõikes
+**Saldod seotud osapooltega rühmade lõikes**
 
-| | 31.12.2020 Nõuded | 31.12.2020 Kohustised | 31.12.2019 Nõuded | 31.12.2019 Kohustised |
-| --- | --- | --- | --- | --- |
+| | 31.12.2020 | | 31.12.2019 | |
+|---|---|---|---|---|
+| | **Nõuded** | **Kohustised** | **Nõuded** | **Kohustised** |
 | Asutajad ja liikmed | 4 730 | | 7 763 | |
 | Sidusettevõtjad | 70 | 13 000 | 72 | 18 000 |
 | Tegev- ja kõrgem juhtkond ning olulise osalusega eraisikust omanikud ning nende valitseva või olulise mõju all olevad ettevõtjad | 659 | | | 650 |
 | Olulise osalusega juriidilisest isikust omanikud ning nende valitseva või olulise mõju all olevad ettevõtjad | 80 | | 80 | |
 | Tegev- ja kõrgema juhtkonna ning olulise osalusega eraisikust omanike lähedased pereliikmed ning nende valitseva või olulise mõju all olevad ettevõtjad | 6 231 | | 6 044 | |
 
-Laenud
+**Laenud**
 
 | 2019 | Antud laenude tagasimaksed | Intressimäär | Alusvaluuta | Lõpptähtaeg |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 | Asutajad ja liikmed | | | | |
 | liikmed | 15 000 | 12% | EUR | 31.12.2018 |
 
-Kaupade ja teenuste ostud ja müügid
-
-| | 2020 Kaupade ja teenuste ostud | 2019 Kaupade ja teenuste ostud |
-| --- | --- | --- |
-| Tegev- ja kõrgem juhtkond ning olulise osalusega eraisikust omanikud ning nende valitseva või olulise mõju all olevad ettevõtjad | 30 100 | 17 600 |
-
-Tegev- ja kõrgemale juhtkonnale arvestatud tasud ja muud olulised soodustused
+**Kaupade ja teenuste ostud ja müügid**
 
 | | 2020 | 2019 |
-| --- | --- | --- |
+|---|---|---|
+| | **Kaupade ja teenuste ostud** | **Kaupade ja teenuste ostud** |
+| Tegev- ja kõrgem juhtkond ning olulise osalusega eraisikust omanikud ning nende valitseva või olulise mõju all olevad ettevõtjad | 30 100 | 17 600 |
 
-18
+| Tegev- ja kõrgemale juhtkonnale arvestatud tasud ja muud olulised soodustused | | |
+|---|---|---|
+| | **2020** | **2019** |
 
 --- pág. 19 ---
 

@@ -1345,10 +1345,14 @@ Grafik 5 — Quelle: www.europeancups.altervista.org
 
 --- pág. 31 ---
 
-**UEFA-Koeffizient** (Diagrama de líneas, Grafik 6)
+29
 
-| Saison | UEFA-Koeffizient |
-| --- | --- |
+**UEFA-Koeffizient**
+
+Gráfico de líneas (Grafik 6):
+
+| Saison | Wert |
+|---|---|
 | 2001/2002 | 9.476 |
 | 2002/2003 | 29.125 |
 | 2003/2004 | 25.383 |
@@ -1357,43 +1361,30 @@ Grafik 5 — Quelle: www.europeancups.altervista.org
 | 2006/2007 | 54.869 |
 | 2007/2008 | 51.993 |
 
-Grafik 6 — Quelle: www.europeancups.altervista.org
+Grafik 6 Quelle: www.europeancups.altervista.org
 
-Mit diesen Werten befindet sich der FC Basel 1893 in illustrer Gesellschaft. Seine unmittelbaren Ranking-Nach-
-barn sind der Hamburger Sportverein (Rang 38), der VfB Stuttgart (Rang 39), Celtic Glasgow (Rang 40) und Ajax
-Amsterdam (Rang 42).
+Mit diesen Werten befindet sich der FC Basel 1893 in illustrer Gesellschaft. Seine unmittelbaren Ranking-Nachbarn sind der Hamburger Sportverein (Rang 38), der VfB Stuttgart (Rang 39), Celtic Glasgow (Rang 40) und Ajax Amsterdam (Rang 42).
 
-Für die kommenden Geschäftsjahre hängt, wie im Bereich des Fussballs normal, vieles vom sportlichen Erfolg ab.
-Werden die ambitiösen Ziele nicht erreicht, so wird das Konstrukt FC Basel 1893 AG aufgrund der hohen einge-
-gangenen Verpflichtungen entweder auf Zuschüsse von externen Dritten angewiesen sein oder rasch die Aus-
-gaben radikal reduzieren müssen. Es ist wichtig, dass sich der Verwaltungsrat, die Aktionäre, die Mitglieder, Ge-
-schäftspartner, Sponsoren und Fans bewusst sind, dass die letzten Jahre in Bezug auf den sportlichen Erfolg, die
-finanziellen Ergebnisse und die Transfereinnahmen ausserordentlich gute Jahre waren. Mit wenigen Ausnahmen
-wurden die eingegangenen unternehmerischen und sportlichen Risiken mit einem positiven Ausgang belohnt.
+Für die kommenden Geschäftsjahre hängt, wie im Bereich des Fussballs normal, vieles vom sportlichen Erfolg ab. Werden die ambitiösen Ziele nicht erreicht, so wird das Konstrukt FC Basel 1893 AG aufgrund der hohen eingegangenen Verpflichtungen entweder auf Zuschüsse von externen Dritten angewiesen sein oder rasch die Ausgaben radikal reduzieren müssen. Es ist wichtig, dass sich der Verwaltungsrat, die Aktionäre, die Mitglieder, Geschäftspartner, Sponsoren und Fans bewusst sind, dass die letzten Jahre in Bezug auf den sportlichen Erfolg, die finanziellen Ergebnisse und die Transfereinnahmen ausserordentlich gute Jahre waren. Mit wenigen Ausnahmen wurden die eingegangenen unternehmerischen und sportlichen Risiken mit einem positiven Ausgang belohnt.
 
-Da die erarbeiteten Mittel jederzeit wieder in den laufenden Betrieb investiert wurden und parallel zum Erfolg
-die Anspruchshaltung vieler Partner des FC Basel 1893 sich wesentlich erhöht haben, wird es eine wichtige Auf-
-gabe bleiben, regelmässig eine Standortanalyse vorzunehmen und auf kritische Signale zu achten. Nur wenn
-Fehlentwicklungen rechtzeitig erkannt werden, kann aus der Position der Stärke gehandelt werden.
+Da die erarbeiteten Mittel jederzeit wieder in den laufenden Betrieb investiert wurden und parallel zum Erfolg die Anspruchshaltung vieler Partner des FC Basel 1893 sich wesentlich erhöht haben, wird es eine wichtige Aufgabe bleiben, regelmässig eine Standortanalyse vorzunehmen und auf kritische Signale zu achten. Nur wenn Fehlentwicklungen rechtzeitig erkannt werden, kann aus der Position der Stärke gehandelt werden.
 
-Dank dem grossen Engagement von Frau Gigi Oeri besteht eine Grundsicherheit im Handeln, die sehr wertvoll
-ist. Dadurch können Initiativen entwickelt und Risiken eingegangen werden, die ohne ihre Zusagen und ihr akti-
-ves Mitwirken nicht denkbar und nicht verantwortbar wären. Dafür gebührt ihr ein riesiger Dank.
+Dank dem grossen Engagement von Frau Gigi Oeri besteht eine Grundsicherheit im Handeln, die sehr wertvoll ist. Dadurch können Initiativen entwickelt und Risiken eingegangen werden, die ohne ihre Zusagen und ihr aktives Mitwirken nicht denkbar und nicht verantwortbar wären. Dafür gebührt ihr ein riesiger Dank.
 
-29
+[Foto: Fussballspielszene, FC Basel gegen Spieler in weissen Trikots]
 
 --- pág. 32 ---
 
-[página sin texto digital: imagen escaneada, transcripta de la imagen]
+30
 
 PRICEWATERHOUSECOOPERS
 
 PricewaterhouseCoopers AG
 St. Jakobs-Strasse 25
-Postfach [ilegible]
+Postfach 3571
 4002 Basel
-Telefon [ilegible]
-Fax [ilegible]
+Telefon +41 58 792 51 00
+Fax +41 58 792 51 10
 www.pwc.ch
 
 Bericht der Revisionsstelle
@@ -1403,42 +1394,18 @@ Basel
 
 **Bericht der Revisionsstelle zur Jahresrechnung**
 
-Als Revisionsstelle haben wir die beiliegende Jahresrechnung der FC Basel 1893 AG, bestehend
-aus Bilanz, Erfolgsrechnung und Anhang für das am 31. Dezember 2008 abgeschlossene Ge-
-schäftsjahr geprüft.
+Als Revisionsstelle haben wir die beiliegende Jahresrechnung der FC Basel 1893 AG, bestehend aus Bilanz, Erfolgsrechnung und Anhang für das am 31. Dezember 2008 abgeschlossene Geschäftsjahr geprüft.
 
 *Verantwortung des Verwaltungsrates*
-Der Verwaltungsrat ist für die Aufstellung der Jahresrechnung in Übereinstimmung mit den gesetz-
-lichen Vorschriften und den Statuten verantwortlich. Diese Verantwortung beinhaltet die Ausgestal-
-tung, Implementierung und Aufrechterhaltung eines internen Kontrollsystems mit Bezug auf die
-Aufstellung einer Jahresrechnung, die frei von wesentlichen falschen Angaben als Folge von Ver-
-stössen oder Irrtümern ist. Darüber hinaus ist der Verwaltungsrat für die Auswahl und die Anwen-
-dung sachgemässer Rechnungslegungsmethoden sowie die Vornahme angemessener Schätzun-
-gen verantwortlich.
+Der Verwaltungsrat ist für die Aufstellung der Jahresrechnung in Übereinstimmung mit den gesetzlichen Vorschriften und den Statuten verantwortlich. Diese Verantwortung beinhaltet die Ausgestaltung, Implementierung und Aufrechterhaltung eines internen Kontrollsystems mit Bezug auf die Aufstellung einer Jahresrechnung, die frei von wesentlichen falschen Angaben als Folge von Verstössen oder Irrtümern ist. Darüber hinaus ist der Verwaltungsrat für die Auswahl und die Anwendung sachgemässer Rechnungslegungsmethoden sowie die Vornahme angemessener Schätzungen verantwortlich.
 
 *Verantwortung der Revisionsstelle*
-Unsere Verantwortung ist es, aufgrund unserer Prüfung ein Prüfungsurteil über die Jahresrech-
-nung abzugeben. Wir haben unsere Prüfung in Übereinstimmung mit dem schweizerischen Gesetz
-und den Schweizer Prüfungsstandards vorgenommen. Nach diesen Standards haben wir die Prü-
-fung so zu planen und durchzuführen, dass wir hinreichende Sicherheit gewinnen, ob die Jahres-
-rechnung frei von wesentlichen falschen Angaben ist.
+Unsere Verantwortung ist es, aufgrund unserer Prüfung ein Prüfungsurteil über die Jahresrechnung abzugeben. Wir haben unsere Prüfung in Übereinstimmung mit dem schweizerischen Gesetz und den Schweizer Prüfungsstandards vorgenommen. Nach diesen Standards haben wir die Prüfung so zu planen und durchzuführen, dass wir hinreichende Sicherheit gewinnen, ob die Jahresrechnung frei von wesentlichen falschen Angaben ist.
 
-Eine Prüfung beinhaltet die Durchführung von Prüfungshandlungen zur Erlangung von Prüfungs-
-nachweisen für die in der Jahresrechnung enthaltenen Wertansätze und sonstigen Angaben. Die
-Auswahl der Prüfungshandlungen liegt im pflichtgemässen Ermessen des Prüfers. Dies schliesst
-eine Beurteilung der Risiken wesentlicher falscher Angaben in der Jahresrechnung als Folge von
-Verstössen oder Irrtümern ein. Bei der Beurteilung dieser Risiken berücksichtigt der Prüfer das in-
-terne Kontrollsystem, soweit es für die Aufstellung der Jahresrechnung von Bedeutung ist, um die
-den Umständen entsprechenden Prüfungshandlungen festzulegen, nicht aber um ein Prüfungsur-
-teil über die Wirksamkeit des internen Kontrollsystems abzugeben. Die Prüfung umfasst zudem die
-Beurteilung der Angemessenheit der angewandten Rechnungslegungsmethoden, der Plausibilität
-der vorgenommenen Schätzungen sowie eine Würdigung der Gesamtdarstellung der Jahresrech-
-nung. Wir sind der Auffassung, dass die von uns erlangten Prüfungsnachweise eine ausreichende
-und angemessene Grundlage für unser Prüfungsurteil bilden.
+Eine Prüfung beinhaltet die Durchführung von Prüfungshandlungen zur Erlangung von Prüfungsnachweisen für die in der Jahresrechnung enthaltenen Wertansätze und sonstigen Angaben. Die Auswahl der Prüfungshandlungen liegt im pflichtgemässen Ermessen des Prüfers. Dies schliesst eine Beurteilung der Risiken wesentlicher falscher Angaben in der Jahresrechnung als Folge von Verstössen oder Irrtümern ein. Bei der Beurteilung dieser Risiken berücksichtigt der Prüfer das interne Kontrollsystem, soweit es für die Aufstellung der Jahresrechnung von Bedeutung ist, um die den Umständen entsprechenden Prüfungshandlungen festzulegen, nicht aber um ein Prüfungsurteil über die Wirksamkeit des internen Kontrollsystems abzugeben. Die Prüfung umfasst zudem die Beurteilung der Angemessenheit der angewandten Rechnungslegungsmethoden, der Plausibilität der vorgenommenen Schätzungen sowie eine Würdigung der Gesamtdarstellung der Jahresrechnung. Wir sind der Auffassung, dass die von uns erlangten Prüfungsnachweise eine ausreichende und angemessene Grundlage für unser Prüfungsurteil bilden.
 
 *Prüfungsurteil*
-Nach unserer Beurteilung entspricht die Jahresrechnung für das am 31. Dezember 2008 abge-
-schlossene Geschäftsjahr dem schweizerischen Gesetz und den Statuten.
+Nach unserer Beurteilung entspricht die Jahresrechnung für das am 31. Dezember 2008 abgeschlossene Geschäftsjahr dem schweizerischen Gesetz und den Statuten.
 
 30
 

@@ -58,49 +58,31 @@ wedstrijden werd er echter maar twee keer gewonnen (van Telstar en Jong FC Utrec
 
 --- pág. 3 ---
 
-waardoor VVV genoegen moest nemen met een tiende plaats op de ranglijst
-en de play-offs misliep.
+waardoor VVV genoegen moest nemen met een tiende plaats op de ranglijst en de play-offs misliep.
 
-Als gevolg van dat teleurstellende resultaat gingen VVV en trainer Luhukay ondanks de
-recente contractverlenging in goed overleg uit elkaar. Op 30 mei 2022 maakte de club
-bekend dat er afscheid werd genomen van Luhukay. In de zoektocht naar een opvolger
-kwam VVV uit bij Rick Kruys, die op donderdag 16 juni 2022 officieel werd gepresenteerd
-als nieuwe hoofdtrainer.
+Als gevolg van dat teleurstellende resultaat gingen VVV en trainer Luhukay ondanks de recente contractverlenging in goed overleg uit elkaar. Op 30 mei 2022 maakte de club bekend dat er afscheid werd genomen van Luhukay. In de zoektocht naar een opvolger kwam VVV uit bij Rick Kruys, die op donderdag 16 juni 2022 officieel werd gepresenteerd als nieuwe hoofdtrainer.
 
-## Organisatiestructuur
-
+**Organisatiestructuur**  
 Er hebben geen wijzigingen plaats gevonden ten opzichte van het seizoen 2020-2021.
 
-## Omzet
+**Omzet**  
+De netto-omzet in seizoen 2021-2022 bedroeg € 5.422.000 De mediabaten bedroegen € 1.373.000. De inkomsten uit sponsoring bedroegen € 2.208.000 en het resultaat wedstrijdbaten kwam uit op € 511.000. De omzet uit Food & Beverage bedroeg € 352.000.
 
-De netto-omzet in seizoen 2021-2022 bedroeg € 5.422.000 De mediabaten bedroegen
-€ 1.373.000. De inkomsten uit sponsoring bedroegen € 2.208.000 en het resultaat
-wedstrijdbaten kwam uit op € 511.000. De omzet uit Food & Beverage bedroeg
-€ 352.000.
+**Personeelskosten**  
+VVV-Venlo heeft gebruik gemaakt van steunmaatregelen van de overheid waaronder Noodmaatregel Overbrugging Werkgelegenheid (NOW) en Tegemoetkoming Vaste Lasten (TVL). De uitkering voor NOW bedroeg € 645.000,-.
 
-## Personeelskosten
+**Resultaat vergoedingssommen**  
+Het resultaat vergoedingssommen bestaat uit het saldo van de aan- en verkoop van spelers en kan jaarlijks sterk fluctureren. Tegenover de afschrijvingskosten op de vergoedingssommen staan de opbrengsten uit transfers onder aftrek van de boekwaarde van verkochte spelers en het saldo van betaalde en ontvangen opleidingsvergoedingen.
 
-VVV-Venlo heeft gebruik gemaakt van steunmaatregelen van de overheid waaronder
-Noodmaatregel Overbrugging Werkgelegenheid (NOW) en Tegemoetkoming Vaste Lasten
-(TVL). De uitkering voor NOW bedroeg € 645.000,-.
+Het resultaat uit vergoedingssommen bedroeg over het seizoen 2021-2022 € 1.616.000 positief. Dit resultaat komt met name voort uit transfers van Georgios Giakoumakis en Evert Linthorst.
 
-## Resultaat vergoedingssommen
+**Financiele risico’s en risicobeheersing**  
+Door de markten waarop VVV-Venlo zich beweegt en de positie van VVV-Venlo hierin, is er een aantal financiële risico’s te onderkennen. VVV-Venlo heeft interne systemen voor risicobeheersing en controle die een zodanige mate van zekerheid verschaffen dat de risico’s afdoende worden onderkend en beheerst.
 
-Het resultaat vergoedingssommen bestaat uit het saldo van de aan- en verkoop van
-spelers en kan jaarlijks sterk fluctureren. Tegenover de afschrijvingskosten op de
-vergoedingssommen staan de opbrengsten uit transfers onder aftrek van de boekwaarde
-van verkochte spelers en het saldo van betaalde en ontvangen opleidingsvergoedingen.
-
-Het resultaat uit vergoedingssommen bedroeg over het seizoen 2021-2022 € 1.616.000
-positief. Dit resultaat komt met name voort uit transfers van Georgios Giakoumakis en
-Evert Linthorst.
-
-## Financiele risico’s en risicobeheersing
-
-Door de markten waarop VVV-Venlo zich beweegt en de positie van VVV-Venlo hierin, is
-er een aantal financiële risico’s te onderkennen. VVV-Venlo heeft interne systemen voor
-risicobeheersing en controle die een zodanige mate van zekerheid verschaffen dat de
-risico’s afdoende worden onderkend en beheerst.
+VVV-VENLO › Kaldenkerkerweg 182 · 5915 AH Venlo · T +31 77 351 58 06  
+Hoofdsponsor: Seacon Logistics · Stadionnaamgever: Covebo · Shirtsponsors: ACS Cleaning | Personato | vidaXL | BetCity  
+Broeksponsors: EP:Tummers | Youfone - KoelClub: Lindeboom | Masita | Rabobank | Vandeloo | Westerlease | Systemec | Belden | Resifence  
+VVV-VENLO.NL >
 
 --- pág. 4 ---
 
@@ -121,44 +103,52 @@ Algemeen directeur
 
 --- pág. 5 ---
 
-# BALANS PER 30 JUNI 2022
-
-(na winstbestemming)
+**BALANS PER 30 JUNI 2022**  
+(na winstbestemming)  
 (€ x 1.000)
 
-| Activa | 2022 | Passiva | 2022 |
-| --- | --- | --- | --- |
-| Immateriële vaste activa | 57 | Eigen vermogen | 150 |
-| Materiële vaste activa | 6.233 | | |
-| Financiële vaste activa | 222 | | |
-| Totaal vaste activa | 6.512 | | |
-| | | Langlopende schulden | 7.549 |
-| | | Kortlopende schulden | 2.298 |
-| Totaal vlottende activa | 3.485 | | |
-| Totaal activa | 9.997 | | 9.997 |
+| Activa | | | Passiva | |
+| :--- | ---: | ---: | :--- | ---: |
+| Immateriële vaste activa | 57 | | Eigen vermogen | 150 |
+| Materiële vaste activa | 6.233 | | | |
+| Financiële vaste activa | 222 | | | |
+| Totaal vaste activa | | 6.512 | Langlopende schulden | 7.549 |
+| | | | Kortlopende schulden | 2.298 |
+| Totaal vlottende activa | | 3.485 | | |
+| **Totaal activa** | | **9.997** | | **9.997** |
+
+VVV-VENLO › Kaldenkerkerweg 182 · 5915 AH Venlo · T +31 77 351 58 06  
+Hoofdsponsor: Seacon Logistics · Stadionnaamgever: Covebo · Shirtsponsors: ACS Cleaning | Personato | vidaXL | BetCity  
+Broeksponsors: EP:Tummers | Youfone - KoelClub: Lindeboom | Masita | Rabobank | Vandeloo | Westerlease | Systemec | Belden | Resifence  
+VVV-VENLO.NL >
 
 --- pág. 6 ---
 
-# Exploitatierekening over het seizoen 2021-2022
-
+**Exploitatierekening over het seizoen 2021-2022**  
 (€ x 1.000)
 
-| | 2021-2022 |
-| --- | --- |
-| Omzet | 5.422 |
-| Lasten | |
-| Personeelskosten | 3.880 |
-| Verkoopkosten | 843 |
-| Huisvestingskosten | 505 |
-| Wedstrijd-trainingskosten | 655 |
-| Algemene kosten | 305 |
-| Afsch. Materiele vaste activa | 550 |
-| | 6.738 |
-| Bedrijfsresultaat | -1.316 |
-| Rentelasten | -106 |
-| Afschrijving vergoedingssommen | -258 |
-| Resultaat vergoedingssommen | 1.874 |
-| Resultaat vergoedingssommen | 1.616 |
-| Resultaat uit gewone bedrijfsuitoefening voor belastingen | 194 |
-| Vennootschapsbelasting | -29 |
-| Netto resultaat na belastingen | 165 |
+| | | |
+| :--- | ---: | ---: |
+| **Omzet** | | 5.422 |
+| **Lasten** | | |
+| Personeelskosten | 3.880 | |
+| Verkoopkosten | 843 | |
+| Huisvestingskosten | 505 | |
+| Wedstrijd-trainingskosten | 655 | |
+| Algemene kosten | 305 | |
+| Afsch. Materiele vaste activa | 550 | |
+| | | 6.738 |
+| **Bedrijfsresultaat** | | -1.316 |
+| Rentelasten | | -106 |
+| Afschrijving vergoedingssommen | -258 | |
+| Resultaat vergoedingssommen | 1.874 | |
+| **Resultaat vergoedingssommen** | | 1.616 |
+| **Resultaat uit gewone bedrijfsuitoefening voor belastingen** | | **194** |
+| Vennootschapsbelasting | | -29 |
+| **Netto resultaat na belastingen** | | **165** |
+
+VVV-VENLO › Kaldenkerkerweg 182 · 5915 AH Venlo · T +31 77 351 58 06  
+Hoofdsponsor: Seacon Logistics · Stadionnaamgever: Covebo · Shirtsponsors: ACS Cleaning | Personato | vidaXL | BetCity  
+Broeksponsors: EP:Tummers | Youfone - KoelClub: Lindeboom | Masita | Rabobank | Vandeloo | Westerlease | Systemec | Belden | Resifence  
+VVV-VENLO.NL >
+

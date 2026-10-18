@@ -332,64 +332,68 @@ A continuación se presenta el detalle de las cuentas comerciales por cobrar y o
 
 --- pág. 12 ---
 
-NOTA 6
+**NOTA 6**
 
-**INVENTARIOS:** a la fecha el Once Caldas tiene inventario de prendas deportivas y suvenires, cuya medición es el precio de compra más los gastos directamente atribuibles a la adquisición; establecidos en el decreto 3022 sección 13 con excelente rotación. Exceptuando algunos productos del sponsor anterior, que por llegar tarde la mercancía, no logro dársele salida en su totalidad, en la actualidad se hacen promociones, para lograr darle salida.
+**INVENTARIOS**: a la fecha el Once Caldas tiene inventario de prendas deportivas y suvenires, cuya medición es el precio de compra más los gastos directamente atribuibles a la adquisición; establecidos en el decreto 3022 sección 13 con excelente rotación. Exceptuando algunos productos del sponsor anterior, que por llegar tarde la mercancía, no logro dársele salida en su totalidad, en la actualidad se hacen promociones, para lograr darle salida.
 
-|  CUENTA | Diciembre 31 de 2019 | Diciembre 31 de 2.018  |
-| --- | --- | --- |
-|  Mercancías no fabricadas por la empresa | 169.268 | 4.533  |
-|  Menos: deterioro | -15.406 | -5  |
-|  **TOTAL INVENTARIOS** | **153.862** | **4.528**  |
+| CUENTA | Diciembre 31 de 2019 | Diciembre 31 de 2.018 |
+|---|---|---|
+| Mercancías no fabricadas por la empresa | 169.268 | 4.533 |
+| Menos: deterioro | -15.406 | -5 |
+| **TOTAL INVENTARIOS** | 153.862 | 4.528 |
 
-NOTA 7
+**NOTA 7**
 
 **PROPIEDAD PLANTA Y EQUIPO:** Los elementos reconocidos por Once Caldas como partidas de propiedad, planta y equipo corresponde a activos tangibles de la sociedad, que espera usar por más de un periodo, de los cuales espera obtener beneficios económicos en el futuro y que su costo puede medirse de manera confiable. Durante los años terminados a diciembre 31 de 2018 y diciembre de 2.019, el Once Caldas realizó el análisis de indicadores de deterioro y determinó que no existen evidencias objetivas de indicios de deterioro, por tanto, no da lugar a realizar cálculo del importe recuperable para determinar pérdidas por deterioro. En este periodo se le realiza anticipo al grupo de Kenworth, para abonar a la adquisición de la sede deportiva, ubicada en las afueras de Manizales
 
-|  CONCEPTO | Saldo a enero 01 2018 | adquisiciones | traslados y movimientos | Depreciación | Saldo a diciembre 31 de 2018  |
-| --- | --- | --- | --- | --- | --- |
-|  Terrenos | 500.000 | 0 | 0 | 0 | 500.000  |
-|  Máquinaria y equipo | 81.188 | 0 |  | 27.133 | 54.055  |
-|  Equipo de oficina | 15.659 | 3.214 |  | 7.208 | 11.665  |
-|  Equipo de computación y comunicación | 158.356 | 220 |  | 61.523 | 97.053  |
-|  Flota y equipo de transporte | 294.559 | 0 |  | 135.764 | 158.795  |
-|   |  | **CUENTA** |  |  | **0**  |
-|  **TOTAL** | **1.049.762** | **3.434** | **0** | **231.628** | **821.568**  |
-|  CONCEPTO | Saldo a enero 01 2019 | adquisiciones | traslados y movimientos | Depreciación | Saldo a diciembre 31 de 2019  |
-|  Terrenos | 500.000 | 800.000 | 0 | 0 | 1.300.000  |
-|  Máquinaria y equipo | 81.188 | 5.149 |  | 32.153 | 54.184  |
-|  Equipo de oficina | 18.873 | 5.080 |  | 14.103 | 9.849  |
-|  Equipo de computación y comunicación | 158.576 | 803 |  | 90.056 | 69.324  |
-|  Flota y equipo de transporte | 294.559 | 260.000 |  | 199.373 | 355.186  |
-|   |  |  |  |  | **0**  |
-|  **TOTAL** | **1.053.196** | **1.071.032** | **0** | **335.685** | **1.788.543**  |
+| CONCEPTO | Saldo a enero 01 2018 | adquisiciones | traslados y movimientos | Depreciación | Saldo a diciembre 31 de 2018 |
+|---|---|---|---|---|---|
+| Terrenos | 500.000 | 0 | 0 | 0 | 500.000 |
+| Máquinaria y equipo | 81.188 | 0 | | 27.133 | 54.055 |
+| Equipo de oficina | 15.659 | 3.214 | | 7.208 | 11.665 |
+| Equipo de computación y comunicación | 158.356 | 220 | | 61.523 | 97.053 |
+| Flota y equipo de transporte | 294.559 | 0 | | 135.764 | 158.795 |
+| | | CUENTA | | | 0 |
+| ***TOTAL*** | ***1.049.762*** | ***3.434*** | ***0*** | ***231.628*** | ***821.568*** |
+
+| CONCEPTO | Saldo a enero 01 2019 | adquisiciones | traslados y movimientos | Depreciación | Saldo a diciembre 31 de 2019 |
+|---|---|---|---|---|---|
+| Terrenos | 500.000 | 800.000 | 0 | 0 | 1.300.000 |
+| Máquinaria y equipo | 81.188 | 5.149 | | 32.153 | 54.184 |
+| Equipo de oficina | 18.873 | 5.080 | | 14.103 | 9.849 |
+| Equipo de computación y comunicación | 158.576 | 803 | | 90.056 | 69.324 |
+| Flota y equipo de transporte | 294.559 | 260.000 | | 199.373 | 355.186 |
+| | | | | | 0 |
+| ***TOTAL*** | ***1.053.196*** | ***1.071.032*** | ***0*** | ***335.685*** | ***1.788.543*** |
 
 --- pág. 13 ---
 
-## ACTIVOS NO CORRIENTES
+**ACTIVOS NO CORRIENTES**
 
-NOTA 8
+**NOTA 8**
 
-**INTANGIBLES:** A diciembre 31 de 2.019, se adquieren los derechos deportivos de los jugadores: Mender García Torres, David Fernando Lemos, Juan David Rodríguez, Sebastián Felipe Guzmán y Gerardo Amílcar Ortiz ,los cuales serán amortizados en el tiempo del contrato de los jugadores.
+**INTANGIBLES**: A diciembre 31 de 2.019, se adquieren los derechos deportivos de los jugadores: Mender García Torres, David Fernando Lemos, Juan David Rodríguez, Sebastián Felipe Guzmán y Gerardo Amílcar Ortiz ,los cuales serán amortizados en el tiempo del contrato de los jugadores.
 
-|  CONCEPTO | Saldo a enero 01 2018 | adquisiciones | traslados y movimientos | Amortizacion | Saldo a diciembre 31 de 2018  |
-| --- | --- | --- | --- | --- | --- |
-|  Derechos deportivos | 2.215.063 | 200.000 | 1.480.000 | 735.063 | 200.000  |
-|  CONCEPTO | Saldo a enero 01 2019 | adquisiciones | traslados y movimientos | Depreciación | Saldo a diciembre 31 de 2019  |
-|  Derechos deportivos | 935.063 | 1.629.343 | 933.072 | 275.355 | 1.355.979  |
+| CONCEPTO | Saldo a enero 01 2018 | adquisiciones | traslados y movimientos | Amortizacion | Saldo a diciembre 31 de 2018 |
+|---|---|---|---|---|---|
+| Derechos deportivos | 2.215.063 | 200.000 | 1.480.000 | 735.063 | 200.000 |
 
-NOTA 9
+| CONCEPTO | Saldo a enero 01 2019 | adquisiciones | traslados y movimientos | Depreciación | Saldo a diciembre 31 de 2019 |
+|---|---|---|---|---|---|
+| Derechos deportivos | 935.063 | 1.629.343 | 933.072 | 275.355 | 1.355.979 |
 
-**OTROS ACTIVOS:** Se registran valores correspondientes a uniformes que serán destinados para los equipos de fútbol; igualmente un pasaje pendiente de usar, también el préstamo del jugador Kevin Londoño, el cual será hasta junio del año 2,020 y el anticipo en la transferencia definitiva del jugador Johan Carbonero. Registramos el ajuste del impuesto diferido
+**NOTA 9**
 
-|  CUENTA | Diciembre 31 de 2019 | Diciembre 31 de 2.018  |
-| --- | --- | --- |
-|  A&G PLAY SPORT INC | 7.119 | 287.794  |
-|  S Y TURISMO CLAUDIA RAMIREZ | 642 | 642  |
-|  CARBONERO BALANTA JOHAN ESTIVE | 4.825 |   |
-|  TRANSFERENCIA TEMPORAL-KEVIN LONDOÑO | 208.813 |   |
-|  **ACTIVO DIFERIDO NIIF:** Producto del cálculo del impuesto sobre la diferencia en cambio del año 2018 vs 2019 de la Cuenta por cobrar del Club Feyenoord. Adicionalmente del impuesto de los deterioros de cuentas por cobrar y del inventario | 31.810 |   |
-|  **GASTOS PAGADOS POR ANTICIPADO** | **253.209** | **288.436**  |
+**OTROS ACTIVOS**: Se registran valores correspondientes a uniformes que serán destinados para los equipos de fútbol; igualmente un pasaje pendiente de usar, también el préstamo del jugador Kevin Londoño, el cual será hasta junio del año 2,020 y el anticipo en la transferencia definitiva del jugador Johan Carbonero. Registramos el ajuste del impuesto diferido
+
+| CUENTA | Diciembre 31 de 2019 | Diciembre 31 de 2.018 |
+|---|---|---|
+| A&G PLAY SPORT INC | 7.119 | 287.794 |
+| S Y TURISMO CLAUDIA RAMIREZ | 642 | 642 |
+| CARBONERO BALANTA JOHAN ESTIVE | 4.825 | |
+| TRANSFERENCIA TEMPORAL-KEVIN LONDOÑO | 208.813 | |
+| **ACTIVO DIFERIDO NIIF**: Producto del cálculo del impuesto sobre la diferencia en cambio del año 2018 vs 2019 de la Cuenta por cobrar del Club Feyenoord. Adicionalmente del impuesto de los deterioros de cuentas por cobrar y del inventario | 31.810 | |
+| **GASTOS PAGADOS POR ANTICIPADO** | **253.209** | **288.436** |
 
 --- pág. 14 ---
 

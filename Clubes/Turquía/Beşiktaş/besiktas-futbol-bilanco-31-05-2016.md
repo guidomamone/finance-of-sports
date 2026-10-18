@@ -250,13 +250,14 @@ A member firm of Ernst & Young Global Limited
 
 --- pág. 9 ---
 
-# Beşiktaş Futbol Yatırımları Sanayi ve Ticaret A.Ş. ve Bağlı Ortaklıkları
+Beşiktaş Futbol Yatırımları Sanayi ve Ticaret A.Ş. ve Bağlı Ortaklıkları
 
-## 31 Mayıs 2016 tarihinde sona eren yıla ait konsolide özkaynak değişim tablosu
+31 Mayıs 2016 tarihinde sona eren yıla ait
+konsolide özkaynak değişim tablosu
 (Para birimi – Türk Lirası (TL))
 
-| | Ödenmiş sermaye | Paylara ilişkin primler | Çalışanlara sağlanan faydalara ilişkin aktüeryal kayıp/kazançlar | Kardan ayrılmış kısıtlanmış yedekler | Birikmiş zararlar | Net dönem zararı | Ana ortaklığa ait özkaynak | Kontrol gücü olmayan payları | Toplam özkaynak |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | Ödenmiş sermaye | Paylara ilişkin primler | Çalışanlara sağlanan faydalara ilişkin aktüeryal kayıp/kazançlar | Kardan ayrılmış kısıtlanmış yedekler | Birikmiş zararlar | Net dönem zararı | Ana ortaklığa ait özkaynak | Kontrol gücü olmayan paylar | Toplam özkaynak |
+|---|---|---|---|---|---|---|---|---|---|
 | 1 Haziran 2014 bakiyesi – önceden raporlanan | 240.000.000 | 1.097.097 | (382.517) | 894.241 | (461.762.738) | (143.902.222) | (364.056.139) | - | (364.056.139) |
 | Yeniden düzenleme etkisi (Not 2.4) | - | - | - | - | 1.458.640 | 7.065.810 | 8.524.450 | - | 8.524.450 |
 | 1 Haziran 2014 bakiyesi - yeniden düzenlenmiş | 240.000.000 | 1.097.097 | (382.517) | 894.241 | (460.304.098) | (136.836.412) | (355.531.689) | - | (355.531.689) |
@@ -280,15 +281,14 @@ A member firm of Ernst & Young Global Limited
 
 --- pág. 10 ---
 
-# Beşiktaş Futbol Yatırımları Sanayi ve Ticaret A.Ş. ve Bağlı Ortaklıkları
+**Beşiktaş Futbol Yatırımları Sanayi ve Ticaret A.Ş. ve Bağlı Ortaklıkları**
 
-## 31 Mayıs 2016 tarihinde sona eren yıla ait konsolide nakit akış tablosu
-(Para birimi – Türk Lirası (TL))
+**31 Mayıs 2016 tarihinde sona eren yıla ait konsolide nakit akış tablosu (Para birimi – Türk Lirası (TL))**
 
 | | Dipnot referansları | Cari dönem Bağımsız denetimden geçmiş 1 Haziran 2015 - 31 Mayıs 2016 | Geçmiş dönem Bağımsız denetimden geçmiş (Yeniden düzenlenmiş, Not 2.4) 1 Haziran 2014 - 31 Mayıs 2015 |
-| --- | --- | --- | --- |
-| **A. İşletme faaliyetlerden nakit akışları** | | | |
-| Dönem zararı | | (58.663.366) | (131.979.330) |
+|---|---|---|---|
+| **A. İşletme faaliyetlerinden nakit akışları** | | | |
+| **Dönem zararı** | | **(58.663.366)** | **(131.979.330)** |
 | **Dönem zararının mutabakatı ile ilgili düzeltmeler** | | | |
 | Amortisman giderleri ve itfa payları | 10,11 | 33.870.079 | 23.564.155 |
 | Vergi geliri/gideri | | 835.618 | 1.381.631 |
@@ -299,10 +299,10 @@ A member firm of Ernst & Young Global Limited
 | Reeskont gelir / giderleri | | - | (52.281) |
 | Faiz giderleri | 20,22 | 71.426.409 | 36.466.076 |
 | Faiz gelirleri | 21 | (5.075.602) | (1.372.362) |
-| Kredilere ilişkin gerçekleşmemiş kur farkları | | 10.151.117 | 20.630.288 |
+| Kredilere ilişkin gerçekleşmemiş kur farkları | | 10.151.117 | 20.830.288 |
 | Vergi cezaları ile ilgili düzeltmeler | 20 | 9.516.515 | 12.316.571 |
 | Duran varlıkların elden çıkarılmasından kaynaklanan kayıp/kazançlar ile ilgili düzeltmeler | | (61.389.159) | - |
-| **Faaliyetlere yönelik varlık ve yükümlülüklerdeki değişimler öncesi net nakit akımı/(çıkışı)** | | (2.394.891) | (37.464.247) |
+| **Faaliyetlere yönelik varlık ve yükümlülüklerdeki değişimler öncesi net nakit akımı/(çıkışı)** | | **(2.394.891)** | **(37.464.247)** |
 | **İşletme sermayesinde gerçekleşen değişimler** | | | |
 | Ticari alacaklardaki değişim | | (5.511.961) | (7.353.811) |
 | - İlişkili olmayan taraflardan ticari alacaklardaki azalış (artış) | | (5.511.961) | (7.353.811) |
@@ -316,7 +316,7 @@ A member firm of Ernst & Young Global Limited
 | - İlişkili olmayan taraflara faaliyetlerle ilgili diğer borçlardaki artış (azalış) | | 18.074.061 | 38.996.700 |
 | Vergi ödemeleri | | 240.806 | (1.015.423) |
 | Ödenen kıdem | 13 | (584.946) | (384.997) |
-| **Esas faaliyetlerden sağlanan net nakit** | | 29.850.447 | 8.690.125 |
+| **Esas faaliyetlerden sağlanan net nakit** | | **29.850.447** | **8.690.125** |
 | **B. Yatırım faaliyetlerinden kaynaklanan nakit akışları** | | | |
 | Alınan faiz | | 5.075.602 | 1.372.362 |
 | Maddi ve maddi olmayan duran varlık alımları | 10,11 | (56.047.880) | (60.435.334) |
@@ -325,16 +325,16 @@ A member firm of Ernst & Young Global Limited
 | Maddi ve maddi olmayan duran varlık satışlarından nakit girişleri | | 60.083.840 | 77.291 |
 | - Maddi duran varlıkların satışından kaynaklanan nakit girişleri | | 98.748 | - |
 | - Maddi olmayan duran varlıkların satışından kaynaklanan nakit girişleri | | 59.985.092 | 77.291 |
-| **Yatırım faaliyetlerinden sağlanan/(kullanılan) nakit** | | 9.111.562 | (58.985.681) |
+| **Yatırım faaliyetlerinden sağlanan/(kullanılan) nakit** | | **9.111.562** | **(58.985.661)** |
 | **C. Finansman faaliyetlerinden kaynaklanan nakit akışları** | | | |
 | İlişkili taraflardan alınan diğer borçlardaki azalış | | (157.787.824) | (12.237.792) |
 | Ödenen faiz | | (41.837.114) | (19.957.995) |
 | Borçlanmadan kaynaklanan nakit girişleri | | 219.182.001 | 111.516.713 |
 | Borç ödemelerine ilişkin nakit çıkışları | | (56.828.433) | (32.350.503) |
-| **Finansal faaliyetlerden elde edilen/(kullanılan) nakit** | | (37.271.370) | 46.970.423 |
-| **Nakit ve nakit benzerlerindeki net artış/(azalış) (A+B+C)** | | 1.690.639 | (3.325.133) |
+| **Finansal faaliyetlerden elde edilen/(kullanılan) nakit** | | **(37.271.370)** | **46.970.423** |
+| **Nakit ve nakit benzerlerindeki net artış/(azalış) (A+B+C)** | | **1.590.639** | **(3.325.133)** |
 | **D. Dönem başı nakit ve nakit benzerleri** | 3 | 764.889 | 4.090.022 |
-| **Dönem sonu nakit ve nakit benzeri değerler** | 3 | 2.455.528 | 764.889 |
+| **Dönem sonu nakit ve nakit benzeri değerler** | 3 | **2.455.528** | **764.889** |
 
 İlişikte sunulan muhasebe politikaları ve dipnotlar bu konsolide finansal tabloların tamamlayıcı parçalarıdır.
 
@@ -1467,10 +1467,11 @@ Adem Çalı tarafından İstanbul 14. İş Mahkemesi'nin 2014/259 E. sayılı do
 
 Beşiktaş Futbol Yatırımları Sanayi ve Ticaret A.Ş. ve Bağlı Ortaklıkları
 
-## 31 Mayıs 2016 tarihi itibariyle konsolide finansal tablolara ilişkin dipnotlar (devamı)
+31 Mayıs 2016 tarihi itibariyle
+konsolide finansal tablolara ilişkin dipnotlar (devamı)
 (Para birimi – Aksi belirtilmedikçe Türk Lirası (TL))
 
-### 13. Kısa ve uzun vadeli karşılıklar (devamı)
+**13. Kısa ve uzun vadeli karşılıklar (devamı)**
 
 İstanbul 27. İcra Müdürlüğü'nün 2015/17689 E. sayılı dosyasıyla Sami Dinç tarafından, Şirket aleyhine takip tarihi itibariyle 35.631 Avro tutarlı kambiyo senetlerine özgü haciz yolu ile icra takibi başlatılmıştır. Takip kesinleşmiştir. Söz konusu borca ilişkin karşılık finansal tablolarda yer almaktadır.
 
@@ -1593,24 +1594,24 @@ Beşiktaş Futbol Yatırımları Sanayi ve Ticaret A.Ş. ve Bağlı Ortaklıklar
 
 --- pág. 44 ---
 
-Beşiktaş Futbol Yatırımları Sanayi ve Ticaret A.Ş. ve Bağlı Ortaklıkları
+**Beşiktaş Futbol Yatırımları Sanayi ve Ticaret A.Ş. ve Bağlı Ortaklıkları**
 
-## 31 Mayıs 2016 tarihi itibariyle konsolide finansal tablolara ilişkin dipnotlar (devamı)
-(Para birimi – Aksi belirtilmedikçe Türk Lirası (TL))
+**31 Mayıs 2016 tarihi itibariyle konsolide finansal tablolara ilişkin dipnotlar (devamı)**
+**(Para birimi – Aksi belirtilmedikçe Türk Lirası (TL))**
 
-### 13. Kısa ve uzun vadeli karşılıklar (devamı)
+**13. Kısa ve uzun vadeli karşılıklar (devamı)**
 
-İstanbul 14. İş Mahkemesi'nin 2012/72 E. sayılı dosyasıyla Erkan Balkan tarafından Beşiktaş Sportif aleyhine 7.500 TL tutarlı alacak davası açılmıştır. Yapılan yargılama sonunda davanın kısmen kabulüne karar verilmiş olup, davacı tarafından karar İstanbul 26. İcra Müdürlüğü'nün 2014/29802 E. sayılı dosyasından takibe konulmuştur. Dosya Yargıtay aşamasındadır. Beşiktaş Sportif, davada haklı olduğunu düşündüğünden finansal tablolarında herhangi bir karşılık ayırmayı gerekli görmemiştir.
+İstanbul 14. İş Mahkemesi'nin 2012/72 E. sayılı dosyasıyla Erkan Balkan tarafından Beşiktaş Sportif aleyhine 7.500 TL tutarlı alacak davası açılmıştır. Yapılan yargılama sonunda davanın kısmen kabulüne karar verilmiş olup, karar İstanbul 26. İcra Müdürlüğü'nün 2014/29802 E. sayılı dosyasından takibe konulmuştur. Dosya Yargıtay aşamasındadır. Beşiktaş Sportif, davada haklı olduğunu düşündüğünden finansal tablolarında herhangi bir karşılık ayırmayı gerekli görmemiştir.
 
-İstanbul Anadolu 23. İş Mahkemesi'nin 2014/535 E. sayılı dosyasıyla Hakan Karademir tarafından Beşiktaş Sportif aleyhine fazlaya ilişkin haklar saklı kalmak kaydı ile 8.000 TL tutarlı alacak davası açılmıştır. Yargılama sonunda davanın yetki yönünden reddine karar verilmiştir. Dosya yetkili İstanbul 16. İş Mah. 20015/357 E. sayılı dosyasından yargılama devam etmektedir. Beşiktaş Sportif, davada haklı olduğunu düşündüğünden finansal tablolarında herhangi bir karşılık ayırmayı gerekli görmemiştir.
+İstanbul Anadolu 23. İş Mahkemesinin 2014/535 E. sayılı dosyasıyla Hakan Karademir tarafından Beşiktaş Sportif aleyhine fazlaya ilişkin haklar saklı kalmak kaydı ile 8.000 TL tutarlı alacak davası açılmıştır. Yargılama sonunda davanın yetki yönünden reddine karar verilmiştir. Dosya yetkili İstanbul 16. İş Mah. 20015/357 E. sayılı dosyasından yargılama devam etmektedir. Beşiktaş Sportif, davada haklı olduğunu düşündüğünden finansal tablolarında herhangi bir karşılık ayırmayı gerekli görmemiştir.
 
 İstanbul 13. Asliye Ticaret Mahkemesi'nin 2014/1228 E. sayılı dosyası üzerinden davacı Okyar Tekstil Turizm Otomotiv ve Deri San. Ve Tic. Ltd. Şti tarafından Beşiktaş Sportif aleyhine fazlaya ilişkin hakları saklı kalmak kaydıyla 1.000 TL Maddi Tazminat ve 1.000 TL Manevi Tazminatın tahsili talebiyle dava açılmış olup, yürütülen yargılama neticesinde davanın reddine karar verilmiştir. Yerel Mahkeme kararı davacı tarafça temyiz edilmiş olup, dosya Yargıtay temyiz incelemesi aşamasındadır. Beşiktaş Sportif, davada haklı olduğunu düşündüğünden finansal tablolarında herhangi bir karşılık ayırmayı gerekli görmemiştir.
 
-31 Mayıs 2016 tarihinden önce Beşiktaş Sportif lehine başlatılan icra takipleri ve davalar
+**31 Mayıs 2016 tarihinden önce Beşiktaş Sportif lehine başlatılan icra takipleri ve davalar**
 
-İstanbul 8. İcra Müdürlüğü'nün 2012/7413 E. sayılı dosyasıyla, ASM Sivil Havacılık Ürünleri - Mehmet Vahit Aykut aleyhine 3.314 TL tutarlı icra takibi başlatılmıştır. İcra takibi devam etmektedir. Finansal tablolardaki alacaklar için karşılık ayrılmıştır.
+İstanbul 8. İcra Müdürlüğü'nün 2012/7413 E. sayılı dosyasıyla, ASM Sivil Havacılık Ürünleri – Mehmet Vahit Aykut aleyhine 3.314 TL tutarlı icra takibi başlatılmıştır. İcra takibi devam etmektedir. Finansal tablolardaki alacaklar için karşılık ayrılmıştır.
 
-İstanbul 11. İcra Müdürlüğü'nün 2011/8849 E. sayılı dosyasıyla, Burak Mob. Elekt. Konf. San. ve Tic. Ltd. Şti. aleyhine 12.248 TL tutarlı icra takibi başlatılmıştır. İcra takibi devam etmektedir. Finansal tablolardaki alacaklar için karşılık ayrılmıştır.
+İstanbul 11. İcra Müdürlüğü'nün 2011/8849 E. sayılı dosyasıyla, Burak Mob. Elekt. Konf. San. ve Tic. Ltd. Şti. aleyhine 12.248 TL tutarlı icra takibi başlatılmıştır. İcra takibi devam etmektedir Finansal tablolardaki alacaklar için karşılık ayrılmıştır.
 
 İstanbul 11. İcra Müdürlüğü'nün 2008/7428 E. (Yeni dosya no: 2010/13193 E.) sayılı dosyasıyla Doğuş Yedek Parça San. ve Tic. A.Ş. aleyhine lisansiye sözleşmesinden kaynaklanan alacak için 9.478 TL tutarında ilamsız icra takibi başlatılmıştır. Beşiktaş Sportif finansal tablolarında herhangi bir alacak bulunmamaktadır.
 
@@ -1628,26 +1629,25 @@ Beşiktaş Futbol Yatırımları Sanayi ve Ticaret A.Ş. ve Bağlı Ortaklıklar
 
 --- pág. 45 ---
 
-Beşiktaş Futbol Yatırımları Sanayi ve Ticaret A.Ş. ve Bağlı Ortaklıkları
+**Beşiktaş Futbol Yatırımları Sanayi ve Ticaret A.Ş. ve Bağlı Ortaklıkları**
 
-## 31 Mayıs 2016 tarihi itibariyle konsolide finansal tablolara ilişkin dipnotlar (devamı)
-(Para birimi – Aksi belirtilmedikçe Türk Lirası (TL))
+**31 Mayıs 2016 tarihi itibariyle konsolide finansal tablolara ilişkin dipnotlar (devamı)**
+**(Para birimi – Aksi belirtilmedikçe Türk Lirası (TL))**
 
-### 13. Kısa ve uzun vadeli karşılıklar (devamı)
+**13. Kısa ve uzun vadeli karşılıklar (devamı)**
 
-İstanbul 12. İcra Müdürlüğü'nün 2010/12977 E. sayılı (Yeni dosya no:2014/6266 E.) dosyasıyla, Bayşen Kont. Hediyelik Eşya ve Dayanıklı Tüketim Mad. San. Tic. Ltd. Şti. aleyhine 194.584 TL tutarlı icra takibi başlatılmıştır. Beşiktaş Sportif finansal tablolarında herhangi bir alacak bulunmamaktadır.
-
+İstanbul 12. İcra Müdürlüğü'nün 2010/12977 E. sayılı (Yeni dosya no:2014/6266 E.) dosyasıyla, Bayşen Konf. Hediyelik Eşya ve Dayanıklı Tüketim Mad. San. ve Tic. Ltd. Şti. aleyhine 194.584 TL tutarlı icra takibi başlatılmıştır. Beşiktaş Sportif finansal tablolarında herhangi bir alacak bulunmamaktadır.
 İstanbul 12. İcra Müdürlüğü'nün 2010/18453 E. sayılı dosyasıyla, Binimeks Dış Ticaret Ltd. Şti. aleyhine 2.720 TL tutarlı icra takibi başlatılmıştır. Beşiktaş Sportif finansal tablolarında herhangi bir alacak bulunmamaktadır.
 
 İstanbul 11. Asliye Ticaret Mahkemesi'nin 2015/1258 E. sayılı dosyası ile Murat Güneş ve Ortakları tarafından bayilik sözleşmesine istinaden Beşiktaş Sportif'e verilen 46.350 TL tutarındaki çekin kaybolması nedeniyle kaybolan çekin iptaline karar verilmesi talebiyle dava açılmıştır. Yapılan yargılama neticesinde 46.350 TL tutarındaki çekin iptaline karar verilmiştir. Beşiktaş Sportif finansal tablolarında herhangi bir alacak bulunmamaktadır.
 
-31 Mayıs 2016 tarihinden sonra Beşiktaş Sportif A.Ş. aleyhine başlatılan icra takipleri:
+**31 Mayıs 2016 tarihinden sonra Beşiktaş Sportif A.Ş. aleyhine başlatılan icra takipleri:**
 
 Herhangi bir icra takibi bulunmamaktadır.
 
-3) Beşiktaş Televizyon Yayıncılık A.Ş. ile ilgili davalar
+**3) Beşiktaş Televizyon Yayıncılık A.Ş. ile ilgili davalar**
 
-31 Mayıs 2016 tarihinden önce açılmış ve devam etmekte olan uyuşmazlıklar:
+**31 Mayıs 2016 tarihinden önce açılmış ve devam etmekte olan uyuşmazlıklar:**
 
 İstanbul 18. İş Mahkemesinde 2012/681 E. sayılı dosyasıyla Cihangir Günönü fazlaya ilişkin hakları saklı kalmak üzere 17.650 TL tutarlı ücret, ulusal bayram, genel tatil, hafta tatili, yıllık ücretli izin, fazla mesai ve kıdem tazminatının tahsili talepli dava açmıştır. Yapılan yargılama sonucunda davanın kısmen kabulüne karar verilmiş olup, verilen karar Beşiktaş TV tarafından temyiz edilmiştir. Yargıtay temyiz incelemesi devam etmektedir. Söz konusu tutara ilişkin finansal tablolarda karşılık ayrılmıştır.
 
@@ -2513,48 +2513,52 @@ Grup, yabancı para cinsinden yapılan işlemleri ve bakiyeleri TL'ye çevirirke
 
 --- pág. 68 ---
 
-Beşiktaş Futbol Yatırımları Sanayi ve Ticaret A.Ş. ve Bağlı Ortaklıkları
+**Beşiktaş Futbol Yatırımları Sanayi ve Ticaret A.Ş. ve Bağlı Ortaklıkları**
 
-## 31 Mayıs 2016 tarihi itibariyle konsolide finansal tablolara ilişkin dipnotlar (devamı)
-(Para birimi – Aksi belirtilmedikçe Türk Lirası (TL))
+**31 Mayıs 2016 tarihi itibariyle konsolide finansal tablolara ilişkin dipnotlar (devamı)**
+**(Para birimi – Aksi belirtilmedikçe Türk Lirası (TL))**
 
-### 26. Finansal araçlardan kaynaklanan risklerin niteliği ve düzeyi (devamı)
+**26. Finansal araçlardan kaynaklanan risklerin niteliği ve düzeyi (devamı)**
 
-Döviz Kuru Duyarlılık Analizi Tablosu
+**Döviz Kuru Duyarlılık Analizi Tablosu**
 
-| 31 Mayıs 2016 | Kar/Zarar Yabancı paranın değer kazanması | Kar/Zarar Yabancı paranın değer kaybetmesi | Özkaynaklar Yabancı paranın değer kazanması | Özkaynaklar Yabancı paranın değer kaybetmesi |
-| --- | --- | --- | --- | --- |
+**31 Mayıs 2016**
+
+| | Kar/Zarar: Yabancı paranın değer kazanması | Kar/Zarar: Yabancı paranın değer kaybetmesi | Özkaynaklar: Yabancı paranın değer kazanması | Özkaynaklar: Yabancı paranın değer kaybetmesi |
+|---|---|---|---|---|
 | **ABD Doları kurunun % 10 değişmesi halinde:** | | | | |
 | 1- ABD Doları net varlık/yükümlülüğü | (8.739.308) | 8.739.308 | (8.739.308) | 8.739.308 |
 | 2- ABD Doları riskinden korunan kısım (-) | - | - | - | - |
-| 3- ABD Doları Net Etki (1+2) | (8.739.308) | 8.739.308 | (8.739.308) | 8.739.308 |
+| **3- ABD Doları Net Etki (1+2)** | **(8.739.308)** | **8.739.308** | **(8.739.308)** | **8.739.308** |
 | **Avro kurunun % 10 değişmesi halinde:** | | | | |
 | 4- Avro net varlık/yükümlülüğü | (11.039.761) | 11.039.761 | (11.039.761) | 11.039.761 |
 | 5- Avro riskinden korunan kısım (-) | - | - | - | - |
-| 6- Avro Net Etki (4+5) | (11.039.761) | 11.039.761 | (11.039.761) | 11.039.761 |
+| **6- Avro Net Etki (4+5)** | **(11.039.761)** | **11.039.761** | **(11.039.761)** | **11.039.761** |
 | **Diğer döviz kurlarının ortalama % 10 değişmesi halinde:** | | | | |
 | 7- Diğer döviz net varlık/yükümlülüğü | - | - | - | - |
 | 8- Diğer döviz kuru riskinden korunan kısım (-) | - | - | - | - |
-| 9- Diğer Döviz Varlıkları Net Etki (7+8) | - | - | - | - |
-| **Toplam (3+6+9)** | (19.779.069) | 19.779.069 | (19.779.069) | 19.779.069 |
+| **9- Diğer Döviz Varl��kları Net Etki (7+8)** | **-** | **-** | **-** | **-** |
+| **Toplam (3+6+9)** | **(19.779.069)** | **19.779.069** | **(19.779.069)** | **19.779.069** |
 
-Döviz Kuru Duyarlılık Analizi Tablosu
+**Döviz Kuru Duyarlılık Analizi Tablosu**
 
-| 31 Mayıs 2015 | Kar/Zarar Yabancı paranın değer kazanması | Kar/Zarar Yabancı paranın değer kaybetmesi | Özkaynaklar Yabancı paranın değer kazanması | Özkaynaklar Yabancı paranın değer kaybetmesi |
-| --- | --- | --- | --- | --- |
+**31 Mayıs 2015**
+
+| | Kar/Zarar: Yabancı paranın değer kazanması | Kar/Zarar: Yabancı paranın değer kaybetmesi | Özkaynaklar: Yabancı paranın değer kazanması | Özkaynaklar: Yabancı paranın değer kaybetmesi |
+|---|---|---|---|---|
 | **ABD Doları kurunun % 10 değişmesi halinde:** | | | | |
 | 1- ABD Doları net varlık/yükümlülüğü | (18.867.986) | 18.867.986 | (18.867.986) | 18.867.986 |
 | 2- ABD Doları riskinden korunan kısım (-) | - | - | - | - |
-| 3- ABD Doları Net Etki (1+2) | (18.867.986) | 18.867.986 | (18.867.986) | 18.867.986 |
+| **3- ABD Doları Net Etki (1+2)** | **(18.867.986)** | **18.867.986** | **(18.867.986)** | **18.867.986** |
 | **Avro kurunun % 10 değişmesi halinde:** | | | | |
 | 4- Avro net varlık/yükümlülüğü | (6.574.066) | 6.574.066 | (6.574.066) | 6.574.066 |
 | 5- Avro riskinden korunan kısım (-) | - | - | - | - |
-| 6- Avro Net Etki (4+5) | (6.574.066) | 6.574.066 | (6.574.066) | 6.574.066 |
+| **6- Avro Net Etki (4+5)** | **(6.574.066)** | **6.574.066** | **(6.574.066)** | **6.574.066** |
 | **Diğer döviz kurlarının ortalama % 10 değişmesi halinde:** | | | | |
 | 7- Diğer döviz net varlık/yükümlülüğü | - | - | - | - |
 | 8- Diğer döviz kuru riskinden korunan kısım (-) | - | - | - | - |
-| 9- Diğer Döviz Varlıkları Net Etki (7+8) | - | - | - | - |
-| **Toplam (3+6+9)** | (25.442.052) | 25.442.052 | (25.442.052) | 25.442.052 |
+| **9- Diğer Döviz Varlıkları Net Etki (7+8)** | **-** | **-** | **-** | **-** |
+| **Toplam (3+6+9)** | **(25.442.052)** | **25.442.052** | **(25.442.052)** | **25.442.052** |
 
 (65)
 

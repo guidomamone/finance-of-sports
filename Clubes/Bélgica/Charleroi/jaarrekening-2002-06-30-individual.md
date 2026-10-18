@@ -8,110 +8,67 @@
 
 --- pág. 1 ---
 
-|  40 | 14 | 05 | 03 |  | 32 | 9 | EUR  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-|  NAT. | Date du dépôt |   |   | N° | P. | U. | D.  |
+| 40 | 14/05/03 | | 32 | 9 | EUR |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| NAT. | Date du dépôt | N° | P. | U. | D. |
 
-03138 00299
+**03138 00299**
 
-C 1.
+**C 1.**
 
 # COMPTES ANNUELS EN MILLIERS D'EUROS
 
-RAISON OU DENOMINATION SOCIALE : SPORTING DU PAYS DE CHARLEROI SA
+RAISON OU DENOMINATION SOCIALE : _SPORTING DU PAYS DE CHARLEROI SA_
 
-Forme juridique : Société anonyme
+Forme juridique : _Société anonyme_
+Adresse : _Allée du Cloître_ N° : _7_ Bte :
+Code postal : _1000_ Commune : _Bruxelles_
+Registre : RC Greffe de : _BRUXELLES_ N° : _643951_
+Numéro de TVA ou numéro national : **472.519.068**
 
-Adresse : Allée du Cloître
+DATE 27 / 03 / 2001 du dépôt de l'acte constitutif OU du document le plus récent mentionnant la date de publication des actes constitutif et modificatif(s) des statuts.
 
-N° : 7
+COMPTES ANNUELS approuvés par l'assemblée générale du **03 / 12 / 2002**
 
-Bte :
+et relatifs à l'exercice couvrant la période du **01 / 07 / 2001** au **30 / 06 / 2002**
+Exercice précédent du **31 / 07 / 2000** au **30 / 06 / 2001**
 
-Code postal : 1000
-
-Commune : Bruxelles
-
-Registre : RC
-
-Greffe de : BRUXELLES
-
-N° : 643951
-
-Numéro de TVA ou numéro national
-
-472.519.068
-
-DATE 27 / 03 / 2001
-
-du dépôt de l'acte constitutif OU du document le plus récent mentionnant la date de publication
-
-des actes constitutif et modificatif(s) des statuts.
-
-COMPTES ANNUELS approuvés par l'assemblée générale du
-
-03 / 12 / 2002
-
-et relatifs à l'exercice couvrant la période du
-
-01 / 07 / 2001
-
-au
-
-30 / 06 / 2002
-
-Exercice précédent du
-
-31 / 07 / 2000
-
-au
-
-30 / 06 / 2001
-
-Les montants relatifs à l'exercice précédent sont identiques à ceux publiés antérieurement : oui / non *
+Les montants relatifs à l'exercice précédent sont identiques à ceux publiés antérieurement : ~~oui~~ / non *
 
 LISTE COMPLETE avec nom, prénoms, profession, domicile (adresse, numéro, code postal et commune) et fonction au sein de l'entreprise des ADMINISTRATEURS, GERANTS ET COMMISSAIRES
 
-BAYAT Abbasgholi,
+_BAYAT Abbasgholi_
+_Avenue Franklin Roosevelt 47A, 1050 Bruxelles 5, BELGIQUE_
+_Président du conseil d'administration_
 
-Avenue Franklin Roosevelt 47A, 1050 Bruxelles 5, BELGIQUE
+_SCIFO Vincenzo_
+_Drève du Bois de Mai 18, 1428 Lillois, BELGIQUE_
+_Vice-président du conseil d'administration Fin de mandat : 19/06/2002_
 
-Président du conseil d'administration
-
-SCIFO Vincenzo,
-
-Drève du Bois de Mai 18, 1428 Lillois, BELGIQUE
-
-Vice-président du conseil d'administration Fin de mandat : 19/06/2002
-
-BAYAT Gholamreza,
-
-Avenue de l'Hippodrome 20, 1050 Bruxelles 5, BELGIQUE
-
-Administrateur
+_BAYAT Gholamreza_
+_Avenue de l'Hippodrome 20, 1050 Bruxelles 5, BELGIQUE_
+_Administrateur_
 
 (éventuellement suite page C 1bis.)
 
-Sont joints aux présents comptes annuels : - le rapport des commissaires *
-
+Sont joints aux présents comptes annuels :
+- le rapport des commissaires *
 - le rapport de gestion *
 
-Nombre total de pages déposées : 22 Numéros des pages du document normalisé non déposées parce que sans objet : 10, 11, 18, 19, 24
+Nombre total de pages déposées : _22_ Numéros des pages du document normalisé non déposées parce que sans objet : _10, 11, 18, 19, 24_
 
-Signature
-(nom et qualité)
-* Biffer ce qui ne convient pas.
-
-Signature
-(nom et qualité)
-PLENBELE
-ADMINISTRATEUR
-
+Signature (nom et qualité)
+[Signature]
 A BAYAT
-ADMINISTRATEUR - BELGIQUE
+ADMINISTRATEUR DELEGUE
 
-PLENBELE
+Signature (nom et qualité)
+[Signature]
+P LENGELE
 ADMINISTRATEUR
+
+* Biffer ce qui ne convient pas.
+OCR2048
 
 --- pág. 2 ---
 
@@ -1821,7 +1778,7 @@ Le profit exceptionnel net de € 1,6 millions correspond principalement à la p
 
 --- pág. 28 ---
 
-47 2519058
+47 25 1[ilegible]8 (tampon manuscrito)
 
 Le total bilantaire de la société s'établit à € 9,3 millions au 30 juin 2002 par rapport à € 8,2 millions au 30 juin 2001 soit une augmentation de € 1,1 millions. Les principales fluctuations concernent les postes suivants :
 
@@ -1833,7 +1790,7 @@ Le total bilantaire de la société s'établit à € 9,3 millions au 30 juin 20
 - En ce qui concerne les dettes fiscales, salariales et sociales, il faut noter que des plans d'apurement sont en cours de négociation avec les autorités fiscales et sociales.
 - Les comptes de régularisation du passif ont augmenté de € 0,3 million suite notamment à une augmentation des produits à reporter (voir créances à un an au plus).
 
-# 2. Affection du résultat
+**2. Affection du résultat**
 
 La perte de l'exercice soit le solde débiteur à affecter s'élève à € 3.009.266.
 

@@ -1,27 +1,20 @@
 --- pág. 1 ---
 
-![img-0.jpeg](img-0.jpeg)
+LLANEROS FC  
+**LLANEROS**  
+FÚTBOL CLUB  
 
-**LLANEROS**
-FÚTBOL CLUB
+# ESTADO DE NOTAS, REVELACIONES Y POLÍTICAS CONTABLES EXPLICATIVAS A LOS ESTADOS FINANCIEROS 2025-2024
 
-# **ESTADO DE NOTAS, REVELACIONES Y POLÍTICAS CONTABLES EXPLICATIVAS A
-LOS ESTADOS FINANCIEROS 2025-2024**
-
-![img-1.jpeg](img-1.jpeg)
-
-**CLUB LLANEROS S.A.
-VILLAVICENCIO, DICIEMBRE 2025**
+**CLUB LLANEROS S.A.**  
+**VILLAVICENCIO, DICIEMBRE 2025**
 
 **#FeEnElDestino**
 
-**Sede Administrativa:** C. C. Unicentro Local 350
-**Sede Deportiva:** Km. 16 Vía Puerto López- Finca San Rafael
-**Contacto:** 350 427 0635
-
-![img-2.jpeg](img-2.jpeg)
-
-00000 @clublanerosfc
+Sede Administrativa: C. C. Unicentro Local 350  
+Sede Deportiva: Km. 16 Vía Puerto López- Finca San Rafael  
+Contacto: 350 427 0635  
+SOMOS EL EQUIPO DE LA MEDIA COLOMBIA
 
 --- pág. 2 ---
 
@@ -98,105 +91,84 @@ El ingreso de actividades ordinarias se mide al valor razonable de la contrapres
 
 --- pág. 3 ---
 
-![img-5.jpeg](img-5.jpeg)
+LLANEROS FC  
+**LLANEROS**  
+FÚTBOL CLUB  
 
-**LLANEROS**
-FÚTBOL CLUB
-
-**Estado de Revelaciones y Políticas Contables**
-**Explicativas a los Estados Financieros 2025 -2024**
+# Estado de Revelaciones y Políticas Contables Explicativas a los Estados Financieros 2025 -2024
 
 Los ingresos por intereses se reconocen usando el método de tasa de interés efectiva a valor de mercado según la naturaleza de la operación.
 
-**Mantenimiento.**
+### Mantenimiento.
+Los costos incurridos en el mantenimiento de los bienes muebles e instalaciones de terceros, serán capitalizados y depreciados hasta la próxima manutención o término del contrato del arrendamiento operativo. La tasa de depreciación es determinada sobre bases técnicas, de acuerdo a su utilización expresada en base a vidas útiles. Tanto los mantenimientos no programados de los vehículos, como las mantenciones menores, son registrados con cargo a resultado en el ejercicio y periodo en que son incurridas.
 
-Los costos incurridos en el mantenimiento de los bienes muebles e instalaciones de terceros, serán capitalizados y depreciados hasta la próxima manutención o término del contrato del arrendamiento operativo. La tasa de depreciación es determinada sobre bases técnicas, de acuerdo a su utilización expresada en base a vidas útiles. Tanto los mantenimientos no programados de los vehículos, como las mantenciones menores, son registrados con cargo a resultado en el ejercicio y período en que son incurridas.
+### Costos por préstamos
+Todos los costos por préstamos se reconocen en el resultado del periodo en el que se incurren.
 
-**Costos por préstamos**
-
-Todos los costos por préstamos se reconocen en el resultado del período en el que se incurren.
-
-**Pérdidas por deterioro de valor de los activos no financieros**
-
+### Pérdidas por deterioro de valor de los activos no financieros
 Se reconoce una pérdida por deterioro por el exceso del importe en libros del activo sobre su importe recuperable. El importe recuperable es el valor justo de un activo menos los costos para la venta o el valor de uso, el mayor de los dos.
 
-**Activos financieros.**
+### Activos financieros.
+CLUB LLANEROS S.A clasifica sus activos financieros en las siguientes categorías: activos financieros a valor razonable con cambios en resultados, préstamos y cuentas a cobrar y activos financieros mantenidos hasta su vencimiento. La clasificación depende del propósito con el que se adquirieron los activos financieros. La administración determina la clasificación de sus activos financieros en el momento de su reconocimiento inicial, lo cual ocurre en la fecha de la transacción.
 
-**CLUB LLANEROS S.A** clasifica sus activos financieros en las siguientes categorías: activos financieros a valor razonable con cambios en resultados, préstamos y cuentas a cobrar y activos financieros mantenidos hasta su vencimiento. La clasificación depende del propósito con el que se adquirieron los activos financieros. La administración determina la clasificación de sus activos financieros en el momento de su reconocimiento inicial, lo cual ocurre en la fecha de la transacción.
+(a) **Activos financieros a valor razonable con cambios en resultados.** Los activos financieros a valor razonable con cambios en resultados son activos financieros mantenidos para negociar y aquellos que en su clasificación inicial han sido designados como a valor razonable con cambios en resultado. Un activo financiero se clasifica en esta categoría si se adquiere, principalmente, con el propósito de venderse en el corto plazo o cuando estos activos se gestionen o evalúen según el criterio de valor razonable. Los derivados también se clasifican como adquiridos para su negociación a menos que sean designados como cobertura. Los activos de esta categoría se clasifican como efectivo y equivalentes al efectivo; los mantenidos para negociar, y como Otros activos financieros; los designados al momento inicial.
 
-- (a) Activos financieros a valor razonable con cambios en resultados. Los activos financieros a valor razonable con cambios en resultados son activos financieros mantenidos para negociar y aquellos que en su clasificación inicial han sido designados como a valor razonable con cambios en resultado. Un activo financiero se clasifica en esta categoría si se adquiere, principalmente, con el propósito de venderse en el corto plazo o cuando estos activos se gestionen o evalúen según el criterio de valor razonable. Los derivados también se clasifican como adquiridos para su negociación a menos que sean designados como cobertura. Los activos de esta categoría se clasifican como efectivo y equivalentes al efectivo; los mantenidos para negociar, y como Otros activos financieros; los designados al momento inicial.
-- (b) Cuentas Comerciales por cobrar y Préstamos. Las cuentas comerciales por Cobrar y los préstamos son activos financieros no derivados con pagos fijos o determinables que no cotizan en un mercado activo. Se incluyen en activos corrientes, excepto aquellos
+(b) **Cuentas Comerciales por cobrar y Préstamos.** Las cuentas comerciales por Cobrar y los prestamos son activos financieros no derivados con pagos fijos o determinables que no cotizan en un mercado activo. Se incluyen en activos corrientes, excepto aquellos con vencimiento superior a 12 meses desde la fecha del estado de situación financiera consolidado, que se clasifican como activos no corrientes. Los préstamos y cuentas a cobrar se incluyen en Cuentas comerciales y otras cuentas por cobrar en el estado de situación financiera.
 
-con vencimiento superior a 12 meses desde la fecha del estado de situación financiera consolidado, que se clasifican como activos no corrientes. Los préstamos y cuentas a cobrar se incluyen en Cuentas comerciales y otras cuentas por cobrar en el estado de situación financiera.
-
-- (c) Activos financieros mantenidos hasta su vencimiento. Los activos financieros mantenidos hasta su vencimiento son activos financieros no derivados con pagos fijos o determinables y vencimiento fijo que la administración de la Sociedad tiene la intención cierta y la capacidad de mantener hasta su vencimiento. Si la Sociedad vendiese un importe que no fuese insignificante de los activos financieros mantenidos hasta su vencimiento, la categoría completa se reclasificaría como disponible para la venta. Estos activos financieros mantenidos hasta su vencimiento se incluyen en activos no corrientes, excepto aquellos con vencimiento igual o inferior a 12 meses a partir de la fecha del estado de situación financiera, que se clasifican como Otros activos financieros corrientes.
+(c) **Activos financieros mantenidos hasta su vencimiento.** Los activos financieros mantenidos hasta su vencimiento son activos financieros no derivados con pagos fijos o determinables y vencimiento fijo que la administración de la Sociedad tiene la intención cierta y la capacidad de mantener hasta su vencimiento. Si la Sociedad vendiese un importe que no fuese insignificante de los activos financieros mantenidos hasta su vencimiento, la categoría completa se reclasificaría como disponible para la venta. Estos activos financieros mantenidos hasta su vencimiento se incluyen en activos no corrientes, excepto aquellos con vencimiento igual o inferior a 12 meses a partir de la fecha del estado de situación financiera, que se clasifican como Otros activos financieros corrientes.
 
 Las Compras y ventas convencionales de activos financieros, se reconocen en la fecha de transacción, la fecha en que el grupo se compromete a comprar o vender el activo. Las inversiones se registran inicialmente a su valor razonable más los costos de transacción para todos los activos financieros no contabilizados a valor razonable con cambios en resultados. Los activos financieros a valor razonable con cambios en resultados, se reconocen inicialmente por su valor razonable y los costos de transacción se cargan en la cuenta de resultados. Los activos financieros son dados de baja cuando los derechos a recibir flujos de efectivo de las inversiones han vencido o se han transferido y el grupo ha cedido de manera sustancial todos los riesgos y beneficios de la propiedad.
 
 Los activos financieros y activos financieros a valor razonable con cambios en resultado son, posteriormente, valorados por su valor razonable. Los préstamos y cuentas por cobrar son, posteriormente, valorados a su costo amortizado utilizando el método de tasa de interés efectiva. Las inversiones al vencimiento se registran al costo amortizado utilizando el método de tasa de interés efectiva.
 
-**CLUB LLANEROS S.A** evalúa en la fecha de cada estado de situación financiera consolidado si existe evidencia objetiva de que un activo financiero o un grupo de activos financieros puedan haber sufrido pérdidas por deterioro. Para el caso de los activos financieros mantenidos hasta su vencimiento, de existir evidencia de deterioro, el importe de la provisión es la diferencia entre el importe en libros del activo y el valor actual de los flujos futuros de efectivo estimados, descontados a la tasa de interés efectiva original.
+CLUB LLANEROS S.A evalúa en la fecha de cada estado de situación financiera consolidado si existe evidencia objetiva de que un activo financiero o un grupo de activos financieros puedan haber sufrido pérdidas por deterioro. Para el caso de los activos financieros mantenidos hasta su vencimiento, de existir evidencia de deterioro, el importe de la provisión es la diferencia entre el importe en libros del activo y el valor actual de los flujos futuros de efectivo estimados, descontados a la tasa de interés efectiva original.
 
-**Efectivo y equivalentes al efectivo.**
-
+### Efectivo y equivalentes al efectivo.
 El efectivo y equivalentes al efectivo incluyen el efectivo en caja, los depósitos a plazo en instituciones financieras y otras inversiones a corto plazo de gran liquidez. El saldo de la cuenta de efectivo que presenta la entidad proviene o se destina a actividades de operación, mismas que constituyen la principal fuente de ingresos ordinarios de la entidad. Es todo el dinero que
 
-#FeEnElDestino
-
-Página | 3
-
-**Sede Administrativa:** C. C. Unicentro Local 350
-**Sede Deportiva:** Km. 16 Vía Puerto López- Finca San Rafael
-**P. 1: 1.000.000.000.000**
-
-![img-6.jpeg](img-6.jpeg)
-
-www.clublanerosfc.com
+Página | 3  
+Sede Administrativa: C. C. Unicentro Local 350  
+Sede Deportiva: Km. 16 Vía Puerto López- Finca San Rafael
 
 --- pág. 4 ---
 
-![img-7.jpeg](img-7.jpeg)
-
+LLANEROS FC  
 **LLANEROS**  
-FÚTBOL CLUB
+FÚTBOL CLUB  
 
-**Estado de Revelaciones y Políticas Contables**  
-**Explicativas a los Estados Financieros 2025 -2024**
+# Estado de Revelaciones y Políticas Contables Explicativas a los Estados Financieros 2025 -2024
 
 tenemos disponible para gastarlo en cualquier momento, tal como, monedas, billetes, cheques, depósitos a la vista y otros
 
-**Los equivalentes al efectivo** son inversiones a corto plazo de gran liquidez que se mantienen para cumplir con los compromisos de pago a corto plazo más que para propósitos de inversión u otros. Por tanto, una inversión cumplirá las condiciones de equivalente al efectivo solo cuando tenga vencimiento próximo, por ejemplo de tres meses o menos desde la fecha de adquisición. Los sobregiros bancarios se consideran normalmente actividades de financiación similares a los préstamos. Sin embargo, si son reembolsables a petición de la otra parte y forman una parte integral de la gestión de efectivo de una entidad, los sobregiros bancarios son componentes del efectivo y equivalentes al efectivo.
+Los equivalentes al efectivo son inversiones a corto plazo de gran liquidez que se mantienen para cumplir con los compromisos de pago a corto plazo más que para propósitos de inversión u otros. Por tanto, una inversión cumplirá las condiciones de equivalente al efectivo solo cuando tenga vencimiento próximo, por ejemplo de tres meses o menos desde la fecha de adquisición.
 
-# **Préstamos que devengan intereses.**
+Los sobregiros bancarios se consideran normalmente actividades de financiación similares a los préstamos. Sin embargo, si son reembolsables a petición de la otra parte y forman una parte integral de la gestión de efectivo de una entidad, los sobregiros bancarios son componentes del efectivo y equivalentes al efectivo.
 
+### Préstamos que devengan intereses.
 Los pasivos financieros se reconocen, inicialmente, por su valor justo, netos de los costos en que se haya incurrido en la transacción. Posteriormente, los pasivos financieros se valorizan por su costo amortizado; cualquier diferencia entre los fondos obtenidos (netos de los costos necesarios para su obtención) y el valor de reembolso, se reconoce en el estado de resultados consolidado durante la vida de la deuda de acuerdo con el método de tasa de interés efectiva.
 
 Los pasivos financieros se clasifican en el pasivo corriente y pasivo no corriente sobre la base del vencimiento contractual del capital nominal.
 
-# **Cuentas comerciales por cobrar y otras cuentas por cobrar.**
-
+### Cuentas comerciales por cobrar y otras cuentas por cobrar.
 Las ventas se realizan en condiciones de crédito normales, y los importes de las cuentas por cobrar no tienen intereses. Cuando el crédito se amplía más allá de las condiciones de crédito normales, las cuentas por cobrar se miden al costo amortizado utilizando el método de interés efectivo. Al final de cada periodo sobre el que se informa, los importes en libros de los deudores comerciales y otras cuentas por cobrar se revisan para determinar si existe alguna evidencia objetiva de que no vayan a ser recuperables. Si se identifica dicha evidencia, se reconocerá de inmediato una pérdida por deterioro del valor en los resultados.
 
-Las cuentas comerciales a cobrar se reconocen inicialmente por su valor justo y posteriormente por su costo amortizado de acuerdo con el método de tasa de interés efectiva, menos la provisión por pérdidas por deterioro del valor. Se establece una provisión para pérdidas por deterioro de cuentas comerciales a cobrar cuando existe evidencia objetiva de que la **CLUB LLANEROS S.A** no será capaz de cobrar todos los importes que se le adeudan de acuerdo con los términos originales de las cuentas a cobrar.
+Las cuentas comerciales a cobrar se reconocen inicialmente por su valor justo y posteriormente por su costo amortizado de acuerdo con el método de tasa de interés efectiva, menos la provisión por pérdidas por deterioro del valor. Se establece una provisión para pérdidas por deterioro de cuentas comerciales a cobrar cuando existe evidencia objetiva de que la CLUB LLANEROS S.A no será capaz de cobrar todos los importes que se le adeudan de acuerdo con los términos originales de las cuentas a cobrar.
 
-La existencia de dificultades financieras significativas por parte del deudor, la probabilidad de que el deudor entre en quiebra o reorganización financiera y la falta o mora en los pagos se consideran indicadores de que la cuenta a cobrar se ha deteriorado. El importe de la provisión es la diferencia entre el importe en libros del activo y el valor actual de los flujos futuros de efectivo estimados, descontados a la tasa de interés efectiva original. El importe en libros del activo se reduce a
+La existencia de dificultades financieras significativas por parte del deudor, la probabilidad de que el deudor entre en quiebra o reorganización financiera y la falta o mora en los pagos se consideran indicadores de que la cuenta a cobrar se ha deteriorado. El importe de la provisión es la diferencia entre el importe en libros del activo y el valor actual de los flujos futuros de efectivo estimados, descontados a la tasa de interés efectiva original. El importe en libros del activo se reduce a medida que se utiliza la cuenta de provisión y la pérdida se reconoce en el estado de resultados consolidado dentro de "costo de ventas". Cuando una cuenta a cobrar es castigada, se regulariza contra la cuenta de provisión para las cuentas a cobrar.
 
-medida que se utiliza la cuenta de provisión y la pérdida se reconoce en el estado de resultados consolidado dentro de "costo de ventas". Cuando una cuenta a cobrar es castigada, se regulariza contra la cuenta de provisión para las cuentas a cobrar.
-
-# **Propiedades, planta y equipo**
-
-La propiedad, planta y equipo corresponde a activos tangibles mantenidos para su uso en la operación y administración del Club, de los cuales se espera obtener beneficios económicos durante más de un periodo.
+### Propiedades, planta y equipo
+La propiedad, planta y equipo corresponde a activos tangibles mantenidos para su uso en la operación y administración del Club, de los cuales se espera obtener beneficios económicos durante más de un período.
 
 CLUB LLANEROS S.A. mide sus propiedades, planta y equipo al costo histórico menos la depreciación acumulada y las pérdidas por deterioro, de conformidad con la Sección 17 de la NIIF para las PYMES. En la adopción por primera vez de las NIIF para las PYMES, la entidad aplicó la exención establecida en la Sección 35, utilizando como costo atribuido los valores determinados bajo los principios de contabilidad generalmente aceptados en Colombia (COLGAAP).
 
 La depreciación se calcula mediante el método de línea recta, utilizando las siguientes vidas útiles:
 
-|  Concepto | Vida Útil ( Años)  |
-| --- | --- |
-|  Maquinaria Y Equipo | 5  |
-|  Equipo De Oficina | 5  |
-|  Equipo De Computo | 3  |
-|  Construcciones y Edificaciones | 30  |
+| Concepto | Vida Útil ( Años) |
+| :--- | :---: |
+| Maquinaria Y Equipo | 5 |
+| Equipo De Oficina | 5 |
+| Equipo De Computo | 3 |
+| Construcciones y Edificaciones | 30 |
 
 Las adiciones, mejoras y reparaciones que incrementan significativamente la capacidad productiva, la calidad del servicio o la vida útil de los activos se capitalizan como mayor valor del activo correspondiente.
 
@@ -206,82 +178,58 @@ Al 31 de diciembre de 2025, la entidad no posee activos sujetos a depreciación,
 
 **#FeEnElDestino**
 
-Página | 4
-
-**Sede Administrativa:** C. C. Unicentro Local 350  
-**Sede Deportiva:** Km. 16 Via Puerto López- Finca San Rafael  
-Tel: 0531 2222 2222 - 2222 2222
-
-![img-8.jpeg](img-8.jpeg)
-
-www.clubllanesfc
+Página | 4  
+Sede Administrativa: C. C. Unicentro Local 350  
+Sede Deportiva: Km. 16 Vía Puerto López- Finca San Rafael
 
 --- pág. 5 ---
 
-![img-9.jpeg](img-9.jpeg)
+LLANEROS FC  
+**LLANEROS**  
+FÚTBOL CLUB  
 
-**LLANEROS**
-FÚTBOL CLUB
+# Estado de Revelaciones y Políticas Contables Explicativas a los Estados Financieros 2025 -2024
 
-**Estado de Revelaciones y Políticas Contables**
-**Explicativas a los Estados Financieros 2025 -2024**
-
-**Impuestos diferidos.**
-
+### Impuestos diferidos.
 Los impuestos diferidos se calculan, sobre las diferencias temporarias que surgen entre las bases fiscales de los activos y pasivos y sus importes en libros adopción por primera vez. Los impuestos diferidos surgen del reconocimiento inicial de un pasivo o un activo en una transacción no afecta ni al resultado contable ni a la ganancia o pérdida fiscal, no se contabiliza. El impuesto diferido se determina usando las tasas de impuesto en el proceso de adopción por primera vez aplicando la tasa de renta ordinaria con excepción de propiedad planta y equipo que aplica la tasa por renta de ganancias ocasionales de conformidad con los requerimientos legales según el Estatuto Tributario.
 
 Los activos y pasivos por impuestos diferidos se reconocen en la medida en que es probable que vaya a disponerse de beneficios o consumos fiscales futuros con los cuales compensar las diferencias temporarias.
 
-**CLUB LLANEROS S.A** registra impuestos diferidos sobre las diferencias temporarias que surgen en el proceso de conversión a NIIF Pymes adopción por Primera vez, las diferencias temporales es controlada por la Sociedad y es probable que la diferencia temporal no se revertirá en un momento previsible en el futuro.
+CLUB LLANEROS S.A registra impuestos diferidos sobre las diferencias temporarias que surgen en el proceso de conversión a NIIF Pymes adopción por Primera vez, las diferencias temporales es controlada por la Sociedad y es probable que la diferencia temporal no se revertirá en un momento previsible en el futuro.
 
-**Activos por impuestos corrientes**
-
+### Activos por impuestos corrientes
 El impuesto corriente, correspondiente al ejercicio presente y a los anteriores, debe ser reconocido como una obligación de pago en la medida en que no haya sido liquidado.
 
 El importe a cobrar que corresponda a una pérdida fiscal, si ésta puede ser retrotraída para recuperar las cuotas corrientes satisfechas en ejercicios anteriores, debe ser reconocido como un activo.
 
 Cuando una pérdida fiscal se utilice para recuperar el impuesto corriente pagado en ejercicios anteriores, la Sociedad reconocerá tal derecho como un activo en el mismo ejercicio en el que se produce la citada pérdida fiscal
 
-**Provisiones.**
-
+### Provisiones.
 Las provisiones se reconocen cuando:
-
-- (i) La Sociedad tiene una obligación presente, ya sea legal o implícita, como resultado de sucesos pasados;
-- (ii) Es probable que vaya a ser necesaria una salida de recursos para liquidar la obligación;
-- y
-- (iii) El importe se ha estimado de forma fiable.
+(i) La Sociedad tiene una obligación presente, ya sea legal o implícita, como resultado de sucesos pasados;
+(ii) Es probable que vaya a ser necesaria una salida de recursos para liquidar la obligación; y
+(iii) El importe se ha estimado de forma fiable.
 
 Las provisiones se valoran por el valor actual de los desembolsos que se espera que sean necesarios para liquidar la obligación usando la mejor estimación de la Sociedad. La tasa de descuento utilizada para determinar el valor actual refleja las evaluaciones actuales del mercado, en la fecha del estado de situación financiera, del valor temporal del dinero, así como el riesgo específico relacionado con el pasivo en particular.
 
-**Cuentas comerciales por pagar y otras cuentas por pagar.**
-
+### Cuentas comerciales por pagar y otras cuentas por pagar.
 Un pasivo financiero es cualquier pasivo que sea: una obligación contractual. Las cuentas por pagar comerciales y otras cuentas por pagar se registran inicialmente a su valor justo y posteriormente se valorizan al costo amortizado de acuerdo al método de la tasa de interés efectiva. Las cuentas comerciales por pagar son obligaciones basadas en condiciones de crédito normales y no tienen intereses. Los importes de las cuentas comerciales por pagar, denominados en moneda extranjera se convierten a la unidad monetaria (u.m.) usando la tasa de cambio vigente en la fecha sobre la que se informa. Las ganancias o pérdidas por cambio de moneda extranjera se incluyen en otros gastos o en otros ingresos.
 
-**Beneficios a los empleados.**
-
+### Beneficios a los empleados.
 La Empresa reconoce el gastos laborales y contribuciones a empleados producto del contrato laboral celebrado con empleados de conformidad al código laboral colombiano.
 
-**CLUB LLANEROS S.A** reconoce el gasto por Cesantías. Prima de vacaciones. Prima por servicios prestados, vacaciones e intereses a las cesantías que consiste en un beneficio económico que compensaría el tiempo cesante al abandonar el empleo y que será administrado por un fondo de cesantías al personal que se encuentre registrado en nómina, devengada de conformidad con el código laboral colombiano.
+CLUB LLANEROS S.A reconoce el gasto por Cesantías. Prima de vacaciones. Prima por servicios prestados, vacaciones e intereses a las cesantías que consiste en un beneficio económico que compensaría el tiempo cesante al abandonar el empleo y que será administrado por un fondo de cesantías al personal que se encuentre registrado en nómina, devengada de conformidad con el código laboral colombiano.
 
-**Pasivos por impuesto Corriente**
-
+### Pasivos por impuesto Corriente
 El impuesto corriente, correspondiente al ejercicio presente y a los anteriores, debe ser reconocido como una obligación de pago en la medida en que no haya sido liquidado. Si la cantidad ya pagada, que corresponde al ejercicio presente y a los anteriores, excede del importe a pagar por esos ejercicios, el exceso debe ser reconocido como un activo.
 
-**NOTA 3.4. Gestión Del Riesgo Financiero.**
-
-**NOTA 3.4.1. Factores de riesgo financiero.**
-
+### NOTA 3.4. Gestión Del Riesgo Financiero.
+#### NOTA 3.4.1. Factores de riesgo financiero.
 Las actividades de la Sociedad están expuestas a diversos riesgos financieros: (a) riesgo de mercado, (b) riesgo de crédito y (c) riesgo de liquidez. El programa de gestión del riesgo global de la Sociedad se centra en la incertidumbre de los mercados financieros relacionado con las
 
-©clublanerosfc
-
-Página | 5
-
-**Sede Administrativa:** C. C. Unicentro Local 350
-**Sede Deportiva:** Km. 16 Vía Puerto López- Finca San Rafael
-**Telf. 0532 4000 0000**
-
-![img-10.jpeg](img-10.jpeg)
+Página | 5  
+Sede Administrativa: C. C. Unicentro Local 350  
+Sede Deportiva: Km. 16 Vía Puerto López- Finca San Rafael
 
 --- pág. 6 ---
 
@@ -354,27 +302,23 @@ El valor justo de los pasivos financieros y las cuentas comerciales por pagar, s
 
 --- pág. 7 ---
 
-![img-13.jpeg](img-13.jpeg)
-
+LLANEROS FC  
 **LLANEROS**  
-FÚTBOL CLUB
+FÚTBOL CLUB  
 
-**Estado de Revelaciones y Políticas Contables**  
-**Explicativas a los Estados Financieros 2025 -2024**
+# Estado de Revelaciones y Políticas Contables Explicativas a los Estados Financieros 2025 -2024
 
-# **NOTA 4. Fuentes Clave De Incertidumbre En La Estimación**
-
+### NOTA 4. Fuentes Clave De Incertidumbre En La Estimación
 La gerencia considera que los supuestos hechos al preparar los estados financieros son correctos, y que los estados financieros, por lo tanto, presentan razonablemente la situación financiera y el rendimiento de la entidad de acuerdo con la NIIF para las PYMES, en todos los aspectos importantes.
 
 Sin embargo, el hecho de aplicar supuestos y estimaciones implica que, si se eligen supuestos diferentes, nuestros resultados informados también serán diferentes. La información que se detalla debajo de este encabezado se presenta exclusivamente para facilitar la comprensión de los usuarios acerca de los estados financieros, y no tiene como objeto sugerir que otros supuestos no serían completamente correctos.
 
-# **NOTA 5. Valor Razonable De Los Instrumentos Financieros**
-
+### NOTA 5. Valor Razonable De Los Instrumentos Financieros
 Los activos financieros y los pasivos financieros que no constituyen instrumentos financieros básicos se llevan a su valor razonable, con cambios en dicho valor registrados en los resultados. Cuando no exista mercado activo o cuando los precios cotizados no se encuentren disponibles de otro modo, será necesario emplear juicios profesionales para determinar el valor razonable.
 
 En estas circunstancias, el valor razonable se determina empleando una variedad de técnicas de valoración, incluidos métodos de valor presente, modelos basados en parámetros de datos observables y modelos en que los parámetros de datos no se pueden observar.
 
-El modelo de Valoración incluye información acerca de los precios del mercado estimados o reales y tasas, valor temporal, volatilidad, profundidad y liquidez del mercado, entre otros datos. Empleamos precios observables del mercado y tasas procedentes de datos verificables del mercado, si estuvieran disponibles. Cuando tales factores no se pudieran observar en el mercado, los cambios en los supuestos podrían afectar el valor razonable informado de los instrumentos financieros. Los modelos se aplican de un período al siguiente. Sin embargo, la estimación del valor razonable implica, por sí misma, un considerable grado de juicio profesional. Por ello, la gerencia establece ajustes en la valoración para cubrir los riesgos relacionados con la estimación de parámetros de datos no observables y los supuestos dentro de los modelos en sí.
+El modelo de Valoración incluye información acerca de los precios del mercado estimados o reales y tasas, valor temporal, volatilidad, profundidad y liquidez del mercado, entre otros datos. Empleamos precios observables del mercado y tasas procedentes de datos verificables del mercado, si estuvieran disponibles. Cuando tales factores no se pudieran observar en el mercado, los cambios en los supuestos podrían afectar el valor razonable informado de los instrumentos financieros. Los modelos se aplican de un periodo al siguiente. Sin embargo, la estimación del valor razonable implica, por sí misma, un considerable grado de juicio profesional. Por ello, la gerencia establece ajustes en la valoración para cubrir los riesgos relacionados con la estimación de parámetros de datos no observables y los supuestos dentro de los modelos en sí.
 
 Los ajustes en la valoración también se realizan para reflejar componentes tales como situaciones desactualizadas, solvencia crediticia deteriorada (incluidos los riesgos particulares de un sector región o país), concentraciones en tipos específicos de instrumentos y factores de riesgo del mercado (tasas de interés, monedas, etc.), y profundidad y liquidez del mercado.
 
@@ -382,21 +326,14 @@ Si bien un grado considerable de juicio profesional es necesario, en ciertos cas
 
 Sin embargo, la gerencia ha estimado cómo podría impactar un cambio en los supuestos de alternativas razonablemente posibles sobre los valores razonables, cuando los datos del modelo no se pueden observar en el mercado. Para todos los instrumentos financieros registrados al valor razonable que dependen de supuestos para su valoración.
 
-# **NOTA 6. Estimaciones Contables Y Juicios Críticos**
-
+### NOTA 6. Estimaciones Contables Y Juicios Críticos
 Las revisiones a las estimaciones contables se reconocen en el período de la revisión y períodos futuros si la revisión afecta tanto al período actual como a períodos subsecuentes. Las estimaciones y juicios son continuamente evaluados y se encuentran basados en la experiencia histórica y otros factores, incluyendo expectativas de eventos futuros que se cree que son razonables bajo las circunstancias.
-
-©clublanerosfc
 
 **#FeEnElDestino**
 
-Página | 7
-
-**Sede Administrativa:** C. C. Unicentro Local 350  
-**Sede Deportiva:** Km. 16 Via Puerto López- Finca San Rafael  
-Tel: 0312 222 2222 2222
-
-![img-14.jpeg](img-14.jpeg)
+Página | 7  
+Sede Administrativa: C. C. Unicentro Local 350  
+Sede Deportiva: Km. 16 Vía Puerto López- Finca San Rafael
 
 --- pág. 8 ---
 
@@ -628,140 +565,114 @@ fucublanerosfc
 
 --- pág. 11 ---
 
-LLANEROS FC
+LLANEROS FC  
+**LLANEROS**  
+FÚTBOL CLUB  
 
-LLANEROS
+# Estado de Revelaciones y Políticas Contables Explicativas a los Estados Financieros 2025 -2024
 
-FÚTBOL CLUB
-
-Estado de Revelaciones y Políticas Contables
-
-Explicativas a los Estados Financieros 2025 -2024
-
-# NOTA 17. Patrimonio
-
+### NOTA 17. Patrimonio
 Agrupa el conjunto de las cuentas que representan el valor residual de comparar el activo total menos el pasivo externo, producto de los recursos netos del ente económico que han sido suministrados por la Sociedad, ya sean directamente o como consecuencia del giro ordinario de sus negocios, quedando los siguientes saldos:
 
-|  Concepto | 2025 | 2024 | Variación ($) | Variación (%)  |
-| --- | --- | --- | --- | --- |
-|  Capital social | 7.896.000.000 | 7.896.000.000 | 0 | 0%  |
-|  Reserva legal | 47.401.000 | 47.401.000 | 0 | 0%  |
-|  Ganancia (Pérdida) del Periodo | 1.041.567.343 | -1.422.016.706 | 2.463.584.049 | -173%  |
-|  Ganancias (Pérdidas) de Periodos Anteriores | -10.292.676.058 | -8.880.864.350 | -1.411.811.708 | 16%  |
-|  TOTAL | -1.307.707.715 | -2.359.480.056 | 1.051.772.341 | -44,58%  |
+| Concepto | 2025 | 2024 | Variación ($) | Variación (%) |
+| :--- | :---: | :---: | :---: | :---: |
+| Capital social | 7.896.000.000 | 7.896.000.000 | 0 | 0% |
+| Reserva legal | 47.401.000 | 47.401.000 | 0 | 0% |
+| Ganancia (Pérdida) del Periodo | 1.041.567.343 | -1.422.016.706 | 2.463.584.049 | -173% |
+| Ganancias (Pérdidas) de Periodos Anteriores | -10.292.676.058 | -8.880.864.350 | -1.411.811.708 | 16% |
+| **TOTAL** | **-1.307.707.715** | **-2.359.480.056** | **1.051.772.341** | **-44,58%** |
 
-# NOTA 18. Ingresos Por Actividades Ordinarias
-
-Los ingresos de taquilla corresponden a los ingresos obtenidos por venta de boletería en taquillas para el ingreso a los eventos deportivos. Este rubro representa el 15% del total de los ingresos. La partida correspondiente a derechos Deportivos está constituida por los ingresos obtenidos por la cesión temporal de derechos económicos, deportivos y federativos de jugadores perteneciente al CLUB LLANEROS S.A, este rubro representa el 1% del total de los ingresos.
+### NOTA 18. Ingresos Por Actividades Ordinarias
+Los ingresos de taquilla corresponden a los ingresos obtenidos por venta de boletería en taquillas para el ingreso a los eventos deportivos. Este rubro representa el 15% del total de los ingresos.  
+La partida correspondiente a derechos Deportivos está constituida por los ingresos obtenidos por la cesión temporal de derechos económicos, deportivos y federativos de jugadores perteneciente al CLUB LLANEROS S.A, este rubro representa el 1% del total de los ingresos.
 
 Los ingresos por contratos de publicidad constituyen el 54% del total de los ingresos, los ingresos por cesión de derechos de Televisión constituyen el 22% del total de los ingresos y los Auxilios que da la Dimayor constituyen el 8% del total de los ingresos.
 
-![img-19.jpeg](img-19.jpeg)
+| Concepto | 2025 | 2024 | Variación ($) | Variación (%) |
+| :--- | :---: | :---: | :---: | :---: |
+| Ingresos de actividades ordinarias | 11.855.555.018 | 5.777.133.800 | 6.078.421.218 | 105,22% |
+| **TOTAL** | **11.855.555.018** | **5.777.133.800** | **6.078.421.218** | **105,22%** |
 
-|  Concepto | 2025 | 2024 | Variación ($) | Variación (%)  |
-| --- | --- | --- | --- | --- |
-|  Ingresos de actividades | 11.855.555.018 | 5.777.133.800 | 6.078.421.218 | 105,22%  |
-|  TOTAL | 11.855.555.018 | 5.777.133.800 | 6.078.421.218 | 105,22%  |
-
-|  Ingresos de actividades ordinarias | 2025 | 2024 | Variación ($) | Variación (%)  |
-| --- | --- | --- | --- | --- |
-|  Cesión de Derechos de TV | 2.557.762.933 | 1.397.962.617 | 1.159.800.316 | 83%  |
-|  Contratos Publicidad | 6.388.932.082 | 1.476.147.059 | 4.912.785.023 | 333%  |
-|  Auxilio Transporte Dimayor | 673.779.270 | 63.326.696 | 610.452.574 | 964%  |
-|  Auxilio Arbitraje Dimayor | 96.254.181 | 45.207.663 | 51.046.518 | 113%  |
-|  Auxilio Hotelero Dimayor | 192.508.363 | 86.052.888 | 106.455.475 | 124%  |
-|  Mecanismo de Solidaridad | 120.000.000 | 1.078.173.699 | -958.173.699 | -89%  |
-|  Taquillas | 1.826.318.189 | 1.630.263.178 | 196.055.011 | 12%  |
-|  TOTAL | 11.855.555.018 | 5.777.133.800 | 6.078.421.218 | 105,22%  |
+| Ingresos de actividades ordinarias | 2025 | 2024 | Variación ($) | Variación (%) |
+| :--- | :---: | :---: | :---: | :---: |
+| Cesion de Derechos de TV | 2.557.762.933 | 1.397.962.617 | 1.159.800.316 | 83% |
+| Contratos Publicidad | 6.388.932.082 | 1.476.147.059 | 4.912.785.023 | 333% |
+| Auxilio Transporte Dimayor | 673.779.270 | 63.326.696 | 610.452.574 | 964% |
+| Auxilio Arbitraje Dimayor | 96.254.181 | 45.207.663 | 51.046.518 | 113% |
+| Auxilio Hotelero Dimayor | 192.508.363 | 86.052.888 | 106.455.475 | 124% |
+| Mecanismo de Solidaridad | 120.000.000 | 1.078.173.699 | -958.173.699 | -89% |
+| Taquillas | 1.826.318.189 | 1.630.263.178 | 196.055.011 | 12% |
+| **TOTAL** | **11.855.555.018** | **5.777.133.800** | **6.078.421.218** | **105,22%** |
 
 Nota 1: Para el año 2025, la entidad no contó con equipo femenino; en consecuencia, no se registraron ingresos ni gastos asociados a esta actividad durante el periodo.
 
-#FeEnElDestino
+**#FeEnElDestino**
 
-Página | 11
-
-Sede Administrativa: C. C. Unicentro Local 350
-Sede Deportiva: Km. 16 Via Puerto López- Finca San Rafael
-Telf. 0512 2.2375 0512 2.2375
-
-COLEGIO DE EQUIDAD
-COLEGIO DE EQUIDAD
-COLEGIO DE EQUIDAD
-
-fucublanerosfc
+Página | 11  
+Sede Administrativa: C. C. Unicentro Local 350  
+Sede Deportiva: Km. 16 Vía Puerto López- Finca San Rafael
 
 --- pág. 12 ---
 
-![img-20.jpeg](img-20.jpeg)
-
+LLANEROS FC  
 **LLANEROS**  
-FÚTBOL CLUB
+FÚTBOL CLUB  
 
-**Estado de Revelaciones y Políticas Contables**  
-**Explicativas a los Estados Financieros 2025 -2024**
+# Estado de Revelaciones y Políticas Contables Explicativas a los Estados Financieros 2025 -2024
 
-# **NOTA 19. Otros Ingresos**
-
+### NOTA 19. Otros Ingresos
 Los rubros de Otros Ingresos corresponden ajustes al peso al cierre, aprovechamientos y ajustes por inflación del presente ejercicio son:
 
-|  Concepto | 2025 | 2024 | Variación ($) | Variación (%)  |
-| --- | --- | --- | --- | --- |
-|  Otros Ingresos | 1.294.537 | 33.497.962 | -32.203.425 | -96,14%  |
-|  **TOTAL** | **1.294.537** | **33.497.962** | **-32.203.425** | **-96,14%**  |
+| Concepto | 2025 | 2024 | Variación ($) | Variación (%) |
+| :--- | :---: | :---: | :---: | :---: |
+| Otros Ingresos | 1.294.537 | 33.497.962 | -32.203.425 | -96,14% |
+| **TOTAL** | **1.294.537** | **33.497.962** | **-32.203.425** | **-96,14%** |
 
 Los ingresos correspondientes a Otros Ingresos se definen como ingresos relacionados con actividades diferentes a la actividad principal, cifra irrelevante con respecto a los ingresos principales.
 
-# **NOTA 20. Gastos De Administración**
-
+### NOTA 20. Gastos De Administración
 Corresponde a los gastos operacionales de administración en que incurrió la sociedad para el desarrollar su objeto social durante el presente ejercicio.
 
 Los gastos de personal corresponden a los gastos incurridos durante el año 2025 en el personal administrativo por vínculo laboral.
 
 A diciembre 31 los gastos de administración se detallan a continuación:
 
-|  Concepto | 2025 | 2024 | Variación ($) | Variación (%)  |
-| --- | --- | --- | --- | --- |
-|  Gastos por beneficios a empleados | 186.887.168 | 153.840.649 | 33.046.519 | 21,48%  |
-|  **TOTAL** | **186.887.168** | **153.840.649** | **33.046.519** | **21,48%**  |
+| Concepto | 2025 | 2024 | Variación ($) | Variación (%) |
+| :--- | :---: | :---: | :---: | :---: |
+| Gastos por beneficios a empleados | 186.887.168 | 153.840.649 | 33.046.519 | 21,48% |
+| **TOTAL** | **186.887.168** | **153.840.649** | **33.046.519** | **21,48%** |
 
 Los gastos de administración representan el 2% de los costos totales y representa el 2% de los ingresos totales relacionados con la administración de la Sociedad.
 
-# **NOTA 21. Gastos de Ventas**
-
+### NOTA 21. Gastos de Ventas
 Los gastos de personal corresponden a los gastos incurridos durante el año 2025 en el personal del cuerpo técnico y jugadores debido a una relación laboral. El rubro de honorarios corresponde a asesoría deportiva para el equipo profesional, asesoría técnica y asesoría financiera. Los arrendamientos están constituidos por los gastos de arrendamiento casa hogar, apartamentos de jugadores y cuerpo técnico durante el año 2025 y alquiler de cancha. El rubro de seguros corresponde a pólizas de responsabilidad civil, extracontractual y de cumplimiento.
 
 La partida de contribuciones y afiliaciones corresponde a gastos generados en 2025 para participación en torneos nacionales.
 
 A diciembre 31 están representados por:
 
-|  Concepto | 2025 | 2024 | Variación ($) | Variación (%)  |
-| --- | --- | --- | --- | --- |
-|  Gastos por beneficios a empleados | 6.616.106.802 | 4.376.377.251 | 2.239.729.551 | 51%  |
-|  Honorarios | 304.369.500 | 279.056.001 | 25.313.499 | 9%  |
-|  Impuestos | 243.296.740 | 264.156.962 | -20.860.222 | -8%  |
-|  Arrendamientos | 15.574.139 | 262.580.137 | -247.005.998 | -94%  |
-|  Seguros | 38.498.220 | 20.118.225 | 18.379.995 | 91%  |
-|  Servicios | 478.950.141 | 454.618.156 | 24.331.985 | 5%  |
-|  Gastos legales | 385.410.300 | 64.982.685 | 320.427.615 | 493%  |
-|  Mantenimiento y reparaciones | 310.000 | 3.015.704 | -2.705.704 | -90%  |
-|  Adecuación e instalación | 816.568.181 | 289.216.776 | 527.351.405 | 182%  |
-|  Gastos de Viaje | 1.408.304.135 | 494.948.759 | 913.355.376 | 185%  |
-|  Otros Gstos | 228.435.190 | 255.768.594 | -27.333.404 | -11%  |
-|  **TOTAL** | **10.535.823.348** | **6.764.839.250** | **3.770.984.098** | **814,56%**  |
+| Concepto | 2025 | 2024 | Variación ($) | Variación (%) |
+| :--- | :---: | :---: | :---: | :---: |
+| Gastos por beneficios a empleados | 6.616.106.802 | 4.376.377.251 | 2.239.729.551 | 51% |
+| Honorarios | 304.369.500 | 279.056.001 | 25.313.499 | 9% |
+| Impuestos | 243.296.740 | 264.156.962 | -20.860.222 | -8% |
+| Arrendamientos | 15.574.139 | 262.580.137 | -247.005.998 | -94% |
+| Seguros | 38.498.220 | 20.118.225 | 18.379.995 | 91% |
+| Servicios | 478.950.141 | 454.618.156 | 24.331.985 | 5% |
+| Gastos legales | 385.410.300 | 64.982.685 | 320.427.615 | 493% |
+| Mantenimiento y reparaciones | 310.000 | 3.015.704 | -2.705.704 | -90% |
+| Adecuacion e instalacion | 816.568.181 | 289.216.776 | 527.351.405 | 182% |
+| Gastos de Viaje | 1.408.304.135 | 494.948.759 | 913.355.376 | 185% |
+| Otros Gstos | 228.435.190 | 255.768.594 | -27.333.404 | -11% |
+| **TOTAL** | **10.535.823.348** | **6.764.839.250** | **3.770.984.098** | **814,56%** |
 
 Nota 1: Para el año 2025, la entidad no contó con equipo femenino; en consecuencia, no se registraron ingresos ni gastos asociados a esta actividad durante el periodo.
 
-©cublanerosfc
-
 **#FeEnElDestino**
 
-Página | 12
-
-**Sede Administrativa:** C. C. Unicentro Local 350  
-**Sede Deportiva:** Km. 16 Via Puerto López- Finca San Rafael  
-Tel: 0531-5000 5000 5000 5000
-
-![img-21.jpeg](img-21.jpeg)
+Página | 12  
+Sede Administrativa: C. C. Unicentro Local 350  
+Sede Deportiva: Km. 16 Vía Puerto López- Finca San Rafael
 
 --- pág. 13 ---
 
@@ -1033,50 +944,66 @@ Página | 16
 
 --- pág. 17 ---
 
-# **CLUB LLANEROS S.A.**
-**NIT 900.525.628-9**
-**ESTADO DE SITUACION FINANCIERA COMPARATIVO**
+CLUB LLANEROS S.A.
+NIT 900.525.626-9
+ESTADO DE SITUACION FINANCIERA COMPARATIVO
+Al 31 de diciembre de 2025
 
-Al 31 de diciembre de 2020
+**Activos**
 
-|  Activos | 2020 | 2019 | 2018 | % INCLUSIVO SERVICIO S.A. | % INCLUSIVO INCLUSIVO A | Pasivos y Expresores Núm. | 2020 | 2019 | % INCLUSIVO SERVICIO S.A. | % INCLUSIVO INCLUSIVO A  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  **ACTIVOS CORRIENTES** |   |   |   |   | **PASIVOS CORRIENTES** |   |   |   |   |   |
-|  Efectivo y Equivalentes de Efectivo | 7 | $ 1.149.331 | $ 253.790.793 | -5 | 252.641.462 | -100% | 12 | $ 507.540.309 | $ 932.034.808 | -5 424.493.611 -46%  |
-|  Cuentas Comerciales por Cobrar Y Otras Cuentas por Cobrar | 8 | $ 307.464.076 | $ 403.877.937 | -5 | 196.413.861 | -49% | 13 | $ 2.436.534.621 | $ 3.311.217.708 | -5 874.682.087 -26%  |
-|  Activos por Impuestos Corrientes | 9 | $ 625.089.980 | $ 294.664.605 | -5 | 130.425.344 | -44% | 14 | $ 1.210.877.368 | $ 717.390.894 | -5 493.486.484 -89%  |
-|  **TOTAL ACTIVOS CORRIENTES** |  | **$ 633.703.356** | **$ 952.333.335** | **-5** | **318.629.979** | **-33%** | 15 | $ 689.050.802 | $ 686.580.230 | -5 2.469.892 -0%  |
-|   |  |  |  |  |  |  |  | **TOTAL PASIVOS CORRIENTES** | **$ 4.844.002.468** | **$ 5.647.222.823**  |
-|  **ACTIVOS NO CORRIENTES** |   |   |   |   | **PASIVOS NO CORRIENTES** |   |   |   |   |   |
-|  Propiedades Renta y Equipo |  | $ - | $ - |  | Otras Pasivos |  | 16 | $ 1.719.936.913 | $ 2.287.118.870 | -5 567.181.957 -20%  |
-|  Otras Activos |  | $ - | $ - |  | Pasivos por Impuestos Diferidos |  |  | $ - | $ - | -5 0%  |
-|  Intangibles | 10 | $ 4.600.000.000 | $ 4.600.000.000 | $ 0 | 0% |  |  | $ - | $ - | -5 0%  |
-|  Activos por Impuestos Diferidos | 11 | $ 22.528.301 | $ 22.528.301 | $ 0 | 0% |  |  | **TOTAL PASIVOS NO CORRIENTES** | **$ 1.719.936.913** | **$ 2.287.118.870**  |
-|  **TOTAL ACTIVOS NO CORRIENTES** |  | **$ 4.622.528.301** | **$ 4.622.528.301** | **$ 0** | **0%** |  |  | **TOTAL PASIVOS** | **$ 6.563.939.372** | **$ 7.934.241.682**  |
-|   |  |  |  |  |  |  |  | **TOTAL PASIVOS** | **$ 6.563.939.372** | **$ 7.934.241.682**  |
-|   |  |  |  |  |  |  |  | **PATRIMONIO** | **17** |   |
-|   |  |  |  |  |  |  |  | Capital Exiliado | $ 7.896.000.000 | $ 7.896.000.000  |
-|   |  |  |  |  |  |  |  | Reservas Patrimoniales | $ 47.401.000 | $ 47.401.000  |
-|   |  |  |  |  |  |  |  | Garancia (Pérdidas del Periodo) | $ 1.041.567.343 | $ 1.422.016.706  |
-|   |  |  |  |  |  |  |  | Garancia (Pérdidas Acumuladas) | $ 45.292.676.858 | $ 8.880.864.358  |
-|   |  |  |  |  |  |  |  | **TOTAL PATRIMONIO** | **$ 1.307.707.715** | **$ 2.359.480.056**  |
-|   |  |  |  |  |  |  |  | **TOTAL PASIVOS Y PATRIMONIO NETO** | **$ 5.256.231.658** | **$ 5.574.861.636**  |
-|   |  |  |  |  |  |  |  |  | $ 0 | $ 0  |
-|  **TOTAL ACTIVOS** |  | **$ 5.256.231.658** | **$ 5.574.861.636** | **-5** | **318.629.978** | **-6%** |  |  |  |   |
-|   |  | **5.256.231.658.38** |  |  |  |  |  |  |  |   |
-|   |  |  |  |  |  |  |  | **ANGELA MARCELA SUAREZ** |  |   |
-|   |  |  |  |  |  |  |  | **Contador Publico** |  |   |
-|  |   |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |   |
-|  |   |   |   |   |   |   |   |   |   |   |
+| Activos | Notas | 2025 | 2024 | VARIACION ABSOLUTA | VARIACION RELATIVA |
+|---|---|---|---|---|---|
+| **ACTIVOS CORRIENTES** | | | | | |
+| Efectivo y Equivalentes de Efectivo | 7 | $ 1.149.331 | $ 253.790.793 | -$ 252.641.462 | -100% |
+| Cuentas Comerciales por Cobrar y Otras Cuentas por Cobrar | 8 | $ 207.464.076 | $ 403.877.937 | -$ 196.413.861 | -49% |
+| Activos por Impuestos Corrientes | 9 | $ 425.089.950 | $ 294.664.605 | $ 130.425.344 | 44% |
+| TOTAL ACTIVOS CORRIENTES | | $ 633.703.356 | $ 952.333.335 | -$ 318.629.979 | -33% |
+| **ACTIVOS NO CORRIENTES** | | | | | |
+| Propiedades Planta y Equipo | | $ - | $ - | | |
+| Otros Activos | | $ - | $ - | $ - | |
+| Intangibles | 10 | $ 4.600.000.000 | $ 4.600.000.000 | $ 0 | 0% |
+| Activos por Impuestos Diferidos | 11 | $ 22.528.301 | $ 22.528.301 | $ 0 | 0% |
+| TOTAL ACTIVOS NO CORRIENTES | | $ 4.622.528.301 | $ 4.622.528.301 | $ 0 | 0% |
+| TOTAL ACTIVOS | | $ 5.256.231.658 | $ 5.574.861.636 | -$ 318.629.978 | -6% |
+
+Debajo de TOTAL ACTIVOS (2025): 5.256.231.659,38
+
+**Pasivos y Patrimonio Neto**
+
+| Pasivos y Patrimonio Neto | Notas | 2025 | 2024 | VARIACION ABSOLUTA | VARIACION RELATIVA |
+|---|---|---|---|---|---|
+| **PASIVOS CORRIENTES** | | | | | |
+| Pasivos Financieros Medidos al Valor Razonable | 12 | $ 507.540.389 | $ 932.034.000 | -$ 424.493.611 | -46% |
+| Cuentas Comerciales por Pagar y Otras Cuentas por Pagar | 13 | $ 2.436.534.621 | $ 3.311.217.708 | -$ 874.683.087 | -26% |
+| Pasivos por Impuestos Corrientes | 14 | $ 1.210.877.368 | $ 717.390.884 | $ 493.486.484 | 69% |
+| Beneficios a Empleados | 15 | $ 689.050.082 | $ 686.580.230 | $ 2.469.852 | 0% |
+| TOTAL PASIVOS CORRIENTES | | $ 4.844.002.460 | $ 5.647.222.823 | -$ 803.220.363 | -14% |
+| **PASIVOS NO CORRIENTES** | | | | | |
+| Otros Pasivos | 16 | $ 1.719.936.913 | $ 2.287.118.870 | -$ 567.181.957 | -25% |
+| Pasivos por Impuestos Diferidos | | $ - | $ - | $ - | 0% |
+| Provisiones | | $ - | $ - | $ - | 0% |
+| TOTAL PASIVOS NO CORRIENTES | | $ 1.719.936.913 | $ 2.287.118.870 | -$ 567.181.957 | -25% |
+| TOTAL PASIVOS | | $ 6.563.939.373 | $ 7.934.341.692 | -$ 1.370.402.319 | -17% |
+| **PATRIMONIO** | 17 | | | | |
+| Capital Emitido | | $ 7.896.000.000 | $ 7.896.000.000 | $ - | 0% |
+| Reservas Patrimoniales | | $ 47.401.000 | $ 47.401.000 | $ - | 0% |
+| Ganancia (Perdida) del Periodo | | $ 1.041.567.343 | -$ 1.422.016.706 | $ 2.463.584.049 | -173% |
+| Ganancias (Perdidas) Acumuladas | | -$ 10.292.676.058 | -$ 8.880.864.350 | -$ 1.411.811.708 | 16% |
+| TOTAL PATRIMIO | | -$ 1.307.707.715 | -$ 2.359.480.056 | $ 1.051.772.341 | -45% |
+| TOTAL PASIVOS Y PATRIMONIO NETO | | $ 5.256.231.658 | $ 5.574.861.636 | -$ 318.629.978 | -6% |
+
+Debajo de TOTAL PASIVOS Y PATRIMONIO NETO: $ 0 (2025); $ 0 (2024)
+
+Firmas:
+
+JUAN CARLOS TRUJILLO
+Representante Legal
+
+ANGELA MARCELA SUAREZ
+Contador Público
+
+LUIS FELIPE GOMEZ
+Revisor Fiscal
 
 --- pág. 18 ---
 

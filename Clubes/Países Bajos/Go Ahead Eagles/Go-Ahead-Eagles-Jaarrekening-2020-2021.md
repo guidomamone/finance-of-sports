@@ -441,7 +441,9 @@ HOME OF FOOTBALL
 
 --- pág. 13 ---
 
-Go Ahead Eagles
+{{esl:Signer7:signature:size(200,50)}} {{esl:Signer8:signature:size(200,50)}}
+
+**Go Ahead Eagles**
 Vetkampstraat 1
 Postbus 184
 7400 AD Deventer
@@ -450,59 +452,38 @@ Postbus 184
 www.ga-eagles.nl
 info@ga-eagles.nl
 
-KvK 08102710
-BTW NL8153.64.647.B.02
-IBAN NL85RABO0037 77 69 584
+**KvK** 08102710
+**BTW** NL8153.64.647.B.02
+**IBAN** NL85RABO0377789584
 t.n.v. Go Ahead Eagles
 
-### Bedrijfslasten
+**Bedrijfslasten**
 
-De bedrijfslasten zijn ongeveer gelijk aan die van seizoen 2019/2020, te weten 4,77 miljoen euro. Wel dient
-hierbij opgemerkt te worden dat de personeelslasten 400.000 euro hoger zijn dan begroot, hetgeen volledig is toe
-te schrijven aan uitgekeerde bonussen ten aanzien van de promotie naar de eredivisie.
+De bedrijfslasten zijn ongeveer gelijk aan die van seizoen 2019/2020, te weten 4,77 miljoen euro. Wel dient hierbij opgemerkt te worden dat de personeelslasten 400.000 euro hoger zijn dan begroot, hetgeen volledig is toe te schrijven aan uitgekeerde bonussen ten aanzien van de promotie naar de eredivisie.
 
-### Balansontwikkeling
+**Balansontwikkeling**
 
-Door het positieve resultaat van het seizoen 2020/2021 is het eigen vermogen verbeterd met € 643.000, naar in
-totaal 4,3 miljoen euro. De overlopende passiva bestaan voor meer dan 50% uit vooruitbetaalde seizoenkaarten.
-Door het positieve resultaat van 2020/2021 is de solvabiliteit verder toegenomen.
+Door het positieve resultaat van het seizoen 2020/2021 is het eigen vermogen verbeterd met € 643.000, naar in totaal 4,3 miljoen euro. De overlopende passiva bestaan voor meer dan 50% uit vooruitbetaalde seizoenkaarten. Door het positieve resultaat van 2020/2021 is de solvabiliteit verder toegenomen.
 
-## Vooruitblik seizoen 2021/2022
+**Vooruitblik seizoen 2021/2022**
 
-GAE ging vol goede moed de eredivisie in en doet het op moment van schrijven bijzonder goed met 13 punten
-uit 10 duels en een keurige 10e plaats. Iedere wedstrijd wordt beleefd als een finale en we zullen met zijn allen
-ervoor moeten zorgen om ons te handhaven. Inzet van iedere GAE medewerker/supporter/stakeholder wordt
-hierbij verwacht en gegeven. Het feest dat door Corona in het water is gevallen in mei 2021, zal alsnog op een
-volle Brink gevierd kunnen worden bij handhaving in mei 2022.
+GAE ging vol goede moed de eredivisie in en doet het op moment van schrijven bijzonder goed met 13 punten uit 10 duels en een keurige 10e plaats. Iedere wedstrijd wordt beleefd als een finale en we zullen met zijn allen ervoor moeten zorgen om ons te handhaven. Inzet van iedere GAE medewerker/supporter/stakeholder wordt hierbij verwacht en gegeven. Het feest dat door Corona in het water is gevallen in mei 2021, zal alsnog op een volle Brink gevierd kunnen worden bij handhaving in mei 2022.
 
-Er zijn een ongekend aantal seizoenkaarten en business seats verkocht. Inmiddels hebben we ons eerste volledig
-uitverkochte eredivisie thuisduel achter de rug tegen Heracles, met daarbij een passende einduitslag van 4-2.
-Corona lijkt overwonnen te zijn, al is het alom bekend dat Corona nog niet volledig verdwenen is en het aantal
-besmettingen neemt weer toe. Dus voorzichtigheid wordt in deze zeker geboden.
+Er zijn een ongekend aantal seizoenkaarten en business seats verkocht. Inmiddels hebben we ons eerste volledig uitverkochte eredivisie thuisduel achter de rug tegen Heracles, met daarbij een passende einduitslag van 4-2. Corona lijkt overwonnen te zijn, al is het alom bekend dat Corona nog niet volledig verdwenen is en het aantal besmettingen neemt weer toe. Dus voorzichtigheid wordt in deze zeker geboden.
 
-Binnen de organisatie is er rust. De diverse hoofddoelen zijn bepaald voor de club en ieder weet wat er van een
-ieder verwacht mag worden. De directie zit volledig op lijn met de aandeelhouders en er wordt onderhandeld
-over een contractverlenging met de diverse eindverantwoordelijken, zoals Jan Willem van Dop, Paul Bosvelt en
-Kees van Wonderen.
+Binnen de organisatie is er rust. De diverse hoofddoelen zijn bepaald voor de club en ieder weet wat er van een ieder verwacht mag worden. De directie zit volledig op lijn met de aandeelhouders en er wordt onderhandeld over een contractverlenging met de diverse eindverantwoordelijken, zoals Jan Willem van Dop, Paul Bosvelt en Kees van Wonderen.
 
-Een ieder zal hard moeten blijven werken met enthousiasme, volgens een plan en beleid, daarbij de rust bewaren
-als het een keer iets minder zou gaan is de crux naar een mooie duurzame toekomst voor Go Ahead Eagles!
+Een ieder zal hard moeten blijven werken met enthousiasme, volgens een plan en beleid, daarbij de rust bewaren als het een keer iets minder zou gaan is de crux naar een mooie duurzame toekomst voor Go Ahead Eagles!
 
 Deventer, 27 oktober 2021
 
 Naam tekeningsbevoegd bestuurder: de heer H. de Vroome
 Functie tekeningsbevoegd bestuurder: directeur
-Handtekening:
-
-{{esl:Signer7:signature:size(200,50)}}
-ValidSigned door H. de Vroome
+Handtekening: ValidSigned door H. de Vroome
 
 Naam tekeningsbevoegd bestuurder: de heer A.P. Kroes
 Functie tekeningsbevoegd bestuurder: directeur
-Handtekening:
-
-{{esl:Signer8:signature:size(200,50)}}
-ValidSigned door A.P. Kroes
+Handtekening: ValidSigned door A.P. Kroes
 
 HOME OF FOOTBALL
 

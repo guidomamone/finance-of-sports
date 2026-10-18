@@ -620,58 +620,60 @@ Página | 16
 
 --- pág. 17 ---
 
-![img-16.jpeg](img-16.jpeg)
-
-# Estado de Revelaciones y Políticas Contables Explicativas a los Estados Financieros 2020 - 2019
+# Estado de Revelaciones y Políticas Contables
+# Explicativas a los Estados Financieros 2020 - 2019
 
 Los pasivos por impuestos Diferidos hace relación con la provisión de impuestos relacionados con el proceso de convergencia realizado de conformidad con el nuevo marco regulatorio contable convergencia NIIF Pymes
 
 El saldo de las cuentas de impuestos diferidos a 31 de Diciembre es el siguiente:
 
-|  ACTIVO | NIIF | LOCAL | DIF | IMPUESTO DIFERIDO  |
-| --- | --- | --- | --- | --- |
-|  DISPONIBLE | 11.716.486 | 4.287.031 | 7.429.455 | 2.303.131  |
-|  DEUDORES | 191.977.163 | 662.585.485 | 470.608.322 | (145.888.579,96)  |
-|  PROPIEDAD PLANTA Y EQUIPO | 1.488.051 | 1.488.051 | - | -  |
-|  DIFERIDOS | 267.651.514 |  | 267.651.514 | 82.971.969  |
-|  OTROS ACTIVOS | 171.680.219 |  | 171.680.219 | 53.220.868  |
-|  **TOTAL** | **644.513.432** | **668.360.567** | **23.847.135** | **(7.392.611,79)**  |
+| ACTIVO | NIIF | LOCAL | DIF | IMPUESTO DIFERIDO |
+|---|---|---|---|---|
+| DISPONIBLE | 11.716.486 | 4.287.031 | 7.429.455 | 2.303.131 |
+| DEUDORES | 191.977.163 | 662.585.485 | - 470.608.322 | (145.888.579,96) |
+| PROPIEDAD PLANTA Y EQUIPO | 1.488.051 | 1.488.051 | - | - |
+| DIFERIDOS | 267.651.514 | | 267.651.514 | 82.971.969 |
+| OTROS ACTIVOS | 171.680.219 | | 171.680.219 | 53.220.868 |
+| TOTAL | 644.513.432 | 668.360.567 | - 23.847.135 | (7.392.611,79) |
 
-|  PASIVO | NIIF | LOCAL | DIF | IMPUESTO DIFERIDO  |
-| --- | --- | --- | --- | --- |
-|  OBLIGACIONES FINANCIERAS | (466.912.213,00) | (409.145.695,00) | 57.766.518 | (17.907.620,58)  |
-|  DIVIDENDOS O PARTICIPACIONES DECR | (1.576.028.373,46) | (1.481.112.896,38) | 94.915.477 | (29.423.797,89)  |
-|  OBLIGACIONES LABORALES | (284.957.991,00) | (272.536.343,00) | 12.421.648 | (3.850.710,88)  |
-|  PASIVOS ESTIMADOS Y PROVISIONES | (317.233.596,12) | (328.465.596,12) | 11.232.000 | 3.481.920  |
-|  ANTICIPOS Y AVANCES RECIBIDOS | (141.805.515,10) | (294.105.438,95) | 152.299.924 | 47.212.976  |
-|  **TOTAL** | **- 2.786.937.689** | **- 2.785.365.969** | **1.571.719** | **(457.232,96)**  |
-|  **IMPUESTO DIFERIDO ACTIVO** |   |   |   | **(7.879.844,76)**  |
+| PASIVO | NIIF | LOCAL | DIF | IMPUESTO DIFERIDO |
+|---|---|---|---|---|
+| OBLIGACIONES FINANCIERAS | (466.912.213,00) | (409.145.695,00) | - 57.766.518 | (17.907.620,58) |
+| DIVIDENDOS O PARTICIPACIONES DECRETADOS EN ACCIONE | (1.576.028.373,46) | (1.481.112.896,38) | - 94.915.477 | (29.423.797,89) |
+| OBLIGACIONES LABORALES | (284.957.991,00) | (272.536.343,00) | - 12.421.648 | (3.850.710,88) |
+| PASIVOS ESTIMADOS Y PROVISIONES | (317.233.596,12) | (328.465.596,12) | 11.232.000 | 3.481.920 |
+| ANTICIPOS Y AVANCES RECIBIDOS | (141.805.515,10) | (294.105.438,95) | 152.299.924 | 47.212.976 |
+| TOTAL | - 2.786.937.689 | - 2.785.365.969 | - 1.571.719 | (487.232,96) |
+
+| | IMPUESTO DIFERIDO ACTIVO |
+|---|---|
+| | (7.879.844,76) |
 
 Durante la vigencia 2020 se reconoció partidas por impuestos Diferidos Pasivo por Impuesto Diferido sobre la revalorización del activo intangible según la Nic 38 y acta 05 del 31 de enero del 2020 Los activos y pasivos por impuestos diferidos se reconocen por el impuesto a las ganancias que se prevé recuperar o pagar con respecto a la ganancia fiscal de periodos contables futuros como resultado de transacciones o sucesos pasados.
 
-## NOTA 18. Otros Pasivos
+**NOTA 18. Otros Pasivos**
 
 Los otros pasivos corresponden anticipos y avances recibidos
 
 Los saldos a 31 de diciembre de esta cuenta se discriminan así:
 
-|  CONCEPTO | 2020 | 2019  |
-| --- | --- | --- |
-|  *Anticipos y avances recibidos* | 141.805.515 | 150.307.530  |
-|  **TOTAL** | **141.805.515** | **150.307.530**  |
+| CONCEPTO | 2020 | 2019 |
+|---|---|---|
+| Anticipos y avances recibidos | 141.805.515 | 150.307.530 |
+| **TOTAL** | **141.805.515** | **150.307.530** |
 
-## NOTA 19. Provisiones
+**NOTA 19. Provisiones**
 
 Las provisiones corresponden Pasivos estimados y provisiones
 
 Los saldos a 31 de diciembre de esta cuenta se discriminan así:
 
-|  CONCEPTO | 2020 | 2019  |
-| --- | --- | --- |
-|  *Pasivos estimados y provisiones* | 800.479.603 | 317.233.596  |
-|  **TOTAL** | **800.479.603** | **317.233.596**  |
+| CONCEPTO | 2020 | 2019 |
+|---|---|---|
+| Pasivos estimados y provisiones | 800.479.603 | 317.233.596 |
+| **TOTAL** | **800.479.603** | **317.233.596** |
 
-## NOTA 20. Patrimonio
+**NOTA 20. Patrimonio**
 
 Agrupa el conjunto de las cuentas que representan el valor residual de comparar el activo total menos el pasivo externo, producto de los recursos netos del ente económico que han sido suministrados por la Sociedad , ya sean directamente o como consecuencia del giro ordinario de sus negocios, quedando los siguientes saldos:
 

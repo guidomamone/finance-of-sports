@@ -70,41 +70,40 @@ NIT 830.100.504 - 0
 
 --- pág. 2 ---
 
-# DEPORTIVO BOYACA CHICO FUTBOL CLUB S.A.
-
-NIT 630.100.504 - 0
+DEPORTIVO BOYACA CHICO FUTBOL CLUB S.A.
+NIT 830.100.504 - 0
 
 Estado del resultado integral y ganancias acumuladas comparativos, para el periodo terminado al 31 de Diciembre de 2.021
-
 (Cifras en pesos Colombianos)
 
-|   | Nota | 31-dic.-21 | 31-dic.-20 | Var Relativa  |
-| --- | --- | --- | --- | --- |
-|  **INGRESOS OPERACIONALES** |  | **5.643.756.579** | **4.139.568.760** |   |
-|  Venta Netas | 15 | 5.643.756.579 | 4.139.568.760 | 36,3%  |
-|  COSTO DE VENTAS | 16 | 4.220.732.308 | 2.809.781.101 | 50,2%  |
-|  **Ganancia bruta** |  | **1.423.024.271** | **1.329.787.659** | **7,0%**  |
-|  Otros ingresos | 17 | 89.667.180 | 65.003.241 | 37,9%  |
-|  Gastos de administración | 18 | 773.681.550 | 769.431.578 | 0,6%  |
-|  Otros gastos | 19 | 177.361.174 | 256.255.918 | -30,8%  |
-|  **Ganancia antes de impuestos** |  | **561.648.727** | **369.103.404** | **52,2%**  |
-|  Gasto por impuesto a las ganancias | 20 | **213.837.000** | **171.279.000** | **24,8%**  |
-|  **Ganancia del año** |  | **347.811.727** | **197.824.404** | **75,8%**  |
-|  Ganancia acumulada al inicio del periodo |  | 1.679.354.353 | 1.481.529.949 |   |
-|  Ganancia al inicio del periodo por adopción NIIF |  | 0 | 0 |   |
-|  (-) Reservas |  | 0 | 0 |   |
-|  (-) Distribución de utilidades |  | 0 | 0 |   |
-|  (+) Ajustes |  | 0 | 0 |   |
+| | Nota | 31-dic.-21 | 31-dic.-20 | Var Relativa |
+|---|---|---|---|---|
+| **INGRESOS OPERACIONALES** | | **5.643.756.579** | **4.139.568.760** | |
+| Venta Netas | 15 | 5.643.756.579 | 4.139.568.760 | 36,3% |
+| COSTO DE VENTAS | 16 | 4.220.732.308 | 2.809.781.101 | 50,2% |
+| **Ganancia bruta** | | **1.423.024.271** | **1.329.787.659** | 7,0% |
+| Otros ingresos | 17 | 89.667.180 | 65.003.241 | 37,9% |
+| Gastos de administración | 18 | 773.681.550 | 769.431.578 | 0,6% |
+| Otros gastos | 19 | 177.361.174 | 256.255.918 | -30,8% |
+| **Ganancia antes de impuestos** | | **561.648.727** | **369.103.404** | 52,2% |
+| Gasto por impuesto a las ganancias | 20 | **213.837.000** | **171.279.000** | 24,8% |
+| **Ganancia del año** | | **347.811.727** | **197.824.404** | 75,8% |
+| Ganancia acumulada al inicio del período | | 1.679.354.353 | 1.481.529.949 | |
+| Ganancia al inicio del período por adopción NIIF | | 0 | 0 | |
+| (-) Reservas | | 0 | 0 | |
+| (-) Distribución de utilidades | | 0 | 0 | |
+| (-+) Ajustes | | 0 | 0 | |
+| Ganancias acumuladas al final del ejercicio | | 2.027.166.080 | 1.679.354.353 | |
 
-**Ricardo Hoyos Angel**
+(Firma manuscrita) Ricardo Hoyos Angel
 Representante Legal
 C.C. No. 79.241.437 de Bogota D.C.
 
-**Alvaro Alfonso Cuello Hoyos**
+(Firma manuscrita) Alvaro Alfonso Cuello Hoyos
 Contador Publico TP 218811 - T
 C.C. No. 1.102.798.113 de Sincelejo Sucre
 
-**Oscar German Aranguren Aranguren**
+(Firma manuscrita) Oscar German Aranguren Aranguren
 Revisor Fiscal TP 36278 - T
 C.C. No. 9.527.877 de Sogamoso Boyaca
 
@@ -142,47 +141,45 @@ C.C. No. 9.527.877 de Sogamoso Boyaca
 
 --- pág. 4 ---
 
-# **DEPORTIVO BOYACA CHICO FUTBOL CLUB S.A.**
-
-NIT 830.190.504 - 0
-
-# **ESTADO DE FLUJOS DE EFECTIVO METODO INDIRECTO A DICIEMBRE 31 DE 2021**
+DEPORTIVO BOYACA CHICO FUTBOL CLUB S.A.
+NIT 830.100.504 - 0
+ESTADO DE FLUJOS DE EFECTIVO METODO INDIRECTO A DICIEMBRE 31 DE 2021
 (Cifras Expresadas en pesos Colombianos y/o salvo que se indique otra cosa)
 
-|  CONCEPTO | 2021 | Diciembre 31 2021 | Diciembre 31 2020  |
-| --- | --- | --- | --- |
-|  **ACTIVIDAD DE OPERACIÓN** |  |  |   |
-|  Utilidad Neta del Ejercicio |  | 347.811.727,00 | 197.824.403,45  |
-|  **PARTIDAS QUE NO AFECTAN EL EFECTIVO** |  |  |   |
-|  Depreciación |  | 17.931.863,00 | 17.931.863,00  |
-|  Ajuste Adopción NIIF |  | 0 | 0  |
-|  **EFECTIVOS NETOS DE RESULTADO** |  | $ 365.743.590,00 | $ 215.756.266,45  |
-|  **ACTIVIDADES DE OPERACIÓN** |  |  |   |
-|  Más: Cambios en las Partidas Operacionales |  |  |   |
-|  (+) : Aumento Obligaciones Laborales |  | 66.158.676,00 | 0,00  |
-|  (+) : Aumento Prestamos Recibidos |  | 0,00 | 369.809.665,00  |
-|  **EFECTIVO GENERADOS EN ACTIVIDADES DE OPERACIÓN** |  | 431.902.266,00 | 585.565.931,45  |
-|  **(-) : ACTIVIDADES DE INVERSION** |  |  |   |
-|  Compras de Propiedad, Planta y Equipo |  | 0 | 0  |
-|  Devolución de Propiedad, Planta y Equipo |  | 0 | 0  |
-|  **FLUJO DE EFECTIVO NETO EN ACTIVIDADES DE INVERSION** |  | $0,00 | $0,00  |
-|  **(-) : ACTIVIDADES DE FINANCIACIÓN** |  |  |   |
-|  (-) : Disminución Capital de trabajo |  | - 43.961.943,00 | - 184.010.730,00  |
-|  (+) : Disminución o amortización de otros activos y pasivos no corrientes |  | - 513.492.455,00 | 94.889.978,55  |
-|  **FLUJO DE EFECTIVO NETO EN ACTIVIDADES DE FINANCIACIÓN** |  | -557.454.398,00 | -89.120.751,45  |
-|  Aumento o Disminución del Efectivo Equivalente en el ejercicio |  | $ -125.552.132,00 | $ 496.445.180,00  |
-|  Saldo Inicial del periodo en Efectivo y Equivalente |  | $ 496.445.180,00 | $0,00  |
-|  **DISPONIBLE A DICIEMBRE 31 DE 2021** |  | $ 370.893.048,00 | $ 496.445.180,00  |
+| CONCEPTO | Diciembre 31 2021 | Diciembre 31 2020 |
+|---|---|---|
+| **ACTIVIDAD DE OPERACIÓN** | | |
+| Utilidad Neta del Ejercicio | 347.811.727,00 | 197.824.403,45 |
+| **PARTIDAS QUE NO AFECTAN EL EFECTIVO** | | |
+| Depreciación | 17.931.863,00 | 17.931.863,00 |
+| Ajuste Adopcion NIIF | 0 | 0 |
+| **EFECTIVOS NETOS DE RESULTADO** | **$ 365.743.590,00** | **$ 215.756.266,45** |
+| **ACTIVIDADES DE OPERACIÓN** | | |
+| **Más: Cambios en las Partidas Operacionales** | | |
+| (+) : Aumento Obligaciones Laborales | 66.158.676,00 | 0,00 |
+| (+) : Aumento Prestamos Recibidos | 0,00 | 369.809.665,00 |
+| **EFECTIVO GENERADOS EN ACTIVIDADES DE OPERACIÓN** | **431.902.266,00** | **585.565.931,45** |
+| **(-) : ACTIVIDADES DE INVERSION** | | |
+| Compras de Propiedad, Planta y Equipo | 0 | 0 |
+| Devolución de Propiedad, Planta y Equipo | 0 | 0 |
+| **FLUJO DE EFECTIVO NETO EN ACTIVIDADES DE INVERSION** | **$0,00** | **$0,00** |
+| **(-) : ACTIVIDADES DE FINANCIACIÓN** | | |
+| (-) : Disminución Capital de trabajo | - 43.961.943,00 | - 184.010.730,00 |
+| (+) :Disminución o amortización de otros activos y pasivos no corrientes | - 513.492.455,00 | 94.889.978,55 |
+| **FLUJO DE EFECTIVO NETO EN ACTIVIDADES DE FINANCIACIÓN** | **-557.454.398,00** | **-89.120.751,45** |
+| Aumento o Disminución del Efectivo Equivalente en el ejercicio | $ -125.552.132,00 | $ 496.445.180,00 |
+| Saldo Inicial del periodo en Efectivo y Equivalente | $ 496.445.180,00 | $0,00 |
+| **DISPONIBLE A DICIEMBRE 31 DE 2021** | **$ 370.893.048,00** | **$ 496.445.180,00** |
 
-Ricardo Hoyos Angel
+(Firma manuscrita) Ricardo Hoyos Angel
 Representante Legal
 C.C. No. 79.241.437 de Bogota D.C.
 
-Álvaro Alfonso Cuello Hoyos
+(Firma manuscrita) Alvaro Alfonso Cuello Hoyos
 Contador Publico TP 218811 - T
 C.C. No. 1.102.798.113 de Sincelejo Sucre
 
-Oscar Germán Aranguren A
+(Firma manuscrita) Oscar Germán Aranguren A
 Revisor Fiscal
 TP 36.278-T
 CC 9527877
@@ -549,68 +546,69 @@ Estan representados en los gastos incurridos dentro del periodo grabable, los cu
 
 --- pág. 11 ---
 
-# **NOTA 19: Otros Gastos**
+**NOTA 19: Otros Gastos**
 
 Esta cuenta esta representada por los gastos financieros, como intereses, comisiones y GMF, gastos extraordinarios como retenciones asumidas, y diversos gastos necesarios en el proceso normal de las operaciones comerciales.
 
-|   | **31-dic.-21** | **31-dic.-20**  |
-| --- | --- | --- |
-|  Financieros | $ 91.659.121 | $ 169.917.235  |
-|  Pérdidas en Ventas y Retiros de Bienes | $ 0 | $ 426.255  |
-|  Gastos extraordinarios | $ 19.413.806 | $ 8.625.478  |
-|  Gastos diversos | $ 66.288.247 | $ 77.286.950  |
-|  **Total...** | **$ 177.361.174** | **$ 256.255.918**  |
+| | 31-dic.-21 | 31-dic.-20 |
+|---|---|---|
+| Financieros | $ 91.659.121 | $ 169.917.235 |
+| Perdidas en Ventas y Retiros de Bienes | $ 0 | $ 426.255 |
+| Gastos extraordinarios | $ 19.413.806 | $ 8.625.478 |
+| Gastos diversos | $ 66.288.247 | $ 77.286.950 |
+| Total………………………………. | $ 177.361.174 | $ 256.255.918 |
 
-# **NOTA 20: Provision impuesto sobre la renta**
+**NOTA 20: Provision impuesto sobre la renta**
 
-Para el año 2.021 los impuestos sobre la renta corresponden al 31% de la utilidad fiscal, que se liquida así:
+Para el año 2.021 los impuestos sobre la renta corresponden al 31% de la utilidad fiscal, que se liquida asi:
 
 Generalmente la utilidad fiscal difiere de la utilidad contable, en razón a que la normatividad tributaria excluye algunos gastos que no son procedentes fiscalmente, e incluye a su vez algunos ingresos que solo tienen efecto fiscal y no contable.
 
-En razón a lo anterior se elaboró la siguiente conciliación entre la utilidad contable y la renta liquida.
+En razón a lo anterior se elaboró la siguiente conciliación entre la utilidad contable y la renta líquida.
 
-# **DEPORTIVO BOYACA CHICO FUTBOL CLUB S.A.**
-
+DEPORTIVO BOYACA CHICO FUTBOL CLUB S.A.
 DECLARACION DE RENTA AÑO GRAVABLE 2.021
 
-# **CONCILIACION ENTRE LA UTILIDAD CONTABLE Y LA RENTA LIQUIDA**
+CONCILIACION ENTRE LA UTILIDAD CONTABLE Y LA RENTA LIQUIDA
 
-|  **Utilidad contable a 31/12/2021** |  | **$ 561.648.973**  |
-| --- | --- | --- |
-|  **MAS:** |  | **$ 128.146.808**  |
-|  Intereses de mora no deducible | $ 14.812.000 |   |
-|  GMF 50% | $ 6.770.500 |   |
-|  Multas, Sanciones y Demandas | $ 58.416.247 |   |
-|  Intereses Preconstruidos por cuentas a cobrar accionistas | $ 47.698.487 |   |
-|  Detenido Cartera | $ - |   |
-|  Otros gastos no deducibles | $ 24.090 |   |
-|  Diferencia Aportes SGSS (Pagado vs Causado) | $ - |   |
-|  Impuestos | $ 425.484 |   |
-|  **MENOS:** |  | **$ -**  |
-|  Ingresos No Constituido de Renta ni Ganancia Ocacional | $ - |   |
-|  Ingresos No Procedentes | $ - |   |
-|  Deducción Intangibles - No recuperable | $ - |   |
-|  **RENTA LIQUIDA FISCAL** |  | **$ 689.795.781**  |
-|  **RENTA PRESUNTIVA** |  | **$ -**  |
-|  **IMPUESTO SOBRE LA RENTA 31 %** |  | **$ 213.836.692**  |
-|  **Diferencia entre la utilidad contable y la renta...** |  | **$ 128.146.808**  |
+| | | | |
+|---|---|---|---|
+| Utilidad contable a 31/12/2021 | | | $ 561.648.973 |
+| MAS: | | | $ 128.146.808 |
+| Intereses de mora no deducible | $ | 14.812.000 | |
+| GMF 50% | $ | 6.770.500 | |
+| Multas, Sanciones y Demandas | $ | 58.416.247 | |
+| Intereses Presuntivos por cuentas a cobrar accionistas | $ | 47.698.487 | |
+| Deterioro Cartera | $ | - | |
+| Otros gastos no deducibles | $ | 24.090 | |
+| Diferencia Aportes SGSS (Pagado vs Causado) | $ | - | |
+| Impuestos | $ | 425.484 | |
+| MENOS: | | | $ - |
+| Ingresos No Constitutivo de Renta ni Ganancia Ocasional | $ | - | |
+| Ingresos No Procedentes | $ | - | |
+| Deducción Intangibles - No recuperable | $ | - | |
+| RENTA LIQUIDA FISCAL | | | $ 689.795.781 |
+| RENTA PRESUNTIVA | | | $ - |
+| IMPUESTO SOBRE LA RENTA 31% | | | $ 213.836.692 |
+| Diferencia entre la utilidad contable y la renta…………………………… | | | $ 128.146.808 |
 
 Impuesto a las Ganancias:
 
-|   | **31-dic.-21** | **31-dic.-20**  |
-| --- | --- | --- |
-|  Impuesto sobre las utilidades corriente | $ 213.837.000 | $ 171.279.000  |
-|  Impuesto sobre las utilidades diferido | $ 0 | $ 0  |
-|  **Total...** | **$ 213.837.000** | **$ 171.279.000**  |
+| | 31-dic.-21 | 31-dic.-20 |
+|---|---|---|
+| Impuesto sobre las utilidades corriente | $ 213.837.000 | $ 171.279.000 |
+| Impuesto sobre las utilidades diferido | $ 0 | $ 0 |
+| Total………………………………. | $ 213.837.000 | $ 171.279.000 |
 
-**Ricardo Hoyos Angel**  
- Representante Legal  
- C.C. No. 79.241.437 de Bogota D.C.
+(Firma manuscrita) Ricardo Hoyos Angel
+Representante Legal
+C.C. No. 79.241.437 de Bogota D.C.
 
-**Alvaro Alfonso Cuello Hoyos**  
- Contador Publico TP 218811 - T  
- C.C. No. 1.102.798.113 de Sincelejo Sucre
+(Firma manuscrita) Alvaro Alfonso Cuello Hoyos
+Contador Publico TP 218811 - T
+C.C. No. 1.102.798.113 de Sincelejo Sucre
 
-**Oscar German Aranguren Aranguren**  
- Revisor Fiscal TP 36278 - T  
- C.C. No. 9.527.877 de Sogamoso Boyaca
+(Firma manuscrita) Oscar German Aranguren Aranguren
+Revisor Fiscal TP 36278 - T
+C.C. No. 9.527.877 de Sogamoso Boyaca
+
