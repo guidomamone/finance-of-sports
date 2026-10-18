@@ -216,6 +216,12 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
   `Generados/tablero/*.csv` (no se trackean); cómo se sube una foto nueva está en la cabecera de la tool. El gasto por país atribuye
   también las llamadas de Claude API que traen la ruta del PDF: US$ 555 de 759. Mockup aprobado: "Tablero del pipeline" de "Pantallas FoS".
 
+- To-do 282 e (contrato de fos-finanzas-2, aprobado por Guido): la tarjeta "Quién auditó estos números" (`js/auditoria.js`) lee el campo
+  opcional `alcance`. "revision_limitada" y "procedimientos_acordados" reemplazan el chip del dictamen por uno gris ("Revisión limitada",
+  "Sin auditoría"); "proposito_especial" y "grupo" lo dejan y suman uno gris ("Estados para la licencia", "Auditoría del grupo dueño"),
+  cada uno con la explicación aprobada. Sin el campo, como antes. El dato llega con el merge de finanzas (d4e470bfd2); probado con los
+  cuatro valores puestos en memoria sobre Arsenal 2024. ASSET_V 1282.
+
 ### Qué queda (para TODO)
 
 - Borrar el 253. Sumar a ESTADO dónde está el tablero y cómo se actualiza (cabecera de `tools/tablero.mjs`).
