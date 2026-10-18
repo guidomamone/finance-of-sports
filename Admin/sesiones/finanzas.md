@@ -116,3 +116,22 @@
 
 - La tarjeta Estructura muestra los ingresos de la asociación en Vizela, Belenenses, Chaves, Académica, Braga 2022-23 y Marítimo (además de
   Vitória, Tondela y Braga 2020-21).
+
+## Después del tercer merge del 2026-10-18 (la sesión cierra por contexto)
+
+### Qué cambió
+
+- Nada nuevo después del merge del 281: este bloque deja escrito lo que queda para la sesión que sigue en fos-finanzas.
+
+### Qué queda (para TODO)
+
+- 282 a: sourcing de los 88 informes del auditor "FALTA EN EL PDF" (`node tools/auditoria.mjs --pendientes`), con la skill club-sourcing,
+  de a un país (Italia es la mayoría: Lazio, Napoli, Torino, Hellas Verona, Cremonese, Roma, Juventus; después Portugal, los 10
+  japoneses 2025, Hamburgo, San Lorenzo, Argentinos y otros).
+- 294: los clubes de `Admin/registros/cola-borradores/altas-2026-10-17.md` cuando estén publicados (Viking, Vålerenga, Luzern, St. Gallen,
+  Molde, Go Ahead Eagles, Basel, Pardubice, Aalesund, Fredrikstad, Sarpsborg 08). Bahia: el eslabón CFG > City Football Group Brazil
+  está citado con el contrato de la S.A.F., sin %; una cita del registro societario de Brasil (QSA del CNPJ) lo dejaría directo.
+- 281: União de Leiria 2023-24, conseguir un documento con la DR de la asociación (el PDF que tenemos es solo el anexo).
+- Decisión pendiente de Guido: si los ingresos de la otra entidad incluyen los "Juros e rendimentos similares obtidos" (hoy sí, en
+  Marítimo 2021-2025 y Porto 2020, 2024 y 2025; no se suman los renglones netos de imparidad ni de provisiones). Si es que no, sacar ese
+  renglón de esas 8 líneas `ingresos` de `Admin/registros/entidades.jsonl` y correr `node tools/entidades.mjs`.
