@@ -165,13 +165,13 @@ const pct = (errs) => {
 };
 
 // ---------------------------------------------------------------------------- estimaciones publicables
-// SOLO el caso "falta un año de un club que tenemos" (el de club nuevo pierde contra la mediana de la liga: no se publica), y solo a 2
-// años o menos de un balance real (más lejos no está medido). El año es el del EJERCICIO, el mismo de data/rankings/: así el día que se
+// SOLO el caso "falta un año de un club que tenemos", con la INTERPOLACIÓN SIMPLE entre sus años reales (no la regresión, que empata con
+// ella), y solo a 2 años o menos de un balance real (más lejos no está medido). El de club nuevo (50% de error con la posición) queda
+// APAGADO hasta tener más datos (Guido, 2026-10-18). El año es el del EJERCICIO, el mismo de data/rankings/: así el día que se
 // carga el real el choque se ve directo. LO REAL GANA: nunca se escribe un estimado para un club-año cargado (data/club-index.js), y
 // como cargar.mjs vuelve a correr esto después de cada carga, el estimado de un año que se acaba de cargar desaparece solo.
 // INTERRUPTOR: mientras data/estimados/ no exista, nada se publica y --check pasa. Se prende con --escribir (decisión de Guido).
 const DIR_EST = resolve(ROOT, 'data', 'estimados');
-const ERROR_MEDIDO = { entre: 20, afuera: 26 }; // error mediano de la validación por año (node tools/estimar.mjs --medir)
 function estimaciones() {
   const rows = datos(); const ix = indices(rows); const vacio = new Set();
   const ci = { window: {} }; vm.runInNewContext(readFileSync(resolve(ROOT, 'data', 'club-index.js'), 'utf8'), ci); const CI = ci.window.CLUB_INDEX;
@@ -183,10 +183,17 @@ function estimaciones() {
   const lc = { window: {} }; vm.runInNewContext(readFileSync(resolve(ROOT, 'data', 'leagues.js'), 'utf8').replace(/^const /gm, 'var '), lc);
   const dc = { window: {} }; vm.runInNewContext(readFileSync(resolve(ROOT, 'data', 'deflactores.js'), 'utf8'), dc);
   const D = dc.window.DEFLACTORES.USD.valores; const ultimo = Math.max(...Object.keys(D).map(Number));
-  // el modelo, ajustado con todos los años reales
-  const X = [], Y = [];
-  for (const o of rows) { const m = M(ix, o, vacio), h = H(ix, o, vacio); if (m == null || h == null) continue; X.push(vector(m, h, I(ix, o, vacio), o.tier, o.q)); Y.push(o.y); }
-  const w = ajustar(X, Y); const resid = X.map((x, i) => Y[i] - predecir(w, x)); const lo = cuantil(resid, 0.1), hi = cuantil(resid, 0.9);
+  // INTERPOLACIÓN SIMPLE (decisión de Guido, 2026-10-18: la regresión empata con ella, 22% contra 22%, y esta se explica en una línea).
+  // Su error y su rango salen de los años reales: cada club-año real a 2 años o menos de otro, interpolado SIN él (validación por año),
+  // separado en "entre dos reales" y "antes o después" (en ese caso, el año real más cercano).
+  const errs = { entre: [], afuera: [] };
+  for (const r of rows) {
+    const otros = (ix.porClub.get(r.id) || []).filter((o) => o !== r); if (!otros.length) continue;
+    if (Math.min(...otros.map((o) => Math.abs(o.anio - r.anio))) > 2) continue;
+    const i = I(ix, r, new Set([r])); if (i == null) continue;
+    errs[otros.some((o) => o.anio < r.anio) && otros.some((o) => o.anio > r.anio) ? 'entre' : 'afuera'].push(r.y - i);
+  }
+  const banda = Object.fromEntries(Object.entries(errs).map(([k, e]) => [k, { lo: cuantil(e, 0.1), hi: cuantil(e, 0.9), error: Math.round(mediana(e.map((x) => Math.abs(Math.exp(-x) - 1))) * 100), n: e.length }]));
   const out = {}; const r3 = (v) => Math.round(v * 1000) / 1000;
   for (const [liga, ys] of Object.entries(g.window.LEAGUE_GAPS || {})) for (const [S, v] of Object.entries(ys)) {
     if (v.reciente) continue;
@@ -199,13 +206,15 @@ function estimaciones() {
       const propios = ix.porClub.get(f.id) || []; if (!propios.length) continue;
       const dist = Math.min(...propios.map((o) => Math.abs(o.anio - anio))); if (dist > 2) continue;
       const t = { id: f.id, liga, anio, pais: liga.slice(0, 2), tier: Math.min(3, lc.window.LEAGUES[liga]?.tier || 1) };
-      const m = M(ix, t, vacio), h = H(ix, t, vacio), i = I(ix, t, vacio); if (m == null || h == null || i == null) continue;
-      const p = predecir(w, vector(m, h, i, t.tier, CON_POS ? posicion(f.id, liga, anio, +S) : null)); const nom = (x) => r3(Math.exp(x) * D[Math.min(anio, ultimo)] / D[ultimo]);
-      const entre = propios.some((o) => o.anio < anio) && propios.some((o) => o.anio > anio);
-      ((out[liga] ??= {})[anio] ??= []).push({ id: f.id, revenue: nom(p), lo: nom(p + lo), hi: nom(p + hi), caso: entre ? 'entre' : 'afuera', error: ERROR_MEDIDO[entre ? 'entre' : 'afuera'] });
+      const p = I(ix, t, vacio); if (p == null) continue;
+      const nom = (x) => r3(Math.exp(x) * D[Math.min(anio, ultimo)] / D[ultimo]);
+      const antes = propios.filter((o) => o.anio < anio).sort((a, b) => b.anio - a.anio)[0], despues = propios.filter((o) => o.anio > anio).sort((a, b) => a.anio - b.anio)[0];
+      const caso = antes && despues ? 'entre' : 'afuera'; const b = banda[caso];
+      // `de`: los ejercicios reales de los que sale (para el "por qué" en pantalla)
+      ((out[liga] ??= {})[anio] ??= []).push({ id: f.id, revenue: nom(p), lo: nom(p + b.lo), hi: nom(p + b.hi), caso, error: b.error, de: [antes?.anio, despues?.anio].filter(Boolean) });
     }
   }
-  return { out, CI };
+  return { out, CI, banda };
 }
 function archivosEstimados(out) {
   const files = {};
@@ -217,7 +226,8 @@ function archivosEstimados(out) {
 }
 
 if (import.meta.url === `file://${process.argv[1]}` && !process.argv.includes('--medir')) {
-  const { out, CI } = estimaciones(); const files = archivosEstimados(out);
+  const { out, CI, banda } = estimaciones(); const files = archivosEstimados(out);
+  if (!process.argv.includes("--check")) console.log(`interpolación medida con los años reales: ${Object.entries(banda).map(([k, b]) => `${k === "entre" ? "entre dos reales" : "antes o después"} error mediano ${b.error}% (n ${b.n}, rango del 80% x${Math.exp(b.lo).toFixed(2)} a x${Math.exp(b.hi).toFixed(2)})`).join(" · ")}`);
   const n = Object.values(out).reduce((s, ys) => s + Object.values(ys).reduce((t, l) => t + l.length, 0), 0);
   if (process.argv.includes('--check')) {
     if (!existsSync(DIR_EST)) { console.log('estimar: data/estimados/ no existe (no se publican estimaciones): nada que chequear'); process.exit(0); }
