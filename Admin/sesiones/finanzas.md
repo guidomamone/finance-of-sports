@@ -50,14 +50,25 @@
 - To-do 282 b: Spartak 2022, el informe del auditor transcripto palabra por palabra de las 3 páginas escaneadas
   (`Clubes/Rusia/Spartak Moscow/2022-auditorskoe-zaklyuchenie.md`, nuevo) y su línea: ООО «Аудиторская компания «Мариллион», sin
   salvedades, sin incertidumbre sobre la continuidad (firmado el 23-03-2023). Quedan 72 informes sin transcribir, todos "FALTA EN EL PDF".
-  ASSET_V 1280 en la rama.
+- To-do 282 c: los 40 balances sin línea de auditoría, cerrados (0 sin línea; 942 balances con línea).
+  - Ajuste `anio` en 4 PDF sin año en el nombre (Boca `balance-01-07-22-al-30-06-23-firmado` = 2023, Unión `memoria-y-balance-117` = 2023 y
+    `-119` = 2025, AEK `AEK_oikonomikes_katastaseis` = 2016), para que `auditoria.mjs` encuentre su .md.
+  - `tools/auditoria.mjs`: un documento de `documentos-parciales.txt` cuenta si es la fuente (`sourceId`) del año publicado (Atalanta 2022,
+    6 meses; decisión de Guido).
+  - FALTA EN EL PDF (pasan al sourcing del 282 a): San Lorenzo 2011 y Argentinos 2015 (el año sale de la columna comparativa del balance
+    siguiente), los 10 japoneses 2025 (el resumen de la J.League no trae informe; decisión de Guido), Marítimo 2024 y Portimonense
+    2022-2024 (todas las páginas transcriptas, sin la Certificação).
+  - 28 líneas por subagentes Sonnet (Bélgica, Estonia, Portugal y Boca, Unión, AEK, Atalanta), con las citas verificadas por la tool. Sin
+    informe en el documento: Harju JK Laagri 2025 (ninguna mención de un auditor) y RAAL La Louvière 2025 (la lista de comisarios está
+    vacía). Boavista 2024: abstención (escusa de opinião) con incertidumbre material; Portimonense 2025: con salvedades e incertidumbre
+    material. Incertidumbre material también en Lierse, Lommel, Patro Eisden, RWDM, FCI Levadia, Kuressaare, Tallinna Kalev y Paide.
+  ASSET_V 1281 en la rama.
 
 ### Qué queda (para TODO)
 
 - 294 c: los otros clubes del borrador (Viking, Vålerenga, Luzern, St. Gallen, Molde, Go Ahead Eagles, Basel, Pardubice, Aalesund,
   Fredrikstad, Sarpsborg 08) cuando estén publicados; el borrador tiene la entidad de cada uno con cita.
-- 282 c: con los 17 clubes nuevos de onboarding, los balances sin línea de auditoría pasan de 23 a 40 (`node tools/auditoria.mjs
-  --pendientes`).
+- 282 a: los informes FALTA EN EL PDF son ahora 88 (`node tools/auditoria.mjs --pendientes`), con los 16 que sumó el 282 c.
 
 ### Qué deja de ser cierto en ESTADO
 

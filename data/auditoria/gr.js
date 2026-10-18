@@ -2,6 +2,19 @@
 window.CLUB_AUDITORIA = window.CLUB_AUDITORIA || {};
 Object.assign(window.CLUB_AUDITORIA, {
  "aekathens-gr": {
+  "2016": {
+   "auditor": {
+    "nombre": "Forvis Mazars",
+    "tipo": "firma",
+    "legal": "MAZARS Ορκωτοί Ελεγκτές Λογιστές"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Grecia/AEK Athens/AEK_oikonomikes_katastaseis.md",
+    "linea": 316
+   }
+  },
   "2017": {
    "auditor": {
     "nombre": "Forvis Mazars",
