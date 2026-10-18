@@ -530,8 +530,8 @@ Object.assign(window.CLUB_AUDITORIA, {
     "nombre": "Bertora & Asociados",
     "tipo": "firma"
    },
-   "dictamen": "con_salvedades",
-   "continuidad": true,
+   "dictamen": "abstencion",
+   "continuidad": false,
    "fuente": {
     "md": "Clubes/Argentina/San Lorenzo/memoria-y-balance-2012-2013.md",
     "linea": 1907
@@ -548,11 +548,11 @@ Object.assign(window.CLUB_AUDITORIA, {
     "nombre": "Bertora & Asociados S.R.L.",
     "tipo": "firma"
    },
-   "dictamen": "con_salvedades",
+   "dictamen": "sin_salvedades",
    "continuidad": false,
    "fuente": {
     "md": "Clubes/Argentina/San Lorenzo/memoria-y-balance-2014-2015.md",
-    "linea": 105
+    "linea": 109
    }
   },
   "2016": {
@@ -560,11 +560,11 @@ Object.assign(window.CLUB_AUDITORIA, {
     "nombre": "Bertora & Asociados S.R.L.",
     "tipo": "firma"
    },
-   "dictamen": "con_salvedades",
+   "dictamen": "sin_salvedades",
    "continuidad": false,
    "fuente": {
     "md": "Clubes/Argentina/San Lorenzo/memoria-y-balance-2015-2016.md",
-    "linea": 2254
+    "linea": 2258
    }
   },
   "2017": {

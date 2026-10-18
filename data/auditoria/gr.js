@@ -248,7 +248,7 @@ Object.assign(window.CLUB_AUDITORIA, {
     "nombre": "ΣΟΛ Α.Ε.",
     "tipo": "firma"
    },
-   "dictamen": "con_salvedades",
+   "dictamen": "sin_salvedades",
    "continuidad": false,
    "fuente": {
     "md": "Clubes/Grecia/Aris/Aris_FS_notes_ELP_2019-06-30.md",

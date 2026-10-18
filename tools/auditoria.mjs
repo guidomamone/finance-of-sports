@@ -17,6 +17,10 @@
 //   auditor.nombre puede ser null cuando el informe no imprime quién firma; la nota lo dice.
 //   continuidad: true si el informe marca una incertidumbre material sobre la continuidad (empresa en funcionamiento, going concern),
 //   con su cita en citas.continuidad; es aparte del dictamen. Otros párrafos de énfasis no se registran.
+//   CRITERIO (Guido, 2026-10-18): (1) un énfasis que habla de continuidad, patrimonio negativo o apoyo del accionista sin decir que haya
+//   una incertidumbre material es continuidad false, con nota "ÉNFASIS CONTINUIDAD:"; (2) alcanza con que lo diga el título del párrafo;
+//   (3) si el título de la base dice "con salvedades" y el párrafo de opinión es limpio, manda el párrafo de opinión; (4) opinión limpia
+//   sobre una parte del balance y abstención sobre el resto es abstencion.
 //   La entidad que organiza una liga (AFA, LFP) va con "ligaId" (de data/leagues.js) en vez de "clubId" y con "entidad":{"nombre","legal"?};
 //   sus citas no pasan por quien.mjs (no es un club del sitio). Sale en data/auditoria/_ligas.js (window.LIGA_AUDITORIA[ligaId][anio]).
 //   nota (opcional): una aclaración interna para la próxima sesión; no se publica.

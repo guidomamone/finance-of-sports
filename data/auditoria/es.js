@@ -105,7 +105,7 @@ Object.assign(window.CLUB_AUDITORIA, {
     "legal": "Crowe Auditores España, S.L.P."
    },
    "dictamen": "sin_salvedades",
-   "continuidad": true,
+   "continuidad": false,
    "fuente": {
     "md": "Clubes/España/FC Barcelona/cuentas-anuales-y-auditoria-2024-25.md",
     "linea": 39
@@ -291,7 +291,7 @@ Object.assign(window.CLUB_AUDITORIA, {
     "legal": "Ernst & Young, S.L."
    },
    "dictamen": "sin_salvedades",
-   "continuidad": true,
+   "continuidad": false,
    "fuente": {
     "md": "Clubes/España/Valencia CF/cuentas-anuales-2024-2025.md",
     "linea": 36

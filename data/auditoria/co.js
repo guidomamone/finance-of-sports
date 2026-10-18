@@ -136,7 +136,7 @@ Object.assign(window.CLUB_AUDITORIA, {
     "tipo": "persona"
    },
    "dictamen": "sin_salvedades",
-   "continuidad": true,
+   "continuidad": false,
    "fuente": {
     "md": "Clubes/Colombia/Fortaleza CEIF/dictamen-revisor-fiscal-2022.md",
     "linea": 15

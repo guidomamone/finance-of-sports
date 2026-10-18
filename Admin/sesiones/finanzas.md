@@ -128,11 +128,10 @@
   Torino 2018-2025, Hellas Verona, Cremonese, Roma 2013 y 2022-2025, Juventus 2022 y 2024, Racing 2009-2011, 2014 y 2020, Marítimo,
   Académico de Viseu, Rusia (Spartak, Zenit, Lokomotiv, Dynamo Moscú y otros, con el PDF del informe sin transcribir), entre otros) y
   escribir su línea; los 23 balances sin .md.
-- 282: decisiones de Guido pendientes sobre el vocabulario (ver el mensaje del cierre): énfasis de continuidad sin "incertidumbre
-  material" (91 quedaron en false con nota "ÉNFASIS CONTINUIDAD:", y unos 20 de las primeras tandas en true); continuidad marcada por el
-  título del párrafo y no por el cuerpo (7); informes con "base para la opinión con salvedades" y párrafo de opinión limpio (11, tratados
-  distinto); abstención parcial (opinión limpia sobre el estado patrimonial y abstención sobre resultados: Racing 2016, Rosario Central
-  2023, San Lorenzo 2013 como con_salvedades).
+- (Resuelto en la sesión) Criterio de Guido para el dictamen, aplicado al registro y escrito en el encabezado de tools/auditoria.mjs:
+  énfasis de continuidad sin "incertidumbre material" = false (17 corregidos); alcanza el título del párrafo; manda el párrafo de opinión
+  sobre el título de la base (5 corregidos: San Lorenzo 2015-16, Remo 2019 y 2025, Aris 2019); abstención parcial = abstencion (San
+  Lorenzo 2013). Para CONVENCIONES-DATOS.
 - 282: nombres de firma tomados de OCR ruidoso, a verificar contra el PDF (Union SG 2025, Getafe 2024-2025, Elche 2025, Goiás 2008,
   Godoy Cruz 2020); revisores que firman sin ser auditoría plena (Criciúma 2015-2019 "revisión especial", Osijek 2025, Como 2025 revisión
   limitada, Kifisia 2022-2024 estados para licenciamiento, Club América 2025 ficha BMV de Ollamani).

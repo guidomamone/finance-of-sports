@@ -42,7 +42,7 @@ Object.assign(window.CLUB_AUDITORIA, {
     "tipo": "firma"
    },
    "dictamen": "con_salvedades",
-   "continuidad": true,
+   "continuidad": false,
    "fuente": {
     "md": "Clubes/Brasil/America Mineiro/demonstracoes-financeiras-2025.md",
     "linea": 52
@@ -687,7 +687,7 @@ Object.assign(window.CLUB_AUDITORIA, {
     "tipo": "firma"
    },
    "dictamen": "con_salvedades",
-   "continuidad": true,
+   "continuidad": false,
    "fuente": {
     "md": "Clubes/Brasil/Ferroviaria/balanco-2010.md",
     "linea": 83
@@ -699,7 +699,7 @@ Object.assign(window.CLUB_AUDITORIA, {
     "tipo": "firma"
    },
    "dictamen": "con_salvedades",
-   "continuidad": true,
+   "continuidad": false,
    "fuente": {
     "md": "Clubes/Brasil/Ferroviaria/balanco-2012.md",
     "linea": 85
@@ -887,7 +887,7 @@ Object.assign(window.CLUB_AUDITORIA, {
     "tipo": "firma"
    },
    "dictamen": "con_salvedades",
-   "continuidad": true,
+   "continuidad": false,
    "fuente": {
     "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2008-2007.md",
     "linea": 714
@@ -899,7 +899,7 @@ Object.assign(window.CLUB_AUDITORIA, {
     "tipo": "firma"
    },
    "dictamen": "con_salvedades",
-   "continuidad": true,
+   "continuidad": false,
    "fuente": {
     "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2009-2008.md",
     "linea": 453
@@ -911,7 +911,7 @@ Object.assign(window.CLUB_AUDITORIA, {
     "tipo": "firma"
    },
    "dictamen": "con_salvedades",
-   "continuidad": true,
+   "continuidad": false,
    "fuente": {
     "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2010-2009.md",
     "linea": 102
@@ -923,7 +923,7 @@ Object.assign(window.CLUB_AUDITORIA, {
     "tipo": "firma"
    },
    "dictamen": "con_salvedades",
-   "continuidad": true,
+   "continuidad": false,
    "fuente": {
     "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2011-2010.md",
     "linea": 86
@@ -935,7 +935,7 @@ Object.assign(window.CLUB_AUDITORIA, {
     "tipo": "firma"
    },
    "dictamen": "con_salvedades",
-   "continuidad": true,
+   "continuidad": false,
    "fuente": {
     "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.md",
     "linea": 75
@@ -947,7 +947,7 @@ Object.assign(window.CLUB_AUDITORIA, {
     "tipo": "firma"
    },
    "dictamen": "con_salvedades",
-   "continuidad": true,
+   "continuidad": false,
    "fuente": {
     "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2013-2012.md",
     "linea": 49
@@ -959,7 +959,7 @@ Object.assign(window.CLUB_AUDITORIA, {
     "tipo": "firma"
    },
    "dictamen": "con_salvedades",
-   "continuidad": true,
+   "continuidad": false,
    "fuente": {
     "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2014-2013.md",
     "linea": 68
@@ -971,7 +971,7 @@ Object.assign(window.CLUB_AUDITORIA, {
     "tipo": "firma"
    },
    "dictamen": "con_salvedades",
-   "continuidad": true,
+   "continuidad": false,
    "fuente": {
     "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2015-2014.md",
     "linea": 69
@@ -983,7 +983,7 @@ Object.assign(window.CLUB_AUDITORIA, {
     "tipo": "firma"
    },
    "dictamen": "con_salvedades",
-   "continuidad": true,
+   "continuidad": false,
    "fuente": {
     "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2016-2015.md",
     "linea": 14
@@ -995,7 +995,7 @@ Object.assign(window.CLUB_AUDITORIA, {
     "tipo": "firma"
    },
    "dictamen": "con_salvedades",
-   "continuidad": true,
+   "continuidad": false,
    "fuente": {
     "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2017-2016.md",
     "linea": 37
@@ -1462,11 +1462,11 @@ Object.assign(window.CLUB_AUDITORIA, {
     "nombre": "ANEND Auditores Independentes SS",
     "tipo": "firma"
    },
-   "dictamen": "con_salvedades",
+   "dictamen": "sin_salvedades",
    "continuidad": false,
    "fuente": {
     "md": "Clubes/Brasil/Remo/parecer-auditoria-2019.md",
-    "linea": 20
+    "linea": 18
    }
   },
   "2020": {
@@ -1516,11 +1516,11 @@ Object.assign(window.CLUB_AUDITORIA, {
     "nombre": "AUDICON auditoria, consultoria e contabilidade",
     "tipo": "firma"
    },
-   "dictamen": "con_salvedades",
+   "dictamen": "sin_salvedades",
    "continuidad": false,
    "fuente": {
     "md": "Clubes/Brasil/Remo/demonstracoes-financeiras-2025.md",
-    "linea": 45
+    "linea": 43
    }
   }
  },
