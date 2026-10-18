@@ -122,6 +122,7 @@ Mitigaciones:
   primeras y últimas filas.
 - b) `localizar.mjs` (IA, ~US$ 0,05) ve las fichas y elige: los bloques del estado de resultados, las notas de ingresos y de gastos, la
   escala, la moneda, las columnas y el perímetro.
+  Medición de modelo (to-do 288): `--lista <x> --modelo opus|sonnet` escribe `.ubicacion.<modelo>.json`, sin pisar el de la corrida.
 - c) Si el documento no tiene estado de resultados (memoria sola, dictamen), queda como fuente.
 - d) **Compuerta antes de pagar** (Versión 441, `antes-de-localizar.mjs`; solo documentos sin `.ubicacion.json`):
 

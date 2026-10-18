@@ -31,6 +31,8 @@
 //   node tools/localizar.mjs "<pdf>" [...]          ENSAYO: arma el pedido y estima el costo, sin API
 //   node tools/localizar.mjs "<pdf>" --ejecutar     llama a Claude (no repite si ya existe el .ubicacion.json; --rehacer lo fuerza)
 //   node tools/localizar.mjs --lista <archivo> [--ejecutar]
+//   node tools/localizar.mjs --lista <archivo> --modelo opus|sonnet [--ejecutar]   (to-do 288) MEDICIÓN: la localización con ese modelo, en
+//        .ubicacion.<modelo>.json (no pisa ni usa el .ubicacion.json), con el perímetro del club como en lote.mjs. Nada más la lee.
 // ============================================================================
 
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
@@ -38,7 +40,7 @@ import { resolve } from 'node:path';
 import { indiceBloques, ficha, textoDeBloque, VERSION_AMPLIADO } from './indice-bloques.mjs';
 import { derivado } from './rutas.mjs';
 import { shaMd } from './cache-al-dia.mjs'; // (Versión 445) huella del .md con el que se hizo el caché
-import { ajusteDe } from './ajustes.mjs';
+import { ajusteDe, ajustePerimetroDe } from './ajustes.mjs';
 import { esAMano } from './extraer.mjs';
 import { llamarClaude, tokensDe, usdEstimado, MODELO } from './claude-llamada.mjs';
 
@@ -109,9 +111,12 @@ export function aplicarAjusteEstado(datos, pdf, ajuste = ajusteDe(pdf, 'estado')
   return datos;
 }
 
-export async function localizar(pdf, { registro, perimetroClub = null, ejecutar = false, rehacer = false, ampliado = false, reintento = null, notasComoEstado = false, pistaResultado = null } = {}) {
+// (to-do 288) `modelo` (opus | sonnet), solo desde la medición del CLI: otro archivo (.ubicacion.<modelo>.json) y ese modelo en las dos llamadas.
+const MODELOS = { opus: 'claude-opus-5-5', sonnet: 'claude-sonnet-5-5' };
+export async function localizar(pdf, { registro, perimetroClub = null, ejecutar = false, rehacer = false, ampliado = false, reintento = null, notasComoEstado = false, pistaResultado = null, modelo = null } = {}) {
   const { md, texto } = pedido(pdf, registro, perimetroClub);
-  const out = resolve(ROOT, derivado(md, '.ubicacion.json'));
+  const idModelo = modelo ? MODELOS[modelo] : MODELO;
+  const out = resolve(ROOT, derivado(md, modelo ? `.ubicacion.${modelo}.json` : '.ubicacion.json'));
   // AJUSTE MANUAL `filas-a-mano` (Versión 614): la ubicación de este documento se armó o corrigió a mano; ni --rehacer la pisa.
   if (existsSync(out) && esAMano(pdf)) return { hecho: true, archivo: out, datos: JSON.parse(readFileSync(out, 'utf8')), costo: 0, protegido: true };
   if (!rehacer && existsSync(out)) return { hecho: true, archivo: out, datos: JSON.parse(readFileSync(out, 'utf8')), costo: 0 };
@@ -123,18 +128,18 @@ export async function localizar(pdf, { registro, perimetroClub = null, ejecutar 
   // REINTENTO (Versión 340): qué faltó en el intento anterior, para que elija también el cuadro que lo abre (por ejemplo, uno por segmento).
   const faltas = (reintento || []).map((x) => (x.categoria ? `no apareció ninguna fila de "${x.categoria}"` : `el desglose de "${x.renglon}" no sumó (${x.suma} contra ${x.objetivo})`));
   const user = `${texto}${faltas.length ? `\n\nREINTENTO: en el intento anterior ${faltas.join('; ')}. Elegí también los cuadros que abren esos renglones (notas, anexos o cuadros por segmento).` : ''}${notasComoEstado ? `\n\n${PEDIDO_NOTAS_COMO_ESTADO}` : ''}${pista}\n\nÍNDICE (${visibles.length} bloques con cifras):\n\n${visibles.map(ficha).join('\n\n')}`;
-  if (!ejecutar) return { ensayo: true, tokens: tokensDe(SYSTEM + user), usd: usdEstimado(tokensDe(SYSTEM + user), 1500) };
-  let r = await llamarClaude({ system: SYSTEM, user, schema: SCHEMA, tarea: 'localizar', pdf }); let costo = r.costo || 0;
+  if (!ejecutar) return { ensayo: true, tokens: tokensDe(SYSTEM + user), usd: usdEstimado(tokensDe(SYSTEM + user), 1500, idModelo) };
+  let r = await llamarClaude({ system: SYSTEM, user, schema: SCHEMA, tarea: modelo ? `localizar-medir-${modelo}` : 'localizar', pdf, modelo: idModelo }); let costo = r.costo || 0;
   if (r.pendiente) return { pendiente: true, costo: 0 }; // modo batch: la respuesta llega en la ola siguiente (claude-llamada.mjs)
   if (r.error) return { error: r.error, costo };
   // Paso intermedio: la IA pidió ver bloques enteros antes de decidir -> una segunda llamada con su texto completo.
   if (r.datos.necesito_ver?.length) {
     const ver = r.datos.necesito_ver.map((id) => bloques.find((b) => b.id === id)).filter(Boolean).slice(0, 6);
-    const r2 = await llamarClaude({ system: SYSTEM, user: `${user}\n\nTEXTO COMPLETO de los bloques que pediste ver:\n\n${ver.map((b) => `[${b.id}] pág. ${b.pagina}\n${textoDeBloque(mdText, b)}`).join('\n\n')}\n\nAhora decidí (necesito_ver tiene que quedar vacío).`, schema: SCHEMA, tarea: 'localizar-2', pdf });
+    const r2 = await llamarClaude({ system: SYSTEM, user: `${user}\n\nTEXTO COMPLETO de los bloques que pediste ver:\n\n${ver.map((b) => `[${b.id}] pág. ${b.pagina}\n${textoDeBloque(mdText, b)}`).join('\n\n')}\n\nAhora decidí (necesito_ver tiene que quedar vacío).`, schema: SCHEMA, tarea: modelo ? `localizar-2-medir-${modelo}` : 'localizar-2', pdf, modelo: idModelo });
     if (r2.pendiente) return { pendiente: true, costo }; // modo batch: no se escribe la primera respuesta sin la segunda mirada
     costo += r2.costo || 0; if (!r2.error) r = r2;
   }
-  const datos = { pdf, md, mdSha1: shaMd(md), modelo: MODELO, generado: new Date().toISOString(), ...(ampliado ? { indiceAmpliado: VERSION_AMPLIADO } : {}), ...(notasComoEstado ? { intentoNotasComoEstado: true, estadoDesdeNotas: !r.datos.sin_estado } : {}), ...(pistaResultado ? { intentoNotasConAjuste: true } : {}), bloques: Object.fromEntries(bloques.map((b) => [b.id, { pagina: b.pagina, lineas: b.lineas, tipo: b.tipo }])), ...r.datos };
+  const datos = { pdf, md, mdSha1: shaMd(md), modelo: idModelo, generado: new Date().toISOString(), ...(ampliado ? { indiceAmpliado: VERSION_AMPLIADO } : {}), ...(notasComoEstado ? { intentoNotasComoEstado: true, estadoDesdeNotas: !r.datos.sin_estado } : {}), ...(pistaResultado ? { intentoNotasConAjuste: true } : {}), bloques: Object.fromEntries(bloques.map((b) => [b.id, { pagina: b.pagina, lineas: b.lineas, tipo: b.tipo }])), ...r.datos };
   aplicarAjusteEstado(datos, pdf);
   writeFileSync(out, JSON.stringify(datos, null, 1));
   return { hecho: true, archivo: out, datos, costo };
@@ -145,8 +150,11 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   if (!docs.length) { console.error('Uso: node tools/localizar.mjs "<pdf>" [--ejecutar] [--rehacer]  |  --lista <archivo>'); process.exit(1); }
   const registro = readFileSync(resolve(ROOT, 'Admin', 'registros', 'transcripciones-estado.jsonl'), 'utf8').trim().split('\n').map((l) => JSON.parse(l));
   let usd = 0;
+  const modelo = flag('--modelo');
+  if (modelo != null && !MODELOS[modelo]) { console.error('--modelo opus|sonnet'); process.exit(1); }
   for (const pdf of docs) {
-    const r = await localizar(pdf, { registro, ejecutar: ARGS.includes('--ejecutar'), rehacer: ARGS.includes('--rehacer') });
+    // con --modelo, el perímetro del club como lo pasa lote.mjs (el .ubicacion.json de Opus se hizo con ese pedido)
+    const r = await localizar(pdf, { registro, ejecutar: ARGS.includes('--ejecutar'), rehacer: ARGS.includes('--rehacer'), ...(modelo ? { modelo, perimetroClub: ajustePerimetroDe(pdf)?.valor || null } : {}) });
     if (r.ensayo) { usd += r.usd; console.log(`  ensayo ${pdf}: ~${r.tokens} tokens, ~US$ ${r.usd.toFixed(3)}`); }
     else if (r.error) console.log(`  ERROR ${pdf}: ${r.error}`);
     else { usd += r.costo; const d = r.datos; console.log(`  ${pdf}: ${d.sin_estado ? 'SIN ESTADO DE RESULTADOS' : `estado ${d.estado.join(',')} · notas ingresos ${d.notas_ingresos.join(',') || '-'} · notas gastos ${d.notas_gastos.join(',') || '-'} · ${d.escala} (${d.escala_evidencia}) · ${d.perimetro}`}${d.dudas?.length ? ` · DUDAS: ${d.dudas.map((x) => (typeof x === 'string' ? x : `${x.pregunta || x.texto} [propuesta: ${x.propuesta || '?'}]${x.afecta_carga ? '' : ' (no afecta la carga)'}`)).join(' | ')}` : ''}`); }
