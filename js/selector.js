@@ -2637,6 +2637,35 @@ window.CLUB_SELECTOR = (function(){
       }
     }
 
+    // LOS SPONSORS DE CAMISETA Y LAS MARCAS TÉCNICAS (data/sponsors-indice.js): tampoco son un lado de Comparar. El índice se baja la
+    // primera vez que se busca; mientras llega, la búsqueda se repinta sola cuando esté.
+    if(origen !== 'vs' && window.SPONSOR_VIEW){
+      if(!window.SPONSORS_INDICE){
+        SPONSOR_VIEW.cargarIndice().then(function(){ if(window.SPONSORS_INDICE && isOpen() && $('modalQ').value.trim()) renderBusqueda(); });
+      } else {
+        // Primero los que empiezan con lo tipeado; hasta 6 (el resto aparece tipeando más).
+        var spo = window.SPONSORS_INDICE.filter(function(s){ return norm(s[1]).indexOf(q) >= 0; })
+          .sort(function(a, b){ return (norm(b[1]).indexOf(q) === 0) - (norm(a[1]).indexOf(q) === 0) || a[1].localeCompare(b[1]); });
+        if(spo.length){
+          caja.appendChild(el('p', 'busca-grupo', t('sel.busca.sponsors', 'Sponsors y marcas')));
+          var gs = el('div', 'op-grid clubes');
+          spo.slice(0, 6).forEach(function(s){
+            var r = s[2] || [];
+            gs.appendChild(opcionBtn({
+              id:s[0], icon:'👕', label:s[1],
+              sub: r.length > 1 ? t('spo.rol.cm', 'Sponsor de camiseta y marca técnica') : r[0] === 'm' ? t('spo.rol.m', 'Marca técnica') : t('spo.rol.c', 'Sponsor de camiseta')
+            }, false, function(id){
+              $('modalQ').value = '';
+              close();
+              SPONSOR_VIEW.abrir(id);
+            }));
+          });
+          caja.appendChild(gs);
+          hits += spo.length;
+        }
+      }
+    }
+
     var txt = indiceBusqueda();
     var clubesHit = ordenados(Object.keys(txt).filter(function(id){
       return txt[id].indexOf(q) >= 0;

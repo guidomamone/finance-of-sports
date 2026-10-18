@@ -439,6 +439,7 @@ window.I18N.strings.en = {
   "sel.busca.clubes": "Clubs",
   "sel.busca.ligas": "Leagues",
   "sel.busca.grupos": "Multi-club groups",
+  "sel.busca.sponsors": "Sponsors and kit makers",
   "sel.grupo.sub": "Multi-club group",
   "sel.grupo.club1": "club",
   "sel.grupo.clubN": "clubs",

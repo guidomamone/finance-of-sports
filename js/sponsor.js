@@ -22,6 +22,19 @@ const SPONSOR_VIEW = (function(){
     });
     return pedido;
   }
+  // El índice chico (data/sponsors-indice.js: [id, nombre, roles]) es para el buscador: se baja la primera vez que alguien busca, no
+  // al entrar al sitio.
+  let pedidoIndice = null;
+  function cargarIndice(){
+    if(window.SPONSORS_INDICE) return Promise.resolve();
+    if(!pedidoIndice) pedidoIndice = new Promise(res => {
+      const s = document.createElement('script');
+      s.src = 'data/sponsors-indice.js' + (window.ASSET_V ? '?v=' + window.ASSET_V : '');
+      s.onload = res; s.onerror = () => { console.error('[sponsor] no cargó data/sponsors-indice.js'); res(); };
+      document.head.appendChild(s);
+    });
+    return pedidoIndice;
+  }
   const liga = lid => (window.LEAGUES || {})[lid] || {};
   const bandera = lid => ((window.COUNTRIES || {})[liga(lid).country] || {}).flag || '';
   // Una liga de temporada partida tiene como temporada en curso la del año que viene: la más alta de SPONSORS.actuales.
@@ -124,6 +137,6 @@ const SPONSOR_VIEW = (function(){
     });
   }
   function init(h){ hooks = Object.assign(hooks, h || {}); }
-  return { show, abrir, abrirDesde, init, current: () => ({ sponsor: actual }), refresh: () => { if(actual && window.SPONSORS) render(); } };
+  return { show, abrir, abrirDesde, init, cargarIndice, current: () => ({ sponsor: actual }), refresh: () => { if(actual && window.SPONSORS) render(); } };
 })();
 window.SPONSOR_VIEW = SPONSOR_VIEW;

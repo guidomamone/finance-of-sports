@@ -191,3 +191,16 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
 - 297, sponsors en el buscador: fos-datos hizo `data/sponsors-indice.js` (`window.SPONSORS_INDICE = [[id, nombre, roles], …]`, ~95 KB,
   2416 entradas; datos-sourcing bb4f6c6b46, sin mergear). Plan: cargarlo recién al abrir el buscador (no de entrada) y sumar el
   resultado "Sponsors y marcas" que lleva a `SPONSOR_VIEW.abrir(id)`. Espera el merge de datos-sourcing y el fast-forward.
+
+## Después del sexto merge del 2026-10-18
+
+### Qué cambió (para CHANGELOG)
+
+- To-do 297: los sponsors de camiseta y las marcas técnicas aparecen en el buscador, en el grupo "Sponsors y marcas" (`renderBusqueda()`
+  en `js/selector.js`; no en Comparar), hasta 6, primero los que empiezan con lo tipeado; tocar uno abre su página. `data/sponsors-indice.js`
+  (~95 KB) se baja la primera vez que se busca (`SPONSOR_VIEW.cargarIndice()`), no al entrar, y la búsqueda se repinta cuando llega.
+  Probado: "adid" encuentra Adidas y abre su página; el índice no está al entrar. ASSET_V 1281.
+
+### Qué queda (para TODO)
+
+- Borrar el 297.
