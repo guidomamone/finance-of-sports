@@ -83,3 +83,8 @@ Lo completa la sesión del worktree mientras trabaja; la principal lo pasa a TOD
   propio formato. Probado: Boca en ARS y formato del club, `real=1`, Boca vs River 2024 con inflación, LaLiga vs dos clubes, ida y
   vuelta, y links con datos inexistentes. ASSET_V 1264.
 - Borrar el 271.
+
+### Qué deja de ser cierto en ESTADO
+
+- "El estado va en la URL (…); la moneda, la inflación, el formato y Comparar todavía no (to-do 271)": ya van (`moneda`, `real`,
+  `formato`, `a`, `b`), y el grupo multiclub (`?tab=grupo&grupo=…`).
