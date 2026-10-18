@@ -99,7 +99,10 @@ const NOTA_REF_RE = /\(\s*(nota|notas|note|notes|anexo|anexos|annex|n\.?)?\s*[0-
 export function claveFamilia(etiqueta) {
   let t = String(etiqueta ?? '').split(/<br\s*\/?>/i)[0];
   t = normalizar(t.replace(/[*_#`]/g, ' '));
-  t = t.replace(/^\s*(\(?[0-9]{1,2}(\.[0-9]{1,2})*[.)]|\(?[a-z][.)]|\(?[ivx]{1,5}[.)])\s+/, '');
+  // (to-do 290, ok de Guido 2026-10-18) la numeración italiana "4 bis)", "5-bis)", "17bis)", "15 bis )" (y "ter") sale igual que "4)". Antes
+  // "4 bis) Debiti verso banche oltre l'esercizio successivo" no empezaba con "debiti verso banche" y el diccionario de deuda no la veía.
+  // Caso: Genoa 2022 (pág. 8, L304-312), 3 bis) soci 1.300.000 y 4 bis) banche 48.266.122.
+  t = t.replace(/^\s*(\(?[0-9]{1,2}(\.[0-9]{1,2})*(\s?-?\s?(bis|ter)\s?)?[.)]|\(?[a-z][.)]|\(?[ivx]{1,5}[.)])\s+/, '');
   t = t.replace(NOTA_REF_RE, ' ');
   return t.replace(/[^\p{L}\p{N}() ]+/gu, ' ').replace(/\s+/g, ' ').replace(/\(\s+/g, '(').replace(/\s+\)/g, ')').trim();
 }

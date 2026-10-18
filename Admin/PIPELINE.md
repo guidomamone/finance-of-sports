@@ -727,7 +727,8 @@ ingresos cargados del año aparecen en el documento); si ninguno da, el año que
 jahresabschluss-2024-25, con el 2025 en EUR) o cuando una transcripción vieja sin tablas no deja encontrar la escala (RB Leipzig 2023, HSV 2024).
 
 Diccionario de deuda en italiano (escalón 1, `DEUDA_FINANCIERA` de `tools/vocabulario.mjs`): banche, debiti finanziari, obbligazioni y soci
-per finanziamenti (to-do 262). "Altri finanziatori" (factoring) no entra: el criterio no es el mismo en todos los clubes (Monza 2024 no lo
+per finanziamenti (to-do 262). La numeración italiana "4 bis)", "5-bis)", "15 bis )" sale de la etiqueta igual que "4)" (to-do 290), así que
+las filas "… oltre l'esercizio successivo" (largo plazo) también entran. "Altri finanziatori" (factoring) no entra: el criterio no es el mismo en todos los clubes (Monza 2024 no lo
 cuenta, Genoa 2022 sí).
 
 ```

@@ -13,6 +13,12 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
   TEUR), HSV 2024 (escala miles; caja 35.723.518,58 EUR; deuda 57.848 TEUR, con el bono convertible por decisión de Guido). Ensayo: Leipzig 4 de 4
   años vacíos, HSV 2 de 2.
 
+- **La numeración "bis" en caja-deuda (to-do 290).** `sinCodigo` (`tools/caja-deuda.mjs`) y `claveFamilia` (`tools/vocabulario.mjs`) sacan
+  "4 bis)", "5-bis)", "17bis)", "15 bis )" (y "ter") como sacaban "4)": el diccionario de deuda ve "4 bis) Debiti verso banche oltre
+  l'esercizio successivo". Medido: `--medir` deuda, distintos de lo cargado 11 → 10 (sale Genoa 2022, que daba 15,68 M contra 95,7 M:
+  ahora propone 65,24 M y la compuerta no lo confirma, sin dato) y ningún distinto nuevo; ensayo de los 259 clubes idéntico;
+  `medir-cargar --dir Clubes/Italia` (176) y `medir-verificar` sobre prueba-completa (358) idénticos.
+
 ## Qué queda pendiente (para TODO)
 
 - **Escribir caja y deuda en `data/`, en la carpeta principal después del merge** (sin API: escalón 0). Junto con lo que ya dejó la
@@ -24,9 +30,19 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
   HSV 2025 (22,03 M, ya publicado) no la tiene porque el documento la saca de Verbindlichkeiten a una línea propia (B.): revisar si 2025
   debería sumarla. No se tocó.
 
+- **Genoa 2022 en `--medir`:** con la regla de los "bis", la propuesta es 65,24 M (soci 1,3 + banche 15,68 + banche oltre 48,27). Para
+  llegar a los 95,7 M publicados faltan las dos filas de altri finanziatori (factoring, 30,45 M): depende de la decisión del to-do 291.
+  Además, la compuerta del documento siguiente no confirma: en 2023 "3 bis) soci" tiene vacía la columna del año (pasó a corto plazo).
+- **Nuevo to-do, Milan 2018 en `--medir` (1,21 M contra 164,27 M publicados):** las filas de deuda son "a) entro 12 mesi" y "b) oltre 12
+  mesi" debajo de un título sin importe ("1 obbligazioni", "5 debiti verso altri finanziatori"; AC-Milan-bilanci-relazioni-2017-18.md
+  L895-904), y el diccionario solo ve "4 debiti verso banche" (la única con importe en su renglón). Sin daño hoy: es un año cargado.
+- **HSV 2025:** el sitio publica 22,03 M sin el bono convertible de 30 M. En 2025 el documento lo muestra como "Sonderposten nach dem
+  Eigenkapital" (conversión obligatoria en acciones antes del 29.06.2030; .md L395-406): queda la pregunta a Guido de si se suma.
+
 ## Qué deja de ser cierto en ESTADO
 
-- El to-do 289 se cierra. RB Leipzig 2023-2024 y HSV 2024 dejan de estar "sin escala del documento" en caja-deuda.
+- Los to-dos 289 y 290 se cierran (290: Genoa 2022 deja de dar un valor mal; el valor publicado depende del 291).
+- RB Leipzig 2023-2024 y HSV 2024 dejan de estar "sin escala del documento" en caja-deuda.
 
 ## Para fos-onboarding (cómo se carga)
 

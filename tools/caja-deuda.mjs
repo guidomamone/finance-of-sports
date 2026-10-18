@@ -379,7 +379,9 @@ export function filasDelMd(md) {
     // balancete ("2.2.01 EMPRESTIMOS...", "29 2201010001 - I-9 SPORTS"): la familia y la etiqueta impresa no cambian. Caso: Novorizontino
     // 2013-2017, "2.2.01 EMPRESTIMOS E FINANCIAMENTOS" no la reconocía el escalón 1 de deuda.
     // (Versión 459) también una numeración de lista al principio ("4)", "a)", "IV.", "12."): Juventus 2005-06 L1967 "4) Due to banks".
-    const sinCodigo = etiqueta.replace(/^\s*(?:\d+\s+)?\d+(?:[.\-]\d+)*\s*(?:-\s+)?(?=\p{L})/u, '').replace(/^\s*(?:\d{1,2}|[a-z]|[ivxlc]{1,5})[.)]\s+(?=\p{L})/iu, '');
+    // (to-do 290, ok de Guido 2026-10-18) y la numeración italiana "4 bis)", "5-bis)", "15 bis )" (y "ter"), antes que lo de arriba: sin esto
+    // "4 bis) Debiti verso banche" quedaba "bis) Debiti verso banche" y el diccionario no la veía. Caso: Genoa 2022 (pág. 8, L304-312).
+    const sinCodigo = etiqueta.replace(/^\s*\d{1,2}\s?-?\s?(?:bis|ter)\s?[.)]\s+(?=\p{L})/iu, '').replace(/^\s*(?:\d+\s+)?\d+(?:[.\-]\d+)*\s*(?:-\s+)?(?=\p{L})/u, '').replace(/^\s*(?:\d{1,2}|[a-z]|[ivxlc]{1,5})[.)]\s+(?=\p{L})/iu, '');
     const cd = (String(crudos[0] ?? '').match(/\s([CD])\s*$/i) || [])[1]?.toUpperCase() || null; // (Versión 423) marca de balancete
     const codigo = ((etiqueta.match(/^\s*(?:\d{1,4}\s+)?(\d+(?:\.\d+)+|\d{4,})\s/) || [])[1] || '').replace(/\./g, '') || null;
     // (to-do 228) el número de nota de la fila (la celda de la columna de notas, "6.15") y lo que dice su nota.
