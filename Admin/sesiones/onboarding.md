@@ -32,10 +32,12 @@ Se completa mientras se trabaja. No se tocan TODO, CHANGELOG ni ESTADO: la princ
   que no anticipa el rehacer de los `listo` sin tablas: to-do 286), lotes de carga por país, los 319 `.md` sin tablas.
 - 238, 285, 284, 283, 195, 165 c: sin empezar.
 
-- `caja-deuda.mjs` (ensayo, lotes 89 y 90): el escalón 1 propone la MISMA caja 0,005458 en Lierse SK, Lokeren-Temse, Lommel SK, Patro Eisden y RWDM (lo frena "ningún año vecino", pero parece una fila equivocada que se repite en el esquema NBB); en Harju JK Laagri, Nõmme Kalju y Tartu Tammeka "sin páginas de balance" (localizar no guardó el balance del 2025).
+- `caja-deuda.mjs` (ensayo, lotes 89 y 90): el escalón 1 propone la MISMA caja 0,005458 en Lierse SK, Lokeren-Temse, Lommel SK, Patro Eisden y RWDM (lo frena "ningún año vecino"): es el CÓDIGO NBB "54/58" (Liquide middelen) leído como el número 5.458; en la corrida real dio lo mismo en los escalones 1, 1b y 2; en Harju JK Laagri, Nõmme Kalju y Tartu Tammeka "sin páginas de balance" (localizar no guardó el balance del 2025).
+
+- `caja-deuda.mjs --club` en un club con un solo año: la compuerta "ningún año vecino" frena siempre (8 clubes de los lotes 89-90, 0 datos escritos); se completa recién con el resto de los años (lotes 91-92).
 
 ## Qué deja de ser cierto en ESTADO
-- Estonia es un país del sitio: Flora, Harju JK Laagri, Kuressaare, Nõmme Kalju y Tartu Tammeka 2025 cargados (lote 89). Bélgica suma Lierse SK, Lokeren-Temse, Lommel SK, OH Leuven, Patro Eisden y RWDM 2025 (lote 90). Las ligas estonias, sin id (liga null).
+- Estonia es un país del sitio: Flora, Harju JK Laagri, Kuressaare, Nõmme Kalju y Tartu Tammeka 2025 cargados (lote 89). Bélgica suma Lierse SK, Lokeren-Temse, Lommel SK, OH Leuven, Patro Eisden y RWDM 2025 (lote 90). FCI Levadia, Narva Trans, Paide, Tallinna Kalev y Beerschot 2025 también. Las ligas estonias, sin id (liga null). RAAL La Louvière espera la decisión del alta.
 
 ## Pantalla (para fos-finanzas)
 - Nada todavía.
