@@ -1,6 +1,155 @@
 // Generado por tools/entidades.mjs desde Admin/registros/entidades.jsonl. No editar a mano.
 window.CLUB_ENTIDADES = window.CLUB_ENTIDADES || {};
 Object.assign(window.CLUB_ENTIDADES, {
+ "bahia-br": {
+  "cargas": [
+   {
+    "anio": 2024,
+    "entidad": "bahia-saf",
+    "perimetro": "individual",
+    "fuente": {
+     "md": "Clubes/Brasil/Bahia/demonstracoes-financeiras-2024.md",
+     "linea": 7
+    }
+   },
+   {
+    "anio": 2025,
+    "entidad": "bahia-saf",
+    "perimetro": "individual",
+    "fuente": {
+     "md": "Clubes/Brasil/Bahia/demonstracoes-financeiras-2025.md",
+     "linea": 7
+    }
+   }
+  ],
+  "entidades": {
+   "bahia-associacao": {
+    "nombre": "Esporte Clube Bahia",
+    "forma": "asociacion",
+    "pais": "BR",
+    "que": {
+     "es": "El club asociación, accionista de la S.A.F.",
+     "en": "The members' club, a shareholder of the S.A.F."
+    },
+    "fuente": {
+     "md": "Clubes/Brasil/Bahia/demonstracoes-financeiras-2025.md",
+     "linea": 1962
+    }
+   },
+   "bahia-saf": {
+    "nombre": "Esporte Clube Bahia S.A.F.",
+    "forma": "sociedad",
+    "pais": "BR",
+    "clubId": "bahia-br",
+    "fuente": {
+     "md": "Clubes/Brasil/Bahia/demonstracoes-financeiras-2025.md",
+     "linea": 7
+    }
+   },
+   "cfg-brazil": {
+    "nombre": "City Football Group Brazil",
+    "forma": "holding",
+    "pais": "BR",
+    "fuente": {
+     "md": "Clubes/Brasil/Bahia/demonstracoes-financeiras-2025.md",
+     "linea": 1642
+    }
+   },
+   "city-football-group": {
+    "nombre": "City Football Group Limited",
+    "forma": "holding",
+    "pais": "GB",
+    "grupo": {
+     "id": "city-football-group",
+     "nombre": "City Football Group",
+     "alias": [
+      "CFG",
+      "City Football Group",
+      "City Football Group Limited"
+     ]
+    },
+    "fuente": {
+     "md": "Clubes/Inglaterra/Manchester City/manchester-city-full-accounts-2024-25.md",
+     "linea": 1033
+    }
+   },
+   "sheikh-mansour": {
+    "nombre": "His Highness Sheikh Mansour bin Zayed Al Nahyan",
+    "forma": "persona",
+    "pais": "AE",
+    "fuente": {
+     "md": "Clubes/Inglaterra/Manchester City/manchester-city-full-accounts-2024-25.md",
+     "linea": 2236
+    }
+   }
+  },
+  "relaciones": [
+   {
+    "de": "cfg-brazil",
+    "a": "bahia-saf",
+    "rel": "controla",
+    "pct": 90,
+    "desde": 2024,
+    "hasta": 2024,
+    "fuente": {
+     "md": "Clubes/Brasil/Bahia/demonstracoes-financeiras-2024.md",
+     "linea": 1877
+    }
+   },
+   {
+    "de": "cfg-brazil",
+    "a": "bahia-saf",
+    "rel": "controla",
+    "pct": 90,
+    "desde": 2025,
+    "hasta": 2025,
+    "fuente": {
+     "md": "Clubes/Brasil/Bahia/demonstracoes-financeiras-2025.md",
+     "linea": 1961
+    }
+   },
+   {
+    "de": "bahia-associacao",
+    "a": "bahia-saf",
+    "rel": "participa",
+    "pct": 10,
+    "desde": 2024,
+    "hasta": 2025,
+    "fuente": {
+     "md": "Clubes/Brasil/Bahia/demonstracoes-financeiras-2025.md",
+     "linea": 1962
+    }
+   },
+   {
+    "de": "city-football-group",
+    "a": "cfg-brazil",
+    "rel": "controla",
+    "desde": 2024,
+    "hasta": 2025,
+    "nota": {
+     "es": "El documento dice que el contrato de la S.A.F. se firmó con el City Football Group y que City Football Group Brazil es la holding controladora; no imprime el % del grupo en esa holding.",
+     "en": "The document says the S.A.F. contract was signed with City Football Group and that City Football Group Brazil is the controlling holding; it does not print the group's % in that holding."
+    },
+    "fuente": {
+     "md": "Clubes/Brasil/Bahia/demonstracoes-financeiras-2025.md",
+     "linea": 393
+    }
+   },
+   {
+    "de": "sheikh-mansour",
+    "a": "city-football-group",
+    "rel": "controla",
+    "desde": 2017,
+    "nota": {
+     "es": "75 % o más de las acciones y los votos (registro de Companies House). Las cuentas del club nombran como sociedad dueña última a Newton Investment and Development LLC, de Abu Dhabi, también 100 % suya.",
+     "en": "75% or more of the shares and votes (Companies House register). The club's accounts name Newton Investment and Development LLC, of Abu Dhabi, also wholly his, as the ultimate parent company."
+    },
+    "fuente": {
+     "url": "https://find-and-update.company-information.service.gov.uk/company/08355862/persons-with-significant-control"
+    }
+   }
+  ]
+ },
  "botafogo": {
   "cargas": [
    {

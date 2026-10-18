@@ -254,6 +254,32 @@ window.GRUPOS = {
   },
   "clubes": [
    {
+    "clubId": "bahia-br",
+    "nombre": "Esporte Clube Bahia S.A.F.",
+    "pais": "BR",
+    "control": true,
+    "pct": 90,
+    "desde": 2024,
+    "hasta": 2024,
+    "fuente": {
+     "md": "Clubes/Brasil/Bahia/demonstracoes-financeiras-2024.md",
+     "linea": 1877
+    }
+   },
+   {
+    "clubId": "bahia-br",
+    "nombre": "Esporte Clube Bahia S.A.F.",
+    "pais": "BR",
+    "control": true,
+    "pct": 90,
+    "desde": 2025,
+    "hasta": 2025,
+    "fuente": {
+     "md": "Clubes/Brasil/Bahia/demonstracoes-financeiras-2025.md",
+     "linea": 1961
+    }
+   },
+   {
     "clubId": "mancity-gb",
     "nombre": "Manchester City Football Club Limited",
     "pais": "GB",
@@ -345,6 +371,10 @@ window.GRUPOS = {
    }
   ],
   "ingresos": {
+   "bahia-br": {
+    "2024": 44.984,
+    "2025": 99.121
+   },
    "mancity-gb": {
     "2024": 910.035,
     "2025": 954.828
