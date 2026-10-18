@@ -817,6 +817,20 @@ Object.assign(window.CLUB_AUDITORIA, {
    }
   }
  },
+ "hellasverona-it": {
+  "2025": {
+   "auditor": {
+    "nombre": "Audirevi S.p.A.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Hellas Verona/Hellas-Verona-relazione-revisione-2025.md",
+    "linea": 33
+   }
+  }
+ },
  "inter-it": {
   "2018": {
    "auditor": {
