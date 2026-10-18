@@ -32,9 +32,6 @@ Se completa mientras se trabaja. No se tocan TODO, CHANGELOG ni ESTADO: la princ
   que no anticipa el rehacer de los `listo` sin tablas: to-do 286), lotes de carga por país, los 319 `.md` sin tablas.
 - 238, 285, 284, 283, 195, 165 c: sin empezar.
 
-- `caja-deuda.mjs` (ensayo, lotes 89 y 90): el escalón 1 propone la MISMA caja 0,005458 en Lierse SK, Lokeren-Temse, Lommel SK, Patro Eisden y RWDM (lo frena "ningún año vecino"): es el CÓDIGO NBB "54/58" (Liquide middelen) leído como el número 5.458; en la corrida real dio lo mismo en los escalones 1, 1b y 2; en Harju JK Laagri, Nõmme Kalju y Tartu Tammeka "sin páginas de balance" (localizar no guardó el balance del 2025).
-
-- `caja-deuda.mjs --club` en un club con un solo año: la compuerta "ningún año vecino" frena siempre (8 clubes de los lotes 89-90, 0 datos escritos); se completa recién con el resto de los años (lotes 91-92).
 
 ## Qué deja de ser cierto en ESTADO
 - Estonia es un país del sitio: Flora, Harju JK Laagri, Kuressaare, Nõmme Kalju y Tartu Tammeka 2025 cargados (lote 89). Bélgica suma Lierse SK, Lokeren-Temse, Lommel SK, OH Leuven, Patro Eisden y RWDM 2025 (lote 90). FCI Levadia, Narva Trans, Paide, Tallinna Kalev y Beerschot 2025 también. Las ligas estonias, sin id (liga null). RAAL La Louvière espera la decisión del alta.
@@ -45,24 +42,43 @@ Se completa mientras se trabaja. No se tocan TODO, CHANGELOG ni ESTADO: la princ
 ## PDFs bajados acá (copiar a la principal con rsync)
 - Ninguno.
 
-## Mejoras de script vistas (para fos-pipeline, sin aplicar)
-- La cola de categorías admite UNA categoría por fila: el 630 belga (amortizaciones) que la nota de activos fijos abre en pases y bienes
-  de uso hubo que partirlo a mano con ajustes `fila` + `categoria` en 5 de 8 documentos. Escalón posible: que la cola acepte un
-  "partir según la nota" con la suma exacta como compuerta.
-- Ligas de Estonia: no hay ids en `data/leagues.js` (propuesto `ee-meistriliiga` tier 1, `ee-esiliiga` tier 2); las 9 altas quedan
-  con liga null hasta sumarlos.
-- `verificar.mjs` con las jaarrekening belgas (NBB): los costos financieros (Financiële kosten 65/66B y sus renglones) entran en
-  positivo y suman; los renglones con "(+)/(-)" impresos negativos (609, 631/4, 635/8) entran por su valor absoluto; el "Waarvan:
-  niet-recurrente bedrijfsopbrengsten" (76A) del esquema abreviado se suma aparte cuando ya está en la Brutomarge. Casos: los 9 del
-  lote 90 (se cerraron con ajustes `fila`). PELIGROSO: Lierse Kempenzonen 2022 da "cierra (financiero invertido)" con la Brutomarge
-  impresa −2.369 cargada como ingreso +2.369 (la compuerta compara en valor absoluto): un cierre falso.
-- `perimetro-senales.mjs` no ve los dos estados en los informes estonios (consolidado + "Lisa NN konsolideerimata tulemiaruanne") y
-  fija "individual" para el club con los años de un solo estado: FCI Levadia, Kuressaare, Tallinna Kalev (corregidos con ajuste del
-  club); Narva Trans quedó "individual" aunque su 2025 es solo consolidado.
-- `pipeline.mjs`, control "sin tablas": `sinPasarPorElLote` exige `!e.jev`, así que un `.md` viejo con la marca de la preparación vieja
-  (`listo-para-jev` o `sin-rubros`) nunca se marca `sin-tablas` ni se rehace con Mistral. Casos: OH Leuven 2022 (1 renglón de tabla,
-  `jev: listo-para-jev`) y Llaneros 2022 (0 renglones, `jev: sin-rubros`); la segunda corrida de Mistral los dejó igual (0 documentos).
-  Probablemente afecta a buena parte de los 319 de `sin-tablas-6paises.txt`.
-- `periodo.mjs` no saca el cierre de las jaarrekening belgas de la NBB cuando las fechas vienen en celdas de tabla
-  ("| het boekjaar dat de periode dekt van | 01-07-2024 | tot | 30-06-2025 |"): Lommel SK y RWDM 2025 frenaban antes de localizar
-  (se cargaron con ajuste `cierre`).
+## Mejoras de script vistas (para TODO: to-dos nuevos de fos-pipeline, sin aplicar; uno por letra, por impacto)
+Vistas onboardeando Estonia y Bélgica (lotes 89-92). Cada una es un escalón a diseñar con el ok de Guido (skill club-or-year-onboarding, 3.b).
+
+a) CIERRE FALSO EN verificar.mjs (lo más grave). La compuerta del resultado compara en valor absoluto y da "cierra (financiero
+   invertido)" con una fila del lado o signo equivocado. Caso: Lierse Kempenzonen 2022, Brutomarge impresa −2.369 tomada como ingreso
+   +2.369; habría cargado ingresos de 2.369 en vez de un gasto. Que "cierra" exija el signo, o que el cierre con signos invertidos baje a
+   la cola.
+b) ESQUEMA NBB BELGA EN verificar.mjs Y cargar.mjs. (1) Los costos financieros (Financiële kosten 65/66B y sus renglones) entran
+   positivos y suman: 9 de 9 documentos del lote 90 necesitaron ajustes `fila` con signo. (2) Los renglones "(+)/(-)" impresos negativos
+   (609, 631/4, 635/8) entran por su valor absoluto (Beerschot 631/4 −64.834; OH Leuven 631/4 y 635/8). (3) El "Waarvan: niet-recurrente
+   bedrijfsopbrengsten" (76A) del esquema abreviado se suma aparte cuando ya está en la Brutomarge (Lierse SK 82.200, Patro Eisden).
+   (4) verificar.mjs y la propuesta de cargar.mjs no leen igual el signo: Beerschot cerraba en verificar (lectura 5) y frenaba en la
+   propuesta con el 631/4 en positivo. Una regla por el código NBB del renglón (65*, 66B, "(+)/(-)") alcanza para todo el país.
+c) caja-deuda.mjs: (1) lee el CÓDIGO NBB "54/58" (Liquide middelen) como el importe 5.458: la misma caja 0,005458 en los escalones 1, 1b
+   y 2 de Lierse SK, Lokeren-Temse, Lommel SK, Patro Eisden y RWDM; la columna de códigos no es un importe. (2) Un club con un solo año
+   nunca pasa la compuerta "ningún año vecino" (8 clubes, 0 datos escritos): un primer año necesita otra compuerta (que el dato cuadre con
+   el balance del propio documento). (3) Harju JK Laagri, Nõmme Kalju y Tartu Tammeka 2025: "sin páginas de balance" (localizar no guardó
+   el balance).
+d) perimetro-senales.mjs no ve los dos estados en los informes estonios (consolidado + "Lisa NN konsolideerimata tulemiaruanne") y fija
+   "individual" para el club con los años de un solo estado: FCI Levadia, Kuressaare y Tallinna Kalev se localizaron con el perímetro
+   equivocado y hubo que pagar el rehacer (US$ 0,37); Narva Trans quedó "individual" con un 2025 que es solo consolidado.
+e) pipeline.mjs, control "sin tablas": `sinPasarPorElLote` exige `!e.jev`, así que un .md viejo con la marca de la preparación vieja
+   (`listo-para-jev`, `sin-rubros`) nunca se marca `sin-tablas` ni se rehace con Mistral. Casos: OH Leuven 2022 (1 renglón de tabla) y
+   Llaneros 2022 (0); la segunda corrida de Mistral tomó 0 documentos. Probablemente frena buena parte de los 319 de
+   `Admin/lotes/sin-tablas-6paises.txt`: medirlo antes de decidir subagentes o Mistral para esos 319 (to-do 292).
+f) periodo.mjs no saca el cierre de las cuentas NBB cuando las fechas vienen en celdas ("| het boekjaar dat de periode dekt van |
+   01-07-2024 | tot | 30-06-2025 |", también "exercice couvrant la période du ... au"): 9 documentos frenaron antes de localizar (Lommel SK
+   2019, 2023 y 2025, RWDM 2021, 2022 y 2025, Beerschot 2019, Patro Eisden 2023) y uno estonio (Harju JK Laagri 2023, primer ejercicio).
+   Se resolvieron con ajustes `cierre` leídos con una expresión regular del .md: es exactamente lo que le falta a periodo.mjs.
+g) La cola de categorías admite UNA categoría por fila: el 630 belga (amortizaciones) que la nota de activos fijos abre en pases y bienes de
+   uso hubo que partirlo a mano con ajustes `fila` + `categoria` en 5 de 8 documentos (y el 66A de Lommel). Escalón posible: un
+   "partir según la nota" en la cola, con la suma exacta como compuerta.
+h) Sacar una fila de nota con `no_es_rubro` puede sacar el total del padre: en Narva Trans 2025 las dos filas "sh" ("del cual": 42.848 +
+   109.938) eran todo el detalle de "Riigi ja KOV toetused" 152.786 y, marcadas `no_es_rubro`, se perdió el renglón entero (la propuesta
+   frenó por 152.786 de menos). Que la cola avise cuando un `no_es_rubro` deja a un padre sin hijos.
+i) alta-club.mjs: un país nuevo frena el alta con 3 preguntas (id, country, moneda) hasta agregar su fila a la tabla PAISES (Estonia).
+   Chico, pero cada país nuevo lo repite: que el alta proponga la fila con ISO2 y moneda.
+j) DATOS (no script): Estonia no tiene ligas en `data/leagues.js`; propuesto `ee-meistriliiga` (tier 1) y `ee-esiliiga` (tier 2). Las 9
+   altas quedan con liga null.
+
