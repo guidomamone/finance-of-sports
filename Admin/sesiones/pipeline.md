@@ -19,6 +19,12 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
   ahora propone 65,24 M y la compuerta no lo confirma, sin dato) y ningún distinto nuevo; ensayo de los 259 clubes idéntico;
   `medir-cargar --dir Clubes/Italia` (176) y `medir-verificar` sobre prueba-completa (358) idénticos.
 
+- **Opus → Sonnet, primera tarea: caja-deuda (to-do 288).** `tools/claude-llamada.mjs`: `modelo` por llamada (Opus por defecto). `tools/caja-deuda.mjs`:
+  `--medir --ia --modelo opus|sonnet` (respuestas aparte, `.caja-deuda-ia.<modelo>.json`) y el escalón 2 pasa a Sonnet. Medido en los 606 documentos
+  de los años cargados (US$ 12,37): deuda 210 iguales / 14 distintos contra 211 / 18 de Opus, caja 421 / 7 contra 417 / 7, ningún distinto
+  nuevo. Las respuestas de Opus guardadas se siguen usando; con ellas más las de Sonnet donde no había: deuda 215 / 18, caja 423 / 7 (antes
+  211 / 18 y 417 / 7). Ensayo de los 259 clubes idéntico. No se repitió Opus (piso de variación): la compuerta contra lo cargado ya pasaba.
+
 ## Qué queda pendiente (para TODO)
 
 - **Escribir caja y deuda en `data/`, en la carpeta principal después del merge** (sin API: escalón 0). Junto con lo que ya dejó la

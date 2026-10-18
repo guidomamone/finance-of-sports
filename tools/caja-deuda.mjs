@@ -926,9 +926,18 @@ Elegí, para la columna del ejercicio pedido (la del cierre más reciente):
 // Pide a la IA las líneas (una llamada por documento). ejecutar=false: ensayo (tokens y costo estimados).
 // (to-do 288) `modelo` (opus | sonnet), solo desde --medir --modelo: la respuesta va a su propio archivo y no se mezcla con la guardada.
 const MODELOS_IA = { opus: 'claude-opus-5-5', sonnet: 'claude-sonnet-5-5' };
+// (to-do 288, ok de Guido 2026-10-18) EL MODELO DEL ESCALÓN 2 ES SONNET. Medido en los 606 documentos de los años cargados (--medir --ia
+// --modelo sonnet, US$ 12,37): deuda 210 iguales / 14 distintos contra 211 / 18 de Opus, caja 421 / 7 contra 417 / 7; ningún distinto que
+// Opus no tuviera (dejan de decidir mal Dortmund 2025, Levadiakos 2025, Monza 2024 y Novorizontino 2017). Cuesta la mitad. Las respuestas
+// de Opus ya guardadas (.caja-deuda-ia.json) se siguen usando; sin ellas, la de Sonnet de la medición (.caja-deuda-ia.sonnet.json), y si
+// tampoco hay, se le pregunta a Sonnet.
+const MODELO_TAREA = 'sonnet';
 export async function porIA({ md, mdText, filas, criterioDeuda, ejecutar = false, rehacer = false, modelo = null }) {
   const out = resolve(ROOT, derivado(md, modelo ? `.caja-deuda-ia.${modelo}.json` : '.caja-deuda-ia.json'));
   if (!rehacer && existsSync(out)) return { datos: JSON.parse(readFileSync(out, 'utf8')), costo: 0, guardado: true };
+  const deLaMedicion = resolve(ROOT, derivado(md, `.caja-deuda-ia.${MODELO_TAREA}.json`));
+  if (!modelo && !rehacer && existsSync(deLaMedicion)) return { datos: JSON.parse(readFileSync(deLaMedicion, 'utf8')), costo: 0, guardado: true };
+  const idModelo = MODELOS_IA[modelo || MODELO_TAREA];
   const paginas = [...new Set(filas.filter((f) => f.balance).map((f) => f.pagina))];
   if (!paginas.length) return { error: 'sin páginas de balance' };
   const L = mdText.split('\n'); const PAG = /^---\s*pág\.\s*(\d+)\s*---/i; let pag = 1; const lineas = [];
@@ -936,10 +945,10 @@ export async function porIA({ md, mdText, filas, criterioDeuda, ejecutar = false
   const texto = lineas.join('\n').slice(0, 60000);
   const user = `Documento: ${md.split('/').slice(1).join(' / ')}.\nCriterio de deuda de este club: ${criterioDeuda}\n\nPÁGINAS DEL BALANCE (${paginas.join(', ')} del visor):\n${texto}`;
   const { llamarClaude, tokensDe, usdEstimado } = await import('./claude-llamada.mjs');
-  if (!ejecutar) return { ensayo: true, usd: usdEstimado(tokensDe(SYSTEM_IA + user), 400, modelo ? MODELOS_IA[modelo] : undefined) };
-  const r = await llamarClaude({ system: SYSTEM_IA, user, schema: SCHEMA_IA, tarea: modelo ? `caja-deuda-medir-${modelo}` : 'caja-deuda', pdf: md.replace(/\.md$/, '.pdf'), maxTokens: 2000, ...(modelo ? { modelo: MODELOS_IA[modelo] } : {}) });
+  if (!ejecutar) return { ensayo: true, usd: usdEstimado(tokensDe(SYSTEM_IA + user), 400, idModelo) };
+  const r = await llamarClaude({ system: SYSTEM_IA, user, schema: SCHEMA_IA, tarea: modelo ? `caja-deuda-medir-${modelo}` : 'caja-deuda', pdf: md.replace(/\.md$/, '.pdf'), maxTokens: 2000, modelo: idModelo });
   if (r.error) return { error: r.error, costo: r.costo || 0 };
-  writeFileSync(out, JSON.stringify({ md, generado: new Date().toISOString(), criterioDeuda, ...r.datos }, null, 1));
+  writeFileSync(out, JSON.stringify({ md, generado: new Date().toISOString(), modelo: idModelo, criterioDeuda, ...r.datos }, null, 1));
   return { datos: r.datos, costo: r.costo || 0 };
 }
 

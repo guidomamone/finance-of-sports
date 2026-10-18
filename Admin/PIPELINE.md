@@ -712,7 +712,8 @@ sección Rusia de `Admin/COMO-CORRE-EL-PROYECTO.html`; el detalle de cada escal�
 Comando aparte, con el club ya publicado: completa `cash` y `grossDebt` de cada año cargado donde el sitio tiene null (nunca pisa un valor
 cargado) y nunca frena. Medir: `node tools/caja-deuda.mjs --medir [--club <id>] [--detalle] [--escalas]` (gratis); `--medir --jev` y
 `--medir --ia` (escalones 1b y 2; sin `--ejecutar`, ensayo); `--medir --ia --modelo opus|sonnet` (to-do 288: el escalón 2 con
-ese modelo, respuestas aparte en `.caja-deuda-ia.<modelo>.json`, solo para comparar); `--personal --medir` (staffCost contra `Admin/mediciones/personal-verdad.tsv`).
+ese modelo, respuestas aparte en `.caja-deuda-ia.<modelo>.json`, solo para comparar); el escalón 2 usa Sonnet (to-do 288: medido en los 606 documentos de
+los años cargados, menos distintos que Opus y la mitad del precio); las respuestas de Opus ya guardadas se siguen usando. `--personal --medir` (staffCost contra `Admin/mediciones/personal-verdad.tsv`).
 Escribir: `--club <id> --ejecutar --escribir` (el valor en `data/`, sin comentario; de dónde salió, en la meta del año en
 `Admin/carga-clubes/<club>.md`). Cuestan API los escalones 1b (Jev, centavos por club) y 2 (IA): esa corrida la hace Guido.
 
