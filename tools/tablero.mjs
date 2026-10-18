@@ -11,6 +11,8 @@
 //   gasto_dia.csv   dia,mistral,gemini,claude     gasto de API por día y motor (últimos 30 días con gasto)
 //   gasto_pais.csv  pais,usd                      gasto de API por país del documento (lo que el registro atribuye a un PDF de Clubes/)
 //   mails.csv       estado,cantidad               mails a clubes: enviados, en revisión, aprobados; y preguntas abiertas
+//   ligas.csv       liga,nombre,temporada,cargados,equipos,pct,tramo   cobertura de cada liga en su última temporada cerrada (data/faltantes/:
+//                   la temporada `reciente`, que todavía no puede tener balances, no cuenta); tramo: completa, mas_mitad, menos_mitad
 // EL TABLERO: https://claude.ai/artifact/ESc6PC7CUbQ8wV2ETgLVdb (tipo Dashboard, privado de Guido). Para actualizarlo, una sesión de
 // Claude: (1) corre esta tool; (2) sube cada CSV como asset del artifact (Artifact, `asset: true`, un archivo por llamada); (3) en la
 // base del artifact, hace `update` de `datasets/<nombre sin .csv>` con el `url` nuevo, `name` y `updated: {at, by}`. La página no se
@@ -78,6 +80,20 @@ const gastoDia = Object.values(dias).sort((a, b) => a.dia.localeCompare(b.dia)).
 const contar = (dir) => { const p = resolve(ROOT, 'Admin', 'outreach', dir); return existsSync(p) ? readdirSync(p).filter((f) => !f.startsWith('.')).length : 0; };
 const dudas = (readFileSync(resolve(ROOT, 'Admin', 'dudas-por-club.md'), 'utf8').match(/^#{2,3} /gm) || []).length;
 
+// LIGAS: de data/faltantes/<liga>.js (LEAGUE_GAPS[liga][temporada] = {size, cargados, reciente?}), la última temporada cerrada de cada liga.
+const vm = await import('node:vm');
+const ctx = { window: {} };
+for (const f of readdirSync(resolve(ROOT, 'data', 'faltantes'))) vm.runInNewContext(readFileSync(resolve(ROOT, 'data', 'faltantes', f), 'utf8'), ctx);
+const lc = { window: {} }; vm.runInNewContext(readFileSync(resolve(ROOT, 'data', 'leagues.js'), 'utf8').replace(/^const /gm, 'var '), lc);
+const ligas = [];
+for (const [liga, ys] of Object.entries(ctx.window.LEAGUE_GAPS || {})) {
+  const t = Object.keys(ys).map(Number).filter((y) => !ys[y].reciente && ys[y].size).sort((a, b) => b - a)[0]; if (!t) continue;
+  const v = ys[t], pct = v.cargados / v.size;
+  ligas.push({ liga, nombre: (lc.window.LEAGUES[liga] || {}).name || liga, temporada: t, cargados: v.cargados, equipos: v.size,
+    pct: Math.round(pct * 1000) / 10, tramo: pct >= 1 ? 'completa' : pct >= 0.5 ? 'mas_mitad' : 'menos_mitad' });
+}
+ligas.sort((a, b) => b.pct - a.pct || a.nombre.localeCompare(b.nombre));
+
 const archivos = {
   'resumen.csv': csv(['clave', 'valor', 'detalle'], [
     { clave: 'en_sitio', valor: enSitio, detalle: 'ejercicios cargados' },
@@ -97,6 +113,7 @@ const archivos = {
     { estado: 'enviados', cantidad: contar('enviados') }, { estado: 'en revisión', cantidad: contar('cola') },
     { estado: 'aprobados', cantidad: contar('aprobados') }, { estado: 'preguntas abiertas para clubes', cantidad: dudas },
   ]),
+  'ligas.csv': csv(['liga', 'nombre', 'temporada', 'cargados', 'equipos', 'pct', 'tramo'], ligas),
 };
 mkdirSync(OUT, { recursive: true });
 for (const [f, t] of Object.entries(archivos)) writeFileSync(resolve(OUT, f), t);
