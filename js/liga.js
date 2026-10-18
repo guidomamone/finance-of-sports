@@ -455,16 +455,11 @@ window.LIGA_VIEW = (function(){
           || ligaDe(a).name.localeCompare(ligaDe(b).name, 'es', {sensitivity:'base'});
       });
   }
-  // La pastilla de una liga con datos: nombre y qué hay (del índice de data/rankings/_regiones.js, sin bajar el ranking).
+  // La pastilla de una liga con datos: solo el nombre. Un "N clubes · año" se leía como que la liga tenía un solo ejercicio.
   function botonLiga(lid){
-    var ix = (window.RANKINGS_INDICE || {})[lid];
     var b = el('button', 'lg-liga');
     b.type = 'button';
     b.appendChild(el('span', 'lg-liga-n', ligaDe(lid).name));
-    if(ix){
-      var dato = ix[2] != null ? ix[1] + ' ' + t('vid.of', 'de') + ' ' + ix[2] : nClubes(ix[1]);
-      b.appendChild(el('span', 'lg-liga-m', dato + ' · ' + ix[0]));
-    }
     // Modo simulación: si hay clubes esperando destino, la grilla usa la liga elegida como destino en vez de navegar.
     b.addEventListener('click', function(){
       if(pendingSim.length) showConSimulados(lid, null, pendingSim);

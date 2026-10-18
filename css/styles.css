@@ -953,11 +953,10 @@
   .lg-pais:first-child{border-top:0;}
   .lg-pais-n{display:flex;align-items:center;font-weight:700;font-size:15px;}
   .lg-pais-ligas{display:flex;flex-wrap:wrap;gap:8px;}
-  .lg-liga{display:inline-flex;align-items:baseline;gap:8px;min-height:40px;padding:9px 14px;border-radius:10px;
+  .lg-liga{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:10px;
     border:1px solid var(--border);background:#fafaf8;font:inherit;color:var(--text);cursor:pointer;text-align:left;}
   .lg-liga:hover{border-color:var(--azul);background:#f6f9ff;}
   .lg-liga-n{font-weight:700;font-size:14px;}
-  .lg-liga-m{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;}
   .lg-frio-nada{color:var(--muted);margin:0;}
   .lg-sindatos{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px 20px;}
   .lg-sindatos summary{cursor:pointer;font-weight:700;font-size:14px;color:#45474d;}
