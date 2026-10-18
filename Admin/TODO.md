@@ -25,7 +25,7 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): pantallas 273, 296 (pantalla, cuando esté el dato) y 282 en Ligas (cuando haya el dato del 295) · finanzas cerrada (lo que queda del 281, 282 y 294, sin asignar) · pipeline 289, 290, 288, 232, 279, 286, 287 · onboarding 292, 238, 285, 284, 283, 195, 165 c ·
-datos-sourcing 276, 277, 273, 252, 295 · Reino Unido (261) en su propia sesión · la principal: 268, 291, 250, 244 y los merges; el 246 va
+datos-sourcing 273 (completar el dato), 252, 295 · Reino Unido (261) en su propia sesión · la principal: 268, 291, 250, 244 y los merges; el 246 va
 solo, con todo mergeado y sin worktrees abiertos.
 
 Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
@@ -52,12 +52,11 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 261: Reino Unido, transcripción por subagentes
 * 165 c: altas de los países nuevos que faltan
 * 195: gestiones (presidentes) sin fuente confirmada (se puede ir haciendo con cada país)
-* 276 y 277: listas de equipos que no salen; Parma 2018 en club-leagues
 * 295: balances de las entidades que organizan las ligas (AFA, LFP…), para la auditoría en Ligas
 * 284 y 285: Fredrikstad y Sarpsborg 08 sobre el FLI; transcribir Viking Fotball AS
 * 283: Vålerenga y Aalesund, sumar el AS y el FLI (con nota en Finanzas)
-* 273: estadio y sponsor de cada ejercicio (el dato, en datos-sourcing; la pantalla, en pantallas)
-* 296: página por sponsor (espera el índice de sponsors de fos-datos)
+* 273: estadio y sponsor, lo que queda (completar a mano, la pantalla, nombrar la compuerta)
+* 296: página por sponsor y por marca (el dato ya está; la pantalla)
 
 **E. Pantallas**
 * 282: quién audita, lo que queda (72 informes a conseguir, Spartak, OCR, revisores no plenos)
@@ -231,12 +230,15 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    del Worker fos-supabase-ping el 2026-10-19 12 UTC (Cloudflare → fos-supabase-ping → Logs); (b) que el dashboard
    https://claude.ai/artifact/7kPta8U7BxyiGRKAyayHhA se actualice solo (hoy: correr tools/supabase/stats.mjs --json y
    tools/cloudflare-visitas.mjs --json y subir los archivos; se puede programar).
-273. ESTADIO Y SPONSOR DE CADA EJERCICIO (pedido de Guido, 2026-10-18). Por club y temporada: estadio, capacidad, sponsor de camiseta
-   y marca técnica, con el permalink a la revisión de Wikipedia; sin monto. El dato lo junta fos-datos (`data/contexto/<iso>.js`, en su
-   rama; cobertura de 932 ejercicios: estadio 79 %, sponsor 85 %, marca 87 %). Se ve en Finanzas (link de salto o bloque, a decidir con
-   Guido): fos-pantallas, después del merge de datos-sourcing.
-296. PÁGINA POR SPONSOR (pedido de Guido, 2026-10-18). Cada sponsor con su histórico y los equipos que sponsorea hoy. Espera un índice de
-   sponsors con nombres unificados que genera fos-datos (no armarla sobre `data/contexto/`). Después del 273.
+273. ESTADIO Y SPONSOR: LO QUE QUEDA (pedido de Guido, 2026-10-18). El dato está en main (`data/contexto/<iso>.js`, `tools/estadio-sponsor.mjs`,
+   lo manual en `tools/contexto-manual.json` con fuente) y `cargar.mjs` no escribe un año nuevo sin estadio y sponsor. Falta: completar a
+   mano los ejercicios ya cargados sin estadio o sin sponsor (`node tools/estadio-sponsor.mjs --ensayo` los lista; fos-datos tiene un
+   diseño de fuente en lote esperando el ok de Guido); mostrarlo en Finanzas (fos-pantallas); nombrar la compuerta nueva en
+   `Admin/PIPELINE.md` y en la skill `club-or-year-onboarding` (la skill, con ok de Guido).
+296. PÁGINA POR SPONSOR Y POR MARCA TÉCNICA (pedido de Guido, 2026-10-18). Cada sponsor con su histórico y los equipos que sponsorea hoy (los
+   de toda la liga, los que el sitio no tiene en gris). El dato está en main: `data/sponsors.js` (`tools/generate-sponsors.js`, nombres
+   unificados en `tools/sponsor-alias.json`). Pesa ~650 KB: si la pantalla lo carga entero, partirlo. Lo cargado a mano en
+   `contexto-manual.json` todavía no entra al índice. La pantalla, fos-pantallas.
 281. FINANZAS: INGRESOS DE LAS OTRAS ENTIDADES (pedido de Guido, 2026-10-17). El dato y la pantalla están (tarjeta Estructura, piloto
    Portugal). Falta: transcribir por subagentes los ~17 documentos de entidades de clubes portugueses publicados sin `.md` (Porto 3, Braga
    2022-23, Marítimo 5, Belenenses, Chaves, Vizela 2, Académica, União de Leiria) y cargar su línea de ingresos (va con el 294). Chaves 2022-23: el informe del auditor de la
@@ -298,9 +300,6 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    Guido: en Ligas todo club sin balance figura como estimado), con 50% de error (regresión sin historia: mediana de la liga-año, división,
    posición en la tabla). Volver a medir (`node tools/estimar.mjs --medir`) cuando haya más clubes cargados. Variable sin medir: partidos
    contra clubes con finanzas.
-276. LISTAS DE EQUIPOS QUE NO SALEN (faltantes-liga). Primera B Metro (sin página con tabla), Pro League belga 2024-25 (el lector no la
-   entiende), Serie C (3 grupos por página), Perú 2020 (la tabla pone la ciudad primero). `node tools/listas-lote.mjs` las reintenta.
-277. PARMA EN LA SERIE C EN 2018 (data/club-leagues/). En 2017-18 jugó la Serie B: verificar y corregir.
 278. CARPETAS DUPLICADAS EN Clubes/. Cardiff y Swansea en `Inglaterra/` y `Gales/`; `Suiza/FC St. Gallen` y `Suiza/St. Gallen`.
    `faltantes-liga` las lee juntas. Unificar sin borrar ningún PDF y chequeando antes las referencias del pipeline.
 279. LA TOOL QUE DUPLICABA CLAVES EN data/club-leagues/ru.js (mejora de script). El archivo acumuló 58 claves repetidas: la tool que lo

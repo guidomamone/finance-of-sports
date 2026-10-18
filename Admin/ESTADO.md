@@ -108,7 +108,12 @@ Nombre del sitio: "El deporte en Números" en castellano y "Finance of Sports" e
 - Para enterarse de que terminó un lote sin mirar la terminal: el comando lleva al final
   `; osascript -e 'display notification "Terminó el lote" with title "finance-of-sports" sound name "Glass"'; say "lote terminado"`.
 - Sesiones en paralelo: cada una en su worktree y su rama (`tools/worktree.mjs preparar` / `mergear`); solo la principal escribe TODO,
-  CHANGELOG y ESTADO, las otras dejan su cierre en `Admin/sesiones/<rama>.md` (skill de arranque, `worktree.md`).
+  CHANGELOG y ESTADO, las otras dejan su cierre en `Admin/sesiones/<rama>.md` (skill de arranque, `worktree.md`). Qué worktree hace qué:
+  el "Reparto en worktrees" arriba del ORDEN de `Admin/TODO.md`. Una rama que sigue abierta después de un merge escribe lo nuevo de su
+  cierre debajo de una línea con la fecha del merge; un worktree no mergea main en su rama: la principal le hace un fast-forward.
+- Estadio, capacidad, sponsor de camiseta y marca técnica de cada club y ejercicio: `data/contexto/<iso>.js` (`tools/estadio-sponsor.mjs`,
+  de Wikipedia con el permalink de la revisión; lo manual en `tools/contexto-manual.json` con fuente). `cargar.mjs` no escribe un año
+  nuevo sin estadio y sponsor (`compuertaContexto()`; también `bfo-rusia.mjs`). El índice de sponsors y marcas: `data/sponsors.js`.
 - El plan para Guido (solo lo pendiente, corto) vive en el panel Plan de la app; su copia durable es el bloque ORDEN de `Admin/TODO.md`
   (tandas A-G por dependencias), y el detalle, en los to-dos.
 - Dos documentos distintos del mismo club y ejercicio: entra el que trae el estado de resultados completo de la entidad del club (si los

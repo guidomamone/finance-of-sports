@@ -15,6 +15,20 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 725 — Merge de datos-sourcing: listas de liga, estadio y sponsor (2026-10-18)
+
+Merge a mano: `index.html` con main (datos solo había cambiado la versión); generados regenerados, ASSET_V 1271, P0 0 / P1 0. Después,
+los 3 commits de sesiones de pantallas y el fast-forward de su rama, para que codee el 273 y el 296.
+
+- To-do 277 cerrado con la premisa vencida: `data/club-leagues/it.js` estaba bien (Parma cerró el 30/6 entre 2016 y 2019); el error era de
+  `tools/listas-lote.mjs`, que calculaba la temporada con la regla del club en vez del cierre de cada ejercicio.
+- To-do 276: el lector de listas toma el club después de una matrícula numérica y junta los grupos de una liga partida; guardadas Primera
+  B Metro 2020 y 2021, Pro League 2024-25, Serie C 2023-24 y Liga 1 de Perú 2020. 0 alias rotos, 0 que faltan.
+- To-do 273: `tools/estadio-sponsor.mjs` guarda `data/contexto/<iso>.js` (estadio, capacidad, sponsor y marca, con el permalink de la
+  revisión de Wikipedia); Rusia con un lector propio y lo que faltaba a mano con fuente. Compuerta en `cargar.mjs` y `bfo-rusia.mjs`: un
+  año nuevo no se escribe sin estadio y sponsor (pedido de Guido). Índice `data/sponsors.js` (2401 sponsors y marcas).
+- TODO: fuera 276 y 277; el 273 y el 296 con lo que queda.
+
 ## Versión 724 — Merge de finanzas, cierre de la sesión: auditoría de 902 balances y 44 clubes con estructura (2026-10-18)
 
 Merge a mano: `index.html` con main (los scripts de auditoría y citar que la rama no tenía; finanzas solo había cambiado la versión);

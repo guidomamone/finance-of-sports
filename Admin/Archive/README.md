@@ -50,3 +50,4 @@ Qué hay hoy:
 - `sesion-pantallas-2026-10-18-b.md` — segunda copia del cierre de pantallas (el grupo en la URL y el 271), pasada en la 720.
 - `sesion-finanzas-2026-10-18-c.md` y `sesion-pantallas-2026-10-18-c.md` — copias de los cierres en el merge de la 721 (281 pantalla, 282 dato).
 - `sesion-finanzas-2026-10-18-final.md` — el cierre completo de la sesión finanzas (280 a 282, 294). Archivado en la 724.
+- `sesion-datos-sourcing-2026-10-18-b.md` — copia del cierre de datos-sourcing (276, 277 y el 273), pasada en la 725; la rama siguió abierta.
