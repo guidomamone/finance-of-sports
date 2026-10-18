@@ -15,8 +15,8 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Estádio do Fontelo","capacidad":6785,"sponsor":"Palácio do Gelo","marca":"Joma","temporada":"2024–25 Liga Portugal 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356212163"},
   },
   'alverca-pt': {
-    2022: {"estadio":"Complexo Desportivo FC Alverca","temporada":"2021–22 Liga 3 (Portugal)","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376276515","fuenteLocal":"https://pt.wikipedia.org/w/index.php?oldid=72590636","local":["estadio"]},
-    2023: {"estadio":"Complexo Desportivo FC Alverca","temporada":"2022–23 Liga 3 (Portugal)","fuente":"https://en.wikipedia.org/w/index.php?oldid=1363229907","fuenteLocal":"https://pt.wikipedia.org/w/index.php?oldid=72590565","local":["estadio"]},
+    2022: {"estadio":"Complexo Desportivo FC Alverca","sponsor":"PSG Segurança Privada","temporada":"2021–22 Liga 3 (Portugal)","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376276515","fuenteLocal":"https://pt.wikipedia.org/w/index.php?oldid=72590636","local":["estadio"],"fuenteManual":"https://www.footballkitarchive.com/fc-alverca-kits/","manual":["sponsor"]},
+    2023: {"estadio":"Complexo Desportivo FC Alverca","sponsor":"RE/MAX","temporada":"2022–23 Liga 3 (Portugal)","fuente":"https://en.wikipedia.org/w/index.php?oldid=1363229907","fuenteLocal":"https://pt.wikipedia.org/w/index.php?oldid=72590565","local":["estadio"],"fuenteManual":"https://www.footballkitarchive.com/fc-alverca-kits/","manual":["sponsor"]},
     2024: {"estadio":"Estádio do FC Alverca","capacidad":7705,"temporada":"2023–24 Liga 3 (Portugal)","fuente":"https://en.wikipedia.org/w/index.php?oldid=1363229853","fuenteLocal":"https://pt.wikipedia.org/w/index.php?oldid=72309224","local":["estadio","capacidad"]},
     2025: {"estadio":"Complexo Desportivo FC Alverca","capacidad":2500,"sponsor":"Century 21 Imo Team","marca":"Kappa","temporada":"2024–25 Liga Portugal 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356212163"},
   },
@@ -60,7 +60,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Estádio do Bessa","capacidad":28263,"sponsor":"Placard","marca":"Kelme","temporada":"2023–24 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377547480"},
   },
   'braga-pt': {
-    2016: {"estadio":"Estádio Municipal de Braga","capacidad":30286,"marca":"Lacatoni","temporada":"2015–16 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373035345"},
+    2016: {"estadio":"Estádio Municipal de Braga","capacidad":30286,"sponsor":"BancoBIC","marca":"Lacatoni","temporada":"2015–16 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373035345","fuenteManual":"https://www.footyheadlines.com/2015/07/sporting-braga-15-16-kits.html","manual":["sponsor"]},
     2017: {"estadio":"Estádio Municipal de Braga","capacidad":30286,"sponsor":"Visit Braga","marca":"Lacatoni","temporada":"2016–17 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377252928"},
     2020: {"estadio":"Estádio Municipal de Braga","capacidad":30286,"sponsor":"Betano","marca":"Hummel","temporada":"2019–20 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375345249"},
     2022: {"estadio":"Estádio Municipal de Braga","sponsor":"Betano","marca":"Hummel","temporada":"2021–22 Primeira Liga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376298805","fuenteLocal":"https://pt.wikipedia.org/w/index.php?oldid=73070808","local":["estadio"]},

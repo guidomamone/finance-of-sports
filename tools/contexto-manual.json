@@ -28,16 +28,6 @@
     }
   },
   "akrontolyatti-ru": {
-    "2024": {
-      "estadio": "Solidarnost Samara Arena",
-      "capacidad": 44918,
-      "fuente": "https://www.vedomosti.ru/sport/football/articles/2025/01/03/1084766-debyut-goda-chastnii-klub-akron-vorvalsya-v-premer-ligu-i-obigral-chempiona"
-    },
-    "2025": {
-      "estadio": "Solidarnost Samara Arena",
-      "capacidad": 44918,
-      "fuente": "https://www.vedomosti.ru/sport/football/articles/2025/01/03/1084766-debyut-goda-chastnii-klub-akron-vorvalsya-v-premer-ligu-i-obigral-chempiona"
-    },
     "2021": {
       "estadio": "Kristall (Zhigulyovsk)",
       "fuente": "https://www.vedomosti.ru/sport/football/articles/2023/08/18/990832-chastnii-klub-iz-tolyatti-rvetsya-v-rpl"
@@ -49,9 +39,23 @@
     "2023": {
       "estadio": "Kristall (Zhigulyovsk)",
       "fuente": "https://www.vedomosti.ru/sport/football/articles/2023/08/18/990832-chastnii-klub-iz-tolyatti-rvetsya-v-rpl"
+    },
+    "2024": {
+      "estadio": "Solidarnost Samara Arena",
+      "capacidad": 44918,
+      "fuente": "https://www.vedomosti.ru/sport/football/articles/2025/01/03/1084766-debyut-goda-chastnii-klub-akron-vorvalsya-v-premer-ligu-i-obigral-chempiona"
+    },
+    "2025": {
+      "estadio": "Solidarnost Samara Arena",
+      "capacidad": 44918,
+      "fuente": "https://www.vedomosti.ru/sport/football/articles/2025/01/03/1084766-debyut-goda-chastnii-klub-akron-vorvalsya-v-premer-ligu-i-obigral-chempiona"
     }
   },
   "dynamomakhachkala-ru": {
+    "2021": {
+      "estadio": "Dynamo Stadium",
+      "fuente": "https://www.sport-express.ru/football/rus_cup/fbl_match-legion-dinamo-anzhi-343552/"
+    },
     "2024": {
       "estadio": "Anzhi-Arena",
       "fuente": "https://www.championat.com/football/_russiapl/tournament/5980/match/1175524/"
@@ -62,12 +66,25 @@
     }
   },
   "sochi-ru": {
+    "2021": {
+      "sponsor": "sin sponsor",
+      "fuente": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D1%87%D0%B8_(%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BB%D1%83%D0%B1)"
+    },
+    "2022": {
+      "sponsor": "sin sponsor",
+      "fuente": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D1%87%D0%B8_(%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BB%D1%83%D0%B1)"
+    },
     "2024": {
       "estadio": "Fisht Olympic Stadium",
       "fuente": "https://news.sportbox.ru/Vidy_sporta/Futbol/stats/stadium_1295441877"
     }
   },
   "spartakmoscow-ru": {
+    "2021": {
+      "estadio": "Otkritie Bank Arena",
+      "capacidad": 45360,
+      "fuente": "https://stadiumdb.com/stadiums/rus/otkritie_arena"
+    },
     "2022": {
       "estadio": "Otkritie Bank Arena",
       "fuente": "https://www.sport-express.ru/football/rfpl/news/1741358/"
@@ -78,9 +95,277 @@
     }
   },
   "baltikakaliningrad-ru": {
+    "2022": {
+      "sponsor": "Kaliningrad Amber Combine",
+      "fuente": "https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D0%BB%D1%82%D0%B8%D0%BA%D0%B0_(%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BB%D1%83%D0%B1)"
+    },
     "2024": {
       "estadio": "Rostec Arena",
       "fuente": "https://www.dp.ru/a/2024/06/04/besprozvannih-dogovorilsja"
+    }
+  },
+  "ferroviaria-br": {
+    "2015": {
+      "estadio": "Arena da Fonte Luminosa",
+      "capacidad": 20950,
+      "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2015_-_S%C3%A9rie_A2"
+    },
+    "2016": {
+      "estadio": "Arena da Fonte Luminosa",
+      "capacidad": 20000,
+      "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2016_-_S%C3%A9rie_A1"
+    },
+    "2017": {
+      "estadio": "Arena da Fonte Luminosa",
+      "capacidad": 20000,
+      "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2017_-_S%C3%A9rie_A1"
+    },
+    "2018": {
+      "estadio": "Arena da Fonte Luminosa",
+      "capacidad": 20000,
+      "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2018_-_S%C3%A9rie_A1"
+    },
+    "2023": {
+      "estadio": "Arena da Fonte Luminosa",
+      "capacidad": 20000,
+      "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2023_-_S%C3%A9rie_A1"
+    }
+  },
+  "novorizontino-br": {
+    "2013": {
+      "estadio": "Jorge Ismael de Biasi",
+      "capacidad": 16000,
+      "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2013_-_S%C3%A9rie_A3"
+    },
+    "2014": {
+      "estadio": "Jorge Ismael de Biasi",
+      "capacidad": 16000,
+      "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2014_-_S%C3%A9rie_A3"
+    },
+    "2015": {
+      "estadio": "Jorge Ismael de Biasi",
+      "capacidad": 16000,
+      "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2015_-_S%C3%A9rie_A2"
+    },
+    "2016": {
+      "estadio": "Jorge Ismael de Biasi",
+      "capacidad": 12398,
+      "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2016_-_S%C3%A9rie_A1"
+    },
+    "2017": {
+      "estadio": "Jorge Ismael de Biasi",
+      "capacidad": 12398,
+      "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2017_-_S%C3%A9rie_A1"
+    }
+  },
+  "argentinosjuniors": {
+    "2015": {
+      "estadio": "Diego Armando Maradona",
+      "fuente": "https://en.wikipedia.org/wiki/2014_Primera_B_Nacional"
+    }
+  },
+  "catolica-cl": {
+    "2010": {
+      "estadio": "San Carlos de Apoquindo",
+      "fuente": "https://en.wikipedia.org/wiki/2010_Primera_Divisi%C3%B3n_de_Chile"
+    }
+  },
+  "racing": {
+    "2015": {
+      "estadio": "Presidente Juan Domingo Perón",
+      "capacidad": 55389,
+      "fuente": "https://en.wikipedia.org/wiki/2014_Argentine_Primera_Divisi%C3%B3n"
+    }
+  },
+  "sanlorenzo": {
+    "2015": {
+      "estadio": "Pedro Bidegain (Nuevo Gasómetro)",
+      "capacidad": 39494,
+      "fuente": "https://en.wikipedia.org/wiki/2014_Argentine_Primera_Divisi%C3%B3n"
+    }
+  },
+  "velez": {
+    "2015": {
+      "estadio": "José Amalfitani",
+      "capacidad": 45540,
+      "fuente": "https://en.wikipedia.org/wiki/2014_Argentine_Primera_Divisi%C3%B3n"
+    }
+  },
+  "ferrocarriloeste-ar": {
+    "2023": {
+      "sponsor": "Avalian (hasta 2022) / Lepore",
+      "fuente": "https://es.wikipedia.org/wiki/Club_Ferro_Carril_Oeste"
+    }
+  },
+  "fortalezaceif-co": {
+    "2017": {
+      "sponsor": "sin sponsor",
+      "fuente": "https://es.wikipedia.org/wiki/Fortaleza_F%C3%BAtbol_Club"
+    }
+  },
+  "oncecaldas": {
+    "2022": {
+      "sponsor": "Aguardiente Cristal",
+      "fuente": "https://www.tintiando.com/2021/12/21/ilc-reitera-su-compromiso-con-la-region-y-sera-principal-patrocinador-del-once-caldas-en-2022/"
+    }
+  },
+  "remo-br": {
+    "2019": {
+      "sponsor": "VeganNation",
+      "fuente": "https://en.wikipedia.org/wiki/2019_Clube_do_Remo_season"
+    },
+    "2020": {
+      "sponsor": "Banpará",
+      "fuente": "https://en.wikipedia.org/wiki/2020_Clube_do_Remo_season"
+    }
+  },
+  "alverca-pt": {
+    "2022": {
+      "sponsor": "PSG Segurança Privada",
+      "fuente": "https://www.footballkitarchive.com/fc-alverca-kits/"
+    },
+    "2023": {
+      "sponsor": "RE/MAX",
+      "fuente": "https://www.footballkitarchive.com/fc-alverca-kits/"
+    }
+  },
+  "braga-pt": {
+    "2016": {
+      "sponsor": "BancoBIC",
+      "fuente": "https://www.footyheadlines.com/2015/07/sporting-braga-15-16-kits.html"
+    }
+  },
+  "dortmund-de": {
+    "2024": {
+      "sponsor": "1&1 (Bundesliga) / Evonik (copas)",
+      "fuente": "https://insideworldfootball.com/?p=118510"
+    },
+    "2025": {
+      "sponsor": "1&1 (Bundesliga) / Evonik (copas)",
+      "fuente": "https://insideworldfootball.com/?p=118510"
+    }
+  },
+  "juvestabia-it": {
+    "2024": {
+      "sponsor": "Plinio Medical Center / StarCasinò Sport",
+      "fuente": "https://it.wikipedia.org/wiki/Societ%C3%A0_Sportiva_Juve_Stabia_2023-2024"
+    }
+  },
+  "lazio-it": {
+    "2020": {
+      "sponsor": "sin sponsor",
+      "fuente": "https://it.wikipedia.org/wiki/Societ%C3%A0_Sportiva_Lazio_2019-2020"
+    }
+  },
+  "parma-it": {
+    "2016": {
+      "sponsor": "Navigare",
+      "fuente": "https://www.calcioefinanza.it/?p=12452"
+    },
+    "2017": {
+      "sponsor": "Aon / Folletto",
+      "fuente": "https://it.wikipedia.org/wiki/Parma_Calcio_1913_2016-2017"
+    }
+  },
+  "aellarissa-gr": {
+    "2016": {
+      "sponsor": "Pame Stoixima",
+      "fuente": "https://en.wikipedia.org/w/index.php?oldid=1380860630"
+    },
+    "2017": {
+      "sponsor": "sin sponsor",
+      "fuente": "https://en.wikipedia.org/w/index.php?oldid=1380860630"
+    },
+    "2018": {
+      "sponsor": "sin sponsor",
+      "fuente": "https://en.wikipedia.org/w/index.php?oldid=1380860630"
+    },
+    "2023": {
+      "sponsor": "Animus Medical Group",
+      "fuente": "https://en.wikipedia.org/w/index.php?oldid=1380860630"
+    },
+    "2024": {
+      "sponsor": "Solis Constructions",
+      "fuente": "https://en.wikipedia.org/w/index.php?oldid=1380860630"
+    },
+    "2025": {
+      "sponsor": "Novibet",
+      "fuente": "https://en.wikipedia.org/w/index.php?oldid=1380860630"
+    }
+  },
+  "levadiakos-gr": {
+    "2024": {
+      "sponsor": "Betshop",
+      "fuente": "https://www.footballkitarchive.com/levadiakos-kits/"
+    }
+  },
+  "oficrete-gr": {
+    "2018": {
+      "sponsor": "Stoiximan",
+      "fuente": "https://www.newsit.gr/athlitika/i-stoiximan-gr-xorigos-tis-fanelas-toy-ofi/1241152/"
+    }
+  },
+  "harjujklaagri-ee": {
+    "2025": {
+      "sponsor": "sin sponsor",
+      "fuente": "https://en.wikipedia.org/wiki/2025_Meistriliiga"
+    }
+  },
+  "liersesk-be": {
+    "2025": {
+      "estadio": "Herman Vanderpoortenstadion",
+      "capacidad": 14538,
+      "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League"
+    }
+  },
+  "lokerentemse-be": {
+    "2025": {
+      "estadio": "Daknamstadion",
+      "capacidad": 12136,
+      "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League"
+    }
+  },
+  "lommelsk-be": {
+    "2018": {
+      "estadio": "Soevereinstadion",
+      "fuente": "https://en.wikipedia.org/wiki/Lommel_S.K."
+    },
+    "2025": {
+      "estadio": "Soevereinstadion",
+      "capacidad": 8000,
+      "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League"
+    }
+  },
+  "patroeisden-be": {
+    "2025": {
+      "estadio": "Gemeentelijk Sportparkstadion",
+      "capacidad": 5500,
+      "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League"
+    }
+  },
+  "raallalouviere-be": {
+    "2025": {
+      "estadio": "Stade du Tivoli",
+      "capacidad": 12500,
+      "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League"
+    }
+  },
+  "rwdm-be": {
+    "2020": {
+      "estadio": "Edmond Machtens",
+      "fuente": "https://bx1.be/communes/molenbeek-saint-jean/rwdm-molenbeek-signe-convention-doccupation-stade-machtens/"
+    },
+    "2025": {
+      "estadio": "Edmond Machtens",
+      "capacidad": 12266,
+      "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League"
+    }
+  },
+  "zultewaregem-be": {
+    "2025": {
+      "estadio": "Regenboogstadion",
+      "capacidad": 12500,
+      "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League"
     }
   }
 }

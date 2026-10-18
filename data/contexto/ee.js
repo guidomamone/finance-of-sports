@@ -24,7 +24,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'harjujklaagri-ee': {
     2023: {"estadio":"Laagri Stadium","capacidad":500,"sponsor":"Enemat","marca":"Adidas","temporada":"2023 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377178895"},
     2024: {"estadio":"Laagri Stadium","capacidad":400,"marca":"Adidas","temporada":"2024 Esiliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1330565653"},
-    2025: {"estadio":"Laagri Stadium","capacidad":500,"marca":"Adidas","temporada":"2025 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378408894"},
+    2025: {"estadio":"Laagri Stadium","capacidad":500,"sponsor":"sin sponsor","marca":"Adidas","temporada":"2025 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378408894","fuenteManual":"https://en.wikipedia.org/wiki/2025_Meistriliiga","manual":["sponsor"]},
   },
   'kuressaare-ee': {
     2019: {"estadio":"Kuressaare linnastaadion","capacidad":1000,"sponsor":"Euronics","marca":"Nike","temporada":"2019 Meistriliiga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1320299915"},
