@@ -45,6 +45,7 @@ import { norm as normNum } from './verify-numbers.mjs';
 import { ajusteDe, ajustesDe } from './ajustes.mjs';
 import { FIN_INGRESO_RE, FIN_GASTO_RE, INGRESOS_RE, GASTOS_RE, DE_LOS_CUALES_RE, normalizar } from './vocabulario.mjs';
 import { DESCARTADOS, PARCIALES } from './etapa-doc.mjs';
+import { filasNBB, leerEstadoNBB } from './nbb.mjs';
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
 const { loadSite, parseNumber } = await import('./datos-sitio.mjs');
 process.argv = argvAntes;
@@ -92,6 +93,18 @@ function paginaDeLinea(md, linea) {
   try { const L = readFileSync(resolve(ROOT, md), 'utf8').split('\n'); for (let i = Math.min(linea, L.length) - 1; i >= 0; i--) { const m = L[i].match(/^---\s*pág\.\s*(\d+)\s*---/i); if (m) return Number(m[1]); } } catch { /* sin .md */ }
   return null;
 }
+
+// (to-do 298 t) El .filas.json con el estado NBB leído por sus códigos (tools/nbb.mjs), o null si el escalón no corre: el .md no trae el
+// estado con códigos, la columna del año no cierra exacto, o el documento tiene un ajuste `fila` (el ajuste manual es el escalón 0 y manda).
+function nbbDe(F, md, pdf) {
+  if (ajustesDe(pdf).some((a) => a.campo === 'fila')) return null;
+  let txt; try { txt = readFileSync(resolve(ROOT, md), 'utf8'); } catch { return null; }
+  const r = filasNBB(F, txt);
+  if (r) r.bloque.pagina = paginaDeLinea(md, r.bloque.lineas[0]);
+  return r;
+}
+// (to-do 298 t) Los códigos NBB impresos del .md (para comparar con el año vecino), haya o no ajustes: null si no trae el estado con códigos.
+function codigosNBBde(md) { try { return leerEstadoNBB(readFileSync(resolve(ROOT, md), 'utf8')); } catch { return null; } }
 
 export function cerrarNota(obj, hijas, campo = 'M', uObj = 0) {
   const val = (h) => h[campo];
@@ -156,7 +169,11 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const e = registro.find((x) => x.pdf === pdf) || {}; const md = e.md || pdf.replace(/\.pdf$/, '.md');
   const pF = resolve(ROOT, derivado(md, '.filas.json', { crear: false }));
   if (!existsSync(pF)) return { error: 'falta el .filas.json (extraer.mjs)' };
-  const F = JSON.parse(readFileSync(pF, 'utf8'));
+  // (to-do 298 t, ok de Guido 2026-10-18) ESCALÓN "códigos NBB": un estado belga que cierra por sus códigos legales reemplaza al estado que
+  // extrajo la IA (tools/nbb.mjs, con la escalera y los casos). No corre si no cierra exacto ni si el documento tiene ajustes `fila` (manda el ajuste).
+  const nbbV = nbbDe(JSON.parse(readFileSync(pF, 'utf8')), md, pdf);
+  const F = nbbV ? nbbV.F : JSON.parse(readFileSync(pF, 'utf8'));
+  const nbbPropio = nbbV ? nbbV.N : codigosNBBde(md); // (to-do 298 t) para el chequeo del año vecino
   const pV = resolve(ROOT, derivado(md, '.validacion.json', { crear: false }));
   const V = existsSync(pV) ? JSON.parse(readFileSync(pV, 'utf8')) : null;
   // (to-do 163) CAMINO DE ERROR: la última propuesta de carga marcó categorías en 0 que deberían tener número ("Televisión en 0"). Solo así
@@ -177,12 +194,14 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const notaSubtotalLados = new Set(); // lados donde este escalón abrió la nota del subtotal (se escribe en el .verificacion.json)
   const pU = resolve(ROOT, derivado(md, '.ubicacion.json', { crear: false }));
   const U = existsSync(pU) ? JSON.parse(readFileSync(pU, 'utf8')) : {};
+  if (nbbV) U.bloques = { ...(U.bloques || {}), nbb: nbbV.bloque }; // el bloque de las filas NBB: su página y sus líneas (solo en memoria)
   // Sin fecha de cierre detectada: se deduce de los documentos vecinos del club (tools/cierre-vecinos.mjs, Versión 342), con nota.
   const cierreDeducido = e.periodo?.cierre ? null : cierrePorVecinos(pdf, registro);
   const year = e.periodo?.cierre ? Number(e.periodo.cierre.slice(0, 4)) : cierreDeducido?.anio ?? null;
   const clubId = clubDeRuta(pdf).clubId; const cd = clubId ? sitio.generic[clubId] : null;
   const chequeos = []; const cola = []; const notas = [];
   if (cierreDeducido) notas.push(`fecha de cierre ${cierreDeducido.cierre} ${cierreDeducido.evidencia}`);
+  if (nbbV) notas.push(`escalón "códigos NBB": el estado se lee por sus códigos (L${nbbV.bloque.lineas[0]}-L${nbbV.bloque.lineas[1]}, esquema ${nbbV.N.actual.abreviado ? 'abreviado' : 'completo'}); cierran exacto todos sus totales impresos${nbbV.N.aLaAnterior ? `; ${nbbV.N.aLaAnterior} línea(s) de un solo importe van a la columna del año anterior (la única asignación que cierra)` : ''}`);
   // REINTENTOS (Versión 336): desgloses (notas o anidados) con 2+ filas que no suman. No frenan (queda el renglón, que es correcto), pero
   // marcan el documento para el camino de error: lote.mjs --reintentar vuelve a localizar con el índice ampliado y a extraer con esta lista.
   const reintentos = [];
@@ -493,7 +512,10 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     const otro = registro.find((x) => x.pdf !== pdf && x.pdf.startsWith(carpeta + '/') && !DESCARTADOS.has(x.pdf) && !PARCIALES.has(x.pdf) && x.md && existsSync(filasDe(x)) && anioDe(x) === year + dy);
     if (!otro) return null;
     const pF2 = filasDe(otro);
+    // (to-do 298 t) el vecino también por sus códigos NBB (si los trae y cierran)
+    const F2 = JSON.parse(readFileSync(pF2, 'utf8')); const n2 = nbbDe(F2, otro.md, otro.pdf);
     const pU2 = resolve(ROOT, derivado(otro.md, '.ubicacion.json', { crear: false })); const U2 = existsSync(pU2) ? JSON.parse(readFileSync(pU2, 'utf8')) : {};
+    if (n2) U2.bloques = { ...(U2.bloques || {}), nbb: n2.bloque };
     const pV2 = resolve(ROOT, derivado(otro.md, '.verificacion.json', { crear: false })); const esc2 = existsSync(pV2) ? JSON.parse(readFileSync(pV2, 'utf8')).escala : null;
     const k2 = !MULT[U2.escala] && esc2?.escalon === 1 ? esc2.factor : 1;
     // la lectura con la que cerró el vecino (Versión 398): su columna se lee igual que se leyó la suya
@@ -501,7 +523,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     const subRep2 = existsSync(pV2) ? (JSON.parse(readFileSync(pV2, 'utf8')).notas || []).some((n) => String(n).startsWith('escalón "subtotal repetido"')) : false; // (to-do 175)
     const ventana2 = existsSync(pV2) ? (JSON.parse(readFileSync(pV2, 'utf8')).notas || []).some((n) => String(n).startsWith('escalón "gestión de jugadores neta"')) : false; // (to-do 170)
     const acumNotas2 = existsSync(pV2) ? (JSON.parse(readFileSync(pV2, 'utf8')).notas || []).filter((n) => String(n).startsWith('escalón "acumulados"')) : []; const otrosRes2 = existsSync(pV2) ? (JSON.parse(readFileSync(pV2, 'utf8')).notas || []).some((n) => String(n).startsWith('escalón "otros con el signo del resultado"')) : false; const acum2 = acumNotas2.length ? (acumNotas2.some((n) => n.includes('(sin-otros)')) ? 'sin-otros' : true) : otrosRes2 ? 'otros-resultado' : false; // (to-do 237 q)
-    return { otro, U2, k2, lect2, subRep2, ventana2, acum2, anclado: !!MULT[U2.escala] || esc2?.escalon === 1, A2: armar(JSON.parse(readFileSync(pF2, 'utf8')), U2, false, k2) };
+    return { otro, U2, k2, lect2, subRep2, ventana2, acum2, anclado: !!MULT[U2.escala] || esc2?.escalon === 1, nbb2: n2 ? n2.N : codigosNBBde(otro.md), A2: armar(n2 ? n2.F : F2, U2, false, k2) };
   };
   // Los ingresos de un documento leídos con UNA lectura de la escalera (Versión 398): 3 suma los renglones sin lado por su signo (y lee los
   // subtotales con ellos), 4 además conserva los signos impresos. Lo usa el chequeo del año vecino: hasta la 397 leía los dos documentos con
@@ -578,6 +600,17 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // PTE) contra la columna 2001 del documento 2002 (euros): 6.419,453 M PTE contra 32,02 M EUR; con la paridad fija, 6.419,453 / 200,482 =
     // 32,02. COMPUERTA: solo uno de los dos tiene ajuste `moneda` y esa moneda tiene `euroFijo` en data/currency-map.js; con la conversión,
     // la misma del escalón 0 (2%). Dos documentos en la misma moneda nunca pasan por acá.
+    // (to-do 298 t) ESCALÓN "códigos NBB": si los dos documentos traen el estado NBB con códigos, la columna del año en común se compara por
+    // sus resultados impresos, el 9904 (del ejercicio) y el 9901 (operativo), no por los ingresos: el esquema abreviado abre o no la
+    // Brutomarge según lo que imprima cada año y un documento puede reclasificar el año anterior entre la Brutomarge y otros gastos con el
+    // mismo 9901 (Patro Eisden 2023: 9900 −246.781, y −232.016 en la columna 2023 de 2024); el año siguiente puede pasar del esquema
+    // abreviado al completo (RWDM 2024 y 2025). Compuerta: 9904 y 9901 impresos en las dos columnas e iguales a una unidad. Solo si las
+    // columnas no coinciden con los escalones de arriba; vale también para un documento con ajustes (compara lo impreso, no lo que se carga).
+    if (!(suyo && cerca(mio, suyo, 0.02)) && nbbPropio && V2.nbb2) {
+      const cM = campoMio === 'M' ? 'actual' : 'anterior'; const cS = campoSuyo === 'M' ? 'actual' : 'anterior';
+      const iguales = ['9904', '9901'].every((c) => nbbPropio.filas[c]?.[cM] != null && V2.nbb2.filas[c]?.[cS] != null && Math.abs(nbbPropio.filas[c][cM] - V2.nbb2.filas[c][cS]) <= 1);
+      if (iguales) return { mio, suyo, ok: true, codigosNBB: ['9904', '9901'] };
+    }
     let paridad = null;
     if (!(suyo && cerca(mio, suyo, 0.02))) {
       const mA = ajusteDe(pdf, 'moneda')?.valor || null; const mB = ajusteDe(V2.otro.pdf, 'moneda')?.valor || null;
@@ -888,7 +921,9 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   let E = null; let E0 = null;
   let algunaCierraRes = false; let escalonAjFin = false;
   let escalonSubRep = false; let escalonSignoDoc = false;
-  for (const n of [0, 1, 2, 3, 4, 5, 6]) {
+  // (to-do 298 t) con las filas NBB, primero la lectura 4 (signo impreso: una reversión "(+)/(-)" negativa resta en su lado). La 0 lee en
+  // valor absoluto y, con la tolerancia, podía dar por bueno un estado con una reversión sumada (Patro Eisden 2025 cerraba así).
+  for (const n of nbbV ? [4, 0, 1, 2, 3, 5, 6] : [0, 1, 2, 3, 4, 5, 6]) {
     const e = evaluar(n); if (!E0) E0 = e; if (e.okRes) algunaCierraRes = true; if (e.cierra) { E = e; break; }
     // (to-do 175, escalón 1) después de la lectura 4 y antes de la 5: la 4 sin los subtotales que repiten el renglón de arriba. Misma
     // compuerta que la 4 (totales impresos y resultado). Solo si la base cambia (hay un subtotal repetido).
@@ -1239,10 +1274,11 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // (el documento vecino y su escala: vecinoDe(), arriba, junto a la escalera de escala)
   for (const [dy, v] of vecinosDoc) {
     const { otro } = v;
-    const { mio, suyo, ok, sinColumna, otroRegimen, paridad } = compararVecino(dy, v, kEsc, E.nivel, escalonSubRep, escalonVentanaOtros, E.ing, escalonAcum || (escalonOtrosRes ? 'otros-resultado' : false));
+    const { mio, suyo, ok, sinColumna, otroRegimen, paridad, codigosNBB } = compararVecino(dy, v, kEsc, E.nivel, escalonSubRep, escalonVentanaOtros, E.ing, escalonAcum || (escalonOtrosRes ? 'otros-resultado' : false));
     vecinos.push(ok);
     if (otroRegimen) { chequeos.push({ nombre: `documento del año ${year + dy}`, ok: null, detalle: `no se puede comparar: uno de los dos cuenta la gestión de jugadores neta como ingreso y el otro no` }); continue; }
     if (sinColumna) { chequeos.push({ nombre: `documento del año ${year + dy}`, ok: null, detalle: `no se puede comparar: ${dy === 1 ? otro.pdf.split('/').pop() : 'este documento'} no trae la columna del año anterior` }); continue; }
+    if (codigosNBB) { chequeos.push({ nombre: `documento del año ${year + dy}`, ok, detalle: `códigos NBB del año ${dy === 1 ? year : year - 1} iguales en este documento y en ${otro.pdf.split('/').pop()} (${codigosNBB.join(', ')}); los ingresos se presentan distinto (${r6(dy === 1 ? mio : suyo)} y ${r6(dy === 1 ? suyo : mio)})` }); continue; }
     chequeos.push({ nombre: `documento del año ${year + dy}`, ok, detalle: `${paridad ? `en euros, con la paridad fija de ${paridad} (1 EUR = ${EURO_FIJO[paridad]}): ` : ''}ingresos de ${dy === 1 ? year : year - 1}: ${r6(dy === 1 ? mio : suyo)} en ${dy === 1 ? 'este documento' : otro.pdf.split('/').pop()} y ${r6(dy === 1 ? suyo : mio)} en ${dy === 1 ? otro.pdf.split('/').pop() : 'este documento'} (columna del año anterior)` });
     // (to-do 232 m, aprobado por Guido el 2026-10-14) PRESENTACIÓN DISTINTA: la diferencia es exactamente UNA fila de GASTO (no un total) de
     // uno de los dos documentos: uno la presenta y el otro la netea. Casos: Olympiacos 2020 (82,46 M bruto) contra la columna anterior de 2021
@@ -1298,7 +1334,11 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // Se le pregunta a Claude con las líneas del estado y lo que se carga (tools/primer-anio-ia.mjs): sin ninguna fila marcada, no hace
     // falta el caso; con alguna, el caso lleva la cita. Sin respuesta guardada, el caso queda como antes y el pedido queda "pendiente".
     // El escalón 3 y el caso "primer año" se resuelven abajo, con los signos de la carga (ver escalon3_214).
-    if (!(vecinos.includes(true) || imprime3 || imprime1)) primerAnio214 = { escalon3: resOk214(suma(ing)) };
+    // (to-do 298 t) el estado salió de sus códigos NBB y cerró exacto: cada código tiene UN lado y todos los totales impresos cierran, así
+    // que el error que se compensa que busca esta revisión no puede pasar (una fila del lado equivocado rompe el 9901 o el 70/76A y 60/66A).
+    const porNBB = !!(nbbV && E?.exacto && E?.okRes && !imprime3 && !imprime1);
+    if (porNBB) chequeos.push({ nombre: 'primer año', ok: true, detalle: 'el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)' });
+    if (!(vecinos.includes(true) || imprime3 || imprime1 || porNBB)) primerAnio214 = { escalon3: resOk214(suma(ing)) };
   }
   // un total o el resultado que no cierran -> cola (salvo que Guido ya lo haya aceptado)
   for (const c of chequeos.filter((x) => x.ok === false && x.nombre !== 'año anterior cargado')) caso('no-cierra', c.nombre, `${c.nombre}: ${c.detalle}. Revisar si falta o sobra alguna fila, o si hay un renglón del lado equivocado.`, { pagina: estado[0]?.pagina, lineas: estado.length ? [Math.min(...estado.map((f) => f.linea)), Math.max(...estado.map((f) => f.linea))] : null });
