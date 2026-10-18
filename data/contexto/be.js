@@ -9,6 +9,9 @@ Object.assign(window.CLUB_CONTEXT, {
   'antwerp-be': {
     2025: {"estadio":"Bosuilstadion","capacidad":16144,"sponsor":"betFIRST","marca":"Jako","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
   },
+  'beerschot-be': {
+    2025: {"estadio":"Olympisch Stadion","capacidad":12771,"sponsor":"Star Casino, Wolf Lubricants","marca":"Erreà","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
+  },
   'cerclebrugge-be': {
     2025: {"estadio":"Jan Breydel Stadium","capacidad":29042,"sponsor":"Golden Palace Casino Sports, Volvo Automobilia","marca":"Kappa","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
   },
@@ -29,6 +32,9 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'mechelen-be': {
     2025: {"estadio":"AFAS-stadion Achter de Kazerne","capacidad":16700,"sponsor":"Telenet","marca":"Erreà","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
+  },
+  'ohleuven-be': {
+    2025: {"estadio":"Den Dreef","capacidad":10000,"sponsor":"Star Casino","marca":"Stanno","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},
   },
   'sinttruiden-be': {
     2025: {"estadio":"Stayen","capacidad":14600,"sponsor":"DMM.com","marca":"Olympic Sportswear","temporada":"2024–25 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374900243"},

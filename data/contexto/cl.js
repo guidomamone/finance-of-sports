@@ -4,10 +4,10 @@
 window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
 Object.assign(window.CLUB_CONTEXT, {
   'catolica-cl': {
-    2010: {"temporada":"2010 Primera Division of Chile","fuente":"https://en.wikipedia.org/w/index.php?oldid=1272725356"},
-    2011: {"estadio":"San Carlos de Apoquindo","temporada":"2011 Campeonato Nacional Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380299251"},
-    2012: {"estadio":"San Carlos de Apoquindo","temporada":"2012 Campeonato Nacional Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380299151"},
-    2013: {"estadio":"San Carlos de Apoquindo","temporada":"2013–14 Campeonato Nacional Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1328399457"},
+    2010: {"sponsor":"Cristal","marca":"Puma","temporada":"2010 Primera Division of Chile","fuente":"https://en.wikipedia.org/w/index.php?oldid=1272725356","club":{"sponsor":"https://en.wikipedia.org/w/index.php?oldid=1378302676","marca":"https://en.wikipedia.org/w/index.php?oldid=1378302676"}},
+    2011: {"estadio":"San Carlos de Apoquindo","sponsor":"Cristal","marca":"Puma","temporada":"2011 Campeonato Nacional Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380299251","club":{"sponsor":"https://en.wikipedia.org/w/index.php?oldid=1378302676","marca":"https://en.wikipedia.org/w/index.php?oldid=1378302676"}},
+    2012: {"estadio":"San Carlos de Apoquindo","sponsor":"DirecTV","marca":"Puma","temporada":"2012 Campeonato Nacional Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380299151","club":{"sponsor":"https://en.wikipedia.org/w/index.php?oldid=1378302676","marca":"https://en.wikipedia.org/w/index.php?oldid=1378302676"}},
+    2013: {"estadio":"San Carlos de Apoquindo","sponsor":"DirecTV","marca":"Puma","temporada":"2013–14 Campeonato Nacional Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1328399457","club":{"sponsor":"https://en.wikipedia.org/w/index.php?oldid=1378302676","marca":"https://en.wikipedia.org/w/index.php?oldid=1378302676"}},
     2014: {"estadio":"San Carlos de Apoquindo","sponsor":"DirecTV","marca":"Umbro","temporada":"2014–15 Campeonato Nacional Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372286663"},
     2015: {"estadio":"San Carlos de Apoquindo","sponsor":"DirecTV","marca":"Umbro","temporada":"2015–16 Campeonato Nacional Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1357177916"},
     2016: {"estadio":"San Carlos de Apoquindo","sponsor":"DirecTV","marca":"Umbro","temporada":"2015–16 Campeonato Nacional Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1357177916"},

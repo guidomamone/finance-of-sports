@@ -97,7 +97,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'panetolikos-gr': {
     2017: {"estadio":"Panetolikos Stadium","capacidad":7000,"sponsor":"Pame Stoixima","marca":"Legea","temporada":"2016–17 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373608816"},
     2018: {"estadio":"Panetolikos Stadium","capacidad":7000,"sponsor":"Pame Stoixima","marca":"Legea","temporada":"2017–18 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375017279"},
-    2020: {"estadio":"Panetolikos Stadium","capacidad":7321,"marca":"Givova","temporada":"2019–20 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376492647"},
+    2020: {"estadio":"Panetolikos Stadium","capacidad":7321,"sponsor":"Emileon","marca":"Givova","temporada":"2019–20 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376492647","club":{"sponsor":"https://en.wikipedia.org/w/index.php?oldid=1378731763"}},
     2021: {"estadio":"Panetolikos Stadium","capacidad":7321,"sponsor":"Car.gr","marca":"Givova","temporada":"2020–21 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375822960"},
     2022: {"estadio":"Panetolikos Stadium","capacidad":7321,"sponsor":"Shopflix.gr","marca":"Givova","temporada":"2021–22 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376143441"},
     2023: {"estadio":"Panetolikos Stadium","capacidad":7321,"sponsor":"Interwetten","marca":"Givova","temporada":"2022–23 Super League Greece","fuente":"https://en.wikipedia.org/w/index.php?oldid=1370050785"},
