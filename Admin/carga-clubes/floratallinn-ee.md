@@ -243,6 +243,72 @@ Generados/Estonia/Flora Tallinn/aruanne-2023.categorias.json (escalón de cada f
 tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-18) desde Clubes/Estonia/Flora Tallinn/aruanne-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Estonia/Flora Tallinn/aruanne-2022.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Liikmetelt saadud tasud | pág. 5, precedente |
+| 2 | UEFA solidaarsustoetus osalemise eest UEFA klubivõistlustel | pág. 19, precedente |
+| 3 | Muud toetused UEFA-lt | pág. 19, precedente |
+| 4 | Riigi ja/või KOV toetus | pág. 19, precedente |
+| 5 | EJL toetused | pág. 19, precedente |
+| 6 | Muud toetused | pág. 19, precedente |
+| 7 | Tulu piletimüügist | pág. 20, precedente |
+| 8 | Tulu ülekandeõiguste müügist | pág. 20, precedente |
+| 9 | Tulu mängijaõiguste müügist | pág. 20, precedente |
+| 10 | Sponsorlus- ja reklaamitulu | pág. 20, precedente |
+| 11 | Staadioni rent | pág. 20, precedente |
+| 12 | Muu tulu ettevõtlusest | pág. 20, precedente |
+| 13 | Muud tulud | pág. 5, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Mängijatele makstav sportlasetoetus | pág. 20, precedente |
+| 2 | Mängijatele makstav sportlasestipendium | pág. 20, precedente |
+| 3 | Muud annetused | pág. 20, precedente |
+| 4 | Üür ja rent | pág. 21, precedente |
+| 5 | Elektrienergia | pág. 21, Jev 1 |
+| 6 | Kütus | pág. 21, Jev 0.99 |
+| 7 | Mitmesugused bürookulud | pág. 21, precedente |
+| 8 | Lähetuskulud | pág. 21, precedente |
+| 9 | Koolituskulud | pág. 21, precedente |
+| 10 | Riiklikud ja kohalikud maksud | pág. 21, precedente |
+| 11 | Kulu ebatõenäoliselt laekuvatest nõuetest | pág. 21, precedente |
+| 12 | Võistluste ja treeningutega seotud kulud | pág. 21, precedente |
+| 13 | Kulud mängijate õiguste ostmisest | pág. 21, precedente |
+| 14 | Reklaamikulud | pág. 21, precedente |
+| 15 | Konsultatsioonid | pág. 21, precedente |
+| 16 | Autokulud | pág. 21, precedente |
+| 17 | Pangateenused | pág. 21, precedente |
+| 18 | Staadioni halduskulud | pág. 21, precedente |
+| 19 | Müüdud kaup soetusmaksumuses | pág. 21, precedente |
+| 20 | Muud | pág. 21, precedente |
+| 21 | Mängijate palgakulu | pág. 21, precedente |
+| 22 | Sotsiaalmaks mängijate töötasudelt | pág. 21, precedente |
+| 23 | Muu personali palgakulu | pág. 21, precedente |
+| 24 | Sotsiaalmaks muu personali töötasudelt | pág. 21, precedente |
+| 25 | Põhivarade kulum ja väärtuse langus | pág. 5, precedente |
+| 26 | Kahjum kinnisvarainvesteeringute õiglase väärtuse muutusest | pág. 22, precedente |
+| 27 | Kahjum valuutakursi muutustest | pág. 22, Jev 0.92 |
+| 28 | Esinduskulud | pág. 22, precedente |
+| 29 | Muud | pág. 22, precedente |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): reportType = official_balance_sheet. majandusaasta aruanne anual con estado de resultados ("# Tulemiaruanne", .md L192) (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-18). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2021
 
 ### Ingresos
@@ -492,4 +558,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Flora Tallinn/aruanne-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### floratallinn-ee-aruanne-2022
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Estonia/Flora Tallinn/aruanne-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
