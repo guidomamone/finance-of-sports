@@ -155,3 +155,7 @@ gestionId 'louisdreyfus': los 2 ejercicios cargados confirman a Kyril Louis-Drey
 Investments Limited, controlante último) en los 2 Strategic Reports/Related Party Disclosures, sin
 cambio entre 2024 y 2025.
 ```
+
+## Gestiones (Finanzas 5, 2026-10-19)
+
+- Stewart Donald, Dueño, 2018-05-21 a 2021-02-18 (Louis-Dreyfus). Fue Chairman hasta 2020-07-18 y siguió como dueño; no se encontró quién presidió entre esa fecha y 2021-02-18, por eso el cargo es Dueño. Juan Sartori, copropietario minoritario, no se carga. Cubre los cierres 2019-07-31 y 2020-07-31.

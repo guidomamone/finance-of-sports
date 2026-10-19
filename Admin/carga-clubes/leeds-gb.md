@@ -120,3 +120,7 @@ _note (data/):_
 ```text
 Transcripción completa en Clubes/Inglaterra/Leeds United/leeds-group-accounts-2024-25.md.
 ```
+
+## Gestiones (Finanzas 5, 2026-10-19)
+
+- Andrea Radrizzani, Chairman, 2017-05-23 (compra del 100 % a Cellino; tenía el 50 % desde enero de 2017) a 2023-07-18 (venta a 49ers Enterprises, con la entrada de Marathe). Wikipedia no da fechas del cargo de Chairman como tal: el inicio es el de la compra total y el fin, el de la venta. Cubre el cierre 2020-07-31.

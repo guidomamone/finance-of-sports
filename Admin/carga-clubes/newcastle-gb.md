@@ -118,3 +118,7 @@ _note (data/):_
 ```text
 Transcripción completa en Clubes/Inglaterra/Newcastle United/newcastle-united-group-accounts-2024-25.md. Amanda Staveley renunció al directorio y desinvirtió su participación en julio de 2024. Ver comentario de cabecera de data/gb/newcastle-gb-data.js para el detalle completo de categorización.
 ```
+
+## Gestiones (Finanzas 5, 2026-10-19)
+
+- Mike Ashley, Dueño, 2007-06-15 (superó el 75 %: primera compra el 2007-05-23, resto en julio) a 2021-10-07 (venta a PIF). No fue Chairman (puso a Chris Mort). Cubre el cierre 2021-06-30.
