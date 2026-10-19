@@ -37,3 +37,5 @@ necesariamente el documento real el que está corrupto.
 `pdfinfo` sin errores en los 7 archivos finales (56, 60, 60, 60, 31, 54 y 48 páginas respectivamente).
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.pdf` (sourceId `luzern-ch-geschaeftsbericht-2024-25`).

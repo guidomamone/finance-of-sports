@@ -30,3 +30,5 @@ de mapeo de datos, fuera de este alcance de sourcing), pero el nombre y tamaño 
 es consistente con un Geschäftsbericht completo, no un resumen.
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.pdf` (sourceId `stgallen-ch-geschaeftsbericht-2024-25`).

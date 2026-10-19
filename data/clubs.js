@@ -286,6 +286,9 @@ const clubs = {
   'basel-ch': { id:'basel-ch', name:'FC Basel 1893 AG', displayName:'Basel', country:'CH', reportingCurrency:'CHF', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#E20A17' },
   'aalesund-no': { id:'aalesund-no', name:'Ålesund Fotball AS', displayName:'Aalesund', country:'NO', reportingCurrency:'NOK', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#FE7812' },
   'sarpsborg08-no': { id:'sarpsborg08-no', name:'Sarpsborg 08 Fotballforening', displayName:'Sarpsborg 08', country:'NO', reportingCurrency:'NOK', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#2747A3' },
+  'luzern-ch': { id:'luzern-ch', name:'FCL Holding AG', displayName:'Luzern', country:'CH', reportingCurrency:'CHF', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#00519E' },
+  'stgallen-ch': { id:'stgallen-ch', name:'FC St.Gallen AG', displayName:'St. Gallen', country:'CH', reportingCurrency:'CHF', fiscalYearStart:'07-01', sport:'futbol', brandColor:'#009A3A' },
+  'fredrikstad-no': { id:'fredrikstad-no', name:'Fredrikstad Fotballklubb', displayName:'Fredrikstad', country:'NO', reportingCurrency:'NOK', fiscalYearStart:'01-01', sport:'futbol', brandColor:'#DA2128' },
 };
 
 // Source: de dónde sale cada número; `reliability` es lo que distingue dato oficial, de prensa o placeholder.
