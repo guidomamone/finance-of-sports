@@ -86,6 +86,39 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 alta-club.mjs (2026-10-19): no-eliteserien, verificado contra roster cacheado de "2024 Eliteserien" (tools/club-league-reference/no.json), coincidencia exacta "Fredrikstad".
 ```
 
+## 2017
+
+### Ingresos
+
+```text
+2017: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2017.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2017.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Annen driftsinntekt | pág. 14, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Varekostnad | pág. 14, precedente |
+| 2 | Lønninger | pág. 18, Jev 0.95 |
+| 3 | Arbeidsgiveravgift | pág. 18, Jev 0.99 |
+| 4 | Pensjonskostnader | pág. 18, Claude 0.85 |
+| 5 | Andre ytelser | pág. 18, Jev 0.98 |
+| 6 | Avskrivning | pág. 14, precedente |
+| 7 | Annen driftskostnad | pág. 14, precedente |
+
+### Meta
+
+```text
+2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, perimetro-senales 2026-10-18): perimetro = individual. perimetro-senales.mjs: el ejercicio 2017-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 15 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
 ## 2016
 
 ### Ingresos
@@ -132,4 +165,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### fredrikstad-no-aarsregnskap-fotballklubb-fli-2017
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2017.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
