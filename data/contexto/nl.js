@@ -29,6 +29,9 @@ Object.assign(window.CLUB_CONTEXT, {
   'fcemmen-nl': {
     2019: {"estadio":"De Oude Meerdijk","capacidad":8600,"sponsor":"Noordlease","marca":"Beltona","temporada":"2018–19 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1354348195"},
   },
+  'fctwente-nl': {
+    2025: {"estadio":"De Grolsch Veste","capacidad":30205,"sponsor":"Elektramat","marca":"Castore","temporada":"2024–25 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378045333"},
+  },
   'feyenoord-nl': {
     2024: {"estadio":"De Kuip","capacidad":47500,"sponsor":"EuroParcs","marca":"Castore","temporada":"2023–24 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377460717"},
     2025: {"estadio":"De Kuip","capacidad":47500,"sponsor":"Mediamarkt","marca":"Castore","temporada":"2024–25 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378045333"},
