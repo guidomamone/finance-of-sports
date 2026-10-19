@@ -73,6 +73,9 @@ Object.assign(window.CLUB_CONTEXT, {
   'sccambuur-nl': {
     2025: {"estadio":"Kooi Stadion","capacidad":15000,"temporada":"2024–25 Eerste Divisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372593507"},
   },
+  'scheerenveen-nl': {
+    2025: {"estadio":"Abe Lenstra Stadion","capacidad":27224,"sponsor":"Wolkom onbegrensd Fryslân","marca":"Macron","temporada":"2024–25 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378045333"},
+  },
   'spartarotterdam-nl': {
     2024: {"estadio":"Spartastadion Het Kasteel","capacidad":11000,"sponsor":"De Goudse Verzekeringen, D&S Group","marca":"Robey","temporada":"2023–24 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377460717"},
   },
