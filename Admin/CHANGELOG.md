@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 807 — Factoring: con recurso es deuda; el 310 cerrado (2026-10-19)
+
+* Regla en CONVENCIONES-DATOS (ok de Guido): el factoring con recurso entra en la deuda; el pro soluto, no. Cierra el 291 y el 290 (Genoa 2022).
+* 310 partes 2 (deuda belga) y 3 (OH Leuven) a HALLAZGOS.
+
 ## Versión 806 — 310: la caja de un año sin vecino, con tres votos (2026-10-19)
 
 * `caja-deuda.mjs`: la caja de un año sin vecino entra con tres votos: balance que cuadra, mayor activo y cifra repetida (elección de
