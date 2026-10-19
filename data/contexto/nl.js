@@ -23,6 +23,9 @@ Object.assign(window.CLUB_CONTEXT, {
   'fcdenbosch-nl': {
     2025: {"estadio":"Stadion De Vliert","capacidad":8713,"temporada":"2024–25 Eerste Divisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372593507"},
   },
+  'fcdordrecht-nl': {
+    2025: {"estadio":"M-Scores Stadion","capacidad":4235,"temporada":"2024–25 Eerste Divisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372593507"},
+  },
   'feyenoord-nl': {
     2024: {"estadio":"De Kuip","capacidad":47500,"sponsor":"EuroParcs","marca":"Castore","temporada":"2023–24 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377460717"},
     2025: {"estadio":"De Kuip","capacidad":47500,"sponsor":"Mediamarkt","marca":"Castore","temporada":"2024–25 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378045333"},
