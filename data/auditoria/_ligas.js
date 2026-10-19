@@ -260,5 +260,23 @@ window.LIGA_AUDITORIA = {
     "linea": 2493
    }
   }
+ },
+ "gr-superleague": {
+  "2025": {
+   "entidad": {
+    "nombre": "Super League",
+    "legal": "ΣΟΥΠΕΡΛΙΓΚ ΕΝΑ ΕΛΛΑΔΑΣ ΣΥΝΕΤΑΙΡΙΣΜΟΣ ΠΕΡΙΟΡΙΣΜΕΝΗΣ ΕΥΘΥΝΗΣ"
+   },
+   "auditor": {
+    "nombre": "PKF ΕΥΡΩΕΛΕΓΚΤΙΚΗ Α.Ε.",
+    "tipo": "firma"
+   },
+   "dictamen": "con_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Ligas/Grecia/Super League/super-league-grecia-estados-financieros-2024-25.md",
+    "linea": 715
+   }
+  }
  }
 };
