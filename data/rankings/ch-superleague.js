@@ -23,6 +23,15 @@ window.RANKINGS["ch-superleague"] = {
         mix:[["Comercial / Sponsors",10.121],["Estadio",5.83],["Televisión",3.119],["Premios por competencias",21.052],["Venta de Jugadores",7.267],["Otras secciones deportivas",2.539],["Otros ingresos",15.186]] },
     ],
   },
+  2020: {
+    leagueSize: 10,
+    wiki: {"t":"2019–20 Swiss Super League","lang":"en","at":"2026-10-19","n":10},
+    clubs: [
+      { id:"basel-ch", revenue:75.854, reportType:"official_balance_sheet",
+        sourceId:"basel-ch-geschaeftsbericht-2020",
+        mix:[["Comercial / Sponsors",10.823],["Estadio",5.254],["Televisión",3.578],["Premios por competencias",11.038],["Venta de Jugadores",41.18],["Otras secciones deportivas",0.72],["Otros ingresos",3.261]] },
+    ],
+  },
   2019: {
     leagueSize: 10,
     wiki: {"t":"2018–19 Swiss Super League","lang":"en","at":"2026-09-30","n":10},

@@ -74,3 +74,5 @@ completo, pero real y auditada).
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2018 desde `Clubes/Suiza/Basel/geschaeftsbericht-2018.pdf` (sourceId `basel-ch-geschaeftsbericht-2018`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2019 desde `Clubes/Suiza/Basel/geschaeftsbericht-2019.pdf` (sourceId `basel-ch-geschaeftsbericht-2019`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2020 desde `Clubes/Suiza/Basel/geschaeftsbericht-2020.pdf` (sourceId `basel-ch-geschaeftsbericht-2020`).
