@@ -26,6 +26,13 @@ const astonvillaGbRevenueLinesByYear = {
     { rawLabel:'Commercial', normalizedCategory:'sponsorship_commercial', amountNative:3.842892, disclosureLevel:'aggregated' },
     { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:2.5, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Gate Receipts', normalizedCategory:'matchday_competition', amountNative:16.062996, disclosureLevel:'aggregated' },
+    { rawLabel:'Broadcasting', normalizedCategory:'broadcasting', amountNative:123.211017, disclosureLevel:'aggregated' },
+    { rawLabel:'Sponsorship', normalizedCategory:'sponsorship_commercial', amountNative:12.703334, disclosureLevel:'aggregated' },
+    { rawLabel:'Commercial', normalizedCategory:'sponsorship_commercial', amountNative:11.766557, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:0.25, disclosureLevel:'aggregated' },
+  ],
 };
 
 const astonvillaGbExpenseLinesByYear = {
@@ -46,6 +53,10 @@ const astonvillaGbExpenseLinesByYear = {
   ],
   2021: [
     { rawLabel:'Administrative expenses', normalizedCategory:'admin_general_expense', amountNative:-210.849675, disclosureLevel:'aggregated' },
+  ],
+  2022: [
+    { rawLabel:'Administrative expenses', normalizedCategory:'admin_general_expense', amountNative:-145.805056, disclosureLevel:'aggregated' },
+    { rawLabel:'Exceptional administrative expenses', normalizedCategory:'exceptional_items', amountNative:-10, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -97,6 +108,20 @@ const astonvillaGbFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:178.128848, officialTotalExpenses:210.849675, officialPAT:-32.087203,
   },
+  2022: {
+    currency:'GBP', fxRef:'GBP@2022-05-31',
+    sourceId:'astonvilla-gb-full-accounts-2021-22',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.282155, tax:-1.434468,
+    extraRows: [
+      {label:'Interest payable and similar expenses', value:-0.282155},
+      {label:'Tax on profit/(loss)', value:-1.434468},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:163.993904, officialTotalExpenses:145.805056, officialPAT:6.472225,
+  },
 };
 
 const astonvillaGbPresupuestoOverlayByYear = {};
@@ -134,6 +159,11 @@ Object.assign(sources, {
   'astonvilla-gb-full-accounts-2020-21': {
     id:'astonvilla-gb-full-accounts-2020-21', clubId:'astonvilla-gb',
     title:'Aston Villa Football Club Limited — astonvilla-full-accounts-2020-21 (ejercicio 2021)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'astonvilla-gb-full-accounts-2021-22': {
+    id:'astonvilla-gb-full-accounts-2021-22', clubId:'astonvilla-gb',
+    title:'Aston Villa Football Club Limited — astonvilla-full-accounts-2021-22 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
