@@ -133,6 +133,12 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   Admin/mediciones/perimetro-a2-medicion-recorte-232e.txt. El contexto alrededor de los títulos le sirve a Claude para ubicar el estado.
 
 ## Conocido, sin daño hoy (no se trabaja salvo que algo cambie)
+- **Milan 2018 en `caja-deuda --medir` (to-do 306, 2026-10-19): medido, no se diseña.** El balance de Milan imprime la deuda como títulos
+  sin importe ("1 obbligazioni", "3 debiti verso soci", "5 debiti verso altri finanziatori") con las filas "a) entro / b) oltre 12 mesi"
+  debajo; el diccionario solo ve "4 debiti verso banche" (1,21 M contra 164,27 M cargados). Es el único club italiano con ese formato (9
+  documentos de Milan). Aunque las filas hijas heredaran el título del padre, daría 127,73 M: los 36,54 M de "altri finanziatori" (factoring)
+  quedan afuera a propósito (to-do 291). Riesgo: la compuerta del documento siguiente dejó pasar los 1,21 M porque el año vecino repite el
+  defecto. Retomar si se carga otro año de Milan o si se resuelve el 291 (¿el factoring es deuda?).
 - **Achicar el texto del paso A2 del perímetro (to-do 232 e, 2026-10-19): medido, no se prueba.** A2 costó US$ 40,13 en 709 llamadas
   (8% del gasto de API; mediana 9.300 tokens de entrada, máximo 50.700). Recortar las notas que vienen después del estado ahorraría ~US$ 0,02
   por documento (2-3% del gasto total), y A2 existe para encontrar el estado cuando las palabras no alcanzan: recortar antes de saber dónde
