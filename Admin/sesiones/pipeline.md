@@ -531,3 +531,9 @@ multiclub de `data/rankings/`, y Lommel está en City Football Group; al escribi
 (P1) y el año se revierte. `tools/entidades.mjs` no estaba en `tools/generadores.mjs`. Probado: cambiar el ingreso de Lommel 2025 en `be-challengerproleague.js` deja "data/entidades/
 desactualizado: _grupos-detalle.js"; correr `entidades.mjs` después lo deja al día. Arreglo: `tools/entidades.mjs` en la lista, después de `generate-rankings.js`. Idempotente sobre
 árbol limpio (sin diferencias en git). Falta el arreglo 2: la línea `carga-club` (la tarjeta del sitio dice "Todavía no cargamos la estructura" en un año sin `carga`).
+
+**298 ad, arreglo 2: `carga-club` (Guido, 2026-10-19).** `entidades.mjs` acepta `{"tipo":"carga-club","clubId","entidad","perimetro","desde","hasta"(null=abierto),"cita"}`: cada ejercicio
+cargado dentro del rango sin línea `carga` propia toma esa entidad (cita única del rango, verificada con `quien.mjs` dentro del rango). Probado con `--con` sobre Lommel SK (cargados 2018 y 2025):
+rango 2018-abierto → 2018 se deduce y 2025 conserva su línea; rango 2018-2020 con el documento citado de 2025 → error; dos rangos que se pisan → error. Sobre el registro real, sin
+cambios: `--check` al día (60 clubes, 9 grupos), `entidades.mjs` idempotente en git, audit.js P0 0 / P1 0. NO agregué la línea de Lommel al registro (cambiaría datos publicados: su 2018 pasaría
+a mostrar estructura): queda para quien cargue los años 2019-2024, con la cita `Naam : VOETBALCLUB LOMMEL SK` (L9 de cada `jaarrekening-AAAA-06-30-individual.md`).

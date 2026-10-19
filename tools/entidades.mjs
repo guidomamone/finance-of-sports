@@ -18,6 +18,12 @@
 //   {"tipo":"carga","clubId":"chelsea-gb","anio":2025,"entidad":"chelsea-fc-holdings","perimetro":"consolidado","cita":{…}}
 //       de qué entidad son los números de ese ejercicio. La cita es del documento fuente de ese año.
 //
+//   {"tipo":"carga-club","clubId":"lommelsk-be","entidad":"lommel-sk","perimetro":"individual","desde":2019,"hasta":2025,"cita":{…}}
+//       (to-do 298 ad) lo mismo para un RANGO de ejercicios con UNA sola cita: cada ejercicio cargado en el sitio dentro de [desde, hasta]
+//       (hasta null = abierto) que no tenga su propia línea `carga` toma esta entidad y este perímetro. Para un club que no cambia de entidad
+//       (un club con dueño y balance individual): una línea al dar el alta en lugar de una por año, que además no se puede agregar antes de
+//       cargar el año. La cita es de un documento del club dentro del rango; una `carga` explícita del mismo año gana. Dos rangos del mismo
+//       club que se pisan son un error.
 //   {"tipo":"ingresos","entidad":"vitoria-sport-clube","anio":2022,"cierre":"2022-06-30","moneda":"EUR","total":4566468.26,
 //    "filas":[{"md":"Clubes/…/x.md","linea":1348,"texto":"Vendas e serviços prestados | 13;22 | 3 820 068,63 €","valor":3820068.63},…]}
 //       los ingresos de una entidad que NO se carga ese año (to-do 281), en la unidad del documento: los renglones de ingresos de su
@@ -79,7 +85,7 @@ const err = (n, msg) => errores.push(`${REGISTRO}:${n}: ${msg}`);
 const CON = (() => { const i = args.indexOf('--con'); return i >= 0 ? args[i + 1] : null; })();
 const lineas = [...(existsSync(join(ROOT, REGISTRO)) ? readFileSync(join(ROOT, REGISTRO), 'utf8').split('\n') : []),
   ...(CON ? readFileSync(resolve(CON), 'utf8').split('\n') : [])];
-const entidades = new Map(), relaciones = [], cargas = [], ingresos = [];
+const entidades = new Map(), relaciones = [], cargas = [], ingresos = [], rangos = [];
 lineas.forEach((l, i) => {
   const n = i + 1;
   if (!l.trim() || l.trim().startsWith('//')) return;
@@ -99,6 +105,11 @@ lineas.forEach((l, i) => {
   } else if (o.tipo === 'carga') {
     if (!PERIMETROS.has(o.perimetro)) err(n, `perímetro desconocido "${o.perimetro}"`);
     cargas.push(o);
+  } else if (o.tipo === 'carga-club') {
+    if (!PERIMETROS.has(o.perimetro) || o.perimetro === 'suma') err(n, `perímetro desconocido o no admitido en un rango "${o.perimetro}"`); // un rango no puede ser una suma: esa lleva nota por año
+    if (!o.clubId || !o.entidad) err(n, 'carga-club sin clubId o sin entidad');
+    if (!Number.isInteger(o.desde) || !(o.hasta == null || (Number.isInteger(o.hasta) && o.hasta >= o.desde))) err(n, 'carga-club con desde/hasta que no son ejercicios (hasta puede ser null)');
+    rangos.push(o);
   } else if (o.tipo === 'ingresos') {
     if (!Array.isArray(o.filas) || !o.filas.length) err(n, 'ingresos sin filas');
     if (!/^\d{4}-\d{2}-\d{2}$/.test(o.cierre || '') || !/^[A-Z]{3}$/.test(o.moneda || '') || typeof o.total !== 'number') err(n, 'ingresos sin cierre AAAA-MM-DD, moneda ISO o total');
@@ -125,7 +136,7 @@ function chequearCita(o) {
     if (!/^https:\/\//.test(c.url) || !/^\d{4}-\d{2}-\d{2}$/.test(c.fecha || '') || !c.texto) err(o._n, 'cita externa sin url https, fecha AAAA-MM-DD o texto');
   } else err(o._n, 'cita sin md ni url');
 }
-[...entidades.values(), ...relaciones, ...cargas].forEach(chequearCita);
+[...entidades.values(), ...relaciones, ...cargas, ...rangos].forEach(chequearCita);
 for (const g of ingresos) {
   let suma = 0;
   for (const f of g.filas || []) {
@@ -145,6 +156,25 @@ for (const g of ingresos) {
   if (!entidades.has(g.entidad)) err(g._n, `entidad "${g.entidad}" no está en el registro`);
   if (cargas.some(c => c.entidad === g.entidad && c.anio === g.anio)) err(g._n, `"${g.entidad}" es la entidad cargada en ${g.anio}: sus ingresos ya están en el sitio`);
 }
+// (to-do 298 ad) Los rangos: se expanden a una carga por ejercicio cargado en el sitio, salvo los que tienen su propia línea `carga`.
+const rangosPorClub = new Map();
+for (const r of rangos) {
+  if (!entidades.has(r.entidad)) err(r._n, `entidad "${r.entidad}" no está en el registro`);
+  const club = generic[r.clubId];
+  if (!club) { err(r._n, `el club "${r.clubId}" no tiene datos en el sitio`); continue; }
+  if (r.cita?.md) {
+    const q = quien(join(ROOT, r.cita.md.replace(/\.md$/, '.pdf')), r.clubId);
+    if (q.error || !(q.year >= r.desde && (r.hasta == null || q.year <= r.hasta))) err(r._n, `el documento citado es del ejercicio ${q.year ?? '?'} según tools/quien.mjs, fuera del rango ${r.desde}-${r.hasta ?? ''}`);
+  } else err(r._n, 'un rango se cita con un documento del club, no con una url');
+  const previos = rangosPorClub.get(r.clubId) || [];
+  const pisa = previos.find(p => r.desde <= (p.hasta ?? Infinity) && p.desde <= (r.hasta ?? Infinity));
+  if (pisa) err(r._n, `el rango ${r.desde}-${r.hasta ?? ''} se pisa con el de la línea ${pisa._n}`);
+  rangosPorClub.set(r.clubId, [...previos, r]);
+  for (const y of Object.keys(club.fiscalYearMeta || {}).map(Number)) {
+    if (y < r.desde || (r.hasta != null && y > r.hasta) || cargas.some(c => c.clubId === r.clubId && c.anio === y)) continue;
+    cargas.push({ tipo: 'carga', clubId: r.clubId, anio: y, entidad: r.entidad, perimetro: r.perimetro, cita: r.cita, deducida: true, _n: r._n });
+  }
+}
 const vistos = new Set();
 for (const c of cargas) {
   if (!entidades.has(c.entidad)) err(c._n, `entidad "${c.entidad}" no está en el registro`);
@@ -153,7 +183,7 @@ for (const c of cargas) {
   if (!club.fiscalYearMeta?.[c.anio]) err(c._n, `${c.clubId} no tiene cargado el ejercicio ${c.anio}`);
   const clave = `${c.clubId}|${c.anio}|${c.entidad}`;
   if (vistos.has(clave)) err(c._n, `carga repetida ${clave}`); vistos.add(clave);
-  if (c.cita?.md) {
+  if (c.deducida) { /* la cita es del rango: se verificó arriba */ } else if (c.cita?.md) {
     const q = quien(join(ROOT, c.cita.md.replace(/\.md$/, '.pdf')), c.clubId);
     if (q.error || q.year !== c.anio) err(c._n, `el documento citado es del ejercicio ${q.year ?? '?'} según tools/quien.mjs, no del ${c.anio}`);
   } else err(c._n, 'una carga se cita con su documento fuente, no con una url');
