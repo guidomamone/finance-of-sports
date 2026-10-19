@@ -354,3 +354,5 @@
   (Barreira, 2025-04-15 a 2026-01-15, cubre el cierre). Si prefiere al ejecutivo, el cierre queda sin fuente con la fecha de asunción.
 - 282 a: Go Ahead Eagles 2025, candidato a mail al club (pedir la controleverklaring de la Holding); Roma 2022 y Hamburgo 2024 como
   antes.
+
+## Después del tercer merge de Finanzas 4 (2026-10-19)

@@ -46,14 +46,14 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 238: llevar a 0 los documentos que quedaron a mitad de camino --> Onboarding 2
 * 261: Reino Unido, transcripción por subagentes
 * 165 c: altas de los países nuevos que faltan --> Onboarding 2
-* 195: gestiones (presidentes) sin fuente confirmada (se puede ir haciendo con cada país) --> Finanzas 4
+* 195: gestiones (presidentes) sin fuente confirmada (Fortaleza 2025: ¿CEO o presidente del consejo? lo decidís vos)
 * 295: balances de las entidades que organizan las ligas (AFA, LFP…), para la auditoría en Ligas
 * 284 y 285: Fredrikstad y Sarpsborg 08 sobre el FLI; transcribir Viking Fotball AS --> Onboarding 2
 * 283: Vålerenga y Aalesund, sumar el AS y el FLI (con nota en Finanzas) --> Onboarding 2
 * 273: nombrar la compuerta de estadio y sponsor en la skill de onboarding (con tu ok)
 
 **E. Pantallas**
-* 282: quién audita, lo que queda (Hamburgo 2024 con tu captcha; Go Ahead Eagles 2025; la compuerta del pipeline) --> Finanzas 4
+* 282: quién audita, lo que queda (Hamburgo 2024 con tu captcha; la compuerta del pipeline)
 * 309: tamaño de liga desde la lista de Wikipedia (a decidir con Guido)
 
 **E2. Distribución (depende de 246)**
@@ -217,7 +217,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    "alcance" de una revisión limitada, procedimientos acordados, propósito especial o cuentas del grupo). Falta: (a) 56 informes del auditor
    que no están en ningún PDF nuestro (`node tools/auditoria.mjs --pendientes`, "FALTA EN EL PDF"): casi todos sin canal público, son candidatos a mail (sin pedir: Guido no lo quiere ahora);
    quedan para sourcing Hamburgo 2024 (ficha de la KGaA HRB 191603 o de la AG vieja HRB 47576 en el Unternehmensregister; captcha por
-   publicación, lo resuelve Guido) y Go Ahead Eagles 2025 (el informe de la Holding: el documento que tenemos no lo trae) (Lazio 2006 ya salió de Wayback; Roma 2022 queda pendiente por decisión de Guido: no hay informe del consolidado público). Si el sitio publicara el consolidado de Juventus, sus líneas 2022-2025
+   publicación, lo resuelve Guido) y Go Ahead Eagles 2025 (sin canal público: candidato a mail, sin outreach) (Lazio 2006 ya salió de Wayback; Roma 2022 queda pendiente por decisión de Guido: no hay informe del consolidado público). Si el sitio publicara el consolidado de Juventus, sus líneas 2022-2025
    cambian de informe (los dos están bajados). (f) que el pipeline exija la línea al dar de alta un club (fos-pipeline). En Ligas ya está la
    tarjeta "Las cuentas de la liga": cada entidad que entra por el 295 aparece sola.
 295. BALANCES DE LAS ENTIDADES QUE ORGANIZAN LAS LIGAS (fos-ligas; aclaración de Guido, 2026-10-18). Hecho: Premier League 2024-25
@@ -322,9 +322,10 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
     - con caso en la cola y la pregunta en `Admin/dudas-por-club.md` ("Gestiones sin fecha confirmada"): CRB 2020, Cuiabá 2022-2025, Vila
       Nova 2014, Ferroviária 2010-2013 y 2023 (además, criterio de SAF: presidente del consejo o director-presidente), Goiás 2010-2013 y
       2017, OFI 2018 (administración judicial: sin gestión, decisión de Guido);
-    - de las tandas 1 y 2, sin caso abierto en la cola (no los toma --armar): Fortaleza, Novorizontino, Ituano, Ceará 2024-2025, Amazonas
-      2024, Cruzeiro 2024-2025 (Pedro Lourenço sin fecha de cierre de la compra), Pari NN 2021-2022, Once Caldas 2024-2025,
-      Mönchengladbach 2023 (Rolf Königs). Para investigarlos con la herramienta hay que armarles un lote (--club no los encuentra sin caso).
+    - sin caso en la cola, buscados en la tanda-2026-10-19-2 sin confirmar (esperan respuesta del club, ya en `Admin/dudas-por-club.md`):
+      Novorizontino 2010, Amazonas 2024 y Cruzeiro 2024-2025 (Pedro Lourenço: compra firmada el 29-04-2024, CADE el 12-06-2024);
+    - decisión de Guido: Fortaleza 2025 lo firma el CEO Pedro Martins, no el presidente del consejo cargado (Barreira); ¿se carga al
+      ejecutivo? (si sí, el cierre queda sin fuente con su fecha de asunción).
     Las dudas de cada club, en "## Gestiones" de su `Admin/carga-clubes/<club>.md`; los casos `firmo` (la gestión cambió entre el cierre y
     la aprobación del balance), ahí mismo, sin cargar.
 

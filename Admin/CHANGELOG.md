@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 769 — Merge de finanzas 4: Go Ahead Eagles sin canal y gestiones sin caso (2026-10-19)
+
+* 282 a: el informe del auditor de Go Ahead Eagles 2025 no tiene canal público (el KvK vende las cuentas); la línea dice qué se buscó.
+* 195: de la lista sin caso en la cola, casi todo ya estaba cubierto; Novorizontino 2010, Amazonas 2024 y Cruzeiro 2024-2025 se buscaron y
+  ninguno se confirmó (lo hallado, en su `Admin/carga-clubes/<club>.md`). Sin cambios en data/.
+
 ## Versión 768 — 298 w2: el paso A3 decide el perímetro cuando A2 no puede votar (2026-10-19)
 
 * `perimetro-senales.mjs`: si A2 ve los dos estados sin totales, Sonnet (~US$ 0,01 por documento) contesta si alguna controlada hace el
