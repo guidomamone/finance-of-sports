@@ -703,6 +703,7 @@ window.SPONSORS_INDICE = [
   ["distribuciones-casamayor","Distribuciones Casamayor",["c"]],
   ["dl-tablet","DL Tablet",["c"]],
   ["dnb","DNB",["c"]],
+  ["dnb-asa","DNB ASA",["c"]],
   ["dolce-vita","Dolce Vita",["c"]],
   ["dominik-domitek","Dominik & Domitek",["c"]],
   ["doosan","Doosan",["c"]],

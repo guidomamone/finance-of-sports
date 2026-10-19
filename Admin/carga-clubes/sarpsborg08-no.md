@@ -92,6 +92,54 @@ tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-19): no-eliteserien, verificado contra roster cacheado de "2025 Eliteserien" (tools/club-league-reference/no.json), coincidencia exacta "Sarpsborg 08".
 ```
 
+## 2016
+
+### Ingresos
+
+```text
+2016: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2016.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2016.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Billettinntekter | pág. 10, precedente |
+| 2 | Medlemsinntekter | pág. 10, precedente |
+| 3 | Cupoppgjør NFF | pág. 13, Jev 0.94 |
+| 4 | Grasrotandel | pág. 13, Claude 0.8 |
+| 5 | Gaver/bidrag | pág. 13, Jev 1 |
+| 6 | Andre inntekter | pág. 13, Jev 1 |
+| 7 | Reklame og sponsorinntekter | pág. 10, precedente |
+| 8 | Kiosk salg | pág. 13, precedente |
+| 9 | Supporterutstyr | pág. 13, Jev 0.99 |
+| 10 | Solidaritetsmidler | pág. 13, Jev 0.96 |
+| 11 | Andre inntekter | pág. 13, Jev 1 |
+| 12 | Mediainntekter | pág. 10, precedente |
+| 13 | Tilskudd | pág. 10, precedente |
+| 14 | Salg/utleie spillere | pág. 10, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Trening, matriell, kurs | pág. 10, Claude 0.88 |
+| 2 | Reise og oppholdskostander bortekamper | pág. 10, precedente |
+| 3 | Salgskostnader | pág. 10, precedente |
+| 4 | Lønn | pág. 15, Jev 0.91 |
+| 5 | Arbeidsgiveravgift | pág. 15, precedente |
+| 6 | Andre relaterte ytelser / Refusjoner | pág. 15, Claude 0.85 |
+| 7 | Avskrivning på driftsmidler og immaterielle eiendeler | pág. 10, precedente |
+| 8 | Andre kostnader | pág. 10, precedente |
+| 9 | Reklame og sponsorkostnader | pág. 10, precedente |
+| 10 | Admkost | pág. 10, precedente |
+
+### Meta
+
+```text
+2016: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, perimetro-senales 2026-10-19): perimetro = individual. perimetro-senales.mjs: el ejercicio 2016-12-31 se publicó solo individual (el club es consolidado); 2 documento(s) con los dos estados votan consolidado; 8 ejercicio(s) con un solo perímetro (individual); 18 documento(s) mirados
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2014
 
 ### Ingresos
@@ -196,4 +244,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2014.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### sarpsborg08-no-aarsregnskap-fotballforening-fli-2016
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

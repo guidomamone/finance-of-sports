@@ -30,6 +30,15 @@ window.RANKINGS["no-eliteserien"] = {
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)"],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
+  2016: {
+    leagueSize: null,
+    wiki: {"t":"2016 Eliteserien","lang":"en","at":"2026-10-19","n":16},
+    clubs: [
+      { id:"sarpsborg08-no", revenue:6.545, reportType:"official_balance_sheet",
+        sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2016",
+        mix:[["Cuotas Sociales",0.052],["Comercial / Sponsors",2.274],["Estadio",0.541],["Televisión",0.961],["Premios por competencias",0.084],["Venta de Jugadores",1.643],["Otros ingresos",0.99]] },
+    ],
+  },
   2014: {
     leagueSize: null,
     wiki: {"t":"2014 Eliteserien","lang":"en","at":"2026-10-19","n":16},
