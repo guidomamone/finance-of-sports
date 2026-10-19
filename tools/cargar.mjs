@@ -1096,6 +1096,21 @@ function cierreDe(src, abre) {
   }
   return -1;
 }
+// (to-do 279) LA LIGA DE UN AÑO EN data/club-leagues/<iso>.js, como texto (función pura: la prueba tools/../scratch del to-do 279 la corre
+// sola). Si el club ya tiene ese año: en null se reemplaza; con la misma liga no se toca; con OTRA liga gana la que estaba y vuelve un aviso.
+// Antes, un año con liga se agregaba OTRA VEZ dentro del objeto del club cuando quien llamaba no avisaba que "existe": bfo-rusia.mjs arma la
+// liga con estado "pendiente", y las reescrituras de los años rusos del 2026-10-09 dejaron 58 claves repetidas en ru.js (limpiadas a mano).
+function ligaEnTexto(lt, id, y, val, archivo) {
+  const clave = new RegExp(`(^|\\n)\\s*['"]?${id.replace(/[-]/g, '\\-')}['"]?\\s*:\\s*\\{`);
+  const mm = lt.match(clave);
+  if (!mm) return { texto: insertarEnObjeto(lt, 'Object.assign(window.CLUB_LEAGUE_BY_YEAR, {', `  ${js(id)}: { ${y}: ${val} },\n`, archivo) };
+  const abre = lt.indexOf('{', mm.index + mm[0].length - 1); const cierra = cierreDe(lt, abre);
+  const dentro = lt.slice(abre + 1, cierra).replace(/\s+$/, '');
+  const yaEsta = new RegExp(`(^|[,{\\s])${y}\\s*:\\s*(null|'[^']*'|"[^"]*")`); const m = dentro.match(yaEsta);
+  if (m && m[2] === 'null') return { texto: lt.slice(0, abre + 1) + dentro.replace(yaEsta, `$1${y}: ${val}`) + ' ' + lt.slice(cierra) };
+  if (m) return { texto: lt, aviso: m[2] === val || val === 'null' ? null : `liga de ${id} ${y}: queda la que ya estaba en ${archivo} (${m[2]}); la carga proponía ${val}` };
+  return { texto: lt.slice(0, abre + 1) + dentro + `${dentro.trim() && !dentro.trim().endsWith(',') ? ',' : ''} ${y}: ${val} ` + lt.slice(cierra) };
+}
 function insertarEnObjeto(src, apertura, texto, archivo) {
   // la apertura se busca al PRINCIPIO de una línea (Versión 391): el esqueleto de alta-club.mjs tenía un comentario que nombraba
   // "Object.assign(sources, {" y la búsqueda caía ahí (caso: Goiás 2021, "no pude cerrar el bloque"). Todas las aperturas son sentencias de primer nivel.
@@ -1261,18 +1276,8 @@ export function escribir(P) {
     const ligaPath = resolve(ROOT, 'data/club-leagues', `${iso}.js`);
     if (P.liga.estado !== 'existe') {
       if (!existsSync(ligaPath)) throw new Error(`no existe data/club-leagues/${iso}.js`);
-      let lt = readFileSync(ligaPath, 'utf8');
-      const val = P.liga.valor ? js(P.liga.valor) : 'null';
-      const clave = new RegExp(`(^|\\n)\\s*['"]?${id.replace(/[-]/g, '\\-')}['"]?\\s*:\\s*\\{`);
-      const mm = lt.match(clave);
-      if (mm) {
-        const abre = lt.indexOf('{', mm.index + mm[0].length - 1); const cierra = cierreDe(lt, abre);
-        const dentro = lt.slice(abre + 1, cierra).replace(/\s+$/, '');
-        const yaEsta = new RegExp(`(^|[,{\\s])${y}\\s*:\\s*null`);
-        lt = yaEsta.test(dentro) ? lt.slice(0, abre + 1) + dentro.replace(yaEsta, `$1${y}: ${val}`) + ' ' + lt.slice(cierra) : lt.slice(0, abre + 1) + dentro + `${dentro.trim() && !dentro.trim().endsWith(',') ? ',' : ''} ${y}: ${val} ` + lt.slice(cierra);
-      } else {
-        lt = insertarEnObjeto(lt, 'Object.assign(window.CLUB_LEAGUE_BY_YEAR, {', `  ${js(id)}: { ${y}: ${val} },\n`, `data/club-leagues/${iso}.js`);
-      }
+      const r = ligaEnTexto(readFileSync(ligaPath, 'utf8'), id, y, P.liga.valor ? js(P.liga.valor) : 'null', `data/club-leagues/${iso}.js`);
+      let lt = r.texto; if (r.aviso) P.avisos.push(r.aviso);
       // de dónde salió la liga: a la evidencia del club (to-do 209), no a data/club-leagues/
       ev = EV.agregarTexto(ev, y, 'Liga', [`tools/cargar.mjs (${HOY}): ${P.liga.valor || 'null'}, ${P.liga.valor ? `verificado contra ${P.liga.fuente}` : `SIN VERIFICAR (${P.liga.fuente})`}.`]);
       writeFileSync(ligaPath, lt); escritos.push(`data/club-leagues/${iso}.js`);
