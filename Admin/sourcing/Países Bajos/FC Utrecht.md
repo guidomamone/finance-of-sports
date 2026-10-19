@@ -21,3 +21,5 @@ marzo 2020 — posible explicación no confirmada).
 - Confirmar si 2019/20 existe con otro nombre de archivo/otra ubicación antes de darlo por
   perdido definitivamente.
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Países Bajos/FC Utrecht/FC-Utrecht-Jaarverslag-2024-2025.pdf` (sourceId `fcutrecht-nl-jaarverslag-2024-2025`).

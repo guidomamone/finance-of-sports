@@ -110,6 +110,7 @@ window.CLUB_INDEX = {
   "fckobenhavn-dk": {"n":"FC København","c":"DK","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "fctokyo": {"n":"FC Tokyo","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "fctwente-nl": {"n":"FC Twente","c":"NL","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
+  "fcutrecht-nl": {"n":"FC Utrecht","c":"NL","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "felgueiras-pt": {"n":"Felgueiras","c":"PT","q":"full","y":3,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "ferrocarriloeste-ar": {"n":"Ferro Carril Oeste","c":"AR","q":"full","y":2,"last":2023,"yrs":[[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
   "ferroviaria-br": {"n":"Ferroviaria","c":"BR","q":"full","y":13,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2018,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"],[2015,"official_balance_sheet"],[2014,"official_balance_sheet"],[2013,"official_balance_sheet"],[2012,"official_balance_sheet"],[2010,"official_balance_sheet"]]},
