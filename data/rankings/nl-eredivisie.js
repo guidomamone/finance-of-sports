@@ -93,6 +93,16 @@ window.RANKINGS["nl-eredivisie"] = {
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
+  2022: {
+    leagueSize: 18,
+    wiki: {"t":"2021–22 Eredivisie","lang":"en","at":"2026-10-19","n":18},
+    clubs: [
+      { id:"goaheadeagles-nl", revenue:11.152, reportType:"official_balance_sheet",
+        sourceId:"goaheadeagles-nl-jaarverslag-2021-2022",
+        mix:[["Venta de Jugadores",0.72],["Fútbol profesional (sin desglosar por la fuente)",10.432]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1]] },
+    ],
+  },
   2019: {
     leagueSize: 18,
     wiki: {"t":"2018–19 Eredivisie","lang":"en","at":"2026-10-19","n":18},

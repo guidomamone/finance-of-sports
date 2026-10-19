@@ -31,6 +31,10 @@ const goaheadeaglesnlRevenueLinesByYear = {
     { rawLabel:'Opleidingsvergoedingen', normalizedCategory:'player_sales', amountNative:0.017957, disclosureLevel:'aggregated' },
     { rawLabel:'Solidariteitsbijdragen', normalizedCategory:'player_sales', amountNative:0.015111, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Netto-omzet', normalizedCategory:'lump_football_operations', amountNative:10.042936, disclosureLevel:'aggregated' },
+    { rawLabel:'Resultaat vergoedingsommen', normalizedCategory:'player_sales', amountNative:0.693324, disclosureLevel:'aggregated' },
+  ],
 };
 const goaheadeaglesnlExpenseLinesByYear = {
   2025: [
@@ -191,6 +195,14 @@ const goaheadeaglesnlExpenseLinesByYear = {
     { rawLabel:'Overige', normalizedCategory:'admin_general_expense', amountNative:-0.0923, disclosureLevel:'aggregated' },
     { rawLabel:'Overige bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.00511, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Inkoopwaarde van de omzet', normalizedCategory:'other_expenses', amountNative:-0.238109, disclosureLevel:'aggregated' },
+    { rawLabel:'Lonen en salarissen', normalizedCategory:'wages_squad', amountNative:-3.323306, disclosureLevel:'aggregated' },
+    { rawLabel:'Sociale lasten', normalizedCategory:'wages_squad', amountNative:-0.437818, disclosureLevel:'aggregated' },
+    { rawLabel:'Pensioenlasten', normalizedCategory:'wages_squad', amountNative:-0.011849, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen op immateriële, materiële vaste activa en vastgoedbeleggingen', normalizedCategory:'depreciation', amountNative:-0.522801, disclosureLevel:'aggregated' },
+    { rawLabel:'Overige bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-3.846279, disclosureLevel:'aggregated' },
+  ],
 };
 const goaheadeaglesnlFiscalYearMeta = {
   2025: {
@@ -259,6 +271,25 @@ const goaheadeaglesnlFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:5.986379, officialTotalExpenses:5.037553, officialPAT:0.642713,
   },
+  2022: {
+    incluidoEn:{ sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, matchday_competition:{ en:'lump_football_operations', posible:true, por:'precedente' }, season_tickets:{ en:'lump_football_operations', posible:true, por:'precedente' }, stadium_other:{ en:'lump_football_operations', posible:true, por:'precedente' }, broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' }, competition_bonus:{ en:'lump_football_operations', posible:true, por:'precedente' } },
+    currency:'EUR', fxRef:'EUR@2022-06-30',
+    sourceId:'goaheadeagles-nl-jaarverslag-2021-2022',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.093641, tax:-0.536128,
+    extraRows: [
+      {label:'Rentebaten en soortgelijke opbrengsten', value:0.037345},
+      {label:'Rentelasten en soortgelijke kosten', value:-0.130986},
+      {label:'Belastingen', value:-0.536128},
+    ],
+    sinDesglose: [
+      {renglon:'Netto-omzet', lado:'revenue', importe:10.042936, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:10.73626, officialTotalExpenses:8.380162, officialPAT:1.726329,
+  },
 };
 const goaheadeaglesnlPresupuestoOverlayByYear = {};
 
@@ -293,6 +324,11 @@ Object.assign(sources, {
   'goaheadeagles-nl-jaarrekening-2020-2021': {
     id:'goaheadeagles-nl-jaarrekening-2020-2021', clubId:'goaheadeagles-nl',
     title:'Go Ahead Eagles Holding BV — Go-Ahead-Eagles-Jaarrekening-2020-2021 (ejercicio 2021)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'goaheadeagles-nl-jaarverslag-2021-2022': {
+    id:'goaheadeagles-nl-jaarverslag-2021-2022', clubId:'goaheadeagles-nl',
+    title:'Go Ahead Eagles Holding BV — Go-Ahead-Eagles-Jaarverslag-2021-2022 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
