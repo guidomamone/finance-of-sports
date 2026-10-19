@@ -557,3 +557,10 @@ Argentinos Juniors 2019 (solo caja 30,28 M ARS; su deuda cargada, 247,57 M, es e
 Ferroviária 2023-2025 ya tenía caja y deuda cargadas con exactamente los valores del informe (sin la fila Partes relacionadas ni la AFAC): sin cambios. Para que la herramienta encontrara la transcripción, la evidencia de Unión (3 fuentes) y de Argentinos Juniors
 nombra ahora el .md; y a Unión 2022-2024 le faltaban las claves `grossDebt:null, cash:null` (el escritor solo reemplaza `null`). `auditAll()` en el navegador: 3.059 checks OK, 0 que no cierran. audit.js P0 0 / P1 0. ASSET_V 1402.
 SIN CARGAR del 260: Ferroviária 2014 y Remo 2019 (parciales), Volos 2019-2020 y Japón 2025 (no se pueden).
+
+**323 b (Guido, "ok" 2026-10-19).** `cola.mjs --lista <lote.txt>` y `--dir <carpeta>`: filtran solo el listado (un caso de alta, que apunta a una carpeta, entra si algún documento de la lista está adentro).
+Medido: sin flags, igual que antes (101 casos en 92 documentos); lote 96 → 11, lote 100 → 1, `--dir Clubes/Noruega/Sarpsborg 08` → 12 (= 11 + 1, cruzan); `--dir Clubes/Suiza` → 5; una carpeta sin casos
+dice "No hay casos en la cola para ese lote o carpeta". No cambia respuestas ni etapas.
+**298 ah (Basel 2005, 2009, 2012), diagnóstico, sin código:** reproducido con los derivados de Onboarding 3 (copiados un rato a mi árbol y borrados). "Total Ertrag" (38,2 M en 2005) se cuenta además de sus renglones
+porque `esSumaDe(arriba)` solo suma renglones, y "Matcheinnahmen" (16,13 M) es un SUBTOTAL con 4 hijos: los 7 renglones de arriba suman 22,09 y falta el subtotal-con-hijos para llegar a 38,22. Arreglo propuesto:
+en `esSumaDe`, un subtotal que tiene hijos (`detalla_a` igual a su etiqueta) cuenta como componente. A diseñar y medir con la completa.
