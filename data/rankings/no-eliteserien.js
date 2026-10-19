@@ -122,4 +122,13 @@ window.RANKINGS["no-eliteserien"] = {
         mix:[["Cuotas Sociales",0.035],["Comercial / Sponsors",2.063],["Estadio",0.737],["Televisión",0.83],["Venta de Jugadores",1.27],["Otros ingresos",1.142]] },
     ],
   },
+  2012: {
+    leagueSize: 16,
+    wiki: {"t":"2012 Eliteserien","lang":"en","at":"2026-10-19","n":16},
+    clubs: [
+      { id:"fredrikstad-no", revenue:4.143, reportType:"official_balance_sheet",
+        sourceId:"fredrikstad-no-aarsregnskap-fotballklubb-fli-2012",
+        mix:[["Cuotas Sociales",0.016],["Otras secciones deportivas",0.011],["Otros ingresos",4.117]] },
+    ],
+  },
 };
