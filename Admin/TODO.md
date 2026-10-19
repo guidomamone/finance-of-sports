@@ -64,7 +64,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 **F. Datos para afuera (cuando haya tiempo; nada urgente)**
 * 248: taxonomía genérica y subcategorías por deporte (antes del esquema; resuelve también 130 y 183)
 * 130 y 183: otros deportes, polideportivos e Italia fuera del fútbol (después de 248)
-* 270: estimado de club nuevo, prendido con 50% de error: volver a medir con más datos --> Finanzas 4
+* 270: estimado de club nuevo: medido otra vez (50% en total, 97% en Países Bajos); 4 cambios posibles, los decidís vos
 * 245: datos como JSON con esquema
 * 247: registro público de correcciones (sobre 245)
 * 249: API en dominio propio (último; no construirla ahora)
@@ -302,8 +302,13 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    "N de los M" en el subtítulo de Ligas ni "Faltan…". ¿El tamaño sale de la lista (`LEAGUE_SIZE_BY_YEAR`, `tools/listas-lote.mjs`)?
 270. ESTIMAR UN CLUB QUE NUNCA CARGAMOS: VOLVER A MEDIR (pedido de Guido, 2026-10-17). Está PRENDIDO desde el 2026-10-18 (decisión de
    Guido: en Ligas todo club sin balance figura como estimado), con 50% de error (regresión sin historia: mediana de la liga-año, división,
-   posición en la tabla). Volver a medir (`node tools/estimar.mjs --medir`) cuando haya más clubes cargados. Variable sin medir: partidos
-   contra clubes con finanzas.
+   posición en la tabla). Medido otra vez el 2026-10-19 con 1.011 club-años (`node tools/estimar.mjs --medir --detalle`): sigue en 50%,
+   pero va de 33% (Italia, Chile, Bélgica) a 95-97% (Estonia, Países Bajos). La causa es una sola recta global que sobreestima las ligas
+   chicas y subestima las grandes. "Partidos contra clubes con finanzas" no mejora nada (51% contra 50%). A decidir con Guido (detalle en
+   `Admin/Archive/sesion-finanzas-4-2026-10-19-e.md`): (1) efecto de país o liga en la regresión, medido dejando afuera el país entero;
+   (2) atajo: la mediana de la liga donde le gana al modelo (50% a 46%, optimista); (3) sacar Estonia y Países Bajos de los estimados de
+   Ligas hasta tener más datos; (4) el texto del 50% en pantalla: "entre un tercio y el doble, según la liga". Volver a medir cuando
+   entren más años de Noruega, Suiza y Países Bajos.
 278. CARPETAS DUPLICADAS EN Clubes/. Cardiff y Swansea en `Inglaterra/` y `Gales/`; `Suiza/FC St. Gallen` y `Suiza/St. Gallen`.
    `faltantes-liga` las lee juntas. Unificar sin borrar ningún PDF y chequeando antes las referencias del pipeline.
 279. LA TOOL QUE DUPLICABA CLAVES EN data/club-leagues/ru.js (mejora de script). El archivo acumuló 58 claves repetidas: la tool que lo

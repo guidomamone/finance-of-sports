@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 776 — 270: el estimado medido otra vez, con detalle por país (2026-10-19)
+
+* `estimar.mjs --medir --detalle` (y `--detalle-clubes`): error por país, liga y división, sesgo y dispersión; solo lectura.
+* Medición con 1.011 club-años: 50% en total, de 33% (Italia) a 97% (Países Bajos). La variable de partidos contra clubes con finanzas no mejora.
+
 ## Versión 775 — 298 l: el tipo de documento lo confirma la verificación (2026-10-19)
 
 * `alta-club`: si el .md no tiene palabras de estado contable reconocidas o casi no tiene tablas, el reportType lo confirma la verificación

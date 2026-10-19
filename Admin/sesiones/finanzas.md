@@ -425,3 +425,5 @@
   5. La variable "partidos contra clubes con finanzas" no vale el esfuerzo (corregir por k: 51 % contra 50 %).
   6. Volver a medir cuando Estonia llegue a otras ligas o cuando entren más clubes de Noruega, Suiza y Países Bajos (hoy un club-año por
      club): con 8 club-años por país el cuadro de arriba se completa.
+
+## Después del quinto merge de Finanzas 4 (2026-10-19)
