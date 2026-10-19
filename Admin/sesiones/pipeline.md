@@ -648,3 +648,8 @@ preguntarle, aunque el escalón ya esté aprobado (memoria `no-endurecer-reglas-
 - **Basel**: gestiones (`data/gestiones/ch.js`, `f79de36306`) con fuente = la transcripción publicada en financeofsports.com; la cola de St. Gallen se contestó con un subagente: 3 respuestas aplicadas, 6 casos de "Erträge brutto"/"Direkte Kosten" esperan el perímetro de Guido; las presidencias de St. Gallen (Hüppi) no tienen fecha de inicio en ningún informe.
 - **298 aj**: esperando el perímetro de St. Gallen (los desajustes con el año vecino 2020 a 2022 los explica sobre todo la compensación con la Event AG).
 - **282 f**: depende de una decisión de Guido (exigir la línea del auditor al dar de alta: ver el mensaje del chat).
+
+**Actualización 4 (2026-10-19, noche):**
+- **282 f** (`7ace348ce9`, `cargar-lote.mjs`): avisa al final qué años escritos no tienen línea del auditor y arma los extractos; no frena.
+- **St. Gallen**: perímetro consolidado AG + Event AG (ya lo decía el ajuste de 2024-25: las dos hacen el negocio del club; Guido: "elegilo vos"). **298 ai** (`fef30660ca`, `verificar.mjs`): una compensación intragrupo (dos renglones de signo opuesto, mismo importe en el año y el anterior, misma primera palabra) se elimina: 2021-22 pasa de ingresos 42,469 a 32,669 (= la columna del año siguiente). En 3.702 documentos solo St. Gallen la dispara; el único año cargado (2025) no cambia. Cola: Erträge brutto → lump_football_operations y Direkte Kosten → lump_football_operations_expense en 2018-19, 2021-22 y 2022-23 (`7914710d2e`). Faltan escribir 2018-19 a 2023-24: antes hay un reintento por "Televisión" en 0 en 2019-20, 2020-21 y 2023-24 (~US$ 0,41).
+- **298 aj**: a HALLAZGOS "sin daño hoy" (medido: no cambia lo que se carga).
