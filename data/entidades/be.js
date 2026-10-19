@@ -30,6 +30,15 @@ Object.assign(window.CLUB_ENTIDADES, {
  "lommelsk-be": {
   "cargas": [
    {
+    "anio": 2018,
+    "entidad": "lommel-sk",
+    "perimetro": "individual",
+    "fuente": {
+     "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2022-06-30-individual.md",
+     "linea": 9
+    }
+   },
+   {
     "anio": 2025,
     "entidad": "lommel-sk",
     "perimetro": "individual",
