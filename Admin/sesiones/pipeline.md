@@ -493,3 +493,11 @@ totales y mismo estado (COLA), gastos de 22 a 31 líneas (personal: 6 de la nota
 queda desactualizado (filas nuevas) y AVS tendría 3 casos nuevos en la cola si se reprocesara; es un año ya publicado y el lote no lo reprocesa, así que
 el sitio no cambia. Restauré Generados y los registros después de medir. **ac sin hacer**: falta el ok de Guido para rehacer la localización de
 Sarpsborg 2023 (hasta US$ 0,10) y para guardar el perímetro usado en .ubicacion.json.
+
+**298 ac (Guido, 2026-10-19).** Causa confirmada: la localización de Sarpsborg 2023 (09:39) es anterior al ajuste `perimetro individual` (09:54) y leyó
+el consolidado. Rehecha con `localizar.mjs --rehacer --ejecutar` (US$ 0,13, un poco más de los US$ 0,10 que había dicho): ahora elige b1+b2
+(individual) y las notas b27/b28; `perimetroClub: individual`. Script: `localizar.mjs` anota `perimetroClub` en la `.ubicacion.json` y rehace la
+localización guardada si el perímetro que se le pasa difiere del anotado (sin el campo, o sin perímetro pasado, no se compara); la línea de comandos
+pasa siempre el perímetro del ajuste. Probado (gratis) con el archivo de Sarpsborg 2023: mismo perímetro → "ya hecho"; anotado `consolidado`
+con ajuste `individual` → vuelve a pedir (ensayo US$ 0,056). `lote.mjs --lista prueba-completa` en ensayo: idéntico antes y después. Sarpsborg 2023 tiene
+ahora una localización nueva: la próxima corrida rehace sola validar, extraer y verificar (huellas); no cargué nada.
