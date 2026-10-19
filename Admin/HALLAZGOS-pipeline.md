@@ -133,6 +133,11 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   Admin/mediciones/perimetro-a2-medicion-recorte-232e.txt. El contexto alrededor de los títulos le sirve a Claude para ubicar el estado.
 
 ## Conocido, sin daño hoy (no se trabaja salvo que algo cambie)
+- **El final del lote lista como frenado un original reemplazado por su -correction (to-do 298 v, 2026-10-19): medido, no entra.** Lo
+  escribe cargar-lote.mjs, que lee la lista entera sin la regla de la 298 o de lote.mjs. Hoy no pasa: los 5 originales con corrección del
+  lote 92 ya están en documentos-descartados.txt (ok de Guido) y el ensayo de cargar-lote no los lista (41 frenados, ninguno de ellos). Solo
+  se ve en la primera corrida de un par nuevo, antes del descarte, y no carga nada mal. Retomar si un país nuevo trae muchos pares
+  -correction (ahí: que cargar-lote aplique la misma compuerta que lote.mjs y los cuente aparte).
 - **Extraer con 0 filas no avisa por qué (to-do 298 s, 2026-10-19): medido, no entra.** El caso de origen (Beerschot 2019 -correction,
   columna "Vorig boekjaar" vacía) ya no pasa: con la 298 f, periodo.mjs da el cierre 30-06-2019 sin el ajuste `cierre` y la localización toma
   la columna del ejercicio (48 filas). Hoy ningún `.filas.json` tiene 0 filas (0 de 720); si aparece uno, la verificación no cierra y va a
