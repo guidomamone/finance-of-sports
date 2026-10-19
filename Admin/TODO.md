@@ -32,7 +32,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **C. Abaratar antes del onboarding grande**
 * 323: mejoras de script del lote 97 (Reino Unido): costo del reintento, filtro de la cola, notas inglesas, preguntas, perímetro, nombre legal --> Pipeline 4
-* 260: caja y deuda, lo que falta por documento (Bayern, Japón 2025, Volos, Alverca y otros; casi todo espera un documento mejor)
+* 260: caja y deuda, lo que falta por documento (Bayern, Japón 2025, Volos, Alverca y otros; todo espera un documento mejor)
 * 298: mejoras de script de Estonia y Bélgica (af, las ligas amateur belgas, espera tu decisión; ah, el total de Basel que se suma como rubro; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
@@ -204,12 +204,11 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 260. CAJA Y DEUDA: MEJORAS DE SCRIPT VISTAS EN PORTUGAL (sin aplicar; corrida del 2026-10-16: 151 de 327 datos, IA ~US$ 6). Cada una es un
    escalón a diseñar con el ok de Guido y a medir con `caja-deuda.mjs --medir`.
    LO QUE FALTA (2026-10-17), todo sin dato por el documento: Bayern 2021-2025 (solo el comunicado condensado: hace falta el
-   Geschäftsbericht); Japón 2025 (10 clubes) y América, Argentinos Juniors 2019 y Unión 2022-2024 (la fuente no nombra la transcripción);
-   Volos 2019-2020 (formato Β.5 solo con totales); Ferroviária 2014 (al PDF le falta la página del pasivo no corriente); Remo 2019 (sin
-   balance); Mirassol 2024 (solo el informe del auditor); Alverca 2022-2025 y Estrela 2023 (montos con accionistas sin nota de préstamo:
+   Geschäftsbericht); Japón 2025 (10 clubes) y América (la fuente no nombra la transcripción); Volos 2019-2020 (formato Β.5 solo con
+   totales); Ferroviária 2014 (al PDF le falta la página del pasivo no corriente) y Remo 2019 (sin balance), los dos parciales; Alverca 2022-2025 y Estrela 2023 (montos con accionistas sin nota de préstamo:
    preguntar al club); HSV 2024 y RB Leipzig 2023-2024 (la escala del año: to-do 289). Dortmund 2024-2025 y RB Leipzig 2022 y 2025, escritos el 2026-10-18.
-   Pendiente de mirar: Ferroviária 2023-2025, "Partes relacionadas" no corriente (3.844.165) puede ser un préstamo de una parte
-   relacionada (con el criterio de socios, contaría); hoy la deuda es solo "Empréstimos".
+   Unión 2022-2024, Argentinos Juniors 2019 (caja) y Mirassol 2024 (deuda 0) cargados el 2026-10-19; la AFAC de Ferroviária no es
+   deuda (Guido). Informe: `Admin/mediciones/informe-260-caja-deuda-sin-documento-nuevo.md`.
 
 273. ESTADIO Y SPONSOR: LO QUE QUEDA. Cerrado salvo un punto (Guido, 2026-10-19: los ejercicios ya cargados sin sponsor quedan en null
    y no se vuelven a buscar). La compuerta ya está nombrada en la skill de onboarding (2026-10-19). Falta: que

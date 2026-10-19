@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 821 — 260: caja y deuda sin documento nuevo (2026-10-19)
+
+* Por ajustes con cita: Unión 2022-2024 caja y deuda (la deuda es el total de la nota de Deudas), Argentinos Juniors 2019 caja y Mirassol
+  2024 deuda 0. La AFAC de Ferroviária no es deuda (Guido). auditAll(): 3.059 controles OK.
+
 ## Versión 820 — Hamburgo 2024 sin informe del auditor; mejoras del lote 97 al TODO (2026-10-19)
 
 * 282: Hamburgo 2024 se publica como `sin_informe` (decisión de Guido). Fredrikstad: el Fotballinvest AS 2008-2011 no se carga (el club es el FLI).
