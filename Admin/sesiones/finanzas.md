@@ -338,7 +338,10 @@
   confirmadas de las tandas del 18-10: Fortaleza 2025, Ituano 2024, Ceará 2024-2025, Pari NN 2021-2025, Once Caldas 2022-2025 y
   Mönchengladbach 2023-2024. Sin cubrir quedaban Novorizontino 2010, Amazonas 2024 y Cruzeiro 2024-2025: tanda armada a mano
   (`Admin/gestiones-por-pais/tanda-2026-10-19-2/`, un lote por club, tres subagentes Sonnet) y ninguno se confirmó:
-  - Amazonas 2024: Francisco Wesley Couto dos Santos firma como Diretor Presidente; ninguna fuente web da su fecha de asunción.
+  - Amazonas 2024: Francisco Wesley Couto dos Santos firma como Diretor Presidente. La primera búsqueda no encontró su fecha de asunción;
+    una segunda (a pedido de Guido) halló que asumió en 2022 (Portal AM1, 17-11-2024: "assumiu a presidência do Amazonas FC em 2022",
+    sucediendo a Lissandro Breval): gestión confirmada con desde 2022-01-01 (solo el año) y cargada en `data/gestiones/br.js`, que cubre el
+    cierre 2024. Commit 16e16c9cbb (ASSET_V 1344); su pregunta salió de `Admin/dudas-por-club.md`.
   - Cruzeiro 2024-2025: Pedro Lourenço, firma de la compra el 29-04-2024, CADE aprobó el 12-06-2024 (O Tempo), la concordancia de la
     Associação sin fecha publicada. Cualquier fecha deja los dos cierres con él.
   - Novorizontino 2010: Alex Sandro Domingues Pereira presidía en abril de 2010 (Moção 29/2010 y Ofício 217/2010 de la Câmara de Novo
@@ -348,8 +351,8 @@
 
 ### Qué queda (para TODO)
 
-- 195: el segundo grupo se reduce a Novorizontino 2010, Amazonas 2024 y Cruzeiro 2024-2025, todos esperando respuesta del club (están en
-  `Admin/dudas-por-club.md`). Sacar del punto la lista de Fortaleza, Ituano, Ceará, Pari NN, Once Caldas y Mönchengladbach.
+- 195: el segundo grupo se reduce a Novorizontino 2010 y Cruzeiro 2024-2025 (una segunda búsqueda web no sumó nada), esperando respuesta
+  del club (están en `Admin/dudas-por-club.md`). Sacar del punto la lista de Fortaleza, Ituano, Ceará, Pari NN, Once Caldas y Mönchengladbach.
 - Decisión de Guido (Fortaleza): el balance 2025 lo firma el CEO Pedro Martins, no el presidente del consejo que está cargado
   (Barreira, 2025-04-15 a 2026-01-15, cubre el cierre). Si prefiere al ejecutivo, el cierre queda sin fuente con la fecha de asunción.
 - 282 a: Go Ahead Eagles 2025, candidato a mail al club (pedir la controleverklaring de la Holding); Roma 2022 y Hamburgo 2024 como
