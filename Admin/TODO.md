@@ -31,6 +31,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
+* 260: caja y deuda, lo que falta por documento (Bayern, Japón 2025, Volos, Alverca y otros; casi todo espera un documento mejor)
 * 298: mejoras de script de Estonia y Bélgica (ae y af, de Bélgica, esperan tu ok; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
@@ -51,18 +52,24 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
 * 252: ejercicios nuevos, lo que queda (onboardear los PDFs ya bajados, Instituto 2024-25 incluido; Alemania en enero de 2027: qué bajar ya está en las notas de Gladbach y Stuttgart)
 * 259: material de difusión (después de 241: el deck tiene que poder linkear)
+* 313: contenido para X e Instagram (después de 241 y 246; con el 259 y el 257)
 
-**F. Datos para afuera (cuando haya tiempo; nada urgente)**
+**F. Técnico: herramientas a probar y datos para afuera (cuando haya tiempo; nada urgente)**
+* 314: Stirling PDF contra los PDFs difíciles (escaneos, tablas rotadas), comparado con Tesseract y Mistral
+* 315: Crawl4AI para bajar la lista de documentos de un regulador y compararla con lo cargado
+* 316: detector de documentos nuevos (después de 315; mejora el 252)
+* 317: Supabase como espejo de lectura de un país, para auditar en SQL (experimento descartable)
+* 318: Open Notebook sobre las transcripciones de un país, para encontrar patrones
+* 319: la skill I have ADHD en una sesión de lote, con y sin
+* 320: Browser Use para portales con formularios fijos (cuando aparezca uno)
+* 321: Higgsfield para imágenes y video del 313
+* 322: Zapier y OmniRoute, a demanda
 * 248: taxonomía genérica y subcategorías por deporte (antes del esquema; resuelve también 130 y 183)
 * 130 y 183: otros deportes, polideportivos e Italia fuera del fútbol (después de 248)
 * 270: estimado de club nuevo: queda como está; volver a medir cuando entren más años de Noruega, Suiza y Países Bajos
 * 245: datos como JSON con esquema
 * 247: registro público de correcciones (sobre 245)
 * 249: API en dominio propio (último; no construirla ahora)
-
-**F2. Herramientas y contenido a probar (ideas, sin sesión)**
-* 313: contenido para X e Instagram (depende de 241 y 246)
-* 314 a 322: Stirling PDF, Crawl4AI, detector de documentos nuevos, Supabase de lectura, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute
 
 **G. Orden de la casa**
 * 255: consolidar las reglas repartidas (lo chequeable ya pasó a hooks)
