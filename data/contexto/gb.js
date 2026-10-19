@@ -28,6 +28,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"96.com","marca":"Castore","temporada":"2024–25 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373970605"},
   },
   'chelsea-gb': {
+    2023: {"estadio":"Stamford Bridge","capacidad":40343,"sponsor":"Three","marca":"Nike","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2025: {"estadio":"Stamford Bridge","capacidad":40173,"sponsor":"DAMAC Properties","marca":"Nike","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'crystalpalace-gb': {
