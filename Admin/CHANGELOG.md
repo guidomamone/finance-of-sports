@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 832 — Quién audita: aviso al cargar (2026-10-19)
+
+* 282 f: `cargar-lote.mjs`, al final, lista los años recién escritos sin línea en `auditoria.jsonl` y arma sus extractos en
+  `Generados/auditoria/` (no frena: decisión de Guido). PIPELINE.md al día.
+
 ## Versión 831 — Lote 103: 17 ejercicios nuevos (2026-10-19)
 
 * Botafogo-SP, Chapecoense, Coritiba, Grêmio, Hajduk, Midtjylland, Rijeka, Silkeborg, Ferro, Fredericia, Instituto, Bragantino, Universidad
