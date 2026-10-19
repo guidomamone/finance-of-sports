@@ -1263,6 +1263,13 @@ function proponerFx(md, moneda, cierre, estadoMoneda, reportType, sitio, ovFx = 
 // Palabras genéricas de nombre de club que no identifican al club (Versión 315, pedido de Guido: "AC Milan y Milan son lo mismo, ídem
 // OFI Crete y OFI"): se sacan de los dos lados antes de comparar por palabras.
 const GENERICAS = new Set(['fc', 'ac', 'sc', 'cf', 'afc', 'cfc', 'sk', 'fk', 'nk', 'hnk', 'gnk', 'pfc', 'nfc', 'bk', 'if', 'il', 'ik', 'ssc', 'us', 'as', 'ss', 'cd', 'ud', 'sd', 'ca', 'club', 'calcio', 'fotball', 'fotbal', 'futebol', 'football', 'fussball', 'tj', 'jk', 'spor', 'kulubu', 'sv', 'vfb', 'vfl', 'tsv', 'fsv', 'rsc', 'kv', 'kaa', 'kvc', 'krc', 'sport', 'de', 'the', 'and', 'a', 's', 'as']);
+// Los nombres de lista de Wikipedia que alias.json da como el MISMO club (normalizados como en proponerLiga)
+let ALIAS = null;
+const aliasDe = (iso, clubId) => {
+  if (!clubId) return [];
+  if (!ALIAS) { try { ALIAS = JSON.parse(readFileSync(resolve(ROOT, 'tools/club-league-reference/alias.json'), 'utf8')); } catch { ALIAS = {}; } }
+  return Object.entries(ALIAS[iso] || {}).filter(([, a]) => a && a.clubId === clubId).map(([x]) => norm(x).replace(/[^a-z0-9]+/g, ' ').trim());
+};
 function proponerLiga(clubId, nombre, pais, anio, sitio, cierre = null) {
   if (!pais || !pais.iso2 || !anio) return campo('liga', null, 'sin país o sin año', 'pendiente');
   const fila = (sitio.CLUB_LEAGUE_BY_YEAR[clubId] || {})[anio];
@@ -1293,7 +1300,9 @@ function proponerLiga(clubId, nombre, pais, anio, sitio, cierre = null) {
       // primera versión, proponía a AEL Larissa como Aris).
       const tn = sinGen(n); const tq = sinGen(q);
       if (!tn.length || !tq.length) continue;
-      if (n === q) exactos.push({ leagueId, club: c, page: e.wikipediaPage });
+      // (to-do 298 u, ok de Guido 2026-10-18) un alias confirmado del club en tools/club-league-reference/alias.json vale como el nombre
+      // exacto: "Oud-Heverlee Leuven" = OH Leuven, "RWDM47" = RWDM (los mismos alias que ya usan faltantes-liga y ligas-sin-verificar)
+      if (n === q || aliasDe(iso, clubId).includes(n)) exactos.push({ leagueId, club: c, page: e.wikipediaPage });
       else if (tn.every((t) => tq.includes(t)) || tq.every((t) => tn.includes(t))) parciales.push({ leagueId, club: c, page: e.wikipediaPage });
     }
   }
