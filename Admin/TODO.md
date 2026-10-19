@@ -25,18 +25,18 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
-* 292: cargar lo transcripto: Bélgica (25 años del lote 92 hechos; lo que falta espera la 298 ad a af), después Suiza, Beşiktaş y Colombia --> Onboarding 3
+* 292: cargar lo transcripto: los demás años de Basel, Luzern, St. Gallen y Go Ahead Eagles (lote 101, corriendo); Bélgica, lo que falta espera la 298 ad a af; después Suiza, Beşiktaş y Colombia --> Onboarding 3
 
 **B. Bases baratas que después cuestan caro cambiar**
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
-* 298: mejoras de script de Estonia y Bélgica (ad, ae y af, de Bélgica; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
+* 298: mejoras de script de Estonia y Bélgica (ad, ae y af, de Bélgica, esperan tu ok; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
 * 238: llevar a 0 los documentos que quedaron a mitad de camino --> Onboarding 3
-* 261: Reino Unido: 118 transcripciones validadas; sigue el lote de carga y la cola por Mistral --> Finanzas 5
+* 261: Reino Unido: carga del fútbol inglés (lote 97, corriendo; el 98 y el alta de Celtic, lote 99, después); la cola de transcripción por Mistral --> Finanzas 5
 * 165 c: altas de los países nuevos que faltan --> Onboarding 3
 * 195: gestiones (presidentes) sin fuente confirmada (Fortaleza 2025: ¿CEO o presidente del consejo? lo decidís vos)
 * 284: Fredrikstad 2012 (falta un sponsor con fuente) --> Onboarding 3
@@ -59,6 +59,10 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 245: datos como JSON con esquema
 * 247: registro público de correcciones (sobre 245)
 * 249: API en dominio propio (último; no construirla ahora)
+
+**F2. Herramientas y contenido a probar (ideas, sin sesión)**
+* 313: contenido para X e Instagram (depende de 241 y 246)
+* 314 a 322: Stirling PDF, Crawl4AI, detector de documentos nuevos, Supabase de lectura, Open Notebook, I have ADHD, Browser Use, Higgsfield, Zapier y OmniRoute
 
 **G. Orden de la casa**
 * 255: consolidar las reglas repartidas (lo chequeable ya pasó a hooks)
