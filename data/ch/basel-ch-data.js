@@ -190,6 +190,22 @@ const baselchRevenueLinesByYear = {
     { rawLabel:'Einnahmen Leistungsfussball Nachwuchs', normalizedCategory:'youth_football', amountNative:0.550304, disclosureLevel:'aggregated' },
     { rawLabel:'Sonstiger Betriebsertrag', normalizedCategory:'other_income', amountNative:1.259431, disclosureLevel:'aggregated' },
   ],
+  2017: [
+    { rawLabel:'Aus Meisterschaft', normalizedCategory:'competition_bonus', amountNative:11.182758, disclosureLevel:'aggregated' },
+    { rawLabel:'Aus UEFA-Spielen', normalizedCategory:'competition_bonus', amountNative:5.400149, disclosureLevel:'aggregated' },
+    { rawLabel:'Aus Cup-Spielen', normalizedCategory:'matchday_competition', amountNative:1.252049, disclosureLevel:'aggregated' },
+    { rawLabel:'Aus übrigen Spielen', normalizedCategory:'matchday_competition', amountNative:1.988227, disclosureLevel:'aggregated' },
+    { rawLabel:'Business Seats', normalizedCategory:'matchday_competition', amountNative:6.917238, disclosureLevel:'aggregated' },
+    { rawLabel:'Sponsoring, Werbung', normalizedCategory:'sponsorship_commercial', amountNative:11.953729, disclosureLevel:'aggregated' },
+    { rawLabel:'Transferertrag', normalizedCategory:'player_sales', amountNative:8.143421, disclosureLevel:'aggregated' },
+    { rawLabel:'TV-Entschädigungen', normalizedCategory:'broadcasting', amountNative:2.905192, disclosureLevel:'aggregated' },
+    { rawLabel:'Merchandising, Licensing', normalizedCategory:'sponsorship_commercial', amountNative:2.949327, disclosureLevel:'aggregated' },
+    { rawLabel:'Catering', normalizedCategory:'other_income', amountNative:1.061868, disclosureLevel:'aggregated' },
+    { rawLabel:'Events Non-Matchday', normalizedCategory:'stadium_other', amountNative:1.204802, disclosureLevel:'aggregated' },
+    { rawLabel:'Verbandseinnahmen', normalizedCategory:'competition_bonus', amountNative:32.087844, disclosureLevel:'aggregated' },
+    { rawLabel:'Einnahmen Leistungsfussball Nachwuchs', normalizedCategory:'youth_football', amountNative:0.638243, disclosureLevel:'aggregated' },
+    { rawLabel:'Sonstiger Betriebsertrag', normalizedCategory:'other_income', amountNative:0.801366, disclosureLevel:'aggregated' },
+  ],
 };
 const baselchExpenseLinesByYear = {
   2021: [
@@ -363,6 +379,22 @@ const baselchExpenseLinesByYear = {
     { rawLabel:'Sonderabschreibungen auf Ersatzbeschaffung', normalizedCategory:'exceptional_items', amountNative:-28.090496, disclosureLevel:'aggregated' },
     { rawLabel:'Abschreibungen auf Sachanlagen', normalizedCategory:'depreciation', amountNative:-0.94966, disclosureLevel:'aggregated' },
     { rawLabel:'Korrektur Gewinnüberführung FC Basel Holding AG', normalizedCategory:'exceptional_items', amountNative:5.27, disclosureLevel:'aggregated' },
+  ],
+  2017: [
+    { rawLabel:'Warenaufwand', normalizedCategory:'other_expenses', amountNative:-1.683916, disclosureLevel:'aggregated' },
+    { rawLabel:'Personalaufwand', normalizedCategory:'wages_squad', amountNative:-49.91093, disclosureLevel:'aggregated' },
+    { rawLabel:'Organisationskosten Heimspiele', normalizedCategory:'match_organisation_expense', amountNative:-14.428413, disclosureLevel:'aggregated' },
+    { rawLabel:'Übriger Spielbetrieb', normalizedCategory:'match_organisation_expense', amountNative:-3.753467, disclosureLevel:'aggregated' },
+    { rawLabel:'Transferaufwand', normalizedCategory:'player_amortisation', amountNative:-6.032288, disclosureLevel:'aggregated' },
+    { rawLabel:'Werbung', normalizedCategory:'admin_general_expense', amountNative:-3.910431, disclosureLevel:'aggregated' },
+    { rawLabel:'Administration', normalizedCategory:'admin_general_expense', amountNative:-4.348045, disclosureLevel:'aggregated' },
+    { rawLabel:'Aufwand Leistungsfussball Nachwuchs', normalizedCategory:'youth_other_sports_expense', amountNative:-1.04032, disclosureLevel:'aggregated' },
+    { rawLabel:'Defizitgarantie FC Basel 1893', normalizedCategory:'other_expenses', amountNative:-1.276344, disclosureLevel:'aggregated' },
+    { rawLabel:'Übriger Aufwand', normalizedCategory:'other_expenses', amountNative:-1.145097, disclosureLevel:'aggregated' },
+    { rawLabel:'Abschreibungen auf Transferrechte', normalizedCategory:'player_amortisation', amountNative:-2.930888, disclosureLevel:'aggregated' },
+    { rawLabel:'Sonderabschreibungen auf Ersatzbeschaffung', normalizedCategory:'exceptional_items', amountNative:2.930888, disclosureLevel:'aggregated' },
+    { rawLabel:'Abschreibungen auf Sachanlagen', normalizedCategory:'depreciation', amountNative:-1.210997, disclosureLevel:'aggregated' },
+    { rawLabel:'Korrektur Gewinnüberführung FC Basel Holding AG', normalizedCategory:'exceptional_items', amountNative:0, disclosureLevel:'aggregated' },
   ],
 };
 const baselchFiscalYearMeta = {
@@ -561,6 +593,21 @@ const baselchFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:132.291812, officialTotalExpenses:100.839094, officialPAT:5.767508,
   },
+  2017: {
+    currency:'CHF', fxRef:'CHF@2017-12-31',
+    sourceId:'basel-ch-geschaeftsbericht-2017',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0.99031, tax:-0.157905,
+    extraRows: [
+      {label:'Finanzertrag', value:2.173395},
+      {label:'Finanzaufwand', value:-1.183085},
+      {label:'Steuern', value:-0.157905},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:88.486213, officialTotalExpenses:91.671136, officialPAT:0.578371,
+  },
 };
 const baselchPresupuestoOverlayByYear = {};
 
@@ -640,6 +687,11 @@ Object.assign(sources, {
   'basel-ch-geschaeftsbericht-2016': {
     id:'basel-ch-geschaeftsbericht-2016', clubId:'basel-ch',
     title:'FC Basel 1893 AG — geschaeftsbericht-2016 (ejercicio 2016)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'basel-ch-geschaeftsbericht-2017': {
+    id:'basel-ch-geschaeftsbericht-2017', clubId:'basel-ch',
+    title:'FC Basel 1893 AG — geschaeftsbericht-2017 (ejercicio 2017)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
