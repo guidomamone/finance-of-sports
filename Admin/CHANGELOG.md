@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 754 — Estadio y sponsor de los años belgas (2026-10-18)
+
+Merge de datos 2, sin conflictos; ASSET_V 1314, P0 0 / P1 0.
+
+- To-do 273: estadio y sponsor a mano con fuente (nl.wikipedia, páginas de los clubes, prensa) para los años del lote 92; 11 de 23 pasan la
+  compuerta; 12 de ligas amateur siguen sin sponsor con fuente (a decidir).
+- `contexto-manual.json` acepta una fuente por campo (`fuentesManual`, la usan `js/contexto.js` y `generate-sponsors.js`): entran Akron 2022
+  y Baltika 2024.
+
 ## Versión 753 — Merge de pipeline 2: las altas ya no se revierten (2026-10-18)
 
 Sin conflictos; P0 0 / P1 0.

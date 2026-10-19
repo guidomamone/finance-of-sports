@@ -70,3 +70,5 @@ Lo anterior al merge del 2026-10-18 ya pasó a TODO y CHANGELOG (copia en `Admin
   Lokeren-Temse 2023-2024; Patro 2015 y RWDM 2019 también sin estadio). Las páginas de esas ligas en Wikipedia no tienen columna de
   sponsor y no hay prensa que lo nombre. Decisión para Guido: dejarlos frenados, o que la compuerta acepte sin sponsor un año de liga
   amateur.
+
+## Después del merge de Bélgica (2026-10-18)
