@@ -20,6 +20,7 @@ que dice `ESTADO.md` era verdad ese día.
 * Aston Villa 2019-2022, Brentford 2022-23, Brighton 2020-23, Fulham 2021 y 2023, Arsenal 2022-23 y Crystal Palace 2022-23. Scottish
   Premiership en `data/leagues.js` (para el alta de Celtic). Bournemouth, Chelsea y Everton se revertían porque la rama no tenía la 298 ad
   (entidades.mjs en GENERADORES): se reintentan con la rama al día. El lote-100 de Fulham pasa a ser el lote-104.
+* Aston Villa 2024: ejercicio de transición de 13 meses (1-06-2023 al 30-06-2024), cargado con el criterio de Wolves 2025 (298 z2).
 
 ## Versión 827 — Cada worktree con su propia lista de corrida (2026-10-19)
 
