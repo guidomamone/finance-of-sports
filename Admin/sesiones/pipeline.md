@@ -120,3 +120,19 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
   2. `caffeinate -i node tools/pipeline.mjs --lista Admin/lotes/sin-tablas-298e.txt --max-paginas 0 --limit 0 --ejecutar` (~US$ 7,26).
 
 ## Después del merge de la 298 e (2026-10-18)
+
+### 298 f: el período que declara el formulario (ok de Guido 2026-10-18: "si es un escalón que no rompe nada, sí")
+
+- **Qué cambió (para CHANGELOG):** `tools/periodo.mjs`, paso 3b: si los títulos no deciden, vale la frase fija del período del formulario,
+  en celdas de tabla o en prosa ("boekjaar dat de periode dekt van … tot …", "exercice couvrant la période du … au …", y el par estonio
+  "aruandeaasta algus / lõpp"); compuerta: fin de mes al final, 1 a 18 meses, una sola fecha de fin. Medido sobre los 3.429 `.md`: cambian 17
+  (16 belgas y Harju JK Laagri 2023); 12 pasan al cierre correcto (Lierse SK 2023 y 2025 dejan la fecha de la asamblea; Beerschot 2019
+  -correction deja el inicio del ejercicio, que era el caso de la 298 s; los demás no tenían cierre), Harju JK Laagri 2023 pasa a 31-12-2023
+  y 4 primeros ejercicios largos dejan de verse anuales. Ninguno de los cargados cambia. Auditoría P0 0 / P1 0. Commit e2a41fa8e8.
+- **Qué queda (para TODO):**
+  - **Letra nueva (298 z): cargar los primeros ejercicios de más de 12 meses** (decisión de Guido: "son parciales, pero corresponde
+    cargarlos; es complicado porque son su propio caso, pero deberían"). Casos: Anderlecht 2011 (16 meses, 24-02-2010 a 30-06-2011), RAAL La
+    Louvière 2018 (14, desde 12-05-2017), Sint-Truiden 2013 (15, desde 05-04-2012) y Zulte Waregem 2012 (17, desde 03-02-2011). Diseño a
+    decidir: cómo se muestra un año de más de 12 meses en el sitio y cómo compara con los vecinos.
+  - La 298 s queda en parte cubierta (el cierre de Beerschot 2019 -correction); falta ver si localizar sigue eligiendo la columna "Vorig
+    boekjaar" vacía con el cierre bueno.
