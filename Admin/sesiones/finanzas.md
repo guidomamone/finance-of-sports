@@ -467,3 +467,29 @@
   Norsk Toppfotball 2025, Superligaen A/S 2024/25, la federación estonia 2025 y la Super League griega 2024-25.
 
 ## Después del sexto merge de Finanzas 4 (2026-10-19)
+
+### Qué cambió (para CHANGELOG)
+
+- Tarjeta "Las cuentas de la liga" con una liga `falta_transcripcion` (Pro League belga), mirada en el preview con la entrada puesta a mano: se veía rota (el chip mostraba el
+  código crudo "falta_transcripcion" y la frase decía "no trae informe de un auditor", que es falso: el informe existe, solo no lo tenemos). `tools/auditoria.mjs` ya no publica
+  en `_ligas.js` una liga con `falta_transcripcion` (igual que con los clubes) y la lista en `--pendientes`. La línea de la Pro League quedó cargada como pendiente. Commits 5aed40a5b0 y 14ecc24485.
+- Valor `federacion` en `alcance` (pedido de Guido: "que entre KNVB"): el balance de una federación entera, no el de la liga. `tools/auditoria.mjs` lo valida y ahora emite el `alcance`
+  de las ligas en `_ligas.js` (antes no); `cardLiga` (`js/auditoria.js`) dice "{entidad}, la federación entera, publica su propio balance: la sociedad que organiza la liga no publica el suyo" y
+  suma el chip "Cuentas de la federación entera", en es y en (`data/lang/en.js`: `aud.liga.fed`, `aud.al.fed`, `aud.al.fed.x`). Visto en el preview con el cb nuevo, en los dos idiomas. Commit b2689ecc05.
+- To-do 295 (c), segunda tanda, un commit por liga, cada una con su PDF y su `.md` en `Ligas/<País>/<Entidad>/`, su línea `ligaId` con citas verificadas y su nota en `Admin/sourcing/Ligas/`; PDF a la
+  carpeta principal con `rsync --no-links`. ASSET_V 1365.
+  - KNVB (Países Bajos) 2024/25 para `nl-eredivisie` y `nl-eerstedivisie`, con `alcance: federacion`: EY Accountants B.V., sin salvedades (5-11-2025); ingresos 134,8 M €. La Eerste Divisie no tiene ranking en el
+    sitio todavía (sin clubes cargados), así que su línea espera. Commit 35f74d9098.
+  - ANFP (Chile) 2025, `cl-primera`: KAM Auditores Consultores Ltda. (Freddy Lizana S., 26-03-2026), sin modificaciones; el énfasis es la actualización de notas, no de continuidad. Commit 6464c2c148.
+  - HNS (Croacia) 2025, `hr-hnl`, con `alcance: federacion` (la HNL no tiene sociedad propia): PricewaterhouseCoopers d.o.o. (Marija Mihaljević, 17-03-2026), sin salvedades. Escaneo con Tesseract (hrv+eng), pág. 2 contra la imagen. Commit 379cee521b.
+  - Premier Liga de Rusia (RPL) 2025, `ru-premierliga`: dictamen y estados del GIR BO (`bo.nalog.gov.ru/download/audit/57019415`), АО ДРТ, sin salvedades; el PDF fecha el dictamen el 20-07-2026. Commit 42bfe176b8.
+  - Solo nota de sourcing, sin mails: Lega B (no publica), TFF (lo último auditado publicado es 2021-22, un `.docx`; Turquía no tiene vista de liga), Super League 2 griega (la Ένωση no aparece en el ΓΕΜΗ) y 1. Division danesa
+    (Divisionsforeningen: cero depósitos en Virk). La Challenge League suiza ya va con la línea de la SFL.
+
+### Qué queda (para TODO)
+
+- 295: candidatos a mail (sin armar): Pro League (informe de KPMG), Eredivisie CV, LPF, Dimayor, Lega B, Divisionsforeningen, Super League 2 griega, TFF desde 2022-23. Falta además la Primera Liga rusa (FNL), la Primera B chilena
+  (no está en `data/leagues.js`) y la Liga 3 portuguesa, etc.
+- Pantalla (a PANTALLA.md si Guido lo confirma): `PANTALLA.md` no tiene una sección de la tarjeta "Las cuentas de la liga" ni del vocabulario de `alcance`; las dos reglas nuevas (una liga `falta_transcripcion` no se publica; `federacion`)
+  están solo en el encabezado de `tools/auditoria.mjs`.
+- Datos: el ranking de la Eerste Divisie no existe, y la tarjeta de liga solo sale si la liga-año tiene ranking.
