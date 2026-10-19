@@ -543,3 +543,10 @@ televisión y estadio en 0 (sin esto la (a) sola no destrababa nada: quedaba el 
 2019 (frena solo por "periodo"), 2020 y 2021 y Patro Eisden 2021 (carga true); 0 filas a la cola; 0 categorías distintas. Corrección a lo que dije al proponerla: no eran 6 documentos con el mismo freno;
 Patro Eisden 2022 y 2023 no tienen el freno de ingresos (solo "categorías en 0", se resuelve con el reintento). OJO, decisión de Guido ya tomada, pero para que quede escrito: Patro Eisden 2021 va a
 publicar ingresos 0 siendo un club con personal (62 = 362.273); el documento no abre la Brutomarge (60/61 vacío), y por la regla de la Brutomarge negativa quedó como gasto.
+
+**260, caja y deuda sin documento nuevo (Guido: "con un sonnet, y si no halla mucho, no es un drama").** Un Sonnet (solo lectura; en el primer intento no pudo listar carpetas, le armé el índice de .md)
+revisó 7 casos y dejó `Admin/mediciones/informe-260-caja-deuda-sin-documento-nuevo.md`. Contrasté las citas principales con los documentos (Ferroviária 2025, Mirassol 2024, Argentinos 2019, Unión 2024: coinciden).
+Resultado: sirven Ferroviária 2023-2025 (caja; deuda según la fila AFAC), Mirassol 2024 (hay balance: el TODO estaba viejo; caja 11.583.747,40, deuda 0), Argentinos Juniors 2019 (el archivo es
+`memoria-2018-2019.md`, no el balance; caja 30.282.796, deuda 43.400.000) y Unión 2022-2024 (2022 con asignación inferida por el OCR). Parciales: Ferroviária 2014 (sin pasivo no corriente) y Remo 2019 (caja 351.275,47 del DFC,
+sin deuda). No se pueden: Volos 2019-2020 (solo totales; no corriente 0) y Japón 2025 (por club solo ingresos). DECISIÓN DE GUIDO: la fila "Adiantamento para futuro aumento de capital" de Ferroviária (11,3 / 24,7 / 39,1 M; la nota dice
+"aportes del controlador", el auditor 2025 habla de "mútuo con acionistas"). Sin cargar nada todavía: se cargaría con ajustes `caja`/`deuda` con cita.
