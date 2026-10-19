@@ -27,25 +27,24 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 **A. Cerrar lo abierto (chico, ya en marcha)**
 * 290 y 291: caja y deuda, lo que queda (Genoa 2022; la duda del factoring la decidís vos) --> Pipeline 4 (290), Principal (291)
 * 310: caja y deuda de un año sin vecino, cualquier país --> Pipeline 4
-* 292: cargar lo transcripto por subagentes: Países Bajos (en la cola), Bélgica, Suiza, Beşiktaş, Colombia y los 238 .md viejos ya rehechos por Mistral --> Onboarding 3
+* 292: cargar lo transcripto: Bélgica (corriendo), después Suiza, Beşiktaş y Colombia --> Onboarding 3
 
 **B. Bases baratas que después cuestan caro cambiar**
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
-* 287: los 25 casos de carpeta-doble, con el 278
 * 298: mejoras de script de Estonia y Bélgica (ab y ac, Sarpsborg 2023-2024; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
 * 308: los bonos convertibles en la skill
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
 * 238: llevar a 0 los documentos que quedaron a mitad de camino --> Onboarding 3
-* 261: Reino Unido: validado; sigue el lote de carga y la cola de transcripción
+* 261: Reino Unido: 12 transcripciones nuevas para validar (~US$ 1,26, el comando lo corrés vos); después, el lote de carga y la cola por Mistral --> Finanzas 5
 * 165 c: altas de los países nuevos que faltan --> Onboarding 3
 * 195: gestiones (presidentes) sin fuente confirmada (Fortaleza 2025: ¿CEO o presidente del consejo? lo decidís vos)
 * 295: balances de las entidades que organizan las ligas: lo que queda (segundas divisiones; varias no publican)
 * 284: Fredrikstad 2012 (falta un sponsor con fuente) --> Onboarding 3
-* 283: Vålerenga y Aalesund, sumar el AS y el FLI (con nota en Finanzas) --> Onboarding 3
+* 283: Vålerenga y Aalesund: ya transcriptos; falta que decidas cómo se muestra la suma del AS y el FLI sin contar dos veces la transferencia
 * 273: nombrar la compuerta de estadio y sponsor en la skill de onboarding (con tu ok)
 
 **E. Pantallas**
@@ -71,7 +70,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 257: skills que faltan (después de 255)
 * 237 al: anexo UEFA para abrir las ventas (lo dejaste para después)
 * 51: proceso de mails a clubes
-* 278: carpetas duplicadas en Clubes/ (sin borrar PDFs)
+* 278 y 287: carpetas duplicadas en Clubes/ y los 25 casos de carpeta-doble que caza la auditoría (sin borrar PDFs)
 * 258: índice partido por país o liga (cuando la skill de escala lo diga)
 
 165. ALTAS DE CLUBES NUEVOS FUERA DE ITALIA (decisión de Guido, 2026-10-07; estado al 2026-10-10). Un país por vez, con el pipeline
