@@ -328,3 +328,29 @@
 - 282 a: Go Ahead Eagles 2025, buscar el informe del auditor de la Holding (el documento que tenemos no lo trae).
 
 ## Después del segundo merge de Finanzas 4 (2026-10-19)
+
+### Qué cambió (para CHANGELOG)
+
+- To-do 282 a, Go Ahead Eagles 2025: sin canal público para el informe del auditor de la Holding. El PDF de 17 págs. del club (Wayback
+  2025-10-17) es idéntico al que teníamos y es solo un resumen; el de 45 págs. termina en la 4.1 sin la 4.2; el KvK vende las cuentas
+  depositadas. La línea sigue `falta_transcripcion`, con la nota de lo buscado: candidato a mail al club (sin outreach). Commit 3281a2501d.
+- To-do 195, segundo grupo (las gestiones de las tandas 1 y 2 sin caso en la cola): la lista del TODO estaba vieja. Cubiertos por gestiones
+  confirmadas de las tandas del 18-10: Fortaleza 2025, Ituano 2024, Ceará 2024-2025, Pari NN 2021-2025, Once Caldas 2022-2025 y
+  Mönchengladbach 2023-2024. Sin cubrir quedaban Novorizontino 2010, Amazonas 2024 y Cruzeiro 2024-2025: tanda armada a mano
+  (`Admin/gestiones-por-pais/tanda-2026-10-19-2/`, un lote por club, tres subagentes Sonnet) y ninguno se confirmó:
+  - Amazonas 2024: Francisco Wesley Couto dos Santos firma como Diretor Presidente; ninguna fuente web da su fecha de asunción.
+  - Cruzeiro 2024-2025: Pedro Lourenço, firma de la compra el 29-04-2024, CADE aprobó el 12-06-2024 (O Tempo), la concordancia de la
+    Associação sin fecha publicada. Cualquier fecha deja los dos cierres con él.
+  - Novorizontino 2010: Alex Sandro Domingues Pereira presidía en abril de 2010 (Moção 29/2010 y Ofício 217/2010 de la Câmara de Novo
+    Horizonte) y firma el balance; sin fechas de asunción ni salida.
+  Lo no confirmado va a "## Gestiones" de cada `Admin/carga-clubes/<club>.md`; la pregunta de cada uno ya estaba en `Admin/dudas-por-club.md`.
+  Commit 15f7a6589e.
+
+### Qué queda (para TODO)
+
+- 195: el segundo grupo se reduce a Novorizontino 2010, Amazonas 2024 y Cruzeiro 2024-2025, todos esperando respuesta del club (están en
+  `Admin/dudas-por-club.md`). Sacar del punto la lista de Fortaleza, Ituano, Ceará, Pari NN, Once Caldas y Mönchengladbach.
+- Decisión de Guido (Fortaleza): el balance 2025 lo firma el CEO Pedro Martins, no el presidente del consejo que está cargado
+  (Barreira, 2025-04-15 a 2026-01-15, cubre el cierre). Si prefiere al ejecutivo, el cierre queda sin fuente con la fecha de asunción.
+- 282 a: Go Ahead Eagles 2025, candidato a mail al club (pedir la controleverklaring de la Holding); Roma 2022 y Hamburgo 2024 como
+  antes.
