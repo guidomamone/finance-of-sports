@@ -337,6 +337,10 @@ Se decide por ejercicio, sin preguntar, y la aplica `tools/perimetro-senales.mjs
 Lo único que frena es que dos ejercicios que traen los dos estados voten distinto. El perímetro de cada ejercicio queda en la evidencia
 del club (`Admin/carga-clubes/<clubId>.md`); la página muestra el documento fuente de cada año.
 
+**Dos sociedades del mismo club con cuentas del mismo ejercicio** (el club y su holding, como Aston Villa FC Ltd y NSWE Sports): entra
+la sociedad que el sitio ya publica para ese club, por coherencia de la serie, y el documento de la otra va a
+`Admin/registros/documentos-descartados.txt` (decisión de Guido, 2026-10-19, Reino Unido).
+
 ## REGLA: qué entidad se carga cuando el fútbol está en una sociedad aparte (club asociación y SAD/SDUQ/SAF/AS)
 
 Decisión de Guido (2026-10-15, Portugal). En muchos países el fútbol profesional está en una sociedad (SAD o SDUQ en Portugal) y el club

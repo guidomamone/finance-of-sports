@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 805 — Reino Unido: una sociedad por año; el 295 cerrado (2026-10-19)
+
+* 261 b: en los 7 pares con dos sociedades del mismo club y ejercicio entra la que el sitio ya publica; los `wf-*` de la otra sociedad,
+  a descartados. Regla en CONVENCIONES-DATOS (decisión de Guido).
+* 295 cerrado a pedido de Guido; quedan sin buscar o sin bajar la FPF (Liga 3), la Lega Serie C y la Serie D.
+
 ## Versión 804 — 295: la Federação Paulista para el Paulistão (2026-10-19)
 
 * Federação Paulista de Futebol 2024 para las tres divisiones del Paulista, como federación entera (RSM Brasil, sin salvedades).

@@ -42,7 +42,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 261: Reino Unido: 118 transcripciones validadas; sigue el lote de carga y la cola por Mistral
 * 165 c: altas de los países nuevos que faltan --> Onboarding 3
 * 195: gestiones (presidentes) sin fuente confirmada (Fortaleza 2025: ¿CEO o presidente del consejo? lo decidís vos)
-* 295: balances de las entidades que organizan las ligas: lo que queda (segundas divisiones; varias no publican)
 * 284: Fredrikstad 2012 (falta un sponsor con fuente) --> Onboarding 3
 * 283: Vålerenga y Aalesund: ya transcriptos; falta que decidas cómo se muestra la suma del AS y el FLI sin contar dos veces la transferencia
 * 273: nombrar la compuerta de estadio y sponsor en la skill de onboarding (con tu ok)
@@ -215,17 +214,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    publicación, lo resuelve Guido) y Go Ahead Eagles 2025 (sin canal público: candidato a mail, sin outreach) (Lazio 2006 ya salió de Wayback; Roma 2022 queda pendiente por decisión de Guido: no hay informe del consolidado público). Si el sitio publicara el consolidado de Juventus, sus líneas 2022-2025
    cambian de informe (los dos están bajados). (f) que el pipeline exija la línea al dar de alta un club (fos-pipeline). En Ligas ya está la
    tarjeta "Las cuentas de la liga": cada entidad que entra por el 295 aparece sola.
-295. BALANCES DE LAS ENTIDADES QUE ORGANIZAN LAS LIGAS (fos-ligas; aclaración de Guido, 2026-10-18). Hecho: lo que está en
-   `data/auditoria/_ligas.js` (con la KNVB, la HNS y la Federação Paulista como federación entera). Falta: la FPF (Liga 3 portuguesa, como federación): Guido
-   baja el PDF desde su navegador (`fpf.pt/DownloadDocument.ashx?id=29317`, 403 a curl; nota en `Admin/sourcing/Ligas/`); Serie D sin
-   buscar; candidatos a mail, sin armar: Pro League (informe de KPMG), Eredivisie CV, LPF, Dimayor, Lega B, Divisionsforeningen,
-   Super League 2 griega, TFF desde 2022-23 y Lega Serie C. Además:
-   (a) CBF: Guido baja el PDF 2025 desde su navegador (link en `Admin/sourcing/Ligas/cbf.md`; el CDN no deja desde acá), después
-   transcribir y cargar la línea; (b) Lega Serie A, Liga Portugal y AFA no publican el balance (existe y se audita): decidir si se les
-   escribe, y para la AFA si se pide a la IGJ (Guido); (c) Dimayor: falta consultar el RUES. Mejora de script: `companies-house-fetch.mjs` no encuentra la EFL por nombre
-   (es el número 00080612). DFL: el Konzernabschluss pide login en el
-   Unternehmensregister (gestión de Guido) y el sitio tiene captcha; probar antes el Bundesanzeiger. AUF (Uruguay): en espera, el sitio no
-   tiene liga uruguaya (Guido).
 283. VÅLERENGA Y AALESUND: SUMAR EL AS Y EL FLI EN UN SOLO AÑO (pedido de Guido, 2026-10-17). El AS tiene los ingresos comerciales y el
    FLI los sueldos, que el AS le paga como transferencia (Vålerenga Elite 2023: 85,4 M de sueldos; el AS le transfiere 87,5 M); ninguno
    consolida. Sumar los dos documentos sin contar dos veces la transferencia, con una nota en Finanzas que explique la suma.
@@ -361,9 +349,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
        y 2020-21 la versión "AMENDED" de 11; Red Bull 2020, usar el turnover del estado (229.754), no el de la pág. 4. Falta el lote (etapa 3 en adelante); Celtic 2020-21 con
        `--max-paginas 0`. Tres con páginas que solo validó Claude (Celtic 2021-22 pág. 52; los otros en `transcripciones-estado.jsonl`):
        cerrar con sum-check al onboardear. Notas de West Ham 2019-21 y parte de Aston Villa cerradas por sumas: mirarlas antes de caja y deuda.
-    b) Sociedad de cada documento: ya listada en `Admin/transcripcion-subagentes/sociedad-por-documento.md` (cinco pares con dos
-       sociedades el mismo ejercicio: Aston Villa 2022-23 y 2023-24, Brighton, Fulham y Sunderland 2022-23). Falta decidir cuál entra en
-       cada par (regla de perímetro de `Admin/CONVENCIONES-DATOS.md`) y mandar la otra a descartados.
     c) Los 3 `wf-*` duplicados ya están en descartados y los mal nombrados, anotados en `sociedad-por-documento.md`. Antes de transcribir el resto de los `wf-*` (están al final de la cola), mirar si repiten un documento ya transcripto.
     d) Chelsea 2021-22 (Sonnet): solo los 4 estados se miraron contra la imagen; las notas se corrigieron por sumas. Revisar las notas
        contra el PDF antes de cargar caja y deuda.
