@@ -799,5 +799,15 @@
   "code": "salto-interanual",
   "match": "kifisia-gr: revenue salta de",
   "motivo": "VERIFICADO contra la fuente (Claude 2026-10-14): Kifisia subió a la Super League en 2023-24; Kifisia_notes_2024-06-30.md L1006-L1012: TV 1.362.068,97 y subsidio de ΠΑΜΕ ΣΤΟΙΧΗΜΑ 1.502.820,00 (en 2022-23, en la Super League 2, eran 42.500 y 185.802,21: Kifisia_notes_2023-06-30.md L1004, L1007). El salto es real."
+ },
+ {
+  "code": "carpeta-doble",
+  "match": "Clubes/Alemania/: \"1. FC Köln\" y \"Elversberg\"",
+  "motivo": "Revisado el 2026-10-19: es el informe de la Bundesliga 2 que cubre a todos sus clubes (nombre del archivo: Clubs der 2. Bundesliga); se guarda en la carpeta de cada club que lo usa."
+ },
+ {
+  "code": "carpeta-doble",
+  "match": "Clubes/Suecia/: \"Ljungskile\" y \"United Nordic\"",
+  "motivo": "Revisado el 2026-10-19: es el informe de la federación sueca sobre la economía de todos los clubes de la Ettan (primera página: Ettanklubbarnas ekonomier 2025); se guarda en la carpeta de cada club que lo usa."
  }
 ]
