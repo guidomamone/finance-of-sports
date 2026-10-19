@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 784 — 295 c: la FNL rusa; lista de validación del Reino Unido (2026-10-19)
+
+* Primera Liga rusa (FNL) 2025: dictamen de Terrafinans, sin salvedades.
+* 261 a: lista `Admin/lotes/reino-unido-validar.txt` con los 108 PDF del Reino Unido; el ensayo da ~US$ 11,48.
+
 ## Versión 783 — 298 p: el perfil por año y los ceros reales del club (2026-10-19)
 
 * p2: un cero real confirmado de una categoría vale para los otros años del club, si ningún año cargado la tiene con monto.

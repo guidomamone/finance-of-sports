@@ -12,3 +12,5 @@
 
 ### Qué deja de ser cierto en ESTADO
 - Balances de entidades de liga: suma la FNL 2025 (`ru-pervayaliga`); en la RPL, la nota ya no dice que la FNL no se buscó.
+
+## Después del primer merge de Finanzas 5 (2026-10-19)

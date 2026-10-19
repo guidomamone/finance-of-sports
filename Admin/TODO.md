@@ -221,8 +221,8 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    cambian de informe (los dos están bajados). (f) que el pipeline exija la línea al dar de alta un club (fos-pipeline). En Ligas ya está la
    tarjeta "Las cuentas de la liga": cada entidad que entra por el 295 aparece sola.
 295. BALANCES DE LAS ENTIDADES QUE ORGANIZAN LAS LIGAS (fos-ligas; aclaración de Guido, 2026-10-18). Hecho: lo que está en
-   `data/auditoria/_ligas.js` (con la KNVB y la HNS como federación entera). Falta: la Primera Liga rusa (FNL) y las demás segundas que
-   no se buscaron; candidatos a mail, sin armar: Pro League (informe de KPMG), Eredivisie CV, LPF, Dimayor, Lega B, Divisionsforeningen,
+   `data/auditoria/_ligas.js` (con la KNVB y la HNS como federación entera). Falta: las segundas que no se buscaron (Serie C, Liga 3
+   portuguesa, Serie D); candidatos a mail, sin armar: Pro League (informe de KPMG), Eredivisie CV, LPF, Dimayor, Lega B, Divisionsforeningen,
    Super League 2 griega y TFF desde 2022-23. Además:
    (a) CBF: Guido baja el PDF 2025 desde su navegador (link en `Admin/sourcing/Ligas/cbf.md`; el CDN no deja desde acá), después
    transcribir y cargar la línea; (b) Lega Serie A, Liga Portugal y AFA no publican el balance (existe y se audita): decidir si se les
