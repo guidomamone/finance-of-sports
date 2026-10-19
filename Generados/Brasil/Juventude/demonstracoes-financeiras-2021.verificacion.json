@@ -1,0 +1,193 @@
+{
+ "pdf": "Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.pdf",
+ "md": "Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.md",
+ "generado": "2026-10-19T16:42:17.391Z",
+ "estado": "cola",
+ "clubId": "juventude-br",
+ "year": 2021,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "9de2be6"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Receita Operacional Bruta Atividade do Desporto\" 68.173276 cierra; además se suman 2 línea(s) fuera de ese total (0.089283)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 3.552713678800501e-15
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 2 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2020 de este documento suma ingresos 32.383448; el sitio tiene 32.383448"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 2",
+  "línea 515: 33.655.776,98 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (3355577698) el resultado daría -3304.140545 y no cierra)",
+  "línea 516: 6.880.702,54 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (698070254) el resultado daría -673.408175 y no cierra)",
+  "duda de extraer que no afecta la carga: L188+L190..L193 suman 17.781.376,45 (igual al resultado L197), no -921.799,29; el subtotal operativo impreso en L195 parece erróneo."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 68.262559,
+  "gastos": 58.362061,
+  "financiero": 7.880879,
+  "impuesto": 0,
+  "resultadoImpreso": 17.781376,
+  "resultadoParaCargar": 17.781376,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Venda/Empréstimo de Atletas",
+   "lado": "ingreso",
+   "M": 2.863945,
+   "pagina": 15,
+   "linea": 498,
+   "origen": "nota que desglosa \"Receita Operacional Bruta Atividade do Desporto\""
+  },
+  {
+   "etiqueta": "Receitas Patrimoniais",
+   "lado": "ingreso",
+   "M": 2.522335,
+   "pagina": 15,
+   "linea": 499,
+   "origen": "nota que desglosa \"Receita Operacional Bruta Atividade do Desporto\""
+  },
+  {
+   "etiqueta": "Receita de transmissão",
+   "lado": "ingreso",
+   "M": 55.760074,
+   "pagina": 15,
+   "linea": 500,
+   "origen": "nota que desglosa \"Receita Operacional Bruta Atividade do Desporto\""
+  },
+  {
+   "etiqueta": "Receita jogos de Futebol",
+   "lado": "ingreso",
+   "M": 0.458635,
+   "pagina": 15,
+   "linea": 501,
+   "origen": "nota que desglosa \"Receita Operacional Bruta Atividade do Desporto\""
+  },
+  {
+   "etiqueta": "Receitas Publicitária",
+   "lado": "ingreso",
+   "M": 5.144984,
+   "pagina": 15,
+   "linea": 502,
+   "origen": "nota que desglosa \"Receita Operacional Bruta Atividade do Desporto\""
+  },
+  {
+   "etiqueta": "Receita Loteria Esportiva",
+   "lado": "ingreso",
+   "M": 0.693485,
+   "pagina": 15,
+   "linea": 503,
+   "origen": "nota que desglosa \"Receita Operacional Bruta Atividade do Desporto\""
+  },
+  {
+   "etiqueta": "Outras Receitas",
+   "lado": "ingreso",
+   "M": 0.729818,
+   "pagina": 15,
+   "linea": 504,
+   "origen": "nota que desglosa \"Receita Operacional Bruta Atividade do Desporto\""
+  },
+  {
+   "etiqueta": "Receita de Royalties",
+   "lado": "ingreso",
+   "M": 0.014645,
+   "pagina": 7,
+   "linea": 192,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Receitas Diversas",
+   "lado": "ingreso",
+   "M": 0.074639,
+   "pagina": 7,
+   "linea": 193,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Remuneração, Benefícios, Encargos, Intermediação, Contratação, Empréstimos e Outros",
+   "lado": "gasto",
+   "M": 33.655777,
+   "pagina": 16,
+   "linea": 515,
+   "origen": "nota que desglosa \"Custo da Atividade do Desporto\""
+  },
+  {
+   "etiqueta": "Amortização de direitos e de formação de atletas",
+   "lado": "gasto",
+   "M": 6.880703,
+   "pagina": 16,
+   "linea": 516,
+   "origen": "nota que desglosa \"Custo da Atividade do Desporto\""
+  },
+  {
+   "etiqueta": "Jogos, Federação, viagem, serviços, material esportivo e outros",
+   "lado": "gasto",
+   "M": 8.93362,
+   "pagina": 16,
+   "linea": 517,
+   "origen": "nota que desglosa \"Custo da Atividade do Desporto\""
+  },
+  {
+   "etiqueta": "Despesas Gerais e administrativas",
+   "lado": "gasto",
+   "M": 8.891961,
+   "pagina": 7,
+   "linea": 190,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Receita/Despesas financeiras líquidas",
+   "M": 7.880879,
+   "linea": 191
+  }
+ ],
+ "impuesto": [],
+ "confirmadosPorSumas": [
+  {
+   "linea": 515,
+   "numero": "33.655.776,98"
+  },
+  {
+   "linea": 516,
+   "numero": "6.880.702,54"
+  }
+ ]
+}

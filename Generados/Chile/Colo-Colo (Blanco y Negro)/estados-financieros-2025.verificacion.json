@@ -1,0 +1,231 @@
+{
+ "pdf": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2025.pdf",
+ "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2025.md",
+ "generado": "2026-10-19T16:42:17.003Z",
+ "estado": "cola",
+ "clubId": "colocolo-cl",
+ "year": 2025,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "36bade9"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.0913936421275139e-11
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2024 de este documento suma ingresos 47608.495; el sitio tiene 47608.495"
+  }
+ ],
+ "notas": [
+  "la nota de \"Gasto de administración\" no suma el renglón (10955.346 contra 10838.114, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar que no afecta la carga: Es una apertura alternativa del mismo total que ya desglosa b34 por naturaleza.",
+  "duda de localizar que no afecta la carga: Son balances y flujos por entidad o por moneda; ninguno abre renglones del estado de resultados.",
+  "duda de extraer que no afecta la carga: L4270 trae un importe sin etiqueta entre el bloque de administración y 'Otros gastos'; no suma a ningún subtotal.",
+  "duda de extraer que no afecta la carga: b37 repite L4095-L4096 de b34 con número de jugadores; es detalle ya contenido."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Gasto de administración",
+   "suma": 10955.346,
+   "objetivo": 10838.114
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Gasto de administración",
+   "suma": 10955.346,
+   "objetivo": 10838.114
+  }
+ ],
+ "totales": {
+  "ingresos": 46766.196,
+  "gastos": 41119.983,
+  "financiero": -365.543,
+  "impuesto": -185.78,
+  "resultadoImpreso": 5094.89,
+  "resultadoParaCargar": 5094.89,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ingresos por recaudaciones",
+   "lado": "ingreso",
+   "M": 9706.043,
+   "pagina": 72,
+   "linea": 4094,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Ingresos por venta de jugadores comprado a terceros",
+   "lado": "ingreso",
+   "M": 5179.121,
+   "pagina": 72,
+   "linea": 4095,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Ingresos por publicidad",
+   "lado": "ingreso",
+   "M": 14590.645,
+   "pagina": 72,
+   "linea": 4097,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Ingresos por derechos de televisión",
+   "lado": "ingreso",
+   "M": 9046.906,
+   "pagina": 72,
+   "linea": 4098,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Otros",
+   "lado": "ingreso",
+   "M": 2563.401,
+   "pagina": 72,
+   "linea": 4099,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Otros ingresos, por función",
+   "lado": "ingreso",
+   "M": 5680.08,
+   "pagina": 10,
+   "linea": 431,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Costo de ventas jugadores",
+   "lado": "gasto",
+   "M": 513.66,
+   "pagina": 75,
+   "linea": 4251,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Remuneración plantel profesional y cuerpo técnico",
+   "lado": "gasto",
+   "M": 14394.745,
+   "pagina": 75,
+   "linea": 4252,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Amortización Activos en concesión",
+   "lado": "gasto",
+   "M": 228.205,
+   "pagina": 75,
+   "linea": 4253,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Amortización Otros Intangibles",
+   "lado": "gasto",
+   "M": 68.556,
+   "pagina": 75,
+   "linea": 4254,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Amortización pases jugadores profesionales",
+   "lado": "gasto",
+   "M": 4859.862,
+   "pagina": 75,
+   "linea": 4255,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Costos de concentración traslados y otros",
+   "lado": "gasto",
+   "M": 6345.375,
+   "pagina": 75,
+   "linea": 4256,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Otros costos",
+   "lado": "gasto",
+   "M": 3278.958,
+   "pagina": 75,
+   "linea": 4257,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Gasto de administración",
+   "lado": "gasto",
+   "M": 10838.114,
+   "pagina": 10,
+   "linea": 432,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Otros gastos",
+   "lado": "gasto",
+   "M": 39.825,
+   "pagina": 75,
+   "linea": 4271,
+   "origen": "nota que desglosa \"Otros gastos, por función\""
+  },
+  {
+   "etiqueta": "Intereses y Multas",
+   "lado": "gasto",
+   "M": 552.683,
+   "pagina": 75,
+   "linea": 4272,
+   "origen": "nota que desglosa \"Otros gastos, por función\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Ingresos financieros",
+   "M": 11.927,
+   "linea": 434
+  },
+  {
+   "etiqueta": "Costos financieros",
+   "M": -647.925,
+   "linea": 435
+  },
+  {
+   "etiqueta": "Diferencias de tipo de cambio",
+   "M": 270.455,
+   "linea": 436
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "(Gasto) ingreso por Impuesto a las Ganancias",
+   "M": -185.78,
+   "linea": 438
+  }
+ ]
+}

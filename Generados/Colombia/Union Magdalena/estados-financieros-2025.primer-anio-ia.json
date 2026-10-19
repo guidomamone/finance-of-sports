@@ -1,0 +1,75 @@
+{
+ "md": "Clubes/Colombia/Union Magdalena/estados-financieros-2025.md",
+ "clave": "29eb75708acce785b486b3259688a5a5503118e7",
+ "generado": "2026-10-19T16:42:41.201Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [
+   {
+    "linea": 122,
+    "motivo": "Faltan los ingresos ordinarios 2025 (11,396,578). Las partes de la nota cargadas suman 9,735.618, que es el valor de 2024."
+   },
+   {
+    "linea": 125,
+    "motivo": "Faltan Otros Ingresos 2025 (369,618)."
+   },
+   {
+    "linea": 126,
+    "motivo": "Faltan los Gastos de Venta 2025 (11,721,102). Las partes de la nota cargadas suman 8,433.786, que es el valor de 2024."
+   },
+   {
+    "linea": 127,
+    "motivo": "Faltan los Costos de Venta 2025 (122,101)."
+   },
+   {
+    "linea": 128,
+    "motivo": "Faltan los Gastos de Administración 2025 (2,092,300). Las partes de la nota cargadas corresponden a 2024."
+   },
+   {
+    "linea": 133,
+    "motivo": "Faltan los Gastos Financieros 2025 (179,738)."
+   },
+   {
+    "linea": 137,
+    "motivo": "Falta la corrección de impuesto 2025 (22,834)."
+   }
+  ],
+  "sobran": [
+   {
+    "linea": 1385,
+    "motivo": "El desglose de ingresos ordinarios (L1385-L1396) es de 2024: suma 9,735.618."
+   },
+   {
+    "linea": 1436,
+    "motivo": "El desglose de gastos de venta (L1436-L1454) es de 2024: suma 8,433.786."
+   },
+   {
+    "linea": 1476,
+    "motivo": "El desglose de gastos de administración (L1476-L1495) corresponde a 2024 (2,028,825)."
+   },
+   {
+    "linea": 125,
+    "motivo": "Se cargó 1,496.386, que es el dato del año anterior."
+   },
+   {
+    "linea": 127,
+    "motivo": "Se cargó 202.141, que es el dato del año anterior."
+   },
+   {
+    "linea": 132,
+    "motivo": "Se cargó 30.333, que es de 2024. En 2025 el renglón es 0."
+   },
+   {
+    "linea": 133,
+    "motivo": "Se cargó 267.82, que es de 2024."
+   },
+   {
+    "linea": 138,
+    "motivo": "Se cargó 152.495, que es de 2024. En 2025 el renglón es 0."
+   }
+  ],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Todo lo cargado corresponde a la columna Ene-Dic 2024 y no a 2025. Hay que recargar con los importes de 2025, cuyo resultado es -2,371,879. Además, L142 imprime -2,371,879 también en la columna 2024, aunque el resultado de 2024 es 177,272."
+ }
+}

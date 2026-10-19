@@ -1,0 +1,1420 @@
+{
+ "pdf": "Clubes/Croacia/Hajduk Split/financijsko-izvjesce-2025.pdf",
+ "md": "Clubes/Croacia/Hajduk Split/financijsko-izvjesce-2025.md",
+ "mdSha1": "a6993550c3fe9b44d085e63393c489d896e31ad5",
+ "ubicacionSha1": "86db988d36fcd1c9db57c85b05cab9d86e91f653",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:34:33.341Z",
+ "ubicacion": {
+  "estado": [
+   "b4",
+   "b5",
+   "b6",
+   "b7"
+  ],
+  "notas_ingresos": [
+   "b13",
+   "b14",
+   "b31"
+  ],
+  "notas_gastos": [
+   "b32"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "unidades",
+   "evidencia": "L356: columnas '2025. EUR | 2024. EUR' con importes completos"
+  },
+  {
+   "bloque": "b5",
+   "escala": "unidades",
+   "evidencia": "L397: '2025. EUR | 2024. EUR'"
+  },
+  {
+   "bloque": "b6",
+   "escala": "unidades",
+   "evidencia": "L421: '2025. EUR | 2024. EUR'"
+  },
+  {
+   "bloque": "b7",
+   "escala": "unidades",
+   "evidencia": "L470: '2025. EUR | 2024. EUR'"
+  },
+  {
+   "bloque": "b13",
+   "escala": "unidades",
+   "evidencia": "L986: '2025. EUR | 2024. EUR'"
+  },
+  {
+   "bloque": "b14",
+   "escala": "unidades",
+   "evidencia": "L999: '2025. EUR | 2024. EUR'"
+  },
+  {
+   "bloque": "b31",
+   "escala": "unidades",
+   "evidencia": "L1370: columna 'Iznos' sin indicación; suma 151.710 coincide con L405 en EUR"
+  },
+  {
+   "bloque": "b32",
+   "escala": "unidades",
+   "evidencia": "L1393: columna 'Iznos'; total 4.602.399 coincide con L453 en EUR"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 359,
+   "etiqueta": "Prihodi od ulaznica - Nacionalna natjecanja",
+   "actual": "3.460.389",
+   "anterior": "2.717.370",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 360,
+   "etiqueta": "Prihodi od ulaznica - UEFA klupska natjecanja",
+   "actual": "699.010",
+   "anterior": "768.095",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 361,
+   "etiqueta": "Prihodi od ulaznica - VIP ulaznice i hospitality",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 362,
+   "etiqueta": "Prihodi od ulaznica - Godišnje ulaznice",
+   "actual": "3.544.162",
+   "anterior": "2.951.759",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 363,
+   "etiqueta": "Prihodi od ulaznica - Članarine",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 364,
+   "etiqueta": "Ostali nerazvrstani prihodi od ulaznica",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 365,
+   "etiqueta": "Prihodi od ulaznica - ukupno",
+   "actual": "7.703.561",
+   "anterior": "6.437.224",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 366,
+   "etiqueta": "Prihod od sponzorstva i oglašavanja - Sponzor za opremu (Proizvođač opreme)",
+   "actual": "1.416.692",
+   "anterior": "474.646",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 367,
+   "etiqueta": "Prihod od sponzorstva i oglašavanja - Glavni sponzor na opremi",
+   "actual": "680.891",
+   "anterior": "645.277",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 368,
+   "etiqueta": "Prihod od sponzorstva i oglašavanja - Sponzor za stadion",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 369,
+   "etiqueta": "Prihod od sponzorstva i oglašavanja - Reklamiranje na panoima oko terena za igru",
+   "actual": "896.044",
+   "anterior": "811.974",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 370,
+   "etiqueta": "Ostali nerazvrstani prihodi od sponzorstva i oglašavanja",
+   "actual": "2.086.672",
+   "anterior": "2.244.816",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 371,
+   "etiqueta": "Prihod od sponzorstva i oglašavanja - Ukupno",
+   "actual": "5.080.299",
+   "anterior": "4.176.713",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 372,
+   "etiqueta": "Prava emitiranja - Nacionalna natjecanja",
+   "actual": "1.059.600",
+   "anterior": "1.060.600",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 373,
+   "etiqueta": "Prava emitiranja - Ostali nerazvrstani prihodi",
+   "actual": "0",
+   "anterior": "30.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 374,
+   "etiqueta": "Prihodi od prava emitiranja - Ukupno",
+   "actual": "1.059.600",
+   "anterior": "1.090.600",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 375,
+   "etiqueta": "Komercijalni prihodi - Nacionalna natjecanja",
+   "actual": "380.301",
+   "anterior": "340.811",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 376,
+   "etiqueta": "Komercijalni prihodi - Prodaja proizvoda",
+   "actual": "8.456.689",
+   "anterior": "8.453.825",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 377,
+   "etiqueta": "Komercijalni prihodi od članstva (nevezano za utakmice)",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 378,
+   "etiqueta": "Komercijalni prihodi - Korištenje objekata za vrijeme neodigravanja utakmica",
+   "actual": "92.780",
+   "anterior": "92.895",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 379,
+   "etiqueta": "Ostali nerazvrstani komercijalni prihodi",
+   "actual": "429.555",
+   "anterior": "385.611",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 380,
+   "etiqueta": "Komercijalni prihodi - Ukupno",
+   "actual": "9.359.325",
+   "anterior": "9.273.142",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 381,
+   "etiqueta": "Uefina klupska natjecanja - prava emitiranja, komercijalni prihodi, nagrade",
+   "actual": "1.008.605",
+   "anterior": "970.660",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 382,
+   "etiqueta": "Uefina klupska natjecanja - solidarne uplate",
+   "actual": "1.271.361",
+   "anterior": "602.389",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 383,
+   "etiqueta": "Uefine nagrade i solidarne uplate - nerazvrstano",
+   "actual": "0",
+   "anterior": "161.180",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 384,
+   "etiqueta": "Uefine nagrade i solidarne uplate - Ukupno",
+   "actual": "2.279.966",
+   "anterior": "1.734.229",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 399,
+   "etiqueta": "Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela",
+   "actual": "182.748",
+   "anterior": "152.412",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 400,
+   "etiqueta": "Donacije i dotacije ili drugi iznosi od države (na teritoriju sjedišta) i lokalne samouprave",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 401,
+   "etiqueta": "Donacije nepovezanih strana",
+   "actual": "443.602",
+   "anterior": "527.068",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 402,
+   "etiqueta": "Donacije i doprinosi povezanih strana",
+   "actual": "6.303.267",
+   "anterior": "999.973",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 403,
+   "etiqueta": "Prihodi od nenogometnih djelatnosti",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 404,
+   "etiqueta": "Izvanredni prihodi",
+   "actual": "0",
+   "anterior": "599.877",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 405,
+   "etiqueta": "Ostali nerazvrstani poslovni prihodi",
+   "actual": "151.710",
+   "anterior": "423.761",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 406,
+   "etiqueta": "Ostali poslovni prihodi - Ukupno",
+   "actual": "7.081.327",
+   "anterior": "2.703.091",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 407,
+   "etiqueta": "Ukupno - Prihodi",
+   "actual": "32.564.078",
+   "anterior": "25.414.999",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 424,
+   "etiqueta": "Troškovi prodaje robe/proizvoda - izravni",
+   "actual": "(3.866.286)",
+   "anterior": "(4.299.304)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 425,
+   "etiqueta": "Troškovi prodaje robe/proizvoda - ostali nerazvrstani",
+   "actual": "(1.843.197)",
+   "anterior": "(1.191.214)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 426,
+   "etiqueta": "Troškovi prodaje/materijala - Ukupno",
+   "actual": "(5.709.483)",
+   "anterior": "(5.490.518)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 427,
+   "etiqueta": "Plaće igrača",
+   "actual": "(11.029.615)",
+   "anterior": "(12.785.917)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 428,
+   "etiqueta": "Porezi i doprinosi - igrači",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 429,
+   "etiqueta": "Ostali nerazvrstani troškovi primanja igrača",
+   "actual": "(1.924.043)",
+   "anterior": "(1.257.686)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 430,
+   "etiqueta": "Troškovi primanja igrača - ukupno",
+   "actual": "(12.953.658)",
+   "anterior": "(14.043.603)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 431,
+   "etiqueta": "Plaće stručnog stožera",
+   "actual": "(1.759.902)",
+   "anterior": "(1.317.166)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 432,
+   "etiqueta": "Porezi i doprinosi - stručni stožer",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 433,
+   "etiqueta": "Ostali nerazvrstani troškovi primanja stručnog stožera",
+   "actual": "(1.022.599)",
+   "anterior": "(52.341)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 434,
+   "etiqueta": "Troškovi primanja stručnog stožera - ukupno",
+   "actual": "(2.782.501)",
+   "anterior": "(1.369.507)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 435,
+   "etiqueta": "Plaće ostalih zaposlenika",
+   "actual": "(3.139.304)",
+   "anterior": "(2.818.982)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 436,
+   "etiqueta": "Porezi i doprinosi - ostali zaposlenici",
+   "actual": "(1.203.810)",
+   "anterior": "(1.125.816)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 437,
+   "etiqueta": "Ostali nerazvrstani troškovi za primanja ostalih zaposlenika",
+   "actual": "(909.281)",
+   "anterior": "(846.503)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 438,
+   "etiqueta": "Trošak primanja ostalih zaposlenika - Ukupno",
+   "actual": "(5.252.395)",
+   "anterior": "(4.791.301)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 440,
+   "etiqueta": "Ukupni troškovi primanja zaposlenika",
+   "actual": "(20.988.554)",
+   "anterior": "(20.204.411)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 441,
+   "etiqueta": "Amortizacija dugotrajne materijalne imovine",
+   "actual": "(429.267)",
+   "anterior": "(386.805)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 442,
+   "etiqueta": "Umanjenje vrijednosti dugotrajne materijalne imovine",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 443,
+   "etiqueta": "Amortizacija ostale nematerijalne imovine (bez registracija igrača)",
+   "actual": "(1.194.598)",
+   "anterior": "(1.165.210)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 444,
+   "etiqueta": "Umanjenje vrijednosti ostale nematerijalne imovine (bez registracija igrača)",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 445,
+   "etiqueta": "Amortizacija i umanjenje vrijednosti - Ukupno (bez registracija igrača)",
+   "actual": "(1.623.865)",
+   "anterior": "(1.552.015)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 447,
+   "etiqueta": "Troškovi utakmica",
+   "actual": "(3.826.371)",
+   "anterior": "(2.329.584)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 448,
+   "etiqueta": "Troškovi sponzorstva i oglašavanja",
+   "actual": "(199.801)",
+   "anterior": "(298.428)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 449,
+   "etiqueta": "Troškovi komercijalnih aktivnosti",
+   "actual": "(1.070.835)",
+   "anterior": "(1.076.187)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 450,
+   "etiqueta": "Troškovi imovine i objekata",
+   "actual": "(542.854)",
+   "anterior": "(554.550)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 451,
+   "etiqueta": "Troškovi za nenogometne djelatnosti",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 452,
+   "etiqueta": "Izvanredni troškovi",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 453,
+   "etiqueta": "Ostali nerazvrstani poslovni rashodi",
+   "actual": "(4.602.399)",
+   "anterior": "(3.509.629)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 454,
+   "etiqueta": "Ostali poslovni rashodi - Ukupno",
+   "actual": "(10.242.260)",
+   "anterior": "(7.768.378)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 455,
+   "etiqueta": "Ukupno - poslovni rashodi (bez registracija igrača)",
+   "actual": "(38.564.162)",
+   "anterior": "(35.015.322)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 456,
+   "etiqueta": "Poslovni rezultat (bez registracija igrača)",
+   "actual": "(6.000.084)",
+   "anterior": "(9.600.323)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 473,
+   "etiqueta": "Amortizacija nematerijalne imovine (registracije igrača)",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 474,
+   "etiqueta": "Umanjenje vrijednosti nematerijalne imovine (registracije igrača)",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 475,
+   "etiqueta": "Dobit od raspolaganja nematerijalnom imovinom (registracije igrača)",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 476,
+   "etiqueta": "Gubitak od raspolaganja nematerijalnom imovinom (registracije igrača)",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 477,
+   "etiqueta": "Troškovi stjecanja registracija igrača (uključujući troškove ustupanja, solidarne doprinose i naknade za treniranje)",
+   "actual": "(3.039.704)",
+   "anterior": "(1.802.429)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 478,
+   "etiqueta": "Prihod od raspolaganja registracijama igrača (uključujući prihode od ustupanja, solidarnih doprinosa i naknada za treniranje)",
+   "actual": "17.306.868",
+   "anterior": "1.990.492",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 479,
+   "etiqueta": "Amortizacija/umanjenje nematerijalne imovine (ostalo osoblje)",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 480,
+   "etiqueta": "Dobit / gubitak od ustupanja ostalog osoblja",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 481,
+   "etiqueta": "Prihod / trošak od ustupanja ostalog osoblja",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 482,
+   "etiqueta": "Nekapitalizirani troškovi za naknade agentima/posrednicima",
+   "actual": "(612.800)",
+   "anterior": "(592.330)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 483,
+   "etiqueta": "Troškovi nastali s povezanim stranama",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 484,
+   "etiqueta": "Neto rezultat od raspolaganja registracijama igrača - po metodi kapitalizacije troškova",
+   "actual": "13.654.364",
+   "anterior": "(404.267)",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 485,
+   "etiqueta": "Dobit /(gubitak) od raspolaganja dugotrajnom imovinom",
+   "actual": "2.825",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 486,
+   "etiqueta": "Dobit /(gubitak) od raspolaganja ostalom nematerijalnom imovinom",
+   "actual": "9.492",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 487,
+   "etiqueta": "Ukupno - dobit/(gubitak) od raspolaganja imovinom",
+   "actual": "12.317",
+   "anterior": "0",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 488,
+   "etiqueta": "Financijski prihodi",
+   "actual": "3.506",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 489,
+   "etiqueta": "Financijski rashodi",
+   "actual": "(1.054.767)",
+   "anterior": "(810.410)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 490,
+   "etiqueta": "Neto tečajne razlike/(gubici)",
+   "actual": "(88.017)",
+   "anterior": "78.153",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 491,
+   "etiqueta": "Ukupni neto prihod/rashod od financiranja",
+   "actual": "(1.139.278)",
+   "anterior": "(732.257)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 494,
+   "etiqueta": "Ukupni neposlovni prihodi/rashodi",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 496,
+   "etiqueta": "Dobit/(gubitak) poslije oporezivanja",
+   "actual": "6.527.319",
+   "anterior": "(10.736.847)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 988,
+   "etiqueta": "Prihod od otuđivanja nematerijalne imovine",
+   "actual": "321.649",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Ukupno - dobit/(gubitak) od raspolaganja imovinom"
+  },
+  {
+   "bloque": "b13",
+   "linea": 989,
+   "etiqueta": "Prihod od otuđivanja materijalne dugotrajne imovine",
+   "actual": "12.453",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Ukupno - dobit/(gubitak) od raspolaganja imovinom"
+  },
+  {
+   "bloque": "b13",
+   "linea": 990,
+   "etiqueta": "Ukupno prihodi",
+   "actual": "334.102",
+   "anterior": "0",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": "Ukupno - dobit/(gubitak) od raspolaganja imovinom"
+  },
+  {
+   "bloque": "b13",
+   "linea": 991,
+   "etiqueta": "Trošak stjecanja nematerijalne imovine",
+   "actual": "312.157",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Ukupno - dobit/(gubitak) od raspolaganja imovinom"
+  },
+  {
+   "bloque": "b13",
+   "linea": 992,
+   "etiqueta": "Trošak stjecanja materijalne dugotrajne imovine",
+   "actual": "9.628",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Ukupno - dobit/(gubitak) od raspolaganja imovinom"
+  },
+  {
+   "bloque": "b13",
+   "linea": 993,
+   "etiqueta": "Ukupno rashodi",
+   "actual": "321.785",
+   "anterior": "0",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": "Ukupno - dobit/(gubitak) od raspolaganja imovinom"
+  },
+  {
+   "bloque": "b13",
+   "linea": 994,
+   "etiqueta": "Ukupno",
+   "actual": "12.317",
+   "anterior": "0",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": "Ukupno - dobit/(gubitak) od raspolaganja imovinom"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1001,
+   "etiqueta": "Prihodi od kamata po bankovnim računima i danim kreditima",
+   "actual": "15",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financijski prihodi"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1002,
+   "etiqueta": "Pozitivne tečajne razlike",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financijski prihodi"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1003,
+   "etiqueta": "Ostali financijski prihodi",
+   "actual": "3.491",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financijski prihodi"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1004,
+   "etiqueta": "Ukupni financijski prihodi",
+   "actual": "3.506",
+   "anterior": "0",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Financijski prihodi"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1006,
+   "etiqueta": "Troškovi kamata na prekoračenja po bankovnim računima i zajmovima",
+   "actual": "(406.306)",
+   "anterior": "(451.468)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financijski rashodi"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1007,
+   "etiqueta": "Troškovi kamata - leasing",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financijski rashodi"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1008,
+   "etiqueta": "Negativne tečajne razlike",
+   "actual": "0",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financijski rashodi"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1009,
+   "etiqueta": "Ostali financijski troškovi",
+   "actual": "(648.461)",
+   "anterior": "(358.942)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financijski rashodi"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1010,
+   "etiqueta": "Ukupni financijski troškovi",
+   "actual": "(1.054.767)",
+   "anterior": "(810.410)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Financijski rashodi"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1012,
+   "etiqueta": "Ukupno neto",
+   "actual": "(1.051.261)",
+   "anterior": "(810.410)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Ukupni neto prihod/rashod od financiranja"
+  },
+  {
+   "bloque": "b31",
+   "linea": 1372,
+   "etiqueta": "Prihodi od refundacije",
+   "actual": "142.382",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ostali nerazvrstani poslovni prihodi"
+  },
+  {
+   "bloque": "b31",
+   "linea": 1373,
+   "etiqueta": "Prihod od otpisa obveza",
+   "actual": "971",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ostali nerazvrstani poslovni prihodi"
+  },
+  {
+   "bloque": "b31",
+   "linea": 1374,
+   "etiqueta": "Prihod od naplačenih vrijednosnih usklađenja",
+   "actual": "660",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ostali nerazvrstani poslovni prihodi"
+  },
+  {
+   "bloque": "b31",
+   "linea": 1375,
+   "etiqueta": "Inventurni viškovi na robi",
+   "actual": "406",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ostali nerazvrstani poslovni prihodi"
+  },
+  {
+   "bloque": "b31",
+   "linea": 1376,
+   "etiqueta": "Ostali poslovni prihodi",
+   "actual": "7.291",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ostali nerazvrstani poslovni prihodi"
+  },
+  {
+   "bloque": "b31",
+   "linea": 1377,
+   "etiqueta": "Ukupno:",
+   "actual": "151.710",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Ostali nerazvrstani poslovni prihodi"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1395,
+   "etiqueta": "Kazne, penali naknada štete",
+   "actual": "(936.777)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali nerazvrstani poslovni rashodi"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1396,
+   "etiqueta": "Usluge konzult., stručnog nadzora i savjetovanja",
+   "actual": "(619.159)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali nerazvrstani poslovni rashodi"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1397,
+   "etiqueta": "Usluge pripreme i analitike sportaša",
+   "actual": "(398.678)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali nerazvrstani poslovni rashodi"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1398,
+   "etiqueta": "Troškovi zakupa i lizinga",
+   "actual": "(357.390)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali nerazvrstani poslovni rashodi"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1399,
+   "etiqueta": "Odvjetničke i bilježničke usluge, autorski honorari, ostale intelektualne usluge",
+   "actual": "(335.955)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali nerazvrstani poslovni rashodi"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1400,
+   "etiqueta": "Bankovne usluge i troškovi platnog prometa",
+   "actual": "(271.858)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali nerazvrstani poslovni rashodi"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1401,
+   "etiqueta": "Naknade za korištenje prava intelekt. vlasništva",
+   "actual": "(257.652)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali nerazvrstani poslovni rashodi"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1402,
+   "etiqueta": "Troškovi reprezentacije",
+   "actual": "(240.772)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali nerazvrstani poslovni rashodi"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1403,
+   "etiqueta": "Vrijednosno usklađenje od kupaca",
+   "actual": "(187.500)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali nerazvrstani poslovni rashodi"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1404,
+   "etiqueta": "Troškovi telekomunikacijskih i prijevoznih usluga",
+   "actual": "(186.709)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali nerazvrstani poslovni rashodi"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1405,
+   "etiqueta": "Premije osiguranja",
+   "actual": "(179.027)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali nerazvrstani poslovni rashodi"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1406,
+   "etiqueta": "Darovanje za općekorisne namjene",
+   "actual": "(163.918)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali nerazvrstani poslovni rashodi"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1407,
+   "etiqueta": "Članarine, naknade i slična davanja",
+   "actual": "(132.596)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali nerazvrstani poslovni rashodi"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1408,
+   "etiqueta": "Troškovi službenog puta, obrazovanja i ostalo",
+   "actual": "(119.825)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali nerazvrstani poslovni rashodi"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1409,
+   "etiqueta": "Troškovi promidžbe",
+   "actual": "(77.597)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali nerazvrstani poslovni rashodi"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1410,
+   "etiqueta": "Troškovi komunalnih usluga",
+   "actual": "(66.461)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali nerazvrstani poslovni rashodi"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1411,
+   "etiqueta": "Troškovi usklađenja",
+   "actual": "(51.813)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali nerazvrstani poslovni rashodi"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1412,
+   "etiqueta": "Troškovi koji će se prefakturirati",
+   "actual": "(11.045)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali nerazvrstani poslovni rashodi"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1413,
+   "etiqueta": "Rashodi i otpisi potraživanja",
+   "actual": "(7.667)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ostali nerazvrstani poslovni rashodi"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1414,
+   "etiqueta": "Ukupno:",
+   "actual": "(4.602.399)",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Ostali nerazvrstani poslovni rashodi"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 407,
+  "actual": "32.564.078"
+ },
+ "total_gastos": {
+  "linea": 455,
+  "actual": "(38.564.162)"
+ },
+ "resultado": {
+  "linea": 496,
+  "actual": "6.527.319",
+  "anterior": "(10.736.847)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la nota b13 (L988-L994) con importes brutos de venta y costo como desglose de 'Ukupno - dobit/(gubitak) od raspolaganja imovinom', aunque sus componentes no coinciden con L485-L486 (2.825 y 9.492)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Ukupno - dobit/(gubitak) od raspolaganja imovinom",
+   "texto": "La nota b13 da netos 9.492 intangible y 2.825 material, pero invertidos respecto de las etiquetas del estado (L485 dugotrajna 2.825, L486 nematerijalna 9.492); el total 12.317 coincide.",
+   "bloques": [
+    "b13",
+    "b7"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se acepta que 'Ukupno neto' de b14 (L1012, (1.051.261)) no incluye las diferencias de cambio (88.017) de L490 y por eso no coincide con L491 (1.139.278)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Ukupni neto prihod/rashod od financiranja",
+   "texto": "L1012 excluye 'Neto tečajne razlike/(gubici)' (L490); la nota no desglosa todo el renglón L491.",
+   "bloques": [
+    "b14",
+    "b7"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se acepta que los subtotales y el resultado no cuadran con la suma de bloques porque el estado presenta el resultado operativo (L456) y luego partidas de b7?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Dobit/(gubitak) poslije oporezivanja",
+   "texto": "Verificado: -6.000.084+13.654.364+12.317-1.139.278 = 6.527.319 (L496); sin impuesto impreso (L495 vacío).",
+   "bloques": [
+    "b6",
+    "b7"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado completo en EUR unidades. Renglones vacíos (L439, L446, L492, L493, L495) no se extrajeron por no tener importe; el impuesto L495 no tiene importe. Las filas KONTROLA (L995, L1005, L1011) son controles sin importe. b31 y b32 solo traen el ejercicio 2025 (sin columna anterior) y desglosan los renglones 'Ostali nerazvrstani' de ingresos (L405) y gastos (L453), cuadrando exactamente."
+}

@@ -1,0 +1,1087 @@
+{
+ "pdf": "Clubes/Brasil/Chapecoense/demonstracoes-contabeis-2022.pdf",
+ "md": "Clubes/Brasil/Chapecoense/demonstracoes-contabeis-2022.md",
+ "mdSha1": "e5fe79ae61efe2ef4b1c65b4c77c09d544727f15",
+ "ubicacionSha1": "66fc94972d45479547f15ac822d28b60958be398",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:16:21.789Z",
+ "ubicacion": {
+  "estado": [
+   "b7"
+  ],
+  "notas_ingresos": [
+   "b43",
+   "b51",
+   "b53"
+  ],
+  "notas_gastos": [
+   "b45",
+   "b46",
+   "b47",
+   "b48",
+   "b49",
+   "b50",
+   "b52"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b7",
+   "escala": "miles",
+   "evidencia": "L427: (Valores expressos em milhares de reais, exceto quando indicado de outra forma)"
+  },
+  {
+   "bloque": "b43",
+   "escala": "no se sabe",
+   "evidencia": "Sin frase de escala en el bloque; total coincide con el estado (miles)"
+  },
+  {
+   "bloque": "b51",
+   "escala": "no se sabe",
+   "evidencia": "Sin frase de escala; total coincide con el estado (miles)"
+  },
+  {
+   "bloque": "b53",
+   "escala": "no se sabe",
+   "evidencia": "Sin frase de escala; total coincide con el estado (miles)"
+  },
+  {
+   "bloque": "b45",
+   "escala": "no se sabe",
+   "evidencia": "Sin frase de escala; total coincide con el estado (miles)"
+  },
+  {
+   "bloque": "b46",
+   "escala": "no se sabe",
+   "evidencia": "Sin frase de escala; total coincide con el estado (miles)"
+  },
+  {
+   "bloque": "b47",
+   "escala": "no se sabe",
+   "evidencia": "Sin frase de escala; total coincide con el estado (miles)"
+  },
+  {
+   "bloque": "b48",
+   "escala": "no se sabe",
+   "evidencia": "Sin frase de escala; total coincide con el estado (miles)"
+  },
+  {
+   "bloque": "b49",
+   "escala": "no se sabe",
+   "evidencia": "Sin frase de escala; total coincide con el estado (miles)"
+  },
+  {
+   "bloque": "b50",
+   "escala": "no se sabe",
+   "evidencia": "Sin frase de escala; total coincide con el estado (miles)"
+  },
+  {
+   "bloque": "b52",
+   "escala": "no se sabe",
+   "evidencia": "Sin frase de escala; total coincide con el estado (miles)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b7",
+   "linea": 432,
+   "etiqueta": "Receita Operacional Líquida",
+   "actual": "36.407",
+   "anterior": "72.479",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 433,
+   "etiqueta": "Custos",
+   "actual": "(180)",
+   "anterior": "(339)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 434,
+   "etiqueta": "Lucro Bruto",
+   "actual": "36.227",
+   "anterior": "72.140",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 435,
+   "etiqueta": "Despesas Operacionais",
+   "actual": "(35.224)",
+   "anterior": "(86.285)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 436,
+   "etiqueta": "Pessoal",
+   "actual": "(16.839)",
+   "anterior": "(61.112)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 437,
+   "etiqueta": "Materiais",
+   "actual": "-",
+   "anterior": "(653)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 438,
+   "etiqueta": "Manutenção",
+   "actual": "(883)",
+   "anterior": "(918)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 439,
+   "etiqueta": "Jogos e competições",
+   "actual": "(3.850)",
+   "anterior": "(5.687)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 440,
+   "etiqueta": "Terceiros",
+   "actual": "(3.796)",
+   "anterior": "(4.476)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 441,
+   "etiqueta": "Bens de pq. Valor e depreciação",
+   "actual": "(792)",
+   "anterior": "(800)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 442,
+   "etiqueta": "Direito de imagem",
+   "actual": "(6.684)",
+   "anterior": "(9.820)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 443,
+   "etiqueta": "Gerais e Adm.",
+   "actual": "(2.146)",
+   "anterior": "(2.638)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 444,
+   "etiqueta": "Tributárias",
+   "actual": "(234)",
+   "anterior": "(181)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 445,
+   "etiqueta": "Resultado Antes dos outros resultados operacionais",
+   "actual": "1.003",
+   "anterior": "(14.145)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 446,
+   "etiqueta": "Outros Resultados Operacionais",
+   "actual": "307",
+   "anterior": "(37.714)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 447,
+   "etiqueta": "Resultado Antes das Despesas e Receitas Financeiras",
+   "actual": "1.310",
+   "anterior": "(51.860)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 448,
+   "etiqueta": "Receitas Financeiras",
+   "actual": "6.491",
+   "anterior": "618",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 449,
+   "etiqueta": "Despesas Financeiras",
+   "actual": "(1.667)",
+   "anterior": "(8.836)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 450,
+   "etiqueta": "Superávit/ Déficit do Exercício",
+   "actual": "6.134",
+   "anterior": "(60.078)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 451,
+   "etiqueta": "Atribuído aos controladores",
+   "actual": "5.710",
+   "anterior": "(60.030)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 452,
+   "etiqueta": "Atribuído aos não controladores",
+   "actual": "424",
+   "anterior": "(48)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b43",
+   "linea": 1687,
+   "etiqueta": "Receita de Transmissão",
+   "actual": "102",
+   "anterior": "41.597",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita Operacional Líquida"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1688,
+   "etiqueta": "Bilheteria",
+   "actual": "1.756",
+   "anterior": "498",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita Operacional Líquida"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1689,
+   "etiqueta": "Patrocínio",
+   "actual": "12.897",
+   "anterior": "13.478",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita Operacional Líquida"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1690,
+   "etiqueta": "Receita de Negociação de Atletas",
+   "actual": "10.605",
+   "anterior": "8.609",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita Operacional Líquida"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1691,
+   "etiqueta": "Sócio Torcedor",
+   "actual": "3.556",
+   "anterior": "5.535",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita Operacional Líquida"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1692,
+   "etiqueta": "Receita Categoria Base",
+   "actual": "195",
+   "anterior": "48",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita Operacional Líquida"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1693,
+   "etiqueta": "Royalties/Direito de Uso de Marca/Venda de Produtos",
+   "actual": "5.867",
+   "anterior": "5.064",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita Operacional Líquida"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1694,
+   "etiqueta": "Outras Receitas",
+   "actual": "192",
+   "anterior": "1.127",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita Operacional Líquida"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1695,
+   "etiqueta": "Doações/PAF",
+   "actual": "202",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita Operacional Líquida"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1696,
+   "etiqueta": "Receita Federações",
+   "actual": "3.558",
+   "anterior": "1.923",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita Operacional Líquida"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1697,
+   "etiqueta": "Deduções Tributárias e Sindicais",
+   "actual": "(2.523)",
+   "anterior": "(5.400)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita Operacional Líquida"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1698,
+   "etiqueta": "Total",
+   "actual": "36.407",
+   "anterior": "72.479",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Receita Operacional Líquida"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1861,
+   "etiqueta": "Descontos Obtidos",
+   "actual": "5,0",
+   "anterior": "50",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas Financeiras"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1862,
+   "etiqueta": "Juros Recebidos",
+   "actual": "9,0",
+   "anterior": "14",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas Financeiras"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1863,
+   "etiqueta": "Provisão Variacoes Monetarias Ativas",
+   "actual": "-",
+   "anterior": "94",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas Financeiras"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1864,
+   "etiqueta": "Receitas de Aplicacoes Financeiras",
+   "actual": "697",
+   "anterior": "71",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas Financeiras"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1865,
+   "etiqueta": "Variacoes Monetarias Ativas",
+   "actual": "27",
+   "anterior": "389",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas Financeiras"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1866,
+   "etiqueta": "Desconto Transação Excepcional PGFN",
+   "actual": "5.753",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas Financeiras"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1867,
+   "etiqueta": "Outras Receitas",
+   "actual": "23",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas Financeiras"
+  },
+  {
+   "bloque": "b51",
+   "linea": 1868,
+   "etiqueta": "Total",
+   "actual": "6.491",
+   "anterior": "618",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Receitas Financeiras"
+  },
+  {
+   "bloque": "b53",
+   "linea": 1902,
+   "etiqueta": "Dividendos Recebidos",
+   "actual": "-",
+   "anterior": "28",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Outros Resultados Operacionais"
+  },
+  {
+   "bloque": "b53",
+   "linea": 1903,
+   "etiqueta": "Outras Receitas Não Operacionais",
+   "actual": "-",
+   "anterior": "367",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Outros Resultados Operacionais"
+  },
+  {
+   "bloque": "b53",
+   "linea": 1904,
+   "etiqueta": "Recuperação de Despesas",
+   "actual": "69",
+   "anterior": "877",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Outros Resultados Operacionais"
+  },
+  {
+   "bloque": "b53",
+   "linea": 1905,
+   "etiqueta": "Reversão de Provisão",
+   "actual": "238",
+   "anterior": "3.092",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Outros Resultados Operacionais"
+  },
+  {
+   "bloque": "b53",
+   "linea": 1906,
+   "etiqueta": "Venda de Imobilizado",
+   "actual": "-",
+   "anterior": "101",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Outros Resultados Operacionais"
+  },
+  {
+   "bloque": "b53",
+   "linea": 1907,
+   "etiqueta": "Total",
+   "actual": "307",
+   "anterior": "4.465",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": "Outros Resultados Operacionais"
+  },
+  {
+   "bloque": "b53",
+   "linea": 1910,
+   "etiqueta": "Custo dos Bens Patrimoniais Vendidos",
+   "actual": "-",
+   "anterior": "(82)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Outros Resultados Operacionais"
+  },
+  {
+   "bloque": "b53",
+   "linea": 1911,
+   "etiqueta": "Acidente Aéreo Chapecoense",
+   "actual": "-",
+   "anterior": "(42.060)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Outros Resultados Operacionais"
+  },
+  {
+   "bloque": "b53",
+   "linea": 1912,
+   "etiqueta": "Equivalência patrimonial",
+   "actual": "-",
+   "anterior": "(37)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Outros Resultados Operacionais"
+  },
+  {
+   "bloque": "b53",
+   "linea": 1913,
+   "etiqueta": "Total",
+   "actual": "-",
+   "anterior": "(42.179)",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": "Outros Resultados Operacionais"
+  },
+  {
+   "bloque": "b53",
+   "linea": 1913,
+   "etiqueta": "Outros Resultados Operacionais",
+   "actual": "307",
+   "anterior": "(37.714)",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": "Outros Resultados Operacionais"
+  },
+  {
+   "bloque": "b45",
+   "linea": 1732,
+   "etiqueta": "Ordenados e Salários",
+   "actual": "(8.777)",
+   "anterior": "(24.852)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pessoal"
+  },
+  {
+   "bloque": "b45",
+   "linea": 1733,
+   "etiqueta": "Premiação",
+   "actual": "-",
+   "anterior": "(4.226)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pessoal"
+  },
+  {
+   "bloque": "b45",
+   "linea": 1734,
+   "etiqueta": "INSS/FGTS/PIS",
+   "actual": "(1.403)",
+   "anterior": "(4.183)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pessoal"
+  },
+  {
+   "bloque": "b45",
+   "linea": 1735,
+   "etiqueta": "Amortização Direitos Fed. Econ.",
+   "actual": "-",
+   "anterior": "(2.175)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pessoal"
+  },
+  {
+   "bloque": "b45",
+   "linea": 1736,
+   "etiqueta": "Despesas com Transf. Jogadores",
+   "actual": "(3.983)",
+   "anterior": "(136)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pessoal"
+  },
+  {
+   "bloque": "b45",
+   "linea": 1737,
+   "etiqueta": "Indenizações",
+   "actual": "(751)",
+   "anterior": "(16.042)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pessoal"
+  },
+  {
+   "bloque": "b45",
+   "linea": 1738,
+   "etiqueta": "Alimentação",
+   "actual": "-",
+   "anterior": "(125)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pessoal"
+  },
+  {
+   "bloque": "b45",
+   "linea": 1739,
+   "etiqueta": "Despesas Médicas",
+   "actual": "(923)",
+   "anterior": "(2.390)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pessoal"
+  },
+  {
+   "bloque": "b45",
+   "linea": 1740,
+   "etiqueta": "Seguros",
+   "actual": "-",
+   "anterior": "(563)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pessoal"
+  },
+  {
+   "bloque": "b45",
+   "linea": 1741,
+   "etiqueta": "Outros Gastos C/ Pessoal",
+   "actual": "(1.002)",
+   "anterior": "(6.420)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pessoal"
+  },
+  {
+   "bloque": "b45",
+   "linea": 1742,
+   "etiqueta": "Total",
+   "actual": "(16.839)",
+   "anterior": "(61.112)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Pessoal"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1765,
+   "etiqueta": "Manutenção Imobilizado",
+   "actual": "(401)",
+   "anterior": "(127)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Manutenção"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1766,
+   "etiqueta": "Manutenção Terceiros",
+   "actual": "(482)",
+   "anterior": "(460)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Manutenção"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1767,
+   "etiqueta": "Manutenção Intangível",
+   "actual": "-",
+   "anterior": "(331)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Manutenção"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1768,
+   "etiqueta": "Total",
+   "actual": "(883)",
+   "anterior": "(918)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Manutenção"
+  },
+  {
+   "bloque": "b47",
+   "linea": 1777,
+   "etiqueta": "Viagens",
+   "actual": "(334)",
+   "anterior": "(2.744)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Jogos e competições"
+  },
+  {
+   "bloque": "b47",
+   "linea": 1778,
+   "etiqueta": "Hospedagens",
+   "actual": "(55)",
+   "anterior": "(153)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Jogos e competições"
+  },
+  {
+   "bloque": "b47",
+   "linea": 1779,
+   "etiqueta": "Gastos com Jogos - Camp. Brasileiro",
+   "actual": "(2.199)",
+   "anterior": "(2.169)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Jogos e competições"
+  },
+  {
+   "bloque": "b47",
+   "linea": 1780,
+   "etiqueta": "Gastos com Jogos - Camp. Catarinense",
+   "actual": "(269)",
+   "anterior": "(552)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Jogos e competições"
+  },
+  {
+   "bloque": "b47",
+   "linea": 1781,
+   "etiqueta": "Gastos com Outros",
+   "actual": "(993)",
+   "anterior": "(69)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Jogos e competições"
+  },
+  {
+   "bloque": "b47",
+   "linea": 1782,
+   "etiqueta": "Total",
+   "actual": "(3.850)",
+   "anterior": "(5.687)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Jogos e competições"
+  },
+  {
+   "bloque": "b48",
+   "linea": 1808,
+   "etiqueta": "Terceiros - Futebol e Comissões",
+   "actual": "(1.498)",
+   "anterior": "(3.016)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Terceiros"
+  },
+  {
+   "bloque": "b48",
+   "linea": 1809,
+   "etiqueta": "Honorários Profissionais",
+   "actual": "(106)",
+   "anterior": "(525)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Terceiros"
+  },
+  {
+   "bloque": "b48",
+   "linea": 1810,
+   "etiqueta": "Outros",
+   "actual": "(2.192)",
+   "anterior": "(935)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Terceiros"
+  },
+  {
+   "bloque": "b48",
+   "linea": 1811,
+   "etiqueta": "Total",
+   "actual": "(3.796)",
+   "anterior": "(4.476)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Terceiros"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1822,
+   "etiqueta": "Direito Imagem",
+   "actual": "(6.684)",
+   "anterior": "(9.820)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Direito de imagem"
+  },
+  {
+   "bloque": "b49",
+   "linea": 1823,
+   "etiqueta": "Total",
+   "actual": "(6.684)",
+   "anterior": "(9.820)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Direito de imagem"
+  },
+  {
+   "bloque": "b50",
+   "linea": 1844,
+   "etiqueta": "Multas e Indenizações",
+   "actual": "(8)",
+   "anterior": "(76)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e Adm."
+  },
+  {
+   "bloque": "b50",
+   "linea": 1845,
+   "etiqueta": "Propaganda e Publicidade",
+   "actual": "(59)",
+   "anterior": "(473)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e Adm."
+  },
+  {
+   "bloque": "b50",
+   "linea": 1846,
+   "etiqueta": "Gastos Logísticos",
+   "actual": "(10)",
+   "anterior": "(116)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e Adm."
+  },
+  {
+   "bloque": "b50",
+   "linea": 1847,
+   "etiqueta": "Doações/Ajudas de Custo",
+   "actual": "(260)",
+   "anterior": "(5)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e Adm."
+  },
+  {
+   "bloque": "b50",
+   "linea": 1848,
+   "etiqueta": "Água, Luz e Telefone",
+   "actual": "(59)",
+   "anterior": "(86)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e Adm."
+  },
+  {
+   "bloque": "b50",
+   "linea": 1849,
+   "etiqueta": "Despesas Bancarias",
+   "actual": "-",
+   "anterior": "(188)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e Adm."
+  },
+  {
+   "bloque": "b50",
+   "linea": 1850,
+   "etiqueta": "Mensalidades/Periódicos",
+   "actual": "-",
+   "anterior": "(22)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e Adm."
+  },
+  {
+   "bloque": "b50",
+   "linea": 1851,
+   "etiqueta": "Demais Gastos",
+   "actual": "(1.750)",
+   "anterior": "(1.672)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e Adm."
+  },
+  {
+   "bloque": "b50",
+   "linea": 1852,
+   "etiqueta": "Total",
+   "actual": "(2.146)",
+   "anterior": "(2.638)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gerais e Adm."
+  },
+  {
+   "bloque": "b52",
+   "linea": 1873,
+   "etiqueta": "Descontos Concedidos",
+   "actual": "(9)",
+   "anterior": "(20)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1874,
+   "etiqueta": "Despesas Bancarias",
+   "actual": "(102)",
+   "anterior": "(15)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1875,
+   "etiqueta": "Juros Pagos",
+   "actual": "(29)",
+   "anterior": "(8.233)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1876,
+   "etiqueta": "Outras Despesas",
+   "actual": "(420)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1877,
+   "etiqueta": "Variacoes Monetarias Passivas",
+   "actual": "(1.107)",
+   "anterior": "(568)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1878,
+   "etiqueta": "Total",
+   "actual": "(1.667)",
+   "anterior": "(8.836)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "bloque": "b52",
+   "linea": 1879,
+   "etiqueta": "Resultado Financeiro",
+   "actual": "4.824",
+   "anterior": "(8.218)",
+   "tipo": "resultado",
+   "lado": "financiero",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 432,
+  "actual": "36.407"
+ },
+ "total_gastos": {
+  "linea": 435,
+  "actual": "(35.224)"
+ },
+ "resultado": {
+  "linea": 450,
+  "actual": "6.134",
+  "anterior": "(60.078)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera las líneas L1867-L1868 repetidas al inicio de b52, ya cargadas desde b51?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Receitas Financeiras",
+   "texto": "b52 repite L1867-L1868 de la nota de receitas financeiras (b51); se cargaron solo una vez.",
+   "bloques": [
+    "b51",
+    "b52"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿En b51 L1861-L1862 los importes '5,0' y '9,0' corresponden a 5 y 9 miles de reais?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "Descontos Obtidos",
+   "texto": "Formato con coma decimal distinto al resto (L1861-L1862); el total 6.491 cuadra con 5 y 9.",
+   "bloques": [
+    "b51"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se acepta que en Consolidado 2022 la equivalência patrimonial (L1912) sea '-' y el total Outras Despesas '-', de modo que Outros Resultados Operacionais = 307?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Outros Resultados Operacionais",
+   "texto": "L1912-L1913 muestran (196) en controladora y '-' en consolidado, coherente con eliminación de consolidación.",
+   "bloques": [
+    "b53",
+    "b7"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Escala de notas no impresa en los bloques; se asume miles por coincidencia de totales con el estado (L427). Las notas no detallan Custos, Materiais, Bens de pq. Valor e depreciação ni Tributárias. No hay impuesto a las ganancias en el estado. Superávit consolidado 6.134 incluye 424 de no controladores."
+}

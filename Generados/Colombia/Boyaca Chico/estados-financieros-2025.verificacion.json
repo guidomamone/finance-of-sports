@@ -1,0 +1,659 @@
+{
+ "pdf": "Clubes/Colombia/Boyaca Chico/estados-financieros-2025.pdf",
+ "md": "Clubes/Colombia/Boyaca Chico/estados-financieros-2025.md",
+ "generado": "2026-10-19T16:42:16.916Z",
+ "estado": "ok",
+ "clubId": "boyacachico-co",
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)",
+   "dif": 1.8758328224066645e-12
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2024 de este documento suma ingresos 8271.453125; el sitio tiene 8264.587487"
+  }
+ ],
+ "notas": [
+  "el desglose de \"Intereses\" (3 filas) no suma la fila: quedó la fila",
+  "escalón \"subtotal repetido\": \"INGRESOS OPERACIONALES\" (L119) repite la fila de abajo \"Ingresos Operacionales-Actividades Deportivas\" (L120); se saltea",
+  "escalón \"subtotal repetido\": cerró la lectura 4 sin contar dos veces el subtotal que repite el renglón de arriba",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de extraer que no afecta la carga: L1008 solo tiene importe en Dic 31-2024 y L1009 'Otros' está vacía.",
+  "duda de extraer que no afecta la carga: El total 587.304.513,00 de L993 coincide con L127 del estado; el título parece error tipográfico."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Intereses",
+   "suma": 84.341959,
+   "objetivo": 0.482126
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Intereses",
+   "suma": 84.341959,
+   "objetivo": 0.482126
+  }
+ ],
+ "totales": {
+  "ingresos": 9305.853883,
+  "gastos": 8718.524882,
+  "financiero": 0,
+  "impuesto": 205.56515,
+  "resultadoImpreso": 381.763851,
+  "resultadoParaCargar": 381.763851,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Taquilla Venta Boletería Masculina",
+   "lado": "ingreso",
+   "M": 245,
+   "pagina": 16,
+   "linea": 770,
+   "origen": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\""
+  },
+  {
+   "etiqueta": "Ingresos por Derechos de Televisión",
+   "lado": "ingreso",
+   "M": 6687.645665,
+   "pagina": 16,
+   "linea": 771,
+   "origen": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\""
+  },
+  {
+   "etiqueta": "Ingresos por auxilio Hotelero - Dimayor",
+   "lado": "ingreso",
+   "M": 522.512521,
+   "pagina": 16,
+   "linea": 772,
+   "origen": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\""
+  },
+  {
+   "etiqueta": "Ingresos por auxilio de Transportes - Dimayor",
+   "lado": "ingreso",
+   "M": 102.23727,
+   "pagina": 16,
+   "linea": 773,
+   "origen": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\""
+  },
+  {
+   "etiqueta": "Ingresos por auxilio de Arbitraje - Dimayor",
+   "lado": "ingreso",
+   "M": 288.507004,
+   "pagina": 16,
+   "linea": 774,
+   "origen": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\""
+  },
+  {
+   "etiqueta": "Ventas por Auxilio de Logística - Dimayor",
+   "lado": "ingreso",
+   "M": 168.63,
+   "pagina": 16,
+   "linea": 775,
+   "origen": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\""
+  },
+  {
+   "etiqueta": "Ingresos por Auxilio de Mejoramientos - Dimayor",
+   "lado": "ingreso",
+   "M": 144,
+   "pagina": 16,
+   "linea": 776,
+   "origen": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\""
+  },
+  {
+   "etiqueta": "Ingresos por Auxilios - Federación Colombiana de Futbol",
+   "lado": "ingreso",
+   "M": 90,
+   "pagina": 16,
+   "linea": 777,
+   "origen": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\""
+  },
+  {
+   "etiqueta": "Ingresos por Patrocinios recibidos de terceros",
+   "lado": "ingreso",
+   "M": 119.958707,
+   "pagina": 16,
+   "linea": 778,
+   "origen": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\""
+  },
+  {
+   "etiqueta": "Ingresos por Servicios de Publicidad",
+   "lado": "ingreso",
+   "M": 1686.71539,
+   "pagina": 16,
+   "linea": 779,
+   "origen": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\""
+  },
+  {
+   "etiqueta": "Ingresos Videos Oficiales Apuestas 2024",
+   "lado": "ingreso",
+   "M": 90.72,
+   "pagina": 16,
+   "linea": 782,
+   "origen": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\""
+  },
+  {
+   "etiqueta": "Menos: Devoluciones",
+   "lado": "ingreso",
+   "M": -1508.981558,
+   "pagina": 16,
+   "linea": 783,
+   "origen": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\""
+  },
+  {
+   "etiqueta": "Intereses",
+   "lado": "ingreso",
+   "M": 0.482126,
+   "pagina": 17,
+   "linea": 839,
+   "origen": "nota que desglosa \"Otros ingresos no operacionales\""
+  },
+  {
+   "etiqueta": "Pasarelas",
+   "lado": "ingreso",
+   "M": 1.839405,
+   "pagina": 17,
+   "linea": 842,
+   "origen": "nota que desglosa \"Otros ingresos no operacionales\""
+  },
+  {
+   "etiqueta": "Sanitas",
+   "lado": "ingreso",
+   "M": 1.213333,
+   "pagina": 17,
+   "linea": 845,
+   "origen": "nota que desglosa \"Otros ingresos no operacionales\" > desglose de \"Incapacidades por Eps y otras\""
+  },
+  {
+   "etiqueta": "Seguros de Vida Suramericana",
+   "lado": "ingreso",
+   "M": 19.689215,
+   "pagina": 17,
+   "linea": 846,
+   "origen": "nota que desglosa \"Otros ingresos no operacionales\" > desglose de \"Incapacidades por Eps y otras\""
+  },
+  {
+   "etiqueta": "La Equidad Seguros de Vida",
+   "lado": "ingreso",
+   "M": 4.5472,
+   "pagina": 18,
+   "linea": 870,
+   "origen": "nota que desglosa \"Otros ingresos no operacionales\" > desglose de \"Incapacidades por Eps y otras\""
+  },
+  {
+   "etiqueta": "Ingresos Federación Colombiana de Futbol",
+   "lado": "ingreso",
+   "M": 641.1295,
+   "pagina": 18,
+   "linea": 875,
+   "origen": "nota que desglosa \"Otros ingresos no operacionales\""
+  },
+  {
+   "etiqueta": "Otros Ingresos",
+   "lado": "ingreso",
+   "M": 0.008105,
+   "pagina": 18,
+   "linea": 877,
+   "origen": "nota que desglosa \"Otros ingresos no operacionales\""
+  },
+  {
+   "etiqueta": "Salarios",
+   "lado": "gasto",
+   "M": 1409.83105,
+   "pagina": 16,
+   "linea": 792,
+   "origen": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\""
+  },
+  {
+   "etiqueta": "Cesantías",
+   "lado": "gasto",
+   "M": 123.601345,
+   "pagina": 16,
+   "linea": 793,
+   "origen": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\""
+  },
+  {
+   "etiqueta": "Intereses Sobre Cesantías",
+   "lado": "gasto",
+   "M": 14.832177,
+   "pagina": 16,
+   "linea": 794,
+   "origen": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\""
+  },
+  {
+   "etiqueta": "Prima de Servicios",
+   "lado": "gasto",
+   "M": 123.601345,
+   "pagina": 17,
+   "linea": 815,
+   "origen": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\""
+  },
+  {
+   "etiqueta": "Vacaciones",
+   "lado": "gasto",
+   "M": 60.407571,
+   "pagina": 17,
+   "linea": 817,
+   "origen": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\""
+  },
+  {
+   "etiqueta": "Aportes ARP",
+   "lado": "gasto",
+   "M": 34.24774,
+   "pagina": 17,
+   "linea": 821,
+   "origen": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\""
+  },
+  {
+   "etiqueta": "Aportes a Fondo de Pensiones",
+   "lado": "gasto",
+   "M": 174.618718,
+   "pagina": 17,
+   "linea": 822,
+   "origen": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\""
+  },
+  {
+   "etiqueta": "Aportes Caja, ICBF, SENA",
+   "lado": "gasto",
+   "M": 58.756939,
+   "pagina": 17,
+   "linea": 823,
+   "origen": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\""
+  },
+  {
+   "etiqueta": "Auxilio de Transporte",
+   "lado": "gasto",
+   "M": 35.186665,
+   "pagina": 17,
+   "linea": 824,
+   "origen": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\""
+  },
+  {
+   "etiqueta": "Incapacidades",
+   "lado": "gasto",
+   "M": 17.6572,
+   "pagina": 17,
+   "linea": 825,
+   "origen": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\""
+  },
+  {
+   "etiqueta": "Bonificaciones",
+   "lado": "gasto",
+   "M": 2.451766,
+   "pagina": 17,
+   "linea": 826,
+   "origen": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\""
+  },
+  {
+   "etiqueta": "Otros Honorarios (*)",
+   "lado": "gasto",
+   "M": 3873.450354,
+   "pagina": 17,
+   "linea": 828,
+   "origen": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\""
+  },
+  {
+   "etiqueta": "Gastos de Personal",
+   "lado": "gasto",
+   "M": 1409.939916,
+   "pagina": 18,
+   "linea": 887,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Revisoría Fiscal",
+   "lado": "gasto",
+   "M": 22.25,
+   "pagina": 18,
+   "linea": 889,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Honorarios\""
+  },
+  {
+   "etiqueta": "Asesoría Jurídica",
+   "lado": "gasto",
+   "M": 126.685,
+   "pagina": 18,
+   "linea": 890,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Honorarios\""
+  },
+  {
+   "etiqueta": "Asesoría Contable",
+   "lado": "gasto",
+   "M": 48,
+   "pagina": 18,
+   "linea": 891,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Honorarios\""
+  },
+  {
+   "etiqueta": "Impuestos",
+   "lado": "gasto",
+   "M": 0.270966,
+   "pagina": 18,
+   "linea": 892,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Arrendamientos",
+   "lado": "gasto",
+   "M": 41.15192,
+   "pagina": 18,
+   "linea": 894,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 3,
+   "pagina": 18,
+   "linea": 896,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Servicio de Aseo",
+   "lado": "gasto",
+   "M": 2.0837,
+   "pagina": 18,
+   "linea": 899,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Servicios\""
+  },
+  {
+   "etiqueta": "Teléfono Fijo",
+   "lado": "gasto",
+   "M": 0.142145,
+   "pagina": 18,
+   "linea": 900,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Servicios\""
+  },
+  {
+   "etiqueta": "Teléfono Celular",
+   "lado": "gasto",
+   "M": 0.220745,
+   "pagina": 19,
+   "linea": 928,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Servicios\""
+  },
+  {
+   "etiqueta": "Correo, portes y telegramas",
+   "lado": "gasto",
+   "M": 0.135,
+   "pagina": 19,
+   "linea": 930,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Servicios\""
+  },
+  {
+   "etiqueta": "Transporte Fletes y Acarreos",
+   "lado": "gasto",
+   "M": 2.752898,
+   "pagina": 19,
+   "linea": 932,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Servicios\""
+  },
+  {
+   "etiqueta": "Otros",
+   "lado": "gasto",
+   "M": 0.838317,
+   "pagina": 19,
+   "linea": 933,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Servicios\""
+  },
+  {
+   "etiqueta": "Gastos Notariales",
+   "lado": "gasto",
+   "M": 0.34218,
+   "pagina": 19,
+   "linea": 935,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Gastos Legales\""
+  },
+  {
+   "etiqueta": "Registro mercantil",
+   "lado": "gasto",
+   "M": 0.974386,
+   "pagina": 19,
+   "linea": 936,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Gastos Legales\""
+  },
+  {
+   "etiqueta": "Mantenimiento Construcciones",
+   "lado": "gasto",
+   "M": 0.298,
+   "pagina": 19,
+   "linea": 938,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Mantenimiento y Reparaciones\""
+  },
+  {
+   "etiqueta": "Equipo Computación y comunicación",
+   "lado": "gasto",
+   "M": 0.17,
+   "pagina": 19,
+   "linea": 939,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Mantenimiento y Reparaciones\""
+  },
+  {
+   "etiqueta": "Clase A",
+   "lado": "gasto",
+   "M": 423.999996,
+   "pagina": 19,
+   "linea": 941,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Amortizaciones\""
+  },
+  {
+   "etiqueta": "Clase B",
+   "lado": "gasto",
+   "M": 32.049996,
+   "pagina": 19,
+   "linea": 942,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Amortizaciones\""
+  },
+  {
+   "etiqueta": "Derechos de Uso",
+   "lado": "gasto",
+   "M": 3.553164,
+   "pagina": 19,
+   "linea": 943,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Amortizaciones\""
+  },
+  {
+   "etiqueta": "Construcciones y edificaciones",
+   "lado": "gasto",
+   "M": 72.5265,
+   "pagina": 19,
+   "linea": 945,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Depreciación\""
+  },
+  {
+   "etiqueta": "Flota y Equipo Transporte",
+   "lado": "gasto",
+   "M": 6.819068,
+   "pagina": 19,
+   "linea": 946,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Depreciación\""
+  },
+  {
+   "etiqueta": "Elementos Aseo",
+   "lado": "gasto",
+   "M": 0.53353,
+   "pagina": 19,
+   "linea": 948,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Diversos\""
+  },
+  {
+   "etiqueta": "Elementos Cafetería",
+   "lado": "gasto",
+   "M": 1.672907,
+   "pagina": 19,
+   "linea": 949,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Diversos\""
+  },
+  {
+   "etiqueta": "Útiles Papelería",
+   "lado": "gasto",
+   "M": 0.3963,
+   "pagina": 19,
+   "linea": 950,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Diversos\""
+  },
+  {
+   "etiqueta": "Fotocopias",
+   "lado": "gasto",
+   "M": 0.0027,
+   "pagina": 19,
+   "linea": 951,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Diversos\""
+  },
+  {
+   "etiqueta": "Combustibles",
+   "lado": "gasto",
+   "M": 0.408336,
+   "pagina": 19,
+   "linea": 952,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Diversos\""
+  },
+  {
+   "etiqueta": "Estampilla al Adulto Mayor 2%",
+   "lado": "gasto",
+   "M": 0.884034,
+   "pagina": 19,
+   "linea": 953,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Diversos\""
+  },
+  {
+   "etiqueta": "Estampilla Electrificadora Rural 1%",
+   "lado": "gasto",
+   "M": 0.442016,
+   "pagina": 19,
+   "linea": 954,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Diversos\""
+  },
+  {
+   "etiqueta": "casino y restaurante",
+   "lado": "gasto",
+   "M": 0.025,
+   "pagina": 19,
+   "linea": 955,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Diversos\""
+  },
+  {
+   "etiqueta": "Otros gastos",
+   "lado": "gasto",
+   "M": 0.008779,
+   "pagina": 19,
+   "linea": 956,
+   "origen": "nota que desglosa \"Gastos de administración\" > desglose de \"Diversos\""
+  },
+  {
+   "etiqueta": "Gastos de ventas",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 3,
+   "linea": 126,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos Bancarios",
+   "lado": "gasto",
+   "M": 0.794865,
+   "pagina": 20,
+   "linea": 995,
+   "origen": "nota que desglosa \"Otros gastos no operacionales\" > desglose de \"Financieros\""
+  },
+  {
+   "etiqueta": "Gravamen 4 * 1000",
+   "lado": "gasto",
+   "M": 22.341646,
+   "pagina": 20,
+   "linea": 996,
+   "origen": "nota que desglosa \"Otros gastos no operacionales\" > desglose de \"Financieros\""
+  },
+  {
+   "etiqueta": "Comisiones",
+   "lado": "gasto",
+   "M": 0.708112,
+   "pagina": 20,
+   "linea": 997,
+   "origen": "nota que desglosa \"Otros gastos no operacionales\""
+  },
+  {
+   "etiqueta": "Intereses",
+   "lado": "gasto",
+   "M": 83.859833,
+   "pagina": 20,
+   "linea": 999,
+   "origen": "nota que desglosa \"Otros gastos no operacionales\""
+  },
+  {
+   "etiqueta": "IVA Bancario",
+   "lado": "gasto",
+   "M": 0.179534,
+   "pagina": 20,
+   "linea": 1002,
+   "origen": "nota que desglosa \"Otros gastos no operacionales\""
+  },
+  {
+   "etiqueta": "Sanciones DIAN",
+   "lado": "gasto",
+   "M": 28.533,
+   "pagina": 20,
+   "linea": 1005,
+   "origen": "nota que desglosa \"Otros gastos no operacionales\" > desglose de \"Multas Sanciones y Litigios\""
+  },
+  {
+   "etiqueta": "Multas SIC",
+   "lado": "gasto",
+   "M": 315.374691,
+   "pagina": 20,
+   "linea": 1006,
+   "origen": "nota que desglosa \"Otros gastos no operacionales\" > desglose de \"Multas Sanciones y Litigios\""
+  },
+  {
+   "etiqueta": "Embargos Colpensiones",
+   "lado": "gasto",
+   "M": 135.512832,
+   "pagina": 20,
+   "linea": 1007,
+   "origen": "nota que desglosa \"Otros gastos no operacionales\" > desglose de \"Multas Sanciones y Litigios\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [],
+ "impuesto": [
+  {
+   "etiqueta": "Gasto por impuesto a las ganancias",
+   "M": -205.56515,
+   "linea": 129
+  }
+ ]
+}

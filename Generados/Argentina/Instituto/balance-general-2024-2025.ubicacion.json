@@ -1,0 +1,220 @@
+{
+ "pdf": "Clubes/Argentina/Instituto/balance-general-2024-2025.pdf",
+ "md": "Clubes/Argentina/Instituto/balance-general-2024-2025.md",
+ "mdSha1": "974dc96c9fc762b20ee3b41077cd780fb2d1fada",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:34:39.834Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    16,
+    22
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    45,
+    62
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    82,
+    100
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    127,
+    132
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    159,
+    190
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    332,
+    342
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    346,
+    349
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 8,
+   "lineas": [
+    353,
+    358
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 8,
+   "lineas": [
+    362,
+    366
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 8,
+   "lineas": [
+    370,
+    374
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 8,
+   "lineas": [
+    378,
+    384
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 9,
+   "lineas": [
+    413,
+    421
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 9,
+   "lineas": [
+    425,
+    431
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 9,
+   "lineas": [
+    435,
+    437
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 10,
+   "lineas": [
+    482,
+    490
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 11,
+   "lineas": [
+    525,
+    552
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 13,
+   "lineas": [
+    614,
+    623
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 14,
+   "lineas": [
+    652,
+    657
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 15,
+   "lineas": [
+    684,
+    701
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 16,
+   "lineas": [
+    728,
+    738
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 17,
+   "lineas": [
+    767,
+    783
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 20,
+   "lineas": [
+    863,
+    869
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b19"
+ ],
+ "notas_gastos": [
+  "b20",
+  "b21",
+  "b13",
+  "b14"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Expresado en moneda homogénea- Pesos sin centavos - a la fecha de cierre - NOTA Nº 1)",
+ "moneda": "ARS",
+ "columna_ejercicio": "2.025",
+ "columna_anterior": "2.024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se usan las columnas por sector (Fútbol, Básquet, La Agustina, Sede, Colegio, Tienda) del Anexo V solo como detalle, cargando los totales por concepto de la columna 2025?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "Gastos específicos de sectores",
+   "texto": "El Anexo V (b21) abre los gastos por concepto y por sector; los conceptos ya desglosan el renglón del estado, las columnas por sector son adicionales.",
+   "bloques": [
+    "b21"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de Recursos y Gastos individual del club (b3), en pesos sin centavos en moneda homogénea al 30/06/2025. Anexo III (b19) abre recursos ordinarios por fines generales/específicos; Anexo IV (b20) gastos generales de administración; Anexo V (b21) gastos específicos por sector; Nota 2.8 (b13) resultados financieros y RECPAM; Nota 2.9 (b14) gastos extraordinarios. Se excluyen balance, EEPN, flujo, bienes de uso, intangibles, pasivo concursal y resumen del auditor (b22)."
+}

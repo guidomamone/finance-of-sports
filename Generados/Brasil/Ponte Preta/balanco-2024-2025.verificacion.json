@@ -1,0 +1,240 @@
+{
+ "pdf": "Clubes/Brasil/Ponte Preta/balanco-2024-2025.pdf",
+ "md": "Clubes/Brasil/Ponte Preta/balanco-2024-2025.md",
+ "generado": "2026-10-19T16:42:17.457Z",
+ "estado": "cola",
+ "clubId": "pontepreta-br",
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "e38b85e",
+  "c9f34f1"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)",
+   "dif": 9.999999974752427e-7
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2024 de este documento suma ingresos 79.650568; el sitio tiene 79.650568"
+  }
+ ],
+ "notas": [
+  "escalón \"nota exacta en la lectura 5\": \"Profissional\" (L64) se abre en las 6 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 5\": \"Profissional\" (L72) se abre en las 5 filas de su nota, que suman exacto el renglón",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Profissional\"): ¿Se deja afuera de la carga el cuadro 18.(b) (L485-L489) por duplicar el desglose de 'Profissional' ya cargado de L427-L431?",
+  "duda de extraer que no afecta la carga: Sin importe 2025 impreso; la suma de los demás renglones da 18.438.396 (L422)."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 23.571331,
+  "gastos": 57.111402,
+  "financiero": 0.0357,
+  "impuesto": 0,
+  "resultadoImpreso": -33.57577,
+  "resultadoParaCargar": -33.57577,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Quotas Globo-Camp.Brasileiro",
+   "lado": "ingreso",
+   "M": 1.660015,
+   "pagina": 6,
+   "linea": 413,
+   "origen": "nota que desglosa \"Profissional\""
+  },
+  {
+   "etiqueta": "Quotas F.P.F",
+   "lado": "ingreso",
+   "M": 9.1175,
+   "pagina": 6,
+   "linea": 414,
+   "origen": "nota que desglosa \"Profissional\""
+  },
+  {
+   "etiqueta": "Premiação Campeonato Paulista",
+   "lado": "ingreso",
+   "M": 0.2,
+   "pagina": 6,
+   "linea": 415,
+   "origen": "nota que desglosa \"Profissional\""
+  },
+  {
+   "etiqueta": "Quotas Copa do Brasil-CBF",
+   "lado": "ingreso",
+   "M": 0.83,
+   "pagina": 6,
+   "linea": 417,
+   "origen": "nota que desglosa \"Profissional\""
+  },
+  {
+   "etiqueta": "Publicidade/Propaganda",
+   "lado": "ingreso",
+   "M": 4.240984,
+   "pagina": 6,
+   "linea": 419,
+   "origen": "nota que desglosa \"Profissional\""
+  },
+  {
+   "etiqueta": "Solidariedade / Compensação Formação",
+   "lado": "ingreso",
+   "M": 2.389897,
+   "pagina": 6,
+   "linea": 420,
+   "origen": "nota que desglosa \"Profissional\""
+  },
+  {
+   "etiqueta": "Administrativo - Estado",
+   "lado": "ingreso",
+   "M": 1.398765,
+   "pagina": 2,
+   "linea": 65,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Administrativo - Jd Paineiras",
+   "lado": "ingreso",
+   "M": 0.053848,
+   "pagina": 2,
+   "linea": 66,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Administrativo - Amador",
+   "lado": "ingreso",
+   "M": 0.988322,
+   "pagina": 2,
+   "linea": 67,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Social / Outras",
+   "lado": "ingreso",
+   "M": 2.692,
+   "pagina": 2,
+   "linea": 68,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Salários e Encargos /Outros",
+   "lado": "gasto",
+   "M": 19.158725,
+   "pagina": 6,
+   "linea": 427,
+   "origen": "nota que desglosa \"Profissional\""
+  },
+  {
+   "etiqueta": "Serviços de Terceiros",
+   "lado": "gasto",
+   "M": 3.0665,
+   "pagina": 6,
+   "linea": 428,
+   "origen": "nota que desglosa \"Profissional\""
+  },
+  {
+   "etiqueta": "Despesas com Jogos",
+   "lado": "gasto",
+   "M": 5.573721,
+   "pagina": 6,
+   "linea": 429,
+   "origen": "nota que desglosa \"Profissional\""
+  },
+  {
+   "etiqueta": "Demais Gastos",
+   "lado": "gasto",
+   "M": 14.887655,
+   "pagina": 6,
+   "linea": 430,
+   "origen": "nota que desglosa \"Profissional\""
+  },
+  {
+   "etiqueta": "Diferencia de redondeo",
+   "lado": "gasto",
+   "M": 0.000001,
+   "linea": 72,
+   "origen": "nota que desglosa \"Profissional\""
+  },
+  {
+   "etiqueta": "Administrativo - Estado",
+   "lado": "gasto",
+   "M": 3.680125,
+   "pagina": 2,
+   "linea": 73,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Administrativo - Jd Paineiras",
+   "lado": "gasto",
+   "M": 0.51094,
+   "pagina": 2,
+   "linea": 74,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Administrativo - Jd Eulina",
+   "lado": "gasto",
+   "M": 0.480674,
+   "pagina": 2,
+   "linea": 75,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Amador",
+   "lado": "gasto",
+   "M": 3.4534,
+   "pagina": 2,
+   "linea": 76,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Depreciação/Amortizacao/Contingencia/Pept/Cnrd",
+   "lado": "gasto",
+   "M": 6.299661,
+   "pagina": 2,
+   "linea": 78,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Resultado Financeiro Líquido",
+   "M": -0.0357,
+   "linea": 69
+  }
+ ],
+ "impuesto": []
+}

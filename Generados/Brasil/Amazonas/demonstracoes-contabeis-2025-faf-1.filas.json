@@ -1,0 +1,383 @@
+{
+ "pdf": "Clubes/Brasil/Amazonas/demonstracoes-contabeis-2025-faf-1.pdf",
+ "md": "Clubes/Brasil/Amazonas/demonstracoes-contabeis-2025-faf-1.md",
+ "mdSha1": "184eea8bfe9c0e67f6b75d6606512f942b0bf6d7",
+ "ubicacionSha1": "75aacc56135bd15b8b98c0dae3f48a3c0400ca95",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:12:27.726Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b21"
+  ],
+  "notas_gastos": [
+   "b22"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "No se indica escala; importes con centavos (ej. 1.999.260,50) indican reais en unidades"
+  },
+  {
+   "bloque": "b21",
+   "escala": "unidades",
+   "evidencia": "No se indica escala; importes con centavos (1.022,85) coinciden con el estado"
+  },
+  {
+   "bloque": "b22",
+   "escala": "unidades",
+   "evidencia": "No se indica escala; importes con centavos (100.221,33) coinciden con el estado"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 118,
+   "etiqueta": "RENDAS DE COMPETIÇÕES",
+   "actual": "1.999.260,50",
+   "anterior": "2.502.264,43",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 119,
+   "etiqueta": "SUBVENÇÕES E DOAÇÕES",
+   "actual": "6.748.288,75",
+   "anterior": "6.750.690,23",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 120,
+   "etiqueta": "PATROCÍNIOS",
+   "actual": "350.000,00",
+   "anterior": "61.800,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 121,
+   "etiqueta": "=RECEITA",
+   "actual": "9.097.549,25",
+   "anterior": "9.314.754,66",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 122,
+   "etiqueta": "= RECEITAS LÍQUIDA",
+   "actual": "9.097.549,25",
+   "anterior": "9.314.754,66",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 124,
+   "etiqueta": "CUSTO COM EVENTOS ESPORTIVOS",
+   "actual": "6.642.211,30",
+   "anterior": "6.296.770,46",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 125,
+   "etiqueta": "=CUSTO COM EVENTOS ESPORTIVOS",
+   "actual": "6.642.211,30",
+   "anterior": "6.296.770,46",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 126,
+   "etiqueta": "LUCRO BRUTO",
+   "actual": "2.455.337,95",
+   "anterior": "3.017.984,20",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 128,
+   "etiqueta": "DESPESAS GERAIS",
+   "actual": "1.794.233,00",
+   "anterior": "2.276.864,58",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 129,
+   "etiqueta": "DESPESAS COM PESSOAL",
+   "actual": "354.901,18",
+   "anterior": "407.255,77",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 130,
+   "etiqueta": "IMPOSTOS E TAXAS",
+   "actual": "63.834,29",
+   "anterior": "99.814,24",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 131,
+   "etiqueta": "DEPRECIAÇÃO E AMORTIZAÇÃO",
+   "actual": "46.163,30",
+   "anterior": "32.928,70",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 132,
+   "etiqueta": "= DESPESAS OPERACIONAIS",
+   "actual": "2.259.131,77",
+   "anterior": "2.816.863,29",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 133,
+   "etiqueta": "RESULTADO OPERACIONAL ANTES DO RESULTADO FINANCEIRO",
+   "actual": "196.206,18",
+   "anterior": "201.120,91",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 135,
+   "etiqueta": "( - ) DESPESAS FINANCEIRAS",
+   "actual": "100.221,33",
+   "anterior": "23.141,72",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 136,
+   "etiqueta": "RECEITAS FINANCEIRAS",
+   "actual": "1.022,85",
+   "anterior": "13.652,39",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 137,
+   "etiqueta": "=RESULTADOS FINANCEIROS LÍQUIDOS",
+   "actual": "-99.198,48",
+   "anterior": "-9.489,33",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 138,
+   "etiqueta": "RESULTADO ANTES DAS DESPESAS COM TRIBUTOS SOBRE O LUCRO",
+   "actual": "97.007,70",
+   "anterior": "191.631,58",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 139,
+   "etiqueta": "( - ) DESPESA COM IMPOSTO DE RENDA PESSOA JURÍDICA",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 140,
+   "etiqueta": "( - ) DESPESAS COM CONTRIBUIÇÃO SOCIAL",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 141,
+   "etiqueta": "=TRIBUTOS SOBRE O LUCRO",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 142,
+   "etiqueta": "=RESULTADO LÍQUIDO DO PERÍODO",
+   "actual": "97.007,70",
+   "anterior": "191.631,58",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 473,
+   "etiqueta": "(+) Rendimento de Aplicação Financeira",
+   "actual": "1.022,15",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "RECEITAS FINANCEIRAS"
+  },
+  {
+   "bloque": "b21",
+   "linea": 475,
+   "etiqueta": "(+) Descontos Obtidos",
+   "actual": "0,70",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "RECEITAS FINANCEIRAS"
+  },
+  {
+   "bloque": "b21",
+   "linea": 476,
+   "etiqueta": "(=) Soma das receitas financeiras",
+   "actual": "1.022,85",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "RECEITAS FINANCEIRAS"
+  },
+  {
+   "bloque": "b22",
+   "linea": 480,
+   "etiqueta": "(-) IRRF s/ Aplicações",
+   "actual": "229,38",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "( - ) DESPESAS FINANCEIRAS"
+  },
+  {
+   "bloque": "b22",
+   "linea": 482,
+   "etiqueta": "(-) IOF",
+   "actual": "215,72",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "( - ) DESPESAS FINANCEIRAS"
+  },
+  {
+   "bloque": "b22",
+   "linea": 483,
+   "etiqueta": "(-) Juros Passivos",
+   "actual": "2.097,62",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "( - ) DESPESAS FINANCEIRAS"
+  },
+  {
+   "bloque": "b22",
+   "linea": 484,
+   "etiqueta": "(-) Multas Passivas",
+   "actual": "7.186,44",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "( - ) DESPESAS FINANCEIRAS"
+  },
+  {
+   "bloque": "b22",
+   "linea": 485,
+   "etiqueta": "(-) Tarifas Bancárias",
+   "actual": "25.614,39",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "( - ) DESPESAS FINANCEIRAS"
+  },
+  {
+   "bloque": "b22",
+   "linea": 486,
+   "etiqueta": "(-) Juros sobre empréstimos",
+   "actual": "64.877,78",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "( - ) DESPESAS FINANCEIRAS"
+  },
+  {
+   "bloque": "b22",
+   "linea": 487,
+   "etiqueta": "(=) Soma das despesas financeiras",
+   "actual": "100.221,33",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "( - ) DESPESAS FINANCEIRAS"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 121,
+  "actual": "9.097.549,25"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 142,
+  "actual": "97.007,70",
+  "anterior": "191.631,58"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se asume que las notas a-) y b-) (L473-L487), que tienen una sola columna sin encabezado de año, corresponden al Exercício 2025?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "RECEITAS FINANCEIRAS",
+   "texto": "Las notas no indican el ejercicio, pero sus totales (1.022,85 en L476 y 100.221,33 en L487) coinciden con la columna 2025 del estado.",
+   "bloques": [
+    "b21",
+    "b22"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado sin escala explícita; importes en reais con centavos. No hay total de gastos impreso que agrupe costo y despesas operacionais; se resuelve sumando. Las notas solo desglosan el resultado financiero."
+}

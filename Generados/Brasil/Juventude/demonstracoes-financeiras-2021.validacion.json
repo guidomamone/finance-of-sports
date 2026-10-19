@@ -1,0 +1,43 @@
+{
+ "pdf": "Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.pdf",
+ "md": "Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.md",
+ "mdSha1": "1dabc093c0da3f0a004df3eaf17a2e1b79066ba5",
+ "modo": "escaneo",
+ "motivoModo": "el PDF no trae texto usable (0 números, 0 caracteres/pág): escaneo o texto roto",
+ "generado": "2026-10-19T16:36:09.643Z",
+ "fuentes": {
+  "7": "gemini",
+  "15": "gemini",
+  "16": "gemini"
+ },
+ "confirmados": 44,
+ "noConfirmados": [
+  {
+   "bloque": "b20",
+   "pagina": 15,
+   "linea": 499,
+   "numero": "1.534.877,36",
+   "segundaLeyo": "153407736",
+   "sinSegunda": false,
+   "texto": "| Receitas Patrimoniais | 2.522.335,29 | 1.534.877,36 |"
+  },
+  {
+   "bloque": "b21",
+   "pagina": 16,
+   "linea": 515,
+   "numero": "33.655.776,98",
+   "segundaLeyo": "3355577698",
+   "sinSegunda": false,
+   "texto": "| Remuneração, Benefícios, Encargos, Intermediação, Contratação, Empréstimos e Outros | 33.655.776,98 | 10.964.232,22 |"
+  },
+  {
+   "bloque": "b21",
+   "pagina": 16,
+   "linea": 516,
+   "numero": "6.880.702,54",
+   "segundaLeyo": "698070254",
+   "sinSegunda": false,
+   "texto": "| Amortização de direitos e de formação de atletas | 6.880.702,54 | 0,00 |"
+  }
+ ]
+}

@@ -1,0 +1,170 @@
+{
+  "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2025.md",
+  "pdf": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2025.pdf",
+  "club": "colocolo-cl",
+  "year": 2025,
+  "generatedAt": "2026-10-19T16:42:17.004Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ingresos por recaudaciones",
+      "lado": "revenue",
+      "page": 72,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        9706.043
+      ],
+      "glosa": "Ingresos por recaudaciones"
+    },
+    {
+      "label": "Ingresos por venta de jugadores comprado a terceros",
+      "lado": "revenue",
+      "page": 72,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        5179.121
+      ],
+      "glosa": "Ingresos por venta de jugadores comprado a terceros"
+    },
+    {
+      "label": "Ingresos por publicidad",
+      "lado": "revenue",
+      "page": 72,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        14590.645
+      ],
+      "glosa": "Ingresos por publicidad"
+    },
+    {
+      "label": "Ingresos por derechos de televisión",
+      "lado": "revenue",
+      "page": 72,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        9046.906
+      ],
+      "glosa": "Ingresos por derechos de televisión"
+    },
+    {
+      "label": "Otros",
+      "lado": "revenue",
+      "page": 72,
+      "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+      "values": [
+        2563.401
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Otros ingresos, por función",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        5680.08
+      ],
+      "glosa": "Otros ingresos, por función"
+    },
+    {
+      "label": "Costo de ventas jugadores",
+      "lado": "expense",
+      "page": 75,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        513.66
+      ],
+      "glosa": "Costo de ventas jugadores"
+    },
+    {
+      "label": "Remuneración plantel profesional y cuerpo técnico",
+      "lado": "expense",
+      "page": 75,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        14394.745
+      ],
+      "glosa": "Remuneración plantel profesional y cuerpo técnico"
+    },
+    {
+      "label": "Amortización Activos en concesión",
+      "lado": "expense",
+      "page": 75,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        228.205
+      ],
+      "glosa": "Amortización Activos en concesión"
+    },
+    {
+      "label": "Amortización Otros Intangibles",
+      "lado": "expense",
+      "page": 75,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        68.556
+      ],
+      "glosa": "Amortización Otros Intangibles"
+    },
+    {
+      "label": "Amortización pases jugadores profesionales",
+      "lado": "expense",
+      "page": 75,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        4859.862
+      ],
+      "glosa": "Amortización pases jugadores profesionales"
+    },
+    {
+      "label": "Costos de concentración traslados y otros",
+      "lado": "expense",
+      "page": 75,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        6345.375
+      ],
+      "glosa": "Costos de concentración traslados y otros"
+    },
+    {
+      "label": "Otros costos",
+      "lado": "expense",
+      "page": 75,
+      "section": "nota que desglosa \"Costo de ventas\"",
+      "values": [
+        3278.958
+      ],
+      "glosa": "Otros costos"
+    },
+    {
+      "label": "Gasto de administración",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        10838.114
+      ],
+      "glosa": "Gasto de administración"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 75,
+      "section": "nota que desglosa \"Otros gastos, por función\"",
+      "values": [
+        39.825
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Intereses y Multas",
+      "lado": "expense",
+      "page": 75,
+      "section": "nota que desglosa \"Otros gastos, por función\"",
+      "values": [
+        552.683
+      ],
+      "glosa": "Intereses y Multas"
+    }
+  ]
+}

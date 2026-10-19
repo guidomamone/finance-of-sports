@@ -1,0 +1,728 @@
+{
+ "pdf": "Clubes/Argentina/Ferro Carril Oeste/balance-ejercicio-121-2024-25.pdf",
+ "md": "Clubes/Argentina/Ferro Carril Oeste/balance-ejercicio-121-2024-25.md",
+ "generado": "2026-10-19T16:42:41.321Z",
+ "estado": "cola",
+ "clubId": "ferrocarriloeste-ar",
+ "year": 2025,
+ "escala": {
+  "valor": "no se sabe",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "9f5db2a"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.0231815394945443e-12
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Para fines generales ( Anexo B )\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "escalón \"nota exacta en la lectura 6\": \"Específicos ( Anexo B )\" (L94) se abre en las 18 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Específicos de sectores ( Anexo D )\" (L98) se abre en las 34 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Generales de administración ( Anexo E )\" (L99) se abre en las 15 filas de su nota, que suman exacto el renglón",
+  "la lectura base no cerraba; cerró con la lectura 6",
+  "duda de extraer que no afecta la carga: Los totales 2024 de b7 (493.581.793,49; 1.093.553.994,11; 1.161.417.783,11) no coinciden con b6 (572.187.331,04; 1.143.851.783,17; 1.191.167.126,58), posiblemente por distinta reexpresión; los 2025 sí coinciden.",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 16088.001906,
+  "gastos": 15909.914626,
+  "financiero": 497.688217,
+  "impuesto": 0,
+  "resultadoImpreso": 675.775497,
+  "resultadoParaCargar": 675.775497,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Para fines generales ( Anexo B )",
+   "lado": "ingreso",
+   "M": 4615.086829,
+   "pagina": 3,
+   "linea": 93,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Servicios a Socios (Anexo C)",
+   "lado": "ingreso",
+   "M": 562.062512,
+   "pagina": 7,
+   "linea": 347,
+   "origen": "nota que desglosa \"Específicos ( Anexo B )\""
+  },
+  {
+   "etiqueta": "Ingresos por Actividades Federadas (Anexo C)",
+   "lado": "ingreso",
+   "M": 1314.433627,
+   "pagina": 7,
+   "linea": 348,
+   "origen": "nota que desglosa \"Específicos ( Anexo B )\""
+  },
+  {
+   "etiqueta": "Ingreso por Colonia de Vacaciones",
+   "lado": "ingreso",
+   "M": 640.953668,
+   "pagina": 7,
+   "linea": 349,
+   "origen": "nota que desglosa \"Específicos ( Anexo B )\""
+  },
+  {
+   "etiqueta": "Ingreso por Colegio Instituto Educativo",
+   "lado": "ingreso",
+   "M": 2151.577664,
+   "pagina": 7,
+   "linea": 350,
+   "origen": "nota que desglosa \"Específicos ( Anexo B )\""
+  },
+  {
+   "etiqueta": "Ingreso por Escuelas Deportivas (Anexo C)",
+   "lado": "ingreso",
+   "M": 1302.906101,
+   "pagina": 7,
+   "linea": 351,
+   "origen": "nota que desglosa \"Específicos ( Anexo B )\""
+  },
+  {
+   "etiqueta": "Ingresos Ponteveedra",
+   "lado": "ingreso",
+   "M": 117.751564,
+   "pagina": 7,
+   "linea": 352,
+   "origen": "nota que desglosa \"Específicos ( Anexo B )\""
+  },
+  {
+   "etiqueta": "Recaudaciones Eventos Deportivos",
+   "lado": "ingreso",
+   "M": 36.043482,
+   "pagina": 7,
+   "linea": 355,
+   "origen": "nota que desglosa \"Específicos ( Anexo B )\""
+  },
+  {
+   "etiqueta": "Ingresos por Torneos",
+   "lado": "ingreso",
+   "M": 21.790195,
+   "pagina": 7,
+   "linea": 356,
+   "origen": "nota que desglosa \"Específicos ( Anexo B )\""
+  },
+  {
+   "etiqueta": "Derechos de Television",
+   "lado": "ingreso",
+   "M": 526.881497,
+   "pagina": 7,
+   "linea": 357,
+   "origen": "nota que desglosa \"Específicos ( Anexo B )\""
+  },
+  {
+   "etiqueta": "Venta de Abonos y Plateas",
+   "lado": "ingreso",
+   "M": 251.887469,
+   "pagina": 7,
+   "linea": 358,
+   "origen": "nota que desglosa \"Específicos ( Anexo B )\""
+  },
+  {
+   "etiqueta": "Ingreso por Publicidad y Sponsors",
+   "lado": "ingreso",
+   "M": 348.887982,
+   "pagina": 7,
+   "linea": 359,
+   "origen": "nota que desglosa \"Específicos ( Anexo B )\""
+  },
+  {
+   "etiqueta": "Ingresos por Alquileres",
+   "lado": "ingreso",
+   "M": 1341.9114,
+   "pagina": 7,
+   "linea": 360,
+   "origen": "nota que desglosa \"Específicos ( Anexo B )\""
+  },
+  {
+   "etiqueta": "Ingresos por Buffet",
+   "lado": "ingreso",
+   "M": 25.879934,
+   "pagina": 7,
+   "linea": 361,
+   "origen": "nota que desglosa \"Específicos ( Anexo B )\""
+  },
+  {
+   "etiqueta": "Futbol Profesional Ventas y Prestamos",
+   "lado": "ingreso",
+   "M": 1210.638787,
+   "pagina": 7,
+   "linea": 362,
+   "origen": "nota que desglosa \"Específicos ( Anexo B )\""
+  },
+  {
+   "etiqueta": "Otros Ingresos",
+   "lado": "ingreso",
+   "M": 28.538147,
+   "pagina": 7,
+   "linea": 363,
+   "origen": "nota que desglosa \"Específicos ( Anexo B )\""
+  },
+  {
+   "etiqueta": "Derechos de Formacion y afines",
+   "lado": "ingreso",
+   "M": 138.616988,
+   "pagina": 7,
+   "linea": 366,
+   "origen": "nota que desglosa \"Específicos ( Anexo B )\""
+  },
+  {
+   "etiqueta": "Subsidios Recibidos",
+   "lado": "ingreso",
+   "M": 5.1795,
+   "pagina": 7,
+   "linea": 367,
+   "origen": "nota que desglosa \"Específicos ( Anexo B )\""
+  },
+  {
+   "etiqueta": "Diferencia de redondeo",
+   "lado": "ingreso",
+   "M": 0,
+   "linea": 94,
+   "origen": "nota que desglosa \"Específicos ( Anexo B )\""
+  },
+  {
+   "etiqueta": "Recupero Decreto 510/23",
+   "lado": "ingreso",
+   "M": 1446.974563,
+   "pagina": 3,
+   "linea": 103,
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)"
+  },
+  {
+   "etiqueta": "1- Departamento de Educacion Fisica",
+   "lado": "gasto",
+   "M": 497.873922,
+   "pagina": 9,
+   "linea": 497,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Basquetball Profesional",
+   "lado": "gasto",
+   "M": 933.749638,
+   "pagina": 9,
+   "linea": 499,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Basquetball",
+   "lado": "gasto",
+   "M": 250.730189,
+   "pagina": 9,
+   "linea": 500,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Beisball",
+   "lado": "gasto",
+   "M": 17.247432,
+   "pagina": 9,
+   "linea": 501,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Boxeo",
+   "lado": "gasto",
+   "M": 21.676037,
+   "pagina": 9,
+   "linea": 502,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Efi",
+   "lado": "gasto",
+   "M": 25.91743,
+   "pagina": 9,
+   "linea": 503,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Fitnes",
+   "lado": "gasto",
+   "M": 107.08597,
+   "pagina": 9,
+   "linea": 504,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Futsal",
+   "lado": "gasto",
+   "M": 569.302825,
+   "pagina": 9,
+   "linea": 505,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Gimnasia Artistica y Ritmica",
+   "lado": "gasto",
+   "M": 189.018374,
+   "pagina": 9,
+   "linea": 506,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Handball",
+   "lado": "gasto",
+   "M": 248.661156,
+   "pagina": 9,
+   "linea": 507,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Hockey",
+   "lado": "gasto",
+   "M": 179.232651,
+   "pagina": 9,
+   "linea": 508,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Judo",
+   "lado": "gasto",
+   "M": 12.320021,
+   "pagina": 9,
+   "linea": 509,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Natacion",
+   "lado": "gasto",
+   "M": 573.953285,
+   "pagina": 9,
+   "linea": 510,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Patin",
+   "lado": "gasto",
+   "M": 18.688497,
+   "pagina": 9,
+   "linea": 511,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Racquetball",
+   "lado": "gasto",
+   "M": 1.538671,
+   "pagina": 9,
+   "linea": 512,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Taekwondo",
+   "lado": "gasto",
+   "M": 25.023415,
+   "pagina": 9,
+   "linea": 513,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Tenis",
+   "lado": "gasto",
+   "M": 377.632998,
+   "pagina": 9,
+   "linea": 514,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Tenis de Mesa",
+   "lado": "gasto",
+   "M": 17.851837,
+   "pagina": 9,
+   "linea": 515,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Voley",
+   "lado": "gasto",
+   "M": 295.855078,
+   "pagina": 9,
+   "linea": 516,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Otros",
+   "lado": "gasto",
+   "M": 152.472642,
+   "pagina": 9,
+   "linea": 517,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Departamento de Futbol Profesional",
+   "lado": "gasto",
+   "M": 3719.085522,
+   "pagina": 9,
+   "linea": 520,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Departamento de Futbol Femenino",
+   "lado": "gasto",
+   "M": 393.466979,
+   "pagina": 9,
+   "linea": 521,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Departamento de Futbol Infantil",
+   "lado": "gasto",
+   "M": 95.357147,
+   "pagina": 9,
+   "linea": 522,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Departamento de Futbol Amateur",
+   "lado": "gasto",
+   "M": 267.37636,
+   "pagina": 9,
+   "linea": 523,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "4- Departamento Medico",
+   "lado": "gasto",
+   "M": 163.377765,
+   "pagina": 9,
+   "linea": 525,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Egresos por Instituto Educativo",
+   "lado": "gasto",
+   "M": 2102.175189,
+   "pagina": 9,
+   "linea": 527,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Egresos por Colonia de Vacaciones",
+   "lado": "gasto",
+   "M": 328.551251,
+   "pagina": 9,
+   "linea": 528,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Egresos Ponteveedra",
+   "lado": "gasto",
+   "M": 318.710273,
+   "pagina": 9,
+   "linea": 529,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Egresos Sede Social",
+   "lado": "gasto",
+   "M": 302.053794,
+   "pagina": 9,
+   "linea": 532,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Egresos Campo Deportivo",
+   "lado": "gasto",
+   "M": 869.90748,
+   "pagina": 9,
+   "linea": 533,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Egresos Anexos",
+   "lado": "gasto",
+   "M": 22.15655,
+   "pagina": 9,
+   "linea": 534,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Egresos Generales",
+   "lado": "gasto",
+   "M": 904.136413,
+   "pagina": 9,
+   "linea": 535,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Egresos Departamento Cultural",
+   "lado": "gasto",
+   "M": 0.483572,
+   "pagina": 9,
+   "linea": 538,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Diferencia de redondeo",
+   "lado": "gasto",
+   "M": 0,
+   "linea": 98,
+   "origen": "nota que desglosa \"Específicos de sectores ( Anexo D )\""
+  },
+  {
+   "etiqueta": "Sueldos al Personal",
+   "lado": "gasto",
+   "M": 503.781513,
+   "pagina": 10,
+   "linea": 586,
+   "origen": "nota que desglosa \"Generales de administración ( Anexo E )\""
+  },
+  {
+   "etiqueta": "Honorarios y Otras Retribuciones",
+   "lado": "gasto",
+   "M": 185.041197,
+   "pagina": 10,
+   "linea": 587,
+   "origen": "nota que desglosa \"Generales de administración ( Anexo E )\""
+  },
+  {
+   "etiqueta": "Servicios de Telefonia e Internet",
+   "lado": "gasto",
+   "M": 20.045398,
+   "pagina": 10,
+   "linea": 588,
+   "origen": "nota que desglosa \"Generales de administración ( Anexo E )\""
+  },
+  {
+   "etiqueta": "Provisiones, Previsiones por Juicios e Incobrables",
+   "lado": "gasto",
+   "M": 379.306063,
+   "pagina": 10,
+   "linea": 589,
+   "origen": "nota que desglosa \"Generales de administración ( Anexo E )\""
+  },
+  {
+   "etiqueta": "Cargas Sociales",
+   "lado": "gasto",
+   "M": 85.062156,
+   "pagina": 10,
+   "linea": 590,
+   "origen": "nota que desglosa \"Generales de administración ( Anexo E )\""
+  },
+  {
+   "etiqueta": "Gastos Bancarios",
+   "lado": "gasto",
+   "M": 30.441852,
+   "pagina": 10,
+   "linea": 591,
+   "origen": "nota que desglosa \"Generales de administración ( Anexo E )\""
+  },
+  {
+   "etiqueta": "Gastos por Acreditacion de Tarjetas de Credito",
+   "lado": "gasto",
+   "M": 105.37378,
+   "pagina": 10,
+   "linea": 592,
+   "origen": "nota que desglosa \"Generales de administración ( Anexo E )\""
+  },
+  {
+   "etiqueta": "Movilidad y Viaticos",
+   "lado": "gasto",
+   "M": 6.055561,
+   "pagina": 10,
+   "linea": 593,
+   "origen": "nota que desglosa \"Generales de administración ( Anexo E )\""
+  },
+  {
+   "etiqueta": "Publicidad Institucional",
+   "lado": "gasto",
+   "M": 52.092171,
+   "pagina": 10,
+   "linea": 594,
+   "origen": "nota que desglosa \"Generales de administración ( Anexo E )\""
+  },
+  {
+   "etiqueta": "Gastos Varios",
+   "lado": "gasto",
+   "M": 4.597514,
+   "pagina": 10,
+   "linea": 595,
+   "origen": "nota que desglosa \"Generales de administración ( Anexo E )\""
+  },
+  {
+   "etiqueta": "Papeleria y Utiles",
+   "lado": "gasto",
+   "M": 7.879977,
+   "pagina": 10,
+   "linea": 596,
+   "origen": "nota que desglosa \"Generales de administración ( Anexo E )\""
+  },
+  {
+   "etiqueta": "Insumos Informaticos",
+   "lado": "gasto",
+   "M": 15.197506,
+   "pagina": 10,
+   "linea": 597,
+   "origen": "nota que desglosa \"Generales de administración ( Anexo E )\""
+  },
+  {
+   "etiqueta": "Franqueos, Telegramas y Correos",
+   "lado": "gasto",
+   "M": 0.169561,
+   "pagina": 10,
+   "linea": 598,
+   "origen": "nota que desglosa \"Generales de administración ( Anexo E )\""
+  },
+  {
+   "etiqueta": "Mantenimiento Infraestructura",
+   "lado": "gasto",
+   "M": 5.644784,
+   "pagina": 10,
+   "linea": 599,
+   "origen": "nota que desglosa \"Generales de administración ( Anexo E )\""
+  },
+  {
+   "etiqueta": "Impuestos / Tasas / Contribuciones",
+   "lado": "gasto",
+   "M": 336.974494,
+   "pagina": 10,
+   "linea": 600,
+   "origen": "nota que desglosa \"Generales de administración ( Anexo E )\""
+  },
+  {
+   "etiqueta": "Amortizaciones de bienes ( Anexo A )",
+   "lado": "gasto",
+   "M": 169.580738,
+   "pagina": 3,
+   "linea": 100,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Resultados Financieros incluido RECPAM",
+   "M": 497.688217,
+   "linea": 107
+  }
+ ],
+ "impuesto": [],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "65e6c94b0382cde926e09650a4c2a09a41b00b08",
+  "rango": [
+   90,
+   114
+  ],
+  "lineasCargadas": [
+   93,
+   347,
+   348,
+   349,
+   350,
+   351,
+   352,
+   355,
+   356,
+   357,
+   358,
+   359,
+   360,
+   361,
+   362,
+   363,
+   366,
+   367,
+   94,
+   103,
+   497,
+   499,
+   500,
+   501,
+   502,
+   503,
+   504,
+   505,
+   506,
+   507,
+   508,
+   509,
+   510,
+   511,
+   512,
+   513,
+   514,
+   515,
+   516,
+   517,
+   520,
+   521,
+   522,
+   523,
+   525,
+   527,
+   528,
+   529,
+   532,
+   533,
+   534,
+   535,
+   538,
+   98,
+   586,
+   587,
+   588,
+   589,
+   590,
+   591,
+   592,
+   593,
+   594,
+   595,
+   596,
+   597,
+   598,
+   599,
+   600,
+   100,
+   107
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 90 a 114 del .md):\nL90: | | 30/06/2025 | 30/06/2024 |\nL91: | :--- | :--- | :--- |\nL92: | **RECURSOS ORDINARIOS:** | | |\nL93: | Para fines generales ( Anexo B ) | 4.615.086.828,80 | 4.119.735.013,64 |\nL94: | Específicos ( Anexo B ) | 10.025.940.514,69 | 8.643.735.067,63 |\nL95: | **Total Recursos Ordinarios** | **14.641.027.343,49** | **12.763.470.081,27** |\nL96: | | | |\nL97: | **GASTOS ORDINARIOS** | | |\nL98: | Específicos de sectores ( Anexo D ) | -14.002.670.362,44 | -11.957.169.638,17 |\nL99: | Generales de administración ( Anexo E ) | -1.737.663.525,70 | -2.248.762.175,54 |\nL100: | Amortizaciones de bienes ( Anexo A ) | -169.580.738,13 | -165.102.640,04 |\nL101: | **Total Gastos Ordinarios** | **-15.909.914.626,27** | **-14.371.034.453,75** |\nL102: | | | |\nL103: | Recupero Decreto 510/23 | 1.446.974.562,75 | 1.723.178.108,48 |\nL104: | | | |\nL105: | **Superavit (deficit) Operativo** | **178.087.279,97** | **115.613.736,00** |\nL106: | | | |\nL107: | Resultados Financieros incluido RECPAM | 497.688.217,31 | 3.196.180.654,64 |\nL108: | | | |\nL109: | **Superavit (Deficit) Ordinarios** | **675.775.497,28** | **3.311.794.390,64** |\nL110: | | | |\nL111: | **Superavit (Deficit ) del Ejercicio** | **675.775.497,28** | **3.311.794.390,64** |\nL113: Las notas 1 a 10 y anexos A a G que se acompañan son parte integrante de este estado.\n\nLO QUE SE CARGA:\n- ingreso · \"Para fines generales ( Anexo B )\" · 4615.086829 · L93\n- ingreso · \"Servicios a Socios (Anexo C)\" · 562.062512 · L347 (de una nota)\n- ingreso · \"Ingresos por Actividades Federadas (Anexo C)\" · 1314.433627 · L348 (de una nota)\n- ingreso · \"Ingreso por Colonia de Vacaciones\" · 640.953668 · L349 (de una nota)\n- ingreso · \"Ingreso por Colegio Instituto Educativo\" · 2151.577664 · L350 (de una nota)\n- ingreso · \"Ingreso por Escuelas Deportivas (Anexo C)\" · 1302.906101 · L351 (de una nota)\n- ingreso · \"Ingresos Ponteveedra\" · 117.751564 · L352 (de una nota)\n- ingreso · \"Recaudaciones Eventos Deportivos\" · 36.043482 · L355 (de una nota)\n- ingreso · \"Ingresos por Torneos\" · 21.790195 · L356 (de una nota)\n- ingreso · \"Derechos de Television\" · 526.881497 · L357 (de una nota)\n- ingreso · \"Venta de Abonos y Plateas\" · 251.887469 · L358 (de una nota)\n- ingreso · \"Ingreso por Publicidad y Sponsors\" · 348.887982 · L359 (de una nota)\n- ingreso · \"Ingresos por Alquileres\" · 1341.9114 · L360 (de una nota)\n- ingreso · \"Ingresos por Buffet\" · 25.879934 · L361 (de una nota)\n- ingreso · \"Futbol Profesional Ventas y Prestamos\" · 1210.638787 · L362 (de una nota)\n- ingreso · \"Otros Ingresos\" · 28.538147 · L363 (de una nota)\n- ingreso · \"Derechos de Formacion y afines\" · 138.616988 · L366 (de una nota)\n- ingreso · \"Subsidios Recibidos\" · 5.1795 · L367 (de una nota)\n- ingreso · \"Diferencia de redondeo\" · 0 · L94\n- ingreso · \"Recupero Decreto 510/23\" · 1446.974563 · L103\n- gasto · \"1- Departamento de Educacion Fisica\" · 497.873922 · L497 (de una nota)\n- gasto · \"Basquetball Profesional\" · 933.749638 · L499 (de una nota)\n- gasto · \"Basquetball\" · 250.730189 · L500 (de una nota)\n- gasto · \"Beisball\" · 17.247432 · L501 (de una nota)\n- gasto · \"Boxeo\" · 21.676037 · L502 (de una nota)\n- gasto · \"Efi\" · 25.91743 · L503 (de una nota)\n- gasto · \"Fitnes\" · 107.08597 · L504 (de una nota)\n- gasto · \"Futsal\" · 569.302825 · L505 (de una nota)\n- gasto · \"Gimnasia Artistica y Ritmica\" · 189.018374 · L506 (de una nota)\n- gasto · \"Handball\" · 248.661156 · L507 (de una nota)\n- gasto · \"Hockey\" · 179.232651 · L508 (de una nota)\n- gasto · \"Judo\" · 12.320021 · L509 (de una nota)\n- gasto · \"Natacion\" · 573.953285 · L510 (de una nota)\n- gasto · \"Patin\" · 18.688497 · L511 (de una nota)\n- gasto · \"Racquetball\" · 1.538671 · L512 (de una nota)\n- gasto · \"Taekwondo\" · 25.023415 · L513 (de una nota)\n- gasto · \"Tenis\" · 377.632998 · L514 (de una nota)\n- gasto · \"Tenis de Mesa\" · 17.851837 · L515 (de una nota)\n- gasto · \"Voley\" · 295.855078 · L516 (de una nota)\n- gasto · \"Otros\" · 152.472642 · L517 (de una nota)\n- gasto · \"Departamento de Futbol Profesional\" · 3719.085522 · L520 (de una nota)\n- gasto · \"Departamento de Futbol Femenino\" · 393.466979 · L521 (de una nota)\n- gasto · \"Departamento de Futbol Infantil\" · 95.357147 · L522 (de una nota)\n- gasto · \"Departamento de Futbol Amateur\" · 267.37636 · L523 (de una nota)\n- gasto · \"4- Departamento Medico\" · 163.377765 · L525 (de una nota)\n- gasto · \"Egresos por Instituto Educativo\" · 2102.175189 · L527 (de una nota)\n- gasto · \"Egresos por Colonia de Vacaciones\" · 328.551251 · L528 (de una nota)\n- gasto · \"Egresos Ponteveedra\" · 318.710273 · L529 (de una nota)\n- gasto · \"Egresos Sede Social\" · 302.053794 · L532 (de una nota)\n- gasto · \"Egresos Campo Deportivo\" · 869.90748 · L533 (de una nota)\n- gasto · \"Egresos Anexos\" · 22.15655 · L534 (de una nota)\n- gasto · \"Egresos Generales\" · 904.136413 · L535 (de una nota)\n- gasto · \"Egresos Departamento Cultural\" · 0.483572 · L538 (de una nota)\n- gasto · \"Diferencia de redondeo\" · 0 · L98\n- gasto · \"Sueldos al Personal\" · 503.781513 · L586 (de una nota)\n- gasto · \"Honorarios y Otras Retribuciones\" · 185.041197 · L587 (de una nota)\n- gasto · \"Servicios de Telefonia e Internet\" · 20.045398 · L588 (de una nota)\n- gasto · \"Provisiones, Previsiones por Juicios e Incobrables\" · 379.306063 · L589 (de una nota)\n- gasto · \"Cargas Sociales\" · 85.062156 · L590 (de una nota)\n- gasto · \"Gastos Bancarios\" · 30.441852 · L591 (de una nota)\n- gasto · \"Gastos por Acreditacion de Tarjetas de Credito\" · 105.37378 · L592 (de una nota)\n- gasto · \"Movilidad y Viaticos\" · 6.055561 · L593 (de una nota)\n- gasto · \"Publicidad Institucional\" · 52.092171 · L594 (de una nota)\n- gasto · \"Gastos Varios\" · 4.597514 · L595 (de una nota)\n- gasto · \"Papeleria y Utiles\" · 7.879977 · L596 (de una nota)\n- gasto · \"Insumos Informaticos\" · 15.197506 · L597 (de una nota)\n- gasto · \"Franqueos, Telegramas y Correos\" · 0.169561 · L598 (de una nota)\n- gasto · \"Mantenimiento Infraestructura\" · 5.644784 · L599 (de una nota)\n- gasto · \"Impuestos / Tasas / Contribuciones\" · 336.974494 · L600 (de una nota)\n- gasto · \"Amortizaciones de bienes ( Anexo A )\" · 169.580738 · L100\n- financiero · \"Resultados Financieros incluido RECPAM\" · 497.688217 · L107"
+ }
+}

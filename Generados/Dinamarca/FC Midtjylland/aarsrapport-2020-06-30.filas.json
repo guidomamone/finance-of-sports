@@ -1,0 +1,360 @@
+{
+ "pdf": "Clubes/Dinamarca/FC Midtjylland/aarsrapport-2020-06-30.pdf",
+ "md": "Clubes/Dinamarca/FC Midtjylland/aarsrapport-2020-06-30.md",
+ "mdSha1": "9e2215d13f9c2f4458b599fe611819a151a1737c",
+ "ubicacionSha1": "5d089c16e56ca1fb99c54e325c548d912fec7de4",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:37:05.941Z",
+ "ubicacion": {
+  "estado": [
+   "b12"
+  ],
+  "notas_ingresos": [
+   "b21"
+  ],
+  "notas_gastos": [
+   "b20",
+   "b21"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b12",
+   "escala": "miles",
+   "evidencia": "L937: columnas '2019/20 TDKK' (miles de DKK)"
+  },
+  {
+   "bloque": "b21",
+   "escala": "miles",
+   "evidencia": "L1166: columnas '2019/20 TDKK'"
+  },
+  {
+   "bloque": "b20",
+   "escala": "miles",
+   "evidencia": "L1127: columnas '2019/20 TDKK'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b12",
+   "linea": 939,
+   "etiqueta": "Nettoomsætning Revenue",
+   "actual": "87.610",
+   "anterior": "107.921",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 940,
+   "etiqueta": "Andre driftsindtægter Other operating income",
+   "actual": "98.637",
+   "anterior": "161.960",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 941,
+   "etiqueta": "Andre eksterne omkostninger Other external expenses",
+   "actual": "-61.833",
+   "anterior": "-73.974",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 942,
+   "etiqueta": "Bruttoresultat Gross profit/loss",
+   "actual": "124.414",
+   "anterior": "195.907",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 943,
+   "etiqueta": "Personaleomkostninger Staff expenses",
+   "actual": "-103.320",
+   "anterior": "-93.592",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 944,
+   "etiqueta": "EBITDA",
+   "actual": "21.094",
+   "anterior": "102.315",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 945,
+   "etiqueta": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver Depreciation, amortisation and impairment of intangible assets and property, plant and equipment",
+   "actual": "-40.055",
+   "anterior": "-32.610",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 946,
+   "etiqueta": "Andre driftsomkostninger Other operating expenses",
+   "actual": "-56",
+   "anterior": "-3.244",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 947,
+   "etiqueta": "Resultat før finansielle poster Profit/loss before financial income and expenses",
+   "actual": "-19.017",
+   "anterior": "66.461",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 948,
+   "etiqueta": "Finansielle indtægter Financial income",
+   "actual": "59",
+   "anterior": "427",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 949,
+   "etiqueta": "Finansielle omkostninger Financial expenses",
+   "actual": "-566",
+   "anterior": "-470",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 950,
+   "etiqueta": "Resultat før skat Profit/loss before tax",
+   "actual": "-19.524",
+   "anterior": "66.418",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 951,
+   "etiqueta": "Skat af årets resultat Tax on profit/loss for the year",
+   "actual": "0",
+   "anterior": "-10.649",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b12",
+   "linea": 952,
+   "etiqueta": "Årets resultat Net profit/loss for the year",
+   "actual": "-19.524",
+   "anterior": "55.769",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 1131,
+   "etiqueta": "Lønninger",
+   "actual": "93.413",
+   "anterior": "82.112",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger Staff expenses"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1133,
+   "etiqueta": "Pensioner",
+   "actual": "7.544",
+   "anterior": "9.334",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger Staff expenses"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1135,
+   "etiqueta": "Andre omkostninger til social sikring",
+   "actual": "2.363",
+   "anterior": "2.146",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger Staff expenses"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1137,
+   "etiqueta": "",
+   "actual": "103.320",
+   "anterior": "93.592",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger Staff expenses"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1150,
+   "etiqueta": "Afskrivninger af immaterielle anlægsaktiver",
+   "actual": "36.929",
+   "anterior": "29.319",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver Depreciation, amortisation and impairment of intangible assets and property, plant and equipment"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1152,
+   "etiqueta": "Afskrivninger af materielle anlægsaktiver",
+   "actual": "3.126",
+   "anterior": "3.291",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver Depreciation, amortisation and impairment of intangible assets and property, plant and equipment"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1154,
+   "etiqueta": "",
+   "actual": "40.055",
+   "anterior": "32.610",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver Depreciation, amortisation and impairment of intangible assets and property, plant and equipment"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1169,
+   "etiqueta": "Renteindtægter tilknyttede virksomheder Interest received from group enterprises",
+   "actual": "0",
+   "anterior": "111",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finansielle indtægter Financial income"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1170,
+   "etiqueta": "Andre finansielle indtægter Other financial income",
+   "actual": "59",
+   "anterior": "316",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finansielle indtægter Financial income"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1171,
+   "etiqueta": "",
+   "actual": "59",
+   "anterior": "427",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Finansielle indtægter Financial income"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1173,
+   "etiqueta": "Andre finansielle omkostninger Other financial expenses",
+   "actual": "342",
+   "anterior": "317",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finansielle omkostninger Financial expenses"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1174,
+   "etiqueta": "Kursreguleringer omkostninger Exchange adjustments, expenses",
+   "actual": "224",
+   "anterior": "153",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finansielle omkostninger Financial expenses"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1175,
+   "etiqueta": "",
+   "actual": "566",
+   "anterior": "470",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Finansielle omkostninger Financial expenses"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1177,
+   "etiqueta": "Årets aktuelle skat Current tax for the year",
+   "actual": "0",
+   "anterior": "5.399",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Skat af årets resultat Tax on profit/loss for the year"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1178,
+   "etiqueta": "Årets udskudte skat Deferred tax for the year",
+   "actual": "0",
+   "anterior": "5.250",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Skat af årets resultat Tax on profit/loss for the year"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1179,
+   "etiqueta": "",
+   "actual": "0",
+   "anterior": "10.649",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Skat af årets resultat Tax on profit/loss for the year"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 952,
+  "actual": "-19.524",
+  "anterior": "55.769"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el detalle 'Heraf udgør vederlag til direktion og bestyrelse' (L1140-L1144, Direktion 4.417 y Bestyrelse 100)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Personaleomkostninger Staff expenses",
+   "texto": "Es un 'de los cuales' incluido dentro de Lønninger/Personaleomkostninger (L1138), cargarlo duplicaría gasto.",
+   "bloques": [
+    "b20"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "No hay total de ingresos ni de gastos impreso. Se omitió el número medio de empleados (L1146, no es importe) y el desglose de remuneración de dirección (L1140-L1144, incluido en sueldos)."
+}

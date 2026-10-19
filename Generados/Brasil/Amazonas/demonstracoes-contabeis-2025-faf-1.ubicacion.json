@@ -1,0 +1,229 @@
+{
+ "pdf": "Clubes/Brasil/Amazonas/demonstracoes-contabeis-2025-faf-1.pdf",
+ "md": "Clubes/Brasil/Amazonas/demonstracoes-contabeis-2025-faf-1.md",
+ "mdSha1": "184eea8bfe9c0e67f6b75d6606512f942b0bf6d7",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:12:03.130Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    39,
+    78
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    80,
+    85
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    115,
+    142
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 3,
+   "lineas": [
+    144,
+    147
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 4,
+   "lineas": [
+    176,
+    183
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 4,
+   "lineas": [
+    185,
+    191
+   ],
+   "tipo": "texto"
+  },
+  "b7": {
+   "pagina": 5,
+   "lineas": [
+    231,
+    243
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 5,
+   "lineas": [
+    247,
+    252
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 5,
+   "lineas": [
+    256,
+    265
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 5,
+   "lineas": [
+    269,
+    272
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 5,
+   "lineas": [
+    274,
+    281
+   ],
+   "tipo": "texto"
+  },
+  "b12": {
+   "pagina": 6,
+   "lineas": [
+    315,
+    337
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 6,
+   "lineas": [
+    339,
+    345
+   ],
+   "tipo": "texto"
+  },
+  "b14": {
+   "pagina": 6,
+   "lineas": [
+    349,
+    353
+   ],
+   "tipo": "texto"
+  },
+  "b15": {
+   "pagina": 7,
+   "lineas": [
+    397,
+    402
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 8,
+   "lineas": [
+    420,
+    427
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 8,
+   "lineas": [
+    431,
+    434
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 8,
+   "lineas": [
+    440,
+    445
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 8,
+   "lineas": [
+    451,
+    453
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 9,
+   "lineas": [
+    465,
+    467
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 9,
+   "lineas": [
+    473,
+    476
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 9,
+   "lineas": [
+    480,
+    487
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 9,
+   "lineas": [
+    489,
+    490
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 9,
+   "lineas": [
+    492,
+    499
+   ],
+   "tipo": "texto"
+  },
+  "b25": {
+   "pagina": 10,
+   "lineas": [
+    539,
+    545
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b21"
+ ],
+ "notas_gastos": [
+  "b22"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con centavos (ej. 'Resultado Líquido do Exercício 97.007,70'; 'O valor de R$ 212.008,66'), sin indicación de miles.",
+ "moneda": "BRL",
+ "columna_ejercicio": "Exercício 2025",
+ "columna_anterior": "Exercício 2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Federação Amazonense de Futebol (entidad individual). Estado de resultados: b3 (Demonstração do Superávit e Déficit 2025). Notas b21 y b22 desglosan receitas y despesas financeiras. Se excluyen balance, mutaciones, flujo de caja, índices, imobilizado, caja y obligaciones laborales."
+}

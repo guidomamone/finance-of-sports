@@ -1,0 +1,280 @@
+{
+  "md": "Clubes/Brasil/RB Bragantino/balanco-2025-auditado.md",
+  "pdf": "Clubes/Brasil/RB Bragantino/balanco-2025-auditado.pdf",
+  "club": "rbbragantino-br",
+  "year": 2025,
+  "generatedAt": "2026-10-19T16:42:17.465Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Receita de patrocínio e publicidade",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Receita Líquida\"",
+      "values": [
+        397.569
+      ],
+      "glosa": "Ingresos por patrocinio y publicidad"
+    },
+    {
+      "label": "Campeonato Brasileiro",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Receita Líquida\"",
+      "values": [
+        109.528
+      ],
+      "glosa": "Campeonato Brasileño"
+    },
+    {
+      "label": "Campeonato Paulista",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Receita Líquida\"",
+      "values": [
+        15.6
+      ],
+      "glosa": "Campeonato Paulista"
+    },
+    {
+      "label": "Receitas com repasses de direitos federativo",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Receita Líquida\"",
+      "values": [
+        11.214
+      ],
+      "glosa": "Ingresos por transferencia de derechos federativos"
+    },
+    {
+      "label": "Outras Receitas",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Receita Líquida\"",
+      "values": [
+        6.821
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Bilheteria",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Receita Líquida\"",
+      "values": [
+        3.911
+      ],
+      "glosa": "Taquilla"
+    },
+    {
+      "label": "Copa do Brasil",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Receita Líquida\"",
+      "values": [
+        9.541
+      ],
+      "glosa": "Copa de Brasil"
+    },
+    {
+      "label": "( - ) Encargos sobre receitas",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Receita Líquida\"",
+      "values": [
+        -54.984
+      ],
+      "glosa": "( - ) Deducciones sobre ingresos"
+    },
+    {
+      "label": "Outras receitas e Despesas operacionais",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        28.089
+      ],
+      "glosa": "Otros ingresos y gastos operativos"
+    },
+    {
+      "label": "Comissão técnica",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        41.85
+      ],
+      "glosa": "Cuerpo técnico"
+    },
+    {
+      "label": "Custo do departamento de futebol",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        325.62
+      ],
+      "glosa": "Costes del departamento de fútbol"
+    },
+    {
+      "label": "Gastos com jogos e bonificações",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        9.675
+      ],
+      "glosa": "Gastos de partidos y primas"
+    },
+    {
+      "label": "Custo com departamento amador",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        50.7
+      ],
+      "glosa": "Costes del departamento amateur"
+    },
+    {
+      "label": "Salários e ordenados",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        17.601
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Outros gastos com pessoal",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        5.657
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Depreciações",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        3.72
+      ],
+      "glosa": "Depreciaciones"
+    },
+    {
+      "label": "Serviços de terceiros",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        6.774
+      ],
+      "glosa": "Servicios de terceros"
+    },
+    {
+      "label": "Despesas de viagem",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        1.529
+      ],
+      "glosa": "Gastos de viaje"
+    },
+    {
+      "label": "Manutenções e infraestrutura",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.405
+      ],
+      "glosa": "Mantenimiento e infraestructura"
+    },
+    {
+      "label": "Encargos trabalhistas e previdenciários",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        1.972
+      ],
+      "glosa": "Cargas sociales y laborales"
+    },
+    {
+      "label": "Impostos e taxas diversas",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.154
+      ],
+      "glosa": "Impuestos y tasas diversas"
+    },
+    {
+      "label": "Outras despesas administrativas",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        7.829
+      ],
+      "glosa": "Otros gastos administrativos"
+    },
+    {
+      "label": "Aluguéis",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.301
+      ],
+      "glosa": "Alquileres"
+    },
+    {
+      "label": "Despesas de Marketing",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        3.508
+      ],
+      "glosa": "Gastos de marketing"
+    },
+    {
+      "label": "Amortizações contratos de leasing",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.281
+      ],
+      "glosa": "Amortizaciones de contratos de leasing"
+    },
+    {
+      "label": "Amortizações softwares",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.023
+      ],
+      "glosa": "Amortizaciones de software"
+    },
+    {
+      "label": "Despesas bancárias",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.211
+      ],
+      "glosa": "Gastos bancarios"
+    }
+  ]
+}

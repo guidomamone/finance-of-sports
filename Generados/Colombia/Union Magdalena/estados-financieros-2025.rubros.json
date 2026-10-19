@@ -1,0 +1,430 @@
+{
+  "md": "Clubes/Colombia/Union Magdalena/estados-financieros-2025.md",
+  "pdf": "Clubes/Colombia/Union Magdalena/estados-financieros-2025.pdf",
+  "club": "unionmagdalena-co",
+  "year": 2024,
+  "generatedAt": "2026-10-19T16:42:17.690Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Taquilla - Venta de Boletería",
+      "lado": "revenue",
+      "page": 46,
+      "section": "nota que desglosa \"Ingresos de Actividaes Ordinarias\"",
+      "values": [
+        1564.483
+      ],
+      "glosa": "Taquilla - Venta de Boletería"
+    },
+    {
+      "label": "Publicidad y Propaganda",
+      "lado": "revenue",
+      "page": 46,
+      "section": "nota que desglosa \"Ingresos de Actividaes Ordinarias\"",
+      "values": [
+        764.772
+      ],
+      "glosa": "Publicidad y Propaganda"
+    },
+    {
+      "label": "Participación Dimayor tv",
+      "lado": "revenue",
+      "page": 46,
+      "section": "nota que desglosa \"Ingresos de Actividaes Ordinarias\"",
+      "values": [
+        5885.367
+      ],
+      "glosa": "Participación Dimayor tv"
+    },
+    {
+      "label": "Auxilios Dimayor",
+      "lado": "revenue",
+      "page": 46,
+      "section": "nota que desglosa \"Ingresos de Actividaes Ordinarias\"",
+      "values": [
+        856.577
+      ],
+      "glosa": "Auxilios Dimayor"
+    },
+    {
+      "label": "Participación federación colombiana de futbol",
+      "lado": "revenue",
+      "page": 46,
+      "section": "nota que desglosa \"Ingresos de Actividaes Ordinarias\"",
+      "values": [
+        544.931
+      ],
+      "glosa": "Participación federación colombiana de futbol"
+    },
+    {
+      "label": "Venta de Artículos Deportivos",
+      "lado": "revenue",
+      "page": 46,
+      "section": "nota que desglosa \"Ingresos de Actividaes Ordinarias\"",
+      "values": [
+        323.836
+      ],
+      "glosa": "Venta de Artículos Deportivos"
+    },
+    {
+      "label": "Otros ingresos de partido",
+      "lado": "revenue",
+      "page": 46,
+      "section": "nota que desglosa \"Ingresos de Actividaes Ordinarias\"",
+      "values": [
+        5.19
+      ],
+      "glosa": "Otros ingresos de partido"
+    },
+    {
+      "label": "Devoluciones en Servicios",
+      "lado": "revenue",
+      "page": 46,
+      "section": "nota que desglosa \"Ingresos de Actividaes Ordinarias\"",
+      "values": [
+        -209.538
+      ],
+      "glosa": "Devoluciones en Servicios"
+    },
+    {
+      "label": "Otros Ingresos",
+      "lado": "revenue",
+      "page": 4,
+      "section": "estado",
+      "values": [
+        1496.386
+      ],
+      "glosa": "Otros Ingresos"
+    },
+    {
+      "label": "Gastos del Personal",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Gastos de Venta\"",
+      "values": [
+        4287.831
+      ],
+      "glosa": "Gastos del Personal"
+    },
+    {
+      "label": "Impuestos",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Gastos de Venta\"",
+      "values": [
+        149.582
+      ],
+      "glosa": "Impuestos"
+    },
+    {
+      "label": "Arriendos",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Gastos de Venta\"",
+      "values": [
+        391.399
+      ],
+      "glosa": "Arriendos"
+    },
+    {
+      "label": "Contribuciones y Afiliaciones",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Gastos de Venta\"",
+      "values": [
+        1280.311
+      ],
+      "glosa": "Contribuciones y Afiliaciones"
+    },
+    {
+      "label": "Servicios",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Gastos de Venta\"",
+      "values": [
+        79.803
+      ],
+      "glosa": "Servicios"
+    },
+    {
+      "label": "Gastos Legales",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Gastos de Venta\"",
+      "values": [
+        5.879
+      ],
+      "glosa": "Gastos Legales"
+    },
+    {
+      "label": "Gastos de Viaje",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Gastos de Venta\"",
+      "values": [
+        626.543
+      ],
+      "glosa": "Gastos de Viaje"
+    },
+    {
+      "label": "Elemento de Aseo y Cafetería",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Gastos de Venta\"",
+      "values": [
+        1.002
+      ],
+      "glosa": "Elemento de Aseo y Cafetería"
+    },
+    {
+      "label": "Logística y Gastos de Partidos",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Gastos de Venta\"",
+      "values": [
+        938.785
+      ],
+      "glosa": "Logística y Gastos de Partidos"
+    },
+    {
+      "label": "Gastos de Pretemporada",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Gastos de Venta\"",
+      "values": [
+        39.525
+      ],
+      "glosa": "Gastos de Pretemporada"
+    },
+    {
+      "label": "Gastos de Entrenamientos",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Gastos de Venta\"",
+      "values": [
+        182.898
+      ],
+      "glosa": "Gastos de Entrenamientos"
+    },
+    {
+      "label": "Otros Costos",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Gastos de Venta\"",
+      "values": [
+        1.808
+      ],
+      "glosa": "Otros Costos"
+    },
+    {
+      "label": "Derechos Deportivos",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Gastos de Venta\"",
+      "values": [
+        396.104
+      ],
+      "glosa": "Derechos Deportivos"
+    },
+    {
+      "label": "Derechos Deportivos",
+      "lado": "expense",
+      "page": 48,
+      "section": "nota que desglosa \"Gastos de Venta\"",
+      "values": [
+        52.316
+      ],
+      "glosa": "Derechos Deportivos"
+    },
+    {
+      "label": "Costos de Venta",
+      "lado": "expense",
+      "page": 4,
+      "section": "estado",
+      "values": [
+        202.141
+      ],
+      "glosa": "Costos de Venta"
+    },
+    {
+      "label": "Gasto de Personal",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gastos de Administracion y otros gastos\"",
+      "values": [
+        928.732
+      ],
+      "glosa": "Gasto de Personal"
+    },
+    {
+      "label": "Honorarios",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gastos de Administracion y otros gastos\"",
+      "values": [
+        91.197
+      ],
+      "glosa": "Honorarios"
+    },
+    {
+      "label": "Impuestos",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gastos de Administracion y otros gastos\"",
+      "values": [
+        197.728
+      ],
+      "glosa": "Impuestos"
+    },
+    {
+      "label": "Arrendamientos",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gastos de Administracion y otros gastos\"",
+      "values": [
+        57.831
+      ],
+      "glosa": "Arrendamientos"
+    },
+    {
+      "label": "Seguros",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gastos de Administracion y otros gastos\"",
+      "values": [
+        18.665
+      ],
+      "glosa": "Seguros"
+    },
+    {
+      "label": "Servicios",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gastos de Administracion y otros gastos\"",
+      "values": [
+        250.705
+      ],
+      "glosa": "Servicios"
+    },
+    {
+      "label": "Gastos Legales",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gastos de Administracion y otros gastos\"",
+      "values": [
+        58.016
+      ],
+      "glosa": "Gastos Legales"
+    },
+    {
+      "label": "Mantenimiento y Reparaciones",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gastos de Administracion y otros gastos\"",
+      "values": [
+        113.917
+      ],
+      "glosa": "Mantenimiento y Reparaciones"
+    },
+    {
+      "label": "Adecuaciones e Instalaciones",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gastos de Administracion y otros gastos\"",
+      "values": [
+        0.4
+      ],
+      "glosa": "Adecuaciones e Instalaciones"
+    },
+    {
+      "label": "Gastos de Viaje",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gastos de Administracion y otros gastos\"",
+      "values": [
+        12.576
+      ],
+      "glosa": "Gastos de Viaje"
+    },
+    {
+      "label": "Depreciación",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gastos de Administracion y otros gastos\"",
+      "values": [
+        32.753
+      ],
+      "glosa": "Depreciación"
+    },
+    {
+      "label": "Amortizaciones",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gastos de Administracion y otros gastos\"",
+      "values": [
+        5.957
+      ],
+      "glosa": "Amortizaciones"
+    },
+    {
+      "label": "Diversos",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gastos de Administracion y otros gastos\"",
+      "values": [
+        90.093
+      ],
+      "glosa": "Diversos"
+    },
+    {
+      "label": "Provisiones",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gastos de Administracion y otros gastos\"",
+      "values": [
+        30.525
+      ],
+      "glosa": "Provisiones"
+    },
+    {
+      "label": "Gastos Bancarios",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gastos de Administracion y otros gastos\"",
+      "values": [
+        38.42
+      ],
+      "glosa": "Gastos Bancarios"
+    },
+    {
+      "label": "Gastos Comisiones banc",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gastos de Administracion y otros gastos\"",
+      "values": [
+        0.745
+      ],
+      "glosa": "Gastos Comisiones banc"
+    },
+    {
+      "label": "Gastos Extraordinarios",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gastos de Administracion y otros gastos\"",
+      "values": [
+        5.296
+      ],
+      "glosa": "Gastos Extraordinarios"
+    },
+    {
+      "label": "Gastos Diversos",
+      "lado": "expense",
+      "page": 49,
+      "section": "nota que desglosa \"Gastos de Administracion y otros gastos\"",
+      "values": [
+        95.269
+      ],
+      "glosa": "Gastos Diversos"
+    }
+  ]
+}

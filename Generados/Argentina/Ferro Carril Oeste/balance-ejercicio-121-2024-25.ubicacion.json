@@ -1,0 +1,179 @@
+{
+ "pdf": "Clubes/Argentina/Ferro Carril Oeste/balance-ejercicio-121-2024-25.pdf",
+ "md": "Clubes/Argentina/Ferro Carril Oeste/balance-ejercicio-121-2024-25.md",
+ "mdSha1": "65f36be6df4ab07f72a541c93249859c7d911ea4",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:24:20.524Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    30,
+    45
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    90,
+    111
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    156,
+    161
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    206,
+    236
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 6,
+   "lineas": [
+    282,
+    297
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    341,
+    369
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 8,
+   "lineas": [
+    413,
+    451
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 9,
+   "lineas": [
+    495,
+    540
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    584,
+    601
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    645,
+    658
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 12,
+   "lineas": [
+    702,
+    717
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 16,
+   "lineas": [
+    836,
+    845
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 17,
+   "lineas": [
+    882,
+    904
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 18,
+   "lineas": [
+    910,
+    945
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 19,
+   "lineas": [
+    951,
+    977
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 22,
+   "lineas": [
+    1063,
+    1068
+   ],
+   "tipo": "texto"
+  },
+  "b17": {
+   "pagina": 27,
+   "lineas": [
+    1180,
+    1185
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b6",
+  "b7"
+ ],
+ "notas_gastos": [
+  "b8",
+  "b9"
+ ],
+ "escala": "no se sabe",
+ "escala_evidencia": "Solo dice '(expresado a moneda constante - comparativo con el ejercicio anterior)'; no indica miles ni millones en lo visible.",
+ "moneda": "ARS",
+ "columna_ejercicio": "30/06/2025",
+ "columna_anterior": "30/06/2024",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes del Estado de Recursos y Gastos (b2) están expresados en pesos (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El encabezado no indica la escala, solo 'moneda constante'; es habitual que los clubes argentinos presenten en pesos.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado individual de asociación civil (Estado de Recursos y Gastos, b2). b6 (Anexo B) abre recursos generales/específicos; b7 abre recursos específicos por actividad; b8 gastos específicos de departamentos; b9 gastos generales de administración. Se excluyen balance, EEPN, flujo, bienes de uso, previsiones, moneda extranjera y notas de activo/pasivo."
+}

@@ -1,0 +1,131 @@
+{
+ "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2020-12-31.pdf",
+ "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2020-12-31.md",
+ "mdSha1": "af97c3aeda450f8f397c68610beb64d0aa220120",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:29:48.637Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    24,
+    37
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 10,
+   "lineas": [
+    281,
+    291
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 10,
+   "lineas": [
+    297,
+    299
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 11,
+   "lineas": [
+    311,
+    323
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 12,
+   "lineas": [
+    335,
+    351
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 13,
+   "lineas": [
+    361,
+    365
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 14,
+   "lineas": [
+    375,
+    392
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 15,
+   "lineas": [
+    418,
+    425
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 16,
+   "lineas": [
+    437,
+    447
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 16,
+   "lineas": [
+    453,
+    456
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 17,
+   "lineas": [
+    472,
+    483
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 17,
+   "lineas": [
+    487,
+    492
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 17,
+   "lineas": [
+    496,
+    500
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b8"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado de columnas '2020 DKK | 2019 DKK' sin indicación de miles",
+ "moneda": "DKK",
+ "columna_ejercicio": "2020 DKK",
+ "columna_anterior": "2019 DKK",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Resultatopgørelse (b2) en formato abreviado danés que parte de Bruttofortjeneste, sin desglose de ingresos. Nota 2 Personaleomkostninger (b8) desglosa gastos de personal. Solo estado individual de la sociedad."
+}

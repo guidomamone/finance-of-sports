@@ -1,0 +1,514 @@
+{
+ "pdf": "Clubes/Brasil/Botafogo-SP/demonstracoes-contabeis-2024-2025.pdf",
+ "md": "Clubes/Brasil/Botafogo-SP/demonstracoes-contabeis-2024-2025.md",
+ "generado": "2026-10-19T16:42:16.907Z",
+ "estado": "cola",
+ "clubId": "botafogosp-br",
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "1899f63"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"RECEITA OPERACIONAL LÍQUIDA\" 42.076604 cierra; además se suman 1 línea(s) fuera de ese total (0.770997)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 9.999999797116743e-7
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 3 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": false,
+   "detalle": "la columna 2024 de este documento suma ingresos 43.882304; el sitio tiene 46.032661"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 3",
+  "duda de extraer que no afecta la carga: Las notas titulan la columna '2024' sin '(Reapresentado)', pero sus totales coinciden con el estado (ej. L893 vs L106)."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 42.847601,
+  "gastos": 56.047526,
+  "financiero": -0.066196,
+  "impuesto": 0,
+  "resultadoImpreso": -13.26612,
+  "resultadoParaCargar": -13.26612,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Cotas de Participação (i)",
+   "lado": "ingreso",
+   "M": 12.8825,
+   "pagina": 26,
+   "linea": 879,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Patrocínios e Parcerias (ii)",
+   "lado": "ingreso",
+   "M": 3.499882,
+   "pagina": 26,
+   "linea": 880,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Sócio Torcedor (iii)",
+   "lado": "ingreso",
+   "M": 2.098698,
+   "pagina": 26,
+   "linea": 881,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Transação de Atletas",
+   "lado": "ingreso",
+   "M": 7.874633,
+   "pagina": 26,
+   "linea": 882,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Arrecadação de Jogos (iv)",
+   "lado": "ingreso",
+   "M": 1.365954,
+   "pagina": 26,
+   "linea": 883,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Receita com Eventos e Shows",
+   "lado": "ingreso",
+   "M": 0.990865,
+   "pagina": 26,
+   "linea": 884,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Receita de Aluguel – (v)",
+   "lado": "ingreso",
+   "M": 0.997283,
+   "pagina": 26,
+   "linea": 885,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Direito de Transmissão",
+   "lado": "ingreso",
+   "M": 14.46319,
+   "pagina": 26,
+   "linea": 886,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Impostos Incidentes sobre Receitas (TEF)",
+   "lado": "ingreso",
+   "M": -1.808229,
+   "pagina": 26,
+   "linea": 889,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Despesas Sócio Torcedor",
+   "lado": "ingreso",
+   "M": -0.279213,
+   "pagina": 26,
+   "linea": 890,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Repasse de Arrecadação de Jogos",
+   "lado": "ingreso",
+   "M": -0.00896,
+   "pagina": 26,
+   "linea": 891,
+   "origen": "nota que desglosa \"RECEITA OPERACIONAL LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Outros Receitas (Despesas) Operacionais",
+   "lado": "ingreso",
+   "M": 0.770998,
+   "pagina": 5,
+   "linea": 114,
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)"
+  },
+  {
+   "etiqueta": "Salários",
+   "lado": "gasto",
+   "M": 12.376409,
+   "pagina": 27,
+   "linea": 916,
+   "origen": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\""
+  },
+  {
+   "etiqueta": "Direito de Imagem",
+   "lado": "gasto",
+   "M": 9.752867,
+   "pagina": 27,
+   "linea": 917,
+   "origen": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\""
+  },
+  {
+   "etiqueta": "Férias",
+   "lado": "gasto",
+   "M": 2.022763,
+   "pagina": 27,
+   "linea": 918,
+   "origen": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\""
+  },
+  {
+   "etiqueta": "INSS e FGTS",
+   "lado": "gasto",
+   "M": 1.234149,
+   "pagina": 27,
+   "linea": 919,
+   "origen": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\""
+  },
+  {
+   "etiqueta": "Prêmios e Gratificações",
+   "lado": "gasto",
+   "M": 0.173398,
+   "pagina": 27,
+   "linea": 920,
+   "origen": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\""
+  },
+  {
+   "etiqueta": "13º Salário",
+   "lado": "gasto",
+   "M": 1.246241,
+   "pagina": 27,
+   "linea": 921,
+   "origen": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\""
+  },
+  {
+   "etiqueta": "Alimentação",
+   "lado": "gasto",
+   "M": 0.796653,
+   "pagina": 27,
+   "linea": 922,
+   "origen": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\""
+  },
+  {
+   "etiqueta": "Assistência Médica Odontológica",
+   "lado": "gasto",
+   "M": 0.01857,
+   "pagina": 27,
+   "linea": 923,
+   "origen": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\""
+  },
+  {
+   "etiqueta": "Amortização de Direito de Jogadores",
+   "lado": "gasto",
+   "M": 2.188831,
+   "pagina": 27,
+   "linea": 924,
+   "origen": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\""
+  },
+  {
+   "etiqueta": "Luvas e Comissões Contratuais",
+   "lado": "gasto",
+   "M": 1.244084,
+   "pagina": 27,
+   "linea": 925,
+   "origen": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\""
+  },
+  {
+   "etiqueta": "Ajuda de Custo",
+   "lado": "gasto",
+   "M": 1.54711,
+   "pagina": 27,
+   "linea": 926,
+   "origen": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\""
+  },
+  {
+   "etiqueta": "Cessão de Atletas e Empréstimos",
+   "lado": "gasto",
+   "M": 1.130822,
+   "pagina": 27,
+   "linea": 927,
+   "origen": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\""
+  },
+  {
+   "etiqueta": "Outros Custos",
+   "lado": "gasto",
+   "M": 0.920708,
+   "pagina": 27,
+   "linea": 928,
+   "origen": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\""
+  },
+  {
+   "etiqueta": "Custos com Campeonato Estadual",
+   "lado": "gasto",
+   "M": 3.362731,
+   "pagina": 27,
+   "linea": 930,
+   "origen": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\""
+  },
+  {
+   "etiqueta": "Custos com Campeonato Nacional",
+   "lado": "gasto",
+   "M": 2.300229,
+   "pagina": 27,
+   "linea": 931,
+   "origen": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\""
+  },
+  {
+   "etiqueta": "Custos com Futebol Base",
+   "lado": "gasto",
+   "M": 0.278948,
+   "pagina": 27,
+   "linea": 932,
+   "origen": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\""
+  },
+  {
+   "etiqueta": "Outros Custos com Futebol",
+   "lado": "gasto",
+   "M": 3.769933,
+   "pagina": 27,
+   "linea": 933,
+   "origen": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\""
+  },
+  {
+   "etiqueta": "Custos com Eventos e Shows",
+   "lado": "gasto",
+   "M": 0.782947,
+   "pagina": 27,
+   "linea": 934,
+   "origen": "nota que desglosa \"Custo com Atletas, Comissão Técnica e Jogos\""
+  },
+  {
+   "etiqueta": "Salários",
+   "lado": "gasto",
+   "M": 1.769977,
+   "pagina": 28,
+   "linea": 947,
+   "origen": "nota que desglosa \"Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "INSS e FGTS",
+   "lado": "gasto",
+   "M": 1.046461,
+   "pagina": 28,
+   "linea": 948,
+   "origen": "nota que desglosa \"Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "Férias",
+   "lado": "gasto",
+   "M": 0.253471,
+   "pagina": 28,
+   "linea": 949,
+   "origen": "nota que desglosa \"Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "13º Salário",
+   "lado": "gasto",
+   "M": -0.021533,
+   "pagina": 28,
+   "linea": 950,
+   "origen": "nota que desglosa \"Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "Alimentação",
+   "lado": "gasto",
+   "M": 0.324739,
+   "pagina": 28,
+   "linea": 951,
+   "origen": "nota que desglosa \"Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "Processos e Indenizações Trabalhistas",
+   "lado": "gasto",
+   "M": 0.04,
+   "pagina": 28,
+   "linea": 952,
+   "origen": "nota que desglosa \"Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "Outras Despesas",
+   "lado": "gasto",
+   "M": 0.333,
+   "pagina": 28,
+   "linea": 953,
+   "origen": "nota que desglosa \"Despesas com Pessoal\""
+  },
+  {
+   "etiqueta": "Bens de Pequeno Valor",
+   "lado": "gasto",
+   "M": 0.021469,
+   "pagina": 28,
+   "linea": 960,
+   "origen": "nota que desglosa \"Despesas Administrativas e Gerais\""
+  },
+  {
+   "etiqueta": "Contingências",
+   "lado": "gasto",
+   "M": 0.244415,
+   "pagina": 28,
+   "linea": 961,
+   "origen": "nota que desglosa \"Despesas Administrativas e Gerais\""
+  },
+  {
+   "etiqueta": "Energia Elétrica",
+   "lado": "gasto",
+   "M": 0.637038,
+   "pagina": 28,
+   "linea": 962,
+   "origen": "nota que desglosa \"Despesas Administrativas e Gerais\""
+  },
+  {
+   "etiqueta": "Manutenção",
+   "lado": "gasto",
+   "M": 0.374232,
+   "pagina": 28,
+   "linea": 963,
+   "origen": "nota que desglosa \"Despesas Administrativas e Gerais\""
+  },
+  {
+   "etiqueta": "Material de Escritório, Limpeza e Consumo",
+   "lado": "gasto",
+   "M": 0.119021,
+   "pagina": 28,
+   "linea": 964,
+   "origen": "nota que desglosa \"Despesas Administrativas e Gerais\""
+  },
+  {
+   "etiqueta": "Publicidade e Propaganda",
+   "lado": "gasto",
+   "M": 0.006602,
+   "pagina": 28,
+   "linea": 965,
+   "origen": "nota que desglosa \"Despesas Administrativas e Gerais\""
+  },
+  {
+   "etiqueta": "Serviços de Terceiros",
+   "lado": "gasto",
+   "M": 0.989087,
+   "pagina": 28,
+   "linea": 966,
+   "origen": "nota que desglosa \"Despesas Administrativas e Gerais\""
+  },
+  {
+   "etiqueta": "Sócio Torcedor",
+   "lado": "gasto",
+   "M": 0.363897,
+   "pagina": 28,
+   "linea": 967,
+   "origen": "nota que desglosa \"Despesas Administrativas e Gerais\""
+  },
+  {
+   "etiqueta": "Despesas com Aluguéis",
+   "lado": "gasto",
+   "M": 0.56331,
+   "pagina": 28,
+   "linea": 968,
+   "origen": "nota que desglosa \"Despesas Administrativas e Gerais\""
+  },
+  {
+   "etiqueta": "Despesas com Alimentação",
+   "lado": "gasto",
+   "M": 0.514382,
+   "pagina": 28,
+   "linea": 969,
+   "origen": "nota que desglosa \"Despesas Administrativas e Gerais\""
+  },
+  {
+   "etiqueta": "Outras Despesas",
+   "lado": "gasto",
+   "M": 0.668453,
+   "pagina": 28,
+   "linea": 970,
+   "origen": "nota que desglosa \"Despesas Administrativas e Gerais\""
+  },
+  {
+   "etiqueta": "ICMS",
+   "lado": "gasto",
+   "M": 0.006925,
+   "pagina": 28,
+   "linea": 978,
+   "origen": "nota que desglosa \"Despesas Tributárias\""
+  },
+  {
+   "etiqueta": "Juros Fiscais",
+   "lado": "gasto",
+   "M": 0.120501,
+   "pagina": 28,
+   "linea": 980,
+   "origen": "nota que desglosa \"Despesas Tributárias\""
+  },
+  {
+   "etiqueta": "Impostos Municipais",
+   "lado": "gasto",
+   "M": 0.006692,
+   "pagina": 28,
+   "linea": 981,
+   "origen": "nota que desglosa \"Despesas Tributárias\""
+  },
+  {
+   "etiqueta": "Taxas Diversas",
+   "lado": "gasto",
+   "M": 0.155362,
+   "pagina": 28,
+   "linea": 982,
+   "origen": "nota que desglosa \"Despesas Tributárias\""
+  },
+  {
+   "etiqueta": "Amortização de Direito de Uso",
+   "lado": "gasto",
+   "M": 1.37001,
+   "pagina": 29,
+   "linea": 995,
+   "origen": "nota que desglosa \"Despesas com Depreciações e Amortizações\""
+  },
+  {
+   "etiqueta": "Depreciações",
+   "lado": "gasto",
+   "M": 0.992622,
+   "pagina": 29,
+   "linea": 996,
+   "origen": "nota que desglosa \"Despesas com Depreciações e Amortizações\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Receitas Financeiras",
+   "M": 0.026913,
+   "linea": 117
+  },
+  {
+   "etiqueta": "Despesas Financeiras",
+   "M": -0.093109,
+   "linea": 118
+  }
+ ],
+ "impuesto": []
+}

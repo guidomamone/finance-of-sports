@@ -1,0 +1,461 @@
+{
+ "pdf": "Clubes/Brasil/Gremio/wf-2024-2025-1774995c.pdf",
+ "md": "Clubes/Brasil/Gremio/wf-2024-2025-1774995c.md",
+ "generado": "2026-10-19T16:42:17.258Z",
+ "estado": "ok",
+ "clubId": "gremio",
+ "year": 2025,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 7.815970093361102e-14
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2024 de este documento suma ingresos 613.59; el sitio tiene 615.021"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: Son detalles por jugador del renglón Venda de Atletas de la nota 25.",
+  "duda de localizar que no afecta la carga: El estado cita nota 27 para despesas financeiras pero el índice solo muestra la nota 26 con receitas y despesas hasta DÉFICIT FINANCEIRO.",
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Vendas Grêmio Mania (b)\"): ¿Se deja afuera de la carga el cuadro de resultado de Grêmio Mania (b31, L1277-L1281) porque mezcla renglones de ingresos (nota 22) y de costos (nota 23) ya cargados?",
+  "duda de extraer que no afecta la carga: Diferencia de 934 en el año anterior entre estado y nota; no afecta el ejercicio 2025."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 894.324,
+  "gastos": 764.202,
+  "financiero": -94.638,
+  "impuesto": 0,
+  "resultadoImpreso": 35.484,
+  "resultadoParaCargar": 35.484,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Campeonato Brasileiro",
+   "lado": "ingreso",
+   "M": 131.407,
+   "pagina": 29,
+   "linea": 1264,
+   "origen": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\" > desglose de \"Receita de Transmissão (a)\""
+  },
+  {
+   "etiqueta": "Campeonato Gaúcho",
+   "lado": "ingreso",
+   "M": 8.92,
+   "pagina": 29,
+   "linea": 1265,
+   "origen": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\" > desglose de \"Receita de Transmissão (a)\""
+  },
+  {
+   "etiqueta": "Copa do Brasil",
+   "lado": "ingreso",
+   "M": 5.853,
+   "pagina": 29,
+   "linea": 1266,
+   "origen": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\" > desglose de \"Receita de Transmissão (a)\""
+  },
+  {
+   "etiqueta": "Copa Libertadores/Sul Americana",
+   "lado": "ingreso",
+   "M": 9.008,
+   "pagina": 29,
+   "linea": 1267,
+   "origen": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\" > desglose de \"Receita de Transmissão (a)\""
+  },
+  {
+   "etiqueta": "Campeonato Brasileiro Feminino",
+   "lado": "ingreso",
+   "M": 0.36,
+   "pagina": 29,
+   "linea": 1268,
+   "origen": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\" > desglose de \"Receita de Transmissão (a)\""
+  },
+  {
+   "etiqueta": "Receitas Patrimoniais",
+   "lado": "ingreso",
+   "M": 2.287,
+   "pagina": 28,
+   "linea": 1230,
+   "origen": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\""
+  },
+  {
+   "etiqueta": "Receitas Publicitárias",
+   "lado": "ingreso",
+   "M": 107.592,
+   "pagina": 28,
+   "linea": 1231,
+   "origen": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\""
+  },
+  {
+   "etiqueta": "Receitas de Luvas Contratuais",
+   "lado": "ingreso",
+   "M": 0.833,
+   "pagina": 28,
+   "linea": 1232,
+   "origen": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\""
+  },
+  {
+   "etiqueta": "Receitas de Jogos (c)",
+   "lado": "ingreso",
+   "M": 3.91,
+   "pagina": 28,
+   "linea": 1233,
+   "origen": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\""
+  },
+  {
+   "etiqueta": "Receitas de Royalties",
+   "lado": "ingreso",
+   "M": 7.656,
+   "pagina": 28,
+   "linea": 1234,
+   "origen": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\""
+  },
+  {
+   "etiqueta": "Premiações de Competições",
+   "lado": "ingreso",
+   "M": 0.032,
+   "pagina": 28,
+   "linea": 1235,
+   "origen": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\""
+  },
+  {
+   "etiqueta": "Locações (c)",
+   "lado": "ingreso",
+   "M": 2.54,
+   "pagina": 28,
+   "linea": 1236,
+   "origen": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\""
+  },
+  {
+   "etiqueta": "Arrecadação Quadro Social",
+   "lado": "ingreso",
+   "M": 67.551,
+   "pagina": 28,
+   "linea": 1237,
+   "origen": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\""
+  },
+  {
+   "etiqueta": "Vendas Grêmio Mania (b)",
+   "lado": "ingreso",
+   "M": 31.815,
+   "pagina": 28,
+   "linea": 1238,
+   "origen": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\""
+  },
+  {
+   "etiqueta": "(-) Devoluções de vendas (b)",
+   "lado": "ingreso",
+   "M": -0.809,
+   "pagina": 28,
+   "linea": 1239,
+   "origen": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\""
+  },
+  {
+   "etiqueta": "(-) Impostos sobre vendas (b)",
+   "lado": "ingreso",
+   "M": -5.358,
+   "pagina": 28,
+   "linea": 1240,
+   "origen": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\""
+  },
+  {
+   "etiqueta": "Outras Receitas do Desporto",
+   "lado": "ingreso",
+   "M": 1.942,
+   "pagina": 28,
+   "linea": 1241,
+   "origen": "nota que desglosa \"RECEITA DA ATIVIDADE DE DESPORTO (nota 22)\""
+  },
+  {
+   "etiqueta": "Doações operação Arena (nota 1.1)",
+   "lado": "ingreso",
+   "M": 135,
+   "pagina": 8,
+   "linea": 274,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Valor justo (nota 1.1)",
+   "lado": "ingreso",
+   "M": 248.161,
+   "pagina": 8,
+   "linea": 275,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Doações",
+   "lado": "ingreso",
+   "M": 12.507,
+   "pagina": 30,
+   "linea": 1335,
+   "origen": "nota que desglosa \"Outras receitas operacionais (nota 26)\""
+  },
+  {
+   "etiqueta": "Venda de Atletas (b)",
+   "lado": "ingreso",
+   "M": 123.804,
+   "pagina": 30,
+   "linea": 1336,
+   "origen": "nota que desglosa \"Outras receitas operacionais (nota 26)\""
+  },
+  {
+   "etiqueta": "Reversão despesas renegociação comissões e outras",
+   "lado": "ingreso",
+   "M": 1.679,
+   "pagina": 30,
+   "linea": 1347,
+   "origen": "nota que desglosa \"Outras receitas operacionais (nota 26)\" > desglose de \"Recuperação de Despesas (a)\""
+  },
+  {
+   "etiqueta": "Recuperação despesas Bancárias",
+   "lado": "ingreso",
+   "M": 0.02,
+   "pagina": 30,
+   "linea": 1349,
+   "origen": "nota que desglosa \"Outras receitas operacionais (nota 26)\" > desglose de \"Recuperação de Despesas (a)\""
+  },
+  {
+   "etiqueta": "Recuperação despesas correio – Loja",
+   "lado": "ingreso",
+   "M": 1.969,
+   "pagina": 30,
+   "linea": 1350,
+   "origen": "nota que desglosa \"Outras receitas operacionais (nota 26)\" > desglose de \"Recuperação de Despesas (a)\""
+  },
+  {
+   "etiqueta": "Ressarcimento despesas categoria de Base e Feminino",
+   "lado": "ingreso",
+   "M": 0.231,
+   "pagina": 30,
+   "linea": 1351,
+   "origen": "nota que desglosa \"Outras receitas operacionais (nota 26)\" > desglose de \"Recuperação de Despesas (a)\""
+  },
+  {
+   "etiqueta": "Reembolso de despesas diversas",
+   "lado": "ingreso",
+   "M": 1.178,
+   "pagina": 30,
+   "linea": 1354,
+   "origen": "nota que desglosa \"Outras receitas operacionais (nota 26)\" > desglose de \"Recuperação de Despesas (a)\""
+  },
+  {
+   "etiqueta": "Mecanismo de Solidariedade (c)",
+   "lado": "ingreso",
+   "M": 3.301,
+   "pagina": 30,
+   "linea": 1338,
+   "origen": "nota que desglosa \"Outras receitas operacionais (nota 26)\""
+  },
+  {
+   "etiqueta": "Festejos e Aniversários",
+   "lado": "ingreso",
+   "M": 0.156,
+   "pagina": 30,
+   "linea": 1339,
+   "origen": "nota que desglosa \"Outras receitas operacionais (nota 26)\""
+  },
+  {
+   "etiqueta": "Custo Baixa Direitos Econômicos",
+   "lado": "gasto",
+   "M": 9.221,
+   "pagina": 30,
+   "linea": 1340,
+   "origen": "nota que desglosa \"Outras receitas operacionais (nota 26)\""
+  },
+  {
+   "etiqueta": "Salários, benefícios encargos sociais",
+   "lado": "gasto",
+   "M": 211.779,
+   "pagina": 29,
+   "linea": 1291,
+   "origen": "nota que desglosa \"CUSTO DA ATIVIDADE DE DESPORTO (nota 23)\""
+  },
+  {
+   "etiqueta": "Despesas Federações, Imagens, Prémios, Mat. Esportivo e outras",
+   "lado": "gasto",
+   "M": 111.434,
+   "pagina": 29,
+   "linea": 1292,
+   "origen": "nota que desglosa \"CUSTO DA ATIVIDADE DE DESPORTO (nota 23)\""
+  },
+  {
+   "etiqueta": "Amortização de Direitos sobre Atletas Profissionais",
+   "lado": "gasto",
+   "M": 101.9,
+   "pagina": 29,
+   "linea": 1293,
+   "origen": "nota que desglosa \"CUSTO DA ATIVIDADE DE DESPORTO (nota 23)\""
+  },
+  {
+   "etiqueta": "Serviços de terceiro",
+   "lado": "gasto",
+   "M": 6.507,
+   "pagina": 29,
+   "linea": 1294,
+   "origen": "nota que desglosa \"CUSTO DA ATIVIDADE DE DESPORTO (nota 23)\""
+  },
+  {
+   "etiqueta": "Despesas de Viagens",
+   "lado": "gasto",
+   "M": 21.889,
+   "pagina": 29,
+   "linea": 1295,
+   "origen": "nota que desglosa \"CUSTO DA ATIVIDADE DE DESPORTO (nota 23)\""
+  },
+  {
+   "etiqueta": "Negociação de atletas",
+   "lado": "gasto",
+   "M": 18.944,
+   "pagina": 29,
+   "linea": 1296,
+   "origen": "nota que desglosa \"CUSTO DA ATIVIDADE DE DESPORTO (nota 23)\""
+  },
+  {
+   "etiqueta": "CMV – Grêmio Mania",
+   "lado": "gasto",
+   "M": 15.726,
+   "pagina": 29,
+   "linea": 1297,
+   "origen": "nota que desglosa \"CUSTO DA ATIVIDADE DE DESPORTO (nota 23)\""
+  },
+  {
+   "etiqueta": "Ingressos a Sócios",
+   "lado": "gasto",
+   "M": 0.857,
+   "pagina": 29,
+   "linea": 1298,
+   "origen": "nota que desglosa \"CUSTO DA ATIVIDADE DE DESPORTO (nota 23)\""
+  },
+  {
+   "etiqueta": "Salários, benefícios e Encargos Sociais - Demais Administrativas",
+   "lado": "gasto",
+   "M": 36.36,
+   "pagina": 29,
+   "linea": 1305,
+   "origen": "nota que desglosa \"Gerais e administrativas (nota 24)\""
+  },
+  {
+   "etiqueta": "Serviços de Terceiros",
+   "lado": "gasto",
+   "M": 29.626,
+   "pagina": 29,
+   "linea": 1306,
+   "origen": "nota que desglosa \"Gerais e administrativas (nota 24)\""
+  },
+  {
+   "etiqueta": "Contingências Judiciais",
+   "lado": "gasto",
+   "M": 14.717,
+   "pagina": 29,
+   "linea": 1307,
+   "origen": "nota que desglosa \"Gerais e administrativas (nota 24)\""
+  },
+  {
+   "etiqueta": "Aluguéis, Seguros, Materiais de Consumo e de Expediente",
+   "lado": "gasto",
+   "M": 11.776,
+   "pagina": 29,
+   "linea": 1308,
+   "origen": "nota que desglosa \"Gerais e administrativas (nota 24)\""
+  },
+  {
+   "etiqueta": "Depreciação/Amortização Ativos Imobilizados e intangíveis",
+   "lado": "gasto",
+   "M": 10.359,
+   "pagina": 29,
+   "linea": 1309,
+   "origen": "nota que desglosa \"Gerais e administrativas (nota 24)\""
+  },
+  {
+   "etiqueta": "Água, Luz, Telefonia, Manutenção, Transportes e outras",
+   "lado": "gasto",
+   "M": 7.663,
+   "pagina": 29,
+   "linea": 1310,
+   "origen": "nota que desglosa \"Gerais e administrativas (nota 24)\""
+  },
+  {
+   "etiqueta": "Publicitárias",
+   "lado": "gasto",
+   "M": 2.383,
+   "pagina": 29,
+   "linea": 1311,
+   "origen": "nota que desglosa \"Gerais e administrativas (nota 24)\""
+  },
+  {
+   "etiqueta": "Provisão Créditos Liquidação Duvidosa",
+   "lado": "gasto",
+   "M": 2.134,
+   "pagina": 29,
+   "linea": 1312,
+   "origen": "nota que desglosa \"Gerais e administrativas (nota 24)\""
+  },
+  {
+   "etiqueta": "Outras despesas",
+   "lado": "gasto",
+   "M": 1.276,
+   "pagina": 29,
+   "linea": 1313,
+   "origen": "nota que desglosa \"Gerais e administrativas (nota 24)\""
+  },
+  {
+   "etiqueta": "Tributos e Contribuições Federais",
+   "lado": "gasto",
+   "M": 1.377,
+   "pagina": 29,
+   "linea": 1314,
+   "origen": "nota que desglosa \"Gerais e administrativas (nota 24)\""
+  },
+  {
+   "etiqueta": "Impairment direito de superfície (nota 1.1)",
+   "lado": "gasto",
+   "M": 157.495,
+   "pagina": 8,
+   "linea": 276,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Receitas financeiras (nota 27)",
+   "M": 34.122,
+   "linea": 283
+  },
+  {
+   "etiqueta": "Despesas financeiras (nota 27)",
+   "M": -128.76,
+   "linea": 284
+  }
+ ],
+ "impuesto": []
+}

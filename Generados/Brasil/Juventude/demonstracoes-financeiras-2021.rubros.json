@@ -1,0 +1,140 @@
+{
+  "md": "Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.md",
+  "pdf": "Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.pdf",
+  "club": "juventude-br",
+  "year": 2021,
+  "generatedAt": "2026-10-19T16:42:17.391Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Venda/Empréstimo de Atletas",
+      "lado": "revenue",
+      "page": 15,
+      "section": "nota que desglosa \"Receita Operacional Bruta Atividade do Desporto\"",
+      "values": [
+        2.863945
+      ],
+      "glosa": "Venta/Cesión de deportistas"
+    },
+    {
+      "label": "Receitas Patrimoniais",
+      "lado": "revenue",
+      "page": 15,
+      "section": "nota que desglosa \"Receita Operacional Bruta Atividade do Desporto\"",
+      "values": [
+        2.522335
+      ],
+      "glosa": "Ingresos patrimoniales"
+    },
+    {
+      "label": "Receita de transmissão",
+      "lado": "revenue",
+      "page": 15,
+      "section": "nota que desglosa \"Receita Operacional Bruta Atividade do Desporto\"",
+      "values": [
+        55.760074
+      ],
+      "glosa": "Ingresos por derechos de transmisión"
+    },
+    {
+      "label": "Receita jogos de Futebol",
+      "lado": "revenue",
+      "page": 15,
+      "section": "nota que desglosa \"Receita Operacional Bruta Atividade do Desporto\"",
+      "values": [
+        0.458635
+      ],
+      "glosa": "Ingresos por partidos de fútbol"
+    },
+    {
+      "label": "Receitas Publicitária",
+      "lado": "revenue",
+      "page": 15,
+      "section": "nota que desglosa \"Receita Operacional Bruta Atividade do Desporto\"",
+      "values": [
+        5.144984
+      ],
+      "glosa": "Ingresos publicitarios"
+    },
+    {
+      "label": "Receita Loteria Esportiva",
+      "lado": "revenue",
+      "page": 15,
+      "section": "nota que desglosa \"Receita Operacional Bruta Atividade do Desporto\"",
+      "values": [
+        0.693485
+      ],
+      "glosa": "Ingresos por lotería deportiva"
+    },
+    {
+      "label": "Outras Receitas",
+      "lado": "revenue",
+      "page": 15,
+      "section": "nota que desglosa \"Receita Operacional Bruta Atividade do Desporto\"",
+      "values": [
+        0.729818
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Receita de Royalties",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.014645
+      ],
+      "glosa": "Ingresos por regalías"
+    },
+    {
+      "label": "Receitas Diversas",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.074639
+      ],
+      "glosa": "Ingresos diversos"
+    },
+    {
+      "label": "Remuneração, Benefícios, Encargos, Intermediação, Contratação, Empréstimos e Outros",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Custo da Atividade do Desporto\"",
+      "values": [
+        33.655777
+      ],
+      "glosa": "Remuneración, beneficios, cargas sociales, intermediación, contratación, préstamos y otros"
+    },
+    {
+      "label": "Amortização de direitos e de formação de atletas",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Custo da Atividade do Desporto\"",
+      "values": [
+        6.880703
+      ],
+      "glosa": "Amortización de derechos y de formación de deportistas"
+    },
+    {
+      "label": "Jogos, Federação, viagem, serviços, material esportivo e outros",
+      "lado": "expense",
+      "page": 16,
+      "section": "nota que desglosa \"Custo da Atividade do Desporto\"",
+      "values": [
+        8.93362
+      ],
+      "glosa": "Partidos, federación, viajes, servicios, material deportivo y otros"
+    },
+    {
+      "label": "Despesas Gerais e administrativas",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        8.891961
+      ],
+      "glosa": "Gastos generales y administrativos"
+    }
+  ]
+}

@@ -1,0 +1,939 @@
+{
+ "pdf": "Clubes/Brasil/Gremio/wf-2024-2025-1774995c.pdf",
+ "md": "Clubes/Brasil/Gremio/wf-2024-2025-1774995c.md",
+ "mdSha1": "a5b3dc0248a102492328354c3fbd0015cae5d36a",
+ "ubicacionSha1": "3d0696bcd12ade753fa641e995d88e9a23c6908a",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:31:08.723Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b29",
+   "b30",
+   "b31",
+   "b34",
+   "b35",
+   "b38"
+  ],
+  "notas_gastos": [
+   "b32",
+   "b33"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "miles",
+   "evidencia": "L264: (Valores expressos em milhares de reais)"
+  },
+  {
+   "bloque": "b29",
+   "escala": "no se sabe",
+   "evidencia": "Sin leyenda en el bloque; importes coinciden con b3 (miles)"
+  },
+  {
+   "bloque": "b30",
+   "escala": "no se sabe",
+   "evidencia": "Sin leyenda; total coincide con b29"
+  },
+  {
+   "bloque": "b31",
+   "escala": "no se sabe",
+   "evidencia": "Sin leyenda; importes coinciden con b29"
+  },
+  {
+   "bloque": "b34",
+   "escala": "no se sabe",
+   "evidencia": "Sin leyenda; total coincide con b3 L277"
+  },
+  {
+   "bloque": "b35",
+   "escala": "no se sabe",
+   "evidencia": "Sin leyenda; total coincide con b34"
+  },
+  {
+   "bloque": "b38",
+   "escala": "no se sabe",
+   "evidencia": "Sin leyenda; totales coinciden con b3"
+  },
+  {
+   "bloque": "b32",
+   "escala": "no se sabe",
+   "evidencia": "Sin leyenda; total coincide con b3 L269"
+  },
+  {
+   "bloque": "b33",
+   "escala": "no se sabe",
+   "evidencia": "Sin leyenda; total coincide con b3 L273"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 268,
+   "etiqueta": "RECEITA DA ATIVIDADE DE DESPORTO (nota 22)",
+   "actual": "375.539",
+   "anterior": "404.015",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 269,
+   "etiqueta": "CUSTO DA ATIVIDADE DE DESPORTO (nota 23)",
+   "actual": "(489.036)",
+   "anterior": "(412.120)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 270,
+   "etiqueta": "(DÉFICIT) BRUTO DA ATIVIDADE DO DESPORTO",
+   "actual": "(113.497)",
+   "anterior": "(8.105)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 273,
+   "etiqueta": "Gerais e administrativas (nota 24)",
+   "actual": "(117.671)",
+   "anterior": "(96.985)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 274,
+   "etiqueta": "Doações operação Arena (nota 1.1)",
+   "actual": "135.000",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 275,
+   "etiqueta": "Valor justo (nota 1.1)",
+   "actual": "248.161",
+   "anterior": "88.995",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 276,
+   "etiqueta": "Impairment direito de superfície (nota 1.1)",
+   "actual": "(157.495)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 277,
+   "etiqueta": "Outras receitas operacionais (nota 26)",
+   "actual": "135.624",
+   "anterior": "120.580",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 278,
+   "etiqueta": "",
+   "actual": "243.619",
+   "anterior": "112.590",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 280,
+   "etiqueta": "SUPERÁVIT ANTES DO RESULTADO FINANCEIRO",
+   "actual": "130.122",
+   "anterior": "104.485",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 283,
+   "etiqueta": "Receitas financeiras (nota 27)",
+   "actual": "34.122",
+   "anterior": "10.598",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 284,
+   "etiqueta": "Despesas financeiras (nota 27)",
+   "actual": "(128.760)",
+   "anterior": "(71.491)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 285,
+   "etiqueta": "",
+   "actual": "(94.638)",
+   "anterior": "(60.893)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 287,
+   "etiqueta": "SUPERÁVIT DO EXERCÍCIO",
+   "actual": "35.484",
+   "anterior": "43.592",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b29",
+   "linea": 1229,
+   "etiqueta": "Receita de Transmissão (a)",
+   "actual": "155.548",
+   "anterior": "178.616",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA DA ATIVIDADE DE DESPORTO (nota 22)"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1230,
+   "etiqueta": "Receitas Patrimoniais",
+   "actual": "2.287",
+   "anterior": "99.046",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA DA ATIVIDADE DE DESPORTO (nota 22)"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1231,
+   "etiqueta": "Receitas Publicitárias",
+   "actual": "107.592",
+   "anterior": "65.375",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA DA ATIVIDADE DE DESPORTO (nota 22)"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1232,
+   "etiqueta": "Receitas de Luvas Contratuais",
+   "actual": "833",
+   "anterior": "17.706",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA DA ATIVIDADE DE DESPORTO (nota 22)"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1233,
+   "etiqueta": "Receitas de Jogos (c)",
+   "actual": "3.910",
+   "anterior": "11.997",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA DA ATIVIDADE DE DESPORTO (nota 22)"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1234,
+   "etiqueta": "Receitas de Royalties",
+   "actual": "7.656",
+   "anterior": "11.775",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA DA ATIVIDADE DE DESPORTO (nota 22)"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1235,
+   "etiqueta": "Premiações de Competições",
+   "actual": "32",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA DA ATIVIDADE DE DESPORTO (nota 22)"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1236,
+   "etiqueta": "Locações (c)",
+   "actual": "2.540",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA DA ATIVIDADE DE DESPORTO (nota 22)"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1237,
+   "etiqueta": "Arrecadação Quadro Social",
+   "actual": "67.551",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA DA ATIVIDADE DE DESPORTO (nota 22)"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1238,
+   "etiqueta": "Vendas Grêmio Mania (b)",
+   "actual": "31.815",
+   "anterior": "22.150",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA DA ATIVIDADE DE DESPORTO (nota 22)"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1239,
+   "etiqueta": "(-) Devoluções de vendas (b)",
+   "actual": "(809)",
+   "anterior": "(417)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA DA ATIVIDADE DE DESPORTO (nota 22)"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1240,
+   "etiqueta": "(-) Impostos sobre vendas (b)",
+   "actual": "(5.358)",
+   "anterior": "(3.167)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA DA ATIVIDADE DE DESPORTO (nota 22)"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1241,
+   "etiqueta": "Outras Receitas do Desporto",
+   "actual": "1.942",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA DA ATIVIDADE DE DESPORTO (nota 22)"
+  },
+  {
+   "bloque": "b29",
+   "linea": 1242,
+   "etiqueta": "",
+   "actual": "375.539",
+   "anterior": "403.081",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "RECEITA DA ATIVIDADE DE DESPORTO (nota 22)"
+  },
+  {
+   "bloque": "b30",
+   "linea": 1264,
+   "etiqueta": "Campeonato Brasileiro",
+   "actual": "131.407",
+   "anterior": "133.682",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita de Transmissão (a)"
+  },
+  {
+   "bloque": "b30",
+   "linea": 1265,
+   "etiqueta": "Campeonato Gaúcho",
+   "actual": "8.920",
+   "anterior": "8.500",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita de Transmissão (a)"
+  },
+  {
+   "bloque": "b30",
+   "linea": 1266,
+   "etiqueta": "Copa do Brasil",
+   "actual": "5.853",
+   "anterior": "5.670",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita de Transmissão (a)"
+  },
+  {
+   "bloque": "b30",
+   "linea": 1267,
+   "etiqueta": "Copa Libertadores/Sul Americana",
+   "actual": "9.008",
+   "anterior": "30.464",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita de Transmissão (a)"
+  },
+  {
+   "bloque": "b30",
+   "linea": 1268,
+   "etiqueta": "Campeonato Brasileiro Feminino",
+   "actual": "360",
+   "anterior": "300",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita de Transmissão (a)"
+  },
+  {
+   "bloque": "b30",
+   "linea": 1269,
+   "etiqueta": "",
+   "actual": "155.548",
+   "anterior": "178.616",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Receita de Transmissão (a)"
+  },
+  {
+   "bloque": "b34",
+   "linea": 1335,
+   "etiqueta": "Doações",
+   "actual": "12.507",
+   "anterior": "11",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outras receitas operacionais (nota 26)"
+  },
+  {
+   "bloque": "b34",
+   "linea": 1336,
+   "etiqueta": "Venda de Atletas (b)",
+   "actual": "123.804",
+   "anterior": "105.303",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outras receitas operacionais (nota 26)"
+  },
+  {
+   "bloque": "b34",
+   "linea": 1337,
+   "etiqueta": "Recuperação de Despesas (a)",
+   "actual": "5.077",
+   "anterior": "15.523",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outras receitas operacionais (nota 26)"
+  },
+  {
+   "bloque": "b34",
+   "linea": 1338,
+   "etiqueta": "Mecanismo de Solidariedade (c)",
+   "actual": "3.301",
+   "anterior": "1.017",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outras receitas operacionais (nota 26)"
+  },
+  {
+   "bloque": "b34",
+   "linea": 1339,
+   "etiqueta": "Festejos e Aniversários",
+   "actual": "156",
+   "anterior": "157",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outras receitas operacionais (nota 26)"
+  },
+  {
+   "bloque": "b34",
+   "linea": 1340,
+   "etiqueta": "Custo Baixa Direitos Econômicos",
+   "actual": "(9.221)",
+   "anterior": "(1.431)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outras receitas operacionais (nota 26)"
+  },
+  {
+   "bloque": "b34",
+   "linea": 1341,
+   "etiqueta": "",
+   "actual": "135.624",
+   "anterior": "120.580",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Outras receitas operacionais (nota 26)"
+  },
+  {
+   "bloque": "b35",
+   "linea": 1347,
+   "etiqueta": "Reversão despesas renegociação comissões e outras",
+   "actual": "1.679",
+   "anterior": "3.928",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Recuperação de Despesas (a)"
+  },
+  {
+   "bloque": "b35",
+   "linea": 1348,
+   "etiqueta": "Auxílio enchente (cedido pela CBF. Gov.Fed., doadores)",
+   "actual": "-",
+   "anterior": "8.236",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Recuperação de Despesas (a)"
+  },
+  {
+   "bloque": "b35",
+   "linea": 1349,
+   "etiqueta": "Recuperação despesas Bancárias",
+   "actual": "20",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Recuperação de Despesas (a)"
+  },
+  {
+   "bloque": "b35",
+   "linea": 1350,
+   "etiqueta": "Recuperação despesas correio – Loja",
+   "actual": "1.969",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Recuperação de Despesas (a)"
+  },
+  {
+   "bloque": "b35",
+   "linea": 1351,
+   "etiqueta": "Ressarcimento despesas categoria de Base e Feminino",
+   "actual": "231",
+   "anterior": "146",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Recuperação de Despesas (a)"
+  },
+  {
+   "bloque": "b35",
+   "linea": 1352,
+   "etiqueta": "Ressarcimento passagens / fretamento aeronaves",
+   "actual": "-",
+   "anterior": "4",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Recuperação de Despesas (a)"
+  },
+  {
+   "bloque": "b35",
+   "linea": 1353,
+   "etiqueta": "Baixa de passivos por prescrição",
+   "actual": "-",
+   "anterior": "652",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Recuperação de Despesas (a)"
+  },
+  {
+   "bloque": "b35",
+   "linea": 1354,
+   "etiqueta": "Reembolso de despesas diversas",
+   "actual": "1.178",
+   "anterior": "1.308",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Recuperação de Despesas (a)"
+  },
+  {
+   "bloque": "b35",
+   "linea": 1355,
+   "etiqueta": "Sinistros",
+   "actual": "-",
+   "anterior": "447",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Recuperação de Despesas (a)"
+  },
+  {
+   "bloque": "b35",
+   "linea": 1356,
+   "etiqueta": "Recuperação de créditos tributários",
+   "actual": "-",
+   "anterior": "802",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Recuperação de Despesas (a)"
+  },
+  {
+   "bloque": "b35",
+   "linea": 1357,
+   "etiqueta": "",
+   "actual": "5.077",
+   "anterior": "15.523",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Recuperação de Despesas (a)"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1442,
+   "etiqueta": "Variações monetárias",
+   "actual": "21.106",
+   "anterior": "5.244",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas financeiras (nota 27)"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1443,
+   "etiqueta": "Juros e correção monetária sobre créditos",
+   "actual": "12.134",
+   "anterior": "5.331",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas financeiras (nota 27)"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1444,
+   "etiqueta": "Descontos recebidos",
+   "actual": "882",
+   "anterior": "23",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas financeiras (nota 27)"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1445,
+   "etiqueta": "",
+   "actual": "34.122",
+   "anterior": "10.598",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Receitas financeiras (nota 27)"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1447,
+   "etiqueta": "Juros e correção monetária sobre duplicatas e parcelas",
+   "actual": "(49.733)",
+   "anterior": "(20.836)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras (nota 27)"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1448,
+   "etiqueta": "Juros e correção monetária sobre empréstimos",
+   "actual": "(46.342)",
+   "anterior": "(32.276)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras (nota 27)"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1449,
+   "etiqueta": "Variações monetárias",
+   "actual": "(24.497)",
+   "anterior": "(12.139)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras (nota 27)"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1450,
+   "etiqueta": "IOF – Imposto sobre operações financeiras",
+   "actual": "(6.589)",
+   "anterior": "(1.821)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras (nota 27)"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1451,
+   "etiqueta": "Despesas bancárias",
+   "actual": "(1.599)",
+   "anterior": "(4.419)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras (nota 27)"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1452,
+   "etiqueta": "",
+   "actual": "(128.760)",
+   "anterior": "(71.491)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras (nota 27)"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1453,
+   "etiqueta": "DÉFICIT FINANCEIRO",
+   "actual": "(94.638)",
+   "anterior": "(60.893)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 1291,
+   "etiqueta": "Salários, benefícios encargos sociais",
+   "actual": "(211.779)",
+   "anterior": "(194.295)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTO DA ATIVIDADE DE DESPORTO (nota 23)"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1292,
+   "etiqueta": "Despesas Federações, Imagens, Prémios, Mat. Esportivo e outras",
+   "actual": "(111.434)",
+   "anterior": "(90.052)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTO DA ATIVIDADE DE DESPORTO (nota 23)"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1293,
+   "etiqueta": "Amortização de Direitos sobre Atletas Profissionais",
+   "actual": "(101.900)",
+   "anterior": "(47.404)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTO DA ATIVIDADE DE DESPORTO (nota 23)"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1294,
+   "etiqueta": "Serviços de terceiro",
+   "actual": "(6.507)",
+   "anterior": "(6.354)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTO DA ATIVIDADE DE DESPORTO (nota 23)"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1295,
+   "etiqueta": "Despesas de Viagens",
+   "actual": "(21.889)",
+   "anterior": "(18.700)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTO DA ATIVIDADE DE DESPORTO (nota 23)"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1296,
+   "etiqueta": "Negociação de atletas",
+   "actual": "(18.944)",
+   "anterior": "(22.270)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTO DA ATIVIDADE DE DESPORTO (nota 23)"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1297,
+   "etiqueta": "CMV – Grêmio Mania",
+   "actual": "(15.726)",
+   "anterior": "(10.977)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTO DA ATIVIDADE DE DESPORTO (nota 23)"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1298,
+   "etiqueta": "Ingressos a Sócios",
+   "actual": "(857)",
+   "anterior": "(22.068)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "CUSTO DA ATIVIDADE DE DESPORTO (nota 23)"
+  },
+  {
+   "bloque": "b32",
+   "linea": 1299,
+   "etiqueta": "",
+   "actual": "(489.036)",
+   "anterior": "(412.120)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "CUSTO DA ATIVIDADE DE DESPORTO (nota 23)"
+  },
+  {
+   "bloque": "b33",
+   "linea": 1305,
+   "etiqueta": "Salários, benefícios e Encargos Sociais - Demais Administrativas",
+   "actual": "(36.360)",
+   "anterior": "(37.690)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e administrativas (nota 24)"
+  },
+  {
+   "bloque": "b33",
+   "linea": 1306,
+   "etiqueta": "Serviços de Terceiros",
+   "actual": "(29.626)",
+   "anterior": "(23.999)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e administrativas (nota 24)"
+  },
+  {
+   "bloque": "b33",
+   "linea": 1307,
+   "etiqueta": "Contingências Judiciais",
+   "actual": "(14.717)",
+   "anterior": "(8.786)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e administrativas (nota 24)"
+  },
+  {
+   "bloque": "b33",
+   "linea": 1308,
+   "etiqueta": "Aluguéis, Seguros, Materiais de Consumo e de Expediente",
+   "actual": "(11.776)",
+   "anterior": "(8.981)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e administrativas (nota 24)"
+  },
+  {
+   "bloque": "b33",
+   "linea": 1309,
+   "etiqueta": "Depreciação/Amortização Ativos Imobilizados e intangíveis",
+   "actual": "(10.359)",
+   "anterior": "(6.327)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e administrativas (nota 24)"
+  },
+  {
+   "bloque": "b33",
+   "linea": 1310,
+   "etiqueta": "Água, Luz, Telefonia, Manutenção, Transportes e outras",
+   "actual": "(7.663)",
+   "anterior": "(6.182)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e administrativas (nota 24)"
+  },
+  {
+   "bloque": "b33",
+   "linea": 1311,
+   "etiqueta": "Publicitárias",
+   "actual": "(2.383)",
+   "anterior": "(1.718)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e administrativas (nota 24)"
+  },
+  {
+   "bloque": "b33",
+   "linea": 1312,
+   "etiqueta": "Provisão Créditos Liquidação Duvidosa",
+   "actual": "(2.134)",
+   "anterior": "(685)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e administrativas (nota 24)"
+  },
+  {
+   "bloque": "b33",
+   "linea": 1313,
+   "etiqueta": "Outras despesas",
+   "actual": "(1.276)",
+   "anterior": "(1.879)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e administrativas (nota 24)"
+  },
+  {
+   "bloque": "b33",
+   "linea": 1314,
+   "etiqueta": "Tributos e Contribuições Federais",
+   "actual": "(1.377)",
+   "anterior": "(738)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e administrativas (nota 24)"
+  },
+  {
+   "bloque": "b33",
+   "linea": 1315,
+   "etiqueta": "",
+   "actual": "(117.671)",
+   "anterior": "(96.985)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gerais e administrativas (nota 24)"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 287,
+  "actual": "35.484",
+  "anterior": "43.592"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de resultado de Grêmio Mania (b31, L1277-L1281) porque mezcla renglones de ingresos (nota 22) y de costos (nota 23) ya cargados?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Vendas Grêmio Mania (b)",
+   "texto": "b31 repite ventas, ICMS y devoluciones de b29 y un CMV (15.861, L1279) que difiere del CMV de b32 (15.726, L1297); su total 9.787 es un margen, no un renglón del estado.",
+   "bloques": [
+    "b31",
+    "b29",
+    "b32"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se toma como importe 2024 de 'RECEITA DA ATIVIDADE DE DESPORTO' el 404.015 del estado (L268) pese a que la nota 22 suma 403.081 (L1242)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "RECEITA DA ATIVIDADE DE DESPORTO (nota 22)",
+   "texto": "Diferencia de 934 en el año anterior entre estado y nota; no afecta el ejercicio 2025.",
+   "bloques": [
+    "b3",
+    "b29"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Escala solo explícita en b3 (miles de reales); las notas coinciden en importes, se asumen miles. Las referencias del estado (nota 26, 27) no coinciden con la numeración de las notas (25, 26), pero los importes concuerdan. No hay impuesto a las ganancias. No se imprime total de ingresos ni de gastos."
+}
