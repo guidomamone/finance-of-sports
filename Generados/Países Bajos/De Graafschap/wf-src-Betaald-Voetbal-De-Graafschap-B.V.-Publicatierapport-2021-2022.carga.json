@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Países Bajos/De Graafschap/wf-src-Betaald-Voetbal-De-Graafschap-B.V.-Publicatierapport-2021-2022.pdf",
- "generado": "2026-10-19T03:08:05.847Z",
+ "generado": "2026-10-19T03:38:11.151Z",
  "frena": [
   {
    "etapa": "club",
@@ -325,10 +325,9 @@
   }
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de nl 2022 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "nl-eerstedivisie",
+  "fuente": "roster cacheado de \"2021–22 Eerste Divisie\" (tools/club-league-reference/nl.json), coincidencia exacta \"De Graafschap\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -367,9 +366,9 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de nl 2022 cacheada",
-   "estado": "pendiente"
+   "valor": "nl-eerstedivisie",
+   "fuente": "roster cacheado de \"2021–22 Eerste Divisie\" (tools/club-league-reference/nl.json), coincidencia exacta \"De Graafschap\"",
+   "estado": "ok"
   }
  },
  "resumen": {

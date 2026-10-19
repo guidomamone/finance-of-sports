@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 307 clubes, 1032 ejercicios, 21 países.
+TOTAL: 308 clubes, 1033 ejercicios, 21 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -286,11 +286,12 @@ JAPÓN (10)
 MÉXICO (1)
   Club América  1 ejercicio (2025), balance, MXN, sin deuda/caja
 
-NL (26)
+NL (27)
   ADO Den Haag      1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
   Ajax              2 ejercicios (2023/2024 a 2024/2025), balance, EUR
   Almere City       1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
   AZ                2 ejercicios (2023/2024 a 2024/2025), balance, EUR
+  De Graafschap     1 ejercicio (2021/2022), balance, EUR, sin deuda/caja
   Excelsior         1 ejercicio (2023/2024), balance, EUR, sin deuda/caja
   FC Den Bosch      1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
   FC Dordrecht      1 ejercicio (2024/2025), balance, EUR, sin deuda/caja

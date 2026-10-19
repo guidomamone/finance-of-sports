@@ -84,6 +84,7 @@ window.CLUB_INDEX = {
   "crystalpalace-gb": {"n":"Crystal Palace","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"]]},
   "cskamoscow-ru": {"n":"CSKA Moscow","c":"RU","q":"full","y":5,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
   "cuiaba-br": {"n":"Cuiaba","c":"BR","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
+  "degraafschap-nl": {"n":"De Graafschap","c":"NL","q":"full","y":1,"last":2022,"yrs":[[2022,"official_balance_sheet"]]},
   "dender-be": {"n":"Dender EH","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "depcali-co": {"n":"Deportivo Cali","c":"CO","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "deportivoalaves": {"n":"Deportivo Alavés","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},

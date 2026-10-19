@@ -34,4 +34,13 @@ window.RANKINGS["nl-eerstedivisie"] = {
         mix:[["Venta de Jugadores",0.231],["Fútbol profesional (sin desglosar por la fuente)",6.019]] },
     ],
   },
+  2022: {
+    leagueSize: null,
+    wiki: {"t":"2021–22 Eerste Divisie","lang":"en","at":"2026-10-19","n":20},
+    clubs: [
+      { id:"degraafschap-nl", revenue:8.646, reportType:"official_balance_sheet",
+        sourceId:"degraafschap-nl-wf-src-betaald-voetbal-de-graafschap-b-v-publicatierapport-2021-2022",
+        mix:[["Venta de Jugadores",0.053],["Fútbol profesional (sin desglosar por la fuente)",8.593]] },
+    ],
+  },
 };

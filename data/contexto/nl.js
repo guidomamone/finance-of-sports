@@ -17,6 +17,9 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"AFAS Stadion","capacidad":19478,"sponsor":"Kansino","marca":"Nike","temporada":"2023–24 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377460717"},
     2025: {"estadio":"AFAS Stadion","capacidad":19478,"sponsor":"Kansino","marca":"Nike","temporada":"2024–25 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378045333"},
   },
+  'degraafschap-nl': {
+    2022: {"estadio":"Stadion De Vijverberg","capacidad":12600,"sponsor":"AgriBioSource","temporada":"2021–22 Eerste Divisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1285874557"},
+  },
   'excelsior-nl': {
     2024: {"estadio":"Van Donge & De Roo Stadion","capacidad":4500,"sponsor":"DSW Zorgverzekeraar","marca":"Quick","temporada":"2023–24 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377460717"},
   },
