@@ -83,6 +83,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2021: {"estadio":"Edmond Machtens Stadium","capacidad":12266,"sponsor":"Symbio","marca":"Joma","temporada":"2020–21 Belgian First Division B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375726247"},
     2022: {"estadio":"Edmond Machtens Stadium","capacidad":12266,"sponsor":"Symbio","marca":"Joma","temporada":"2021–22 Belgian First Division B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376207947"},
     2023: {"estadio":"Edmond Machtens Stadium","capacidad":12266,"sponsor":"Facebank","marca":"Joma","temporada":"2022–23 Challenger Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380217514"},
+    2024: {"estadio":"Edmond Machtens","capacidad":12266,"sponsor":"Golden Palace","temporada":"2023–24 Belgian Pro League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378025162","fuenteManual":"https://nl.wikipedia.org/wiki/Eerste_klasse_A_2023-24_(voetbal_Belgi%C3%AB)","manual":["estadio","sponsor"]},
     2025: {"estadio":"Edmond Machtens","capacidad":12266,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","manual":["estadio","capacidad"]},
   },
   'sinttruiden-be': {

@@ -1001,7 +1001,7 @@ window.SPONSORS = {
     "gobernacion-del-meta": {"n":"Gobernación del Meta","roles":["c"],"e":[["co-primeraA",2026,"Llaneros",null,"c"],["co-primeraA",2025,"Llaneros",null,"c"]]},
     "golaco": {"n":"Golaço","roles":["m"],"e":[["br-serieC",2026,"Floresta",null,"m"],["br-serieC",2025,"Floresta",null,"m"],["br-serieC",2024,"Floresta",null,"m"],["br-serieC",2023,"Floresta",null,"m"],["br-serieC",2022,"Floresta",null,"m"]]},
     "gold-meat": {"n":"Gold Meat","roles":["c"],"e":[["br-serieA",2020,"Botafogo","botafogo","c"]]},
-    "golden-palace": {"n":"Golden Palace","roles":["c"],"e":[["be-challengerproleague",2024,"Lierse SK","liersesk-be","c","https://nl.wikipedia.org/wiki/Eerste_klasse_B_2023-24_(voetbal_Belgi%C3%AB)"]]},
+    "golden-palace": {"n":"Golden Palace","roles":["c"],"e":[["be-challengerproleague",2024,"Lierse SK","liersesk-be","c","https://nl.wikipedia.org/wiki/Eerste_klasse_B_2023-24_(voetbal_Belgi%C3%AB)"],["be-proleague",2024,"RWDM","rwdm-be","c","https://nl.wikipedia.org/wiki/Eerste_klasse_A_2023-24_(voetbal_Belgi%C3%AB)"]]},
     "goldenpark": {"n":"GoldenPark","roles":["c"],"e":[["pt-primeiraliga",2026,"Gil Vicente","gilvicente-pt","c"],["pt-primeiraliga",2025,"Gil Vicente","gilvicente-pt","c"]]},
     "goldenpark-casino": {"n":"Goldenpark Casino","roles":["c"],"e":[["pt-primeiraliga",2027,"Gil Vicente","gilvicente-pt","c"]]},
     "golkiper": {"n":"Golkiper","roles":["m"],"e":[["br-serieC",2026,"Maranhão",null,"m"]]},

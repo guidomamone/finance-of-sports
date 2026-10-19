@@ -59,6 +59,9 @@ window.RANKINGS["be-proleague"] = {
       { id:"ohleuven-be", revenue:33.693, reportType:"official_balance_sheet",
         sourceId:"ohleuven-be-jaarrekening-2024-06-30-individual",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",26.507],["Otros ingresos",7.185]] },
+      { id:"rwdm-be", revenue:4.244, reportType:"official_balance_sheet",
+        sourceId:"rwdm-be-jaarrekening-2024-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",4.244]] },
     ],
   },
   2022: {
