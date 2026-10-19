@@ -42,7 +42,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **D. Onboarding grande**
 * 238: llevar a 0 los documentos que quedaron a mitad de camino --> Onboarding 3
-* 261: Reino Unido, transcripción por subagentes (validación de ~US$ 11,48 para correr vos)
+* 261: Reino Unido: validado; sigue el lote de carga y la cola de transcripción
 * 165 c: altas de los países nuevos que faltan --> Onboarding 3
 * 195: gestiones (presidentes) sin fuente confirmada (Fortaleza 2025: ¿CEO o presidente del consejo? lo decidís vos)
 * 295: balances de las entidades que organizan las ligas: lo que queda (segundas divisiones; varias no publican)
@@ -362,9 +362,9 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
     commiteados (93 con subagentes Opus y 21 con Sonnet) (Tesseract + revisión de las páginas clave contra la imagen; los 93 dan 0 P1 / 0 P2 en `check-transcripcion-fidelidad.js`):
     años 2021-2026 de los clubes de Premier, F1, cricket y rugby que ya tenían algún .md. Cola, scripts e instrucciones:
     `Admin/transcripcion-subagentes/README.md` (van 74 de 1531 bloques; `claim.sh` tiene la ruta de la principal: en un worktree, una copia apuntada a esa carpeta; quedan unos 3600 PDFs, casi todos escaneos). Falta:
-    a) Validarlos: Guido corre `pipeline.mjs --lista Admin/lotes/reino-unido-validar.txt` (~US$ 11,48; los 6 de Sonnet del 19-10 no
-       están en la lista) y después el lote (etapa 3 en adelante). Notas de West Ham 2019-21 y parte de Aston Villa cerradas por sumas,
-       no contra la imagen: mirarlas antes de cargar caja y deuda.
+    a) Validados (19-10: 106 listos, US$ 8,59; los 6 de Sonnet del 19-10 no). Falta el lote (etapa 3 en adelante); Celtic 2020-21 con
+       `--max-paginas 0`. Tres con páginas que solo validó Claude (Celtic 2021-22 pág. 52; los otros en `transcripciones-estado.jsonl`):
+       cerrar con sum-check al onboardear. Notas de West Ham 2019-21 y parte de Aston Villa cerradas por sumas: mirarlas antes de caja y deuda.
     b) Sociedad de cada documento: ya listada en `Admin/transcripcion-subagentes/sociedad-por-documento.md` (cinco pares con dos
        sociedades el mismo ejercicio: Aston Villa 2022-23 y 2023-24, Brighton, Fulham y Sunderland 2022-23). Falta decidir cuál entra en
        cada par (regla de perímetro de `Admin/CONVENCIONES-DATOS.md`) y mandar la otra a descartados.

@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 797 — Reino Unido: 106 transcripciones validadas (2026-10-19)
+
+* 261 a: `pipeline.mjs --lista` sobre los 108 `.md` del Reino Unido (US$ 8,59): 106 listos; 36 rehechos, con 0 P1 / 0 P2 de fidelidad.
+
 ## Versión 796 — club-sourcing: una sola carpeta por club; 306 y 307 cerrados (2026-10-19)
 
 * Skill `club-sourcing`: "Una sola carpeta por club" (mirar la entidad de la portada al guardar; ok de Guido).
