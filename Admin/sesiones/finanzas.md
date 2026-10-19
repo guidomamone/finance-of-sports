@@ -250,3 +250,56 @@
 - La (g) del 282 (el extractor en estonio) se le pasó a pipeline 2, a pedido de Guido.
 
 ## Después del tercer merge de la sesión 3 (2026-10-18)
+
+## Finanzas 4
+
+### Qué cambió (para CHANGELOG)
+
+- To-do 294: siete clubes del borrador `altas-2026-10-17.md` entran al registro de entidades, cada uno con su carga (ejercicio y entidad
+  que publica el sitio) y las relaciones que dice el documento de ese año, con cita por línea (verificadas con `tools/entidades.mjs --con`).
+  Registro: 57 clubes con estructura, 9 grupos, 257 entidades, 359 relaciones. Commit 36b4918e7e (ASSET_V 1333).
+  - Viking Fotball AS 2025 (consolidado): Viking Stadion AS 100 % (consolidada); Vikingklinikken y WeWent Live 49 %; accionistas con 5 % o
+    más (Endury, Tveteraae, Stiftelsen Viking FK, T S Holding, Sparebank 1 Sør-Norge) y Viking Fotballklubb (FLI, 2,44 %).
+  - Go Ahead Eagles Holding B.V. 2025 (consolidado): Go Ahead Eagles Voetbal B.V. 100 % (consolidada). El balance no dice quién es el
+    dueño de la holding: sin dueños.
+  - Vålerenga Fotball AS 2025 (individual): dueña Magni Sports AS 100 %; Vålerenga Fotball Elite (FLI) `vinculada` por el contrato de
+    colaboración; Vålerenga Sport AS 22,86 % (45.265 de 198.000 acciones).
+  - Ålesund Fotball AS 2025 (individual): Aalesunds Fotballklubb (FLI) la controla con 77,14 %.
+  - Molde Fotballklubb 2025 (individual, el FLI): Akerhallen AS 50,5 % (`controla`, fuera de las cuentas, con nota); Molde Fotball AS
+    `vinculada` (compra los derechos de marketing; dueña la Stiftelsen Molde Fotball, 100 %).
+  - Sarpsborg 08 Fotballforening 2025 (individual): Prozo Norge AS 100 % (consolidada en el konsern del FLI, pero el sitio publica el
+    individual); Sarpsborg Fotball Invest AS `vinculada` (20 % de los derechos económicos del plantel, sin empleados).
+  - FC Basel 1893 AG 2021 (individual): FC Basel Holding AG 75 % y Verein FC Basel 1893 25 %; Stadiondienst AG 100 % (fuera de las cuentas);
+    David Degen 100 % de la holding desde mayo de 2021.
+  - Criterio que apliqué (para CONVENCIONES-DATOS si Guido lo confirma): de los accionistas se registran los de 5 % o más y el club asociación.
+    `desde` es el primer ejercicio que cita el documento (los demás años de cada club no están cargados).
+- To-do 282, Lazio 2006: el informe de Deloitte & Touche sobre el bilancio d'esercizio al 30-06-2006, recuperado de la captura de Wayback
+  truncada (el PDF son imágenes JPEG sueltas: la página 1 se salva entera con un script de recorte, la 2 queda cortada). La página 1 trae la
+  opinión: con salvedades (deuda bancaria subestimada en 8,3 M, sin efecto en el patrimonio ni el resultado) y un llamado sobre la
+  continuidad (ÉNFASIS CONTINUIDAD: lo que sigue está en la página cortada). Falta la firma. Transcripción de la pág. 1 cotejada con la imagen
+  en `Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-esercizio-2005-06.md` (el PDF, a `documentos-descartados.txt`; copiado a la
+  principal con `rsync --no-links`). La línea de 2006 pasa de `falta_transcripcion` a `con_salvedades`. Commit c0bd5d2662 (ASSET_V 1334).
+  FALTA EN EL PDF baja en uno.
+
+### Qué queda (para TODO)
+
+- 282, Roma 2022: no hay informe del consolidado público. La página del club lista "consolidato" con el mismo link que el separato; el
+  PDF del consolidado (116 págs.) es idéntico en Wayback (mismo digest, 2023-05-02 y 2024-01-09) y ningún espejo de `media.asroma.com`,
+  Cloudinary ni S3 en Wayback tiene un informe del consolidado de 2022. Lo único que hay es el informe del separato (Deloitte, 5 págs.,
+  richiamo d'informativa por la continuidad), ya bajado como `AS-Roma-relazione-revisione-separato-2022.pdf` y sin `.md`. Decisión de
+  Guido: ¿se deja en pendiente (el sitio publica el consolidado) o se cita el del separato con una nota?
+- 282, Hamburgo 2024 (2023-24): el Bundesanzeiger no lo tiene (lista Jahresabschlüsse hasta 2021-22, publicado el 27-07-2023, y después
+  solo la Anleihe). Queda el Unternehmensregister: Guido tiene que resolver el captcha de cada publicación (la KGaA, HRB 191603, o la AG
+  vieja, HRB 47576).
+- 282 (f): 10 balances nuevos sin línea de auditoría (los 7 del 294, Fredrikstad 2024, Luzern 2025 y St. Gallen 2025: altas del lote 94).
+- Fredrikstad, Luzern y St. Gallen para el 294 cuando onboarding los publique (el borrador tiene la entidad de cada uno); Pardubice no se da de alta.
+- 281 y 294: nada más de lo que se les pidió a esta sesión.
+
+### Qué deja de ser cierto en ESTADO
+
+- El registro de entidades tiene 57 clubes con estructura (no 50) y 9 grupos.
+
+### Gotcha
+
+- `tools/entidades.mjs --con <borrador>` verifica el borrador contra los .md sin escribir y sale limpio aunque diga "data/entidades/ desactualizado":
+  ese aviso es normal con `--con`.
