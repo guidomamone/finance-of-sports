@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2015-06-30-individual.pdf",
- "generado": "2026-10-19T14:23:54.252Z",
+ "generado": "2026-10-19T14:41:36.183Z",
  "frena": [],
  "avisos": [
   "gestión: ningún presidente confirmado cubre 2015 (cierre 2015-06-30); pregunta en la cola (no frena)"
@@ -19,7 +19,7 @@
     "_pag": 5,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía no_es_rubro)"
    },
    {
     "rawLabel": "Uitzonderlijke opbrengsten",
@@ -119,7 +119,7 @@
      "renglon": "Bedrijfsopbrengsten",
      "lado": "revenue",
      "importe": 0.933485,
-     "motivo": "Claude 2026-10-18 (subagente Sonnet): Igual que 2017: es la totalidad de los ingresos operativos sin desglose (Omzet 70 y 73 vacios), no 'Otros ingresos'. Cierra: 362.776 - 217.830 (60/61) = 144.946 = Brutomarge; 144.946 - 447.348 - 52.324 = -354.726 = 9901. [Bedrijfsopbrengsten 70/74 362.776 (L231); Omzet vacio (L232); 60/61 217.830 (L234)]"
+     "motivo": "el documento no desglosa este renglón"
     }
    ],
    "grossDebt": null,
@@ -169,10 +169,8 @@
    "cat": "lump_football_operations",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía no_es_rubro)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Igual que 2017: es la totalidad de los ingresos operativos sin desglose (Omzet 70 y 73 vacios), no 'Otros ingresos'. Cierra: 362.776 - 217.830 (60/61) = 144.946 = Brutomarge; 144.946 - 447.348 - 52.324 = -354.726 = 9901. [Bedrijfsopbrengsten 70/74 362.776 (L231); Omzet vacio (L232); 60/61 217.830 (L234)]",
    "destino": "revenue",
    "amountNative": 0.933485
   },
@@ -341,10 +339,9 @@
   }
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de be 2015 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "be-challengerproleague",
+  "fuente": "roster cacheado de \"2014–15 Belgian Second Division\" (tools/club-league-reference/be.json), coincidencia exacta \"Patro Eisden Maasmechelen\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -383,9 +380,9 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de be 2015 cacheada",
-   "estado": "pendiente"
+   "valor": "be-challengerproleague",
+   "fuente": "roster cacheado de \"2014–15 Belgian Second Division\" (tools/club-league-reference/be.json), coincidencia exacta \"Patro Eisden Maasmechelen\"",
+   "estado": "ok"
   }
  },
  "resumen": {

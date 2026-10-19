@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2021-06-30-individual.pdf",
- "generado": "2026-10-19T14:23:52.427Z",
+ "generado": "2026-10-19T14:41:34.949Z",
  "frena": [
   {
    "etapa": "categoria-en-cola",
@@ -224,10 +224,9 @@
   }
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de be 2021 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "be-challengerproleague",
+  "fuente": "roster cacheado de \"2020–21 Belgian First Division B\" (tools/club-league-reference/be.json), coincidencia exacta \"Lierse Kempenzonen\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -266,9 +265,9 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de be 2021 cacheada",
-   "estado": "pendiente"
+   "valor": "be-challengerproleague",
+   "fuente": "roster cacheado de \"2020–21 Belgian First Division B\" (tools/club-league-reference/be.json), coincidencia exacta \"Lierse Kempenzonen\"",
+   "estado": "ok"
   }
  },
  "resumen": {

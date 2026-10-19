@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2021-06-30-individual.pdf",
- "generado": "2026-10-19T14:23:54.755Z",
+ "generado": "2026-10-19T14:41:36.254Z",
  "frena": [
   {
    "etapa": "categoria-en-cola",
@@ -310,10 +310,9 @@
   }
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de be 2021 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "be-div1amateur",
+  "fuente": "roster cacheado de \"2020–21 Belgian National Division 1\" (tools/club-league-reference/be.json), coincidencia exacta \"Patro Eisden Maasmechelen\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -352,9 +351,9 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de be 2021 cacheada",
-   "estado": "pendiente"
+   "valor": "be-div1amateur",
+   "fuente": "roster cacheado de \"2020–21 Belgian National Division 1\" (tools/club-league-reference/be.json), coincidencia exacta \"Patro Eisden Maasmechelen\"",
+   "estado": "ok"
   }
  },
  "resumen": {

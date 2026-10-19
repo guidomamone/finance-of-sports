@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.pdf",
- "generado": "2026-10-19T14:23:53.650Z",
+ "generado": "2026-10-19T14:41:35.849Z",
  "frena": [
   {
    "etapa": "categoria-en-cola",
@@ -653,10 +653,9 @@
   }
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de be 2020 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "be-challengerproleague",
+  "fuente": "roster cacheado de \"2019–20 Belgian First Division B\" (tools/club-league-reference/be.json), coincidencia exacta \"OH Leuven\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -695,9 +694,9 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de be 2020 cacheada",
-   "estado": "pendiente"
+   "valor": "be-challengerproleague",
+   "fuente": "roster cacheado de \"2019–20 Belgian First Division B\" (tools/club-league-reference/be.json), coincidencia exacta \"OH Leuven\"",
+   "estado": "ok"
   }
  },
  "resumen": {

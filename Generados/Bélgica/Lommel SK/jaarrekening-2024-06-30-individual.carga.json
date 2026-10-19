@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2024-06-30-individual.pdf",
- "generado": "2026-10-19T14:23:53.474Z",
+ "generado": "2026-10-19T14:41:35.762Z",
  "frena": [],
  "avisos": [
   "gastos: ningún total impreso igual a la suma de las líneas (-27.521704); queda la suma, verificada por el resultado del ejercicio"
@@ -544,10 +544,9 @@
   }
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de be 2024 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "be-challengerproleague",
+  "fuente": "roster cacheado de \"2023–24 Challenger Pro League\" (tools/club-league-reference/be.json), coincidencia única por palabras \"Lommel\" = \"Lommel SK\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -586,9 +585,9 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de be 2024 cacheada",
-   "estado": "pendiente"
+   "valor": "be-challengerproleague",
+   "fuente": "roster cacheado de \"2023–24 Challenger Pro League\" (tools/club-league-reference/be.json), coincidencia única por palabras \"Lommel\" = \"Lommel SK\"",
+   "estado": "ok"
   }
  },
  "resumen": {

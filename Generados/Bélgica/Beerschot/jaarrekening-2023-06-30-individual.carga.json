@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2023-06-30-individual.pdf",
- "generado": "2026-10-19T14:23:51.994Z",
+ "generado": "2026-10-19T14:41:34.701Z",
  "frena": [
   {
    "etapa": "categoria-en-cola",
@@ -645,10 +645,9 @@
   }
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de be 2023 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "be-challengerproleague",
+  "fuente": "roster cacheado de \"2022–23 Challenger Pro League\" (tools/club-league-reference/be.json), coincidencia exacta \"Beerschot\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -687,9 +686,9 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de be 2023 cacheada",
-   "estado": "pendiente"
+   "valor": "be-challengerproleague",
+   "fuente": "roster cacheado de \"2022–23 Challenger Pro League\" (tools/club-league-reference/be.json), coincidencia exacta \"Beerschot\"",
+   "estado": "ok"
   }
  },
  "resumen": {
