@@ -17,3 +17,13 @@
 - "van 71 de 1531 bloques" (261): van 77.
 
 ## Después del merge de la segunda tanda (2026-10-19)
+
+### Qué cambió (para CHANGELOG)
+- To-do 261: validación de los 12 `.md` de subagentes (`Admin/lotes/reino-unido-validar-2.txt`, `pipeline.mjs --ejecutar`, lo corrió Guido): 12 listos, ~US$ 1,3. Aston Villa 2019-20 y 2020-21 se rehicieron con Mistral por el control "sin tablas". Los 11 `.md` que la corrida tocó pasan 0 P1 / 0 P2 de fidelidad y no rompen citas de `entidades.jsonl`.
+
+### Qué queda (para TODO)
+- 261: el lote (etapa 3 en adelante) de los 12 + los 106 ya validados; no se transcribe más con subagentes (Guido).
+- 261 b y 295 como antes.
+
+### Qué deja de ser cierto en ESTADO
+- Nada nuevo.

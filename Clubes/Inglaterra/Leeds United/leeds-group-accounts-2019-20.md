@@ -805,59 +805,67 @@ an The whole of the turnover is attributable to the principal activity of the gr
 
 --- pág. 20 ---
 
-Leeds United Football Club Limited . 7
-Notes to the Financial Statements (continued) : . .
-Period from 1 July 2019 to 31 July 2020 :
-5. Operating profit . Lo
+Leeds United Football Club Limited
+
+Notes to the Financial Statements *(continued)*
+
+Period from 1 July 2019 to 31 July 2020
+
+### 5. Operating profit
+
 Operating profit or loss is stated after charging/crediting:
-Period from - :
-. 1 Jul 19 to- Yearto .
-: 31 Jul 20 30 Jun 19
-£ £
-Amortisation of intangible assets . 10,188,160 12,126,761 ., oo
-Depreciation of tangible assets : 2,529,774 2,103,801
-Impairment of intangible assets recognised in: :
-‘ Administrative expenses » 1,242,045 1,522,951
-mos Gains on disposal of tangible assets os . . - _ _ (750)- . .
-Impairment of trade debtors: : - 10,750
-' Foreign exchange differences ' 59,857 375,762
-Operating lease costs . , 2,633,851 ., 2,258,754 .,
-Impairment of debt ~ ‘ _ 2,189,495 . - .
-‘ Government grants _ . * (1,027,107) a
-. , The group lost profits directly due to thé closure of the stadium and conferencing centres because of the COVID-19
-pandemic. An insurance claim of £2,500,000 in respect of these losses has been accepted _ Oo : . ;
-6. Auditor's remuneration
-- oo ; Period from oo . ,
-” ; 1Jul19to Yearto ’ =
-. : . 31 Jul 20 ~ 30 Jun 19
-. £ £
-7 ‘ Fees payable for the audit of the financial statements 19,500° * 19,500 ,
-Fees payable to the company's auditor and its associates for other services: ‘ ; .
-; Audit of subsidiaries ; 5,000 5,000 Sot
-, Taxation compliance services - : : 8,650 : 10,650
-Other assurance services 7,500 : 7,500
-: Other non-audit services - 7,450 5,139
-: 28,600 28,289
-. 7. Staff costs — oo , ; —_ ; oo . :
-. The average number of persons employed by the group during the period, including the directors, amounted to: ‘
-3 ; . 31 Jul 20 30 Jun 19
-. No. No.
-Full-time playing staff 51 56
-‘ Apprentices “23 17
-Football team management . 27 27
-Management/administration . ; 131 120
-Casual match day staff 847 838
-1,079 1,058 :
-The aggregate payroll costs incurred during the period, relating to the above, were: - —
-. . - Period from ;
-. , 1 Jul.19 to Year to
-: : : 31 Jul20 ~" 30 Jun 19
-£ £
-Wages and salaries , 70,217,594 41,458,543
-. Social security costs 7,906,514 4,588,503
-Other pension costs 166,348 . 114,546 © ;
-: : 78,290,456 46,161,592
+
+| | Period from<br>1 Jul 19 to<br>31 Jul 20<br>£ | Year to<br>30 Jun 19<br>£ |
+| :--- | :---: | :---: |
+| Amortisation of intangible assets | 10,188,160 | 12,126,761 |
+| Depreciation of tangible assets | 2,529,774 | 2,103,801 |
+| Impairment of intangible assets recognised in: | | |
+| Administrative expenses | 1,242,045 | 1,522,951 |
+| Gains on disposal of tangible assets | - | (750) |
+| Impairment of trade debtors | - | 10,750 |
+| Foreign exchange differences | 59,857 | 375,762 |
+| Operating lease costs | 2,633,851 | 2,258,754 |
+| Impairment of debt | 2,189,495 | - |
+| Government grants | (1,027,107) | - |
+
+The group lost profits directly due to the closure of the stadium and conferencing centres because of the COVID-19 pandemic. An insurance claim of £2,500,000 in respect of these losses has been accepted.
+
+### 6. Auditor's remuneration
+
+| | Period from<br>1 Jul 19 to<br>31 Jul 20<br>£ | Year to<br>30 Jun 19<br>£ |
+| :--- | :---: | :---: |
+| Fees payable for the audit of the financial statements | 19,500 | 19,500 |
+| **Fees payable to the company's auditor and its associates for other services:** | | |
+| Audit of subsidiaries | 5,000 | 5,000 |
+| Taxation compliance services | 8,650 | 10,650 |
+| Other assurance services | 7,500 | 7,500 |
+| Other non-audit services | 7,450 | 5,139 |
+| | 28,600 | 28,289 |
+
+### 7. Staff costs
+
+The average number of persons employed by the group during the period, including the directors, amounted to:
+
+| | 31 Jul 20<br>No. | 30 Jun 19<br>No. |
+| :--- | :---: | :---: |
+| Full-time playing staff | 51 | 56 |
+| Apprentices | 23 | 17 |
+| Football team management | 27 | 27 |
+| Management/administration | 131 | 120 |
+| Casual match day staff | 847 | 838 |
+| | 1,079 | 1,058 |
+
+The aggregate payroll costs incurred during the period, relating to the above, were:
+
+| | Period from<br>1 Jul 19 to<br>31 Jul 20<br>£ | Year to<br>30 Jun 19<br>£ |
+| :--- | :---: | :---: |
+| Wages and salaries | 70,217,594 | 41,458,543 |
+| Social security costs | 7,906,514 | 4,588,503 |
+| Other pension costs | 166,348 | 114,546 |
+| | 78,290,456 | 46,161,592 |
+
 Included in wages and salaries are redundancy and ex-gratia payments of £1,833 (2019: £809,743).
+
 18
 
 --- pág. 21 ---
@@ -987,149 +995,184 @@ Carrying amount , ‘ . .
 
 --- pág. 24 ---
 
-Leeds United Football Club Limited ue ‘
-Notes to the Financial Statements (continued) .
-Period from 1 July 2019 to 31 July 2020 ‘
-14. Tangible assets (continued) .
-. Company Leaseholdland Alterations and Fixtures, fittings
-and buildings improvements and equipment Total
-, £ £ £ : £
-Cost :
-mB , At 1 July 2019 2,095,960 17,013,103 - 7,915,550 27,024,613 :
-. — Additions 19,962 1,299,766 ' + 851,789 2,171,517
-Oo" At 31 July 2020 2,115,922 18,312,869 8,767,339 29,196,130
-’ ‘Depreciation . _ ‘
-ut ., wo At 1 July 2019 684,377 7,833,979 +. 4,204,004 12,722,360
-‘ ote Charge for the period : . 107,363 1,245,400 - 1,000,638 2,353,401
-sO, At 31 July 2020 791,740 9,079,379 . 5,204,642 15,075,761
-Carrying amount ; : : , i .
-. cto, At 31 July 2020 1,324,182 9,233,490 3,562,697 14,120,369 :
-an At 30 June 2019 , Oe 4,411,583 9,179,124 . 3,711,546 14,302,253 ,
-an Los The directors have reviewed the carrying amount of both the tangible and intangible assets and are satisfied that they are -
-not impaired other than as described in note 13. - :
-Finance leases.contracts , , Ts an . re
-en aa Included within the carrying value of tangible assets are the following amounts relating ‘to assets held under finance ;
-leases agreements:
-oo Group : ; . : Fixtures, fittings :
-: : and equipment
-£
-. 70 ft  At 31 July 2020 oo 1,645,532
-.. At 30 June 2019 1,857,437
-7s 3 Company Fixtures, fittings
-Pe : . and equipment
-. £
-At 31 July 2020 1,623,452 .
-. ; At 30 June 2019. . — 1,819,412 7
-. 15. Investments . — oO
-The group has no investments. : ; : . Sotho
-an Company ; a . | Shares in group
-. : . . ts undertakings ;
-Cost . - ;
-: At 1 July 2019 2
-, Additions 1
-. At 31 July 2020 3
-Impairment
-- At 1 July 2019 and 31 July 2020 -
-Carrying amount :
-. At 31 July 2020 3
-! At 30 June 2019 2
+Leeds United Football Club Limited
+
+Notes to the Financial Statements *(continued)*
+
+Period from 1 July 2019 to 31 July 2020
+
+### 14. Tangible assets *(continued)*
+
+**Company**
+
+| | Leasehold land<br>and buildings<br>£ | Alterations and<br>improvements<br>£ | Fixtures, fittings<br>and equipment<br>£ | Total<br>£ |
+| :--- | :---: | :---: | :---: | :---: |
+| **Cost** | | | | |
+| At 1 July 2019 | 2,095,960 | 17,013,103 | 7,915,550 | 27,024,613 |
+| Additions | 19,962 | 1,299,766 | 851,789 | 2,171,517 |
+| **At 31 July 2020** | 2,115,922 | 18,312,869 | 8,767,339 | 29,196,130 |
+| **Depreciation** | | | | |
+| At 1 July 2019 | 684,377 | 7,833,979 | 4,204,004 | 12,722,360 |
+| Charge for the period | 107,363 | 1,245,400 | 1,000,638 | 2,353,401 |
+| **At 31 July 2020** | 791,740 | 9,079,379 | 5,204,642 | 15,075,761 |
+| **Carrying amount** | | | | |
+| **At 31 July 2020** | 1,324,182 | 9,233,490 | 3,562,697 | 14,120,369 |
+| At 30 June 2019 | 1,411,583 | 9,179,124 | 3,711,546 | 14,302,253 |
+
+The directors have reviewed the carrying amount of both the tangible and intangible assets and are satisfied that they are not impaired other than as described in note 13.
+
+#### Finance leases contracts
+
+Included within the carrying value of tangible assets are the following amounts relating to assets held under finance leases agreements:
+
+**Group**
+
+| | Fixtures, fittings<br>and equipment<br>£ |
+| :--- | :---: |
+| **At 31 July 2020** | 1,645,532 |
+| At 30 June 2019 | 1,857,437 |
+
+**Company**
+
+| | Fixtures, fittings<br>and equipment<br>£ |
+| :--- | :---: |
+| **At 31 July 2020** | 1,623,452 |
+| At 30 June 2019 | 1,819,412 |
+
+### 15. Investments
+
+The group has no investments.
+
+**Company**
+
+| | Shares in group<br>undertakings<br>£ |
+| :--- | :---: |
+| **Cost** | |
+| At 1 July 2019 | 2 |
+| Additions | 1 |
+| **At 31 July 2020** | 3 |
+| **Impairment** | |
+| At 1 July 2019 and 31 July 2020 | - |
+| **Carrying amount** | |
+| **At 31 July 2020** | 3 |
+| At 30 June 2019 | 2 |
+
 22
 
 --- pág. 25 ---
 
-Leeds United Football Club Limited : a
-Notes to the Financial Statements (continued) : , ot,
-Period from 1 July 2019 to 31 July 2020 ; .
-15. Investments (continued) ; oo une
+Leeds United Football Club Limited
+
+Notes to the Financial Statements *(continued)*
+
+Period from 1 July 2019 to 31 July 2020
+
+### 15. Investments *(continued)*
+
 Details of the investments in which the parent company has an interest of 20% or more are as follows:
-; Percentage of
-; ; , ' Class of share shares held ,
-Subsidiary undertakings
-Leeds United Conferencing and Events Limited ~ _ Ordinary 100 .
-Leeds United Media Limited ~~ Ordinary 100
-Leeds United College Limited . Ordinary 100
-The company owns the entire share capital of Leeds United Conference and Events Limited, Leeds United Media Limited
-. and Leeds United College Limited, all of which have a registered office at New Court, Abbey Road North, Shepley, HD8
-8BJ. Leeds United Conference and Events Limited has a principal activity of providing conferencing and events facilities,
-, Leeds United Media Limited has a principal activity of providing digital media and online advertising and Leeds United oO
-College Limited has a principal activity of providing educational services. ne ae
-16. Stocks oe , a, oS . a . a
-: Group Company :
-: : : toms . 31 Jul 20 30 Jun 19 31 Ju! 20 30 Jun 19 - ,
-£ £ ; ne 2 .
-, . Goods held for resale 1,783,295 2,982,046 1,741,623 2,945,389
-. 17. Debtors — . . ; o ; .
-Debtors falling due within one year are as follows: , ‘ ,
-: . Group . Company
-, 31 Jul 20 30 Jun 19 31 Jul 20 30 Jun 19
-£ ‘ £ £ £
-. Trade debtors 1,867,245 3,004,722 1,757,344 2,645,804
-Amounts owed by group undertakings - - 285,112 -
-Prepayments and accrued income 8,863,277 2,164,603 8,056,872 2,054,725
-Transfer fee debtors 5,419,041 8,717,627 5,419,041 8,717,627
-Other debtors 1,041,917 2,971,998 980,356 2,971,998
-17,191,480 16,858,950 16,498,725 16,390,154
-Debtors falling due after one year are as follows: . ,
-son Group . .., Company
-31 Jul 20 30 Jun 19 31 Jul. 20 30 Jun 19
-: £ £ - £ £
-Transfer fee debtors 1,425,000 7,554,031 ... 1,425,000 7,554,031
-18. Cash and cash equivalents os
-Cash and cash equivalents comprise the following: , me
-, . 31 Jul 20 30 Jun 19
-. .. £ £
-, Cash at bank and in hand _ 31,670,725 477,522
-. Bank overdrafts oS - (1,076,241)
-; _, 31,670;725 (598,719)
-: 23
+
+| Subsidiary undertakings | Class of share | Percentage of<br>shares held |
+| :--- | :---: | :---: |
+| Leeds United Conferencing and Events Limited | Ordinary | 100 |
+| Leeds United Media Limited | Ordinary | 100 |
+| Leeds United College Limited | Ordinary | 100 |
+
+The company owns the entire share capital of Leeds United Conference and Events Limited, Leeds United Media Limited and Leeds United College Limited, all of which have a registered office at New Court, Abbey Road North, Shepley, HD8 8BJ. Leeds United Conference and Events Limited has a principal activity of providing conferencing and events facilities, Leeds United Media Limited has a principal activity of providing digital media and online advertising and Leeds United College Limited has a principal activity of providing educational services.
+
+### 16. Stocks
+
+| | Group<br>31 Jul 20<br>£ | Group<br>30 Jun 19<br>£ | Company<br>31 Jul 20<br>£ | Company<br>30 Jun 19<br>£ |
+| :--- | :---: | :---: | :---: | :---: |
+| Goods held for resale | 1,783,295 | 2,982,046 | 1,741,623 | 2,945,389 |
+
+### 17. Debtors
+
+Debtors falling due within one year are as follows:
+
+| | Group<br>31 Jul 20<br>£ | Group<br>30 Jun 19<br>£ | Company<br>31 Jul 20<br>£ | Company<br>30 Jun 19<br>£ |
+| :--- | :---: | :---: | :---: | :---: |
+| Trade debtors | 1,867,245 | 3,004,722 | 1,757,344 | 2,645,804 |
+| Amounts owed by group undertakings | - | - | 285,112 | - |
+| Prepayments and accrued income | 8,863,277 | 2,164,603 | 8,056,872 | 2,054,725 |
+| Transfer fee debtors | 5,419,041 | 8,717,627 | 5,419,041 | 8,717,627 |
+| Other debtors | 1,041,917 | 2,971,998 | 980,356 | 2,971,998 |
+| | 17,191,480 | 16,858,950 | 16,498,725 | 16,390,154 |
+
+Debtors falling due after one year are as follows:
+
+| | Group<br>31 Jul 20<br>£ | Group<br>30 Jun 19<br>£ | Company<br>31 Jul 20<br>£ | Company<br>30 Jun 19<br>£ |
+| :--- | :---: | :---: | :---: | :---: |
+| Transfer fee debtors | 1,425,000 | 7,554,031 | 1,425,000 | 7,554,031 |
+
+### 18. Cash and cash equivalents
+
+Cash and cash equivalents comprise the following:
+
+| | 31 Jul 20<br>£ | 30 Jun 19<br>£ |
+| :--- | :---: | :---: |
+| Cash at bank and in hand | 31,670,725 | 477,522 |
+| Bank overdrafts | - | (1,076,241) |
+| | 31,670,725 | (598,719) |
+
+23
 
 --- pág. 26 ---
 
-a Leeds United Football Club Limited
-Notes to the Financial Statements (continued)
+Leeds United Football Club Limited
+
+Notes to the Financial Statements *(continued)*
+
 Period from 1 July 2019 to 31 July 2020
-19. Creditors: amounts falling due within one year :
-. ' Group Company
-31 Jul 20 30 Jun 19 31 Jul 20 30 Jun 19
-£ £ £ £
-. Bank overdraft - 1,076,241 - 1,076,241
-Other loans 3,979,570 4,747,296 3,979,570 4,747,296
-Trade creditors : 3,798,420 §,107,261 3,758,770 4,908,881
-Amounts owed to group undertakings 17,338,073 7,806,496 20,214,653 10,493,642
-Accruals and deferred. income 52,988,183 21,981,139 52,620,378 21,615,320
-Social security and other taxes 8,690, 188 3,581,862 8,557,368 3,370,397
-Obligations under finance leases contracts 332,531 627,609 325,004 602,798
-Transfer fee creditors 29,875,265 7,677,143 29,875,265 7,677,143
-Other creditors 41,513,506 659,748 41,495,741 642,376
-. 158,515,736 53,264,795 160,826,749 §5,134,094
-Included in accruals and deferred income are £12,586,876 (2019: £11,908,332) representing advance payment of tickets , . ;
-and sponsorship that would only become a liability of the company should it fail to fulfill all of its fixtures for future
-seasons. ;
+
+### 19. Creditors: amounts falling due within one year
+
+| | Group<br>31 Jul 20<br>£ | Group<br>30 Jun 19<br>£ | Company<br>31 Jul 20<br>£ | Company<br>30 Jun 19<br>£ |
+| :--- | :---: | :---: | :---: | :---: |
+| Bank overdraft | - | 1,076,241 | - | 1,076,241 |
+| Other loans | 3,979,570 | 4,747,296 | 3,979,570 | 4,747,296 |
+| Trade creditors | 3,798,420 | 5,107,261 | 3,758,770 | 4,908,881 |
+| Amounts owed to group undertakings | 17,338,073 | 7,806,496 | 20,214,653 | 10,493,642 |
+| Accruals and deferred income | 52,988,183 | 21,981,139 | 52,620,378 | 21,615,320 |
+| Social security and other taxes | 8,690,188 | 3,581,862 | 8,557,368 | 3,370,397 |
+| Obligations under finance leases contracts | 332,531 | 627,609 | 325,004 | 602,798 |
+| Transfer fee creditors | 29,875,265 | 7,677,143 | 29,875,265 | 7,677,143 |
+| Other creditors | 41,513,506 | 659,748 | 41,495,741 | 642,376 |
+| | 158,515,736 | 53,264,795 | 160,826,749 | 55,134,094 |
+
+Included in accruals and deferred income are £12,586,876 (2019: £11,908,332) representing advance payment of tickets and sponsorship that would only become a liability of the company should it fail to fulfill all of its fixtures for future seasons.
+
 Obligations under finance leases are secured on the related assets.
+
 Other loans include an advance of £2,000,000 (2019: £3,680,000) secured on the related book debt.
-20. Creditors: amounts falling due after more than one year
-Group Company
-31 Jul 20 30 Jun 19 31 Jul 20 30 Jun 19
-£ £ £ £
-Other loans 1,979,570 3,210,180 1,979,570 3,210,180
-Amounts owed to group undertakings 13,599,994 17,817,242 13,599,994 17,817,242
-Accruals and deferred income 3,500,000 - 3,500,000 -
-Obligations under finance leases contracts 320,291 585,204 314,303 585,204
-Transfer fee creditors 18,806,174 6,091,879 18,806,174 6,091,879
-Pension 364,550 467,476 364,550 467,476 .
-38,570,579 28,171,981 38,564,591 28,171,981
+
+### 20. Creditors: amounts falling due after more than one year
+
+| | Group<br>31 Jul 20<br>£ | Group<br>30 Jun 19<br>£ | Company<br>31 Jul 20<br>£ | Company<br>30 Jun 19<br>£ |
+| :--- | :---: | :---: | :---: | :---: |
+| Other loans | 1,979,570 | 3,210,180 | 1,979,570 | 3,210,180 |
+| Amounts owed to group undertakings | 13,599,994 | 17,817,242 | 13,599,994 | 17,817,242 |
+| Accruals and deferred income | 3,500,000 | - | 3,500,000 | - |
+| Obligations under finance leases contracts | 320,291 | 585,204 | 314,303 | 585,204 |
+| Transfer fee creditors | 18,806,174 | 6,091,879 | 18,806,174 | 6,091,879 |
+| Pension | 364,550 | 467,476 | 364,550 | 467,476 |
+| | 38,570,579 | 28,171,981 | 38,564,591 | 28,171,981 |
+
 Obligations under finance leases are secured on related assets.
-21. Finance leases contracts
+
+### 21. Finance leases contracts
+
 The total future minimum lease payments under finance leases contracts are as follows:
-Group © Company
-31 Jul 20 30 Jun 19 31 Jul 20 30 Jun 19
-£ £ £ £
-Not later than 1 year 358,033 668,708 346,393 651,074
-Later than 1 year and not later than 5 years 342,985 627,180 333,731 609,720
-701,018 1,295,888 680,124 1,260,794
-Less: future finance charges (48,196) (83,075) (40,817) (72,793)
-Present value of minimum lease payments 652,822 1,212,813 639,307 1,188,001
-22. Employee benefits
+
+| | Group<br>31 Jul 20<br>£ | Group<br>30 Jun 19<br>£ | Company<br>31 Jul 20<br>£ | Company<br>30 Jun 19<br>£ |
+| :--- | :---: | :---: | :---: | :---: |
+| Not later than 1 year | 358,033 | 668,708 | 346,393 | 651,074 |
+| Later than 1 year and not later than 5 years | 342,985 | 627,180 | 333,731 | 609,720 |
+| | 701,018 | 1,295,888 | 680,124 | 1,260,794 |
+| Less: future finance charges | (48,196) | (83,075) | (40,817) | (72,793) |
+| Present value of minimum lease payments | 652,822 | 1,212,813 | 639,307 | 1,188,001 |
+
+### 22. Employee benefits
+
 24
 
 --- pág. 27 ---
@@ -1231,50 +1274,57 @@ been included. . Os
 
 --- pág. 29 ---
 
-o* .
-Leeds United Football Club Limited .
-Notes to the Financial Statements (continued) ‘
-Period from 1 July 2019 to 31 July 2020 ‘
-30. Events after the end of the reporting period .
-: : On 20 November 2020 two Aser Group Holding Pte Limited of £3,000,000 and $5,000,000 with accrued interest were
-converted into share capital. ~ ;
-On 24 December 2020 an investment agreement was signed with 49ers Enterprises Leeds I! SPV LP for the subscription
-of £23,000,000 new shares subject to the satisfaction of the conditions within the agreement.
+Leeds United Football Club Limited
+
+Notes to the Financial Statements *(continued)*
+
+Period from 1 July 2019 to 31 July 2020
+
+### 30. Events after the end of the reporting period
+
+On 20 November 2020 two Aser Group Holding Pte Limited of £3,000,000 and £5,000,000 with accrued interest were converted into share capital.
+
+On 24 December 2020 an investment agreement was signed with 49ers Enterprises Leeds II SPV LP for the subscription of £23,000,000 new shares subject to the satisfaction of the conditions within the agreement.
+
 A loan of £3,975,000 included in other loans was repaid in full after the period end.
-After the period end loan funding of £43,000,000 was secured. ,
-31. Related party transactions
-Entities with control over the company a 7 ; -
-2020 2019
-£ £ . ;
-ne Creditors 30,938,068 25,623,738.
-: Interest payable : : (112,989) 559,966
-: : Rent payable "4,646,706 1,520,037
-a vb The creditors balance represents six (2019: four) unsecured loans, two of which were due for repayment 31 August 2018.
-o Se, No interest was charged as the two loans were due to be capitalised as per the investment agreement. Three loans are
-7 a repayable on 31 May 2021, 18 February 2022 and 31 May 2023, accrued interest was waived with promotion to the
-md OO Premier League as per the investment agreement on loans of £7,700,000 (2019: £7,700,000), £10,000,000 (2019:
-’ £10,000,000) and £3,600,000 (2019: Enil). One loan of $2,500,000 (2019: £nil) is repayable on demand.
-; wo Two loans of £3,000,000 and $5,000,000 with accrued interest were converted into share capital on 20 November 2020. ,
-wet : During the peried loans totalling £3,600,000 and $2,500,000 (2019: £22,787,500) were advanced and £nil (2019:
-£5,104,286) was repaid. . . .
-‘. . The company entered into a lease agreement for the stadium until June 2032, with the entity which has control over the
-* company. There was an initial rent free period of 33 months. Included in creditors is an amount of £4,686,781 (2019:
-£3,040,074) of accrued rent. .
-- Key management personnel : . :
-mo Key management personnel include all persons that have authority and responsibility for planning, directing and
-: - ‘controlling the activities of the company. The total compensation paid to key management personnel for services
-; provided to the company was £1,154,320 (2019: £827,514). : ‘
-Other refated parties .
-. _— 2020 2019
-a £ £
-, Management charges payable 162,500 150,000
-o uO Sales 9,196 34,866 :
-: : Purchases — 41,410 30,464
-- . Creditor ; "43,383 . 30,464 ;
-: Debtor : - 29,189 .
-. foo _ The company has taken advantage of the exemption in section 33 of FRS 102 not to disclose transactions with wholly
-owned subsidiary undertakings. Do a ..
-, : 27
+
+After the period end loan funding of £43,000,000 was secured.
+
+### 31. Related party transactions
+
+**Entities with control over the company**
+
+| | 2020<br>£ | 2019<br>£ |
+| :--- | :---: | :---: |
+| Creditors | 30,938,068 | 25,623,738 |
+| Interest payable | (112,989) | 559,966 |
+| Rent payable | 1,646,706 | 1,520,037 |
+
+The creditors balance represents six (2019: four) unsecured loans, two of which were due for repayment 31 August 2018. No interest was charged as the two loans were due to be capitalised as per the investment agreement. Three loans are repayable on 31 May 2021, 18 February 2022 and 31 May 2023, accrued interest was waived with promotion to the Premier League as per the investment agreement on loans of £7,700,000 (2019: £7,700,000), £10,000,000 (2019: £10,000,000) and £3,600,000 (2019: £nil). One loan of £2,500,000 (2019: £nil) is repayable on demand.
+
+Two loans of £3,000,000 and £5,000,000 with accrued interest were converted into share capital on 20 November 2020.
+
+During the period loans totalling £3,600,000 and £2,500,000 (2019: £22,787,500) were advanced and £nil (2019: £5,104,286) was repaid.
+
+The company entered into a lease agreement for the stadium until June 2032, with the entity which has control over the company. There was an initial rent free period of 33 months. Included in creditors is an amount of £4,686,781 (2019: £3,040,074) of accrued rent.
+
+**Key management personnel**
+
+Key management personnel include all persons that have authority and responsibility for planning, directing and controlling the activities of the company. The total compensation paid to key management personnel for services provided to the company was £1,154,320 (2019: £827,514).
+
+**Other related parties**
+
+| | 2020<br>£ | 2019<br>£ |
+| :--- | :---: | :---: |
+| Management charges payable | 162,500 | 150,000 |
+| Sales | 9,196 | 34,866 |
+| Purchases | 41,410 | 30,464 |
+| Creditor | 43,383 | 30,464 |
+| Debtor | - | 29,189 |
+
+The company has taken advantage of the exemption in section 33 of FRS 102 not to disclose transactions with wholly owned subsidiary undertakings.
+
+27
 
 --- pág. 30 ---
 

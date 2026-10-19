@@ -756,151 +756,187 @@ Operating lease costs ; 2,258,754 2,170,918
 
 --- pág. 20 ---
 
-+4 5 .
-Leeds United Football Club Limited
-Notes to the Financial Statements (continued)
-Year ended 30 June 2019
-, 6. Auditor's remuneration
-2019 2018
-£ £
-Fees payable for the audit of the financial statements 19,500 20,500
-Fees payable to the company’s auditor and its associates for other services:
-Audit of subsidiaries , §,000 5,000
-Taxation compliance services 10,650 2,700
-Other assurance services ’ 7,500 7,500
-Other non-audit services 5,139 3,889
-, 28,289 19,089
-7. Staff costs .
+**Leeds United Football Club Limited**
+
+**Notes to the Financial Statements** *(continued)*
+
+**Year ended 30 June 2019**
+
+**6. Auditor's remuneration**
+
+| | 2019<br>£ | 2018<br>£ |
+| :--- | :---: | :---: |
+| Fees payable for the audit of the financial statements | 19,500 | 20,500 |
+| | | |
+| *Fees payable to the company's auditor and its associates for other services:* | | |
+| Audit of subsidiaries | 5,000 | 5,000 |
+| Taxation compliance services | 10,650 | 2,700 |
+| Other assurance services | 7,500 | 7,500 |
+| Other non-audit services | 5,139 | 3,889 |
+| | **28,289** | **19,089** |
+
+**7. Staff costs**
+
 The average number of persons employed by the group during the year, including the directors, amounted to:
-2019 2018
-No. No.
-Full-time playing staff 56 58
-Apprentices 17 13
-Football team management 27 21
-Management/administration 120 105
-Casual match day staff 838 731
-1,058 928
+
+| | 2019<br>No. | 2018<br>No. |
+| :--- | :---: | :---: |
+| Full-time playing staff | 56 | 58 |
+| Apprentices | 17 | 13 |
+| Football team management | 27 | 21 |
+| Management/administration | 120 | 105 |
+| Casual match day staff | 838 | 731 |
+| | **1,058** | **928** |
+
 The aggregate payroll costs incurred during the year, relating to the above, were:
-2019 2018
-£ , &£
-Wages and salaries 41,458,543 28,090,979
-Social security costs 4,588,503 2,818,399
-. Other pension costs 114,546 448,635
-46,161,592 31,358,013
-. Included in wages and salaries are redundancy and ex-gratia payments of £809,743 (2018: £829,984).
-8. Directors’ remuneration ,
-The directors’ aggregate remuneration in respect of qualifying services was:
-. 2019 2018
-£ £
-Remuneration 291,540 202,768
-: Company contributions to defined benefit pension plans 11,461 9,503
-303,001 212,271
-The remuneration of the highest paid director in respect of qualifying services is £291,540 (2018: £202,768) for aggregate
-remuneration and £11,461 (2018: £9,503) for company contributions to defined contribution pension plans.
+
+| | 2019<br>£ | 2018<br>£ |
+| :--- | :---: | :---: |
+| Wages and salaries | 41,458,543 | 28,090,979 |
+| Social security costs | 4,588,503 | 2,818,399 |
+| Other pension costs | 114,546 | 448,635 |
+| | **46,161,592** | **31,358,013** |
+
+Included in wages and salaries are redundancy and ex-gratia payments of £809,743 (2018: £829,984).
+
+**8. Directors' remuneration**
+
+The directors' aggregate remuneration in respect of qualifying services was:
+
+| | 2019<br>£ | 2018<br>£ |
+| :--- | :---: | :---: |
+| Remuneration | 291,540 | 202,768 |
+| Company contributions to defined benefit pension plans | 11,461 | 9,503 |
+| | **303,001** | **212,271** |
+
+The remuneration of the highest paid director in respect of qualifying services is £291,540 (2018: £202,768) for aggregate remuneration and £11,461 (2018: £9,503) for company contributions to defined contribution pension plans.
+
 The number of directors who are accruing benefits under defined contribution pension schemes was one (2018: one).
-9. Interest receivable and similar income
-2019 2018
-£ £
-Interest receivable and similar income 1,062,000 -
-Interest receivable and similar income includes £1,062,000 (2018: £nil) relating to the revaluation to fair value of the
-financial liability described in note 22.
+
+**9. Interest receivable and similar income**
+
+| | 2019<br>£ | 2018<br>£ |
+| :--- | :---: | :---: |
+| Interest receivable and similar income | 1,062,000 | – |
+
+Interest receivable and similar income includes £1,062,000 (2018: £nil) relating to the revaluation to fair value of the financial liability described in note 22.
+
 18
 
 --- pág. 21 ---
 
-Leeds United Football Club Limited ;
-. Notes to the Financial Statements (continued)
-Year ended 30 June 2019
-10. tnterest payable and similar expenses .
-2019 2018
-. £ £
-Interest on obligations under finance leases contracts 426,354 - 420,416
-Other interest payable and similar charges . 1,536,009 1,286,519
-1,962,363 1,706,935
-Other interest payable and similar charges include £860,142 (2018: £449,121) relating to the revaluation to fair value of
-the financial liability described in note 22. :
-11. Tax on loss
-Reconciliation of tax income
-: : The tax assessed on the loss on ordinary activities for the year is higher than (2018: higher than) the standard rate of
-corporation tax in the UK of 19% (2018: 19%).
-; 2019 2018 .
-. ; £ £
-. Loss on ordinary activities before taxation (21,398,994) (4,315,797)
-. Loss on ordinary activities by rate of tax * (3,974,423) -~ (820,001)
-Effect of expenses not deductible for tax purposes 23,296 34,720
-; Effect of capital allowances and depreciation 74,444 (10,470)
-. Unused tax losses 3,950,066 737,704
-Other timing differences (73,383) 58,047
-Tax on loss mS -
-Factors that may affect future tax income ;
+**Leeds United Football Club Limited**
+
+**Notes to the Financial Statements** *(continued)*
+
+**Year ended 30 June 2019**
+
+**10. Interest payable and similar expenses**
+
+| | 2019<br>£ | 2018<br>£ |
+| :--- | :---: | :---: |
+| Interest on obligations under finance leases contracts | 426,354 | 420,416 |
+| Other interest payable and similar charges | 1,536,009 | 1,286,519 |
+| | **1,962,363** | **1,706,935** |
+
+Other interest payable and similar charges include £860,142 (2018: £449,121) relating to the revaluation to fair value of the financial liability described in note 22.
+
+**11. Tax on loss**
+
+**Reconciliation of tax income**
+
+The tax assessed on the loss on ordinary activities for the year is higher than (2018: higher than) the standard rate of corporation tax in the UK of 19% (2018: 19%).
+
+| | 2019<br>£ | 2018<br>£ |
+| :--- | :---: | :---: |
+| Loss on ordinary activities before taxation | (21,398,994) | (4,315,797) |
+| Loss on ordinary activities by rate of tax | (3,974,423) | (820,001) |
+| Effect of expenses not deductible for tax purposes | 23,296 | 34,720 |
+| Effect of capital allowances and depreciation | 74,444 | (10,470) |
+| Unused tax losses | 3,950,066 | 737,704 |
+| Other timing differences | (73,383) | 58,047 |
+| **Tax on loss** | **–** | **–** |
+
+**Factors that may affect future tax income**
+
 The company has losses of approximately £102 million (2018: £81 million) to carry forward against future profits.
-12. Intangible assets
-; Group ; Negative Computer Player
-Goodwill goodwill Trademarks software _ registrations Total
-£ £ £ ne 2 £ £
-Cost
-. Ati Jul2018 6,403,883 (717,255) 14,480 259,791 - 37,276,545 43,237,454
-Additions - - 15,237 140,955 15,987,137 16,143,329
-Disposals - - - - (5,204,173) (5,204,173)
-. ‘At 30 Jun 2019 6,403,883 (717,255) 29,727 400,746 48,059,509 54,176,610
-- : Amortisation - - , , ~
-. At 1 Jul 2018 1,596,833 (370,582) 9,433 184,551 12,712,213 14,132,448
-. Charge for the year 178,867 (143,451) 2,950 61,057 12,027,338 12,126,761
-Disposals - - - - (4,731,276) (4,731,276) .
-Impairment losses - - - - 1,522,951 1,522,951
-. At 30 Jun 2019 _ 1,775,700 (514,033) 12,383 245,608 21,531,226 23,050,884
-Carrying amount
-, At 30 Jun 2019 4,628,183 (203,222) 17,344 155,138 26,528,283 31,125,726
-. At 30 Jun 2018 4,807,050 (346,673) 5,057 75,240 24,564,332 29,105,006
-, 7 19
+
+**12. Intangible assets**
+
+**Group**
+
+| | Goodwill<br>£ | Negative<br>goodwill<br>£ | Trademarks<br>£ | Computer<br>software<br>£ | Player<br>registrations<br>£ | Total<br>£ |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Cost** | | | | | | |
+| At 1 Jul 2018 | 6,403,883 | (717,255) | 14,490 | 259,791 | 37,276,545 | 43,237,454 |
+| Additions | – | – | 15,237 | 140,955 | 15,987,137 | 16,143,329 |
+| Disposals | – | – | – | – | (5,204,173) | (5,204,173) |
+| **At 30 Jun 2019** | **6,403,883** | **(717,255)** | **29,727** | **400,746** | **48,059,509** | **54,176,610** |
+| **Amortisation** | | | | | | |
+| At 1 Jul 2018 | 1,596,833 | (370,582) | 9,433 | 184,551 | 12,712,213 | 14,132,448 |
+| Charge for the year | 178,867 | (143,451) | 2,950 | 61,057 | 12,027,338 | 12,126,761 |
+| Disposals | – | – | – | – | (4,731,276) | (4,731,276) |
+| Impairment losses | – | – | – | – | 1,522,951 | 1,522,951 |
+| **At 30 Jun 2019** | **1,775,700** | **(514,033)** | **12,383** | **245,608** | **21,531,226** | **23,050,884** |
+| **Carrying amount** | | | | | | |
+| **At 30 Jun 2019** | **4,628,183** | **(203,222)** | **17,344** | **155,138** | **26,528,283** | **31,125,726** |
+| At 30 Jun 2018 | 4,807,050 | (346,673) | 5,057 | 75,240 | 24,564,332 | 29,105,006 |
+
+19
 
 --- pág. 22 ---
 
-“. '
-Leeds United Football Club Limited
-Notes to the Financial Statements (continued)
-Year ended 30 June 2019
-12. Intangible assets (continued) .
-Company Computer Player
-Goodwill Trademarks software registrations Total
-£ £ £ £ £
-Cost : :
-At 1 July 2018 5,984,321 14,490 259,791 37,276,545 43,535,147
-Additions - 15,237 140,955 15,987,137 16,143,329
-Disposals - - - (5,204,173) (§.204.173)
-At 30 June 2019 5,984,321 29,727 400,746 _ 48,059,509 $4,474,303
-Amortisation
-At 1 July 2018 1,295,097 9,433 184,551 12,712,213 14,201,294
-Charge for the year 119,955 2,950 61,057 12,027,338 12,211,300
-Disposals - - - (4,731,276) (4,731,276)
-Impainnent losses ~ - - 1,522,951 1,522,951
-At 30 June 2019 1,415,052 12,383 245,608 21,531,226 23,204,269
-Carrying amount .
-At 30 June 2019 4,569,269 17,344 155,138 26,528,283 31,270,034
-At 30 June 2018 4,689,224 . 5,057 75,240 24,564,332 29,333,853
-Included in intangible assets is negative goodwill with a carrying amount of £203,222 (2018: £346,673). This negative
-goodwill arose on the acquisition of Leeds United Media Limited. The negative goodwill all relates to non-monetary
-assets and is being amortised over a period of five years, being the period that the company is expected to benefit.
-os Following a review of the playing squad at the year end and the subsequent release of several players the Directors have
-taken the decision to impair the value of several members of the First Team squad. A total of £1,522,951 (2018:
-£805,974) has been charged to the profit and loss in respect of this impairment.
-13. Tangible assets :
-Group Leasehold land Alterations and Fixtures, fittings:
-; and buildings improvements and equipment Total
-£ £ ° £ £
-Cost
-At 1 July 2018 2,935,290 16,769,657 8,527,457 28,232,404 ,
-Additions - 1,712,494 845,794 2,558,288
-; Disposals - - (5,417) (5,417)
-At 30 June 2019 2,935,290 18,482,151 9,367,834 30,785,275
-Depreciation
-At 1 July 2018 . 991,350. 7,591,659 4,645,298 13,228,307
-Charge for the year ; 137,713 1,067,761 898,327 2,103,801
-—— Disposals ; . . . _o2 - (5,419) - . (5,419) -
-At 30 June 2019 1,129,063 8,659,420 5,538,206 15,326,689
-Carrying amount oo,
-At 30 June 2019 1,806,227 9,822,731 3,829,628 15,458,586
-At 30 June 2018 . "1,943,940 9,177,998 3,882,159 15,004,097 .
+**Leeds United Football Club Limited**
+
+**Notes to the Financial Statements** *(continued)*
+
+**Year ended 30 June 2019**
+
+**12. Intangible assets** *(continued)*
+
+**Company**
+
+| | Goodwill<br>£ | Trademarks<br>£ | Computer<br>software<br>£ | Player<br>registrations<br>£ | Total<br>£ |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Cost** | | | | | |
+| At 1 July 2018 | 5,984,321 | 14,490 | 259,791 | 37,276,545 | 43,535,147 |
+| Additions | – | 15,237 | 140,955 | 15,987,137 | 16,143,329 |
+| Disposals | – | – | – | (5,204,173) | (5,204,173) |
+| **At 30 June 2019** | **5,984,321** | **29,727** | **400,746** | **48,059,509** | **54,474,303** |
+| **Amortisation** | | | | | |
+| At 1 July 2018 | 1,295,097 | 9,433 | 184,551 | 12,712,213 | 14,201,294 |
+| Charge for the year | 119,955 | 2,950 | 61,057 | 12,027,338 | 12,211,300 |
+| Disposals | – | – | – | (4,731,276) | (4,731,276) |
+| Impairment losses | – | – | – | 1,522,951 | 1,522,951 |
+| **At 30 June 2019** | **1,415,052** | **12,383** | **245,608** | **21,531,226** | **23,204,269** |
+| **Carrying amount** | | | | | |
+| **At 30 June 2019** | **4,569,269** | **17,344** | **155,138** | **26,528,283** | **31,270,034** |
+| At 30 June 2018 | 4,689,224 | 5,057 | 75,240 | 24,564,332 | 29,333,853 |
+
+Included in intangible assets is negative goodwill with a carrying amount of £203,222 (2018: £346,673). This negative goodwill arose on the acquisition of Leeds United Media Limited. The negative goodwill all relates to non-monetary assets and is being amortised over a period of five years, being the period that the company is expected to benefit.
+
+Following a review of the playing squad at the year end and the subsequent release of several players the Directors have taken the decision to impair the value of several members of the First Team squad. A total of £1,522,951 (2018: £805,974) has been charged to the profit and loss in respect of this impairment.
+
+**13. Tangible assets**
+
+**Group**
+
+| | Leasehold land<br>and buildings<br>£ | Alterations and<br>improvements<br>£ | Fixtures, fittings<br>and equipment<br>£ | Total<br>£ |
+| :--- | :---: | :---: | :---: | :---: |
+| **Cost** | | | | |
+| At 1 July 2018 | 2,935,290 | 16,769,657 | 8,527,457 | 28,232,404 |
+| Additions | – | 1,712,494 | 845,794 | 2,558,288 |
+| Disposals | – | – | (5,417) | (5,417) |
+| **At 30 June 2019** | **2,935,290** | **18,482,151** | **9,367,834** | **30,785,275** |
+| **Depreciation** | | | | |
+| At 1 July 2018 | 991,350 | 7,591,659 | 4,645,298 | 13,228,307 |
+| Charge for the year | 137,713 | 1,067,761 | 898,327 | 2,103,801 |
+| Disposals | – | – | (5,419) | (5,419) |
+| **At 30 June 2019** | **1,129,063** | **8,659,420** | **5,538,206** | **15,326,689** |
+| **Carrying amount** | | | | |
+| **At 30 June 2019** | **1,806,227** | **9,822,731** | **3,829,628** | **15,458,586** |
+| At 30 June 2018 | 1,943,940 | 9,177,998 | 3,882,159 | 15,004,097 |
+
 20
 
 --- pág. 23 ---
@@ -1006,56 +1042,63 @@ Bank overdrafts (1,076,241) -
 
 --- pág. 25 ---
 
-> 2
-Leeds United Football Club Limited ; ,
-Notes to the Financial Statements (continued)
-Year ended 30 June 2019
-18. Creditors: amounts falling due within one year ,
-Group Company
-. 2019 2018 2019 2018
-£ £ £- £
-Bank overdrafts 1,076,241 - 1,076,241 -
+**Leeds United Football Club Limited**
 
-; Other loans 4,747,296 4,677,473 4,747,296 4,677,473
-Trade creditors 5,107,261 4,034,748 4,908,881 3,807,395
-Amounts owed to group undertakings 7,806,496 7,185,168 — 10,493,642 9,056,021
-Accruals and deferred income 21,981,139 11,185,617 21,615,320 10,727,287
-Social security and other taxes 3,581,862 1,332,041 3,370,397 1,332,041
-Obligations under finance leases contracts 627,609 583,127 602,798 563,613
-Transfer fee creditors 7,677,143 §,653,245 7,677,143 5,653,245
-Other creditors 659,748 402,177 642,376 382,572
+**Notes to the Financial Statements** *(continued)*
 
-‘ 53,264,795 35,053,596 55,134,094 36,199,647
-Included in accruals and deferred income are £11,908,332 (2018: £7,110,546) representing advance payment of tickets
-and sponsorship that would only become a liability of the group should the football club fail to fulfill all of its fixtures for
-future seasons.
-; Other loans include an advance of £3,680,000 (2018: £3,680,000) secured on the related book debt.
+**Year ended 30 June 2019**
+
+**18. Creditors: amounts falling due within one year**
+
+| | Group<br>2019<br>£ | Group<br>2018<br>£ | Company<br>2019<br>£ | Company<br>2018<br>£ |
+| :--- | :---: | :---: | :---: | :---: |
+| Bank overdrafts | 1,076,241 | – | 1,076,241 | – |
+| Other loans | 4,747,296 | 4,677,473 | 4,747,296 | 4,677,473 |
+| Trade creditors | 5,107,261 | 4,034,748 | 4,908,881 | 3,807,395 |
+| Amounts owed to group undertakings | 7,806,496 | 7,185,168 | 10,493,642 | 9,056,021 |
+| Accruals and deferred income | 21,981,139 | 11,185,617 | 21,615,320 | 10,727,287 |
+| Social security and other taxes | 3,581,862 | 1,332,041 | 3,370,397 | 1,332,041 |
+| Obligations under finance leases contracts | 627,609 | 583,127 | 602,798 | 563,613 |
+| Transfer fee creditors | 7,677,143 | 5,653,245 | 7,677,143 | 5,653,245 |
+| Other creditors | 659,748 | 402,177 | 642,376 | 382,572 |
+| | **53,264,795** | **35,053,596** | **55,134,094** | **36,199,647** |
+
+Included in accruals and deferred income are £11,908,332 (2018: £7,110,546) representing advance payment of tickets and sponsorship that would only become a liability of the group should the football club fail to fulfill all of its fixtures for future seasons.
+
+Other loans include an advance of £3,680,000 (2018: £3,680,000) secured on the related book debt.
+
 Obligations under finance leases are secured on the related assets.
-19. Creditors: amounts falling due after more than one year
-Group , Company
-2019 2018 2019 2018
-£ £ £ £
-; Other loans 3,210,180 7,957,476 3,210,180 7,957,476
-Amounts owed to group undertakings 17,817,242 - 17,817,242 -
-Accruals and deferred income - 225,000 - 225,000
-Obligations under finance leases contracts 585,204 1,075,148 585,204 1,050,337 ‘
-Transfer fee creditors 6,091,879 6,680,534 6,091,879 6,680,534
-Pension 467,476 544,109 467,476 544,109
-28,171,981 16,482,267 28,171,981 16,457,456
+
+**19. Creditors: amounts falling due after more than one year**
+
+| | Group<br>2019<br>£ | Group<br>2018<br>£ | Company<br>2019<br>£ | Company<br>2018<br>£ |
+| :--- | :---: | :---: | :---: | :---: |
+| Other loans | 3,210,180 | 7,957,476 | 3,210,180 | 7,957,476 |
+| Amounts owed to group undertakings | 17,817,242 | – | 17,817,242 | – |
+| Accruals and deferred income | – | 225,000 | – | 225,000 |
+| Obligations under finance leases contracts | 585,204 | 1,075,148 | 585,204 | 1,050,337 |
+| Transfer fee creditors | 6,091,879 | 6,680,534 | 6,091,879 | 6,680,534 |
+| Pension | 467,476 | 544,109 | 467,476 | 544,109 |
+| | **28,171,981** | **16,482,267** | **28,171,981** | **16,457,456** |
+
 Obligations under finance leases are secured on related assets.
+
 Other loans include an advance of £nil (2018: £3,680,000) secured on the related book debt.
-Included in other loans is a balance of £nil (2018: £225,000) which falls due after five years and which is payable by
-instalments. Interest on this loan is payable at 1.70%.
-20. Finance leases contracts . ‘ : ;
+
+Included in other loans is a balance of £nil (2018: £225,000) which falls due after five years and which is payable by instalments. Interest on this loan is payable at 1.70%.
+
+**20. Finance leases contracts**
+
 The total future minimum lease payments under finance leases contracts are as follows:
-Group Company
-2019 2018 2019 2018 :
-£ £ £ £
-Not later than 1 year 668,708 650,987 651,074 627,359
-Later than 1 year and not later than 5 years 627,180 1,133,437 609,720 1,098,343
-1,295,888 1,784,424 1,260,794 1,725,702
-Less: future finance charges (83,075) (126,149) (72,793) (111,752)
-Present value of minimum lease payments 1,212,813 1,658,275 1,188,001 1,613,950
+
+| | Group<br>2019<br>£ | Group<br>2018<br>£ | Company<br>2019<br>£ | Company<br>2018<br>£ |
+| :--- | :---: | :---: | :---: | :---: |
+| Not later than 1 year | 668,708 | 650,987 | 651,074 | 627,359 |
+| Later than 1 year and not later than 5 years | 627,180 | 1,133,437 | 609,720 | 1,098,343 |
+| | 1,295,888 | 1,784,424 | 1,260,794 | 1,725,702 |
+| Less: future finance charges | (83,075) | (126,149) | (72,793) | (111,752) |
+| **Present value of minimum lease payments** | **1,212,813** | **1,658,275** | **1,188,001** | **1,613,950** |
+
 23
 
 --- pág. 26 ---
