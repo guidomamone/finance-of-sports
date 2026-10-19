@@ -252,7 +252,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 292. TRANSCRIPCIONES POR SUBAGENTES: CARGAR (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia). Validación (326 listas) y Mistral
    hechos; Estonia y Bélgica dados de alta (lotes 89 y 90, 17 clubes). Falta: los lotes de carga por país que siguen (91-92 en curso,
    después Suiza, Colombia, Beşiktaş); Países Bajos (lote 93): 7 altas en el sitio y 19 listas para escribir (los 26 cierran en
-   verificar): 8 pasan ya la compuerta y 11 de la Eerste Divisie esperan la excepción de estadio (decisión de Guido; la hace Pipeline 3);
+   verificar): todos pasan la compuerta (en la Eerste Divisie alcanza el estadio); falta que Guido corra el lote;
    después, el lote 95 con los demás años de los clubes nuevos (lista en la nota de onboarding) y volver a correr Bélgica (lote 92); OH Leuven 2022 y Llaneros 2022, que siguen sin tablas (ver 298 e); decidir subagentes
    o Mistral para los 319 `.md` viejos sin tablas de `Admin/lotes/sin-tablas-6paises.txt`, después de medir el 298 e.
 298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2 e y3, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por

@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 773 — En la Eerste Divisie alcanza el estadio (2026-10-19)
+
+* `estadio-sponsor.mjs`: nl-eerstedivisie pasa la compuerta solo con el estadio, como las ligas amateur (decisión de Guido; Wikipedia no
+  tiene tabla de camisetas de esa liga). Destraba las altas de segunda del lote 93. Regla en CONVENCIONES-DATOS.
+
 ## Versión 772 — 298 e3: el ensayo cotiza el rehacer con Mistral (2026-10-19)
 
 * `resolver-inventario`: el ensayo suma el Mistral de un .md viejo sin tablas, como la corrida real. La corrida sin-tablas-298e habría
