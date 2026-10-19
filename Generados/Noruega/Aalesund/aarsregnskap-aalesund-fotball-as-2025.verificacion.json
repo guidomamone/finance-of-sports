@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.pdf",
  "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.md",
- "generado": "2026-10-19T01:15:28.534Z",
+ "generado": "2026-10-19T01:30:11.091Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "aalesund-no",
  "year": 2025,
  "escala": {
   "valor": "unidades",
@@ -74,7 +74,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   },
   {
    "nombre": "primer año",
@@ -86,9 +86,9 @@
   "la nota de \"Salgsinntekter\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "ajuste manual: fila \"Annen rentekostnad\" (financiero) -7 004, en lugar de \"Annen rentekostnad\" (2026-10-19, costo financiero leído como ingreso (Sum finanskostnader 77.934) (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y)))",
   "ajuste manual: fila \"Annen finanskostnad\" (financiero) -70 930, en lugar de \"Annen finanskostnad\" (2026-10-19, costo financiero leído como ingreso: el resultado cierra en 1.514.820 (1 de redondeo) (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y)))",
-  "duda de localizar ya contestada para el club (cuadro-duplicado, \"-\"): aceptar, en aarsregnskap-aalesund-fotball-as-2025.pdf",
-  "duda de extraer ya contestada para el club (perimetro, \"-\"): aceptar, en aarsregnskap-aalesund-fotball-as-2025.pdf",
-  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en aarsregnskap-aalesund-fotball-as-2025.pdf"
+  "duda de localizar ya contestada para el club (antes de su alta) (cuadro-duplicado, \"-\"): aceptar, en aarsregnskap-aalesund-fotball-as-2025.pdf",
+  "duda de extraer ya contestada para el club (antes de su alta) (perimetro, \"-\"): aceptar, en aarsregnskap-aalesund-fotball-as-2025.pdf",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en aarsregnskap-aalesund-fotball-as-2025.pdf"
  ],
  "reintentar": null,
  "reintentado": false,
