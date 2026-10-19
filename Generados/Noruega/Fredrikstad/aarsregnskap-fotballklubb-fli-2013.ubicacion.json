@@ -1,0 +1,255 @@
+{
+ "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2013.pdf",
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2013.md",
+ "mdSha1": "bf19a47e886c21a9125edbec1b9fee1edac321f8",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T03:52:20.077Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    104,
+    128
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    143,
+    175
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    185,
+    201
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 8,
+   "lineas": [
+    319,
+    339
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 19,
+   "lineas": [
+    746,
+    749
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 19,
+   "lineas": [
+    751,
+    754
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 19,
+   "lineas": [
+    756,
+    759
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 21,
+   "lineas": [
+    797,
+    803
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 22,
+   "lineas": [
+    847,
+    850
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 28,
+   "lineas": [
+    1206,
+    1217
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 29,
+   "lineas": [
+    1257,
+    1272
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 31,
+   "lineas": [
+    1341,
+    1367
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 32,
+   "lineas": [
+    1379,
+    1402
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 33,
+   "lineas": [
+    1410,
+    1427
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 34,
+   "lineas": [
+    1456,
+    1499
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 36,
+   "lineas": [
+    1529,
+    1572
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 41,
+   "lineas": [
+    1791,
+    1793
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 41,
+   "lineas": [
+    1797,
+    1803
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 41,
+   "lineas": [
+    1811,
+    1814
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 41,
+   "lineas": [
+    1820,
+    1825
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 42,
+   "lineas": [
+    1839,
+    1846
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 42,
+   "lineas": [
+    1850,
+    1857
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 43,
+   "lineas": [
+    1885,
+    1887
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 43,
+   "lineas": [
+    1893,
+    1897
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 44,
+   "lineas": [
+    1911,
+    1916
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [
+  "b15"
+ ],
+ "notas_gastos": [
+  "b15",
+  "b18",
+  "b19"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK",
+ "moneda": "NOK",
+ "columna_ejercicio": "2013",
+ "columna_anterior": "2012",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se usa el cuadro de gestión de la pág. 34 (b15) como desglose de ingresos y gastos del resultatregnskap individual (b1), aunque sus totales podrían no coincidir con b1?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "SUM DRIFTSINNTEKTER",
+   "texto": "b15 es un cuadro de gestión con signos invertidos, precedido por un texto sobre la toma de la operación de FFK Sport AS en agosto, por lo que podría combinar club y FFK Sport AS y no cuadrar con el estado individual de b1.",
+   "bloques": [
+    "b15",
+    "b1"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el resultatregnskap de la pág. 31 (b12) por ser una repetición de b1 en el documento de la asamblea?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b12 parece repetir el estado de b1 dentro del årsmøtedokument.",
+   "bloques": [
+    "b12",
+    "b1"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "El estado oficial es b1 (pág. 2, en NOK, individual de Fredrikstad Fotballklubb). b12 lo repite. b15 es el detalle de gestión por rubro, con los ingresos en negativo. b16 es el presupuesto 2014 y queda excluido. b18 corresponde a la nota de salarios y b19 a los honorarios de auditoría. Las notas de filiales, activos y patrimonio quedan excluidas."
+}

@@ -1,0 +1,133 @@
+{
+ "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2012.pdf",
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2012.md",
+ "mdSha1": "8644564e65a52d6de51099f66f50725f59c188bf",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T03:50:32.956Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    104,
+    123
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    138,
+    168
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    178,
+    186
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    333,
+    384
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    394,
+    425
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    471,
+    474
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 12,
+   "lineas": [
+    488,
+    491
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    495,
+    498
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 12,
+   "lineas": [
+    506,
+    510
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    518,
+    523
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [
+  "b4"
+ ],
+ "notas_gastos": [
+  "b4",
+  "b10"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK",
+ "moneda": "NOK",
+ "columna_ejercicio": "2012",
+ "columna_anterior": "2011",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se usa el cuadro 'Resultatregnskap 2012' del årsmøtedokument (b4, pág. 9), columna 'Regnskap 31.12.12', como desglose de ingresos y gastos del estado b1?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Salgsinntekt",
+   "texto": "b4 es un resultado de gestión con presupuesto; el finansresultat parece con signo distinto (Finansinntekter 1 027 294 suma al déficit), hay que verificar que cuadre con b1.",
+   "bloques": [
+    "b4",
+    "b1"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga la nota 6 de honorarios (b10) como desglose de otros gastos operativos?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Annen driftskostnad",
+   "texto": "Detalla revisión y asesoría, una parte menor de los gastos.",
+   "bloques": [
+    "b10"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado individual en b1 (pág. 2, NOK unidades). El club no consolida (regla de pequeñas empresas, pág. 12). b4 es el resultado detallado con presupuesto del documento de asamblea; se toma solo la columna Regnskap 31.12.12. Se excluyen balance (b2, b3, b5) y notas de participaciones, créditos y patrimonio (b6-b9)."
+}

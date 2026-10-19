@@ -1,0 +1,66 @@
+{
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2016.md",
+ "generatedAt": "2026-10-19T03:57:57.612Z",
+ "rubrosHuella": "de4b3745a6f605083921e0d490c8be7adba6642a",
+ "rubros": [
+  {
+   "label": "Annen driftsinntekt",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "Varekostnad",
+   "lado": "expense",
+   "page": 13,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Avskrivning",
+   "lado": "expense",
+   "page": 13,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 13,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": "expense",
+   "page": 13,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "wages_squad",
+     0.6900000000000001
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1010
+  }
+ ]
+}

@@ -1,0 +1,151 @@
+{
+ "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2015.pdf",
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2015.md",
+ "mdSha1": "c9953085549f4d19de997966d1035f42bca8369a",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T03:54:44.213Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    104,
+    129
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    145,
+    175
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    185,
+    205
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 14,
+   "lineas": [
+    618,
+    638
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 15,
+   "lineas": [
+    646,
+    670
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 16,
+   "lineas": [
+    678,
+    695
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 18,
+   "lineas": [
+    769,
+    775
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 18,
+   "lineas": [
+    783,
+    785
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 18,
+   "lineas": [
+    789,
+    792
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 18,
+   "lineas": [
+    798,
+    803
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 19,
+   "lineas": [
+    815,
+    822
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 19,
+   "lineas": [
+    826,
+    833
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 19,
+   "lineas": [
+    841,
+    843
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 20,
+   "lineas": [
+    855,
+    859
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b7"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK (b1, mismo estado que b4 con importes idénticos en coronas sin abreviar)",
+ "moneda": "NOK",
+ "columna_ejercicio": "2015",
+ "columna_anterior": "2014",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el resultatregnskap de la pág. 2 (b1) por ser un duplicado del de la pág. 14 (b4) con los mismos importes?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b1 (formulario de Brønnøysund, pág. 2) y b4 (cuentas firmadas, pág. 14) tienen idénticos importes 2015 y 2014.",
+   "bloques": [
+    "b1",
+    "b4"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados individual de Fredrikstad Fotballklubb; aparece dos veces (b1 pág. 2 y b4 pág. 14) con iguales cifras, se elige b4 (cuentas anuales con notas). Nota 3 (b7) desglosa Lønnskostnad. b8/b9 son remuneración del director y honorarios de auditor (detalle por persona/menor), b10 filiales, b11-b12 activos fijos, b14 patrimonio: excluidos. No hay consolidado."
+}

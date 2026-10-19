@@ -1,0 +1,110 @@
+{
+  "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2012.md",
+  "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2012.pdf",
+  "club": "fredrikstad-no",
+  "year": 2012,
+  "generatedAt": "2026-10-19T03:56:51.017Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Diverseinntekter",
+      "lado": "revenue",
+      "page": 9,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        0.000354
+      ],
+      "glosa": "Ingresos diversos"
+    },
+    {
+      "label": "Medlemskontingent",
+      "lado": "revenue",
+      "page": 9,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        0.08649
+      ],
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "GRASROTANDEL",
+      "lado": "revenue",
+      "page": 9,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        0.677145
+      ],
+      "glosa": "Participación en lotería (Grasrotandelen)"
+    },
+    {
+      "label": "Jeg er med",
+      "lado": "revenue",
+      "page": 9,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        1.148488
+      ],
+      "glosa": "Campaña «Jeg er med»"
+    },
+    {
+      "label": "Spilleautomater",
+      "lado": "revenue",
+      "page": 9,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        0.230242
+      ],
+      "glosa": "Máquinas recreativas"
+    },
+    {
+      "label": "Tilskudd FFK Sport ASA",
+      "lado": "revenue",
+      "page": 9,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        19.769761
+      ],
+      "glosa": "Subvenciones de FFK Sport ASA"
+    },
+    {
+      "label": "Tilskudd, gaver",
+      "lado": "revenue",
+      "page": 9,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        1.088161
+      ],
+      "glosa": "Subvenciones y donaciones"
+    },
+    {
+      "label": "Treningsavgifter",
+      "lado": "revenue",
+      "page": 9,
+      "section": "nota que desglosa \"Salgsinntekt\"",
+      "values": [
+        0.0625
+      ],
+      "glosa": "Cuotas de entrenamiento"
+    },
+    {
+      "label": "Lønnskostnad",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.431894
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Annen driftskostnad",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        23.122966
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

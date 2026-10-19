@@ -1,0 +1,77 @@
+{
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2016.md",
+ "club": "fredrikstad-no",
+ "year": 2016,
+ "generatedAt": "2026-10-19T03:58:03.111Z",
+ "rubrosHuella": "de4b3745a6f605083921e0d490c8be7adba6642a",
+ "jevHuella": "99ea038fd07f58138c9fa2a8d95893781014f387",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Annen driftsinntekt",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos de explotación",
+   "page": 13,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "lump_football_operations",
+   "confianza": 1
+  },
+  {
+   "label": "Varekostnad",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Coste de ventas",
+   "page": 13,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de personal",
+   "page": 13,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "Avskrivning",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortización",
+   "page": 13,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "depreciation",
+   "confianza": 1
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 13,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  }
+ ]
+}

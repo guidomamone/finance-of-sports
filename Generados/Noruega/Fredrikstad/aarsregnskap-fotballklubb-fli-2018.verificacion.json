@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2018.pdf",
  "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2018.md",
- "generado": "2026-10-19T00:02:20.871Z",
- "estado": "cola",
- "clubId": null,
+ "generado": "2026-10-19T03:56:51.713Z",
+ "estado": "ok",
+ "clubId": "fredrikstad-no",
  "year": 2018,
  "escala": {
   "valor": "unidades",
@@ -23,10 +23,7 @@
    "fecha": "2026-10-18"
   }
  ],
- "cola": [
-  "b96ae0c",
-  "dd23702"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -44,18 +41,29 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 22.903598 - gastos 22.905462 ± financiero 1.3336 ± impuesto 0 no da el impreso -1.148565",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo)",
+   "dif": 0.0000010000000025822686
+  },
+  {
+   "nombre": "documento del año 2017",
+   "ok": true,
+   "detalle": "ingresos de 2017: 28.452409 en aarsregnskap-fotballklubb-fli-2017.pdf y 28.452409 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2017: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
-  "duda de localizar que no afecta la carga: b1 (extracto registral, 'Beløp i: NOK') y b4 (cuentas anuales firmadas) parecen ser la misma cuenta de resultados 2018; b4 no indica escala explícita."
+  "duda de localizar que no afecta la carga: b1 (extracto registral, 'Beløp i: NOK') y b4 (cuentas anuales firmadas) parecen ser la misma cuenta de resultados 2018; b4 no indica escala explícita.",
+  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -68,7 +76,7 @@
   "resultadoImpreso": -1.148565,
   "resultadoParaCargar": -1.148565,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "financiero por rótulo"
  },
  "lineas": [
   {
@@ -137,7 +145,7 @@
   }
  ],
  "signosCarga": {
-  "financiero": 1,
+  "financiero": "rótulo",
   "impuesto": 1
  },
  "financiero": [
@@ -148,7 +156,7 @@
   },
   {
    "etiqueta": "Annen finanskostnad",
-   "M": 1.24015,
+   "M": -1.24015,
    "linea": 545
   }
  ],

@@ -1,0 +1,175 @@
+{
+ "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2016.pdf",
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2016.md",
+ "mdSha1": "84d94c2e27c5746044a1327e99fe08785eb0a620",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T03:55:33.186Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    105,
+    129
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    145,
+    175
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    185,
+    207
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 13,
+   "lineas": [
+    543,
+    561
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 14,
+   "lineas": [
+    569,
+    593
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 15,
+   "lineas": [
+    601,
+    621
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 17,
+   "lineas": [
+    694,
+    700
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 17,
+   "lineas": [
+    708,
+    710
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 17,
+   "lineas": [
+    716,
+    718
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 18,
+   "lineas": [
+    730,
+    735
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 18,
+   "lineas": [
+    741,
+    749
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 18,
+   "lineas": [
+    753,
+    759
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 19,
+   "lineas": [
+    773,
+    778
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 19,
+   "lineas": [
+    780,
+    784
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 19,
+   "lineas": [
+    788,
+    790
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 19,
+   "lineas": [
+    796,
+    800
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 19,
+   "lineas": [
+    808,
+    812
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b7"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK (b1, mismo estado que b4)",
+ "moneda": "NOK",
+ "columna_ejercicio": "2016",
+ "columna_anterior": "2015",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado de resultados de las cuentas firmadas (b4, pág. 13) y se deja afuera la versión de b1 (pág. 2) por ser el mismo estado duplicado?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b1 (formulario de Brønnøysund) y b4 parecen ser el mismo resultatregnskap 2016 de la entidad individual; b1 tiene más filas (23 contra 17) y podría tener otro nivel de detalle.",
+   "bloques": [
+    "b1",
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Club individual: no prepara consolidado (exención para pequeñas empresas, nota 4). b1 y b4 son dos versiones del mismo estado de resultados; se elige b4. Nota 3 (b7) desglosa los costes de personal (lønnskostnader). b8 es el detalle por persona (daglig leder) y no se elige. b10 son filiales; b11 y b12 son activos fijos."
+}

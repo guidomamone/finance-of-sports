@@ -1,0 +1,340 @@
+{
+ "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2016.pdf",
+ "generado": "2026-10-19T03:58:05.747Z",
+ "frena": [],
+ "avisos": [
+  "perímetro: individual (ajuste manual del documento, 2026-10-18: perimetro-senales.mjs: el ejercicio 2016-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 15 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)"
+ ],
+ "ejercicio": {
+  "clubId": "fredrikstad-no",
+  "year": 2016,
+  "cierre": "2016-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Annen driftsinntekt",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 33.801587,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Varekostnad",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -4.006214,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Lønnskostnad",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -19.287756,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Avskrivning",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.541479,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Annen driftskostnad",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -9.977524,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "NOK",
+   "fxRef": "NOK@2016-12-31",
+   "sourceId": "fredrikstad-no-aarsregnskap-fotballklubb-fli-2016",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 0.031955,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Annen finansinntekt",
+     "value": 0.042386
+    },
+    {
+     "label": "Annen finanskostnad",
+     "value": -0.010431
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Annen driftsinntekt",
+     "lado": "revenue",
+     "importe": 33.801587,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 33.801587,
+   "officialTotalExpenses": 33.812973,
+   "officialPAT": 0.020569
+  },
+  "source": {
+   "id": "fredrikstad-no-aarsregnskap-fotballklubb-fli-2016",
+   "clubId": "fredrikstad-no",
+   "title": "Fredrikstad Fotballklubb — aarsregnskap-fotballklubb-fli-2016 (ejercicio 2016)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2016.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2016-12-31",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "01.01.2016 - 31.12.2016"
+  },
+  "confianza": "alta",
+  "anual": "calendario"
+ },
+ "clubId": "fredrikstad-no",
+ "year": 2016,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2016.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "perimetro-senales.mjs: el ejercicio 2016-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 15 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados",
+   "evidencia": "A2 (Claude): Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2016.md",
+   "autor": "perimetro-senales",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "seleccion": {
+  "filas": 7,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Annen driftsinntekt",
+   "page": 13,
+   "native": 33.801587,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 33.801587,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 33.801587
+  },
+  {
+   "label": "Varekostnad",
+   "page": 13,
+   "native": 4.006214,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 4.006214,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -4.006214
+  },
+  {
+   "label": "Lønnskostnad",
+   "page": 13,
+   "native": 19.287756,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 19.287756,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Lønnskostnad sin separar plantel: entero a wages_squad. El documento no abre el renglon. [Lønnskostnad 53 626 147 (L1068)]",
+   "destino": "expense",
+   "amountNative": -19.287756
+  },
+  {
+   "label": "Avskrivning",
+   "page": 13,
+   "native": 0.541479,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.541479,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Sin nota que diga que son derechos de jugadores, rige la regla: Avskrivning es depreciación. Advertencia: el balance tiene 'Fotballspillere' (derechos) por 17 924 673 contra 5 049 100 del año anterior, asi que parte de la amortizacion (1 460 045 -> 5 056 889) puede ser de jugadores, pero el acta de asamblea no trae notas para separarla. [Avskrivning 5 056 889 (L1069); Fotballspillere 17 924 673 (L1102)]",
+   "destino": "expense",
+   "amountNative": -0.541479
+  },
+  {
+   "label": "Annen driftskostnad",
+   "page": 13,
+   "native": 9.977524,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 9.977524,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -9.977524
+  },
+  {
+   "label": "Annen finansinntekt",
+   "page": null,
+   "native": 0.042386,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "page": null,
+   "native": -0.010431,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 33.801587,
+  "expSum": -33.812973,
+  "officialTotalRevenue": 33.801587,
+  "officialTotalExpenses": 33.812973,
+  "officialPAT": 0.020569,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 0.020569,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 33.801587
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 33.812973
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "NOK@2016-12-31",
+  "fx": 8.62,
+  "source": "market_close",
+  "label": "Tipo medio de referencia de Norges Bank, última rueda hábil antes del cierre (2016-12-30, 2016-12-31 no es día hábil)"
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "no hay ninguna liga-temporada de no 2016 cacheada",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2016,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2016-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (7 de 9 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-18)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "NOK",
+   "fuente": "moneda de curso legal de Noruega (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "NOK@2016-12-31",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 8.62. --escribir agrega 'NOK@2016-12-31' a FX_CLOSE",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "fredrikstad-no-aarsregnskap-fotballklubb-fli-2016",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": null,
+   "fuente": "no hay ninguna liga-temporada de no 2016 cacheada",
+   "estado": "pendiente"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 1,
+  "lineasGasto": 4,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

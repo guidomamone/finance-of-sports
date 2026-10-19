@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2016.md",
+  "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2016.pdf",
+  "club": "fredrikstad-no",
+  "year": 2016,
+  "generatedAt": "2026-10-19T03:56:51.523Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Annen driftsinntekt",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        33.801587
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Varekostnad",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        4.006214
+      ],
+      "glosa": "Coste de ventas"
+    },
+    {
+      "label": "Lønnskostnad",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        19.287756
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Avskrivning",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        0.541479
+      ],
+      "glosa": "Amortización"
+    },
+    {
+      "label": "Annen driftskostnad",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        9.977524
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}
