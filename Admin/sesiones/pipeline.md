@@ -639,3 +639,12 @@ preguntarle, aunque el escalón ya esté aprobado (memoria `no-endurecer-reglas-
 - **298 o2** (`6581ca84db`, `perimetro-senales.mjs`): un "individual" por descarte (ninguna tabla lo dice) no vota si los años cargados del club son consolidado. Medido en 988 carpetas: cambian Crystal Palace y Leeds; verdad 61/0/39 igual.
 - Basel: la categoría `Sonderabschreibungen auf Ersatzbeschaffung` es `exceptional_items` (el informe la llama ausserordentliche Aufwendungen, md 2015 L2149-2152). Caja de Basel escrita para 2008-2011 y 2013-2020; sin deuda en ningún año; 2005-2007, 2012 y 2021 sin caja.
 - Pendiente de Basel: las gestiones (no existe `data/gestiones/ch.js`; hay que crearlo y sumar 'ch' a PAISES de `js/finanzas-anios.js`).
+
+**Actualización 3 (2026-10-19, noche):**
+- **323 a** (`3d58823a58`, `lote.mjs`): el total del ensayo de `--reintentar` suma Mistral + localizar y extraer de cada documento a re-transcribir.
+- **323 e** (`0a46716e01`, `verificar.mjs`): se cierra la duda de perímetro sin renglón si el documento trae un solo estado y ningún otro documento del club cierra el mismo día (regla 1 de CONVENCIONES-DATOS). 17 dudas en 3.702 documentos; ninguna contestada "no".
+- **323 f** (`59bf5decfa`, `alta-club.mjs`): `nombreLegal` busca también el singular de un nombre en plural (Harlequins).
+- **323 c**: no se hace; medido y anotado en `Admin/HALLAZGOS-pipeline.md` ("sin daño hoy").
+- **Basel**: gestiones (`data/gestiones/ch.js`, `f79de36306`) con fuente = la transcripción publicada en financeofsports.com; la cola de St. Gallen se contestó con un subagente: 3 respuestas aplicadas, 6 casos de "Erträge brutto"/"Direkte Kosten" esperan el perímetro de Guido; las presidencias de St. Gallen (Hüppi) no tienen fecha de inicio en ningún informe.
+- **298 aj**: esperando el perímetro de St. Gallen (los desajustes con el año vecino 2020 a 2022 los explica sobre todo la compensación con la Event AG).
+- **282 f**: depende de una decisión de Guido (exigir la línea del auditor al dar de alta: ver el mensaje del chat).
