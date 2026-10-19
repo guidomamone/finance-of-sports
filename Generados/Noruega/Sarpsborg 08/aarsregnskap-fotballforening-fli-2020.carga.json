@@ -1,7 +1,16 @@
 {
  "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2020.pdf",
- "generado": "2026-10-19T12:52:11.119Z",
- "frena": [],
+ "generado": "2026-10-19T12:54:48.216Z",
+ "frena": [
+  {
+   "etapa": "año",
+   "motivo": "sarpsborg08-no ya tiene el ejercicio 2020 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['sarpsborg08-no-aarsregnskap-fotballforening-fli-2020'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: individual (ajuste manual del documento, 2026-10-19: perimetro-senales.mjs: el ejercicio 2020-12-31 se publicó solo individual (el club es consolidado); 2 documento(s) con los dos estados votan consolidado; 8 ejercicio(s) con un solo perímetro (individual); 18 documento(s) mirados)",
   "gestión: ningún presidente confirmado cubre 2020 (cierre 2020-12-31); pregunta en la cola (no frena)"
@@ -857,12 +866,6 @@
    "M": 84.990731
   }
  },
- "fxCloseNuevo": {
-  "key": "NOK@2020-12-31",
-  "fx": 8.5326,
-  "source": "market_close",
-  "label": "Tipo medio de referencia de Norges Bank al 2020-12-31"
- },
  "liga": {
   "valor": "no-eliteserien",
   "fuente": "la fila ya existe en data/club-leagues",
@@ -896,7 +899,7 @@
   },
   "fxRef": {
    "valor": "NOK@2020-12-31",
-   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 8.5326. --escribir agrega 'NOK@2020-12-31' a FX_CLOSE",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene NOK@2020-12-31 = 8.5326 (Tipo medio de referencia de Norges Bank al 2020-12-31)",
    "estado": "ok"
   },
   "sourceId": {
@@ -911,8 +914,8 @@
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 2,
   "lineasIngreso": 11,
   "lineasGasto": 16,
   "metaFilas": 4,

@@ -3,7 +3,8 @@
  "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2022.md",
  "mdSha1": "9a1feeb06b2cda651dd5c274fae631ed1991115d",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T12:37:27.660Z",
+ "generado": "2026-10-19T12:55:04.825Z",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -432,14 +433,14 @@
  },
  "sin_estado": false,
  "estado": [
-  "b11"
+  "b1",
+  "b2"
  ],
  "notas_ingresos": [
-  "b41"
+  "b25"
  ],
  "notas_gastos": [
-  "b42",
-  "b46"
+  "b27"
  ],
  "escala": "unidades",
  "escala_evidencia": "Beløp i: NOK",
@@ -450,20 +451,30 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿El bloque b37 (pág. 31, Resultatregnskap con Salgsinntekt/Annen driftsinntekt) corresponde al estado consolidado, igual que b11, y sus notas b41/b42/b46 son las notas del consolidado?",
+   "pregunta": "¿Se carga el estado individual de pág. 2 (b1+b2) y se dejan afuera las versiones repetidas del mismo estado individual (b21, pág. 11) y el consolidado (b11, b37)?",
    "propuesta": "sí",
-   "tema": "perimetro",
-   "renglon": "Salgsinntekt",
-   "texto": "b37 tiene la misma estructura que el KONSERNRESULTATREGNSKAP b11 pero un título genérico; sus notas incluyen Goodwill (b44), lo que sugiere el consolidado.",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b21 repite exactamente los importes de b1 en otro orden; b11 (KONSERNRESULTATREGNSKAP) y b37 parecen ser del consolidado.",
    "bloques": [
-    "b37",
+    "b1",
+    "b21",
     "b11",
-    "b41",
-    "b42",
-    "b46"
+    "b37"
    ],
-   "afecta_carga": true
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se toman 'Mediainntekter' como Televisión y 'Medlemsinntekter' como Cuotas sociales, sin otro cuadro que los abra?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Mediainntekter",
+   "texto": "No hay nota que abra televisión, estadio ni cuotas; están como renglones directos del estado b1 (Billetinntekter sería estadio).",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": false
   }
  ],
- "observaciones": "Individual: b1/b2 (RESULTATREGNSKAP de la asociación) y b21 con notas b25, b27. Consolidado: b11 (KONSERNRESULTATREGNSKAP) y, al parecer, b37 con notas b41 (ingresos), b42 (personal) y b46 (honorarios de auditoría). Se elige el consolidado, según el perímetro ya cargado del club."
+ "observaciones": "Perímetro individual (el que usa el club): estado b1 (pág. 2) con continuación b2; b21 es la misma cuenta individual repetida. Consolidado: b11 (pág. 6, Konsernresultatregnskap) y probablemente b37 (pág. 31) con notas b41-b42. Nota 1 individual (b25) abre ingresos por área; Nota 3 (b27) abre Lønnskostnad. Televisión = Mediainntekter, Estadio/taquilla = Billetinntekter, Cuotas sociales = Medlemsinntekter, todos renglones directos del estado b1; no hay notas que los desglosen más."
 }

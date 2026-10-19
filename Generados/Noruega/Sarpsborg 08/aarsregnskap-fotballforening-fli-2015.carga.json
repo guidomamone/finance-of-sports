@@ -1,7 +1,16 @@
 {
  "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2015.pdf",
- "generado": "2026-10-19T12:52:10.657Z",
- "frena": [],
+ "generado": "2026-10-19T12:54:47.859Z",
+ "frena": [
+  {
+   "etapa": "año",
+   "motivo": "sarpsborg08-no ya tiene el ejercicio 2015 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['sarpsborg08-no-aarsregnskap-fotballforening-fli-2015'] ya existe"
+  }
+ ],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-19: perimetro-senales.mjs: 2 documento(s) con los dos estados votan consolidado; 8 ejercicio(s) con un solo perímetro (individual); 18 documento(s) mirados)",
   "gestión: ningún presidente confirmado cubre 2015 (cierre 2015-12-31); pregunta en la cola (no frena)"
@@ -969,8 +978,8 @@
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 2,
   "lineasIngreso": 13,
   "lineasGasto": 17,
   "metaFilas": 4,

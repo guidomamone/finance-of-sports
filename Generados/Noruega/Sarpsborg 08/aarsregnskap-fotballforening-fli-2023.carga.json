@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2023.pdf",
- "generado": "2026-10-19T12:52:11.625Z",
+ "generado": "2026-10-19T12:54:48.522Z",
  "frena": [
   {
    "etapa": "tie-out-resultado",
@@ -8,13 +8,13 @@
   }
  ],
  "avisos": [
-  "perímetro: consolidado (ajuste manual del club, 2026-10-19: perimetro-senales.mjs: 2 documento(s) con los dos estados votan consolidado; 8 ejercicio(s) con un solo perímetro (individual); 18 documento(s) mirados)"
+  "perímetro: individual (ajuste manual del documento, 2026-10-19: la controlada es Prozo AS (100%, comprada en 2021), un negocio comercial aparte que no es el fútbol del club (mismo criterio que el 2025); el club es el FLI en cuentas individuales)"
  ],
  "ejercicio": {
   "clubId": "sarpsborg08-no",
   "year": 2023,
   "cierre": "2023-12-31",
-  "perimetro": "consolidado",
+  "perimetro": "individual",
   "revenueLines": [
    {
     "rawLabel": "Salgsinntekt",
@@ -139,7 +139,7 @@
    "title": "Sarpsborg 08 Fotballforening — aarsregnskap-fotballforening-fli-2023 (ejercicio 2023)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2023.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2023.md",
@@ -417,7 +417,7 @@
    "estado": "ok"
   },
   "perimetro": {
-   "valor": "consolidado",
+   "valor": "individual",
    "fuente": "ajuste manual (2026-10-19)",
    "estado": "ok"
   },

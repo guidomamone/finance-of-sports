@@ -3,7 +3,8 @@
  "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2024.md",
  "mdSha1": "c695f9bce4368c28bd186350372acc1e320fd15c",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T12:40:36.008Z",
+ "generado": "2026-10-19T12:56:25.999Z",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -336,13 +337,14 @@
  },
  "sin_estado": false,
  "estado": [
-  "b5"
+  "b1",
+  "b2"
  ],
  "notas_ingresos": [
-  "b14"
+  "b31"
  ],
  "notas_gastos": [
-  "b15"
+  "b32"
  ],
  "escala": "unidades",
  "escala_evidencia": "Beløp i: NOK",
@@ -353,17 +355,30 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga el estado de resultados de pág. 18 (b10), por ser una copia del consolidado de pág. 6 (b5) con la columna 2023 parcialmente ilegible?",
+   "pregunta": "¿Se carga el estado individual b1 (pág. 2) en lugar del consolidado b5/b10 (Konsern), por coherencia con los años ya cargados?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El club usa perímetro individual; b1 abre Billetinntekter, Medlemsinntekter y Mediainntekter, mientras que b10 (Sum driftsinntekter 224 508 804) parece ser el consolidado.",
+   "bloques": [
+    "b1",
+    "b5",
+    "b10"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera la tabla b27 (pág. 34) por ser una copia del estado individual b1?",
    "propuesta": "sí",
    "tema": "cuadro-duplicado",
    "renglon": "",
-   "texto": "b10 repite exactamente los importes 2024 de b5 (Sum driftsinntekter 224 508 804, Årsresultat 29 281 631).",
+   "texto": "b27 tiene los mismos renglones que b1 (Billetinntekter, Medlemsinntekter...) y parece ser la versión firmada del mismo estado.",
    "bloques": [
-    "b10",
-    "b5"
+    "b27",
+    "b1"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "Consolidado (konsern): b5 (KONSERNRESULTATREGNSKAP pág. 6), duplicado en b10 (pág. 18); notas consolidadas b14 (Note 1 Driftsinntekter, suma 224 508 804) y b15 (Note 2 Lønnskostnader, 62 994 103). Individual (forening): b1 (pág. 2, con desglose Billetinntekter…) y b27 (pág. 34, resultado 29 725 168), con notas b31/b32. Se elige consolidado según perímetro histórico. La diferencia de 1 NOK en el SUM 2023 de b14 es redondeo."
+ "observaciones": "El estado individual (b1+b2, pág. 2-3) abre Televisión (Mediainntekter 18 716 329), Estadio (Billetinntekter 6 443 008) y Cuotas sociales (Medlemsinntekter 573 490). Los bloques b5 (KONSERNRESULTATREGNSKAP) y b10 son consolidados; las notas b14/b15 corresponden al consolidado. b27 parece ser un duplicado del individual, con sus notas b31/b32 (Note 1 Salgsinntekter, Note 2 Lønnskostnader)."
 }
