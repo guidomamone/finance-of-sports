@@ -265,6 +265,11 @@ la temporada entera del club. La señal sale del propio documento: la columna de
 existe). Casos: Kifisia 2022 (09/08/2021 – 30/06/2022, sin columna) y Volos 2019 (24/07/2018 – 30/06/2019, la plantilla griega imprime la
 columna 2017-2018 toda en 0,00). Un cambio de cierre o un semestral siempre tienen importes del año anterior y siguen siendo parciales. La
 fuente lleva `publicNote` "Primer ejercicio de la sociedad: del ... al ... (N meses)". Lo aplica `tools/cargar.mjs` (sin cola).
+Lo mismo vale para un primer ejercicio de MÁS de 12 meses (decisión de Guido, 2026-10-19): la sociedad se constituyó antes de la temporada
+y su primer cierre llega 14 a 18 meses después. Se carga como el año del cierre, con los importes tal cual (sin prorratear: el fútbol
+arranca con la temporada) y la misma nota. Casos: Anderlecht 2011 (24/02/2010 – 30/06/2011, 16 meses; vendió 39,1 M y en 2012, de 12
+meses, 67,9 M), RAAL La Louvière 2018, Sint-Truiden 2013 y Zulte Waregem 2012. Un cambio de cierre largo (Westerlo 2015, 01/01/2014 –
+30/06/2015) tiene importes del año anterior y no entra por esta regla.
 
 **Ejercicio de 11 meses por cambio de cierre (decisión de Guido, 2026-10-15).** Cuando un club pasa el cierre de julio a junio, el ejercicio
 de transición (1 de agosto a 30 de junio, 11 meses) se carga como el año: contiene la temporada entera y no hay otro tramo que buscar. Casos:
