@@ -273,3 +273,11 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
   Willem II: A3 dice consolidado ("Willem II Tilburg B.V.", L550); lo está fijando Onboarding 2.
 
 ## Después del merge de la w2 (2026-10-19)
+
+- **298 e3 hecha** (6d92cfa468, ok de Guido 2026-10-19). La causa: un `.md` viejo sin tablas (< 5 renglones "|", 2+ págs., motor que no es
+  Mistral) se rehace entero con Mistral en el paso −0.5 de `resolveDoc()`, y el ensayo (`dryRunDoc`) no lo contaba: cotizaba solo la
+  validación del `.md` viejo. Corrida sin-tablas-298e (238 docs): el ensayo daba US$ 7,26 y costó 43,09 (`gasto.mjs --desde 2026-10-19`:
+  Mistral 33,34 por 8.335 páginas, validación ~10); con el arreglo, 40,60. Ensayo de todo lo pendiente (9.471 docs): de US$ 1.761,02 a
+  1.844,17. Los +83,15 son exactamente Mistral de las 20.788 páginas de 368 documentos (206 de "texto" y 162 de "escaneo"). La validación de
+  cada documento y el resto de los planes dan igual. **Aviso para la próxima corrida grande:** esos 368 documentos (221 en "revisar", 102 en
+  "pendiente-segunda-voz", 38 en "sin-tablas") se van a rehacer con Mistral (~US$ 83 más la validación) apenas pasen por `resolver-inventario`.
