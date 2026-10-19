@@ -284,6 +284,62 @@ tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+## 2012
+
+### Ingresos
+
+```text
+2012: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2012.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2012.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Diverseinntekter | pág. 9, Jev 0.99 |
+| 2 | Medlemskontingent | pág. 9, Jev 1 |
+| 3 | GRASROTANDEL | pág. 9, Jev 1 |
+| 4 | Jeg er med | pág. 9, Claude 0.8 |
+| 5 | Spilleautomater | pág. 9, Claude 0.8 |
+| 6 | Tilskudd FFK Sport ASA | pág. 9, Jev 0.96 |
+| 7 | Tilskudd, gaver | pág. 9, Jev 1 |
+| 8 | Treningsavgifter | pág. 9, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Lønn/honorar | pág. 9, Claude 0.8 |
+| 2 | Lønn Gatelag | pág. 9, precedente |
+| 3 | Sosiale tiltak, frivillige | pág. 9, Jev 0.9 |
+| 4 | Utsmykning stadion | pág. 9, precedente |
+| 5 | Adm. kostnader | pág. 9, Jev 1 |
+| 6 | Jeg er med! | pág. 9, precedente |
+| 7 | Kurs | pág. 9, precedente |
+| 8 | Reiseutgifter | pág. 9, Jev 1 |
+| 9 | Arrangement gatelag | pág. 9, precedente |
+| 10 | Kostnader gatelag | pág. 9, precedente |
+| 11 | Revisjonshonorar | pág. 12, Jev 0.97 |
+| 12 | Revisjonsbistand | pág. 12, Jev 0.99 |
+| 13 | Juridisk bistand | pág. 12, Jev 1 |
+| 14 | Kontorkostnader | pág. 9, Jev 1 |
+| 15 | Gaver/medaljer | pág. 9, precedente |
+| 16 | Representasjon/møter | pág. 9, Jev 0.98 |
+| 17 | Ikke fradragsber. Kostn | pág. 9, Jev 0.99 |
+| 18 | Tap på krav | pág. 9, Jev 0.97 |
+| 19 | Utgifter Sport | pág. 9, precedente |
+
+### Meta
+
+```text
+2012: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, perimetro-senales 2026-10-18): perimetro = individual. perimetro-senales.mjs: el ejercicio 2012-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 15 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-19): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2013, 2014, 2015, 2016, 2017, 2018, 2024): Inversiones (amortizaciones y depreciación)
+```
+
 ## Fuentes
 
 ### fredrikstad-no-wf-src-ffk-arsmote-2025
@@ -340,4 +396,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2018.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### fredrikstad-no-aarsregnskap-fotballklubb-fli-2012
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2012.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

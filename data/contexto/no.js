@@ -7,7 +7,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Color Line Stadion","capacidad":10778,"sponsor":"Sparebanken Møre","marca":"Umbro","temporada":"2025 Norwegian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378434342"},
   },
   'fredrikstad-no': {
-    2012: {"estadio":"Fredrikstad Stadion","temporada":"2012 Tippeligaen","fuente":"https://en.wikipedia.org/w/index.php?oldid=1322214361"},
+    2012: {"estadio":"Fredrikstad Stadion","capacidad":13300,"sponsor":"Stabburet","marca":"Adidas","temporada":"2012 Tippeligaen","fuente":"https://en.wikipedia.org/w/index.php?oldid=1322214361","fuenteManual":"sponsor: Stabburet fue el principal sponsor de FFK con el logo en el pecho desde marzo de 2010 (https://www.dagligvarehandelen.no/stabburet-blir-sponsor-for-ffk/1107374) durante siete temporadas, hasta diciembre de 2016 (https://www.fredrikstadfk.no/nyheter/takket-av-stabburet-og-orkla); marca: Aftenposten, febrero de 2012, 'Fredrikstad skifter fra Umbro til Adidas' (https://www.aftenposten.no/sport/fotball/i/dOJBPO/drakt-bloggen-finnes-fredrikstads-nye-drakt-her); estadio y capacidad: https://en.wikipedia.org/wiki/2012_Tippeligaen","manual":["estadio","capacidad","sponsor","marca"]},
     2013: {"estadio":"Fredrikstad Stadion","capacidad":12560,"temporada":"2013 Norwegian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1295476289"},
     2014: {"estadio":"Fredrikstad Stadion","capacidad":12560,"temporada":"2014 Norwegian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1334830698"},
     2015: {"estadio":"Fredrikstad Stadion","capacidad":12565,"temporada":"2015 Norwegian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1339664467"},

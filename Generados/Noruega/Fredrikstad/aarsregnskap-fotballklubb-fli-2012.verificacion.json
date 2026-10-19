@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2012.pdf",
  "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2012.md",
- "generado": "2026-10-19T11:19:51.797Z",
+ "generado": "2026-10-19T15:43:52.937Z",
  "estado": "ok",
  "clubId": "fredrikstad-no",
  "year": 2012,
@@ -42,8 +42,8 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (como impresos)",
-   "dif": 0.0012939999999967977
+   "detalle": "cierra (financiero por rótulo con signo)",
+   "dif": 3.3306690738754696e-15
   },
   {
    "nombre": "lectura",
@@ -83,7 +83,7 @@
   "resultadoImpreso": -1.51966,
   "resultadoParaCargar": -1.51966,
   "resultadoFinal": null,
-  "lecturaSignos": "como impresos"
+  "lecturaSignos": "financiero por rótulo con signo"
  },
  "lineas": [
   {
@@ -304,7 +304,7 @@
   }
  ],
  "signosCarga": {
-  "financiero": 1,
+  "financiero": "rótulo",
   "impuesto": 1
  },
  "financiero": [
@@ -315,12 +315,12 @@
   },
   {
    "etiqueta": "Annen rentekostnad",
-   "M": null,
+   "M": 0,
    "linea": 117
   },
   {
    "etiqueta": "Annen finanskostnad",
-   "M": 0.000647,
+   "M": -0.000647,
    "linea": 118
   }
  ],

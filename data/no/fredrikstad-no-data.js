@@ -23,6 +23,16 @@ const fredrikstadnoRevenueLinesByYear = {
   2018: [
     { rawLabel:'Annen driftsinntekt', normalizedCategory:'lump_football_operations', amountNative:22.903598, disclosureLevel:'aggregated' },
   ],
+  2012: [
+    { rawLabel:'Diverseinntekter', normalizedCategory:'other_income', amountNative:0.000354, disclosureLevel:'aggregated' },
+    { rawLabel:'Medlemskontingent', normalizedCategory:'member_dues', amountNative:0.08649, disclosureLevel:'aggregated' },
+    { rawLabel:'GRASROTANDEL', normalizedCategory:'other_income', amountNative:0.677145, disclosureLevel:'aggregated' },
+    { rawLabel:'Jeg er med', normalizedCategory:'other_income', amountNative:1.148488, disclosureLevel:'aggregated' },
+    { rawLabel:'Spilleautomater', normalizedCategory:'other_income', amountNative:0.230242, disclosureLevel:'aggregated' },
+    { rawLabel:'Tilskudd FFK Sport ASA', normalizedCategory:'other_income', amountNative:19.769761, disclosureLevel:'aggregated' },
+    { rawLabel:'Tilskudd, gaver', normalizedCategory:'other_income', amountNative:1.088161, disclosureLevel:'aggregated' },
+    { rawLabel:'Treningsavgifter', normalizedCategory:'youth_football', amountNative:0.0625, disclosureLevel:'aggregated' },
+  ],
 };
 const fredrikstadnoExpenseLinesByYear = {
   2024: [
@@ -81,6 +91,27 @@ const fredrikstadnoExpenseLinesByYear = {
     { rawLabel:'Andre ytelser', normalizedCategory:'wages_squad', amountNative:-0.413427, disclosureLevel:'aggregated' },
     { rawLabel:'Avskrivning', normalizedCategory:'depreciation', amountNative:-0.235149, disclosureLevel:'aggregated' },
     { rawLabel:'Annen driftskostnad', normalizedCategory:'other_expenses', amountNative:-6.321588, disclosureLevel:'aggregated' },
+  ],
+  2012: [
+    { rawLabel:'Lønn/honorar', normalizedCategory:'wages_squad', amountNative:-0.063134, disclosureLevel:'aggregated' },
+    { rawLabel:'Lønn Gatelag', normalizedCategory:'youth_other_sports_expense', amountNative:-0.33521, disclosureLevel:'aggregated' },
+    { rawLabel:'Sosiale tiltak, frivillige', normalizedCategory:'youth_other_sports_expense', amountNative:-0.03355, disclosureLevel:'aggregated' },
+    { rawLabel:'Utsmykning stadion', normalizedCategory:'admin_general_expense', amountNative:-0.016809, disclosureLevel:'aggregated' },
+    { rawLabel:'Adm. kostnader', normalizedCategory:'admin_general_expense', amountNative:-0.045, disclosureLevel:'aggregated' },
+    { rawLabel:'Jeg er med!', normalizedCategory:'other_expenses', amountNative:-0.071307, disclosureLevel:'aggregated' },
+    { rawLabel:'Kurs', normalizedCategory:'admin_general_expense', amountNative:-0.01183, disclosureLevel:'aggregated' },
+    { rawLabel:'Reiseutgifter', normalizedCategory:'match_organisation_expense', amountNative:-0.035545, disclosureLevel:'aggregated' },
+    { rawLabel:'Arrangement gatelag', normalizedCategory:'youth_other_sports_expense', amountNative:-0.078702, disclosureLevel:'aggregated' },
+    { rawLabel:'Kostnader gatelag', normalizedCategory:'youth_other_sports_expense', amountNative:-0.17696, disclosureLevel:'aggregated' },
+    { rawLabel:'Revisjonshonorar', normalizedCategory:'admin_general_expense', amountNative:-0.05, disclosureLevel:'aggregated' },
+    { rawLabel:'Revisjonsbistand', normalizedCategory:'admin_general_expense', amountNative:-0.0265, disclosureLevel:'aggregated' },
+    { rawLabel:'Juridisk bistand', normalizedCategory:'admin_general_expense', amountNative:-0.08542, disclosureLevel:'aggregated' },
+    { rawLabel:'Kontorkostnader', normalizedCategory:'admin_general_expense', amountNative:-0.00644, disclosureLevel:'aggregated' },
+    { rawLabel:'Gaver/medaljer', normalizedCategory:'other_expenses', amountNative:-0.017425, disclosureLevel:'aggregated' },
+    { rawLabel:'Representasjon/møter', normalizedCategory:'admin_general_expense', amountNative:-0.0556, disclosureLevel:'aggregated' },
+    { rawLabel:'Ikke fradragsber. Kostn', normalizedCategory:'other_expenses', amountNative:-0.10025, disclosureLevel:'aggregated' },
+    { rawLabel:'Tap på krav', normalizedCategory:'other_expenses', amountNative:-1.188489, disclosureLevel:'aggregated' },
+    { rawLabel:'Utgifter Sport', normalizedCategory:'lump_football_operations_expense', amountNative:-21.156689, disclosureLevel:'aggregated' },
   ],
 };
 const fredrikstadnoFiscalYearMeta = {
@@ -207,6 +238,25 @@ const fredrikstadnoFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:22.903598, officialTotalExpenses:22.905462, officialPAT:-1.148565,
   },
+  2012: {
+    incluidoEn:{ depreciation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' }, other_amortisation:{ en:'lump_football_operations_expense', posible:true, por:'precedente' } },
+    currency:'NOK', fxRef:'NOK@2012-12-31',
+    sourceId:'fredrikstad-no-aarsregnskap-fotballklubb-fli-2012',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-1.027941, tax:0,
+    extraRows: [
+      {label:'Annen finansinntekt', value:-1.027294},
+      {label:'Annen rentekostnad', value:0},
+      {label:'Annen finanskostnad', value:-0.000647},
+    ],
+    sinDesglose: [
+      {renglon:'Utgifter Sport', lado:'expense', importe:21.156689, motivo:'Claude 2026-10-19: b4 L355-377 de fli-2012.md; gatelag = fútbol callejero/acción social; Utgifter Sport = gastos del deporte sin desglose'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:23.063141, officialTotalExpenses:23.55486, officialPAT:-1.51966,
+  },
 };
 const fredrikstadnoPresupuestoOverlayByYear = {};
 
@@ -256,6 +306,11 @@ Object.assign(sources, {
   'fredrikstad-no-aarsregnskap-fotballklubb-fli-2018': {
     id:'fredrikstad-no-aarsregnskap-fotballklubb-fli-2018', clubId:'fredrikstad-no',
     title:'Fredrikstad Fotballklubb — aarsregnskap-fotballklubb-fli-2018 (ejercicio 2018)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'fredrikstad-no-aarsregnskap-fotballklubb-fli-2012': {
+    id:'fredrikstad-no-aarsregnskap-fotballklubb-fli-2012', clubId:'fredrikstad-no',
+    title:'Fredrikstad Fotballklubb — aarsregnskap-fotballklubb-fli-2012 (ejercicio 2012)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

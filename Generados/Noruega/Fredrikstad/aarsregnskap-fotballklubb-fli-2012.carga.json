@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2012.pdf",
- "generado": "2026-10-19T11:19:53.245Z",
+ "generado": "2026-10-19T15:43:54.628Z",
  "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del documento, 2026-10-18: perimetro-senales.mjs: el ejercicio 2012-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 15 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)",
@@ -293,7 +293,7 @@
    "gestionId": null,
    "profitOnPlayerSales": 0,
    "assetSales": 0,
-   "netInterest": -1.026647,
+   "netInterest": -1.027941,
    "tax": 0,
    "extraRows": [
     {
@@ -302,11 +302,11 @@
     },
     {
      "label": "Annen rentekostnad",
-     "value": null
+     "value": 0
     },
     {
      "label": "Annen finanskostnad",
-     "value": 0.000647
+     "value": -0.000647
     }
    ],
    "sinDesglose": [
@@ -793,7 +793,7 @@
   {
    "label": "Annen rentekostnad",
    "page": null,
-   "native": null,
+   "native": 0,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
@@ -804,7 +804,7 @@
   {
    "label": "Annen finanskostnad",
    "page": null,
-   "native": 0.000647,
+   "native": -0.000647,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
@@ -851,12 +851,6 @@
    "M": 23.55486
   }
  },
- "fxCloseNuevo": {
-  "key": "NOK@2012-12-31",
-  "fx": 5.5664,
-  "source": "market_close",
-  "label": "Tipo medio de referencia de Norges Bank al 2012-12-31"
- },
  "liga": {
   "valor": "no-eliteserien",
   "fuente": "la fila ya existe en data/club-leagues",
@@ -890,7 +884,7 @@
   },
   "fxRef": {
    "valor": "NOK@2012-12-31",
-   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 5.5664. --escribir agrega 'NOK@2012-12-31' a FX_CLOSE",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene NOK@2012-12-31 = 5.5664 (Tipo medio de referencia de Norges Bank al 2012-12-31)",
    "estado": "ok"
   },
   "sourceId": {

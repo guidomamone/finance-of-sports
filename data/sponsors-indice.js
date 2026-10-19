@@ -2145,6 +2145,7 @@ window.SPONSORS_INDICE = [
   ["spyropoulos","Spyropoulos",["c"]],
   ["sr-bacalhau","Sr. Bacalhau",["c"]],
   ["st-galler-kantonalbank","St.Galler Kantonalbank",["c"]],
+  ["stabburet","Stabburet",["c"]],
   ["stadio","Stadio",["m"]],
   ["staeg","Staeg",["c"]],
   ["stake","Stake",["c"]],
