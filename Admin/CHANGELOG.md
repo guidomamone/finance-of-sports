@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 774 — Viking Fotball AS 2017-2024 transcripto (2026-10-19)
+
+* Los 8 PDFs del AS de Viking, transcriptos (to-do 285 cerrado); se cargan con los demás años de los clubes nuevos (lote 95).
+
 ## Versión 773 — En la Eerste Divisie alcanza el estadio (2026-10-19)
 
 * `estadio-sponsor.mjs`: nl-eerstedivisie pasa la compuerta solo con el estadio, como las ligas amateur (decisión de Guido; Wikipedia no

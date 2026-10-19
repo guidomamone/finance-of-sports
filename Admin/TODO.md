@@ -48,7 +48,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 165 c: altas de los países nuevos que faltan --> Onboarding 3
 * 195: gestiones (presidentes) sin fuente confirmada (Fortaleza 2025: ¿CEO o presidente del consejo? lo decidís vos)
 * 295: balances de las entidades que organizan las ligas (AFA, LFP…), para la auditoría en Ligas
-* 284 y 285: Fredrikstad y Sarpsborg 08 sobre el FLI; transcribir Viking Fotball AS --> Onboarding 3
+* 284: Fredrikstad y Sarpsborg 08 sobre el FLI --> Onboarding 3
 * 283: Vålerenga y Aalesund, sumar el AS y el FLI (con nota en Finanzas) --> Onboarding 3
 * 273: nombrar la compuerta de estadio y sponsor en la skill de onboarding (con tu ok)
 
@@ -235,8 +235,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    2008-2011 solo existe el AS. Sarpsborg 08: el alta se hizo sobre un AS inversor sin empleados; rehacerla sobre el FLI "Sarpsborg 08
    Fotballforening" (sus 14 PDFs no tienen `.md`). Pardubice: no darle el alta con lo que hay (es FK Junior z.s.); el sourcing de la a.s.
    lo hace Guido.
-285. VIKING: TRANSCRIBIR LOS PDFs DE VIKING FOTBALL AS (pedido de Guido, 2026-10-17). Es el club desde el 2026-10-17 y hoy solo los del
-   FLI tienen `.md`.
 286. EL ENSAYO DE pipeline.mjs NO ANTICIPA EL REHACER CON MISTRAL (cierre de onboarding). `--lista` muestra un `.md` sin tablas como
    "texto (Claude solo en págs. dudosas)" y `--ejecutar` lo rehace con Mistral (~US$ 0,17 por documento; la corrida de los 6 países
    estimó US$ 27,83 y se cortó en 40 de 566). Que el ensayo los cuente como "rehacer con Mistral" con su costo. Quedan 481 .md así
