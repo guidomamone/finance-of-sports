@@ -84,3 +84,5 @@ se destrabó desde el 2026-09-22) y ver si ya existe algo del 2025-26.
   N°71, 1/7/2024 a 30/6/2025, moneda homogénea: balance general, estado de recursos y gastos y anexos), `memoria-2024-2025.pdf` e
   `informe-comision-revisora-2024-2025.pdf`. Falta transcribir y cargar (onboarding).
 - Último chequeo: 2026-10-18.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Argentina/Instituto/balance-general-2024-2025.pdf` (sourceId `instituto-balance-general-2024-2025`).

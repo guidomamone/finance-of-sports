@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Argentina/Instituto/balance-general-2024-2025.pdf",
  "md": "Clubes/Argentina/Instituto/balance-general-2024-2025.md",
- "generado": "2026-10-19T17:09:22.529Z",
+ "generado": "2026-10-19T17:54:09.950Z",
  "estado": "ok",
  "clubId": "instituto",
  "year": 2025,
@@ -11,7 +11,22 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Argentina/Instituto/balance-general-2024-2025.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 99,
+   "etiqueta": "DÉFICIT EXTRAORDINARIO",
+   "lado": "gasto",
+   "reemplaza": null,
+   "reemplazaLinea": 99,
+   "motivo": "L99 repite 'Gastos extraordinarios' (L98, 1.038.794): las dos estaban como gasto y las filas sumaban 2 x 1.038.794 de más (diferencia 2.077.588 contra el total impreso); con la fila en 0 el resultado cierra con el Superávit final impreso 2.087.261.474. Claude 2026-10-19 (subagente Sonnet, revisado contra el .md L98-100)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -24,33 +39,36 @@
   {
    "nombre": "total de gastos",
    "ok": true,
-   "detalle": "25862.865191 = 25860.787603",
-   "suma": 25862.865191000004,
+   "detalle": "25861.826397 = 25860.787603",
+   "suma": 25861.826397000004,
    "impreso": 25860.787602999997
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 1.0387940000046
+   "dif": 4.547473508864641e-12
   },
   {
    "nombre": "año anterior cargado",
    "ok": false,
-   "detalle": "la columna 2024 de este documento suma ingresos 25037.575072; el sitio tiene 17958.365499"
+   "detalle": "la columna 2024 de este documento suma ingresos 25037.575073; el sitio tiene 17958.365499"
   }
  ],
  "notas": [
   "la nota de \"Gastos extraordinarios(Nota 3 y 2.9.)\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
-  "duda de localizar que no afecta la carga: El Anexo V (b21) abre los gastos por concepto y por sector; los conceptos ya desglosan el renglón del estado, las columnas por sector son adicionales.",
-  "duda de extraer confirmada por las sumas (usar-cuadro-por-segmento, \"Específicos de sectores ( Anexo V)\"): ¿Se carga el Anexo V (L769-L783) usando la columna de totales 2025 en lugar de una columna de segmento, ya que el cuadro desglosa completo el renglón 'Específicos de sectores ( Anexo V)'?"
+  "ajuste manual: sale la fila \"L99\" (2026-10-19, L99 repite 'Gastos extraordinarios' (L98, 1.038.794): las dos estaban como gasto y las filas sumaban 2 x 1.038.794 de más (diferencia 2.077.588 contra el total impreso); con la fila en 0 el resultado cierra con el Superávit final impreso 2.087.261.474. Claude 2026-10-19 (subagente Sonnet, revisado contra el .md L98-100))",
+  "duda de localizar confirmada por las sumas (usar-cuadro-por-segmento, \"Remuneraciones y cargas\"): ¿Se usa la columna FUTBOL de 'Remuneraciones y cargas' del Anexo V (b21) como salarios del plantel?",
+  "duda de localizar que no afecta la carga: El renglón del Anexo III mezcla cuotas sociales con abonos deportivos.",
+  "duda de extraer que no afecta la carga: El Anexo III solo abre por segmento la columna 2025; la de 2024 es total, por eso anterior queda null (L687).",
+  "duda de extraer que no afecta la carga: El renglón del estado es el total de sectores, así que se toma la columna 2025/2024 (L767-L783)."
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 27393.078747,
-  "gastos": 25862.865191,
+  "gastos": 25861.826397,
   "financiero": 556.009124,
   "impuesto": 0,
   "resultadoImpreso": 2087.261474,
@@ -345,14 +363,6 @@
    "M": 1.038794,
    "pagina": 3,
    "linea": 98,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "DÉFICIT EXTRAORDINARIO",
-   "lado": "gasto",
-   "M": 1.038794,
-   "pagina": 3,
-   "linea": 99,
    "origen": "estado"
   }
  ],

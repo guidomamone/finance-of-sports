@@ -52,6 +52,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'instituto': {
     2024: {"estadio":"Juan Domingo Perón","capacidad":35535,"sponsor":"Banco Macro","marca":"Givova","temporada":"2024 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1365223058"},
+    2025: {"estadio":"Juan Domingo Perón","capacidad":26535,"sponsor":"Banco Macro","marca":"Givova","temporada":"2025 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371131086"},
   },
   'losandes-ar': {
     2020: {"estadio":"Eduardo Gallardón","capacidad":35000,"sponsor":"Secco","marca":"Mitre","temporada":"Campeonato de Primera B 2019-20 (Argentina)","fuente":"https://es.wikipedia.org/w/index.php?oldid=170581856","club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=175768690","marca":"https://es.wikipedia.org/w/index.php?oldid=175768690"}},

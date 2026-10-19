@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 312 clubes, 1091 ejercicios, 21 países.
+TOTAL: 312 clubes, 1092 ejercicios, 21 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -39,7 +39,7 @@ ARGENTINA (19)
   Gimnasia y Esgrima (La Plata)  4 ejercicios (2022/2023 a 2025/2026), balance + presupuesto y balance + presupuesto, ARS
   Godoy Cruz                     1 ejercicio (2019/2020), balance, ARS
   Independiente                  2 ejercicios (2023/2024, 2025/2026), balance, ARS
-  Instituto ACC                  1 ejercicio (2023/2024), balance, ARS
+  Instituto ACC                  2 ejercicios (2023/2024 a 2024/2025), balance, ARS
   Los Andes                      2 ejercicios (2019/2020 a 2020/2021), balance, ARS
   Newell's Old Boys              1 ejercicio (2018/2019), balance, ARS
   Racing Club                    17 ejercicios (2008/2009, 2009/2010, 2010/2011, 2011/2012, 2012/2013, 2013/2014, 2014/2015, 2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2020/2021, 2023/2024, 2024/2025, 2025/2026, 2026/2027), balance + presupuesto y balance + presupuesto, USD/ARS

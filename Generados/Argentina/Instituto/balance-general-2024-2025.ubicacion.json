@@ -3,8 +3,9 @@
  "md": "Clubes/Argentina/Instituto/balance-general-2024-2025.md",
  "mdSha1": "974dc96c9fc762b20ee3b41077cd780fb2d1fada",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T16:34:39.834Z",
+ "generado": "2026-10-19T17:35:15.994Z",
  "perimetroClub": null,
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 1,
@@ -188,12 +189,12 @@
   "b3"
  ],
  "notas_ingresos": [
-  "b19"
+  "b19",
+  "b13"
  ],
  "notas_gastos": [
   "b20",
   "b21",
-  "b13",
   "b14"
  ],
  "escala": "unidades",
@@ -205,16 +206,27 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se usan las columnas por sector (Fútbol, Básquet, La Agustina, Sede, Colegio, Tienda) del Anexo V solo como detalle, cargando los totales por concepto de la columna 2025?",
+   "pregunta": "¿Se usa la columna FUTBOL de 'Remuneraciones y cargas' del Anexo V (b21) como salarios del plantel?",
    "propuesta": "sí",
    "tema": "usar-cuadro-por-segmento",
-   "renglon": "Gastos específicos de sectores",
-   "texto": "El Anexo V (b21) abre los gastos por concepto y por sector; los conceptos ya desglosan el renglón del estado, las columnas por sector son adicionales.",
+   "renglon": "Remuneraciones y cargas",
+   "texto": "El Anexo V abre gastos por sector y es la única fuente que separa remuneraciones del fútbol; no hay un renglón explícito de salarios del plantel.",
    "bloques": [
     "b21"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se toma 'Cuotas sociales y abonos deportivos' del Anexo III (b19) como cuotas sociales?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Cuotas sociales y abonos deportivos",
+   "texto": "El renglón del Anexo III mezcla cuotas sociales con abonos deportivos.",
+   "bloques": [
+    "b19"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "Estado de Recursos y Gastos individual del club (b3), en pesos sin centavos en moneda homogénea al 30/06/2025. Anexo III (b19) abre recursos ordinarios por fines generales/específicos; Anexo IV (b20) gastos generales de administración; Anexo V (b21) gastos específicos por sector; Nota 2.8 (b13) resultados financieros y RECPAM; Nota 2.9 (b14) gastos extraordinarios. Se excluyen balance, EEPN, flujo, bienes de uso, intangibles, pasivo concursal y resumen del auditor (b22)."
+ "observaciones": "Estado de Recursos y Gastos individual (b3) con anexos III (recursos), IV (gastos administración), V (gastos por sector, columnas por segmento usadas para abrir remuneraciones de fútbol), nota 2.8 resultados financieros y 2.9 gastos extraordinarios."
 }

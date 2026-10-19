@@ -3,7 +3,7 @@
   "pdf": "Clubes/Argentina/Instituto/balance-general-2024-2025.pdf",
   "club": "instituto",
   "year": 2025,
-  "generatedAt": "2026-10-19T16:42:17.369Z",
+  "generatedAt": "2026-10-19T17:54:09.950Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -365,16 +365,6 @@
         1.038794
       ],
       "glosa": "Gastos extraordinarios(Nota 3 y 2.9.)"
-    },
-    {
-      "label": "DÉFICIT EXTRAORDINARIO",
-      "lado": "expense",
-      "page": 3,
-      "section": "estado",
-      "values": [
-        1.038794
-      ],
-      "glosa": "DÉFICIT EXTRAORDINARIO"
     }
   ]
 }
