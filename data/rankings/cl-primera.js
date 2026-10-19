@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["cl-primera"] = {
   2025: {
     leagueSize: 16,
+    sinDato: ["udechile-cl"],
     wiki: {"t":"2025 Chilean Primera División","lang":"en","at":"2026-10-18","n":16},
     clubs: [
       { id:"catolica-cl", revenue:28.497, reportType:"official_balance_sheet",

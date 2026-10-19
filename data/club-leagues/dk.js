@@ -11,5 +11,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'nordsjaelland-dk':  { 2024: 'dk-superliga' },
   'randers-dk':        { 2023: 'dk-superliga' },
   'vejle-dk':           { 2024: 'dk-superliga' },
-  'fredericia-dk':     { 2019: 'dk-1division' },
+  'fredericia-dk':     { 2019: 'dk-1division', 2020: 'dk-1division' },
 });
