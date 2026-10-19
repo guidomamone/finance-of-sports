@@ -525,3 +525,15 @@ en vez de 18,981564. Corrección propuesta (a confirmar con Guido; es un año p�
 (deducido…)"; officialPAT 0,000019 → 18,981564 (ingresos 146,545052 − gastos 127,571931 + 0,008445 = 18,981566 contra 18,981564 impreso). Mismas convenciones que sus otros años
 (netInterest = Netto finans con su signo, tax 0). Verificado en el navegador local con `?audit=1`: `auditAll()` 312 clubes, 3.056 checks OK, 0 que no cierran, 0 de tipo de cambio;
 `audit.js` P0 0 / P1 0. ASSET_V 1394 → 1395 y páginas de fuentes regeneradas.
+
+**298 ad, causa y arreglo 1 (Guido, 2026-10-19).** El círculo de Lommel SK no era de las líneas `carga`: `entidades.mjs` toma los totales de ingresos de cada grupo
+multiclub de `data/rankings/`, y Lommel está en City Football Group; al escribir un año cambia el ranking, `data/entidades/` queda viejo, la auditoría da `entidades-desfasado`
+(P1) y el año se revierte. `tools/entidades.mjs` no estaba en `tools/generadores.mjs`. Probado: cambiar el ingreso de Lommel 2025 en `be-challengerproleague.js` deja "data/entidades/
+desactualizado: _grupos-detalle.js"; correr `entidades.mjs` después lo deja al día. Arreglo: `tools/entidades.mjs` en la lista, después de `generate-rankings.js`. Idempotente sobre
+árbol limpio (sin diferencias en git). Falta el arreglo 2: la línea `carga-club` (la tarjeta del sitio dice "Todavía no cargamos la estructura" en un año sin `carga`).
+
+**298 ad, arreglo 2: `carga-club` (Guido, 2026-10-19).** `entidades.mjs` acepta `{"tipo":"carga-club","clubId","entidad","perimetro","desde","hasta"(null=abierto),"cita"}`: cada ejercicio
+cargado dentro del rango sin línea `carga` propia toma esa entidad (cita única del rango, verificada con `quien.mjs` dentro del rango). Probado con `--con` sobre Lommel SK (cargados 2018 y 2025):
+rango 2018-abierto → 2018 se deduce y 2025 conserva su línea; rango 2018-2020 con el documento citado de 2025 → error; dos rangos que se pisan → error. Sobre el registro real, sin
+cambios: `--check` al día (60 clubes, 9 grupos), `entidades.mjs` idempotente en git, audit.js P0 0 / P1 0. NO agregué la línea de Lommel al registro (cambiaría datos publicados: su 2018 pasaría
+a mostrar estructura): queda para quien cargue los años 2019-2024, con la cita `Naam : VOETBALCLUB LOMMEL SK` (L9 de cada `jaarrekening-AAAA-06-30-individual.md`).

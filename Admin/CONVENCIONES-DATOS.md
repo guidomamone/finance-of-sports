@@ -376,6 +376,10 @@ Decisiones de Guido (2026-10-18). El registro es `Admin/registros/entidades.json
 - Un dueño persona (Marinakis, Friedkin) cuenta como grupo, igual que una empresa, con el nombre que imprimen los documentos.
 - Cuando el balance no dice quién es el dueño de una sociedad intermedia, la cita se busca en el registro público (Companies House, PSC)
   antes que deducirla (Guido, 2026-10-18).
+- Un club que no cambia de entidad ni de perímetro lleva UNA línea `carga-club` con un rango de ejercicios y una cita (to-do 298 ad, Guido
+  2026-10-19), en lugar de una línea `carga` por año: cada ejercicio cargado dentro del rango que no tenga su propia línea toma esa entidad.
+  Al dar el alta de un club con dueño se agrega una vez; así los años que se cargan después ya muestran su estructura. Una `carga`
+  explícita del mismo año gana; dos rangos del mismo club no se pisan. Un rango no sirve para un ejercicio que suma dos entidades.
 
 ## REGLA: el dictamen del auditor (registro de auditoría)
 

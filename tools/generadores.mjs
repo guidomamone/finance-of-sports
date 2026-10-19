@@ -5,10 +5,14 @@
 // estimar.mjs: un club nuevo deja desfasados data/faltantes/ y data/estimados/, audit.js da dos P1 (faltantes-desfasado,
 // estimados-desfasado) y el alta se revierte entera. Caso: FC Volendam (lote 93), "Alta REVERTIDA ... P1 2"; frenaba toda alta nueva.
 //
+// (to-do 298 ad, ok de Guido 2026-10-19) tools/entidades.mjs va DESPUÉS de generate-rankings.js: los totales de ingresos de cada grupo multiclub
+// salen de data/rankings/, así que al escribir un año de un club de un grupo (Lommel SK, de City Football Group) data/entidades/ queda viejo, la
+// auditoría da `entidades-desfasado` (P1) y el año se revertía. Medido: cambiar el ingreso de Lommel 2025 en el ranking dejaba
+// "data/entidades/ desactualizado: _grupos-detalle.js".
 // queFalla(salida de audit.js): las claves de los chequeos P0 y P1 que fallaron ("faltantes-desfasado"), para decir en el aviso CUÁL.
 // ============================================================================
 
-export const GENERADORES = ['tools/generate-club-index.js', 'tools/generate-fuentes-page.js', 'tools/generate-rankings.js', 'tools/generate-como-corre-stats.js', 'tools/faltantes-liga.mjs', 'tools/estimar.mjs', 'tools/generate-sponsors.js'];
+export const GENERADORES = ['tools/generate-club-index.js', 'tools/generate-fuentes-page.js', 'tools/generate-rankings.js', 'tools/entidades.mjs', 'tools/generate-como-corre-stats.js', 'tools/faltantes-liga.mjs', 'tools/estimar.mjs', 'tools/generate-sponsors.js'];
 
 export function queFalla(salida) {
   const claves = []; let enP01 = false;
