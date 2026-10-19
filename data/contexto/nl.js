@@ -82,4 +82,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'telstar-nl': {
     2025: {"estadio":"711 Stadion","capacidad":3060,"temporada":"2024–25 Eerste Divisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372593507"},
   },
+  'vvvvenlo-nl': {
+    2025: {"estadio":"Covebo Stadion - De Koel","capacidad":8000,"temporada":"2024–25 Eerste Divisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372593507"},
+  },
 });
