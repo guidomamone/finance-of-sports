@@ -6,4 +6,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'feyenoord-nl': { 2024: 'nl-eredivisie', 2025: 'nl-eredivisie' },
   'az-nl':        { 2024: 'nl-eredivisie', 2025: 'nl-eredivisie' },
   'goaheadeagles-nl': { 2025: 'nl-eredivisie' },
+  'almerecity-nl': { 2025: 'nl-eredivisie' },
 });

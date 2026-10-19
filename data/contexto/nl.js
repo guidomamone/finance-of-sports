@@ -7,6 +7,9 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Johan Cruyff Arena","capacidad":55865,"sponsor":"Ziggo","marca":"Adidas","temporada":"2023–24 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377460717"},
     2025: {"estadio":"Johan Cruyff Arena","capacidad":55865,"sponsor":"Ziggo","marca":"Adidas","temporada":"2024–25 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378045333"},
   },
+  'almerecity-nl': {
+    2025: {"estadio":"Yanmar Stadion","capacidad":4501,"sponsor":"OneCasino","marca":"Craft","temporada":"2024–25 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378045333"},
+  },
   'az-nl': {
     2024: {"estadio":"AFAS Stadion","capacidad":19478,"sponsor":"Kansino","marca":"Nike","temporada":"2023–24 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377460717"},
     2025: {"estadio":"AFAS Stadion","capacidad":19478,"sponsor":"Kansino","marca":"Nike","temporada":"2024–25 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378045333"},
