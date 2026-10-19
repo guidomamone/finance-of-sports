@@ -64,6 +64,15 @@ window.RANKINGS["be-proleague"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",4.244]] },
     ],
   },
+  2023: {
+    leagueSize: null,
+    wiki: {"t":"2022–23 Belgian Pro League","lang":"en","at":"2026-10-19","n":18},
+    clubs: [
+      { id:"ohleuven-be", revenue:23.194, reportType:"official_balance_sheet",
+        sourceId:"ohleuven-be-jaarrekening-2023-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",16.479],["Otros ingresos",6.715]] },
+    ],
+  },
   2022: {
     leagueSize: null,
     wiki: {"t":"2021–22 Belgian First Division A","lang":"en","at":"2026-10-19","n":18},

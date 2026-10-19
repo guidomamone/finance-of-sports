@@ -19,6 +19,11 @@ const ohleuvenbeRevenueLinesByYear = {
     { rawLabel:'Andere bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:6.699096, disclosureLevel:'aggregated' },
     { rawLabel:'Niet-recurrente bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:0.009901, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Omzet', normalizedCategory:'lump_football_operations', amountNative:15.165926, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:6.144719, disclosureLevel:'aggregated' },
+    { rawLabel:'Niet-recurrente bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:0.035056, disclosureLevel:'aggregated' },
+  ],
 };
 const ohleuvenbeExpenseLinesByYear = {
   2025: [
@@ -68,6 +73,18 @@ const ohleuvenbeExpenseLinesByYear = {
     { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.704575, disclosureLevel:'aggregated' },
     { rawLabel:'6630', normalizedCategory:'exceptional_items', amountNative:-0.01725, disclosureLevel:'aggregated' },
     { rawLabel:'664/7', normalizedCategory:'exceptional_items', amountNative:-0.006977, disclosureLevel:'aggregated' },
+  ],
+  2023: [
+    { rawLabel:'Aankopen', normalizedCategory:'other_expenses', amountNative:-1.325454, disclosureLevel:'aggregated' },
+    { rawLabel:'Voorraad: afname (toename)', normalizedCategory:'other_expenses', amountNative:0.013817, disclosureLevel:'aggregated' },
+    { rawLabel:'Diensten en diverse goederen', normalizedCategory:'other_expenses', amountNative:-9.868559, disclosureLevel:'aggregated' },
+    { rawLabel:'620', normalizedCategory:'wages_squad', amountNative:-19.53842, disclosureLevel:'aggregated' },
+    { rawLabel:'621', normalizedCategory:'wages_squad', amountNative:-2.423178, disclosureLevel:'aggregated' },
+    { rawLabel:'623', normalizedCategory:'wages_squad', amountNative:-0.683844, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa', normalizedCategory:'player_amortisation', amountNative:-4.128815, disclosureLevel:'aggregated' },
+    { rawLabel:'640', normalizedCategory:'admin_general_expense', amountNative:-0.806932, disclosureLevel:'aggregated' },
+    { rawLabel:'641/8', normalizedCategory:'other_expenses', amountNative:-0.062211, disclosureLevel:'aggregated' },
+    { rawLabel:'Niet-recurrente bedrijfskosten', normalizedCategory:'exceptional_items', amountNative:-0.315017, disclosureLevel:'aggregated' },
   ],
 };
 const ohleuvenbeFiscalYearMeta = {
@@ -146,6 +163,25 @@ const ohleuvenbeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:31.458703, officialTotalExpenses:45.464613, officialPAT:-15.144471,
   },
+  2023: {
+    currency:'EUR', fxRef:'EUR@2023-06-30',
+    sourceId:'ohleuven-be-jaarrekening-2023-06-30-individual',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.775471, tax:-0.265369,
+    extraRows: [
+      {label:'Andere financiële opbrengsten', value:0.017192},
+      {label:'Kosten van schulden', value:-0.792462},
+      {label:'Andere financiële kosten', value:-0.000201},
+      {label:'Belastingen', value:-0.265369},
+    ],
+    sinDesglose: [
+      {renglon:'Omzet', lado:'revenue', importe:15.165926, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:21.345701, officialTotalExpenses:38.823596, officialPAT:-18.833752,
+  },
 };
 const ohleuvenbePresupuestoOverlayByYear = {};
 
@@ -181,6 +217,11 @@ Object.assign(sources, {
   'ohleuven-be-jaarrekening-2024-06-30-individual': {
     id:'ohleuven-be-jaarrekening-2024-06-30-individual', clubId:'ohleuven-be',
     title:'OH Leuven CV — jaarrekening-2024-06-30-individual (ejercicio 2024)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'ohleuven-be-jaarrekening-2023-06-30-individual': {
+    id:'ohleuven-be-jaarrekening-2023-06-30-individual', clubId:'ohleuven-be',
+    title:'OH Leuven CV — jaarrekening-2023-06-30-individual (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

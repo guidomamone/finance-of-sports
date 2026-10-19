@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2023-06-30-individual.pdf",
- "generado": "2026-10-19T14:46:22.818Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"640\" -> admin_general_expense 0.6"
-  }
- ],
+ "generado": "2026-10-19T14:54:33.829Z",
+ "frena": [],
  "avisos": [
   "gastos: ningún total impreso igual a la suma de las líneas (-38.823596); queda la suma, verificada por el resultado del ejercicio"
  ],
@@ -124,9 +119,9 @@
     "amountNative": -0.806932,
     "disclosureLevel": "aggregated",
     "_pag": 25,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "641/8",
@@ -384,11 +379,11 @@
    "origen": "verificacion (nota que desglosa \"Andere bedrijfskosten\")",
    "signoFijo": 0.806932,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "expense",
    "amountNative": -0.806932
   },
@@ -549,8 +544,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 3,
   "lineasGasto": 10,
   "metaFilas": 4,

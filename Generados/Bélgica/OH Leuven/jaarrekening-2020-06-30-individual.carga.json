@@ -1,18 +1,10 @@
 {
  "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.pdf",
- "generado": "2026-10-19T14:46:22.725Z",
+ "generado": "2026-10-19T14:54:33.740Z",
  "frena": [
   {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Ticketing & lidgelden\" -> matchday_competition 0.6; \"Andere\" -> other_income 0"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios en 2020: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes en 2020: pregunta en la cola humana (node tools/cola.mjs)"
+   "etapa": "reintento",
+   "motivo": "categorías en 0 que deberían tener número: Cuotas sociales. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
   }
  ],
  "avisos": [
@@ -30,9 +22,9 @@
     "amountNative": 0.651304,
     "disclosureLevel": "aggregated",
     "_pag": 24,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sponsoring",
@@ -70,9 +62,9 @@
     "amountNative": 1.146521,
     "disclosureLevel": "aggregated",
     "_pag": 24,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Andere bedrijfsopbrengsten",
@@ -290,11 +282,11 @@
    "origen": "verificacion (nota que desglosa \"Omzet\")",
    "signoFijo": 0.651304,
    "cat": "matchday_competition",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "revenue",
    "amountNative": 0.651304
   },
@@ -351,12 +343,12 @@
    "origen": "verificacion (nota que desglosa \"Omzet\")",
    "signoFijo": 1.146521,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "revenue",
    "amountNative": 1.146521
   },
@@ -618,6 +610,11 @@
    "destino": "tax"
   }
  ],
+ "reintentar": [
+  {
+   "categoria": "Cuotas sociales"
+  }
+ ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"Omzet\")": "gastos con signo",
@@ -701,7 +698,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 1,
   "lineasIngreso": 7,
   "lineasGasto": 12,
   "metaFilas": 4,
