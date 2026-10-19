@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2020-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2020-06-30-individual.md",
- "generado": "2026-10-18T19:16:11.973Z",
+ "generado": "2026-10-19T14:16:59.074Z",
  "estado": "ok",
  "clubId": "lommelsk-be",
  "year": 2020,
@@ -27,8 +27,8 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
-   "dif": 4.440892098500626e-16
+   "detalle": "cierra (como impresos)",
+   "dif": 0
   },
   {
    "nombre": "lectura",
@@ -38,7 +38,7 @@
   {
    "nombre": "documento del año 2021",
    "ok": true,
-   "detalle": "ingresos de 2020: 1.279507 en este documento y 1.279507 en jaarrekening-2021-06-30-individual-correction.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2020: 0.929507 en este documento y 0.929507 en jaarrekening-2021-06-30-individual-correction.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2019",
@@ -49,10 +49,15 @@
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
   }
  ],
  "notas": [
-  "escalón \"de los cuales\": cerró la lectura 4 sin las filas \"Waarvan: niet-recurrente bedrijfsopbrengsten\" L208 (una parte de la fila de arriba)",
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L207-L230, esquema abreviado); cierran exacto todos sus totales impresos",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
   "duda de extraer que no afecta la carga: Esquema abreviado: Omzet (L209) y compras (L210) vienen vacíos, los ingresos brutos no son visibles."
@@ -63,12 +68,12 @@
  "totales": {
   "ingresos": 0.929507,
   "gastos": 3.034235,
-  "financiero": 1.412599,
-  "impuesto": -0.00274,
+  "financiero": 1.328573,
+  "impuesto": 0.00274,
   "resultadoImpreso": -0.773415,
   "resultadoParaCargar": -0.773415,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -85,14 +90,6 @@
    "M": 2.346805,
    "pagina": 7,
    "linea": 211,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "lado": "gasto",
-   "M": 0.619989,
-   "pagina": 7,
-   "linea": 212,
    "origen": "estado"
   },
   {
@@ -118,11 +115,27 @@
    "pagina": 7,
    "linea": 217,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "M": 0.594133,
+   "pagina": 7,
+   "linea": 281,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.025856,
+   "pagina": 7,
+   "linea": 312,
+   "origen": "estado"
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {

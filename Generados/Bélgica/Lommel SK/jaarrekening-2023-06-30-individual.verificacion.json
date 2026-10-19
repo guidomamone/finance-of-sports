@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2023-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2023-06-30-individual.md",
- "generado": "2026-10-18T19:16:12.022Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:16:59.146Z",
+ "estado": "ok",
  "clubId": "lommelsk-be",
  "year": 2023,
  "escala": {
@@ -23,12 +23,7 @@
    "fecha": "2026-10-18"
   }
  ],
- "cola": [
-  "7168e8a",
-  "2abc90c",
-  "3ee4eb5",
-  "101b762"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -43,7 +38,7 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "detalle": "cierra (como impresos)",
    "dif": 9.999999992515995e-7
   },
   {
@@ -53,8 +48,8 @@
   },
   {
    "nombre": "documento del año 2024",
-   "ok": false,
-   "detalle": "ingresos de 2023: 1.328861 en este documento y 5.806012 en jaarrekening-2024-06-30-individual.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "códigos NBB del año 2023 iguales en este documento y en jaarrekening-2024-06-30-individual.pdf (9904, 9901); los ingresos se presentan distinto (1.253901 y 5.806012)"
   },
   {
    "nombre": "documento del año 2022",
@@ -65,12 +60,16 @@
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
   }
  ],
  "notas": [
-  "la nota de \"Waarvan: niet-recurrente bedrijfsopbrengsten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L240-L263, esquema abreviado); cierran exacto todos sus totales impresos",
   "la nota de \"Niet-recurrente bedrijfskosten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
-  "escalón \"de los cuales\": cerró la lectura 4 sin las filas \"Waarvan: niet-recurrente bedrijfsopbrengsten\" L241 (una parte de la fila de arriba)",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
  ],
@@ -80,12 +79,12 @@
  "totales": {
   "ingresos": 1.253901,
   "gastos": 15.562627,
-  "financiero": 0.043077,
-  "impuesto": 0.109625,
+  "financiero": -0.031205,
+  "impuesto": -0.109625,
   "resultadoImpreso": -14.449557,
   "resultadoParaCargar": -14.449557,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -105,14 +104,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "lado": "gasto",
-   "M": 5.282205,
-   "pagina": 7,
-   "linea": 245,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Andere bedrijfskosten",
    "lado": "gasto",
    "M": 0.029136,
@@ -127,11 +118,27 @@
    "pagina": 7,
    "linea": 250,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "M": 4.986963,
+   "pagina": 7,
+   "linea": 315,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.295242,
+   "pagina": 7,
+   "linea": 347,
+   "origen": "estado"
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {

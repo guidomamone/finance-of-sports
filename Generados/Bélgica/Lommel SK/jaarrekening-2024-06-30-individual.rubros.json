@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2024-06-30-individual.pdf",
   "club": "lommelsk-be",
   "year": 2024,
-  "generatedAt": "2026-10-18T19:16:12.027Z",
+  "generatedAt": "2026-10-19T14:16:59.171Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -54,7 +54,7 @@
       "values": [
         -0.001719
       ],
-      "glosa": "Existencias: disminución (aumento) (+)/(-)"
+      "glosa": "Variación de existencias: disminución (aumento) (+)/(-)"
     },
     {
       "label": "Diensten en diverse goederen",
@@ -74,7 +74,7 @@
       "values": [
         12.730046
       ],
-      "glosa": "Remuneraciones y beneficios sociales directos"
+      "glosa": "Retribuciones y prestaciones sociales directas"
     },
     {
       "label": "Werkgeversbijdragen voor sociale verzekeringen",
@@ -95,16 +95,6 @@
         0.807499
       ],
       "glosa": "Otros gastos de personal"
-    },
-    {
-      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-      "lado": "expense",
-      "page": 8,
-      "section": "estado",
-      "values": [
-        5.820455
-      ],
-      "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, inmovilizado intangible y material"
     },
     {
       "label": "Bedrijfsbelastingen en -taksen",
@@ -134,7 +124,7 @@
       "values": [
         0.923578
       ],
-      "glosa": "Minusvalías en la enajenación de inmovilizado intangible y material"
+      "glosa": "Pérdidas por enajenación de inmovilizado intangible y material"
     },
     {
       "label": "Andere niet-recurrente bedrijfskosten",
@@ -145,6 +135,26 @@
         4.610306
       ],
       "glosa": "Otros gastos de explotación no recurrentes"
+    },
+    {
+      "label": "Afschrijvingen immateriële vaste activa (spelers)",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        5.364247
+      ],
+      "glosa": "Amortizaciones de inmovilizado intangible (jugadores)"
+    },
+    {
+      "label": "Afschrijvingen materiële vaste activa",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.456208
+      ],
+      "glosa": "Amortizaciones de inmovilizado material"
     }
   ]
 }

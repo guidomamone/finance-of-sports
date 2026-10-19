@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2021-06-30-individual-correction.pdf",
  "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2021-06-30-individual-correction.md",
- "generado": "2026-10-18T19:16:11.995Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:16:59.097Z",
+ "estado": "ok",
  "clubId": "lommelsk-be",
  "year": 2021,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "ee7997c"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -29,8 +27,13 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "detalle": "cierra (como impresos)",
    "dif": 0.000001000000000139778
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2022",
@@ -40,16 +43,23 @@
   {
    "nombre": "documento del año 2020",
    "ok": true,
-   "detalle": "ingresos de 2020: 1.279507 en jaarrekening-2020-06-30-individual.pdf y 1.279507 en este documento (columna del año anterior)"
+   "detalle": "ingresos de 2020: 0.929507 en jaarrekening-2020-06-30-individual.pdf y 0.929507 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
   }
  ],
  "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L208-L231, esquema abreviado); cierran exacto todos sus totales impresos",
   "la nota de \"Niet-recurrente bedrijfskosten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
  ],
  "reintentar": null,
@@ -58,12 +68,12 @@
  "totales": {
   "ingresos": 2.26023,
   "gastos": 10.01545,
-  "financiero": 0.096539,
-  "impuesto": 0.01192,
+  "financiero": -0.002321,
+  "impuesto": -0.01192,
   "resultadoImpreso": -7.76946,
   "resultadoParaCargar": -7.76946,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -75,35 +85,11 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Waarvan: niet-recurrente bedrijfsopbrengsten",
-   "lado": "ingreso",
-   "M": 0,
-   "pagina": 6,
-   "linea": 209,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
    "lado": "gasto",
    "M": 7.202351,
    "pagina": 6,
    "linea": 212,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "lado": "gasto",
-   "M": 2.677593,
-   "pagina": 6,
-   "linea": 213,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
-   "lado": "gasto",
-   "M": 0,
-   "pagina": 6,
-   "linea": 214,
    "origen": "estado"
   },
   {
@@ -121,22 +107,33 @@
    "pagina": 6,
    "linea": 218,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "M": 2.591997,
+   "pagina": 6,
+   "linea": 282,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.085596,
+   "pagina": 6,
+   "linea": 313,
+   "origen": "estado"
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {
    "etiqueta": "Recurrente financiële opbrengsten",
    "M": 0.047109,
    "linea": 221
-  },
-  {
-   "etiqueta": "Niet-recurrente financiële opbrengsten",
-   "M": 0,
-   "linea": 223
   },
   {
    "etiqueta": "Recurrente financiële kosten",

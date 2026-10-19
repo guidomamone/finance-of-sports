@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2019-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2019-06-30-individual.md",
- "generado": "2026-10-18T19:16:11.971Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:16:59.050Z",
+ "estado": "ok",
  "clubId": "lommelsk-be",
  "year": 2019,
  "escala": {
@@ -23,9 +23,7 @@
    "fecha": "2026-10-18"
   }
  ],
- "cola": [
-  "423ec1a"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -40,8 +38,13 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
-   "dif": 9.999999996956888e-7
+   "detalle": "cierra (como impresos)",
+   "dif": 0.000001000000000139778
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "año anterior cargado",
@@ -60,7 +63,9 @@
   }
  ],
  "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L251-L274, esquema abreviado); cierran exacto todos sus totales impresos",
   "la nota de \"Niet-recurrente bedrijfskosten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b24 contiene personal y gastos de personal y resultados financieros; puede contener solo datos de plantilla sin importes de desglose.",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
  ],
@@ -70,12 +75,12 @@
  "totales": {
   "ingresos": 1.392528,
   "gastos": 2.169944,
-  "financiero": 0.001005,
-  "impuesto": 0.00274,
+  "financiero": -0.000449,
+  "impuesto": -0.00274,
   "resultadoImpreso": -0.780604,
   "resultadoParaCargar": -0.780604,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -95,14 +100,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "lado": "gasto",
-   "M": 0.522511,
-   "pagina": 7,
-   "linea": 256,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Andere bedrijfskosten",
    "lado": "gasto",
    "M": 0.032536,
@@ -117,11 +114,27 @@
    "pagina": 7,
    "linea": 261,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "M": 0.519,
+   "pagina": 7,
+   "linea": 324,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.003511,
+   "pagina": 7,
+   "linea": 355,
+   "origen": "estado"
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {
