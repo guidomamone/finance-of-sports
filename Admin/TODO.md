@@ -25,16 +25,16 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
-* 324: Basel, los demás años: lectura mal en varios años y la Defizitgarantie / Verlustabdeckung, que decidís vos --> Onboarding 3
-* 292: cargar lo transcripto: lote 101 (Go Ahead Eagles 2023-2024 hechos; Basel, Luzern y St. Gallen en la cola, con 102 preguntas); Bélgica: Lommel SK 2019-2024 ya se puede cargar (con una línea carga-club), Lierse SK 2020-2021 y Patro Eisden 2021-2023 también se pueden reintentar (298 ae); el estadio de las amateur espera la 298 af; después Suiza, Beşiktaş y Colombia --> Onboarding 3
+* 324: Basel, todo (arreglo del script que elige la tabla de la AG, regenerar, verificar y cargar; la Defizitgarantie y la Gewinnüberführung 2012 las decidís vos). Onboarding no toca Basel --> Pipeline 5
+* 292: cargar lo transcripto: lote 101 (Go Ahead Eagles y Luzern 2019 y 2022 hechos; St. Gallen, con la 298 ai y sus 6 casos, y lo que queda de Luzern; Basel es de la 324); Bélgica: Lommel SK 2019-2024 ya se puede cargar (con una línea carga-club), Lierse SK 2020-2021 y Patro Eisden 2021-2023 también se pueden reintentar (298 ae); el estadio de las amateur espera la 298 af; después Suiza, Beşiktaş y Colombia --> Onboarding 3
 
 **B. Bases baratas que después cuestan caro cambiar**
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
-* 323: mejoras de script del lote 97 (Reino Unido): costo del reintento, notas inglesas, perímetro, nombre legal --> Pipeline 4
+* 323: mejoras de script del lote 97 (Reino Unido): costo del reintento, notas inglesas, perímetro, nombre legal --> Pipeline 5
 * 260: caja y deuda, lo que falta por documento (Bayern, Japón 2025, Volos, Alverca y otros; todo espera un documento mejor)
-* 298: mejoras de script de Estonia y Bélgica (af, las ligas amateur belgas, espera tu decisión;  ai, St. Gallen intragrupo (con tu decisión de perímetro); aj, signos de la columna previa; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
+* 298: mejoras de script de Estonia y Bélgica (af, las ligas amateur belgas, espera tu decisión; aj, signos de la columna previa; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 5. La ai (St. Gallen intragrupo, con tu decisión de perímetro) va con la carga de St. Gallen --> Onboarding 3
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
@@ -46,7 +46,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 273: que generate-sponsors sume el contexto manual (los años viejos sin sponsor quedan en null) --> Pantallas 3
 
 **E. Pantallas**
-* 282: quién audita, lo que queda (que el pipeline exija la línea al dar de alta un club) --> Pipeline 4
+* 282: quién audita, lo que queda (que el pipeline exija la línea al dar de alta un club) --> Pipeline 5
 
 **E2. Distribución (depende de 246)**
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
@@ -395,7 +395,7 @@ af) listas de las ligas amateur belgas
        de CONVENCIONES-DATOS ya lo decide; no debería ir a la cola.
     f) Alta de Harlequins (rugby): el nombre legal propuesto es una frase del texto; sale de "HARLEQUIN FOOTBALL CLUB LIMITED (REGISTERED
        NUMBER…)", que aparece 4 veces.
-324. BASEL: LOS DEMÁS AÑOS (lote 101; Onboarding 3, 2026-10-19). No se carga ningún año de Basel hasta resolver esto:
+324. BASEL: LOS DEMÁS AÑOS (lote 101; de Pipeline 5 entera, script y carga; Onboarding no lo toca). No se carga ningún año de Basel hasta resolver esto:
     a) la propuesta de carga tiene números equivocados en 2006, 2010, 2014, 2016, 2017, 2018 y 2019: 2006, 2010 y 2018 leyeron la tabla del
        Verein y no la de la AG; 2016 y 2019 suman partidas de la Holding como ingreso; 2017 duplica gastos; a 2014 le faltan los
        "Ausserordentliche Aufwendungen". Con la 298 ah ya en main, regenerar los derivados de Basel y volver a verificar.
