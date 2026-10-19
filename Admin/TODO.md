@@ -27,7 +27,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 **A. Cerrar lo abierto (chico, ya en marcha)**
 * 290 y 291: caja y deuda, lo que queda (Genoa 2022; la duda del factoring la decidís vos) --> Pipeline 2 (290), Principal (291)
 * 310: caja y deuda de un año sin vecino, cualquier país --> Pipeline 2
-* 292: transcripciones por subagentes de los 6 países: Estonia completa; Países Bajos (lote 93) en la cola; Bélgica destrabada; quedan Suiza, Beşiktaş, Colombia y los .md viejos (238 marcados para Mistral, 298 e2) --> Onboarding 2
+* 292: cargar lo transcripto por subagentes: Países Bajos (en la cola), Bélgica, Suiza, Beşiktaş, Colombia y los .md viejos que rehace Mistral --> Onboarding 2
 
 **B. Bases baratas que después cuestan caro cambiar**
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
@@ -36,7 +36,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 232: mejoras de script que dejó Grecia --> Pipeline 2
 * 279: la tool que duplicaba claves en club-leagues/ru.js --> Pipeline 2
 * 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar --> Pipeline 2
-* 298: mejoras de script de Estonia y Bélgica (hechas a, b, c, d, o, r, t, u y x; sigue la e2, la corrida de Mistral; después g a n, p, q, s, t2, u2, v, z) --> Pipeline 2
+* 298: mejoras de script de Estonia y Bélgica (primero la corrida de Mistral, que la corrés vos; después g a n, p, q, s, t2, u2, v, z) --> Pipeline 2
 * 306, 307 y 308: Milan 2018; el gasto que imprime localizar; los bonos convertibles en la skill --> Pipeline 2 (306, 307)
 * 301: gasto.mjs --json se corta en un pipe --> Pipeline 2
 * 302: el deflactor de EE.UU. desde la BEA, no FRED --> Pipeline 2
