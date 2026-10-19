@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 783 — 298 p: el perfil por año y los ceros reales del club (2026-10-19)
+
+* p2: un cero real confirmado de una categoría vale para los otros años del club, si ningún año cargado la tiene con monto.
+* p1: el perfil (socios, otros deportes) es por año; cada chequeo vale 5 años y uno que contradice abre perfil-cambio. 150 chequeos con
+  año (Benfica y Sporting sí tienen socios; lo cargado ya incluía sus cuotas). Lote completo: 0 filas distintas.
+
 ## Versión 782 — 295 c, segunda tanda: KNVB, ANFP, HNS y RPL; cierre de Finanzas 4 (2026-10-19)
 
 * Cargadas: KNVB (Eredivisie y Eerste Divisie) y HNS (Croacia) como federación entera, ANFP 2025 y Premier Liga rusa 2025. Lega B, TFF y

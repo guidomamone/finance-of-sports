@@ -318,3 +318,5 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
   (consolidado contra 2019-20 individual) y Aris 2021 (individual contra el grupo) pasan de COLA a OK con los mismos números. Sigue la p.
 
 ## Después del merge de la n (2026-10-19)
+
+## Después del merge de la p (2026-10-19)
