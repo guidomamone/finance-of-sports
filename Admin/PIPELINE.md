@@ -574,7 +574,10 @@ Mitigaciones:
   perímetro deje de preguntar (to-do 237 m, Tondela 2021).
   El tipo de documento (`reportType`) del alta: escalón 0 el ajuste; si no, el `.md` tiene que tener un estado contable con 10+ filas de 2+
   montos; escalón 1 (to-do 202): un estado de resultados corto de una columna vale si la primera página trae su título y el ejercicio anual
-  (período impreso de 12 meses, o "Demonstração do Resultado do Exercício") con 5+ filas con monto. Si no, pregunta.
+  (período impreso de 12 meses, o "Demonstração do Resultado do Exercício") con 5+ filas con monto; escalón 2 (to-do 298 l): si la
+  pregunta es solo "¿trae un estado de resultados?" (no presupuesto, intermedio ni nombre sospechoso) y la verificación del documento cerró
+  con el resultado impreso, es un balance anual (cualquier idioma: los estonios no tienen palabras en STATEMENT). Si no, pregunta.
+  Medido sin los 86 ajustes `reportType`: de 72 frenos a 4 (los de la rama intermedio); el lote completo, idéntico.
   Nombre legal (`decidirNombre()`): ajuste `name` (del documento o de la carpeta del club) o respuesta de la cola → si la portada y lo
   más frecuente del .md coinciden, ese → si no, pregunta a la cola (una por club, se contesta `corregir --valor "<nombre legal>"`).
   Después de un alta, un subagente Sonnet revisa nombre, tipo de documento y cierre contra el documento (decisión de Guido: el alta es

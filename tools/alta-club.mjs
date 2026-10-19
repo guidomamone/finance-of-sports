@@ -260,6 +260,7 @@ import { huellaEntradas, sha1Archivo, leerRegistro, guardarEnRegistro, resumenAl
 import { preguntarAClaude, MODELO_DEFAULT, UMBRAL_CONFIANZA, paginas as paginasDe } from './alta-claude.mjs';
 import { archivosData, rutaData } from './data-clubes.js';
 import { GENERADORES, queFalla } from './generadores.mjs';
+import { derivado } from './rutas.mjs';
 export { resumenAltas };
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -1092,6 +1093,17 @@ export function analizar(docArg, sitio, ov = {}) {
   else if (esIntermedio) { estadoRT = 'pregunta'; fuenteRT = `el documento parece un estado intermedio (${nIntermedio} señales en el texto: semestral, seis meses, interim...)`; preguntaRT = 'El documento parece un estado financiero INTERMEDIO, no el anual: el sitio carga ejercicios completos. ¿Es así (y hay que buscar el anual), o es el anual de un ejercicio corto?'; }
   else if (NO_BALANCE.test(nomNorm)) { estadoRT = 'pregunta'; fuenteRT = 'nombre del archivo'; preguntaRT = `El nombre del archivo ("${nombreArchivo}") sugiere que no es un estado contable anual (acta, informe intermedio, memoria, dictamen...). ¿Trae un estado de resultados anual cargable, o es un documento de contexto?`; }
   else if (!tieneEstado) { estadoRT = 'pregunta'; fuenteRT = filasNumericas < 10 ? `el .md casi no tiene tablas con números (${filasNumericas} filas numéricas): parece un informe/dictamen que nombra los estados sin traerlos` : 'el .md no tiene ninguna palabra de estado contable reconocible'; preguntaRT = '¿El documento trae un estado de resultados (o de recursos y gastos) anual cargable, o hay que buscar los estados en otro documento del club?'; }
+  // (to-do 298 l, ok de Guido 2026-10-19) ESCALÓN 2: la pregunta "¿trae un estado de resultados?" (no hay palabras de estado que reconozca
+  // STATEMENT, o casi no hay tablas) la contesta la VERIFICACIÓN del propio documento: si cerró con el resultado impreso (etapa 6), el
+  // documento trae un estado de resultados anual. Solo esa pregunta: presupuesto, intermedio y nombre de archivo siguen preguntando (un
+  // intermedio también cierra). Casos: 59 ajustes `reportType` estonios (majandusaasta aruanne con tulemiaruanne, palabras que STATEMENT no
+  // conoce), Go Ahead Eagles (Países Bajos).
+  if (estadoRT === 'pregunta' && !esPresupuesto && !esIntermedio && !NO_BALANCE.test(nomNorm) && !tieneEstado && r.md) {
+    const pv = resolve(ROOT, derivado(r.md, '.verificacion.json', { crear: false }));
+    const V = existsSync(pv) ? (() => { try { return JSON.parse(readFileSync(pv, 'utf8')); } catch { return null; } })() : null;
+    const res = (V?.chequeos || []).find((c) => c.nombre === 'resultado del ejercicio');
+    if (res?.ok === true) { estadoRT = 'ok'; preguntaRT = null; fuenteRT = `escalón 2: la verificación del documento cerró con el resultado impreso (${String(res.detalle || '').slice(0, 120)})`; }
+  }
   if (ov.reportType) { reportType = ov.reportType.valor; estadoRT = 'ok'; preguntaRT = null; fuenteRT = `${ov.reportType.manual ? '' : 'claude-api con cita verificada: '}${ov.reportType.fuente}`; }
   E.push(campo('reportType', reportType, fuenteRT, estadoRT, preguntaRT ? { pregunta: preguntaRT } : {}));
 
