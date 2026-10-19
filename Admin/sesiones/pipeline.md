@@ -537,3 +537,9 @@ cargado dentro del rango sin línea `carga` propia toma esa entidad (cita única
 rango 2018-abierto → 2018 se deduce y 2025 conserva su línea; rango 2018-2020 con el documento citado de 2025 → error; dos rangos que se pisan → error. Sobre el registro real, sin
 cambios: `--check` al día (60 clubes, 9 grupos), `entidades.mjs` idempotente en git, audit.js P0 0 / P1 0. NO agregué la línea de Lommel al registro (cambiaría datos publicados: su 2018 pasaría
 a mostrar estructura): queda para quien cargue los años 2019-2024, con la cita `Naam : VOETBALCLUB LOMMEL SK` (L9 de cada `jaarrekening-AAAA-06-30-individual.md`).
+
+**298 ae (Guido, 2026-10-19: opción (a)).** `cargar.mjs`: un año con el escalón NBB, resultado cerrado y total de ingresos 0 carga `officialTotalRevenue` 0 con aviso, y se saltea la revisión de
+televisión y estadio en 0 (sin esto la (a) sola no destrababa nada: quedaba el freno "categorías en 0"). `medir-cargar` sobre prueba-completa (703): antes y después, solo cambian Lierse SK
+2019 (frena solo por "periodo"), 2020 y 2021 y Patro Eisden 2021 (carga true); 0 filas a la cola; 0 categorías distintas. Corrección a lo que dije al proponerla: no eran 6 documentos con el mismo freno;
+Patro Eisden 2022 y 2023 no tienen el freno de ingresos (solo "categorías en 0", se resuelve con el reintento). OJO, decisión de Guido ya tomada, pero para que quede escrito: Patro Eisden 2021 va a
+publicar ingresos 0 siendo un club con personal (62 = 362.273); el documento no abre la Brutomarge (60/61 vacío), y por la regla de la Brutomarge negativa quedó como gasto.

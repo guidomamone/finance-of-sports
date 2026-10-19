@@ -452,11 +452,12 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   if (moneda && prevMonedas.size && !prevMonedas.has(moneda)) P.avisos.push(`los años cargados del club están en ${[...prevMonedas].join('/')} y este en ${moneda}`);
 
   // ---- 3. filas y montos
-  let sf;
+  let sf; let notasVerif = []; let ingresosVerif = null; // (to-do 298 ae) lo que la verificación dice del estado, para el paso 6b
   {
     const pv = resolve(ROOT, derivado(e.md, '.verificacion.json', { crear: false }));
     if (!existsSync(pv)) { return corta('filas', 'no hay .verificacion.json (correr tools/lote.mjs o verificar.mjs)'); }
     const VV = JSON.parse(readFileSync(pv, 'utf8'));
+    notasVerif = VV.notas || []; ingresosVerif = VV.totales?.ingresos ?? null;
     if (VV.estado !== 'ok') { return corta('filas', `la verificación tiene ${VV.cola.length} caso(s) pendientes en la cola humana (node tools/cola.mjs)`); }
     P.ajustes = VV.ajustes || null; // ajustes manuales que aplicó verificar.mjs (Versión 366): se escriben como comentario en la meta del año
     // Formato de cada fila: {label, page, section, native, tside, origen}. Ingresos y gastos en positivo (los signos los decide
@@ -764,13 +765,15 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     const suma = (cats) => conCat.filter((f) => cats.includes(f.cat)).reduce((a, f) => a + Math.abs(f.native || 0), 0);
     const yaReintentado = (() => { try { const v = JSON.parse(readFileSync(resolve(ROOT, derivado(e.md, '.ubicacion.json', { crear: false })), 'utf8')).indiceAmpliado; return Number(v === true ? 1 : v || 0) >= VERSION_AMPLIADO; } catch { return false; } })();
     const ceros = [];
+    // (to-do 298 ae) un año sin ingresos (estado belga abreviado con la Brutomarge negativa, ver el paso 6b) no tiene televisión ni estadio que buscar.
+    const sinIngresosNBB = ingresosVerif != null && Math.abs(Number(ingresosVerif)) < 1e-9 && /escalón "códigos NBB"/.test(notasVerif.join(' '));
     // (Versión 405, auditoría del pipeline) una fila "sin desglosar por la fuente" apaga SOLO los avisos de SU lado: ingresos sin desglosar ->
     // no se revisan televisión, estadio, cuotas sociales ni otros deportes; gastos sin desglosar -> no se revisa sueldos del plantel. Hasta la
     // 404 cualquier fila lump_ apagaba todo. Caso: Fortaleza 2017, "Actividades Deportivas" (ingresos, 4.220,7) sin desglosar apagaba el aviso
     // de sueldos en 0, y los sueldos (nota 21, "Sueldos 705.432") quedaron adentro de "Total Gastos de Administración".
     const lumpIng = conCat.some((f) => f.destino === 'revenue' && /^lump_/.test(f.cat)); const lumpGas = conCat.some((f) => f.destino === 'expense' && /^lump_/.test(f.cat));
     {
-      for (const [nombre, cats, lado] of [['Salarios del plantel', ['wages_squad'], 'gasto'], ['Televisión', ['broadcasting'], 'ingreso'], ['Estadio', ['matchday_competition', 'stadium_other', 'season_tickets'], 'ingreso']]) if (!(lado === 'gasto' ? lumpGas : lumpIng) && !suma(cats) && !cats.some((c) => incluidoEn[c]) /* (to-do 237 g) un incluye sobre una de las tres del estadio alcanza: el estadio está dentro de otra línea */) ceros.push({ categoria: nombre, lado }); // (to-do 163) el lado lo usa verificar.mjs
+      for (const [nombre, cats, lado] of [['Salarios del plantel', ['wages_squad'], 'gasto'], ['Televisión', ['broadcasting'], 'ingreso'], ['Estadio', ['matchday_competition', 'stadium_other', 'season_tickets'], 'ingreso']]) if (!(lado === 'gasto' ? lumpGas : (lumpIng || sinIngresosNBB)) && !suma(cats) && !cats.some((c) => incluidoEn[c]) /* (to-do 237 g) un incluye sobre una de las tres del estadio alcanza: el estadio está dentro de otra línea */) ceros.push({ categoria: nombre, lado }); // (to-do 163) el lado lo usa verificar.mjs
       // (to-do 298 p1, decisión de Guido 2026-10-19: "que cada 5 años se chequee, y ahí se puede ir para atrás y corregir") EL PERFIL POR AÑO:
       // vale el chequeo más cercano dentro de la ventana (tools/perfil-clubes.mjs, perfilVigente); la respuesta de la cola puede venir de
       // CUALQUIER documento del club dentro de la ventana (antes, solo la de este documento: 391 casos para 181 preguntas). Un chequeo nuevo
@@ -973,7 +976,18 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
   // redondeo lo descuadraría. Después de agregarla se vuelve a buscar el resultado impreso con la diferencia sumada.
   let ajusteRedondeo = 0;
   const lado = (nombre, arr, objetivo, clave, filtro) => {
-    if (!arr.length) { if (nombre === 'gastos') P.avisos.push('ninguna fila de gastos: officialTotalExpenses queda null (el sitio muestra "sin dato")'); else frena('tie-out', 'ninguna fila de ingresos con categoría aceptable'); return; }
+    if (!arr.length) {
+      if (nombre === 'gastos') P.avisos.push('ninguna fila de gastos: officialTotalExpenses queda null (el sitio muestra "sin dato")');
+      // (to-do 298 ae, ok de Guido 2026-10-19) INGRESOS 0 DE UN ESTADO BELGA ABREVIADO: el escalón de los códigos NBB leyó el estado (esquema
+      // abreviado, la Brutomarge 9900 negativa va como gasto), todos sus totales impresos cierran exacto, no hay ninguna fila de ingresos y el
+      // resultado del ejercicio cierra. Entonces el documento no informa ingresos: el total es 0. Caso: Lierse SK 2019-2021 (Omzet 70 vacío,
+      // Brutomarge −1.372 / −1.475 / −1.436) y Patro Eisden 2021 (Brutomarge −140.857).
+      else if (cierraPat && /escalón "códigos NBB"/.test(notasVerif.join(' ')) && Math.abs(objetivo) < 1e-9 && ingresosVerif != null && Math.abs(Number(ingresosVerif)) < 1e-9) {
+        T[clave] = 0; T.verificacion.ingresos = 'por-resultado';
+        P.avisos.push('ingresos: el documento (esquema abreviado, códigos NBB) no informa ingresos: el resultado cierra con la Brutomarge negativa como gasto; officialTotalRevenue 0');
+      } else frena('tie-out', 'ninguna fila de ingresos con categoría aceptable');
+      return;
+    }
     const b = buscar(objetivo, arr.length, filtro);
     const soloRedondeo = b.redondeo && Math.abs(Math.abs(b.redondeo.M) - Math.abs(objetivo)) <= Math.max(TOL, 0.5 * arr.length * unidadMax);
     if (!b.exacto && !cierraPat && soloRedondeo) {

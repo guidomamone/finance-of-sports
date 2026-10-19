@@ -564,6 +564,12 @@ Mitigaciones:
 
 ### 8 Cargar
 
+**Año belga sin ingresos (to-do 298 ae, ok de Guido 2026-10-19).** Un estado belga abreviado cuyo escalón de códigos NBB cerró exacto con la Brutomarge 9900 negativa
+cargada como gasto no tiene ninguna fila de ingresos. Si además el resultado del ejercicio cierra y el total de ingresos de la verificación es 0, `cargar.mjs` ya no
+frena con "ninguna fila de ingresos con categoría aceptable": el total oficial de ingresos es 0, con un aviso, y no se buscan televisión ni estadio en 0. Casos:
+Lierse SK 2020 y 2021, Patro Eisden 2021 (Lierse SK 2019 sigue frenado por su período de 12 meses distinto). Medido en `prueba-completa` (703 documentos, `medir-cargar`):
+solo esos 4 cambian, 0 filas a la cola, 0 categorías distintas.
+
 - a) `cargar.mjs --desde-verificacion`: carga solo lo que la etapa 6 dejó en "ok". Tipo de cambio, liga y fuente con página. Si el
   documento no está `listo-para-jev` en el registro, el freno dice por qué (sin `.verificacion.json`, la etapa 6 no cerró, la validación es
   de otra versión del .md, números sin confirmar de la etapa 4, o el registro no se actualizó porque no corrió el lote).
