@@ -29,3 +29,16 @@
 
 ### Qué deja de ser cierto en ESTADO
 - "van 71 de 1531 bloques" (to-do 261): van 74. En el 261, "108 .md hechos" pasa a 114.
+
+## Después del segundo merge de Finanzas 5 (2026-10-19)
+
+### Qué cambió (para CHANGELOG)
+- To-do 261 a: validación de los 108 `.md` del Reino Unido (`pipeline.mjs --ejecutar --lista Admin/lotes/reino-unido-validar.txt --limit 0`, lo corrió Guido): 106 documentos listos, costo ~US$ 8,59 (el ensayo decía 11,48); Celtic 2020-21 (106 págs.) quedó afuera por el tope de 100 págs. 36 `.md` quedaron rehechos por la corrida (el control "sin tablas" y las páginas corregidas), todos con 0 P1 / 0 P2 de `check-transcripcion-fidelidad.js`. Tres con "reserva" (páginas que solo validó Claude: cerrar con sum-check al onboardear; Celtic 2021-22 pág. 52, los otros en `transcripciones-estado.jsonl`). Commit 2d8aae8fcb (ASSET_V 1367).
+- El rehacer movió líneas: las dos citas de Chelsea 2021-22 de `Admin/registros/entidades.jsonl` (Blueco 22 Midco y Blues Investment Holdings) pasaron a las líneas 1912 y 1914 y `data/entidades/` se regeneró.
+
+### Qué queda (para TODO)
+- 261 a: el lote (etapa 3 en adelante) de esos documentos; Celtic 2020-21 con `--max-paginas 0`. Quitar la parte "validarlos" del punto.
+- 261: la cola sigue en el bloque 75; 261 b, la decisión de los 5 pares; 295, las segundas divisiones sin buscar.
+
+### Qué deja de ser cierto en ESTADO
+- Los 108 `.md` del Reino Unido ya no esperan validación (106 listos; 114 `.md` con los 6 nuevos de la cola, esos 6 sin validar).
