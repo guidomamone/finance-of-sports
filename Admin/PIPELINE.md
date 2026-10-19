@@ -278,7 +278,15 @@ Mitigaciones:
   impreso; listas FIN_INGRESO / FIN_GASTO de `tools/vocabulario.mjs`), con la misma compuerta EXACTA. Caso: Volos 2021-2025 imprime los
   intereses cobrados y pagados los dos en positivo; en bloque, 2021 y 2025 entraban por la tolerancia con el cobrado cargado como gasto.
   Bélgica (to-do 298 b1): el esquema NBB imprime los costos financieros (65/66B, "Kosten van schulden", "Charges des dettes") en positivo;
-  están en FIN_GASTO y este escalón les pone el signo sin ajustes `fila` (Beerschot 2025).
+  están en FIN_GASTO y este escalón les pone el signo sin ajustes `fila` (Beerschot 2025). Noruega (to-do 298 y1): el formato NRS
+  imprime "Annen finanskostnad", "Annen rentekostnad" y "Rentekostnad" en positivo y en singular; FIN_GASTO / FIN_INGRESO van en
+  singular (cubre el plural). Viking AS 2025 y Fredrikstad 2018 y 2024 cierran exacto sin ajustes; en Fredrikstad 2024, con el signo
+  bien, la lectura 5 reconoce "Sum driftsinntekter" como subtotal y deja de sumarlo junto con su renglón.
+  Lectura 4 con notas (to-do 298 y3, St. Gallen 2024-25): (a) un renglón que resta en su lado pasa su signo a las filas de su nota
+  (una deducción abierta en su nota ya no suma); (b) un total que el escalón "subtotal repetido" salteó por ser la suma de las filas de
+  arriba cierra con lo que salió de esas filas, y lo de abajo queda afuera; (c) un ajuste `fila` que saca un renglón sin lado se respeta
+  también en las lecturas 3 y 4 (antes volvía a entrar por su signo). Con (a), Vitória Guimarães 2021-22 pasa de la lectura 5 a la 4
+  (mismos totales; abre más notas, así que una recarga pide categorizar esas filas).
   Escalón "códigos NBB" (to-do 298 t; `tools/nbb.mjs`, que trae la escalera y los casos): un estado belga con los códigos legales del
   esquema NBB (de 70/76A, 70/74 o 9900 hasta 9904; en tabla o en texto suelto) se lee por sus códigos: se cargan las hojas del esquema
   con el signo de su código (las reversiones "(+)/(-)" negativas restan; el detalle 600/8 + 609 o 650/652/9 si suma su renglón, nunca
@@ -541,6 +549,11 @@ Mitigaciones:
   estadio que Wikipedia no trae.
 - b) Club nuevo: `alta-club.mjs`, en el mismo commit que su primer año. Se commitean TODOS los archivos que lista "Alta escrita (...)",
   también los compartidos (`data/currency-map.js` con el tipo de cambio nuevo): en las altas italianas quedó afuera y se commiteó suelto.
+  El país del club (to-do 298 i): escalón 0, la tabla PAISES de `alta-club.mjs`; escalón 1, si la carpeta no está ahí,
+  `tools/paises-referencia.json` (ISO2, moneda ISO 4217, región, nombre en inglés y la moneda de antes del euro), con una sola entrada que
+  coincida sin tildes. Antes, un país nuevo frenaba con 3 preguntas (id, país, moneda); hoy las 32 carpetas sin fila (Polonia, Suecia,
+  Uruguay...) se resuelven. Gales, Escocia e Irlanda del Norte van como GB (decisión de Guido). El país en el selector del sitio
+  (`data/leagues.js` COUNTRIES, con su bandera) sigue aparte.
   `alta-club.mjs --todos` (el registro `Admin/registros/altas-club.jsonl`): una carpeta cuyos `.md` están TODOS en `documentos-descartados.txt`
   o `documentos-parciales.txt` no se analiza y queda `faltan-datos` con la lista (to-do 232 a: Athens Kallithea, Catania); si un documento
   sale de la lista, la corrida siguiente la vuelve a analizar. Los documentos de esas dos listas tampoco cuentan como "hermanos" del

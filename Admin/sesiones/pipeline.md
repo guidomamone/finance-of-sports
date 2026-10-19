@@ -168,3 +168,81 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
   respuesta correcta suele ser la categoría de las filas, no sacarlas.
 
 ## Después del merge de la 298 h (2026-10-18)
+
+### 298 i: el país de un club nuevo (ok de Guido 2026-10-18; Gales, Escocia e Irlanda del Norte como GB)
+
+- **Qué cambió (para CHANGELOG):** `tools/paises-referencia.json` (nuevo): tabla de referencia ISO por nombre de carpeta en castellano
+  (ISO2, moneda ISO 4217, región del selector, nombre en inglés y la moneda de antes del euro de Eslovaquia, Eslovenia, Letonia, Lituania,
+  Finlandia, Irlanda, Malta, Chipre y Luxemburgo). `tools/alta-club.mjs` (`paisDe`): escalón 0 la tabla PAISES, escalón 1 la referencia si
+  una sola entrada coincide sin tildes; la fuente del campo lo dice. Escocia pasa a GB en PAISES (antes era una pregunta). Medido: las 32
+  carpetas de `Clubes/` sin fila en PAISES se resuelven (ninguna tiene todavía un `.md`, así que el alta entera no se pudo probar con
+  ellas); el alta en ensayo del primer documento de cada país con fila sale idéntica, salvo Celtic (Escocia): `celtic-gb`, país GB, sin las
+  preguntas de id y país. Auditoría P0 0 / P1 0. Commit 5c16518381.
+- **Qué queda (para TODO):** el país en el selector del sitio (`data/leagues.js` COUNTRIES, con nombre y bandera) sigue aparte para cada
+  país nuevo; Escocia, Gales e Irlanda del Norte se ven como GB ("Inglaterra", bandera inglesa) hasta que se decida otra cosa en pantalla.
+
+## Para la sesión nueva (Pipeline 3): por dónde seguir (2026-10-18, cierre de Pipeline 2 por contexto)
+
+Estado: rama `pipeline` limpia, todo commiteado; la 298 i (5c16518381, 90a7e3ac80) es lo último y espera merge. Hecho en esta sesión: 298 t, u,
+x, e, f, g, h, i y la 282 g. Antes de nada: `node tools/worktree.mjs preparar /Users/guidopablomamonesoneira/Claude/Projects/fos-pipeline`.
+Cómo se trabajó: cada letra con diseño + medición gratis y el ok de Guido ANTES de codear (en la f me lo salteé: no repetirlo); medir antes y
+después (`medir-verificar --pasadas 2`, `medir-cargar --contra-sitio`, foto completa de la tool que cambia); un commit por cambio; nota acá y
+aviso a la principal con el comando que haga falta. No se mergea main en la rama.
+
+**Orden de las letras que quedan (el detalle de cada una, en la lista de pendientes de la principal):**
+1. **298 y** (de Onboarding 2; la primera, porque toca años que se están cargando). NRS noruego: Annen finanskostnad, Annen rentekostnad y
+   Rentekostnad sumados como ingreso financiero (Vålerenga, Aalesund, Viking, Sarpsborg 08, Fredrikstad 2018 y 2024); "Sum driftsinntekter"
+   sumado junto con su renglón (Fredrikstad 2024); St. Gallen, "Erträge netto" junto con su desglose y los "-" al revés. Detalle en
+   Admin/sesiones/onboarding.md de la rama onboarding (commit 89a2a53698, debajo de "Después del quinto merge del 2026-10-18"): esperar a que
+   esté en main. Después, anular con medición los 11 ajustes a mano del lote 94 que lo tapan.
+2. **298 w** (de Onboarding 2): antes-de-localizar dice que el perímetro "se decide al ejecutar", pero lote.mjs frena igual.
+3. **298 l, m, n, p**: repreguntas en un club ya dado de alta (reportType por año; perímetro contra el año cargado y no contra el ajuste del
+   club; año vecino con otro perímetro; ceros reales y perfil que vuelven cada año).
+4. **298 q**: el ensayo de lote.mjs cobra la categorización de documentos ya cargados o ya categorizados.
+5. **298 s** (lo que falta): con el cierre bueno (lo arregló la f), ver si localizar sigue eligiendo la columna "Vorig boekjaar" vacía
+   (Beerschot 2019 -correction).
+6. **298 v**: el final de lote.mjs lista como frenados los originales reemplazados por su -correction.
+7. **298 u2**: listas de ligas en grupos (Third Division belga antes de 2016, Second Amateur / Division 2) que bajan con un solo grupo, y la
+   First Division B 2017-18 y 2018-19 que fetch-club-league-reference baja con un equipo menos (falta Beerschot Wilrijk).
+8. **298 z**: cargar los primeros ejercicios de más de 12 meses (Anderlecht 2011, RAAL 2018, Sint-Truiden 2013, Zulte Waregem 2012; Guido: "son
+   parciales, pero corresponde cargarlos").
+9. **298 g2**: partir en la cola cualquier fila según su nota (otros países, el 66A), solo si aparece otra fila mixta sin códigos.
+10. Después, del plan: 310, 290, 232, 279, 286, 287, 301, 302, 306, 307.
+11. **298 e3 (letra nueva, de la principal):** el ensayo de `pipeline.mjs` sobre `Admin/lotes/sin-tablas-298e.txt` estimó ~US$ 7,26 y la
+   corrida real va camino a ~US$ 36 (US$ 8,91 a los 59 de 238 documentos). Ver por qué el ensayo de resolver-inventario subestima cinco veces
+   un rehacer de `sin-tablas` (¿cuenta solo las páginas dudosas de Claude y no el costo de Mistral por página, o la validación de todas las
+   páginas de un `.md` nuevo?) y que el ensayo dé el número real antes de la próxima corrida grande. Medir contra el registro de costos de
+   esta corrida (tools/gasto.mjs).
+
+**Decisiones de Guido abiertas:**
+- **298 t2:** Patro Eisden 2025 (ingresos 1.810 y gastos 4.012 de más), Lommel SK 2025 (gastos 172 de más) y Lommel SK 2018 (falta un financiero
+  de −182): cargados con ajustes `fila`, así que el lector NBB no corre en ellos. ¿Se corrigen y cómo? (propuesta: que el escalón NBB corra
+  también con ajustes si con ellos el resultado sigue exacto).
+- **298 e2:** la corrida paga de Mistral de los 238 `.md` sin tablas (~US$ 7,26), en la carpeta principal: `caffeinate -i node
+  tools/pipeline.mjs --lista Admin/lotes/sin-tablas-298e.txt --max-paginas 0 --limit 0 --ejecutar` (la marca gratis ya la corrió la principal).
+- Escocia, Gales e Irlanda del Norte se ven como GB ("Inglaterra", bandera inglesa) en el selector: decisión de pantalla pendiente.
+
+## Pipeline 3
+
+- **298 y1 hecha** (bceafe97c4, ok de Guido 2026-10-18): FIN_GASTO / FIN_INGRESO noruegos en singular ("Annen finanskostnad", "Annen
+  rentekostnad", "Rentekostnad"). Medido con `medir-verificar --pasadas 2` sobre 366 documentos (prueba completa + los 7 noruegos con
+  filas): 360 idénticos, OK 346 -> 348. Cambian solo los 6 noruegos del lote 94: Viking AS 2025 y Fredrikstad FLI 2018 cierran exacto;
+  Vålerenga AS 2025, Aalesund AS 2025 y Sarpsborg 08 FLI 2025 dejan de dar "no cierra" (les quedan las dudas de otras etapas).
+- **298 y2 resuelta por la y1, sin código propio:** en Fredrikstad 2024 (acta 2025), con el signo financiero bien, la lectura 5 reconoce
+  "Sum driftsinntekter" como subtotal: ingresos 185,45 M -> 92,73 M y el resultado cierra exacto.
+- Sigue: **298 y3** (St. Gallen 2024-25: "Erträge netto" consolidado sumado junto al desglose por sociedad, y los signos de L330 y L403).
+  Después, **y4**: con la y en main y el merge de onboarding hecho, sacar los ajustes `fila` noruegos del lote 94 (8 de los 11) y medir que lo
+  cargado quede igual.
+- **298 y3 hecha** (ok de Guido 2026-10-18), tres escalones en verificar.mjs, un commit cada uno, medidos con `medir-verificar --pasadas 2`
+  sobre los mismos 366 documentos:
+  a) 10bb653925, la nota de un renglón que resta hereda su signo en la lectura 4: 365 idénticos. Cambia Vitória Guimarães 2021-22 (cargado):
+     "Imparidade de dívidas a receber" +100.695 (reversión) abierto en su nota ya resta, la lectura 4 cierra exacto y gana sobre la 5. Mismos
+     totales; lo publicado no cambia. `medir-cargar --contra-sitio` sobre ese documento frena porque la verificación abre filas de nota sin
+     categorizar ("Programas computador", amortización por clase): solo pesa si se recarga ese año (etapa 5, centavos).
+  b) d6bd922a54, un total salteado por "subtotal repetido" cierra con lo que salió de sus partes: 365 idénticos, cambia solo St. Gallen.
+  c) 719f2c133b, un ajuste `fila` que saca un renglón sin lado se respeta en las lecturas 3 y 4: 366 idénticos.
+  Simulado con los 2 ajustes de la compensación entre sociedades ("Entschädigung" ±11.500, L268-269, de la rama onboarding): St. Gallen cierra
+  exacto, ingresos 45,101 M, gastos 44,681 M, resultado 0,117 M. Auditoría P0 0 / P1 0.
+- **y4 (después del merge de pipeline y onboarding):** sacar los ajustes `fila` que tapaban la y (8 noruegos y 3 de St. Gallen: "Erträge
+  netto" L261, L330 y L403) y DEJAR los 2 de la compensación "Entschädigung" (L268-269): son una decisión de la cola, no un defecto del script.
+  En los 718 `.filas.json` hay un solo par de filas sin lado que se anulan (+X / −X): no hace falta un escalón para eso.

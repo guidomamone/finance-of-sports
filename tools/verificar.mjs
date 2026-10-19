@@ -192,6 +192,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   let forzarNotaSub = false; let totIngForz = 0; const notasNotaSub = []; // (to-do 175, escalón 2) la nota del subtotal en la primera pasada, ver abajo
   const signoAcum = new Map(); const notasAcum = []; let escalonAcum = false; // (to-do 237 q) escalón "acumulados": fila del financiero (por línea) -> signo de su lado
   const signoFinBloque = new Map(); const notasFinBloque = []; let escalonFinBloque = false; // (to-do 199, patrón C) fila del financiero (por línea) -> signo según el bloque que la contiene
+  const partesSubRep = new Map(); // (to-do 298 y3, escalón b) línea del total que salteó el patrón B -> etiquetas de las filas de arriba que suma
   const notasSubRep = []; // (to-do 175, escalón 1) las notas del escalón "subtotal repetido": se escriben solo si gana
   const notaSubtotalLados = new Set(); // lados donde este escalón abrió la nota del subtotal (se escribe en el .verificacion.json)
   const pU = resolve(ROOT, derivado(md, '.ubicacion.json', { crear: false }));
@@ -371,6 +372,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         // No se cuenta: sus partes ya están. Caso: Ferroviária 2016 (.md L113-115: 9.221.750 − 10.553 = 9.211.197), se sumaba además de la nota.
         if (subRepetido && !esSumaDe(arriba) && !esSumaDe(abajo) && esSumaDe(delLado.slice(0, k).filter((x) => x.tipo !== 'resultado' && x.lado === lado).reverse())) {
           if (campo === 'M') { const n = `escalón "subtotal repetido": "${f.etiqueta}" (L${f.linea}) es la suma de las filas de arriba (con su subtotal); se saltea`; if (!notasSubRep.includes(n)) notasSubRep.push(n); }
+          if (campo === 'M') partesSubRep.set(f.linea, delLado.slice(0, k).filter((x) => x.tipo !== 'resultado' && x.lado === lado).map((x) => x.etiqueta));
           continue;
         }
         // (to-do 199, patrón C) Y una fila que no es renglón y es la suma de los RENGLONES DE ABAJO DE CUALQUIER LADO, cuando esa suma incluye
@@ -490,7 +492,10 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         const mismas = hijas.filter(ladoOk);
         if (mismas.length >= 2 && mismas.length < hijas.length) { c = cerrarNota(obj, mismas, campo, f.u || 0) || cerrarConAjuste(f, mismas, campo); if (c) { const n = `la nota de "${f.etiqueta}" cierra solo con sus filas del lado ${f.lado} (${hijas.length - mismas.length} filas de otro lado dicen abrir un renglón con el mismo nombre)`; if (!notas.includes(n)) notas.push(n); } }
       }
-      if (c) out.push(...conLineas(abrirAnidadas(c.hojas.map((h) => ({ ...h, [campo]: h.valorNota, origen: `nota que desglosa "${f.etiqueta}"` })), campo, 1), [f]));
+      // (to-do 298 y3, escalón a, ok de Guido 2026-10-18) en la lectura 4 (signos impresos) un renglón que RESTA en su lado le pasa ese signo
+      // a las filas de su nota: cerrarNota() las devuelve relativas al renglón en valor absoluto, y sin esto la nota de una deducción sumaba.
+      // Caso: St. Gallen 2024-25, "Ertragsminderungen" −463 (L260) abierto en +21 (L330) y −484 (L403): se leían −21 y +484.
+      if (c) { const sg = firmado && f.tipo === 'renglon' && (f[campo] || 0) * signoNormal < 0 ? -1 : 1; out.push(...conLineas(abrirAnidadas(c.hojas.map((h) => ({ ...h, [campo]: h.valorNota * sg, origen: `nota que desglosa "${f.etiqueta}"` })), campo, 1), [f])); }
       else { out.push({ ...f, [campo]: firmado && f.tipo === 'renglon' ? (f[campo] || 0) * signoNormal : Math.abs(f[campo] || 0), origen: firmado && f.tipo === 'renglon' && (f[campo] || 0) * signoNormal < 0 ? 'estado (lectura 4: signo impreso, resta en su lado)' : 'estado' }); if (conNotas && hijas.length >= 2 && campo === 'M' && !desgloseTrivial(f, hijas)) { const sr = r6(hijas.filter((h) => h.tipo === 'renglon').reduce((a, h) => a + Math.abs(h.M || 0), 0)); if (!reintentos.some((x) => x.renglon === f.etiqueta)) notas.push(`la nota de "${f.etiqueta}" no suma el renglón (${sr} contra ${r6(obj)}, sumando sus renglones): quedó el renglón del estado`); if (!reintentos.some((x) => x.renglon === f.etiqueta)) reintentos.push({ renglon: f.etiqueta, suma: sr, objetivo: r6(obj) }); } }
       if (f.tipo === 'renglon') salidaDe.set(f, out.slice(antes));
     }
@@ -832,7 +837,10 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
     // renglones sin lado según su signo, como la lectura 3. Caso: Juventus 2015-16 a 2019-20, "Other non-recurring revenues and costs"
     // (+10.638.769, 2015-16 .md L1880) y "Group's share of results of associates" (−661.133, L1884) quedan sin lado; las lecturas 3-4 los
     // suman pero fallan por el total impreso de ingresos, y la 5 no los suma. Solo se llega acá si fallaron la 0 a la 5.
-    if ((nivel >= 3 && nivel < 5) || nivel >= 6) for (const f of otros) { if (excluirOtros && excluirOtros.has(f)) continue; if (nivel >= 6 && reemplazada(f)) continue; const esGasto = bases?.otrosResultado ? f.M < 0 : gastosNeg ? f.M < 0 : f.M > 0; (esGasto ? gas : ing).push({ ...f, lado: esGasto ? 'gasto' : 'ingreso', M: Math.abs(f.M), origen: `estado (sin lado en el documento: entra como ${esGasto ? 'gasto' : 'ingreso'} por su signo, impreso ${f.M < 0 ? 'en negativo' : 'en positivo'}; lectura ${nivel >= 6 ? 6 : 3})` }); } // el origen le llega a Jev y a Claude como sección (Versión 346)
+    // (to-do 298 y3, escalón c, ok de Guido 2026-10-18) un ajuste `fila` que saca un renglón sin lado se respeta también en las lecturas 3 y 4
+    // (antes, solo en la 6): la fila volvía a entrar por su signo. Caso: St. Gallen 2024-25, la compensación entre sociedades "Entschädigung"
+    // +11.500 / −11.500 (L268-269), sacada con ajustes: entraba igual como ingreso y como gasto e inflaba los dos lados.
+    if ((nivel >= 3 && nivel < 5) || nivel >= 6) for (const f of otros) { if (excluirOtros && excluirOtros.has(f)) continue; if (reemplazada(f)) continue; const esGasto = bases?.otrosResultado ? f.M < 0 : gastosNeg ? f.M < 0 : f.M > 0; (esGasto ? gas : ing).push({ ...f, lado: esGasto ? 'gasto' : 'ingreso', M: Math.abs(f.M), origen: `estado (sin lado en el documento: entra como ${esGasto ? 'gasto' : 'ingreso'} por su signo, impreso ${f.M < 0 ? 'en negativo' : 'en positivo'}; lectura ${nivel >= 6 ? 6 : 3})` }); } // el origen le llega a Jev y a Claude como sección (Versión 346)
     const ajuste = (arr, total, nombre, lineaTotal) => {
       if (total == null || !isFinite(total)) { ch.push({ nombre: `total de ${nombre}`, ok: null, detalle: 'el documento no lo imprime' }); return arr; }
       const sm = suma(arr); const tolRed = Math.max(TOL, 0.5 * arr.reduce((a, f) => a + (f.u || 0), 0));
@@ -841,7 +849,11 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       // con otras líneas del mismo lado fuera de ese total. Nottingham Forest: "Turnover" + "Profit on disposal" aparte.
       const filaTotal = estado.find((f) => f.tipo !== 'renglon' && cerca(Math.abs(f.M || 0), total)) || (nivel >= 2 ? estado.find((f) => (lineaTotal != null && f.linea === lineaTotal) || (f.tipo === 'renglon' && cerca(Math.abs(f.M || 0), total))) : null);
       if (filaTotal) {
-        const deEsa = arr.filter((f) => f.etiqueta === filaTotal.etiqueta || String(f.origen || '').startsWith(`nota que desglosa "${filaTotal.etiqueta}"`));
+        // (to-do 298 y3, escalón b, ok de Guido 2026-10-18) si el escalón "subtotal repetido" (patrón B) salteó ese total por ser la suma de
+        // las filas de arriba, el total cierra con lo que salió de ESAS filas (ellas mismas o las hojas de su nota). Caso: St. Gallen 2024-25,
+        // "Erträge netto" 45.057 (L261) = "Erträge brutto" (abierto en su nota) + "Ertragsminderungen"; "Ausserordentlicher Ertrag" queda afuera.
+        const partes = (!arr.some((f) => f.etiqueta === filaTotal.etiqueta) && partesSubRep.get(filaTotal.linea)) || [filaTotal.etiqueta];
+        const deEsa = arr.filter((f) => partes.some((p) => f.etiqueta === p || String(f.origen || '').startsWith(`nota que desglosa "${p}"`)));
         if (deEsa.length && cerca(suma(deEsa), total)) { ch.push({ nombre: `total de ${nombre}`, ok: true, detalle: `"${filaTotal.etiqueta}" ${r6(total)} cierra; además se suman ${arr.length - deEsa.length} línea(s) fuera de ese total (${r6(sm - total)})` }); return arr; }
       }
       // (Versión 431, cambio C, aprobado por Guido el 2026-10-03; desde la lectura 2) el total impreso puede ser el TOTAL DE UNA NOTA que
