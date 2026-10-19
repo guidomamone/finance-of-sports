@@ -40,6 +40,15 @@ const chelseaGbRevenueLinesByYear = {
     { rawLabel:'Profit on disposal of player registrations', normalizedCategory:'player_sales', amountNative:62.861, disclosureLevel:'aggregated' },
     { rawLabel:'Profit on disposal of fixed assets', normalizedCategory:'other_income', amountNative:76.524, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Broadcasting', normalizedCategory:'broadcasting', amountNative:163.101, disclosureLevel:'aggregated' },
+    { rawLabel:'Commercial', normalizedCategory:'sponsorship_commercial', amountNative:225.265, disclosureLevel:'aggregated' },
+    { rawLabel:'Matchday', normalizedCategory:'matchday_competition', amountNative:80.12, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:0.715, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of player registrations', normalizedCategory:'player_sales', amountNative:152.463, disclosureLevel:'aggregated' },
+    { rawLabel:'Proceeds on sale of investment', normalizedCategory:'other_income', amountNative:200, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of fixed assets', normalizedCategory:'other_income', amountNative:0.054, disclosureLevel:'aggregated' },
+  ],
 };
 
 const chelseaGbExpenseLinesByYear = {
@@ -69,6 +78,12 @@ const chelseaGbExpenseLinesByYear = {
   2023: [
     { rawLabel:'Cost of sales', normalizedCategory:'wages_squad', amountNative:-467.205, disclosureLevel:'aggregated' },
     { rawLabel:'Administrative expenses', normalizedCategory:'admin_general_expense', amountNative:-293.85, disclosureLevel:'aggregated' },
+  ],
+  2024: [
+    { rawLabel:'Less: net assets of subsidiary on disposal', normalizedCategory:'other_expenses', amountNative:-1.251, disclosureLevel:'aggregated' },
+    { rawLabel:'Cost of sales', normalizedCategory:'wages_squad', amountNative:-400.808, disclosureLevel:'aggregated' },
+    { rawLabel:'Administrative expenses', normalizedCategory:'admin_general_expense', amountNative:-281.352, disclosureLevel:'aggregated' },
+    { rawLabel:'Fair value loss on investment properties', normalizedCategory:'other_expenses', amountNative:-0.384, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -142,6 +157,21 @@ const chelseaGbFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:682.458, officialTotalExpenses:761.055, officialPAT:-89.769,
   },
+  2024: {
+    currency:'GBP', fxRef:'GBP@2024-06-30',
+    sourceId:'chelsea-gb-fc-holdings-group-accounts-2023-24',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-9.523, tax:1.206,
+    extraRows: [
+      {label:'Interest receivable and similar income', value:9.748},
+      {label:'Interest payable and similar charges', value:-19.271},
+      {label:'Taxation', value:1.206},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:821.718, officialTotalExpenses:683.795, officialPAT:129.606,
+  },
 };
 
 const chelseaGbPresupuestoOverlayByYear = {};
@@ -183,6 +213,11 @@ Object.assign(sources, {
   'chelsea-gb-fc-holdings-group-accounts-2022-23': {
     id:'chelsea-gb-fc-holdings-group-accounts-2022-23', clubId:'chelsea-gb',
     title:'Chelsea FC Holdings Limited — chelsea-fc-holdings-group-accounts-2022-23 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'chelsea-gb-fc-holdings-group-accounts-2023-24': {
+    id:'chelsea-gb-fc-holdings-group-accounts-2023-24', clubId:'chelsea-gb',
+    title:'Chelsea FC Holdings Limited — chelsea-fc-holdings-group-accounts-2023-24 (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

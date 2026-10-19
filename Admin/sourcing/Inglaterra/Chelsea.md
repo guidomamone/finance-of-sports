@@ -58,3 +58,5 @@ Todos en `Clubes/Inglaterra/Chelsea/` (los PDF no se trackean; son escaneos, hay
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2022 desde `Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2021-22.pdf` (sourceId `chelsea-gb-fc-holdings-group-accounts-2021-22`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2023 desde `Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2022-23.pdf` (sourceId `chelsea-gb-fc-holdings-group-accounts-2022-23`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2024 desde `Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2023-24.pdf` (sourceId `chelsea-gb-fc-holdings-group-accounts-2023-24`).
