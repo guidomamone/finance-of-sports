@@ -148,22 +148,41 @@ const toResolve = selected.filter(needsResolve);
 // menos de 5 renglones de tabla no sirve para sacar filas (etiquetas e importes en bloques separados): se marca `sin-tablas` y la corrida
 // siguiente la rehace con Mistral (una sola vez: formatoIntentado). Gratis. Corre sobre TODOS los validados que todavía no pasaron por el
 // lote (no entra en la selección ni en --limit: si no, ~660 validados le quitaban lugar a lo que hay que transcribir).
-function chequearTablas(led) {
-  let n = 0;
+// (to-do 286) La parte que solo lee: qué documentos marcaría el control (con su registro de verificación previo). El ensayo la usa para
+// cotizar el rehacer con Mistral antes de la corrida real, que es la que escribe la marca.
+function candidatosSinTablas(led) {
+  const out = [];
   for (const e of led.filter((x) => !x.cargado && inScope(x) && sinPasarPorElLote(x))) {
     const mdAbs = resolve(root, e.md); if (!existsSync(mdAbs)) continue;
     const mdTablas = readFileSync(mdAbs, 'utf8').split('\n').filter((l) => l.startsWith('|')).length;
     if (mdTablas >= 5 || String(e.motor).startsWith('mistral') || pagesOf(e.pdf) < 2) continue;
     const prevEv = [...readJsonl(verifPath)].reverse().find((v) => v.md === e.md && v.mdSha1 === sha1(mdAbs)) || {};
     if (prevEv.formatoIntentado) continue;
-    appendFileSync(verifPath, JSON.stringify({ ...prevEv, ts: new Date().toISOString(), md: e.md, mdSha1: sha1(mdAbs), status: 'sin-tablas', detail: 'el .md no tiene tablas: se rehace con Mistral en la próxima corrida', formatoIntentado: true }) + '\n');
-    n++;
+    out.push({ e, mdAbs, prevEv });
   }
-  return n;
+  return out;
+}
+function chequearTablas(led) {
+  const cands = candidatosSinTablas(led);
+  for (const { e, mdAbs, prevEv } of cands) {
+    appendFileSync(verifPath, JSON.stringify({ ...prevEv, ts: new Date().toISOString(), md: e.md, mdSha1: sha1(mdAbs), status: 'sin-tablas', detail: 'el .md no tiene tablas: se rehace con Mistral en la próxima corrida', formatoIntentado: true }) + '\n');
+  }
+  return cands.length;
+}
+// Ensayo: cotiza con el mismo ensayo de resolver-inventario (dryRunDoc ya cuenta el rehacer con Mistral de un .md sin tablas).
+function ensayoSinTablas(led) {
+  const cands = candidatosSinTablas(led);
+  if (!cands.length) return;
+  const lista = resolve(root, 'Admin', 'registros', '.pipeline-lista-sin-tablas.txt');
+  writeFileSync(lista, cands.map((c) => c.e.pdf).join('\n') + '\n');
+  const dry = node('tools/resolver-inventario.mjs', ['--lista', 'Admin/registros/.pipeline-lista-sin-tablas.txt', '--estado', 'listo'], { stdio: ['ignore', 'pipe', 'ignore'] });
+  const total = ((dry.stdout || '').match(/TOTAL ~\$([\d.]+)/) || [])[1];
+  console.log(`\n${cands.length} transcripción(es) vieja(s) ya validada(s) sin tablas: la corrida real las marca y las rehace con Mistral${total ? ` (~US$ ${total} más, ya contado el rehacer)` : ''}:`);
+  for (const [pais, k] of Object.entries(cands.reduce((a, c) => { const p = c.e.pdf.split('/')[1]; a[p] = (a[p] || 0) + 1; return a; }, {}))) console.log(`  ${String(k).padStart(4)}  ${pais}`);
 }
 
 console.log(`\n${total} documento(s) para transcribir/validar en el alcance pedido; esta corrida toma ${selected.length}.`);
-if (!selected.length && !EXECUTE) { printSummary(ledger, 'Nada para transcribir'); process.exit(0); }
+if (!selected.length && !EXECUTE) { ensayoSinTablas(ledger); printSummary(ledger, 'Nada para transcribir'); process.exit(0); }
 
 // ---- ensayo o ejecución
 const tmpList = resolve(root, 'Admin', 'registros', '.pipeline-lista-actual.txt');
@@ -173,6 +192,7 @@ if (toResolve.length) {
   if (!EXECUTE) {
     const dry = node('tools/resolver-inventario.mjs', ['--lista', 'Admin/registros/.pipeline-lista-actual.txt'], { stdio: ['ignore', 'pipe', 'ignore'] });
     console.log('\n' + (dry.stdout || '').split('\n').filter((l) => /^\s+\d+ docs|TOTAL|ENSAYO/.test(l)).join('\n'));
+    ensayoSinTablas(ledger);
     console.log('\nEnsayo terminado, no se gastó nada. Para correrlo: agregá --ejecutar.');
     process.exit(0);
   }
