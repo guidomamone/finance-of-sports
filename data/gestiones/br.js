@@ -208,10 +208,8 @@ Object.assign(window.CLUB_GESTIONES, {
       fuente:'https://www.lance.com.br/atletico-goianiense/adson-batista-aclamado-novo-presidente-atletico.html', confirmada:true },
   ],
   'fortaleza-br': [
-    { nombre:'Fabiano Barreira', corto:'Barreira', cargo:'Presidente del Conselho de Administração', desde:'2025-04-15', hasta:'2026-01-15',
-      fuente:'https://www.portalin.com.br/notas/fabiano-barreira-assume-presidencia-do-conselho-de-administra-da-saf-do-fortaleza/', confirmada:true },
-    { nombre:'Bruno Cals', corto:'Cals', cargo:'Presidente del Conselho de Administração', desde:'2026-01-15', hasta:null,
-      fuente:'https://www.opovo.com.br/esportes/futebol/times/fortaleza/2026/01/15/bruno-cals-e-o-novo-presidente-do-conselho-da-saf-do-fortaleza.html', confirmada:true },
+    { nombre:'Pedro Martins', corto:'Martins', cargo:'CEO', desde:'2025-12-28', hasta:null, firmo:[2025],
+      fuente:'https://diariodonordeste.verdesmares.com.br/jogada/fortaleza-contrata-pedro-martins-como-novo-ceo-para-substituir-marcelo-paz-1.3722334', confirmada:true },
   ],
   'novorizontino-br': [
     { nombre:'Genilson da Rocha Santos', corto:'Genilson', cargo:'Presidente', desde:'2012-01-01', hasta:null,

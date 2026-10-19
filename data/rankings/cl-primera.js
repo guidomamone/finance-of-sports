@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["cl-primera"] = {
   2025: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2025 Chilean Primera División","lang":"en","at":"2026-10-18","n":16},
     clubs: [
       { id:"catolica-cl", revenue:28.497, reportType:"official_balance_sheet",
@@ -11,7 +11,7 @@ window.RANKINGS["cl-primera"] = {
     ],
   },
   2024: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2024 Chilean Primera División","lang":"en","at":"2026-10-17","n":16},
     clubs: [
       { id:"colocolo-cl", revenue:47.987, reportType:"official_balance_sheet",
@@ -26,7 +26,7 @@ window.RANKINGS["cl-primera"] = {
     ],
   },
   2023: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2023 Chilean Primera División","lang":"en","at":"2026-10-17","n":16},
     clubs: [
       { id:"colocolo-cl", revenue:36.085, reportType:"official_balance_sheet",
@@ -41,7 +41,7 @@ window.RANKINGS["cl-primera"] = {
     ],
   },
   2022: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2022 Chilean Primera División","lang":"en","at":"2026-10-17","n":16},
     clubs: [
       { id:"colocolo-cl", revenue:33.688, reportType:"official_balance_sheet",
@@ -56,7 +56,7 @@ window.RANKINGS["cl-primera"] = {
     ],
   },
   2021: {
-    leagueSize: null,
+    leagueSize: 17,
     wiki: {"t":"2021 Chilean Primera División","lang":"en","at":"2026-10-18","n":17},
     clubs: [
       { id:"catolica-cl", revenue:16.761, reportType:"official_balance_sheet",
@@ -65,7 +65,7 @@ window.RANKINGS["cl-primera"] = {
     ],
   },
   2020: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2020 Chilean Primera División","lang":"en","at":"2026-10-18","n":18},
     clubs: [
       { id:"catolica-cl", revenue:21.692, reportType:"official_balance_sheet",
@@ -74,7 +74,7 @@ window.RANKINGS["cl-primera"] = {
     ],
   },
   2019: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2019 Chilean Primera División","lang":"en","at":"2026-10-18","n":16},
     clubs: [
       { id:"catolica-cl", revenue:23.103, reportType:"official_balance_sheet",
@@ -83,7 +83,7 @@ window.RANKINGS["cl-primera"] = {
     ],
   },
   2018: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2018 Chilean Primera División","lang":"en","at":"2026-10-18","n":16},
     clubs: [
       { id:"catolica-cl", revenue:16.25, reportType:"official_balance_sheet",
@@ -92,7 +92,7 @@ window.RANKINGS["cl-primera"] = {
     ],
   },
   2017: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2017 Chilean Primera División","lang":"en","at":"2026-10-18","n":16},
     clubs: [
       { id:"catolica-cl", revenue:18.204, reportType:"official_balance_sheet",
@@ -101,7 +101,7 @@ window.RANKINGS["cl-primera"] = {
     ],
   },
   2016: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2015–16 Campeonato Nacional Primera División","lang":"en","at":"2026-10-18","n":16},
     clubs: [
       { id:"catolica-cl", revenue:17.207, reportType:"official_balance_sheet",
@@ -110,7 +110,7 @@ window.RANKINGS["cl-primera"] = {
     ],
   },
   2015: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2014–15 Campeonato Nacional Primera División","lang":"en","at":"2026-10-18","n":18},
     clubs: [
       { id:"catolica-cl", revenue:14.461, reportType:"official_balance_sheet",
@@ -119,7 +119,7 @@ window.RANKINGS["cl-primera"] = {
     ],
   },
   2014: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2013–14 Campeonato Nacional Primera División","lang":"en","at":"2026-10-18","n":18},
     clubs: [
       { id:"catolica-cl", revenue:15.515, reportType:"official_balance_sheet",
@@ -128,7 +128,7 @@ window.RANKINGS["cl-primera"] = {
     ],
   },
   2013: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2013 Campeonato Nacional Primera División","lang":"en","at":"2026-10-18","n":18},
     clubs: [
       { id:"catolica-cl", revenue:17.44, reportType:"official_balance_sheet",
@@ -137,7 +137,7 @@ window.RANKINGS["cl-primera"] = {
     ],
   },
   2012: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2012 Campeonato Nacional Primera División","lang":"en","at":"2026-10-18","n":18},
     clubs: [
       { id:"catolica-cl", revenue:15.587, reportType:"official_balance_sheet",
@@ -146,7 +146,7 @@ window.RANKINGS["cl-primera"] = {
     ],
   },
   2011: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2011 Campeonato Nacional Primera División","lang":"en","at":"2026-10-18","n":18},
     clubs: [
       { id:"catolica-cl", revenue:18.891, reportType:"official_balance_sheet",
@@ -155,7 +155,7 @@ window.RANKINGS["cl-primera"] = {
     ],
   },
   2010: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2010 Chilean Primera División","lang":"en","at":"2026-10-18","n":18},
     clubs: [
       { id:"catolica-cl", revenue:7.431, reportType:"official_balance_sheet",

@@ -56,8 +56,8 @@
 //
 // EL FORMATO DE data/rankings/<liga>.js: `window.RANKINGS[liga][año] = { leagueSize, clubs:[{ id, revenue, reportType, sourceId, mix,
 // incluidos }], sinDato }`. Ingresos en MILLONES DE USD, convertidos con el tipo de cambio de cada documento (`fxSource`/`fxRef` del
-// archivo de cada club) y agrupados en Formato simplificado. Orden DESCENDENTE: el 1 del ranking primero. `leagueSize` null = nadie
-// verificó cuántos equipos tuvo la temporada. `wiki` = { t, lang, at, n }: la página de Wikipedia de la que salió la lista de equipos de
+// archivo de cada club) y agrupados en Formato simplificado. Orden DESCENDENTE: el 1 del ranking primero. `leagueSize` = el verificado (LEAGUE_SIZE_BY_YEAR) o,
+// sin él, los equipos de la lista de Wikipedia (`wiki.n`); null = ni lo uno ni lo otro. `wiki` = { t, lang, at, n }: la página de Wikipedia de la que salió la lista de equipos de
 // esa liga-año (tools/club-league-reference/), con el día en que se leyó y cuántos clubes trae; la vista la cita con su licencia
 // (CC BY-SA 4.0). Sin lista bajada, no va. El archivo publicado lleva UNA línea de comentario (data/ se publica: to-do 209).
 // ============================================================================
@@ -235,12 +235,14 @@ function rankingDe(api, leagueId, year) {
     // las verificó. El null viaja tal cual, y la vista NO puede escribir un "de
     // M" sin él. Rellenarlo con "los que tenemos cargados" sería exactamente el
     // dato inventado que `data/club-leagues.js` existe para no inventar.
+    // Decisión de Guido (2026-10-19, to-do 309): sin tamaño verificado, el de la lista de equipos de Wikipedia de esa liga-año (`wiki.n`).
     leagueSize: api.leagueSizeAt(leagueId, year),
     clubs: filas,
   };
   if (sinDato.length) out.sinDato = sinDato.sort();
   const wiki = wikiDe(leagueId, year);
   if (wiki) out.wiki = wiki;
+  if (out.leagueSize == null && wiki) out.leagueSize = wiki.n;
   return out;
 }
 

@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["br-serieB"] = {
   2025: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2025 Campeonato Brasileiro Série B","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"athleticoparanaense-br", revenue:81.597, reportType:"official_balance_sheet",
@@ -54,7 +54,7 @@ window.RANKINGS["br-serieB"] = {
     ],
   },
   2024: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2024 Campeonato Brasileiro Série B","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"santos-br", revenue:61.216, reportType:"official_balance_sheet",
@@ -112,7 +112,7 @@ window.RANKINGS["br-serieB"] = {
     ],
   },
   2023: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2023 Campeonato Brasileiro Série B","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"avai-br", revenue:27.543, reportType:"official_balance_sheet",
@@ -136,7 +136,7 @@ window.RANKINGS["br-serieB"] = {
     ],
   },
   2022: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2022 Campeonato Brasileiro Série B","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"cruzeiro", revenue:28.122, reportType:"official_balance_sheet",
@@ -161,7 +161,7 @@ window.RANKINGS["br-serieB"] = {
     ],
   },
   2021: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2021 Campeonato Brasileiro Série B","lang":"en","at":"2026-10-02","n":20},
     clubs: [
       { id:"goias-br", revenue:8.397, reportType:"official_balance_sheet",
@@ -182,7 +182,7 @@ window.RANKINGS["br-serieB"] = {
     ],
   },
   2020: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2020 Campeonato Brasileiro Série B","lang":"en","at":"2026-10-09","n":20},
     clubs: [
       { id:"juventude-br", revenue:6.232, reportType:"official_balance_sheet",
@@ -194,7 +194,7 @@ window.RANKINGS["br-serieB"] = {
     ],
   },
   2019: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2019 Campeonato Brasileiro Série B","lang":"en","at":"2026-10-09","n":20},
     clubs: [
       { id:"rbbragantino-br", revenue:9.718, reportType:"official_balance_sheet",
@@ -206,7 +206,7 @@ window.RANKINGS["br-serieB"] = {
     ],
   },
   2018: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2018 Campeonato Brasileiro Série B","lang":"en","at":"2026-10-09","n":20},
     clubs: [
       { id:"criciuma-br", revenue:7.462, reportType:"official_balance_sheet",
@@ -215,7 +215,7 @@ window.RANKINGS["br-serieB"] = {
     ],
   },
   2017: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2017 Campeonato Brasileiro Série B","lang":"en","at":"2026-10-02","n":20},
     clubs: [
       { id:"goias-br", revenue:17.73, reportType:"official_balance_sheet",
@@ -230,7 +230,7 @@ window.RANKINGS["br-serieB"] = {
     ],
   },
   2016: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2016 Campeonato Brasileiro Série B","lang":"en","at":"2026-10-03","n":20},
     clubs: [
       { id:"goias-br", revenue:25.474, reportType:"official_balance_sheet",
@@ -245,7 +245,7 @@ window.RANKINGS["br-serieB"] = {
     ],
   },
   2015: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2015 Campeonato Brasileiro Série B","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"criciuma-br", revenue:4.799, reportType:"official_balance_sheet",
@@ -254,7 +254,7 @@ window.RANKINGS["br-serieB"] = {
     ],
   },
   2014: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2014 Campeonato Brasileiro Série B","lang":"en","at":"2026-10-18","n":20},
     clubs: [
       { id:"vilanova-br", revenue:2.303, reportType:"official_balance_sheet",
@@ -263,7 +263,7 @@ window.RANKINGS["br-serieB"] = {
     ],
   },
   2012: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2012 Campeonato Brasileiro Série B","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"goias-br", revenue:23.851, reportType:"official_balance_sheet",
@@ -276,7 +276,7 @@ window.RANKINGS["br-serieB"] = {
     ],
   },
   2011: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2011 Campeonato Brasileiro Série B","lang":"en","at":"2026-10-03","n":20},
     clubs: [
       { id:"goias-br", revenue:9.114, reportType:"official_balance_sheet",

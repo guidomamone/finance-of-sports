@@ -241,3 +241,10 @@ gestión" no rompa, cubre únicamente el año cargado (mismo criterio que Botafo
 ```text
 no se encontró una cifra de sócios/sócio torcedor en el documento de la SAF
 ```
+
+## Gestión 2025 (Pantallas 3, 2026-10-19)
+
+Decisión de Guido (to-do 195): para el cierre 2025 va el CEO de la SAF, Pedro Martins (el balance lo firma él), no el presidente del consejo
+(Fabiano Barreira / Bruno Cals, que dejan de cargarse). Desde 2025-12-28: el club confirmó su contratación ese día, un día después de que Marcelo
+Paz anunciara su salida a Corinthians (Diário do Nordeste, https://diariodonordeste.verdesmares.com.br/jogada/fortaleza-contrata-pedro-martins-como-novo-ceo-para-substituir-marcelo-paz-1.3722334).
+Una nota habla del 2026-01-03 como inicio formal; por eso el año 2025 va también en `firmo`. Pregunta abierta para el club: fecha exacta de asunción.

@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["ar-primeranacional"] = {
   2023: {
-    leagueSize: null,
+    leagueSize: 34,
     wiki: {"t":"2023 Primera Nacional","lang":"en","at":"2026-10-17","n":34},
     clubs: [
       { id:"ferrocarriloeste-ar", revenue:11.776, reportType:"official_balance_sheet",
@@ -14,7 +14,7 @@ window.RANKINGS["ar-primeranacional"] = {
     ],
   },
   2022: {
-    leagueSize: null,
+    leagueSize: 34,
     wiki: {"t":"2022 Primera Nacional","lang":"en","at":"2026-10-17","n":34},
     clubs: [
       { id:"ferrocarriloeste-ar", revenue:9.05, reportType:"official_balance_sheet",
@@ -26,7 +26,7 @@ window.RANKINGS["ar-primeranacional"] = {
     ],
   },
   2021: {
-    leagueSize: null,
+    leagueSize: 35,
     wiki: {"t":"2021 Primera Nacional","lang":"en","at":"2026-10-17","n":35},
     clubs: [
       { id:"almagro-ar", revenue:0.634, reportType:"official_balance_sheet",
@@ -35,7 +35,7 @@ window.RANKINGS["ar-primeranacional"] = {
     ],
   },
   2020: {
-    leagueSize: null,
+    leagueSize: 29,
     wiki: {"t":"2019–20 Primera Nacional","lang":"en","at":"2026-10-17","n":29},
     clubs: [
       { id:"almagro-ar", revenue:0.696, reportType:"official_balance_sheet",
@@ -44,7 +44,7 @@ window.RANKINGS["ar-primeranacional"] = {
     ],
   },
   2019: {
-    leagueSize: null,
+    leagueSize: 25,
     wiki: {"t":"2018–19 Primera B Nacional","lang":"en","at":"2026-10-17","n":25},
     clubs: [
       { id:"almagro-ar", revenue:0.877, reportType:"official_balance_sheet",
@@ -53,7 +53,7 @@ window.RANKINGS["ar-primeranacional"] = {
     ],
   },
   2018: {
-    leagueSize: null,
+    leagueSize: 25,
     wiki: {"t":"2017–18 Primera B Nacional","lang":"en","at":"2026-10-17","n":25},
     clubs: [
       { id:"almagro-ar", revenue:1.067, reportType:"official_balance_sheet",
@@ -62,7 +62,7 @@ window.RANKINGS["ar-primeranacional"] = {
     ],
   },
   2017: {
-    leagueSize: null,
+    leagueSize: 23,
     wiki: {"t":"2016–17 Primera B Nacional","lang":"en","at":"2026-10-17","n":23},
     clubs: [
       { id:"argentinosjuniors", revenue:11.595, reportType:"official_balance_sheet",

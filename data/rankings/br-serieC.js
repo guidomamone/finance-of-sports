@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["br-serieC"] = {
   2025: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2025 Campeonato Brasileiro Série C","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"guarani-br", revenue:11.553, reportType:"official_balance_sheet",
@@ -11,7 +11,7 @@ window.RANKINGS["br-serieC"] = {
     ],
   },
   2024: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2024 Campeonato Brasileiro Série C","lang":"en","at":"2026-10-09","n":20},
     clubs: [
       { id:"remo-br", revenue:6.184, reportType:"official_balance_sheet",
@@ -27,7 +27,7 @@ window.RANKINGS["br-serieC"] = {
     ],
   },
   2023: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2023 Campeonato Brasileiro Série C","lang":"en","at":"2026-10-09","n":20},
     clubs: [
       { id:"paysandu-br", revenue:9.31, reportType:"official_balance_sheet",
@@ -40,7 +40,7 @@ window.RANKINGS["br-serieC"] = {
     ],
   },
   2022: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2022 Campeonato Brasileiro Série C","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"remo-br", revenue:4.126, reportType:"official_balance_sheet",
@@ -49,7 +49,7 @@ window.RANKINGS["br-serieC"] = {
     ],
   },
   2021: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2021 Campeonato Brasileiro Série C","lang":"en","at":"2026-10-03","n":20},
     clubs: [
       { id:"paysandu-br", revenue:3.938, reportType:"official_balance_sheet",
@@ -64,7 +64,7 @@ window.RANKINGS["br-serieC"] = {
     ],
   },
   2020: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2020 Campeonato Brasileiro Série C","lang":"en","at":"2026-10-09","n":20},
     clubs: [
       { id:"criciuma-br", revenue:2.661, reportType:"official_balance_sheet",
@@ -77,7 +77,7 @@ window.RANKINGS["br-serieC"] = {
     ],
   },
   2019: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2019 Campeonato Brasileiro Série C","lang":"en","at":"2026-10-09","n":20},
     clubs: [
       { id:"remo-br", revenue:4.442, reportType:"official_balance_sheet",
@@ -87,7 +87,7 @@ window.RANKINGS["br-serieC"] = {
     ],
   },
   2015: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2015 Campeonato Brasileiro Série C","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"vilanova-br", revenue:1.765, reportType:"official_balance_sheet",

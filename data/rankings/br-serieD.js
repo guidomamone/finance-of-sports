@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["br-serieD"] = {
   2023: {
-    leagueSize: null,
+    leagueSize: 64,
     wiki: {"t":"2023 Campeonato Brasileiro Série D","lang":"en","at":"2026-10-09","n":64},
     clubs: [
       { id:"ferroviaria-br", revenue:7.759, reportType:"official_balance_sheet",
@@ -11,7 +11,7 @@ window.RANKINGS["br-serieD"] = {
     ],
   },
   2022: {
-    leagueSize: null,
+    leagueSize: 64,
     wiki: {"t":"2022 Campeonato Brasileiro Série D","lang":"en","at":"2026-10-09","n":64},
     clubs: [
       { id:"ferroviaria-br", revenue:3.548, reportType:"official_balance_sheet",
@@ -20,7 +20,7 @@ window.RANKINGS["br-serieD"] = {
     ],
   },
   2021: {
-    leagueSize: null,
+    leagueSize: 68,
     wiki: {"t":"2021 Campeonato Brasileiro Série D","lang":"en","at":"2026-10-09","n":68},
     clubs: [
       { id:"ferroviaria-br", revenue:3.217, reportType:"official_balance_sheet",
@@ -29,7 +29,7 @@ window.RANKINGS["br-serieD"] = {
     ],
   },
   2020: {
-    leagueSize: null,
+    leagueSize: 68,
     wiki: {"t":"2020 Campeonato Brasileiro Série D","lang":"en","at":"2026-10-03","n":68},
     clubs: [
       { id:"novorizontino-br", revenue:1.975, reportType:"official_balance_sheet",
@@ -38,7 +38,7 @@ window.RANKINGS["br-serieD"] = {
     ],
   },
   2019: {
-    leagueSize: null,
+    leagueSize: 68,
     wiki: {"t":"2019 Campeonato Brasileiro Série D","lang":"en","at":"2026-10-03","n":68},
     clubs: [
       { id:"novorizontino-br", revenue:3.034, reportType:"official_balance_sheet",
@@ -47,7 +47,7 @@ window.RANKINGS["br-serieD"] = {
     ],
   },
   2018: {
-    leagueSize: null,
+    leagueSize: 68,
     wiki: {"t":"2018 Campeonato Brasileiro Série D","lang":"en","at":"2026-10-03","n":68},
     clubs: [
       { id:"ferroviaria-br", revenue:3.102, reportType:"official_balance_sheet",

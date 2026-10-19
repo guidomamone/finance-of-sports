@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["gb-championship"] = {
   2025: {
-    leagueSize: null,
+    leagueSize: 24,
     wiki: {"t":"2024–25 EFL Championship","lang":"en","at":"2026-09-30","n":24},
     clubs: [
       { id:"leeds-gb", revenue:221.613, reportType:"official_balance_sheet",
@@ -17,7 +17,7 @@ window.RANKINGS["gb-championship"] = {
     ],
   },
   2024: {
-    leagueSize: null,
+    leagueSize: 24,
     wiki: {"t":"2023–24 EFL Championship","lang":"en","at":"2026-09-30","n":24},
     clubs: [
       { id:"leeds-gb", revenue:203.962, reportType:"official_balance_sheet",

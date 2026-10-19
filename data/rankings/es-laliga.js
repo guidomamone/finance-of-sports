@@ -50,7 +50,7 @@ window.RANKINGS["es-laliga"] = {
     ],
   },
   2024: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2023–24 La Liga","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"villarrealcf", revenue:137.395, reportType:"official_balance_sheet",
@@ -65,7 +65,7 @@ window.RANKINGS["es-laliga"] = {
     ],
   },
   2022: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2021–22 La Liga","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"osasuna-es", revenue:72.773, reportType:"official_balance_sheet",

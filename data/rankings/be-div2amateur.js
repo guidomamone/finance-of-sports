@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["be-div2amateur"] = {
   2023: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2022–23 Belgian Division 2","lang":"en","at":"2026-10-19","n":18},
     clubs: [
       { id:"lokerentemse-be", revenue:2.36, reportType:"official_balance_sheet",
@@ -11,7 +11,7 @@ window.RANKINGS["be-div2amateur"] = {
     ],
   },
   2019: {
-    leagueSize: null,
+    leagueSize: 48,
     wiki: {"t":"2018–19 Belgian Second Amateur Division","lang":"en","at":"2026-10-19","n":48},
     clubs: [
       { id:"patroeisden-be", revenue:0.413, reportType:"official_balance_sheet",

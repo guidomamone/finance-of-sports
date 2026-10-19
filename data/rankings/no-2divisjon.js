@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["no-2divisjon"] = {
   2018: {
-    leagueSize: null,
+    leagueSize: 14,
     wiki: {"t":"2018 Norwegian Second Division","lang":"en","at":"2026-10-19","n":14},
     clubs: [
       { id:"fredrikstad-no", revenue:2.636, reportType:"official_balance_sheet",

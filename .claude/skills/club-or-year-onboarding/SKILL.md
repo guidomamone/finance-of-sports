@@ -124,6 +124,10 @@ scratchpad con copia de seguridad de `Admin/` y se restaura.
 - `estado.mjs` mientras corre un lote muestra una foto a mitad de camino.
 - Los ensayos no llaman a ninguna API, pero reescriben el registro (`Admin/registros/transcripciones-estado.jsonl`) y la lista temporal de la
   corrida: que aparezcan en `git status` después de un ensayo no quiere decir que algo cambió de verdad.
+- **Compuerta de estadio y sponsor** (`estadio-sponsor.mjs`, la corre `cargar.mjs` antes de escribir un año): frena el alta si al ejercicio le
+  falta estadio o sponsor. Se completa a mano en `tools/contexto-manual.json`, con fuente. Alcanza el estadio, sin sponsor, en una liga amateur
+  (la del catálogo nombra "amateur") y en las segundas que figuran en `SOLO_ESTADIO` (hoy `nl-eerstedivisie`, `no-1divisjon`, `no-2divisjon`),
+  porque ahí no hay fuente del sponsor por temporada. La lista vigente está en `estadio-sponsor.mjs`, no la copies acá.
 - Los "Syntax Error" en la terminal son de poppler leyendo PDFs dañados: no son errores del pipeline.
 - Para esperar un proceso en segundo plano, usar su PID, no `pgrep -f` (se encuentra a sí mismo y no termina nunca).
 - Corridas largas: la Mac se duerme; usar `caffeinate -i`.

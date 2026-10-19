@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["gb-premierleague"] = {
   2025: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2024–25 Premier League","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"arsenal-gb", revenue:1038.61, reportType:"official_balance_sheet",
@@ -56,7 +56,7 @@ window.RANKINGS["gb-premierleague"] = {
     ],
   },
   2024: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2023–24 Premier League","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"mancity-gb", revenue:910.035, reportType:"official_balance_sheet",

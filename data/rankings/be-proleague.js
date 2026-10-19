@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["be-proleague"] = {
   2025: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2024–25 Belgian Pro League","lang":"en","at":"2026-10-18","n":16},
     clubs: [
       { id:"clubbrugge-be", revenue:180.728, reportType:"official_balance_sheet",
@@ -53,7 +53,7 @@ window.RANKINGS["be-proleague"] = {
     ],
   },
   2024: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2023–24 Belgian Pro League","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"ohleuven-be", revenue:33.693, reportType:"official_balance_sheet",
@@ -65,7 +65,7 @@ window.RANKINGS["be-proleague"] = {
     ],
   },
   2023: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2022–23 Belgian Pro League","lang":"en","at":"2026-10-19","n":18},
     clubs: [
       { id:"ohleuven-be", revenue:23.194, reportType:"official_balance_sheet",
@@ -74,7 +74,7 @@ window.RANKINGS["be-proleague"] = {
     ],
   },
   2022: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2021–22 Belgian First Division A","lang":"en","at":"2026-10-19","n":18},
     clubs: [
       { id:"beerschot-be", revenue:9.592, reportType:"official_balance_sheet",
@@ -83,7 +83,7 @@ window.RANKINGS["be-proleague"] = {
     ],
   },
   2021: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2020–21 Belgian First Division A","lang":"en","at":"2026-10-19","n":18},
     clubs: [
       { id:"ohleuven-be", revenue:13.546, reportType:"official_balance_sheet",

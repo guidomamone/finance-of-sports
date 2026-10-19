@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["gr-superleague2"] = {
   2025: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2024–25 Super League Greece 2","lang":"en","at":"2026-10-18","n":20},
     clubs: [
       { id:"aellarissa-gr", revenue:3.966, reportType:"official_balance_sheet",
@@ -14,7 +14,7 @@ window.RANKINGS["gr-superleague2"] = {
     ],
   },
   2024: {
-    leagueSize: null,
+    leagueSize: 24,
     wiki: {"t":"2023–24 Super League Greece 2","lang":"en","at":"2026-10-18","n":24},
     clubs: [
       { id:"levadiakos-gr", revenue:2.976, reportType:"official_balance_sheet",
@@ -26,7 +26,7 @@ window.RANKINGS["gr-superleague2"] = {
     ],
   },
   2023: {
-    leagueSize: null,
+    leagueSize: 30,
     wiki: {"t":"2022–23 Super League Greece 2","lang":"en","at":"2026-10-18","n":30},
     clubs: [
       { id:"aellarissa-gr", revenue:1.489, reportType:"official_balance_sheet",
@@ -41,7 +41,7 @@ window.RANKINGS["gr-superleague2"] = {
     ],
   },
   2022: {
-    leagueSize: null,
+    leagueSize: 34,
     wiki: {"t":"2021–22 Super League Greece 2","lang":"en","at":"2026-10-18","n":34},
     clubs: [
       { id:"aellarissa-gr", revenue:2.423, reportType:"official_balance_sheet",
@@ -57,7 +57,7 @@ window.RANKINGS["gr-superleague2"] = {
     ],
   },
   2021: {
-    leagueSize: null,
+    leagueSize: 12,
     wiki: {"t":"2020–21 Super League Greece 2","lang":"en","at":"2026-09-30","n":12},
     clubs: [
       { id:"levadiakos-gr", revenue:1.558, reportType:"official_balance_sheet",
@@ -66,7 +66,7 @@ window.RANKINGS["gr-superleague2"] = {
     ],
   },
   2020: {
-    leagueSize: null,
+    leagueSize: 12,
     wiki: {"t":"2019–20 Super League Greece 2","lang":"en","at":"2026-10-03","n":12},
     clubs: [
       { id:"levadiakos-gr", revenue:1.492, reportType:"official_balance_sheet",
@@ -75,7 +75,7 @@ window.RANKINGS["gr-superleague2"] = {
     ],
   },
   2019: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2018–19 Football League (Greece)","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"volosnfc-gr", revenue:0.513, reportType:"official_balance_sheet",
@@ -84,7 +84,7 @@ window.RANKINGS["gr-superleague2"] = {
     ],
   },
   2018: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2017–18 Football League (Greece)","lang":"en","at":"2026-09-30","n":18},
     clubs: [
       { id:"oficrete-gr", revenue:0.851, reportType:"official_balance_sheet",
@@ -93,7 +93,7 @@ window.RANKINGS["gr-superleague2"] = {
     ],
   },
   2016: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2015–16 Football League (Greece)","lang":"en","at":"2026-09-30","n":18},
     clubs: [
       { id:"aellarissa-gr", revenue:1.112, reportType:"official_balance_sheet",
