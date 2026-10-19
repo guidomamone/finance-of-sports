@@ -1,0 +1,190 @@
+{
+  "md": "Clubes/Países Bajos/SC Heerenveen/SC-Heerenveen-Jaarverslag-2024-2025.md",
+  "pdf": "Clubes/Países Bajos/SC Heerenveen/SC-Heerenveen-Jaarverslag-2024-2025.pdf",
+  "club": "sc-heerenveen",
+  "year": 2025,
+  "generatedAt": "2026-10-19T00:12:36.043Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Wedstrijdbaten",
+      "lado": "revenue",
+      "page": 35,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        4.867279
+      ],
+      "glosa": "Ingresos por días de partido"
+    },
+    {
+      "label": "Sponsoring",
+      "lado": "revenue",
+      "page": 35,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        9.101753
+      ],
+      "glosa": "Patrocinios"
+    },
+    {
+      "label": "Mediagelden",
+      "lado": "revenue",
+      "page": 35,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        6.469374
+      ],
+      "glosa": "Derechos audiovisuales"
+    },
+    {
+      "label": "Food & Beverage",
+      "lado": "revenue",
+      "page": 35,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        0.531163
+      ],
+      "glosa": "Alimentos y bebidas"
+    },
+    {
+      "label": "Merchandise",
+      "lado": "revenue",
+      "page": 35,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        0.776585
+      ],
+      "glosa": "Merchandising"
+    },
+    {
+      "label": "Overige opbrengsten",
+      "lado": "revenue",
+      "page": 35,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        2.513826
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Netto-opbrengst vergoedingssommen",
+      "lado": "revenue",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        7.555866
+      ],
+      "glosa": "Resultado neto por traspasos"
+    },
+    {
+      "label": "Resultaat deelnemingen",
+      "lado": "revenue",
+      "page": 21,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        0.203041
+      ],
+      "glosa": "Resultado de participaciones"
+    },
+    {
+      "label": "Kostprijs",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        1.406246
+      ],
+      "glosa": "Coste de las ventas"
+    },
+    {
+      "label": "Salariskosten",
+      "lado": "expense",
+      "page": 35,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        10.939527
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Pensioenlasten",
+      "lado": "expense",
+      "page": 35,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        0.245383
+      ],
+      "glosa": "Gastos por pensiones"
+    },
+    {
+      "label": "Sociale lasten",
+      "lado": "expense",
+      "page": 35,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        1.534143
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Overige kosten",
+      "lado": "expense",
+      "page": 35,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        1.676125
+      ],
+      "glosa": "Otros costes"
+    },
+    {
+      "label": "Doorberekende personeelskosten",
+      "lado": "expense",
+      "page": 35,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        0.19887
+      ],
+      "glosa": "Gastos de personal repercutidos"
+    },
+    {
+      "label": "Afschrijvingskosten vergoedingssommen",
+      "lado": "expense",
+      "page": 8,
+      "section": "nota que desglosa \"Afschrijvingen op immateriële vaste activa\"",
+      "values": [
+        3.268827
+      ],
+      "glosa": "Amortización de derechos de adquisición de jugadores"
+    },
+    {
+      "label": "Afwaardering boekwaarde vertrokken spelers",
+      "lado": "expense",
+      "page": 8,
+      "section": "nota que desglosa \"Afschrijvingen op immateriële vaste activa\"",
+      "values": [
+        0.37125
+      ],
+      "glosa": "Deterioro del valor contable de jugadores salientes"
+    },
+    {
+      "label": "Afschrijvingen op materiële vaste activa",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        0.685457
+      ],
+      "glosa": "Amortización del inmovilizado material"
+    },
+    {
+      "label": "Overige bedrijfskosten",
+      "lado": "expense",
+      "page": 21,
+      "section": "estado",
+      "values": [
+        10.279559
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

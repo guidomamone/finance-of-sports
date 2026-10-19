@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Países Bajos/ADO Den Haag/jaarrekening2024-25.pdf",
  "md": "Clubes/Países Bajos/ADO Den Haag/jaarrekening2024-25.md",
- "generado": "2026-10-18T23:22:04.618Z",
- "estado": "cola",
+ "generado": "2026-10-19T00:12:35.240Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "ea65e37"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -51,8 +49,7 @@
  "notas": [
   "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
   "la lectura base no cerraba; cerró con la lectura 4",
-  "duda de extraer que no afecta la carga: El estado (L448) y la nota (L540) difieren en 50.000 para el año anterior; los componentes de L536-L539 suman 10.772.210 pero el total de gastos L451 cuadra con 10.722.210.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: El estado (L448) y la nota (L540) difieren en 50.000 para el año anterior; los componentes de L536-L539 suman 10.772.210 pero el total de gastos L451 cuadra con 10.722.210."
  ],
  "reintentar": null,
  "reintentado": false,

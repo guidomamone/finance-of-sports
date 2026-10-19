@@ -1,0 +1,384 @@
+{
+ "pdf": "Clubes/Países Bajos/SC Cambuur/Jaarverslag-SC-Cambuur-2024-2025.pdf",
+ "generado": "2026-10-19T00:16:03.962Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (sccambuur-nl)"
+  }
+ ],
+ "avisos": [
+  "perímetro: consolidado (ajuste manual del documento, 2026-10-18: El documento (publicación para la licencia KNVB F.04) trae SOLO el balance y la cuenta de resultados consolidados de SC Cambuur-Leeuwarden B.V.; no hay estados individuales ni lista de controladas, así que el consolidado es la única opción. Resultado deelnemingen y aandeel derden son 0, lo que sugiere que el perímetro es prácticamente el club mismo (no verificable en este documento). (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "sccambuur-nl",
+  "year": 2025,
+  "cierre": "2025-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Netto-omzet",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 10.544,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Vergoedingssommen",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.075,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Kostprijs van de omzet",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.181,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Lonen en salarissen",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -7.364,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.491,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 1,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige bedrijfskosten",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -5.579,
+    "disclosureLevel": "aggregated",
+    "_pag": 11,
+    "_escalon": 2,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2025-06-30",
+   "sourceId": "sccambuur-nl-jaarverslag-sc-cambuur-2024-2025",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.531,
+   "tax": -0.068,
+   "extraRows": [
+    {
+     "label": "Financiële baten",
+     "value": 0.011
+    },
+    {
+     "label": "Financiële lasten",
+     "value": -0.542
+    },
+    {
+     "label": "Belastingen",
+     "value": -0.068
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Netto-omzet",
+     "lado": "revenue",
+     "importe": 10.544,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 10.619,
+   "officialTotalExpenses": 13.615,
+   "officialPAT": -3.595
+  },
+  "source": {
+   "id": "sccambuur-nl-jaarverslag-sc-cambuur-2024-2025",
+   "clubId": "sccambuur-nl",
+   "title": "SC Cambuur-Leeuwarden B.V. — Jaarverslag-SC-Cambuur-2024-2025 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Países Bajos/SC Cambuur/Jaarverslag-SC-Cambuur-2024-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
+ "md": "Clubes/Países Bajos/SC Cambuur/Jaarverslag-SC-Cambuur-2024-2025.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-06-30",
+  "anual": "temporada",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-18): balance consolidado 'per 30 juni 2025'"
+ },
+ "clubId": "sccambuur-nl",
+ "year": 2025,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/SC Cambuur/Jaarverslag-SC-Cambuur-2024-2025.pdf",
+   "campo": "cierre",
+   "valor": "2025-06-30",
+   "linea": null,
+   "motivo": "balance consolidado 'per 30 juni 2025'",
+   "evidencia": ".md L21, L321 y L329",
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Países Bajos/SC Cambuur/Jaarverslag-SC-Cambuur-2024-2025.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "El documento (publicación para la licencia KNVB F.04) trae SOLO el balance y la cuenta de resultados consolidados de SC Cambuur-Leeuwarden B.V.; no hay estados individuales ni lista de controladas, así que el consolidado es la única opción. Resultado deelnemingen y aandeel derden son 0, lo que sugiere que el perímetro es prácticamente el club mismo (no verificable en este documento). (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": "Geconsolideerde winst-en-verliesrekening over 2024-2025 (L372); Bovenstaande gegevens zijn ontleend uit de jaarrekening ... van SC Cambuur-Leeuwarden B.V. (L396-397)",
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "seleccion": {
+  "filas": 9,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Netto-omzet",
+   "page": 11,
+   "native": 10.544,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 10.544,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 10.544
+  },
+  {
+   "label": "Vergoedingssommen",
+   "page": 11,
+   "native": 0.075,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.075,
+   "cat": "player_sales",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.075
+  },
+  {
+   "label": "Kostprijs van de omzet",
+   "page": 11,
+   "native": 0.181,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.181,
+   "cat": "other_expenses",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.181
+  },
+  {
+   "label": "Lonen en salarissen",
+   "page": 11,
+   "native": 7.364,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 7.364,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -7.364
+  },
+  {
+   "label": "Afschrijvingen",
+   "page": 11,
+   "native": 0.491,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.491,
+   "cat": "depreciation",
+   "conf": 0.9,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.491
+  },
+  {
+   "label": "Overige bedrijfskosten",
+   "page": 11,
+   "native": 5.579,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.579,
+   "cat": "other_expenses",
+   "conf": 0.9,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5.579
+  },
+  {
+   "label": "Financiële baten",
+   "page": null,
+   "native": 0.011,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Financiële lasten",
+   "page": null,
+   "native": -0.542,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Belastingen",
+   "page": null,
+   "native": -0.068,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 10.619,
+  "expSum": -13.615,
+  "officialTotalRevenue": 10.619,
+  "officialTotalExpenses": 13.615,
+  "officialPAT": -3.595,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -3.595,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 10.619
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 13.615
+  }
+ },
+ "liga": {
+  "valor": "nl-eerstedivisie",
+  "fuente": "roster cacheado de \"2024–25 Eerste Divisie\" (tools/club-league-reference/nl.json), coincidencia única por palabras \"Cambuur\" = \"SC Cambuur\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): balance consolidado 'per 30 juni 2025'",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-06-30",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): balance consolidado 'per 30 juni 2025')",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-18)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Países Bajos (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2025-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2025-06-30 = 0.8532 (Cierre BCE al 30/6/2025 (1 EUR = 1,172 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "sccambuur-nl-jaarverslag-sc-cambuur-2024-2025",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "nl-eerstedivisie",
+   "fuente": "roster cacheado de \"2024–25 Eerste Divisie\" (tools/club-league-reference/nl.json), coincidencia única por palabras \"Cambuur\" = \"SC Cambuur\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 2,
+  "lineasGasto": 4,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Países Bajos/FC Den Bosch/wf-2024-2025-c4a5aec0.pdf",
  "md": "Clubes/Países Bajos/FC Den Bosch/wf-2024-2025-c4a5aec0.md",
- "generado": "2026-10-18T23:22:04.671Z",
- "estado": "cola",
+ "generado": "2026-10-19T00:12:35.361Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "ae9fb19"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -50,8 +48,7 @@
  ],
  "notas": [
   "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
-  "la lectura base no cerraba; cerró con la lectura 4",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "la lectura base no cerraba; cerró con la lectura 4"
  ],
  "reintentar": null,
  "reintentado": false,

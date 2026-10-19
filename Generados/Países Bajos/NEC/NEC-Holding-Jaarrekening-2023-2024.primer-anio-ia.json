@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Países Bajos/NEC/NEC-Holding-Jaarrekening-2023-2024.md",
+ "clave": "e1169183706e35deca04fed92734adc2538a33d5",
+ "generado": "2026-10-19T00:12:58.542Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "No encontré problemas. Cada renglón del estado de 2023/2024 está reemplazado por sus partes de nota, y estas suman exactamente su importe: netto-omzet (L441) 18,674093; personeelskosten (L443) 13,716715; afschrijvingen (L444) 0,710756; overige bedrijfskosten (L445) 9,124647; resultaat vergoedingssommen (L448) 3,744788 − 0,620306 = 3,124482. La amortización de vergoedingssommen (0,620306) aparece en afschrijvingen y se anula con su reasignación negativa, así que solo se computa una vez. Los financieros y los impuestos (en 0) están cargados directamente del estado. No se cargó ningún subtotal."
+ }
+}

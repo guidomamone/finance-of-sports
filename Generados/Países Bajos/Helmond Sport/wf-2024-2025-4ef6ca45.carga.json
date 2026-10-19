@@ -1,18 +1,10 @@
 {
  "pdf": "Clubes/Países Bajos/Helmond Sport/wf-2024-2025-4ef6ca45.pdf",
- "generado": "2026-10-18T23:25:48.969Z",
+ "generado": "2026-10-19T00:16:02.476Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (helmondsport-nl)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Afschrijvingen\" -> depreciation 0.6; \"Overige kosten\" -> other_expenses 0.75"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Salarios del plantel. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
   }
  ],
  "avisos": [
@@ -52,19 +44,19 @@
     "amountNative": -0.056242,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Overige kosten",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "lump_football_operations_expense",
     "amountNative": -7.426289,
     "disclosureLevel": "aggregated",
     "_pag": 1,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -93,6 +85,12 @@
      "lado": "revenue",
      "importe": 5.135616,
      "motivo": "el documento no desglosa este renglón"
+    },
+    {
+     "renglon": "Overige kosten",
+     "lado": "expense",
+     "importe": 7.426289,
+     "motivo": "Claude 2026-10-18 (subagente Sonnet): 'Overige kosten' 7.426.289 NO es un 'otros gastos' comun: el estado reducido de la KvK (Omzet, Afschrijvingen, Overige kosten) lo usa para TODOS los costos operativos salvo la depreciacion (5.135.616 - 56.242 - 7.426.289 = -2.346.915), o sea que incluye sueldos del plantel, staff, estadio y administracion, sin desglose. Dejarlo en other_expenses haria desaparecer los sueldos del club (wagesToTurnover en 0). Corresponde el bolsón lump_football_operations_expense (monto real que la fuente no separa; no se inventa un desglose). Alternativa si Guido prefiere no usar el bolsón: other_expenses, pero con el rawLabel 'Overige kosten' igual. Es una decision de criterio (la regla pide consultarlo a Guido cuando el documento no permite categorizar como Boca). Entidad: Stichting Helmond Sport. [Overige kosten € 7.426.289 (L31); Omzet € 5.135.616 (L29); Bedrijfsr"
     }
    ],
    "grossDebt": null,
@@ -107,7 +105,7 @@
    "title": "Helmond Sport — wf-2024-2025-4ef6ca45 (ejercicio 2025)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Países Bajos/Helmond Sport/wf-2024-2025-4ef6ca45.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Países Bajos/Helmond Sport/wf-2024-2025-4ef6ca45.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Países Bajos/Helmond Sport/wf-2024-2025-4ef6ca45.md",
@@ -167,11 +165,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.056242,
    "cat": "depreciation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Afschrijvingen 56.242 es la depreciacion: el estado reducido imprime aparte 'Resultaat vergoedingssommen' (neto de traspasos, que ya incluye la amortizacion de derechos), asi que 'Afschrijvingen' no es amortizacion de jugadores. Consistente con los activos: materiales 161.412 (balance). Cuenta: 5.135.616 - 56.242 - 7.426.289 = -2.346.915 = Bedrijfsresultaat. [Afschrijvingen € 56.242 (L30); Bedrijfsresultaat € -2.346.915 (L32); Materiële vaste activa € 161.412 (L10)]",
    "destino": "expense",
    "amountNative": -0.056242
   },
@@ -182,12 +180,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 7.426289,
-   "cat": "other_expenses",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Overige kosten' 7.426.289 NO es un 'otros gastos' comun: el estado reducido de la KvK (Omzet, Afschrijvingen, Overige kosten) lo usa para TODOS los costos operativos salvo la depreciacion (5.135.616 - 56.242 - 7.426.289 = -2.346.915), o sea que incluye sueldos del plantel, staff, estadio y administracion, sin desglose. Dejarlo en other_expenses haria desaparecer los sueldos del club (wagesToTurnover en 0). Corresponde el bolsón lump_football_operations_expense (monto real que la fuente no separa; no se inventa un desglose). Alternativa si Guido prefiere no usar el bolsón: other_expenses, pero con el rawLabel 'Overige kosten' igual. Es una decision de criterio (la regla pide consultarlo a Guido cuando el documento no permite categorizar como Boca). Entidad: Stichting Helmond Sport. [Overige kosten € 7.426.289 (L31); Omzet € 5.135.616 (L29); Bedrijfsr",
    "destino": "expense",
    "amountNative": -7.426289
   },
@@ -212,12 +210,6 @@
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
    "destino": "tax"
-  }
- ],
- "reintentar": [
-  {
-   "categoria": "Salarios del plantel",
-   "lado": "gasto"
   }
  ],
  "signos": {
@@ -304,7 +296,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 1,
   "lineasIngreso": 2,
   "lineasGasto": 2,
   "metaFilas": 2,

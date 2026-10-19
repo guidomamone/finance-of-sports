@@ -1,0 +1,260 @@
+{
+ "md": "Clubes/Países Bajos/Sparta Rotterdam/wf-2023-2024-7bc9c6f8.md",
+ "generatedAt": "2026-10-19T00:15:02.373Z",
+ "rubrosHuella": "136505e684d20e0f3271c7e79ca93e7e74195ea9",
+ "rubros": [
+  {
+   "label": "Resultaat vergoedingssommen",
+   "lado": "revenue",
+   "page": 40,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "Horecakosten",
+   "lado": "expense",
+   "page": 40,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "other_expenses",
+     0.5
+    ],
+    [
+     "match_organisation_expense",
+     0.43
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "Overige lasten uit hoofde van personeelsbeloningen",
+   "lado": "expense",
+   "page": 66,
+   "section": "nota que desglosa \"Personeelskosten\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.5
+    ],
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "wages_squad",
+     0.1
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Verkoopkosten",
+   "lado": "expense",
+   "page": 40,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.74
+    ],
+    [
+     "other_expenses",
+     0.15000000000000002
+    ],
+    [
+     "lump_football_operations_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Huisvestingskosten",
+   "lado": "expense",
+   "page": 40,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1003
+  },
+  {
+   "label": "Wedstrijd- en trainingskosten",
+   "lado": "expense",
+   "page": 40,
+   "section": "estado",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "Netto-omzet",
+   "lado": "revenue",
+   "page": 40,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1099
+  },
+  {
+   "label": "Lonen",
+   "lado": "expense",
+   "page": 66,
+   "section": "nota que desglosa \"Personeelskosten\"",
+   "choice": "wages_squad",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "wages_squad",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.29
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Afschrijving vergoedingssommen",
+   "lado": "expense",
+   "page": 40,
+   "section": "estado",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1087
+  },
+  {
+   "label": "Algemene kosten",
+   "lado": "expense",
+   "page": 40,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Afschrijving op materiële vaste activa",
+   "lado": "expense",
+   "page": 40,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1063
+  }
+ ]
+}

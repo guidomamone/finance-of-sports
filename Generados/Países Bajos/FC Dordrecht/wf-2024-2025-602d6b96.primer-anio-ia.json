@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Países Bajos/FC Dordrecht/wf-2024-2025-602d6b96.md",
+ "clave": "70f9a9ee57162ff18081195d682443621d831af9",
+ "generado": "2026-10-19T00:12:40.211Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Se cargan todos los renglones del ejercicio 2024/25 sin incluir subtotales (Som der kosten, Bedrijfsresultaat, Resultaat voor belastingen, Nettoresultaat). Verificación: 4.680373 + 1.156388 - 5.575229 - 0.044471 = 0.217061, igual al resultado neto impreso. Algunos importes figuran con puntos en lugar de comas (L186, L191), pero se interpretaron bien."
+ }
+}

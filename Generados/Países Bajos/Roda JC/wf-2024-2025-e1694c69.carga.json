@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Países Bajos/Roda JC/wf-2024-2025-e1694c69.pdf",
- "generado": "2026-10-18T23:25:49.352Z",
+ "generado": "2026-10-19T00:16:03.882Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (rodajc-nl)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Personeelskosten\" -> wages_squad 0.75; \"Afschrijvingen\" -> depreciation 0.6"
   }
  ],
  "avisos": [
@@ -49,9 +45,9 @@
     "amountNative": -5.316416,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Afschrijvingen",
@@ -59,9 +55,9 @@
     "amountNative": -0.11552,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Overige bedrijfskosten",
@@ -114,7 +110,7 @@
    "title": "Roda JC — wf-2024-2025-e1694c69 (ejercicio 2025)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Países Bajos/Roda JC/wf-2024-2025-e1694c69.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Países Bajos/Roda JC/wf-2024-2025-e1694c69.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
   }
  },
  "md": "Clubes/Países Bajos/Roda JC/wf-2024-2025-e1694c69.md",
@@ -185,11 +181,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 5.316416,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Personeelskosten 5.316.416 es el renglon unico de personal del estado consolidado (pag. 14) y el documento no separa plantel de no plantel: el renglon entero va a wages_squad. Cuenta: 7.877.577 - 9.123.014 (5.316.416 + 115.520 + 3.691.078) = -1.245.437 = Bedrijfsresultaat voor resultaat vergoedingssommen. [Personeelskosten 5.316.416 (L436); Bedrijfsresultaat voor resultaat vergoedingssommen -1.245.437 (L440)]",
    "destino": "expense",
    "amountNative": -5.316416
   },
@@ -201,11 +197,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.11552,
    "cat": "depreciation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Afschrijvingen 115.520 es depreciacion de activos materiales: el 'Resultaat vergoedingssommen' 442.997 va aparte (neto de traspasos incluida la amortizacion de derechos). Se corrobora en el flujo de caja: 'Afschrijvingen 115.520' se suma de vuelta al Bedrijfsresultaat voor resultaat vergoedingssommen, y los activos materiales son 685.670 (compra de LED-boarding 529.713 en el año). [Afschrijvingen 115.520 (L437); Resultaat vergoedingssommen 442.997 (L441); Afschrijvingen 115.520 (L458)]",
    "destino": "expense",
    "amountNative": -0.11552
   },
@@ -331,7 +327,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 2,
   "lineasGasto": 3,
   "metaFilas": 2,

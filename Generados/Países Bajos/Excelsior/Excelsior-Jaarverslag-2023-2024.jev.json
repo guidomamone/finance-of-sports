@@ -1,0 +1,168 @@
+{
+ "md": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2023-2024.md",
+ "generatedAt": "2026-10-19T00:14:54.586Z",
+ "rubrosHuella": "18ef75ff80349d5c4b2a83ef20f6d84b3c25e53a",
+ "rubros": [
+  {
+   "label": "netto-omzet",
+   "lado": "revenue",
+   "page": 9,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1096
+  },
+  {
+   "label": "overige bedrijfskosten",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "admin_general_expense",
+     0.21
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "pensioenen",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "wages_squad",
+     0.9
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 939
+  },
+  {
+   "label": "resultaat deelneming",
+   "lado": "revenue",
+   "page": 9,
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+   "choice": "competition_bonus",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "competition_bonus",
+     0.62
+    ],
+    [
+     "other_income",
+     0.37
+    ],
+    [
+     "player_sales",
+     0.01
+    ]
+   ],
+   "tokens": 1082
+  },
+  {
+   "label": "lonen en salarissen",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "sociale lasten",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "wages_squad",
+     0.96
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 997
+  },
+  {
+   "label": "afschrijving vaste activa",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "depreciation",
+     0.99
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1046
+  }
+ ]
+}

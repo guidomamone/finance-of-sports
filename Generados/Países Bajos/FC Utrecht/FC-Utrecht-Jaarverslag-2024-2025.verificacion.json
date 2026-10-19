@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Países Bajos/FC Utrecht/FC-Utrecht-Jaarverslag-2024-2025.pdf",
  "md": "Clubes/Países Bajos/FC Utrecht/FC-Utrecht-Jaarverslag-2024-2025.md",
- "generado": "2026-10-18T23:22:04.777Z",
- "estado": "cola",
+ "generado": "2026-10-19T00:12:35.770Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -12,11 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "f7de364",
-  "f7de364",
-  "0cd57ea"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -54,7 +50,8 @@
   "escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)",
   "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
   "la lectura base no cerraba; cerró con la lectura 4",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en FC-Utrecht-Jaarverslag-2024-2025.pdf",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en FC-Utrecht-Jaarverslag-2024-2025.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

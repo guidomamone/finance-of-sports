@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Países Bajos/FC Eindhoven/wf-2024-2025-a6019b8e.pdf",
  "md": "Clubes/Países Bajos/FC Eindhoven/wf-2024-2025-a6019b8e.md",
- "generado": "2026-10-18T23:22:04.692Z",
+ "generado": "2026-10-19T00:12:35.407Z",
  "estado": "ok",
  "clubId": null,
  "year": 2025,
@@ -61,8 +61,7 @@
   "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Afschrijvingen\"): ¿Se trata 'Materië le vaste activa' (L850, 178.098) como subtotal y se cargan como detalle de Afschrijvingen solo L856-L857?",
-  "duda de extraer que no afecta la carga: L852 y L853 suman cero (L854) y la amortización se reasigna a Resultaat vergoedingssommen (L876); no altera el total.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L852 y L853 suman cero (L854) y la amortización se reasigna a Resultaat vergoedingssommen (L876); no altera el total."
  ],
  "reintentar": null,
  "reintentado": false,

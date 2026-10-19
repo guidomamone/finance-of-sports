@@ -1,0 +1,324 @@
+{
+ "pdf": "Clubes/Países Bajos/NEC/NEC-Holding-Jaarrekening-2023-2024.pdf",
+ "md": "Clubes/Países Bajos/NEC/NEC-Holding-Jaarrekening-2023-2024.md",
+ "generado": "2026-10-19T00:13:16.673Z",
+ "estado": "ok",
+ "clubId": null,
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/NEC/NEC-Holding-Jaarrekening-2023-2024.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "La que presenta es la holding N.E.C. Holding B.V.; el fútbol está en las controladas Nijmegen Eendracht Combinatie B.V. (club profesional), Voetbalacademie N.E.C. B.V. (fútbol base) y Exploitatie-Maatschappij De Goffert B.V. (explotación del estadio y horeca, tras fusión con N.E.C. Horeca). La enkelvoudige tiene solo una winst-en-verliesrekening abreviada (art. 2:402 BW). (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": "De activiteiten van N.E.C. Holding B.V. ... en haar groepsmaatschappijen bestaan voornamelijk uit het exploiteren van een betaald voetbalorganisatie (L514-516); Nijmegen Eendracht Combinatie B.V. 100,00 Ja / Voetbalacademie N.E.C. B.V. 100,00 Ja / Exploitatie-Maatschappij De Goffert B.V. 100,00 Ja (",
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Ne o-omzet\" 18.674093 cierra; además se suman 2 línea(s) fuera de ese total (3.124482)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "23.552118 = 23.552118",
+   "suma": 23.552118,
+   "impreso": 23.552118
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 3.9968028886505635e-15
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Lonen en salarissen\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 21.798575,
+  "gastos": 23.552118,
+  "financiero": -0.074353,
+  "impuesto": 0,
+  "resultadoImpreso": -1.827896,
+  "resultadoParaCargar": -1.827896,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Wedstrijdbaten",
+   "lado": "ingreso",
+   "M": 4.733426,
+   "pagina": 35,
+   "linea": 1340,
+   "origen": "nota que desglosa \"Ne o-omzet\""
+  },
+  {
+   "etiqueta": "Sponsoring",
+   "lado": "ingreso",
+   "M": 6.363533,
+   "pagina": 35,
+   "linea": 1341,
+   "origen": "nota que desglosa \"Ne o-omzet\""
+  },
+  {
+   "etiqueta": "Media gerelateerde baten",
+   "lado": "ingreso",
+   "M": 2.787462,
+   "pagina": 35,
+   "linea": 1342,
+   "origen": "nota que desglosa \"Ne o-omzet\""
+  },
+  {
+   "etiqueta": "Subsidies",
+   "lado": "ingreso",
+   "M": 0.171847,
+   "pagina": 35,
+   "linea": 1343,
+   "origen": "nota que desglosa \"Ne o-omzet\""
+  },
+  {
+   "etiqueta": "Merchandise",
+   "lado": "ingreso",
+   "M": 0.937031,
+   "pagina": 35,
+   "linea": 1344,
+   "origen": "nota que desglosa \"Ne o-omzet\""
+  },
+  {
+   "etiqueta": "Horeca",
+   "lado": "ingreso",
+   "M": 1.446526,
+   "pagina": 35,
+   "linea": 1345,
+   "origen": "nota que desglosa \"Ne o-omzet\""
+  },
+  {
+   "etiqueta": "Prijzengeld",
+   "lado": "ingreso",
+   "M": 1.431144,
+   "pagina": 35,
+   "linea": 1346,
+   "origen": "nota que desglosa \"Ne o-omzet\""
+  },
+  {
+   "etiqueta": "Overige baten",
+   "lado": "ingreso",
+   "M": 0.803124,
+   "pagina": 35,
+   "linea": 1347,
+   "origen": "nota que desglosa \"Ne o-omzet\""
+  },
+  {
+   "etiqueta": "Vergoedingssommen",
+   "lado": "ingreso",
+   "M": 3.744788,
+   "pagina": 37,
+   "linea": 1422,
+   "origen": "nota que desglosa \"Resultaat vergoedingssommen\""
+  },
+  {
+   "etiqueta": "Afschrijving vergoedingssommen",
+   "lado": "gasto",
+   "M": 0.620306,
+   "pagina": 37,
+   "linea": 1423,
+   "origen": "nota que desglosa \"Resultaat vergoedingssommen\""
+  },
+  {
+   "etiqueta": "Lonen en salarissen",
+   "lado": "gasto",
+   "M": 11.289577,
+   "pagina": 35,
+   "linea": 1350,
+   "origen": "nota que desglosa \"Personeelskosten\""
+  },
+  {
+   "etiqueta": "Sociale lasten",
+   "lado": "gasto",
+   "M": 0.939894,
+   "pagina": 35,
+   "linea": 1351,
+   "origen": "nota que desglosa \"Personeelskosten\""
+  },
+  {
+   "etiqueta": "Pensioenlasten",
+   "lado": "gasto",
+   "M": 0.10972,
+   "pagina": 35,
+   "linea": 1352,
+   "origen": "nota que desglosa \"Personeelskosten\""
+  },
+  {
+   "etiqueta": "Overige personeelskosten",
+   "lado": "gasto",
+   "M": 1.377524,
+   "pagina": 35,
+   "linea": 1353,
+   "origen": "nota que desglosa \"Personeelskosten\""
+  },
+  {
+   "etiqueta": "Kosten van ontwikkeling",
+   "lado": "gasto",
+   "M": 0.024811,
+   "pagina": 36,
+   "linea": 1397,
+   "origen": "nota que desglosa \"Afschrijvingen\" > desglose de \"Immateriële vaste ac va\""
+  },
+  {
+   "etiqueta": "Vergoedingssommen",
+   "lado": "gasto",
+   "M": 0.620306,
+   "pagina": 36,
+   "linea": 1398,
+   "origen": "nota que desglosa \"Afschrijvingen\" > desglose de \"Immateriële vaste ac va\""
+  },
+  {
+   "etiqueta": "Alloca e amor sa e vergoedingssommen",
+   "lado": "gasto",
+   "M": -0.620306,
+   "pagina": 36,
+   "linea": 1399,
+   "origen": "nota que desglosa \"Afschrijvingen\" > desglose de \"Immateriële vaste ac va\""
+  },
+  {
+   "etiqueta": "Bedrijfsgebouwen en -terreinen",
+   "lado": "gasto",
+   "M": 0.219065,
+   "pagina": 36,
+   "linea": 1402,
+   "origen": "nota que desglosa \"Afschrijvingen\" > desglose de \"Materiële vaste ac va\""
+  },
+  {
+   "etiqueta": "Machines en installa es",
+   "lado": "gasto",
+   "M": 0.008747,
+   "pagina": 36,
+   "linea": 1403,
+   "origen": "nota que desglosa \"Afschrijvingen\" > desglose de \"Materiële vaste ac va\""
+  },
+  {
+   "etiqueta": "Andere vaste bedrijfsmiddelen",
+   "lado": "gasto",
+   "M": 0.458133,
+   "pagina": 36,
+   "linea": 1404,
+   "origen": "nota que desglosa \"Afschrijvingen\" > desglose de \"Materiële vaste ac va\""
+  },
+  {
+   "etiqueta": "Huisves ngskosten",
+   "lado": "gasto",
+   "M": 1.488336,
+   "pagina": 36,
+   "linea": 1407,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\""
+  },
+  {
+   "etiqueta": "Wedstrijd- en trainingskosten",
+   "lado": "gasto",
+   "M": 1.763309,
+   "pagina": 36,
+   "linea": 1408,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\""
+  },
+  {
+   "etiqueta": "Verkoopkosten",
+   "lado": "gasto",
+   "M": 4.686142,
+   "pagina": 36,
+   "linea": 1409,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\""
+  },
+  {
+   "etiqueta": "Algemene kosten",
+   "lado": "gasto",
+   "M": 1.18686,
+   "pagina": 36,
+   "linea": 1410,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Financiële baten en lasten",
+   "M": -0.074353,
+   "linea": 449
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belas ngen",
+   "M": null,
+   "linea": 451
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "e1169183706e35deca04fed92734adc2538a33d5",
+  "rango": [
+   438,
+   455
+  ],
+  "lineasCargadas": [
+   1340,
+   1341,
+   1342,
+   1343,
+   1344,
+   1345,
+   1346,
+   1347,
+   1422,
+   1423,
+   1350,
+   1351,
+   1352,
+   1353,
+   1397,
+   1398,
+   1399,
+   1402,
+   1403,
+   1404,
+   1407,
+   1408,
+   1409,
+   1410,
+   449,
+   451
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 438 a 455 del .md):\nL439: | | Nota | 2023/2024 € | 2023/2024 € | 2022/2023 € | 2022/2023 € |\nL440: | --- | --- | --- | --- | --- | --- |\nL441: | Ne o-omzet | (11,12) | | 18.674.093 | | 14.077.430 |\nL442: | **Kosten** | | | | | |\nL443: | Personeelskosten | (13) | 13.716.715 | | 11.612.511 | |\nL444: | Afschrijvingen | (14) | 710.756 | | 499.561 | |\nL445: | Overige bedrijfskosten | (15) | 9.124.647 | | 5.784.917 | |\nL446: | | | | 23.552.118 | | 17.896.989 |\nL447: | Bedrijfsresultaat voor resultaat vergoedingssommen | | | -4.878.025 | | -3.819.559 |\nL448: | Resultaat vergoedingssommen | (16) | | 3.124.482 | | 2.074.626 |\nL449: | Financiële baten en lasten | (17) | | -74.353 | | -68.006 |\nL450: | Resultaat voor belas ngen | | | -1.827.896 | | -1.812.939 |\nL451: | Belas ngen | | | - | | - |\nL452: | Resultaat na belas ngen | | | -1.827.896 | | -1.812.939 |\nL454: - 13 -\n\nLO QUE SE CARGA:\n- ingreso · \"Wedstrijdbaten\" · 4.733426 · L1340 (de una nota)\n- ingreso · \"Sponsoring\" · 6.363533 · L1341 (de una nota)\n- ingreso · \"Media gerelateerde baten\" · 2.787462 · L1342 (de una nota)\n- ingreso · \"Subsidies\" · 0.171847 · L1343 (de una nota)\n- ingreso · \"Merchandise\" · 0.937031 · L1344 (de una nota)\n- ingreso · \"Horeca\" · 1.446526 · L1345 (de una nota)\n- ingreso · \"Prijzengeld\" · 1.431144 · L1346 (de una nota)\n- ingreso · \"Overige baten\" · 0.803124 · L1347 (de una nota)\n- ingreso · \"Vergoedingssommen\" · 3.744788 · L1422 (de una nota)\n- gasto · \"Afschrijving vergoedingssommen\" · 0.620306 · L1423 (de una nota)\n- gasto · \"Lonen en salarissen\" · 11.289577 · L1350 (de una nota)\n- gasto · \"Sociale lasten\" · 0.939894 · L1351 (de una nota)\n- gasto · \"Pensioenlasten\" · 0.10972 · L1352 (de una nota)\n- gasto · \"Overige personeelskosten\" · 1.377524 · L1353 (de una nota)\n- gasto · \"Kosten van ontwikkeling\" · 0.024811 · L1397 (de una nota)\n- gasto · \"Vergoedingssommen\" · 0.620306 · L1398 (de una nota)\n- gasto · \"Alloca e amor sa e vergoedingssommen\" · -0.620306 · L1399 (de una nota)\n- gasto · \"Bedrijfsgebouwen en -terreinen\" · 0.219065 · L1402 (de una nota)\n- gasto · \"Machines en installa es\" · 0.008747 · L1403 (de una nota)\n- gasto · \"Andere vaste bedrijfsmiddelen\" · 0.458133 · L1404 (de una nota)\n- gasto · \"Huisves ngskosten\" · 1.488336 · L1407 (de una nota)\n- gasto · \"Wedstrijd- en trainingskosten\" · 1.763309 · L1408 (de una nota)\n- gasto · \"Verkoopkosten\" · 4.686142 · L1409 (de una nota)\n- gasto · \"Algemene kosten\" · 1.18686 · L1410 (de una nota)\n- financiero · \"Financiële baten en lasten\" · -0.074353 · L449\n- impuesto · \"Belas ngen\" · 0 · L451"
+ }
+}

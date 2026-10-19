@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Países Bajos/Almere City/wf-2024-2025-68975c13.pdf",
  "md": "Clubes/Países Bajos/Almere City/wf-2024-2025-68975c13.md",
- "generado": "2026-10-18T23:21:27.401Z",
- "estado": "cola",
+ "generado": "2026-10-19T00:12:35.275Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -12,11 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "e9f8452",
-  "e9f8452",
-  "168c7e3"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -49,6 +45,8 @@
  ],
  "notas": [
   "escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en wf-2024-2025-68975c13.pdf",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en wf-2024-2025-68975c13.pdf",
   "duda de extraer que no afecta la carga: Los importes de L419-L422 cuadran tal como están impresos; el signo del impuesto en L420 (2.850) parece un ingreso por impuesto."
  ],
  "reintentar": null,

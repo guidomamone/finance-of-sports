@@ -1,22 +1,10 @@
 {
  "pdf": "Clubes/Países Bajos/Fortuna Sittard/Fortuna-Sittard-Jaarrekening-2024-2025.pdf",
- "generado": "2026-10-18T23:25:48.760Z",
+ "generado": "2026-10-19T00:16:02.351Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (fortunasittard-nl)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "3 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Pensioenlasten\" -> wages_squad 0.7; \"Overige personeelslasten\" -> wages_squad 0.5; \"Verkoopkosten\" -> admin_general_expense 0.65"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
@@ -136,19 +124,19 @@
     "amountNative": -0.070536,
     "disclosureLevel": "aggregated",
     "_pag": 42,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Overige personeelslasten",
-    "normalizedCategory": "wages_squad",
+    "normalizedCategory": "admin_general_expense",
     "amountNative": -1.951531,
     "disclosureLevel": "aggregated",
     "_pag": 42,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Afschrijvingen",
@@ -186,9 +174,9 @@
     "amountNative": -1.616086,
     "disclosureLevel": "aggregated",
     "_pag": 42,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Algemene kosten",
@@ -243,7 +231,7 @@
    "title": "Fortuna Sittard B.V. — Fortuna-Sittard-Jaarrekening-2024-2025 (ejercicio 2025)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Países Bajos/Fortuna Sittard/Fortuna-Sittard-Jaarrekening-2024-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Países Bajos/Fortuna Sittard/Fortuna-Sittard-Jaarrekening-2024-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Países Bajos/Fortuna Sittard/Fortuna-Sittard-Jaarrekening-2024-2025.md",
@@ -427,11 +415,11 @@
    "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
    "signoFijo": 0.070536,
    "cat": "wages_squad",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Pensioenlasten 70.536 es costo de personal dentro de la nota 12 (Personeelskosten 11.212.222) y el documento no separa plantel de no plantel (solo cuenta 29 jugadores, 23 staff, 12 oficina en total): el renglon entero va a wages_squad (criterio de Sueldos del Personal). Nota: AZ y Feyenoord dejaron 'Overige personeelskosten' en admin_general_expense, pero aca el renglon viene dentro de una nota unica de personal, y se sigue la regla del lote. [Pensioenlasten 70.536 (L1653); Personeelskosten 11.212.222 (L1655)]",
    "destino": "expense",
    "amountNative": -0.070536
   },
@@ -442,12 +430,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
    "signoFijo": 1.951531,
-   "cat": "wages_squad",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Claude: Overige personeelslasten va a admin_general_expense, precedente neerlandés (Ajax, Feyenoord y PSV: \"Overige personeelskosten\" en admin_general_expense) [Overige personeelslasten 1.951.531 (L1654); Personeelskosten 11.212.222 (L1655)]",
    "destino": "expense",
    "amountNative": -1.951531
   },
@@ -504,11 +492,11 @@
    "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten\")",
    "signoFijo": 1.616086,
    "cat": "admin_general_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Verkoopkosten 1.616.086 es un componente de Overige bedrijfskosten (nota 14: Huisvesting 1.508.057 + Wedstrijd- en trainingskosten 1.058.843 + Verkoopkosten 1.616.086 + Algemene kosten 716.190 = 4.899.176). Costos de venta (horeca y merchandise segun el informe), no deportivos: admin_general_expense, igual que AZ ('Verkoopkosten' dentro de admin_general_expense). [Verkoopkosten 1.616.086 (L1667); Overige bedrijfskosten 4.899.176 (L1669); 'verkoopkosten gestegen ... hogere horeca-kosten en merchandise kosten' (L284)]",
    "destino": "expense",
    "amountNative": -1.616086
   },
@@ -653,7 +641,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
+  "motivos": 1,
   "lineasIngreso": 8,
   "lineasGasto": 10,
   "metaFilas": 2,

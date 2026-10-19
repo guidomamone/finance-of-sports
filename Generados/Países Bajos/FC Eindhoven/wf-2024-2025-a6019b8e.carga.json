@@ -1,22 +1,10 @@
 {
  "pdf": "Clubes/Países Bajos/FC Eindhoven/wf-2024-2025-a6019b8e.pdf",
- "generado": "2026-10-18T23:25:48.084Z",
+ "generado": "2026-10-19T00:16:01.501Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (fceindhoven-nl)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Lonen en salarissen\" -> wages_squad 0.75; \"Pensioenlasten\" -> wages_squad 0.7"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
@@ -127,9 +115,9 @@
     "amountNative": -2.075105,
     "disclosureLevel": "aggregated",
     "_pag": 28,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sociale lasten",
@@ -147,9 +135,9 @@
     "amountNative": -0.054277,
     "disclosureLevel": "aggregated",
     "_pag": 28,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Overige personeelskosten",
@@ -271,10 +259,10 @@
   "source": {
    "id": "fceindhoven-nl-wf-2024-2025-a6019b8e",
    "clubId": "fceindhoven-nl",
-   "title": "FC Eindhoven — wf-2024-2025-a6019b8e (ejercicio 2025)",
+   "title": "Stichting FC Eindhoven — wf-2024-2025-a6019b8e (ejercicio 2025)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Países Bajos/FC Eindhoven/wf-2024-2025-a6019b8e.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Países Bajos/FC Eindhoven/wf-2024-2025-a6019b8e.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
   }
  },
  "md": "Clubes/Países Bajos/FC Eindhoven/wf-2024-2025-a6019b8e.md",
@@ -454,11 +442,11 @@
    "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
    "signoFijo": 2.075105,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Sí, wages_squad: 'Lonen en salarissen' es la masa salarial del club y el documento no separa plantel de no plantel (la plantilla es 19 jugadores, 5 staff técnico, 16 oficina). Criterio Sueldos del Personal -> wages_squad. Cuenta del bloque: 2.075.105 + 447.548 + 54.277 + 798.550 = 3.375.480 = Personeelskosten. [Lonen en salarissen | 2.075.105 (L839); Personeelskosten | 3.375.480 (L843)]",
    "destino": "expense",
    "amountNative": -2.075105
   },
@@ -485,11 +473,11 @@
    "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
    "signoFijo": 0.054277,
    "cat": "wages_squad",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Sí, wages_squad: las cargas de pensión son costo de personal; sin separación plantel/no plantel va entero a wages_squad (mismo criterio que Sociale lasten y Lonen en salarissen). [Pensioenlasten | 54.277 (L841)]",
    "destino": "expense",
    "amountNative": -0.054277
   },
@@ -740,7 +728,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
+  "motivos": 1,
   "lineasIngreso": 9,
   "lineasGasto": 12,
   "metaFilas": 2,

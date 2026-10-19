@@ -1,0 +1,191 @@
+{
+ "pdf": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.pdf",
+ "md": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.md",
+ "mdSha1": "94ead59d44a63bc614bf7dd2017a91224fa565dd",
+ "ubicacionSha1": "37e3048461243970ed4c8e66d1dd138e9a623273",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T00:27:05.025Z",
+ "ubicacion": {
+  "estado": [
+   "b9"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b9",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica la escala; los importes (ej. 92 725 486) parecen estar en unidades (NOK)."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b9",
+   "linea": 1063,
+   "etiqueta": "Annen driftsinntekt",
+   "actual": "92 725 486",
+   "anterior": "53 115 093",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 1064,
+   "etiqueta": "Sum driftsinntekter",
+   "actual": "92 725 486",
+   "anterior": "53 115 093",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 1067,
+   "etiqueta": "Varekostnad",
+   "actual": "9 678 901",
+   "anterior": "5 877 256",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 1068,
+   "etiqueta": "Lønnskostnad",
+   "actual": "53 626 147",
+   "anterior": "33 295 832",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 1069,
+   "etiqueta": "Avskrivning",
+   "actual": "5 056 889",
+   "anterior": "1 460 045",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 1070,
+   "etiqueta": "Annen driftskostnad",
+   "actual": "21 509 720",
+   "anterior": "12 059 966",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 1071,
+   "etiqueta": "Sum driftskostnader",
+   "actual": "89 871 657",
+   "anterior": "52 693 099",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 1073,
+   "etiqueta": "Driftsresultat",
+   "actual": "2 853 829",
+   "anterior": "421 994",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 1076,
+   "etiqueta": "Annen finansinntekt",
+   "actual": "223 302",
+   "anterior": "111 000",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 1077,
+   "etiqueta": "Annen finanskostnad",
+   "actual": "310 627",
+   "anterior": "1 743",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 1078,
+   "etiqueta": "Netto finansposter",
+   "actual": "-87 325",
+   "anterior": "109 257",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 1080,
+   "etiqueta": "Ordinært resultat før skattekostnad",
+   "actual": "2 766 504",
+   "anterior": "531 251",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 1082,
+   "etiqueta": "Årsresultat",
+   "actual": "2 766 504",
+   "anterior": "531 251",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 1085,
+   "etiqueta": "Overføringer annen egenkapital",
+   "actual": "2 766 504",
+   "anterior": "531 251",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 1064,
+  "actual": "92 725 486"
+ },
+ "total_gastos": {
+  "linea": 1071,
+  "actual": "89 871 657"
+ },
+ "resultado": {
+  "linea": 1082,
+  "actual": "2 766 504",
+  "anterior": "531 251"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes del estado de resultados (L1063-L1085) como expresados en unidades (NOK)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El bloque b9 no imprime la escala; por la magnitud (92 725 486 en L1063) parecen unidades.",
+   "bloques": [
+    "b9"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados de Fredrikstad FK 2024 sin notas de desglose. Todos los ingresos operativos figuran en un único renglón 'Annen driftsinntekt'. No hay impuesto (resultado antes de impuestos = resultado del ejercicio). La fila L1085 es una aplicación del resultado, no una partida de resultados."
+}

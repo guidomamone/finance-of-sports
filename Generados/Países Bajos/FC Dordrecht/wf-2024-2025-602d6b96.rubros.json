@@ -3,24 +3,34 @@
   "pdf": "Clubes/Países Bajos/FC Dordrecht/wf-2024-2025-602d6b96.pdf",
   "club": "fc-dordrecht",
   "year": 2025,
-  "generatedAt": "2026-10-18T23:21:27.573Z",
+  "generatedAt": "2026-10-19T00:12:35.384Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
       "label": "Netto-omzet",
       "lado": "revenue",
       "page": 6,
-      "section": "estado",
+      "section": "ajuste manual",
       "values": [
-        0.00468
+        4.680373
       ],
       "glosa": "Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "Resultaat vergoedingssommen",
+      "lado": "revenue",
+      "page": 6,
+      "section": "ajuste manual",
+      "values": [
+        1.156388
+      ],
+      "glosa": "Resultado por traspaso de jugadores"
     },
     {
       "label": "Lonen en salarissen (10)",
       "lado": "expense",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         2.008539
       ],
@@ -30,7 +40,7 @@
       "label": "Sociale lasten",
       "lado": "expense",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.415736
       ],
@@ -40,7 +50,7 @@
       "label": "Pensioenlasten",
       "lado": "expense",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.003541
       ],
@@ -50,7 +60,7 @@
       "label": "Overige personeelskosten",
       "lado": "expense",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.855319
       ],
@@ -60,7 +70,7 @@
       "label": "Afschrijvingen",
       "lado": "expense",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.164875
       ],
@@ -70,7 +80,7 @@
       "label": "Huisvestingskosten",
       "lado": "expense",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.442573
       ],
@@ -80,7 +90,7 @@
       "label": "Kantoorkosten",
       "lado": "expense",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.3714
       ],
@@ -90,7 +100,7 @@
       "label": "Verkoopkosten",
       "lado": "expense",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.861632
       ],
@@ -100,7 +110,7 @@
       "label": "Algemene kosten",
       "lado": "expense",
       "page": 6,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         0.451614
       ],

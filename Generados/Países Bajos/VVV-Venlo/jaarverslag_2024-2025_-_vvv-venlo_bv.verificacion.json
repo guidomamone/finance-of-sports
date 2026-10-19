@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Países Bajos/VVV-Venlo/jaarverslag_2024-2025_-_vvv-venlo_bv.pdf",
  "md": "Clubes/Países Bajos/VVV-Venlo/jaarverslag_2024-2025_-_vvv-venlo_bv.md",
- "generado": "2026-10-18T23:22:04.871Z",
+ "generado": "2026-10-19T00:12:36.095Z",
  "estado": "ok",
  "clubId": null,
  "year": 2025,
@@ -50,8 +50,7 @@
   "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar confirmada por las sumas (columna, \"-\"): ¿La tabla 'Exploitatierekening over het seizoen 2024/2025' (b1) tiene una sola columna de importes del ejercicio 2024/2025, sin columna del año anterior?",
-  "duda de extraer que no afecta la carga: Los importes de detalle del mismo ejercicio están en la columna 'Detalle' y suman los totales de L170 (7.284) y L175 (88).",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: Los importes de detalle del mismo ejercicio están en la columna 'Detalle' y suman los totales de L170 (7.284) y L175 (88)."
  ],
  "reintentar": null,
  "reintentado": false,

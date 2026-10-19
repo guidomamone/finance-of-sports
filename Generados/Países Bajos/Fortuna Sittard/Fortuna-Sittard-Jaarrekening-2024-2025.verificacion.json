@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Países Bajos/Fortuna Sittard/Fortuna-Sittard-Jaarrekening-2024-2025.pdf",
  "md": "Clubes/Países Bajos/Fortuna Sittard/Fortuna-Sittard-Jaarrekening-2024-2025.md",
- "generado": "2026-10-18T23:22:04.795Z",
+ "generado": "2026-10-19T00:12:35.813Z",
  "estado": "ok",
  "clubId": null,
  "year": 2025,
@@ -49,8 +49,7 @@
  "notas": [
   "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
   "la lectura base no cerraba; cerró con la lectura 4",
-  "duda de localizar que no afecta la carga: Las notas saltan de 12 (b32) a 14 (b34); la nota 13 probablemente es texto sin cuadro.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de localizar que no afecta la carga: Las notas saltan de 12 (b32) a 14 (b34); la nota 13 probablemente es texto sin cuadro."
  ],
  "reintentar": null,
  "reintentado": false,

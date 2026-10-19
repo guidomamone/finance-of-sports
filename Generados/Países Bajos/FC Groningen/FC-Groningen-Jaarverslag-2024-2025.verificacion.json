@@ -1,0 +1,443 @@
+{
+ "pdf": "Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2024-2025.pdf",
+ "md": "Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2024-2025.md",
+ "generado": "2026-10-19T00:13:16.629Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2024-2025.pdf",
+   "campo": "cierre",
+   "valor": "2025-06-30",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): balans per 30 juni 2025 (temporada 2024-2025)",
+   "evidencia": "FC-Groningen-Jaarverslag-2024-2025.pdf, 'per 30 juni 2025'",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2024-2025.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "La entidad que presenta es la holding FC Groningen Beheer B.V.; el fútbol está en la controlada FC Groningen B.V. (primer equipo, fichajes), más Euroborg Horeca B.V. (catering del estadio), Regionale voetbalopleiding Groningen B.V. (fútbol base) y Greenrock Holding B.V. (no se describe; minoritaria frente al resto). Hay cuenta de resultados consolidada (L1010) y enkelvoudige (cap. 10-12, índice L52-54). (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": "De activiteiten van FC Groningen Beheer B.V. en haar dochtermaatschappijen bestaan voornamelijk uit het exploiteren van een betaald voetbalorganisatie (L1088); dochters: FC Groningen B.V. (100%), Euroborg Horeca B.V. (100%), Regionale voetbalopleiding Groningen B.V. (100%), Greenrock Holding B.V. (1",
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [
+  "32686b8",
+  "d1a65ef",
+  "ca8173e",
+  "56bf710",
+  "e9d27c9",
+  "ffb46f5"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": false,
+   "detalle": "las líneas suman 31.986612 y el total impreso dice 27.539995"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": false,
+   "detalle": "las líneas suman 30.011849 y el total impreso dice 27.870077"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 9.999999970311535e-7
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Overige bedrijfsopbrengsten (9.2)\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"Inkoopwaarde van de omzet (9.3)\" no suma el renglón (2.428486 contra 2.368487, sumando sus renglones): quedó el renglón del estado",
+  "la nota de \"Afschrijvingen vergoedingssommen (9.7)\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": [
+  {
+   "renglon": "Inkoopwaarde van de omzet (9.3)",
+   "suma": 2.428486,
+   "objetivo": 2.368487
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Inkoopwaarde van de omzet (9.3)",
+   "suma": 2.428486,
+   "objetivo": 2.368487
+  }
+ ],
+ "totales": {
+  "ingresos": 31.986612,
+  "gastos": 30.011849,
+  "financiero": -0.273082,
+  "impuesto": -0.058336,
+  "resultadoImpreso": 1.643346,
+  "resultadoParaCargar": 1.643346,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Wedstrijdopbrengsten",
+   "lado": "ingreso",
+   "M": 4.69755,
+   "pagina": 57,
+   "linea": 1797,
+   "origen": "nota que desglosa \"Netto-omzet (9.1)\""
+  },
+  {
+   "etiqueta": "Sponsoring en reclame",
+   "lado": "ingreso",
+   "M": 9.891505,
+   "pagina": 57,
+   "linea": 1798,
+   "origen": "nota que desglosa \"Netto-omzet (9.1)\""
+  },
+  {
+   "etiqueta": "Mediarechten",
+   "lado": "ingreso",
+   "M": 4.357497,
+   "pagina": 57,
+   "linea": 1799,
+   "origen": "nota que desglosa \"Netto-omzet (9.1)\""
+  },
+  {
+   "etiqueta": "Merchandising",
+   "lado": "ingreso",
+   "M": 1.961748,
+   "pagina": 57,
+   "linea": 1800,
+   "origen": "nota que desglosa \"Netto-omzet (9.1)\""
+  },
+  {
+   "etiqueta": "Food & Beverage",
+   "lado": "ingreso",
+   "M": 4.201114,
+   "pagina": 57,
+   "linea": 1801,
+   "origen": "nota que desglosa \"Netto-omzet (9.1)\""
+  },
+  {
+   "etiqueta": "Uitkeringen",
+   "lado": "ingreso",
+   "M": 1.72554,
+   "pagina": 57,
+   "linea": 1802,
+   "origen": "nota que desglosa \"Netto-omzet (9.1)\""
+  },
+  {
+   "etiqueta": "Overige baten",
+   "lado": "ingreso",
+   "M": 0.623973,
+   "pagina": 57,
+   "linea": 1803,
+   "origen": "nota que desglosa \"Netto-omzet (9.1)\""
+  },
+  {
+   "etiqueta": "Overige bedrijfsopbrengsten (9.2)",
+   "lado": "ingreso",
+   "M": 0.081068,
+   "pagina": 36,
+   "linea": 1016,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Netto ontvangen afkoopsommen",
+   "lado": "ingreso",
+   "M": 5.65993,
+   "pagina": 59,
+   "linea": 1920,
+   "origen": "nota que desglosa \"Resultaat vergoedingssommen (9.8)\""
+  },
+  {
+   "etiqueta": "Boekwaarde contracten spelers",
+   "lado": "gasto",
+   "M": 1.777607,
+   "pagina": 59,
+   "linea": 1921,
+   "origen": "nota que desglosa \"Resultaat vergoedingssommen (9.8)\""
+  },
+  {
+   "etiqueta": "Ontvangen/(betaalde) opleidingsvergoedingen",
+   "lado": "ingreso",
+   "M": 0.564294,
+   "pagina": 59,
+   "linea": 1923,
+   "origen": "nota que desglosa \"Resultaat vergoedingssommen (9.8)\""
+  },
+  {
+   "etiqueta": "Inkoopwaarde van de omzet (9.3)",
+   "lado": "gasto",
+   "M": 2.368487,
+   "pagina": 36,
+   "linea": 1018,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Contractspelers",
+   "lado": "gasto",
+   "M": 6.438865,
+   "pagina": 58,
+   "linea": 1861,
+   "origen": "nota que desglosa \"Personeelskosten (9.4)\""
+  },
+  {
+   "etiqueta": "Overige spelers",
+   "lado": "gasto",
+   "M": 0.558057,
+   "pagina": 58,
+   "linea": 1862,
+   "origen": "nota que desglosa \"Personeelskosten (9.4)\""
+  },
+  {
+   "etiqueta": "Technische staf",
+   "lado": "gasto",
+   "M": 1.383071,
+   "pagina": 58,
+   "linea": 1863,
+   "origen": "nota que desglosa \"Personeelskosten (9.4)\""
+  },
+  {
+   "etiqueta": "Medische staf",
+   "lado": "gasto",
+   "M": 0.371886,
+   "pagina": 58,
+   "linea": 1864,
+   "origen": "nota que desglosa \"Personeelskosten (9.4)\""
+  },
+  {
+   "etiqueta": "Scouting",
+   "lado": "gasto",
+   "M": 0.485996,
+   "pagina": 58,
+   "linea": 1865,
+   "origen": "nota que desglosa \"Personeelskosten (9.4)\""
+  },
+  {
+   "etiqueta": "Overige staf voetbalorganisatie",
+   "lado": "gasto",
+   "M": 1.002601,
+   "pagina": 58,
+   "linea": 1866,
+   "origen": "nota que desglosa \"Personeelskosten (9.4)\""
+  },
+  {
+   "etiqueta": "Directie/management",
+   "lado": "gasto",
+   "M": 0.45724,
+   "pagina": 58,
+   "linea": 1867,
+   "origen": "nota que desglosa \"Personeelskosten (9.4)\""
+  },
+  {
+   "etiqueta": "Commercie",
+   "lado": "gasto",
+   "M": 1.486851,
+   "pagina": 58,
+   "linea": 1868,
+   "origen": "nota que desglosa \"Personeelskosten (9.4)\""
+  },
+  {
+   "etiqueta": "Operationeel",
+   "lado": "gasto",
+   "M": 1.113987,
+   "pagina": 58,
+   "linea": 1869,
+   "origen": "nota que desglosa \"Personeelskosten (9.4)\""
+  },
+  {
+   "etiqueta": "Merchandise",
+   "lado": "gasto",
+   "M": 0.142673,
+   "pagina": 58,
+   "linea": 1870,
+   "origen": "nota que desglosa \"Personeelskosten (9.4)\""
+  },
+  {
+   "etiqueta": "Horeca",
+   "lado": "gasto",
+   "M": 1.317899,
+   "pagina": 58,
+   "linea": 1871,
+   "origen": "nota que desglosa \"Personeelskosten (9.4)\""
+  },
+  {
+   "etiqueta": "Gebouwen",
+   "lado": "gasto",
+   "M": 0.054578,
+   "pagina": 58,
+   "linea": 1881,
+   "origen": "nota que desglosa \"Afschrijvingen materiële vaste activa (9.5)\""
+  },
+  {
+   "etiqueta": "Andere vaste bedrijfsmiddelen",
+   "lado": "gasto",
+   "M": 0.560067,
+   "pagina": 58,
+   "linea": 1882,
+   "origen": "nota que desglosa \"Afschrijvingen materiële vaste activa (9.5)\""
+  },
+  {
+   "etiqueta": "Wedstrijdkosten",
+   "lado": "gasto",
+   "M": 2.265195,
+   "pagina": 59,
+   "linea": 1896,
+   "origen": "nota que desglosa \"Overige bedrijfskosten (9.6)\""
+  },
+  {
+   "etiqueta": "Huisvestingskosten",
+   "lado": "gasto",
+   "M": 4.977639,
+   "pagina": 59,
+   "linea": 1897,
+   "origen": "nota que desglosa \"Overige bedrijfskosten (9.6)\""
+  },
+  {
+   "etiqueta": "Verkoopkosten",
+   "lado": "gasto",
+   "M": 1.11985,
+   "pagina": 59,
+   "linea": 1898,
+   "origen": "nota que desglosa \"Overige bedrijfskosten (9.6)\""
+  },
+  {
+   "etiqueta": "Kosten merchandise",
+   "lado": "gasto",
+   "M": 0.278963,
+   "pagina": 59,
+   "linea": 1899,
+   "origen": "nota que desglosa \"Overige bedrijfskosten (9.6)\""
+  },
+  {
+   "etiqueta": "Kosten horeca",
+   "lado": "gasto",
+   "M": 0.332762,
+   "pagina": 59,
+   "linea": 1900,
+   "origen": "nota que desglosa \"Overige bedrijfskosten (9.6)\""
+  },
+  {
+   "etiqueta": "Algemene kosten",
+   "lado": "gasto",
+   "M": 1.234964,
+   "pagina": 59,
+   "linea": 1901,
+   "origen": "nota que desglosa \"Overige bedrijfskosten (9.6)\""
+  },
+  {
+   "etiqueta": "Nagekomen baten en lasten",
+   "lado": "gasto",
+   "M": -0.081553,
+   "pagina": 59,
+   "linea": 1902,
+   "origen": "nota que desglosa \"Overige bedrijfskosten (9.6)\""
+  },
+  {
+   "etiqueta": "Afschrijvingen vergoedingssommen (9.7)",
+   "lado": "gasto",
+   "M": 2.141771,
+   "pagina": 36,
+   "linea": 1024,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Bijzondere waardeverminderingen",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 36,
+   "linea": 1025,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Financiële baten en lasten (9.9)",
+   "M": -0.273082,
+   "linea": 1029
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen resultaat uit gewone bedrijfsuitoefening (9.10)",
+   "M": -0.058336,
+   "linea": 1031
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "6f221188c1da4c479b5d01d659af987862a30c33",
+  "rango": [
+   1012,
+   1035
+  ],
+  "lineasCargadas": [
+   1797,
+   1798,
+   1799,
+   1800,
+   1801,
+   1802,
+   1803,
+   1016,
+   1920,
+   1921,
+   1923,
+   1018,
+   1861,
+   1862,
+   1863,
+   1864,
+   1865,
+   1866,
+   1867,
+   1868,
+   1869,
+   1870,
+   1871,
+   1881,
+   1882,
+   1896,
+   1897,
+   1898,
+   1899,
+   1900,
+   1901,
+   1902,
+   1024,
+   1025,
+   1029,
+   1031
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 1012 a 1035 del .md):\nL1012: |   | 2024/2025 |   | 2023/2024  |   |\nL1013: | --- | --- | --- | --- | --- |\nL1014: |   | € | € | € | €  |\nL1015: |  Netto-omzet (9.1) | 27.458.927 |  | 20.303.395 |   |\nL1016: |  Overige bedrijfsopbrengsten (9.2) | 81.068 |  | 154.849 |   |\nL1017: |  **OMZET** |  | **27.539.995** |  | **20.458.244**  |\nL1018: |  Inkoopwaarde van de omzet (9.3) | 2.368.487 |  | 2.061.346 |   |\nL1019: |  Personeelskosten (9.4) | 14.759.125 |  | 13.403.290 |   |\nL1020: |  *Afschrijvingen materiële vaste activa (9.5)* | 614.645 |  | 549.242 |   |\nL1021: |  Overige bedrijfskosten (9.6) | 10.127.820 |  | 9.286.480 |   |\nL1022: |  **SOM DER KOSTEN** |  | **27.870.077** |  | **25.300.358**  |\nL1023: |  **BEDRIJFSRESULTAAT VOOR AFSCHRIJVINGEN EN RESULTAAT VAN VERGOEDINGSSOMMEN** |  | -330.082 |  | -4.842.114  |\nL1024: |  Afschrijvingen vergoedingssommen (9.7) | -2.141.771 |  | -3.226.480 |   |\nL1025: |  Bijzondere waardeverminderingen | 0 |  | -1.933.156 |   |\nL1026: |  Resultaat vergoedingssommen (9.8) | 4.446.617 |  | 6.437.153 |   |\nL1027: |   |  | **2.304.846** |  | **1.277.517**  |\nL1028: |  **BEDRIJFSRESULTAAT NA AFSCHRIJVINGEN EN RESULTAAT VAN VERGOEDINGSSOMMEN** |  | 1.974.764 |  | -3.564.597  |\nL1029: |  Financiële baten en lasten (9.9) |  | -273.082 |  | -423.082  |\nL1030: |  **RESULTAAT UIT GEWONE BEDRIJFSUITOEFENING** |  | **1.701.682** |  | **-3.987.679**  |\nL1031: |  Belastingen resultaat uit gewone bedrijfsuitoefening (9.10) |  | -58.336 |  | 1.036.493  |\nL1032: |  **RESULTAAT NA BELASTINGEN** |  | **1.643.346** |  | **-2.951.186**  |\nL1034: 36\n\nLO QUE SE CARGA:\n- ingreso · \"Wedstrijdopbrengsten\" · 4.69755 · L1797 (de una nota)\n- ingreso · \"Sponsoring en reclame\" · 9.891505 · L1798 (de una nota)\n- ingreso · \"Mediarechten\" · 4.357497 · L1799 (de una nota)\n- ingreso · \"Merchandising\" · 1.961748 · L1800 (de una nota)\n- ingreso · \"Food & Beverage\" · 4.201114 · L1801 (de una nota)\n- ingreso · \"Uitkeringen\" · 1.72554 · L1802 (de una nota)\n- ingreso · \"Overige baten\" · 0.623973 · L1803 (de una nota)\n- ingreso · \"Overige bedrijfsopbrengsten (9.2)\" · 0.081068 · L1016\n- ingreso · \"Netto ontvangen afkoopsommen\" · 5.65993 · L1920 (de una nota)\n- gasto · \"Boekwaarde contracten spelers\" · 1.777607 · L1921 (de una nota)\n- ingreso · \"Ontvangen/(betaalde) opleidingsvergoedingen\" · 0.564294 · L1923 (de una nota)\n- gasto · \"Inkoopwaarde van de omzet (9.3)\" · 2.368487 · L1018\n- gasto · \"Contractspelers\" · 6.438865 · L1861 (de una nota)\n- gasto · \"Overige spelers\" · 0.558057 · L1862 (de una nota)\n- gasto · \"Technische staf\" · 1.383071 · L1863 (de una nota)\n- gasto · \"Medische staf\" · 0.371886 · L1864 (de una nota)\n- gasto · \"Scouting\" · 0.485996 · L1865 (de una nota)\n- gasto · \"Overige staf voetbalorganisatie\" · 1.002601 · L1866 (de una nota)\n- gasto · \"Directie/management\" · 0.45724 · L1867 (de una nota)\n- gasto · \"Commercie\" · 1.486851 · L1868 (de una nota)\n- gasto · \"Operationeel\" · 1.113987 · L1869 (de una nota)\n- gasto · \"Merchandise\" · 0.142673 · L1870 (de una nota)\n- gasto · \"Horeca\" · 1.317899 · L1871 (de una nota)\n- gasto · \"Gebouwen\" · 0.054578 · L1881 (de una nota)\n- gasto · \"Andere vaste bedrijfsmiddelen\" · 0.560067 · L1882 (de una nota)\n- gasto · \"Wedstrijdkosten\" · 2.265195 · L1896 (de una nota)\n- gasto · \"Huisvestingskosten\" · 4.977639 · L1897 (de una nota)\n- gasto · \"Verkoopkosten\" · 1.11985 · L1898 (de una nota)\n- gasto · \"Kosten merchandise\" · 0.278963 · L1899 (de una nota)\n- gasto · \"Kosten horeca\" · 0.332762 · L1900 (de una nota)\n- gasto · \"Algemene kosten\" · 1.234964 · L1901 (de una nota)\n- gasto · \"Nagekomen baten en lasten\" · -0.081553 · L1902 (de una nota)\n- gasto · \"Afschrijvingen vergoedingssommen (9.7)\" · 2.141771 · L1024\n- gasto · \"Bijzondere waardeverminderingen\" · 0 · L1025\n- financiero · \"Financiële baten en lasten (9.9)\" · -0.273082 · L1029\n- impuesto · \"Belastingen resultaat uit gewone bedrijfsuitoefening (9.10)\" · -0.058336 · L1031"
+ }
+}

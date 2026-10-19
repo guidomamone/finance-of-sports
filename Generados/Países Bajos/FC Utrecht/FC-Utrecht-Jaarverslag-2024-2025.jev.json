@@ -1,0 +1,582 @@
+{
+ "md": "Clubes/Países Bajos/FC Utrecht/FC-Utrecht-Jaarverslag-2024-2025.md",
+ "generatedAt": "2026-10-19T00:14:56.831Z",
+ "rubrosHuella": "262f626ac49aa50d20a9d0a542d65248d72cc4fa",
+ "rubros": [
+  {
+   "label": "Horeca",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Netto-omzet\"",
+   "choice": "stadium_other",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "stadium_other",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 891
+  },
+  {
+   "label": "Subsidies en giften",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Netto-omzet\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "member_dues",
+     0.01
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Merchandise",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Netto-omzet\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Prijzengeld",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Netto-omzet\"",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Media gerelateerde baten",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Netto-omzet\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Sponsoring",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Netto-omzet\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "Overige baten",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Netto-omzet\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1050
+  },
+  {
+   "label": "Wedstrijdbaten",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Netto-omzet\"",
+   "choice": "matchday_competition",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "matchday_competition",
+     0.93
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Resultaat vergoedingssommen",
+   "lado": "revenue",
+   "page": 11,
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1078
+  },
+  {
+   "label": "Sociale lasten",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Personeelskosten\"",
+   "choice": "wages_squad",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "wages_squad",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "Overige personeelskosten",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Personeelskosten\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.94
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1017
+  },
+  {
+   "label": "Vergoedingssommen",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Afschrijvingen\" > desglose de \"Immateriële vaste activa\"",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Pensioenlasten",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Personeelskosten\"",
+   "choice": "wages_squad",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "wages_squad",
+     0.4
+    ],
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Goodwill",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Afschrijvingen\" > desglose de \"Immateriële vaste activa\"",
+   "choice": "other_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_amortisation",
+     0.99
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1077
+  },
+  {
+   "label": "Lonen en salarissen",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Personeelskosten\"",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "wages_squad",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Website",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Afschrijvingen\" > desglose de \"Immateriële vaste activa\"",
+   "choice": "other_amortisation",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_amortisation",
+     0.77
+    ],
+    [
+     "player_amortisation",
+     0.15
+    ],
+    [
+     "depreciation",
+     0.03
+    ]
+   ],
+   "tokens": 928
+  },
+  {
+   "label": "Allocatie amortisatie vergoedingssommen",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Afschrijvingen\" > desglose de \"Immateriële vaste activa\"",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_amortisation",
+     0.99
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1108
+  },
+  {
+   "label": "Bedrijfsgebouwen en -terreinen",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Afschrijvingen\" > desglose de \"Materiële vaste activa\"",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "depreciation",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1090
+  },
+  {
+   "label": "Huisvestingskosten",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Overige bedrijfskosten\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Wedstrijd- en trainingskosten",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Overige bedrijfskosten\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1050
+  },
+  {
+   "label": "Machines en installaties",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Afschrijvingen\" > desglose de \"Materiële vaste activa\"",
+   "choice": "depreciation",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "depreciation",
+     0.9
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 959
+  },
+  {
+   "label": "Andere vaste bedrijfsmiddelen",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Afschrijvingen\" > desglose de \"Materiële vaste activa\"",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "depreciation",
+     0.99
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1077
+  },
+  {
+   "label": "Verkoopkosten",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Overige bedrijfskosten\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Verkoopkosten merchandising",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Overige bedrijfskosten\"",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "admin_general_expense",
+     0.41
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1072
+  },
+  {
+   "label": "Algemene kosten",
+   "lado": "expense",
+   "page": 31,
+   "section": "nota que desglosa \"Overige bedrijfskosten\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1025
+  }
+ ]
+}

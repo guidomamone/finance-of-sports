@@ -1,28 +1,186 @@
 {
  "pdf": "Clubes/Países Bajos/Sparta Rotterdam/wf-2023-2024-7bc9c6f8.pdf",
- "generado": "2026-10-18T23:25:49.463Z",
+ "generado": "2026-10-19T00:16:04.189Z",
  "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 6 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (spartarotterdam-nl)"
   },
   {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 6 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "etapa": "categoria-en-cola",
+   "motivo": "4 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Lonen\" -> wages_squad 0.6; \"Overige lasten uit hoofde van personeels\" -> wages_squad 0.4; \"Horecakosten\" -> other_expenses 0.6; \"Verkoopkosten\" -> admin_general_expense 0.6"
   }
  ],
  "avisos": [
-  "perímetro: consolidado (ajuste manual del documento, 2026-10-18: perimetro-senales.mjs: el ejercicio 2024-06-30 se publicó solo consolidado (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 6 ejercicio(s) con un solo perímetro (consolidado); 7 documento(s) mirados)"
+  "perímetro: consolidado (ajuste manual del documento, 2026-10-18: perimetro-senales.mjs: el ejercicio 2024-06-30 se publicó solo consolidado (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 6 ejercicio(s) con un solo perímetro (consolidado); 7 documento(s) mirados)",
+  "gestión: ningún presidente confirmado cubre 2024 (cierre 2024-06-30); pregunta en la cola (no frena)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "spartarotterdam-nl",
+  "year": 2024,
+  "cierre": "2024-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Netto-omzet",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 18.058718,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Resultaat vergoedingssommen",
+    "normalizedCategory": "player_sales",
+    "amountNative": 2.729133,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Lonen",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -11.420257,
+    "disclosureLevel": "aggregated",
+    "_pag": 66,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige lasten uit hoofde van personeelsbeloningen",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.009513,
+    "disclosureLevel": "aggregated",
+    "_pag": 66,
+    "_escalon": 2,
+    "_conf": 0.4,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Horecakosten",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.285215,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Verkoopkosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.884033,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Huisvestingskosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2.083432,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Wedstrijd- en trainingskosten",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -1.233579,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Algemene kosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.028426,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijving op materiële vaste activa",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.983572,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijving vergoedingssommen",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -1.665423,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2024-06-30",
+   "sourceId": "spartarotterdam-nl-wf-2023-2024-7bc9c6f8",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 0.067737,
+   "tax": 0.938225,
+   "extraRows": [
+    {
+     "label": "Rentebaten en -lasten en soortgelijke kosten",
+     "value": -0.138885
+    },
+    {
+     "label": "Aandeel in resultaat van deelnemingen",
+     "value": 0.206622
+    },
+    {
+     "label": "Belastingen",
+     "value": 0.938225
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Netto-omzet",
+     "lado": "revenue",
+     "importe": 18.058718,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 20.787851,
+   "officialTotalExpenses": 21.59345,
+   "officialPAT": 0.200363
+  },
+  "source": {
+   "id": "spartarotterdam-nl-wf-2023-2024-7bc9c6f8",
+   "clubId": "spartarotterdam-nl",
+   "title": "Sparta Beheer B.V. — wf-2023-2024-7bc9c6f8 (ejercicio 2024)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Países Bajos/Sparta Rotterdam/wf-2023-2024-7bc9c6f8.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
  "md": "Clubes/Países Bajos/Sparta Rotterdam/wf-2023-2024-7bc9c6f8.md",
  "reemplaza": false,
  "periodo": {
@@ -39,5 +197,329 @@
  },
  "clubId": "spartarotterdam-nl",
  "year": 2024,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/Sparta Rotterdam/wf-2023-2024-7bc9c6f8.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "perimetro-senales.mjs: el ejercicio 2024-06-30 se publicó solo consolidado (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 6 ejercicio(s) con un solo perímetro (consolidado); 7 documento(s) mirados",
+   "evidencia": "A2 (Claude): Clubes/Países Bajos/Sparta Rotterdam/wf-2023-2024-7bc9c6f8.md",
+   "autor": "perimetro-senales",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Países Bajos/Sparta Rotterdam/wf-2023-2024-7bc9c6f8.pdf",
+   "campo": "fila",
+   "valor": "206.622",
+   "linea": 1817,
+   "etiqueta": "Aandeel in resultaat van deelnemingen",
+   "lado": "financiero",
+   "reemplaza": null,
+   "motivo": "resultado de participadas (nota 23), faltaba: con él cierra el 200.363 impreso (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": ".md L1812-1818",
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "seleccion": {
+  "filas": 14,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Netto-omzet",
+   "page": 40,
+   "native": 18.058718,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 18.058718,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 18.058718
+  },
+  {
+   "label": "Resultaat vergoedingssommen",
+   "page": 40,
+   "native": 2.729133,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.729133,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.729133
+  },
+  {
+   "label": "Lonen",
+   "page": 66,
+   "native": 11.420257,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
+   "signoFijo": 11.420257,
+   "cat": "wages_squad",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -11.420257
+  },
+  {
+   "label": "Overige lasten uit hoofde van personeelsbeloningen",
+   "page": 66,
+   "native": 1.009513,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
+   "signoFijo": 1.009513,
+   "cat": "wages_squad",
+   "conf": 0.4,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -1.009513
+  },
+  {
+   "label": "Horecakosten",
+   "page": 40,
+   "native": 0.285215,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.285215,
+   "cat": "other_expenses",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.285215
+  },
+  {
+   "label": "Verkoopkosten",
+   "page": 40,
+   "native": 1.884033,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.884033,
+   "cat": "admin_general_expense",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -1.884033
+  },
+  {
+   "label": "Huisvestingskosten",
+   "page": 40,
+   "native": 2.083432,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.083432,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.083432
+  },
+  {
+   "label": "Wedstrijd- en trainingskosten",
+   "page": 40,
+   "native": 1.233579,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.233579,
+   "cat": "match_organisation_expense",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.233579
+  },
+  {
+   "label": "Algemene kosten",
+   "page": 40,
+   "native": 1.028426,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.028426,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.028426
+  },
+  {
+   "label": "Afschrijving op materiële vaste activa",
+   "page": 40,
+   "native": 0.983572,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.983572,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.983572
+  },
+  {
+   "label": "Afschrijving vergoedingssommen",
+   "page": 40,
+   "native": 1.665423,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.665423,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.665423
+  },
+  {
+   "label": "Rentebaten en -lasten en soortgelijke kosten",
+   "page": null,
+   "native": -0.138885,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Aandeel in resultaat van deelnemingen",
+   "page": null,
+   "native": 0.206622,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Belastingen",
+   "page": null,
+   "native": 0.938225,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Personeelskosten\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 20.787851,
+  "expSum": -21.59345,
+  "officialTotalRevenue": 20.787851,
+  "officialTotalExpenses": 21.59345,
+  "officialPAT": 0.200363,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 0.200363,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 20.787851
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 21.59345
+  }
+ },
+ "liga": {
+  "valor": "nl-eredivisie",
+  "fuente": "roster cacheado de \"2023–24 Eredivisie\" (tools/club-league-reference/nl.json), coincidencia exacta \"Sparta Rotterdam\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2024,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2024-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (105 de 110 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-18)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Países Bajos (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2024-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2024-06-30 = 0.9337 (Cierre BCE al 30/6/2024 (1 EUR = 1,071 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "spartarotterdam-nl-wf-2023-2024-7bc9c6f8",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "nl-eredivisie",
+   "fuente": "roster cacheado de \"2023–24 Eredivisie\" (tools/club-league-reference/nl.json), coincidencia exacta \"Sparta Rotterdam\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 2,
+  "lineasIngreso": 2,
+  "lineasGasto": 9,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

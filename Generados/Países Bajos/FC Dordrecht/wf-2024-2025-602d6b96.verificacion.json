@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Países Bajos/FC Dordrecht/wf-2024-2025-602d6b96.pdf",
  "md": "Clubes/Países Bajos/FC Dordrecht/wf-2024-2025-602d6b96.md",
- "generado": "2026-10-18T23:21:27.573Z",
- "estado": "cola",
+ "generado": "2026-10-19T00:13:16.433Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -11,42 +11,75 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
- "cola": [
-  "ffd343b",
-  "a8547cb",
-  "a8547cb",
-  "9031e34"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/FC Dordrecht/wf-2024-2025-602d6b96.pdf",
+   "campo": "fila",
+   "valor": "4.680.373",
+   "linea": 186,
+   "etiqueta": "Netto-omzet",
+   "lado": "ingreso",
+   "reemplaza": "Netto-omzet",
+   "motivo": "la transcripción mezcla separadores (\"4,680.373\") y se leyó 4.680; son 4.680.373 (cierra con Som der kosten 5.575.229 y el resultado 217.061) (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": ".md L186-201",
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Países Bajos/FC Dordrecht/wf-2024-2025-602d6b96.pdf",
+   "campo": "fila",
+   "valor": "1.156.388",
+   "linea": 200,
+   "etiqueta": "Resultaat vergoedingssommen",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "resultado neto de traspasos debajo del operativo, faltaba: 4.680.373 - 5.575.229 - 44.471 + 1.156.388 = 217.061 (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": ".md L200",
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
  ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": true,
-   "detalle": "0.00468 = 0.00468",
-   "suma": 0.004680372999999999,
-   "impreso": 0.004680372999999999
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "total de gastos",
-   "ok": true,
-   "detalle": "5.575229 = 5.575229",
-   "suma": 5.575229,
-   "impreso": 5.575228999999999
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 0.00468 - gastos 5.575229 ± financiero -0.044471 ± impuesto 0 no da el impreso 0.217061",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 9.992007221626409e-16
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
   }
  ],
  "notas": [
+  "ajuste manual: fila \"Netto-omzet\" (ingreso) 4.680.373, en lugar de \"Netto-omzet\" (2026-10-18, la transcripción mezcla separadores (\"4,680.373\") y se leyó 4.680; son 4.680.373 (cierra con Som der kosten 5.575.229 y el resultado 217.061) (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "ajuste manual: fila \"Resultaat vergoedingssommen\" (ingreso) 1.156.388 (2026-10-18, resultado neto de traspasos debajo del operativo, faltaba: 4.680.373 - 5.575.229 - 44.471 + 1.156.388 = 217.061 (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "la lectura base no cerraba; cerró con la lectura 5",
   "duda de localizar que no afecta la carga: La transcripción muestra '4,680.373' y '855.319' con punto mezclado; la suma de costos (5,575,229) cuadra con 855,319 y el resultado operativo con 4,680,373.",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en wf-2024-2025-602d6b96.pdf",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en wf-2024-2025-602d6b96.pdf",
   "duda de extraer que no afecta la carga: L186 muestra '4,680.373' con separadores mixtos; 4.680.373 - 5.575.229 = -894.856 cuadra con Bedrijfsresultaat.",
   "duda de extraer que no afecta la carga: L191 muestra '855.319' con punto; la suma de gastos con 855.319 da 5.575.229 de L197."
  ],
@@ -54,23 +87,31 @@
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 0.00468,
+  "ingresos": 5.836761,
   "gastos": 5.575229,
   "financiero": -0.044471,
   "impuesto": 0,
   "resultadoImpreso": 0.217061,
   "resultadoParaCargar": 0.217061,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
    "etiqueta": "Netto-omzet",
    "lado": "ingreso",
-   "M": 0.00468,
+   "M": 4.680373,
    "pagina": 6,
    "linea": 186,
-   "origen": "estado"
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Resultaat vergoedingssommen",
+   "lado": "ingreso",
+   "M": 1.156388,
+   "pagina": 6,
+   "linea": 200,
+   "origen": "ajuste manual"
   },
   {
    "etiqueta": "Lonen en salarissen (10)",
@@ -78,7 +119,7 @@
    "M": 2.008539,
    "pagina": 6,
    "linea": 188,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Sociale lasten",
@@ -86,7 +127,7 @@
    "M": 0.415736,
    "pagina": 6,
    "linea": 189,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Pensioenlasten",
@@ -94,7 +135,7 @@
    "M": 0.003541,
    "pagina": 6,
    "linea": 190,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Overige personeelskosten",
@@ -102,7 +143,7 @@
    "M": 0.855319,
    "pagina": 6,
    "linea": 191,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Afschrijvingen",
@@ -110,7 +151,7 @@
    "M": 0.164875,
    "pagina": 6,
    "linea": 192,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Huisvestingskosten",
@@ -118,7 +159,7 @@
    "M": 0.442573,
    "pagina": 6,
    "linea": 193,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Kantoorkosten",
@@ -126,7 +167,7 @@
    "M": 0.3714,
    "pagina": 6,
    "linea": 194,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Verkoopkosten",
@@ -134,7 +175,7 @@
    "M": 0.861632,
    "pagina": 6,
    "linea": 195,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   },
   {
    "etiqueta": "Algemene kosten",
@@ -142,7 +183,7 @@
    "M": 0.451614,
    "pagina": 6,
    "linea": 196,
-   "origen": "estado"
+   "origen": "estado (lectura 5: hoja)"
   }
  ],
  "signosCarga": {
@@ -162,5 +203,30 @@
    "M": 0,
    "linea": 202
   }
- ]
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "70f9a9ee57162ff18081195d682443621d831af9",
+  "rango": [
+   183,
+   206
+  ],
+  "lineasCargadas": [
+   186,
+   200,
+   188,
+   189,
+   190,
+   191,
+   192,
+   193,
+   194,
+   195,
+   196,
+   199,
+   202
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 183 a 206 del .md):\nL184: | | | 1-7-2024 / 30-6-2025 | 1-7-2023 / 30-6-2024 |\nL185: | --- | --- | --- | --- |\nL186: | Netto-omzet | (9) | 4,680.373 | 3,607,448 |\nL187: | Kosten | | | |\nL188: | Lonen en salarissen (10) | | 2,008,539 | 1,656,458 |\nL189: | Sociale lasten | | 415,736 | 359,660 |\nL190: | Pensioenlasten | | 3,541 | 4,795 |\nL191: | Overige personeelskosten | | 855.319 | 613,066 |\nL192: | Afschrijvingen | | 164,875 | 205,359 |\nL193: | Huisvestingskosten | | 442,573 | 434,607 |\nL194: | Kantoorkosten | | 371,400 | 291,403 |\nL195: | Verkoopkosten | | 861,632 | 842,581 |\nL196: | Algemene kosten | | 451,614 | 535,445 |\nL197: | Som der kosten | | 5,575,229 | 4,943,374 |\nL198: | Bedrijfsresultaat | | -894,856 | -1,335,926 |\nL199: | Financiële baten en lasten | | -44,471 | -67,030 |\nL200: | Resultaat vergoedingssommen | | 1,156,388 | 746,111 |\nL201: | Resultaat voor belastingen | | 217,061 | -656,845 |\nL202: | Belastingen | (11) | 0 | 0 |\nL203: | Nettoresultaat | | 217,061 | -656,845 |\nL205: - Pagina 7 van 31 -\n\nLO QUE SE CARGA:\n- ingreso · \"Netto-omzet\" · 4.680373 · L186\n- ingreso · \"Resultaat vergoedingssommen\" · 1.156388 · L200\n- gasto · \"Lonen en salarissen (10)\" · 2.008539 · L188\n- gasto · \"Sociale lasten\" · 0.415736 · L189\n- gasto · \"Pensioenlasten\" · 0.003541 · L190\n- gasto · \"Overige personeelskosten\" · 0.855319 · L191\n- gasto · \"Afschrijvingen\" · 0.164875 · L192\n- gasto · \"Huisvestingskosten\" · 0.442573 · L193\n- gasto · \"Kantoorkosten\" · 0.3714 · L194\n- gasto · \"Verkoopkosten\" · 0.861632 · L195\n- gasto · \"Algemene kosten\" · 0.451614 · L196\n- financiero · \"Financiële baten en lasten\" · -0.044471 · L199\n- impuesto · \"Belastingen\" · 0 · L202"
+ }
 }

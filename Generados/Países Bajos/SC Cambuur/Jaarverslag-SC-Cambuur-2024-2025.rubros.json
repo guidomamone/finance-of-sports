@@ -1,0 +1,70 @@
+{
+  "md": "Clubes/Países Bajos/SC Cambuur/Jaarverslag-SC-Cambuur-2024-2025.md",
+  "pdf": "Clubes/Países Bajos/SC Cambuur/Jaarverslag-SC-Cambuur-2024-2025.pdf",
+  "club": "sc-cambuur",
+  "year": 2025,
+  "generatedAt": "2026-10-19T00:12:35.977Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Netto-omzet",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        10.544
+      ],
+      "glosa": "Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "Vergoedingssommen",
+      "lado": "revenue",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.075
+      ],
+      "glosa": "Compensaciones e indemnizaciones"
+    },
+    {
+      "label": "Kostprijs van de omzet",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.181
+      ],
+      "glosa": "Coste de ventas"
+    },
+    {
+      "label": "Lonen en salarissen",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        7.364
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Afschrijvingen",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        0.491
+      ],
+      "glosa": "Amortizaciones"
+    },
+    {
+      "label": "Overige bedrijfskosten",
+      "lado": "expense",
+      "page": 11,
+      "section": "estado",
+      "values": [
+        5.579
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}

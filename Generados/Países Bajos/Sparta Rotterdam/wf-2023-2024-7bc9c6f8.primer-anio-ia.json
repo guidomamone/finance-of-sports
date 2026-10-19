@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Países Bajos/Sparta Rotterdam/wf-2023-2024-7bc9c6f8.md",
+ "clave": "faa408bdb6ebe2968f4cc5f3d1547d41ad05c44f",
+ "generado": "2026-10-19T00:13:16.406Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Sin problemas. Personeelskosten (L1801, 12.429.770) se reemplaza por sus partes de nota: Lonen 11.420.257 y Overige lasten 1.009.513, que suman exactamente ese importe. Los subtotales (L1808, L1809, L1812, L1813, L1815, L1818) no se cargaron. La suma de lo cargado da 200.363, igual al resultado impreso. Belastingen figura como importe positivo (beneficio fiscal) y así se refleja en ese total."
+ }
+}

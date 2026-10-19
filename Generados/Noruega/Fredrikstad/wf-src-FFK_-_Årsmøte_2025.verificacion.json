@@ -1,0 +1,157 @@
+{
+ "pdf": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.pdf",
+ "md": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.md",
+ "generado": "2026-10-19T00:28:24.927Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": null,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.pdf",
+   "campo": "anio",
+   "valor": "2024",
+   "linea": null,
+   "motivo": "acta de asamblea 2025 del FLI Fredrikstad Fotballklubb con el Regnskap 2024 (Sak 3); el nombre del archivo dice 2025",
+   "evidencia": "pág. 26 del visor, .md L1057-1082",
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.pdf",
+   "campo": "cierre",
+   "valor": "2024-12-31",
+   "linea": null,
+   "motivo": "Resultatregnskap 2024; patrimonio 'pr 31.12.24'",
+   "evidencia": ".md L307 y L1059",
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "perimetro-senales.mjs: el ejercicio Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.md se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 15 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados",
+   "evidencia": "A2 (Claude): Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.md",
+   "autor": "perimetro-senales",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [
+  "97dc547",
+  "db8c283",
+  "5ae527f"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Sum driftsinntekter\" 92.725486 cierra; además se suman 1 línea(s) fuera de ese total (92.725486)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "89.871657 = 89.871657",
+   "suma": 89.871657,
+   "impreso": 89.871657
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 185.450972 - gastos 89.871657 ± financiero 0.533929 ± impuesto 0 no da el impreso 2.766504",
+   "dif": null
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  }
+ ],
+ "notas": [],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 185.450972,
+  "gastos": 89.871657,
+  "financiero": 0.533929,
+  "impuesto": 0,
+  "resultadoImpreso": 2.766504,
+  "resultadoParaCargar": 2.766504,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Annen driftsinntekt",
+   "lado": "ingreso",
+   "M": 92.725486,
+   "pagina": 26,
+   "linea": 1063,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sum driftsinntekter",
+   "lado": "ingreso",
+   "M": 92.725486,
+   "pagina": 26,
+   "linea": 1064,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Varekostnad",
+   "lado": "gasto",
+   "M": 9.678901,
+   "pagina": 26,
+   "linea": 1067,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lønnskostnad",
+   "lado": "gasto",
+   "M": 53.626147,
+   "pagina": 26,
+   "linea": 1068,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Avskrivning",
+   "lado": "gasto",
+   "M": 5.056889,
+   "pagina": 26,
+   "linea": 1069,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Annen driftskostnad",
+   "lado": "gasto",
+   "M": 21.50972,
+   "pagina": 26,
+   "linea": 1070,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Annen finansinntekt",
+   "M": 0.223302,
+   "linea": 1076
+  },
+  {
+   "etiqueta": "Annen finanskostnad",
+   "M": 0.310627,
+   "linea": 1077
+  }
+ ],
+ "impuesto": []
+}

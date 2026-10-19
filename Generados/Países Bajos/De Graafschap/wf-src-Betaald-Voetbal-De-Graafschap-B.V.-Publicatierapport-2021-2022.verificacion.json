@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Países Bajos/De Graafschap/wf-src-Betaald-Voetbal-De-Graafschap-B.V.-Publicatierapport-2021-2022.pdf",
  "md": "Clubes/Países Bajos/De Graafschap/wf-src-Betaald-Voetbal-De-Graafschap-B.V.-Publicatierapport-2021-2022.md",
- "generado": "2026-10-18T23:21:27.432Z",
- "estado": "cola",
+ "generado": "2026-10-19T00:12:35.309Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2022,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "47d5f78"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -51,7 +49,8 @@
   }
  ],
  "notas": [
-  "la lectura base no cerraba; cerró con la lectura 4"
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en wf-src-Betaald-Voetbal-De-Graafschap-B.V.-Publicatierapport-2021-2022.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

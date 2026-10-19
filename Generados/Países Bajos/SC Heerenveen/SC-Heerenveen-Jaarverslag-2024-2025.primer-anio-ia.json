@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Países Bajos/SC Heerenveen/SC-Heerenveen-Jaarverslag-2024-2025.md",
+ "clave": "a81f3a0bfe94b0406fdba127c5bd8c3d02724b56",
+ "generado": "2026-10-19T00:13:10.691Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "No hay problemas. Cada renglón con importe de 2024/2025 está cargado una sola vez, directamente o mediante las partes de su nota. Netto-omzet (L862) se carga por sus seis partes, que suman 24,259980. Personeelskosten (L866) se carga por sus cinco partes, que suman 14,594048. Afschrijvingen op immateriële vaste activa (L867) se carga por sus dos partes, que suman 3,640077. No se cargó ningún subtotal (L864, L870, L871, L874, L877) y todos los lados son correctos."
+ }
+}

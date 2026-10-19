@@ -1,0 +1,250 @@
+{
+  "md": "Clubes/Países Bajos/NEC/NEC-Holding-Jaarrekening-2023-2024.md",
+  "pdf": "Clubes/Países Bajos/NEC/NEC-Holding-Jaarrekening-2023-2024.pdf",
+  "club": "nec",
+  "year": 2024,
+  "generatedAt": "2026-10-19T00:12:35.916Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Wedstrijdbaten",
+      "lado": "revenue",
+      "page": 35,
+      "section": "nota que desglosa \"Ne o-omzet\"",
+      "values": [
+        4.733426
+      ],
+      "glosa": "Ingresos por día de partido"
+    },
+    {
+      "label": "Sponsoring",
+      "lado": "revenue",
+      "page": 35,
+      "section": "nota que desglosa \"Ne o-omzet\"",
+      "values": [
+        6.363533
+      ],
+      "glosa": "Patrocinios"
+    },
+    {
+      "label": "Media gerelateerde baten",
+      "lado": "revenue",
+      "page": 35,
+      "section": "nota que desglosa \"Ne o-omzet\"",
+      "values": [
+        2.787462
+      ],
+      "glosa": "Ingresos por medios de comunicación"
+    },
+    {
+      "label": "Subsidies",
+      "lado": "revenue",
+      "page": 35,
+      "section": "nota que desglosa \"Ne o-omzet\"",
+      "values": [
+        0.171847
+      ],
+      "glosa": "Subvenciones"
+    },
+    {
+      "label": "Merchandise",
+      "lado": "revenue",
+      "page": 35,
+      "section": "nota que desglosa \"Ne o-omzet\"",
+      "values": [
+        0.937031
+      ],
+      "glosa": "Merchandising"
+    },
+    {
+      "label": "Horeca",
+      "lado": "revenue",
+      "page": 35,
+      "section": "nota que desglosa \"Ne o-omzet\"",
+      "values": [
+        1.446526
+      ],
+      "glosa": "Hostelería y restauración"
+    },
+    {
+      "label": "Prijzengeld",
+      "lado": "revenue",
+      "page": 35,
+      "section": "nota que desglosa \"Ne o-omzet\"",
+      "values": [
+        1.431144
+      ],
+      "glosa": "Premios por competiciones"
+    },
+    {
+      "label": "Overige baten",
+      "lado": "revenue",
+      "page": 35,
+      "section": "nota que desglosa \"Ne o-omzet\"",
+      "values": [
+        0.803124
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Vergoedingssommen",
+      "lado": "revenue",
+      "page": 37,
+      "section": "nota que desglosa \"Resultaat vergoedingssommen\"",
+      "values": [
+        3.744788
+      ],
+      "glosa": "Indemnizaciones por traspasos"
+    },
+    {
+      "label": "Afschrijving vergoedingssommen",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Resultaat vergoedingssommen\"",
+      "values": [
+        0.620306
+      ],
+      "glosa": "Amortización de derechos de traspaso"
+    },
+    {
+      "label": "Lonen en salarissen",
+      "lado": "expense",
+      "page": 35,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        11.289577
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Sociale lasten",
+      "lado": "expense",
+      "page": 35,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        0.939894
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Pensioenlasten",
+      "lado": "expense",
+      "page": 35,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        0.10972
+      ],
+      "glosa": "Gastos por pensiones"
+    },
+    {
+      "label": "Overige personeelskosten",
+      "lado": "expense",
+      "page": 35,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        1.377524
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Kosten van ontwikkeling",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Afschrijvingen\" > desglose de \"Immateriële vaste ac va\"",
+      "values": [
+        0.024811
+      ],
+      "glosa": "Gastos de desarrollo"
+    },
+    {
+      "label": "Vergoedingssommen",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Afschrijvingen\" > desglose de \"Immateriële vaste ac va\"",
+      "values": [
+        0.620306
+      ],
+      "glosa": "Indemnizaciones por traspasos"
+    },
+    {
+      "label": "Alloca e amor sa e vergoedingssommen",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Afschrijvingen\" > desglose de \"Immateriële vaste ac va\"",
+      "values": [
+        -0.620306
+      ],
+      "glosa": "Imputación de la amortización de traspasos"
+    },
+    {
+      "label": "Bedrijfsgebouwen en -terreinen",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Afschrijvingen\" > desglose de \"Materiële vaste ac va\"",
+      "values": [
+        0.219065
+      ],
+      "glosa": "Terrenos y construcciones"
+    },
+    {
+      "label": "Machines en installa es",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Afschrijvingen\" > desglose de \"Materiële vaste ac va\"",
+      "values": [
+        0.008747
+      ],
+      "glosa": "Maquinaria e instalaciones"
+    },
+    {
+      "label": "Andere vaste bedrijfsmiddelen",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Afschrijvingen\" > desglose de \"Materiële vaste ac va\"",
+      "values": [
+        0.458133
+      ],
+      "glosa": "Otro inmovilizado material"
+    },
+    {
+      "label": "Huisves ngskosten",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Overige bedrijfskosten\"",
+      "values": [
+        1.488336
+      ],
+      "glosa": "Gastos de instalaciones y suministros"
+    },
+    {
+      "label": "Wedstrijd- en trainingskosten",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Overige bedrijfskosten\"",
+      "values": [
+        1.763309
+      ],
+      "glosa": "Gastos de partidos y entrenamientos"
+    },
+    {
+      "label": "Verkoopkosten",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Overige bedrijfskosten\"",
+      "values": [
+        4.686142
+      ],
+      "glosa": "Gastos de comercialización"
+    },
+    {
+      "label": "Algemene kosten",
+      "lado": "expense",
+      "page": 36,
+      "section": "nota que desglosa \"Overige bedrijfskosten\"",
+      "values": [
+        1.18686
+      ],
+      "glosa": "Gastos generales"
+    }
+  ]
+}

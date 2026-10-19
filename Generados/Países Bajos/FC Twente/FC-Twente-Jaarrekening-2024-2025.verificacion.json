@@ -1,0 +1,320 @@
+{
+ "pdf": "Clubes/Países Bajos/FC Twente/FC-Twente-Jaarrekening-2024-2025.pdf",
+ "md": "Clubes/Países Bajos/FC Twente/FC-Twente-Jaarrekening-2024-2025.md",
+ "generado": "2026-10-19T00:13:16.652Z",
+ "estado": "cola",
+ "clubId": null,
+ "year": 2025,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/FC Twente/FC-Twente-Jaarrekening-2024-2025.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "La que presenta es FC Twente '65 B.V., el club mismo, y sus controladas son FC Twente Accommodaties B.V. y FC Twente Stadion B.V. (estadio/instalaciones del club) y FC Twente/Heracles Academie B.V. (fútbol base, 50% proporcional): todo es negocio del fútbol. El documento es 'Geconsolideerde jaarrekening' (portada L3); la enkelvoudige tiene solo una winst-en-verliesrekening abreviada (art. 2:402 BW, L996-1000). (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": "De in de consolidatie begrepen vennootschappen zijn: FC Twente Accommodaties B.V. te Enschede 100% / FC Twente Stadion B.V. te Enschede 100% / FC Twente/Heracles Academie B.V. te Almelo 50% (L1007-1010)",
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "cola": [
+  "97efc6e",
+  "424f655"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Netto-omzet (11)\" 61.69 cierra; además se suman 1 línea(s) fuera de ese total (16.469)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": false,
+   "detalle": "las líneas suman 58.08 y el total impreso dice 52.137"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.4210854715202004e-14
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Resultaat vergoedingssommen (16)\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"Afschrijvingen (im)materiële vaste activa (14)\" no suma el renglón (3.327 contra 3.332, sumando sus renglones): quedó el renglón del estado",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": [
+  {
+   "renglon": "Afschrijvingen (im)materiële vaste activa (14)",
+   "suma": 3.327,
+   "objetivo": 3.332
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Afschrijvingen (im)materiële vaste activa (14)",
+   "suma": 3.327,
+   "objetivo": 3.332
+  }
+ ],
+ "totales": {
+  "ingresos": 78.159,
+  "gastos": 58.08,
+  "financiero": -0.151,
+  "impuesto": -5.149,
+  "resultadoImpreso": 14.779,
+  "resultadoParaCargar": 14.779,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Wedstrijdbaten",
+   "lado": "ingreso",
+   "M": 10.592,
+   "pagina": 22,
+   "linea": 1785,
+   "origen": "nota que desglosa \"Netto-omzet (11)\""
+  },
+  {
+   "etiqueta": "Bijdragen in giften en geld",
+   "lado": "ingreso",
+   "M": 30.21,
+   "pagina": 22,
+   "linea": 1786,
+   "origen": "nota que desglosa \"Netto-omzet (11)\""
+  },
+  {
+   "etiqueta": "Televisiebaten",
+   "lado": "ingreso",
+   "M": 7.941,
+   "pagina": 22,
+   "linea": 1787,
+   "origen": "nota que desglosa \"Netto-omzet (11)\""
+  },
+  {
+   "etiqueta": "Merchandising",
+   "lado": "ingreso",
+   "M": 0.382,
+   "pagina": 22,
+   "linea": 1788,
+   "origen": "nota que desglosa \"Netto-omzet (11)\""
+  },
+  {
+   "etiqueta": "Catering",
+   "lado": "ingreso",
+   "M": 11.451,
+   "pagina": 22,
+   "linea": 1789,
+   "origen": "nota que desglosa \"Netto-omzet (11)\""
+  },
+  {
+   "etiqueta": "Overige baten",
+   "lado": "ingreso",
+   "M": 1.114,
+   "pagina": 22,
+   "linea": 1790,
+   "origen": "nota que desglosa \"Netto-omzet (11)\""
+  },
+  {
+   "etiqueta": "Resultaat vergoedingssommen (16)",
+   "lado": "ingreso",
+   "M": 16.469,
+   "pagina": 10,
+   "linea": 787,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Inkoopwaarde van de omzet",
+   "lado": "gasto",
+   "M": 5.413,
+   "pagina": 10,
+   "linea": 779,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lonen en salarissen",
+   "lado": "gasto",
+   "M": 19.504,
+   "pagina": 22,
+   "linea": 1797,
+   "origen": "nota que desglosa \"Personeelskosten (12)\""
+  },
+  {
+   "etiqueta": "Sociale lasten",
+   "lado": "gasto",
+   "M": 1.548,
+   "pagina": 22,
+   "linea": 1798,
+   "origen": "nota que desglosa \"Personeelskosten (12)\""
+  },
+  {
+   "etiqueta": "Pensioenpremies",
+   "lado": "gasto",
+   "M": 0.224,
+   "pagina": 22,
+   "linea": 1799,
+   "origen": "nota que desglosa \"Personeelskosten (12)\""
+  },
+  {
+   "etiqueta": "Autokosten",
+   "lado": "gasto",
+   "M": 0.875,
+   "pagina": 22,
+   "linea": 1800,
+   "origen": "nota que desglosa \"Personeelskosten (12)\""
+  },
+  {
+   "etiqueta": "Inhuur personeel",
+   "lado": "gasto",
+   "M": 0.993,
+   "pagina": 22,
+   "linea": 1801,
+   "origen": "nota que desglosa \"Personeelskosten (12)\""
+  },
+  {
+   "etiqueta": "Overige personeelskosten",
+   "lado": "gasto",
+   "M": 1.07,
+   "pagina": 22,
+   "linea": 1802,
+   "origen": "nota que desglosa \"Personeelskosten (12)\""
+  },
+  {
+   "etiqueta": "Wedstrijd- en trainingskosten",
+   "lado": "gasto",
+   "M": 6.307,
+   "pagina": 22,
+   "linea": 1816,
+   "origen": "nota que desglosa \"Overige bedrijfskosten (13)\""
+  },
+  {
+   "etiqueta": "Verkoopkosten",
+   "lado": "gasto",
+   "M": 2.831,
+   "pagina": 22,
+   "linea": 1817,
+   "origen": "nota que desglosa \"Overige bedrijfskosten (13)\""
+  },
+  {
+   "etiqueta": "Huisvestingskosten",
+   "lado": "gasto",
+   "M": 6.06,
+   "pagina": 22,
+   "linea": 1818,
+   "origen": "nota que desglosa \"Overige bedrijfskosten (13)\""
+  },
+  {
+   "etiqueta": "Algemene kosten",
+   "lado": "gasto",
+   "M": 3.98,
+   "pagina": 22,
+   "linea": 1819,
+   "origen": "nota que desglosa \"Overige bedrijfskosten (13)\""
+  },
+  {
+   "etiqueta": "Afschrijvingen (im)materiële vaste activa (14)",
+   "lado": "gasto",
+   "M": 3.332,
+   "pagina": 10,
+   "linea": 782,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Vergoedingssommen",
+   "lado": "gasto",
+   "M": 4.695,
+   "pagina": 23,
+   "linea": 1855,
+   "origen": "nota que desglosa \"Afschrijvingen vergoedingssommen (16)\""
+  },
+  {
+   "etiqueta": "Hand- en tekengelden",
+   "lado": "gasto",
+   "M": 0.37,
+   "pagina": 23,
+   "linea": 1856,
+   "origen": "nota que desglosa \"Afschrijvingen vergoedingssommen (16)\""
+  },
+  {
+   "etiqueta": "Kosten intermediairs",
+   "lado": "gasto",
+   "M": 0.878,
+   "pagina": 23,
+   "linea": 1858,
+   "origen": "nota que desglosa \"Afschrijvingen vergoedingssommen (16)\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Financiële baten en lasten (15)",
+   "M": -0.151,
+   "linea": 785
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen resultaat uit gewone bedrijfsuitoefening (17)",
+   "M": -5.149,
+   "linea": 791
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "977af640a7c3f1922d339026e69bedb9d5c54ac8",
+  "rango": [
+   775,
+   797
+  ],
+  "lineasCargadas": [
+   1785,
+   1786,
+   1787,
+   1788,
+   1789,
+   1790,
+   787,
+   779,
+   1797,
+   1798,
+   1799,
+   1800,
+   1801,
+   1802,
+   1816,
+   1817,
+   1818,
+   1819,
+   782,
+   1855,
+   1856,
+   1858,
+   785,
+   791
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 775 a 797 del .md):\nL776: | (BEDRAGEN IN EUR X1.000) | 30 juni 2025 | 30 juni 2024 |\nL777: | --- | --- | --- |\nL778: | Netto-omzet (11) | 61.690 | 41.362 |\nL779: | Inkoopwaarde van de omzet | 5.413 | 4.103 |\nL780: | Personeelskosten (12) | 24.214 | 22.903 |\nL781: | Overige bedrijfskosten (13) | 19.178 | 13.469 |\nL782: | Afschrijvingen (im)materiële vaste activa (14) | 3.332 | 2.799 |\nL783: | Som der bedrijfslasten | 52.137 | 43.274 |\nL784: | Bedrijfsresultaat | 9.553 | -1.912 |\nL785: | Financiële baten en lasten (15) | -151 | -493 |\nL786: | Resultaat voor transferactiviteiten | 9.402 | -2.405 |\nL787: | Resultaat vergoedingssommen (16) | 16.469 | 13.336 |\nL788: | Afschrijvingen vergoedingssommen (16) | -5.943 | -3.893 |\nL789: | Transferresultaten | 10.526 | 9.443 |\nL790: | Resultaat uit gewone bedrijfsuitoefening voor belastingen | 19.928 | 7.038 |\nL791: | Belastingen resultaat uit gewone bedrijfsuitoefening (17) | -5.149 | -1.877 |\nL792: | Resultaat uit gewone bedrijfsuitoefening na belastingen | 14.779 | 5.161 |\nL793: | Aandeel van derden in het resultaat van groepsmaatschappijen | - | - |\nL794: | Nettoresultaat | 14.779 | 5.161 |\nL796: 18 19\n\nLO QUE SE CARGA:\n- ingreso · \"Wedstrijdbaten\" · 10.592 · L1785 (de una nota)\n- ingreso · \"Bijdragen in giften en geld\" · 30.21 · L1786 (de una nota)\n- ingreso · \"Televisiebaten\" · 7.941 · L1787 (de una nota)\n- ingreso · \"Merchandising\" · 0.382 · L1788 (de una nota)\n- ingreso · \"Catering\" · 11.451 · L1789 (de una nota)\n- ingreso · \"Overige baten\" · 1.114 · L1790 (de una nota)\n- ingreso · \"Resultaat vergoedingssommen (16)\" · 16.469 · L787\n- gasto · \"Inkoopwaarde van de omzet\" · 5.413 · L779\n- gasto · \"Lonen en salarissen\" · 19.504 · L1797 (de una nota)\n- gasto · \"Sociale lasten\" · 1.548 · L1798 (de una nota)\n- gasto · \"Pensioenpremies\" · 0.224 · L1799 (de una nota)\n- gasto · \"Autokosten\" · 0.875 · L1800 (de una nota)\n- gasto · \"Inhuur personeel\" · 0.993 · L1801 (de una nota)\n- gasto · \"Overige personeelskosten\" · 1.07 · L1802 (de una nota)\n- gasto · \"Wedstrijd- en trainingskosten\" · 6.307 · L1816 (de una nota)\n- gasto · \"Verkoopkosten\" · 2.831 · L1817 (de una nota)\n- gasto · \"Huisvestingskosten\" · 6.06 · L1818 (de una nota)\n- gasto · \"Algemene kosten\" · 3.98 · L1819 (de una nota)\n- gasto · \"Afschrijvingen (im)materiële vaste activa (14)\" · 3.332 · L782\n- gasto · \"Vergoedingssommen\" · 4.695 · L1855 (de una nota)\n- gasto · \"Hand- en tekengelden\" · 0.37 · L1856 (de una nota)\n- gasto · \"Kosten intermediairs\" · 0.878 · L1858 (de una nota)\n- financiero · \"Financiële baten en lasten (15)\" · -0.151 · L785\n- impuesto · \"Belastingen resultaat uit gewone bedrijfsuitoefening (17)\" · -5.149 · L791"
+ }
+}
