@@ -72,6 +72,9 @@ window.RANKINGS["be-challengerproleague"] = {
     leagueSize: 8,
     wiki: {"t":"2020–21 Belgian First Division B","lang":"en","at":"2026-10-19","n":8},
     clubs: [
+      { id:"lommelsk-be", revenue:2.686, reportType:"official_balance_sheet",
+        sourceId:"lommelsk-be-jaarrekening-2021-06-30-individual-correction",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.686]] },
       { id:"rwdm-be", revenue:1.839, reportType:"official_balance_sheet",
         sourceId:"rwdm-be-jaarrekening-2021-06-30-individual",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.839]] },
