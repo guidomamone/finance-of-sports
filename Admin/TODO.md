@@ -31,7 +31,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
-* 298: mejoras de script de Estonia y Bélgica (ad, ae y af, de Bélgica;  la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
+* 298: mejoras de script de Estonia y Bélgica (ad, ae y af, de Bélgica; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
