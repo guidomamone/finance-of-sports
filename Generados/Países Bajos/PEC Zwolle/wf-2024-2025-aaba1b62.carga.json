@@ -1,26 +1,14 @@
 {
  "pdf": "Clubes/Países Bajos/PEC Zwolle/wf-2024-2025-aaba1b62.pdf",
- "generado": "2026-10-19T02:28:46.244Z",
+ "generado": "2026-10-19T03:08:08.533Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (peczwolle-nl)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Solidariteit- en opleidingsvergoedingen\" -> player_sales 0.75; \"Immateriële vaste activa\" -> player_amortisation 0.65"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
-  "perímetro: consolidado (ajuste manual del documento, 2026-10-18: PEC Zwolle B.V. es el club y consolida con Stichting Regio Zwolle United, que es la academia/fútbol base y cuya actividad se hace en gran parte para PEC Zwolle (el club cubre sus pérdidas): negocio del fútbol. Hay consolidada (L572) y enkelvoudige (índice L30-31, L47-48), no se verificó el detalle de la enkelvoudige. (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "perímetro: consolidado (ajuste manual del documento, 2026-10-18: PEC Zwolle B.V. es el club y consolida con Stichting Regio Zwolle United, una fundación de proyectos sociales y comunitarios cuyas actividades se hacen en gran parte en beneficio de PEC Zwolle B.V., que cubre sus pérdidas (L778, 'grotendeels ten behoeve van PEC Zwolle B.V.'): negocio del club. Corregido por Claude 2026-10-19 con ok de Guido (to-do 298 w): el documento no dice 'academia'. Hay consolidada (L572) y enkelvoudige (índice L30-31, L47-48), no se verificó el detalle de la enkelvoudige. (subagente Sonnet, revisado por Claude 2026-10-18))",
   "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -125,9 +113,9 @@
     "amountNative": 1.21625,
     "disclosureLevel": "aggregated",
     "_pag": 40,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
@@ -177,9 +165,9 @@
     "amountNative": -0.770219,
     "disclosureLevel": "aggregated",
     "_pag": 41,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Materiële vaste activa",
@@ -259,7 +247,7 @@
    "campo": "perimetro",
    "valor": "consolidado",
    "linea": null,
-   "motivo": "PEC Zwolle B.V. es el club y consolida con Stichting Regio Zwolle United, que es la academia/fútbol base y cuya actividad se hace en gran parte para PEC Zwolle (el club cubre sus pérdidas): negocio del fútbol. Hay consolidada (L572) y enkelvoudige (índice L30-31, L47-48), no se verificó el detalle de la enkelvoudige. (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "motivo": "PEC Zwolle B.V. es el club y consolida con Stichting Regio Zwolle United, una fundación de proyectos sociales y comunitarios cuyas actividades se hacen en gran parte en beneficio de PEC Zwolle B.V., que cubre sus pérdidas (L778, 'grotendeels ten behoeve van PEC Zwolle B.V.'): negocio del club. Corregido por Claude 2026-10-19 con ok de Guido (to-do 298 w): el documento no dice 'academia'. Hay consolidada (L572) y enkelvoudige (índice L30-31, L47-48), no se verificó el detalle de la enkelvoudige. (subagente Sonnet, revisado por Claude 2026-10-18)",
    "evidencia": "In de jaarrekening van PEC Zwolle B.V. zijn de financiële gegevens geconsolideerd van PEC Zwolle B.V. en Stichting Regio Zwolle United ... de activiteiten vanuit Stichting Regio Zwolle United grotendeels ten behoeve van PEC Zwolle B.V. uitgevoerd (L778)",
    "autor": "Claude",
    "fecha": "2026-10-18"
@@ -414,11 +402,11 @@
    "origen": "verificacion (nota que desglosa \"Brutomarge\")",
    "signoFijo": 1.21625,
    "cat": "player_sales",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Solidariteit- en opleidingsvergoedingen' (1.216.250) es un renglon de la nota 10 'Overige bedrijfsopbrengsten', junto a 'Vergoedingssommen spelers' 3.826.242 (total 5.042.492 = 'Resultaat vergoedingssommen' de los Kerncijfers). Son pagos de solidaridad/formacion por traspasos (p.ej. Reijnders): player_sales, coherente con el precedente 'Resultaat vergoedingssommen' = player_sales. Cuenta: 3.826.242 + 1.216.250 = 5.042.492 OK. [Solidariteit- en opleidingsvergoedingen | 1.216.250 | 622.060 (L1167)]",
    "destino": "revenue",
    "amountNative": 1.21625
   },
@@ -491,11 +479,11 @@
    "origen": "verificacion (nota que desglosa \"Afschrijvingen\")",
    "signoFijo": 0.770219,
    "cat": "player_amortisation",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Immateriële vaste activa' (770.219) es el renglon de la nota 12 Afschrijvingen que corresponde a la amortizacion de vergoedingssommen/tekengelden de jugadores (activos intangibles = derechos de jugadores), distinto de las materiales (537.409): player_amortisation. Cuenta: 770.219 + 537.409 = 1.307.628 OK. Aviso: el rawLabel sale generico, conviene mantenerlo como lo imprime el documento. [Immateriële vaste activa | 770.219 | 338.666 (L1206)]",
    "destino": "expense",
    "amountNative": -0.770219
   },
@@ -639,7 +627,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
+  "motivos": 1,
   "lineasIngreso": 10,
   "lineasGasto": 7,
   "metaFilas": 2,
