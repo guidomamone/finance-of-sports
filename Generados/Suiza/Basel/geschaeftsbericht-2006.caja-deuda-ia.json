@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2006.md",
+ "generado": "2026-10-19T17:57:15.598Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "31.12.2006 CHF",
+ "caja": {
+  "lineas": [
+   642
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance de FC Basel 1893 AG (L640-L667) está completo y no muestra préstamos ni deudas bancarias. Solo hay cuentas por pagar comerciales, otras deudas y periodificaciones. Se trata de la AG, no del Verein, cuyas cifras aparecen solo en el comentario (L520). Los importes figuran en CHF con céntimos, sin escala explícita."
+}

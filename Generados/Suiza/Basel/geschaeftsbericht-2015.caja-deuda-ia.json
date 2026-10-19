@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2015.md",
+ "generado": "2026-10-19T17:57:42.547Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "31.12.2015 CHF",
+ "caja": {
+  "lineas": [
+   1213
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Balance de FC Basel 1893 AG (L1211-L1249) en CHF con valores completos, sin indicación de miles. Flüssige Mittel en L1213. No hay préstamos ni deuda bancaria: el pasivo se compone de cuentas por pagar, otras deudas de corto plazo, periodificaciones y provisiones."
+}

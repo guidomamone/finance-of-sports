@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2010.md",
+ "generado": "2026-10-19T17:57:27.047Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "31.12.2010 CHF",
+ "caja": {
+  "lineas": [
+   682
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance de FC Basel 1893 AG (CHF, valores exactos con decimales) no muestra préstamos ni deudas bancarias o financieras; solo hay cuentas por pagar comerciales, otras deudas y provisiones, que quedan fuera del criterio. No hay una frase explícita de escala, así que usé el encabezado de columna con CHF."
+}

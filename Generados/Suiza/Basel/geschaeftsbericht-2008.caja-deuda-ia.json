@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2008.md",
+ "generado": "2026-10-19T17:57:21.532Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "31.12.2008 CHF",
+ "caja": {
+  "lineas": [
+   595
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Balance de FC Basel 1893 AG (L593-L624) en CHF sin escala de miles. No hay préstamos ni deudas bancarias: solo Verbindlichkeiten aus Lieferungen und Leistungen, Andere Verbindlichkeiten, Passive Rechnungsabgrenzung y Rückstellungen, que no son deuda financiera. Caja = Flüssige Mittel; las Wertschriften (L596) quedan fuera."
+}

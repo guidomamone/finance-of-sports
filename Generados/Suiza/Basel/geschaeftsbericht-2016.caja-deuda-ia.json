@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2016.md",
+ "generado": "2026-10-19T17:57:45.560Z",
+ "modelo": "claude-sonnet-5-5",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "31.12.2016 CHF",
+ "caja": {
+  "lineas": [
+   903
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Solo aparece el activo de la FC Basel 1893 AG (L901-L922); el pasivo con los préstamos u obligaciones financieras no está en las páginas dadas, por eso no se puede elegir deuda ni afirmar que no existe. Los importes están en CHF completos (con decimales), sin escala en miles."
+}
