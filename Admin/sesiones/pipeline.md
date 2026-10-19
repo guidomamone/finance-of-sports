@@ -513,3 +513,10 @@ tiene texto, me guié por el nombre del archivo) y Ljungskile/United Nordic (Ett
 Referencias sacadas: 4 líneas de `altas-club.jsonl` (NEC Nijmegen, FC St. Gallen, FC Thun, FK RFS) y la ruta de NEC en `Admin/lotes/subagentes-pb-co.txt`. Quedan 2 casos de alta
 `name` en la cola de FC St. Gallen y FC Thun (sobre carpetas que desaparecen). **Falta correr en la principal, después del merge:**
 `node tools/mudar-carpetas.mjs` (ensayo), `--escribir`, `node tools/inventario-transcripciones.mjs`, `node tools/audit.js`.
+
+**298 ag (Guido, 2026-10-19).** `verificar.mjs`: escalón 2b "financiero por rótulo con signo" (valor impreso con su signo; misma compuerta exacta). Medido: 722
+documentos, 721 idénticos, OK 689 / COLA 33 antes y después; cambia solo Sarpsborg 2023. Saqué el ajuste `resultado-final` de Sarpsborg 2023 y la propuesta de carga da
+netInterest 0,008445 (las filas suman 8.445 NOK; el estado imprime 8 446, redondeo del documento). **HALLAZGO GRAVE, sin tocar:** el año 2023 de Sarpsborg 08 YA ESTÁ
+PUBLICADO con el defecto: `data/no/sarpsborg08-no-data.js` L573-588 tiene netInterest 2,634615, tax −21,607717 (fila "Impuesto deducido por ajuste manual") y officialPAT 0,000019
+en vez de 18,981564. Corrección propuesta (a confirmar con Guido; es un año público): netInterest 0,008445; tax 0 y sin la fila "Impuesto"; officialPAT 18,981564
+(ingresos 146,545052 − gastos 127,571931 + 0,008445 = 18,981566 contra 18,981564 impreso).

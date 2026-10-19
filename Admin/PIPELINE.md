@@ -328,6 +328,9 @@ Mitigaciones:
 - d) Año vecino: si el documento del año siguiente ya pasó por extraer, su columna "año anterior" tiene que coincidir.
 - e) Redondeo: si solo falta menos de media unidad por fila, se agrega una fila "Diferencia de redondeo".
 - f) **Escalera de lecturas** (si la base no cierra con un número impreso, se prueba la siguiente; gana la primera que cierra y queda escrita):
+  (to-do 298 ag) Escalón 2b, justo después: la misma lectura por rótulo pero con el valor IMPRESO con su signo, no su valor absoluto. Una reversión
+  negativa dentro de los costos financieros ("Annen finanskostnad" −136.202 dentro de "Sum finanskostnader" 1.313.085, Sarpsborg 08 2023) resta de
+  verdad. Misma compuerta (resultado exacto); la lectura se llama "financiero por rótulo con signo". Medido en 722 documentos: 721 idénticos.
 
 ```
  LECTURA 0  las filas tal cual ───────────────── ¿cierra? sí → OK
