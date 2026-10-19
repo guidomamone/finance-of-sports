@@ -59,6 +59,15 @@ window.RANKINGS["be-challengerproleague"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.738]] },
     ],
   },
+  2021: {
+    leagueSize: null,
+    wiki: {"t":"2020–21 Belgian First Division B","lang":"en","at":"2026-10-19","n":8},
+    clubs: [
+      { id:"rwdm-be", revenue:1.839, reportType:"official_balance_sheet",
+        sourceId:"rwdm-be-jaarrekening-2021-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.839]] },
+    ],
+  },
   2019: {
     leagueSize: null,
     wiki: {"t":"2018–19 Belgian First Division B","lang":"en","at":"2026-10-19","n":8},

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2021-06-30-individual.pdf",
  "md": "Clubes/Bélgica/RWDM/jaarrekening-2021-06-30-individual.md",
- "generado": "2026-10-18T19:16:12.227Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:16:59.663Z",
+ "estado": "ok",
  "clubId": "rwdm-be",
  "year": 2021,
  "escala": {
@@ -23,10 +23,7 @@
    "fecha": "2026-10-18"
   }
  ],
- "cola": [
-  "ad92adb",
-  "36a19b3"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -41,8 +38,8 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero e impuesto invertidos)",
-   "dif": 0.004999999999999893
+   "detalle": "cierra (como impresos)",
+   "dif": 0
   },
   {
    "nombre": "lectura",
@@ -57,7 +54,7 @@
   {
    "nombre": "documento del año 2022",
    "ok": true,
-   "detalle": "ingresos de 2021: 1.552882 en este documento y 1.552882 en jaarrekening-2022-06-30-individual.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2021: 1.547882 en este documento y 1.547882 en jaarrekening-2022-06-30-individual.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2020",
@@ -66,6 +63,7 @@
   }
  ],
  "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L240-L263, esquema abreviado); cierran exacto todos sus totales impresos",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
  ],
@@ -73,14 +71,14 @@
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 1.552882,
+  "ingresos": 1.547882,
   "gastos": 1.937571,
-  "financiero": 0.004664,
-  "impuesto": 0.001894,
+  "financiero": -0.004664,
+  "impuesto": -0.001894,
   "resultadoImpreso": -0.396247,
   "resultadoParaCargar": -0.396247,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero e impuesto invertidos"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -92,27 +90,11 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Waarvan: niet-recurrente bedrijfsopbrengsten",
-   "lado": "ingreso",
-   "M": 0.005,
-   "pagina": 7,
-   "linea": 241,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
    "lado": "gasto",
    "M": 1.758356,
    "pagina": 7,
    "linea": 244,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "lado": "gasto",
-   "M": 0.075693,
-   "pagina": 7,
-   "linea": 245,
    "origen": "estado"
   },
   {
@@ -138,11 +120,27 @@
    "pagina": 7,
    "linea": 250,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "M": 0.015265,
+   "pagina": 7,
+   "linea": 315,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.060428,
+   "pagina": 7,
+   "linea": 347,
+   "origen": "estado"
   }
  ],
  "signosCarga": {
-  "financiero": -1,
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {

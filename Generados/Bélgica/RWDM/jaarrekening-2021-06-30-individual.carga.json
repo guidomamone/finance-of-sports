@@ -1,22 +1,133 @@
 {
  "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2021-06-30-individual.pdf",
- "generado": "2026-10-18T19:18:21.006Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
-  }
+ "generado": "2026-10-19T14:23:55.077Z",
+ "frena": [],
+ "avisos": [
+  "gastos: ningún total impreso igual a la suma de las líneas (-1.799297); queda la suma, verificada por el resultado del ejercicio",
+  "gestión: ningún presidente confirmado cubre 2021 (cierre 2021-06-30); pregunta en la cola (no frena)"
  ],
- "avisos": [],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "rwdm-be",
+  "year": 2021,
+  "cierre": "2021-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Brutomarge (+)/(-)",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 1.547882,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.758356,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+    "normalizedCategory": "other_expenses",
+    "amountNative": 0.036391,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andere bedrijfskosten",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.001639,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Niet-recurrente bedrijfskosten",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -0.138274,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen immateriële vaste activa (spelers)",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -0.015265,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen materiële vaste activa",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.060428,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2021-06-30",
+   "sourceId": "rwdm-be-jaarrekening-2021-06-30-individual",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.004664,
+   "tax": -0.001894,
+   "extraRows": [
+    {
+     "label": "Recurrente financiële kosten",
+     "value": -0.004664
+    },
+    {
+     "label": "Belastingen op het resultaat (+)/(-)",
+     "value": -0.001894
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Brutomarge (+)/(-)",
+     "lado": "revenue",
+     "importe": 1.547882,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 1.547882,
+   "officialTotalExpenses": 1.799297,
+   "officialPAT": -0.396247
+  },
+  "source": {
+   "id": "rwdm-be-jaarrekening-2021-06-30-individual",
+   "clubId": "rwdm-be",
+   "title": "RWDM — jaarrekening-2021-06-30-individual (ejercicio 2021)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/RWDM/jaarrekening-2021-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Bélgica/RWDM/jaarrekening-2021-06-30-individual.md",
  "reemplaza": false,
  "periodo": {
@@ -29,5 +140,237 @@
  },
  "clubId": "rwdm-be",
  "year": 2021,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2021-06-30-individual.pdf",
+   "campo": "cierre",
+   "valor": "2021-06-30",
+   "linea": null,
+   "motivo": "del .md L29: \"| met betrekking tot het boekjaar dat de periode dekt van | 01-07-2020 tot 30-06-2021 |\" (Claude 2026-10-18)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "seleccion": {
+  "filas": 9,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Brutomarge (+)/(-)",
+   "page": 7,
+   "native": 1.547882,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.547882,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.547882
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "page": 7,
+   "native": 1.758356,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.758356,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.758356
+  },
+  {
+   "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "page": 7,
+   "native": 0.036391,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 4: signo impreso, resta en su lado))",
+   "signoFijo": -0.036391,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0.036391
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "page": 7,
+   "native": 0.001639,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.001639,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.001639
+  },
+  {
+   "label": "Niet-recurrente bedrijfskosten",
+   "page": 7,
+   "native": 0.138274,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.138274,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.138274
+  },
+  {
+   "label": "Afschrijvingen immateriële vaste activa (spelers)",
+   "page": 7,
+   "native": 0.015265,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.015265,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.015265
+  },
+  {
+   "label": "Afschrijvingen materiële vaste activa",
+   "page": 7,
+   "native": 0.060428,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.060428,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.060428
+  },
+  {
+   "label": "Recurrente financiële kosten",
+   "page": null,
+   "native": -0.004664,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Belastingen op het resultaat (+)/(-)",
+   "page": null,
+   "native": -0.001894,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (estado (lectura 4: signo impreso, resta en su lado))": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 1.547882,
+  "expSum": -1.799297,
+  "officialTotalRevenue": 1.547882,
+  "officialTotalExpenses": 1.799297,
+  "officialPAT": -0.396247,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.396247,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 1.547882
+  }
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "no hay ninguna liga-temporada de be 2021 cacheada",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2021,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): del .md L29: \"| met betrekking tot het boekjaar dat de periode dekt van | 01-07-2020 tot 30-06-2021 |\" (Claude 2026-10-18)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2021-06-30",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): del .md L29: \"| met betrekking tot het boekjaar dat de periode dekt van | 01-07-2020 tot 30-06-2021 |\" (Claude 2026-10-18))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el nombre del archivo dice que son los estados individuales (\"jaarrekening-2021-06-30-individual.pdf\"), y no hay un consolidado del mismo ejercicio en la carpeta",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Bélgica (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2021-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2021-06-30 = 0.8415 (Cierre BCE al 30/6/2021 (1 EUR = 1,1884 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "rwdm-be-jaarrekening-2021-06-30-individual",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": null,
+   "fuente": "no hay ninguna liga-temporada de be 2021 cacheada",
+   "estado": "pendiente"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 1,
+  "lineasGasto": 6,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
 }

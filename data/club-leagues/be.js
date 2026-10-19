@@ -20,7 +20,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'lommelsk-be': { 2025: 'be-challengerproleague', 2018: null },
   'ohleuven-be': { 2025: 'be-proleague', 2019: 'be-challengerproleague', 2021: 'be-proleague', 2024: 'be-proleague' },
   'patroeisden-be': { 2025: 'be-challengerproleague', 2016: 'be-challengerproleague', 2017: 'be-div1amateur', 2018: 'be-div1amateur', 2019: 'be-div2amateur', 2020: 'be-div1amateur', 2024: 'be-challengerproleague' },
-  'rwdm-be': { 2025: 'be-challengerproleague', 2020: null },
+  'rwdm-be': { 2025: 'be-challengerproleague', 2020: null, 2021: 'be-challengerproleague' },
   'beerschot-be': { 2025: 'be-proleague', 2019: 'be-challengerproleague', 2021: 'be-proleague', 2022: 'be-proleague', 2024: 'be-challengerproleague' },
   'raallalouviere-be': { 2025: 'be-challengerproleague' },
 });

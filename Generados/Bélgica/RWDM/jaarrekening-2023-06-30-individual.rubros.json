@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2023-06-30-individual.pdf",
   "club": "rwdm-be",
   "year": 2023,
-  "generatedAt": "2026-10-18T15:28:00.732Z",
+  "generatedAt": "2026-10-19T14:16:59.715Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -15,16 +15,6 @@
         1.628714
       ],
       "glosa": "Margen bruto (+)/(-)"
-    },
-    {
-      "label": "Waarvan: niet-recurrente bedrijfsopbrengsten",
-      "lado": "revenue",
-      "page": 7,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "De los cuales: ingresos de explotación no recurrentes"
     },
     {
       "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
@@ -44,7 +34,7 @@
       "values": [
         1.378945
       ],
-      "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material"
+      "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, inmovilizado intangible y material"
     },
     {
       "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (+)/(-) (terugnemingen)",

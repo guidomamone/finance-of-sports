@@ -1,0 +1,103 @@
+{
+ "md": "Clubes/Bélgica/RWDM/jaarrekening-2021-06-30-individual.md",
+ "club": "rwdm-be",
+ "year": 2021,
+ "generatedAt": "2026-10-19T14:23:51.020Z",
+ "rubrosHuella": "dccfeae2747e50f37babc8d75f818590da580be3",
+ "jevHuella": "b18c3e1737efe79e523c131ac1828d1ab1ac304e",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Brutomarge (+)/(-)",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Margen bruto (+)/(-)",
+   "page": 7,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "lump_football_operations",
+   "confianza": 1
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)",
+   "page": 7,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "expense",
+   "section": "estado (lectura 4: signo impreso, resta en su lado)",
+   "glosa": "Deterioros de valor de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)",
+   "page": 7,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 7,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  },
+  {
+   "label": "Niet-recurrente bedrijfskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de explotación no recurrentes",
+   "page": 7,
+   "pendiente": false,
+   "ya": "exceptional_items",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "exceptional_items",
+   "confianza": 1
+  },
+  {
+   "label": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortizaciones del inmovilizado intangible (jugadores)",
+   "page": 7,
+   "pendiente": false,
+   "ya": "player_amortisation",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "player_amortisation",
+   "confianza": 1
+  },
+  {
+   "label": "Afschrijvingen materiële vaste activa",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortizaciones del inmovilizado material",
+   "page": 7,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "depreciation",
+   "confianza": 1
+  }
+ ]
+}
