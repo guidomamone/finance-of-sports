@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 818 — Pantallas 3: tamaño de liga desde Wikipedia, Fortaleza con el CEO, la compuerta en la skill (2026-10-19)
+
+* 309: `generate-rankings.js` usa el tamaño de la lista de Wikipedia cuando no hay uno verificado: 289 liga-años muestran "N de los M" (eran 4).
+* 195: Fortaleza 2025 con el CEO Pedro Martins (decisión de Guido).
+* 273: la skill `club-or-year-onboarding` nombra la compuerta de estadio y sponsor (texto aprobado por Guido).
+* 284: Fredrikstad 2012 con sponsor (Stabburet) y marca con fuente, listo para cargar.
+
 ## Versión 817 — 298 ae: un año belga abreviado sin ingresos carga con ingresos 0 (2026-10-19)
 
 * `cargar.mjs`: si el escalón NBB y el resultado cierran, un año belga abreviado sin Omzet (Brutomarge negativa como gasto) carga

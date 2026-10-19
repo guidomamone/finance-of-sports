@@ -39,14 +39,13 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 238: llevar a 0 los documentos que quedaron a mitad de camino --> Onboarding 3
 * 261: Reino Unido: carga del fútbol inglés (lote 97, corriendo; el 98 y el alta de Celtic, lote 99, después); la cola de transcripción por Mistral --> Finanzas 5
 * 165 c: altas de los países nuevos que faltan --> Onboarding 3
-* 195: gestiones (presidentes) sin fuente confirmada (Fortaleza 2025: ¿CEO o presidente del consejo? lo decidís vos) --> Pantallas 3
-* 284: Fredrikstad 2012 (falta un sponsor con fuente) --> Pantallas 3
+* 195: gestiones (presidentes) sin fuente confirmada (casi todas esperan respuesta del club)
+* 284: Fredrikstad 2012: el sponsor ya está; falta que corras el lote 95
 * 283: Vålerenga y Aalesund: ya transcriptos; falta que decidas cómo se muestra la suma del AS y el FLI sin contar dos veces la transferencia
-* 273: nombrar la compuerta de estadio y sponsor en la skill de onboarding (con tu ok) --> Pantallas 3
+* 273: completar a mano los ejercicios sin estadio o sponsor, y que generate-sponsors sume el contexto manual
 
 **E. Pantallas**
 * 282: quién audita, lo que queda (Hamburgo 2024 con tu captcha) --> Pantallas 3; la compuerta del pipeline --> Pipeline 4
-* 309: tamaño de liga desde la lista de Wikipedia (a decidir con vos) --> Pantallas 3
 
 **E2. Distribución (depende de 246)**
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
@@ -213,8 +212,8 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    relacionada (con el criterio de socios, contaría); hoy la deuda es solo "Empréstimos".
 
 273. ESTADIO Y SPONSOR: LO QUE QUEDA. Cerrado salvo un punto (Guido, 2026-10-19: los ejercicios ya cargados sin sponsor quedan en null
-   y no se vuelven a buscar). Falta: nombrar la compuerta de `cargar.mjs` (sin estadio y sponsor no escribe un año nuevo, salvo en liga
-   amateur) en la skill `club-or-year-onboarding` (con ok de Guido; `Admin/PIPELINE.md` ya la nombra).
+   y no se vuelven a buscar). La compuerta ya está nombrada en la skill de onboarding (2026-10-19). Falta: completar a mano
+   los ejercicios sin estadio o sponsor y que `generate-sponsors.js` sume `tools/contexto-manual.json`.
 282. QUIÉN AUDITA: LO QUE QUEDA (pedido de Guido, 2026-10-17). Los 1004 balances tienen línea, la tarjeta de Finanzas está (con el
    "alcance" de una revisión limitada, procedimientos acordados, propósito especial o cuentas del grupo). Falta: (a) 56 informes del auditor
    que no están en ningún PDF nuestro (`node tools/auditoria.mjs --pendientes`, "FALTA EN EL PDF"): casi todos sin canal público, son candidatos a mail (sin pedir: Guido no lo quiere ahora);
@@ -227,8 +226,8 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    consolida. Sumar los dos documentos sin contar dos veces la transferencia, con una nota en Finanzas que explique la suma.
    Vålerenga: 46 PDFs sin `.md`; 40 `.md` de subagentes que cortaron por el límite de uso están SIN trackear y SIN verificar en
    fos-onboarding (algunos sin mirar las imágenes): validarlos con `pipeline.mjs --lista Admin/lotes/transcribir-valerenga.txt` o rehacerlos con Mistral.
-284. FREDRIKSTAD Y SARPSBORG 08: EL CLUB ES EL FLI (pedido de Guido, 2026-10-17). Fredrikstad: FLI 2013-2018 y 2024 cargados; falta
-   2012 (la cola está contestada, pero la Tippeligaen pide sponsor: falta uno con fuente en `tools/contexto-manual.json`). Sarpsborg 08:
+284. FREDRIKSTAD Y SARPSBORG 08: EL CLUB ES EL FLI (pedido de Guido, 2026-10-17). Fredrikstad: FLI 2013-2018 y 2024 cargados; 2012 ya
+   tiene sponsor con fuente (Stabburet): falta que Guido corra el lote 95. Sarpsborg 08:
    FLI 2012 y 2014-2025 cargados; 2008 sin liga confirmada. Pardubice: no darle el alta con lo que hay (es FK Junior z.s.); el sourcing de la a.s.
    lo hace Guido.
 287. QUE NO SE REPITA LA LIMPIEZA (cierre de onboarding). `audit.js` `carpeta-doble` ya está (P2): dio 25 hallazgos reales para mirar
@@ -262,9 +261,6 @@ af) listas de las ligas amateur belgas
    con ajustes si el resultado sigue exacto). El detalle,
    con líneas y montos, en `Admin/Archive/sesion-onboarding-2026-10-18-5.md`. k) alta-club.mjs / cargar-lote.mjs escriben la liga del alta en null aunque
    `altas-revision.jsonl` traiga las ligas verificadas (las 17 altas de los lotes 89-90): que el alta las tome de la revisión.
-309. TAMAÑO DE LIGA DESDE LA LISTA DE WIKIPEDIA (cierre de pantallas, a decidir con Guido). En 223 de los 227 liga-años con lista de
-   Wikipedia (`wiki` en `data/rankings/<liga>.js`) `leagueSize` es null, aunque la lista existe y alimenta los estimados: sin él no hay
-   "N de los M" en el subtítulo de Ligas ni "Faltan…". ¿El tamaño sale de la lista (`LEAGUE_SIZE_BY_YEAR`, `tools/listas-lote.mjs`)?
 270. ESTIMAR UN CLUB QUE NUNCA CARGAMOS: VOLVER A MEDIR (pedido de Guido, 2026-10-17). Está PRENDIDO desde el 2026-10-18 (decisión de
    Guido: en Ligas todo club sin balance figura como estimado), con 50% de error (regresión sin historia: mediana de la liga-año, división,
    posición en la tabla). Medido otra vez el 2026-10-19 con 1.011 club-años (`node tools/estimar.mjs --medir --detalle`): sigue en 50%,
@@ -284,8 +280,6 @@ af) listas de las ligas amateur belgas
       2017, OFI 2018 (administración judicial: sin gestión, decisión de Guido);
     - sin caso en la cola, buscados en la tanda-2026-10-19-2 sin confirmar (esperan respuesta del club, ya en `Admin/dudas-por-club.md`):
       Novorizontino 2010 y Cruzeiro 2024-2025 (Pedro Lourenço: compra firmada el 29-04-2024, CADE el 12-06-2024);
-    - decisión de Guido: Fortaleza 2025 lo firma el CEO Pedro Martins, no el presidente del consejo cargado (Barreira); ¿se carga al
-      ejecutivo? (si sí, el cierre queda sin fuente con su fecha de asunción).
     Las dudas de cada club, en "## Gestiones" de su `Admin/carga-clubes/<club>.md`; los casos `firmo` (la gestión cambió entre el cierre y
     la aprobación del balance), ahí mismo, sin cargar.
 
