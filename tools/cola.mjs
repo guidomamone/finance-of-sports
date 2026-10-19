@@ -349,6 +349,10 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       const r = resp.get(c.id);
       console.log(`  [${c.id}] etapa ${c.etapa} · ${c.motivo}${r ? `   -> RESPONDIDO: ${r.decision}${r.valor ? ` ${r.valor}` : ''}` : cerrado.get(c.id) ? '   -> CERRADO: obsoleto' : ''}`);
       console.log(`      ${(c.motivo.startsWith('duda-') || c.motivo === 'categoria' || c.motivo === 'perimetro' || c.motivo === 'perfil') && c.propuesta ? 'Pregunta' : 'Qué mirar'}: ${c.que}`);
+      // (to-do 323 d, ok de Guido 2026-10-19, camino 3) la IA escribe la pregunta de una duda en dos formas: "¿Se carga X?" (sí = se carga) y "¿Se deja
+      // afuera X?" (sí = queda afuera), con la misma propuesta "sí": el mismo criterio daba `aceptar` o `corregir "no"` y confundía. Solo se agrega una
+      // aclaración al listado; lo guardado (la pregunta, la propuesta, las respuestas) no cambia, porque verificar.mjs (to-do 211) lee las dos formas.
+      if (/^¿\s*Se\s+dejan?\s+afuera\b/i.test(String(c.que || ''))) console.log('      (en esta pregunta «sí» = queda AFUERA de la carga; «no» = se carga)');
       if (c.pagina) console.log(`      ${textoPagina(c)}`);
       if (c.lineas) console.log(`      En la transcripción (${c.md}), líneas ${c.lineas[0]}-${c.lineas[1]}.`);
       if (c.propuesta) console.log(`      Propuesta del sistema: ${c.propuesta}`);

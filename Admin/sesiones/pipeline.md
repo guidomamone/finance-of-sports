@@ -564,3 +564,7 @@ dice "No hay casos en la cola para ese lote o carpeta". No cambia respuestas ni 
 **298 ah (Basel 2005, 2009, 2012), diagnóstico, sin código:** reproducido con los derivados de Onboarding 3 (copiados un rato a mi árbol y borrados). "Total Ertrag" (38,2 M en 2005) se cuenta además de sus renglones
 porque `esSumaDe(arriba)` solo suma renglones, y "Matcheinnahmen" (16,13 M) es un SUBTOTAL con 4 hijos: los 7 renglones de arriba suman 22,09 y falta el subtotal-con-hijos para llegar a 38,22. Arreglo propuesto:
 en `esSumaDe`, un subtotal que tiene hijos (`detalla_a` igual a su etiqueta) cuenta como componente. A diseñar y medir con la completa.
+
+**323 d (Guido, 2026-10-19, camino 3).** El prompt de `extraer.mjs` y `localizar.mjs` trae de ejemplo "¿Se deja afuera de la carga el cuadro…?" y la IA copia esa forma (212 casos de la cola). Cambiar el prompt a una sola forma habría
+roto el escalón 211 de `verificar.mjs` (cierra una duda cuando Guido ya contestó la otra del mismo cuadro, y exige que una sea "dejar afuera"; en Grecia cerró 9 de 59). Hecho: `cola.mjs` agrega al listado, bajo cada pregunta "¿Se deja(n)
+afuera…?", la línea «sí» = queda AFUERA de la carga; «no» = se carga. Medido: aparece en los 212 casos que tienen esa forma (con --todas) y en ninguno más; la cola pendiente da lo mismo que antes (101 casos en 92 documentos); lo guardado no cambia.
