@@ -64,7 +64,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 **F. Datos para afuera (cuando haya tiempo; nada urgente)**
 * 248: taxonomía genérica y subcategorías por deporte (antes del esquema; resuelve también 130 y 183)
 * 130 y 183: otros deportes, polideportivos e Italia fuera del fútbol (después de 248)
-* 270: estimado de club nuevo, prendido con 50% de error: volver a medir con más datos
+* 270: estimado de club nuevo, prendido con 50% de error: volver a medir con más datos --> Finanzas 4
 * 245: datos como JSON con esquema
 * 247: registro público de correcciones (sobre 245)
 * 249: API en dominio propio (último; no construirla ahora)
