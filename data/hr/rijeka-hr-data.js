@@ -19,6 +19,19 @@ const rijekaHrRevenueLinesByYear = {
       ['Ostali nerazvrstani poslovni prihodi', 0.469019],
     ]},
   ],
+  2025: [
+    { rawLabel:'Dobit od prodaje igrača', normalizedCategory:'player_sales', amountNative:9.727, disclosureLevel:'aggregated' },
+    { rawLabel:'Prihodi od sponzorstava', normalizedCategory:'sponsorship_commercial', amountNative:1.513, disclosureLevel:'aggregated' },
+    { rawLabel:'Prihodi od prodaje ulaznica', normalizedCategory:'matchday_competition', amountNative:2.487, disclosureLevel:'aggregated' },
+    { rawLabel:'Prihodi od TV prava', normalizedCategory:'broadcasting', amountNative:1.336, disclosureLevel:'aggregated' },
+    { rawLabel:'Prihodi od prodaje ekonomskih prava igrača', normalizedCategory:'player_sales', amountNative:0.068, disclosureLevel:'aggregated' },
+    { rawLabel:'Najam poslovnog prostora', normalizedCategory:'other_income', amountNative:0.249, disclosureLevel:'aggregated' },
+    { rawLabel:'Ostali prihodi od prodaje', normalizedCategory:'sponsorship_commercial', amountNative:1.185, disclosureLevel:'aggregated' },
+    { rawLabel:'UEFA nagrade i solidarne uplate', normalizedCategory:'competition_bonus', amountNative:8.824, disclosureLevel:'aggregated' },
+    { rawLabel:'Donacije u zemlji', normalizedCategory:'other_income', amountNative:0.484, disclosureLevel:'aggregated' },
+    { rawLabel:'Prihodi od članarina', normalizedCategory:'member_dues', amountNative:0.315, disclosureLevel:'aggregated' },
+    { rawLabel:'Ostali nespomenuti prihodi', normalizedCategory:'other_income', amountNative:0.129, disclosureLevel:'aggregated' },
+  ],
 };
 
 const rijekaHrExpenseLinesByYear = {
@@ -37,6 +50,35 @@ const rijekaHrExpenseLinesByYear = {
     { rawLabel:'Ostali nerazvrstani poslovni rashodi', normalizedCategory:'other_expenses', amountNative:-4.372293, disclosureLevel:'detailed' },
     { rawLabel:'Amortizacija dugotrajne nematerijalne imovine (registracije igrača)', normalizedCategory:'player_amortisation', amountNative:-0.502826, disclosureLevel:'detailed' },
   ],
+  2025: [
+    { rawLabel:'Sportska oprema', normalizedCategory:'other_expenses', amountNative:-0.303, disclosureLevel:'aggregated' },
+    { rawLabel:'Roba za ambulantu', normalizedCategory:'other_expenses', amountNative:-0.086, disclosureLevel:'aggregated' },
+    { rawLabel:'Utrošene sirovine i materijal', normalizedCategory:'other_expenses', amountNative:-0.017, disclosureLevel:'aggregated' },
+    { rawLabel:'Ostalo', normalizedCategory:'other_expenses', amountNative:-0.288, disclosureLevel:'aggregated' },
+    { rawLabel:'Troškovi prodane robe', normalizedCategory:'other_expenses', amountNative:-0.334, disclosureLevel:'aggregated' },
+    { rawLabel:'Naknade igračima i trenerima', normalizedCategory:'wages_squad', amountNative:-10.031, disclosureLevel:'aggregated' },
+    { rawLabel:'Najam', normalizedCategory:'admin_general_expense', amountNative:-1.718, disclosureLevel:'aggregated' },
+    { rawLabel:'Intelektualne usluge', normalizedCategory:'admin_general_expense', amountNative:-1.026, disclosureLevel:'aggregated' },
+    { rawLabel:'Trošak održavanja utakmica', normalizedCategory:'match_organisation_expense', amountNative:-1.529, disclosureLevel:'aggregated' },
+    { rawLabel:'Vanjske usluge', normalizedCategory:'admin_general_expense', amountNative:-0.46, disclosureLevel:'aggregated' },
+    { rawLabel:'Pripreme igrača', normalizedCategory:'match_organisation_expense', amountNative:-0.584, disclosureLevel:'aggregated' },
+    { rawLabel:'Marketinški troškovi', normalizedCategory:'admin_general_expense', amountNative:-0.177, disclosureLevel:'aggregated' },
+    { rawLabel:'Prijevozne usluge', normalizedCategory:'match_organisation_expense', amountNative:-0.038, disclosureLevel:'aggregated' },
+    { rawLabel:'Ostale usluge', normalizedCategory:'other_expenses', amountNative:-0.617, disclosureLevel:'aggregated' },
+    { rawLabel:'Neto plaće i nadnice', normalizedCategory:'admin_general_expense', amountNative:-0.483, disclosureLevel:'aggregated' },
+    { rawLabel:'Troškovi poreza i doprinosa iz plaća', normalizedCategory:'admin_general_expense', amountNative:-0.21, disclosureLevel:'aggregated' },
+    { rawLabel:'Doprinosi na plaće', normalizedCategory:'admin_general_expense', amountNative:-0.114, disclosureLevel:'aggregated' },
+    { rawLabel:'Nematerijalne imovine', normalizedCategory:'player_amortisation', amountNative:-1.267, disclosureLevel:'aggregated' },
+    { rawLabel:'Materijalne imovine', normalizedCategory:'depreciation', amountNative:-0.01, disclosureLevel:'aggregated' },
+    { rawLabel:'Naknade za transfere igrača', normalizedCategory:'other_expenses', amountNative:-1.054, disclosureLevel:'aggregated' },
+    { rawLabel:'Reprezentacija', normalizedCategory:'admin_general_expense', amountNative:-0.64, disclosureLevel:'aggregated' },
+    { rawLabel:'Naknade i kazne savezima', normalizedCategory:'other_expenses', amountNative:-0.414, disclosureLevel:'aggregated' },
+    { rawLabel:'Porezi i doprinosi koji ne ovise o rezultatu', normalizedCategory:'admin_general_expense', amountNative:-0.042, disclosureLevel:'aggregated' },
+    { rawLabel:'Dnevnice i putni troškovi', normalizedCategory:'match_organisation_expense', amountNative:-0.073, disclosureLevel:'aggregated' },
+    { rawLabel:'Ostalo', normalizedCategory:'other_expenses', amountNative:-0.814, disclosureLevel:'aggregated' },
+    { rawLabel:'Vrijednosno usklađenje potraživanja', normalizedCategory:'other_expenses', amountNative:-0.209, disclosureLevel:'aggregated' },
+    { rawLabel:'Ostali poslovni rashodi', normalizedCategory:'other_expenses', amountNative:-0.402, disclosureLevel:'aggregated' },
+  ],
 };
 
 const rijekaHrFiscalYearMeta = {
@@ -51,6 +93,21 @@ const rijekaHrFiscalYearMeta = {
     tax:0,
     grossDebt:14.092288, cash:1.691323,
     officialTotalRevenue:8.370280, officialTotalExpenses:17.630494, officialPAT:0.042394,
+  },
+  2025: {
+    currency:'EUR', fxRef:'EUR@2025-12-31',
+    sourceId:'rijeka-hr-financijsko-izvjesce-2025',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.241, tax:0,
+    extraRows: [
+      {label:'Financijski prihodi', value:0.357},
+      {label:'Financijski rashodi', value:-0.598},
+      {label:'Porez na dobit', value:null},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:26.317, officialTotalExpenses:22.94, officialPAT:3.136,
   },
 };
 
@@ -72,6 +129,11 @@ Object.assign(sources, {
   'rijeka-hr-financijsko-izvjesce-2024-kombinirani': {
     id:'rijeka-hr-financijsko-izvjesce-2024-kombinirani', clubId:'rijeka-hr',
     title:'Revidirani godišnji kombinirani financijski izvještaji za posebne namjene za 2024. godinu (HNK Rijeka s.d.d. i Stadion Kantrida d.o.o.)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'rijeka-hr-financijsko-izvjesce-2025': {
+    id:'rijeka-hr-financijsko-izvjesce-2025', clubId:'rijeka-hr',
+    title:'Hrvatski nogometni klub Rijeka s.d.d. — financijsko-izvjesce-2025 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

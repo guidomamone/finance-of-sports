@@ -26,3 +26,5 @@
   administra el estadio y factura las entradas) en vez del individual, exigido desde octubre de
   2024 por el Pravilnik o licenciranju de la HNS — el individual habría subestimado el revenue
   real del club (las entradas se facturan a través de la subsidiaria). Tie-out exacto.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Croacia/Rijeka/financijsko-izvjesce-2025.pdf` (sourceId `rijeka-hr-financijsko-izvjesce-2025`).

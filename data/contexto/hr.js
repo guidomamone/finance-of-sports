@@ -21,6 +21,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'rijeka-hr': {
     2024: {"estadio":"Rujevica","capacidad":8191,"sponsor":"Favbet","marca":"Joma","temporada":"2024–25 Croatian Football League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378033710"},
+    2025: {"estadio":"Rujevica","capacidad":8191,"sponsor":"Favbet","marca":"Joma","temporada":"2025–26 Croatian Football League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380191288"},
   },
   'slavenbelupo-hr': {
     2025: {"estadio":"Stadion Ivan Kušek-Apaš","capacidad":3054,"sponsor":"Belupo","marca":"Jako","temporada":"2025–26 Croatian Football League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380191288"},
