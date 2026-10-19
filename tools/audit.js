@@ -1101,6 +1101,32 @@ function checkCarpetasClubes() {
     }
   }
 
+  // (to-do 287) Dos carpetas de club de un mismo país con PDFs de la MISMA huella: el club quedó con dos carpetas por una grafía distinta
+  // (la que no atrapa 'carpeta-club-duplicada', que solo mira nombres). Se compara por tamaño y solo si coincide se calcula el sha1.
+  // Sigue los symlinks (en un worktree, `worktree.mjs preparar` enlaza Clubes/ a la carpeta principal); las carpetas de agregado ("_...") alimentan varios clubes y quedan afuera.
+  for (const pais of paises) {
+    const porTam = {};
+    for (const club of subdirs(path.join(CLUBES_DIR, pais))) {
+      if (club.startsWith('_')) continue;
+      const base = path.join(CLUBES_DIR, pais, club);
+      const rec = d => fs.readdirSync(d).flatMap(n => { const p = path.join(d, n); let st; try { st = fs.statSync(p); } catch { return []; } return st.isDirectory() ? rec(p) : (st.isFile() && /\.pdf$/i.test(n) ? [p] : []); });
+      for (const f of rec(base)) (porTam[fs.statSync(f).size] = porTam[fs.statSync(f).size] || []).push({ club, f });
+    }
+    const porHuella = {};
+    for (const grupo of Object.values(porTam)) {
+      if (new Set(grupo.map(g => g.club)).size < 2) continue;
+      for (const g of grupo) {
+        const h = require('crypto').createHash('sha1').update(fs.readFileSync(g.f)).digest('hex');
+        (porHuella[h] = porHuella[h] || []).push(g);
+      }
+    }
+    for (const g of Object.values(porHuella)) {
+      const clubes = [...new Set(g.map(x => x.club))];
+      if (clubes.length < 2) continue;
+      add('P2', 'carpeta-doble', `Clubes/${pais}/: ${clubes.map(c => `"${c}"`).join(' y ')} tienen un PDF idéntico (${path.basename(g[0].f)}). O es el mismo club con dos carpetas (unirlas en la que ya resuelve a un club, tools/carpetas-clubes.mjs, y no abrir una segunda), o un documento que pertenece a uno solo y quedó guardado en el otro, o uno compartido a propósito (un informe de liga): ese se silencia en tools/audit-ignore.json`);
+    }
+  }
+
   // CLAUDE.md prohíbe una carpeta de club colgando directo de Clubes/, sin país en el medio.
   // Se detecta por el contenido y no por el nombre: una carpeta de PAÍS tiene subcarpetas de
   // club adentro, una de CLUB tiene los documentos sueltos.

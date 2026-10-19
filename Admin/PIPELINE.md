@@ -89,6 +89,8 @@ Mitigaciones:
   una sola vez. Hasta el to-do 298 e la condición era "sin la marca de Jev" de la preparación vieja, que casi todos los `.md` viejos tienen:
   marcaba 0; con la regla nueva, 238 (95 belgas; 100 de la lista de los 319 de la 292, decisión de Guido: Mistral, no subagentes; unas
   8.334 páginas). Un `.md` que ya pasó por verificar no se rehace (OH Leuven 2019 y 2021, que cierran por sus códigos NBB sin tablas).
+  (to-do 286) El ensayo (`--lista`/`--dir` sin `--ejecutar`) también lee esos candidatos y, si hay, imprime cuántos son, por país, y su
+  costo (el rehacer con Mistral que cotiza `resolver-inventario`); la corrida real es la que escribe la marca.
 - d) **Escalera** (escalón 1 construido; el 2 todavía no):
 
 ```
