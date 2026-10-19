@@ -1,15 +1,78 @@
 {
  "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2024.md",
- "generatedAt": "2026-10-19T12:58:10.024Z",
- "rubrosHuella": "b7fdf1409f0f9facaf85e8ac786241f689ecd924",
+ "generatedAt": "2026-10-19T15:05:44.659Z",
+ "rubrosHuella": "b21346138557f41782b994eb4339fef59881f9b1",
  "rubros": [
+  {
+   "label": "Billetinntekter",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Medlemsinntekter",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Reklame- og sponsorinntekter",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Mediainntekter",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
   {
    "label": "Salg/utleie spillere",
    "lado": "revenue",
-   "page": 39,
-   "section": "nota que desglosa \"Sum inntekter\" (escalón: la nota del subtotal)",
+   "page": 2,
+   "section": "estado",
    "choice": "player_sales",
    "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre salgsinntekter",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre inntekter",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Tilskudd",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
    "desdeCache": true
   },
   {
@@ -76,15 +139,6 @@
    "desdeCache": true
   },
   {
-   "label": "Reise- og oppholdskostnader bortekamper",
-   "lado": "expense",
-   "page": 2,
-   "section": "estado",
-   "choice": "match_organisation_expense",
-   "confidence": 1,
-   "desdeCache": true
-  },
-  {
    "label": "Andre kostnader",
    "lado": "expense",
    "page": 2,
@@ -112,27 +166,27 @@
    "desdeCache": true
   },
   {
-   "label": "Arrangement",
-   "lado": "revenue",
-   "page": 39,
-   "section": "nota que desglosa \"Sum inntekter\" (escalón: la nota del subtotal)",
-   "choice": "other_income",
-   "confidence": 0.45,
+   "label": "bortekamper",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
    "top3": [
     [
-     "other_income",
-     0.49
+     "match_organisation_expense",
+     1
     ],
     [
-     "matchday_competition",
-     0.44
+     "wages_squad",
+     0
     ],
     [
-     "lump_football_operations",
-     0.04
+     "player_amortisation",
+     0
     ]
    ],
-   "tokens": 1041
+   "tokens": 1028
   }
  ]
 }

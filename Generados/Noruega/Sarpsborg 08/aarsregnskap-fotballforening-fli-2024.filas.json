@@ -4,7 +4,7 @@
  "mdSha1": "c695f9bce4368c28bd186350372acc1e320fd15c",
  "ubicacionSha1": "5d851900f55654b1713d16c6f93d91a39d4b505b",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T12:57:41.187Z",
+ "generado": "2026-10-19T15:05:16.598Z",
  "ubicacion": {
   "estado": [
    "b1",
@@ -31,12 +31,12 @@
   {
    "bloque": "b31",
    "escala": "unidades",
-   "evidencia": "Nota 1 sin indicación; importes coinciden con el estado en NOK (L1521-L1522)"
+   "evidencia": "Sin indicación; importes coinciden con el estado en NOK (L1521 = L120)"
   },
   {
    "bloque": "b32",
    "escala": "unidades",
-   "evidencia": "Sum 57 647 797 coincide con Lønnskostnad L128 en NOK (L1537)"
+   "evidencia": "Sin indicación; Sum L1537 coincide con Lønnskostnad L128 en NOK"
   }
  ],
  "filas": [
@@ -173,7 +173,7 @@
   {
    "bloque": "b1",
    "linea": 132,
-   "etiqueta": "Reise- og oppholdskostnader bortekamper",
+   "etiqueta": "bortekamper",
    "actual": "3 970 701",
    "anterior": "3 906 665",
    "tipo": "renglon",
@@ -346,7 +346,7 @@
    "etiqueta": "Sum",
    "actual": "203 736 697",
    "anterior": "146 545 051",
-   "tipo": "total",
+   "tipo": "subtotal",
    "lado": "ingreso",
    "detalla_a": "Sum inntekter"
   },
@@ -416,16 +416,16 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga el cuadro 'Geografisk fordeling' de la Note 1 (L1523-L1525), cuyo importe 2024 '203 763 697' difiere en 27 000 del total 203 736 697?",
+   "pregunta": "¿Se deja afuera de la carga el desglose geográfico 'Norge' 203 763 697 (L1524-L1525), que difiere en 27 000 del total del estado?",
    "propuesta": "sí",
    "tema": "cuadro-duplicado",
    "renglon": "Sum inntekter",
-   "texto": "L1524-L1525 repiten el total de ingresos con un probable error de tipeo (203 763 697 vs 203 736 697) y duplicarían el desglose.",
+   "texto": "L1524 imprime 203 763 697 frente a 203 736 697 de L124/L1522; parece error de tipeo y además repite el total.",
    "bloques": [
     "b31"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "No existen en el documento renglones o cuadros de 'Televisión', 'Estadio' ni 'Cuotas sociales' como cuadros separados; sus equivalentes son renglones del estado: Mediainntekter (L119), Billetinntekter (L116) y Medlemsinntekter (L117), ya extraídos. No hay impuesto impreso (Resultat før skattekostnad = Årsresultat). Las líneas L158-L162 (minoritarios, totalresultat, disposición) se omitieron por ser asignación del resultado. Note 1 desglosa los ingresos por área de negocio; 'Arrangement' agrupa los ingresos distintos de venta de jugadores."
+ "observaciones": "Escala NOK en unidades. Netto finans 2023 impreso 8 446 (consistente con 1 321 530-1 313 085). L130 sin importes. 'Reise- og oppholdskostnader' (L131) y 'bortekamper' (L132) son un mismo renglón partido en dos líneas; se tomó la etiqueta de L132. No hay renglón de impuesto (antes y después de impuestos iguales)."
 }

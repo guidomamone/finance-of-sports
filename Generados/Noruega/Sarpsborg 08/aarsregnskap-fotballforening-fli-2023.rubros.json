@@ -3,98 +3,198 @@
   "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2023.pdf",
   "club": "sarpsborg08-no",
   "year": 2023,
-  "generatedAt": "2026-10-19T12:41:27.842Z",
+  "generatedAt": "2026-10-19T15:05:16.806Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
-      "label": "Salgsinntekt",
+      "label": "Billetinntekter",
       "lado": "revenue",
-      "page": 6,
+      "page": 13,
       "section": "estado",
       "values": [
-        40.765792
+        6.302385
       ],
-      "glosa": "Ingresos por ventas"
+      "glosa": "Ingresos por taquilla"
     },
     {
-      "label": "Annen driftsinntekt",
+      "label": "Medlemsinntekter",
       "lado": "revenue",
-      "page": 6,
+      "page": 13,
       "section": "estado",
       "values": [
-        125.780071
+        0.665719
       ],
-      "glosa": "Otros ingresos de explotación"
+      "glosa": "Ingresos por cuotas de socios"
     },
     {
-      "label": "Varekostnad",
+      "label": "Andre salgsinntekter",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        6.436355
+      ],
+      "glosa": "Otros ingresos por ventas"
+    },
+    {
+      "label": "Andre inntekter",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        6.052044
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Reklame- og sponsorinntekter",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        32.037096
+      ],
+      "glosa": "Ingresos por publicidad y patrocinio"
+    },
+    {
+      "label": "Mediainntekter",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        20.144288
+      ],
+      "glosa": "Ingresos por derechos audiovisuales y de medios"
+    },
+    {
+      "label": "Tilskudd",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        1.236754
+      ],
+      "glosa": "Subvenciones"
+    },
+    {
+      "label": "Salg/utleie spillere",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        73.670411
+      ],
+      "glosa": "Venta y cesión de jugadores"
+    },
+    {
+      "label": "Trening, matriell, kamp kostn.",
       "lado": "expense",
-      "page": 6,
+      "page": 13,
       "section": "estado",
       "values": [
-        51.56583
+        8.77361
       ],
-      "glosa": "Coste de ventas"
+      "glosa": "Gastos de entrenamientos, material y partidos"
+    },
+    {
+      "label": "Reise- og oppholdskostnader bortekamper",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        3.906665
+      ],
+      "glosa": "Gastos de viaje y estancia en partidos como visitante"
+    },
+    {
+      "label": "Salgskostnader",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        26.151779
+      ],
+      "glosa": "Gastos de venta"
     },
     {
       "label": "Lønninger",
       "lado": "expense",
-      "page": 31,
+      "page": 18,
       "section": "nota que desglosa \"Lønnskostnad\"",
       "values": [
-        50.647233
+        46.202519
       ],
       "glosa": "Sueldos y salarios"
     },
     {
       "label": "Arbeidsgiveravgift",
       "lado": "expense",
-      "page": 31,
+      "page": 18,
       "section": "nota que desglosa \"Lønnskostnad\"",
       "values": [
-        7.87003
+        7.378294
       ],
       "glosa": "Seguridad social a cargo de la empresa"
     },
     {
       "label": "Pensjonskostnader",
       "lado": "expense",
-      "page": 31,
+      "page": 18,
       "section": "nota que desglosa \"Lønnskostnad\"",
       "values": [
-        0.694884
+        0.484455
       ],
-      "glosa": "Gastos por pensiones"
+      "glosa": "Gastos por planes de pensiones"
     },
     {
       "label": "Andre ytelser",
       "lado": "expense",
-      "page": 31,
+      "page": 18,
       "section": "nota que desglosa \"Lønnskostnad\"",
       "values": [
-        0.142062
+        0.008618
       ],
       "glosa": "Otras retribuciones al personal"
     },
     {
       "label": "Avskrivning av driftsmidler og immaterielle eiendeler",
       "lado": "expense",
-      "page": 6,
+      "page": 13,
       "section": "estado",
       "values": [
-        7.19058
+        6.618286
       ],
       "glosa": "Amortización de inmovilizado material e intangible"
     },
     {
-      "label": "Annen driftskostnad",
+      "label": "Andre kostnader",
       "lado": "expense",
-      "page": 6,
+      "page": 13,
       "section": "estado",
       "values": [
-        29.769619
+        13.777199
       ],
-      "glosa": "Otros gastos de explotación"
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Reklame- og sponsorkostnader",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        5.997944
+      ],
+      "glosa": "Gastos de publicidad y patrocinio"
+    },
+    {
+      "label": "Admkost",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        8.272562
+      ],
+      "glosa": "Gastos de administración"
     }
   ]
 }

@@ -3,7 +3,7 @@
  "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2023.md",
  "mdSha1": "5ad232f038f696f20368130bf3e0b9ea91b6a210",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T14:53:10.783Z",
+ "generado": "2026-10-19T15:03:32.517Z",
  "perimetroClub": "individual",
  "bloques": {
   "b1": {
@@ -585,8 +585,7 @@
  },
  "sin_estado": false,
  "estado": [
-  "b1",
-  "b2"
+  "b22"
  ],
  "notas_ingresos": [
   "b27"
@@ -595,7 +594,7 @@
   "b28"
  ],
  "escala": "unidades",
- "escala_evidencia": "Belep i: NOK",
+ "escala_evidencia": "Belep i: NOK (encabezado del RESULTATREGNSKAP individual, b1); b22 muestra importes en coronas enteras (p. ej. 146 545 051)",
  "moneda": "NOK",
  "columna_ejercicio": "2023",
  "columna_anterior": "2022",
@@ -603,30 +602,34 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se carga 'Salgskostnader' 26 151 779 (b22) en lugar de la etiqueta 'Endring i beholdning av varer...' que figura en b1 para el mismo importe?",
+   "pregunta": "¿Se deja afuera de la carga la copia del estado individual de pág. 37 (b55) y sus notas (b60, b61) por ser duplicado de b22, b27 y b28?",
    "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "Endring i beholdning av varer under tilvirkning og ferdig tilvirkede varer",
-   "texto": "b1 rotula como variación de existencias el importe que b22 llama Salgskostnader (costo de ventas).",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b55/b60/b61 repiten encabezados, filas y páginas relativas de b22/b27/b28.",
    "bloques": [
-    "b1",
-    "b22"
+    "b55",
+    "b60",
+    "b61",
+    "b22",
+    "b27",
+    "b28"
    ],
    "afecta_carga": false
   },
   {
-   "pregunta": "¿Se dejan afuera de la carga los cuadros b22, b40 y b55 por ser copias o versiones alternativas del resultado individual?",
+   "pregunta": "¿Se usa el estado individual detallado b22 en lugar del formato resumido b1 (pág. 2), por tener el mismo resultado antes de impuestos 18 981 564?",
    "propuesta": "sí",
    "tema": "cuadro-duplicado",
-   "renglon": "",
-   "texto": "b22/b55 repiten importes de b1; b40 parece de otra entidad o formato con columna anterior ilegible.",
+   "renglon": "Resultat før skattekostnad",
+   "texto": "b1/b2 y b22 son el mismo estado individual (resultado 18 981 564 / -6 293 879); b22 abre más los ingresos.",
    "bloques": [
-    "b22",
-    "b40",
-    "b55"
+    "b1",
+    "b2",
+    "b22"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "b1+b2: resultado individual de la Fotballforening (perímetro usado). b11: KONSERNRESULTATREGNSKAP (consolidado), no elegido por el perímetro histórico individual. b27 (Note 1 Salgsinntekter) y b28 (Note 2 Lønnskostnader) son las notas del juego individual; b60/b61 y b44/b45 son duplicados o de otro juego de cuentas."
+ "observaciones": "Individual (Sarpsborg 08 Fotballforening): b1/b2 (formato registro), b22 (detallado, elegido), duplicado b55; notas b27 (Note 1 Salgsinntekter) y b28 (Note 2 Lønnskostnader), duplicadas en b60/b61. Consolidado (konsern): b11 (KONSERNRESULTATREGNSKAP) y b40 (pág. 25, con Majoritetens andel, ingresos 166 545 863), con notas b44, b45, b49, b50. Se eligió el individual por ser el perímetro de los años cargados."
 }

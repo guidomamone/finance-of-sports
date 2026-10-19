@@ -21,9 +21,11 @@ window.RANKINGS["no-eliteserien"] = {
   },
   2024: {
     leagueSize: null,
-    sinDato: ["sarpsborg08-no"],
     wiki: {"t":"2024 Eliteserien","lang":"en","at":"2026-09-30","n":16},
     clubs: [
+      { id:"sarpsborg08-no", revenue:17.945, reportType:"official_balance_sheet",
+        sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2024",
+        mix:[["Cuotas Sociales",0.051],["Comercial / Sponsors",2.601],["Estadio",0.567],["Televisión",1.649],["Venta de Jugadores",11.856],["Otros ingresos",1.222]] },
       { id:"fredrikstad-no", revenue:8.167, reportType:"official_balance_sheet",
         sourceId:"fredrikstad-no-wf-src-ffk-arsmote-2025",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",8.167]],

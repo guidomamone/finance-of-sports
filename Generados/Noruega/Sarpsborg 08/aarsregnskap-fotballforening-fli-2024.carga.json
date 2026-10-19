@@ -1,19 +1,9 @@
 {
  "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2024.pdf",
- "generado": "2026-10-19T13:00:23.110Z",
- "frena": [
-  {
-   "etapa": "tie-out-resultado",
-   "motivo": "resultado: ingresos 134.601796 + gastos -171.341764 + netInterest -2.669765 + tax 0 = -39.409733 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" 29.725168)"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "ingresos: las filas suman 134.601796 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
-  }
- ],
+ "generado": "2026-10-19T15:05:46.066Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del documento, 2026-10-19: la controlada es Prozo AS (100%, comprada en 2021), un negocio comercial aparte que no es el fútbol del club (mismo criterio que el 2025); el club es el FLI en cuentas individuales)",
-  "categorías en 0 aun después del reintento (se carga así): Televisión, Estadio, Cuotas sociales",
   "gestión: ningún presidente confirmado cubre 2024 (cierre 2024-12-31); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -23,12 +13,82 @@
   "perimetro": "individual",
   "revenueLines": [
    {
+    "rawLabel": "Billetinntekter",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 6.443008,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Medlemsinntekter",
+    "normalizedCategory": "member_dues",
+    "amountNative": 0.57349,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Reklame- og sponsorinntekter",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 29.530394,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Mediainntekter",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 18.716329,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
     "rawLabel": "Salg/utleie spillere",
     "normalizedCategory": "player_sales",
     "amountNative": 134.601796,
     "disclosureLevel": "aggregated",
-    "_pag": 39,
-    "_escalon": 1,
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre salgsinntekter",
+    "normalizedCategory": "other_income",
+    "amountNative": 6.625487,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Andre inntekter",
+    "normalizedCategory": "other_income",
+    "amountNative": 6.280725,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Tilskudd",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.965469,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    }
@@ -40,7 +100,7 @@
     "amountNative": -61.027262,
     "disclosureLevel": "aggregated",
     "_pag": 2,
-    "_escalon": 1,
+    "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -105,12 +165,12 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "Reise- og oppholdskostnader bortekamper",
+    "rawLabel": "bortekamper",
     "normalizedCategory": "match_organisation_expense",
     "amountNative": -3.970701,
     "disclosureLevel": "aggregated",
     "_pag": 2,
-    "_escalon": 0,
+    "_escalon": 1,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
    },
@@ -155,11 +215,29 @@
    "assetSales": 0,
    "netInterest": -2.669765,
    "tax": 0,
+   "extraRows": [
+    {
+     "label": "Annen renteinntekt",
+     "value": 0.34324
+    },
+    {
+     "label": "Annen finansinntekt",
+     "value": 0.677255
+    },
+    {
+     "label": "Annen rentekostnad",
+     "value": -1.324701
+    },
+    {
+     "label": "Annen finanskostnad",
+     "value": -2.365559
+    }
+   ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": null,
+   "officialTotalRevenue": 203.736698,
    "officialTotalExpenses": 171.341764,
-   "officialPAT": null
+   "officialPAT": 29.725168
   },
   "source": {
    "id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2024",
@@ -198,40 +276,131 @@
   }
  ],
  "seleccion": {
-  "filas": 17,
+  "filas": 23,
   "notasUsadas": [],
   "refM": null
  },
  "filas": [
   {
-   "label": "Arrangement",
-   "page": 39,
-   "native": 69.134901,
+   "label": "Billetinntekter",
+   "page": 2,
+   "native": 6.443008,
    "ladoDoc": "revenue",
-   "origen": "verificacion (nota que desglosa \"Sum inntekter\" (escalón: la nota del subtotal))",
-   "signoFijo": 69.134901,
-   "cat": "no_es_rubro",
+   "origen": "verificacion (estado)",
+   "signoFijo": 6.443008,
+   "cat": "matchday_competition",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "categorias.json",
    "enLista": true,
-   "notaGuido": "Claude 2026-10-19: Note 1 del 2024 (L1520) reparte el mismo total por área (Arrangement + Salg/utleie spillere = 203.736.697); el estado individual ya abre cada ingreso y la nota duplicaría",
-   "destino": "excluida"
+   "destino": "revenue",
+   "amountNative": 6.443008
+  },
+  {
+   "label": "Medlemsinntekter",
+   "page": 2,
+   "native": 0.57349,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.57349,
+   "cat": "member_dues",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.57349
+  },
+  {
+   "label": "Reklame- og sponsorinntekter",
+   "page": 2,
+   "native": 29.530394,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 29.530394,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 29.530394
+  },
+  {
+   "label": "Mediainntekter",
+   "page": 2,
+   "native": 18.716329,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 18.716329,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 18.716329
   },
   {
    "label": "Salg/utleie spillere",
-   "page": 39,
+   "page": 2,
    "native": 134.601796,
    "ladoDoc": "revenue",
-   "origen": "verificacion (nota que desglosa \"Sum inntekter\" (escalón: la nota del subtotal))",
+   "origen": "verificacion (estado)",
    "signoFijo": 134.601796,
    "cat": "player_sales",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "revenue",
    "amountNative": 134.601796
+  },
+  {
+   "label": "Andre salgsinntekter",
+   "page": 2,
+   "native": 6.625487,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 6.625487,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Renglon propio del FLI (L125), separado de entradas, socios, sponsors, medios y venta de jugadores; el documento no lo abre (en el consolidado, Omsetning av varer es 23 767 785). Otros ingresos. [Andre salgsinntekter 13 051 656 (L125)]",
+   "destino": "revenue",
+   "amountNative": 6.625487
+  },
+  {
+   "label": "Andre inntekter",
+   "page": 2,
+   "native": 6.280725,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 6.280725,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 6.280725
+  },
+  {
+   "label": "Tilskudd",
+   "page": 2,
+   "native": 0.965469,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.965469,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.965469
   },
   {
    "label": "Endring i beholdning av varer under tilvirkning og ferdig tilvirkede varer",
@@ -242,7 +411,7 @@
    "signoFijo": 61.027262,
    "cat": "other_expenses",
    "conf": 1,
-   "escalon": 1,
+   "escalon": 0,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -344,7 +513,7 @@
    "amountNative": -11.134394
   },
   {
-   "label": "Reise- og oppholdskostnader bortekamper",
+   "label": "bortekamper",
    "page": 2,
    "native": 3.970701,
    "ladoDoc": "expense",
@@ -352,7 +521,7 @@
    "signoFijo": 3.970701,
    "cat": "match_organisation_expense",
    "conf": 1,
-   "escalon": 0,
+   "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
@@ -450,21 +619,33 @@
  ],
  "signos": {
   "porTabla": {
-   "verificacion (nota que desglosa \"Sum inntekter\" (escalón: la nota del subtotal))": "gastos con signo",
    "verificacion (estado)": "gastos sin signo (se invierten)",
    "verificacion (nota que desglosa \"Lønnskostnad\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 134.601796,
+  "revSum": 203.736698,
   "expSum": -171.341764,
-  "officialTotalRevenue": null,
+  "officialTotalRevenue": 203.736698,
   "officialTotalExpenses": 171.341764,
-  "officialPAT": null,
+  "officialPAT": 29.725168,
   "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
    "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 29.725168,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 203.736698
   },
   "expImpreso": {
    "label": "total de gastos (verificado)",
@@ -520,11 +701,11 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
-  "lineasIngreso": 1,
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 8,
   "lineasGasto": 11,
   "metaFilas": 4,
-  "excluidas": 1
+  "excluidas": 0
  }
 }
