@@ -139,6 +139,43 @@ cada ejercicio (Strategic Report: "finishing in 11th position" en 2023/24, "fini
 position" en 2024/25).
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Matchday | pág. 25, precedente |
+| 2 | Broadcasting | pág. 25, precedente |
+| 3 | Commercial | pág. 25, precedente |
+| 4 | Other | pág. 25, precedente |
+| 5 | Profit on player trading | pág. 16, Jev 0.99 |
+| 6 | Other operating income | pág. 16, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Cost of sales | pág. 16, Claude 0.88 |
+| 2 | Operating expenses | pág. 16, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2021–22 Premier League" (tools/club-league-reference/gb.json), coincidencia única por palabras "Brighton & Hove Albion" = "Brighton".
+```
+
 ## 2021
 
 ### Ingresos
@@ -244,6 +281,14 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### brighton-gb-full-accounts-2021-22
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros
