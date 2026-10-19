@@ -23,6 +23,15 @@ window.RANKINGS["ch-superleague"] = {
         mix:[["Comercial / Sponsors",10.121],["Estadio",5.83],["Televisión",3.119],["Premios por competencias",21.052],["Venta de Jugadores",7.267],["Otras secciones deportivas",2.539],["Otros ingresos",15.186]] },
     ],
   },
+  2007: {
+    leagueSize: 10,
+    wiki: {"t":"2006–07 Swiss Super League","lang":"en","at":"2026-10-19","n":10},
+    clubs: [
+      { id:"basel-ch", revenue:43.195, reportType:"official_balance_sheet",
+        sourceId:"basel-ch-geschaeftsbericht-2007",
+        mix:[["Comercial / Sponsors",6.686],["Estadio",5.978],["Televisión",1.618],["Premios por competencias",13.451],["Venta de Jugadores",14.139],["Otras secciones deportivas",0.504],["Otros ingresos",0.819]] },
+    ],
+  },
   2006: {
     leagueSize: 10,
     wiki: {"t":"2005–06 Swiss Super League","lang":"en","at":"2026-10-19","n":10},
