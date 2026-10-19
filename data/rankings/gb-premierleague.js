@@ -121,6 +121,9 @@ window.RANKINGS["gb-premierleague"] = {
         sourceId:"arsenal-gb-holdings-group-accounts-2021-22",
         mix:[["Venta de Jugadores",28.022],["Fútbol profesional (sin desglosar por la fuente)",468.64]],
         incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"crystalpalace-gb", revenue:194.287, reportType:"official_balance_sheet",
+        sourceId:"crystalpalace-gb-cpfc-2010-group-accounts-2021-22",
+        mix:[["Comercial / Sponsors",14.137],["Estadio",13.918],["Televisión",153.597],["Otros ingresos",12.635]] },
     ],
   },
 };

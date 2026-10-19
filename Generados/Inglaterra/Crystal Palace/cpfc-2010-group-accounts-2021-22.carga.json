@@ -1,0 +1,508 @@
+{
+ "pdf": "Clubes/Inglaterra/Crystal Palace/cpfc-2010-group-accounts-2021-22.pdf",
+ "generado": "2026-10-19T16:31:55.781Z",
+ "frena": [],
+ "avisos": [
+  "perímetro heredado del año cargado más cercano (2024, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2024 consolidado, 2025 consolidado"
+ ],
+ "ejercicio": {
+  "clubId": "crystalpalace-gb",
+  "year": 2022,
+  "cierre": "2022-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Broadcasting",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 126.49,
+    "disclosureLevel": "aggregated",
+    "_pag": 25,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sponsorship and advertising",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 11.642,
+    "disclosureLevel": "aggregated",
+    "_pag": 25,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gate receipts",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 11.462,
+    "disclosureLevel": "aggregated",
+    "_pag": 25,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other commercial activities",
+    "normalizedCategory": "other_income",
+    "amountNative": 8.706,
+    "disclosureLevel": "aggregated",
+    "_pag": 25,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other income",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.699,
+    "disclosureLevel": "aggregated",
+    "_pag": 25,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Profit on disposal of players",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Wages and salaries",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -108.701,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 2,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Social security costs",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -14.955,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other pension costs",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.179,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 2,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other operating charges",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -19.458,
+    "disclosureLevel": "aggregated",
+    "_pag": 25,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Depreciation",
+    "normalizedCategory": "depreciation",
+    "amountNative": -2.396,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortisation",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -34.151,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2022-06-30",
+   "sourceId": "crystalpalace-gb-cpfc-2010-group-accounts-2021-22",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -4.388,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Interest receivable",
+     "value": 0.018
+    },
+    {
+     "label": "Interest payable and similar charges",
+     "value": -4.406
+    },
+    {
+     "label": "Taxation",
+     "value": null
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 159.999,
+   "officialTotalExpenses": 179.84,
+   "officialPAT": -24.229
+  },
+  "source": {
+   "id": "crystalpalace-gb-cpfc-2010-group-accounts-2021-22",
+   "clubId": "crystalpalace-gb",
+   "title": "CPFC 2010 Limited — cpfc-2010-group-accounts-2021-22 (ejercicio 2022)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Crystal Palace/cpfc-2010-group-accounts-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
+ "md": "Clubes/Inglaterra/Crystal Palace/cpfc-2010-group-accounts-2021-22.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2022-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "crystalpalace-gb",
+ "year": 2022,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 15,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Broadcasting",
+   "page": 25,
+   "native": 126.49,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 126.49,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 126.49
+  },
+  {
+   "label": "Sponsorship and advertising",
+   "page": 25,
+   "native": 11.642,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 11.642,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 11.642
+  },
+  {
+   "label": "Gate receipts",
+   "page": 25,
+   "native": 11.462,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 11.462,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 11.462
+  },
+  {
+   "label": "Other commercial activities",
+   "page": 25,
+   "native": 8.706,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 8.706,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 8.706
+  },
+  {
+   "label": "Other income",
+   "page": 25,
+   "native": 1.699,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"TURNOVER\")",
+   "signoFijo": 1.699,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.699
+  },
+  {
+   "label": "Profit on disposal of players",
+   "page": 14,
+   "native": 0,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "player_sales",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0
+  },
+  {
+   "label": "Wages and salaries",
+   "page": 26,
+   "native": 108.701,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses before depreciation & amortisation\" > desglose de \"Staff costs (see note 6)\")",
+   "signoFijo": 108.701,
+   "cat": "wages_squad",
+   "conf": 0.93,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -108.701
+  },
+  {
+   "label": "Social security costs",
+   "page": 26,
+   "native": 14.955,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses before depreciation & amortisation\" > desglose de \"Staff costs (see note 6)\")",
+   "signoFijo": 14.955,
+   "cat": "wages_squad",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -14.955
+  },
+  {
+   "label": "Other pension costs",
+   "page": 26,
+   "native": 0.179,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses before depreciation & amortisation\" > desglose de \"Staff costs (see note 6)\")",
+   "signoFijo": 0.179,
+   "cat": "wages_squad",
+   "conf": 0.9,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.179
+  },
+  {
+   "label": "Other operating charges",
+   "page": 25,
+   "native": 19.458,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses before depreciation & amortisation\")",
+   "signoFijo": 19.458,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -19.458
+  },
+  {
+   "label": "Depreciation",
+   "page": 14,
+   "native": 2.396,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.396,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.396
+  },
+  {
+   "label": "Amortisation",
+   "page": 14,
+   "native": 34.151,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 34.151,
+   "cat": "player_amortisation",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -34.151
+  },
+  {
+   "label": "Interest receivable",
+   "page": null,
+   "native": 0.018,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Interest payable and similar charges",
+   "page": null,
+   "native": -4.406,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Taxation",
+   "page": null,
+   "native": null,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"TURNOVER\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Operating expenses before depreciation & amortisation\" > desglose de \"Staff costs (see note 6)\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Operating expenses before depreciation & amortisation\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 159.999,
+  "expSum": -179.84,
+  "officialTotalRevenue": 159.999,
+  "officialTotalExpenses": 179.84,
+  "officialPAT": -24.229,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -24.229,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 159.999
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 179.84
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "GBP@2022-06-30",
+  "fx": 0.82352,
+  "source": "market_close",
+  "label": "Tipo spot del Bank of England al 2022-06-30"
+ },
+ "liga": {
+  "valor": "gb-premierleague",
+  "fuente": "roster cacheado de \"2021–22 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Crystal Palace\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2022,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2022-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (65 de 66 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "heredado del año cargado más cercano",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Inglaterra (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "GBP@2022-06-30",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 0.82352. --escribir agrega 'GBP@2022-06-30' a FX_CLOSE",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "crystalpalace-gb-cpfc-2010-group-accounts-2021-22",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gb-premierleague",
+   "fuente": "roster cacheado de \"2021–22 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Crystal Palace\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 6,
+  "lineasGasto": 6,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

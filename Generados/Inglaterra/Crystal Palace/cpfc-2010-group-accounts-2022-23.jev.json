@@ -1,0 +1,138 @@
+{
+ "md": "Clubes/Inglaterra/Crystal Palace/cpfc-2010-group-accounts-2022-23.md",
+ "generatedAt": "2026-10-19T16:00:10.333Z",
+ "rubrosHuella": "b2c373818dd7e5a50a590585e3556d991098a080",
+ "rubros": [
+  {
+   "label": "Broadcasting",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sponsorship and advertising",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Gate receipts",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Other commercial activities",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Other income",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Profit on disposal of players",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Wages and salaries",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Operating expenses before depreciation & amortisation\" > desglose de \"Staff costs (see note 6)\"",
+   "choice": "wages_squad",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Social security costs",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Operating expenses before depreciation & amortisation\" > desglose de \"Staff costs (see note 6)\"",
+   "choice": "wages_squad",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Other pension costs",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Operating expenses before depreciation & amortisation\" > desglose de \"Staff costs (see note 6)\"",
+   "choice": "wages_squad",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Other operating charges",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Operating expenses before depreciation & amortisation\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciation",
+   "lado": "expense",
+   "page": 13,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortisation",
+   "lado": "expense",
+   "page": 13,
+   "section": "estado",
+   "choice": "player_amortisation",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Profit on disposal of plant & machinery",
+   "lado": "revenue",
+   "page": 13,
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "stadium_other",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1053
+  }
+ ]
+}

@@ -15,7 +15,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'brentford-gb':   { 2024: 'gb-premierleague', 2025: 'gb-premierleague' },
   'burnley-gb':     { 2024: 'gb-premierleague', 2025: 'gb-championship' },
   'newcastle-gb':      { 2025: 'gb-premierleague' },
-  'crystalpalace-gb':  { 2024: 'gb-premierleague', 2025: 'gb-premierleague' },
+  'crystalpalace-gb':  { 2024: 'gb-premierleague', 2025: 'gb-premierleague', 2022: 'gb-premierleague' },
   'fulham-gb':         { 2024: 'gb-premierleague', 2025: 'gb-premierleague' },
   'leeds-gb':          { 2024: 'gb-championship',  2025: 'gb-championship' },
   'chelsea-gb':        { 2025: 'gb-premierleague' },

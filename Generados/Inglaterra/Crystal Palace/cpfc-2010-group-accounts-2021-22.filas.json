@@ -1,0 +1,398 @@
+{
+ "pdf": "Clubes/Inglaterra/Crystal Palace/cpfc-2010-group-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Crystal Palace/cpfc-2010-group-accounts-2021-22.md",
+ "mdSha1": "7cb8f89cd0acde9e771563dcc7854ab59753129f",
+ "ubicacionSha1": "3eb0c7490ef265c2c2ad8b2eb4f0a1b7d7c29a65",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:57:41.590Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [
+   "b13"
+  ],
+  "notas_gastos": [
+   "b14",
+   "b15",
+   "b17"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "miles",
+   "evidencia": "L471: Year Ended 30.6.22 £000"
+  },
+  {
+   "bloque": "b13",
+   "escala": "miles",
+   "evidencia": "L881: Year Ended 30.6.22 £000"
+  },
+  {
+   "bloque": "b14",
+   "escala": "miles",
+   "evidencia": "L902: Year Ended 30.6.22 £000"
+  },
+  {
+   "bloque": "b15",
+   "escala": "miles",
+   "evidencia": "L928: Year Ended 30.6.22 £'000"
+  },
+  {
+   "bloque": "b17",
+   "escala": "miles",
+   "evidencia": "L951: Year Ended 30.6.22 £'000"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 473,
+   "etiqueta": "TURNOVER",
+   "actual": "159,999",
+   "anterior": "134,383",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 474,
+   "etiqueta": "Operating expenses before depreciation & amortisation",
+   "actual": "(143,293)",
+   "anterior": "(143,969)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 475,
+   "etiqueta": "OPERATING PROFIT / (LOSS) BEFORE DEPRECIATION & AMORTISATION",
+   "actual": "16,706",
+   "anterior": "(9,586)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 476,
+   "etiqueta": "Depreciation",
+   "actual": "(2,396)",
+   "anterior": "(1,892)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 477,
+   "etiqueta": "OPERATING PROFIT / (LOSS) BEFORE AMORTISATION",
+   "actual": "14,310",
+   "anterior": "(11,478)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 478,
+   "etiqueta": "Amortisation",
+   "actual": "(34,151)",
+   "anterior": "(36,454)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 479,
+   "etiqueta": "OPERATING LOSS BEFORE PROFIT ON DISPOSAL OF PLAYERS",
+   "actual": "(19,841)",
+   "anterior": "(47,932)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 480,
+   "etiqueta": "Profit on disposal of players",
+   "actual": "-",
+   "anterior": "9,571",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 481,
+   "etiqueta": "OPERATING LOSS",
+   "actual": "(19,841)",
+   "anterior": "(38,361)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 482,
+   "etiqueta": "Interest receivable",
+   "actual": "18",
+   "anterior": "12",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 483,
+   "etiqueta": "Interest payable and similar charges",
+   "actual": "(4,406)",
+   "anterior": "(1,912)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 484,
+   "etiqueta": "LOSS BEFORE TAXATION",
+   "actual": "(24,229)",
+   "anterior": "(40,261)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 485,
+   "etiqueta": "Taxation",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 486,
+   "etiqueta": "LOSS AND TOTAL COMPREHENSIVE INCOME FOR THE PERIOD",
+   "actual": "(24,229)",
+   "anterior": "(40,261)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b13",
+   "linea": 883,
+   "etiqueta": "Broadcasting",
+   "actual": "126,490",
+   "anterior": "117,344",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b13",
+   "linea": 884,
+   "etiqueta": "Sponsorship and advertising",
+   "actual": "11,642",
+   "anterior": "10,722",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b13",
+   "linea": 885,
+   "etiqueta": "Gate receipts",
+   "actual": "11,462",
+   "anterior": "247",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b13",
+   "linea": 886,
+   "etiqueta": "Other commercial activities",
+   "actual": "8,706",
+   "anterior": "2,890",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b13",
+   "linea": 887,
+   "etiqueta": "Other income",
+   "actual": "1,699",
+   "anterior": "3,180",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b13",
+   "linea": 888,
+   "etiqueta": "",
+   "actual": "159,999",
+   "anterior": "134,383",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "TURNOVER"
+  },
+  {
+   "bloque": "b14",
+   "linea": 904,
+   "etiqueta": "Amortisation of player registrations",
+   "actual": "34,151",
+   "anterior": "36,454",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Amortisation"
+  },
+  {
+   "bloque": "b14",
+   "linea": 905,
+   "etiqueta": "Depreciation of tangible fixed assets",
+   "actual": "2,396",
+   "anterior": "1,892",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Depreciation"
+  },
+  {
+   "bloque": "b14",
+   "linea": 906,
+   "etiqueta": "Staff costs (see note 6)",
+   "actual": "123,835",
+   "anterior": "130,293",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before depreciation & amortisation"
+  },
+  {
+   "bloque": "b14",
+   "linea": 907,
+   "etiqueta": "Other operating charges",
+   "actual": "19,458",
+   "anterior": "13,676",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses before depreciation & amortisation"
+  },
+  {
+   "bloque": "b14",
+   "linea": 908,
+   "etiqueta": "Total operating expenses",
+   "actual": "179,840",
+   "anterior": "182,315",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 930,
+   "etiqueta": "Wages and salaries",
+   "actual": "108,701",
+   "anterior": "114,666",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs (see note 6)"
+  },
+  {
+   "bloque": "b15",
+   "linea": 931,
+   "etiqueta": "Social security costs",
+   "actual": "14,955",
+   "anterior": "15,457",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs (see note 6)"
+  },
+  {
+   "bloque": "b15",
+   "linea": 932,
+   "etiqueta": "Other pension costs",
+   "actual": "179",
+   "anterior": "170",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs (see note 6)"
+  },
+  {
+   "bloque": "b15",
+   "linea": 933,
+   "etiqueta": "",
+   "actual": "123,835",
+   "anterior": "130,293",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Staff costs (see note 6)"
+  },
+  {
+   "bloque": "b17",
+   "linea": 953,
+   "etiqueta": "Interest and other charges",
+   "actual": "2,525",
+   "anterior": "1,735",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar charges"
+  },
+  {
+   "bloque": "b17",
+   "linea": 954,
+   "etiqueta": "Loan interest",
+   "actual": "1,881",
+   "anterior": "177",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar charges"
+  },
+  {
+   "bloque": "b17",
+   "linea": 955,
+   "etiqueta": "",
+   "actual": "4,406",
+   "anterior": "1,912",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar charges"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 473,
+  "actual": "159,999"
+ },
+ "total_gastos": {
+  "linea": 908,
+  "actual": "179,840"
+ },
+ "resultado": {
+  "linea": 486,
+  "actual": "(24,229)",
+  "anterior": "(40,261)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se toma 'Total operating expenses' 179,840 (L908, nota 4) como total de gastos aunque incluye amortización y depreciación que el estado presenta en renglones separados?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Total operating expenses",
+   "texto": "El estado (L474, L476, L478) no imprime un total de gastos; la nota 4 (L908) suma 143,293+2,396+34,151.",
+   "bloques": [
+    "b4",
+    "b14"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Año anterior es un período de 11 meses (1.8.20 a 30.6.21) y en notas 4 y 6 figura como Restated. Nota 4 desglosa tres renglones del estado; Staff costs y Other operating charges suman los 143,293 de L474."
+}
