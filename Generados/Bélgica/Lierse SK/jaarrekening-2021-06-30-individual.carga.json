@@ -1,19 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2021-06-30-individual.pdf",
- "generado": "2026-10-19T14:46:22.014Z",
+ "generado": "2026-10-19T14:54:32.995Z",
  "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Brutomarge (+)/(-)\" -> lump_football_operations_expense 0.6"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios en 2021: la pregunta ya está en la cola por jaarrekening-2019-06-30-individual.pdf (752a57d) y vale para este año"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes en 2021: la pregunta ya está en la cola por jaarrekening-2019-06-30-individual.pdf (3c2995b) y vale para este año"
-  },
   {
    "etapa": "reintento",
    "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
@@ -39,9 +27,9 @@
     "amountNative": -0.001436,
     "disclosureLevel": "aggregated",
     "_pag": 6,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Andere bedrijfskosten",
@@ -83,7 +71,7 @@
      "renglon": "Brutomarge (+)/(-)",
      "lado": "expense",
      "importe": 0.001436,
-     "motivo": "el documento no desglosa este renglón"
+     "motivo": "Claude 2026-10-19 (subagente Sonnet, revisado)"
     }
    ],
    "grossDebt": null,
@@ -131,11 +119,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.001436,
    "cat": "lump_football_operations_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "expense",
    "amountNative": -0.001436
   },
@@ -272,7 +260,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 5,
+  "motivos": 2,
   "lineasIngreso": 0,
   "lineasGasto": 2,
   "metaFilas": 3,

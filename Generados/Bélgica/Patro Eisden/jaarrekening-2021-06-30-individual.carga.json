@@ -1,11 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2021-06-30-individual.pdf",
- "generado": "2026-10-19T14:46:23.116Z",
+ "generado": "2026-10-19T14:54:34.167Z",
  "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Brutomarge (+)/(-)\" -> other_expenses 0"
-  },
   {
    "etapa": "reintento",
    "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
@@ -28,13 +24,13 @@
   "expenseLines": [
    {
     "rawLabel": "Brutomarge (+)/(-)",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "lump_football_operations_expense",
     "amountNative": -0.140857,
     "disclosureLevel": "aggregated",
     "_pag": 7,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía lump_football_operations, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
@@ -111,6 +107,14 @@
      "value": -0.002711
     }
    ],
+   "sinDesglose": [
+    {
+     "renglon": "Brutomarge (+)/(-)",
+     "lado": "expense",
+     "importe": 0.140857,
+     "motivo": "precedente del país: 1 clubes (Lierse SK), titulo:bedrijfsopbrengsten en bedrijfskosten · Claude 2026-10-19 (subagente Sonnet, revisado)"
+    }
+   ],
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": null,
@@ -155,13 +159,13 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 0.140857,
-   "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía lump_football_operations, del otro lado que la fila: se propone la genérica de su lado",
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "precedente del país: 1 clubes (Lierse SK), titulo:bedrijfsopbrengsten en bedrijfskosten · Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "expense",
    "amountNative": -0.140857
   },
@@ -358,7 +362,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 2,
   "lineasIngreso": 0,
   "lineasGasto": 6,
   "metaFilas": 3,
