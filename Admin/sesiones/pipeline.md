@@ -431,3 +431,17 @@ liga compartidos a propósito: Bundesliga 2, Ljungskile/United Nordic, Brasil). 
 Ojo: `audit.js --json` con pipe se corta a los 64 KB (como el 301); se redirige a un archivo.
 
 ## Después del merge del 286-287 (2026-10-19)
+
+**287, skill (commit 631fd82536).** `club-sourcing`: punto nuevo "Una sola carpeta por club" (ok de Guido).
+
+**306 (commit ae1823fb94).** Pasado a HALLAZGOS "Conocido, sin daño hoy" (ok de Guido): solo Milan tiene el formato; aunque las filas hijas
+heredaran el título daría 127,73 M contra 164,27 M cargados por los 36,54 M de "altri finanziatori" (291). Retomar con otro año de Milan o si
+se resuelve el 291. Para borrar del TODO.
+
+**307: no se reproduce.** `localizar.mjs --lista <1 doc> --modelo sonnet --rehacer --ejecutar` (Fredrikstad 2017): "Gastado: US$ 0.02" y el
+registro anota 0,0165, o sea suma bien. El código suma `r.costo` de cada documento y un documento ya hecho devuelve 0 (correcto). La única
+vía que daría 0 con gasto real es el modo Batch (`FOS_CLAUDE_BATCH=1`: la respuesta queda `pendiente`, costo 0, y el bucle rompería en
+`d.sin_estado`); no se probó. Probable: el número de la nota original salió de una versión anterior al `--modelo` (commit 8be215ec01).
+Para borrar del TODO como no reproducible; se reabre si aparece de nuevo.
+
+Pendiente de Guido en su chat: nada. Sigue: 301, 302, 290, 310 y las letras 298 ab y ac que sumó la principal.
