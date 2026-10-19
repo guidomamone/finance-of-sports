@@ -44,7 +44,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **D. Onboarding grande**
 * 238: llevar a 0 los documentos que quedaron a mitad de camino --> Onboarding 3
-* 261: Reino Unido, transcripción por subagentes
+* 261: Reino Unido, transcripción por subagentes --> Finanzas 5
 * 165 c: altas de los países nuevos que faltan --> Onboarding 3
 * 195: gestiones (presidentes) sin fuente confirmada (Fortaleza 2025: ¿CEO o presidente del consejo? lo decidís vos)
 * 295: balances de las entidades que organizan las ligas: lo que queda (segundas divisiones; varias no publican) --> Finanzas 5
