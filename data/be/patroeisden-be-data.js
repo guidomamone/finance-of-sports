@@ -19,6 +19,9 @@ const patroeisdenbeRevenueLinesByYear = {
   2020: [
     { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations', amountNative:0.277991, disclosureLevel:'aggregated' },
   ],
+  2024: [
+    { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations', amountNative:3.068851, disclosureLevel:'aggregated' },
+  ],
 };
 const patroeisdenbeExpenseLinesByYear = {
   2025: [
@@ -70,6 +73,15 @@ const patroeisdenbeExpenseLinesByYear = {
     { rawLabel:'Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)', normalizedCategory:'other_expenses', amountNative:-0.00575, disclosureLevel:'aggregated' },
     { rawLabel:'Voorzieningen voor risico\'s en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)', normalizedCategory:'exceptional_items', amountNative:0.055215, disclosureLevel:'aggregated' },
     { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.011157, disclosureLevel:'aggregated' },
+  ],
+  2024: [
+    { rawLabel:'Bezoldigingen, sociale lasten en pensioenen (+)/(-)', normalizedCategory:'wages_squad', amountNative:-5.819894, disclosureLevel:'aggregated' },
+    { rawLabel:'Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)', normalizedCategory:'other_expenses', amountNative:0.011831, disclosureLevel:'aggregated' },
+    { rawLabel:'Voorzieningen voor risico\'s en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)', normalizedCategory:'exceptional_items', amountNative:0.007439, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.020365, disclosureLevel:'aggregated' },
+    { rawLabel:'Niet-recurrente bedrijfskosten', normalizedCategory:'exceptional_items', amountNative:-0.075431, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen immateriële vaste activa (spelers)', normalizedCategory:'player_amortisation', amountNative:-0.061083, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.068401, disclosureLevel:'aggregated' },
   ],
 };
 const patroeisdenbeFiscalYearMeta = {
@@ -178,6 +190,24 @@ const patroeisdenbeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:0.277991, officialTotalExpenses:1.012553, officialPAT:-0.707564,
   },
+  2024: {
+    currency:'EUR', fxRef:'EUR@2024-06-30',
+    sourceId:'patroeisden-be-jaarrekening-2024-06-30-individual-correction',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0.153673, tax:-0.00653,
+    extraRows: [
+      {label:'Recurrente financiële opbrengsten', value:0.175858},
+      {label:'Recurrente financiële kosten', value:-0.022185},
+      {label:'Belastingen op het resultaat (+)/(-)', value:-0.00653},
+    ],
+    sinDesglose: [
+      {renglon:'Brutomarge (+)/(-)', lado:'revenue', importe:3.068851, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:3.068851, officialTotalExpenses:5.957912, officialPAT:-2.80991,
+  },
 };
 const patroeisdenbePresupuestoOverlayByYear = {};
 
@@ -222,6 +252,11 @@ Object.assign(sources, {
   'patroeisden-be-jaarrekening-2020-06-30-individual-correction': {
     id:'patroeisden-be-jaarrekening-2020-06-30-individual-correction', clubId:'patroeisden-be',
     title:'Patro Eisden Maasmechelen VZW — jaarrekening-2020-06-30-individual-correction (ejercicio 2020)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'patroeisden-be-jaarrekening-2024-06-30-individual-correction': {
+    id:'patroeisden-be-jaarrekening-2024-06-30-individual-correction', clubId:'patroeisden-be',
+    title:'Patro Eisden Maasmechelen VZW — jaarrekening-2024-06-30-individual-correction (ejercicio 2024)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
