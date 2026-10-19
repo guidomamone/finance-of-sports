@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Países Bajos/Almere City/wf-2024-2025-68975c13.pdf",
  "md": "Clubes/Países Bajos/Almere City/wf-2024-2025-68975c13.md",
- "generado": "2026-10-19T02:27:24.005Z",
+ "generado": "2026-10-19T02:47:19.215Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "almerecity-nl",
  "year": 2025,
  "escala": {
   "valor": "no se sabe",
@@ -35,7 +35,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   },
   {
    "nombre": "primer año",
@@ -45,8 +45,8 @@
  ],
  "notas": [
   "escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)",
-  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en wf-2024-2025-68975c13.pdf",
-  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en wf-2024-2025-68975c13.pdf",
+  "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en wf-2024-2025-68975c13.pdf",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en wf-2024-2025-68975c13.pdf",
   "duda de extraer que no afecta la carga: Los importes de L419-L422 cuadran tal como están impresos; el signo del impuesto en L420 (2.850) parece un ingreso por impuesto."
  ],
  "reintentar": null,

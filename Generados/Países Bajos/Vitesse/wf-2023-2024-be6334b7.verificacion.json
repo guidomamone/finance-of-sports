@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Países Bajos/Vitesse/wf-2023-2024-be6334b7.pdf",
  "md": "Clubes/Países Bajos/Vitesse/wf-2023-2024-be6334b7.md",
- "generado": "2026-10-19T02:27:36.745Z",
- "estado": "cola",
+ "generado": "2026-10-19T02:47:19.334Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2024,
  "escala": {
@@ -23,9 +23,7 @@
    "fecha": "2026-10-19"
   }
  ],
- "cola": [
-  "11f19fc"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -61,8 +59,7 @@
  ],
  "notas": [
   "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
-  "la lectura base no cerraba; cerró con la lectura 4",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "la lectura base no cerraba; cerró con la lectura 4"
  ],
  "reintentar": null,
  "reintentado": false,

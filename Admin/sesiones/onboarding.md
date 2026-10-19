@@ -244,3 +244,48 @@ como letras para fos-pipeline, sin aplicarlas.
   ajustes fila de los noruegos y de St. Gallen (y4). Siguiente: lote 93 (Países Bajos) y los demás años de estos clubes.
 
 ## Después del séptimo merge (2026-10-19)
+
+- Lote 93 (alta de Países Bajos, un año por club): 7 escritos (Almere City 2025, Excelsior 2024, Fortuna Sittard 2025, Heracles Almelo
+  2025, NAC Breda 2025, NEC 2024, Sparta Rotterdam 2024). Cola contestada entera (subagentes Sonnet, revisados por Claude): los 26 años
+  de la lista cierran en verificar. Criterio neerlandés unificado con Go Ahead Eagles: Horeca/catering de ingreso -> stadium_other;
+  "Overige personeelskosten" y sus sub-renglones -> admin_general_expense; "Resultaat vergoedingssommen" -> player_sales (también el
+  valor en libros de los vendidos, FC Groningen, ajuste categoria; y De Graafschap, impreso dentro de los costos); un solo renglón de
+  costos de la KvK -> lump_football_operations_expense.
+- Ajustes del lote 93: perímetro consolidado de 8 clubes (Groningen, Twente, NEC, PEC, Cambuur, Heerenveen, Vitesse, Willem II); cierre
+  2025-06-30 de Roda JC y SC Cambuur; FC Dordrecht (Netto-omzet mal transcripto, vergoedingssommen); Sparta y Excelsior (participadas al
+  financiero); reportType de FC Emmen y VVV-Venlo. Color y liga de las 22 altas en altas-revision.jsonl (hex estimados: De Graafschap,
+  Heerenveen, Sparta, Willem II, Heracles; FC Dordrecht: confirmar el color actual). Excelsior entró con color null y se completó
+  (#E30613). FC Utrecht 2025: estadio y sponsor a mano en tools/contexto-manual.json. Lista de la Eredivisie 2018-19 bajada (FC Emmen).
+- Dudas al club nuevas en Admin/dudas-por-club.md: Sarpsborg 08 ("Salgskostnader" 65,9 M) y St. Gallen (reparto de los 9,5 M de liga/UEFA;
+  cuotas en "Gönner und Mitglieder").
+- Mejora de script nueva para el 298:
+  z) estadio-sponsor.mjs: las páginas de la Eerste Divisie de en.wikipedia (2021-22 y 2024-25) no tienen tabla "Personnel and kits":
+     todo club de segunda frena en la compuerta del 273. Guido (2026-10-19): "En la Eerste Divisie alcanza el estadio, como en las ligas
+     amateur; pasalo a Pipeline" (ya pasado a main). Además FC Utrecht no se encontraba en la tabla de kits de la Eredivisie 2024-25
+     (fila "[[FC Utrecht|Utrecht]]", sponsor "Conclusion Digital Transformation"): se completó a mano.
+
+### Para la sesión nueva: por dónde seguir (2026-10-19, cierre de Onboarding 2)
+
+Estado: carpeta limpia, todo commiteado, sin push. Antes de nada:
+`node tools/worktree.mjs preparar /Users/guidopablomamonesoneira/Claude/Projects/fos-onboarding`.
+
+1. **Lote 93 (Países Bajos), lo que falta escribir: 19 clubes.** Todos cierran en verificar y tienen color y liga.
+   - 8 que ya pasan la compuerta: FC Groningen, FC Twente, FC Utrecht, PEC Zwolle, SC Heerenveen, Vitesse, Willem II, FC Emmen.
+   - 11 de la Eerste Divisie que esperan que Pipeline 3 agregue nl-eerstedivisie a la excepción "alcanza el estadio" (como las ligas
+     amateur): ADO Den Haag, De Graafschap 2022, FC Den Bosch, FC Dordrecht, FC Eindhoven, FC Volendam, Helmond Sport, Roda JC,
+     SC Cambuur, Telstar, VVV-Venlo.
+   Cuando main adelante la rama con esa mejora, Guido corre (~US$ 0,30; solo categoriza lo que falte):
+   ```
+   cd /Users/guidopablomamonesoneira/Claude/Projects/fos-onboarding && caffeinate -i node tools/lote.mjs --lista Admin/lotes/lote-93.txt --ejecutar --cargar ; osascript -e 'display notification "Terminó el lote" with title "finance-of-sports" sound name "Glass"'; say "lote terminado"
+   ```
+   Si algo queda en la cola, contestarlo con subagentes Sonnet (el método: casos por club con un script desde cola-revision.jsonl,
+   instrucciones con los precedentes neerlandeses de arriba, borradores revisados contra el .md y aplicados con cola.mjs --responder).
+   Cada alta tarda unos minutos (regenera y audita). Al terminar, archivar Admin/lotes/lote-93.txt.
+2. **Los demás años de los clubes nuevos (lote siguiente).** Los avisos "transcripto y nadie lo localizó" del lote 94 y del 93 son la
+   lista: Basel 2005-2020, St. Gallen 2018-19 a 2023-24, Luzern 2017-18 a 2023-24, Go Ahead Eagles 2020-2023, Viking/Vålerenga/Molde/
+   Aalesund/Fredrikstad/Sarpsborg 08 (los años del AS o del FLI según la entidad de cada club; Fredrikstad FLI 2012-2018, sin el
+   Fotballinvest AS), y los años anteriores de los 26 neerlandeses. Armar `Admin/lotes/lote-95.txt` (número siguiente: `ls Admin/lotes/lote-*.txt Admin/Archive/lotes/lote-*.txt | xargs -n1 basename | sort -V | tail -3`),
+   ensayo gratis, y Guido corre con --cargar. Ojo: liga de cada temporada (listas de Wikipedia) y estadio/sponsor de cada año.
+3. **Bélgica (lote 92)**: destrabada en main (t, u, g). Volver a correrla con la lista `Admin/lotes/lote-92.txt` y contestar la cola.
+4. Después, el plan: 292 resto (los 212 .md viejos sin tablas con Mistral, cuando esté la e; altas de Suiza resto, Beşiktaş, Colombia),
+   238, 285, 284, 283, 165 c.

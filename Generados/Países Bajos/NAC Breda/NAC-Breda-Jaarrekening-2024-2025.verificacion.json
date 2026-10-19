@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Países Bajos/NAC Breda/NAC-Breda-Jaarrekening-2024-2025.pdf",
  "md": "Clubes/Países Bajos/NAC Breda/NAC-Breda-Jaarrekening-2024-2025.md",
- "generado": "2026-10-19T02:27:24.448Z",
+ "generado": "2026-10-19T02:47:19.297Z",
  "estado": "ok",
- "clubId": null,
+ "clubId": "nacbreda-nl",
  "year": 2025,
  "escala": {
   "valor": "no se sabe",
@@ -37,7 +37,7 @@
   {
    "nombre": "año anterior cargado",
    "ok": null,
-   "detalle": "club nuevo"
+   "detalle": "el sitio no tiene 2024: este chequeo no se puede hacer"
   },
   {
    "nombre": "primer año",
@@ -48,7 +48,7 @@
  "notas": [
   "la nota de \"Overige bedrijfsopbrengsten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "el desglose de \"Sociale lasten\" (3 filas) no suma la fila: quedó la fila",
-  "duda de localizar ya contestada para el club (escala, \"RESULTAAT NA BELASTINGEN\"): aceptar, en NAC-Breda-Jaarrekening-2024-2025.pdf",
+  "duda de localizar ya contestada para el club (antes de su alta) (escala, \"RESULTAAT NA BELASTINGEN\"): aceptar, en NAC-Breda-Jaarrekening-2024-2025.pdf",
   "duda de extraer que no afecta la carga: L648 imprime 46.969 positivo pero el resultado antes de impuestos (938.648) implica que es un cargo neto (985.617-46.969)."
  ],
  "reintentar": [
