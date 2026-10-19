@@ -61,3 +61,16 @@
 ### Qué deja de ser cierto en ESTADO
 
 - Nada.
+
+### Lote 103, después de la transcripción (2026-10-19)
+
+- Transcripción y validación hechas (US$ 4,40). 0 años cargados todavía: 23 documentos frenados por la cola y por tres cierres.
+- Cierres fijados: Viborg 2025 (2025-06-30), Silkeborg 2025 (2025-12-31), Dinamo Zagreb consolidado 2025 (2025-12-31).
+- 23 casos de cola contestados por subagentes Sonnet (5 grupos por país) y revisados contra el .md los de Amazonas y Colo-Colo.
+- Amazonas 2025 (`demonstracoes-contabeis-2025-faf-1.pdf`) es el balance de la Federação Amazonense de Futebol, no del club: respondido `descartar`; falta que Guido
+  confirme si va a `Admin/registros/documentos-descartados.txt`, y buscar el balance 2025 de Amazonas FC.
+- Dinamo Zagreb 2025: hay dos documentos del mismo año (consolidado e individual); el sitio tiene el 2024 desde el consolidado, así que el consolidado es el que entra.
+  Rijeka: el 2024 cargado es combinado (HNK Rijeka + Stadion Kantrida) y el documento 2025 es individual: serie con perímetros mezclados (existe `financijsko-izvjesce-2024.md`, individual).
+  Colo-Colo 2025: la nota 21 suma 117.232 más que el estado; causa sin explicar (candidata a `Admin/dudas-por-club.md`).
+- El agente de Croacia usó Bash (solo para listar y buscar) aunque se le dijo que no.
+- Botafogo-SP: nada de lo respondido sale de `demonstracoes-contabeis-2022-2023.pdf` (es de Botafogo S.A.).
