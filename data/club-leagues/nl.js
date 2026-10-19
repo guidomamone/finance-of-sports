@@ -14,4 +14,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'nec-nl': { 2024: 'nl-eredivisie' },
   'spartarotterdam-nl': { 2024: 'nl-eredivisie' },
   'adodenhaag-nl': { 2025: 'nl-eerstedivisie' },
+  'fcdenbosch-nl': { 2025: 'nl-eerstedivisie' },
 });
