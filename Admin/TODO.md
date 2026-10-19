@@ -270,6 +270,8 @@ af) listas de las ligas amateur belgas
    año del mismo club.
    v2) un documento que quedó "sin estado de resultados (queda como fuente)" en la primera corrida no se vuelve a localizar ni con
    `--reintentar`, aunque el .md lo traiga (Fulham 2021-22, L509-516: el registro quedó con el cierre del sello de presentación, 28/03/2023).
+   w2) primer ejercicio de exactamente 12 meses (Lierse SK 2019, 09-07-2018 a 30-06-2019, columna del año anterior vacía): la compuerta de
+   primer ejercicio de `cargar.mjs` exige meses distinto de 12 y lo frena por "periodo".
    z2) (también Aston Villa 2023-24, 13 meses por cambio de cierre de mayo a junio, precedente Wolves 2025: la compuerta de `cargar.mjs`,
    `per.meses < 12`, no reconoce una transición de más de 12 meses con importes del año anterior; Aston Villa se carga con la compuerta
    salteada a mano esa sola vez) Westerlo 2015: 18 meses por cambio de cierre (no es primer ejercicio), sigue frenado; regla a decidir con Guido. t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en
