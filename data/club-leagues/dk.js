@@ -5,7 +5,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'brondby-dk':     { 2020: 'dk-superliga' },
   'midtjylland-dk': { 2019: 'dk-superliga', 2020: 'dk-superliga' },
   'agf-dk':         { 2021: 'dk-superliga' },
-  'silkeborg-dk':   { 2024: 'dk-superliga' },
+  'silkeborg-dk':   { 2024: 'dk-superliga', 2025: 'dk-superliga' },
   'viborg-dk':      { 2024: 'dk-superliga' },
   'sonderjyske-dk':    { 2022: 'dk-superliga' },
   'nordsjaelland-dk':  { 2024: 'dk-superliga' },

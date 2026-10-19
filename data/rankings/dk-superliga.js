@@ -1,6 +1,15 @@
 // GENERADO por tools/generate-rankings.js: no editar a mano (el formato, en la cabecera del generador).
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["dk-superliga"] = {
+  2025: {
+    leagueSize: 12,
+    wiki: {"t":"2024–25 Danish Superliga","lang":"en","at":"2026-10-17","n":12},
+    clubs: [
+      { id:"silkeborg-dk", revenue:20.737, reportType:"official_balance_sheet",
+        sourceId:"silkeborg-dk-annual-report-2025-silkeborg-if-a-s-fact",
+        mix:[["Comercial / Sponsors",4.661],["Estadio",1.741],["Televisión",2.923],["Premios por competencias",1.812],["Venta de Jugadores",7.933],["Otros ingresos",1.667]] },
+    ],
+  },
   2024: {
     leagueSize: 12,
     wiki: {"t":"2023–24 Danish Superliga","lang":"en","at":"2026-10-17","n":12},

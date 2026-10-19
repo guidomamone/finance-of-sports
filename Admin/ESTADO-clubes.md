@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 312 clubes, 1088 ejercicios, 21 países.
+TOTAL: 312 clubes, 1089 ejercicios, 21 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -163,7 +163,7 @@ DK (11)
   FC Midtjylland   2 ejercicios (2018/2019 a 2019/2020), balance, DKK
   FC Nordsjælland  1 ejercicio (2024), balance, DKK
   Randers FC       1 ejercicio (2022/2023), balance, DKK
-  Silkeborg IF     1 ejercicio (2024), balance, DKK
+  Silkeborg IF     2 ejercicios (2024 a 2025), balance, DKK
   SønderjyskE      1 ejercicio (2021/2022), balance, DKK
   Vejle            1 ejercicio (2024), balance, DKK
   Viborg FF        1 ejercicio (2023/2024), balance, DKK

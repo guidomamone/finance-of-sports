@@ -108,6 +108,52 @@ grossDebt: no hay ninguna línea de préstamo bancario en el balance — los pas
 ============================================================================
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Entrance fees | pág. 18, precedente |
+| 2 | TV revenue | pág. 18, precedente |
+| 3 | Sponsorship and collaboration agreements | pág. 18, precedente |
+| 4 | Sale of merchandise | pág. 18, precedente |
+| 5 | Compensation (FIFA/UEFA/DBU) | pág. 18, Jev 0.97 |
+| 6 | Food & beverage JYSK PARK | pág. 18, precedente |
+| 7 | Prize income | pág. 18, Jev 1 |
+| 8 | Other revenue | pág. 18, precedente |
+| 9 | Transfer income | pág. 18, precedente |
+| 10 | Sale of property, plant and equipment | pág. 18, Jev 1 |
+| 11 | Salary refunds | pág. 18, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Other external expenses | pág. 13, precedente |
+| 2 | Wages and salaries | pág. 19, Claude 0.85 |
+| 3 | Pension costs | pág. 19, Jev 0.93 |
+| 4 | Other social security costs | pág. 19, Claude 0.85 |
+| 5 | Depreciation, amortisation and impairment losses | pág. 13, precedente |
+
+### Meta
+
+```text
+2025: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): cierre = 2025-12-31. el informe dice 'Financial year: 01.01.2025- 31.12.2025' (.md línea 59)
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): dk-superliga, verificado contra roster cacheado de "2025–26 Danish Superliga" (tools/club-league-reference/dk.json), coincidencia única por palabras "Silkeborg" = "Silkeborg IF".
+```
+
 ## 2024
 
 ### Meta
@@ -139,4 +185,12 @@ _note (data/):_
 
 ```text
 Entidad única (CVR 26397731), sin subsidiarias consolidadas. Auditor: BDO Statsautoriseret revisionsaktieselskab, sin salvedades. Cambio de control societario el 18/12/2024 (Trivela Group V ApS compró 80% del capital), no afecta las cifras del ejercicio 2024. Transcripción completa en Clubes/Dinamarca/Silkeborg IF/aarsrapport-2024-12-31.md.
+```
+
+### silkeborg-dk-annual-report-2025-silkeborg-if-a-s-fact
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

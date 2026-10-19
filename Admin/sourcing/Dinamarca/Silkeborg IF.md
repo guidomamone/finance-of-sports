@@ -28,3 +28,5 @@ escaneo — capa de texto real igual).
 Ninguna.
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.pdf` (sourceId `silkeborg-dk-annual-report-2025-silkeborg-if-a-s-fact`).

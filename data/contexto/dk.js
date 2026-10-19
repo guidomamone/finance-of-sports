@@ -27,6 +27,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'silkeborg-dk': {
     2024: {"estadio":"JYSK Park","capacidad":10000,"sponsor":"JYSK","marca":"Adidas","temporada":"2024–25 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371243611"},
+    2025: {"estadio":"JYSK Park","capacidad":10000,"sponsor":"Jysk","marca":"Adidas","temporada":"2025–26 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380191588"},
   },
   'sonderjyske-dk': {
     2022: {"estadio":"Sydbank Park","capacidad":10000,"sponsor":"Danfoss","marca":"Hummel","temporada":"2021–22 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1379231192"},
