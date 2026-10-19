@@ -1,0 +1,170 @@
+{
+  "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2014.md",
+  "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2014.pdf",
+  "club": "sarpsborg08-no",
+  "year": 2014,
+  "generatedAt": "2026-10-19T12:41:27.127Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Medlemsinntekter",
+      "lado": "revenue",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        0.258823
+      ],
+      "glosa": "Ingresos por cuotas de socios"
+    },
+    {
+      "label": "Billettinntekter",
+      "lado": "revenue",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        5.475782
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Andre inntekter",
+      "lado": "revenue",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        4.282673
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Andre salgsinntekter",
+      "lado": "revenue",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        2.271759
+      ],
+      "glosa": "Otros ingresos por ventas"
+    },
+    {
+      "label": "Mediainntekter",
+      "lado": "revenue",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        6.16638
+      ],
+      "glosa": "Ingresos por derechos audiovisuales"
+    },
+    {
+      "label": "Tilskudd",
+      "lado": "revenue",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        1.931104
+      ],
+      "glosa": "Subvenciones"
+    },
+    {
+      "label": "Reklame og sponsorinntekter",
+      "lado": "revenue",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        15.333625
+      ],
+      "glosa": "Ingresos por publicidad y patrocinio"
+    },
+    {
+      "label": "Salg/utleie spillere",
+      "lado": "revenue",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        9.440754
+      ],
+      "glosa": "Venta y cesión de jugadores"
+    },
+    {
+      "label": "Trening, matriell, kurs",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        3.918066
+      ],
+      "glosa": "Entrenamiento, material y cursos"
+    },
+    {
+      "label": "Reise og oppholdskostnader bortekamper",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        2.339752
+      ],
+      "glosa": "Gastos de viaje y alojamiento para partidos fuera de casa"
+    },
+    {
+      "label": "Salgskostnader",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        0.897982
+      ],
+      "glosa": "Gastos de ventas"
+    },
+    {
+      "label": "Lønnskostnad",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        20.507849
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Avskrivning på driftsmidler og immaterielle eiendeler",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        0.536347
+      ],
+      "glosa": "Amortización de inmovilizado material e intangible"
+    },
+    {
+      "label": "Andre kostnader",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        4.607887
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Reklame og sponsorkostnader",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        5.026981
+      ],
+      "glosa": "Gastos de publicidad y patrocinio"
+    },
+    {
+      "label": "Admkost",
+      "lado": "expense",
+      "page": 30,
+      "section": "estado",
+      "values": [
+        3.147236
+      ],
+      "glosa": "Gastos de administración"
+    }
+  ]
+}

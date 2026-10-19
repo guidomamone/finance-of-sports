@@ -1,0 +1,171 @@
+{
+ "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2016.pdf",
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2016.md",
+ "mdSha1": "9908b62cf641d94b50c8014aceebdef8d6555bc5",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T12:27:30.237Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    98,
+    134
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    144,
+    147
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    158,
+    188
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    206,
+    210
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    218,
+    242
+   ],
+   "tipo": "texto"
+  },
+  "b6": {
+   "pagina": 10,
+   "lineas": [
+    427,
+    460
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    471,
+    499
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    510,
+    529
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 13,
+   "lineas": [
+    584,
+    590
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    594,
+    600
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 14,
+   "lineas": [
+    610,
+    613
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    617,
+    627
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 15,
+   "lineas": [
+    650,
+    660
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 15,
+   "lineas": [
+    666,
+    670
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 15,
+   "lineas": [
+    674,
+    678
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 15,
+   "lineas": [
+    682,
+    687
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6"
+ ],
+ "notas_ingresos": [
+  "b9",
+  "b10"
+ ],
+ "notas_gastos": [
+  "b12",
+  "b16"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK (b1)",
+ "moneda": "NOK",
+ "columna_ejercicio": "2016",
+ "columna_anterior": "2015",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado de resultados de la pág. 10 (b6, del årsmøte con notas) y se deja afuera el de la pág. 2 (b1, versión Brønnøysund) por ser duplicado?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "Hay dos resultatregnskap 2016 (b1 pág. 2 y b6 pág. 10); b6 es el que remite a las notas 1, 2, 4 y 11.",
+   "bloques": [
+    "b1",
+    "b6"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Entidad individual (forening). Hay dos versiones del estado de resultados: b1 (pág. 2, formato registro, continúa en b2 con disposiciones) y b6 (pág. 10, documento del årsmøte). Se elige b6 porque sus notas 1 (Andre inntekter), 2 (Andre salgsinntekter), 4 (Andre kostnader) y 11 (Lønnskostnader) desglosan sus renglones. Se excluyen balance, nota 3 (remuneración del director, por persona), nota 8 (activo fijo), 9 (patrimonio) y 10 (clientes)."
+}

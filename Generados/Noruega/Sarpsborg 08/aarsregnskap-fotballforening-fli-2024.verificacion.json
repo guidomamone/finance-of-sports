@@ -1,0 +1,197 @@
+{
+ "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2024.pdf",
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2024.md",
+ "generado": "2026-10-19T12:41:27.871Z",
+ "estado": "cola",
+ "clubId": "sarpsborg08-no",
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "0955414"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "224.508804 = 224.508804",
+   "suma": 224.508804,
+   "impreso": 224.508804
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "192.525743 = 192.525743",
+   "suma": 192.525743,
+   "impreso": 192.52574299999998
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 3.552713678800501e-15
+  },
+  {
+   "nombre": "documento del año 2025",
+   "ok": null,
+   "detalle": "no se puede comparar: perímetros distintos (este documento consolidado, aarsregnskap-fotballforening-fli-2025.pdf individual); ingresos 224.508804 y 203.736698"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2023: 166.545863 en aarsregnskap-fotballforening-fli-2023.pdf y 166.545863 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2023: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+  }
+ ],
+ "notas": [
+  "la nota del subtotal \"Sum inntekter\" suma el subtotal impreso (224.508804): reemplaza a \"Annen driftsinntekt\" + \"Salgsinntekt\"",
+  "escalón \"renglón grande sin abrir\": \"Annen driftsinntekt\" (L263) era el 81% de los ingresos; la misma lectura cierra con la nota del subtotal abierta",
+  "duda de localizar que no afecta la carga: b10 repite exactamente los importes 2024 de b5 (Sum driftsinntekter 224 508 804, Årsresultat 29 281 631).",
+  "duda de extraer que no afecta la carga: L909 informa años-persona (59), no NOK."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 224.508804,
+  "gastos": 192.525743,
+  "financiero": 4.725474,
+  "impuesto": 0.036976,
+  "resultadoImpreso": 29.281631,
+  "resultadoParaCargar": 29.281631,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Arrangementsinntekter",
+   "lado": "ingreso",
+   "M": 67.81637,
+   "pagina": 24,
+   "linea": 895,
+   "origen": "nota que desglosa \"Sum inntekter\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Salg/utleie av spillere",
+   "lado": "ingreso",
+   "M": 134.601796,
+   "pagina": 24,
+   "linea": 896,
+   "origen": "nota que desglosa \"Sum inntekter\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Omsetning av varer",
+   "lado": "ingreso",
+   "M": 22.090638,
+   "pagina": 24,
+   "linea": 897,
+   "origen": "nota que desglosa \"Sum inntekter\" (escalón: la nota del subtotal)"
+  },
+  {
+   "etiqueta": "Varekostnad",
+   "lado": "gasto",
+   "M": 87.963065,
+   "pagina": 6,
+   "linea": 266,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lønninger",
+   "lado": "gasto",
+   "M": 51.867998,
+   "pagina": 24,
+   "linea": 904,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Arbeidsgiveravgift",
+   "lado": "gasto",
+   "M": 8.967626,
+   "pagina": 24,
+   "linea": 905,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Pensjonskostnader",
+   "lado": "gasto",
+   "M": 1.218928,
+   "pagina": 24,
+   "linea": 906,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Andre ytelser",
+   "lado": "gasto",
+   "M": 0.939551,
+   "pagina": 24,
+   "linea": 907,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Avskrivning av driftsmidler og immaterielle eiendeler",
+   "lado": "gasto",
+   "M": 11.70168,
+   "pagina": 6,
+   "linea": 268,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Annen driftskostnad",
+   "lado": "gasto",
+   "M": 29.866895,
+   "pagina": 6,
+   "linea": 269,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Annen renteinntekt",
+   "M": 0.351046,
+   "linea": 273
+  },
+  {
+   "etiqueta": "Annen finansinntekt",
+   "M": 0.679464,
+   "linea": 274
+  },
+  {
+   "etiqueta": "Annen rentekostnad",
+   "M": -1.326569,
+   "linea": 276
+  },
+  {
+   "etiqueta": "Annen finanskostnad",
+   "M": -2.368395,
+   "linea": 277
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Skattekostnad på ordinært resultat",
+   "M": -0.036976,
+   "linea": 281
+  }
+ ],
+ "notaSubtotal": [
+  "ingreso"
+ ]
+}

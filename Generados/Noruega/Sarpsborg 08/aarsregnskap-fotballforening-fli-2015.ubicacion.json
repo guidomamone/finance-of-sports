@@ -1,0 +1,222 @@
+{
+ "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2015.pdf",
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2015.md",
+ "mdSha1": "f8ea270fb74bc9c172f9fe16ace9fbc08a10d2ea",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T12:26:06.046Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    98,
+    134
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    144,
+    146
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    161,
+    191
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    208,
+    211
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    213,
+    215
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 5,
+   "lineas": [
+    221,
+    224
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 5,
+   "lineas": [
+    226,
+    228
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 5,
+   "lineas": [
+    232,
+    237
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 5,
+   "lineas": [
+    239,
+    241
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 5,
+   "lineas": [
+    243,
+    245
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 6,
+   "lineas": [
+    254,
+    287
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 7,
+   "lineas": [
+    294,
+    322
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 8,
+   "lineas": [
+    329,
+    348
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 13,
+   "lineas": [
+    531,
+    537
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 13,
+   "lineas": [
+    541,
+    546
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 14,
+   "lineas": [
+    552,
+    558
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 14,
+   "lineas": [
+    564,
+    567
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 14,
+   "lineas": [
+    571,
+    580
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 15,
+   "lineas": [
+    604,
+    614
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 15,
+   "lineas": [
+    618,
+    622
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 15,
+   "lineas": [
+    626,
+    630
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b11"
+ ],
+ "notas_ingresos": [
+  "b14",
+  "b15"
+ ],
+ "notas_gastos": [
+  "b16",
+  "b18"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK (b1, misma cuenta de resultados)",
+ "moneda": "NOK",
+ "columna_ejercicio": "2015",
+ "columna_anterior": "2014",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la cuenta de resultados de b11 (pág. 6, la que va con las notas) y se deja afuera b1 (pág. 2, formulario de Brønnøysund)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b1 y b11 parecen ser la misma cuenta de resultados de 2015 en dos formatos; si hay diferencias de importes, cambia lo que se carga.",
+   "bloques": [
+    "b1",
+    "b11"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se acepta cargar estas cuentas individuales de la Sarpsborg 08 Fotballforening aunque el club venga cargado como consolidado?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "El documento es el årsregnskap de la fotballforening, sin grupo consolidado a la vista.",
+   "bloques": [
+    "b11"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Documento de la asociación Sarpsborg 08 Fotballforening (org. 986 400 362), solo cuentas individuales; no hay consolidado. b1 es el formulario del registro y b11 el estado del informe con notas; se toma b11. Notas: 1 Andre inntekter (b14), 2 Andre salgsinntekter (b15), 3 Lønnskostnader (b16), 5 Andre kostnader (b18). Quedan afuera la nota 4 de directivos (b17), el balance, el patrimonio y los activos fijos."
+}

@@ -1,0 +1,370 @@
+{
+ "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2015.pdf",
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2015.md",
+ "generado": "2026-10-19T12:41:27.314Z",
+ "estado": "cola",
+ "clubId": "sarpsborg08-no",
+ "year": 2015,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "7032208",
+  "b64524d"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "46.179593 = 46.179593",
+   "suma": 46.179593000000004,
+   "impreso": 46.179593
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "46.133948 = 46.133948",
+   "suma": 46.133948000000004,
+   "impreso": 46.133948
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0.0000010000000003730983
+  },
+  {
+   "nombre": "documento del año 2016",
+   "ok": true,
+   "detalle": "ingresos de 2015: 46.179593 en este documento y 46.179593 en aarsregnskap-fotballforening-fli-2016.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2014",
+   "ok": true,
+   "detalle": "ingresos de 2014: 45.1609 en aarsregnskap-fotballforening-fli-2014.pdf y 45.1609 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2014: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+  }
+ ],
+ "notas": [
+  "el desglose de \"Andre inntekter\" (5 filas) no suma la fila: quedó la fila",
+  "el desglose de \"Andre kostnader\" (8 filas) no suma la fila: quedó la fila",
+  "duda de localizar confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se carga la cuenta de resultados de b11 (pág. 6, la que va con las notas) y se deja afuera b1 (pág. 2, formulario de Brønnøysund)?"
+ ],
+ "reintentar": [
+  {
+   "renglon": "Andre inntekter",
+   "suma": 5.332592,
+   "objetivo": 1.791653
+  },
+  {
+   "renglon": "Andre kostnader",
+   "suma": 5.337922,
+   "objetivo": 0.750053
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Andre inntekter",
+   "suma": 5.332592,
+   "objetivo": 1.791653
+  },
+  {
+   "renglon": "Andre kostnader",
+   "suma": 5.337922,
+   "objetivo": 0.750053
+  }
+ ],
+ "totales": {
+  "ingresos": 46.179593,
+  "gastos": 46.133948,
+  "financiero": -0.039749,
+  "impuesto": 0,
+  "resultadoImpreso": 0.005895,
+  "resultadoParaCargar": 0.005895,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Medlemsinntekter",
+   "lado": "ingreso",
+   "M": 0.344261,
+   "pagina": 6,
+   "linea": 256,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Billettinntekter",
+   "lado": "ingreso",
+   "M": 5.46125,
+   "pagina": 6,
+   "linea": 257,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Cupoppgjør NFF",
+   "lado": "ingreso",
+   "M": 1.266028,
+   "pagina": 13,
+   "linea": 533,
+   "origen": "nota que desglosa \"Andre inntekter\""
+  },
+  {
+   "etiqueta": "Grasrotandel",
+   "lado": "ingreso",
+   "M": 1.235645,
+   "pagina": 13,
+   "linea": 534,
+   "origen": "nota que desglosa \"Andre inntekter\""
+  },
+  {
+   "etiqueta": "Gaver/bidrag",
+   "lado": "ingreso",
+   "M": 1.039266,
+   "pagina": 13,
+   "linea": 535,
+   "origen": "nota que desglosa \"Andre inntekter\""
+  },
+  {
+   "etiqueta": "Andre inntekter",
+   "lado": "ingreso",
+   "M": 1.791653,
+   "pagina": 13,
+   "linea": 536,
+   "origen": "nota que desglosa \"Andre inntekter\""
+  },
+  {
+   "etiqueta": "Kiosk salg",
+   "lado": "ingreso",
+   "M": 1.191064,
+   "pagina": 13,
+   "linea": 543,
+   "origen": "nota que desglosa \"Andre salgsinntekter\""
+  },
+  {
+   "etiqueta": "Supporterutstyr",
+   "lado": "ingreso",
+   "M": 1.841474,
+   "pagina": 13,
+   "linea": 544,
+   "origen": "nota que desglosa \"Andre salgsinntekter\""
+  },
+  {
+   "etiqueta": "Andre inntekter",
+   "lado": "ingreso",
+   "M": 0.409081,
+   "pagina": 13,
+   "linea": 545,
+   "origen": "nota que desglosa \"Andre salgsinntekter\""
+  },
+  {
+   "etiqueta": "Mediainntekter",
+   "lado": "ingreso",
+   "M": 6.513176,
+   "pagina": 6,
+   "linea": 260,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Tilskudd",
+   "lado": "ingreso",
+   "M": 1.998957,
+   "pagina": 6,
+   "linea": 261,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Reklame og sponsorinntekter",
+   "lado": "ingreso",
+   "M": 16.5456,
+   "pagina": 6,
+   "linea": 262,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Salg/utleie spillere",
+   "lado": "ingreso",
+   "M": 6.542138,
+   "pagina": 6,
+   "linea": 263,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Trening, matriell, kurs",
+   "lado": "gasto",
+   "M": 4.116991,
+   "pagina": 6,
+   "linea": 265,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Reise og oppholdskostander bortekamper",
+   "lado": "gasto",
+   "M": 2.831488,
+   "pagina": 6,
+   "linea": 266,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Salgskostnader",
+   "lado": "gasto",
+   "M": 1.247693,
+   "pagina": 6,
+   "linea": 267,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Lønn",
+   "lado": "gasto",
+   "M": 21.803897,
+   "pagina": 14,
+   "linea": 554,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Arbeidsgiveravgift",
+   "lado": "gasto",
+   "M": 2.812606,
+   "pagina": 14,
+   "linea": 555,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Pensjonskostnader",
+   "lado": "gasto",
+   "M": 0.228403,
+   "pagina": 14,
+   "linea": 556,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Andre relaterte ytelser",
+   "lado": "gasto",
+   "M": -1.150186,
+   "pagina": 14,
+   "linea": 557,
+   "origen": "nota que desglosa \"Lønnskostnad\""
+  },
+  {
+   "etiqueta": "Avskrivning på driftsmidler og immaterielle eiendeler",
+   "lado": "gasto",
+   "M": 0.841221,
+   "pagina": 6,
+   "linea": 269,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Påmeldingsavgifter/gebyr",
+   "lado": "gasto",
+   "M": 0.655335,
+   "pagina": 14,
+   "linea": 573,
+   "origen": "nota que desglosa \"Andre kostnader\""
+  },
+  {
+   "etiqueta": "Honorar medisinsk støtteapparat",
+   "lado": "gasto",
+   "M": 0.595186,
+   "pagina": 14,
+   "linea": 574,
+   "origen": "nota que desglosa \"Andre kostnader\""
+  },
+  {
+   "etiqueta": "Agent/talentspeidere",
+   "lado": "gasto",
+   "M": 0.64447,
+   "pagina": 14,
+   "linea": 575,
+   "origen": "nota que desglosa \"Andre kostnader\""
+  },
+  {
+   "etiqueta": "Reisekostnader/kilometergodt.",
+   "lado": "gasto",
+   "M": 0.955311,
+   "pagina": 14,
+   "linea": 576,
+   "origen": "nota que desglosa \"Andre kostnader\""
+  },
+  {
+   "etiqueta": "Leiekostnader",
+   "lado": "gasto",
+   "M": 0.792651,
+   "pagina": 14,
+   "linea": 577,
+   "origen": "nota que desglosa \"Andre kostnader\""
+  },
+  {
+   "etiqueta": "Utdanningsmidler/fotballisenser",
+   "lado": "gasto",
+   "M": 0.944916,
+   "pagina": 14,
+   "linea": 578,
+   "origen": "nota que desglosa \"Andre kostnader\""
+  },
+  {
+   "etiqueta": "Andre kostnader",
+   "lado": "gasto",
+   "M": 0.750053,
+   "pagina": 14,
+   "linea": 579,
+   "origen": "nota que desglosa \"Andre kostnader\""
+  },
+  {
+   "etiqueta": "Reklame og sponsorkostnader",
+   "lado": "gasto",
+   "M": 5.334211,
+   "pagina": 6,
+   "linea": 271,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Admkost",
+   "lado": "gasto",
+   "M": 2.729702,
+   "pagina": 6,
+   "linea": 272,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Annen renteinntekt",
+   "M": 0.004911,
+   "linea": 275
+  },
+  {
+   "etiqueta": "Annen finansinntekt",
+   "M": 0.074674,
+   "linea": 276
+  },
+  {
+   "etiqueta": "Annen rentekostnad",
+   "M": -0.047578,
+   "linea": 278
+  },
+  {
+   "etiqueta": "Annen finanskostnad",
+   "M": -0.071756,
+   "linea": 279
+  }
+ ],
+ "impuesto": []
+}

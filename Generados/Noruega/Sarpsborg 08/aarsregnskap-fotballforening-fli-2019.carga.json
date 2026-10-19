@@ -1,0 +1,1129 @@
+{
+ "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2019.pdf",
+ "generado": "2026-10-19T12:44:07.200Z",
+ "frena": [
+  {
+   "etapa": "categoria-en-cola",
+   "motivo": "6 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Media/tilskudd UEFA\" -> broadcasting 0.55; \"Kiosk salg\" -> other_income 0.6; \"Trening/materiell kostnader\" -> other_expenses 0.65; \"Innkjøp av varer for videresalg\" -> other_expenses 0.75; \"Honorar medisinsk støtteapparat\" -> other_expenses 0.55"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes en 2019: la pregunta ya está en la cola por aarsregnskap-fotballforening-fli-2017.pdf (56dfc5c) y vale para este año"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del documento, 2026-10-19: perimetro-senales.mjs: el ejercicio 2019-12-31 se publicó solo individual (el club es consolidado); 2 documento(s) con los dos estados votan consolidado; 8 ejercicio(s) con un solo perímetro (individual); 18 documento(s) mirados)",
+  "gastos: ningún total impreso igual a la suma de las líneas (-95.840497); queda la suma, verificada por el resultado del ejercicio",
+  "gestión: ningún presidente confirmado cubre 2019 (cierre 2019-12-31); pregunta en la cola (no frena)"
+ ],
+ "ejercicio": {
+  "clubId": "sarpsborg08-no",
+  "year": 2019,
+  "cierre": "2019-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Billetinntekter",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 5.497212,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Medlemsinntekter",
+    "normalizedCategory": "member_dues",
+    "amountNative": 0.665763,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Cupoppgjør NFF",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 0.18,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 1,
+    "_conf": 0.94,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Media/tilskudd UEFA",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 1.660498,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Grasrotandel",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.740286,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gaver/bidrag",
+    "normalizedCategory": "other_income",
+    "amountNative": 10.682,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre inntekter",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.530236,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Reklame og sponsorinntekter",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 31.324296,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Kiosk salg",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.575543,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Supporterutstyr",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.983448,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Solidaritetsmidler",
+    "normalizedCategory": "player_sales",
+    "amountNative": -0.861223,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre inntekter",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.457778,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Mediainntekter",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 7.63828,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Tilskudd",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.214901,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Salg/utleie spillere",
+    "normalizedCategory": "player_sales",
+    "amountNative": 31.835973,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Trening/materiell kostnader",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -4.693058,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 2,
+    "_conf": 0.65,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Kamp kostnader",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -3.169108,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Reise og oppholdskostander bortekamper",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -3.279508,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Innkjøp av varer for videresalg",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.171686,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Kostn./kjøp/salg spillere/utd.midler",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -8.044943,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Lønn",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -35.057603,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 0.91,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Arbeidsgiveravgift",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -5.580634,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Pensjonskostnader",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.492672,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Andre relaterte ytelser / Refusjoner",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.248036,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Avskrivning på driftsmidler og immaterielle eiendeler",
+    "normalizedCategory": "depreciation",
+    "amountNative": -7.869462,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Honorar medisinsk støtteapparat",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.083383,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Agent/talentspeidere",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -3.897215,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Reisekostnader/kilometergodt.",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -2.511709,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Leiekostnader",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -2.735833,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gave til samarbeidsklubber",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.1,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Kostnader stadion UEFA",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.002226,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre kostnader",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -2.346586,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Tap avgang Driftsmidler",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -3.189027,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Reklame og sponsorkostnader",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -5.366425,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Admkost",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -8.19041,
+    "disclosureLevel": "aggregated",
+    "_pag": 2,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "NOK",
+   "fxRef": "NOK@2019-12-31",
+   "sourceId": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2019",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.3943,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Annen renteinntekt",
+     "value": 0.134882
+    },
+    {
+     "label": "Annen finansinntekt",
+     "value": 0.124701
+    },
+    {
+     "label": "Annen rentekostnad",
+     "value": -0.365587
+    },
+    {
+     "label": "Annen finanskostnad",
+     "value": -0.288296
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 95.124991,
+   "officialTotalExpenses": 95.840497,
+   "officialPAT": -4.298833
+  },
+  "source": {
+   "id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2019",
+   "clubId": "sarpsborg08-no",
+   "title": "Sarpsborg 08 Fotballforening — aarsregnskap-fotballforening-fli-2019 (ejercicio 2019)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2019.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2019-12-31",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "01.01.2019 - 31.12.2019"
+  },
+  "confianza": "alta",
+  "anual": "calendario"
+ },
+ "clubId": "sarpsborg08-no",
+ "year": 2019,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2019.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "perimetro-senales.mjs: el ejercicio 2019-12-31 se publicó solo individual (el club es consolidado); 2 documento(s) con los dos estados votan consolidado; 8 ejercicio(s) con un solo perímetro (individual); 18 documento(s) mirados",
+   "evidencia": "A2 (Claude): Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2019.md",
+   "autor": "perimetro-senales",
+   "fecha": "2026-10-19"
+  }
+ ],
+ "seleccion": {
+  "filas": 39,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Billetinntekter",
+   "page": 2,
+   "native": 5.497212,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.497212,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5.497212
+  },
+  {
+   "label": "Medlemsinntekter",
+   "page": 2,
+   "native": 0.665763,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.665763,
+   "cat": "member_dues",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.665763
+  },
+  {
+   "label": "Cupoppgjør NFF",
+   "page": 8,
+   "native": 0.18,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Andre inntekter\")",
+   "signoFijo": 0.18,
+   "cat": "competition_bonus",
+   "conf": 0.94,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.18
+  },
+  {
+   "label": "Media/tilskudd UEFA",
+   "page": 8,
+   "native": 1.660498,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Andre inntekter\")",
+   "signoFijo": 1.660498,
+   "cat": "broadcasting",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 1.660498
+  },
+  {
+   "label": "Grasrotandel",
+   "page": 8,
+   "native": 1.740286,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Andre inntekter\")",
+   "signoFijo": 1.740286,
+   "cat": "other_income",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.740286
+  },
+  {
+   "label": "Gaver/bidrag",
+   "page": 8,
+   "native": 10.682,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Andre inntekter\")",
+   "signoFijo": 10.682,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 10.682
+  },
+  {
+   "label": "Andre inntekter",
+   "page": 8,
+   "native": 0.530236,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Andre inntekter\")",
+   "signoFijo": 0.530236,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.530236
+  },
+  {
+   "label": "Reklame og sponsorinntekter",
+   "page": 2,
+   "native": 31.324296,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 31.324296,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 31.324296
+  },
+  {
+   "label": "Kiosk salg",
+   "page": 9,
+   "native": 1.575543,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Andre salgsinntekter\")",
+   "signoFijo": 1.575543,
+   "cat": "other_income",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 1.575543
+  },
+  {
+   "label": "Supporterutstyr",
+   "page": 9,
+   "native": 0.983448,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Andre salgsinntekter\")",
+   "signoFijo": 0.983448,
+   "cat": "sponsorship_commercial",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.983448
+  },
+  {
+   "label": "Solidaritetsmidler",
+   "page": 9,
+   "native": 0.861223,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Andre salgsinntekter\")",
+   "signoFijo": -0.861223,
+   "cat": "player_sales",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": -0.861223
+  },
+  {
+   "label": "Andre inntekter",
+   "page": 9,
+   "native": 0.457778,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Andre salgsinntekter\")",
+   "signoFijo": 0.457778,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.457778
+  },
+  {
+   "label": "Mediainntekter",
+   "page": 2,
+   "native": 7.63828,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 7.63828,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 7.63828
+  },
+  {
+   "label": "Tilskudd",
+   "page": 2,
+   "native": 1.214901,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.214901,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.214901
+  },
+  {
+   "label": "Salg/utleie spillere",
+   "page": 2,
+   "native": 31.835973,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 31.835973,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 31.835973
+  },
+  {
+   "label": "Trening/materiell kostnader",
+   "page": 9,
+   "native": 4.693058,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Trening, matriell, kamp kostn.\")",
+   "signoFijo": 4.693058,
+   "cat": "other_expenses",
+   "conf": 0.65,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -4.693058
+  },
+  {
+   "label": "Kamp kostnader",
+   "page": 9,
+   "native": 3.169108,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Trening, matriell, kamp kostn.\")",
+   "signoFijo": 3.169108,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.169108
+  },
+  {
+   "label": "Reise og oppholdskostander bortekamper",
+   "page": 2,
+   "native": 3.279508,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.279508,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.279508
+  },
+  {
+   "label": "Innkjøp av varer for videresalg",
+   "page": 9,
+   "native": 1.171686,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Salgskostnader\")",
+   "signoFijo": 1.171686,
+   "cat": "other_expenses",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -1.171686
+  },
+  {
+   "label": "Kostn./kjøp/salg spillere/utd.midler",
+   "page": 9,
+   "native": 8.044943,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Salgskostnader\")",
+   "signoFijo": 8.044943,
+   "cat": "player_amortisation",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -8.044943
+  },
+  {
+   "label": "Lønn",
+   "page": 9,
+   "native": 35.057603,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
+   "signoFijo": 35.057603,
+   "cat": "wages_squad",
+   "conf": 0.91,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -35.057603
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "page": 9,
+   "native": 5.580634,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
+   "signoFijo": 5.580634,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Cargas sociales con el sueldo: wages_squad. [Lønnskostnad 64 445 471 (L132)]",
+   "destino": "expense",
+   "amountNative": -5.580634
+  },
+  {
+   "label": "Pensjonskostnader",
+   "page": 9,
+   "native": 0.492672,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
+   "signoFijo": 0.492672,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Pension con el sueldo: wages_squad. [Lønnskostnad 64 445 471 (L132)]",
+   "destino": "expense",
+   "amountNative": -0.492672
+  },
+  {
+   "label": "Andre relaterte ytelser / Refusjoner",
+   "page": 9,
+   "native": 0.248036,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
+   "signoFijo": 0.248036,
+   "cat": "wages_squad",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.248036
+  },
+  {
+   "label": "Avskrivning på driftsmidler og immaterielle eiendeler",
+   "page": 2,
+   "native": 7.869462,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 7.869462,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -7.869462
+  },
+  {
+   "label": "Honorar medisinsk støtteapparat",
+   "page": 9,
+   "native": 1.083383,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Andre kostnader\")",
+   "signoFijo": 1.083383,
+   "cat": "other_expenses",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -1.083383
+  },
+  {
+   "label": "Agent/talentspeidere",
+   "page": 9,
+   "native": 3.897215,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Andre kostnader\")",
+   "signoFijo": 3.897215,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.897215
+  },
+  {
+   "label": "Reisekostnader/kilometergodt.",
+   "page": 9,
+   "native": 2.511709,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Andre kostnader\")",
+   "signoFijo": 2.511709,
+   "cat": "match_organisation_expense",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.511709
+  },
+  {
+   "label": "Leiekostnader",
+   "page": 9,
+   "native": 2.735833,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Andre kostnader\")",
+   "signoFijo": 2.735833,
+   "cat": "other_expenses",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.735833
+  },
+  {
+   "label": "Gave til samarbeidsklubber",
+   "page": 9,
+   "native": 0.1,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Andre kostnader\")",
+   "signoFijo": 0.1,
+   "cat": "other_expenses",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.1
+  },
+  {
+   "label": "Kostnader stadion UEFA",
+   "page": 9,
+   "native": 0.002226,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Andre kostnader\")",
+   "signoFijo": 0.002226,
+   "cat": "match_organisation_expense",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.002226
+  },
+  {
+   "label": "Andre kostnader",
+   "page": 9,
+   "native": 2.346586,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Andre kostnader\")",
+   "signoFijo": 2.346586,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.346586
+  },
+  {
+   "label": "Tap avgang Driftsmidler",
+   "page": 9,
+   "native": 3.189027,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Andre kostnader\")",
+   "signoFijo": 3.189027,
+   "cat": "exceptional_items",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -3.189027
+  },
+  {
+   "label": "Reklame og sponsorkostnader",
+   "page": 2,
+   "native": 5.366425,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.366425,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5.366425
+  },
+  {
+   "label": "Admkost",
+   "page": 2,
+   "native": 8.19041,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 8.19041,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -8.19041
+  },
+  {
+   "label": "Annen renteinntekt",
+   "page": null,
+   "native": 0.134882,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Annen finansinntekt",
+   "page": null,
+   "native": 0.124701,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Annen rentekostnad",
+   "page": null,
+   "native": -0.365587,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "page": null,
+   "native": -0.288296,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Andre inntekter\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Andre salgsinntekter\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Trening, matriell, kamp kostn.\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Salgskostnader\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Lønnskostnad\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Andre kostnader\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 95.124991,
+  "expSum": -95.840497,
+  "officialTotalRevenue": 95.124991,
+  "officialTotalExpenses": 95.840497,
+  "officialPAT": -4.298833,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -4.298833,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 95.124991
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "NOK@2019-12-31",
+  "fx": 8.7803,
+  "source": "market_close",
+  "label": "Tipo medio de referencia de Norges Bank al 2019-12-31"
+ },
+ "liga": {
+  "valor": "no-eliteserien",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2019,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2019-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (8 de 8 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-19)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "NOK",
+   "fuente": "moneda de curso legal de Noruega (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "NOK@2019-12-31",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 8.7803. --escribir agrega 'NOK@2019-12-31' a FX_CLOSE",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2019",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "no-eliteserien",
+   "fuente": "data/club-leagues/no.js ya tiene la fila",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 2,
+  "lineasIngreso": 15,
+  "lineasGasto": 20,
+  "metaFilas": 4,
+  "excluidas": 0
+ }
+}

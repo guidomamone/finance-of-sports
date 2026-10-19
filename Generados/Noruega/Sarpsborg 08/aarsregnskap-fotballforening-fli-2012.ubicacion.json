@@ -1,0 +1,178 @@
+{
+ "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2012.pdf",
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2012.md",
+ "mdSha1": "1f7b7b5dc2474457d41772e47b31ada00d2069bc",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T12:23:33.313Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    102,
+    140
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    181,
+    212
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    230,
+    232
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    234,
+    235
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    239,
+    242
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 5,
+   "lineas": [
+    244,
+    245
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 5,
+   "lineas": [
+    249,
+    254
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 5,
+   "lineas": [
+    256,
+    257
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 5,
+   "lineas": [
+    259,
+    260
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 9,
+   "lineas": [
+    332,
+    335
+   ],
+   "tipo": "texto"
+  },
+  "b11": {
+   "pagina": 15,
+   "lineas": [
+    493,
+    507
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 24,
+   "lineas": [
+    724,
+    729
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 38,
+   "lineas": [
+    1152,
+    1160
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 38,
+   "lineas": [
+    1166,
+    1170
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 38,
+   "lineas": [
+    1176,
+    1180
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 40,
+   "lineas": [
+    1230,
+    1236
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 41,
+   "lineas": [
+    1278,
+    1288
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 41,
+   "lineas": [
+    1292,
+    1296
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 41,
+   "lineas": [
+    1300,
+    1302
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b16"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK",
+ "moneda": "NOK",
+ "columna_ejercicio": "2012",
+ "columna_anterior": "2011",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Resultatregnskap individual de la fotballforening en b1 (NOK, unidades). Nota 1 de lønnskostnader (b16) desglosa gastos de personal. b17 es activo fijo, b18 kundefordringer, b2/b5/b7 balance; b10 y b13-b15 no son cifras financieras."
+}

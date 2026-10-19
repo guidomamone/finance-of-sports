@@ -1,0 +1,234 @@
+{
+ "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2021.pdf",
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2021.md",
+ "mdSha1": "012c4749b3a3bd8e3cf4ba0bd75dbc8470a19d89",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T12:35:41.067Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    106,
+    141
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    151,
+    154
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 4,
+   "lineas": [
+    169,
+    198
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 5,
+   "lineas": [
+    213,
+    236
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    276,
+    286
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 13,
+   "lineas": [
+    543,
+    549
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 13,
+   "lineas": [
+    553,
+    560
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 13,
+   "lineas": [
+    571,
+    575
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 13,
+   "lineas": [
+    579,
+    583
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 13,
+   "lineas": [
+    587,
+    591
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 14,
+   "lineas": [
+    597,
+    603
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 14,
+   "lineas": [
+    607,
+    609
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 14,
+   "lineas": [
+    621,
+    631
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 14,
+   "lineas": [
+    635,
+    642
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 14,
+   "lineas": [
+    646,
+    650
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 15,
+   "lineas": [
+    656,
+    659
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 15,
+   "lineas": [
+    673,
+    677
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 15,
+   "lineas": [
+    681,
+    683
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 15,
+   "lineas": [
+    691,
+    695
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 16,
+   "lineas": [
+    701,
+    707
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 16,
+   "lineas": [
+    715,
+    720
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 16,
+   "lineas": [
+    724,
+    726
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [
+  "b6",
+  "b7",
+  "b8"
+ ],
+ "notas_gastos": [
+  "b5",
+  "b9",
+  "b10",
+  "b11",
+  "b14"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Beløp i: NOK",
+ "moneda": "NOK",
+ "columna_ejercicio": "2021",
+ "columna_anterior": "2020",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Lønnkostnader' de pág. 7 (b5) por repetir el desglose de la Note 7 (b11)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Lønnskostnader",
+   "texto": "b5 (Spesifisering av resultatregnskapet) y b11 (Note 7) parecen abrir el mismo renglón de lønnskostnader.",
+   "bloques": [
+    "b5",
+    "b11"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se usa la Note 4 (b8) para abrir los ingresos en arrangementsinntekter y salg/utleie spillere?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Salg/utleie spillere",
+   "texto": "Note 4 es distribución de ingresos por tipo; puede solaparse con renglones del estado.",
+   "bloques": [
+    "b8"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado individual de Sarpsborg 08 Fotballforening en NOK unidades (b1). Se excluyen balance (b3,b4), disposición (b2), activo fijo (b13), revisión (b15), participaciones (b16), notas de balance (b17,b19,b20,b21) y Note 8 (b12)."
+}
