@@ -3,7 +3,7 @@
  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2010.md",
  "mdSha1": "e1e66aa949024ada5e72d3553adca3c933c724b0",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T15:46:32.390Z",
+ "generado": "2026-10-19T16:45:29.846Z",
  "perimetroClub": "individual",
  "bloques": {
   "b1": {
@@ -393,12 +393,13 @@
  },
  "sin_estado": false,
  "estado": [
-  "b3"
+  "b6",
+  "b7"
  ],
  "notas_ingresos": [],
  "notas_gastos": [],
  "escala": "unidades",
- "escala_evidencia": "Encabezado de columnas '2010 CHF | 2009 CHF' (importes en francos, p.ej. Bilanzgewinn CHF 876 912.02)",
+ "escala_evidencia": "Encabezado de columnas '2010 CHF | 2009 CHF' (importes en francos, sin indicación de miles)",
  "moneda": "CHF",
  "columna_ejercicio": "2010 CHF",
  "columna_anterior": "2009 CHF",
@@ -406,18 +407,16 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se carga la Erfolgsrechnung del Verein FC Basel 1893 (b3) y no la de la FC Basel 1893 AG (b6-b7)?",
+   "pregunta": "¿Se deja afuera de la carga el cuadro 'Grafik 4: Organisationskosten pro Zuschauer' (b17), por estar expresado por espectador y no en importes totales?",
    "propuesta": "sí",
-   "tema": "perimetro",
-   "renglon": "",
-   "texto": "El documento trae dos entidades separadas (Verein en pág. 13 y AG en pág. 19), sin consolidado; hay que confirmar cuál corresponde a los años ya cargados.",
+   "tema": "otro",
+   "renglon": "Organisationskosten Heimspiele",
+   "texto": "El cuadro b17 abre Catering, Sicherheit, Miete, pero en CHF por espectador, no en totales que sumen al renglón del estado.",
    "bloques": [
-    "b3",
-    "b6",
-    "b7"
+    "b17"
    ],
-   "afecta_carga": true
+   "afecta_carga": false
   }
  ],
- "observaciones": "No hay estado consolidado. b3 = Erfolgsrechnung del Verein FC Basel 1893 (individual, pág. 13). b6+b7 = Erfolgsrechnung de la FC Basel 1893 AG (sociedad operativa, pág. 19), que contiene el grueso de la actividad futbolística (Matcheinnahmen, Personalaufwand). Si los años cargados corresponden a la AG, usar b6 y b7 en lugar de b3. Los gráficos b16 y b17 son series históricas de la memoria y no se cargan."
+ "observaciones": "El documento trae cuentas individuales de dos entidades: el Verein FC Basel 1893 (balance b1-b2, Erfolgsrechnung b3) y la FC Basel 1893 AG (balance b4-b5, Erfolgsrechnung b6 ingresos + b7 gastos hasta Jahresgewinn). Se eligen b6-b7 de la AG, que es la entidad pedida. No hay consolidado. No se ven notas con desglose de ingresos o gastos; b8-b11 son compromisos y destino del resultado."
 }

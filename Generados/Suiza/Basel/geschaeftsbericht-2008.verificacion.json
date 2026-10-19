@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2008.pdf",
  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2008.md",
- "generado": "2026-10-19T16:03:16.382Z",
+ "generado": "2026-10-19T16:48:40.499Z",
  "estado": "ok",
  "clubId": "basel-ch",
  "year": 2008,
@@ -16,29 +16,33 @@
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": null,
-   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+   "ok": true,
+   "detalle": "60.589164 = 60.562364",
+   "suma": 60.58916431,
+   "impreso": 60.56236431
   },
   {
    "nombre": "total de gastos",
-   "ok": null,
-   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+   "ok": true,
+   "detalle": "59.112842 = 59.112842",
+   "suma": 59.11284177,
+   "impreso": 59.11284177
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "detalle": "cierra (como impresos)",
    "dif": 1.887379141862766e-15
   },
   {
    "nombre": "lectura",
    "ok": true,
-   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+   "detalle": "cerró con la lectura 3 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo)"
   },
   {
    "nombre": "documento del año 2009",
-   "ok": false,
-   "detalle": "ingresos de 2008: 60.589164 en este documento y 121.124729 en geschaeftsbericht-2009.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2008: 60.589164 en este documento y 60.562364 en geschaeftsbericht-2009.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2007",
@@ -52,8 +56,8 @@
   }
  ],
  "notas": [
-  "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
-  "la lectura base no cerraba; cerró con la lectura 4",
+  "\"Verlustabdeckung FC Basel Holding AG\" (L496) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "la lectura base no cerraba; cerró con la lectura 3",
   "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2012.pdf"
  ],
  "reintentar": null,
@@ -62,12 +66,12 @@
  "totales": {
   "ingresos": 60.589164,
   "gastos": 59.112842,
-  "financiero": 0.463615,
-  "impuesto": 0.274679,
+  "financiero": -0.201859,
+  "impuesto": -0.274679,
   "resultadoImpreso": 0.999784,
   "resultadoParaCargar": 0.999784,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -248,8 +252,8 @@
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {

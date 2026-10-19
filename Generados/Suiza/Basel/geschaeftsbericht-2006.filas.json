@@ -2,357 +2,344 @@
  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2006.pdf",
  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2006.md",
  "mdSha1": "86b9f56984a2b7a20ed4f361275d0402d1703daf",
- "ubicacionSha1": "6b8f841c68f182f1724ce371676392ae66ccfd96",
+ "ubicacionSha1": "bd0753e6eec88c9cd6cd1ee45ba3cf241a3ed895",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T15:16:33.316Z",
+ "generado": "2026-10-19T16:45:23.398Z",
  "ubicacion": {
   "estado": [
-   "b4",
-   "b5"
+   "b9",
+   "b10"
   ],
   "notas_ingresos": [],
   "notas_gastos": []
  },
  "escalas": [
   {
-   "bloque": "b4",
+   "bloque": "b9",
    "escala": "unidades",
-   "evidencia": "Columnas '2006 CHF' / '2005 CHF' con importes con centavos (L419)"
+   "evidencia": "Encabezado de columna '2006 CHF' con importes en francos con centavos (L675)"
   },
   {
-   "bloque": "b5",
+   "bloque": "b10",
    "escala": "unidades",
-   "evidencia": "Columnas '2006 CHF' / '2005 CHF' con importes con centavos (L435)"
+   "evidencia": "Encabezado de columna '2006 CHF' con importes en francos con centavos (L692)"
   }
  ],
  "filas": [
   {
-   "bloque": "b4",
-   "linea": 421,
+   "bloque": "b9",
+   "linea": 677,
    "etiqueta": "Matcheinnahmen",
-   "actual": "0.00",
-   "anterior": "16 127 977.61",
+   "actual": "13 759 136.90",
+   "anterior": null,
    "tipo": "subtotal",
    "lado": "ingreso",
    "detalla_a": null
   },
   {
-   "bloque": "b4",
-   "linea": 422,
+   "bloque": "b9",
+   "linea": 678,
    "etiqueta": "aus Meisterschaft",
-   "actual": "0.00",
-   "anterior": "10 830 074.86",
+   "actual": "9 959 965.17",
+   "anterior": null,
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "Matcheinnahmen"
+   "detalla_a": null
   },
   {
-   "bloque": "b4",
-   "linea": 423,
-   "etiqueta": "aus Champions-League / UEFA-Cup",
-   "actual": "0.00",
-   "anterior": "4 973 398.24",
+   "bloque": "b9",
+   "linea": 679,
+   "etiqueta": "aus UEFA-Spielen",
+   "actual": "3 714 242.35",
+   "anterior": null,
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "Matcheinnahmen"
+   "detalla_a": null
   },
   {
-   "bloque": "b4",
-   "linea": 424,
+   "bloque": "b9",
+   "linea": 680,
    "etiqueta": "aus Cup-Spielen",
-   "actual": "0.00",
-   "anterior": "317 069.56",
+   "actual": "80 282.53",
+   "anterior": null,
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "Matcheinnahmen"
+   "detalla_a": null
   },
   {
-   "bloque": "b4",
-   "linea": 425,
+   "bloque": "b9",
+   "linea": 681,
    "etiqueta": "aus übrigen Spielen",
-   "actual": "0.00",
-   "anterior": "7 434.95",
+   "actual": "4 646.85",
+   "anterior": null,
    "tipo": "renglon",
    "lado": "ingreso",
-   "detalla_a": "Matcheinnahmen"
+   "detalla_a": null
   },
   {
-   "bloque": "b4",
-   "linea": 426,
+   "bloque": "b9",
+   "linea": 682,
    "etiqueta": "Business Seats",
-   "actual": "0.00",
-   "anterior": "6 330 115.09",
+   "actual": "6 087 139.41",
+   "anterior": null,
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": null
   },
   {
-   "bloque": "b4",
-   "linea": 427,
+   "bloque": "b9",
+   "linea": 683,
    "etiqueta": "Sponsoring, Werbung",
-   "actual": "0.00",
-   "anterior": "4 879 850.25",
+   "actual": "7 349 047.77",
+   "anterior": null,
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": null
   },
   {
-   "bloque": "b4",
-   "linea": 428,
+   "bloque": "b9",
+   "linea": 684,
+   "etiqueta": "Transferertrag",
+   "actual": "17 791 559.10",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 685,
    "etiqueta": "TV-Entschädigungen",
-   "actual": "0.00",
-   "anterior": "1 704 059.90",
+   "actual": "3 367 135.10",
+   "anterior": null,
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": null
   },
   {
-   "bloque": "b4",
-   "linea": 429,
-   "etiqueta": "Leihertrag, Ausbildungsentschädigungen",
-   "actual": "0.00",
-   "anterior": "888 822.40",
+   "bloque": "b9",
+   "linea": 686,
+   "etiqueta": "Merchandising, Licensing",
+   "actual": "425 897.78",
+   "anterior": null,
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": null
   },
   {
-   "bloque": "b4",
-   "linea": 430,
-   "etiqueta": "Mitglieder",
-   "actual": "451 613.00",
-   "anterior": "451 475.00",
-   "tipo": "renglon",
-   "lado": "ingreso",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b4",
-   "linea": 431,
+   "bloque": "b9",
+   "linea": 687,
    "etiqueta": "Verbandseinnahmen",
-   "actual": "0.00",
-   "anterior": "333 841.30",
+   "actual": "729 116.35",
+   "anterior": null,
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": null
   },
   {
-   "bloque": "b4",
-   "linea": 432,
+   "bloque": "b9",
+   "linea": 688,
+   "etiqueta": "Einnahmen Leistungsfussball Nachwuchs",
+   "actual": "453 721.03",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 689,
    "etiqueta": "Diverses",
-   "actual": "223 936.47",
-   "anterior": "7 501 273.28",
+   "actual": "1 396 068.77",
+   "anterior": null,
    "tipo": "renglon",
    "lado": "ingreso",
    "detalla_a": null
   },
   {
-   "bloque": "b4",
-   "linea": 433,
+   "bloque": "b9",
+   "linea": 690,
    "etiqueta": "Total Ertrag",
-   "actual": "675 549.47",
-   "anterior": "38 217 414.83",
+   "actual": "51 358 822.21",
+   "anterior": null,
    "tipo": "total",
    "lado": "ingreso",
    "detalla_a": null
   },
   {
-   "bloque": "b5",
-   "linea": 437,
+   "bloque": "b10",
+   "linea": 694,
    "etiqueta": "Personalaufwand",
-   "actual": "–226 772.10",
-   "anterior": "–25 078 668.29",
+   "actual": "–24 096 494.40",
+   "anterior": null,
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": null
   },
   {
-   "bloque": "b5",
-   "linea": 438,
+   "bloque": "b10",
+   "linea": 695,
    "etiqueta": "Organisationskosten Heimspiele",
-   "actual": "0.00",
-   "anterior": "–7 835 065.30",
+   "actual": "–9 161 110.24",
+   "anterior": null,
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": null
   },
   {
-   "bloque": "b5",
-   "linea": 439,
+   "bloque": "b10",
+   "linea": 696,
    "etiqueta": "Übriger Spielbetrieb",
-   "actual": "0.00",
-   "anterior": "–1 847 381.28",
+   "actual": "–3 495 099.30",
+   "anterior": null,
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": null
   },
   {
-   "bloque": "b5",
-   "linea": 440,
-   "etiqueta": "Leihaufwand, Ausbildungsentschädigungen",
-   "actual": "0.00",
-   "anterior": "–94 870.20",
+   "bloque": "b10",
+   "linea": 697,
+   "etiqueta": "Transferaufwand",
+   "actual": "–9 538 502.08",
+   "anterior": null,
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": null
   },
   {
-   "bloque": "b5",
-   "linea": 441,
+   "bloque": "b10",
+   "linea": 698,
    "etiqueta": "Werbung",
-   "actual": "0.00",
-   "anterior": "–1 099 846.05",
+   "actual": "–1 223 832.92",
+   "anterior": null,
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": null
   },
   {
-   "bloque": "b5",
-   "linea": 442,
+   "bloque": "b10",
+   "linea": 699,
    "etiqueta": "Administration",
-   "actual": "–158 871.30",
-   "anterior": "–979 456.09",
+   "actual": "–1 848 213.91",
+   "anterior": null,
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": null
   },
   {
-   "bloque": "b5",
-   "linea": 443,
+   "bloque": "b10",
+   "linea": 700,
    "etiqueta": "Abschreibungen",
-   "actual": "0.00",
-   "anterior": "–319 066.05",
+   "actual": "–268 995.00",
+   "anterior": null,
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": null
   },
   {
-   "bloque": "b5",
-   "linea": 444,
+   "bloque": "b10",
+   "linea": 701,
+   "etiqueta": "Aufwand Leistungsfussball Nachwuchs",
+   "actual": "–770 872.58",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 702,
    "etiqueta": "Übriger Aufwand",
-   "actual": "–271 202.32",
-   "anterior": "–1 590 286.20",
+   "actual": "–877 672.89",
+   "anterior": null,
    "tipo": "renglon",
    "lado": "gasto",
    "detalla_a": null
   },
   {
-   "bloque": "b5",
-   "linea": 445,
+   "bloque": "b10",
+   "linea": 703,
    "etiqueta": "Total Aufwand",
-   "actual": "–656 845.72",
-   "anterior": "–38 844 639.46",
+   "actual": "–51 280 793.32",
+   "anterior": null,
    "tipo": "total",
    "lado": "gasto",
    "detalla_a": null
   },
   {
-   "bloque": "b5",
-   "linea": 446,
-   "etiqueta": "Ergebnis vor Zinsen, Verlustabdeckung und Steuern",
-   "actual": "18 703.75",
-   "anterior": "–627 224.63",
+   "bloque": "b10",
+   "linea": 704,
+   "etiqueta": "Ergebnis vor Zinsen und Steuern",
+   "actual": "78 028.89",
+   "anterior": null,
    "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
   },
   {
-   "bloque": "b5",
-   "linea": 447,
+   "bloque": "b10",
+   "linea": 705,
    "etiqueta": "Finanzertrag",
-   "actual": "361.20",
-   "anterior": "310 974.08",
+   "actual": "222 536.02",
+   "anterior": null,
    "tipo": "renglon",
    "lado": "financiero",
    "detalla_a": null
   },
   {
-   "bloque": "b5",
-   "linea": 448,
+   "bloque": "b10",
+   "linea": 706,
    "etiqueta": "Finanzaufwand",
-   "actual": "–843.80",
-   "anterior": "–47 262.74",
+   "actual": "–175 788.27",
+   "anterior": null,
    "tipo": "renglon",
    "lado": "financiero",
    "detalla_a": null
   },
   {
-   "bloque": "b5",
-   "linea": 449,
-   "etiqueta": "Ergebnis vor Verlustabdeckung und Steuern",
-   "actual": "18 221.15",
-   "anterior": "–363 513.29",
-   "tipo": "resultado",
-   "lado": "resultado",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b5",
-   "linea": 450,
-   "etiqueta": "Verlustabdeckung FC Basel Marketing AG",
-   "actual": "0.00",
-   "anterior": "470 000.00",
-   "tipo": "renglon",
-   "lado": "otro",
-   "detalla_a": null
-  },
-  {
-   "bloque": "b5",
-   "linea": 451,
+   "bloque": "b10",
+   "linea": 707,
    "etiqueta": "Ergebnis vor Steuern",
-   "actual": "18 221.15",
-   "anterior": "106 486.71",
+   "actual": "124 776.64",
+   "anterior": null,
    "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
   },
   {
-   "bloque": "b5",
-   "linea": 452,
+   "bloque": "b10",
+   "linea": 708,
    "etiqueta": "Steuern",
-   "actual": "–1 350.00",
-   "anterior": "–5 293.25",
+   "actual": "–53 384.70",
+   "anterior": null,
    "tipo": "renglon",
    "lado": "impuesto",
    "detalla_a": null
   },
   {
-   "bloque": "b5",
-   "linea": 453,
+   "bloque": "b10",
+   "linea": 709,
    "etiqueta": "Jahresgewinn",
-   "actual": "16 871.15",
-   "anterior": "101 193.46",
+   "actual": "71 391.94",
+   "anterior": null,
    "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
   }
  ],
  "total_ingresos": {
-  "linea": 433,
-  "actual": "675 549.47"
+  "linea": 690,
+  "actual": "51 358 822.21"
  },
  "total_gastos": {
-  "linea": 445,
-  "actual": "–656 845.72"
+  "linea": 703,
+  "actual": "–51 280 793.32"
  },
  "resultado": {
-  "linea": 453,
-  "actual": "16 871.15",
-  "anterior": "101 193.46"
+  "linea": 709,
+  "actual": "71 391.94",
+  "anterior": null
  },
- "dudas": [
-  {
-   "pregunta": "¿Se carga este estado de resultados (L417-L453) como el del club pese a que en 2006 casi todos los renglones operativos son 0.00 (posible traspaso de la actividad a otra sociedad, p.ej. FC Basel Marketing AG)?",
-   "propuesta": "sí",
-   "tema": "perimetro",
-   "renglon": "Total Ertrag",
-   "texto": "Los ingresos 2006 caen de 38 217 414.83 a 675 549.47 (L433), lo que sugiere que la actividad se consolida en otra entidad del grupo.",
-   "bloques": [
-    "b4",
-    "b5"
-   ],
-   "afecta_carga": true
-  }
- ],
- "observaciones": "L432-L433 aparecen repetidas en b4 y b5; se extrajeron una sola vez (de b4). Las líneas L422-L425 desglosan Matcheinnahmen dentro del propio estado. Signos de gasto con guion largo '–' tal cual."
+ "dudas": [],
+ "observaciones": "Sólo hay columna 2006 CHF; sin año anterior. L689-L690 se repiten en b9 y b10; se cargaron una sola vez desde b9. Matcheinnahmen (L677) es subtotal de las cuatro filas 'aus ...' (L678-L681), que suman exactamente 13 759 136.90."
 }

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2015.pdf",
  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2015.md",
- "generado": "2026-10-19T16:03:16.872Z",
- "estado": "cola",
+ "generado": "2026-10-19T16:54:14.319Z",
+ "estado": "ok",
  "clubId": "basel-ch",
  "year": 2015,
  "escala": {
@@ -23,11 +23,7 @@
    "fecha": "2026-10-19"
   }
  ],
- "cola": [
-  "913d4d3",
-  "843ff32",
-  "007661c"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -56,8 +52,8 @@
   },
   {
    "nombre": "documento del año 2014",
-   "ok": false,
-   "detalle": "ingresos de 2014: 210.51182 en geschaeftsbericht-2014.pdf y 105.25591 en este documento (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2014: 105.25591 en geschaeftsbericht-2014.pdf y 105.25591 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
@@ -71,6 +67,9 @@
   }
  ],
  "notas": [
+  "\"Korrektur Gewinnüberführung FC Basel Holding AG\" (L992) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Defizitgarantie FC Basel 1893\" (L1012) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Gewinnüberführung FC Basel Holding AG\" (L1013) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
   "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2012.pdf",
   "duda de localizar que no afecta la carga: Tiene solo 3 importes en 11 filas y parece ser una distribución de empleados, no un desglose completo de importes."
  ],

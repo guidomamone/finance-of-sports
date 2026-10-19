@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2012.pdf",
  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2012.md",
- "generado": "2026-10-19T16:03:16.593Z",
- "estado": "cola",
+ "generado": "2026-10-19T16:48:40.594Z",
+ "estado": "ok",
  "clubId": "basel-ch",
  "year": 2012,
  "escala": {
@@ -12,19 +12,14 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "2b758ca",
-  "f2c7e18",
-  "731c315",
-  "7368826",
-  "1929f7a",
-  "29ab985"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
    "ok": true,
-   "detalle": "\"Total Ertrag\" 80.037417 cierra; además se suman 12 línea(s) fuera de ese total (80.037417)"
+   "detalle": "80.037417 = 80.037417",
+   "suma": 80.03741677999999,
+   "impreso": 80.03741678
   },
   {
    "nombre": "total de gastos",
@@ -35,42 +30,54 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 160.074834 - gastos 64.886784 ± financiero 0.214379 ± impuesto 0.944068 no da el impreso 0.027598",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.4127587988355117e-14
   },
   {
    "nombre": "documento del año 2013",
-   "ok": false,
-   "detalle": "ingresos de 2012: 160.074834 en este documento y 80.037417 en geschaeftsbericht-2013.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2012: 80.037417 en este documento y 80.037417 en geschaeftsbericht-2013.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2011",
-   "ok": false,
-   "detalle": "ingresos de 2011: 67.64085 en geschaeftsbericht-2011.pdf y 135.2817 en este documento (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2011: 67.64085 en geschaeftsbericht-2011.pdf y 67.64085 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2011: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
+  "\"Defizitgarantie FC Basel 1893\" (L820) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Gewinnüberführung FC Basel Holding AG\" (L821) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Defizitgarantie FC Basel 1893\" (L579) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Gewinnüberführung FC Basel Holding AG\" (L810) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Gewinnüberführung FC Basel Holding AG\" (L810) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Gewinnüberführung FC Basel Holding AG\" (L810) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
   "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2012.pdf",
-  "duda de extraer que no afecta la carga: L810 es una transferencia de ganancia a la sociedad holding, no un gasto operativo; afecta la comparabilidad del resultado del ejercicio."
+  "duda de extraer que no afecta la carga: L810 es una transferencia de ganancia a la sociedad holding, no un gasto operativo; afecta la comparabilidad del resultado del ejercicio.",
+  "6 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 160.074834,
+  "ingresos": 80.037417,
   "gastos": 64.886784,
-  "financiero": 0.214379,
-  "impuesto": 0.944068,
+  "financiero": -14.178966,
+  "impuesto": -0.944068,
   "resultadoImpreso": 0.027598,
   "resultadoParaCargar": 0.027598,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -170,14 +177,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Total Ertrag",
-   "lado": "ingreso",
-   "M": 80.037417,
-   "pagina": 23,
-   "linea": 791,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Personalaufwand",
    "lado": "gasto",
    "M": 33.403029,
@@ -270,14 +269,19 @@
   },
   {
    "etiqueta": "Finanzaufwand",
-   "M": 0.196672,
+   "M": -0.196672,
    "linea": 808
+  },
+  {
+   "etiqueta": "Gewinnüberführung FC Basel Holding AG",
+   "M": -14,
+   "linea": 810
   }
  ],
  "impuesto": [
   {
    "etiqueta": "Steuern",
-   "M": 0.944068,
+   "M": -0.944068,
    "linea": 812
   }
  ]

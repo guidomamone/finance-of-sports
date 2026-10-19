@@ -3,7 +3,7 @@
  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2006.md",
  "mdSha1": "86b9f56984a2b7a20ed4f361275d0402d1703daf",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T15:16:11.356Z",
+ "generado": "2026-10-19T16:45:01.502Z",
  "perimetroClub": null,
  "bloques": {
   "b1": {
@@ -281,33 +281,18 @@
  },
  "sin_estado": false,
  "estado": [
-  "b4",
-  "b5"
+  "b9",
+  "b10"
  ],
  "notas_ingresos": [],
  "notas_gastos": [],
  "escala": "unidades",
- "escala_evidencia": "Encabezado de columnas '2006 CHF | 2005 CHF' (importes en francos)",
+ "escala_evidencia": "Encabezado de columna '2006 CHF' con importes como CHF 71 391.94 (Jahresgewinn)",
  "moneda": "CHF",
  "columna_ejercicio": "2006 CHF",
- "columna_anterior": "2005 CHF",
- "perimetro": "ambos",
+ "columna_anterior": null,
+ "perimetro": "individual",
  "necesito_ver": [],
- "dudas": [
-  {
-   "pregunta": "¿Se carga la Erfolgsrechnung del Verein (b4-b5) y se deja afuera la de la FC Basel 1893 AG (b9-b10)?",
-   "propuesta": "sí",
-   "tema": "perimetro",
-   "renglon": "",
-   "texto": "El documento presenta dos entidades separadas (Verein pág. 14 y AG pág. 20) sin estado consolidado; la AG parece ser la sociedad nueva con solo columna 2006.",
-   "bloques": [
-    "b4",
-    "b5",
-    "b9",
-    "b10"
-   ],
-   "afecta_carga": true
-  }
- ],
- "observaciones": "No hay consolidado. b4-b5: Erfolgsrechnung FC Basel 1893 (Verein) 2006 y 2005. b9-b10: Erfolgsrechnung FC Basel 1893 AG, solo 2006. Se eligió el Verein por tener comparativo; b16 y b17 son estadísticas plurianuales, no notas."
+ "dudas": [],
+ "observaciones": "El documento trae cuentas de dos entidades: FC Basel 1893 (Verein), con la Erfolgsrechnung en b4/b5 (2006 y 2005), y FC Basel 1893 AG, con la Erfolgsrechnung 2006 en b9/b10, que solo tiene la columna 2006 (sin año anterior). Se eligió la de la AG, que es la entidad pedida. No hay estados consolidados. b16 y b17 son indicadores de la memoria y no se cargan."
 }

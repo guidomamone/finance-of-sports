@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2005.pdf",
  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2005.md",
- "generado": "2026-10-19T16:03:16.294Z",
- "estado": "cola",
+ "generado": "2026-10-19T16:48:40.412Z",
+ "estado": "ok",
  "clubId": "basel-ch",
  "year": 2005,
  "escala": {
@@ -12,14 +12,14 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "9f74e77"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
    "ok": true,
-   "detalle": "\"**Total Ertrag**\" 38.217415 cierra; además se suman 11 línea(s) fuera de ese total (38.217415)"
+   "detalle": "38.217415 = 38.217415",
+   "suma": 38.217414829999996,
+   "impreso": 38.217414829999996
   },
   {
    "nombre": "total de gastos",
@@ -30,36 +30,44 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 76.43483 - gastos 38.844639 ± financiero 0.358237 ± impuesto 0.005293 no da el impreso 0.101193",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 7.78543896018391e-15
   },
   {
    "nombre": "documento del año 2006",
-   "ok": true,
-   "detalle": "ingresos de 2005: 76.43483 en este documento y 76.43483 en geschaeftsbericht-2006.pdf (columna del año anterior)"
+   "ok": null,
+   "detalle": "no se puede comparar: geschaeftsbericht-2006.pdf no trae la columna del año anterior"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2004: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
-  "duda de localizar ya contestada para el club (columna, \"Organisationskosten Heimspiele\"): corregir no, en geschaeftsbericht-2005.pdf"
+  "\"Verlustabdeckung FC Basel Marketing AG\" (L254) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "\"Verlustabdeckung FC Basel Marketing AG\" (L254) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos",
+  "duda de localizar ya contestada para el club (columna, \"Organisationskosten Heimspiele\"): corregir no, en geschaeftsbericht-2005.pdf",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 76.43483,
+  "ingresos": 38.217415,
   "gastos": 38.844639,
-  "financiero": 0.358237,
-  "impuesto": 0.005293,
+  "financiero": 0.733711,
+  "impuesto": -0.005293,
   "resultadoImpreso": 0.101193,
   "resultadoParaCargar": 0.101193,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -151,14 +159,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "**Total Ertrag**",
-   "lado": "ingreso",
-   "M": 38.217415,
-   "pagina": 13,
-   "linea": 223,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Personalaufwand",
    "lado": "gasto",
    "M": 25.078668,
@@ -235,14 +235,19 @@
   },
   {
    "etiqueta": "Finanzaufwand",
-   "M": 0.047263,
+   "M": -0.047263,
    "linea": 248
+  },
+  {
+   "etiqueta": "Verlustabdeckung FC Basel Marketing AG",
+   "M": 0.47,
+   "linea": 254
   }
  ],
  "impuesto": [
   {
    "etiqueta": "Steuern",
-   "M": 0.005293,
+   "M": -0.005293,
    "linea": 258
   }
  ]
