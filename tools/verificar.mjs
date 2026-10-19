@@ -354,7 +354,13 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
         // de sus renglones si cierra CON SU SIGNO impreso (como la lectura 4 para la actual): una "Variazione delle rimanenze (608.641)" negativa suma en valor
         // absoluto 95,04 M contra el total impreso de 93,82 M, y el total se contaba además de sus renglones (188,86 M). La compuerta es la misma suma exacta.
         const esSumaDe = (lista) => { let acc = 0; let accF = 0; for (let j = 0; j < lista.length; j++) { acc += Math.abs(lista[j][campo] || 0); accF += lista[j][campo] || 0; if (j >= 1 && (cerca(acc, Math.abs(f[campo] || 0)) || ((conOtros || firmado || campo === 'A') && cerca(Math.abs(accF), Math.abs(f[campo] || 0))))) return true; } return false; };
+        // (to-do 298 ah, ok de Guido 2026-10-19) UN SUBTOTAL CON SUS HIJOS ES UN COMPONENTE DEL TOTAL: "Matcheinnahmen" 16,13 M (Basel 2005) es un subtotal con 4 filas
+        // debajo (aus Meisterschaft…, que detallan_a Matcheinnahmen) que suman exacto su importe; el "Total Ertrag" 38,22 M suma ese subtotal y 7 renglones más. Las filas
+        // hijas no están en `delLado`, así que con solo renglones daba 22,09 y el total se contaba además de sus componentes (ingresos 76,43 M). Cuenta como
+        // componente un subtotal de arriba con 2 hijas o más que suman su importe (así no entra un subtotal que suma renglones de arriba).
+        const esCompuesto = (x) => { if (x.tipo !== 'subtotal') return false; const hs = filas.filter((h) => h.detalla_a && String(h.detalla_a).trim() === String(x.etiqueta).trim() && h.lado === x.lado); return hs.length >= 2 && cerca(hs.reduce((a, h) => a + Math.abs(h[campo] || 0), 0), Math.abs(x[campo] || 0)); };
         const arriba = delLado.slice(0, k).filter((x) => x.tipo === 'renglon').reverse(); const abajo = delLado.slice(k + 1).filter((x) => x.tipo === 'renglon');
+        const arribaConCompuestos = delLado.slice(0, k).filter((x) => x.tipo === 'renglon' || esCompuesto(x)).reverse(); // solo para la decisión final de abajo, no para los escalones previos
         // ESCALÓN "SUBTOTAL REPETIDO" (to-do 175, escalón 1, aprobado por Guido el 2026-10-08; solo con `subRepetido`, que se prueba después
         // de que falla la lectura 4). Un subtotal con el MISMO importe que el renglón INMEDIATO de arriba (del mismo lado) es ese renglón
         // repetido, no una línea más (esSumaDe pide dos renglones y la Versión 409 junta todos los de arriba hasta un encabezado, que a veces no
@@ -437,7 +443,7 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
           if (campo === 'M') { const n = `escalón "subtotal repetido": "${f.etiqueta}" (L${f.linea}) repite "${previo.etiqueta}" (L${previo.linea})${abierto ? '; se saltea' : '; ocupa su lugar'}`; if (!notasSubRep.includes(n)) notasSubRep.push(n); }
           if (abierto) continue;
           const quitar = new Set(salio); for (let i = out.length - 1; i >= 0; i--) if (quitar.has(out[i])) out.splice(i, 1);
-        } else if (esSumaDe(arriba) || esSumaDe(abajo)) {
+        } else if (esSumaDe(arriba) || esSumaDe(abajo) || esSumaDe(arribaConCompuestos)) {
           // ESCALÓN: LA NOTA DEL SUBTOTAL (to-do 163, problema 2; ok de Guido, como escalón). La extracción puede asignar las filas de una nota
           // al SUBTOTAL del grupo ("Totale altri ricavi e proventi") y no a un renglón: la nota reparte el grupo distinto que el estado
           // (Sassuolo 2025: a) 50,29 M y f) 15,41 M en el estado; sponsors, TV, Lega... en la nota) y no cierra ningún renglón. Hasta acá el
