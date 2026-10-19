@@ -266,7 +266,9 @@ af) listas de las ligas amateur belgas
    "−" como signo menos. No usar el ajuste resultado-final. Detalle: `Admin/Archive/sesion-onboarding-3-2026-10-19-cierre.md`.
    m2) en un estado de resultados con el año actual primero, el pipeline extrajo la segunda columna (2024) y la rotuló 2024 (Unión
    Magdalena 2025, lote 103: Taquilla 1.564.483 en vez de 1.542.620). No se carga hasta resolverlo.
-   z2) Westerlo 2015: 18 meses por cambio de cierre (no es primer ejercicio), sigue frenado; regla a decidir con Guido. t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en
+   z2) (también Aston Villa 2023-24, 13 meses por cambio de cierre de mayo a junio, precedente Wolves 2025: la compuerta de `cargar.mjs`,
+   `per.meses < 12`, no reconoce una transición de más de 12 meses con importes del año anterior; Aston Villa se carga con la compuerta
+   salteada a mano esa sola vez) Westerlo 2015: 18 meses por cambio de cierre (no es primer ejercicio), sigue frenado; regla a decidir con Guido. t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en
    ellos: Patro Eisden 2025 (ingresos +1.810 por el waarvan 76A, gastos +4.012 por el 631/4), Lommel SK 2025 (gastos +172, el 609) y Lommel SK
    2018 (−182 de financiero) cerraron por tolerancia con errores chicos: decidir con Guido si se corrigen (escalón: correr el NBB también
    con ajustes si el resultado sigue exacto). El detalle,
