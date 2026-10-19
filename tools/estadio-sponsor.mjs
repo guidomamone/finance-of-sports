@@ -384,7 +384,11 @@ async function main() {
   const { CI, CL, CLUBS, LEAGUES, cache, alias } = cargar();
   // LIGA AMATEUR (decisión de Guido, 2026-10-18): un año en una liga amateur (la del catálogo nombra "amateur": las tres divisiones
   // amateur belgas) pasa la compuerta sin sponsor, con el estadio cargado; en esas ligas no hay fuente que diga el sponsor por temporada
-  const amateur = (liga) => !!liga && /amateur/i.test(`${LEAGUES[liga]?.name || ''} ${LEAGUES[liga]?.full || ''}`);
+  // (decisión de Guido, 2026-10-19, traída por Onboarding 2: "En la Eerste Divisie alcanza el estadio, como en las ligas amateur") la
+  // Eerste Divisie neerlandesa tampoco tiene fuente del sponsor por temporada: sus páginas de en.wikipedia no traen la tabla de camisetas
+  // (frenaban 11 altas del lote 93: ADO Den Haag, De Graafschap, FC Den Bosch, FC Dordrecht, FC Eindhoven, FC Volendam...).
+  const SOLO_ESTADIO = new Set(['nl-eerstedivisie']);
+  const amateur = (liga) => !!liga && (SOLO_ESTADIO.has(liga) || /amateur/i.test(`${LEAGUES[liga]?.name || ''} ${LEAGUES[liga]?.full || ''}`));
   const args = process.argv; const detalle = args.includes('--detalle'); const escribir = args.includes('--escribir');
   const arg = (k) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : null; };
   const soloLiga = arg('--liga'), soloClub = arg('--club'), soloAnio = arg('--anio');
