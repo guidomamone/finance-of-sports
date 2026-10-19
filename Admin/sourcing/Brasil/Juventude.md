@@ -43,3 +43,5 @@
 - Sin bajar pero disponibles: 2004, 2005, 2007-2010, 2012-2016. Escaneos (2017, 2019, 2021, 2024, 2020) requieren OCR/verificación manual; 2022, 2023, 2025 y 2018 tienen capa de texto.
 - Se puede cerrar la pregunta de `Admin/dudas-por-club.md` sobre el balance 2024 de Juventude (ya está publicado).
 - Ejercicios en disco ahora: 2017-2025 (9).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2021 desde `Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.pdf` (sourceId `juventude-br-demonstracoes-financeiras-2021`).

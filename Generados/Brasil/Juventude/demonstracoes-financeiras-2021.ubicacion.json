@@ -3,8 +3,9 @@
  "md": "Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.md",
  "mdSha1": "1dabc093c0da3f0a004df3eaf17a2e1b79066ba5",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T16:35:26.922Z",
+ "generado": "2026-10-19T18:40:53.493Z",
  "perimetroClub": null,
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 5,
@@ -200,6 +201,18 @@
  "columna_anterior": "2020",
  "perimetro": "individual",
  "necesito_ver": [],
- "dudas": [],
- "observaciones": "Estado de resultados (Demonstração do Déficit/Superávit) en b3, en reales. Nota 19 (b20) desglosa la Receita Operacional Bruta; nota 20 (b21) desglosa el Custo da Atividade do Desporto. Solo estados individuales del club."
+ "dudas": [
+  {
+   "pregunta": "¿Se acepta que el documento no trae un renglón de 'Cuotas sociales' y que esos ingresos están dentro de 'Receitas Patrimoniais' u 'Outras Receitas' de la nota 19 (b20)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Receitas Patrimoniais",
+   "texto": "La nota 19 (b20) es el único desglose de ingresos y no tiene una fila de mensalidades o cuotas de socios.",
+   "bloques": [
+    "b20"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados individual de Esporte Clube Juventude: b3 (Demonstração do Déficit/Superávit, en reales). b20 abre la Receita Operacional Bruta y b21 abre el Custo da Atividade do Desporto. No hay ningún cuadro que abra cuotas sociales; la fila más cercana es 'Receitas Patrimoniais'."
 }

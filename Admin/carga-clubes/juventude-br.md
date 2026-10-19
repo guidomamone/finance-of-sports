@@ -140,6 +140,49 @@ _de data/club-leagues/br.js:_
 obtuvo el ascenso a la Série A para 2021 (jugó la B en 2020)
 ```
 
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Brasil/Juventude/demonstracoes-financeiras-2021.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Venda/Empréstimo de Atletas | pág. 15, precedente |
+| 2 | Receitas Patrimoniais | pág. 15, precedente |
+| 3 | Receita de transmissão | pág. 15, precedente |
+| 4 | Receita jogos de Futebol | pág. 15, precedente |
+| 5 | Receitas Publicitária | pág. 15, precedente |
+| 6 | Receita Loteria Esportiva | pág. 15, precedente |
+| 7 | Outras Receitas | pág. 15, precedente |
+| 8 | Receita de Royalties | pág. 7, precedente |
+| 9 | Receitas Diversas | pág. 7, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Remuneração, Benefícios, Encargos, Intermediação, Contratação, Empréstimos e Outros | pág. 16, Jev 0.91 |
+| 2 | Amortização de direitos e de formação de atletas | pág. 16, Claude 0.85 |
+| 3 | Jogos, Federação, viagem, serviços, material esportivo e outros | pág. 16, Jev 1 |
+| 4 | Despesas Gerais e administrativas | pág. 7, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): br-serieA, verificado contra roster cacheado de "2021 Campeonato Brasileiro Série A" (tools/club-league-reference/br.json), coincidencia exacta "Juventude".
+```
+
 ## 2020
 
 ### Meta
@@ -174,6 +217,14 @@ _note (data/):_
 
 ```text
 PDF oficial (escaneo, sin capa de texto — la transcripción original en Clubes/Brasil/Juventude/demonstracoes-financeiras-2020.md tiene ruido de OCR; los números cargados acá salen de una relectura directa de la imagen a 300dpi de la página con la Demonstração do Déficit/Superávit, ver comentario de cabecera del archivo de datos). Auditado por Rosito & Filomena Auditores Independentes (Porto Alegre), opinião COM RESSALVA: (a) el club no deprecia/amortiza la totalidad de su activo imobilizado/intangível; (b) no aplicó la Resolução 1.292/10 (valor recuperável de activos); (c) mantiene la marca JUVENTUDE revaluada en R$6.000.000 desde 1996, práctica no aceita en Brasil. Déficit real de R$2.726.740,34, con passivo a descoberto de R$8.011.948,22 al cierre (arrastre de moratoria PROFUT de 2009-2015 + contingencias). Convertido a USD con PTAX BCB de cierre 31/12/2020 (R$5,1967, fx literal — ver comentario de cabecera). Descargado del repositorio de demonstrações financeiras de clubes filiados de la Federação Gaúcha de Futebol. Transcripción completa (con ruido de OCR sin corregir) en Clubes/Brasil/Juventude/demonstracoes-financeiras-2020.md.
+```
+
+### juventude-br-demonstracoes-financeiras-2021
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

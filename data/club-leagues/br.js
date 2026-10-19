@@ -31,7 +31,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'ceara-br': { 2024: 'br-serieB', 2025: 'br-serieA' },
   'sportrecife-br': { 2025: 'br-serieA' },
   'amazonas-br': { 2024: 'br-serieB' },
-  'juventude-br': { 2020: 'br-serieB' },
+  'juventude-br': { 2020: 'br-serieB', 2021: 'br-serieA' },
   'botafogosp-br': { 2024: 'br-serieB', 2025: 'br-serieB' },
   'goias-br': { 2025: 'br-serieB', 2021: 'br-serieB', 2022: 'br-serieA', 2023: 'br-serieA', 2024: 'br-serieB', 2017: 'br-serieB', 2008: 'br-serieA', 2009: 'br-serieA', 2010: 'br-serieA', 2011: 'br-serieB', 2012: 'br-serieB', 2013: 'br-serieA', 2015: 'br-serieA', 2014: 'br-serieA', 2016: 'br-serieB' },
   'novorizontino-br': { 2024: 'br-serieB', 2019: 'br-serieD', 2020: 'br-serieD', 2021: 'br-serieC', 2023: 'br-serieB', 2018: 'br-serieD', 2025: 'br-serieB', 2010: null, 2022: 'br-serieB', 2017: 'br-paulistaA1', 2016: 'br-paulistaA1', 2014: 'br-paulistaA3', 2013: 'br-paulistaA3', 2015: 'br-paulistaA2' },

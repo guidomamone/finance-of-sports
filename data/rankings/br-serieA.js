@@ -166,6 +166,9 @@ window.RANKINGS["br-serieA"] = {
     leagueSize: 20,
     wiki: {"t":"2021 Campeonato Brasileiro Série A","lang":"en","at":"2026-09-30","n":20},
     clubs: [
+      { id:"juventude-br", revenue:12.232, reportType:"official_balance_sheet",
+        sourceId:"juventude-br-demonstracoes-financeiras-2021",
+        mix:[["Comercial / Sponsors",0.925],["Estadio",0.082],["Televisión",9.992],["Venta de Jugadores",0.513],["Otros ingresos",0.72]] },
       { id:"chapecoense-br", revenue:10.948, reportType:"official_balance_sheet",
         sourceId:"chapecoense-br-demonstracoes-2020-2021",
         mix:[["Cuotas Sociales",0.767],["Comercial / Sponsors",0.91],["Estadio",0.07],["Televisión",7.453],["Premios por competencias",0.345],["Venta de Jugadores",0.776],["Otros ingresos",0.627]] },

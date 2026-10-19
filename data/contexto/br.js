@@ -157,6 +157,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'juventude-br': {
     2020: {"estadio":"Alfredo Jaconi","capacidad":19924,"sponsor":"Banrisul","marca":"19treze (Club manufactured kit)","temporada":"2020 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1283248039"},
+    2021: {"estadio":"Alfredo Jaconi","capacidad":19924,"sponsor":"Banrisul","marca":"19treze (club manufactured kit)","temporada":"2021 Campeonato Brasileiro Série A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375901035"},
   },
   'mirassol': {
     2024: {"estadio":"Campos Maia","capacidad":15000,"sponsor":"Guaraná Poty, Bet7k","marca":"Athleta","temporada":"2024 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377693248"},

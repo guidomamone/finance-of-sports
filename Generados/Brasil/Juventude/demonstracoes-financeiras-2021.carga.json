@@ -1,17 +1,10 @@
 {
  "pdf": "Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.pdf",
- "generado": "2026-10-19T18:34:45.225Z",
- "frena": [
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios en 2021: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes en 2021: pregunta en la cola humana (node tools/cola.mjs)"
-  }
+ "generado": "2026-10-19T18:42:06.572Z",
+ "frena": [],
+ "avisos": [
+  "categorías en 0 aun después del reintento (se carga así): Cuotas sociales"
  ],
- "avisos": [],
  "ejercicio": {
   "clubId": "juventude-br",
   "year": 2021,
@@ -495,8 +488,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 9,
   "lineasGasto": 4,
   "metaFilas": 1,

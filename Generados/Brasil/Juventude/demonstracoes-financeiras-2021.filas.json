@@ -4,7 +4,7 @@
  "mdSha1": "1dabc093c0da3f0a004df3eaf17a2e1b79066ba5",
  "ubicacionSha1": "4e3457d2f95e58bf62c061450f032a74d35b4e9d",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T16:36:33.686Z",
+ "generado": "2026-10-19T18:41:18.381Z",
  "ubicacion": {
   "estado": [
    "b3"
@@ -25,12 +25,12 @@
   {
    "bloque": "b20",
    "escala": "unidades",
-   "evidencia": "Importes con centavos idénticos al estado en reais (L505 = L185)"
+   "evidencia": "Sin frase propia; importes con centavos que coinciden con b3 en reais (L505 = L185)"
   },
   {
    "bloque": "b21",
    "escala": "unidades",
-   "evidencia": "Importes con centavos idénticos al estado en reais (L518 = L186 en 2021)"
+   "evidencia": "Sin frase propia; importes con centavos, total 2021 coincide con b3 en reais (L518 = L186)"
   }
  ],
  "filas": [
@@ -40,7 +40,7 @@
    "etiqueta": "Receita Operacional Bruta Atividade do Desporto",
    "actual": "68.173.275,73",
    "anterior": "31.831.520,66",
-   "tipo": "renglon",
+   "tipo": "total",
    "lado": "ingreso",
    "detalla_a": null
   },
@@ -110,8 +110,8 @@
    "etiqueta": "Superavir/Défict Operacional",
    "actual": "-921.799,29",
    "anterior": "-7.161.325,77",
-   "tipo": "resultado",
-   "lado": "resultado",
+   "tipo": "subtotal",
+   "lado": "otro",
    "detalla_a": null
   },
   {
@@ -200,7 +200,7 @@
    "etiqueta": "Total Receita Oper. Bruta da Atividade do Desporto",
    "actual": "68.173.275,73",
    "anterior": "31.831.520,66",
-   "tipo": "subtotal",
+   "tipo": "total",
    "lado": "ingreso",
    "detalla_a": "Receita Operacional Bruta Atividade do Desporto"
   },
@@ -257,28 +257,28 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se carga el 'Superavir/Défict Operacional' de L195 (-921.799,29) tal como está impreso pese a que no cuadra con las filas de arriba?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "Superavir/Défict Operacional",
-   "texto": "L188+L190..L193 suman 17.781.376,45 (igual al resultado L197), no -921.799,29; el subtotal operativo impreso en L195 parece erróneo.",
-   "bloques": [
-    "b3"
-   ],
-   "afecta_carga": false
-  },
-  {
-   "pregunta": "¿Se toma como anterior del 'Custo da Atividade do Desporto' el -27.396.935,23 del estado (L186) aunque la nota L518 da 13.923.510,07 para 2020?",
+   "pregunta": "¿Se mantiene como anterior de 'Custo da Atividade do Desporto' el -27.396.935,23 del estado (L186) aunque la nota imprima 13.923.510,07 para 2020 (L518)?",
    "propuesta": "sí",
    "tema": "cuadro-de-otro-anio",
    "renglon": "Custo da Atividade do Desporto",
-   "texto": "La nota b21 en 2020 (L518) no coincide con el estado (L186); 2021 sí coincide.",
+   "texto": "El total 2020 de la nota de costos (L518) no coincide con el estado (L186) y sus partidas suman 13.923.510,07; solo afecta el año anterior.",
    "bloques": [
     "b3",
     "b21"
    ],
-   "afecta_carga": true
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se carga 'Superavir/Défict Operacional' (L195, -921.799,29) como subtotal de las otras receitas/despesas operacionais y no como resultado operativo?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Superavir/Défict Operacional",
+   "texto": "L195 es la suma de L190-L193, no el resultado operativo; el resultado del ejercicio L197 = L188 + L195.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": false
   }
  ],
- "observaciones": "Estado en reais. Total de gastos no impreso. Notas b20 y b21 cuadran con el estado en 2021."
+ "observaciones": "No existe en el documento ninguna fila 'Cuotas sociales' (ni 'mensalidades/sócios'); la nota b20 (L498-L505) está completa y lo más cercano es 'Receitas Patrimoniais' (L499), que no se reetiquetó. El estado no imprime total de gastos ni impuesto a las ganancias. Los resultados financieros están netos en L191."
 }
