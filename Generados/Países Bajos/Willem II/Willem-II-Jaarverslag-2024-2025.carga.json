@@ -1,18 +1,14 @@
 {
  "pdf": "Clubes/Países Bajos/Willem II/Willem-II-Jaarverslag-2024-2025.pdf",
- "generado": "2026-10-19T03:08:10.316Z",
+ "generado": "2026-10-19T03:38:11.842Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (willemii-nl)"
   },
   {
-   "etapa": "categoria-en-cola",
-   "motivo": "9 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Lonen\" -> wages_squad 0.75; \"Overige personeelsbeloningen\" -> wages_squad 0.65; \"Pensioenlasten\" -> wages_squad 0.7; \"Afschrijvingen immateriële vaste activa\" -> player_amortisation 0.6; \"Betaalde huur\" -> admin_general_expense 0.75"
-  },
-  {
    "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
@@ -113,9 +109,9 @@
     "amountNative": -8.877293,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Overige personeelsbeloningen",
@@ -123,9 +119,9 @@
     "amountNative": -0.80445,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sociale lasten",
@@ -143,9 +139,9 @@
     "amountNative": -0.178478,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Afschrijvingen immateriële vaste activa",
@@ -153,9 +149,9 @@
     "amountNative": -1.031,
     "disclosureLevel": "aggregated",
     "_pag": 29,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Afschrijvingen materiële vaste activa",
@@ -173,9 +169,9 @@
     "amountNative": -0.210866,
     "disclosureLevel": "aggregated",
     "_pag": 30,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Onderhoud en schoonmaak",
@@ -213,19 +209,19 @@
     "amountNative": -0.63267,
     "disclosureLevel": "aggregated",
     "_pag": 30,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Spelershome en jeugdaccommodatie",
-    "normalizedCategory": "youth_other_sports_expense",
+    "normalizedCategory": "other_expenses",
     "amountNative": -0.204906,
     "disclosureLevel": "aggregated",
     "_pag": 30,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Kosten sponsoring/reclame/promotie",
@@ -243,9 +239,9 @@
     "amountNative": -0.593653,
     "disclosureLevel": "aggregated",
     "_pag": 30,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía sponsorship_commercial, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Heffing KNVB",
@@ -263,9 +259,9 @@
     "amountNative": -0.009558,
     "disclosureLevel": "aggregated",
     "_pag": 30,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Overige verkoopkosten",
@@ -585,11 +581,11 @@
    "origen": "verificacion (nota que desglosa \"Personeelskosten 15\")",
    "signoFijo": 8.877293,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "expense",
    "amountNative": -8.877293
   },
@@ -601,11 +597,11 @@
    "origen": "verificacion (nota que desglosa \"Personeelskosten 15\")",
    "signoFijo": 0.80445,
    "cat": "wages_squad",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "expense",
    "amountNative": -0.80445
   },
@@ -632,11 +628,11 @@
    "origen": "verificacion (nota que desglosa \"Personeelskosten 15\")",
    "signoFijo": 0.178478,
    "cat": "wages_squad",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "expense",
    "amountNative": -0.178478
   },
@@ -648,11 +644,11 @@
    "origen": "verificacion (nota que desglosa \"Afschrijvingen op immateriële en materiële vaste activa (16)\")",
    "signoFijo": 1.031,
    "cat": "player_amortisation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "expense",
    "amountNative": -1.031
   },
@@ -679,11 +675,11 @@
    "origen": "verificacion (nota que desglosa \"Huisvestingskosten (17)\")",
    "signoFijo": 0.210866,
    "cat": "admin_general_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "expense",
    "amountNative": -0.210866
   },
@@ -740,11 +736,11 @@
    "origen": "verificacion (nota que desglosa \"Horeca (18)\")",
    "signoFijo": 0.63267,
    "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "expense",
    "amountNative": -0.63267
   },
@@ -755,12 +751,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Horeca (18)\")",
    "signoFijo": 0.204906,
-   "cat": "youth_other_sports_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "expense",
    "amountNative": -0.204906
   },
@@ -787,12 +783,12 @@
    "origen": "verificacion (nota que desglosa \"Verkoopkosten (19)\")",
    "signoFijo": 0.593653,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía sponsorship_commercial, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "expense",
    "amountNative": -0.593653
   },
@@ -819,11 +815,11 @@
    "origen": "verificacion (nota que desglosa \"Verkoopkosten (19)\")",
    "signoFijo": 0.009558,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "expense",
    "amountNative": -0.009558
   },
@@ -1122,7 +1118,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 2,
   "lineasIngreso": 8,
   "lineasGasto": 28,
   "metaFilas": 2,
