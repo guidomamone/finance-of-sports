@@ -36,7 +36,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 232: mejoras de script que dejó Grecia --> Pipeline 3
 * 279: la tool que duplicaba claves en club-leagues/ru.js --> Pipeline 3
 * 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar --> Pipeline 3
-* 298: mejoras de script de Estonia y Bélgica (lo que queda de la y4 y la w primero; después l a n, p, q, s, v, u2, z, g2, e3) --> Pipeline 3
+* 298: mejoras de script de Estonia y Bélgica (la w primero; después l a n, p, q, s, v, u2, z, g2, e3) --> Pipeline 3
 * 306, 307 y 308: Milan 2018; el gasto que imprime localizar; los bonos convertibles en la skill --> Pipeline 3 (306, 307)
 * 301: gasto.mjs --json se corta en un pipe --> Pipeline 3
 * 302: el deflactor de EE.UU. desde la BEA, no FRED --> Pipeline 3
@@ -46,11 +46,11 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 238: llevar a 0 los documentos que quedaron a mitad de camino --> Onboarding 2
 * 261: Reino Unido, transcripción por subagentes
 * 165 c: altas de los países nuevos que faltan --> Onboarding 2
-* 195: gestiones (presidentes) sin fuente confirmada (se puede ir haciendo con cada país) --> Datos 2
+* 195: gestiones (presidentes) sin fuente confirmada (se puede ir haciendo con cada país)
 * 295: balances de las entidades que organizan las ligas (AFA, LFP…), para la auditoría en Ligas
 * 284 y 285: Fredrikstad y Sarpsborg 08 sobre el FLI; transcribir Viking Fotball AS --> Onboarding 2
 * 283: Vålerenga y Aalesund, sumar el AS y el FLI (con nota en Finanzas) --> Onboarding 2
-* 273: estadio y sponsor, lo que queda (80 sin sponsor; nombrar la compuerta) --> Datos 2
+* 273: estadio y sponsor, lo que queda (~73 sin sponsor; nombrar la compuerta)
 
 **E. Pantallas**
 * 282: quién audita, lo que queda (50 informes; la compuerta del pipeline) --> Finanzas 4
@@ -59,7 +59,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **E2. Distribución (depende de 246)**
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
-* 252: ejercicios nuevos, lo que queda (onboardear los PDFs ya bajados, Instituto 2024-25 incluido; Alemania en enero de 2027) --> Datos 2
+* 252: ejercicios nuevos, lo que queda (onboardear los PDFs ya bajados, Instituto 2024-25 incluido; Alemania en enero de 2027)
 * 259: material de difusión (después de 241: el deck tiene que poder linkear)
 
 **F. Datos para afuera (cuando haya tiempo; nada urgente)**
@@ -212,7 +212,8 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    relacionada (con el criterio de socios, contaría); hoy la deuda es solo "Empréstimos".
 
 273. ESTADIO Y SPONSOR: LO QUE QUEDA (pedido de Guido, 2026-10-18). El dato está en main (`data/contexto/<iso>.js`, `tools/estadio-sponsor.mjs`,
-   lo manual en `tools/contexto-manual.json` con fuente) y `cargar.mjs` no escribe un año nuevo sin estadio y sponsor. Falta: (a) 80 ejercicios sin sponsor y sin fuente que lo nombre (Ferroviária,
+   lo manual en `tools/contexto-manual.json` con fuente) y `cargar.mjs` no escribe un año nuevo sin estadio y sponsor. Falta: (a) ~73 ejercicios sin sponsor y sin fuente que nombre la temporada (dos pasadas
+   hechas; zerozero y footballkitarchive piden verificación anti-bot) (Ferroviária,
    Novorizontino, Goiás, Orenburg, Felgueiras, rusos y estonios de ascenso; `node tools/estadio-sponsor.mjs --ensayo --detalle`). (d) nombrar la compuerta en `Admin/PIPELINE.md` y en la skill
    `club-or-year-onboarding` (la skill, con ok de Guido). Siguen sin liga a propósito: Novorizontino 2010, Dynamo Makhachkala 2021, Racing 2027.
 282. QUIÉN AUDITA: LO QUE QUEDA (pedido de Guido, 2026-10-17). Los 942 balances tienen línea, la tarjeta de Finanzas está (con el
@@ -266,8 +267,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    el 76A sumado aparte, y verificar y la propuesta que no leen igual el signo; una regla por código NBB. aa) `tools/worktree.mjs mergear` deja sin commitear `data/sponsors.js` y `data/sponsors-indice.js`, que regenera
    `generate-sponsors.js`: sumarlos a su lista de `git add` (el commit siguiente frena por asset-v-sin-subir). e3) el ensayo de pipeline.mjs estimó US$ 7,26 para rehacer los 238 .md sin tablas y la corrida
    real costó US$ 42,97: que el ensayo dé el número real antes de la próxima corrida grande (ver la nota de Pipeline 2). w) antes-de-localizar
-   dice que el perímetro "se decide al ejecutar", pero lote.mjs frena igual. y4) salieron los 6 ajustes `fila` noruegos (lo publicado, igual); quedan los 5 de
-   Fredrikstad 2024 y St. Gallen 2025: sin ellos los dos años frenan aunque los números den iguales (decisión de Guido). RWDM 2019: el registro
+   dice que el perímetro "se decide al ejecutar", pero lote.mjs frena igual. RWDM 2019: el registro
    tiene el cierre 2019-11-30 y el balance va del 30/11/2018 al 30/06/2019 (como la f). Escocia, Gales e Irlanda del Norte se ven como GB
    ("Inglaterra") en el selector: decisión de pantalla pendiente. g2) partir en la cola cualquier fila según su nota (otros países, el 66A de Lommel SK
    2025): solo si aparece otra fila mixta sin códigos; el 630 belga ya sale solo. i) alta-club.mjs: un país nuevo

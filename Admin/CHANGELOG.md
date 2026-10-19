@@ -15,6 +15,15 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 764 — Segunda pasada a los sin sponsor; Datos 2 cerró (2026-10-19)
+
+Merge de datos 2 (lo generado regenerado) y de pipeline 3; P0 0 / P1 0.
+
+- To-do 273: Ferroviária 2022 (Estrella Galicia) y 2023 (Betnacional) y el estadio de Novorizontino 2018, con fuente; ~73 siguen sin fuente.
+- 298 y4 cerrada: los 5 ajustes de Fredrikstad 2024 y St. Gallen 2025 se quedan (sacarlos obliga a pagar de nuevo para llegar al mismo
+  número; `Admin/HALLAZGOS-pipeline.md`).
+- Datos 2 cerró por límite de uso: el 273, el 195 y el 252 quedan sin sesión.
+
 ## Versión 763 — 298 y4: fuera los ajustes a mano de los noruegos (2026-10-19)
 
 Merge de pipeline 3, sin conflictos; P0 0 / P1 0.
