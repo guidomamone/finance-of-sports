@@ -34,3 +34,5 @@ Ninguna.
   Tie-out exacto.
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2020 desde `Clubes/Dinamarca/FC Midtjylland/aarsrapport-2020-06-30.pdf` (sourceId `midtjylland-dk-aarsrapport-2020-06-30`).

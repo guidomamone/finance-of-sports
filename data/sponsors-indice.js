@@ -1217,6 +1217,7 @@ window.SPONSORS_INDICE = [
   ["jogel","Jögel",["m"]],
   ["joguefacil-bet","JogueFácil.bet",["c"]],
   ["joma","Joma",["m"]],
+  ["jonsson-a","Jönsson A",["c"]],
   ["jordy-clasie","Jordy Clasie",["c"]],
   ["jotun","Jotun",["c"]],
   ["jugabet","JugaBet",["c"]],

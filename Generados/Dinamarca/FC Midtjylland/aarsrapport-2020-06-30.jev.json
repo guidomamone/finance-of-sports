@@ -1,0 +1,186 @@
+{
+ "md": "Clubes/Dinamarca/FC Midtjylland/aarsrapport-2020-06-30.md",
+ "generatedAt": "2026-10-19T17:17:42.183Z",
+ "rubrosHuella": "d853eb02de5d841f4179474374f81cbe014ce488",
+ "rubros": [
+  {
+   "label": "Pensioner",
+   "lado": "expense",
+   "page": 34,
+   "section": "nota que desglosa \"Personaleomkostninger Staff expenses\"",
+   "choice": "wages_squad",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre omkostninger til social sikring",
+   "lado": "expense",
+   "page": 34,
+   "section": "nota que desglosa \"Personaleomkostninger Staff expenses\"",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 34,
+   "section": "nota que desglosa \"Personaleomkostninger Staff expenses\"",
+   "choice": "wages_squad",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "wages_squad",
+     0.73
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Andre driftsindtægter Other operating income",
+   "lado": "revenue",
+   "page": 26,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "Nettoomsætning Revenue",
+   "lado": "revenue",
+   "page": 26,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1134
+  },
+  {
+   "label": "Andre eksterne omkostninger Other external expenses",
+   "lado": "expense",
+   "page": 26,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_expenses",
+     0.94
+    ],
+    [
+     "match_organisation_expense",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Afskrivninger af materielle anlægsaktiver",
+   "lado": "expense",
+   "page": 34,
+   "section": "nota que desglosa \"Af- og nedskrivninger af immaterielle og materielle anlægsaktiver Depreciation, amortisation and impairment of intangible assets and property, plant and equipment\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1126
+  },
+  {
+   "label": "Andre driftsomkostninger Other operating expenses",
+   "lado": "expense",
+   "page": 26,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Afskrivninger af immaterielle anlægsaktiver",
+   "lado": "expense",
+   "page": 34,
+   "section": "nota que desglosa \"Af- og nedskrivninger af immaterielle og materielle anlægsaktiver Depreciation, amortisation and impairment of intangible assets and property, plant and equipment\"",
+   "choice": "player_amortisation",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "player_amortisation",
+     0.67
+    ],
+    [
+     "other_amortisation",
+     0.29
+    ],
+    [
+     "depreciation",
+     0.03
+    ]
+   ],
+   "tokens": 1169
+  }
+ ]
+}

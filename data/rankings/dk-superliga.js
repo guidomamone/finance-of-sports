@@ -53,6 +53,9 @@ window.RANKINGS["dk-superliga"] = {
     leagueSize: 14,
     wiki: {"t":"2019–20 Danish Superliga","lang":"en","at":"2026-10-19","n":14},
     clubs: [
+      { id:"midtjylland-dk", revenue:27.985, reportType:"official_balance_sheet",
+        sourceId:"midtjylland-dk-aarsrapport-2020-06-30",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",13.164],["Otros ingresos",14.821]] },
       { id:"brondby-dk", revenue:26.134, reportType:"official_balance_sheet",
         sourceId:"brondby-aarsrapport-2020",
         mix:[["Comercial / Sponsors",11.314],["Estadio",0.625],["Televisión",5.793],["Otros ingresos",8.402]] },

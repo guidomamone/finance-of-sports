@@ -17,6 +17,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'midtjylland-dk': {
     2019: {"estadio":"MCH Arena","capacidad":11800,"sponsor":"Det Faglige Hus","marca":"Nike","temporada":"2018–19 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1324790591"},
+    2020: {"estadio":"MCH Arena","capacidad":11800,"sponsor":"Det Faglige Hus","marca":"Nike","temporada":"2019–20 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375256115"},
   },
   'nordsjaelland-dk': {
     2024: {"estadio":"Right to Dream Park","capacidad":9900,"sponsor":"DHL","marca":"Nike","temporada":"2024–25 Danish Superliga","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371243611"},
