@@ -318,5 +318,23 @@ window.LIGA_AUDITORIA = {
     "linea": 4203
    }
   }
+ },
+ "cl-primera": {
+  "2025": {
+   "entidad": {
+    "nombre": "ANFP",
+    "legal": "Asociación Nacional de Fútbol Profesional - ANFP"
+   },
+   "auditor": {
+    "nombre": "KAM Auditores Consultores Ltda.",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Ligas/Chile/ANFP/anfp-estados-financieros-2025.md",
+    "linea": 61
+   }
+  }
  }
 };
