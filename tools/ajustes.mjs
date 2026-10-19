@@ -127,6 +127,14 @@ export function ajusteClubODoc(pdf, campo) {
   const delDoc = todos.filter((a) => a.pdf === pdf); if (delDoc.length && !delDoc[delDoc.length - 1].anulado) return delDoc[delDoc.length - 1];
   const delClub = todos.filter((a) => a.pdf.endsWith('/') && pdf.startsWith(a.pdf)); return delClub.length && !delClub[delClub.length - 1].anulado ? delClub[delClub.length - 1] : null;
 }
+// (to-do 298 p2, ok de Guido 2026-10-19) CERO REAL DEL CLUB: el ajuste `cero-real` vigente de esa categoría en OTRO documento del mismo club
+// (la carpeta), o null. cargar.mjs lo usa como escalón del aviso de categoría en 0, con su compuerta (ningún año cargado con monto).
+export function ceroRealDelClub(pdf, categoria) {
+  const carpeta = pdf.split('/').slice(0, 3).join('/') + '/'; const cat = String(categoria).toLowerCase();
+  const otros = [...new Set(leer().filter((a) => a.campo === 'cero-real' && a.pdf !== pdf && a.pdf.startsWith(carpeta)).map((a) => a.pdf))];
+  for (const p of otros) { const a = ajustesDe(p).find((x) => x.campo === 'cero-real' && String(x.valor).toLowerCase() === cat); if (a) return a; }
+  return null;
+}
 // QUIÉN FIRMA (to-do 204). Escalón 0: --autor X (o `autor` cuando lo escribe un script, como perimetro-senales.mjs). Escalón 1: sin --autor,
 // quien corre el comando: los comandos que corre Claude Code (la sesión y sus subagentes) llevan la variable CLAUDECODE=1 y firman "Claude";
 // la terminal de Guido no la tiene (comprobado el 2026-10-09) y firma "Guido". Antes firmaba "Guido" siempre: ~800 ajustes que decidió

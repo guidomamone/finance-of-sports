@@ -117,7 +117,7 @@ const EV = await import('./evidencia-club.mjs'); // (to-do 209) la evidencia de 
 const { agregarCaso, casoYRespuesta, respuestaPorDetalle, cerrarResueltoPorClub, respuestasDonde, cerrarPerfilSabido } = await import('./cola.mjs');
 const agregarCasoCola = agregarCaso; // (Versión 462) proponer() usa su propio agregarCaso (puede no escribir)
 const { perfilDe, guardarPerfil } = await import('./perfil-clubes.mjs');
-const { ajusteDe, ajustesDe, ajustePerimetroDe } = await import('./ajustes.mjs');
+const { ajusteDe, ajustesDe, ajustePerimetroDe, ceroRealDelClub } = await import('./ajustes.mjs');
 const { cierrePorVecinos } = await import('./cierre-vecinos.mjs');
 const { VERSION_AMPLIADO } = await import('./indice-bloques.mjs');
 const { ARCHIVO: ARCHIVO_APRENDIDAS, padreDe } = await import('./memoria-categorias.mjs');
@@ -805,6 +805,17 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
     }
     // ESCALÓN 0 DEL AVISO (Versión 381): un ajuste manual `cero-real` de Guido para esa categoría dice que el 0 es real (tools/ajustes.mjs).
     for (const c of [...ceros]) { const aj = ajusteDe(pdf, 'cero-real') && ajustesDe(pdf).find((x) => x.campo === 'cero-real' && String(x.valor).toLowerCase() === c.categoria.toLowerCase()); if (aj) { ceros.splice(ceros.indexOf(c), 1); P.avisos.push(`"${c.categoria}" en 0: real, por ajuste manual (${aj.fecha}, ${aj.motivo})`); } }
+    // ESCALÓN 0b DEL AVISO (to-do 298 p2, ok de Guido 2026-10-19): el `cero-real` de esa categoría en OTRO documento del club vale para este
+    // año, con UNA compuerta: ningún año cargado del club tiene esa categoría con monto (si alguno la tuvo, el 0 puede ser un desglose perdido
+    // y sigue pidiendo reintento). Caso: Tallinna Kalev, "Televisión" en 0 con 7 ajustes, uno por año; 94 ajustes `cero-real` para 36
+    // combinaciones de club y categoría.
+    const CATS_CERO = { 'salarios del plantel': ['wages_squad'], 'televisión': ['broadcasting'], 'estadio': ['matchday_competition', 'stadium_other', 'season_tickets'], 'cuotas sociales': ['member_dues'], 'otras secciones deportivas': ['other_sports', 'youth_football', 'womens_football', 'youth_other_sports_expense'] };
+    const conMontoEnElClub = (cats) => ['revenueLinesByYear', 'expenseLinesByYear'].some((k) => Object.values(cd[k] || {}).some((ls) => (ls || []).some((l) => cats.includes(l.normalizedCategory) && Math.abs(l.amountNative || 0) > 0)));
+    for (const c of [...ceros]) {
+      const cats = CATS_CERO[c.categoria.toLowerCase()]; if (!cats) continue;
+      const aj = ceroRealDelClub(pdf, c.categoria);
+      if (aj && !conMontoEnElClub(cats)) { ceros.splice(ceros.indexOf(c), 1); P.avisos.push(`"${c.categoria}" en 0: real, por el ajuste cero-real del club (${aj.pdf.split('/').pop()}, ${aj.fecha}) y ningún año cargado la tiene con monto`); }
+    }
     // ESCALÓN 1 DEL AVISO (decisión de Guido, 2026-10-13: "siempre me hacés la misma pregunta"): el ejercicio 2021 jugó a puertas cerradas
     // por el Covid, así que "Estadio" en 0 es real y no pide reintento. Casos: AEK 2021, Asteras 2021 (reintento pagado para nada).
     for (const c of [...ceros]) if (String(year) === '2021' && c.categoria === 'Estadio') { ceros.splice(ceros.indexOf(c), 1); P.avisos.push('"Estadio" en 0 en 2021: real (partidos a puertas cerradas por el Covid)'); }

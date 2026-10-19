@@ -610,7 +610,8 @@ Mitigaciones:
  ETIQUETA REPETIDA se decide por renglón: ver la escalera de la etapa 7 (to-do 232 h y 234)
  SIN CATEGORÍA    fila impresa (con página) que no está en el .categorias.json y nada categorizó ─► frena con su nombre (to-do 232 x;
                   AEK 2024) ─► las demás sin categoría aceptable: más del 5% del dinero del lado frena, menos es aviso y no se cargan
- CATEGORÍAS EN 0  ajuste `cero-real` ─► Estadio en 0 en el ejercicio 2021: real (puertas cerradas por el Covid; decisión de Guido del
+ CATEGORÍAS EN 0  ajuste `cero-real` ─► (298 p2) el `cero-real` de esa categoría en OTRO documento del club, si ningún año cargado del
+                  club la tiene con monto (Beerschot 2019, 2020 y 2022 toman el de 2025: "Cuotas sociales") ─► Estadio en 0 en el ejercicio 2021: real (puertas cerradas por el Covid; decisión de Guido del
                   2026-10-13) ─► salarios / TV / estadio, o socios / otros deportes según el perfil ─► reintento (una vez) ─► aviso
  LO QUE CERRÓ EN LA ETAPA 6 (Versiones 375-378): financiero e impuesto con el signo con que cerró; una fila verificada con lado no se mueve
                   por palabras ni se excluye sola por "no es rubro" dudoso
