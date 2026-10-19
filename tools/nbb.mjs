@@ -187,12 +187,44 @@ export function leerEstadoNBB(md) {
   return { desde: r.desde, hasta: r.hasta, filas, actual: columna(filas, 'actual'), anterior: columna(filas, 'anterior'), ambiguas: amb.length, aLaAnterior: resueltas };
 }
 
+// (to-do 298 g, ok de Guido 2026-10-18) EL 630 POR LA NOTA DE ACTIVOS FIJOS. El 630 (amortizaciones) junta los pases de jugadores y los
+// bienes de uso, y la cola da una sola categoría por fila: en los años cargados se partía a mano con ajustes `fila` (Lommel SK 2025: pases
+// 5.674.313 + materiales 590.106). La nota del esquema NBB trae lo amortizado en el año ("Geboekt" / "Actées") con códigos fijos: 8072
+// concesiones y derechos (en un club, los pases; 8079 en el abreviado), 8073 goodwill, 8271 a 8276 materiales (8279 en el abreviado).
+// COMPUERTA: suman EXACTO el 630 (media unidad por fila); si no (Beerschot 2021: parte de lo amortizado está en el 66A), el 630 queda
+// entero. Rótulos: los de los ajustes ya cargados, para que la categorización use los mismos precedentes (pases -> player_amortisation,
+// goodwill -> other_amortisation, materiales -> depreciation). Medido: 33 de 191 documentos belgas con 630 lo parten exacto.
+const GRUPOS_630 = [
+  { etiqueta: 'Afschrijvingen immateriële vaste activa (spelers)', codigos: ['8072', '8079'] },
+  { etiqueta: 'Afschrijvingen goodwill', codigos: ['8073'] },
+  { etiqueta: 'Afschrijvingen materiële vaste activa', codigos: ['8271', '8272', '8273', '8274', '8275', '8276', '8279'] },
+];
+export function partir630(md, valor630) {
+  const todos = GRUPOS_630.flatMap((g) => g.codigos); const v = {};
+  const L = md.split('\n');
+  for (let i = 0; i < L.length; i++) {
+    if (!L[i].startsWith('|')) continue;
+    const cs = L[i].split('|').slice(1, -1).map((x) => x.replace(/\*/g, '').trim());
+    const k = cs.findIndex((x) => /^\d{4}$/.test(x));
+    if (k < 1 || !todos.includes(cs[k]) || v[cs[k]]) continue;
+    if (!/geboekt|actees|actées/i.test(cs.slice(0, k).filter(Boolean).pop() || '')) continue; // el rótulo: la última celda con texto antes del código
+    const n = num(cs[k + 1]); if (n != null && n !== 0) v[cs[k]] = { valor: n, linea: i + 1 };
+  }
+  const partes = GRUPOS_630.map((g) => { const hs = g.codigos.filter((c) => v[c]); return hs.length ? { etiqueta: g.etiqueta, codigos: hs, valor: hs.reduce((a, c) => a + v[c].valor, 0), linea: v[hs[0]].linea } : null; }).filter(Boolean);
+  const n = Object.keys(v).length; const suma = partes.reduce((a, p) => a + p.valor, 0);
+  // con una sola parte también: el 630 entero es de pases o de bienes de uso y su rótulo lo dice (Lokeren-Temse 2021, solo materiales)
+  if (!partes.length || Math.abs(suma - valor630) > Math.max(1, 0.5 * n)) return null;
+  // el redondeo de la nota (un euro: Lommel SK 2025) va a la parte más grande, para que el 630 cierre igual
+  const dif = valor630 - suma; if (dif) partes.sort((a, b) => b.valor - a.valor)[0].valor += dif;
+  return partes;
+}
+
 const fmt = (v) => (v == null ? null : `${v < 0 ? '-' : ''}${Math.round(Math.abs(v)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')}`);
 
 // filasNBB(F, md): el .filas.json con el estado reemplazado por las hojas NBB, o null si el escalón no corre (no hay estado con códigos o
 // la columna del año no cierra). Las filas del estado que extrajo la IA (bloques de F.ubicacion.estado, sin detalla_a) salen; las de notas
 // (detalla_a) quedan y abren sus renglones por la etiqueta, como siempre. Bloque nuevo 'nbb', en unidades (euros).
-export function filasNBB(F, md) {
+export function filasNBB(F, md, { partir630: partir = true } = {}) {
   const N = leerEstadoNBB(md);
   if (!N || !N.actual.cierra) return null;
   const est = new Set(F.ubicacion?.estado || []);
@@ -209,6 +241,11 @@ export function filasNBB(F, md) {
   // Louvière 2024-25, 635/8 y 649). El chequeo del año vecino compara por los códigos impresos (verificar.mjs, escalón "códigos NBB").
   const res = N.filas['9904'];
   nuevas.push({ bloque: 'nbb', linea: res.linea, etiqueta: deLinea.get(res.linea) || res.etiqueta, actual: fmt(res.actual), anterior: fmt(res.anterior), tipo: 'resultado', lado: 'resultado', detalla_a: null, codigoNBB: '9904' });
+  // (to-do 298 g) el 630 partido por la nota de activos fijos, si sus códigos lo suman exacto (ver partir630). No en un año ya publicado
+  // (`partir630: false`, lo decide verificar.mjs): sus filas son las que se categorizaron y publicaron (Lommel SK 2018, RWDM 2020).
+  const i630 = nuevas.findIndex((x) => x.codigoNBB === '630');
+  const p630 = i630 >= 0 && partir ? partir630(md, N.actual.hojas.find((h) => h.codigo === '630').valor) : null;
+  if (p630) nuevas.splice(i630, 1, ...p630.map((x) => ({ bloque: 'nbb', linea: x.linea, etiqueta: x.etiqueta, actual: fmt(x.valor), anterior: null, tipo: 'renglon', lado: 'gasto', detalla_a: null, codigoNBB: x.codigos.join('+') })));
   nuevas.sort((a, b) => a.linea - b.linea);
   const tot = (k) => (N.filas[k] && N.filas[k].actual != null ? { actual: fmt(N.filas[k].actual), linea: N.filas[k].linea } : null);
   const totIng = N.actual.abreviado ? null : tot('70/76A') || tot('70/74');

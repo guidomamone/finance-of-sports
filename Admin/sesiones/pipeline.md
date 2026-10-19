@@ -138,3 +138,17 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
     boekjaar" vacía con el cierre bueno.
 
 ## Después del merge de la 298 f (2026-10-18)
+
+### 298 g: el 630 belga partido por la nota (ok de Guido 2026-10-18: "como escalón, no manta corta")
+
+- **Qué cambió (para CHANGELOG):** `tools/nbb.mjs` (`partir630`): en el estado NBB, si los códigos "Geboekt" / "Actées" de la nota de
+  activos fijos (8072 y 8079 pases, 8073 goodwill, 8271-8276 y 8279 materiales) suman EXACTO el 630, el 630 se reemplaza por esas partes,
+  con los rótulos de los ajustes ya cargados ("Afschrijvingen immateriële vaste activa (spelers)", "Afschrijvingen goodwill",
+  "Afschrijvingen materiële vaste activa"); si no suman, el 630 queda entero (la cola, como antes). `tools/verificar.mjs`: no lo parte en
+  un año ya publicado. Medido: 33 de 191 documentos belgas con 630 lo parten (Lommel SK 2023: 4.986.964 + 295.242; RWDM 2024: 6.990.742 +
+  464.020); no suman 15 (Beerschot 2021: parte de lo amortizado está en el 66A); sin esos códigos 143. medir-verificar (prueba-completa +
+  belgas, 2 pasadas): 25 documentos cambian de filas, ninguno de totales ni de estado; medir-cargar --contra-sitio de Bélgica, 10 de 10.
+  Auditoría P0 0 / P1 0. Commit f7abf3a3f2.
+- **Qué queda (para TODO):** la 298 g en general (partir en la cola cualquier fila según su nota, para otros países o el 66A de Lommel SK
+  2025) no se hizo: el caso que la motivó, el 630 belga, sale solo. Retomarla si aparece otra fila mixta que no tenga códigos.
+- **Para fos-onboarding:** los documentos belgas cuyas filas cambiaron vuelven a categorizar en el lote (etapa 7, ~US$ 0,03 por documento).

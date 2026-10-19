@@ -96,10 +96,10 @@ function paginaDeLinea(md, linea) {
 
 // (to-do 298 t) El .filas.json con el estado NBB leído por sus códigos (tools/nbb.mjs), o null si el escalón no corre: el .md no trae el
 // estado con códigos, la columna del año no cierra exacto, o el documento tiene un ajuste `fila` (el ajuste manual es el escalón 0 y manda).
-function nbbDe(F, md, pdf) {
+function nbbDe(F, md, pdf, opciones = {}) {
   if (ajustesDe(pdf).some((a) => a.campo === 'fila')) return null;
   let txt; try { txt = readFileSync(resolve(ROOT, md), 'utf8'); } catch { return null; }
-  const r = filasNBB(F, txt);
+  const r = filasNBB(F, txt, opciones);
   if (r) r.bloque.pagina = paginaDeLinea(md, r.bloque.lineas[0]);
   return r;
 }
@@ -171,7 +171,9 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   if (!existsSync(pF)) return { error: 'falta el .filas.json (extraer.mjs)' };
   // (to-do 298 t, ok de Guido 2026-10-18) ESCALÓN "códigos NBB": un estado belga que cierra por sus códigos legales reemplaza al estado que
   // extrajo la IA (tools/nbb.mjs, con la escalera y los casos). No corre si no cierra exacto ni si el documento tiene ajustes `fila` (manda el ajuste).
-  const nbbV = nbbDe(JSON.parse(readFileSync(pF, 'utf8')), md, pdf);
+  // (to-do 298 g) un año ya publicado no parte el 630 por la nota: sus filas son las que se categorizaron y se publicaron
+  const publicado = (() => { const id = clubDeRuta(pdf).clubId; const y = e.periodo?.cierre ? Number(e.periodo.cierre.slice(0, 4)) : null; return !!(id && y && sitio.generic?.[id]?.fiscalYearMeta?.[y]); })();
+  const nbbV = nbbDe(JSON.parse(readFileSync(pF, 'utf8')), md, pdf, { partir630: !publicado });
   const F = nbbV ? nbbV.F : JSON.parse(readFileSync(pF, 'utf8'));
   const nbbPropio = nbbV ? nbbV.N : codigosNBBde(md); // (to-do 298 t) para el chequeo del año vecino
   const pV = resolve(ROOT, derivado(md, '.validacion.json', { crear: false }));
