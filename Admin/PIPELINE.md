@@ -278,7 +278,10 @@ Mitigaciones:
   impreso; listas FIN_INGRESO / FIN_GASTO de `tools/vocabulario.mjs`), con la misma compuerta EXACTA. Caso: Volos 2021-2025 imprime los
   intereses cobrados y pagados los dos en positivo; en bloque, 2021 y 2025 entraban por la tolerancia con el cobrado cargado como gasto.
   Bélgica (to-do 298 b1): el esquema NBB imprime los costos financieros (65/66B, "Kosten van schulden", "Charges des dettes") en positivo;
-  están en FIN_GASTO y este escalón les pone el signo sin ajustes `fila` (Beerschot 2025).
+  están en FIN_GASTO y este escalón les pone el signo sin ajustes `fila` (Beerschot 2025). Noruega (to-do 298 y1): el formato NRS
+  imprime "Annen finanskostnad", "Annen rentekostnad" y "Rentekostnad" en positivo y en singular; FIN_GASTO / FIN_INGRESO van en
+  singular (cubre el plural). Viking AS 2025 y Fredrikstad 2018 y 2024 cierran exacto sin ajustes; en Fredrikstad 2024, con el signo
+  bien, la lectura 5 reconoce "Sum driftsinntekter" como subtotal y deja de sumarlo junto con su renglón.
   Escalón "códigos NBB" (to-do 298 t; `tools/nbb.mjs`, que trae la escalera y los casos): un estado belga con los códigos legales del
   esquema NBB (de 70/76A, 70/74 o 9900 hasta 9904; en tabla o en texto suelto) se lee por sus códigos: se cargan las hojas del esquema
   con el signo de su código (las reversiones "(+)/(-)" negativas restan; el detalle 600/8 + 609 o 650/652/9 si suma su renglón, nunca

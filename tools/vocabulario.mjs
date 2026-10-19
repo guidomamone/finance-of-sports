@@ -451,7 +451,8 @@ export const VOCABULARIO = {
     en: ['finance income', 'financial income', 'interest income', 'interest receivable', 'interest received', 'investment income'],
     de: ['zinsertrage', 'zinsen und ahnliche ertrage', 'finanzertrage', 'finanzertrag'], fr: ['produits financiers'],
     it: ['proventi finanziari', 'interessi attivi'], nl: ['financiele baten', 'rentebaten', 'financiele opbrengsten'],
-    da: ['finansielle indtaegter', 'renteindtaegter'], no: ['finansinntekter', 'renteinntekter', 'finansielle inntekter'],
+    // noruego en singular: cubre el plural ("finansinntekt" está dentro de "finansinntekter"); ver FIN_GASTO, to-do 298 y1.
+    da: ['finansielle indtaegter', 'renteindtaegter'], no: ['finansinntekt', 'renteinntekt', 'finansielle inntekter'],
     sv: ['finansiella intakter', 'ranteintakter'], hr: ['financijski prihodi', 'prihodi od kamata'], cs: ['financni vynosy', 'vynosove uroky'],
     pl: ['przychody finansowe'], tr: ['finansman gelirleri', 'finansal gelirler', 'faiz gelirleri'],
     el: ['πιστωτικοι τοκοι', 'χρηματοοικονομικα εσοδα', 'εσοδα τοκων'], ru: ['проценты к получению', 'финансовые доходы'], ja: ['受取利息', '金融収益'],
@@ -465,7 +466,11 @@ export const VOCABULARIO = {
     // (escalón "financiero por rótulo"). Caso: Beerschot 2025 cierra exacto sin sus ajustes `fila` de signo. Medido: 376 documentos, 375 idénticos.
     de: ['zinsaufwand', 'zinsaufwendungen', 'zinsen und ahnliche aufwendungen', 'finanzaufwand', 'finanzaufwendungen'], fr: ['charges financieres', 'charges des dettes'],
     it: ['oneri finanziari', 'interessi passivi'], nl: ['financiele lasten', 'rentelasten', 'financiele kosten', 'kosten van schulden'],
-    da: ['finansielle omkostninger', 'renteudgifter'], no: ['finanskostnader', 'rentekostnader', 'finansielle kostnader'],
+    // (to-do 298 y1, ok de Guido 2026-10-18) el formato noruego NRS imprime los costos financieros en positivo y en SINGULAR: "Annen
+    // finanskostnad", "Annen rentekostnad", "Rentekostnad". Con el plural solo, no se reconocían y se sumaban como ingreso financiero. El
+    // singular cubre el plural. Casos: Viking AS 2025 L296 y Fredrikstad FLI 2018 L545 cierran exacto sin ajustes; Vålerenga AS 2025 L123,
+    // Aalesund AS 2025 L593-594 y Sarpsborg 08 FLI 2025 L1383-1384 dejan de dar "no cierra".
+    da: ['finansielle omkostninger', 'renteudgifter'], no: ['finanskostnad', 'rentekostnad', 'finansielle kostnader'],
     sv: ['finansiella kostnader', 'rantekostnader'], hr: ['financijski rashodi', 'rashodi od kamata'], cs: ['financni naklady', 'nakladove uroky'],
     pl: ['koszty finansowe'], tr: ['finansman giderleri', 'finansal giderler', 'faiz giderleri'],
     el: ['χρεωστικοι τοκοι', 'χρηματοοικονομικα εξοδα', 'εξοδα τοκων'], ru: ['проценты к уплате', 'финансовые расходы'], ja: ['支払利息', '金融費用'],
