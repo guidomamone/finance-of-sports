@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 786 — 298 s medida: sin daño hoy (2026-10-19)
+
+* El cierre de Beerschot 2019 -correction sale bien sin ajuste desde la 298 f; el aviso de "0 filas extraídas" queda en HALLAZGOS.
+
 ## Versión 785 — 298 q: el ensayo cobra solo lo que va a categorizar (2026-10-19)
 
 * `lote.mjs`: el ensayo cobra la categorización solo a los documentos que la van a hacer (cotizados o extraídos, sin testigos, con

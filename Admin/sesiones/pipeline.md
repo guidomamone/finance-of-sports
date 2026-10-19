@@ -345,3 +345,5 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
 - **298 s medida: sin daño hoy, a HALLAZGOS** (no se codea). La causa la resolvió la 298 f: periodo.mjs da el cierre 30-06-2019 de Beerschot
   2019 -correction sin el ajuste `cierre`, y la localización toma la columna del ejercicio (48 filas). Ningún `.filas.json` tiene 0 filas
   (0 de 720). Condición para retomar el aviso de "0 filas", en Admin/HALLAZGOS-pipeline.md. Sigue la v.
+
+## Después del merge de la s (2026-10-19)
