@@ -48,6 +48,9 @@ window.RANKINGS["be-challengerproleague"] = {
       { id:"liersesk-be", revenue:2.777, reportType:"official_balance_sheet",
         sourceId:"liersesk-be-jaarrekening-2023-06-30-individual",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.777]] },
+      { id:"rwdm-be", revenue:1.77, reportType:"official_balance_sheet",
+        sourceId:"rwdm-be-jaarrekening-2023-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.77]] },
     ],
   },
   2022: {
