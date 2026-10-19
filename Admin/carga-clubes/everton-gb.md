@@ -149,6 +149,48 @@ _antes de Farhad Moshiri (data/gestiones/gb.js):_
 Moshiri: compra del 49,9% confirmada el 27/2/2016 (la Premier la ratificó dos semanas después).
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Everton/everton-group-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Everton/everton-group-accounts-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Broadcasting | pág. 22, precedente |
+| 2 | Gate Receipts | pág. 22, precedente |
+| 3 | Sponsorship, advertising and merchandising | pág. 22, precedente |
+| 4 | Other commercial activities | pág. 22, precedente |
+| 5 | Profit on player trading | pág. 13, Jev 0.99 |
+| 6 | Profit on disposal of tangible fixed assets | pág. 13, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Amortisation of players' registrations | pág. 22, precedente |
+| 2 | Wages and salaries | pág. 24, Claude 0.9 |
+| 3 | Social security costs | pág. 24, Claude 0.88 |
+| 4 | Other pension costs | pág. 24, Claude 0.87 |
+| 5 | Depreciation | pág. 22, precedente |
+| 6 | Other operating costs | pág. 22, precedente |
+| 7 | Operating expenses - exceptional costs | pág. 13, Claude 0.88 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2022–23 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Everton".
+```
+
 ## 2022
 
 ### Ingresos
@@ -215,6 +257,14 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Everton/everton-group-accounts-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### everton-gb-group-accounts-2022-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Everton/everton-group-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
 
 ## Otros

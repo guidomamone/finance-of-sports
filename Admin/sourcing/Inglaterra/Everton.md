@@ -88,3 +88,5 @@ Todos en `Clubes/Inglaterra/Everton/` (los PDF no se trackean; son escaneos, hay
 <!-- /ing-sourcing -->
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2022 desde `Clubes/Inglaterra/Everton/everton-group-accounts-2021-22.pdf` (sourceId `everton-gb-group-accounts-2021-22`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2023 desde `Clubes/Inglaterra/Everton/everton-group-accounts-2022-23.pdf` (sourceId `everton-gb-group-accounts-2022-23`).

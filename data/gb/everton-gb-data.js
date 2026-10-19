@@ -21,6 +21,14 @@ const evertonGbRevenueLinesByYear = {
     { rawLabel:'Profit on player trading', normalizedCategory:'player_sales', amountNative:67.684, disclosureLevel:'aggregated' },
     { rawLabel:'Profit on disposal of tangible fixed assets', normalizedCategory:'other_income', amountNative:0.02, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Broadcasting', normalizedCategory:'broadcasting', amountNative:116.022, disclosureLevel:'aggregated' },
+    { rawLabel:'Gate Receipts', normalizedCategory:'matchday_competition', amountNative:17.26, disclosureLevel:'aggregated' },
+    { rawLabel:'Sponsorship, advertising and merchandising', normalizedCategory:'sponsorship_commercial', amountNative:19.158, disclosureLevel:'aggregated' },
+    { rawLabel:'Other commercial activities', normalizedCategory:'other_income', amountNative:19.715, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on player trading', normalizedCategory:'player_sales', amountNative:47.518, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of tangible fixed assets', normalizedCategory:'other_income', amountNative:0.008, disclosureLevel:'aggregated' },
+  ],
 };
 
 const evertonGbExpenseLinesByYear = {
@@ -49,6 +57,15 @@ const evertonGbExpenseLinesByYear = {
     { rawLabel:'Depreciation', normalizedCategory:'depreciation', amountNative:-6.683, disclosureLevel:'aggregated' },
     { rawLabel:'Other operating costs', normalizedCategory:'other_expenses', amountNative:-36.226, disclosureLevel:'aggregated' },
     { rawLabel:'Operating expenses - exceptional costs', normalizedCategory:'exceptional_items', amountNative:-11.138, disclosureLevel:'aggregated' },
+  ],
+  2023: [
+    { rawLabel:'Amortisation of players\' registrations', normalizedCategory:'player_amortisation', amountNative:-77.621, disclosureLevel:'aggregated' },
+    { rawLabel:'Wages and salaries', normalizedCategory:'wages_squad', amountNative:-138.394, disclosureLevel:'aggregated' },
+    { rawLabel:'Social security costs', normalizedCategory:'wages_squad', amountNative:-19.455, disclosureLevel:'aggregated' },
+    { rawLabel:'Other pension costs', normalizedCategory:'wages_squad', amountNative:-1.177, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciation', normalizedCategory:'depreciation', amountNative:-5.931, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating costs', normalizedCategory:'other_expenses', amountNative:-45.028, disclosureLevel:'aggregated' },
+    { rawLabel:'Operating expenses - exceptional costs', normalizedCategory:'exceptional_items', amountNative:-15.009, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -86,6 +103,21 @@ const evertonGbFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:248.711, officialTotalExpenses:273.246, officialPAT:-44.732,
   },
+  2023: {
+    currency:'GBP', fxRef:'GBP@2023-06-30',
+    sourceId:'everton-gb-group-accounts-2022-23',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-6.156, tax:0,
+    extraRows: [
+      {label:'Interest receivable and similar income', value:1.7},
+      {label:'Interest payable and similar charges', value:-7.856},
+      {label:'Tax on loss', value:null},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:219.681, officialTotalExpenses:287.606, officialPAT:-89.09,
+  },
 };
 
 const evertonGbPresupuestoOverlayByYear = {};
@@ -120,6 +152,11 @@ Object.assign(sources, {
   'everton-gb-group-accounts-2021-22': {
     id:'everton-gb-group-accounts-2021-22', clubId:'everton-gb',
     title:'Everton Football Club Company, Limited — everton-group-accounts-2021-22 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'everton-gb-group-accounts-2022-23': {
+    id:'everton-gb-group-accounts-2022-23', clubId:'everton-gb',
+    title:'Everton Football Club Company, Limited — everton-group-accounts-2022-23 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
