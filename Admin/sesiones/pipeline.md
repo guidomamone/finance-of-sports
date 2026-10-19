@@ -233,3 +233,16 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
 - Sigue: **298 y3** (St. Gallen 2024-25: "Erträge netto" consolidado sumado junto al desglose por sociedad, y los signos de L330 y L403).
   Después, **y4**: con la y en main y el merge de onboarding hecho, sacar los ajustes `fila` noruegos del lote 94 (8 de los 11) y medir que lo
   cargado quede igual.
+- **298 y3 hecha** (ok de Guido 2026-10-18), tres escalones en verificar.mjs, un commit cada uno, medidos con `medir-verificar --pasadas 2`
+  sobre los mismos 366 documentos:
+  a) 10bb653925, la nota de un renglón que resta hereda su signo en la lectura 4: 365 idénticos. Cambia Vitória Guimarães 2021-22 (cargado):
+     "Imparidade de dívidas a receber" +100.695 (reversión) abierto en su nota ya resta, la lectura 4 cierra exacto y gana sobre la 5. Mismos
+     totales; lo publicado no cambia. `medir-cargar --contra-sitio` sobre ese documento frena porque la verificación abre filas de nota sin
+     categorizar ("Programas computador", amortización por clase): solo pesa si se recarga ese año (etapa 5, centavos).
+  b) d6bd922a54, un total salteado por "subtotal repetido" cierra con lo que salió de sus partes: 365 idénticos, cambia solo St. Gallen.
+  c) 719f2c133b, un ajuste `fila` que saca un renglón sin lado se respeta en las lecturas 3 y 4: 366 idénticos.
+  Simulado con los 2 ajustes de la compensación entre sociedades ("Entschädigung" ±11.500, L268-269, de la rama onboarding): St. Gallen cierra
+  exacto, ingresos 45,101 M, gastos 44,681 M, resultado 0,117 M. Auditoría P0 0 / P1 0.
+- **y4 (después del merge de pipeline y onboarding):** sacar los ajustes `fila` que tapaban la y (8 noruegos y 3 de St. Gallen: "Erträge
+  netto" L261, L330 y L403) y DEJAR los 2 de la compensación "Entschädigung" (L268-269): son una decisión de la cola, no un defecto del script.
+  En los 718 `.filas.json` hay un solo par de filas sin lado que se anulan (+X / −X): no hace falta un escalón para eso.

@@ -282,6 +282,11 @@ Mitigaciones:
   imprime "Annen finanskostnad", "Annen rentekostnad" y "Rentekostnad" en positivo y en singular; FIN_GASTO / FIN_INGRESO van en
   singular (cubre el plural). Viking AS 2025 y Fredrikstad 2018 y 2024 cierran exacto sin ajustes; en Fredrikstad 2024, con el signo
   bien, la lectura 5 reconoce "Sum driftsinntekter" como subtotal y deja de sumarlo junto con su renglón.
+  Lectura 4 con notas (to-do 298 y3, St. Gallen 2024-25): (a) un renglón que resta en su lado pasa su signo a las filas de su nota
+  (una deducción abierta en su nota ya no suma); (b) un total que el escalón "subtotal repetido" salteó por ser la suma de las filas de
+  arriba cierra con lo que salió de esas filas, y lo de abajo queda afuera; (c) un ajuste `fila` que saca un renglón sin lado se respeta
+  también en las lecturas 3 y 4 (antes volvía a entrar por su signo). Con (a), Vitória Guimarães 2021-22 pasa de la lectura 5 a la 4
+  (mismos totales; abre más notas, así que una recarga pide categorizar esas filas).
   Escalón "códigos NBB" (to-do 298 t; `tools/nbb.mjs`, que trae la escalera y los casos): un estado belga con los códigos legales del
   esquema NBB (de 70/76A, 70/74 o 9900 hasta 9904; en tabla o en texto suelto) se lee por sus códigos: se cargan las hojas del esquema
   con el signo de su código (las reversiones "(+)/(-)" negativas restan; el detalle 600/8 + 609 o 650/652/9 si suma su renglón, nunca
