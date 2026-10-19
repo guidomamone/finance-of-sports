@@ -456,7 +456,11 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
           // más de los ingresos (Cremonese 2024: "altri" 42,8 + contributi 13,1; Sassuolo: a), b), f)). Un grupo ya desglosado en el estado
           // (Atalanta 2022/2024 y Genoa 2022: ~9 renglones) no se toca: su nota reparte distinto (Atalanta 2024: la TV 107,5 -> 101,8 M).
           const forzOk = forzarNotaSub && lado === 'ingreso' && comp && comp.length <= 3 && comp.some((x) => Math.abs(x[campo] || 0) >= 0.2 * totIngForz);
-          const cn = (ladosCero.has(lado) || forzOk) && hijasSub.length >= 2 && sueltos ? cerrarNota(Math.abs(f[campo] || 0), hijasSub, campo, f.u || 0) : null;
+          let cn = (ladosCero.has(lado) || forzOk) && hijasSub.length >= 2 && sueltos ? cerrarNota(Math.abs(f[campo] || 0), hijasSub, campo, f.u || 0) : null;
+          // (to-do 298 ab, ok de Guido 2026-10-19) GANA EL ESTADO SI ABRE MÁS: la nota reemplaza a los renglones del estado solo si trae al menos
+          // tantas filas como las que reemplaza. Si trae menos es más gruesa que el estado y pierde el desglose. Caso: Sarpsborg 08 2024, la Note 1
+          // trae 2 áreas (Arrangement 69,1 M y Salg/utleie spillere 134,6 M) para los 8 renglones de ingresos del estado (L116-124).
+          if (cn && comp && cn.hojas.length < comp.length) cn = null;
           if (cn) {
             if (deAbajo) for (const x of comp) saltar.add(x);
             const quitar = new Set(deAbajo ? [] : comp.flatMap((x) => salidaDe.get(x))); const pos = deAbajo ? out.length : Math.min(...[...quitar].map((x) => out.indexOf(x)));

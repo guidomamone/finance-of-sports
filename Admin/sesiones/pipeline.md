@@ -484,3 +484,12 @@ commitear): voto 1 solo 422 iguales y 8 distintos (Udinese 2022); la idea 1, la 
 (la 3 cubierta por la parte 1). Regla del factoring escrita en `Admin/CONVENCIONES-DATOS.md`: con recurso entra en la deuda, pro soluto no; lo
 decide la nota de cada documento y el diccionario no suma "altri finanziatori". Genoa 2022 queda como está; sin cambio de código. Para borrar del
 TODO: el 310 entero, el 290 y el 291.
+
+**298 ab (Guido, 2026-10-19).** `verificar.mjs`: la nota del subtotal reemplaza a los renglones del estado solo si trae al menos tantas filas
+(`cn.hojas.length < comp.length` → no reemplaza). Base: 24 casos distintos pasan por ese reemplazo, 22 afinan y 2 achican (Sarpsborg 2024 y un gasto
+de AVS 2023-24). `medir-verificar --pasadas 2` sobre prueba-completa + Sarpsborg 2023-24 (722): 720 idénticos, 2 con diferencias, OK 686 / COLA 36 como
+antes. Sarpsborg 2024 vuelve a los 8 renglones del estado (ingresos 203,736698 contra 203,736697 impreso) y cierra. AVS 2023-24: mismos
+totales y mismo estado (COLA), gastos de 22 a 31 líneas (personal: 6 de la nota → 15 del estado). Con `medir-cargar`, el .categorias.json de ambos
+queda desactualizado (filas nuevas) y AVS tendría 3 casos nuevos en la cola si se reprocesara; es un año ya publicado y el lote no lo reprocesa, así que
+el sitio no cambia. Restauré Generados y los registros después de medir. **ac sin hacer**: falta el ok de Guido para rehacer la localización de
+Sarpsborg 2023 (hasta US$ 0,10) y para guardar el perímetro usado en .ubicacion.json.

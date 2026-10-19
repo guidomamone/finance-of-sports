@@ -406,6 +406,10 @@ Mitigaciones:
  ESCALÓN    si la lectura que ganó (0-4) deja un renglón de ingresos de 20% o más del total dentro de un grupo de 3 renglones o
             menos: la misma lectura con la nota del subtotal abierta (sin esperar a la categoría en 0 del reintento); compuerta: cierra
             igual (Versión 587, to-do 175; caso Cremonese 2024)
+            (to-do 298 ab) la nota reemplaza a los renglones del estado solo si trae al menos tantas filas como las que reemplaza; si trae
+            menos es más gruesa y gana el estado (Sarpsborg 08 2024: Note 1 con 2 áreas contra 8 renglones de ingresos). Medido en
+            prueba-completa más Sarpsborg 2023-2024 (722): 720 idénticos; cambian Sarpsborg 2024 (el buscado) y las líneas de gastos de AVS
+            2023-24 (mismos totales; ya publicado, el lote no lo vuelve a procesar)
  nada cierra → reintento (una vez) → cola humana
 ```
 
