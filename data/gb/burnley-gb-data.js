@@ -28,6 +28,15 @@ const burnleyGbRevenueLinesByYear = {
     { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:0.89, disclosureLevel:'aggregated' },
     { rawLabel:'Profit on disposal of player registrations', normalizedCategory:'player_sales', amountNative:11.399, disclosureLevel:'aggregated' },
   ],
+  2022: [
+    { rawLabel:'Match income', normalizedCategory:'matchday_competition', amountNative:7.021, disclosureLevel:'aggregated' },
+    { rawLabel:'Television rights', normalizedCategory:'broadcasting', amountNative:104.894, disclosureLevel:'aggregated' },
+    { rawLabel:'Catering sales', normalizedCategory:'stadium_other', amountNative:1.739, disclosureLevel:'aggregated' },
+    { rawLabel:'Other commercial activities', normalizedCategory:'other_income', amountNative:7.738, disclosureLevel:'aggregated' },
+    { rawLabel:'Retail sales', normalizedCategory:'sponsorship_commercial', amountNative:2.015, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:1.232, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of player registrations', normalizedCategory:'player_sales', amountNative:54.719, disclosureLevel:'aggregated' },
+  ],
 };
 
 const burnleyGbExpenseLinesByYear = {
@@ -50,6 +59,14 @@ const burnleyGbExpenseLinesByYear = {
     { rawLabel:'Depreciation', normalizedCategory:'depreciation', amountNative:-2.412, disclosureLevel:'aggregated' },
     { rawLabel:'Other operating expenses', normalizedCategory:'other_expenses', amountNative:-28.304, disclosureLevel:'aggregated' },
     { rawLabel:'Amortisation of player registrations', normalizedCategory:'player_amortisation', amountNative:-22.115, disclosureLevel:'aggregated' },
+  ],
+  2022: [
+    { rawLabel:'Wages and salaries', normalizedCategory:'wages_squad', amountNative:-82.009, disclosureLevel:'aggregated' },
+    { rawLabel:'Social security costs', normalizedCategory:'wages_squad', amountNative:-9.828, disclosureLevel:'aggregated' },
+    { rawLabel:'Cost of defined contribution scheme', normalizedCategory:'wages_squad', amountNative:-0.141, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciation', normalizedCategory:'depreciation', amountNative:-2.37, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating expenses', normalizedCategory:'other_expenses', amountNative:-19.13, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation of player registrations', normalizedCategory:'player_amortisation', amountNative:-22.703, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -87,6 +104,21 @@ const burnleyGbFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:77.188, officialTotalExpenses:106.492, officialPAT:-27.943,
   },
+  2022: {
+    currency:'GBP', fxRef:'GBP@2022-07-31',
+    sourceId:'burnley-gb-holdings-group-accounts-2021-22',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-7.097, tax:-10.184,
+    extraRows: [
+      {label:'Interest receivable and similar income', value:0.075},
+      {label:'Interest payable and similar expenses', value:-7.172},
+      {label:'Tax on profit/(loss)', value:-10.184},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:179.358, officialTotalExpenses:136.181, officialPAT:25.896,
+  },
 };
 
 const burnleyGbPresupuestoOverlayByYear = {};
@@ -121,6 +153,11 @@ Object.assign(sources, {
   'burnley-gb-holdings-group-accounts-2022-23': {
     id:'burnley-gb-holdings-group-accounts-2022-23', clubId:'burnley-gb',
     title:'Burnley FC Holdings Limited — burnley-holdings-group-accounts-2022-23 (ejercicio 2023)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'burnley-gb-holdings-group-accounts-2021-22': {
+    id:'burnley-gb-holdings-group-accounts-2021-22', clubId:'burnley-gb',
+    title:'Burnley FC Holdings Limited — burnley-holdings-group-accounts-2021-22 (ejercicio 2022)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

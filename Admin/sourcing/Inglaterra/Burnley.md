@@ -56,3 +56,5 @@ Todos en `Clubes/Inglaterra/Burnley/` (los PDF no se trackean; son escaneos, hay
 <!-- /ing-sourcing -->
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2023 desde `Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2022-23.pdf` (sourceId `burnley-gb-holdings-group-accounts-2022-23`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2022 desde `Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2021-22.pdf` (sourceId `burnley-gb-holdings-group-accounts-2021-22`).
