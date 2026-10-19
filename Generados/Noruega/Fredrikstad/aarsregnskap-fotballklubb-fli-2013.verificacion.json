@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2013.pdf",
  "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2013.md",
- "generado": "2026-10-19T03:56:51.169Z",
- "estado": "cola",
+ "generado": "2026-10-19T11:11:24.923Z",
+ "estado": "ok",
  "clubId": "fredrikstad-no",
  "year": 2013,
  "escala": {
@@ -23,10 +23,7 @@
    "fecha": "2026-10-18"
   }
  ],
- "cola": [
-  "2a4afc3",
-  "4315288"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -71,7 +68,9 @@
  ],
  "notas": [
   "la nota de \"Annen driftskostnad\" no suma el renglón (0.09 contra 17.181495, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar ya contestada para el club (perimetro, \"SUM DRIFTSINNTEKTER\"): corregir no, en aarsregnskap-fotballklubb-fli-2013.pdf",
   "duda de localizar que no afecta la carga: b12 parece repetir el estado de b1 dentro del årsmøtedokument.",
+  "duda de extraer ya contestada para el club (perimetro, \"-\"): aceptar, en aarsregnskap-fotballklubb-fli-2013.pdf",
   "duda de extraer que no afecta la carga: Nota 3 (L1811) informa honorarios de auditoría, referenciada por 'Annen driftskostnad' (nota 3,7), pero es solo un detalle parcial sin año anterior."
  ],
  "reintentar": [

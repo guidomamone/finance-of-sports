@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2018.pdf",
- "generado": "2026-10-19T03:58:06.772Z",
+ "generado": "2026-10-19T11:11:27.531Z",
  "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del documento, 2026-10-18: perimetro-senales.mjs: el ejercicio 2018-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 15 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)"
@@ -358,9 +358,9 @@
  },
  "liga": {
   "valor": null,
-  "fuente": "no aparece en los rosters cacheados de 2018 (no-eliteserien): puede haber jugado otra división",
+  "fuente": "el roster \"2018 Norwegian Second Division\" lo ubica en 'no-2divisjon', que NO está en el catálogo de data/leagues.js",
   "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "nota": "fila en null hasta decidir: el club jugó 2018 en 'no-2divisjon' (2018 Norwegian Second Division), liga que no está en el catálogo. ¿Se agrega al catálogo o la fila va como 'liga-no-catalogada'? (decisión de Guido, por liga)"
  },
  "procedencia": {
   "anio": {
@@ -400,7 +400,7 @@
   },
   "liga": {
    "valor": null,
-   "fuente": "no aparece en los rosters cacheados de 2018 (no-eliteserien): puede haber jugado otra división",
+   "fuente": "el roster \"2018 Norwegian Second Division\" lo ubica en 'no-2divisjon', que NO está en el catálogo de data/leagues.js",
    "estado": "pendiente"
   }
  },

@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2017.pdf",
- "generado": "2026-10-19T03:58:06.505Z",
+ "generado": "2026-10-19T11:11:27.445Z",
  "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del documento, 2026-10-18: perimetro-senales.mjs: el ejercicio 2017-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 15 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)"
@@ -357,10 +357,9 @@
   "label": "Tipo medio de referencia de Norges Bank, última rueda hábil antes del cierre (2017-12-29, 2017-12-31 no es día hábil)"
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de no 2017 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "no-1divisjon",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -399,9 +398,9 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de no 2017 cacheada",
-   "estado": "pendiente"
+   "valor": "no-1divisjon",
+   "fuente": "data/club-leagues/no.js ya tiene la fila",
+   "estado": "ok"
   }
  },
  "resumen": {
