@@ -224,5 +224,41 @@ window.LIGA_AUDITORIA = {
     "linea": 709
    }
   }
+ },
+ "ee-meistriliiga": {
+  "2025": {
+   "entidad": {
+    "nombre": "Eesti Jalgpalli Liit",
+    "legal": "Eesti Jalgpalli Liit (MTÜ, 80091598)"
+   },
+   "auditor": {
+    "nombre": "EL Finants OÜ",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Ligas/Estonia/Eesti Jalgpalli Liit/ejl-aastaaruanne-2025.md",
+    "linea": 2493
+   }
+  }
+ },
+ "ee-esiliiga": {
+  "2025": {
+   "entidad": {
+    "nombre": "Eesti Jalgpalli Liit",
+    "legal": "Eesti Jalgpalli Liit (MTÜ, 80091598)"
+   },
+   "auditor": {
+    "nombre": "EL Finants OÜ",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": true,
+   "fuente": {
+    "md": "Ligas/Estonia/Eesti Jalgpalli Liit/ejl-aastaaruanne-2025.md",
+    "linea": 2493
+   }
+  }
  }
 };
