@@ -133,6 +133,13 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   Admin/mediciones/perimetro-a2-medicion-recorte-232e.txt. El contexto alrededor de los títulos le sirve a Claude para ubicar el estado.
 
 ## Conocido, sin daño hoy (no se trabaja salvo que algo cambie)
+- **Deuda belga por códigos NBB (to-do 310 parte 2, 2026-10-19): medido, no se hace (Guido).** Union SG 2025: 170/4 = 3,154 M y 42 = 0, pero
+  lo cargado es 31,66 M porque incluye los "otros débitos" (178/9 y 47/48), que son catch-alls con préstamos de socios y partidas que no son
+  deuda financiera. Una regla por códigos daría 7,62 M, por debajo de lo cargado. La deuda belga sigue por la lectura del documento (IA o ajuste
+  con cita). Retomar si aparece un código NBB que separe los préstamos de socios.
+- **OH Leuven y los `.md` sin columna de códigos (to-do 310 parte 3, 2026-10-19): cubierto por la parte 1 (Guido).** La caja de un año sin
+  vecino ya no depende del código 54/58 sino del balance del documento (tres votos). Si un documento sin vecino sigue sin dato, se ve en
+  `caja-deuda --medir`; se reabre solo con un caso concreto.
 - **Milan 2018 en `caja-deuda --medir` (to-do 306, 2026-10-19): medido, no se diseña.** El balance de Milan imprime la deuda como títulos
   sin importe ("1 obbligazioni", "3 debiti verso soci", "5 debiti verso altri finanziatori") con las filas "a) entro / b) oltre 12 mesi"
   debajo; el diccionario solo ve "4 debiti verso banche" (1,21 M contra 164,27 M cargados). Es el único club italiano con ese formato (9
