@@ -36,3 +36,5 @@ Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Fi
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2023 desde `Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2022-2023.pdf` (sourceId `goaheadeagles-nl-jaarverslag-2022-2023`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2024 desde `Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2023-2024.pdf` (sourceId `goaheadeagles-nl-jaarverslag-2023-2024`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2021 desde `Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarrekening-2020-2021.pdf` (sourceId `goaheadeagles-nl-jaarrekening-2020-2021`).

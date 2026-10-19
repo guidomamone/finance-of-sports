@@ -76,7 +76,8 @@ window.RANKINGS["nl-eredivisie"] = {
         mix:[["Venta de Jugadores",2.923],["Fútbol profesional (sin desglosar por la fuente)",19.341]] },
       { id:"goaheadeagles-nl", revenue:15.636, reportType:"official_balance_sheet",
         sourceId:"goaheadeagles-nl-jaarverslag-2023-2024",
-        mix:[["Venta de Jugadores",0.667],["Fútbol profesional (sin desglosar por la fuente)",14.969]] },
+        mix:[["Venta de Jugadores",0.667],["Fútbol profesional (sin desglosar por la fuente)",14.969]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1]] },
       { id:"excelsior-nl", revenue:10.799, reportType:"official_balance_sheet",
         sourceId:"excelsior-nl-jaarverslag-2023-2024",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",10.799]] },
@@ -88,7 +89,8 @@ window.RANKINGS["nl-eredivisie"] = {
     clubs: [
       { id:"goaheadeagles-nl", revenue:12.899, reportType:"official_balance_sheet",
         sourceId:"goaheadeagles-nl-jaarverslag-2022-2023",
-        mix:[["Venta de Jugadores",-0.64],["Fútbol profesional (sin desglosar por la fuente)",13.54]] },
+        mix:[["Venta de Jugadores",-0.64],["Fútbol profesional (sin desglosar por la fuente)",13.54]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1],["Premios por competencias","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
   2019: {
