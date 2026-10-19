@@ -11,6 +11,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'hajduksplit-hr': {
     2024: {"estadio":"Poljud","capacidad":33987,"sponsor":"Tommy","marca":"Adidas","temporada":"2024–25 Croatian Football League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378033710"},
+    2025: {"estadio":"Poljud","capacidad":33987,"sponsor":"Tommy","marca":"Adidas","temporada":"2025–26 Croatian Football League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380191288"},
   },
   'istra-hr': {
     2025: {"estadio":"Stadion Aldo Drosina","capacidad":10000,"sponsor":"Germania","marca":"Joma","temporada":"2025–26 Croatian Football League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380191288"},

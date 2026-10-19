@@ -5,6 +5,9 @@ window.RANKINGS["hr-hnl"] = {
     leagueSize: 10,
     wiki: {"t":"2024–25 Croatian Football League","lang":"en","at":"2026-10-17","n":10},
     clubs: [
+      { id:"hajduksplit-hr", revenue:58.61, reportType:"official_balance_sheet",
+        sourceId:"hajduksplit-hr-financijsko-izvjesce-2025",
+        mix:[["Comercial / Sponsors",16.857],["Estadio",9.16],["Televisión",1.245],["Premios por competencias",2.679],["Venta de Jugadores",20.335],["Otros ingresos",8.335]] },
       { id:"osijek-hr", revenue:22.101, reportType:"official_balance_sheet",
         sourceId:"osijek-hr-financijsko-izvjesce-2025",
         mix:[["Cuotas Sociales",0.039],["Comercial / Sponsors",12.111],["Estadio",1.337],["Televisión",1.005],["Premios por competencias",2.329],["Otros ingresos",5.28]] },
