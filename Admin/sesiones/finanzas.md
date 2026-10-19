@@ -326,3 +326,5 @@
 ### Qué queda (para TODO)
 
 - 282 a: Go Ahead Eagles 2025, buscar el informe del auditor de la Holding (el documento que tenemos no lo trae).
+
+## Después del segundo merge de Finanzas 4 (2026-10-19)

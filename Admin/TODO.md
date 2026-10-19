@@ -53,7 +53,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 273: nombrar la compuerta de estadio y sponsor en la skill de onboarding (con tu ok)
 
 **E. Pantallas**
-* 282: quién audita, lo que queda (Hamburgo 2024 con tu captcha; las 10 altas del lote 94 sin línea; la compuerta del pipeline) --> Finanzas 4
+* 282: quién audita, lo que queda (Hamburgo 2024 con tu captcha; Go Ahead Eagles 2025; la compuerta del pipeline) --> Finanzas 4
 * 309: tamaño de liga desde la lista de Wikipedia (a decidir con Guido)
 
 **E2. Distribución (depende de 246)**
@@ -213,13 +213,12 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 273. ESTADIO Y SPONSOR: LO QUE QUEDA. Cerrado salvo un punto (Guido, 2026-10-19: los ejercicios ya cargados sin sponsor quedan en null
    y no se vuelven a buscar). Falta: nombrar la compuerta de `cargar.mjs` (sin estadio y sponsor no escribe un año nuevo, salvo en liga
    amateur) en la skill `club-or-year-onboarding` (con ok de Guido; `Admin/PIPELINE.md` ya la nombra).
-282. QUIÉN AUDITA: LO QUE QUEDA (pedido de Guido, 2026-10-17). Los 942 balances tienen línea, la tarjeta de Finanzas está (con el
-   "alcance" de una revisión limitada, procedimientos acordados, propósito especial o cuentas del grupo). Falta: (a) 50 informes del auditor
+282. QUIÉN AUDITA: LO QUE QUEDA (pedido de Guido, 2026-10-17). Los 1004 balances tienen línea, la tarjeta de Finanzas está (con el
+   "alcance" de una revisión limitada, procedimientos acordados, propósito especial o cuentas del grupo). Falta: (a) 56 informes del auditor
    que no están en ningún PDF nuestro (`node tools/auditoria.mjs --pendientes`, "FALTA EN EL PDF"): casi todos sin canal público, son candidatos a mail (sin pedir: Guido no lo quiere ahora);
    quedan para sourcing Hamburgo 2024 (ficha de la KGaA HRB 191603 o de la AG vieja HRB 47576 en el Unternehmensregister; captcha por
-   publicación, lo resuelve Guido) (Lazio 2006 ya salió de Wayback; Roma 2022 queda pendiente por decisión de Guido: no hay informe del consolidado público). Si el sitio publicara el consolidado de Juventus, sus líneas 2022-2025
-   cambian de informe (los dos están bajados). (f) que el pipeline exija la línea al dar de alta un club (fos-pipeline): hoy 10 balances de las altas del lote 94
-   no tienen línea de auditoría. En Ligas ya está la
+   publicación, lo resuelve Guido) y Go Ahead Eagles 2025 (el informe de la Holding: el documento que tenemos no lo trae) (Lazio 2006 ya salió de Wayback; Roma 2022 queda pendiente por decisión de Guido: no hay informe del consolidado público). Si el sitio publicara el consolidado de Juventus, sus líneas 2022-2025
+   cambian de informe (los dos están bajados). (f) que el pipeline exija la línea al dar de alta un club (fos-pipeline). En Ligas ya está la
    tarjeta "Las cuentas de la liga": cada entidad que entra por el 295 aparece sola.
 295. BALANCES DE LAS ENTIDADES QUE ORGANIZAN LAS LIGAS (fos-ligas; aclaración de Guido, 2026-10-18). Hecho: Premier League 2024-25
    (Deloitte), LaLiga 2024-25 (LNFP, Netadia) y J.League 2025 (Grant Thornton Taiyo), en `Ligas/` y en `data/auditoria/_ligas.js`. Falta:

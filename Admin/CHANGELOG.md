@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 767 — Merge de finanzas 4: línea de auditoría de las 10 altas del lote 94 (2026-10-19)
+
+* 282 f: 9 altas con informe sin salvedades (Viking, Vålerenga, Aalesund, Sarpsborg 08, Molde, Luzern y St. Gallen 2025; Basel 2021;
+  Fredrikstad 2024). Go Ahead Eagles 2025 queda `falta_transcripcion`: el documento no trae el informe del auditor. 1004 balances con línea.
+
 ## Versión 766 — 298 w1: el ensayo dice qué documentos frenan por el perímetro (2026-10-19)
 
 Merge de pipeline 3, sin conflictos; P0 0 / P1 0.
