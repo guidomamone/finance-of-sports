@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 814 — 298 ag: el financiero respeta el signo impreso de una reversión (2026-10-19)
+
+* `verificar.mjs`: el financiero por rótulo usa el valor impreso con su signo (Sarpsborg 08 2023, reversión negativa dentro de los
+  costos). 721 de 722 documentos iguales. Sale el ajuste `resultado-final` de Sarpsborg 2023; su año publicado quedó mal y espera corrección.
+
 ## Versión 813 — 308: bonos convertibles y factoring en la skill; herramienta para unificar carpetas (2026-10-19)
 
 * `club-data-mapping` (referencia de formato simplificado): bonos convertibles y factoring en la deuda financiera (ok de Guido).

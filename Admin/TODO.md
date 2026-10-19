@@ -31,7 +31,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
-* 298: mejoras de script de Estonia y Bélgica (ad, ae y af, de Bélgica; ag, el signo del financiero de Sarpsborg 2023; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
+* 298: mejoras de script de Estonia y Bélgica (ad, ae y af, de Bélgica; ag hecha, falta corregir el Sarpsborg 2023 publicado (tu ok); la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
@@ -249,9 +249,9 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    `Naam : VOETBALCLUB LOMMEL SK` en cada `jaarrekening-AAAA-06-30-individual.md`. ae) una Brutomarge negativa sin Omzet (Lierse SK
    2019-2021, Patro Eisden 2021-2023) frena con "ninguna fila de ingresos con categoría aceptable". af) listas de las ligas amateur belgas
    de esos años para el estadio (Lokeren-Temse 2022, Patro Eisden 2013-2015).
-   ag) Sarpsborg 08 2023 (L136-145 de `aarsregnskap-fotballforening-fli-2023.md`): ingresos y costos financieros sumados con el mismo
-   signo porque "Sum finanskostnader" trae una reversión negativa (−136.202): netInterest 2,63 M en vez de 8.446 (mismo defecto que la t#5,
-   disparador nuevo). Hoy lo tapa un ajuste `resultado-final`; con la mejora, sacarlo y comprobar que da 0,008446.
+   ag) hecha; queda corregir el año publicado de Sarpsborg 08 2023 (`data/no/sarpsborg08-no-data.js`): hoy netInterest 2,634615, tax
+   −21,607717 y officialPAT 0,000019 (el ajuste a mano entró mal); debe ser netInterest 0,008445, tax 0 sin la fila "Impuesto" y officialPAT
+   18,981564. Espera el ok de Guido.
    z2) Westerlo 2015: 18 meses por cambio de cierre (no es primer ejercicio), sigue frenado; regla a decidir con Guido. t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en
    ellos: Patro Eisden 2025 (ingresos +1.810 por el waarvan 76A, gastos +4.012 por el 631/4), Lommel SK 2025 (gastos +172, el 609) y Lommel SK
    2018 (−182 de financiero) cerraron por tolerancia con errores chicos: decidir con Guido si se corrigen (escalón: correr el NBB también
