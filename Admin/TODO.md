@@ -36,7 +36,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 287: los 25 casos de carpeta-doble, con el 278
 * 298: mejoras de script de Estonia y Bélgica (ab y ac, Sarpsborg 2023-2024; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
 * 308: los bonos convertibles en la skill
-* 302: el deflactor de EE.UU. desde la BEA, no FRED --> Pipeline 4
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
@@ -273,8 +272,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    con ajustes si el resultado sigue exacto). El detalle,
    con líneas y montos, en `Admin/Archive/sesion-onboarding-2026-10-18-5.md`. k) alta-club.mjs / cargar-lote.mjs escriben la liga del alta en null aunque
    `altas-revision.jsonl` traiga las ligas verificadas (las 17 altas de los lotes 89-90): que el alta las tome de la revisión.
-302. DEFLACTOR DE EE.UU. DESDE LA BEA (cierre de proyecto, 2026-10-18). FRED prohíbe el scraping y guardar copias: bajarlo directo de la BEA
-   (`tools/fetch-fx-reference.mjs --deflactores`).
 308. NOMBRAR EN LA SKILL club-data-mapping EL CRITERIO DE LOS BONOS CONVERTIBLES (con ok de Guido: es una skill). Ya está en
    CONVENCIONES-DATOS; la skill tiene que decirlo donde habla de deuda.
 310. CAJA Y DEUDA DE UN AÑO SIN VECINO (pedido de Guido, 2026-10-18; cierre de pipeline). Hoy solo la caja belga sale del código 54/58

@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 800 — 302: el deflactor de EE.UU. sale de la BEA (2026-10-19)
+
+* `fetch-fx-reference.mjs` baja el deflactor del PBI de EE.UU. de la BEA (NipaDataA.txt, serie A191RD), sin clave, en vez de FRED; los 31
+  valores dan iguales.
+
 ## Versión 799 — Reino Unido: 6 transcripciones más; fin de los subagentes (2026-10-19)
 
 * Red Bull Racing 2020, Chelsea 2019-21 y Leeds 2018-21, con 0 P1 / 0 P2 de fidelidad. Guido decide no transcribir más con subagentes:

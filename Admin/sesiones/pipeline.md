@@ -460,3 +460,5 @@ Otros `--json` con process.exit (paginas-con-numeros, companies-house-fetch, per
 `fuente`; EUR (Eurostat) sin cambios. Como cambió `data/`, el commit pidió subir ASSET_V (1377 → 1378 en `index.html`: constante y 31 `?v=`) y
 regenerar las páginas de fuentes (`node tools/generate-fuentes-page.js`: 318 archivos, solo el `?v=`). Si main también subió ASSET_V, queda
 un choque trivial en `index.html` y en `fuentes/`: se resuelve regenerando. Para borrar el 302 del TODO.
+
+## Después del merge del 302 (2026-10-19)
