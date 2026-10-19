@@ -405,3 +405,9 @@ _note (cargar.mjs):_
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2012.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
+
+## Fotballinvest AS 2008-2011 (Pantallas 3, 2026-10-19)
+
+No se carga. El club del sitio es el FLI (Fredrikstad Fotballklubb, decisión de Guido, to-do 284), no el Fotballinvest AS; para 2008-2011 solo
+existe el AS, y mezclar las dos entidades en una misma serie cambiaría el perímetro a mitad de camino. Los PDF y los `.md` del AS quedan
+como fuente (no se borran). Guido, 2026-10-19: "resolvé AS 2010".
