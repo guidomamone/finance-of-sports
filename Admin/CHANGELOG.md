@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 753 — Merge de pipeline 2: las altas ya no se revierten (2026-10-18)
+
+Sin conflictos; P0 0 / P1 0.
+
+- To-do 298 x: `tools/generadores.mjs` (nuevo), una sola lista de generadores para `cargar.mjs` y `alta-club.mjs`; el alta no corría
+  faltantes-liga ni estimar y toda alta nueva se revertía por 2 P1. `queFalla()`: el aviso dice qué chequeo falló. Medido con FC Volendam
+  2024-25 (escrita con P0 0 / P1 0 y deshecha).
+
 ## Versión 752 — Merge de pipeline 2: la liga de un año nuevo (2026-10-18)
 
 Sin conflictos; P0 0 / P1 0; medir-cargar de los 815 documentos idéntico.
