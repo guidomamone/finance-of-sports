@@ -22,6 +22,7 @@ const CURRENCY_META = {
   PTE: { scale: 1000, unitSuffix: 'mil M', euroFijo: 200.482 },   // Portugal (escudo, hasta 2001)
   RUB: { scale: 1, unitSuffix: 'M' }, // Rusia
   NOK: { scale: 1, unitSuffix: 'M' },
+  CHF: { scale: 1, unitSuffix: 'M' },
 };
 
 // Fallback para un código ISO sin entrada propia: nunca rompe ni muestra la unidad equivocada.
@@ -188,6 +189,7 @@ const FX_CLOSE = {
   'EUR@2007-07-31': { fx: 0.729554, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2007-07-31' },
   'EUR@2003-07-31': { fx: 0.883548, source: 'market_close', label: 'Tipo de referencia del Banco Central Europeo al 2003-07-31' },
   'NOK@2025-12-31': { fx: 10.0791, source: 'market_close', label: 'Tipo medio de referencia de Norges Bank al 2025-12-31' },
+  'CHF@2021-12-31': { fx: 0.9146, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10), última rueda hábil antes del cierre (2021-12-30, 2021-12-31 no es día hábil)' },
 };
 
 // fxMetaFor(meta): el tipo de cambio de un ejercicio (o de un overlay) como {fx, source, label, ref}. Es el ÚNICO lugar que resuelve
@@ -226,6 +228,7 @@ const FX_PLAUSIBLE_RANGE = {
                           // por ~7,46: nunca se aleja mucho de 6-8 DKK por USD.
   RUB: [20, 140], // Rusia
   NOK: [4.5, 13],
+  CHF: [0.65, 1.95],
 };
 
 // checkFxSanity(): avisa por consola (warn, no error) si algún fx cae fuera del rango plausible de su moneda. Una moneda sin rango

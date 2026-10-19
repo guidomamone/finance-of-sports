@@ -42,3 +42,5 @@ tienen igual una Bilanz + Erfolgsrechuung resumida ahí (menos detallada que el 
 completo, pero real y auditada).
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2021 desde `Clubes/Suiza/Basel/geschaeftsbericht-unternehmen-2021.pdf` (sourceId `basel-ch-geschaeftsbericht-unternehmen-2021`).

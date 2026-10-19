@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-unternehmen-2021.pdf",
- "generado": "2026-10-19T01:04:32.361Z",
+ "generado": "2026-10-19T01:15:31.602Z",
  "frena": [
   {
    "etapa": "club",
@@ -868,10 +868,9 @@
   "label": "Noon buying rate de Nueva York (Reserva Federal, H.10), última rueda hábil antes del cierre (2021-12-30, 2021-12-31 no es día hábil)"
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de ch 2021 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "ch-superleague",
+  "fuente": "roster cacheado de \"2021–22 Swiss Super League\" (tools/club-league-reference/ch.json), coincidencia exacta \"Basel\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -910,9 +909,9 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de ch 2021 cacheada",
-   "estado": "pendiente"
+   "valor": "ch-superleague",
+   "fuente": "roster cacheado de \"2021–22 Swiss Super League\" (tools/club-league-reference/ch.json), coincidencia exacta \"Basel\"",
+   "estado": "ok"
   }
  },
  "resumen": {
