@@ -402,6 +402,10 @@
 - Dispersión del log ingreso dentro de la liga-año (mediana por país), que explica por qué la mediana de la liga rinde distinto: Portugal
   1,24, Grecia 1,12, Países Bajos 1,10, Dinamarca 0,94, Estonia 0,84, Bélgica 0,82, Rusia 0,82, Italia 0,59, Argentina 0,58, Brasil 0,58,
   Reino Unido 0,45, Chile 0,29, España 0,29, Japón 0,19.
+- `tools/estimar.mjs --medir --detalle` (y `--detalle-clubes`, que suma una línea por club-año): a pedido de Guido, la opción que da el error
+  por país, por liga y por división, el sesgo con signo y la dispersión, en las dos validaciones; solo lectura, sin cambiar el modelo, y
+  `--medir` sin la opción da la misma salida byte a byte (con y sin `--sin-posicion`). Reproduce al dígito los números de arriba, que se
+  habían sacado con una copia de la tool en el scratchpad. Commit e5e5b77a3a.
 
 ### Qué queda (para TODO)
 
@@ -419,9 +423,5 @@
   4. El texto del 50 % en pantalla sigue siendo cierto en total (50 % mediano, 24 % de los clubes a ±25 %), pero oculta que por país va de
      33 % (Italia, Chile, Bélgica) a 97 % (Países Bajos). Una frase "entre un tercio y el doble, según la liga" diría la verdad; no se cambió.
   5. La variable "partidos contra clubes con finanzas" no vale el esfuerzo (corregir por k: 51 % contra 50 %).
-  7. Mejora de script (no implementada): que `node tools/estimar.mjs --medir` tenga una opción `--detalle` con el error por liga, por país
-     y por división, el sesgo con signo por país y la dispersión de cada liga-año. Hoy `--medir` imprime solo los totales y `validar()`
-     guarda los errores pero no los devuelve por fila, así que esta medición se hizo con una copia de la tool. Haría falta que `validar()`
-     conserve (id, liga, país, división, año, error, error de la base) por fila y que `--medir` los agrupe.
   6. Volver a medir cuando Estonia llegue a otras ligas o cuando entren más clubes de Noruega, Suiza y Países Bajos (hoy un club-año por
      club): con 8 club-años por país el cuadro de arriba se completa.
