@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2024-2025.pdf",
  "md": "Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2024-2025.md",
- "generado": "2026-10-19T00:13:16.629Z",
- "estado": "cola",
+ "generado": "2026-10-19T02:23:49.534Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -33,14 +33,7 @@
    "fecha": "2026-10-18"
   }
  ],
- "cola": [
-  "32686b8",
-  "d1a65ef",
-  "ca8173e",
-  "56bf710",
-  "e9d27c9",
-  "ffb46f5"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -73,7 +66,9 @@
   "la nota de \"Overige bedrijfsopbrengsten (9.2)\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la nota de \"Inkoopwaarde van de omzet (9.3)\" no suma el renglón (2.428486 contra 2.368487, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Afschrijvingen vergoedingssommen (9.7)\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en FC-Groningen-Jaarverslag-2024-2025.pdf",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Personeelskosten (9.4)\"): aceptar, en FC-Groningen-Jaarverslag-2024-2025.pdf",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Inkoopwaarde van de omzet (9.3)\"): corregir no, en FC-Groningen-Jaarverslag-2024-2025.pdf"
  ],
  "reintentar": [
   {
