@@ -208,6 +208,11 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
    parciales, pero corresponde cargarlos").
 9. **298 g2**: partir en la cola cualquier fila según su nota (otros países, el 66A), solo si aparece otra fila mixta sin códigos.
 10. Después, del plan: 310, 290, 232, 279, 286, 287, 301, 302, 306, 307.
+11. **298 e3 (letra nueva, de la principal):** el ensayo de `pipeline.mjs` sobre `Admin/lotes/sin-tablas-298e.txt` estimó ~US$ 7,26 y la
+   corrida real va camino a ~US$ 36 (US$ 8,91 a los 59 de 238 documentos). Ver por qué el ensayo de resolver-inventario subestima cinco veces
+   un rehacer de `sin-tablas` (¿cuenta solo las páginas dudosas de Claude y no el costo de Mistral por página, o la validación de todas las
+   páginas de un `.md` nuevo?) y que el ensayo dé el número real antes de la próxima corrida grande. Medir contra el registro de costos de
+   esta corrida (tools/gasto.mjs).
 
 **Decisiones de Guido abiertas:**
 - **298 t2:** Patro Eisden 2025 (ingresos 1.810 y gastos 4.012 de más), Lommel SK 2025 (gastos 172 de más) y Lommel SK 2018 (falta un financiero
