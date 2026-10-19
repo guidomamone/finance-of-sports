@@ -248,3 +248,5 @@
   documentos del club, se transcribieron con Mistral y se cotejaron con Tesseract. Los tres son sin salvedades, con un richiamo
   d'informativa fiscal (la transacción con el fisco de 2005 y el IRAP sobre plusvalías). FALTA EN EL PDF sigue en 56.
 - La (g) del 282 (el extractor en estonio) se le pasó a pipeline 2, a pedido de Guido.
+
+## Después del tercer merge de la sesión 3 (2026-10-18)

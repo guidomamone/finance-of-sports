@@ -21,6 +21,7 @@ Sin conflictos; P0 0 / P1 0.
 
 - To-do 282 g: `tools/auditoria.mjs --extractos` suma 7 frases estonias ("vandeaudiitor", "meie arvates"…): 43 de 66 `.md` estonios con
   extracto (antes 0), los 43 con línea "sin_salvedades"; los demás países no cambian.
+- To-do 282, Lazio 2011-2013 (merge de finanzas): los informes de PwC del consolidado, sin salvedades, antes `sin_informe`.
 - Decisión de Guido: el lote guarda las listas belgas de ascenso y amateur aunque eso les arme faltantes y estimados en Ligas.
 
 ## Versión 754 — Estadio y sponsor de los años belgas (2026-10-18)

@@ -231,8 +231,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    "alcance" de una revisión limitada, procedimientos acordados, propósito especial o cuentas del grupo). Falta: (a) 50 informes del auditor
    que no están en ningún PDF nuestro (`node tools/auditoria.mjs --pendientes`, "FALTA EN EL PDF"): casi todos sin canal público, van al 311;
    quedan para sourcing Hamburgo 2024 (ficha de la KGaA HRB 191603 o de la AG vieja HRB 47576 en el Unternehmensregister; captcha por
-   publicación, lo resuelve Guido), Lazio 2006 y 2011-2013 (figuran `sin_informe`, pero el del consolidado está en la API del club y en
-   Wayback) y Roma 2022 (el link de "consolidato" baja el individual). Si el sitio publicara el consolidado de Juventus, sus líneas 2022-2025
+   publicación, lo resuelve Guido), Lazio 2006 (figura `falta_transcripcion`; hay una captura truncada en Wayback) y Roma 2022 (el link de "consolidato" baja el individual). Si el sitio publicara el consolidado de Juventus, sus líneas 2022-2025
    cambian de informe (los dos están bajados). (f) que el pipeline exija la línea al dar de alta un club (fos-pipeline). En Ligas ya está la
    tarjeta "Las cuentas de la liga": cada entidad que entra por el 295 aparece sola.
 295. BALANCES DE LAS ENTIDADES QUE ORGANIZAN LAS LIGAS (fos-ligas; aclaración de Guido, 2026-10-18). Hecho: Premier League 2024-25
