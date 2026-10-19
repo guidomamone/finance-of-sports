@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 820 — Hamburgo 2024 sin informe del auditor; mejoras del lote 97 al TODO (2026-10-19)
+
+* 282: Hamburgo 2024 se publica como `sin_informe` (decisión de Guido). Fredrikstad: el Fotballinvest AS 2008-2011 no se carga (el club es el FLI).
+* To-do 323: seis mejoras de script vistas en el lote 97 del Reino Unido, para Pipeline 4.
+
 ## Versión 819 — Fredrikstad 2012 (2026-10-19)
 
 * Fredrikstad 2012, del FLI: ingresos 23,06 M y gastos 23,55 M, como lo impreso; coincide con la columna del año anterior de 2013.
