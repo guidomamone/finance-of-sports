@@ -576,16 +576,15 @@ const sarpsborg08noFiscalYearMeta = {
     reportType:'official_balance_sheet',
     gestionId:null,
     profitOnPlayerSales:0, assetSales:0,
-    netInterest:2.634615, tax:-21.607717,
+    netInterest:0.008445, tax:0,
     extraRows: [
       {label:'Annen renteinntekt', value:0.180908},
       {label:'Annen finansinntekt', value:1.140622},
       {label:'Annen rentekostnad', value:1.449287},
       {label:'Annen finanskostnad', value:-0.136202},
-      {label:'Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)', value:-21.607717},
     ],
     grossDebt:null, cash:null,
-    officialTotalRevenue:146.545052, officialTotalExpenses:127.571931, officialPAT:0.000019,
+    officialTotalRevenue:146.545052, officialTotalExpenses:127.571931, officialPAT:18.981564,
   },
 };
 const sarpsborg08noPresupuestoOverlayByYear = {};

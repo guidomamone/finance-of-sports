@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 815 — Sarpsborg 08 2023 corregido en el sitio (2026-10-19)
+
+* El año publicado tenía resultado 0,000019 M (un ajuste a mano mal cargado): ahora netInterest 0,008445, sin impuesto y resultado
+  18,98 M, como el impreso (ok de Guido).
+
 ## Versión 814 — 298 ag: el financiero respeta el signo impreso de una reversión (2026-10-19)
 
 * `verificar.mjs`: el financiero por rótulo usa el valor impreso con su signo (Sarpsborg 08 2023, reversión negativa dentro de los
