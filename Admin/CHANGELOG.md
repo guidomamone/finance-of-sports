@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 770 — Merge de onboarding 2: 7 altas neerlandesas del lote 93 (2026-10-19)
+
+* Almere City, Excelsior, Fortuna Sittard, Heracles, NAC, NEC y Sparta Rotterdam, por el pipeline. Cola de Países Bajos: 87 respuestas.
+* Excelsior con color de marca; FC Emmen y VVV-Venlo con el tipo de informe del alta.
+* 11 altas de la Eerste Divisie frenan por el sponsor (Wikipedia no tiene tabla de camisetas): Guido decide que ahí alcanza el estadio.
+
 ## Versión 769 — Merge de finanzas 4: Go Ahead Eagles sin canal y gestiones sin caso (2026-10-19)
 
 * 282 a: el informe del auditor de Go Ahead Eagles 2025 no tiene canal público (el KvK vende las cuentas); la línea dice qué se buscó.
