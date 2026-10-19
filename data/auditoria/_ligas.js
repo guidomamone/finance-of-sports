@@ -392,5 +392,65 @@ window.LIGA_AUDITORIA = {
     "linea": 31
    }
   }
+ },
+ "br-paulistaA1": {
+  "2024": {
+   "entidad": {
+    "nombre": "FPF (Paulista)",
+    "legal": "Federação Paulista de Futebol"
+   },
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM Brasil Auditores Independentes Ltda."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "alcance": "federacion",
+   "fuente": {
+    "md": "Ligas/Brasil/FPF-SP/fpf-sp-demonstracoes-2024.md",
+    "linea": 765
+   }
+  }
+ },
+ "br-paulistaA2": {
+  "2024": {
+   "entidad": {
+    "nombre": "FPF (Paulista)",
+    "legal": "Federação Paulista de Futebol"
+   },
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM Brasil Auditores Independentes Ltda."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "alcance": "federacion",
+   "fuente": {
+    "md": "Ligas/Brasil/FPF-SP/fpf-sp-demonstracoes-2024.md",
+    "linea": 765
+   }
+  }
+ },
+ "br-paulistaA3": {
+  "2024": {
+   "entidad": {
+    "nombre": "FPF (Paulista)",
+    "legal": "Federação Paulista de Futebol"
+   },
+   "auditor": {
+    "nombre": "RSM",
+    "tipo": "firma",
+    "legal": "RSM Brasil Auditores Independentes Ltda."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "alcance": "federacion",
+   "fuente": {
+    "md": "Ligas/Brasil/FPF-SP/fpf-sp-demonstracoes-2024.md",
+    "linea": 765
+   }
+  }
  }
 };
