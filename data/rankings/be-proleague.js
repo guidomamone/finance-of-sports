@@ -52,6 +52,15 @@ window.RANKINGS["be-proleague"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",8.341],["Otros ingresos",2.398]] },
     ],
   },
+  2022: {
+    leagueSize: null,
+    wiki: {"t":"2021–22 Belgian First Division A","lang":"en","at":"2026-10-19","n":18},
+    clubs: [
+      { id:"beerschot-be", revenue:9.592, reportType:"official_balance_sheet",
+        sourceId:"beerschot-be-jaarrekening-2022-06-30-individual",
+        mix:[["Comercial / Sponsors",3.27],["Estadio",2.295],["Televisión",1.158],["Otros ingresos",2.869]] },
+    ],
+  },
   2021: {
     leagueSize: null,
     wiki: {"t":"2020–21 Belgian First Division A","lang":"en","at":"2026-10-19","n":18},

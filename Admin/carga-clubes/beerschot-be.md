@@ -119,6 +119,58 @@ Duda: Roef: el día en que asumió la presidencia no figura en ninguna fuente; s
 Duda: Aviso: la gestión pasó de Roef a Vrancken el 2019-07-30, un mes después del cierre 2019-06-30; el balance 2019 se aprobó el 14-10-2019 (jaarrekening-2019-06-30-individual.md:29), ya con Vrancken. El cierre pertenece a Roef pero lo aprobó la gestión de Vrancken.
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Bélgica/Beerschot/jaarrekening-2022-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/Beerschot/jaarrekening-2022-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Ticketing & abonnementen | pág. 25, precedente |
+| 2 | Sponsoring | pág. 25, precedente |
+| 3 | TV rechten | pág. 25, precedente |
+| 4 | Commercieel | pág. 25, precedente |
+| 5 | Andere bedrijfsopbrengsten | pág. 9, precedente |
+| 6 | Terugneming van afschrijvingen en van waardeverminderingen op immateriële en materiële vaste activa | pág. 28, Jev 1 |
+| 7 | Meerwaarden bij de realisatie van immateriële en materiële vaste activa | pág. 28, Jev 0.97 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Aankopen | pág. 9, precedente |
+| 2 | Voorraad: afname (toename) (+)/(-) | pág. 9, precedente |
+| 3 | Diensten en diverse goederen | pág. 9, precedente |
+| 4 | Bezoldigingen en rechtstreekse sociale voordelen | pág. 25, precedente |
+| 5 | Werkgeversbijdragen voor sociale verzekeringen | pág. 25, precedente |
+| 6 | Werkgeverspremies voor bovenwettelijke verzekeringen | pág. 25, Claude 0.85 |
+| 7 | Andere personeelskosten | pág. 25, precedente |
+| 8 | Geboekt | pág. 26, ? 0.75 |
+| 9 | Geboekt | pág. 26, ? 0.75 |
+| 10 | Bedrijfsbelastingen en -taksen | pág. 26, precedente |
+| 11 | Andere | pág. 26, precedente |
+| 12 | Minderwaarden bij de realisatie van immateriële en materiële vaste activa | pág. 28, Jev 0.92 |
+| 13 | Andere niet-recurrente bedrijfskosten | pág. 28, Jev 0.92 |
+| 14 | Afschrijvingen immateriële vaste activa (spelers) | pág. 9, precedente |
+| 15 | Afschrijvingen goodwill | pág. 9, precedente |
+| 16 | Afschrijvingen materiële vaste activa | pág. 9, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): be-proleague, verificado contra roster cacheado de "2021–22 Belgian First Division A" (tools/club-league-reference/be.json), coincidencia exacta "Beerschot".
+```
+
 ## 2021
 
 ### Ingresos
@@ -205,7 +257,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-19): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2025): Comercial / Sponsors, Estadio, Televisión
+tools/dentro-de-otro.mjs (2026-10-19): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022, 2025): Comercial / Sponsors, Estadio, Televisión
 ```
 
 ### Liga
@@ -238,4 +290,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Beerschot/jaarrekening-2021-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### beerschot-be-jaarrekening-2022-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Beerschot/jaarrekening-2022-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
