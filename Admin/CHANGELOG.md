@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 810 — Diez to-dos nuevos: contenido para redes y herramientas a probar (2026-10-19)
+
+* 313-322: contenido para X e Instagram y la lista de herramientas a probar (Stirling PDF, Crawl4AI, Maxun, Supabase de lectura, Open
+  Notebook, I have ADHD, Browser Use, Higgsfield, Zapier, OmniRoute). Los escribió la sesión "Herramientas y plataformas a explorar"; sin código.
+
 ## Versión 809 — 298 ac: la localización se rehace si cambió el perímetro (2026-10-19)
 
 * `localizar.mjs` anota el perímetro usado y rehace la localización cuando el ajuste cambió. Sarpsborg 08 2023 ya lee el individual
