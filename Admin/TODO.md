@@ -38,14 +38,14 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 238: llevar a 0 los documentos que quedaron a mitad de camino --> Onboarding 3
 * 261: Reino Unido: carga del fútbol inglés (lote 97, corriendo; el 98 y el alta de Celtic, lote 99, después); la cola de transcripción por Mistral --> Finanzas 5
 * 165 c: altas de los países nuevos que faltan --> Onboarding 3
-* 195: gestiones (presidentes) sin fuente confirmada (Fortaleza 2025: ¿CEO o presidente del consejo? lo decidís vos)
-* 284: Fredrikstad 2012 (falta un sponsor con fuente) --> Onboarding 3
+* 195: gestiones (presidentes) sin fuente confirmada (Fortaleza 2025: ¿CEO o presidente del consejo? lo decidís vos) --> Pantallas 3
+* 284: Fredrikstad 2012 (falta un sponsor con fuente) --> Pantallas 3
 * 283: Vålerenga y Aalesund: ya transcriptos; falta que decidas cómo se muestra la suma del AS y el FLI sin contar dos veces la transferencia
-* 273: nombrar la compuerta de estadio y sponsor en la skill de onboarding (con tu ok)
+* 273: nombrar la compuerta de estadio y sponsor en la skill de onboarding (con tu ok) --> Pantallas 3
 
 **E. Pantallas**
-* 282: quién audita, lo que queda (Hamburgo 2024 con tu captcha; la compuerta del pipeline)
-* 309: tamaño de liga desde la lista de Wikipedia (a decidir con Guido)
+* 282: quién audita, lo que queda (Hamburgo 2024 con tu captcha) --> Pantallas 3; la compuerta del pipeline --> Pipeline 4
+* 309: tamaño de liga desde la lista de Wikipedia (a decidir con vos) --> Pantallas 3
 
 **E2. Distribución (depende de 246)**
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
