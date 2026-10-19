@@ -41,4 +41,13 @@ window.RANKINGS["ch-superleague"] = {
         mix:[["Comercial / Sponsors",5.914],["Estadio",8.691],["Televisión",2.598],["Premios por competencias",0.907],["Venta de Jugadores",4.703],["Otras secciones deportivas",1.944],["Otros ingresos",1.891]] },
     ],
   },
+  2018: {
+    leagueSize: 10,
+    wiki: {"t":"2017–18 Swiss Super League","lang":"en","at":"2026-10-19","n":10},
+    clubs: [
+      { id:"luzern-ch", revenue:25.975, reportType:"official_balance_sheet",
+        sourceId:"luzern-ch-geschaeftsbericht-2017-18",
+        mix:[["Comercial / Sponsors",6.038],["Estadio",9.735],["Televisión",2.653],["Premios por competencias",0.977],["Venta de Jugadores",4.046],["Otras secciones deportivas",1.574],["Otros ingresos",0.951]] },
+    ],
+  },
 };

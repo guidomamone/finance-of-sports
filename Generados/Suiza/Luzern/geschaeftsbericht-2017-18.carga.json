@@ -1,9 +1,9 @@
 {
  "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2017-18.pdf",
- "generado": "2026-10-19T16:19:17.440Z",
+ "generado": "2026-10-19T16:32:49.936Z",
  "frena": [],
  "avisos": [
-  "perímetro heredado del año cargado más cercano (2025, consolidado); el documento trae el consolidado. Años cargados: 2025 consolidado",
+  "perímetro heredado del año cargado más cercano (2019, consolidado); el documento trae el consolidado. Años cargados: 2019 consolidado, 2022 consolidado, 2025 consolidado",
   "gastos: ningún total impreso igual a la suma de las líneas (-25.372195); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2018 (cierre 2018-06-30); pregunta en la cola (no frena)"
  ],
@@ -633,7 +633,7 @@
     "_pag": 39,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_income)"
    }
   ],
   "fiscalYearMeta": {
@@ -1643,10 +1643,8 @@
    "cat": "other_expenses",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_income)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "expense",
    "amountNative": -0.056321
   },
@@ -1721,10 +1719,9 @@
   "label": "Noon buying rate de Nueva York (Reserva Federal, H.10), última rueda hábil antes del cierre (2018-06-29, 2018-06-30 no es día hábil)"
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de ch 2018 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "ch-superleague",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1763,9 +1760,9 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de ch 2018 cacheada",
-   "estado": "pendiente"
+   "valor": "ch-superleague",
+   "fuente": "data/club-leagues/ch.js ya tiene la fila",
+   "estado": "ok"
   }
  },
  "resumen": {
