@@ -252,8 +252,8 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 292. TRANSCRIPCIONES POR SUBAGENTES: CARGAR (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia). Validación (326 listas) y Mistral
    hechos; Estonia y Bélgica dados de alta (lotes 89 y 90, 17 clubes). Falta: los lotes de carga por país que siguen (91-92 en curso,
    después Suiza, Colombia, Beşiktaş); Países Bajos (lote 93): 7 altas en el sitio, 11 de la Eerste Divisie frenadas por la
-   compuerta de sponsor (decisión de Guido: ahí alcanza el estadio; el cambio lo hace Pipeline 3, después se vuelve a correr el lote) y FC
-   Utrecht, que no aparece en la tabla de camisetas de la Eredivisie 2024-25; OH Leuven 2022 y Llaneros 2022, que siguen sin tablas (ver 298 e); decidir subagentes
+   compuerta de sponsor (decisión de Guido: ahí alcanza el estadio; el cambio lo hace Pipeline 3, después se vuelve a correr el lote); FC
+   Utrecht 2024-25 ya tiene estadio y sponsor a mano (la tabla de kits no lo leía); OH Leuven 2022 y Llaneros 2022, que siguen sin tablas (ver 298 e); decidir subagentes
    o Mistral para los 319 `.md` viejos sin tablas de `Admin/lotes/sin-tablas-6paises.txt`, después de medir el 298 e.
 298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2 e y3, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
    vez; el detalle con casos, en `Admin/Archive/sesion-onboarding-2026-10-18-2.md`). a) CIERRE FALSO en verificar.mjs: compara en valor
