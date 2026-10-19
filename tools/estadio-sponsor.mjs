@@ -46,7 +46,8 @@ function cargar() {
   const s = { window: {} }; s.window.window = s.window; const ctx = vm.createContext(s); vm.runInContext(readFileSync(resolve(ROOT, 'data', 'clubs.js'), 'utf8'), ctx);
   const cache = {}; for (const f of readdirSync(REF).filter((f) => /^[a-z]{2}\.json$/.test(f))) cache[f.slice(0, 2)] = JSON.parse(readFileSync(resolve(REF, f), 'utf8'));
   const alias = JSON.parse(readFileSync(resolve(REF, 'alias.json'), 'utf8'));
-  return { CI: ci.window.CLUB_INDEX, CL: cl.window.CLUB_LEAGUE_BY_YEAR, CLUBS: vm.runInContext('clubs', ctx), cache, alias };
+  const lg = vm.createContext({ window: {} }); vm.runInContext(readFileSync(resolve(ROOT, 'data', 'leagues.js'), 'utf8'), lg);
+  return { CI: ci.window.CLUB_INDEX, CL: cl.window.CLUB_LEAGUE_BY_YEAR, CLUBS: vm.runInContext('clubs', ctx), LEAGUES: vm.runInContext('LEAGUES', lg), cache, alias };
 }
 
 const dormir = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -380,7 +381,10 @@ ${orden}
 }
 
 async function main() {
-  const { CI, CL, CLUBS, cache, alias } = cargar();
+  const { CI, CL, CLUBS, LEAGUES, cache, alias } = cargar();
+  // LIGA AMATEUR (decisión de Guido, 2026-10-18): un año en una liga amateur (la del catálogo nombra "amateur": las tres divisiones
+  // amateur belgas) pasa la compuerta sin sponsor, con el estadio cargado; en esas ligas no hay fuente que diga el sponsor por temporada
+  const amateur = (liga) => !!liga && /amateur/i.test(`${LEAGUES[liga]?.name || ''} ${LEAGUES[liga]?.full || ''}`);
   const args = process.argv; const detalle = args.includes('--detalle'); const escribir = args.includes('--escribir');
   const arg = (k) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : null; };
   const soloLiga = arg('--liga'), soloClub = arg('--club'), soloAnio = arg('--anio');
@@ -562,7 +566,7 @@ async function main() {
     }
     const tiene = (k) => d && d[k] != null && d[k] !== '';
     if (tiene('estadio')) { n.est++; L.est++; } if (tiene('capacidad')) n.cap++; if (tiene('sponsor')) { n.sp++; L.sp++; } if (tiene('marca')) n.kit++;
-    if (!tiene('estadio') || !tiene('sponsor')) faltan.push(`${e.id} ${e.y}${e.liga ? ` (${e.liga}${e.s ? ' ' + e.s : ', sin lista'})` : ' (sin liga en club-leagues)'}: falta ${[!tiene('estadio') && 'estadio', !tiene('sponsor') && 'sponsor'].filter(Boolean).join(' y ')}`);
+    if (!tiene('estadio') || (!tiene('sponsor') && !amateur(e.liga))) faltan.push(`${e.id} ${e.y}${e.liga ? ` (${e.liga}${e.s ? ' ' + e.s : ', sin lista'})` : ' (sin liga en club-leagues)'}: falta ${[!tiene('estadio') && 'estadio', !tiene('sponsor') && 'sponsor'].filter(Boolean).join(' y ')}`);
     if (d) { const limpio = Object.fromEntries(Object.entries(d).filter(([, v]) => v != null && v !== '')); if (Object.keys(limpio).length > 1) ((salida[e.iso] ??= {})[e.id] ??= {})[e.y] = limpio; }
     if (detalle) console.log(`${e.id} ${e.y} (${e.liga || '-'} ${e.s || '-'}): estadio ${d?.estadio || '-'} | cap ${d?.capacidad || '-'} | sponsor ${d?.sponsor || '-'} | marca ${d?.marca || '-'}`);
   }
