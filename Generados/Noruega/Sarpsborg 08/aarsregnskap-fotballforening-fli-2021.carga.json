@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2021.pdf",
- "generado": "2026-10-19T12:47:55.452Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Kostn.kjøp/salg spillere/utd.midler\" -> other_expenses 0.55"
-  }
- ],
+ "generado": "2026-10-19T12:52:11.273Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del documento, 2026-10-19: perimetro-senales.mjs: el ejercicio 2021-12-31 se publicó solo individual (el club es consolidado); 2 documento(s) con los dos estados votan consolidado; 8 ejercicio(s) con un solo perímetro (individual); 18 documento(s) mirados)",
   "gestión: ningún presidente confirmado cubre 2021 (cierre 2021-12-31); pregunta en la cola (no frena)"
@@ -205,9 +200,9 @@
     "amountNative": -3.618602,
     "disclosureLevel": "aggregated",
     "_pag": 13,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Lønn",
@@ -687,11 +682,11 @@
    "origen": "verificacion (nota que desglosa \"Salgskostnader\")",
    "signoFijo": 3.618602,
    "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (revisado en el .md): sin categoría propia, como Kostnader Videresalg Invest",
    "destino": "expense",
    "amountNative": -3.618602
   },
@@ -1018,8 +1013,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 14,
   "lineasGasto": 17,
   "metaFilas": 4,

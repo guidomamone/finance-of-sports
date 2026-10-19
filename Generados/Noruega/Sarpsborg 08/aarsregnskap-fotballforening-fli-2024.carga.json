@@ -1,18 +1,18 @@
 {
  "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2024.pdf",
- "generado": "2026-10-19T12:47:55.877Z",
+ "generado": "2026-10-19T12:52:11.793Z",
  "frena": [
   {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Arrangementsinntekter\" -> matchday_competition 0.6"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios en 2024: la pregunta ya está en la cola por aarsregnskap-fotballforening-fli-2022.pdf (24c1e5e) y vale para este año"
-  },
-  {
    "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+   "motivo": "categorías en 0 que deberían tener número: Televisión, Estadio, Cuotas sociales. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+  },
+  {
+   "etapa": "tie-out-resultado",
+   "motivo": "resultado: ingresos 156.692434 + gastos -192.525743 + netInterest -2.664454 + tax -0.036976 = -38.534739 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" 29.281631)"
+  },
+  {
+   "etapa": "tie-out",
+   "motivo": "ingresos: las filas suman 156.692434 y ningún total impreso del documento coincide (y el resultado del ejercicio tampoco cerró)"
   }
  ],
  "avisos": [
@@ -25,16 +25,6 @@
   "cierre": "2024-12-31",
   "perimetro": "consolidado",
   "revenueLines": [
-   {
-    "rawLabel": "Arrangementsinntekter",
-    "normalizedCategory": "matchday_competition",
-    "amountNative": 67.81637,
-    "disclosureLevel": "aggregated",
-    "_pag": 24,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
-   },
    {
     "rawLabel": "Salg/utleie av spillere",
     "normalizedCategory": "player_sales",
@@ -138,33 +128,11 @@
    "assetSales": 0,
    "netInterest": -2.664454,
    "tax": -0.036976,
-   "extraRows": [
-    {
-     "label": "Annen renteinntekt",
-     "value": 0.351046
-    },
-    {
-     "label": "Annen finansinntekt",
-     "value": 0.679464
-    },
-    {
-     "label": "Annen rentekostnad",
-     "value": -1.326569
-    },
-    {
-     "label": "Annen finanskostnad",
-     "value": -2.368395
-    },
-    {
-     "label": "Skattekostnad på ordinært resultat",
-     "value": -0.036976
-    }
-   ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 224.508804,
+   "officialTotalRevenue": null,
    "officialTotalExpenses": 192.525743,
-   "officialPAT": 29.281631
+   "officialPAT": null
   },
   "source": {
    "id": "sarpsborg08-no-aarsregnskap-fotballforening-fli-2024",
@@ -204,14 +172,13 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Sum inntekter\" (escalón: la nota del subtotal))",
    "signoFijo": 67.81637,
-   "cat": "matchday_competition",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "no_es_rubro",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
-   "destino": "revenue",
-   "amountNative": 67.81637
+   "notaGuido": "Claude 2026-10-19 (revisado en el .md): Note 1 es del consolidado (126.553.593 contra 106.400.123 individual en 2022, L479/L1270); el individual abre cada ingreso",
+   "destino": "excluida"
   },
   {
    "label": "Salg/utleie av spillere",
@@ -412,6 +379,13 @@
   {
    "categoria": "Televisión",
    "lado": "ingreso"
+  },
+  {
+   "categoria": "Estadio",
+   "lado": "ingreso"
+  },
+  {
+   "categoria": "Cuotas sociales"
   }
  ],
  "signos": {
@@ -421,29 +395,16 @@
    "verificacion (nota que desglosa \"Lønnskostnad\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
-  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
  },
  "totales": {
-  "revSum": 224.508804,
+  "revSum": 156.692434,
   "expSum": -192.525743,
-  "officialTotalRevenue": 224.508804,
+  "officialTotalRevenue": null,
   "officialTotalExpenses": 192.525743,
-  "officialPAT": 29.281631,
+  "officialPAT": null,
   "verificacion": {
-   "pat": "impreso",
-   "ingresos": "impreso",
    "gastos": "impreso"
-  },
-  "patImpreso": {
-   "label": "resultado detectado por proponer-carga",
-   "pag": null,
-   "M": 29.281631,
-   "signos": "signos de la verificación; financiero/impuesto como su tabla"
-  },
-  "revImpreso": {
-   "label": "total de ingresos (verificado)",
-   "pag": null,
-   "M": 224.508804
   },
   "expImpreso": {
    "label": "total de gastos (verificado)",
@@ -501,9 +462,9 @@
  "resumen": {
   "carga": false,
   "motivos": 3,
-  "lineasIngreso": 3,
+  "lineasIngreso": 2,
   "lineasGasto": 7,
   "metaFilas": 5,
-  "excluidas": 0
+  "excluidas": 1
  }
 }

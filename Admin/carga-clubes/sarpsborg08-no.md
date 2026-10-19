@@ -314,6 +314,59 @@ Generados/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2016.categorias.
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+## 2015
+
+### Ingresos
+
+```text
+2015: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2015.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2015.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Medlemsinntekter | pág. 6, precedente |
+| 2 | Billettinntekter | pág. 6, precedente |
+| 3 | Cupoppgjør NFF | pág. 13, Jev 0.94 |
+| 4 | Grasrotandel | pág. 13, Claude 0.8 |
+| 5 | Gaver/bidrag | pág. 13, Jev 1 |
+| 6 | Andre inntekter | pág. 13, Jev 1 |
+| 7 | Kiosk salg | pág. 13, precedente |
+| 8 | Supporterutstyr | pág. 13, Jev 0.99 |
+| 9 | Andre inntekter | pág. 13, Jev 1 |
+| 10 | Mediainntekter | pág. 6, precedente |
+| 11 | Tilskudd | pág. 6, precedente |
+| 12 | Reklame og sponsorinntekter | pág. 6, precedente |
+| 13 | Salg/utleie spillere | pág. 6, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Trening, matriell, kurs | pág. 6, Claude 0.88 |
+| 2 | Reise og oppholdskostander bortekamper | pág. 6, precedente |
+| 3 | Salgskostnader | pág. 6, precedente |
+| 4 | Lønn | pág. 14, Jev 0.91 |
+| 5 | Arbeidsgiveravgift | pág. 14, precedente |
+| 6 | Pensjonskostnader | pág. 14, precedente |
+| 7 | Andre relaterte ytelser | pág. 14, Jev 0.99 |
+| 8 | Avskrivning på driftsmidler og immaterielle eiendeler | pág. 6, precedente |
+| 9 | Påmeldingsavgifter/gebyr | pág. 14, precedente |
+| 10 | Honorar medisinsk støtteapparat | pág. 14, precedente |
+| 11 | Agent/talentspeidere | pág. 14, Jev 0.99 |
+| 12 | Reisekostnader/kilometergodt. | pág. 14, Jev 0.97 |
+| 13 | Leiekostnader | pág. 14, Jev 0.97 |
+| 14 | Utdanningsmidler/fotballisenser | pág. 14, precedente |
+| 15 | Andre kostnader | pág. 14, Jev 1 |
+| 16 | Reklame og sponsorkostnader | pág. 6, precedente |
+| 17 | Admkost | pág. 6, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2014
 
 ### Ingresos
@@ -450,4 +503,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2019.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### sarpsborg08-no-aarsregnskap-fotballforening-fli-2015
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2015.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

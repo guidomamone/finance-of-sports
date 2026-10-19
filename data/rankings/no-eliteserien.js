@@ -66,6 +66,15 @@ window.RANKINGS["no-eliteserien"] = {
         mix:[["Cuotas Sociales",0.052],["Comercial / Sponsors",2.274],["Estadio",0.541],["Televisión",0.961],["Premios por competencias",0.084],["Venta de Jugadores",1.643],["Otros ingresos",0.99]] },
     ],
   },
+  2015: {
+    leagueSize: null,
+    wiki: {"t":"2015 Tippeligaen","lang":"en","at":"2026-09-30","n":16},
+    clubs: [
+      { id:"sarpsborg08-no", revenue:5.242, reportType:"official_balance_sheet",
+        sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2015",
+        mix:[["Cuotas Sociales",0.039],["Comercial / Sponsors",2.087],["Estadio",0.62],["Televisión",0.739],["Premios por competencias",0.144],["Venta de Jugadores",0.743],["Otros ingresos",0.87]] },
+    ],
+  },
   2014: {
     leagueSize: null,
     wiki: {"t":"2014 Eliteserien","lang":"en","at":"2026-10-19","n":16},

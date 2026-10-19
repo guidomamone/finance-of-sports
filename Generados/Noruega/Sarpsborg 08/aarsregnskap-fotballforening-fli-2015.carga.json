@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2015.pdf",
- "generado": "2026-10-19T12:47:54.803Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Påmeldingsavgifter/gebyr\" -> match_organisation_expense 0.55"
-  }
- ],
+ "generado": "2026-10-19T12:52:10.657Z",
+ "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del club, 2026-10-19: perimetro-senales.mjs: 2 documento(s) con los dos estados votan consolidado; 8 ejercicio(s) con un solo perímetro (individual); 18 documento(s) mirados)",
   "gestión: ningún presidente confirmado cubre 2015 (cierre 2015-12-31); pregunta en la cola (no frena)"
@@ -235,9 +230,9 @@
     "amountNative": -0.655335,
     "disclosureLevel": "aggregated",
     "_pag": 14,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Honorar medisinsk støtteapparat",
@@ -712,11 +707,11 @@
    "origen": "verificacion (nota que desglosa \"Andre kostnader\")",
    "signoFijo": 0.655335,
    "cat": "match_organisation_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (revisado en el .md): inscripciones y cuotas de competencia",
    "destino": "expense",
    "amountNative": -0.655335
   },
@@ -974,8 +969,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 13,
   "lineasGasto": 17,
   "metaFilas": 4,

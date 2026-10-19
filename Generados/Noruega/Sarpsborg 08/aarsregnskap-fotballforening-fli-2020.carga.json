@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2020.pdf",
- "generado": "2026-10-19T12:47:55.347Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Andre inntekter\" -> other_income 0"
-  }
- ],
+ "generado": "2026-10-19T12:52:11.119Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del documento, 2026-10-19: perimetro-senales.mjs: el ejercicio 2020-12-31 se publicó solo individual (el club es consolidado); 2 documento(s) con los dos estados votan consolidado; 8 ejercicio(s) con un solo perímetro (individual); 18 documento(s) mirados)",
   "gestión: ningún presidente confirmado cubre 2020 (cierre 2020-12-31); pregunta en la cola (no frena)"
@@ -93,9 +88,9 @@
     "amountNative": 0.465674,
     "disclosureLevel": "aggregated",
     "_pag": 13,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_income) no decide para la fila de \"Andre salgsinntekter\""
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Mediainntekter",
@@ -480,11 +475,11 @@
    "origen": "verificacion (nota que desglosa \"Andre salgsinntekter\")",
    "signoFijo": 0.465674,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_income) no decide para la fila de \"Andre salgsinntekter\"",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (revisado en el .md)",
    "destino": "revenue",
    "amountNative": 0.465674
   },
@@ -916,8 +911,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 11,
   "lineasGasto": 16,
   "metaFilas": 4,
