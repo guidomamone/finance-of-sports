@@ -376,3 +376,7 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
 
 - **232 e cerrado en HALLAZGOS** (decisión de Guido 2026-10-19). A2 es el 8% del gasto de API (US$ 40,13, 709 llamadas); el recorte
   ahorraría ~2-3% del total con riesgo de perder decisiones. Condición para retomar, en HALLAZGOS. Sigue el 279.
+- **279 hecho** (324ae1d8c7, ok de Guido 2026-10-19). La liga de un año en data/club-leagues la escribe `ligaEnTexto()` de cargar.mjs (pura):
+  año en null se reemplaza; misma liga, no se toca; otra liga, queda la que estaba y avisa. Antes, bfo-rusia.mjs (liga con estado
+  "pendiente") agregaba el año otra vez en cada reescritura (58 claves repetidas en ru.js) y, con otra liga, el sitio tomaba la última en
+  silencio. Probado en memoria sobre ru.js con la lógica vieja y la nueva (el ensayo de la carga no escribe ligas). Sigue el 286-287.
