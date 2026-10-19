@@ -25,7 +25,7 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 Reparto en worktrees (2026-10-18, a la noche; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): finanzas 294 (espera las 11 altas
-del borrador) · pipeline 298 (e a n, p, q, s, t2, u2, v), 310, 290, 232, 279, 286, 287, 301, 302, 306, 307 · onboarding Países Bajos (lotes 93-94),
+del borrador) · pipeline 298 (f a n, p, q, s, t2, u2, v), 310, 290, 232, 279, 286, 287, 301, 302, 306, 307 · onboarding Países Bajos (lotes 93-94),
 las 11 altas del borrador, Bélgica (lote 92: los 23 años pasan la compuerta de estadio y sponsor), 292 resto, 238, 285, 284, 283, 195, 165 c · datos-sourcing
 273 (los 80 sin sponsor) · sin sesión: ligas 295, pantallas 309 y 312, Reino Unido 261 · la principal: 291, 311 y los
 merges; el 246 va solo, con todo mergeado y sin worktrees abiertos.
@@ -35,7 +35,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 **A. Cerrar lo abierto (chico, ya en marcha)**
 * 290 y 291: caja y deuda, lo que queda (Genoa 2022 y la duda del factoring, que decidís vos)
 * 310: caja y deuda de un año sin vecino, cualquier país
-* 292: transcripciones por subagentes de los 6 países: Estonia completa; Países Bajos corriendo; Bélgica casi; quedan Suiza, Beşiktaş, Colombia y 212 .md viejos
+* 292: transcripciones por subagentes de los 6 países: Estonia completa; Países Bajos corriendo; Bélgica casi; quedan Suiza, Beşiktaş, Colombia y los .md viejos (238 marcados para Mistral, 298 e2)
 
 **B. Bases baratas que después cuestan caro cambiar**
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos)
@@ -44,7 +44,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 232: mejoras de script que dejó Grecia
 * 279: la tool que duplicaba claves en club-leagues/ru.js
 * 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar
-* 298: mejoras de script de Estonia y Bélgica (hechas a, b, c, d, o, r, t, u y x; siguen e a n, p, q, s, t2, u2, v)
+* 298: mejoras de script de Estonia y Bélgica (hechas a, b, c, d, o, r, t, u y x; sigue la e2, la corrida de Mistral; después f a n, p, q, s, t2, u2, v)
 * 306, 307 y 308: Milan 2018; el gasto que imprime localizar; los bonos convertibles en la skill
 * 301: gasto.mjs --json se corta en un pipe
 * 302: el deflactor de EE.UU. desde la BEA, no FRED
@@ -269,12 +269,13 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    los clubes del borrador `Admin/registros/cola-borradores/altas-2026-10-17.md` cuando onboarding los publique (Viking, Vålerenga, Luzern,
    St. Gallen, Molde, Go Ahead Eagles, Basel, Pardubice, Aalesund, Fredrikstad, Sarpsborg 08; el borrador tiene la entidad de cada uno con
    cita). Después, fast-forward de la rama finanzas.
-298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, o, r, t, u y x, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
+298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, o, r, t, u y x, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
    vez; el detalle con casos, en `Admin/Archive/sesion-onboarding-2026-10-18-2.md`). a) CIERRE FALSO en verificar.mjs: compara en valor
    absoluto y da "cierra" con una fila del lado o signo equivocado (Lierse Kempenzonen 2022 habría cargado un gasto como ingreso): lo más
    grave. b) Esquema NBB belga en verificar.mjs y cargar.mjs: costos financieros 65/66B positivos, renglones "(+)/(-)" por valor absoluto,
-   el 76A sumado aparte, y verificar y la propuesta que no leen igual el signo; una regla por código NBB. e) pipeline.mjs: un .md viejo con marca de la preparación vieja
-   nunca se marca `sin-tablas` (OH Leuven 2022, Llaneros 2022; puede frenar buena parte de los 319). f) periodo.mjs no saca el cierre NBB
+   el 76A sumado aparte, y verificar y la propuesta que no leen igual el signo; una regla por código NBB. e2) las 238 transcripciones viejas sin tablas ya están marcadas: falta la corrida de Mistral
+   (~US$ 7,26, la corre Guido): `caffeinate -i node tools/pipeline.mjs --lista Admin/lotes/sin-tablas-298e.txt --max-paginas 0 --limit 0
+   --ejecutar`; después entran a los lotes de carga de cada país. f) periodo.mjs no saca el cierre NBB
    cuando las fechas vienen en celdas (9 belgas y 1 estonio). g) la cola admite una sola categoría por fila: un "partir según la nota" con
    la suma exacta como compuerta. h) un `no_es_rubro` puede dejar a un padre sin hijos: que la cola avise. i) alta-club.mjs: un país nuevo
    frena hasta agregar su fila a PAISES: que la proponga. o) dos versiones "-correction" del mismo ejercicio entran juntas al lote (Bélgica): que

@@ -118,3 +118,5 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
 - **Comandos (carpeta principal, después del merge):**
   1. `node tools/pipeline.mjs --lista Admin/lotes/sin-tablas-298e.txt --ejecutar` (gratis: solo marca `sin-tablas`).
   2. `caffeinate -i node tools/pipeline.mjs --lista Admin/lotes/sin-tablas-298e.txt --max-paginas 0 --limit 0 --ejecutar` (~US$ 7,26).
+
+## Después del merge de la 298 e (2026-10-18)

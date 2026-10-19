@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 757 — Merge de pipeline 2: el control "sin tablas" (2026-10-18)
+
+Sin conflictos; P0 0 / P1 0.
+
+- To-do 298 e: `pipeline.mjs` marca `sin-tablas` una transcripción vieja que nunca pasó por verificar (antes miraba la marca vieja de Jev y
+  marcaba 0). Corrida gratis en main: 238 marcadas (lista `Admin/lotes/sin-tablas-298e.txt`). Decisiones de Guido: se rehacen también los
+  43 belgas y los 100 de la 292 van por Mistral. Falta la corrida paga (~US$ 7,26).
+
 ## Versión 756 — La compuerta de estadio y sponsor en las ligas amateur (2026-10-18)
 
 Merge de datos 2, sin conflictos; P0 0 / P1 0.
