@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 825 — Lote 101, segunda tanda: Luzern 2019 y 2022, Go Ahead Eagles 2021 y 2022 (2026-10-19)
+
+* Luzern 2019 y 2022; Go Ahead Eagles 2021 (Eerste Divisie) y 2022 (Eredivisie), con ligas, listas, estadio y sponsor. Basel sin cargar:
+  defectos de lectura en siete años (to-do 324).
+
 ## Versión 824 — Basel: la cobertura de pérdidas del holding no es ingreso (2026-10-19)
 
 * `verificar.mjs` y `cargar.mjs` (298 ah, vocabulario en `vocabulario.mjs`): la "Verlustabdeckung" cuenta en el resultado y se carga en

@@ -237,6 +237,8 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    después Suiza, Colombia, Beşiktaş); Países Bajos: el alta de los 26 clubes está hecha (lote 93); sigue el lote 95 con los demás
    años de los clubes nuevos (lista en `Admin/Archive/sesion-onboarding-2-2026-10-19.md`) y volver a correr Bélgica (lote 92); OH Leuven 2022 y Llaneros 2022, que siguen sin tablas (ver 298 e); decidir subagentes
    o Mistral para los 319 `.md` viejos sin tablas de `Admin/lotes/sin-tablas-6paises.txt`, después de medir el 298 e.
+   Lote 101: Luzern 2019 y 2022 y Go Ahead Eagles 2021-2024 cargados; Basel espera la 324; Luzern 2018 y 2024 frenan por estadio o
+   sponsor, 2020 y 2023 por categorías en cola (y el tie-out de gastos de 2023). Sigue el lote 102 (Lommel, Lierse, Patro Eisden).
 298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2 e y3, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
    vez; el detalle con casos, en `Admin/Archive/sesion-onboarding-2026-10-18-2.md`). a) CIERRE FALSO en verificar.mjs: compara en valor
    absoluto y da "cierra" con una fila del lado o signo equivocado (Lierse Kempenzonen 2022 habría cargado un gasto como ingreso): lo más
@@ -255,6 +257,8 @@ af) listas de las ligas amateur belgas
    de esos años para el estadio (Lokeren-Temse 2022, Patro Eisden 2013-2015).
    ai) St. Gallen: la compensación intragrupo "Entschädigung von/an FCSG Event AG" se suma como ingreso en la columna combinada (2018-19,
    2019-20, 2021-22 y 2023-24); con el perímetro de las dos sociedades sumadas debería netearse (decisión de perímetro de Guido pendiente).
+   Y 6 casos de la cola ("Erträge brutto" y "Direkte Kosten" 2018-19, 2021-22 y 2022-23): ¿se carga el desglose de las cuentas individuales
+   de las dos sociedades (suman casi exacto) en vez de la fila consolidada? Si no: lump_football_operations y other_expenses.
    aj) la columna del año anterior invierte el signo de "Ertragsminderungen" y de "Resultaat vergoedingsommen", y suma el subtotal
    "Erträge netto" cuando el documento lo imprime. Detalle de ah a aj en `Admin/Archive/sesion-onboarding-3-2026-10-19-e.md`.
    z2) Westerlo 2015: 18 meses por cambio de cierre (no es primer ejercicio), sigue frenado; regla a decidir con Guido. t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en
@@ -392,15 +396,19 @@ af) listas de las ligas amateur belgas
     f) Alta de Harlequins (rugby): el nombre legal propuesto es una frase del texto; sale de "HARLEQUIN FOOTBALL CLUB LIMITED (REGISTERED
        NUMBER…)", que aparece 4 veces.
 324. BASEL: LOS DEMÁS AÑOS (lote 101; Onboarding 3, 2026-10-19). No se carga ningún año de Basel hasta resolver esto:
-    a) la lectura está mal en varios años: 2010 tomó la tabla del Verein (se carga la FC Basel 1893 AG) y 2014 también duplicaba el total;
-       con la 298 ah ya en main, regenerar los derivados de Basel y volver a verificar.
+    a) la propuesta de carga tiene números equivocados en 2006, 2010, 2014, 2016, 2017, 2018 y 2019: 2006, 2010 y 2018 leyeron la tabla del
+       Verein y no la de la AG; 2016 y 2019 suman partidas de la Holding como ingreso; 2017 duplica gastos; a 2014 le faltan los
+       "Ausserordentliche Aufwendungen". Con la 298 ah ya en main, regenerar los derivados de Basel y volver a verificar.
     b) la Verlustabdeckung (cobertura de pérdidas del holding) ya va al resultado, fuera de ingresos y gastos (exceptional_items; Basel
        2005 sale de la cola). Decisiones de Guido: la Defizitgarantie (la garantía de déficit que la AG le paga al Verein o recibe de la
-       holding), y si la Gewinnüberführung de 14 M a la holding en 2012 (L800 del .md) es el espejo de la cobertura y va igual (hoy queda
+       holding: en 2015 y 2021 se cargó como gasto dentro de Total Aufwand, en 2013-2014 está debajo del resultado operativo; con un mismo
+       criterio en todos los años 2014 cierra exacto), y si la Gewinnüberführung de 14 M a la holding en 2012 (L800 del .md) es el espejo de la cobertura y va igual (hoy queda
        sin lado y 2012 no cierra). En 2010, 2013, 2019 (18,7 M) y 2020 la AG también tiene partidas con la holding o el Verein debajo del
        resultado operativo.
     d) Basel 2009 sigue en la cola por el chequeo del año vecino: la columna de 2009 del documento de 2010 lee 0,848 de ingresos (otra
        tabla). 2009 y 2012 no se cargan hasta resolverlo.
     c) Basel 2006: se carga la AG, no el Verein (el Verein le traspasó el fútbol profesional ese año).
-    Detalle: `Admin/Archive/sesion-onboarding-3-2026-10-19-e.md`, sección "Lote 101".
+    e) mejora de script: elegir siempre el estado de resultados de la FC Basel 1893 AG cuando el informe trae varios (Verein, AG,
+       Stadiondienst AG), y no sumar partidas de la Holding o el Verein debajo del resultado operativo.
+    Detalle con líneas del .md: `Admin/Archive/sesion-onboarding-3-2026-10-19-e.md` ("Lote 101") y `-f.md` ("Lote 101, segunda tanda").
 
