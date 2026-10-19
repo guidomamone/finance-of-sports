@@ -42,3 +42,5 @@ Rama `onboarding`, sin push. Último commit al escribir esto: ver `git log`.
 
 ### Qué deja de ser cierto en ESTADO
 - Sarpsborg 08 tiene 2012 y 2014-2025 menos 2023 y 2024.
+
+## Después del merge del lote 96 (2026-10-19)

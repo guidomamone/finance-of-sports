@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 795 — Sarpsborg 08 sobre el FLI: 2012 y 2014-2022 (2026-10-19)
+
+* Lote 96: diez años del FLI de Sarpsborg 08, con perímetro individual (la controlada Prozo AS queda afuera). 2023 y 2024 esperan dos
+  mejoras de script (298 ab y ac).
+
 ## Versión 794 — 286 y 287: el ensayo cotiza los .md sin tablas; audit.js caza carpetas dobles (2026-10-19)
 
 * `pipeline.mjs`: el ensayo cuenta los `.md` viejos sin tablas que la corrida rehace con Mistral (hoy 0; queda de resguardo).

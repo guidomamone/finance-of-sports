@@ -34,7 +34,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **C. Abaratar antes del onboarding grande**
 * 287: el texto de la skill club-sourcing (tu ok) y los 25 casos de carpeta-doble, con el 278 --> Pipeline 4
-* 298: mejoras de script de Estonia y Bélgica (quedan la z2, Westerlo 2015 con 18 meses, a decidir con vos, y la g2, condicional) --> Pipeline 4
+* 298: mejoras de script de Estonia y Bélgica (ab y ac, Sarpsborg 2023-2024; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
 * 306, 307 y 308: Milan 2018; el gasto que imprime localizar; los bonos convertibles en la skill --> Pipeline 4 (306, 307)
 * 301: gasto.mjs --json se corta en un pipe --> Pipeline 4
 * 302: el deflactor de EE.UU. desde la BEA, no FRED --> Pipeline 4
@@ -46,7 +46,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 165 c: altas de los países nuevos que faltan --> Onboarding 3
 * 195: gestiones (presidentes) sin fuente confirmada (Fortaleza 2025: ¿CEO o presidente del consejo? lo decidís vos)
 * 295: balances de las entidades que organizan las ligas: lo que queda (segundas divisiones; varias no publican)
-* 284: Fredrikstad 2012 (falta un sponsor con fuente) y Sarpsborg 08 sobre el FLI --> Onboarding 3
+* 284: Fredrikstad 2012 (falta un sponsor con fuente) --> Onboarding 3
 * 283: Vålerenga y Aalesund, sumar el AS y el FLI (con nota en Finanzas) --> Onboarding 3
 * 273: nombrar la compuerta de estadio y sponsor en la skill de onboarding (con tu ok)
 
@@ -235,7 +235,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    fos-onboarding (algunos sin mirar las imágenes): validarlos con `pipeline.mjs --lista Admin/lotes/transcribir-valerenga.txt` o rehacerlos con Mistral.
 284. FREDRIKSTAD Y SARPSBORG 08: EL CLUB ES EL FLI (pedido de Guido, 2026-10-17). Fredrikstad: FLI 2013-2018 y 2024 cargados; falta
    2012 (la cola está contestada, pero la Tippeligaen pide sponsor: falta uno con fuente en `tools/contexto-manual.json`). Sarpsborg 08:
-   el alta se hizo sobre un AS inversor sin empleados; rehacerla sobre el FLI "Sarpsborg 08 Fotballforening" (sus PDFs ya tienen `.md`). Pardubice: no darle el alta con lo que hay (es FK Junior z.s.); el sourcing de la a.s.
+   FLI 2012 y 2014-2022 y 2025 cargados; 2023 y 2024 esperan la 298 ab y ac; 2008 sin liga confirmada. Pardubice: no darle el alta con lo que hay (es FK Junior z.s.); el sourcing de la a.s.
    lo hace Guido.
 287. QUE NO SE REPITA LA LIMPIEZA (cierre de onboarding). `audit.js` `carpeta-doble` ya está (P2): dio 25 hallazgos reales para mirar
    contra el documento (Hearts en Kelty Hearts, Fjölnir en ÍR; carpetas dobles de NEC, RFS, Thun, St. Gallen y Omonia; informes de liga
@@ -266,6 +266,9 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    2025): solo si aparece otra fila mixta sin códigos; el 630 belga ya sale solo. i) alta-club.mjs: un país nuevo
    frena hasta agregar su fila a PAISES: que la proponga. o) dos versiones "-correction" del mismo ejercicio entran juntas al lote (Bélgica): que
    entre una sola.
+   ab) el escalón "nota del subtotal" reemplaza los renglones del estado por una nota más gruesa (Sarpsborg 08 2024: los 8 renglones de
+   ingresos por los 2 de la Note 1, L116-124 y L1517-1523): cuando el estado abre más renglones, que gane el estado. ac) Sarpsborg 08 2023
+   sigue leyendo el consolidado (ingresos 166,5 M, no 146,5 M) aunque tiene ajuste `perimetro` individual; el 2024 sí lo toma bien.
    z2) Westerlo 2015: 18 meses por cambio de cierre (no es primer ejercicio), sigue frenado; regla a decidir con Guido. t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en
    ellos: Patro Eisden 2025 (ingresos +1.810 por el waarvan 76A, gastos +4.012 por el 631/4), Lommel SK 2025 (gastos +172, el 609) y Lommel SK
    2018 (−182 de financiero) cerraron por tolerancia con errores chicos: decidir con Guido si se corrigen (escalón: correr el NBB también
