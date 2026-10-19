@@ -24,16 +24,18 @@ ni en el comentario de ningún archivo de código.
 ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del panel Plan: al arrancar una sesión, ponerlo en el
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
-Reparto en worktrees (2026-10-18; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): finanzas 282, 294 (espera las altas del borrador) · pipeline 298 (t y u primero: destraban Bélgica; después e a n, p, q, s, v), 310, 290, 232, 279, 286, 287, 301, 302, 306, 307 · onboarding 292 (resto; Bélgica espera la t y la u), 238, 285, 284, 283, 195, 165 c ·
-datos-sourcing 273 (el modo de la tabla de camisetas, diseño aprobado), 252 · ligas 295 · Reino Unido (261) en su propia sesión · la principal: 291 y los merges; el 246 va
-solo, con todo mergeado y sin worktrees abiertos.
+Reparto en worktrees (2026-10-18, a la noche; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): finanzas 294 (espera las 11 altas
+del borrador) · pipeline 298 (e a n, p, q, s, t2, u2, v), 282 g, 310, 290, 232, 279, 286, 287, 301, 302, 306, 307 · onboarding Países Bajos (lotes 93-94),
+las 11 altas del borrador, Bélgica (lote 92: espera los 22 años sin estadio o sponsor), 292 resto, 238, 285, 284, 283, 195, 165 c · datos-sourcing
+273 (los 22 años belgas, después los 80 sin sponsor) · sin sesión: ligas 295, pantallas 309 y 312, Reino Unido 261 · la principal: 291, 311 y los
+merges; el 246 va solo, con todo mergeado y sin worktrees abiertos.
 
 Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de arriba abajo. Al lado, por qué va ahí.
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
-* 290 y 291: caja y deuda, lo que queda (Genoa 2022 y la duda del factoring)
+* 290 y 291: caja y deuda, lo que queda (Genoa 2022 y la duda del factoring, que decidís vos)
 * 310: caja y deuda de un año sin vecino, cualquier país
-* 292: transcripciones por subagentes de los 6 países: validar, Mistral y cargar
+* 292: transcripciones por subagentes de los 6 países: Estonia completa; Países Bajos corriendo; Bélgica casi; quedan Suiza, Beşiktaş, Colombia y 212 .md viejos
 
 **B. Bases baratas que después cuestan caro cambiar**
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos)
@@ -42,7 +44,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 232: mejoras de script que dejó Grecia
 * 279: la tool que duplicaba claves en club-leagues/ru.js
 * 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar
-* 298: mejoras de script de Estonia y Bélgica (a, b, c, d, o y r hechas; t y u primero)
+* 298: mejoras de script de Estonia y Bélgica (hechas a, b, c, d, o, r, t, u y x; siguen e a n, p, q, s, t2, u2, v)
 * 306, 307 y 308: Milan 2018; el gasto que imprime localizar; los bonos convertibles en la skill
 * 301: gasto.mjs --json se corta en un pipe
 * 302: el deflactor de EE.UU. desde la BEA, no FRED
@@ -56,17 +58,18 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 295: balances de las entidades que organizan las ligas (AFA, LFP…), para la auditoría en Ligas
 * 284 y 285: Fredrikstad y Sarpsborg 08 sobre el FLI; transcribir Viking Fotball AS
 * 283: Vålerenga y Aalesund, sumar el AS y el FLI (con nota en Finanzas)
-* 273: estadio y sponsor, lo que queda (completar a mano, nombrar la compuerta)
+* 273: estadio y sponsor, lo que queda (22 años belgas que frenan la carga; 80 sin sponsor; nombrar la compuerta)
 
 **E. Pantallas**
-* 282: quién audita, lo que queda (50 informes; la compuerta del pipeline)
+* 282: quién audita, lo que queda (50 informes; la compuerta del pipeline; auditoria.mjs en estonio)
 * 311: pedirles a los clubes el informe del auditor que no está publicado (mails)
-* 294: registro de entidades, lo que queda (los clubes del borrador cuando estén publicados)
+* 294: registro de entidades, lo que queda (las 11 altas del borrador, ya destrabadas por la 298 x)
 * 309: tamaño de liga desde la lista de Wikipedia (a decidir con Guido)
+* 312: la página de sponsor no muestra la fuente propia de una entrada
 
 **E2. Distribución (depende de 246)**
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
-* 252: ejercicios nuevos, lo que queda (URLs de 37 notas; cargar 14 clubes con el PDF ya bajado)
+* 252: ejercicios nuevos, lo que queda (onboardear los PDFs ya bajados, Instituto 2024-25 incluido; Alemania en enero de 2027)
 * 259: material de difusión (después de 241: el deck tiene que poder linkear)
 
 **F. Datos para afuera (cuando haya tiempo; nada urgente)**
