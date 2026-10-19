@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 824 — Basel: la cobertura de pérdidas del holding no es ingreso (2026-10-19)
+
+* `verificar.mjs` y `cargar.mjs` (298 ah, vocabulario en `vocabulario.mjs`): la "Verlustabdeckung" cuenta en el resultado y se carga en
+  `exceptional_items`, fuera de ingresos y gastos. De 725 documentos comparables cambian Basel 2005 (cola → ok) y 2009 (ingresos exactos,
+  sigue en cola). Cierre de Pipeline 4 en `Admin/Archive/`.
+
 ## Versión 823 — La cola se filtra por lote; Basel deja de duplicar el total (2026-10-19)
 
 * `cola.mjs --lista` y `--dir` filtran por lote o carpeta (323 b); el listado aclara qué significa el sí en "¿Se deja afuera…?" (323 d).

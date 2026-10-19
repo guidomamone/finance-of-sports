@@ -253,8 +253,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    entre una sola.
 af) listas de las ligas amateur belgas
    de esos años para el estadio (Lokeren-Temse 2022, Patro Eisden 2013-2015).
-   ah) hecha (ya no duplica "Total Ertrag"); Basel 2005, 2009 y 2012 siguen en la cola por la "Verlustabdeckung" (cobertura de pérdidas
-   del holding, sin lado) y una transferencia a la holding en 2012: decisión de Guido.
    ai) St. Gallen: la compensación intragrupo "Entschädigung von/an FCSG Event AG" se suma como ingreso en la columna combinada (2018-19,
    2019-20, 2021-22 y 2023-24); con el perímetro de las dos sociedades sumadas debería netearse (decisión de perímetro de Guido pendiente).
    aj) la columna del año anterior invierte el signo de "Ertragsminderungen" y de "Resultaat vergoedingsommen", y suma el subtotal
@@ -396,10 +394,13 @@ af) listas de las ligas amateur belgas
 324. BASEL: LOS DEMÁS AÑOS (lote 101; Onboarding 3, 2026-10-19). No se carga ningún año de Basel hasta resolver esto:
     a) la lectura está mal en varios años: 2010 tomó la tabla del Verein (se carga la FC Basel 1893 AG) y 2014 también duplicaba el total;
        con la 298 ah ya en main, regenerar los derivados de Basel y volver a verificar.
-    b) decisión de Guido: la Defizitgarantie (la garantía de déficit que la AG le paga al Verein o recibe de la holding) y la
-       Verlustabdeckung (cobertura de pérdidas del holding, 9,721 M en 2009 y 2012) más la Gewinnüberführung de 14 M a la holding en 2012:
-       ¿entran como ingreso o gasto del club, o quedan afuera del resultado operativo? En 2010, 2013, 2019 (18,7 M) y 2020 la AG también
-       tiene partidas con la holding o el Verein debajo del resultado operativo.
+    b) la Verlustabdeckung (cobertura de pérdidas del holding) ya va al resultado, fuera de ingresos y gastos (exceptional_items; Basel
+       2005 sale de la cola). Decisiones de Guido: la Defizitgarantie (la garantía de déficit que la AG le paga al Verein o recibe de la
+       holding), y si la Gewinnüberführung de 14 M a la holding en 2012 (L800 del .md) es el espejo de la cobertura y va igual (hoy queda
+       sin lado y 2012 no cierra). En 2010, 2013, 2019 (18,7 M) y 2020 la AG también tiene partidas con la holding o el Verein debajo del
+       resultado operativo.
+    d) Basel 2009 sigue en la cola por el chequeo del año vecino: la columna de 2009 del documento de 2010 lee 0,848 de ingresos (otra
+       tabla). 2009 y 2012 no se cargan hasta resolverlo.
     c) Basel 2006: se carga la AG, no el Verein (el Verein le traspasó el fútbol profesional ese año).
     Detalle: `Admin/Archive/sesion-onboarding-3-2026-10-19-e.md`, sección "Lote 101".
 
