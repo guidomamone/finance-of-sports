@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Colombia/Boyaca Chico/estados-financieros-2025.pdf",
  "md": "Clubes/Colombia/Boyaca Chico/estados-financieros-2025.md",
- "generado": "2026-10-19T17:09:22.193Z",
+ "generado": "2026-10-19T18:34:28.990Z",
  "estado": "ok",
  "clubId": "boyacachico-co",
  "year": 2025,
@@ -47,7 +47,8 @@
   "escalón \"subtotal repetido\": cerró la lectura 4 sin contar dos veces el subtotal que repite el renglón de arriba",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de extraer que no afecta la carga: L1008 solo tiene importe en Dic 31-2024 y L1009 'Otros' está vacía.",
-  "duda de extraer que no afecta la carga: El total 587.304.513,00 de L993 coincide con L127 del estado; el título parece error tipográfico."
+  "duda de extraer que no afecta la carga: El total 587.304.513,00 de L993 coincide con L127 del estado; el título parece error tipográfico.",
+  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": [
   {

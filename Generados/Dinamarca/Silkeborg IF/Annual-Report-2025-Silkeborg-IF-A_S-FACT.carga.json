@@ -1,7 +1,16 @@
 {
  "pdf": "Clubes/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.pdf",
- "generado": "2026-10-19T17:29:08.810Z",
- "frena": [],
+ "generado": "2026-10-19T17:32:17.720Z",
+ "frena": [
+  {
+   "etapa": "año",
+   "motivo": "silkeborg-dk ya tiene el ejercicio 2025 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['silkeborg-dk-annual-report-2025-silkeborg-if-a-s-fact'] ya existe"
+  }
+ ],
  "avisos": [],
  "ejercicio": {
   "clubId": "silkeborg-dk",
@@ -555,16 +564,10 @@
    "M": 98.613
   }
  },
- "fxCloseNuevo": {
-  "key": "DKK@2025-12-31",
-  "fx": 6.3527,
-  "source": "market_close",
-  "label": "Tipo oficial de Danmarks Nationalbank, última rueda hábil antes del cierre (2025-12-30, 2025-12-31 no es día hábil)"
- },
  "liga": {
   "valor": "dk-superliga",
-  "fuente": "roster cacheado de \"2025–26 Danish Superliga\" (tools/club-league-reference/dk.json), coincidencia única por palabras \"Silkeborg\" = \"Silkeborg IF\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -594,7 +597,7 @@
   },
   "fxRef": {
    "valor": "DKK@2025-12-31",
-   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 6.3527. --escribir agrega 'DKK@2025-12-31' a FX_CLOSE",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene DKK@2025-12-31 = 6.3527 (Tipo oficial de Danmarks Nationalbank, última rueda hábil antes del cierre (2025-12-30, 2025-12-31 no es día hábil))",
    "estado": "ok"
   },
   "sourceId": {
@@ -604,13 +607,13 @@
   },
   "liga": {
    "valor": "dk-superliga",
-   "fuente": "roster cacheado de \"2025–26 Danish Superliga\" (tools/club-league-reference/dk.json), coincidencia única por palabras \"Silkeborg\" = \"Silkeborg IF\"",
+   "fuente": "data/club-leagues/dk.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 2,
   "lineasIngreso": 11,
   "lineasGasto": 5,
   "metaFilas": 3,

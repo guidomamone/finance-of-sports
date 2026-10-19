@@ -1,0 +1,637 @@
+{
+ "md": "Clubes/Colombia/Boyaca Chico/estados-financieros-2025.md",
+ "generatedAt": "2026-10-19T18:34:43.692Z",
+ "rubrosHuella": "45bd738a4bcdfd1ad9b9d7fd2052a12a83120fed",
+ "rubros": [
+  {
+   "label": "Taquilla Venta Boletería Masculina",
+   "lado": "revenue",
+   "page": 16,
+   "section": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por Derechos de Televisión",
+   "lado": "revenue",
+   "page": 16,
+   "section": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por auxilio Hotelero - Dimayor",
+   "lado": "revenue",
+   "page": 16,
+   "section": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\"",
+   "choice": "broadcasting",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por auxilio de Transportes - Dimayor",
+   "lado": "revenue",
+   "page": 16,
+   "section": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\"",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por auxilio de Arbitraje - Dimayor",
+   "lado": "revenue",
+   "page": 16,
+   "section": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\"",
+   "choice": "broadcasting",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Ventas por Auxilio de Logística - Dimayor",
+   "lado": "revenue",
+   "page": 16,
+   "section": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\"",
+   "choice": "broadcasting",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por Auxilio de Mejoramientos - Dimayor",
+   "lado": "revenue",
+   "page": 16,
+   "section": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\"",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por Auxilios - Federación Colombiana de Futbol",
+   "lado": "revenue",
+   "page": 16,
+   "section": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\"",
+   "choice": "competition_bonus",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por Patrocinios recibidos de terceros",
+   "lado": "revenue",
+   "page": 16,
+   "section": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por Servicios de Publicidad",
+   "lado": "revenue",
+   "page": 16,
+   "section": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos Videos Oficiales Apuestas 2024",
+   "lado": "revenue",
+   "page": 16,
+   "section": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\"",
+   "choice": "broadcasting",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Menos: Devoluciones",
+   "lado": "revenue",
+   "page": 16,
+   "section": "nota que desglosa \"Ingresos Operacionales-Actividades Deportivas\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Intereses",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Otros gastos no operacionales\"",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Pasarelas",
+   "lado": "revenue",
+   "page": 17,
+   "section": "nota que desglosa \"Otros ingresos no operacionales\"",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Sanitas",
+   "lado": "revenue",
+   "page": 17,
+   "section": "nota que desglosa \"Otros ingresos no operacionales\" > desglose de \"Incapacidades por Eps y otras\"",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Seguros de Vida Suramericana",
+   "lado": "revenue",
+   "page": 17,
+   "section": "nota que desglosa \"Otros ingresos no operacionales\" > desglose de \"Incapacidades por Eps y otras\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "La Equidad Seguros de Vida",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Otros ingresos no operacionales\" > desglose de \"Incapacidades por Eps y otras\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos Federación Colombiana de Futbol",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Otros ingresos no operacionales\"",
+   "choice": "competition_bonus",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros Ingresos",
+   "lado": "revenue",
+   "page": 18,
+   "section": "nota que desglosa \"Otros ingresos no operacionales\"",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Salarios",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Cesantías",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Intereses Sobre Cesantías",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\"",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Prima de Servicios",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\"",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Vacaciones",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\"",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes ARP",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\"",
+   "choice": "wages_squad",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes a Fondo de Pensiones",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\"",
+   "choice": "wages_squad",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes Caja, ICBF, SENA",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\"",
+   "choice": "wages_squad",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "Auxilio de Transporte",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\"",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Incapacidades",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\"",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Bonificaciones",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\"",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros Honorarios (*)",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"COSTO DE VENTAS Y PRESTACION DE SERVICIOS\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de Personal",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Revisoría Fiscal",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Honorarios\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Asesoría Jurídica",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Honorarios\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Asesoría Contable",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Honorarios\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Servicio de Aseo",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Servicios\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Teléfono Fijo",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Servicios\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Teléfono Celular",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Servicios\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Correo, portes y telegramas",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Servicios\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Transporte Fletes y Acarreos",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Servicios\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Servicios\"",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos Notariales",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Gastos Legales\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Registro mercantil",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Gastos Legales\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Mantenimiento Construcciones",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Mantenimiento y Reparaciones\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Equipo Computación y comunicación",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Mantenimiento y Reparaciones\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Clase A",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Amortizaciones\"",
+   "choice": "other_amortisation",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Clase B",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Amortizaciones\"",
+   "choice": "other_amortisation",
+   "confidence": 0.54,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos de Uso",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Amortizaciones\"",
+   "choice": "depreciation",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Construcciones y edificaciones",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Depreciación\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Flota y Equipo Transporte",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Depreciación\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Elementos Aseo",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Elementos Cafetería",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Útiles Papelería",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Fotocopias",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Combustibles",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Estampilla al Adulto Mayor 2%",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Estampilla Electrificadora Rural 1%",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "casino y restaurante",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"Gastos de administración\" > desglose de \"Diversos\"",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de ventas",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos Bancarios",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Otros gastos no operacionales\" > desglose de \"Financieros\"",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "Gravamen 4 * 1000",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Otros gastos no operacionales\" > desglose de \"Financieros\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Comisiones",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Otros gastos no operacionales\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "IVA Bancario",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Otros gastos no operacionales\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Sanciones DIAN",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Otros gastos no operacionales\" > desglose de \"Multas Sanciones y Litigios\"",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Multas SIC",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Otros gastos no operacionales\" > desglose de \"Multas Sanciones y Litigios\"",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Embargos Colpensiones",
+   "lado": "expense",
+   "page": 20,
+   "section": "nota que desglosa \"Otros gastos no operacionales\" > desglose de \"Multas Sanciones y Litigios\"",
+   "choice": "exceptional_items",
+   "confidence": 0.73,
+   "desdeCache": true
+  }
+ ]
+}

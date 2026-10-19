@@ -1,7 +1,16 @@
 {
  "pdf": "Clubes/Brasil/Coritiba/wf-2024-2025-ef0cf145.pdf",
- "generado": "2026-10-19T17:29:07.062Z",
- "frena": [],
+ "generado": "2026-10-19T17:32:15.487Z",
+ "frena": [
+  {
+   "etapa": "año",
+   "motivo": "coritiba ya tiene el ejercicio 2025 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['coritiba-wf-2024-2025-ef0cf145'] ya existe"
+  }
+ ],
  "avisos": [
   "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-12-31); pregunta en la cola (no frena)"
  ],
@@ -793,8 +802,8 @@
  },
  "liga": {
   "valor": "br-serieB",
-  "fuente": "roster cacheado de \"2025 Campeonato Brasileiro Série B\" (tools/club-league-reference/br.json), coincidencia exacta \"Coritiba\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -834,13 +843,13 @@
   },
   "liga": {
    "valor": "br-serieB",
-   "fuente": "roster cacheado de \"2025 Campeonato Brasileiro Série B\" (tools/club-league-reference/br.json), coincidencia exacta \"Coritiba\"",
+   "fuente": "data/club-leagues/br.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 2,
   "lineasIngreso": 10,
   "lineasGasto": 17,
   "metaFilas": 1,

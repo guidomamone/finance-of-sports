@@ -1,7 +1,16 @@
 {
  "pdf": "Clubes/Brasil/Gremio/wf-2024-2025-1774995c.pdf",
- "generado": "2026-10-19T17:29:07.707Z",
- "frena": [],
+ "generado": "2026-10-19T17:32:16.230Z",
+ "frena": [
+  {
+   "etapa": "año",
+   "motivo": "gremio ya tiene el ejercicio 2025 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['gremio-wf-2024-2025-1774995c'] ya existe"
+  }
+ ],
  "avisos": [
   "ingresos: ningún total impreso igual a la suma de las líneas (903.545); queda la suma, verificada por el resultado del ejercicio",
   "gastos: ningún total impreso igual a la suma de las líneas (-615.928); queda la suma, verificada por el resultado del ejercicio",
@@ -1331,8 +1340,8 @@
  },
  "liga": {
   "valor": "br-serieA",
-  "fuente": "roster cacheado de \"2025 Campeonato Brasileiro Série A\" (tools/club-league-reference/br.json), coincidencia exacta \"Grêmio\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1377,13 +1386,13 @@
   },
   "liga": {
    "valor": "br-serieA",
-   "fuente": "roster cacheado de \"2025 Campeonato Brasileiro Série A\" (tools/club-league-reference/br.json), coincidencia exacta \"Grêmio\"",
+   "fuente": "data/club-leagues/br.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 2,
   "lineasIngreso": 28,
   "lineasGasto": 20,
   "metaFilas": 2,

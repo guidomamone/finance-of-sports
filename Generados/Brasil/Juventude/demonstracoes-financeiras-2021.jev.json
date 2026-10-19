@@ -1,0 +1,306 @@
+{
+ "md": "Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.md",
+ "generatedAt": "2026-10-19T17:17:27.995Z",
+ "rubrosHuella": "a3deddb9c58f2511ed086c4c4d4eb10d49ee7499",
+ "rubros": [
+  {
+   "label": "Receita de transmissão",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Receita Operacional Bruta Atividade do Desporto\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Receitas Publicitária",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Receita Operacional Bruta Atividade do Desporto\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Outras Receitas",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Receita Operacional Bruta Atividade do Desporto\"",
+   "choice": "other_income",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "lump_football_operations",
+     0.1
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Receita de Royalties",
+   "lado": "revenue",
+   "page": 7,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.85
+    ],
+    [
+     "other_income",
+     0.13
+    ],
+    [
+     "broadcasting",
+     0.02
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Venda/Empréstimo de Atletas",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Receita Operacional Bruta Atividade do Desporto\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Receitas Patrimoniais",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Receita Operacional Bruta Atividade do Desporto\"",
+   "choice": "other_income",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_income",
+     0.71
+    ],
+    [
+     "member_dues",
+     0.28
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Receita Loteria Esportiva",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Receita Operacional Bruta Atividade do Desporto\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Receita jogos de Futebol",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Receita Operacional Bruta Atividade do Desporto\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1056
+  },
+  {
+   "label": "Amortização de direitos e de formação de atletas",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Custo da Atividade do Desporto\"",
+   "choice": "player_amortisation",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "player_amortisation",
+     0.79
+    ],
+    [
+     "youth_other_sports_expense",
+     0.19
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1094
+  },
+  {
+   "label": "Remuneração, Benefícios, Encargos, Intermediação, Contratação, Empréstimos e Outros",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Custo da Atividade do Desporto\"",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.92
+    ],
+    [
+     "wages_squad",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1107
+  },
+  {
+   "label": "Jogos, Federação, viagem, serviços, material esportivo e outros",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Custo da Atividade do Desporto\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1068
+  },
+  {
+   "label": "Receitas Diversas",
+   "lado": "revenue",
+   "page": 7,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Despesas Gerais e administrativas",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1057
+  }
+ ]
+}

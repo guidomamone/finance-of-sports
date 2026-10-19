@@ -1,9 +1,18 @@
 {
  "pdf": "Clubes/Brasil/Chapecoense/demonstracoes-contabeis-2022.pdf",
- "generado": "2026-10-19T17:29:06.746Z",
- "frena": [],
+ "generado": "2026-10-19T17:32:14.985Z",
+ "frena": [
+  {
+   "etapa": "año",
+   "motivo": "chapecoense-br ya tiene el ejercicio 2022 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['chapecoense-br-demonstracoes-contabeis-2022'] ya existe"
+  }
+ ],
  "avisos": [
-  "perímetro heredado del año cargado más cercano (2021, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2017 individual, 2021 consolidado"
+  "perímetro heredado del año cargado más cercano (2021, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2017 individual, 2021 consolidado, 2022 consolidado"
  ],
  "ejercicio": {
   "clubId": "chapecoense-br",
@@ -1123,8 +1132,8 @@
  },
  "liga": {
   "valor": "br-serieB",
-  "fuente": "roster cacheado de \"2022 Campeonato Brasileiro Série B\" (tools/club-league-reference/br.json), coincidencia exacta \"Chapecoense\"",
-  "estado": "ok"
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1164,13 +1173,13 @@
   },
   "liga": {
    "valor": "br-serieB",
-   "fuente": "roster cacheado de \"2022 Campeonato Brasileiro Série B\" (tools/club-league-reference/br.json), coincidencia exacta \"Chapecoense\"",
+   "fuente": "data/club-leagues/br.js ya tiene la fila",
    "estado": "ok"
   }
  },
  "resumen": {
-  "carga": true,
-  "motivos": 0,
+  "carga": false,
+  "motivos": 2,
   "lineasIngreso": 12,
   "lineasGasto": 27,
   "metaFilas": 2,
