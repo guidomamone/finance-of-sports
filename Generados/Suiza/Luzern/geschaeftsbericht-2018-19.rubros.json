@@ -2,8 +2,8 @@
   "md": "Clubes/Suiza/Luzern/geschaeftsbericht-2018-19.md",
   "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2018-19.pdf",
   "club": "luzern-ch",
-  "year": null,
-  "generatedAt": "2026-10-19T16:03:17.408Z",
+  "year": 2019,
+  "generatedAt": "2026-10-19T16:17:39.802Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         3.408421
       ],
-      "glosa": "Ingresos por taquilla de liga"
+      "glosa": "Ingresos por entradas de liga"
     },
     {
       "label": "Meisterschaft VIP-Eintritte",
@@ -24,7 +24,7 @@
       "values": [
         3.92384
       ],
-      "glosa": "Ingresos por taquilla VIP de liga"
+      "glosa": "Ingresos por entradas VIP de liga"
     },
     {
       "label": "Helvetia Schweizer Cup",
@@ -34,7 +34,7 @@
       "values": [
         0.394382
       ],
-      "glosa": "Copa Suiza"
+      "glosa": "Copa de Suiza"
     },
     {
       "label": "UEFA Clubwettbewerbe",
@@ -84,7 +84,7 @@
       "values": [
         4.588935
       ],
-      "glosa": "Ingresos por traspasos de jugadores"
+      "glosa": "Ingresos por traspasos"
     },
     {
       "label": "Sponsoren- und Spendenbeiträge",
@@ -104,7 +104,7 @@
       "values": [
         0.420048
       ],
-      "glosa": "Contribuciones de la federación (SFV)"
+      "glosa": "Subvenciones de la federación (SFV)"
     },
     {
       "label": "Sport Toto- und J&S-Entschädigungen",
@@ -114,7 +114,7 @@
       "values": [
         0.127676
       ],
-      "glosa": "Compensaciones de Sport-Toto y J+S"
+      "glosa": "Compensaciones de Sport-Toto y J&S"
     },
     {
       "label": "Ausbildungs- und Materialbeiträge Eltern",
@@ -124,7 +124,7 @@
       "values": [
         0.514541
       ],
-      "glosa": "Aportaciones de padres para formación y material"
+      "glosa": "Cuotas de padres por formación y material"
     },
     {
       "label": "Anlässe (FCL-Fussballcamp, Pfingstmaster)",
@@ -164,7 +164,7 @@
       "values": [
         0.278028
       ],
-      "glosa": "Tienda oficial (tienda física)"
+      "glosa": "Tienda oficial (venta presencial)"
     },
     {
       "label": "Retail, Distanzgeschäft",
@@ -174,7 +174,7 @@
       "values": [
         0.027952
       ],
-      "glosa": "Venta minorista y venta a distancia"
+      "glosa": "Venta minorista y a distancia"
     },
     {
       "label": "Sonstiger Betriebsertrag",
@@ -194,7 +194,7 @@
       "values": [
         0.036682
       ],
-      "glosa": "Resultado de participaciones puestas en equivalencia"
+      "glosa": "Resultado de participaciones por el método de la participación"
     },
     {
       "label": "Ausserordentlicher, einmaliger oder periodenfremder Ertrag",
@@ -204,7 +204,7 @@
       "values": [
         1.266564
       ],
-      "glosa": "Ingresos extraordinarios, no recurrentes o de ejercicios anteriores"
+      "glosa": "Ingresos extraordinarios, únicos o de ejercicios anteriores"
     },
     {
       "label": "Personalkosten inkl. Spesen",
@@ -214,7 +214,7 @@
       "values": [
         6.516169
       ],
-      "glosa": "Gastos de personal incl. dietas"
+      "glosa": "Gastos de personal incl. dietas y gastos"
     },
     {
       "label": "Sozialabgaben",
@@ -244,7 +244,7 @@
       "values": [
         2.027929
       ],
-      "glosa": "Gastos de personal incl. dietas"
+      "glosa": "Gastos de personal incl. dietas y gastos"
     },
     {
       "label": "Sozialabgaben",
@@ -264,7 +264,7 @@
       "values": [
         2.363514
       ],
-      "glosa": "Gastos de personal incl. dietas"
+      "glosa": "Gastos de personal incl. dietas y gastos"
     },
     {
       "label": "Sozialabgaben",
@@ -284,7 +284,7 @@
       "values": [
         0.681215
       ],
-      "glosa": "Gastos de personal incl. dietas"
+      "glosa": "Gastos de personal incl. dietas y gastos"
     },
     {
       "label": "Sozialabgaben",
@@ -344,7 +344,7 @@
       "values": [
         0.155157
       ],
-      "glosa": "Gastos de emisión de entradas y comisiones de venta anticipada"
+      "glosa": "Gastos de emisión y venta anticipada de entradas"
     },
     {
       "label": "Aufwand 1. Mannschaft",
@@ -384,7 +384,7 @@
       "values": [
         0.322974
       ],
-      "glosa": "Otros gastos de organización de partidos"
+      "glosa": "Gastos del resto de actividades de partidos"
     },
     {
       "label": "Rückvergütungen Lieferanten",
@@ -424,7 +424,7 @@
       "values": [
         0.078261
       ],
-      "glosa": "Compensaciones por cesión y derechos de formación"
+      "glosa": "Indemnizaciones por cesión y derechos de formación"
     },
     {
       "label": "Medien, Kommunikation, Inserate",
@@ -454,7 +454,7 @@
       "values": [
         0.207974
       ],
-      "glosa": "Producción de publicidad en vallas fijas y LED"
+      "glosa": "Producción publicitaria en vallas fijas y LED"
     },
     {
       "label": "Diverses",
@@ -494,7 +494,7 @@
       "values": [
         0.185972
       ],
-      "glosa": "Consumo de materiales"
+      "glosa": "Gastos de material"
     },
     {
       "label": "Spielbetrieb und Mannschaftsaufwand",
@@ -564,7 +564,7 @@
       "values": [
         0.091864
       ],
-      "glosa": "Gastos informáticos y de aplicaciones"
+      "glosa": "Gastos de informática y aplicaciones"
     },
     {
       "label": "Sachversicherungen, Abgaben und Gebühren",
@@ -574,7 +574,7 @@
       "values": [
         0.069076
       ],
-      "glosa": "Seguros generales, tasas y tributos"
+      "glosa": "Seguros de bienes, tasas y tributos"
     },
     {
       "label": "Sonstiger Betriebsaufwand",
@@ -594,7 +594,7 @@
       "values": [
         0.898959
       ],
-      "glosa": "Amortización de inmovilizado material mueble"
+      "glosa": "Amortización del inmovilizado material mobiliario"
     },
     {
       "label": "Abschreibungen immaterielle Sachanlagen",
@@ -604,7 +604,7 @@
       "values": [
         1.094141
       ],
-      "glosa": "Amortización de inmovilizado intangible"
+      "glosa": "Amortización del inmovilizado intangible"
     },
     {
       "label": "Ausserordentlicher, einmaliger oder periodenfremder Aufwand",
@@ -614,7 +614,7 @@
       "values": [
         0.051238
       ],
-      "glosa": "Gastos extraordinarios, no recurrentes o de ejercicios anteriores"
+      "glosa": "Gastos extraordinarios, únicos o de ejercicios anteriores"
     },
     {
       "label": "Minderheitsanteil am Jahresergebnis",
@@ -624,7 +624,7 @@
       "values": [
         0.000254
       ],
-      "glosa": "Resultado atribuible a socios externos"
+      "glosa": "Participación de minoritarios en el resultado del ejercicio"
     }
   ]
 }

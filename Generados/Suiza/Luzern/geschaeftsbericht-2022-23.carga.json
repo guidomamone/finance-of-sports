@@ -1,11 +1,7 @@
 {
  "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2022-23.pdf",
- "generado": "2026-10-19T16:08:48.803Z",
+ "generado": "2026-10-19T16:19:18.244Z",
  "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Schweizer Cup\" -> matchday_competition 0.6; \"UEFA Clubwettbewerbe\" -> competition_bonus 0.5"
-  },
   {
    "etapa": "tie-out-resultado",
    "motivo": "resultado: ingresos 28.530231 + gastos -31.428929 + netInterest -0.198764 + tax -0.004884 = -3.102346 no coincide con ningún resultado impreso (\"resultado detectado por proponer-carga\" 3.102345)"
@@ -51,9 +47,9 @@
     "amountNative": 0.001093,
     "disclosureLevel": "aggregated",
     "_pag": 26,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "UEFA Clubwettbewerbe",
@@ -61,9 +57,9 @@
     "amountNative": 0.626726,
     "disclosureLevel": "aggregated",
     "_pag": 26,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Freundschaftsspiele",
@@ -691,11 +687,11 @@
    "origen": "verificacion (nota que desglosa \"Matchorganisation\")",
    "signoFijo": 0.001093,
    "cat": "matchday_competition",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "revenue",
    "amountNative": 0.001093
   },
@@ -707,11 +703,11 @@
    "origen": "verificacion (nota que desglosa \"Matchorganisation\")",
    "signoFijo": 0.626726,
    "cat": "competition_bonus",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "revenue",
    "amountNative": 0.626726
   },
@@ -1641,7 +1637,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 2,
   "lineasIngreso": 22,
   "lineasGasto": 35,
   "metaFilas": 2,

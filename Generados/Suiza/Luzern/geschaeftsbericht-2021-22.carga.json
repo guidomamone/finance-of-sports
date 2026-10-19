@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2021-22.pdf",
- "generado": "2026-10-19T16:08:48.650Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Events\" -> other_income 0"
-  }
- ],
+ "generado": "2026-10-19T16:19:18.115Z",
+ "frena": [],
  "avisos": [
   "perímetro heredado del año cargado más cercano (2025, consolidado); el documento trae el consolidado. Años cargados: 2025 consolidado",
   "gastos: ningún total impreso igual a la suma de las líneas (-29.689443); queda la suma, verificada por el resultado del ejercicio",
@@ -124,9 +119,9 @@
     "amountNative": 0.788032,
     "disclosureLevel": "aggregated",
     "_pag": 41,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Fanshop Präsenzgeschäft",
@@ -858,12 +853,12 @@
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 0.788032,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_expenses, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "revenue",
    "amountNative": 0.788032
   },
@@ -1749,8 +1744,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 20,
   "lineasGasto": 41,
   "metaFilas": 2,
