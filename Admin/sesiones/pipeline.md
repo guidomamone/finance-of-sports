@@ -429,3 +429,5 @@ mirar contra el documento (misfiling: Hearts en Kelty Hearts, Fjölnir en ÍR; c
 liga compartidos a propósito: Bundesliga 2, Ljungskile/United Nordic, Brasil). No se silenció ni se movió nada: silenciar en
 `audit-ignore.json` exige mirar la fuente. Pendiente: texto para la skill `club-sourcing` (mostrado a Guido, sin su ok todavía).
 Ojo: `audit.js --json` con pipe se corta a los 64 KB (como el 301); se redirige a un archivo.
+
+## Después del merge del 286-287 (2026-10-19)

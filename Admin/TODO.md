@@ -33,7 +33,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
-* 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar --> Pipeline 4
+* 287: el texto de la skill club-sourcing (tu ok) y los 25 casos de carpeta-doble, con el 278 --> Pipeline 4
 * 298: mejoras de script de Estonia y Bélgica (quedan la z2, Westerlo 2015 con 18 meses, a decidir con vos, y la g2, condicional) --> Pipeline 4
 * 306, 307 y 308: Milan 2018; el gasto que imprime localizar; los bonos convertibles en la skill --> Pipeline 4 (306, 307)
 * 301: gasto.mjs --json se corta en un pipe --> Pipeline 4
@@ -237,12 +237,10 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    2012 (la cola está contestada, pero la Tippeligaen pide sponsor: falta uno con fuente en `tools/contexto-manual.json`). Sarpsborg 08:
    el alta se hizo sobre un AS inversor sin empleados; rehacerla sobre el FLI "Sarpsborg 08 Fotballforening" (sus PDFs ya tienen `.md`). Pardubice: no darle el alta con lo que hay (es FK Junior z.s.); el sourcing de la a.s.
    lo hace Guido.
-286. EL ENSAYO DE pipeline.mjs NO ANTICIPA EL REHACER CON MISTRAL (cierre de onboarding). `--lista` muestra un `.md` sin tablas como
-   "texto (Claude solo en págs. dudosas)" y `--ejecutar` lo rehace con Mistral (~US$ 0,17 por documento; la corrida de los 6 países
-   estimó US$ 27,83 y se cortó en 40 de 566). Que el ensayo los cuente como "rehacer con Mistral" con su costo. Quedan 481 .md así
-   (Bélgica 268, Colombia 208). Ya avisado a pipeline.
-287. QUE NO SE REPITA LA LIMPIEZA (cierre de onboarding; escalones, uno por vez). `audit.js` `carpeta-doble` (dos carpetas de un país
-   con PDFs de la misma huella) y `club-sourcing` (mirar la entidad de la portada al guardar y no abrir una segunda carpeta del club).
+287. QUE NO SE REPITA LA LIMPIEZA (cierre de onboarding). `audit.js` `carpeta-doble` ya está (P2): dio 25 hallazgos reales para mirar
+   contra el documento (Hearts en Kelty Hearts, Fjölnir en ÍR; carpetas dobles de NEC, RFS, Thun, St. Gallen y Omonia; informes de liga
+   compartidos a propósito: Bundesliga 2, Ljungskile/United Nordic, Brasil), sin silenciar ni mover nada; va con el 278. Falta el texto
+   para la skill `club-sourcing` (mirar la entidad de la portada al guardar y no abrir una segunda carpeta del club), esperando el ok de Guido.
    Un `.md` sin PDF no es error (Ajax, PSV, Feyenoord y AZ 2023-25 son la fuente publicada de lo cargado).
 290. GENOA 2022 EN caja-deuda --medir (cierre de pipeline). Con la regla de los "bis", la propuesta es 65,24 M contra 95,7 M publicados: faltan
    las dos filas de altri finanziatori (factoring, 30,45 M), que dependen de la decisión del 291. La compuerta del documento siguiente no

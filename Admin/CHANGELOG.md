@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 794 — 286 y 287: el ensayo cotiza los .md sin tablas; audit.js caza carpetas dobles (2026-10-19)
+
+* `pipeline.mjs`: el ensayo cuenta los `.md` viejos sin tablas que la corrida rehace con Mistral (hoy 0; queda de resguardo).
+* `audit.js`: hallazgo P2 `carpeta-doble` (el mismo PDF en dos carpetas de club de un país): 25 casos reales para mirar.
+
 ## Versión 793 — Cierre de Pipeline 3; Pipeline 4 sigue (2026-10-19)
 
 * Pipeline 3 cierra por contexto; su cierre, en `Admin/Archive/`. Pipeline 4 (Sonnet) sigue con 286-287, 306-307, 301, 302, 290 y 310.
