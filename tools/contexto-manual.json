@@ -133,10 +133,18 @@
       "capacidad": 20000,
       "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2018_-_S%C3%A9rie_A1"
     },
+    "2022": {
+      "sponsor": "Estrella Galicia",
+      "fuente": "https://rciararaquara.com.br/ferroviaria/ferroviaria-fecha-patrocinio-com-a-estrella-galicia-para-o-time-masculino/"
+    },
     "2023": {
       "estadio": "Arena da Fonte Luminosa",
       "capacidad": 20000,
-      "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2023_-_S%C3%A9rie_A1"
+      "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2023_-_S%C3%A9rie_A1",
+      "sponsor": "Betnacional",
+      "fuentes": {
+        "sponsor": "https://ferroviariasaf.com/2023/01/22/profissional-masculino-tera-betnacional-como-patrocinadora/"
+      }
     }
   },
   "novorizontino-br": {
@@ -164,6 +172,10 @@
       "estadio": "Jorge Ismael de Biasi",
       "capacidad": 12398,
       "fuente": "https://pt.wikipedia.org/wiki/Campeonato_Paulista_de_Futebol_de_2017_-_S%C3%A9rie_A1"
+    },
+    "2018": {
+      "estadio": "Jorge Ismael de Biasi",
+      "fuente": "https://trivela.com.br/brasil/serie-b/santos-tabu-31-anos-novorizontino-serie-b/"
     }
   },
   "argentinosjuniors": {
