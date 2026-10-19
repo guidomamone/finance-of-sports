@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 760 — Merge de pipeline 2: el 630 belga partido por la nota (2026-10-18)
+
+Sin conflictos; P0 0 / P1 0.
+
+- To-do 298 g: `nbb.mjs` (`partir630`) parte las amortizaciones belgas en pases, goodwill y materiales con los códigos de la nota de activos
+  fijos, solo si suman exacto y nunca en un año publicado. 33 de 191 documentos belgas lo parten; totales y estados idénticos; Bélgica
+  publicada, 10 de 10.
+
 ## Versión 759 — Merge de onboarding 2: Países Bajos y las 10 altas del borrador, armados (2026-10-18)
 
 `.jsonl` con las líneas de las dos ramas, lo generado regenerado; ASSET_V 1321, P0 0 / P1 0. La rama se adelantó a main (t, u, x, e y f).

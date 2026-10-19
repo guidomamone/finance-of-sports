@@ -152,3 +152,5 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
 - **Qué queda (para TODO):** la 298 g en general (partir en la cola cualquier fila según su nota, para otros países o el 66A de Lommel SK
   2025) no se hizo: el caso que la motivó, el 630 belga, sale solo. Retomarla si aparece otra fila mixta que no tenga códigos.
 - **Para fos-onboarding:** los documentos belgas cuyas filas cambiaron vuelven a categorizar en el lote (etapa 7, ~US$ 0,03 por documento).
+
+## Después del merge de la 298 g (2026-10-18)
