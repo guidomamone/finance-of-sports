@@ -10,6 +10,15 @@ window.RANKINGS["be-div1amateur"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.059]] },
     ],
   },
+  2020: {
+    leagueSize: null,
+    wiki: {"t":"2019–20 Belgian First Amateur Division","lang":"en","at":"2026-10-19","n":16},
+    clubs: [
+      { id:"patroeisden-be", revenue:0.311, reportType:"official_balance_sheet",
+        sourceId:"patroeisden-be-jaarrekening-2020-06-30-individual-correction",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.311]] },
+    ],
+  },
   2018: {
     leagueSize: null,
     wiki: {"t":"2017–18 Belgian First Amateur Division","lang":"en","at":"2026-10-19","n":16},
