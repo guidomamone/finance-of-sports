@@ -27,7 +27,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 **A. Cerrar lo abierto (chico, ya en marcha)**
 * 290 y 291: caja y deuda, lo que queda (Genoa 2022; la duda del factoring la decidís vos) --> Pipeline 3 (290), Principal (291)
 * 310: caja y deuda de un año sin vecino, cualquier país --> Pipeline 3
-* 292: cargar lo transcripto por subagentes: Países Bajos (en la cola), Bélgica, Suiza, Beşiktaş, Colombia y los 238 .md viejos ya rehechos por Mistral --> Onboarding 2
+* 292: cargar lo transcripto por subagentes: Países Bajos (en la cola), Bélgica, Suiza, Beşiktaş, Colombia y los 238 .md viejos ya rehechos por Mistral --> Onboarding 3
 
 **B. Bases baratas que después cuestan caro cambiar**
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
@@ -43,13 +43,13 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
-* 238: llevar a 0 los documentos que quedaron a mitad de camino --> Onboarding 2
+* 238: llevar a 0 los documentos que quedaron a mitad de camino --> Onboarding 3
 * 261: Reino Unido, transcripción por subagentes
-* 165 c: altas de los países nuevos que faltan --> Onboarding 2
+* 165 c: altas de los países nuevos que faltan --> Onboarding 3
 * 195: gestiones (presidentes) sin fuente confirmada (Fortaleza 2025: ¿CEO o presidente del consejo? lo decidís vos)
 * 295: balances de las entidades que organizan las ligas (AFA, LFP…), para la auditoría en Ligas
-* 284 y 285: Fredrikstad y Sarpsborg 08 sobre el FLI; transcribir Viking Fotball AS --> Onboarding 2
-* 283: Vålerenga y Aalesund, sumar el AS y el FLI (con nota en Finanzas) --> Onboarding 2
+* 284 y 285: Fredrikstad y Sarpsborg 08 sobre el FLI; transcribir Viking Fotball AS --> Onboarding 3
+* 283: Vålerenga y Aalesund, sumar el AS y el FLI (con nota en Finanzas) --> Onboarding 3
 * 273: nombrar la compuerta de estadio y sponsor en la skill de onboarding (con tu ok)
 
 **E. Pantallas**
