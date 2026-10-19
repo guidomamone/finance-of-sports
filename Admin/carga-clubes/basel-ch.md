@@ -152,6 +152,10 @@ Generados/Suiza/Basel/geschaeftsbericht-2020.categorias.json (escalón de cada f
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-19): cash escalón 1 (compuerta: documento anterior): "Flüssige Mittel" pág. 20
+```
+
 ### Liga
 
 ```text
@@ -209,6 +213,10 @@ Generados/Suiza/Basel/geschaeftsbericht-2019.categorias.json (escalón de cada f
 ```text
 2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): perimetro = individual. El informe trae estados individuales sueltos (FC Basel 1893 AG, el Verein y, desde 2014, la Stadiondienst AG); no hay consolidado. La AG es la que juega el fútbol y cierra con el resultado impreso (mismo perímetro que el 2021 cargado)
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-19): cash escalón 1 (compuerta: documento siguiente): "Flüssige Mittel" pág. 26
 ```
 
 ### Liga
@@ -269,6 +277,10 @@ Generados/Suiza/Basel/geschaeftsbericht-2018.categorias.json (escalón de cada f
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-19): cash escalón 1 (compuerta: documento siguiente): "Flüssige Mittel" pág. 15
+```
+
 ### Liga
 
 ```text
@@ -325,6 +337,10 @@ Generados/Suiza/Basel/geschaeftsbericht-2017.categorias.json (escalón de cada f
 ```text
 2017: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): perimetro = individual. El informe trae estados individuales sueltos (FC Basel 1893 AG, el Verein y, desde 2014, la Stadiondienst AG); no hay consolidado. La AG es la que juega el fútbol y cierra con el resultado impreso (mismo perímetro que el 2021 cargado)
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-19): cash escalón 1 (compuerta: documento siguiente): "Flüssige Mittel" pág. 15
 ```
 
 ### Liga
@@ -385,6 +401,10 @@ Generados/Suiza/Basel/geschaeftsbericht-2016.categorias.json (escalón de cada f
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-19): cash escalón 1 (compuerta: documento siguiente): "Flüssige Mittel" pág. 33
+```
+
 ### Liga
 
 ```text
@@ -440,6 +460,10 @@ Generados/Suiza/Basel/geschaeftsbericht-2015.categorias.json (escalón de cada f
 ```text
 2015: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): perimetro = individual. El informe trae estados individuales sueltos (FC Basel 1893 AG, el Verein y, desde 2014, la Stadiondienst AG); no hay consolidado. La AG es la que juega el fútbol y cierra con el resultado impreso (mismo perímetro que el 2021 cargado)
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-19): cash escalón 1 (compuerta: documento siguiente): "Flüssige Mittel" pág. 34
 ```
 
 ### Liga
@@ -499,6 +523,10 @@ Generados/Suiza/Basel/geschaeftsbericht-2014.categorias.json (escalón de cada f
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-19): cash escalón 1b (compuerta: documento siguiente): "Flüssige Mittel" pág. 24
+```
+
 ### Liga
 
 ```text
@@ -553,6 +581,10 @@ Generados/Suiza/Basel/geschaeftsbericht-2013.categorias.json (escalón de cada f
 ```text
 2013: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): perimetro = individual. El informe trae estados individuales sueltos (FC Basel 1893 AG, el Verein y, desde 2014, la Stadiondienst AG); no hay consolidado. La AG es la que juega el fútbol y cierra con el resultado impreso (mismo perímetro que el 2021 cargado)
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-19): cash escalón 1 (compuerta: documento siguiente): "Flüssige Mittel" pág. 24
 ```
 
 ### Liga
@@ -659,6 +691,10 @@ Generados/Suiza/Basel/geschaeftsbericht-2011.categorias.json (escalón de cada f
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-19): cash escalón 1 (compuerta: documento anterior): "Flüssige Mittel" pág. 22
+```
+
 ### Liga
 
 ```text
@@ -712,6 +748,10 @@ Generados/Suiza/Basel/geschaeftsbericht-2010.categorias.json (escalón de cada f
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-19): cash escalón 1 (compuerta: documento siguiente): "Flüssige Mittel" pág. 18
+```
+
 ### Liga
 
 ```text
@@ -763,6 +803,10 @@ Generados/Suiza/Basel/geschaeftsbericht-2009.categorias.json (escalón de cada f
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-19): cash escalón 1 (compuerta: documento siguiente): "Flüssige Mittel" pág. 17
+```
+
 ### Liga
 
 ```text
@@ -812,6 +856,10 @@ Generados/Suiza/Basel/geschaeftsbericht-2008.categorias.json (escalón de cada f
 
 ```text
 tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+```text
+tools/caja-deuda.mjs (2026-10-19): cash escalón 1 (compuerta: documento siguiente): "Flüssige Mittel" pág. 17
 ```
 
 ### Liga

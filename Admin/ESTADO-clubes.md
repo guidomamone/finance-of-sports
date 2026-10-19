@@ -119,7 +119,7 @@ BRASIL (42)
   Volta Redonda         2 ejercicios (2024 a 2025), balance, BRL
 
 CH (3)
-  Basel       17 ejercicios (2005 a 2021), balance, CHF, sin deuda/caja
+  Basel       17 ejercicios (2005 a 2021), balance, CHF
   Luzern      1 ejercicio (2024/2025), balance, CHF, sin deuda/caja
   St. Gallen  1 ejercicio (2024/2025), balance, CHF, sin deuda/caja
 
