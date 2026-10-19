@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2022-06-30-individual.pdf",
  "md": "Clubes/Bélgica/RWDM/jaarrekening-2022-06-30-individual.md",
- "generado": "2026-10-18T19:16:12.230Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:16:59.690Z",
+ "estado": "ok",
  "clubId": "rwdm-be",
  "year": 2022,
  "escala": {
@@ -23,10 +23,7 @@
    "fecha": "2026-10-18"
   }
  ],
- "cola": [
-  "9ddcf3f",
-  "4bc7f69"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -41,7 +38,7 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo)",
+   "detalle": "cierra (como impresos)",
    "dif": 0.000001000000000139778
   },
   {
@@ -52,21 +49,26 @@
   {
    "nombre": "documento del año 2023",
    "ok": true,
-   "detalle": "ingresos de 2022: 1.097582 en este documento y 1.097582 en jaarrekening-2023-06-30-individual.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2022: 1.08213 en este documento y 1.08213 en jaarrekening-2023-06-30-individual.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2021",
    "ok": true,
-   "detalle": "ingresos de 2021: 1.552882 en jaarrekening-2021-06-30-individual.pdf y 1.552882 en este documento (columna del año anterior)"
+   "detalle": "ingresos de 2021: 1.547882 en jaarrekening-2021-06-30-individual.pdf y 1.547882 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
   }
  ],
  "notas": [
-  "escalón \"de los cuales\": cerró la lectura 4 sin las filas \"Waarvan: niet-recurrente bedrijfsopbrengsten\" L248 (una parte de la fila de arriba)",
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L247-L270, esquema abreviado); cierran exacto todos sus totales impresos",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: El informe de b29 da dos cifras distintas en neerlandés e inglés; se debe contrastar con b12.",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
@@ -77,12 +79,12 @@
  "totales": {
   "ingresos": 1.08213,
   "gastos": 2.812687,
-  "financiero": 0.014422,
+  "financiero": -0.012898,
   "impuesto": 0,
   "resultadoImpreso": -1.743454,
   "resultadoParaCargar": -1.743454,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -124,18 +126,10 @@
    "pagina": 7,
    "linea": 255,
    "origen": "estado"
-  },
-  {
-   "etiqueta": "Niet-recurrente bedrijfskosten",
-   "lado": "gasto",
-   "M": 0,
-   "pagina": 7,
-   "linea": 257,
-   "origen": "estado"
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
+  "financiero": 1,
   "impuesto": 1
  },
  "financiero": [
@@ -150,11 +144,5 @@
    "linea": 264
   }
  ],
- "impuesto": [
-  {
-   "etiqueta": "Belastingen op het resultaat",
-   "M": null,
-   "linea": 269
-  }
- ]
+ "impuesto": []
 }

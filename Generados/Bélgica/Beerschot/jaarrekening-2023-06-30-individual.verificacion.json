@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2023-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Beerschot/jaarrekening-2023-06-30-individual.md",
- "generado": "2026-10-18T19:16:11.929Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:54:28.794Z",
+ "estado": "ok",
  "clubId": "beerschot-be",
  "year": 2023,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "d7a9f73"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -33,13 +31,18 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "detalle": "cierra (como impresos)",
    "dif": 8.881784197001252e-16
   },
   {
    "nombre": "lectura",
    "ok": true,
    "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2022 de este documento suma ingresos 9.234685; el sitio tiene 9.234685"
   },
   {
    "nombre": "documento del año 2024",
@@ -50,19 +53,10 @@
    "nombre": "documento del año 2022",
    "ok": true,
    "detalle": "ingresos de 2022: 9.234685 en jaarrekening-2022-06-30-individual.pdf y 9.234685 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L325-L371, esquema completo); cierran exacto todos sus totales impresos",
   "la nota de \"Niet-recurrente bedrijfsopbrengsten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b58 es una versión resumida del estado oficial VOL-kap 4 en el informe de gestión.",
@@ -76,12 +70,12 @@
  "totales": {
   "ingresos": 7.98553,
   "gastos": 13.032676,
-  "financiero": 0.158983,
-  "impuesto": 0.158922,
+  "financiero": 0.015127,
+  "impuesto": -0.158922,
   "resultadoImpreso": -5.190941,
   "resultadoParaCargar": -5.190941,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -238,8 +232,8 @@
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {
@@ -263,11 +257,6 @@
    "etiqueta": "Belastingen",
    "M": -0.158922,
    "linea": 369
-  },
-  {
-   "etiqueta": "Regularisering van belastingen en terugneming van voorzieningen voor belastingen",
-   "M": 0,
-   "linea": 370
   }
  ]
 }

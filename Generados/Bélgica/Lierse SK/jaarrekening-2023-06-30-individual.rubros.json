@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2023-06-30-individual.pdf",
   "club": "liersesk-be",
   "year": 2023,
-  "generatedAt": "2026-10-18T19:16:11.946Z",
+  "generatedAt": "2026-10-19T14:16:58.923Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -27,16 +27,6 @@
       "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
     },
     {
-      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-      "lado": "expense",
-      "page": 7,
-      "section": "estado",
-      "values": [
-        0.311289
-      ],
-      "glosa": "Amortizaciones y pérdidas por deterioro de gastos de constitución, inmovilizado intangible y material"
-    },
-    {
       "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (+)/(-) (terugnemingen)",
       "lado": "expense",
       "page": 7,
@@ -44,7 +34,7 @@
       "values": [
         0.000941
       ],
-      "glosa": "Pérdidas por deterioro de existencias, pedidos en curso y créditos comerciales: dotaciones (+)/(-) (reversiones)"
+      "glosa": "Deterioro de existencias, pedidos en curso y créditos comerciales: dotaciones (+)/(-) (reversiones)"
     },
     {
       "label": "Andere bedrijfskosten",
@@ -65,6 +55,26 @@
         0.091867
       ],
       "glosa": "Gastos de explotación no recurrentes"
+    },
+    {
+      "label": "Afschrijvingen immateriële vaste activa (spelers)",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.248921
+      ],
+      "glosa": "Amortización del inmovilizado intangible (jugadores)"
+    },
+    {
+      "label": "Afschrijvingen materiële vaste activa",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.062368
+      ],
+      "glosa": "Amortización del inmovilizado material"
     }
   ]
 }

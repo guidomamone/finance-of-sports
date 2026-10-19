@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2020-06-30-individual-correction.pdf",
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2020-06-30-individual-correction.md",
- "generado": "2026-10-18T19:16:12.191Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:16:59.541Z",
+ "estado": "ok",
  "clubId": "patroeisden-be",
  "year": 2020,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "b8c13e3",
-  "bfd435d"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -31,36 +28,49 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 0.002935000000000132
+   "dif": 0
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2021",
-   "ok": false,
-   "detalle": "ingresos de 2020: 0.751904 en este documento y 0.277991 en jaarrekening-2021-06-30-individual.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "códigos NBB del año 2020 iguales en este documento y en jaarrekening-2021-06-30-individual.pdf (9904, 9901); los ingresos se presentan distinto (0.277991 y 0)"
   },
   {
    "nombre": "documento del año 2019",
    "ok": true,
-   "detalle": "ingresos de 2019: 0.362776 en jaarrekening-2019-06-30-individual.pdf y 0.362776 en este documento (columna del año anterior)"
+   "detalle": "códigos NBB del año 2019 iguales en este documento y en jaarrekening-2019-06-30-individual.pdf (9904, 9901); los ingresos se presentan distinto (0.362776 y 0)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
   }
  ],
  "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L217-L240, esquema abreviado); cierran exacto todos sus totales impresos",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
-  "duda de extraer que no afecta la carga: En el esquema abreviado la Brutomarge (L217) agrega ingresos menos compras (568.892+183.012-423.072-50.841?); no cuadra exactamente con L219-L221, posiblemente por otras partidas no detalladas."
+  "duda de extraer que no afecta la carga: En el esquema abreviado la Brutomarge (L217) agrega ingresos menos compras (568.892+183.012-423.072-50.841?); no cuadra exactamente con L219-L221, posiblemente por otras partidas no detalladas.",
+  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 0.751904,
-  "gastos": 1.49084,
-  "financiero": 0.028306,
-  "impuesto": 0.000131,
+  "ingresos": 0.277991,
+  "gastos": 0.957338,
+  "financiero": -0.028086,
+  "impuesto": -0.000131,
   "resultadoImpreso": -0.707564,
   "resultadoParaCargar": -0.707564,
   "resultadoFinal": null,
@@ -68,27 +78,11 @@
  },
  "lineas": [
   {
-   "etiqueta": "Omzet",
+   "etiqueta": "Brutomarge (+)/(-)",
    "lado": "ingreso",
-   "M": 0.568892,
+   "M": 0.277991,
    "pagina": 7,
-   "linea": 219,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Lidgeld, schenkingen, legaten en subsidies",
-   "lado": "ingreso",
-   "M": 0.183012,
-   "pagina": 7,
-   "linea": 220,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
-   "lado": "gasto",
-   "M": 0.423072,
-   "pagina": 7,
-   "linea": 221,
+   "linea": 217,
    "origen": "estado"
   },
   {
@@ -110,10 +104,10 @@
   {
    "etiqueta": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
    "lado": "gasto",
-   "M": 0.055215,
+   "M": -0.055215,
    "pagina": 7,
    "linea": 225,
-   "origen": "estado"
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
   },
   {
    "etiqueta": "Andere bedrijfskosten",
@@ -136,14 +130,14 @@
   },
   {
    "etiqueta": "Recurrente financiële kosten",
-   "M": 0.028196,
+   "M": -0.028196,
    "linea": 234
   }
  ],
  "impuesto": [
   {
    "etiqueta": "Belastingen op het resultaat (+)/(-)",
-   "M": 0.000131,
+   "M": -0.000131,
    "linea": 239
   }
  ]

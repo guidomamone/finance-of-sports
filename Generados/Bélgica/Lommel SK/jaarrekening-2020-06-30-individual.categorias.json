@@ -2,9 +2,9 @@
  "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2020-06-30-individual.md",
  "club": "lommelsk-be",
  "year": 2020,
- "generatedAt": "2026-10-18T19:18:17.358Z",
- "rubrosHuella": "a72b56f6b0c5b471688c973165aeba64985ac13b",
- "jevHuella": "6107c56b09959d039c6f60f33ed3ef09b3069e8c",
+ "generatedAt": "2026-10-19T14:23:43.620Z",
+ "rubrosHuella": "4759a1f589d7e1d5a7170aceaaee9cee968d1e6d",
+ "jevHuella": "4a04d3830a3f9382dddd270f4187a93b7963eebf",
  "modelo": "claude-opus-5-5",
  "costUsd": 0,
  "rubros": [
@@ -35,23 +35,10 @@
    "confianza": 1
   },
   {
-   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "lado": "expense",
-   "section": "estado",
-   "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material",
-   "page": 7,
-   "pendiente": false,
-   "ya": "player_amortisation",
-   "escalon": 0,
-   "precedenteDe": "sitio:exacto-con-contexto",
-   "categoria": "player_amortisation",
-   "confianza": 1
-  },
-  {
    "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
    "lado": "expense",
    "section": "estado",
-   "glosa": "Correcciones de valor sobre existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)",
+   "glosa": "Correcciones de valor de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)",
    "page": 7,
    "pendiente": false,
    "ya": "other_expenses",
@@ -84,6 +71,32 @@
    "escalon": 0,
    "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "exceptional_items",
+   "confianza": 1
+  },
+  {
+   "label": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortización del inmovilizado intangible (jugadores)",
+   "page": 7,
+   "pendiente": false,
+   "ya": "player_amortisation",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "player_amortisation",
+   "confianza": 1
+  },
+  {
+   "label": "Afschrijvingen materiële vaste activa",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortización del inmovilizado material",
+   "page": 7,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "depreciation",
    "confianza": 1
   }
  ]

@@ -1,0 +1,90 @@
+{
+ "md": "Clubes/Bélgica/RWDM/jaarrekening-2023-06-30-individual.md",
+ "club": "rwdm-be",
+ "year": 2023,
+ "generatedAt": "2026-10-19T14:23:51.033Z",
+ "rubrosHuella": "5c9c54ccaec17dda0961655263cf6a130b592727",
+ "jevHuella": "3368ebb9bca4ddca16e3c13dbdf877652e39abca",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Brutomarge (+)/(-)",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Margen bruto (+)/(-)",
+   "page": 7,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "lump_football_operations",
+   "confianza": 1
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)",
+   "page": 7,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, inmovilizado intangible y material",
+   "page": 7,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "depreciation",
+   "confianza": 1
+  },
+  {
+   "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (+)/(-) (terugnemingen)",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Correcciones de valor de existencias, pedidos en curso y créditos comerciales: dotaciones (+)/(-) (reversiones)",
+   "page": 7,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "other_expenses",
+   "confianza": 0.99
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 7,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  },
+  {
+   "label": "Niet-recurrente bedrijfskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de explotación no recurrentes",
+   "page": 7,
+   "pendiente": false,
+   "ya": "exceptional_items",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "exceptional_items",
+   "confianza": 1
+  }
+ ]
+}

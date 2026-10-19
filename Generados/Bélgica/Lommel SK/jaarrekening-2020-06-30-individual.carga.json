@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2020-06-30-individual.pdf",
- "generado": "2026-10-18T19:18:19.251Z",
+ "generado": "2026-10-19T14:54:33.359Z",
  "frena": [],
  "avisos": [
   "gastos: ningún total impreso igual a la suma de las líneas (-3.013985); queda la suma, verificada por el resultado del ejercicio",
@@ -35,16 +35,6 @@
     "_fuenteCat": "categorias.json"
    },
    {
-    "rawLabel": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-    "normalizedCategory": "player_amortisation",
-    "amountNative": -0.619989,
-    "disclosureLevel": "aggregated",
-    "_pag": 7,
-    "_escalon": 0,
-    "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
-   },
-   {
     "rawLabel": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
     "normalizedCategory": "other_expenses",
     "amountNative": -0.002,
@@ -73,6 +63,26 @@
     "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Afschrijvingen immateriële vaste activa (spelers)",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -0.594133,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen materiële vaste activa",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.025856,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
    }
   ],
   "fiscalYearMeta": {
@@ -123,7 +133,7 @@
    "title": "Voetbalclub Lommel SK NV — jaarrekening-2020-06-30-individual (ejercicio 2020)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Bélgica/Lommel SK/jaarrekening-2020-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Lommel SK/jaarrekening-2020-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2020-06-30-individual.md",
@@ -143,7 +153,7 @@
  "year": 2020,
  "ajustes": null,
  "seleccion": {
-  "filas": 10,
+  "filas": 11,
   "notasUsadas": [],
   "refM": null
  },
@@ -177,22 +187,6 @@
    "enLista": true,
    "destino": "expense",
    "amountNative": -2.346805
-  },
-  {
-   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "page": 7,
-   "native": 0.619989,
-   "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0.619989,
-   "cat": "player_amortisation",
-   "conf": 1,
-   "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
-   "enLista": true,
-   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): la fila se partió con ajustes fila + categoria según la nota de activos fijos (pases / bienes de uso)",
-   "destino": "expense",
-   "amountNative": -0.619989
   },
   {
    "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
@@ -239,6 +233,36 @@
    "notaGuido": "Claude 2026-10-18 (subagente Sonnet): la fila se partió con ajustes fila + categoria según la nota de activos fijos (pases / bienes de uso)",
    "destino": "expense",
    "amountNative": -0.02025
+  },
+  {
+   "label": "Afschrijvingen immateriële vaste activa (spelers)",
+   "page": 7,
+   "native": 0.594133,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.594133,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.594133
+  },
+  {
+   "label": "Afschrijvingen materiële vaste activa",
+   "page": 7,
+   "native": 0.025856,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.025856,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.025856
   },
   {
    "label": "Recurrente financiële opbrengsten",
@@ -316,10 +340,9 @@
   }
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de be 2020 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "be-challengerproleague",
+  "fuente": "roster cacheado de \"2019–20 Belgian First Division B\" (tools/club-league-reference/be.json), coincidencia única por palabras \"Lommel\" = \"Lommel SK\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -358,16 +381,16 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de be 2020 cacheada",
-   "estado": "pendiente"
+   "valor": "be-challengerproleague",
+   "fuente": "roster cacheado de \"2019–20 Belgian First Division B\" (tools/club-league-reference/be.json), coincidencia única por palabras \"Lommel\" = \"Lommel SK\"",
+   "estado": "ok"
   }
  },
  "resumen": {
   "carga": true,
   "motivos": 0,
   "lineasIngreso": 1,
-  "lineasGasto": 5,
+  "lineasGasto": 6,
   "metaFilas": 4,
   "excluidas": 0
  }

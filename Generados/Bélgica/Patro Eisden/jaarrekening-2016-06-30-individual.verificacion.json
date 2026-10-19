@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2016-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2016-06-30-individual.md",
- "generado": "2026-10-18T19:16:12.132Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:16:59.428Z",
+ "estado": "ok",
  "clubId": "patroeisden-be",
  "year": 2016,
  "escala": {
@@ -12,17 +12,12 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "234885d",
-  "e59e61c"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": true,
-   "detalle": "0.727579 = 0.727579",
-   "suma": 0.727579,
-   "impreso": 0.727579
+   "ok": null,
+   "detalle": "el documento no lo imprime"
   },
   {
    "nombre": "total de gastos",
@@ -32,8 +27,13 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo)",
+   "detalle": "cierra (como impresos)",
    "dif": 1.1102230246251565e-16
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2017",
@@ -42,8 +42,8 @@
   },
   {
    "nombre": "documento del año 2015",
-   "ok": false,
-   "detalle": "ingresos de 2015: 0.938778 en jaarrekening-2015-06-30-individual.pdf y 0.998778 en este documento (columna del año anterior)"
+   "ok": null,
+   "detalle": "no se puede comparar: este documento no trae la columna del año anterior"
   },
   {
    "nombre": "año anterior cargado",
@@ -53,13 +53,16 @@
   {
    "nombre": "primer año",
    "ok": true,
-   "detalle": "ingresos y resultado coinciden con lo impreso a 0,01% o menos y el otro total no está impreso (queda determinado): no hace falta la revisión del primer año (to-do 214, escalón 2)"
+   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
   }
  ],
  "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L202-L219, esquema abreviado); cierran exacto todos sus totales impresos",
   "escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
-  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
+  "2 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -67,12 +70,12 @@
  "totales": {
   "ingresos": 0.727579,
   "gastos": 1.29259,
-  "financiero": 0.000663,
+  "financiero": 0.000391,
   "impuesto": 0,
   "resultadoImpreso": -0.56462,
   "resultadoParaCargar": -0.56462,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -81,14 +84,6 @@
    "M": 0.727579,
    "pagina": 5,
    "linea": 203,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Uitzonderlijke opbrengsten",
-   "lado": "ingreso",
-   "M": 0,
-   "pagina": 5,
-   "linea": 217,
    "origen": "estado"
   },
   {
@@ -140,32 +135,16 @@
    "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
   },
   {
-   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
-   "lado": "gasto",
-   "M": 0,
-   "pagina": 5,
-   "linea": 209,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Andere bedrijfskosten",
    "lado": "gasto",
    "M": 0.025483,
    "pagina": 5,
    "linea": 211,
    "origen": "estado"
-  },
-  {
-   "etiqueta": "Uitzonderlijke kosten",
-   "lado": "gasto",
-   "M": 0,
-   "pagina": 5,
-   "linea": 218,
-   "origen": "estado"
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
+  "financiero": 1,
   "impuesto": 1
  },
  "financiero": [

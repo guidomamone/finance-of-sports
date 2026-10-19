@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2015-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2015-06-30-individual.md",
- "generado": "2026-10-18T19:16:21.165Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:54:29.218Z",
+ "estado": "ok",
  "clubId": "patroeisden-be",
  "year": 2015,
  "escala": {
@@ -12,19 +12,12 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "9ae0446",
-  "9f0ccc9",
-  "3d8fd95",
-  "aab6c3b"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": true,
-   "detalle": "0.938778 = 0.933485",
-   "suma": 0.938778,
-   "impreso": 0.933485
+   "ok": null,
+   "detalle": "el documento no lo imprime"
   },
   {
    "nombre": "total de gastos",
@@ -34,18 +27,23 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo)",
+   "detalle": "cierra (como impresos)",
    "dif": 0.000001000000000132839
   },
   {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
    "nombre": "documento del año 2016",
-   "ok": false,
-   "detalle": "ingresos de 2015: 0.938778 en este documento y 0.998778 en jaarrekening-2016-06-30-individual.pdf (columna del año anterior)"
+   "ok": null,
+   "detalle": "no se puede comparar: jaarrekening-2016-06-30-individual.pdf no trae la columna del año anterior"
   },
   {
    "nombre": "documento del año 2014",
-   "ok": false,
-   "detalle": "ingresos de 2014: 0.266761 en jaarrekening-2014-06-30-individual.pdf y 0.003113 en este documento (columna del año anterior)"
+   "ok": true,
+   "detalle": "códigos NBB del año 2014 iguales en este documento y en jaarrekening-2014-06-30-individual.pdf (9904, 9901); los ingresos se presentan distinto (0.269874 y 0.003113)"
   },
   {
    "nombre": "año anterior cargado",
@@ -55,15 +53,16 @@
   {
    "nombre": "primer año",
    "ok": true,
-   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
   }
  ],
  "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L194-L211, esquema abreviado); cierran exacto todos sus totales impresos",
   "escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
-  "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; columna, \"Bedrijfsopbrengsten\"): ¿Se deja sin año anterior a 'Bedrijfsopbrengsten' (L195) y 'Handelsgoederen...' (L198), porque el año anterior solo informa Brutomarge 266.761?",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer confirmada por las sumas (columna, \"Bedrijfsopbrengsten\"): ¿Se deja sin año anterior a 'Bedrijfsopbrengsten' (L195) y 'Handelsgoederen...' (L198), porque el año anterior solo informa Brutomarge 266.761?"
  ],
  "reintentar": null,
  "reintentado": false,
@@ -71,12 +70,12 @@
  "totales": {
   "ingresos": 0.938778,
   "gastos": 0.89874,
-  "financiero": 0.009533,
+  "financiero": 0.009121,
   "impuesto": 0,
   "resultadoImpreso": 0.049158,
   "resultadoParaCargar": 0.049158,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -145,7 +144,7 @@
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
+  "financiero": 1,
   "impuesto": 1
  },
  "financiero": [
@@ -160,27 +159,5 @@
    "linea": 207
   }
  ],
- "impuesto": [],
- "primerAnio": {
-  "escalon": 3,
-  "estado": "confirmado",
-  "clave": "efcc8f5cac93ebce501f5fbdd617390e9b9089cc",
-  "rango": [
-   191,
-   214
-  ],
-  "lineasCargadas": [
-   195,
-   209,
-   198,
-   250,
-   251,
-   253,
-   201,
-   203,
-   206,
-   207
-  ],
-  "user": "ESTADO DE RESULTADOS (líneas 191 a 214 del .md):\nL191: | | Toel. | Codes | Boekjaar | Vorig boekjaar |\nL192: | --- | --- | --- | --- | --- |\nL193: | Bedrijfsopbrengsten en bedrijfskosten | | | | |\nL194: | Brutomarge (+)/(-) | | 9900 | 535.658 | 266.761 |\nL195: | Bedrijfsopbrengsten | | 70/74 | 933.485 | |\nL196: | Omzet | | 70 | | |\nL197: | Lidgeld, schenkingen, legaten en subsidies | | 73 | | |\nL198: | Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen | | 60/61 | 397.827 | |\nL199: | Bezoldigingen, sociale lasten en pensioenen (+)/(-) | 5.5 | 62 | 494.942 | 362.814 |\nL200: | Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa | | 630 | | |\nL201: | Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) | | 631/4 | 1.500 | |\nL202: | Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-) | | 635/8 | | |\nL203: | Andere bedrijfskosten | | 640/8 | 4.472 | 6.252 |\nL204: | Als herstructureringskosten geactiveerde bedrijfskosten (-) | | 649 | | |\nL205: | Positief (Negatief) bedrijfsresultaat (+)/(-) | | 9901 | 34.744 | -102.305 |\nL206: | Financiële opbrengsten | 5.5 | 75 | 9.327 | 13.635 |\nL207: | Financiële kosten | 5.5 | 65 | 206 | 621 |\nL208: | Positief (Negatief) resultaat uit de gewone bedrijfsuitoefening (+)/(-) | | 9902 | 43.865 | -89.291 |\nL209: | Uitzonderlijke opbrengsten | | 76 | 5.293 | 3.113 |\nL210: | Uitzonderlijke kosten | | 66 | | |\nL211: | Positief (Negatief) resultaat van het boekjaar (+)/(-) | | 9904 | 49.158 | -86.178 |\nL213: 5/10\n\nLO QUE SE CARGA:\n- ingreso · \"Bedrijfsopbrengsten\" · 0.933485 · L195\n- ingreso · \"Uitzonderlijke opbrengsten\" · 0.005293 · L209\n- gasto · \"Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen\" · 0.397827 · L198\n- gasto · \"Bezoldigingen en rechtstreekse sociale voordelen\" · 0.377459 · L250 (de una nota)\n- gasto · \"Werkgeversbijdragen voor sociale verzekeringen\" · 0.090548 · L251 (de una nota)\n- gasto · \"Andere personeelskosten\" · 0.026934 · L253 (de una nota)\n- gasto · \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen:\" · 0.0015 · L201\n- gasto · \"Andere bedrijfskosten\" · 0.004472 · L203\n- financiero · \"Financiële opbrengsten\" · 0.009327 · L206\n- financiero · \"Financiële kosten\" · -0.000206 · L207"
- }
+ "impuesto": []
 }

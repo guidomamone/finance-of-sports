@@ -16,3 +16,9 @@
 - Último chequeo: 2026-10-08.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2025 desde `Clubes/Bélgica/Lierse SK/jaarrekening-2025-06-30-individual.pdf` (sourceId `liersesk-be-jaarrekening-2025-06-30-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2022 desde `Clubes/Bélgica/Lierse SK/jaarrekening-2022-06-30-individual.pdf` (sourceId `liersesk-be-jaarrekening-2022-06-30-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2023 desde `Clubes/Bélgica/Lierse SK/jaarrekening-2023-06-30-individual.pdf` (sourceId `liersesk-be-jaarrekening-2023-06-30-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2024 desde `Clubes/Bélgica/Lierse SK/jaarrekening-2024-06-30-individual.pdf` (sourceId `liersesk-be-jaarrekening-2024-06-30-individual`).

@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2021-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2021-06-30-individual.md",
- "generado": "2026-10-18T19:16:11.951Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:54:28.889Z",
+ "estado": "ok",
  "clubId": "lokerentemse-be",
  "year": 2021,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "5b6bc13",
-  "ced6a2d"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -29,38 +26,58 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 0.805246 - gastos 0.866767 ± financiero 0.00958 ± impuesto 0 no da el impreso 0.005382",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.1622647289044608e-16
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2022",
    "ok": true,
-   "detalle": "ingresos de 2021: 0.805246 en este documento y 0.805246 en jaarrekening-2022-06-30-individual.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2021: 0.881647 en este documento y 0.881647 en jaarrekening-2022-06-30-individual.pdf (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
   }
  ],
  "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L172-L195, esquema abreviado); cierran exacto todos sus totales impresos",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 0.805246,
+  "ingresos": 0.881647,
   "gastos": 0.866767,
-  "financiero": 0.00958,
+  "financiero": -0.009498,
   "impuesto": 0,
   "resultadoImpreso": 0.005382,
   "resultadoParaCargar": 0.005382,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
+  {
+   "etiqueta": "Overige bedrijfsopbrengsten (implícito en la Brutomarge)",
+   "lado": "ingreso",
+   "M": 0.076401,
+   "pagina": 5,
+   "linea": 172,
+   "origen": "estado"
+  },
   {
    "etiqueta": "Omzet",
    "lado": "ingreso",
@@ -86,27 +103,19 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "lado": "gasto",
-   "M": 0.168361,
-   "pagina": 5,
-   "linea": 178,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
-   "lado": "gasto",
-   "M": 0,
-   "pagina": 5,
-   "linea": 179,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Andere bedrijfskosten",
    "lado": "gasto",
    "M": 0.001816,
    "pagina": 5,
    "linea": 181,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.168361,
+   "pagina": 5,
+   "linea": 246,
    "origen": "estado"
   }
  ],
@@ -122,7 +131,7 @@
   },
   {
    "etiqueta": "Recurrente financiële kosten",
-   "M": 0.009539,
+   "M": -0.009539,
    "linea": 189
   }
  ],

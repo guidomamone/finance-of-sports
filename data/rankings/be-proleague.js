@@ -52,4 +52,46 @@ window.RANKINGS["be-proleague"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",8.341],["Otros ingresos",2.398]] },
     ],
   },
+  2024: {
+    leagueSize: null,
+    wiki: {"t":"2023–24 Belgian Pro League","lang":"en","at":"2026-10-19","n":16},
+    clubs: [
+      { id:"ohleuven-be", revenue:33.693, reportType:"official_balance_sheet",
+        sourceId:"ohleuven-be-jaarrekening-2024-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",26.507],["Otros ingresos",7.185]] },
+      { id:"rwdm-be", revenue:4.244, reportType:"official_balance_sheet",
+        sourceId:"rwdm-be-jaarrekening-2024-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",4.244]] },
+    ],
+  },
+  2023: {
+    leagueSize: null,
+    wiki: {"t":"2022–23 Belgian Pro League","lang":"en","at":"2026-10-19","n":18},
+    clubs: [
+      { id:"ohleuven-be", revenue:23.194, reportType:"official_balance_sheet",
+        sourceId:"ohleuven-be-jaarrekening-2023-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",16.479],["Otros ingresos",6.715]] },
+    ],
+  },
+  2022: {
+    leagueSize: null,
+    wiki: {"t":"2021–22 Belgian First Division A","lang":"en","at":"2026-10-19","n":18},
+    clubs: [
+      { id:"beerschot-be", revenue:9.592, reportType:"official_balance_sheet",
+        sourceId:"beerschot-be-jaarrekening-2022-06-30-individual",
+        mix:[["Comercial / Sponsors",3.27],["Estadio",2.295],["Televisión",1.158],["Otros ingresos",2.869]] },
+    ],
+  },
+  2021: {
+    leagueSize: null,
+    wiki: {"t":"2020–21 Belgian First Division A","lang":"en","at":"2026-10-19","n":18},
+    clubs: [
+      { id:"ohleuven-be", revenue:13.546, reportType:"official_balance_sheet",
+        sourceId:"ohleuven-be-jaarrekening-2021-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",7.628],["Otros ingresos",5.919]] },
+      { id:"beerschot-be", revenue:11.082, reportType:"official_balance_sheet",
+        sourceId:"beerschot-be-jaarrekening-2021-06-30-individual",
+        mix:[["Comercial / Sponsors",2.78],["Estadio",1.929],["Televisión",2.42],["Otros ingresos",3.953]] },
+    ],
+  },
 };

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2020-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Beerschot/jaarrekening-2020-06-30-individual.md",
- "generado": "2026-10-18T19:16:11.867Z",
+ "generado": "2026-10-19T14:54:28.763Z",
  "estado": "ok",
  "clubId": "beerschot-be",
  "year": 2020,
@@ -31,8 +31,18 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "detalle": "cierra (como impresos)",
    "dif": 0.0000010000000019161348
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2019 de este documento suma ingresos 7.865797; el sitio tiene 7.890565"
   },
   {
    "nombre": "documento del año 2021",
@@ -42,22 +52,14 @@
   {
    "nombre": "documento del año 2019",
    "ok": true,
-   "detalle": "ingresos de 2019: 7.890565 en jaarrekening-2019-06-30-individual-correction.pdf y 7.890565 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+   "detalle": "ingresos de 2019: 7.890565 en jaarrekening-2019-06-30-individual-correction.pdf y 7.865797 en este documento (columna del año anterior)"
   }
  ],
  "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L323-L360, esquema completo); cierran exacto todos sus totales impresos",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Omzet\"): ¿Se deja afuera la fila 'België' (L852) por ser una apertura geográfica que repite el total de Omzet ya desglosado por categoría?",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Omzet\"): aceptar, en jaarrekening-2024-06-30-individual.pdf",
   "duda de extraer que no afecta la carga: L935-L953 repiten 76A, 66A y 66B ya cargados en b16; se cargaron solo las partidas de detalle."
  ],
  "reintentar": null,
@@ -66,12 +68,12 @@
  "totales": {
   "ingresos": 6.825107,
   "gastos": 11.08747,
-  "financiero": 0.049408,
-  "impuesto": 0.021097,
+  "financiero": -0.042552,
+  "impuesto": -0.021097,
   "resultadoImpreso": -4.326013,
   "resultadoParaCargar": -4.326013,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -112,14 +114,6 @@
    "M": 1.71661,
    "pagina": 8,
    "linea": 327,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Niet-recurrente bedrijfsopbrengsten",
-   "lado": "ingreso",
-   "M": 0,
-   "pagina": 8,
-   "linea": 328,
    "origen": "estado"
   },
   {
@@ -171,22 +165,6 @@
    "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
   },
   {
-   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "lado": "gasto",
-   "M": 0.691688,
-   "pagina": 8,
-   "linea": 335,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
-   "lado": "gasto",
-   "M": 0,
-   "pagina": 8,
-   "linea": 336,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Bedrijfsbelastingen en -taksen",
    "lado": "gasto",
    "M": 0.01414,
@@ -209,11 +187,35 @@
    "pagina": 8,
    "linea": 340,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "M": 0.341623,
+   "pagina": 8,
+   "linea": 416,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen goodwill",
+   "lado": "gasto",
+   "M": 0.169559,
+   "pagina": 8,
+   "linea": 442,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.180506,
+   "pagina": 8,
+   "linea": 477,
+   "origen": "estado"
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {

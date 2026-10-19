@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2024-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2024-06-30-individual.md",
- "generado": "2026-10-18T19:16:12.026Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:54:29.092Z",
+ "estado": "ok",
  "clubId": "lommelsk-be",
  "year": 2024,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "480b229",
-  "a42a48f"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -28,14 +25,14 @@
    "nombre": "total de gastos",
    "ok": true,
    "detalle": "33.055588 = 33.055587",
-   "suma": 33.055588,
+   "suma": 33.05558799999999,
    "impreso": 33.055586999999996
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
-   "dif": 0.0000010000000028043132
+   "detalle": "cierra (como impresos)",
+   "dif": 9.999999956988859e-7
   },
   {
    "nombre": "lectura",
@@ -49,8 +46,8 @@
   },
   {
    "nombre": "documento del año 2023",
-   "ok": false,
-   "detalle": "ingresos de 2023: 1.328861 en jaarrekening-2023-06-30-individual.pdf y 5.806012 en este documento (columna del año anterior)"
+   "ok": true,
+   "detalle": "códigos NBB del año 2023 iguales en este documento y en jaarrekening-2023-06-30-individual.pdf (9904, 9901); los ingresos se presentan distinto (1.253901 y 5.806012)"
   },
   {
    "nombre": "año anterior cargado",
@@ -64,6 +61,7 @@
   }
  ],
  "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L264-L310, esquema completo); cierran exacto todos sus totales impresos",
   "la nota de \"Niet-recurrente bedrijfsopbrengsten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
@@ -74,12 +72,12 @@
  "totales": {
   "ingresos": 24.666754,
   "gastos": 33.055588,
-  "financiero": 0.088781,
-  "impuesto": 0.103242,
+  "financiero": -0.038451,
+  "impuesto": -0.103242,
   "resultadoImpreso": -8.530526,
   "resultadoParaCargar": -8.530526,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -155,14 +153,6 @@
    "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
   },
   {
-   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "lado": "gasto",
-   "M": 5.820455,
-   "pagina": 8,
-   "linea": 276,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Bedrijfsbelastingen en -taksen",
    "lado": "gasto",
    "M": 0.005288,
@@ -193,11 +183,27 @@
    "pagina": 26,
    "linea": 885,
    "origen": "nota que desglosa \"Niet-recurrente bedrijfskosten\""
+  },
+  {
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "M": 5.364247,
+   "pagina": 8,
+   "linea": 364,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.456208,
+   "pagina": 8,
+   "linea": 423,
+   "origen": "estado"
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {
@@ -221,11 +227,6 @@
    "etiqueta": "Belastingen",
    "M": -0.103242,
    "linea": 308
-  },
-  {
-   "etiqueta": "Regularisering van belastingen en terugneming van voorzieningen voor belastingen",
-   "M": 0,
-   "linea": 309
   }
  ]
 }

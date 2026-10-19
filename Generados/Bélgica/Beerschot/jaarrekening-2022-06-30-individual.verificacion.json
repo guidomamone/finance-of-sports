@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2022-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Beerschot/jaarrekening-2022-06-30-individual.md",
- "generado": "2026-10-18T19:16:11.904Z",
+ "generado": "2026-10-19T14:16:58.750Z",
  "estado": "ok",
  "clubId": "beerschot-be",
  "year": 2022,
@@ -31,8 +31,8 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero invertido)",
-   "dif": 0.009574999999998113
+   "detalle": "cierra (como impresos)",
+   "dif": 0.0000010000000010279564
   },
   {
    "nombre": "lectura",
@@ -53,9 +53,15 @@
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L321-L367, esquema completo); cierran exacto todos sus totales impresos",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b63 es un resumen del informe de gestión que duplica la resultatenrekening de b6-b7.",
   "duda de extraer que no afecta la carga: L828 desglose geográfico (6.497.600) no coincide con Omzet L322 (6.472.600) por 25.000; es una vista alternativa y se deja afuera.",
@@ -67,12 +73,12 @@
  "totales": {
   "ingresos": 9.234685,
   "gastos": 18.748604,
-  "financiero": 0.063319,
-  "impuesto": 0.020832,
+  "financiero": -0.052895,
+  "impuesto": 0.000832,
   "resultadoImpreso": -9.565981,
   "resultadoParaCargar": -9.565981,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero invertido"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -188,14 +194,6 @@
    "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
   },
   {
-   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "lado": "gasto",
-   "M": 1.312994,
-   "pagina": 9,
-   "linea": 333,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Geboekt",
    "lado": "gasto",
    "M": 0.053285,
@@ -242,16 +240,40 @@
    "pagina": 28,
    "linea": 937,
    "origen": "nota que desglosa \"Niet-recurrente bedrijfskosten\""
+  },
+  {
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "M": 0.876098,
+   "pagina": 9,
+   "linea": 416,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen goodwill",
+   "lado": "gasto",
+   "M": 0.169559,
+   "pagina": 9,
+   "linea": 440,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.267337,
+   "pagina": 9,
+   "linea": 473,
+   "origen": "estado"
   }
  ],
  "signosCarga": {
-  "financiero": -1,
+  "financiero": 1,
   "impuesto": 1
  },
  "financiero": [
   {
    "etiqueta": "Andere financiële opbrengsten",
-   "M": -0.005212,
+   "M": 0.005212,
    "linea": 353
   },
   {
@@ -268,7 +290,7 @@
  "impuesto": [
   {
    "etiqueta": "Belastingen",
-   "M": 0.01,
+   "M": -0.01,
    "linea": 365
   },
   {

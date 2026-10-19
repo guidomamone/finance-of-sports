@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2023-06-30-individual.pdf",
  "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2023-06-30-individual.md",
- "generado": "2026-10-18T19:16:12.116Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:54:29.148Z",
+ "estado": "ok",
  "clubId": "ohleuven-be",
  "year": 2023,
  "escala": {
@@ -12,11 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "ca845e4",
-  "ec2febf",
-  "09ce519"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -35,7 +31,7 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "detalle": "cierra (como impresos)",
    "dif": 0
   },
   {
@@ -60,10 +56,13 @@
   }
  ],
  "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L430-L478, esquema completo); cierran exacto todos sus totales impresos",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b76 es una versión resumida del estado de resultados ya cargado de b10-b11, solo con el ejercicio actual.",
   "duda de extraer ya contestada para el club (antes de su alta) (fila-ilegible, \"Omzet\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
-  "duda de extraer ya contestada para el club (antes de su alta) (fila-ilegible, \"Andere financiële opbrengsten\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
+  "duda de extraer ya contestada para el club (antes de su alta) (fila-ilegible, \"Andere financiële opbrengsten\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en jaarrekening-2023-06-30-individual.pdf",
+  "duda de localizar contestada por la respuesta de Guido sobre el mismo cuadro (b42, to-do 211): el cuadro queda afuera. \"¿Se cargan como desglose los cuadros de la nota de resultados (b42, b44, b45, b46) aunque solo muestran códigos sin etiquetas de renglón visibles?\" | respondida: \"¿Se deja afuera la fila código 740 (153.101) de L1578 como desglose de 'Andere bedrijfsopbrengsten'?\""
  ],
  "reintentar": null,
  "reintentado": false,
@@ -71,12 +70,12 @@
  "totales": {
   "ingresos": 21.345701,
   "gastos": 39.138613,
-  "financiero": 0.809855,
-  "impuesto": 0.265369,
+  "financiero": -0.775471,
+  "impuesto": -0.265369,
   "resultadoImpreso": -18.833752,
   "resultadoParaCargar": -18.833752,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -160,14 +159,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)",
-   "lado": "gasto",
-   "M": 0,
-   "pagina": 8,
-   "linea": 443,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "640",
    "lado": "gasto",
    "M": 0.806932,
@@ -193,8 +184,8 @@
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {

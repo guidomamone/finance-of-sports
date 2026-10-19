@@ -1,7 +1,7 @@
 {
  "md": "Clubes/Bélgica/Beerschot/jaarrekening-2022-06-30-individual.md",
- "generatedAt": "2026-10-18T15:33:34.712Z",
- "rubrosHuella": "f2ebeee25fe6e8751c95dc6d98dcdfc4243da235",
+ "generatedAt": "2026-10-19T14:23:31.655Z",
+ "rubrosHuella": "ad8a8eeef54d760c3c388623025b42aff775e24a",
  "rubros": [
   {
    "label": "Ticketing & abonnementen",
@@ -46,6 +46,24 @@
    "section": "estado",
    "choice": "other_income",
    "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Terugneming van afschrijvingen en van waardeverminderingen op immateriële en materiële vaste activa",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Niet-recurrente bedrijfsopbrengsten\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Meerwaarden bij de realisatie van immateriële en materiële vaste activa",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Niet-recurrente bedrijfsopbrengsten\"",
+   "choice": "other_income",
+   "confidence": 0.97,
    "desdeCache": true
   },
   {
@@ -94,6 +112,15 @@
    "desdeCache": true
   },
   {
+   "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
+   "choice": "wages_squad",
+   "confidence": 0.45,
+   "desdeCache": true
+  },
+  {
    "label": "Andere personeelskosten",
    "lado": "expense",
    "page": 25,
@@ -103,12 +130,12 @@
    "desdeCache": true
   },
   {
-   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "label": "Geboekt",
    "lado": "expense",
-   "page": 9,
-   "section": "estado",
-   "choice": "depreciation",
-   "confidence": 0.87,
+   "page": 26,
+   "section": "nota que desglosa \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\"",
+   "choice": "player_impairment",
+   "confidence": 0.52,
    "desdeCache": true
   },
   {
@@ -130,96 +157,13 @@
    "desdeCache": true
   },
   {
-   "label": "Geboekt",
+   "label": "Minderwaarden bij de realisatie van immateriële en materiële vaste activa",
    "lado": "expense",
-   "page": 26,
-   "section": "nota que desglosa \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\"",
-   "choice": "player_impairment",
-   "confidence": 0.52,
-   "top3": [
-    [
-     "player_impairment",
-     0.5599999999999999
-    ],
-    [
-     "other_expenses",
-     0.31
-    ],
-    [
-     "other_amortisation",
-     0.03
-    ]
-   ],
-   "tokens": 851
-  },
-  {
-   "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
-   "lado": "expense",
-   "page": 25,
-   "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
-   "choice": "wages_squad",
-   "confidence": 0.45,
-   "top3": [
-    [
-     "wages_squad",
-     0.5
-    ],
-    [
-     "admin_general_expense",
-     0.38
-    ],
-    [
-     "other_expenses",
-     0.12
-    ]
-   ],
-   "tokens": 1037
-  },
-  {
-   "label": "Terugneming van afschrijvingen en van waardeverminderingen op immateriële en materiële vaste activa",
-   "lado": "revenue",
    "page": 28,
-   "section": "nota que desglosa \"Niet-recurrente bedrijfsopbrengsten\"",
-   "choice": "other_income",
-   "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1117
-  },
-  {
-   "label": "Meerwaarden bij de realisatie van immateriële en materiële vaste activa",
-   "lado": "revenue",
-   "page": 28,
-   "section": "nota que desglosa \"Niet-recurrente bedrijfsopbrengsten\"",
-   "choice": "other_income",
-   "confidence": 0.97,
-   "top3": [
-    [
-     "other_income",
-     0.97
-    ],
-    [
-     "player_sales",
-     0.03
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1086
+   "section": "nota que desglosa \"Niet-recurrente bedrijfskosten\"",
+   "choice": "exceptional_items",
+   "confidence": 0.92,
+   "desdeCache": true
   },
   {
    "label": "Andere niet-recurrente bedrijfskosten",
@@ -228,44 +172,34 @@
    "section": "nota que desglosa \"Niet-recurrente bedrijfskosten\"",
    "choice": "exceptional_items",
    "confidence": 0.92,
-   "top3": [
-    [
-     "exceptional_items",
-     0.93
-    ],
-    [
-     "other_expenses",
-     0.07
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1041
+   "desdeCache": true
   },
   {
-   "label": "Minderwaarden bij de realisatie van immateriële en materiële vaste activa",
+   "label": "Afschrijvingen immateriële vaste activa (spelers)",
    "lado": "expense",
-   "page": 28,
-   "section": "nota que desglosa \"Niet-recurrente bedrijfskosten\"",
-   "choice": "exceptional_items",
-   "confidence": 0.92,
-   "top3": [
-    [
-     "exceptional_items",
-     0.93
-    ],
-    [
-     "player_impairment",
-     0.05
-    ],
-    [
-     "depreciation",
-     0.01
-    ]
-   ],
-   "tokens": 1200
+   "page": 9,
+   "section": "estado",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Afschrijvingen goodwill",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "other_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Afschrijvingen materiële vaste activa",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
   }
  ]
 }

@@ -3,18 +3,18 @@
   "pdf": "Clubes/Bélgica/Lierse SK/jaarrekening-2020-06-30-individual.pdf",
   "club": "liersesk-be",
   "year": 2020,
-  "generatedAt": "2026-10-18T15:27:59.393Z",
+  "generatedAt": "2026-10-19T14:16:58.853Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
-      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "label": "Brutomarge (+)/(-)",
       "lado": "expense",
       "page": 8,
       "section": "estado",
       "values": [
-        0
+        0.001475
       ],
-      "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material"
+      "glosa": "Margen bruto (+)/(-)"
     },
     {
       "label": "Andere bedrijfskosten",

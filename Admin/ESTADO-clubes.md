@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 312 clubes, 1053 ejercicios, 21 países.
+TOTAL: 312 clubes, 1078 ejercicios, 21 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -53,21 +53,21 @@ ARGENTINA (19)
 BE (22)
   Anderlecht            1 ejercicio (2024/2025), balance, EUR
   Antwerp               1 ejercicio (2024/2025), balance, EUR
-  Beerschot             1 ejercicio (2024/2025), balance, EUR
+  Beerschot             7 ejercicios (2018/2019 a 2024/2025), balance, EUR
   Cercle Brugge         1 ejercicio (2024/2025), balance, EUR
   Charleroi             1 ejercicio (2024/2025), balance, EUR
   Club Brugge           1 ejercicio (2024/2025), balance, EUR
   Dender EH             1 ejercicio (2024/2025), balance, EUR
   Genk                  1 ejercicio (2024/2025), balance, EUR
   Gent                  1 ejercicio (2024/2025), balance, EUR
-  Lierse SK             1 ejercicio (2024/2025), balance, EUR
-  Lokeren-Temse         1 ejercicio (2024/2025), balance, EUR
+  Lierse SK             4 ejercicios (2021/2022 a 2024/2025), balance, EUR
+  Lokeren-Temse         3 ejercicios (2022/2023 a 2024/2025), balance, EUR
   Lommel SK             2 ejercicios (2017/2018, 2024/2025), balance, EUR
   Mechelen              1 ejercicio (2024/2025), balance, EUR
-  OH Leuven             1 ejercicio (2024/2025), balance, EUR, sin deuda/caja
-  Patro Eisden          1 ejercicio (2024/2025), balance, EUR
+  OH Leuven             5 ejercicios (2018/2019, 2020/2021, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
+  Patro Eisden          7 ejercicios (2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2023/2024, 2024/2025), balance, EUR
   RAAL La Louvière      1 ejercicio (2024/2025), balance, EUR
-  RWDM                  2 ejercicios (2019/2020, 2024/2025), balance, EUR
+  RWDM                  6 ejercicios (2019/2020 a 2024/2025), balance, EUR
   Sint-Truiden          1 ejercicio (2024/2025), balance, EUR
   Standard Liège        1 ejercicio (2024/2025), balance, EUR
   Union Saint-Gilloise  1 ejercicio (2024/2025), balance, EUR

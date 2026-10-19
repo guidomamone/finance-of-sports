@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.pdf",
  "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.md",
- "generado": "2026-10-18T19:16:12.034Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:54:29.120Z",
+ "estado": "ok",
  "clubId": "ohleuven-be",
  "year": 2020,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "79d5b84",
-  "98af732"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -34,7 +31,7 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "detalle": "cierra (como impresos)",
    "dif": 5.329070518200751e-15
   },
   {
@@ -43,32 +40,29 @@
    "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2019 de este documento suma ingresos 2.80194; el sitio tiene 2.80194"
+  },
+  {
    "nombre": "documento del año 2021",
-   "ok": null,
-   "detalle": "no se puede comparar: jaarrekening-2021-06-30-individual.pdf no trae la columna del año anterior"
+   "ok": true,
+   "detalle": "ingresos de 2020: 7.628062 en este documento y 7.628062 en jaarrekening-2021-06-30-individual.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2019",
    "ok": true,
-   "detalle": "ingresos de 2019: 2.801941 en jaarrekening-2019-06-30-individual.pdf y 2.80194 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+   "detalle": "ingresos de 2019: 2.80194 en jaarrekening-2019-06-30-individual.pdf y 2.80194 en este documento (columna del año anterior)"
   }
  ],
  "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L407-L444, esquema completo); cierran exacto todos sus totales impresos",
   "la nota de \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\" no suma el renglón (0.032891 contra 0.02665, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Niet-recurrente bedrijfskosten\" no suma el renglón (0.674559 contra 0.674559, sumando sus renglones): quedó el renglón del estado",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b26 es una versión resumida de la cuenta de resultados ya presente en b5 (VOL 4).",
   "duda de localizar que no afecta la carga: b1 indica que el ejercicio anterior va de 01-01 a 30-06, no es un período de 12 meses comparable.",
+  "duda de extraer ya contestada para el club (columna, \"Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)\"): aceptar, en jaarrekening-2020-06-30-individual.pdf",
   "duda de extraer que no afecta la carga: En b20 (texto sin tabla) L1613 tiene un solo importe y 567.917+106.642=674.559 cuadra con el actual.",
   "duda de extraer que no afecta la carga: La nota b21 sólo tiene columna Boekjaar (L1650) y 610 coincide con L442.",
   "duda de extraer que no afecta la carga: Ningún bloque imprime la escala; el formulario BNB usa euros."
@@ -101,12 +95,12 @@
  "totales": {
   "ingresos": 7.628062,
   "gastos": 21.866696,
-  "financiero": 0.204074,
-  "impuesto": 0.00061,
+  "financiero": -0.198914,
+  "impuesto": -0.00061,
   "resultadoImpreso": -14.438158,
   "resultadoParaCargar": -14.438158,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -263,8 +257,8 @@
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {

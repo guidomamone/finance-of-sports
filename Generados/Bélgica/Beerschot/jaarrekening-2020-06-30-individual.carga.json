@@ -1,15 +1,10 @@
 {
  "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2020-06-30-individual.pdf",
- "generado": "2026-10-18T19:18:17.852Z",
- "frena": [
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Cuotas sociales. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-19T14:54:32.490Z",
+ "frena": [],
  "avisos": [
-  "gastos: ningún total impreso igual a la suma de las líneas (-11.03747); queda la suma, verificada por el resultado del ejercicio",
-  "gestión: ningún presidente confirmado cubre 2020 (cierre 2020-06-30); pregunta en la cola (no frena)"
+  "\"Cuotas sociales\" en 0: real, por el ajuste cero-real del club (jaarrekening-2025-06-30-individual.pdf, 2026-10-18) y ningún año cargado la tiene con monto",
+  "gastos: ningún total impreso igual a la suma de las líneas (-11.03747); queda la suma, verificada por el resultado del ejercicio"
  ],
  "ejercicio": {
   "clubId": "beerschot-be",
@@ -61,16 +56,6 @@
     "rawLabel": "Andere bedrijfsopbrengsten",
     "normalizedCategory": "other_income",
     "amountNative": 1.71661,
-    "disclosureLevel": "aggregated",
-    "_pag": 8,
-    "_escalon": 0,
-    "_conf": 1,
-    "_fuenteCat": "categorias.json"
-   },
-   {
-    "rawLabel": "Niet-recurrente bedrijfsopbrengsten",
-    "normalizedCategory": "other_income",
-    "amountNative": 0,
     "disclosureLevel": "aggregated",
     "_pag": 8,
     "_escalon": 0,
@@ -140,26 +125,6 @@
     "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
-    "rawLabel": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-    "normalizedCategory": "player_amortisation",
-    "amountNative": -0.691688,
-    "disclosureLevel": "aggregated",
-    "_pag": 8,
-    "_escalon": 0,
-    "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
-   },
-   {
-    "rawLabel": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
-    "normalizedCategory": "other_expenses",
-    "amountNative": 0,
-    "disclosureLevel": "aggregated",
-    "_pag": 8,
-    "_escalon": 0,
-    "_conf": 1,
-    "_fuenteCat": "categorias.json"
-   },
-   {
     "rawLabel": "Bedrijfsbelastingen en -taksen",
     "normalizedCategory": "admin_general_expense",
     "amountNative": -0.01414,
@@ -183,6 +148,36 @@
     "rawLabel": "Niet-recurrente bedrijfskosten",
     "normalizedCategory": "exceptional_items",
     "amountNative": -0.05,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen immateriële vaste activa (spelers)",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -0.341623,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen goodwill",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -0.169559,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen materiële vaste activa",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.180506,
     "disclosureLevel": "aggregated",
     "_pag": 8,
     "_escalon": 0,
@@ -234,7 +229,7 @@
    "title": "Beerschot — jaarrekening-2020-06-30-individual (ejercicio 2020)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Bélgica/Beerschot/jaarrekening-2020-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Beerschot/jaarrekening-2020-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Bélgica/Beerschot/jaarrekening-2020-06-30-individual.md",
@@ -242,13 +237,14 @@
  "periodo": {
   "tipo": "anual",
   "meses": 12,
+  "inicio": "2019-07-01",
   "cierre": "2020-06-30",
+  "cierreDe": "período del formulario (to-do 298 f)",
   "evidencia": {
-   "pagina": 30,
-   "texto": "| | 30/06/2020 | % | 30/06/2019 | % |"
+   "pagina": 1,
+   "texto": "met betrekking tot het boekjaar dat de periode dekt van 01-07-2019 tot 30-06-2020"
   },
-  "confianza": "media",
-  "cierreDe": "encabezados de tablas (escalón 1)",
+  "confianza": "alta",
   "anual": "temporada"
  },
  "clubId": "beerschot-be",
@@ -334,21 +330,6 @@
    "enLista": true,
    "destino": "revenue",
    "amountNative": 1.71661
-  },
-  {
-   "label": "Niet-recurrente bedrijfsopbrengsten",
-   "page": 8,
-   "native": 0,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0,
-   "cat": "other_income",
-   "conf": 1,
-   "escalon": 0,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "destino": "revenue",
-   "amountNative": 0
   },
   {
    "label": "Aankopen",
@@ -443,37 +424,6 @@
    "amountNative": -0.083452
   },
   {
-   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "page": 8,
-   "native": 0.691688,
-   "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0.691688,
-   "cat": "player_amortisation",
-   "conf": 1,
-   "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
-   "enLista": true,
-   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): la fila se partió con ajustes fila + categoria según la nota de activos fijos (pases / bienes de uso)",
-   "destino": "expense",
-   "amountNative": -0.691688
-  },
-  {
-   "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
-   "page": 8,
-   "native": 0,
-   "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0,
-   "cat": "other_expenses",
-   "conf": 1,
-   "escalon": 0,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "destino": "expense",
-   "amountNative": 0
-  },
-  {
    "label": "Bedrijfsbelastingen en -taksen",
    "page": 21,
    "native": 0.01414,
@@ -517,6 +467,51 @@
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.05
+  },
+  {
+   "label": "Afschrijvingen immateriële vaste activa (spelers)",
+   "page": 8,
+   "native": 0.341623,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.341623,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.341623
+  },
+  {
+   "label": "Afschrijvingen goodwill",
+   "page": 8,
+   "native": 0.169559,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.169559,
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.169559
+  },
+  {
+   "label": "Afschrijvingen materiële vaste activa",
+   "page": 8,
+   "native": 0.180506,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.180506,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.180506
   },
   {
    "label": "Andere financiële opbrengsten",
@@ -574,11 +569,6 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Cuotas sociales"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"Omzet\")": "gastos con signo",
@@ -613,10 +603,9 @@
   }
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de be 2020 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "be-challengerproleague",
+  "fuente": "roster cacheado de \"2019–20 Belgian First Division B\" (tools/club-league-reference/be.json), coincidencia exacta \"Beerschot\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -655,16 +644,16 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de be 2020 cacheada",
-   "estado": "pendiente"
+   "valor": "be-challengerproleague",
+   "fuente": "roster cacheado de \"2019–20 Belgian First Division B\" (tools/club-league-reference/be.json), coincidencia exacta \"Beerschot\"",
+   "estado": "ok"
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
-  "lineasIngreso": 6,
-  "lineasGasto": 11,
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 5,
+  "lineasGasto": 12,
   "metaFilas": 5,
   "excluidas": 0
  }

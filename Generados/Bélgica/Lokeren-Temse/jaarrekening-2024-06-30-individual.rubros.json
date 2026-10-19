@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2024-06-30-individual.pdf",
   "club": "lokerentemse-be",
   "year": 2024,
-  "generatedAt": "2026-10-18T19:16:11.968Z",
+  "generatedAt": "2026-10-19T14:16:59.025Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -17,16 +17,6 @@
       "glosa": "Margen bruto (+)/(-)"
     },
     {
-      "label": "Waarvan: niet-recurrente bedrijfsopbrengsten",
-      "lado": "revenue",
-      "page": 6,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "De los cuales: ingresos de explotación no recurrentes"
-    },
-    {
       "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
       "lado": "expense",
       "page": 6,
@@ -37,16 +27,6 @@
       "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
     },
     {
-      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-      "lado": "expense",
-      "page": 6,
-      "section": "estado",
-      "values": [
-        0.033948
-      ],
-      "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material"
-    },
-    {
       "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
       "lado": "expense",
       "page": 6,
@@ -54,7 +34,7 @@
       "values": [
         -0.016419
       ],
-      "glosa": "Correcciones de valor sobre existencias, pedidos en curso y deudores comerciales: dotaciones (reversiones) (+)/(-)"
+      "glosa": "Deterioros de valor de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
     },
     {
       "label": "Andere bedrijfskosten",
@@ -75,6 +55,26 @@
         0.013466
       ],
       "glosa": "Gastos de explotación no recurrentes"
+    },
+    {
+      "label": "Afschrijvingen immateriële vaste activa (spelers)",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.00012
+      ],
+      "glosa": "Amortización de inmovilizado intangible (jugadores)"
+    },
+    {
+      "label": "Afschrijvingen materiële vaste activa",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.033828
+      ],
+      "glosa": "Amortización de inmovilizado material"
     }
   ]
 }

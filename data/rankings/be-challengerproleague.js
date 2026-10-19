@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["be-challengerproleague"] = {
   2025: {
     leagueSize: null,
+    wiki: {"t":"2024–25 Challenger Pro League","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"rwdm-be", revenue:17.785, reportType:"official_balance_sheet",
         sourceId:"rwdm-be-jaarrekening-2025-06-30-individual",
@@ -22,6 +23,89 @@ window.RANKINGS["be-challengerproleague"] = {
       { id:"lokerentemse-be", revenue:1.381, reportType:"official_balance_sheet",
         sourceId:"lokerentemse-be-jaarrekening-2025-06-30-individual",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.331],["Otros ingresos",1.049]] },
+    ],
+  },
+  2024: {
+    leagueSize: null,
+    wiki: {"t":"2023–24 Challenger Pro League","lang":"en","at":"2026-10-19","n":16},
+    clubs: [
+      { id:"beerschot-be", revenue:10.109, reportType:"official_balance_sheet",
+        sourceId:"beerschot-be-jaarrekening-2024-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",6.582],["Otros ingresos",3.527]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"patroeisden-be", revenue:3.287, reportType:"official_balance_sheet",
+        sourceId:"patroeisden-be-jaarrekening-2024-06-30-individual-correction",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",3.287]] },
+      { id:"liersesk-be", revenue:3.101, reportType:"official_balance_sheet",
+        sourceId:"liersesk-be-jaarrekening-2024-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",3.101]] },
+    ],
+  },
+  2023: {
+    leagueSize: null,
+    wiki: {"t":"2022–23 Challenger Pro League","lang":"en","at":"2026-10-19","n":12},
+    clubs: [
+      { id:"beerschot-be", revenue:8.677, reportType:"official_balance_sheet",
+        sourceId:"beerschot-be-jaarrekening-2023-06-30-individual",
+        mix:[["Comercial / Sponsors",3.347],["Estadio",1.478],["Televisión",2.032],["Otros ingresos",1.82]] },
+      { id:"liersesk-be", revenue:2.777, reportType:"official_balance_sheet",
+        sourceId:"liersesk-be-jaarrekening-2023-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.777]] },
+      { id:"rwdm-be", revenue:1.77, reportType:"official_balance_sheet",
+        sourceId:"rwdm-be-jaarrekening-2023-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.77]] },
+    ],
+  },
+  2022: {
+    leagueSize: null,
+    wiki: {"t":"2021–22 Belgian First Division B","lang":"en","at":"2026-10-19","n":8},
+    clubs: [
+      { id:"liersesk-be", revenue:1.738, reportType:"official_balance_sheet",
+        sourceId:"liersesk-be-jaarrekening-2022-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.738]] },
+      { id:"rwdm-be", revenue:1.124, reportType:"official_balance_sheet",
+        sourceId:"rwdm-be-jaarrekening-2022-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.124]] },
+    ],
+  },
+  2021: {
+    leagueSize: null,
+    wiki: {"t":"2020–21 Belgian First Division B","lang":"en","at":"2026-10-19","n":8},
+    clubs: [
+      { id:"rwdm-be", revenue:1.839, reportType:"official_balance_sheet",
+        sourceId:"rwdm-be-jaarrekening-2021-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.839]] },
+    ],
+  },
+  2020: {
+    leagueSize: null,
+    wiki: {"t":"2019–20 Belgian First Division B","lang":"en","at":"2026-10-19","n":8},
+    clubs: [
+      { id:"beerschot-be", revenue:7.643, reportType:"official_balance_sheet",
+        sourceId:"beerschot-be-jaarrekening-2020-06-30-individual",
+        mix:[["Comercial / Sponsors",2.303],["Estadio",2.454],["Televisión",0.963],["Otros ingresos",1.922]] },
+    ],
+  },
+  2019: {
+    leagueSize: null,
+    wiki: {"t":"2018–19 Belgian First Division B","lang":"en","at":"2026-10-19","n":8},
+    clubs: [
+      { id:"beerschot-be", revenue:8.979, reportType:"official_balance_sheet",
+        sourceId:"beerschot-be-jaarrekening-2019-06-30-individual-correction",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",6.661],["Otros ingresos",2.318]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+      { id:"ohleuven-be", revenue:3.189, reportType:"official_balance_sheet",
+        sourceId:"ohleuven-be-jaarrekening-2019-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.749],["Otros ingresos",1.44]] },
+    ],
+  },
+  2016: {
+    leagueSize: null,
+    wiki: {"t":"2015–16 Belgian Second Division","lang":"en","at":"2026-10-19","n":17},
+    clubs: [
+      { id:"patroeisden-be", revenue:0.808, reportType:"official_balance_sheet",
+        sourceId:"patroeisden-be-jaarrekening-2016-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",0.808]] },
     ],
   },
 };

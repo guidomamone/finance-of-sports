@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Lommel SK/jaarrekening-2023-06-30-individual.pdf",
   "club": "lommelsk-be",
   "year": 2023,
-  "generatedAt": "2026-10-18T19:16:12.023Z",
+  "generatedAt": "2026-10-19T14:16:59.147Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -27,16 +27,6 @@
       "glosa": "Remuneraciones, cargas sociales y pensiones"
     },
     {
-      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-      "lado": "expense",
-      "page": 7,
-      "section": "estado",
-      "values": [
-        5.282205
-      ],
-      "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material"
-    },
-    {
       "label": "Andere bedrijfskosten",
       "lado": "expense",
       "page": 7,
@@ -55,6 +45,26 @@
         0.016018
       ],
       "glosa": "Gastos de explotación no recurrentes"
+    },
+    {
+      "label": "Afschrijvingen immateriële vaste activa (spelers)",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        4.986963
+      ],
+      "glosa": "Amortización del inmovilizado intangible (jugadores)"
+    },
+    {
+      "label": "Afschrijvingen materiële vaste activa",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.295242
+      ],
+      "glosa": "Amortización del inmovilizado material"
     }
   ]
 }

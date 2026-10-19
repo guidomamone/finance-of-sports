@@ -92,6 +92,176 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 alta-club.mjs (2026-10-18): null, SIN VERIFICAR (sin caché de rosters para be (tools/club-league-reference/be.json)).
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Bélgica/OH Leuven/jaarrekening-2024-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/OH Leuven/jaarrekening-2024-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Omzet | pág. 8, precedente |
+| 2 | Andere bedrijfsopbrengsten | pág. 8, precedente |
+| 3 | Niet-recurrente bedrijfsopbrengsten | pág. 8, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Aankopen | pág. 8, precedente |
+| 2 | Voorraad: afname (toename) | pág. 8, precedente |
+| 3 | Diensten en diverse goederen | pág. 8, precedente |
+| 4 | 620 | pág. 24, precedente |
+| 5 | 621 | pág. 24, precedente |
+| 6 | 623 | pág. 24, precedente |
+| 7 | Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa | pág. 8, precedente |
+| 8 | Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) | pág. 8, precedente |
+| 9 | Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) | pág. 8, precedente |
+| 10 | Andere bedrijfskosten | pág. 8, precedente |
+| 11 | 6630 | pág. 27, ? 0.75 |
+| 12 | 664/7 | pág. 27, Claude 0.8 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): be-proleague, verificado contra roster cacheado de "2023–24 Belgian Pro League" (tools/club-league-reference/be.json), coincidencia exacta "OH Leuven".
+```
+
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Bélgica/OH Leuven/jaarrekening-2023-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/OH Leuven/jaarrekening-2023-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Omzet | pág. 8, precedente |
+| 2 | Andere bedrijfsopbrengsten | pág. 8, precedente |
+| 3 | Niet-recurrente bedrijfsopbrengsten | pág. 8, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Aankopen | pág. 8, precedente |
+| 2 | Voorraad: afname (toename) | pág. 8, precedente |
+| 3 | Diensten en diverse goederen | pág. 8, precedente |
+| 4 | 620 | pág. 24, precedente |
+| 5 | 621 | pág. 24, precedente |
+| 6 | 623 | pág. 24, precedente |
+| 7 | Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa | pág. 8, precedente |
+| 8 | 640 | pág. 25, precedente |
+| 9 | 641/8 | pág. 25, Jev 0.9 |
+| 10 | Niet-recurrente bedrijfskosten | pág. 8, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): be-proleague, verificado contra roster cacheado de "2022–23 Belgian Pro League" (tools/club-league-reference/be.json), coincidencia exacta "OH Leuven".
+```
+
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Bélgica/OH Leuven/jaarrekening-2021-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/OH Leuven/jaarrekening-2021-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Omzet | pág. 8, precedente |
+| 2 | Andere bedrijfsopbrengsten | pág. 8, precedente |
+| 3 | Niet-recurrente bedrijfsopbrengsten | pág. 8, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Aankopen | pág. 8, precedente |
+| 2 | Voorraad: afname (toename) (+)/(-) | pág. 8, Jev 1 |
+| 3 | Diensten en diverse goederen | pág. 8, precedente |
+| 4 | Bezoldigingen, sociale lasten en pensioenen (+)/(-) | pág. 8, Jev 1 |
+| 5 | Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa | pág. 8, precedente |
+| 6 | Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) | pág. 8, Jev 0.99 |
+| 7 | Andere bedrijfskosten | pág. 8, precedente |
+| 8 | Niet-recurrente bedrijfskosten | pág. 8, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): be-proleague, verificado contra roster cacheado de "2020–21 Belgian First Division A" (tools/club-league-reference/be.json), coincidencia exacta "Oud-Heverlee Leuven".
+```
+
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Bélgica/OH Leuven/jaarrekening-2019-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/OH Leuven/jaarrekening-2019-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Omzet | pág. 7, precedente |
+| 2 | Andere bedrijfsopbrengsten | pág. 7, precedente |
+| 3 | Niet-recurrente bedrijfsopbrengsten | pág. 7, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Aankopen | pág. 7, precedente |
+| 2 | Voorraad: afname (toename) (+)/(-) | pág. 7, Jev 1 |
+| 3 | Diensten en diverse goederen | pág. 7, precedente |
+| 4 | Bezoldigingen, sociale lasten en pensioenen (+)/(-) | pág. 7, Jev 1 |
+| 5 | Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa | pág. 7, precedente |
+| 6 | Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) | pág. 7, Jev 0.99 |
+| 7 | Andere bedrijfskosten | pág. 7, precedente |
+| 8 | Niet-recurrente bedrijfskosten | pág. 7, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): be-challengerproleague, verificado contra roster cacheado de "2018–19 Belgian First Division B" (tools/club-league-reference/be.json), coincidencia exacta "OH Leuven".
+```
+
 ## Fuentes
 
 ### ohleuven-be-jaarrekening-2025-06-30-individual
@@ -100,4 +270,36 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### ohleuven-be-jaarrekening-2019-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/OH Leuven/jaarrekening-2019-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### ohleuven-be-jaarrekening-2021-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/OH Leuven/jaarrekening-2021-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### ohleuven-be-jaarrekening-2024-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/OH Leuven/jaarrekening-2024-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### ohleuven-be-jaarrekening-2023-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/OH Leuven/jaarrekening-2023-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

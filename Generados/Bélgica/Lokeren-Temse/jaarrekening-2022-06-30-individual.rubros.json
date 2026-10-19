@@ -3,9 +3,19 @@
   "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2022-06-30-individual.pdf",
   "club": "lokerentemse-be",
   "year": 2022,
-  "generatedAt": "2026-10-18T15:27:59.581Z",
+  "generatedAt": "2026-10-19T14:16:58.991Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
+    {
+      "label": "Overige bedrijfsopbrengsten (implícito en la Brutomarge)",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.06428
+      ],
+      "glosa": "Otros ingresos de explotación (implícito en el margen bruto)"
+    },
     {
       "label": "Omzet",
       "lado": "revenue",
@@ -37,16 +47,6 @@
       "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
     },
     {
-      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-      "lado": "expense",
-      "page": 5,
-      "section": "estado",
-      "values": [
-        0.005042
-      ],
-      "glosa": "Amortizaciones y correcciones de valor sobre gastos de constitución, inmovilizado intangible y material"
-    },
-    {
       "label": "Andere bedrijfskosten",
       "lado": "expense",
       "page": 5,
@@ -55,6 +55,16 @@
         0.002548
       ],
       "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Afschrijvingen materiële vaste activa",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.005042
+      ],
+      "glosa": "Amortización del inmovilizado material"
     }
   ]
 }

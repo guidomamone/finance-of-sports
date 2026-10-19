@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/RWDM/jaarrekening-2023-06-30-individual.pdf",
  "md": "Clubes/Bélgica/RWDM/jaarrekening-2023-06-30-individual.md",
- "generado": "2026-10-18T19:16:12.232Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:16:59.715Z",
+ "estado": "ok",
  "clubId": "rwdm-be",
  "year": 2023,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "a384c43"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -29,8 +27,13 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "detalle": "cierra (como impresos)",
    "dif": 0.0000010000000010279564
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2024",
@@ -40,17 +43,23 @@
   {
    "nombre": "documento del año 2022",
    "ok": true,
-   "detalle": "ingresos de 2022: 1.097582 en jaarrekening-2022-06-30-individual.pdf y 1.097582 en este documento (columna del año anterior)"
+   "detalle": "ingresos de 2022: 1.08213 en jaarrekening-2022-06-30-individual.pdf y 1.08213 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
   }
  ],
  "notas": [
-  "la nota de \"Waarvan: niet-recurrente bedrijfsopbrengsten\" tiene todas sus filas en 0 y da el renglón: queda el renglón, sin reintento",
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L226-L249, esquema abreviado); cierran exacto todos sus totales impresos",
   "la nota de \"Niet-recurrente bedrijfskosten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
   "duda de extraer que no afecta la carga: Esquema abreviado: Omzet (L228) y 60/61 (L229) vienen vacíos y solo se informa el margen bruto neto."
  ],
@@ -60,12 +69,12 @@
  "totales": {
   "ingresos": 1.628714,
   "gastos": 9.469568,
-  "financiero": 0.183182,
-  "impuesto": 0.002772,
+  "financiero": -0.18262,
+  "impuesto": -0.002772,
   "resultadoImpreso": -8.026247,
   "resultadoParaCargar": -8.026247,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -74,14 +83,6 @@
    "M": 1.628714,
    "pagina": 7,
    "linea": 226,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Waarvan: niet-recurrente bedrijfsopbrengsten",
-   "lado": "ingreso",
-   "M": 0,
-   "pagina": 7,
-   "linea": 227,
    "origen": "estado"
   },
   {
@@ -126,8 +127,8 @@
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {

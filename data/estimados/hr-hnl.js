@@ -1,6 +1,6 @@
 // GENERADO por tools/estimar.mjs: no editar a mano. ESTIMACIONES, no datos reales: ingreso en millones de USD del año, rango del 80% (lo-hi) y error mediano medido (%).
 window.ESTIMADOS = window.ESTIMADOS || {};
 window.ESTIMADOS["hr-hnl"] = {
-  2024: [{"id":"gorica-hr","revenue":4.629,"lo":2.585,"hi":8.752,"caso":"afuera","error":27,"de":[2025]},{"id":"istra-hr","revenue":4.954,"lo":2.766,"hi":9.365,"caso":"afuera","error":27,"de":[2025]},{"id":"osijek-hr","revenue":21.534,"lo":12.025,"hi":40.712,"caso":"afuera","error":27,"de":[2025]},{"id":"slavenbelupo-hr","revenue":6.512,"lo":3.636,"hi":12.311,"caso":"afuera","error":27,"de":[2025]},{"id":"varazdin-hr","revenue":5.879,"lo":3.283,"hi":11.115,"caso":"afuera","error":27,"de":[2025]}],
-  2025: [{"n":"Lokomotiva","revenue":4.559,"lo":1.476,"hi":14.05,"caso":"nuevo","error":48,"de":[]},{"n":"Šibenik","revenue":3.857,"lo":1.249,"hi":11.885,"caso":"nuevo","error":48,"de":[]}],
+  2024: [{"id":"gorica-hr","revenue":4.629,"lo":2.588,"hi":8.808,"caso":"afuera","error":29,"de":[2025]},{"id":"istra-hr","revenue":4.954,"lo":2.769,"hi":9.426,"caso":"afuera","error":29,"de":[2025]},{"id":"osijek-hr","revenue":21.534,"lo":12.037,"hi":40.975,"caso":"afuera","error":29,"de":[2025]},{"id":"slavenbelupo-hr","revenue":6.512,"lo":3.64,"hi":12.39,"caso":"afuera","error":29,"de":[2025]},{"id":"varazdin-hr","revenue":5.879,"lo":3.286,"hi":11.187,"caso":"afuera","error":29,"de":[2025]}],
+  2025: [{"n":"Lokomotiva","revenue":4.496,"lo":1.456,"hi":13.872,"caso":"nuevo","error":50,"de":[]},{"n":"Šibenik","revenue":3.798,"lo":1.23,"hi":11.719,"caso":"nuevo","error":50,"de":[]}],
 };

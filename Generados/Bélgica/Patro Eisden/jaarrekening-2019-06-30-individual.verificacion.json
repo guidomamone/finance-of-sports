@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2019-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2019-06-30-individual.md",
- "generado": "2026-10-18T19:16:12.169Z",
+ "generado": "2026-10-19T14:16:59.517Z",
  "estado": "ok",
  "clubId": "patroeisden-be",
  "year": 2019,
@@ -16,10 +16,8 @@
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": true,
-   "detalle": "0.362776 = 0.362776",
-   "suma": 0.362776,
-   "impreso": 0.362776
+   "ok": null,
+   "detalle": "el documento no lo imprime"
   },
   {
    "nombre": "total de gastos",
@@ -29,13 +27,18 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo)",
+   "detalle": "cierra (como impresos)",
    "dif": 1.1102230246251565e-16
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2020",
    "ok": true,
-   "detalle": "ingresos de 2019: 0.362776 en este documento y 0.362776 en jaarrekening-2020-06-30-individual-correction.pdf (columna del año anterior)"
+   "detalle": "códigos NBB del año 2019 iguales en este documento y en jaarrekening-2020-06-30-individual-correction.pdf (9904, 9901); los ingresos se presentan distinto (0.362776 y 0)"
   },
   {
    "nombre": "documento del año 2018",
@@ -50,10 +53,12 @@
   {
    "nombre": "primer año",
    "ok": true,
-   "detalle": "ingresos y resultado coinciden con lo impreso a 0,01% o menos y el otro total no está impreso (queda determinado): no hace falta la revisión del primer año (to-do 214, escalón 2)"
+   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
   }
  ],
  "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L230-L247, esquema abreviado); cierran exacto todos sus totales impresos",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
  ],
@@ -63,12 +68,12 @@
  "totales": {
   "ingresos": 0.362776,
   "gastos": 0.717502,
-  "financiero": 0.001198,
+  "financiero": -0.001122,
   "impuesto": 0,
   "resultadoImpreso": -0.355848,
   "resultadoParaCargar": -0.355848,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -118,18 +123,10 @@
    "pagina": 7,
    "linea": 239,
    "origen": "estado"
-  },
-  {
-   "etiqueta": "Uitzonderlijke kosten",
-   "lado": "gasto",
-   "M": 0,
-   "pagina": 7,
-   "linea": 246,
-   "origen": "estado"
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
+  "financiero": 1,
   "impuesto": 1
  },
  "financiero": [

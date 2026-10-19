@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2014-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2014-06-30-individual.md",
- "generado": "2026-10-18T19:16:12.127Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:54:29.194Z",
+ "estado": "ok",
  "clubId": "patroeisden-be",
  "year": 2014,
  "escala": {
@@ -12,13 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "40709d0",
-  "a9c9130",
-  "0d2b357",
-  "02483a3",
-  "c07f4d0"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -34,25 +28,38 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 0.0018710000000000393
+   "dif": 6.938893903907228e-17
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2015",
-   "ok": false,
-   "detalle": "ingresos de 2014: 0.266761 en este documento y 0.003113 en jaarrekening-2015-06-30-individual.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "códigos NBB del año 2014 iguales en este documento y en jaarrekening-2015-06-30-individual.pdf (9904, 9901); los ingresos se presentan distinto (0.269874 y 0.003113)"
   },
   {
    "nombre": "documento del año 2013",
-   "ok": null,
-   "detalle": "presentación distinta: ingresos de 2013 0.244242 y 0.466399; la diferencia es exactamente \"Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen\" (gasto, 222.157), que uno de los dos documentos netea"
+   "ok": true,
+   "detalle": "códigos NBB del año 2013 iguales en este documento y en jaarrekening-2013-06-30-individual.pdf (9904, 9901); los ingresos se presentan distinto (0.466399 y 0.244242)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2013: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
   }
  ],
  "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L193-L210, esquema abreviado); cierran exacto todos sus totales impresos",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar ya contestada para el club (fila-ilegible, \"Werkgeversbijdragen voor sociale verzekeringen\"): aceptar, en jaarrekening-2014-06-30-individual.pdf",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
   "duda de extraer que no afecta la carga: L249 sólo tiene 22.505 del año anterior; 354.452+4.570+3.792=362.814 cuadra."
  ],
@@ -60,9 +67,9 @@
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 0.266761,
+  "ingresos": 0.269874,
   "gastos": 0.369066,
-  "financiero": 0.014256,
+  "financiero": 0.013014,
   "impuesto": 0,
   "resultadoImpreso": -0.086178,
   "resultadoParaCargar": -0.086178,
@@ -76,6 +83,14 @@
    "M": 0.266761,
    "pagina": 5,
    "linea": 193,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Uitzonderlijke opbrengsten",
+   "lado": "ingreso",
+   "M": 0.003113,
+   "pagina": 5,
+   "linea": 208,
    "origen": "estado"
   },
   {
@@ -123,7 +138,7 @@
   },
   {
    "etiqueta": "Financiële kosten",
-   "M": 0.000621,
+   "M": -0.000621,
    "linea": 206
   }
  ],

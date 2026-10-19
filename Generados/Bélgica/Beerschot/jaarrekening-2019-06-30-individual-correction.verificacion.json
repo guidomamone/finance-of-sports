@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2019-06-30-individual-correction.pdf",
  "md": "Clubes/Bélgica/Beerschot/jaarrekening-2019-06-30-individual-correction.md",
- "generado": "2026-10-18T19:16:11.813Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:16:58.653Z",
+ "estado": "ok",
  "clubId": "beerschot-be",
  "year": 2019,
  "escala": {
@@ -23,9 +23,7 @@
    "fecha": "2026-10-18"
   }
  ],
- "cola": [
-  "bcff82d"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -38,14 +36,14 @@
    "nombre": "total de gastos",
    "ok": true,
    "detalle": "11.480791 = 11.48079",
-   "suma": 11.480790999999998,
+   "suma": 11.480790999999996,
    "impreso": 11.480789999999999
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo)",
-   "dif": 9.99999997919332e-7
+   "detalle": "cierra (como impresos)",
+   "dif": 9.99999996142975e-7
   },
   {
    "nombre": "lectura",
@@ -55,7 +53,7 @@
   {
    "nombre": "documento del año 2020",
    "ok": true,
-   "detalle": "ingresos de 2019: 7.890565 en este documento y 7.890565 en jaarrekening-2020-06-30-individual.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2019: 7.890565 en este documento y 7.865797 en jaarrekening-2020-06-30-individual.pdf (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
@@ -69,6 +67,7 @@
   }
  ],
  "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L246-L283, esquema completo); cierran exacto todos sus totales impresos",
   "la nota de \"Omzet\" no suma el renglón (11.70706 contra 5.85353, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Niet-recurrente bedrijfsopbrengsten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la lectura base no cerraba; cerró con la lectura 4",
@@ -94,12 +93,12 @@
  "totales": {
   "ingresos": 7.890565,
   "gastos": 11.480791,
-  "financiero": 0.007025,
+  "financiero": -0.005435,
   "impuesto": 0,
   "resultadoImpreso": -3.59566,
   "resultadoParaCargar": -3.59566,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -175,14 +174,6 @@
    "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
   },
   {
-   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "lado": "gasto",
-   "M": 0.429397,
-   "pagina": 6,
-   "linea": 258,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
    "lado": "gasto",
    "M": 0.048014,
@@ -205,10 +196,34 @@
    "pagina": 19,
    "linea": 804,
    "origen": "nota que desglosa \"Andere bedrijfskosten\""
+  },
+  {
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "M": 0.095607,
+   "pagina": 6,
+   "linea": 337,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen goodwill",
+   "lado": "gasto",
+   "M": 0.169559,
+   "pagina": 6,
+   "linea": 362,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.164231,
+   "pagina": 6,
+   "linea": 396,
+   "origen": "estado"
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
+  "financiero": 1,
   "impuesto": 1
  },
  "financiero": [

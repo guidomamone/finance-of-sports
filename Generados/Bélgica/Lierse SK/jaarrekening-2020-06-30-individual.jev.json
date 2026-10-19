@@ -1,0 +1,39 @@
+{
+ "md": "Clubes/Bélgica/Lierse SK/jaarrekening-2020-06-30-individual.md",
+ "generatedAt": "2026-10-19T14:23:32.410Z",
+ "rubrosHuella": "91197431292cd64430ad1b68a8df90426d7448bd",
+ "rubros": [
+  {
+   "label": "Brutomarge (+)/(-)",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1015
+  }
+ ]
+}

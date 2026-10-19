@@ -2,9 +2,9 @@
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2019-06-30-individual.md",
  "club": "patroeisden-be",
  "year": 2019,
- "generatedAt": "2026-10-18T15:39:25.955Z",
- "rubrosHuella": "748e6772c71d0ba0d283c15ad4f267e270779fa0",
- "jevHuella": "1c8a870bdc85382e809c8f8b55dab3030a7974d7",
+ "generatedAt": "2026-10-19T14:23:48.664Z",
+ "rubrosHuella": "3da11872ed22731547e3765ce88de5cec6f95a11",
+ "jevHuella": "1755c00979645e2407bd8fbaaa1330b0a65cb36b",
  "modelo": "claude-opus-5-5",
  "costUsd": 0,
  "rubros": [
@@ -42,7 +42,7 @@
    "label": "Bezoldigingen en rechtstreekse sociale voordelen",
    "lado": "expense",
    "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
-   "glosa": "Remuneraciones y beneficios sociales directos",
+   "glosa": "Remuneraciones y prestaciones sociales directas",
    "page": 9,
    "pendiente": false,
    "ya": "wages_squad",
@@ -55,7 +55,7 @@
    "label": "Werkgeversbijdragen voor sociale verzekeringen",
    "lado": "expense",
    "section": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\"",
-   "glosa": "Aportaciones patronales a la seguridad social",
+   "glosa": "Cotizaciones patronales a la seguridad social",
    "page": 9,
    "pendiente": false,
    "ya": "wages_squad",
@@ -92,19 +92,6 @@
    "escalon": 0,
    "precedenteDe": "sitio:exacto-con-contexto",
    "categoria": "other_expenses",
-   "confianza": 1
-  },
-  {
-   "label": "Uitzonderlijke kosten",
-   "lado": "expense",
-   "section": "estado",
-   "glosa": "Gastos excepcionales",
-   "page": 7,
-   "pendiente": false,
-   "ya": "exceptional_items",
-   "escalon": 1,
-   "jevConf": 1,
-   "categoria": "exceptional_items",
    "confianza": 1
   }
  ]
