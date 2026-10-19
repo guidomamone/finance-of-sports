@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 755 — Merge de pipeline 2: el informe del auditor en estonio (2026-10-18)
+
+Sin conflictos; P0 0 / P1 0.
+
+- To-do 282 g: `tools/auditoria.mjs --extractos` suma 7 frases estonias ("vandeaudiitor", "meie arvates"…): 43 de 66 `.md` estonios con
+  extracto (antes 0), los 43 con línea "sin_salvedades"; los demás países no cambian.
+- Decisión de Guido: el lote guarda las listas belgas de ascenso y amateur aunque eso les arme faltantes y estimados en Ligas.
+
 ## Versión 754 — Estadio y sponsor de los años belgas (2026-10-18)
 
 Merge de datos 2, sin conflictos; ASSET_V 1314, P0 0 / P1 0.

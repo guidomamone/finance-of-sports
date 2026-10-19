@@ -25,7 +25,7 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 Reparto en worktrees (2026-10-18, a la noche; cada uno cierra en `Admin/sesiones/<rama>.md` y la principal mergea): finanzas 294 (espera las 11 altas
-del borrador) · pipeline 298 (e a n, p, q, s, t2, u2, v), 282 g, 310, 290, 232, 279, 286, 287, 301, 302, 306, 307 · onboarding Países Bajos (lotes 93-94),
+del borrador) · pipeline 298 (e a n, p, q, s, t2, u2, v), 310, 290, 232, 279, 286, 287, 301, 302, 306, 307 · onboarding Países Bajos (lotes 93-94),
 las 11 altas del borrador, Bélgica (lote 92: 11 de 23 años pasan la compuerta; 12 amateur esperan tu decisión), 292 resto, 238, 285, 284, 283, 195, 165 c · datos-sourcing
 273 (los 80 sin sponsor) · sin sesión: ligas 295, pantallas 309 y 312, Reino Unido 261 · la principal: 291, 311 y los
 merges; el 246 va solo, con todo mergeado y sin worktrees abiertos.
@@ -61,7 +61,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 * 273: estadio y sponsor, lo que queda (12 años belgas amateur sin sponsor, a decidir; 80 sin sponsor; nombrar la compuerta)
 
 **E. Pantallas**
-* 282: quién audita, lo que queda (50 informes; la compuerta del pipeline; auditoria.mjs en estonio)
+* 282: quién audita, lo que queda (50 informes; la compuerta del pipeline)
 * 311: pedirles a los clubes el informe del auditor que no está publicado (mails)
 * 294: registro de entidades, lo que queda (las 11 altas del borrador, ya destrabadas por la 298 x)
 * 309: tamaño de liga desde la lista de Wikipedia (a decidir con Guido)
@@ -233,8 +233,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    quedan para sourcing Hamburgo 2024 (ficha de la KGaA HRB 191603 o de la AG vieja HRB 47576 en el Unternehmensregister; captcha por
    publicación, lo resuelve Guido), Lazio 2006 y 2011-2013 (figuran `sin_informe`, pero el del consolidado está en la API del club y en
    Wayback) y Roma 2022 (el link de "consolidato" baja el individual). Si el sitio publicara el consolidado de Juventus, sus líneas 2022-2025
-   cambian de informe (los dos están bajados). (f) que el pipeline exija la línea al dar de alta un club (fos-pipeline). (g) `tools/auditoria.mjs --extractos` no reconoce el informe en
-   estonio ("SÕLTUMATU VANDEAUDIITORI ARUANNE", "Meie arvates"): los extractos salen vacíos (mejora de script). En Ligas ya está la
+   cambian de informe (los dos están bajados). (f) que el pipeline exija la línea al dar de alta un club (fos-pipeline). En Ligas ya está la
    tarjeta "Las cuentas de la liga": cada entidad que entra por el 295 aparece sola.
 295. BALANCES DE LAS ENTIDADES QUE ORGANIZAN LAS LIGAS (fos-ligas; aclaración de Guido, 2026-10-18). Hecho: Premier League 2024-25
    (Deloitte), LaLiga 2024-25 (LNFP, Netadia) y J.League 2025 (Grant Thornton Taiyo), en `Ligas/` y en `data/auditoria/_ligas.js`. Falta:

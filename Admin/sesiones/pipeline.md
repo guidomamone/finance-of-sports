@@ -101,3 +101,5 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
   sin ninguna mención de auditoría (los 15 "sin_informe" y los 7 de Pärnu Vaprus, que no está en el sitio) siguen "sin frases". Ninguna de
   las frases aparece en `.md` de otros países: sus extractos no cambian. Auditoría P0 0 / P1 0.
 - **Qué queda (para TODO):** la 282 g, hecha.
+
+## Después del merge de la 282 g (2026-10-18)
