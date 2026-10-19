@@ -19,3 +19,5 @@ Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Fi
 4 documentos en carpeta (2022-2025).
 
 - Jaarverslag / jaarrekening del club (licencia KNVB, F.04) bajados de Wayback. Revisar que no sean informes de una fundación o sociales antes de cargar.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Países Bajos/Helmond Sport/wf-2024-2025-4ef6ca45.pdf` (sourceId `helmondsport-nl-wf-2024-2025-4ef6ca45`).

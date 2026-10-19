@@ -1,22 +1,10 @@
 {
  "pdf": "Clubes/Países Bajos/SC Heerenveen/SC-Heerenveen-Jaarverslag-2024-2025.pdf",
- "generado": "2026-10-19T02:28:46.596Z",
+ "generado": "2026-10-19T03:08:09.151Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (scheerenveen-nl)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "6 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Kostprijs\" -> other_expenses 0.7; \"Salariskosten\" -> wages_squad 0.75; \"Sociale lasten\" -> wages_squad 0.7; \"Overige kosten\" -> wages_squad 0.45; \"Doorberekende personeelskosten\" -> wages_squad 0.45"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
@@ -117,9 +105,9 @@
     "amountNative": -1.406246,
     "disclosureLevel": "aggregated",
     "_pag": 21,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Salariskosten",
@@ -127,9 +115,9 @@
     "amountNative": -10.939527,
     "disclosureLevel": "aggregated",
     "_pag": 35,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Pensioenlasten",
@@ -147,19 +135,19 @@
     "amountNative": -1.534143,
     "disclosureLevel": "aggregated",
     "_pag": 35,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Overige kosten",
-    "normalizedCategory": "wages_squad",
+    "normalizedCategory": "admin_general_expense",
     "amountNative": -1.676125,
     "disclosureLevel": "aggregated",
     "_pag": 35,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Doorberekende personeelskosten",
@@ -167,9 +155,9 @@
     "amountNative": -0.19887,
     "disclosureLevel": "aggregated",
     "_pag": 35,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Afschrijvingskosten vergoedingssommen",
@@ -187,9 +175,9 @@
     "amountNative": -0.37125,
     "disclosureLevel": "aggregated",
     "_pag": 8,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Afschrijvingen op materiële vaste activa",
@@ -413,11 +401,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 1.406246,
    "cat": "other_expenses",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Kostprijs' (1.406.246) es el costo de ventas de la Som der bedrijfslasten (equivale a 'Inkoopwaarde van de omzet' de Go Ahead / 'Kostprijs van de omzet' de Feyenoord): other_expenses. Cuenta del estado: 1.406.246 + 14.594.048 + 3.640.077 + 685.457 + 10.279.559 = 30.605.387 OK. [Kostprijs | 1.406.246 | 1.249.770 (L865)]",
    "destino": "expense",
    "amountNative": -1.406246
   },
@@ -429,11 +417,11 @@
    "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
    "signoFijo": 10.939527,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Salariskosten' (10.939.527) es el sueldo bruto de la nota XI Personeelskosten, que no separa plantel de no plantel: va entero a wages_squad. Nota XI: 10.939.527+245.383+1.534.143+1.676.125+198.870 = 14.594.048 OK. [Salariskosten | 10.939.527 | 10.002.037 (L1540)]",
    "destino": "expense",
    "amountNative": -10.939527
   },
@@ -461,11 +449,11 @@
    "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
    "signoFijo": 1.534143,
    "cat": "wages_squad",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Sociale lasten' (1.534.143) es cuota patronal sobre sueldos; sin separacion plantel/no plantel: wages_squad (criterio Sociale lasten). [Sociale lasten | 1.534.143 | 1.329.507 (L1542)]",
    "destino": "expense",
    "amountNative": -1.534143
   },
@@ -476,12 +464,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
    "signoFijo": 1.676125,
-   "cat": "wages_squad",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Overige kosten' (1.676.125) es 'otros costos de personal' dentro de la nota XI Personeelskosten, no 'Overige kosten' generico. Precedente de lote 93: Overige personeelskosten/lasten -> admin_general_expense (Ajax, Feyenoord, PSV). Cuidado: el rotulo suelto 'Overige kosten' confunde a la categorizacion; en el renglon de la nota XI es personal. [Overige kosten | 1.676.125 | 1.546.583 (L1543, dentro de XI Personeelskosten)]",
    "destino": "expense",
    "amountNative": -1.676125
   },
@@ -493,11 +481,11 @@
    "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
    "signoFijo": 0.19887,
    "cat": "wages_squad",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Doorberekende personeelskosten' (198.870; el ano pasado -195.901) son costos de personal facturados/refacturados a o por terceros: ajuste del costo de personal. Sin apertura plantel/no plantel va a wages_squad con el resto de la nota XI. Importe chico y signo cambiante; si se prefiere, admin_general_expense, pero conviene que quede con los sueldos para que la nota sume 14.594.048. [Doorberekende personeelskosten | 198.870 | -195.901 (L1544)]",
    "destino": "expense",
    "amountNative": -0.19887
   },
@@ -524,11 +512,11 @@
    "origen": "verificacion (nota que desglosa \"Afschrijvingen op immateriële vaste activa\")",
    "signoFijo": 0.37125,
    "cat": "player_impairment",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Afwaardering boekwaarde vertrokken spelers' (371.250) es la baja del valor en libros de jugadores que se fueron (se suma a la amortizacion de 3.268.827 para dar 'Afschrijvingen op immateriële vaste activa' 3.640.077, L303): es una desvalorizacion de derechos, player_impairment ('Deterioro de pases'). Cuenta: 3.268.827 + 371.250 = 3.640.077 OK. [Afwaardering boekwaarde vertrokken spelers | € 371.250,- (L302)]",
    "destino": "expense",
    "amountNative": -0.37125
   },
@@ -684,7 +672,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
+  "motivos": 1,
   "lineasIngreso": 8,
   "lineasGasto": 10,
   "metaFilas": 3,

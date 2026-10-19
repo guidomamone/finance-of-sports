@@ -24,3 +24,5 @@ de que esos links fueran indexados. La página actual del club
 - Reintentar 2018/19-2020/21 vía Wayback Machine en una sesión futura (no se probó en esta
   sesión).
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Países Bajos/SC Heerenveen/SC-Heerenveen-Jaarverslag-2024-2025.pdf` (sourceId `scheerenveen-nl-jaarverslag-2024-2025`).

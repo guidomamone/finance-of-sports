@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2018-2019-incl.-Jaarcijfers-DEF.pdf",
- "generado": "2026-10-19T02:28:44.731Z",
+ "generado": "2026-10-19T03:08:07.096Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (fcemmen-nl)"
-  },
-  {
-   "etapa": "alta:reportType",
-   "motivo": "¿El documento trae un estado de resultados (o de recursos y gastos) anual cargable, o hay que buscar los estados en otro documento del club?"
   }
  ],
  "avisos": [
@@ -230,7 +226,18 @@
  },
  "clubId": "fcemmen-nl",
  "year": 2019,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2018-2019-incl.-Jaarcijfers-DEF.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "el jaarverslag trae la winst-en-verliesrekening completa: la verificación cierra con el resultado impreso (831 mil) (Claude 2026-10-19)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
  "seleccion": {
   "filas": 18,
   "notasUsadas": [],
@@ -543,10 +550,9 @@
   }
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de nl 2019 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "nl-eredivisie",
+  "fuente": "roster cacheado de \"2018–19 Eredivisie\" (tools/club-league-reference/nl.json), coincidencia única por palabras \"Emmen\" = \"FC Emmen\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -561,8 +567,8 @@
   },
   "reportType": {
    "valor": "official_balance_sheet",
-   "fuente": "el .md casi no tiene tablas con números (2 filas numéricas): parece un informe/dictamen que nombra los estados sin traerlos",
-   "estado": "pregunta"
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): el jaarverslag trae la winst-en-verliesrekening completa: la verificación cierra con el resultado impreso (831 mil) (Claude 2026-10-19)",
+   "estado": "ok"
   },
   "perimetro": {
    "valor": "individual",
@@ -585,14 +591,14 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de nl 2019 cacheada",
-   "estado": "pendiente"
+   "valor": "nl-eredivisie",
+   "fuente": "roster cacheado de \"2018–19 Eredivisie\" (tools/club-league-reference/nl.json), coincidencia única por palabras \"Emmen\" = \"FC Emmen\"",
+   "estado": "ok"
   }
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 8,
   "lineasGasto": 8,
   "metaFilas": 2,

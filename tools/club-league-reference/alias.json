@@ -1,5 +1,8 @@
 {
   "_comentario": "Nombre de una lista de Wikipedia -> el mismo club con otro nombre, cuando el nombre normalizado no alcanza (lo lee tools/faltantes-liga.mjs). Cada entrada es { clubId } (club del sitio), { carpeta: 'País/Club' } (Clubes/) o { sourcing: 'País/Club' } (Admin/sourcing/). Solo el MISMO club (renombrado, con sponsor, en otro idioma); nunca un filial, un homónimo ni el club nuevo que ocupó la plaza de uno disuelto. Candidatos: node tools/faltantes-liga.mjs --sugerir.",
+  "nl": {
+    "Eindhoven": {"clubId": "fceindhoven-nl"}
+  },
   "at": {
     "Rheindorf Altach": {"sourcing": "Austria/SCR Altach"}
   },

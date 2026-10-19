@@ -1,0 +1,55 @@
+const rodajcnlRevenueLinesByYear = {
+  2025: [
+    { rawLabel:'Netto-omzet', normalizedCategory:'lump_football_operations', amountNative:7.877577, disclosureLevel:'aggregated' },
+    { rawLabel:'Resultaat vergoedingssommen', normalizedCategory:'player_sales', amountNative:0.442997, disclosureLevel:'aggregated' },
+  ],
+};
+const rodajcnlExpenseLinesByYear = {
+  2025: [
+    { rawLabel:'Personeelskosten', normalizedCategory:'wages_squad', amountNative:-5.316416, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen', normalizedCategory:'depreciation', amountNative:-0.11552, disclosureLevel:'aggregated' },
+    { rawLabel:'Overige bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-3.691078, disclosureLevel:'aggregated' },
+  ],
+};
+const rodajcnlFiscalYearMeta = {
+  2025: {
+    currency:'EUR', fxRef:'EUR@2025-06-30',
+    sourceId:'rodajc-nl-wf-2024-2025-e1694c69',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.072486, tax:0,
+    extraRows: [
+      {label:'Financiële baten en lasten', value:-0.072486},
+      {label:'Belastingen', value:null},
+    ],
+    sinDesglose: [
+      {renglon:'Netto-omzet', lado:'revenue', importe:7.877577, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:8.320574, officialTotalExpenses:9.123014, officialPAT:-0.874926,
+  },
+};
+const rodajcnlPresupuestoOverlayByYear = {};
+
+const rodajcnlPasesData = [];
+const rodajcnlResultadosData = {};
+const rodajcnlTitulosData = [];
+
+window.CLUB_GENERIC_DATA = window.CLUB_GENERIC_DATA || {};
+window.CLUB_GENERIC_DATA['rodajc-nl'] = {
+  revenueLinesByYear: rodajcnlRevenueLinesByYear, expenseLinesByYear: rodajcnlExpenseLinesByYear,
+  fiscalYearMeta: rodajcnlFiscalYearMeta, pasesData: rodajcnlPasesData,
+  resultadosData: rodajcnlResultadosData, titulosData: rodajcnlTitulosData,
+  presupuestoOverlayByYear: rodajcnlPresupuestoOverlayByYear,
+};
+
+Object.assign(sources, {
+  'rodajc-nl-wf-2024-2025-e1694c69': {
+    id:'rodajc-nl-wf-2024-2025-e1694c69', clubId:'rodajc-nl',
+    title:'Roda JC — wf-2024-2025-e1694c69 (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+});
+
+memberCountByClub['rodajc-nl'] = null;

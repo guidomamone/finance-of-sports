@@ -1,22 +1,10 @@
 {
  "pdf": "Clubes/Países Bajos/FC Twente/FC-Twente-Jaarrekening-2024-2025.pdf",
- "generado": "2026-10-19T02:28:45.213Z",
+ "generado": "2026-10-19T03:08:07.675Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (fctwente-nl)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "5 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Catering\" -> other_income 0.55; \"Pensioenpremies\" -> wages_squad 0.75; \"Inhuur personeel\" -> admin_general_expense 0.6; \"Hand- en tekengelden\" -> player_amortisation 0.6; \"Kosten intermediairs\" -> player_amortisation 0.5"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
@@ -71,13 +59,13 @@
    },
    {
     "rawLabel": "Catering",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "stadium_other",
     "amountNative": 11.451,
     "disclosureLevel": "aggregated",
     "_pag": 22,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Overige baten",
@@ -137,9 +125,9 @@
     "amountNative": -0.224,
     "disclosureLevel": "aggregated",
     "_pag": 22,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Autokosten",
@@ -153,13 +141,13 @@
    },
    {
     "rawLabel": "Inhuur personeel",
-    "normalizedCategory": "admin_general_expense",
+    "normalizedCategory": "wages_squad",
     "amountNative": -0.993,
     "disclosureLevel": "aggregated",
     "_pag": 22,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Overige personeelskosten",
@@ -237,9 +225,9 @@
     "amountNative": -0.37,
     "disclosureLevel": "aggregated",
     "_pag": 23,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Kosten intermediairs",
@@ -247,9 +235,9 @@
     "amountNative": -0.878,
     "disclosureLevel": "aggregated",
     "_pag": 23,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -387,12 +375,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Netto-omzet (11)\")",
    "signoFijo": 11.451,
-   "cat": "other_income",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "stadium_other",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Catering' (11.451, en miles de EUR) es ingreso de restauracion/horeca en el estadio; criterio fijado para Go Ahead ('Horeca' -> stadium_other). Cuenta nota 11: 10.592+30.210+7.941+382+11.451+1.114 = 61.690 OK. Aviso aparte (no es de este caso): 'Bijdragen in giften en geld' 30.210 es el renglon grande de aportes de sponsors/giften y deberia revisarse como sponsorship_commercial. [Catering | 11.451 | 9.951 (L1789)]",
    "destino": "revenue",
    "amountNative": 11.451
   },
@@ -479,11 +467,11 @@
    "origen": "verificacion (nota que desglosa \"Personeelskosten (12)\")",
    "signoFijo": 0.224,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Pensioenpremies' (224) es costo de personal; el documento no separa plantel de no plantel en la nota 12, asi que la partida entera va a wages_squad (criterio Pensioenlasten). Nota 12: 19.504+1.548+224+875+993+1.070 = 24.214 OK. [Pensioenpremies | 224 | 219 (L1799)]",
    "destino": "expense",
    "amountNative": -0.224
   },
@@ -509,12 +497,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Personeelskosten (12)\")",
    "signoFijo": 0.993,
-   "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Inhuur personeel' (993) es personal contratado externamente dentro de la nota 12 Personeelskosten, sin indicar funcion. Como el documento no separa plantel de no plantel, el costo de personal va a wages_squad (a diferencia de los 'Inhuur' de Go Ahead, que el documento abria por funcion). Alternativa: admin_general_expense (como 'Uitzendkrachten'/'Overige personeelskosten' de Go Ahead); importe chico. Autokosten (875) y Overige personeelskosten (1.070) no estan en este caso. [Inhuur personeel | 993 | 1.177 (L1801)]",
    "destino": "expense",
    "amountNative": -0.993
   },
@@ -632,11 +620,11 @@
    "origen": "verificacion (nota que desglosa \"Afschrijvingen vergoedingssommen (16)\")",
    "signoFijo": 0.37,
    "cat": "player_amortisation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Hand- en tekengelden' (370) es amortizacion de tekengelden de jugadores, dentro de 'Afschrijvingen vergoedingssommen' (4.695 + 370 = 5.065) de la nota 16: player_amortisation. [Hand- en tekengelden | 370 | 92 (L1856)]",
    "destino": "expense",
    "amountNative": -0.37
   },
@@ -648,11 +636,11 @@
    "origen": "verificacion (nota que desglosa \"Afschrijvingen vergoedingssommen (16)\")",
    "signoFijo": 0.878,
    "cat": "player_amortisation",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Kosten intermediairs' (878, comisiones de agentes/intermediarios por traspasos) el propio estado de resultados las incluye dentro de 'Afschrijvingen vergoedingssommen -5.943' (5.065 + 878 = 5.943, P&L L788), asi que player_amortisation hace que el bloque sume lo impreso. Cuenta del estado: 61.690-5.413-24.214-19.178-3.332 = 9.553 (Bedrijfsresultaat); -151 + 16.469 - 5.943 = 19.928; -5.149 = 14.779 = Nettoresultaat OK. Alternativa descartada: other_expenses (Bemiddelingskosten de Go Ahead), porque aca el documento las agrupa con las amortizaciones de derechos. [Kosten intermediairs | 878 | 595 (L1858); Afschrijvingen vergoedingssommen (16) -5.943 (L788)]",
    "destino": "expense",
    "amountNative": -0.878
   },
@@ -767,7 +755,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
+  "motivos": 1,
   "lineasIngreso": 7,
   "lineasGasto": 15,
   "metaFilas": 2,

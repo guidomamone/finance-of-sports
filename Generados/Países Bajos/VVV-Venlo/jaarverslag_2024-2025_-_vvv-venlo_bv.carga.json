@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Países Bajos/VVV-Venlo/jaarverslag_2024-2025_-_vvv-venlo_bv.pdf",
- "generado": "2026-10-19T02:28:47.136Z",
+ "generado": "2026-10-19T03:08:09.704Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (vvvvenlo-nl)"
-  },
-  {
-   "etapa": "alta:reportType",
-   "motivo": "¿El documento trae un estado de resultados (o de recursos y gastos) anual cargable, o hay que buscar los estados en otro documento del club?"
   }
  ],
  "avisos": [
@@ -168,7 +164,18 @@
  },
  "clubId": "vvvvenlo-nl",
  "year": 2025,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/VVV-Venlo/jaarverslag_2024-2025_-_vvv-venlo_bv.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "el jaarverslag de VVV-Venlo B.V. trae la cuenta de resultados (Omzet, Bedrijfsresultaat, vergoedingssommen, financieel): la verificación cierra con el resultado impreso (Claude 2026-10-19)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
  "seleccion": {
   "filas": 11,
   "notasUsadas": [],
@@ -388,8 +395,8 @@
   },
   "reportType": {
    "valor": "official_balance_sheet",
-   "fuente": "el .md casi no tiene tablas con números (5 filas numéricas): parece un informe/dictamen que nombra los estados sin traerlos",
-   "estado": "pregunta"
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): el jaarverslag de VVV-Venlo B.V. trae la cuenta de resultados (Omzet, Bedrijfsresultaat, vergoedingssommen, financieel): la verificación cierra con el resultado impreso (Claude 2026-10-19)",
+   "estado": "ok"
   },
   "perimetro": {
    "valor": "individual",
@@ -419,7 +426,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 2,
   "lineasGasto": 7,
   "metaFilas": 2,
