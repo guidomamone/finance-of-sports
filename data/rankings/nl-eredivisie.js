@@ -23,6 +23,9 @@ window.RANKINGS["nl-eredivisie"] = {
       { id:"almerecity-nl", revenue:18.476, reportType:"official_balance_sheet",
         sourceId:"almerecity-nl-wf-2024-2025-68975c13",
         mix:[["Venta de Jugadores",0.436],["Fútbol profesional (sin desglosar por la fuente)",18.04]] },
+      { id:"fortunasittard-nl", revenue:16.336, reportType:"official_balance_sheet",
+        sourceId:"fortunasittard-nl-jaarrekening-2024-2025",
+        mix:[["Comercial / Sponsors",5.713],["Estadio",2.57],["Televisión",4.339],["Premios por competencias",1.856],["Otros ingresos",1.858]] },
     ],
   },
   2024: {

@@ -8,4 +8,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'goaheadeagles-nl': { 2025: 'nl-eredivisie' },
   'almerecity-nl': { 2025: 'nl-eredivisie' },
   'excelsior-nl': { 2024: 'nl-eredivisie' },
+  'fortunasittard-nl': { 2025: 'nl-eredivisie' },
 });

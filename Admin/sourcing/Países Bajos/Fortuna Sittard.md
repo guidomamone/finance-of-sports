@@ -18,3 +18,5 @@ Todos PDF reales.
 - Profundizar 2018/19-2020/21 en una sesión futura (no se agotaron todas las variantes de
   búsqueda).
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Países Bajos/Fortuna Sittard/Fortuna-Sittard-Jaarrekening-2024-2025.pdf` (sourceId `fortunasittard-nl-jaarrekening-2024-2025`).
