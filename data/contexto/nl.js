@@ -79,4 +79,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'spartarotterdam-nl': {
     2024: {"estadio":"Spartastadion Het Kasteel","capacidad":11000,"sponsor":"De Goudse Verzekeringen, D&S Group","marca":"Robey","temporada":"2023–24 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377460717"},
   },
+  'telstar-nl': {
+    2025: {"estadio":"711 Stadion","capacidad":3060,"temporada":"2024–25 Eerste Divisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372593507"},
+  },
 });

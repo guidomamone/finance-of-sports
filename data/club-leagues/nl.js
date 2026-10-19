@@ -25,4 +25,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'rodajc-nl': { 2025: 'nl-eerstedivisie' },
   'sccambuur-nl': { 2025: 'nl-eerstedivisie' },
   'scheerenveen-nl': { 2025: 'nl-eredivisie' },
+  'telstar-nl': { 2025: 'nl-eerstedivisie' },
 });

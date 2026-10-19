@@ -30,3 +30,5 @@ ya en el momento del índice KNVB).
 
 Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Financial history» del club): 1 PDF de WorldFootball (`wf-<temporada>-<hash>.pdf`: temporadas 2022-2023; `wf-src-*`: 0 documentos del propio club enlazados desde la ficha). Son espejos de los informes oficiales publicados por el club o la liga (fuente secundaria, `secondary_mirror`); el nombre `wf-<temporada>-<hash8>` lleva el hash del archivo. Los documentos de liga (iguales para varios clubes) están en `_WorldFootball-documentos-de-liga/` del país. Sin transcribir ni cargar.
 Color de marca: null — apodo De Witte Leeuwen, camiseta local blanca (acentos negros según fuentes que no coinciden); blanco con acento, verificado 2026-10-09
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Países Bajos/Telstar/Telstar-Jaarverslag-2024-2025-full.pdf` (sourceId `telstar-nl-jaarverslag-2024-2025-full`).
