@@ -278,5 +278,45 @@ window.LIGA_AUDITORIA = {
     "linea": 715
    }
   }
+ },
+ "nl-eredivisie": {
+  "2025": {
+   "entidad": {
+    "nombre": "KNVB",
+    "legal": "Koninklijke Nederlandse Voetbalbond"
+   },
+   "auditor": {
+    "nombre": "EY",
+    "tipo": "firma",
+    "legal": "EY Accountants B.V."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "alcance": "federacion",
+   "fuente": {
+    "md": "Ligas/Países Bajos/KNVB/knvb-jaarverslag-2024-25.md",
+    "linea": 4203
+   }
+  }
+ },
+ "nl-eerstedivisie": {
+  "2025": {
+   "entidad": {
+    "nombre": "KNVB",
+    "legal": "Koninklijke Nederlandse Voetbalbond"
+   },
+   "auditor": {
+    "nombre": "EY",
+    "tipo": "firma",
+    "legal": "EY Accountants B.V."
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "alcance": "federacion",
+   "fuente": {
+    "md": "Ligas/Países Bajos/KNVB/knvb-jaarverslag-2024-25.md",
+    "linea": 4203
+   }
+  }
  }
 };

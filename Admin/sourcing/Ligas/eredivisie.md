@@ -8,8 +8,8 @@ los extractos) · barrido: 1 (Sonnet, sesión Finanzas 4) — 2026-10-19
   existen, estarían solo en el KvK.
 - La KNVB (KvK 40478591) sí publica gratis su jaarverslag 2024/25 (89 págs.) con jaarrekening y controleverklaring de EY Accountants B.V. (5-11-2025,
   sin salvedades visibles; ingresos 134,8 M €, gastos 145,4 M €), en `https://www.knvb.nl/downloads/sites/bestand/knvb/29755/knvb-jaarverslag-2024/25`
-  (índice de años: `https://www.knvb.nl/node/19236`). **No se bajó ni se cargó**: es la federación entera (fútbol amateur, pagado y selecciones), no
-  la entidad que organiza la Eredivisie; atribuirle esas cuentas a la liga sería engañoso. Si Guido quiere la KNVB como entidad de la Eerste
-  Divisie o de la federación, es otra decisión.
-- Sin canal público y gratis: la Eredivisie no lleva línea de auditoría. Candidato a mail a Eredivisie CV (sin armar).
+  (índice de años: `https://www.knvb.nl/node/19236`). Es la federación entera (fútbol amateur, pagado y selecciones), no la entidad que organiza la
+  Eredivisie. Decisión de Guido (2026-10-19): "que entre KNVB". Se cargó con `alcance: federacion` (la tarjeta dice que son las cuentas de la federación entera
+  y no las de la liga) para `nl-eredivisie` y `nl-eerstedivisie`: ver `Admin/sourcing/Ligas/knvb.md`.
+- La sociedad que organiza la liga, Eredivisie CV, sigue sin publicar. Candidato a mail a Eredivisie CV (sin armar).
 - Último chequeo: 2026-10-19.
