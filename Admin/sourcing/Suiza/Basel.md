@@ -64,3 +64,5 @@ completo, pero real y auditada).
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2013 desde `Clubes/Suiza/Basel/geschaeftsbericht-2013.pdf` (sourceId `basel-ch-geschaeftsbericht-2013`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2014 desde `Clubes/Suiza/Basel/geschaeftsbericht-2014.pdf` (sourceId `basel-ch-geschaeftsbericht-2014`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2015 desde `Clubes/Suiza/Basel/geschaeftsbericht-2015.pdf` (sourceId `basel-ch-geschaeftsbericht-2015`).

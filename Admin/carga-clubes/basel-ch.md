@@ -98,6 +98,63 @@ tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs
 alta-club.mjs (2026-10-19): ch-superleague, verificado contra roster cacheado de "2021–22 Swiss Super League" (tools/club-league-reference/ch.json), coincidencia exacta "Basel".
 ```
 
+## 2015
+
+### Ingresos
+
+```text
+2015: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Suiza/Basel/geschaeftsbericht-2015.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Suiza/Basel/geschaeftsbericht-2015.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Aus Meisterschaft | pág. 38, precedente |
+| 2 | Aus UEFA Spielen | pág. 38, precedente |
+| 3 | Aus Cup Spielen | pág. 38, precedente |
+| 4 | Aus übrigen Spielen | pág. 38, precedente |
+| 5 | Business Seats | pág. 35, precedente |
+| 6 | Sponsoring, Werbung | pág. 35, precedente |
+| 7 | Transferertrag | pág. 35, precedente |
+| 8 | TV-Entschädigungen | pág. 35, precedente |
+| 9 | Merchandising, Licensing | pág. 35, precedente |
+| 10 | Catering | pág. 35, precedente |
+| 11 | Events Non-Matchday | pág. 35, precedente |
+| 12 | Verbandseinnahmen | pág. 35, precedente |
+| 13 | Einnahmen Leistungsfussball Nachwuchs | pág. 35, precedente |
+| 14 | Sonstiger Betriebsertrag | pág. 35, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Warenaufwand | pág. 35, precedente |
+| 2 | Personalaufwand | pág. 35, precedente |
+| 3 | Organisationskosten Heimspiele | pág. 35, precedente |
+| 4 | Übriger Spielbetrieb | pág. 35, precedente |
+| 5 | Transferaufwand | pág. 35, precedente |
+| 6 | Werbung | pág. 35, precedente |
+| 7 | Administration | pág. 35, precedente |
+| 8 | Aufwand Leistungsfussball Nachwuchs | pág. 35, precedente |
+| 9 | Defizitgarantie FC Basel 1893 | pág. 35, precedente |
+| 10 | Übriger Aufwand | pág. 35, precedente |
+| 11 | Abschreibungen auf Transferrechte | pág. 35, precedente |
+| 12 | Sonderabschreibungen auf Ersatzbeschaffung | pág. 35, precedente |
+| 13 | Abschreibungen auf Sachanlagen | pág. 35, precedente |
+
+### Meta
+
+```text
+2015: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): perimetro = individual. El informe trae estados individuales sueltos (FC Basel 1893 AG, el Verein y, desde 2014, la Stadiondienst AG); no hay consolidado. La AG es la que juega el fútbol y cierra con el resultado impreso (mismo perímetro que el 2021 cargado)
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): ch-superleague, verificado contra roster cacheado de "2015–16 Swiss Super League" (tools/club-league-reference/ch.json), coincidencia exacta "Basel".
+```
+
 ## 2014
 
 ### Ingresos
@@ -707,4 +764,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Suiza/Basel/geschaeftsbericht-2014.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### basel-ch-geschaeftsbericht-2015
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Suiza/Basel/geschaeftsbericht-2015.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

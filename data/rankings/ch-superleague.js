@@ -23,6 +23,15 @@ window.RANKINGS["ch-superleague"] = {
         mix:[["Comercial / Sponsors",10.121],["Estadio",5.83],["Televisión",3.119],["Premios por competencias",21.052],["Venta de Jugadores",7.267],["Otras secciones deportivas",2.539],["Otros ingresos",15.186]] },
     ],
   },
+  2015: {
+    leagueSize: 10,
+    wiki: {"t":"2014–15 Swiss Super League","lang":"en","at":"2026-10-19","n":10},
+    clubs: [
+      { id:"basel-ch", revenue:92.332, reportType:"official_balance_sheet",
+        sourceId:"basel-ch-geschaeftsbericht-2015",
+        mix:[["Comercial / Sponsors",14.687],["Estadio",10.316],["Televisión",2.471],["Premios por competencias",33.589],["Venta de Jugadores",28.185],["Otras secciones deportivas",0.488],["Otros ingresos",2.595]] },
+    ],
+  },
   2014: {
     leagueSize: 10,
     wiki: {"t":"2013–14 Swiss Super League","lang":"en","at":"2026-10-19","n":10},

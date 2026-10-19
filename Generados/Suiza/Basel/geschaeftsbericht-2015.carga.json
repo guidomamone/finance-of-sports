@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2015.pdf",
- "generado": "2026-10-19T17:31:10.924Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Sonderabschreibungen auf Ersatzbeschaffu\" -> depreciation 0.55"
-  }
- ],
+ "generado": "2026-10-19T17:41:15.933Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del documento, 2026-10-19: El informe trae estados individuales sueltos (FC Basel 1893 AG, el Verein y, desde 2014, la Stadiondienst AG); no hay consolidado. La AG es la que juega el fútbol y cierra con el resultado impreso (mismo perímetro que el 2021 cargado))",
+  "gastos: ningún total impreso igual a la suma de las líneas (-79.25471); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2015 (cierre 2015-12-31); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -271,13 +267,13 @@
    },
    {
     "rawLabel": "Sonderabschreibungen auf Ersatzbeschaffung",
-    "normalizedCategory": "depreciation",
+    "normalizedCategory": "exceptional_items",
     "amountNative": -11.823255,
     "disclosureLevel": "aggregated",
     "_pag": 35,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Abschreibungen auf Sachanlagen",
@@ -317,7 +313,7 @@
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 92.488643,
-   "officialTotalExpenses": 91.077967,
+   "officialTotalExpenses": 79.25471,
    "officialPAT": 0.1339
   },
   "source": {
@@ -754,12 +750,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 11.823255,
-   "cat": "depreciation",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19: el propio informe lo llama ausserordentliche Aufwendungen (md 2015 L2149-2152: provisiones para futuros fichajes + Sonderabschreibungen auf Transferrechten por Ersatzbeschaffung); va a exceptional_items, no a depreciation",
    "destino": "expense",
    "amountNative": -11.823255
   },
@@ -822,14 +818,14 @@
  },
  "totales": {
   "revSum": 92.488644,
-  "expSum": -91.077965,
+  "expSum": -79.25471,
   "officialTotalRevenue": 92.488643,
-  "officialTotalExpenses": 91.077967,
+  "officialTotalExpenses": 79.25471,
   "officialPAT": 0.1339,
   "verificacion": {
    "pat": "impreso",
    "ingresos": "impreso",
-   "gastos": "impreso"
+   "gastos": "por-resultado"
   },
   "patImpreso": {
    "label": "resultado detectado por proponer-carga",
@@ -841,11 +837,6 @@
    "label": "total de ingresos (verificado)",
    "pag": null,
    "M": 92.488643
-  },
-  "expImpreso": {
-   "label": "total de gastos (verificado)",
-   "pag": null,
-   "M": 91.077967
   }
  },
  "fxCloseNuevo": {
@@ -902,8 +893,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 14,
   "lineasGasto": 13,
   "metaFilas": 3,
