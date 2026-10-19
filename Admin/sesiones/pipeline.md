@@ -501,3 +501,15 @@ localización guardada si el perímetro que se le pasa difiere del anotado (sin 
 pasa siempre el perímetro del ajuste. Probado (gratis) con el archivo de Sarpsborg 2023: mismo perímetro → "ya hecho"; anotado `consolidado`
 con ajuste `individual` → vuelve a pedir (ensayo US$ 0,056). `lote.mjs --lista prueba-completa` en ensayo: idéntico antes y después. Sarpsborg 2023 tiene
 ahora una localización nueva: la próxima corrida rehace sola validar, extraer y verificar (huellas); no cargué nada.
+
+**278 y 287, carpetas (Guido, 2026-10-19).** Hecha `tools/mudar-carpetas.mjs` (mueve sin borrar; huella sha1; se corre en la PRINCIPAL porque en el worktree
+`Clubes/` son enlaces) y su manifiesto `Admin/registros/mudanzas-carpetas.json` (11 entradas). Ensayo contra los archivos reales de la principal: 3 a unir (Swansea
+2, Cardiff 1), 21 duplicados al archivo, 0 frenadas. Lo que no estaba en lo que mostré: al abrir los documentos aparecieron más copias en la carpeta equivocada
+que informes compartidos: Atlético Mineiro en América Mineiro (3), Tenerife en Mallorca (1), Žalgiris Vilnius en Kauno (1), Omonia Aradippou en Omonia Nicosia (2),
+además de Hearts en Kelty (2: los `wf-` de Kelty son los de Hearts) y Fjölnir en ÍR (3). Silencié solo los informes de liga: Köln/Elversberg (Bundesliga 2; el PDF no
+tiene texto, me guié por el nombre del archivo) y Ljungskile/United Nordic (Ettanklubbarnas ekonomier 2025). SIN TOCAR: Botafogo-SP (su
+`demonstracoes-contabeis-2022-2023.pdf` es de Botafogo Futebol S.A. de Río; tiene `.md` trackeado, 13 derivados en Generados y una nota en
+`Admin/carga-clubes/botafogosp-br.md` que ya lo dice: queda para otra mirada), Omonia 29 Maiou y Alavés/Deportivo (PDFs sin texto, no pude decir de quién son).
+Referencias sacadas: 4 líneas de `altas-club.jsonl` (NEC Nijmegen, FC St. Gallen, FC Thun, FK RFS) y la ruta de NEC en `Admin/lotes/subagentes-pb-co.txt`. Quedan 2 casos de alta
+`name` en la cola de FC St. Gallen y FC Thun (sobre carpetas que desaparecen). **Falta correr en la principal, después del merge:**
+`node tools/mudar-carpetas.mjs` (ensayo), `--escribir`, `node tools/inventario-transcripciones.mjs`, `node tools/audit.js`.
