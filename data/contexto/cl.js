@@ -30,5 +30,6 @@ Object.assign(window.CLUB_CONTEXT, {
     2022: {"estadio":"Nacional Julio Martínez Prádanos","capacidad":48665,"sponsor":"Betano","marca":"Adidas","temporada":"2022 Campeonato Nacional Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376405614"},
     2023: {"estadio":"Nacional Julio Martínez Prádanos","capacidad":48665,"sponsor":"Betano","marca":"Adidas","temporada":"2023 Campeonato Nacional Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377011018"},
     2024: {"estadio":"Nacional Julio Martínez Prádanos","capacidad":48665,"sponsor":"JugaBet","marca":"Adidas","temporada":"2024 Campeonato Nacional Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377669943"},
+    2025: {"estadio":"Nacional Julio Martínez Prádanos","capacidad":46190,"sponsor":"JugaBet","marca":"Adidas","temporada":"2025 Liga de Primera","fuente":"https://en.wikipedia.org/w/index.php?oldid=1357232443"},
   },
 });

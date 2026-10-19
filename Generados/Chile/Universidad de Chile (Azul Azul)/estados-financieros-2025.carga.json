@@ -1,0 +1,899 @@
+{
+ "pdf": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2025.pdf",
+ "generado": "2026-10-19T17:54:43.023Z",
+ "frena": [],
+ "avisos": [
+  "perímetro heredado del año cargado más cercano (2024, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2022 consolidado, 2023 consolidado, 2024 consolidado",
+  "fx: Regla #0: antes de cargar, confirmar en el documento que NO declara su propio tipo de cambio de cierre; si lo declara, gana ese sobre el de mercado de abajo"
+ ],
+ "ejercicio": {
+  "clubId": "udechile-cl",
+  "year": 2025,
+  "cierre": "2025-12-31",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Borderó",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 12237.042,
+    "disclosureLevel": "aggregated",
+    "_pag": 72,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Publicidad",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 8819.093,
+    "disclosureLevel": "aggregated",
+    "_pag": 72,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Participación torneos Internacionales",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 6314.391,
+    "disclosureLevel": "aggregated",
+    "_pag": 72,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Derechos de T.V.",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 5315.726,
+    "disclosureLevel": "aggregated",
+    "_pag": 72,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ingresos por ventas de productos",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 1356.242,
+    "disclosureLevel": "aggregated",
+    "_pag": 72,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "(ventas de pases)",
+    "normalizedCategory": "player_sales",
+    "amountNative": 787.092,
+    "disclosureLevel": "aggregated",
+    "_pag": 72,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Cesión temporal de derechos federativos (Préstamos)",
+    "normalizedCategory": "player_sales",
+    "amountNative": 28.387,
+    "disclosureLevel": "aggregated",
+    "_pag": 72,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros (Derechos de Formación, Solidaridad, etc.)",
+    "normalizedCategory": "player_sales",
+    "amountNative": 1,
+    "disclosureLevel": "aggregated",
+    "_pag": 72,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Ingresos varios",
+    "normalizedCategory": "other_income",
+    "amountNative": 682.191,
+    "disclosureLevel": "aggregated",
+    "_pag": 72,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Borderó (costos directos)",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -5062.234,
+    "disclosureLevel": "aggregated",
+    "_pag": 73,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Remuneraciones",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -11689.019,
+    "disclosureLevel": "aggregated",
+    "_pag": 73,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortización de pases",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -3194.759,
+    "disclosureLevel": "aggregated",
+    "_pag": 73,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Deterioro de pases",
+    "normalizedCategory": "player_impairment",
+    "amountNative": -2669.92,
+    "disclosureLevel": "aggregated",
+    "_pag": 73,
+    "_escalon": 2,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Costo de venta pases de jugadores",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -49.148,
+    "disclosureLevel": "aggregated",
+    "_pag": 73,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Costo de ventas de productos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -835.121,
+    "disclosureLevel": "aggregated",
+    "_pag": 73,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Concentraciones y viajes",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -1470.264,
+    "disclosureLevel": "aggregated",
+    "_pag": 73,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Indumentaria y equipamiento deportivo",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -430.278,
+    "disclosureLevel": "aggregated",
+    "_pag": 73,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros gastos de operación",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1817.335,
+    "disclosureLevel": "aggregated",
+    "_pag": 73,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Servicios básicos",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -69.96,
+    "disclosureLevel": "aggregated",
+    "_pag": 73,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Asesorías",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -669.815,
+    "disclosureLevel": "aggregated",
+    "_pag": 73,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Depreciaciones y amortizaciones",
+    "normalizedCategory": "depreciation",
+    "amountNative": -400.884,
+    "disclosureLevel": "aggregated",
+    "_pag": 73,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Mantenciones",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -212.705,
+    "disclosureLevel": "aggregated",
+    "_pag": 73,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Remuneraciones Administración",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2227.641,
+    "disclosureLevel": "aggregated",
+    "_pag": 73,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Multas Conmebol y otras",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -898.966,
+    "disclosureLevel": "aggregated",
+    "_pag": 73,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Publicidad",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -861.889,
+    "disclosureLevel": "aggregated",
+    "_pag": 73,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Otros Gastos de Administración",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1338.657,
+    "disclosureLevel": "aggregated",
+    "_pag": 73,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "CLP",
+   "fxRef": "CLP@2025-12-31",
+   "sourceId": "udechile-cl-estados-financieros-2025",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -1146.006,
+   "tax": 94.118,
+   "extraRows": [
+    {
+     "label": "Ingresos financieros",
+     "value": 106.141
+    },
+    {
+     "label": "Costos financieros",
+     "value": -784.55
+    },
+    {
+     "label": "Diferencia de cambio",
+     "value": -24.963
+    },
+    {
+     "label": "Resultado por unidades de reajuste",
+     "value": -442.634
+    },
+    {
+     "label": "(Gasto) utilidad por impuestos a las ganancias",
+     "value": 94.118
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 35541.164,
+   "officialTotalExpenses": 33898.595,
+   "officialPAT": 590.681
+  },
+  "source": {
+   "id": "udechile-cl-estados-financieros-2025",
+   "clubId": "udechile-cl",
+   "title": "Azul Azul S.A. — estados-financieros-2025 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
+ "md": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2025.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "udechile-cl",
+ "year": 2025,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 31,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Borderó",
+   "page": 72,
+   "native": 12237.042,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 12237.042,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 12237.042
+  },
+  {
+   "label": "Publicidad",
+   "page": 72,
+   "native": 8819.093,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 8819.093,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 8819.093
+  },
+  {
+   "label": "Participación torneos Internacionales",
+   "page": 72,
+   "native": 6314.391,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 6314.391,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 6314.391
+  },
+  {
+   "label": "Derechos de T.V.",
+   "page": 72,
+   "native": 5315.726,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 5315.726,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5315.726
+  },
+  {
+   "label": "Ingresos por ventas de productos",
+   "page": 72,
+   "native": 1356.242,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 1356.242,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, media): Venta de productos del club (merchandising/indumentaria); category-map define sponsorship_commercial como sponsors, merchandising, canjes. No hay otra categoria mas fiel. [Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2025.md L3279 ]",
+   "destino": "revenue",
+   "amountNative": 1356.242
+  },
+  {
+   "label": "(ventas de pases)",
+   "page": 72,
+   "native": 787.092,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por transferencias de pases de jugadores\")",
+   "signoFijo": 787.092,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 787.092
+  },
+  {
+   "label": "Cesión temporal de derechos federativos (Préstamos)",
+   "page": 72,
+   "native": 28.387,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por transferencias de pases de jugadores\")",
+   "signoFijo": 28.387,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 28.387
+  },
+  {
+   "label": "Otros (Derechos de Formación, Solidaridad, etc.)",
+   "page": 72,
+   "native": 1,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por transferencias de pases de jugadores\")",
+   "signoFijo": 1,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, media): Es un sub-renglon del desglose de la linea 'Ingresos por transferencias de pases'; el monto real es 1.000 M$ (el '1' de la cola es la cantidad de pases). Derechos de formacion/solidaridad cobrados por transferencias van con player_sales, como el precedente de Alianza Lima (derechos de formacion y transferencias). Si se carga como linea aparte podria ir a youth_football, pero qu [Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2025.md L3280 ]",
+   "destino": "revenue",
+   "amountNative": 1
+  },
+  {
+   "label": "Ingresos varios",
+   "page": 72,
+   "native": 682.191,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 682.191,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 682.191
+  },
+  {
+   "label": "Borderó (costos directos)",
+   "page": 73,
+   "native": 5062.234,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 5062.234,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5062.234
+  },
+  {
+   "label": "Remuneraciones",
+   "page": 73,
+   "native": 11689.019,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 11689.019,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -11689.019
+  },
+  {
+   "label": "Amortización de pases",
+   "page": 73,
+   "native": 3194.759,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 3194.759,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3194.759
+  },
+  {
+   "label": "Deterioro de pases",
+   "page": 73,
+   "native": 2669.92,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 2669.92,
+   "cat": "player_impairment",
+   "conf": 0.9,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2669.92
+  },
+  {
+   "label": "Costo de venta pases de jugadores",
+   "page": 73,
+   "native": 49.148,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 49.148,
+   "cat": "player_amortisation",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -49.148
+  },
+  {
+   "label": "Costo de ventas de productos",
+   "page": 73,
+   "native": 835.121,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 835.121,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -835.121
+  },
+  {
+   "label": "Concentraciones y viajes",
+   "page": 73,
+   "native": 1470.264,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 1470.264,
+   "cat": "match_organisation_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1470.264
+  },
+  {
+   "label": "Indumentaria y equipamiento deportivo",
+   "page": 73,
+   "native": 430.278,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 430.278,
+   "cat": "other_expenses",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -430.278
+  },
+  {
+   "label": "Otros gastos de operación",
+   "page": 73,
+   "native": 1817.335,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 1817.335,
+   "cat": "other_expenses",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1817.335
+  },
+  {
+   "label": "Servicios básicos",
+   "page": 73,
+   "native": 69.96,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gasto de administración\")",
+   "signoFijo": 69.96,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -69.96
+  },
+  {
+   "label": "Asesorías",
+   "page": 73,
+   "native": 669.815,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gasto de administración\")",
+   "signoFijo": 669.815,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -669.815
+  },
+  {
+   "label": "Depreciaciones y amortizaciones",
+   "page": 73,
+   "native": 400.884,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gasto de administración\")",
+   "signoFijo": 400.884,
+   "cat": "depreciation",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -400.884
+  },
+  {
+   "label": "Mantenciones",
+   "page": 73,
+   "native": 212.705,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gasto de administración\")",
+   "signoFijo": 212.705,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -212.705
+  },
+  {
+   "label": "Remuneraciones Administración",
+   "page": 73,
+   "native": 2227.641,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gasto de administración\")",
+   "signoFijo": 2227.641,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2227.641
+  },
+  {
+   "label": "Multas Conmebol y otras",
+   "page": 73,
+   "native": 898.966,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gasto de administración\")",
+   "signoFijo": 898.966,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, media): Multas Conmebol son sanciones, no administración; admin_general_expense también sería defendible.",
+   "destino": "expense",
+   "amountNative": -898.966
+  },
+  {
+   "label": "Publicidad",
+   "page": 73,
+   "native": 861.889,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gasto de administración\")",
+   "signoFijo": 861.889,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "ladoRechazado": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, alta): Publicidad es un gasto comercial dentro de Gastos de administración.",
+   "destino": "expense",
+   "amountNative": -861.889
+  },
+  {
+   "label": "Otros Gastos de Administración",
+   "page": 73,
+   "native": 1338.657,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Gasto de administración\")",
+   "signoFijo": 1338.657,
+   "cat": "admin_general_expense",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1338.657
+  },
+  {
+   "label": "Ingresos financieros",
+   "page": null,
+   "native": 106.141,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Costos financieros",
+   "page": null,
+   "native": -784.55,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Diferencia de cambio",
+   "page": null,
+   "native": -24.963,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Resultado por unidades de reajuste",
+   "page": null,
+   "native": -442.634,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "(Gasto) utilidad por impuestos a las ganancias",
+   "page": null,
+   "native": 94.118,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por transferencias de pases de jugadores\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Costo de ventas\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Gasto de administración\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 35541.164,
+  "expSum": -33898.595,
+  "officialTotalRevenue": 35541.164,
+  "officialTotalExpenses": 33898.595,
+  "officialPAT": 590.681,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 590.681,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 35541.164
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 33898.595
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "CLP@2025-12-31",
+  "fx": 907.13,
+  "source": "market_close",
+  "label": "Dólar observado (Banco Central de Chile, publicado por el SII), última rueda hábil antes del cierre (2026-01-02, 2025-12-31 no es día hábil)"
+ },
+ "liga": {
+  "valor": "cl-primera",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (296 de 316 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "heredado del año cargado más cercano",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "CLP",
+   "fuente": "moneda de curso legal de Chile (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fx": {
+   "valor": null,
+   "fuente": "el .md menciona tipo de cambio y dólar con números en 5 línea(s), pero ninguno es una cotización plausible",
+   "estado": "pendiente"
+  },
+  "fxRef": {
+   "valor": "CLP@2025-12-31",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 907.13. --escribir agrega 'CLP@2025-12-31' a FX_CLOSE",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "udechile-cl-estados-financieros-2025",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "cl-primera",
+   "fuente": "data/club-leagues/cl.js ya tiene la fila",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 9,
+  "lineasGasto": 17,
+  "metaFilas": 5,
+  "excluidas": 0
+ }
+}

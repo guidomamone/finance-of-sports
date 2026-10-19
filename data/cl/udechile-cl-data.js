@@ -23,6 +23,17 @@ const udechileRevenueLinesByYear = {
     { rawLabel:'Ingresos por transferencias de pases de jugadores', normalizedCategory:'player_sales', amountNative:448.862, disclosureLevel:'detailed' },
     { rawLabel:'Ingresos varios', normalizedCategory:'other_income', amountNative:1053.975, disclosureLevel:'detailed' },
   ],
+  2025: [
+    { rawLabel:'Borderó', normalizedCategory:'matchday_competition', amountNative:12237.042, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidad', normalizedCategory:'sponsorship_commercial', amountNative:8819.093, disclosureLevel:'aggregated' },
+    { rawLabel:'Participación torneos Internacionales', normalizedCategory:'competition_bonus', amountNative:6314.391, disclosureLevel:'aggregated' },
+    { rawLabel:'Derechos de T.V.', normalizedCategory:'broadcasting', amountNative:5315.726, disclosureLevel:'aggregated' },
+    { rawLabel:'Ingresos por ventas de productos', normalizedCategory:'sponsorship_commercial', amountNative:1356.242, disclosureLevel:'aggregated' },
+    { rawLabel:'(ventas de pases)', normalizedCategory:'player_sales', amountNative:787.092, disclosureLevel:'aggregated' },
+    { rawLabel:'Cesión temporal de derechos federativos (Préstamos)', normalizedCategory:'player_sales', amountNative:28.387, disclosureLevel:'aggregated' },
+    { rawLabel:'Otros (Derechos de Formación, Solidaridad, etc.)', normalizedCategory:'player_sales', amountNative:1, disclosureLevel:'aggregated' },
+    { rawLabel:'Ingresos varios', normalizedCategory:'other_income', amountNative:682.191, disclosureLevel:'aggregated' },
+  ],
 };
 
 const udechileExpenseLinesByYear = {
@@ -68,6 +79,25 @@ const udechileExpenseLinesByYear = {
     { rawLabel:'Gasto de Administración: Remuneraciones Administración', normalizedCategory:'admin_general_expense', amountNative:-1387.777, disclosureLevel:'detailed' },
     { rawLabel:'Gasto de Administración: Otros Gastos de Administración', normalizedCategory:'admin_general_expense', amountNative:-1143.279, disclosureLevel:'detailed' },
   ],
+  2025: [
+    { rawLabel:'Borderó (costos directos)', normalizedCategory:'match_organisation_expense', amountNative:-5062.234, disclosureLevel:'aggregated' },
+    { rawLabel:'Remuneraciones', normalizedCategory:'wages_squad', amountNative:-11689.019, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortización de pases', normalizedCategory:'player_amortisation', amountNative:-3194.759, disclosureLevel:'aggregated' },
+    { rawLabel:'Deterioro de pases', normalizedCategory:'player_impairment', amountNative:-2669.92, disclosureLevel:'aggregated' },
+    { rawLabel:'Costo de venta pases de jugadores', normalizedCategory:'player_amortisation', amountNative:-49.148, disclosureLevel:'aggregated' },
+    { rawLabel:'Costo de ventas de productos', normalizedCategory:'other_expenses', amountNative:-835.121, disclosureLevel:'aggregated' },
+    { rawLabel:'Concentraciones y viajes', normalizedCategory:'match_organisation_expense', amountNative:-1470.264, disclosureLevel:'aggregated' },
+    { rawLabel:'Indumentaria y equipamiento deportivo', normalizedCategory:'other_expenses', amountNative:-430.278, disclosureLevel:'aggregated' },
+    { rawLabel:'Otros gastos de operación', normalizedCategory:'other_expenses', amountNative:-1817.335, disclosureLevel:'aggregated' },
+    { rawLabel:'Servicios básicos', normalizedCategory:'admin_general_expense', amountNative:-69.96, disclosureLevel:'aggregated' },
+    { rawLabel:'Asesorías', normalizedCategory:'admin_general_expense', amountNative:-669.815, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciaciones y amortizaciones', normalizedCategory:'depreciation', amountNative:-400.884, disclosureLevel:'aggregated' },
+    { rawLabel:'Mantenciones', normalizedCategory:'admin_general_expense', amountNative:-212.705, disclosureLevel:'aggregated' },
+    { rawLabel:'Remuneraciones Administración', normalizedCategory:'admin_general_expense', amountNative:-2227.641, disclosureLevel:'aggregated' },
+    { rawLabel:'Multas Conmebol y otras', normalizedCategory:'other_expenses', amountNative:-898.966, disclosureLevel:'aggregated' },
+    { rawLabel:'Publicidad', normalizedCategory:'admin_general_expense', amountNative:-861.889, disclosureLevel:'aggregated' },
+    { rawLabel:'Otros Gastos de Administración', normalizedCategory:'admin_general_expense', amountNative:-1338.657, disclosureLevel:'aggregated' },
+  ],
 };
 
 const udechileFiscalYearMeta = {
@@ -107,6 +137,23 @@ const udechileFiscalYearMeta = {
     cash:1665.904,
     officialTotalRevenue:14515.925, officialTotalExpenses:16432.670, officialPAT:-1696.132,
   },
+  2025: {
+    currency:'CLP', fxRef:'CLP@2025-12-31',
+    sourceId:'udechile-cl-estados-financieros-2025',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-1146.006, tax:94.118,
+    extraRows: [
+      {label:'Ingresos financieros', value:106.141},
+      {label:'Costos financieros', value:-784.55},
+      {label:'Diferencia de cambio', value:-24.963},
+      {label:'Resultado por unidades de reajuste', value:-442.634},
+      {label:'(Gasto) utilidad por impuestos a las ganancias', value:94.118},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:35541.164, officialTotalExpenses:33898.595, officialPAT:590.681,
+  },
 };
 
 const udechilePresupuestoOverlayByYear = {};
@@ -137,6 +184,11 @@ Object.assign(sources, {
   'udechile-cl-estados-financieros-2022': {
     id:'udechile-cl-estados-financieros-2022', clubId:'udechile-cl',
     title:'Estados Financieros Consolidados bajo IFRS al 31 de diciembre de 2022 y 2021',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'udechile-cl-estados-financieros-2025': {
+    id:'udechile-cl-estados-financieros-2025', clubId:'udechile-cl',
+    title:'Azul Azul S.A. — estados-financieros-2025 (ejercicio 2025)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

@@ -50,7 +50,7 @@ window.RANKINGS_INDICE = {
   "ru-premierliga": [2025,16,16],
 };
 window.RANKINGS_REGION = {
-  mundo: { year:2025, total:250, clubs:[
+  mundo: { year:2025, total:251, clubs:[
     { id:"realmadrid", league:"es-laliga", revenue:1388.522 },
     { id:"fcbarcelona", league:"es-laliga", revenue:1167.798 },
     { id:"bayernmunich-de", league:"de-bundesliga", revenue:1085.912 },
@@ -62,7 +62,7 @@ window.RANKINGS_REGION = {
     { id:"inter-it", league:"it-seriea", revenue:664.571 },
     { id:"dortmund-de", league:"de-bundesliga", revenue:627.63 },
   ] },
-  america: { year:2025, total:56, clubs:[
+  america: { year:2025, total:57, clubs:[
     { id:"flamengo-br", league:"br-serieA", revenue:347.575 },
     { id:"palmeiras-br", league:"br-serieA", revenue:295.959 },
     { id:"botafogo", league:"br-serieA", revenue:247.129 },

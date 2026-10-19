@@ -35,3 +35,5 @@
   del club. Pendiente: 2010-2021 y 2025 de la serie ya descargada (ver arriba) todavía no se cargaron
   al sitio.
 
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2025.pdf` (sourceId `udechile-cl-estados-financieros-2025`).

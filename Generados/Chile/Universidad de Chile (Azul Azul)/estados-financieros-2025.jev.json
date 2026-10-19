@@ -1,0 +1,400 @@
+{
+ "md": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2025.md",
+ "generatedAt": "2026-10-19T17:17:31.257Z",
+ "rubrosHuella": "9abc0de88c9983db891392e186a93695e9391a48",
+ "rubros": [
+  {
+   "label": "Borderó",
+   "lado": "revenue",
+   "page": 72,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Participación torneos Internacionales",
+   "lado": "revenue",
+   "page": 72,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos de T.V.",
+   "lado": "revenue",
+   "page": 72,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos varios",
+   "lado": "revenue",
+   "page": 72,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Borderó (costos directos)",
+   "lado": "expense",
+   "page": 73,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneraciones",
+   "lado": "expense",
+   "page": 73,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "wages_squad",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización de pases",
+   "lado": "expense",
+   "page": 73,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de venta pases de jugadores",
+   "lado": "expense",
+   "page": 73,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "player_amortisation",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Deterioro de pases",
+   "lado": "expense",
+   "page": 73,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "player_impairment",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "player_impairment",
+     0.65
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "player_amortisation",
+     0.03
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Publicidad",
+   "lado": "expense",
+   "page": 73,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Otros gastos de operación",
+   "lado": "expense",
+   "page": 73,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Servicios básicos",
+   "lado": "expense",
+   "page": 73,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Asesorías",
+   "lado": "expense",
+   "page": 73,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciaciones y amortizaciones",
+   "lado": "expense",
+   "page": 73,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de ventas de productos",
+   "lado": "expense",
+   "page": 73,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "Otros (Derechos de Formación, Solidaridad, etc.)",
+   "lado": "revenue",
+   "page": 72,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por transferencias de pases de jugadores\"",
+   "choice": "player_sales",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "player_sales",
+     0.55
+    ],
+    [
+     "youth_football",
+     0.23
+    ],
+    [
+     "other_income",
+     0.22
+    ]
+   ],
+   "tokens": 1080
+  },
+  {
+   "label": "Cesión temporal de derechos federativos (Préstamos)",
+   "lado": "revenue",
+   "page": 72,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por transferencias de pases de jugadores\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Otros Gastos de Administración",
+   "lado": "expense",
+   "page": 73,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "(ventas de pases)",
+   "lado": "revenue",
+   "page": 72,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por transferencias de pases de jugadores\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1060
+  },
+  {
+   "label": "Ingresos por ventas de productos",
+   "lado": "revenue",
+   "page": 72,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.84
+    ],
+    [
+     "other_income",
+     0.16
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Concentraciones y viajes",
+   "lado": "expense",
+   "page": 73,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Remuneraciones Administración",
+   "lado": "expense",
+   "page": 73,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Multas Conmebol y otras",
+   "lado": "expense",
+   "page": 73,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Indumentaria y equipamiento deportivo",
+   "lado": "expense",
+   "page": 73,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Mantenciones",
+   "lado": "expense",
+   "page": 73,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 863
+  }
+ ]
+}
