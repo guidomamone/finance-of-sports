@@ -1,0 +1,550 @@
+{
+ "pdf": "Clubes/Inglaterra/Brentford/brentford-group-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Brentford/brentford-group-accounts-2022-23.md",
+ "mdSha1": "9f4789e4d18070d7eb1518c5f3d21d9f39040022",
+ "ubicacionSha1": "290bfc5666f9b942eea517dd7d31f0117e09f8c6",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:59:08.269Z",
+ "ubicacion": {
+  "estado": [
+   "b5"
+  ],
+  "notas_ingresos": [
+   "b15",
+   "b16",
+   "b20",
+   "b21"
+  ],
+  "notas_gastos": [
+   "b17",
+   "b19",
+   "b22"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b5",
+   "escala": "miles",
+   "evidencia": "30/6/23 £'000 (L997)"
+  },
+  {
+   "bloque": "b15",
+   "escala": "miles",
+   "evidencia": "30/6/23 £'000 (L1605)"
+  },
+  {
+   "bloque": "b16",
+   "escala": "miles",
+   "evidencia": "30/6/23 £'000 (L1618)"
+  },
+  {
+   "bloque": "b20",
+   "escala": "miles",
+   "evidencia": "30/6/23 £'000 (L1683)"
+  },
+  {
+   "bloque": "b21",
+   "escala": "miles",
+   "evidencia": "30/6/23 £'000 (L1698)"
+  },
+  {
+   "bloque": "b17",
+   "escala": "miles",
+   "evidencia": "30/6/23 £'000 (L1634)"
+  },
+  {
+   "bloque": "b19",
+   "escala": "miles",
+   "evidencia": "30/6/23 £'000 (L1670)"
+  },
+  {
+   "bloque": "b22",
+   "escala": "miles",
+   "evidencia": "30/6/23 £'000 (L1706)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b5",
+   "linea": 999,
+   "etiqueta": "Turnover",
+   "actual": "166,508",
+   "anterior": "140,913",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 1000,
+   "etiqueta": "Administrative expenses",
+   "actual": "(165,585)",
+   "anterior": "(116,751)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 1001,
+   "etiqueta": "",
+   "actual": "923",
+   "anterior": "24,162",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 1002,
+   "etiqueta": "Other operating income",
+   "actual": "3,598",
+   "anterior": "1,883",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 1003,
+   "etiqueta": "Loss on sale of tangible fixed assets",
+   "actual": "(76)",
+   "anterior": "(955)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 1004,
+   "etiqueta": "Operating profit before player trading",
+   "actual": "4,445",
+   "anterior": "25,090",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 1005,
+   "etiqueta": "Gain on disposal of players' registrations",
+   "actual": "5,561",
+   "anterior": "4,583",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 1006,
+   "etiqueta": "Operating profit",
+   "actual": "10,006",
+   "anterior": "29,673",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 1007,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "1,165",
+   "anterior": "1,412",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 1008,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(2,008)",
+   "anterior": "(1,197)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 1009,
+   "etiqueta": "Profit before taxation",
+   "actual": "9,163",
+   "anterior": "29,888",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 1010,
+   "etiqueta": "Tax credit / (charge) on profit",
+   "actual": "1,746",
+   "anterior": "(4,221)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 1011,
+   "etiqueta": "Profit for the financial year",
+   "actual": "10,909",
+   "anterior": "25,667",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 1013,
+   "etiqueta": "Owners of the parent",
+   "actual": "10,909",
+   "anterior": "25,667",
+   "tipo": "resultado",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1608,
+   "etiqueta": "Central Distributions",
+   "actual": "135,175",
+   "anterior": "114,944",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1609,
+   "etiqueta": "Commercial",
+   "actual": "18,905",
+   "anterior": "14,975",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1610,
+   "etiqueta": "Matchday",
+   "actual": "11,250",
+   "anterior": "10,415",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1611,
+   "etiqueta": "Other",
+   "actual": "1,178",
+   "anterior": "579",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b15",
+   "linea": 1612,
+   "etiqueta": "",
+   "actual": "166,508",
+   "anterior": "140,913",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1620,
+   "etiqueta": "Rents received",
+   "actual": "83",
+   "anterior": "84",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1621,
+   "etiqueta": "Grant income",
+   "actual": "160",
+   "anterior": "12",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1622,
+   "etiqueta": "Loan player revenue",
+   "actual": "2,510",
+   "anterior": "1,507",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1623,
+   "etiqueta": "Other Income",
+   "actual": "845",
+   "anterior": "280",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1624,
+   "etiqueta": "",
+   "actual": "3,598",
+   "anterior": "1,883",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b20",
+   "linea": 1685,
+   "etiqueta": "Gain on disposal of players' registrations",
+   "actual": "5,561",
+   "anterior": "4,583",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Gain on disposal of players' registrations"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1700,
+   "etiqueta": "Unwinding of discount on player debtors",
+   "actual": "921",
+   "anterior": "1,404",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1701,
+   "etiqueta": "Other interest received",
+   "actual": "244",
+   "anterior": "8",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b21",
+   "linea": 1702,
+   "etiqueta": "",
+   "actual": "1,165",
+   "anterior": "1,412",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b17",
+   "linea": 1636,
+   "etiqueta": "Wages and salaries",
+   "actual": "86,152",
+   "anterior": "59,727",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b17",
+   "linea": 1637,
+   "etiqueta": "Social security costs",
+   "actual": "11,948",
+   "anterior": "8,186",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b17",
+   "linea": 1638,
+   "etiqueta": "Other pension costs",
+   "actual": "700",
+   "anterior": "239",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b17",
+   "linea": 1639,
+   "etiqueta": "",
+   "actual": "98,800",
+   "anterior": "68,152",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1672,
+   "etiqueta": "Other operating leases",
+   "actual": "1,986",
+   "anterior": "394",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1673,
+   "etiqueta": "Depreciation - owned assets",
+   "actual": "5,317",
+   "anterior": "3,593",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1674,
+   "etiqueta": "Player Registrations amortisation",
+   "actual": "30,903",
+   "anterior": "22,851",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1675,
+   "etiqueta": "Auditor's remuneration for services in respect of these financial statements",
+   "actual": "84",
+   "anterior": "59",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1676,
+   "etiqueta": "Fees paid to auditors for tax advice",
+   "actual": "25",
+   "anterior": "15",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1677,
+   "etiqueta": "Fees paid to auditors for other audit related services",
+   "actual": "13",
+   "anterior": "12",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1678,
+   "etiqueta": "Other services relating to taxation",
+   "actual": "26",
+   "anterior": "14",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b19",
+   "linea": 1679,
+   "etiqueta": "Foreign exchange differences",
+   "actual": "(120)",
+   "anterior": "26",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1708,
+   "etiqueta": "Other interest",
+   "actual": "3",
+   "anterior": "16",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1709,
+   "etiqueta": "Loan interest",
+   "actual": "44",
+   "anterior": "73",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1710,
+   "etiqueta": "Interest on factoring of player debtors",
+   "actual": "-",
+   "anterior": "41",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1711,
+   "etiqueta": "Unwinding of discount on player creditors",
+   "actual": "1,961",
+   "anterior": "1,067",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "bloque": "b22",
+   "linea": 1712,
+   "etiqueta": "",
+   "actual": "2,008",
+   "anterior": "1,197",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 1011,
+  "actual": "10,909",
+  "anterior": "25,667"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los renglones de b19 (L1672-L1679) como desglose de 'Administrative expenses' aunque sean partidas informativas que no suman el renglón?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Administrative expenses",
+   "texto": "La nota 5 (L1668) lista cargos incluidos en el resultado operativo sin total, y diferencias de cambio podrían no estar en gastos administrativos.",
+   "bloques": [
+    "b19"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se acepta que no existe un renglón 'Salarios del plantel' separado y que 'Wages and salaries' (L1636) es el salario total del personal?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Administrative expenses",
+   "texto": "La nota 4 (L1636) no separa jugadores del resto del personal; no hay fila específica de plantel en los bloques.",
+   "bloques": [
+    "b17"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Sin cuadros por segmento. 'Salarios del plantel' no figura como tal; la masa salarial está en nota 4 (b17, L1636-L1639: 98,800), incluida en Administrative expenses. No se imprimen totales de ingresos ni de gastos."
+}

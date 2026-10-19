@@ -133,6 +133,9 @@ window.RANKINGS["gb-premierleague"] = {
       { id:"crystalpalace-gb", revenue:194.287, reportType:"official_balance_sheet",
         sourceId:"crystalpalace-gb-cpfc-2010-group-accounts-2021-22",
         mix:[["Comercial / Sponsors",14.137],["Estadio",13.918],["Televisión",153.597],["Otros ingresos",12.635]] },
+      { id:"brentford-gb", revenue:178.962, reportType:"official_balance_sheet",
+        sourceId:"brentford-gb-group-accounts-2021-22",
+        mix:[["Comercial / Sponsors",18.184],["Estadio",12.647],["Televisión",139.576],["Venta de Jugadores",8.098],["Otros ingresos",0.457]] },
     ],
   },
   2021: {

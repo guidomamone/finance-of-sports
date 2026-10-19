@@ -1,0 +1,260 @@
+{
+ "md": "Clubes/Inglaterra/Brentford/brentford-group-accounts-2021-22.md",
+ "generatedAt": "2026-10-19T16:00:39.490Z",
+ "rubrosHuella": "35fdf21f876cf49b3f2394b56ba2151a20a40450",
+ "rubros": [
+  {
+   "label": "Loan player revenue",
+   "lado": "revenue",
+   "page": 37,
+   "section": "nota que desglosa \"Other operating income\"",
+   "choice": "player_sales",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "player_sales",
+     0.97
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1062
+  },
+  {
+   "label": "Central distributions",
+   "lado": "revenue",
+   "page": 37,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Matchday",
+   "lado": "revenue",
+   "page": 37,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Grant income",
+   "lado": "revenue",
+   "page": 37,
+   "section": "nota que desglosa \"Other operating income\"",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "education",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Commercial",
+   "lado": "revenue",
+   "page": 37,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1009
+  },
+  {
+   "label": "Other",
+   "lado": "revenue",
+   "page": 37,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 999
+  },
+  {
+   "label": "Other Income",
+   "lado": "revenue",
+   "page": 37,
+   "section": "nota que desglosa \"Other operating income\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Rents received",
+   "lado": "revenue",
+   "page": 37,
+   "section": "nota que desglosa \"Other operating income\"",
+   "choice": "stadium_other",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "stadium_other",
+     0.83
+    ],
+    [
+     "other_income",
+     0.17
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1009
+  },
+  {
+   "label": "Loss on disposal of tangible fixed assets",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado",
+   "choice": "exceptional_items",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "exceptional_items",
+     0.5
+    ],
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "depreciation",
+     0.03
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "Gain on disposal of players' registrations",
+   "lado": "revenue",
+   "page": 22,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1045
+  }
+ ]
+}

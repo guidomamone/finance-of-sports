@@ -1,0 +1,186 @@
+{
+ "pdf": "Clubes/Inglaterra/Brentford/brentford-group-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Brentford/brentford-group-accounts-2021-22.md",
+ "generado": "2026-10-19T17:11:10.422Z",
+ "estado": "ok",
+ "clubId": "brentford-gb",
+ "year": 2022,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Turnover\" 140.913 cierra; además se suman 5 línea(s) fuera de ese total (6.466)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.4210854715202004e-14
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 2 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 147.379 en este documento y 147.379 en brentford-group-accounts-2022-23.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Administrative expenses\" no suma el renglón (95.116 contra 116.751, sumando sus renglones): quedó el renglón del estado",
+  "la lectura base no cerraba; cerró con la lectura 2",
+  "duda de extraer que no afecta la carga: La nota 4 (L1504) da salarios totales de empleados y directores, sin separar plantel; no hay cuadro por segmento."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Administrative expenses",
+   "suma": 95.116,
+   "objetivo": 116.751
+  }
+ ],
+ "totales": {
+  "ingresos": 147.379,
+  "gastos": 117.706,
+  "financiero": 0.215,
+  "impuesto": -4.221,
+  "resultadoImpreso": 25.667,
+  "resultadoParaCargar": 25.667,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Central distributions",
+   "lado": "ingreso",
+   "M": 114.944,
+   "pagina": 37,
+   "linea": 1477,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial",
+   "lado": "ingreso",
+   "M": 14.975,
+   "pagina": 37,
+   "linea": 1478,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Matchday",
+   "lado": "ingreso",
+   "M": 10.415,
+   "pagina": 37,
+   "linea": 1479,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other",
+   "lado": "ingreso",
+   "M": 0.579,
+   "pagina": 37,
+   "linea": 1480,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Rents received",
+   "lado": "ingreso",
+   "M": 0.084,
+   "pagina": 37,
+   "linea": 1489,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Grant income",
+   "lado": "ingreso",
+   "M": 0.012,
+   "pagina": 37,
+   "linea": 1490,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Loan player revenue",
+   "lado": "ingreso",
+   "M": 1.507,
+   "pagina": 37,
+   "linea": 1491,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Other Income",
+   "lado": "ingreso",
+   "M": 0.28,
+   "pagina": 37,
+   "linea": 1493,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Gain on disposal of players' registrations",
+   "lado": "ingreso",
+   "M": 4.583,
+   "pagina": 22,
+   "linea": 911,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 116.751,
+   "pagina": 22,
+   "linea": 906,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Loss on disposal of tangible fixed assets",
+   "lado": "gasto",
+   "M": 0.955,
+   "pagina": 22,
+   "linea": 909,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 1.412,
+   "linea": 913
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -1.197,
+   "linea": 914
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax (charge) / credit on profit / (loss)",
+   "M": -4.221,
+   "linea": 916
+  }
+ ]
+}

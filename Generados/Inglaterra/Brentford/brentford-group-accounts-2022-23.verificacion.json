@@ -1,0 +1,180 @@
+{
+ "pdf": "Clubes/Inglaterra/Brentford/brentford-group-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Brentford/brentford-group-accounts-2022-23.md",
+ "generado": "2026-10-19T17:11:10.449Z",
+ "estado": "ok",
+ "clubId": "brentford-gb",
+ "year": 2023,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 147.379 en brentford-group-accounts-2021-22.pdf y 147.379 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Administrative expenses\" no suma el renglón (137.274 contra 165.585, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer que no afecta la carga: La nota 4 (L1636) no separa jugadores del resto del personal; no hay fila específica de plantel en los bloques."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Administrative expenses",
+   "suma": 137.274,
+   "objetivo": 165.585
+  }
+ ],
+ "totales": {
+  "ingresos": 175.667,
+  "gastos": 165.661,
+  "financiero": -0.843,
+  "impuesto": 1.746,
+  "resultadoImpreso": 10.909,
+  "resultadoParaCargar": 10.909,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Central Distributions",
+   "lado": "ingreso",
+   "M": 135.175,
+   "pagina": 39,
+   "linea": 1608,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial",
+   "lado": "ingreso",
+   "M": 18.905,
+   "pagina": 39,
+   "linea": 1609,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Matchday",
+   "lado": "ingreso",
+   "M": 11.25,
+   "pagina": 39,
+   "linea": 1610,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other",
+   "lado": "ingreso",
+   "M": 1.178,
+   "pagina": 39,
+   "linea": 1611,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Rents received",
+   "lado": "ingreso",
+   "M": 0.083,
+   "pagina": 39,
+   "linea": 1620,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Grant income",
+   "lado": "ingreso",
+   "M": 0.16,
+   "pagina": 39,
+   "linea": 1621,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Loan player revenue",
+   "lado": "ingreso",
+   "M": 2.51,
+   "pagina": 39,
+   "linea": 1622,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Other Income",
+   "lado": "ingreso",
+   "M": 0.845,
+   "pagina": 39,
+   "linea": 1623,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Gain on disposal of players' registrations",
+   "lado": "ingreso",
+   "M": 5.561,
+   "pagina": 24,
+   "linea": 1005,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 165.585,
+   "pagina": 24,
+   "linea": 1000,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Loss on sale of tangible fixed assets",
+   "lado": "gasto",
+   "M": 0.076,
+   "pagina": 24,
+   "linea": 1003,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 1.165,
+   "linea": 1007
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -2.008,
+   "linea": 1008
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax credit / (charge) on profit",
+   "M": 1.746,
+   "linea": 1010
+  }
+ ]
+}
