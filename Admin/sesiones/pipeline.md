@@ -261,3 +261,13 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
 - **Los 5 ajustes se quedan** (Onboarding 2, 2026-10-19: los años ya están cargados bien; no se contestó ni recategorizó nada en main después
   de la carga). Anotado en Admin/HALLAZGOS-pipeline.md, "Conocido, sin daño hoy": se sacan solo si hay que recargar esos años por otro
   motivo. Con esto la y4 queda cerrada.
+- **298 w hecha** (ok de Guido 2026-10-19, dos escalones en perimetro-senales.mjs):
+  1) 69023925b1, el ensayo usa la respuesta GUARDADA de A2 y dice qué frena. Lotes 93-94 simulados sin sus 129 ajustes de perímetro
+     (restaurados): antes-de-localizar pasa de "0 de 36 frenarían" a 13, los mismos 8 + 5 que frenaron al ejecutar.
+  2) 3c598e75ca, paso A3: cuando A2 ve los dos estados sin totales para votar, Claude (Sonnet) contesta si alguna controlada hace el
+     negocio del fútbol del club, con la línea que la nombra. Solo "consolidado" decide (un "individual" o "no_se" frena como antes).
+     Medido con un subagente sobre los 10 casos: 6 bien, 0 mal, 3 no decide, 1 sin fijar (Willem II). Con esas respuestas como caché
+     (simulada y borrada), los lotes 93-94 pasan de 13 frenados a 6. Sin respuesta guardada no cambia nada: perimetro-verdad.tsv
+     (61 bien, 0 mal), --decidir-clubes de 99 carpetas y antes-de-localizar de los lotes 93-94, idénticos. Auditoría P0 0 / P1 0.
+  79aa1c2e73: el motivo del ajuste de perímetro de PEC Zwolle (sigue consolidado) decía "academia", que el documento no dice; ahora cita L778.
+  Willem II: A3 dice consolidado ("Willem II Tilburg B.V.", L550); lo está fijando Onboarding 2.

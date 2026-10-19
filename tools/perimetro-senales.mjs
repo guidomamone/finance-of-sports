@@ -24,6 +24,8 @@
 //  PASO A2 (Claude) El paso A reconoce italiano e inglés. Sin ninguna tabla reconocida (Aris, en griego), Claude ubica el estado de
 //                   resultados y vota cinco criterios con peso (título 4, texto del estado 4, auditor 1, grupo 1, portada 1), cada sí con su
 //                   línea: 4 o más → consolidado · 0 a 2 → individual · 3 → cola; con columnas o estados de los dos perímetros → cola. Pago: solo con --jev / al ejecutar.
+//  PASO A3 (Claude) (to-do 298 w) A2 vio los dos estados sin totales para votar: ¿alguna controlada hace el negocio del fútbol del club?
+//                   Con la línea que la nombra; solo "consolidado" decide (cuenta como el voto del documento). Ver pasoA3().
 //  PASO B (voto)    Tres criterios, uno por voto:
 //                     C1 (gratis) los ingresos consolidados superan a los individuales en 5% o más, en el año o en el anterior
 //                        (las controladas tienen negocio propio: Roma, Lazio). Escala: miles vs unidades se normaliza.
@@ -44,6 +46,8 @@
 //   node tools/perimetro-senales.mjs --decidir-clubes <lista de carpetas> --solo-cache   # ensayo de la decisión de perímetro de cada club (gratis)
 //   node tools/perimetro-senales.mjs --lista <txt> --exportar-a2 <carpeta>             # los pedidos de A2 sin caché, para contestarlos sin API
 //   node tools/perimetro-senales.mjs --auditar-a2 <carpeta>                             # auditoría a posteriori: lo que decidió A2 en corridas reales
+//   node tools/perimetro-senales.mjs --lista <txt> --exportar-a3 <carpeta>             # (to-do 298 w) los pedidos de A3, para un subagente
+//   node tools/perimetro-senales.mjs --evaluar-a3 <carpeta>                             # la compuerta de A3 sobre <n>.json contra el perímetro fijado
 // Jev: Admin/api-keys/jev.env con JEV_API_KEY=...; respuestas guardadas en Generados/_cache/jev-perimetro.jsonl (no se paga dos veces).
 // ============================================================================
 import { readFileSync, existsSync, appendFileSync, mkdirSync } from 'node:fs';
@@ -363,6 +367,66 @@ async function pasoA2(mdRel, lineas, { soloCache = false } = {}) {
   return { estado: est.linea, otro: otro?.linea ?? null, columnasDeLosDos: !!datos.columnas_de_los_dos, votos, puntos };
 }
 
+// ---------------------------------------------------------------- PASO A3: qué hacen las controladas (to-do 298 w, escalón 2)
+// POR QUÉ (ok de Guido 2026-10-19): cuando A2 ve los DOS estados (el de la sociedad y el del grupo) pero no hay totales reconocidos para el
+// voto del paso B, el club quedaba sin decidir y el lote frenaba. Lotes 93 y 94: 10 documentos; los 8 que se decidieron a mano se
+// decidieron con la pregunta de la regla (Admin/CONVENCIONES-DATOS.md, "qué perímetro se carga"): ¿las controladas hacen el negocio del
+// fútbol del club? Sí -> consolidado (Viking: Viking Stadion AS, el estadio); no -> individual (Sarpsborg 08: Prozo AS, un comercio aparte).
+// A3 le hace a Claude ESA pregunta con las líneas del documento que hablan de controladas (en cualquier idioma, tablas incluidas).
+// COMPUERTA: la línea citada está entre las mandadas y nombra a la controlada que da Claude. Si no, o si dice "no_se", no decide (frena
+// como antes). Sonnet; caché Generados/_cache/claude-perimetro-a3.jsonl. --exportar-a3 / --evaluar-a3: medir sin API (ver el CLI).
+const CONTROL_A3_RX = /controlad|dependiente|filial|subsidi|controllat|consolidament|dochter|groepsmaatschappij|deelneming|consolidatie|tochtergesellschaft|konsolidierungskreis|beteiligung|datterselskap|dattervirksomhed|dotterbolag|konsern|koncern|group compan|consolidation|périmètre|participa/i;
+function textoA3(lineas) {
+  const usadas = new Set(); const partes = []; let largo = 0;
+  for (let i = 0; i < lineas.length && largo < 9000; i++) {
+    if (!CONTROL_A3_RX.test(lineas[i])) continue;
+    for (let j = i; j < Math.min(lineas.length, i + 4); j++) {
+      const t = lineas[j].replace(/\s+/g, ' ').trim();
+      if (!t || usadas.has(j + 1)) continue;
+      usadas.add(j + 1); const p = `L${j + 1}: ${t.slice(0, 300)}`; partes.push(p); largo += p.length;
+    }
+  }
+  return { texto: partes.join('\n'), lineas: usadas };
+}
+const ESQUEMA_A3 = {
+  type: 'object', additionalProperties: false, required: ['perimetro', 'linea', 'controlada', 'motivo'],
+  properties: { perimetro: { type: 'string', enum: ['consolidado', 'individual', 'no_se'] }, linea: { type: ['integer', 'null'] }, controlada: { type: ['string', 'null'] }, motivo: { type: 'string' } },
+};
+export const SISTEMA_A3 = `Recibís líneas numeradas ("L123: ...") de la memoria de un club de fútbol que publica DOS estados de resultados: el de la sociedad sola y el del grupo (la sociedad y sus controladas). Son las líneas que hablan de controladas, participaciones o consolidación, en cualquier idioma.
+La regla para elegir qué estado se carga: si al menos una controlada que entra en el consolidado hace el negocio del fútbol del club (el club profesional, el primer equipo, la academia o el fútbol base del club, el estadio o el centro deportivo del club, sponsors, derechos de TV, merchandising, entradas, hospitality o catering del estadio), "consolidado". Si ninguna lo hace (inmobiliarias sin el estadio, financieras, negocios de otra actividad, sociedades inactivas o en liquidación), "individual". Si la sociedad que presenta es una holding sin operación propia y el fútbol está en una controlada, "consolidado".
+Devolvé: perimetro; linea: la línea que nombra a la controlada que decide (si es "consolidado", una que hace el negocio del fútbol; si es "individual", la que muestra qué hace la controlada principal); controlada: su nombre tal como aparece en esa línea; motivo: una oración. Si las líneas no alcanzan para saber qué hacen las controladas, "no_se" con linea y controlada en null.`;
+const CACHE_A3 = resolve(ROOT, 'Generados', '_cache', 'claude-perimetro-a3.jsonl');
+let cacheA3 = null;
+const leerCacheA3 = () => { if (!cacheA3) { cacheA3 = new Map(); if (existsSync(CACHE_A3)) for (const l of readFileSync(CACHE_A3, 'utf8').split('\n')) { if (!l.trim()) continue; try { const j = JSON.parse(l); cacheA3.set(j.clave, j); } catch { /* línea rota */ } } } return cacheA3; };
+const pedidoA3 = (lineas) => { const { texto, lineas: mandadas } = textoA3(lineas); return texto ? { user: texto, mandadas, clave: createHash('sha1').update(JSON.stringify([SISTEMA_A3, texto])).digest('hex') } : null; };
+const sinAcentos = (s) => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/\s+/g, ' ').trim();
+export function compuertaA3(datos, mandadas, lineas) {
+  if (!datos || datos.perimetro === 'no_se') return { motivo: 'Claude no sabe qué hacen las controladas' };
+  if (!mandadas.has(datos.linea)) return { motivo: `L${datos.linea} no está entre las líneas mandadas` };
+  const nombre = sinAcentos(datos.controlada);
+  if (nombre.length < 4 || !sinAcentos(lineas[datos.linea - 1]).includes(nombre)) return { motivo: `L${datos.linea} no nombra a "${datos.controlada}"` };
+  // SOLO "consolidado" decide (ok de Guido 2026-10-19): nombrar una controlada que hace fútbol, con su línea, se comprueba; "ninguna lo hace"
+  // no se prueba con fragmentos. Medido con un subagente Sonnet sobre los 10 casos de los lotes 93-94: 6 consolidado bien; el único
+  // individual, mal (PEC Zwolle: la Stichting Regio Zwolle United trabaja para el club, L778). Un "individual" frena como antes.
+  if (datos.perimetro !== 'consolidado') return { motivo: `A3 dice ${datos.perimetro} ("${datos.controlada}" L${datos.linea}): solo "consolidado" decide` };
+  return { perimetro: datos.perimetro, linea: datos.linea, controlada: datos.controlada, motivo: datos.motivo };
+}
+async function pasoA3(mdRel, lineas, { soloCache = false } = {}) {
+  const p = pedidoA3(lineas);
+  if (!p) return { motivo: 'el documento no habla de controladas' };
+  let datos = leerCacheA3().get(p.clave)?.datos;
+  if (!datos && (SOLO_CACHE || soloCache)) return { pendiente: true };
+  if (!datos) {
+    const { llamarClaude } = await import('./claude-llamada.mjs');
+    const r = await llamarClaude({ system: SISTEMA_A3, user: p.user, schema: ESQUEMA_A3, tarea: 'perimetro-a3', pdf: mdRel.replace(/\.md$/, '.pdf'), maxTokens: 1000, modelo: MODELOS_A2.sonnet });
+    if (r.pendiente) return { pendiente: true };
+    if (r.error) return { error: r.error };
+    datos = r.datos;
+    mkdirSync(dirname(CACHE_A3), { recursive: true }); appendFileSync(CACHE_A3, JSON.stringify({ clave: p.clave, md: mdRel, datos }) + '\n'); cacheA3.set(p.clave, { datos });
+  }
+  return compuertaA3(datos, p.mandadas, lineas);
+}
+
 // ---------------------------------------------------------------- la propuesta de un documento
 export async function proponer(mdRel, { jev = false, soloCache = false } = {}) {
   const md = readFileSync(resolve(ROOT, mdRel), 'utf8');
@@ -382,7 +446,14 @@ export async function proponer(mdRel, { jev = false, soloCache = false } = {}) {
     if (a.error) { r.motivo += `; A2 falló (${a.error})`; return r; }
     if (a.estado == null) { r.motivo += `; A2: ${a.motivo}`; return r; }
     const v = Object.entries(a.votos).map(([k, x]) => `${k} ${x.si ? `sí L${x.linea}` : x.rechazado ? `rechazado L${x.linea}` : 'no'}`).join(', ');
-    if (a.otro != null || a.columnasDeLosDos) { r.pasoA = 'a2-los-dos'; r.motivo = `A2 (Claude): estado L${a.estado} ${a.otro != null ? `y otro de distinto perímetro L${a.otro}` : 'con columnas de los dos perímetros'}, sin totales reconocidos para votar`; return r; }
+    if (a.otro != null || a.columnasDeLosDos) {
+      r.pasoA = 'a2-los-dos'; r.motivo = `A2 (Claude): estado L${a.estado} ${a.otro != null ? `y otro de distinto perímetro L${a.otro}` : 'con columnas de los dos perímetros'}, sin totales reconocidos para votar`;
+      // PASO A3 (to-do 298 w, escalón 2): sin totales para votar, qué hacen las controladas. Decide como un voto del paso B.
+      const a3 = await pasoA3(mdRel, md.split('\n'), { soloCache: !jev }); r.a3 = a3;
+      if (a3.perimetro) { r.propuesta = a3.perimetro; r.motivo += `; A3 (Claude): ${a3.perimetro}, "${a3.controlada}" L${a3.linea} (${a3.motivo})`; }
+      else r.motivo += a3.pendiente ? '; A3 pendiente (se pregunta al ejecutar)' : `; A3: ${a3.error || a3.motivo}`;
+      return r;
+    }
     const base = `A2 (Claude) estado L${a.estado}, ${a.puntos} de 10 puntos (${v})`;
     if (a.puntos >= UMBRAL_A2_CONS) { r.pasoA = 'solo-consolidado'; r.propuesta = 'consolidado'; r.motivo = base; }
     else if (a.puntos <= UMBRAL_A2_IND) { r.pasoA = 'solo-individual'; r.propuesta = 'individual'; r.motivo = base; }
@@ -458,14 +529,14 @@ export async function fijarPerimetroDeClubes(pdfs, { registro, ejecutar = false,
     for (const e of docs) props.push({ e, r: await proponer(e.md, { jev, soloCache: !ejecutar }) });
     // Modo batch (claude-llamada.mjs): si a algún documento del club le falta la respuesta de A2, no se decide el club con los demás (sin
     // batch habrían estado todas): se espera a la ola siguiente.
-    if (ejecutar && props.some(({ r }) => r.a2?.pendiente)) { out.push({ carpeta: c, valor: null, porDocumento: [], pendienteJev: true, detalle: 'A2 pendiente de la Batch API: se decide en la ola siguiente' }); continue; }
+    if (ejecutar && props.some(({ r }) => r.a2?.pendiente || r.a3?.pendiente)) { out.push({ carpeta: c, valor: null, porDocumento: [], pendienteJev: true, detalle: 'A2 o A3 pendiente de la Batch API: se decide en la ola siguiente' }); continue; }
     const porCierre = new Map(); const votos = new Map(); let pendJev = 0;
     for (const { e, r } of props) {
       const k = e.periodo?.cierre || e.md;
       const set = porCierre.get(k) || new Set();
       if (r.pasoA === 'solo-individual') set.add('individual');
       else if (r.pasoA === 'solo-consolidado') set.add('consolidado');
-      else if (r.pasoA === 'los-dos' || r.pasoA === 'a2-los-dos') { set.add('individual'); set.add('consolidado'); if (r.propuesta) votos.set(e.md, r.propuesta); else if (r.c3?.voto === null) pendJev++; }
+      else if (r.pasoA === 'los-dos' || r.pasoA === 'a2-los-dos') { set.add('individual'); set.add('consolidado'); if (r.propuesta) votos.set(e.md, r.propuesta); else if (r.c3?.voto === null) pendJev++; } // A3 sin respuesta guardada no cuenta: el ensayo lo da como frenado (conservador)
       else if (r.a2?.pendiente) pendJev++;
       porCierre.set(k, set);
     }
@@ -547,6 +618,21 @@ async function main() {
     }
     return;
   }
+  const evaluarA3 = flagVal('--evaluar-a3');
+  if (evaluarA3) {
+    const dir = resolve(ROOT, evaluarA3); const { ajustePerimetroDe } = await import('./ajustes.mjs');
+    const cuenta = { bien: 0, mal: 0, noDecide: 0, sinVerdad: 0 };
+    for (const l of readFileSync(resolve(dir, 'pedidos.jsonl'), 'utf8').split('\n')) {
+      if (!l.trim()) continue; const p = JSON.parse(l);
+      const lineas = readFileSync(resolve(ROOT, p.md), 'utf8').split('\n'); const ped = pedidoA3(lineas);
+      const f = resolve(dir, `${p.n}.json`); const datos = existsSync(f) ? JSON.parse(readFileSync(f, 'utf8')) : null;
+      const c = compuertaA3(datos, ped.mandadas, lineas); const verdad = ajustePerimetroDe(p.md.replace(/\.md$/, '.pdf'))?.valor || null;
+      const marca = !c.perimetro ? 'no decide' : !verdad ? 'sin verdad' : c.perimetro === verdad ? 'ok' : 'MAL';
+      cuenta[{ 'no decide': 'noDecide', 'sin verdad': 'sinVerdad', ok: 'bien', MAL: 'mal' }[marca]]++;
+      console.log(`${marca.padEnd(10)} ${p.md.replace(/^Clubes\//, '').padEnd(64)} A3: ${c.perimetro || '—'}${c.perimetro ? ` ("${c.controlada}" L${c.linea})` : ` (${c.motivo})`} · fijado: ${verdad || '—'}`);
+    }
+    console.log(`\nA3: ${cuenta.bien} bien, ${cuenta.mal} mal, ${cuenta.noDecide} no decide, ${cuenta.sinVerdad} sin perímetro fijado para comparar`); return;
+  }
   const verdadF = flagVal('--verdad'); const listaF = flagVal('--lista'); const mdF = flagVal('--md');
   let items = [];
   if (verdadF) items = readFileSync(resolve(ROOT, verdadF), 'utf8').split('\n').filter((l) => l.trim() && !l.startsWith('#')).map((l) => { const [md, per] = l.split('\t'); return { md, verdad: per }; });
@@ -577,6 +663,26 @@ async function main() {
     }
     writeFileSync(resolve(dir, 'pedidos.jsonl'), pedidos.map((x) => JSON.stringify(x)).join('\n') + '\n');
     console.log(`${pedidos.length} pedido(s) en ${exportarF}`); return;
+  }
+  // (to-do 298 w, escalón 2) --exportar-a3 <carpeta>: los pedidos de A3 de los documentos de la lista donde A2 (guardado) ve los dos
+  // estados: <n>.txt con el texto que recibiría Claude, sistema.txt, esquema.json y pedidos.jsonl { n, md, clave }. Las respuestas van en
+  // <n>.json (las escribe un subagente). --evaluar-a3 <carpeta>: aplica la compuerta a cada <n>.json y lo compara con el ajuste `perimetro`
+  // ya fijado (del documento o del club). No escribe en la caché: es una medición.
+  const exportarA3 = flagVal('--exportar-a3');
+  if (exportarA3) {
+    const dir = carpetaDeTrabajo('--exportar-a3', exportarA3); mkdirSync(dir, { recursive: true });
+    const { writeFileSync } = await import('node:fs');
+    writeFileSync(resolve(dir, 'sistema.txt'), SISTEMA_A3); writeFileSync(resolve(dir, 'esquema.json'), JSON.stringify(ESQUEMA_A3, null, 1));
+    const pedidos = [];
+    for (const it of items) {
+      if (!existsSync(resolve(ROOT, it.md))) continue;
+      const r = await proponer(it.md, { soloCache: true });
+      if (r.pasoA !== 'a2-los-dos') continue;
+      const p = pedidoA3(readFileSync(resolve(ROOT, it.md), 'utf8').split('\n')); if (!p) continue;
+      const n = pedidos.length + 1; writeFileSync(resolve(dir, `${n}.txt`), p.user); pedidos.push({ n, md: it.md, clave: p.clave });
+    }
+    writeFileSync(resolve(dir, 'pedidos.jsonl'), pedidos.map((x) => JSON.stringify(x)).join('\n') + '\n');
+    console.log(`${pedidos.length} pedido(s) de A3 en ${exportarA3}`); return;
   }
   const res = { bien: 0, mal: 0, cola: 0 }; const malos = [];
   for (const it of items) {
