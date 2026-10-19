@@ -359,3 +359,5 @@
   antes.
 
 ## Después del tercer merge de Finanzas 4 (2026-10-19)
+
+## Después del cuarto merge de Finanzas 4 (2026-10-19)

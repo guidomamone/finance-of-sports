@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 771 — Cierre de onboarding 2 y Amazonas confirmado (2026-10-19)
+
+* Lote 93: la cola de los 6 neerlandeses que faltaban, contestada; los 26 años cierran en verificar. Lista de la Eredivisie 2018-19 (FC Emmen).
+* 195: Amazonas 2024, gestión de Wesley Couto confirmada (asumió en 2022, Portal AM1).
+* Onboarding 2 cierra; su nota, en `Admin/Archive/`.
+
 ## Versión 770 — Merge de onboarding 2: 7 altas neerlandesas del lote 93 (2026-10-19)
 
 * Almere City, Excelsior, Fortuna Sittard, Heracles, NAC, NEC y Sparta Rotterdam, por el pipeline. Cola de Países Bajos: 87 respuestas.

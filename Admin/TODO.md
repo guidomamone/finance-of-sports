@@ -251,9 +251,9 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    95,7 M que lo incluyen (30,4 M con Banca Sistema, .md L2637). Decidir un criterio; no se reabrió nada.
 292. TRANSCRIPCIONES POR SUBAGENTES: CARGAR (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia). Validación (326 listas) y Mistral
    hechos; Estonia y Bélgica dados de alta (lotes 89 y 90, 17 clubes). Falta: los lotes de carga por país que siguen (91-92 en curso,
-   después Suiza, Colombia, Beşiktaş); Países Bajos (lote 93): 7 altas en el sitio, 11 de la Eerste Divisie frenadas por la
-   compuerta de sponsor (decisión de Guido: ahí alcanza el estadio; el cambio lo hace Pipeline 3, después se vuelve a correr el lote); FC
-   Utrecht 2024-25 ya tiene estadio y sponsor a mano (la tabla de kits no lo leía); OH Leuven 2022 y Llaneros 2022, que siguen sin tablas (ver 298 e); decidir subagentes
+   después Suiza, Colombia, Beşiktaş); Países Bajos (lote 93): 7 altas en el sitio y 19 listas para escribir (los 26 cierran en
+   verificar): 8 pasan ya la compuerta y 11 de la Eerste Divisie esperan la excepción de estadio (decisión de Guido; la hace Pipeline 3);
+   después, el lote 95 con los demás años de los clubes nuevos (lista en la nota de onboarding) y volver a correr Bélgica (lote 92); OH Leuven 2022 y Llaneros 2022, que siguen sin tablas (ver 298 e); decidir subagentes
    o Mistral para los 319 `.md` viejos sin tablas de `Admin/lotes/sin-tablas-6paises.txt`, después de medir el 298 e.
 298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2 e y3, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
    vez; el detalle con casos, en `Admin/Archive/sesion-onboarding-2026-10-18-2.md`). a) CIERRE FALSO en verificar.mjs: compara en valor
@@ -325,7 +325,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
       Nova 2014, Ferroviária 2010-2013 y 2023 (además, criterio de SAF: presidente del consejo o director-presidente), Goiás 2010-2013 y
       2017, OFI 2018 (administración judicial: sin gestión, decisión de Guido);
     - sin caso en la cola, buscados en la tanda-2026-10-19-2 sin confirmar (esperan respuesta del club, ya en `Admin/dudas-por-club.md`):
-      Novorizontino 2010, Amazonas 2024 y Cruzeiro 2024-2025 (Pedro Lourenço: compra firmada el 29-04-2024, CADE el 12-06-2024);
+      Novorizontino 2010 y Cruzeiro 2024-2025 (Pedro Lourenço: compra firmada el 29-04-2024, CADE el 12-06-2024);
     - decisión de Guido: Fortaleza 2025 lo firma el CEO Pedro Martins, no el presidente del consejo cargado (Barreira); ¿se carga al
       ejecutivo? (si sí, el cierre queda sin fuente con su fecha de asunción).
     Las dudas de cada club, en "## Gestiones" de su `Admin/carga-clubes/<club>.md`; los casos `firmo` (la gestión cambió entre el cierre y
