@@ -147,4 +147,13 @@ window.RANKINGS["gb-premierleague"] = {
         mix:[["Comercial / Sponsors",15.115],["Estadio",0.319],["Televisión",144.985],["Venta de Jugadores",0.202],["Otros ingresos",0.035]] },
     ],
   },
+  2020: {
+    leagueSize: null,
+    wiki: {"t":"2019–20 Premier League","lang":"en","at":"2026-10-19","n":20},
+    clubs: [
+      { id:"astonvilla-gb", revenue:133.406, reportType:"official_balance_sheet",
+        sourceId:"astonvilla-gb-full-accounts-2019-20",
+        mix:[["Comercial / Sponsors",23.532],["Estadio",13.741],["Televisión",96.134]] },
+    ],
+  },
 };

@@ -11,6 +11,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'astonvilla-gb': {
     2019: {"estadio":"Villa Park","capacidad":42790,"sponsor":"32Red","marca":"Luke Sport","temporada":"2018–19 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372863678"},
+    2020: {"estadio":"Villa Park","capacidad":42785,"sponsor":"W88","marca":"Kappa","temporada":"2019–20 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378847413"},
     2021: {"estadio":"Villa Park","capacidad":42682,"sponsor":"Cazoo","marca":"Kappa","temporada":"2020–21 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376692557"},
     2022: {"estadio":"Villa Park","capacidad":42682,"sponsor":"Cazoo","marca":"Kappa","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
     2023: {"estadio":"Villa Park","capacidad":42657,"sponsor":"Cazoo","marca":"Castore","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
