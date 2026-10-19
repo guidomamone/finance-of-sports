@@ -47,3 +47,5 @@ Lo anterior al merge del 2026-10-18 ya pasó a TODO y CHANGELOG (copia en `Admin
   sponsor con fuente pero no entran: ya tienen entrada manual por el estadio con otra fuente, y una entrada lleva una sola. Mejora
   posible: fuente por campo en `contexto-manual.json`.
 - 252: Gladbach y Stuttgart 2025, en el Unternehmensregister desde enero de 2027.
+
+## Después del merge de los sponsors a mano (2026-10-18)

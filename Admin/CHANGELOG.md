@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 751 — Sponsors y estadios a mano con fuente (2026-10-18)
+
+Merge de datos 2, sin conflictos; ASSET_V 1312, P0 0 / P1 0.
+
+- To-do 273: 52 datos a mano con fuente en `tools/contexto-manual.json` (subagentes Sonnet con cita, todo revisado; lo que solo venía del
+  resumen de un buscador se confirmó con otra fuente o quedó afuera). Sin estadio o sin sponsor: 110 → 80 (estadio 100 %, sponsor 92 %).
+- To-do 252: `ejercicios-nuevos.mjs` espera 13 meses para el Unternehmensregister (Gladbach y Stuttgart 2025, hacia enero de 2027).
+
 ## Versión 750 — Camisetas de la página del club, escritas (2026-10-18)
 
 Merge de datos 2, sin conflictos; ASSET_V 1309, P0 0 / P1 0.

@@ -196,7 +196,7 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
 252. EJERCICIOS NUEVOS: LO QUE QUEDA (pedido de Guido; mensual). La revisión está hecha: `tools/ejercicios-nuevos.mjs` y una tarea programada
    (día 1, 9:00, carpeta principal); todas las notas tienen canal. Falta: onboardear Instituto 2024-25 (Ejercicio N°71, bajado de Drive; anotado en la
    nota; ya bajados) y onboardearlos; cargar los clubes con el PDF del ejercicio siguiente ya bajado (`node tools/ejercicios-nuevos.mjs` los lista;
-   onboarding); Gladbach y Stuttgart en el Unternehmensregister cuando vuelva a responder (ok de Guido para el formulario); el script no reconoce como "ya
+   onboarding); Gladbach y Stuttgart 2025, en el Unternehmensregister desde enero de 2027 (publica a los ~13 meses); el script no reconoce como "ya
    bajado" un documento cuyo cierre cambió de fecha (River, agosto → diciembre).
 255. CONSOLIDAR LAS REGLAS (mejoras de proyecto, pedido de Guido 2026-10-16). CLAUDE.md, las memorias, 7 skills, CONVENCIONES, CONVENCIONES-DATOS, PANTALLA y PIPELINE: una regla en tres
    lugares es lo que hace que una sesión contradiga a otra. Pasada de consolidación; lo chequeable va a hooks (250) o a audit.js.
@@ -219,9 +219,10 @@ Todo lo del plan es un to-do numerado. Tandas en orden; dentro de cada una, de a
    relacionada (con el criterio de socios, contaría); hoy la deuda es solo "Empréstimos".
 
 273. ESTADIO Y SPONSOR: LO QUE QUEDA (pedido de Guido, 2026-10-18). El dato está en main (`data/contexto/<iso>.js`, `tools/estadio-sponsor.mjs`,
-   lo manual en `tools/contexto-manual.json` con fuente) y `cargar.mjs` no escribe un año nuevo sin estadio y sponsor. Falta: (a) ~110 ejercicios sin sponsor (las camisetas de la página del
-   club ya están escritas): a mano con fuente en `tools/contexto-manual.json` (`node tools/estadio-sponsor.mjs --ensayo --detalle`); mejoras
-   medidas: 21 sin enlace al club desde la temporada; Goiás y otros con camisetas solo en plantillas `{{CamisaFutebol}}`. (d) nombrar la compuerta en `Admin/PIPELINE.md` y en la skill
+   lo manual en `tools/contexto-manual.json` con fuente) y `cargar.mjs` no escribe un año nuevo sin estadio y sponsor. Falta: (a) 80 ejercicios sin sponsor y sin fuente que lo nombre (Ferroviária,
+   Novorizontino, Goiás, Orenburg, Felgueiras, rusos y estonios de ascenso; `node tools/estadio-sponsor.mjs --ensayo --detalle`). Akron 2022 y
+   Baltika 2024 tienen sponsor con fuente pero no entran porque su entrada manual ya lleva la del estadio: mejora posible, fuente por campo
+   en `contexto-manual.json`. (d) nombrar la compuerta en `Admin/PIPELINE.md` y en la skill
    `club-or-year-onboarding` (la skill, con ok de Guido). Siguen sin liga a propósito: Novorizontino 2010, Dynamo Makhachkala 2021, Racing 2027.
 282. QUIÉN AUDITA: LO QUE QUEDA (pedido de Guido, 2026-10-17). Los 942 balances tienen línea, la tarjeta de Finanzas está (con el
    "alcance" de una revisión limitada, procedimientos acordados, propósito especial o cuentas del grupo). Falta: (a) 50 informes del auditor
