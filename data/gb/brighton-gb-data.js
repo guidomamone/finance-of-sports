@@ -21,6 +21,14 @@ const brightonGbRevenueLinesByYear = {
     { rawLabel:'Commercial', normalizedCategory:'sponsorship_commercial', amountNative:9.481, disclosureLevel:'aggregated' },
     { rawLabel:'Other', normalizedCategory:'other_income', amountNative:10.377, disclosureLevel:'aggregated' },
   ],
+  2021: [
+    { rawLabel:'Matchday', normalizedCategory:'matchday_competition', amountNative:0.48, disclosureLevel:'aggregated' },
+    { rawLabel:'Broadcasting', normalizedCategory:'broadcasting', amountNative:122.991, disclosureLevel:'aggregated' },
+    { rawLabel:'Commercial', normalizedCategory:'sponsorship_commercial', amountNative:8.32, disclosureLevel:'aggregated' },
+    { rawLabel:'Other', normalizedCategory:'other_income', amountNative:7.94, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit/(loss) on player trading', normalizedCategory:'player_sales', amountNative:6.592, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating income', normalizedCategory:'other_income', amountNative:2.513, disclosureLevel:'aggregated' },
+  ],
 };
 
 const brightonGbExpenseLinesByYear = {
@@ -40,6 +48,10 @@ const brightonGbExpenseLinesByYear = {
   2020: [
     { rawLabel:'Operating expenses', normalizedCategory:'other_expenses', amountNative:-182.111, disclosureLevel:'aggregated' },
     { rawLabel:'(Loss)/profit on player trading', normalizedCategory:'other_expenses', amountNative:-0.599, disclosureLevel:'aggregated' },
+  ],
+  2021: [
+    { rawLabel:'Cost of sales', normalizedCategory:'other_expenses', amountNative:-1.004, disclosureLevel:'aggregated' },
+    { rawLabel:'Operating expenses', normalizedCategory:'other_expenses', amountNative:-194.356, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -77,6 +89,21 @@ const brightonGbFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:123.291, officialTotalExpenses:182.71, officialPAT:-62.705,
   },
+  2021: {
+    currency:'GBP', fxRef:'GBP@2021-06-30',
+    sourceId:'brighton-gb-full-accounts-2020-21',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-3.031, tax:0,
+    extraRows: [
+      {label:'Interest receivable and similar income', value:0.005},
+      {label:'Interest payable and similar charges', value:-3.036},
+      {label:'Tax on loss', value:null},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:148.836, officialTotalExpenses:195.36, officialPAT:-49.555,
+  },
 };
 
 const brightonGbPresupuestoOverlayByYear = {};
@@ -111,6 +138,11 @@ Object.assign(sources, {
   'brighton-gb-full-accounts-2019-20': {
     id:'brighton-gb-full-accounts-2019-20', clubId:'brighton-gb',
     title:'The Brighton and Hove Albion Football Club Limited — brighton-full-accounts-2019-20 (ejercicio 2020)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'brighton-gb-full-accounts-2020-21': {
+    id:'brighton-gb-full-accounts-2020-21', clubId:'brighton-gb',
+    title:'The Brighton and Hove Albion Football Club Limited — brighton-full-accounts-2020-21 (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
