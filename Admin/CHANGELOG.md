@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 768 — 298 w2: el paso A3 decide el perímetro cuando A2 no puede votar (2026-10-19)
+
+* `perimetro-senales.mjs`: si A2 ve los dos estados sin totales, Sonnet (~US$ 0,01 por documento) contesta si alguna controlada hace el
+  fútbol del club, citando la línea; solo "consolidado" decide. Medido: 6 bien, 0 mal, 3 no decide. Lotes 93-94: de 13 frenados a 6.
+* El motivo del perímetro de PEC Zwolle cita L778 en vez de "academia". Los 5 ajustes de la y4 se quedan (HALLAZGOS).
+
 ## Versión 767 — Merge de finanzas 4: línea de auditoría de las 10 altas del lote 94 (2026-10-19)
 
 * 282 f: 9 altas con informe sin salvedades (Viking, Vålerenga, Aalesund, Sarpsborg 08, Molde, Luzern y St. Gallen 2025; Basel 2021;

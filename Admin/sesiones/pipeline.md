@@ -271,3 +271,5 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
      (61 bien, 0 mal), --decidir-clubes de 99 carpetas y antes-de-localizar de los lotes 93-94, idénticos. Auditoría P0 0 / P1 0.
   79aa1c2e73: el motivo del ajuste de perímetro de PEC Zwolle (sigue consolidado) decía "academia", que el documento no dice; ahora cita L778.
   Willem II: A3 dice consolidado ("Willem II Tilburg B.V.", L550); lo está fijando Onboarding 2.
+
+## Después del merge de la w2 (2026-10-19)
