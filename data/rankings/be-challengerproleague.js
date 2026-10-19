@@ -3,6 +3,7 @@ window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["be-challengerproleague"] = {
   2025: {
     leagueSize: null,
+    wiki: {"t":"2024–25 Challenger Pro League","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"rwdm-be", revenue:17.785, reportType:"official_balance_sheet",
         sourceId:"rwdm-be-jaarrekening-2025-06-30-individual",
@@ -22,6 +23,15 @@ window.RANKINGS["be-challengerproleague"] = {
       { id:"lokerentemse-be", revenue:1.381, reportType:"official_balance_sheet",
         sourceId:"lokerentemse-be-jaarrekening-2025-06-30-individual",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.331],["Otros ingresos",1.049]] },
+    ],
+  },
+  2019: {
+    leagueSize: null,
+    wiki: {"t":"2018–19 Belgian First Division B","lang":"en","at":"2026-10-19","n":8},
+    clubs: [
+      { id:"beerschot-be", revenue:8.979, reportType:"official_balance_sheet",
+        sourceId:"beerschot-be-jaarrekening-2019-06-30-individual-correction",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",6.661],["Otros ingresos",2.318]] },
     ],
   },
 };

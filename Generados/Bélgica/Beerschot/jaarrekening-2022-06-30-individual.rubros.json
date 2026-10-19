@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2022-06-30-individual.pdf",
   "club": "beerschot-be",
   "year": 2022,
-  "generatedAt": "2026-10-18T15:27:59.222Z",
+  "generatedAt": "2026-10-19T14:16:58.751Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         1.536379
       ],
-      "glosa": "Patrocinio"
+      "glosa": "Patrocinios"
     },
     {
       "label": "TV rechten",
@@ -64,7 +64,7 @@
       "values": [
         0.102893
       ],
-      "glosa": "Reversión de amortizaciones y correcciones de valor del inmovilizado material e intangible"
+      "glosa": "Reversión de amortizaciones y deterioros de valor del inmovilizado intangible y material"
     },
     {
       "label": "Meerwaarden bij de realisatie van immateriële en materiële vaste activa",
@@ -74,7 +74,7 @@
       "values": [
         0.001016
       ],
-      "glosa": "Plusvalías por enajenación de inmovilizado material e intangible"
+      "glosa": "Beneficios por enajenación de inmovilizado intangible y material"
     },
     {
       "label": "Aankopen",
@@ -114,7 +114,7 @@
       "values": [
         8.131706
       ],
-      "glosa": "Sueldos, salarios y prestaciones sociales directas"
+      "glosa": "Remuneraciones y beneficios sociales directos"
     },
     {
       "label": "Werkgeversbijdragen voor sociale verzekeringen",
@@ -134,7 +134,7 @@
       "values": [
         1.035198
       ],
-      "glosa": "Primas patronales por seguros extralegales"
+      "glosa": "Primas patronales para seguros complementarios"
     },
     {
       "label": "Andere personeelskosten",
@@ -147,16 +147,6 @@
       "glosa": "Otros gastos de personal"
     },
     {
-      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-      "lado": "expense",
-      "page": 9,
-      "section": "estado",
-      "values": [
-        1.312994
-      ],
-      "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, inmovilizado material e intangible"
-    },
-    {
       "label": "Geboekt",
       "lado": "expense",
       "page": 26,
@@ -164,7 +154,7 @@
       "values": [
         0.053285
       ],
-      "glosa": "Dotadas"
+      "glosa": "Contabilizado"
     },
     {
       "label": "Geboekt",
@@ -174,7 +164,7 @@
       "values": [
         0.022241
       ],
-      "glosa": "Dotadas"
+      "glosa": "Contabilizado"
     },
     {
       "label": "Bedrijfsbelastingen en -taksen",
@@ -204,7 +194,7 @@
       "values": [
         0.63977
       ],
-      "glosa": "Minusvalías por enajenación de inmovilizado material e intangible"
+      "glosa": "Pérdidas por enajenación de inmovilizado intangible y material"
     },
     {
       "label": "Andere niet-recurrente bedrijfskosten",
@@ -215,6 +205,36 @@
         0.109217
       ],
       "glosa": "Otros gastos de explotación no recurrentes"
+    },
+    {
+      "label": "Afschrijvingen immateriële vaste activa (spelers)",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.876098
+      ],
+      "glosa": "Amortizaciones del inmovilizado intangible (jugadores)"
+    },
+    {
+      "label": "Afschrijvingen goodwill",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.169559
+      ],
+      "glosa": "Amortización del fondo de comercio"
+    },
+    {
+      "label": "Afschrijvingen materiële vaste activa",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.267337
+      ],
+      "glosa": "Amortizaciones del inmovilizado material"
     }
   ]
 }

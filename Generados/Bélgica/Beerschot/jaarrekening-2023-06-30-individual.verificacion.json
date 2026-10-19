@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2023-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Beerschot/jaarrekening-2023-06-30-individual.md",
- "generado": "2026-10-18T19:16:11.929Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:16:58.778Z",
+ "estado": "ok",
  "clubId": "beerschot-be",
  "year": 2023,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "d7a9f73"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -33,7 +31,7 @@
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "detalle": "cierra (como impresos)",
    "dif": 8.881784197001252e-16
   },
   {
@@ -63,6 +61,7 @@
   }
  ],
  "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L325-L371, esquema completo); cierran exacto todos sus totales impresos",
   "la nota de \"Niet-recurrente bedrijfsopbrengsten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b58 es una versión resumida del estado oficial VOL-kap 4 en el informe de gestión.",
@@ -76,12 +75,12 @@
  "totales": {
   "ingresos": 7.98553,
   "gastos": 13.032676,
-  "financiero": 0.158983,
-  "impuesto": 0.158922,
+  "financiero": 0.015127,
+  "impuesto": -0.158922,
   "resultadoImpreso": -5.190941,
   "resultadoParaCargar": -5.190941,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -238,8 +237,8 @@
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {
@@ -263,11 +262,6 @@
    "etiqueta": "Belastingen",
    "M": -0.158922,
    "linea": 369
-  },
-  {
-   "etiqueta": "Regularisering van belastingen en terugneming van voorzieningen voor belastingen",
-   "M": 0,
-   "linea": 370
   }
  ]
 }

@@ -1,17 +1,12 @@
 {
  "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2022-06-30-individual.pdf",
- "generado": "2026-10-18T19:18:18.241Z",
- "frena": [
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Cuotas sociales. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-19T14:23:51.903Z",
+ "frena": [],
  "avisos": [
   "materialidad: \"Geboekt\" va como other_expenses con 0.75 (las dudas de gastos suman 0.40% de su lado)",
   "materialidad: \"Geboekt\" va como other_expenses con 0.75 (las dudas de gastos suman 0.40% de su lado)",
-  "gastos: ningún total impreso igual a la suma de las líneas (-17.999617); queda la suma, verificada por el resultado del ejercicio",
-  "gestión: ningún presidente confirmado cubre 2022 (cierre 2022-06-30); pregunta en la cola (no frena)"
+  "\"Cuotas sociales\" en 0: real, por el ajuste cero-real del club (jaarrekening-2025-06-30-individual.pdf, 2026-10-18) y ningún año cargado la tiene con monto",
+  "gastos: ningún total impreso igual a la suma de las líneas (-17.999617); queda la suma, verificada por el resultado del ejercicio"
  ],
  "ejercicio": {
   "clubId": "beerschot-be",
@@ -162,16 +157,6 @@
     "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
-    "rawLabel": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-    "normalizedCategory": "player_amortisation",
-    "amountNative": -1.312994,
-    "disclosureLevel": "aggregated",
-    "_pag": 9,
-    "_escalon": 0,
-    "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
-   },
-   {
     "rawLabel": "Geboekt",
     "normalizedCategory": "other_expenses",
     "amountNative": -0.053285,
@@ -230,6 +215,36 @@
     "_escalon": 1,
     "_conf": 0.92,
     "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen immateriële vaste activa (spelers)",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -0.876098,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen goodwill",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -0.169559,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen materiële vaste activa",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.267337,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
    }
   ],
   "fiscalYearMeta": {
@@ -240,12 +255,12 @@
    "gestionId": null,
    "profitOnPlayerSales": 0,
    "assetSales": 0,
-   "netInterest": -0.063319,
-   "tax": 0.020832,
+   "netInterest": -0.052895,
+   "tax": 0.000832,
    "extraRows": [
     {
      "label": "Andere financiële opbrengsten",
-     "value": -0.005212
+     "value": 0.005212
     },
     {
      "label": "Kosten van schulden",
@@ -257,7 +272,7 @@
     },
     {
      "label": "Belastingen",
-     "value": 0.01
+     "value": -0.01
     },
     {
      "label": "Regularisering van belastingen en terugneming van voorzieningen voor belastingen",
@@ -276,7 +291,7 @@
    "title": "Beerschot — jaarrekening-2022-06-30-individual (ejercicio 2022)",
    "type": "official_balance_sheet",
    "reliability": "primary",
-   "note": "Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Bélgica/Beerschot/jaarrekening-2022-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Beerschot/jaarrekening-2022-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
   }
  },
  "md": "Clubes/Bélgica/Beerschot/jaarrekening-2022-06-30-individual.md",
@@ -296,7 +311,7 @@
  "year": 2022,
  "ajustes": null,
  "seleccion": {
-  "filas": 26,
+  "filas": 28,
   "notasUsadas": [],
   "refM": null
  },
@@ -514,22 +529,6 @@
    "amountNative": -0.228672
   },
   {
-   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "page": 9,
-   "native": 1.312994,
-   "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 1.312994,
-   "cat": "player_amortisation",
-   "conf": 1,
-   "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
-   "enLista": true,
-   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): la fila se partió con ajustes fila + categoria según la nota de activos fijos (pases / bienes de uso)",
-   "destino": "expense",
-   "amountNative": -1.312994
-  },
-  {
    "label": "Geboekt",
    "page": 26,
    "native": 0.053285,
@@ -622,9 +621,54 @@
    "amountNative": -0.109217
   },
   {
+   "label": "Afschrijvingen immateriële vaste activa (spelers)",
+   "page": 9,
+   "native": 0.876098,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.876098,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.876098
+  },
+  {
+   "label": "Afschrijvingen goodwill",
+   "page": 9,
+   "native": 0.169559,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.169559,
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.169559
+  },
+  {
+   "label": "Afschrijvingen materiële vaste activa",
+   "page": 9,
+   "native": 0.267337,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.267337,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.267337
+  },
+  {
    "label": "Andere financiële opbrengsten",
    "page": null,
-   "native": -0.005212,
+   "native": 0.005212,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
@@ -657,7 +701,7 @@
   {
    "label": "Belastingen",
    "page": null,
-   "native": 0.01,
+   "native": -0.01,
    "ladoDoc": null,
    "origen": "verificacion",
    "cat": null,
@@ -675,11 +719,6 @@
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
    "destino": "tax"
-  }
- ],
- "reintentar": [
-  {
-   "categoria": "Cuotas sociales"
   }
  ],
  "signos": {
@@ -768,10 +807,10 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 7,
-  "lineasGasto": 14,
+  "lineasGasto": 16,
   "metaFilas": 5,
   "excluidas": 0
  }

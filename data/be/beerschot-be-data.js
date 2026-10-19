@@ -7,6 +7,11 @@ const beerschotbeRevenueLinesByYear = {
     { rawLabel:'Andere bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:7.180163, disclosureLevel:'aggregated' },
     { rawLabel:'Niet-recurrente bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:0.00244, disclosureLevel:'aggregated' },
   ],
+  2019: [
+    { rawLabel:'Omzet', normalizedCategory:'lump_football_operations', amountNative:5.85353, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:2.012267, disclosureLevel:'aggregated' },
+    { rawLabel:'Niet-recurrente bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:0.024768, disclosureLevel:'aggregated' },
+  ],
 };
 const beerschotbeExpenseLinesByYear = {
   2025: [
@@ -24,6 +29,20 @@ const beerschotbeExpenseLinesByYear = {
     { rawLabel:'Afschrijvingen goodwill', normalizedCategory:'other_amortisation', amountNative:-0.169559, disclosureLevel:'aggregated' },
     { rawLabel:'Afschrijvingen materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.498321, disclosureLevel:'aggregated' },
     { rawLabel:'Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)', normalizedCategory:'other_expenses', amountNative:0.064834, disclosureLevel:'aggregated' },
+  ],
+  2019: [
+    { rawLabel:'Aankopen', normalizedCategory:'other_expenses', amountNative:-0.825475, disclosureLevel:'aggregated' },
+    { rawLabel:'Voorraad: afname (toename) (+)/(-)', normalizedCategory:'other_expenses', amountNative:0.05233, disclosureLevel:'aggregated' },
+    { rawLabel:'Diensten en diverse goederen', normalizedCategory:'other_expenses', amountNative:-4.364733, disclosureLevel:'aggregated' },
+    { rawLabel:'Bezoldigingen en rechtstreekse sociale voordelen', normalizedCategory:'wages_squad', amountNative:-5.198327, disclosureLevel:'aggregated' },
+    { rawLabel:'Werkgeversbijdragen voor sociale verzekeringen', normalizedCategory:'wages_squad', amountNative:-0.456201, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere personeelskosten', normalizedCategory:'wages_squad', amountNative:-0.158584, disclosureLevel:'aggregated' },
+    { rawLabel:'Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)', normalizedCategory:'other_expenses', amountNative:-0.048014, disclosureLevel:'aggregated' },
+    { rawLabel:'Bedrijfsbelastingen en -taksen', normalizedCategory:'admin_general_expense', amountNative:-0.051354, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere', normalizedCategory:'other_expenses', amountNative:-0.001036, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen immateriële vaste activa (spelers)', normalizedCategory:'player_amortisation', amountNative:-0.095607, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen goodwill', normalizedCategory:'other_amortisation', amountNative:-0.169559, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.164231, disclosureLevel:'aggregated' },
   ],
 };
 const beerschotbeFiscalYearMeta = {
@@ -44,6 +63,24 @@ const beerschotbeFiscalYearMeta = {
     grossDebt:null, cash:0.20365,
     officialTotalRevenue:17.587332, officialTotalExpenses:20.897734, officialPAT:-3.543618,
   },
+  2019: {
+    currency:'EUR', fxRef:'EUR@2019-06-30',
+    sourceId:'beerschot-be-jaarrekening-2019-06-30-individual-correction',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.005435, tax:0,
+    extraRows: [
+      {label:'Andere financiële opbrengsten', value:0.000795},
+      {label:'Kosten van schulden', value:-0.002634},
+      {label:'Andere financiële kosten', value:-0.003596},
+    ],
+    sinDesglose: [
+      {renglon:'Omzet', lado:'revenue', importe:5.85353, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:7.890565, officialTotalExpenses:11.480791, officialPAT:-3.59566,
+  },
 };
 const beerschotbePresupuestoOverlayByYear = {};
 
@@ -63,6 +100,11 @@ Object.assign(sources, {
   'beerschot-be-jaarrekening-2025-06-30-individual': {
     id:'beerschot-be-jaarrekening-2025-06-30-individual', clubId:'beerschot-be',
     title:'Beerschot — jaarrekening-2025-06-30-individual (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'beerschot-be-jaarrekening-2019-06-30-individual-correction': {
+    id:'beerschot-be-jaarrekening-2019-06-30-individual-correction', clubId:'beerschot-be',
+    title:'Beerschot — jaarrekening-2019-06-30-individual-correction (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

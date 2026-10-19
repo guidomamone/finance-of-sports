@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2024-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Beerschot/jaarrekening-2024-06-30-individual.md",
- "generado": "2026-10-18T19:16:11.934Z",
- "estado": "cola",
+ "generado": "2026-10-19T14:16:58.806Z",
+ "estado": "ok",
  "clubId": "beerschot-be",
  "year": 2024,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "8fe90ca"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -27,14 +25,14 @@
    "nombre": "total de gastos",
    "ok": true,
    "detalle": "12.935552 = 12.935553",
-   "suma": 12.935551999999998,
+   "suma": 12.935551999999996,
    "impreso": 12.935552999999999
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
-   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
-   "dif": 0.0000010000000014720456
+   "detalle": "cierra (como impresos)",
+   "dif": 0.0000010000000032484024
   },
   {
    "nombre": "lectura",
@@ -63,6 +61,7 @@
   }
  ],
  "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L329-L375, esquema completo); cierran exacto todos sus totales impresos",
   "la nota de \"Omzet\" no suma el renglón (12.292111 contra 6.146056, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Niet-recurrente bedrijfsopbrengsten\" no suma el renglón (1.592486 contra 1.592485, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
@@ -70,7 +69,7 @@
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b53 es la comparación de cifras clave del jaarverslag que repite los renglones de la resultatenrekening.",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
-  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Omzet\"): ¿Se deja afuera de la carga el desglose geográfico 'België' (L867) por duplicar el total de Omzet?"
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"Omzet\"): aceptar, en jaarrekening-2024-06-30-individual.pdf"
  ],
  "reintentar": [
   {
@@ -100,12 +99,12 @@
  "totales": {
   "ingresos": 9.439186,
   "gastos": 12.935552,
-  "financiero": 0.150234,
-  "impuesto": 0.231384,
+  "financiero": 0.066334,
+  "impuesto": -0.231384,
   "resultadoImpreso": -3.661417,
   "resultadoParaCargar": -3.661417,
   "resultadoFinal": null,
-  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
   {
@@ -181,14 +180,6 @@
    "origen": "nota que desglosa \"Bezoldigingen, sociale lasten en pensioenen (+)/(-)\""
   },
   {
-   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-   "lado": "gasto",
-   "M": 0.773319,
-   "pagina": 9,
-   "linea": 341,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Geboekt",
    "lado": "gasto",
    "M": 0.00821,
@@ -235,11 +226,35 @@
    "pagina": 9,
    "linea": 346,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen immateriële vaste activa (spelers)",
+   "lado": "gasto",
+   "M": 0.247479,
+   "pagina": 9,
+   "linea": 429,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen goodwill",
+   "lado": "gasto",
+   "M": 0.169559,
+   "pagina": 9,
+   "linea": 454,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen materiële vaste activa",
+   "lado": "gasto",
+   "M": 0.356281,
+   "pagina": 9,
+   "linea": 488,
+   "origen": "estado"
   }
  ],
  "signosCarga": {
-  "financiero": "rótulo",
-  "impuesto": -1
+  "financiero": 1,
+  "impuesto": 1
  },
  "financiero": [
   {

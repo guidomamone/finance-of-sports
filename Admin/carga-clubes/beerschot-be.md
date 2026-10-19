@@ -119,6 +119,52 @@ Duda: Roef: el día en que asumió la presidencia no figura en ninguna fuente; s
 Duda: Aviso: la gestión pasó de Roef a Vrancken el 2019-07-30, un mes después del cierre 2019-06-30; el balance 2019 se aprobó el 14-10-2019 (jaarrekening-2019-06-30-individual.md:29), ya con Vrancken. El cierre pertenece a Roef pero lo aprobó la gestión de Vrancken.
 ```
 
+## 2019
+
+### Ingresos
+
+```text
+2019: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Bélgica/Beerschot/jaarrekening-2019-06-30-individual-correction.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/Beerschot/jaarrekening-2019-06-30-individual-correction.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Omzet | pág. 6, Jev 1 |
+| 2 | Andere bedrijfsopbrengsten | pág. 6, precedente |
+| 3 | Niet-recurrente bedrijfsopbrengsten | pág. 6, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Aankopen | pág. 6, precedente |
+| 2 | Voorraad: afname (toename) (+)/(-) | pág. 6, precedente |
+| 3 | Diensten en diverse goederen | pág. 6, precedente |
+| 4 | Bezoldigingen en rechtstreekse sociale voordelen | pág. 19, precedente |
+| 5 | Werkgeversbijdragen voor sociale verzekeringen | pág. 19, precedente |
+| 6 | Andere personeelskosten | pág. 19, precedente |
+| 7 | Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) | pág. 6, precedente |
+| 8 | Bedrijfsbelastingen en -taksen | pág. 19, precedente |
+| 9 | Andere | pág. 19, precedente |
+| 10 | Afschrijvingen immateriële vaste activa (spelers) | pág. 6, precedente |
+| 11 | Afschrijvingen goodwill | pág. 6, precedente |
+| 12 | Afschrijvingen materiële vaste activa | pág. 6, precedente |
+
+### Meta
+
+```text
+2019: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): cierre = 2019-06-30. boekjaar dat de periode dekt van 29-06-2018 tot 30-06-2019 (.md L28): el cierre es el 30-06-2019; localizar tomó la columna Vorig boekjaar (vacía) como si el ejercicio fuera 2018 (Claude 2026-10-18)
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): be-challengerproleague, verificado contra roster cacheado de "2018–19 Belgian First Division B" (tools/club-league-reference/be.json), coincidencia exacta "Beerschot Wilrijk".
+```
+
 ## Fuentes
 
 ### beerschot-be-jaarrekening-2025-06-30-individual
@@ -127,4 +173,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### beerschot-be-jaarrekening-2019-06-30-individual-correction
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Beerschot/jaarrekening-2019-06-30-individual-correction.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

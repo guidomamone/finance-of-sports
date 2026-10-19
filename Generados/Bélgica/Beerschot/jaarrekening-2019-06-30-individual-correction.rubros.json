@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2019-06-30-individual-correction.pdf",
   "club": "beerschot-be",
   "year": 2019,
-  "generatedAt": "2026-10-18T19:16:11.814Z",
+  "generatedAt": "2026-10-19T14:16:58.653Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -74,7 +74,7 @@
       "values": [
         5.198327
       ],
-      "glosa": "Remuneraciones y beneficios sociales directos"
+      "glosa": "Remuneraciones y prestaciones sociales directas"
     },
     {
       "label": "Werkgeversbijdragen voor sociale verzekeringen",
@@ -84,7 +84,7 @@
       "values": [
         0.456201
       ],
-      "glosa": "Aportaciones patronales a la seguridad social"
+      "glosa": "Cotizaciones a la seguridad social a cargo de la empresa"
     },
     {
       "label": "Andere personeelskosten",
@@ -97,16 +97,6 @@
       "glosa": "Otros gastos de personal"
     },
     {
-      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-      "lado": "expense",
-      "page": 6,
-      "section": "estado",
-      "values": [
-        0.429397
-      ],
-      "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material"
-    },
-    {
       "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
       "lado": "expense",
       "page": 6,
@@ -114,7 +104,7 @@
       "values": [
         0.048014
       ],
-      "glosa": "Correcciones de valor sobre existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
+      "glosa": "Correcciones de valor de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
     },
     {
       "label": "Bedrijfsbelastingen en -taksen",
@@ -135,6 +125,36 @@
         0.001036
       ],
       "glosa": "Otros"
+    },
+    {
+      "label": "Afschrijvingen immateriële vaste activa (spelers)",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.095607
+      ],
+      "glosa": "Amortización del inmovilizado intangible (jugadores)"
+    },
+    {
+      "label": "Afschrijvingen goodwill",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.169559
+      ],
+      "glosa": "Amortización del fondo de comercio"
+    },
+    {
+      "label": "Afschrijvingen materiële vaste activa",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.164231
+      ],
+      "glosa": "Amortización del inmovilizado material"
     }
   ]
 }

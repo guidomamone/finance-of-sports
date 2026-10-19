@@ -3,7 +3,7 @@
   "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2021-06-30-individual.pdf",
   "club": "beerschot-be",
   "year": 2021,
-  "generatedAt": "2026-10-18T15:27:59.216Z",
+  "generatedAt": "2026-10-19T14:16:58.709Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         1.623378
       ],
-      "glosa": "Taquilla y abonos"
+      "glosa": "Entradas y abonos"
     },
     {
       "label": "Sponsoring",
@@ -24,7 +24,7 @@
       "values": [
         1.264861
       ],
-      "glosa": "Patrocinios"
+      "glosa": "Patrocinio"
     },
     {
       "label": "TV rechten",
@@ -57,26 +57,6 @@
       "glosa": "Otros ingresos de explotación"
     },
     {
-      "label": "Bedrijfskosten",
-      "lado": "expense",
-      "page": 8,
-      "section": "estado",
-      "values": [
-        15.106275
-      ],
-      "glosa": "Gastos de explotación"
-    },
-    {
-      "label": "Handelsgoederen, grond- en hulpstoffen",
-      "lado": "expense",
-      "page": 8,
-      "section": "estado",
-      "values": [
-        0.305482
-      ],
-      "glosa": "Mercaderías, materias primas y materias auxiliares"
-    },
-    {
       "label": "Aankopen",
       "lado": "expense",
       "page": 8,
@@ -90,9 +70,9 @@
       "label": "Voorraad: afname (toename) (+)/(-)",
       "lado": "expense",
       "page": 8,
-      "section": "estado",
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
       "values": [
-        0.089529
+        -0.089529
       ],
       "glosa": "Variación de existencias: disminución (aumento) (+)/(-)"
     },
@@ -114,7 +94,7 @@
       "values": [
         7.325568
       ],
-      "glosa": "Sueldos, salarios y ventajas sociales directas"
+      "glosa": "Remuneraciones y beneficios sociales directos"
     },
     {
       "label": "Werkgeversbijdragen voor sociale verzekeringen",
@@ -124,7 +104,7 @@
       "values": [
         0.50337
       ],
-      "glosa": "Cotizaciones a la seguridad social a cargo de la empresa"
+      "glosa": "Cotizaciones patronales a la seguridad social"
     },
     {
       "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
@@ -134,7 +114,7 @@
       "values": [
         0.840219
       ],
-      "glosa": "Primas patronales por seguros extralegales"
+      "glosa": "Primas patronales de seguros extralegales"
     },
     {
       "label": "Andere personeelskosten",
@@ -154,7 +134,7 @@
       "values": [
         1.099921
       ],
-      "glosa": "Amortizaciones y correcciones de valor sobre gastos de constitución, inmovilizado intangible y material"
+      "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, inmovilizado intangible y material"
     },
     {
       "label": "Bedrijfsbelastingen en -taksen",
