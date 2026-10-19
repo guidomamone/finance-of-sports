@@ -47,7 +47,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 261: Reino Unido, transcripción por subagentes
 * 165 c: altas de los países nuevos que faltan --> Onboarding 3
 * 195: gestiones (presidentes) sin fuente confirmada (Fortaleza 2025: ¿CEO o presidente del consejo? lo decidís vos)
-* 295: balances de las entidades que organizan las ligas (AFA, LFP…), para la auditoría en Ligas
+* 295: balances de las entidades que organizan las ligas (AFA, LFP…), para la auditoría en Ligas --> Finanzas 4
 * 284: Fredrikstad y Sarpsborg 08 sobre el FLI --> Onboarding 3
 * 283: Vålerenga y Aalesund, sumar el AS y el FLI (con nota en Finanzas) --> Onboarding 3
 * 273: nombrar la compuerta de estadio y sponsor en la skill de onboarding (con tu ok)
@@ -64,7 +64,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 **F. Datos para afuera (cuando haya tiempo; nada urgente)**
 * 248: taxonomía genérica y subcategorías por deporte (antes del esquema; resuelve también 130 y 183)
 * 130 y 183: otros deportes, polideportivos e Italia fuera del fútbol (después de 248)
-* 270: estimado de club nuevo: medido otra vez (50% en total, 97% en Países Bajos); 4 cambios posibles, los decidís vos
+* 270: estimado de club nuevo: queda como está; volver a medir cuando entren más años de Noruega, Suiza y Países Bajos
 * 245: datos como JSON con esquema
 * 247: registro público de correcciones (sobre 245)
 * 249: API en dominio propio (último; no construirla ahora)
@@ -305,7 +305,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    posición en la tabla). Medido otra vez el 2026-10-19 con 1.011 club-años (`node tools/estimar.mjs --medir --detalle`): sigue en 50%,
    pero va de 33% (Italia, Chile, Bélgica) a 95-97% (Estonia, Países Bajos). La causa es una sola recta global que sobreestima las ligas
    chicas y subestima las grandes. "Partidos contra clubes con finanzas" no mejora nada (51% contra 50%). A decidir con Guido (detalle en
-   `Admin/Archive/sesion-finanzas-4-2026-10-19-e.md`): (1) efecto de país o liga en la regresión, medido dejando afuera el país entero;
+   `Admin/Archive/sesion-finanzas-4-2026-10-19-e.md`; Guido, 2026-10-19: el modelo queda como está). Las opciones medidas: (1) efecto de país o liga en la regresión, medido dejando afuera el país entero;
    (2) atajo: la mediana de la liga donde le gana al modelo (50% a 46%, optimista); (3) sacar Estonia y Países Bajos de los estimados de
    Ligas hasta tener más datos; (4) el texto del 50% en pantalla: "entre un tercio y el doble, según la liga". Volver a medir cuando
    entren más años de Noruega, Suiza y Países Bajos.
