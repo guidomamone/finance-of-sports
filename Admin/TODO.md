@@ -268,6 +268,8 @@ af) listas de las ligas amateur belgas
    cuando sin ella cierra el resultado impreso y con ella no. Hoy se saca a mano con `cola.mjs --corregir-categoria … no_es_rubro`.
    s2) la cola repite las preguntas de perfil (socios, otras secciones) por cada año de un club aunque ya estén contestadas para otro
    año del mismo club.
+   v2) un documento que quedó "sin estado de resultados (queda como fuente)" en la primera corrida no se vuelve a localizar ni con
+   `--reintentar`, aunque el .md lo traiga (Fulham 2021-22, L509-516: el registro quedó con el cierre del sello de presentación, 28/03/2023).
    z2) (también Aston Villa 2023-24, 13 meses por cambio de cierre de mayo a junio, precedente Wolves 2025: la compuerta de `cargar.mjs`,
    `per.meses < 12`, no reconoce una transición de más de 12 meses con importes del año anterior; Aston Villa se carga con la compuerta
    salteada a mano esa sola vez) Westerlo 2015: 18 meses por cambio de cierre (no es primer ejercicio), sigue frenado; regla a decidir con Guido. t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en
