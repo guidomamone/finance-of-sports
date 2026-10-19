@@ -20,3 +20,5 @@ reales.
   aplica igual a una fundación, o si hay alguna particularidad contable propia de esa figura legal
   neerlandesa.
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Países Bajos/Heracles Almelo/Heracles-Jaarrekening-2024-2025.pdf` (sourceId `heraclesalmelo-nl-heracles-jaarrekening-2024-2025`).

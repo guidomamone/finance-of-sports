@@ -27,6 +27,9 @@ Object.assign(window.CLUB_CONTEXT, {
   'goaheadeagles-nl': {
     2025: {"estadio":"De Adelaarshorst","capacidad":10000,"sponsor":"Betnation, MaxiZoo","marca":"Stanno","temporada":"2024–25 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378045333"},
   },
+  'heraclesalmelo-nl': {
+    2025: {"estadio":"Asito Stadion","capacidad":12080,"sponsor":"Asito","marca":"Acerbis","temporada":"2024–25 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378045333"},
+  },
   'psv-nl': {
     2024: {"estadio":"Philips Stadion","capacidad":36500,"sponsor":"Metropoolregio Brainport Eindhoven","marca":"Puma","temporada":"2023–24 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377460717"},
     2025: {"estadio":"Philips Stadion","capacidad":36500,"sponsor":"Metropoolregio Brainport Eindhoven","marca":"Puma","temporada":"2024–25 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378045333"},

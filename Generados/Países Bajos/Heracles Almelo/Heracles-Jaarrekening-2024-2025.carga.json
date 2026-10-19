@@ -1,18 +1,10 @@
 {
  "pdf": "Clubes/Países Bajos/Heracles Almelo/Heracles-Jaarrekening-2024-2025.pdf",
- "generado": "2026-10-19T00:16:02.545Z",
+ "generado": "2026-10-19T02:28:45.881Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (heraclesalmelo-nl)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "34 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Beker\" -> matchday_competition 0.75; \"Business seats\" -> sponsorship_commercial 0.7; \"Business units en Skyboxen\" -> sponsorship_commercial 0.6; \"Solidariteitsbijdrage UEFA\" -> competition_bonus 0.6; \"Graspremie\" -> other_income 0.55"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
@@ -62,9 +54,9 @@
     "amountNative": 0.17865,
     "disclosureLevel": "aggregated",
     "_pag": 44,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "TV gelden",
@@ -102,9 +94,9 @@
     "amountNative": 2.439162,
     "disclosureLevel": "aggregated",
     "_pag": 44,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Business units en Skyboxen",
@@ -112,9 +104,9 @@
     "amountNative": 1.592618,
     "disclosureLevel": "aggregated",
     "_pag": 44,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Overige sponsoring",
@@ -152,9 +144,9 @@
     "amountNative": 0.901265,
     "disclosureLevel": "aggregated",
     "_pag": 45,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Plaatsingspremie K.N.V.B. Beker",
@@ -172,9 +164,9 @@
     "amountNative": 0.35,
     "disclosureLevel": "aggregated",
     "_pag": 45,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Vergoedingen Eredivisie Media",
@@ -192,19 +184,19 @@
     "amountNative": 0.077529,
     "disclosureLevel": "aggregated",
     "_pag": 45,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Horeca gelden",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "stadium_other",
     "amountNative": 0.028546,
     "disclosureLevel": "aggregated",
     "_pag": 45,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Huuropbrengsten",
@@ -212,9 +204,9 @@
     "amountNative": 0.014121,
     "disclosureLevel": "aggregated",
     "_pag": 45,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Project stimulatiefonds-jeugd",
@@ -222,9 +214,9 @@
     "amountNative": 0.0262,
     "disclosureLevel": "aggregated",
     "_pag": 45,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sperwer/Plus",
@@ -232,9 +224,9 @@
     "amountNative": 0.301283,
     "disclosureLevel": "aggregated",
     "_pag": 45,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Basic-Fit Nederland B.V.",
@@ -242,9 +234,9 @@
     "amountNative": 0.181104,
     "disclosureLevel": "aggregated",
     "_pag": 45,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Van Iersel",
@@ -252,9 +244,9 @@
     "amountNative": 0.065957,
     "disclosureLevel": "aggregated",
     "_pag": 45,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Supportersverenigingen",
@@ -262,9 +254,9 @@
     "amountNative": 0.036707,
     "disclosureLevel": "aggregated",
     "_pag": 45,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Partygroep Twente B.V.",
@@ -282,9 +274,9 @@
     "amountNative": 0.017,
     "disclosureLevel": "aggregated",
     "_pag": 45,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Overige bedrijfsopbrengsten",
@@ -374,9 +366,9 @@
     "amountNative": -0.123562,
     "disclosureLevel": "aggregated",
     "_pag": 46,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Onroerende zaakbelasting",
@@ -404,9 +396,9 @@
     "amountNative": -0.05986,
     "disclosureLevel": "aggregated",
     "_pag": 46,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Veldonderhoud",
@@ -414,9 +406,9 @@
     "amountNative": -0.130536,
     "disclosureLevel": "aggregated",
     "_pag": 46,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Ledigen containers",
@@ -470,13 +462,13 @@
    },
    {
     "rawLabel": "Kleding en materialen",
-    "normalizedCategory": "match_organisation_expense",
+    "normalizedCategory": "other_expenses",
     "amountNative": -0.220113,
     "disclosureLevel": "aggregated",
     "_pag": 46,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Kosten jeugdopleiding en scheidsrechters",
@@ -490,13 +482,13 @@
    },
    {
     "rawLabel": "Medische begeleiding",
-    "normalizedCategory": "match_organisation_expense",
+    "normalizedCategory": "wages_squad",
     "amountNative": -0.160094,
     "disclosureLevel": "aggregated",
     "_pag": 46,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sfeeracties",
@@ -504,9 +496,9 @@
     "amountNative": -0.043832,
     "disclosureLevel": "aggregated",
     "_pag": 46,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Kosten Voetbalacademie",
@@ -574,9 +566,9 @@
     "amountNative": -0.025608,
     "disclosureLevel": "aggregated",
     "_pag": 46,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Geluidsinstallatie",
@@ -584,9 +576,9 @@
     "amountNative": -0.008987,
     "disclosureLevel": "aggregated",
     "_pag": 46,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Consumenten verwervingskosten",
@@ -594,9 +586,9 @@
     "amountNative": -0.56643,
     "disclosureLevel": "aggregated",
     "_pag": 47,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Kosten businessclub",
@@ -604,9 +596,9 @@
     "amountNative": -0.231451,
     "disclosureLevel": "aggregated",
     "_pag": 47,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "KNVB heffing",
@@ -614,9 +606,9 @@
     "amountNative": -0.229581,
     "disclosureLevel": "aggregated",
     "_pag": 47,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Inkoopkosten merchandise",
@@ -634,9 +626,9 @@
     "amountNative": -0.176698,
     "disclosureLevel": "aggregated",
     "_pag": 47,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Overige verkoopkosten",
@@ -644,9 +636,9 @@
     "amountNative": -0.147346,
     "disclosureLevel": "aggregated",
     "_pag": 47,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Kosten Ticketing",
@@ -654,9 +646,9 @@
     "amountNative": -0.067142,
     "disclosureLevel": "aggregated",
     "_pag": 47,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Reclame- en advertentiekosten",
@@ -684,9 +676,9 @@
     "amountNative": -0.014135,
     "disclosureLevel": "aggregated",
     "_pag": 47,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Dotatie voorziening dubieuze vorderingen op handelsdebiteuren",
@@ -704,9 +696,9 @@
     "amountNative": -0.007162,
     "disclosureLevel": "aggregated",
     "_pag": 47,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Kosten automatisering",
@@ -734,9 +726,9 @@
     "amountNative": -0.020261,
     "disclosureLevel": "aggregated",
     "_pag": 47,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Telefoonkosten",
@@ -814,9 +806,9 @@
     "amountNative": -0.148768,
     "disclosureLevel": "aggregated",
     "_pag": 47,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Abonnementen en contributies",
@@ -834,9 +826,9 @@
     "amountNative": -0.154854,
     "disclosureLevel": "aggregated",
     "_pag": 47,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Administratiekosten",
@@ -854,9 +846,9 @@
     "amountNative": -0.009316,
     "disclosureLevel": "aggregated",
     "_pag": 47,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -984,11 +976,11 @@
    "origen": "verificacion (nota que desglosa \"Netto-omzet\" > desglose de \"Wedstrijdbaten\")",
    "signoFijo": 0.17865,
    "cat": "matchday_competition",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Beker (recettes de la copa KNVB) está dentro de Wedstrijdbaten junto a Seizoenkaarten, Vriendschappelijke wedstrijden y Competitie: es recaudación de entradas -> matchday_competition (mismo criterio que PSV 'Recettes competitie en KNVB beker'). El premio de copa va aparte (Plaatsingspremie). [Beker 178.650 (L1861), dentro de Wedstrijdbaten 2.690.855 (L1850)]",
    "destino": "revenue",
    "amountNative": 0.17865
   },
@@ -1045,11 +1037,11 @@
    "origen": "verificacion (nota que desglosa \"Netto-omzet\" > desglose de \"Sponsoring en reclame\")",
    "signoFijo": 2.439162,
    "cat": "sponsorship_commercial",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Business seats está en 'Sponsoring en reclame' (suma 7.309.515 = 1.924.851+2.439.162+1.592.618+1.352.884). Precedente Feyenoord 'Partnerships, business seats, units en boarding' -> sponsorship_commercial. [Business seats 2.439.162 (L1869)]",
    "destino": "revenue",
    "amountNative": 2.439162
   },
@@ -1061,11 +1053,11 @@
    "origen": "verificacion (nota que desglosa \"Netto-omzet\" > desglose de \"Sponsoring en reclame\")",
    "signoFijo": 1.592618,
    "cat": "sponsorship_commercial",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Mismo bloque 'Sponsoring en reclame' que Business seats; Feyenoord pone 'business seats, units' en sponsorship_commercial. [Business units en Skyboxen 1.592.618 (L1870)]",
    "destino": "revenue",
    "amountNative": 1.592618
   },
@@ -1122,11 +1114,11 @@
    "origen": "verificacion (nota que desglosa \"Netto-omzet\" > desglose de \"Overige baten\")",
    "signoFijo": 0.901265,
    "cat": "competition_bonus",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Pago de solidaridad de UEFA (parte de los fondos de las competiciones europeas distribuidos a clubes). Se carga como competition_bonus; la alternativa other_income no la veo mejor porque viene de un reparto de premios de competencia. Es la única duda de la lista. [Solidariteitsbijdrage UEFA 901.265 (L1882), en Overige baten]",
    "destino": "revenue",
    "amountNative": 0.901265
   },
@@ -1153,11 +1145,11 @@
    "origen": "verificacion (nota que desglosa \"Netto-omzet\" > desglose de \"Overige baten\")",
    "signoFijo": 0.35,
    "cat": "other_income",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Premio extraordinario por el campo de césped natural (350.000, sin equivalente el año anterior): no es premio por competencia ni comercial -> other_income. [Graspremie 350.000 (L1884)]",
    "destino": "revenue",
    "amountNative": 0.35
   },
@@ -1184,11 +1176,11 @@
    "origen": "verificacion (nota que desglosa \"Netto-omzet\" > desglose de \"Overige baten\")",
    "signoFijo": 0.077529,
    "cat": "other_income",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Renglón de ingreso dentro de Overige baten (recargo del 2,5% de la KNVB que la liga reparte); no encaja en ninguna categoría propia -> other_income. [Heffing K.N.V.B. 2,5% 77.529 (L1886)]",
    "destino": "revenue",
    "amountNative": 0.077529
   },
@@ -1199,12 +1191,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Netto-omzet\" > desglose de \"Overige baten\")",
    "signoFijo": 0.028546,
-   "cat": "other_income",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "stadium_other",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19: criterio neerlandés unificado (catering/Horeca a stadium_other como Go Ahead Eagles; el renglón de amortización + resultado de traspasos de FC Emmen queda como amortización de pases, sin ingreso negativo)",
    "destino": "revenue",
    "amountNative": 0.028546
   },
@@ -1216,11 +1208,11 @@
    "origen": "verificacion (nota que desglosa \"Netto-omzet\" > desglose de \"Overige baten\")",
    "signoFijo": 0.014121,
    "cat": "other_income",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Alquiler genérico sin nombrar el estadio -> other_income (criterio conservador). [Huuropbrengsten 14.121 (L1888)]",
    "destino": "revenue",
    "amountNative": 0.014121
   },
@@ -1232,11 +1224,11 @@
    "origen": "verificacion (nota que desglosa \"Netto-omzet\" > desglose de \"Overige baten\")",
    "signoFijo": 0.0262,
    "cat": "youth_football",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Fondo de estímulo para proyectos de juveniles: el rótulo nombra jeugd, ingreso de formación -> youth_football. [Project stimulatiefonds-jeugd 26.200 (L1890)]",
    "destino": "revenue",
    "amountNative": 0.0262
   },
@@ -1248,11 +1240,11 @@
    "origen": "verificacion (nota que desglosa \"Netto-omzet\" > desglose de \"Huurinkomsten uit bedrijfsruimten\")",
    "signoFijo": 0.301283,
    "cat": "other_income",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Inquilino (alquiler de local comercial) dentro de 'Huurinkomsten uit bedrijfsruimten'; el rótulo no nombra el estadio -> other_income. [Sperwer/Plus 301.283 (L1894)]",
    "destino": "revenue",
    "amountNative": 0.301283
   },
@@ -1264,11 +1256,11 @@
    "origen": "verificacion (nota que desglosa \"Netto-omzet\" > desglose de \"Huurinkomsten uit bedrijfsruimten\")",
    "signoFijo": 0.181104,
    "cat": "other_income",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Inquilino (Basic-Fit) en 'Huurinkomsten uit bedrijfsruimten' -> other_income. [Basic-Fit Nederland B.V. 181.104 (L1895)]",
    "destino": "revenue",
    "amountNative": 0.181104
   },
@@ -1280,11 +1272,11 @@
    "origen": "verificacion (nota que desglosa \"Netto-omzet\" > desglose de \"Huurinkomsten uit bedrijfsruimten\")",
    "signoFijo": 0.065957,
    "cat": "other_income",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Inquilino en 'Huurinkomsten uit bedrijfsruimten' -> other_income. [Van Iersel 65.957 (L1896)]",
    "destino": "revenue",
    "amountNative": 0.065957
   },
@@ -1296,11 +1288,11 @@
    "origen": "verificacion (nota que desglosa \"Netto-omzet\" > desglose de \"Huurinkomsten uit bedrijfsruimten\")",
    "signoFijo": 0.036707,
    "cat": "other_income",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Alquiler que pagan las asociaciones de hinchas (no son cuotas de socios del club) -> other_income. [Supportersverenigingen 36.707 (L1897)]",
    "destino": "revenue",
    "amountNative": 0.036707
   },
@@ -1327,11 +1319,11 @@
    "origen": "verificacion (nota que desglosa \"Netto-omzet\" > desglose de \"Huurinkomsten uit bedrijfsruimten\")",
    "signoFijo": 0.017,
    "cat": "other_income",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Inquilino en 'Huurinkomsten uit bedrijfsruimten' -> other_income. [Uptown Consultancy 17.000 (L1899)]",
    "destino": "revenue",
    "amountNative": 0.017
   },
@@ -1464,11 +1456,11 @@
    "origen": "verificacion (nota que desglosa \"Huisvestingskosten\")",
    "signoFijo": 0.123562,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Parte de Huisvestingskosten (alquiler de 916 plazas de estacionamiento a ZGT Vastgoed, L1802). Costo de infraestructura no deportivo -> admin_general_expense, como Huisvestingskosten de Go Ahead. [Huur parkeerruimte 123.562 (L1937)]",
    "destino": "expense",
    "amountNative": -0.123562
   },
@@ -1510,11 +1502,11 @@
    "origen": "verificacion (nota que desglosa \"Huisvestingskosten\")",
    "signoFijo": 0.05986,
    "cat": "youth_other_sports_expense",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Alquiler de la academia de fútbol (Twente/Heracles Academie): el rótulo nombra la academia -> youth_other_sports_expense (Go Ahead 'Kosten voetbalacademie (jeugd)'). [Huur voetbalacademie 59.860 (L1940)]",
    "destino": "expense",
    "amountNative": -0.05986
   },
@@ -1526,11 +1518,11 @@
    "origen": "verificacion (nota que desglosa \"Huisvestingskosten\")",
    "signoFijo": 0.130536,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Mantenimiento del campo dentro de Huisvestingskosten (1.671.456). Go Ahead pone 'Onderhoud onroerend goed' en admin_general_expense. [Veldonderhoud 130.536 (L1941)]",
    "destino": "expense",
    "amountNative": -0.130536
   },
@@ -1616,12 +1608,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Wedstrijd- en trainingskosten\")",
    "signoFijo": 0.220113,
-   "cat": "match_organisation_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Ropa y materiales del equipo, dentro de Wedstrijd- en trainingskosten. No es organización de partidos: Go Ahead carga 'Uitrusting en wedstrijdmateriaal' y 'Clubkostuums' como other_expenses. [Kleding en materialen 220.113 (L1950)]",
    "destino": "expense",
    "amountNative": -0.220113
   },
@@ -1647,12 +1639,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (nota que desglosa \"Wedstrijd- en trainingskosten\")",
    "signoFijo": 0.160094,
-   "cat": "match_organisation_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Atención médica del plantel. Precedente Go Ahead: 'Medische begeleiding' va a wages_squad. Heracles no lo separa de personal en este bloque (está en Wedstrijd- en trainingskosten); 160.094 es chico. Si se prefiere no inflar sueldos con costos externos, la alternativa es other_expenses. [Medische begeleiding 160.094 (L1952)]",
    "destino": "expense",
    "amountNative": -0.160094
   },
@@ -1664,11 +1656,11 @@
    "origen": "verificacion (nota que desglosa \"Wedstrijd- en trainingskosten\")",
    "signoFijo": 0.043832,
    "cat": "match_organisation_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Acciones de ambientación en los partidos -> match_organisation_expense. [Sfeeracties 43.832 (L1953)]",
    "destino": "expense",
    "amountNative": -0.043832
   },
@@ -1770,11 +1762,11 @@
    "origen": "verificacion (nota que desglosa \"Wedstrijd- en trainingskosten\")",
    "signoFijo": 0.025608,
    "cat": "match_organisation_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Promoción de los partidos, en Wedstrijd- en trainingskosten; el rótulo nombra los partidos -> match_organisation_expense. [Promotiekosten wedstrijden 25.608 (L1960)]",
    "destino": "expense",
    "amountNative": -0.025608
   },
@@ -1786,11 +1778,11 @@
    "origen": "verificacion (nota que desglosa \"Wedstrijd- en trainingskosten\")",
    "signoFijo": 0.008987,
    "cat": "match_organisation_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Sistema de sonido del estadio para el día de partido, en Wedstrijd- en trainingskosten -> match_organisation_expense. [Geluidsinstallatie 8.987 (L1961)]",
    "destino": "expense",
    "amountNative": -0.008987
   },
@@ -1802,11 +1794,11 @@
    "origen": "verificacion (nota que desglosa \"Verkoopkosten\")",
    "signoFijo": 0.56643,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Costo de captación de clientes/consumidores, en Verkoopkosten: costo comercial -> admin_general_expense (la categoría incluye gastos comerciales). [Consumenten verwervingskosten 566.430 (L1971)]",
    "destino": "expense",
    "amountNative": -0.56643
   },
@@ -1818,11 +1810,11 @@
    "origen": "verificacion (nota que desglosa \"Verkoopkosten\")",
    "signoFijo": 0.231451,
    "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Costo del club de empresas (comercial), en Verkoopkosten -> admin_general_expense. [Kosten businessclub 231.451 (L1972)]",
    "destino": "expense",
    "amountNative": -0.231451
   },
@@ -1834,11 +1826,11 @@
    "origen": "verificacion (nota que desglosa \"Verkoopkosten\")",
    "signoFijo": 0.229581,
    "cat": "match_organisation_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Tasa de la KNVB: Go Ahead carga 'Heffingen KNVB' como match_organisation_expense; mismo criterio. [KNVB heffing 229.581 (L1973)]",
    "destino": "expense",
    "amountNative": -0.229581
   },
@@ -1865,11 +1857,11 @@
    "origen": "verificacion (nota que desglosa \"Verkoopkosten\")",
    "signoFijo": 0.176698,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Costo de captación del segmento empresas, en Verkoopkosten -> admin_general_expense. [Business verwervingskosten 176.698 (L1975)]",
    "destino": "expense",
    "amountNative": -0.176698
   },
@@ -1881,11 +1873,11 @@
    "origen": "verificacion (nota que desglosa \"Verkoopkosten\")",
    "signoFijo": 0.147346,
    "cat": "admin_general_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Otros costos de venta sin detalle -> admin_general_expense (gastos comerciales). [Overige verkoopkosten 147.346 (L1976)]",
    "destino": "expense",
    "amountNative": -0.147346
   },
@@ -1897,11 +1889,11 @@
    "origen": "verificacion (nota que desglosa \"Verkoopkosten\")",
    "signoFijo": 0.067142,
    "cat": "match_organisation_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Costo de venta de entradas: Go Ahead carga 'Ticketing' como match_organisation_expense. [Kosten Ticketing 67.142 (L1977)]",
    "destino": "expense",
    "amountNative": -0.067142
   },
@@ -1943,11 +1935,11 @@
    "origen": "verificacion (nota que desglosa \"Verkoopkosten\")",
    "signoFijo": 0.014135,
    "cat": "admin_general_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Rótulo vago dentro de Verkoopkosten (14.135): admin_general_expense (gastos comerciales). Monto mínimo. [Specials 14.135 (L1980)]",
    "destino": "expense",
    "amountNative": -0.014135
   },
@@ -1974,11 +1966,11 @@
    "origen": "verificacion (nota que desglosa \"Verkoopkosten\")",
    "signoFijo": 0.007162,
    "cat": "other_expenses",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Costo de compra del catering de la academia, en Verkoopkosten: costo de ventas como 'Inkoopwaarde van de omzet' de Go Ahead y 'Kostprijs van de omzet' de PSV/Feyenoord -> other_expenses. [Inkoopkosten horeca voetbalacademie 7.162 (L1982)]",
    "destino": "expense",
    "amountNative": -0.007162
   },
@@ -2020,11 +2012,11 @@
    "origen": "verificacion (nota que desglosa \"Kantoorkosten\")",
    "signoFijo": 0.020261,
    "cat": "admin_general_expense",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Gastos bancarios y de cobranza, en Kantoorkosten -> admin_general_expense. [Bank- en incassokosten 20.261 (L1987)]",
    "destino": "expense",
    "amountNative": -0.020261
   },
@@ -2141,11 +2133,11 @@
    "origen": "verificacion (nota que desglosa \"Algemene kosten\")",
    "signoFijo": 0.148768,
    "cat": "other_expenses",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Costos de scouting, en Algemene kosten. Go Ahead carga 'Scoutingswerkzaamheden' como other_expenses; mismo criterio. [Scoutingskosten 148.768 (L1997)]",
    "destino": "expense",
    "amountNative": -0.148768
   },
@@ -2172,11 +2164,11 @@
    "origen": "verificacion (nota que desglosa \"Algemene kosten\")",
    "signoFijo": 0.154854,
    "cat": "exceptional_items",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Rótulo 'Vrijval' (liberación) pero el importe SUMA como costo en Algemene kosten: 82.755+109.308+260.880+122.699+99.406+148.768+53.652+154.854+7.574+9.316 = 1.049.212 (L2002). Se carga como gasto 154.854 en exceptional_items (criterio de desafectación de reservas). Ojo: el signo del rótulo contradice la suma; si se quisiera tratar como ingreso el total ya no cerraría. [Vrijval van kostenreserveringen 154.854 (L1999); total 1.049.212 (L2002)]",
    "destino": "expense",
    "amountNative": -0.154854
   },
@@ -2203,11 +2195,11 @@
    "origen": "verificacion (nota que desglosa \"Algemene kosten\")",
    "signoFijo": 0.009316,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Otros gastos generales -> admin_general_expense. [Overige algemene kosten 9.316 (L2001)]",
    "destino": "expense",
    "amountNative": -0.009316
   },
@@ -2336,7 +2328,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 1,
   "lineasIngreso": 27,
   "lineasGasto": 56,
   "metaFilas": 3,
