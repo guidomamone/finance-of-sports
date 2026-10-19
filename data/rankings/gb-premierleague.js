@@ -157,6 +157,9 @@ window.RANKINGS["gb-premierleague"] = {
     leagueSize: 20,
     wiki: {"t":"2020–21 Premier League","lang":"en","at":"2026-10-19","n":20},
     clubs: [
+      { id:"chelsea-gb", revenue:656.933, reportType:"official_balance_sheet",
+        sourceId:"chelsea-gb-fc-holdings-group-accounts-2020-21",
+        mix:[["Comercial / Sponsors",212.264],["Estadio",10.577],["Televisión",378.096],["Venta de Jugadores",38.61],["Otros ingresos",17.386]] },
       { id:"astonvilla-gb", revenue:252.515, reportType:"official_balance_sheet",
         sourceId:"astonvilla-gb-full-accounts-2020-21",
         mix:[["Comercial / Sponsors",25.765],["Estadio",0.44],["Televisión",222.766],["Otros ingresos",3.544]] },

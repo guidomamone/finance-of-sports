@@ -84,6 +84,46 @@ _antes de Todd Boehly (data/gestiones/gb.js):_
 Boehly dejó la presidencia al vender su parte a Clearlake (anuncio del 16/9/2026). Desde entonces no se carga a nadie (Clearlake es un fondo).
 ```
 
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2020-21.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Broadcasting | pág. 31, precedente |
+| 2 | Commercial | pág. 31, precedente |
+| 3 | Matchday | pág. 31, precedente |
+| 4 | Research and development tax credit | pág. 31, Jev 1 |
+| 5 | Recharged costs | pág. 31, Jev 0.99 |
+| 6 | Insurance claim | pág. 31, Jev 1 |
+| 7 | Profit on disposal of player registrations | pág. 17, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Cost of sales | pág. 17, precedente |
+| 2 | Administrative expenses | pág. 17, precedente |
+| 3 | Exceptional administrative expenses | pág. 17, Claude 0.85 |
+| 4 | Fair value loss on investment properties | pág. 17, Jev 0.96 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2020–21 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Chelsea".
+```
+
 ## 2020
 
 ### Ingresos
@@ -138,6 +178,14 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2019-20.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### chelsea-gb-fc-holdings-group-accounts-2020-21
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
 
 ## Gestiones (Finanzas 5, 2026-10-19)

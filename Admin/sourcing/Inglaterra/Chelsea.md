@@ -52,3 +52,5 @@ Todos en `Clubes/Inglaterra/Chelsea/` (los PDF no se trackean; son escaneos, hay
 <!-- /ing-sourcing -->
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2020 desde `Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2019-20.pdf` (sourceId `chelsea-gb-fc-holdings-group-accounts-2019-20`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2021 desde `Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2020-21.pdf` (sourceId `chelsea-gb-fc-holdings-group-accounts-2020-21`).

@@ -69,7 +69,7 @@ window.CLUB_INDEX = {
   "chapecoense-br": {"n":"Chapecoense","c":"BR","q":"full","y":2,"last":2021,"yrs":[[2021,"official_balance_sheet"],[2017,"official_balance_sheet"]]},
   "charleroi-be": {"n":"Charleroi","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "chaves-pt": {"n":"Chaves","c":"PT","q":"full","y":2,"last":2023,"yrs":[[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
-  "chelsea-gb": {"n":"Chelsea","c":"GB","q":"full","y":2,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2020,"official_balance_sheet"]]},
+  "chelsea-gb": {"n":"Chelsea","c":"GB","q":"full","y":3,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"]]},
   "chievoverona-it": {"n":"Chievo Verona","c":"IT","q":"full","y":3,"last":2016,"yrs":[[2016,"official_balance_sheet"],[2015,"official_balance_sheet"],[2014,"official_balance_sheet"]]},
   "clubamerica": {"n":"Club América","c":"MX","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "clubbrugge-be": {"n":"Club Brugge","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
