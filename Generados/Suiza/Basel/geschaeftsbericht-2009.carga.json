@@ -1,0 +1,36 @@
+{
+ "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2009.pdf",
+ "generado": "2026-10-19T17:10:26.240Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas, verificar.mjs) no corrió todavía sobre este .md: correr el lote"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "no hay .verificacion.json (correr tools/lote.mjs o verificar.mjs)"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2009.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2009-12-31",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "1. Januar 2009 bis 31. Dezember 2009"
+  },
+  "confianza": "alta",
+  "anual": "calendario"
+ },
+ "clubId": "basel-ch",
+ "year": 2009,
+ "cortadoEn": "filas"
+}

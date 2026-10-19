@@ -1,0 +1,256 @@
+{
+ "pdf": "Clubes/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.pdf",
+ "md": "Clubes/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.md",
+ "generado": "2026-10-19T17:09:35.341Z",
+ "estado": "ok",
+ "clubId": "silkeborg-dk",
+ "year": null,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.pdf",
+   "campo": "cierre",
+   "valor": "2025-12-31",
+   "linea": null,
+   "motivo": "el informe dice 'Financial year: 01.01.2025- 31.12.2025' (.md línea 59)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.0658141036401503e-14
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: b12 abre Executive Board y Board of Directors, que ya están dentro de Staff costs (nota 5).",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 131.739,
+  "gastos": 98.613,
+  "financiero": -0.018,
+  "impuesto": -7.309,
+  "resultadoImpreso": 25.799,
+  "resultadoParaCargar": 25.799,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Entrance fees",
+   "lado": "ingreso",
+   "M": 5.802,
+   "pagina": 18,
+   "linea": 507,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "TV revenue",
+   "lado": "ingreso",
+   "M": 18.571,
+   "pagina": 18,
+   "linea": 508,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Sponsorship and collaboration agreements",
+   "lado": "ingreso",
+   "M": 29.161,
+   "pagina": 18,
+   "linea": 509,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Sale of merchandise",
+   "lado": "ingreso",
+   "M": 0.451,
+   "pagina": 18,
+   "linea": 510,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Compensation (FIFA/UEFA/DBU)",
+   "lado": "ingreso",
+   "M": 3.99,
+   "pagina": 18,
+   "linea": 511,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Food & beverage JYSK PARK",
+   "lado": "ingreso",
+   "M": 5.257,
+   "pagina": 18,
+   "linea": 512,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Prize income",
+   "lado": "ingreso",
+   "M": 7.522,
+   "pagina": 18,
+   "linea": 513,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Other revenue",
+   "lado": "ingreso",
+   "M": 10.259,
+   "pagina": 18,
+   "linea": 514,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Transfer income",
+   "lado": "ingreso",
+   "M": 50.393,
+   "pagina": 18,
+   "linea": 521,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Sale of property, plant and equipment",
+   "lado": "ingreso",
+   "M": 0.102,
+   "pagina": 18,
+   "linea": 522,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Salary refunds",
+   "lado": "ingreso",
+   "M": 0.231,
+   "pagina": 18,
+   "linea": 523,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Other external expenses",
+   "lado": "gasto",
+   "M": 34.848,
+   "pagina": 13,
+   "linea": 363,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Wages and salaries",
+   "lado": "gasto",
+   "M": 48.332,
+   "pagina": 19,
+   "linea": 542,
+   "origen": "nota que desglosa \"Staff costs\""
+  },
+  {
+   "etiqueta": "Pension costs",
+   "lado": "gasto",
+   "M": 2.078,
+   "pagina": 19,
+   "linea": 543,
+   "origen": "nota que desglosa \"Staff costs\""
+  },
+  {
+   "etiqueta": "Other social security costs",
+   "lado": "gasto",
+   "M": 0.685,
+   "pagina": 19,
+   "linea": 544,
+   "origen": "nota que desglosa \"Staff costs\""
+  },
+  {
+   "etiqueta": "Depreciation, amortisation and impairment losses",
+   "lado": "gasto",
+   "M": 12.67,
+   "pagina": 13,
+   "linea": 366,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Other financial income",
+   "M": 0.324,
+   "linea": 368
+  },
+  {
+   "etiqueta": "Other financial expenses",
+   "M": -0.342,
+   "linea": 369
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on profit/loss for the year",
+   "M": -7.309,
+   "linea": 371
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "f66f580dc1b9a7cac3793cf3c8c340e695969607",
+  "rango": [
+   358,
+   375
+  ],
+  "lineasCargadas": [
+   507,
+   508,
+   509,
+   510,
+   511,
+   512,
+   513,
+   514,
+   521,
+   522,
+   523,
+   363,
+   542,
+   543,
+   544,
+   366,
+   368,
+   369,
+   371
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 358 a 375 del .md):\nL359: |   | Notes | 2025 DKK'000 | 2024 DKK'000  |\nL360: | --- | --- | --- | --- |\nL361: |  Revenue | 2 | 81,013 | 93,516  |\nL362: |  Other operating income | 3 | 50,726 | 61,614  |\nL363: |  Other external expenses | 4 | (34,848) | (35,414)  |\nL364: |  **Gross profit/loss** |  | **96,891** | **119,716**  |\nL365: |  Staff costs | 5 | (51,095) | (46,801)  |\nL366: |  Depreciation, amortisation and impairment losses |  | (12,670) | (12,444)  |\nL367: |  **Operating profit/loss** |  | **33,126** | **60,471**  |\nL368: |  Other financial income | 6 | 324 | 1,578  |\nL369: |  Other financial expenses | 7 | (342) | (209)  |\nL370: |  **Profit/loss before tax** |  | **33,108** | **61,840**  |\nL371: |  Tax on profit/loss for the year | 8 | (7,309) | (13,600)  |\nL372: |  **Profit/loss for the year** | 9 | **25,799** | **48,240**  |\nL374: --- pág. 14 ---\n\nLO QUE SE CARGA:\n- ingreso · \"Entrance fees\" · 5.802 · L507 (de una nota)\n- ingreso · \"TV revenue\" · 18.571 · L508 (de una nota)\n- ingreso · \"Sponsorship and collaboration agreements\" · 29.161 · L509 (de una nota)\n- ingreso · \"Sale of merchandise\" · 0.451 · L510 (de una nota)\n- ingreso · \"Compensation (FIFA/UEFA/DBU)\" · 3.99 · L511 (de una nota)\n- ingreso · \"Food & beverage JYSK PARK\" · 5.257 · L512 (de una nota)\n- ingreso · \"Prize income\" · 7.522 · L513 (de una nota)\n- ingreso · \"Other revenue\" · 10.259 · L514 (de una nota)\n- ingreso · \"Transfer income\" · 50.393 · L521 (de una nota)\n- ingreso · \"Sale of property, plant and equipment\" · 0.102 · L522 (de una nota)\n- ingreso · \"Salary refunds\" · 0.231 · L523 (de una nota)\n- gasto · \"Other external expenses\" · 34.848 · L363\n- gasto · \"Wages and salaries\" · 48.332 · L542 (de una nota)\n- gasto · \"Pension costs\" · 2.078 · L543 (de una nota)\n- gasto · \"Other social security costs\" · 0.685 · L544 (de una nota)\n- gasto · \"Depreciation, amortisation and impairment losses\" · 12.67 · L366\n- financiero · \"Other financial income\" · 0.324 · L368\n- financiero · \"Other financial expenses\" · -0.342 · L369\n- impuesto · \"Tax on profit/loss for the year\" · -7.309 · L371"
+ }
+}

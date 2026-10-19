@@ -1,0 +1,28 @@
+{
+ "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2005.pdf",
+ "generado": "2026-10-19T17:10:25.722Z",
+ "frena": [
+  {
+   "etapa": "filas",
+   "motivo": "no hay .verificacion.json (correr tools/lote.mjs o verificar.mjs)"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2005.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2005-12-31",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "1. Januar 2005 bis 31. Dezember 2005"
+  },
+  "confianza": "alta",
+  "anual": "calendario"
+ },
+ "clubId": "basel-ch",
+ "year": 2005,
+ "cortadoEn": "filas"
+}

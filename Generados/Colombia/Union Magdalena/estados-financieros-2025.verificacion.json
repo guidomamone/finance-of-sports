@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Colombia/Union Magdalena/estados-financieros-2025.pdf",
  "md": "Clubes/Colombia/Union Magdalena/estados-financieros-2025.md",
- "generado": "2026-10-19T16:42:41.346Z",
- "estado": "cola",
+ "generado": "2026-10-19T17:09:22.781Z",
+ "estado": "ok",
  "clubId": "unionmagdalena-co",
  "year": 2024,
  "escala": {
@@ -12,11 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "93a545f",
-  "1f2aa09",
-  "864aa95"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -43,7 +39,8 @@
  "notas": [
   "la nota de \"Otros Ingresos\" no suma el renglón (1516.386 contra 1496.386, sumando sus renglones): quedó el renglón del estado",
   "la nota de \"Costos de Venta\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
-  "duda de localizar confirmada por las sumas (columna, \"-\"): ¿Se carga el ejercicio 2024 tomando la columna comparativa 'Ene - Dic 2024' del estado de resultados de los estados 2025 (b3)?"
+  "duda de localizar confirmada por las sumas (columna, \"-\"): ¿Se carga el ejercicio 2024 tomando la columna comparativa 'Ene - Dic 2024' del estado de resultados de los estados 2025 (b3)?",
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Otros Ingresos\"): corregir no, en estados-financieros-2025.pdf"
  ],
  "reintentar": [
   {

@@ -1,0 +1,415 @@
+{
+ "pdf": "Clubes/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.pdf",
+ "md": "Clubes/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.md",
+ "mdSha1": "e92baac858b881da03d1ee13238ca26bddf2a32e",
+ "ubicacionSha1": "0a3b3fe0964e5fd6a678d7da9727e3a0010013b7",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T17:08:57.910Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [
+   "b9",
+   "b10",
+   "b13"
+  ],
+  "notas_gastos": [
+   "b11",
+   "b15"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "miles",
+   "evidencia": "L359: 2025 DKK'000"
+  },
+  {
+   "bloque": "b9",
+   "escala": "miles",
+   "evidencia": "L505: 2025 DKK'000"
+  },
+  {
+   "bloque": "b10",
+   "escala": "miles",
+   "evidencia": "L519: 2025 DKK'000"
+  },
+  {
+   "bloque": "b13",
+   "escala": "miles",
+   "evidencia": "L558: 2025 DKK'000"
+  },
+  {
+   "bloque": "b11",
+   "escala": "miles",
+   "evidencia": "L540: 2025 DKK'000"
+  },
+  {
+   "bloque": "b15",
+   "escala": "miles",
+   "evidencia": "L573: 2025 DKK'000"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 361,
+   "etiqueta": "Revenue",
+   "actual": "81,013",
+   "anterior": "93,516",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 362,
+   "etiqueta": "Other operating income",
+   "actual": "50,726",
+   "anterior": "61,614",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 363,
+   "etiqueta": "Other external expenses",
+   "actual": "(34,848)",
+   "anterior": "(35,414)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 364,
+   "etiqueta": "Gross profit/loss",
+   "actual": "96,891",
+   "anterior": "119,716",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 365,
+   "etiqueta": "Staff costs",
+   "actual": "(51,095)",
+   "anterior": "(46,801)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 366,
+   "etiqueta": "Depreciation, amortisation and impairment losses",
+   "actual": "(12,670)",
+   "anterior": "(12,444)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 367,
+   "etiqueta": "Operating profit/loss",
+   "actual": "33,126",
+   "anterior": "60,471",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 368,
+   "etiqueta": "Other financial income",
+   "actual": "324",
+   "anterior": "1,578",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 369,
+   "etiqueta": "Other financial expenses",
+   "actual": "(342)",
+   "anterior": "(209)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 370,
+   "etiqueta": "Profit/loss before tax",
+   "actual": "33,108",
+   "anterior": "61,840",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 371,
+   "etiqueta": "Tax on profit/loss for the year",
+   "actual": "(7,309)",
+   "anterior": "(13,600)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 372,
+   "etiqueta": "Profit/loss for the year",
+   "actual": "25,799",
+   "anterior": "48,240",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 507,
+   "etiqueta": "Entrance fees",
+   "actual": "5,802",
+   "anterior": "9,756",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b9",
+   "linea": 508,
+   "etiqueta": "TV revenue",
+   "actual": "18,571",
+   "anterior": "25,150",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b9",
+   "linea": 509,
+   "etiqueta": "Sponsorship and collaboration agreements",
+   "actual": "29,161",
+   "anterior": "28,640",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b9",
+   "linea": 510,
+   "etiqueta": "Sale of merchandise",
+   "actual": "451",
+   "anterior": "531",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b9",
+   "linea": 511,
+   "etiqueta": "Compensation (FIFA/UEFA/DBU)",
+   "actual": "3,990",
+   "anterior": "6,188",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b9",
+   "linea": 512,
+   "etiqueta": "Food & beverage JYSK PARK",
+   "actual": "5,257",
+   "anterior": "6,454",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b9",
+   "linea": 513,
+   "etiqueta": "Prize income",
+   "actual": "7,522",
+   "anterior": "6,711",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b9",
+   "linea": 514,
+   "etiqueta": "Other revenue",
+   "actual": "10,259",
+   "anterior": "10,086",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b9",
+   "linea": 515,
+   "etiqueta": "Total revenue by activity",
+   "actual": "81,013",
+   "anterior": "93,516",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b10",
+   "linea": 521,
+   "etiqueta": "Transfer income",
+   "actual": "50,393",
+   "anterior": "61,343",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b10",
+   "linea": 522,
+   "etiqueta": "Sale of property, plant and equipment",
+   "actual": "102",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b10",
+   "linea": 523,
+   "etiqueta": "Salary refunds",
+   "actual": "231",
+   "anterior": "271",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b10",
+   "linea": 524,
+   "etiqueta": "",
+   "actual": "50,726",
+   "anterior": "61,614",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b13",
+   "linea": 560,
+   "etiqueta": "Financial income from group enterprises",
+   "actual": "0",
+   "anterior": "1,136",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Other financial income"
+  },
+  {
+   "bloque": "b13",
+   "linea": 561,
+   "etiqueta": "Other interest income",
+   "actual": "324",
+   "anterior": "442",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Other financial income"
+  },
+  {
+   "bloque": "b13",
+   "linea": 562,
+   "etiqueta": "",
+   "actual": "324",
+   "anterior": "1,578",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Other financial income"
+  },
+  {
+   "bloque": "b11",
+   "linea": 542,
+   "etiqueta": "Wages and salaries",
+   "actual": "48,332",
+   "anterior": "44,259",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs"
+  },
+  {
+   "bloque": "b11",
+   "linea": 543,
+   "etiqueta": "Pension costs",
+   "actual": "2,078",
+   "anterior": "1,954",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs"
+  },
+  {
+   "bloque": "b11",
+   "linea": 544,
+   "etiqueta": "Other social security costs",
+   "actual": "685",
+   "anterior": "588",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs"
+  },
+  {
+   "bloque": "b11",
+   "linea": 545,
+   "etiqueta": "",
+   "actual": "51,095",
+   "anterior": "46,801",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Staff costs"
+  },
+  {
+   "bloque": "b15",
+   "linea": 575,
+   "etiqueta": "Current tax",
+   "actual": "7,156",
+   "anterior": "14,397",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Tax on profit/loss for the year"
+  },
+  {
+   "bloque": "b15",
+   "linea": 576,
+   "etiqueta": "Change in deferred tax",
+   "actual": "153",
+   "anterior": "(797)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Tax on profit/loss for the year"
+  },
+  {
+   "bloque": "b15",
+   "linea": 577,
+   "etiqueta": "",
+   "actual": "7,309",
+   "anterior": "13,600",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Tax on profit/loss for the year"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 372,
+  "actual": "25,799",
+  "anterior": "48,240"
+ },
+ "dudas": [],
+ "observaciones": "Escala DKK'000 en todos los bloques. No se imprimen totales de ingresos ni gastos. Se omitió L546 (cantidad promedio de empleados, no es importe). Las notas 4 (Other external expenses) y 7 (Other financial expenses) no vienen en los bloques."
+}

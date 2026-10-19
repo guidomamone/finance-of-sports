@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.pdf",
  "md": "Clubes/Brasil/Juventude/demonstracoes-financeiras-2021.md",
- "generado": "2026-10-19T16:42:17.391Z",
- "estado": "cola",
+ "generado": "2026-10-19T17:09:22.557Z",
+ "estado": "ok",
  "clubId": "juventude-br",
  "year": 2021,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "9de2be6"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -47,7 +45,8 @@
   "la lectura base no cerraba; cerró con la lectura 2",
   "línea 515: 33.655.776,98 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (3355577698) el resultado daría -3304.140545 y no cierra)",
   "línea 516: 6.880.702,54 no está en el segunda lectura; las sumas lo confirman (con la segunda lectura (698070254) el resultado daría -673.408175 y no cierra)",
-  "duda de extraer que no afecta la carga: L188+L190..L193 suman 17.781.376,45 (igual al resultado L197), no -921.799,29; el subtotal operativo impreso en L195 parece erróneo."
+  "duda de extraer que no afecta la carga: L188+L190..L193 suman 17.781.376,45 (igual al resultado L197), no -921.799,29; el subtotal operativo impreso en L195 parece erróneo.",
+  "duda de extraer ya contestada para el club (cuadro-de-otro-anio, \"Custo da Atividade do Desporto\"): aceptar, en demonstracoes-financeiras-2021.pdf"
  ],
  "reintentar": null,
  "reintentado": false,

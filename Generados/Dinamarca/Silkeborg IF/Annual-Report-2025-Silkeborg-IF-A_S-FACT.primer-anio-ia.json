@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.md",
+ "clave": "f66f580dc1b9a7cac3793cf3c8c340e695969607",
+ "generado": "2026-10-19T17:09:31.826Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Lo que se carga está completo. Los ingresos de la nota 2 (L507-L514) suman 81.013, igual al Revenue de L361. Los de la nota 3 (L521-L523) suman 50.726, igual a Other operating income de L362. Los gastos de personal de la nota 5 (L542-L544) suman 51.095, igual a Staff costs de L365. El resto de los renglones se carga directo y no se carga ningún subtotal. El resultado da 25.799, como el impreso."
+ }
+}

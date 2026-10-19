@@ -1,0 +1,252 @@
+{
+ "pdf": "Clubes/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.pdf",
+ "md": "Clubes/Dinamarca/Silkeborg IF/Annual-Report-2025-Silkeborg-IF-A_S-FACT.md",
+ "mdSha1": "e92baac858b881da03d1ee13238ca26bddf2a32e",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T17:08:36.776Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    30,
+    33
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    53,
+    59
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    211,
+    229
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 13,
+   "lineas": [
+    359,
+    372
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 14,
+   "lineas": [
+    384,
+    406
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 15,
+   "lineas": [
+    416,
+    436
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 16,
+   "lineas": [
+    446,
+    451
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 17,
+   "lineas": [
+    463,
+    489
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 18,
+   "lineas": [
+    505,
+    515
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 18,
+   "lineas": [
+    519,
+    524
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 19,
+   "lineas": [
+    540,
+    546
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 19,
+   "lineas": [
+    548,
+    552
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 19,
+   "lineas": [
+    558,
+    562
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 19,
+   "lineas": [
+    566,
+    569
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 19,
+   "lineas": [
+    573,
+    577
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 20,
+   "lineas": [
+    587,
+    591
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 20,
+   "lineas": [
+    595,
+    605
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 20,
+   "lineas": [
+    609,
+    619
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 21,
+   "lineas": [
+    629,
+    633
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 21,
+   "lineas": [
+    641,
+    646
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 21,
+   "lineas": [
+    648,
+    653
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 22,
+   "lineas": [
+    675,
+    678
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 22,
+   "lineas": [
+    682,
+    688
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 22,
+   "lineas": [
+    692,
+    697
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 22,
+   "lineas": [
+    701,
+    703
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 28,
+   "lineas": [
+    869,
+    872
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b9",
+  "b10",
+  "b13"
+ ],
+ "notas_gastos": [
+  "b11",
+  "b15"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "2025 DKK'000",
+ "moneda": "DKK",
+ "columna_ejercicio": "2025 DKK'000",
+ "columna_anterior": "2024 DKK'000",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de remuneración de la dirección (b12) por ser un detalle por persona/órgano incluido en gastos de personal?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Staff costs",
+   "texto": "b12 abre Executive Board y Board of Directors, que ya están dentro de Staff costs (nota 5).",
+   "bloques": [
+    "b12"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado individual de Silkeborg IF A/S (b4). Faltan en el índice las notas 4 y 7 (posiblemente Other external expenses / financial expenses en texto sin tabla, bloques b14 y b19 ausentes). b21 es movimiento de impuesto diferido, no se elige."
+}

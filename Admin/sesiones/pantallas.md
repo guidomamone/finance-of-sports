@@ -74,3 +74,8 @@
   Colo-Colo 2025: la nota 21 suma 117.232 más que el estado; causa sin explicar (candidata a `Admin/dudas-por-club.md`).
 - El agente de Croacia usó Bash (solo para listar y buscar) aunque se le dijo que no.
 - Botafogo-SP: nada de lo respondido sale de `demonstracoes-contabeis-2022-2023.pdf` (es de Botafogo S.A.).
+
+### Lote 103, segunda corrida (2026-10-19)
+
+- 0 años cargados otra vez. La corrida categorizó solo 2 documentos de Basel (de Pipeline 5, US$ 0,056) y ninguno del lote 103: el registro todavía los tenía sin "listo-para-jev". Basel no se tocó (no se escribió nada). El ensayo ahora cotiza ~US$ 0,66 de categorización para los 22.
+- Unión Magdalena 2025: `[periodo]` frena con razón. El estado trae 2025 primero y el pipeline extrajo la segunda columna (2024) del documento 2025 (`.rubros.json` year 2024; la nota 24 toma 1.564.483, la columna 2024). Defecto de script, al TODO sin diseñar. Mi respuesta "aceptar" del caso 864aa95 estaba mal y la corregí con `corregir --valor no`. No cargar este año hasta resolverlo.

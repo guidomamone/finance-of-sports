@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Argentina/Ferro Carril Oeste/balance-ejercicio-121-2024-25.pdf",
  "md": "Clubes/Argentina/Ferro Carril Oeste/balance-ejercicio-121-2024-25.md",
- "generado": "2026-10-19T16:42:41.321Z",
- "estado": "cola",
+ "generado": "2026-10-19T17:09:22.419Z",
+ "estado": "ok",
  "clubId": "ferrocarriloeste-ar",
  "year": 2025,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "9f5db2a"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -54,8 +52,8 @@
   "escalón \"nota exacta en la lectura 6\": \"Específicos de sectores ( Anexo D )\" (L98) se abre en las 34 filas de su nota, que suman exacto el renglón",
   "escalón \"nota exacta en la lectura 6\": \"Generales de administración ( Anexo E )\" (L99) se abre en las 15 filas de su nota, que suman exacto el renglón",
   "la lectura base no cerraba; cerró con la lectura 6",
-  "duda de extraer que no afecta la carga: Los totales 2024 de b7 (493.581.793,49; 1.093.553.994,11; 1.161.417.783,11) no coinciden con b6 (572.187.331,04; 1.143.851.783,17; 1.191.167.126,58), posiblemente por distinta reexpresión; los 2025 sí coinciden.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en balance-ejercicio-121-2024-25.pdf",
+  "duda de extraer que no afecta la carga: Los totales 2024 de b7 (493.581.793,49; 1.093.553.994,11; 1.161.417.783,11) no coinciden con b6 (572.187.331,04; 1.143.851.783,17; 1.191.167.126,58), posiblemente por distinta reexpresión; los 2025 sí coinciden."
  ],
  "reintentar": null,
  "reintentado": false,

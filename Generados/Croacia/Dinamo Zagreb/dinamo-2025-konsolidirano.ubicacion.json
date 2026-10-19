@@ -1,0 +1,233 @@
+{
+ "pdf": "Clubes/Croacia/Dinamo Zagreb/dinamo-2025-konsolidirano.pdf",
+ "md": "Clubes/Croacia/Dinamo Zagreb/dinamo-2025-konsolidirano.md",
+ "mdSha1": "04f8320d0d8d32f1331eeebbe5e6524def2798e8",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T17:06:06.524Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    25,
+    28
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 10,
+   "lineas": [
+    300,
+    337
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 11,
+   "lineas": [
+    347,
+    382
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 12,
+   "lineas": [
+    392,
+    418
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 13,
+   "lineas": [
+    428,
+    447
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 14,
+   "lineas": [
+    457,
+    493
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 15,
+   "lineas": [
+    503,
+    537
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 16,
+   "lineas": [
+    549,
+    560
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 17,
+   "lineas": [
+    595,
+    608
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 17,
+   "lineas": [
+    612,
+    622
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 18,
+   "lineas": [
+    640,
+    645
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 18,
+   "lineas": [
+    649,
+    652
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 18,
+   "lineas": [
+    656,
+    659
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 18,
+   "lineas": [
+    663,
+    669
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 27,
+   "lineas": [
+    933,
+    938
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 30,
+   "lineas": [
+    1018,
+    1027
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 31,
+   "lineas": [
+    1041,
+    1059
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 31,
+   "lineas": [
+    1063,
+    1067
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 31,
+   "lineas": [
+    1073,
+    1077
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 32,
+   "lineas": [
+    1091,
+    1119
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 33,
+   "lineas": [
+    1135,
+    1149
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 33,
+   "lineas": [
+    1151,
+    1165
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2",
+  "b3",
+  "b4"
+ ],
+ "notas_ingresos": [
+  "b16"
+ ],
+ "notas_gastos": [
+  "b17"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(svi iznosi izraženi su u eurima)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2025.",
+ "columna_anterior": "2024.",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de transacciones con partes relacionadas (Bilješka 8, b19)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Muestra ingresos por refacturación y donaciones a la Fundación, pero no desglosa un renglón del estado.",
+   "bloques": [
+    "b19"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se cargan los importes 2024 tal como figuran reclasificados en el estado 2025 (b2-b4)?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "Arriba de b16 se mencionan reclasificaciones de partidas previamente presentadas (3.212.457 y 2.706.911 eura).",
+   "bloques": [
+    "b2",
+    "b3",
+    "b4",
+    "b16"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados consolidado en b2 (ingresos), b3 (gastos operativos) y b4 (transferencias de jugadores, financieros, impuestos y resultado). Notas 5 (b16) y 6 (b17) abren otros ingresos y otros gastos no clasificados. No se observa estado individual. El documento son estados financieros consolidados para fines especiales."
+}
