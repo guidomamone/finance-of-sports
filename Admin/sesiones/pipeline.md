@@ -73,3 +73,5 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
   tool que baja las listas pierde una fila) y la compuerta la rechaza (OH Leuven 2017-2019, Beerschot 2019). Letra aparte, con su escalón.
 - **Caso para la 298 f:** Lierse SK 2023 tiene en el registro el cierre 2023-10-28 (la asamblea, .md L27) y no el 30-06-2023 de la celda
   (L33): con ese cierre, la carga le daría la temporada 2023-24. Es el mismo defecto de la f (fechas del cierre en celdas).
+
+## Después del merge de la 298 u (2026-10-18)

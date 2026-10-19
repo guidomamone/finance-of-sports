@@ -15,6 +15,14 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 752 — Merge de pipeline 2: la liga de un año nuevo (2026-10-18)
+
+Sin conflictos; P0 0 / P1 0; medir-cargar de los 815 documentos idéntico.
+
+- To-do 298 u: `listas-lote.mjs --lote` baja las listas que faltan para los años de un lote (también con los nombres viejos de cada liga);
+  `lote.mjs --cargar` la corre antes de cargar; `alta-club.mjs` acepta un alias como nombre exacto; 7 alias belgas. En el lote 92, 44 de 55
+  documentos encuentran su liga. Siguen 22 años belgas frenados por la compuerta de estadio y sponsor.
+
 ## Versión 751 — Sponsors y estadios a mano con fuente (2026-10-18)
 
 Merge de datos 2, sin conflictos; ASSET_V 1312, P0 0 / P1 0.
