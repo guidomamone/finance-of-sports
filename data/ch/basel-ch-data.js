@@ -85,6 +85,20 @@ const baselchRevenueLinesByYear = {
     { rawLabel:'Einnahmen Leistungsfussball Nachwuchs', normalizedCategory:'youth_football', amountNative:0.80276, disclosureLevel:'aggregated' },
     { rawLabel:'Diverses', normalizedCategory:'other_income', amountNative:1.286652, disclosureLevel:'aggregated' },
   ],
+  2010: [
+    { rawLabel:'aus Meisterschaft', normalizedCategory:'competition_bonus', amountNative:11.873271, disclosureLevel:'aggregated' },
+    { rawLabel:'aus Uefa-Spielen', normalizedCategory:'competition_bonus', amountNative:7.125939, disclosureLevel:'aggregated' },
+    { rawLabel:'aus Cup-Spielen', normalizedCategory:'matchday_competition', amountNative:0.750687, disclosureLevel:'aggregated' },
+    { rawLabel:'aus übrigen Spielen', normalizedCategory:'matchday_competition', amountNative:0.432512, disclosureLevel:'aggregated' },
+    { rawLabel:'Business Seats', normalizedCategory:'matchday_competition', amountNative:5.50202, disclosureLevel:'aggregated' },
+    { rawLabel:'Sponsoring, Werbung', normalizedCategory:'sponsorship_commercial', amountNative:7.36801, disclosureLevel:'aggregated' },
+    { rawLabel:'Transferertrag', normalizedCategory:'player_sales', amountNative:1.230732, disclosureLevel:'aggregated' },
+    { rawLabel:'TV-Entschädigungen', normalizedCategory:'broadcasting', amountNative:1.619818, disclosureLevel:'aggregated' },
+    { rawLabel:'Merchandising, Licensing', normalizedCategory:'sponsorship_commercial', amountNative:0.627651, disclosureLevel:'aggregated' },
+    { rawLabel:'Verbandseinnahmen', normalizedCategory:'competition_bonus', amountNative:18.92552, disclosureLevel:'aggregated' },
+    { rawLabel:'Einnahmen Leistungsfussball Nachwuchs', normalizedCategory:'youth_football', amountNative:0.616168, disclosureLevel:'aggregated' },
+    { rawLabel:'Diverses', normalizedCategory:'other_income', amountNative:1.465073, disclosureLevel:'aggregated' },
+  ],
 };
 const baselchExpenseLinesByYear = {
   2021: [
@@ -158,6 +172,19 @@ const baselchExpenseLinesByYear = {
     { rawLabel:'Aufwand Leistungsfussball Nachwuchs', normalizedCategory:'youth_other_sports_expense', amountNative:-1.369929, disclosureLevel:'aggregated' },
     { rawLabel:'Übriger Aufwand', normalizedCategory:'other_expenses', amountNative:-0.548375, disclosureLevel:'aggregated' },
     { rawLabel:'Verlustabdeckung FC Basel Holding AG', normalizedCategory:'exceptional_items', amountNative:9.721, disclosureLevel:'aggregated' },
+  ],
+  2010: [
+    { rawLabel:'Personalaufwand', normalizedCategory:'wages_squad', amountNative:-31.307154, disclosureLevel:'aggregated' },
+    { rawLabel:'Organisationskosten Heimspiele', normalizedCategory:'match_organisation_expense', amountNative:-9.556646, disclosureLevel:'aggregated' },
+    { rawLabel:'Übriger Spielbetrieb', normalizedCategory:'match_organisation_expense', amountNative:-2.163038, disclosureLevel:'aggregated' },
+    { rawLabel:'Transferaufwand', normalizedCategory:'player_amortisation', amountNative:-7.542999, disclosureLevel:'aggregated' },
+    { rawLabel:'Werbung', normalizedCategory:'admin_general_expense', amountNative:-2.276536, disclosureLevel:'aggregated' },
+    { rawLabel:'Administration', normalizedCategory:'admin_general_expense', amountNative:-2.291213, disclosureLevel:'aggregated' },
+    { rawLabel:'Abschreibungen', normalizedCategory:'depreciation', amountNative:-0.041699, disclosureLevel:'aggregated' },
+    { rawLabel:'Aufwand Leistungsfussball Nachwuchs', normalizedCategory:'youth_other_sports_expense', amountNative:-1.063926, disclosureLevel:'aggregated' },
+    { rawLabel:'Übriger Aufwand', normalizedCategory:'other_expenses', amountNative:-0.722769, disclosureLevel:'aggregated' },
+    { rawLabel:'Verlustabdeckung FC Basel Holding AG', normalizedCategory:'exceptional_items', amountNative:0, disclosureLevel:'aggregated' },
+    { rawLabel:'Defizitgarantie FC Basel 1893', normalizedCategory:'exceptional_items', amountNative:-0.224397, disclosureLevel:'aggregated' },
   ],
 };
 const baselchFiscalYearMeta = {
@@ -251,6 +278,21 @@ const baselchFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:45.486, officialTotalExpenses:55.238055, officialPAT:0.007044,
   },
+  2010: {
+    currency:'CHF', fxRef:'CHF@2010-12-31',
+    sourceId:'basel-ch-geschaeftsbericht-2010',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.193035, tax:0.069044,
+    extraRows: [
+      {label:'Finanzertrag', value:0.345138},
+      {label:'Finanzaufwand', value:-0.538173},
+      {label:'Steuern', value:0.069044},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:57.537401, officialTotalExpenses:56.96598, officialPAT:0.223033,
+  },
 };
 const baselchPresupuestoOverlayByYear = {};
 
@@ -295,6 +337,11 @@ Object.assign(sources, {
   'basel-ch-geschaeftsbericht-2009': {
     id:'basel-ch-geschaeftsbericht-2009', clubId:'basel-ch',
     title:'FC Basel 1893 AG — geschaeftsbericht-2009 (ejercicio 2009)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'basel-ch-geschaeftsbericht-2010': {
+    id:'basel-ch-geschaeftsbericht-2010', clubId:'basel-ch',
+    title:'FC Basel 1893 AG — geschaeftsbericht-2010 (ejercicio 2010)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
