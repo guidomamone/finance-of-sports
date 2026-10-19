@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 789 — Reino Unido: sociedad por documento y 6 transcripciones; cierre de Finanzas 5 (2026-10-19)
+
+* 261 b y c: la sociedad de cada documento del Reino Unido, en `sociedad-por-documento.md`; 3 duplicados exactos a descartados.
+* 6 transcripciones con subagentes Sonnet (Wolves 2019-20, Aston Villa 2018-21, West Ham 2019-21), 0 P1 / 0 P2 de fidelidad.
+* Finanzas 5 cierra; su nota, en `Admin/Archive/`.
+
 ## Versión 788 — Fredrikstad 2013-2018 y la 2. divisjon noruega (2026-10-19)
 
 * Fredrikstad FLI 2013-2018, del lote 95. Liga nueva `no-2divisjon` (tercera división) y listas de la 1. divisjon 2012-2018.

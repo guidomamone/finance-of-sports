@@ -44,10 +44,10 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **D. Onboarding grande**
 * 238: llevar a 0 los documentos que quedaron a mitad de camino --> Onboarding 3
-* 261: Reino Unido, transcripción por subagentes --> Finanzas 5
+* 261: Reino Unido, transcripción por subagentes (validación de ~US$ 11,48 para correr vos)
 * 165 c: altas de los países nuevos que faltan --> Onboarding 3
 * 195: gestiones (presidentes) sin fuente confirmada (Fortaleza 2025: ¿CEO o presidente del consejo? lo decidís vos)
-* 295: balances de las entidades que organizan las ligas: lo que queda (segundas divisiones; varias no publican) --> Finanzas 5
+* 295: balances de las entidades que organizan las ligas: lo que queda (segundas divisiones; varias no publican)
 * 284: Fredrikstad 2012 (falta un sponsor con fuente) y Sarpsborg 08 sobre el FLI --> Onboarding 3
 * 283: Vålerenga y Aalesund, sumar el AS y el FLI (con nota en Finanzas) --> Onboarding 3
 * 273: nombrar la compuerta de estadio y sponsor en la skill de onboarding (con tu ok)
@@ -380,18 +380,16 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
     sí amerita mail; un dead-end sin ninguna señal de que el documento exista, o un bloqueo
     regulatorio estructural, no. Ese criterio y este proceso son cosas separadas a propósito.
 
-261. REINO UNIDO: TRANSCRIPCIÓN POR SUBAGENTES (pedido de Guido, 2026-10-16: gastar la ventana de 5 horas de la suscripción). 108 .md hechos y
-    commiteados (93 con subagentes Opus y 15 con Sonnet) (Tesseract + revisión de las páginas clave contra la imagen; los 93 dan 0 P1 / 0 P2 en `check-transcripcion-fidelidad.js`):
+261. REINO UNIDO: TRANSCRIPCIÓN POR SUBAGENTES (pedido de Guido, 2026-10-16: gastar la ventana de 5 horas de la suscripción). 114 .md hechos y
+    commiteados (93 con subagentes Opus y 21 con Sonnet) (Tesseract + revisión de las páginas clave contra la imagen; los 93 dan 0 P1 / 0 P2 en `check-transcripcion-fidelidad.js`):
     años 2021-2026 de los clubes de Premier, F1, cricket y rugby que ya tenían algún .md. Cola, scripts e instrucciones:
-    `Admin/transcripcion-subagentes/README.md` (van 71 de 1531 bloques; quedan unos 3600 PDFs, casi todos escaneos). Falta:
-    a) Validarlos con `pipeline.mjs --lista` y seguir con el lote (etapa 3 en adelante).
-    b) Sociedad de cada documento (ver `hallazgos-por-documento.txt` de esa carpeta): en varios clubes conviven la sociedad del club y la
-       holding consolidada (Aston Villa: Aston Villa FC Ltd y NSWE Sports; Wolves: WWFC (1986) y W.W. (1990); West Ham: WHUFC y WH Holding;
-       Brighton: el club y Holdings; Fulham: el club y Fulham Football Leisure; Sunderland: el club y Sunderland Ltd). El perímetro lo fija
-       la regla de `Admin/CONVENCIONES-DATOS.md`; no cargar las dos para el mismo año.
-    c) Nombres engañosos y duplicados entre los `wf-*`: West Ham wf-2022-2023-659d1396 y Wolves wf-2022-2023-d10fbea7 son del ejercicio
-       2023-24, no 2022-23. Son el mismo informe que otro PDF de la carpeta: Celtic wf-2023-2024-2cb3da35 (= celtic-group-accounts-2023-24),
-       Celtic wf-2022-2023-3e4a518a (= celtic-group-accounts-2022-23) y Man City wf-2022-2023-2d906303 (= mancity-full-accounts-2022-23).
-       Antes de transcribir el resto de los `wf-*` (están al final de la cola), mirar si repiten un documento ya transcripto.
+    `Admin/transcripcion-subagentes/README.md` (van 74 de 1531 bloques; `claim.sh` tiene la ruta de la principal: en un worktree, una copia apuntada a esa carpeta; quedan unos 3600 PDFs, casi todos escaneos). Falta:
+    a) Validarlos: Guido corre `pipeline.mjs --lista Admin/lotes/reino-unido-validar.txt` (~US$ 11,48; los 6 de Sonnet del 19-10 no
+       están en la lista) y después el lote (etapa 3 en adelante). Notas de West Ham 2019-21 y parte de Aston Villa cerradas por sumas,
+       no contra la imagen: mirarlas antes de cargar caja y deuda.
+    b) Sociedad de cada documento: ya listada en `Admin/transcripcion-subagentes/sociedad-por-documento.md` (cinco pares con dos
+       sociedades el mismo ejercicio: Aston Villa 2022-23 y 2023-24, Brighton, Fulham y Sunderland 2022-23). Falta decidir cuál entra en
+       cada par (regla de perímetro de `Admin/CONVENCIONES-DATOS.md`) y mandar la otra a descartados.
+    c) Los 3 `wf-*` duplicados ya están en descartados y los mal nombrados, anotados en `sociedad-por-documento.md`. Antes de transcribir el resto de los `wf-*` (están al final de la cola), mirar si repiten un documento ya transcripto.
     d) Chelsea 2021-22 (Sonnet): solo los 4 estados se miraron contra la imagen; las notas se corrigieron por sumas. Revisar las notas
        contra el PDF antes de cargar caja y deuda.
