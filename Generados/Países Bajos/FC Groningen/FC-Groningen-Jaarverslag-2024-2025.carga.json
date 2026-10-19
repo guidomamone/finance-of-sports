@@ -1,28 +1,409 @@
 {
  "pdf": "Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2024-2025.pdf",
- "generado": "2026-10-19T00:16:01.817Z",
+ "generado": "2026-10-19T02:28:44.813Z",
  "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 6 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (fcgroningen-nl)"
   },
   {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 6 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "etapa": "categoria-en-cola",
+   "motivo": "13 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Uitkeringen\" -> broadcasting 0.45; \"Boekwaarde contracten spelers\" -> player_amortisation 0.6; \"Ontvangen/(betaalde) opleidingsvergoedin\" -> youth_football 0.55; \"Overige spelers\" -> wages_squad 0.6; \"Medische staf\" -> wages_squad 0.65"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
-  "perímetro: consolidado (ajuste manual del documento, 2026-10-18: La entidad que presenta es la holding FC Groningen Beheer B.V.; el fútbol está en la controlada FC Groningen B.V. (primer equipo, fichajes), más Euroborg Horeca B.V. (catering del estadio), Regionale voetbalopleiding Groningen B.V. (fútbol base) y Greenrock Holding B.V. (no se describe; minoritaria frente al resto). Hay cuenta de resultados consolidada (L1010) y enkelvoudige (cap. 10-12, índice L52-54). (subagente Sonnet, revisado por Claude 2026-10-18))"
+  "perímetro: consolidado (ajuste manual del documento, 2026-10-18: La entidad que presenta es la holding FC Groningen Beheer B.V.; el fútbol está en la controlada FC Groningen B.V. (primer equipo, fichajes), más Euroborg Horeca B.V. (catering del estadio), Regionale voetbalopleiding Groningen B.V. (fútbol base) y Greenrock Holding B.V. (no se describe; minoritaria frente al resto). Hay cuenta de resultados consolidada (L1010) y enkelvoudige (cap. 10-12, índice L52-54). (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "ingresos: ningún total impreso igual a la suma de las líneas (33.764219); queda la suma, verificada por el resultado del ejercicio",
+  "gastos: ningún total impreso igual a la suma de las líneas (-31.871009); queda la suma, verificada por el resultado del ejercicio"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "fcgroningen-nl",
+  "year": 2025,
+  "cierre": "2025-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Wedstrijdopbrengsten",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 4.69755,
+    "disclosureLevel": "aggregated",
+    "_pag": 57,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sponsoring en reclame",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 9.891505,
+    "disclosureLevel": "aggregated",
+    "_pag": 57,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Mediarechten",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 4.357497,
+    "disclosureLevel": "aggregated",
+    "_pag": 57,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Merchandising",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 1.961748,
+    "disclosureLevel": "aggregated",
+    "_pag": 57,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Food & Beverage",
+    "normalizedCategory": "stadium_other",
+    "amountNative": 4.201114,
+    "disclosureLevel": "aggregated",
+    "_pag": 57,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Uitkeringen",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 1.72554,
+    "disclosureLevel": "aggregated",
+    "_pag": 57,
+    "_escalon": 2,
+    "_conf": 0.45,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige baten",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.623973,
+    "disclosureLevel": "aggregated",
+    "_pag": 57,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige bedrijfsopbrengsten",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.081068,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Netto ontvangen afkoopsommen",
+    "normalizedCategory": "player_sales",
+    "amountNative": 5.65993,
+    "disclosureLevel": "aggregated",
+    "_pag": 59,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ontvangen/(betaalde) opleidingsvergoedingen",
+    "normalizedCategory": "youth_football",
+    "amountNative": 0.564294,
+    "disclosureLevel": "aggregated",
+    "_pag": 59,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Boekwaarde contracten spelers",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -1.777607,
+    "disclosureLevel": "aggregated",
+    "_pag": 59,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Inkoopwaarde van de omzet",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -2.368487,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Contractspelers",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -6.438865,
+    "disclosureLevel": "aggregated",
+    "_pag": 58,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige spelers",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.558057,
+    "disclosureLevel": "aggregated",
+    "_pag": 58,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Technische staf",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.383071,
+    "disclosureLevel": "aggregated",
+    "_pag": 58,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Medische staf",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.371886,
+    "disclosureLevel": "aggregated",
+    "_pag": 58,
+    "_escalon": 2,
+    "_conf": 0.65,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Scouting",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.485996,
+    "disclosureLevel": "aggregated",
+    "_pag": 58,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige staf voetbalorganisatie",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.002601,
+    "disclosureLevel": "aggregated",
+    "_pag": 58,
+    "_escalon": 2,
+    "_conf": 0.4,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Directie/management",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.45724,
+    "disclosureLevel": "aggregated",
+    "_pag": 58,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Commercie",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.486851,
+    "disclosureLevel": "aggregated",
+    "_pag": 58,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Operationeel",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.113987,
+    "disclosureLevel": "aggregated",
+    "_pag": 58,
+    "_escalon": 2,
+    "_conf": 0.7,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Merchandise",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.142673,
+    "disclosureLevel": "aggregated",
+    "_pag": 58,
+    "_escalon": 2,
+    "_conf": 0.5,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Horeca",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.317899,
+    "disclosureLevel": "aggregated",
+    "_pag": 58,
+    "_escalon": 2,
+    "_conf": 0.5,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gebouwen",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.054578,
+    "disclosureLevel": "aggregated",
+    "_pag": 58,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andere vaste bedrijfsmiddelen",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.560067,
+    "disclosureLevel": "aggregated",
+    "_pag": 58,
+    "_escalon": 1,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Wedstrijdkosten",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -2.265195,
+    "disclosureLevel": "aggregated",
+    "_pag": 59,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Huisvestingskosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -4.977639,
+    "disclosureLevel": "aggregated",
+    "_pag": 59,
+    "_escalon": 2,
+    "_conf": 0.7,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Verkoopkosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.11985,
+    "disclosureLevel": "aggregated",
+    "_pag": 59,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Kosten merchandise",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.278963,
+    "disclosureLevel": "aggregated",
+    "_pag": 59,
+    "_escalon": 2,
+    "_conf": 0.65,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Kosten horeca",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.332762,
+    "disclosureLevel": "aggregated",
+    "_pag": 59,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Algemene kosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.234964,
+    "disclosureLevel": "aggregated",
+    "_pag": 59,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Nagekomen baten en lasten",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": 0.081553,
+    "disclosureLevel": "aggregated",
+    "_pag": 59,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen vergoedingssommen",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -2.141771,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Bijzondere waardeverminderingen",
+    "normalizedCategory": "player_impairment",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 36,
+    "_escalon": 1,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2025-06-30",
+   "sourceId": "fcgroningen-nl-jaarverslag-2024-2025",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.273082,
+   "tax": -0.058336,
+   "extraRows": [
+    {
+     "label": "Financiële baten en lasten",
+     "value": -0.273082
+    },
+    {
+     "label": "Belastingen resultaat uit gewone bedrijfsuitoefening",
+     "value": -0.058336
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 33.764219,
+   "officialTotalExpenses": 31.871009,
+   "officialPAT": 1.643346
+  },
+  "source": {
+   "id": "fcgroningen-nl-jaarverslag-2024-2025",
+   "clubId": "fcgroningen-nl",
+   "title": "FC Groningen B.V. — FC-Groningen-Jaarverslag-2024-2025 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2024-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
  "md": "Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2024-2025.md",
  "reemplaza": false,
  "periodo": {
@@ -35,5 +416,663 @@
  },
  "clubId": "fcgroningen-nl",
  "year": 2025,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2024-2025.pdf",
+   "campo": "cierre",
+   "valor": "2025-06-30",
+   "linea": null,
+   "motivo": "Revisión del alta (Claude, 2026-10-09): balans per 30 juni 2025 (temporada 2024-2025)",
+   "evidencia": "FC-Groningen-Jaarverslag-2024-2025.pdf, 'per 30 juni 2025'",
+   "autor": "Guido",
+   "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2024-2025.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "La entidad que presenta es la holding FC Groningen Beheer B.V.; el fútbol está en la controlada FC Groningen B.V. (primer equipo, fichajes), más Euroborg Horeca B.V. (catering del estadio), Regionale voetbalopleiding Groningen B.V. (fútbol base) y Greenrock Holding B.V. (no se describe; minoritaria frente al resto). Hay cuenta de resultados consolidada (L1010) y enkelvoudige (cap. 10-12, índice L52-54). (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": "De activiteiten van FC Groningen Beheer B.V. en haar dochtermaatschappijen bestaan voornamelijk uit het exploiteren van een betaald voetbalorganisatie (L1088); dochters: FC Groningen B.V. (100%), Euroborg Horeca B.V. (100%), Regionale voetbalopleiding Groningen B.V. (100%), Greenrock Holding B.V. (1",
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "seleccion": {
+  "filas": 36,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Wedstrijdopbrengsten",
+   "page": 57,
+   "native": 4.69755,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet (9.1)\")",
+   "signoFijo": 4.69755,
+   "cat": "matchday_competition",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 4.69755
+  },
+  {
+   "label": "Sponsoring en reclame",
+   "page": 57,
+   "native": 9.891505,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet (9.1)\")",
+   "signoFijo": 9.891505,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 9.891505
+  },
+  {
+   "label": "Mediarechten",
+   "page": 57,
+   "native": 4.357497,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet (9.1)\")",
+   "signoFijo": 4.357497,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 4.357497
+  },
+  {
+   "label": "Merchandising",
+   "page": 57,
+   "native": 1.961748,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet (9.1)\")",
+   "signoFijo": 1.961748,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.961748
+  },
+  {
+   "label": "Food & Beverage",
+   "page": 57,
+   "native": 4.201114,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet (9.1)\")",
+   "signoFijo": 4.201114,
+   "cat": "stadium_other",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 4.201114
+  },
+  {
+   "label": "Uitkeringen",
+   "page": 57,
+   "native": 1.72554,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet (9.1)\")",
+   "signoFijo": 1.72554,
+   "cat": "broadcasting",
+   "conf": 0.45,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 1.72554
+  },
+  {
+   "label": "Overige baten",
+   "page": 57,
+   "native": 0.623973,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet (9.1)\")",
+   "signoFijo": 0.623973,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.623973
+  },
+  {
+   "label": "Overige bedrijfsopbrengsten",
+   "page": 36,
+   "native": 0.081068,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.081068,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.081068
+  },
+  {
+   "label": "Netto ontvangen afkoopsommen",
+   "page": 59,
+   "native": 5.65993,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Resultaat vergoedingssommen (9.8)\")",
+   "signoFijo": 5.65993,
+   "cat": "player_sales",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5.65993
+  },
+  {
+   "label": "Boekwaarde contracten spelers",
+   "page": 59,
+   "native": 1.777607,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Resultaat vergoedingssommen (9.8)\")",
+   "signoFijo": 1.777607,
+   "cat": "player_amortisation",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -1.777607
+  },
+  {
+   "label": "Ontvangen/(betaalde) opleidingsvergoedingen",
+   "page": 59,
+   "native": 0.564294,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Resultaat vergoedingssommen (9.8)\")",
+   "signoFijo": 0.564294,
+   "cat": "youth_football",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 0.564294
+  },
+  {
+   "label": "Inkoopwaarde van de omzet",
+   "page": 36,
+   "native": 2.368487,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.368487,
+   "cat": "other_expenses",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.368487
+  },
+  {
+   "label": "Contractspelers",
+   "page": 58,
+   "native": 6.438865,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten (9.4)\")",
+   "signoFijo": 6.438865,
+   "cat": "wages_squad",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -6.438865
+  },
+  {
+   "label": "Overige spelers",
+   "page": 58,
+   "native": 0.558057,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten (9.4)\")",
+   "signoFijo": 0.558057,
+   "cat": "wages_squad",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.558057
+  },
+  {
+   "label": "Technische staf",
+   "page": 58,
+   "native": 1.383071,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten (9.4)\")",
+   "signoFijo": 1.383071,
+   "cat": "wages_squad",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.383071
+  },
+  {
+   "label": "Medische staf",
+   "page": 58,
+   "native": 0.371886,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten (9.4)\")",
+   "signoFijo": 0.371886,
+   "cat": "wages_squad",
+   "conf": 0.65,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.371886
+  },
+  {
+   "label": "Scouting",
+   "page": 58,
+   "native": 0.485996,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten (9.4)\")",
+   "signoFijo": 0.485996,
+   "cat": "other_expenses",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.485996
+  },
+  {
+   "label": "Overige staf voetbalorganisatie",
+   "page": 58,
+   "native": 1.002601,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten (9.4)\")",
+   "signoFijo": 1.002601,
+   "cat": "other_expenses",
+   "conf": 0.4,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -1.002601
+  },
+  {
+   "label": "Directie/management",
+   "page": 58,
+   "native": 0.45724,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten (9.4)\")",
+   "signoFijo": 0.45724,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.45724
+  },
+  {
+   "label": "Commercie",
+   "page": 58,
+   "native": 1.486851,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten (9.4)\")",
+   "signoFijo": 1.486851,
+   "cat": "admin_general_expense",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -1.486851
+  },
+  {
+   "label": "Operationeel",
+   "page": 58,
+   "native": 1.113987,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten (9.4)\")",
+   "signoFijo": 1.113987,
+   "cat": "admin_general_expense",
+   "conf": 0.7,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -1.113987
+  },
+  {
+   "label": "Merchandise",
+   "page": 58,
+   "native": 0.142673,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten (9.4)\")",
+   "signoFijo": 0.142673,
+   "cat": "other_expenses",
+   "conf": 0.5,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.142673
+  },
+  {
+   "label": "Horeca",
+   "page": 58,
+   "native": 1.317899,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten (9.4)\")",
+   "signoFijo": 1.317899,
+   "cat": "other_expenses",
+   "conf": 0.5,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -1.317899
+  },
+  {
+   "label": "Gebouwen",
+   "page": 58,
+   "native": 0.054578,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Afschrijvingen materiële vaste activa (9.5)\")",
+   "signoFijo": 0.054578,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.054578
+  },
+  {
+   "label": "Andere vaste bedrijfsmiddelen",
+   "page": 58,
+   "native": 0.560067,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Afschrijvingen materiële vaste activa (9.5)\")",
+   "signoFijo": 0.560067,
+   "cat": "depreciation",
+   "conf": 0.93,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.560067
+  },
+  {
+   "label": "Wedstrijdkosten",
+   "page": 59,
+   "native": 2.265195,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten (9.6)\")",
+   "signoFijo": 2.265195,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.265195
+  },
+  {
+   "label": "Huisvestingskosten",
+   "page": 59,
+   "native": 4.977639,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten (9.6)\")",
+   "signoFijo": 4.977639,
+   "cat": "admin_general_expense",
+   "conf": 0.7,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -4.977639
+  },
+  {
+   "label": "Verkoopkosten",
+   "page": 59,
+   "native": 1.11985,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten (9.6)\")",
+   "signoFijo": 1.11985,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.11985
+  },
+  {
+   "label": "Kosten merchandise",
+   "page": 59,
+   "native": 0.278963,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten (9.6)\")",
+   "signoFijo": 0.278963,
+   "cat": "other_expenses",
+   "conf": 0.65,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.278963
+  },
+  {
+   "label": "Kosten horeca",
+   "page": 59,
+   "native": 0.332762,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten (9.6)\")",
+   "signoFijo": 0.332762,
+   "cat": "other_expenses",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.332762
+  },
+  {
+   "label": "Algemene kosten",
+   "page": 59,
+   "native": 1.234964,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten (9.6)\")",
+   "signoFijo": 1.234964,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.234964
+  },
+  {
+   "label": "Nagekomen baten en lasten",
+   "page": 59,
+   "native": 0.081553,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten (9.6)\")",
+   "signoFijo": -0.081553,
+   "cat": "exceptional_items",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0.081553
+  },
+  {
+   "label": "Afschrijvingen vergoedingssommen",
+   "page": 36,
+   "native": 2.141771,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.141771,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.141771
+  },
+  {
+   "label": "Bijzondere waardeverminderingen",
+   "page": 36,
+   "native": 0,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "player_impairment",
+   "conf": 0.9,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": 0
+  },
+  {
+   "label": "Financiële baten en lasten (9.9)",
+   "page": null,
+   "native": -0.273082,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Belastingen resultaat uit gewone bedrijfsuitoefening (9.10)",
+   "page": null,
+   "native": -0.058336,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Netto-omzet (9.1)\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Resultaat vergoedingssommen (9.8)\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Personeelskosten (9.4)\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Afschrijvingen materiële vaste activa (9.5)\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Overige bedrijfskosten (9.6)\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 33.764219,
+  "expSum": -31.871009,
+  "officialTotalRevenue": 33.764219,
+  "officialTotalExpenses": 31.871009,
+  "officialPAT": 1.643346,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "por-resultado",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 1.643346,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  }
+ },
+ "liga": {
+  "valor": "nl-eredivisie",
+  "fuente": "roster cacheado de \"2024–25 Eredivisie\" (tools/club-league-reference/nl.json), coincidencia única por palabras \"Groningen\" = \"FC Groningen\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): balans per 30 juni 2025 (temporada 2024-2025)",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-06-30",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Guido 2026-10-09): Revisión del alta (Claude, 2026-10-09): balans per 30 juni 2025 (temporada 2024-2025))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-18)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Países Bajos (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2025-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2025-06-30 = 0.8532 (Cierre BCE al 30/6/2025 (1 EUR = 1,172 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "fcgroningen-nl-jaarverslag-2024-2025",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "nl-eredivisie",
+   "fuente": "roster cacheado de \"2024–25 Eredivisie\" (tools/club-league-reference/nl.json), coincidencia única por palabras \"Groningen\" = \"FC Groningen\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 3,
+  "lineasIngreso": 10,
+  "lineasGasto": 24,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
 }

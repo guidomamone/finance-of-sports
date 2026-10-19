@@ -1,22 +1,10 @@
 {
  "pdf": "Clubes/Países Bajos/FC Utrecht/FC-Utrecht-Jaarverslag-2024-2025.pdf",
- "generado": "2026-10-19T00:16:02.090Z",
+ "generado": "2026-10-19T02:28:45.471Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (fcutrecht-nl)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Verkoopkosten merchandising\" -> admin_general_expense 0.55"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
@@ -257,9 +245,9 @@
     "amountNative": -0.001709,
     "disclosureLevel": "aggregated",
     "_pag": 31,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Verkoopkosten",
@@ -679,11 +667,11 @@
    "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten\")",
    "signoFijo": 0.001709,
    "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Verkoopkosten merchandising (1.709; 2023/24: 72.603) son costos de venta de la tienda de merchandising, parte de Overige bedrijfskosten. Se acepta el destino que propone el sistema, admin_general_expense, para ser coherente con Verkoopkosten del mismo estado (4.111.885) y con el criterio unico para Verkoopkosten neerlandes (category-map.js define admin_general_expense como 'administracion, gastos generales, comerciales...'). Importe inmaterial. Cuenta de la nota 13: 3.841.782+5.219.209+1.709+4.111.885+2.425.392 = 15.599.977 = Overige bedrijfskosten. [Verkoopkosten merchandising | 1.709 | 72.603 (L1609); Overige bedrijfskosten 15.599.977 (L1612)]",
    "destino": "expense",
    "amountNative": -0.001709
   },
@@ -830,7 +818,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
+  "motivos": 1,
   "lineasIngreso": 9,
   "lineasGasto": 16,
   "metaFilas": 2,

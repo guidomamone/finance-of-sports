@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Países Bajos/Sparta Rotterdam/wf-2023-2024-7bc9c6f8.pdf",
- "generado": "2026-10-19T00:16:04.189Z",
+ "generado": "2026-10-19T02:28:46.883Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (spartarotterdam-nl)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "4 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Lonen\" -> wages_squad 0.6; \"Overige lasten uit hoofde van personeels\" -> wages_squad 0.4; \"Horecakosten\" -> other_expenses 0.6; \"Verkoopkosten\" -> admin_general_expense 0.6"
   }
  ],
  "avisos": [
@@ -49,9 +45,9 @@
     "amountNative": -11.420257,
     "disclosureLevel": "aggregated",
     "_pag": 66,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Overige lasten uit hoofde van personeelsbeloningen",
@@ -59,9 +55,9 @@
     "amountNative": -1.009513,
     "disclosureLevel": "aggregated",
     "_pag": 66,
-    "_escalon": 2,
-    "_conf": 0.4,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Horecakosten",
@@ -69,9 +65,9 @@
     "amountNative": -0.285215,
     "disclosureLevel": "aggregated",
     "_pag": 40,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Verkoopkosten",
@@ -79,9 +75,9 @@
     "amountNative": -1.884033,
     "disclosureLevel": "aggregated",
     "_pag": 40,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Huisvestingskosten",
@@ -266,11 +262,11 @@
    "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
    "signoFijo": 11.420257,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): 'Lonen' (11.420.257) es costo de personal; el documento no separa plantel de no plantel (solo Lonen y Overige lasten), así que el renglón entero va a wages_squad (Sueldos del Personal -> wages_squad). Cierra con el total: 11.420.257 + 1.009.513 = 12.429.770 = Personeelskosten del estado. [Lonen 11.420.257 (L3245); Totaal personeelsbeloningen 12.429.770 (L3247); Personeelskosten 12.429.770 (L1801)]",
    "destino": "expense",
    "amountNative": -11.420257
   },
@@ -282,11 +278,11 @@
    "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
    "signoFijo": 1.009513,
    "cat": "wages_squad",
-   "conf": 0.4,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): El rótulo es la taxonomía de la KvK para todo lo que no es 'Lonen' (cargas sociales, pensiones y otros costos de personal) y el documento no lo desglosa; las cargas sociales van con el sueldo y no se separa plantel de no plantel, entonces va a wages_squad. Ojo con una tensión de criterio: el precedente de lote 93 manda 'Overige personeelskosten' puro a admin_general_expense (Ajax, Feyenoord, PSV), pero allí Sociale lasten y Pensioenlasten venían en renglones propios; acá el renglón mezcla cargas sociales y otros, y no se inventa desglose. Monto 1.009.513 (8% del personal). [Overige lasten uit hoofde van personeelsbeloningen 1.009.513 (L3246)]",
    "destino": "expense",
    "amountNative": -1.009513
   },
@@ -298,11 +294,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.285215,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Horecakosten es el costo de la operación de catering (el club registra Food & Beverage como ingreso): costo de ventas sin categoría propia, como 'Kostprijs/Inkoopwaarde van de omzet' (PSV, Feyenoord, Go Ahead) -> other_expenses. [Horecakosten 285.215 (L1802)]",
    "destino": "expense",
    "amountNative": -0.285215
   },
@@ -314,11 +310,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 1.884033,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Verkoopkosten (costos comerciales y de venta) sin desglose en el depósito reducido de la KvK: no se inventa apertura. admin_general_expense incluye gastos comerciales. Cierra con el estado: la suma de los siete renglones de bedrijfslasten es 19.928.027 (L1808). [Verkoopkosten 1.884.033 (L1803)]",
    "destino": "expense",
    "amountNative": -1.884033
   },
@@ -516,7 +512,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 2,
   "lineasGasto": 9,
   "metaFilas": 3,

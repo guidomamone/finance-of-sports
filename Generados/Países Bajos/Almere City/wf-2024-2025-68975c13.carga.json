@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Países Bajos/Almere City/wf-2024-2025-68975c13.pdf",
- "generado": "2026-10-19T00:16:00.921Z",
+ "generado": "2026-10-19T02:28:44.207Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (almerecity-nl)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Overige personeelskosten\" -> admin_general_expense 0.5"
   }
  ],
  "avisos": [
@@ -58,9 +54,9 @@
     "amountNative": -1.834305,
     "disclosureLevel": "aggregated",
     "_pag": 10,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Afschrijving vaste activa",
@@ -206,11 +202,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 1.834305,
    "cat": "admin_general_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Overige personeelskosten 1.834.305 va a admin_general_expense, igual que Ajax, Feyenoord y PSV (precedente del lote 93). Cuenta del estado: lonen 9.325.684 + overige personeelskosten 1.834.305 + afschrijving 361.672 + overige bedrijfskosten 4.102.788 = 15.624.449 = Som der bedrijfslasten. El renglón existe en el documento y suma al total, queda como gasto. [Overige personeelskosten | 1.834.305 | 1.953.685 (L411); Som der bedrijfslasten 15.624.449 (L414)]",
    "destino": "expense",
    "amountNative": -1.834305
   },
@@ -362,7 +358,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 2,
   "lineasGasto": 4,
   "metaFilas": 3,

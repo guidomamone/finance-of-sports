@@ -1,0 +1,299 @@
+{
+ "pdf": "Clubes/Países Bajos/Willem II/Willem-II-Jaarverslag-2024-2025.pdf",
+ "md": "Clubes/Países Bajos/Willem II/Willem-II-Jaarverslag-2024-2025.md",
+ "mdSha1": "47560f609b87b50067214040a7bb80d6378db053",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T02:26:43.205Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    19,
+    23
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    27,
+    51
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 13,
+   "lineas": [
+    343,
+    347
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 14,
+   "lineas": [
+    376,
+    381
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 15,
+   "lineas": [
+    393,
+    421
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 16,
+   "lineas": [
+    427,
+    442
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 17,
+   "lineas": [
+    450,
+    468
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 18,
+   "lineas": [
+    476,
+    503
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 19,
+   "lineas": [
+    509,
+    514
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 23,
+   "lineas": [
+    669,
+    686
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 24,
+   "lineas": [
+    692,
+    707
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 24,
+   "lineas": [
+    709,
+    713
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 24,
+   "lineas": [
+    717,
+    722
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 25,
+   "lineas": [
+    730,
+    754
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 26,
+   "lineas": [
+    767,
+    773
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 27,
+   "lineas": [
+    807,
+    821
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 28,
+   "lineas": [
+    862,
+    865
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 29,
+   "lineas": [
+    873,
+    891
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 29,
+   "lineas": [
+    897,
+    903
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 30,
+   "lineas": [
+    909,
+    943
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 31,
+   "lineas": [
+    953,
+    957
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 32,
+   "lineas": [
+    967,
+    996
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 33,
+   "lineas": [
+    1004,
+    1010
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 34,
+   "lineas": [
+    1026,
+    1034
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 34,
+   "lineas": [
+    1036,
+    1046
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 34,
+   "lineas": [
+    1050,
+    1056
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 36,
+   "lineas": [
+    1114,
+    1118
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 36,
+   "lineas": [
+    1120,
+    1125
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 36,
+   "lineas": [
+    1127,
+    1132
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 36,
+   "lineas": [
+    1136,
+    1140
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 37,
+   "lineas": [
+    1150,
+    1155
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 38,
+   "lineas": [
+    1175,
+    1181
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b7"
+ ],
+ "notas_ingresos": [
+  "b18"
+ ],
+ "notas_gastos": [
+  "b18",
+  "b19",
+  "b20"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Notas en euros ('Vlottende activa (bedragen in euro's)'); importes como -567.862 y €1.096.919 indican unidades",
+ "moneda": "EUR",
+ "columna_ejercicio": "2024 / 2025",
+ "columna_anterior": "2023 / 2024",
+ "perimetro": "ambos",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan en euros (unidades) los importes del estado consolidado b7?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El estado b7 no muestra frase de escala; se infiere de las notas en euros (b14, b17).",
+   "bloques": [
+    "b7",
+    "b14"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "b7 es la winst-en-verliesrekening consolidada (2.3) y es la elegida; b26 es la enkelvoudige (individual, solo resultado de participaciones) y b32 su nota; no se usan. b18 desglosa Netto-omzet (14) y personal (15); b19 amortizaciones (16); b20 otros gastos (17 en adelante). Se excluyen balance, flujo de efectivo, activo fijo y participaciones."
+}

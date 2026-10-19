@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Países Bajos/FC Dordrecht/wf-2024-2025-602d6b96.pdf",
- "generado": "2026-10-19T00:16:01.356Z",
+ "generado": "2026-10-19T02:28:44.549Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (fcdordrecht-nl)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "3 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Pensioenlasten\" -> wages_squad 0.6; \"Overige personeelskosten\" -> admin_general_expense 0.45; \"Verkoopkosten\" -> admin_general_expense 0.55"
   }
  ],
  "avisos": [
@@ -68,9 +64,9 @@
     "amountNative": -0.003541,
     "disclosureLevel": "aggregated",
     "_pag": 6,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Overige personeelskosten",
@@ -78,9 +74,9 @@
     "amountNative": -0.855319,
     "disclosureLevel": "aggregated",
     "_pag": 6,
-    "_escalon": 2,
-    "_conf": 0.45,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Afschrijvingen",
@@ -118,9 +114,9 @@
     "amountNative": -0.861632,
     "disclosureLevel": "aggregated",
     "_pag": 6,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Algemene kosten",
@@ -293,11 +289,11 @@
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 0.003541,
    "cat": "wages_squad",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Pensioenlasten 3.541 es costo de personal; el estado no separa plantel de no plantel, el renglon entero va a wages_squad (igual que Pensioenlasten en Go Ahead Eagles y PSV). Suma de los costos del estado: 2.008.539+415.736+3.541+855.319+164.875+442.573+371.400+861.632+451.614 = 5.575.229 = Som der kosten. [Pensioenlasten | 3,541 | 4,795 (L190); Som der kosten 5,575,229 (L197)]",
    "destino": "expense",
    "amountNative": -0.003541
   },
@@ -309,11 +305,11 @@
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 0.855319,
    "cat": "admin_general_expense",
-   "conf": 0.45,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Overige personeelskosten 855.319 va a admin_general_expense, por el precedente del lote 93 (Ajax, Feyenoord, PSV). Sin desglose en el documento. [Overige personeelskosten | 855.319 | 613,066 (L191)]",
    "destino": "expense",
    "amountNative": -0.855319
   },
@@ -370,11 +366,11 @@
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 0.861632,
    "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Verkoopkosten 861.632 (costos de venta) es un renglon agregado sin desglose; no hay rubro propio de costos comerciales, y precedentes como Reclame/advertenties de Go Ahead Eagles van a admin_general_expense. Se acepta como Administracion y gastos generales; no se puede abrir mas porque el estado reducido no trae notas del gasto. [Verkoopkosten | 861,632 | 842,581 (L195)]",
    "destino": "expense",
    "amountNative": -0.861632
   },
@@ -501,7 +497,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 2,
   "lineasGasto": 9,
   "metaFilas": 2,

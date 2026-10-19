@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Países Bajos/SC Heerenveen/SC-Heerenveen-Jaarverslag-2024-2025.pdf",
  "md": "Clubes/Países Bajos/SC Heerenveen/SC-Heerenveen-Jaarverslag-2024-2025.md",
- "generado": "2026-10-19T00:13:16.755Z",
- "estado": "cola",
+ "generado": "2026-10-19T02:27:24.579Z",
+ "estado": "ok",
  "clubId": null,
  "year": 2025,
  "escala": {
@@ -23,11 +23,7 @@
    "fecha": "2026-10-18"
   }
  ],
- "cola": [
-  "e8c5e9b",
-  "145f83c",
-  "b8d70d9"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -65,7 +61,7 @@
   "la nota de \"Netto-opbrengst vergoedingssommen\" no suma el renglón (4.237656 contra 7.555866, sumando sus renglones): quedó el renglón del estado",
   "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
   "la lectura base no cerraba; cerró con la lectura 4",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer ya contestada para el club (fila-ilegible, \"Netto-opbrengst vergoedingssommen\"): aceptar, en SC-Heerenveen-Jaarverslag-2024-2025.pdf"
  ],
  "reintentar": [
   {

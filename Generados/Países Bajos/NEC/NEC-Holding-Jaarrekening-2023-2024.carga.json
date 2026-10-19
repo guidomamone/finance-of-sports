@@ -1,22 +1,10 @@
 {
  "pdf": "Clubes/Países Bajos/NEC/NEC-Holding-Jaarrekening-2023-2024.pdf",
- "generado": "2026-10-19T00:16:03.551Z",
+ "generado": "2026-10-19T02:28:46.135Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (nec-nl)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Vergoedingssommen\" -> other_income 0; \"Huisves ngskosten\" -> admin_general_expense 0.65"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
@@ -112,13 +100,13 @@
    },
    {
     "rawLabel": "Vergoedingssommen",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "player_sales",
     "amountNative": 3.744788,
     "disclosureLevel": "aggregated",
     "_pag": 37,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía player_amortisation, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "expenseLines": [
@@ -238,9 +226,9 @@
     "amountNative": -1.488336,
     "disclosureLevel": "aggregated",
     "_pag": 36,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Wedstrijd- en trainingskosten",
@@ -469,13 +457,13 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Resultaat vergoedingssommen\")",
    "signoFijo": 3.744788,
-   "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía player_amortisation, del otro lado que la fila: se propone la genérica de su lado",
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Vergoedingssommen 3.744.788 es el ingreso bruto por traspasos de jugadores (nota 16), no Otros ingresos: va como player_sales, igual que 'Vergoedingssommen (transferopbrengsten)' de PSV. Cuenta: 3.744.788 - afschrijving vergoedingssommen 620.306 = 3.124.482 = Resultaat vergoedingssommen del estado. Ojo: la nota 14 netea la amortizacion con una 'Allocatie amortisatie vergoedingssommen' de -620.306, asi que Afschrijvingen (710.756) NO la incluye; la amortizacion de 620.306 tiene que cargarse como gasto player_amortisation aparte para que el resultado cierre: -4.878.025 + 3.124.482 - 74.353 = -1.827.896. [Vergoedingssommen | 3.744.788 | 2.514.892 (L1422); Afschrijving vergoedingssommen -620.306 (L1423); Resultaat vergoedingssommen 3.124.482 (L448)]",
    "destino": "revenue",
    "amountNative": 3.744788
   },
@@ -653,11 +641,11 @@
    "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten\")",
    "signoFijo": 1.488336,
    "cat": "admin_general_expense",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Huisvestingskosten (1.488.336) va a admin_general_expense, igual que en Go Ahead Eagles, Feyenoord y PSV. Nota 15: 1.488.336+1.763.309+4.686.142+1.186.860 = 9.124.647 = Overige bedrijfskosten. [Huisves ngskosten | 1.488.336 | 1.422.517 (L1407); Overige bedrijfskosten 9.124.647 (L1411)]",
    "destino": "expense",
    "amountNative": -1.488336
   },
@@ -808,7 +796,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
+  "motivos": 1,
   "lineasIngreso": 9,
   "lineasGasto": 15,
   "metaFilas": 2,

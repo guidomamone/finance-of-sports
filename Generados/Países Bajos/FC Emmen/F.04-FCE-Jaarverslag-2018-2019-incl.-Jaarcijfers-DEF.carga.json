@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Países Bajos/FC Emmen/F.04-FCE-Jaarverslag-2018-2019-incl.-Jaarcijfers-DEF.pdf",
- "generado": "2026-10-19T00:16:01.622Z",
+ "generado": "2026-10-19T02:28:44.731Z",
  "frena": [
   {
    "etapa": "club",
@@ -9,18 +9,6 @@
   {
    "etapa": "alta:reportType",
    "motivo": "¿El documento trae un estado de resultados (o de recursos y gastos) anual cargable, o hay que buscar los estados en otro documento del club?"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "5 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Horeca\" -> other_income 0.55; \"Personeelskosten\" -> wages_squad 0.7; \"Horeca\" -> other_expenses 0; \"Verkoopkosten\" -> other_expenses 0.6; \"Som der afschr. bijz. waardevermindering\" -> player_amortisation 0.6"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
@@ -74,13 +62,13 @@
    },
    {
     "rawLabel": "Horeca",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "stadium_other",
     "amountNative": 0.579,
     "disclosureLevel": "aggregated",
     "_pag": 5,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Merchandise",
@@ -120,9 +108,9 @@
     "amountNative": -3.915,
     "disclosureLevel": "aggregated",
     "_pag": 5,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Horeca",
@@ -130,19 +118,19 @@
     "amountNative": -0.43,
     "disclosureLevel": "aggregated",
     "_pag": 5,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_income, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Verkoopkosten",
-    "normalizedCategory": "other_expenses",
+    "normalizedCategory": "admin_general_expense",
     "amountNative": -0.481,
     "disclosureLevel": "aggregated",
     "_pag": 5,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Huisvestingskosten",
@@ -190,9 +178,9 @@
     "amountNative": -0.062,
     "disclosureLevel": "aggregated",
     "_pag": 5,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -316,12 +304,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado)",
    "signoFijo": 0.579,
-   "cat": "other_income",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "stadium_other",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19: criterio neerlandés unificado (catering/Horeca a stadium_other como Go Ahead Eagles; el renglón de amortización + resultado de traspasos de FC Emmen queda como amortización de pases, sin ingreso negativo)",
    "destino": "revenue",
    "amountNative": 0.579
   },
@@ -378,11 +366,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 3.915,
    "cat": "wages_squad",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Personeelskosten 3.915 (miles de EUR) es costo de personal sin separar plantel de no plantel: el renglon entero va a wages_squad. [Personeelskosten | € 3.915 (L96)]",
    "destino": "expense",
    "amountNative": -3.915
   },
@@ -394,12 +382,12 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.43,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_income, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Horeca de gasto (430 miles) es el costo de lo vendido en la gastronomia del estadio, equivalente a 'Kostprijs van de omzet' (other_expenses en Feyenoord y PSV; 'Inkoopwaarde van de omzet' en Go Ahead Eagles). Va a Otros gastos, como propone el sistema. Suma de gastos: 3.915+430+481+527+670+304+203 = 6.530 vs 6.529 impreso (redondeo de miles). [Horeca | € 430 (L97); Som der bedrijfslasten € 6.529 (L103)]",
    "destino": "expense",
    "amountNative": -0.43
   },
@@ -410,12 +398,12 @@
    "ladoDoc": "expense",
    "origen": "verificacion (estado)",
    "signoFijo": 0.481,
-   "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Verkoopkosten (costos de venta/comerciales, 481 miles) va a admin_general_expense: category-map.js define esa categoria como 'administracion, gastos generales, comerciales, impuestos...'. Se usa el mismo criterio para todo Verkoopkosten neerlandes (Dordrecht, NAC Breda). No es Otros gastos. [Verkoopkosten | € 481 (L98)]",
    "destino": "expense",
    "amountNative": -0.481
   },
@@ -487,11 +475,11 @@
    "origen": "verificacion (estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3))",
    "signoFijo": 0.062,
    "cat": "player_amortisation",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19: criterio neerlandés unificado (catering/Horeca a stadium_other como Go Ahead Eagles; el renglón de amortización + resultado de traspasos de FC Emmen queda como amortización de pases, sin ingreso negativo)",
    "destino": "expense",
    "amountNative": -0.062
   },
@@ -604,7 +592,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 5,
+  "motivos": 2,
   "lineasIngreso": 8,
   "lineasGasto": 8,
   "metaFilas": 2,

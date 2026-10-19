@@ -1,22 +1,10 @@
 {
  "pdf": "Clubes/Países Bajos/Telstar/Telstar-Jaarverslag-2024-2025-full.pdf",
- "generado": "2026-10-19T00:16:04.415Z",
+ "generado": "2026-10-19T02:28:47.037Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (telstar-nl)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "4 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Kostprijs Food & Beverage\" -> other_expenses 0.7; \"Kostprijs merchandise\" -> other_expenses 0.7; \"Verkoop\" -> admin_general_expense 0.55; \"Huur\" -> admin_general_expense 0.6"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
@@ -166,9 +154,9 @@
     "amountNative": -0.504,
     "disclosureLevel": "aggregated",
     "_pag": 23,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Kostprijs merchandise",
@@ -176,9 +164,9 @@
     "amountNative": -0.052,
     "disclosureLevel": "aggregated",
     "_pag": 23,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Verkoop",
@@ -186,9 +174,9 @@
     "amountNative": -0.083,
     "disclosureLevel": "aggregated",
     "_pag": 23,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Overige",
@@ -206,9 +194,9 @@
     "amountNative": -0.145,
     "disclosureLevel": "aggregated",
     "_pag": 23,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Onderhoud",
@@ -550,11 +538,11 @@
    "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\")",
    "signoFijo": 0.504,
    "cat": "other_expenses",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Kostprijs Food & Beverage (504 miles) es el costo de lo vendido en gastronomia: Otros gastos, igual que 'Kostprijs van de omzet' en Feyenoord y PSV y 'Inkoopwaarde van de omzet' en Go Ahead Eagles. Cuenta de la nota Verkoopkosten: 504+52+83+0+276 = 915 = Verkoopkosten. Documento transcripto con Mistral OCR: la cifra cierra con el subtotal impreso y con Overige bedrijfskosten (915+386+732+283 = 2.316). [Kostprijs Food & Beverage | 504 | 272 (L837); Verkoopkosten 915 (L843)]",
    "destino": "expense",
    "amountNative": -0.504
   },
@@ -566,11 +554,11 @@
    "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\")",
    "signoFijo": 0.052,
    "cat": "other_expenses",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Kostprijs merchandise (52 miles) es costo de la mercaderia vendida: Otros gastos, mismo criterio que el costo de ventas de los demas clubes neerlandeses. [Kostprijs merchandise | 52 | 39 (L839)]",
    "destino": "expense",
    "amountNative": -0.052
   },
@@ -582,11 +570,11 @@
    "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\")",
    "signoFijo": 0.083,
    "cat": "admin_general_expense",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Verkoop (83 miles) es un renglon de costos de venta/comerciales dentro de Verkoopkosten; va a admin_general_expense con el criterio unico para costos comerciales neerlandeses (category-map.js: 'administracion, gastos generales, comerciales...'). Sin mas detalle en el documento. [Verkoop | 83 | 44 (L840)]",
    "destino": "expense",
    "amountNative": -0.083
   },
@@ -613,11 +601,11 @@
    "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\")",
    "signoFijo": 0.145,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Huur (145 miles) es el alquiler del terreno y de la tribuna oeste (Gemeente Velsen), dentro de Huisvestingskosten: admin_general_expense, igual que Huisvestingskosten en Go Ahead Eagles, Feyenoord y PSV. Cuenta: 145+55+86+55+14+31 = 386 = Huisvestingskosten. [Huur | 145 | 126 (L847); Huisvestingskosten 386 (L854)]",
    "destino": "expense",
    "amountNative": -0.145
   },
@@ -838,7 +826,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 4,
+  "motivos": 1,
   "lineasIngreso": 7,
   "lineasGasto": 18,
   "metaFilas": 2,

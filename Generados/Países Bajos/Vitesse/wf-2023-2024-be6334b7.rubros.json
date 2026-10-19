@@ -1,0 +1,210 @@
+{
+  "md": "Clubes/Países Bajos/Vitesse/wf-2023-2024-be6334b7.md",
+  "pdf": "Clubes/Países Bajos/Vitesse/wf-2023-2024-be6334b7.pdf",
+  "club": "vitesse",
+  "year": 2024,
+  "generatedAt": "2026-10-19T02:27:24.725Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Wedstrijdbaten",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        3.159999
+      ],
+      "glosa": "Ingresos por partidos"
+    },
+    {
+      "label": "Sponsoring",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        6.61576
+      ],
+      "glosa": "Patrocinios"
+    },
+    {
+      "label": "Media gerelateerde baten",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        6.149612
+      ],
+      "glosa": "Ingresos por medios de comunicación y retransmisión"
+    },
+    {
+      "label": "Prijzengeld",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        1.067324
+      ],
+      "glosa": "Premios deportivos"
+    },
+    {
+      "label": "Horeca",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        0.655389
+      ],
+      "glosa": "Hostelería y restauración"
+    },
+    {
+      "label": "Merchandise",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        0.749809
+      ],
+      "glosa": "Merchandising"
+    },
+    {
+      "label": "Subsidies en giften",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        0.245589
+      ],
+      "glosa": "Subvenciones y donaciones"
+    },
+    {
+      "label": "Overige baten",
+      "lado": "revenue",
+      "page": 38,
+      "section": "nota que desglosa \"Netto-omzet\"",
+      "values": [
+        1.469442
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Resultaat vergoedingssommen",
+      "lado": "revenue",
+      "page": 20,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        1.988774
+      ],
+      "glosa": "Resultado por traspasos de jugadores"
+    },
+    {
+      "label": "Lonen",
+      "lado": "expense",
+      "page": 38,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        13.283424
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Sociale lasten",
+      "lado": "expense",
+      "page": 38,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        1.161577
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Pensioenlasten",
+      "lado": "expense",
+      "page": 38,
+      "section": "nota que desglosa \"Personeelskosten\"",
+      "values": [
+        0.147177
+      ],
+      "glosa": "Gastos por pensiones"
+    },
+    {
+      "label": "Bedrijfsgebouwen en -terreinen",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Afschrijvingen op materiële vaste activa\"",
+      "values": [
+        0.484191
+      ],
+      "glosa": "Edificios y terrenos"
+    },
+    {
+      "label": "Inventarissen",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Afschrijvingen op materiële vaste activa\"",
+      "values": [
+        0.181829
+      ],
+      "glosa": "Mobiliario y enseres"
+    },
+    {
+      "label": "Overige personeelskosten",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Overige bedrijfkosten\"",
+      "values": [
+        1.098869
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Huisvestingskosten",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Overige bedrijfkosten\"",
+      "values": [
+        4.830901
+      ],
+      "glosa": "Gastos de instalaciones"
+    },
+    {
+      "label": "Wedstrijd- en trainingskosten",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Overige bedrijfkosten\"",
+      "values": [
+        2.460514
+      ],
+      "glosa": "Gastos de partidos y entrenamientos"
+    },
+    {
+      "label": "Verkoopkosten",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Overige bedrijfkosten\"",
+      "values": [
+        1.897837
+      ],
+      "glosa": "Gastos de venta"
+    },
+    {
+      "label": "Horeca",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Overige bedrijfkosten\"",
+      "values": [
+        0.408692
+      ],
+      "glosa": "Hostelería y restauración"
+    },
+    {
+      "label": "Algemene kosten",
+      "lado": "expense",
+      "page": 39,
+      "section": "nota que desglosa \"Overige bedrijfkosten\"",
+      "values": [
+        3.177009
+      ],
+      "glosa": "Gastos generales"
+    }
+  ]
+}

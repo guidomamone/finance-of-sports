@@ -1,18 +1,10 @@
 {
  "pdf": "Clubes/Países Bajos/NAC Breda/NAC-Breda-Jaarrekening-2024-2025.pdf",
- "generado": "2026-10-19T00:16:03.259Z",
+ "generado": "2026-10-19T02:28:45.996Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (nacbreda-nl)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "6 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Opleidingen\" -> youth_football 0.6; \"Huisvestingkosten\" -> admin_general_expense 0.6; \"Verkoopkosten\" -> admin_general_expense 0.6; \"Brutoloon\" -> wages_squad 0.7; \"Overige personeelskosten\" -> admin_general_expense 0.5"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
@@ -80,9 +72,9 @@
     "amountNative": 0.272455,
     "disclosureLevel": "aggregated",
     "_pag": 36,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Overige baten",
@@ -132,9 +124,9 @@
     "amountNative": -2.878863,
     "disclosureLevel": "aggregated",
     "_pag": 37,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Verkoopkosten",
@@ -142,9 +134,9 @@
     "amountNative": -1.661898,
     "disclosureLevel": "aggregated",
     "_pag": 37,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Overige kosten",
@@ -162,9 +154,9 @@
     "amountNative": -7.931277,
     "disclosureLevel": "aggregated",
     "_pag": 37,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Wedstrijdpremies",
@@ -182,9 +174,9 @@
     "amountNative": -2.731781,
     "disclosureLevel": "aggregated",
     "_pag": 37,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Pensioenpremies",
@@ -192,9 +184,9 @@
     "amountNative": -0.135313,
     "disclosureLevel": "aggregated",
     "_pag": 37,
-    "_escalon": 2,
-    "_conf": 0.7,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sociale lasten",
@@ -412,11 +404,11 @@
    "origen": "verificacion (nota que desglosa \"NETTO-OMZET\")",
    "signoFijo": 0.272455,
    "cat": "youth_football",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Opleidingen (272.455) es el ingreso por formacion de jugadores (indemnizaciones por jugadores formados), que el bestuursverslag agrupa con los traspasos ('Hogere vergoedingssommen (inclusief opleidingen)': +608 = 549 de Opbrengst vergoedingssommen + 59 de Opleidingen). category-map.js define youth_football como 'futbol juvenil / derechos de formacion': corresponde. Suma de la nota 9: 3.930.225+7.580.148+2.834.542+271.365+1.337.949+272.455+2.449.265+3.052.680 = 21.728.629 = Netto-omzet. [Opleidingen | 272.455 | 213.614 (L1398); Netto-omzet 21.728.629 (L1401); '(inclusief opleidingen)' (L146)]",
    "destino": "revenue",
    "amountNative": 0.272455
   },
@@ -488,11 +480,11 @@
    "origen": "verificacion (nota que desglosa \"Kosten uitbesteed werk en overige externe kosten\")",
    "signoFijo": 2.878863,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Huisvestingkosten (gastos de alojamiento/instalaciones, 2.878.863) va a admin_general_expense, igual que Huisvestingskosten en Go Ahead Eagles, Feyenoord y PSV. Nota 11: 1.707.815+2.878.863+1.661.898+1.291.130 = 7.539.706. [Huisvestingkosten | 2.878.863 | 2.561.671 (L1423); total 7.539.706 (L1426)]",
    "destino": "expense",
    "amountNative": -2.878863
   },
@@ -504,11 +496,11 @@
    "origen": "verificacion (nota que desglosa \"Kosten uitbesteed werk en overige externe kosten\")",
    "signoFijo": 1.661898,
    "cat": "admin_general_expense",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Verkoopkosten (costos de venta/comerciales, 1.661.898) va a admin_general_expense: category-map.js incluye 'comerciales' en esa categoria. Mismo criterio que Verkoopkosten de Dordrecht y FC Emmen. [Verkoopkosten | 1.661.898 | 1.366.213 (L1424)]",
    "destino": "expense",
    "amountNative": -1.661898
   },
@@ -535,11 +527,11 @@
    "origen": "verificacion (nota que desglosa \"Lonen en salarissen\")",
    "signoFijo": 7.931277,
    "cat": "wages_squad",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Brutoloon (sueldo bruto, 7.931.277) va a wages_squad: el documento no separa plantel de no plantel, el renglon entero va a wages_squad. Nota 12: 7.931.277+273.594+2.731.781 = 10.936.652 = Lonen en salarissen. [Brutoloon | 7.931.277 | 5.447.973 (L1433); total 10.936.652 (L1436)]",
    "destino": "expense",
    "amountNative": -7.931277
   },
@@ -566,11 +558,11 @@
    "origen": "verificacion (nota que desglosa \"Lonen en salarissen\")",
    "signoFijo": 2.731781,
    "cat": "admin_general_expense",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Overige personeelskosten (2.731.781) va a admin_general_expense por el precedente del lote 93 (Ajax, Feyenoord, PSV). El documento dice que incluye 'inhuur personeel, huur spelers, kosten lease auto's, vergoedingen en verzekeringen' sin desglose en cifras, asi que no se puede separar el alquiler de jugadores; queda entero en admin_general_expense. [Overige personeelskosten | 2.731.781 | 2.048.993 (L1435); detalle textual (L1438-1439)]",
    "destino": "expense",
    "amountNative": -2.731781
   },
@@ -582,11 +574,11 @@
    "origen": "verificacion (nota que desglosa \"Sociale lasten\")",
    "signoFijo": 0.135313,
    "cat": "wages_squad",
-   "conf": 0.7,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Pensioenpremies (135.313) es costo de personal; sin separar plantel de no plantel va a wages_squad, junto con Sociale lasten (944.243). Nota: 135.313+944.243 = 1.079.556 = Sociale lasten del estado. [Pensioenpremies | 135.313 | 123.188 (L1446); total 1.079.556 (L1448)]",
    "destino": "expense",
    "amountNative": -0.135313
   },
@@ -818,7 +810,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 1,
   "lineasIngreso": 9,
   "lineasGasto": 15,
   "metaFilas": 3,

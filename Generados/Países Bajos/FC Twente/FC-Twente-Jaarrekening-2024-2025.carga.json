@@ -1,28 +1,292 @@
 {
  "pdf": "Clubes/Países Bajos/FC Twente/FC-Twente-Jaarrekening-2024-2025.pdf",
- "generado": "2026-10-19T00:16:01.955Z",
+ "generado": "2026-10-19T02:28:45.213Z",
  "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 2 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (fctwente-nl)"
   },
   {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 2 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "etapa": "categoria-en-cola",
+   "motivo": "5 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Catering\" -> other_income 0.55; \"Pensioenpremies\" -> wages_squad 0.75; \"Inhuur personeel\" -> admin_general_expense 0.6; \"Hand- en tekengelden\" -> player_amortisation 0.6; \"Kosten intermediairs\" -> player_amortisation 0.5"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
-  "perímetro: consolidado (ajuste manual del documento, 2026-10-18: La que presenta es FC Twente '65 B.V., el club mismo, y sus controladas son FC Twente Accommodaties B.V. y FC Twente Stadion B.V. (estadio/instalaciones del club) y FC Twente/Heracles Academie B.V. (fútbol base, 50% proporcional): todo es negocio del fútbol. El documento es 'Geconsolideerde jaarrekening' (portada L3); la enkelvoudige tiene solo una winst-en-verliesrekening abreviada (art. 2:402 BW, L996-1000). (subagente Sonnet, revisado por Claude 2026-10-18))"
+  "perímetro: consolidado (ajuste manual del documento, 2026-10-18: La que presenta es FC Twente '65 B.V., el club mismo, y sus controladas son FC Twente Accommodaties B.V. y FC Twente Stadion B.V. (estadio/instalaciones del club) y FC Twente/Heracles Academie B.V. (fútbol base, 50% proporcional): todo es negocio del fútbol. El documento es 'Geconsolideerde jaarrekening' (portada L3); la enkelvoudige tiene solo una winst-en-verliesrekening abreviada (art. 2:402 BW, L996-1000). (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "fctwente-nl",
+  "year": 2025,
+  "cierre": "2025-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Wedstrijdbaten",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 10.592,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Bijdragen in giften en geld",
+    "normalizedCategory": "other_income",
+    "amountNative": 30.21,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Televisiebaten",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 7.941,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Merchandising",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.382,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Catering",
+    "normalizedCategory": "other_income",
+    "amountNative": 11.451,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige baten",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.114,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Resultaat vergoedingssommen",
+    "normalizedCategory": "player_sales",
+    "amountNative": 16.469,
+    "disclosureLevel": "aggregated",
+    "_pag": 10,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Inkoopwaarde van de omzet",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -5.413,
+    "disclosureLevel": "aggregated",
+    "_pag": 10,
+    "_escalon": 1,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Lonen en salarissen",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -19.504,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sociale lasten",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.548,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Pensioenpremies",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.224,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Autokosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.875,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Inhuur personeel",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.993,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige personeelskosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.07,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Wedstrijd- en trainingskosten",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -6.307,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Verkoopkosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2.831,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Huisvestingskosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -6.06,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Algemene kosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -3.98,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen (im)materiële vaste activa",
+    "normalizedCategory": "depreciation",
+    "amountNative": -3.332,
+    "disclosureLevel": "aggregated",
+    "_pag": 10,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Vergoedingssommen",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -4.695,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Hand- en tekengelden",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -0.37,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Kosten intermediairs",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -0.878,
+    "disclosureLevel": "aggregated",
+    "_pag": 23,
+    "_escalon": 2,
+    "_conf": 0.5,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2025-06-30",
+   "sourceId": "fctwente-nl-jaarrekening-2024-2025",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.151,
+   "tax": -5.149,
+   "extraRows": [
+    {
+     "label": "Financiële baten en lasten",
+     "value": -0.151
+    },
+    {
+     "label": "Belastingen resultaat uit gewone bedrijfsuitoefening",
+     "value": -5.149
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 78.159,
+   "officialTotalExpenses": 58.08,
+   "officialPAT": 14.779
+  },
+  "source": {
+   "id": "fctwente-nl-jaarrekening-2024-2025",
+   "clubId": "fctwente-nl",
+   "title": "FC Twente ‘65 B.V. — FC-Twente-Jaarrekening-2024-2025 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Países Bajos/FC Twente/FC-Twente-Jaarrekening-2024-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
  "md": "Clubes/Países Bajos/FC Twente/FC-Twente-Jaarrekening-2024-2025.md",
  "reemplaza": false,
  "periodo": {
@@ -38,5 +302,475 @@
  },
  "clubId": "fctwente-nl",
  "year": 2025,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/FC Twente/FC-Twente-Jaarrekening-2024-2025.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "La que presenta es FC Twente '65 B.V., el club mismo, y sus controladas son FC Twente Accommodaties B.V. y FC Twente Stadion B.V. (estadio/instalaciones del club) y FC Twente/Heracles Academie B.V. (fútbol base, 50% proporcional): todo es negocio del fútbol. El documento es 'Geconsolideerde jaarrekening' (portada L3); la enkelvoudige tiene solo una winst-en-verliesrekening abreviada (art. 2:402 BW, L996-1000). (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": "De in de consolidatie begrepen vennootschappen zijn: FC Twente Accommodaties B.V. te Enschede 100% / FC Twente Stadion B.V. te Enschede 100% / FC Twente/Heracles Academie B.V. te Almelo 50% (L1007-1010)",
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "seleccion": {
+  "filas": 24,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Wedstrijdbaten",
+   "page": 22,
+   "native": 10.592,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet (11)\")",
+   "signoFijo": 10.592,
+   "cat": "matchday_competition",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 10.592
+  },
+  {
+   "label": "Bijdragen in giften en geld",
+   "page": 22,
+   "native": 30.21,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet (11)\")",
+   "signoFijo": 30.21,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 30.21
+  },
+  {
+   "label": "Televisiebaten",
+   "page": 22,
+   "native": 7.941,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet (11)\")",
+   "signoFijo": 7.941,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 7.941
+  },
+  {
+   "label": "Merchandising",
+   "page": 22,
+   "native": 0.382,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet (11)\")",
+   "signoFijo": 0.382,
+   "cat": "sponsorship_commercial",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.382
+  },
+  {
+   "label": "Catering",
+   "page": 22,
+   "native": 11.451,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet (11)\")",
+   "signoFijo": 11.451,
+   "cat": "other_income",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 11.451
+  },
+  {
+   "label": "Overige baten",
+   "page": 22,
+   "native": 1.114,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet (11)\")",
+   "signoFijo": 1.114,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.114
+  },
+  {
+   "label": "Resultaat vergoedingssommen",
+   "page": 10,
+   "native": 16.469,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 16.469,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 16.469
+  },
+  {
+   "label": "Inkoopwaarde van de omzet",
+   "page": 10,
+   "native": 5.413,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.413,
+   "cat": "other_expenses",
+   "conf": 0.93,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5.413
+  },
+  {
+   "label": "Lonen en salarissen",
+   "page": 22,
+   "native": 19.504,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten (12)\")",
+   "signoFijo": 19.504,
+   "cat": "wages_squad",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -19.504
+  },
+  {
+   "label": "Sociale lasten",
+   "page": 22,
+   "native": 1.548,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten (12)\")",
+   "signoFijo": 1.548,
+   "cat": "wages_squad",
+   "conf": 0.9,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.548
+  },
+  {
+   "label": "Pensioenpremies",
+   "page": 22,
+   "native": 0.224,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten (12)\")",
+   "signoFijo": 0.224,
+   "cat": "wages_squad",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.224
+  },
+  {
+   "label": "Autokosten",
+   "page": 22,
+   "native": 0.875,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten (12)\")",
+   "signoFijo": 0.875,
+   "cat": "admin_general_expense",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.875
+  },
+  {
+   "label": "Inhuur personeel",
+   "page": 22,
+   "native": 0.993,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten (12)\")",
+   "signoFijo": 0.993,
+   "cat": "admin_general_expense",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.993
+  },
+  {
+   "label": "Overige personeelskosten",
+   "page": 22,
+   "native": 1.07,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten (12)\")",
+   "signoFijo": 1.07,
+   "cat": "admin_general_expense",
+   "conf": 0.93,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.07
+  },
+  {
+   "label": "Wedstrijd- en trainingskosten",
+   "page": 22,
+   "native": 6.307,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten (13)\")",
+   "signoFijo": 6.307,
+   "cat": "match_organisation_expense",
+   "conf": 0.93,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -6.307
+  },
+  {
+   "label": "Verkoopkosten",
+   "page": 22,
+   "native": 2.831,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten (13)\")",
+   "signoFijo": 2.831,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "precedente del país: 1 clubes (Fortuna Sittard), nota:overige bedrijfskosten · Claude 2026-10-18 (subagente Sonnet): Verkoopkosten 1.616.086 es un componente de Overige bedrijfskosten (nota 14: Huisvesting 1.508.057 + Wedstrijd- en trainingskosten 1.058.843 + Verkoopkosten 1.616.086 + Algemene kosten 716.190 = 4.899.176). Costos de venta (horeca y merchandise segun el informe), no deportivos: admin_general_expense, igual que AZ ('Verkoopkosten' dentro de admin_general_expense). [Verkoopkosten 1.616.086 (L1667); Overige bedrijfskosten 4.899.176 (L1669); 'verkoopkosten gestegen ... hogere horeca-kosten en merchandise kosten' (L284)]",
+   "destino": "expense",
+   "amountNative": -2.831
+  },
+  {
+   "label": "Huisvestingskosten",
+   "page": 22,
+   "native": 6.06,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten (13)\")",
+   "signoFijo": 6.06,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -6.06
+  },
+  {
+   "label": "Algemene kosten",
+   "page": 22,
+   "native": 3.98,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Overige bedrijfskosten (13)\")",
+   "signoFijo": 3.98,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.98
+  },
+  {
+   "label": "Afschrijvingen (im)materiële vaste activa",
+   "page": 10,
+   "native": 3.332,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.332,
+   "cat": "depreciation",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.332
+  },
+  {
+   "label": "Vergoedingssommen",
+   "page": 23,
+   "native": 4.695,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Afschrijvingen vergoedingssommen (16)\")",
+   "signoFijo": 4.695,
+   "cat": "player_amortisation",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -4.695
+  },
+  {
+   "label": "Hand- en tekengelden",
+   "page": 23,
+   "native": 0.37,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Afschrijvingen vergoedingssommen (16)\")",
+   "signoFijo": 0.37,
+   "cat": "player_amortisation",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.37
+  },
+  {
+   "label": "Kosten intermediairs",
+   "page": 23,
+   "native": 0.878,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Afschrijvingen vergoedingssommen (16)\")",
+   "signoFijo": 0.878,
+   "cat": "player_amortisation",
+   "conf": 0.5,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.878
+  },
+  {
+   "label": "Financiële baten en lasten (15)",
+   "page": null,
+   "native": -0.151,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Belastingen resultaat uit gewone bedrijfsuitoefening (17)",
+   "page": null,
+   "native": -5.149,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Netto-omzet (11)\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Personeelskosten (12)\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Overige bedrijfskosten (13)\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Afschrijvingen vergoedingssommen (16)\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 78.159,
+  "expSum": -58.08,
+  "officialTotalRevenue": 78.159,
+  "officialTotalExpenses": 58.08,
+  "officialPAT": 14.779,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 14.779,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 78.159
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 58.08
+  }
+ },
+ "liga": {
+  "valor": "nl-eredivisie",
+  "fuente": "roster cacheado de \"2024–25 Eredivisie\" (tools/club-league-reference/nl.json), coincidencia única por palabras \"Twente\" = \"FC Twente\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (55 de 59 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-18)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Países Bajos (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2025-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2025-06-30 = 0.8532 (Cierre BCE al 30/6/2025 (1 EUR = 1,172 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "fctwente-nl-jaarrekening-2024-2025",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "nl-eredivisie",
+   "fuente": "roster cacheado de \"2024–25 Eredivisie\" (tools/club-league-reference/nl.json), coincidencia única por palabras \"Twente\" = \"FC Twente\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 4,
+  "lineasIngreso": 7,
+  "lineasGasto": 15,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
 }

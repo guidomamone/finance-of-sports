@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2023-2024.pdf",
  "md": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2023-2024.md",
- "generado": "2026-10-19T00:12:35.337Z",
+ "generado": "2026-10-19T02:27:24.077Z",
  "estado": "ok",
  "clubId": null,
  "year": 2024,
@@ -21,30 +21,42 @@
    "evidencia": "Excelsior-Jaarverslag-2023-2024.pdf (balans/W&V geconsolideerde 2024)",
    "autor": "Guido",
    "fecha": "2026-10-09"
+  },
+  {
+   "pdf": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarverslag-2023-2024.pdf",
+   "campo": "fila",
+   "valor": "109.017",
+   "linea": 214,
+   "etiqueta": "resultaat deelneming",
+   "lado": "financiero",
+   "reemplaza": "resultaat deelneming",
+   "motivo": "resultado de participadas, impreso debajo del impuesto: va al financiero, no a los ingresos (como Sparta) (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": ".md L214",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
   }
  ],
  "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": null,
-   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+   "ok": true,
+   "detalle": "10.082985 = 10.082985",
+   "suma": 10.082984999999999,
+   "impreso": 10.082984999999999
   },
   {
    "nombre": "total de gastos",
-   "ok": null,
-   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+   "ok": true,
+   "detalle": "10.126333 = 10.126333",
+   "suma": 10.126332999999999,
+   "impreso": 10.126332999999999
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 2.220446049250313e-16
-  },
-  {
-   "nombre": "lectura",
-   "ok": true,
-   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+   "dif": 5.551115123125783e-17
   },
   {
    "nombre": "año anterior cargado",
@@ -54,20 +66,19 @@
   {
    "nombre": "primer año",
    "ok": true,
-   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [
-  "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
-  "la lectura base no cerraba; cerró con la lectura 4"
+  "ajuste manual: fila \"resultaat deelneming\" (financiero) 109.017, en lugar de \"resultaat deelneming\" (2026-10-19, resultado de participadas, impreso debajo del impuesto: va al financiero, no a los ingresos (como Sparta) (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19))"
  ],
  "reintentar": null,
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 10.192002,
+  "ingresos": 10.082985,
   "gastos": 10.126333,
-  "financiero": -0.018713,
+  "financiero": 0.090304,
   "impuesto": 0.409864,
   "resultadoImpreso": 0.45682,
   "resultadoParaCargar": 0.45682,
@@ -82,14 +93,6 @@
    "pagina": 9,
    "linea": 202,
    "origen": "estado"
-  },
-  {
-   "etiqueta": "resultaat deelneming",
-   "lado": "ingreso",
-   "M": 0.109017,
-   "pagina": 9,
-   "linea": 214,
-   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)"
   },
   {
    "etiqueta": "lonen en salarissen",
@@ -141,6 +144,11 @@
    "etiqueta": "financiële baten en lasten",
    "M": -0.018713,
    "linea": 211
+  },
+  {
+   "etiqueta": "resultaat deelneming",
+   "M": 0.109017,
+   "linea": 214
   }
  ],
  "impuesto": [
@@ -149,26 +157,5 @@
    "M": 0.409864,
    "linea": 213
   }
- ],
- "primerAnio": {
-  "escalon": 3,
-  "estado": "confirmado",
-  "clave": "eecdd1e32c40dbd298771b7891577d7ee5495802",
-  "rango": [
-   199,
-   218
-  ],
-  "lineasCargadas": [
-   202,
-   214,
-   204,
-   205,
-   206,
-   207,
-   208,
-   211,
-   213
-  ],
-  "user": "ESTADO DE RESULTADOS (líneas 199 a 218 del .md):\nL199: |   | 2023/2024 | 2022/2023  |\nL200: | --- | --- | --- |\nL201: |  **Opbrengsten** |  |   |\nL202: |  netto-omzet | 10.082.985 | 9.471.692  |\nL203: |  **Bedrijfskosten** |  |   |\nL204: |  lonen en salarissen | 4.879.159 | 4.190.041  |\nL205: |  sociale lasten | 690.253 | 575.409  |\nL206: |  pensioenen | 52.281 | 82.736  |\nL207: |  afschrijving vaste activa | 402.815 | 375.164  |\nL208: |  overige bedrijfskosten | 4.101.825 | 3.633.771  |\nL209: |   | 10.126.333 | 8.857.121  |\nL210: |  **Bedrijfsresultaat** | **-43.348** | **614.571**  |\nL211: |  financiële baten en lasten | -18.713 | -75.716  |\nL212: |  **Resultaat uit gewone bedrijfsvoering voor belasting** | **-62.061** | **538.855**  |\nL213: |  belastingen | 409.864 | -276.484  |\nL214: |  resultaat deelneming | 109.017 | -26.211  |\nL215: |  **Bedrijfsresultaat** | **456.820** | **236.160**  |\nL217: ![Excelsior Rotterdam logo]() EXCELSIOR  \nL218: ROTTERDAM Jaarverslag 2023/2024\n\nLO QUE SE CARGA:\n- ingreso · \"netto-omzet\" · 10.082985 · L202\n- ingreso · \"resultaat deelneming\" · 0.109017 · L214\n- gasto · \"lonen en salarissen\" · 4.879159 · L204\n- gasto · \"sociale lasten\" · 0.690253 · L205\n- gasto · \"pensioenen\" · 0.052281 · L206\n- gasto · \"afschrijving vaste activa\" · 0.402815 · L207\n- gasto · \"overige bedrijfskosten\" · 4.101825 · L208\n- financiero · \"financiële baten en lasten\" · -0.018713 · L211\n- impuesto · \"belastingen\" · 0.409864 · L213"
- }
+ ]
 }

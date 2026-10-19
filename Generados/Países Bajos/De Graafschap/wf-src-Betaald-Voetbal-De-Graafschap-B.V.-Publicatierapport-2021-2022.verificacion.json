@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Países Bajos/De Graafschap/wf-src-Betaald-Voetbal-De-Graafschap-B.V.-Publicatierapport-2021-2022.pdf",
  "md": "Clubes/Países Bajos/De Graafschap/wf-src-Betaald-Voetbal-De-Graafschap-B.V.-Publicatierapport-2021-2022.md",
- "generado": "2026-10-19T00:12:35.309Z",
+ "generado": "2026-10-19T02:27:24.046Z",
  "estado": "ok",
  "clubId": null,
  "year": 2022,
@@ -11,7 +11,19 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/De Graafschap/wf-src-Betaald-Voetbal-De-Graafschap-B.V.-Publicatierapport-2021-2022.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Resultaat vergoedingssommen",
+   "motivo": "resultado neto de traspasos impreso dentro de los costos como -51.460 (ganancia): se muda a ingreso por venta de jugadores sin cambiar el resultado; los costos sin él suman 8.772.605 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": ".md L83",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
