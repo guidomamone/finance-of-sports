@@ -17,7 +17,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Solidarnost Samara Arena","capacidad":44918,"sponsor":"Fonbet","marca":"Jögel","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814","fuenteManual":"https://www.vedomosti.ru/sport/football/articles/2025/01/03/1084766-debyut-goda-chastnii-klub-akron-vorvalsya-v-premer-ligu-i-obigral-chempiona","manual":["estadio","capacidad"]},
   },
   'baltikakaliningrad-ru': {
-    2022: {"estadio":"Arena Baltika","capacidad":35212,"temporada":"2022–23 Russian First League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1306958477"},
+    2022: {"estadio":"Arena Baltika","capacidad":35212,"sponsor":"Kaliningrad Amber Combine","temporada":"2022–23 Russian First League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1306958477","fuenteManual":"https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D0%BB%D1%82%D0%B8%D0%BA%D0%B0_(%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BB%D1%83%D0%B1)","manual":["sponsor"]},
     2023: {"estadio":"Kaliningrad Stadium","capacidad":35016,"sponsor":"Rostec","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
     2024: {"estadio":"Rostec Arena","temporada":"2024–25 Russian First League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341848735","fuenteManual":"https://www.dp.ru/a/2024/06/04/besprozvannih-dogovorilsja","manual":["estadio"]},
     2025: {"estadio":"Rostec Arena","capacidad":33399,"sponsor":"Rostec","marca":"Jako","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
@@ -92,14 +92,14 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Ak Bars Arena","capacidad":43284,"sponsor":"Kazanorgsintez","marca":"Rubin","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
   },
   'sochi-ru': {
-    2021: {"estadio":"Fisht Olympic Stadium","capacidad":47659,"marca":"Puma","temporada":"2021–22 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376304705"},
-    2022: {"estadio":"Fisht Olympic Stadium","capacidad":47659,"marca":"Puma","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016"},
+    2021: {"estadio":"Fisht Olympic Stadium","capacidad":47659,"sponsor":"sin sponsor","marca":"Puma","temporada":"2021–22 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376304705","fuenteManual":"https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D1%87%D0%B8_(%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BB%D1%83%D0%B1)","manual":["sponsor"]},
+    2022: {"estadio":"Fisht Olympic Stadium","capacidad":47659,"sponsor":"sin sponsor","marca":"Puma","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016","fuenteManual":"https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D1%87%D0%B8_(%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BB%D1%83%D0%B1)","manual":["sponsor"]},
     2023: {"estadio":"Fisht Olympic Stadium","capacidad":47659,"sponsor":"Liga Stavok","marca":"Puma","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312"},
     2024: {"estadio":"Fisht Olympic Stadium","temporada":"2024–25 Russian First League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1341848735","fuenteManual":"https://news.sportbox.ru/Vidy_sporta/Futbol/stats/stadium_1295441877","manual":["estadio"]},
     2025: {"estadio":"Fisht Olympic Stadium","capacidad":45994,"sponsor":"Betcity","marca":"Casa Sportiva","temporada":"2025–26 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380192814"},
   },
   'spartakmoscow-ru': {
-    2021: {"sponsor":"Lukoil","marca":"Nike","temporada":"2021–22 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376304705"},
+    2021: {"estadio":"Otkritie Bank Arena","capacidad":45360,"sponsor":"Lukoil","marca":"Nike","temporada":"2021–22 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376304705","fuenteManual":"https://stadiumdb.com/stadiums/rus/otkritie_arena","manual":["estadio","capacidad"]},
     2022: {"estadio":"Otkritie Bank Arena","sponsor":"Lukoil","marca":"Nike","temporada":"2022–23 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376899016","fuenteManual":"https://www.sport-express.ru/football/rfpl/news/1741358/","manual":["estadio"]},
     2023: {"estadio":"Otkritie Bank Arena","sponsor":"Lukoil","temporada":"2023–24 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377561312","fuenteManual":"https://fomag.ru/news-streem/lukoyl-podal-zayavku-na-registratsiyu-tovarnogo-znaka-lukoyl-arena/","manual":["estadio"]},
     2024: {"estadio":"Lukoil Arena","capacidad":44929,"sponsor":"Lukoil","marca":"Jögel","temporada":"2024–25 Russian Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378137266"},

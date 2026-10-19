@@ -77,4 +77,15 @@ comentario de cabecera de `data/de/monchengladbach-de-data.js` y `Admin/dudas-po
 Quedan 2 ejercicios ya bajados sin cargar (2021, 2022) y 15 años más sin bajar (2006-2020, ver
 sección de arriba).
 
-- Último chequeo: 2026-09-25.
+## Chequeo 2026-10-18 (revisión mensual): ejercicio 2025
+
+- Unternehmensregister y Bundesanzeiger no respondieron (timeout desde la terminal y desde el navegador): reintentar.
+- El ejercicio 2025 EXISTE: el CEO Stefan Stegemann presentó las cifras en la asamblea de socios de abril de 2026 (pérdida después
+  de impuestos de 3,9 M EUR; Sky: ingresos 189,31 M EUR). Prensa, solo como confirmación, no se carga:
+  https://sport.sky.de/fussball/artikel/rainer-bonhof-bricht-bei-jahreshauptversammlung-angesichts-der-lage-von-borussia-moenchengladbach-in-traenen-aus/13537304/34943
+  y https://www.flashscore.de/news/fu-ball-bundesliga-bundesliga-gladbach-macht-erneut-minus-umsatz-gestiegen/MZtdQrPi/
+- El Jahresabschluss 2025 se busca en el Unternehmensregister (razón social «Borussia VfL 1900 Mönchengladbach GmbH»); la ley
+  alemana da hasta 12 meses después del cierre para depositarlo (31/12/2026), y el club usa el plazo entero: según North Data
+  (https://www.northdata.de/Borussia+VfL+1900+M%C3%B6nchengladbach+GmbH,+M%C3%B6nchengladbach/HRB+5742) el 2024 se publicó el
+  20/01/2026 y el 2023 el 27/12/2024. El 2025 se espera hacia enero de 2027.
+- Último chequeo: 2026-10-18.

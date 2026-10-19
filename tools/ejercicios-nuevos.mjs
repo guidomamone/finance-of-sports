@@ -159,7 +159,10 @@ async function main() {
     const reales = (c.yrs || []).filter(([, t]) => t !== 'official_budget').map(([y]) => +y); if (!reales.length) continue;
     const ultimo = Math.max(...reales); const anio = ultimo + 1;
     const mmdd = c.ci?.[ultimo] || cierreDelClub(CLUBS[id], anio).slice(5);
-    const cierre = new Date(`${anio}-${mmdd}T00:00:00Z`); const debe = new Date(cierre); debe.setUTCMonth(debe.getUTCMonth() + MESES_PUBLICACION);
+    // ALEMANIA por el Unternehmensregister: la ley da 12 meses para depositar y los clubes usan el plazo entero (Gladbach: el 2024 se
+    // publicó el 20/01/2026, North Data); antes de 13 meses no tiene sentido mandarlo a revisar con el navegador
+    const porRegistroDE = String(c.c).toLowerCase() === 'de' && razonSocialDE(carpetaDe(id) || carpetaPorNombre(c.n || CLUBS[id]?.displayName));
+    const cierre = new Date(`${anio}-${mmdd}T00:00:00Z`); const debe = new Date(cierre); debe.setUTCMonth(debe.getUTCMonth() + (porRegistroDE ? 13 : MESES_PUBLICACION));
     if (debe > new Date()) { esperando.push(id); continue; }
     const fs = [...formas(anio, mmdd.startsWith('12')), `${anio}-${mmdd}`]; // también la fecha de cierre ("aarsrapport-2025-06-30.xhtml")
     const carpeta = carpetaDe(id) || carpetaPorNombre(c.n || CLUBS[id]?.displayName); const urls = carpeta ? urlsDe(carpeta) : [];
@@ -252,7 +255,7 @@ async function main() {
   }
 
   for (const e of encontrados) console.log(`NUEVO ${e.nombre} (${e.id}) ejercicio ${e.anio}: ${e.pdfs.join(' | ')}`);
-  console.log(`\n${encontrados.length} clubes con un PDF nuevo; ${aMano.length} para revisar con el navegador; ${esperando.length} todavía en plazo (cierre + ${MESES_PUBLICACION} meses); ${yaBajado.length} ya tienen el PDF en su carpeta (falta cargarlo)${sinCanal.length ? `; ${sinCanal.length} sin canal vivo (no se miran)` : ''}.`);
+  console.log(`\n${encontrados.length} clubes con un PDF nuevo; ${aMano.length} para revisar con el navegador; ${esperando.length} todavía en plazo (cierre + ${MESES_PUBLICACION} meses; 13 en el registro alemán); ${yaBajado.length} ya tienen el PDF en su carpeta (falta cargarlo)${sinCanal.length ? `; ${sinCanal.length} sin canal vivo (no se miran)` : ''}.`);
   for (const a of aMano) console.log(`  A MANO ${a.nombre} (${a.id}) ejercicio ${a.anio}: ${a.motivo}${a.urls.length ? ` — ${a.urls.join(' ; ')}` : ''}`);
   if (noPublicado.length) console.log(`  TODAVÍA NO PUBLICADO (se leyó la página o el registro): ${noPublicado.map((y) => `${y.nombre} ${y.anio}`).join(', ')}`);
   if (yaBajado.length) console.log(`  YA EN SU CARPETA, SIN CARGAR: ${yaBajado.map((y) => `${y.nombre} ${y.anio}`).join(', ')}`);

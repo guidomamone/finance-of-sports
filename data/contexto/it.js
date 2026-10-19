@@ -133,7 +133,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Juventus Stadium","capacidad":41507,"sponsor":"Save the Children","marca":"Adidas","temporada":"2024–25 Serie A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378147047"},
   },
   'juvestabia-it': {
-    2024: {"estadio":"Romeo Menti","capacidad":7642,"temporada":"2023–24 Serie C","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373083679"},
+    2024: {"estadio":"Romeo Menti","capacidad":7642,"sponsor":"Plinio Medical Center / StarCasinò Sport","temporada":"2023–24 Serie C","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373083679","fuenteManual":"https://it.wikipedia.org/wiki/Societ%C3%A0_Sportiva_Juve_Stabia_2023-2024","manual":["sponsor"]},
   },
   'lazio-it': {
     1999: {"estadio":"Stadio Olimpico","sponsor":"Cirio","marca":"Puma","temporada":"1998–99 Serie A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1367210970","fuenteLocal":"https://it.wikipedia.org/w/index.php?oldid=152229299","local":["estadio"]},
@@ -155,7 +155,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2017: {"estadio":"Stadio Olimpico","capacidad":72698,"sponsor":"Libera. Associazioni, nomi e numeri contro le mafie","marca":"Macron","temporada":"2016–17 Serie A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1379045945"},
     2018: {"estadio":"Stadio Olimpico","capacidad":70634,"sponsor":"Sèleco","marca":"Macron","temporada":"2017–18 Serie A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380540717"},
     2019: {"estadio":"Stadio Olimpico","capacidad":72698,"sponsor":"Marathonbet","marca":"Macron","temporada":"2018–19 Serie A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380540864"},
-    2020: {"estadio":"Stadio Olimpico","capacidad":70634,"marca":"Macron","temporada":"2019–20 Serie A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375932850"},
+    2020: {"estadio":"Stadio Olimpico","capacidad":70634,"sponsor":"sin sponsor","marca":"Macron","temporada":"2019–20 Serie A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375932850","fuenteManual":"https://it.wikipedia.org/wiki/Societ%C3%A0_Sportiva_Lazio_2019-2020","manual":["sponsor"]},
     2021: {"estadio":"Stadio Olimpico","capacidad":70634,"sponsor":"World Food Programme","marca":"Macron","temporada":"2020–21 Serie A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375819828"},
     2022: {"estadio":"Stadio Olimpico","capacidad":70634,"sponsor":"Binance","marca":"Macron","temporada":"2021–22 Serie A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376310118"},
     2023: {"estadio":"Stadio Olimpico","capacidad":70634,"sponsor":"Binance","marca":"Mizuno","temporada":"2022–23 Serie A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372820637"},
@@ -179,8 +179,8 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Stadio Diego Armando Maradona","capacidad":54732,"sponsor":"MSC Cruises","marca":"EA7","temporada":"2024–25 Serie A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378147047"},
   },
   'parma-it': {
-    2016: {"estadio":"Stadio Ennio Tardini","capacidad":27906,"temporada":"2015–16 Serie D","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380733677"},
-    2017: {"estadio":"Stadio Ennio Tardini","capacidad":27906,"temporada":"2016–17 Lega Pro","fuente":"https://en.wikipedia.org/w/index.php?oldid=1296170953"},
+    2016: {"estadio":"Stadio Ennio Tardini","capacidad":27906,"sponsor":"Navigare","temporada":"2015–16 Serie D","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380733677","fuenteManual":"https://www.calcioefinanza.it/?p=12452","manual":["sponsor"]},
+    2017: {"estadio":"Stadio Ennio Tardini","capacidad":27906,"sponsor":"Aon / Folletto","temporada":"2016–17 Lega Pro","fuente":"https://en.wikipedia.org/w/index.php?oldid=1296170953","fuenteManual":"https://it.wikipedia.org/wiki/Parma_Calcio_1913_2016-2017","manual":["sponsor"]},
     2018: {"estadio":"Stadio Ennio Tardini","capacidad":27906,"sponsor":"Aon","marca":"Erreà","temporada":"2017–18 Serie B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1374247576"},
     2019: {"estadio":"Stadio Ennio Tardini","capacidad":27906,"sponsor":"Cetilar","marca":"Erreà","temporada":"2018–19 Serie A","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380540864"},
     2021: {"estadio":"Stadio Ennio Tardini","capacidad":27906,"sponsor":"Cetilar, Gravity Sport","marca":"Erreà","temporada":"2021–22 Serie B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376310435"},

@@ -12,7 +12,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2023: {"estadio":"Tres de Febrero","capacidad":12500,"sponsor":"Magazzino","marca":"Sport Lyon","temporada":"2023 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1316703963","club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=175451630","marca":"https://es.wikipedia.org/w/index.php?oldid=175451630"}},
   },
   'argentinosjuniors': {
-    2015: {"sponsor":"Provincia NET","marca":"Joma","temporada":"2015 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372460557"},
+    2015: {"estadio":"Diego Armando Maradona","sponsor":"Provincia NET","marca":"Joma","temporada":"2015 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372460557","fuenteManual":"https://en.wikipedia.org/wiki/2014_Primera_B_Nacional","manual":["estadio"]},
     2016: {"estadio":"Diego Armando Maradona","capacidad":25500,"sponsor":"Autocrédito","marca":"Joma","temporada":"2016 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373111774"},
     2017: {"estadio":"Diego Armando Maradona","capacidad":380,"sponsor":"Autocrédito","marca":"Macron","temporada":"2016–17 Primera B Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1174497719","fuenteLocal":"https://es.wikipedia.org/w/index.php?oldid=172229349","local":["estadio","capacidad"],"club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=175811618","marca":"https://es.wikipedia.org/w/index.php?oldid=175811618"}},
     2018: {"estadio":"Diego Armando Maradona","capacidad":25000,"sponsor":"Autocrédito","marca":"Reusch","temporada":"2017–18 Superliga Argentina","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375639843"},
@@ -34,7 +34,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'ferrocarriloeste-ar': {
     2022: {"estadio":"Ricardo Etcheverry","capacidad":24442,"sponsor":"Avalian","temporada":"2022 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1345354861","club":{"sponsor":"https://es.wikipedia.org/w/index.php?oldid=175881249"}},
-    2023: {"estadio":"Ricardo Etcheverri","capacidad":24442,"temporada":"2023 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1316703963"},
+    2023: {"estadio":"Ricardo Etcheverri","capacidad":24442,"sponsor":"Avalian (hasta 2022) / Lepore","temporada":"2023 Primera Nacional","fuente":"https://en.wikipedia.org/w/index.php?oldid=1316703963","fuenteManual":"https://es.wikipedia.org/wiki/Club_Ferro_Carril_Oeste","manual":["sponsor"]},
   },
   'gimnasiaesgrima-ar': {
     2023: {"estadio":"Juan Carmelo Zerillo","capacidad":24544,"sponsor":"RapiCuota$","marca":"Givova","temporada":"2023 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353274459"},
@@ -66,7 +66,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2012: {"estadio":"Presidente Juan Domingo Perón","capacidad":51389,"sponsor":"Banco Hipotecario","marca":"Olympikus","temporada":"2011–12 Argentine Primera División season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377837855"},
     2013: {"estadio":"Presidente Juan Domingo Perón","capacidad":55389,"sponsor":"Banco Hipotecario","marca":"Olympikus","temporada":"2012–13 Argentine Primera División season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371270338"},
     2014: {"estadio":"Presidente Juan Domingo Perón","capacidad":55389,"sponsor":"Banco Hipotecario","marca":"Topper","temporada":"2014 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371814754"},
-    2015: {"sponsor":"Banco Hipotecario","marca":"Topper","temporada":"2015 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372460557"},
+    2015: {"estadio":"Presidente Juan Domingo Perón","capacidad":55389,"sponsor":"Banco Hipotecario","marca":"Topper","temporada":"2015 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372460557","fuenteManual":"https://en.wikipedia.org/wiki/2014_Argentine_Primera_Divisi%C3%B3n","manual":["estadio","capacidad"]},
     2016: {"estadio":"Presidente Juan Domingo Perón","capacidad":55389,"sponsor":"RCA","marca":"Topper","temporada":"2016 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373111774"},
     2017: {"estadio":"Presidente Juan Domingo Perón","capacidad":55389,"sponsor":"RCA","marca":"Topper","temporada":"2016–17 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376662029"},
     2018: {"estadio":"Presidente Juan Domingo Perón","capacidad":55389,"sponsor":"RCA","marca":"Kappa","temporada":"2017–18 Superliga Argentina","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375639843"},
@@ -90,7 +90,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2012: {"estadio":"Pedro Bidegain","capacidad":43494,"sponsor":"La Nueva Seguros","marca":"Lotto","temporada":"2011–12 Argentine Primera División season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377837855"},
     2013: {"estadio":"Pedro Bidegain","capacidad":39494,"sponsor":"Banco Ciudad","marca":"Lotto","temporada":"2012–13 Argentine Primera División season","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371270338"},
     2014: {"estadio":"Pedro Bidegain","capacidad":39494,"sponsor":"Banco Ciudad","marca":"Lotto","temporada":"2014 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371814754"},
-    2015: {"sponsor":"Banco Ciudad","marca":"Nike","temporada":"2015 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372460557"},
+    2015: {"estadio":"Pedro Bidegain (Nuevo Gasómetro)","capacidad":39494,"sponsor":"Banco Ciudad","marca":"Nike","temporada":"2015 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372460557","fuenteManual":"https://en.wikipedia.org/wiki/2014_Argentine_Primera_Divisi%C3%B3n","manual":["estadio","capacidad"]},
     2016: {"estadio":"Pedro Bidegain","capacidad":39494,"sponsor":"Banco Ciudad","marca":"Nike","temporada":"2016 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373111774"},
     2017: {"estadio":"Pedro Bidegain","capacidad":39494,"sponsor":"Banco Ciudad","marca":"Nike","temporada":"2016–17 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376662029"},
     2024: {"estadio":"Pedro Bidegain","capacidad":47964,"sponsor":"Brubank","marca":"Nike","temporada":"2024 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1365223058"},
@@ -106,7 +106,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"15 de Abril","capacidad":22852,"sponsor":"OSPAT","marca":"Givova","temporada":"2025 AFA Liga Profesional de Fútbol","fuente":"https://en.wikipedia.org/w/index.php?oldid=1371131086"},
   },
   'velez': {
-    2015: {"sponsor":"Hitachi","marca":"Umbro","temporada":"2015 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372460557"},
+    2015: {"estadio":"José Amalfitani","capacidad":45540,"sponsor":"Hitachi","marca":"Umbro","temporada":"2015 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372460557","fuenteManual":"https://en.wikipedia.org/wiki/2014_Argentine_Primera_Divisi%C3%B3n","manual":["estadio","capacidad"]},
     2016: {"estadio":"José Amalfitani","capacidad":45540,"sponsor":"Hitachi","marca":"Umbro","temporada":"2016 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373111774"},
     2017: {"estadio":"José Amalfitani","capacidad":45540,"sponsor":"Hitachi","marca":"Umbro","temporada":"2016–17 Argentine Primera División","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376662029"},
     2018: {"estadio":"José Amalfitani","capacidad":45540,"sponsor":"Hitachi","marca":"Umbro","temporada":"2017–18 Superliga Argentina","fuente":"https://en.wikipedia.org/w/index.php?oldid=1375639843"},

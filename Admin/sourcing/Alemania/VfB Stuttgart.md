@@ -69,4 +69,13 @@ transcriptos se cargaron a `data/de/stuttgart-de-data.js`.
   ejercicios) — no hay "presidente" en el sentido argentino, VfB Stuttgart 1893 AG es sociedad
   anónima con Vorstand + Aufsichtsrat.
 
-- Último chequeo: 2026-09-22.
+## Chequeo 2026-10-18 (revisión mensual): ejercicio 2025
+
+- Unternehmensregister y Bundesanzeiger no respondieron (timeout desde la terminal y desde el navegador): reintentar.
+- El ejercicio 2025 de la VfB Stuttgart 1893 AG EXISTE: Alexander Wehrle presentó en la asamblea de socios de 2026 un Gesamtertrag
+  de 383,6 M EUR, ganancia después de impuestos de 22,5 M EUR y patrimonio de 83,4 M EUR. Prensa, solo como confirmación, no se carga:
+  https://www.flashscore.de/news/vfb-prasentiert-rekordzahlen-wachstum-und-profitablitat/jXwdzVnC/ y
+  https://www.stuttgarter-zeitung.de/sport/vfb-stuttgart/vfb-stuttgart-die-zahlen-stimmen-der-vfb-praesentiert-ein-rekordergebnis-79331547.html
+- vfb.de no publica el Konzernabschluss en PDF (solo la nota de la asamblea): el documento se busca en el Unternehmensregister
+  («VfB Stuttgart 1893 AG»), con plazo legal hasta el 31/12/2026.
+- Último chequeo: 2026-10-18.

@@ -25,3 +25,25 @@ Lo anterior al merge del 2026-10-18 ya pasó a TODO y CHANGELOG (copia en `Admin
 - "Estadio, capacidad, sponsor…": la página del club ya es la tercera fuente para sponsor y marca (`--camisetas`), escrita.
 
 ## Después del merge de las camisetas (2026-10-18)
+
+### Qué cambió (CHANGELOG)
+
+- **273 (a): 52 datos a mano con fuente** en `tools/contexto-manual.json` (pedido de Guido: que los busque Claude). Cinco subagentes
+  Sonnet buscaron sponsor y estadio por temporada con cita; se revisó todo antes de cargar: lo que venía solo de un resumen de buscador
+  de footballkitarchive (que pide verificación anti-bot) se confirmó con una segunda fuente o quedó afuera (Torreense 2022, Fortaleza
+  CEIF 2023, Lierse 2025); AEL Larissa, verificado en el wikitext de su página (revisión 1380860630). "sin sponsor" (la convención del
+  archivo) solo donde la fuente lo dice: Fortaleza CEIF 2017, Lazio 2020, Sochi 2021-2022, AEL 2017-2018, Harju 2025; no donde la tabla
+  solo deja la celda en blanco (Kuressaare, Tammeka, Levadiakos 2019). Ejercicios sin estadio o sin sponsor: 110 → 80 (estadio 100%,
+  sponsor 92%). ASSET_V 1312.
+- **252: Gladbach y Stuttgart.** El ejercicio 2025 de los dos existe (cifras presentadas en las asambleas de 2026; prensa anotada en
+  sus notas de sourcing solo como confirmación), pero el registro alemán publica a los ~13 meses del cierre (Gladbach 2024: 20/01/2026
+  según North Data), así que todavía no está. `tools/ejercicios-nuevos.mjs` espera 13 meses para los clubes que van por el
+  Unternehmensregister (antes los mandaba "a revisar" a los 4).
+
+### Qué queda (TODO)
+
+- 273 (a): 80 ejercicios sin sponsor, sin fuente que lo nombre (Ferroviária, Novorizontino, Goiás, Orenburg, Felgueiras, rusos y
+  estonios de ascenso...); `node tools/estadio-sponsor.mjs --ensayo --detalle`. Akron 2022 (1xStavka) y Baltika 2024 (Rostec) tienen
+  sponsor con fuente pero no entran: ya tienen entrada manual por el estadio con otra fuente, y una entrada lleva una sola. Mejora
+  posible: fuente por campo en `contexto-manual.json`.
+- 252: Gladbach y Stuttgart 2025, en el Unternehmensregister desde enero de 2027.
