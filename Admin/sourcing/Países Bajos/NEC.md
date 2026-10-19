@@ -21,3 +21,5 @@ Todos PDF reales ("Rapport inzake jaarstukken").
 - Ninguna abierta. Buen resultado, la página de descargas no listaba nada anterior a 2013/14 (no
   se buscó fuera de esa página).
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2024 desde `Clubes/Países Bajos/NEC/NEC-Holding-Jaarrekening-2023-2024.pdf` (sourceId `nec-nl-holding-jaarrekening-2023-2024`).
