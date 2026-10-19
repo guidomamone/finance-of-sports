@@ -107,6 +107,9 @@ window.RANKINGS["gb-premierleague"] = {
     leagueSize: 20,
     wiki: {"t":"2022–23 Premier League","lang":"en","at":"2026-09-30","n":20},
     clubs: [
+      { id:"chelsea-gb", revenue:867.677, reportType:"official_balance_sheet",
+        sourceId:"chelsea-gb-fc-holdings-group-accounts-2022-23",
+        mix:[["Comercial / Sponsors",267.101],["Estadio",97.238],["Televisión",287.212],["Venta de Jugadores",79.921],["Otros ingresos",136.205]] },
       { id:"arsenal-gb", revenue:591.711, reportType:"official_balance_sheet",
         sourceId:"arsenal-gb-holdings-group-accounts-2022-23",
         mix:[["Venta de Jugadores",13.301],["Fútbol profesional (sin desglosar por la fuente)",578.409]],
