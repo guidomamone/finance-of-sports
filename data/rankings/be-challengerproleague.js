@@ -97,6 +97,9 @@ window.RANKINGS["be-challengerproleague"] = {
       { id:"ohleuven-be", revenue:3.189, reportType:"official_balance_sheet",
         sourceId:"ohleuven-be-jaarrekening-2019-06-30-individual",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.749],["Otros ingresos",1.44]] },
+      { id:"lommelsk-be", revenue:1.585, reportType:"official_balance_sheet",
+        sourceId:"lommelsk-be-jaarrekening-2019-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.585]] },
     ],
   },
   2016: {
