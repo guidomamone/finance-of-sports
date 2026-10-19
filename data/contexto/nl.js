@@ -40,4 +40,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2024: {"estadio":"Philips Stadion","capacidad":36500,"sponsor":"Metropoolregio Brainport Eindhoven","marca":"Puma","temporada":"2023–24 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377460717"},
     2025: {"estadio":"Philips Stadion","capacidad":36500,"sponsor":"Metropoolregio Brainport Eindhoven","marca":"Puma","temporada":"2024–25 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378045333"},
   },
+  'spartarotterdam-nl': {
+    2024: {"estadio":"Spartastadion Het Kasteel","capacidad":11000,"sponsor":"De Goudse Verzekeringen, D&S Group","marca":"Robey","temporada":"2023–24 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377460717"},
+  },
 });

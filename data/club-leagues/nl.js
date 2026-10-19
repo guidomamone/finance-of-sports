@@ -12,4 +12,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'heraclesalmelo-nl': { 2025: 'nl-eredivisie' },
   'nacbreda-nl': { 2025: 'nl-eredivisie' },
   'nec-nl': { 2024: 'nl-eredivisie' },
+  'spartarotterdam-nl': { 2024: 'nl-eredivisie' },
 });

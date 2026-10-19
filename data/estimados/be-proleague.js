@@ -1,5 +1,5 @@
 // GENERADO por tools/estimar.mjs: no editar a mano. ESTIMACIONES, no datos reales: ingreso en millones de USD del año, rango del 80% (lo-hi) y error mediano medido (%).
 window.ESTIMADOS = window.ESTIMADOS || {};
 window.ESTIMADOS["be-proleague"] = {
-  2025: [{"n":"Kortrijk","revenue":26.125,"lo":8.686,"hi":79.805,"caso":"nuevo","error":49,"de":[]}],
+  2025: [{"n":"Kortrijk","revenue":26.048,"lo":8.753,"hi":80.502,"caso":"nuevo","error":48,"de":[]}],
 };
