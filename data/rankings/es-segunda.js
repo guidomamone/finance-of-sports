@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["es-segunda"] = {
   2025: {
-    leagueSize: null,
+    leagueSize: 22,
     wiki: {"t":"2024–25 Segunda División","lang":"en","at":"2026-10-17","n":22},
     clubs: [
       { id:"realoviedo-es", revenue:29.491, reportType:"official_balance_sheet",
@@ -17,7 +17,7 @@ window.RANKINGS["es-segunda"] = {
     ],
   },
   2024: {
-    leagueSize: null,
+    leagueSize: 22,
     wiki: {"t":"2023–24 Segunda División","lang":"en","at":"2026-10-17","n":22},
     clubs: [
       { id:"espanyol-es", revenue:46.121, reportType:"official_balance_sheet",
@@ -29,7 +29,7 @@ window.RANKINGS["es-segunda"] = {
     ],
   },
   2020: {
-    leagueSize: null,
+    leagueSize: 22,
     wiki: {"t":"2019–20 Segunda División","lang":"en","at":"2026-10-17","n":22},
     clubs: [
       { id:"girona-es", revenue:30.13, reportType:"official_balance_sheet",

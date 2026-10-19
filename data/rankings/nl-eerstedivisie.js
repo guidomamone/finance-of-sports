@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["nl-eerstedivisie"] = {
   2025: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2024–25 Eerste Divisie","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"adodenhaag-nl", revenue:17.072, reportType:"official_balance_sheet",
@@ -38,7 +38,7 @@ window.RANKINGS["nl-eerstedivisie"] = {
     ],
   },
   2022: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2021–22 Eerste Divisie","lang":"en","at":"2026-10-19","n":20},
     clubs: [
       { id:"degraafschap-nl", revenue:8.646, reportType:"official_balance_sheet",

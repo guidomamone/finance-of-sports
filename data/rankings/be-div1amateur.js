@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["be-div1amateur"] = {
   2024: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2023–24 Belgian National Division 1","lang":"en","at":"2026-10-19","n":18},
     clubs: [
       { id:"lokerentemse-be", revenue:1.059, reportType:"official_balance_sheet",
@@ -11,7 +11,7 @@ window.RANKINGS["be-div1amateur"] = {
     ],
   },
   2020: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2019–20 Belgian First Amateur Division","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"patroeisden-be", revenue:0.311, reportType:"official_balance_sheet",
@@ -20,7 +20,7 @@ window.RANKINGS["be-div1amateur"] = {
     ],
   },
   2018: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2017–18 Belgian First Amateur Division","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"patroeisden-be", revenue:0.367, reportType:"official_balance_sheet",
@@ -29,7 +29,7 @@ window.RANKINGS["be-div1amateur"] = {
     ],
   },
   2017: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2016–17 Belgian First Amateur Division","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"patroeisden-be", revenue:0.565, reportType:"official_balance_sheet",

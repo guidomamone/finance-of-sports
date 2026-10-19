@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["dk-superliga"] = {
   2024: {
-    leagueSize: null,
+    leagueSize: 12,
     wiki: {"t":"2023–24 Danish Superliga","lang":"en","at":"2026-10-17","n":12},
     clubs: [
       { id:"fckobenhavn-dk", revenue:105.106, reportType:"official_balance_sheet",
@@ -23,7 +23,7 @@ window.RANKINGS["dk-superliga"] = {
     ],
   },
   2023: {
-    leagueSize: null,
+    leagueSize: 12,
     wiki: {"t":"2022–23 Danish Superliga","lang":"en","at":"2026-10-17","n":12},
     clubs: [
       { id:"randers-dk", revenue:9.068, reportType:"official_balance_sheet",
@@ -32,7 +32,7 @@ window.RANKINGS["dk-superliga"] = {
     ],
   },
   2022: {
-    leagueSize: null,
+    leagueSize: 12,
     wiki: {"t":"2021–22 Danish Superliga","lang":"en","at":"2026-10-17","n":12},
     clubs: [
       { id:"sonderjyske-dk", revenue:3.024, reportType:"official_balance_sheet",
@@ -41,7 +41,7 @@ window.RANKINGS["dk-superliga"] = {
     ],
   },
   2021: {
-    leagueSize: null,
+    leagueSize: 12,
     wiki: {"t":"2020–21 Danish Superliga","lang":"en","at":"2026-10-17","n":12},
     clubs: [
       { id:"agf-dk", revenue:30.096, reportType:"official_balance_sheet",
@@ -58,7 +58,7 @@ window.RANKINGS["dk-superliga"] = {
     ],
   },
   2019: {
-    leagueSize: null,
+    leagueSize: 14,
     wiki: {"t":"2018–19 Danish Superliga","lang":"en","at":"2026-10-17","n":14},
     clubs: [
       { id:"midtjylland-dk", revenue:41.15, reportType:"official_balance_sheet",

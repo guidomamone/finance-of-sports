@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["br-paulistaA1"] = {
   2017: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2017 Campeonato Paulista","lang":"en","at":"2026-10-03","n":16},
     clubs: [
       { id:"ferroviaria-br", revenue:2.713, reportType:"official_balance_sheet",
@@ -15,7 +15,7 @@ window.RANKINGS["br-paulistaA1"] = {
     ],
   },
   2016: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2016 Campeonato Paulista","lang":"en","at":"2026-10-03","n":20},
     clubs: [
       { id:"ferroviaria-br", revenue:2.826, reportType:"official_balance_sheet",

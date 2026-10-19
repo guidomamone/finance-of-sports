@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["ar-primerab"] = {
   2021: {
-    leagueSize: null,
+    leagueSize: 17,
     wiki: {"t":"Campeonato de Primera B 2021 (Argentina)","lang":"es","at":"2026-10-18","n":17},
     clubs: [
       { id:"losandes-ar", revenue:1.311, reportType:"official_balance_sheet",
@@ -11,7 +11,7 @@ window.RANKINGS["ar-primerab"] = {
     ],
   },
   2020: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"Campeonato de Primera B 2019-20 (Argentina)","lang":"es","at":"2026-10-18","n":18},
     clubs: [
       { id:"losandes-ar", revenue:1.375, reportType:"official_balance_sheet",

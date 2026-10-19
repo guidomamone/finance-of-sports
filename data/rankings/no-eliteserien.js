@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["no-eliteserien"] = {
   2025: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2025 Eliteserien","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"viking-no", revenue:26.603, reportType:"official_balance_sheet",
@@ -20,7 +20,7 @@ window.RANKINGS["no-eliteserien"] = {
     ],
   },
   2024: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2024 Eliteserien","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"sarpsborg08-no", revenue:17.945, reportType:"official_balance_sheet",
@@ -33,7 +33,7 @@ window.RANKINGS["no-eliteserien"] = {
     ],
   },
   2023: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2023 Eliteserien","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"sarpsborg08-no", revenue:14.406, reportType:"official_balance_sheet",
@@ -42,7 +42,7 @@ window.RANKINGS["no-eliteserien"] = {
     ],
   },
   2022: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2022 Eliteserien","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"sarpsborg08-no", revenue:10.794, reportType:"official_balance_sheet",
@@ -51,7 +51,7 @@ window.RANKINGS["no-eliteserien"] = {
     ],
   },
   2021: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2021 Eliteserien","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"sarpsborg08-no", revenue:9.227, reportType:"official_balance_sheet",
@@ -60,7 +60,7 @@ window.RANKINGS["no-eliteserien"] = {
     ],
   },
   2020: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2020 Eliteserien","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"sarpsborg08-no", revenue:10.843, reportType:"official_balance_sheet",
@@ -69,7 +69,7 @@ window.RANKINGS["no-eliteserien"] = {
     ],
   },
   2019: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2019 Eliteserien","lang":"en","at":"2026-09-28","n":16},
     clubs: [
       { id:"sarpsborg08-no", revenue:10.834, reportType:"official_balance_sheet",
@@ -78,7 +78,7 @@ window.RANKINGS["no-eliteserien"] = {
     ],
   },
   2018: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2018 Eliteserien","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"sarpsborg08-no", revenue:19.261, reportType:"official_balance_sheet",
@@ -87,7 +87,7 @@ window.RANKINGS["no-eliteserien"] = {
     ],
   },
   2017: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2017 Eliteserien","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"sarpsborg08-no", revenue:9.869, reportType:"official_balance_sheet",
@@ -96,7 +96,7 @@ window.RANKINGS["no-eliteserien"] = {
     ],
   },
   2016: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2016 Eliteserien","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"sarpsborg08-no", revenue:6.545, reportType:"official_balance_sheet",
@@ -105,7 +105,7 @@ window.RANKINGS["no-eliteserien"] = {
     ],
   },
   2015: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2015 Tippeligaen","lang":"en","at":"2026-09-30","n":16},
     clubs: [
       { id:"sarpsborg08-no", revenue:5.242, reportType:"official_balance_sheet",
@@ -114,7 +114,7 @@ window.RANKINGS["no-eliteserien"] = {
     ],
   },
   2014: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2014 Eliteserien","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"sarpsborg08-no", revenue:6.076, reportType:"official_balance_sheet",

@@ -9,6 +9,11 @@
   (`--club fredrikstad-no --anio 2012 --liga no-eliteserien --cierre 12-31`). Sarpsborg 08 no se tocó.
 - 195: Fortaleza 2025 con el CEO Pedro Martins (decisión de Guido) en `data/gestiones/br.js`, desde 2025-12-28 (el club lo confirmó ese día) y `firmo: [2025]`
   porque una nota habla del 2026-01-03 como inicio formal; Barreira y Cals dejan de cargarse. Nota en `Admin/carga-clubes/fortaleza-br.md`. ASSET_V 1398.
+- 273: la skill `club-or-year-onboarding` (sección 6) nombra la compuerta de estadio y sponsor, con el texto aprobado por Guido. Para `PIPELINE.md`
+  no hubo cambio: lo vigente ya figura ahí. Falta (de 273): completar a mano los ejercicios sin estadio o sponsor y que `generate-sponsors.js` sume
+  `contexto-manual.json`: siguen en el TODO.
+- 309: `generate-rankings.js` usa `wiki.n` como `leagueSize` cuando no hay tamaño verificado (decisión de Guido, listas raras incluidas). 289 liga-años
+  con "N de los M" (eran 4). Visto en el preview (Primera Nacional 2023: "2 of the 34 clubs of the season", "Missing 32 of the 34"). ASSET_V 1399.
 - `node tools/gestiones-tanda.mjs --armar`: 0 casos de gestión pendientes en la cola, no se armó tanda.
 
 ### Qué queda (para TODO)
@@ -17,8 +22,9 @@
 - 195: borrar el punto de Fortaleza. Falta del club la fecha exacta de asunción de Martins (ya en la nota del club).
 - 282: Hamburgo 2024 espera el PDF del Bestätigungsvermerk del ejercicio 2023/24 (captcha de Guido); después se transcribe y se carga la línea de
   `Admin/registros/auditoria.jsonl`. La (f) es de Pipeline 4.
-- 273 y 309: diseño mostrado a Guido, esperan su confirmación del texto / de `wiki.n` como respaldo de `leagueSize` (223 liga-años); no se tocó nada.
+- 309: borrar el punto. Si una lista cuenta mal (Chile 2021, Perú, Colombia B, Grecia 2), el tamaño sale mal: corregir en `LEAGUE_SIZE_BY_YEAR`, que manda.
 
 ### Qué deja de ser cierto en ESTADO
 
-- Nada de ESTADO cambia todavía; cuando se cargue Fredrikstad 2012 y se resuelva el 309, `ESTADO-clubes.md` se regenera solo.
+- Si ESTADO dice que el tamaño de la liga "no está verificado" en la mayoría de las liga-temporadas, ya no: sale de la lista de Wikipedia cuando no hay verificado.
+- `ESTADO-clubes.md` se regenera solo cuando se cargue Fredrikstad 2012.

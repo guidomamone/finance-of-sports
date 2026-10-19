@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["de-bundesliga"] = {
   2025: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2024–25 Bundesliga","lang":"en","at":"2026-10-17","n":18},
     clubs: [
       { id:"bayernmunich-de", revenue:1085.912, reportType:"official_balance_sheet",
@@ -29,7 +29,7 @@ window.RANKINGS["de-bundesliga"] = {
     ],
   },
   2024: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2023–24 Bundesliga","lang":"en","at":"2026-10-17","n":18},
     clubs: [
       { id:"bayernmunich-de", revenue:972.689, reportType:"official_balance_sheet",
@@ -65,7 +65,7 @@ window.RANKINGS["de-bundesliga"] = {
     ],
   },
   2023: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2022–23 Bundesliga","lang":"en","at":"2026-10-17","n":18},
     clubs: [
       { id:"bayernmunich-de", revenue:888.08, reportType:"official_balance_sheet",
@@ -87,7 +87,7 @@ window.RANKINGS["de-bundesliga"] = {
     ],
   },
   2022: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2021–22 Bundesliga","lang":"en","at":"2026-10-17","n":18},
     clubs: [
       { id:"rbleipzig-de", revenue:359.936, reportType:"official_balance_sheet",
@@ -96,7 +96,7 @@ window.RANKINGS["de-bundesliga"] = {
     ],
   },
   2021: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2020–21 Bundesliga","lang":"en","at":"2026-10-17","n":18},
     clubs: [
       { id:"bayernmunich-de", revenue:765.181, reportType:"official_balance_sheet",

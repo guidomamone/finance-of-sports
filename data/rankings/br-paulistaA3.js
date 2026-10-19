@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["br-paulistaA3"] = {
   2014: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"Campeonato Paulista de Futebol de 2014 - Série A3","lang":"pt","at":"2026-10-03","n":20},
     clubs: [
       { id:"novorizontino-br", revenue:0.399, reportType:"official_balance_sheet",
@@ -11,7 +11,7 @@ window.RANKINGS["br-paulistaA3"] = {
     ],
   },
   2013: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"Campeonato Paulista de Futebol de 2013 - Série A3","lang":"pt","at":"2026-10-03","n":20},
     clubs: [
       { id:"novorizontino-br", revenue:0.731, reportType:"official_balance_sheet",
@@ -20,7 +20,7 @@ window.RANKINGS["br-paulistaA3"] = {
     ],
   },
   2010: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"Campeonato Paulista de Futebol de 2010 - Série A3","lang":"pt","at":"2026-10-18","n":20},
     clubs: [
       { id:"ferroviaria-br", revenue:0.949, reportType:"official_balance_sheet",

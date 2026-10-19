@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["no-1divisjon"] = {
   2025: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2025 Norwegian First Division","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"aalesund-no", revenue:6.988, reportType:"official_balance_sheet",
@@ -11,7 +11,7 @@ window.RANKINGS["no-1divisjon"] = {
     ],
   },
   2017: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2017 Norwegian First Division","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"fredrikstad-no", revenue:3.468, reportType:"official_balance_sheet",
@@ -20,7 +20,7 @@ window.RANKINGS["no-1divisjon"] = {
     ],
   },
   2016: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2016 Norwegian First Division","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"fredrikstad-no", revenue:3.921, reportType:"official_balance_sheet",
@@ -29,7 +29,7 @@ window.RANKINGS["no-1divisjon"] = {
     ],
   },
   2015: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2015 Norwegian First Division","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"fredrikstad-no", revenue:3.653, reportType:"official_balance_sheet",
@@ -38,7 +38,7 @@ window.RANKINGS["no-1divisjon"] = {
     ],
   },
   2014: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2014 Norwegian First Division","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"fredrikstad-no", revenue:4.085, reportType:"official_balance_sheet",
@@ -47,7 +47,7 @@ window.RANKINGS["no-1divisjon"] = {
     ],
   },
   2013: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2013 Norwegian First Division","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"fredrikstad-no", revenue:2.561, reportType:"official_balance_sheet",
@@ -56,7 +56,7 @@ window.RANKINGS["no-1divisjon"] = {
     ],
   },
   2012: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2012 Norwegian First Division","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"sarpsborg08-no", revenue:4.8, reportType:"official_balance_sheet",

@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["pt-ligaportugal2"] = {
   2025: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2024–25 Liga Portugal 2","lang":"en","at":"2026-09-30","n":18},
     clubs: [
       { id:"portimonense-pt", revenue:11.211, reportType:"official_balance_sheet",
@@ -34,7 +34,7 @@ window.RANKINGS["pt-ligaportugal2"] = {
     ],
   },
   2024: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2023–24 Liga Portugal 2","lang":"en","at":"2026-09-30","n":18},
     clubs: [
       { id:"torreense-pt", revenue:8.736, reportType:"official_balance_sheet",
@@ -78,7 +78,7 @@ window.RANKINGS["pt-ligaportugal2"] = {
     ],
   },
   2023: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2022–23 Liga Portugal 2","lang":"en","at":"2026-10-09","n":18},
     clubs: [
       { id:"torreense-pt", revenue:6.002, reportType:"official_balance_sheet",
@@ -109,7 +109,7 @@ window.RANKINGS["pt-ligaportugal2"] = {
     ],
   },
   2022: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2021–22 Liga Portugal 2","lang":"en","at":"2026-09-30","n":18},
     clubs: [
       { id:"rioave-pt", revenue:7.101, reportType:"official_balance_sheet",
@@ -136,7 +136,7 @@ window.RANKINGS["pt-ligaportugal2"] = {
     ],
   },
   2021: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2020–21 Liga Portugal 2","lang":"en","at":"2026-09-30","n":18},
     clubs: [
       { id:"avs-pt", revenue:1.071, reportType:"official_balance_sheet",
@@ -145,7 +145,7 @@ window.RANKINGS["pt-ligaportugal2"] = {
     ],
   },
   2019: {
-    leagueSize: null,
+    leagueSize: 18,
     wiki: {"t":"2018–19 LigaPro","lang":"en","at":"2026-10-15","n":18},
     clubs: [
       { id:"famalicao-pt", revenue:1.988, reportType:"official_balance_sheet",

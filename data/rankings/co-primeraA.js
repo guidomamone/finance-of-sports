@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["co-primeraA"] = {
   2025: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2025 Liga DIMAYOR","lang":"en","at":"2026-09-30","n":20},
     clubs: [
       { id:"atlnacional-co", revenue:52.403, reportType:"official_balance_sheet",
@@ -38,7 +38,7 @@ window.RANKINGS["co-primeraA"] = {
     ],
   },
   2024: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2024 Liga DIMAYOR","lang":"en","at":"2026-10-17","n":20},
     clubs: [
       { id:"oncecaldas", revenue:6.117, reportType:"official_balance_sheet",
@@ -53,7 +53,7 @@ window.RANKINGS["co-primeraA"] = {
     ],
   },
   2023: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2023 Liga DIMAYOR","lang":"en","at":"2026-09-28","n":20},
     clubs: [
       { id:"oncecaldas", revenue:6.766, reportType:"official_balance_sheet",
@@ -62,7 +62,7 @@ window.RANKINGS["co-primeraA"] = {
     ],
   },
   2022: {
-    leagueSize: null,
+    leagueSize: 20,
     wiki: {"t":"2022 Liga DIMAYOR","lang":"en","at":"2026-09-28","n":20},
     clubs: [
       { id:"oncecaldas", revenue:12.33, reportType:"official_balance_sheet",

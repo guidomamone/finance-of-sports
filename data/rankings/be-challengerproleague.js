@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["be-challengerproleague"] = {
   2025: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2024–25 Challenger Pro League","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"rwdm-be", revenue:17.785, reportType:"official_balance_sheet",
@@ -26,7 +26,7 @@ window.RANKINGS["be-challengerproleague"] = {
     ],
   },
   2024: {
-    leagueSize: null,
+    leagueSize: 16,
     wiki: {"t":"2023–24 Challenger Pro League","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"beerschot-be", revenue:10.109, reportType:"official_balance_sheet",
@@ -42,7 +42,7 @@ window.RANKINGS["be-challengerproleague"] = {
     ],
   },
   2023: {
-    leagueSize: null,
+    leagueSize: 12,
     wiki: {"t":"2022–23 Challenger Pro League","lang":"en","at":"2026-10-19","n":12},
     clubs: [
       { id:"beerschot-be", revenue:8.677, reportType:"official_balance_sheet",
@@ -57,7 +57,7 @@ window.RANKINGS["be-challengerproleague"] = {
     ],
   },
   2022: {
-    leagueSize: null,
+    leagueSize: 8,
     wiki: {"t":"2021–22 Belgian First Division B","lang":"en","at":"2026-10-19","n":8},
     clubs: [
       { id:"liersesk-be", revenue:1.738, reportType:"official_balance_sheet",
@@ -69,7 +69,7 @@ window.RANKINGS["be-challengerproleague"] = {
     ],
   },
   2021: {
-    leagueSize: null,
+    leagueSize: 8,
     wiki: {"t":"2020–21 Belgian First Division B","lang":"en","at":"2026-10-19","n":8},
     clubs: [
       { id:"rwdm-be", revenue:1.839, reportType:"official_balance_sheet",
@@ -78,7 +78,7 @@ window.RANKINGS["be-challengerproleague"] = {
     ],
   },
   2020: {
-    leagueSize: null,
+    leagueSize: 8,
     wiki: {"t":"2019–20 Belgian First Division B","lang":"en","at":"2026-10-19","n":8},
     clubs: [
       { id:"beerschot-be", revenue:7.643, reportType:"official_balance_sheet",
@@ -87,7 +87,7 @@ window.RANKINGS["be-challengerproleague"] = {
     ],
   },
   2019: {
-    leagueSize: null,
+    leagueSize: 8,
     wiki: {"t":"2018–19 Belgian First Division B","lang":"en","at":"2026-10-19","n":8},
     clubs: [
       { id:"beerschot-be", revenue:8.979, reportType:"official_balance_sheet",
@@ -100,7 +100,7 @@ window.RANKINGS["be-challengerproleague"] = {
     ],
   },
   2016: {
-    leagueSize: null,
+    leagueSize: 17,
     wiki: {"t":"2015–16 Belgian Second Division","lang":"en","at":"2026-10-19","n":17},
     clubs: [
       { id:"patroeisden-be", revenue:0.808, reportType:"official_balance_sheet",

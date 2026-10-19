@@ -2,7 +2,7 @@
 window.RANKINGS = window.RANKINGS || {};
 window.RANKINGS["ch-superleague"] = {
   2025: {
-    leagueSize: null,
+    leagueSize: 12,
     wiki: {"t":"2024–25 Swiss Super League","lang":"en","at":"2026-10-19","n":12},
     clubs: [
       { id:"stgallen-ch", revenue:56.817, reportType:"official_balance_sheet",
@@ -15,7 +15,7 @@ window.RANKINGS["ch-superleague"] = {
     ],
   },
   2021: {
-    leagueSize: null,
+    leagueSize: 10,
     wiki: {"t":"2020–21 Swiss Super League","lang":"en","at":"2026-10-19","n":10},
     clubs: [
       { id:"basel-ch", revenue:65.115, reportType:"official_balance_sheet",
