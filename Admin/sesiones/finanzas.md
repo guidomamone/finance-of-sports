@@ -38,3 +38,7 @@
 
 ### Qué deja de ser cierto en ESTADO
 - Nada nuevo.
+
+### Federaciones paulistas (295 c)
+- Federação Paulista de Futebol 2024 para `br-paulistaA1`, `A2` y `A3` (`alcance: federacion`): demonstrações financeiras y informe de RSM Brasil Auditores Independentes (23-01-2025), sin ressalvas, con un párrafo de ênfase (COFINS sobre receitas financeiras y comparativo 2023 reapresentado, auditado por otra firma); receitas operacionais 115.574 mil reales. El PDF (2 págs., digital) es la copia de `static.poder360.com.br`; el original en el sitio de la FPF no se encontró (queda anotado en `Admin/sourcing/Ligas/fpf-sp-paulista.md`). PDF copiado a la carpeta principal con `rsync --no-links`. ASSET_V 1368.
+- Queda: el ejercicio 2025 de la FPF-SP; Lega Serie C y FPF (Liga 3) como antes.
