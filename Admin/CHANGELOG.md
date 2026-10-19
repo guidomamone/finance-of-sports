@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 811 — Bélgica, lote 92: 25 años más; Vålerenga transcripto (2026-10-19)
+
+* Beerschot, Lierse SK, Lokeren-Temse, OH Leuven, Patro Eisden y RWDM: 25 años belgas del lote 92, con la cola contestada (26 casos).
+* Vålerenga: los 49 PDFs con `.md` validado por el pipeline. Tres bloqueos belgas pasan a Pipeline 4 (298 ad, ae y af).
+
 ## Versión 810 — Diez to-dos nuevos: contenido para redes y herramientas a probar (2026-10-19)
 
 * 313-322: contenido para X e Instagram y la lista de herramientas a probar (Stirling PDF, Crawl4AI, Maxun, Supabase de lectura, Open
