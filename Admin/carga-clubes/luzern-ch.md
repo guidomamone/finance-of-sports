@@ -233,6 +233,95 @@ tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-19): ch-superleague, verificado contra roster cacheado de "2021–22 Swiss Super League" (tools/club-league-reference/ch.json), coincidencia exacta "Luzern".
 ```
 
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Suiza/Luzern/geschaeftsbericht-2019-20.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Suiza/Luzern/geschaeftsbericht-2019-20.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Meisterschaft-Eintritte | pág. 51, Jev 1 |
+| 2 | Meisterschaft VIP-Eintritte | pág. 51, Jev 1 |
+| 3 | Helvetia Schweizer Cup | pág. 51, precedente |
+| 4 | UEFA Clubwettbewerbe | pág. 51, precedente |
+| 5 | Sonstiges | pág. 51, precedente |
+| 6 | Sponsoring, Werbung | pág. 41, precedente |
+| 7 | TV-Entschädigungen Übertragungsrechte | pág. 41, precedente |
+| 8 | Transferertrag | pág. 41, precedente |
+| 9 | Sponsoren- und Spendenbeiträge | pág. 52, precedente |
+| 10 | SFV-Verbandsbeiträge | pág. 52, precedente |
+| 11 | Sport-Toto- und J&S-Entschädigungen | pág. 52, precedente |
+| 12 | Ausbildungs- und Materialbeiträge Eltern | pág. 52, precedente |
+| 13 | Anlässe (FCL-Fussballcamp, Pfingstmaster) | pág. 52, precedente |
+| 14 | Diverse Einnahmen | pág. 52, precedente |
+| 15 | Events | pág. 41, precedente |
+| 16 | Fanshop Präsenzgeschäft | pág. 53, precedente |
+| 17 | Onlineshop, Distanzgeschäft | pág. 53, precedente |
+| 18 | Unterstützungsbeitrag Stadion Luzern AG | pág. 53, precedente |
+| 19 | Ausmietung Stewards | pág. 53, precedente |
+| 20 | Anpassung Delkredere | pág. 53, precedente |
+| 21 | Sonstiges | pág. 53, precedente |
+| 22 | Ausserordentlicher, einmaliger oder periodenfremder Ertrag | pág. 41, precedente |
+| 23 | Minderheitsanteil am Jahresergebnis | pág. 41, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Personalkosten inkl. Spesen | pág. 53, precedente |
+| 2 | Sozialabgaben | pág. 53, precedente |
+| 3 | Versicherungsprämien | pág. 53, Claude 0.85 |
+| 4 | Personalkosten inkl. Spesen | pág. 53, precedente |
+| 5 | Sozialabgaben | pág. 53, precedente |
+| 6 | Personalkosten inkl. Spesen | pág. 53, precedente |
+| 7 | Sozialabgaben | pág. 53, precedente |
+| 8 | Personalkosten inkl. Spesen | pág. 53, precedente |
+| 9 | Sozialabgaben | pág. 53, precedente |
+| 10 | Miete und Unterhalt Stadion | pág. 54, precedente |
+| 11 | Sicherheitskosten Matchtag (ohne Stewards) | pág. 54, precedente |
+| 12 | Abgaben öffentlicher Verkehr | pág. 54, precedente |
+| 13 | Medical und Material | pág. 54, Jev 0.98 |
+| 14 | Ticketing und Vorverkaufsgebühren | pág. 54, precedente |
+| 15 | Aufwand 1. Mannschaft | pág. 54, precedente |
+| 16 | Diverse Kosten Spielbetrieb | pág. 54, precedente |
+| 17 | VIP-Cateringkosten Spieltag | pág. 54, precedente |
+| 18 | Aufwand übriger Spielbetrieb | pág. 54, Jev 0.99 |
+| 19 | Rückvergütungen Lieferanten | pág. 54, precedente |
+| 20 | Transferaufwand def. Übertritte | pág. 55, Jev 0.99 |
+| 21 | Spielvermittlungen und Beratungen | pág. 55, precedente |
+| 22 | Ausleih- und Ausbildungsentschädigungen | pág. 55, precedente |
+| 23 | Medien, Kommunikation, Inserate | pág. 55, precedente |
+| 24 | Inhouse TV Spieltag | pág. 55, precedente |
+| 25 | LED-Bandenwerbung Produktion | pág. 55, precedente |
+| 26 | Diverses | pág. 55, precedente |
+| 27 | Nachwuchs Akademie | pág. 55, precedente |
+| 28 | Anlässe (FCL-Fussballcamp, Pfingstmaster) | pág. 55, precedente |
+| 29 | Materialkosten | pág. 55, precedente |
+| 30 | Spielbetrieb und Mannschaftsaufwand | pág. 55, precedente |
+| 31 | Events | pág. 41, Jev 0.99 |
+| 32 | Merchandising | pág. 41, precedente |
+| 33 | Energie, Wasser und Entsorgung | pág. 41, precedente |
+| 34 | Verwaltungsaufwand | pág. 56, precedente |
+| 35 | IT, Telefon, Internet und Applikationen | pág. 56, precedente |
+| 36 | Sachversicherungen, Abgaben und Gebühren | pág. 56, precedente |
+| 37 | Fahrzeug/Treibstoff | pág. 56, precedente |
+| 38 | Sonstiger Betriebsaufwand | pág. 56, precedente |
+| 39 | Abschreibungen Sachanlagen | pág. 41, Jev 1 |
+| 40 | Abschreibungen immaterielle Werte | pág. 41, precedente |
+| 41 | Erfolg aus Equity-Beteiligungen | pág. 41, precedente |
+| 42 | Ausserordentlicher, einmaliger oder periodenfremder Aufwand | pág. 41, precedente |
+
+### Meta
+
+```text
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): cierre = 2020-06-30. El FC Luzern cierra su ejercicio el 30 de junio (fiscalYearStart 07-01; los Geschäftsbericht vecinos 2017-18, 2018-19, 2019-20 y 2024-25 dicen 30. Juni); el informe es de la temporada 2019-20
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
 ## 2019
 
 ### Ingresos
@@ -442,4 +531,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Suiza/Luzern/geschaeftsbericht-2017-18.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### luzern-ch-geschaeftsbericht-2019-20
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Suiza/Luzern/geschaeftsbericht-2019-20.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
