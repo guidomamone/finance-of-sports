@@ -22,7 +22,8 @@
 //   (3) si el título de la base dice "con salvedades" y el párrafo de opinión es limpio, manda el párrafo de opinión; (4) opinión limpia
 //   sobre una parte del balance y abstención sobre el resto es abstencion.
 //   La entidad que organiza una liga (AFA, LFP) va con "ligaId" (de data/leagues.js) en vez de "clubId" y con "entidad":{"nombre","legal"?};
-//   sus citas no pasan por quien.mjs (no es un club del sitio). Sale en data/auditoria/_ligas.js (window.LIGA_AUDITORIA[ligaId][anio]).
+//   sus citas no pasan por quien.mjs (no es un club del sitio). Sale en data/auditoria/_ligas.js (window.LIGA_AUDITORIA[ligaId][anio]);
+//   una liga con `falta_transcripcion` no sale (queda pendiente en `--pendientes`, como un club).
 //   alcance (opcional, con nota; sin el campo es una auditoría plena de las cuentas del club). Decisión de Guido, 2026-10-18:
 //     revision_limitada         revisión limitada (ISRE 2410 y similares): "no encontramos nada", no es una auditoría (Como 2025).
 //     procedimientos_acordados  procedimientos acordados: la firma comprobó cifras puntuales; ni auditoría ni revisión (Osijek 2025).
@@ -187,6 +188,7 @@ const faltan = [...registro.values()].filter(o => o.dictamen === 'falta_transcri
 if (args.includes('--pendientes')) {
   for (const p of pendientes) console.log(`${p.id}:${p.y}\t${p.mds.length ? p.mds.join(' | ') : '(sin .md)'}`);
   for (const o of faltan) console.log(`${o.clubId}:${o.anio}\tFALTA EN LA TRANSCRIPCIÓN: ${o.nota}`);
+  for (const o of registroLigas.values()) if (o.dictamen === 'falta_transcripcion') console.log(`liga ${o.ligaId}:${o.anio}\tFALTA EN LA TRANSCRIPCIÓN: ${o.nota}`);
   console.error(`${pendientes.length} balances sin línea en ${REGISTRO}.`);
   process.exit(0);
 }
@@ -217,7 +219,8 @@ const archivos = {};
 for (const [p, d] of Object.entries(porPais))
   archivos[`${p}.js`] = `${CAB}window.CLUB_AUDITORIA = window.CLUB_AUDITORIA || {};\nObject.assign(window.CLUB_AUDITORIA, ${JSON.stringify(d, null, 1)});\n`;
 const porLiga = {};
-for (const o of registroLigas.values()) { const c = o.citas || {};
+// Una liga con `falta_transcripcion` tampoco se publica (la tarjeta mostraría el código crudo y diría que no trae informe, cosa que no es cierta): queda como pendiente.
+for (const o of [...registroLigas.values()].filter(o => o.dictamen !== 'falta_transcripcion')) { const c = o.citas || {};
   (porLiga[o.ligaId] ||= {})[o.anio] = { entidad: o.entidad, auditor: corto(o.auditor) || null, dictamen: o.dictamen, continuidad: o.continuidad,
     fuente: c.dictamen ? { md: c.dictamen.md, linea: c.dictamen.linea } : null }; }
 archivos['_ligas.js'] = `${CAB}window.LIGA_AUDITORIA = ${JSON.stringify(porLiga, null, 1)};\n`;
