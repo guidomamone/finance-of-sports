@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 763 — 298 y4: fuera los ajustes a mano de los noruegos (2026-10-19)
+
+Merge de pipeline 3, sin conflictos; P0 0 / P1 0.
+
+- Salen 6 ajustes `fila` de Vålerenga, Aalesund, Viking y Sarpsborg 08 2025 que tapaban la 298 y; `medir-cargar --contra-sitio`: los 4 años
+  reproducen lo publicado. Quedan 5 de Fredrikstad 2024 y St. Gallen 2025.
+
 ## Versión 762 — Mistral rehízo los 238 .md sin tablas; merges de pipeline 3, datos 2 y onboarding 2 (2026-10-19)
 
 `.jsonl` (cola, verificaciones, Claude API) con las líneas de las dos ramas; ASSET_V 1327, P0 0 / P1 0.

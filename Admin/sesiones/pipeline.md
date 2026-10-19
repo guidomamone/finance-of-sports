@@ -256,3 +256,5 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
   huella del pedido, que cambia sin los ajustes. St. Gallen frena porque el `.categorias.json` queda viejo por huellas (L330 y L403 pasan de
   "ajuste manual" a "nota que desglosa"). Le pregunté a Onboarding 2 si ya están resueltos en main; si no, se quedan (son correctos), o se
   sacan corriendo `primer-anio-ia --ejecutar` y la etapa 5 de St. Gallen (centavos).
+
+## Después del merge de la y4 (2026-10-19)
