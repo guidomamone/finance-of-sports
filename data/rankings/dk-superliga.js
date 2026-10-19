@@ -50,7 +50,8 @@ window.RANKINGS["dk-superliga"] = {
     ],
   },
   2020: {
-    leagueSize: null,
+    leagueSize: 14,
+    wiki: {"t":"2019–20 Danish Superliga","lang":"en","at":"2026-10-19","n":14},
     clubs: [
       { id:"brondby-dk", revenue:26.134, reportType:"official_balance_sheet",
         sourceId:"brondby-aarsrapport-2020",
