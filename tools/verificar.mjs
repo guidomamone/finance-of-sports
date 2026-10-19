@@ -1510,6 +1510,10 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       if (d.tema && d.tema !== 'otro') {
         const club = clubId || pdf.split('/')[2];
         const det = `${club}|${d.tema}|${normalizarRenglon(d.renglon)}`;
+        // (to-do 323 e, ok de Guido 2026-10-19) UN SOLO ESTADO DE RESULTADOS: la IA de localizar vio un único perímetro en el documento (perimetro individual o consolidado, no "ambos") y
+        // pregunta, sin nombrar un renglón, si se carga aunque los años ya cargados sean del otro. La regla 1 de perímetro (CONVENCIONES-DATOS) ya lo decide: un ejercicio publicado con un solo
+        // perímetro se carga con ese. Medido sobre 3.702 documentos: cierra 17 dudas, todas las que tenían respuesta guardada (7) eran "aceptar"; ningún caso contestado "no" (AS Roma 2005 y 2011 separato, Juventus 2022-23, Narva Trans, Kuressaare) se cierra. COMPUERTA: ningún otro documento de la carpeta del club cierra el mismo día (AS Roma 2011: el separato se descartó porque existe el consolidado del mismo ejercicio). La pregunta del perímetro DEL CLUB sigue en la etapa de cargar.
+        if (origen === 'localizar' && d.tema === 'perimetro' && !String(d.renglon || '').trim() && d.propuesta === 'sí' && ['individual', 'consolidado'].includes(U.perimetro) && !registro.some((x) => x.pdf !== pdf && x.pdf.split('/').slice(0, 3).join('/') === pdf.split('/').slice(0, 3).join('/') && x.estado !== 'duplicado' && x.md && (e.periodo?.cierre ? x.periodo?.cierre === e.periodo.cierre : false))) { notas.push(`duda de localizar cerrada por la regla 1 de perímetro (el documento trae un solo estado, ${U.perimetro}): ${d.pregunta}`); vigentes.push(`${pdf}|verificar|duda-tema|${det}`); continue; }
         // ESCALÓN 1 (to-do 153, ok de Guido): la respuesta dada ANTES DEL ALTA del club. Sin alta, la clave lleva el nombre de la carpeta
         // ("Hellas Verona|escala|"); con alta, el id del sitio ("hellasverona-it|escala|"), y la respuesta vieja no se encontraba: la pregunta
         // volvía con otro id (56 repetidas en Goiás, Lazio, Hellas Verona...). Compuerta: el caso respondido es de la MISMA carpeta de club
