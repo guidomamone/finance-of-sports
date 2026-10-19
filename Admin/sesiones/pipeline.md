@@ -248,3 +248,11 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
   En los 718 `.filas.json` hay un solo par de filas sin lado que se anulan (+X / −X): no hace falta un escalón para eso.
 
 ## Después del merge de la y1-y3 (2026-10-19)
+
+- **298 y4, parte 1** (702f59ccc0, decisión de Guido 2026-10-19: "saca los 6 por ahora"): salen los 6 ajustes `fila` de Vålerenga,
+  Aalesund, Viking y Sarpsborg 08 2025. `medir-cargar --contra-sitio`: los 4 reproducen lo publicado; `--comparar`: 0 diferencias.
+- **Quedan 5 ajustes** (Fredrikstad 2024 acta 2025, L1064 y L1077; St. Gallen 2024-25, L261, L330 y L403). Medido sin ellos: los números
+  dan iguales, pero los dos años frenan. Fredrikstad vuelve a abrir "primer-anio": la respuesta guardada de `primer-anio-ia` está atada a la
+  huella del pedido, que cambia sin los ajustes. St. Gallen frena porque el `.categorias.json` queda viejo por huellas (L330 y L403 pasan de
+  "ajuste manual" a "nota que desglosa"). Le pregunté a Onboarding 2 si ya están resueltos en main; si no, se quedan (son correctos), o se
+  sacan corriendo `primer-anio-ia --ejecutar` y la etapa 5 de St. Gallen (centavos).
