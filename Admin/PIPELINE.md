@@ -175,7 +175,9 @@ Mitigaciones:
                   perímetro de la serie; sin votos y con los dos en la serie (Aris), uno por documento. Frena solo si los votos no coinciden
 ```
 
-  En el ensayo no pregunta a Jev ni a Claude ni escribe: dice qué fijaría. Medido contra `Admin/mediciones/perimetro-verdad.tsv` (12 clubes italianos +
+  En el ensayo no pregunta a Jev ni a Claude ni escribe: dice qué fijaría. Usa la respuesta GUARDADA de A2 si la hay (to-do 298 w,
+  escalón 1); un documento sin respuesta guardada sale como "se decide al ejecutar solo si A2 ve un único estado o el voto alcanza; si
+  no, el lote frena". Lotes 93 y 94 simulados sin sus ajustes de perímetro: el ensayo pasa de "0 de 36 frenarían" a 13, los que frenaron. Medido contra `Admin/mediciones/perimetro-verdad.tsv` (12 clubes italianos +
   Juventus y Novorizontino de control): 77 bien, 0 mal, 23 sin decidir; sobre los 517 documentos cargados no propone nada distinto de lo
   cargado. Lote 14: de 29 documentos frenados a 0. Con A2, la verdad da 91 bien, 0 mal, 9 sin decidir (Admin/mediciones/perimetro-a2-verdad.txt).
 
