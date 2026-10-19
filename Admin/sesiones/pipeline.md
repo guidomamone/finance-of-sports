@@ -380,3 +380,5 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
   año en null se reemplaza; misma liga, no se toca; otra liga, queda la que estaba y avisa. Antes, bfo-rusia.mjs (liga con estado
   "pendiente") agregaba el año otra vez en cada reescritura (58 claves repetidas en ru.js) y, con otra liga, el sitio tomaba la última en
   silencio. Probado en memoria sobre ru.js con la lógica vieja y la nueva (el ensayo de la carga no escribe ligas). Sigue el 286-287.
+
+## Después del merge del 279 (2026-10-19)

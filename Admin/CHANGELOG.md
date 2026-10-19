@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 792 — 279: cargar.mjs no duplica años en club-leagues; 232 cerrado (2026-10-19)
+
+* `cargar.mjs`: un año que ya tiene liga en `data/club-leagues` no se vuelve a agregar; con otra liga, queda la que estaba y avisa (así
+  nacieron las 58 claves repetidas de ru.js).
+* 232 e a HALLAZGOS: recortar el texto de A2 ahorraría 2-3% del gasto de API. El 232 queda cerrado.
+
 ## Versión 791 — 298 z: el primer ejercicio de más de 12 meses se carga como el año del cierre (2026-10-19)
 
 * `cargar.mjs`: el primer ejercicio de una sociedad nueva de más de 12 meses se carga como el año del cierre, con nota pública (decisión
