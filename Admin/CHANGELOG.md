@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 782 — 295 c, segunda tanda: KNVB, ANFP, HNS y RPL; cierre de Finanzas 4 (2026-10-19)
+
+* Cargadas: KNVB (Eredivisie y Eerste Divisie) y HNS (Croacia) como federación entera, ANFP 2025 y Premier Liga rusa 2025. Lega B, TFF y
+  dos segundas divisiones, solo con nota de sourcing.
+* Tarjeta de la liga: una liga sin informe del auditor (`falta_transcripcion`) ya no se publica; `alcance: federacion` con texto y chip propio.
+* Finanzas 4 cierra; su nota, en `Admin/Archive/`.
+
 ## Versión 781 — Lote 93 cerrado: 19 altas neerlandesas más (2026-10-19)
 
 * ADO Den Haag, De Graafschap, Den Bosch, Dordrecht, Eindhoven, Emmen, Groningen, Twente, Utrecht, Volendam, Helmond Sport, PEC Zwolle,

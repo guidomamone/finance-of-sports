@@ -785,6 +785,10 @@ Texto movido sin cambios.
   loguea puede volver a ver lo que ya miró. Pendiente antes de que sirva para un visitante real,
   no solo Guido: to-do 94 (publicar la pantalla de consentimiento OAuth de Google, que arranca en
   modo "Testing", y agregar el dominio de producción a los Redirect URLs de Supabase).
+- TARJETA "LAS CUENTAS DE LA LIGA" (Ligas; `cardLiga` en `js/auditoria.js`, datos en `data/auditoria/_ligas.js`, que genera
+  `tools/auditoria.mjs`). Sale solo si la liga-año tiene ranking. Una liga cuya línea es `falta_transcripcion` NO se publica (se veía el
+  código crudo y una frase falsa); queda en `--pendientes`. Con `alcance: federacion` (KNVB, HNS) la tarjeta dice que es la federación
+  entera, no solo la liga, y lleva el chip "Cuentas de la federación entera".
 - PESTAÑA LIGAS (mockup: artboards "Ligas" del artifact "Pantallas FoS"). El ranking de ingresos de los clubes de una liga
   en UN ejercicio. Vive en `js/liga.js` y lee `data/rankings/<liga>.js`, así que NO baja ningún `data/<país>/<club>-data.js`.
   ESTADO FRÍO (se llega por el nav): sin título que repita la pestaña; un buscador (liga o país), las regiones como filtro con cuántas

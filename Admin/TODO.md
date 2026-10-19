@@ -47,7 +47,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 261: Reino Unido, transcripción por subagentes
 * 165 c: altas de los países nuevos que faltan --> Onboarding 3
 * 195: gestiones (presidentes) sin fuente confirmada (Fortaleza 2025: ¿CEO o presidente del consejo? lo decidís vos)
-* 295: balances de las entidades que organizan las ligas: ya hay 9; siguen Chile, Croacia, Rusia, Serie B, Turquía y las segundas --> Finanzas 4
+* 295: balances de las entidades que organizan las ligas: lo que queda (segundas divisiones; varias no publican) --> Finanzas 5
 * 284: Fredrikstad y Sarpsborg 08 sobre el FLI --> Onboarding 3
 * 283: Vålerenga y Aalesund, sumar el AS y el FLI (con nota en Finanzas) --> Onboarding 3
 * 273: nombrar la compuerta de estadio y sponsor en la skill de onboarding (con tu ok)
@@ -220,17 +220,14 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    publicación, lo resuelve Guido) y Go Ahead Eagles 2025 (sin canal público: candidato a mail, sin outreach) (Lazio 2006 ya salió de Wayback; Roma 2022 queda pendiente por decisión de Guido: no hay informe del consolidado público). Si el sitio publicara el consolidado de Juventus, sus líneas 2022-2025
    cambian de informe (los dos están bajados). (f) que el pipeline exija la línea al dar de alta un club (fos-pipeline). En Ligas ya está la
    tarjeta "Las cuentas de la liga": cada entidad que entra por el 295 aparece sola.
-295. BALANCES DE LAS ENTIDADES QUE ORGANIZAN LAS LIGAS (fos-ligas; aclaración de Guido, 2026-10-18). Hecho: Premier League, LaLiga,
-   J.League, EFL, Swiss Football League, Norsk Toppfotball, Superligaen, la federación estonia y la Super League griega (con salvedades),
-   en `Ligas/` y en `data/auditoria/_ligas.js`. Falta:
+295. BALANCES DE LAS ENTIDADES QUE ORGANIZAN LAS LIGAS (fos-ligas; aclaración de Guido, 2026-10-18). Hecho: lo que está en
+   `data/auditoria/_ligas.js` (con la KNVB y la HNS como federación entera). Falta: la Primera Liga rusa (FNL) y las demás segundas que
+   no se buscaron; candidatos a mail, sin armar: Pro League (informe de KPMG), Eredivisie CV, LPF, Dimayor, Lega B, Divisionsforeningen,
+   Super League 2 griega y TFF desde 2022-23. Además:
    (a) CBF: Guido baja el PDF 2025 desde su navegador (link en `Admin/sourcing/Ligas/cbf.md`; el CDN no deja desde acá), después
    transcribir y cargar la línea; (b) Lega Serie A, Liga Portugal y AFA no publican el balance (existe y se audita): decidir si se les
-   escribe, y para la AFA si se pide a la IGJ (Guido); (c) Pro League belga: el depósito de la NBB está transcripto pero no trae el
-   informe del comisario (KPMG), sin línea; Eredivisie CV, LPF y Dimayor no publican (candidatos a mail, sin armar; Dimayor: falta consultar
-   el RUES); la KNVB entra (Guido, 2026-10-19), aclarando que es la federación entera: la carga Finanzas 4; las segundas divisiones (Super League 2 griega,
-   1. Division danesa, Promotion League suiza) no se buscaron. Mejoras de script: `auditoria.mjs` publica en `_ligas.js` una entrada
-   `falta_transcripcion` de liga (con los clubes no lo hace; ver si la tarjeta la soporta), y `companies-house-fetch.mjs` no encuentra la
-   EFL por nombre (es el número 00080612). DFL: el Konzernabschluss pide login en el
+   escribe, y para la AFA si se pide a la IGJ (Guido); (c) Dimayor: falta consultar el RUES. Mejora de script: `companies-house-fetch.mjs` no encuentra la EFL por nombre
+   (es el número 00080612). DFL: el Konzernabschluss pide login en el
    Unternehmensregister (gestión de Guido) y el sitio tiene captcha; probar antes el Bundesanzeiger. AUF (Uruguay): en espera, el sitio no
    tiene liga uruguaya (Guido).
 283. VÅLERENGA Y AALESUND: SUMAR EL AS Y EL FLI EN UN SOLO AÑO (pedido de Guido, 2026-10-17). El AS tiene los ingresos comerciales y el
