@@ -1608,33 +1608,32 @@ The registered office of the subsidiary undertakings is London Stadium, Queen El
 
 --- pág. 37 ---
 
-WEST HAM UNITED FOOTBALL CLUB LIMITED
-NOTES TO THE FINANCIAL STATEMENTS
-for the year ended 31 May 2022
+# WEST HAM UNITED FOOTBALL CLUB LIMITED
+
+### NOTES TO THE FINANCIAL STATEMENTS
+for the year ended 31 May 2022  
 (continued)
 
-12. Tangible Assets
+**12. Tangible Assets**
 
 | | Freehold land & buildings £000 | Plant, fittings & equipment £000 | Motor vehicles £000 | Total £000 |
-|---|---|---|---|---|
+| :--- | :---: | :---: | :---: | :---: |
 | **Cost or valuation** | | | | |
 | 1 June 2021 | 25,833 | 18,130 | 74 | 44,037 |
 | Additions | 1,654 | 609 | 26 | 2,289 |
-| 31 May 2022 | 27,487 | 18,739 | 100 | 46,326 |
+| **31 May 2022** | **27,487** | **18,739** | **100** | **46,326** |
 | **Accumulated depreciation** | | | | |
 | 1 June 2021 | 5,299 | 12,789 | 61 | 18,149 |
 | Charge for the year | 1,427 | 1,668 | 9 | 3,104 |
-| 31 May 2022 | 6,726 | 14,457 | 70 | 21,253 |
+| **31 May 2022** | **6,726** | **14,457** | **70** | **21,253** |
 | **Net book value** | | | | |
-| 31 May 2022 | 20,761 | 4,282 | 30 | 25,073 |
+| **31 May 2022** | **20,761** | **4,282** | **30** | **25,073** |
 | 31 May 2021 | 20,534 | 5,341 | 13 | 25,888 |
-
-(Así en el original: el balance muestra 25,887 para 2021.)
 
 Montague Evans, independent Chartered Surveyors, undertook valuations of the freehold properties belonging to the Company as at 31 May 2021. A summary of valuations of the properties and the bases of valuation is set out below.
 
 | Property | Basis of valuation | £000 |
-|---|---|---|
+| :--- | :--- | :---: |
 | Chadwell Heath training ground | Depreciated replacement cost | 10,147 |
 | Little Heath training ground | Depreciated replacement cost | 458 |
 | Rush Green training ground | Depreciated replacement cost | 3,751 |
@@ -1642,10 +1641,10 @@ Montague Evans, independent Chartered Surveyors, undertook valuations of the fre
 
 The historical cost equivalent of the revalued properties is £7,815,000.
 
-13. Stocks
+**13. Stocks**
 
 | | 2022 £000 | 2021 £000 |
-|---|---|---|
+| :--- | :---: | :---: |
 | Goods for resale | 1,341 | 1,369 |
 
 There is no significant difference between the replacement cost of goods for resale and their carrying amounts.

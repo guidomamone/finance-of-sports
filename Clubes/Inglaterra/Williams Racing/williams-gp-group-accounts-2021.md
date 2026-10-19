@@ -1022,18 +1022,18 @@ Page 24
 
 --- pág. 27 ---
 
-Williams Grand Prix Engineering Limited
-Notes to the Consolidated Financial Statements
+**Williams Grand Prix Engineering Limited**  
+**Notes to the Consolidated Financial Statements**
 
 **10 Taxation**
 
 **Tax on loss on ordinary activities**
 
-| | 2021 £000 | 2020 £000 |
-|---|---:|---:|
+| | 2021<br>£000 | 2020<br>£000 |
+| :--- | :---: | :---: |
 | **Current tax** | | |
 | Corporation tax charge | - | - |
-| | - | - |
+| | **-** | **-** |
 
 The Company has estimated losses of approximately £183.8m (2020: £171.7m) available to carry forward against future trading profits and deferred tax asset of £44.1m (2020: £31.1m). No deferred tax asset has been recognised in respect of these losses due to the uncertainty of the period over which they will be offset against taxable profits.
 
@@ -1043,8 +1043,8 @@ The tax on profit on ordinary activities for the year is lower (2020: lower) tha
 
 The differences are reconciled below:
 
-| | 2021 £000 | 2020 £000 |
-|---|---:|---:|
+| | 2021<br>£000 | 2020<br>£000 |
+| :--- | :---: | :---: |
 | (Loss)/profit on ordinary activities before tax | (11,892) | (58,454) |
 | Corporation tax at standard rate | (2,259) | (11,106) |
 | Permanent fixed asset differences | 20 | 116 |
@@ -1054,20 +1054,18 @@ The differences are reconciled below:
 | Adjustment in research and development tax credit | 301 | 287 |
 | Chargeable gains | 9,023 | - |
 | Unrelieved tax losses utilised | (2,410) | (10,714) |
-| Total tax charge | - | - |
-
-[Nota de transcripción: la fila "Unrelieved tax losses utilised" figura entre paréntesis en el original; con ese signo la conciliación no da cero (sí da cero si la fila se toma positiva, como figura en las cuentas 2022: "Losses not recognised 2,410"). Se transcribe tal cual el original.]
+| **Total tax charge** | **-** | **-** |
 
 **11 Long term financial asset**
 
-| | 2021 £000 | 2020 £000 |
-|---|---:|---:|
+| | 2021<br>£000 | 2020<br>£000 |
+| :--- | :---: | :---: |
 | At 1 January | 14,445 | 12,897 |
 | Addition | - | - |
 | Interest | 1,524 | 1,548 |
-| At 31 December | 15,969 | 14,445 |
+| **At 31 December** | **15,969** | **14,445** |
 
-The notes on pages 17 to 33 form an integral part of these financial statements.
+The notes on pages 17 to 33 form an integral part of these financial statements.  
 Page 25
 
 --- pág. 28 ---

@@ -994,42 +994,55 @@ Proceeds from business interruption insurance claim 2,513 -
 
 --- pág. 26 ---
 
+# The Brighton and Hove Albion Football Club Limited
 
-The Brighton and Hove Albion Football Club Limited
-Notes forming part of the financial statements 7
-for the year ended 30 June 2021 (continued)
-5 Operating loss
-2021 2020
-£'000 £'000
-This is arrived at after charging:
-Depreciation of tangible fixed assets 1,886 ; 1,684
-Amortisation of intangible assets 46,380 45,616
-Impairment of intangible assets 9,370 . -
-Defined contribution pension cost 434 474
-Operating lease payments 1,549 246
-6 Auditor's remuneration
-2021 2020 =
-£'000 £'000
-Fees payable to the Company's auditor for the audit of the Company's
-annual accounts’ 37 30
-Fees payable to the Company's auditor in respect of:
-Other services relating to taxation 12 74
-All other services 6 -
-. 18 74
-7 Employees
-2021 2020
-; £'000 £'000
-Staff costs including directors' remuneration, were as follows:
-Wages and salaries : 93,983 89,314
-Social security costs 12,987 12,082
-Pension costs 434 474
-107,404 101,870
-The average monthly number of employees, including directors, during
-the year was as follows: Number Number
-Player staff 89 88
-Non-playing staff ‘ 732 891
-821 979
+### Notes forming part of the financial statements  
+**for the year ended 30 June 2021 (continued)**
+
+---
+
+### 5 Operating loss
+
+| | 2021<br>£'000 | 2020<br>£'000 |
+| :--- | :---: | :---: |
+| **This is arrived at after charging:** | | |
+| Depreciation of tangible fixed assets | 1,886 | 1,684 |
+| Amortisation of intangible assets | 46,380 | 45,616 |
+| Impairment of intangible assets | 9,370 | - |
+| Defined contribution pension cost | 434 | 474 |
+| Operating lease payments | 1,549 | 246 |
+
+### 6 Auditor's remuneration
+
+| | 2021<br>£'000 | 2020<br>£'000 |
+| :--- | :---: | :---: |
+| Fees payable to the Company's auditor for the audit of the Company's annual accounts | 37 | 30 |
+| **Fees payable to the Company's auditor in respect of:** | | |
+| Other services relating to taxation | 12 | 74 |
+| All other services | 6 | - |
+| | **18** | **74** |
+
+### 7 Employees
+
+| | 2021<br>£'000 | 2020<br>£'000 |
+| :--- | :---: | :---: |
+| **Staff costs including directors' remuneration, were as follows:** | | |
+| Wages and salaries | 93,983 | 89,314 |
+| Social security costs | 12,987 | 12,082 |
+| Pension costs | 434 | 474 |
+| | **107,404** | **101,870** |
+
+The average monthly number of employees, including directors, during the year was as follows:
+
+| | Number | Number |
+| :--- | :---: | :---: |
+| Player staff | 89 | 88 |
+| Non-playing staff | 732 | 891 |
+| | **821** | **979** |
+
 Included in non-playing staff are 90 (2020: 536) staff who are employed on a part-time basis.
+
+---
 26
 
 --- pág. 27 ---
@@ -1118,110 +1131,138 @@ At 30 June 2020 - 108,819
 
 --- pág. 30 ---
 
+# The Brighton and Hove Albion Football Club Limited
 
-The Brighton and Hove Albion Football Club Limited
-Notes forming part of the financial statements
-; for the year ended 30 June 2021 (continued)
-13 Tangible fixed assets
-Fixtures
-and fittings
-£'000
-Cost
-At 1 July 2020 10,711
-Additions 1,287
-Disposals (22)
-At 30 June 2021 11,976
-Depreciation
-At 1 July 2020 5,859
-Charge for the year 1,886
-Disposals (3)
-At 30 June 2021 7,742
-Net book value
-At 30 June 2021 4,234
-At 30 June 2020 4,852
-14 Stocks
-‘2021 2020
-£'000 £'000
-Goods for resale 449 343
-30.
+### Notes forming part of the financial statements  
+**for the year ended 30 June 2021 (continued)**
+
+---
+
+### 13 Tangible fixed assets
+
+| | Fixtures<br>and fittings<br>£'000 |
+| :--- | :---: |
+| **Cost** | |
+| At 1 July 2020 | 10,711 |
+| Additions | 1,287 |
+| Disposals | (22) |
+| **At 30 June 2021** | **11,976** |
+| **Depreciation** | |
+| At 1 July 2020 | 5,859 |
+| Charge for the year | 1,886 |
+| Disposals | (3) |
+| **At 30 June 2021** | **7,742** |
+| **Net book value** | |
+| **At 30 June 2021** | **4,234** |
+| **At 30 June 2020** | **4,852** |
+
+### 14 Stocks
+
+| | 2021<br>£'000 | 2020<br>£'000 |
+| :--- | :---: | :---: |
+| Goods for resale | 449 | 343 |
+
+---
+30
 
 --- pág. 31 ---
 
+# The Brighton and Hove Albion Football Club Limited
 
-The Brighton and Hove Albion Football Club Limited .
-Notes forming part of the financial statements
-for the year ended 30 June 2021 (continued)
-15 Debtors
-2021 2020
-£'000 £'000
-Trade debtors 5,646 5,069
-Transfers receivable within one year 2,735 2,938
-Amounts owed by group undertakings 47,640 40,013
-Other debtors 237 476
-Prepayments and accrued income 1,414 5,358
-Corporation tax recoverable: 500 500
-58,172 54,354
+### Notes forming part of the financial statements  
+**for the year ended 30 June 2021 (continued)**
+
+---
+
+### 15 Debtors
+
+| | 2021<br>£'000 | 2020<br>£'000 |
+| :--- | :---: | :---: |
+| Trade debtors | 5,646 | 5,069 |
+| Transfers receivable within one year | 2,735 | 2,938 |
+| Amounts owed by group undertakings | 47,640 | 40,013 |
+| Other debtors | 237 | 476 |
+| Prepayments and accrued income | 1,414 | 5,358 |
+| Corporation tax recoverable | 500 | 500 |
+| | **58,172** | **54,354** |
+
 Amounts owed by group undertakings are interest free and repayable on demand.
-16 Cash and cash equivalents .
-2021 2020
-£'000 £'000
-Cash at bank and in hand 6,746 454
-17 Creditors: amounts falling due within one year
-2021 2020
-£'000 £'000
-Bank loans and overdrafts 34,508 1,865
-Trade creditors 2,087 2,108
-Transfer payables 21,740 23,534
-Amounts owed to group undertakings 266,222 243,676
-Other taxation and social security 8,804 24,896
-Other creditors 4,238 3,451
-Accruals and deferred income 32,697 45,039
-370,296 344,569
+
+### 16 Cash and cash equivalents
+
+| | 2021<br>£'000 | 2020<br>£'000 |
+| :--- | :---: | :---: |
+| Cash at bank and in hand | 6,746 | 454 |
+
+### 17 Creditors: amounts falling due within one year
+
+| | 2021<br>£'000 | 2020<br>£'000 |
+| :--- | :---: | :---: |
+| Bank loans and overdrafts | 34,508 | 1,865 |
+| Trade creditors | 2,087 | 2,108 |
+| Transfer payables | 21,740 | 23,534 |
+| Amounts owed to group undertakings | 266,222 | 243,676 |
+| Other taxation and social security | 8,804 | 24,896 |
+| Other creditors | 4,238 | 3,451 |
+| Accruals and deferred income | 32,697 | 45,039 |
+| | **370,296** | **344,569** |
+
 Amounts owed to group undertakings are interest free and repayable on demand.
-A cross guarantee and debenture exists between Brighton and Hove Albion Holdings Limited, Brighton and
-Hove Albion Football Club Limited and The Community Stadium Limited.
-Current and non-current other creditors include Premier League rebates of £3,899,000 and £3,851,000
-respectively that will be deducted from future distributions.
+
+A cross guarantee and debenture exists between Brighton and Hove Albion Holdings Limited, Brighton and Hove Albion Football Club Limited and The Community Stadium Limited.
+
+Current and non-current other creditors include Premier League rebates of £3,899,000 and £3,851,000 respectively that will be deducted from future distributions.
+
+---
 31
 
 --- pág. 32 ---
 
+# The Brighton and Hove Albion Football Club Limited
 
-The Brighton and Hove Albion Football Club Limited
-Notes forming part of the financial statements
-for the year ended 30 June 2021 (continued)
-18 Creditors: amounts falling due after more than one year
-2021 2020
-£'000 £'000
-Bank loans and overdrafts 2,826 -
-Other creditors. 3,851 -
-Transfers payables 4,883 13,356
-11,560 13,356
-Maturity of bank loans and overdrafts
+### Notes forming part of the financial statements  
+**for the year ended 30 June 2021 (continued)**
+
+---
+
+### 18 Creditors: amounts falling due after more than one year
+
+| | 2021<br>£'000 | 2020<br>£'000 |
+| :--- | :---: | :---: |
+| Bank loans and overdrafts | 2,826 | - |
+| Other creditors | 3,851 | - |
+| Transfers payables | 4,883 | 13,356 |
+| | **11,560** | **13,356** |
+
+#### Maturity of bank loans and overdrafts
+
 The maturity of sources of debt finance are as follows:
-Bank ‘Bank
-, loans overdrafts Total
-2021 2021 2021
-£'000 £'000 £'000
-In one year or less, or on demand 34,508 - -
-In more than one year but not more than two years 2,826 . >
-37,334 - -
-Bank Bank
-loans overdrafts Total
-2020 2020 2020
-£'000 £'000 £'000
-In one year or less, or on demand - 1,865 -
-In more than one year but not more than two years - - -
-- 1,865 -
-19 Share capital
-2021 2020
-£’000 £'000
-Shares classified as equity
-Allotted, called up and fully paid .
-320,932 ordinary shares of £0.25 each 80 80
-25,000 ordinary A shares of £1 each 25 25
-105 105
-The rights attached to each class of share are.the same.
+
+| | Bank loans<br>2021<br>£'000 | Bank overdrafts<br>2021<br>£'000 | Total<br>2021<br>£'000 |
+| :--- | :---: | :---: | :---: |
+| In one year or less, or on demand | 34,508 | - | - |
+| In more than one year but not more than two years | 2,826 | - | - |
+| | **37,334** | **-** | **-** |
+
+| | Bank loans<br>2020<br>£'000 | Bank overdrafts<br>2020<br>£'000 | Total<br>2020<br>£'000 |
+| :--- | :---: | :---: | :---: |
+| In one year or less, or on demand | - | 1,865 | - |
+| In more than one year but not more than two years | - | - | - |
+| | **-** | **1,865** | **-** |
+
+### 19 Share capital
+
+| | 2021<br>£'000 | 2020<br>£'000 |
+| :--- | :---: | :---: |
+| **Shares classified as equity** | | |
+| *Allotted, called up and fully paid* | | |
+| 320,932 ordinary shares of £0.25 each | 80 | 80 |
+| 25,000 ordinary A shares of £1 each | 25 | 25 |
+| | **105** | **105** |
+
+The rights attached to each class of share are the same.
+
+---
 32
 
 --- pág. 33 ---

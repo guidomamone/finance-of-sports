@@ -1936,42 +1936,44 @@ Newcastle United Football Company Limited ("NUFCL") received assessments from HM
 --- pág. 44 ---
 
 DocuSign Envelope ID: B9296187-2C32-45C0-B0D9-95561B4B21DA
-Newcastle United Limited ; 41
-Financial statements for the year ended 30 June 2023
-Notes to the financial statements (continued)
-24 Pension commitments
-The Group operates a defined contribution pension scheme. The assets of the scheme are held separately from those
-of the Group in an independently administered fund. The pension cost charge represents contributions payable by
-the Group to the fund and amounted to £347,000 (2022: £195,000).
-Newcastle United Football Company Limited also participates in the Football League Pension and Life Assurance
-Scheme (‘the Scheme’). The Scheme is a funded multi-employer defined benefit scheme, with 92 participating
-employers, and where members may have periods of service attributable to several participating employers.
-Newcastle United Football Company Limited is unable to identify its share of the assets and liabilities of the Scheme
-and therefore accounts for its contributions as if they were paid to a defined contribution scheme.
-The accrual of benefits ceased within the Scheme on 31 August 1999, therefore there are no contributions relating to
-curtent accrual. Newcastle United Football Company Limited pays monthly contributions based on a notional split
-of the total expenses and deficit contributions of the Scheme.
-Newcastle United Football Company Limited currently pays total contributions of £82,000 per annum (2022:
-£78,000) which will increase to £86,000 per annum from September 2023.
-As at 30 June 2023, based on an appropriate discount rate of 6.125% (2022: 6.125%) per annum, the present value of
-Newcastle United Football Company Limited’s outstanding contributions (ie., their future liability) is £96,000
-(2022: £169,000). This amounts to £85,000 (2022: £81,000) due within one year and £11,000 (2022: £88,000) due
-after more than one year and is included within other payables.
-25 Commitments under operating leases
-At 30 June 2023 the Group had future minimum lease payments under non-cancellable operating leases as follows
-2023 2022
-£000 £000
-Land and buildings
-Not later than 1 year 696 639
-Between one and five years 2,782 2,560
-After five years 55,909 52,426
-59,387 55,625
+
+**Newcastle United Limited**  
+**Financial statements for the year ended 30 June 2023**  
+**41**
+
+# Notes to the financial statements (continued)
+
+### 24 Pension commitments
+
+The Group operates a defined contribution pension scheme. The assets of the scheme are held separately from those of the Group in an independently administered fund. The pension cost charge represents contributions payable by the Group to the fund and amounted to £347,000 (2022: £195,000).
+
+Newcastle United Football Company Limited also participates in the Football League Pension and Life Assurance Scheme ('the Scheme'). The Scheme is a funded multi-employer defined benefit scheme, with 92 participating employers, and where members may have periods of service attributable to several participating employers. Newcastle United Football Company Limited is unable to identify its share of the assets and liabilities of the Scheme and therefore accounts for its contributions as if they were paid to a defined contribution scheme.
+
+The accrual of benefits ceased within the Scheme on 31 August 1999, therefore there are no contributions relating to current accrual. Newcastle United Football Company Limited pays monthly contributions based on a notional split of the total expenses and deficit contributions of the Scheme.
+
+Newcastle United Football Company Limited currently pays total contributions of £82,000 per annum (2022: £78,000) which will increase to £86,000 per annum from September 2023.
+
+As at 30 June 2023, based on an appropriate discount rate of 6.125% (2022: 6.125%) per annum, the present value of Newcastle United Football Company Limited's outstanding contributions (i.e., their future liability) is £96,000 (2022: £169,000). This amounts to £85,000 (2022: £81,000) due within one year and £11,000 (2022: £88,000) due after more than one year and is included within other payables.
+
+### 25 Commitments under operating leases
+
+At 30 June 2023 the Group had future minimum lease payments under non-cancellable operating leases as follows:
+
+| | 2023<br>£000 | 2022<br>£000 |
+| :--- | :---: | :---: |
+| **Land and buildings** | | |
+| Not later than 1 year | 696 | 639 |
+| Between one and five years | 2,782 | 2,560 |
+| After five years | 55,909 | 52,426 |
+| | 59,387 | 55,625 |
+
 The commitments above relate to annual payments due under leases with expiry dates ranging from 2097-2126.
-During the year £696,000 was recognised as an expense in the Consolidated Income Statement in respect of
-operating leases (2022: £637,000).
-26 Capital commitments
-At 30 June 2023, the Group had capital commitments to purchase property, plant and equipment for which no
-provision had been made of £4.8m (2022: £1.9m). The Company had no capital commitments (2022: £nil).
+
+During the year £696,000 was recognised as an expense in the Consolidated Income Statement in respect of operating leases (2022: £637,000).
+
+### 26 Capital commitments
+
+At 30 June 2023, the Group had capital commitments to purchase property, plant and equipment for which no provision had been made of £4.8m (2022: £1.9m). The Company had no capital commitments (2022: £nil).
 
 --- pág. 45 ---
 

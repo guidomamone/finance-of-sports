@@ -1818,47 +1818,46 @@ The Group operates a defined contribution pension scheme. The assets of the sche
 
 --- pág. 45 ---
 
-Newcastle United Limited 42
+Newcastle United Limited
 Financial statements for the year ended 30 June 2024
-Notes to the financial statements (continued)
-Newcastle United Football Company Limited also participates in the closed Football League Pension and Life
-Assurance Scheme (‘the Scheme’). The Scheme is a funded multi-employer defined benefit scheme, with 92
-participating employers, and where members may have periods of service attributable to several participating
-employers. Newcastle United Football Company Limited is unable to identify its share of the assets and liabilities of
-the Scheme and therefore accounts for its contributions as if they were paid to a defined contribution scheme.
-The accrual of benefits ceased within the Scheme on 31 August 1999, therefore there are no contributions relating to
-current accrual. Newcastle United Football Company Limited pays monthly contributions based on a notional split
-of the total expenses and deficit contributions of the Scheme.
-The Scheme Actuary finalised a full valuation as at 31 August 2023 and allocated £231,772 as NUFCL’s share of the
-deficit as at 1 September 2023. The increase in the deficit arising from this revaluation has been recognised in the
-profit and loss account. The deficit is funded by annual contributions and the Club incurs interest at 6% on its.
-allocated share of the deficit. The balance outstanding at the year end date of £232,000 (2023: £96,000) is included ~
-in Accruals and Deferred Income. The Club has made contributions of £85,334 in the year (2023: £81,274).
-25 Commitments under operating leases
+
+42
+
+# Notes to the financial statements (continued)
+
+Newcastle United Football Company Limited also participates in the closed Football League Pension and Life Assurance Scheme ('the Scheme'). The Scheme is a funded multi-employer defined benefit scheme, with 92 participating employers, and where members may have periods of service attributable to several participating employers. Newcastle United Football Company Limited is unable to identify its share of the assets and liabilities of the Scheme and therefore accounts for its contributions as if they were paid to a defined contribution scheme.
+
+The accrual of benefits ceased within the Scheme on 31 August 1999, therefore there are no contributions relating to current accrual. Newcastle United Football Company Limited pays monthly contributions based on a notional split of the total expenses and deficit contributions of the Scheme.
+
+The Scheme Actuary finalised a full valuation as at 31 August 2023 and allocated £231,772 as NUFCL's share of the deficit as at 1 September 2023. The increase in the deficit arising from this revaluation has been recognised in the profit and loss account. The deficit is funded by annual contributions and the Club incurs interest at 6% on its allocated share of the deficit. The balance outstanding at the year end date of £232,000 (2023: £96,000) is included in Accruals and Deferred Income. The Club has made contributions of £85,334 in the year (2023: £81,274).
+
+## 25 Commitments under operating leases
+
 At 30 June 2024 the Group had future minimum lease payments under non-cancellable operating leases as follows:
-2024 2023
-£000 £000
-Land and buildings
-Not later than 1 year 696 696
-Between one and five years 2,782 2,782
-After five years 55,211 55,909
-58,689 59,387
-The commitments above relate to annual payments due under leases with expiry dates ranging from 2097-2126. 0
-During the year £696,000 was recognised as an expense in the Consolidated Income Statement in respect of
-operating leases (2023: £696,000).
-26 Capital commitments
-At 30 June 2024, the Group had capital commitments to purchase property, plant and equipment for which no
-provision had been made of £2.5m (2023: £4.8m). The Company had no capital commitments (2023: £nil).
-27 Related party transactions
-Transactions between the Company and its group undertakings are not disclosed as permitted by Section 33 of FRS 102
-“The Financial Reporting Standard applicable in the UK and Republic of Ireland”.
-The Group recognised commercial revenue in the year of £29,005,000 (2023: £6,710,000) from fellow subsidiary and
-associated undertakings of the Public Investment Fund (“PIF”), the Company’s ultimate parent undertaking. Of the
-amounts recognised to 30 June 2024 £583,000 had not been invoiced and thus is included in accrued income (2023
-£4,277,000). £11,005,000 of the invoiced amounts was outstanding as at 30 June 2024 (2023: £500,000).
-The Group transferred player registrations in the year for consideration (before discounting) of USD 25,000,000 (year to
-30 June 2023: £nil) to a fellow subsidiary undertaking of PIF. The balance outstanding at 30 June 2024 was USD 18,750,000
-(translated at period end £14,830,000) (2023: £nil).
+
+| | 2024 £000 | 2023 £000 |
+|---|---|---|
+| **Land and buildings** | | |
+| Not later than 1 year | 696 | 696 |
+| Between one and five years | 2,782 | 2,782 |
+| After five years | 55,211 | 55,909 |
+| | 58,689 | 59,387 |
+
+The commitments above relate to annual payments due under leases with expiry dates ranging from 2097-2126.
+
+During the year £696,000 was recognised as an expense in the Consolidated Income Statement in respect of operating leases (2023: £696,000).
+
+## 26 Capital commitments
+
+At 30 June 2024, the Group had capital commitments to purchase property, plant and equipment for which no provision had been made of £2.5m (2023: £4.8m). The Company had no capital commitments (2023: £nil).
+
+## 27 Related party transactions
+
+Transactions between the Company and its group undertakings are not disclosed as permitted by Section 33 of FRS 102 "The Financial Reporting Standard applicable in the UK and Republic of Ireland".
+
+The Group recognised commercial revenue in the year of £29,005,000 (2023: £6,710,000) from fellow subsidiary and associated undertakings of the Public Investment Fund ("PIF"), the Company's ultimate parent undertaking. Of the amounts recognised to 30 June 2024 £583,000 had not been invoiced and thus is included in accrued income (2023 £4,277,000). £11,005,000 of the invoiced amounts was outstanding as at 30 June 2024 (2023: £500,000).
+
+The Group transferred player registrations in the year for consideration (before discounting) of USD 25,000,000 (year to 30 June 2023: £nil) to a fellow subsidiary undertaking of PIF. The balance outstanding at 30 June 2024 was USD 18,750,000 (translated at period end £14,830,000) (2023: £nil).
 
 --- pág. 46 ---
 

@@ -716,45 +716,41 @@ Page 14
 --- pág. 18 ---
 
 MCLAREN RACING LIMITED
-NOTES TO THE FINANCIAL STATEMENTS
+
+NOTES TO THE FINANCIAL STATEMENTS  
 FOR THE YEAR ENDED 31 DECEMBER 2025
-1. General information
-McLaren Racing Limited (the "Company”) is a private limited company incarporated in the United Kingdom
-and registered in England. The address of the registered office is McLaren Technology Centre, Chertsey
-Road, Woking, Surrey, GU21 4YH The Company is limited by shares.
-The nature of the Company's operations and its principal activities is participating in the Formula One
-(‘F1") motor racing series. This includes the design, development, manufacture and racing of F1 cars.
-The Company has also sold its own heritage cars as part of its business activities, although this is not
-expected to continue beyond 2024.
-The Financial Statements of McLaren Racing Limited have been prepared in compliance with United
-Kingdom Accounting Standards, including Financial Reporting Standard 102 ("FRS 102”) and the
-Companies Act 2006.
-2. Summary of significant accounting policies
-2.1 ‘Basis of preparation of financial statements
-The financial statements have been prepared under the historical cost convention unless otherwise
-specified within these accounting policies and in accordance with Financial Reporting Standard 102,
-the Financial. Reporting Standard applicable in the UK and the Republic of Ireland’ and the
-Companies Act 2006. These policies have been consistently applied to all the years presented,
-unless otherwise stated.
-The preparation of financial statements in compliance with FRS 102 requires the use of certain
-critical accounting’ estimates. It also requires management to exercise judgement in applying the
-» Company's accounting policies (see note 3).
+
+### 1. General information
+
+McLaren Racing Limited (the "Company") is a private limited company incorporated in the United Kingdom and registered in England. The address of the registered office is McLaren Technology Centre, Chertsey Road, Woking, Surrey, GU21 4YH The Company is limited by shares.
+
+The nature of the Company's operations and its principal activities is participating in the Formula One ("F1") motor racing series. This includes the design, development, manufacture and racing of F1 cars. The Company has also sold its own heritage cars as part of its business activities, although this is not expected to continue beyond 2024.
+
+The Financial Statements of McLaren Racing Limited have been prepared in compliance with United Kingdom Accounting Standards, including Financial Reporting Standard 102 ("FRS 102") and the Companies Act 2006.
+
+### 2. Summary of significant accounting policies
+
+#### 2.1 Basis of preparation of financial statements
+
+The financial statements have been prepared under the historical cost convention unless otherwise specified within these accounting policies and in accordance with Financial Reporting Standard 102, the Financial Reporting Standard applicable in the UK and the Republic of Ireland and the Companies Act 2006. These policies have been consistently applied to all the years presented, unless otherwise stated.
+
+The preparation of financial statements in compliance with FRS 102 requires the use of certain critical accounting estimates. It also requires management to exercise judgement in applying the Company's accounting policies (see note 3).
+
 The following principal accounting policies have been applied:
-2.2 Financial Reporting Standard 102 - reduced disclosure exemptions
-The Company has taken advantage of the following disclosure exemptions in preparing these
-financial statements, as permitted by the FRS 102 "The Financial Reporting Standard applicable in
-the UK and Republic of Ireland":
+
+#### 2.2 Financial Reporting Standard 102 - reduced disclosure exemptions
+
+The Company has taken advantage of the following disclosure exemptions in preparing these financial statements, as permitted by the FRS 102 "The Financial Reporting Standard applicable in the UK and Republic of Ireland":
+
 - the requirements of Section 7 Statement of Cash Flows;
 - the requirements of Section 3 Financial Statement Presentation paragraph 3.17(d);
-- the requirements of Section 11 Financial Instruments paragraphs 11.42, 11.44 to 11.45, 11.47,
-11.48(a)(iiil), 14.48(a){iv), 11.48(b) and 11.48(c);
-e - the requirements of Section 12 Other Financial Instrumerits paragraphs 12.26 to 12.27,
-12.29(a), 12.29(b) and 12.29A;
-- the requirements of Section 26 Share-based Payment paragraphs 26.18(b), 26.19 to 26.21
-and 26.23;
+- the requirements of Section 11 Financial Instruments paragraphs 11.42, 11.44 to 11.45, 11.47, 11.48(a)(iii), 11.48(a)(iv), 11.48(b) and 11.48(c);
+- the requirements of Section 12 Other Financial Instruments paragraphs 12.26 to 12.27, 12.29(a), 12.29(b) and 12.29A;
+- the requirements of Section 26 Share-based Payment paragraphs 26.18(b), 26.19 to 26.21 and 26.23;
 - the requirements of Section 33 Related Party Disclosures paragraph 33.7.
-This information is included in the consolidated financial statements of McLaren Group Limited as at
-31 December 2025 and these financial statements may be obtained from Companies House.
+
+This information is included in the consolidated financial statements of McLaren Group Limited as at 31 December 2025 and these financial statements may be obtained from Companies House.
+
 Page 15
 
 --- pág. 19 ---

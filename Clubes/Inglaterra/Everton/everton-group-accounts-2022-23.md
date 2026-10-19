@@ -27,63 +27,43 @@ Notes to the Accounts 18-35
 
 --- pág. 3 ---
 
-EVERTON FOOTBALL CLUB
+EVERTON FOOTBALL CLUB | 3
 
-DIRECTORS AND ADVISERS
+# DIRECTORS AND ADVISERS
 
-W Kenwright CBE
-Chairman
-(Passed away 23 October 2023)
+**W Kenwright CBE**  
+Chairman  
+(Passed away 23 October 2023)  
+___
 
-0 Barrett-Baxendale MBE
-Chief Executive
-(Resigned 12 June 2023)
+**D Barrett-Baxendale MBE**  
+Chief Executive  
+(Resigned 12 June 2023)  
+___
 
-CChong
-(Appointed 16 June 2023)
+**A F Moshiri**  
+(Appointed 23 June 2023)  
+___
 
-G Ingles
-(Resigned 12 June 2023)
+**C Chong**  
+(Appointed 16 June 2023)  
+___
 
-Registered Office
-Goodison Park
+**J Spellman**  
+(Appointed 23 June 2023)  
+___
 
-Liverpool
-L4 4EL
+**G Ingles**  
+(Resigned 12 June 2023)  
 
-AF Moshiri
-(Appointed 23 June 2023}
+**G Sharp**  
+(Resigned 12 June 2023)  
 
-J Spellman
-(Cppointed 23 June 2023)
+***
 
-G Sharp
-(Resigned 12 June 2023)
-
-Independent Auditor Bankers
-Crowe U.K. LLP Metro Bank
-
-Black Country House One Scuthampton Row
-Rounds Green Road London
-
-Oldbury
-
-WC1B SHA
-
-West Midlands
-
-B69 206
-
-Registrars Company Registration Number
-Capita IRG 36624
-
-The Registry
-Northern House
-Woodsome Park
-Fenay Bridge
-Huddersfield
-West Yorkshire
-HD8 OGA
+| Registered Office | Independent Auditor | Bankers | Registrars | Company Registration Number |
+| :--- | :--- | :--- | :--- | :--- |
+| Goodison Park<br>Liverpool<br>L4 4EL | Crowe U.K. LLP<br>Black Country House<br>Rounds Green Road<br>Oldbury<br>West Midlands<br>B69 2DG | Metro Bank<br>One Southampton Row<br>London<br>WC1B 5HA | Capita IRG<br>The Registry<br>Northern House<br>Woodsome Park<br>Fenay Bridge<br>Huddersfield<br>West Yorkshire<br>HD8 0GA | 36624 |
 
 --- pág. 4 ---
 
@@ -1971,16 +1951,16 @@ Other reserves represents an interest free loan of £450,751,000 provided by Blu
 
 --- pág. 33 ---
 
-EVERTON FOOTBALL CLUB 33
+EVERTON FOOTBALL CLUB | 33
 
-NOTES TO THE ACCOUNTS
-FOR THE YEAR ENDED 30 JUNE 2023 (CONT.)
+# NOTES TO THE ACCOUNTS
+### FOR THE YEAR ENDED 30 JUNE 2023 (CONT.)
 
-19. CONTINGENT LIABILITIES AND ASSETS
+### 19. CONTINGENT LIABILITIES AND ASSETS
 
-No provision is included in the accounts for transfer fees of £78,007,000 (2022: £[ilegible],223,000) which are, as at 30 June 2023, contingent upon future appearances of certain players and at the balance sheet date are not considered probable; or signing-on fees and loyalty bonuses, as at 30 June 2023, of £27,130,000 (2022: £15,744,000) which would become due to certain players if they are still in the service of the Club on specific future dates.
+No provision is included in the accounts for transfer fees of £78,007,000 (2022: £60,223,000) which are, as at 30 June 2023, contingent upon future appearances of certain players and at the balance sheet date are not considered probable; or signing-on fees and loyalty bonuses, as at 30 June 2023, of £27,130,000 (2022: £15,744,000) which would become due to certain players if they are still in the service of the Club on specific future dates.
 
-20. PENSIONS
+### 20. PENSIONS
 
 Certain staff of the Group are members of either the Football League Limited Players Retirement Income Scheme, a defined contribution scheme, or the Football League Limited Pension and Life Assurance Scheme ("FLLPLAS"; "the Scheme"), a defined benefit scheme. As one of a number of participating employers in the FLLPLAS, the Group is advised only of its share of the Scheme's deficit and recognises a liability in respect of this.
 
@@ -1988,7 +1968,7 @@ As a result, the contributions paid to the scheme reduce the provision. The Grou
 
 Contributions are also paid into individuals' private pension schemes. Total contributions across all schemes during the year amounted to £1,163,000 (2022: £873,000). The amount outstanding at year end was £146,000 (2022: £80,000).
 
-21. POST BALANCE SHEET EVENTS
+### 21. POST BALANCE SHEET EVENTS
 
 Since 30 June 2023, the Club has entered into transfer agreements to acquire the registration of Norberto Bercique Gomes Betuncal (from Udinese), Youssef Chermiti (from Sporting CP), Jack Harrison (loan from Leeds United), Arnaut Danjuma (loan from Villarreal) and Ashley Young (free agent). The registrations of Alex Iwobi (to Fulham), Demarai Gray (to Al-Ettifaq), Tom Cannon (to Leicester City) have all been sold, together with the temporary loans of Mason Holgate (Southampton) and Neal Maupay (Brentford). The net transfer fees payable for these transactions, together with Everton Women FC transactions and the financial impact of contingent transfer milestones from the triggering of contingent milestones relating to existing transfer agreements is £9,149,000.
 
@@ -1996,7 +1976,7 @@ On 15 September 2023, 777 Partners signed an agreement with Farhad Moshiri to ac
 
 On 17 November 2023, an independent commission handed Everton Football Club an immediate 10-point deduction (in season 2023/24) for breaching the Premier League's Profitability and Sustainability Rules (PSR) for the 2018/19, 2019/20, 2020/21 and 2021/22 financial years. At the date of approval of the financial statements, Everton has since lodged an appeal against this penalty, and are currently awaiting the appeal process to begin. The Club is also aware that the Premier League will charge the Club with a PSR breach for 2020/21, 2021/22 and 2022/23 financial years.
 
-22. RELATED PARTY TRANSACTIONS
+### 22. RELATED PARTY TRANSACTIONS
 
 "Everton In The Community is a registered Charity (Number 1099366) incorporated on 31 July 2003 and began trading on 1 June 2004. The Charity operates separately from the Group hence has not been consolidated in the Group results, but as at 30 June 2023 Everton Football Club Company Limited employees held three of the ten Trustee positions at the Charity. During the year Everton Football Club Company Limited donated £360,000 towards the operational costs of the Charity (2022: £360,000) and provided value in kind benefits of £460,000 (2022: £496,000). Value in kind benefits of £95,000 (2022: £142,000) were provided to Everton Free School Limited.
 
@@ -2006,7 +1986,7 @@ During the year, the Club's majority shareholder has provided interest free loan
 
 The Club incurred £676,000 for leased office space in the Royal Liver Building as part of a 15-year lease agreement. The Club's majority shareholder has an ownership interest in the Royal Liver Building.
 
-23. DEVELOPER AGREEMENTS
+### 23. DEVELOPER AGREEMENTS
 
 The Group has a fixed price contract for the development of the new stadium. The contract includes termination provisions which, although management do not currently anticipate will be enforced, result in the contract not being included as a capital commitment.
 

@@ -1951,19 +1951,22 @@ the year.
 
 --- pág. 40 ---
 
-Leicester
-Football Club Plc
+Leicester  
+Football Club Plc  
 
-[Sello de Companies House]
+THURSDAY  
+KM 09/11/2023 [ilegible]  
+COMPANIES HOUSE  
 
-Aylestone Road,
-Leicester LE2 7TR
-Telephone 0116 319 8888
-Email tigers@tigers.co.uk
-www.leicestertigers.com
+Aylestone Road,  
+Leicester LE2 7TR  
+Telephone 0116 319 8888  
+Email tigers@tigers.co.uk  
+www.leicestertigers.com  
 
-Registered Office:
-The Club House, Aylestone Road,
-Leicester LE2 7TR.
-Registered in England and Wales
+Registered Office:  
+The Club House, Aylestone Road,  
+Leicester LE2 7TR.  
+Registered in England and Wales  
 Number 03459344.
+

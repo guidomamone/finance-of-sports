@@ -237,74 +237,46 @@ Denise
 
 --- pág. 5 ---
 
-ANNUAL REPORT & ACCOUNTS 2022
+ANNUAL REPORT & ACCOUNTS 2022 5
 
-DIRECTORS AND ADVISERS
+# DIRECTORS AND ADVISERS
 
-W Kenwright CBE
+**W Kenwright CBE**  
 Chairman
 
-D Barrett-Baxendale MBE
+**D Barrett-Baxendale MBE**  
 Chief Executive
 
-G Sharp
-Non-Executive Director
+**G Sharp**  
+Non-Executive Director  
 (Appointed 5 January 2022)
 
-M W Brands
-Director of Football
+**M W Brands**  
+Director of Football  
 (Resigned 3 December 2021)
 
-Registered Office
-Goodison Park
+**G Ingles**  
+Chief Finance and Strategy Officer  
+(Appointed 14 July 2021)
 
-Liverpoo!
-L4 4EL
+**S Ismailov**  
+Owner’s Executive Representative  
+(Appointed 14 July 2021, resigned 2 November 2021)
 
-G Ingles
-Chief Finance and Strategy Officer
-{Appointed 14 July 2021)
-
-$ Ismailov
-
-Owner's Executive Representative
-(Appointed 14 July 2021, resigned
-2 November 2021)
-
-ARyazantsev
-
-Chief Financial
-
-and Commercial Officer
+**A Ryazantsev**  
+Chief Financial and Commercial Officer  
 (Resigned 27 August 2021)
 
-Independent Auditor Bankers
-
-Crowe U.K. LLP Metro Bank
-
-Black Country House One Southampton Row
-Rounds Green Road Londen
-
-Oldbury WC1B SHA
-
-West Midlands
-
-B69 206
-
-istration
-
-Registrars Comp
-Capita IRG 36624
-The Registry
-
-Northern House
-Woodsome Park
-Fenay Bridge
-Huddersfield
-West Yorkshire
-HD8 OGA
-
-Li
+| Registered Office | Independent Auditor | Bankers | Registrars | Company Registration Number |
+| :--- | :--- | :--- | :--- | :--- |
+| Goodison Park | Crowe U.K. LLP | Metro Bank | Capita IRG | 36624 |
+| Liverpool | Black Country House | One Southampton Row | The Registry | |
+| L4 4EL | Rounds Green Road | London | Northern House | |
+| | Oldbury | WC1B 5HA | Woodsome Park | |
+| | West Midlands | | Fenay Bridge | |
+| | B69 2DG | | Huddersfield | |
+| | | | West Yorkshire | |
+| | | | HD8 0GA | |
 
 --- pág. 6 ---
 
@@ -2132,42 +2104,40 @@ Total future minimum lease payments under non-cancellable operating leases are a
 
 EVERTON FOOTBALL CLUB 32
 
-NOTES TO THE ACCOUNTS
-FOR THE YEAR ENDED 30 JUNE 2022 (CONT.)
+# NOTES TO THE ACCOUNTS
+### FOR THE YEAR ENDED 30 JUNE 2022 (CONT.)
 
-14. DEBTORS
+### 14. DEBTORS
 
-| | GROUP 30 June 2022 £'000 | GROUP 30 June 2021 £'000 | COMPANY 30 June 2022 £'000 | COMPANY 30 June 2021 £'000 |
-|---|---|---|---|---|
-| Amounts falling due within one year: | | | | |
+| | GROUP<br>30 June 2022<br>£’000 | GROUP<br>30 June 2021<br>£’000 | COMPANY<br>30 June 2022<br>£’000 | COMPANY<br>30 June 2021<br>£’000 |
+| :--- | :---: | :---: | :---: | :---: |
+| **Amounts falling due within one year:** | | | | |
 | Trade debtors | 42,750 | 18,114 | 42,331 | 16,643 |
 | Amounts due from subsidiaries | - | - | 288,073 | 61,873 |
 | Other financial assets | - | - | - | - |
 | Prepayments and accrued income | 56,322 | 2,560 | 3,817 | 2,506 |
 | Deferred tax | - | 26 | - | - |
-| | 99,072 | 20,700 | 344,221 | 81,022 |
-| Amounts falling due after one year: | | | | |
+| | **99,072** | **20,700** | **344,221** | **81,022** |
+| **Amounts falling due after one year:** | | | | |
 | Trade debtors | 78,258 | 272 | 78,258 | 272 |
-| | 78,258 | 272 | 78,258 | 272 |
-
-(Así en el original: el total de la compañía al 30 June 2022 está impreso 344,221; la suma de las filas y el Company Balance Sheet dan 334,221.)
+| | **78,258** | **272** | **78,258** | **272** |
 
 Excluding Everton Stadium Development Limited amounts owed by subsidiaries are unsecured, interest free and repayable on demand.
+
 Included within Prepayments are advanced payments paid to the main contractor relating to the Bramley-Moore Dock Stadium.
+
 Trade debtors due after one year represents proceeds due from the disposal of football staff registrations and are all due within 4 years.
 
-15. CREDITORS - AMOUNTS FALLING DUE WITHIN ONE YEAR
+### 15. CREDITORS - AMOUNTS FALLING DUE WITHIN ONE YEAR
 
-| | GROUP 30 June 2022 £'000 | GROUP 30 June 2021 £'000 | COMPANY 30 June 2022 £'000 | COMPANY 30 June 2021 £'000 |
-|---|---|---|---|---|
+| | GROUP<br>30 June 2022<br>£’000 | GROUP<br>30 June 2021<br>£’000 | COMPANY<br>30 June 2022<br>£’000 | COMPANY<br>30 June 2021<br>£’000 |
+| :--- | :---: | :---: | :---: | :---: |
 | Other loans (note 16) | 14,432 | 3,392 | 14,432 | 3,392 |
 | Trade creditors | 26,332 | 61,123 | 25,694 | 56,735 |
 | Accruals and deferred income | 63,401 | 42,083 | 49,516 | 32,206 |
 | Amounts due to subsidiaries | - | - | 16,556 | 10,168 |
 | Social security and other taxes | 22,232 | 15,192 | 22,517 | 15,090 |
-| | 126,387 | 121,790 | 128,715 | 117,591 |
-
-(Así en el original: trade creditors del grupo al 30 June 2022 está impreso 26,332; con ese valor la columna suma 126,397, no 126,387. Las cuentas 2022-23 muestran este comparativo como 26,322, que sí cierra.)
+| | **126,387** | **121,790** | **128,715** | **117,591** |
 
 Amounts owed to subsidiaries are unsecured, interest free and repayable on demand.
 

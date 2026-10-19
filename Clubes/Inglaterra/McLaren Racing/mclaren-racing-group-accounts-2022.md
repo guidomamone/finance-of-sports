@@ -41,51 +41,41 @@ Annual report and consolidated financial statements
 
 --- pág. 3 ---
 
-McLaren Racing Limited
-Annual report and consolidated financial statements
-31 December 2022
-Strategic report
-Principal activities
-The principal activity of McLaren Racing Limited (the “Company”’) and its subsidiaries (collectively the.
-“Group”) during the year was that of participating in a number of motor racing series throughout the world,
-most notably in Formula One (“F1”). This includes the design, development, manufacture and racing of
-Formula One cars. During the year the Group also participated in IndyCar, Extreme E and Esports. In
-addition, the Company sells its own heritage cars as part of its business activities.
-Business review
-Racing season and commercial review
-The Group's success is measured by the performance in the championships and other key performance
-indicators, as discussed in greater detail later-in the strategic report.
-In Formula One, in a calendar of 22 races the team finished 5% place in the Constructors’ World
-Championship following a close battle for 4" placé with-points haul of 159. The team continued with their
-2021 driver line up of Lando Norris and Daniel Ricciardo.
-Following the acquisition of a 75% stake at the end of 2021 the IndyCar team under McLaren's majority
-ownership in 2022 enjoyed great success on track with 2 wins and 5 podiums in total. The driver line up of
-Patricio O’Ward and Felix Rosenqvist was complimented by Juan Pablo Montoya in the prestigious Indy
-500 race and after a thrilling flight to the end we finished with the three cars placed 2™, 4'" and 11%.
-The year also saw the first full year of racing in Extreme E, with Emma Gilmour and Tanner Foust as drivers.
-During 2022, a title sponsor, NEOM, was announced for the series. From 2023, NEOM will also sponsor 5
-our Formula E team.
-The Esports team won the Constructors’ Championship and Drivers’ Championship.
+***McLaren Racing Limited***
+*Annual report and consolidated financial statements*
+*31 December 2022*
+
+# Strategic report
+
+**Principal activities**
+
+The principal activity of McLaren Racing Limited (the "Company") and its subsidiaries (collectively the "Group") during the year was that of participating in a number of motor racing series throughout the world, most notably in Formula One ("F1"). This includes the design, development, manufacture and racing of Formula One cars. During the year the Group also participated in IndyCar, Extreme E and Esports. In addition, the Company sells its own heritage cars as part of its business activities.
+
+**Business review**
+
+**Racing season and commercial review**
+
+The Group's success is measured by the performance in the championships and other key performance indicators, as discussed in greater detail later in the strategic report.
+
+In Formula One, in a calendar of 22 races the team finished 5th place in the Constructors' World Championship following a close battle for 4th place with points haul of 159. The team continued with their 2021 driver line up of Lando Norris and Daniel Ricciardo.
+
+Following the acquisition of a 75% stake at the end of 2021 the IndyCar team under McLaren's majority ownership in 2022 enjoyed great success on track with 2 wins and 5 podiums in total. The driver line up of Patricio O'Ward and Felix Rosenqvist was complimented by Juan Pablo Montoya in the prestigious Indy 500 race and after a thrilling flight to the end we finished with the three cars placed 2nd, 4th and 11th.
+
+The year also saw the first full year of racing in Extreme E, with Emma Gilmour and Tanner Foust as drivers. During 2022, a title sponsor, NEOM, was announced for the series. From 2023, NEOM will also sponsor our Formula E team.
+
+The Esports team won the Constructors' Championship and Drivers' Championship.
+
 The Group enjoyed a strong year achieving 1,458 points, five poles, seven wins, and 18 podiums.
-As a Group, we have seen revenue increase from £211,368K to £327,892K primarily as a result of increased
-sponsors in the year, a return to pre-covid hospitality and inclusion of revenue from the IndyCar operations.
-2022 is the first year of McLaren’s IndyCar entry. This contributed £16,354K (2021: £nil) to revenue.
-The strong revenue growth has contributed to above budget performance, +but the Group still made an
-operating loss of £9,080K (2021: loss of £32,652K). Inflationary pressures across all costs as well as a one-
-off provision for driver costs and increased costs related to a return to pre-covid hospitality levels have.all
-contributed to this and have led to a need to be additionally agile to the demands of the business. The net
-interest cost for the year was £44,236K (2021: £19,542K), with the increase compared to 2021 mainly
-attributable to interest cost on loan notes and fair value movements on financial instruments recorded at fair
-value through profit and loss.
-The consolidated cash balance at year end was £110,358K (2021: £42,317K) which was higher primarily
-due to a further drawdown of the loan of £27,606K and advanced receipts of sponsorship ahead of the 2023
-season amounting to £102,738K. These increases were offset by outflows on capital expenditure.
-The McLaren Racing Limited standalone financial statements showed revenue of £311 ,267K_ (2021:
-£282,211K). Excluding the intercompany sales of heritage assets of £70,822K from 2021, this represented
-an increase from £211,368K to £282,190K. This again is primarily due to the strength in sponsorship
-revenue and an increase into a full hospitality calendar year. The strength in revenue ultimately was
-mitigated by inflationary pressures, consistent with the Group, resulting in a loss before interest and tax of
-£4,107K, (2021: profit of £15,123K).
+
+As a Group, we have seen revenue increase from £211,368K to £327,892K primarily as a result of increased sponsors in the year, a return to pre-covid hospitality and inclusion of revenue from the IndyCar operations. 2022 is the first year of McLaren's IndyCar entry. This contributed £16,354K (2021: £nil) to revenue.
+
+The strong revenue growth has contributed to above budget performance, but the Group still made an operating loss of £9,080K (2021: loss of £32,652K). Inflationary pressures across all costs as well as a one-off provision for driver costs and increased costs related to a return to pre-covid hospitality levels have all contributed to this and have led to a need to be additionally agile to the demands of the business. The net interest cost for the year was £44,236K (2021: £19,542K), with the increase compared to 2021 mainly attributable to interest cost on loan notes and fair value movements on financial instruments recorded at fair value through profit and loss.
+
+The consolidated cash balance at year end was £110,358K (2021: £42,317K) which was higher primarily due to a further drawdown of the loan of £27,606K and advanced receipts of sponsorship ahead of the 2023 season amounting to £102,738K. These increases were offset by outflows on capital expenditure.
+
+The McLaren Racing Limited standalone financial statements showed revenue of £311,267K (2021: £282,211K). Excluding the intercompany sales of heritage assets of £70,822K from 2021, this represented an increase from £211,368K to £282,190K. This again is primarily due to the strength in sponsorship revenue and an increase into a full hospitality calendar year. The strength in revenue ultimately was mitigated by inflationary pressures, consistent with the Group, resulting in a loss before interest and tax of £4,107K, (2021: profit of £15,123K).
+
+3
 
 --- pág. 4 ---
 
@@ -489,42 +479,41 @@ We have continued the energy saving programmes started in the prior year includi
 
 --- pág. 13 ---
 
-McLaren Racing Limited
-Annual report and consolidated financial statements
-31 December 2022
-Directors’ report (continued)
-Energy efficiency and emissions reductions (continued)
-McLaren-Racing Limited publishes an annual sustainability report which contains more extensive
-sustainability data, alongside further details of our current progress and future plans., 3
-Statement of directors’ responsibilities in respect of the financial statements
-The Directors are responsible for preparing the Annual report and consolidated financial statements (the
-Annual report’) in accordance with applicable law and regulation.
-Company law requires the Directors to prepare financial statements for each financial year. Under that law
-the Directors have prepared the Group and Company financial statements in accordance with United.
-Kingdom Generally Accepted Accounting Practice (United Kingdom Accounting Standards; comprising FRS
-4 102 “The Financial Reporting Standard applicable in the UK and Republic of Ireland”, and applicable law),
-Under company law the Directors must not approve the financial statements unless they are satisfied that
-they give a true and fair view of the state of affairs of the Group and Company and of the profit or loss of
-the Group and company for that period. In preparing the financial statements, the. Directors are required to:
-- Select suitable accounting policies and then apply them consistently;
-State whether applicable United Kingdom Accounting Standards, comprising FRS 102, have been
-followed, subject to any material departures disclosed and explained in the financial statements;
-- Make judgements and accounting estimates that are reasonable and prudent; and
-- Prepare the financial statements on the going concern basis unless it is inappropriate to presume
-that the‘Group and Company will continue in business.
-The Directors are also responsible for safeguarding the assets of the Group and Company and hence for
-taking reasonable steps for the prevention and detection of fraud and other irregularities.
-The Directors are responsible for keeping adequate accounting records that are sufficient to show and
-explain the Group's and Company's transactions and disclose with reasonable accuracy at any time the
-financial position of the Group’s and Company's and enable them to ensure that the financial statements
-comply with the Companies Act 2006.
-Directors’ confirmations
-In the case of each Director in office at the date the Directors’ Report is approved:
-far’as the Director is aware, there is no relevant audit information of which the Group's and
-Company's auditors are unaware; and
-- They have taken all the ‘steps that they ought to have taken as a Director in order to make
-themselves aware of any. relevant audit information and to establish that the Group’s and
-Company's auditors are aware of that information.
+McLaren Racing Limited  
+Annual report and consolidated financial statements  
+31 December 2022  
+
+### Directors' report (continued)
+
+#### Energy efficiency and emissions reductions (continued)
+
+McLaren Racing Limited publishes an annual sustainability report which contains more extensive sustainability data, alongside further details of our current progress and future plans.
+
+#### Statement of directors' responsibilities in respect of the financial statements
+
+The Directors are responsible for preparing the Annual report and consolidated financial statements (the 'Annual report') in accordance with applicable law and regulation.
+
+Company law requires the Directors to prepare financial statements for each financial year. Under that law the Directors have prepared the Group and Company financial statements in accordance with United Kingdom Generally Accepted Accounting Practice (United Kingdom Accounting Standards, comprising FRS 102 "The Financial Reporting Standard applicable in the UK and Republic of Ireland", and applicable law).
+
+Under company law the Directors must not approve the financial statements unless they are satisfied that they give a true and fair view of the state of affairs of the Group and Company and of the profit or loss of the Group and company for that period. In preparing the financial statements, the Directors are required to:
+
+* Select suitable accounting policies and then apply them consistently;
+* State whether applicable United Kingdom Accounting Standards, comprising FRS 102, have been followed, subject to any material departures disclosed and explained in the financial statements;
+* Make judgements and accounting estimates that are reasonable and prudent; and
+* Prepare the financial statements on the going concern basis unless it is inappropriate to presume that the Group and Company will continue in business.
+
+The Directors are also responsible for safeguarding the assets of the Group and Company and hence for taking reasonable steps for the prevention and detection of fraud and other irregularities.
+
+The Directors are responsible for keeping adequate accounting records that are sufficient to show and explain the Group's and Company's transactions and disclose with reasonable accuracy at any time the financial position of the Group's and Company's and enable them to ensure that the financial statements comply with the Companies Act 2006.
+
+#### Directors' confirmations
+
+In the case of each Director in office at the date the Directors' Report is approved:
+
+* So far as the Director is aware, there is no relevant audit information of which the Group's and Company's auditors are unaware; and
+* They have taken all the steps that they ought to have taken as a Director in order to make themselves aware of any relevant audit information and to establish that the Group's and Company's auditors are aware of that information.
+
+13
 
 --- pág. 14 ---
 
@@ -883,30 +872,31 @@ The notes on pages 28 to 65 form an integral part of these financial statements.
 
 --- pág. 23 ---
 
-McLaren Racing Limited
-Annual report and financial statements
+McLaren Racing Limited  
+Annual report and financial statements  
 31 December 2022
 
-**Consolidated balance sheet**
-*as at 31 December 2022*
+### Consolidated balance sheet
+**as at 31 December 2022**
 
-| | Note | 2022 £000 | 2021 £000 (Restated)* |
-|---|---|---|---|
+| | Note | 2022<br>£000 | 2021<br>£000<br>(Restated)* |
+| :--- | :---: | :---: | :---: |
 | **Fixed assets** | | | |
 | Intangible assets | 10 | 9,477 | 8,574 |
 | Tangible assets | 11 | 60,472 | 42,930 |
 | Heritage assets | 12 | 23,901 | 23,601 |
-| | | 93,850 | 75,105 |
+| | | **93,850** | **75,105** |
 | **Current assets** | | | |
 | Inventories | 14 | 27,137 | 38,305 |
 | Debtors | 15 | 93,301 | 47,826 |
 | Cash at bank and in hand | | 110,358 | 42,317 |
-| | | 230,796 | 128,448 |
-| **Creditors: Amounts falling due within one year** | 16 | (201,970) | (98,633) |
-| **Net current assets** | | 28,826 | 29,815 |
-| **Total assets less current liabilities** | | 122,676 | 104,920 |
-| **Creditors: Amounts falling due after more than one year** | 17 | (187,941) | (119,244) |
-| **Net liabilities** | | (65,265) | (14,324) |
+| | | **230,796** | **128,448** |
+| **Creditors: Amounts falling due within one year** | 16 | **(201,970)** | **(98,633)** |
+| **Net current assets** | | **28,826** | **29,815** |
+| **Total assets less current liabilities** | | **122,676** | **104,920** |
+| **Creditors: Amounts falling due after more than one year** | 17 | **(187,941)** | **(119,244)** |
+| **Net liabilities** | | **(65,265)** | **(14,324)** |
+| | | | |
 | **Capital and reserves** | | | |
 | Called up share capital | 19 | 50 | 50 |
 | Shares to be issued | 23 | 38,300 | 34,000 |
@@ -914,65 +904,68 @@ Annual report and financial statements
 | Other reserves | 19 | 1,966 | - |
 | Foreign currency translation reserve | | (81) | - |
 | Accumulated losses | | (120,776) | (65,878) |
-| **Equity attributable to owners of the parent** | | (65,827) | (15,329) |
+| **Equity attributable to owners of the parent** | | **(65,827)** | **(15,329)** |
 | Non-controlling interest | 22 | 562 | 1,005 |
-| **Total Deficit** | | (65,265) | (14,324) |
+| **Total Deficit** | | **(65,265)** | **(14,324)** |
 
-*Refer to note 21 for details
+\*Refer to note 21 for details
 
 The notes on pages 28 to 65 are an integral part of these consolidated financial statements.
 
 The consolidated financial statements of McLaren Racing Limited on pages 21 to 65 were authorised for issue by the Board of Directors on 30 March 2023 and signed on its behalf by:
 
-DocuSigned by:
-Zak Brown
-Director
-Registered number 01517478
+DocuSigned by:  
+[Firma]  
+8F609CC569554C9...  
+**Zak Brown**  
+Director  
+Registered number 01517478  
 
 23
 
 --- pág. 24 ---
 
-McLaren Racing Limited
-Annual report and financial statements
-31 December 2022
+McLaren Racing Limited  
+Annual report and financial statements  
+31 December 2022  
 
-**Company balance sheet**
-*as at 31 December 2022*
+### Company balance sheet
+as at 31 December 2022
 
-| | Note | 2022 £000 | 2021 £000 |
-|---|---|---|---|
+| | Note | 2022<br>£000 | 2021<br>£000 |
+| :--- | :---: | :---: | :---: |
 | **Fixed assets** | | | |
 | Tangible assets | 11 | 55,452 | 41,858 |
 | Heritage assets | 12 | 833 | 533 |
 | Investments | 13 | 8,695 | - |
-| | | 64,980 | 42,391 |
+| | | **64,980** | **42,391** |
 | **Current assets** | | | |
 | Inventories | 14 | 25,755 | 38,305 |
 | Debtors | 15 | 178,480 | 125,595 |
 | Cash at bank and in hand | | 103,580 | 39,904 |
-| | | 307,815 | 203,804 |
-| **Creditors: Amounts falling due within one year** | 16 | (185,768) | (92,619) |
-| **Net current assets** | | 122,047 | 111,185 |
-| **Total assets less current liabilities** | | 187,027 | 153,576 |
-| **Creditors: Amounts falling due after more than one year** | 17 | (186,544) | (114,297) |
-| **Net assets** | | 483 | 39,279 |
+| | | **307,815** | **203,804** |
+| **Creditors: Amounts falling due within one year** | 16 | **(185,768)** | **(92,619)** |
+| **Net current assets** | | **122,047** | **111,185** |
+| **Total assets less current liabilities** | | **187,027** | **153,576** |
+| **Creditors: Amounts falling due after more than one year** | 17 | **(186,544)** | **(114,297)** |
+| **Net assets** | | **483** | **39,279** |
 | **Capital and reserves** | | | |
 | Called up share capital | 19 | 50 | 50 |
 | Shares to be issued | 23 | 38,300 | 34,000 |
 | Revaluation reserve | | 364 | 2,528 |
 | Other Reserves | 19 | 1,966 | - |
 | (Accumulated losses) / Retained earnings | | (40,197) | 2,701 |
-| **Total equity** | | 483 | 39,279 |
+| **Total equity** | | **483** | **39,279** |
 
 The notes on pages 28 to 65 are an integral part of these financial statements.
 
 The financial statements of McLaren Racing Limited on pages 21 to 65 were authorised for issue by the Board of Directors on 30 March 2023 and signed on its behalf by:
 
-DocuSigned by:
-Zak Brown
-Director
-Registered number 01517478
+*[Firma]*  
+8F809CC569554C9...  
+Zak Brown  
+Director  
+Registered number 01517478  
 
 24
 

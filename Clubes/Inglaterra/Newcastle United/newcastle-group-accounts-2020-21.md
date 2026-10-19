@@ -1411,54 +1411,51 @@ Included in Other interest payable is £213k (2020: £nil) accrued interest adde
 
 --- pág. 30 ---
 
-Newcastle United Limited | 27
-Financial statements for the 11 month period ended 30 June 2021
-Notes to the financial statements (continued)
-11 Taxation
+Newcastle United Limited  
+Financial statements for the 11 month period ended 30 June 2021  
+27
 
+# Notes to the financial statements (continued)
 
-Newcastle United Limited 27 oo
-7 : Financial statements for the 11 month period ended 30 June 20217 ; TS -
-Notes to the financial statements (continued)
-11 Taxation
-2021 2020
-. £000 £000
-| | 2021 £000 | 2020 £000 |
-|---|---|---|
+### 11 Taxation
+
+| | 2021<br>£000 | 2020<br>£000 |
+| :--- | :---: | :---: |
 | **Current tax** | | |
 | Corporation tax | (132) | (861) |
 | **Deferred tax** | | |
 | Origination and reversal of timing differences | (1,298) | (2,571) |
-| Total tax credit for the period | (1,430) | (3,432) |
+| **Total tax credit for the period** | **(1,430)** | **(3,432)** |
 
-Factors affecting tax credit for the period
-
+**Factors affecting tax credit for the period**  
 The tax assessed for the year is lower than (2020: lower than) the standard rate of corporation tax in the UK of 19% (2020: 19%). The differences are explained below:
 
-| | 2021 £000 | 2020 £000 |
-|---|---|---|
+| | 2021<br>£000 | 2020<br>£000 |
+| :--- | :---: | :---: |
 | Loss before tax | (13,622) | (25,972) |
 | Loss before tax multiplied by standard rate of corporation tax in the UK of 19% (2020: 19%) | (2,588) | (4,935) |
-| Effects of: | | |
+| **Effects of:** | | |
 | Expenses not deductible for tax purposes | 657 | 760 |
 | Tax rate adjustments | 387 | 707 |
 | Adjustments to tax charge in respect of prior periods | 114 | 36 |
-| Total tax credit for the period | (1,430) | (3,432) |
+| **Total tax credit for the period** | **(1,430)** | **(3,432)** |
 
 In March 2021, the Finance Bill was announced and this was substantively enacted on 24 May 2021. This included legislation that the UK tax rate will increase from 19% to 25% from 1 April 2023. The deferred tax provision as at 30 June 2021 has been calculated using the tax rate of 25% (2020: 19%).
 
 --- pág. 31 ---
 
-Newcastle United Limited | 28
-Financial statements for the 11 month period ended 30 June 2021
-Notes to the financial statements (continued)
+Newcastle United Limited  
+Financial statements for the 11 month period ended 30 June 2021  
+28
 
-12 Intangible assets
+# Notes to the financial statements (continued)
 
-Group
+### 12 Intangible assets
 
-| | Players' registrations £000 |
-|---|---|
+**Group**
+
+| | Players'<br>registrations<br>£000 |
+| :--- | :---: |
 | **Cost** | |
 | At 1 August 2020 | 215,850 |
 | Additions | 40,823 |
@@ -1473,13 +1470,13 @@ Group
 | At 30 June 2021 | 101,830 |
 | At 31 July 2020 | 93,696 |
 
-The intangible asset that is material to the financial statements is the first team squad. The carrying value of the squad is £101,830,000 with a remaining amortisation period of 1-5 years. The amortisation charge for the current squad over this period will be;
+The intangible asset that is material to the financial statements is the first team squad. The carrying value of the squad is £101,830, 000 with a remaining amortisation period of 1-5 years. The amortisation charge for the current squad over this period will be;
 
-2021/22 - £32,481,000
-2022/23 - £28,203,000
-2023/24 - £23,974,000
-2024/25 - £14,138,000
-2025/26 - £3,034,000
+2021/22 - £32,481,000  
+2022/23 - £28,203,000  
+2023/24 - £23,974,000  
+2024/25 - £14,138,000  
+2025/26 - £3,034,000  
 
 --- pág. 32 ---
 

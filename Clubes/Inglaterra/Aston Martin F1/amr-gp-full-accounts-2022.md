@@ -463,41 +463,36 @@ contrary to these laws and regulations, including fraud.
 
 --- pág. 14 ---
 
-AMR GP Limited
-Independent Auditor's Report to the Members of AMR GP Limited (continued)
-We focused on laws and regulations that could give rise to a material misstatement in the financial statements,
-including, but not limited to, the Companies Act 2006, FIA legislation, UK tax legislation and equivalent local laws
-and regulations.
-We made enquiries of management with regards to compliance with the above laws and regulations and
-corroborated any necessary evidence to relevant information, for example, minutes of the Board of Directors
-meetings and correspondence between the Group or Parent Company and its solicitors. Our tests included
-agreeing the financial statements disclosures to underlying supporting documentation and enquiries with
-management.
-We did not identify any key audit matters relating to irregularities, including fraud. As in all of our audits, we also
-addressed the risk of management override of internal controls including testing journals and evaluation whether
-there was evidence of bias by the Directors that represented a risk of material misstatement due to fraud.
-Our audit procedures were designed to respond to risks of material misstatement in the financial statements,
-recognising that the risk of not detecting a material misstatement due to fraud is higher than the risk of not
-detecting one resulting from error, as fraud may involve deliberate concealment by, for example, forgery,
-misrepresentations or through collusion. There are inherent limitations in the audit procedures performed and the
-further removed non-compliance with laws and regulations is from the events and transactions reflected in the
-financial statements, the less likely we are to become aware of it.
+# AMR GP Limited
+
+### Independent Auditor's Report to the Members of AMR GP Limited (continued)
+
+We focused on laws and regulations that could give rise to a material misstatement in the financial statements, including, but not limited to, the Companies Act 2006, FIA legislation, UK tax legislation and equivalent local laws and regulations.
+
+We made enquiries of management with regards to compliance with the above laws and regulations and corroborated any necessary evidence to relevant information, for example, minutes of the Board of Directors meetings and correspondence between the Group or Parent Company and its solicitors. Our tests included agreeing the financial statements disclosures to underlying supporting documentation and enquiries with management.
+
+We did not identify any key audit matters relating to irregularities, including fraud. As in all of our audits, we also addressed the risk of management override of internal controls including testing journals and evaluation whether there was evidence of bias by the Directors that represented a risk of material misstatement due to fraud.
+
+Our audit procedures were designed to respond to risks of material misstatement in the financial statements, recognising that the risk of not detecting a material misstatement due to fraud is higher than the risk of not detecting one resulting from error, as fraud may involve deliberate concealment by, for example, forgery, misrepresentations or through collusion. There are inherent limitations in the audit procedures performed and the further removed non-compliance with laws and regulations is from the events and transactions reflected in the financial statements, the less likely we are to become aware of it.
+
 A further description of our responsibilities is available on the Financial Reporting Council's website at:
 https://www.frc.org.uk/auditorsresponsibilities. This description forms part of our auditor's report.
-Use of our report
-This report is made solely to the Company's members, as a body, in accordance with Chapter 3 of Part 16 of the
-Companies Act 2006. Our audit work has been undertaken so that we might state to the Company's members
-those matters we are required to state to them in an auditor's report and for no other purpose. To the fullest
-extent permitted by law, we do not accept or assume responsibility to anyone other than the Company and the
-Company's members as a body, for our audit work, for this report, or for the opinions we have formed.
-DocuSigned by:
-[ cand M Sours
-AF9E7 1052330451... .
-Gareth M Jones FCA (Senior Statutory Auditor)
-For and on behalf of BDO LLP, Statutory Auditor
-London, UK
+
+### Use of our report
+
+This report is made solely to the Company's members, as a body, in accordance with Chapter 3 of Part 16 of the Companies Act 2006. Our audit work has been undertaken so that we might state to the Company's members those matters we are required to state to them in an auditor's report and for no other purpose. To the fullest extent permitted by law, we do not accept or assume responsibility to anyone other than the Company and the Company's members as a body, for our audit work, for this report, or for the opinions we have formed.
+
+---DocuSigned by:  
+*Gareth M Jones*  
+AF9E71C5233D451...  
+Gareth M Jones FCA (Senior Statutory Auditor)  
+For and on behalf of BDO LLP, Statutory Auditor  
+London, UK  
+
 Date: 17 March 2023
+
 BDO LLP is a limited liability partnership registered in England and Wales (with registered number OC305127).
+
 11
 
 --- pág. 15 ---
@@ -1157,37 +1152,41 @@ For the Year Ended 31 December 2022
 
 --- pág. 31 ---
 
-AMR GP Limited
-Notes to the Financial Statements
-For the Year Ended 31 December 2022
-13. Tangible fixed assets (continued)
-The net book value of assets held under finance leases or hire purchase contracts, included above, are
-as follows:
-2022 2021
-£000 £000
-Motor vehicles 159 293
-14. Fixed asset investments
-Investments
-in subsidiary
-companies
-£000
-Cost or valuation
-At 1 January 2022 and 31 December 2022 50
-Subsidiary undertakings
+# AMR GP Limited
+
+### Notes to the Financial Statements  
+### For the Year Ended 31 December 2022
+
+#### 13. Tangible fixed assets (continued)
+
+The net book value of assets held under finance leases or hire purchase contracts, included above, are as follows:
+
+| | 2022<br>£000 | 2021<br>£000 |
+| :--- | :---: | :---: |
+| Motor vehicles | 159 | 293 |
+
+#### 14. Fixed asset investments
+
+| | Investments<br>in subsidiary<br>companies<br>£000 |
+| :--- | :---: |
+| **Cost or valuation** | |
+| At 1 January 2022 and 31 December 2022 | 50 |
+
+##### Subsidiary undertakings
+
 The following were subsidiary undertakings of the Company:
-Class of
-Name shares Holding
-Racing Point UK Limited (formerly known as AMR GP Finance PLC) (dormant) = Ordinary 100%
-AMR Commerce Limited (formerly known as: Racing Point UK Holdings Limited) Ordinary 100%
-(dormant)
-Aston Martin Performance Technologies Limited (formerly known as: Dadford Ordinary 100%
-Road Property Limited)
-AMR Performance Technologies Limited (formerly known as: Racing Point UK Ordinary 100%
-Limited)
-AMR Performance Aerodynamics Limited Ordinary 100%
-AMR GP Services Limited Ordinary 100%
-The registered office of all subsidiary undertakings is Aston Martin Formula One Team, Silverstone,
-Towcester, Northamptonshire, NN12 8TJ. .
+
+| Name | Class of<br>shares | Holding |
+| :--- | :--- | :---: |
+| Racing Point UK Limited (formerly known as AMR GP Finance PLC) (dormant) | Ordinary | 100% |
+| AMR Commerce Limited (formerly known as: Racing Point UK Holdings Limited) (dormant) | Ordinary | 100% |
+| Aston Martin Performance Technologies Limited (formerly known as: Dadford Road Property Limited) | Ordinary | 100% |
+| AMR Performance Technologies Limited (formerly known as: Racing Point UK Limited) | Ordinary | 100% |
+| AMR Performance Aerodynamics Limited | Ordinary | 100% |
+| AMR GP Services Limited | Ordinary | 100% |
+
+The registered office of all subsidiary undertakings is Aston Martin Formula One Team, Silverstone, Towcester, Northamptonshire, NN12 8TJ.
+
 28
 
 --- pág. 32 ---
@@ -1364,48 +1363,41 @@ Profit and loss account represents retained earnings and accumulated losses of t
 
 --- pág. 36 ---
 
-AMR GP Limited
-Notes to the Financial Statements
-For the Year Ended 31 December 2022
-26. Pension commitments
-The Company operates a defined contributions pension scheme. The assets of the scheme are held
-separately from those of the Company in an independently administered fund. The pension cost charge
-represents contributions payable by the Company to the fund and amounted to £1,847,000 (2021 -
-£1,682,000). Contributions totalling £Nil (2021 - £313,000) were payable to the fund at the reporting date
-and are included in creditors.
-27. Commitments under operating leases
-At 31 December 2022 the Company had future minimum lease payments due under non-cancellable
-operating leases for each of the following periods:
-2022 2021
-£000 £000
-Not later than 1 year 934 106
-Later than 1 year and not later than 5 years 671 183
-1,605 289
-28. Related party transactions
-The Company has taken exemption under FRS 102 section 33.1A from disclosing transactions with
-group companies, on the grounds that each company party to the transactions is wholly owned within the
-group.
-The Company has entered into contracts with Falcon Racing Inc, a company which Mr Lance Stroll, the
-son of a director, has significant influence over, to provide racing services. For the current year a net
-expense of US$1,835,000 (2021 - US$2,060,000) was incurred with Falcon Racing Inc in respect of the
-provision of these services.
-In addition the Company recognised sponsorship income of US$1,250,000 (2021 - US$Nil) from Falcon
-Racing Inc during the year.
-At 31 December 2022, a net balance of US$13,000 was due to the Company by Falcon Racing Inc (2021
-- US$315,000 due to the Company).
-During the year the Company made purchases of £Nil (2021 - £Nil) from AMR GP Holdings Limited, a
-company under common control. At the year end a balance of £14,836,000 (2021 - £1,551,000) was
-owed by the Company to AMR GP Holdings Limited for financing activity.
-During the year, the Company received net marketing income amounting to £19,208,000 (2021 -
-£20,052,000) in the normal course of business from Aston Martin Lagonda Global Holdings plc (Aston
-Martin), an entity that a director of the Company has significant influence over as Executive Chairman.
-Under the terms of the sponsorship agreement Aston Martin is required to provide one fleet vehicle to
-each racing driver free of charge. This arrangement is expected to continue for the life of the contract and
-is not expected to materially affect the financial position and performance of the Company. One of the
-racing drivers is an immediate family member of one of the group's key management personnel.
-During the year, the Company incurred aviation costs of £4,085,000 (2021: £Nil) in the normal course of
-business. These costs were incurred with businesses which are related due to a director having
-significant influence. All amounts remained outstanding at the year end.
+# AMR GP Limited
+
+### Notes to the Financial Statements  
+### For the Year Ended 31 December 2022
+
+#### 26. Pension commitments
+
+The Company operates a defined contributions pension scheme. The assets of the scheme are held separately from those of the Company in an independently administered fund. The pension cost charge represents contributions payable by the Company to the fund and amounted to £1,847,000 (2021 - £1,682,000). Contributions totalling £nil (2021 - £313,000) were payable to the fund at the reporting date and are included in creditors.
+
+#### 27. Commitments under operating leases
+
+At 31 December 2022 the Company had future minimum lease payments due under non-cancellable operating leases for each of the following periods:
+
+| | 2022<br>£000 | 2021<br>£000 |
+| :--- | :---: | :---: |
+| Not later than 1 year | 934 | 106 |
+| Later than 1 year and not later than 5 years | 671 | 183 |
+| | **1,605** | **289** |
+
+#### 28. Related party transactions
+
+The Company has taken exemption under FRS 102 section 33.1A from disclosing transactions with group companies, on the grounds that each company party to the transactions is wholly owned within the group.
+
+The Company has entered into contracts with Falcon Racing Inc, a company which Mr Lance Stroll, the son of a director, has significant influence over, to provide racing services. For the current year a net expense of US$1,835,000 (2021 - US$2,060,000) was incurred with Falcon Racing Inc in respect of the provision of these services.
+
+In addition the Company recognised sponsorship income of US$1,250,000 (2021 - US$Nil) from Falcon Racing Inc during the year.
+
+At 31 December 2022, a net balance of US$13,000 was due to the Company by Falcon Racing Inc (2021 - US$315,000 due to the Company).
+
+During the year the Company made purchases of £Nil (2021 - £Nil) from AMR GP Holdings Limited, a company under common control. At the year end a balance of £14,836,000 (2021 - £1,551,000) was owed by the Company to AMR GP Holdings Limited for financing activity.
+
+During the year, the Company received net marketing income amounting to £19,208,000 (2021 - £20,052,000) in the normal course of business from Aston Martin Lagonda Global Holdings plc (Aston Martin), an entity that a director of the Company has significant influence over as Executive Chairman. Under the terms of the sponsorship agreement Aston Martin is required to provide one fleet vehicle to each racing driver free of charge. This arrangement is expected to continue for the life of the contract and is not expected to materially affect the financial position and performance of the Company. One of the racing drivers is an immediate family member of one of the group's key management personnel.
+
+During the year, the Company incurred aviation costs of £4,085,000 (2021: £Nil) in the normal course of business. These costs were incurred with businesses which are related due to a director having significant influence. All amounts remained outstanding at the year end.
+
 33
 
 --- pág. 37 ---

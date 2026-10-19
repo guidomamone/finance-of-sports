@@ -975,47 +975,65 @@ Page 23 continued...
 
 --- pág. 26 ---
 
-SUNDERLAND ASSOCIATION FOOTBALL .
-CLUB, LIMITED(THE)
-NOTES TO THE FINANCIAL STATEMENTS - continued ,
+SUNDERLAND ASSOCIATION FOOTBALL
+CLUB,LIMITED(THE)
+
+NOTES TO THE FINANCIAL STATEMENTS - continued
 FOR THE YEAR ENDED 31 JULY 2021
+
 11. FIXED ASSET INVESTMENTS
-The company's investments at the Balance Sheet date in the share capital of companies include the following: -
-SAFC.COM PLC ,
-, Registered office: The Sunderland Stadium of Light, Sunderland, SR5 1SU
+
+The company's investments at the Balance Sheet date in the share capital of companies include the following:
+
+**SAFC.COM PLC**  
+Registered office: The Sunderland Stadium of Light, Sunderland, SR5 1SU  
 Nature of business: Dormant
-Class of shares: holding
-Ordinary 100.00
-2021 2020 °
-£'000 £'000
-; Aggregate capital and reserves , 50 50 .
-Sunderland AFC.COM Limited
-Registered office: The Sunderland Stadium of Light, Sunderland, SRS 1SU
+
+| Class of shares: | % holding |
+| :--- | :--- |
+| Ordinary | 100.00 |
+
+| | 2021<br>£'000 | 2020<br>£'000 |
+| :--- | :---: | :---: |
+| Aggregate capital and reserves | 50 | 50 |
+
+**Sunderland AFC.COM Limited**  
+Registered office: The Sunderland Stadium of Light, Sunderland, SR5 1SU  
 Nature of business: Dormant
-%
-Class of shares: holding
-Ordinary 100.00
+
+| Class of shares: | % holding |
+| :--- | :--- |
+| Ordinary | 100.00 |
+
 Sunderland AFC.COM Limited is a wholly owned subsidiary of SAFC.COM PLC.
-‘ 1879 Events Management Limited
-Registered office: The Sunderland Stadium of Light, Sunderland, SRS 1SU
-Nature of business: Events management services :
-%
-Class of shares: holding
-Ordinary 100.00
-; 2021 2020
-£'000 £'000
-Aggregate capital and reserves 284 284
-Sunderland Association Football Club Ladies Limited
-Registered office: The Sunderland Stadium of Light, Sunderland, SR5 1SU ;
-Nature of business: Professional football club ;
-%
-Class of shares: holding
-Ordinary 100.00
-2021 2020
-£'000 £'000
-Aggregate capital and reserves 357 282
-Profit/({loss) for the year (75) 6
-Page 24 continued...
+
+**1879 Events Management Limited**  
+Registered office: The Sunderland Stadium of Light, Sunderland, SR5 1SU  
+Nature of business: Events management services
+
+| Class of shares: | % holding |
+| :--- | :--- |
+| Ordinary | 100.00 |
+
+| | 2021<br>£'000 | 2020<br>£'000 |
+| :--- | :---: | :---: |
+| Aggregate capital and reserves | 284 | 284 |
+
+**Sunderland Association Football Club Ladies Limited**  
+Registered office: The Sunderland Stadium of Light, Sunderland, SR5 1SU  
+Nature of business: Professional football club
+
+| Class of shares: | % holding |
+| :--- | :--- |
+| Ordinary | 100.00 |
+
+| | 2021<br>£'000 | 2020<br>£'000 |
+| :--- | :---: | :---: |
+| Aggregate capital and reserves | 357 | 282 |
+| Profit/(loss) for the year | (75) | 6 |
+
+Page 24  
+continued...
 
 --- pág. 27 ---
 
@@ -1063,34 +1081,43 @@ Page 25 continued...
 --- pág. 28 ---
 
 SUNDERLAND ASSOCIATION FOOTBALL
-CLUB, LIMITED(THE) .
+CLUB,LIMITED(THE)
+
 NOTES TO THE FINANCIAL STATEMENTS - continued
 FOR THE YEAR ENDED 31 JULY 2021
+
 16. LEASING AGREEMENTS
+
 Minimum lease payments under non-cancellable operating leases fall due as follows:
-2021 2020
-£'000 £'000
-Within one year 10 85
-Between one and five years 77 75
-in more than five years - -
-87 160
+| | 2021<br>£'000 | 2020<br>£'000 |
+| :--- | :---: | :---: |
+| Within one year | 10 | 85 |
+| Between one and five years | 77 | 75 |
+| In more than five years | - | - |
+| | **87** | **160** |
+
 Leasing agreements recognised as on operating expense totalled £124,365 (2020: 138,264)
+
 17. CALLED UP SHARE CAPITAL
+
 Allotted, issued and fully paid:
-_ Number: Class: Nominal 2021 2020
-value: £'000 £'000
-1,000,000 Ordinary f1 1,000 1,000
-18. RESERVES ,
-| | Retained earnings £'000 | Share premium £'000 | Revaluation reserve £'000 | Total equity £'000 |
-|---|---|---|---|---|
-| Balance at 1 August 2019 | (260,080) | 105,596 | 82 | 9,142 |
-| Changes in equity | | | | |
+| Number: | Class: | Nominal<br>value: | 2021<br>£'000 | 2020<br>£'000 |
+| :--- | :--- | :---: | :---: | :---: |
+| 1,000,000 | Ordinary | £1 | 1,000 | 1,000 |
+
+18. RESERVES
+
+| | Retained<br>earnings<br>£'000 | Share<br>premium<br>£'000 | Revaluation<br>reserve<br>£'000 | Total<br>equity<br>£'000 |
+| :--- | :---: | :---: | :---: | :---: |
+| **Balance at 1 August 2019** | (260,080) | 105,596 | 82 | 9,142 |
+| **Changes in equity** | | | | |
 | Issue of share capital | - | (105,596) | - | (256,898) |
-| Total comprehensive Income | 263,276 | | | |
-| Balance at 31 July 2020 | 3,196 | - | 82 | 3,278 |
-| Changes in equity | | | | |
+| Total comprehensive Income | 263,276 | - | - | - |
+| **Balance at 31 July 2020** | 3,196 | - | 82 | 3,278 |
+| **Changes in equity** | | | | |
 | Total comprehensive income | (11,745) | - | - | (11,745) |
-| Balance at 31 July 2021 | (8,549) | - | 82 | (8,467) |
+| **Balance at 31 July 2021** | (8,549) | - | 82 | (8,467) |
+
 Page 26 continued...
 
 --- pág. 29 ---

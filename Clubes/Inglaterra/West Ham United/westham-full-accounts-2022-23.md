@@ -1843,30 +1843,29 @@ for the year ended 31 May 2023
 
 --- pág. 45 ---
 
-WEST HAM UNITED FOOTBALL CLUB LIMITED
+# WEST HAM UNITED FOOTBALL CLUB LIMITED
 
-NOTES TO THE FINANCIAL STATEMENTS
-for the year ended 31 May 2023
-(continued)
+### NOTES TO THE FINANCIAL STATEMENTS  
+**for the year ended 31 May 2023**  
+**(continued)**
 
 **26. Operating Lease Commitments**
 
 At 31 May 2023 the Company was committed to making the following annual payments in respect of operating leases.
 
-| | 2023 £000 | 2022 £000 |
-|---|---|---|
-| *Land and buildings* | | |
+| Land and buildings | 2023 £000 | 2022 £000 |
+| :--- | :---: | :---: |
 | Expiring within one year | 4,140 | 3,681 |
 | Expiring within two to five years | 15,705 | 14,340 |
 | Expiring more than five years | 340,443 | 307,720 |
-| | 360,288 | 325,740 |
-| *Other operating leases* | | |
+| | **360,288** | **325,740** |
+
+| Other operating leases | 2023 £000 | 2022 £000 |
+| :--- | :---: | :---: |
 | Expiring within one year | 12 | 17 |
 | Expiring within two to five years | 50 | 12 |
-| | 62 | 29 |
-| | 360,350 | 325,664 |
-
-(Así en el original: los subtotales de 2022 no suman exacto — 3,681 + 14,340 + 307,720 = 325,741 y 325,740 + 29 = 325,769 — pero se transcriben tal como están impresos.)
+| | **62** | **29** |
+| | **360,350** | **325,664** |
 
 The Company had no other commitments at 31 May 2023 (2022: £nil).
 

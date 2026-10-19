@@ -240,39 +240,37 @@ Page 4
 
 --- pág. 8 ---
 
-MERCEDES-BENZ GRAND PRIX LIMITED
-DIRECTORS' REPORT (CONTINUED)
-FOR THE YEAR ENDED 31 DECEMBER 2021
-Research and development activities
-The activities of the company are dedicated towards the design and development of a car to compete
-successfully in the FIA Formula One World Championship as well as supporting other customers in innovative
-projects through our applied science division. The directors consider the investment in research and
-development to be integral to the continued success of the company.
-Environmental policy and mandatory greenhouse gas emissions reporting
-In March 2020, Mercedes-Benz Grand Prix Limited announced an ambitious sustainability strategy, in line with
-Mercedes-Benz Group AG's Ambition 2039 to achieve a carbon-neutral new passenger car fleet by 2039 and
-Formula One's ambition to achieve net-zero status for the sport by 2030.
-The company is on track to reduce its CO2 footprint by 50% by the end of 2022, compared to the baseline set in
-2018.
-In 2021, the team published for the first time an independently audited carbon footprint, reporting total
-emissions of 8,961 tonnes of CO2 for the pandemic-impacted 2020 season. This data is part of a separate
-document and audited separately from the financial statements.
-The team’s unavoidable emissions are offset using gold-standard programmes working with MyClimate; for
-2020, the team’s offsets contributed to renewable power projects in the Dominican Republic (solar) and Turkey
-(wind power).
-The company's efforts in this field were recognised by the award of the FIA 3* Environmental Accreditation
-standard in December 2020.
-The team is now working to identify and implement the next phase of sustainable operations beyond the end of
-2022, with an aspiration to become a net-zero sports team by the introduction of the sport's next powertrain
-regulations in 2026.
-2021 2020
-£000 £000
-SECR Inventory
-Energy consumption used to calculate emissions: /kWh 18,002,505 17,152,776
-Emissions from Scope 1 tCO2e 338 359
-Emissions from purchased electricity tCO2e (Scope 2) 3,447 3,895
-Total gross tCO2e based on above 3,785 4,254
-Intensity ratio: tCO2e gross pre average number of employees 4 4
+**MERCEDES-BENZ GRAND PRIX LIMITED**
+
+**DIRECTORS' REPORT (CONTINUED)**  
+**FOR THE YEAR ENDED 31 DECEMBER 2021**
+
+**Research and development activities**
+
+The activities of the company are dedicated towards the design and development of a car to compete successfully in the FIA Formula One World Championship as well as supporting other customers in innovative projects through our applied science division. The directors consider the investment in research and development to be integral to the continued success of the company.
+
+**Environmental policy and mandatory greenhouse gas emissions reporting**
+
+In March 2020, Mercedes-Benz Grand Prix Limited announced an ambitious sustainability strategy, in line with Mercedes-Benz Group AG's Ambition 2039 to achieve a carbon-neutral new passenger car fleet by 2039 and Formula One's ambition to achieve net-zero status for the sport by 2030.
+
+The company is on track to reduce its CO2 footprint by 50% by the end of 2022, compared to the baseline set in 2018.
+
+In 2021, the team published for the first time an independently audited carbon footprint, reporting total emissions of 8,961 tonnes of CO2 for the pandemic-impacted 2020 season. This data is part of a separate document and audited separately from the financial statements.
+
+The team's unavoidable emissions are offset using gold-standard programmes working with MyClimate; for 2020, the team's offsets contributed to renewable power projects in the Dominican Republic (solar) and Turkey (wind power).
+
+The company's efforts in this field were recognised by the award of the FIA 3* Environmental Accreditation standard in December 2020.
+
+The team is now working to identify and implement the next phase of sustainable operations beyond the end of 2022, with an aspiration to become a net-zero sports team by the introduction of the sport's next powertrain regulations in 2026.
+
+| SECR Inventory | 2021<br>£000 | 2020<br>£000 |
+| :--- | :--- | :--- |
+| Energy consumption used to calculate emissions: /kWh | 18,002,505 | 17,152,776 |
+| Emissions from Scope 1 tCO2e | 338 | 359 |
+| Emissions from purchased electricity tCO2e (Scope 2) | 3,447 | 3,895 |
+| Total gross tCO2e based on above | 3,785 | 4,254 |
+| Intensity ratio: tCO2e gross pre average number of employees | 4 | 4 |
+
 Page 5
 
 --- pág. 9 ---

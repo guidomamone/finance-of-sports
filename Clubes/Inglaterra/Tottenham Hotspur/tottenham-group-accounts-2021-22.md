@@ -75,55 +75,56 @@ Profit from operations, excluding football trading and before depreciation and e
 
 --- pág. 3 ---
 
-Strategic report
+Strategic report  
 to the members of Tottenham Hotspur Limited
-Amortisation and impairment of intangible assets
-Amortisation and impairment of intangible assets and other football trading-related expenditure (net of income) has decreased to
-£79.9m (2021: £82.9m).
-Profit on disposal of intangible assets :
-Profit on the disposal of intangible assets was £19.2m for the financial year (2021: £18.9m) which included the sale of Juan Foyth to
-Villarreal and Dele Alli to Everton.
-Net finance expenses
-Net finance expenses (excluding bank interest) have decreased to £17.0m (2021: £19.2m) due to a decrease in imputed IFRS notional
-interest on player purchases, commercial revenues and lease obligations as well as expensed arrangement fees due to the
-refinancing (see note 7), whilst net bank interest costs have increased to £23.6m (2021: £17.6m).
-Loss for the period
+
+**Amortisation and impairment of intangible assets**  
+Amortisation and impairment of intangible assets and other football trading-related expenditure (net of income) has decreased to £79.9m (2021: £82.9m).
+
+**Profit on disposal of intangible assets**  
+Profit on the disposal of intangible assets was £19.2m for the financial year (2021: £18.9m) which included the sale of Juan Foyth to Villarreal and Dele Alli to Everton.
+
+**Net finance expenses**  
+Net finance expenses (excluding bank interest) have decreased to £17.0m (2021: £19.2m) due to a decrease in imputed IFRS notional interest on player purchases, commercial revenues and lease obligations as well as expensed arrangement fees due to the refinancing (see note 7), whilst net bank interest costs have increased to £23.6m (2021: £17.6m).
+
+**Loss for the period**  
 The Group made a loss after taxation of £50.1m (2021: loss of £83.8m).
-Balance sheet
+
+**Balance sheet**  
 Total assets were £1,860.4m (2021: £1,742.9m) whilst the Group has net debt of £626.1m (2021: £706.3m).
-Cash flow
-The Group had a net cash inflow from its operations of £101.5m for the year (2021: outflow of £9.5m) driven by the return of fans to
-THS. in addition the Group had net cash inflow from financing activities of £96.0m (2021: £22.3m) driven by the equity raise.
-Financial Fair Play
+
+**Cash flow**  
+The Group had a net cash inflow from its operations of £101.5m for the year (2021: outflow of £9.5m) driven by the return of fans to THS. In addition the Group had net cash inflow from financing activities of £96.0m (2021: £22.3m) driven by the equity raise.
+
+**Financial Fair Play**  
 The Club continues to comply and support both UEFA and the Premier League Financial Fair Play criteria.
-Five-year review
-June June June June June
-2022 2021 2020 2019 2018
-£000 £000 £000 £'000 £’000
-Revenue 444,028* 361,872* 402,386 460,695 380,697
-Profit from operations excluding football trading.
-and before Exceptional Items and depreciation 112,254 97,084 115,284 172,732 162,547
-Depreciation and exceptional items (note 2, 3) (72,193) (76,521) (81,499) (24,859) (10,568)
-Operating profit before football trading 40,061 20,563 33,785 147,873 151,979
-Amortisation and impairment of registrations and .
-other football-related income and expenditure (79,893) (82,888) (73,675) (46,217) (67,960)
-Profit on disposal of intangible fixed assets 19,150 18,939 15,397 10,885 73,058
-(Loss)/profit before interest and taxation (20,682) (43,386) (24,493) 112,541 157,077
-Net interest payable (note 7) (40,646) (36,803) (43,231) (25,185) (18,168)
-(Loss)/profit before taxation (61,328) (80,189) (67,724) 87,356 138,909
-Taxation 11,211 (3,612) 3,808 (18,804) (25,956)
-Retained (loss)/profit (50,117) (83,801) (63,916) 68,552 112,953
-_ Net assets
-Property plant and equipment 1,300,890 1,343,093 1,398,544 1,414,002 974,310
-Intangible assets 279,053 204,759 180,689 124,747 151,342
-Investments in financial assets 57 263 - - -
-Net current liabilities, including trade receivables
-due after one year (237,324) (137,074) (258,006) (245,628) (108,586)
-Total assets less current liabilities 1,342,676 1,411,041 1,321,227 1,293,121 1,017,066
-Non-current liabilities — amounts falling due after
-more than one year (1,165,432) (1,155,034) (981,419) (889,397) (681,894)
-Net assets - 177,244 256,007 339,808 403,724 335,172
+
+**Five-year review**
+
+| | June<br>2022<br>£'000 | June<br>2021<br>£'000 | June<br>2020<br>£'000 | June<br>2019<br>£'000 | June<br>2018<br>£'000 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Revenue** | 444,028* | 361,872* | 402,386 | 460,695 | 380,697 |
+| Profit from operations excluding football trading and before Exceptional Items and depreciation | 112,254 | 97,084 | 115,284 | 172,732 | 162,547 |
+| Depreciation and exceptional items (note 2, 3) | (72,193) | (76,521) | (81,499) | (24,859) | (10,568) |
+| Operating profit before football trading | 40,061 | 20,563 | 33,785 | 147,873 | 151,979 |
+| Amortisation and impairment of registrations and other football-related income and expenditure | (79,893) | (82,888) | (73,675) | (46,217) | (67,960) |
+| Profit on disposal of intangible fixed assets | 19,150 | 18,939 | 15,397 | 10,885 | 73,058 |
+| **(Loss)/profit before interest and taxation** | (20,682) | (43,386) | (24,493) | 112,541 | 157,077 |
+| Net interest payable (note 7) | (40,646) | (36,803) | (43,231) | (25,185) | (18,168) |
+| **(Loss)/profit before taxation** | (61,328) | (80,189) | (67,724) | 87,356 | 138,909 |
+| Taxation | 11,211 | (3,612) | 3,808 | (18,804) | (25,956) |
+| **Retained (loss)/profit** | (50,117) | (83,801) | (63,916) | 68,552 | 112,953 |
+| **Net assets** | | | | | |
+| Property plant and equipment | 1,300,890 | 1,343,093 | 1,398,544 | 1,414,002 | 974,310 |
+| Intangible assets | 279,053 | 204,759 | 180,689 | 124,747 | 151,342 |
+| Investments in financial assets | 57 | 263 | - | - | - |
+| Net current liabilities, including trade receivables due after one year | (237,324) | (137,074) | (258,006) | (245,628) | (108,586) |
+| **Total assets less current liabilities** | 1,342,676 | 1,411,041 | 1,321,227 | 1,293,121 | 1,017,066 |
+| Non-current liabilities – amounts falling due after more than one year | (1,165,432) | (1,155,034) | (981,419) | (889,397) | (681,894) |
+| **Net assets** | 177,244 | 256,007 | 339,808 | 403,724 | 335,172 |
+
 *For explanation of reconciliation see Financial highlights and key performance indicators and note 2
+
 2
 
 --- pág. 4 ---
@@ -1186,135 +1187,158 @@ All revenue except for £582,000 (2021: £714,000) derives from the Group’s pr
 
 --- pág. 24 ---
 
-Notes to the accounts
+Notes to the accounts  
 for the year ended 30 June 2022
-2. Revenue (continued) 2022 2021
-, £000 £'000
-Timing of revenue recognition:
-At a point in time 39,405 22,451
-Over time 404,010 337,954
-443,415 360,405
+
+**2. Revenue (continued)**
+
+| | 2022<br>£'000 | 2021<br>£'000 |
+| :--- | :---: | :---: |
+| **Timing of revenue recognition:** | | |
+| At a point in time | 39,405 | 22,451 |
+| Over time | 404,010 | 337,954 |
+| | **443,415** | **360,405** |
+
 All revenue is recognised over time except for £39,405,000 (2021: £22,451,000) deriving from merchandising and catering sales.
-3. Operating expenses
-; 2022 2021
-£’000 £’000
-Staff costs (see note 5) 209,180 204,875
-Depreciation of property, plant and equipment 72,278 72,137
-Profit on disposal of property, plant and equipment - 137
-Exceptional items
-- Onerous employment contracts ‘ 528 2,917
-Other operating costs 121,368 59,776
-Operating expenses excluding football trading 403,354 339,842 ‘
-Amortisation, impairments and other net football trading income and expenditure . 79,893 82,888
-Total operating expenses ; 483,247 422,730
-4. Loss from operations
+
+**3. Operating expenses**
+
+| | 2022<br>£'000 | 2021<br>£'000 |
+| :--- | :---: | :---: |
+| Staff costs (see note 5) | 209,180 | 204,875 |
+| Depreciation of property, plant and equipment | 72,278 | 72,137 |
+| Profit on disposal of property, plant and equipment | - | 137 |
+| Exceptional items | | |
+| - Onerous employment contracts | 528 | 2,917 |
+| Other operating costs | 121,368 | 59,776 |
+| Operating expenses excluding football trading | 403,354 | 339,842 |
+| | | |
+| Amortisation, impairments and other net football trading income and expenditure | 79,893 | 82,888 |
+| **Total operating expenses** | **483,247** | **422,730** |
+
+**4. Loss from operations**
+
 This is stated after charging/(crediting) the following:
-2022 2021
-£’000 £’000
-Depreciation of property, plant and equipment 72,278 72,137
-Profit on disposal of property, plant and equipment - 137
-Profit on disposal of intangible fixed assets 19,150 18,939
-Amortisation of intangible fixed assets 79,520 73,812
-Impairment of intangible fixed assets 1,843 8,536
-Amortisation of grants (1,828) (585)
-Cost of inventories recognised as an expense 11,329 10,466
-Charitable donations 453 156
-Short-term lease rentals (see note 21):
-~—land and buildings 1,375 1,383
-— other 118 257
-Foreign exchange loss/(gain) 444 (8,047)
+
+| | 2022<br>£'000 | 2021<br>£'000 |
+| :--- | :---: | :---: |
+| Depreciation of property, plant and equipment | 72,278 | 72,137 |
+| Profit on disposal of property, plant and equipment | - | 137 |
+| Profit on disposal of intangible fixed assets | 19,150 | 18,939 |
+| Amortisation of intangible fixed assets | 79,520 | 73,812 |
+| Impairment of intangible fixed assets | 1,843 | 8,536 |
+| Amortisation of grants | (1,828) | (585) |
+| Cost of inventories recognised as an expense | 11,329 | 10,466 |
+| Charitable donations | 453 | 156 |
+| Short-term lease rentals (see note 21): | | |
+| – land and buildings | 1,375 | 1,383 |
+| – other | 118 | 257 |
+| Foreign exchange loss/(gain) | 444 | (8,047) |
+
 23
 
 --- pág. 25 ---
 
-Notes to the accounts
+Notes to the accounts  
 for the year ended 30 June 2022
-4. Loss from operations (continued)
+
+**4. Loss from operations (continued)**
+
 The analysis of auditor’s remuneration is as follows:
-2022 2021 -
-£'000 £'000
-Fees payable to the Company's auditor for the audit of the Company’s annual accounts:
-— audit of the Company's accounts 15 15
-~ audit of the accounts of the Company’s subsidiaries 131 115
-Total audit fees 146 130
-Fees payable to the Company's auditor for other services to the Group:
-— taxation compliance services 220 200
-— taxation advisory services . 30 11
-— other assurance services 5 5
-— other services 123 127
-Total non-audit fees 378 343
-Fees for the audit of the Company’s subsidiaries accounts represent the fees payable to Deloitte LLP in respect of the audit of the
-subsidiaries individual financial statements prepared in accordance with FRS 101 and the audit of the Company’s accounts represents
-the audit of the Group’s consolidated financial statements prepared in accordance with IFRS. No services were provided pursuant to
-a contingent fee arrangement.
-. 5. Staff numbers and costs .
-The average number of employees of the Group during the year including Executive Directors was as follows: ;
-2022 2021
-Number Number
-Players and football administration staff 292 274
-Stadium operations and support staff 358 315
-Retail and distribution staff 69 83
-719 672
+
+| | 2022<br>£'000 | 2021<br>£'000 |
+| :--- | :---: | :---: |
+| Fees payable to the Company’s auditor for the audit of the Company's annual accounts: | | |
+| – audit of the Company’s accounts | 15 | 15 |
+| – audit of the accounts of the Company’s subsidiaries | 131 | 115 |
+| **Total audit fees** | **146** | **130** |
+| Fees payable to the Company’s auditor for other services to the Group: | | |
+| – taxation compliance services | 220 | 200 |
+| – taxation advisory services | 30 | 11 |
+| – other assurance services | 5 | 5 |
+| – other services | 123 | 127 |
+| **Total non-audit fees** | **378** | **343** |
+
+Fees for the audit of the Company’s subsidiaries accounts represent the fees payable to Deloitte LLP in respect of the audit of the subsidiaries individual financial statements prepared in accordance with FRS 101 and the audit of the Company's accounts represents the audit of the Group's consolidated financial statements prepared in accordance with IFRS. No services were provided pursuant to a contingent fee arrangement.
+
+**5. Staff numbers and costs**
+
+The average number of employees of the Group during the year including Executive Directors was as follows:
+
+| | 2022<br>Number | 2021<br>Number |
+| :--- | :---: | :---: |
+| Players and football administration staff | 292 | 274 |
+| Stadium operations and support staff | 358 | 315 |
+| Retail and distribution staff | 69 | 83 |
+| | **719** | **672** |
+
 The aggregate payroll costs of these employees were as follows:
-, 2022 2021
-, £000 £000
-Salaries and bonuses 181,819 179,789
-Social security costs 26,420 24,462
-Other pension costs (see note 24) 941 624
-209,180 204,875
-In addition, and not included in the above, the Group employs on average 292 temporary staff on match days (2021: 55), an increase
-year on year due to fixtures being played behind closed doors during the prior period.
-In addition to the above payroll costs, redundancy costs of £25,000 (2021: £153,000) were also charged to the income statement
-during the year.
-The total aggregate remuneration of the Directors, who are deemed to represent key management personnel, for the year was
-£6,773,000 (2021: £4,016,000) including pension costs of £2,000 (2021: £2,000). Included within that remuneration are emoluments
-totalling Enil (2021: Enil) paid to non-executive Directors. The highest paid Director received total remuneration of £3,265,000
-(2021: £2,698,000). The number of Directors for whom retirement benefits are accruing under a money purchase pension scheme is
-two (2021: two).
-: 24
+
+| | 2022<br>£'000 | 2021<br>£'000 |
+| :--- | :---: | :---: |
+| Salaries and bonuses | 181,819 | 179,789 |
+| Social security costs | 26,420 | 24,462 |
+| Other pension costs (see note 24) | 941 | 624 |
+| | **209,180** | **204,875** |
+
+In addition, and not included in the above, the Group employs on average 292 temporary staff on match days (2021: 55), an increase year on year due to fixtures being played behind closed doors during the prior period.
+
+In addition to the above payroll costs, redundancy costs of £25,000 (2021: £153,000) were also charged to the income statement during the year.
+
+The total aggregate remuneration of the Directors, who are deemed to represent key management personnel, for the year was £6,773,000 (2021: £4,016,000) including pension costs of £2,000 (2021: £2,000). Included within that remuneration are emoluments totalling £nil (2021: £nil) paid to non-executive Directors. The highest paid Director received total remuneration of £3,265,000 (2021: £2,698,000). The number of Directors for whom retirement benefits are accruing under a money purchase pension scheme is two (2021: two).
+
+24
 
 --- pág. 26 ---
 
-Notes to the accounts
-for the year ended 30 June 2022 .
-6. Profit on disposal of intangible fixed assets
-2022 2021
-£'000 £'000
-Consideration 24,719 20,039
-Net book value of disposals (5,569) (1,100)
-19,150 18,939
-7. Finance income and costs
-2022 2021
-‘ £’000 £'000
-Interest income 88 621
-‘Notional interest income on deferred receipts for sales of players’ registrations 1,449 963
-1,537 1,584
-2022 2021
-£000 £’000
-Interest expense . (23,693) (18,202)
-Notional! interest. expense on deferred payments for players’ registrations (10,101) (9,692)
-Notional interest expense on deferred income relating to commercial revenues (6,350) (9,420)
-Notional interest expense on leases (718) (691)
-Amortisation of debt issue costs (1,115) (281)
-Net loss arising on financial assets mandatorily measured at FVTPL* (206) (101)
-(42,183) (38,387)
-*The amount represents a net loss on investments in listed equity shares (see note 11) and comprises a decrease in fair value of
-£206,000 (2021: £101,000}.
-8. Tax (credit)/charge
-2022 2021
-£000 £'000
-Current tax
-UK corporation tax charge/(credit) on loss for the year at 19% (2021: 19%) - (380)
-Other prior year adjustments , 700 (535)
-Foreign tax suffered 5 27
-Current tax charge/(credit) 705 (888)
-Deferred tax ;
-Origination and reversal of timing differences in prior years (3,351) (988)
-Origination and reversal of timing differences in current year (6,509) (8,284)
-Difference in tax rates (2,056) 13,772
-Deferred tax (credit)/charge (see note 17) (11,916) 4,500
-Total tax (credit)/charge (11,211) 3,612
-: 25
+Notes to the accounts  
+for the year ended 30 June 2022
+
+**6. Profit on disposal of intangible fixed assets**
+
+| | 2022<br>£'000 | 2021<br>£'000 |
+| :--- | :---: | :---: |
+| Consideration | 24,719 | 20,039 |
+| Net book value of disposals | (5,569) | (1,100) |
+| | **19,150** | **18,939** |
+
+**7. Finance income and costs**
+
+| | 2022<br>£'000 | 2021<br>£'000 |
+| :--- | :---: | :---: |
+| Interest income | 88 | 621 |
+| Notional interest income on deferred receipts for sales of players' registrations | 1,449 | 963 |
+| | **1,537** | **1,584** |
+
+| | 2022<br>£'000 | 2021<br>£'000 |
+| :--- | :---: | :---: |
+| Interest expense | (23,693) | (18,202) |
+| Notional interest expense on deferred payments for players' registrations | (10,101) | (9,692) |
+| Notional interest expense on deferred income relating to commercial revenues | (6,350) | (9,420) |
+| Notional interest expense on leases | (718) | (691) |
+| Amortisation of debt issue costs | (1,115) | (281) |
+| Net loss arising on financial assets mandatorily measured at FVTPL* | (206) | (101) |
+| | **(42,183)** | **(38,387)** |
+
+*The amount represents a net loss on investments in listed equity shares (see note 11) and comprises a decrease in fair value of £206,000 (2021: £101,000).
+
+**8. Tax (credit)/charge**
+
+| | 2022<br>£'000 | 2021<br>£'000 |
+| :--- | :---: | :---: |
+| **Current tax** | | |
+| UK corporation tax charge/(credit) on loss for the year at 19% (2021: 19%) | - | (380) |
+| Other prior year adjustments | 700 | (535) |
+| Foreign tax suffered | 5 | 27 |
+| Current tax charge/(credit) | **705** | **(888)** |
+| **Deferred tax** | | |
+| Origination and reversal of timing differences in prior years | (3,351) | (988) |
+| Origination and reversal of timing differences in current year | (6,509) | (8,284) |
+| Difference in tax rates | (2,056) | 13,772 |
+| Deferred tax (credit)/charge (see note 17) | **(11,916)** | **4,500** |
+| **Total tax (credit)/charge** | **(11,211)** | **3,612** |
+
+25
 
 --- pág. 27 ---
 
@@ -1393,82 +1417,91 @@ v
 
 --- pág. 28 ---
 
-Notes to the accounts , .
+Notes to the accounts  
 for the year ended 30 June 2022
-9. Property, plant and equipment (continued)
-; For the year ended 30 June 2021
-Assets under
-Freehold and Right of use Motor General plantand  thecourseof —Capitalised
-long leasehold assets vehicles equipment construction interest Total
-Group £000 £'000 £000 £000 “£'000 £000 £000
-Cost
-At 1 July 2020 1,310,415 21,678 747 146,364 35,191 27,665 1,542,060
-Additions 8,436 - 85 3,849 9,739 - 22,109
-Disposal (5,274) - (231) (8) (261) - (5,774)
-Transfer of assets (404) - - 7,871 (7,467) - -
-At 30 June 2021 1,313,173 21,678 601 158,076 37,202 27,665 1,558,395
-Depreciation and impairment
-At 1 July 2020 78,621 1,021 461 57,521 5,201 691 143,516
-Eliminated on disposal (120) - (231) - - - (351)
-Charged in the year 45,095 1,021 138 25,330 - 553 72,137
-At 30 June 2021 123,596 2,042 368 82,851 5,201 1,244 215,302
-Net book value
-At 30 June 2021 1,189,577 19,636 233 75,225 32,001 26,421 1,343,093
-10. __ Intangible fixed assets
-For the year ended 30 June 2022
-Player Computer
-registrations software Total
-£'000 £'000 £'000
-Cost
-At 1 July 2021 , 480,709 - 480,709
-Additions 160,251 487 160,738
-Transfer of assets - 686 686
-Disposals (129,214) - (129,214)
-At 30 June 2022 511,746 1,173 512,919
-Amortisation and impairment
-At 1 July 2021 , 275,950 - 275,950
-Charged in year — amortisation 79,226 294 79,520
-Transfer of assets - 198 198
-Charged in year — impairment 1,843 - 1,843
-Disposals (123,645) - (123,645)
-At 30 June 2022 233,374 492 233,866
-Net book value
-At 30 June 2022 278,372 681 279,053
-, 27
+
+**9. Property, plant and equipment (continued)**
+
+**For the year ended 30 June 2021**
+
+| Group | Freehold and<br>long leasehold<br>£'000 | Right of use<br>assets<br>£'000 | Motor<br>vehicles<br>£'000 | General plant and<br>equipment<br>£'000 | Assets under<br>the course of<br>construction<br>£'000 | Capitalised<br>interest<br>£'000 | Total<br>£'000 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Cost** | | | | | | | |
+| At 1 July 2020 | 1,310,415 | 21,678 | 747 | 146,364 | 35,191 | 27,665 | 1,542,060 |
+| Additions | 8,436 | - | 85 | 3,849 | 9,739 | - | 22,109 |
+| Disposal | (5,274) | - | (231) | (8) | (261) | - | (5,774) |
+| Transfer of assets | (404) | - | - | 7,871 | (7,467) | - | - |
+| **At 30 June 2021** | **1,313,173** | **21,678** | **601** | **158,076** | **37,202** | **27,665** | **1,558,395** |
+| **Depreciation and impairment** | | | | | | | |
+| At 1 July 2020 | 78,621 | 1,021 | 461 | 57,521 | 5,201 | 691 | 143,516 |
+| Eliminated on disposal | (120) | - | (231) | - | - | - | (351) |
+| Charged in the year | 45,095 | 1,021 | 138 | 25,330 | - | 553 | 72,137 |
+| **At 30 June 2021** | **123,596** | **2,042** | **368** | **82,851** | **5,201** | **1,244** | **215,302** |
+| **Net book value** | | | | | | | |
+| **At 30 June 2021** | **1,189,577** | **19,636** | **233** | **75,225** | **32,001** | **26,421** | **1,343,093** |
+
+**10. Intangible fixed assets**
+
+**For the year ended 30 June 2022**
+
+| | Player<br>registrations<br>£'000 | Computer<br>software<br>£'000 | Total<br>£'000 |
+| :--- | :---: | :---: | :---: |
+| **Cost** | | | |
+| At 1 July 2021 | 480,709 | - | 480,709 |
+| Additions | 160,251 | 487 | 160,738 |
+| Transfer of assets | - | 686 | 686 |
+| Disposals | (129,214) | - | (129,214) |
+| **At 30 June 2022** | **511,746** | **1,173** | **512,919** |
+| **Amortisation and impairment** | | | |
+| At 1 July 2021 | 275,950 | - | 275,950 |
+| Charged in year – amortisation | 79,226 | 294 | 79,520 |
+| Transfer of assets | - | 198 | 198 |
+| Charged in year – impairment | 1,843 | - | 1,843 |
+| Disposals | (123,645) | - | (123,645) |
+| **At 30 June 2022** | **233,374** | **492** | **233,866** |
+| **Net book value** | | | |
+| **At 30 June 2022** | **278,372** | **681** | **279,053** |
+
+27
 
 --- pág. 29 ---
 
-Notes to the accounts . ;
-for the year ended 30 June 2022 .
-10. Intangible fixed assets (continued)
-In the period, capitalised player registrations relating to one individual (2021: two) were impaired by £1,843,000 (2021: £8,536,000).
-Impairment losses were incurred where there was evidence that the carrying value of the player may not be recoverable in
-accordance with the Group’s accounting policy. Recoverable amounts have been estimated as fair values less costs of disposal, in
-accordance with the Group’s accounting policy.
-Due to increased investment in technology both within THS and at other sites, the Group has capitalised significant Computer
-Software which has been transferred from Property, plant and equipment (note 9).
-For the year ended 30 June 2021 ;
-£000
-Cost of registrations
-. At d July 2020 397,104
-Additions 109,723
-Disposals (26,118)
-At 30 June 2021 480,709
-Amortisation and impairment of registrations
-At 1 July 2020 : 216,415
-Charged in year — amortisation : . 73,812
-Charged in year — impairment 8,536
-Disposals . . . (22,813)
-At 30 June 2021 ; 275,950
-Net book value of registrations
-At 30 June 2021 204,759
-11. Investments in financial assets
-2022 2021
-£,000 £,000
-Financial assets mandatorily measured at FVTPL
-Investments at 1 July 2021 263 364
-Loss in the period (206) (101)
-Total investments 57 263
+Notes to the accounts  
+for the year ended 30 June 2022
+
+**10. Intangible fixed assets (continued)**
+
+In the period, capitalised player registrations relating to one individual (2021: two) were impaired by £1,843,000 (2021: £8,536,000). Impairment losses were incurred where there was evidence that the carrying value of the player may not be recoverable in accordance with the Group’s accounting policy. Recoverable amounts have been estimated as fair values less costs of disposal, in accordance with the Group’s accounting policy.
+
+Due to increased investment in technology both within THS and at other sites, the Group has capitalised significant Computer Software which has been transferred from Property, plant and equipment (note 9).
+
+**For the year ended 30 June 2021**
+
+| | £'000 |
+| :--- | :---: |
+| **Cost of registrations** | |
+| At 1 July 2020 | 397,104 |
+| Additions | 109,723 |
+| Disposals | (26,118) |
+| **At 30 June 2021** | **480,709** |
+| **Amortisation and impairment of registrations** | |
+| At 1 July 2020 | 216,415 |
+| Charged in year – amortisation | 73,812 |
+| Charged in year – impairment | 8,536 |
+| Disposals | (22,813) |
+| **At 30 June 2021** | **275,950** |
+| **Net book value of registrations** | |
+| **At 30 June 2021** | **204,759** |
+
+**11. Investments in financial assets**
+
+| | 2022<br>£'000 | 2021<br>£'000 |
+| :--- | :---: | :---: |
+| **Financial assets mandatorily measured at FVTPL** | | |
+| Investments at 1 July 2021 | 263 | 364 |
+| Loss in the period | (206) | (101) |
+| **Total investments** | **57** | **263** |
+
 28
 
 --- pág. 30 ---
@@ -1508,51 +1541,42 @@ The carrying amount of these assets approximates their fair value. .
 
 --- pág. 31 ---
 
-Notes to the accounts
+Notes to the accounts  
 for the year ended 30 June 2022
-15. Current liabilities
-2022 2021
-£’000 £'000
-Bank loans (secured) 1,295 1,248
-Interest-bearing loans and borrowings 1,295 1,248
-Trade payables due in less than one year 123,577 64,314
-Other tax and social security , 15,232 28,325
-Lease liabilities 743 718
-Other payables 33,155 34,007
-Accruals 35,984 37,552
-Deferred income 167,838 157,621
-Trade and other payables 376,529 322,537
-‘\’ ordinary shares 98,364 -
-FVTPL liabilities 28,646 -
-Provisions (see note 17) 12,841 8,123
-517,675 331,908
-Trade payables above include £115,448,000 in respect of the acquisition of players’ registrations (2021: £56,002,000).
-Deferred income includes income in respect of season tickets and commercial sponsorships relating to future years.
+
+**15. Current liabilities**
+
+| | 2022<br>£'000 | 2021<br>£'000 |
+| :--- | :---: | :---: |
+| Bank loans (secured) | 1,295 | 1,248 |
+| **Interest-bearing loans and borrowings** | **1,295** | **1,248** |
+| | | |
+| Trade payables due in less than one year | 123,577 | 64,314 |
+| Other tax and social security | 15,232 | 28,325 |
+| Lease liabilities | 743 | 718 |
+| Other payables | 33,155 | 34,007 |
+| Accruals | 35,984 | 37,552 |
+| Deferred income | 167,838 | 157,621 |
+| **Trade and other payables** | **376,529** | **322,537** |
+| | | |
+| 'A' ordinary shares | 98,364 | - |
+| FVTPL liabilities | 28,646 | - |
+| Provisions (see note 17) | 12,841 | 8,123 |
+| | **517,675** | **331,908** |
+
+Trade payables above include £115,448,000 in respect of the acquisition of players’ registrations (2021: £56,002,000).  
+Deferred income includes income in respect of season tickets and commercial sponsorships relating to future years.  
 The Directors consider that the carrying amount of trade payables approximates their fair value.
-Ouring the year the Club agreed a capital increase of up to £150,000,000 from the majority shareholder, ENIC Sports Inc (“ENIC”), via
-the issue of convertible ‘A’ ordinary Shares and accompanying warrants. The investment represents permanent capital, with no
-ongoing interest cost to the Club. Pursuant to the agreement, ENIC subscribed for £100,000,000 ‘A’ ordinary shares in May 2022.
-The ‘A’ ordinary shares are convertible into ordinary shares with fair value of £100,000,000 at any time at the option of ENIC subject
-to a number of variables. The ‘A’ ordinary shares are an obligation to deliver a variable amount of the Company’s own equity
-instruments and so are a financial liability within the scope of IFRS 9. A notice to convert the ‘A’ ordinary shares was received in June
-2022. The conversion will conclude subsequent to the year end and will result in the issuance of ordinary share capital which will
-become part of the Club’s permanent share capital and treated as equity, increasing ENIC’s holding to 86.58%. The investment is
-shown in the balance sheet net of £1,636,000 of arrangement fees.
-The issuance of ‘A’ ordinary shares conferred warrant rights to subscribe for ordinary shares in the Club. The warrant entitlement is
-initially capped through to 30 June 2023 by reference to market values determined in accordance with the instrument and thereafter
-equates to 5% of the fully diluted capital at the point of issue, stepping up thereafter from 31 March 2025 by 1.5% per annum,
-accruing for 10 years post issuance. Whilst these warrants may be exercised and converted, in a similar way to the ‘A’ ordinary shares
-and become permanent ordinary equity, the conversion only occurs on a change of control or they expire 50 years from issuance.
-They are measured at FVTPL until they are either exercised or expired. At the balance sheet date the estimated fair value of the
-warrants was £28,646,000. The warrant fair value calculation includes a number of assumptions, each of which have been assessed
-as to whether or not there could be any reasonably possible changes in these assumptions. Based on this assessment, should there
-be a 5% increase or decrease in the assumptions relating to the valuation of the Company’s shares, and/or a two year increase or
-decrease in the estimated exercise date of the warrants, the warrants could increase in value by an amount of £20,150,000 or
-decrease in value by an amount of £13,489,000. The estimated lifetime value attributed to the warrants is treated as a liability until
-its potential conversion into permanent equity, although in substance it is part of the permanent equity structure of the Club.
-Due to the total liability recognised being in excess of cash received, the difference has been accounted for in equity through the
-statement in changes of equity.
-. 30
+
+During the year the Club agreed a capital increase of up to £150,000,000 from the majority shareholder, ENIC Sports Inc ("ENIC"), via the issue of convertible ‘A’ ordinary shares and accompanying warrants. The investment represents permanent capital, with no ongoing interest cost to the Club. Pursuant to the agreement, ENIC subscribed for £100,000,000 ‘A’ ordinary shares in May 2022.
+
+The ‘A’ ordinary shares are convertible into ordinary shares with fair value of £100,000,000 at any time at the option of ENIC subject to a number of variables. The ‘A’ ordinary shares are an obligation to deliver a variable amount of the Company’s own equity instruments and so are a financial liability within the scope of IFRS 9. A notice to convert the ‘A’ ordinary shares was received in June 2022. The conversion will conclude subsequent to the year end and will result in the issuance of ordinary share capital which will become part of the Club’s permanent share capital and treated as equity, increasing ENIC’s holding to 86.58%. The investment is shown in the balance sheet net of £1,636,000 of arrangement fees.
+
+The issuance of ‘A’ ordinary shares conferred warrant rights to subscribe for ordinary shares in the Club. The warrant entitlement is initially capped through to 30 June 2023 by reference to market values determined in accordance with the instrument and thereafter equates to 5% of the fully diluted capital at the point of issue, stepping up thereafter from 31 March 2025 by 1.5% per annum, accruing for 10 years post issuance. Whilst these warrants may be exercised and converted, in a similar way to the ‘A’ ordinary shares and become permanent ordinary equity, the conversion only occurs on a change of control or they expire 50 years from issuance. They are measured at FVTPL until they are either exercised or expired. At the balance sheet date the estimated fair value of the warrants was £28,646,000. The warrant fair value calculation includes a number of assumptions, each of which have been assessed as to whether or not there could be any reasonably possible changes in these assumptions. Based on this assessment, should there be a 5% increase or decrease in the assumptions relating to the valuation of the Company’s shares, and/or a two year increase or decrease in the estimated exercise date of the warrants, the warrants could increase in value by an amount of £20,150,000 or decrease in value by an amount of £13,489,000. The estimated lifetime value attributed to the warrants is treated as a liability until its potential conversion into permanent equity, although in substance it is part of the permanent equity structure of the Club.
+
+Due to the total liability recognised being in excess of cash received, the difference has been accounted for in equity through the statement in changes of equity.
+
+30
 
 --- pág. 32 ---
 
@@ -1815,146 +1839,155 @@ processes for measuring and managing risk.
 
 --- pág. 37 ---
 
-Notes to the accounts
+Notes to the accounts  
 for the year ended 30 June 2022
-18. Financial instruments (continued)
-(i) Market risk
+
+**18. Financial instruments (continued)**
+
+**(i) Market risk**  
 The Group’s activities expose it primarily to the financial risks of changes in foreign currency exchange and interest rates.
-Interest rate risk
-The Group is exposed to interest rate risk because entities in the Group borrows at floating interest rates. The Group continually
-reviews the exposure in light of local and global influences.
-Interest rate sensitivity analysis
-The sensitivity analysis below has been determined based on the exposure to interest rates for financial instruments at the balance
-sheet date. For floating rate cash deposits, the analysis is prepared assuming the amount of deposits outstanding at the balance
-sheet date were outstanding for the whole year. A 150 basis point increase or decrease is used when reporting interest rate risk
-internally to key management personnel and represents management’s assessment of reasonable possible changes in interest rates.
-If interest rates had been 150 basis points higher/lower and all other variables were held constant, the Group’s profit forthe year
-ended 30 June 2022 would decrease/increase by £1,196,185 (2021: decrease/increase by £423,781). This is mainly attributable to
-the Group’s exposure to interest rates on its floating rate loans.
-Foreign currency management
-The presentational currency of the Group is UK Sterling. The Group is exposed to currency risk due to movements in foreign
-currencies relative to Sterling affecting the Group’s foreign currency transactions and balances.
-The carrying amounts of the Group’s foreign currency denominated monetary assets and monetary liabilities at the reporting date
-are as follows:
-Liabilities Assets .
-: 2022 2021 2022 2021
-£'000 £'000 £’000 £'000
-Euro 136,491 130,163 8,484 18,534
-US Dollar - - 516 508
-Australian Dollar - - 79 44
-These amounts principally relate to player transfer liabilities and receivables, which are matched wherever possible over the life of
-the liability by Euro denominated receipts from European competitions.
-Foreign currency sensitivity analysis
-The Group is mainly exposed to the Euro, US Dollar and Australian Dollar. The following table details the Group’s sensitivity to a 10%
-increase and decrease in Sterling against the Euro, US Dollar and Australian Dollar. 10% is the sensitivity rate used when reporting
-foreign currency risk internally to key management personnel and represents management's assessment of the reasonably possible
-change in foreign exchange rates. The sensitivity analysis includes only outstanding foreign currency denominated monetary items
-and adjusts their translation at the period end for a 10% change in foreign currency rates. The negative number below indicates an
-increase in profit and retained earnings where Sterling strengthens against the Euro, US Dollar or Australian Dollar. For a 10%
-weakening of Sterling against the Euro, US Dollar or Australian Dollar, there would be an equal and opposite impact on profit and
-retained earnings.
-2022 2021
-£'000 £'000
-Euro 14,223 12,403
-US Dollar (57) (56)
-Australian Dollar (9) (5)
-(ii) Credit risk
-Credit risk refers to the risk that a counterparty will default on its contractual obligations resulting in financial loss to the Group. Of
-the total trade receivable balance of £29,879,000 (2021: £26,494,000), £23,010,000 (2021: £18,987,000) relates to amounts
-receivable from various other football Clubs in relation to player trading. The maximum credit exposure relates to the total of cash
-and cash equivalents, and trade receivables and is £271,078,000 (2021: £181,790,000).
-| .
+
+*Interest rate risk*  
+The Group is exposed to interest rate risk because entities in the Group borrows at floating interest rates. The Group continually reviews the exposure in light of local and global influences.
+
+*Interest rate sensitivity analysis*  
+The sensitivity analysis below has been determined based on the exposure to interest rates for financial instruments at the balance sheet date. For floating rate cash deposits, the analysis is prepared assuming the amount of deposits outstanding at the balance sheet date were outstanding for the whole year. A 150 basis point increase or decrease is used when reporting interest rate risk internally to key management personnel and represents management’s assessment of reasonable possible changes in interest rates.
+
+If interest rates had been 150 basis points higher/lower and all other variables were held constant, the Group's profit for the year ended 30 June 2022 would decrease/increase by £1,196,185 (2021: decrease/increase by £423,781). This is mainly attributable to the Group’s exposure to interest rates on its floating rate loans.
+
+*Foreign currency management*  
+The presentational currency of the Group is UK Sterling. The Group is exposed to currency risk due to movements in foreign currencies relative to Sterling affecting the Group’s foreign currency transactions and balances.
+
+The carrying amounts of the Group’s foreign currency denominated monetary assets and monetary liabilities at the reporting date are as follows:
+
+| | Liabilities<br>2022<br>£'000 | Liabilities<br>2021<br>£'000 | Assets<br>2022<br>£'000 | Assets<br>2021<br>£'000 |
+| :--- | :---: | :---: | :---: | :---: |
+| Euro | 136,491 | 130,163 | 8,484 | 18,534 |
+| US Dollar | - | - | 516 | 508 |
+| Australian Dollar | - | - | 79 | 44 |
+
+These amounts principally relate to player transfer liabilities and receivables, which are matched wherever possible over the life of the liability by Euro denominated receipts from European competitions.
+
+*Foreign currency sensitivity analysis*  
+The Group is mainly exposed to the Euro, US Dollar and Australian Dollar. The following table details the Group’s sensitivity to a 10% increase and decrease in Sterling against the Euro, US Dollar and Australian Dollar. 10% is the sensitivity rate used when reporting foreign currency risk internally to key management personnel and represents management’s assessment of the reasonably possible change in foreign exchange rates. The sensitivity analysis includes only outstanding foreign currency denominated monetary items and adjusts their translation at the period end for a 10% change in foreign currency rates. The negative number below indicates an increase in profit and retained earnings where Sterling strengthens against the Euro, US Dollar or Australian Dollar. For a 10% weakening of Sterling against the Euro, US Dollar or Australian Dollar, there would be an equal and opposite impact on profit and retained earnings.
+
+| | 2022<br>£'000 | 2021<br>£'000 |
+| :--- | :---: | :---: |
+| Euro | 14,223 | 12,403 |
+| US Dollar | (57) | (56) |
+| Australian Dollar | (9) | (5) |
+
+**(ii) Credit risk**
+
+Credit risk refers to the risk that a counterparty will default on its contractual obligations resulting in financial loss to the Group. Of the total trade receivable balance of £29,879,000 (2021: £26,494,000), £23,010,000 (2021: £18,987,000) relates to amounts receivable from various other football Clubs in relation to player trading. The maximum credit exposure relates to the total of cash and cash equivalents, and trade receivables and is £271,078,000 (2021: £181,790,000).
+
 36
 
 --- pág. 38 ---
 
 Notes to the accounts
 for the year ended 30 June 2022
-18. Financial instruments (continued) ,
-(ii) Credit risk (continued)
-There are no other significant concentrations of credit risk within the Group. Cash is deposited with one financial institution however
-the Directors are satisfied this does not create a significant credit risk. The maximum risk exposure relates to creditors from football
-trading but this is mitigated by the governing bodies of international and national football associations.
-Credit evaluations are performed on all customers requiring credit over a certain amount. The maximum credit risk exposure of the
-Group comprises the amounts presented in the balance sheet which are stated net of provisions for expected credit losses.
+
+**18. Financial instruments (continued)**
+
+*(ii) Credit risk (continued)*
+
+There are no other significant concentrations of credit risk within the Group. Cash is deposited with one financial institution however the Directors are satisfied this does not create a significant credit risk. The maximum risk exposure relates to creditors from football trading but this is mitigated by the governing bodies of international and national football associations.
+
+Credit evaluations are performed on all customers requiring credit over a certain amount. The maximum credit risk exposure of the Group comprises the amounts presented in the balance sheet which are stated net of provisions for expected credit losses.
+
 The ageing of trade receivables at the reporting date was:
-2022 2021
-£/000 £’000 £'000 £'000 ;
-Non-football
-Not past due 2,664 - 86 -
-Past due 0 — 30 days 44 - 1,948 -
-Past due 31 — 90 days 904 (530) 979 -
-More than 90 days 4,334 (526) 4,464 -
-7,946 (1,056) 7,477 -
-Football
-Not past due 23,010 - 18,987 -
-Past due 0 — 30 days - - - -
-Past due 31-90 days , . , - - - —
-More than 90 days - - - -
-23,010 - 18,987 -
-Total
-Not past due 25,674 - 19,073 -
-Past due 0 — 30 days 44 - 1,948 -
-Past due 31-90 days 904 (530) 979 -
-More than 90 days 4,334 (526) 4,464 -
-30,956 (1,056) 26,494 -
-2022 2021
-£'000 £000
-Movements in the allowance for expected credit losses
-At 1 July 222 95
-Provided during the year 834 127
-Recovered during the year - -
-Utilised during the year - -
-At 30 June 1,056 222
-(iii) Liquidity risk
-The Group’s policy is to maintain a balance of continuity of funding and flexibility through the use of loans and finance leases as
-applicable. The annual Group cash flow is cyclical in nature with the majority of cash inflows being received prior to the start of the
-playing season.
-Ultimate responsibility for liquidity risk management rests with the Directors. The Directors use management information tools
-including budgets and cash flow forecasts to be able to constantly monitor and manage current and future liquidity.
-The maturity profile of the Group’s borrowings is shown on pages 32 and 33 along with the Group’s borrowing facilities as at the
-balance sheet date.
+
+| | 2022 Gross receivables £'000 | 2022 Provision £'000 | 2021 Gross receivables £'000 | 2021 Provision £'000 |
+| :--- | :--- | :--- | :--- | :--- |
+| **Non-football** | | | | |
+| Not past due | 2,664 | - | 86 | - |
+| Past due 0 – 30 days | 44 | - | 1,948 | - |
+| Past due 31 – 90 days | 904 | (530) | 979 | - |
+| More than 90 days | 4,334 | (526) | 4,464 | - |
+| | **7,946** | **(1,056)** | **7,477** | **-** |
+| **Football** | | | | |
+| Not past due | 23,010 | - | 18,987 | - |
+| Past due 0 – 30 days | - | - | - | - |
+| Past due 31 – 90 days | - | - | - | - |
+| More than 90 days | - | - | - | - |
+| | **23,010** | **-** | **18,987** | **-** |
+| **Total** | | | | |
+| Not past due | 25,674 | - | 19,073 | - |
+| Past due 0 – 30 days | 44 | - | 1,948 | - |
+| Past due 31 – 90 days | 904 | (530) | 979 | - |
+| More than 90 days | 4,334 | (526) | 4,464 | - |
+| | **30,956** | **(1,056)** | **26,494** | **-** |
+
+| Movements in the allowance for expected credit losses | 2022 £'000 | 2021 £'000 |
+| :--- | :--- | :--- |
+| At 1 July | 222 | 95 |
+| Provided during the year | 834 | 127 |
+| Recovered during the year | - | - |
+| Utilised during the year | - | - |
+| **At 30 June** | **1,056** | **222** |
+
+*(iii) Liquidity risk*
+
+The Group’s policy is to maintain a balance of continuity of funding and flexibility through the use of loans and finance leases as applicable. The annual Group cash flow is cyclical in nature with the majority of cash inflows being received prior to the start of the playing season.
+
+Ultimate responsibility for liquidity risk management rests with the Directors. The Directors use management information tools including budgets and cash flow forecasts to be able to constantly monitor and manage current and future liquidity.
+
+The maturity profile of the Group’s borrowings is shown on pages 32 and 33 along with the Group's borrowing facilities as at the balance sheet date.
+
 37
 
 --- pág. 39 ---
 
 Notes to the accounts
 for the year ended 30 June 2022
-19. Called up share capital
-; 2022 * 2021
-£'000 €'000
-‘ Allotted, authorised, called up and fully paid:
-2022: 212,886,618 (2021: 212,886,618) ordinary shares of Sp each 10,644 10,644
-Total 10,644 10,644
-20. Reconciliation of movements in Group shareholders’ funds
-a 2022 2021
-. £'000 £'000
-Opening shareholders’ funds 256,007 339,808
-Impact of equity raise (28,646) -
-Loss for the year (50,117) (83,801)
-: Closing shareholders’ funds 177,244 256,007
-21. _ Lease liabilities
-. 2022 2021
-£'000 £000
-1 July 2021 (20,145) (20,837)
-Interest expense related to lease liabilities 658 691
-Repayment of lease liabilities , (1,375) (1,383)
-At 30 June 2022 (19,428) (20,145)
-: Current lease liabilities (743) (718)
-Non-current lease liabilities (18,685) (19,427)
-At 30 June 2022 (19,428) (20,145)
+
+**19. Called up share capital**
+
+| | 2022 £'000 | 2021 £'000 |
+| :--- | :--- | :--- |
+| Allotted, authorised, called up and fully paid: | | |
+| 2022: 212,886,618 (2021: 212,886,618) ordinary shares of 5p each | 10,644 | 10,644 |
+| **Total** | **10,644** | **10,644** |
+
+**20. Reconciliation of movements in Group shareholders’ funds**
+
+| | 2022 £'000 | 2021 £'000 |
+| :--- | :--- | :--- |
+| Opening shareholders’ funds | 256,007 | 339,808 |
+| Impact of equity raise | (28,646) | - |
+| Loss for the year | (50,117) | (83,801) |
+| **Closing shareholders’ funds** | **177,244** | **256,007** |
+
+**21. Lease liabilities**
+
+| | 2022 £'000 | 2021 £'000 |
+| :--- | :--- | :--- |
+| 1 July 2021 | (20,145) | (20,837) |
+| Interest expense related to lease liabilities | 658 | 691 |
+| Repayment of lease liabilities | (1,375) | (1,383) |
+| **At 30 June 2022** | **(19,428)** | **(20,145)** |
+
+| | | |
+| :--- | :--- | :--- |
+| Current lease liabilities | (743) | (718) |
+| Non-current lease liabilities | (18,685) | (19,427) |
+| **At 30 June 2022** | **(19,428)** | **(20,145)** |
+
 All of the above lease liabilities relate to Land and Buildings.
+
 The maturity of lease liabilities at 30 June 2022 were as follows:
-. . Lease Payments Lease Payments
-; 2022 2021
-£'000 £000
-Year to 2023 ; 1,367 1,375
-Year to 2024 1,236 1,367
-Year to 2025 1,180 1,236
-Year to 2026 1,180 1,180
-; Later years : 24,890 26,070
-Effect of discounting (10,425) (11,083)
-Lease liability (19,428) (20,145)
+
+| | Lease Payments 2022 £'000 | Lease Payments 2021 £'000 |
+| :--- | :--- | :--- |
+| Year to 2023 | 1,367 | 1,375 |
+| Year to 2024 | 1,236 | 1,367 |
+| Year to 2025 | 1,180 | 1,236 |
+| Year to 2026 | 1,180 | 1,180 |
+| Later years | 24,890 | 26,070 |
+| Effect of discounting | (10,425) | (11,083) |
+| **Lease liability** | **(19,428)** | **(20,145)** |
+
 38
 
 --- pág. 40 ---
@@ -2052,65 +2085,67 @@ The immediate controlling party is ENIC Sports Inc., a company incorporated and 
 
 Company balance sheet
 as at 30 June 2022
-2022 2021
-Notes £'000 - £’000
-Non-current assets
-Property, plant and equipment 2 88,407 93,944
-Investments 3 232,990 232,990
-321,397 326,934
-Current assets .
-Inventory 4 5,484 7,459
-Trade and other receivables 5 290,306 286,109
-; Cash and cash equivalents 66,608 33,665
-362,398 327,233
 
-Current liabilities
-Trade and other payables 6 (208,721) (305,015)
-‘N’ ordinary shares 6 (98,364) -
-FVTPL liabilities 6 (28,646) -
+| | Notes | 2022 £'000 | 2021 £'000 |
+| :--- | :--- | :--- | :--- |
+| **Non-current assets** | | | |
+| Property, plant and equipment | 2 | 88,407 | 93,944 |
+| Investments | 3 | 232,990 | 232,990 |
+| | | **321,397** | **326,934** |
+| **Current assets** | | | |
+| Inventory | 4 | 5,484 | 7,459 |
+| Trade and other receivables | 5 | 290,306 | 286,109 |
+| Cash and cash equivalents | | 66,608 | 33,665 |
+| | | **362,398** | **327,233** |
+| **Current liabilities** | | | |
+| Trade and other payables | 6 | (208,721) | (305,015) |
+| 'A' ordinary shares | 6 | (98,364) | - |
+| FVTPL liabilities | 6 | (28,646) | - |
+| | | | (305,015) |
+| **Net current assets** | | **26,667** | **22,218** |
+| **Total assets less current liabilities** | | **348,064** | **349,152** |
+| **Non-current liabilities** | 7 | **(12,994)** | **(15,105)** |
+| **Net assets** | | **335,070** | **334,047** |
+| **Equity** | | | |
+| Share capital | 9 | 10,644 | 10,644 |
+| Share premium | 9 | 34,788 | 34,788 |
+| Capital redemption reserve | 9 | 644 | 644 |
+| Retained earnings | 9 | 288,994 | 287,971 |
+| **Equity** | | **335,070** | **334,047** |
 
-(2022 total not printed) (305,015)
-Net current assets 26,667 22,218
-Total assets less current liabilities 348,064 349,152
-Non-current liabilities 7 (12,994) (15,105)
-Net assets 335,070 334,047
-Equity
-Share capital , 9 10,644 10,644
-Share premium 9 34,788 34,788
-Capital redemption reserve 9 644 644
-Retained earnings 9 288,994 287,971
-Equity 335,070 334,047
-The retained profit for the year, within the financial statements of the parent Company, was £29,669,000 (2021: £52,250,000).
-These financial statements (Company number 1706358) were approved by the Board of Directors and authorised for issue on iL 2/
-2022.
+The retained profit for the year, within the financial statements of the parent Company, was £29,669,000 (2021: £52,250,000).  
+These financial statements (Company number 1706358) were approved by the Board of Directors and authorised for issue on 7/12/ 2022.
+
 Signed on behalf of the Board of Directors
 
-Jes —
-Matthew Collecott
+[firma: Matthew Collecott]  
+Matthew Collecott  
 Director
-. 41
+
+41
 
 --- pág. 43 ---
 
-Statement of Changes in Equity
+Statement of Changes in Equity  
 as at 30 June 2022
-For the year ended 30 June 2022
-Capital
-Share redemption Retained
-Share capital premium reserve earnings Total
-£’000 £’000 £7000 £000 £000
-Balance as at 1 July 2021 10,644 34,788 644 287,971 334,047
-Impact of equity raise (note 6) - - - (28,646) (28,646)
-Profit for the year - - - 29,669 29,669
-At 30 June 2022 10,644 34,788 644 288,994 335,070 .
-For the year ended 30 June 2021 .
-Capital
-redemption Retained
-Share capital Share premium reserve earnings Tota!
-£000 £’000 £000 £000 £’000
-Balance as at 1 July 2020 10,644 34,788 644 235,721 281,797 .
-: Profit for the year - - - 52,250 52,250
-At 30 June 2021 10,644 34,788 644 287,971 334,047
+
+**For the year ended 30 June 2022**
+
+| | Share capital £'000 | Share premium £'000 | Capital redemption reserve £'000 | Retained earnings £'000 | Total £'000 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Balance as at 1 July 2021 | 10,644 | 34,788 | 644 | 287,971 | 334,047 |
+| Impact of equity raise (note 6) | - | - | - | (28,646) | (28,646) |
+| Profit for the year | - | - | - | 29,669 | 29,669 |
+| **At 30 June 2022** | **10,644** | **34,788** | **644** | **288,994** | **335,070** |
+
+**For the year ended 30 June 2021**
+
+| | Share capital £'000 | Share premium £'000 | Capital redemption reserve £'000 | Retained earnings £'000 | Total £'000 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Balance as at 1 July 2020 | 10,644 | 34,788 | 644 | 235,721 | 281,797 |
+| Profit for the year | - | - | - | 52,250 | 52,250 |
+| **At 30 June 2021** | **10,644** | **34,788** | **644** | **287,971** | **334,047** |
+
 42
 
 --- pág. 44 ---
@@ -2234,56 +2269,56 @@ would need to be written-off at that time (see note 2).
 
 Notes to the Company accounts
 for the year ended 30 June 2022
-1. Accounting policies and critical judgements (continued)
-FVTPL Liability
-The issuance of ‘A’ ordinary shares in the period conferred warrant rights to subscribe for ordinary shares in the Club, as detailed in
-note 6. The warrants are derivative financial liabilities, which result is in measurement at fair value in accordance with IFRS 9. At the
-balance sheet date the board estimated the fair value of the warrants based on relevant comparatives, a notional exercise date and a
-median discount attributable to comparative transactions.
-2. Property, plant and equipment
-For the year ended 30 June 2022
-Land and F&F for General plant Assets under
-buildings short leasehold Right of use and the course of
-leasehold properties assets Motor vehicles equipment construction Total
-£000. £000 £'000 £'000 £'000 £'000 £'000
-Cost ;
-At 1 July 2021 55,883 1,576 4,252 315 27,083 30,282 119,391
-, Additions 59 - - - 170 1,058 1,287
-Transfer to income statement - - - (16) (17) (441) (474)
-Transfer from assets under 446 - - - , 5 (451) -
-construction ;
-At 30 June 2022 56,388 1,576 4,252 299 27,241 30,448 120,204
-Depreciation and impairment
-At 1 July 2021 , 2,538 258 1,130 196 16,124 5,201  —- 25,447
-Charged in the year 1,136 36 565 60 4,553 - 6,350
-At 30 June 2022 3,674 294 1,695 256 20,677 5,201 31,797
-Net book value
-At 30 June 2022 52,714 1,282 2,557 43 6,564 25,247 88,407
+
+**1. Accounting policies and critical judgements (continued)**
+
+*FVTPL Liability*  
+The issuance of ‘A’ ordinary shares in the period conferred warrant rights to subscribe for ordinary shares in the Club, as detailed in note 6. The warrants are derivative financial liabilities, which result is in measurement at fair value in accordance with IFRS 9. At the balance sheet date the board estimated the fair value of the warrants based on relevant comparatives, a notional exercise date and a median discount attributable to comparative transactions.
+
+**2. Property, plant and equipment**
+
+**For the year ended 30 June 2022**
+
+| | Land and buildings short leasehold £'000 | F&F for leasehold properties £'000 | Right of use assets £'000 | Motor vehicles £'000 | General plant and equipment £'000 | Assets under the course of construction £'000 | Total £'000 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Cost** | | | | | | | |
+| At 1 July 2021 | 55,883 | 1,576 | 4,252 | 315 | 27,083 | 30,282 | 119,391 |
+| Additions | 59 | - | - | - | 170 | 1,058 | 1,287 |
+| Transfer to income statement | - | - | - | (16) | (17) | (441) | (474) |
+| Transfer from assets under construction | 446 | - | - | - | 5 | (451) | - |
+| **At 30 June 2022** | **56,388** | **1,576** | **4,252** | **299** | **27,241** | **30,448** | **120,204** |
+| **Depreciation and impairment** | | | | | | | |
+| At 1 July 2021 | 2,538 | 258 | 1,130 | 196 | 16,124 | 5,201 | 25,447 |
+| Charged in the year | 1,136 | 36 | 565 | 60 | 4,553 | - | 6,350 |
+| **At 30 June 2022** | **3,674** | **294** | **1,695** | **256** | **20,677** | **5,201** | **31,797** |
+| **Net book value** | | | | | | | |
+| **At 30 June 2022** | **52,714** | **1,282** | **2,557** | **43** | **6,564** | **25,247** | **88,407** |
+
 45
 
 --- pág. 47 ---
 
-Notes to the Company accounts ,
+Notes to the Company accounts
 for the year ended 30 June 2022
-For the year ended 30 June 2021
-Land and Assets under
-buildings short Right of use General plant the course of
-leasehold assets = Motor vehicles and equipment construction Total
 
-: £'000 " €'000. £'000 _ £'000 £000 £000
-Cost
-At 1 July 2020 57,273 4,252 530 26,900 28,725 117,680
-Additions 186 - 16 82 1,662 1,946
-Disposals - - (231) (4) - (235)
-Transfer from assets under construction - - - 105 (105) -
-At 30 June 2021 57,459 4,252 315 27,083 30,282 119,391
-Depreciation and impairment
-At 1 July 2020 1,627 565 336 11,355 5,201 19,084
-Eliminated on disposal - - (231) - - (231)
-Charged in the year 1,169 565 91 4,769 - 6,594
-At 30 June 2021 2,796 1,130 196 16,124 5,201 25,447
-Net book value .
-At 30 June 2021 54,663 3,122 119 10,959 25,081 93,944
+**For the year ended 30 June 2021**
+
+| | Land and buildings short leasehold £'000 | Right of use assets £'000 | Motor vehicles £'000 | General plant and equipment £'000 | Assets under the course of construction £'000 | Total £'000 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Cost** | | | | | | |
+| At 1 July 2020 | 57,273 | 4,252 | 530 | 26,900 | 28,725 | 117,680 |
+| Additions | 186 | - | 16 | 82 | 1,662 | 1,946 |
+| Disposals | - | - | (231) | (4) | - | (235) |
+| Transfer from assets under construction | - | - | - | 105 | (105) | - |
+| **At 30 June 2021** | **57,459** | **4,252** | **315** | **27,083** | **30,282** | **119,391** |
+| **Depreciation and impairment** | | | | | | |
+| At 1 July 2020 | 1,627 | 565 | 336 | 11,355 | 5,201 | 19,084 |
+| Eliminated on disposal | - | - | (231) | - | - | (231) |
+| Charged in the year | 1,169 | 565 | 91 | 4,769 | - | 6,594 |
+| **At 30 June 2021** | **2,796** | **1,130** | **196** | **16,124** | **5,201** | **25,447** |
+| **Net book value** | | | | | | |
+| **At 30 June 2021** | **54,663** | **3,122** | **119** | **10,959** | **25,081** | **93,944** |
+
 All assets shown are held at historical cost.
 
 46
@@ -2334,43 +2369,47 @@ Inventories comprises merchandising goods held for resale.
 
 Notes to the Company accounts
 for the year ended 30 June 2022
-5. Current assets
-2022 2021
-£'000 £’000
-Trade receivables 1,264 1,721
-Amounts owed by Group undertakings 285,050 280,799
-Other receivables 789 943
-Prepayments and accrued income 1,067 148
-Other taxation ~ 102 1,150
-Deferred tax asset (see note 8) : 2,034 1,348
-290,306 286,109
-All amounts due from-group undertakings are unsecured, interest free and repayable on demand.
-6. Current liabilities
-2022 2021
-£'000 £'000
-Trade payables 2,890 2,226
-Short term revolving loan - (46)
-Lease liabilities 557 533
-Other payables 314 321
-Accruals and deferred income ; 8,886 10,192
-Taxation 8,122 8,624
-Other taxation 211 2,924
-Amounts due to Group undertakings 187,741 280,235
-Trade and other payables 208,721 305,015
-‘A’ ordinary shares 98,364 -
-FVTPL liabilities . 28,646 -
-_ 335,731 305,015
+
+**5. Current assets**
+
+| | 2022 £'000 | 2021 £'000 |
+| :--- | :--- | :--- |
+| Trade receivables | 1,264 | 1,721 |
+| Amounts owed by Group undertakings | 285,050 | 280,799 |
+| Other receivables | 789 | 943 |
+| Prepayments and accrued income | 1,067 | 148 |
+| Other taxation | 102 | 1,150 |
+| Deferred tax asset (see note 8) | 2,034 | 1,348 |
+| | **290,306** | **286,109** |
+
+All amounts due from group undertakings are unsecured, interest free and repayable on demand.
+
+**6. Current liabilities**
+
+| | 2022 £'000 | 2021 £'000 |
+| :--- | :--- | :--- |
+| Trade payables | 2,890 | 2,226 |
+| Short term revolving loan | - | (46) |
+| Lease liabilities | 557 | 539 |
+| Other payables | 314 | 321 |
+| Accruals and deferred income | 8,886 | 10,192 |
+| Taxation | 8,122 | 8,624 |
+| Other taxation | 211 | 2,924 |
+| Amounts due to Group undertakings | 187,741 | 280,235 |
+| Trade and other payables | 208,721 | 305,015 |
+| | | |
+| 'A' ordinary shares | 98,364 | - |
+| FVTPL liabilities | 28,646 | - |
+| | **335,731** | **305,015** |
+
 All amounts owed to group undertakings are unsecured, interest free and repayable on demand.
-The Company's bank overdraft forms part of the Group’s cash management arrangement.
-During the year the Club agreed a capital increase of up to £150,000,000 from the majority shareholder, ENIC Sports Inc (“ENIC”), via
-the issue of convertible ‘A’ ordinary Shares and accompanying warrants. The investment represents permanent capital, with no
-ongoing interest cost to the Club. Pursuant to the agreement, ENIC subscribed for £100,000,000 ‘A’ ordinary shares in May 2022.
-The ‘A’ ordinary shares are convertible into ordinary shares with fair value of £100,000,000 at any time at the option of ENIC subject
-to a number of variables. The ‘A’ ordinary shares are an obligation to deliver a variable amount of the Company's own equity
-instruments and so are a financial liability within the scope of IFRS 9. A notice to convert the ‘A’ ordinary shares was received in June
-2022. The conversion will conclude subsequent to the year end and will result in the issuance of ordinary share capital which will
-become part of the Club’s permanent share capital and treated as equity, increasing ENIC’s holding to 86.58%. The investment is
-shown in the balance sheet net of £1,636,000 of arrangement fees.
+
+The Company’s bank overdraft forms part of the Group’s cash management arrangement.
+
+During the year the Club agreed a capital increase of up to £150,000,000 from the majority shareholder, ENIC Sports Inc (“ENIC”), via the issue of convertible ‘A’ ordinary Shares and accompanying warrants. The investment represents permanent capital, with no ongoing interest cost to the Club. Pursuant to the agreement, ENIC subscribed for £100,000,000 'A' ordinary shares in May 2022.
+
+The ‘A’ ordinary shares are convertible into ordinary shares with fair value of £100,000,000 at any time at the option of ENIC subject to a number of variables. The ‘A’ ordinary shares are an obligation to deliver a variable amount of the Company’s own equity instruments and so are a financial liability within the scope of IFRS 9. A notice to convert the ‘A’ ordinary shares was received in June 2022. The conversion will conclude subsequent to the year end and will result in the issuance of ordinary share capital which will become part of the Club’s permanent share capital and treated as equity, increasing ENIC’s holding to 86.58%. The investment is shown in the balance sheet net of £1,636,000 of arrangement fees.
+
 48
 
 --- pág. 50 ---
@@ -2424,45 +2463,53 @@ Accelerated capital allowances (2,034) (1,348) ;
 
 Notes to the Company accounts
 for the year ended 30 June 2022
-9. Reconciliation of movements in equity
-: Capital
-Share capital Share premium redemption Retained
-: account account reserve earnings Total
-For the year ended 30 June 2022 ; £'000 £'000 £’000 £'000 £'000
-Balance as at 1 July 2021 10,644 34,788 644 287,971 334,047 .
-Impact of equity raise - - - (28,646) (28,646)
-Profit for the period - - - 29,669 29,669
-At 30 June 2022 10,644 34,788 644 288,994 335,070
-The retained profit for the year, within the financial statements of the parent Company, was £29,669,000 profit (2021: £52,250,000
-profit). As permitted by the Companies Act 2006 Section 408, no separate profit and loss account is presented. The audit fee of
-£3,000 (2021: £3,000) is borne by another Group Company in the current and prior year. No fees were paid to the Company's
-auditor or affiliated entities, relating to other services during the year. Refer to the Group financial statements for full disclosure of
-fees payable to the auditor.
+
+**9. Reconciliation of movements in equity**
+
+**For the year ended 30 June 2022**
+
+| | Share capital account £'000 | Share premium account £'000 | Capital redemption reserve £'000 | Retained earnings £'000 | Total £'000 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Balance as at 1 July 2021 | 10,644 | 34,788 | 644 | 287,971 | 334,047 |
+| Impact of equity raise | - | - | - | (28,646) | (28,646) |
+| Profit for the period | - | - | - | 29,669 | 29,669 |
+| **At 30 June 2022** | **10,644** | **34,788** | **644** | **288,994** | **335,070** |
+
+The retained profit for the year, within the financial statements of the parent Company, was £29,669,000 profit (2021: £52,250,000 profit). As permitted by the Companies Act 2006 Section 408, no separate profit and loss account is presented. The audit fee of £3,000 (2021: £3,000) is borne by another Group Company in the current and prior year. No fees were paid to the Company’s auditor or affiliated entities, relating to other services during the year. Refer to the Group financial statements for full disclosure of fees payable to the auditor.
+
 During the year the Company did not receive any dividends from wholly-owned subsidiaries (2021: £23,375,346).
-The movements in the share capital, share premium and preference shares accounts are disclosed in note 19 to the consolidated
-financial statements.
-10. Lease liabilities
-2022 2021 ;
-£’000 £’000
-~ 1 duly 2021 © (3,196) (3,717)
-Interest expense related to lease liabilities 87 104
-Repayment of lease liabilities (625) _ (625)
-At 30 June 2022 (2,658) (3,196)
-Current lease liabilities : (557) (539)
-Non-current lease liabilities . (2,101) (2,657)
-At 30 June 2022 (2,658) (3,196)
+
+The movements in the share capital, share premium and preference shares accounts are disclosed in note 19 to the consolidated financial statements.
+
+**10. Lease liabilities**
+
+| | 2022 £'000 | 2021 £'000 |
+| :--- | :--- | :--- |
+| 1 July 2021 | (3,196) | (3,717) |
+| Interest expense related to lease liabilities | 87 | 104 |
+| Repayment of lease liabilities | (625) | (625) |
+| **At 30 June 2022** | **(2,658)** | **(3,196)** |
+
+| | | |
+| :--- | :--- | :--- |
+| Current lease liabilities | (557) | (539) |
+| Non-current lease liabilities | (2,101) | (2,657) |
+| **At 30 June 2022** | **(2,658)** | **(3,196)** |
+
 All of the above lease liabilities relate to Land and Buildings.
+
 The maturity of lease liabilities at 30 June 2022 were as follows:
-Lease Payments Lease Payments .
-2022 2021
-£’000 £000
-Year to 2023 625 625
-Year to 2024 . 493 625
-Year to 2025 438 493
-Year to 2026 438 438
-Later years 876 1,314
-Effect of discounting (212) (299)
-Lease liability (2,658) (3,196) .
+
+| | Lease Payments 2022 £'000 | Lease Payments 2021 £'000 |
+| :--- | :--- | :--- |
+| Year to 2023 | 625 | 625 |
+| Year to 2024 | 493 | 625 |
+| Year to 2025 | 438 | 493 |
+| Year to 2026 | 438 | 438 |
+| Later years | 876 | 1,314 |
+| Effect of discounting | (212) | (299) |
+| **Lease liability** | **(2,658)** | **(3,196)** |
+
 50
 
 --- pág. 52 ---
