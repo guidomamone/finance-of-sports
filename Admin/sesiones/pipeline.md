@@ -473,3 +473,9 @@ en el `.md` (rechaza Udinese: 1 vez contra 8 de la real; confirma solo 1 de 4); 
 **310 partes 2 y 3 y 290: recomendación hecha a Guido (ver el chat); sin tocar código.**
 
 ## Después del merge del 310 parte 1 (2026-10-19)
+
+**310 parte 1, votos (Guido, 2026-10-19).** `cajaSinVecinoAceptable` reemplaza a `balanceCuadraConFila`: acepta la caja sin vecino solo si coinciden
+tres votos (balance cuadra / tabla del mayor activo / otra fila con la misma cifra). Probé las variantes con una variable temporal (sin
+commitear): voto 1 solo 422 iguales y 8 distintos (Udinese 2022); la idea 1, la 2, "las dos" y "alguna" dieron 422 y 7; quedó la de los votos
+(las tres de acuerdo). `--medir` final: caja 422/7/379, deuda 180/10/575 (idéntica). Los 7 distintos son los de antes de la regla (Milan 2025, Arouca
+2024, Juventus 2005, Lazio 2006, Napoli 2019 y 2023, Wolves 2025). Los lotes de prueba miden verificar y cargar, que esta regla no toca.
