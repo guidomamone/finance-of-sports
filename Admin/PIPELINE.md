@@ -563,7 +563,11 @@ Mitigaciones:
   clubes del sitio de esa liga-año). Medido en el lote 92 (Bélgica 2013-2024): 41 de 51 listas pasan; 44 de 55 documentos encuentran su
   liga; los 11 que no, quedan sin decidir (listas de un solo grupo en las ligas amateur, First Division B 2017-18 y 2018-19 con un equipo
   menos, Patro Eisden 2013-2014). Después de la liga, la compuerta de estadio y sponsor (to-do 273) frena 22 de esos años por sponsor o
-  estadio que Wikipedia no trae.
+  estadio que Wikipedia no trae. (298 u2) Las listas de un grupo y el equipo de menos eran la misma causa: fetch-club-league-reference.mjs
+  cortaba los códigos de la plantilla sports table con guion ("team1=B-W" -> "B": Beerschot Wilrijk sin nombre, tabla incompleta, el escalón
+  de grupos la descartaba). Ahora el código acepta "." y "-" (empieza con letra o número), y la unión de grupos informa cuántos fueron
+  (GRUPOS, para el tope de 40 por grupo de listas-lote). Lote 92: 41 -> 45 de 51 listas; las 6 que faltan no tienen página en Wikipedia.
+  Las 358 listas guardadas, con el lector viejo y el nuevo: mismos equipos (tr-superlig 2019 deja de leer un "team1" comentado).
 - b) Club nuevo: `alta-club.mjs`, en el mismo commit que su primer año. Se commitean TODOS los archivos que lista "Alta escrita (...)",
   también los compartidos (`data/currency-map.js` con el tipo de cambio nuevo): en las altas italianas quedó afuera y se commiteó suelto.
   El país del club (to-do 298 i): escalón 0, la tabla PAISES de `alta-club.mjs`; escalón 1, si la carpeta no está ahí,

@@ -144,7 +144,9 @@ function equiposDeSportsTable(wikitext, todas = false) {
   // Norte y Sur) daba solo el primer grupo. Si hay 2 tablas o más SIN NINGÚN equipo en común y de al menos 8 equipos cada una, son los
   // grupos y se juntan. Una tabla anual o de playoff repite equipos de las otras, así que no entra.
   const grupos = []; for (const t of tablas) if (t.length >= 8 && !t.incompleta && !grupos.some((g) => g.some((x) => t.includes(x)))) grupos.push(t);
-  if (grupos.length >= 2 && tablas.every((t) => grupos.includes(t) || t.every((x) => grupos.flat().includes(x)))) return [...new Set(grupos.flat())];
+  // (to-do 298 u2) cuántos grupos juntó va en el --json (GRUPOS), como en equiposPorGrupo: listas-lote.mjs ajusta el tope de 40 por grupo
+  // (Second Amateur Division 2019-20 y Division 2 2021-22: tres grupos de 16, 48 equipos)
+  if (grupos.length >= 2 && tablas.every((t) => grupos.includes(t) || t.every((x) => grupos.flat().includes(x)))) { GRUPOS = grupos.length; return [...new Set(grupos.flat())]; }
   return [...new Set(tablas[0] || [])];
 }
 // cada plantilla de la página por separado, en orden de posición (to-do 266); el texto de cada una se corta en la siguiente
@@ -152,12 +154,15 @@ function tablasDeSportsTable(wikitext) {
   const inicios = [...wikitext.matchAll(/\{\{\s*#invoke:\s*sports table/gi)].map((m) => m.index);
   return inicios.map((ini, k) => {
     const t = wikitext.slice(ini, Math.min(inicios[k + 1] ?? Infinity, ini + 20000));
-    let orden = [...t.matchAll(/\|\s*team(\d+)\s*=\s*([\p{L}\p{N}_]+)/gu)].sort((a, b) => Number(a[1]) - Number(b[1])).map((m) => m[2]);
+    // (to-do 298 u2) el código puede traer guion o punto ("B-W", Beerschot Wilrijk en la First Division B 2017-18): con [\p{L}\p{N}_]+ se cortaba en
+    // "B", no encontraba su name_ y la tabla quedaba incompleta (un equipo menos; en las ligas por grupos, el escalón de grupos la descartaba).
+    // Empieza con letra o número: un enlace de un cuadro de play-off ("team1=[[Olsa Brakel]]") no es un código.
+    let orden = [...t.matchAll(/\|\s*team(\d+)\s*=\s*([\p{L}\p{N}_][\p{L}\p{N}_.\-]*)(?=\s|\||\}|$)/gu)].sort((a, b) => Number(a[1]) - Number(b[1])).map((m) => m[2]);
     // la otra forma de la plantilla: `|team_order = OLY, AEK, PAO, ...` ("Template:2024–25 Super League Greece table")
-    if (!orden.length) { const to = t.match(/\|\s*team_order\s*=\s*([^|}]*)/); if (to) orden = to[1].replace(/<!--[\s\S]*?-->/g, '').split(',').map((s) => s.trim()).filter((s) => /^[\p{L}\p{N}_]+$/u.test(s)); }
+    if (!orden.length) { const to = t.match(/\|\s*team_order\s*=\s*([^|}]*)/); if (to) orden = to[1].replace(/<!--[\s\S]*?-->/g, '').split(',').map((s) => s.trim()).filter((s) => /^[\p{L}\p{N}_][\p{L}\p{N}_.\-]*$/u.test(s)); }
     // el nombre puede venir envuelto ("name_PAC = {{sort|Pacos|[[F.C. Paços de Ferreira|Paços de Ferreira]]}}"): el primer enlace de la
     // línea; sin enlace, el texto hasta el próximo "|"
-    const nombre = (cod) => { const m = t.match(new RegExp('\\|\\s*name_' + cod + '\\s*=\\s*([^\\n]*)')); if (!m) return null;
+    const nombre = (cod) => { const m = t.match(new RegExp('\\|\\s*name_' + cod.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s*=\\s*([^\\n]*)')); if (!m) return null;
       return /\[\[/.test(m[1]) ? cleanWikilinkCell(m[1]) : cleanWikilinkCell(m[1].split('|')[0]); };
     const nombres = orden.map(nombre);
     const lista = [...new Set(nombres.filter(Boolean))];
