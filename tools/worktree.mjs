@@ -29,6 +29,11 @@ const principal = () => resolve(git(['rev-parse', '--path-format=absolute', '--g
 const GENERADO = (f) => f === 'index.html' || f === 'fuentes.html' || f === 'sitemap.xml' || f.startsWith('fuentes/') || f === 'Admin/ESTADO-clubes.md'
   || f === 'data/club-index.js' || f.startsWith('data/rankings/') || f.startsWith('data/faltantes/') || f === 'Admin/sourcing/pendientes.md' || f.startsWith('data/estimados/');
 const DOCS_PRINCIPAL = ['Admin/TODO.md', 'Admin/CHANGELOG.md', 'Admin/ESTADO.md'];
+// Lo que escribe cada corrida de lote.mjs o pipeline.mjs para sus propias etapas: cada carpeta tiene el suyo. Enlazado a la principal, dos
+// lotes que corrían a la vez en worktrees distintos se pisaban la lista de la etapa 7 (2026-10-19: el lote 103 categorizó dos años de Basel y
+// la carga de Basel se quedó sin categorizar).
+const ESTADO_DE_CORRIDA = ['Admin/registros/.lote-lista-actual.txt', 'Admin/registros/.lote-primer-anio.txt',
+  'Admin/registros/.pipeline-lista-actual.txt', 'Admin/registros/.pipeline-lista-jev.txt', 'Admin/registros/.candado.lock'];
 
 function preparar(destino) {
   const main = principal(); const wt = resolve(destino);
@@ -37,7 +42,7 @@ function preparar(destino) {
   const lista = git(['ls-files', '--others', '--ignored', '--exclude-standard', '-z'], main).split('\0').filter(Boolean)
     // Ni una carpeta con su propio .git (git la lista entera, con / al final) ni lo de .claude/worktrees/ (los otros worktrees, que en la
     // principal figuran como ignorados): enlazarlos hacía fallar el comando.
-    .filter((f) => !/(^|\/)\.DS_Store$/.test(f) && !f.endsWith('/') && !f.startsWith('.claude/worktrees/'));
+    .filter((f) => !/(^|\/)\.DS_Store$/.test(f) && !f.endsWith('/') && !f.startsWith('.claude/worktrees/') && !ESTADO_DE_CORRIDA.includes(f));
   let hechos = 0, ya = 0;
   for (const f of lista) {
     const dst = join(wt, f); let existe = false; try { lstatSync(dst); existe = true; } catch {}

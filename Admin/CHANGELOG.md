@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 827 — Cada worktree con su propia lista de corrida (2026-10-19)
+
+* `worktree.mjs preparar` ya no enlaza a la principal la lista de la etapa 7 ni las otras listas de corrida (`.lote-lista-actual.txt` y
+  compañía): dos lotes a la vez en worktrees distintos se pisaban (el lote 103 categorizó dos años de Basel y Basel quedó sin categorizar).
+  Los enlaces ya hechos en fos-pipeline, fos-finanzas y fos-onboarding se reemplazaron por archivos propios; fos-pantallas, cuando termine
+  su lote.
+
 ## Versión 826 — Lote 102 (Bélgica) y Luzern (2026-10-19)
 
 * Lommel SK 2019-2024 (con una línea `carga-club`), Lierse SK 2020-2021 y Patro Eisden 2021 y 2023. Luzern 2018, 2020 y 2024, con ligas,
