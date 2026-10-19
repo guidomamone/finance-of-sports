@@ -465,3 +465,5 @@
 
 - "Balances propios de las entidades que organizan las ligas: hoy la Premier League 2024-25, LaLiga 2024-25 y la J.League 2025": suman la EFL 2024-25, la SFL 2024/25,
   Norsk Toppfotball 2025, Superligaen A/S 2024/25, la federación estonia 2025 y la Super League griega 2024-25.
+
+## Después del sexto merge de Finanzas 4 (2026-10-19)

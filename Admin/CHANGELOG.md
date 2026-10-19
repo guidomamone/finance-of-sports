@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 780 — 295 c: seis ligas más con su balance y su auditor (2026-10-19)
+
+* EFL 2024-25 (Grant Thornton), Swiss Football League 2024-25 (EY), Norsk Toppfotball 2025 (BDO), Superligaen 2024-25 (EY), federación
+  estonia 2025 (incertidumbre de continuidad) y Super League griega 2024-25 (PKF, con salvedades). Pro League belga transcripta, sin el
+  informe del comisario. Eredivisie, LPF y Dimayor no publican.
+
 ## Versión 779 — 298 n: el año vecino con otro perímetro ya no frena (2026-10-19)
 
 * `verificar.mjs`: si la comparación con el año vecino falla entre dos documentos con perímetro fijado distinto, queda "no se puede
