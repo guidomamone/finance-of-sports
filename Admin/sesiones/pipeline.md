@@ -294,3 +294,9 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
   Sigue: la m (el perímetro en la carga compara con el año cargado más cercano y no con el ajuste del club).
 
 ## Después del merge de la l (2026-10-19)
+- **Lotes de prueba al día** (6404b0504b, pedido de Guido 2026-10-19). `tools/lotes-prueba.mjs` (gratis; `--escribir` reescribe) arma la
+  mediana (la rápida + 3 documentos por club: más viejo, del medio y más nuevo) y la completa (todos los documentos con verificación) desde
+  `Generados/`. La rápida sigue a mano: +18 casos de esta semana (62). Quedan 62 / 339 / 720 documentos de 12 países (antes 44 / 118 / 358,
+  sin Bélgica, Estonia, Países Bajos, Noruega ni Suiza). Base: `medir-verificar --pasadas 2` sobre la completa, OK 683 / COLA 37;
+  `medir-cargar --contra-sitio`, 624 años publicados con el mismo documento, 598 se reproducen, 4 distintos, 22 frenan. Pendiente del ok de
+  Guido: la sección 5 de la skill club-or-year-onboarding todavía dice "16 / 34 / 87" y no nombra el generador.

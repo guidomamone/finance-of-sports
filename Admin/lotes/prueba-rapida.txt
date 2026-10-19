@@ -1,4 +1,5 @@
-# Lista de PRUEBA (Versión 450, pedido de Guido 2026-10-04; actualizada el 2026-10-16): para medir cualquier cambio de script antes y después. Sin repetidos.
+# Lista de PRUEBA (Versión 450, pedido de Guido 2026-10-04): para medir cualquier cambio de script antes y después. Sin repetidos.
+# Esta es la ÚNICA de las tres que se arma a mano; la mediana y la completa las genera `node tools/lotes-prueba.mjs --escribir` a partir de ella.
 # Cómo medir un cambio de verificar.mjs o cargar.mjs: node tools/medir-verificar.mjs --lista <esta lista> antes y después (gratis, deja los registros como estaban).
 # RÁPIDA: los casos que ya rompieron algo una vez. Los 16 originales (UC, Fortaleza, Goiás 2008, Novorizontino, Juventus, AEL) y los de los escalones de
 # verificar.mjs (Avaí 2021, Ferroviária 2012 y 2016, Parma 2024-25, Remo, Criciúma 2022, Goiás 2023, Lazio 2016-17, Milan 2018-19, Atalanta 2024, Bologna,
@@ -47,3 +48,27 @@ Clubes/Portugal/Mafra/PRESTACAO-CONTAS-EPOCA-2023_2024_Final.pdf
 Clubes/Portugal/Benfica/relatorio-contas-2007-08.pdf
 Clubes/Portugal/Sporting CP/relatorio-contas-2007-08.pdf
 Clubes/Portugal/Académica/10-RC-SDUQ-2022-2023.pdf
+# Noruega (298 y1): costos financieros en singular sumados como ingreso; Fredrikstad 2024 (acta 2025) también el total sumado con su renglón.
+Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2025.pdf
+Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.pdf
+Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.pdf
+Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2025.pdf
+Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2018.pdf
+Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.pdf
+# Suiza (298 y3): consolidado con desglose por sociedad, deducción abierta en su nota, compensación entre sociedades.
+Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.pdf
+# Portugal (298 y3 a): una reversión en gastos abierta en su nota.
+Clubes/Portugal/Vitória Guimarães/wf-src-Relatorio-e-Contas-2021-22-SAD.pdf
+# Bélgica (298 a, b, t): esquema NBB, signos de costos financieros, códigos, cierre falso, versiones -correction.
+Clubes/Bélgica/Beerschot/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/Beerschot/jaarrekening-2019-06-30-individual-correction.pdf
+Clubes/Bélgica/Lierse Kempenzonen/jaarrekening-2022-06-30-individual.pdf
+Clubes/Bélgica/Lommel SK/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/Lommel SK/jaarrekening-2018-06-30-individual.pdf
+Clubes/Bélgica/Patro Eisden/jaarrekening-2025-06-30-individual.pdf
+Clubes/Bélgica/OH Leuven/jaarrekening-2025-06-30-individual.pdf
+# Estonia (298 l, n): reportType sin palabras de estado; año vecino con otro perímetro (FCI Levadia 2020 contra el consolidado 2021).
+Clubes/Estonia/FCI Levadia/aruanne-2020.pdf
+Clubes/Estonia/FCI Levadia/aruanne-2025.pdf
+# Países Bajos (298 w): holding con los dos estados, perímetro por las controladas.
+Clubes/Países Bajos/Go Ahead Eagles/wf-2024-2025-31bca08b.pdf
