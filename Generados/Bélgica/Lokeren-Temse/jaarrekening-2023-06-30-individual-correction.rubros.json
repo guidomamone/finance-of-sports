@@ -3,9 +3,19 @@
   "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2023-06-30-individual-correction.pdf",
   "club": "lokerentemse-be",
   "year": 2023,
-  "generatedAt": "2026-10-18T15:27:59.710Z",
+  "generatedAt": "2026-10-19T14:16:59.022Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
+    {
+      "label": "Overige bedrijfsopbrengsten (implícito en la Brutomarge)",
+      "lado": "revenue",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.551469
+      ],
+      "glosa": "Otros ingresos de explotación (implícito en el margen bruto)"
+    },
     {
       "label": "Waarvan: niet-recurrente bedrijfsopbrengsten",
       "lado": "revenue",
@@ -24,7 +34,7 @@
       "values": [
         1.504443
       ],
-      "glosa": "Cifra de negocios"
+      "glosa": "Importe neto de la cifra de negocios"
     },
     {
       "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
@@ -54,7 +64,7 @@
       "values": [
         0.035114
       ],
-      "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, inmovilizado intangible y material"
+      "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, inmovilizado inmaterial y material"
     },
     {
       "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (+)/(-) (terugnemingen)",

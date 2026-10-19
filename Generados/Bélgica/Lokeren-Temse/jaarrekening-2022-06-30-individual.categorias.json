@@ -1,0 +1,90 @@
+{
+ "md": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2022-06-30-individual.md",
+ "club": "lokerentemse-be",
+ "year": 2022,
+ "generatedAt": "2026-10-19T14:23:43.610Z",
+ "rubrosHuella": "e1134efc4d52de7d86d79e8343916393366b5124",
+ "jevHuella": "b0a29936bbffa772ab094745ca4ef4a32099e14f",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Overige bedrijfsopbrengsten (implícito en la Brutomarge)",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos de explotación (implícito en el margen bruto)",
+   "page": 5,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_income",
+   "confianza": 1
+  },
+  {
+   "label": "Omzet",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Cifra de negocios",
+   "page": 5,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "lump_football_operations",
+   "confianza": 1
+  },
+  {
+   "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Mercaderías, materias primas y auxiliares, servicios y bienes diversos",
+   "page": 5,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)",
+   "page": 5,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "wages_squad",
+   "confianza": 1
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 5,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto-con-contexto",
+   "categoria": "other_expenses",
+   "confianza": 1
+  },
+  {
+   "label": "Afschrijvingen materiële vaste activa",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortización del inmovilizado material",
+   "page": 5,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "depreciation",
+   "confianza": 1
+  }
+ ]
+}

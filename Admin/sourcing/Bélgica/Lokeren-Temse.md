@@ -16,3 +16,5 @@
 - Último chequeo: 2026-10-08.
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-18): ejercicio 2025 desde `Clubes/Bélgica/Lokeren-Temse/jaarrekening-2025-06-30-individual.pdf` (sourceId `lokerentemse-be-jaarrekening-2025-06-30-individual`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2024 desde `Clubes/Bélgica/Lokeren-Temse/jaarrekening-2024-06-30-individual.pdf` (sourceId `lokerentemse-be-jaarrekening-2024-06-30-individual`).

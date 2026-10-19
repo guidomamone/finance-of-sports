@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2023-06-30-individual-correction.pdf",
  "md": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2023-06-30-individual-correction.md",
- "generado": "2026-10-18T19:16:11.956Z",
+ "generado": "2026-10-19T14:16:59.022Z",
  "estado": "cola",
  "clubId": "lokerentemse-be",
  "year": 2023,
@@ -13,14 +13,7 @@
  },
  "ajustes": null,
  "cola": [
-  "7dfd8ce",
-  "1e67461",
-  "0f0f1fc",
-  "382f7cf",
-  "57e111a",
-  "d8ae452",
-  "a95945b",
-  "4145b1b"
+  "d8ae452"
  ],
  "chequeos": [
   {
@@ -35,28 +28,40 @@
   },
   {
    "nombre": "resultado del ejercicio",
-   "ok": false,
-   "detalle": "ingresos 1.620693 - gastos 2.630796 ± financiero 0.020971 ± impuesto 0 no da el impreso -0.479459",
-   "dif": null
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 4.440892098500626e-16
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
   },
   {
    "nombre": "documento del año 2024",
-   "ok": false,
-   "detalle": "ingresos de 2023: 1.620693 en este documento y 0.893627 en jaarrekening-2024-06-30-individual.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "códigos NBB del año 2023 iguales en este documento y en jaarrekening-2024-06-30-individual.pdf (9904, 9901); los ingresos se presentan distinto (2.172162 y 0.777377)"
   },
   {
    "nombre": "documento del año 2022",
-   "ok": false,
-   "detalle": "ingresos de 2022: 1.448549 en jaarrekening-2022-06-30-individual.pdf y 1.359624 en este documento (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2022: 1.512829 en jaarrekening-2022-06-30-individual.pdf y 1.512829 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "el estado salió de sus códigos NBB y todos sus totales impresos cierran exacto: no hace falta la revisión del primer año (to-do 298 t)"
   }
  ],
  "notas": [
+  "escalón \"códigos NBB\": el estado se lee por sus códigos (L213-L236, esquema abreviado); cierran exacto todos sus totales impresos",
   "la nota de \"Waarvan: niet-recurrente bedrijfsopbrengsten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar que no afecta la carga: b10 mezcla datos de personal (FTE) con importes de resultados excepcionales y financieros que podrían no desglosar renglones del estado.",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
  ],
@@ -64,16 +69,24 @@
  "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 1.620693,
+  "ingresos": 2.172162,
   "gastos": 2.630796,
-  "financiero": 0.020971,
+  "financiero": -0.020825,
   "impuesto": 0,
   "resultadoImpreso": -0.479459,
   "resultadoParaCargar": -0.479459,
   "resultadoFinal": null,
-  "lecturaSignos": null
+  "lecturaSignos": "como impresos"
  },
  "lineas": [
+  {
+   "etiqueta": "Overige bedrijfsopbrengsten (implícito en la Brutomarge)",
+   "lado": "ingreso",
+   "M": 0.551469,
+   "pagina": 6,
+   "linea": 213,
+   "origen": "estado"
+  },
   {
    "etiqueta": "Waarvan: niet-recurrente bedrijfsopbrengsten",
    "lado": "ingreso",
@@ -143,7 +156,7 @@
   },
   {
    "etiqueta": "Recurrente financiële kosten",
-   "M": 0.020898,
+   "M": -0.020898,
    "linea": 230
   }
  ],

@@ -97,6 +97,43 @@ Duda: El balance 2025 no marca quién es Voorzitter (solo lista Bestuurders desd
 Duda: La fecha desde (2020-04-21) viene del balance, no de la fuente web, que solo confirma abril de 2020.
 ```
 
+## 2024
+
+### Ingresos
+
+```text
+2024: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Bélgica/Lokeren-Temse/jaarrekening-2024-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/Lokeren-Temse/jaarrekening-2024-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Brutomarge (+)/(-) | pág. 6, Jev 0.98 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bezoldigingen, sociale lasten en pensioenen (+)/(-) | pág. 6, precedente |
+| 2 | Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) | pág. 6, precedente |
+| 3 | Andere bedrijfskosten | pág. 6, precedente |
+| 4 | Niet-recurrente bedrijfskosten | pág. 6, precedente |
+| 5 | Afschrijvingen immateriële vaste activa (spelers) | pág. 6, Jev 1 |
+| 6 | Afschrijvingen materiële vaste activa | pág. 6, Jev 1 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): be-div1amateur, verificado contra roster cacheado de "2023–24 Belgian National Division 1" (tools/club-league-reference/be.json), coincidencia exacta "Lokeren-Temse".
+```
+
 ## Fuentes
 
 ### lokerentemse-be-jaarrekening-2025-06-30-individual
@@ -105,4 +142,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-18) desde la transcripción Clubes/Bélgica/Lokeren-Temse/jaarrekening-2025-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### lokerentemse-be-jaarrekening-2024-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Lokeren-Temse/jaarrekening-2024-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

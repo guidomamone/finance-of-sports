@@ -41,6 +41,8 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Herman Vanderpoortenstadion","capacidad":14538,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","manual":["estadio","capacidad"]},
   },
   'lokerentemse-be': {
+    2022: {"temporada":"2021–22 Belgian Division 2","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376207467"},
+    2024: {"estadio":"Daknamstadion","temporada":"2023–24 Belgian National Division 1","fuente":"https://en.wikipedia.org/w/index.php?oldid=1354171109","fuenteManual":"https://nl.wikipedia.org/wiki/Koninklijke_Sporting_Club_Lokeren_(4297)","manual":["estadio"]},
     2025: {"estadio":"Daknamstadion","capacidad":12136,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","manual":["estadio","capacidad"]},
   },
   'lommelsk-be': {

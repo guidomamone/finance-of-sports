@@ -3,9 +3,19 @@
   "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2021-06-30-individual.pdf",
   "club": "lokerentemse-be",
   "year": 2021,
-  "generatedAt": "2026-10-18T15:37:11.425Z",
+  "generatedAt": "2026-10-19T14:16:58.972Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
+    {
+      "label": "Overige bedrijfsopbrengsten (implícito en la Brutomarge)",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.076401
+      ],
+      "glosa": "Otros ingresos de explotación (implícito en el margen bruto)"
+    },
     {
       "label": "Omzet",
       "lado": "revenue",
@@ -37,26 +47,6 @@
       "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
     },
     {
-      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
-      "lado": "expense",
-      "page": 5,
-      "section": "estado",
-      "values": [
-        0.168361
-      ],
-      "glosa": "Amortizaciones y correcciones de valor de gastos de establecimiento, inmovilizado intangible y material"
-    },
-    {
-      "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
-      "lado": "expense",
-      "page": 5,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Correcciones de valor sobre existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
-    },
-    {
       "label": "Andere bedrijfskosten",
       "lado": "expense",
       "page": 5,
@@ -65,6 +55,16 @@
         0.001816
       ],
       "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Afschrijvingen materiële vaste activa",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado",
+      "values": [
+        0.168361
+      ],
+      "glosa": "Amortización del inmovilizado material"
     }
   ]
 }
