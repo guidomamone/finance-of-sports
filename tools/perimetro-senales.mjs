@@ -327,7 +327,7 @@ const SISTEMA_A2 = `Recibís la portada (primeras líneas) y los títulos de un 
    - grupo: hay una sección sobre la estructura del grupo o las controladas que entran en la consolidación de ESTA sociedad (no la del grupo dueño del que la sociedad es filial).
    - portada: la portada o el encabezado dice consolidado.
    La palabra "consolidado" sola en un membrete de una sola sociedad (un sistema contable que junta sus centros de costo) no prueba un estado consolidado: contala solo en portada.`;
-async function pasoA2(mdRel, lineas) {
+async function pasoA2(mdRel, lineas, { soloCache = false } = {}) {
   const tit = titulosDelDocumento(lineas);
   if (!tit.some((t) => t.tabla)) return { motivo: 'ningún título con tabla' };
   const portada = portadaDelDocumento(lineas);
@@ -335,7 +335,7 @@ async function pasoA2(mdRel, lineas) {
   const clave = createHash('sha1').update(JSON.stringify(MODELO_A2 && MODELO_A2 !== 'opus' ? [SISTEMA_A2, user, MODELOS_A2[MODELO_A2]] : [SISTEMA_A2, user])).digest('hex');
   if (!cacheA2) { cacheA2 = new Map(); if (existsSync(CACHE_A2)) for (const l of readFileSync(CACHE_A2, 'utf8').split('\n')) { if (!l.trim()) continue; try { const j = JSON.parse(l); cacheA2.set(j.clave, j); } catch { /* línea rota */ } } }
   let datos = cacheA2.get(clave)?.datos;
-  if (!datos && SOLO_CACHE) return { pendiente: true };
+  if (!datos && (SOLO_CACHE || soloCache)) return { pendiente: true };
   if (!datos) {
     const { llamarClaude } = await import('./claude-llamada.mjs');
     const r = await llamarClaude({ system: SISTEMA_A2, user, schema: ESQUEMA_A2, tarea: MODELO_A2 && MODELO_A2 !== 'opus' ? `perimetro-a2-medir-${MODELO_A2}` : 'perimetro-a2', pdf: mdRel.replace(/\.md$/, '.pdf'), maxTokens: 2000, ...(MODELO_A2 ? { modelo: MODELOS_A2[MODELO_A2] } : {}) });
@@ -364,7 +364,7 @@ async function pasoA2(mdRel, lineas) {
 }
 
 // ---------------------------------------------------------------- la propuesta de un documento
-export async function proponer(mdRel, { jev = false } = {}) {
+export async function proponer(mdRel, { jev = false, soloCache = false } = {}) {
   const md = readFileSync(resolve(ROOT, mdRel), 'utf8');
   const { tablas, titulos } = tablasDeIngresos(md);
   const cons = tablas.filter((t) => t.per === 'consolidado');
@@ -373,8 +373,11 @@ export async function proponer(mdRel, { jev = false } = {}) {
   if (!tablas.length) {
     r.pasoA = 'sin-tablas'; r.motivo = 'no encontré ninguna tabla con el total de ingresos';
     // PASO A2 (Claude; pago, así que solo al ejecutar: en el ensayo queda pendiente).
-    if (!jev) { r.a2 = { pendiente: true }; return r; }
-    const a = await pasoA2(mdRel, md.split('\n')); r.a2 = a;
+    // (to-do 298 w, escalón 1, ok de Guido 2026-10-19) `soloCache`: el ensayo usa la respuesta GUARDADA de A2 si la hay (gratis) y dice lo
+    // que va a pasar; sin respuesta guardada queda pendiente. Antes el ensayo daba siempre "se decide al ejecutar" y el lote frenaba igual
+    // cuando A2 veía los dos estados sin totales para votar (lotes 93 y 94: 10 documentos).
+    if (!jev && !soloCache) { r.a2 = { pendiente: true }; return r; }
+    const a = await pasoA2(mdRel, md.split('\n'), { soloCache: !jev }); r.a2 = a;
     if (a.pendiente) { r.motivo += '; A2 pendiente de la Batch API'; return r; }
     if (a.error) { r.motivo += `; A2 falló (${a.error})`; return r; }
     if (a.estado == null) { r.motivo += `; A2: ${a.motivo}`; return r; }
@@ -452,7 +455,7 @@ export async function fijarPerimetroDeClubes(pdfs, { registro, ejecutar = false,
   for (const c of clubes) {
     const docs = registro.filter((e) => e.pdf.startsWith(c) && e.estado !== 'duplicado' && !descartados.has(e.pdf) && e.md && existsSync(resolve(ROOT, e.md)));
     const props = [];
-    for (const e of docs) props.push({ e, r: await proponer(e.md, { jev }) });
+    for (const e of docs) props.push({ e, r: await proponer(e.md, { jev, soloCache: !ejecutar }) });
     // Modo batch (claude-llamada.mjs): si a algún documento del club le falta la respuesta de A2, no se decide el club con los demás (sin
     // batch habrían estado todas): se espera a la ola siguiente.
     if (ejecutar && props.some(({ r }) => r.a2?.pendiente)) { out.push({ carpeta: c, valor: null, porDocumento: [], pendienteJev: true, detalle: 'A2 pendiente de la Batch API: se decide en la ola siguiente' }); continue; }
@@ -484,7 +487,7 @@ export async function fijarPerimetroDeClubes(pdfs, { registro, ejecutar = false,
     // Solo los documentos que propusieron ese perímetro: uno del mismo ejercicio que no decidió (Parma 2023 consolidato, sin tablas reconocidas)
     // no recibe un ajuste que no le corresponde; sigue frenando en la compuerta.
     for (const [k, v] of unicos) if (v !== valor) for (const { e } of props.filter(({ e, r }) => (e.periodo?.cierre || e.md) === k && r.propuesta === v)) porDocumento.push({ pdf: e.pdf, valor: v, cierre: k });
-    if (!valor && !porDocumento.length && pendJev && !ejecutar) { out.push({ carpeta: c, valor: null, porDocumento, pendienteJev: true, detalle: `${evidencia}; ${pendJev} documento(s) se deciden al ejecutar (Jev o Claude)` }); continue; }
+    if (!valor && !porDocumento.length && pendJev && !ejecutar) { out.push({ carpeta: c, valor: null, porDocumento, pendienteJev: true, detalle: `${evidencia}; ${pendJev} documento(s) sin respuesta guardada de Claude (A2) o de Jev: se deciden al ejecutar solo si A2 ve un único estado o el voto alcanza; si no, el lote frena` }); continue; }
     if (!valor && !porDocumento.length) { out.push({ carpeta: c, valor: null, porDocumento, detalle: 'ningún documento del club decide' }); continue; }
     // (to-do 227) los documentos que decidió el paso A2 (Claude) quedan en la `evidencia` del ajuste ("A2 (Claude): <md>; <md>"), para la
     // auditoría a posteriori (--auditar-a2).
