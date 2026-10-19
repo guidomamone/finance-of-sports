@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 778 — La skill de onboarding nombra lotes-prueba.mjs; la 298 m a HALLAZGOS (2026-10-19)
+
+* `club-or-year-onboarding`, sección 5: los lotes de prueba los arma `tools/lotes-prueba.mjs` (ok de Guido).
+* 298 m medida: el ajuste del club ya es el escalón 0 de la carga; sin daño hoy, no se codea.
+
 ## Versión 777 — Lotes de prueba al día, armados por una tool (2026-10-19)
 
 * `tools/lotes-prueba.mjs` arma la mediana y la completa desde lo que tiene verificación; la rápida sigue a mano (+18 casos). Quedan

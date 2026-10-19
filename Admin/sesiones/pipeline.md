@@ -308,3 +308,5 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
   preguntaron porque todavía no lo tenía y hoy cargan sin frenar (`medir-cargar`). Los 37 casos `perimetro` de la etapa cargar: 0 abiertos,
   29 con ajuste hoy; en 22 de 35 la propuesta se corrigió (toma el año más cercano aunque sea una excepción). Condición para retomar, en
   Admin/HALLAZGOS-pipeline.md. Sigue la n.
+
+## Después del merge de la m (2026-10-19)
