@@ -79,6 +79,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Anfield","capacidad":61276,"sponsor":"Standard Chartered","marca":"Nike","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'mancity-gb': {
+    2021: {"estadio":"City of Manchester Stadium","capacidad":55017,"sponsor":"Puma","marca":"Fernandinho|Fernandinho (footballer, born May 1985)}}","temporada":"2020–21 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376692557"},
     2024: {"estadio":"City of Manchester Stadium","capacidad":53400,"sponsor":"Etihad Airways","marca":"Puma","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"City of Manchester Stadium","capacidad":52900,"sponsor":"Etihad Airways","marca":"Puma","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },

@@ -1,0 +1,466 @@
+{
+ "pdf": "Clubes/Inglaterra/Manchester City/mancity-full-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Manchester City/mancity-full-accounts-2022-23.md",
+ "mdSha1": "4e8a8785db2e83604f72c269cdc59c01e9f6accc",
+ "ubicacionSha1": "93773d71e36fdeb660c6bedbbe7b85df0bcf3c56",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T17:54:40.554Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [
+   "b5",
+   "b6"
+  ],
+  "notas_gastos": [
+   "b6",
+   "b8",
+   "b12"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "miles",
+   "evidencia": "L589: encabezado de columnas 'Total 2023 £000'"
+  },
+  {
+   "bloque": "b5",
+   "escala": "miles",
+   "evidencia": "L1243: '2023 £000'"
+  },
+  {
+   "bloque": "b6",
+   "escala": "miles",
+   "evidencia": "L1262: '2023 £000'"
+  },
+  {
+   "bloque": "b8",
+   "escala": "miles",
+   "evidencia": "L1311: '2023 £000'"
+  },
+  {
+   "bloque": "b12",
+   "escala": "miles",
+   "evidencia": "L1374: '2023 £000'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 591,
+   "etiqueta": "Revenue",
+   "actual": "712,768",
+   "anterior": "613,014",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 592,
+   "etiqueta": "Other operating income",
+   "actual": "5,456",
+   "anterior": "6,068",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 593,
+   "etiqueta": "Operating expenses",
+   "actual": "(753,862)",
+   "anterior": "(640,488)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 594,
+   "etiqueta": "**Operating profit/(loss)**",
+   "actual": "(35,638)",
+   "anterior": "(21,406)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 595,
+   "etiqueta": "Profit on disposal of players' registrations",
+   "actual": "121,720",
+   "anterior": "67,699",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 596,
+   "etiqueta": "**Profit/(loss) before interest and taxation**",
+   "actual": "86,082",
+   "anterior": "46,293",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 597,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "56",
+   "anterior": "778",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 598,
+   "etiqueta": "Interest payable and similar charges",
+   "actual": "(5,767)",
+   "anterior": "(5,345)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 599,
+   "etiqueta": "**Profit/(loss) on ordinary activities before taxation**",
+   "actual": "80,371",
+   "anterior": "41,726",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 600,
+   "etiqueta": "Taxation",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 601,
+   "etiqueta": "**Profit/(loss) on ordinary activities after taxation**",
+   "actual": "80,371",
+   "anterior": "41,726",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 1245,
+   "etiqueta": "Matchday",
+   "actual": "71,914",
+   "anterior": "54,482",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b5",
+   "linea": 1246,
+   "etiqueta": "Broadcasting - UEFA",
+   "actual": "113,852",
+   "anterior": "90,499",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b5",
+   "linea": 1247,
+   "etiqueta": "Broadcasting - all other",
+   "actual": "185,558",
+   "anterior": "158,561",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b5",
+   "linea": 1248,
+   "etiqueta": "Other commercial activities",
+   "actual": "341,444",
+   "anterior": "309,472",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b5",
+   "linea": 1249,
+   "etiqueta": "",
+   "actual": "712,768",
+   "anterior": "613,014",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Revenue"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1265,
+   "etiqueta": "Other operating income",
+   "actual": "5,456",
+   "anterior": "6,068",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1266,
+   "etiqueta": "",
+   "actual": "5,456",
+   "anterior": "6,068",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1268,
+   "etiqueta": "Direct cost of sales and consumables",
+   "actual": "15,613",
+   "anterior": "8,587",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1269,
+   "etiqueta": "Remuneration of Auditors (audit fees)",
+   "actual": "72",
+   "anterior": "52",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1270,
+   "etiqueta": "Other external charges",
+   "actual": "156,533",
+   "anterior": "124,690",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1271,
+   "etiqueta": "Employee costs (Note 7)",
+   "actual": "422,895",
+   "anterior": "353,881",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1272,
+   "etiqueta": "Amortisation and impairment of intangible assets (Note 12)",
+   "actual": "145,448",
+   "anterior": "140,708",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1273,
+   "etiqueta": "Profit on disposal of property, plant and equipment",
+   "actual": "1,236",
+   "anterior": "1,119",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1275,
+   "etiqueta": "Owned (Note 13)",
+   "actual": "10,613",
+   "anterior": "9,999",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1276,
+   "etiqueta": "Leased (Note 14)",
+   "actual": "1,452",
+   "anterior": "1,452",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1277,
+   "etiqueta": "",
+   "actual": "753,862",
+   "anterior": "640,488",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1279,
+   "etiqueta": "Operating profit before player trading",
+   "actual": "109,810",
+   "anterior": "119,302",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": "**Operating profit/(loss)**"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1280,
+   "etiqueta": "Amortisation of players' registrations",
+   "actual": "(145,448)",
+   "anterior": "(140,708)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "**Operating profit/(loss)**"
+  },
+  {
+   "bloque": "b6",
+   "linea": 1281,
+   "etiqueta": "",
+   "actual": "(35,638)",
+   "anterior": "(21,406)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": "**Operating profit/(loss)**"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1313,
+   "etiqueta": "Wages and salaries",
+   "actual": "368,213",
+   "anterior": "308,675",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Employee costs (Note 7)"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1314,
+   "etiqueta": "Social security costs",
+   "actual": "52,880",
+   "anterior": "44,350",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Employee costs (Note 7)"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1315,
+   "etiqueta": "Other pension costs",
+   "actual": "960",
+   "anterior": "856",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Employee costs (Note 7)"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1316,
+   "etiqueta": "Share-based payments (Note 8)",
+   "actual": "842",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Employee costs (Note 7)"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1317,
+   "etiqueta": "",
+   "actual": "422,895",
+   "anterior": "353,881",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Employee costs (Note 7)"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1376,
+   "etiqueta": "Bank loans and overdrafts",
+   "actual": "85",
+   "anterior": "1",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar charges"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1377,
+   "etiqueta": "Interest expense on leases",
+   "actual": "5,682",
+   "anterior": "5,344",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar charges"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1378,
+   "etiqueta": "",
+   "actual": "5,767",
+   "anterior": "5,345",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar charges"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": {
+  "linea": 593,
+  "actual": "(753,862)"
+ },
+ "resultado": {
+  "linea": 601,
+  "actual": "80,371",
+  "anterior": "41,726"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'Profit on disposal of property, plant and equipment' (L1273, 1,236) como gasto sumando dentro de Operating expenses, tal como cuadra el subtotal 753,862?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Operating expenses",
+   "texto": "La etiqueta dice 'Profit' pero el importe positivo suma al total de gastos de L1277 (la suma solo cierra sumándolo).",
+   "bloques": [
+    "b6"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se carga la conciliación 'Operating loss' (L1279-L1281) aunque la amortización de L1280 repite la de L1272?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "**Operating profit/(loss)**",
+   "texto": "L1280 (145,448) es el mismo importe ya desglosado en L1272 dentro de Operating expenses; evitar doble conteo.",
+   "bloques": [
+    "b6"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Todos los bloques en £000. El total de ingresos no está impreso (Revenue + Other operating income). Se usó la columna 'Total 2023 £000' del estado; las columnas por actividad (operaciones/player trading) no se extrajeron. L1274 es un encabezado sin importe."
+}

@@ -1,0 +1,251 @@
+{
+ "pdf": "Clubes/Inglaterra/Manchester City/mancity-full-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Manchester City/mancity-full-accounts-2021-22.md",
+ "mdSha1": "04ef60680c488a61f9713489ddfe9faa07af25e6",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T17:53:04.430Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    25,
+    25
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    27,
+    27
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 6,
+   "lineas": [
+    173,
+    179
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 13,
+   "lineas": [
+    502,
+    518
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 14,
+   "lineas": [
+    536,
+    564
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 15,
+   "lineas": [
+    585,
+    590
+   ],
+   "tipo": "texto"
+  },
+  "b7": {
+   "pagina": 26,
+   "lineas": [
+    1114,
+    1117
+   ],
+   "tipo": "texto"
+  },
+  "b8": {
+   "pagina": 26,
+   "lineas": [
+    1132,
+    1136
+   ],
+   "tipo": "texto"
+  },
+  "b9": {
+   "pagina": 27,
+   "lineas": [
+    1164,
+    1168
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 27,
+   "lineas": [
+    1172,
+    1177
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 27,
+   "lineas": [
+    1181,
+    1185
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 27,
+   "lineas": [
+    1189,
+    1193
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 28,
+   "lineas": [
+    1210,
+    1212
+   ],
+   "tipo": "texto"
+  },
+  "b14": {
+   "pagina": 28,
+   "lineas": [
+    1218,
+    1223
+   ],
+   "tipo": "texto"
+  },
+  "b15": {
+   "pagina": 28,
+   "lineas": [
+    1225,
+    1227
+   ],
+   "tipo": "texto"
+  },
+  "b16": {
+   "pagina": 29,
+   "lineas": [
+    1247,
+    1258
+   ],
+   "tipo": "texto"
+  },
+  "b17": {
+   "pagina": 29,
+   "lineas": [
+    1265,
+    1267
+   ],
+   "tipo": "texto"
+  },
+  "b18": {
+   "pagina": 29,
+   "lineas": [
+    1269,
+    1272
+   ],
+   "tipo": "texto"
+  },
+  "b19": {
+   "pagina": 29,
+   "lineas": [
+    1274,
+    1277
+   ],
+   "tipo": "texto"
+  },
+  "b20": {
+   "pagina": 30,
+   "lineas": [
+    1291,
+    1300
+   ],
+   "tipo": "texto"
+  },
+  "b21": {
+   "pagina": 31,
+   "lineas": [
+    1329,
+    1342
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 31,
+   "lineas": [
+    1352,
+    1361
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 32,
+   "lineas": [
+    1375,
+    1380
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 32,
+   "lineas": [
+    1386,
+    1392
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 32,
+   "lineas": [
+    1396,
+    1402
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 35,
+   "lineas": [
+    1512,
+    1514
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 37,
+   "lineas": [
+    1576,
+    1576
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "miles",
+ "escala_evidencia": "Encabezado del Statement of Profit or Loss (b4): 'Total 2022 £000'",
+ "moneda": "GBP",
+ "columna_ejercicio": "",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se descarta este documento para el ejercicio que cierra el 2023-03-30, dado que solo contiene el estado de resultados del ejercicio al 30 de junio de 2022 (b4)?",
+   "propuesta": "sí",
+   "tema": "cuadro-de-otro-anio",
+   "renglon": "",
+   "texto": "El documento son las cuentas 2021-22 ('for the year ended 30 June 2022', b4) y no cubre el ejercicio pedido; además el club cierra el 30 de junio, no el 30 de marzo.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El documento corresponde al ejercicio cerrado el 30-06-2022 (cuentas individuales de Manchester City Football Club Limited, en £000). No hay estado de resultados del ejercicio pedido (cierre 2023-03-30). Si se cargara 2021-22, los bloques serían: estado b4; notas de ingresos b7 (Revenue) y b8 primera parte (Other operating income); notas de gastos b8 (Operating expenses), b10 (payroll costs), b11 y b12 (intereses)."
+}

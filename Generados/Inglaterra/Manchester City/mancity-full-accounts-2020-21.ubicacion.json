@@ -1,0 +1,261 @@
+{
+ "pdf": "Clubes/Inglaterra/Manchester City/mancity-full-accounts-2020-21.pdf",
+ "md": "Clubes/Inglaterra/Manchester City/mancity-full-accounts-2020-21.md",
+ "mdSha1": "fbfea3ae33bb58645befce8049d7460275112ed1",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T17:50:49.960Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    179,
+    185
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 13,
+   "lineas": [
+    483,
+    495
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 14,
+   "lineas": [
+    513,
+    539
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 15,
+   "lineas": [
+    560,
+    567
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 21,
+   "lineas": [
+    806,
+    811
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 26,
+   "lineas": [
+    996,
+    1002
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 26,
+   "lineas": [
+    1012,
+    1031
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 27,
+   "lineas": [
+    1051,
+    1055
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 27,
+   "lineas": [
+    1059,
+    1064
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 27,
+   "lineas": [
+    1068,
+    1072
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 27,
+   "lineas": [
+    1076,
+    1080
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 28,
+   "lineas": [
+    1094,
+    1102
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 28,
+   "lineas": [
+    1108,
+    1119
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 29,
+   "lineas": [
+    1141,
+    1156
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 29,
+   "lineas": [
+    1162,
+    1175
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 30,
+   "lineas": [
+    1195,
+    1207
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 30,
+   "lineas": [
+    1211,
+    1217
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 31,
+   "lineas": [
+    1235,
+    1248
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 31,
+   "lineas": [
+    1258,
+    1268
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 32,
+   "lineas": [
+    1282,
+    1287
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 32,
+   "lineas": [
+    1293,
+    1300
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 32,
+   "lineas": [
+    1304,
+    1310
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 33,
+   "lineas": [
+    1324,
+    1326
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 33,
+   "lineas": [
+    1334,
+    1336
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 33,
+   "lineas": [
+    1338,
+    1342
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 33,
+   "lineas": [
+    1350,
+    1355
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 35,
+   "lineas": [
+    1407,
+    1409
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b6",
+  "b10"
+ ],
+ "notas_gastos": [
+  "b7",
+  "b9",
+  "b11",
+  "b12"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Total 2021 £000",
+ "moneda": "GBP",
+ "columna_ejercicio": "Total 2021 £000",
+ "columna_anterior": "Total 2020 £000",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la columna 'Total 2021 £000' del estado de resultados (b2) y no las columnas parciales 'Operations excluding player trading' y 'Player trading and amortisation'?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El estado b2 tiene tres columnas de 2021 (dos parciales y el total); se toma el total.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas individuales de Manchester City Football Club Limited, que coincide con el perímetro ya cargado. El estado de resultados es b2. Las notas elegidas son: b6 (revenue), b7 (desglose del operating loss: other operating income, gastos y amortización), b9 (costes de personal), b10 e b11 (intereses) y b12 (impuestos). Quedan afuera los siguientes bloques: KPI (b1), balance (b3), cambios en el patrimonio (b4), conciliación fiscal (b13), activos (b14 a b16) y pasivos o capital (b18 a b26)."
+}

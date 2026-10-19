@@ -175,6 +175,9 @@ window.RANKINGS["gb-premierleague"] = {
     leagueSize: 20,
     wiki: {"t":"2020–21 Premier League","lang":"en","at":"2026-10-19","n":20},
     clubs: [
+      { id:"mancity-gb", revenue:883.916, reportType:"official_balance_sheet",
+        sourceId:"mancity-gb-full-accounts-2020-21",
+        mix:[["Comercial / Sponsors",375.42],["Estadio",1.012],["Televisión",411.044],["Venta de Jugadores",94.722],["Otros ingresos",1.719]] },
       { id:"chelsea-gb", revenue:656.933, reportType:"official_balance_sheet",
         sourceId:"chelsea-gb-fc-holdings-group-accounts-2020-21",
         mix:[["Comercial / Sponsors",212.264],["Estadio",10.577],["Televisión",378.096],["Venta de Jugadores",38.61],["Otros ingresos",17.386]] },

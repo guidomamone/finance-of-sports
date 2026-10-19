@@ -1,0 +1,264 @@
+{
+ "pdf": "Clubes/Inglaterra/Manchester City/mancity-full-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Manchester City/mancity-full-accounts-2022-23.md",
+ "mdSha1": "4e8a8785db2e83604f72c269cdc59c01e9f6accc",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T17:53:09.164Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 6,
+   "lineas": [
+    160,
+    166
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 14,
+   "lineas": [
+    589,
+    601
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 15,
+   "lineas": [
+    620,
+    646
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 16,
+   "lineas": [
+    670,
+    679
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 27,
+   "lineas": [
+    1243,
+    1249
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 27,
+   "lineas": [
+    1262,
+    1281
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 28,
+   "lineas": [
+    1303,
+    1307
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 28,
+   "lineas": [
+    1311,
+    1317
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 28,
+   "lineas": [
+    1338,
+    1343
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 28,
+   "lineas": [
+    1347,
+    1349
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 29,
+   "lineas": [
+    1366,
+    1370
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 29,
+   "lineas": [
+    1374,
+    1378
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 29,
+   "lineas": [
+    1384,
+    1392
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 29,
+   "lineas": [
+    1399,
+    1411
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 30,
+   "lineas": [
+    1436,
+    1450
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 30,
+   "lineas": [
+    1454,
+    1469
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 31,
+   "lineas": [
+    1485,
+    1497
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 31,
+   "lineas": [
+    1501,
+    1504
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 31,
+   "lineas": [
+    1506,
+    1509
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 32,
+   "lineas": [
+    1525,
+    1538
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 32,
+   "lineas": [
+    1552,
+    1561
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 33,
+   "lineas": [
+    1575,
+    1580
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 33,
+   "lineas": [
+    1587,
+    1593
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 33,
+   "lineas": [
+    1597,
+    1603
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 34,
+   "lineas": [
+    1617,
+    1619
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 34,
+   "lineas": [
+    1629,
+    1633
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 34,
+   "lineas": [
+    1643,
+    1648
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 37,
+   "lineas": [
+    1757,
+    1769
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 37,
+   "lineas": [
+    1771,
+    1783
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b5",
+  "b6"
+ ],
+ "notas_gastos": [
+  "b6",
+  "b8",
+  "b12"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Total 2023 £000",
+ "moneda": "GBP",
+ "columna_ejercicio": "Total 2023 £000",
+ "columna_anterior": "Total 2022 £000",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado individual de Manchester City Football Club Limited (b2), con columnas por actividad (operaciones sin traspasos / traspasos y amortización) y total; se usa la columna Total. b5 desglosa Revenue; b6 (nota 5) desglosa otros ingresos de explotación y gastos operativos; b8 abre los costes de personal; b12 abre los intereses. Las tablas de reexpresión (b28, b29) son de balance y no se usan."
+}

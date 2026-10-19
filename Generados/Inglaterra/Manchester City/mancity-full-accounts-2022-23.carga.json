@@ -1,0 +1,627 @@
+{
+ "pdf": "Clubes/Inglaterra/Manchester City/mancity-full-accounts-2022-23.pdf",
+ "generado": "2026-10-19T18:48:30.728Z",
+ "frena": [],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-19: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 1 ejercicio(s) con un solo perímetro (individual); 5 documento(s) mirados)"
+ ],
+ "ejercicio": {
+  "clubId": "mancity-gb",
+  "year": 2023,
+  "cierre": "2023-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Matchday",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 71.914,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Broadcasting - UEFA",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 113.852,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Broadcasting - all other",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 185.558,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other commercial activities",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 341.444,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other operating income",
+    "normalizedCategory": "other_income",
+    "amountNative": 5.456,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Profit on disposal of players' registrations",
+    "normalizedCategory": "player_sales",
+    "amountNative": 121.72,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Direct cost of sales and consumables",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -15.613,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Remuneration of Auditors (audit fees)",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.072,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other external charges",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -156.533,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Wages and salaries",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -368.213,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Social security costs",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -52.88,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 1,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other pension costs",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.96,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 1,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Share-based payments",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.842,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortisation and impairment of intangible assets",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -145.448,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Profit on disposal of property, plant and equipment",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.236,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Owned",
+    "normalizedCategory": "depreciation",
+    "amountNative": -10.613,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 2,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Leased",
+    "normalizedCategory": "depreciation",
+    "amountNative": -1.452,
+    "disclosureLevel": "aggregated",
+    "_pag": 27,
+    "_escalon": 2,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2023-06-30",
+   "sourceId": "mancity-gb-full-accounts-2022-23",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -5.711,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Interest receivable and similar income",
+     "value": 0.056
+    },
+    {
+     "label": "Interest payable and similar charges",
+     "value": -5.767
+    },
+    {
+     "label": "Taxation",
+     "value": null
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 839.944,
+   "officialTotalExpenses": 753.862,
+   "officialPAT": 80.371
+  },
+  "source": {
+   "id": "mancity-gb-full-accounts-2022-23",
+   "clubId": "mancity-gb",
+   "title": "Manchester City Football Club Limited — mancity-full-accounts-2022-23 (ejercicio 2023)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Manchester City/mancity-full-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Inglaterra/Manchester City/mancity-full-accounts-2022-23.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2023-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "mancity-gb",
+ "year": 2023,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 20,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Matchday",
+   "page": 27,
+   "native": 71.914,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Revenue\")",
+   "signoFijo": 71.914,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 71.914
+  },
+  {
+   "label": "Broadcasting - UEFA",
+   "page": 27,
+   "native": 113.852,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Revenue\")",
+   "signoFijo": 113.852,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 113.852
+  },
+  {
+   "label": "Broadcasting - all other",
+   "page": 27,
+   "native": 185.558,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Revenue\")",
+   "signoFijo": 185.558,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 185.558
+  },
+  {
+   "label": "Other commercial activities",
+   "page": 27,
+   "native": 341.444,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Revenue\")",
+   "signoFijo": 341.444,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 341.444
+  },
+  {
+   "label": "Other operating income",
+   "page": 14,
+   "native": 5.456,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.456,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5.456
+  },
+  {
+   "label": "Profit on disposal of players' registrations",
+   "page": 14,
+   "native": 121.72,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 121.72,
+   "cat": "player_sales",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 121.72
+  },
+  {
+   "label": "Direct cost of sales and consumables",
+   "page": 27,
+   "native": 15.613,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\")",
+   "signoFijo": 15.613,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -15.613
+  },
+  {
+   "label": "Remuneration of Auditors (audit fees)",
+   "page": 27,
+   "native": 0.072,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\")",
+   "signoFijo": 0.072,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.072
+  },
+  {
+   "label": "Other external charges",
+   "page": 27,
+   "native": 156.533,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\")",
+   "signoFijo": 156.533,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -156.533
+  },
+  {
+   "label": "Wages and salaries",
+   "page": 28,
+   "native": 368.213,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\" > desglose de \"Employee costs (Note 7)\")",
+   "signoFijo": 368.213,
+   "cat": "wages_squad",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -368.213
+  },
+  {
+   "label": "Social security costs",
+   "page": 28,
+   "native": 52.88,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\" > desglose de \"Employee costs (Note 7)\")",
+   "signoFijo": 52.88,
+   "cat": "wages_squad",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -52.88
+  },
+  {
+   "label": "Other pension costs",
+   "page": 28,
+   "native": 0.96,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\" > desglose de \"Employee costs (Note 7)\")",
+   "signoFijo": 0.96,
+   "cat": "wages_squad",
+   "conf": 0.93,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.96
+  },
+  {
+   "label": "Share-based payments",
+   "page": 28,
+   "native": 0.842,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\" > desglose de \"Employee costs (Note 7)\")",
+   "signoFijo": 0.842,
+   "cat": "wages_squad",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.842
+  },
+  {
+   "label": "Amortisation and impairment of intangible assets",
+   "page": 27,
+   "native": 145.448,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\")",
+   "signoFijo": 145.448,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -145.448
+  },
+  {
+   "label": "Profit on disposal of property, plant and equipment",
+   "page": 27,
+   "native": 1.236,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\")",
+   "signoFijo": 1.236,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.236
+  },
+  {
+   "label": "Owned",
+   "page": 27,
+   "native": 10.613,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\")",
+   "signoFijo": 10.613,
+   "cat": "depreciation",
+   "conf": 0.93,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -10.613
+  },
+  {
+   "label": "Leased",
+   "page": 27,
+   "native": 1.452,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\")",
+   "signoFijo": 1.452,
+   "cat": "depreciation",
+   "conf": 0.93,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.452
+  },
+  {
+   "label": "Interest receivable and similar income",
+   "page": null,
+   "native": 0.056,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Interest payable and similar charges",
+   "page": null,
+   "native": -5.767,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Taxation",
+   "page": null,
+   "native": null,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Revenue\")": "gastos con signo",
+   "verificacion (estado)": "gastos con signo",
+   "verificacion (nota que desglosa \"Operating expenses\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Operating expenses\" > desglose de \"Employee costs (Note 7)\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 839.944,
+  "expSum": -753.862,
+  "officialTotalRevenue": 839.944,
+  "officialTotalExpenses": 753.862,
+  "officialPAT": 80.371,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 80.371,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 839.944
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 753.862
+  }
+ },
+ "liga": {
+  "valor": "gb-premierleague",
+  "fuente": "roster cacheado de \"2022–23 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Manchester City\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2023,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2023-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (40 de 46 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-19)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Inglaterra (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "GBP@2023-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene GBP@2023-06-30 = 0.786535 (Tipo spot del Bank of England al 2023-06-30)",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "mancity-gb-full-accounts-2022-23",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gb-premierleague",
+   "fuente": "roster cacheado de \"2022–23 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Manchester City\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 6,
+  "lineasGasto": 11,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
+}

@@ -1,0 +1,225 @@
+{
+ "pdf": "Clubes/Inglaterra/Manchester City/mancity-full-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Manchester City/mancity-full-accounts-2022-23.md",
+ "generado": "2026-10-19T18:47:23.865Z",
+ "estado": "ok",
+ "clubId": "mancity-gb",
+ "year": 2023,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "753.862 = 753.862",
+   "suma": 753.8620000000001,
+   "impreso": 753.862
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 0
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "gastos y resultado coinciden con lo impreso a 0,01% o menos y el otro total no está impreso (queda determinado): no hace falta la revisión del primer año (to-do 214, escalón 2)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Other operating income\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de extraer que no afecta la carga: La etiqueta dice 'Profit' pero el importe positivo suma al total de gastos de L1277 (la suma solo cierra sumándolo).",
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"**Operating profit/(loss)**\"): ¿Se carga la conciliación 'Operating loss' (L1279-L1281) aunque la amortización de L1280 repite la de L1272?"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 839.944,
+  "gastos": 753.862,
+  "financiero": -5.711,
+  "impuesto": 0,
+  "resultadoImpreso": 80.371,
+  "resultadoParaCargar": 80.371,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Matchday",
+   "lado": "ingreso",
+   "M": 71.914,
+   "pagina": 27,
+   "linea": 1245,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Broadcasting - UEFA",
+   "lado": "ingreso",
+   "M": 113.852,
+   "pagina": 27,
+   "linea": 1246,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Broadcasting - all other",
+   "lado": "ingreso",
+   "M": 185.558,
+   "pagina": 27,
+   "linea": 1247,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Other commercial activities",
+   "lado": "ingreso",
+   "M": 341.444,
+   "pagina": 27,
+   "linea": 1248,
+   "origen": "nota que desglosa \"Revenue\""
+  },
+  {
+   "etiqueta": "Other operating income",
+   "lado": "ingreso",
+   "M": 5.456,
+   "pagina": 14,
+   "linea": 592,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Profit on disposal of players' registrations",
+   "lado": "ingreso",
+   "M": 121.72,
+   "pagina": 14,
+   "linea": 595,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Direct cost of sales and consumables",
+   "lado": "gasto",
+   "M": 15.613,
+   "pagina": 27,
+   "linea": 1268,
+   "origen": "nota que desglosa \"Operating expenses\""
+  },
+  {
+   "etiqueta": "Remuneration of Auditors (audit fees)",
+   "lado": "gasto",
+   "M": 0.072,
+   "pagina": 27,
+   "linea": 1269,
+   "origen": "nota que desglosa \"Operating expenses\""
+  },
+  {
+   "etiqueta": "Other external charges",
+   "lado": "gasto",
+   "M": 156.533,
+   "pagina": 27,
+   "linea": 1270,
+   "origen": "nota que desglosa \"Operating expenses\""
+  },
+  {
+   "etiqueta": "Wages and salaries",
+   "lado": "gasto",
+   "M": 368.213,
+   "pagina": 28,
+   "linea": 1313,
+   "origen": "nota que desglosa \"Operating expenses\" > desglose de \"Employee costs (Note 7)\""
+  },
+  {
+   "etiqueta": "Social security costs",
+   "lado": "gasto",
+   "M": 52.88,
+   "pagina": 28,
+   "linea": 1314,
+   "origen": "nota que desglosa \"Operating expenses\" > desglose de \"Employee costs (Note 7)\""
+  },
+  {
+   "etiqueta": "Other pension costs",
+   "lado": "gasto",
+   "M": 0.96,
+   "pagina": 28,
+   "linea": 1315,
+   "origen": "nota que desglosa \"Operating expenses\" > desglose de \"Employee costs (Note 7)\""
+  },
+  {
+   "etiqueta": "Share-based payments (Note 8)",
+   "lado": "gasto",
+   "M": 0.842,
+   "pagina": 28,
+   "linea": 1316,
+   "origen": "nota que desglosa \"Operating expenses\" > desglose de \"Employee costs (Note 7)\""
+  },
+  {
+   "etiqueta": "Amortisation and impairment of intangible assets (Note 12)",
+   "lado": "gasto",
+   "M": 145.448,
+   "pagina": 27,
+   "linea": 1272,
+   "origen": "nota que desglosa \"Operating expenses\""
+  },
+  {
+   "etiqueta": "Profit on disposal of property, plant and equipment",
+   "lado": "gasto",
+   "M": 1.236,
+   "pagina": 27,
+   "linea": 1273,
+   "origen": "nota que desglosa \"Operating expenses\""
+  },
+  {
+   "etiqueta": "Owned (Note 13)",
+   "lado": "gasto",
+   "M": 10.613,
+   "pagina": 27,
+   "linea": 1275,
+   "origen": "nota que desglosa \"Operating expenses\""
+  },
+  {
+   "etiqueta": "Leased (Note 14)",
+   "lado": "gasto",
+   "M": 1.452,
+   "pagina": 27,
+   "linea": 1276,
+   "origen": "nota que desglosa \"Operating expenses\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 0.056,
+   "linea": 597
+  },
+  {
+   "etiqueta": "Interest payable and similar charges",
+   "M": -5.767,
+   "linea": 598
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Taxation",
+   "M": null,
+   "linea": 600
+  }
+ ]
+}
