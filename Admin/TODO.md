@@ -34,7 +34,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 **C. Abaratar antes del onboarding grande**
 * 323: mejoras de script del lote 97 (Reino Unido): costo del reintento, notas inglesas, perímetro, nombre legal --> Pipeline 5
 * 260: caja y deuda, lo que falta por documento (Bayern, Japón 2025, Volos, Alverca y otros; todo espera un documento mejor)
-* 298: mejoras de script de Estonia y Bélgica (af, las ligas amateur belgas, espera tu decisión; aj, signos de la columna previa; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 5. La ai (St. Gallen intragrupo, con tu decisión de perímetro) y la carga de St. Gallen también --> Pipeline 5. La k2 (guion largo, Luzern 2023) ya está en la rama pipeline. Nuevas: m2 (hecha en la rama pipeline), n2 (liga equivocada en el contexto de un año sin club-leagues) y o2 (perímetro que ignora los años cargados)
+* 298: mejoras de script de Estonia y Bélgica (af, las ligas amateur belgas, espera tu decisión; aj, signos de la columna previa; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 5. La ai (St. Gallen intragrupo, con tu decisión de perímetro) y la carga de St. Gallen también --> Pipeline 5.
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
@@ -261,15 +261,6 @@ af) listas de las ligas amateur belgas
    de las dos sociedades (suman casi exacto) en vez de la fila consolidada? Si no: lump_football_operations y other_expenses.
    aj) la columna del año anterior invierte el signo de "Ertragsminderungen" y de "Resultaat vergoedingsommen", y suma el subtotal
    "Erträge netto" cuando el documento lo imprime. Detalle de ah a aj en `Admin/Archive/sesion-onboarding-3-2026-10-19-e.md`.
-   k2) Luzern 2023 (2022-23): el .md imprime los negativos con guion largo "–" (U+2013), por ejemplo "–3’102’345" (L1560 aprox.); el tie-out lee
-   el resultado con el signo invertido y frena (también los gastos: falta el "Ausserordentlicher Aufwand" de la nota 34). Arreglo: leer "–" y
-   "−" como signo menos. No usar el ajuste resultado-final. Detalle: `Admin/Archive/sesion-onboarding-3-2026-10-19-cierre.md`.
-   n2) `cargar.mjs` le pasa a `estadio-sponsor.mjs` la liga equivocada para un año sin fila en `data/club-leagues/` y deja en
-   `data/contexto/gb.js` filas con ligas cruzadas (Burnley 2022 "2021–22 EFL Championship" y 2023 "2022–23 Premier League", lote 97).
-   o2) `perimetro-senales.mjs` mira solo los documentos nuevos e ignora los años ya cargados: fijó `individual` para Burnley cuando 2024
-   y 2025 están consolidados (Burnley FC Holdings).
-   m2) en un estado de resultados con el año actual primero, el pipeline extrajo la segunda columna (2024) y la rotuló 2024 (Unión
-   Magdalena 2025, lote 103: Taquilla 1.564.483 en vez de 1.542.620). No se carga hasta resolverlo.
    z2) (también Aston Villa 2023-24, 13 meses por cambio de cierre de mayo a junio, precedente Wolves 2025: la compuerta de `cargar.mjs`,
    `per.meses < 12`, no reconoce una transición de más de 12 meses con importes del año anterior; Aston Villa se carga con la compuerta
    salteada a mano esa sola vez) Westerlo 2015: 18 meses por cambio de cierre (no es primer ejercicio), sigue frenado; regla a decidir con Guido. t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en
@@ -406,20 +397,6 @@ af) listas de las ligas amateur belgas
        de CONVENCIONES-DATOS ya lo decide; no debería ir a la cola.
     f) Alta de Harlequins (rugby): el nombre legal propuesto es una frase del texto; sale de "HARLEQUIN FOOTBALL CLUB LIMITED (REGISTERED
        NUMBER…)", que aparece 4 veces.
-324. BASEL: LOS DEMÁS AÑOS (lote 101; de Pipeline 5 entera, script y carga; Onboarding no lo toca). No se carga ningún año de Basel hasta resolver esto:
-    a) la propuesta de carga tiene números equivocados en 2006, 2010, 2014, 2016, 2017, 2018 y 2019: 2006, 2010 y 2018 leyeron la tabla del
-       Verein y no la de la AG; 2016 y 2019 suman partidas de la Holding como ingreso; 2017 duplica gastos; a 2014 le faltan los
-       "Ausserordentliche Aufwendungen". Con la 298 ah ya en main, regenerar los derivados de Basel y volver a verificar.
-    b) la Verlustabdeckung (cobertura de pérdidas del holding) ya va al resultado, fuera de ingresos y gastos (exceptional_items; Basel
-       2005 sale de la cola). Decisiones de Guido: la Defizitgarantie (la garantía de déficit que la AG le paga al Verein o recibe de la
-       holding: en 2015 y 2021 se cargó como gasto dentro de Total Aufwand, en 2013-2014 está debajo del resultado operativo; con un mismo
-       criterio en todos los años 2014 cierra exacto), y si la Gewinnüberführung de 14 M a la holding en 2012 (L800 del .md) es el espejo de la cobertura y va igual (hoy queda
-       sin lado y 2012 no cierra). En 2010, 2013, 2019 (18,7 M) y 2020 la AG también tiene partidas con la holding o el Verein debajo del
-       resultado operativo.
-    d) Basel 2009 sigue en la cola por el chequeo del año vecino: la columna de 2009 del documento de 2010 lee 0,848 de ingresos (otra
-       tabla). 2009 y 2012 no se cargan hasta resolverlo.
-    c) Basel 2006: se carga la AG, no el Verein (el Verein le traspasó el fútbol profesional ese año).
-    e) mejora de script: elegir siempre el estado de resultados de la FC Basel 1893 AG cuando el informe trae varios (Verein, AG,
-       Stadiondienst AG), y no sumar partidas de la Holding o el Verein debajo del resultado operativo.
-    Detalle con líneas del .md: `Admin/Archive/sesion-onboarding-3-2026-10-19-e.md` ("Lote 101") y `-f.md` ("Lote 101, segunda tanda").
+324. BASEL: 2005-2020 CARGADOS (Pipeline 5, 2026-10-19). Falta: caja y deuda, y las gestiones (presidentes 2006-2008 y 2021) en
+    `data/gestiones/ch.js`.
 

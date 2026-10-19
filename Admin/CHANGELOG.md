@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 829 — Basel 2005-2020 y cuatro arreglos de script (2026-10-19)
+
+* Basel 2005-2020 (FC Basel 1893 AG): `localizar.mjs` elige el estado de resultados de la entidad del club; la cobertura de pérdidas y
+  las transferencias con la holding quedan fuera de ingresos y gastos (324). Estadio y sponsor 2005-2011 a mano con fuente.
+* 298 k2 (guion largo "–" como signo menos), m2 (`periodo.mjs`: "diciembre 31 de 2025" y la fecha comparativa de un título no cuenta como
+  cierre), n2 (`alta-club.mjs` proponerLiga: mes de cierre >= 9) y o2 (`perimetro-senales.mjs` mira los años cargados).
+
 ## Versión 828 — Lote 97: 22 años del fútbol inglés (2026-10-19)
 
 * Aston Villa 2019-2022, Brentford 2022-23, Brighton 2020-23, Fulham 2021 y 2023, Arsenal 2022-23 y Crystal Palace 2022-23. Scottish
