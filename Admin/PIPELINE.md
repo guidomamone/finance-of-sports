@@ -990,6 +990,14 @@ el PDF se consiguió en una réplica de la comunidad tuRiver. Los archivos sigue
 la máquina y se usan igual; lo único que cambia es que no se publican. **Si
 aparece otra fuente no oficial, mismo criterio: se guarda, no se trackea.**
 
+**Unificar carpetas duplicadas (`tools/mudar-carpetas.mjs`, to-do 278 y 287).** Los PDFs no se trackean, así que un borrado no se recupera:
+la tool mueve, no borra. Lee `Admin/registros/mudanzas-carpetas.json` (lista de `{de, a, archivos}`); por cada archivo de `de`, si `a` ya tiene
+uno con la misma huella sha1 lo manda a `Admin/Archive/pdfs-duplicados/<País>/<Carpeta>/`, si `a` no tiene uno con ese nombre lo pasa a `a`, y si
+el nombre existe con otro contenido frena la entrada sin mover nada. Una carpeta de origen que queda vacía se saca. Se corre en la carpeta
+PRINCIPAL (en un worktree `Clubes/` son enlaces y la tool se niega): ensayo sin flags, `--escribir` para mover; después
+`node tools/inventario-transcripciones.mjs` y `node tools/audit.js`. Antes de agregar una entrada, abrir el documento y ver de qué club es: una
+carpeta equivocada se detecta por `carpeta-doble` en la auditoría, pero cuál es la correcta lo decide la portada.
+
 ## Cada PDF nuevo: transcribirlo a Markdown ANTES de usarlo
 
 Cuando se descarga o recibe un PDF nuevo para este proyecto (balance, presupuesto,
