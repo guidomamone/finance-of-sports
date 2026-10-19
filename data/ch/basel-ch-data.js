@@ -174,6 +174,22 @@ const baselchRevenueLinesByYear = {
     { rawLabel:'Einnahmen Leistungsfussball Nachwuchs', normalizedCategory:'youth_football', amountNative:0.489294, disclosureLevel:'aggregated' },
     { rawLabel:'Sonstiger Betriebsertrag', normalizedCategory:'other_income', amountNative:1.309801, disclosureLevel:'aggregated' },
   ],
+  2016: [
+    { rawLabel:'Aus Meisterschaft', normalizedCategory:'competition_bonus', amountNative:11.733538, disclosureLevel:'aggregated' },
+    { rawLabel:'Aus UEFA Spielen', normalizedCategory:'competition_bonus', amountNative:8.88489, disclosureLevel:'aggregated' },
+    { rawLabel:'Aus Cup Spielen', normalizedCategory:'matchday_competition', amountNative:0.021633, disclosureLevel:'aggregated' },
+    { rawLabel:'Aus übrigen Spielen', normalizedCategory:'matchday_competition', amountNative:0.172096, disclosureLevel:'aggregated' },
+    { rawLabel:'Business Seats', normalizedCategory:'matchday_competition', amountNative:7.688715, disclosureLevel:'aggregated' },
+    { rawLabel:'Sponsoring, Werbung', normalizedCategory:'sponsorship_commercial', amountNative:12.345231, disclosureLevel:'aggregated' },
+    { rawLabel:'Transferertrag', normalizedCategory:'player_sales', amountNative:61.452083, disclosureLevel:'aggregated' },
+    { rawLabel:'TV-Entschädigungen', normalizedCategory:'broadcasting', amountNative:2.208377, disclosureLevel:'aggregated' },
+    { rawLabel:'Merchandising, Licensing', normalizedCategory:'sponsorship_commercial', amountNative:3.173422, disclosureLevel:'aggregated' },
+    { rawLabel:'Catering', normalizedCategory:'other_income', amountNative:1.152176, disclosureLevel:'aggregated' },
+    { rawLabel:'Events Non-Matchday', normalizedCategory:'stadium_other', amountNative:1.470906, disclosureLevel:'aggregated' },
+    { rawLabel:'Verbandseinnahmen', normalizedCategory:'competition_bonus', amountNative:20.179009, disclosureLevel:'aggregated' },
+    { rawLabel:'Einnahmen Leistungsfussball Nachwuchs', normalizedCategory:'youth_football', amountNative:0.550304, disclosureLevel:'aggregated' },
+    { rawLabel:'Sonstiger Betriebsertrag', normalizedCategory:'other_income', amountNative:1.259431, disclosureLevel:'aggregated' },
+  ],
 };
 const baselchExpenseLinesByYear = {
   2021: [
@@ -331,6 +347,22 @@ const baselchExpenseLinesByYear = {
     { rawLabel:'Abschreibungen auf Transferrechte', normalizedCategory:'player_amortisation', amountNative:-4.110266, disclosureLevel:'aggregated' },
     { rawLabel:'Sonderabschreibungen auf Ersatzbeschaffung', normalizedCategory:'exceptional_items', amountNative:-11.823255, disclosureLevel:'aggregated' },
     { rawLabel:'Abschreibungen auf Sachanlagen', normalizedCategory:'depreciation', amountNative:-0.75477, disclosureLevel:'aggregated' },
+  ],
+  2016: [
+    { rawLabel:'Warenaufwand', normalizedCategory:'other_expenses', amountNative:-1.604061, disclosureLevel:'aggregated' },
+    { rawLabel:'Personalaufwand', normalizedCategory:'wages_squad', amountNative:-45.131743, disclosureLevel:'aggregated' },
+    { rawLabel:'Organisationskosten Heimspiele', normalizedCategory:'match_organisation_expense', amountNative:-14.825035, disclosureLevel:'aggregated' },
+    { rawLabel:'Übriger Spielbetrieb', normalizedCategory:'match_organisation_expense', amountNative:-4.025943, disclosureLevel:'aggregated' },
+    { rawLabel:'Transferaufwand', normalizedCategory:'player_amortisation', amountNative:-17.660085, disclosureLevel:'aggregated' },
+    { rawLabel:'Werbung', normalizedCategory:'admin_general_expense', amountNative:-4.31083, disclosureLevel:'aggregated' },
+    { rawLabel:'Administration', normalizedCategory:'admin_general_expense', amountNative:-4.081432, disclosureLevel:'aggregated' },
+    { rawLabel:'Aufwand Leistungsfussball Nachwuchs', normalizedCategory:'youth_other_sports_expense', amountNative:-0.924833, disclosureLevel:'aggregated' },
+    { rawLabel:'Defizitgarantie FC Basel 1893', normalizedCategory:'other_expenses', amountNative:-0.699552, disclosureLevel:'aggregated' },
+    { rawLabel:'Übriger Aufwand', normalizedCategory:'other_expenses', amountNative:-1.552224, disclosureLevel:'aggregated' },
+    { rawLabel:'Abschreibungen auf Transferrechte', normalizedCategory:'player_amortisation', amountNative:-5.073696, disclosureLevel:'aggregated' },
+    { rawLabel:'Sonderabschreibungen auf Ersatzbeschaffung', normalizedCategory:'exceptional_items', amountNative:-28.090496, disclosureLevel:'aggregated' },
+    { rawLabel:'Abschreibungen auf Sachanlagen', normalizedCategory:'depreciation', amountNative:-0.94966, disclosureLevel:'aggregated' },
+    { rawLabel:'Korrektur Gewinnüberführung FC Basel Holding AG', normalizedCategory:'exceptional_items', amountNative:5.27, disclosureLevel:'aggregated' },
   ],
 };
 const baselchFiscalYearMeta = {
@@ -514,6 +546,21 @@ const baselchFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:92.488643, officialTotalExpenses:79.25471, officialPAT:0.1339,
   },
+  2016: {
+    currency:'CHF', fxRef:'CHF@2016-12-31',
+    sourceId:'basel-ch-geschaeftsbericht-2016',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-1.192192, tax:-1.67252,
+    extraRows: [
+      {label:'Finanzertrag', value:0.303044},
+      {label:'Finanzaufwand', value:-1.495236},
+      {label:'Steuern', value:-1.67252},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:132.291812, officialTotalExpenses:100.839094, officialPAT:5.767508,
+  },
 };
 const baselchPresupuestoOverlayByYear = {};
 
@@ -588,6 +635,11 @@ Object.assign(sources, {
   'basel-ch-geschaeftsbericht-2015': {
     id:'basel-ch-geschaeftsbericht-2015', clubId:'basel-ch',
     title:'FC Basel 1893 AG — geschaeftsbericht-2015 (ejercicio 2015)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'basel-ch-geschaeftsbericht-2016': {
+    id:'basel-ch-geschaeftsbericht-2016', clubId:'basel-ch',
+    title:'FC Basel 1893 AG — geschaeftsbericht-2016 (ejercicio 2016)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
