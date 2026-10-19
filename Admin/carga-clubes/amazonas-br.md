@@ -119,9 +119,9 @@ período' impreso (-3,38174536 M BRL / R$-3.381.745,36), EXACTO.
 _investigado por un subagente con fuente por gestión (Admin/gestiones-por-pais/tanda-2026-10-19-2/resultado-1.json, tools/gestiones-tanda.mjs, 2026-10-19):_
 
 ```text
-SIN CONFIRMAR, no cargada: Francisco Wesley Couto dos Santos (2019-05-23 a hoy), https://en.wikipedia.org/wiki/Amazonas_Futebol_Clube: firma el Balanço de 31/12/2024 como Diretor Presidente (Clubes/Brasil/Amazonas/balanco-patrimonial-2024.md:60-62, firma digital del 2025-08-04) y la prensa lo nombra presidente en 2024. Wikipedia dice que lideró la fundación del club (2019-05-23) y que es el presidente actual, pero ninguna fuente web da la fecha de asunción; 2019-05-23 es la fundación, no una asunción confirmada. Cierre 2024-12-31 sin cubrir.
-Duda: En 2025 el club vendió el 45 % de la SAF a inversores norteamericanos, con gestión administrativa de ellos desde septiembre de 2025: puede haber un cambio de cargo después del cierre; no se verificó si Couto sigue (hasta:null no confirmado). No se leyó balancos-2022-2023.md, que podría traer otra firma para esos años.
-Pregunta para el club (en Admin/dudas-por-club.md): desde cuándo preside Weslley Couto.
+Francisco Wesley Couto dos Santos (2022-01-01 a hoy): Portal AM1 (17-11-2024): 'Ele assumiu a presidência do Amazonas FC em 2022, sucedendo o vereador não reeleito Lissandro Breval (PP)'; la nota del 22-01-2024 del mismo portal dice que Breval 'deixou a diretoria do clube em 2022'. La fuente da solo el año: desde = 2022-01-01 (día y mes asumidos). Firma el Balanço de 31/12/2024 como Diretor Presidente (Clubes/Brasil/Amazonas/balanco-patrimonial-2024.md:60-62, firma digital del 2025-08-04), así que seguía al aprobarse el balance, sin cambio de gestión entre el cierre y la firma. Wikipedia (en) también lo da como presidente actual.
+Duda: La fecha exacta de asunción en 2022 (la fuente da solo el año). Una investigación anterior anotó que en 2024 Couto estuvo suspendido un tiempo del cargo (sin fuente citada aquí): si fue en el cierre, mirar `Admin/gestiones-por-pais/tanda-2026-10-18/`.
+Duda: En 2025 el club vendió el 45 % de la SAF a inversores norteamericanos, con gestión administrativa de ellos desde septiembre de 2025: puede haber un cambio de cargo posterior al cierre; no se verificó si Couto sigue (hasta:null no confirmado). No afecta el cierre 2024-12-31.
 ```
 
 ## Fuentes
