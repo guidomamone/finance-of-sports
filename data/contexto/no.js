@@ -9,6 +9,9 @@ Object.assign(window.CLUB_CONTEXT, {
   'molde-no': {
     2025: {"estadio":"Aker Stadion","capacidad":11249,"sponsor":"Sparebanken Møre","marca":"Adidas","temporada":"2025 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372620131"},
   },
+  'sarpsborg08-no': {
+    2025: {"estadio":"Sarpsborg Stadion","capacidad":8022,"sponsor":"Borregaard","marca":"Hummel","temporada":"2025 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372620131"},
+  },
   'valerenga-no': {
     2025: {"estadio":"Intility Arena","capacidad":16556,"sponsor":"OBOS","marca":"Adidas","temporada":"2025 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372620131"},
   },
