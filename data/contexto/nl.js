@@ -55,6 +55,8 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Fortuna Sittard Stadion","capacidad":10300,"sponsor":"BetCity","marca":"Robey","temporada":"2024–25 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378045333"},
   },
   'goaheadeagles-nl': {
+    2023: {"estadio":"De Adelaarshorst","capacidad":10000,"sponsor":"Jumper De diersuper","marca":"Stanno","temporada":"2022–23 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376813211"},
+    2024: {"estadio":"De Adelaarshorst","capacidad":10000,"sponsor":"Betnation, Vierhouten Group","marca":"Stanno","temporada":"2023–24 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377460717"},
     2025: {"estadio":"De Adelaarshorst","capacidad":10000,"sponsor":"Betnation, MaxiZoo","marca":"Stanno","temporada":"2024–25 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378045333"},
   },
   'helmondsport-nl': {

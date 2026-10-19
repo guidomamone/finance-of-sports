@@ -1,0 +1,213 @@
+{
+ "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2021-22.pdf",
+ "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2021-22.md",
+ "generado": "2026-10-19T16:03:17.660Z",
+ "estado": "ok",
+ "clubId": "stgallen-ch",
+ "year": 2022,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Erträge netto\" 31.683 cierra; además se suman 2 línea(s) fuera de ese total (10.786)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.4876988529977098e-14
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": false,
+   "detalle": "ingresos de 2022: 42.469 en este documento y 32.669 en geschaeftsbericht-2022-23.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": false,
+   "detalle": "ingresos de 2021: 29.792 en geschaeftsbericht-2020-21.pdf y 32.942 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "escalón \"subtotal repetido\": \"Erträge netto\" (L249) es la suma de las filas de arriba (con su subtotal); se saltea",
+  "escalón \"subtotal repetido\": cerró la lectura 4 sin contar dos veces el subtotal que repite el renglón de arriba",
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar ya contestada para el club (perimetro, \"Erträge brutto\"): aceptar, en geschaeftsbericht-2023-24.pdf",
+  "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; cuadro-duplicado, \"Erträge brutto\"): ¿Se dejan afuera de la carga los estados por sociedad de FC St.Gallen AG (b5, L320-L342) y FC St.Gallen Event AG (b8, L396-L425), usando solo el consolidado b2?",
+  "duda de extraer que no afecta la carga: L256-L257 son +9’800 y -9’800 en la columna 2021/2022; se cancelan en el consolidado."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 42.469,
+  "gastos": 40.606,
+  "financiero": -0.223,
+  "impuesto": -0.01,
+  "resultadoImpreso": 1.63,
+  "resultadoParaCargar": 1.63,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Erträge brutto",
+   "lado": "ingreso",
+   "M": 31.998,
+   "pagina": 16,
+   "linea": 247,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Ertragsminderungen",
+   "lado": "ingreso",
+   "M": -0.315,
+   "pagina": 16,
+   "linea": 248,
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
+  },
+  {
+   "etiqueta": "Ausserordentlicher Ertrag",
+   "lado": "ingreso",
+   "M": 0.986,
+   "pagina": 16,
+   "linea": 263,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Entschädigung von FCSG Event AG",
+   "lado": "ingreso",
+   "M": 9.8,
+   "pagina": 16,
+   "linea": 256,
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)"
+  },
+  {
+   "etiqueta": "Direkte Kosten",
+   "lado": "gasto",
+   "M": 8.912,
+   "pagina": 16,
+   "linea": 250,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Personalaufwand",
+   "lado": "gasto",
+   "M": 15.459,
+   "pagina": 16,
+   "linea": 252,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sonstiger Betriebsaufwand",
+   "lado": "gasto",
+   "M": 4.124,
+   "pagina": 16,
+   "linea": 254,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Abschreibungen Sachanlagen",
+   "lado": "gasto",
+   "M": 1.21,
+   "pagina": 16,
+   "linea": 259,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Abschreibungen Spielerwerte",
+   "lado": "gasto",
+   "M": 1.071,
+   "pagina": 16,
+   "linea": 260,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Ausserordentlicher Aufwand",
+   "lado": "gasto",
+   "M": 0.03,
+   "pagina": 16,
+   "linea": 264,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Entschädigung an FCSG AG",
+   "lado": "gasto",
+   "M": 9.8,
+   "pagina": 16,
+   "linea": 257,
+   "origen": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finanzerfolg",
+   "M": -0.223,
+   "linea": 262
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Steuern",
+   "M": -0.01,
+   "linea": 265
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "a6ba87479f865058138edc7deb787ac5f8417f9a",
+  "rango": [
+   244,
+   269
+  ],
+  "lineasCargadas": [
+   247,
+   248,
+   263,
+   256,
+   250,
+   252,
+   254,
+   259,
+   260,
+   264,
+   257,
+   262,
+   265
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 244 a 269 del .md):\nL245: | | FCSG AG | Event AG | 2021/2022 | FCSG AG | Event AG | 2020/2021 | Veränderung |\nL246: | --- | --- | --- | --- | --- | --- | --- | --- |\nL247: | Erträge brutto | 8’449 | 23’549 | 31’998 | 13’248 | 12’653 | 25’901 | 6’097 |\nL248: | Ertragsminderungen | 6 | -321 | -315 | 241 | -172 | 69 | -384 |\nL249: | Erträge netto | 8’455 | 23’228 | 31’683 | 13’489 | 12’481 | 25’970 | 5’713 |\nL250: | Direkte Kosten | -2’837 | -6’075 | -8’912 | -3’799 | -4’854 | -8’653 | -259 |\nL251: | Bruttoergebnis I | 5’618 | 17’153 | 22’771 | 9’690 | 7’627 | 17’317 | 5’454 |\nL252: | Personalaufwand | -12’348 | -3’111 | -15’459 | -11’430 | -2’628 | -14’058 | -1’401 |\nL253: | Bruttoergebnis II | -6’730 | 14’042 | 7’312 | -1’740 | 4’999 | 3’259 | 4’053 |\nL254: | Sonstiger Betriebsaufwand | -1’190 | -2’934 | -4’124 | -1’022 | -2’848 | -3’870 | -254 |\nL255: | EBITDA vor Entschädigung an FCSG AG | -7’920 | 11’108 | 3’188 | -2’762 | 2’151 | -611 | 3’799 |\nL256: | Entschädigung von FCSG Event AG | 9’800 | 0 | 9’800 | 3’150 | 0 | 3’150 | 6’650 |\nL257: | Entschädigung an FCSG AG | 0 | -9’800 | -9’800 | 0 | -3’150 | -3’150 | -6’650 |\nL258: | EBITDA | 1’880 | 1’308 | 3’188 | 388 | -999 | -611 | 3’799 |\nL259: | Abschreibungen Sachanlagen | -92 | -1’118 | -1’210 | -100 | -1’462 | -1’562 | 352 |\nL260: | Abschreibungen Spielerwerte | -1’071 | 0 | -1’071 | -853 | 0 | -853 | -218 |\nL261: | EBIT | 717 | 190 | 907 | -565 | -2’461 | -3’026 | 3’933 |\nL262: | Finanzerfolg | -164 | -59 | -223 | 120 | -33 | 87 | -310 |\nL263: | Ausserordentlicher Ertrag | 845 | 141 | 986 | 797 | 3’025 | 3’822 | -2’836 |\nL264: | Ausserordentlicher Aufwand | 0 | -30 | -30 | 0 | -1 | -1 | -29 |\nL265: | Steuern | -5 | -5 | -10 | -2 | -1 | -3 | -7 |\nL266: | Jahresergebnisse | 1’393 | 237 | 1’630 | 350 | 529 | 879 | 751 |\nL268: 16\n\nLO QUE SE CARGA:\n- ingreso · \"Erträge brutto\" · 31.998 · L247\n- ingreso · \"Ertragsminderungen\" · -0.315 · L248\n- ingreso · \"Ausserordentlicher Ertrag\" · 0.986 · L263\n- ingreso · \"Entschädigung von FCSG Event AG\" · 9.8 · L256\n- gasto · \"Direkte Kosten\" · 8.912 · L250\n- gasto · \"Personalaufwand\" · 15.459 · L252\n- gasto · \"Sonstiger Betriebsaufwand\" · 4.124 · L254\n- gasto · \"Abschreibungen Sachanlagen\" · 1.21 · L259\n- gasto · \"Abschreibungen Spielerwerte\" · 1.071 · L260\n- gasto · \"Ausserordentlicher Aufwand\" · 0.03 · L264\n- gasto · \"Entschädigung an FCSG AG\" · 9.8 · L257\n- financiero · \"Finanzerfolg\" · -0.223 · L262\n- impuesto · \"Steuern\" · -0.01 · L265"
+ }
+}

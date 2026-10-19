@@ -1,0 +1,80 @@
+{
+  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2018.md",
+  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2018.pdf",
+  "club": "basel-ch",
+  "year": 2018,
+  "generatedAt": "2026-10-19T16:03:17.136Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Mitglieder",
+      "lado": "revenue",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        1.24924
+      ],
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "Ausbildungsentschädigungen",
+      "lado": "revenue",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        0.12
+      ],
+      "glosa": "Indemnizaciones por formación"
+    },
+    {
+      "label": "Sonstiger Betriebsertrag",
+      "lado": "revenue",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        0.33789
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Defizitgarantie FC Basel 1893 AG",
+      "lado": "revenue",
+      "page": 12,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        0.925846
+      ],
+      "glosa": "Garantía de déficit FC Basel 1893 AG"
+    },
+    {
+      "label": "Personalaufwand",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        1.704891
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Administration",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        0.229327
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Übriger Aufwand",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        0.694594
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
+}

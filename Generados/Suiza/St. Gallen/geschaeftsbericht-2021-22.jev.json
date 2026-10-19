@@ -1,0 +1,106 @@
+{
+ "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2021-22.md",
+ "generatedAt": "2026-10-19T16:08:18.490Z",
+ "rubrosHuella": "69a2bf7cb7aed00bc43bcdab1a908f9b6e6c9f8d",
+ "rubros": [
+  {
+   "label": "Erträge brutto",
+   "lado": "revenue",
+   "page": 16,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Ertragsminderungen",
+   "lado": "revenue",
+   "page": 16,
+   "section": "estado (lectura 4: signo impreso, resta en su lado)",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ausserordentlicher Ertrag",
+   "lado": "revenue",
+   "page": 16,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Entschädigung von FCSG Event AG",
+   "lado": "revenue",
+   "page": 16,
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Direkte Kosten",
+   "lado": "expense",
+   "page": 16,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Personalaufwand",
+   "lado": "expense",
+   "page": 16,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "Sonstiger Betriebsaufwand",
+   "lado": "expense",
+   "page": 16,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Abschreibungen Sachanlagen",
+   "lado": "expense",
+   "page": 16,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Abschreibungen Spielerwerte",
+   "lado": "expense",
+   "page": 16,
+   "section": "estado",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ausserordentlicher Aufwand",
+   "lado": "expense",
+   "page": 16,
+   "section": "estado",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Entschädigung an FCSG AG",
+   "lado": "expense",
+   "page": 16,
+   "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  }
+ ]
+}

@@ -1,0 +1,201 @@
+{
+ "pdf": "Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2022-2023.pdf",
+ "md": "Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2022-2023.md",
+ "mdSha1": "3e412ddf4a06cb3c3211f6c590cd78998c046b65",
+ "ubicacionSha1": "66c9ebc8747dd93689b7e486592ebe6a533100e7",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:34:10.956Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica la escala; los importes con separador de miles (12.460.577) sugieren unidades de euro, pero no está impreso."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 209,
+   "etiqueta": "Netto-omzet",
+   "actual": "12.460.577",
+   "anterior": "10.042.936",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 210,
+   "etiqueta": "Resultaat vergoedingsommen",
+   "actual": "-589.384",
+   "anterior": "693.324",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 211,
+   "etiqueta": "Som der bedrijfsopbrengsten",
+   "actual": "11.871.193",
+   "anterior": "10.736.260",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 212,
+   "etiqueta": "Inkoopwaarde van de omzet",
+   "actual": "406.700",
+   "anterior": "238.109",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 213,
+   "etiqueta": "Lonen en Salarissen",
+   "actual": "4.663.394",
+   "anterior": "3.323.306",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 214,
+   "etiqueta": "Sociale lasten",
+   "actual": "560.668",
+   "anterior": "437.818",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 215,
+   "etiqueta": "Pensioenlasten",
+   "actual": "7.348",
+   "anterior": "11.849",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 216,
+   "etiqueta": "Afschrijvingen op immateriële, materiële vaste activa",
+   "actual": "633.493",
+   "anterior": "522.801",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 217,
+   "etiqueta": "Overige bedrijfskosten",
+   "actual": "4.313.730",
+   "anterior": "3.846.279",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 218,
+   "etiqueta": "Som der bedrijfslasten",
+   "actual": "10.585.333",
+   "anterior": "8.380.162",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 219,
+   "etiqueta": "Bedrijfsresultaat",
+   "actual": "1.285.860",
+   "anterior": "2.356.098",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 221,
+   "etiqueta": "Rentelasten en soortgelijke kosten",
+   "actual": "-124.738",
+   "anterior": "-130.986",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 222,
+   "etiqueta": "Financiële baten en lasten",
+   "actual": "-124.738",
+   "anterior": "-93.641",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 223,
+   "etiqueta": "Belastingen",
+   "actual": "-276.239",
+   "anterior": "-536.128",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 224,
+   "etiqueta": "Resultaat na belastingen",
+   "actual": "884.883",
+   "anterior": "1.726.329",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 211,
+  "actual": "11.871.193"
+ },
+ "total_gastos": {
+  "linea": 218,
+  "actual": "10.585.333"
+ },
+ "resultado": {
+  "linea": 224,
+  "actual": "884.883",
+  "anterior": "1.726.329"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes del estado (b3, L209-L224) como euros en unidades?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El bloque b3 no imprime la escala; por la magnitud de los importes parecen euros en unidades.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "L220 'Rentebaten en soortgelijke opbrengsten' no tiene importe en 2022/2023 (solo 37.345 en 2021/2022), por eso no se extrae como fila del ejercicio. No hay notas de ingresos ni de gastos."
+}

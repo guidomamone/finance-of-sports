@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2019.md",
+ "clave": "7a65a4f84ab436e269ccd11c9d6351fe388f399c",
+ "generado": "2026-10-19T16:03:29.734Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Las cuatro filas de la nota (L888-L891) reemplazan a Matcheinnahmen (L713): 9.710507 + 2.327605 + 0.571887 + 0.124652 = 12.734651, igual al renglón. Todos los demás renglones del ejercicio 2019 están cargados una sola vez y del lado correcto. No se cargaron subtotales ni totales (L724, L747, L748, L751, L753, L755)."
+ }
+}

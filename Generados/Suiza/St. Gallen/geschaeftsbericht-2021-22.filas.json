@@ -1,0 +1,277 @@
+{
+ "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2021-22.pdf",
+ "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2021-22.md",
+ "mdSha1": "692a1d44a9b0569d35159adda751f9c50702edec",
+ "ubicacionSha1": "41eb50f686b8a18a20b561e60a501ed90963d91b",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:27:31.530Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [
+   "b5",
+   "b8"
+  ],
+  "notas_gastos": [
+   "b5",
+   "b8"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "miles",
+   "evidencia": "L243: Beträge in CHF 1’000"
+  },
+  {
+   "bloque": "b5",
+   "escala": "miles",
+   "evidencia": "L318: Beträge in CHF 1’000"
+  },
+  {
+   "bloque": "b8",
+   "escala": "miles",
+   "evidencia": "L394: Beträge in CHF 1’000"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 247,
+   "etiqueta": "Erträge brutto",
+   "actual": "31’998",
+   "anterior": "25’901",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 248,
+   "etiqueta": "Ertragsminderungen",
+   "actual": "-315",
+   "anterior": "69",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 249,
+   "etiqueta": "Erträge netto",
+   "actual": "31’683",
+   "anterior": "25’970",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 250,
+   "etiqueta": "Direkte Kosten",
+   "actual": "-8’912",
+   "anterior": "-8’653",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 251,
+   "etiqueta": "Bruttoergebnis I",
+   "actual": "22’771",
+   "anterior": "17’317",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 252,
+   "etiqueta": "Personalaufwand",
+   "actual": "-15’459",
+   "anterior": "-14’058",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 253,
+   "etiqueta": "Bruttoergebnis II",
+   "actual": "7’312",
+   "anterior": "3’259",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 254,
+   "etiqueta": "Sonstiger Betriebsaufwand",
+   "actual": "-4’124",
+   "anterior": "-3’870",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 255,
+   "etiqueta": "EBITDA vor Entschädigung an FCSG AG",
+   "actual": "3’188",
+   "anterior": "-611",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 256,
+   "etiqueta": "Entschädigung von FCSG Event AG",
+   "actual": "9’800",
+   "anterior": "3’150",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 257,
+   "etiqueta": "Entschädigung an FCSG AG",
+   "actual": "-9’800",
+   "anterior": "-3’150",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 258,
+   "etiqueta": "EBITDA",
+   "actual": "3’188",
+   "anterior": "-611",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 259,
+   "etiqueta": "Abschreibungen Sachanlagen",
+   "actual": "-1’210",
+   "anterior": "-1’562",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 260,
+   "etiqueta": "Abschreibungen Spielerwerte",
+   "actual": "-1’071",
+   "anterior": "-853",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 261,
+   "etiqueta": "EBIT",
+   "actual": "907",
+   "anterior": "-3’026",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 262,
+   "etiqueta": "Finanzerfolg",
+   "actual": "-223",
+   "anterior": "87",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 263,
+   "etiqueta": "Ausserordentlicher Ertrag",
+   "actual": "986",
+   "anterior": "3’822",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 264,
+   "etiqueta": "Ausserordentlicher Aufwand",
+   "actual": "-30",
+   "anterior": "-1",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 265,
+   "etiqueta": "Steuern",
+   "actual": "-10",
+   "anterior": "-3",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 266,
+   "etiqueta": "Jahresergebnisse",
+   "actual": "1’630",
+   "anterior": "879",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 249,
+  "actual": "31’683"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 266,
+  "actual": "1’630",
+  "anterior": "879"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera de la carga los estados por sociedad de FC St.Gallen AG (b5, L320-L342) y FC St.Gallen Event AG (b8, L396-L425), usando solo el consolidado b2?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Erträge brutto",
+   "texto": "b5 y b8 replican las columnas FCSG AG y Event AG de b2 con otras partidas; cargarlas duplicaría importes y sus renglones no mapean 1 a 1 con b2.",
+   "bloques": [
+    "b2",
+    "b5",
+    "b8"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se cargan las líneas de compensación intercompañía 'Entschädigung von FCSG Event AG' y 'Entschädigung an FCSG AG' (L256-L257) aunque se netean a cero?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Entschädigung von FCSG Event AG",
+   "texto": "L256-L257 son +9’800 y -9’800 en la columna 2021/2022; se cancelan en el consolidado.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "b2 es un cuadro por sociedad (FCSG AG, Event AG) con total combinado; se tomó la columna 2021/2022 total. Erträge brutto se marcó subtotal y Erträge netto como total de ingresos. No hay total de gastos impreso."
+}

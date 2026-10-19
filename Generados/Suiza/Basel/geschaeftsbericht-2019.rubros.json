@@ -1,0 +1,300 @@
+{
+  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2019.md",
+  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2019.pdf",
+  "club": "basel-ch",
+  "year": 2019,
+  "generatedAt": "2026-10-19T16:03:17.240Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Aus Meisterschaft",
+      "lado": "revenue",
+      "page": 31,
+      "section": "nota que desglosa \"Matcheinnahmen\"",
+      "values": [
+        9.710507
+      ],
+      "glosa": "Ingresos por liga"
+    },
+    {
+      "label": "Aus UEFA-Spielen",
+      "lado": "revenue",
+      "page": 31,
+      "section": "nota que desglosa \"Matcheinnahmen\"",
+      "values": [
+        2.327605
+      ],
+      "glosa": "Ingresos por partidos UEFA"
+    },
+    {
+      "label": "Aus Cup-Spielen",
+      "lado": "revenue",
+      "page": 31,
+      "section": "nota que desglosa \"Matcheinnahmen\"",
+      "values": [
+        0.571887
+      ],
+      "glosa": "Ingresos por partidos de Copa"
+    },
+    {
+      "label": "Aus übrigen Spielen",
+      "lado": "revenue",
+      "page": 31,
+      "section": "nota que desglosa \"Matcheinnahmen\"",
+      "values": [
+        0.124652
+      ],
+      "glosa": "Ingresos por otros partidos"
+    },
+    {
+      "label": "Business Seats",
+      "lado": "revenue",
+      "page": 27,
+      "section": "estado",
+      "values": [
+        5.215873
+      ],
+      "glosa": "Asientos VIP"
+    },
+    {
+      "label": "Sponsoring, Werbung",
+      "lado": "revenue",
+      "page": 27,
+      "section": "estado",
+      "values": [
+        10.696507
+      ],
+      "glosa": "Patrocinio y publicidad"
+    },
+    {
+      "label": "Transferertrag",
+      "lado": "revenue",
+      "page": 27,
+      "section": "estado",
+      "values": [
+        17.251524
+      ],
+      "glosa": "Ingresos por traspasos"
+    },
+    {
+      "label": "TV-Entschädigungen",
+      "lado": "revenue",
+      "page": 27,
+      "section": "estado",
+      "values": [
+        3.499853
+      ],
+      "glosa": "Ingresos por derechos de televisión"
+    },
+    {
+      "label": "Merchandising, Licensing",
+      "lado": "revenue",
+      "page": 27,
+      "section": "estado",
+      "values": [
+        2.314448
+      ],
+      "glosa": "Merchandising y licencias"
+    },
+    {
+      "label": "Catering",
+      "lado": "revenue",
+      "page": 27,
+      "section": "estado",
+      "values": [
+        0.803936
+      ],
+      "glosa": "Catering"
+    },
+    {
+      "label": "Events Non-Matchday",
+      "lado": "revenue",
+      "page": 27,
+      "section": "estado",
+      "values": [
+        1.225984
+      ],
+      "glosa": "Eventos en días sin partido"
+    },
+    {
+      "label": "Verbandseinnahmen",
+      "lado": "revenue",
+      "page": 27,
+      "section": "estado",
+      "values": [
+        13.531607
+      ],
+      "glosa": "Ingresos federativos"
+    },
+    {
+      "label": "Einnahmen Leistungsfussball Nachwuchs",
+      "lado": "revenue",
+      "page": 27,
+      "section": "estado",
+      "values": [
+        0.607346
+      ],
+      "glosa": "Ingresos del fútbol formativo"
+    },
+    {
+      "label": "Sonstiger Betriebsertrag",
+      "lado": "revenue",
+      "page": 27,
+      "section": "estado",
+      "values": [
+        1.271635
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Defizitgarantie FC Basel Holding AG",
+      "lado": "revenue",
+      "page": 28,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        18.7
+      ],
+      "glosa": "Garantía de déficit FC Basel Holding AG"
+    },
+    {
+      "label": "Warenaufwand",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        1.60113
+      ],
+      "glosa": "Aprovisionamientos"
+    },
+    {
+      "label": "Personalaufwand",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        48.134061
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Organisationskosten Heimspiele",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        12.168904
+      ],
+      "glosa": "Gastos de organización de partidos como local"
+    },
+    {
+      "label": "Übriger Spielbetrieb",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        3.962991
+      ],
+      "glosa": "Otros gastos de partidos y competiciones"
+    },
+    {
+      "label": "Transferaufwand",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        7.117459
+      ],
+      "glosa": "Gastos por traspasos"
+    },
+    {
+      "label": "Werbung",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        4.296636
+      ],
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Administration",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        4.79411
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Aufwand Leistungsfussball Nachwuchs",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        1.075908
+      ],
+      "glosa": "Gastos del fútbol formativo"
+    },
+    {
+      "label": "Defizitgarantie FC Basel 1893",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        0.610347
+      ],
+      "glosa": "Garantía de déficit FC Basel 1893"
+    },
+    {
+      "label": "Übriger Aufwand",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        0.98475
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Abschreibungen auf Transferrechte",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        0.431023
+      ],
+      "glosa": "Amortización de derechos de traspaso"
+    },
+    {
+      "label": "Sonderabschreibungen auf Ersatzbeschaffung",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        1.312797
+      ],
+      "glosa": "Amortizaciones extraordinarias por reposición"
+    },
+    {
+      "label": "Abschreibungen auf Sachanlagen",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        1.771895
+      ],
+      "glosa": "Amortización del inmovilizado material"
+    },
+    {
+      "label": "Abschreibungen auf immaterielle Anlagen",
+      "lado": "expense",
+      "page": 28,
+      "section": "estado",
+      "values": [
+        0.011844
+      ],
+      "glosa": "Amortización del inmovilizado intangible"
+    }
+  ]
+}

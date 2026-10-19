@@ -1,0 +1,28 @@
+{
+ "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2005.pdf",
+ "generado": "2026-10-19T16:08:45.965Z",
+ "frena": [
+  {
+   "etapa": "filas",
+   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2005.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2005-12-31",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "1. Januar 2005 bis 31. Dezember 2005"
+  },
+  "confianza": "alta",
+  "anual": "calendario"
+ },
+ "clubId": "basel-ch",
+ "year": 2005,
+ "cortadoEn": "filas"
+}

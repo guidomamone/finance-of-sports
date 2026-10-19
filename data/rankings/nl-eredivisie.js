@@ -74,9 +74,21 @@ window.RANKINGS["nl-eredivisie"] = {
       { id:"spartarotterdam-nl", revenue:22.264, reportType:"official_balance_sheet",
         sourceId:"spartarotterdam-nl-wf-2023-2024-7bc9c6f8",
         mix:[["Venta de Jugadores",2.923],["Fútbol profesional (sin desglosar por la fuente)",19.341]] },
+      { id:"goaheadeagles-nl", revenue:15.636, reportType:"official_balance_sheet",
+        sourceId:"goaheadeagles-nl-jaarverslag-2023-2024",
+        mix:[["Venta de Jugadores",0.667],["Fútbol profesional (sin desglosar por la fuente)",14.969]] },
       { id:"excelsior-nl", revenue:10.799, reportType:"official_balance_sheet",
         sourceId:"excelsior-nl-jaarverslag-2023-2024",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",10.799]] },
+    ],
+  },
+  2023: {
+    leagueSize: 18,
+    wiki: {"t":"2022–23 Eredivisie","lang":"en","at":"2026-09-30","n":18},
+    clubs: [
+      { id:"goaheadeagles-nl", revenue:12.899, reportType:"official_balance_sheet",
+        sourceId:"goaheadeagles-nl-jaarverslag-2022-2023",
+        mix:[["Venta de Jugadores",-0.64],["Fútbol profesional (sin desglosar por la fuente)",13.54]] },
     ],
   },
   2019: {

@@ -1,0 +1,767 @@
+{
+ "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2023-24.pdf",
+ "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2023-24.md",
+ "mdSha1": "924a03f1c98bced199536617a475b2c65f980fea",
+ "ubicacionSha1": "ea1fe246bc863ba7572e72d23b627b1dc8a27072",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:31:46.064Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b6",
+   "b9"
+  ],
+  "notas_gastos": [
+   "b6",
+   "b9"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "miles",
+   "evidencia": "L262: Beträge in CHF 1’000"
+  },
+  {
+   "bloque": "b6",
+   "escala": "miles",
+   "evidencia": "L328: Beträge in CHF 1’000"
+  },
+  {
+   "bloque": "b9",
+   "escala": "miles",
+   "evidencia": "L397: Beträge in CHF 1’000"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 266,
+   "etiqueta": "Erträge brutto",
+   "actual": "39’192",
+   "anterior": "37’470",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 267,
+   "etiqueta": "Ertragsminderungen",
+   "actual": "-363",
+   "anterior": "-456",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 268,
+   "etiqueta": "Erträge netto",
+   "actual": "38’829",
+   "anterior": "37’014",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 269,
+   "etiqueta": "Direkte Kosten",
+   "actual": "-12’605",
+   "anterior": "-11’154",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 270,
+   "etiqueta": "Bruttoergebnis I",
+   "actual": "26’224",
+   "anterior": "25’860",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 271,
+   "etiqueta": "Personalaufwand",
+   "actual": "-19’950",
+   "anterior": "-17’004",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 272,
+   "etiqueta": "Bruttoergebnis II",
+   "actual": "6’274",
+   "anterior": "8’856",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 273,
+   "etiqueta": "Sonstiger Betriebsaufwand",
+   "actual": "-5’000",
+   "anterior": "-4’434",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 274,
+   "etiqueta": "EBITDA vor Entschädigung an FCSG AG",
+   "actual": "1’274",
+   "anterior": "4’422",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 275,
+   "etiqueta": "Entschädigung von FCSG Event AG",
+   "actual": "9’975",
+   "anterior": "8’600",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 276,
+   "etiqueta": "Entschädigung an FCSG AG",
+   "actual": "-9’975",
+   "anterior": "-8’600",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 277,
+   "etiqueta": "EBITDA",
+   "actual": "1’274",
+   "anterior": "4’422",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 278,
+   "etiqueta": "Abschreibungen Sachanlagen",
+   "actual": "-1’373",
+   "anterior": "-1’156",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 279,
+   "etiqueta": "Abschreibungen Spielerwerte",
+   "actual": "-1’279",
+   "anterior": "-1’412",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 280,
+   "etiqueta": "EBIT",
+   "actual": "-1’378",
+   "anterior": "1’854",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 281,
+   "etiqueta": "Finanzerfolg",
+   "actual": "-79",
+   "anterior": "-264",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 282,
+   "etiqueta": "Ausserordentlicher Ertrag",
+   "actual": "1’482",
+   "anterior": "154",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 283,
+   "etiqueta": "Ausserordentlicher Aufwand",
+   "actual": "0",
+   "anterior": "-1’127",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 284,
+   "etiqueta": "Steuern",
+   "actual": "-12",
+   "anterior": "-14",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 285,
+   "etiqueta": "Jahresergebnisse",
+   "actual": "13",
+   "anterior": "603",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 332,
+   "etiqueta": "Entschädigung von FC St.Gallen Event AG",
+   "actual": "9’975",
+   "anterior": "8’600",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Entschädigung von FCSG Event AG"
+  },
+  {
+   "bloque": "b6",
+   "linea": 333,
+   "etiqueta": "Erträge aus Transfers und Leihgebühren",
+   "actual": "4’886",
+   "anterior": "4’773",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Erträge brutto"
+  },
+  {
+   "bloque": "b6",
+   "linea": 334,
+   "etiqueta": "Diverse Erträge inklusive Swiss Football League",
+   "actual": "5’565",
+   "anterior": "5’529",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Erträge brutto"
+  },
+  {
+   "bloque": "b6",
+   "linea": 335,
+   "etiqueta": "Erträge aus Future Champs Ostschweiz",
+   "actual": "1’389",
+   "anterior": "1’325",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Erträge brutto"
+  },
+  {
+   "bloque": "b6",
+   "linea": 336,
+   "etiqueta": "Erträge von Gönnern und Mitgliedern",
+   "actual": "1’219",
+   "anterior": "1’243",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Erträge brutto"
+  },
+  {
+   "bloque": "b6",
+   "linea": 337,
+   "etiqueta": "Veränderung Wertberichtigungen",
+   "actual": "6",
+   "anterior": "-6",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ertragsminderungen"
+  },
+  {
+   "bloque": "b6",
+   "linea": 338,
+   "etiqueta": "Total Erträge netto",
+   "actual": "23’040",
+   "anterior": "21’464",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Erträge netto"
+  },
+  {
+   "bloque": "b6",
+   "linea": 339,
+   "etiqueta": "Aufwand für Spielbetrieb",
+   "actual": "-4’051",
+   "anterior": "-3’240",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Direkte Kosten"
+  },
+  {
+   "bloque": "b6",
+   "linea": 340,
+   "etiqueta": "Aufwand für Transfers",
+   "actual": "-791",
+   "anterior": "-741",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Direkte Kosten"
+  },
+  {
+   "bloque": "b6",
+   "linea": 341,
+   "etiqueta": "Bruttoergebnis I",
+   "actual": "18’198",
+   "anterior": "17’483",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": "Bruttoergebnis I"
+  },
+  {
+   "bloque": "b6",
+   "linea": 342,
+   "etiqueta": "Personalaufwand",
+   "actual": "-16’223",
+   "anterior": "-13’671",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personalaufwand"
+  },
+  {
+   "bloque": "b6",
+   "linea": 343,
+   "etiqueta": "Bruttoergebnis II",
+   "actual": "1’975",
+   "anterior": "3’812",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": "Bruttoergebnis II"
+  },
+  {
+   "bloque": "b6",
+   "linea": 344,
+   "etiqueta": "Sonstiger Betriebsaufwand",
+   "actual": "-1’376",
+   "anterior": "-1’189",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Sonstiger Betriebsaufwand"
+  },
+  {
+   "bloque": "b6",
+   "linea": 345,
+   "etiqueta": "EBITDA",
+   "actual": "599",
+   "anterior": "2’623",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": "EBITDA"
+  },
+  {
+   "bloque": "b6",
+   "linea": 346,
+   "etiqueta": "Abschreibungen Sachanlagen",
+   "actual": "-90",
+   "anterior": "-81",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Abschreibungen Sachanlagen"
+  },
+  {
+   "bloque": "b6",
+   "linea": 347,
+   "etiqueta": "Abschreibungen Spielerwerte",
+   "actual": "-1’279",
+   "anterior": "-1’412",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Abschreibungen Spielerwerte"
+  },
+  {
+   "bloque": "b6",
+   "linea": 348,
+   "etiqueta": "EBIT",
+   "actual": "-770",
+   "anterior": "1’130",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": "EBIT"
+  },
+  {
+   "bloque": "b6",
+   "linea": 349,
+   "etiqueta": "Finanzerfolg",
+   "actual": "29",
+   "anterior": "-110",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finanzerfolg"
+  },
+  {
+   "bloque": "b6",
+   "linea": 350,
+   "etiqueta": "Ausserordentlicher Ertrag",
+   "actual": "753",
+   "anterior": "145",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ausserordentlicher Ertrag"
+  },
+  {
+   "bloque": "b6",
+   "linea": 351,
+   "etiqueta": "Ausserordentlicher Aufwand",
+   "actual": "0",
+   "anterior": "-1’127",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Ausserordentlicher Aufwand"
+  },
+  {
+   "bloque": "b6",
+   "linea": 352,
+   "etiqueta": "Steueraufwand",
+   "actual": "-7",
+   "anterior": "-9",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Steuern"
+  },
+  {
+   "bloque": "b6",
+   "linea": 353,
+   "etiqueta": "JAHRESERGEBNIS",
+   "actual": "5",
+   "anterior": "29",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": "Jahresergebnisse"
+  },
+  {
+   "bloque": "b9",
+   "linea": 401,
+   "etiqueta": "Ertrag aus Fussballspielen",
+   "actual": "9’168",
+   "anterior": "8’993",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Erträge brutto"
+  },
+  {
+   "bloque": "b9",
+   "linea": 402,
+   "etiqueta": "Ertrag aus Werbung und Sponsoring",
+   "actual": "8’544",
+   "anterior": "7’963",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Erträge brutto"
+  },
+  {
+   "bloque": "b9",
+   "linea": 403,
+   "etiqueta": "Ertrag aus Hospitality und Logen",
+   "actual": "4’916",
+   "anterior": "4’399",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Erträge brutto"
+  },
+  {
+   "bloque": "b9",
+   "linea": 404,
+   "etiqueta": "Ertrag aus Merchandising",
+   "actual": "2’094",
+   "anterior": "1’868",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Erträge brutto"
+  },
+  {
+   "bloque": "b9",
+   "linea": 405,
+   "etiqueta": "Ertrag aus Drittveranstaltungen",
+   "actual": "76",
+   "anterior": "86",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Erträge brutto"
+  },
+  {
+   "bloque": "b9",
+   "linea": 406,
+   "etiqueta": "Ertrag aus Conference Arena / Diverse Erträge",
+   "actual": "1’335",
+   "anterior": "1’291",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Erträge brutto"
+  },
+  {
+   "bloque": "b9",
+   "linea": 407,
+   "etiqueta": "Ertragsminderungen",
+   "actual": "-369",
+   "anterior": "-450",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ertragsminderungen"
+  },
+  {
+   "bloque": "b9",
+   "linea": 408,
+   "etiqueta": "Total Erträge netto",
+   "actual": "25’764",
+   "anterior": "24’150",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Erträge netto"
+  },
+  {
+   "bloque": "b9",
+   "linea": 409,
+   "etiqueta": "Aufwand für Spielorganisation Fussball",
+   "actual": "-3’295",
+   "anterior": "-3’037",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Direkte Kosten"
+  },
+  {
+   "bloque": "b9",
+   "linea": 410,
+   "etiqueta": "Aufwand für Catering",
+   "actual": "-2’013",
+   "anterior": "-1’928",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Direkte Kosten"
+  },
+  {
+   "bloque": "b9",
+   "linea": 411,
+   "etiqueta": "Aufwand für Werbung und Sponsoring",
+   "actual": "-945",
+   "anterior": "-715",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Direkte Kosten"
+  },
+  {
+   "bloque": "b9",
+   "linea": 412,
+   "etiqueta": "Aufwand für Merchandising",
+   "actual": "-1’394",
+   "anterior": "-1’358",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Direkte Kosten"
+  },
+  {
+   "bloque": "b9",
+   "linea": 413,
+   "etiqueta": "Aufwand für Drittveranstaltungen",
+   "actual": "-15",
+   "anterior": "-15",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Direkte Kosten"
+  },
+  {
+   "bloque": "b9",
+   "linea": 414,
+   "etiqueta": "Aufwand für Conference Arena / Diverses",
+   "actual": "-101",
+   "anterior": "-120",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Direkte Kosten"
+  },
+  {
+   "bloque": "b9",
+   "linea": 415,
+   "etiqueta": "Bruttoergebnis I",
+   "actual": "18’001",
+   "anterior": "16’977",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": "Bruttoergebnis I"
+  },
+  {
+   "bloque": "b9",
+   "linea": 416,
+   "etiqueta": "Personalaufwand",
+   "actual": "-3’727",
+   "anterior": "-3’333",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personalaufwand"
+  },
+  {
+   "bloque": "b9",
+   "linea": 417,
+   "etiqueta": "Bruttoergebnis II",
+   "actual": "14’274",
+   "anterior": "13’644",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": "Bruttoergebnis II"
+  },
+  {
+   "bloque": "b9",
+   "linea": 418,
+   "etiqueta": "Sonstiger Betriebsaufwand",
+   "actual": "-3’624",
+   "anterior": "-3’245",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Sonstiger Betriebsaufwand"
+  },
+  {
+   "bloque": "b9",
+   "linea": 419,
+   "etiqueta": "EBITDA vor Entschädigung an FC St.Gallen AG",
+   "actual": "10’650",
+   "anterior": "10’399",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": "EBITDA vor Entschädigung an FCSG AG"
+  },
+  {
+   "bloque": "b9",
+   "linea": 420,
+   "etiqueta": "Entschädigung an FC St.Gallen AG",
+   "actual": "-9’975",
+   "anterior": "-8’600",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Entschädigung an FCSG AG"
+  },
+  {
+   "bloque": "b9",
+   "linea": 421,
+   "etiqueta": "EBITDA",
+   "actual": "675",
+   "anterior": "1’799",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": "EBITDA"
+  },
+  {
+   "bloque": "b9",
+   "linea": 422,
+   "etiqueta": "Abschreibungen Sachanlagen",
+   "actual": "-1’283",
+   "anterior": "-1’075",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Abschreibungen Sachanlagen"
+  },
+  {
+   "bloque": "b9",
+   "linea": 423,
+   "etiqueta": "EBIT",
+   "actual": "-608",
+   "anterior": "724",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": "EBIT"
+  },
+  {
+   "bloque": "b9",
+   "linea": 424,
+   "etiqueta": "Finanzerfolg",
+   "actual": "-108",
+   "anterior": "-154",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finanzerfolg"
+  },
+  {
+   "bloque": "b9",
+   "linea": 425,
+   "etiqueta": "Ausserordentlicher Ertrag",
+   "actual": "729",
+   "anterior": "9",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ausserordentlicher Ertrag"
+  },
+  {
+   "bloque": "b9",
+   "linea": 426,
+   "etiqueta": "Steueraufwand",
+   "actual": "-5",
+   "anterior": "-5",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Steuern"
+  },
+  {
+   "bloque": "b9",
+   "linea": 427,
+   "etiqueta": "JAHRESERGEBNIS",
+   "actual": "8",
+   "anterior": "574",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": "Jahresergebnisse"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 268,
+  "actual": "38’829"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 285,
+  "actual": "13",
+  "anterior": "603"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan las filas de b6 (FCSG AG) y b9 (Event AG) como desglose por sociedad de los renglones combinados de b3, columna 2023/2024?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Erträge brutto",
+   "texto": "b3 (L264) suma dos sociedades; b6 y b9 son sus estados individuales, y b6 Total Erträge netto (L338) incluye la Entschädigung de 9’975 que en b3 va aparte (L275).",
+   "bloques": [
+    "b3",
+    "b6",
+    "b9"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se mantienen en la carga los renglones intercompany 'Entschädigung von FCSG Event AG' (L275) y 'Entschädigung an FCSG AG' (L276), que se compensan a cero?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Entschädigung von FCSG Event AG",
+   "texto": "La compensación interna de 9’975 figura como ingreso y gasto en la columna combinada de b3 (L275-L276) sin eliminarse.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Se tomó de b3 la columna combinada 2023/2024 y 2022/2023; no se extrajeron las columnas por sociedad ni Veränderung. No se imprime total de gastos. Escala CHF miles en los tres bloques."
+}

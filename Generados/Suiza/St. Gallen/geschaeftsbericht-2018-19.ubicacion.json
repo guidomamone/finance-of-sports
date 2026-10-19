@@ -1,0 +1,144 @@
+{
+ "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2018-19.pdf",
+ "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2018-19.md",
+ "mdSha1": "e2c02c9c24791313ecaba064284b8ce97ae8c1d3",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:20:20.545Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 7,
+   "lineas": [
+    318,
+    340
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 8,
+   "lineas": [
+    350,
+    360
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    362,
+    380
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 8,
+   "lineas": [
+    388,
+    412
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 9,
+   "lineas": [
+    422,
+    434
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 9,
+   "lineas": [
+    436,
+    458
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    466,
+    497
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    509,
+    518
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    536,
+    542
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 10,
+   "lineas": [
+    550,
+    560
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 10,
+   "lineas": [
+    562,
+    572
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [
+  "b4",
+  "b7"
+ ],
+ "notas_gastos": [
+  "b4",
+  "b7"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Beträge in CHF 1’000",
+ "moneda": "CHF",
+ "columna_ejercicio": "2018/2019",
+ "columna_anterior": "2017/2018",
+ "perimetro": "ambos",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se usan las Erfolgsrechnungen individuales de FC St. Gallen AG (b4) y de FC St. Gallen Event AG (b7) como desglose de 'Erträge brutto' y 'Direkte Kosten' del consolidado (b1)?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "Erträge brutto",
+   "texto": "El consolidado b1 suma columnas por sociedad sin eliminar la compensación intragrupo (6.405), y b4/b7 abren ingresos por tipo (Fussballspiele, Werbung, Transfers...).",
+   "bloques": [
+    "b1",
+    "b4",
+    "b7"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se cargan en el consolidado tanto 'Entschädigung von FCSG Event AG' (6.405) como 'Entschädigung an FCSG AG' (-6.405) tal como figuran en b1?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Entschädigung von FCSG Event AG",
+   "texto": "Es una operación intragrupo que el consolidado no elimina; se neutraliza en el resultado, pero infla ingresos y gastos.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "b1 es el estado de resultados consolidado (columnas FCSG AG, Event AG y total 2018/2019); b4 es el individual de FC St. Gallen AG y b7 el individual de FC St. Gallen Event AG, que se usan como desglose. b2, b3, b5 y b6 son balances y b8 es el flujo de efectivo: se excluyen."
+}

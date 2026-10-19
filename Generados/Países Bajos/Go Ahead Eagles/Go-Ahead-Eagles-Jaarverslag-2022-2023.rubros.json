@@ -1,20 +1,90 @@
 {
- "md": "Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2022-2023.md",
- "pdf": "Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2022-2023.pdf",
- "club": "go-ahead-eagles",
- "year": 2023,
- "numberFormat": "eu (punto miles, coma decimal)",
- "generatedAt": "2026-09-30T22:07:24.963Z",
- "tieOuts": {
-  "cierran": 0,
-  "noCierran": 0
- },
- "warnings": [],
- "estadoDeResultados": false,
- "seleccion": {
-  "ok": false,
-  "motivo": "sin estado de resultados"
- },
- "ladoConocido": 0,
- "rubros": []
+  "md": "Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2022-2023.md",
+  "pdf": "Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2022-2023.pdf",
+  "club": "goaheadeagles-nl",
+  "year": 2023,
+  "generatedAt": "2026-10-19T15:34:58.923Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Netto-omzet",
+      "lado": "revenue",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        12.460577
+      ],
+      "glosa": "Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "Resultaat vergoedingsommen",
+      "lado": "revenue",
+      "page": 9,
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
+      "values": [
+        -0.589384
+      ],
+      "glosa": "Resultado por traspaso de jugadores"
+    },
+    {
+      "label": "Inkoopwaarde van de omzet",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.4067
+      ],
+      "glosa": "Coste de ventas"
+    },
+    {
+      "label": "Lonen en Salarissen",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        4.663394
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Sociale lasten",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.560668
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Pensioenlasten",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.007348
+      ],
+      "glosa": "Gastos por pensiones"
+    },
+    {
+      "label": "Afschrijvingen op immateriële, materiële vaste activa",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.633493
+      ],
+      "glosa": "Amortización del inmovilizado intangible y material"
+    },
+    {
+      "label": "Overige bedrijfskosten",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        4.31373
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
 }

@@ -1,0 +1,210 @@
+{
+ "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2010.pdf",
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2010.md",
+ "mdSha1": "e1e66aa949024ada5e72d3553adca3c933c724b0",
+ "ubicacionSha1": "4a9885ad189aa12a9d1c2e696c7b4c322a965f34",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:46:48.452Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "Encabezado de columnas '2010 CHF' / '2009 CHF' con importes con centavos (L439)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 441,
+   "etiqueta": "Mitglieder",
+   "actual": "670 383.45",
+   "anterior": "638 322.35",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 442,
+   "etiqueta": "Diverses",
+   "actual": "246 763.45",
+   "anterior": "209 682.81",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 443,
+   "etiqueta": "Betrieblicher Gesamtertrag",
+   "actual": "917 146.90",
+   "anterior": "848 005.16",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 444,
+   "etiqueta": "Personalaufwand",
+   "actual": "–484 458.13",
+   "anterior": "–424 706.82",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 445,
+   "etiqueta": "Administration",
+   "actual": "–53 754.15",
+   "anterior": "–57 635.71",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 446,
+   "etiqueta": "Übriger Aufwand",
+   "actual": "–599 582.73",
+   "anterior": "–371 293.43",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 447,
+   "etiqueta": "Ergebnis vor Zinsen, ausserordentlichen Posten und Steuern",
+   "actual": "–220 648.11",
+   "anterior": "–5 630.80",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 448,
+   "etiqueta": "Finanzertrag",
+   "actual": "685.49",
+   "anterior": "13 979.76",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 449,
+   "etiqueta": "Finanzaufwand",
+   "actual": "–2 202.21",
+   "anterior": "–2 192.74",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 450,
+   "etiqueta": "Ergebnis vor ausserordentlichen Posten und Steuern",
+   "actual": "–222 164.83",
+   "anterior": "6 156.22",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 451,
+   "etiqueta": "Defizitgarantie FC Basel 1893 AG",
+   "actual": "224 396.88",
+   "anterior": "0.00",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 452,
+   "etiqueta": "Ergebnis vor Steuern",
+   "actual": "2 232.05",
+   "anterior": "6 156.22",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 453,
+   "etiqueta": "Steuern",
+   "actual": "–2 232.05",
+   "anterior": "–2 417.75",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 454,
+   "etiqueta": "Jahresgewinn",
+   "actual": "0.00",
+   "anterior": "3 738.47",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 443,
+  "actual": "917 146.90"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 454,
+  "actual": "0.00",
+  "anterior": "3 738.47"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se confirma el signo positivo de 'Ergebnis vor ausserordentlichen Posten und Steuern' 2009 (6 156.22, L450) pese a que el resultado operativo 2009 es –5 630.80?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Ergebnis vor ausserordentlichen Posten und Steuern",
+   "texto": "En L450 2009: –5 630.80 + 13 979.76 – 2 192.74 = 6 156.22, consistente; solo se verifica el signo con el PDF.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se carga 'Defizitgarantie FC Basel 1893 AG' (L451, 224 396.88) como partida extraordinaria con lado 'otro'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Defizitgarantie FC Basel 1893 AG",
+   "texto": "Es una garantía de déficit de la sociedad anónima vinculada (L451), partida extraordinaria que no es ingreso operativo; parece estado del Verein, no de la AG, lo que también plantea perímetro.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Este estado (L437-L454) corresponde a la asociación FC Basel 1893 (Verein) y no a la sociedad del club profesional, y aun así se carga?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "Los ingresos son cuotas de miembros (L441) y hay garantía de déficit de la FC Basel 1893 AG (L451), lo que indica que es el estado del Verein y no del grupo/AG.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados en CHF con centavos; no hay notas de desglose. No se imprime total de gastos (se resuelve sumando L444-L446). Guiones '–' conservados tal cual."
+}

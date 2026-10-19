@@ -1,0 +1,120 @@
+{
+  "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2021-22.md",
+  "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2021-22.pdf",
+  "club": "stgallen-ch",
+  "year": 2022,
+  "generatedAt": "2026-10-19T15:34:58.039Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Erträge brutto",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        31.998
+      ],
+      "glosa": "Ingresos brutos"
+    },
+    {
+      "label": "Ertragsminderungen",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
+      "values": [
+        -0.315
+      ],
+      "glosa": "Minoración de ingresos"
+    },
+    {
+      "label": "Ausserordentlicher Ertrag",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.986
+      ],
+      "glosa": "Ingresos extraordinarios"
+    },
+    {
+      "label": "Entschädigung von FCSG Event AG",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        9.8
+      ],
+      "glosa": "Compensación de FCSG Event AG"
+    },
+    {
+      "label": "Direkte Kosten",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        8.912
+      ],
+      "glosa": "Costes directos"
+    },
+    {
+      "label": "Personalaufwand",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        15.459
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Sonstiger Betriebsaufwand",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        4.124
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Abschreibungen Sachanlagen",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        1.21
+      ],
+      "glosa": "Amortización del inmovilizado material"
+    },
+    {
+      "label": "Abschreibungen Spielerwerte",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        1.071
+      ],
+      "glosa": "Amortización del valor de los jugadores"
+    },
+    {
+      "label": "Ausserordentlicher Aufwand",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0.03
+      ],
+      "glosa": "Gastos extraordinarios"
+    },
+    {
+      "label": "Entschädigung an FCSG AG",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
+      "values": [
+        9.8
+      ],
+      "glosa": "Compensación a FCSG AG"
+    }
+  ]
+}

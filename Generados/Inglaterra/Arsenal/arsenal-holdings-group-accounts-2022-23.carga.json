@@ -1,0 +1,37 @@
+{
+ "pdf": "Clubes/Inglaterra/Arsenal/arsenal-holdings-group-accounts-2022-23.pdf",
+ "generado": "2026-10-19T15:39:56.884Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas, verificar.mjs) no corrió todavía sobre este .md: correr el lote"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "perimetro-en-cola",
+   "motivo": "el perímetro espera respuesta en la cola humana (node tools/cola.mjs); propuesta: consolidado"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "no hay .verificacion.json (correr tools/lote.mjs o verificar.mjs)"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Inglaterra/Arsenal/arsenal-holdings-group-accounts-2022-23.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2023-05-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "arsenal-gb",
+ "year": 2023,
+ "cortadoEn": "filas"
+}

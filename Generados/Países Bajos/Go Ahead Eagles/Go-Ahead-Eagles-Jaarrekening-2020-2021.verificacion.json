@@ -1,0 +1,697 @@
+{
+ "pdf": "Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarrekening-2020-2021.pdf",
+ "md": "Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarrekening-2020-2021.md",
+ "generado": "2026-10-19T16:03:17.743Z",
+ "estado": "ok",
+ "clubId": "goaheadeagles-nl",
+ "year": 2021,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "5.905871 = 5.905871",
+   "suma": 5.905871,
+   "impreso": 5.905870999999999
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "4.957045 = 4.957045",
+   "suma": 4.957045000000001,
+   "impreso": 4.957045
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 4.440892098500626e-16
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2021: 5.905871 en este documento y 5.905871 en Go-Ahead-Eagles-Jaarverslag-2021-2022.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
+  }
+ ],
+ "notas": [
+  "el desglose de \"Huisvestingskosten\" (10 filas) no suma la fila: quedó la fila",
+  "el desglose de \"Overige bedrijfskosten\" (10 filas) no suma la fila: quedó la fila",
+  "duda de extraer que no afecta la carga: La etiqueta 'Overige bedrijfskosten' aparece tanto en el estado (L572) como dentro de la nota 22 (L1454, 5.110); el desglose de L1545-L1546 corresponde a la de la nota."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Huisvestingskosten",
+   "suma": 0.388414,
+   "objetivo": 0.098448
+  },
+  {
+   "renglon": "Overige bedrijfskosten",
+   "suma": 2.070824,
+   "objetivo": 0.00511
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Huisvestingskosten",
+   "suma": 0.388414,
+   "objetivo": 0.098448
+  },
+  {
+   "renglon": "Overige bedrijfskosten",
+   "suma": 2.070824,
+   "objetivo": 0.00511
+  }
+ ],
+ "totales": {
+  "ingresos": 5.905871,
+  "gastos": 4.957045,
+  "financiero": -0.124294,
+  "impuesto": -0.181819,
+  "resultadoImpreso": 0.642713,
+  "resultadoParaCargar": 0.642713,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Sponsoring",
+   "lado": "ingreso",
+   "M": 2.106865,
+   "pagina": 36,
+   "linea": 1368,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Wedstrijdbaten",
+   "lado": "ingreso",
+   "M": 0.865271,
+   "pagina": 36,
+   "linea": 1369,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Media gerelateerde baten",
+   "lado": "ingreso",
+   "M": 0.711961,
+   "pagina": 36,
+   "linea": 1370,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Subsidies & giften",
+   "lado": "ingreso",
+   "M": 0.265857,
+   "pagina": 36,
+   "linea": 1371,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Horeca",
+   "lado": "ingreso",
+   "M": 0.189604,
+   "pagina": 36,
+   "linea": 1372,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Merchandise",
+   "lado": "ingreso",
+   "M": 0.151399,
+   "pagina": 36,
+   "linea": 1373,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Prijzengeld",
+   "lado": "ingreso",
+   "M": 0.115,
+   "pagina": 36,
+   "linea": 1374,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Overige baten",
+   "lado": "ingreso",
+   "M": 0.079651,
+   "pagina": 36,
+   "linea": 1375,
+   "origen": "nota que desglosa \"Netto-omzet\""
+  },
+  {
+   "etiqueta": "Afschrijvingen vergoedingsommen",
+   "lado": "gasto",
+   "M": 0.020734,
+   "pagina": 36,
+   "linea": 1386,
+   "origen": "nota que desglosa \"Resultaat vergoedingsommen\""
+  },
+  {
+   "etiqueta": "Transferbaten",
+   "lado": "ingreso",
+   "M": 1.467703,
+   "pagina": 36,
+   "linea": 1387,
+   "origen": "nota que desglosa \"Resultaat vergoedingsommen\""
+  },
+  {
+   "etiqueta": "Opleidingsvergoedingen",
+   "lado": "ingreso",
+   "M": 0.017957,
+   "pagina": 36,
+   "linea": 1388,
+   "origen": "nota que desglosa \"Resultaat vergoedingsommen\""
+  },
+  {
+   "etiqueta": "Solidariteitsbijdragen",
+   "lado": "ingreso",
+   "M": 0.015111,
+   "pagina": 36,
+   "linea": 1389,
+   "origen": "nota que desglosa \"Resultaat vergoedingsommen\""
+  },
+  {
+   "etiqueta": "Makelaarskosten",
+   "lado": "gasto",
+   "M": 0.059774,
+   "pagina": 36,
+   "linea": 1390,
+   "origen": "nota que desglosa \"Resultaat vergoedingsommen\""
+  },
+  {
+   "etiqueta": "Inkoopwaarde merchandise",
+   "lado": "gasto",
+   "M": 0.088252,
+   "pagina": 36,
+   "linea": 1394,
+   "origen": "nota que desglosa \"Inkoopwaarde van de omzet\""
+  },
+  {
+   "etiqueta": "Inkoopwaarde food & beverage",
+   "lado": "gasto",
+   "M": 0.003675,
+   "pagina": 36,
+   "linea": 1395,
+   "origen": "nota que desglosa \"Inkoopwaarde van de omzet\""
+  },
+  {
+   "etiqueta": "Bruto salarissen",
+   "lado": "gasto",
+   "M": 1.968273,
+   "pagina": 37,
+   "linea": 1407,
+   "origen": "nota que desglosa \"Lonen en salarissen\""
+  },
+  {
+   "etiqueta": "Huur spelers",
+   "lado": "gasto",
+   "M": 0.044221,
+   "pagina": 37,
+   "linea": 1408,
+   "origen": "nota que desglosa \"Lonen en salarissen\""
+  },
+  {
+   "etiqueta": "Ontvangen uitkeringen",
+   "lado": "gasto",
+   "M": -0.026039,
+   "pagina": 37,
+   "linea": 1411,
+   "origen": "nota que desglosa \"Lonen en salarissen\""
+  },
+  {
+   "etiqueta": "Sociale lasten",
+   "lado": "gasto",
+   "M": 0.357817,
+   "pagina": 16,
+   "linea": 569,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Pensioenlasten",
+   "lado": "gasto",
+   "M": 0.006789,
+   "pagina": 16,
+   "linea": 570,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Afschrijvingen op immateriële, materiële vaste activa en vastgoedbeleggingen",
+   "lado": "gasto",
+   "M": 0.448343,
+   "pagina": 16,
+   "linea": 571,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Huisvestingskosten",
+   "lado": "gasto",
+   "M": 0.098448,
+   "pagina": 38,
+   "linea": 1458,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Overige personeelskosten\""
+  },
+  {
+   "etiqueta": "Inhuur algemeen management",
+   "lado": "gasto",
+   "M": 0.093,
+   "pagina": 38,
+   "linea": 1459,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Overige personeelskosten\""
+  },
+  {
+   "etiqueta": "Verhuiskostenvergoeding",
+   "lado": "gasto",
+   "M": 0.070995,
+   "pagina": 38,
+   "linea": 1461,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Overige personeelskosten\""
+  },
+  {
+   "etiqueta": "Reiskosten en kilometervergoedingen",
+   "lado": "gasto",
+   "M": 0.049606,
+   "pagina": 38,
+   "linea": 1462,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Overige personeelskosten\""
+  },
+  {
+   "etiqueta": "Vergoeding personeel",
+   "lado": "gasto",
+   "M": 0.042202,
+   "pagina": 38,
+   "linea": 1464,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Overige personeelskosten\""
+  },
+  {
+   "etiqueta": "Inhuur fysiotherapie",
+   "lado": "gasto",
+   "M": 0.038473,
+   "pagina": 38,
+   "linea": 1465,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Overige personeelskosten\""
+  },
+  {
+   "etiqueta": "Inhuur afdeling communicatie",
+   "lado": "gasto",
+   "M": 0.0275,
+   "pagina": 38,
+   "linea": 1466,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Overige personeelskosten\""
+  },
+  {
+   "etiqueta": "Inhuur veiligheidscoördinator",
+   "lado": "gasto",
+   "M": 0.025327,
+   "pagina": 38,
+   "linea": 1467,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Overige personeelskosten\""
+  },
+  {
+   "etiqueta": "Studie- en opleidingskosten",
+   "lado": "gasto",
+   "M": 0.015325,
+   "pagina": 38,
+   "linea": 1468,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Overige personeelskosten\""
+  },
+  {
+   "etiqueta": "Inhuur financieel management",
+   "lado": "gasto",
+   "M": 0.015,
+   "pagina": 38,
+   "linea": 1469,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Overige personeelskosten\""
+  },
+  {
+   "etiqueta": "Uitzendkrachten",
+   "lado": "gasto",
+   "M": 0.006399,
+   "pagina": 38,
+   "linea": 1470,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Overige personeelskosten\""
+  },
+  {
+   "etiqueta": "Bedrijfskleding",
+   "lado": "gasto",
+   "M": 0.002904,
+   "pagina": 38,
+   "linea": 1471,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Overige personeelskosten\""
+  },
+  {
+   "etiqueta": "Overige",
+   "lado": "gasto",
+   "M": 0.051333,
+   "pagina": 38,
+   "linea": 1472,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Overige personeelskosten\""
+  },
+  {
+   "etiqueta": "Onderhoud onroerend goed",
+   "lado": "gasto",
+   "M": 0.163488,
+   "pagina": 38,
+   "linea": 1476,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\""
+  },
+  {
+   "etiqueta": "Gas, water en elektra",
+   "lado": "gasto",
+   "M": 0.076526,
+   "pagina": 38,
+   "linea": 1477,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\""
+  },
+  {
+   "etiqueta": "Belastingen en zakelijke lasten",
+   "lado": "gasto",
+   "M": 0.051946,
+   "pagina": 38,
+   "linea": 1478,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\""
+  },
+  {
+   "etiqueta": "Schoonmaakkosten",
+   "lado": "gasto",
+   "M": 0.041952,
+   "pagina": 38,
+   "linea": 1479,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\""
+  },
+  {
+   "etiqueta": "Huur veldverwarming",
+   "lado": "gasto",
+   "M": 0.01419,
+   "pagina": 38,
+   "linea": 1480,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\""
+  },
+  {
+   "etiqueta": "Assurantiepremie onroerende zaak",
+   "lado": "gasto",
+   "M": 0.013109,
+   "pagina": 38,
+   "linea": 1481,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\""
+  },
+  {
+   "etiqueta": "Beveiligingskosten",
+   "lado": "gasto",
+   "M": 0.011772,
+   "pagina": 38,
+   "linea": 1482,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\""
+  },
+  {
+   "etiqueta": "Huur stadion",
+   "lado": "gasto",
+   "M": 0.005,
+   "pagina": 38,
+   "linea": 1483,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\""
+  },
+  {
+   "etiqueta": "Overige",
+   "lado": "gasto",
+   "M": 0.010431,
+   "pagina": 38,
+   "linea": 1484,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Huisvestingskosten\""
+  },
+  {
+   "etiqueta": "Mutatie voorziening dubieuze vorderingen op handelsdebiteuren",
+   "lado": "gasto",
+   "M": -0.064271,
+   "pagina": 39,
+   "linea": 1494,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\""
+  },
+  {
+   "etiqueta": "Reclame, advertenties en promotiemateriaal",
+   "lado": "gasto",
+   "M": 0.165931,
+   "pagina": 39,
+   "linea": 1495,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\""
+  },
+  {
+   "etiqueta": "Representatiekosten",
+   "lado": "gasto",
+   "M": 0.074834,
+   "pagina": 39,
+   "linea": 1496,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\""
+  },
+  {
+   "etiqueta": "LED-boarding",
+   "lado": "gasto",
+   "M": 0.0538,
+   "pagina": 39,
+   "linea": 1498,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\""
+  },
+  {
+   "etiqueta": "Ticketing",
+   "lado": "gasto",
+   "M": 0.028688,
+   "pagina": 39,
+   "linea": 1499,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\""
+  },
+  {
+   "etiqueta": "Inhuur commercieel management",
+   "lado": "gasto",
+   "M": 0.028058,
+   "pagina": 39,
+   "linea": 1500,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\""
+  },
+  {
+   "etiqueta": "Afboeking dubieuze vorderingen op handelsdebiteuren",
+   "lado": "gasto",
+   "M": 0.011549,
+   "pagina": 39,
+   "linea": 1501,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\""
+  },
+  {
+   "etiqueta": "Fanshop",
+   "lado": "gasto",
+   "M": 0.006883,
+   "pagina": 39,
+   "linea": 1502,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\""
+  },
+  {
+   "etiqueta": "Hostess",
+   "lado": "gasto",
+   "M": 0.000789,
+   "pagina": 39,
+   "linea": 1503,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\""
+  },
+  {
+   "etiqueta": "Kids- en Juniorclub",
+   "lado": "gasto",
+   "M": 0.000584,
+   "pagina": 39,
+   "linea": 1504,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\""
+  },
+  {
+   "etiqueta": "Overige",
+   "lado": "gasto",
+   "M": 0.058833,
+   "pagina": 39,
+   "linea": 1506,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Verkoopkosten\""
+  },
+  {
+   "etiqueta": "Autokosten",
+   "lado": "gasto",
+   "M": 0.162438,
+   "pagina": 38,
+   "linea": 1450,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\""
+  },
+  {
+   "etiqueta": "Kosten automatisering",
+   "lado": "gasto",
+   "M": 0.066267,
+   "pagina": 39,
+   "linea": 1513,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Kantoorkosten\""
+  },
+  {
+   "etiqueta": "Porti- en telefoonkosten",
+   "lado": "gasto",
+   "M": 0.019584,
+   "pagina": 39,
+   "linea": 1514,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Kantoorkosten\""
+  },
+  {
+   "etiqueta": "Kantoorbenodigdheden",
+   "lado": "gasto",
+   "M": 0.002906,
+   "pagina": 39,
+   "linea": 1515,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Kantoorkosten\""
+  },
+  {
+   "etiqueta": "Abonnementen en contributies",
+   "lado": "gasto",
+   "M": 0.044274,
+   "pagina": 39,
+   "linea": 1519,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Algemene kosten\""
+  },
+  {
+   "etiqueta": "Accountantskosten",
+   "lado": "gasto",
+   "M": 0.039901,
+   "pagina": 39,
+   "linea": 1520,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Algemene kosten\""
+  },
+  {
+   "etiqueta": "Verzekeringen",
+   "lado": "gasto",
+   "M": 0.028952,
+   "pagina": 39,
+   "linea": 1521,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Algemene kosten\""
+  },
+  {
+   "etiqueta": "Notariskosten",
+   "lado": "gasto",
+   "M": 0.002325,
+   "pagina": 39,
+   "linea": 1522,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Algemene kosten\""
+  },
+  {
+   "etiqueta": "Overige",
+   "lado": "gasto",
+   "M": 0.001525,
+   "pagina": 39,
+   "linea": 1523,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Algemene kosten\""
+  },
+  {
+   "etiqueta": "Reis- en verblijfkosten",
+   "lado": "gasto",
+   "M": 0.132058,
+   "pagina": 40,
+   "linea": 1533,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Wedstrijd- en trainingskosten\""
+  },
+  {
+   "etiqueta": "Uitrusting en wedstrijdmateriaal",
+   "lado": "gasto",
+   "M": 0.051794,
+   "pagina": 40,
+   "linea": 1534,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Wedstrijd- en trainingskosten\""
+  },
+  {
+   "etiqueta": "Kosten beveiliging en kassiers",
+   "lado": "gasto",
+   "M": 0.032408,
+   "pagina": 40,
+   "linea": 1536,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Wedstrijd- en trainingskosten\""
+  },
+  {
+   "etiqueta": "Clubkostuums",
+   "lado": "gasto",
+   "M": 0.030349,
+   "pagina": 40,
+   "linea": 1537,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Wedstrijd- en trainingskosten\""
+  },
+  {
+   "etiqueta": "Medische begeleiding",
+   "lado": "gasto",
+   "M": 0.028691,
+   "pagina": 40,
+   "linea": 1538,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Wedstrijd- en trainingskosten\""
+  },
+  {
+   "etiqueta": "Scoutingswerkzaamheden",
+   "lado": "gasto",
+   "M": 0.022158,
+   "pagina": 40,
+   "linea": 1539,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Wedstrijd- en trainingskosten\""
+  },
+  {
+   "etiqueta": "Kosten trainingskamp",
+   "lado": "gasto",
+   "M": 0.0095,
+   "pagina": 40,
+   "linea": 1540,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Wedstrijd- en trainingskosten\""
+  },
+  {
+   "etiqueta": "Scheidsrechterskosten",
+   "lado": "gasto",
+   "M": 0.00257,
+   "pagina": 40,
+   "linea": 1541,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Wedstrijd- en trainingskosten\""
+  },
+  {
+   "etiqueta": "Overige",
+   "lado": "gasto",
+   "M": 0.0923,
+   "pagina": 40,
+   "linea": 1542,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\" > desglose de \"Wedstrijd- en trainingskosten\""
+  },
+  {
+   "etiqueta": "Overige bedrijfskosten",
+   "lado": "gasto",
+   "M": 0.00511,
+   "pagina": 38,
+   "linea": 1454,
+   "origen": "nota que desglosa \"Overige bedrijfskosten\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Rentelasten en soortgelijke kosten",
+   "M": -0.124294,
+   "linea": 576
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Belastingen",
+   "M": -0.181819,
+   "linea": 578
+  }
+ ]
+}

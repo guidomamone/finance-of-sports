@@ -1,0 +1,249 @@
+{
+ "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2005.pdf",
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2005.md",
+ "generado": "2026-10-19T16:03:16.294Z",
+ "estado": "cola",
+ "clubId": "basel-ch",
+ "year": 2005,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [
+  "9f74e77"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"**Total Ertrag**\" 38.217415 cierra; además se suman 11 línea(s) fuera de ese total (38.217415)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "38.844639 = 38.844639",
+   "suma": 38.84463946,
+   "impreso": 38.844639459999996
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 76.43483 - gastos 38.844639 ± financiero 0.358237 ± impuesto 0.005293 no da el impreso 0.101193",
+   "dif": null
+  },
+  {
+   "nombre": "documento del año 2006",
+   "ok": true,
+   "detalle": "ingresos de 2005: 76.43483 en este documento y 76.43483 en geschaeftsbericht-2006.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2004: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "duda de localizar ya contestada para el club (columna, \"Organisationskosten Heimspiele\"): corregir no, en geschaeftsbericht-2005.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 76.43483,
+  "gastos": 38.844639,
+  "financiero": 0.358237,
+  "impuesto": 0.005293,
+  "resultadoImpreso": 0.101193,
+  "resultadoParaCargar": 0.101193,
+  "resultadoFinal": null,
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "*aus Meisterschaft*",
+   "lado": "ingreso",
+   "M": 10.830075,
+   "pagina": 13,
+   "linea": 212,
+   "origen": "nota que desglosa \"Matcheinnahmen\""
+  },
+  {
+   "etiqueta": "*aus Champions-League / UEFA-Cup*",
+   "lado": "ingreso",
+   "M": 4.973398,
+   "pagina": 13,
+   "linea": 213,
+   "origen": "nota que desglosa \"Matcheinnahmen\""
+  },
+  {
+   "etiqueta": "*aus Cup-Spielen*",
+   "lado": "ingreso",
+   "M": 0.31707,
+   "pagina": 13,
+   "linea": 214,
+   "origen": "nota que desglosa \"Matcheinnahmen\""
+  },
+  {
+   "etiqueta": "*aus übrigen Spielen*",
+   "lado": "ingreso",
+   "M": 0.007435,
+   "pagina": 13,
+   "linea": 215,
+   "origen": "nota que desglosa \"Matcheinnahmen\""
+  },
+  {
+   "etiqueta": "Business Seats",
+   "lado": "ingreso",
+   "M": 6.330115,
+   "pagina": 13,
+   "linea": 216,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sponsoring, Werbung",
+   "lado": "ingreso",
+   "M": 4.87985,
+   "pagina": 13,
+   "linea": 217,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "TV-Entschädigungen",
+   "lado": "ingreso",
+   "M": 1.70406,
+   "pagina": 13,
+   "linea": 218,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Leihertrag, Ausbildungsentschädigungen",
+   "lado": "ingreso",
+   "M": 0.888822,
+   "pagina": 13,
+   "linea": 219,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Mitglieder",
+   "lado": "ingreso",
+   "M": 0.451475,
+   "pagina": 13,
+   "linea": 220,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Verbandseinnahmen",
+   "lado": "ingreso",
+   "M": 0.333841,
+   "pagina": 13,
+   "linea": 221,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Diverses",
+   "lado": "ingreso",
+   "M": 7.501273,
+   "pagina": 13,
+   "linea": 222,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "**Total Ertrag**",
+   "lado": "ingreso",
+   "M": 38.217415,
+   "pagina": 13,
+   "linea": 223,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Personalaufwand",
+   "lado": "gasto",
+   "M": 25.078668,
+   "pagina": 14,
+   "linea": 235,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Organisationskosten Heimspiele",
+   "lado": "gasto",
+   "M": 7.835065,
+   "pagina": 14,
+   "linea": 236,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Übriger Spielbetrieb",
+   "lado": "gasto",
+   "M": 1.847381,
+   "pagina": 14,
+   "linea": 237,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Leihaufwand, Ausbildungsentschädigungen",
+   "lado": "gasto",
+   "M": 0.09487,
+   "pagina": 14,
+   "linea": 238,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Werbung",
+   "lado": "gasto",
+   "M": 1.099846,
+   "pagina": 14,
+   "linea": 239,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administration",
+   "lado": "gasto",
+   "M": 0.979456,
+   "pagina": 14,
+   "linea": 240,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Abschreibungen",
+   "lado": "gasto",
+   "M": 0.319066,
+   "pagina": 14,
+   "linea": 241,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Übriger Aufwand",
+   "lado": "gasto",
+   "M": 1.590286,
+   "pagina": 14,
+   "linea": 242,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finanzertrag",
+   "M": 0.310974,
+   "linea": 247
+  },
+  {
+   "etiqueta": "Finanzaufwand",
+   "M": 0.047263,
+   "linea": 248
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Steuern",
+   "M": 0.005293,
+   "linea": 258
+  }
+ ]
+}

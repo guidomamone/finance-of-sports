@@ -1,0 +1,387 @@
+{
+ "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2012.pdf",
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2012.md",
+ "mdSha1": "45e4c7e976257d6b0ac939419bb03c790174a74c",
+ "ubicacionSha1": "758800f5f8b7106e79e2339745c024807d96a237",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:18:53.458Z",
+ "ubicacion": {
+  "estado": [
+   "b8",
+   "b9"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b8",
+   "escala": "unidades",
+   "evidencia": "Encabezado de columnas '2012 CHF' / '2011 CHF' (L776), importes con centavos"
+  },
+  {
+   "bloque": "b9",
+   "escala": "unidades",
+   "evidencia": "Encabezado de columnas '2012 CHF' / '2011 CHF' (L793), importes con centavos"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b8",
+   "linea": 778,
+   "etiqueta": "Matcheinnahmen",
+   "actual": "19 144 788.76",
+   "anterior": "21 109 808.85",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 779,
+   "etiqueta": "aus Meisterschaft",
+   "actual": "12 453 919.35",
+   "anterior": "12 901 096.97",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Matcheinnahmen"
+  },
+  {
+   "bloque": "b8",
+   "linea": 780,
+   "etiqueta": "aus UEFA-Spielen",
+   "actual": "5 656 268.96",
+   "anterior": "7 807 819.00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Matcheinnahmen"
+  },
+  {
+   "bloque": "b8",
+   "linea": 781,
+   "etiqueta": "aus Cup-Spielen",
+   "actual": "1 015 088.25",
+   "anterior": "168 935.20",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Matcheinnahmen"
+  },
+  {
+   "bloque": "b8",
+   "linea": 782,
+   "etiqueta": "aus übrigen Spielen",
+   "actual": "19 512.20",
+   "anterior": "231 957.68",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Matcheinnahmen"
+  },
+  {
+   "bloque": "b8",
+   "linea": 783,
+   "etiqueta": "Business Seats",
+   "actual": "5 541 918.71",
+   "anterior": "5 511 195.63",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 784,
+   "etiqueta": "Sponsoring, Werbung",
+   "actual": "8 795 214.24",
+   "anterior": "8 090 957.81",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 785,
+   "etiqueta": "Transferertrag",
+   "actual": "27 366 110.25",
+   "anterior": "9 783 834.10",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 786,
+   "etiqueta": "TV-Entschädigungen",
+   "actual": "2 203 293.00",
+   "anterior": "1 325 142.95",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 787,
+   "etiqueta": "Merchandising, Licensing",
+   "actual": "3 621 500.39",
+   "anterior": "2 912 900.56",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 788,
+   "etiqueta": "Verbandseinnahmen",
+   "actual": "11 147 589.16",
+   "anterior": "16 645 209.92",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 789,
+   "etiqueta": "Einnahmen Leistungsfussball Nachwuchs",
+   "actual": "699 012.32",
+   "anterior": "637 962.20",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 790,
+   "etiqueta": "Diverses",
+   "actual": "1 517 989.95",
+   "anterior": "1 623 838.09",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 791,
+   "etiqueta": "Total Ertrag",
+   "actual": "80 037 416.78",
+   "anterior": "67 640 850.11",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 795,
+   "etiqueta": "Personalaufwand",
+   "actual": "–33 403 028.74",
+   "anterior": "–34 907 672.35",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 796,
+   "etiqueta": "Organisationskosten Heimspiele",
+   "actual": "–10 164 250.50",
+   "anterior": "–9 279 407.80",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 797,
+   "etiqueta": "Übriger Spielbetrieb",
+   "actual": "–3 553 471.98",
+   "anterior": "–3 298 231.39",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 798,
+   "etiqueta": "Transferaufwand",
+   "actual": "–9 082 853.21",
+   "anterior": "–7 281 459.58",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 799,
+   "etiqueta": "Warenaufwand",
+   "actual": "–2 355 265.51",
+   "anterior": "–1 474 219.23",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 800,
+   "etiqueta": "Werbung",
+   "actual": "–2 394 223.50",
+   "anterior": "–1 961 058.77",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 801,
+   "etiqueta": "Administration",
+   "actual": "–2 752 404.08",
+   "anterior": "–2 612 039.32",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 802,
+   "etiqueta": "Abschreibungen",
+   "actual": "–22 948.00",
+   "anterior": "–27 249.00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 803,
+   "etiqueta": "Aufwand Leistungsfussball Nachwuchs",
+   "actual": "–240 139.02",
+   "anterior": "–373 019.75",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 804,
+   "etiqueta": "Übriger Aufwand",
+   "actual": "–918 199.92",
+   "anterior": "–703 202.41",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 805,
+   "etiqueta": "Total Aufwand",
+   "actual": "–64 886 784.46",
+   "anterior": "–61 917 559.60",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 806,
+   "etiqueta": "Ergebnis vor Zinsen, ausserordentlichen Posten und Steuern",
+   "actual": "15 150 632.32",
+   "anterior": "5 723 290.51",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 807,
+   "etiqueta": "Finanzertrag",
+   "actual": "17 706.48",
+   "anterior": "52 323.58",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 808,
+   "etiqueta": "Finanzaufwand",
+   "actual": "–196 672.25",
+   "anterior": "–201 133.28",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 809,
+   "etiqueta": "Ergebnis vor ausserordentlichen Posten und Steuern",
+   "actual": "14 971 666.55",
+   "anterior": "5 574 480.81",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 810,
+   "etiqueta": "Gewinnüberführung FC Basel Holding AG",
+   "actual": "–14 000 000.00",
+   "anterior": "0.00",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 811,
+   "etiqueta": "Ergebnis vor Steuern",
+   "actual": "971 666.55",
+   "anterior": "5 574 480.81",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 812,
+   "etiqueta": "Steuern",
+   "actual": "–944 068.05",
+   "anterior": "–46 226.25",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b9",
+   "linea": 813,
+   "etiqueta": "Jahresgewinn",
+   "actual": "27 598.50",
+   "anterior": "5 528 254.56",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 791,
+  "actual": "80 037 416.78"
+ },
+ "total_gastos": {
+  "linea": 805,
+  "actual": "–64 886 784.46"
+ },
+ "resultado": {
+  "linea": 813,
+  "actual": "27 598.50",
+  "anterior": "5 528 254.56"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la 'Gewinnüberführung FC Basel Holding AG' (L810, –14 000 000.00) como partida 'otro' (transferencia de beneficio a la holding) y no como gasto operativo?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Gewinnüberführung FC Basel Holding AG",
+   "texto": "L810 es una transferencia de ganancia a la sociedad holding, no un gasto operativo; afecta la comparabilidad del resultado del ejercicio.",
+   "bloques": [
+    "b9"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Las líneas L790-L791 aparecen repetidas en b8 y b9 (solapamiento de bloques); se extrajeron una sola vez desde b8. Las filas L779-L782 desglosan 'Matcheinnahmen' dentro del mismo estado y se marcaron con detalla_a para evitar doble conteo."
+}

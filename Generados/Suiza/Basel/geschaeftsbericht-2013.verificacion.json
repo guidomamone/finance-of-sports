@@ -1,0 +1,367 @@
+{
+ "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2013.pdf",
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2013.md",
+ "generado": "2026-10-19T16:04:04.947Z",
+ "estado": "cola",
+ "clubId": "basel-ch",
+ "year": 2013,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2013.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "El informe trae estados individuales sueltos (FC Basel 1893 AG, el Verein y, desde 2014, la Stadiondienst AG); no hay consolidado. La AG es la que juega el fútbol y cierra con el resultado impreso (mismo perímetro que el 2021 cargado)",
+   "evidencia": "revisión de subagente Sonnet, Claude 2026-10-19: .md geschaeftsbericht-2013, Erfolgsrechnung de la FC Basel 1893 AG",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
+ "cola": [
+  "51d0cee",
+  "028e254",
+  "fb334ee",
+  "bf0f0b5"
+ ],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero por rótulo, impuesto invertido)",
+   "dif": 1.9984014443252818e-15
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
+  },
+  {
+   "nombre": "documento del año 2014",
+   "ok": false,
+   "detalle": "ingresos de 2013: 88.243026 en este documento y 176.486053 en geschaeftsbericht-2014.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2012",
+   "ok": false,
+   "detalle": "ingresos de 2012: 160.074834 en geschaeftsbericht-2012.pdf y 80.037417 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2012: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 6",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2012.pdf",
+  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 88.243026,
+  "gastos": 87.280387,
+  "financiero": 0.257208,
+  "impuesto": 0.281991,
+  "resultadoImpreso": 0.851788,
+  "resultadoParaCargar": 0.851788,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero por rótulo, impuesto invertido"
+ },
+ "lineas": [
+  {
+   "etiqueta": "aus Meisterschaft",
+   "lado": "ingreso",
+   "M": 12.625252,
+   "pagina": 25,
+   "linea": 788,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "aus Champions-League / UEFA-Spielen",
+   "lado": "ingreso",
+   "M": 13.330867,
+   "pagina": 25,
+   "linea": 789,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "aus Cup-Spielen",
+   "lado": "ingreso",
+   "M": 0.782346,
+   "pagina": 25,
+   "linea": 790,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "aus übrigen Spielen",
+   "lado": "ingreso",
+   "M": 1.47614,
+   "pagina": 25,
+   "linea": 791,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Business Seats",
+   "lado": "ingreso",
+   "M": 5.787549,
+   "pagina": 25,
+   "linea": 792,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Sponsoring, Werbung",
+   "lado": "ingreso",
+   "M": 10.263544,
+   "pagina": 25,
+   "linea": 793,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Transferertrag",
+   "lado": "ingreso",
+   "M": 12.247705,
+   "pagina": 25,
+   "linea": 794,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "TV-Entschädigungen",
+   "lado": "ingreso",
+   "M": 2.475866,
+   "pagina": 25,
+   "linea": 795,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Merchandising, Licensing",
+   "lado": "ingreso",
+   "M": 3.694182,
+   "pagina": 25,
+   "linea": 796,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Catering",
+   "lado": "ingreso",
+   "M": 0.77503,
+   "pagina": 25,
+   "linea": 797,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Verbandseinnahmen",
+   "lado": "ingreso",
+   "M": 22.202232,
+   "pagina": 25,
+   "linea": 798,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Einnahmen Leistungsfussball Nachwuchs",
+   "lado": "ingreso",
+   "M": 0.76162,
+   "pagina": 25,
+   "linea": 799,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Diverses",
+   "lado": "ingreso",
+   "M": 1.820693,
+   "pagina": 25,
+   "linea": 800,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Personalaufwand",
+   "lado": "gasto",
+   "M": 36.249134,
+   "pagina": 25,
+   "linea": 805,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Organisationskosten Heimspiele",
+   "lado": "gasto",
+   "M": 12.952138,
+   "pagina": 25,
+   "linea": 806,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Übriger Spielbetrieb",
+   "lado": "gasto",
+   "M": 4.444237,
+   "pagina": 25,
+   "linea": 807,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Transferaufwand",
+   "lado": "gasto",
+   "M": 13.873735,
+   "pagina": 25,
+   "linea": 808,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Warenaufwand",
+   "lado": "gasto",
+   "M": 1.651669,
+   "pagina": 25,
+   "linea": 809,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Werbung",
+   "lado": "gasto",
+   "M": 2.210102,
+   "pagina": 25,
+   "linea": 810,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Administration",
+   "lado": "gasto",
+   "M": 3.435006,
+   "pagina": 25,
+   "linea": 811,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Abschreibungen",
+   "lado": "gasto",
+   "M": 0.021311,
+   "pagina": 25,
+   "linea": 812,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Aufwand Leistungsfussball Nachwuchs",
+   "lado": "gasto",
+   "M": 0.750201,
+   "pagina": 25,
+   "linea": 813,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Übriger Aufwand",
+   "lado": "gasto",
+   "M": 1.019903,
+   "pagina": 25,
+   "linea": 814,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Defizitgarantie FC Basel 1893",
+   "lado": "gasto",
+   "M": 0.261266,
+   "pagina": 25,
+   "linea": 820,
+   "origen": "estado (sin lado en el documento: entra como gasto por su signo, impreso en positivo; lectura 6)"
+  },
+  {
+   "etiqueta": "Gewinnüberführung FC Basel Holding AG",
+   "lado": "gasto",
+   "M": 0.985,
+   "pagina": 25,
+   "linea": 821,
+   "origen": "estado (sin lado en el documento: entra como gasto por su signo, impreso en positivo; lectura 6)"
+  },
+  {
+   "etiqueta": "Ausserordentliche Aufwendungen",
+   "lado": "gasto",
+   "M": 9.426685,
+   "pagina": 25,
+   "linea": 822,
+   "origen": "estado (sin lado en el documento: entra como gasto por su signo, impreso en positivo; lectura 6)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": "rótulo",
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finanzertrag",
+   "M": 0.214174,
+   "linea": 817
+  },
+  {
+   "etiqueta": "Finanzaufwand",
+   "M": -0.043035,
+   "linea": 818
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Steuern",
+   "M": -0.281991,
+   "linea": 824
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "984aa97ece2b0c8a04bf993746dd9e2dfdad335b",
+  "rango": [
+   784,
+   828
+  ],
+  "lineasCargadas": [
+   788,
+   789,
+   790,
+   791,
+   792,
+   793,
+   794,
+   795,
+   796,
+   797,
+   798,
+   799,
+   800,
+   805,
+   806,
+   807,
+   808,
+   809,
+   810,
+   811,
+   812,
+   813,
+   814,
+   820,
+   821,
+   822,
+   817,
+   818,
+   824
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 784 a 828 del .md):\nL785: | | 2013 CHF | 2012 CHF |\nL786: | --- | --- | --- |\nL787: | Matcheinnahmen | 28 214 604.99 | 19 144 788.76 |\nL788: | aus Meisterschaft | 12 625 252.12 | 12 453 919.35 |\nL789: | aus Champions-League / UEFA-Spielen | 13 330 866.92 | 5 656 268.96 |\nL790: | aus Cup-Spielen | 782 346.25 | 1 015 088.25 |\nL791: | aus übrigen Spielen | 1 476 139.70 | 19 512.20 |\nL792: | Business Seats | 5 787 548.74 | 5 541 918.71 |\nL793: | Sponsoring, Werbung | 10 263 543.61 | 8 795 214.24 |\nL794: | Transferertrag | 12 247 704.95 | 27 366 110.25 |\nL795: | TV-Entschädigungen | 2 475 866.40 | 2 203 293.00 |\nL796: | Merchandising, Licensing | 3 694 182.44 | 3 621 500.39 |\nL797: | Catering | 775 030.07 | 0.00 |\nL798: | Verbandseinnahmen | 22 202 232.17 | 11 147 589.16 |\nL799: | Einnahmen Leistungsfussball Nachwuchs | 761 619.78 | 699 012.32 |\nL800: | Diverses | 1 820 693.33 | 1 517 989.95 |\nL801: | Total Ertrag | 88 243 026.48 | 80 037 416.78 |\nL803: | | 2013 CHF | 2012 CHF |\nL804: | --- | --- | --- |\nL805: | Personalaufwand | –36 249 133.99 | –33 403 028.74 |\nL806: | Organisationskosten Heimspiele | –12 952 138.25 | –10 164 250.50 |\nL807: | Übriger Spielbetrieb | –4 444 236.92 | –3 553 471.98 |\nL808: | Transferaufwand | –13 873 735.14 | –9 082 853.21 |\nL809: | Warenaufwand | –1 651 669.01 | –2 355 265.51 |\nL810: | Werbung | –2 210 101.70 | –2 394 223.50 |\nL811: | Administration | –3 435 005.98 | –2 752 404.08 |\nL812: | Abschreibungen | –21 311.00 | –22 948.00 |\nL813: | Aufwand Leistungsfussball Nachwuchs | –750 200.55 | –240 139.02 |\nL814: | Übriger Aufwand | –1 019 903.48 | –918 199.92 |\nL815: | Total Aufwand | –76 607 436.02 | –64 886 784.46 |\nL816: | Ergebnis vor Zinsen, ausserordentlichen Posten und Steuern | 11 635 590.46 | 15 150 632.32 |\nL817: | Finanzertrag | 214 173.87 | 17 706.48 |\nL818: | Finanzaufwand | –43 034.53 | –196 672.25 |\nL819: | Ergebnis vor ausserordentlichen Posten und Steuern | 11 806 729.80 | 14 971 666.55 |\nL820: | Defizitgarantie FC Basel 1893 | –261 265.92 | 0.00 |\nL821: | Gewinnüberführung FC Basel Holding AG | –985 000.00 | –14 000 000.00 |\nL822: | Ausserordentliche Aufwendungen | –9 426 685.00 | 0.00 |\nL823: | Ergebnis vor Steuern | 1 133 778.88 | 971 666.55 |\nL824: | Steuern | –281 991.00 | –944 068.05 |\nL825: | Jahresgewinn | 851 787.88 | 27 598.50 |\nL827: 25\n\nLO QUE SE CARGA:\n- ingreso · \"aus Meisterschaft\" · 12.625252 · L788\n- ingreso · \"aus Champions-League / UEFA-Spielen\" · 13.330867 · L789\n- ingreso · \"aus Cup-Spielen\" · 0.782346 · L790\n- ingreso · \"aus übrigen Spielen\" · 1.47614 · L791\n- ingreso · \"Business Seats\" · 5.787549 · L792\n- ingreso · \"Sponsoring, Werbung\" · 10.263544 · L793\n- ingreso · \"Transferertrag\" · 12.247705 · L794\n- ingreso · \"TV-Entschädigungen\" · 2.475866 · L795\n- ingreso · \"Merchandising, Licensing\" · 3.694182 · L796\n- ingreso · \"Catering\" · 0.77503 · L797\n- ingreso · \"Verbandseinnahmen\" · 22.202232 · L798\n- ingreso · \"Einnahmen Leistungsfussball Nachwuchs\" · 0.76162 · L799\n- ingreso · \"Diverses\" · 1.820693 · L800\n- gasto · \"Personalaufwand\" · 36.249134 · L805\n- gasto · \"Organisationskosten Heimspiele\" · 12.952138 · L806\n- gasto · \"Übriger Spielbetrieb\" · 4.444237 · L807\n- gasto · \"Transferaufwand\" · 13.873735 · L808\n- gasto · \"Warenaufwand\" · 1.651669 · L809\n- gasto · \"Werbung\" · 2.210102 · L810\n- gasto · \"Administration\" · 3.435006 · L811\n- gasto · \"Abschreibungen\" · 0.021311 · L812\n- gasto · \"Aufwand Leistungsfussball Nachwuchs\" · 0.750201 · L813\n- gasto · \"Übriger Aufwand\" · 1.019903 · L814\n- gasto · \"Defizitgarantie FC Basel 1893\" · 0.261266 · L820\n- gasto · \"Gewinnüberführung FC Basel Holding AG\" · 0.985 · L821\n- gasto · \"Ausserordentliche Aufwendungen\" · 9.426685 · L822\n- financiero · \"Finanzertrag\" · 0.214174 · L817\n- financiero · \"Finanzaufwand\" · -0.043035 · L818\n- impuesto · \"Steuern\" · -0.281991 · L824"
+ }
+}

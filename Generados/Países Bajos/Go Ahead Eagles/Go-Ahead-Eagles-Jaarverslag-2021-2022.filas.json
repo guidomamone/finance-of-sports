@@ -1,0 +1,221 @@
+{
+ "pdf": "Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2021-2022.pdf",
+ "md": "Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2021-2022.md",
+ "mdSha1": "3c8890ae00dc53163aff987c319fe55d016b8404",
+ "ubicacionSha1": "b5294565fb3fac1ddf7ad93efca52d40a2ae0f05",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:33:25.659Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica escala; importes con separador de miles sin leyenda (probablemente unidades de euro)."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 160,
+   "etiqueta": "Netto-omzet",
+   "actual": "10.042.936",
+   "anterior": "4.485.608",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 161,
+   "etiqueta": "Resultaat vergoedingsommen",
+   "actual": "693.324",
+   "anterior": "1.420.263",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 162,
+   "etiqueta": "Som der bedrijfsopbrengsten",
+   "actual": "10.736.260",
+   "anterior": "5.905.871",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 163,
+   "etiqueta": "Inkoopwaarde van de omzet",
+   "actual": "238.109",
+   "anterior": "91.927",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 164,
+   "etiqueta": "Lonen en salarissen",
+   "actual": "3.323.306",
+   "anterior": "1.986.455",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 165,
+   "etiqueta": "Sociale lasten",
+   "actual": "437.818",
+   "anterior": "357.817",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 166,
+   "etiqueta": "Pensioenlasten",
+   "actual": "11.849",
+   "anterior": "6.789",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 167,
+   "etiqueta": "Afschrijvingen op immateriële, materiële vaste activa en vastgoedbeleggingen",
+   "actual": "522.801",
+   "anterior": "448.343",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 168,
+   "etiqueta": "Overige bedrijfskosten",
+   "actual": "3.846.279",
+   "anterior": "2.065.714",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 169,
+   "etiqueta": "Som der bedrijfslasten",
+   "actual": "8.380.162",
+   "anterior": "4.957.045",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 170,
+   "etiqueta": "Bedrijfsresultaat",
+   "actual": "2.356.098",
+   "anterior": "948.826",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 171,
+   "etiqueta": "Rentebaten en soortgelijke opbrengsten",
+   "actual": "37.345",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 172,
+   "etiqueta": "Rentelasten en soortgelijke kosten",
+   "actual": "-130.986",
+   "anterior": "-124.294",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 173,
+   "etiqueta": "Financiële baten en lasten",
+   "actual": "-93.641",
+   "anterior": "-124.294",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 174,
+   "etiqueta": "Resultaat voor belastingen",
+   "actual": "2.262.457",
+   "anterior": "824.532",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 175,
+   "etiqueta": "Belastingen",
+   "actual": "-536.128",
+   "anterior": "-181.819",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 176,
+   "etiqueta": "Resultaat na belastingen",
+   "actual": "1.726.329",
+   "anterior": "642.713",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 162,
+  "actual": "10.736.260"
+ },
+ "total_gastos": {
+  "linea": 169,
+  "actual": "8.380.162"
+ },
+ "resultado": {
+  "linea": 176,
+  "actual": "1.726.329",
+  "anterior": "642.713"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes del estado (L160-L176) como euros en unidades?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El bloque b3 no imprime la escala; por magnitud parecen euros en unidades.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado consolidado sin notas de desglose provistas. Los gastos operativos se presentan en positivo y los financieros/impuestos con signo negativo."
+}

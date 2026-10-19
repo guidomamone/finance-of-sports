@@ -70,3 +70,18 @@ Rama `onboarding`, sin push. Último commit al escribir esto: ver `git log`.
   - Caso: `Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2023.md`, estado individual L136-145. "Sum finansinntekter" 1 321 530 (L141: Annen renteinntekt 180 908 + Annen finansinntekt 1 140 622) y "Sum finanskostnader" 1 313 085 (L144: Annen rentekostnad 1 449 287 + Annen finanskostnad -136 202, una reversión negativa). "Netto finans" impreso: 8 446 (L145). Resultado impreso: 18 981 564 (L158).
   - Defecto: la carga tomó netInterest = 2.634615 (= 1 321 530 + 1 313 085, los dos con el mismo signo) en vez de restar: 1 321 530 - 1 313 085 = 8 445. Por eso el resultado dio 21,6 M contra el impreso 18,98 M y el año frenaba por `tie-out-resultado`. Es el mismo defecto que la mejora t#5 (financiero sumando con el mismo signo), con un disparador nuevo: un renglón de costo con signo negativo (reversión) dentro de "Sum finanskostnader" invierte la lectura de su signo.
   - Ajuste puesto a mano: `resultado-final = 18.981564` para `aarsregnskap-fotballforening-fli-2023.pdf` (en `Admin/registros/ajustes-manuales.jsonl`, motivo y evidencia con las líneas de arriba). Si la mejora se hace, ese ajuste se puede sacar y comprobar que el netInterest da 0.008446.
+
+## Lote 101: demás años de Basel, Luzern, St. Gallen y Go Ahead Eagles (2026-10-19, en curso)
+
+### Qué cambió
+- `Admin/lotes/lote-101.txt` (32 documentos). Go Ahead Eagles 2023-24 se transcribió con el pipeline (no tenía `.md`).
+- Ajustes: cierre al 30 de junio para Luzern 2018-19 a 2023-24; perímetro `individual` para Basel 2010 y 2013-2020 (la AG sola; ningún informe trae consolidado).
+- Cola contestada por subagentes Sonnet (50 casos). Escritos: Go Ahead Eagles 2023 y 2024.
+
+### Qué queda (para TODO)
+- **Basel 2005, 2009 y 2012 (defecto de script):** la fila "Total Ertrag" entra como rubro en los `.rubros.json` y los ingresos salen exactamente 2 veces el total impreso (2007 y 2011 no la incluyen). 9 casos de la cola quedaron sin contestar por eso (ids 9f74e77, 551fd1d, 7863fd9, 275ada4, a0806ed, f2c7e18, 731c315, 1929f7a, 29ab985). En 2009 y 2012 falta además decidir dónde entra la Verlustabdeckung de 9,721 M y la Gewinnüberführung de 14 M. En 2010, 2013, 2019 y 2020 la AG tiene partidas con la Holding o el Verein debajo del resultado operativo (la de 2019 es de 18,7 M).
+- **Basel 2006:** se carga la FC Basel 1893 AG, no el Verein (el Verein le traspasó el fútbol profesional ese año).
+- **St. Gallen: compensación intragrupo "Entschädigung von/an FCSG Event AG":** suma ingreso y gasto en la columna combinada. La carga la cuenta como ingreso en 2018-19, 2019-20, 2021-22 y 2023-24 (9.800 en 2021-22 y 9.975 en 2023-24 a sacar a mano si la recarga no lo hace). La serie usa las dos sociedades sumadas (FC St. Gallen AG + Event AG); si el perímetro fuera solo la AG, la compensación sería un ingreso real. Decisión de perímetro pendiente.
+- **Mejoras de script (de los subagentes):** la columna del año anterior invierte el signo de "Ertragsminderungen" y de "Resultaat vergoedingsommen"; suma el subtotal "Erträge netto" cuando el documento lo imprime.
+- **Go Ahead Eagles 2021 y 2022:** frenan por estadio/sponsor (compuerta 273); la Eerste Divisie ya alcanza el estadio, pero falta la liga de esos años en `data/club-leagues/nl.js` (Go Ahead Eagles estuvo en la Eerste Divisie 2020-21 y 2021-22).
+- **Cola del lote 101:** 102 preguntas nuevas tras la segunda corrida (16 años en verificar, 11 en categorías); sin contestar.

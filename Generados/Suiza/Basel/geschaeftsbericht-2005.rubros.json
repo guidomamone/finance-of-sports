@@ -1,434 +1,210 @@
 {
- "md": "Clubes/Suiza/Basel/geschaeftsbericht-2005.md",
- "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2005.pdf",
- "club": "basel",
- "year": 2005,
- "numberFormat": "espacio como separador de miles (escandinavo)",
- "generatedAt": "2026-09-30T22:08:09.210Z",
- "tieOuts": {
-  "cierran": 2,
-  "noCierran": 0
- },
- "warnings": [
-  "8 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
- ],
- "estadoDeResultados": true,
- "seleccion": {
-  "ok": true,
-  "filas": 43,
-  "notasUsadas": []
- },
- "ladoConocido": 41,
- "rubros": [
-  {
-   "label": "Personalaufwand",
-   "lado": "expense",
-   "page": 14,
-   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
-   "values": [
-    25078.66829
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "Organisationskosten Heimspiele",
-   "lado": "expense",
-   "page": 14,
-   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
-   "values": [
-    7835.0653
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "Übriger Spielbetrieb",
-   "lado": "expense",
-   "page": 14,
-   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
-   "values": [
-    1847.38128
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "Leihaufwand, Ausbildungsentschädigungen",
-   "lado": "expense",
-   "page": 14,
-   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
-   "values": [
-    94.8702
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "Werbung",
-   "lado": "expense",
-   "page": 14,
-   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
-   "values": [
-    1099.84605
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "Administration",
-   "lado": "expense",
-   "page": 14,
-   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
-   "values": [
-    979.45609
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "Abschreibungen",
-   "lado": "expense",
-   "page": 14,
-   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
-   "values": [
-    319.06605
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "Übriger Aufwand",
-   "lado": "expense",
-   "page": 14,
-   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
-   "values": [
-    1590.2862
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "Finanzertrag",
-   "lado": "revenue",
-   "page": 14,
-   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
-   "values": [
-    310.97408
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "Finanzaufwand",
-   "lado": "expense",
-   "page": 14,
-   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
-   "values": [
-    47.26274
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "Steuern",
-   "lado": "expense",
-   "page": 14,
-   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
-   "values": [
-    5.29325
-   ],
-   "origen": "estado 3"
-  },
-  {
-   "label": "Matcheinnahmen",
-   "lado": "revenue",
-   "page": 13,
-   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
-   "values": [
-    16.127978
-   ],
-   "origen": "estado 2"
-  },
-  {
-   "label": "*aus Meisterschaft*",
-   "lado": "revenue",
-   "page": 13,
-   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
-   "values": [
-    10.830075
-   ],
-   "origen": "estado 2"
-  },
-  {
-   "label": "*aus Champions-League / UEFA-Cup*",
-   "lado": "revenue",
-   "page": 13,
-   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
-   "values": [
-    4.973398
-   ],
-   "origen": "estado 2"
-  },
-  {
-   "label": "*aus Cup-Spielen*",
-   "lado": "revenue",
-   "page": 13,
-   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
-   "values": [
-    0.31707
-   ],
-   "origen": "estado 2"
-  },
-  {
-   "label": "*aus übrigen Spielen*",
-   "lado": "revenue",
-   "page": 13,
-   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
-   "values": [
-    0.007435
-   ],
-   "origen": "estado 2"
-  },
-  {
-   "label": "Business Seats",
-   "lado": "revenue",
-   "page": 13,
-   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
-   "values": [
-    6.330115
-   ],
-   "origen": "estado 2"
-  },
-  {
-   "label": "Sponsoring, Werbung",
-   "lado": "revenue",
-   "page": 13,
-   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
-   "values": [
-    4.87985
-   ],
-   "origen": "estado 2"
-  },
-  {
-   "label": "TV-Entschädigungen",
-   "lado": "revenue",
-   "page": 13,
-   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
-   "values": [
-    1.70406
-   ],
-   "origen": "estado 2"
-  },
-  {
-   "label": "Leihertrag, Ausbildungsentschädigungen",
-   "lado": "revenue",
-   "page": 13,
-   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
-   "values": [
-    0.888822
-   ],
-   "origen": "estado 2"
-  },
-  {
-   "label": "Mitglieder",
-   "lado": "revenue",
-   "page": 13,
-   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
-   "values": [
-    0.451475
-   ],
-   "origen": "estado 2"
-  },
-  {
-   "label": "Verbandseinnahmen",
-   "lado": "revenue",
-   "page": 13,
-   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
-   "values": [
-    0.333841
-   ],
-   "origen": "estado 2"
-  },
-  {
-   "label": "Diverses",
-   "lado": "revenue",
-   "page": 13,
-   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
-   "values": [
-    7.501273
-   ],
-   "origen": "estado 2"
-  },
-  {
-   "label": "Catering",
-   "lado": "expense",
-   "page": 23,
-   "section": "O. Organisationskosten Heimspiele / Organisationskosten pro Zuschauer (in CHF)",
-   "values": [
-    0.000005
-   ],
-   "origen": "estado 7"
-  },
-  {
-   "label": "Sicherheit",
-   "lado": "expense",
-   "page": 23,
-   "section": "O. Organisationskosten Heimspiele / Organisationskosten pro Zuschauer (in CHF)",
-   "values": [
-    0.000003
-   ],
-   "origen": "estado 7"
-  },
-  {
-   "label": "Miete",
-   "lado": "expense",
-   "page": 23,
-   "section": "O. Organisationskosten Heimspiele / Organisationskosten pro Zuschauer (in CHF)",
-   "values": [
-    0.000002
-   ],
-   "origen": "estado 7"
-  },
-  {
-   "label": "Vermarktungsrechte",
-   "lado": "expense",
-   "page": 23,
-   "section": "O. Organisationskosten Heimspiele / Organisationskosten pro Zuschauer (in CHF)",
-   "values": [
-    0.000002
-   ],
-   "origen": "estado 7"
-  },
-  {
-   "label": "Personalkosten Dritte",
-   "lado": "expense",
-   "page": 23,
-   "section": "O. Organisationskosten Heimspiele / Organisationskosten pro Zuschauer (in CHF)",
-   "values": [
-    0.000001
-   ],
-   "origen": "estado 7"
-  },
-  {
-   "label": "Reinigung",
-   "lado": "expense",
-   "page": 23,
-   "section": "O. Organisationskosten Heimspiele / Organisationskosten pro Zuschauer (in CHF)",
-   "values": [
-    0.000001
-   ],
-   "origen": "estado 7"
-  },
-  {
-   "label": "Transfer-, Leih- und Ausbildungsentschädigungssertrag",
-   "lado": "revenue",
-   "page": 26,
-   "section": "## FC Basel 1893 / # Juniorenabteilung in Zahlen (CHF) / 1. Januar 2005 – 31. Dezember 2005 / ### Einnahmen",
-   "values": [
-    0.8783
-   ],
-   "origen": "estado 8"
-  },
-  {
-   "label": "Verbandsentschädigungen, Öffentliche Zuschüsse",
-   "lado": "revenue",
-   "page": 26,
-   "section": "## FC Basel 1893 / # Juniorenabteilung in Zahlen (CHF) / 1. Januar 2005 – 31. Dezember 2005 / ### Einnahmen",
-   "values": [
-    0.274087
-   ],
-   "origen": "estado 8"
-  },
-  {
-   "label": "Sponsoren",
-   "lado": "revenue",
-   "page": 26,
-   "section": "## FC Basel 1893 / # Juniorenabteilung in Zahlen (CHF) / 1. Januar 2005 – 31. Dezember 2005 / ### Einnahmen",
-   "values": [
-    0.117544
-   ],
-   "origen": "estado 8"
-  },
-  {
-   "label": "Spenden",
-   "lado": "revenue",
-   "page": 26,
-   "section": "## FC Basel 1893 / # Juniorenabteilung in Zahlen (CHF) / 1. Januar 2005 – 31. Dezember 2005 / ### Einnahmen",
-   "values": [
-    0.11705
-   ],
-   "origen": "estado 8"
-  },
-  {
-   "label": "Mitgliederbeiträge",
-   "lado": "revenue",
-   "page": 26,
-   "section": "## FC Basel 1893 / # Juniorenabteilung in Zahlen (CHF) / 1. Januar 2005 – 31. Dezember 2005 / ### Einnahmen",
-   "values": [
-    0.044038
-   ],
-   "origen": "estado 8"
-  },
-  {
-   "label": "Diverser Ertrag",
-   "lado": "revenue",
-   "page": 26,
-   "section": "## FC Basel 1893 / # Juniorenabteilung in Zahlen (CHF) / 1. Januar 2005 – 31. Dezember 2005 / ### Einnahmen",
-   "values": [
-    0.14165
-   ],
-   "origen": "estado 8"
-  },
-  {
-   "label": "Personalaufwand",
-   "lado": "expense",
-   "page": 26,
-   "section": "### Ausgaben",
-   "values": [
-    1.833817
-   ],
-   "origen": "estado 9"
-  },
-  {
-   "label": "Spielbetrieb",
-   "lado": "expense",
-   "page": 26,
-   "section": "### Ausgaben",
-   "values": [
-    0.788041
-   ],
-   "origen": "estado 9"
-  },
-  {
-   "label": "Mietaufwand Juniorenunterkünfte",
-   "lado": "expense",
-   "page": 26,
-   "section": "### Ausgaben",
-   "values": [
-    0.111597
-   ],
-   "origen": "estado 9"
-  },
-  {
-   "label": "Transfer-, Leih- und Ausbildungsentschädigungsaufwand",
-   "lado": "expense",
-   "page": 26,
-   "section": "### Ausgaben",
-   "values": [
-    0.091732
-   ],
-   "origen": "estado 9"
-  },
-  {
-   "label": "Diverser Aufwand",
-   "lado": "expense",
-   "page": 26,
-   "section": "### Ausgaben",
-   "values": [
-    0.099143
-   ],
-   "origen": "estado 9"
-  },
-  {
-   "label": "Nettoinvestition in Juniorenabteilung",
-   "lado": "expense",
-   "page": 26,
-   "section": "### Ausgaben",
-   "values": [
-    1.351661
-   ],
-   "origen": "estado 9"
-  }
- ]
+  "md": "Clubes/Suiza/Basel/geschaeftsbericht-2005.md",
+  "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2005.pdf",
+  "club": "basel-ch",
+  "year": 2005,
+  "generatedAt": "2026-10-19T15:34:56.067Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "*aus Meisterschaft*",
+      "lado": "revenue",
+      "page": 13,
+      "section": "nota que desglosa \"Matcheinnahmen\"",
+      "values": [
+        10.830075
+      ],
+      "glosa": "*de Liga*"
+    },
+    {
+      "label": "*aus Champions-League / UEFA-Cup*",
+      "lado": "revenue",
+      "page": 13,
+      "section": "nota que desglosa \"Matcheinnahmen\"",
+      "values": [
+        4.973398
+      ],
+      "glosa": "*de Champions League / Copa de la UEFA*"
+    },
+    {
+      "label": "*aus Cup-Spielen*",
+      "lado": "revenue",
+      "page": 13,
+      "section": "nota que desglosa \"Matcheinnahmen\"",
+      "values": [
+        0.31707
+      ],
+      "glosa": "*de partidos de Copa*"
+    },
+    {
+      "label": "*aus übrigen Spielen*",
+      "lado": "revenue",
+      "page": 13,
+      "section": "nota que desglosa \"Matcheinnahmen\"",
+      "values": [
+        0.007435
+      ],
+      "glosa": "*de otros partidos*"
+    },
+    {
+      "label": "Business Seats",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        6.330115
+      ],
+      "glosa": "Asientos VIP"
+    },
+    {
+      "label": "Sponsoring, Werbung",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        4.87985
+      ],
+      "glosa": "Patrocinio y publicidad"
+    },
+    {
+      "label": "TV-Entschädigungen",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        1.70406
+      ],
+      "glosa": "Derechos de televisión"
+    },
+    {
+      "label": "Leihertrag, Ausbildungsentschädigungen",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        0.888822
+      ],
+      "glosa": "Ingresos por cesiones y compensaciones por formación"
+    },
+    {
+      "label": "Mitglieder",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        0.451475
+      ],
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "Verbandseinnahmen",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        0.333841
+      ],
+      "glosa": "Ingresos de la federación"
+    },
+    {
+      "label": "Diverses",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        7.501273
+      ],
+      "glosa": "Diversos"
+    },
+    {
+      "label": "**Total Ertrag**",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        38.217415
+      ],
+      "glosa": "**Total ingresos**"
+    },
+    {
+      "label": "Personalaufwand",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        25.078668
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Organisationskosten Heimspiele",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        7.835065
+      ],
+      "glosa": "Gastos de organización de partidos en casa"
+    },
+    {
+      "label": "Übriger Spielbetrieb",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        1.847381
+      ],
+      "glosa": "Otros gastos de la actividad deportiva"
+    },
+    {
+      "label": "Leihaufwand, Ausbildungsentschädigungen",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        0.09487
+      ],
+      "glosa": "Gastos por cesiones y compensaciones por formación"
+    },
+    {
+      "label": "Werbung",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        1.099846
+      ],
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Administration",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        0.979456
+      ],
+      "glosa": "Administración"
+    },
+    {
+      "label": "Abschreibungen",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        0.319066
+      ],
+      "glosa": "Amortizaciones"
+    },
+    {
+      "label": "Übriger Aufwand",
+      "lado": "expense",
+      "page": 14,
+      "section": "estado",
+      "values": [
+        1.590286
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
 }

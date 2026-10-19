@@ -1,0 +1,120 @@
+{
+ "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.pdf",
+ "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.md",
+ "mdSha1": "7d2cdc10fd55f7ed4f334c9de6e5ea3daf320df7",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:22:04.449Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 9,
+   "lineas": [
+    191,
+    212
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 10,
+   "lineas": [
+    222,
+    232
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 10,
+   "lineas": [
+    234,
+    251
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 10,
+   "lineas": [
+    259,
+    283
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 11,
+   "lineas": [
+    293,
+    304
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 11,
+   "lineas": [
+    306,
+    327
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    335,
+    365
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    375,
+    384
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [
+  "b4",
+  "b7"
+ ],
+ "notas_gastos": [
+  "b4",
+  "b7"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Beträge in CHF 1’000",
+ "moneda": "CHF",
+ "columna_ejercicio": "2019/2020",
+ "columna_anterior": "2018/2019",
+ "perimetro": "ambos",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se usan las Erfolgsrechnungen individuales de FC St. Gallen AG (b4) y Event AG (b7) como desglose de los renglones de la consolidada (b1)?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "b1 es consolidada con columnas por sociedad y renglones agregados (Erträge brutto); b4 y b7 abren ingresos y gastos por sociedad, pero incluyen la Entschädigung intercompañía.",
+   "bloques": [
+    "b1",
+    "b4",
+    "b7"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga la columna total 2019/2020 de b1 y no las columnas FCSG AG / Event AG?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El encabezado de b1 tiene columnas por sociedad además del total consolidado.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "b1 es la Erfolgsrechnung consolidada (columnas FCSG AG, Event AG y total). b4 es la individual de FC St. Gallen AG y b7 la de FC St. Gallen Event AG; se proponen como desglose. b2,b3,b5,b6 balances y b8 cash flow, excluidos. Ojo con la eliminación intercompañía 'Entschädigung von FCSG Event AG'."
+}

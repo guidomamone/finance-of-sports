@@ -1,0 +1,140 @@
+{
+  "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2018-19.md",
+  "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2018-19.pdf",
+  "club": "stgallen-ch",
+  "year": 2019,
+  "generatedAt": "2026-10-19T15:34:57.329Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Erträge brutto",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        28.001
+      ],
+      "glosa": "Ingresos brutos"
+    },
+    {
+      "label": "Entschädigung von FCSG Event AG",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        6.405
+      ],
+      "glosa": "Compensación de FCSG Event AG"
+    },
+    {
+      "label": "Ertragsminderungen",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
+      "values": [
+        -0.304
+      ],
+      "glosa": "Minoraciones de ingresos"
+    },
+    {
+      "label": "Ausserordentlicher Ertrag",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.713
+      ],
+      "glosa": "Ingresos extraordinarios"
+    },
+    {
+      "label": "Auflösung Rückstellungen",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Reversión de provisiones"
+    },
+    {
+      "label": "Direkte Kosten",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        8.165
+      ],
+      "glosa": "Costes directos"
+    },
+    {
+      "label": "Personalaufwand",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        14.747
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Sonstiger Betriebsaufwand",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        4.145
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Entschädigung an FCSG AG",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        6.405
+      ],
+      "glosa": "Compensación a FCSG AG"
+    },
+    {
+      "label": "Abschreibungen Spielerwerte",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.846
+      ],
+      "glosa": "Amortización de derechos federativos de jugadores"
+    },
+    {
+      "label": "Abschreibungen Sachanlagen",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        1.339
+      ],
+      "glosa": "Amortización del inmovilizado material"
+    },
+    {
+      "label": "Ausserordentlicher Aufwand",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.16
+      ],
+      "glosa": "Gastos extraordinarios"
+    },
+    {
+      "label": "Ausserordentliche Abschreibungen",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        3.999
+      ],
+      "glosa": "Amortizaciones extraordinarias"
+    }
+  ]
+}

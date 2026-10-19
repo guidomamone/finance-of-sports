@@ -1,0 +1,670 @@
+{
+ "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2017-18.pdf",
+ "md": "Clubes/Suiza/Luzern/geschaeftsbericht-2017-18.md",
+ "generado": "2026-10-19T16:03:17.344Z",
+ "estado": "ok",
+ "clubId": "luzern-ch",
+ "year": 2018,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 3.3029134982598407e-15
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2017: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "escalón \"nota exacta en la lectura 6\": \"Matchorganisation\" (L1228) se abre en las 5 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Tranferertrag\" (L1231) se abre en las 2 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Leistungsfussball Nachwuchs\" (L1232) se abre en las 6 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Events\" (L1233) se abre en las 2 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Personalaufwand\" (L1238) se abre en las 9 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Spielbetrieb und Matchorganisation\" (L1239) se abre en las 10 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Transferaufwand\" (L1240) se abre en las 2 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Werbung und Sponsoring\" (L1241) se abre en las 4 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Leistungsfussball Nachwuchs\" (L1242) se abre en las 4 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Events\" (L1243) se abre en las 2 filas de su nota, que suman exacto el renglón",
+  "escalón \"nota exacta en la lectura 6\": \"Administrations- und sonstiger Betriebsaufwand\" (L1246) se abre en las 4 filas de su nota, que suman exacto el renglón",
+  "la lectura base no cerraba; cerró con la lectura 6",
+  "duda de localizar que no afecta la carga: Solo muestran Ertrag/Aufwand/DB1 por sparte, que ya están abiertos en el estado y las notas 15-30.",
+  "duda de extraer ya contestada para el club (antes de su alta) (perimetro, \"Unternehmenserfolg nach Minderheiten\"): aceptar, en geschaeftsbericht-2024-25.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 25.772701,
+  "gastos": 25.598918,
+  "financiero": -0.021761,
+  "impuesto": -0.009246,
+  "resultadoImpreso": 0.142776,
+  "resultadoParaCargar": 0.142776,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Meisterschaft Eintritte",
+   "lado": "ingreso",
+   "M": 3.762557,
+   "pagina": 49,
+   "linea": 1702,
+   "origen": "nota que desglosa \"Matchorganisation\""
+  },
+  {
+   "etiqueta": "Meisterschaft VIP-Eintritte",
+   "lado": "ingreso",
+   "M": 4.194359,
+   "pagina": 49,
+   "linea": 1703,
+   "origen": "nota que desglosa \"Matchorganisation\""
+  },
+  {
+   "etiqueta": "Helvetia Schweizer Cup",
+   "lado": "ingreso",
+   "M": 0.135253,
+   "pagina": 49,
+   "linea": 1704,
+   "origen": "nota que desglosa \"Matchorganisation\""
+  },
+  {
+   "etiqueta": "UEFA Clubwettbewerbe",
+   "lado": "ingreso",
+   "M": 0.969553,
+   "pagina": 49,
+   "linea": 1705,
+   "origen": "nota que desglosa \"Matchorganisation\""
+  },
+  {
+   "etiqueta": "Sonstiges",
+   "lado": "ingreso",
+   "M": 0.005826,
+   "pagina": 49,
+   "linea": 1706,
+   "origen": "nota que desglosa \"Matchorganisation\""
+  },
+  {
+   "etiqueta": "Sponsoring, Werbung",
+   "lado": "ingreso",
+   "M": 5.640671,
+   "pagina": 39,
+   "linea": 1229,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "TV-Entschädigungen Übertragungsrechte",
+   "lado": "ingreso",
+   "M": 2.6325,
+   "pagina": 39,
+   "linea": 1230,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Transferentgelte",
+   "lado": "ingreso",
+   "M": 3.97782,
+   "pagina": 50,
+   "linea": 1749,
+   "origen": "nota que desglosa \"Tranferertrag\""
+  },
+  {
+   "etiqueta": "Ausleihgebühren",
+   "lado": "ingreso",
+   "M": 0.036488,
+   "pagina": 50,
+   "linea": 1750,
+   "origen": "nota que desglosa \"Tranferertrag\""
+  },
+  {
+   "etiqueta": "Sponsoren- und Spendenbeiträge",
+   "lado": "ingreso",
+   "M": 0.570477,
+   "pagina": 50,
+   "linea": 1759,
+   "origen": "nota que desglosa \"Leistungsfussball Nachwuchs\""
+  },
+  {
+   "etiqueta": "SFV-Verbandsbeiträge",
+   "lado": "ingreso",
+   "M": 0.442764,
+   "pagina": 50,
+   "linea": 1760,
+   "origen": "nota que desglosa \"Leistungsfussball Nachwuchs\""
+  },
+  {
+   "etiqueta": "Sport-Toto- und J&S-Entschädigungen",
+   "lado": "ingreso",
+   "M": 0.118205,
+   "pagina": 50,
+   "linea": 1761,
+   "origen": "nota que desglosa \"Leistungsfussball Nachwuchs\""
+  },
+  {
+   "etiqueta": "Ausbildungs- und Materialbeiträge Eltern",
+   "lado": "ingreso",
+   "M": 0.221364,
+   "pagina": 50,
+   "linea": 1762,
+   "origen": "nota que desglosa \"Leistungsfussball Nachwuchs\""
+  },
+  {
+   "etiqueta": "Anlässe (FCL-Fussballcamp, Pfingstmasters)",
+   "lado": "ingreso",
+   "M": 0.20893,
+   "pagina": 50,
+   "linea": 1763,
+   "origen": "nota que desglosa \"Leistungsfussball Nachwuchs\""
+  },
+  {
+   "etiqueta": "Div. Einnahmen",
+   "lado": "ingreso",
+   "M": 0.167243,
+   "pagina": 50,
+   "linea": 1764,
+   "origen": "nota que desglosa \"Leistungsfussball Nachwuchs\""
+  },
+  {
+   "etiqueta": "Konferenzen/Events swissporarena",
+   "lado": "ingreso",
+   "M": 0.445043,
+   "pagina": 50,
+   "linea": 1775,
+   "origen": "nota que desglosa \"Events\""
+  },
+  {
+   "etiqueta": "Grossevents",
+   "lado": "ingreso",
+   "M": 1.122254,
+   "pagina": 50,
+   "linea": 1776,
+   "origen": "nota que desglosa \"Events\""
+  },
+  {
+   "etiqueta": "Merchandising",
+   "lado": "ingreso",
+   "M": 0.350502,
+   "pagina": 39,
+   "linea": 1234,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Sonstiger Betriebsertrag",
+   "lado": "ingreso",
+   "M": 0.208852,
+   "pagina": 39,
+   "linea": 1235,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ausserordentlicher, einmaliger oder periodenfremder Ertrag",
+   "lado": "ingreso",
+   "M": 0.516163,
+   "pagina": 39,
+   "linea": 1256,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Erfolg aus Equity-Beteiligungen",
+   "lado": "ingreso",
+   "M": 0.045877,
+   "pagina": 39,
+   "linea": 1253,
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)"
+  },
+  {
+   "etiqueta": "Personalkosten inkl. Spesen",
+   "lado": "gasto",
+   "M": 6.520325,
+   "pagina": 50,
+   "linea": 1797,
+   "origen": "nota que desglosa \"Personalaufwand\""
+  },
+  {
+   "etiqueta": "Sozialabgaben",
+   "lado": "gasto",
+   "M": 0.524402,
+   "pagina": 50,
+   "linea": 1798,
+   "origen": "nota que desglosa \"Personalaufwand\""
+  },
+  {
+   "etiqueta": "Versicherungsprämien",
+   "lado": "gasto",
+   "M": 0.722317,
+   "pagina": 50,
+   "linea": 1799,
+   "origen": "nota que desglosa \"Personalaufwand\""
+  },
+  {
+   "etiqueta": "Personalkosten inkl. Spesen",
+   "lado": "gasto",
+   "M": 1.790225,
+   "pagina": 50,
+   "linea": 1802,
+   "origen": "nota que desglosa \"Personalaufwand\""
+  },
+  {
+   "etiqueta": "Sozialabgaben",
+   "lado": "gasto",
+   "M": 0.182955,
+   "pagina": 50,
+   "linea": 1803,
+   "origen": "nota que desglosa \"Personalaufwand\""
+  },
+  {
+   "etiqueta": "Personalkosten inkl. Spesen",
+   "lado": "gasto",
+   "M": 2.615425,
+   "pagina": 50,
+   "linea": 1806,
+   "origen": "nota que desglosa \"Personalaufwand\""
+  },
+  {
+   "etiqueta": "Sozialabgaben",
+   "lado": "gasto",
+   "M": 0.330389,
+   "pagina": 50,
+   "linea": 1807,
+   "origen": "nota que desglosa \"Personalaufwand\""
+  },
+  {
+   "etiqueta": "Personalkosten inkl. Spesen",
+   "lado": "gasto",
+   "M": 0.614023,
+   "pagina": 50,
+   "linea": 1810,
+   "origen": "nota que desglosa \"Personalaufwand\""
+  },
+  {
+   "etiqueta": "Sozialabgaben",
+   "lado": "gasto",
+   "M": 0.055559,
+   "pagina": 50,
+   "linea": 1811,
+   "origen": "nota que desglosa \"Personalaufwand\""
+  },
+  {
+   "etiqueta": "Miete und Unterhalt Stadion",
+   "lado": "gasto",
+   "M": 0.86037,
+   "pagina": 51,
+   "linea": 1852,
+   "origen": "nota que desglosa \"Spielbetrieb und Matchorganisation\""
+  },
+  {
+   "etiqueta": "Sicherheitskosten Matchtag (ohne Stewards)",
+   "lado": "gasto",
+   "M": 0.679586,
+   "pagina": 51,
+   "linea": 1853,
+   "origen": "nota que desglosa \"Spielbetrieb und Matchorganisation\""
+  },
+  {
+   "etiqueta": "Abgaben öffentlicher Verkehr",
+   "lado": "gasto",
+   "M": 0.275691,
+   "pagina": 51,
+   "linea": 1854,
+   "origen": "nota que desglosa \"Spielbetrieb und Matchorganisation\""
+  },
+  {
+   "etiqueta": "Medical und Material",
+   "lado": "gasto",
+   "M": 0.412459,
+   "pagina": 51,
+   "linea": 1855,
+   "origen": "nota que desglosa \"Spielbetrieb und Matchorganisation\""
+  },
+  {
+   "etiqueta": "Ticketing und Vorverkaufsgebühren",
+   "lado": "gasto",
+   "M": 0.175281,
+   "pagina": 51,
+   "linea": 1856,
+   "origen": "nota que desglosa \"Spielbetrieb und Matchorganisation\""
+  },
+  {
+   "etiqueta": "Aufwand 1. Mannschaft",
+   "lado": "gasto",
+   "M": 0.551428,
+   "pagina": 51,
+   "linea": 1857,
+   "origen": "nota que desglosa \"Spielbetrieb und Matchorganisation\""
+  },
+  {
+   "etiqueta": "Div. Kosten Spielbetrieb",
+   "lado": "gasto",
+   "M": 0.717292,
+   "pagina": 51,
+   "linea": 1858,
+   "origen": "nota que desglosa \"Spielbetrieb und Matchorganisation\""
+  },
+  {
+   "etiqueta": "VIP-Cateringkosten Spieltag",
+   "lado": "gasto",
+   "M": 1.137009,
+   "pagina": 51,
+   "linea": 1859,
+   "origen": "nota que desglosa \"Spielbetrieb und Matchorganisation\""
+  },
+  {
+   "etiqueta": "Aufwand übriger Spielbetrieb",
+   "lado": "gasto",
+   "M": 0.406675,
+   "pagina": 51,
+   "linea": 1860,
+   "origen": "nota que desglosa \"Spielbetrieb und Matchorganisation\""
+  },
+  {
+   "etiqueta": "Rückvergütungen Lieferanten",
+   "lado": "gasto",
+   "M": -0.375684,
+   "pagina": 51,
+   "linea": 1862,
+   "origen": "nota que desglosa \"Spielbetrieb und Matchorganisation\""
+  },
+  {
+   "etiqueta": "Transferaufwand def. Übertritte",
+   "lado": "gasto",
+   "M": 0.811779,
+   "pagina": 52,
+   "linea": 1881,
+   "origen": "nota que desglosa \"Transferaufwand\""
+  },
+  {
+   "etiqueta": "Ausleih- und Ausbildungsentschädigungen",
+   "lado": "gasto",
+   "M": 0.410826,
+   "pagina": 52,
+   "linea": 1882,
+   "origen": "nota que desglosa \"Transferaufwand\""
+  },
+  {
+   "etiqueta": "Medien, Kommunikation, Inserate",
+   "lado": "gasto",
+   "M": 0.854319,
+   "pagina": 52,
+   "linea": 1892,
+   "origen": "nota que desglosa \"Werbung und Sponsoring\""
+  },
+  {
+   "etiqueta": "Inhouse TV Spieltag",
+   "lado": "gasto",
+   "M": 0.16068,
+   "pagina": 52,
+   "linea": 1893,
+   "origen": "nota que desglosa \"Werbung und Sponsoring\""
+  },
+  {
+   "etiqueta": "LED-Bandenwerbung Produktion",
+   "lado": "gasto",
+   "M": 0.14342,
+   "pagina": 52,
+   "linea": 1894,
+   "origen": "nota que desglosa \"Werbung und Sponsoring\""
+  },
+  {
+   "etiqueta": "Diverses",
+   "lado": "gasto",
+   "M": 0.436345,
+   "pagina": 52,
+   "linea": 1895,
+   "origen": "nota que desglosa \"Werbung und Sponsoring\""
+  },
+  {
+   "etiqueta": "Nachwuchs-Akademie",
+   "lado": "gasto",
+   "M": 0.189682,
+   "pagina": 52,
+   "linea": 1904,
+   "origen": "nota que desglosa \"Leistungsfussball Nachwuchs\""
+  },
+  {
+   "etiqueta": "Anlässe (FCL-Fussballcamp, Pfingstmasters)",
+   "lado": "gasto",
+   "M": 0.150843,
+   "pagina": 52,
+   "linea": 1905,
+   "origen": "nota que desglosa \"Leistungsfussball Nachwuchs\""
+  },
+  {
+   "etiqueta": "Materialkosten",
+   "lado": "gasto",
+   "M": 0.080669,
+   "pagina": 52,
+   "linea": 1906,
+   "origen": "nota que desglosa \"Leistungsfussball Nachwuchs\""
+  },
+  {
+   "etiqueta": "Spielbetrieb und Mannschaftaufwand",
+   "lado": "gasto",
+   "M": 0.34736,
+   "pagina": 52,
+   "linea": 1907,
+   "origen": "nota que desglosa \"Leistungsfussball Nachwuchs\""
+  },
+  {
+   "etiqueta": "Konferenzen/Events",
+   "lado": "gasto",
+   "M": 0.32046,
+   "pagina": 52,
+   "linea": 1916,
+   "origen": "nota que desglosa \"Events\""
+  },
+  {
+   "etiqueta": "Grossevents",
+   "lado": "gasto",
+   "M": 0.399883,
+   "pagina": 52,
+   "linea": 1917,
+   "origen": "nota que desglosa \"Events\""
+  },
+  {
+   "etiqueta": "Merchandising",
+   "lado": "gasto",
+   "M": 0.20543,
+   "pagina": 39,
+   "linea": 1244,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Energie, Wasser und Entsorgung",
+   "lado": "gasto",
+   "M": 0.204571,
+   "pagina": 39,
+   "linea": 1245,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Verwaltungs- und Kommunikationskosten",
+   "lado": "gasto",
+   "M": 0.76424,
+   "pagina": 53,
+   "linea": 1941,
+   "origen": "nota que desglosa \"Administrations- und sonstiger Betriebsaufwand\""
+  },
+  {
+   "etiqueta": "EDV- und Applikationsaufwand",
+   "lado": "gasto",
+   "M": 0.118598,
+   "pagina": 53,
+   "linea": 1942,
+   "origen": "nota que desglosa \"Administrations- und sonstiger Betriebsaufwand\""
+  },
+  {
+   "etiqueta": "Sachversicherungen, Abgaben und Gebühren",
+   "lado": "gasto",
+   "M": 0.045857,
+   "pagina": 53,
+   "linea": 1943,
+   "origen": "nota que desglosa \"Administrations- und sonstiger Betriebsaufwand\""
+  },
+  {
+   "etiqueta": "Sonstiger Betriebsaufwand",
+   "lado": "gasto",
+   "M": 0.007589,
+   "pagina": 53,
+   "linea": 1944,
+   "origen": "nota que desglosa \"Administrations- und sonstiger Betriebsaufwand\""
+  },
+  {
+   "etiqueta": "Abschreibungen mobile Sachanlagen",
+   "lado": "gasto",
+   "M": 0.887455,
+   "pagina": 39,
+   "linea": 1249,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Abschreibungen immaterielle Sachanlagen",
+   "lado": "gasto",
+   "M": 0.580141,
+   "pagina": 39,
+   "linea": 1250,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Ausserordentlicher, einmaliger oder periodenfremder Aufwand",
+   "lado": "gasto",
+   "M": 0.226723,
+   "pagina": 39,
+   "linea": 1255,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Minderheitsanteil am Jahresergebnis",
+   "lado": "gasto",
+   "M": 0.056321,
+   "pagina": 39,
+   "linea": 1260,
+   "origen": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Finanzergebnis",
+   "M": -0.021761,
+   "linea": 1252
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Direkte Steuern",
+   "M": -0.009246,
+   "linea": 1258
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "f859d0ab05ac44fb405c365710c881a9bf628e99",
+  "rango": [
+   1225,
+   1264
+  ],
+  "lineasCargadas": [
+   1702,
+   1703,
+   1704,
+   1705,
+   1706,
+   1229,
+   1230,
+   1749,
+   1750,
+   1759,
+   1760,
+   1761,
+   1762,
+   1763,
+   1764,
+   1775,
+   1776,
+   1234,
+   1235,
+   1256,
+   1253,
+   1797,
+   1798,
+   1799,
+   1802,
+   1803,
+   1806,
+   1807,
+   1810,
+   1811,
+   1852,
+   1853,
+   1854,
+   1855,
+   1856,
+   1857,
+   1858,
+   1859,
+   1860,
+   1862,
+   1881,
+   1882,
+   1892,
+   1893,
+   1894,
+   1895,
+   1904,
+   1905,
+   1906,
+   1907,
+   1916,
+   1917,
+   1244,
+   1245,
+   1941,
+   1942,
+   1943,
+   1944,
+   1249,
+   1250,
+   1255,
+   1260,
+   1252,
+   1258
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 1225 a 1264 del .md):\nL1225: | CHF | Erläuterung | 2017/18 | % | 2016/17 | % |\nL1226: | --- | --- | --- | --- | --- | --- |\nL1227: | **Ertrag** | | | | | |\nL1228: | Matchorganisation | 15 | 9’067’548 | 36,0% | 9’681’501 | 43,9% |\nL1229: | Sponsoring, Werbung | 16 | 5’640’671 | 22,4% | 7’241’207 | 32,8% |\nL1230: | TV-Entschädigungen Übertragungsrechte | 17 | 2’632’500 | 10,4% | 1’402’091 | 6,4% |\nL1231: | Tranferertrag | 18 | 4’014’308 | 15,9% | 539’833 | 2,4% |\nL1232: | Leistungsfussball Nachwuchs | 19 | 1’728’983 | 6,9% | 1’470’803 | 6,7% |\nL1233: | Events | 20 | 1’567’297 | 6,2% | 936’970 | 4,3% |\nL1234: | Merchandising | 21 | 350’502 | 1,4% | 67’127 | 0,3% |\nL1235: | Sonstiger Betriebsertrag | | 208’852 | 0,8% | 713’522 | 3,2% |\nL1236: | Total Ertrag | | 25’210’661 | 100,0% | 22’053’054 | 100,0% |\nL1237: | **Betriebsaufwand** | | | | | |\nL1238: | Personalaufwand | 22 | −13’355’620 | −53,0% | −13’666’133 | −62,0% |\nL1239: | Spielbetrieb und Matchorganisation | 23 | −4’840’107 | −19,3% | −5’283’885 | −23,9% |\nL1240: | Transferaufwand | 24 | −1’222’605 | −4,8% | −784’411 | −3,5% |\nL1241: | Werbung und Sponsoring | 25 | −1’594’764 | −6,3% | −1’520’810 | −6,9% |\nL1242: | Leistungsfussball Nachwuchs | 26 | −768’554 | −3,0% | −706’099 | −3,2% |\nL1243: | Events | 27 | −720’343 | −2,9% | −591’132 | −2,7% |\nL1244: | Merchandising | 28 | −205’430 | −0,8% | −26’178 | −0,1% |\nL1245: | Energie, Wasser und Entsorgung | 29 | −204’571 | −0,8% | −193’780 | −0,9% |\nL1246: | Administrations- und sonstiger Betriebsaufwand | 30 | −936’284 | −3,7% | −834’766 | −3,8% |\nL1247: | Betriebsaufwand vor Abschreibungen | | −23’848’278 | −94,6% | −23’607’194 | −107,0% |\nL1248: | Betriebsergebnis vor Finanzergebnis und Abschreibungen (EBITDA) | | 1’362’383 | 5,4% | −1’554’140 | −7,0% |\nL1249: | Abschreibungen mobile Sachanlagen | 7 | −887’455 | −3,5% | −862’692 | −3,9% |\nL1250: | Abschreibungen immaterielle Sachanlagen | 8 | −580’141 | −2,3% | −357’500 | −1,6% |\nL1251: | Betriebsergebnis vor Finanzergebnis (EBIT) | | −105’213 | −0,4% | −2’774’332 | −12,6% |\nL1252: | Finanzergebnis | 31 | −21’761 | −0,1% | −89’859 | −0,4% |\nL1253: | Erfolg aus Equity-Beteiligungen | 32 | 45’877 | 0,2% | 34’141 | 0,2% |\nL1254: | Betriebsergebnis | | −81’097 | −0,3% | −2’830’050 | −12,8% |\nL1255: | Ausserordentlicher, einmaliger oder periodenfremder Aufwand | 33 | −226’723 | −0,9% | −62’534 | −0,3% |\nL1256: | Ausserordentlicher, einmaliger oder periodenfremder Ertrag | 34 | 516’163 | 2,0% | 562’353 | 2,6% |\nL1257: | Unternehmenserfolg vor Steuern | | 208’343 | 0,8% | −2’330’231 | −10,5% |\nL1258: | Direkte Steuern | | −9’246 | 0,0% | −16’273 | −0,1% |\nL1259: | Unternehmenserfolg vor Minderheiten | | 199’097 | 0,8% | −2’346’504 | −10,6% |\nL1260: | Minderheitsanteil am Jahresergebnis | 35 | −56’321 | −0,2% | 52’127 | 0,2% |\nL1261: | Unternehmenserfolg nach Minderheiten | | 142’776 | 0,6% | −2’294’377 | −10,4% |\nL1263: Finanzbericht 2017/18 | FC LUZERN Gruppe 35\nL1264: 37\n\nLO QUE SE CARGA:\n- ingreso · \"Meisterschaft Eintritte\" · 3.762557 · L1702 (de una nota)\n- ingreso · \"Meisterschaft VIP-Eintritte\" · 4.194359 · L1703 (de una nota)\n- ingreso · \"Helvetia Schweizer Cup\" · 0.135253 · L1704 (de una nota)\n- ingreso · \"UEFA Clubwettbewerbe\" · 0.969553 · L1705 (de una nota)\n- ingreso · \"Sonstiges\" · 0.005826 · L1706 (de una nota)\n- ingreso · \"Sponsoring, Werbung\" · 5.640671 · L1229\n- ingreso · \"TV-Entschädigungen Übertragungsrechte\" · 2.6325 · L1230\n- ingreso · \"Transferentgelte\" · 3.97782 · L1749 (de una nota)\n- ingreso · \"Ausleihgebühren\" · 0.036488 · L1750 (de una nota)\n- ingreso · \"Sponsoren- und Spendenbeiträge\" · 0.570477 · L1759 (de una nota)\n- ingreso · \"SFV-Verbandsbeiträge\" · 0.442764 · L1760 (de una nota)\n- ingreso · \"Sport-Toto- und J&S-Entschädigungen\" · 0.118205 · L1761 (de una nota)\n- ingreso · \"Ausbildungs- und Materialbeiträge Eltern\" · 0.221364 · L1762 (de una nota)\n- ingreso · \"Anlässe (FCL-Fussballcamp, Pfingstmasters)\" · 0.20893 · L1763 (de una nota)\n- ingreso · \"Div. Einnahmen\" · 0.167243 · L1764 (de una nota)\n- ingreso · \"Konferenzen/Events swissporarena\" · 0.445043 · L1775 (de una nota)\n- ingreso · \"Grossevents\" · 1.122254 · L1776 (de una nota)\n- ingreso · \"Merchandising\" · 0.350502 · L1234\n- ingreso · \"Sonstiger Betriebsertrag\" · 0.208852 · L1235\n- ingreso · \"Ausserordentlicher, einmaliger oder periodenfremder Ertrag\" · 0.516163 · L1256\n- ingreso · \"Erfolg aus Equity-Beteiligungen\" · 0.045877 · L1253\n- gasto · \"Personalkosten inkl. Spesen\" · 6.520325 · L1797 (de una nota)\n- gasto · \"Sozialabgaben\" · 0.524402 · L1798 (de una nota)\n- gasto · \"Versicherungsprämien\" · 0.722317 · L1799 (de una nota)\n- gasto · \"Personalkosten inkl. Spesen\" · 1.790225 · L1802 (de una nota)\n- gasto · \"Sozialabgaben\" · 0.182955 · L1803 (de una nota)\n- gasto · \"Personalkosten inkl. Spesen\" · 2.615425 · L1806 (de una nota)\n- gasto · \"Sozialabgaben\" · 0.330389 · L1807 (de una nota)\n- gasto · \"Personalkosten inkl. Spesen\" · 0.614023 · L1810 (de una nota)\n- gasto · \"Sozialabgaben\" · 0.055559 · L1811 (de una nota)\n- gasto · \"Miete und Unterhalt Stadion\" · 0.86037 · L1852 (de una nota)\n- gasto · \"Sicherheitskosten Matchtag (ohne Stewards)\" · 0.679586 · L1853 (de una nota)\n- gasto · \"Abgaben öffentlicher Verkehr\" · 0.275691 · L1854 (de una nota)\n- gasto · \"Medical und Material\" · 0.412459 · L1855 (de una nota)\n- gasto · \"Ticketing und Vorverkaufsgebühren\" · 0.175281 · L1856 (de una nota)\n- gasto · \"Aufwand 1. Mannschaft\" · 0.551428 · L1857 (de una nota)\n- gasto · \"Div. Kosten Spielbetrieb\" · 0.717292 · L1858 (de una nota)\n- gasto · \"VIP-Cateringkosten Spieltag\" · 1.137009 · L1859 (de una nota)\n- gasto · \"Aufwand übriger Spielbetrieb\" · 0.406675 · L1860 (de una nota)\n- gasto · \"Rückvergütungen Lieferanten\" · -0.375684 · L1862 (de una nota)\n- gasto · \"Transferaufwand def. Übertritte\" · 0.811779 · L1881 (de una nota)\n- gasto · \"Ausleih- und Ausbildungsentschädigungen\" · 0.410826 · L1882 (de una nota)\n- gasto · \"Medien, Kommunikation, Inserate\" · 0.854319 · L1892 (de una nota)\n- gasto · \"Inhouse TV Spieltag\" · 0.16068 · L1893 (de una nota)\n- gasto · \"LED-Bandenwerbung Produktion\" · 0.14342 · L1894 (de una nota)\n- gasto · \"Diverses\" · 0.436345 · L1895 (de una nota)\n- gasto · \"Nachwuchs-Akademie\" · 0.189682 · L1904 (de una nota)\n- gasto · \"Anlässe (FCL-Fussballcamp, Pfingstmasters)\" · 0.150843 · L1905 (de una nota)\n- gasto · \"Materialkosten\" · 0.080669 · L1906 (de una nota)\n- gasto · \"Spielbetrieb und Mannschaftaufwand\" · 0.34736 · L1907 (de una nota)\n- gasto · \"Konferenzen/Events\" · 0.32046 · L1916 (de una nota)\n- gasto · \"Grossevents\" · 0.399883 · L1917 (de una nota)\n- gasto · \"Merchandising\" · 0.20543 · L1244\n- gasto · \"Energie, Wasser und Entsorgung\" · 0.204571 · L1245\n- gasto · \"Verwaltungs- und Kommunikationskosten\" · 0.76424 · L1941 (de una nota)\n- gasto · \"EDV- und Applikationsaufwand\" · 0.118598 · L1942 (de una nota)\n- gasto · \"Sachversicherungen, Abgaben und Gebühren\" · 0.045857 · L1943 (de una nota)\n- gasto · \"Sonstiger Betriebsaufwand\" · 0.007589 · L1944 (de una nota)\n- gasto · \"Abschreibungen mobile Sachanlagen\" · 0.887455 · L1249\n- gasto · \"Abschreibungen immaterielle Sachanlagen\" · 0.580141 · L1250\n- gasto · \"Ausserordentlicher, einmaliger oder periodenfremder Aufwand\" · 0.226723 · L1255\n- gasto · \"Minderheitsanteil am Jahresergebnis\" · 0.056321 · L1260\n- financiero · \"Finanzergebnis\" · -0.021761 · L1252\n- impuesto · \"Direkte Steuern\" · -0.009246 · L1258"
+ }
+}

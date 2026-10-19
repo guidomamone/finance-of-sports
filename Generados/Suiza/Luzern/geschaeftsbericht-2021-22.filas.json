@@ -1,0 +1,1069 @@
+{
+ "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2021-22.pdf",
+ "md": "Clubes/Suiza/Luzern/geschaeftsbericht-2021-22.md",
+ "mdSha1": "daeb530e85aa3457134042be7dab264c5a8824bd",
+ "ubicacionSha1": "c2ab7da2ab6e5923557f112e05046a179a280154",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:55:31.390Z",
+ "ubicacion": {
+  "estado": [
+   "b32"
+  ],
+  "notas_ingresos": [
+   "b53",
+   "b55",
+   "b56"
+  ],
+  "notas_gastos": [
+   "b57",
+   "b60",
+   "b61",
+   "b62",
+   "b63",
+   "b65"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b32",
+   "escala": "unidades",
+   "evidencia": "L3266: encabezado 'CHF'"
+  },
+  {
+   "bloque": "b53",
+   "escala": "unidades",
+   "evidencia": "L4103: 'CHF'"
+  },
+  {
+   "bloque": "b55",
+   "escala": "unidades",
+   "evidencia": "L4151: 'CHF'"
+  },
+  {
+   "bloque": "b56",
+   "escala": "unidades",
+   "evidencia": "L4164: 'CHF'"
+  },
+  {
+   "bloque": "b57",
+   "escala": "unidades",
+   "evidencia": "L4187: 'CHF'"
+  },
+  {
+   "bloque": "b60",
+   "escala": "unidades",
+   "evidencia": "L4285: 'CHF'"
+  },
+  {
+   "bloque": "b61",
+   "escala": "unidades",
+   "evidencia": "L4334: 'CHF'"
+  },
+  {
+   "bloque": "b62",
+   "escala": "unidades",
+   "evidencia": "L4362: 'CHF'"
+  },
+  {
+   "bloque": "b63",
+   "escala": "unidades",
+   "evidencia": "L4385: 'CHF'"
+  },
+  {
+   "bloque": "b65",
+   "escala": "unidades",
+   "evidencia": "L4435: 'CHF'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b32",
+   "linea": 3269,
+   "etiqueta": "Matchorganisation",
+   "actual": "9’120’220",
+   "anterior": "5’991’238",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3270,
+   "etiqueta": "Sponsoring, Werbung",
+   "actual": "5’781’113",
+   "anterior": "4’685’083",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3271,
+   "etiqueta": "TV-Entschädigungen Übertragungsrechte",
+   "actual": "2’031’959",
+   "anterior": "2’724’291",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3272,
+   "etiqueta": "Transferertrag",
+   "actual": "4’347’695",
+   "anterior": "1’272’249",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3273,
+   "etiqueta": "Leistungsfussball Nachwuchs",
+   "actual": "2’339’545",
+   "anterior": "1’913’608",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3274,
+   "etiqueta": "Events",
+   "actual": "788’032",
+   "anterior": "149’543",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3275,
+   "etiqueta": "Merchandising",
+   "actual": "417’153",
+   "anterior": "272’097",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3276,
+   "etiqueta": "Sonstiger Betriebsertrag",
+   "actual": "681’208",
+   "anterior": "864’363",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3277,
+   "etiqueta": "Total Ertrag",
+   "actual": "25’506’925",
+   "anterior": "17’872’472",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3279,
+   "etiqueta": "Personalaufwand",
+   "actual": "−15’505’442",
+   "anterior": "−12’880’840",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3280,
+   "etiqueta": "Spielbetrieb und Matchorganisation",
+   "actual": "−5’595’057",
+   "anterior": "−2’420’337",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3281,
+   "etiqueta": "Transferaufwand",
+   "actual": "−1’940’664",
+   "anterior": "−1’333’844",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3282,
+   "etiqueta": "Werbung und Sponsoring",
+   "actual": "−1’739’183",
+   "anterior": "−1’554’857",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3283,
+   "etiqueta": "Leistungsfussball Nachwuchs",
+   "actual": "−652’447",
+   "anterior": "−773’049",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3284,
+   "etiqueta": "Events",
+   "actual": "−517’353",
+   "anterior": "−59’189",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3285,
+   "etiqueta": "Merchandising",
+   "actual": "−319’031",
+   "anterior": "−83’609",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3286,
+   "etiqueta": "Energie, Wasser und Entsorgung",
+   "actual": "−226’676",
+   "anterior": "−170’286",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3287,
+   "etiqueta": "Administrations- und sonstiger Betriebsaufwand",
+   "actual": "−1’044’238",
+   "anterior": "−1’062’204",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3288,
+   "etiqueta": "Betriebsaufwand vor Abschreibungen",
+   "actual": "−27’540’091",
+   "anterior": "−20’338’215",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3289,
+   "etiqueta": "Betriebsergebnis vor Finanzergebnis und Abschreibungen (EBITDA)",
+   "actual": "−2’033’166",
+   "anterior": "−2’465’743",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3290,
+   "etiqueta": "Abschreibungen mobile Sachanlagen",
+   "actual": "−215’642 *",
+   "anterior": "−173’914",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3291,
+   "etiqueta": "Abschreibungen immaterielle Sachanlagen",
+   "actual": "−1’933’710",
+   "anterior": "−1’425’507",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3292,
+   "etiqueta": "Betriebsergebnis vor Finanzergebnis (EBIT)",
+   "actual": "−4’182’518",
+   "anterior": "−4’065’164",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3293,
+   "etiqueta": "Finanzergebnis",
+   "actual": "−219’077",
+   "anterior": "21’726",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3294,
+   "etiqueta": "Erfolg aus Equity-Beteiligungen",
+   "actual": "52’113",
+   "anterior": "13’349",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3295,
+   "etiqueta": "Betriebsergebnis",
+   "actual": "−4’349’482",
+   "anterior": "−4’030’089",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3296,
+   "etiqueta": "Ausserordentlicher, einmaliger oder periodenfremder Aufwand",
+   "actual": "−19’187",
+   "anterior": "−13’573",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3297,
+   "etiqueta": "Ausserordentlicher, einmaliger oder periodenfremder Ertrag",
+   "actual": "1’114’411",
+   "anterior": "668’119",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3298,
+   "etiqueta": "Unternehmenserfolg vor Steuern",
+   "actual": "−3’254’258",
+   "anterior": "−3’375’543",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3299,
+   "etiqueta": "Direkte Steuern",
+   "actual": "−11’923",
+   "anterior": "−6’932",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3300,
+   "etiqueta": "Unternehmenserfolg vor Minderheiten",
+   "actual": "−3’266’181",
+   "anterior": "−3’382’475",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3301,
+   "etiqueta": "Minderheitsanteil am Jahresergebnis",
+   "actual": "42’165",
+   "anterior": "91’502",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b32",
+   "linea": 3302,
+   "etiqueta": "Unternehmenserfolg nach Minderheiten",
+   "actual": "−3’224’016",
+   "anterior": "−3’290’973",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b53",
+   "linea": 4105,
+   "etiqueta": "Sponsoren- und Spendenbeiträge",
+   "actual": "873’149",
+   "anterior": "643’542",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Leistungsfussball Nachwuchs"
+  },
+  {
+   "bloque": "b53",
+   "linea": 4106,
+   "etiqueta": "SFV-Verbandsbeiträge",
+   "actual": "534’736",
+   "anterior": "526’188",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Leistungsfussball Nachwuchs"
+  },
+  {
+   "bloque": "b53",
+   "linea": 4107,
+   "etiqueta": "Sport Toto- und J+S-Entschädigungen",
+   "actual": "154’140",
+   "anterior": "155’901",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Leistungsfussball Nachwuchs"
+  },
+  {
+   "bloque": "b53",
+   "linea": 4108,
+   "etiqueta": "Ausbildungs- und Materialbeiträge Eltern",
+   "actual": "300’327",
+   "anterior": "333’834",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Leistungsfussball Nachwuchs"
+  },
+  {
+   "bloque": "b53",
+   "linea": 4109,
+   "etiqueta": "Anlässe (FCL-Fussballcamp, Pfingst Masters)",
+   "actual": "225’068",
+   "anterior": "108’133",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Leistungsfussball Nachwuchs"
+  },
+  {
+   "bloque": "b53",
+   "linea": 4110,
+   "etiqueta": "Diverse Einnahmen",
+   "actual": "252’125",
+   "anterior": "146’010",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Leistungsfussball Nachwuchs"
+  },
+  {
+   "bloque": "b53",
+   "linea": 4111,
+   "etiqueta": "Total Einnahmen Nachwuchs",
+   "actual": "2’339’545",
+   "anterior": "1’913’608",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Leistungsfussball Nachwuchs"
+  },
+  {
+   "bloque": "b55",
+   "linea": 4153,
+   "etiqueta": "Fanshop Präsenzgeschäft",
+   "actual": "325’898",
+   "anterior": "121’454",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Merchandising"
+  },
+  {
+   "bloque": "b55",
+   "linea": 4154,
+   "etiqueta": "Onlineshop, Distanzgeschäft",
+   "actual": "91’255",
+   "anterior": "150’643",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Merchandising"
+  },
+  {
+   "bloque": "b55",
+   "linea": 4155,
+   "etiqueta": "Total Ertrag Merchandising",
+   "actual": "417’153",
+   "anterior": "272’097",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Merchandising"
+  },
+  {
+   "bloque": "b56",
+   "linea": 4166,
+   "etiqueta": "Ausmietung Stewards",
+   "actual": "364’474",
+   "anterior": "21’410",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Sonstiger Betriebsertrag"
+  },
+  {
+   "bloque": "b56",
+   "linea": 4167,
+   "etiqueta": "Anpassung Delkredere",
+   "actual": "71’401",
+   "anterior": "-48’748",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Sonstiger Betriebsertrag"
+  },
+  {
+   "bloque": "b56",
+   "linea": 4168,
+   "etiqueta": "Swiss-Olympic-Stabilisierungspaket",
+   "actual": "162’499",
+   "anterior": "840’475",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Sonstiger Betriebsertrag"
+  },
+  {
+   "bloque": "b56",
+   "linea": 4169,
+   "etiqueta": "Sonstiges",
+   "actual": "82’834",
+   "anterior": "51’226",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Sonstiger Betriebsertrag"
+  },
+  {
+   "bloque": "b56",
+   "linea": 4170,
+   "etiqueta": "Total sonstiger Betriebsertrag",
+   "actual": "681’208",
+   "anterior": "864’363",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Sonstiger Betriebsertrag"
+  },
+  {
+   "bloque": "b57",
+   "linea": 4190,
+   "etiqueta": "Personalkosten inkl. Spesen",
+   "actual": "7’496’131",
+   "anterior": "6’619’107",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personalaufwand"
+  },
+  {
+   "bloque": "b57",
+   "linea": 4191,
+   "etiqueta": "Sozialabgaben",
+   "actual": "703’214",
+   "anterior": "590’755",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personalaufwand"
+  },
+  {
+   "bloque": "b57",
+   "linea": 4192,
+   "etiqueta": "Versicherungsprämien",
+   "actual": "831’444",
+   "anterior": "722’571",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personalaufwand"
+  },
+  {
+   "bloque": "b57",
+   "linea": 4193,
+   "etiqueta": "Total",
+   "actual": "9’030’789",
+   "anterior": "7’932’433",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Personalaufwand"
+  },
+  {
+   "bloque": "b57",
+   "linea": 4195,
+   "etiqueta": "Personalkosten inkl. Spesen",
+   "actual": "2’169’966",
+   "anterior": "1’796’886",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personalaufwand"
+  },
+  {
+   "bloque": "b57",
+   "linea": 4196,
+   "etiqueta": "Sozialabgaben",
+   "actual": "479’109",
+   "anterior": "314’198",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personalaufwand"
+  },
+  {
+   "bloque": "b57",
+   "linea": 4197,
+   "etiqueta": "Total",
+   "actual": "2’649’075",
+   "anterior": "2’111’084",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Personalaufwand"
+  },
+  {
+   "bloque": "b57",
+   "linea": 4199,
+   "etiqueta": "Personalkosten inkl. Spesen",
+   "actual": "2’763’675",
+   "anterior": "2’415’110",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personalaufwand"
+  },
+  {
+   "bloque": "b57",
+   "linea": 4200,
+   "etiqueta": "Sozialabgaben",
+   "actual": "360’950",
+   "anterior": "292’112",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personalaufwand"
+  },
+  {
+   "bloque": "b57",
+   "linea": 4201,
+   "etiqueta": "Total",
+   "actual": "3’124’625",
+   "anterior": "2’707’222",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Personalaufwand"
+  },
+  {
+   "bloque": "b57",
+   "linea": 4203,
+   "etiqueta": "Personalkosten inkl. Spesen",
+   "actual": "644’267",
+   "anterior": "118’823",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personalaufwand"
+  },
+  {
+   "bloque": "b57",
+   "linea": 4204,
+   "etiqueta": "Sozialabgaben",
+   "actual": "56’686",
+   "anterior": "11’278",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personalaufwand"
+  },
+  {
+   "bloque": "b57",
+   "linea": 4205,
+   "etiqueta": "Total",
+   "actual": "700’953",
+   "anterior": "130’101",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Personalaufwand"
+  },
+  {
+   "bloque": "b57",
+   "linea": 4206,
+   "etiqueta": "Total Personalaufwand",
+   "actual": "15’505’442",
+   "anterior": "12’880’840",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Personalaufwand"
+  },
+  {
+   "bloque": "b60",
+   "linea": 4287,
+   "etiqueta": "Miete und Unterhalt Stadion",
+   "actual": "1’278’822",
+   "anterior": "1’008’408",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Spielbetrieb und Matchorganisation"
+  },
+  {
+   "bloque": "b60",
+   "linea": 4288,
+   "etiqueta": "Sicherheitskosten Matchtag (ohne Stewards)",
+   "actual": "721’009",
+   "anterior": "108’096",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Spielbetrieb und Matchorganisation"
+  },
+  {
+   "bloque": "b60",
+   "linea": 4289,
+   "etiqueta": "Abgaben öffentlicher Verkehr",
+   "actual": "316’888",
+   "anterior": "0",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Spielbetrieb und Matchorganisation"
+  },
+  {
+   "bloque": "b60",
+   "linea": 4290,
+   "etiqueta": "Medical und Material",
+   "actual": "521’338",
+   "anterior": "311’312",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Spielbetrieb und Matchorganisation"
+  },
+  {
+   "bloque": "b60",
+   "linea": 4291,
+   "etiqueta": "Ticketing und Vorverkaufsgebühren",
+   "actual": "239’817",
+   "anterior": "47’701",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Spielbetrieb und Matchorganisation"
+  },
+  {
+   "bloque": "b60",
+   "linea": 4292,
+   "etiqueta": "Aufwand 1. Mannschaft",
+   "actual": "456’849",
+   "anterior": "350’681",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Spielbetrieb und Matchorganisation"
+  },
+  {
+   "bloque": "b60",
+   "linea": 4293,
+   "etiqueta": "Diverse Kosten Spielbetrieb",
+   "actual": "678’458",
+   "anterior": "386’679",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Spielbetrieb und Matchorganisation"
+  },
+  {
+   "bloque": "b60",
+   "linea": 4294,
+   "etiqueta": "VIP-Cateringkosten Spieltag",
+   "actual": "1’418’952",
+   "anterior": "64’233",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Spielbetrieb und Matchorganisation"
+  },
+  {
+   "bloque": "b60",
+   "linea": 4295,
+   "etiqueta": "Aufwand übriger Spielbetrieb",
+   "actual": "337’317",
+   "anterior": "118’426",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Spielbetrieb und Matchorganisation"
+  },
+  {
+   "bloque": "b60",
+   "linea": 4296,
+   "etiqueta": "Total brutto",
+   "actual": "5’969’450",
+   "anterior": "2’395’536",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Spielbetrieb und Matchorganisation"
+  },
+  {
+   "bloque": "b60",
+   "linea": 4297,
+   "etiqueta": "Rückvergütungen Lieferanten",
+   "actual": "-374’393",
+   "anterior": "24’801",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Spielbetrieb und Matchorganisation"
+  },
+  {
+   "bloque": "b60",
+   "linea": 4298,
+   "etiqueta": "Total netto",
+   "actual": "5’595’057",
+   "anterior": "2’420’337",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Spielbetrieb und Matchorganisation"
+  },
+  {
+   "bloque": "b61",
+   "linea": 4336,
+   "etiqueta": "Transferaufwand def. Übertritte",
+   "actual": "887’789",
+   "anterior": "553’813",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Transferaufwand"
+  },
+  {
+   "bloque": "b61",
+   "linea": 4337,
+   "etiqueta": "Spielvermittlungen und Beratungen",
+   "actual": "921’500",
+   "anterior": "584’806",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Transferaufwand"
+  },
+  {
+   "bloque": "b61",
+   "linea": 4338,
+   "etiqueta": "Ausleih- und Ausbildungsentschädigungen",
+   "actual": "131’375",
+   "anterior": "195’225",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Transferaufwand"
+  },
+  {
+   "bloque": "b61",
+   "linea": 4339,
+   "etiqueta": "Total",
+   "actual": "1’940’664",
+   "anterior": "1’333’844",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Transferaufwand"
+  },
+  {
+   "bloque": "b62",
+   "linea": 4364,
+   "etiqueta": "Medien, Kommunikation, Inserate",
+   "actual": "938’368",
+   "anterior": "913’497",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Werbung und Sponsoring"
+  },
+  {
+   "bloque": "b62",
+   "linea": 4365,
+   "etiqueta": "Inhouse TV Spieltag",
+   "actual": "161’010",
+   "anterior": "112’777",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Werbung und Sponsoring"
+  },
+  {
+   "bloque": "b62",
+   "linea": 4366,
+   "etiqueta": "LED-Bandenwerbung Produktion",
+   "actual": "211’443",
+   "anterior": "206’490",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Werbung und Sponsoring"
+  },
+  {
+   "bloque": "b62",
+   "linea": 4367,
+   "etiqueta": "Diverses",
+   "actual": "428’362",
+   "anterior": "322’093",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Werbung und Sponsoring"
+  },
+  {
+   "bloque": "b62",
+   "linea": 4368,
+   "etiqueta": "Total",
+   "actual": "1’739’183",
+   "anterior": "1’554’857",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Werbung und Sponsoring"
+  },
+  {
+   "bloque": "b63",
+   "linea": 4387,
+   "etiqueta": "Nachwuchs-Akademie",
+   "actual": "177’219",
+   "anterior": "168’984",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Leistungsfussball Nachwuchs"
+  },
+  {
+   "bloque": "b63",
+   "linea": 4388,
+   "etiqueta": "Anlässe (FCL-Fussballcamp, Pfingstmaster)",
+   "actual": "69’732",
+   "anterior": "48’320",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Leistungsfussball Nachwuchs"
+  },
+  {
+   "bloque": "b63",
+   "linea": 4389,
+   "etiqueta": "Materialkosten",
+   "actual": "41’799",
+   "anterior": "346’767",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Leistungsfussball Nachwuchs"
+  },
+  {
+   "bloque": "b63",
+   "linea": 4390,
+   "etiqueta": "Spielbetrieb und Mannschaftsaufwand",
+   "actual": "363’697",
+   "anterior": "208’978",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Leistungsfussball Nachwuchs"
+  },
+  {
+   "bloque": "b63",
+   "linea": 4391,
+   "etiqueta": "Total",
+   "actual": "652’447",
+   "anterior": "773’049",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Leistungsfussball Nachwuchs"
+  },
+  {
+   "bloque": "b65",
+   "linea": 4437,
+   "etiqueta": "Verwaltungsaufwand",
+   "actual": "328’202",
+   "anterior": "294’634",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrations- und sonstiger Betriebsaufwand"
+  },
+  {
+   "bloque": "b65",
+   "linea": 4438,
+   "etiqueta": "IT, Telefon, Internet und Applikationen",
+   "actual": "355’830",
+   "anterior": "442’247",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrations- und sonstiger Betriebsaufwand"
+  },
+  {
+   "bloque": "b65",
+   "linea": 4439,
+   "etiqueta": "Sachversicherungen, Abgaben und Gebühren",
+   "actual": "58’818",
+   "anterior": "85’061",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrations- und sonstiger Betriebsaufwand"
+  },
+  {
+   "bloque": "b65",
+   "linea": 4440,
+   "etiqueta": "Fahrzeug/Treibstoff",
+   "actual": "212’024",
+   "anterior": "200’272",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrations- und sonstiger Betriebsaufwand"
+  },
+  {
+   "bloque": "b65",
+   "linea": 4441,
+   "etiqueta": "Sonstiger Betriebsaufwand",
+   "actual": "89’364",
+   "anterior": "39’990",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrations- und sonstiger Betriebsaufwand"
+  },
+  {
+   "bloque": "b65",
+   "linea": 4442,
+   "etiqueta": "Total",
+   "actual": "1’044’238",
+   "anterior": "1’062’204",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Administrations- und sonstiger Betriebsaufwand"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 3277,
+  "actual": "25’506’925"
+ },
+ "total_gastos": {
+  "linea": 3288,
+  "actual": "−27’540’091"
+ },
+ "resultado": {
+  "linea": 3302,
+  "actual": "−3’224’016",
+  "anterior": "−3’290’973"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el importe de 'Abschreibungen mobile Sachanlagen' (L3290) como −215’642, ignorando el asterisco '*'?",
+   "propuesta": "sí",
+   "tema": "fila-ilegible",
+   "renglon": "Abschreibungen mobile Sachanlagen",
+   "texto": "L3290 trae '−215’642 *' con un asterisco de nota no explicada en el bloque.",
+   "bloques": [
+    "b32"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se toma como resultado del ejercicio 'Unternehmenserfolg nach Minderheiten' (L3302) en lugar de 'Unternehmenserfolg vor Minderheiten' (L3300)?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Unternehmenserfolg nach Minderheiten",
+   "texto": "Hay dos resultados finales (antes y después de minoritarios, L3300 y L3302).",
+   "bloques": [
+    "b32"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga 'Rückvergütungen Lieferanten' 2020/21 (L4297) como 24’801 positivo tal como está impreso, aunque el total netto (2’420’337) solo cuadra sumándolo?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Rückvergütungen Lieferanten",
+   "texto": "En L4297 el signo del año anterior es inverso al del actual; el total cuadra igual, pero el sentido del reintegro es inconsistente.",
+   "bloques": [
+    "b60"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado en CHF (unidades); gastos con signo negativo en el estado y positivo en las notas. Notas de ingresos solo para Nachwuchs, Merchandising y Sonstiger Betriebsertrag; las notas de gastos de Events, Merchandising, Energie no vienen. Los gastos del estado L3279-L3287 suman 27’540’091 = total L3288. En b57 los 'Total' de cada sección (1. Mannschaft, Nachwuchs, Geschäftsstelle, Stewards) son subtotales por área."
+}

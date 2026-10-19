@@ -1,0 +1,90 @@
+{
+  "md": "Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2023-2024.md",
+  "pdf": "Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2023-2024.pdf",
+  "club": "goaheadeagles-nl",
+  "year": 2024,
+  "generatedAt": "2026-10-19T15:34:59.166Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Netto-omzet",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        13.976372
+      ],
+      "glosa": "Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "resultaat vergoedingssommen",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        0.622922
+      ],
+      "glosa": "Resultado por traspasos de jugadores"
+    },
+    {
+      "label": "inkoopwaarde van de omzet",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        0.660942
+      ],
+      "glosa": "Coste de las ventas"
+    },
+    {
+      "label": "Lonen en Salarissen",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        6.285817
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Sociale lasten",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        0.729842
+      ],
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Pensionlasten",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        0.034604
+      ],
+      "glosa": "Gastos por pensiones"
+    },
+    {
+      "label": "Afschrijvingen op immateriële, materiële vaste activa",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        0.804768
+      ],
+      "glosa": "Amortización del inmovilizado intangible y material"
+    },
+    {
+      "label": "Overige bedrijfskosten",
+      "lado": "expense",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        5.642719
+      ],
+      "glosa": "Otros gastos de explotación"
+    }
+  ]
+}
