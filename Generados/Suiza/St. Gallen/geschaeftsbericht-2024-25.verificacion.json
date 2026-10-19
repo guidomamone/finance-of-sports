@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.pdf",
  "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.md",
- "generado": "2026-10-19T01:03:23.077Z",
+ "generado": "2026-10-19T01:15:28.459Z",
  "estado": "ok",
  "clubId": null,
  "year": 2025,
@@ -84,6 +84,18 @@
    "reemplaza": "Entschädigung an FCSG AG",
    "motivo": "transferencia intercompany que se anula en la consolidación; espejo de L268 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
    "evidencia": ".md L268-269",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.pdf",
+   "campo": "incluye",
+   "valor": "broadcasting",
+   "linea": null,
+   "categoria": "other_income",
+   "posible": true,
+   "motivo": "la TV de la Swiss Football League está dentro de 'Diverse Erträge inklusive Swiss Football League' (9.512 mil CHF, L327), mezclada con premios UEFA; pregunta al club en dudas-por-club (Claude 2026-10-19)",
+   "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-19"
   }
