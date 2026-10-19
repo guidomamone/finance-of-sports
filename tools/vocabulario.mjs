@@ -676,6 +676,9 @@ export const TOTAL_FIN_RE = compilar(T('TOTAL_FIN'), 'fin');
 // (to-do 212) signo de una fila del financiero por su rótulo; se prueban sobre normalizar(etiqueta)
 export const FIN_INGRESO_RE = compilar(T('FIN_INGRESO'));
 export const FIN_GASTO_RE = compilar(T('FIN_GASTO'));
+// (to-do 298 ah) Cobertura de pérdidas de un socio o del holding: no es un ingreso operativo. La usan verificar.mjs (cuenta en el resultado, fuera de
+// ingresos y gastos) y cargar.mjs (la carga como exceptional_items, una ganancia dentro de los gastos, como la venta del 20% de Goiás 2023).
+export const COBERTURA_PERDIDAS_RE = /verlustabdeckung|verlustübernahme|verlustuebernahme|verlustausgleich|cobertura de p[eé]rdidas|cobertura de pr[eé]juízo|copertura (delle )?perdite/i;
 export const DE_LOS_CUALES_RE = compilar(T('DE_LOS_CUALES'), 'inicio');
 export const TOTAL_RE = new RegExp(`${TOTAL_INICIO_RE.source}|${TOTAL_FIN_RE.source}`, 'u');
 export const esTotal = (etiqueta) => TOTAL_RE.test(normalizar(etiqueta));

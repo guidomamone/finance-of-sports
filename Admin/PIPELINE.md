@@ -411,6 +411,9 @@ Mitigaciones:
             (que detallan_a él) que suman su importe cuenta como componente: las hijas no están en la lista de renglones y sin esto "Total Ertrag" de Basel (38,2 M) se contaba además de
             sus componentes (ingresos 76,4 M). Medido en 725 documentos (los 722 de la lista de prueba más los 3 Basel): 722 idénticos; cambian Basel 2005, 2009 y 2012 (siguen en cola por la
             fila "Verlustabdeckung", otro tema). La primera versión, que tocaba también los escalones previos, cambiaba Parma 2016, Sassuolo 2018 y Milan 2020-21: no entró
+            To-do 298 ah (cobertura de pérdidas): una fila SIN LADO cuyo rótulo dice "cobertura de pérdidas" (`COBERTURA_PERDIDAS_RE` en `tools/vocabulario.mjs`: Verlustabdeckung, Verlustübernahme, Verlustausgleich…) no es un ingreso
+            operativo (Guido): en verificar cuenta en el resultado como el financiero, fuera de ingresos y gastos; en cargar va como `exceptional_items` (ganancia dentro de los gastos, como la venta del 20% de Goiás 2023), no en netInterest.
+            Basel 2005: ingresos 38,217415 (= Total Ertrag), gastos 38,844639, resultado 0,101193, netInterest 0,263711 (cola → ok). Solo Basel 2005, 2006 (en 0, se ignora) y 2009 tienen esa fila en todo el proyecto.
             To-do 232 m, ESCALÓN "presentación distinta": si el año vecino da distinto y la diferencia es exactamente UNA fila de gasto (no un
             total) de uno de los dos documentos, el chequeo queda sin decidir (uno la netea), sin casos en la cola. Olympiacos 2020/2021,
             Cuiabá 2022/2023; medido en los 112 casos de año vecino de la cola: 5 aciertos, 0 errores
