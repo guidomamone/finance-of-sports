@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 830 — Basel completo y tres mejoras de la 323 (2026-10-19)
+
+* Basel: caja (sin deuda en ningún año) y presidentes en `data/gestiones/ch.js` (324 cerrado). St. Gallen: 3 casos de la cola.
+* 323 a (`lote.mjs --reintentar` suma Mistral, localizar y extraer en el total del ensayo), e (`verificar.mjs` cierra la duda de perímetro
+  con un solo estado y ningún otro documento del mismo cierre) y f (`alta-club.mjs`: nombre legal en singular, Harlequins). La c no se
+  hace: va a `Admin/HALLAZGOS-pipeline.md`.
+
 ## Versión 829 — Basel 2005-2020 y cuatro arreglos de script (2026-10-19)
 
 * Basel 2005-2020 (FC Basel 1893 AG): `localizar.mjs` elige el estado de resultados de la entidad del club; la cobertura de pérdidas y
