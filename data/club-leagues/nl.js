@@ -29,4 +29,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'vvvvenlo-nl': { 2025: 'nl-eerstedivisie' },
   'degraafschap-nl': { 2022: 'nl-eerstedivisie' },
   'fceindhoven-nl': { 2025: 'nl-eerstedivisie' },
+  'fcgroningen-nl': { 2025: 'nl-eredivisie' },
 });
