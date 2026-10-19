@@ -10,6 +10,8 @@ Object.assign(window.CLUB_GESTIONES, {
       fuente:'https://en.wikipedia.org/wiki/Nassef_Sawiris', confirmada:true },
   ],
   'bournemouth-gb': [
+    { nombre:'Maxim Demin', corto:'Demin', cargo:'Dueño', desde:'2011-01-01', hasta:'2022-12-13',
+      fuente:'https://en.wikipedia.org/wiki/Maxim_Demin', confirmada:true },
     { nombre:'Bill Foley', corto:'Foley', cargo:'Chairman', desde:'2022-12-13', hasta:null,
       fuente:'https://footballtoday.com/2022/12/13/bill-foley-led-partnership-completes-bournemouth-takeover/', confirmada:true },
   ],
@@ -26,6 +28,8 @@ Object.assign(window.CLUB_GESTIONES, {
       fuente:'https://lastwordonsports.com/football/2020/12/31/alk-burnley-takeover/', confirmada:true },
   ],
   'chelsea-gb': [
+    { nombre:'Roman Abramovich', corto:'Abramovich', cargo:'Dueño', desde:'2003-07-01', hasta:'2022-05-30',
+      fuente:'https://en.wikipedia.org/wiki/Roman_Abramovich', confirmada:true },
     { nombre:'Todd Boehly', corto:'Boehly', cargo:'Chairman', desde:'2022-05-30', hasta:'2026-09-16',
       fuente:'https://sports.yahoo.com/articles/clearlake-complete-chelsea-takeover-sale-225556156.html', confirmada:true },
   ],

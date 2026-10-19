@@ -579,10 +579,10 @@ GENERADO por `node tools/faltantes-liga.mjs`: no editar a mano. Club-años que j
 - Panelefsiniakos — sin-buscar: 2017 (gr-superleague2), 2016 (gr-superleague2)
 - Sparta — sin-buscar: 2017 (gr-superleague2)
 
-## Inglaterra (3 clubes, 9 club-años)
+## Inglaterra (3 clubes, 17 club-años)
 
-- Cardiff City — sin-buscar: 2025 (gb-championship), 2024 (gb-championship), 2023 (gb-championship)
-- Swansea City — sin-buscar: 2025 (gb-championship), 2024 (gb-championship), 2023 (gb-championship)
+- Cardiff City — sin-buscar: 2025 (gb-championship), 2024 (gb-championship), 2023 (gb-championship), 2022 (gb-championship), 2021 (gb-championship), 2020 (gb-championship), 2019 (gb-premierleague)
+- Swansea City — sin-buscar: 2025 (gb-championship), 2024 (gb-championship), 2023 (gb-championship), 2022 (gb-championship), 2021 (gb-championship), 2020 (gb-championship), 2019 (gb-championship)
 - Barrow — sin-buscar: 2025 (gb-leaguetwo), 2024 (gb-leaguetwo), 2023 (gb-leaguetwo)
 
 ## Italia (174 clubes, 202 club-años)

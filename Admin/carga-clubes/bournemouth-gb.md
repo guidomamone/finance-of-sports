@@ -165,3 +165,7 @@ gestionId 'foley': los dos ejercicios confirman a Black Knight Football Club UK 
 diciembre de 2022 ("Ultimate parent undertaking and controlling party... William P. Foley II").
 El rango firstYear/lastYear refleja SOLO los ejercicios efectivamente cargados (2024-2025).
 ```
+
+## Gestiones (Finanzas 5, 2026-10-19)
+
+- Maxim Demin, Dueño, desde 2011 (solo el año: Wikipedia "In 2011, Demin became co-owner", `desde` 2011-01-01) hasta 2022-12-13, cuando Black Knight Football Club (Bill Foley) compró el 100 %. Cubre el cierre 2022-06-30. Jeff Mostyn fue Chairman (compró en 2007) y dejó el cargo con la venta a Foley; las fuentes no coinciden en sus fechas, y el sitio registra al dueño.
