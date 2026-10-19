@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 790 — 298 u2: las listas belgas bajan enteras (2026-10-19)
+
+* `fetch-club-league-reference.mjs` cortaba los códigos de equipo con guion ("B-W" de Beerschot Wilrijk). Lote 92: de 41 a 45 de 51 listas;
+  las 358 guardadas dan los mismos equipos.
+
 ## Versión 789 — Reino Unido: sociedad por documento y 6 transcripciones; cierre de Finanzas 5 (2026-10-19)
 
 * 261 b y c: la sociedad de cada documento del Reino Unido, en `sociedad-por-documento.md`; 3 duplicados exactos a descartados.

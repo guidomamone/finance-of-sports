@@ -360,3 +360,5 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
   2017-18 y 2018-19: 7 -> 8. `listas-lote --lote Admin/lotes/lote-92.txt --ensayo`: 41 -> 45 de 51 (las 6 que faltan no tienen página
   en Wikipedia). Las 358 listas guardadas, lector viejo contra nuevo: mismos equipos. Las 4 listas nuevas se escriben solas en la próxima
   corrida de `lote.mjs --cargar` (corre listas-lote --lote antes). Quedan z (decisión de pantalla de Guido) y g2 (condicional).
+
+## Después del merge de la u2 (2026-10-19)
