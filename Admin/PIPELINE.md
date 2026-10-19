@@ -379,7 +379,9 @@ Mitigaciones:
             filas sin lado con el signo del RESULTADO y sin totales ("(Custos)/Proveitos com transacções de passes", Sporting 2008-09/2009-10).
  AL ESCRIBIR (to-do 237 w) una fila del financiero que sumó dentro de ingresos o gastos (Juros de una nota de Outros rendimentos) se escribe
             con el lado de esa lista; (237 am) la pérdida impresa sin signo también se reconoce por el menos al final del importe o por la
-            misma etiqueta en negativo en otra línea; (237 l) el chequeo del año vecino ignora documentos descartados y parciales; (237 an)
+            misma etiqueta en negativo en otra línea; (237 l) el chequeo del año vecino ignora documentos descartados y parciales; (298 n)
+            una comparación con el año vecino que FALLA entre dos documentos con perímetro fijado distinto queda "no se puede comparar:
+            perímetros distintos" y no frena (una que coincide sigue valiendo); lote completo: 718 de 720 idénticos; (237 an)
             el .rubros.json no se reescribe si no cambió (glosar no vuelve a pagar).
  ESCALÓN    "sección D" (Versión 589, to-do 166): con el encabezado "D) Rettifiche di valore" (o "Value adjustments") impreso entre el
             financiero y el resultado y sin ajuste manual del financiero en esa zona: las filas sin lado de ahí van al financiero (las de un 18)

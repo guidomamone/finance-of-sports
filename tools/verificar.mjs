@@ -42,7 +42,7 @@ import { clubDeRuta } from './carpetas-clubes.mjs';
 import { cierrePorVecinos } from './cierre-vecinos.mjs';
 import { VERSION_AMPLIADO } from './indice-bloques.mjs';
 import { norm as normNum } from './verify-numbers.mjs';
-import { ajusteDe, ajustesDe } from './ajustes.mjs';
+import { ajusteDe, ajustesDe, ajustePerimetroDe } from './ajustes.mjs';
 import { FIN_INGRESO_RE, FIN_GASTO_RE, INGRESOS_RE, GASTOS_RE, DE_LOS_CUALES_RE, normalizar } from './vocabulario.mjs';
 import { DESCARTADOS, PARCIALES } from './etapa-doc.mjs';
 import { filasNBB, leerEstadoNBB } from './nbb.mjs';
@@ -1306,6 +1306,14 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
       const neteada = dif > 0 && [...filasDoc(md), ...filasDoc(otro.md)].filter((f) => f.lado === 'gasto' && !TOT.test(f.etiqueta || ''))
         .flatMap((f) => [f.actual, f.anterior].map((x) => ({ f, v: Math.abs(parseNumber(x) ?? 0) }))).find(({ v }) => v && [1e6, 1e3, 1].some((e) => Math.abs(v / e - dif) <= Math.max(2e-6, dif * 1e-7)));
       if (neteada) { chequeos[chequeos.length - 1] = { ...chequeos[chequeos.length - 1], ok: null, detalle: `presentación distinta: ingresos de ${dy === 1 ? year : year - 1} ${r6(mio)} y ${r6(suyo)}; la diferencia es exactamente "${neteada.f.etiqueta}" (${neteada.f.lado}, ${neteada.f.actual}), que uno de los dos documentos netea` }; vecinos[vecinos.length - 1] = null; continue; }
+    }
+    // (to-do 298 n, ok de Guido 2026-10-19) PERÍMETROS DISTINTOS: si no coinciden y los dos documentos tienen perímetro fijado (ajuste del
+    // documento o del club) distinto, la columna del año anterior es de otro perímetro: no se puede comparar (como `otroRegimen`). Solo
+    // baja una comparación que FALLA; una que coincide sigue valiendo (Roma 2005, Benfica 2005-06). Casos: FCI Levadia 2020 (la MTÜ sola,
+    // 786.551) contra la columna del consolidado 2021 (1.073.554), 15 casos estonios todos aceptados; Benfica 2018-19 y Aris 2021.
+    if (ok === false) {
+      const perMio = ajustePerimetroDe(pdf)?.valor; const perOtro = ajustePerimetroDe(otro.pdf)?.valor;
+      if (perMio && perOtro && perMio !== perOtro) { chequeos[chequeos.length - 1] = { ...chequeos[chequeos.length - 1], ok: null, detalle: `no se puede comparar: perímetros distintos (este documento ${perMio}, ${otro.pdf.split('/').pop()} ${perOtro}); ingresos ${r6(mio)} y ${r6(suyo)}` }; vecinos[vecinos.length - 1] = null; continue; }
     }
     if (ok === false) caso('anio-vecino', String(year + dy), `Los ingresos de ${dy === 1 ? year : year - 1} no coinciden entre este documento y ${otro.pdf.split('/').pop()} (${r6(mio)} contra ${r6(suyo)}). Puede ser una reexpresión del año en el documento siguiente (pasa), otra tabla u otro perímetro.`, { pagina: estado[0]?.pagina });
   }

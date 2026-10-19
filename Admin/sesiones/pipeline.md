@@ -310,3 +310,9 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
   Admin/HALLAZGOS-pipeline.md. Sigue la n.
 
 ## Después del merge de la m (2026-10-19)
+
+- **298 n hecha** (783f7fd859, ok de Guido 2026-10-19). En verificar.mjs, una comparación con el año vecino que FALLA entre dos documentos
+  con perímetro fijado distinto (ajuste del documento o del club) queda "no se puede comparar: perímetros distintos" y no abre el caso
+  `anio-vecino`. Solo baja la que falla: la primera versión salteaba todas y Roma 2005 y Benfica 2005-06 pasaban de OK a COLA (perdían un
+  chequeo que coincidía). Medido con `medir-verificar --pasadas 2` sobre la completa nueva (720): 718 idénticos; Benfica 2018-19
+  (consolidado contra 2019-20 individual) y Aris 2021 (individual contra el grupo) pasan de COLA a OK con los mismos números. Sigue la p.
