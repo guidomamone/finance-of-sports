@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2023.pdf",
  "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2023.md",
- "generado": "2026-10-19T12:41:27.841Z",
- "estado": "cola",
+ "generado": "2026-10-19T12:47:37.531Z",
+ "estado": "ok",
  "clubId": "sarpsborg08-no",
  "year": 2023,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "ad0f294",
-  "25415fe"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -55,6 +52,7 @@
  ],
  "notas": [
   "la nota de \"Annen driftskostnad\" no suma el renglón (0.307925 contra 29.769619, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar ya contestada para el club (perimetro, \"Sum inntekter\"): corregir no, en aarsregnskap-fotballforening-fli-2023.pdf",
   "duda de extraer que no afecta la carga: La nota 1 clasifica por tipo (arrangement, spillere, varer) y su SUM coincide con Sum inntekter (L283), no con cada renglón.",
   "duda de extraer que no afecta la carga: Es solo una parte de Annen driftskostnad (29 769 619), no un desglose completo.",
   "duda de extraer que no afecta la carga: El estado es del grupo (konsern) y las notas no indican si son de la sociedad o del grupo."

@@ -55,4 +55,13 @@ window.RANKINGS["no-1divisjon"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",2.561]] },
     ],
   },
+  2012: {
+    leagueSize: null,
+    wiki: {"t":"2012 Norwegian First Division","lang":"en","at":"2026-10-19","n":16},
+    clubs: [
+      { id:"sarpsborg08-no", revenue:4.8, reportType:"official_balance_sheet",
+        sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2012",
+        mix:[["Cuotas Sociales",0.066],["Comercial / Sponsors",2.13],["Estadio",0.58],["Televisión",0.472],["Venta de Jugadores",0.43],["Otros ingresos",1.121]] },
+    ],
+  },
 };

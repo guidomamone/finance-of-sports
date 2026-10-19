@@ -1,0 +1,269 @@
+{
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2020.md",
+ "generatedAt": "2026-10-19T12:47:39.114Z",
+ "rubrosHuella": "d541a01f3a3af4eb37999026a5f3955846671598",
+ "rubros": [
+  {
+   "label": "Billetinntekter",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Medlemsinntekter",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre inntekter",
+   "lado": "revenue",
+   "page": 13,
+   "section": "nota que desglosa \"Andre salgsinntekter\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Reklame og sponsorinntekter",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Kiosk salg",
+   "lado": "revenue",
+   "page": 13,
+   "section": "nota que desglosa \"Andre salgsinntekter\"",
+   "choice": "other_income",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "Supporterutstyr",
+   "lado": "revenue",
+   "page": 13,
+   "section": "nota que desglosa \"Andre salgsinntekter\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Solidaritetsmidler",
+   "lado": "revenue",
+   "page": 13,
+   "section": "nota que desglosa \"Andre salgsinntekter\"",
+   "choice": "player_sales",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Mediainntekter",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Tilskudd",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Salg/utleie spillere",
+   "lado": "revenue",
+   "page": 2,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Trening/materiell kostnader",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Trening, matriell, kamp kostn.\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.43,
+   "desdeCache": true
+  },
+  {
+   "label": "Reise og oppholdskostander bortekamper",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Salgskostnader",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Lønn",
+   "lado": "expense",
+   "page": 12,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 12,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": "expense",
+   "page": 12,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre relaterte ytelser / Refusjoner",
+   "lado": "expense",
+   "page": 12,
+   "section": "nota que desglosa \"Lønnskostnad\"",
+   "choice": "wages_squad",
+   "confidence": 0.43,
+   "desdeCache": true
+  },
+  {
+   "label": "Avskrivning på driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Honorar medisinsk støtteapparat",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Andre kostnader\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "Agent/talentspeidere",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Andre kostnader\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Leiekostnader",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Andre kostnader\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre kostnader",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Andre kostnader\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Reklame og sponsorkostnader",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Admkost",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Reisekostnader/km.godtgjørelse",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Andre kostnader\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Kampkostnader",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"Trening, matriell, kamp kostn.\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1041
+  }
+ ]
+}

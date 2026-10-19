@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2024.pdf",
  "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2024.md",
- "generado": "2026-10-19T12:41:27.871Z",
- "estado": "cola",
+ "generado": "2026-10-19T12:47:37.560Z",
+ "estado": "ok",
  "clubId": "sarpsborg08-no",
  "year": 2024,
  "escala": {
@@ -12,9 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "0955414"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -39,12 +37,12 @@
   {
    "nombre": "documento del año 2025",
    "ok": null,
-   "detalle": "no se puede comparar: perímetros distintos (este documento consolidado, aarsregnskap-fotballforening-fli-2025.pdf individual); ingresos 224.508804 y 203.736698"
+   "detalle": "no se puede comparar: perímetros distintos (este documento consolidado, aarsregnskap-fotballforening-fli-2025.pdf individual); ingresos 224.508804 y 203.736697"
   },
   {
    "nombre": "documento del año 2023",
    "ok": true,
-   "detalle": "ingresos de 2023: 166.545863 en aarsregnskap-fotballforening-fli-2023.pdf y 166.545863 en este documento (columna del año anterior)"
+   "detalle": "ingresos de 2023: 166.545864 en aarsregnskap-fotballforening-fli-2023.pdf y 166.545864 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
@@ -59,7 +57,7 @@
  ],
  "notas": [
   "la nota del subtotal \"Sum inntekter\" suma el subtotal impreso (224.508804): reemplaza a \"Annen driftsinntekt\" + \"Salgsinntekt\"",
-  "escalón \"renglón grande sin abrir\": \"Annen driftsinntekt\" (L263) era el 81% de los ingresos; la misma lectura cierra con la nota del subtotal abierta",
+  "la nota del subtotal \"Sum inntekter\" suma el subtotal impreso (166.545863): reemplaza a \"Annen driftsinntekt\" + \"Salgsinntekt\"",
   "duda de localizar que no afecta la carga: b10 repite exactamente los importes 2024 de b5 (Sum driftsinntekter 224 508 804, Årsresultat 29 281 631).",
   "duda de extraer que no afecta la carga: L909 informa años-persona (59), no NOK."
  ],

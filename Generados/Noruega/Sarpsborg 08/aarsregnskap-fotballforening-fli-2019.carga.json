@@ -1,16 +1,7 @@
 {
  "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2019.pdf",
- "generado": "2026-10-19T12:44:07.200Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "6 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Media/tilskudd UEFA\" -> broadcasting 0.55; \"Kiosk salg\" -> other_income 0.6; \"Trening/materiell kostnader\" -> other_expenses 0.65; \"Innkjøp av varer for videresalg\" -> other_expenses 0.75; \"Honorar medisinsk støtteapparat\" -> other_expenses 0.55"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes en 2019: la pregunta ya está en la cola por aarsregnskap-fotballforening-fli-2017.pdf (56dfc5c) y vale para este año"
-  }
- ],
+ "generado": "2026-10-19T12:47:55.242Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del documento, 2026-10-19: perimetro-senales.mjs: el ejercicio 2019-12-31 se publicó solo individual (el club es consolidado); 2 documento(s) con los dos estados votan consolidado; 8 ejercicio(s) con un solo perímetro (individual); 18 documento(s) mirados)",
   "gastos: ningún total impreso igual a la suma de las líneas (-95.840497); queda la suma, verificada por el resultado del ejercicio",
@@ -54,13 +45,13 @@
    },
    {
     "rawLabel": "Media/tilskudd UEFA",
-    "normalizedCategory": "broadcasting",
+    "normalizedCategory": "competition_bonus",
     "amountNative": 1.660498,
     "disclosureLevel": "aggregated",
     "_pag": 8,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Grasrotandel",
@@ -108,9 +99,9 @@
     "amountNative": 1.575543,
     "disclosureLevel": "aggregated",
     "_pag": 9,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Supporterutstyr",
@@ -180,9 +171,9 @@
     "amountNative": -4.693058,
     "disclosureLevel": "aggregated",
     "_pag": 9,
-    "_escalon": 2,
-    "_conf": 0.65,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Kamp kostnader",
@@ -210,9 +201,9 @@
     "amountNative": -1.171686,
     "disclosureLevel": "aggregated",
     "_pag": 9,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Kostn./kjøp/salg spillere/utd.midler",
@@ -280,9 +271,9 @@
     "amountNative": -1.083383,
     "disclosureLevel": "aggregated",
     "_pag": 9,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Agent/talentspeidere",
@@ -350,9 +341,9 @@
     "amountNative": -3.189027,
     "disclosureLevel": "aggregated",
     "_pag": 9,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Reklame og sponsorkostnader",
@@ -503,12 +494,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (nota que desglosa \"Andre inntekter\")",
    "signoFijo": 1.660498,
-   "cat": "broadcasting",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "revenue",
    "amountNative": 1.660498
   },
@@ -580,11 +571,11 @@
    "origen": "verificacion (nota que desglosa \"Andre salgsinntekter\")",
    "signoFijo": 1.575543,
    "cat": "other_income",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "revenue",
    "amountNative": 1.575543
   },
@@ -686,11 +677,11 @@
    "origen": "verificacion (nota que desglosa \"Trening, matriell, kamp kostn.\")",
    "signoFijo": 4.693058,
    "cat": "other_expenses",
-   "conf": 0.65,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "expense",
    "amountNative": -4.693058
   },
@@ -732,11 +723,11 @@
    "origen": "verificacion (nota que desglosa \"Salgskostnader\")",
    "signoFijo": 1.171686,
    "cat": "other_expenses",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "expense",
    "amountNative": -1.171686
   },
@@ -840,11 +831,11 @@
    "origen": "verificacion (nota que desglosa \"Andre kostnader\")",
    "signoFijo": 1.083383,
    "cat": "other_expenses",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "expense",
    "amountNative": -1.083383
   },
@@ -946,11 +937,11 @@
    "origen": "verificacion (nota que desglosa \"Andre kostnader\")",
    "signoFijo": 3.189027,
    "cat": "exceptional_items",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "expense",
    "amountNative": -3.189027
   },
@@ -1119,8 +1110,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 15,
   "lineasGasto": 20,
   "metaFilas": 4,

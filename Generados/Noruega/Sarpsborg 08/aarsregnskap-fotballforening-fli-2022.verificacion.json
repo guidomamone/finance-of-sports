@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2022.pdf",
  "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2022.md",
- "generado": "2026-10-19T12:41:27.783Z",
- "estado": "cola",
+ "generado": "2026-10-19T12:47:37.502Z",
+ "estado": "ok",
  "clubId": "sarpsborg08-no",
  "year": 2022,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "7b8158b",
-  "4cfdf3e"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -45,7 +42,7 @@
   {
    "nombre": "documento del año 2021",
    "ok": null,
-   "detalle": "no se puede comparar: perímetros distintos (este documento consolidado, aarsregnskap-fotballforening-fli-2021.pdf individual); ingresos 101.085463 y 81.379641"
+   "detalle": "no se puede comparar: perímetros distintos (este documento consolidado, aarsregnskap-fotballforening-fli-2021.pdf individual); ingresos 101.085464 y 81.379641"
   },
   {
    "nombre": "año anterior cargado",
@@ -59,9 +56,9 @@
   }
  ],
  "notas": [
-  "la nota de \"Annen driftskostnad\" no suma el renglón (0.1639 contra 28.126037, sumando sus renglones): quedó el renglón del estado",
   "la nota del subtotal \"Sum inntekter\" suma el subtotal impreso (126.553593): reemplaza a \"Annen driftsinntekt\" + \"Salgsinntekt\"",
-  "escalón \"renglón grande sin abrir\": \"Salgsinntekt\" (L279) era el 30% de los ingresos; la misma lectura cierra con la nota del subtotal abierta",
+  "la nota de \"Annen driftskostnad\" no suma el renglón (0.1639 contra 28.126037, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar ya contestada para el club (perimetro, \"Salgsinntekt\"): aceptar, en aarsregnskap-fotballforening-fli-2022.pdf",
   "duda de extraer que no afecta la carga: Diferencia de 1 unidad en el año anterior entre L1529 y L281, atribuible a redondeo."
  ],
  "reintentar": [

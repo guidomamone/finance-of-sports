@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2015.pdf",
  "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2015.md",
- "generado": "2026-10-19T12:41:27.314Z",
- "estado": "cola",
+ "generado": "2026-10-19T12:47:37.291Z",
+ "estado": "ok",
  "clubId": "sarpsborg08-no",
  "year": 2015,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "7032208",
-  "b64524d"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -61,7 +58,9 @@
  "notas": [
   "el desglose de \"Andre inntekter\" (5 filas) no suma la fila: quedó la fila",
   "el desglose de \"Andre kostnader\" (8 filas) no suma la fila: quedó la fila",
-  "duda de localizar confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se carga la cuenta de resultados de b11 (pág. 6, la que va con las notas) y se deja afuera b1 (pág. 2, formulario de Brønnøysund)?"
+  "duda de localizar confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se carga la cuenta de resultados de b11 (pág. 6, la que va con las notas) y se deja afuera b1 (pág. 2, formulario de Brønnøysund)?",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en aarsregnskap-fotballforening-fli-2018.pdf",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en aarsregnskap-fotballforening-fli-2018.pdf"
  ],
  "reintentar": [
   {

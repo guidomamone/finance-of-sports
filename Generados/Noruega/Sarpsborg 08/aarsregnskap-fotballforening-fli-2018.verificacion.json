@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2018.pdf",
  "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2018.md",
- "generado": "2026-10-19T12:41:27.606Z",
- "estado": "cola",
+ "generado": "2026-10-19T12:47:37.387Z",
+ "estado": "ok",
  "clubId": "sarpsborg08-no",
  "year": 2018,
  "escala": {
@@ -12,10 +12,7 @@
   "de": null
  },
  "ajustes": null,
- "cola": [
-  "870ac3d",
-  "47ea0c0"
- ],
+ "cola": [],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -61,7 +58,9 @@
  "notas": [
   "el desglose de \"Andre inntekter\" (6 filas) no suma la fila: quedó la fila",
   "el desglose de \"Andre kostnader\" (9 filas) no suma la fila: quedó la fila",
-  "duda de localizar confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se carga el resultatregnskap de la pág. 12 (b5) y se deja afuera como duplicado el de la pág. 2 (b1)?"
+  "duda de localizar confirmada por las sumas (cuadro-duplicado, \"-\"): ¿Se carga el resultatregnskap de la pág. 12 (b5) y se deja afuera como duplicado el de la pág. 2 (b1)?",
+  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en aarsregnskap-fotballforening-fli-2018.pdf",
+  "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en aarsregnskap-fotballforening-fli-2018.pdf"
  ],
  "reintentar": [
   {
