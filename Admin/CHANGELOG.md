@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 798 — 301: gasto.mjs y audit.js --json ya no se cortan en un pipe (2026-10-19)
+
+* Los dos esperan a vaciar la salida antes de terminar: el JSON completo (327.687 bytes) llega entero y parsea.
+
 ## Versión 797 — Reino Unido: 106 transcripciones validadas (2026-10-19)
 
 * 261 a: `pipeline.mjs --lista` sobre los 108 `.md` del Reino Unido (US$ 8,59): 106 listos; 36 rehechos, con 0 P1 / 0 P2 de fidelidad.

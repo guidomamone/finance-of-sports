@@ -452,3 +452,5 @@ Pendiente de Guido en su chat: nada. Sigue: 301, 302, 290, 310 y las letras 298 
 Arreglo con el patrón de `carpetas-clubes.mjs`: gasto.mjs espera la escritura; audit.js sale con el código de siempre en el callback del
 write. Medido: `gasto.mjs --json | wc -c` = 327.687 y parsea; `audit.js --json | json.load` parsea (P3 783, P2 241); auditoría P0 0 / P1 0.
 Otros `--json` con process.exit (paginas-con-numeros, companies-house-fetch, perfil-clubes) imprimen poco: no se tocaron. Para borrar el 301 del TODO.
+
+## Después del merge del 301 (2026-10-19)
