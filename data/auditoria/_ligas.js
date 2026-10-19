@@ -167,5 +167,43 @@ window.LIGA_AUDITORIA = {
     "linea": 168
    }
   }
+ },
+ "no-eliteserien": {
+  "2025": {
+   "entidad": {
+    "nombre": "Norsk Toppfotball",
+    "legal": "Norsk Toppfotball (forening)"
+   },
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO AS"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Ligas/Noruega/Norsk Toppfotball/norsk-toppfotball-arsrapport-2025.md",
+    "linea": 907
+   }
+  }
+ },
+ "no-1divisjon": {
+  "2025": {
+   "entidad": {
+    "nombre": "Norsk Toppfotball",
+    "legal": "Norsk Toppfotball (forening)"
+   },
+   "auditor": {
+    "nombre": "BDO",
+    "tipo": "firma",
+    "legal": "BDO AS"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Ligas/Noruega/Norsk Toppfotball/norsk-toppfotball-arsrapport-2025.md",
+    "linea": 907
+   }
+  }
  }
 };
