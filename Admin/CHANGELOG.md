@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 766 — 298 w1: el ensayo dice qué documentos frenan por el perímetro (2026-10-19)
+
+Merge de pipeline 3, sin conflictos; P0 0 / P1 0.
+
+- `perimetro-senales.mjs`: el ensayo usa la respuesta guardada del paso A2 y dice qué va a frenar (lotes 93-94 sin sus ajustes: 13 de 36,
+  los que frenaron de verdad; antes decía 0).
+
 ## Versión 765 — Merge de finanzas 4: el registro de entidades con las 10 altas (2026-10-19)
 
 Lo generado regenerado; P0 0 / P1 0.

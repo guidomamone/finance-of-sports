@@ -36,7 +36,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 232: mejoras de script que dejó Grecia --> Pipeline 3
 * 279: la tool que duplicaba claves en club-leagues/ru.js --> Pipeline 3
 * 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar --> Pipeline 3
-* 298: mejoras de script de Estonia y Bélgica (la w primero; después l a n, p, q, s, v, u2, z, g2, e3) --> Pipeline 3
+* 298: mejoras de script de Estonia y Bélgica (la w2 primero, con tu decisión; después l a n, p, q, s, v, u2, z, g2, e3) --> Pipeline 3
 * 306, 307 y 308: Milan 2018; el gasto que imprime localizar; los bonos convertibles en la skill --> Pipeline 3 (306, 307)
 * 301: gasto.mjs --json se corta en un pipe --> Pipeline 3
 * 302: el deflactor de EE.UU. desde la BEA, no FRED --> Pipeline 3
@@ -260,8 +260,9 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    grave. b) Esquema NBB belga en verificar.mjs y cargar.mjs: costos financieros 65/66B positivos, renglones "(+)/(-)" por valor absoluto,
    el 76A sumado aparte, y verificar y la propuesta que no leen igual el signo; una regla por código NBB. aa) `tools/worktree.mjs mergear` deja sin commitear `data/sponsors.js` y `data/sponsors-indice.js`, que regenera
    `generate-sponsors.js`: sumarlos a su lista de `git add` (el commit siguiente frena por asset-v-sin-subir). e3) el ensayo de pipeline.mjs estimó US$ 7,26 para rehacer los 238 .md sin tablas y la corrida
-   real costó US$ 42,97: que el ensayo dé el número real antes de la próxima corrida grande (ver la nota de Pipeline 2). w) antes-de-localizar
-   dice que el perímetro "se decide al ejecutar", pero lote.mjs frena igual. RWDM 2019: el registro
+   real costó US$ 42,97: que el ensayo dé el número real antes de la próxima corrida grande (ver la nota de Pipeline 2). w) la w1 está hecha (el ensayo usa la
+   respuesta guardada de A2 y dice qué frena: 13 de 36 en los lotes 93-94, los que frenaron de verdad); la w2 (escalón A3) espera la
+   decisión de Guido (1 error en la medición). RWDM 2019: el registro
    tiene el cierre 2019-11-30 y el balance va del 30/11/2018 al 30/06/2019 (como la f). Escocia, Gales e Irlanda del Norte se ven como GB
    ("Inglaterra") en el selector: decisión de pantalla pendiente. g2) partir en la cola cualquier fila según su nota (otros países, el 66A de Lommel SK
    2025): solo si aparece otra fila mixta sin códigos; el 630 belga ya sale solo. i) alta-club.mjs: un país nuevo
