@@ -57,6 +57,21 @@ const DECISIONES = ['aceptar', 'corregir', 'descartar', 'preguntar-club'];
 // releía y parseaba el archivo entero cada vez: 14 de los 36 s de `verificar.mjs --lista` sobre 237 documentos. Ahora guarda lo leído y
 // vuelve a leer solo si el archivo cambió (tamaño o fecha de modificación): una escritura de esta misma corrida (agregarCaso, responder)
 // lo cambia y la consulta siguiente la ve. Lo devuelto no se modifica en ningún llamador.
+// (to-do 298 h) ¿Sacar la fila de este caso de categoría (no_es_rubro), junto con las otras no_es_rubro ya contestadas del documento, deja
+// sin filas al renglón que su nota abría? Devuelve { padre, hermanas, lado } o null. Lee las líneas del .verificacion.json del documento.
+const normFila = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\(\s*[\d.,]+\s*\)/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+function padreSinFilas(caso, { casos, resp }) {
+  const md = caso.md || caso.pdf.replace(/\.pdf$/i, '.md');
+  let L; try { L = JSON.parse(readFileSync(resolve(ROOT, derivado(md, '.verificacion.json', { crear: false })), 'utf8')).lineas || []; } catch { return null; }
+  const padreDe = (x) => { const q = [...String(x.origen || '').matchAll(/(?:nota que desglosa|desglose de) "([^"]+)"/g)]; return q.length ? q[q.length - 1][1] : null; };
+  const sacadas = new Set([normFila(String(caso.detalle).split('|')[0])]);
+  for (const c of casos.values()) { const r = resp.get(c.id); if (c.pdf === caso.pdf && c.motivo === 'categoria' && r?.decision === 'corregir' && r.valor === 'no_es_rubro') sacadas.add(normFila(String(c.detalle).split('|')[0])); }
+  const l = L.find((x) => normFila(x.etiqueta) === normFila(String(caso.detalle).split('|')[0]));
+  const padre = l && padreDe(l); if (!padre) return null;
+  const hermanas = L.filter((x) => padreDe(x) === padre);
+  return hermanas.some((x) => !sacadas.has(normFila(x.etiqueta))) ? null : { padre, hermanas: hermanas.length, lado: l.lado === 'gasto' ? 'gasto' : 'ingreso' };
+}
+
 let cacheLeer = null;
 function leer() {
   let firma = null; try { const st = statSync(ARCHIVO); firma = `${st.size}|${st.mtimeMs}`; } catch { /* no existe */ }
@@ -260,6 +275,19 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     if (decision === 'descartar' && casos.get(id).motivo === 'categoria') {
       console.error('En un caso de categoría, "descartar" sacaría la FILA de la carga (no la pregunta). Usá:\n  aceptar                              la categoría propuesta está bien\n  corregir --valor <categoría>         va en otra categoría\n  corregir --valor no_es_rubro         la fila no se carga (no es un renglón del estado, es un subtotal, etc.)\nSi el año ya está cargado: contestá con la categoría con la que está publicado (aceptar si es la propuesta, corregir si no).');
       process.exit(1);
+    }
+    // (to-do 298 h, ok de Guido 2026-10-18) UN no_es_rubro QUE DEJA UN RENGLÓN SIN FILAS NO SE GUARDA (salvo --igual). Si la fila vino de una
+    // nota que abre un renglón del estado (su origen en el .verificacion.json: "nota que desglosa X" o "desglose de X"; vale el padre más
+    // cercano) y con esta respuesta y las otras no_es_rubro del documento a X no le queda ninguna fila, el renglón se pierde entero. Caso:
+    // Narva Trans 2025, las dos filas "sh" (del cual) 42.848 + 109.938 eran todo "Riigi ja KOV toetused" 152.786 (.md L572, 579-580); la
+    // propuesta frenó por 152.786 de menos y hubo que recategorizarlas. Medido sobre las 7 respuestas no_es_rubro de la cola: frena esas 2 y
+    // ninguna otra. No cambia nada de lo que se carga: solo ataja la respuesta.
+    if (decision === 'corregir' && flag('--valor') === 'no_es_rubro' && casos.get(id).motivo === 'categoria' && !A.includes('--igual')) {
+      const sin = padreSinFilas(casos.get(id), leer());
+      if (sin) {
+        console.error(`No guardé la respuesta: con no_es_rubro, el renglón "${sin.padre}" se queda sin filas (sus ${sin.hermanas} fila(s) de la nota salen todas) y se pierde entero del ${sin.lado}.\nSi estas filas son el desglose del renglón, contestá con su categoría (corregir --valor <categoría>). Si de verdad no va ninguna, agregá --igual.`);
+        process.exit(1);
+      }
     }
     appendFileSync(ARCHIVO, JSON.stringify({ tipo: 'respuesta', id, ts: new Date().toISOString(), decision, valor: flag('--valor'), nota: flag('--nota') }) + '\n');
     console.log(`Respuesta guardada para ${id}: ${decision}${flag('--valor') ? ` (${flag('--valor')})` : ''}. La toma la próxima corrida de la etapa que mandó el caso.`);

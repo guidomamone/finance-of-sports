@@ -720,7 +720,9 @@ en dos renglones en el cuadro por segmento); el índice ampliado v2 lo resolvió
   - una de categoría (aceptar o corregir, salvo `no_es_rubro`) cierra los casos pendientes del club con la misma etiqueta en otros años
     (to-do 232 d; un `aceptar`, solo los que tienen la misma categoría propuesta, to-do 237 ad), queda como precedente del club (`Admin/registros/categorias-aprendidas.jsonl`) y `cargar.mjs` la aplica en otro
     documento solo si la fila está en la misma nota (si no, el caso se reabre);
-  - sacar una fila (`no_es_rubro`) vale solo para su documento (to-do 205).
+  - sacar una fila (`no_es_rubro`) vale solo para su documento (to-do 205). Si la fila vino de una nota que abre un renglón y, con esa
+    respuesta y las otras `no_es_rubro` del documento, el renglón se queda sin filas, `--responder` no la guarda y avisa (el renglón se
+    perdería entero); `--igual` la guarda igual (to-do 298 h; caso: Narva Trans 2025, las dos filas "sh" de "Riigi ja KOV toetused").
 - Cada caso es una **pregunta de sí o no**, con la propuesta del sistema, la página del visor y la impresa, y las líneas del .md.
 - Guido contesta con `node tools/cola.mjs --responder <id> aceptar | corregir --valor "..." | descartar | preguntar-club --nota "..."`.
   En un caso de categoría, `descartar` se rechaza (to-do 205: parecía "descarto la pregunta" y sacaba la fila): para sacar la fila,
