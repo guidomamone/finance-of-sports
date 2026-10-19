@@ -5,6 +5,9 @@ const lierseskbeRevenueLinesByYear = {
   2022: [
     { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations', amountNative:1.673036, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations', amountNative:2.555937, disclosureLevel:'aggregated' },
+  ],
 };
 const lierseskbeExpenseLinesByYear = {
   2025: [
@@ -21,6 +24,14 @@ const lierseskbeExpenseLinesByYear = {
     { rawLabel:'Niet-recurrente bedrijfskosten', normalizedCategory:'exceptional_items', amountNative:-0.125954, disclosureLevel:'aggregated' },
     { rawLabel:'Afschrijvingen immateriële vaste activa (spelers)', normalizedCategory:'player_amortisation', amountNative:-0.314897, disclosureLevel:'aggregated' },
     { rawLabel:'Afschrijvingen materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.049011, disclosureLevel:'aggregated' },
+  ],
+  2023: [
+    { rawLabel:'Bezoldigingen, sociale lasten en pensioenen (+)/(-)', normalizedCategory:'wages_squad', amountNative:-2.225282, disclosureLevel:'aggregated' },
+    { rawLabel:'Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (+)/(-) (terugnemingen)', normalizedCategory:'other_expenses', amountNative:-0.000941, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.074512, disclosureLevel:'aggregated' },
+    { rawLabel:'Niet-recurrente bedrijfskosten', normalizedCategory:'exceptional_items', amountNative:-0.091867, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen immateriële vaste activa (spelers)', normalizedCategory:'player_amortisation', amountNative:-0.248921, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.062368, disclosureLevel:'aggregated' },
   ],
 };
 const lierseskbeFiscalYearMeta = {
@@ -59,6 +70,24 @@ const lierseskbeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:1.673036, officialTotalExpenses:2.100819, officialPAT:-0.557017,
   },
+  2023: {
+    currency:'EUR', fxRef:'EUR@2023-06-30',
+    sourceId:'liersesk-be-jaarrekening-2023-06-30-individual',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.010435, tax:-0.002794,
+    extraRows: [
+      {label:'Recurrente financiële opbrengsten', value:0.00073},
+      {label:'Recurrente financiële kosten', value:-0.011165},
+      {label:'Belastingen op het resultaat (+)/(-)', value:-0.002794},
+    ],
+    sinDesglose: [
+      {renglon:'Brutomarge (+)/(-)', lado:'revenue', importe:2.555937, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:2.555937, officialTotalExpenses:2.612024, officialPAT:-0.161182,
+  },
 };
 const lierseskbePresupuestoOverlayByYear = {};
 
@@ -83,6 +112,11 @@ Object.assign(sources, {
   'liersesk-be-jaarrekening-2022-06-30-individual': {
     id:'liersesk-be-jaarrekening-2022-06-30-individual', clubId:'liersesk-be',
     title:'Lierse SK — jaarrekening-2022-06-30-individual (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'liersesk-be-jaarrekening-2023-06-30-individual': {
+    id:'liersesk-be-jaarrekening-2023-06-30-individual', clubId:'liersesk-be',
+    title:'Lierse SK — jaarrekening-2023-06-30-individual (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
