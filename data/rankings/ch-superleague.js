@@ -14,6 +14,15 @@ window.RANKINGS["ch-superleague"] = {
         mix:[["Comercial / Sponsors",7.171],["Estadio",13.756],["Televisión",2.174],["Venta de Jugadores",8.124],["Otras secciones deportivas",3.281],["Otros ingresos",4.393]] },
     ],
   },
+  2022: {
+    leagueSize: 10,
+    wiki: {"t":"2021–22 Swiss Super League","lang":"en","at":"2026-10-19","n":10},
+    clubs: [
+      { id:"luzern-ch", revenue:27.974, reportType:"official_balance_sheet",
+        sourceId:"luzern-ch-geschaeftsbericht-2021-22",
+        mix:[["Comercial / Sponsors",6.49],["Estadio",10.375],["Televisión",2.128],["Venta de Jugadores",4.553],["Otras secciones deportivas",2.186],["Otros ingresos",2.243]] },
+    ],
+  },
   2021: {
     leagueSize: 10,
     wiki: {"t":"2020–21 Swiss Super League","lang":"en","at":"2026-10-19","n":10},
