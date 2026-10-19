@@ -46,3 +46,5 @@ completo, pero real y auditada).
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2021 desde `Clubes/Suiza/Basel/geschaeftsbericht-unternehmen-2021.pdf` (sourceId `basel-ch-geschaeftsbericht-unternehmen-2021`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2005 desde `Clubes/Suiza/Basel/geschaeftsbericht-2005.pdf` (sourceId `basel-ch-geschaeftsbericht-2005`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2006 desde `Clubes/Suiza/Basel/geschaeftsbericht-2006.pdf` (sourceId `basel-ch-geschaeftsbericht-2006`).

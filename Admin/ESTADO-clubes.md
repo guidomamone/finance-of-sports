@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 312 clubes, 1084 ejercicios, 21 países.
+TOTAL: 312 clubes, 1085 ejercicios, 21 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -119,7 +119,7 @@ BRASIL (42)
   Volta Redonda         2 ejercicios (2024 a 2025), balance, BRL
 
 CH (3)
-  Basel       2 ejercicios (2005, 2021), balance, CHF, sin deuda/caja
+  Basel       3 ejercicios (2005, 2006, 2021), balance, CHF, sin deuda/caja
   Luzern      1 ejercicio (2024/2025), balance, CHF, sin deuda/caja
   St. Gallen  1 ejercicio (2024/2025), balance, CHF, sin deuda/caja
 
