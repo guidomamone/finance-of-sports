@@ -24,6 +24,15 @@ const fulhamGbRevenueLinesByYear = {
     { rawLabel:'Sponsorship and other Commercial Activities', normalizedCategory:'sponsorship_commercial', amountNative:10.938, disclosureLevel:'aggregated' },
     { rawLabel:'Profit on disposal of players\' registrations', normalizedCategory:'player_sales', amountNative:0.146, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Gate Receipts', normalizedCategory:'matchday_competition', amountNative:15.17, disclosureLevel:'aggregated' },
+    { rawLabel:'Central Awards', normalizedCategory:'broadcasting', amountNative:128.513, disclosureLevel:'aggregated' },
+    { rawLabel:'Broadcasting', normalizedCategory:'broadcasting', amountNative:15.961, disclosureLevel:'aggregated' },
+    { rawLabel:'Compensation', normalizedCategory:'other_income', amountNative:1.137, disclosureLevel:'aggregated' },
+    { rawLabel:'Sponsorship and other Commercial Activities', normalizedCategory:'sponsorship_commercial', amountNative:21.544, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of players\' registrations', normalizedCategory:'player_sales', amountNative:8.743, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of other assets', normalizedCategory:'other_income', amountNative:0.043, disclosureLevel:'aggregated' },
+  ],
 };
 
 const fulhamGbExpenseLinesByYear = {
@@ -45,6 +54,11 @@ const fulhamGbExpenseLinesByYear = {
     { rawLabel:'Amortisation of player registrations', normalizedCategory:'player_amortisation', amountNative:-56.452, disclosureLevel:'aggregated' },
     { rawLabel:'Impairment', normalizedCategory:'player_impairment', amountNative:-20.906, disclosureLevel:'aggregated' },
     { rawLabel:'Loss on disposal of other assets', normalizedCategory:'exceptional_items', amountNative:0, disclosureLevel:'aggregated' },
+  ],
+  2023: [
+    { rawLabel:'Operating expenses before depreciation, amortisation & impairment', normalizedCategory:'other_expenses', amountNative:-171.338, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciation of fixed assets', normalizedCategory:'depreciation', amountNative:-1.094, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortisation of player registrations', normalizedCategory:'player_amortisation', amountNative:-45.617, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -81,6 +95,20 @@ const fulhamGbFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:116.257, officialTotalExpenses:210.637, officialPAT:-94.352,
   },
+  2023: {
+    currency:'GBP', fxRef:'GBP@2023-06-30',
+    sourceId:'fulham-gb-full-accounts-2022-23',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0.323, tax:0,
+    extraRows: [
+      {label:'Net interest receivable', value:0.323},
+      {label:'Taxation on loss', value:null},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:191.111, officialTotalExpenses:218.049, officialPAT:-26.615,
+  },
 };
 
 const fulhamGbPresupuestoOverlayByYear = {};
@@ -112,6 +140,11 @@ Object.assign(sources, {
   'fulham-gb-full-accounts-2020-21': {
     id:'fulham-gb-full-accounts-2020-21', clubId:'fulham-gb',
     title:'Fulham Football Club Limited — fulham-full-accounts-2020-21 (ejercicio 2021)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'fulham-gb-full-accounts-2022-23': {
+    id:'fulham-gb-full-accounts-2022-23', clubId:'fulham-gb',
+    title:'Fulham Football Club Limited — fulham-full-accounts-2022-23 (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
