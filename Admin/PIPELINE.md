@@ -139,6 +139,13 @@ Mitigaciones:
             ── pasa → localizar · no → no se localiza; el lote imprime el ajuste que falta (dos entidades: descartar primero la otra)
 ```
 
+  `periodo.mjs`, paso 3b (to-do 298 f): si los títulos no deciden el período, vale el que declara el formulario en una frase fija, en
+  celdas de tabla o en prosa: "boekjaar dat de periode dekt van ... tot ...", "exercice couvrant la période du ... au ..." (NBB) y el par
+  "aruandeaasta algus / lõpp" (Estonia). Compuerta: fin de mes al final, 1 a 18 meses, una sola fecha de fin. Medido sobre los 3.429 `.md`:
+  cambian 17 (16 belgas y Harju JK Laagri 2023): 12 pasan de sin cierre (o de la fecha de la asamblea: Lierse SK 2023 y 2025; del inicio:
+  Beerschot 2019 -correction) al cierre del formulario, y 4 primeros ejercicios largos dejan de verse como anuales (Anderlecht 2011, 16
+  meses; RAAL 2018, 14; Sint-Truiden 2013, 15; Zulte Waregem 2012, 17). Ninguno de esos 4 está cargado.
+
 - e) **El perímetro del club por señales** (Versión 561, `perimetro-senales.mjs`), antes de la compuerta, para cada club de la lista que
   frenaría por perímetro. Mira TODOS los .md del club:
 
