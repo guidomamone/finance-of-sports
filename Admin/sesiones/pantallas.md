@@ -38,3 +38,26 @@
   Bestätigungsvermerk; solo está en el Unternehmensregister o el Bundesanzeiger, detrás de captcha. No se resuelve el captcha con ninguna herramienta:
   sigue pendiente (o candidato a mail al club, que Guido no quiere por ahora).
 - 282: por decisión de Guido (2026-10-19) Hamburgo 2024 se publicó "sin informe de auditoría" (`sin_informe`, línea 310 de `auditoria.jsonl`), con nota; si aparece el Bestätigungsvermerk 2023/24, pasa a sin_salvedades. ASSET_V 1401.
+
+## Pantallas 3, segunda tanda (2026-10-19)
+
+### Qué cambió (para CHANGELOG)
+
+- 252: `tools/ejercicios-nuevos.mjs` reconoce como "ya bajado" un PDF con una fecha `AAAA-MM-DD` del año esperado en el nombre (`cierre-2025-12-31`):
+  River (cierre de agosto a diciembre) pasa de "a mano" a "ya en su carpeta". Probado con `--club river`.
+- 252: lote 103 (`Admin/lotes/lote-103.txt`, 23 PDFs: el ejercicio siguiente de 21 clubes con el PDF ya en su carpeta; sin Bélgica, Noruega, Suiza, Países Bajos
+  ni Reino Unido). Cierres fijados con `ajustes.mjs`: FC Fredericia 2020 (2020-12-31) y Hajduk Split 2025 (2025-12-31). Costo: unos US$ 5,37 de transcripción
+  (15 sin `.md`, 2 sin tablas) más ~US$ 2,47 de lote; Colo-Colo y Universidad de Chile 2025 (más de 100 págs.) quedan fuera sin `--max-paginas 0`. Lo corrió Guido.
+- 273: sin cambio de código. `generate-sponsors.js` ya suma lo de `contexto-manual.json` por `data/contexto/<iso>.js` (43 de 45 sponsors manuales ya están;
+  los otros 2, Lierse 2020 y OH Leuven 2022, son años belgas no cargados). `--check` da "al día".
+
+### Qué queda (para TODO)
+
+- 252: River `estados-contables-cierre-2025-12-31.pdf` (sin `.md`) no está en el lote 103; falta para otro lote. Vasco da Gama 2024 quedó afuera: hay Associação y SAF y no sé cuál es el club.
+  14 clubes (AGF, Brøndby, Chaves, Estrela da Amadora, København, Mirassol, Nordsjælland, Osasuna, Randers, SønderjyskE, Torreense, União de Leiria, Vejle,
+  Villarreal) salen "ya en su carpeta" pero mi filtro por nombre no encontró el PDF del ejercicio siguiente: mirar si el script los marca de más.
+- 273: borrar el resto del punto (el generador ya suma el contexto manual); los años viejos sin sponsor quedan en null por decisión de Guido.
+
+### Qué deja de ser cierto en ESTADO
+
+- Nada.
