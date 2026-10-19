@@ -828,15 +828,11 @@ function propuestaNota(f) {
 // vecino) no tiene con qué compararse. Se acepta la caja que propuso la escalera si la fila está en la MISMA tabla del balance cuyo total del
 // activo es igual a un total del pasivo (a 1 unidad: la tabla está completa y el balance cuadra en la columna del ejercicio) y la caja no
 // supera ese total del activo. Solo caja: "el balance cuadra" no prueba que una fila sea deuda (medido: de 6 deudas sin vecino, 5 distintas de
-// lo cargado). Una sola tabla por fila y la del mayor activo del documento: no se mezcla un resumen ni una entidad chica con el balance. La caja belga usa su código fijo (cajaNBB, más abajo).
+// lo cargado). Una sola tabla por fila: no se mezcla un resumen con el balance. La caja belga usa su código fijo (cajaNBB, más abajo).
 export function balanceCuadraConFila(filas, fila, suma = fila?.valor) {
   if (fila?.tabla == null || !fila.balance || !fila.cifras?.length || !Number.isFinite(suma)) return false;
   const tot = filas.filter((f) => f.balance && f.cifras?.length && esTotalBalance(f.norm));
-  const todosActivos = tot.filter((f) => TOTAL_ACTIVO_RE.test(f.norm));
-  // El balance principal es el de mayor activo del documento: Udinese 2021-22 trae en la pág. 32 el balance de una entidad chica (activo
-  // 17,2 M, "Disponibilità liquide" 165.648) y su balance real tiene 44,18 M de caja; sin esta condición la compuerta aceptaba el chico.
-  const mayor = Math.max(...todosActivos.map((f) => f.cifras[0]));
-  const activos = todosActivos.filter((f) => f.tabla === fila.tabla && f.cifras[0] === mayor);
+  const activos = tot.filter((f) => TOTAL_ACTIVO_RE.test(f.norm) && f.tabla === fila.tabla);
   const pasivos = tot.filter((f) => TOTAL_PASIVO_RE.test(f.norm) || TOTAL_PASIVO_PLURAL_RE.test(f.norm));
   return activos.some((a) => a.cifras[0] > 0 && Math.abs(suma) <= a.cifras[0] + 1 && pasivos.some((q) => Math.abs(a.cifras[0] - q.cifras[0]) <= 1));
 }

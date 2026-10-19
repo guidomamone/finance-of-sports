@@ -824,11 +824,10 @@ código 54/58 (la celda que sigue al código) si el balance del propio documento
 (170/4, 42, 43) no coincide con el criterio con que se cargó Bélgica (`cajaNBB` en `tools/caja-deuda.mjs`).
 
 Caja de un año SIN VECINO en cualquier país (to-do 310, ok de Guido 2026-10-19; `balanceCuadraConFila`): si la escalera propone una caja y la
-compuerta solo falla por "ningún año vecino", se acepta cuando la fila está en la misma tabla del balance de mayor activo del documento, ese
-total del activo es igual (a 1 unidad) a un total del pasivo, y la caja no lo supera. Solo la caja: "el balance cuadra" no prueba que una fila
-sea deuda (de 6 deudas sin vecino, 5 distintas de lo cargado). La condición del mayor activo salió de Udinese 2022, cuyo documento trae el
-balance de una entidad chica (activo 17,2 M) donde "Disponibilità liquide" es 165.648 y la caja real es 44,18 M. Medido con `--medir`: caja
-iguales 418 → 421, distintos 7 → 7, deuda idéntica.
+compuerta solo falla por "ningún año vecino", se acepta cuando la fila está en una tabla del balance cuyo total del activo es igual (a 1
+unidad) a un total del pasivo, y la caja no lo supera. Solo la caja: "el balance cuadra" no prueba que una fila sea deuda (de 6 deudas sin
+vecino, 5 distintas de lo cargado). PENDIENTE DE GUIDO: con esta regla sola, Udinese 2022 sale distinto (0,17 M contra 44,18 M: la pág. 32 es
+el balance de una entidad chica del mismo documento). No se mergea hasta decidir cómo evitarlo.
 
 Estonio en el diccionario (to-do 298 c3): `bilanss` (título del balance), `raha` (caja) y `laenukohustised` (préstamos) en `tools/vocabulario.mjs`.
 Sin ellos ninguna fila estonia era del balance y caja-deuda daba "sin páginas de balance".
