@@ -39,7 +39,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **D. Onboarding grande**
 * 238: llevar a 0 los documentos que quedaron a mitad de camino --> Onboarding 3
-* 261: Reino Unido: 12 transcripciones nuevas para validar (~US$ 1,26, el comando lo corrés vos); después, el lote de carga y la cola por Mistral --> Finanzas 5
+* 261: Reino Unido: 118 transcripciones validadas; sigue el lote de carga y la cola por Mistral
 * 165 c: altas de los países nuevos que faltan --> Onboarding 3
 * 195: gestiones (presidentes) sin fuente confirmada (Fortaleza 2025: ¿CEO o presidente del consejo? lo decidís vos)
 * 295: balances de las entidades que organizan las ligas: lo que queda (segundas divisiones; varias no publican)
@@ -355,8 +355,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
     commiteados (93 con subagentes Opus y 21 con Sonnet) (Tesseract + revisión de las páginas clave contra la imagen; los 93 dan 0 P1 / 0 P2 en `check-transcripcion-fidelidad.js`):
     años 2021-2026 de los clubes de Premier, F1, cricket y rugby que ya tenían algún .md. Cola, scripts e instrucciones:
     `Admin/transcripcion-subagentes/README.md` (van 77 de 1531 bloques; Guido, 2026-10-19: no transcribir más con subagentes, el resto va por Mistral con el ensayo; `claim.sh` tiene la ruta de la principal: en un worktree, una copia apuntada a esa carpeta; quedan unos 3600 PDFs, casi todos escaneos). Falta:
-    a) Validados (19-10: 106 listos, US$ 8,59). Los 12 `.md` de Sonnet del 19-10 (Wolves, Aston Villa, West Ham, Red Bull 2020, Chelsea
-       2019-21, Leeds 2018-21) faltan validar con `pipeline.mjs --lista` (ensayo gratis primero). Ojo al cargar: Leeds 2019-20 es de 13 meses
+    a) Validados los 118 (19-10: 106 + los 12 de Sonnet, US$ 8,59 + 1,3). Falta el lote de carga (etapa 3 en adelante). Ojo al cargar: Leeds 2019-20 es de 13 meses
        y 2020-21 la versión "AMENDED" de 11; Red Bull 2020, usar el turnover del estado (229.754), no el de la pág. 4. Falta el lote (etapa 3 en adelante); Celtic 2020-21 con
        `--max-paginas 0`. Tres con páginas que solo validó Claude (Celtic 2021-22 pág. 52; los otros en `transcripciones-estado.jsonl`):
        cerrar con sum-check al onboardear. Notas de West Ham 2019-21 y parte de Aston Villa cerradas por sumas: mirarlas antes de caja y deuda.

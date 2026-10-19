@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 801 — Reino Unido: los 12 de subagentes, validados (2026-10-19)
+
+* Los 12 `.md` de subagentes Sonnet pasan `pipeline.mjs --lista` (~US$ 1,3); Aston Villa 2019-20 y 2020-21 se rehicieron con Mistral.
+
 ## Versión 800 — 302: el deflactor de EE.UU. sale de la BEA (2026-10-19)
 
 * `fetch-fx-reference.mjs` baja el deflactor del PBI de EE.UU. de la BEA (NipaDataA.txt, serie A191RD), sin clave, en vez de FRED; los 31

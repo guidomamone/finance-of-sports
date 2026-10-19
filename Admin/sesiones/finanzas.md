@@ -27,3 +27,5 @@
 
 ### Qué deja de ser cierto en ESTADO
 - Nada nuevo.
+
+## Después del merge de la validación de los 12 (2026-10-19)
