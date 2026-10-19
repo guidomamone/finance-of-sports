@@ -1,0 +1,165 @@
+{
+ "pdf": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2022-23.md",
+ "generado": "2026-10-19T17:11:10.598Z",
+ "estado": "ok",
+ "clubId": "brighton-gb",
+ "year": 2023,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 2.842170943040401e-14
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 229.785 en brighton-full-accounts-2021-22.pdf y 229.785 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Operating expenses\" no suma el renglón (160.842 contra 204.749, sumando sus renglones): quedó el renglón del estado",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en brighton-full-accounts-2022-23.pdf",
+  "duda de extraer ya contestada para el club (perimetro, \"Operating expenses\"): aceptar, en brighton-full-accounts-2022-23.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Operating expenses",
+   "suma": 160.842,
+   "objetivo": 204.749
+  }
+ ],
+ "totales": {
+  "ingresos": 349.813,
+  "gastos": 210.328,
+  "financiero": 2.479,
+  "impuesto": -10.431,
+  "resultadoImpreso": 131.533,
+  "resultadoParaCargar": 131.533,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Matchday",
+   "lado": "ingreso",
+   "M": 24.492,
+   "pagina": 25,
+   "linea": 910,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Broadcasting",
+   "lado": "ingreso",
+   "M": 154.897,
+   "pagina": 25,
+   "linea": 911,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial",
+   "lado": "ingreso",
+   "M": 17.592,
+   "pagina": 25,
+   "linea": 912,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other",
+   "lado": "ingreso",
+   "M": 6.593,
+   "pagina": 25,
+   "linea": 913,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Profit on player trading",
+   "lado": "ingreso",
+   "M": 121.361,
+   "pagina": 16,
+   "linea": 590,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Compensation received",
+   "lado": "ingreso",
+   "M": 23.353,
+   "pagina": 25,
+   "linea": 920,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Proceeds from insurance claim",
+   "lado": "ingreso",
+   "M": 1.525,
+   "pagina": 25,
+   "linea": 921,
+   "origen": "nota que desglosa \"Other operating income\""
+  },
+  {
+   "etiqueta": "Cost of sales",
+   "lado": "gasto",
+   "M": 5.579,
+   "pagina": 16,
+   "linea": 588,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Operating expenses",
+   "lado": "gasto",
+   "M": 204.749,
+   "pagina": 16,
+   "linea": 589,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 5.073,
+   "linea": 593
+  },
+  {
+   "etiqueta": "Interest payable and similar charges",
+   "M": -2.594,
+   "linea": 594
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on profit",
+   "M": -10.431,
+   "linea": 596
+  }
+ ]
+}

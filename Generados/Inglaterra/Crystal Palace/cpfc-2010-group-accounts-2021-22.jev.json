@@ -1,0 +1,283 @@
+{
+ "md": "Clubes/Inglaterra/Crystal Palace/cpfc-2010-group-accounts-2021-22.md",
+ "generatedAt": "2026-10-19T16:00:07.302Z",
+ "rubrosHuella": "9084f20da316fa418cd52332cb294fa007e05ffe",
+ "rubros": [
+  {
+   "label": "Wages and salaries",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Operating expenses before depreciation & amortisation\" > desglose de \"Staff costs (see note 6)\"",
+   "choice": "wages_squad",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "wages_squad",
+     0.89
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Profit on disposal of players",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Sponsorship and advertising",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "Gate receipts",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Broadcasting",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Other income",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Amortisation",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "player_amortisation",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "player_amortisation",
+     0.55
+    ],
+    [
+     "other_amortisation",
+     0.26
+    ],
+    [
+     "depreciation",
+     0.1
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Depreciation",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 981
+  },
+  {
+   "label": "Other pension costs",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Operating expenses before depreciation & amortisation\" > desglose de \"Staff costs (see note 6)\"",
+   "choice": "wages_squad",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "wages_squad",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "Social security costs",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Operating expenses before depreciation & amortisation\" > desglose de \"Staff costs (see note 6)\"",
+   "choice": "wages_squad",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "wages_squad",
+     0.93
+    ],
+    [
+     "match_organisation_expense",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Other commercial activities",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"TURNOVER\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.65
+    ],
+    [
+     "other_income",
+     0.35
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1017
+  },
+  {
+   "label": "Other operating charges",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Operating expenses before depreciation & amortisation\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1013
+  }
+ ]
+}

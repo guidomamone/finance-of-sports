@@ -83,6 +83,7 @@ const LEAGUES = {
   'es-segunda':        { name:'Segunda División',      full:'Segunda División de España',          country:'ES', sport:'futbol', tier:2 },
   'gb-premierleague':  { name:'Premier League',        full:'Premier League',                      country:'GB', sport:'futbol', tier:1 },
   'gb-championship':   { name:'Championship',          full:'EFL Championship',                    country:'GB', sport:'futbol', tier:2 },
+  'gb-scottishpremiership': { name:'Premiership',       full:'Scottish Premiership',                country:'GB', sport:'futbol', tier:1 },
   'ee-meistriliiga':   { name:'Meistriliiga',           full:'Meistriliiga de Estonia',             country:'EE', sport:'futbol', tier:1 },
   'gr-superleague':    { name:'Super League',           full:'Super League Greece',                 country:'GR', sport:'futbol', tier:1 },
   'hr-hnl':            { name:'HNL',                    full:'Hrvatska nogometna liga',             country:'HR', sport:'futbol', tier:1 },

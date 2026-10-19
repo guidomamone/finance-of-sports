@@ -1,0 +1,125 @@
+{
+ "md": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2022-23.md",
+ "generatedAt": "2026-10-19T16:00:44.342Z",
+ "rubrosHuella": "a66af8b2d011d83c154fb56263c6f03794c1de4a",
+ "rubros": [
+  {
+   "label": "Gate Receipts",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Central Awards",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "competition_bonus",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Broadcasting",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Compensation",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Sponsorship and other Commercial Activities",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Profit on disposal of players' registrations",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Operating expenses before depreciation, amortisation & impairment",
+   "lado": "expense",
+   "page": 14,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortisation of player registrations",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Depreciation and amortisation\"",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciation of fixed assets",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Depreciation and amortisation\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Profit on disposal of other assets",
+   "lado": "revenue",
+   "page": 14,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1034
+  }
+ ]
+}

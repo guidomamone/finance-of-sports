@@ -1,0 +1,286 @@
+{
+ "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2021-22.md",
+ "mdSha1": "57ab2e724cd57a8d5e624f6a0128aa0233c9924b",
+ "ubicacionSha1": "aff984a22633784d0ed62c53880453c40331f03b",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:31:34.811Z",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [
+   "b4",
+   "b5"
+  ],
+  "notas_gastos": [
+   "b6",
+   "b7",
+   "b8",
+   "b10"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "unidades",
+   "evidencia": "L408: columnas '2022 £' y '2021 £'"
+  },
+  {
+   "bloque": "b4",
+   "escala": "unidades",
+   "evidencia": "L712: '2022 £'"
+  },
+  {
+   "bloque": "b5",
+   "escala": "unidades",
+   "evidencia": "L731: '2022 £'"
+  },
+  {
+   "bloque": "b6",
+   "escala": "unidades",
+   "evidencia": "L739: '2022 £'"
+  },
+  {
+   "bloque": "b7",
+   "escala": "unidades",
+   "evidencia": "L756: '2022 £'"
+  },
+  {
+   "bloque": "b8",
+   "escala": "unidades",
+   "evidencia": "L766: '2022 £'"
+  },
+  {
+   "bloque": "b10",
+   "escala": "unidades",
+   "evidencia": "L785: '2022 £'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 410,
+   "etiqueta": "Turnover",
+   "actual": "163,743,904",
+   "anterior": "175,628,848",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 411,
+   "etiqueta": "Administrative expenses",
+   "actual": "(145,805,056)",
+   "anterior": "(210,841,691)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 412,
+   "etiqueta": "Exceptional administrative expenses",
+   "actual": "(10,000,000)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 413,
+   "etiqueta": "Other operating income",
+   "actual": "250,000",
+   "anterior": "2,500,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 414,
+   "etiqueta": "Operating profit/(loss)",
+   "actual": "8,188,848",
+   "anterior": "(32,712,843)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 415,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(282,155)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 416,
+   "etiqueta": "Profit/(loss) before taxation",
+   "actual": "7,906,693",
+   "anterior": "(32,712,843)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 417,
+   "etiqueta": "Tax on profit/(loss)",
+   "actual": "(1,434,468)",
+   "anterior": "625,640",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 418,
+   "etiqueta": "Profit/(loss) for the financial year",
+   "actual": "6,472,225",
+   "anterior": "(32,087,203)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 714,
+   "etiqueta": "Gate Receipts",
+   "actual": "16,062,996",
+   "anterior": "310,542",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b4",
+   "linea": 715,
+   "etiqueta": "Broadcasting",
+   "actual": "123,211,017",
+   "anterior": "157,143,131",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b4",
+   "linea": 716,
+   "etiqueta": "Sponsorship",
+   "actual": "12,703,334",
+   "anterior": "14,332,283",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b4",
+   "linea": 717,
+   "etiqueta": "Commercial",
+   "actual": "11,766,557",
+   "anterior": "3,842,892",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b4",
+   "linea": 718,
+   "etiqueta": "",
+   "actual": "163,743,904",
+   "anterior": "175,628,848",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b5",
+   "linea": 733,
+   "etiqueta": "Insurance claims receivable",
+   "actual": "250,000",
+   "anterior": "2,500,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b8",
+   "linea": 768,
+   "etiqueta": "Wages and salaries",
+   "actual": "8,000,057",
+   "anterior": "6,685,914",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 769,
+   "etiqueta": "Social security costs",
+   "actual": "975,480",
+   "anterior": "909,298",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 770,
+   "etiqueta": "Other pension costs (note 20)",
+   "actual": "396,337",
+   "anterior": "358,876",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 771,
+   "etiqueta": "",
+   "actual": "9,371,874",
+   "anterior": "7,954,088",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 418,
+  "actual": "6,472,225",
+  "anterior": "(32,087,203)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se dejan afuera de la carga los cuadros informativos de b6 (L741-L743), b7 (L758) y b10 (L787) por ser cargos incluidos en 'Administrative expenses' y no un desglose completo?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Administrative expenses",
+   "texto": "Son partidas sueltas 'after charging' (depreciación, honorarios auditoría, remuneración directores) que no suman el renglón y podrían duplicar gastos.",
+   "bloques": [
+    "b6",
+    "b7",
+    "b10"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se confirma que no existe en el documento un cuadro 'Salarios del plantel' distinto de los costos de personal de b8 (L768-L771, total 9,371,874)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Administrative expenses",
+   "texto": "b8 muestra solo 9,4 millones de staff costs, muy bajo para un club de Premier; posiblemente es la sociedad sin el plantel, o falta otro cuadro.",
+   "bloques": [
+    "b8"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "No hay total de ingresos ni de gastos impresos en el estado. El único cuadro de salarios hallado es b8 (Wages and salaries etc.), cargado como desglose parcial de Administrative expenses. Las notas b6, b7, b10 no se cargaron por ser informativas."
+}

@@ -1,5 +1,653 @@
 {
  "gb-premierleague": {
+  "2020": {
+   "pagina": "2019–20 Premier League",
+   "lang": "en",
+   "revid": 1378847413,
+   "estadios": [
+    [
+     {
+      "club": "Arsenal",
+      "estadio": "Emirates Stadium",
+      "capacidad": 60704
+     },
+     {
+      "club": "Aston Villa",
+      "estadio": "Villa Park",
+      "capacidad": 42785
+     },
+     {
+      "club": "Bournemouth",
+      "estadio": "Dean Court",
+      "capacidad": 11329
+     },
+     {
+      "club": "Brighton & Hove Albion",
+      "estadio": "Falmer Stadium",
+      "capacidad": 30750
+     },
+     {
+      "club": "Burnley",
+      "estadio": "Turf Moor",
+      "capacidad": 21944
+     },
+     {
+      "club": "Chelsea",
+      "estadio": "Stamford Bridge",
+      "capacidad": 40834
+     },
+     {
+      "club": "Crystal Palace",
+      "estadio": "Selhurst Park",
+      "capacidad": 25486
+     },
+     {
+      "club": "Everton",
+      "estadio": "Goodison Park",
+      "capacidad": 39414
+     },
+     {
+      "club": "Leicester City",
+      "estadio": "King Power Stadium",
+      "capacidad": 32243
+     },
+     {
+      "club": "Liverpool",
+      "estadio": "Anfield",
+      "capacidad": 53394
+     },
+     {
+      "club": "Manchester City",
+      "estadio": "City of Manchester Stadium",
+      "capacidad": 55097
+     },
+     {
+      "club": "Manchester United",
+      "estadio": "Old Trafford",
+      "capacidad": 74879
+     },
+     {
+      "club": "Newcastle United",
+      "estadio": "St James' Park",
+      "capacidad": 52388
+     },
+     {
+      "club": "Norwich City",
+      "estadio": "Carrow Road",
+      "capacidad": 27244
+     },
+     {
+      "club": "Sheffield United",
+      "estadio": "Bramall Lane",
+      "capacidad": 32125
+     },
+     {
+      "club": "Southampton",
+      "estadio": "St Mary's Stadium",
+      "capacidad": 32505
+     },
+     {
+      "club": "Tottenham Hotspur",
+      "estadio": "Tottenham Hotspur Stadium",
+      "capacidad": 62303
+     },
+     {
+      "club": "Watford",
+      "estadio": "Vicarage Road",
+      "capacidad": 22220
+     },
+     {
+      "club": "West Ham United",
+      "estadio": "London Stadium",
+      "capacidad": 60000
+     },
+     {
+      "club": "Wolverhampton Wanderers",
+      "estadio": "Molineux Stadium",
+      "capacidad": 32050
+     }
+    ]
+   ],
+   "kits": [
+    {
+     "soloActual": false,
+     "filas": [
+      {
+       "club": "Arsenal",
+       "sponsor": "Emirates",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Aston Villa",
+       "sponsor": "W88",
+       "marca": "Kappa"
+      },
+      {
+       "club": "Bournemouth",
+       "sponsor": "Vitality",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Brighton & Hove Albion",
+       "sponsor": "American Express",
+       "marca": "Nike"
+      },
+      {
+       "club": "Burnley",
+       "sponsor": "LoveBet",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Chelsea",
+       "sponsor": "Three",
+       "marca": "Nike"
+      },
+      {
+       "club": "Crystal Palace",
+       "sponsor": "ManBetX",
+       "marca": "Puma"
+      },
+      {
+       "club": "Everton",
+       "sponsor": "SportPesa",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Leicester City",
+       "sponsor": "King Power",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Liverpool",
+       "sponsor": "Standard Chartered",
+       "marca": "New Balance"
+      },
+      {
+       "club": "Manchester City",
+       "sponsor": "Etihad Airways",
+       "marca": "Puma"
+      },
+      {
+       "club": "Manchester United",
+       "sponsor": "Chevrolet",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Newcastle United",
+       "sponsor": "Fun88",
+       "marca": "Puma"
+      },
+      {
+       "club": "Norwich City",
+       "sponsor": "Dafabet",
+       "marca": "Erreà"
+      },
+      {
+       "club": "Sheffield United",
+       "sponsor": "Union Standard Group",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Southampton",
+       "sponsor": "LD Sports",
+       "marca": "Under Armour"
+      },
+      {
+       "club": "Tottenham Hotspur",
+       "sponsor": "AIA",
+       "marca": "Nike"
+      },
+      {
+       "club": "Watford",
+       "sponsor": "Sportsbet.io",
+       "marca": "Adidas"
+      },
+      {
+       "club": "West Ham United",
+       "sponsor": "Betway",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Wolverhampton Wanderers",
+       "sponsor": "ManBetX",
+       "marca": "Adidas"
+      }
+     ]
+    }
+   ]
+  },
+  "2021": {
+   "pagina": "2020–21 Premier League",
+   "lang": "en",
+   "revid": 1376692557,
+   "estadios": [
+    [
+     {
+      "club": "Arsenal",
+      "estadio": "Emirates Stadium",
+      "capacidad": 60704
+     },
+     {
+      "club": "Aston Villa",
+      "estadio": "Villa Park",
+      "capacidad": 42682
+     },
+     {
+      "club": "Brighton & Hove Albion",
+      "estadio": "Falmer Stadium",
+      "capacidad": 30750
+     },
+     {
+      "club": "Burnley",
+      "estadio": "Turf Moor",
+      "capacidad": 21944
+     },
+     {
+      "club": "Chelsea",
+      "estadio": "Stamford Bridge",
+      "capacidad": 40834
+     },
+     {
+      "club": "Crystal Palace",
+      "estadio": "Selhurst Park",
+      "capacidad": 25486
+     },
+     {
+      "club": "Everton",
+      "estadio": "Goodison Park",
+      "capacidad": 39414
+     },
+     {
+      "club": "Fulham",
+      "estadio": "Craven Cottage",
+      "capacidad": 19359
+     },
+     {
+      "club": "Leeds United",
+      "estadio": "Elland Road",
+      "capacidad": 37792
+     },
+     {
+      "club": "Leicester City",
+      "estadio": "King Power Stadium",
+      "capacidad": 32261
+     },
+     {
+      "club": "Liverpool",
+      "estadio": "Anfield",
+      "capacidad": 53394
+     },
+     {
+      "club": "Manchester City",
+      "estadio": "City of Manchester Stadium",
+      "capacidad": 55017
+     },
+     {
+      "club": "Manchester United",
+      "estadio": "Old Trafford",
+      "capacidad": 74140
+     },
+     {
+      "club": "Newcastle United",
+      "estadio": "St James' Park",
+      "capacidad": 52305
+     },
+     {
+      "club": "Sheffield United",
+      "estadio": "Bramall Lane",
+      "capacidad": 32050
+     },
+     {
+      "club": "Southampton",
+      "estadio": "St Mary's Stadium",
+      "capacidad": 32384
+     },
+     {
+      "club": "Tottenham Hotspur",
+      "estadio": "Tottenham Hotspur Stadium",
+      "capacidad": 62303
+     },
+     {
+      "club": "West Bromwich Albion",
+      "estadio": "The Hawthorns",
+      "capacidad": 26688
+     },
+     {
+      "club": "West Ham United",
+      "estadio": "London Stadium",
+      "capacidad": 60000
+     },
+     {
+      "club": "Wolverhampton Wanderers",
+      "estadio": "Molineux Stadium",
+      "capacidad": 32050
+     }
+    ]
+   ],
+   "kits": [
+    {
+     "soloActual": false,
+     "filas": [
+      {
+       "club": "Arsenal",
+       "sponsor": "Emirates",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Aston Villa",
+       "sponsor": "Cazoo",
+       "marca": "Kappa"
+      },
+      {
+       "club": "Brighton & Hove Albion",
+       "sponsor": "American Express",
+       "marca": "Nike"
+      },
+      {
+       "club": "Burnley",
+       "sponsor": "LoveBet",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Chelsea",
+       "sponsor": "Three",
+       "marca": "Nike"
+      },
+      {
+       "club": "Crystal Palace",
+       "sponsor": "W88",
+       "marca": "Puma"
+      },
+      {
+       "club": "Everton",
+       "sponsor": "Cazoo",
+       "marca": "Hummel"
+      },
+      {
+       "club": "Fulham",
+       "sponsor": "BetVictor",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Leeds United",
+       "sponsor": "SBOTOP",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Leicester City",
+       "sponsor": "{{Collapsible list|title = Two sponsors",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Liverpool",
+       "sponsor": "Standard Chartered",
+       "marca": "Nike"
+      },
+      {
+       "club": "Manchester City",
+       "sponsor": "Puma",
+       "marca": "Fernandinho|Fernandinho (footballer, born May 1985)}}"
+      },
+      {
+       "club": "Manchester United",
+       "sponsor": "Chevrolet",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Newcastle United",
+       "sponsor": "FUN88",
+       "marca": "Puma"
+      },
+      {
+       "club": "Sheffield United",
+       "sponsor": "Union Standard Group",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Southampton",
+       "sponsor": "Sportsbet.io",
+       "marca": "Under Armour"
+      },
+      {
+       "club": "Tottenham Hotspur",
+       "sponsor": "AIA",
+       "marca": "Nike"
+      },
+      {
+       "club": "West Bromwich Albion F.C.|West Bromwich Albion",
+       "sponsor": "Ideal Boilers",
+       "marca": "Puma"
+      },
+      {
+       "club": "West Ham United",
+       "sponsor": "Betway",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Wolverhampton Wanderers",
+       "sponsor": "ManBetX",
+       "marca": "Adidas"
+      }
+     ]
+    }
+   ]
+  },
+  "2022": {
+   "pagina": "2021–22 Premier League",
+   "lang": "en",
+   "revid": 1376972129,
+   "estadios": [
+    [
+     {
+      "club": "Arsenal",
+      "estadio": "Emirates Stadium",
+      "capacidad": 60704
+     },
+     {
+      "club": "Aston Villa",
+      "estadio": "Villa Park",
+      "capacidad": 42682
+     },
+     {
+      "club": "Brentford",
+      "estadio": "Brentford Community Stadium",
+      "capacidad": 17250
+     },
+     {
+      "club": "Brighton & Hove Albion",
+      "estadio": "Falmer Stadium",
+      "capacidad": 31800
+     },
+     {
+      "club": "Burnley",
+      "estadio": "Turf Moor",
+      "capacidad": 21944
+     },
+     {
+      "club": "Chelsea",
+      "estadio": "Stamford Bridge",
+      "capacidad": 40834
+     },
+     {
+      "club": "Crystal Palace",
+      "estadio": "Selhurst Park",
+      "capacidad": 25486
+     },
+     {
+      "club": "Everton",
+      "estadio": "Goodison Park",
+      "capacidad": 39414
+     },
+     {
+      "club": "Leeds United",
+      "estadio": "Elland Road",
+      "capacidad": 37792
+     },
+     {
+      "club": "Leicester City",
+      "estadio": "King Power Stadium",
+      "capacidad": 32312
+     },
+     {
+      "club": "Liverpool",
+      "estadio": "Anfield",
+      "capacidad": 53394
+     },
+     {
+      "club": "Manchester City",
+      "estadio": "City of Manchester Stadium",
+      "capacidad": 53400
+     },
+     {
+      "club": "Manchester United",
+      "estadio": "Old Trafford",
+      "capacidad": 74140
+     },
+     {
+      "club": "Newcastle United",
+      "estadio": "St James' Park",
+      "capacidad": 52305
+     },
+     {
+      "club": "Norwich City",
+      "estadio": "Carrow Road",
+      "capacidad": 27244
+     },
+     {
+      "club": "Southampton",
+      "estadio": "St Mary's Stadium",
+      "capacidad": 32384
+     },
+     {
+      "club": "Tottenham Hotspur",
+      "estadio": "Tottenham Hotspur Stadium",
+      "capacidad": 62850
+     },
+     {
+      "club": "Watford",
+      "estadio": "Vicarage Road",
+      "capacidad": 22200
+     },
+     {
+      "club": "West Ham United",
+      "estadio": "London Stadium",
+      "capacidad": 60000
+     },
+     {
+      "club": "Wolverhampton Wanderers",
+      "estadio": "Molineux Stadium",
+      "capacidad": 32050
+     }
+    ]
+   ],
+   "kits": [
+    {
+     "soloActual": false,
+     "filas": [
+      {
+       "club": "Arsenal",
+       "sponsor": "Emirates",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Aston Villa",
+       "sponsor": "Cazoo",
+       "marca": "Kappa"
+      },
+      {
+       "club": "Brentford",
+       "sponsor": "Hollywoodbets",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Brighton & Hove Albion",
+       "sponsor": "American Express",
+       "marca": "Nike"
+      },
+      {
+       "club": "Burnley",
+       "sponsor": "Spreadex Sports",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Chelsea",
+       "sponsor": "Three",
+       "marca": "Nike"
+      },
+      {
+       "club": "Crystal Palace",
+       "sponsor": "W88",
+       "marca": "Puma"
+      },
+      {
+       "club": "Everton",
+       "sponsor": "Cazoo",
+       "marca": "Hummel"
+      },
+      {
+       "club": "Leeds United",
+       "sponsor": "SBOTOP",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Leicester City",
+       "sponsor": "FBS",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Liverpool",
+       "sponsor": "Standard Chartered",
+       "marca": "Nike"
+      },
+      {
+       "club": "Manchester City",
+       "sponsor": "Etihad Airways",
+       "marca": "Puma"
+      },
+      {
+       "club": "Manchester United",
+       "sponsor": "TeamViewer",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Newcastle United",
+       "sponsor": "FUN88",
+       "marca": "Castore"
+      },
+      {
+       "club": "Norwich City",
+       "sponsor": "Lotus Cars",
+       "marca": "Joma"
+      },
+      {
+       "club": "Southampton",
+       "sponsor": "Sportsbet.io",
+       "marca": "Hummel"
+      },
+      {
+       "club": "Tottenham Hotspur",
+       "sponsor": "AIA",
+       "marca": "Nike"
+      },
+      {
+       "club": "Watford",
+       "sponsor": "Stake.com",
+       "marca": "Kelme"
+      },
+      {
+       "club": "West Ham United",
+       "sponsor": "Betway",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Wolverhampton Wanderers",
+       "sponsor": "ManBetX",
+       "marca": "Castore"
+      }
+     ]
+    }
+   ]
+  },
   "2023": {
    "pagina": "2022–23 Premier League",
    "lang": "en",
@@ -866,6 +1514,518 @@
   }
  },
  "gb-championship": {
+  "2019": {
+   "pagina": "2018–19 EFL Championship",
+   "lang": "en",
+   "revid": 1372863678,
+   "estadios": [
+    [
+     {
+      "club": "Aston Villa",
+      "estadio": "Villa Park",
+      "capacidad": 42790
+     },
+     {
+      "club": "Birmingham City",
+      "estadio": "St Andrew's",
+      "capacidad": 30015
+     },
+     {
+      "club": "Blackburn Rovers",
+      "estadio": "Ewood Park",
+      "capacidad": 31367
+     },
+     {
+      "club": "Bolton Wanderers",
+      "estadio": "University of Bolton Stadium",
+      "capacidad": 28723
+     },
+     {
+      "club": "Brentford",
+      "estadio": "Griffin Park",
+      "capacidad": 12300
+     },
+     {
+      "club": "Bristol City",
+      "estadio": "Ashton Gate",
+      "capacidad": 27000
+     },
+     {
+      "club": "Derby County",
+      "estadio": "Pride Park Stadium",
+      "capacidad": 33600
+     },
+     {
+      "club": "Hull City",
+      "estadio": "KCOM Stadium",
+      "capacidad": 25586
+     },
+     {
+      "club": "Ipswich Town",
+      "estadio": "Portman Road",
+      "capacidad": 30300
+     },
+     {
+      "club": "Leeds United",
+      "estadio": "Elland Road",
+      "capacidad": 37890
+     },
+     {
+      "club": "Middlesbrough",
+      "estadio": "Riverside Stadium",
+      "capacidad": 34000
+     },
+     {
+      "club": "Millwall",
+      "estadio": "The Den",
+      "capacidad": 20146
+     },
+     {
+      "club": "Norwich City",
+      "estadio": "Carrow Road",
+      "capacidad": 27244
+     },
+     {
+      "club": "Nottingham Forest",
+      "estadio": "City Ground",
+      "capacidad": 30445
+     },
+     {
+      "club": "Preston North End",
+      "estadio": "Deepdale",
+      "capacidad": 23408
+     },
+     {
+      "club": "Queens Park Rangers",
+      "estadio": "Loftus Road",
+      "capacidad": 18439
+     },
+     {
+      "club": "Reading",
+      "estadio": "Madejski Stadium",
+      "capacidad": 24161
+     },
+     {
+      "club": "Rotherham United",
+      "estadio": "New York Stadium",
+      "capacidad": 12021
+     },
+     {
+      "club": "Sheffield United",
+      "estadio": "Bramall Lane",
+      "capacidad": 32702
+     },
+     {
+      "club": "Sheffield Wednesday",
+      "estadio": "Hillsborough Stadium",
+      "capacidad": 39752
+     },
+     {
+      "club": "Stoke City",
+      "estadio": "Bet365 Stadium",
+      "capacidad": 30089
+     },
+     {
+      "club": "Swansea City",
+      "estadio": "Liberty Stadium",
+      "capacidad": 21088
+     },
+     {
+      "club": "West Bromwich Albion",
+      "estadio": "The Hawthorns",
+      "capacidad": 26850
+     },
+     {
+      "club": "Wigan Athletic",
+      "estadio": "DW Stadium",
+      "capacidad": 25133
+     }
+    ]
+   ],
+   "kits": [
+    {
+     "soloActual": false,
+     "filas": [
+      {
+       "club": "Aston Villa",
+       "sponsor": "32Red",
+       "marca": "Luke Sport"
+      },
+      {
+       "club": "Birmingham City",
+       "sponsor": "888sport",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Blackburn Rovers",
+       "sponsor": "10bet",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Bolton Wanderers",
+       "sponsor": "Betfred",
+       "marca": "Macron"
+      },
+      {
+       "club": "Brentford",
+       "sponsor": "LeoVegas",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Bristol City",
+       "sponsor": "Dunder",
+       "marca": "Avon"
+      },
+      {
+       "club": "Derby County",
+       "sponsor": "32Red",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Hull City",
+       "sponsor": "SportPesa",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Ipswich Town",
+       "sponsor": "Magical Vegas",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Leeds United",
+       "sponsor": "32Red",
+       "marca": "Kappa"
+      },
+      {
+       "club": "Middlesbrough",
+       "sponsor": "32Red",
+       "marca": "Hummel"
+      },
+      {
+       "club": "Millwall",
+       "sponsor": "TW Drainage",
+       "marca": "Macron"
+      },
+      {
+       "club": "Norwich City",
+       "sponsor": "LeoVegas",
+       "marca": "Erreà"
+      },
+      {
+       "club": "Nottingham Forest",
+       "sponsor": "BetBright",
+       "marca": "Macron"
+      },
+      {
+       "club": "Preston North End",
+       "sponsor": "32Red",
+       "marca": "Nike"
+      },
+      {
+       "club": "Queens Park Rangers",
+       "sponsor": "Royal Panda",
+       "marca": "Erreà"
+      },
+      {
+       "club": "Reading",
+       "sponsor": "Carabao",
+       "marca": "Puma"
+      },
+      {
+       "club": "Rotherham United",
+       "sponsor": "Hodge Clemco",
+       "marca": "Puma"
+      },
+      {
+       "club": "Sheffield United",
+       "sponsor": "Ramsdens Currency",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Sheffield Wednesday",
+       "sponsor": "Chansiri",
+       "marca": "Elev8"
+      },
+      {
+       "club": "Stoke City",
+       "sponsor": "bet365",
+       "marca": "Macron"
+      },
+      {
+       "club": "Swansea City",
+       "sponsor": "Bet UK",
+       "marca": "Joma"
+      },
+      {
+       "club": "West Bromwich Albion",
+       "sponsor": "Ideal Boilers",
+       "marca": "Puma"
+      },
+      {
+       "club": "Wigan Athletic",
+       "sponsor": "DW Sports Fitness",
+       "marca": "Puma"
+      }
+     ]
+    }
+   ]
+  },
+  "2022": {
+   "pagina": "2021–22 EFL Championship",
+   "lang": "en",
+   "revid": 1358361756,
+   "estadios": [
+    [
+     {
+      "club": "Bournemouth",
+      "estadio": "Dean Court",
+      "capacidad": 11364
+     },
+     {
+      "club": "Barnsley",
+      "estadio": "Oakwell",
+      "capacidad": 23287
+     },
+     {
+      "club": "Birmingham City",
+      "estadio": "St Andrew's",
+      "capacidad": 29409
+     },
+     {
+      "club": "Blackburn Rovers",
+      "estadio": "Ewood Park",
+      "capacidad": 31367
+     },
+     {
+      "club": "Blackpool",
+      "estadio": "Bloomfield Road",
+      "capacidad": 17338
+     },
+     {
+      "club": "Bristol City",
+      "estadio": "Ashton Gate Stadium",
+      "capacidad": 27000
+     },
+     {
+      "club": "Cardiff City",
+      "estadio": "Cardiff City Stadium",
+      "capacidad": 33280
+     },
+     {
+      "club": "Coventry City",
+      "estadio": "Coventry Building Society Arena",
+      "capacidad": 32609
+     },
+     {
+      "club": "Derby County",
+      "estadio": "Pride Park Stadium",
+      "capacidad": 33600
+     },
+     {
+      "club": "Fulham",
+      "estadio": "Craven Cottage",
+      "capacidad": 19359
+     },
+     {
+      "club": "Huddersfield Town",
+      "estadio": "Kirklees Stadium",
+      "capacidad": 24121
+     },
+     {
+      "club": "Hull City",
+      "estadio": "MKM Stadium",
+      "capacidad": 25586
+     },
+     {
+      "club": "Luton Town",
+      "estadio": "Kenilworth Road",
+      "capacidad": 10356
+     },
+     {
+      "club": "Middlesbrough",
+      "estadio": "Riverside Stadium",
+      "capacidad": 34742
+     },
+     {
+      "club": "Millwall",
+      "estadio": "The Den",
+      "capacidad": 20146
+     },
+     {
+      "club": "Nottingham Forest",
+      "estadio": "City Ground",
+      "capacidad": 30445
+     },
+     {
+      "club": "Peterborough United",
+      "estadio": "London Road Stadium",
+      "capacidad": 15314
+     },
+     {
+      "club": "Preston North End",
+      "estadio": "Deepdale",
+      "capacidad": 23404
+     },
+     {
+      "club": "Queens Park Rangers",
+      "estadio": "Loftus Road",
+      "capacidad": 18439
+     },
+     {
+      "club": "Reading",
+      "estadio": "Select Car Leasing Stadium",
+      "capacidad": 24161
+     },
+     {
+      "club": "Sheffield United",
+      "estadio": "Bramall Lane",
+      "capacidad": 32050
+     },
+     {
+      "club": "Stoke City",
+      "estadio": "bet365 Stadium",
+      "capacidad": 30089
+     },
+     {
+      "club": "Swansea City",
+      "estadio": "Swansea.com Stadium",
+      "capacidad": 21088
+     },
+     {
+      "club": "West Bromwich Albion",
+      "estadio": "The Hawthorns",
+      "capacidad": 26850
+     }
+    ]
+   ],
+   "kits": [
+    {
+     "soloActual": false,
+     "filas": [
+      {
+       "club": "Bournemouth",
+       "sponsor": "MSP Capital",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Barnsley",
+       "sponsor": "The Investment Room",
+       "marca": "Puma"
+      },
+      {
+       "club": "Birmingham City",
+       "sponsor": "BoyleSports",
+       "marca": "Nike"
+      },
+      {
+       "club": "Blackburn Rovers",
+       "sponsor": "Totally Wicked",
+       "marca": "Macron"
+      },
+      {
+       "club": "Blackpool",
+       "sponsor": "Blackpool Council",
+       "marca": "Puma"
+      },
+      {
+       "club": "Bristol City",
+       "sponsor": "MansionBet",
+       "marca": "Hummel"
+      },
+      {
+       "club": "Cardiff City",
+       "sponsor": "Tourism Malaysia",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Coventry City",
+       "sponsor": "BoyleSports",
+       "marca": "Hummel"
+      },
+      {
+       "club": "Derby County",
+       "sponsor": "32Red",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Fulham",
+       "sponsor": "World Mobile",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Huddersfield Town",
+       "sponsor": "Utilita",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Hull City",
+       "sponsor": "Giacom",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Luton Town",
+       "sponsor": "Utilita",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Middlesbrough",
+       "sponsor": "32Red",
+       "marca": "Hummel"
+      },
+      {
+       "club": "Millwall",
+       "sponsor": "Huski Chocolate",
+       "marca": "Macron"
+      },
+      {
+       "club": "Nottingham Forest",
+       "sponsor": "BOXT",
+       "marca": "Macron"
+      },
+      {
+       "club": "Peterborough United",
+       "sponsor": "Mick George Group",
+       "marca": "Puma"
+      },
+      {
+       "club": "Preston North End",
+       "sponsor": "PAR Group",
+       "marca": "Nike"
+      },
+      {
+       "club": "Queens Park Rangers",
+       "sponsor": "Ashville Holdings",
+       "marca": "Erreà"
+      },
+      {
+       "club": "Reading",
+       "sponsor": "Select Car Leasing",
+       "marca": "Macron"
+      },
+      {
+       "club": "Sheffield United",
+       "sponsor": "Randox",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Stoke City",
+       "sponsor": "bet365",
+       "marca": "Macron"
+      },
+      {
+       "club": "Swansea City",
+       "sponsor": "Swansea University",
+       "marca": "Joma"
+      },
+      {
+       "club": "West Bromwich Albion",
+       "sponsor": "Ideal Heating",
+       "marca": "Puma"
+      }
+     ]
+    }
+   ]
+  },
   "2023": {
    "pagina": "2022–23 EFL Championship",
    "lang": "en",
@@ -3937,6 +5097,81 @@
        "club": "York City",
        "sponsor": "Titan Wealth",
        "marca": "Hummel"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "gb-scottishpremiership": {
+  "2025": {
+   "pagina": "2024–25 Scottish Premiership",
+   "lang": "en",
+   "revid": 1374234380,
+   "estadios": [],
+   "kits": [
+    {
+     "soloActual": false,
+     "filas": [
+      {
+       "club": "Aberdeen",
+       "sponsor": "Texo Group",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Celtic",
+       "sponsor": "Dafabet",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Dundee",
+       "sponsor": "Crown Engineering Services",
+       "marca": "Macron"
+      },
+      {
+       "club": "Dundee United",
+       "sponsor": "Quinn Casino",
+       "marca": "Erreà"
+      },
+      {
+       "club": "Heart of Midlothian",
+       "sponsor": "Stellar Omada",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Hibernian",
+       "sponsor": "Bevvy.com",
+       "marca": "Joma"
+      },
+      {
+       "club": "Kilmarnock",
+       "sponsor": "James Frew Ltd",
+       "marca": "Hummel"
+      },
+      {
+       "club": "Motherwell",
+       "sponsor": "G4 Claims",
+       "marca": "Macron"
+      },
+      {
+       "club": "Rangers",
+       "sponsor": "Unibet",
+       "marca": "Castore"
+      },
+      {
+       "club": "Ross County",
+       "sponsor": "Ross-shire Engineering",
+       "marca": "Macron"
+      },
+      {
+       "club": "St Johnstone",
+       "sponsor": "GS Brown Construction",
+       "marca": "Macron"
+      },
+      {
+       "club": "St Mirren",
+       "sponsor": "Consilium Plumbing and Heating",
+       "marca": "Macron"
       }
      ]
     }

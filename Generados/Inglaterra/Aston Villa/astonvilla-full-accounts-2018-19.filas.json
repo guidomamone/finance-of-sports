@@ -1,0 +1,282 @@
+{
+ "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2018-19.pdf",
+ "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2018-19.md",
+ "mdSha1": "32ba487221317eb989aba54753bd93536932bec3",
+ "ubicacionSha1": "ece653cd26a053a1f950c1c53ae335ebf72829a9",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:30:36.787Z",
+ "ubicacion": {
+  "estado": [
+   "b6"
+  ],
+  "notas_ingresos": [
+   "b10"
+  ],
+  "notas_gastos": [
+   "b11",
+   "b13"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b6",
+   "escala": "unidades",
+   "evidencia": "L375: £ £"
+  },
+  {
+   "bloque": "b10",
+   "escala": "unidades",
+   "evidencia": "L676: £ £"
+  },
+  {
+   "bloque": "b11",
+   "escala": "unidades",
+   "evidencia": "L711: 2019 £ / 2018 £"
+  },
+  {
+   "bloque": "b13",
+   "escala": "unidades",
+   "evidencia": "L741: £ £"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b6",
+   "linea": 376,
+   "etiqueta": "Turnover",
+   "actual": "51,426,474",
+   "anterior": "64,623,864",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 377,
+   "etiqueta": "Administrative expenses",
+   "actual": "(163,043,101)",
+   "anterior": "(96,832,328)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 378,
+   "etiqueta": "Operating loss",
+   "actual": "(111,616,627)",
+   "anterior": "(32,208,464)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 379,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "55,141",
+   "anterior": "6,060",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 380,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "(215,410)",
+   "anterior": "(308,809)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 381,
+   "etiqueta": "Loss before taxation",
+   "actual": "(111,776,896)",
+   "anterior": "(32,511,213)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b10",
+   "linea": 678,
+   "etiqueta": "Gate receipts",
+   "actual": "12,745,422",
+   "anterior": "11,831,343",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b10",
+   "linea": 679,
+   "etiqueta": "Broadcasting",
+   "actual": "22,269,770",
+   "anterior": "40,343,918",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b10",
+   "linea": 680,
+   "etiqueta": "Sponsorship.",
+   "actual": "7,338,745",
+   "anterior": "4,757,400",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b10",
+   "linea": 681,
+   "etiqueta": "Commercial",
+   "actual": "9,072,537",
+   "anterior": "7,691,203",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b10",
+   "linea": 682,
+   "etiqueta": "UEFA solidarity and prize money",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b10",
+   "linea": 683,
+   "etiqueta": "",
+   "actual": "51,426,474",
+   "anterior": "64,623,864",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b11",
+   "linea": 713,
+   "etiqueta": "Depreciation of owned tangible fixed assets",
+   "actual": "1,808,321",
+   "anterior": "1,657,636",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b11",
+   "linea": 714,
+   "etiqueta": "Loss on disposal of tangible fixed assets",
+   "actual": "1,556,285",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b11",
+   "linea": 715,
+   "etiqueta": "Staff costs (note 4)",
+   "actual": "7,001,465",
+   "anterior": "6,077,837",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b11",
+   "linea": 716,
+   "etiqueta": "Auditors' remuneration for audit services",
+   "actual": "42,000",
+   "anterior": "42,000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b11",
+   "linea": 717,
+   "etiqueta": "Exceptional items – impairment of amounts due to the company relating to liabilities arising on promotion to the Premier League",
+   "actual": "30,000,000",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b13",
+   "linea": 743,
+   "etiqueta": "Wages and salaries",
+   "actual": "6,123,278",
+   "anterior": "5,150,535",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs (note 4)"
+  },
+  {
+   "bloque": "b13",
+   "linea": 744,
+   "etiqueta": "Social security costs",
+   "actual": "601,249",
+   "anterior": "653,248",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs (note 4)"
+  },
+  {
+   "bloque": "b13",
+   "linea": 745,
+   "etiqueta": "Other pension costs (note 17)",
+   "actual": "276,938",
+   "anterior": "274,054",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs (note 4)"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 376,
+  "actual": "51,426,474"
+ },
+ "total_gastos": {
+  "linea": 377,
+  "actual": "(163,043,101)"
+ },
+ "resultado": {
+  "linea": 381,
+  "actual": "(111,776,896)",
+  "anterior": "(32,511,213)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se confirma que el documento no tiene un renglón separado de salarios del plantel y que solo existe 'Wages and salaries' (L743) dentro de Staff costs?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "No aparece 'Salarios del plantel' en los bloques; el único dato salarial es Wages and salaries en L743 (£6,123,278), llamativamente bajo para un club, posiblemente porque los jugadores están empleados en otra sociedad del grupo.",
+   "bloques": [
+    "b13"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja la nota b11 (L713-L717) como detalle parcial de 'Administrative expenses' sin esperar que sume el total?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Administrative expenses",
+   "texto": "La nota b11 lista solo algunos cargos incluidos ('after charging') y no suma 163,043,101.",
+   "bloques": [
+    "b11"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "El estado no muestra impuesto ni resultado del ejercicio después de impuestos en el bloque; se toma Loss before taxation (L381) como resultado. Todo en libras (unidades)."
+}

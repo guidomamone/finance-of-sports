@@ -1,0 +1,335 @@
+{
+ "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2020-21.pdf",
+ "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2020-21.md",
+ "mdSha1": "a64eb938667ff731915738ca886a80865ff4ea2e",
+ "ubicacionSha1": "47085edc41ddc93e2a2730c4e2f728f2737e947c",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:31:09.732Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [
+   "b6"
+  ],
+  "notas_gastos": [
+   "b8",
+   "b9",
+   "b10",
+   "b12"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "unidades",
+   "evidencia": "Encabezado de columnas '2021 £' / '2020 £' (L360), importes en libras sin indicación de miles"
+  },
+  {
+   "bloque": "b6",
+   "escala": "unidades",
+   "evidencia": "Columnas '2021 £' / '2020 £' (L655)"
+  },
+  {
+   "bloque": "b8",
+   "escala": "unidades",
+   "evidencia": "Columnas '2021 £' / '2020 £' (L682)"
+  },
+  {
+   "bloque": "b9",
+   "escala": "unidades",
+   "evidencia": "Columnas '2021 £' / '2020 £' (L699)"
+  },
+  {
+   "bloque": "b10",
+   "escala": "unidades",
+   "evidencia": "Columnas '2021 £' / '2020 £' (L709)"
+  },
+  {
+   "bloque": "b12",
+   "escala": "unidades",
+   "evidencia": "Columnas '2021 £' / '2020 £' (L728)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 362,
+   "etiqueta": "Turnover",
+   "actual": "175,628,848",
+   "anterior": "107,863,788",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 363,
+   "etiqueta": "Administrative expenses",
+   "actual": "(210,849,675)",
+   "anterior": "(203,017,838)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 364,
+   "etiqueta": "Other operating income",
+   "actual": "2,500,000",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 365,
+   "etiqueta": "Profit/(loss) on sale of tangible assets",
+   "actual": "7,984",
+   "anterior": "(5,947)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 366,
+   "etiqueta": "Operating loss",
+   "actual": "(32,712,843)",
+   "anterior": "(95,159,997)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 367,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "-",
+   "anterior": "84,973",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 368,
+   "etiqueta": "Loss before taxation",
+   "actual": "(32,712,843)",
+   "anterior": "(95,075,024)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 369,
+   "etiqueta": "Tax on loss",
+   "actual": "625,640",
+   "anterior": "4,181,616",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 370,
+   "etiqueta": "Loss for the financial year",
+   "actual": "(32,087,203)",
+   "anterior": "(90,893,408)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 371,
+   "etiqueta": "Total comprehensive expense for the financial year",
+   "actual": "(32,087,203)",
+   "anterior": "(90,893,408)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 657,
+   "etiqueta": "Gate Receipts",
+   "actual": "310,542",
+   "anterior": "11,109,998",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b6",
+   "linea": 658,
+   "etiqueta": "Broadcasting",
+   "actual": "157,143,131",
+   "anterior": "77,727,663",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b6",
+   "linea": 659,
+   "etiqueta": "Sponsorship",
+   "actual": "14,332,283",
+   "anterior": "10,401,513",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b6",
+   "linea": 660,
+   "etiqueta": "Commercial",
+   "actual": "3,842,892",
+   "anterior": "8,624,614",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b6",
+   "linea": 661,
+   "etiqueta": "",
+   "actual": "175,628,848",
+   "anterior": "107,863,788",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b8",
+   "linea": 684,
+   "etiqueta": "Depreciation of tangible assets",
+   "actual": "2,082,194",
+   "anterior": "1,943,071",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 685,
+   "etiqueta": "(Profit)/loss on disposal of tangible assets",
+   "actual": "(7,984)",
+   "anterior": "5,947",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Profit/(loss) on sale of tangible assets"
+  },
+  {
+   "bloque": "b8",
+   "linea": 686,
+   "etiqueta": "Exchange differences",
+   "actual": "(109,655)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b9",
+   "linea": 701,
+   "etiqueta": "Fees payable to the Company's auditors for the audit of the Company's annual financial statements",
+   "actual": "42,000",
+   "anterior": "42,000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b10",
+   "linea": 711,
+   "etiqueta": "Wages and salaries",
+   "actual": "6,685,914",
+   "anterior": "7,226,272",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b10",
+   "linea": 712,
+   "etiqueta": "Social security costs",
+   "actual": "909,298",
+   "anterior": "805,828",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b10",
+   "linea": 713,
+   "etiqueta": "Other pension costs (note 19)",
+   "actual": "358,876",
+   "anterior": "285,400",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b10",
+   "linea": 714,
+   "etiqueta": "",
+   "actual": "7,954,088",
+   "anterior": "8,317,500",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b12",
+   "linea": 730,
+   "etiqueta": "Aggregate remuneration",
+   "actual": "1,074,717",
+   "anterior": "1,536,255",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Wages and salaries"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 362,
+  "actual": "175,628,848"
+ },
+ "total_gastos": {
+  "linea": 363,
+  "actual": "(210,849,675)"
+ },
+ "resultado": {
+  "linea": 370,
+  "actual": "(32,087,203)",
+  "anterior": "(90,893,408)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se acepta que este documento no tiene una fila de salarios del plantel y que los Staff costs de 7,954,088 (L711-L714) no se cargan como salarios del plantel?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Administrative expenses",
+   "texto": "Los staff costs de b10 (L714, 7,954,088) son muy bajos frente a Administrative expenses de 210,849,675 (L363): parecen solo empleados de esta sociedad, sin el plantel; no hay otro cuadro de salarios en los bloques.",
+   "bloques": [
+    "b10",
+    "b2"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se asigna 'Exchange differences' (L686) como financiero dentro de Administrative expenses?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Administrative expenses",
+   "texto": "La nota 6 (L680) es un análisis del resultado operativo; las diferencias de cambio no tienen renglón propio en el estado.",
+   "bloques": [
+    "b8"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Escala en libras (unidades) en todos los bloques. No se encontró ninguna fila de salarios del plantel: el único cuadro de personal (b10) suma 7,954,088 £ y parece excluir a los jugadores. Directors' remuneration (b12) es un desglose incluido en Wages and salaries. Administrative expenses es un único renglón de gasto y se informa como total de gastos."
+}

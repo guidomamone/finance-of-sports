@@ -1,0 +1,100 @@
+{
+  "md": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2022-23.md",
+  "pdf": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2022-23.pdf",
+  "club": "brighton-gb",
+  "year": 2023,
+  "generatedAt": "2026-10-19T15:59:09.702Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Matchday",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        24.492
+      ],
+      "glosa": "Día de partido"
+    },
+    {
+      "label": "Broadcasting",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        154.897
+      ],
+      "glosa": "Derechos de retransmisión"
+    },
+    {
+      "label": "Commercial",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        17.592
+      ],
+      "glosa": "Comercial"
+    },
+    {
+      "label": "Other",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        6.593
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Profit on player trading",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        121.361
+      ],
+      "glosa": "Beneficio por traspaso de jugadores"
+    },
+    {
+      "label": "Compensation received",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Other operating income\"",
+      "values": [
+        23.353
+      ],
+      "glosa": "Indemnizaciones recibidas"
+    },
+    {
+      "label": "Proceeds from insurance claim",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Other operating income\"",
+      "values": [
+        1.525
+      ],
+      "glosa": "Ingresos por indemnizaciones de seguros"
+    },
+    {
+      "label": "Cost of sales",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        5.579
+      ],
+      "glosa": "Coste de ventas"
+    },
+    {
+      "label": "Operating expenses",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        204.749
+      ],
+      "glosa": "Gastos de explotación"
+    }
+  ]
+}

@@ -209,6 +209,15 @@ const FX_CLOSE = {
   'CHF@2018-06-30': { fx: 0.9922, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10), última rueda hábil antes del cierre (2018-06-29, 2018-06-30 no es día hábil)' },
   'CHF@2020-06-30': { fx: 0.9467, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10) al 2020-06-30' },
   'CHF@2024-06-30': { fx: 0.8992, source: 'market_close', label: 'Noon buying rate de Nueva York (Reserva Federal, H.10), última rueda hábil antes del cierre (2024-06-28, 2024-06-30 no es día hábil)' },
+  'GBP@2023-05-31': { fx: 0.806842, source: 'market_close', label: 'Tipo spot del Bank of England al 2023-05-31' },
+  'GBP@2022-05-31': { fx: 0.793588, source: 'market_close', label: 'Tipo spot del Bank of England al 2022-05-31' },
+  'GBP@2022-06-30': { fx: 0.82352, source: 'market_close', label: 'Tipo spot del Bank of England al 2022-06-30' },
+  'GBP@2023-06-30': { fx: 0.786535, source: 'market_close', label: 'Tipo spot del Bank of England al 2023-06-30' },
+  'GBP@2019-05-31': { fx: 0.793525, source: 'market_close', label: 'Tipo spot del Bank of England al 2019-05-31' },
+  'GBP@2021-05-31': { fx: 0.705418, source: 'market_close', label: 'Tipo spot del Bank of England, última rueda hábil antes del cierre (2021-05-28, 2021-05-31 no es día hábil)' },
+  'GBP@2021-06-30': { fx: 0.723641, source: 'market_close', label: 'Tipo spot del Bank of England al 2021-06-30' },
+  'GBP@2020-05-31': { fx: 0.808538, source: 'market_close', label: 'Tipo spot del Bank of England, última rueda hábil antes del cierre (2020-05-29, 2020-05-31 no es día hábil)' },
+  'GBP@2020-06-30': { fx: 0.809127, source: 'market_close', label: 'Tipo spot del Bank of England al 2020-06-30' },
 };
 
 // fxMetaFor(meta): el tipo de cambio de un ejercicio (o de un overlay) como {fx, source, label, ref}. Es el ÚNICO lugar que resuelve

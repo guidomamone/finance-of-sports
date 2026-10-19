@@ -1,0 +1,80 @@
+{
+  "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2021-22.md",
+  "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2021-22.pdf",
+  "club": "astonvilla-gb",
+  "year": 2022,
+  "generatedAt": "2026-10-19T15:37:02.936Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Gate Receipts",
+      "lado": "revenue",
+      "page": 20,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        16.062996
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Broadcasting",
+      "lado": "revenue",
+      "page": 20,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        123.211017
+      ],
+      "glosa": "Ingresos por retransmisión"
+    },
+    {
+      "label": "Sponsorship",
+      "lado": "revenue",
+      "page": 20,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        12.703334
+      ],
+      "glosa": "Ingresos por patrocinio"
+    },
+    {
+      "label": "Commercial",
+      "lado": "revenue",
+      "page": 20,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        11.766557
+      ],
+      "glosa": "Ingresos comerciales"
+    },
+    {
+      "label": "Other operating income",
+      "lado": "revenue",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        0.25
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Administrative expenses",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        145.805056
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Exceptional administrative expenses",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        10
+      ],
+      "glosa": "Gastos de administración excepcionales"
+    }
+  ]
+}

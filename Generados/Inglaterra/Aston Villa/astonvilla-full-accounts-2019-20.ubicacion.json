@@ -1,0 +1,204 @@
+{
+ "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2019-20.pdf",
+ "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2019-20.md",
+ "mdSha1": "0f5da48930450be15bfbf605e08cd6d4a6b49678",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:57:35.785Z",
+ "perimetroClub": "individual",
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    39,
+    48
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 12,
+   "lineas": [
+    391,
+    402
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 13,
+   "lineas": [
+    416,
+    430
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 14,
+   "lineas": [
+    450,
+    466
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 20,
+   "lineas": [
+    685,
+    691
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 20,
+   "lineas": [
+    706,
+    710
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 21,
+   "lineas": [
+    723,
+    725
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 21,
+   "lineas": [
+    733,
+    738
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 21,
+   "lineas": [
+    742,
+    748
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 22,
+   "lineas": [
+    761,
+    765
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 22,
+   "lineas": [
+    775,
+    777
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 22,
+   "lineas": [
+    781,
+    783
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 22,
+   "lineas": [
+    787,
+    792
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 23,
+   "lineas": [
+    809,
+    818
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 24,
+   "lineas": [
+    837,
+    851
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 24,
+   "lineas": [
+    855,
+    862
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 25,
+   "lineas": [
+    881,
+    883
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 25,
+   "lineas": [
+    887,
+    894
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 25,
+   "lineas": [
+    904,
+    907
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 26,
+   "lineas": [
+    944,
+    948
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b5",
+  "b11"
+ ],
+ "notas_gastos": [
+  "b6",
+  "b8"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado de columnas '2020 £ | 2019 £' (importes en libras, sin indicación de miles)",
+ "moneda": "GBP",
+ "columna_ejercicio": "2020 £",
+ "columna_anterior": "2019 £",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los 'Staff costs' de la nota 7 (b8: Wages and salaries, Social security costs, Other pension costs) como salarios del plantel, aunque incluyen a todo el personal y no solo a los jugadores?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "La nota 7 (b8) abre el costo de personal total incluido en Administrative expenses; no hay apertura específica del plantel.",
+   "bloques": [
+    "b8"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas individuales de Aston Villa Football Club Limited (sociedad del club, no el grupo). Estado de resultados en b2; desglose de Turnover en b5; nota 5 (b6) con partidas incluidas en el resultado operativo; nota 7 (b8) con costos de personal, única fuente para salarios; b11 abre intereses a cobrar. Se excluyen b10 (remuneración de directores, ya incluida en b8), b9 (número de empleados), impuestos, balance y demás."
+}

@@ -1,0 +1,191 @@
+{
+ "pdf": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2022-23.md",
+ "generado": "2026-10-19T17:02:55.727Z",
+ "estado": "ok",
+ "clubId": "fulham-gb",
+ "year": 2023,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "\"Turnover\" 182.325 cierra; además se suman 2 línea(s) fuera de ese total (8.786)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "\"Operating expenses before depreciation, amortisation & impairment\" 171.338 cierra; además se suman 2 línea(s) fuera de ese total (46.711)"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 4.263256414560601e-14
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Operating expenses before depreciation, amortisation & impairment\" no suma el renglón (141.623 contra 171.338, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer que no afecta la carga: La nota de b7 es una lista de cargos ('stated after charging'), no un desglose exhaustivo; suma 141,623 de 171,338."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Operating expenses before depreciation, amortisation & impairment",
+   "suma": 141.623,
+   "objetivo": 171.338
+  }
+ ],
+ "totales": {
+  "ingresos": 191.111,
+  "gastos": 218.049,
+  "financiero": 0.323,
+  "impuesto": 0,
+  "resultadoImpreso": -26.615,
+  "resultadoParaCargar": -26.615,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Gate Receipts",
+   "lado": "ingreso",
+   "M": 15.17,
+   "pagina": 24,
+   "linea": 1201,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Central Awards",
+   "lado": "ingreso",
+   "M": 128.513,
+   "pagina": 24,
+   "linea": 1202,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Broadcasting",
+   "lado": "ingreso",
+   "M": 15.961,
+   "pagina": 24,
+   "linea": 1203,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Compensation",
+   "lado": "ingreso",
+   "M": 1.137,
+   "pagina": 24,
+   "linea": 1204,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Sponsorship and other Commercial Activities",
+   "lado": "ingreso",
+   "M": 21.544,
+   "pagina": 24,
+   "linea": 1205,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Profit on disposal of players' registrations",
+   "lado": "ingreso",
+   "M": 8.743,
+   "pagina": 14,
+   "linea": 660,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Profit on disposal of other assets",
+   "lado": "ingreso",
+   "M": 0.043,
+   "pagina": 14,
+   "linea": 661,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Operating expenses before depreciation, amortisation & impairment",
+   "lado": "gasto",
+   "M": 171.338,
+   "pagina": 14,
+   "linea": 656,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Depreciation of fixed assets",
+   "lado": "gasto",
+   "M": 1.094,
+   "pagina": 24,
+   "linea": 1224,
+   "origen": "nota que desglosa \"Depreciation and amortisation\""
+  },
+  {
+   "etiqueta": "Amortisation of player registrations",
+   "lado": "gasto",
+   "M": 45.617,
+   "pagina": 24,
+   "linea": 1225,
+   "origen": "nota que desglosa \"Depreciation and amortisation\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Net interest receivable",
+   "M": 0.323,
+   "linea": 663
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Taxation on loss",
+   "M": null,
+   "linea": 665
+  }
+ ],
+ "primerAnio": {
+  "escalon": 3,
+  "estado": "confirmado",
+  "clave": "137932d29e2f267f5a15da62275dbffc187d7533",
+  "rango": [
+   652,
+   671
+  ],
+  "lineasCargadas": [
+   1201,
+   1202,
+   1203,
+   1204,
+   1205,
+   660,
+   661,
+   656,
+   1224,
+   1225,
+   663,
+   665
+  ],
+  "user": "ESTADO DE RESULTADOS (líneas 652 a 671 del .md):\nL653: | | Notes | 2023 £'000 | 2022 £'000 |\nL654: |---|---:|---:|---:|\nL655: | **Turnover** | 2 | 182,325 | 71,589 |\nL656: | Operating expenses before depreciation, amortisation & impairment | 3 | (171,338) | (110,099) |\nL657: | **Operating profit/(loss) before depreciation, amortisation & impairment** | | 10,987 | (38,510) |\nL658: | Depreciation and amortisation | 3 | (46,711) | (31,890) |\nL659: | **Operating loss after depreciation, amortisation and impairment** | | (35,724) | (70,400) |\nL660: | Profit on disposal of players' registrations | | 8,743 | 12,479 |\nL661: | Profit on disposal of other assets | | 43 | 2 |\nL662: | **Loss before interest and taxation** | | (26,938) | (57,919) |\nL663: | Net interest receivable | 6 | 323 | 29 |\nL664: | **Loss before taxation** | | (26,615) | (57,890) |\nL665: | Taxation on loss | 7 | - | - |\nL666: | **Loss for the year** | | (26,615) | (57,890) |\nL667: | | | | |\nL668: | **Total comprehensive loss for the year** | | (26,615) | (57,890) |\nL670: All amounts relate to continuing operations.\n\nLO QUE SE CARGA:\n- ingreso · \"Gate Receipts\" · 15.17 · L1201 (de una nota)\n- ingreso · \"Central Awards\" · 128.513 · L1202 (de una nota)\n- ingreso · \"Broadcasting\" · 15.961 · L1203 (de una nota)\n- ingreso · \"Compensation\" · 1.137 · L1204 (de una nota)\n- ingreso · \"Sponsorship and other Commercial Activities\" · 21.544 · L1205 (de una nota)\n- ingreso · \"Profit on disposal of players' registrations\" · 8.743 · L660\n- ingreso · \"Profit on disposal of other assets\" · 0.043 · L661\n- gasto · \"Operating expenses before depreciation, amortisation & impairment\" · 171.338 · L656\n- gasto · \"Depreciation of fixed assets\" · 1.094 · L1224 (de una nota)\n- gasto · \"Amortisation of player registrations\" · 45.617 · L1225 (de una nota)\n- financiero · \"Net interest receivable\" · 0.323 · L663\n- impuesto · \"Taxation on loss\" · 0 · L665"
+ }
+}

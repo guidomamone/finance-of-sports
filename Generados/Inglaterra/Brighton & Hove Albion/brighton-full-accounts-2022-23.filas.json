@@ -1,0 +1,536 @@
+{
+ "pdf": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2022-23.md",
+ "mdSha1": "57dfa6fcbfdce96664f0a4eddcf6d0cd9e537802",
+ "ubicacionSha1": "86a18c67f2423023c67d0a800866d1a1b373363f",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T17:01:13.281Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [
+   "b6",
+   "b7",
+   "b10"
+  ],
+  "notas_gastos": [
+   "b8",
+   "b9",
+   "b11"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "miles",
+   "evidencia": "L586: £'000"
+  },
+  {
+   "bloque": "b6",
+   "escala": "miles",
+   "evidencia": "L907: 2023 £'000"
+  },
+  {
+   "bloque": "b7",
+   "escala": "miles",
+   "evidencia": "L918: 2023 £'000"
+  },
+  {
+   "bloque": "b10",
+   "escala": "miles",
+   "evidencia": "L990: 2023 £'000"
+  },
+  {
+   "bloque": "b8",
+   "escala": "miles",
+   "evidencia": "L936: £'000"
+  },
+  {
+   "bloque": "b9",
+   "escala": "miles",
+   "evidencia": "L976: 2023 £'000"
+  },
+  {
+   "bloque": "b11",
+   "escala": "miles",
+   "evidencia": "L998: 2023 £'000"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 587,
+   "etiqueta": "Turnover",
+   "actual": "203,574",
+   "anterior": "167,429",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 588,
+   "etiqueta": "Cost of sales",
+   "actual": "(5,579)",
+   "anterior": "(1,274)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 589,
+   "etiqueta": "Operating expenses",
+   "actual": "(204,749)",
+   "anterior": "(203,024)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 590,
+   "etiqueta": "Profit on player trading",
+   "actual": "121,361",
+   "anterior": "62,356",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 591,
+   "etiqueta": "Other operating income",
+   "actual": "24,878",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 592,
+   "etiqueta": "Operating profit before interest and taxation",
+   "actual": "139,485",
+   "anterior": "25,487",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 593,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "5,073",
+   "anterior": "3,287",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 594,
+   "etiqueta": "Interest payable and similar charges",
+   "actual": "(2,594)",
+   "anterior": "(1,379)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 595,
+   "etiqueta": "Profit before taxation",
+   "actual": "141,964",
+   "anterior": "27,395",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 596,
+   "etiqueta": "Tax on profit",
+   "actual": "(10,431)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 597,
+   "etiqueta": "Profit after taxation",
+   "actual": "131,533",
+   "anterior": "27,395",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 598,
+   "etiqueta": "Other comprehensive income",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 599,
+   "etiqueta": "Total comprehensive income for the year",
+   "actual": "131,533",
+   "anterior": "27,395",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 910,
+   "etiqueta": "Matchday",
+   "actual": "24,492",
+   "anterior": "20,571",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b6",
+   "linea": 911,
+   "etiqueta": "Broadcasting",
+   "actual": "154,897",
+   "anterior": "125,969",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b6",
+   "linea": 912,
+   "etiqueta": "Commercial",
+   "actual": "17,592",
+   "anterior": "15,171",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b6",
+   "linea": 913,
+   "etiqueta": "Other",
+   "actual": "6,593",
+   "anterior": "5,718",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b6",
+   "linea": 914,
+   "etiqueta": "",
+   "actual": "203,574",
+   "anterior": "167,429",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b7",
+   "linea": 920,
+   "etiqueta": "Compensation received",
+   "actual": "23,353",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b7",
+   "linea": 921,
+   "etiqueta": "Proceeds from insurance claim",
+   "actual": "1,525",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b7",
+   "linea": 922,
+   "etiqueta": "",
+   "actual": "24,878",
+   "anterior": "-",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b10",
+   "linea": 992,
+   "etiqueta": "Unwinding of discount on transfer fees receivable",
+   "actual": "4,608",
+   "anterior": "3,239",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b10",
+   "linea": 993,
+   "etiqueta": "Bank interest receivable",
+   "actual": "465",
+   "anterior": "48",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b10",
+   "linea": 994,
+   "etiqueta": "",
+   "actual": "5,073",
+   "anterior": "3,287",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b8",
+   "linea": 938,
+   "etiqueta": "Depreciation of tangible fixed assets",
+   "actual": "1,660",
+   "anterior": "1,893",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 939,
+   "etiqueta": "Amortisation of intangible assets",
+   "actual": "32,763",
+   "anterior": "45,438",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 940,
+   "etiqueta": "Impairment of intangible assets",
+   "actual": "-",
+   "anterior": "8,069",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 941,
+   "etiqueta": "Defined contribution pension cost",
+   "actual": "545",
+   "anterior": "523",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 942,
+   "etiqueta": "Operating lease payments",
+   "actual": "1,427",
+   "anterior": "1,414",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 946,
+   "etiqueta": "Fees payable to the Company's auditor for the audit of the Company's annual accounts",
+   "actual": "53",
+   "anterior": "42",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 948,
+   "etiqueta": "Taxation compliance services",
+   "actual": "15",
+   "anterior": "16",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 949,
+   "etiqueta": "All other services",
+   "actual": "8",
+   "anterior": "77",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 950,
+   "etiqueta": "",
+   "actual": "76",
+   "anterior": "93",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 955,
+   "etiqueta": "Wages and salaries",
+   "actual": "109,446",
+   "anterior": "98,791",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 956,
+   "etiqueta": "Social security costs",
+   "actual": "14,380",
+   "anterior": "13,404",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 957,
+   "etiqueta": "Pension costs",
+   "actual": "545",
+   "anterior": "523",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 958,
+   "etiqueta": "",
+   "actual": "124,371",
+   "anterior": "112,718",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b9",
+   "linea": 978,
+   "etiqueta": "Directors' emoluments",
+   "actual": "2,980",
+   "anterior": "3,346",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Wages and salaries"
+  },
+  {
+   "bloque": "b9",
+   "linea": 979,
+   "etiqueta": "Company contributions to defined contribution pension schemes",
+   "actual": "43",
+   "anterior": "28",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pension costs"
+  },
+  {
+   "bloque": "b9",
+   "linea": 980,
+   "etiqueta": "",
+   "actual": "3,023",
+   "anterior": "3,374",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Wages and salaries"
+  },
+  {
+   "bloque": "b11",
+   "linea": 1000,
+   "etiqueta": "Unwinding of discount on transfer fees payable",
+   "actual": "1,957",
+   "anterior": "477",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar charges"
+  },
+  {
+   "bloque": "b11",
+   "linea": 1001,
+   "etiqueta": "Bank and credit card charges",
+   "actual": "637",
+   "anterior": "902",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar charges"
+  },
+  {
+   "bloque": "b11",
+   "linea": 1002,
+   "etiqueta": "",
+   "actual": "2,594",
+   "anterior": "1,379",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar charges"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 599,
+  "actual": "131,533",
+  "anterior": "27,395"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan las filas de la nota 5 (L938-L942) como desglose de 'Operating expenses' aunque son partidas informativas que no suman el renglón?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Operating expenses",
+   "texto": "La nota 5 lista cargos incluidos en el resultado operativo, no un desglose completo, y la pensión (L941) duplica L957.",
+   "bloques": [
+    "b8"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se dejan afuera de la carga los cuadros de honorarios del auditor (L946-L950) y remuneración de directores (L978-L980) por ser detalle informativo ya incluido en otras partidas?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Operating expenses",
+   "texto": "Honorarios del auditor y remuneración de directores son subconjuntos de gastos operativos/salarios (L950, L980), no partidas adicionales.",
+   "bloques": [
+    "b8",
+    "b9"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se toma 'Wages and salaries' (L955) como salarios totales del club, dado que no hay un renglón separado 'Salarios del plantel'?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "El documento no separa salarios del plantel; la nota 7 (L955) da sueldos de todo el personal.",
+   "bloques": [
+    "b8"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Escala £'000 en todos los bloques. Se usó la columna Total 2023 del estado (L586). No se imprime total de ingresos ni de gastos. No existe renglón 'Salarios del plantel'; el gasto de personal está en nota 7 (L955-L958). La amortización de intangibles (L939, 32,763) coincide con Operating expenses de la columna Player trading."
+}

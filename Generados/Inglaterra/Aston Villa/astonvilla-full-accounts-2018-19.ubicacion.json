@@ -1,0 +1,195 @@
+{
+ "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2018-19.pdf",
+ "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2018-19.md",
+ "mdSha1": "32ba487221317eb989aba54753bd93536932bec3",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:30:19.007Z",
+ "perimetroClub": "individual",
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 6,
+   "lineas": [
+    167,
+    171
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 8,
+   "lineas": [
+    255,
+    255
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    296,
+    296
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 8,
+   "lineas": [
+    300,
+    300
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 8,
+   "lineas": [
+    306,
+    306
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 10,
+   "lineas": [
+    371,
+    381
+   ],
+   "tipo": "texto"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    404,
+    407
+   ],
+   "tipo": "texto"
+  },
+  "b8": {
+   "pagina": 11,
+   "lineas": [
+    409,
+    409
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 12,
+   "lineas": [
+    428,
+    435
+   ],
+   "tipo": "texto"
+  },
+  "b10": {
+   "pagina": 17,
+   "lineas": [
+    678,
+    683
+   ],
+   "tipo": "texto"
+  },
+  "b11": {
+   "pagina": 18,
+   "lineas": [
+    711,
+    717
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 18,
+   "lineas": [
+    721,
+    729
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 19,
+   "lineas": [
+    743,
+    745
+   ],
+   "tipo": "texto"
+  },
+  "b14": {
+   "pagina": 20,
+   "lineas": [
+    765,
+    765
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 21,
+   "lineas": [
+    799,
+    803
+   ],
+   "tipo": "texto"
+  },
+  "b16": {
+   "pagina": 22,
+   "lineas": [
+    818,
+    829
+   ],
+   "tipo": "texto"
+  },
+  "b17": {
+   "pagina": 23,
+   "lineas": [
+    846,
+    849
+   ],
+   "tipo": "texto"
+  },
+  "b18": {
+   "pagina": 23,
+   "lineas": [
+    859,
+    863
+   ],
+   "tipo": "texto"
+  },
+  "b19": {
+   "pagina": 25,
+   "lineas": [
+    934,
+    937
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6"
+ ],
+ "notas_ingresos": [
+  "b10"
+ ],
+ "notas_gastos": [
+  "b11",
+  "b13"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezados de columnas en '£' (2019 £ / 2018 £), importes impresos completos (ej. 103,741,764)",
+ "moneda": "GBP",
+ "columna_ejercicio": "2019 £",
+ "columna_anterior": "2018 £",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los salarios del plantel desde el cuadro de remuneración 'Wages and salaries' (b13), sabiendo que no separa jugadores de otro personal?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "El documento solo abre los costes de personal en sueldos, seguridad social y pensiones (pág. 19), sin desglose entre plantel y resto del personal.",
+   "bloques": [
+    "b13"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas individuales de Aston Villa Football Club Limited (nº 03375789). Estado de resultados en b6 (pág. 10). b10 abre el Turnover (gate receipts, broadcasting, sponsorship, commercial). b11 es la nota 3 de cargos incluidos en el resultado (amortizaciones, staff costs, partidas excepcionales). b13 abre los staff costs (nota 4). Se excluyen balance, patrimonio, impuestos, activo fijo, deudores, acreedores y arrendamientos."
+}

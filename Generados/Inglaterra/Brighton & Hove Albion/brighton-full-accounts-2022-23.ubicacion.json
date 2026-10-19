@@ -1,0 +1,214 @@
+{
+ "pdf": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2022-23.md",
+ "mdSha1": "57dfa6fcbfdce96664f0a4eddcf6d0cd9e537802",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T17:00:43.094Z",
+ "perimetroClub": null,
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    94,
+    103
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 16,
+   "lineas": [
+    584,
+    599
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 17,
+   "lineas": [
+    614,
+    637
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 18,
+   "lineas": [
+    654,
+    662
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 22,
+   "lineas": [
+    786,
+    788
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 25,
+   "lineas": [
+    907,
+    914
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 25,
+   "lineas": [
+    918,
+    922
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 26,
+   "lineas": [
+    933,
+    962
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 27,
+   "lineas": [
+    976,
+    980
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 27,
+   "lineas": [
+    990,
+    994
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 27,
+   "lineas": [
+    998,
+    1002
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 28,
+   "lineas": [
+    1014,
+    1016
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 28,
+   "lineas": [
+    1022,
+    1035
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 29,
+   "lineas": [
+    1054,
+    1068
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 30,
+   "lineas": [
+    1081,
+    1112
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 31,
+   "lineas": [
+    1124,
+    1132
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 31,
+   "lineas": [
+    1138,
+    1140
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 31,
+   "lineas": [
+    1144,
+    1154
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 32,
+   "lineas": [
+    1169,
+    1186
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 33,
+   "lineas": [
+    1199,
+    1204
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 33,
+   "lineas": [
+    1232,
+    1237
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b6",
+  "b7",
+  "b10"
+ ],
+ "notas_gastos": [
+  "b8",
+  "b9",
+  "b11"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Encabezados de notas en £'000; el estado b2 muestra '2023 | 2022' sin escala visible en el índice",
+ "moneda": "GBP",
+ "columna_ejercicio": "2023",
+ "columna_anterior": "2022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El estado de resultados (b2, pág. 16) está expresado en £'000?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El encabezado de b2 no muestra la escala, aunque el resto de los cuadros indica £'000.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas individuales de The Brighton and Hove Albion Football Club Limited. b2 es el estado de resultados (Statement of comprehensive income). b8 (nota 5, Operating profit) incluye los costes de personal: wages and salaries y el número de empleados, con Player staff y Non-playing staff. Esa nota es la fuente de 'Salarios del plantel'. b1 es un resumen de la revisión del negocio y no se carga."
+}

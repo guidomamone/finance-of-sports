@@ -4,40 +4,68 @@
 window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
 Object.assign(window.CLUB_CONTEXT, {
   'arsenal-gb': {
+    2022: {"estadio":"Emirates Stadium","capacidad":60704,"sponsor":"Emirates","marca":"Adidas","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
+    2023: {"estadio":"Emirates Stadium","capacidad":60704,"sponsor":"Emirates","marca":"Adidas","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"Emirates Stadium","capacidad":60704,"sponsor":"Emirates","marca":"Adidas","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Emirates Stadium","capacidad":60704,"sponsor":"Emirates","marca":"Adidas","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'astonvilla-gb': {
+    2019: {"estadio":"Villa Park","capacidad":42790,"sponsor":"32Red","marca":"Luke Sport","temporada":"2018–19 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372863678"},
+    2020: {"estadio":"Villa Park","capacidad":42785,"sponsor":"W88","marca":"Kappa","temporada":"2019–20 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378847413"},
+    2021: {"estadio":"Villa Park","capacidad":42682,"sponsor":"Cazoo","marca":"Kappa","temporada":"2020–21 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376692557"},
+    2022: {"estadio":"Villa Park","capacidad":42682,"sponsor":"Cazoo","marca":"Kappa","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
+    2023: {"estadio":"Villa Park","capacidad":42657,"sponsor":"Cazoo","marca":"Castore","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2025: {"estadio":"Villa Park","capacidad":42918,"sponsor":"Betano","marca":"Adidas","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'bournemouth-gb': {
+    2022: {"estadio":"Dean Court","capacidad":11364,"sponsor":"MSP Capital","marca":"Umbro","temporada":"2021–22 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1358361756"},
+    2023: {"estadio":"Dean Court","capacidad":11307,"sponsor":"Dafabet","marca":"Umbro","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"Dean Court","capacidad":11307,"sponsor":"Dafabet","marca":"Umbro","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Dean Court","capacidad":11307,"sponsor":"bj88","marca":"Umbro","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'brentford-gb': {
+    2022: {"estadio":"Brentford Community Stadium","capacidad":17250,"sponsor":"Hollywoodbets","marca":"Umbro","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
+    2023: {"estadio":"Brentford Community Stadium","capacidad":17250,"sponsor":"Hollywoodbets","marca":"Umbro","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"Brentford Community Stadium","capacidad":17250,"sponsor":"Hollywoodbets","marca":"Umbro","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Brentford Community Stadium","capacidad":17250,"sponsor":"Hollywoodbets","marca":"Umbro","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'brighton-gb': {
+    2020: {"estadio":"Falmer Stadium","capacidad":30750,"sponsor":"American Express","marca":"Nike","temporada":"2019–20 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378847413"},
+    2021: {"estadio":"Falmer Stadium","capacidad":30750,"sponsor":"American Express","marca":"Nike","temporada":"2020–21 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376692557"},
+    2022: {"estadio":"Falmer Stadium","capacidad":31800,"sponsor":"American Express","marca":"Nike","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
+    2023: {"estadio":"Falmer Stadium","capacidad":31780,"sponsor":"American Express","marca":"Nike","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"Falmer Stadium","capacidad":31876,"sponsor":"American Express","marca":"Nike","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Falmer Stadium","capacidad":31876,"sponsor":"American Express","marca":"Nike","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'burnley-gb': {
+    2022: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"Spreadex Sports","marca":"Umbro","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
+    2023: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"Classic Football Shirts (Home & Third) EMA Equity Partners (Away)","marca":"Umbro","temporada":"2022–23 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376810302"},
     2024: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"W88","marca":"Umbro","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"96.com","marca":"Castore","temporada":"2024–25 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373970605"},
   },
   'chelsea-gb': {
+    2020: {"estadio":"Stamford Bridge","capacidad":40834,"sponsor":"Three","marca":"Nike","temporada":"2019–20 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378847413"},
+    2021: {"estadio":"Stamford Bridge","capacidad":40834,"sponsor":"Three","marca":"Nike","temporada":"2020–21 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376692557"},
+    2022: {"estadio":"Stamford Bridge","capacidad":40834,"sponsor":"Three","marca":"Nike","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
+    2023: {"estadio":"Stamford Bridge","capacidad":40343,"sponsor":"Three","marca":"Nike","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
+    2024: {"estadio":"Stamford Bridge","capacidad":40173,"sponsor":"Infinite Athlete","marca":"Nike","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Stamford Bridge","capacidad":40173,"sponsor":"DAMAC Properties","marca":"Nike","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'crystalpalace-gb': {
+    2022: {"estadio":"Selhurst Park","capacidad":25486,"sponsor":"W88","marca":"Puma","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
+    2023: {"estadio":"Selhurst Park","capacidad":25486,"sponsor":"Cinch","marca":"Macron","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"Selhurst Park","capacidad":25486,"sponsor":"Cinch","marca":"Macron","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Selhurst Park","capacidad":25194,"sponsor":"NET88","marca":"Macron","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'everton-gb': {
+    2022: {"estadio":"Goodison Park","capacidad":39414,"sponsor":"Cazoo","marca":"Hummel","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
+    2023: {"estadio":"Goodison Park","capacidad":39414,"sponsor":"Stake.com","marca":"Hummel","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"Goodison Park","capacidad":39414,"sponsor":"Stake.com","marca":"Hummel","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Goodison Park","capacidad":39414,"sponsor":"Stake.com","marca":"Castore","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'fulham-gb': {
+    2021: {"estadio":"Craven Cottage","capacidad":19359,"sponsor":"BetVictor","marca":"Adidas","temporada":"2020–21 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376692557"},
+    2023: {"estadio":"Craven Cottage","capacidad":22384,"sponsor":"W88","marca":"Adidas","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"Craven Cottage","capacidad":24500,"sponsor":"SBOTOP","marca":"Adidas","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Craven Cottage","capacidad":24500,"sponsor":"SBOTOP","marca":"Adidas","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },

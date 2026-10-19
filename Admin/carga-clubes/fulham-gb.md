@@ -82,6 +82,85 @@ Suma Turnover (5 líneas) = 181.559 exacto. Total = 218.918 = officialTotalReven
 Ejercicio 2024. Fuente: Note 3 + Note 4 + Note 9. Suma = -251.022 = officialTotalExpenses.
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Fulham/fulham-full-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Fulham/fulham-full-accounts-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Gate Receipts | pág. 24, precedente |
+| 2 | Central Awards | pág. 24, precedente |
+| 3 | Broadcasting | pág. 24, precedente |
+| 4 | Compensation | pág. 24, precedente |
+| 5 | Sponsorship and other Commercial Activities | pág. 24, precedente |
+| 6 | Profit on disposal of players' registrations | pág. 14, precedente |
+| 7 | Profit on disposal of other assets | pág. 14, Jev 1 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Operating expenses before depreciation, amortisation & impairment | pág. 14, precedente |
+| 2 | Depreciation of fixed assets | pág. 24, precedente |
+| 3 | Amortisation of player registrations | pág. 24, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2022–23 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Fulham".
+```
+
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Fulham/fulham-full-accounts-2020-21.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Fulham/fulham-full-accounts-2020-21.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Gate Receipts | pág. 24, precedente |
+| 2 | Central Awards | pág. 24, precedente |
+| 3 | Broadcasting | pág. 24, precedente |
+| 4 | Compensation | pág. 24, precedente |
+| 5 | Sponsorship and other Commercial Activities | pág. 24, precedente |
+| 6 | Profit on disposal of players' registrations | pág. 14, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Operating expenses before depreciation, amortisation & impairment | pág. 14, precedente |
+| 2 | - Owned fixed assets | pág. 24, Jev 0.99 |
+| 3 | Amortisation of player registrations | pág. 24, precedente |
+| 4 | Impairment | pág. 14, precedente |
+| 5 | Loss on disposal of other assets | pág. 14, Jev 0.93 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2020–21 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Fulham".
+```
+
 ## Fuentes
 
 ### fulham-gb-full-accounts-2024
@@ -98,4 +177,20 @@ _note (data/):_
 
 ```text
 Transcripción completa en Clubes/Inglaterra/Fulham/fulham-full-accounts-2024-25.md. "Gate Receipts" de este ejercicio tiene un valor forzado por el total (ver duda de OCR en Admin/dudas-por-club.md).
+```
+
+### fulham-gb-full-accounts-2020-21
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Fulham/fulham-full-accounts-2020-21.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### fulham-gb-full-accounts-2022-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Fulham/fulham-full-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

@@ -1,0 +1,77 @@
+{
+ "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2018-19.md",
+ "club": "astonvilla-gb",
+ "year": 2019,
+ "generatedAt": "2026-10-19T16:00:50.211Z",
+ "rubrosHuella": "ce00b34a14ca67ff3393ef3131f9fc18d9bcf3c0",
+ "jevHuella": "461d37c555e626fbd6ca1abe761c041a04d0ac6b",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Gate receipts",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Ingresos por taquilla",
+   "page": 17,
+   "pendiente": false,
+   "ya": "matchday_competition",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "matchday_competition",
+   "confianza": 1
+  },
+  {
+   "label": "Broadcasting",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Derechos de retransmisión",
+   "page": 17,
+   "pendiente": false,
+   "ya": "broadcasting",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "broadcasting",
+   "confianza": 1
+  },
+  {
+   "label": "Sponsorship.",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Patrocinio",
+   "page": 17,
+   "pendiente": false,
+   "ya": "sponsorship_commercial",
+   "escalon": 0,
+   "precedenteDe": "sitio:familia",
+   "categoria": "sponsorship_commercial",
+   "confianza": 1
+  },
+  {
+   "label": "Commercial",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Ingresos comerciales",
+   "page": 17,
+   "pendiente": false,
+   "ya": "sponsorship_commercial",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "sponsorship_commercial",
+   "confianza": 1
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de administración",
+   "page": 10,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  }
+ ]
+}

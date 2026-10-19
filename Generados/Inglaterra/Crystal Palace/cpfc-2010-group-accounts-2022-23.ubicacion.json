@@ -1,0 +1,279 @@
+{
+ "pdf": "Clubes/Inglaterra/Crystal Palace/cpfc-2010-group-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Crystal Palace/cpfc-2010-group-accounts-2022-23.md",
+ "mdSha1": "88b196cbe67e7623d73b8ca1742ca444373dfaf5",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:57:52.463Z",
+ "perimetroClub": null,
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    42,
+    55
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 5,
+   "lineas": [
+    148,
+    161
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 13,
+   "lineas": [
+    442,
+    459
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 14,
+   "lineas": [
+    473,
+    495
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 15,
+   "lineas": [
+    512,
+    530
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 16,
+   "lineas": [
+    550,
+    559
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 17,
+   "lineas": [
+    572,
+    578
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 18,
+   "lineas": [
+    591,
+    613
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 19,
+   "lineas": [
+    629,
+    642
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 19,
+   "lineas": [
+    646,
+    657
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 21,
+   "lineas": [
+    739,
+    745
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 24,
+   "lineas": [
+    854,
+    861
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 24,
+   "lineas": [
+    875,
+    881
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 25,
+   "lineas": [
+    899,
+    904
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 25,
+   "lineas": [
+    910,
+    914
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 25,
+   "lineas": [
+    922,
+    926
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 26,
+   "lineas": [
+    953,
+    962
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 27,
+   "lineas": [
+    981,
+    996
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 27,
+   "lineas": [
+    1002,
+    1017
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 28,
+   "lineas": [
+    1033,
+    1048
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 28,
+   "lineas": [
+    1060,
+    1066
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 29,
+   "lineas": [
+    1082,
+    1086
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 29,
+   "lineas": [
+    1092,
+    1095
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 29,
+   "lineas": [
+    1099,
+    1107
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 29,
+   "lineas": [
+    1111,
+    1125
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 30,
+   "lineas": [
+    1152,
+    1161
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 31,
+   "lineas": [
+    1186,
+    1192
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 31,
+   "lineas": [
+    1196,
+    1202
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 31,
+   "lineas": [
+    1206,
+    1212
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 32,
+   "lineas": [
+    1233,
+    1240
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 32,
+   "lineas": [
+    1248,
+    1250
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b12"
+ ],
+ "notas_gastos": [
+  "b13",
+  "b14",
+  "b16"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Encabezado del estado: '2023 £000 | 2022 £000'",
+ "moneda": "GBP",
+ "columna_ejercicio": "2023 £000",
+ "columna_anterior": "2022 £000",
+ "perimetro": "consolidado",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados consolidado (b3). La sociedad individual solo informa su resultado en el balance (b5), sin cuenta de resultados propia. b12 desglosa el turnover, b13 los gastos operativos, b14 los costes de personal y b16 los intereses."
+}

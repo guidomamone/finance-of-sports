@@ -1,0 +1,130 @@
+{
+  "md": "Clubes/Inglaterra/Arsenal/arsenal-holdings-group-accounts-2021-22.md",
+  "pdf": "Clubes/Inglaterra/Arsenal/arsenal-holdings-group-accounts-2021-22.pdf",
+  "club": "arsenal-gb",
+  "year": 2022,
+  "generatedAt": "2026-10-19T15:37:02.793Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Turnover of the Group including its share of joint ventures",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        372.362
+      ],
+      "glosa": "Cifra de negocios del Grupo incluida su participación en negocios conjuntos"
+    },
+    {
+      "label": "Share of turnover of joint venture",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
+      "values": [
+        -0.455
+      ],
+      "glosa": "Participación en la cifra de negocios de negocios conjuntos"
+    },
+    {
+      "label": "Profit on disposal of player registrations",
+      "lado": "revenue",
+      "page": 18,
+      "section": "estado",
+      "values": [
+        22.238
+      ],
+      "glosa": "Beneficio por enajenación de derechos federativos"
+    },
+    {
+      "label": "Amortisation of player registrations",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Operating expenses\"",
+      "values": [
+        124.567
+      ],
+      "glosa": "Amortización de derechos federativos"
+    },
+    {
+      "label": "Impairment of player registrations",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Operating expenses\"",
+      "values": [
+        2.456
+      ],
+      "glosa": "Deterioro de valor de derechos federativos"
+    },
+    {
+      "label": "Depreciation and impairment charges (less amortisation of grants)",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Operating expenses\"",
+      "values": [
+        19.374
+      ],
+      "glosa": "Gastos de amortización y deterioro (menos imputación de subvenciones)"
+    },
+    {
+      "label": "Wages and salaries",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (see note 6) (including exceptional costs in the prior year)\"",
+      "values": [
+        185.581
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Social security costs",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (see note 6) (including exceptional costs in the prior year)\"",
+      "values": [
+        25
+      ],
+      "glosa": "Costes de seguridad social"
+    },
+    {
+      "label": "Other pension costs",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (see note 6) (including exceptional costs in the prior year)\"",
+      "values": [
+        1.764
+      ],
+      "glosa": "Otros costes de pensiones"
+    },
+    {
+      "label": "Cost of property sales",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Operating expenses\"",
+      "values": [
+        0.085
+      ],
+      "glosa": "Coste de venta de inmuebles"
+    },
+    {
+      "label": "Other operating charges",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Operating expenses\"",
+      "values": [
+        74.065
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Share of joint venture operating (loss)",
+      "lado": "expense",
+      "page": 18,
+      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
+      "values": [
+        1.524
+      ],
+      "glosa": "Participación en las pérdidas de explotación de negocios conjuntos"
+    }
+  ]
+}

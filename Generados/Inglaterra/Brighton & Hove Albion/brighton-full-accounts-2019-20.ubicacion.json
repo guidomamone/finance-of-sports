@@ -1,0 +1,240 @@
+{
+ "pdf": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2019-20.pdf",
+ "md": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2019-20.md",
+ "mdSha1": "eaa166707f2abfdfa6397b7f26d76f2c464dee71",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:59:16.235Z",
+ "perimetroClub": null,
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    69,
+    77
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 14,
+   "lineas": [
+    497,
+    510
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 15,
+   "lineas": [
+    525,
+    545
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 16,
+   "lineas": [
+    562,
+    570
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 23,
+   "lineas": [
+    882,
+    888
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 24,
+   "lineas": [
+    902,
+    907
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 24,
+   "lineas": [
+    911,
+    915
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 24,
+   "lineas": [
+    923,
+    928
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 24,
+   "lineas": [
+    932,
+    935
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 25,
+   "lineas": [
+    947,
+    951
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 25,
+   "lineas": [
+    961,
+    963
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 25,
+   "lineas": [
+    967,
+    971
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 26,
+   "lineas": [
+    983,
+    985
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 26,
+   "lineas": [
+    991,
+    1000
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 27,
+   "lineas": [
+    1016,
+    1030
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 28,
+   "lineas": [
+    1042,
+    1056
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 28,
+   "lineas": [
+    1060,
+    1062
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 29,
+   "lineas": [
+    1074,
+    1083
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 29,
+   "lineas": [
+    1089,
+    1091
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 29,
+   "lineas": [
+    1095,
+    1104
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 30,
+   "lineas": [
+    1117,
+    1121
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 30,
+   "lineas": [
+    1127,
+    1131
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 31,
+   "lineas": [
+    1164,
+    1169
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b5"
+ ],
+ "notas_gastos": [
+  "b6",
+  "b8",
+  "b12"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Encabezado del estado: '2020 Total £'000'",
+ "moneda": "GBP",
+ "columna_ejercicio": "2020 Total £'000",
+ "columna_anterior": "2019 Total £'000",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los salarios del plantel desde la nota 4 'Staff costs' (b6, 'Wages and salaries') como costo de personal total, sin separar jugadores de no jugadores?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "La nota 4 (b6) da costos de personal totales; el documento no separa plantel de staff no jugador en importes, solo en cantidad de empleados (b7).",
+   "bloques": [
+    "b6",
+    "b7"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera el resumen 'Business review' de pág. 3 (b1) porque repite el estado de resultados en otro formato?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b1 es un resumen del informe de gestión con Turnover, Football costs y Loss before taxation; el estado oficial es b2.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado de resultados individual de The Brighton and Hove Albion Football Club Limited (b2), con columnas por operaciones sin traspasos, traspasos de jugadores y total; usar la columna Total. Las notas que se eligieron son: Turnover (b5), costos de personal (b6), cargos operativos como amortización y depreciación (b8) e intereses (b12). b10 (remuneración de directores) queda afuera porque es un detalle que ya está incluido en b6. No hay un perímetro consolidado separado."
+}

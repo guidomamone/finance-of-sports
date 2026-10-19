@@ -93,3 +93,7 @@ _note (data/):_
 ```text
 Cuentas consolidadas del grupo, depositadas en Companies House (Reino Unido). Transcripción completa en Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2024-25.md. Ver comentario de cabecera de data/gb/chelsea-gb-data.js para el detalle completo de categorización y las dudas abiertas (Cost of sales sin desglose, gap de amortización/deterioro, grossDebt).
 ```
+
+## Gestiones (Finanzas 5, 2026-10-19)
+
+- Roman Abramovich, Dueño, 2003-07-01 a 2022-05-30 (cubre los cierres 2020 y 2021). El fin lo confirma el anuncio de la venta (2022-05-30). El inicio, el martes 1 de julio de 2003, sale de "takeover completed late Tuesday" (Daily Star, 2003-07-03: https://archive.thedailystar.net/2003/07/03/); Wikipedia dice solo "junio de 2003" y otra fuente el 2 de julio: el día no se confirmó, y no cambia a qué gestión pertenece ningún cierre cargado. Bruce Buck fue Chairman 2003-2022 (hasta 2022-06-30); el sitio registra al dueño, como en los demás clubes ingleses.

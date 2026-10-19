@@ -1,0 +1,425 @@
+{
+ "pdf": "Clubes/Inglaterra/Arsenal/arsenal-holdings-group-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Arsenal/arsenal-holdings-group-accounts-2022-23.md",
+ "mdSha1": "2f12581c64c30b03d764ebe81544c89877910cff",
+ "ubicacionSha1": "4df1b7912bd8cecb7b56fb76b098665d56222f33",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:07:30.568Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b11"
+  ],
+  "notas_gastos": [
+   "b12",
+   "b14",
+   "b16"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "miles",
+   "evidencia": "L765: 2023 Total £'000"
+  },
+  {
+   "bloque": "b11",
+   "escala": "miles",
+   "evidencia": "L1258: 2023 £'000"
+  },
+  {
+   "bloque": "b12",
+   "escala": "miles",
+   "evidencia": "L1269: 2023 £'000"
+  },
+  {
+   "bloque": "b14",
+   "escala": "miles",
+   "evidencia": "L1306: 2023 £'000"
+  },
+  {
+   "bloque": "b16",
+   "escala": "miles",
+   "evidencia": "L1341: 2023 £'000"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 767,
+   "etiqueta": "Turnover of the Group including its share of joint ventures",
+   "actual": "467,155",
+   "anterior": "372,362",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 768,
+   "etiqueta": "Share of turnover of joint venture",
+   "actual": "(470)",
+   "anterior": "(455)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 769,
+   "etiqueta": "Group turnover",
+   "actual": "466,685",
+   "anterior": "371,907",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 770,
+   "etiqueta": "Operating expenses",
+   "actual": "(521,929)",
+   "anterior": "(432,892)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 771,
+   "etiqueta": "Operating profit/(loss)",
+   "actual": "(55,244)",
+   "anterior": "(60,985)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 772,
+   "etiqueta": "Share of joint venture operating (loss)",
+   "actual": "(1,390)",
+   "anterior": "(1,524)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 773,
+   "etiqueta": "Profit on disposal of player registrations",
+   "actual": "10,732",
+   "anterior": "22,238",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 774,
+   "etiqueta": "Profit/(loss) before net finance charges",
+   "actual": "(45,902)",
+   "anterior": "(40,271)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 775,
+   "etiqueta": "Net finance charges",
+   "actual": "(6,222)",
+   "anterior": "(5,210)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 776,
+   "etiqueta": "(Loss) before taxation",
+   "actual": "(52,124)",
+   "anterior": "(45,481)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 777,
+   "etiqueta": "Tax on loss",
+   "actual": "-",
+   "anterior": "(1)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 778,
+   "etiqueta": "(Loss) for the financial year",
+   "actual": "(52,124)",
+   "anterior": "(45,482)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b11",
+   "linea": 1260,
+   "etiqueta": "Gate and other match day revenues",
+   "actual": "102,604",
+   "anterior": "79,389",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Group turnover"
+  },
+  {
+   "bloque": "b11",
+   "linea": 1261,
+   "etiqueta": "Broadcasting",
+   "actual": "191,194",
+   "anterior": "145,965",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Group turnover"
+  },
+  {
+   "bloque": "b11",
+   "linea": 1262,
+   "etiqueta": "Commercial",
+   "actual": "169,302",
+   "anterior": "141,745",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Group turnover"
+  },
+  {
+   "bloque": "b11",
+   "linea": 1263,
+   "etiqueta": "Property development",
+   "actual": "2,128",
+   "anterior": "2,830",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Group turnover"
+  },
+  {
+   "bloque": "b11",
+   "linea": 1264,
+   "etiqueta": "Player trading",
+   "actual": "1,457",
+   "anterior": "1,978",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Group turnover"
+  },
+  {
+   "bloque": "b11",
+   "linea": 1265,
+   "etiqueta": "",
+   "actual": "466,685",
+   "anterior": "371,907",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Group turnover"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1271,
+   "etiqueta": "Amortisation of player registrations",
+   "actual": "139,060",
+   "anterior": "124,567",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1272,
+   "etiqueta": "Impairment of player registrations (see note 2)",
+   "actual": "18,091",
+   "anterior": "2,456",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1273,
+   "etiqueta": "Depreciation and impairment charges (less amortisation of grants)",
+   "actual": "16,983",
+   "anterior": "19,374",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1274,
+   "etiqueta": "Total depreciation, amortisation and impairment",
+   "actual": "174,134",
+   "anterior": "146,397",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1275,
+   "etiqueta": "Staff costs (see note 6)",
+   "actual": "234,766",
+   "anterior": "212,345",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1276,
+   "etiqueta": "Cost of property sales",
+   "actual": "472",
+   "anterior": "85",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1277,
+   "etiqueta": "Other operating charges",
+   "actual": "112,557",
+   "anterior": "74,065",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b12",
+   "linea": 1278,
+   "etiqueta": "Total operating expenses",
+   "actual": "521,929",
+   "anterior": "432,892",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1308,
+   "etiqueta": "Bank loans and overdrafts",
+   "actual": "1,506",
+   "anterior": "717",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Net finance charges"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1309,
+   "etiqueta": "Other",
+   "actual": "3,355",
+   "anterior": "2,636",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Net finance charges"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1310,
+   "etiqueta": "Costs of raising long term finance",
+   "actual": "1,435",
+   "anterior": "1,859",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Net finance charges"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1311,
+   "etiqueta": "Total interest payable and similar charges",
+   "actual": "6,296",
+   "anterior": "5,212",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Net finance charges"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1312,
+   "etiqueta": "Interest receivable",
+   "actual": "(74)",
+   "anterior": "(2)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Net finance charges"
+  },
+  {
+   "bloque": "b14",
+   "linea": 1313,
+   "etiqueta": "Net finance charges",
+   "actual": "6,222",
+   "anterior": "5,210",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Net finance charges"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1344,
+   "etiqueta": "Wages and salaries",
+   "actual": "204,648",
+   "anterior": "185,581",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs (see note 6)"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1345,
+   "etiqueta": "Social security costs",
+   "actual": "28,569",
+   "anterior": "25,000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs (see note 6)"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1346,
+   "etiqueta": "Other pension costs",
+   "actual": "1,549",
+   "anterior": "1,764",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs (see note 6)"
+  },
+  {
+   "bloque": "b16",
+   "linea": 1347,
+   "etiqueta": "",
+   "actual": "234,766",
+   "anterior": "212,345",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Staff costs (see note 6)"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 769,
+  "actual": "466,685"
+ },
+ "total_gastos": {
+  "linea": 770,
+  "actual": "(521,929)"
+ },
+ "resultado": {
+  "linea": 778,
+  "actual": "(52,124)",
+  "anterior": "(45,482)"
+ },
+ "dudas": [],
+ "observaciones": "Escala miles de libras en todos los bloques. Se tomó la columna '2023 Total £'000' del estado; las columnas por actividad (operaciones/player trading) no se extrajeron. Los totales de las notas coinciden con el estado."
+}

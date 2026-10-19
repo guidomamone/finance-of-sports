@@ -1,0 +1,219 @@
+{
+ "pdf": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2021-22.md",
+ "mdSha1": "1158cf23ee34d88a2cf45150b34c0b6260e12e8a",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:59:09.600Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 4,
+   "lineas": [
+    129,
+    138
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 14,
+   "lineas": [
+    513,
+    529
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 15,
+   "lineas": [
+    548,
+    568
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 16,
+   "lineas": [
+    586,
+    606
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 24,
+   "lineas": [
+    904,
+    911
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 24,
+   "lineas": [
+    919,
+    933
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 24,
+   "lineas": [
+    937,
+    939
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 25,
+   "lineas": [
+    957,
+    962
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 25,
+   "lineas": [
+    966,
+    971
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 25,
+   "lineas": [
+    979,
+    987
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 26,
+   "lineas": [
+    1002,
+    1006
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 26,
+   "lineas": [
+    1012,
+    1022
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 27,
+   "lineas": [
+    1051,
+    1057
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 28,
+   "lineas": [
+    1081,
+    1095
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 28,
+   "lineas": [
+    1099,
+    1113
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 29,
+   "lineas": [
+    1130,
+    1138
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 29,
+   "lineas": [
+    1144,
+    1153
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 29,
+   "lineas": [
+    1155,
+    1160
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 29,
+   "lineas": [
+    1164,
+    1169
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 30,
+   "lineas": [
+    1182,
+    1187
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 30,
+   "lineas": [
+    1199,
+    1205
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 31,
+   "lineas": [
+    1236,
+    1240
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 31,
+   "lineas": [
+    1244,
+    1249
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": true,
+ "estado": [],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "miles",
+ "escala_evidencia": "Las notas indican £'000 (ej. b3, b5: '2022 £'000 | 2021 £'000')",
+ "moneda": "GBP",
+ "columna_ejercicio": "",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se descarta este documento para el ejercicio que cierra el 2023-03-28 porque solo contiene cuentas del ejercicio cerrado el 30-06-2022 (L b2 'For the year ended 30 June 2022')?",
+   "propuesta": "sí",
+   "tema": "cuadro-de-otro-anio",
+   "renglon": "",
+   "texto": "El estado de resultados b2 es del año al 30 de junio de 2022 con comparativo 2021; no hay cifras del ejercicio pedido.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El documento son las cuentas individuales de Fulham Football Club Limited del ejercicio cerrado el 30-06-2022 (estado de resultados en b2, notas de ingresos b5 y gastos b6/b8). No contiene el ejercicio que cierra el 2023-03-28, por lo que se marca sin_estado. Si se quisiera cargar 2021-22, los bloques serían b2 (estado), b5 (ingresos), b6 y b8 (gastos), en £'000."
+}

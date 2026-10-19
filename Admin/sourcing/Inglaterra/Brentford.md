@@ -43,3 +43,7 @@ Todos en `Clubes/Inglaterra/Brentford/` (los PDF no se trackean; son escaneos, h
 - `brentford-group-accounts-2021-22.pdf`
 - `brentford-group-accounts-2020-21.pdf`
 <!-- /ing-sourcing -->
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2022 desde `Clubes/Inglaterra/Brentford/brentford-group-accounts-2021-22.pdf` (sourceId `brentford-gb-group-accounts-2021-22`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2023 desde `Clubes/Inglaterra/Brentford/brentford-group-accounts-2022-23.pdf` (sourceId `brentford-gb-group-accounts-2022-23`).

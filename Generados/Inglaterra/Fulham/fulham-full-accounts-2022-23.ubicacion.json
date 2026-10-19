@@ -1,0 +1,215 @@
+{
+ "pdf": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2022-23.md",
+ "mdSha1": "6a606f90339f420058515db6beb53085dd149f34",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T17:01:55.925Z",
+ "perimetroClub": "individual",
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 4,
+   "lineas": [
+    74,
+    82
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 14,
+   "lineas": [
+    653,
+    668
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 15,
+   "lineas": [
+    683,
+    703
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 16,
+   "lineas": [
+    722,
+    731
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 16,
+   "lineas": [
+    733,
+    743
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 24,
+   "lineas": [
+    1199,
+    1206
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 24,
+   "lineas": [
+    1214,
+    1225
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 25,
+   "lineas": [
+    1239,
+    1244
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 25,
+   "lineas": [
+    1248,
+    1253
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 25,
+   "lineas": [
+    1263,
+    1272
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 26,
+   "lineas": [
+    1284,
+    1288
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 26,
+   "lineas": [
+    1294,
+    1303
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 27,
+   "lineas": [
+    1329,
+    1334
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 28,
+   "lineas": [
+    1348,
+    1362
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 28,
+   "lineas": [
+    1366,
+    1380
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 29,
+   "lineas": [
+    1394,
+    1402
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 29,
+   "lineas": [
+    1408,
+    1416
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 29,
+   "lineas": [
+    1418,
+    1421
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 29,
+   "lineas": [
+    1425,
+    1429
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 30,
+   "lineas": [
+    1441,
+    1446
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 30,
+   "lineas": [
+    1458,
+    1463
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 31,
+   "lineas": [
+    1489,
+    1493
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 31,
+   "lineas": [
+    1497,
+    1502
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b6"
+ ],
+ "notas_gastos": [
+  "b7",
+  "b8"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "2023 £'000 | 2022 £'000",
+ "moneda": "GBP",
+ "columna_ejercicio": "2023 £'000",
+ "columna_anterior": "2022 £'000",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados individual de Fulham Football Club Limited (b2). La nota 2 Turnover (b6) desglosa los ingresos. La nota 3 (b7) detalla cargos incluidos en la pérdida (staff costs, amortización de registros de jugadores, depreciación). La nota 4 Staff costs (b8) abre los costos de personal en wages and salaries, social security y pensiones. No se encontró un cuadro que separe los salarios del plantel del resto del personal: b9 da solo cantidades de empleados (players vs administrativos), sin importes. Los salarios del plantel deberán tomarse de 'Wages and salaries'/'Staff costs' en b8."
+}

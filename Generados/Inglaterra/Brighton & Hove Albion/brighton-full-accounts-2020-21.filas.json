@@ -1,0 +1,337 @@
+{
+ "pdf": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2020-21.pdf",
+ "md": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2020-21.md",
+ "mdSha1": "35b0ea5ef9feb99d8b6c13dc668a1d26a4bc22c2",
+ "ubicacionSha1": "1221093a74d6a197d41ee6cb161abdad51c35434",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:59:59.661Z",
+ "ubicacion": {
+  "estado": [
+   "b4"
+  ],
+  "notas_ingresos": [
+   "b7"
+  ],
+  "notas_gastos": [
+   "b8",
+   "b10"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b4",
+   "escala": "miles",
+   "evidencia": "L609: \"2021 Total £'000\""
+  },
+  {
+   "bloque": "b7",
+   "escala": "miles",
+   "evidencia": "L982: \"£'000 £'000\""
+  },
+  {
+   "bloque": "b8",
+   "escala": "miles",
+   "evidencia": "L1006: \"2021 £'000\""
+  },
+  {
+   "bloque": "b10",
+   "escala": "miles",
+   "evidencia": "L1027: \"2021 £'000\""
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b4",
+   "linea": 611,
+   "etiqueta": "Turnover",
+   "actual": "139,731",
+   "anterior": "123,291",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 612,
+   "etiqueta": "Cost of sales",
+   "actual": "(1,004)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 613,
+   "etiqueta": "Operating expenses",
+   "actual": "(194,356)",
+   "anterior": "(182,111)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 614,
+   "etiqueta": "Profit/(loss) on player trading",
+   "actual": "6,592",
+   "anterior": "(599)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 615,
+   "etiqueta": "Other operating income",
+   "actual": "2,513",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 616,
+   "etiqueta": "Operating loss before interest and taxation",
+   "actual": "(46,524)",
+   "anterior": "(59,419)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 617,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "5",
+   "anterior": "15",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 618,
+   "etiqueta": "Interest payable and similar charges",
+   "actual": "(3,036)",
+   "anterior": "(3,301)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 619,
+   "etiqueta": "Loss before taxation",
+   "actual": "(49,555)",
+   "anterior": "(62,705)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 620,
+   "etiqueta": "Tax on loss",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 621,
+   "etiqueta": "Loss after taxation",
+   "actual": "(49,555)",
+   "anterior": "(62,705)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 622,
+   "etiqueta": "Other comprehensive income",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 623,
+   "etiqueta": "Total comprehensive income for the year",
+   "actual": "(49,555)",
+   "anterior": "(62,705)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 984,
+   "etiqueta": "Matchday",
+   "actual": "480",
+   "anterior": "13,513",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b7",
+   "linea": 985,
+   "etiqueta": "Broadcasting",
+   "actual": "122,991",
+   "anterior": "89,920",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b7",
+   "linea": 986,
+   "etiqueta": "Commercial",
+   "actual": "8,320",
+   "anterior": "9,481",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b7",
+   "linea": 987,
+   "etiqueta": "Other",
+   "actual": "7,940",
+   "anterior": "10,377",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1009,
+   "etiqueta": "Depreciation of tangible fixed assets",
+   "actual": "1,886",
+   "anterior": "1,684",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1010,
+   "etiqueta": "Amortisation of intangible assets",
+   "actual": "46,380",
+   "anterior": "45,616",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1011,
+   "etiqueta": "Impairment of intangible assets",
+   "actual": "9,370",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1012,
+   "etiqueta": "Defined contribution pension cost",
+   "actual": "434",
+   "anterior": "474",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 1013,
+   "etiqueta": "Operating lease payments",
+   "actual": "1,549",
+   "anterior": "246",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b10",
+   "linea": 1030,
+   "etiqueta": "Wages and salaries",
+   "actual": "93,983",
+   "anterior": "89,314",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b10",
+   "linea": 1031,
+   "etiqueta": "Social security costs",
+   "actual": "12,987",
+   "anterior": "12,082",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b10",
+   "linea": 1032,
+   "etiqueta": "Pension costs",
+   "actual": "434",
+   "anterior": "474",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b10",
+   "linea": 1033,
+   "etiqueta": "",
+   "actual": "107,404",
+   "anterior": "101,870",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 623,
+  "actual": "(49,555)",
+  "anterior": "(62,705)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los renglones de la nota 5 (L1009-L1013) como desglose de 'Operating expenses' aunque son cargos informativos 'after charging' y no suman el renglón?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Operating expenses",
+   "texto": "La nota 5 lista cargos incluidos en el resultado operativo, no un desglose completo; la pensión (L1012) se repite en la nota 7 (L1032).",
+   "bloques": [
+    "b8",
+    "b10"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se trata 'Wages and salaries' (L1030) como el equivalente a 'Salarios del plantel', sabiendo que incluye a todo el personal y no solo al plantel?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Operating expenses",
+   "texto": "No existe un renglón 'Salarios del plantel'; la nota 7 da costos de todo el personal incluidos directores.",
+   "bloques": [
+    "b10"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "No hay renglón 'Salarios del plantel' en el documento; el costo de personal está en la nota 7 (L1030-L1033). Other operating income (L615) no tiene importe 2020. La nota de turnover (b7) no imprime total; suma 139,731."
+}

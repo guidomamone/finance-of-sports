@@ -1,0 +1,90 @@
+{
+  "md": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2021-22.md",
+  "pdf": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2021-22.pdf",
+  "club": "brighton-gb",
+  "year": 2022,
+  "generatedAt": "2026-10-19T15:37:03.202Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Matchday",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        20.571
+      ],
+      "glosa": "Día de partido"
+    },
+    {
+      "label": "Broadcasting",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        125.969
+      ],
+      "glosa": "Derechos audiovisuales"
+    },
+    {
+      "label": "Commercial",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        15.171
+      ],
+      "glosa": "Comercial"
+    },
+    {
+      "label": "Other",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        5.718
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Profit on player trading",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        62.356
+      ],
+      "glosa": "Beneficio por traspaso de jugadores"
+    },
+    {
+      "label": "Other operating income",
+      "lado": "revenue",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Cost of sales",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        1.274
+      ],
+      "glosa": "Coste de ventas"
+    },
+    {
+      "label": "Operating expenses",
+      "lado": "expense",
+      "page": 16,
+      "section": "estado",
+      "values": [
+        203.024
+      ],
+      "glosa": "Gastos de explotación"
+    }
+  ]
+}

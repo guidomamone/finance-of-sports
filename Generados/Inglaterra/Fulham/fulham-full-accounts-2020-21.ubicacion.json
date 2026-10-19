@@ -1,0 +1,223 @@
+{
+ "pdf": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2020-21.pdf",
+ "md": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2020-21.md",
+ "mdSha1": "03d91fa24f4e7476e56785ac8997a1d5dc4ee28d",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T17:01:18.265Z",
+ "perimetroClub": "individual",
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 4,
+   "lineas": [
+    79,
+    87
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 14,
+   "lineas": [
+    587,
+    602
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 15,
+   "lineas": [
+    617,
+    637
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 16,
+   "lineas": [
+    654,
+    663
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 16,
+   "lineas": [
+    665,
+    674
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 24,
+   "lineas": [
+    1115,
+    1122
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 24,
+   "lineas": [
+    1130,
+    1144
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 24,
+   "lineas": [
+    1148,
+    1150
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 25,
+   "lineas": [
+    1166,
+    1171
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 25,
+   "lineas": [
+    1175,
+    1180
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 25,
+   "lineas": [
+    1188,
+    1196
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 26,
+   "lineas": [
+    1208,
+    1212
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 26,
+   "lineas": [
+    1218,
+    1229
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 27,
+   "lineas": [
+    1253,
+    1258
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 27,
+   "lineas": [
+    1262,
+    1277
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 28,
+   "lineas": [
+    1289,
+    1303
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 28,
+   "lineas": [
+    1309,
+    1317
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 29,
+   "lineas": [
+    1331,
+    1339
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 29,
+   "lineas": [
+    1341,
+    1345
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 29,
+   "lineas": [
+    1349,
+    1354
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 29,
+   "lineas": [
+    1358,
+    1362
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 30,
+   "lineas": [
+    1380,
+    1385
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 31,
+   "lineas": [
+    1416,
+    1419
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 31,
+   "lineas": [
+    1423,
+    1428
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b6"
+ ],
+ "notas_gastos": [
+  "b7",
+  "b9"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "Encabezado del estado: '2021 £'000 | 2020 £'000'",
+ "moneda": "GBP",
+ "columna_ejercicio": "2021 £'000",
+ "columna_anterior": "2020 £'000",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Cuentas individuales de Fulham Football Club Limited (no hay consolidado). Estado de resultados en b2. Turnover abierto en la nota 2 (b6). Nota 3 (b7) detalla los cargos incluidos en el resultado: staff costs, amortización de registros de jugadores y depreciación. La nota 5 (b9) abre los costes de personal (wages and salaries, social security, pensiones), que es lo que alimenta 'Salarios del plantel'. No se distingue en el documento entre jugadores y resto del personal en importes (b10 es solo número de empleados)."
+}

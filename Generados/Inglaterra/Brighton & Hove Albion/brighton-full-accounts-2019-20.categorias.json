@@ -1,0 +1,92 @@
+{
+ "md": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2019-20.md",
+ "club": "brighton-gb",
+ "year": 2020,
+ "generatedAt": "2026-10-19T16:01:04.650Z",
+ "rubrosHuella": "507fbe50f1637b78646df358a3aa2563e0aab42e",
+ "jevHuella": "d5dd4fc60909aef4c02fba0a9a48de4cbc037d5f",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.009152799999999999,
+ "rubros": [
+  {
+   "label": "Matchday",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Día de partido",
+   "page": 23,
+   "pendiente": false,
+   "ya": "matchday_competition",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "matchday_competition",
+   "confianza": 1
+  },
+  {
+   "label": "Broadcasting",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Derechos de retransmisión",
+   "page": 23,
+   "pendiente": false,
+   "ya": "broadcasting",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "broadcasting",
+   "confianza": 1
+  },
+  {
+   "label": "Commercial",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Comercial",
+   "page": 23,
+   "pendiente": false,
+   "ya": "sponsorship_commercial",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "sponsorship_commercial",
+   "confianza": 1
+  },
+  {
+   "label": "Other",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Otros",
+   "page": 23,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 0,
+   "precedenteDe": "sitio:familia",
+   "categoria": "other_income",
+   "confianza": 1
+  },
+  {
+   "label": "Operating expenses",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de explotación",
+   "page": 14,
+   "pendiente": true,
+   "jev": "lump_football_operations_expense",
+   "jevConf": 0.35,
+   "escalon": 2,
+   "categoria": "other_expenses",
+   "confianza": 0.6,
+   "motivo": "Gastos de explotación agregados; convención del club manda costos no desglosados a other_expenses"
+  },
+  {
+   "label": "(Loss)/profit on player trading",
+   "lado": "expense",
+   "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
+   "glosa": "(Pérdida)/beneficio por traspaso de jugadores",
+   "page": 14,
+   "pendiente": true,
+   "jev": "other_expenses",
+   "jevConf": 0.79,
+   "escalon": 2,
+   "categoria": "player_sales",
+   "confianza": 0.6,
+   "motivo": "Resultado neto por traspasos; club mapea 'Profit on disposal of players' registrations' a player_sales"
+  }
+ ]
+}

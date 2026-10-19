@@ -1,0 +1,70 @@
+{
+  "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2020-21.md",
+  "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2020-21.pdf",
+  "club": "astonvilla-gb",
+  "year": 2021,
+  "generatedAt": "2026-10-19T15:37:02.898Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Gate Receipts",
+      "lado": "revenue",
+      "page": 20,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        0.310542
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Broadcasting",
+      "lado": "revenue",
+      "page": 20,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        157.143131
+      ],
+      "glosa": "Derechos audiovisuales"
+    },
+    {
+      "label": "Sponsorship",
+      "lado": "revenue",
+      "page": 20,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        14.332283
+      ],
+      "glosa": "Patrocinio"
+    },
+    {
+      "label": "Commercial",
+      "lado": "revenue",
+      "page": 20,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        3.842892
+      ],
+      "glosa": "Ingresos comerciales"
+    },
+    {
+      "label": "Other operating income",
+      "lado": "revenue",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        2.5
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Administrative expenses",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        210.849675
+      ],
+      "glosa": "Gastos de administración"
+    }
+  ]
+}

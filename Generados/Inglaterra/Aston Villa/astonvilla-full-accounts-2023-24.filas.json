@@ -1,0 +1,309 @@
+{
+ "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2023-24.pdf",
+ "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2023-24.md",
+ "mdSha1": "97b4f919d58ef4360f3b6c997d797a3dbc445b3d",
+ "ubicacionSha1": "c021a70539bdbb95a1f86b967d247666bf253582",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:14:14.537Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [
+   "b6",
+   "b7"
+  ],
+  "notas_gastos": [
+   "b8",
+   "b10"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "miles",
+   "evidencia": "13 month period ended 30 June 2024 £'000"
+  },
+  {
+   "bloque": "b6",
+   "escala": "miles",
+   "evidencia": "13 month period ended 30 June 2024 £'000"
+  },
+  {
+   "bloque": "b7",
+   "escala": "miles",
+   "evidencia": "2024 £'000"
+  },
+  {
+   "bloque": "b8",
+   "escala": "miles",
+   "evidencia": "13 month period ended 30 June 2024 £'000"
+  },
+  {
+   "bloque": "b10",
+   "escala": "miles",
+   "evidencia": "13 month period ended 30 June 2024 £'000"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 489,
+   "etiqueta": "Turnover",
+   "actual": "263,079",
+   "anterior": "204,526",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 490,
+   "etiqueta": "Other operating income",
+   "actual": "5,113",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 491,
+   "etiqueta": "Operating expenses",
+   "actual": "(318,901)",
+   "anterior": "(320,275)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 492,
+   "etiqueta": "Operating Loss",
+   "actual": "(50,709)",
+   "anterior": "(115,749)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 493,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "-",
+   "anterior": "(129)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 494,
+   "etiqueta": "Loss before taxation",
+   "actual": "(50,709)",
+   "anterior": "(115,878)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 495,
+   "etiqueta": "Tax on loss",
+   "actual": "1,284",
+   "anterior": "(221)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 496,
+   "etiqueta": "Loss for the financial period/year",
+   "actual": "(49,425)",
+   "anterior": "(116,099)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 847,
+   "etiqueta": "Gate receipts",
+   "actual": "28,009",
+   "anterior": "18,777",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b6",
+   "linea": 848,
+   "etiqueta": "Broadcasting",
+   "actual": "170,718",
+   "anterior": "152,556",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b6",
+   "linea": 849,
+   "etiqueta": "Sponsorship",
+   "actual": "21,895",
+   "anterior": "16,303",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b6",
+   "linea": 850,
+   "etiqueta": "Commercial",
+   "actual": "28,767",
+   "anterior": "16,890",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b6",
+   "linea": 851,
+   "etiqueta": "UEFA",
+   "actual": "13,690",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b6",
+   "linea": 852,
+   "etiqueta": "",
+   "actual": "263,079",
+   "anterior": "204,526",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b7",
+   "linea": 870,
+   "etiqueta": "Insurance claims receivable",
+   "actual": "2,500",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b7",
+   "linea": 871,
+   "etiqueta": "V Sports recharge",
+   "actual": "2,613",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b7",
+   "linea": 872,
+   "etiqueta": "",
+   "actual": "5,113",
+   "anterior": "-",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "bloque": "b8",
+   "linea": 893,
+   "etiqueta": "Depreciation of tangible assets (see note 11)",
+   "actual": "4,909",
+   "anterior": "3,317",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 894,
+   "etiqueta": "Staff costs (see note 7)",
+   "actual": "15,196",
+   "anterior": "10,760",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 895,
+   "etiqueta": "Other operating charges",
+   "actual": "298,796",
+   "anterior": "306,198",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 896,
+   "etiqueta": "",
+   "actual": "318,901",
+   "anterior": "320,275",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Operating expenses"
+  },
+  {
+   "bloque": "b10",
+   "linea": 922,
+   "etiqueta": "Wages and salaries",
+   "actual": "12,827",
+   "anterior": "9,080",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs (see note 7)"
+  },
+  {
+   "bloque": "b10",
+   "linea": 923,
+   "etiqueta": "Social security costs",
+   "actual": "1,877",
+   "anterior": "1,202",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs (see note 7)"
+  },
+  {
+   "bloque": "b10",
+   "linea": 924,
+   "etiqueta": "Other pension costs (note 18)",
+   "actual": "492",
+   "anterior": "478",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs (see note 7)"
+  },
+  {
+   "bloque": "b10",
+   "linea": 925,
+   "etiqueta": "",
+   "actual": "15,196",
+   "anterior": "10,760",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Staff costs (see note 7)"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 496,
+  "actual": "(49,425)",
+  "anterior": "(116,099)"
+ },
+ "dudas": [],
+ "observaciones": "Ejercicio de 13 meses (al 30-06-2024) contra año de 12 meses (al 31-05-2023): los importes no son directamente comparables. El estado no imprime total de ingresos ni total de gastos agregados; los gastos se presentan en un único renglón 'Operating expenses' (L491). En b7 las columnas se titulan '2024 £'000' y '2023 £'000' y se asumen equivalentes al período pedido y al anterior. Todos los subtotales de notas coinciden con los renglones del estado."
+}

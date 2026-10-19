@@ -1,0 +1,191 @@
+{
+ "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2021-22.md",
+ "mdSha1": "57ab2e724cd57a8d5e624f6a0128aa0233c9924b",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T16:31:16.514Z",
+ "perimetroClub": "individual",
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 12,
+   "lineas": [
+    408,
+    418
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 13,
+   "lineas": [
+    434,
+    448
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 14,
+   "lineas": [
+    466,
+    479
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 20,
+   "lineas": [
+    712,
+    718
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 20,
+   "lineas": [
+    731,
+    733
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 20,
+   "lineas": [
+    739,
+    743
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 21,
+   "lineas": [
+    756,
+    758
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 21,
+   "lineas": [
+    766,
+    771
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 21,
+   "lineas": [
+    775,
+    781
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 21,
+   "lineas": [
+    785,
+    787
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 22,
+   "lineas": [
+    810,
+    812
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 22,
+   "lineas": [
+    816,
+    821
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 22,
+   "lineas": [
+    827,
+    835
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 24,
+   "lineas": [
+    875,
+    890
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 25,
+   "lineas": [
+    903,
+    910
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 25,
+   "lineas": [
+    918,
+    922
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 25,
+   "lineas": [
+    926,
+    935
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 27,
+   "lineas": [
+    989,
+    993
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [
+  "b4",
+  "b5"
+ ],
+ "notas_gastos": [
+  "b6",
+  "b7",
+  "b8",
+  "b10"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado de columnas '2022 £ | 2021 £' (importes en libras, sin indicación de miles)",
+ "moneda": "GBP",
+ "columna_ejercicio": "2022 £",
+ "columna_anterior": "2021 £",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los 'Wages and salaries' de la nota 8 (b8) como gastos de personal totales, sin separar salarios del plantel, ya que el documento no los desglosa?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Wages and salaries",
+   "texto": "La nota 8 (b8) da los costes de personal totales y el cuadro de empleados (b9) no menciona jugadores; no hay un renglón específico de salarios del plantel.",
+   "bloques": [
+    "b8",
+    "b9"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas individuales de Aston Villa Football Club Limited (entidad que no parece ser la de los jugadores: los empleados son comerciales, mantenimiento y personal de días de partido). El estado de resultados (b1) está en libras. La nota 4 (b4) desglosa Turnover; la nota 5 (b5) Other operating income; las notas 6, 7, 8 y 9 dan detalle de gastos. No hay cuadro de salarios del plantel en este documento; probablemente esté en la sociedad jugadora/holding."
+}
