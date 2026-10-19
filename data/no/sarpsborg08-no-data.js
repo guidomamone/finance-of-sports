@@ -110,6 +110,19 @@ const sarpsborg08noRevenueLinesByYear = {
     { rawLabel:'Reklame og sponsorinntekter', normalizedCategory:'sponsorship_commercial', amountNative:16.5456, disclosureLevel:'aggregated' },
     { rawLabel:'Salg/utleie spillere', normalizedCategory:'player_sales', amountNative:6.542138, disclosureLevel:'aggregated' },
   ],
+  2020: [
+    { rawLabel:'Billetinntekter', normalizedCategory:'matchday_competition', amountNative:0.25858, disclosureLevel:'aggregated' },
+    { rawLabel:'Medlemsinntekter', normalizedCategory:'member_dues', amountNative:0.614433, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre inntekter', normalizedCategory:'other_income', amountNative:4.527152, disclosureLevel:'aggregated' },
+    { rawLabel:'Reklame og sponsorinntekter', normalizedCategory:'sponsorship_commercial', amountNative:30.459302, disclosureLevel:'aggregated' },
+    { rawLabel:'Kiosk salg', normalizedCategory:'other_income', amountNative:0.281775, disclosureLevel:'aggregated' },
+    { rawLabel:'Supporterutstyr', normalizedCategory:'sponsorship_commercial', amountNative:0.581453, disclosureLevel:'aggregated' },
+    { rawLabel:'Solidaritetsmidler', normalizedCategory:'player_sales', amountNative:1.689553, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre inntekter', normalizedCategory:'other_income', amountNative:0.465674, disclosureLevel:'aggregated' },
+    { rawLabel:'Mediainntekter', normalizedCategory:'broadcasting', amountNative:8.650934, disclosureLevel:'aggregated' },
+    { rawLabel:'Tilskudd', normalizedCategory:'other_income', amountNative:7.436111, disclosureLevel:'aggregated' },
+    { rawLabel:'Salg/utleie spillere', normalizedCategory:'player_sales', amountNative:37.554448, disclosureLevel:'aggregated' },
+  ],
 };
 const sarpsborg08noExpenseLinesByYear = {
   2025: [
@@ -241,6 +254,24 @@ const sarpsborg08noExpenseLinesByYear = {
     { rawLabel:'Reklame og sponsorkostnader', normalizedCategory:'admin_general_expense', amountNative:-5.334211, disclosureLevel:'aggregated' },
     { rawLabel:'Admkost', normalizedCategory:'admin_general_expense', amountNative:-2.729702, disclosureLevel:'aggregated' },
   ],
+  2020: [
+    { rawLabel:'Trening/materiell kostnader', normalizedCategory:'other_expenses', amountNative:-1.38154, disclosureLevel:'aggregated' },
+    { rawLabel:'Kampkostnader', normalizedCategory:'match_organisation_expense', amountNative:-1.3973, disclosureLevel:'aggregated' },
+    { rawLabel:'Reise og oppholdskostander bortekamper', normalizedCategory:'match_organisation_expense', amountNative:-1.423855, disclosureLevel:'aggregated' },
+    { rawLabel:'Salgskostnader', normalizedCategory:'other_expenses', amountNative:-12.789364, disclosureLevel:'aggregated' },
+    { rawLabel:'Lønn', normalizedCategory:'wages_squad', amountNative:-32.323879, disclosureLevel:'aggregated' },
+    { rawLabel:'Arbeidsgiveravgift', normalizedCategory:'wages_squad', amountNative:-4.84323, disclosureLevel:'aggregated' },
+    { rawLabel:'Pensjonskostnader', normalizedCategory:'wages_squad', amountNative:-0.497981, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre relaterte ytelser / Refusjoner', normalizedCategory:'wages_squad', amountNative:-0.359487, disclosureLevel:'aggregated' },
+    { rawLabel:'Avskrivning på driftsmidler og immaterielle eiendeler', normalizedCategory:'depreciation', amountNative:-7.263498, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorar medisinsk støtteapparat', normalizedCategory:'other_expenses', amountNative:-0.814106, disclosureLevel:'aggregated' },
+    { rawLabel:'Agent/talentspeidere', normalizedCategory:'other_expenses', amountNative:-2.956518, disclosureLevel:'aggregated' },
+    { rawLabel:'Reisekostnader/km.godtgjørelse', normalizedCategory:'match_organisation_expense', amountNative:-0.86273, disclosureLevel:'aggregated' },
+    { rawLabel:'Leiekostnader', normalizedCategory:'other_expenses', amountNative:-2.165034, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre kostnader', normalizedCategory:'other_expenses', amountNative:-2.999876, disclosureLevel:'aggregated' },
+    { rawLabel:'Reklame og sponsorkostnader', normalizedCategory:'admin_general_expense', amountNative:-6.278893, disclosureLevel:'aggregated' },
+    { rawLabel:'Admkost', normalizedCategory:'admin_general_expense', amountNative:-6.63344, disclosureLevel:'aggregated' },
+  ],
 };
 const sarpsborg08noFiscalYearMeta = {
   2025: {
@@ -371,6 +402,22 @@ const sarpsborg08noFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:46.179593, officialTotalExpenses:46.133948, officialPAT:0.005895,
   },
+  2020: {
+    currency:'NOK', fxRef:'NOK@2020-12-31',
+    sourceId:'sarpsborg08-no-aarsregnskap-fotballforening-fli-2020',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.320569, tax:0,
+    extraRows: [
+      {label:'Annen renteinntekt', value:0.011865},
+      {label:'Annen finansinntekt', value:0.648727},
+      {label:'Annen rentekostnad', value:-0.972011},
+      {label:'Annen finanskostnad', value:-0.00915},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:92.519415, officialTotalExpenses:84.990731, officialPAT:7.208115,
+  },
 };
 const sarpsborg08noPresupuestoOverlayByYear = {};
 
@@ -425,6 +472,11 @@ Object.assign(sources, {
   'sarpsborg08-no-aarsregnskap-fotballforening-fli-2015': {
     id:'sarpsborg08-no-aarsregnskap-fotballforening-fli-2015', clubId:'sarpsborg08-no',
     title:'Sarpsborg 08 Fotballforening — aarsregnskap-fotballforening-fli-2015 (ejercicio 2015)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'sarpsborg08-no-aarsregnskap-fotballforening-fli-2020': {
+    id:'sarpsborg08-no-aarsregnskap-fotballforening-fli-2020', clubId:'sarpsborg08-no',
+    title:'Sarpsborg 08 Fotballforening — aarsregnskap-fotballforening-fli-2020 (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
