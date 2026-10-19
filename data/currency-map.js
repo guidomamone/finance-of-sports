@@ -208,6 +208,7 @@ const FX_CLOSE = {
   'GBP@2022-06-30': { fx: 0.82352, source: 'market_close', label: 'Tipo spot del Bank of England al 2022-06-30' },
   'GBP@2023-06-30': { fx: 0.786535, source: 'market_close', label: 'Tipo spot del Bank of England al 2023-06-30' },
   'GBP@2019-05-31': { fx: 0.793525, source: 'market_close', label: 'Tipo spot del Bank of England al 2019-05-31' },
+  'GBP@2021-05-31': { fx: 0.705418, source: 'market_close', label: 'Tipo spot del Bank of England, última rueda hábil antes del cierre (2021-05-28, 2021-05-31 no es día hábil)' },
 };
 
 // fxMetaFor(meta): el tipo de cambio de un ejercicio (o de un overlay) como {fx, source, label, ref}. Es el ÚNICO lugar que resuelve

@@ -129,4 +129,13 @@ window.RANKINGS["gb-premierleague"] = {
         mix:[["Comercial / Sponsors",14.137],["Estadio",13.918],["Televisión",153.597],["Otros ingresos",12.635]] },
     ],
   },
+  2021: {
+    leagueSize: null,
+    wiki: {"t":"2020–21 Premier League","lang":"en","at":"2026-10-19","n":20},
+    clubs: [
+      { id:"astonvilla-gb", revenue:252.515, reportType:"official_balance_sheet",
+        sourceId:"astonvilla-gb-full-accounts-2020-21",
+        mix:[["Comercial / Sponsors",25.765],["Estadio",0.44],["Televisión",222.766],["Otros ingresos",3.544]] },
+    ],
+  },
 };
