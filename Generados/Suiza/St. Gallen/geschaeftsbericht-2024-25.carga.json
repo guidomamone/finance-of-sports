@@ -1,18 +1,10 @@
 {
  "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.pdf",
- "generado": "2026-10-19T01:04:31.901Z",
+ "generado": "2026-10-19T01:15:31.339Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (stgallen-ch)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Entschädigung an FCSG AG\" -> other_expenses 0.6"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
   }
  ],
  "avisos": [
@@ -293,9 +285,9 @@
     "amountNative": -11.5,
     "disclosureLevel": "aggregated",
     "_pag": 9,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -318,6 +310,12 @@
      "value": -0.011
     }
    ],
+   "incluidoEn": {
+    "broadcasting": {
+     "en": "other_income",
+     "posible": true
+    }
+   },
    "grossDebt": null,
    "cash": null,
    "officialTotalRevenue": 56.601,
@@ -422,6 +420,18 @@
    "reemplaza": "Entschädigung an FCSG AG",
    "motivo": "transferencia intercompany que se anula en la consolidación; espejo de L268 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
    "evidencia": ".md L268-269",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.pdf",
+   "campo": "incluye",
+   "valor": "broadcasting",
+   "linea": null,
+   "categoria": "other_income",
+   "posible": true,
+   "motivo": "la TV de la Swiss Football League está dentro de 'Diverse Erträge inklusive Swiss Football League' (9.512 mil CHF, L327), mezclada con premios UEFA; pregunta al club en dudas-por-club (Claude 2026-10-19)",
+   "evidencia": null,
    "autor": "Claude",
    "fecha": "2026-10-19"
   }
@@ -843,11 +853,11 @@
    "origen": "verificacion (estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3))",
    "signoFijo": 11.5,
    "cat": "other_expenses",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19: la fila quedó en 0 con el ajuste que saca la Entschädigung intercompany de los dos lados",
    "destino": "expense",
    "amountNative": -11.5
   },
@@ -872,12 +882,6 @@
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
    "destino": "tax"
-  }
- ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
   }
  ],
  "signos": {
@@ -927,10 +931,9 @@
   "label": "Noon buying rate de Nueva York (Reserva Federal, H.10) al 2025-06-30"
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de ch 2025 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "ch-superleague",
+  "fuente": "roster cacheado de \"2024–25 Swiss Super League\" (tools/club-league-reference/ch.json), coincidencia exacta \"St. Gallen\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -969,14 +972,14 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de ch 2025 cacheada",
-   "estado": "pendiente"
+   "valor": "ch-superleague",
+   "fuente": "roster cacheado de \"2024–25 Swiss Super League\" (tools/club-league-reference/ch.json), coincidencia exacta \"St. Gallen\"",
+   "estado": "ok"
   }
  },
  "resumen": {
   "carga": false,
-  "motivos": 3,
+  "motivos": 1,
   "lineasIngreso": 14,
   "lineasGasto": 13,
   "metaFilas": 2,

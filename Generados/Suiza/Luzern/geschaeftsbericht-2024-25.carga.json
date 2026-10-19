@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.pdf",
- "generado": "2026-10-19T01:04:31.756Z",
+ "generado": "2026-10-19T01:15:31.205Z",
  "frena": [
   {
    "etapa": "club",
@@ -1894,10 +1894,9 @@
   "label": "Noon buying rate de Nueva York (Reserva Federal, H.10) al 2025-06-30"
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de ch 2025 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "ch-superleague",
+  "fuente": "roster cacheado de \"2024–25 Swiss Super League\" (tools/club-league-reference/ch.json), coincidencia exacta \"Luzern\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -1936,9 +1935,9 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de ch 2025 cacheada",
-   "estado": "pendiente"
+   "valor": "ch-superleague",
+   "fuente": "roster cacheado de \"2024–25 Swiss Super League\" (tools/club-league-reference/ch.json), coincidencia exacta \"Luzern\"",
+   "estado": "ok"
   }
  },
  "resumen": {

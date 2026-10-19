@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.pdf",
- "generado": "2026-10-19T01:04:32.696Z",
+ "generado": "2026-10-19T01:15:31.915Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (fredrikstad-no)"
-  },
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión, Estadio, Cuotas sociales. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
   }
  ],
  "avisos": [
@@ -23,13 +19,13 @@
   "revenueLines": [
    {
     "rawLabel": "Annen driftsinntekt",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "lump_football_operations",
     "amountNative": 92.725486,
     "disclosureLevel": "aggregated",
     "_pag": 26,
-    "_escalon": 1,
-    "_conf": 0.99,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-19): es el único renglón de ingresos (92.725.486): todo el ingreso operativo sin desglose, como Salgsinntekter de Aalesund (Claude 2026-10-19)"
    }
   ],
   "expenseLines": [
@@ -92,6 +88,25 @@
     {
      "label": "Annen finanskostnad",
      "value": -0.310627
+    }
+   ],
+   "incluidoEn": {
+    "member_dues": "lump_football_operations",
+    "broadcasting": {
+     "en": "lump_football_operations",
+     "posible": true
+    },
+    "matchday_competition": {
+     "en": "lump_football_operations",
+     "posible": true
+    }
+   },
+   "sinDesglose": [
+    {
+     "renglon": "Annen driftsinntekt",
+     "lado": "revenue",
+     "importe": 92.725486,
+     "motivo": "el documento no desglosa este renglón"
     }
    ],
    "grossDebt": null,
@@ -177,6 +192,52 @@
    "evidencia": ".md L1077",
    "autor": "Claude",
    "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.pdf",
+   "campo": "categoria",
+   "valor": "lump_football_operations",
+   "linea": null,
+   "etiqueta": "Annen driftsinntekt",
+   "motivo": "es el único renglón de ingresos (92.725.486): todo el ingreso operativo sin desglose, como Salgsinntekter de Aalesund (Claude 2026-10-19)",
+   "evidencia": ".md L1063",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.pdf",
+   "campo": "incluye",
+   "valor": "member_dues",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "motivo": "el FLI tiene socios que pagan cuota (1.196) y el estado no la separa: queda dentro del único renglón de ingresos (Claude 2026-10-19)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.pdf",
+   "campo": "incluye",
+   "valor": "broadcasting",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "posible": true,
+   "motivo": "el estado trae un solo renglón de ingresos; la TV de la liga queda adentro (Claude 2026-10-19)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.pdf",
+   "campo": "incluye",
+   "valor": "matchday_competition",
+   "linea": null,
+   "categoria": "lump_football_operations",
+   "posible": true,
+   "motivo": "el estado trae un solo renglón de ingresos; las entradas quedan adentro (Claude 2026-10-19)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
   }
  ],
  "seleccion": {
@@ -192,11 +253,12 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado)",
    "signoFijo": 92.725486,
-   "cat": "other_income",
-   "conf": 0.99,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-19): es el único renglón de ingresos (92.725.486): todo el ingreso operativo sin desglose, como Salgsinntekter de Aalesund (Claude 2026-10-19)",
    "enLista": true,
+   "ladoRechazado": false,
    "destino": "revenue",
    "amountNative": 92.725486
   },
@@ -283,19 +345,6 @@
    "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
    "enLista": false,
    "destino": "netInterest"
-  }
- ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Cuotas sociales"
   }
  ],
  "signos": {
@@ -388,7 +437,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 1,
   "lineasGasto": 4,
   "metaFilas": 2,

@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.pdf",
  "md": "Clubes/Suiza/Luzern/geschaeftsbericht-2024-25.md",
- "generado": "2026-10-19T01:03:33.135Z",
+ "generado": "2026-10-19T01:15:28.425Z",
  "estado": "ok",
  "clubId": null,
  "year": 2025,
@@ -133,8 +133,7 @@
   "la lectura base no cerraba; cerró con la lectura 6",
   "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en geschaeftsbericht-2024-25.pdf",
   "duda de extraer ya contestada para el club (perimetro, \"Unternehmenserfolg nach Minderheiten\"): aceptar, en geschaeftsbericht-2024-25.pdf",
-  "duda de extraer que no afecta la carga: L1147 figura sin signo negativo mientras otros gastos llevan '−'; se respeta el signo impreso.",
-  "1 caso(s) viejos de la cola se cerraron como obsoletos (esta corrida ya no los levanta)"
+  "duda de extraer que no afecta la carga: L1147 figura sin signo negativo mientras otros gastos llevan '−'; se respeta el signo impreso."
  ],
  "reintentar": [
   {
