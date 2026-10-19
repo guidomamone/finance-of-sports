@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 791 — 298 z: el primer ejercicio de más de 12 meses se carga como el año del cierre (2026-10-19)
+
+* `cargar.mjs`: el primer ejercicio de una sociedad nueva de más de 12 meses se carga como el año del cierre, con nota pública (decisión
+  de Guido); entran Anderlecht 2011, RAAL 2018, Sint-Truiden 2013 y Zulte Waregem 2012 cuando se vuelva a correr Bélgica.
+* `periodo.mjs` lee el período del formulario NBB con las fechas en las líneas siguientes: 31 documentos belgas dejan de tomar la fecha
+  de la asamblea como cierre. Lote completo: 0 diferencias en lo cargado.
+
 ## Versión 790 — 298 u2: las listas belgas bajan enteras (2026-10-19)
 
 * `fetch-club-league-reference.mjs` cortaba los códigos de equipo con guion ("B-W" de Beerschot Wilrijk). Lote 92: de 41 a 45 de 51 listas;

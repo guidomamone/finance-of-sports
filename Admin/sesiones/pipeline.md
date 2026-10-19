@@ -371,3 +371,5 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
   CONVENCIONES-DATOS al día. medir-cargar sobre la completa: 0 diferencias, contra-sitio igual. Los 4 años se cargan cuando pasen por el
   lote (todavía no están extraídos). Caso nuevo, sin regla: Westerlo 2015, 18 meses por cambio de cierre (01/01/2014 – 30/06/2015), sigue
   frenado; a decidir si aparece en un lote. Sin respuesta de Guido sobre la marca "N meses" en pantalla: no se pidió.
+
+## Después del merge de la z (2026-10-19)

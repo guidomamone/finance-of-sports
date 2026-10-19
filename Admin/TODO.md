@@ -36,7 +36,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 232: mejoras de script que dejó Grecia --> Pipeline 3
 * 279: la tool que duplicaba claves en club-leagues/ru.js --> Pipeline 3
 * 286 y 287: el ensayo que no anticipa Mistral; chequeo carpeta-doble y entidad al guardar --> Pipeline 3
-* 298: mejoras de script de Estonia y Bélgica (quedan la z, decisión tuya de pantalla, y la g2, condicional) --> Pipeline 3
+* 298: mejoras de script de Estonia y Bélgica (quedan la z2, Westerlo 2015 con 18 meses, a decidir con vos, y la g2, condicional) --> Pipeline 3
 * 306, 307 y 308: Milan 2018; el gasto que imprime localizar; los bonos convertibles en la skill --> Pipeline 3 (306, 307)
 * 301: gasto.mjs --json se corta en un pipe --> Pipeline 3
 * 302: el deflactor de EE.UU. desde la BEA, no FRED --> Pipeline 3
@@ -270,9 +270,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    2025): solo si aparece otra fila mixta sin códigos; el 630 belga ya sale solo. i) alta-club.mjs: un país nuevo
    frena hasta agregar su fila a PAISES: que la proponga. o) dos versiones "-correction" del mismo ejercicio entran juntas al lote (Bélgica): que
    entre una sola.
-   z) cargar los primeros ejercicios de más de 12 meses (Guido: "son
-   parciales, pero corresponde cargarlos"): Anderlecht 2011 (16 meses), RAAL La Louvière 2018 (14), Sint-Truiden 2013 (15) y Zulte Waregem
-   2012 (17); diseño a decidir: cómo se muestra un año de más de 12 meses y cómo compara con los vecinos. t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en
+   z2) Westerlo 2015: 18 meses por cambio de cierre (no es primer ejercicio), sigue frenado; regla a decidir con Guido. t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en
    ellos: Patro Eisden 2025 (ingresos +1.810 por el waarvan 76A, gastos +4.012 por el 631/4), Lommel SK 2025 (gastos +172, el 609) y Lommel SK
    2018 (−182 de financiero) cerraron por tolerancia con errores chicos: decidir con Guido si se corrigen (escalón: correr el NBB también
    con ajustes si el resultado sigue exacto). El detalle,
