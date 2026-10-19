@@ -737,6 +737,14 @@ function dryRunDoc(e) {
   const FRAC_NUM = 0.58;
   if (!existsSync(resolve(root, e.md))) return { plan: 'sin .md: Mistral + Gemini/Claude en págs. dudosas', nPages, cost: nPages * EST.mistral + nPages * FRAC_NUM * (EST.gemini + 0.6 * 0.25 * EST.claude + 0.15 * EST.claude) };
   const mdText = readFileSync(resolve(root, e.md), 'utf8');
+  // (to-do 298 e3, ok de Guido 2026-10-19) LA MISMA CONDICIÓN QUE EL PASO -0.5 DE resolveDoc(): un .md viejo sin tablas (menos de 5
+  // renglones "|", 2+ páginas, motor que no es Mistral) se rehace entero con Mistral antes de validar. El ensayo no lo contaba: cotizaba
+  // solo la validación del .md viejo. Caso: la corrida de Admin/lotes/sin-tablas-298e.txt (238 documentos), ensayo US$ 7,26 y real
+  // US$ 43,09 (Mistral 8.335 páginas, US$ 33,34). La validación del .md nuevo se estima con la del viejo (en esa corrida, 7,26 contra ~10).
+  if (mdText.split('\n').filter((l) => l.startsWith('|')).length < 5 && nPages >= 2 && !String(e.motor).startsWith('mistral')) {
+    const r = dryRunDoc({ ...e, motor: 'mistral' });
+    return { ...r, plan: `sin tablas: se rehace con Mistral (${nPages} pág.); después ${r.plan}`, cost: nPages * EST.mistral + r.cost };
+  }
   const canon = splitPages(mdText);
   if (canon.pages.length < Math.max(1, Math.floor(nPages * 0.5))) return { plan: 'rehacer-mistral', nPages, cost: nPages * EST.mistral + nPages * FRAC_NUM * 0.15 * EST.claude };
   const numericas = new Set(paginasConNumeros({ mdText }).paginas);
@@ -771,7 +779,7 @@ if (!EXECUTE) {
     let r;
     try { r = dryRunDoc(e); } catch (err) { console.log(`  ?  ${e.pdf}: ${err.message}`); continue; }
     total += r.cost;
-    const k = r.plan.startsWith('texto') ? 'texto (Claude solo en págs. dudosas)' : r.plan;
+    const k = r.plan.startsWith('texto') ? 'texto (Claude solo en págs. dudosas)' : r.plan.startsWith('sin tablas') ? 'sin tablas: se rehace con Mistral y después se valida' : r.plan;
     (byPlan[k] ||= { n: 0, cost: 0, pages: 0 }); byPlan[k].n++; byPlan[k].cost += r.cost; byPlan[k].pages += r.nPages;
     if (todo.length <= 40) console.log(`  ${r.plan.padEnd(46)} ${String(r.nPages).padStart(4)} pág  ~$${r.cost.toFixed(2)}  ${e.pdf}`);
   }
