@@ -3,7 +3,8 @@
  "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2012.md",
  "mdSha1": "8644564e65a52d6de51099f66f50725f59c188bf",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T03:50:32.956Z",
+ "generado": "2026-10-19T11:17:36.570Z",
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -106,11 +107,11 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se usa el cuadro 'Resultatregnskap 2012' del årsmøtedokument (b4, pág. 9), columna 'Regnskap 31.12.12', como desglose de ingresos y gastos del estado b1?",
+   "pregunta": "¿Se usa el cuadro 'Resultatregnskap 2012' de la memoria (b4) como desglose de ingresos y gastos del estado b1, tomando solo la columna 'Regnskap 31.12.12'?",
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "Salgsinntekt",
-   "texto": "b4 es un resultado de gestión con presupuesto; el finansresultat parece con signo distinto (Finansinntekter 1 027 294 suma al déficit), hay que verificar que cuadre con b1.",
+   "texto": "b4 abre ingresos (Tilskudd FFK Sport ASA, Grasrotandel...) y gastos, pero tiene columnas de presupuesto y desvío que no se cargan.",
    "bloques": [
     "b4",
     "b1"
@@ -118,16 +119,17 @@
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se carga la nota 6 de honorarios (b10) como desglose de otros gastos operativos?",
+   "pregunta": "¿Se confirma que el documento no tiene ingresos de Televisión ni de Estadio (Billettinntekter en 0 en b4) y no hay más cuadros que los abran?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "Annen driftskostnad",
-   "texto": "Detalla revisión y asesoría, una parte menor de los gastos.",
+   "renglon": "Billettinntekter",
+   "texto": "Los ingresos deportivos están en FFK Sport AS (no consolidada); el club solo recibe el 'Tilskudd FFK Sport ASA'.",
    "bloques": [
-    "b10"
+    "b4",
+    "b7"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "Estado individual en b1 (pág. 2, NOK unidades). El club no consolida (regla de pequeñas empresas, pág. 12). b4 es el resultado detallado con presupuesto del documento de asamblea; se toma solo la columna Regnskap 31.12.12. Se excluyen balance (b2, b3, b5) y notas de participaciones, créditos y patrimonio (b6-b9)."
+ "observaciones": "Estado individual del club (no consolida FFK Sport AS ni Fredrikstad Stadion AS, regla de pequeñas empresas). b1 es el resultatregnskap oficial; b4 el detalle de la memoria con presupuesto. No hay filas de TV ni estadio: los ingresos de partido van en FFK Sport AS. b10 detalla honorarios de auditoría/jurídicos."
 }

@@ -4,7 +4,7 @@
  "mdSha1": "8644564e65a52d6de51099f66f50725f59c188bf",
  "ubicacionSha1": "60fec076e4c97e715b0aa928f3d0ca31e768b6c2",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T03:52:02.318Z",
+ "generado": "2026-10-19T11:18:12.355Z",
  "ubicacion": {
   "estado": [
    "b1"
@@ -26,12 +26,12 @@
   {
    "bloque": "b4",
    "escala": "unidades",
-   "evidencia": "No lo dice; importes coinciden con b1 en NOK (L348 = L108)"
+   "evidencia": "L348: Sum inntekter 23 063 141 coincide con el estado en NOK"
   },
   {
    "bloque": "b10",
    "escala": "unidades",
-   "evidencia": "L518: importes con ',-' en NOK; L523 161.920 = L360"
+   "evidencia": "L523: Sum 161.920,- coincide con Revisjon/juridiskbistand de b4"
   }
  ],
  "filas": [
@@ -283,7 +283,7 @@
    "anterior": "16 835",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "Sum kostnader"
+   "detalla_a": "Annen driftskostnad"
   },
   {
    "bloque": "b4",
@@ -293,7 +293,7 @@
    "anterior": "50 048",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "Sum kostnader"
+   "detalla_a": "Annen driftskostnad"
   },
   {
    "bloque": "b4",
@@ -303,7 +303,7 @@
    "anterior": "138 650",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "Sum kostnader"
+   "detalla_a": "Annen driftskostnad"
   },
   {
    "bloque": "b4",
@@ -313,7 +313,7 @@
    "anterior": "-",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "Sum kostnader"
+   "detalla_a": "Annen driftskostnad"
   },
   {
    "bloque": "b4",
@@ -323,7 +323,7 @@
    "anterior": "84 936",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "Sum kostnader"
+   "detalla_a": "Annen driftskostnad"
   },
   {
    "bloque": "b4",
@@ -333,7 +333,7 @@
    "anterior": "194 723",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "Sum kostnader"
+   "detalla_a": "Lønnskostnad"
   },
   {
    "bloque": "b4",
@@ -343,7 +343,7 @@
    "anterior": "-",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "Sum kostnader"
+   "detalla_a": "Lønnskostnad"
   },
   {
    "bloque": "b4",
@@ -353,7 +353,7 @@
    "anterior": "-",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "Sum kostnader"
+   "detalla_a": "Annen driftskostnad"
   },
   {
    "bloque": "b4",
@@ -363,7 +363,7 @@
    "anterior": "-",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "Sum kostnader"
+   "detalla_a": "Annen driftskostnad"
   },
   {
    "bloque": "b4",
@@ -373,7 +373,7 @@
    "anterior": "136 056",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "Sum kostnader"
+   "detalla_a": "Lønnskostnad"
   },
   {
    "bloque": "b4",
@@ -383,7 +383,7 @@
    "anterior": "90 250",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "Sum kostnader"
+   "detalla_a": "Annen driftskostnad"
   },
   {
    "bloque": "b4",
@@ -393,7 +393,7 @@
    "anterior": "14 537",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "Sum kostnader"
+   "detalla_a": "Annen driftskostnad"
   },
   {
    "bloque": "b4",
@@ -403,7 +403,7 @@
    "anterior": "4 132",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "Sum kostnader"
+   "detalla_a": "Annen driftskostnad"
   },
   {
    "bloque": "b4",
@@ -413,7 +413,7 @@
    "anterior": "4 400",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "Sum kostnader"
+   "detalla_a": "Annen driftskostnad"
   },
   {
    "bloque": "b4",
@@ -423,7 +423,7 @@
    "anterior": "16 083",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "Sum kostnader"
+   "detalla_a": "Annen driftskostnad"
   },
   {
    "bloque": "b4",
@@ -433,7 +433,7 @@
    "anterior": "-",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "Sum kostnader"
+   "detalla_a": "Annen driftskostnad"
   },
   {
    "bloque": "b4",
@@ -443,7 +443,7 @@
    "anterior": "-",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "Sum kostnader"
+   "detalla_a": "Annen driftskostnad"
   },
   {
    "bloque": "b4",
@@ -453,7 +453,7 @@
    "anterior": "1 676 400",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "Sum kostnader"
+   "detalla_a": "Annen driftskostnad"
   },
   {
    "bloque": "b4",
@@ -463,7 +463,7 @@
    "anterior": "22 558 723",
    "tipo": "renglon",
    "lado": "gasto",
-   "detalla_a": "Sum kostnader"
+   "detalla_a": "Annen driftskostnad"
   },
   {
    "bloque": "b4",
@@ -591,28 +591,29 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se toma el signo de b1 (negativo, -1 027 294 en L115) como correcto para 'Annen finansinntekt' 2012, aunque b4 L382 lo muestre positivo y el resultado indique que es una pérdida?",
+   "pregunta": "¿Se asignan Lønn/honorar, Lønn Gatelag y Sosiale tiltak (L354, L355, L358) a Lønnskostnad aunque suman 431 894 exacto?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Lønnskostnad",
+   "texto": "El cuadro b4 no indica a qué renglón del estado corresponde cada gasto; la suma L354+L355+L358 coincide con Lønnskostnad (L110).",
+   "bloques": [
+    "b4",
+    "b1"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se carga Finansinntekter 2012 con signo según el estado (-1 027 294, L115) pese a figurar positivo en L382?",
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "Annen finansinntekt",
-   "texto": "En b4 L382 los ingresos financieros llevan signo invertido (2011 entre paréntesis), y en 2012 el importe resta al resultado, por lo que es un neto negativo.",
+   "texto": "Signos de finanzas invertidos entre b1 L115 y b4 L382; se transcribe tal cual.",
    "bloques": [
     "b1",
-    "b4"
-   ],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se cargan los gastos por naturaleza desde b4 (L349-L377) como desglose de 'Sum kostnader' aunque no separan 'Lønnskostnad' de 'Annen driftskostnad'?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "Sum kostnader",
-   "texto": "Las partidas de b4 no mapean una a una a L110/L111 (salarios 63 134 + 335 210 ≠ 431 894), así que se asignaron al total.",
-   "bloques": [
     "b4"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "b4 es un cuadro con columnas presupuesto y desvío; solo se tomaron 'Regnskap 31.12.12' y 'Regnskap 31.12.11'. Filas con '-' en ambos años se omitieron. Sin impuesto a las ganancias."
+ "observaciones": "No existen filas de Televisión ni Estadio en el documento (club de base noruego); solo 'Utsmykning stadion' L349 como gasto. Las filas con '-' en 2012 y en 2011 se omitieron por no tener importe. Sin impuesto."
 }

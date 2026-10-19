@@ -1,14 +1,10 @@
 {
  "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2012.pdf",
- "generado": "2026-10-19T11:16:43.425Z",
- "frena": [
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-19T11:19:53.245Z",
+ "frena": [],
  "avisos": [
-  "perímetro: individual (ajuste manual del documento, 2026-10-18: perimetro-senales.mjs: el ejercicio 2012-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 15 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)"
+  "perímetro: individual (ajuste manual del documento, 2026-10-18: perimetro-senales.mjs: el ejercicio 2012-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 15 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)",
+  "categorías en 0 aun después del reintento (se carga así): Televisión, Estadio"
  ],
  "ejercicio": {
   "clubId": "fredrikstad-no",
@@ -99,24 +95,194 @@
   ],
   "expenseLines": [
    {
-    "rawLabel": "Lønnskostnad",
+    "rawLabel": "Lønn/honorar",
     "normalizedCategory": "wages_squad",
-    "amountNative": -0.431894,
+    "amountNative": -0.063134,
     "disclosureLevel": "aggregated",
-    "_pag": 2,
+    "_pag": 9,
+    "_escalon": 2,
+    "_conf": 0.8,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Lønn Gatelag",
+    "normalizedCategory": "youth_other_sports_expense",
+    "amountNative": -0.33521,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
     "_escalon": 0,
     "_conf": 1,
     "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
-    "rawLabel": "Annen driftskostnad",
-    "normalizedCategory": "other_expenses",
-    "amountNative": -23.122966,
+    "rawLabel": "Sosiale tiltak, frivillige",
+    "normalizedCategory": "youth_other_sports_expense",
+    "amountNative": -0.03355,
     "disclosureLevel": "aggregated",
-    "_pag": 2,
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Utsmykning stadion",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.016809,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
     "_escalon": 0,
     "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Adm. kostnader",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.045,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 1,
     "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Jeg er med!",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.071307,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Kurs",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.01183,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Reiseutgifter",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.035545,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Arrangement gatelag",
+    "normalizedCategory": "youth_other_sports_expense",
+    "amountNative": -0.078702,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Kostnader gatelag",
+    "normalizedCategory": "youth_other_sports_expense",
+    "amountNative": -0.17696,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Revisjonshonorar",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.05,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Revisjonsbistand",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.0265,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Juridisk bistand",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.08542,
+    "disclosureLevel": "aggregated",
+    "_pag": 12,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Kontorkostnader",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.00644,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gaver/medaljer",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.017425,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Representasjon/møter",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.0556,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ikke fradragsber. Kostn",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.10025,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Tap på krav",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.188489,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Utgifter Sport",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -21.156689,
+    "disclosureLevel": "aggregated",
+    "_pag": 9,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -141,6 +307,14 @@
     {
      "label": "Annen finanskostnad",
      "value": 0.000647
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Utgifter Sport",
+     "lado": "expense",
+     "importe": 21.156689,
+     "motivo": "Claude 2026-10-19: b4 L355-377 de fli-2012.md; gatelag = fútbol callejero/acción social; Utgifter Sport = gastos del deporte sin desglose"
     }
    ],
    "grossDebt": null,
@@ -186,7 +360,7 @@
   }
  ],
  "seleccion": {
-  "filas": 13,
+  "filas": 30,
   "notasUsadas": [],
   "refM": null
  },
@@ -313,35 +487,297 @@
    "amountNative": 0.0625
   },
   {
-   "label": "Lønnskostnad",
-   "page": 2,
-   "native": 0.431894,
+   "label": "Lønn/honorar",
+   "page": 9,
+   "native": 0.063134,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 0.431894,
+   "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
+   "signoFijo": 0.063134,
    "cat": "wages_squad",
+   "conf": 0.8,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.063134
+  },
+  {
+   "label": "Lønn Gatelag",
+   "page": 9,
+   "native": 0.33521,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
+   "signoFijo": 0.33521,
+   "cat": "youth_other_sports_expense",
    "conf": 1,
    "escalon": 0,
    "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Lønnskostnad sin separar plantel: entero a wages_squad. El documento no abre el renglon. [Lønnskostnad 53 626 147 (L1068)]",
+   "notaGuido": "Claude 2026-10-19: b4 L355-377 de fli-2012.md; gatelag = fútbol callejero/acción social; Utgifter Sport = gastos del deporte sin desglose",
    "destino": "expense",
-   "amountNative": -0.431894
+   "amountNative": -0.33521
   },
   {
-   "label": "Annen driftskostnad",
-   "page": 2,
-   "native": 23.122966,
+   "label": "Sosiale tiltak, frivillige",
+   "page": 9,
+   "native": 0.03355,
    "ladoDoc": "expense",
-   "origen": "verificacion (estado)",
-   "signoFijo": 23.122966,
-   "cat": "other_expenses",
-   "conf": 1,
-   "escalon": 0,
+   "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
+   "signoFijo": 0.03355,
+   "cat": "youth_other_sports_expense",
+   "conf": 0.9,
+   "escalon": 1,
    "fuenteCat": "categorias.json",
    "enLista": true,
    "destino": "expense",
-   "amountNative": -23.122966
+   "amountNative": -0.03355
+  },
+  {
+   "label": "Utsmykning stadion",
+   "page": 9,
+   "native": 0.016809,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Annen driftskostnad\")",
+   "signoFijo": 0.016809,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19: b4 L355-377 de fli-2012.md; gatelag = fútbol callejero/acción social; Utgifter Sport = gastos del deporte sin desglose",
+   "destino": "expense",
+   "amountNative": -0.016809
+  },
+  {
+   "label": "Adm. kostnader",
+   "page": 9,
+   "native": 0.045,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Annen driftskostnad\")",
+   "signoFijo": 0.045,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.045
+  },
+  {
+   "label": "Jeg er med!",
+   "page": 9,
+   "native": 0.071307,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Annen driftskostnad\")",
+   "signoFijo": 0.071307,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19: b4 L355-377 de fli-2012.md; gatelag = fútbol callejero/acción social; Utgifter Sport = gastos del deporte sin desglose",
+   "destino": "expense",
+   "amountNative": -0.071307
+  },
+  {
+   "label": "Kurs",
+   "page": 9,
+   "native": 0.01183,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Annen driftskostnad\")",
+   "signoFijo": 0.01183,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19: b4 L355-377 de fli-2012.md; gatelag = fútbol callejero/acción social; Utgifter Sport = gastos del deporte sin desglose",
+   "destino": "expense",
+   "amountNative": -0.01183
+  },
+  {
+   "label": "Reiseutgifter",
+   "page": 9,
+   "native": 0.035545,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Annen driftskostnad\")",
+   "signoFijo": 0.035545,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.035545
+  },
+  {
+   "label": "Arrangement gatelag",
+   "page": 9,
+   "native": 0.078702,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Annen driftskostnad\")",
+   "signoFijo": 0.078702,
+   "cat": "youth_other_sports_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19: b4 L355-377 de fli-2012.md; gatelag = fútbol callejero/acción social; Utgifter Sport = gastos del deporte sin desglose",
+   "destino": "expense",
+   "amountNative": -0.078702
+  },
+  {
+   "label": "Kostnader gatelag",
+   "page": 9,
+   "native": 0.17696,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Annen driftskostnad\")",
+   "signoFijo": 0.17696,
+   "cat": "youth_other_sports_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19: b4 L355-377 de fli-2012.md; gatelag = fútbol callejero/acción social; Utgifter Sport = gastos del deporte sin desglose",
+   "destino": "expense",
+   "amountNative": -0.17696
+  },
+  {
+   "label": "Revisjonshonorar",
+   "page": 12,
+   "native": 0.05,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Annen driftskostnad\" > desglose de \"Revisjon/juridiskbistand\")",
+   "signoFijo": 0.05,
+   "cat": "admin_general_expense",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.05
+  },
+  {
+   "label": "Revisjonsbistand",
+   "page": 12,
+   "native": 0.0265,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Annen driftskostnad\" > desglose de \"Revisjon/juridiskbistand\")",
+   "signoFijo": 0.0265,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.0265
+  },
+  {
+   "label": "Juridisk bistand",
+   "page": 12,
+   "native": 0.08542,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Annen driftskostnad\" > desglose de \"Revisjon/juridiskbistand\")",
+   "signoFijo": 0.08542,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.08542
+  },
+  {
+   "label": "Kontorkostnader",
+   "page": 9,
+   "native": 0.00644,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Annen driftskostnad\")",
+   "signoFijo": 0.00644,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.00644
+  },
+  {
+   "label": "Gaver/medaljer",
+   "page": 9,
+   "native": 0.017425,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Annen driftskostnad\")",
+   "signoFijo": 0.017425,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19: b4 L355-377 de fli-2012.md; gatelag = fútbol callejero/acción social; Utgifter Sport = gastos del deporte sin desglose",
+   "destino": "expense",
+   "amountNative": -0.017425
+  },
+  {
+   "label": "Representasjon/møter",
+   "page": 9,
+   "native": 0.0556,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Annen driftskostnad\")",
+   "signoFijo": 0.0556,
+   "cat": "admin_general_expense",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.0556
+  },
+  {
+   "label": "Ikke fradragsber. Kostn",
+   "page": 9,
+   "native": 0.10025,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Annen driftskostnad\")",
+   "signoFijo": 0.10025,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.10025
+  },
+  {
+   "label": "Tap på krav",
+   "page": 9,
+   "native": 1.188489,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Annen driftskostnad\")",
+   "signoFijo": 1.188489,
+   "cat": "other_expenses",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.188489
+  },
+  {
+   "label": "Utgifter Sport",
+   "page": 9,
+   "native": 21.156689,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Annen driftskostnad\")",
+   "signoFijo": 21.156689,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19: b4 L355-377 de fli-2012.md; gatelag = fútbol callejero/acción social; Utgifter Sport = gastos del deporte sin desglose",
+   "destino": "expense",
+   "amountNative": -21.156689
   },
   {
    "label": "Annen finansinntekt",
@@ -377,20 +813,12 @@
    "destino": "netInterest"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (nota que desglosa \"Salgsinntekt\")": "gastos con signo",
-   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Lønnskostnad\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Annen driftskostnad\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Annen driftskostnad\" > desglose de \"Revisjon/juridiskbistand\")": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
@@ -477,10 +905,10 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 8,
-  "lineasGasto": 2,
+  "lineasGasto": 19,
   "metaFilas": 3,
   "excluidas": 0
  }
