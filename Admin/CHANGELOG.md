@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 802 — 310, parte 1: caja de un año sin vecino (2026-10-19)
+
+* `caja-deuda.mjs`: la caja de un año sin vecino se acepta si está en el balance de mayor activo del documento que cuadra, en cualquier
+  país. Medido en todos los clubes: caja igual a lo cargado de 418 a 421; deuda idéntica.
+
 ## Versión 801 — Reino Unido: los 12 de subagentes, validados (2026-10-19)
 
 * Los 12 `.md` de subagentes Sonnet pasan `pipeline.mjs --lista` (~US$ 1,3); Aston Villa 2019-20 y 2020-21 se rehicieron con Mistral.

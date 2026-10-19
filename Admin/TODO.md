@@ -273,9 +273,8 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    `altas-revision.jsonl` traiga las ligas verificadas (las 17 altas de los lotes 89-90): que el alta las tome de la revisión.
 308. NOMBRAR EN LA SKILL club-data-mapping EL CRITERIO DE LOS BONOS CONVERTIBLES (con ok de Guido: es una skill). Ya está en
    CONVENCIONES-DATOS; la skill tiene que decirlo donde habla de deuda.
-310. CAJA Y DEUDA DE UN AÑO SIN VECINO (pedido de Guido, 2026-10-18; cierre de pipeline). Hoy solo la caja belga sale del código 54/58
-   cuando el balance del documento cuadra. Falta: (1) una compuerta de primer año para cualquier país (que el dato cuadre con el balance del
-   propio documento); (2) la deuda belga, con criterio a decidir (¿el 42 entra?; Union SG tiene 31,66 M cargados y 7,62 M por códigos
+310. CAJA Y DEUDA DE UN AÑO SIN VECINO (pedido de Guido, 2026-10-18; cierre de pipeline). La caja de un año sin vecino ya se acepta
+   si está en el balance de mayor activo que cuadra, en cualquier país (parte 1, 2026-10-19). Falta: (2) la deuda belga, con criterio a decidir (¿el 42 entra?; Union SG tiene 31,66 M cargados y 7,62 M por códigos
    financieros); (3) OH Leuven y los documentos cuyo .md no trae la columna de códigos. Si caja-deuda vuelve a atar un valor al año
    equivocado (Tallinna Kalev en onboarding), mirar qué `.md` devolvió `mdDeFuente`.
 309. TAMAÑO DE LIGA DESDE LA LISTA DE WIKIPEDIA (cierre de pantallas, a decidir con Guido). En 223 de los 227 liga-años con lista de

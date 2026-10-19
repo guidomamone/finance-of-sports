@@ -469,3 +469,5 @@ caja iguales 418 → 421, distintos 7 → 7, sinDato 383 → 380; deuda idéntic
 Udinese 2022 como distinto (0,17 M contra 44,18 M: la pág. 32 es el balance de una entidad chica); con la condición, 0 errores nuevos.
 De los 10 casos de caja sin vecino medidos, entran 3; los otros 7 siguen sin dato (su fila no tiene tabla/balance o el balance no cierra).
 **310 partes 2 y 3 y 290: recomendación hecha a Guido (ver el chat); sin tocar código.**
+
+## Después del merge del 310 parte 1 (2026-10-19)
