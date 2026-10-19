@@ -154,3 +154,15 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
 - **Para fos-onboarding:** los documentos belgas cuyas filas cambiaron vuelven a categorizar en el lote (etapa 7, ~US$ 0,03 por documento).
 
 ## Después del merge de la 298 g (2026-10-18)
+
+### 298 h: un no_es_rubro que deja un renglón sin filas (ok de Guido 2026-10-18, con freno)
+
+- **Qué cambió (para CHANGELOG):** `tools/cola.mjs --responder`: en un caso de categoría, `corregir --valor no_es_rubro` no se guarda si
+  la fila vino de una nota que abre un renglón del estado (origen "nota que desglosa X" o "desglose de X" en el `.verificacion.json`; vale
+  el padre más cercano) y, con esa respuesta y las otras `no_es_rubro` del documento, al renglón no le queda ninguna fila: avisa que el
+  renglón se perdería entero y pide la categoría; `--igual` la guarda igual. Medido sobre las 7 respuestas `no_es_rubro` que tuvo la cola:
+  frena solo las 2 de Narva Trans 2025 ("sh" de "Riigi ja KOV toetused", 42.848 + 109.938 = 152.786). Probado con copia de la cola: la
+  primera "sh" pasa (queda la otra), la segunda frena, Vitória Guimarães 2021-22 (fila sin nota) pasa. No cambia nada de lo que se
+  carga. Auditoría P0 0 / P1 0. Commit d306d3f42c.
+- **Para fos-onboarding y los subagentes de la cola:** si `--responder` contesta "No guardé la respuesta: … se queda sin filas", la
+  respuesta correcta suele ser la categoría de las filas, no sacarlas.
