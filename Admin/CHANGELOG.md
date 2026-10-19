@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 809 — 298 ac: la localización se rehace si cambió el perímetro (2026-10-19)
+
+* `localizar.mjs` anota el perímetro usado y rehace la localización cuando el ajuste cambió. Sarpsborg 08 2023 ya lee el individual
+  (US$ 0,13). Con la ab y la ac, Sarpsborg 2023 y 2024 se pueden volver a correr.
+
 ## Versión 808 — 298 ab: la nota del subtotal no pisa un estado más detallado (2026-10-19)
 
 * `verificar.mjs`: la nota del subtotal reemplaza al estado solo si trae al menos tantas filas. 720 de 722 documentos iguales; cambian

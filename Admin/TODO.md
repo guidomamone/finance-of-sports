@@ -31,7 +31,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
-* 298: mejoras de script de Estonia y Bélgica (ac, Sarpsborg 2023, espera tu ok: rehacer su localización, hasta US$ 0,10; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
+* 298: mejoras de script de Estonia y Bélgica ( la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
 * 308: los bonos convertibles en la skill
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
@@ -219,7 +219,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    fos-onboarding (algunos sin mirar las imágenes): validarlos con `pipeline.mjs --lista Admin/lotes/transcribir-valerenga.txt` o rehacerlos con Mistral.
 284. FREDRIKSTAD Y SARPSBORG 08: EL CLUB ES EL FLI (pedido de Guido, 2026-10-17). Fredrikstad: FLI 2013-2018 y 2024 cargados; falta
    2012 (la cola está contestada, pero la Tippeligaen pide sponsor: falta uno con fuente en `tools/contexto-manual.json`). Sarpsborg 08:
-   FLI 2012 y 2014-2022 y 2025 cargados; 2023 y 2024 esperan la 298 ab y ac; 2008 sin liga confirmada. Pardubice: no darle el alta con lo que hay (es FK Junior z.s.); el sourcing de la a.s.
+   FLI 2012 y 2014-2022 y 2025 cargados; 2023 y 2024 ya se pueden volver a correr (298 ab y ac hechas); 2008 sin liga confirmada. Pardubice: no darle el alta con lo que hay (es FK Junior z.s.); el sourcing de la a.s.
    lo hace Guido.
 287. QUE NO SE REPITA LA LIMPIEZA (cierre de onboarding). `audit.js` `carpeta-doble` ya está (P2): dio 25 hallazgos reales para mirar
    contra el documento (Hearts en Kelty Hearts, Fjölnir en ÍR; carpetas dobles de NEC, RFS, Thun, St. Gallen y Omonia; informes de liga
@@ -244,9 +244,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    2025): solo si aparece otra fila mixta sin códigos; el 630 belga ya sale solo. i) alta-club.mjs: un país nuevo
    frena hasta agregar su fila a PAISES: que la proponga. o) dos versiones "-correction" del mismo ejercicio entran juntas al lote (Bélgica): que
    entre una sola.
-   (la ab está hecha: Sarpsborg 2024 se recategoriza en su próxima corrida; las líneas de gasto de AVS 2023-24 cambiarían con los mismos
-   totales si se recarga). ac) Sarpsborg 08 2023
-   sigue leyendo el consolidado (ingresos 166,5 M, no 146,5 M) aunque tiene ajuste `perimetro` individual; el 2024 sí lo toma bien.
    z2) Westerlo 2015: 18 meses por cambio de cierre (no es primer ejercicio), sigue frenado; regla a decidir con Guido. t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en
    ellos: Patro Eisden 2025 (ingresos +1.810 por el waarvan 76A, gastos +4.012 por el 631/4), Lommel SK 2025 (gastos +172, el 609) y Lommel SK
    2018 (−182 de financiero) cerraron por tolerancia con errores chicos: decidir con Guido si se corrigen (escalón: correr el NBB también
