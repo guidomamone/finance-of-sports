@@ -61,6 +61,23 @@ const sarpsborg08noRevenueLinesByYear = {
     { rawLabel:'Tilskudd', normalizedCategory:'other_income', amountNative:3.078983, disclosureLevel:'aggregated' },
     { rawLabel:'Salg/utleie spillere', normalizedCategory:'player_sales', amountNative:15.059868, disclosureLevel:'aggregated' },
   ],
+  2018: [
+    { rawLabel:'Billettinntekter', normalizedCategory:'matchday_competition', amountNative:10.799302, disclosureLevel:'aggregated' },
+    { rawLabel:'Medlemsinntekter', normalizedCategory:'member_dues', amountNative:0.54178, disclosureLevel:'aggregated' },
+    { rawLabel:'Cupoppgjør NFF', normalizedCategory:'competition_bonus', amountNative:0.179476, disclosureLevel:'aggregated' },
+    { rawLabel:'Media/tilskudd UEFA', normalizedCategory:'competition_bonus', amountNative:53.339762, disclosureLevel:'aggregated' },
+    { rawLabel:'Grasrotandel', normalizedCategory:'other_income', amountNative:1.755421, disclosureLevel:'aggregated' },
+    { rawLabel:'Gaver/bidrag', normalizedCategory:'other_income', amountNative:5.4875, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre inntekter', normalizedCategory:'other_income', amountNative:1.419999, disclosureLevel:'aggregated' },
+    { rawLabel:'Reklame og sponsorinntekter', normalizedCategory:'sponsorship_commercial', amountNative:27.920566, disclosureLevel:'aggregated' },
+    { rawLabel:'Kiosk salg', normalizedCategory:'other_income', amountNative:2.119448, disclosureLevel:'aggregated' },
+    { rawLabel:'Supporterutstyr', normalizedCategory:'sponsorship_commercial', amountNative:1.784621, disclosureLevel:'aggregated' },
+    { rawLabel:'Solidaritetsmidler', normalizedCategory:'player_sales', amountNative:1.240989, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre inntekter', normalizedCategory:'other_income', amountNative:0.688182, disclosureLevel:'aggregated' },
+    { rawLabel:'Mediainntekter', normalizedCategory:'broadcasting', amountNative:17.441622, disclosureLevel:'aggregated' },
+    { rawLabel:'Tilskudd', normalizedCategory:'other_income', amountNative:1.061454, disclosureLevel:'aggregated' },
+    { rawLabel:'Salg/utleie spillere', normalizedCategory:'player_sales', amountNative:41.570877, disclosureLevel:'aggregated' },
+  ],
 };
 const sarpsborg08noExpenseLinesByYear = {
   2025: [
@@ -128,6 +145,28 @@ const sarpsborg08noExpenseLinesByYear = {
     { rawLabel:'Andre kostnader', normalizedCategory:'other_expenses', amountNative:-1.641942, disclosureLevel:'aggregated' },
     { rawLabel:'Reklame og sponsorkostnader', normalizedCategory:'admin_general_expense', amountNative:-6.635189, disclosureLevel:'aggregated' },
     { rawLabel:'Admkost', normalizedCategory:'admin_general_expense', amountNative:-5.050467, disclosureLevel:'aggregated' },
+  ],
+  2018: [
+    { rawLabel:'Trening/materiell kostnader', normalizedCategory:'other_expenses', amountNative:-4.543715, disclosureLevel:'aggregated' },
+    { rawLabel:'Kamp kostnader', normalizedCategory:'match_organisation_expense', amountNative:-6.077228, disclosureLevel:'aggregated' },
+    { rawLabel:'Reise og oppholdskostander bortekamper', normalizedCategory:'match_organisation_expense', amountNative:-11.272725, disclosureLevel:'aggregated' },
+    { rawLabel:'Innkjøp av varer for videresalg', normalizedCategory:'other_expenses', amountNative:-1.656566, disclosureLevel:'aggregated' },
+    { rawLabel:'Kostn /kjøp/salg spillere/utd midler', normalizedCategory:'player_amortisation', amountNative:-8.296499, disclosureLevel:'aggregated' },
+    { rawLabel:'Lønn', normalizedCategory:'wages_squad', amountNative:-43.412691, disclosureLevel:'aggregated' },
+    { rawLabel:'Arbeidsgiveravgift', normalizedCategory:'wages_squad', amountNative:-6.681787, disclosureLevel:'aggregated' },
+    { rawLabel:'Pensjonskostnader', normalizedCategory:'wages_squad', amountNative:-0.474999, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre relaterte ytelser / Refusjoner', normalizedCategory:'wages_squad', amountNative:-0.346041, disclosureLevel:'aggregated' },
+    { rawLabel:'Avskrivning på driftsmidler og immaterielle eiendeler', normalizedCategory:'depreciation', amountNative:-4.391933, disclosureLevel:'aggregated' },
+    { rawLabel:'Honorar medisinsk støtteapparat', normalizedCategory:'other_expenses', amountNative:-1.152056, disclosureLevel:'aggregated' },
+    { rawLabel:'Agent/talentspeidere', normalizedCategory:'other_expenses', amountNative:-2.741182, disclosureLevel:'aggregated' },
+    { rawLabel:'Reisekostnader/kilometergodt.', normalizedCategory:'match_organisation_expense', amountNative:-1.887257, disclosureLevel:'aggregated' },
+    { rawLabel:'Leiekostnader', normalizedCategory:'other_expenses', amountNative:-2.50332, disclosureLevel:'aggregated' },
+    { rawLabel:'Gave til sammarbeidsklubber', normalizedCategory:'other_expenses', amountNative:-0.975, disclosureLevel:'aggregated' },
+    { rawLabel:'Kostnader stadion UEFA', normalizedCategory:'match_organisation_expense', amountNative:-1.473431, disclosureLevel:'aggregated' },
+    { rawLabel:'Kostnader Videresalg Invest', normalizedCategory:'other_expenses', amountNative:-3.127981, disclosureLevel:'aggregated' },
+    { rawLabel:'Andre kostnader', normalizedCategory:'other_expenses', amountNative:-3.017256, disclosureLevel:'aggregated' },
+    { rawLabel:'Reklame og sponsorkostnader', normalizedCategory:'admin_general_expense', amountNative:-8.30024, disclosureLevel:'aggregated' },
+    { rawLabel:'Admkost', normalizedCategory:'admin_general_expense', amountNative:-6.922218, disclosureLevel:'aggregated' },
   ],
 };
 const sarpsborg08noFiscalYearMeta = {
@@ -211,6 +250,22 @@ const sarpsborg08noFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:80.973676, officialTotalExpenses:74.226687, officialPAT:6.636995,
   },
+  2018: {
+    currency:'NOK', fxRef:'NOK@2018-12-31',
+    sourceId:'sarpsborg08-no-aarsregnskap-fotballforening-fli-2018',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0.400574, tax:0,
+    extraRows: [
+      {label:'Annen renteinntekt', value:0.054073},
+      {label:'Annen finansinntekt', value:0.719162},
+      {label:'Annen rentekostnad', value:-0.292804},
+      {label:'Annen finanskostnad', value:-0.079857},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:167.350999, officialTotalExpenses:119.254125, officialPAT:48.49745,
+  },
 };
 const sarpsborg08noPresupuestoOverlayByYear = {};
 
@@ -250,6 +305,11 @@ Object.assign(sources, {
   'sarpsborg08-no-aarsregnskap-fotballforening-fli-2017': {
     id:'sarpsborg08-no-aarsregnskap-fotballforening-fli-2017', clubId:'sarpsborg08-no',
     title:'Sarpsborg 08 Fotballforening — aarsregnskap-fotballforening-fli-2017 (ejercicio 2017)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'sarpsborg08-no-aarsregnskap-fotballforening-fli-2018': {
+    id:'sarpsborg08-no-aarsregnskap-fotballforening-fli-2018', clubId:'sarpsborg08-no',
+    title:'Sarpsborg 08 Fotballforening — aarsregnskap-fotballforening-fli-2018 (ejercicio 2018)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
