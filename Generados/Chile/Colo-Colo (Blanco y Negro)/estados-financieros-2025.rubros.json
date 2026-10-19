@@ -3,7 +3,7 @@
   "pdf": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2025.pdf",
   "club": "colocolo-cl",
   "year": 2025,
-  "generatedAt": "2026-10-19T16:42:17.004Z",
+  "generatedAt": "2026-10-19T17:37:08.033Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -57,14 +57,44 @@
       "glosa": "Otros"
     },
     {
-      "label": "Otros ingresos, por función",
+      "label": "Condonación",
       "lado": "revenue",
-      "page": 10,
-      "section": "estado",
+      "page": 74,
+      "section": "nota que desglosa \"Otros ingresos, por función\"",
       "values": [
-        5680.08
+        2137.102
       ],
-      "glosa": "Otros ingresos, por función"
+      "glosa": "Condonación"
+    },
+    {
+      "label": "Condonación Intereses y Multas TGR",
+      "lado": "revenue",
+      "page": 74,
+      "section": "nota que desglosa \"Otros ingresos, por función\"",
+      "values": [
+        3067.963
+      ],
+      "glosa": "Condonación Intereses y Multas TGR"
+    },
+    {
+      "label": "Dividendos",
+      "lado": "revenue",
+      "page": 74,
+      "section": "nota que desglosa \"Otros ingresos, por función\"",
+      "values": [
+        8.095
+      ],
+      "glosa": "Dividendos"
+    },
+    {
+      "label": "Otros Ingresos",
+      "lado": "revenue",
+      "page": 74,
+      "section": "nota que desglosa \"Otros ingresos, por función\"",
+      "values": [
+        466.92
+      ],
+      "glosa": "Otros Ingresos"
     },
     {
       "label": "Costo de ventas jugadores",
@@ -140,31 +170,21 @@
       "label": "Gasto de administración",
       "lado": "expense",
       "page": 10,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         10838.114
       ],
       "glosa": "Gasto de administración"
     },
     {
-      "label": "Otros gastos",
+      "label": "Otros gastos, por función",
       "lado": "expense",
-      "page": 75,
-      "section": "nota que desglosa \"Otros gastos, por función\"",
+      "page": 10,
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        39.825
+        592.508
       ],
-      "glosa": "Otros gastos"
-    },
-    {
-      "label": "Intereses y Multas",
-      "lado": "expense",
-      "page": 75,
-      "section": "nota que desglosa \"Otros gastos, por función\"",
-      "values": [
-        552.683
-      ],
-      "glosa": "Intereses y Multas"
+      "glosa": "Otros gastos, por función"
     }
   ]
 }

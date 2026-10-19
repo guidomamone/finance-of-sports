@@ -1,0 +1,674 @@
+{
+ "pdf": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2025.pdf",
+ "generado": "2026-10-19T18:34:44.979Z",
+ "frena": [],
+ "avisos": [
+  "perímetro heredado del año cargado más cercano (2024, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2022 consolidado, 2023 consolidado, 2024 consolidado",
+  "categorías en 0 aun después del reintento (se carga así): Otras secciones deportivas",
+  "fx: Regla #0: antes de cargar, confirmar en el documento que NO declara su propio tipo de cambio de cierre; si lo declara, gana ese sobre el de mercado de abajo"
+ ],
+ "ejercicio": {
+  "clubId": "colocolo-cl",
+  "year": 2025,
+  "cierre": "2025-12-31",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Ingresos por recaudaciones",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 9706.043,
+    "disclosureLevel": "aggregated",
+    "_pag": 72,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ingresos por venta de jugadores comprado a terceros",
+    "normalizedCategory": "player_sales",
+    "amountNative": 5179.121,
+    "disclosureLevel": "aggregated",
+    "_pag": 72,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ingresos por publicidad",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 14590.645,
+    "disclosureLevel": "aggregated",
+    "_pag": 72,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Ingresos por derechos de televisión",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 9046.906,
+    "disclosureLevel": "aggregated",
+    "_pag": 72,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros",
+    "normalizedCategory": "other_income",
+    "amountNative": 2563.401,
+    "disclosureLevel": "aggregated",
+    "_pag": 72,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Condonación",
+    "normalizedCategory": "other_income",
+    "amountNative": 2137.102,
+    "disclosureLevel": "aggregated",
+    "_pag": 74,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Condonación Intereses y Multas TGR",
+    "normalizedCategory": "other_income",
+    "amountNative": 3067.963,
+    "disclosureLevel": "aggregated",
+    "_pag": 74,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Dividendos",
+    "normalizedCategory": "other_income",
+    "amountNative": 8.095,
+    "disclosureLevel": "aggregated",
+    "_pag": 74,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros Ingresos",
+    "normalizedCategory": "other_income",
+    "amountNative": 466.92,
+    "disclosureLevel": "aggregated",
+    "_pag": 74,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Costo de ventas jugadores",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -513.66,
+    "disclosureLevel": "aggregated",
+    "_pag": 75,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Remuneración plantel profesional y cuerpo técnico",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -14394.745,
+    "disclosureLevel": "aggregated",
+    "_pag": 75,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortización Activos en concesión",
+    "normalizedCategory": "depreciation",
+    "amountNative": -228.205,
+    "disclosureLevel": "aggregated",
+    "_pag": 75,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortización Otros Intangibles",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -68.556,
+    "disclosureLevel": "aggregated",
+    "_pag": 75,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Amortización pases jugadores profesionales",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -4859.862,
+    "disclosureLevel": "aggregated",
+    "_pag": 75,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Costos de concentración traslados y otros",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -6345.375,
+    "disclosureLevel": "aggregated",
+    "_pag": 75,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros costos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -3278.958,
+    "disclosureLevel": "aggregated",
+    "_pag": 75,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Gasto de administración",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -10838.114,
+    "disclosureLevel": "aggregated",
+    "_pag": 10,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Otros gastos, por función",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -592.508,
+    "disclosureLevel": "aggregated",
+    "_pag": 10,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "CLP",
+   "fxRef": "CLP@2025-12-31",
+   "sourceId": "colocolo-cl-estados-financieros-2025",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -365.543,
+   "tax": -185.78,
+   "extraRows": [
+    {
+     "label": "Ingresos financieros",
+     "value": 11.927
+    },
+    {
+     "label": "Costos financieros",
+     "value": -647.925
+    },
+    {
+     "label": "Diferencias de tipo de cambio",
+     "value": 270.455
+    },
+    {
+     "label": "(Gasto) ingreso por Impuesto a las Ganancias",
+     "value": -185.78
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 46766.196,
+   "officialTotalExpenses": 41119.983,
+   "officialPAT": 5094.89
+  },
+  "source": {
+   "id": "colocolo-cl-estados-financieros-2025",
+   "clubId": "colocolo-cl",
+   "title": "Blanco y Negro S.A. — estados-financieros-2025 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
+ "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2025.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "colocolo-cl",
+ "year": 2025,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 22,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Ingresos por recaudaciones",
+   "page": 72,
+   "native": 9706.043,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 9706.043,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 9706.043
+  },
+  {
+   "label": "Ingresos por venta de jugadores comprado a terceros",
+   "page": 72,
+   "native": 5179.121,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 5179.121,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5179.121
+  },
+  {
+   "label": "Ingresos por publicidad",
+   "page": 72,
+   "native": 14590.645,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 14590.645,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 14590.645
+  },
+  {
+   "label": "Ingresos por derechos de televisión",
+   "page": 72,
+   "native": 9046.906,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 9046.906,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 9046.906
+  },
+  {
+   "label": "Otros",
+   "page": 72,
+   "native": 2563.401,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")",
+   "signoFijo": 2563.401,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2563.401
+  },
+  {
+   "label": "Condonación",
+   "page": 74,
+   "native": 2137.102,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Otros ingresos, por función\")",
+   "signoFijo": 2137.102,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2137.102
+  },
+  {
+   "label": "Condonación Intereses y Multas TGR",
+   "page": 74,
+   "native": 3067.963,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Otros ingresos, por función\")",
+   "signoFijo": 3067.963,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3067.963
+  },
+  {
+   "label": "Dividendos",
+   "page": 74,
+   "native": 8.095,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Otros ingresos, por función\")",
+   "signoFijo": 8.095,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 8.095
+  },
+  {
+   "label": "Otros Ingresos",
+   "page": 74,
+   "native": 466.92,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Otros ingresos, por función\")",
+   "signoFijo": 466.92,
+   "cat": "other_income",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 466.92
+  },
+  {
+   "label": "Costo de ventas jugadores",
+   "page": 75,
+   "native": 513.66,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 513.66,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -513.66
+  },
+  {
+   "label": "Remuneración plantel profesional y cuerpo técnico",
+   "page": 75,
+   "native": 14394.745,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 14394.745,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -14394.745
+  },
+  {
+   "label": "Amortización Activos en concesión",
+   "page": 75,
+   "native": 228.205,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 228.205,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -228.205
+  },
+  {
+   "label": "Amortización Otros Intangibles",
+   "page": 75,
+   "native": 68.556,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 68.556,
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -68.556
+  },
+  {
+   "label": "Amortización pases jugadores profesionales",
+   "page": 75,
+   "native": 4859.862,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 4859.862,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -4859.862
+  },
+  {
+   "label": "Costos de concentración traslados y otros",
+   "page": 75,
+   "native": 6345.375,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 6345.375,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -6345.375
+  },
+  {
+   "label": "Otros costos",
+   "page": 75,
+   "native": 3278.958,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 3278.958,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3278.958
+  },
+  {
+   "label": "Gasto de administración",
+   "page": 10,
+   "native": 10838.114,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 10838.114,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -10838.114
+  },
+  {
+   "label": "Otros gastos, por función",
+   "page": 10,
+   "native": 592.508,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 592.508,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -592.508
+  },
+  {
+   "label": "Ingresos financieros",
+   "page": null,
+   "native": 11.927,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Costos financieros",
+   "page": null,
+   "native": -647.925,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Diferencias de tipo de cambio",
+   "page": null,
+   "native": 270.455,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "(Gasto) ingreso por Impuesto a las Ganancias",
+   "page": null,
+   "native": -185.78,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Otros ingresos, por función\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Costo de ventas\")": "gastos sin signo (se invierten)",
+   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 46766.196,
+  "expSum": -41119.983,
+  "officialTotalRevenue": 46766.196,
+  "officialTotalExpenses": 41119.983,
+  "officialPAT": 5094.89,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 5094.89,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 46766.196
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 41119.983
+  }
+ },
+ "liga": {
+  "valor": "cl-primera",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (260 de 266 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "heredado del año cargado más cercano",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "CLP",
+   "fuente": "moneda de curso legal de Chile (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fx": {
+   "valor": null,
+   "fuente": "el .md menciona tipo de cambio y dólar con números en 11 línea(s), pero ninguno es una cotización plausible",
+   "estado": "pendiente"
+  },
+  "fxRef": {
+   "valor": "CLP@2025-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene CLP@2025-12-31 = 907.13 (Dólar observado (Banco Central de Chile, publicado por el SII), última rueda hábil antes del cierre (2026-01-02, 2025-12-31 no es día hábil))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "colocolo-cl-estados-financieros-2025",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "cl-primera",
+   "fuente": "data/club-leagues/cl.js ya tiene la fila",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 9,
+  "lineasGasto": 9,
+  "metaFilas": 4,
+  "excluidas": 0
+ }
+}

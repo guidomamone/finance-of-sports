@@ -3,8 +3,9 @@
  "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2025.md",
  "mdSha1": "accc467cb21987081c9d2a818e0b3aa8551a3efc",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T16:16:29.283Z",
+ "generado": "2026-10-19T17:32:36.415Z",
  "perimetroClub": null,
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 8,
@@ -65,12 +66,20 @@
   "b8": {
    "pagina": 40,
    "lineas": [
+    2232,
+    2238
+   ],
+   "tipo": "texto"
+  },
+  "b9": {
+   "pagina": 40,
+   "lineas": [
     2242,
     2248
    ],
    "tipo": "texto"
   },
-  "b9": {
+  "b10": {
    "pagina": 40,
    "lineas": [
     2253,
@@ -78,7 +87,7 @@
    ],
    "tipo": "texto"
   },
-  "b10": {
+  "b11": {
    "pagina": 40,
    "lineas": [
     2259,
@@ -86,7 +95,7 @@
    ],
    "tipo": "texto"
   },
-  "b11": {
+  "b12": {
    "pagina": 42,
    "lineas": [
     2359,
@@ -94,7 +103,31 @@
    ],
    "tipo": "texto"
   },
-  "b12": {
+  "b13": {
+   "pagina": 43,
+   "lineas": [
+    2418,
+    2423
+   ],
+   "tipo": "texto"
+  },
+  "b14": {
+   "pagina": 43,
+   "lineas": [
+    2435,
+    2437
+   ],
+   "tipo": "texto"
+  },
+  "b15": {
+   "pagina": 45,
+   "lineas": [
+    2528,
+    2536
+   ],
+   "tipo": "texto"
+  },
+  "b16": {
    "pagina": 45,
    "lineas": [
     2548,
@@ -102,15 +135,55 @@
    ],
    "tipo": "texto"
   },
-  "b13": {
+  "b17": {
+   "pagina": 46,
+   "lineas": [
+    2575,
+    2578
+   ],
+   "tipo": "texto"
+  },
+  "b18": {
+   "pagina": 46,
+   "lineas": [
+    2606,
+    2610
+   ],
+   "tipo": "texto"
+  },
+  "b19": {
+   "pagina": 46,
+   "lineas": [
+    2612,
+    2615
+   ],
+   "tipo": "texto"
+  },
+  "b20": {
    "pagina": 47,
    "lineas": [
-    2651,
+    2649,
     2653
    ],
    "tipo": "texto"
   },
-  "b14": {
+  "b21": {
+   "pagina": 48,
+   "lineas": [
+    2753,
+    2763
+   ],
+   "tipo": "texto"
+  },
+  "b22": {
+   "pagina": 49,
+   "lineas": [
+    2812,
+    2815
+   ],
+   "tipo": "texto"
+  },
+  "b23": {
    "pagina": 49,
    "lineas": [
     2820,
@@ -118,7 +191,7 @@
    ],
    "tipo": "texto"
   },
-  "b15": {
+  "b24": {
    "pagina": 50,
    "lineas": [
     2875,
@@ -126,7 +199,7 @@
    ],
    "tipo": "texto"
   },
-  "b16": {
+  "b25": {
    "pagina": 51,
    "lineas": [
     2923,
@@ -134,39 +207,55 @@
    ],
    "tipo": "texto"
   },
-  "b17": {
+  "b26": {
    "pagina": 51,
    "lineas": [
-    2962,
+    2959,
     2965
    ],
    "tipo": "texto"
   },
-  "b18": {
+  "b27": {
    "pagina": 57,
    "lineas": [
     3281,
-    3284
+    3288
    ],
    "tipo": "texto"
   },
-  "b19": {
+  "b28": {
    "pagina": 57,
    "lineas": [
     3293,
-    3296
+    3300
    ],
    "tipo": "texto"
   },
-  "b20": {
+  "b29": {
    "pagina": 57,
    "lineas": [
     3305,
-    3308
+    3312
    ],
    "tipo": "texto"
   },
-  "b21": {
+  "b30": {
+   "pagina": 60,
+   "lineas": [
+    3451,
+    3459
+   ],
+   "tipo": "texto"
+  },
+  "b31": {
+   "pagina": 60,
+   "lineas": [
+    3475,
+    3479
+   ],
+   "tipo": "texto"
+  },
+  "b32": {
    "pagina": 62,
    "lineas": [
     3558,
@@ -174,7 +263,7 @@
    ],
    "tipo": "texto"
   },
-  "b22": {
+  "b33": {
    "pagina": 62,
    "lineas": [
     3565,
@@ -182,7 +271,7 @@
    ],
    "tipo": "texto"
   },
-  "b23": {
+  "b34": {
    "pagina": 63,
    "lineas": [
     3605,
@@ -190,7 +279,7 @@
    ],
    "tipo": "texto"
   },
-  "b24": {
+  "b35": {
    "pagina": 63,
    "lineas": [
     3613,
@@ -198,7 +287,23 @@
    ],
    "tipo": "texto"
   },
-  "b25": {
+  "b36": {
+   "pagina": 64,
+   "lineas": [
+    3650,
+    3654
+   ],
+   "tipo": "texto"
+  },
+  "b37": {
+   "pagina": 64,
+   "lineas": [
+    3659,
+    3667
+   ],
+   "tipo": "texto"
+  },
+  "b38": {
    "pagina": 64,
    "lineas": [
     3701,
@@ -206,7 +311,15 @@
    ],
    "tipo": "texto"
   },
-  "b26": {
+  "b39": {
+   "pagina": 65,
+   "lineas": [
+    3727,
+    3730
+   ],
+   "tipo": "texto"
+  },
+  "b40": {
    "pagina": 65,
    "lineas": [
     3747,
@@ -214,7 +327,7 @@
    ],
    "tipo": "texto"
   },
-  "b27": {
+  "b41": {
    "pagina": 66,
    "lineas": [
     3774,
@@ -222,7 +335,15 @@
    ],
    "tipo": "texto"
   },
-  "b28": {
+  "b42": {
+   "pagina": 67,
+   "lineas": [
+    3814,
+    3821
+   ],
+   "tipo": "texto"
+  },
+  "b43": {
    "pagina": 67,
    "lineas": [
     3826,
@@ -230,7 +351,7 @@
    ],
    "tipo": "texto"
   },
-  "b29": {
+  "b44": {
    "pagina": 67,
    "lineas": [
     3836,
@@ -238,7 +359,7 @@
    ],
    "tipo": "texto"
   },
-  "b30": {
+  "b45": {
    "pagina": 68,
    "lineas": [
     3897,
@@ -246,15 +367,31 @@
    ],
    "tipo": "texto"
   },
-  "b31": {
+  "b46": {
+   "pagina": 69,
+   "lineas": [
+    3941,
+    3945
+   ],
+   "tipo": "texto"
+  },
+  "b47": {
+   "pagina": 69,
+   "lineas": [
+    3951,
+    3954
+   ],
+   "tipo": "texto"
+  },
+  "b48": {
    "pagina": 70,
    "lineas": [
-    3976,
+    3975,
     3981
    ],
    "tipo": "texto"
   },
-  "b32": {
+  "b49": {
    "pagina": 70,
    "lineas": [
     3998,
@@ -262,7 +399,7 @@
    ],
    "tipo": "texto"
   },
-  "b33": {
+  "b50": {
    "pagina": 71,
    "lineas": [
     4048,
@@ -270,7 +407,15 @@
    ],
    "tipo": "texto"
   },
-  "b34": {
+  "b51": {
+   "pagina": 71,
+   "lineas": [
+    4070,
+    4073
+   ],
+   "tipo": "texto"
+  },
+  "b52": {
    "pagina": 72,
    "lineas": [
     4094,
@@ -278,7 +423,7 @@
    ],
    "tipo": "texto"
   },
-  "b35": {
+  "b53": {
    "pagina": 73,
    "lineas": [
     4142,
@@ -286,7 +431,7 @@
    ],
    "tipo": "texto"
   },
-  "b36": {
+  "b54": {
    "pagina": 73,
    "lineas": [
     4155,
@@ -294,31 +439,31 @@
    ],
    "tipo": "texto"
   },
-  "b37": {
+  "b55": {
    "pagina": 74,
    "lineas": [
-    4188,
+    4186,
     4190
    ],
    "tipo": "texto"
   },
-  "b38": {
-   "pagina": 75,
+  "b56": {
+   "pagina": 74,
    "lineas": [
-    4249,
-    4253
+    4212,
+    4217
    ],
    "tipo": "texto"
   },
-  "b39": {
+  "b57": {
    "pagina": 75,
    "lineas": [
-    4255,
+    4248,
     4268
    ],
    "tipo": "texto"
   },
-  "b40": {
+  "b58": {
    "pagina": 75,
    "lineas": [
     4271,
@@ -326,55 +471,39 @@
    ],
    "tipo": "texto"
   },
-  "b41": {
+  "b59": {
    "pagina": 76,
    "lineas": [
-    4301,
+    4300,
     4305
    ],
    "tipo": "texto"
   },
-  "b42": {
+  "b60": {
    "pagina": 76,
    "lineas": [
-    4314,
+    4313,
     4320
    ],
    "tipo": "texto"
   },
-  "b43": {
+  "b61": {
    "pagina": 77,
    "lineas": [
-    4340,
+    4339,
     4347
    ],
    "tipo": "texto"
   },
-  "b44": {
+  "b62": {
    "pagina": 78,
    "lineas": [
     4406,
-    4408
-   ],
-   "tipo": "texto"
-  },
-  "b45": {
-   "pagina": 78,
-   "lineas": [
-    4410,
-    4416
-   ],
-   "tipo": "texto"
-  },
-  "b46": {
-   "pagina": 78,
-   "lineas": [
-    4418,
     4426
    ],
    "tipo": "texto"
   },
-  "b47": {
+  "b63": {
    "pagina": 79,
    "lineas": [
     4447,
@@ -382,7 +511,23 @@
    ],
    "tipo": "texto"
   },
-  "b48": {
+  "b64": {
+   "pagina": 80,
+   "lineas": [
+    4501,
+    4506
+   ],
+   "tipo": "texto"
+  },
+  "b65": {
+   "pagina": 80,
+   "lineas": [
+    4510,
+    4517
+   ],
+   "tipo": "texto"
+  },
+  "b66": {
    "pagina": 81,
    "lineas": [
     4553,
@@ -390,7 +535,15 @@
    ],
    "tipo": "texto"
   },
-  "b49": {
+  "b67": {
+   "pagina": 81,
+   "lineas": [
+    4568,
+    4575
+   ],
+   "tipo": "texto"
+  },
+  "b68": {
    "pagina": 82,
    "lineas": [
     4597,
@@ -398,15 +551,15 @@
    ],
    "tipo": "texto"
   },
-  "b50": {
+  "b69": {
    "pagina": 82,
    "lineas": [
     4619,
-    4627
+    4632
    ],
    "tipo": "texto"
   },
-  "b51": {
+  "b70": {
    "pagina": 82,
    "lineas": [
     4650,
@@ -414,15 +567,15 @@
    ],
    "tipo": "texto"
   },
-  "b52": {
+  "b71": {
    "pagina": 83,
    "lineas": [
-    4698,
+    4696,
     4702
    ],
    "tipo": "texto"
   },
-  "b53": {
+  "b72": {
    "pagina": 83,
    "lineas": [
     4704,
@@ -430,7 +583,7 @@
    ],
    "tipo": "texto"
   },
-  "b54": {
+  "b73": {
    "pagina": 83,
    "lineas": [
     4721,
@@ -438,7 +591,7 @@
    ],
    "tipo": "texto"
   },
-  "b55": {
+  "b74": {
    "pagina": 85,
    "lineas": [
     4814,
@@ -446,7 +599,7 @@
    ],
    "tipo": "texto"
   },
-  "b56": {
+  "b75": {
    "pagina": 88,
    "lineas": [
     5013,
@@ -454,7 +607,7 @@
    ],
    "tipo": "texto"
   },
-  "b57": {
+  "b76": {
    "pagina": 105,
    "lineas": [
     6068,
@@ -462,10 +615,10 @@
    ],
    "tipo": "texto"
   },
-  "b58": {
+  "b77": {
    "pagina": 106,
    "lineas": [
-    6100,
+    6097,
     6103
    ],
    "tipo": "texto"
@@ -477,15 +630,17 @@
   "b4"
  ],
  "notas_ingresos": [
-  "b34",
-  "b37"
+  "b52",
+  "b55",
+  "b56",
+  "b64",
+  "b65"
  ],
  "notas_gastos": [
-  "b38",
-  "b39",
-  "b40",
-  "b41",
-  "b42"
+  "b57",
+  "b58",
+  "b59",
+  "b60"
  ],
  "escala": "miles",
  "escala_evidencia": "(Cifras en miles de pesos - M$)",
@@ -496,29 +651,30 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga el cuadro de ingresos por tiempo de transferencia (b35, pág. 73), que reparte el total de ingresos en 'Servicios transferidos en un momento' y 'Servicios transferidos a lo largo del tiempo'?",
+   "pregunta": "¿Se cargan las columnas por segmento del estado de resultados por segmentos (pág. 80, b64-b65) para obtener los importes de 'Otras secciones deportivas'?",
    "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "Total de ingresos actividades ordinarias",
-   "texto": "Es una apertura alternativa del mismo total que ya desglosa b34 por naturaleza.",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "Ingresos de actividades ordinarias",
+   "texto": "El cuadro por segmento de pág. 80 tiene columnas por unidad de negocio; una de ellas sería la que abre otras secciones deportivas, que el estado y la nota 20 no desglosan.",
    "bloques": [
-    "b35"
+    "b64",
+    "b65"
    ],
-   "afecta_carga": false
+   "afecta_carga": true
   },
   {
-   "pregunta": "¿Se dejan afuera de la carga los cuadros de las págs. 78-83 (b44-b54), por ser estados por sociedad o por moneda y no desgloses de resultados?",
-   "propuesta": "sí",
-   "tema": "otro",
+   "pregunta": "¿El cuadro por segmento de pág. 80 tiene una columna identificable como 'Otras secciones deportivas' (y no solo eliminaciones/ajustes de consolidación)?",
+   "propuesta": "no",
+   "tema": "usar-cuadro-por-segmento",
    "renglon": "",
-   "texto": "Son balances y flujos por entidad o por moneda; ninguno abre renglones del estado de resultados.",
+   "texto": "En b62 la tercera columna parece de eliminaciones (montos negativos de cuentas con relacionadas), así que podría no haber segmento deportivo distinto; los encabezados de columnas no se ven en el índice.",
    "bloques": [
-    "b44",
-    "b47",
-    "b48"
+    "b62",
+    "b64",
+    "b65"
    ],
-   "afecta_carga": false
+   "afecta_carga": true
   }
  ],
- "observaciones": "Estado de resultados consolidado en págs. 10 (b3 y su continuación b4). b5 es resultado integral y no se elige. Notas de ingresos: b34 (detalle de ingresos ordinarios) y b37 (venta de jugadores). Notas de gastos: costos por naturaleza b38-b40, costos financieros b41 y diferencias de cambio b42."
+ "observaciones": "Estados financieros consolidados de Blanco y Negro S.A. Estado de resultados por función en b3-b4 (b5 es resultado integral, no se elige). Nota 20 de ingresos: b52 (detalle de ingresos ordinarios), b55 (venta de jugadores), b56 (otros ingresos); b53 es momento de transferencia, no se elige. Nota 21 de costos y gastos por naturaleza: b57-b58; costos financieros b59; diferencias de cambio b60. Se incluyen b64-b65 (resultados por segmento, pág. 80) porque el reintento pide los cuadros que podrían abrir 'Otras secciones deportivas'; hay que verificar sus encabezados de columna, porque una columna podría ser eliminaciones."
 }

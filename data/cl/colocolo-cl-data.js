@@ -32,6 +32,17 @@ const colocoloRevenueLinesByYear = {
       ['Dividendos', 99.545], ['Otros ingresos', 9.048],
     ]},
   ],
+  2025: [
+    { rawLabel:'Ingresos por recaudaciones', normalizedCategory:'matchday_competition', amountNative:9706.043, disclosureLevel:'aggregated' },
+    { rawLabel:'Ingresos por venta de jugadores comprado a terceros', normalizedCategory:'player_sales', amountNative:5179.121, disclosureLevel:'aggregated' },
+    { rawLabel:'Ingresos por publicidad', normalizedCategory:'sponsorship_commercial', amountNative:14590.645, disclosureLevel:'aggregated' },
+    { rawLabel:'Ingresos por derechos de televisión', normalizedCategory:'broadcasting', amountNative:9046.906, disclosureLevel:'aggregated' },
+    { rawLabel:'Otros', normalizedCategory:'other_income', amountNative:2563.401, disclosureLevel:'aggregated' },
+    { rawLabel:'Condonación', normalizedCategory:'other_income', amountNative:2137.102, disclosureLevel:'aggregated' },
+    { rawLabel:'Condonación Intereses y Multas TGR', normalizedCategory:'other_income', amountNative:3067.963, disclosureLevel:'aggregated' },
+    { rawLabel:'Dividendos', normalizedCategory:'other_income', amountNative:8.095, disclosureLevel:'aggregated' },
+    { rawLabel:'Otros Ingresos', normalizedCategory:'other_income', amountNative:466.92, disclosureLevel:'aggregated' },
+  ],
 };
 
 const colocoloExpenseLinesByYear = {
@@ -77,6 +88,17 @@ const colocoloExpenseLinesByYear = {
     { rawLabel:'Otros gastos (otros gastos por función)', normalizedCategory:'other_expenses', amountNative:-27.731, disclosureLevel:'detailed' },
     { rawLabel:'Intereses y Multas (otros gastos por función)', normalizedCategory:'other_expenses', amountNative:-376.828, disclosureLevel:'detailed' },
   ],
+  2025: [
+    { rawLabel:'Costo de ventas jugadores', normalizedCategory:'player_amortisation', amountNative:-513.66, disclosureLevel:'aggregated' },
+    { rawLabel:'Remuneración plantel profesional y cuerpo técnico', normalizedCategory:'wages_squad', amountNative:-14394.745, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortización Activos en concesión', normalizedCategory:'depreciation', amountNative:-228.205, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortización Otros Intangibles', normalizedCategory:'other_amortisation', amountNative:-68.556, disclosureLevel:'aggregated' },
+    { rawLabel:'Amortización pases jugadores profesionales', normalizedCategory:'player_amortisation', amountNative:-4859.862, disclosureLevel:'aggregated' },
+    { rawLabel:'Costos de concentración traslados y otros', normalizedCategory:'match_organisation_expense', amountNative:-6345.375, disclosureLevel:'aggregated' },
+    { rawLabel:'Otros costos', normalizedCategory:'other_expenses', amountNative:-3278.958, disclosureLevel:'aggregated' },
+    { rawLabel:'Gasto de administración', normalizedCategory:'admin_general_expense', amountNative:-10838.114, disclosureLevel:'aggregated' },
+    { rawLabel:'Otros gastos, por función', normalizedCategory:'other_expenses', amountNative:-592.508, disclosureLevel:'aggregated' },
+  ],
 };
 
 const colocoloFiscalYearMeta = {
@@ -110,6 +132,22 @@ const colocoloFiscalYearMeta = {
     grossDebt:410.88, cash:1293.536,
     officialTotalRevenue:28955.528, officialTotalExpenses:27247.870, officialPAT:791.461,
   },
+  2025: {
+    currency:'CLP', fxRef:'CLP@2025-12-31',
+    sourceId:'colocolo-cl-estados-financieros-2025',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-365.543, tax:-185.78,
+    extraRows: [
+      {label:'Ingresos financieros', value:11.927},
+      {label:'Costos financieros', value:-647.925},
+      {label:'Diferencias de tipo de cambio', value:270.455},
+      {label:'(Gasto) ingreso por Impuesto a las Ganancias', value:-185.78},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:46766.196, officialTotalExpenses:41119.983, officialPAT:5094.89,
+  },
 };
 
 const colocoloPresupuestoOverlayByYear = {};
@@ -142,6 +180,11 @@ Object.assign(sources, {
       title:'Estados Financieros Consolidados de Blanco y Negro S.A. y Filiales, ejercicios terminados al 31 de diciembre de 2022 y 2021',
       type:'official_balance_sheet', reliability:'primary',
     },
+  'colocolo-cl-estados-financieros-2025': {
+    id:'colocolo-cl-estados-financieros-2025', clubId:'colocolo-cl',
+    title:'Blanco y Negro S.A. — estados-financieros-2025 (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
 });
 
 gestionesByClub['colocolo-cl'] = {
