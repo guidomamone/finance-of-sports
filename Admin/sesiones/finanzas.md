@@ -70,3 +70,7 @@
 
 ### Qué deja de ser cierto en ESTADO
 - Reino Unido: Aston Villa, Arsenal, Brentford, Brighton, Crystal Palace y Fulham ya tienen más años en el sitio (el detalle: `Admin/ESTADO-clubes.md`).
+
+### Aston Villa 2024 (13 meses), cargado (commit c3b9bfb491)
+- Cargado como año 2024 (cierre 2024-06-30, fxRef GBP@2024-06-30) con el criterio de Wolves 2025 y la compuerta del período salteada a mano esa sola vez, con las condiciones de la principal: ensayo sin otros frenos, parche TEMPORAL de `tools/cargar.mjs` (la condición de 13 meses y la cadena de cierres 2023-05-31, 2024-06-30, 2025-06-30, porque el registro tiene el cierre del documento 2024-25 en null), `git checkout tools/cargar.mjs` apenas escribió, y ninguna línea de `tools/` en el commit. 2023 (al 31-05-2023) y 2025 no cambiaron (el diff de `data/gb/astonvilla-gb-data.js` es solo agregados); `publicNote`: "Ejercicio de transición por cambio de fecha de cierre (de mayo a junio): del 01/06/2023 al 30/06/2024 (13 meses)."; ajuste `cierre` 2024-06-30 al PDF; evidencia en `Admin/carga-clubes/astonvilla-gb.md`.
+- Para el TODO: que `cargar.mjs` reconozca 13 meses (y que la cadena de cierres no dependa del cierre de los documentos vecinos del registro, que puede estar en null) va con la z2 (Westerlo, 18 meses).
