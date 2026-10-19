@@ -253,6 +253,7 @@ window.CLUB_INDEX = {
   "saopaulo-br": {"n":"São Paulo","c":"BR","q":"full","y":2,"last":2024,"yrs":[[2024,"official_balance_sheet"],[2023,"official_balance_sheet"]]},
   "sarpsborg08-no": {"n":"Sarpsborg 08","c":"NO","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "sassuolo-it": {"n":"Sassuolo","c":"IT","q":"full","y":8,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2020,"official_balance_sheet"],[2019,"official_balance_sheet"],[2018,"official_balance_sheet"]]},
+  "sccambuur-nl": {"n":"SC Cambuur","c":"NL","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "sevillafc": {"n":"Sevilla FC","c":"ES","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "silkeborg-dk": {"n":"Silkeborg IF","c":"DK","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "sinttruiden-be": {"n":"Sint-Truiden","c":"BE","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},

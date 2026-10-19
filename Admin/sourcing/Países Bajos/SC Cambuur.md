@@ -13,3 +13,5 @@
 
 - Los clubes holandeses publican el Jaarverslag/Jaarrekening por la licencia KNVB (formulario F.04). Hay informes de fundación o sociales mezclados: se excluyeron los evidentes (Stichting, sociaal jaarverslag), pero revisar cada archivo antes de cargar.
 - Último chequeo: 2026-10-08.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Países Bajos/SC Cambuur/Jaarverslag-SC-Cambuur-2024-2025.pdf` (sourceId `sccambuur-nl-jaarverslag-sc-cambuur-2024-2025`).
