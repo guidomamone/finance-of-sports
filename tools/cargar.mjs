@@ -101,6 +101,7 @@ import { archivosData, rutaData } from './data-clubes.js';
 import { TOCA_UNA_CARGA } from './rutas.mjs';
 import { parseNumber } from './datos-sitio.mjs';
 import { validacionAlDia } from './cache-al-dia.mjs'; // (to-do 237 ak)
+import { GENERADORES, queFalla } from './generadores.mjs'; // (to-do 298 x)
 
 // Los módulos que se reusan leen process.argv al importarse (alta-club.mjs: --escribir activa ANOTAR_MISSES y --anio fuerza el año;
 // proponer-carga.mjs: --tabla, --limit, --club...). Las opciones de ESTE comando no son las de ellos: se les pasa un argv limpio.
@@ -1100,12 +1101,12 @@ export function publicarCambios(snap, extra, escritos) {
     escritos.push(`index.html (ASSET_V ${actual} -> ${nuevo})`);
   }
   // generadores + auditoría
-  for (const g of ['tools/generate-club-index.js', 'tools/generate-fuentes-page.js', 'tools/generate-rankings.js', 'tools/generate-como-corre-stats.js', 'tools/faltantes-liga.mjs', 'tools/estimar.mjs', 'tools/generate-sponsors.js'].filter((g) => existsSync(resolve(ROOT, g)))) {
+  for (const g of GENERADORES.filter((g) => existsSync(resolve(ROOT, g)))) { // (to-do 298 x) la lista compartida con alta-club.mjs
     const r = runNode(g, []); if (r.code !== 0) throw new Error(`${g} falló (código ${r.code}): ${r.out.slice(-500)}`);
   }
   const audit = runNode('tools/audit.js', ['--quiet']);
   const linea0 = (audit.out.match(/P0 \d+ · P1 \d+[^\n]*/) || [''])[0];
-  if (audit.code !== 0) { const rv = revertir(snap, extra); return { ok: false, motivo: `node tools/audit.js dio P0/P1 (${linea0}); se revirtió todo (${rv.restaurados} restaurados, ${rv.borrados} borrados)`, audit: audit.out.slice(-2500), escritos }; }
+  if (audit.code !== 0) { const rv = revertir(snap, extra); const falla = queFalla(audit.out); return { ok: false, motivo: `node tools/audit.js dio P0/P1 (${linea0}${falla.length ? `: ${falla.join(', ')}` : ''}); se revirtió todo (${rv.restaurados} restaurados, ${rv.borrados} borrados)`, audit: audit.out.slice(-2500), escritos }; }
   return { ok: true, escritos, audit: linea0 };
 }
 export { snapshot, revertir, runNode };
