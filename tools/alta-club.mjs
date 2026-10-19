@@ -304,9 +304,9 @@ const PAISES = {
   'Croacia':         { iso2: 'HR', moneda: 'EUR', region: 'europa', en: 'Croatia', legado: { codigo: 'HRK', desde: 2023, tokens: ['hrk', 'kuna', 'kuna', 'kn'] } },
   'Dinamarca':       { iso2: 'DK', moneda: 'DKK', region: 'europa', en: 'Denmark' },
   'Ecuador':         { iso2: 'EC', moneda: 'USD', region: 'sudamerica', en: 'Ecuador' },
-  // Escocia NO tiene ISO2 propio (es parte de GB) y el sitio usa GB = "Inglaterra"
-  // con la bandera inglesa: dar de alta un club escocés es una decisión de producto.
-  'Escocia':         { iso2: null, moneda: 'GBP', region: 'europa', en: 'Scotland', pregunta: 'El sitio no tiene país "Escocia": GB está catalogado como "Inglaterra" (🏴 inglesa) en data/leagues.js. ¿El club escocés va bajo GB con otro nombre/bandera, o hace falta un código propio (ej. "GB-SCT") en COUNTRIES?' },
+  // Escocia NO tiene ISO2 propio (es parte de GB): va como GB, igual que Inglaterra, Gales e Irlanda del Norte (decisión de Guido,
+  // 2026-10-18, to-do 298 i). El sitio muestra GB como "Inglaterra" con la bandera inglesa: el nombre y la bandera son de pantalla.
+  'Escocia':         { iso2: 'GB', moneda: 'GBP', region: 'europa', en: 'Scotland' },
   'España':          { iso2: 'ES', moneda: 'EUR', region: 'europa', en: 'Spain', legado: { codigo: 'ESP', desde: 2002, tokens: ['pesetas', 'ptas', 'esp'] } },
   'Estonia':         { iso2: 'EE', moneda: 'EUR', region: 'europa', en: 'Estonia', legado: { codigo: 'EEK', desde: 2011, tokens: ['eek', 'kroon', 'krooni'] } },
   'Estados Unidos':  { iso2: 'US', moneda: 'USD', region: 'norteamerica', en: 'United States' },
@@ -332,6 +332,19 @@ const PAISES = {
   'Turquía':         { iso2: 'TR', moneda: 'TRY', region: 'europa', en: 'Turkey', legado: { codigo: 'TRL', desde: 2005, tokens: ['trl', 'türk lirası', 'turk lirasi'] } },
   'Ucrania':         { iso2: 'UA', moneda: 'UAH', region: 'europa', en: 'Ukraine' },
 };
+// (to-do 298 i, ok de Guido 2026-10-18) ESCALÓN DEL PAÍS. Escalón 0: la tabla PAISES de arriba. Escalón 1, solo si la carpeta no está ahí:
+// la tabla de referencia ISO (tools/paises-referencia.json: ISO2, moneda ISO 4217, región, nombre en inglés y la moneda vieja de antes del
+// euro). COMPUERTA: el nombre de la carpeta, sin tildes ni mayúsculas, coincide con UNA sola entrada. Antes, un país nuevo frenaba el alta con
+// 3 preguntas (id, país, moneda) hasta agregar su fila a mano (Estonia); en Clubes/ hay 32 carpetas así (Polonia, Suecia, Uruguay...).
+let REFERENCIA = null;
+const sinTilde = (x) => String(x || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
+function paisDe(nombre) {
+  if (PAISES[nombre]) return PAISES[nombre];
+  if (!REFERENCIA) { try { REFERENCIA = JSON.parse(readFileSync(resolve(ROOT, 'tools/paises-referencia.json'), 'utf8')).paises || {}; } catch { REFERENCIA = {}; } }
+  const m = Object.entries(REFERENCIA).filter(([k]) => sinTilde(k) === sinTilde(nombre));
+  return m.length === 1 ? { ...m[0][1], referencia: true } : undefined;
+}
+
 const NOMBRE_PAIS_ES = { DE: 'Alemania', AR: 'Argentina', AT: 'Austria', BR: 'Brasil', BE: 'Bélgica', CL: 'Chile', CN: 'China', CO: 'Colombia', KR: 'Corea del Sur', CR: 'Costa Rica', HR: 'Croacia', DK: 'Dinamarca', EC: 'Ecuador', EE: 'Estonia', ES: 'España', US: 'Estados Unidos', FR: 'Francia', GR: 'Grecia', GT: 'Guatemala', HN: 'Honduras', GB: 'Inglaterra', IT: 'Italia', JM: 'Jamaica', JP: 'Japón', MX: 'México', NO: 'Noruega', PA: 'Panamá', NL: 'Países Bajos', PE: 'Perú', PT: 'Portugal', CZ: 'República Checa', RU: 'Rusia', CH: 'Suiza', TR: 'Turquía', UA: 'Ucrania' };
 
 // Monedas: escala de visualización (mismo criterio que la cabecera de
@@ -848,7 +861,7 @@ export function analizar(docArg, sitio, ov = {}) {
   if (!r.md) { r.error = 'no hay .md: transcribir primero (node tools/pipeline.mjs, etapa 2)'; return r; }
   const md = readFileSync(mdPath, 'utf8');
   const mdNorm = norm(md);
-  const pais = PAISES[paisCarpeta];
+  const pais = paisDe(paisCarpeta);
 
   // ---------------------------------------------------------------- ¿ya existe?
   // UNA sola regla en todo el proyecto (tools/carpetas-clubes.mjs, 2026-09-30): cita en algún
@@ -967,7 +980,7 @@ export function analizar(docArg, sitio, ov = {}) {
 
   // ---------------------------------------------------------------- moneda del ejercicio
   let moneda = pais ? pais.moneda : null;
-  let estadoMoneda = 'ok'; let fuenteMoneda = pais ? `moneda de curso legal de ${paisCarpeta} (tabla PAISES de alta-club.mjs)` : null; let preguntaMoneda = null;
+  let estadoMoneda = 'ok'; let fuenteMoneda = pais ? `moneda de curso legal de ${paisCarpeta} (${pais.referencia ? 'tabla de referencia ISO, tools/paises-referencia.json' : 'tabla PAISES de alta-club.mjs'})` : null; let preguntaMoneda = null;
   if (!pais) { estadoMoneda = 'pregunta'; preguntaMoneda = `País "${paisCarpeta}" sin entrada en la tabla PAISES de tools/alta-club.mjs: ¿qué ISO2 y qué moneda?`; }
   else if (pais.preguntaMoneda) { estadoMoneda = 'pregunta'; preguntaMoneda = pais.preguntaMoneda; }
   else if (pais.legado && anio && anio < pais.legado.desde) {
@@ -1011,7 +1024,7 @@ export function analizar(docArg, sitio, ov = {}) {
     // name
     r.campos.push(decidirNombre(md, displayName, r.carpeta, r.pdf, { ov }));
     r.campos.push(campo('displayName', displayName, 'nombre de la carpeta del club en Clubes/'));
-    r.campos.push(campo('country', pais ? pais.iso2 : null, pais ? `carpeta de país "${paisCarpeta}" (tabla PAISES)` : null, pais && pais.iso2 ? 'ok' : 'pregunta', pais && pais.iso2 ? {} : { pregunta: pais && pais.pregunta ? pais.pregunta : `País "${paisCarpeta}" sin entrada en la tabla PAISES.` }));
+    r.campos.push(campo('country', pais ? pais.iso2 : null, pais ? `carpeta de país "${paisCarpeta}" (${pais.referencia ? 'tabla de referencia ISO, tools/paises-referencia.json' : 'tabla PAISES'})` : null, pais && pais.iso2 ? 'ok' : 'pregunta', pais && pais.iso2 ? {} : { pregunta: pais && pais.pregunta ? pais.pregunta : `País "${paisCarpeta}" sin entrada en la tabla PAISES.` }));
     // reportingCurrency: la de HOY del país (el ejercicio puede tener otra, ver ejercicio.currency)
     const repCur = pais ? pais.moneda : null;
     r.campos.push(campo('reportingCurrency', repCur, pais ? `moneda de curso legal de ${paisCarpeta}` : null, repCur ? 'ok' : 'pregunta', repCur ? {} : { pregunta: (pais && pais.preguntaMoneda) || `¿En qué moneda reporta el club?` }));
@@ -1544,7 +1557,7 @@ const TIPO_DE_CAMPO = { perimetro: 'perimetro', reportType: 'reportType', anio: 
 // preguntarle al club), o es una decisión de PRODUCTO (id heredado a renombrar, país Escocia, liga fuera
 // del catálogo, Panamá USD/PAB, dos entidades en la carpeta: las decide Guido, no un club)?
 function clasePregunta(c, r) {
-  const pais = PAISES[(r.carpeta || '').split('/')[1]];
+  const pais = paisDe((r.carpeta || '').split('/')[1]);
   if (!TIPO_DE_CAMPO[c.campo]) return 'producto';
   if (c.campo === 'perimetro' && c.dosEntidades) return 'producto';
   if (c.campo === 'currency' && pais && pais.preguntaMoneda) return 'producto';
@@ -1579,7 +1592,7 @@ function preguntasParaClaude(r) {
 // moneda es la vieja, anterior al euro) queda guardada con su cita al lado de la pregunta, que sigue abierta.
 function aplicables(respuestas, r) {
   const ov = {};
-  const pais = PAISES[(r.carpeta || '').split('/')[1]];
+  const pais = paisDe((r.carpeta || '').split('/')[1]);
   for (const x of respuestas || []) {
     if (!x.resuelta) continue;
     const c0 = (x.citas || [])[0] || {};
@@ -1640,7 +1653,7 @@ function candidatosBase(mds) {
 }
 
 function huellaCarpeta(paisCarpeta, clubCarpeta, mds, docForzado) {
-  const pais = PAISES[paisCarpeta] || {};
+  const pais = paisDe(paisCarpeta) || {};
   const iso = (pais.iso2 || 'xx').toLowerCase();
   const archivos = [...mds, 'data/clubs.js', 'data/currency-map.js', 'data/leagues.js', `data/club-leagues/${iso}.js`, `tools/club-league-reference/${iso}.json`, 'tools/alta-club.mjs', 'tools/alta-claude.mjs', 'tools/carpetas-clubes.mjs'];
   if (pais.moneda && SERIES_FX[pais.moneda]) archivos.push(`tools/fx-reference/${SERIES_FX[pais.moneda]}`);

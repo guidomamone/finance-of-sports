@@ -541,6 +541,11 @@ Mitigaciones:
   estadio que Wikipedia no trae.
 - b) Club nuevo: `alta-club.mjs`, en el mismo commit que su primer año. Se commitean TODOS los archivos que lista "Alta escrita (...)",
   también los compartidos (`data/currency-map.js` con el tipo de cambio nuevo): en las altas italianas quedó afuera y se commiteó suelto.
+  El país del club (to-do 298 i): escalón 0, la tabla PAISES de `alta-club.mjs`; escalón 1, si la carpeta no está ahí,
+  `tools/paises-referencia.json` (ISO2, moneda ISO 4217, región, nombre en inglés y la moneda de antes del euro), con una sola entrada que
+  coincida sin tildes. Antes, un país nuevo frenaba con 3 preguntas (id, país, moneda); hoy las 32 carpetas sin fila (Polonia, Suecia,
+  Uruguay...) se resuelven. Gales, Escocia e Irlanda del Norte van como GB (decisión de Guido). El país en el selector del sitio
+  (`data/leagues.js` COUNTRIES, con su bandera) sigue aparte.
   `alta-club.mjs --todos` (el registro `Admin/registros/altas-club.jsonl`): una carpeta cuyos `.md` están TODOS en `documentos-descartados.txt`
   o `documentos-parciales.txt` no se analiza y queda `faltan-datos` con la lista (to-do 232 a: Athens Kallithea, Catania); si un documento
   sale de la lista, la corrida siguiente la vuelve a analizar. Los documentos de esas dos listas tampoco cuentan como "hermanos" del
