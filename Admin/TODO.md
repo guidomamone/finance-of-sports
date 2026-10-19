@@ -263,7 +263,8 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    vez; el detalle con casos, en `Admin/Archive/sesion-onboarding-2026-10-18-2.md`). a) CIERRE FALSO en verificar.mjs: compara en valor
    absoluto y da "cierra" con una fila del lado o signo equivocado (Lierse Kempenzonen 2022 habría cargado un gasto como ingreso): lo más
    grave. b) Esquema NBB belga en verificar.mjs y cargar.mjs: costos financieros 65/66B positivos, renglones "(+)/(-)" por valor absoluto,
-   el 76A sumado aparte, y verificar y la propuesta que no leen igual el signo; una regla por código NBB. e3) el ensayo de pipeline.mjs estimó US$ 7,26 para rehacer los 238 .md sin tablas y la corrida
+   el 76A sumado aparte, y verificar y la propuesta que no leen igual el signo; una regla por código NBB. aa) `tools/worktree.mjs mergear` deja sin commitear `data/sponsors.js` y `data/sponsors-indice.js`, que regenera
+   `generate-sponsors.js`: sumarlos a su lista de `git add` (el commit siguiente frena por asset-v-sin-subir). e3) el ensayo de pipeline.mjs estimó US$ 7,26 para rehacer los 238 .md sin tablas y la corrida
    real costó US$ 42,97: que el ensayo dé el número real antes de la próxima corrida grande (ver la nota de Pipeline 2). w) antes-de-localizar
    dice que el perímetro "se decide al ejecutar", pero lote.mjs frena igual. y4) sacar los ajustes `fila` que tapaban la y (8 noruegos y 3
    de St. Gallen) y dejar los 2 de la compensación "Entschädigung" de St. Gallen; medir que lo cargado quede igual. RWDM 2019: el registro
