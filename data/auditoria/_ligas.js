@@ -72,5 +72,62 @@ window.LIGA_AUDITORIA = {
     "linea": 60
    }
   }
+ },
+ "gb-championship": {
+  "2025": {
+   "entidad": {
+    "nombre": "EFL",
+    "legal": "The Football League Limited"
+   },
+   "auditor": {
+    "nombre": "Grant Thornton",
+    "tipo": "firma",
+    "legal": "Grant Thornton UK LLP"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Ligas/Inglaterra/EFL/efl-group-accounts-2024-25.md",
+    "linea": 777
+   }
+  }
+ },
+ "gb-leagueone": {
+  "2025": {
+   "entidad": {
+    "nombre": "EFL",
+    "legal": "The Football League Limited"
+   },
+   "auditor": {
+    "nombre": "Grant Thornton",
+    "tipo": "firma",
+    "legal": "Grant Thornton UK LLP"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Ligas/Inglaterra/EFL/efl-group-accounts-2024-25.md",
+    "linea": 777
+   }
+  }
+ },
+ "gb-leaguetwo": {
+  "2025": {
+   "entidad": {
+    "nombre": "EFL",
+    "legal": "The Football League Limited"
+   },
+   "auditor": {
+    "nombre": "Grant Thornton",
+    "tipo": "firma",
+    "legal": "Grant Thornton UK LLP"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Ligas/Inglaterra/EFL/efl-group-accounts-2024-25.md",
+    "linea": 777
+   }
+  }
  }
 };
