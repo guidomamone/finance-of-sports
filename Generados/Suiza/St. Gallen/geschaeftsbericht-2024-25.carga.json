@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.pdf",
- "generado": "2026-10-19T01:15:31.339Z",
+ "generado": "2026-10-19T02:12:36.841Z",
  "frena": [
   {
    "etapa": "club",
@@ -146,16 +146,6 @@
     "_escalon": 1,
     "_conf": 0.96,
     "_fuenteCat": "categorias.json"
-   },
-   {
-    "rawLabel": "Entschädigung von FCSG Event AG",
-    "normalizedCategory": "other_income",
-    "amountNative": 11.5,
-    "disclosureLevel": "aggregated",
-    "_pag": 9,
-    "_escalon": 1,
-    "_conf": 0.97,
-    "_fuenteCat": "categorias.json"
    }
   ],
   "expenseLines": [
@@ -278,16 +268,6 @@
     "_escalon": 1,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
-   },
-   {
-    "rawLabel": "Entschädigung an FCSG AG",
-    "normalizedCategory": "other_expenses",
-    "amountNative": -11.5,
-    "disclosureLevel": "aggregated",
-    "_pag": 9,
-    "_escalon": 0,
-    "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -318,8 +298,8 @@
    },
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 56.601,
-   "officialTotalExpenses": 56.181,
+   "officialTotalRevenue": 45.101,
+   "officialTotalExpenses": 44.681,
    "officialPAT": 0.117
   },
   "source": {
@@ -437,7 +417,7 @@
   }
  ],
  "seleccion": {
-  "filas": 29,
+  "filas": 27,
   "notasUsadas": [],
   "refM": null
  },
@@ -643,21 +623,6 @@
    "amountNative": -0.484
   },
   {
-   "label": "Entschädigung von FCSG Event AG",
-   "page": 9,
-   "native": 11.5,
-   "ladoDoc": "revenue",
-   "origen": "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))",
-   "signoFijo": 11.5,
-   "cat": "other_income",
-   "conf": 0.97,
-   "escalon": 1,
-   "fuenteCat": "categorias.json",
-   "enLista": true,
-   "destino": "revenue",
-   "amountNative": 11.5
-  },
-  {
    "label": "Aufwand für Spielbetrieb",
    "page": 10,
    "native": 4.845,
@@ -846,22 +811,6 @@
    "amountNative": -2.059
   },
   {
-   "label": "Entschädigung an FCSG AG",
-   "page": 9,
-   "native": 11.5,
-   "ladoDoc": "expense",
-   "origen": "verificacion (estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3))",
-   "signoFijo": 11.5,
-   "cat": "other_expenses",
-   "conf": 1,
-   "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
-   "enLista": true,
-   "notaGuido": "Claude 2026-10-19: la fila quedó en 0 con el ajuste que saca la Entschädigung intercompany de los dos lados",
-   "destino": "expense",
-   "amountNative": -11.5
-  },
-  {
    "label": "Finanzerfolg",
    "page": null,
    "native": -0.292,
@@ -889,18 +838,16 @@
    "verificacion (nota que desglosa \"Erträge brutto\")": "gastos con signo",
    "verificacion (estado)": "gastos sin signo (se invierten)",
    "verificacion (ajuste manual)": "gastos con signo",
-   "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))": "gastos con signo",
    "verificacion (nota que desglosa \"Direkte Kosten\")": "gastos sin signo (se invierten)",
-   "verificacion (estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3))": "gastos sin signo (se invierten)",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 56.601,
-  "expSum": -56.181,
-  "officialTotalRevenue": 56.601,
-  "officialTotalExpenses": 56.181,
+  "revSum": 45.101,
+  "expSum": -44.681,
+  "officialTotalRevenue": 45.101,
+  "officialTotalExpenses": 44.681,
   "officialPAT": 0.117,
   "verificacion": {
    "pat": "impreso",
@@ -916,12 +863,12 @@
   "revImpreso": {
    "label": "total de ingresos (verificado)",
    "pag": null,
-   "M": 56.601
+   "M": 45.101
   },
   "expImpreso": {
    "label": "total de gastos (verificado)",
    "pag": null,
-   "M": 56.181
+   "M": 44.681
   }
  },
  "fxCloseNuevo": {
@@ -980,8 +927,8 @@
  "resumen": {
   "carga": false,
   "motivos": 1,
-  "lineasIngreso": 14,
-  "lineasGasto": 13,
+  "lineasIngreso": 13,
+  "lineasGasto": 12,
   "metaFilas": 2,
   "excluidas": 0
  }

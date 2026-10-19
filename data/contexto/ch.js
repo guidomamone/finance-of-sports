@@ -9,4 +9,7 @@ Object.assign(window.CLUB_CONTEXT, {
   'luzern-ch': {
     2025: {"estadio":"Swissporarena","capacidad":16490,"sponsor":"Otto's","marca":"Erreà","temporada":"2024–25 Swiss Super League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378157233","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Swiss_Super_League ; https://www.kleinreport.ch/news/ottos-geht-mit-dem-fc-luzern-die-verlangerung-102596/ ; capacidad 16.490: de.wikipedia Swissporarena y tabla de estadios de 2024–25 Swiss Super League","manual":["estadio","capacidad","sponsor","marca"]},
   },
+  'stgallen-ch': {
+    2025: {"estadio":"Kybunpark","capacidad":20660,"sponsor":"St.Galler Kantonalbank","marca":"Puma","temporada":"2024–25 Swiss Super League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378157233","fuenteManual":"https://en.wikipedia.org/wiki/Kybunpark ; https://www.footballkitarchive.com/fc-st-gallen-2024-25-special-kit-371785/","manual":["estadio","capacidad","sponsor","marca"]},
+  },
 });

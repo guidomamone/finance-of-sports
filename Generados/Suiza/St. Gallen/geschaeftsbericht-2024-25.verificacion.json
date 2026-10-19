@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.pdf",
  "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.md",
- "generado": "2026-10-19T01:15:28.459Z",
+ "generado": "2026-10-19T02:12:18.376Z",
  "estado": "ok",
  "clubId": null,
  "year": 2025,
@@ -104,13 +104,13 @@
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": null,
-   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+   "ok": true,
+   "detalle": "\"Erträge netto\" 45.057 cierra; además se suman 2 línea(s) fuera de ese total (0.044)"
   },
   {
    "nombre": "total de gastos",
    "ok": null,
-   "detalle": "el total impreso incluye filas del financiero (escalón \"subtotal repetido\"): la compuerta es el resultado impreso exacto"
+   "detalle": "el documento no lo imprime"
   },
   {
    "nombre": "resultado del ejercicio",
@@ -141,7 +141,6 @@
   "ajuste manual: fila \"Ertragsminderungen\" (ingreso) -484, en lugar de \"Ertragsminderungen\" (2026-10-19, impreso -484 en la ER de Event AG (Total Erträge netto 29.509); se leía +484 (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y)))",
   "ajuste manual: sale la fila \"Entschädigung von FCSG Event AG\" (2026-10-19, transferencia intercompany (Event AG -> AG) que se anula en la consolidación; su espejo es el gasto de L269 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19))",
   "ajuste manual: sale la fila \"Entschädigung an FCSG AG\" (2026-10-19, transferencia intercompany que se anula en la consolidación; espejo de L268 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19))",
-  "escalón \"otros con el signo del resultado\": las filas sin lado (rótulo neto \"(Custos)/Proveitos ...\") se leen con el signo del resultado (negativo = costo) y el total de costos impreso no es compuerta; cerró el resultado impreso exacto (to-do 237 q)",
   "la lectura base no cerraba; cerró con la lectura 4",
   "duda de localizar ya contestada para el club (usar-cuadro-por-segmento, \"Erträge brutto\"): aceptar, en geschaeftsbericht-2024-25.pdf",
   "duda de extraer ya contestada para el club (usar-cuadro-por-segmento, \"-\"): aceptar, en geschaeftsbericht-2024-25.pdf"
@@ -162,8 +161,8 @@
   }
  ],
  "totales": {
-  "ingresos": 56.601,
-  "gastos": 56.181,
+  "ingresos": 45.101,
+  "gastos": 44.681,
   "financiero": -0.292,
   "impuesto": -0.011,
   "resultadoImpreso": 0.117,
@@ -277,14 +276,6 @@
    "origen": "ajuste manual"
   },
   {
-   "etiqueta": "Entschädigung von FCSG Event AG",
-   "lado": "ingreso",
-   "M": 11.5,
-   "pagina": 9,
-   "linea": 268,
-   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)"
-  },
-  {
    "etiqueta": "Aufwand für Spielbetrieb",
    "lado": "gasto",
    "M": 4.845,
@@ -379,14 +370,6 @@
    "pagina": 9,
    "linea": 272,
    "origen": "estado"
-  },
-  {
-   "etiqueta": "Entschädigung an FCSG AG",
-   "lado": "gasto",
-   "M": 11.5,
-   "pagina": 9,
-   "linea": 269,
-   "origen": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)"
   }
  ],
  "signosCarga": {
@@ -410,7 +393,7 @@
  "primerAnio": {
   "escalon": 3,
   "estado": "confirmado",
-  "clave": "53c2b6a1990bcf92082d8863c556722fae1326ff",
+  "clave": "cf8bba61f5bb83dd32cf5c15e169d4cb332dcdc7",
   "rango": [
    256,
    280
@@ -429,7 +412,6 @@
    275,
    330,
    403,
-   268,
    332,
    333,
    405,
@@ -442,10 +424,9 @@
    266,
    271,
    272,
-   269,
    274,
    276
   ],
-  "user": "ESTADO DE RESULTADOS (líneas 256 a 280 del .md):\nL257: | | FCSG AG | Event AG | 2024/25 | FCSG AG | Event AG | 2023/24 | Veränderung |\nL258: | --- | --- | --- | --- | --- | --- | --- | --- |\nL259: | Erträge brutto | 15’527 | 29’993 | 45’520 | 13’059 | 26’133 | 39’192 | 6’328 |\nL260: | Ertragsminderungen | 21 | -484 | -463 | 6 | -369 | -363 | -100 |\nL261: | Erträge netto | 15’548 | 29’509 | 45’057 | 13’065 | 25’764 | 38’829 | 6’228 |\nL262: | Direkte Kosten | -6’223 | -8’832 | -15’055 | -4’842 | -7’763 | -12’605 | -2’450 |\nL263: | Bruttoergebnis I | 9’325 | 20’677 | 30’002 | 8’223 | 18’001 | 26’224 | 3’778 |\nL264: | Personalaufwand | -17’162 | -3’671 | -20’833 | -16’223 | -3’727 | -19’950 | -883 |\nL265: | Bruttoergebnis II | -7’837 | 17’006 | 9’169 | -8’000 | 14’274 | 6’274 | 2’895 |\nL266: | Sonstiger Betriebsaufwand | -1’377 | -3’995 | -5’372 | -1’376 | -3’624 | -5’001 | -371 |\nL267: | EBITDA vor Entschädigung an FCSG AG | -9’214 | 13’011 | 3’797 | -9’376 | 10’650 | 1’273 | 2’524 |\nL268: | Entschädigung von FCSG Event AG | 11’500 | 0 | 11’500 | 9’975 | 0 | 9’975 | 1’525 |\nL269: | Entschädigung an FCSG AG | 0 | -11’500 | -11’500 | 0 | -9’975 | -9’975 | -1’525 |\nL270: | EBITDA | 2’286 | 1’511 | 3’797 | 599 | 675 | 1’273 | 2’524 |\nL271: | Abschreibungen Sachanlagen | -72 | -1’289 | -1’362 | -90 | -1’283 | -1’373 | 12 |\nL272: | Abschreibungen Spielerwerte | -2’059 | 0 | -2’059 | -1’279 | 0 | -1’279 | -780 |\nL273: | EBIT | 154 | 221 | 376 | -771 | -608 | -1’379 | 1’755 |\nL274: | Finanzerfolg | -171 | -121 | -292 | 29 | -108 | -78 | -214 |\nL275: | Ausserordentlicher Ertrag | 36 | 8 | 44 | 753 | 729 | 1’482 | -1’438 |\nL276: | Steuern | -7 | -4 | -11 | -7 | -4 | -12 | 1 |\nL277: | Jahresergebnisse | 13 | 104 | 117 | 5 | 8 | 13 | 104 |\nL279: Aufgrund der Darstellung in Tausend können in Bilanz und Erfolgsrechnung Rundungsdifferenzen entstehen.\n\nLO QUE SE CARGA:\n- ingreso · \"Erträge aus Transfers und Leihgebühren\" · 3.353 · L326 (de una nota)\n- ingreso · \"Diverse Erträge inklusive Swiss Football League\" · 9.512 · L327 (de una nota)\n- ingreso · \"Erträge aus FutureChampsOstschweiz\" · 1.416 · L328 (de una nota)\n- ingreso · \"Erträge von Gönnern und Mitgliedern\" · 1.246 · L329 (de una nota)\n- ingreso · \"Ertrag aus Fussballspielen\" · 11.607 · L397 (de una nota)\n- ingreso · \"Ertrag aus Werbung und Sponsoring\" · 9.547 · L398 (de una nota)\n- ingreso · \"Ertrag aus Hospitality und Logen\" · 5.167 · L399 (de una nota)\n- ingreso · \"Ertrag aus Merchandising\" · 2.32 · L400 (de una nota)\n- ingreso · \"Ertrag aus Drittveranstaltungen\" · 0.107 · L401 (de una nota)\n- ingreso · \"Ertrag aus Conference Arena / Diverse Erträge\" · 1.245 · L402 (de una nota)\n- ingreso · \"Ausserordentlicher Ertrag\" · 0.044 · L275\n- ingreso · \"Veränderung Wertberichtigungen\" · 0.021 · L330 (de una nota)\n- ingreso · \"Ertragsminderungen\" · -0.484 · L403 (de una nota)\n- ingreso · \"Entschädigung von FCSG Event AG\" · 11.5 · L268\n- gasto · \"Aufwand für Spielbetrieb\" · 4.845 · L332 (de una nota)\n- gasto · \"Aufwand für Transfers\" · 1.378 · L333 (de una nota)\n- gasto · \"Aufwand für Spielorganisation Fussball\" · 3.701 · L405 (de una nota)\n- gasto · \"Aufwand für Catering\" · 2.164 · L406 (de una nota)\n- gasto · \"Aufwand für Werbung und Sponsoring\" · 1.005 · L407 (de una nota)\n- gasto · \"Aufwand für Mechandising\" · 1.876 · L408 (de una nota)\n- gasto · \"Aufwand für Drittveranstaltungen\" · 0.012 · L409 (de una nota)\n- gasto · \"Aufwand für Conference Arena / Diverses\" · 0.074 · L410 (de una nota)\n- gasto · \"Personalaufwand\" · 20.833 · L264\n- gasto · \"Sonstiger Betriebsaufwand\" · 5.372 · L266\n- gasto · \"Abschreibungen Sachanlagen\" · 1.362 · L271\n- gasto · \"Abschreibungen Spielerwerte\" · 2.059 · L272\n- gasto · \"Entschädigung an FCSG AG\" · 11.5 · L269\n- financiero · \"Finanzerfolg\" · -0.292 · L274\n- impuesto · \"Steuern\" · -0.011 · L276"
+  "user": "ESTADO DE RESULTADOS (líneas 256 a 280 del .md):\nL257: | | FCSG AG | Event AG | 2024/25 | FCSG AG | Event AG | 2023/24 | Veränderung |\nL258: | --- | --- | --- | --- | --- | --- | --- | --- |\nL259: | Erträge brutto | 15’527 | 29’993 | 45’520 | 13’059 | 26’133 | 39’192 | 6’328 |\nL260: | Ertragsminderungen | 21 | -484 | -463 | 6 | -369 | -363 | -100 |\nL261: | Erträge netto | 15’548 | 29’509 | 45’057 | 13’065 | 25’764 | 38’829 | 6’228 |\nL262: | Direkte Kosten | -6’223 | -8’832 | -15’055 | -4’842 | -7’763 | -12’605 | -2’450 |\nL263: | Bruttoergebnis I | 9’325 | 20’677 | 30’002 | 8’223 | 18’001 | 26’224 | 3’778 |\nL264: | Personalaufwand | -17’162 | -3’671 | -20’833 | -16’223 | -3’727 | -19’950 | -883 |\nL265: | Bruttoergebnis II | -7’837 | 17’006 | 9’169 | -8’000 | 14’274 | 6’274 | 2’895 |\nL266: | Sonstiger Betriebsaufwand | -1’377 | -3’995 | -5’372 | -1’376 | -3’624 | -5’001 | -371 |\nL267: | EBITDA vor Entschädigung an FCSG AG | -9’214 | 13’011 | 3’797 | -9’376 | 10’650 | 1’273 | 2’524 |\nL268: | Entschädigung von FCSG Event AG | 11’500 | 0 | 11’500 | 9’975 | 0 | 9’975 | 1’525 |\nL269: | Entschädigung an FCSG AG | 0 | -11’500 | -11’500 | 0 | -9’975 | -9’975 | -1’525 |\nL270: | EBITDA | 2’286 | 1’511 | 3’797 | 599 | 675 | 1’273 | 2’524 |\nL271: | Abschreibungen Sachanlagen | -72 | -1’289 | -1’362 | -90 | -1’283 | -1’373 | 12 |\nL272: | Abschreibungen Spielerwerte | -2’059 | 0 | -2’059 | -1’279 | 0 | -1’279 | -780 |\nL273: | EBIT | 154 | 221 | 376 | -771 | -608 | -1’379 | 1’755 |\nL274: | Finanzerfolg | -171 | -121 | -292 | 29 | -108 | -78 | -214 |\nL275: | Ausserordentlicher Ertrag | 36 | 8 | 44 | 753 | 729 | 1’482 | -1’438 |\nL276: | Steuern | -7 | -4 | -11 | -7 | -4 | -12 | 1 |\nL277: | Jahresergebnisse | 13 | 104 | 117 | 5 | 8 | 13 | 104 |\nL279: Aufgrund der Darstellung in Tausend können in Bilanz und Erfolgsrechnung Rundungsdifferenzen entstehen.\n\nLO QUE SE CARGA:\n- ingreso · \"Erträge aus Transfers und Leihgebühren\" · 3.353 · L326 (de una nota)\n- ingreso · \"Diverse Erträge inklusive Swiss Football League\" · 9.512 · L327 (de una nota)\n- ingreso · \"Erträge aus FutureChampsOstschweiz\" · 1.416 · L328 (de una nota)\n- ingreso · \"Erträge von Gönnern und Mitgliedern\" · 1.246 · L329 (de una nota)\n- ingreso · \"Ertrag aus Fussballspielen\" · 11.607 · L397 (de una nota)\n- ingreso · \"Ertrag aus Werbung und Sponsoring\" · 9.547 · L398 (de una nota)\n- ingreso · \"Ertrag aus Hospitality und Logen\" · 5.167 · L399 (de una nota)\n- ingreso · \"Ertrag aus Merchandising\" · 2.32 · L400 (de una nota)\n- ingreso · \"Ertrag aus Drittveranstaltungen\" · 0.107 · L401 (de una nota)\n- ingreso · \"Ertrag aus Conference Arena / Diverse Erträge\" · 1.245 · L402 (de una nota)\n- ingreso · \"Ausserordentlicher Ertrag\" · 0.044 · L275\n- ingreso · \"Veränderung Wertberichtigungen\" · 0.021 · L330 (de una nota)\n- ingreso · \"Ertragsminderungen\" · -0.484 · L403 (de una nota)\n- gasto · \"Aufwand für Spielbetrieb\" · 4.845 · L332 (de una nota)\n- gasto · \"Aufwand für Transfers\" · 1.378 · L333 (de una nota)\n- gasto · \"Aufwand für Spielorganisation Fussball\" · 3.701 · L405 (de una nota)\n- gasto · \"Aufwand für Catering\" · 2.164 · L406 (de una nota)\n- gasto · \"Aufwand für Werbung und Sponsoring\" · 1.005 · L407 (de una nota)\n- gasto · \"Aufwand für Mechandising\" · 1.876 · L408 (de una nota)\n- gasto · \"Aufwand für Drittveranstaltungen\" · 0.012 · L409 (de una nota)\n- gasto · \"Aufwand für Conference Arena / Diverses\" · 0.074 · L410 (de una nota)\n- gasto · \"Personalaufwand\" · 20.833 · L264\n- gasto · \"Sonstiger Betriebsaufwand\" · 5.372 · L266\n- gasto · \"Abschreibungen Sachanlagen\" · 1.362 · L271\n- gasto · \"Abschreibungen Spielerwerte\" · 2.059 · L272\n- financiero · \"Finanzerfolg\" · -0.292 · L274\n- impuesto · \"Steuern\" · -0.011 · L276"
  }
 }

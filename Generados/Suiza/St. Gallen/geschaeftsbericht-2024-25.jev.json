@@ -1,8 +1,17 @@
 {
  "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.md",
- "generatedAt": "2026-10-19T00:54:25.494Z",
- "rubrosHuella": "001da6daac5415bf70512fc7cd2f272696a7aa88",
+ "generatedAt": "2026-10-19T02:12:35.571Z",
+ "rubrosHuella": "ad6a376cd311e9b9c129d5c6f687aa41653a1ea8",
  "rubros": [
+  {
+   "label": "Erträge aus Transfers und Leihgebühren",
+   "lado": "revenue",
+   "page": 10,
+   "section": "nota que desglosa \"Erträge brutto\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
   {
    "label": "Diverse Erträge inklusive Swiss Football League",
    "lado": "revenue",
@@ -10,21 +19,7 @@
    "section": "nota que desglosa \"Erträge brutto\"",
    "choice": "other_income",
    "confidence": 0.84,
-   "top3": [
-    [
-     "other_income",
-     0.85
-    ],
-    [
-     "lump_football_operations",
-     0.11
-    ],
-    [
-     "broadcasting",
-     0.03
-    ]
-   ],
-   "tokens": 1028
+   "desdeCache": true
   },
   {
    "label": "Erträge aus FutureChampsOstschweiz",
@@ -33,90 +28,7 @@
    "section": "nota que desglosa \"Erträge brutto\"",
    "choice": "other_income",
    "confidence": 0.3,
-   "top3": [
-    [
-     "other_income",
-     0.35000000000000003
-    ],
-    [
-     "youth_football",
-     0.31
-    ],
-    [
-     "matchday_competition",
-     0.15
-    ]
-   ],
-   "tokens": 1059
-  },
-  {
-   "label": "Ertrag aus Hospitality und Logen",
-   "lado": "revenue",
-   "page": 11,
-   "section": "nota que desglosa \"Erträge brutto\"",
-   "choice": "stadium_other",
-   "confidence": 0.99,
-   "top3": [
-    [
-     "stadium_other",
-     0.99
-    ],
-    [
-     "other_income",
-     0.01
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1035
-  },
-  {
-   "label": "Ertrag aus Werbung und Sponsoring",
-   "lado": "revenue",
-   "page": 11,
-   "section": "nota que desglosa \"Erträge brutto\"",
-   "choice": "sponsorship_commercial",
-   "confidence": 1,
-   "top3": [
-    [
-     "sponsorship_commercial",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1083
-  },
-  {
-   "label": "Erträge aus Transfers und Leihgebühren",
-   "lado": "revenue",
-   "page": 10,
-   "section": "nota que desglosa \"Erträge brutto\"",
-   "choice": "player_sales",
-   "confidence": 1,
-   "top3": [
-    [
-     "player_sales",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1049
+   "desdeCache": true
   },
   {
    "label": "Erträge von Gönnern und Mitgliedern",
@@ -125,21 +37,7 @@
    "section": "nota que desglosa \"Erträge brutto\"",
    "choice": "member_dues",
    "confidence": 0.82,
-   "top3": [
-    [
-     "member_dues",
-     0.83
-    ],
-    [
-     "other_income",
-     0.16
-    ],
-    [
-     "sponsorship_commercial",
-     0.01
-    ]
-   ],
-   "tokens": 1105
+   "desdeCache": true
   },
   {
    "label": "Ertrag aus Fussballspielen",
@@ -148,21 +46,25 @@
    "section": "nota que desglosa \"Erträge brutto\"",
    "choice": "matchday_competition",
    "confidence": 0.98,
-   "top3": [
-    [
-     "matchday_competition",
-     0.98
-    ],
-    [
-     "lump_football_operations",
-     0.02
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1046
+   "desdeCache": true
+  },
+  {
+   "label": "Ertrag aus Werbung und Sponsoring",
+   "lado": "revenue",
+   "page": 11,
+   "section": "nota que desglosa \"Erträge brutto\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ertrag aus Hospitality und Logen",
+   "lado": "revenue",
+   "page": 11,
+   "section": "nota que desglosa \"Erträge brutto\"",
+   "choice": "stadium_other",
+   "confidence": 0.99,
+   "desdeCache": true
   },
   {
    "label": "Ertrag aus Merchandising",
@@ -171,21 +73,7 @@
    "section": "nota que desglosa \"Erträge brutto\"",
    "choice": "sponsorship_commercial",
    "confidence": 1,
-   "top3": [
-    [
-     "sponsorship_commercial",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1038
+   "desdeCache": true
   },
   {
    "label": "Ertrag aus Drittveranstaltungen",
@@ -194,67 +82,7 @@
    "section": "nota que desglosa \"Erträge brutto\"",
    "choice": "other_income",
    "confidence": 0.73,
-   "top3": [
-    [
-     "other_income",
-     0.75
-    ],
-    [
-     "stadium_other",
-     0.25
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1053
-  },
-  {
-   "label": "Ausserordentlicher Ertrag",
-   "lado": "revenue",
-   "page": 9,
-   "section": "estado",
-   "choice": "other_income",
-   "confidence": 1,
-   "top3": [
-    [
-     "other_income",
-     1
-    ],
-    [
-     "member_dues",
-     0
-    ],
-    [
-     "season_tickets",
-     0
-    ]
-   ],
-   "tokens": 1030
-  },
-  {
-   "label": "Veränderung Wertberichtigungen",
-   "lado": "revenue",
-   "page": 10,
-   "section": "ajuste manual",
-   "choice": "other_income",
-   "confidence": 0.99,
-   "top3": [
-    [
-     "other_income",
-     0.99
-    ],
-    [
-     "lump_football_operations",
-     0.01
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1108
+   "desdeCache": true
   },
   {
    "label": "Ertrag aus Conference Arena / Diverse Erträge",
@@ -263,67 +91,25 @@
    "section": "nota que desglosa \"Erträge brutto\"",
    "choice": "other_income",
    "confidence": 0.5,
-   "top3": [
-    [
-     "other_income",
-     0.54
-    ],
-    [
-     "stadium_other",
-     0.42
-    ],
-    [
-     "competition_bonus",
-     0.02
-    ]
-   ],
-   "tokens": 1133
+   "desdeCache": true
   },
   {
-   "label": "Aufwand für Spielbetrieb",
-   "lado": "expense",
-   "page": 10,
-   "section": "nota que desglosa \"Direkte Kosten\"",
-   "choice": "match_organisation_expense",
-   "confidence": 0.48,
-   "top3": [
-    [
-     "match_organisation_expense",
-     0.52
-    ],
-    [
-     "lump_football_operations_expense",
-     0.44
-    ],
-    [
-     "other_expenses",
-     0.04
-    ]
-   ],
-   "tokens": 1035
+   "label": "Ausserordentlicher Ertrag",
+   "lado": "revenue",
+   "page": 9,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
   },
   {
-   "label": "Aufwand für Transfers",
-   "lado": "expense",
+   "label": "Veränderung Wertberichtigungen",
+   "lado": "revenue",
    "page": 10,
-   "section": "nota que desglosa \"Direkte Kosten\"",
-   "choice": "other_expenses",
-   "confidence": 0.45,
-   "top3": [
-    [
-     "other_expenses",
-     0.5
-    ],
-    [
-     "player_amortisation",
-     0.35000000000000003
-    ],
-    [
-     "lump_football_operations_expense",
-     0.1
-    ]
-   ],
-   "tokens": 1019
+   "section": "ajuste manual",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
   },
   {
    "label": "Ertragsminderungen",
@@ -332,136 +118,25 @@
    "section": "ajuste manual",
    "choice": "other_income",
    "confidence": 0.96,
-   "top3": [
-    [
-     "other_income",
-     0.96
-    ],
-    [
-     "lump_football_operations",
-     0.04
-    ],
-    [
-     "member_dues",
-     0
-    ]
-   ],
-   "tokens": 1022
+   "desdeCache": true
   },
   {
-   "label": "Entschädigung von FCSG Event AG",
-   "lado": "revenue",
-   "page": 9,
-   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
-   "choice": "other_income",
-   "confidence": 0.97,
-   "top3": [
-    [
-     "other_income",
-     0.97
-    ],
-    [
-     "stadium_other",
-     0.02
-    ],
-    [
-     "lump_football_operations",
-     0.01
-    ]
-   ],
-   "tokens": 994
-  },
-  {
-   "label": "Aufwand für Mechandising",
+   "label": "Aufwand für Spielbetrieb",
    "lado": "expense",
-   "page": 11,
+   "page": 10,
+   "section": "nota que desglosa \"Direkte Kosten\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.48,
+   "desdeCache": true
+  },
+  {
+   "label": "Aufwand für Transfers",
+   "lado": "expense",
+   "page": 10,
    "section": "nota que desglosa \"Direkte Kosten\"",
    "choice": "other_expenses",
-   "confidence": 0.64,
-   "top3": [
-    [
-     "other_expenses",
-     0.67
-    ],
-    [
-     "admin_general_expense",
-     0.33
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1032
-  },
-  {
-   "label": "Aufwand für Werbung und Sponsoring",
-   "lado": "expense",
-   "page": 11,
-   "section": "nota que desglosa \"Direkte Kosten\"",
-   "choice": "admin_general_expense",
-   "confidence": 0.98,
-   "top3": [
-    [
-     "admin_general_expense",
-     0.98
-    ],
-    [
-     "other_expenses",
-     0.02
-    ],
-    [
-     "wages_squad",
-     0
-    ]
-   ],
-   "tokens": 1107
-  },
-  {
-   "label": "Aufwand für Catering",
-   "lado": "expense",
-   "page": 11,
-   "section": "nota que desglosa \"Direkte Kosten\"",
-   "choice": "match_organisation_expense",
-   "confidence": 0.73,
-   "top3": [
-    [
-     "match_organisation_expense",
-     0.75
-    ],
-    [
-     "other_expenses",
-     0.24
-    ],
-    [
-     "admin_general_expense",
-     0.01
-    ]
-   ],
-   "tokens": 1008
-  },
-  {
-   "label": "Aufwand für Drittveranstaltungen",
-   "lado": "expense",
-   "page": 11,
-   "section": "nota que desglosa \"Direkte Kosten\"",
-   "choice": "match_organisation_expense",
-   "confidence": 0.78,
-   "top3": [
-    [
-     "match_organisation_expense",
-     0.8
-    ],
-    [
-     "other_expenses",
-     0.18
-    ],
-    [
-     "admin_general_expense",
-     0.01
-    ]
-   ],
-   "tokens": 1026
+   "confidence": 0.45,
+   "desdeCache": true
   },
   {
    "label": "Aufwand für Spielorganisation Fussball",
@@ -470,21 +145,43 @@
    "section": "nota que desglosa \"Direkte Kosten\"",
    "choice": "match_organisation_expense",
    "confidence": 1,
-   "top3": [
-    [
-     "match_organisation_expense",
-     1
-    ],
-    [
-     "wages_squad",
-     0
-    ],
-    [
-     "player_amortisation",
-     0
-    ]
-   ],
-   "tokens": 1041
+   "desdeCache": true
+  },
+  {
+   "label": "Aufwand für Catering",
+   "lado": "expense",
+   "page": 11,
+   "section": "nota que desglosa \"Direkte Kosten\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Aufwand für Werbung und Sponsoring",
+   "lado": "expense",
+   "page": 11,
+   "section": "nota que desglosa \"Direkte Kosten\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Aufwand für Mechandising",
+   "lado": "expense",
+   "page": 11,
+   "section": "nota que desglosa \"Direkte Kosten\"",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Aufwand für Drittveranstaltungen",
+   "lado": "expense",
+   "page": 11,
+   "section": "nota que desglosa \"Direkte Kosten\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.78,
+   "desdeCache": true
   },
   {
    "label": "Aufwand für Conference Arena / Diverses",
@@ -493,21 +190,7 @@
    "section": "nota que desglosa \"Direkte Kosten\"",
    "choice": "other_expenses",
    "confidence": 0.49,
-   "top3": [
-    [
-     "other_expenses",
-     0.53
-    ],
-    [
-     "match_organisation_expense",
-     0.35
-    ],
-    [
-     "admin_general_expense",
-     0.11
-    ]
-   ],
-   "tokens": 1021
+   "desdeCache": true
   },
   {
    "label": "Personalaufwand",
@@ -516,21 +199,7 @@
    "section": "estado",
    "choice": "wages_squad",
    "confidence": 0.54,
-   "top3": [
-    [
-     "wages_squad",
-     0.58
-    ],
-    [
-     "admin_general_expense",
-     0.17
-    ],
-    [
-     "other_expenses",
-     0.17
-    ]
-   ],
-   "tokens": 1007
+   "desdeCache": true
   },
   {
    "label": "Sonstiger Betriebsaufwand",
@@ -539,67 +208,7 @@
    "section": "estado",
    "choice": "other_expenses",
    "confidence": 0.68,
-   "top3": [
-    [
-     "other_expenses",
-     0.71
-    ],
-    [
-     "admin_general_expense",
-     0.28
-    ],
-    [
-     "lump_football_operations_expense",
-     0.01
-    ]
-   ],
-   "tokens": 1023
-  },
-  {
-   "label": "Entschädigung an FCSG AG",
-   "lado": "expense",
-   "page": 9,
-   "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
-   "choice": "other_expenses",
-   "confidence": 0.64,
-   "top3": [
-    [
-     "other_expenses",
-     0.67
-    ],
-    [
-     "admin_general_expense",
-     0.2
-    ],
-    [
-     "lump_football_operations_expense",
-     0.09
-    ]
-   ],
-   "tokens": 986
-  },
-  {
-   "label": "Abschreibungen Spielerwerte",
-   "lado": "expense",
-   "page": 9,
-   "section": "estado",
-   "choice": "player_amortisation",
-   "confidence": 1,
-   "top3": [
-    [
-     "player_amortisation",
-     1
-    ],
-    [
-     "wages_squad",
-     0
-    ],
-    [
-     "player_impairment",
-     0
-    ]
-   ],
-   "tokens": 1060
+   "desdeCache": true
   },
   {
    "label": "Abschreibungen Sachanlagen",
@@ -608,21 +217,16 @@
    "section": "estado",
    "choice": "depreciation",
    "confidence": 1,
-   "top3": [
-    [
-     "depreciation",
-     1
-    ],
-    [
-     "wages_squad",
-     0
-    ],
-    [
-     "player_amortisation",
-     0
-    ]
-   ],
-   "tokens": 1064
+   "desdeCache": true
+  },
+  {
+   "label": "Abschreibungen Spielerwerte",
+   "lado": "expense",
+   "page": 9,
+   "section": "estado",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
   }
  ]
 }
