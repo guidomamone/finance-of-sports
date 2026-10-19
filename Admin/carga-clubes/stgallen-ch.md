@@ -103,6 +103,45 @@ incluidoEn: ajuste manual `incluye`: el documento junta estas categorías con ot
 alta-club.mjs (2026-10-19): ch-superleague, verificado contra roster cacheado de "2024–25 Swiss Super League" (tools/club-league-reference/ch.json), coincidencia exacta "St. Gallen".
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Suiza/St. Gallen/geschaeftsbericht-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Suiza/St. Gallen/geschaeftsbericht-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Erträge brutto | pág. 17, precedente |
+| 2 | Ertragsminderungen | pág. 17, precedente |
+| 3 | Ausserordentlicher Ertrag | pág. 17, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Direkte Kosten | pág. 17, precedente |
+| 2 | Personalaufwand | pág. 17, precedente |
+| 3 | Sonstiger Betriebsaufwand | pág. 17, precedente |
+| 4 | Abschreibungen Sachanlagen | pág. 17, precedente |
+| 5 | Abschreibungen Spielerwerte | pág. 17, precedente |
+| 6 | Ausserordentlicher Aufwand | pág. 17, Jev 1 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): ch-superleague, verificado contra roster cacheado de "2022–23 Swiss Super League" (tools/club-league-reference/ch.json), coincidencia exacta "St. Gallen".
+```
+
 ## 2022
 
 ### Ingresos
@@ -211,4 +250,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Suiza/St. Gallen/geschaeftsbericht-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### stgallen-ch-geschaeftsbericht-2022-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Suiza/St. Gallen/geschaeftsbericht-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```

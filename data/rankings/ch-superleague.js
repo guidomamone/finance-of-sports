@@ -23,6 +23,16 @@ window.RANKINGS["ch-superleague"] = {
         mix:[["Comercial / Sponsors",5.852],["Estadio",12.546],["Televisión",1.957],["Venta de Jugadores",7.898],["Otras secciones deportivas",2.848],["Otros ingresos",2.799]] },
     ],
   },
+  2023: {
+    leagueSize: 10,
+    sinDato: ["luzern-ch"],
+    wiki: {"t":"2022–23 Swiss Super League","lang":"en","at":"2026-10-19","n":10},
+    clubs: [
+      { id:"stgallen-ch", revenue:41.542, reportType:"official_balance_sheet",
+        sourceId:"stgallen-ch-geschaeftsbericht-2022-23",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",41.88],["Otros ingresos",-0.338]] },
+    ],
+  },
   2022: {
     leagueSize: 10,
     wiki: {"t":"2021–22 Swiss Super League","lang":"en","at":"2026-10-19","n":10},
