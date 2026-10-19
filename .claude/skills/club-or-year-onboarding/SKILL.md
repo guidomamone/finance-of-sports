@@ -103,9 +103,10 @@ Guido se le pregunta solo lo que el subagente no puede decidir y frena el alta d
 
 ## 5. Lotes de prueba (medir CUALQUIER cambio de script antes y después)
 
-Lo cargado tiene que dar idéntico. Tres listas fijas, sin repetidos: `Admin/lotes/prueba-rapida.txt` (16, los casos que ya
-rompieron algo una vez), `Admin/lotes/prueba-mediana.txt` (34: la rápida + 3 años por club) y `Admin/lotes/prueba-completa.txt` (87, todos los
-documentos de los 6 clubes).
+Lo cargado tiene que dar idéntico. Tres listas, sin repetidos: `Admin/lotes/prueba-rapida.txt` (a mano: los casos que ya rompieron
+algo una vez, cada uno con su motivo en un comentario), `Admin/lotes/prueba-mediana.txt` (la rápida + 3 documentos por club: el más viejo,
+el del medio y el más nuevo) y `Admin/lotes/prueba-completa.txt` (todos los documentos con verificación). La mediana y la completa las arma
+`node tools/lotes-prueba.mjs --escribir`; correrlo cuando entran clubes o años nuevos. Un caso nuevo que rompió algo va a la rápida, con su motivo.
 
 ```bash
 node tools/lote.mjs --lista Admin/lotes/prueba-completa.txt > /tmp/medir-antes.txt 2>&1     # antes del cambio
