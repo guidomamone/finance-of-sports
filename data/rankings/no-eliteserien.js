@@ -30,6 +30,15 @@ window.RANKINGS["no-eliteserien"] = {
         incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)"],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
     ],
   },
+  2022: {
+    leagueSize: null,
+    wiki: {"t":"2022 Eliteserien","lang":"en","at":"2026-09-30","n":16},
+    clubs: [
+      { id:"sarpsborg08-no", revenue:10.794, reportType:"official_balance_sheet",
+        sourceId:"sarpsborg08-no-aarsregnskap-fotballforening-fli-2022",
+        mix:[["Cuotas Sociales",0.06],["Comercial / Sponsors",3.658],["Estadio",0.535],["Televisión",0.892],["Venta de Jugadores",4.54],["Otros ingresos",1.107]] },
+    ],
+  },
   2021: {
     leagueSize: null,
     wiki: {"t":"2021 Eliteserien","lang":"en","at":"2026-10-19","n":16},
