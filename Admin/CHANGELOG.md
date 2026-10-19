@@ -15,6 +15,10 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 804 — 295: la Federação Paulista para el Paulistão (2026-10-19)
+
+* Federação Paulista de Futebol 2024 para las tres divisiones del Paulista, como federación entera (RSM Brasil, sin salvedades).
+
 ## Versión 803 — 295: notas de la Serie C y la FPF (2026-10-19)
 
 * Lega Serie C: sin canal público (candidato a mail, sin armar). FPF: publica sus cuentas, pero el PDF lo tiene que bajar Guido.
