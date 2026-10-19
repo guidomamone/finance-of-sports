@@ -109,4 +109,14 @@ window.RANKINGS["gb-premierleague"] = {
         mix:[["Comercial / Sponsors",41.139],["Estadio",23.272],["Televisión",189.078]] },
     ],
   },
+  2022: {
+    leagueSize: null,
+    wiki: {"t":"2021–22 Premier League","lang":"en","at":"2026-10-19","n":20},
+    clubs: [
+      { id:"arsenal-gb", revenue:496.662, reportType:"official_balance_sheet",
+        sourceId:"arsenal-gb-holdings-group-accounts-2021-22",
+        mix:[["Venta de Jugadores",28.022],["Fútbol profesional (sin desglosar por la fuente)",468.64]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+    ],
+  },
 };

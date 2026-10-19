@@ -4,6 +4,7 @@
 window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
 Object.assign(window.CLUB_CONTEXT, {
   'arsenal-gb': {
+    2022: {"estadio":"Emirates Stadium","capacidad":60704,"sponsor":"Emirates","marca":"Adidas","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
     2024: {"estadio":"Emirates Stadium","capacidad":60704,"sponsor":"Emirates","marca":"Adidas","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Emirates Stadium","capacidad":60704,"sponsor":"Emirates","marca":"Adidas","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
@@ -12,6 +13,8 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Villa Park","capacidad":42918,"sponsor":"Betano","marca":"Adidas","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },
   'bournemouth-gb': {
+    2022: {"estadio":"Dean Court","capacidad":11364,"sponsor":"MSP Capital","marca":"Umbro","temporada":"2021–22 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1358361756"},
+    2023: {"estadio":"Dean Court","capacidad":11307,"sponsor":"Dafabet","marca":"Umbro","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138"},
     2024: {"estadio":"Dean Court","capacidad":11307,"sponsor":"Dafabet","marca":"Umbro","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Dean Court","capacidad":11307,"sponsor":"bj88","marca":"Umbro","temporada":"2024–25 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1380532736"},
   },

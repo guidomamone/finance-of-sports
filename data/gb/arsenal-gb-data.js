@@ -17,6 +17,11 @@ const arsenalGbRevenueLinesByYear = {
     { rawLabel:'Profit on disposal of player registrations', normalizedCategory:'player_sales', amountNative:81.237, disclosureLevel:'detailed' },
     { rawLabel:'Share of joint venture operating loss', normalizedCategory:'other_income', amountNative:-1.690, disclosureLevel:'detailed' },
   ],
+  2022: [
+    { rawLabel:'Turnover of the Group including its share of joint ventures', normalizedCategory:'lump_football_operations', amountNative:372.362, disclosureLevel:'aggregated' },
+    { rawLabel:'Share of turnover of joint venture', normalizedCategory:'lump_football_operations', amountNative:-0.455, disclosureLevel:'aggregated' },
+    { rawLabel:'Profit on disposal of player registrations', normalizedCategory:'player_sales', amountNative:22.238, disclosureLevel:'aggregated' },
+  ],
 };
 
 const arsenalGbExpenseLinesByYear = {
@@ -33,6 +38,17 @@ const arsenalGbExpenseLinesByYear = {
     { rawLabel:'Impairment of player registrations', normalizedCategory:'player_impairment', amountNative:-15.241, disclosureLevel:'detailed' },
     { rawLabel:'Depreciation and impairment charges (less amortisation of grants)', normalizedCategory:'depreciation', amountNative:-19.778, disclosureLevel:'detailed' },
     { rawLabel:'Other operating charges', normalizedCategory:'other_expenses', amountNative:-200.756, disclosureLevel:'detailed' },
+  ],
+  2022: [
+    { rawLabel:'Amortisation of player registrations', normalizedCategory:'player_amortisation', amountNative:-124.567, disclosureLevel:'aggregated' },
+    { rawLabel:'Impairment of player registrations', normalizedCategory:'player_impairment', amountNative:-2.456, disclosureLevel:'aggregated' },
+    { rawLabel:'Depreciation and impairment charges (less amortisation of grants)', normalizedCategory:'depreciation', amountNative:-19.374, disclosureLevel:'aggregated' },
+    { rawLabel:'Wages and salaries', normalizedCategory:'wages_squad', amountNative:-185.581, disclosureLevel:'aggregated' },
+    { rawLabel:'Social security costs', normalizedCategory:'wages_squad', amountNative:-25, disclosureLevel:'aggregated' },
+    { rawLabel:'Other pension costs', normalizedCategory:'wages_squad', amountNative:-1.764, disclosureLevel:'aggregated' },
+    { rawLabel:'Cost of property sales', normalizedCategory:'other_expenses', amountNative:-0.085, disclosureLevel:'aggregated' },
+    { rawLabel:'Other operating charges', normalizedCategory:'other_expenses', amountNative:-74.065, disclosureLevel:'aggregated' },
+    { rawLabel:'Share of joint venture operating (loss)', normalizedCategory:'other_expenses', amountNative:-1.524, disclosureLevel:'aggregated' },
   ],
 };
 
@@ -54,6 +70,25 @@ const arsenalGbFiscalYearMeta = {
     grossDebt:358.294, cash:55.994,
     profitOnPlayerSales:0, assetSales:0, netInterest:-17.687, tax:-0.029,
     officialTotalRevenue:770.545, officialTotalExpenses:754.206, officialPAT:-1.377,
+  },
+  2022: {
+    incluidoEn:{ sponsorship_commercial:{ en:'lump_football_operations', posible:true, por:'precedente' }, matchday_competition:{ en:'lump_football_operations', posible:true, por:'precedente' }, season_tickets:{ en:'lump_football_operations', posible:true, por:'precedente' }, stadium_other:{ en:'lump_football_operations', posible:true, por:'precedente' }, broadcasting:{ en:'lump_football_operations', posible:true, por:'precedente' } },
+    currency:'GBP', fxRef:'GBP@2022-05-31',
+    sourceId:'arsenal-gb-holdings-group-accounts-2021-22',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-5.21, tax:-0.001,
+    extraRows: [
+      {label:'Net finance charges', value:-5.21},
+      {label:'Tax (charge)/credit on loss', value:-0.001},
+    ],
+    sinDesglose: [
+      {renglon:'Turnover of the Group including its share of joint ventures', lado:'revenue', importe:372.362, motivo:'el documento no desglosa este renglón'},
+      {renglon:'Share of turnover of joint venture', lado:'revenue', importe:0.455, motivo:'Claude 2026-10-19: la categoría propuesta sigue la convención ya cargada del club (Operating expenses y pérdidas menores en other_expenses/exceptional_items; derechos de TV en broadcasting)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:394.145, officialTotalExpenses:434.416, officialPAT:-45.482,
   },
 };
 
@@ -85,6 +120,11 @@ Object.assign(sources, {
     type:'official_balance_sheet', reliability:'primary',
     url:'https://find-and-update.company-information.service.gov.uk/company/04250459/filing-history',
     publicNote:'Balance consolidado auditado (Deloitte LLP, sin salvedades) de Arsenal Holdings Limited, la sociedad matriz del grupo, depositado en Companies House (Reino Unido). Ejercicio cerrado el 31 de mayo de 2025 (temporada 2024/25).',
+  },
+  'arsenal-gb-holdings-group-accounts-2021-22': {
+    id:'arsenal-gb-holdings-group-accounts-2021-22', clubId:'arsenal-gb',
+    title:'Arsenal Holdings Limited — arsenal-holdings-group-accounts-2021-22 (ejercicio 2022)',
+    type:'official_balance_sheet', reliability:'primary',
   },
 });
 

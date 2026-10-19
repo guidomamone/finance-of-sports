@@ -140,6 +140,52 @@ _antes de Stan Kroenke (data/gestiones/gb.js):_
 Kroenke pasó a ser accionista mayoritario el 11/4/2011 (62,89%); recién en 2018 compró el 100%. Dueño; el chairman operativo fue otra persona.
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Arsenal/arsenal-holdings-group-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Arsenal/arsenal-holdings-group-accounts-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Turnover of the Group including its share of joint ventures | pág. 18, Jev 0.98 |
+| 2 | Share of turnover of joint venture | pág. 18, precedente |
+| 3 | Profit on disposal of player registrations | pág. 18, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Amortisation of player registrations | pág. 28, precedente |
+| 2 | Impairment of player registrations | pág. 28, precedente |
+| 3 | Depreciation and impairment charges (less amortisation of grants) | pág. 28, precedente |
+| 4 | Wages and salaries | pág. 30, Claude 0.92 |
+| 5 | Social security costs | pág. 30, Jev 0.91 |
+| 6 | Other pension costs | pág. 30, Jev 0.91 |
+| 7 | Cost of property sales | pág. 28, precedente |
+| 8 | Other operating charges | pág. 28, precedente |
+| 9 | Share of joint venture operating (loss) | pág. 18, Jev 1 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-19): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2024, 2025): Comercial / Sponsors, Estadio, Televisión
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2021–22 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Arsenal".
+```
+
 ## Fuentes
 
 ### arsenal-gb-group-accounts-2024
@@ -156,6 +202,14 @@ _note (data/):_
 
 ```text
 PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/Arsenal/arsenal-holdings-group-accounts-2024-25.md. Cuentas consolidadas del grupo. Mismo gotcha de fx que el ejercicio 2024: fxRef apunta a FX_CLOSE, todavía sin entrada GBP@2025-05-31 (pendiente, fuera de alcance de esta sesión).
+```
+
+### arsenal-gb-holdings-group-accounts-2021-22
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Arsenal/arsenal-holdings-group-accounts-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

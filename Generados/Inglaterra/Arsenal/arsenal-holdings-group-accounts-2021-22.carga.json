@@ -1,0 +1,515 @@
+{
+ "pdf": "Clubes/Inglaterra/Arsenal/arsenal-holdings-group-accounts-2021-22.pdf",
+ "generado": "2026-10-19T16:31:54.128Z",
+ "frena": [],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-19: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 2 ejercicio(s) con un solo perímetro (individual); 4 documento(s) mirados)",
+  "fx: Regla #0: antes de cargar, confirmar en el documento que NO declara su propio tipo de cambio de cierre; si lo declara, gana ese sobre el de mercado de abajo"
+ ],
+ "ejercicio": {
+  "clubId": "arsenal-gb",
+  "year": 2022,
+  "cierre": "2022-05-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Turnover of the Group including its share of joint ventures",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 372.362,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Share of turnover of joint venture",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": -0.455,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Profit on disposal of player registrations",
+    "normalizedCategory": "player_sales",
+    "amountNative": 22.238,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Amortisation of player registrations",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -124.567,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Impairment of player registrations",
+    "normalizedCategory": "player_impairment",
+    "amountNative": -2.456,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Depreciation and impairment charges (less amortisation of grants)",
+    "normalizedCategory": "depreciation",
+    "amountNative": -19.374,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Wages and salaries",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -185.581,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 2,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Social security costs",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -25,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 1,
+    "_conf": 0.91,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other pension costs",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.764,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 1,
+    "_conf": 0.91,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Cost of property sales",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.085,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other operating charges",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -74.065,
+    "disclosureLevel": "aggregated",
+    "_pag": 28,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Share of joint venture operating (loss)",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.524,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2022-05-31",
+   "sourceId": "arsenal-gb-holdings-group-accounts-2021-22",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -5.21,
+   "tax": -0.001,
+   "extraRows": [
+    {
+     "label": "Net finance charges",
+     "value": -5.21
+    },
+    {
+     "label": "Tax (charge)/credit on loss",
+     "value": -0.001
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Turnover of the Group including its share of joint ventures",
+     "lado": "revenue",
+     "importe": 372.362,
+     "motivo": "el documento no desglosa este renglón"
+    },
+    {
+     "renglon": "Share of turnover of joint venture",
+     "lado": "revenue",
+     "importe": 0.455,
+     "motivo": "Claude 2026-10-19: la categoría propuesta sigue la convención ya cargada del club (Operating expenses y pérdidas menores en other_expenses/exceptional_items; derechos de TV en broadcasting)"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 394.145,
+   "officialTotalExpenses": 434.416,
+   "officialPAT": -45.482
+  },
+  "source": {
+   "id": "arsenal-gb-holdings-group-accounts-2021-22",
+   "clubId": "arsenal-gb",
+   "title": "Arsenal Holdings Limited — arsenal-holdings-group-accounts-2021-22 (ejercicio 2022)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Arsenal/arsenal-holdings-group-accounts-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Inglaterra/Arsenal/arsenal-holdings-group-accounts-2021-22.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2022-05-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "arsenal-gb",
+ "year": 2022,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 14,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Turnover of the Group including its share of joint ventures",
+   "page": 18,
+   "native": 372.362,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 372.362,
+   "cat": "lump_football_operations",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 372.362
+  },
+  {
+   "label": "Share of turnover of joint venture",
+   "page": 18,
+   "native": 0.455,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 4: signo impreso, resta en su lado))",
+   "signoFijo": -0.455,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19: la categoría propuesta sigue la convención ya cargada del club (Operating expenses y pérdidas menores en other_expenses/exceptional_items; derechos de TV en broadcasting)",
+   "destino": "revenue",
+   "amountNative": -0.455
+  },
+  {
+   "label": "Profit on disposal of player registrations",
+   "page": 18,
+   "native": 22.238,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 22.238,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 22.238
+  },
+  {
+   "label": "Amortisation of player registrations",
+   "page": 28,
+   "native": 124.567,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\")",
+   "signoFijo": 124.567,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -124.567
+  },
+  {
+   "label": "Impairment of player registrations",
+   "page": 28,
+   "native": 2.456,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\")",
+   "signoFijo": 2.456,
+   "cat": "player_impairment",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.456
+  },
+  {
+   "label": "Depreciation and impairment charges (less amortisation of grants)",
+   "page": 28,
+   "native": 19.374,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\")",
+   "signoFijo": 19.374,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -19.374
+  },
+  {
+   "label": "Wages and salaries",
+   "page": 30,
+   "native": 185.581,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (see note 6) (including exceptional costs in the prior year)\")",
+   "signoFijo": 185.581,
+   "cat": "wages_squad",
+   "conf": 0.92,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -185.581
+  },
+  {
+   "label": "Social security costs",
+   "page": 30,
+   "native": 25,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (see note 6) (including exceptional costs in the prior year)\")",
+   "signoFijo": 25,
+   "cat": "wages_squad",
+   "conf": 0.91,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -25
+  },
+  {
+   "label": "Other pension costs",
+   "page": 30,
+   "native": 1.764,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (see note 6) (including exceptional costs in the prior year)\")",
+   "signoFijo": 1.764,
+   "cat": "wages_squad",
+   "conf": 0.91,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.764
+  },
+  {
+   "label": "Cost of property sales",
+   "page": 28,
+   "native": 0.085,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\")",
+   "signoFijo": 0.085,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.085
+  },
+  {
+   "label": "Other operating charges",
+   "page": 28,
+   "native": 74.065,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses\")",
+   "signoFijo": 74.065,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -74.065
+  },
+  {
+   "label": "Share of joint venture operating (loss)",
+   "page": 18,
+   "native": 1.524,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3))",
+   "signoFijo": 1.524,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.524
+  },
+  {
+   "label": "Net finance charges",
+   "page": null,
+   "native": -5.21,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Tax (charge)/credit on loss",
+   "page": null,
+   "native": -0.001,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos con signo",
+   "verificacion (estado (lectura 4: signo impreso, resta en su lado))": "gastos con signo",
+   "verificacion (nota que desglosa \"Operating expenses\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Operating expenses\" > desglose de \"Staff costs (see note 6) (including exceptional costs in the prior year)\")": "gastos sin signo (se invierten)",
+   "verificacion (estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3))": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 394.145,
+  "expSum": -434.416,
+  "officialTotalRevenue": 394.145,
+  "officialTotalExpenses": 434.416,
+  "officialPAT": -45.482,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -45.482,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 394.145
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 434.416
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "GBP@2022-05-31",
+  "fx": 0.793588,
+  "source": "market_close",
+  "label": "Tipo spot del Bank of England al 2022-05-31"
+ },
+ "liga": {
+  "valor": "gb-premierleague",
+  "fuente": "roster cacheado de \"2021–22 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Arsenal\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2022,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2022-05-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (55 de 55 fechas de fin de mes caen en el mes 5))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-19)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Inglaterra (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fx": {
+   "valor": null,
+   "fuente": "el .md menciona tipo de cambio y dólar con números en 3 línea(s), pero ninguno es una cotización plausible",
+   "estado": "pendiente"
+  },
+  "fxRef": {
+   "valor": "GBP@2022-05-31",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 0.793588. --escribir agrega 'GBP@2022-05-31' a FX_CLOSE",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "arsenal-gb-holdings-group-accounts-2021-22",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gb-premierleague",
+   "fuente": "roster cacheado de \"2021–22 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Arsenal\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 3,
+  "lineasGasto": 9,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}
