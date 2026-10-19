@@ -234,6 +234,16 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // que se compara con el documento vecino la contaba como ingreso.
   for (const f of estado) if (f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f.M) && (f.M || f.A) && COBERTURA_PERDIDAS_RE.test(String(f.etiqueta || ''))) { f.lado = 'financiero'; notas.push(`"${f.etiqueta}" (L${f.linea}) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos`); }
 
+  // (to-do 298 ai, perímetro consolidado AG + Event AG decidido por Guido el 2026-10-19: "elegilo vos") COMPENSACIÓN INTRAGRUPO EN UN ESTADO DE VARIAS SOCIEDADES. FC St. Gallen AG + FC St. Gallen
+  // Event AG: "Entschädigung von FCSG Event AG" (+9.800, columna AG) y "Entschädigung an FCSG AG" (-9.800, columna Event AG) suman cero en el total del grupo y el total impreso de ingresos
+  // ("Erträge netto") no la incluye, pero la carga la contaba como ingreso y como gasto. COMPUERTA: dos renglones del mismo bloque, uno de ingreso y otro de gasto, con el mismo importe en
+  // el año y en el anterior, y la primera palabra de su rótulo igual: se eliminan (lado 'intragrupo'), como en una consolidación.
+  { const norm1 = (t) => normalizar(String(t || '')).split(/\s+/)[0] || '';
+    const cand = estado.filter((f) => f.tipo === 'renglon' && ['ingreso', 'gasto', 'otro'].includes(f.lado) && isFinite(f.M) && f.M && f.A != null && isFinite(f.A));
+    const igual = (x, y, f) => Math.abs(Math.abs(x) - Math.abs(y)) <= 0.5 * Math.max(f.u || 0, 0) + 1e-12;
+    for (const a of cand) { if (a.lado === 'intragrupo' || a.M < 0) continue;
+      const b = cand.find((x) => x !== a && x.lado !== 'intragrupo' && x.M < 0 && x.bloque === a.bloque && Math.abs(x.M + a.M) <= 0.5 * Math.max(a.u || 0, x.u || 0) + 1e-12 && Math.abs(x.A + a.A) <= 0.5 * Math.max(a.u || 0, x.u || 0) + 1e-12 && norm1(x.etiqueta).length >= 6 && norm1(x.etiqueta) === norm1(a.etiqueta));
+      if (b) { a.lado = 'intragrupo'; b.lado = 'intragrupo'; notas.push(`"${a.etiqueta}" (L${a.linea}) y "${b.etiqueta}" (L${b.linea}) son una compensación intragrupo del mismo importe en el año y en el anterior, de signo opuesto: se eliminan, como en una consolidación`); } } }
   // 2. notas: renglón del estado reemplazado por su desglose si cierra (escala deducida del cierre)
   // DESGLOSES ANIDADOS (Versión 335, diseño aprobado por Guido): una hoja de una nota puede, a su vez, estar desglosada por otro cuadro (filas
   // con detalla_a = la etiqueta de esa hoja). Se reemplaza con la MISMA regla (cerrarNota: tiene que sumar), hasta 3 niveles. Caso real, UC
