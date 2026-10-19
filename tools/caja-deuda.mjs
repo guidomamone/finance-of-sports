@@ -825,16 +825,26 @@ function propuestaNota(f) {
     enOtroDoc: (doc) => { const x = doc.find((y) => y.balance && y.familia === f.familia && y.nota); return x ? [sintetica(x)] : null; } };
 }
 // (to-do 310, ok de Guido 2026-10-19) COMPUERTA DE PRIMER AÑO PARA LA CAJA: un año sin vecino (ni año anterior, ni siguiente, ni documento
-// vecino) no tiene con qué compararse. Se acepta la caja que propuso la escalera si la fila está en la MISMA tabla del balance cuyo total del
-// activo es igual a un total del pasivo (a 1 unidad: la tabla está completa y el balance cuadra en la columna del ejercicio) y la caja no
-// supera ese total del activo. Solo caja: "el balance cuadra" no prueba que una fila sea deuda (medido: de 6 deudas sin vecino, 5 distintas de
-// lo cargado). Una sola tabla por fila: no se mezcla un resumen con el balance. La caja belga usa su código fijo (cajaNBB, más abajo).
-export function balanceCuadraConFila(filas, fila, suma = fila?.valor) {
-  if (fila?.tabla == null || !fila.balance || !fila.cifras?.length || !Number.isFinite(suma)) return false;
+// vecino) no tiene con qué compararse. Se acepta la caja que propuso la escalera si TRES cosas están de acuerdo (votos, ok de Guido):
+//   1. el balance cuadra: la fila está en una tabla del balance cuyo total del activo es igual (a 1 unidad) a un total del pasivo, y la caja no
+//      supera ese activo;
+//   2. esa tabla es la del mayor activo del documento: el balance principal, no el de una entidad chica ni un resumen. Caso: Udinese 2021-22 trae
+//      en la pág. 32 el balance de una entidad de activo 17,2 M donde "Disponibilità liquide" es 165.648; la caja real es 44,18 M;
+//   3. otra fila del documento, fuera de la propuesta, trae la misma cifra (el estado de flujos de caja repite el saldo final). Udinese: la mala
+//      aparece una vez, la real ocho.
+// Solo caja: "el balance cuadra" no prueba que una fila sea deuda (medido: de 6 deudas sin vecino, 5 distintas de lo cargado). La caja belga
+// usa su código fijo (cajaNBB, más abajo). Medido con `--medir`: sola la 1 deja 8 distintos (Udinese 2022); con las tres, 7, los de siempre.
+export function cajaSinVecinoAceptable(filas, propuestas) {
+  if (!propuestas?.length || propuestas.some((f) => f?.tabla == null || !f.balance || !f.cifras?.length || !Number.isFinite(f.valor))) return false;
+  const suma = propuestas.reduce((a, f) => a + f.valor, 0);
   const tot = filas.filter((f) => f.balance && f.cifras?.length && esTotalBalance(f.norm));
-  const activos = tot.filter((f) => TOTAL_ACTIVO_RE.test(f.norm) && f.tabla === fila.tabla);
+  const activos = tot.filter((f) => TOTAL_ACTIVO_RE.test(f.norm));
   const pasivos = tot.filter((f) => TOTAL_PASIVO_RE.test(f.norm) || TOTAL_PASIVO_PLURAL_RE.test(f.norm));
-  return activos.some((a) => a.cifras[0] > 0 && Math.abs(suma) <= a.cifras[0] + 1 && pasivos.some((q) => Math.abs(a.cifras[0] - q.cifras[0]) <= 1));
+  const mayor = Math.max(...activos.map((f) => f.cifras[0]));
+  const cuadra = (f) => activos.some((a) => a.tabla === f.tabla && a.cifras[0] > 0 && Math.abs(suma) <= a.cifras[0] + 1 && pasivos.some((q) => Math.abs(a.cifras[0] - q.cifras[0]) <= 1));
+  const principal = (f) => activos.some((a) => a.tabla === f.tabla && a.cifras[0] === mayor);
+  const repetida = filas.some((f) => !propuestas.includes(f) && f.cifras?.some((x) => Math.abs(Math.abs(x) - Math.abs(suma)) <= 1));
+  return propuestas.every(cuadra) && propuestas.every(principal) && repetida;
 }
 const conLecturaB = (f) => (f.lecturaB ? { ...f, valor: f.lecturaB.valor, cifras: f.lecturaB.cifras, lecturaB: null } : f);
 export function escalera(filas, cual, { precedentes = [], factor = null, anterior = null, siguiente = null, factorSiguiente = null, ia = null, jev = null, extraDeuda = [], anteriorDoc = null, factorAnterior = null, ingresos = null } = {}) {
@@ -848,8 +858,8 @@ export function escalera(filas, cual, { precedentes = [], factor = null, anterio
     if (!p) { if (i < 2 || (e === '1b' && jev) || (e === 2 && ia)) intentos.push(`escalón ${e}: sin propuesta`); continue; }
     const ctxC = { factor, anterior, siguiente, factorSiguiente, cual, referencia: precedentes[0]?.valor ?? null, anteriorDoc, factorAnterior, ingresos}; // (Versión 459) el año cargado más cercano, para la plausibilidad
     let c = compuerta(p, ctxC);
-    // (to-do 310) caja de un año sin vecino: la compuerta del propio balance del documento (balanceCuadraConFila)
-    if (!c.ok && cual === 'cash' && c.motivo === 'ningún año vecino para comparar' && !p.ninguna && p.filas.length && p.filas.every((f) => balanceCuadraConFila(filas, f, p.filas.reduce((a, x) => a + x.valor, 0))))
+    // (to-do 310) caja de un año sin vecino: la compuerta del propio balance del documento (cajaSinVecinoAceptable)
+    if (!c.ok && cual === 'cash' && c.motivo === 'ningún año vecino para comparar' && !p.ninguna && cajaSinVecinoAceptable(filas, p.filas))
       c = { ...c, ok: true, validacion: 'balance del documento' };
     // (to-do 223, A/B medido el 2026-10-13 contra una compuerta con votos, descartada: ver Admin/HALLAZGOS-pipeline.md) DOS LECTURAS: si alguna fila de la propuesta o de los documentos vecinos tiene lectura B (sin la celda con
     // forma de nota), la propuesta se evalúa también con todos los documentos leídos así (AEK 2018: su fila ya sale bien, la del documento
