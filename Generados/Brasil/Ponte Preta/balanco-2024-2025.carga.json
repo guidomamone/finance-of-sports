@@ -1,13 +1,9 @@
 {
  "pdf": "Clubes/Brasil/Ponte Preta/balanco-2024-2025.pdf",
- "generado": "2026-10-19T18:34:45.302Z",
- "frena": [
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios en 2025: pregunta en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-19T18:56:29.488Z",
+ "frena": [],
  "avisos": [
+  "categorías en 0 aun después del reintento (se carga así): Cuotas sociales",
   "gastos: ningún total impreso igual a la suma de las líneas (-50.811741); queda la suma, verificada por el resultado del ejercicio"
  ],
  "ejercicio": {
@@ -652,8 +648,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 10,
   "lineasGasto": 10,
   "metaFilas": 1,

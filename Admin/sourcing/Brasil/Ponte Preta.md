@@ -46,3 +46,5 @@ Fuente: índice JSON FPF. Todos "ASSOCIAÇÃO ATLÉTICA PONTE PRETA", balanço "
 - `balanco-2016-2017.pdf` (ej. 2017, `balanco aapp 2017.pdf`, 3 pp.), `balanco-2017-2018.pdf` (ej. 2018, `Demonstração Para Publicação 2018.pdf`), `balanco-2018-2019.pdf` (ej. 2019, `Substituto PONTE PRETA - Publicação Formato Extendido modelo 2019.pdf`), `balanco-2019-2020.pdf` (ej. 2020, `...modelo 2020 (11).pdf`), `balanco-2020-2021.pdf` (ej. 2021, `Balanco 2021 AAPP.pdf`), `balanco-2024-2025.pdf` (ej. 2025, `Demonstracao financeira AAPP 2025.pdf`, 9 pp.).
 - Nota de nombres: los existentes `balanco-2021-2022` / `2022-2023` / `2023-2024` son ej. 2022 / 2023 / 2024; los nuevos usan "<año anterior>-<ejercicio>".
 Serie en disco: 2017-2025 completa y continua. Son publicaciones de 3-9 págs. (sin notas completas en 2017-2021: formato "para publicação"). Sin probar: 2010-2016 (en el índice).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Brasil/Ponte Preta/balanco-2024-2025.pdf` (sourceId `pontepreta-br-balanco-2024-2025`).

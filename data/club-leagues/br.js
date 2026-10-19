@@ -27,7 +27,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'chapecoense-br': { 2017: 'br-serieA', 2021: 'br-serieA', 2022: 'br-serieB' },
   'vascodagama-br': { 2023: 'br-serieA' },
   'guarani-br': { 2024: 'br-serieB', 2025: 'br-serieC' },
-  'pontepreta-br': { 2022: 'br-serieB', 2023: 'br-serieB', 2024: 'br-serieB' },
+  'pontepreta-br': { 2022: 'br-serieB', 2023: 'br-serieB', 2024: 'br-serieB', 2025: 'br-serieC' },
   'ceara-br': { 2024: 'br-serieB', 2025: 'br-serieA' },
   'sportrecife-br': { 2025: 'br-serieA' },
   'amazonas-br': { 2024: 'br-serieB' },

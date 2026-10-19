@@ -3,8 +3,9 @@
  "md": "Clubes/Brasil/Ponte Preta/balanco-2024-2025.md",
  "mdSha1": "1ecdd70ded8caad2fea6f9b7cd5c9820aade6300",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T16:37:12.660Z",
+ "generado": "2026-10-19T18:41:32.394Z",
  "perimetroClub": null,
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 1,
@@ -285,17 +286,29 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se carga el bloque b28 (Fenapaf/INSS, Amortização/Depreciação, Acordo Trabalhista) como parte del desglose de 'Depreciação/Amortizacao/Contingencia/Pept/Cnrd' del estado?",
+   "pregunta": "¿El estado b3 o la nota b23 contienen algún renglón de cuotas sociales (Mensalidades/Sócios)?",
+   "propuesta": "no",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "En b23 no aparece ninguna fila de cuotas sociales; puede estar dentro de 'Departamentos' en b3 o no existir.",
+   "bloques": [
+    "b3",
+    "b23"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿b28 es la continuación de la nota 18(a) 'Demais Gastos' (b26), con Fenapaf/INSS, Amortização y Acordo Trabalhista?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "Depreciação/Amortizacao/Contingencia/Pept/Cnrd",
-   "texto": "El bloque b28 aparece suelto en pág. 6, sin título, con su primera fila en el encabezado; parece continuar la nota 18 de gastos.",
+   "renglon": "Demais Gastos",
+   "texto": "b28 tiene encabezado con importes y parece filas sueltas del desglose de gastos.",
    "bloques": [
-    "b28",
-    "b3"
+    "b26",
+    "b28"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "Estado de superávit/déficit en b3, en reales (unidades). La nota 18 desglosa ingresos (b23) y costos y gastos (b25); 'Demais Gastos' se abre en b26 y el departamento profesional en b32. b28 parece completar la composición de gastos. El índice muestra un solo perímetro, la asociación (individual)."
+ "observaciones": "Estado de superávit/déficit individual de la Associação Atlética Ponte Preta en b3 (pág. 2). Desglose de receitas en b23; custos e despesas en b25, demais gastos en b26 (+b28), departamento profissional en b32. No se identificaron cuotas sociales en los bloques disponibles."
 }

@@ -170,6 +170,55 @@ _de data/club-leagues/br.js:_
 descendido de la Série B al cierre de 2024, campeón de la Série C 2025 (fuera del rango cargado)
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Brasil/Ponte Preta/balanco-2024-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Brasil/Ponte Preta/balanco-2024-2025.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Quotas Globo-Camp.Brasileiro | pág. 6, precedente |
+| 2 | Quotas F.P.F | pág. 6, precedente |
+| 3 | Premiação Campeonato Paulista | pág. 6, precedente |
+| 4 | Quotas Copa do Brasil-CBF | pág. 6, precedente |
+| 5 | Publicidade/Propaganda | pág. 6, precedente |
+| 6 | Solidariedade / Compensação Formação | pág. 6, precedente |
+| 7 | Administrativo - Estado | pág. 2, precedente |
+| 8 | Administrativo - Jd Paineiras | pág. 2, precedente |
+| 9 | Administrativo - Amador | pág. 2, precedente |
+| 10 | Social / Outras | pág. 2, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Salários e Encargos /Outros | pág. 6, precedente |
+| 2 | Serviços de Terceiros | pág. 6, precedente |
+| 3 | Despesas com Jogos | pág. 6, precedente |
+| 4 | Demais Gastos | pág. 6, Jev 1 |
+| 5 | Diferencia de redondeo | pág. ?, Jev 0.99 |
+| 6 | Administrativo - Estado | pág. 2, precedente |
+| 7 | Administrativo - Jd Paineiras | pág. 2, precedente |
+| 8 | Administrativo - Jd Eulina | pág. 2, precedente |
+| 9 | Amador | pág. 2, precedente |
+| 10 | Depreciação/Amortizacao/Contingencia/Pept/Cnrd | pág. 2, Claude 0.85 |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): br-serieC, verificado contra roster cacheado de "2025 Campeonato Brasileiro Série C" (tools/club-league-reference/br.json), coincidencia exacta "Ponte Preta".
+```
+
 ## 2024
 
 ### Meta
@@ -259,6 +308,14 @@ _note (data/):_
 
 ```text
 PDF con capa de texto real, descargado del repositorio institucional de la Federação Paulista de Futebol. Mismo auditor/contadora que los demás años. Opinião COM RESSALVA. 2024 revirtió el déficit de 2023 con un superávit de R$7.000.643, impulsado por la venta de la línea de "Receita transmissão" (R$45,0 M, ligada a la negociación con la Liga Forte União (LFU) según el informe de auditoría) — incluye además un ajuste extraordinario de R$22.168.194 ("Depreciação/Contingência/Pept/CNRD", ligado a un pasivo nuevo de acuerdos laborales, ver comentario de cabecera de data/br/pontepreta-br-data.js). Valores expresados en reais completos. Transcripción completa en Clubes/Brasil/Ponte Preta/balanco-2023-2024.md. Convertido a USD con el PTAX BCB de cierre 31/12/2024 (R$6,1923).
+```
+
+### pontepreta-br-balanco-2024-2025
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Brasil/Ponte Preta/balanco-2024-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros
