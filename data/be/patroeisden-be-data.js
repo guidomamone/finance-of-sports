@@ -13,6 +13,9 @@ const patroeisdenbeRevenueLinesByYear = {
   2018: [
     { rawLabel:'Bedrijfsopbrengsten', normalizedCategory:'lump_football_operations', amountNative:0.314774, disclosureLevel:'aggregated' },
   ],
+  2019: [
+    { rawLabel:'Bedrijfsopbrengsten', normalizedCategory:'lump_football_operations', amountNative:0.362776, disclosureLevel:'aggregated' },
+  ],
 };
 const patroeisdenbeExpenseLinesByYear = {
   2025: [
@@ -51,6 +54,13 @@ const patroeisdenbeExpenseLinesByYear = {
     { rawLabel:'Ouderdoms- en overlevingspensioenen', normalizedCategory:'wages_squad', amountNative:-0.000264, disclosureLevel:'aggregated' },
     { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.002611, disclosureLevel:'aggregated' },
     { rawLabel:'Uitzonderlijke kosten', normalizedCategory:'exceptional_items', amountNative:-0.1834, disclosureLevel:'aggregated' },
+  ],
+  2019: [
+    { rawLabel:'Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen', normalizedCategory:'other_expenses', amountNative:-0.21783, disclosureLevel:'aggregated' },
+    { rawLabel:'Bezoldigingen en rechtstreekse sociale voordelen', normalizedCategory:'wages_squad', amountNative:-0.35269, disclosureLevel:'aggregated' },
+    { rawLabel:'Werkgeversbijdragen voor sociale verzekeringen', normalizedCategory:'wages_squad', amountNative:-0.072137, disclosureLevel:'aggregated' },
+    { rawLabel:'Werkgeverspremies voor bovenwettelijke verzekeringen', normalizedCategory:'wages_squad', amountNative:-0.022521, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.052324, disclosureLevel:'aggregated' },
   ],
 };
 const patroeisdenbeFiscalYearMeta = {
@@ -124,6 +134,23 @@ const patroeisdenbeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:0.314774, officialTotalExpenses:0.743126, officialPAT:-0.608202,
   },
+  2019: {
+    currency:'EUR', fxRef:'EUR@2019-06-30',
+    sourceId:'patroeisden-be-jaarrekening-2019-06-30-individual',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.001122, tax:0,
+    extraRows: [
+      {label:'Financiële opbrengsten', value:0.000038},
+      {label:'Financiële kosten', value:-0.00116},
+    ],
+    sinDesglose: [
+      {renglon:'Bedrijfsopbrengsten', lado:'revenue', importe:0.362776, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0.362776, officialTotalExpenses:0.717502, officialPAT:-0.355848,
+  },
 };
 const patroeisdenbePresupuestoOverlayByYear = {};
 
@@ -158,6 +185,11 @@ Object.assign(sources, {
   'patroeisden-be-jaarrekening-2018-06-30-individual': {
     id:'patroeisden-be-jaarrekening-2018-06-30-individual', clubId:'patroeisden-be',
     title:'Patro Eisden Maasmechelen VZW — jaarrekening-2018-06-30-individual (ejercicio 2018)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'patroeisden-be-jaarrekening-2019-06-30-individual': {
+    id:'patroeisden-be-jaarrekening-2019-06-30-individual', clubId:'patroeisden-be',
+    title:'Patro Eisden Maasmechelen VZW — jaarrekening-2019-06-30-individual (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

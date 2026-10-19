@@ -70,6 +70,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2016: {"estadio":"Patro-stadion","capacidad":5000,"sponsor":"e.Baillien","marca":"Jartazi","temporada":"2015–16 Belgian Second Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353494562"},
     2017: {"estadio":"Gemeentelijk Sportparkstadion","temporada":"2016–17 Belgian First Amateur Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353492624","fuenteManual":"https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen","manual":["estadio"]},
     2018: {"estadio":"Gemeentelijk Sportparkstadion","temporada":"2017–18 Belgian First Amateur Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353492631","fuenteManual":"https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen","manual":["estadio"]},
+    2019: {"estadio":"Gemeentelijk Sportparkstadion","temporada":"2018–19 Belgian Second Amateur Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1353501944","fuenteManual":"https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen","manual":["estadio"]},
     2025: {"estadio":"Gemeentelijk Sportparkstadion","capacidad":5500,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","manual":["estadio","capacidad"]},
   },
   'raallalouviere-be': {
