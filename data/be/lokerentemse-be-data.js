@@ -7,6 +7,11 @@ const lokerentemsebeRevenueLinesByYear = {
   2024: [
     { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations', amountNative:0.988874, disclosureLevel:'aggregated' },
   ],
+  2023: [
+    { rawLabel:'Overige bedrijfsopbrengsten (implícito en la Brutomarge)', normalizedCategory:'other_income', amountNative:0.551469, disclosureLevel:'aggregated' },
+    { rawLabel:'Waarvan: niet-recurrente bedrijfsopbrengsten', normalizedCategory:'other_income', amountNative:0.11625, disclosureLevel:'aggregated' },
+    { rawLabel:'Omzet', normalizedCategory:'lump_football_operations', amountNative:1.504443, disclosureLevel:'aggregated' },
+  ],
 };
 const lokerentemsebeExpenseLinesByYear = {
   2025: [
@@ -24,6 +29,13 @@ const lokerentemsebeExpenseLinesByYear = {
     { rawLabel:'Niet-recurrente bedrijfskosten', normalizedCategory:'exceptional_items', amountNative:-0.013466, disclosureLevel:'aggregated' },
     { rawLabel:'Afschrijvingen immateriële vaste activa (spelers)', normalizedCategory:'player_amortisation', amountNative:-0.00012, disclosureLevel:'aggregated' },
     { rawLabel:'Afschrijvingen materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.033828, disclosureLevel:'aggregated' },
+  ],
+  2023: [
+    { rawLabel:'Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen', normalizedCategory:'other_expenses', amountNative:-1.394785, disclosureLevel:'aggregated' },
+    { rawLabel:'Bezoldigingen, sociale lasten en pensioenen (+)/(-)', normalizedCategory:'wages_squad', amountNative:-1.141957, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.035114, disclosureLevel:'aggregated' },
+    { rawLabel:'Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (+)/(-) (terugnemingen)', normalizedCategory:'other_expenses', amountNative:-0.029267, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.029673, disclosureLevel:'aggregated' },
   ],
 };
 const lokerentemsebeFiscalYearMeta = {
@@ -66,6 +78,23 @@ const lokerentemsebeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:0.988874, officialTotalExpenses:1.266627, officialPAT:-0.307657,
   },
+  2023: {
+    currency:'EUR', fxRef:'EUR@2023-06-30',
+    sourceId:'lokerentemse-be-jaarrekening-2023-06-30-individual-correction',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.020825, tax:0,
+    extraRows: [
+      {label:'Recurrente financiële opbrengsten', value:0.000073},
+      {label:'Recurrente financiële kosten', value:-0.020898},
+    ],
+    sinDesglose: [
+      {renglon:'Omzet', lado:'revenue', importe:1.504443, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:2.172162, officialTotalExpenses:2.630796, officialPAT:-0.479459,
+  },
 };
 const lokerentemsebePresupuestoOverlayByYear = {};
 
@@ -90,6 +119,11 @@ Object.assign(sources, {
   'lokerentemse-be-jaarrekening-2024-06-30-individual': {
     id:'lokerentemse-be-jaarrekening-2024-06-30-individual', clubId:'lokerentemse-be',
     title:'Koninklijke Sporting Club Lokeren - Temse VZW — jaarrekening-2024-06-30-individual (ejercicio 2024)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'lokerentemse-be-jaarrekening-2023-06-30-individual-correction': {
+    id:'lokerentemse-be-jaarrekening-2023-06-30-individual-correction', clubId:'lokerentemse-be',
+    title:'Koninklijke Sporting Club Lokeren - Temse VZW — jaarrekening-2023-06-30-individual-correction (ejercicio 2023)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

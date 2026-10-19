@@ -1,22 +1,140 @@
 {
  "pdf": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2023-06-30-individual-correction.pdf",
- "generado": "2026-10-19T14:46:22.221Z",
- "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 1 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
-  {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-19T14:54:33.208Z",
+ "frena": [],
  "avisos": [],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "lokerentemse-be",
+  "year": 2023,
+  "cierre": "2023-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Overige bedrijfsopbrengsten (implícito en la Brutomarge)",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.551469,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Waarvan: niet-recurrente bedrijfsopbrengsten",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.11625,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Omzet",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 1.504443,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.394785,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.141957,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.035114,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (+)/(-) (terugnemingen)",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.029267,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andere bedrijfskosten",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.029673,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2023-06-30",
+   "sourceId": "lokerentemse-be-jaarrekening-2023-06-30-individual-correction",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.020825,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Recurrente financiële opbrengsten",
+     "value": 0.000073
+    },
+    {
+     "label": "Recurrente financiële kosten",
+     "value": -0.020898
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Omzet",
+     "lado": "revenue",
+     "importe": 1.504443,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 2.172162,
+   "officialTotalExpenses": 2.630796,
+   "officialPAT": -0.479459
+  },
+  "source": {
+   "id": "lokerentemse-be-jaarrekening-2023-06-30-individual-correction",
+   "clubId": "lokerentemse-be",
+   "title": "Koninklijke Sporting Club Lokeren - Temse VZW — jaarrekening-2023-06-30-individual-correction (ejercicio 2023)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Lokeren-Temse/jaarrekening-2023-06-30-individual-correction.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2023-06-30-individual-correction.md",
  "reemplaza": false,
  "periodo": {
@@ -32,5 +150,244 @@
  },
  "clubId": "lokerentemse-be",
  "year": 2023,
- "cortadoEn": "filas"
+ "ajustes": null,
+ "seleccion": {
+  "filas": 10,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Overige bedrijfsopbrengsten (implícito en la Brutomarge)",
+   "page": 6,
+   "native": 0.551469,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.551469,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.551469
+  },
+  {
+   "label": "Waarvan: niet-recurrente bedrijfsopbrengsten",
+   "page": 6,
+   "native": 0.11625,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.11625,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.11625
+  },
+  {
+   "label": "Omzet",
+   "page": 6,
+   "native": 1.504443,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.504443,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.504443
+  },
+  {
+   "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+   "page": 6,
+   "native": 1.394785,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.394785,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.394785
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "page": 6,
+   "native": 1.141957,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.141957,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.141957
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "page": 6,
+   "native": 0.035114,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.035114,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.035114
+  },
+  {
+   "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (+)/(-) (terugnemingen)",
+   "page": 6,
+   "native": 0.029267,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.029267,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.029267
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "page": 6,
+   "native": 0.029673,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.029673,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.029673
+  },
+  {
+   "label": "Recurrente financiële opbrengsten",
+   "page": null,
+   "native": 0.000073,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Recurrente financiële kosten",
+   "page": null,
+   "native": -0.020898,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 2.172162,
+  "expSum": -2.630796,
+  "officialTotalRevenue": 2.172162,
+  "officialTotalExpenses": 2.630796,
+  "officialPAT": -0.479459,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.479459,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 2.172162
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 2.630796
+  }
+ },
+ "liga": {
+  "valor": "be-div2amateur",
+  "fuente": "roster cacheado de \"2022–23 Belgian Division 2\" (tools/club-league-reference/be.json), coincidencia exacta \"Lokeren-Temse\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2023,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2023-06-30",
+   "fuente": "año del ejercicio + mes de cierre (nombre del archivo (2023-06-30) y contenido del .md (14 de 15 fechas de fin de mes))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el nombre del archivo dice que son los estados individuales (\"jaarrekening-2023-06-30-individual-correction.pdf\"), y no hay un consolidado del mismo ejercicio en la carpeta",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Bélgica (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2023-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2023-06-30 = 0.9203 (Cierre BCE al 30/6/2023 (1 EUR = 1,0866 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "lokerentemse-be-jaarrekening-2023-06-30-individual-correction",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "be-div2amateur",
+   "fuente": "roster cacheado de \"2022–23 Belgian Division 2\" (tools/club-league-reference/be.json), coincidencia exacta \"Lokeren-Temse\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 3,
+  "lineasGasto": 5,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
 }

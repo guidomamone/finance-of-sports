@@ -134,6 +134,44 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/cargar.mjs (2026-10-19): be-div1amateur, verificado contra roster cacheado de "2023–24 Belgian National Division 1" (tools/club-league-reference/be.json), coincidencia exacta "Lokeren-Temse".
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Bélgica/Lokeren-Temse/jaarrekening-2023-06-30-individual-correction.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/Lokeren-Temse/jaarrekening-2023-06-30-individual-correction.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Overige bedrijfsopbrengsten (implícito en la Brutomarge) | pág. 6, precedente |
+| 2 | Waarvan: niet-recurrente bedrijfsopbrengsten | pág. 6, precedente |
+| 3 | Omzet | pág. 6, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen | pág. 6, precedente |
+| 2 | Bezoldigingen, sociale lasten en pensioenen (+)/(-) | pág. 6, precedente |
+| 3 | Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa | pág. 6, precedente |
+| 4 | Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (+)/(-) (terugnemingen) | pág. 6, Jev 1 |
+| 5 | Andere bedrijfskosten | pág. 6, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): be-div2amateur, verificado contra roster cacheado de "2022–23 Belgian Division 2" (tools/club-league-reference/be.json), coincidencia exacta "Lokeren-Temse".
+```
+
 ## Fuentes
 
 ### lokerentemse-be-jaarrekening-2025-06-30-individual
@@ -150,4 +188,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Lokeren-Temse/jaarrekening-2024-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### lokerentemse-be-jaarrekening-2023-06-30-individual-correction
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Lokeren-Temse/jaarrekening-2023-06-30-individual-correction.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

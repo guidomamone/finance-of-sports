@@ -1,0 +1,61 @@
+{
+ "md": "Clubes/Bélgica/Lokeren-Temse/jaarrekening-2021-06-30-individual.md",
+ "generatedAt": "2026-10-19T14:54:30.543Z",
+ "rubrosHuella": "d57b80290189c2ca9b859812917a0dec5119af89",
+ "rubros": [
+  {
+   "label": "Overige bedrijfsopbrengsten (implícito en la Brutomarge)",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Omzet",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Handelsgoederen, grond- en hulpstoffen, diensten en diverse goederen",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "Afschrijvingen materiële vaste activa",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  }
+ ]
+}
