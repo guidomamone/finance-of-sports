@@ -34,7 +34,11 @@
     },
     "2022": {
       "estadio": "Kristall (Zhigulyovsk)",
-      "fuente": "https://www.vedomosti.ru/sport/football/articles/2023/08/18/990832-chastnii-klub-iz-tolyatti-rvetsya-v-rpl"
+      "fuente": "https://www.vedomosti.ru/sport/football/articles/2023/08/18/990832-chastnii-klub-iz-tolyatti-rvetsya-v-rpl",
+      "sponsor": "1xStavka",
+      "fuentes": {
+        "sponsor": "https://ru.wikipedia.org/wiki/%D0%90%D0%BA%D1%80%D0%BE%D0%BD_(%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BB%D1%83%D0%B1)"
+      }
     },
     "2023": {
       "estadio": "Kristall (Zhigulyovsk)",
@@ -101,7 +105,11 @@
     },
     "2024": {
       "estadio": "Rostec Arena",
-      "fuente": "https://www.dp.ru/a/2024/06/04/besprozvannih-dogovorilsja"
+      "fuente": "https://www.dp.ru/a/2024/06/04/besprozvannih-dogovorilsja",
+      "sponsor": "Rostec",
+      "fuentes": {
+        "sponsor": "https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D0%BB%D1%82%D0%B8%D0%BA%D0%B0_(%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BB%D1%83%D0%B1)"
+      }
     }
   },
   "ferroviaria-br": {
@@ -312,6 +320,28 @@
     }
   },
   "liersesk-be": {
+    "2019": {
+      "estadio": "Herman Vanderpoortenstadion",
+      "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)"
+    },
+    "2020": {
+      "estadio": "Herman Vanderpoortenstadion",
+      "sponsor": "Keukens Van Lommel",
+      "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Lierse_Sportkring_(3970)",
+      "fuentes": {
+        "sponsor": "https://www.lierse.com/nieuws/keukens-van-lommel-fiere-nieuwe-hoofdsponsor-van-lierse"
+      }
+    },
+    "2023": {
+      "estadio": "Herman Vanderpoortenstadion",
+      "sponsor": "Keukens Van Lommel",
+      "fuente": "https://nl.wikipedia.org/wiki/Eerste_klasse_B_2022-23_(voetbal_Belgi%C3%AB)"
+    },
+    "2024": {
+      "estadio": "Herman Vanderpoortenstadion",
+      "sponsor": "Golden Palace",
+      "fuente": "https://nl.wikipedia.org/wiki/Eerste_klasse_B_2023-24_(voetbal_Belgi%C3%AB)"
+    },
     "2025": {
       "estadio": "Herman Vanderpoortenstadion",
       "capacidad": 14538,
@@ -319,6 +349,14 @@
     }
   },
   "lokerentemse-be": {
+    "2023": {
+      "estadio": "Daknamstadion",
+      "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Sporting_Club_Lokeren_(4297)"
+    },
+    "2024": {
+      "estadio": "Daknamstadion",
+      "fuente": "https://nl.wikipedia.org/wiki/Koninklijke_Sporting_Club_Lokeren_(4297)"
+    },
     "2025": {
       "estadio": "Daknamstadion",
       "capacidad": 12136,
@@ -330,6 +368,11 @@
       "estadio": "Soevereinstadion",
       "fuente": "https://en.wikipedia.org/wiki/Lommel_S.K."
     },
+    "2024": {
+      "estadio": "Soevereinstadion",
+      "sponsor": "AppSys ICT Group",
+      "fuente": "https://nl.wikipedia.org/wiki/Eerste_klasse_B_2023-24_(voetbal_Belgi%C3%AB)"
+    },
     "2025": {
       "estadio": "Soevereinstadion",
       "capacidad": 8000,
@@ -337,6 +380,42 @@
     }
   },
   "patroeisden-be": {
+    "2017": {
+      "estadio": "Gemeentelijk Sportparkstadion",
+      "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen"
+    },
+    "2018": {
+      "estadio": "Gemeentelijk Sportparkstadion",
+      "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen"
+    },
+    "2019": {
+      "estadio": "Gemeentelijk Sportparkstadion",
+      "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen"
+    },
+    "2020": {
+      "estadio": "Gemeentelijk Sportparkstadion",
+      "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen"
+    },
+    "2021": {
+      "estadio": "Gemeentelijk Sportparkstadion",
+      "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen"
+    },
+    "2022": {
+      "estadio": "Gemeentelijk Sportparkstadion",
+      "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen"
+    },
+    "2023": {
+      "estadio": "Gemeentelijk Sportparkstadion",
+      "fuente": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen"
+    },
+    "2024": {
+      "sponsor": "PepperMill Casino",
+      "fuente": "https://www.limburgnieuws.be/maasmechelen/1692380237-peppermill-casino-nieuwe-hoofdsponsor-van-patro-eisden-maasmechelen-18-augustus-2023--a.html",
+      "estadio": "Gemeentelijk Sportparkstadion",
+      "fuentes": {
+        "estadio": "https://nl.wikipedia.org/wiki/K._Patro_Eisden_Maasmechelen"
+      }
+    },
     "2025": {
       "estadio": "Gemeentelijk Sportparkstadion",
       "capacidad": 5500,
@@ -355,6 +434,11 @@
       "estadio": "Edmond Machtens",
       "fuente": "https://bx1.be/communes/molenbeek-saint-jean/rwdm-molenbeek-signe-convention-doccupation-stade-machtens/"
     },
+    "2024": {
+      "estadio": "Edmond Machtens",
+      "sponsor": "Golden Palace",
+      "fuente": "https://nl.wikipedia.org/wiki/Eerste_klasse_A_2023-24_(voetbal_Belgi%C3%AB)"
+    },
     "2025": {
       "estadio": "Edmond Machtens",
       "capacidad": 12266,
@@ -366,6 +450,35 @@
       "estadio": "Regenboogstadion",
       "capacidad": 12500,
       "fuente": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League"
+    }
+  },
+  "ohleuven-be": {
+    "2022": {
+      "estadio": "Den Dreef",
+      "sponsor": "King Power",
+      "fuente": "https://nl.wikipedia.org/w/index.php?oldid=72035336"
+    },
+    "2023": {
+      "estadio": "Den Dreef",
+      "sponsor": "Star Casino",
+      "fuente": "https://nl.wikipedia.org/w/index.php?oldid=72035336"
+    },
+    "2024": {
+      "estadio": "Den Dreef",
+      "sponsor": "Star Casino",
+      "fuente": "https://nl.wikipedia.org/w/index.php?oldid=72035336"
+    }
+  },
+  "beerschot-be": {
+    "2022": {
+      "estadio": "Olympisch Stadion",
+      "sponsor": "Yelo",
+      "fuente": "https://nl.wikipedia.org/wiki/Eerste_klasse_A_2021-22_(voetbal_Belgi%C3%AB)"
+    },
+    "2024": {
+      "estadio": "Olympisch Stadion",
+      "sponsor": "Yelo",
+      "fuente": "https://nl.wikipedia.org/wiki/Eerste_klasse_B_2023-24_(voetbal_Belgi%C3%AB)"
     }
   }
 }

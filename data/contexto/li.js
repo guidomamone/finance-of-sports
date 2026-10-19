@@ -4,9 +4,9 @@
 window.CLUB_CONTEXT = window.CLUB_CONTEXT || {};
 Object.assign(window.CLUB_CONTEXT, {
   'dynamomakhachkala-ru': {
-    2021: {"estadio":"Dynamo Stadium","fuente":"https://www.sport-express.ru/football/rus_cup/fbl_match-legion-dinamo-anzhi-343552/"},
+    2021: {"estadio":"Dynamo Stadium","fuente":"https://www.sport-express.ru/football/rus_cup/fbl_match-legion-dinamo-anzhi-343552/","fuenteManual":"https://www.sport-express.ru/football/rus_cup/fbl_match-legion-dinamo-anzhi-343552/","manual":["estadio"]},
   },
   'zultewaregem-be': {
-    2025: {"estadio":"Regenboogstadion","capacidad":12500,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League"},
+    2025: {"estadio":"Regenboogstadion","capacidad":12500,"fuente":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","fuenteManual":"https://en.wikipedia.org/wiki/2024%E2%80%9325_Challenger_Pro_League","manual":["estadio","capacidad"]},
   },
 });

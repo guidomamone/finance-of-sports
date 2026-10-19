@@ -4,6 +4,7 @@ window.SPONSORS_INDICE = [
   ["19treze","19treze",["m"]],
   ["1pra1-bet","1pra1.Bet",["c"]],
   ["1xbet","1XBET",["c"]],
+  ["1xstavka","1xStavka",["c"]],
   ["2018-world-cadets-and-juniors-fencing-championships","2018 World Cadets and Juniors Fencing Championships",["c"]],
   ["24live","24live",["c"]],
   ["28-black","28 Black",["c"]],

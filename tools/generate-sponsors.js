@@ -115,7 +115,7 @@ function construir() {
     const partida = (a) => ls[a] && /[–-]\d{2,4}\b/.test(ls[a].wikipediaPage);
     const temp = mes >= 9 && partida(+y + 1) ? +y + 1 : +y;
     for (const [campo, rol] of [['sponsor', 'c'], ['marca', 'm']]) {
-      const fuente = (d.manual || []).includes(campo) ? d.fuenteManual || d.fuente : d.club?.[campo];
+      const fuente = (d.manual || []).includes(campo) ? d.fuentesManual?.[campo] || d.fuenteManual || d.fuente : d.club?.[campo];
       if (fuente && d[campo]) extra.push({ iso, liga, y: temp, clubId: id, equipo: CI[id]?.n || CLUBS[id]?.displayName || id, campo, rol, valor: d[campo], fuente });
     }
   }

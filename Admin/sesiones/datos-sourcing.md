@@ -49,3 +49,24 @@ Lo anterior al merge del 2026-10-18 ya pasó a TODO y CHANGELOG (copia en `Admin
 - 252: Gladbach y Stuttgart 2025, en el Unternehmensregister desde enero de 2027.
 
 ## Después del merge de los sponsors a mano (2026-10-18)
+
+### Qué cambió (CHANGELOG)
+
+- **273 para Bélgica (pedido de la principal: la compuerta frenaba 22 años del lote 92).** Los escalones automáticos no alcanzan
+  (`--camisetas` necesita que la página de temporada enlace al club, y las listas de esas ligas no están guardadas; `--local` no tiene
+  las ligas belgas). A mano con fuente en `tools/contexto-manual.json`: OH Leuven 2022-2024 (tabla de sponsors de su página en
+  nl.wikipedia, revisión 72035336), Beerschot 2022 y 2024, Lierse SK 2023 y 2024, Lommel SK 2024 y RWDM 2024 (tablas de Eerste klasse
+  A/B en nl.wikipedia, que traen estadio y hoofdsponsor), Lierse 2020 (lierse.com), Patro Eisden 2024 (Limburgnieuws), y estadio de
+  Lierse 2019-2020, Lokeren-Temse 2023-2024 y Patro Eisden 2017-2024 (páginas de los clubes). El estadio va también donde la temporada lo
+  daría, así la compuerta pasa con o sin lista de liga. Medido con la compuerta (`--club --anio`, sin escribir): de 23 años, 11 pasan.
+- **`contexto-manual.json` acepta una fuente por campo** (`fuentes: { campo: url }` → `fuentesManual` en `data/contexto/`; la usan
+  `js/contexto.js` y `generate-sponsors.js`). Entran Akron 2022 (1xStavka) y Baltika 2024 (Rostec), que tenían el estadio con otra
+  fuente. Toda entrada manual lleva ahora `manual` y `fuenteManual` (antes, sin página de temporada, no: y `generate-sponsors.js` no la
+  sumaba al índice). ASSET_V 1314.
+
+### Qué queda (TODO)
+
+- 273 Bélgica: 12 años de ligas amateur sin sponsor con fuente (Lierse SK 2019, Patro Eisden 2015 y 2017-2023, RWDM 2019,
+  Lokeren-Temse 2023-2024; Patro 2015 y RWDM 2019 también sin estadio). Las páginas de esas ligas en Wikipedia no tienen columna de
+  sponsor y no hay prensa que lo nombre. Decisión para Guido: dejarlos frenados, o que la compuerta acepte sin sponsor un año de liga
+  amateur.
