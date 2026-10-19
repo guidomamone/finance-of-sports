@@ -172,6 +172,9 @@ window.RANKINGS["gb-premierleague"] = {
     leagueSize: 20,
     wiki: {"t":"2019–20 Premier League","lang":"en","at":"2026-10-19","n":20},
     clubs: [
+      { id:"chelsea-gb", revenue:679.803, reportType:"official_balance_sheet",
+        sourceId:"chelsea-gb-fc-holdings-group-accounts-2019-20",
+        mix:[["Comercial / Sponsors",210.581],["Estadio",67.318],["Televisión",225.609],["Venta de Jugadores",176.295]] },
       { id:"brighton-gb", revenue:152.375, reportType:"official_balance_sheet",
         sourceId:"brighton-gb-full-accounts-2019-20",
         mix:[["Comercial / Sponsors",11.718],["Estadio",16.701],["Televisión",111.132],["Otros ingresos",12.825]] },

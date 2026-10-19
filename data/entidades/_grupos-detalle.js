@@ -145,6 +145,7 @@ window.GRUPOS = {
   ],
   "ingresos": {
    "chelsea-gb": {
+    "2020": 679.803,
     "2025": 752.518
    }
   }
