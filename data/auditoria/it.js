@@ -1366,6 +1366,19 @@ Object.assign(window.CLUB_AUDITORIA, {
    "continuidad": false,
    "fuente": null
   },
+  "2006": {
+   "auditor": {
+    "nombre": "Deloitte",
+    "tipo": "firma",
+    "legal": "Deloitte & Touche S.p.A."
+   },
+   "dictamen": "con_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Clubes/Italia/Lazio/Lazio-relazione-revisione-bilancio-esercizio-2005-06.md",
+    "linea": 28
+   }
+  },
   "2011": {
    "auditor": {
     "nombre": "PwC",
