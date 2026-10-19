@@ -84,6 +84,11 @@ Mitigaciones:
   Escalón 0 de esa cascada (to-do 232 ad): una cifra con forma imposible ("6.571,340,66", error del OCR) no se respalda con nada y su
   página queda dudosa. La misma función (`formaImposible`, en `verify-numbers.mjs`) hace que `caja-deuda.mjs` no lea esa fila. Lo ya
   transcripto no se relee: medido, ninguna llegó a un dato publicado.
+- c3) **Control "sin tablas"** (`pipeline.mjs`, gratis): una transcripción vieja (no de Mistral) de 2+ páginas con menos de 5 renglones de
+  tabla que todavía no pasó por verificar (sin `.verificacion.json`) se marca `sin-tablas` y la corrida siguiente la rehace con Mistral,
+  una sola vez. Hasta el to-do 298 e la condición era "sin la marca de Jev" de la preparación vieja, que casi todos los `.md` viejos tienen:
+  marcaba 0; con la regla nueva, 238 (95 belgas; 100 de la lista de los 319 de la 292, decisión de Guido: Mistral, no subagentes; unas
+  8.334 páginas). Un `.md` que ya pasó por verificar no se rehace (OH Leuven 2019 y 2021, que cierran por sus códigos NBB sin tablas).
 - d) **Escalera** (escalón 1 construido; el 2 todavía no):
 
 ```
