@@ -157,6 +157,49 @@ _antes de Daniel Levy (data/gestiones/gb.js):_
 Levy: executive chairman desde febrero de 2001 (día aproximado, no verificado en la fuente citada).
 ```
 
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2021-22.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2021-22.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: -; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Match receipts | pág. 23, precedente |
+| 2 | UEFA prize money (before exceptional item) | pág. 23, precedente |
+| 3 | TV and media (before exceptional item) | pág. 23, precedente |
+| 4 | Commercial | pág. 23, precedente |
+| 5 | - UEFA COVID Deduction | pág. 23, precedente |
+| 6 | Consideration | pág. 26, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Net book value of disposals | pág. 26, precedente |
+| 2 | Salaries and bonuses | pág. 25, Jev 0.99 |
+| 3 | Social security costs | pág. 25, Jev 0.97 |
+| 4 | Other pension costs (see note 24) | pág. 25, Jev 0.91 |
+| 5 | Depreciation of property, plant and equipment | pág. 24, precedente |
+| 6 | - Onerous employment contracts | pág. 24, Claude 0.9 |
+| 7 | Other operating costs | pág. 24, precedente |
+| 8 | Amortisation, impairments and other net football trading income and expenditure | pág. 24, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2021–22 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Tottenham Hotspur".
+```
+
 ## Fuentes
 
 ### tottenham-gb-group-accounts-2024
@@ -173,6 +216,14 @@ _note (data/):_
 
 ```text
 PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/Tottenham Hotspur/tottenham-hotspur-group-accounts-2024-25.md. Cuentas consolidadas del grupo. Mismo gotcha de fx que el ejercicio 2024: fxRef apunta a FX_CLOSE, todavía sin entrada GBP@2025-06-30 (pendiente, fuera de alcance de esta sesión). Post balance sheet: el Executive Chairman Daniel Levy dejó el club el 4/9/2025, después del cierre de este ejercicio.
+```
+
+### tottenham-gb-group-accounts-2021-22
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Tottenham Hotspur/tottenham-group-accounts-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
 
 ## Otros
