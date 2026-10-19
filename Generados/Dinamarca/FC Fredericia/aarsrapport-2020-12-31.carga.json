@@ -1,0 +1,353 @@
+{
+ "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2020-12-31.pdf",
+ "generado": "2026-10-19T17:54:42.500Z",
+ "frena": [],
+ "avisos": [],
+ "ejercicio": {
+  "clubId": "fredericia-dk",
+  "year": 2020,
+  "cierre": "2020-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Bruttofortjeneste",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 10.952864,
+    "disclosureLevel": "aggregated",
+    "_pag": 10,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Lønninger",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -8.798576,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 2,
+    "_conf": 0.88,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Pensioner",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.357736,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre omkostninger til social sikring",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.18591,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre personaleomkostninger",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.697424,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Af- og nedskrivninger af materielle anlægsaktiver",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.048686,
+    "disclosureLevel": "aggregated",
+    "_pag": 10,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "DKK",
+   "fxRef": "DKK@2020-12-31",
+   "sourceId": "fredericia-dk-aarsrapport-2020-12-31",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.169382,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Finansielle omkostninger",
+     "value": -0.169382
+    },
+    {
+     "label": "Skat af årets resultat",
+     "value": 0
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Bruttofortjeneste",
+     "lado": "revenue",
+     "importe": 10.952864,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 10.952864,
+   "officialTotalExpenses": 10.088332,
+   "officialPAT": 0.69515
+  },
+  "source": {
+   "id": "fredericia-dk-aarsrapport-2020-12-31",
+   "clubId": "fredericia-dk",
+   "title": "Fodbold Club Fredericia 1991 — aarsrapport-2020-12-31 (ejercicio 2020)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Dinamarca/FC Fredericia/aarsrapport-2020-12-31.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2020-12-31.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2020-12-31",
+  "anual": "calendario",
+  "confianza": "alta",
+  "evidencia": "ajuste manual (2026-10-19): el nombre del archivo es la fecha de cierre (aarsrapport-AAAA-MM-DD, ejercicios-nuevos.mjs); Pantallas 3, lote 103"
+ },
+ "clubId": "fredericia-dk",
+ "year": 2020,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2020-12-31.pdf",
+   "campo": "cierre",
+   "valor": "2020-12-31",
+   "linea": null,
+   "motivo": "el nombre del archivo es la fecha de cierre (aarsrapport-AAAA-MM-DD, ejercicios-nuevos.mjs); Pantallas 3, lote 103",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
+ "seleccion": {
+  "filas": 8,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Bruttofortjeneste",
+   "page": 10,
+   "native": 10.952864,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 10.952864,
+   "cat": "lump_football_operations",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 10.952864
+  },
+  {
+   "label": "Lønninger",
+   "page": 15,
+   "native": 8.798576,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 8.798576,
+   "cat": "wages_squad",
+   "conf": 0.88,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -8.798576
+  },
+  {
+   "label": "Pensioner",
+   "page": 15,
+   "native": 0.357736,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 0.357736,
+   "cat": "wages_squad",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.357736
+  },
+  {
+   "label": "Andre omkostninger til social sikring",
+   "page": 15,
+   "native": 0.18591,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 0.18591,
+   "cat": "wages_squad",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.18591
+  },
+  {
+   "label": "Andre personaleomkostninger",
+   "page": 15,
+   "native": 0.697424,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personaleomkostninger\")",
+   "signoFijo": 0.697424,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, media): Es parte de los costos de personal, que el balance danés no separa por sector; criterio del proyecto (cargas con el sueldo, nunca categoría propia): wages_squad. Con solo 24 empleados el grueso es plantel. [Fredericia .md L418-425 (Nota 2 Personaleomkostninger: Lønninger 8.798.576 + Pen]",
+   "destino": "expense",
+   "amountNative": -0.697424
+  },
+  {
+   "label": "Af- og nedskrivninger af materielle anlægsaktiver",
+   "page": 10,
+   "native": 0.048686,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.048686,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.048686
+  },
+  {
+   "label": "Finansielle omkostninger",
+   "page": null,
+   "native": -0.169382,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Skat af årets resultat",
+   "page": null,
+   "native": 0,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Personaleomkostninger\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 10.952864,
+  "expSum": -10.088332,
+  "officialTotalRevenue": 10.952864,
+  "officialTotalExpenses": 10.088332,
+  "officialPAT": 0.69515,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 0.69515,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 10.952864
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 10.088332
+  }
+ },
+ "liga": {
+  "valor": "dk-1division",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2020,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): el nombre del archivo es la fecha de cierre (aarsrapport-AAAA-MM-DD, ejercicios-nuevos.mjs); Pantallas 3, lote 103",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2020-12-31",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): el nombre del archivo es la fecha de cierre (aarsrapport-AAAA-MM-DD, ejercicios-nuevos.mjs); Pantallas 3, lote 103)",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "el .md no presenta estados consolidados (0 menciones de \"consolidado\")",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "DKK",
+   "fuente": "moneda de curso legal de Dinamarca (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "DKK@2020-12-31",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene DKK@2020-12-31 = 6.0638 (Cierre BCE al 31/12/2020, cruzando DKK/EUR (7,4409) × EUR/USD (1,2271) (1 DKK ≈ 0,1650 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "fredericia-dk-aarsrapport-2020-12-31",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "dk-1division",
+   "fuente": "data/club-leagues/dk.js ya tiene la fila",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 1,
+  "lineasGasto": 5,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

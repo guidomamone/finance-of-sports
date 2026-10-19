@@ -138,6 +138,37 @@ el catálogo todavía (un solo club-ejercicio no lo justifica, ver `data/club-le
 para el sentinel `'liga-no-catalogada'` y to-do 64c de `Admin/TODO.md`).
 ```
 
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Dinamarca/FC Fredericia/aarsrapport-2020-12-31.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Dinamarca/FC Fredericia/aarsrapport-2020-12-31.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Bruttofortjeneste | pág. 10, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Lønninger | pág. 15, Claude 0.88 |
+| 2 | Pensioner | pág. 15, Jev 0.98 |
+| 3 | Andre omkostninger til social sikring | pág. 15, Claude 0.85 |
+| 4 | Andre personaleomkostninger | pág. 15, precedente |
+| 5 | Af- og nedskrivninger af materielle anlægsaktiver | pág. 10, precedente |
+
+### Meta
+
+```text
+2020: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-19): cierre = 2020-12-31. el nombre del archivo es la fecha de cierre (aarsrapport-AAAA-MM-DD, ejercicios-nuevos.mjs); Pantallas 3, lote 103
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
 ## 2019
 
 ### Meta
@@ -180,4 +211,12 @@ _note (data/):_
 
 ```text
 Depositado en Erhvervsstyrelsen (registro mercantil danés). Auditor: PricewaterhouseCoopers, sin salvedades. Transcripción completa en Clubes/Dinamarca/FC Fredericia/aarsrapport-2019-12-31.md. Se eligió este ejercicio (no el 2024 originalmente sugerido) porque los ejercicios 2020 en adelante reportan desde "Bruttofortjeneste" sin desglosar Nettoomsætning — ver comentario de cabecera de data/dk/fredericia-dk-data.js. El club jugó en la 1. Division (2da categoría danesa, "Nordic Bet Ligaen" ese año), no en Superliga; recién ascendió a Superliga para la temporada 2025/26. Patrimonio neto negativo al cierre, con nota de going concern resuelta con un préstamo subordinado de DKK 2,0 M recibido en el propio ejercicio.
+```
+
+### fredericia-dk-aarsrapport-2020-12-31
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Dinamarca/FC Fredericia/aarsrapport-2020-12-31.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

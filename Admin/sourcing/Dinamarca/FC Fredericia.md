@@ -30,3 +30,5 @@ obligación de depósito en Dinamarca no depende del tamaño ni de la categoría
 ApS), solo de ser una sociedad de responsabilidad limitada.
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2020 desde `Clubes/Dinamarca/FC Fredericia/aarsrapport-2020-12-31.pdf` (sourceId `fredericia-dk-aarsrapport-2020-12-31`).

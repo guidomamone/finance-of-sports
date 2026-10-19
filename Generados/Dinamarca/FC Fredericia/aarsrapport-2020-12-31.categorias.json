@@ -1,0 +1,93 @@
+{
+ "md": "Clubes/Dinamarca/FC Fredericia/aarsrapport-2020-12-31.md",
+ "club": "fredericia-dk",
+ "year": 2020,
+ "generatedAt": "2026-10-19T17:19:27.981Z",
+ "rubrosHuella": "4f62640e66afa968b45b5f5215729d191947e9ed",
+ "jevHuella": "7774b9044fb63bf9a1b74f88052112e2a0d7dae3",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.0112248,
+ "rubros": [
+  {
+   "label": "Bruttofortjeneste",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Margen bruto",
+   "page": 10,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "lump_football_operations",
+   "confianza": 0.99
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "glosa": "Sueldos y salarios",
+   "page": 15,
+   "pendiente": true,
+   "jev": "wages_squad",
+   "jevConf": 0.88,
+   "escalon": 2,
+   "categoria": "wages_squad",
+   "confianza": 0.88,
+   "motivo": "Desglosa 'Personaleomkostninger', que el club carga como wages_squad; 'Pensioner' vecina también"
+  },
+  {
+   "label": "Pensioner",
+   "lado": "expense",
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "glosa": "Pensiones",
+   "page": 15,
+   "pendiente": false,
+   "ya": "wages_squad",
+   "escalon": 1,
+   "jevConf": 0.98,
+   "categoria": "wages_squad",
+   "confianza": 0.98
+  },
+  {
+   "label": "Andre omkostninger til social sikring",
+   "lado": "expense",
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "glosa": "Otros gastos de seguridad social",
+   "page": 15,
+   "pendiente": true,
+   "jev": "wages_squad",
+   "jevConf": 0.73,
+   "escalon": 2,
+   "categoria": "wages_squad",
+   "confianza": 0.85,
+   "motivo": "Parte de 'Personaleomkostninger' (wages_squad en el club); cargas sociales van con el sueldo"
+  },
+  {
+   "label": "Andre personaleomkostninger",
+   "lado": "expense",
+   "section": "nota que desglosa \"Personaleomkostninger\"",
+   "glosa": "Otros gastos de personal",
+   "page": 15,
+   "pendiente": true,
+   "jev": "other_expenses",
+   "jevConf": 0.48,
+   "escalon": 2,
+   "categoria": "wages_squad",
+   "confianza": 0.72,
+   "motivo": "Componente de 'Personaleomkostninger', convención del club wages_squad; podría ir a other_expenses"
+  },
+  {
+   "label": "Af- og nedskrivninger af materielle anlægsaktiver",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortización y deterioro del inmovilizado material",
+   "page": 10,
+   "pendiente": false,
+   "ya": "depreciation",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "depreciation",
+   "confianza": 1
+  }
+ ]
+}
