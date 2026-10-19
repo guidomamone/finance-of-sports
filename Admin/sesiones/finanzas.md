@@ -309,3 +309,20 @@
   ese aviso es normal con `--con`.
 
 ## Después del merge de Finanzas 4 (2026-10-19)
+
+### Qué cambió (para CHANGELOG)
+
+- To-do 282 (f): las 10 altas del lote 94 ya tienen línea de auditoría (0 balances sin línea; 1004 con línea), con las citas verificadas por
+  `tools/auditoria.mjs`. Commit 760e9b1837 (ASSET_V 1340).
+  - Sin salvedades (9): Viking 2025 (PwC AS), Vålerenga 2025 (BDO AS), Aalesund 2025 (Contabile AS), Sarpsborg 08 2025 (Ernst & Young AS),
+    Molde 2025 (Cedra Norge Rago AS), Basel 2021 (PwC AG), Luzern 2025 (Truvag Revisions AG, sobre la Konzernrechnung de FCL Holding),
+    St. Gallen 2025 (PwC AG) y Fredrikstad 2024 (Re-visjon AS, informe dentro del acta de la asamblea 2025). Ninguno marca incertidumbre
+    sobre la continuidad ni trae párrafos de énfasis.
+  - Go Ahead Eagles 2025: `falta_transcripcion`. El documento lista un "Accountantsrapport" pero no trae ninguna verklaring del auditor; sí
+    paga "Accountantskosten, onderzoek van de jaarrekening" (38.500), así que el informe existió. Se suma a los FALTA EN EL PDF (ahora 56).
+  - St. Gallen: el informe citado es el de FC St. Gallen AG; el sitio publica la cuenta consolidada con FC St. Gallen Event AG, que tiene su
+    propio informe (también bajado, sin citar). Queda anotado en la nota de la línea.
+
+### Qué queda (para TODO)
+
+- 282 a: Go Ahead Eagles 2025, buscar el informe del auditor de la Holding (el documento que tenemos no lo trae).
