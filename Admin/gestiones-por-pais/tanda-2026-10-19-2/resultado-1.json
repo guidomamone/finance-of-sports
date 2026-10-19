@@ -1,18 +1,18 @@
 {
-  "criterioPais": { "BR": "Se cargó a Wesley Couto, presidente (Diretor Presidente en el balance) y fundador del club: Amazonas FC es una asociación/club con presidente nombrado, y es quien firma el balance; no hay un dueño persona distinto." },
+  "criterioPais": { "BR": "Se cargó a Wesley Couto, presidente (Diretor Presidente en el balance): Amazonas FC es un club con presidente nombrado, y es quien firma el balance; no hay un dueño persona distinto." },
   "clubes": {
     "amazonas-br": {
       "gestiones": [
-        { "nombre": "Francisco Wesley Couto dos Santos", "corto": "Couto", "cargo": "Presidente", "desde": "2019-05-23", "hasta": null,
-          "fuente": "https://en.wikipedia.org/wiki/Amazonas_Futebol_Clube", "confirmada": false }
+        { "nombre": "Francisco Wesley Couto dos Santos", "corto": "Couto", "cargo": "Presidente", "desde": "2022-01-01", "hasta": null,
+          "fuente": "https://amazonas1.com.br/politicos-assumem-comando-de-clubes-de-futebol-no-amazonas/", "confirmada": true }
       ],
       "notas": {
-        "Francisco Wesley Couto dos Santos": "Firma el Balanço de 31/12/2024 como Diretor Presidente (Clubes/Brasil/Amazonas/balanco-patrimonial-2024.md:60-62, firma digital del 2025-08-04). Wikipedia dice que la fundación (2019-05-23) fue liderada por él y que es el presidente actual, pero NO da fecha de asunción: 2019-05-23 es la fecha de fundación del club, no una asunción confirmada, por eso confirmada:false. Sigue en el cargo al aprobarse el balance (agosto 2025), sin cambio de gestión entre el cierre y la firma."
+        "Francisco Wesley Couto dos Santos": "Portal AM1 (17-11-2024): 'Ele assumiu a presidência do Amazonas FC em 2022, sucedendo o vereador não reeleito Lissandro Breval (PP)'; la nota del 22-01-2024 del mismo portal dice que Breval 'deixou a diretoria do clube em 2022'. La fuente da solo el año: desde = 2022-01-01 (día y mes asumidos). Firma el Balanço de 31/12/2024 como Diretor Presidente (Clubes/Brasil/Amazonas/balanco-patrimonial-2024.md:60-62, firma digital del 2025-08-04), así que seguía al aprobarse el balance, sin cambio de gestión entre el cierre y la firma. Wikipedia (en) también lo da como presidente actual."
       },
-      "cubre": {},
+      "cubre": { "2024-12-31": "Francisco Wesley Couto dos Santos" },
       "dudas": [
-        "Ninguna fuente web consultada (Wikipedia en/pt, Diário do Pará, prensa) da la fecha de asunción de Wesley Couto como presidente ni afirma que lo sea desde la fundación (2019-05-23); solo dicen que es el presidente actual y que lideró la fundación. La gestión queda confirmada:false y el cierre 2024-12-31 sin cubrir. Es seguro que presidía el club al cierre 2024 (firma el balance como Diretor Presidente y la prensa lo nombra presidente en 2024, incidente con un jugador del Paysandu), pero falta una fuente con las fechas. Candidato a consulta al club o a su estatuto/ata de eleição.",
-        "En 2025 el club vendió 45% de la SAF a inversores norteamericanos con gestión administrativa a cargo de ellos desde septiembre 2025: puede haber cambio de cargo posterior al cierre; no relevante para 2024-12-31 pero conviene verificar si Couto sigue (hasta:null no confirmado)."
+        "La fecha exacta de asunción en 2022 (la fuente da solo el año).",
+        "En 2025 el club vendió el 45 % de la SAF a inversores norteamericanos, con gestión administrativa de ellos desde septiembre de 2025: puede haber un cambio de cargo posterior al cierre; no se verificó si Couto sigue (hasta:null no confirmado). No afecta el cierre 2024-12-31."
       ]
     }
   }

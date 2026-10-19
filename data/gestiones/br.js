@@ -225,4 +225,8 @@ Object.assign(window.CLUB_GESTIONES, {
     { nombre:'João Paulo Silva', corto:'João Paulo', cargo:'Presidente', desde:'2023-03-29', hasta:null,
       fuente:'https://en.wikipedia.org/wiki/2023_Cear%C3%A1_Sporting_Club_season', confirmada:true },
   ],
+  'amazonas-br': [
+    { nombre:'Francisco Wesley Couto dos Santos', corto:'Couto', cargo:'Presidente', desde:'2022-01-01', hasta:null,
+      fuente:'https://amazonas1.com.br/politicos-assumem-comando-de-clubes-de-futebol-no-amazonas/', confirmada:true },
+  ],
 });

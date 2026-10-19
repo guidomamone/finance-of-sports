@@ -1963,9 +1963,6 @@ Ni los balances ni una búsqueda web dan las fechas; el detalle de cada caso est
   29/4/2024 sujeto al CADE y a la concordancia de la Cruzeiro Associação (informativo-financeiro-2023.md:2101); el CADE aprobó el 12/6/2024
   (O Tempo). Cualquier fecha deja los cierres 2024 y 2025 con Lourenço, pero ninguna fuente da el cierre formal. — a quién preguntarle:
   Cruzeiro SAF.
-- **Amazonas FC, desde cuándo preside Weslley Couto** (tanda-2026-10-18, lote 5): firma como Diretor Presidente los balances 2022-2023 y
-  2024 (balanco-patrimonial-2024.md:60-61), pero ninguna fuente da la fecha de asunción; en 2024 estuvo suspendido un tiempo del cargo. —
-  a quién preguntarle: Amazonas FC (acta de elección o posse).
 - **Novorizontino, quién presidió desde la fundación (marzo de 2010) hasta Genilson da Rocha Santos (2012)** (tanda-2026-10-18, lote 2):
   el balance 2010 lo firma Alex Sandro Domingues Pereira como presidente de la diretoria executiva (balanco-2010.md:36-41), sin fuente con
   fechas. — a quién preguntarle: Grêmio Novorizontino.
