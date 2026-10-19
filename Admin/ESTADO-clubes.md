@@ -27,7 +27,7 @@ Todo ejercicio listado acá es REAL (sale de un documento oficial del club) y ci
 contra el total impreso de su propio documento — eso lo garantiza `auditAll()`, no
 esta lista. Un club sin datos reales no aparece.
 
-TOTAL: 312 clubes, 1090 ejercicios, 21 países.
+TOTAL: 312 clubes, 1091 ejercicios, 21 países.
 
 ARGENTINA (19)
   Almagro                        6 ejercicios (2017/2018 a 2022/2023), balance, ARS
@@ -62,7 +62,7 @@ BE (22)
   Gent                  1 ejercicio (2024/2025), balance, EUR
   Lierse SK             4 ejercicios (2021/2022 a 2024/2025), balance, EUR
   Lokeren-Temse         3 ejercicios (2022/2023 a 2024/2025), balance, EUR
-  Lommel SK             5 ejercicios (2017/2018, 2018/2019, 2019/2020, 2020/2021, 2024/2025), balance, EUR
+  Lommel SK             6 ejercicios (2017/2018, 2018/2019, 2019/2020, 2020/2021, 2021/2022, 2024/2025), balance, EUR
   Mechelen              1 ejercicio (2024/2025), balance, EUR
   OH Leuven             5 ejercicios (2018/2019, 2020/2021, 2022/2023, 2023/2024, 2024/2025), balance, EUR, sin deuda/caja
   Patro Eisden          7 ejercicios (2015/2016, 2016/2017, 2017/2018, 2018/2019, 2019/2020, 2023/2024, 2024/2025), balance, EUR
