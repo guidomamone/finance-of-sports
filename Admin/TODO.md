@@ -42,14 +42,14 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 165 c: altas de los países nuevos que faltan --> Onboarding 3
 * 195: gestiones (presidentes) sin fuente confirmada (casi todas esperan respuesta del club)
 * 283: Vålerenga y Aalesund: ya transcriptos; falta que decidas cómo se muestra la suma del AS y el FLI sin contar dos veces la transferencia
-* 273: completar a mano los ejercicios sin estadio o sponsor, y que generate-sponsors sume el contexto manual
+* 273: que generate-sponsors sume el contexto manual (los años viejos sin sponsor quedan en null) --> Pantallas 3
 
 **E. Pantallas**
 * 282: quién audita, lo que queda (que el pipeline exija la línea al dar de alta un club) --> Pipeline 4
 
 **E2. Distribución (depende de 246)**
 * 241: link dedicado, nivel 2: rutas reales, tarjeta al compartir, SEO (mockup con Design antes)
-* 252: ejercicios nuevos, lo que queda (onboardear los PDFs ya bajados, Instituto 2024-25 incluido; Alemania en enero de 2027: qué bajar ya está en las notas de Gladbach y Stuttgart)
+* 252: ejercicios nuevos, lo que queda (onboardear los PDFs ya bajados, Instituto 2024-25 incluido; Alemania en enero de 2027: qué bajar ya está en las notas de Gladbach y Stuttgart) --> Pantallas 3
 * 259: material de difusión (después de 241: el deck tiene que poder linkear)
 * 313: contenido para X e Instagram (después de 241 y 246; con el 259 y el 257)
 
@@ -212,8 +212,8 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    relacionada (con el criterio de socios, contaría); hoy la deuda es solo "Empréstimos".
 
 273. ESTADIO Y SPONSOR: LO QUE QUEDA. Cerrado salvo un punto (Guido, 2026-10-19: los ejercicios ya cargados sin sponsor quedan en null
-   y no se vuelven a buscar). La compuerta ya está nombrada en la skill de onboarding (2026-10-19). Falta: completar a mano
-   los ejercicios sin estadio o sponsor y que `generate-sponsors.js` sume `tools/contexto-manual.json`.
+   y no se vuelven a buscar). La compuerta ya está nombrada en la skill de onboarding (2026-10-19). Falta: que
+   `generate-sponsors.js` sume `tools/contexto-manual.json` (los años viejos sin sponsor no se completan).
 282. QUIÉN AUDITA: LO QUE QUEDA (pedido de Guido, 2026-10-17). Los 1004 balances tienen línea, la tarjeta de Finanzas está (con el
    "alcance" de una revisión limitada, procedimientos acordados, propósito especial o cuentas del grupo). Falta: (a) 56 informes del auditor
    que no están en ningún PDF nuestro (`node tools/auditoria.mjs --pendientes`, "FALTA EN EL PDF"): casi todos sin canal público, son candidatos a mail (sin pedir: Guido no lo quiere ahora);
