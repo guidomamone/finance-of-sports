@@ -230,7 +230,9 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   // (to-do 298 ah, Guido 2026-10-19) COBERTURA DE PÉRDIDAS DE UN SOCIO O DEL HOLDING: no es un ingreso operativo. Una fila SIN LADO cuyo rótulo dice "cobertura de pérdidas"
   // ("Verlustabdeckung FC Basel Marketing AG" +470.000 entre el "Ergebnis vor Verlustabdeckung" y el "Ergebnis vor Steuern") entraba como ingreso por su signo (lectura 3) y
   // los ingresos no daban el "Total Ertrag" impreso. Ahora cuenta en el resultado, como el financiero, y queda afuera de los ingresos y de los gastos.
-  for (const f of estado) if (f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f.M) && f.M && COBERTURA_PERDIDAS_RE.test(String(f.etiqueta || ''))) { f.lado = 'financiero'; notas.push(`"${f.etiqueta}" (L${f.linea}) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos`); }
+  // (to-do 324 e) También si el año actual es 0 y solo el anterior tiene importe (Basel 2020: "Defizitgarantie FC Basel Holding AG" 0,00 | 18,7 M): la columna del año anterior
+  // que se compara con el documento vecino la contaba como ingreso.
+  for (const f of estado) if (f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f.M) && (f.M || f.A) && COBERTURA_PERDIDAS_RE.test(String(f.etiqueta || ''))) { f.lado = 'financiero'; notas.push(`"${f.etiqueta}" (L${f.linea}) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos`); }
 
   // 2. notas: renglón del estado reemplazado por su desglose si cierra (escala deducida del cierre)
   // DESGLOSES ANIDADOS (Versión 335, diseño aprobado por Guido): una hoja de una nota puede, a su vez, estar desglosada por otro cuadro (filas
