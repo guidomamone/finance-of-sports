@@ -31,7 +31,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 246: ids estables con mapa de alias (antes de los links compartibles: cambiar un id después rompe los links ya compartidos); va solo, con todo mergeado y sin worktrees abiertos
 
 **C. Abaratar antes del onboarding grande**
-* 298: mejoras de script de Estonia y Bélgica (ad, ae y af, de Bélgica; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
+* 298: mejoras de script de Estonia y Bélgica (ad, ae y af, de Bélgica; ag, el signo del financiero de Sarpsborg 2023; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
 * 308: los bonos convertibles en la skill
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
@@ -40,7 +40,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 261: Reino Unido: 118 transcripciones validadas; sigue el lote de carga y la cola por Mistral --> Finanzas 5
 * 165 c: altas de los países nuevos que faltan --> Onboarding 3
 * 195: gestiones (presidentes) sin fuente confirmada (Fortaleza 2025: ¿CEO o presidente del consejo? lo decidís vos)
-* 284: Fredrikstad 2012 (falta un sponsor con fuente) y Sarpsborg 2023-2024 (ya se pueden volver a correr) --> Onboarding 3
+* 284: Fredrikstad 2012 (falta un sponsor con fuente) --> Onboarding 3
 * 283: Vålerenga y Aalesund: ya transcriptos; falta que decidas cómo se muestra la suma del AS y el FLI sin contar dos veces la transferencia
 * 273: nombrar la compuerta de estadio y sponsor en la skill de onboarding (con tu ok)
 
@@ -219,7 +219,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    fos-onboarding (algunos sin mirar las imágenes): validarlos con `pipeline.mjs --lista Admin/lotes/transcribir-valerenga.txt` o rehacerlos con Mistral.
 284. FREDRIKSTAD Y SARPSBORG 08: EL CLUB ES EL FLI (pedido de Guido, 2026-10-17). Fredrikstad: FLI 2013-2018 y 2024 cargados; falta
    2012 (la cola está contestada, pero la Tippeligaen pide sponsor: falta uno con fuente en `tools/contexto-manual.json`). Sarpsborg 08:
-   FLI 2012 y 2014-2022 y 2025 cargados; 2023 y 2024 ya se pueden volver a correr (298 ab y ac hechas); 2008 sin liga confirmada. Pardubice: no darle el alta con lo que hay (es FK Junior z.s.); el sourcing de la a.s.
+   FLI 2012 y 2014-2025 cargados; 2008 sin liga confirmada. Pardubice: no darle el alta con lo que hay (es FK Junior z.s.); el sourcing de la a.s.
    lo hace Guido.
 287. QUE NO SE REPITA LA LIMPIEZA (cierre de onboarding). `audit.js` `carpeta-doble` ya está (P2): dio 25 hallazgos reales para mirar
    contra el documento (Hearts en Kelty Hearts, Fjölnir en ÍR; carpetas dobles de NEC, RFS, Thun, St. Gallen y Omonia; informes de liga
@@ -250,6 +250,9 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    `Naam : VOETBALCLUB LOMMEL SK` en cada `jaarrekening-AAAA-06-30-individual.md`. ae) una Brutomarge negativa sin Omzet (Lierse SK
    2019-2021, Patro Eisden 2021-2023) frena con "ninguna fila de ingresos con categoría aceptable". af) listas de las ligas amateur belgas
    de esos años para el estadio (Lokeren-Temse 2022, Patro Eisden 2013-2015).
+   ag) Sarpsborg 08 2023 (L136-145 de `aarsregnskap-fotballforening-fli-2023.md`): ingresos y costos financieros sumados con el mismo
+   signo porque "Sum finanskostnader" trae una reversión negativa (−136.202): netInterest 2,63 M en vez de 8.446 (mismo defecto que la t#5,
+   disparador nuevo). Hoy lo tapa un ajuste `resultado-final`; con la mejora, sacarlo y comprobar que da 0,008446.
    z2) Westerlo 2015: 18 meses por cambio de cierre (no es primer ejercicio), sigue frenado; regla a decidir con Guido. t2) los años 2025 belgas ya cargados tienen ajustes `fila` y el escalón NBB no corre en
    ellos: Patro Eisden 2025 (ingresos +1.810 por el waarvan 76A, gastos +4.012 por el 631/4), Lommel SK 2025 (gastos +172, el 609) y Lommel SK
    2018 (−182 de financiero) cerraron por tolerancia con errores chicos: decidir con Guido si se corrigen (escalón: correr el NBB también
