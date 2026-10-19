@@ -271,6 +271,11 @@
     individual); Sarpsborg Fotball Invest AS `vinculada` (20 % de los derechos económicos del plantel, sin empleados).
   - FC Basel 1893 AG 2021 (individual): FC Basel Holding AG 75 % y Verein FC Basel 1893 25 %; Stadiondienst AG 100 % (fuera de las cuentas);
     David Degen 100 % de la holding desde mayo de 2021.
+  - Segunda tanda, cuando la principal publicó los otros tres (ASSET_V 1335): FCL Holding AG 2025 (consolidado; FC Luzern-Innerschweiz AG
+    86,34 % en 2024 y 71,45 % en 2025, swissporarena events ag 100 % solo en 2024, Stadion Luzern AG 40 % fuera del consolidado); FC
+    St.Gallen AG 2025 (consolidado con FC St.Gallen Event AG, que tiene 49,6 % de la AG: el informe no dice quién controla a quién);
+    Fredrikstad Fotballklubb 2024 (individual, el FLI) con Fredrikstad Fotballinvest AS `vinculada`. Registro: 60 clubes, 265 entidades,
+    365 relaciones.
   - Criterio que apliqué (para CONVENCIONES-DATOS si Guido lo confirma): de los accionistas se registran los de 5 % o más y el club asociación.
     `desde` es el primer ejercicio que cita el documento (los demás años de cada club no están cargados).
 - To-do 282, Lazio 2006: el informe de Deloitte & Touche sobre el bilancio d'esercizio al 30-06-2006, recuperado de la captura de Wayback
@@ -291,13 +296,12 @@
 - 282, Hamburgo 2024 (2023-24): el Bundesanzeiger no lo tiene (lista Jahresabschlüsse hasta 2021-22, publicado el 27-07-2023, y después
   solo la Anleihe). Queda el Unternehmensregister: Guido tiene que resolver el captcha de cada publicación (la KGaA, HRB 191603, o la AG
   vieja, HRB 47576).
-- 282 (f): 10 balances nuevos sin línea de auditoría (los 7 del 294, Fredrikstad 2024, Luzern 2025 y St. Gallen 2025: altas del lote 94).
-- Fredrikstad, Luzern y St. Gallen para el 294 cuando onboarding los publique (el borrador tiene la entidad de cada uno); Pardubice no se da de alta.
-- 281 y 294: nada más de lo que se les pidió a esta sesión.
+- 282 (f): 10 balances nuevos sin línea de auditoría (las 10 altas del lote 94: `node tools/auditoria.mjs --pendientes`).
+- 294 queda cerrado: Pardubice no se da de alta (decisión de la principal).
 
 ### Qué deja de ser cierto en ESTADO
 
-- El registro de entidades tiene 57 clubes con estructura (no 50) y 9 grupos.
+- El registro de entidades tiene 60 clubes con estructura (no 50) y 9 grupos.
 
 ### Gotcha
 

@@ -56,6 +56,60 @@ Object.assign(window.CLUB_ENTIDADES, {
    }
   ]
  },
+ "fredrikstad-no": {
+  "cargas": [
+   {
+    "anio": 2024,
+    "entidad": "fredrikstad-fotballklubb",
+    "perimetro": "individual",
+    "fuente": {
+     "md": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.md",
+     "linea": 1170
+    }
+   }
+  ],
+  "entidades": {
+   "fredrikstad-fotballinvest-as": {
+    "nombre": "Fredrikstad Fotballinvest AS",
+    "forma": "sociedad",
+    "pais": "NO",
+    "que": {
+     "es": "Vehículo de inversión sin empleados, dueño de derechos de jugadores del club; no es el club (sus cuentas no se cargan)",
+     "en": "Investment vehicle with no employees that owns players' rights at the club; not the club (its accounts are not loaded)"
+    },
+    "fuente": {
+     "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2023.md",
+     "linea": 458
+    }
+   },
+   "fredrikstad-fotballklubb": {
+    "nombre": "Fredrikstad Fotballklubb",
+    "forma": "asociacion",
+    "pais": "NO",
+    "clubId": "fredrikstad-no",
+    "que": {
+     "es": "El club (FLI): sueldos y operación",
+     "en": "The club (association): payroll and operations"
+    },
+    "fuente": {
+     "md": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.md",
+     "linea": 5
+    }
+   }
+  },
+  "relaciones": [
+   {
+    "de": "fredrikstad-fotballinvest-as",
+    "a": "fredrikstad-fotballklubb",
+    "rel": "vinculada",
+    "desde": 2023,
+    "fuente": {
+     "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2023.md",
+     "linea": 458
+    }
+   }
+  ]
+ },
  "molde-no": {
   "cargas": [
    {
