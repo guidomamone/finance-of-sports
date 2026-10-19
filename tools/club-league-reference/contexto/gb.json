@@ -1514,6 +1514,262 @@
   }
  },
  "gb-championship": {
+  "2019": {
+   "pagina": "2018–19 EFL Championship",
+   "lang": "en",
+   "revid": 1372863678,
+   "estadios": [
+    [
+     {
+      "club": "Aston Villa",
+      "estadio": "Villa Park",
+      "capacidad": 42790
+     },
+     {
+      "club": "Birmingham City",
+      "estadio": "St Andrew's",
+      "capacidad": 30015
+     },
+     {
+      "club": "Blackburn Rovers",
+      "estadio": "Ewood Park",
+      "capacidad": 31367
+     },
+     {
+      "club": "Bolton Wanderers",
+      "estadio": "University of Bolton Stadium",
+      "capacidad": 28723
+     },
+     {
+      "club": "Brentford",
+      "estadio": "Griffin Park",
+      "capacidad": 12300
+     },
+     {
+      "club": "Bristol City",
+      "estadio": "Ashton Gate",
+      "capacidad": 27000
+     },
+     {
+      "club": "Derby County",
+      "estadio": "Pride Park Stadium",
+      "capacidad": 33600
+     },
+     {
+      "club": "Hull City",
+      "estadio": "KCOM Stadium",
+      "capacidad": 25586
+     },
+     {
+      "club": "Ipswich Town",
+      "estadio": "Portman Road",
+      "capacidad": 30300
+     },
+     {
+      "club": "Leeds United",
+      "estadio": "Elland Road",
+      "capacidad": 37890
+     },
+     {
+      "club": "Middlesbrough",
+      "estadio": "Riverside Stadium",
+      "capacidad": 34000
+     },
+     {
+      "club": "Millwall",
+      "estadio": "The Den",
+      "capacidad": 20146
+     },
+     {
+      "club": "Norwich City",
+      "estadio": "Carrow Road",
+      "capacidad": 27244
+     },
+     {
+      "club": "Nottingham Forest",
+      "estadio": "City Ground",
+      "capacidad": 30445
+     },
+     {
+      "club": "Preston North End",
+      "estadio": "Deepdale",
+      "capacidad": 23408
+     },
+     {
+      "club": "Queens Park Rangers",
+      "estadio": "Loftus Road",
+      "capacidad": 18439
+     },
+     {
+      "club": "Reading",
+      "estadio": "Madejski Stadium",
+      "capacidad": 24161
+     },
+     {
+      "club": "Rotherham United",
+      "estadio": "New York Stadium",
+      "capacidad": 12021
+     },
+     {
+      "club": "Sheffield United",
+      "estadio": "Bramall Lane",
+      "capacidad": 32702
+     },
+     {
+      "club": "Sheffield Wednesday",
+      "estadio": "Hillsborough Stadium",
+      "capacidad": 39752
+     },
+     {
+      "club": "Stoke City",
+      "estadio": "Bet365 Stadium",
+      "capacidad": 30089
+     },
+     {
+      "club": "Swansea City",
+      "estadio": "Liberty Stadium",
+      "capacidad": 21088
+     },
+     {
+      "club": "West Bromwich Albion",
+      "estadio": "The Hawthorns",
+      "capacidad": 26850
+     },
+     {
+      "club": "Wigan Athletic",
+      "estadio": "DW Stadium",
+      "capacidad": 25133
+     }
+    ]
+   ],
+   "kits": [
+    {
+     "soloActual": false,
+     "filas": [
+      {
+       "club": "Aston Villa",
+       "sponsor": "32Red",
+       "marca": "Luke Sport"
+      },
+      {
+       "club": "Birmingham City",
+       "sponsor": "888sport",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Blackburn Rovers",
+       "sponsor": "10bet",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Bolton Wanderers",
+       "sponsor": "Betfred",
+       "marca": "Macron"
+      },
+      {
+       "club": "Brentford",
+       "sponsor": "LeoVegas",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Bristol City",
+       "sponsor": "Dunder",
+       "marca": "Avon"
+      },
+      {
+       "club": "Derby County",
+       "sponsor": "32Red",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Hull City",
+       "sponsor": "SportPesa",
+       "marca": "Umbro"
+      },
+      {
+       "club": "Ipswich Town",
+       "sponsor": "Magical Vegas",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Leeds United",
+       "sponsor": "32Red",
+       "marca": "Kappa"
+      },
+      {
+       "club": "Middlesbrough",
+       "sponsor": "32Red",
+       "marca": "Hummel"
+      },
+      {
+       "club": "Millwall",
+       "sponsor": "TW Drainage",
+       "marca": "Macron"
+      },
+      {
+       "club": "Norwich City",
+       "sponsor": "LeoVegas",
+       "marca": "Erreà"
+      },
+      {
+       "club": "Nottingham Forest",
+       "sponsor": "BetBright",
+       "marca": "Macron"
+      },
+      {
+       "club": "Preston North End",
+       "sponsor": "32Red",
+       "marca": "Nike"
+      },
+      {
+       "club": "Queens Park Rangers",
+       "sponsor": "Royal Panda",
+       "marca": "Erreà"
+      },
+      {
+       "club": "Reading",
+       "sponsor": "Carabao",
+       "marca": "Puma"
+      },
+      {
+       "club": "Rotherham United",
+       "sponsor": "Hodge Clemco",
+       "marca": "Puma"
+      },
+      {
+       "club": "Sheffield United",
+       "sponsor": "Ramsdens Currency",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Sheffield Wednesday",
+       "sponsor": "Chansiri",
+       "marca": "Elev8"
+      },
+      {
+       "club": "Stoke City",
+       "sponsor": "bet365",
+       "marca": "Macron"
+      },
+      {
+       "club": "Swansea City",
+       "sponsor": "Bet UK",
+       "marca": "Joma"
+      },
+      {
+       "club": "West Bromwich Albion",
+       "sponsor": "Ideal Boilers",
+       "marca": "Puma"
+      },
+      {
+       "club": "Wigan Athletic",
+       "sponsor": "DW Sports Fitness",
+       "marca": "Puma"
+      }
+     ]
+    }
+   ]
+  },
   "2022": {
    "pagina": "2021–22 EFL Championship",
    "lang": "en",
