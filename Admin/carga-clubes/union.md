@@ -145,6 +145,8 @@ _note (data/):_
 PDF oficial (52 páginas, escaneado sin capa de texto, transcripto vía OCR). Versión "Rectificativa" (corregida), firmada 4/3/2024. SUPERÁVIT FINAL real: $190.408.914 ARS. El Anexo IV (Gastos) SÍ tiene columnas por departamento razonablemente separables — verificado que sus 23 rubros suman exacto contra el Total de Gastos Ordinarios antes de cargar. No se encontró página de Estado de Situación Patrimonial en este escaneo — grossDebt/cash sin cargar. Convertido a USD con $124 (Anexo V, lado Activo/Créditos). Ver data/ar/union-data.js.
 ```
 
+Transcripción de este documento: `Clubes/Argentina/Union/memoria-y-balance-116.md`.
+
 ### union-memoria-y-balance-117
 
 _note (data/):_
@@ -153,6 +155,8 @@ _note (data/):_
 PDF oficial (63 páginas, escaneado sin capa de texto, transcripto vía OCR). Versión "Rectificativa" (corregida), firmada 4/3/2024. SUPERÁVIT FINAL real: $893.901.287 ARS. Anexo IV verificado (24 rubros suman exacto contra el Total de Gastos Ordinarios). No se encontró página de Estado de Situación Patrimonial — grossDebt/cash sin cargar. Convertido a USD con $255 (Anexo V, lado Activo/Créditos). Ver data/ar/union-data.js.
 ```
 
+Transcripción de este documento: `Clubes/Argentina/Union/memoria-y-balance-117.md`.
+
 ### union-estados-contables-118-2023-24
 
 _note (data/):_
@@ -160,6 +164,8 @@ _note (data/):_
 ```text
 PDF oficial (53 páginas, escaneado sin capa de texto, transcripto vía OCR), firmado 31/10/2024. SUPERÁVIT FINAL real: $1.166.322.977 ARS. A diferencia de 116/117, este archivo NO incluye el Anexo IV de detalle de Gastos por rubro — se cargó a nivel de las 6 categorías agregadas del Estado de Recursos y Gastos, con la excepción de "Amortizaciones" que se pudo partir en 2 cruzando contra el Anexo II (Activos Intangibles). No se encontró página de Estado de Situación Patrimonial — grossDebt/cash sin cargar. Convertido a USD con $890,50 (Anexo V, lado Activo/Créditos). Ver data/ar/union-data.js.
 ```
+
+Transcripción de este documento: `Clubes/Argentina/Union/estados-contables-118-2023-2024.md`.
 
 ### union-memoria-y-balance-119
 
