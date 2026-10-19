@@ -40,7 +40,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'burnley-gb': {
     2022: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"Spreadex Sports","marca":"Umbro","temporada":"2021–22 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376972129"},
-    2023: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"Classic Football Shirts (Home & Third) EMA Equity Partners (Away)","marca":"Umbro","temporada":"2022–23 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376810302"},
+    2023: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"Classic Football Shirts (Home & Third) EMA Equity Partners (Away)","marca":"Umbro","temporada":"2022–23 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1376677138","fuenteManual":"https://en.wikipedia.org/w/index.php?oldid=1376810302","manual":["estadio","capacidad","sponsor","marca"]},
     2024: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"W88","marca":"Umbro","temporada":"2023–24 Premier League","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377546063"},
     2025: {"estadio":"Turf Moor","capacidad":21944,"sponsor":"96.com","marca":"Castore","temporada":"2024–25 EFL Championship","fuente":"https://en.wikipedia.org/w/index.php?oldid=1373970605"},
   },

@@ -138,6 +138,9 @@ window.RANKINGS["gb-premierleague"] = {
       { id:"brentford-gb", revenue:223.343, reportType:"official_balance_sheet",
         sourceId:"brentford-gb-group-accounts-2022-23",
         mix:[["Comercial / Sponsors",24.036],["Estadio",14.303],["Televisión",171.861],["Venta de Jugadores",11.759],["Otros ingresos",1.383]] },
+      { id:"burnley-gb", revenue:99.287, reportType:"official_balance_sheet",
+        sourceId:"burnley-gb-holdings-group-accounts-2022-23",
+        mix:[["Comercial / Sponsors",3.633],["Estadio",14.237],["Televisión",61.501],["Venta de Jugadores",14.663],["Otros ingresos",5.255]] },
     ],
   },
   2022: {

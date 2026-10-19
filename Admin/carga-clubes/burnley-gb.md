@@ -132,6 +132,48 @@ grossDebt = Note 18 "Loans and overdrafts", total (Bank loans 92.190 + Other loa
 cash = Cash at bank and in hand.
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Burnley/burnley-holdings-group-accounts-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Match income | pág. 31, precedente |
+| 2 | Television rights | pág. 31, precedente |
+| 3 | Catering sales | pág. 31, precedente |
+| 4 | Other commercial activities | pág. 31, precedente |
+| 5 | Retail sales | pág. 31, precedente |
+| 6 | Other operating income | pág. 15, Jev 0.99 |
+| 7 | Profit on disposal of player registrations | pág. 15, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Wages and salaries | pág. 32, Claude 0.92 |
+| 2 | Social security costs | pág. 32, Jev 0.92 |
+| 3 | Cost of defined contribution scheme | pág. 32, Claude 0.88 |
+| 4 | Depreciation | pág. 15, precedente |
+| 5 | Other operating expenses | pág. 15, Jev 1 |
+| 6 | Amortisation of player registrations | pág. 15, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2023–24 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Burnley".
+```
+
 ## Fuentes
 
 ### burnley-gb-holdings-group-accounts-2024
@@ -148,6 +190,14 @@ _note (data/):_
 
 ```text
 PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/Burnley/burnley-fc-holdings-group-accounts-2024-25.md. Cuentas consolidadas del grupo. Mismo gotcha de fx que el ejercicio 2024: fxRef apunta a FX_CLOSE (GBP@2025-07-31, agregada en esta sesión, cierre BCE al 31/7/2025).
+```
+
+### burnley-gb-holdings-group-accounts-2022-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
 
 ## Otros

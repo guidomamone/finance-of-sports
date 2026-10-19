@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2021-22.pdf",
  "md": "Clubes/Inglaterra/Burnley/burnley-holdings-group-accounts-2021-22.md",
- "generado": "2026-10-19T17:24:31.576Z",
- "estado": "ok",
+ "generado": "2026-10-19T17:46:34.536Z",
+ "estado": "cola",
  "clubId": "burnley-gb",
  "year": 2022,
  "escala": {
@@ -12,28 +12,25 @@
   "de": null
  },
  "ajustes": null,
- "cola": [],
+ "cola": [
+  "c9ac0bf"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
    "ok": null,
-   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+   "detalle": "el documento no lo imprime"
   },
   {
    "nombre": "total de gastos",
    "ok": null,
-   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+   "detalle": "el documento no lo imprime"
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
    "dif": 1.0658141036401503e-14
-  },
-  {
-   "nombre": "lectura",
-   "ok": true,
-   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
   },
   {
    "nombre": "documento del año 2023",
@@ -47,13 +44,10 @@
   }
  ],
  "notas": [
-  "escalón \"nota exacta en la lectura 5\": \"Turnover\" (L455) se abre en las 5 filas de su nota, que suman exacto el renglón",
-  "escalón \"nota exacta en la lectura 5\": \"Staff costs\" (L458) se abre en las 3 filas de su nota, que suman exacto el renglón",
-  "la lectura base no cerraba; cerró con la lectura 5",
-  "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en burnley-holdings-group-accounts-2022-23.pdf",
-  "duda de localizar que no afecta la carga: b4 separa por operación y traspasos; las columnas parciales suman al total.",
+  "duda de localizar confirmada por las sumas (columna, \"-\"): ¿Se cargan del estado b4 solo las columnas 'Total 2022 £000' y 'Total 2021 £000', ignorando las columnas 'Operations excluding player trading' y 'Player trading'?",
   "duda de localizar ya contestada para el club (perimetro, \"Wages and salaries\"): aceptar, en burnley-holdings-group-accounts-2021-22.pdf",
-  "duda de extraer ya contestada para el club (fila-ilegible, \"Other operating expenses\"): aceptar, en burnley-holdings-group-accounts-2021-22.pdf"
+  "duda de extraer que no afecta la carga: La nota presenta el cargo como positivo y el estado como negativo; es convención de signo.",
+  "duda de extraer que no afecta la carga: Ningún bloque desglosa los 19,130 de L460."
  ],
  "reintentar": null,
  "reintentado": false,
@@ -115,7 +109,7 @@
    "M": 1.232,
    "pagina": 15,
    "linea": 457,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Profit on disposal of player registrations",
@@ -123,7 +117,7 @@
    "M": 54.719,
    "pagina": 15,
    "linea": 463,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Wages and salaries",
@@ -155,7 +149,7 @@
    "M": 2.37,
    "pagina": 15,
    "linea": 459,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Other operating expenses",
@@ -163,7 +157,7 @@
    "M": 19.13,
    "pagina": 15,
    "linea": 460,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   },
   {
    "etiqueta": "Amortisation of player registrations",
@@ -171,7 +165,7 @@
    "M": 22.703,
    "pagina": 15,
    "linea": 462,
-   "origen": "estado (lectura 5: hoja)"
+   "origen": "estado"
   }
  ],
  "signosCarga": {
