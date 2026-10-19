@@ -143,6 +143,39 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 tools/cargar.mjs (2026-10-19): be-challengerproleague, verificado contra roster cacheado de "2023–24 Challenger Pro League" (tools/club-league-reference/be.json), coincidencia exacta "Patro Eisden Maasmechelen".
 ```
 
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Bélgica/Patro Eisden/jaarrekening-2021-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/Patro Eisden/jaarrekening-2021-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: -; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Brutomarge (+)/(-) | pág. 7, precedente |
+| 2 | Bezoldigingen, sociale lasten en pensioenen (+)/(-) | pág. 7, precedente |
+| 3 | Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) | pág. 7, precedente |
+| 4 | Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-) | pág. 7, precedente |
+| 5 | Andere bedrijfskosten | pág. 7, precedente |
+| 6 | Niet-recurrente bedrijfskosten | pág. 7, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): be-div1amateur, verificado contra roster cacheado de "2020–21 Belgian National Division 1" (tools/club-league-reference/be.json), coincidencia exacta "Patro Eisden Maasmechelen".
+```
+
 ## 2020
 
 ### Ingresos
@@ -386,4 +419,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Patro Eisden/jaarrekening-2024-06-30-individual-correction.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### patroeisden-be-jaarrekening-2021-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Patro Eisden/jaarrekening-2021-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

@@ -22,6 +22,8 @@ const patroeisdenbeRevenueLinesByYear = {
   2024: [
     { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations', amountNative:3.068851, disclosureLevel:'aggregated' },
   ],
+  2021: [
+  ],
 };
 const patroeisdenbeExpenseLinesByYear = {
   2025: [
@@ -82,6 +84,14 @@ const patroeisdenbeExpenseLinesByYear = {
     { rawLabel:'Niet-recurrente bedrijfskosten', normalizedCategory:'exceptional_items', amountNative:-0.075431, disclosureLevel:'aggregated' },
     { rawLabel:'Afschrijvingen immateriële vaste activa (spelers)', normalizedCategory:'player_amortisation', amountNative:-0.061083, disclosureLevel:'aggregated' },
     { rawLabel:'Afschrijvingen materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.068401, disclosureLevel:'aggregated' },
+  ],
+  2021: [
+    { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations_expense', amountNative:-0.140857, disclosureLevel:'aggregated' },
+    { rawLabel:'Bezoldigingen, sociale lasten en pensioenen (+)/(-)', normalizedCategory:'wages_squad', amountNative:-0.362273, disclosureLevel:'aggregated' },
+    { rawLabel:'Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)', normalizedCategory:'other_expenses', amountNative:-0.015368, disclosureLevel:'aggregated' },
+    { rawLabel:'Voorzieningen voor risico\'s en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)', normalizedCategory:'exceptional_items', amountNative:-0.001573, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.022966, disclosureLevel:'aggregated' },
+    { rawLabel:'Niet-recurrente bedrijfskosten', normalizedCategory:'exceptional_items', amountNative:-0.005053, disclosureLevel:'aggregated' },
   ],
 };
 const patroeisdenbeFiscalYearMeta = {
@@ -208,6 +218,24 @@ const patroeisdenbeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:3.068851, officialTotalExpenses:5.957912, officialPAT:-2.80991,
   },
+  2021: {
+    currency:'EUR', fxRef:'EUR@2021-06-30',
+    sourceId:'patroeisden-be-jaarrekening-2021-06-30-individual',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.031228, tax:-0.002711,
+    extraRows: [
+      {label:'Recurrente financiële opbrengsten', value:0.000012},
+      {label:'Recurrente financiële kosten', value:-0.03124},
+      {label:'Belastingen op het resultaat (+)/(-)', value:-0.002711},
+    ],
+    sinDesglose: [
+      {renglon:'Brutomarge (+)/(-)', lado:'expense', importe:0.140857, motivo:'precedente del país: 1 clubes (Lierse SK), titulo:bedrijfsopbrengsten en bedrijfskosten · Claude 2026-10-19 (subagente Sonnet, revisado)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0, officialTotalExpenses:0.54809, officialPAT:-0.582029,
+  },
 };
 const patroeisdenbePresupuestoOverlayByYear = {};
 
@@ -257,6 +285,11 @@ Object.assign(sources, {
   'patroeisden-be-jaarrekening-2024-06-30-individual-correction': {
     id:'patroeisden-be-jaarrekening-2024-06-30-individual-correction', clubId:'patroeisden-be',
     title:'Patro Eisden Maasmechelen VZW — jaarrekening-2024-06-30-individual-correction (ejercicio 2024)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'patroeisden-be-jaarrekening-2021-06-30-individual': {
+    id:'patroeisden-be-jaarrekening-2021-06-30-individual', clubId:'patroeisden-be',
+    title:'Patro Eisden Maasmechelen VZW — jaarrekening-2021-06-30-individual (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

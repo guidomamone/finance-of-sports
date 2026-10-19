@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2022-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2022-06-30-individual.md",
- "generado": "2026-10-19T14:54:29.266Z",
- "estado": "ok",
+ "generado": "2026-10-19T16:25:20.731Z",
+ "estado": "cola",
  "clubId": "patroeisden-be",
  "year": 2022,
  "escala": {
@@ -12,7 +12,9 @@
   "de": null
  },
  "ajustes": null,
- "cola": [],
+ "cola": [
+  "7c6165f"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -59,11 +61,12 @@
  "notas": [
   "escalón \"códigos NBB\": el estado se lee por sus códigos (L212-L235, esquema abreviado); cierran exacto todos sus totales impresos",
   "la lectura base no cerraba; cerró con la lectura 4",
-  "duda de localizar que no afecta la carga: b28 no desglosa renglones del estado del ejercicio: muestra el impacto en el resultado del ejercicio anterior y tiene una fila ilegible (640/83).",
+  "duda de localizar que no afecta la carga: b28 (pág. 22) muestra importes por código contable de ajustes de ejercicios previos, no desglose de renglones del estado.",
+  "duda de extraer que no afecta la carga: El esquema abreviado belga presenta solo el margen bruto (L212) y no hay notas de ingresos que desglosen Televisión o Estadio.",
   "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 0.768543,
