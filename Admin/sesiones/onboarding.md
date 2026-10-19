@@ -85,3 +85,21 @@ Rama `onboarding`, sin push. Último commit al escribir esto: ver `git log`.
 - **Mejoras de script (de los subagentes):** la columna del año anterior invierte el signo de "Ertragsminderungen" y de "Resultaat vergoedingsommen"; suma el subtotal "Erträge netto" cuando el documento lo imprime.
 - **Go Ahead Eagles 2021 y 2022:** frenan por estadio/sponsor (compuerta 273); la Eerste Divisie ya alcanza el estadio, pero falta la liga de esos años en `data/club-leagues/nl.js` (Go Ahead Eagles estuvo en la Eerste Divisie 2020-21 y 2021-22).
 - **Cola del lote 101:** 102 preguntas nuevas tras la segunda corrida (16 años en verificar, 11 en categorías); sin contestar.
+
+## Lote 101, segunda tanda (2026-10-19)
+
+### Qué cambió
+- Escritos: Luzern 2019 y 2022, Go Ahead Eagles 2021 (Eerste Divisie) y 2022 (Eredivisie; la liga de 2021-22 se verificó contra la lista, Go Ahead Eagles no estaba en la Eerste Divisie 2021-22). Ligas, listas, estadio y sponsor de esos dos años en `data/club-leagues/nl.js`, `data/contexto/nl.js` y la caché.
+- La lista del lote se corrió SIN los documentos de Basel (`lote-101` filtrado en el scratchpad): ver abajo por qué. Cola de Luzern y St. Gallen contestada por Sonnets (15 casos).
+
+### Qué queda (para TODO)
+- **Basel: no cargar todavía.** Cinco años de la propuesta de carga tienen números equivocados, verificados contra los `.md`:
+  - 2010: la carga leyó la tabla del Verein (L441-454) en vez de la de la AG (L719-754); ingresos 1,14 M cuando la AG da 57,54 M (igual que la columna 2010 del doc 2011). Lo mismo en 2006 (Verein pág. 14 del visor, AG pág. 20) y en 2018 (Verein L459-477 en vez de la AG L716-759: 2,63 M contra 97,72 M; la columna 2017 del doc 2018 también se leyó del Verein: 88,49 M).
+  - 2016: los ingresos incluyen la "Korrektur Gewinnüberführung" de la Holding (5,27 M, L992); correcto 132,29 M. 2019: suman la Defizitgarantie de la Holding (18,7 M, L752); correcto 69,15 M.
+  - 2017: los gastos salen duplicados (183,34 M; correcto 88,74 M); la fila Sonderabschreibungen es +2,93 M (L708).
+  - 2014: faltan los gastos "Ausserordentliche Aufwendungen" (13,80 M, L1014).
+  - 2009, 2012 y 2014 duplicaban "Total Ertrag" (corregido en la 298 ah).
+  - **Decisión de Guido pendiente:** la Defizitgarantie (garantía de déficit con el Verein o la Holding) se carga como gasto dentro de Total Aufwand en 2015 y 2021 (`Admin/carga-clubes/basel-ch.md`, fila 9) pero no en 2013-2014, donde está debajo del resultado operativo. Con el mismo criterio en todos los años, el resultado de 2014 cierra exacto. Más la Verlustabdeckung de 9,721 M en 2009 y la Gewinnüberführung de 14 M en 2012.
+  - Mejora de script: elegir siempre el estado de resultados de la FC Basel 1893 AG cuando el informe trae varios (Verein, AG, Stadiondienst AG); no sumar partidas de la Holding/Verein debajo del resultado operativo.
+- **St. Gallen** (6 casos sin responder: "Erträge brutto" y "Direkte Kosten" 2018-19, 2021-22 y 2022-23): las cuentas individuales de FC St. Gallen AG y de la Event AG abren esos dos rubros y suman casi exacto la fila consolidada (descuadre de 4 mil en 2018-19 por el signo de las Wertberichtigungen). Pregunta: ¿se carga el desglose de las dos sociedades en vez de la fila consolidada? Fallback si no: `lump_football_operations` para ingresos y `other_expenses` para "Direkte Kosten". Compensación intragrupo "Entschädigung von/an FCSG Event AG": afuera; se sumó como ingreso en 2018-19, 2019-20, 2021-22 y 2023-24 (9.800 en 2021-22 y 9.975 en 2023-24).
+- **Luzern 2018 y 2024**: frenan por estadio o sponsor (compuerta 273). **Luzern 2020 y 2023**: categorías en cola y tie-out de gastos en 2023.

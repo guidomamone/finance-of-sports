@@ -46,4 +46,13 @@ window.RANKINGS["nl-eerstedivisie"] = {
         mix:[["Venta de Jugadores",0.053],["Fútbol profesional (sin desglosar por la fuente)",8.593]] },
     ],
   },
+  2021: {
+    leagueSize: 20,
+    wiki: {"t":"2020–21 Eerste Divisie","lang":"en","at":"2026-10-19","n":20},
+    clubs: [
+      { id:"goaheadeagles-nl", revenue:7.114, reportType:"official_balance_sheet",
+        sourceId:"goaheadeagles-nl-jaarrekening-2020-2021",
+        mix:[["Comercial / Sponsors",2.684],["Estadio",1.254],["Televisión",0.846],["Premios por competencias",0.137],["Venta de Jugadores",1.783],["Otros ingresos",0.411]] },
+    ],
+  },
 };

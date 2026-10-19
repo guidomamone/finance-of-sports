@@ -2,8 +2,8 @@
   "md": "Clubes/Suiza/Luzern/geschaeftsbericht-2019-20.md",
   "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2019-20.pdf",
   "club": "luzern-ch",
-  "year": null,
-  "generatedAt": "2026-10-19T16:03:17.472Z",
+  "year": 2020,
+  "generatedAt": "2026-10-19T16:17:39.834Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -14,7 +14,7 @@
       "values": [
         2.48242
       ],
-      "glosa": "Ingresos por entradas de liga"
+      "glosa": "Ingresos por entradas de campeonato"
     },
     {
       "label": "Meisterschaft VIP-Eintritte",
@@ -24,7 +24,7 @@
       "values": [
         2.890653
       ],
-      "glosa": "Ingresos por entradas VIP de liga"
+      "glosa": "Ingresos por entradas VIP de campeonato"
     },
     {
       "label": "Helvetia Schweizer Cup",
@@ -34,7 +34,7 @@
       "values": [
         0.012044
       ],
-      "glosa": "Copa Suiza"
+      "glosa": "Copa Suiza Helvetia"
     },
     {
       "label": "UEFA Clubwettbewerbe",
@@ -94,7 +94,7 @@
       "values": [
         0.612086
       ],
-      "glosa": "Contribuciones de patrocinio y donaciones"
+      "glosa": "Aportaciones de patrocinadores y donaciones"
     },
     {
       "label": "SFV-Verbandsbeiträge",
@@ -104,7 +104,7 @@
       "values": [
         0.587698
       ],
-      "glosa": "Aportaciones de la federación (SFV)"
+      "glosa": "Aportaciones federativas (SFV)"
     },
     {
       "label": "Sport-Toto- und J&S-Entschädigungen",
@@ -114,7 +114,7 @@
       "values": [
         0.12
       ],
-      "glosa": "Subvenciones de Sport-Toto y J&S"
+      "glosa": "Compensaciones de Sport-Toto y J+S"
     },
     {
       "label": "Ausbildungs- und Materialbeiträge Eltern",
@@ -164,7 +164,7 @@
       "values": [
         0.193708
       ],
-      "glosa": "Tienda oficial física"
+      "glosa": "Tienda física de aficionados"
     },
     {
       "label": "Onlineshop, Distanzgeschäft",
@@ -194,7 +194,7 @@
       "values": [
         0.147344
       ],
-      "glosa": "Ingresos por cesión de auxiliares de seguridad"
+      "glosa": "Cesión / Alquiler de personal de seguridad (stewards)"
     },
     {
       "label": "Anpassung Delkredere",
@@ -204,7 +204,7 @@
       "values": [
         0.198257
       ],
-      "glosa": "Ajuste de provisiones por insolvencias"
+      "glosa": "Ajuste de provisiones para insolvencias"
     },
     {
       "label": "Sonstiges",
@@ -224,7 +224,7 @@
       "values": [
         0.309839
       ],
-      "glosa": "Ingresos extraordinarios, no recurrentes o de ejercicios anteriores"
+      "glosa": "Ingresos extraordinarios, únicos o de ejercicios anteriores"
     },
     {
       "label": "Minderheitsanteil am Jahresergebnis",
@@ -234,7 +234,7 @@
       "values": [
         0.013974
       ],
-      "glosa": "Participación de socios minoritarios en el resultado"
+      "glosa": "Participación de socios minoritarios en el resultado del ejercicio"
     },
     {
       "label": "Personalkosten inkl. Spesen",
@@ -244,7 +244,7 @@
       "values": [
         5.557835
       ],
-      "glosa": "Gastos de personal incluidas dietas y gastos de representación"
+      "glosa": "Gastos de personal incl. dietas y gastos de viaje"
     },
     {
       "label": "Sozialabgaben",
@@ -274,7 +274,7 @@
       "values": [
         1.603717
       ],
-      "glosa": "Gastos de personal incluidas dietas y gastos de representación"
+      "glosa": "Gastos de personal incl. dietas y gastos de viaje"
     },
     {
       "label": "Sozialabgaben",
@@ -294,7 +294,7 @@
       "values": [
         2.591365
       ],
-      "glosa": "Gastos de personal incluidas dietas y gastos de representación"
+      "glosa": "Gastos de personal incl. dietas y gastos de viaje"
     },
     {
       "label": "Sozialabgaben",
@@ -314,7 +314,7 @@
       "values": [
         0.466907
       ],
-      "glosa": "Gastos de personal incluidas dietas y gastos de representación"
+      "glosa": "Gastos de personal incl. dietas y gastos de viaje"
     },
     {
       "label": "Sozialabgaben",
@@ -344,7 +344,7 @@
       "values": [
         0.458855
       ],
-      "glosa": "Gastos de seguridad en días de partido (sin auxiliares)"
+      "glosa": "Gastos de seguridad en días de partido (sin stewards)"
     },
     {
       "label": "Abgaben öffentlicher Verkehr",
@@ -354,7 +354,7 @@
       "values": [
         0.216245
       ],
-      "glosa": "Tasas de transporte público"
+      "glosa": "Tasas y aportaciones al transporte público"
     },
     {
       "label": "Medical und Material",
@@ -364,7 +364,7 @@
       "values": [
         0.220066
       ],
-      "glosa": "Gastos médicos y material"
+      "glosa": "Servicios médicos y material sanitario"
     },
     {
       "label": "Ticketing und Vorverkaufsgebühren",
@@ -374,7 +374,7 @@
       "values": [
         0.122343
       ],
-      "glosa": "Gastos de ticketing y comisiones de venta anticipada"
+      "glosa": "Comisiones de ticketing y venta anticipada"
     },
     {
       "label": "Aufwand 1. Mannschaft",
@@ -394,7 +394,7 @@
       "values": [
         0.501175
       ],
-      "glosa": "Gastos diversos de organización de partidos"
+      "glosa": "Gastos diversos de la operativa de partidos"
     },
     {
       "label": "VIP-Cateringkosten Spieltag",
@@ -414,7 +414,7 @@
       "values": [
         0.474953
       ],
-      "glosa": "Otros gastos de organización de partidos"
+      "glosa": "Gastos del resto de la actividad deportiva"
     },
     {
       "label": "Rückvergütungen Lieferanten",
@@ -424,7 +424,7 @@
       "values": [
         -0.161334
       ],
-      "glosa": "Rappels y descuentos de proveedores"
+      "glosa": "Rappels y devoluciones de proveedores"
     },
     {
       "label": "Transferaufwand def. Übertritte",
@@ -444,7 +444,7 @@
       "values": [
         0.3525
       ],
-      "glosa": "Comisiones de intermediación y asesoría de fichajes"
+      "glosa": "Comisiones de intermediación y asesoramiento a jugadores"
     },
     {
       "label": "Ausleih- und Ausbildungsentschädigungen",
@@ -464,7 +464,7 @@
       "values": [
         1.060976
       ],
-      "glosa": "Medios, comunicación y publicidad"
+      "glosa": "Medios, comunicación y publicidad gráfica"
     },
     {
       "label": "Inhouse TV Spieltag",
@@ -474,7 +474,7 @@
       "values": [
         0.158801
       ],
-      "glosa": "Producción de televisión interna en días de partido"
+      "glosa": "Televisión interna en días de partido"
     },
     {
       "label": "LED-Bandenwerbung Produktion",
@@ -504,7 +504,7 @@
       "values": [
         0.186788
       ],
-      "glosa": "Cantera y fútbol formativo"
+      "glosa": "Cantera y academia"
     },
     {
       "label": "Anlässe (FCL-Fussballcamp, Pfingstmaster)",
@@ -524,7 +524,7 @@
       "values": [
         0.138912
       ],
-      "glosa": "Costes de material"
+      "glosa": "Coste de materiales"
     },
     {
       "label": "Spielbetrieb und Mannschaftsaufwand",
@@ -534,7 +534,7 @@
       "values": [
         0.339354
       ],
-      "glosa": "Gastos de competición y de los equipos"
+      "glosa": "Operativa de partidos y gastos de equipo"
     },
     {
       "label": "Events",
@@ -564,7 +564,7 @@
       "values": [
         0.174063
       ],
-      "glosa": "Energía, agua y residuos"
+      "glosa": "Energía, agua y gestión de residuos"
     },
     {
       "label": "Verwaltungsaufwand",
@@ -594,7 +594,7 @@
       "values": [
         0.071756
       ],
-      "glosa": "Seguros generales, tasas y tributos"
+      "glosa": "Seguros de bienes, tasas y tributos"
     },
     {
       "label": "Fahrzeug/Treibstoff",
@@ -644,7 +644,7 @@
       "values": [
         0.068292
       ],
-      "glosa": "Resultado de participaciones por el método de la participación"
+      "glosa": "Resultado de participaciones puestas en equivalencia"
     },
     {
       "label": "Ausserordentlicher, einmaliger oder periodenfremder Aufwand",
@@ -654,7 +654,7 @@
       "values": [
         0.016527
       ],
-      "glosa": "Gastos extraordinarios, no recurrentes o de ejercicios anteriores"
+      "glosa": "Gastos extraordinarios, únicos o de ejercicios anteriores"
     }
   ]
 }

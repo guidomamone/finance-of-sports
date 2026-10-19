@@ -1,16 +1,7 @@
 {
  "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2017-18.pdf",
- "generado": "2026-10-19T16:08:48.234Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "4 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Helvetia Schweizer Cup\" -> matchday_competition 0.6; \"UEFA Clubwettbewerbe\" -> competition_bonus 0.5; \"Merchandising\" -> other_income 0; \"Minderheitsanteil am Jahresergebnis\" -> other_expenses 0"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios en 2018: pregunta en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-19T16:19:17.440Z",
+ "frena": [],
  "avisos": [
   "perímetro heredado del año cargado más cercano (2025, consolidado); el documento trae el consolidado. Años cargados: 2025 consolidado",
   "gastos: ningún total impreso igual a la suma de las líneas (-25.372195); queda la suma, verificada por el resultado del ejercicio",
@@ -48,9 +39,9 @@
     "amountNative": 0.135253,
     "disclosureLevel": "aggregated",
     "_pag": 49,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "UEFA Clubwettbewerbe",
@@ -58,9 +49,9 @@
     "amountNative": 0.969553,
     "disclosureLevel": "aggregated",
     "_pag": 49,
-    "_escalon": 2,
-    "_conf": 0.5,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sonstiges",
@@ -194,13 +185,13 @@
    },
    {
     "rawLabel": "Merchandising",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "sponsorship_commercial",
     "amountNative": 0.350502,
     "disclosureLevel": "aggregated",
     "_pag": 39,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía admin_general_expense, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sonstiger Betriebsertrag",
@@ -640,9 +631,9 @@
     "amountNative": -0.056321,
     "disclosureLevel": "aggregated",
     "_pag": 39,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_income, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -741,11 +732,11 @@
    "origen": "verificacion (nota que desglosa \"Matchorganisation\")",
    "signoFijo": 0.135253,
    "cat": "matchday_competition",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "revenue",
    "amountNative": 0.135253
   },
@@ -757,11 +748,11 @@
    "origen": "verificacion (nota que desglosa \"Matchorganisation\")",
    "signoFijo": 0.969553,
    "cat": "competition_bonus",
-   "conf": 0.5,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "revenue",
    "amountNative": 0.969553
   },
@@ -971,13 +962,13 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 0.350502,
-   "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía admin_general_expense, del otro lado que la fila: se propone la genérica de su lado",
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "revenue",
    "amountNative": 0.350502
   },
@@ -1650,12 +1641,12 @@
    "origen": "verificacion (estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6))",
    "signoFijo": 0.056321,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_income, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "expense",
    "amountNative": -0.056321
   },
@@ -1778,8 +1769,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 21,
   "lineasGasto": 41,
   "metaFilas": 2,

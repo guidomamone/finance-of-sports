@@ -1,10 +1,10 @@
 {
  "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2018-19.pdf",
- "generado": "2026-10-19T16:08:49.065Z",
+ "generado": "2026-10-19T16:19:18.467Z",
  "frena": [
   {
    "etapa": "categoria-en-cola",
-   "motivo": "3 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Erträge brutto\" -> lump_football_operations 0.45; \"Direkte Kosten\" -> match_organisation_expense 0.4; \"Ausserordentliche Abschreibungen\" -> exceptional_items 0.55"
+   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Erträge brutto\" -> lump_football_operations 0.45; \"Direkte Kosten\" -> match_organisation_expense 0.4"
   }
  ],
  "avisos": [
@@ -146,9 +146,9 @@
     "amountNative": -3.999,
     "disclosureLevel": "aggregated",
     "_pag": 7,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    }
   ],
   "fiscalYearMeta": {
@@ -410,11 +410,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 3.999,
    "cat": "exceptional_items",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "expense",
    "amountNative": -3.999
   },

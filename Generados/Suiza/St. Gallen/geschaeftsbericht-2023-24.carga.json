@@ -1,11 +1,7 @@
 {
  "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2023-24.pdf",
- "generado": "2026-10-19T16:08:49.732Z",
+ "generado": "2026-10-19T16:19:18.936Z",
  "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Personalaufwand\" -> wages_squad 0.75; \"Personalaufwand\" -> wages_squad 0.75"
-  },
   {
    "etapa": "reintento",
    "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
@@ -259,9 +255,9 @@
     "amountNative": -16.223,
     "disclosureLevel": "aggregated",
     "_pag": 10,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Personalaufwand",
@@ -269,9 +265,9 @@
     "amountNative": -3.727,
     "disclosureLevel": "aggregated",
     "_pag": 11,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sonstiger Betriebsaufwand",
@@ -764,11 +760,11 @@
    "origen": "verificacion (nota que desglosa \"Personalaufwand\")",
    "signoFijo": 16.223,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "expense",
    "amountNative": -16.223
   },
@@ -780,11 +776,11 @@
    "origen": "verificacion (nota que desglosa \"Personalaufwand\")",
    "signoFijo": 3.727,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "expense",
    "amountNative": -3.727
   },
@@ -1021,7 +1017,7 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
+  "motivos": 1,
   "lineasIngreso": 15,
   "lineasGasto": 17,
   "metaFilas": 2,

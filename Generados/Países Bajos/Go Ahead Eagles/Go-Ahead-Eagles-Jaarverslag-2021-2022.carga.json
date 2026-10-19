@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2021-2022.pdf",
- "generado": "2026-10-19T16:08:49.985Z",
+ "generado": "2026-10-19T16:19:19.168Z",
  "frena": [],
  "avisos": [
   "perímetro: consolidado (ajuste manual del documento, 2026-10-18: perimetro-senales.mjs: el ejercicio 2022-06-30 se publicó solo consolidado (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 2 ejercicio(s) con un solo perímetro (consolidado); 4 documento(s) mirados)",
@@ -367,10 +367,9 @@
   }
  },
  "liga": {
-  "valor": null,
-  "fuente": "no aparece en los rosters cacheados de 2022 (nl-eerstedivisie): puede haber jugado otra división",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "nl-eredivisie",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -409,9 +408,9 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no aparece en los rosters cacheados de 2022 (nl-eerstedivisie): puede haber jugado otra división",
-   "estado": "pendiente"
+   "valor": "nl-eredivisie",
+   "fuente": "data/club-leagues/nl.js ya tiene la fila",
+   "estado": "ok"
   }
  },
  "resumen": {

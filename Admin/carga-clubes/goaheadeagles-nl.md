@@ -188,6 +188,10 @@ tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/dentro-de-otro.mjs (2026-10-19): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2025): Comercial / Sponsors, Estadio, Televisión, Premios por competencias
+```
+
 ### Liga
 
 ```text
@@ -227,10 +231,147 @@ tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs
 sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
 ```
 
+```text
+tools/dentro-de-otro.mjs (2026-10-19): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2025): Comercial / Sponsors, Estadio, Televisión, Premios por competencias
+```
+
 ### Liga
 
 ```text
 tools/cargar.mjs (2026-10-19): nl-eredivisie, verificado contra roster cacheado de "2022–23 Eredivisie" (tools/club-league-reference/nl.json), coincidencia exacta "Go Ahead Eagles".
+```
+
+## 2022
+
+### Ingresos
+
+```text
+2022: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2021-2022.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2021-2022.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Netto-omzet | pág. 9, Jev 1 |
+| 2 | Resultaat vergoedingsommen | pág. 9, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Inkoopwaarde van de omzet | pág. 9, precedente |
+| 2 | Lonen en salarissen | pág. 9, Jev 1 |
+| 3 | Sociale lasten | pág. 9, precedente |
+| 4 | Pensioenlasten | pág. 9, precedente |
+| 5 | Afschrijvingen op immateriële, materiële vaste activa en vastgoedbeleggingen | pág. 9, Jev 1 |
+| 6 | Overige bedrijfskosten | pág. 9, Claude 0.8 |
+
+### Meta
+
+```text
+2022: AJUSTE MANUAL (Admin/registros/ajustes-manuales.jsonl, perimetro-senales 2026-10-18): perimetro = consolidado. perimetro-senales.mjs: el ejercicio 2022-06-30 se publicó solo consolidado (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 2 ejercicio(s) con un solo perímetro (consolidado); 4 documento(s) mirados
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por la fuente"); la página todavía no lo lee.
+```
+
+```text
+tools/dentro-de-otro.mjs (2026-10-19): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2025): Comercial / Sponsors, Estadio, Televisión, Premios por competencias
+```
+
+## 2021
+
+### Ingresos
+
+```text
+2021: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarrekening-2020-2021.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarrekening-2020-2021.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: -; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Sponsoring | pág. 36, precedente |
+| 2 | Wedstrijdbaten | pág. 36, precedente |
+| 3 | Media gerelateerde baten | pág. 36, precedente |
+| 4 | Subsidies & giften | pág. 36, precedente |
+| 5 | Horeca | pág. 36, precedente |
+| 6 | Merchandise | pág. 36, precedente |
+| 7 | Prijzengeld | pág. 36, precedente |
+| 8 | Overige baten | pág. 36, precedente |
+| 9 | Transferbaten | pág. 36, Jev 0.99 |
+| 10 | Opleidingsvergoedingen | pág. 36, Claude 0.85 |
+| 11 | Solidariteitsbijdragen | pág. 36, Jev 0.98 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Afschrijvingen vergoedingsommen | pág. 36, Jev 1 |
+| 2 | Makelaarskosten | pág. 36, Jev 0.96 |
+| 3 | Inkoopwaarde merchandise | pág. 36, Jev 0.93 |
+| 4 | Inkoopwaarde food & beverage | pág. 36, Jev 0.99 |
+| 5 | Bruto salarissen | pág. 37, precedente |
+| 6 | Huur spelers | pág. 37, Jev 0.96 |
+| 7 | Ontvangen uitkeringen | pág. 37, precedente |
+| 8 | Sociale lasten | pág. 16, precedente |
+| 9 | Pensioenlasten | pág. 16, precedente |
+| 10 | Afschrijvingen op immateriële, materiële vaste activa en vastgoedbeleggingen | pág. 16, Jev 1 |
+| 11 | Huisvestingskosten | pág. 38, precedente |
+| 12 | Inhuur algemeen management | pág. 38, Jev 0.99 |
+| 13 | Verhuiskostenvergoeding | pág. 38, precedente |
+| 14 | Reiskosten en kilometervergoedingen | pág. 38, precedente |
+| 15 | Vergoeding personeel | pág. 38, Claude 0.88 |
+| 16 | Inhuur fysiotherapie | pág. 38, precedente |
+| 17 | Inhuur afdeling communicatie | pág. 38, precedente |
+| 18 | Inhuur veiligheidscoördinator | pág. 38, precedente |
+| 19 | Studie- en opleidingskosten | pág. 38, precedente |
+| 20 | Inhuur financieel management | pág. 38, precedente |
+| 21 | Uitzendkrachten | pág. 38, precedente |
+| 22 | Bedrijfskleding | pág. 38, precedente |
+| 23 | Overige | pág. 38, precedente |
+| 24 | Onderhoud onroerend goed | pág. 38, precedente |
+| 25 | Gas, water en elektra | pág. 38, precedente |
+| 26 | Belastingen en zakelijke lasten | pág. 38, precedente |
+| 27 | Schoonmaakkosten | pág. 38, precedente |
+| 28 | Huur veldverwarming | pág. 38, ? 0.75 |
+| 29 | Assurantiepremie onroerende zaak | pág. 38, precedente |
+| 30 | Beveiligingskosten | pág. 38, precedente |
+| 31 | Huur stadion | pág. 38, Jev 0.95 |
+| 32 | Overige | pág. 38, precedente |
+| 33 | Mutatie voorziening dubieuze vorderingen op handelsdebiteuren | pág. 39, precedente |
+| 34 | Reclame, advertenties en promotiemateriaal | pág. 39, precedente |
+| 35 | Representatiekosten | pág. 39, precedente |
+| 36 | LED-boarding | pág. 39, precedente |
+| 37 | Ticketing | pág. 39, precedente |
+| 38 | Inhuur commercieel management | pág. 39, Jev 0.97 |
+| 39 | Afboeking dubieuze vorderingen op handelsdebiteuren | pág. 39, Jev 0.96 |
+| 40 | Fanshop | pág. 39, precedente |
+| 41 | Hostess | pág. 39, precedente |
+| 42 | Kids- en Juniorclub | pág. 39, precedente |
+| 43 | Overige | pág. 39, precedente |
+| 44 | Autokosten | pág. 38, Jev 1 |
+| 45 | Kosten automatisering | pág. 39, precedente |
+| 46 | Porti- en telefoonkosten | pág. 39, precedente |
+| 47 | Kantoorbenodigdheden | pág. 39, precedente |
+| 48 | Abonnementen en contributies | pág. 39, precedente |
+| 49 | Accountantskosten | pág. 39, Jev 1 |
+| 50 | Verzekeringen | pág. 39, precedente |
+| 51 | Notariskosten | pág. 39, precedente |
+| 52 | Overige | pág. 39, precedente |
+| 53 | Reis- en verblijfkosten | pág. 40, precedente |
+| 54 | Uitrusting en wedstrijdmateriaal | pág. 40, precedente |
+| 55 | Kosten beveiliging en kassiers | pág. 40, precedente |
+| 56 | Clubkostuums | pág. 40, precedente |
+| 57 | Medische begeleiding | pág. 40, precedente |
+| 58 | Scoutingswerkzaamheden | pág. 40, precedente |
+| 59 | Kosten trainingskamp | pág. 40, precedente |
+| 60 | Scheidsrechterskosten | pág. 40, precedente |
+| 61 | Overige | pág. 40, precedente |
+| 62 | Overige bedrijfskosten | pág. 38, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
 ```
 
 ## Fuentes
@@ -257,4 +398,20 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2023-2024.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### goaheadeagles-nl-jaarrekening-2020-2021
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarrekening-2020-2021.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
+```
+
+### goaheadeagles-nl-jaarverslag-2021-2022
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Países Bajos/Go Ahead Eagles/Go-Ahead-Eagles-Jaarverslag-2021-2022.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado.
 ```
