@@ -22,3 +22,5 @@ Rama `onboarding`, sin push. Último commit al escribir esto: ver `git log`.
 ### Qué deja de ser cierto en ESTADO
 - Fredrikstad ya no tiene solo 2024: tiene 2013-2018 (y 2024).
 - La compuerta de estadio acepta sin sponsor la Eerste Divisie, la 1. y la 2. divisjon noruegas.
+
+## Después del primer merge de Onboarding 3 (2026-10-19)

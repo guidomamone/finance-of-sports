@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 788 — Fredrikstad 2013-2018 y la 2. divisjon noruega (2026-10-19)
+
+* Fredrikstad FLI 2013-2018, del lote 95. Liga nueva `no-2divisjon` (tercera división) y listas de la 1. divisjon 2012-2018.
+* La compuerta de estadio y sponsor acepta solo con estadio la 1. y la 2. divisjon noruegas (decisión de Guido).
+* Sarpsborg 08: los PDFs del FLI, transcriptos.
+
 ## Versión 787 — 298 v medida: sin daño hoy (2026-10-19)
 
 * Los originales con -correction del lote 92 ya están descartados y no aparecen como frenados; el caso queda en HALLAZGOS.

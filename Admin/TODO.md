@@ -48,7 +48,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 165 c: altas de los países nuevos que faltan --> Onboarding 3
 * 195: gestiones (presidentes) sin fuente confirmada (Fortaleza 2025: ¿CEO o presidente del consejo? lo decidís vos)
 * 295: balances de las entidades que organizan las ligas: lo que queda (segundas divisiones; varias no publican) --> Finanzas 5
-* 284: Fredrikstad y Sarpsborg 08 sobre el FLI --> Onboarding 3
+* 284: Fredrikstad 2012 (falta un sponsor con fuente) y Sarpsborg 08 sobre el FLI --> Onboarding 3
 * 283: Vålerenga y Aalesund, sumar el AS y el FLI (con nota en Finanzas) --> Onboarding 3
 * 273: nombrar la compuerta de estadio y sponsor en la skill de onboarding (con tu ok)
 
@@ -233,10 +233,11 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 283. VÅLERENGA Y AALESUND: SUMAR EL AS Y EL FLI EN UN SOLO AÑO (pedido de Guido, 2026-10-17). El AS tiene los ingresos comerciales y el
    FLI los sueldos, que el AS le paga como transferencia (Vålerenga Elite 2023: 85,4 M de sueldos; el AS le transfiere 87,5 M); ninguno
    consolida. Sumar los dos documentos sin contar dos veces la transferencia, con una nota en Finanzas que explique la suma.
-284. FREDRIKSTAD Y SARPSBORG 08: EL CLUB ES EL FLI (pedido de Guido, 2026-10-17). Fredrikstad: el FLI (Fredrikstad Fotballklubb) tiene
-   los sueldos y no deposita cuentas desde 2019, así que hay 2012-2018; antes de cerrarlo, abrir `wf-src-FFK_-_Årsmøte_2025.pdf`; para
-   2008-2011 solo existe el AS. Sarpsborg 08: el alta se hizo sobre un AS inversor sin empleados; rehacerla sobre el FLI "Sarpsborg 08
-   Fotballforening" (sus 14 PDFs no tienen `.md`). Pardubice: no darle el alta con lo que hay (es FK Junior z.s.); el sourcing de la a.s.
+   Vålerenga: 46 PDFs sin `.md`; 40 `.md` de subagentes que cortaron por el límite de uso están SIN trackear y SIN verificar en
+   fos-onboarding (algunos sin mirar las imágenes): validarlos con `pipeline.mjs --lista Admin/lotes/transcribir-valerenga.txt` o rehacerlos con Mistral.
+284. FREDRIKSTAD Y SARPSBORG 08: EL CLUB ES EL FLI (pedido de Guido, 2026-10-17). Fredrikstad: FLI 2013-2018 y 2024 cargados; falta
+   2012 (la cola está contestada, pero la Tippeligaen pide sponsor: falta uno con fuente en `tools/contexto-manual.json`). Sarpsborg 08:
+   el alta se hizo sobre un AS inversor sin empleados; rehacerla sobre el FLI "Sarpsborg 08 Fotballforening" (sus PDFs ya tienen `.md`). Pardubice: no darle el alta con lo que hay (es FK Junior z.s.); el sourcing de la a.s.
    lo hace Guido.
 286. EL ENSAYO DE pipeline.mjs NO ANTICIPA EL REHACER CON MISTRAL (cierre de onboarding). `--lista` muestra un `.md` sin tablas como
    "texto (Claude solo en págs. dudosas)" y `--ejecutar` lo rehace con Mistral (~US$ 0,17 por documento; la corrida de los 6 países
