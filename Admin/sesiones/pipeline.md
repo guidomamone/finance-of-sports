@@ -417,3 +417,15 @@ los parches de prueba de esta sesión (q, n, l, u2, y3) quedaron aplicados y com
 - Pendiente de anotar en la memoria (con Guido): que el panel Plan dejó de usarse en las sesiones de worktree.
 
 ## Pipeline 4 (2026-10-19)
+
+**286 (commit ff216bf16f).** `pipeline.mjs`: el ensayo cotiza los `.md` viejos sin tablas que la corrida real marcaría (`candidatosSinTablas`
+solo lee; `chequearTablas` escribe la marca). Con el 298 e3 y la corrida de sin-tablas-298e ya no queda ninguno: ensayo completo y de
+Colombia sin la línea nueva (0 candidatos; de los 23 `.md` viejos sin tablas, 7 tienen `formatoIntentado`, otros son de 1 página o ya
+pasaron por verificar). Queda como resguardo para la próxima tanda de `.md` viejos.
+
+**287 (commit a7070802ab).** `audit.js`: hallazgo P2 `carpeta-doble` (mismo sha1 en dos carpetas de club del país; tamaño primero; salta
+`_...`; sigue symlinks). Probado con un PDF copiado a una carpeta temporal. Auditoría P0 0 / P1 0; P2 215 → 240: 25 hallazgos reales para
+mirar contra el documento (misfiling: Hearts en Kelty Hearts, Fjölnir en ÍR; carpetas dobles: NEC, RFS, Thun, St. Gallen, Omonia; informes de
+liga compartidos a propósito: Bundesliga 2, Ljungskile/United Nordic, Brasil). No se silenció ni se movió nada: silenciar en
+`audit-ignore.json` exige mirar la fuente. Pendiente: texto para la skill `club-sourcing` (mostrado a Guido, sin su ok todavía).
+Ojo: `audit.js --json` con pipe se corta a los 64 KB (como el 301); se redirige a un archivo.
