@@ -113,6 +113,10 @@ de cabecera: al ser el año más reciente de esa presentación, su columna proba
 ~nominal, pero no hay balance auditado real de este ejercicio descargado para confirmarlo).
 ```
 
+```text
+tools/caja-deuda.mjs (2026-10-19): cash escalón 0 (compuerta: ajuste manual): ajuste manual (2026-10-19): Claude 2026-10-19 (informe 260, Sonnet de solo lectura, cita contrastada): Caja y bancos (Nota 3.a.) al 30/06/2019 = 30.282.796 pesos, en el estado de situación patrimonial de la memoria del ejercicio 115. La deuda cargada (247.566.408 = Total del pasivo) no se toca: es el criterio del club en todos sus años.
+```
+
 ## 2018
 
 ### Meta
