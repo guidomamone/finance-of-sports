@@ -573,3 +573,49 @@ afuera…?", la línea «sí» = queda AFUERA de la carga; «no» = se carga. Me
 total impreso) dejan de contar "Total Ertrag" de más. Medición de 725 documentos (base OK 689 / COLA 36; después igual): 722 idénticos y solo cambian esos tres. Primera versión (el compuesto dentro de `arriba` para todos los escalones): cambiaba además Parma 2016, Sassuolo 2018 y Milan
 2020-21 (lectura 5 "hoja", otras líneas): se acotó a la decisión final y volvieron a ser idénticos. Los tres Basel SIGUEN EN COLA: 2005 y 2009 traen la fila "Verlustabdeckung FC Basel Marketing AG / Holding AG" (0,47 y 9,72 M, cobertura de pérdidas del holding, sin lado, entra como ingreso por su signo) y 2012
 una transferencia de ganancia a la holding (L810). Es otro tema: a decidir con Guido (¿esa fila es ingreso? la nota de extraer dice que no es un ingreso operativo).
+
+### Cierre de Pipeline 4 (2026-10-19, por contexto)
+
+Estado: la rama `pipeline` queda con todo commiteado (el último commit incluye la cobertura de pérdidas de Basel, medida). Nada a medias. Sin merge ni push desde esta sesión.
+
+**Hecho en esta sesión (los más viejos ya están en main; el último commit es el que falta mergear):** 286 y 287 (`carpeta-doble` en audit.js; texto en `club-sourcing`); 301 (`--json` en pipe); 302 (deflactor de la BEA);
+306 y 307 (306 a HALLAZGOS; 307 no se reproduce); 310 (caja de un año sin vecino con tres votos; partes 2 y 3 a HALLAZGOS); 290 y 291 (regla del factoring en CONVENCIONES-DATOS); 308 (bonos convertibles y factoring en la skill);
+278 (`tools/mudar-carpetas.mjs` y su manifiesto); 260 (Unión 2022-2024, Argentinos Juniors 2019 caja, Mirassol 2024 deuda); 298 ab, ac, ad (generadores + `carga-club`), ae, ag, ah; 323 b y d.
+Sarpsborg 08 2023 (año publicado con el defecto de la ag) lo corrigió también la principal.
+
+**Qué queda:** 298 af, ai, aj, z2 y g2; 323 a, c, e y f; el 282 f; y dos decisiones de Guido que salieron de Basel (abajo).
+
+### Para la sesión nueva: por dónde seguir
+
+Arrancar con la skill `club-or-year-onboarding`, `node tools/worktree.mjs preparar <carpeta>` y esta sección. Cada letra: diseño con medición gratis, ok de Guido en el chat, un commit.
+
+- **298 af (ligas belgas amateur para el estadio: Lokeren-Temse 2022, Patro Eisden 2013-2015).** `estadio-sponsor.mjs --ensayo` da "0 ejercicios" y `listas-lote.mjs --ensayo` "0 de 0": esos años todavía no están cargados. Lo que falta es `data/club-leagues/be.js`
+  (hoy Patro: 2016-2020, 2024, 2025; Lokeren-Temse: 2023-2025) y las listas de Wikipedia de cada temporada. `data/leagues.js` tiene los niveles por `tier` (be-div1amateur 3, be-div2amateur 4, be-div3amateur 5). DECISIÓN DE GUIDO PENDIENTE: ¿la
+  Tercera División belga anterior a 2016 se mapea por nivel a `be-div1amateur`? Wikipedia la llama "Belgian Third Division" (títulos "2013–14 Belgian Third Division A/B"), hay que agregar esos nombres en `NOMBRES` de `listas-lote.mjs` y verificar cada temporada.
+- **298 ai y aj (St. Gallen: compensación intragrupo sumada como ingreso, depende de una decisión de perímetro de Guido; año anterior que invierte el signo de "Ertragsminderungen"/"Resultaat vergoedingsommen" y suma "Erträge netto").**
+  No las leí: el detalle está en `Admin/Archive/sesion-onboarding-3-2026-10-19-e.md`.
+- **298 z2 (Westerlo 2015, 18 meses por cambio de cierre) y g2 (partir en la cola una fila mixta según su nota; condicional):** z2 espera a Guido; g2 solo si aparece otra fila mixta sin códigos.
+- **323 a** (`lote.mjs --reintentar` en ensayo no suma el Mistral de los que se re-transcriben): sin medir. **323 c** (19 de 36 "duda-de-extraer" son la nota inglesa "stated after charging", siempre se contesta igual; escalón que las deje afuera con la
+  compuerta de que no sumen el renglón padre): sin medir. **323 e** (`duda-tema` de perímetro con un solo estado de resultados, Arsenal 2021-22 y 2022-23, Burnley 2022-23: la regla 1 de perímetro de CONVENCIONES-DATOS ya lo decide): sin medir.
+  **323 f** (alta de Harlequins: el nombre legal sale como una frase del texto; sale de "HARLEQUIN FOOTBALL CLUB LIMITED (REGISTERED NUMBER…)", que aparece 4 veces): sin medir. El 323 d lo resolví por el camino 3 (solo aclaración en el listado) porque cambiar el prompt rompía el escalón 211 de verificar.mjs.
+- **282 f:** no lo miré.
+- **Basel (decisiones de Guido):** (1) "Gewinnüberführung FC Basel Holding AG" −14 M en 2012 (L800 del .md) es el espejo de la cobertura de pérdidas: hoy queda sin lado y el resultado de 2012 no cierra; con el mismo tratamiento (resultado, fuera de ingresos y gastos) cerraría, pero es una regla nueva y no la apliqué.
+  (2) Basel 2009 sigue en cola por el chequeo del año vecino: la columna de 2009 del documento de 2010 lee 0,848 de ingresos (otra tabla). Basel 2012 y 2009 no se cargan hasta resolver eso.
+- **260 sin cargar:** Ferroviária 2014 y Remo 2019 (parciales: caja sí, deuda no), Volos 2019-2020 y Japón 2025 (no se pueden). Informe en `Admin/mediciones/informe-260-caja-deuda-sin-documento-nuevo.md`.
+- **Datos pendientes de mirar:** Botafogo-SP (su `demonstracoes-contabeis-2022-2023.pdf` es de Botafogo S.A. de Río; tiene `.md`, 13 derivados y una nota que ya lo dice), Omonia 29 Maiou y Alavés/Deportivo (PDFs sin texto). `node tools/mudar-carpetas.mjs --escribir` hay que correrlo EN LA PRINCIPAL (la principal lo iba a hacer cuando termine el lote 97 del Reino Unido).
+
+**Bases de medición.** `verificar`: `medir-verificar --lista <lista> --pasadas 2` sobre `prueba-completa` + Sarpsborg 2023-2024 + Basel 2005/2009/2012 (+2006): hoy OK 691 / COLA 35 (antes OK 689 / COLA 36); ~25 minutos por corrida, antes y después con el mismo `--pasadas`. `cargar`: `medir-cargar --lista Admin/lotes/prueba-completa.txt`
+(703 documentos). Caja y deuda: `caja-deuda --medir`: caja 422 iguales / 7 distintos / 379 sin dato; deuda 180 / 10 / 575. El ensayo de `lote.mjs --lista prueba-completa` da lo mismo antes y después de mis cambios. Para ver un cambio de verificar con una copia vieja: `git show HEAD:tools/verificar.mjs > tools/verificar-viejo.mjs` y `--script`.
+
+**Cómo se trabajó.** Diseño con medición gratis, el ok de Guido en el chat, un commit por cambio, la nota acá y aviso a la principal. Los experimentos van detrás de una variable de entorno temporal (`FOS_*`) y se sacan antes de commitear. REGLA DE GUIDO: no endurecer ni agregar una condición a un script sin
+preguntarle, aunque el escalón ya esté aprobado (memoria `no-endurecer-reglas-sin-preguntar`). Cuando una medición muestra un documento ya cargado que cambia, el cambio no entra: se acota o se descarta. Un subagente Sonnet sirve para leer documentos, con el índice de archivos armado antes.
+
+**Trampas.**
+- En un worktree, los PDFs de `Clubes/` son enlaces a la carpeta principal: mover carpetas o PDFs solo se puede en la principal (`mudar-carpetas.mjs` se niega si ve enlaces).
+- Los ensayos de `lote.mjs` y `medir-cargar` dejan modificados `.verificacion.json`, `cola-revision.jsonl`, `perfil-clubes.jsonl` y `categorias-aprendidas.jsonl`: restaurar con `git checkout` antes de commitear. Con acentos (`Generados/Bélgica`) usar la ruta literal, no una lista de `git ls-files`.
+- El hook del commit corre ANTES de la edición en el mismo comando bash: si se toca `data/` o `js/`, subir ASSET_V (la constante y cada `?v=` de `index.html`) y regenerar `fuentes/` (`node tools/generate-fuentes-page.js`) en comandos aparte, y recién después commitear.
+- `caja-deuda.mjs --escribir` solo reemplaza `grossDebt:null` / `cash:null`; si el año no tiene esas claves hay que agregarlas. Y necesita que la evidencia del club nombre el `.md` de la fuente (`Clubes/…/x.md`).
+- `audit.js --json` y `gasto.mjs --json` ya no se cortan en un pipe (301), pero `audit.js` en `--json` sigue siendo grande: redirigir a un archivo.
+- Para reproducir un documento de otra sesión se pueden leer sus derivados (solo lectura) y copiarlos un rato al propio árbol; hay que borrarlos antes de commitear.
+- Los subagentes de esta sesión no tenían Grep ni Bash: no listan carpetas, hay que pasarles las rutas.
+- El criterio de `grossDebt` es POR CLUB: Argentinos Juniors y Unión cargan el total de "Deudas" o el Total del pasivo, no la deuda financiera angosta.

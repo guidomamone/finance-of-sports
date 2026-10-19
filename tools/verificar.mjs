@@ -43,7 +43,7 @@ import { cierrePorVecinos } from './cierre-vecinos.mjs';
 import { VERSION_AMPLIADO } from './indice-bloques.mjs';
 import { norm as normNum } from './verify-numbers.mjs';
 import { ajusteDe, ajustesDe, ajustePerimetroDe } from './ajustes.mjs';
-import { FIN_INGRESO_RE, FIN_GASTO_RE, INGRESOS_RE, GASTOS_RE, DE_LOS_CUALES_RE, normalizar } from './vocabulario.mjs';
+import { COBERTURA_PERDIDAS_RE, FIN_INGRESO_RE, FIN_GASTO_RE, INGRESOS_RE, GASTOS_RE, DE_LOS_CUALES_RE, normalizar } from './vocabulario.mjs';
 import { DESCARTADOS, PARCIALES } from './etapa-doc.mjs';
 import { filasNBB, leerEstadoNBB } from './nbb.mjs';
 const argvAntes = process.argv; process.argv = process.argv.slice(0, 2);
@@ -227,6 +227,10 @@ export function verificar(pdf, { registro, sitio, escribirRubros = false }) {
   const pagDe = (bloque) => U.bloques?.[bloque]?.pagina ?? null;
   const filas = (F.filas || []).map((f) => ({ ...f, pagina: pagDe(f.bloque), M: (parseNumber(f.actual) ?? NaN) * mult(f.bloque), A: f.anterior != null ? (parseNumber(f.anterior) ?? NaN) * mult(f.bloque) : null, u: unidad(f.actual, mult(f.bloque)) }));
   const estado = filas.filter((f) => !f.detalla_a && (F.ubicacion?.estado || []).includes(f.bloque));
+  // (to-do 298 ah, Guido 2026-10-19) COBERTURA DE PÉRDIDAS DE UN SOCIO O DEL HOLDING: no es un ingreso operativo. Una fila SIN LADO cuyo rótulo dice "cobertura de pérdidas"
+  // ("Verlustabdeckung FC Basel Marketing AG" +470.000 entre el "Ergebnis vor Verlustabdeckung" y el "Ergebnis vor Steuern") entraba como ingreso por su signo (lectura 3) y
+  // los ingresos no daban el "Total Ertrag" impreso. Ahora cuenta en el resultado, como el financiero, y queda afuera de los ingresos y de los gastos.
+  for (const f of estado) if (f.lado === 'otro' && f.tipo === 'renglon' && isFinite(f.M) && f.M && COBERTURA_PERDIDAS_RE.test(String(f.etiqueta || ''))) { f.lado = 'financiero'; notas.push(`"${f.etiqueta}" (L${f.linea}) es una cobertura de pérdidas del socio o del holding, no un ingreso operativo: cuenta en el resultado, fuera de los ingresos y de los gastos`); }
 
   // 2. notas: renglón del estado reemplazado por su desglose si cierra (escala deducida del cierre)
   // DESGLOSES ANIDADOS (Versión 335, diseño aprobado por Guido): una hoja de una nota puede, a su vez, estar desglosada por otro cuadro (filas

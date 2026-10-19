@@ -102,6 +102,7 @@ import { TOCA_UNA_CARGA } from './rutas.mjs';
 import { parseNumber } from './datos-sitio.mjs';
 import { validacionAlDia } from './cache-al-dia.mjs'; // (to-do 237 ak)
 import { GENERADORES, queFalla } from './generadores.mjs'; // (to-do 298 x)
+import { COBERTURA_PERDIDAS_RE } from './vocabulario.mjs'; // (to-do 298 ah)
 
 // Los módulos que se reusan leen process.argv al importarse (alta-club.mjs: --escribir activa ANOTAR_MISSES y --anio fuerza el año;
 // proponer-carga.mjs: --tabla, --limit, --club...). Las opciones de ESTE comando no son las de ellos: se les pasa un argv limpio.
@@ -467,7 +468,10 @@ export async function proponer(pdfArg, { sitio, registro, incluirNoRubro = false
       // −15.597" de UC 2020, una reversión de la provisión de vacaciones dentro de los gastos de administración). El paso 5 lo usa tal cual en
       // vez de adivinarlo por tabla: hasta la 337 se perdía y la fila quedaba sumando gasto (UC 2020 frenaba con 31.194 de diferencia).
       ...VV.lineas.map((l) => ({ label: l.etiqueta, page: l.pagina, section: l.origen, native: Math.abs(l.M), signoFijo: l.M, tside: l.lado === 'ingreso' ? 'revenue' : 'expense', origen: `verificacion (${l.origen})`, ...(l.categoria ? { catAjuste: l.categoria } : {}) })),
-      ...VV.financiero.map((l) => ({ label: l.etiqueta, page: null, section: 'financiero', native: l.M, tside: null, origen: 'verificacion', destinoForzado: 'netInterest' })),
+      // (to-do 298 ah, Guido 2026-10-19) la cobertura de pérdidas del holding no es interés neto: va como una ganancia dentro de los gastos, categoría exceptional_items (fuera del total de gastos
+      // que se compara con el impreso, dentro del resultado), igual que la venta del 20% de Goiás 2023. signoFijo negativo = reduce el gasto.
+      ...VV.financiero.filter((l) => !COBERTURA_PERDIDAS_RE.test(String(l.etiqueta || ''))).map((l) => ({ label: l.etiqueta, page: null, section: 'financiero', native: l.M, tside: null, origen: 'verificacion', destinoForzado: 'netInterest' })),
+      ...VV.financiero.filter((l) => COBERTURA_PERDIDAS_RE.test(String(l.etiqueta || ''))).map((l) => ({ label: l.etiqueta, page: null, section: 'financiero', native: Math.abs(l.M), signoFijo: -l.M, tside: 'expense', origen: 'verificacion (cobertura de pérdidas)', catAjuste: 'exceptional_items' })),
       ...VV.impuesto.map((l) => ({ label: l.etiqueta, page: null, section: 'impuesto', native: l.M, tside: null, origen: 'verificacion', destinoForzado: 'tax' })),
     ];
     const totalCands = [VV.totales.ingresos ? { label: 'total de ingresos (verificado)', M: VV.totales.ingresos, page: null, how: 'etiqueta' } : null, VV.totales.gastos ? { label: 'total de gastos (verificado)', M: VV.totales.gastos, page: null, how: 'etiqueta' } : null].filter(Boolean);
