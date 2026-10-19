@@ -427,3 +427,41 @@
      club): con 8 club-años por país el cuadro de arriba se completa.
 
 ## Después del quinto merge de Finanzas 4 (2026-10-19)
+
+### Qué cambió (para CHANGELOG)
+
+- To-do 295 (c), balances de las entidades que organizan ligas, las que tienen canal público y gratis. Un commit por liga, cada una con su PDF o XHTML
+  y su `.md` en `Ligas/<País>/<Entidad>/`, su línea en `Admin/registros/auditoria.jsonl` (`ligaId`, citas verificadas por `tools/auditoria.mjs`) y su nota
+  en `Admin/sourcing/Ligas/`. Los PDF, copiados a la carpeta principal con `rsync --no-links`. ASSET_V 1359.
+  - EFL (The Football League Limited, Companies House 00080612) 2024-25: cuentas del grupo, Grant Thornton UK LLP, sin salvedades, sin incertidumbre de
+    continuidad (Paul Bamber, 4-12-2025). Líneas de `gb-championship`, `gb-leagueone` y `gb-leaguetwo`. Tesseract; las págs. 18 y 22 contra la imagen.
+  - Swiss Football League 2024/25: Finanzbericht de `report.sfl.ch`, Ernst & Young AG, sin salvedades (24-10-2025). `ch-superleague` y `ch-challengeleague`.
+  - Norsk Toppfotball 2025: årsrapport de `toppfotball.no`, BDO AS (Arve Garberg, 12-02-2026), sin salvedades. `no-eliteserien` y `no-1divisjon`. El informe son
+    páginas imagen (28-30): Tesseract, la 28 revisada contra la imagen.
+  - Superligaen A/S (Dinamarca, CVR 13996830) 2024/25: årsrapport del registro de Erhvervsstyrelsen (solo XHTML; el `.md` sale del texto del XHTML, que
+    queda sin trackear), EY Godkendt Revisionspartnerselskab (Mona Blønd, 28-10-2025), sin salvedades. `dk-superliga`.
+  - Eesti Jalgpalli Liit (Estonia, 80091598) 2025: informe consolidado del e-Äriregister, EL Finants OÜ (22-04-2026), sin salvedades **con incertidumbre material
+    sobre la continuidad** (`continuidad: true`: pasivo corriente 2,5 veces el activo corriente). `ee-meistriliiga` y `ee-esiliiga`. Son cuentas de toda la federación.
+  - Super League 1 (Grecia, ΣΟΥΠΕΡΛΙΓΚ ΕΝΑ ΕΛΛΑΔΑΣ Σ.Π.Ε., ΓΕΜΗ 7012801000) 2024-25: estados del ΓΕΜΗ (escaneo, Tesseract griego; págs. 15 y 17 contra la imagen),
+    PKF Ευρωελεγκτική (Ανδρέας Διαμαντόπουλος, 06-03-2026), **con salvedades** (impuestos 2020-2025 sin revisar y una previsión de deterioro de ~2,13 M €).
+    `gr-superleague`. Se la encontró buscando "ΣΟΥΠΕΡ ΛΙΓΚ" en el autocompletado del ΓΕΜΗ.
+  - Pro League (Bélgica, NBB 0508.600.494) 2024-25: el depósito de la NBB (44 págs.) se bajó y transcribió, pero trae solo el formulario XBRL, **sin el informe del
+    comisario** (KPMG Bedrijfsrevisoren BV, mandato 2022-12 a 2025-12): sin línea de auditoría. Los depósitos de 2022-2024 tampoco lo traen.
+  - Sin canal público y gratis, solo nota de sourcing (sin mails): Eredivisie (Eredivisie CV no publica; la KNVB sí, con EY, pero es la federación entera y no se
+    atribuyó a la liga), Liga Profesional de Fútbol argentina (ni sitio ni IGJ sin clave fiscal) y Dimayor (sin estados financieros en su sitio; falta RUES).
+- Para periodistas / criterio (a CONVENCIONES-DATOS si Guido lo confirma): una liga con un informe que no está en el documento no lleva línea
+  (`tools/auditoria.mjs` publica en `_ligas.js` una entrada `falta_transcripcion` con `auditor: null` y `fuente: null`, cosa que no hace con los clubes: no se sabe si la
+  tarjeta "Las cuentas de la liga" la soporta, así que no se cargó); el balance de una federación entera (KNVB) no se le atribuye a la liga.
+
+### Qué queda (para TODO)
+
+- 295: Pro League: pedir o buscar el verslag van de commissaris 2024-25 (candidato a mail). Eredivisie CV, LPF y Dimayor: candidatos a mail (sin armar). Super League 2
+  (Grecia, otra cooperativa) y la 1. Division danesa, la 1. Liga suiza, etc. no se buscaron. KNVB: decisión de Guido si entra como entidad.
+- Mejora de script: `tools/auditoria.mjs` debería decir si una entrada de liga `falta_transcripcion` se publica o no (hoy sí), y `tools/companies-house-fetch.mjs` no encuentra por nombre
+  la sociedad de la EFL ("The Football League Limited" no sale; hay que saber el número 00080612).
+- 282: lo mismo que antes (Roma 2022, Hamburgo 2024, candidatos a mail).
+
+### Qué deja de ser cierto en ESTADO
+
+- "Balances propios de las entidades que organizan las ligas: hoy la Premier League 2024-25, LaLiga 2024-25 y la J.League 2025": suman la EFL 2024-25, la SFL 2024/25,
+  Norsk Toppfotball 2025, Superligaen A/S 2024/25, la federación estonia 2025 y la Super League griega 2024-25.
