@@ -3,8 +3,9 @@
  "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2023-24.md",
  "mdSha1": "924a03f1c98bced199536617a475b2c65f980fea",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T15:29:33.609Z",
+ "generado": "2026-10-19T18:46:16.202Z",
  "perimetroClub": null,
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 9,
@@ -100,30 +101,29 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se usan las Erfolgsrechnungen individuales de FC St. Gallen AG (b6) y Event AG (b9) como desglose de 'Erträge brutto' y 'Direkte Kosten' del consolidado (b3)?",
+   "pregunta": "¿Se cargan los importes de televisión dentro de 'Diverse Erträge inklusive Swiss Football League' de la Erfolgsrechnung FC St. Gallen AG (b6) sin abrirlos, ya que el documento no muestra un renglón propio de TV?",
    "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Diverse Erträge inklusive Swiss Football League",
+   "texto": "Ningún bloque visible tiene una fila explícita de Televisión; los derechos de la SFL parecen incluidos en ese renglón de b6.",
+   "bloques": [
+    "b6"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se usa la columna 'FCSG AG' de la Erfolgsrechnung consolidada (b3) junto con b6 para desglosar los ingresos, en lugar de solo la columna total consolidada?",
+   "propuesta": "no",
    "tema": "usar-cuadro-por-segmento",
    "renglon": "Erträge brutto",
-   "texto": "El consolidado b3 abre por sociedad pero no por tipo de ingreso; b6 y b9 desglosan los ingresos y costos directos de cada sociedad, aunque b6 incluye la Entschädigung intragrupo de 9’975 que en el consolidado se elimina.",
+   "texto": "b3 tiene columnas por sociedad; los desgloses se toman de b6 (FC St. Gallen AG) y b9 (Event AG).",
    "bloques": [
     "b3",
     "b6",
     "b9"
    ],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se excluye del desglose de ingresos la fila 'Entschädigung von FC St.Gallen Event AG' (9’975) de b6 por ser intragrupo?",
-   "propuesta": "sí",
-   "tema": "perimetro",
-   "renglon": "Entschädigung von FC St.Gallen Event AG",
-   "texto": "En b3 se compensa con 'Entschädigung an FCSG AG' y neto es cero en el consolidado.",
-   "bloques": [
-    "b6",
-    "b3"
-   ],
-   "afecta_carga": true
+   "afecta_carga": false
   }
  ],
- "observaciones": "b3 es la Erfolgsrechnung consolidada (columnas por sociedad y total 2023/2024); b6 es la individual de FC St. Gallen AG y b9 la individual de FC St. Gallen Event AG, usadas como desglose por sociedad de ingresos y gastos. b1,b2,b4,b5,b7,b8 son balances, excluidos. Columna del ejercicio: total consolidado '2023/2024'."
+ "observaciones": "b3 es la Erfolgsrechnung consolidada (FCSG AG + Event AG) y se usa como estado, columna total 2023/2024. b6 es la Erfolgsrechnung individual de FC St. Gallen AG y b9 la de FC St. Gallen Event AG; ambas sirven como desglose de los renglones del consolidado (por ejemplo, Erträge brutto y Direkte Kosten). La entrega de 9’975 entre las sociedades se elimina en el consolidado. No se encontró un renglón separado de televisión: lo más probable es que esté en 'Diverse Erträge inklusive Swiss Football League' (b6)."
 }

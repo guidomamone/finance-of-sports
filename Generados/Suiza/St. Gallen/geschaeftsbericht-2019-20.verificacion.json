@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.pdf",
  "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.md",
- "generado": "2026-10-19T16:17:40.004Z",
- "estado": "ok",
+ "generado": "2026-10-19T18:48:07.113Z",
+ "estado": "cola",
  "clubId": "stgallen-ch",
  "year": 2020,
  "escala": {
@@ -12,7 +12,9 @@
   "de": null
  },
  "ajustes": null,
- "cola": [],
+ "cola": [
+  "5345b1d"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
@@ -28,7 +30,7 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 1.7541523789077473e-14
+   "dif": 3.774758283725532e-15
   },
   {
    "nombre": "lectura",
@@ -38,12 +40,12 @@
   {
    "nombre": "documento del año 2021",
    "ok": false,
-   "detalle": "ingresos de 2020: 35.052 en este documento y 30.932 en geschaeftsbericht-2020-21.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2020: 29.602 en este documento y 30.932 en geschaeftsbericht-2020-21.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2019",
    "ok": true,
-   "detalle": "ingresos de 2019: 34.815 en geschaeftsbericht-2018-19.pdf y 34.81 en este documento (columna del año anterior)"
+   "detalle": "ingresos de 2019: 28.41 en geschaeftsbericht-2018-19.pdf y 28.41 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
@@ -52,18 +54,22 @@
   }
  ],
  "notas": [
+  "\"Entschädigung von FCSG Event AG\" (L659) y \"Entschädigung an FCSG AG\" (L660) son una compensación intragrupo del mismo importe en el año y en el anterior, de signo opuesto: se eliminan, como en una consolidación",
+  "\"Entschädigung von FCSG Event AG\" (L321) y \"Entschädigung an FCSG AG\" (L329) son una compensación intragrupo del mismo importe en el año y en el anterior, de signo opuesto: se eliminan, como en una consolidación",
+  "\"Entschädigung von FCSG Event AG\" (L194) y \"Entschädigung an FCSG AG\" (L202) son una compensación intragrupo del mismo importe en el año y en el anterior, de signo opuesto: se eliminan, como en una consolidación",
   "la lectura base no cerraba; cerró con la lectura 4",
+  "\"Entschädigung von FCSG Event AG\" (L194) y \"Entschädigung an FCSG AG\" (L202) son una compensación intragrupo del mismo importe en el año y en el anterior, de signo opuesto: se eliminan, como en una consolidación",
+  "\"Entschädigung von FCSG Event AG\" (L194) y \"Entschädigung an FCSG AG\" (L202) son una compensación intragrupo del mismo importe en el año y en el anterior, de signo opuesto: se eliminan, como en una consolidación",
   "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2019-20.pdf",
-  "duda de localizar confirmada por las sumas aunque un año vecino da distinto (escalón 2b; columna, \"-\"): ¿Se carga la columna total 2019/2020 de b1 y no las columnas FCSG AG / Event AG?",
-  "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; cuadro-duplicado, \"-\"): ¿Se dejan afuera de la carga los renglones de b4 (L261, L268, L271-L283) y b7 (L345, L351-L365) que repiten por sociedad las mismas partidas del estado b1?",
-  "duda de extraer ya contestada para el club (perimetro, \"Entschädigung von FCSG Event AG\"): corregir no, en geschaeftsbericht-2023-24.pdf"
+  "duda de extraer ya contestada para el club (perimetro, \"Erträge brutto\"): aceptar, en geschaeftsbericht-2023-24.pdf",
+  "duda de extraer que no afecta la carga: No hay renglón de TV explícito; los derechos SFL parecen estar dentro de L263."
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 35.052,
-  "gastos": 33.154,
+  "ingresos": 29.602,
+  "gastos": 27.704,
   "financiero": -0.135,
   "impuesto": -0.009,
   "resultadoImpreso": 1.754,
@@ -73,124 +79,20 @@
  },
  "lineas": [
   {
-   "etiqueta": "Erträge aus Transfers und Leihgebühren",
+   "etiqueta": "Erträge brutto",
    "lado": "ingreso",
-   "M": 3.252,
-   "pagina": 10,
-   "linea": 262,
-   "origen": "nota que desglosa \"Erträge brutto\""
-  },
-  {
-   "etiqueta": "Diverse Erträge inklusive Swiss Football League",
-   "lado": "ingreso",
-   "M": 4.785,
-   "pagina": 10,
-   "linea": 263,
-   "origen": "nota que desglosa \"Erträge brutto\""
-  },
-  {
-   "etiqueta": "Erträge aus Future Champs Ostschweiz",
-   "lado": "ingreso",
-   "M": 1.946,
-   "pagina": 10,
-   "linea": 264,
-   "origen": "nota que desglosa \"Erträge brutto\""
-  },
-  {
-   "etiqueta": "Erträge von Gönnern und Mitgliedern",
-   "lado": "ingreso",
-   "M": 1.2,
-   "pagina": 10,
-   "linea": 265,
-   "origen": "nota que desglosa \"Erträge brutto\""
-  },
-  {
-   "etiqueta": "Ertrag aus Fussballspielen",
-   "lado": "ingreso",
-   "M": 10.509,
-   "pagina": 11,
-   "linea": 337,
-   "origen": "nota que desglosa \"Erträge brutto\""
-  },
-  {
-   "etiqueta": "Ertrag aus Werbung und Sponsoring",
-   "lado": "ingreso",
-   "M": 7.051,
-   "pagina": 11,
-   "linea": 338,
-   "origen": "nota que desglosa \"Erträge brutto\""
-  },
-  {
-   "etiqueta": "Ertrag aus Merchandising",
-   "lado": "ingreso",
-   "M": 0.747,
-   "pagina": 11,
-   "linea": 339,
-   "origen": "nota que desglosa \"Erträge brutto\""
-  },
-  {
-   "etiqueta": "Ertrag aus Konzert- und Drittveranstaltungen",
-   "lado": "ingreso",
-   "M": 0.01,
-   "pagina": 11,
-   "linea": 340,
-   "origen": "nota que desglosa \"Erträge brutto\""
-  },
-  {
-   "etiqueta": "Ertrag aus Conference Arena / Diverse Erträge",
-   "lado": "ingreso",
-   "M": 0.362,
-   "pagina": 11,
-   "linea": 341,
-   "origen": "nota que desglosa \"Erträge brutto\""
-  },
-  {
-   "etiqueta": "Entschädigung von FCSG Event AG",
-   "lado": "ingreso",
-   "M": 5.45,
+   "M": 29.863,
    "pagina": 9,
-   "linea": 194,
+   "linea": 193,
    "origen": "estado"
   },
   {
-   "etiqueta": "Debitorenverluste",
+   "etiqueta": "Ertragsminderungen",
    "lado": "ingreso",
-   "M": -0.038,
-   "pagina": 10,
-   "linea": 266,
-   "origen": "nota que desglosa \"Ertragsminderungen\""
-  },
-  {
-   "etiqueta": "Veränderung Wertberichtigungen",
-   "lado": "ingreso",
-   "M": -0.286,
-   "pagina": 10,
-   "linea": 267,
-   "origen": "nota que desglosa \"Ertragsminderungen\""
-  },
-  {
-   "etiqueta": "Debitorenverluste",
-   "lado": "ingreso",
-   "M": -0.006,
-   "pagina": 11,
-   "linea": 342,
-   "origen": "nota que desglosa \"Ertragsminderungen\""
-  },
-  {
-   "etiqueta": "Veränderung Wertberichtigungen",
-   "lado": "ingreso",
-   "M": -0.166,
-   "pagina": 11,
-   "linea": 343,
-   "origen": "nota que desglosa \"Ertragsminderungen\""
-  },
-  {
-   "etiqueta": "Diverse Ertragsminderungen",
-   "lado": "ingreso",
-   "M": -0.169,
-   "pagina": 11,
-   "linea": 344,
-   "origen": "nota que desglosa \"Ertragsminderungen\""
+   "M": -0.666,
+   "pagina": 9,
+   "linea": 195,
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
   },
   {
    "etiqueta": "Ausserordentlicher Ertrag",
@@ -201,60 +103,12 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Aufwand für Spielbetrieb",
+   "etiqueta": "Direkte Kosten",
    "lado": "gasto",
-   "M": 2.358,
-   "pagina": 10,
-   "linea": 269,
-   "origen": "nota que desglosa \"Direkte Kosten\""
-  },
-  {
-   "etiqueta": "Aufwand für Transfers",
-   "lado": "gasto",
-   "M": 0.993,
-   "pagina": 10,
-   "linea": 270,
-   "origen": "nota que desglosa \"Direkte Kosten\""
-  },
-  {
-   "etiqueta": "Aufwand für Spielorganisation Fussball",
-   "lado": "gasto",
-   "M": 3.805,
-   "pagina": 11,
-   "linea": 346,
-   "origen": "nota que desglosa \"Direkte Kosten\""
-  },
-  {
-   "etiqueta": "Aufwand für Werbung und Sponsoring",
-   "lado": "gasto",
-   "M": 0.448,
-   "pagina": 11,
-   "linea": 347,
-   "origen": "nota que desglosa \"Direkte Kosten\""
-  },
-  {
-   "etiqueta": "Aufwand für Merchandising",
-   "lado": "gasto",
-   "M": 0.478,
-   "pagina": 11,
-   "linea": 348,
-   "origen": "nota que desglosa \"Direkte Kosten\""
-  },
-  {
-   "etiqueta": "Aufwand für Konzert- und Drittveranstaltungen",
-   "lado": "gasto",
-   "M": 0.007,
-   "pagina": 11,
-   "linea": 349,
-   "origen": "nota que desglosa \"Direkte Kosten\""
-  },
-  {
-   "etiqueta": "Aufwand für Conference Arena / Diverses",
-   "lado": "gasto",
-   "M": 0.112,
-   "pagina": 11,
-   "linea": 350,
-   "origen": "nota que desglosa \"Direkte Kosten\""
+   "M": 8.201,
+   "pagina": 9,
+   "linea": 196,
+   "origen": "estado"
   },
   {
    "etiqueta": "Personalaufwand",
@@ -270,14 +124,6 @@
    "M": 3.77,
    "pagina": 9,
    "linea": 200,
-   "origen": "estado"
-  },
-  {
-   "etiqueta": "Entschädigung an FCSG AG",
-   "lado": "gasto",
-   "M": 5.45,
-   "pagina": 9,
-   "linea": 202,
    "origen": "estado"
   },
   {

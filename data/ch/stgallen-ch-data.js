@@ -14,6 +14,13 @@ const stgallenchRevenueLinesByYear = {
     { rawLabel:'Veränderung Wertberichtigungen', normalizedCategory:'other_income', amountNative:0.021, disclosureLevel:'aggregated' },
     { rawLabel:'Ertragsminderungen', normalizedCategory:'other_income', amountNative:-0.484, disclosureLevel:'aggregated' },
   ],
+  2019: [
+    { rawLabel:'Erträge brutto', normalizedCategory:'lump_football_operations', amountNative:28.001, disclosureLevel:'aggregated' },
+    { rawLabel:'Entschädigung von FCSG Event AG', normalizedCategory:'other_income', amountNative:6.405, disclosureLevel:'aggregated' },
+    { rawLabel:'Ertragsminderungen', normalizedCategory:'other_income', amountNative:-0.304, disclosureLevel:'aggregated' },
+    { rawLabel:'Ausserordentlicher Ertrag', normalizedCategory:'other_income', amountNative:0.713, disclosureLevel:'aggregated' },
+    { rawLabel:'Auflösung Rückstellungen', normalizedCategory:'other_income', amountNative:0, disclosureLevel:'aggregated' },
+  ],
 };
 const stgallenchExpenseLinesByYear = {
   2025: [
@@ -29,6 +36,16 @@ const stgallenchExpenseLinesByYear = {
     { rawLabel:'Sonstiger Betriebsaufwand', normalizedCategory:'admin_general_expense', amountNative:-5.372, disclosureLevel:'aggregated' },
     { rawLabel:'Abschreibungen Sachanlagen', normalizedCategory:'depreciation', amountNative:-1.362, disclosureLevel:'aggregated' },
     { rawLabel:'Abschreibungen Spielerwerte', normalizedCategory:'player_amortisation', amountNative:-2.059, disclosureLevel:'aggregated' },
+  ],
+  2019: [
+    { rawLabel:'Direkte Kosten', normalizedCategory:'lump_football_operations_expense', amountNative:-8.165, disclosureLevel:'aggregated' },
+    { rawLabel:'Personalaufwand', normalizedCategory:'wages_squad', amountNative:-14.747, disclosureLevel:'aggregated' },
+    { rawLabel:'Sonstiger Betriebsaufwand', normalizedCategory:'admin_general_expense', amountNative:-4.145, disclosureLevel:'aggregated' },
+    { rawLabel:'Entschädigung an FCSG AG', normalizedCategory:'other_expenses', amountNative:-6.405, disclosureLevel:'aggregated' },
+    { rawLabel:'Abschreibungen Spielerwerte', normalizedCategory:'player_amortisation', amountNative:-0.846, disclosureLevel:'aggregated' },
+    { rawLabel:'Abschreibungen Sachanlagen', normalizedCategory:'depreciation', amountNative:-1.339, disclosureLevel:'aggregated' },
+    { rawLabel:'Ausserordentlicher Aufwand', normalizedCategory:'exceptional_items', amountNative:-0.16, disclosureLevel:'aggregated' },
+    { rawLabel:'Ausserordentliche Abschreibungen', normalizedCategory:'exceptional_items', amountNative:-3.999, disclosureLevel:'aggregated' },
   ],
 };
 const stgallenchFiscalYearMeta = {
@@ -46,6 +63,24 @@ const stgallenchFiscalYearMeta = {
     incluidoEn:{"broadcasting":{"en":"other_income","posible":true}},
     grossDebt:null, cash:null,
     officialTotalRevenue:45.101, officialTotalExpenses:44.681, officialPAT:0.117,
+  },
+  2019: {
+    currency:'CHF', fxRef:'CHF@2019-06-30',
+    sourceId:'stgallen-ch-geschaeftsbericht-2018-19',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.067, tax:-0.004,
+    extraRows: [
+      {label:'Finanzerfolg', value:-0.067},
+      {label:'Steuern', value:-0.004},
+    ],
+    sinDesglose: [
+      {renglon:'Erträge brutto', lado:'revenue', importe:28.001, motivo:'Claude 2026-10-19 (subagente Sonnet, revisado): Erträge brutto del grupo consolidado AG + Event AG (renglón combinado con subtotales mezclados); sin desglose único: lump_football_operations'},
+      {renglon:'Direkte Kosten', lado:'expense', importe:8.165, motivo:'Claude 2026-10-19 (subagente Sonnet, revisado por suma): Direkte Kosten mezcla Spielbetrieb, Transfers, Werbung, Merchandising y Catering de las dos sociedades; no es solo organización de partidos'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:34.815, officialTotalExpenses:35.647, officialPAT:-5.063,
   },
 };
 const stgallenchPresupuestoOverlayByYear = {};
@@ -66,6 +101,11 @@ Object.assign(sources, {
   'stgallen-ch-geschaeftsbericht-2024-25': {
     id:'stgallen-ch-geschaeftsbericht-2024-25', clubId:'stgallen-ch',
     title:'FC St.Gallen AG — geschaeftsbericht-2024-25 (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'stgallen-ch-geschaeftsbericht-2018-19': {
+    id:'stgallen-ch-geschaeftsbericht-2018-19', clubId:'stgallen-ch',
+    title:'FC St.Gallen AG — geschaeftsbericht-2018-19 (ejercicio 2019)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

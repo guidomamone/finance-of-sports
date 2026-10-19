@@ -1,8 +1,8 @@
 {
  "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2020-21.pdf",
  "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2020-21.md",
- "generado": "2026-10-19T16:17:40.032Z",
- "estado": "ok",
+ "generado": "2026-10-19T18:48:07.150Z",
+ "estado": "cola",
  "clubId": "stgallen-ch",
  "year": 2021,
  "escala": {
@@ -12,12 +12,14 @@
   "de": null
  },
  "ajustes": null,
- "cola": [],
+ "cola": [
+  "3dee14f"
+ ],
  "chequeos": [
   {
    "nombre": "total de ingresos",
-   "ok": null,
-   "detalle": "el documento no lo imprime"
+   "ok": true,
+   "detalle": "\"Erträge brutto\" 25.901 cierra; además se suman 5 línea(s) fuera de ese total (3.891)"
   },
   {
    "nombre": "total de gastos",
@@ -31,33 +33,39 @@
    "dif": 5.440092820663267e-15
   },
   {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 2 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón)"
+  },
+  {
    "nombre": "documento del año 2022",
-   "ok": false,
-   "detalle": "ingresos de 2021: 29.792 en este documento y 32.942 en geschaeftsbericht-2021-22.pdf (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2021: 29.792 en este documento y 29.792 en geschaeftsbericht-2021-22.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2020",
    "ok": false,
-   "detalle": "ingresos de 2020: 35.052 en geschaeftsbericht-2019-20.pdf y 30.932 en este documento (columna del año anterior)"
+   "detalle": "ingresos de 2020: 29.602 en geschaeftsbericht-2019-20.pdf y 30.932 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "el sitio no tiene 2020: este chequeo no se puede hacer"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
   }
  ],
  "notas": [
-  "duda de localizar ya contestada para el club (perimetro, \"Erträge brutto\"): aceptar, en geschaeftsbericht-2023-24.pdf",
-  "duda de extraer ya contestada para el club (antes de su alta) (usar-cuadro-por-segmento, \"Erträge brutto\"): aceptar, en geschaeftsbericht-2024-25.pdf",
-  "duda de extraer que no afecta la carga: L659 y L660 se compensan (3’150 y -3’150) y no afectan el total; se cargan como 'otro'."
+  "\"Entschädigung von FCSG Event AG\" (L256) y \"Entschädigung an FCSG AG\" (L257) son una compensación intragrupo del mismo importe en el año y en el anterior, de signo opuesto: se eliminan, como en una consolidación",
+  "\"Entschädigung von FCSG Event AG\" (L194) y \"Entschädigung an FCSG AG\" (L202) son una compensación intragrupo del mismo importe en el año y en el anterior, de signo opuesto: se eliminan, como en una consolidación",
+  "\"Entschädigung von FCSG Event AG\" (L659) y \"Entschädigung an FCSG AG\" (L660) son una compensación intragrupo del mismo importe en el año y en el anterior, de signo opuesto: se eliminan, como en una consolidación",
+  "la lectura base no cerraba; cerró con la lectura 2",
+  "\"Entschädigung von FCSG Event AG\" (L659) y \"Entschädigung an FCSG AG\" (L660) son una compensación intragrupo del mismo importe en el año y en el anterior, de signo opuesto: se eliminan, como en una consolidación",
+  "\"Entschädigung von FCSG Event AG\" (L659) y \"Entschädigung an FCSG AG\" (L660) son una compensación intragrupo del mismo importe en el año y en el anterior, de signo opuesto: se eliminan, como en una consolidación",
+  "duda de localizar ya contestada para el club (antes de su alta) (usar-cuadro-por-segmento, \"Erträge brutto\"): aceptar, en geschaeftsbericht-2024-25.pdf",
+  "duda de extraer que no afecta la carga: En b1, b4 y b7 no aparece renglón de televisión; los ingresos de la liga (incl. TV) parecen agrupados en L719.",
+  "duda de extraer ya contestada para el club (perimetro, \"-\"): aceptar, en geschaeftsbericht-2019-20.pdf"
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 29.792,
@@ -280,43 +288,5 @@
    "M": -0.003,
    "linea": 668
   }
- ],
- "primerAnio": {
-  "escalon": 3,
-  "estado": "confirmado",
-  "clave": "47851181859ecd6209d311700d1f4cb771103958",
-  "rango": [
-   648,
-   672
-  ],
-  "lineasCargadas": [
-   718,
-   719,
-   720,
-   721,
-   791,
-   792,
-   793,
-   795,
-   723,
-   796,
-   797,
-   798,
-   666,
-   725,
-   726,
-   800,
-   801,
-   802,
-   804,
-   655,
-   657,
-   662,
-   663,
-   667,
-   665,
-   668
-  ],
-  "user": "ESTADO DE RESULTADOS (líneas 648 a 672 del .md):\nL649: | | FCSG AG 2020/2021 | Event AG 2020/2021 | 2020/2021 | FCSG AG 2019/2020 | Event AG 2019/2020 | 2019/2020 | Veränderung |\nL650: | --- | --- | --- | --- | --- | --- | --- | --- |\nL651: | Erträge brutto | 13’248 | 12’653 | 25’901 | 11’183 | 18’680 | 29’863 | -3’962 |\nL652: | Ertragsminderungen | 241 | -172 | 69 | -324 | -342 | -666 | 735 |\nL653: | Direkte Kosten | -3’799 | -4’854 | -8’653 | -3’351 | -4’850 | -8’201 | -452 |\nL654: | Bruttoergebnis I | 9’690 | 7’627 | 17’317 | 7’508 | 13’488 | 20’996 | -3’679 |\nL655: | Personalaufwand | -11’430 | -2’628 | -14’058 | -10’337 | -3’308 | -13’645 | -413 |\nL656: | Bruttoergebnis II | -1’740 | 4’999 | 3’259 | -2’829 | 10’180 | 7’351 | -4’092 |\nL657: | Sonstiger Betriebsaufwand | -1’022 | -2’848 | -3’870 | -829 | -2’941 | -3’770 | -100 |\nL658: | EBITDA vor Entschädigung an FCSG AG | -2’762 | 2’151 | -611 | -3’658 | 7’239 | 3’581 | -4’192 |\nL659: | Entschädigung von FCSG Event AG | 3’150 | 0 | 3’150 | 5’450 | 0 | 5’450 | -2’300 |\nL660: | Entschädigung an FCSG AG | 0 | -3’150 | -3’150 | 0 | -5’450 | -5’450 | 2’300 |\nL661: | EBITDA | 388 | -999 | -611 | 1’792 | 1’789 | 3’581 | -4’192 |\nL662: | Abschreibungen Sachanlagen | -100 | -1’462 | -1’562 | -118 | -1’267 | -1’385 | -177 |\nL663: | Abschreibungen Spielerwerte | -853 | 0 | -853 | -690 | 0 | -690 | -163 |\nL664: | EBIT | -565 | -2’461 | -3’026 | 984 | 522 | 1’506 | -4’532 |\nL665: | Finanzerfolg | 120 | -33 | 87 | -130 | -5 | -135 | 222 |\nL666: | Ausserordentlicher Ertrag | 797 | 3’025 | 3’822 | 325 | 80 | 405 | 3’417 |\nL667: | Ausserordentlicher Aufwand | 0 | -1 | -1 | -4 | -9 | -13 | 12 |\nL668: | Steuern | -2 | -1 | -3 | -4 | -5 | -9 | 6 |\nL669: | Jahresergebnisse | 350 | 529 | 879 | 1’171 | 583 | 1’754 | -875 |\nL671: 16\n\nLO QUE SE CARGA:\n- ingreso · \"Erträge aus Transfers und Leihgebühren\" · 4.717 · L718 (de una nota)\n- ingreso · \"Diverse Erträge inklusive Swiss Football League\" · 6.116 · L719 (de una nota)\n- ingreso · \"Erträge aus Future Champs Ostschweiz\" · 1.42 · L720 (de una nota)\n- ingreso · \"Erträge von Gönnern und Mitgliedern\" · 0.995 · L721 (de una nota)\n- ingreso · \"Ertrag aus Fussballspielen\" · 5.358 · L791 (de una nota)\n- ingreso · \"Ertrag aus Werbung und Sponsoring\" · 6.07 · L792 (de una nota)\n- ingreso · \"Ertrag aus Merchandising\" · 1.107 · L793 (de una nota)\n- ingreso · \"Ertrag aus Conference Arena / Diverse Erträge\" · 0.118 · L795 (de una nota)\n- ingreso · \"Veränderung Wertberichtigungen\" · 0.241 · L723 (de una nota)\n- ingreso · \"Debitorenverluste\" · -0.029 · L796 (de una nota)\n- ingreso · \"Veränderung Wertberichtigungen\" · -0.053 · L797 (de una nota)\n- ingreso · \"Diverse Ertragsminderungen\" · -0.09 · L798 (de una nota)\n- ingreso · \"Ausserordentlicher Ertrag\" · 3.822 · L666\n- gasto · \"Aufwand für Spielbetrieb\" · 2.289 · L725 (de una nota)\n- gasto · \"Aufwand für Transfers\" · 1.51 · L726 (de una nota)\n- gasto · \"Aufwand für Spielorganisation Fussball\" · 2.961 · L800 (de una nota)\n- gasto · \"Aufwand für Werbung und Sponsoring\" · 0.666 · L801 (de una nota)\n- gasto · \"Aufwand für Merchandising\" · 1.043 · L802 (de una nota)\n- gasto · \"Aufwand für Conference Arena / Diverses\" · 0.184 · L804 (de una nota)\n- gasto · \"Personalaufwand\" · 14.058 · L655\n- gasto · \"Sonstiger Betriebsaufwand\" · 3.87 · L657\n- gasto · \"Abschreibungen Sachanlagen\" · 1.562 · L662\n- gasto · \"Abschreibungen Spielerwerte\" · 0.853 · L663\n- gasto · \"Ausserordentlicher Aufwand\" · 0.001 · L667\n- financiero · \"Finanzerfolg\" · 0.087 · L665\n- impuesto · \"Steuern\" · -0.003 · L668"
- }
+ ]
 }

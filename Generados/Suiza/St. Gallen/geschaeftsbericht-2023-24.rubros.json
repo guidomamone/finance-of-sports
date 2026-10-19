@@ -3,7 +3,7 @@
   "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2023-24.pdf",
   "club": "stgallen-ch",
   "year": 2024,
-  "generatedAt": "2026-10-19T15:34:58.546Z",
+  "generatedAt": "2026-10-19T18:48:07.178Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
@@ -24,7 +24,7 @@
       "values": [
         5.565
       ],
-      "glosa": "Ingresos diversos incluida la Swiss Football League"
+      "glosa": "Ingresos diversos, incluida la Swiss Football League"
     },
     {
       "label": "Erträge aus Future Champs Ostschweiz",
@@ -74,7 +74,7 @@
       "values": [
         4.916
       ],
-      "glosa": "Ingresos por hospitalidad y palcos"
+      "glosa": "Ingresos por hospitality y palcos"
     },
     {
       "label": "Ertrag aus Merchandising",
@@ -124,35 +124,15 @@
       "values": [
         -0.369
       ],
-      "glosa": "Reducciones de ingresos"
+      "glosa": "Minoraciones de ingresos"
     },
     {
-      "label": "Entschädigung von FCSG Event AG",
+      "label": "Ausserordentlicher Ertrag",
       "lado": "revenue",
       "page": 9,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        9.975
-      ],
-      "glosa": "Compensación de FCSG Event AG"
-    },
-    {
-      "label": "Ausserordentlicher Ertrag",
-      "lado": "revenue",
-      "page": 10,
-      "section": "nota que desglosa \"Ausserordentlicher Ertrag\"",
-      "values": [
-        0.753
-      ],
-      "glosa": "Ingresos extraordinarios"
-    },
-    {
-      "label": "Ausserordentlicher Ertrag",
-      "lado": "revenue",
-      "page": 11,
-      "section": "nota que desglosa \"Ausserordentlicher Ertrag\"",
-      "values": [
-        0.729
+        1.482
       ],
       "glosa": "Ingresos extraordinarios"
     },
@@ -224,7 +204,7 @@
       "values": [
         0.015
       ],
-      "glosa": "Gastos por eventos de terceros"
+      "glosa": "Gastos de eventos de terceros"
     },
     {
       "label": "Aufwand für Conference Arena / Diverses",
@@ -234,75 +214,35 @@
       "values": [
         0.101
       ],
-      "glosa": "Gastos por Conference Arena / Varios"
+      "glosa": "Gastos de Conference Arena / Varios"
     },
     {
       "label": "Personalaufwand",
-      "lado": "expense",
-      "page": 10,
-      "section": "nota que desglosa \"Personalaufwand\"",
-      "values": [
-        16.223
-      ],
-      "glosa": "Gastos de personal"
-    },
-    {
-      "label": "Personalaufwand",
-      "lado": "expense",
-      "page": 11,
-      "section": "nota que desglosa \"Personalaufwand\"",
-      "values": [
-        3.727
-      ],
-      "glosa": "Gastos de personal"
-    },
-    {
-      "label": "Sonstiger Betriebsaufwand",
-      "lado": "expense",
-      "page": 10,
-      "section": "nota que desglosa \"Sonstiger Betriebsaufwand\"",
-      "values": [
-        1.376
-      ],
-      "glosa": "Otros gastos de explotación"
-    },
-    {
-      "label": "Sonstiger Betriebsaufwand",
-      "lado": "expense",
-      "page": 11,
-      "section": "nota que desglosa \"Sonstiger Betriebsaufwand\"",
-      "values": [
-        3.624
-      ],
-      "glosa": "Otros gastos de explotación"
-    },
-    {
-      "label": "Entschädigung an FCSG AG",
       "lado": "expense",
       "page": 9,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        9.975
+        19.95
       ],
-      "glosa": "Compensación a FCSG AG"
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Sonstiger Betriebsaufwand",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        5
+      ],
+      "glosa": "Otros gastos de explotación"
     },
     {
       "label": "Abschreibungen Sachanlagen",
       "lado": "expense",
-      "page": 10,
-      "section": "nota que desglosa \"Abschreibungen Sachanlagen\"",
+      "page": 9,
+      "section": "estado (lectura 5: hoja)",
       "values": [
-        0.09
-      ],
-      "glosa": "Amortización del inmovilizado material"
-    },
-    {
-      "label": "Abschreibungen Sachanlagen",
-      "lado": "expense",
-      "page": 11,
-      "section": "nota que desglosa \"Abschreibungen Sachanlagen\"",
-      "values": [
-        1.283
+        1.373
       ],
       "glosa": "Amortización del inmovilizado material"
     },
@@ -310,21 +250,11 @@
       "label": "Abschreibungen Spielerwerte",
       "lado": "expense",
       "page": 9,
-      "section": "estado",
+      "section": "estado (lectura 5: hoja)",
       "values": [
         1.279
       ],
-      "glosa": "Amortización del valor de jugadores"
-    },
-    {
-      "label": "Ausserordentlicher Aufwand",
-      "lado": "expense",
-      "page": 9,
-      "section": "estado",
-      "values": [
-        0
-      ],
-      "glosa": "Gastos extraordinarios"
+      "glosa": "Amortización de derechos federativos"
     }
   ]
 }

@@ -3,8 +3,9 @@
  "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2019-20.md",
  "mdSha1": "7d2cdc10fd55f7ed4f334c9de6e5ea3daf320df7",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T15:22:04.449Z",
+ "generado": "2026-10-19T18:42:33.125Z",
  "perimetroClub": null,
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 9,
@@ -92,11 +93,11 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se usan las Erfolgsrechnungen individuales de FC St. Gallen AG (b4) y Event AG (b7) como desglose de los renglones de la consolidada (b1)?",
+   "pregunta": "¿Se usa la cuenta consolidada (b1) como estado principal y las cuentas individuales de FC St. Gallen AG (b4) y FC St. Gallen Event AG (b7) como desglose de sus renglones?",
    "propuesta": "sí",
    "tema": "perimetro",
    "renglon": "",
-   "texto": "b1 es consolidada con columnas por sociedad y renglones agregados (Erträge brutto); b4 y b7 abren ingresos y gastos por sociedad, pero incluyen la Entschädigung intercompañía.",
+   "texto": "El sitio asocia el club a FC St.Gallen AG, pero los ingresos operativos (taquilla, sponsoring, TV) parecen estar en Event AG; b1 consolida ambas.",
    "bloques": [
     "b1",
     "b4",
@@ -105,16 +106,17 @@
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se carga la columna total 2019/2020 de b1 y no las columnas FCSG AG / Event AG?",
+   "pregunta": "¿Los derechos de TV están dentro de 'Diverse Erträge inklusive Swiss Football League' (b4) o en algún renglón de b7?",
    "propuesta": "sí",
-   "tema": "columna",
-   "renglon": "",
-   "texto": "El encabezado de b1 tiene columnas por sociedad además del total consolidado.",
+   "tema": "otro",
+   "renglon": "Diverse Erträge inklusive Swiss Football League",
+   "texto": "No aparece un renglón explícito de Televisión; los ingresos SFL suelen incluir derechos de TV.",
    "bloques": [
-    "b1"
+    "b4",
+    "b7"
    ],
    "afecta_carga": true
   }
  ],
- "observaciones": "b1 es la Erfolgsrechnung consolidada (columnas FCSG AG, Event AG y total). b4 es la individual de FC St. Gallen AG y b7 la de FC St. Gallen Event AG; se proponen como desglose. b2,b3,b5,b6 balances y b8 cash flow, excluidos. Ojo con la eliminación intercompañía 'Entschädigung von FCSG Event AG'."
+ "observaciones": "b1 es la Erfolgsrechnung consolidada (columnas FCSG AG, Event AG y total 2019/2020). b4 es la individual de FC St. Gallen AG y b7 la de FC St. Gallen Event AG; se eligen como desglose porque abren renglones de ingresos (Fussballspiele, Werbung/Sponsoring, Merchandising, SFL/TV) y gastos. La 'Entschädigung von FCSG Event AG' es intragrupo y se elimina en consolidación. b2,b3,b5,b6 balances y b8 cash flow excluidos."
 }

@@ -4,7 +4,7 @@
  "mdSha1": "cb10ec21e3772043be2a9955d0266da1b9872b70",
  "ubicacionSha1": "88683dc489c6f63f35a0672295d65e6befcdbdbb",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T15:25:55.456Z",
+ "generado": "2026-10-19T18:46:00.055Z",
  "ubicacion": {
   "estado": [
    "b1"
@@ -72,7 +72,7 @@
    "etiqueta": "Bruttoergebnis I",
    "actual": "17’317",
    "anterior": "20’996",
-   "tipo": "resultado",
+   "tipo": "subtotal",
    "lado": "resultado",
    "detalla_a": null
   },
@@ -92,7 +92,7 @@
    "etiqueta": "Bruttoergebnis II",
    "actual": "3’259",
    "anterior": "7’351",
-   "tipo": "resultado",
+   "tipo": "subtotal",
    "lado": "resultado",
    "detalla_a": null
   },
@@ -225,6 +225,16 @@
    "tipo": "resultado",
    "lado": "resultado",
    "detalla_a": null
+  },
+  {
+   "bloque": "b4",
+   "linea": 717,
+   "etiqueta": "Entschädigung von FC St.Gallen Event AG",
+   "actual": "3’150",
+   "anterior": "5’450",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Entschädigung von FCSG Event AG"
   },
   {
    "bloque": "b4",
@@ -437,7 +447,10 @@
    "detalla_a": "Direkte Kosten"
   }
  ],
- "total_ingresos": null,
+ "total_ingresos": {
+  "linea": 651,
+  "actual": "25’901"
+ },
  "total_gastos": null,
  "resultado": {
   "linea": 669,
@@ -446,29 +459,29 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se cargan solo los renglones de detalle de b4 y b7 (ingresos, minderungen y costos directos) dejando afuera sus subtotales y demás filas que repiten las columnas FCSG AG y Event AG de b1?",
+   "pregunta": "¿Se confirma que el documento no tiene ninguna fila de 'Televisión' y que los derechos de TV están dentro de 'Diverse Erträge inklusive Swiss Football League' (L719)?",
    "propuesta": "sí",
-   "tema": "usar-cuadro-por-segmento",
+   "tema": "otro",
    "renglon": "Erträge brutto",
-   "texto": "b4 (L715-L739) y b7 (L789-L818) son las cuentas de cada sociedad, iguales a las columnas por entidad de b1; solo sus desgloses de L718-L726 y L791-L804 agregan detalle.",
+   "texto": "En b1, b4 y b7 no aparece renglón de televisión; los ingresos de la liga (incl. TV) parecen agrupados en L719.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se cargan solo los renglones de b4 (FCSG AG) y b7 (Event AG) como desglose de b1 sin cargar sus subtotales y resultados por sociedad?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "b4 y b7 son las cuentas por sociedad que componen la columna consolidada 2020/2021 de b1; sus subtotales duplican las columnas de b1.",
    "bloques": [
     "b1",
     "b4",
     "b7"
    ],
    "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se deja afuera la compensación intercompañía 'Entschädigung von FCSG Event AG'/'Entschädigung an FCSG AG' (L659-L660) por neutralizarse en el consolidado?",
-   "propuesta": "no",
-   "tema": "perimetro",
-   "renglon": "Entschädigung von FCSG Event AG",
-   "texto": "L659 y L660 se compensan (3’150 y -3’150) y no afectan el total; se cargan como 'otro'.",
-   "bloques": [
-    "b1"
-   ],
-   "afecta_carga": false
   }
  ],
- "observaciones": "b1 es un cuadro con columnas por sociedad (FCSG AG, Event AG) y consolidado; se tomó la columna consolidada 2020/2021. b4 y b7 son las cuentas de cada sociedad; se extrajeron solo los desgloses de Erträge brutto, Ertragsminderungen y Direkte Kosten. La suma de ingresos de b4 (L718-L721, sin la Entschädigung) 13’248 y de b7 (L791-L795) 12’653 coincide con Erträge brutto por sociedad."
+ "observaciones": "b1 es un cuadro por sociedad con columna total 2020/2021 (usada). b4 (FCSG AG) y b7 (Event AG) desglosan los renglones de ingresos y costos directos; no se cargaron sus subtotales ni las filas repetidas de personal, abschreibungen, finanz, etc., que ya figuran en las columnas por sociedad de b1. No hay renglón de Televisión impreso."
 }
