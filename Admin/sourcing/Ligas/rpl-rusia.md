@@ -4,7 +4,7 @@
 anual · barrido: 1 (Sonnet y Claude, sesión Finanzas 4) — 2026-10-19
 
 - Entidad: АФК «Российская Премьер-Лига» (RPL, antes НП «Российская футбольная Премьер-Лига»), ИНН 7704233830, ОГРН 1037739291127, Moscú, activa. Es una asociación (ОКОПФ 20600).
-  Organiza la Premier Liga; la Primera Liga (FNL) la organiza otra entidad, no buscada.
+  Organiza la Premier Liga; la Primera Liga (FNL) la organiza otra entidad (`Admin/sourcing/Ligas/fnl-rusia.md`).
 - Canal: GIR BO, método de `Admin/sourcing/Rusia/_notas-generales.md`. Id de organización 6583102. Ejercicios 2021 a 2025: `curl https://bo.nalog.gov.ru/nbo/organizations/6583102/bfo/`;
   ids de reporte: 2025 `57019415`, 2024 `52926660`, 2023 `49491409`, 2022 `47134073`, 2021 `42857349` (el 2021 figura sin dictamen). Dictamen y estados: `curl https://bo.nalog.gov.ru/download/audit/<reportId>`.
   Ingresos (форма 2, código 2110, miles de rublos): 772.633 en 2025, 714.045 en 2024, 544.814 en 2023.
