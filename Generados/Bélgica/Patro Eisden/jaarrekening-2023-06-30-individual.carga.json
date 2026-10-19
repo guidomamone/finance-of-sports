@@ -1,13 +1,9 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2023-06-30-individual.pdf",
- "generado": "2026-10-19T14:54:34.337Z",
- "frena": [
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  }
- ],
+ "generado": "2026-10-19T16:25:22.684Z",
+ "frena": [],
  "avisos": [
+  "categorías en 0 aun después del reintento (se carga así): Televisión, Estadio",
   "gastos: ningún total impreso igual a la suma de las líneas (-5.65578); queda la suma, verificada por el resultado del ejercicio"
  ],
  "ejercicio": {
@@ -372,16 +368,6 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  },
-  {
-   "categoria": "Estadio",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (estado)": "gastos sin signo (se invierten)",
@@ -461,8 +447,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 2,
   "lineasGasto": 8,
   "metaFilas": 3,

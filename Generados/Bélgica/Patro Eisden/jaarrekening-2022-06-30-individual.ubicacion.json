@@ -3,7 +3,9 @@
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2022-06-30-individual.md",
  "mdSha1": "f322885bb5e90c1b0cf38172913ada49610fa5a1",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-18T15:27:58.814Z",
+ "generado": "2026-10-19T16:24:23.392Z",
+ "perimetroClub": null,
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 1,
@@ -275,11 +277,9 @@
   "b4"
  ],
  "notas_ingresos": [],
- "notas_gastos": [
-  "b13"
- ],
+ "notas_gastos": [],
  "escala": "unidades",
- "escala_evidencia": "JAARREKENING in EURO (formulario VKT-VZW, importes en euro)",
+ "escala_evidencia": "JAARREKENING in EURO (formulario normalizado belga VKT-VZW, importes en euros)",
  "moneda": "EUR",
  "columna_ejercicio": "Boekjaar",
  "columna_anterior": "Vorig boekjaar",
@@ -287,27 +287,27 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se deja afuera de la carga el cuadro b28 (impacto de costos e ingresos de ejercicios anteriores por código de cuenta)?",
+   "pregunta": "¿Se acepta que el documento no tiene ningún cuadro que abra ingresos por Televisión ni por Estadio, y se carga solo la resultatenrekening (b4) que empieza en Brutomarge?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Brutomarge (+)/(-)",
+   "texto": "El modelo abreviado VKT-VZW (b4) agrupa ingresos en la brutomarge y ninguna nota del índice desglosa TV o estadio.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera el cuadro b28 de impacto de costos/ingresos de ejercicios anteriores por código de cuenta?",
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "",
-   "texto": "b28 no desglosa renglones del estado del ejercicio: muestra el impacto en el resultado del ejercicio anterior y tiene una fila ilegible (640/83).",
+   "texto": "b28 (pág. 22) muestra importes por código contable de ajustes de ejercicios previos, no desglose de renglones del estado.",
    "bloques": [
     "b28"
    ],
    "afecta_carga": false
-  },
-  {
-   "pregunta": "¿El cuadro b13 (6.4 Resultaten) tiene importes de gastos de personal o financieros que desglosan renglones de b4 y conviene cargarlo?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "",
-   "texto": "b13 incluye personal y resultados financieros (geactiveerde interesten); puede contener solo datos de plantilla.",
-   "bloques": [
-    "b13"
-   ],
-   "afecta_carga": true
   }
  ],
- "observaciones": "Cuentas anuales individuales de la VZW (modelo abreviado VKT-VZW). El estado de resultados es b4, que empieza en Brutomarge, así que los ingresos no están desglosados. b13 es la nota de resultados. b24 (sociale balans) muestra los gastos de personal, pero es información social y no se elige."
+ "observaciones": "Cuentas anuales individuales de la VZW Patro Eisden Maasmechelen, formulario abreviado VKT-VZW. Estado de resultados en b4 (pág. 6). b13 contiene solo datos de personal y resultados financieros sin desglose de ingresos. b19 menciona alquiler de estadio como compromiso fuera de balance, no como ingreso. No hay notas que abran Televisión ni Estadio."
 }

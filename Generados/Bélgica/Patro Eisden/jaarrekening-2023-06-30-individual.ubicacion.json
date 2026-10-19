@@ -3,7 +3,9 @@
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2023-06-30-individual.md",
  "mdSha1": "c5e4f94a66df9aea895497527fb7c0babff25fa0",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-18T15:27:58.891Z",
+ "generado": "2026-10-19T16:24:58.303Z",
+ "perimetroClub": null,
+ "indiceAmpliado": 2,
  "bloques": {
   "b1": {
    "pagina": 1,
@@ -306,12 +308,10 @@
  "estado": [
   "b9"
  ],
- "notas_ingresos": [
-  "b18"
- ],
+ "notas_ingresos": [],
  "notas_gastos": [],
- "escala": "no se sabe",
- "escala_evidencia": "El índice no muestra la frase de unidad; los modelos belgas VKT-VZW se expresan normalmente en euros (unidades), y la nota b32 muestra importes con céntimos (2.828,41).",
+ "escala": "unidades",
+ "escala_evidencia": "Formato normalizado belga (NBB) en euros; importes como 23.567 y 2.828,41 sin indicación de miles",
  "moneda": "EUR",
  "columna_ejercicio": "Boekjaar",
  "columna_anterior": "Vorig boekjaar",
@@ -319,27 +319,16 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se cargan los importes de la Resultatenrekening (b9) en euros (unidades)?",
-   "propuesta": "sí",
-   "tema": "escala",
-   "renglon": "",
-   "texto": "No se ve en el índice la indicación de la unidad; los modelos VKT-VZW suelen estar en EUR.",
-   "bloques": [
-    "b9"
-   ],
-   "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se deja afuera de la carga el cuadro de impacto de costos de ejercicios anteriores (b32, códigos 60/61/74, total 18.522,95)?",
+   "pregunta": "¿Se confirma que el documento no tiene ningún cuadro que abra Televisión o Estadio y que esos renglones no se cargan por separado?",
    "propuesta": "sí",
    "tema": "otro",
-   "renglon": "",
-   "texto": "Es un detalle de la parte de los gastos y los ingresos que corresponde a ejercicios anteriores, no un desglose por categoría.",
+   "renglon": "Omzet",
+   "texto": "El esquema abreviado VKT-VZW (b9) solo muestra Brutomarge/Omzet y ninguna nota desglosa ingresos por categoría.",
    "bloques": [
-    "b32"
+    "b9"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "Cuentas anuales individuales (modelo VKT-VZW) del ejercicio 01-07-2022 a 30-06-2023. Estado de resultados: b9. La nota b18 abre los ingresos y gastos no recurrentes (76A 23.567; 66A 1.250). No hay estado consolidado."
+ "observaciones": "Cuentas anuales individuales en esquema abreviado VZW de la NBB. La resultatenrekening es b9 (pág. 6). b18 solo da no recurrentes (76A 23.567; 66A 1.250) y plantilla; b32 es impacto de ejercicios anteriores por código contable, no desglose de categorías. No hay notas que abran Televisión ni Estadio: el esquema empieza en Brutomarge, por lo que esos ingresos no son identificables."
 }

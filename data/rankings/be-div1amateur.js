@@ -10,8 +10,18 @@ window.RANKINGS["be-div1amateur"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.059]] },
     ],
   },
+  2023: {
+    leagueSize: 20,
+    wiki: {"t":"2022–23 Belgian National Division 1","lang":"en","at":"2026-10-19","n":20},
+    clubs: [
+      { id:"patroeisden-be", revenue:1.577, reportType:"official_balance_sheet",
+        sourceId:"patroeisden-be-jaarrekening-2023-06-30-individual",
+        mix:[["Otros ingresos",1.577]] },
+    ],
+  },
   2020: {
     leagueSize: 16,
+    sinDato: ["liersesk-be"],
     wiki: {"t":"2019–20 Belgian First Amateur Division","lang":"en","at":"2026-10-19","n":16},
     clubs: [
       { id:"patroeisden-be", revenue:0.311, reportType:"official_balance_sheet",

@@ -11,6 +11,10 @@ const lierseskbeRevenueLinesByYear = {
   2024: [
     { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations', amountNative:2.895671, disclosureLevel:'aggregated' },
   ],
+  2020: [
+  ],
+  2021: [
+  ],
 };
 const lierseskbeExpenseLinesByYear = {
   2025: [
@@ -42,6 +46,14 @@ const lierseskbeExpenseLinesByYear = {
     { rawLabel:'Niet-recurrente bedrijfskosten', normalizedCategory:'exceptional_items', amountNative:-0.023422, disclosureLevel:'aggregated' },
     { rawLabel:'Afschrijvingen immateriële vaste activa (spelers)', normalizedCategory:'player_amortisation', amountNative:-0.248921, disclosureLevel:'aggregated' },
     { rawLabel:'Afschrijvingen materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.132643, disclosureLevel:'aggregated' },
+  ],
+  2020: [
+    { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations_expense', amountNative:-0.001475, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.000098, disclosureLevel:'aggregated' },
+  ],
+  2021: [
+    { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations_expense', amountNative:-0.001436, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.000201, disclosureLevel:'aggregated' },
   ],
 };
 const lierseskbeFiscalYearMeta = {
@@ -116,6 +128,42 @@ const lierseskbeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:2.895671, officialTotalExpenses:2.957082, officialPAT:-0.10788,
   },
+  2020: {
+    currency:'EUR', fxRef:'EUR@2020-06-30',
+    sourceId:'liersesk-be-jaarrekening-2020-06-30-individual',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.009666, tax:-0.008184,
+    extraRows: [
+      {label:'Recurrente financiële opbrengsten', value:0.044754},
+      {label:'Recurrente financiële kosten', value:-0.05442},
+      {label:'Belastingen op het resultaat (+)/(-)', value:-0.008184},
+    ],
+    sinDesglose: [
+      {renglon:'Brutomarge (+)/(-)', lado:'expense', importe:0.001475, motivo:'Claude 2026-10-19 (subagente Sonnet, revisado)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0, officialTotalExpenses:0.001573, officialPAT:-0.019422,
+  },
+  2021: {
+    currency:'EUR', fxRef:'EUR@2021-06-30',
+    sourceId:'liersesk-be-jaarrekening-2021-06-30-individual',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:0.020313, tax:-0.004467,
+    extraRows: [
+      {label:'Recurrente financiële opbrengsten', value:0.020343},
+      {label:'Recurrente financiële kosten', value:-0.00003},
+      {label:'Belastingen op het resultaat (+)/(-)', value:-0.004467},
+    ],
+    sinDesglose: [
+      {renglon:'Brutomarge (+)/(-)', lado:'expense', importe:0.001436, motivo:'Claude 2026-10-19 (subagente Sonnet, revisado)'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0, officialTotalExpenses:0.001637, officialPAT:0.014209,
+  },
 };
 const lierseskbePresupuestoOverlayByYear = {};
 
@@ -150,6 +198,16 @@ Object.assign(sources, {
   'liersesk-be-jaarrekening-2024-06-30-individual': {
     id:'liersesk-be-jaarrekening-2024-06-30-individual', clubId:'liersesk-be',
     title:'Lierse SK — jaarrekening-2024-06-30-individual (ejercicio 2024)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'liersesk-be-jaarrekening-2020-06-30-individual': {
+    id:'liersesk-be-jaarrekening-2020-06-30-individual', clubId:'liersesk-be',
+    title:'Lierse SK — jaarrekening-2020-06-30-individual (ejercicio 2020)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'liersesk-be-jaarrekening-2021-06-30-individual': {
+    id:'liersesk-be-jaarrekening-2021-06-30-individual', clubId:'liersesk-be',
+    title:'Lierse SK — jaarrekening-2021-06-30-individual (ejercicio 2021)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });

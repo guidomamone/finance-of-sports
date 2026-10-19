@@ -1,18 +1,9 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2021-06-30-individual.pdf",
- "generado": "2026-10-19T14:54:34.167Z",
- "frena": [
-  {
-   "etapa": "reintento",
-   "motivo": "categorías en 0 que deberían tener número: Televisión. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
-  },
-  {
-   "etapa": "tie-out",
-   "motivo": "ninguna fila de ingresos con categoría aceptable"
-  }
- ],
+ "generado": "2026-10-19T16:24:09.039Z",
+ "frena": [],
  "avisos": [
-  "\"Estadio\" en 0 en 2021: real (partidos a puertas cerradas por el Covid)",
+  "ingresos: el documento (esquema abreviado, códigos NBB) no informa ingresos: el resultado cierra con la Brutomarge negativa como gasto; officialTotalRevenue 0",
   "gestión: ningún presidente confirmado cubre 2021 (cierre 2021-06-30); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -117,7 +108,7 @@
    ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": null,
+   "officialTotalRevenue": 0,
    "officialTotalExpenses": 0.54809,
    "officialPAT": -0.582029
   },
@@ -278,12 +269,6 @@
    "destino": "tax"
   }
  ],
- "reintentar": [
-  {
-   "categoria": "Televisión",
-   "lado": "ingreso"
-  }
- ],
  "signos": {
   "porTabla": {
    "verificacion (estado)": "gastos sin signo (se invierten)",
@@ -294,11 +279,12 @@
  "totales": {
   "revSum": 0,
   "expSum": -0.541464,
-  "officialTotalRevenue": null,
+  "officialTotalRevenue": 0,
   "officialTotalExpenses": 0.54809,
   "officialPAT": -0.582029,
   "verificacion": {
    "pat": "impreso",
+   "ingresos": "por-resultado",
    "gastos": "impreso"
   },
   "patImpreso": {
@@ -361,8 +347,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 0,
   "lineasGasto": 6,
   "metaFilas": 3,

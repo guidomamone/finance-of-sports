@@ -1,14 +1,9 @@
 {
  "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2019-20.pdf",
- "generado": "2026-10-19T16:19:17.905Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "4 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Sonstiges\" -> other_income 0; \"Unterstützungsbeitrag Stadion Luzern AG\" -> other_income 0.6; \"Abschreibungen immaterielle Werte\" -> player_amortisation 0.75; \"Erfolg aus Equity-Beteiligungen\" -> other_expenses 0"
-  }
- ],
+ "generado": "2026-10-19T16:32:50.305Z",
+ "frena": [],
  "avisos": [
-  "perímetro heredado del año cargado más cercano (2025, consolidado); el documento trae el consolidado. Años cargados: 2025 consolidado",
+  "perímetro heredado del año cargado más cercano (2019, consolidado); el documento trae el consolidado. Años cargados: 2019 consolidado, 2022 consolidado, 2025 consolidado",
   "gastos: ningún total impreso igual a la suma de las líneas (-23.06095); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2020 (cierre 2020-06-30); pregunta en la cola (no frena)"
  ],
@@ -64,9 +59,9 @@
     "amountNative": 0.06566,
     "disclosureLevel": "aggregated",
     "_pag": 51,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_income) no decide para la fila de \"Matchorganisation\""
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Sponsoring, Werbung",
@@ -160,13 +155,13 @@
    },
    {
     "rawLabel": "Events",
-    "normalizedCategory": "other_income",
+    "normalizedCategory": "stadium_other",
     "amountNative": 0.431603,
     "disclosureLevel": "aggregated",
     "_pag": 41,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "respuesta de Guido en la cola"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)"
    },
    {
     "rawLabel": "Fanshop Präsenzgeschäft",
@@ -194,9 +189,9 @@
     "amountNative": 0.5,
     "disclosureLevel": "aggregated",
     "_pag": 53,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Ausmietung Stewards",
@@ -528,7 +523,7 @@
     "_pag": 55,
     "_escalon": 0,
     "_conf": 1,
-    "_fuenteCat": "precedente del club, familia (categorias.json decía youth_football)"
+    "_fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía youth_football)"
    },
    {
     "rawLabel": "Materialkosten",
@@ -646,9 +641,9 @@
     "amountNative": -1.547433,
     "disclosureLevel": "aggregated",
     "_pag": 41,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Erfolg aus Equity-Beteiligungen",
@@ -656,9 +651,9 @@
     "amountNative": -0.068292,
     "disclosureLevel": "aggregated",
     "_pag": 41,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía other_income, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Ausserordentlicher, einmaliger oder periodenfremder Aufwand",
@@ -806,11 +801,11 @@
    "origen": "verificacion (nota que desglosa \"Matchorganisation\")",
    "signoFijo": 0.06566,
    "cat": "other_income",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "la etiqueta está bajo renglones de categoría distinta; la categoría por etiqueta (other_income) no decide para la fila de \"Matchorganisation\"",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19: aceptado como propuesto; en Luzern 2019-20 las Spielerwerte son 1.93 M de las amortizaciones de intangibles de la nota 8 (L1561-1570)",
    "destino": "revenue",
    "amountNative": 0.06566
   },
@@ -960,13 +955,11 @@
    "ladoDoc": "revenue",
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 0.431603,
-   "cat": "other_income",
+   "cat": "stadium_other",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "respuesta de Guido en la cola",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía other_expenses)",
    "enLista": true,
-   "ladoRechazado": true,
-   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "revenue",
    "amountNative": 0.431603
   },
@@ -1008,11 +1001,11 @@
    "origen": "verificacion (nota que desglosa \"Sonstiger Betriebsertrag\")",
    "signoFijo": 0.5,
    "cat": "other_income",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19: aceptado como propuesto; en Luzern 2019-20 las Spielerwerte son 1.93 M de las amortizaciones de intangibles de la nota 8 (L1561-1570)",
    "destino": "revenue",
    "amountNative": 0.5
   },
@@ -1520,7 +1513,7 @@
    "cat": "youth_other_sports_expense",
    "conf": 1,
    "escalon": 0,
-   "fuenteCat": "precedente del club, familia (categorias.json decía youth_football)",
+   "fuenteCat": "precedente del club, exacto-con-contexto (categorias.json decía youth_football)",
    "enLista": true,
    "destino": "expense",
    "amountNative": -0.040779
@@ -1699,11 +1692,11 @@
    "origen": "verificacion (estado (lectura 5: hoja))",
    "signoFijo": 1.547433,
    "cat": "player_amortisation",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19: aceptado como propuesto; en Luzern 2019-20 las Spielerwerte son 1.93 M de las amortizaciones de intangibles de la nota 8 (L1561-1570)",
    "destino": "expense",
    "amountNative": -1.547433
   },
@@ -1715,12 +1708,12 @@
    "origen": "verificacion (estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6))",
    "signoFijo": 0.068292,
    "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía other_income, del otro lado que la fila: se propone la genérica de su lado",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
    "ladoRechazado": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19: aceptado como propuesto; en Luzern 2019-20 las Spielerwerte son 1.93 M de las amortizaciones de intangibles de la nota 8 (L1561-1570)",
    "destino": "expense",
    "amountNative": -0.068292
   },
@@ -1810,10 +1803,9 @@
   "label": "Noon buying rate de Nueva York (Reserva Federal, H.10) al 2020-06-30"
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de ch 2020 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "ch-superleague",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1852,14 +1844,14 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de ch 2020 cacheada",
-   "estado": "pendiente"
+   "valor": "ch-superleague",
+   "fuente": "data/club-leagues/ch.js ya tiene la fila",
+   "estado": "ok"
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 23,
   "lineasGasto": 42,
   "metaFilas": 2,

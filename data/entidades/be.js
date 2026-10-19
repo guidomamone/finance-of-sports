@@ -30,6 +30,69 @@ Object.assign(window.CLUB_ENTIDADES, {
  "lommelsk-be": {
   "cargas": [
    {
+    "anio": 2018,
+    "entidad": "lommel-sk",
+    "perimetro": "individual",
+    "fuente": {
+     "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2022-06-30-individual.md",
+     "linea": 9
+    }
+   },
+   {
+    "anio": 2019,
+    "entidad": "lommel-sk",
+    "perimetro": "individual",
+    "fuente": {
+     "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2022-06-30-individual.md",
+     "linea": 9
+    }
+   },
+   {
+    "anio": 2020,
+    "entidad": "lommel-sk",
+    "perimetro": "individual",
+    "fuente": {
+     "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2022-06-30-individual.md",
+     "linea": 9
+    }
+   },
+   {
+    "anio": 2021,
+    "entidad": "lommel-sk",
+    "perimetro": "individual",
+    "fuente": {
+     "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2022-06-30-individual.md",
+     "linea": 9
+    }
+   },
+   {
+    "anio": 2022,
+    "entidad": "lommel-sk",
+    "perimetro": "individual",
+    "fuente": {
+     "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2022-06-30-individual.md",
+     "linea": 9
+    }
+   },
+   {
+    "anio": 2023,
+    "entidad": "lommel-sk",
+    "perimetro": "individual",
+    "fuente": {
+     "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2022-06-30-individual.md",
+     "linea": 9
+    }
+   },
+   {
+    "anio": 2024,
+    "entidad": "lommel-sk",
+    "perimetro": "individual",
+    "fuente": {
+     "md": "Clubes/Bélgica/Lommel SK/jaarrekening-2022-06-30-individual.md",
+     "linea": 9
+    }
+   },
+   {
     "anio": 2025,
     "entidad": "lommel-sk",
     "perimetro": "individual",

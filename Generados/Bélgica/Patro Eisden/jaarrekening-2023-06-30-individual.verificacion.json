@@ -1,12 +1,12 @@
 {
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2023-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2023-06-30-individual.md",
- "generado": "2026-10-19T14:54:29.293Z",
+ "generado": "2026-10-19T16:25:20.740Z",
  "estado": "ok",
  "clubId": "patroeisden-be",
  "year": 2023,
  "escala": {
-  "valor": "no se sabe",
+  "valor": "unidades",
   "escalon": 0,
   "factor": 1,
   "de": null
@@ -69,16 +69,13 @@
  ],
  "notas": [
   "escalón \"códigos NBB\": el estado se lee por sus códigos (L216-L239, esquema abreviado); cierran exacto todos sus totales impresos",
-  "escala desconocida en algún bloque: se asumió unidades (lo confirma el chequeo del año anterior)",
-  "la nota de \"Waarvan: niet-recurrente bedrijfsopbrengsten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
-  "la nota de \"Niet-recurrente bedrijfskosten\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
   "la lectura base no cerraba; cerró con la lectura 4",
-  "duda de localizar ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
-  "duda de localizar que no afecta la carga: Es un detalle de la parte de los gastos y los ingresos que corresponde a ejercicios anteriores, no un desglose por categoría.",
-  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf"
+  "duda de localizar que no afecta la carga: El esquema abreviado VKT-VZW (b9) solo muestra Brutomarge/Omzet y ninguna nota desglosa ingresos por categoría.",
+  "duda de extraer ya contestada para el club (antes de su alta) (escala, \"-\"): aceptar, en jaarrekening-2025-06-30-individual.pdf",
+  "duda de extraer que no afecta la carga: Omzet (L218) está vacía y los ingresos están netos dentro de la Brutomarge; no hay notas de ingresos."
  ],
  "reintentar": null,
- "reintentado": false,
+ "reintentado": true,
  "faltasDesglose": null,
  "totales": {
   "ingresos": 1.451259,

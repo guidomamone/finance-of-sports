@@ -29,6 +29,9 @@ window.RANKINGS["be-challengerproleague"] = {
     leagueSize: 16,
     wiki: {"t":"2023–24 Challenger Pro League","lang":"en","at":"2026-10-19","n":16},
     clubs: [
+      { id:"lommelsk-be", revenue:26.418, reportType:"official_balance_sheet",
+        sourceId:"lommelsk-be-jaarrekening-2024-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",3.861],["Otros ingresos",22.557]] },
       { id:"beerschot-be", revenue:10.109, reportType:"official_balance_sheet",
         sourceId:"beerschot-be-jaarrekening-2024-06-30-individual",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",6.582],["Otros ingresos",3.527]],
@@ -54,12 +57,18 @@ window.RANKINGS["be-challengerproleague"] = {
       { id:"rwdm-be", revenue:1.77, reportType:"official_balance_sheet",
         sourceId:"rwdm-be-jaarrekening-2023-06-30-individual",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.77]] },
+      { id:"lommelsk-be", revenue:1.362, reportType:"official_balance_sheet",
+        sourceId:"lommelsk-be-jaarrekening-2023-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.362]] },
     ],
   },
   2022: {
     leagueSize: 8,
     wiki: {"t":"2021–22 Belgian First Division B","lang":"en","at":"2026-10-19","n":8},
     clubs: [
+      { id:"lommelsk-be", revenue:1.98, reportType:"official_balance_sheet",
+        sourceId:"lommelsk-be-jaarrekening-2022-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.98]] },
       { id:"liersesk-be", revenue:1.738, reportType:"official_balance_sheet",
         sourceId:"liersesk-be-jaarrekening-2022-06-30-individual",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.738]] },
@@ -70,8 +79,12 @@ window.RANKINGS["be-challengerproleague"] = {
   },
   2021: {
     leagueSize: 8,
+    sinDato: ["liersesk-be"],
     wiki: {"t":"2020–21 Belgian First Division B","lang":"en","at":"2026-10-19","n":8},
     clubs: [
+      { id:"lommelsk-be", revenue:2.686, reportType:"official_balance_sheet",
+        sourceId:"lommelsk-be-jaarrekening-2021-06-30-individual-correction",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.686]] },
       { id:"rwdm-be", revenue:1.839, reportType:"official_balance_sheet",
         sourceId:"rwdm-be-jaarrekening-2021-06-30-individual",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.839]] },
@@ -84,6 +97,9 @@ window.RANKINGS["be-challengerproleague"] = {
       { id:"beerschot-be", revenue:7.643, reportType:"official_balance_sheet",
         sourceId:"beerschot-be-jaarrekening-2020-06-30-individual",
         mix:[["Comercial / Sponsors",2.303],["Estadio",2.454],["Televisión",0.963],["Otros ingresos",1.922]] },
+      { id:"lommelsk-be", revenue:1.041, reportType:"official_balance_sheet",
+        sourceId:"lommelsk-be-jaarrekening-2020-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.041]] },
     ],
   },
   2019: {
@@ -97,6 +113,9 @@ window.RANKINGS["be-challengerproleague"] = {
       { id:"ohleuven-be", revenue:3.189, reportType:"official_balance_sheet",
         sourceId:"ohleuven-be-jaarrekening-2019-06-30-individual",
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.749],["Otros ingresos",1.44]] },
+      { id:"lommelsk-be", revenue:1.585, reportType:"official_balance_sheet",
+        sourceId:"lommelsk-be-jaarrekening-2019-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.585]] },
     ],
   },
   2016: {

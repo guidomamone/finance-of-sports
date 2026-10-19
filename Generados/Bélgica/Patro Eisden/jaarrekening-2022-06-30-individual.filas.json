@@ -2,28 +2,21 @@
  "pdf": "Clubes/Bélgica/Patro Eisden/jaarrekening-2022-06-30-individual.pdf",
  "md": "Clubes/Bélgica/Patro Eisden/jaarrekening-2022-06-30-individual.md",
  "mdSha1": "f322885bb5e90c1b0cf38172913ada49610fa5a1",
- "ubicacionSha1": "571ce8295b0f353076ec4429023fbc64723dc6a1",
+ "ubicacionSha1": "4cd775af574e9bca77d0b0537cfd75ab31faf0d2",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-18T15:37:11.036Z",
+ "generado": "2026-10-19T16:24:40.287Z",
  "ubicacion": {
   "estado": [
    "b4"
   ],
   "notas_ingresos": [],
-  "notas_gastos": [
-   "b13"
-  ]
+  "notas_gastos": []
  },
  "escalas": [
   {
    "bloque": "b4",
    "escala": "no se sabe",
-   "evidencia": "No se imprime la escala en el bloque; los esquemas belgas de jaarrekening suelen estar en euros (unidades)."
-  },
-  {
-   "bloque": "b13",
-   "escala": "no se sabe",
-   "evidencia": "No se imprime la escala en el bloque."
+   "evidencia": "El bloque b4 no indica escala; los importes parecen en euros (unidades), pero no hay frase que lo diga."
   }
  ],
  "filas": [
@@ -207,28 +200,27 @@
  },
  "dudas": [
   {
-   "pregunta": "¿Se carga la Brutomarge (L212, 157.091) como único ingreso operativo, ya que el esquema abreviado no desglosa Omzet ni subsidios?",
+   "pregunta": "¿Se acepta que no hay filas de 'Televisión' ni 'Estadio' porque el estado abreviado (L212) solo imprime la Brutomarge sin desglose de ingresos?",
    "propuesta": "sí",
    "tema": "otro",
    "renglon": "Brutomarge (+)/(-)",
-   "texto": "L212 es un neto de ingresos menos compras/servicios sin detalle de ingresos brutos; L214-L216 vacíos o compensados.",
+   "texto": "El esquema abreviado belga presenta solo el margen bruto (L212) y no hay notas de ingresos que desglosen Televisión o Estadio.",
+   "bloques": [
+    "b4"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se cargan los importes de b4 como euros en unidades?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El bloque b4 no imprime la escala; los importes con tres decimales separados por punto sugieren euros en unidades.",
    "bloques": [
     "b4"
    ],
    "afecta_carga": true
-  },
-  {
-   "pregunta": "¿Se asume que los importes están en euros (unidades) aunque no se imprime la escala en b4 ni b13?",
-   "propuesta": "sí",
-   "tema": "escala",
-   "renglon": "",
-   "texto": "Ninguna línea de b4 ni b13 indica la escala.",
-   "bloques": [
-    "b4",
-    "b13"
-   ],
-   "afecta_carga": true
   }
  ],
- "observaciones": "Esquema abreviado belga: L216 figura con importe pero suele estar incluido dentro de la Brutomarge; verificar que no se duplique al cargar gastos. b13 solo repite Niet-recurrente kosten del año anterior (5.053, L441-L442), ya presente en L223; no se extrae. L436 es personal medio (no importe)."
+ "observaciones": "Estado de resultados en formato abreviado (Brutomarge): no se informan Omzet ni ingresos por rubro, por lo que no existen filas de Televisión ni Estadio en el documento. La fila L223 tiene importe solo en el año anterior. No hay notas de ingresos ni de gastos."
 }

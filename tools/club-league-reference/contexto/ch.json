@@ -1,5 +1,121 @@
 {
  "ch-superleague": {
+  "2018": {
+   "pagina": "2017–18 Swiss Super League",
+   "lang": "en",
+   "revid": 1374071941,
+   "estadios": [
+    [
+     {
+      "club": "Basel",
+      "estadio": "St. Jakob-Park",
+      "capacidad": 37994
+     },
+     {
+      "club": "Grasshopper",
+      "estadio": "Letzigrund",
+      "capacidad": 26104
+     },
+     {
+      "club": "Lausanne",
+      "estadio": "Pontaise",
+      "capacidad": 8500
+     },
+     {
+      "club": "Lugano",
+      "estadio": "Stadio Cornaredo",
+      "capacidad": 6390
+     },
+     {
+      "club": "Luzern",
+      "estadio": "Swissporarena",
+      "capacidad": 16490
+     },
+     {
+      "club": "Sion",
+      "estadio": "Stade Tourbillon",
+      "capacidad": 14283
+     },
+     {
+      "club": "St. Gallen",
+      "estadio": "kybunpark",
+      "capacidad": 19456
+     },
+     {
+      "club": "Thun",
+      "estadio": "Stockhorn Arena",
+      "capacidad": 10014
+     },
+     {
+      "club": "Young Boys",
+      "estadio": "Stade de Suisse",
+      "capacidad": 31789
+     },
+     {
+      "club": "FC Zürich",
+      "estadio": "Letzigrund",
+      "capacidad": 26104
+     }
+    ]
+   ],
+   "kits": [
+    {
+     "soloActual": false,
+     "filas": [
+      {
+       "club": "Basel",
+       "sponsor": "Novartis",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Grasshopper",
+       "sponsor": "Fromm",
+       "marca": "Puma"
+      },
+      {
+       "club": "Lausanne-Sport",
+       "sponsor": "Banque cantonale vaudoise",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Lugano",
+       "sponsor": "AIL",
+       "marca": "Acerbis"
+      },
+      {
+       "club": "Luzern",
+       "sponsor": "Otto's",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Sion",
+       "sponsor": "AFX Group",
+       "marca": "Erreà"
+      },
+      {
+       "club": "St. Gallen",
+       "sponsor": "St.Galler Kantonalbank",
+       "marca": "Jako"
+      },
+      {
+       "club": "Thun",
+       "sponsor": "Panorama Center, Schneider Software AG",
+       "marca": "Nike"
+      },
+      {
+       "club": "Young Boys",
+       "sponsor": "Obi",
+       "marca": "Nike"
+      },
+      {
+       "club": "Zürich",
+       "sponsor": null,
+       "marca": "Nike"
+      }
+     ]
+    }
+   ]
+  },
   "2019": {
    "pagina": "2018–19 Swiss Super League",
    "lang": "en",
@@ -116,6 +232,122 @@
     }
    ]
   },
+  "2020": {
+   "pagina": "2019–20 Swiss Super League",
+   "lang": "en",
+   "revid": 1270002926,
+   "estadios": [
+    [
+     {
+      "club": "Basel",
+      "estadio": "St. Jakob-Park",
+      "capacidad": 37994
+     },
+     {
+      "club": "Lugano",
+      "estadio": "Stadio Cornaredo",
+      "capacidad": 6390
+     },
+     {
+      "club": "Luzern",
+      "estadio": "Swissporarena",
+      "capacidad": 16490
+     },
+     {
+      "club": "Neuchâtel Xamax",
+      "estadio": "Stade de la Maladière",
+      "capacidad": 11997
+     },
+     {
+      "club": "Servette",
+      "estadio": "Stade de Genève",
+      "capacidad": 30084
+     },
+     {
+      "club": "Sion",
+      "estadio": "Stade Tourbillon",
+      "capacidad": 14283
+     },
+     {
+      "club": "St. Gallen",
+      "estadio": "Kybunpark",
+      "capacidad": 19456
+     },
+     {
+      "club": "Thun",
+      "estadio": "Stockhorn Arena",
+      "capacidad": 10014
+     },
+     {
+      "club": "Young Boys",
+      "estadio": "Stade de Suisse",
+      "capacidad": 31789
+     },
+     {
+      "club": "Zürich",
+      "estadio": "Letzigrund",
+      "capacidad": 26104
+     }
+    ]
+   ],
+   "kits": [
+    {
+     "soloActual": false,
+     "filas": [
+      {
+       "club": "Basel",
+       "sponsor": "Novartis",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Lugano",
+       "sponsor": "AIL",
+       "marca": "Acerbis"
+      },
+      {
+       "club": "Luzern",
+       "sponsor": null,
+       "marca": "Craft"
+      },
+      {
+       "club": "Neuchâtel Xamax",
+       "sponsor": "Banque cantonale neuchâteloise",
+       "marca": "Erima"
+      },
+      {
+       "club": "Servette",
+       "sponsor": "Balexert",
+       "marca": "Puma"
+      },
+      {
+       "club": "Sion",
+       "sponsor": "Capital Markets Consulting",
+       "marca": "Macron"
+      },
+      {
+       "club": "St. Gallen",
+       "sponsor": null,
+       "marca": "Jako"
+      },
+      {
+       "club": "Thun",
+       "sponsor": "Panorama Center, Schneider Software AG",
+       "marca": "Macron"
+      },
+      {
+       "club": "Young Boys",
+       "sponsor": "Obi",
+       "marca": "Nike"
+      },
+      {
+       "club": "Zürich",
+       "sponsor": "AntePay",
+       "marca": "Nike"
+      }
+     ]
+    }
+   ]
+  },
   "2022": {
    "pagina": "2021–22 Swiss Super League",
    "lang": "en",
@@ -226,6 +458,195 @@
       {
        "club": "Zürich",
        "sponsor": "none",
+       "marca": "Nike"
+      }
+     ]
+    }
+   ]
+  },
+  "2023": {
+   "pagina": "2022–23 Swiss Super League",
+   "lang": "en",
+   "revid": 1376915115,
+   "estadios": [
+    [
+     {
+      "club": "Basel",
+      "estadio": "St. Jakob-Park",
+      "capacidad": 37994
+     },
+     {
+      "club": "Grasshopper",
+      "estadio": "Letzigrund",
+      "capacidad": 26103
+     },
+     {
+      "club": "Lugano",
+      "estadio": "Stadio Cornaredo",
+      "capacidad": 6390
+     },
+     {
+      "club": "Luzern",
+      "estadio": "Swissporarena",
+      "capacidad": 16490
+     },
+     {
+      "club": "Servette",
+      "estadio": "Stade de Genève",
+      "capacidad": 28833
+     },
+     {
+      "club": "Sion",
+      "estadio": "Stade Tourbillon",
+      "capacidad": 14283
+     },
+     {
+      "club": "St. Gallen",
+      "estadio": "Kybunpark",
+      "capacidad": 19455
+     },
+     {
+      "club": "Winterthur",
+      "estadio": "Stadion Schützenwiese",
+      "capacidad": 8400
+     },
+     {
+      "club": "Young Boys",
+      "estadio": "Stadion Wankdorf",
+      "capacidad": 31120
+     },
+     {
+      "club": "Zürich",
+      "estadio": "Letzigrund",
+      "capacidad": 26103
+     }
+    ]
+   ],
+   "kits": [
+    {
+     "soloActual": false,
+     "filas": [
+      {
+       "club": "Basel",
+       "sponsor": "Novartis",
+       "marca": "Macron"
+      },
+      {
+       "club": "Grasshopper",
+       "sponsor": "Tianjin Seagull",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Lugano",
+       "sponsor": "AIL",
+       "marca": "Erreà"
+      },
+      {
+       "club": "Luzern",
+       "sponsor": "Otto’s",
+       "marca": "Craft"
+      },
+      {
+       "club": "Servette",
+       "sponsor": "La Praille",
+       "marca": "Adidas"
+      },
+      {
+       "club": "Sion",
+       "sponsor": "OIKEN",
+       "marca": "Macron"
+      },
+      {
+       "club": "St. Gallen",
+       "sponsor": "St.Galler Kantonalbank",
+       "marca": "Jako"
+      },
+      {
+       "club": "Winterthur",
+       "sponsor": "Keller Druckmesstechnik",
+       "marca": "gpard"
+      },
+      {
+       "club": "Young Boys",
+       "sponsor": "Plus500",
+       "marca": "Nike"
+      },
+      {
+       "club": "Zürich",
+       "sponsor": "Nokera AG",
+       "marca": "Nike"
+      }
+     ]
+    }
+   ]
+  },
+  "2024": {
+   "pagina": "2023–24 Swiss Super League",
+   "lang": "en",
+   "revid": 1377593185,
+   "estadios": [],
+   "kits": [
+    {
+     "soloActual": false,
+     "filas": [
+      {
+       "club": "Basel",
+       "sponsor": "Novartis",
+       "marca": "Macron"
+      },
+      {
+       "club": "Grasshopper",
+       "sponsor": "Cabatech (in cup matches)",
+       "marca": "Capelli Sport"
+      },
+      {
+       "club": "Lausanne Ouchy",
+       "sponsor": "gerofinance",
+       "marca": "14fourteen"
+      },
+      {
+       "club": "Lausanne Sport",
+       "sponsor": "Banque cantonale vaudoise",
+       "marca": "Le Coq Sportif"
+      },
+      {
+       "club": "Lugano",
+       "sponsor": "AIL",
+       "marca": "Erreà"
+      },
+      {
+       "club": "Luzern",
+       "sponsor": "Otto’s",
+       "marca": "Craft"
+      },
+      {
+       "club": "Servette",
+       "sponsor": "MSC Cruises",
+       "marca": "Adidas"
+      },
+      {
+       "club": "St. Gallen",
+       "sponsor": "St.Galler Kantonalbank",
+       "marca": "Puma"
+      },
+      {
+       "club": "Winterthur",
+       "sponsor": "Keller Druckmesstechnik, Init7",
+       "marca": "gpard"
+      },
+      {
+       "club": "Young Boys",
+       "sponsor": "Plus500",
+       "marca": "Nike"
+      },
+      {
+       "club": "Yverdon-Sport",
+       "sponsor": "MAGENTA EKO (H)",
+       "marca": "Macron"
+      },
+      {
+       "club": "Zürich",
+       "sponsor": "NOKERA",
        "marca": "Nike"
       }
      ]

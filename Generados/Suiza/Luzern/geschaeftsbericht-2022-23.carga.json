@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Suiza/Luzern/geschaeftsbericht-2022-23.pdf",
- "generado": "2026-10-19T16:19:18.244Z",
+ "generado": "2026-10-19T16:32:50.445Z",
  "frena": [
   {
    "etapa": "tie-out-resultado",
@@ -12,7 +12,7 @@
   }
  ],
  "avisos": [
-  "perímetro heredado del año cargado más cercano (2025, consolidado); el documento trae el consolidado. Años cargados: 2025 consolidado",
+  "perímetro heredado del año cargado más cercano (2022, consolidado); el documento trae el consolidado. Años cargados: 2019 consolidado, 2022 consolidado, 2025 consolidado",
   "gestión: ningún presidente confirmado cubre 2023 (cierre 2023-06-30); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -1588,10 +1588,9 @@
   "label": "Noon buying rate de Nueva York (Reserva Federal, H.10) al 2023-06-30"
  },
  "liga": {
-  "valor": null,
-  "fuente": "no hay ninguna liga-temporada de ch 2023 cacheada",
-  "estado": "pendiente",
-  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+  "valor": "ch-superleague",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -1630,9 +1629,9 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "no hay ninguna liga-temporada de ch 2023 cacheada",
-   "estado": "pendiente"
+   "valor": "ch-superleague",
+   "fuente": "data/club-leagues/ch.js ya tiene la fila",
+   "estado": "ok"
   }
  },
  "resumen": {

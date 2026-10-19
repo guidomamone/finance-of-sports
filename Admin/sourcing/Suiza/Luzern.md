@@ -43,3 +43,9 @@ necesariamente el documento real el que está corrupto.
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2019 desde `Clubes/Suiza/Luzern/geschaeftsbericht-2018-19.pdf` (sourceId `luzern-ch-geschaeftsbericht-2018-19`).
 
 - Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2022 desde `Clubes/Suiza/Luzern/geschaeftsbericht-2021-22.pdf` (sourceId `luzern-ch-geschaeftsbericht-2021-22`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2018 desde `Clubes/Suiza/Luzern/geschaeftsbericht-2017-18.pdf` (sourceId `luzern-ch-geschaeftsbericht-2017-18`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2020 desde `Clubes/Suiza/Luzern/geschaeftsbericht-2019-20.pdf` (sourceId `luzern-ch-geschaeftsbericht-2019-20`).
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2024 desde `Clubes/Suiza/Luzern/geschaeftsbericht-2023-24.pdf` (sourceId `luzern-ch-geschaeftsbericht-2023-24`).
