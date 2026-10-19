@@ -112,6 +112,12 @@ Object.assign(window.CLUB_AUDITORIA, {
   }
  },
  "hamburgersv-de": {
+  "2024": {
+   "auditor": null,
+   "dictamen": "sin_informe",
+   "continuidad": false,
+   "fuente": null
+  },
   "2025": {
    "auditor": {
     "nombre": "BDO",

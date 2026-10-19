@@ -37,3 +37,4 @@
 - 282, Hamburgo 2024: el PDF público de hsv.de (`hsv_jahresabschluss_und_lagebericht_2023_24.pdf`, 36 págs.) es el mismo que ya tenemos y no trae el
   Bestätigungsvermerk; solo está en el Unternehmensregister o el Bundesanzeiger, detrás de captcha. No se resuelve el captcha con ninguna herramienta:
   sigue pendiente (o candidato a mail al club, que Guido no quiere por ahora).
+- 282: por decisión de Guido (2026-10-19) Hamburgo 2024 se publicó "sin informe de auditoría" (`sin_informe`, línea 310 de `auditoria.jsonl`), con nota; si aparece el Bestätigungsvermerk 2023/24, pasa a sin_salvedades. ASSET_V 1401.
