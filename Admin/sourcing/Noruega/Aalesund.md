@@ -30,3 +30,5 @@ Todos ejercicio calendario. Escaneos sin capa de texto.
 - **Hueco de 2018 en la FLI**: sin explicación encontrada.
 
 - Último chequeo: 2026-09-17.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2025 desde `Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.pdf` (sourceId `aalesund-no-aarsregnskap-aalesund-fotball-as-2025`).
