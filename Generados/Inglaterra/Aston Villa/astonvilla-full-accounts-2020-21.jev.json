@@ -1,0 +1,61 @@
+{
+ "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2020-21.md",
+ "generatedAt": "2026-10-19T16:00:38.292Z",
+ "rubrosHuella": "40192a8c33591fc6a0cab28c91f9c8e3aafd9c2e",
+ "rubros": [
+  {
+   "label": "Gate Receipts",
+   "lado": "revenue",
+   "page": 20,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Broadcasting",
+   "lado": "revenue",
+   "page": 20,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sponsorship",
+   "lado": "revenue",
+   "page": 20,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Commercial",
+   "lado": "revenue",
+   "page": 20,
+   "section": "nota que desglosa \"Turnover\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "page": 12,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "page": 12,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  }
+ ]
+}

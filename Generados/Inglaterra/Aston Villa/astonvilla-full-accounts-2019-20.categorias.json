@@ -1,0 +1,91 @@
+{
+ "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2019-20.md",
+ "club": "astonvilla-gb",
+ "year": 2020,
+ "generatedAt": "2026-10-19T16:00:52.680Z",
+ "rubrosHuella": "0a9cf527856a44c282005c1184cab261c2b98306",
+ "jevHuella": "982864747227bba29b57d0806e003b5a9bfd13dd",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.0067408,
+ "rubros": [
+  {
+   "label": "Gate receipts",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Ingresos por taquilla",
+   "page": 20,
+   "pendiente": false,
+   "ya": "matchday_competition",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "matchday_competition",
+   "confianza": 1
+  },
+  {
+   "label": "Broadcasting",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Derechos de retransmisión",
+   "page": 20,
+   "pendiente": false,
+   "ya": "broadcasting",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "broadcasting",
+   "confianza": 1
+  },
+  {
+   "label": "Sponsorship",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Patrocinio",
+   "page": 20,
+   "pendiente": false,
+   "ya": "sponsorship_commercial",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "sponsorship_commercial",
+   "confianza": 1
+  },
+  {
+   "label": "Commercial",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Ingresos comerciales",
+   "page": 20,
+   "pendiente": false,
+   "ya": "sponsorship_commercial",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "sponsorship_commercial",
+   "confianza": 1
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de administración",
+   "page": 12,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Loss on sale of tangible assets",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Pérdidas por enajenación de inmovilizado material",
+   "page": 12,
+   "pendiente": true,
+   "jev": "other_expenses",
+   "jevConf": 0.55,
+   "escalon": 2,
+   "categoria": "exceptional_items",
+   "confianza": 0.55,
+   "motivo": "Pérdida por venta de activos fijos: partida no recurrente; alternativa depreciation u other_expenses."
+  }
+ ]
+}

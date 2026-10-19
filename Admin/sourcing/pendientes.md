@@ -329,9 +329,19 @@ GENERADO por `node tools/faltantes-liga.mjs`: no editar a mano. Club-años que j
 - Santa Rita — sin-buscar: 2018 (br-serieD)
 - Sparta — sin-buscar: 2018 (br-serieD)
 
-## Bélgica (1 clubes, 1 club-años)
+## Bélgica (11 clubes, 11 club-años)
 
+- Beveren — sin-buscar: 2025 (be-challengerproleague)
+- Club NXT — sin-buscar: 2025 (be-challengerproleague)
+- Deinze — sin-buscar: 2025 (be-challengerproleague)
+- Eupen — sin-buscar: 2025 (be-challengerproleague)
+- Francs Borains — sin-buscar: 2025 (be-challengerproleague)
+- Jong Genk — sin-buscar: 2025 (be-challengerproleague)
 - Kortrijk — sin-buscar: 2025 (be-proleague)
+- La Louvière — sin-buscar: 2025 (be-challengerproleague)
+- RFC Liège — sin-buscar: 2025 (be-challengerproleague)
+- RSCA Futures — sin-buscar: 2025 (be-challengerproleague)
+- Seraing — sin-buscar: 2025 (be-challengerproleague)
 
 ## Chile (19 clubes, 65 club-años)
 

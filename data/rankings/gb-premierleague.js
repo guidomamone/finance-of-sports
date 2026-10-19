@@ -100,4 +100,13 @@ window.RANKINGS["gb-premierleague"] = {
         mix:[["Comercial / Sponsors",3.356],["Estadio",12.453],["Televisión",141.876],["Venta de Jugadores",26.374],["Otros ingresos",14.738]] },
     ],
   },
+  2023: {
+    leagueSize: null,
+    wiki: {"t":"2022–23 Premier League","lang":"en","at":"2026-09-30","n":20},
+    clubs: [
+      { id:"astonvilla-gb", revenue:253.489, reportType:"official_balance_sheet",
+        sourceId:"astonvilla-gb-full-accounts-2022-23",
+        mix:[["Comercial / Sponsors",41.139],["Estadio",23.272],["Televisión",189.078]] },
+    ],
+  },
 };

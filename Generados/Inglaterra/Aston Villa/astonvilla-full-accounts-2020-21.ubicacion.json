@@ -1,0 +1,209 @@
+{
+ "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2020-21.pdf",
+ "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2020-21.md",
+ "mdSha1": "a64eb938667ff731915738ca886a80865ff4ea2e",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:09:54.422Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    39,
+    48
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 12,
+   "lineas": [
+    360,
+    371
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 13,
+   "lineas": [
+    387,
+    401
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 14,
+   "lineas": [
+    419,
+    435
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 17,
+   "lineas": [
+    542,
+    544
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 20,
+   "lineas": [
+    655,
+    661
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 20,
+   "lineas": [
+    674,
+    676
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 20,
+   "lineas": [
+    682,
+    686
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 21,
+   "lineas": [
+    699,
+    701
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 21,
+   "lineas": [
+    709,
+    714
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 21,
+   "lineas": [
+    718,
+    724
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 21,
+   "lineas": [
+    728,
+    730
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 22,
+   "lineas": [
+    749,
+    751
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 22,
+   "lineas": [
+    755,
+    760
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 22,
+   "lineas": [
+    766,
+    769
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 22,
+   "lineas": [
+    773,
+    777
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 23,
+   "lineas": [
+    794,
+    808
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 23,
+   "lineas": [
+    812,
+    819
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 24,
+   "lineas": [
+    838,
+    840
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 24,
+   "lineas": [
+    844,
+    851
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 24,
+   "lineas": [
+    861,
+    864
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 25,
+   "lineas": [
+    903,
+    907
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b6"
+ ],
+ "notas_gastos": [
+  "b8",
+  "b9",
+  "b10",
+  "b12",
+  "b14"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado de columnas '2021 £ | 2020 £' sin indicación de miles",
+ "moneda": "GBP",
+ "columna_ejercicio": "2021 £",
+ "columna_anterior": "2020 £",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Cuentas individuales de Aston Villa Football Club Limited, ejercicio cerrado el 31-05-2021. El estado de resultados es b2. La nota 4 de Turnover (b6) desglosa la cifra de negocios. Las notas de gastos son: Operating loss (b8), auditores (b9), personal (b10), remuneración de directores (b12) e impuesto (b14). Se excluyen la conciliación fiscal (b15, b16), el número de empleados (b11), el balance, el activo fijo, los deudores, los acreedores y los arrendamientos."
+}

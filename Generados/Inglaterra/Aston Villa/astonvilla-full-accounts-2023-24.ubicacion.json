@@ -1,0 +1,219 @@
+{
+ "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2023-24.pdf",
+ "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2023-24.md",
+ "mdSha1": "97b4f919d58ef4360f3b6c997d797a3dbc445b3d",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:13:22.561Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    20,
+    29
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    139,
+    144
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 14,
+   "lineas": [
+    487,
+    496
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 15,
+   "lineas": [
+    511,
+    526
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 16,
+   "lineas": [
+    546,
+    559
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 23,
+   "lineas": [
+    845,
+    852
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 23,
+   "lineas": [
+    868,
+    872
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 24,
+   "lineas": [
+    891,
+    896
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 24,
+   "lineas": [
+    900,
+    903
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 24,
+   "lineas": [
+    920,
+    925
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 25,
+   "lineas": [
+    939,
+    945
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 25,
+   "lineas": [
+    949,
+    951
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 25,
+   "lineas": [
+    967,
+    969
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 26,
+   "lineas": [
+    981,
+    986
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 26,
+   "lineas": [
+    994,
+    1002
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 27,
+   "lineas": [
+    1018,
+    1031
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 27,
+   "lineas": [
+    1035,
+    1037
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 27,
+   "lineas": [
+    1044,
+    1051
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 28,
+   "lineas": [
+    1073,
+    1075
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 28,
+   "lineas": [
+    1079,
+    1086
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 28,
+   "lineas": [
+    1102,
+    1105
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 29,
+   "lineas": [
+    1140,
+    1144
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [
+  "b6",
+  "b7"
+ ],
+ "notas_gastos": [
+  "b8",
+  "b10"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "13 month period ended 30 June 2024 £'000",
+ "moneda": "GBP",
+ "columna_ejercicio": "13 month period ended 30 June 2024 £'000",
+ "columna_anterior": "Year ended 31 May 2023 £'000",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el ejercicio de 13 meses (1-6-2023 a 30-6-2024) tal cual, sin prorratear a 12 meses?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "El estado b3 cubre un período de 13 meses por cambio de fecha de cierre, no comparable directamente con el año anterior.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas individuales de Aston Villa Football Club Limited (sin consolidado en el documento). Período de 13 meses cerrado el 30-06-2024; comparativo ejercicio cerrado el 31-05-2023. b6 desglosa Turnover, b7 Other operating income (encabezado 2024/2023), b8 Operating expenses y b10 Staff costs. Excluidos balance, patrimonio, impuestos, activo fijo, deudores, acreedores y arrendamientos; b11 es número de empleados."
+}

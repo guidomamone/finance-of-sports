@@ -1,0 +1,158 @@
+{
+ "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2019-20.pdf",
+ "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2019-20.md",
+ "generado": "2026-10-19T16:00:18.521Z",
+ "estado": "ok",
+ "clubId": "astonvilla-gb",
+ "year": 2020,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "107.863788 = 107.863788",
+   "suma": 107.86378799999999,
+   "impreso": 107.863788
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 1.4210854715202004e-14
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2020: 107.863788 en este documento y 107.863788 en astonvilla-full-accounts-2020-21.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2019",
+   "ok": true,
+   "detalle": "ingresos de 2019: 51.426474 en astonvilla-full-accounts-2018-19.pdf y 51.426474 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2019: este chequeo no se puede hacer"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "ingresos y resultado coinciden con lo impreso a 0,01% o menos y el otro total no está impreso (queda determinado): no hace falta la revisión del primer año (to-do 214, escalón 2)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Administrative expenses\" no suma el renglón (10.260571 contra 203.017838, sumando sus renglones): quedó el renglón del estado",
+  "duda de extraer ya contestada para el club (perimetro, \"Administrative expenses\"): corregir no, en astonvilla-full-accounts-2020-21.pdf"
+ ],
+ "reintentar": [
+  {
+   "renglon": "Administrative expenses",
+   "suma": 10.260571,
+   "objetivo": 203.017838
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Administrative expenses",
+   "suma": 10.260571,
+   "objetivo": 203.017838
+  }
+ ],
+ "totales": {
+  "ingresos": 107.863788,
+  "gastos": 203.023785,
+  "financiero": 0.084973,
+  "impuesto": 4.181616,
+  "resultadoImpreso": -90.893408,
+  "resultadoParaCargar": -90.893408,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Gate receipts",
+   "lado": "ingreso",
+   "M": 11.109998,
+   "pagina": 20,
+   "linea": 687,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Broadcasting",
+   "lado": "ingreso",
+   "M": 77.727663,
+   "pagina": 20,
+   "linea": 688,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Sponsorship",
+   "lado": "ingreso",
+   "M": 10.401513,
+   "pagina": 20,
+   "linea": 689,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial",
+   "lado": "ingreso",
+   "M": 8.624614,
+   "pagina": 20,
+   "linea": 690,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 203.017838,
+   "pagina": 12,
+   "linea": 394,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Loss on sale of tangible assets",
+   "lado": "gasto",
+   "M": 0.005947,
+   "pagina": 12,
+   "linea": 395,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest receivable and similar income",
+   "M": 0.084973,
+   "linea": 397
+  },
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": null,
+   "linea": 398
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on loss",
+   "M": 4.181616,
+   "linea": 400
+  }
+ ]
+}

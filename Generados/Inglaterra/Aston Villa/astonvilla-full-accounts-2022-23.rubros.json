@@ -1,0 +1,110 @@
+{
+  "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2022-23.md",
+  "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2022-23.pdf",
+  "club": "astonvilla-gb",
+  "year": 2023,
+  "generatedAt": "2026-10-19T15:37:02.942Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Gate receipts",
+      "lado": "revenue",
+      "page": 21,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        18.776513
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Broadcasting",
+      "lado": "revenue",
+      "page": 21,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        152.55645
+      ],
+      "glosa": "Derechos de retransmisión"
+    },
+    {
+      "label": "Sponsorship",
+      "lado": "revenue",
+      "page": 21,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        16.302816
+      ],
+      "glosa": "Patrocinio"
+    },
+    {
+      "label": "Commercial",
+      "lado": "revenue",
+      "page": 21,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        16.890061
+      ],
+      "glosa": "Ingresos comerciales"
+    },
+    {
+      "label": "Other operating income",
+      "lado": "revenue",
+      "page": 13,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Depreciation of tangible assets",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Operating expenses (restated*)\"",
+      "values": [
+        3.317377
+      ],
+      "glosa": "Amortización del inmovilizado material"
+    },
+    {
+      "label": "Wages and salaries",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Operating expenses (restated*)\" > desglose de \"Staff costs (see note 7)\"",
+      "values": [
+        9.080191
+      ],
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Social security costs",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Operating expenses (restated*)\" > desglose de \"Staff costs (see note 7)\"",
+      "values": [
+        1.2022
+      ],
+      "glosa": "Costes de seguridad social"
+    },
+    {
+      "label": "Other pension costs (note 19)",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Operating expenses (restated*)\" > desglose de \"Staff costs (see note 7)\"",
+      "values": [
+        0.477504
+      ],
+      "glosa": "Otros costes de pensiones (nota 19)"
+    },
+    {
+      "label": "Other operating charges (including exceptional costs)",
+      "lado": "expense",
+      "page": 22,
+      "section": "nota que desglosa \"Operating expenses (restated*)\"",
+      "values": [
+        306.203312
+      ],
+      "glosa": "Otros gastos de explotación (incluidos costes excepcionales)"
+    }
+  ]
+}

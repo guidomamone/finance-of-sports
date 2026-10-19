@@ -1,0 +1,153 @@
+{
+ "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2021-22.pdf",
+ "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2021-22.md",
+ "generado": "2026-10-19T16:00:18.581Z",
+ "estado": "ok",
+ "clubId": "astonvilla-gb",
+ "year": 2022,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)",
+   "dif": 7.105427357601002e-15
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 163.993904 en este documento y 163.993904 en astonvilla-full-accounts-2022-23.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2021: 178.128848 en astonvilla-full-accounts-2020-21.pdf y 178.128848 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2021: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la nota de \"Administrative expenses\" no suma el renglón (12.171237 contra 145.805056, sumando sus renglones): quedó el renglón del estado"
+ ],
+ "reintentar": [
+  {
+   "renglon": "Administrative expenses",
+   "suma": 12.171237,
+   "objetivo": 145.805056
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Administrative expenses",
+   "suma": 12.171237,
+   "objetivo": 145.805056
+  }
+ ],
+ "totales": {
+  "ingresos": 163.993904,
+  "gastos": 155.805056,
+  "financiero": -0.282155,
+  "impuesto": -1.434468,
+  "resultadoImpreso": 6.472225,
+  "resultadoParaCargar": 6.472225,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Gate Receipts",
+   "lado": "ingreso",
+   "M": 16.062996,
+   "pagina": 20,
+   "linea": 714,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Broadcasting",
+   "lado": "ingreso",
+   "M": 123.211017,
+   "pagina": 20,
+   "linea": 715,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Sponsorship",
+   "lado": "ingreso",
+   "M": 12.703334,
+   "pagina": 20,
+   "linea": 716,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Commercial",
+   "lado": "ingreso",
+   "M": 11.766557,
+   "pagina": 20,
+   "linea": 717,
+   "origen": "nota que desglosa \"Turnover\""
+  },
+  {
+   "etiqueta": "Other operating income",
+   "lado": "ingreso",
+   "M": 0.25,
+   "pagina": 12,
+   "linea": 413,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrative expenses",
+   "lado": "gasto",
+   "M": 145.805056,
+   "pagina": 12,
+   "linea": 411,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Exceptional administrative expenses",
+   "lado": "gasto",
+   "M": 10,
+   "pagina": 12,
+   "linea": 412,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Interest payable and similar expenses",
+   "M": -0.282155,
+   "linea": 415
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Tax on profit/(loss)",
+   "M": -1.434468,
+   "linea": 417
+  }
+ ]
+}

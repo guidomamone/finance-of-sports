@@ -1,0 +1,90 @@
+{
+ "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2020-21.md",
+ "club": "astonvilla-gb",
+ "year": 2021,
+ "generatedAt": "2026-10-19T16:00:52.689Z",
+ "rubrosHuella": "40192a8c33591fc6a0cab28c91f9c8e3aafd9c2e",
+ "jevHuella": "56ac3c9ed7d2e4abec3f364aa5e0b4ad129d7438",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0,
+ "rubros": [
+  {
+   "label": "Gate Receipts",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Ingresos por taquilla",
+   "page": 20,
+   "pendiente": false,
+   "ya": "matchday_competition",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "matchday_competition",
+   "confianza": 1
+  },
+  {
+   "label": "Broadcasting",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Derechos audiovisuales",
+   "page": 20,
+   "pendiente": false,
+   "ya": "broadcasting",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "broadcasting",
+   "confianza": 1
+  },
+  {
+   "label": "Sponsorship",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Patrocinio",
+   "page": 20,
+   "pendiente": false,
+   "ya": "sponsorship_commercial",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "sponsorship_commercial",
+   "confianza": 1
+  },
+  {
+   "label": "Commercial",
+   "lado": "revenue",
+   "section": "nota que desglosa \"Turnover\"",
+   "glosa": "Ingresos comerciales",
+   "page": 20,
+   "pendiente": false,
+   "ya": "sponsorship_commercial",
+   "escalon": 0,
+   "precedenteDe": "sitio:exacto",
+   "categoria": "sponsorship_commercial",
+   "confianza": 1
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos de explotación",
+   "page": 12,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "other_income",
+   "confianza": 0.99
+  },
+  {
+   "label": "Administrative expenses",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de administración",
+   "page": 12,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  }
+ ]
+}

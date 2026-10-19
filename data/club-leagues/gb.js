@@ -10,7 +10,7 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'sunderland-gb':       { 2024: 'gb-championship',  2025: 'gb-championship' },
   'westham-gb':          { 2025: 'gb-premierleague' },
   'wolves-gb':           { 2024: 'gb-premierleague', 2025: 'gb-premierleague' },
-  'astonvilla-gb':  { 2025: 'gb-premierleague' },
+  'astonvilla-gb':  { 2025: 'gb-premierleague', 2023: 'gb-premierleague' },
   'bournemouth-gb': { 2024: 'gb-premierleague', 2025: 'gb-premierleague' },
   'brentford-gb':   { 2024: 'gb-premierleague', 2025: 'gb-premierleague' },
   'burnley-gb':     { 2024: 'gb-premierleague', 2025: 'gb-championship' },

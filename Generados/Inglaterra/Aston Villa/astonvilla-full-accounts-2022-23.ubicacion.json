@@ -1,0 +1,211 @@
+{
+ "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2022-23.pdf",
+ "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2022-23.md",
+ "mdSha1": "70b41c1efe1baa74aa028ebf68a2b03521b97a7e",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:12:37.107Z",
+ "perimetroClub": "individual",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    21,
+    30
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 13,
+   "lineas": [
+    499,
+    508
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 14,
+   "lineas": [
+    525,
+    539
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 15,
+   "lineas": [
+    558,
+    571
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 21,
+   "lineas": [
+    835,
+    841
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 21,
+   "lineas": [
+    858,
+    860
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 22,
+   "lineas": [
+    874,
+    879
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 22,
+   "lineas": [
+    881,
+    888
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 22,
+   "lineas": [
+    902,
+    907
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 23,
+   "lineas": [
+    921,
+    927
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 23,
+   "lineas": [
+    931,
+    933
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 23,
+   "lineas": [
+    949,
+    951
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 23,
+   "lineas": [
+    955,
+    960
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 24,
+   "lineas": [
+    977,
+    985
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 24,
+   "lineas": [
+    997,
+    999
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 25,
+   "lineas": [
+    1011,
+    1025
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 25,
+   "lineas": [
+    1029,
+    1036
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 26,
+   "lineas": [
+    1060,
+    1064
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 26,
+   "lineas": [
+    1068,
+    1077
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 26,
+   "lineas": [
+    1094,
+    1097
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 27,
+   "lineas": [
+    1141,
+    1145
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b5"
+ ],
+ "notas_gastos": [
+  "b7",
+  "b9"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Encabezado de columnas '2023 £ | 2022 £' (importes en libras sin indicación de miles)",
+ "moneda": "GBP",
+ "columna_ejercicio": "2023 £",
+ "columna_anterior": "2022 £",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la columna 2022 del estado (b2) y de la nota de gastos (b7) con las cifras reexpresadas (restated*) tal como se imprimen?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Operating expenses (restated*)",
+   "texto": "El año anterior está reexpresado: costes excepcionales se movieron a operating expenses, lo que puede diferir del 2022 ya cargado.",
+   "bloques": [
+    "b2",
+    "b7"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Cuentas individuales de Aston Villa Football Club Limited. b8 es un detalle de partidas incluidas en otros gastos (cifras informativas, no desglose aditivo); b13/b14 son impuestos y conciliación; b10 es número de empleados. No se eligen."
+}

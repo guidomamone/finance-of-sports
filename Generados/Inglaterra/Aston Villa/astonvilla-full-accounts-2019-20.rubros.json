@@ -1,0 +1,70 @@
+{
+  "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2019-20.md",
+  "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2019-20.pdf",
+  "club": "astonvilla-gb",
+  "year": 2020,
+  "generatedAt": "2026-10-19T15:37:02.866Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Gate receipts",
+      "lado": "revenue",
+      "page": 20,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        11.109998
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Broadcasting",
+      "lado": "revenue",
+      "page": 20,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        77.727663
+      ],
+      "glosa": "Derechos de retransmisión"
+    },
+    {
+      "label": "Sponsorship",
+      "lado": "revenue",
+      "page": 20,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        10.401513
+      ],
+      "glosa": "Patrocinio"
+    },
+    {
+      "label": "Commercial",
+      "lado": "revenue",
+      "page": 20,
+      "section": "nota que desglosa \"Turnover\"",
+      "values": [
+        8.624614
+      ],
+      "glosa": "Ingresos comerciales"
+    },
+    {
+      "label": "Administrative expenses",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        203.017838
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Loss on sale of tangible assets",
+      "lado": "expense",
+      "page": 12,
+      "section": "estado",
+      "values": [
+        0.005947
+      ],
+      "glosa": "Pérdidas por enajenación de inmovilizado material"
+    }
+  ]
+}

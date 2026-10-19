@@ -135,6 +135,45 @@ _antes de Nassef Sawiris (data/gestiones/gb.js):_
 NSWE compró el control el 20-21/7/2018 (fecha aproximada: anuncio del club). Xia siguió de co-chairman hasta agosto de 2019; Sawiris quedó como chairman.
 ```
 
+## 2023
+
+### Ingresos
+
+```text
+2023: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2022-23.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Inglaterra/Aston Villa/astonvilla-full-accounts-2022-23.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Gate receipts | pág. 21, precedente |
+| 2 | Broadcasting | pág. 21, precedente |
+| 3 | Sponsorship | pág. 21, precedente |
+| 4 | Commercial | pág. 21, precedente |
+| 5 | Other operating income | pág. 13, Jev 0.99 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Depreciation of tangible assets | pág. 22, precedente |
+| 2 | Wages and salaries | pág. 22, Claude 0.88 |
+| 3 | Social security costs | pág. 22, Jev 0.91 |
+| 4 | Other pension costs | pág. 22, Claude 0.85 |
+| 5 | Other operating charges (including exceptional costs) | pág. 22, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): gb-premierleague, verificado contra roster cacheado de "2022–23 Premier League" (tools/club-league-reference/gb.json), coincidencia exacta "Aston Villa".
+```
+
 ## Fuentes
 
 ### astonvilla-gb-full-accounts-2025
@@ -143,6 +182,14 @@ _note (data/):_
 
 ```text
 PDF con texto nativo (no escaneo), transcripción completa en Clubes/Inglaterra/Aston Villa/aston-villa-full-accounts-2024-25.md. Entidad individual, no consolidada — NO reporta activos intangibles ni compraventa de jugadores en absoluto, ver limitación documentada en el comentario de cabecera de data/gb/astonvilla-gb-data.js y en Admin/dudas-por-club.md. El ejercicio anterior (13 meses, no comparable) no se cargó. fxRef apunta a FX_CLOSE (GBP@2025-06-30).
+```
+
+### astonvilla-gb-full-accounts-2022-23
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros

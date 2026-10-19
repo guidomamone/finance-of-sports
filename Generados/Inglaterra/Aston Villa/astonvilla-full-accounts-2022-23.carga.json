@@ -1,0 +1,445 @@
+{
+ "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2022-23.pdf",
+ "generado": "2026-10-19T16:01:26.199Z",
+ "frena": [],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-19: perimetro-senales.mjs: 0 documento(s) con los dos estados votan —; 5 ejercicio(s) con un solo perímetro (individual); 7 documento(s) mirados)",
+  "el documento cierra 2023-05-31 (ejercicio desde el 06-01) y data/clubs.js dice fiscalYearStart 07-01: ¿cambió el cierre del club?"
+ ],
+ "ejercicio": {
+  "clubId": "astonvilla-gb",
+  "year": 2023,
+  "cierre": "2023-05-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Gate receipts",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 18.776513,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Broadcasting",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 152.55645,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sponsorship",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 16.302816,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Commercial",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 16.890061,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other operating income",
+    "normalizedCategory": "other_income",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 13,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Depreciation of tangible assets",
+    "normalizedCategory": "depreciation",
+    "amountNative": -3.317377,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Wages and salaries",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -9.080191,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 2,
+    "_conf": 0.88,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Social security costs",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.2022,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 1,
+    "_conf": 0.91,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other pension costs",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.477504,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Other operating charges (including exceptional costs)",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -306.203312,
+    "disclosureLevel": "aggregated",
+    "_pag": 22,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "GBP",
+   "fxRef": "GBP@2023-05-31",
+   "sourceId": "astonvilla-gb-full-accounts-2022-23",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.128924,
+   "tax": -0.22125,
+   "extraRows": [
+    {
+     "label": "Interest payable and similar expenses",
+     "value": -0.128924
+    },
+    {
+     "label": "Tax on (loss)/profit",
+     "value": -0.22125
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 204.52584,
+   "officialTotalExpenses": 320.280584,
+   "officialPAT": -116.104918
+  },
+  "source": {
+   "id": "astonvilla-gb-full-accounts-2022-23",
+   "clubId": "astonvilla-gb",
+   "title": "Aston Villa Football Club Limited — astonvilla-full-accounts-2022-23 (ejercicio 2023)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2022-23.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2022-23.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2023-05-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "astonvilla-gb",
+ "year": 2023,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 12,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Gate receipts",
+   "page": 21,
+   "native": 18.776513,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 18.776513,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 18.776513
+  },
+  {
+   "label": "Broadcasting",
+   "page": 21,
+   "native": 152.55645,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 152.55645,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 152.55645
+  },
+  {
+   "label": "Sponsorship",
+   "page": 21,
+   "native": 16.302816,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 16.302816,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 16.302816
+  },
+  {
+   "label": "Commercial",
+   "page": 21,
+   "native": 16.890061,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Turnover\")",
+   "signoFijo": 16.890061,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 16.890061
+  },
+  {
+   "label": "Other operating income",
+   "page": 13,
+   "native": 0,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0
+  },
+  {
+   "label": "Depreciation of tangible assets",
+   "page": 22,
+   "native": 3.317377,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses (restated*)\")",
+   "signoFijo": 3.317377,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.317377
+  },
+  {
+   "label": "Wages and salaries",
+   "page": 22,
+   "native": 9.080191,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses (restated*)\" > desglose de \"Staff costs (see note 7)\")",
+   "signoFijo": 9.080191,
+   "cat": "wages_squad",
+   "conf": 0.88,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -9.080191
+  },
+  {
+   "label": "Social security costs",
+   "page": 22,
+   "native": 1.2022,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses (restated*)\" > desglose de \"Staff costs (see note 7)\")",
+   "signoFijo": 1.2022,
+   "cat": "wages_squad",
+   "conf": 0.91,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.2022
+  },
+  {
+   "label": "Other pension costs",
+   "page": 22,
+   "native": 0.477504,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses (restated*)\" > desglose de \"Staff costs (see note 7)\")",
+   "signoFijo": 0.477504,
+   "cat": "wages_squad",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.477504
+  },
+  {
+   "label": "Other operating charges (including exceptional costs)",
+   "page": 22,
+   "native": 306.203312,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Operating expenses (restated*)\")",
+   "signoFijo": 306.203312,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "2022-23.md L878 'Other operating charges (including exceptional costs)' 306,203,312 es la linea de nota 6 (L870-879), sin mas desglose (solo items 'stated after charging' L883-888, ej. Women's football 4.4M). Es la sociedad comercial (L586) y el rotulo literal es 'Other'; el club no la abre, se carga como otros gastos. Alternativa a considerar con Guido: lump_football_operations_expense por ser 95% del gasto. [subagente Sonnet, revisado por Claude 2026-10-19]",
+   "destino": "expense",
+   "amountNative": -306.203312
+  },
+  {
+   "label": "Interest payable and similar expenses",
+   "page": null,
+   "native": -0.128924,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Tax on (loss)/profit",
+   "page": null,
+   "native": -0.22125,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Turnover\")": "gastos con signo",
+   "verificacion (estado)": "gastos con signo",
+   "verificacion (nota que desglosa \"Operating expenses (restated*)\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Operating expenses (restated*)\" > desglose de \"Staff costs (see note 7)\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 204.52584,
+  "expSum": -320.280584,
+  "officialTotalRevenue": 204.52584,
+  "officialTotalExpenses": 320.280584,
+  "officialPAT": -116.104918,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -116.104918,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 204.52584
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 320.280584
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "GBP@2023-05-31",
+  "fx": 0.806842,
+  "source": "market_close",
+  "label": "Tipo spot del Bank of England al 2023-05-31"
+ },
+ "liga": {
+  "valor": "gb-premierleague",
+  "fuente": "roster cacheado de \"2022–23 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Aston Villa\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2023,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2023-05-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (35 de 36 fechas de fin de mes caen en el mes 5))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-19)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "GBP",
+   "fuente": "moneda de curso legal de Inglaterra (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "GBP@2023-05-31",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 0.806842. --escribir agrega 'GBP@2023-05-31' a FX_CLOSE",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "astonvilla-gb-full-accounts-2022-23",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "gb-premierleague",
+   "fuente": "roster cacheado de \"2022–23 Premier League\" (tools/club-league-reference/gb.json), coincidencia exacta \"Aston Villa\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 5,
+  "lineasGasto": 5,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

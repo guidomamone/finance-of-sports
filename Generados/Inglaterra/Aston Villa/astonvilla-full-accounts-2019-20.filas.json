@@ -1,0 +1,304 @@
+{
+ "pdf": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2019-20.pdf",
+ "md": "Clubes/Inglaterra/Aston Villa/astonvilla-full-accounts-2019-20.md",
+ "mdSha1": "0f5da48930450be15bfbf605e08cd6d4a6b49678",
+ "ubicacionSha1": "69ef4f85e74f220ec33eab34e43f55a31746f4cc",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-19T15:09:49.595Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [
+   "b5",
+   "b11"
+  ],
+  "notas_gastos": [
+   "b6",
+   "b8"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "unidades",
+   "evidencia": "L391: columnas '2020 £' y '2019 £'"
+  },
+  {
+   "bloque": "b5",
+   "escala": "unidades",
+   "evidencia": "L685: '2020 £'"
+  },
+  {
+   "bloque": "b11",
+   "escala": "unidades",
+   "evidencia": "L775: '2020 £'"
+  },
+  {
+   "bloque": "b6",
+   "escala": "unidades",
+   "evidencia": "L706: '2020 £'"
+  },
+  {
+   "bloque": "b8",
+   "escala": "unidades",
+   "evidencia": "L733: '2020 £'"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 393,
+   "etiqueta": "Turnover",
+   "actual": "107,863,788",
+   "anterior": "51,426,474",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 394,
+   "etiqueta": "Administrative expenses",
+   "actual": "(203,017,838)",
+   "anterior": "(163,043,101)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 395,
+   "etiqueta": "Loss on sale of tangible assets",
+   "actual": "(5,947)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 396,
+   "etiqueta": "Operating loss",
+   "actual": "(95,159,997)",
+   "anterior": "(111,616,627)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 397,
+   "etiqueta": "Interest receivable and similar income",
+   "actual": "84,973",
+   "anterior": "55,141",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 398,
+   "etiqueta": "Interest payable and similar expenses",
+   "actual": "-",
+   "anterior": "(215,410)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 399,
+   "etiqueta": "Loss before taxation",
+   "actual": "(95,075,024)",
+   "anterior": "(111,776,896)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 400,
+   "etiqueta": "Tax on loss",
+   "actual": "4,181,616",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 401,
+   "etiqueta": "Loss for the financial year",
+   "actual": "(90,893,408)",
+   "anterior": "(111,776,896)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 402,
+   "etiqueta": "Total comprehensive expense for the financial year",
+   "actual": "(90,893,408)",
+   "anterior": "(111,776,896)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 687,
+   "etiqueta": "Gate receipts",
+   "actual": "11,109,998",
+   "anterior": "12,745,422",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b5",
+   "linea": 688,
+   "etiqueta": "Broadcasting",
+   "actual": "77,727,663",
+   "anterior": "22,269,770",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b5",
+   "linea": 689,
+   "etiqueta": "Sponsorship",
+   "actual": "10,401,513",
+   "anterior": "7,338,745",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b5",
+   "linea": 690,
+   "etiqueta": "Commercial",
+   "actual": "8,624,614",
+   "anterior": "9,072,537",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b5",
+   "linea": 691,
+   "etiqueta": "",
+   "actual": "107,863,788",
+   "anterior": "51,426,474",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "bloque": "b11",
+   "linea": 777,
+   "etiqueta": "Other interest receivable",
+   "actual": "84,973",
+   "anterior": "55,141",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "bloque": "b6",
+   "linea": 708,
+   "etiqueta": "Depreciation of tangible assets",
+   "actual": "1,943,071",
+   "anterior": "1,808,321",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b6",
+   "linea": 709,
+   "etiqueta": "Loss on disposal of tangible assets",
+   "actual": "5,947",
+   "anterior": "1,556,285",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Loss on sale of tangible assets"
+  },
+  {
+   "bloque": "b6",
+   "linea": 710,
+   "etiqueta": "Exceptional items - impairment of amounts due to the Company relating to liabilities arising on promotion to the Premier League",
+   "actual": "-",
+   "anterior": "30,000,000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 735,
+   "etiqueta": "Wages and salaries",
+   "actual": "7,226,272",
+   "anterior": "6,123,278",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 736,
+   "etiqueta": "Social security costs",
+   "actual": "805,828",
+   "anterior": "601,249",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 737,
+   "etiqueta": "Other pension costs (note 19)",
+   "actual": "285,400",
+   "anterior": "276,938",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "bloque": "b8",
+   "linea": 738,
+   "etiqueta": "",
+   "actual": "8,317,500",
+   "anterior": "7,001,465",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 393,
+  "actual": "107,863,788"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 401,
+  "actual": "(90,893,408)",
+  "anterior": "(111,776,896)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los costos de personal de b8 (L735-L738, total 8,317,500) como desglose parcial de 'Administrative expenses'?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "Administrative expenses",
+   "texto": "L738: 8,317,500 parece bajo para la nómina de un club de Premier League; podría ser solo de la sociedad sin jugadores o de otro perímetro.",
+   "bloques": [
+    "b8"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Todo en libras (unidades). b6 y b8 son desgloses parciales de Administrative expenses (no suman el renglón). Total de gastos no impreso aparte."
+}

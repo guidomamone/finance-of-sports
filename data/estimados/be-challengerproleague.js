@@ -1,0 +1,5 @@
+// GENERADO por tools/estimar.mjs: no editar a mano. ESTIMACIONES, no datos reales: ingreso en millones de USD del año, rango del 80% (lo-hi) y error mediano medido (%).
+window.ESTIMADOS = window.ESTIMADOS || {};
+window.ESTIMADOS["be-challengerproleague"] = {
+  2025: [{"n":"Beveren","revenue":7.96,"lo":2.591,"hi":24.478,"caso":"nuevo","error":49,"de":[]},{"n":"Club NXT","revenue":6.515,"lo":2.12,"hi":20.033,"caso":"nuevo","error":49,"de":[]},{"n":"Deinze","revenue":2.392,"lo":0.778,"hi":7.354,"caso":"nuevo","error":49,"de":[]},{"n":"Eupen","revenue":4.363,"lo":1.42,"hi":13.417,"caso":"nuevo","error":49,"de":[]},{"n":"Francs Borains","revenue":3.571,"lo":1.162,"hi":10.981,"caso":"nuevo","error":49,"de":[]},{"n":"Jong Genk","revenue":2.644,"lo":0.86,"hi":8.13,"caso":"nuevo","error":49,"de":[]},{"n":"La Louvière","revenue":9.727,"lo":3.165,"hi":29.91,"caso":"nuevo","error":49,"de":[]},{"n":"RFC Liège","revenue":4.823,"lo":1.57,"hi":14.831,"caso":"nuevo","error":49,"de":[]},{"n":"RSCA Futures","revenue":3.23,"lo":1.051,"hi":9.934,"caso":"nuevo","error":49,"de":[]},{"n":"Seraing","revenue":2.922,"lo":0.951,"hi":8.986,"caso":"nuevo","error":49,"de":[]}],
+};
