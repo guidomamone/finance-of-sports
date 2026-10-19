@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2024.pdf",
  "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2024.md",
- "generado": "2026-10-19T12:59:07.806Z",
+ "generado": "2026-10-19T15:05:16.861Z",
  "estado": "ok",
  "clubId": "sarpsborg08-no",
  "year": 2024,
@@ -28,8 +28,8 @@
   {
    "nombre": "total de ingresos",
    "ok": true,
-   "detalle": "203.736697 = 203.736697",
-   "suma": 203.736697,
+   "detalle": "203.736698 = 203.736697",
+   "suma": 203.73669800000002,
    "impreso": 203.736697
   },
   {
@@ -43,17 +43,17 @@
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (financiero por rótulo)",
-   "dif": 1.0658141036401503e-14
+   "dif": 0.0000010000000365550932
   },
   {
    "nombre": "documento del año 2025",
    "ok": true,
-   "detalle": "ingresos de 2024: 203.736697 en este documento y 203.736697 en aarsregnskap-fotballforening-fli-2025.pdf (columna del año anterior)"
+   "detalle": "ingresos de 2024: 203.736698 en este documento y 203.736698 en aarsregnskap-fotballforening-fli-2025.pdf (columna del año anterior)"
   },
   {
    "nombre": "documento del año 2023",
-   "ok": false,
-   "detalle": "ingresos de 2023: 166.545864 en aarsregnskap-fotballforening-fli-2023.pdf y 146.545051 en este documento (columna del año anterior)"
+   "ok": true,
+   "detalle": "ingresos de 2023: 146.545052 en aarsregnskap-fotballforening-fli-2023.pdf y 146.545052 en este documento (columna del año anterior)"
   },
   {
    "nombre": "año anterior cargado",
@@ -67,17 +67,16 @@
   }
  ],
  "notas": [
-  "la nota del subtotal \"Sum inntekter\" suma el subtotal impreso (203.736697): reemplaza a \"Tilskudd\" + \"Andre inntekter\" + \"Andre salgsinntekter\" + \"Salg/utleie spillere\" + \"Mediainntekter\" + \"Reklame- og sponsorinntekter\" + \"Medlemsinntekter\" + \"Billetinntekter\"",
-  "la nota del subtotal \"Sum inntekter\" suma el subtotal impreso (166.545863): reemplaza a \"Annen driftsinntekt\" + \"Salgsinntekt\"",
+  "duda de localizar que no afecta la carga: b1 y b27 tienen los mismos importes (Sum inntekter 203 736 697, Årsresultat 29 725 168); son dos versiones del mismo estado individual.",
   "duda de localizar ya contestada para el club (perimetro, \"-\"): aceptar, en aarsregnskap-fotballforening-fli-2018.pdf",
-  "duda de localizar que no afecta la carga: b27 tiene los mismos renglones que b1 (Billetinntekter, Medlemsinntekter...) y parece ser la versión firmada del mismo estado.",
-  "duda de extraer confirmada por las sumas aunque un año vecino da distinto (escalón 2b; cuadro-duplicado, \"Sum inntekter\"): ¿Se deja afuera de la carga el cuadro 'Geografisk fordeling' de la Note 1 (L1523-L1525), cuyo importe 2024 '203 763 697' difiere en 27 000 del total 203 736 697?"
+  "duda de localizar que no afecta la carga: La distribución geográfica de b31 imprime 203 763 697, que parece error de tipeo frente al total 203 736 697.",
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"Sum inntekter\"): ¿Se deja afuera de la carga el desglose geográfico 'Norge' 203 763 697 (L1524-L1525), que difiere en 27 000 del total del estado?"
  ],
  "reintentar": null,
- "reintentado": true,
+ "reintentado": false,
  "faltasDesglose": null,
  "totales": {
-  "ingresos": 203.736697,
+  "ingresos": 203.736698,
   "gastos": 171.341764,
   "financiero": 4.710755,
   "impuesto": 0,
@@ -88,20 +87,68 @@
  },
  "lineas": [
   {
-   "etiqueta": "Arrangement",
+   "etiqueta": "Billetinntekter",
    "lado": "ingreso",
-   "M": 69.134901,
-   "pagina": 39,
-   "linea": 1520,
-   "origen": "nota que desglosa \"Sum inntekter\" (escalón: la nota del subtotal)"
+   "M": 6.443008,
+   "pagina": 2,
+   "linea": 116,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Medlemsinntekter",
+   "lado": "ingreso",
+   "M": 0.57349,
+   "pagina": 2,
+   "linea": 117,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Reklame- og sponsorinntekter",
+   "lado": "ingreso",
+   "M": 29.530394,
+   "pagina": 2,
+   "linea": 118,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Mediainntekter",
+   "lado": "ingreso",
+   "M": 18.716329,
+   "pagina": 2,
+   "linea": 119,
+   "origen": "estado"
   },
   {
    "etiqueta": "Salg/utleie spillere",
    "lado": "ingreso",
    "M": 134.601796,
-   "pagina": 39,
-   "linea": 1521,
-   "origen": "nota que desglosa \"Sum inntekter\" (escalón: la nota del subtotal)"
+   "pagina": 2,
+   "linea": 120,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andre salgsinntekter",
+   "lado": "ingreso",
+   "M": 6.625487,
+   "pagina": 2,
+   "linea": 121,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Andre inntekter",
+   "lado": "ingreso",
+   "M": 6.280725,
+   "pagina": 2,
+   "linea": 122,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Tilskudd",
+   "lado": "ingreso",
+   "M": 0.965469,
+   "pagina": 2,
+   "linea": 123,
+   "origen": "estado"
   },
   {
    "etiqueta": "Endring i beholdning av varer under tilvirkning og ferdig tilvirkede varer",
@@ -160,7 +207,7 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Reise- og oppholdskostnader bortekamper",
+   "etiqueta": "bortekamper",
    "lado": "gasto",
    "M": 3.970701,
    "pagina": 2,
@@ -218,8 +265,5 @@
    "linea": 143
   }
  ],
- "impuesto": [],
- "notaSubtotal": [
-  "ingreso"
- ]
+ "impuesto": []
 }

@@ -3,28 +3,88 @@
   "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2024.pdf",
   "club": "sarpsborg08-no",
   "year": 2024,
-  "generatedAt": "2026-10-19T12:57:41.494Z",
+  "generatedAt": "2026-10-19T15:05:16.861Z",
   "origen": "verificar.mjs (proceso nuevo, Versión 324)",
   "rubros": [
     {
-      "label": "Arrangement",
+      "label": "Billetinntekter",
       "lado": "revenue",
-      "page": 39,
-      "section": "nota que desglosa \"Sum inntekter\" (escalón: la nota del subtotal)",
+      "page": 2,
+      "section": "estado",
       "values": [
-        69.134901
+        6.443008
       ],
-      "glosa": "Eventos y partidos"
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Medlemsinntekter",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.57349
+      ],
+      "glosa": "Ingresos por cuotas de socios"
+    },
+    {
+      "label": "Reklame- og sponsorinntekter",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        29.530394
+      ],
+      "glosa": "Ingresos por publicidad y patrocinio"
+    },
+    {
+      "label": "Mediainntekter",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        18.716329
+      ],
+      "glosa": "Ingresos por derechos audiovisuales"
     },
     {
       "label": "Salg/utleie spillere",
       "lado": "revenue",
-      "page": 39,
-      "section": "nota que desglosa \"Sum inntekter\" (escalón: la nota del subtotal)",
+      "page": 2,
+      "section": "estado",
       "values": [
         134.601796
       ],
-      "glosa": "Venta y cesión de jugadores"
+      "glosa": "Traspaso y cesión de jugadores"
+    },
+    {
+      "label": "Andre salgsinntekter",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        6.625487
+      ],
+      "glosa": "Otros ingresos por ventas"
+    },
+    {
+      "label": "Andre inntekter",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        6.280725
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Tilskudd",
+      "lado": "revenue",
+      "page": 2,
+      "section": "estado",
+      "values": [
+        0.965469
+      ],
+      "glosa": "Subvenciones"
     },
     {
       "label": "Endring i beholdning av varer under tilvirkning og ferdig tilvirkede varer",
@@ -64,7 +124,7 @@
       "values": [
         8.306292
       ],
-      "glosa": "Seguridad social a cargo de la empresa"
+      "glosa": "Seguridad Social a cargo de la empresa"
     },
     {
       "label": "Pensjonskostnader",
@@ -74,7 +134,7 @@
       "values": [
         1.009482
       ],
-      "glosa": "Gastos de pensiones"
+      "glosa": "Gastos por pensiones"
     },
     {
       "label": "Andre ytelser",
@@ -94,17 +154,17 @@
       "values": [
         11.134394
       ],
-      "glosa": "Amortización de inmovilizado material y activos intangibles"
+      "glosa": "Amortización del inmovilizado material y de activos intangibles"
     },
     {
-      "label": "Reise- og oppholdskostnader bortekamper",
+      "label": "bortekamper",
       "lado": "expense",
       "page": 2,
       "section": "estado",
       "values": [
         3.970701
       ],
-      "glosa": "Gastos de viaje y alojamiento para partidos como visitante"
+      "glosa": "Gastos de partidos como visitante"
     },
     {
       "label": "Andre kostnader",

@@ -3,8 +3,8 @@
  "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2024.md",
  "mdSha1": "c695f9bce4368c28bd186350372acc1e320fd15c",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T12:56:25.999Z",
- "indiceAmpliado": 2,
+ "generado": "2026-10-19T15:04:50.854Z",
+ "perimetroClub": "individual",
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -355,30 +355,42 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se carga el estado individual b1 (pág. 2) en lugar del consolidado b5/b10 (Konsern), por coherencia con los años ya cargados?",
+   "pregunta": "¿Se carga como estado individual el de pág. 2-3 (b1+b2) y se deja afuera el duplicado de pág. 34 (b27)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b1 y b27 tienen los mismos importes (Sum inntekter 203 736 697, Årsresultat 29 725 168); son dos versiones del mismo estado individual.",
+   "bloques": [
+    "b1",
+    "b2",
+    "b27"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se dejan afuera el estado consolidado de pág. 6 (b5) y el de pág. 18 (b10) con su nota b14, por ser del perímetro konsern?",
    "propuesta": "sí",
    "tema": "perimetro",
    "renglon": "",
-   "texto": "El club usa perímetro individual; b1 abre Billetinntekter, Medlemsinntekter y Mediainntekter, mientras que b10 (Sum driftsinntekter 224 508 804) parece ser el consolidado.",
+   "texto": "b5 es KONSERNRESULTATREGNSKAP y b10 tiene Sum driftsinntekter 224 508 804 y 'Majoritetens andel', distinto del individual 203 736 697; el club carga individual.",
    "bloques": [
-    "b1",
     "b5",
-    "b10"
+    "b10",
+    "b14"
    ],
    "afecta_carga": true
   },
   {
-   "pregunta": "¿Se deja afuera la tabla b27 (pág. 34) por ser una copia del estado individual b1?",
+   "pregunta": "¿Se toma 203 736 697 como total en la fila Norge de b31, que imprime 203 763 697?",
    "propuesta": "sí",
-   "tema": "cuadro-duplicado",
-   "renglon": "",
-   "texto": "b27 tiene los mismos renglones que b1 (Billetinntekter, Medlemsinntekter...) y parece ser la versión firmada del mismo estado.",
+   "tema": "otro",
+   "renglon": "Norge",
+   "texto": "La distribución geográfica de b31 imprime 203 763 697, que parece error de tipeo frente al total 203 736 697.",
    "bloques": [
-    "b27",
-    "b1"
+    "b31"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "El estado individual (b1+b2, pág. 2-3) abre Televisión (Mediainntekter 18 716 329), Estadio (Billetinntekter 6 443 008) y Cuotas sociales (Medlemsinntekter 573 490). Los bloques b5 (KONSERNRESULTATREGNSKAP) y b10 son consolidados; las notas b14/b15 corresponden al consolidado. b27 parece ser un duplicado del individual, con sus notas b31/b32 (Note 1 Salgsinntekter, Note 2 Lønnskostnader)."
+ "observaciones": "Documento con estado individual (b1+b2, pág. 2-3, repetido en b27 pág. 34 con notas b31-b33) y consolidado (b5 pág. 6 y b10 pág. 18 con notas b14-b22; Sum driftsinntekter 224 508 804). Se elige el individual por el perímetro del club. b32 es la nota de Lønnskostnader del individual (pág. 39). Montos en NOK unidades."
 }

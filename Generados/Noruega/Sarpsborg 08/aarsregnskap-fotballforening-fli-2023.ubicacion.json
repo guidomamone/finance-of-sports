@@ -3,7 +3,7 @@
  "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2023.md",
  "mdSha1": "5ad232f038f696f20368130bf3e0b9ea91b6a210",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T14:53:10.783Z",
+ "generado": "2026-10-19T15:06:54.583Z",
  "perimetroClub": "individual",
  "bloques": {
   "b1": {
@@ -585,8 +585,7 @@
  },
  "sin_estado": false,
  "estado": [
-  "b1",
-  "b2"
+  "b22"
  ],
  "notas_ingresos": [
   "b27"
@@ -595,7 +594,7 @@
   "b28"
  ],
  "escala": "unidades",
- "escala_evidencia": "Belep i: NOK",
+ "escala_evidencia": "Importes con todos los dígitos (p. ej. 146 545 051) y en el formato registral b1 'Beløp i: NOK'",
  "moneda": "NOK",
  "columna_ejercicio": "2023",
  "columna_anterior": "2022",
@@ -603,30 +602,19 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se carga 'Salgskostnader' 26 151 779 (b22) en lugar de la etiqueta 'Endring i beholdning av varer...' que figura en b1 para el mismo importe?",
-   "propuesta": "sí",
-   "tema": "otro",
-   "renglon": "Endring i beholdning av varer under tilvirkning og ferdig tilvirkede varer",
-   "texto": "b1 rotula como variación de existencias el importe que b22 llama Salgskostnader (costo de ventas).",
-   "bloques": [
-    "b1",
-    "b22"
-   ],
-   "afecta_carga": false
-  },
-  {
-   "pregunta": "¿Se dejan afuera de la carga los cuadros b22, b40 y b55 por ser copias o versiones alternativas del resultado individual?",
+   "pregunta": "¿Se usa b22 (pág. 13) como estado individual en lugar de la versión registral b1/b2 (pág. 2-3), que debería tener los mismos importes?",
    "propuesta": "sí",
    "tema": "cuadro-duplicado",
    "renglon": "",
-   "texto": "b22/b55 repiten importes de b1; b40 parece de otra entidad o formato con columna anterior ilegible.",
+   "texto": "b1 y b22 son ambos resultatregnskap individual de 2023 con resultado antes de impuestos 18 981 564; b55 (pág. 37) repite b22.",
    "bloques": [
+    "b1",
+    "b2",
     "b22",
-    "b40",
     "b55"
    ],
    "afecta_carga": false
   }
  ],
- "observaciones": "b1+b2: resultado individual de la Fotballforening (perímetro usado). b11: KONSERNRESULTATREGNSKAP (consolidado), no elegido por el perímetro histórico individual. b27 (Note 1 Salgsinntekter) y b28 (Note 2 Lønnskostnader) son las notas del juego individual; b60/b61 y b44/b45 son duplicados o de otro juego de cuentas."
+ "observaciones": "Se elige el perímetro individual, como en los años ya cargados: b22, con la nota 1 de ingresos (b27) y la nota 2 de personal (b28). b55, b60 y b61 son duplicados de b22, b27 y b28 (págs. 37-42). b1 y b2 son la versión registral del mismo estado individual. El consolidado aparece en b11 (konsern, pág. 6) y en b40 (pág. 25, con Majoritetens andel y columna 2022 parcialmente ilegible), con sus notas b44 y b45; no se carga."
 }

@@ -58,3 +58,15 @@ Rama `onboarding`, sin push. Último commit al escribir esto: ver `git log`.
    - Fix pedido: que `entidades.mjs` acepte (o deduzca) la línea `carga` de un club con una sola entidad `club` y perímetro individual para los ejercicios que no la traen; o que `cargar-lote.mjs` agregue la línea `carga` en el mismo commit que el año. Las citas a usar: `Naam : VOETBALCLUB LOMMEL SK` en la línea 9 de cada `jaarrekening-AAAA-06-30-individual.md` (2019 y 2020 en la línea 11, 2021 -correction en la 13).
 2. **Estadio y sponsor en las ligas amateur belgas (Lokeren-Temse 2022, Patro Eisden 2013, 2014 y 2015).** `estadio-sponsor.mjs` dice "falta el estadio o el sponsor ... (compuerta del to-do 273)": faltan las listas de equipos de las ligas amateur belgas de esos años (la nota de Onboarding 2, mejora u, ya lo anotaba: Patro Eisden, Lokeren-Temse, Lierse SK, RWDM antes de ascender). Ya existe la excepción "amateur" para el sponsor; falta que el año tenga liga y el estadio con fuente.
 3. **Cola belga**: 26 casos; contestados por subagentes Sonnet y aplicados en el commit siguiente (si no aparece, quedan en `casos-be` del scratchpad de esta sesión).
+
+## Sarpsborg 08 2023-2024 (lote 100, 2026-10-19)
+
+### Qué cambió
+- Con las mejoras 298 ab y ac, `lote.mjs --rehacer` rehizo Sarpsborg 08 2024 (cargado) y 2023 (con ajuste, ver abajo). El reintento normal NO rehace la extracción de un año ya verificado: para recalcular después de una mejora hace falta `--rehacer`.
+- La lista se llama `Admin/lotes/lote-100.txt` (la 97 era de otra rama).
+
+### Qué queda (para TODO), mejora de script para Pipeline
+- **Financiero con el mismo signo por una reversión negativa dentro de los costos (Sarpsborg 08 2023).**
+  - Caso: `Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2023.md`, estado individual L136-145. "Sum finansinntekter" 1 321 530 (L141: Annen renteinntekt 180 908 + Annen finansinntekt 1 140 622) y "Sum finanskostnader" 1 313 085 (L144: Annen rentekostnad 1 449 287 + Annen finanskostnad -136 202, una reversión negativa). "Netto finans" impreso: 8 446 (L145). Resultado impreso: 18 981 564 (L158).
+  - Defecto: la carga tomó netInterest = 2.634615 (= 1 321 530 + 1 313 085, los dos con el mismo signo) en vez de restar: 1 321 530 - 1 313 085 = 8 445. Por eso el resultado dio 21,6 M contra el impreso 18,98 M y el año frenaba por `tie-out-resultado`. Es el mismo defecto que la mejora t#5 (financiero sumando con el mismo signo), con un disparador nuevo: un renglón de costo con signo negativo (reversión) dentro de "Sum finanskostnader" invierte la lectura de su signo.
+  - Ajuste puesto a mano: `resultado-final = 18.981564` para `aarsregnskap-fotballforening-fli-2023.pdf` (en `Admin/registros/ajustes-manuales.jsonl`, motivo y evidencia con las líneas de arriba). Si la mejora se hace, ese ajuste se puede sacar y comprobar que el netInterest da 0.008446.
