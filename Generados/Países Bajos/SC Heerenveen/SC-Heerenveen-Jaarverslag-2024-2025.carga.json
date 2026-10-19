@@ -1,28 +1,256 @@
 {
  "pdf": "Clubes/Países Bajos/SC Heerenveen/SC-Heerenveen-Jaarverslag-2024-2025.pdf",
- "generado": "2026-10-19T00:16:04.036Z",
+ "generado": "2026-10-19T02:28:46.596Z",
  "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 3 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (scheerenveen-nl)"
   },
   {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 3 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "etapa": "categoria-en-cola",
+   "motivo": "6 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Kostprijs\" -> other_expenses 0.7; \"Salariskosten\" -> wages_squad 0.75; \"Sociale lasten\" -> wages_squad 0.7; \"Overige kosten\" -> wages_squad 0.45; \"Doorberekende personeelskosten\" -> wages_squad 0.45"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
-  "perímetro: consolidado (ajuste manual del documento, 2026-10-18: La que presenta es la holding S.C. Heerenveen Holding B.V., cuyo individual es un cascarón sin operación (solo participaciones y resultado de participadas, L1580, L1617); el fútbol (licencia KNVB) está en la controlada S.C. Heerenveen B.V. y S.C. Heerenveen Vastgoed B.V. es la sociedad inmobiliaria del club (alquila a la operadora, con garantía cruzada, L1502-1504). El individual no tiene el fútbol: consolidado. (subagente Sonnet, revisado por Claude 2026-10-18))"
+  "perímetro: consolidado (ajuste manual del documento, 2026-10-18: La que presenta es la holding S.C. Heerenveen Holding B.V., cuyo individual es un cascarón sin operación (solo participaciones y resultado de participadas, L1580, L1617); el fútbol (licencia KNVB) está en la controlada S.C. Heerenveen B.V. y S.C. Heerenveen Vastgoed B.V. es la sociedad inmobiliaria del club (alquila a la operadora, con garantía cruzada, L1502-1504). El individual no tiene el fútbol: consolidado. (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "scheerenveen-nl",
+  "year": 2025,
+  "cierre": "2025-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Wedstrijdbaten",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 4.867279,
+    "disclosureLevel": "aggregated",
+    "_pag": 35,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sponsoring",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 9.101753,
+    "disclosureLevel": "aggregated",
+    "_pag": 35,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Mediagelden",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 6.469374,
+    "disclosureLevel": "aggregated",
+    "_pag": 35,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Food & Beverage",
+    "normalizedCategory": "stadium_other",
+    "amountNative": 0.531163,
+    "disclosureLevel": "aggregated",
+    "_pag": 35,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Merchandise",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.776585,
+    "disclosureLevel": "aggregated",
+    "_pag": 35,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige opbrengsten",
+    "normalizedCategory": "other_income",
+    "amountNative": 2.513826,
+    "disclosureLevel": "aggregated",
+    "_pag": 35,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Netto-opbrengst vergoedingssommen",
+    "normalizedCategory": "player_sales",
+    "amountNative": 7.555866,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Resultaat deelnemingen",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.203041,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Kostprijs",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.406246,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 2,
+    "_conf": 0.7,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Salariskosten",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -10.939527,
+    "disclosureLevel": "aggregated",
+    "_pag": 35,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Pensioenlasten",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.245383,
+    "disclosureLevel": "aggregated",
+    "_pag": 35,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Sociale lasten",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.534143,
+    "disclosureLevel": "aggregated",
+    "_pag": 35,
+    "_escalon": 2,
+    "_conf": 0.7,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige kosten",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.676125,
+    "disclosureLevel": "aggregated",
+    "_pag": 35,
+    "_escalon": 2,
+    "_conf": 0.45,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Doorberekende personeelskosten",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.19887,
+    "disclosureLevel": "aggregated",
+    "_pag": 35,
+    "_escalon": 2,
+    "_conf": 0.45,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingskosten vergoedingssommen",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -3.268827,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afwaardering boekwaarde vertrokken spelers",
+    "normalizedCategory": "player_impairment",
+    "amountNative": -0.37125,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 2,
+    "_conf": 0.7,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Afschrijvingen op materiële vaste activa",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.685457,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige bedrijfskosten",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -10.279559,
+    "disclosureLevel": "aggregated",
+    "_pag": 21,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2025-06-30",
+   "sourceId": "scheerenveen-nl-jaarverslag-2024-2025",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.035254,
+   "tax": -0.332253,
+   "extraRows": [
+    {
+     "label": "Rentebaten en soortgelijke opbrengsten",
+     "value": 0.061227
+    },
+    {
+     "label": "Rentelasten en soortgelijke kosten",
+     "value": -0.096481
+    },
+    {
+     "label": "Vennootschapsbelasting",
+     "value": -0.332253
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 32.018887,
+   "officialTotalExpenses": 30.605387,
+   "officialPAT": 1.045993
+  },
+  "source": {
+   "id": "scheerenveen-nl-jaarverslag-2024-2025",
+   "clubId": "scheerenveen-nl",
+   "title": "S.C. Heerenveen Holding B.V. — SC-Heerenveen-Jaarverslag-2024-2025 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Países Bajos/SC Heerenveen/SC-Heerenveen-Jaarverslag-2024-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
  "md": "Clubes/Países Bajos/SC Heerenveen/SC-Heerenveen-Jaarverslag-2024-2025.md",
  "reemplaza": false,
  "periodo": {
@@ -39,5 +267,427 @@
  },
  "clubId": "scheerenveen-nl",
  "year": 2025,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/SC Heerenveen/SC-Heerenveen-Jaarverslag-2024-2025.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "La que presenta es la holding S.C. Heerenveen Holding B.V., cuyo individual es un cascarón sin operación (solo participaciones y resultado de participadas, L1580, L1617); el fútbol (licencia KNVB) está en la controlada S.C. Heerenveen B.V. y S.C. Heerenveen Vastgoed B.V. es la sociedad inmobiliaria del club (alquila a la operadora, con garantía cruzada, L1502-1504). El individual no tiene el fútbol: consolidado. (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": "De opgenomen dochtermaatschappijen ... zijn: S.C. Heerenveen B.V. (deelname 100%) / S.C. Heerenveen Vastgoed B.V. (deelname 100%) (L991-994); De doorlopende KNVB licentie ... is ondergebracht in S.C. Heerenveen B.V. (L51-52)",
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "seleccion": {
+  "filas": 21,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Wedstrijdbaten",
+   "page": 35,
+   "native": 4.867279,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet\")",
+   "signoFijo": 4.867279,
+   "cat": "matchday_competition",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 4.867279
+  },
+  {
+   "label": "Sponsoring",
+   "page": 35,
+   "native": 9.101753,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet\")",
+   "signoFijo": 9.101753,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 9.101753
+  },
+  {
+   "label": "Mediagelden",
+   "page": 35,
+   "native": 6.469374,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet\")",
+   "signoFijo": 6.469374,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 6.469374
+  },
+  {
+   "label": "Food & Beverage",
+   "page": 35,
+   "native": 0.531163,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet\")",
+   "signoFijo": 0.531163,
+   "cat": "stadium_other",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.531163
+  },
+  {
+   "label": "Merchandise",
+   "page": 35,
+   "native": 0.776585,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet\")",
+   "signoFijo": 0.776585,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.776585
+  },
+  {
+   "label": "Overige opbrengsten",
+   "page": 35,
+   "native": 2.513826,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Netto-omzet\")",
+   "signoFijo": 2.513826,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.513826
+  },
+  {
+   "label": "Netto-opbrengst vergoedingssommen",
+   "page": 21,
+   "native": 7.555866,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 7.555866,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 7.555866
+  },
+  {
+   "label": "Resultaat deelnemingen",
+   "page": 21,
+   "native": 0.203041,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))",
+   "signoFijo": 0.203041,
+   "cat": "other_income",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.203041
+  },
+  {
+   "label": "Kostprijs",
+   "page": 21,
+   "native": 1.406246,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.406246,
+   "cat": "other_expenses",
+   "conf": 0.7,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -1.406246
+  },
+  {
+   "label": "Salariskosten",
+   "page": 35,
+   "native": 10.939527,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
+   "signoFijo": 10.939527,
+   "cat": "wages_squad",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -10.939527
+  },
+  {
+   "label": "Pensioenlasten",
+   "page": 35,
+   "native": 0.245383,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
+   "signoFijo": 0.245383,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "precedente del país: 2 clubes (FC Eindhoven, Fortuna Sittard), nota:personeelskosten · Claude 2026-10-18 (subagente Sonnet): Pensioenlasten 70.536 es costo de personal dentro de la nota 12 (Personeelskosten 11.212.222) y el documento no separa plantel de no plantel (solo cuenta 29 jugadores, 23 staff, 12 oficina en total): el renglon entero va a wages_squad (criterio de Sueldos del Personal). Nota: AZ y Feyenoord dejaron 'Overige personeelskosten' en admin_general_expense, pero aca el renglon viene dentro de una nota unica de personal, y se sigue la regla del lote. [Pensioenlasten 70.536 (L1653); Personeelskosten 11.212.222 (L1655)]",
+   "destino": "expense",
+   "amountNative": -0.245383
+  },
+  {
+   "label": "Sociale lasten",
+   "page": 35,
+   "native": 1.534143,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
+   "signoFijo": 1.534143,
+   "cat": "wages_squad",
+   "conf": 0.7,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -1.534143
+  },
+  {
+   "label": "Overige kosten",
+   "page": 35,
+   "native": 1.676125,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
+   "signoFijo": 1.676125,
+   "cat": "wages_squad",
+   "conf": 0.45,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -1.676125
+  },
+  {
+   "label": "Doorberekende personeelskosten",
+   "page": 35,
+   "native": 0.19887,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
+   "signoFijo": 0.19887,
+   "cat": "wages_squad",
+   "conf": 0.45,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.19887
+  },
+  {
+   "label": "Afschrijvingskosten vergoedingssommen",
+   "page": 8,
+   "native": 3.268827,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Afschrijvingen op immateriële vaste activa\")",
+   "signoFijo": 3.268827,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.268827
+  },
+  {
+   "label": "Afwaardering boekwaarde vertrokken spelers",
+   "page": 8,
+   "native": 0.37125,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Afschrijvingen op immateriële vaste activa\")",
+   "signoFijo": 0.37125,
+   "cat": "player_impairment",
+   "conf": 0.7,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.37125
+  },
+  {
+   "label": "Afschrijvingen op materiële vaste activa",
+   "page": 21,
+   "native": 0.685457,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.685457,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.685457
+  },
+  {
+   "label": "Overige bedrijfskosten",
+   "page": 21,
+   "native": 10.279559,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 10.279559,
+   "cat": "other_expenses",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -10.279559
+  },
+  {
+   "label": "Rentebaten en soortgelijke opbrengsten",
+   "page": null,
+   "native": 0.061227,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Rentelasten en soortgelijke kosten",
+   "page": null,
+   "native": -0.096481,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Vennootschapsbelasting",
+   "page": null,
+   "native": -0.332253,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Netto-omzet\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))": "gastos con signo",
+   "verificacion (nota que desglosa \"Personeelskosten\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Afschrijvingen op immateriële vaste activa\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 32.018887,
+  "expSum": -30.605387,
+  "officialTotalRevenue": 32.018887,
+  "officialTotalExpenses": 30.605387,
+  "officialPAT": 1.045993,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 1.045993,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 32.018887
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 30.605387
+  }
+ },
+ "liga": {
+  "valor": "nl-eredivisie",
+  "fuente": "roster cacheado de \"2024–25 Eredivisie\" (tools/club-league-reference/nl.json), coincidencia única por palabras \"Heerenveen\" = \"SC Heerenveen\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (31 de 32 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-18)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Países Bajos (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2025-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2025-06-30 = 0.8532 (Cierre BCE al 30/6/2025 (1 EUR = 1,172 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "scheerenveen-nl-jaarverslag-2024-2025",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "nl-eredivisie",
+   "fuente": "roster cacheado de \"2024–25 Eredivisie\" (tools/club-league-reference/nl.json), coincidencia única por palabras \"Heerenveen\" = \"SC Heerenveen\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 4,
+  "lineasIngreso": 8,
+  "lineasGasto": 10,
+  "metaFilas": 3,
+  "excluidas": 0
+ }
 }

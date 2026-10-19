@@ -1,28 +1,242 @@
 {
  "pdf": "Clubes/Países Bajos/PEC Zwolle/wf-2024-2025-aaba1b62.pdf",
- "generado": "2026-10-19T00:16:03.758Z",
+ "generado": "2026-10-19T02:28:46.244Z",
  "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 1 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (peczwolle-nl)"
   },
   {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 1 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "etapa": "categoria-en-cola",
+   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Solidariteit- en opleidingsvergoedingen\" -> player_sales 0.75; \"Immateriële vaste activa\" -> player_amortisation 0.65"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
   }
  ],
  "avisos": [
-  "perímetro: consolidado (ajuste manual del documento, 2026-10-18: PEC Zwolle B.V. es el club y consolida con Stichting Regio Zwolle United, que es la academia/fútbol base y cuya actividad se hace en gran parte para PEC Zwolle (el club cubre sus pérdidas): negocio del fútbol. Hay consolidada (L572) y enkelvoudige (índice L30-31, L47-48), no se verificó el detalle de la enkelvoudige. (subagente Sonnet, revisado por Claude 2026-10-18))"
+  "perímetro: consolidado (ajuste manual del documento, 2026-10-18: PEC Zwolle B.V. es el club y consolida con Stichting Regio Zwolle United, que es la academia/fútbol base y cuya actividad se hace en gran parte para PEC Zwolle (el club cubre sus pérdidas): negocio del fútbol. Hay consolidada (L572) y enkelvoudige (índice L30-31, L47-48), no se verificó el detalle de la enkelvoudige. (subagente Sonnet, revisado por Claude 2026-10-18))",
+  "gestión: ningún presidente confirmado cubre 2025 (cierre 2025-06-30); pregunta en la cola (no frena)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "peczwolle-nl",
+  "year": 2025,
+  "cierre": "2025-06-30",
+  "perimetro": "consolidado",
+  "revenueLines": [
+   {
+    "rawLabel": "Wedstrijdbaten",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 2.446954,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 1,
+    "_conf": 0.96,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Prijzengeld",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 1.615025,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sponsoring",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 7.726863,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Media gerelateerde baten",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 3.608212,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Merchandising & Business to consumeractiviteiten",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.160648,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 1,
+    "_conf": 1,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Food & beverage",
+    "normalizedCategory": "stadium_other",
+    "amountNative": 0.313929,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige omzet",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.951855,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Subsidies en giften",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.254179,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Vergoedingssommen spelers",
+    "normalizedCategory": "player_sales",
+    "amountNative": 3.826242,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Solidariteit- en opleidingsvergoedingen",
+    "normalizedCategory": "player_sales",
+    "amountNative": 1.21625,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Lonen en salarissen",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -9.815594,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 1,
+    "_conf": 0.97,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Sociale lasten",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.028039,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 1,
+    "_conf": 0.91,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Pensioenlasten",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.165985,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
+   },
+   {
+    "rawLabel": "Overige personeelskosten",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.536801,
+    "disclosureLevel": "aggregated",
+    "_pag": 40,
+    "_escalon": 1,
+    "_conf": 0.93,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Immateriële vaste activa",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -0.770219,
+    "disclosureLevel": "aggregated",
+    "_pag": 41,
+    "_escalon": 2,
+    "_conf": 0.65,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Materiële vaste activa",
+    "normalizedCategory": "depreciation",
+    "amountNative": -0.537409,
+    "disclosureLevel": "aggregated",
+    "_pag": 41,
+    "_escalon": 2,
+    "_conf": 0.95,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Overige bedrijfskosten",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -7.164671,
+    "disclosureLevel": "aggregated",
+    "_pag": 20,
+    "_escalon": 2,
+    "_conf": 0.9,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2025-06-30",
+   "sourceId": "peczwolle-nl-wf-2024-2025-aaba1b62",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 0.022802,
+   "tax": -0.195518,
+   "extraRows": [
+    {
+     "label": "Financiële baten en lasten",
+     "value": 0.022802
+    },
+    {
+     "label": "Belastingen",
+     "value": -0.195518
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 22.120157,
+   "officialTotalExpenses": 21.018718,
+   "officialPAT": 0.928723
+  },
+  "source": {
+   "id": "peczwolle-nl-wf-2024-2025-aaba1b62",
+   "clubId": "peczwolle-nl",
+   "title": "PEC Zwolle B.V. — wf-2024-2025-aaba1b62 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Países Bajos/PEC Zwolle/wf-2024-2025-aaba1b62.md; categorías del pipeline (claude-opus-5-5). Perímetro: consolidado."
+  }
+ },
  "md": "Clubes/Países Bajos/PEC Zwolle/wf-2024-2025-aaba1b62.md",
  "reemplaza": false,
  "periodo": {
@@ -39,5 +253,396 @@
  },
  "clubId": "peczwolle-nl",
  "year": 2025,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/PEC Zwolle/wf-2024-2025-aaba1b62.pdf",
+   "campo": "perimetro",
+   "valor": "consolidado",
+   "linea": null,
+   "motivo": "PEC Zwolle B.V. es el club y consolida con Stichting Regio Zwolle United, que es la academia/fútbol base y cuya actividad se hace en gran parte para PEC Zwolle (el club cubre sus pérdidas): negocio del fútbol. Hay consolidada (L572) y enkelvoudige (índice L30-31, L47-48), no se verificó el detalle de la enkelvoudige. (subagente Sonnet, revisado por Claude 2026-10-18)",
+   "evidencia": "In de jaarrekening van PEC Zwolle B.V. zijn de financiële gegevens geconsolideerd van PEC Zwolle B.V. en Stichting Regio Zwolle United ... de activiteiten vanuit Stichting Regio Zwolle United grotendeels ten behoeve van PEC Zwolle B.V. uitgevoerd (L778)",
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  }
+ ],
+ "seleccion": {
+  "filas": 19,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Wedstrijdbaten",
+   "page": 40,
+   "native": 2.446954,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Brutomarge\")",
+   "signoFijo": 2.446954,
+   "cat": "matchday_competition",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.446954
+  },
+  {
+   "label": "Prijzengeld",
+   "page": 40,
+   "native": 1.615025,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Brutomarge\")",
+   "signoFijo": 1.615025,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.615025
+  },
+  {
+   "label": "Sponsoring",
+   "page": 40,
+   "native": 7.726863,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Brutomarge\")",
+   "signoFijo": 7.726863,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 7.726863
+  },
+  {
+   "label": "Media gerelateerde baten",
+   "page": 40,
+   "native": 3.608212,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Brutomarge\")",
+   "signoFijo": 3.608212,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.608212
+  },
+  {
+   "label": "Merchandising & Business to consumeractiviteiten",
+   "page": 40,
+   "native": 0.160648,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Brutomarge\")",
+   "signoFijo": 0.160648,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.160648
+  },
+  {
+   "label": "Food & beverage",
+   "page": 40,
+   "native": 0.313929,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Brutomarge\")",
+   "signoFijo": 0.313929,
+   "cat": "stadium_other",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.313929
+  },
+  {
+   "label": "Overige omzet",
+   "page": 40,
+   "native": 0.951855,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Brutomarge\")",
+   "signoFijo": 0.951855,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.951855
+  },
+  {
+   "label": "Subsidies en giften",
+   "page": 40,
+   "native": 0.254179,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Brutomarge\")",
+   "signoFijo": 0.254179,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.254179
+  },
+  {
+   "label": "Vergoedingssommen spelers",
+   "page": 40,
+   "native": 3.826242,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Brutomarge\")",
+   "signoFijo": 3.826242,
+   "cat": "player_sales",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.826242
+  },
+  {
+   "label": "Solidariteit- en opleidingsvergoedingen",
+   "page": 40,
+   "native": 1.21625,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Brutomarge\")",
+   "signoFijo": 1.21625,
+   "cat": "player_sales",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 1.21625
+  },
+  {
+   "label": "Lonen en salarissen",
+   "page": 40,
+   "native": 9.815594,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
+   "signoFijo": 9.815594,
+   "cat": "wages_squad",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -9.815594
+  },
+  {
+   "label": "Sociale lasten",
+   "page": 40,
+   "native": 1.028039,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
+   "signoFijo": 1.028039,
+   "cat": "wages_squad",
+   "conf": 0.91,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.028039
+  },
+  {
+   "label": "Pensioenlasten",
+   "page": 40,
+   "native": 0.165985,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
+   "signoFijo": 0.165985,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "precedente del país: 2 clubes (FC Eindhoven, Fortuna Sittard), nota:personeelskosten · Claude 2026-10-18 (subagente Sonnet): Pensioenlasten 70.536 es costo de personal dentro de la nota 12 (Personeelskosten 11.212.222) y el documento no separa plantel de no plantel (solo cuenta 29 jugadores, 23 staff, 12 oficina en total): el renglon entero va a wages_squad (criterio de Sueldos del Personal). Nota: AZ y Feyenoord dejaron 'Overige personeelskosten' en admin_general_expense, pero aca el renglon viene dentro de una nota unica de personal, y se sigue la regla del lote. [Pensioenlasten 70.536 (L1653); Personeelskosten 11.212.222 (L1655)]",
+   "destino": "expense",
+   "amountNative": -0.165985
+  },
+  {
+   "label": "Overige personeelskosten",
+   "page": 40,
+   "native": 1.536801,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Personeelskosten\")",
+   "signoFijo": 1.536801,
+   "cat": "admin_general_expense",
+   "conf": 0.93,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.536801
+  },
+  {
+   "label": "Immateriële vaste activa",
+   "page": 41,
+   "native": 0.770219,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Afschrijvingen\")",
+   "signoFijo": 0.770219,
+   "cat": "player_amortisation",
+   "conf": 0.65,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.770219
+  },
+  {
+   "label": "Materiële vaste activa",
+   "page": 41,
+   "native": 0.537409,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Afschrijvingen\")",
+   "signoFijo": 0.537409,
+   "cat": "depreciation",
+   "conf": 0.95,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.537409
+  },
+  {
+   "label": "Overige bedrijfskosten",
+   "page": 20,
+   "native": 7.164671,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 7.164671,
+   "cat": "other_expenses",
+   "conf": 0.9,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -7.164671
+  },
+  {
+   "label": "Financiële baten en lasten",
+   "page": null,
+   "native": 0.022802,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Belastingen",
+   "page": null,
+   "native": -0.195518,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Brutomarge\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Personeelskosten\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Afschrijvingen\")": "gastos sin signo (se invierten)",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 22.120157,
+  "expSum": -21.018718,
+  "officialTotalRevenue": 22.120157,
+  "officialTotalExpenses": 21.018718,
+  "officialPAT": 0.928723,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 0.928723,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 22.120157
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 21.018718
+  }
+ },
+ "liga": {
+  "valor": "nl-eredivisie",
+  "fuente": "roster cacheado de \"2024–25 Eredivisie\" (tools/club-league-reference/nl.json), coincidencia exacta \"PEC Zwolle\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-06-30",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (50 de 57 fechas de fin de mes caen en el mes 6))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "consolidado",
+   "fuente": "ajuste manual (2026-10-18)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "EUR",
+   "fuente": "moneda de curso legal de Países Bajos (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "EUR@2025-06-30",
+   "fuente": "el documento no declara tipo de cambio; FX_CLOSE ya tiene EUR@2025-06-30 = 0.8532 (Cierre BCE al 30/6/2025 (1 EUR = 1,172 USD))",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "peczwolle-nl-wf-2024-2025-aaba1b62",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "nl-eredivisie",
+   "fuente": "roster cacheado de \"2024–25 Eredivisie\" (tools/club-league-reference/nl.json), coincidencia exacta \"PEC Zwolle\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 4,
+  "lineasIngreso": 10,
+  "lineasGasto": 7,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
 }

@@ -1,17 +1,15 @@
 {
  "pdf": "Clubes/Países Bajos/De Graafschap/wf-src-Betaald-Voetbal-De-Graafschap-B.V.-Publicatierapport-2021-2022.pdf",
- "generado": "2026-10-19T00:16:01.040Z",
+ "generado": "2026-10-19T02:28:44.292Z",
  "frena": [
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (degraafschap-nl)"
-  },
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Pensioenlasten\" -> wages_squad 0.75; \"Resultaat vergoedingssommen\" -> other_expenses 0"
   }
  ],
  "avisos": [
+  "ingresos: ningún total impreso igual a la suma de las líneas (8.323465); queda la suma, verificada por el resultado del ejercicio",
+  "gastos: ningún total impreso igual a la suma de las líneas (-8.772605); queda la suma, verificada por el resultado del ejercicio",
   "gestión: ningún presidente confirmado cubre 2022 (cierre 2022-06-30); pregunta en la cola (no frena)"
  ],
  "ejercicio": {
@@ -29,6 +27,16 @@
     "_escalon": 1,
     "_conf": 1,
     "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Resultaat vergoedingssommen",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.05146,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-19): resultado neto de traspasos impreso dentro de los costos como -51.460 (ganancia): se muda a ingreso por venta de jugadores sin cambiar el resultado; los costos sin él suman 8.772.605 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)"
    }
   ],
   "expenseLines": [
@@ -58,19 +66,9 @@
     "amountNative": -0.084659,
     "disclosureLevel": "aggregated",
     "_pag": 6,
-    "_escalon": 2,
-    "_conf": 0.75,
-    "_fuenteCat": "categorias.json"
-   },
-   {
-    "rawLabel": "Resultaat vergoedingssommen",
-    "normalizedCategory": "other_expenses",
-    "amountNative": 0.05146,
-    "disclosureLevel": "aggregated",
-    "_pag": 6,
-    "_escalon": 2,
-    "_conf": 0,
-    "_fuenteCat": "categorias.json decía player_sales, del otro lado que la fila: se propone la genérica de su lado"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Afschrijvingen materiële vaste activa",
@@ -123,8 +121,8 @@
    ],
    "grossDebt": null,
    "cash": null,
-   "officialTotalRevenue": 8.272005,
-   "officialTotalExpenses": 8.721145,
+   "officialTotalRevenue": 8.323465,
+   "officialTotalExpenses": 8.772605,
    "officialPAT": -0.485009
   },
   "source": {
@@ -151,7 +149,19 @@
  },
  "clubId": "degraafschap-nl",
  "year": 2022,
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Países Bajos/De Graafschap/wf-src-Betaald-Voetbal-De-Graafschap-B.V.-Publicatierapport-2021-2022.pdf",
+   "campo": "categoria",
+   "valor": "player_sales",
+   "linea": null,
+   "etiqueta": "Resultaat vergoedingssommen",
+   "motivo": "resultado neto de traspasos impreso dentro de los costos como -51.460 (ganancia): se muda a ingreso por venta de jugadores sin cambiar el resultado; los costos sin él suman 8.772.605 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": ".md L83",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
  "seleccion": {
   "filas": 9,
   "notasUsadas": [],
@@ -211,11 +221,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 0.084659,
    "cat": "wages_squad",
-   "conf": 0.75,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-18 (subagente Sonnet): Pensioenlasten 84.659 es costo de personal y el documento no separa plantel de no plantel (solo lonen, sociale lasten, pensioenlasten): va entero a wages_squad, como Sociale lasten. Cuenta de los costos: 3.492.133 + 610.169 + 84.659 + 261.379 + 4.324.265 = 8.772.605; menos 51.460 de Resultaat vergoedingssommen (ver el otro caso) = 8.721.145, el total impreso. [Pensioenlasten | 84.659 | 112.665 (L82); Totaal van som der kosten 8.721.145 (L86)]",
    "destino": "expense",
    "amountNative": -0.084659
   },
@@ -223,17 +233,16 @@
    "label": "Resultaat vergoedingssommen",
    "page": 6,
    "native": 0.05146,
-   "ladoDoc": "expense",
+   "ladoDoc": "revenue",
    "origen": "verificacion (estado (lectura 4: signo impreso, resta en su lado))",
-   "signoFijo": -0.05146,
-   "cat": "other_expenses",
-   "conf": 0,
-   "escalon": 2,
-   "fuenteCat": "categorias.json decía player_sales, del otro lado que la fila: se propone la genérica de su lado",
+   "signoFijo": 0.05146,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, 2026-10-19): resultado neto de traspasos impreso dentro de los costos como -51.460 (ganancia): se muda a ingreso por venta de jugadores sin cambiar el resultado; los costos sin él suman 8.772.605 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
    "enLista": true,
-   "ladoRechazado": true,
-   "enCola": true,
-   "destino": "expense",
+   "ladoRechazado": false,
+   "destino": "revenue",
    "amountNative": 0.05146
   },
   {
@@ -292,37 +301,27 @@
  "signos": {
   "porTabla": {
    "verificacion (estado)": "gastos sin signo (se invierten)",
-   "verificacion (estado (lectura 4: signo impreso, resta en su lado))": "gastos sin signo (se invierten)",
+   "verificacion (estado (lectura 4: signo impreso, resta en su lado))": "gastos con signo",
    "verificacion": "gastos con signo"
   },
   "elegida": "signos de la verificación; financiero/impuesto como su tabla"
  },
  "totales": {
-  "revSum": 8.272005,
-  "expSum": -8.721145,
-  "officialTotalRevenue": 8.272005,
-  "officialTotalExpenses": 8.721145,
+  "revSum": 8.323465,
+  "expSum": -8.772605,
+  "officialTotalRevenue": 8.323465,
+  "officialTotalExpenses": 8.772605,
   "officialPAT": -0.485009,
   "verificacion": {
    "pat": "impreso",
-   "ingresos": "impreso",
-   "gastos": "impreso"
+   "ingresos": "por-resultado",
+   "gastos": "por-resultado"
   },
   "patImpreso": {
    "label": "resultado detectado por proponer-carga",
    "pag": null,
    "M": -0.485009,
    "signos": "signos de la verificación; financiero/impuesto como su tabla"
-  },
-  "revImpreso": {
-   "label": "total de ingresos (verificado)",
-   "pag": null,
-   "M": 8.272005
-  },
-  "expImpreso": {
-   "label": "total de gastos (verificado)",
-   "pag": null,
-   "M": 8.721145
   }
  },
  "liga": {
@@ -375,9 +374,9 @@
  },
  "resumen": {
   "carga": false,
-  "motivos": 2,
-  "lineasIngreso": 1,
-  "lineasGasto": 6,
+  "motivos": 1,
+  "lineasIngreso": 2,
+  "lineasGasto": 5,
   "metaFilas": 2,
   "excluidas": 0
  }
