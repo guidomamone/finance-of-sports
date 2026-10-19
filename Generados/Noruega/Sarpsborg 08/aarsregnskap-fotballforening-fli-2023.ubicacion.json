@@ -3,7 +3,8 @@
  "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotballforening-fli-2023.md",
  "mdSha1": "5ad232f038f696f20368130bf3e0b9ea91b6a210",
  "modelo": "claude-opus-5-5",
- "generado": "2026-10-19T12:39:00.712Z",
+ "generado": "2026-10-19T14:53:10.783Z",
+ "perimetroClub": "individual",
  "bloques": {
   "b1": {
    "pagina": 2,
@@ -584,17 +585,17 @@
  },
  "sin_estado": false,
  "estado": [
-  "b11"
+  "b1",
+  "b2"
  ],
  "notas_ingresos": [
-  "b44"
+  "b27"
  ],
  "notas_gastos": [
-  "b45",
-  "b49"
+  "b28"
  ],
  "escala": "unidades",
- "escala_evidencia": "Beløp i: NOK",
+ "escala_evidencia": "Belep i: NOK",
  "moneda": "NOK",
  "columna_ejercicio": "2023",
  "columna_anterior": "2022",
@@ -602,20 +603,30 @@
  "necesito_ver": [],
  "dudas": [
   {
-   "pregunta": "¿Se cargan las notas consolidadas 1 (b44), 2 (b45) y 5 (b49) de pág. 31-32 como desglose del estado consolidado b11?",
+   "pregunta": "¿Se carga 'Salgskostnader' 26 151 779 (b22) en lugar de la etiqueta 'Endring i beholdning av varer...' que figura en b1 para el mismo importe?",
    "propuesta": "sí",
-   "tema": "perimetro",
-   "renglon": "Sum inntekter",
-   "texto": "Las notas de pág. 31-32 siguen al resultado de pág. 25 (b40), idéntico al consolidado b11, y referencian Goodwill/varios datterselskap, así que parecen notas del konsern.",
+   "tema": "otro",
+   "renglon": "Endring i beholdning av varer under tilvirkning og ferdig tilvirkede varer",
+   "texto": "b1 rotula como variación de existencias el importe que b22 llama Salgskostnader (costo de ventas).",
    "bloques": [
-    "b44",
-    "b45",
-    "b49",
-    "b40",
-    "b11"
+    "b1",
+    "b22"
    ],
-   "afecta_carga": true
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se dejan afuera de la carga los cuadros b22, b40 y b55 por ser copias o versiones alternativas del resultado individual?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b22/b55 repiten importes de b1; b40 parece de otra entidad o formato con columna anterior ilegible.",
+   "bloques": [
+    "b22",
+    "b40",
+    "b55"
+   ],
+   "afecta_carga": false
   }
  ],
- "observaciones": "Consolidado: b11 (Konsernresultatregnskap pág. 6) y b40 (pág. 25, mismas cifras, columna 2022 parcialmente ilegible) — se usa b11. Individual (Fotballforening): b1/b2 (pág. 2-3), b22 (pág. 13) y su duplicado b55 (pág. 37), con notas individuales b27/b28 y duplicados b60/b61. Notas consolidadas: b44 ingresos (arrangement, salg/utleie spillere, varer), b45 personal, b49 honorarios auditor (parte de Annen driftskostnad)."
+ "observaciones": "b1+b2: resultado individual de la Fotballforening (perímetro usado). b11: KONSERNRESULTATREGNSKAP (consolidado), no elegido por el perímetro histórico individual. b27 (Note 1 Salgsinntekter) y b28 (Note 2 Lønnskostnader) son las notas del juego individual; b60/b61 y b44/b45 son duplicados o de otro juego de cuentas."
 }

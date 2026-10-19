@@ -113,13 +113,21 @@ export function aplicarAjusteEstado(datos, pdf, ajuste = ajusteDe(pdf, 'estado')
 
 // (to-do 288) `modelo` (opus | sonnet), solo desde la medición del CLI: otro archivo (.ubicacion.<modelo>.json) y ese modelo en las dos llamadas.
 const MODELOS = { opus: 'claude-opus-5-5', sonnet: 'claude-sonnet-5-5' };
-export async function localizar(pdf, { registro, perimetroClub = null, ejecutar = false, rehacer = false, ampliado = false, reintento = null, notasComoEstado = false, pistaResultado = null, modelo = null } = {}) {
-  const { md, texto } = pedido(pdf, registro, perimetroClub);
+export async function localizar(pdf, { registro, perimetroClub, ejecutar = false, rehacer = false, ampliado = false, reintento = null, notasComoEstado = false, pistaResultado = null, modelo = null } = {}) {
+  const { md, texto } = pedido(pdf, registro, perimetroClub ?? null);
   const idModelo = modelo ? MODELOS[modelo] : MODELO;
   const out = resolve(ROOT, derivado(md, modelo ? `.ubicacion.${modelo}.json` : '.ubicacion.json'));
   // AJUSTE MANUAL `filas-a-mano` (Versión 614): la ubicación de este documento se armó o corrigió a mano; ni --rehacer la pisa.
   if (existsSync(out) && esAMano(pdf)) return { hecho: true, archivo: out, datos: JSON.parse(readFileSync(out, 'utf8')), costo: 0, protegido: true };
-  if (!rehacer && existsSync(out)) return { hecho: true, archivo: out, datos: JSON.parse(readFileSync(out, 'utf8')), costo: 0 };
+  // (to-do 298 ac, ok de Guido 2026-10-19) El perímetro del ajuste que se usó al localizar queda en el archivo (`perimetroClub`). Si después se
+  // fija otro ajuste `perimetro`, la localización guardada está vieja y se rehace. Los archivos sin ese campo, o quien llama sin pasar el
+  // perímetro (undefined), no se comparan: nada se invalida por esto salvo lo que ya registre el perímetro. Caso: Sarpsborg 08 2023 se
+  // localizó a las 09:39 y el ajuste `perimetro individual` llegó a las 09:54; siguió leyendo el consolidado (166,5 M y no 146,5 M).
+  if (!rehacer && existsSync(out)) {
+    const guardada = JSON.parse(readFileSync(out, 'utf8'));
+    const vieja = perimetroClub !== undefined && Object.hasOwn(guardada, 'perimetroClub') && (guardada.perimetroClub ?? null) !== (perimetroClub ?? null);
+    if (!vieja) return { hecho: true, archivo: out, datos: guardada, costo: 0 };
+  }
   const mdText = readFileSync(resolve(ROOT, md), 'utf8');
   const { bloques } = indiceBloques(mdText, { ampliado }); // ampliado: solo en el reintento (lote.mjs --reintentar)
   const bPista = pistaResultado?.linea ? bloques.find((b) => b.lineas[0] <= pistaResultado.linea && pistaResultado.linea <= b.lineas[1]) : null;
@@ -139,7 +147,7 @@ export async function localizar(pdf, { registro, perimetroClub = null, ejecutar 
     if (r2.pendiente) return { pendiente: true, costo }; // modo batch: no se escribe la primera respuesta sin la segunda mirada
     costo += r2.costo || 0; if (!r2.error) r = r2;
   }
-  const datos = { pdf, md, mdSha1: shaMd(md), modelo: idModelo, generado: new Date().toISOString(), ...(ampliado ? { indiceAmpliado: VERSION_AMPLIADO } : {}), ...(notasComoEstado ? { intentoNotasComoEstado: true, estadoDesdeNotas: !r.datos.sin_estado } : {}), ...(pistaResultado ? { intentoNotasConAjuste: true } : {}), bloques: Object.fromEntries(bloques.map((b) => [b.id, { pagina: b.pagina, lineas: b.lineas, tipo: b.tipo }])), ...r.datos };
+  const datos = { pdf, md, mdSha1: shaMd(md), modelo: idModelo, generado: new Date().toISOString(), ...(perimetroClub !== undefined ? { perimetroClub: perimetroClub ?? null } : {}), ...(ampliado ? { indiceAmpliado: VERSION_AMPLIADO } : {}), ...(notasComoEstado ? { intentoNotasComoEstado: true, estadoDesdeNotas: !r.datos.sin_estado } : {}), ...(pistaResultado ? { intentoNotasConAjuste: true } : {}), bloques: Object.fromEntries(bloques.map((b) => [b.id, { pagina: b.pagina, lineas: b.lineas, tipo: b.tipo }])), ...r.datos };
   aplicarAjusteEstado(datos, pdf);
   writeFileSync(out, JSON.stringify(datos, null, 1));
   return { hecho: true, archivo: out, datos, costo };
@@ -154,7 +162,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   if (modelo != null && !MODELOS[modelo]) { console.error('--modelo opus|sonnet'); process.exit(1); }
   for (const pdf of docs) {
     // con --modelo, el perímetro del club como lo pasa lote.mjs (el .ubicacion.json de Opus se hizo con ese pedido)
-    const r = await localizar(pdf, { registro, ejecutar: ARGS.includes('--ejecutar'), rehacer: ARGS.includes('--rehacer'), ...(modelo ? { modelo, perimetroClub: ajustePerimetroDe(pdf)?.valor || null } : {}) });
+    const r = await localizar(pdf, { registro, ejecutar: ARGS.includes('--ejecutar'), rehacer: ARGS.includes('--rehacer'), perimetroClub: ajustePerimetroDe(pdf)?.valor || null, ...(modelo ? { modelo } : {}) });
     if (r.ensayo) { usd += r.usd; console.log(`  ensayo ${pdf}: ~${r.tokens} tokens, ~US$ ${r.usd.toFixed(3)}`); }
     else if (r.error) console.log(`  ERROR ${pdf}: ${r.error}`);
     else { usd += r.costo; const d = r.datos; console.log(`  ${pdf}: ${d.sin_estado ? 'SIN ESTADO DE RESULTADOS' : `estado ${d.estado.join(',')} · notas ingresos ${d.notas_ingresos.join(',') || '-'} · notas gastos ${d.notas_gastos.join(',') || '-'} · ${d.escala} (${d.escala_evidencia}) · ${d.perimetro}`}${d.dudas?.length ? ` · DUDAS: ${d.dudas.map((x) => (typeof x === 'string' ? x : `${x.pregunta || x.texto} [propuesta: ${x.propuesta || '?'}]${x.afecta_carga ? '' : ' (no afecta la carga)'}`)).join(' | ')}` : ''}`); }

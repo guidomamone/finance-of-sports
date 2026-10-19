@@ -35,6 +35,9 @@ el original se saltea en esa corrida y el final lo lista como propuesta para `do
   se cortó (Ctrl+C, terminal cerrada), lo avisa y lo reemplaza.
 - Lo que ya está hecho no se repite (queda en `Generados/`, que se respalda en git). Si el .md cambió desde extraer (`cache-al-dia.mjs`:
   misma huella, o cada fila sigue en su línea), un año sin cargar se rehace y uno cargado solo avisa.
+  (to-do 298 ac) `localizar.mjs` anota en la `.ubicacion.json` el perímetro del ajuste que usó (`perimetroClub`). Si después se fija otro ajuste
+  `perimetro`, esa localización está vieja y se rehace sola; los archivos sin el campo, o quien llama sin pasar el perímetro, no se comparan.
+  La línea de comandos de `localizar.mjs` ahora pasa siempre el perímetro del ajuste, como `lote.mjs`.
   Además (to-do 237 ai y ak): si las filas son de otra localización (`.filas.json` guarda la huella de la `.ubicacion.json`) se rehacen
   validar y extraer; si la validación es de otra versión del .md (su `mdSha1`, o la fecha) se rehace solo validar. `cargar.mjs` usa la
   misma compuerta de la validación (`validacionAlDia`).
