@@ -2504,50 +2504,40 @@ We evaluated management's incentives and opportunities for fraudulent manipulati
 
 --- pág. 52 ---
 
-Celtic ple | :
-INDEPENDENT AUDITOR’S REPORT TO THE MEMBERS OF CELTIC PLC
-journal entries, management bias in accounting estimates and improper revenue recognition associated with year end cut-
-off. Our audit procedures included, but were not limited to
-Agreement of the financial statement disclosures to underlying supporting documentation;
-Challenging assumptions and judgements made by management in their significant accounting estimates, in
-particular in relation to accrued income and deferred income (refer to the key audit matters section}, valuation of
-intangible assets (refer to the key audit matters section) and relevant provisions thereto such as impairment and
-the expected credit loss provision
-At the planning stage, we engaged forensic accounting experts in our risk assessment in order to identify areas of
-potential manipulation or fraud based specifically on football clubs and designed targeted audit tests to address
-these concerns which included testing for duplicate seat purchases, remaining aware to the possibility of money
-laundering in seat purchases, testing the accuracy and validity of business interruption insurance claims, testing of a:
-discounts and associated gratuities as well as remaining alert to procurement payment transactions in Property,
-Plant and Equipment and intangible additions
-Focus was made on revenue year end cut-off procedures and the inclusion of revenue in the correct accounting
-periods (refer to the key audit matters section)
-Identifying and testing journal entries, in particular any journal entries posted with specific keywords, journals
-revenue and cash, journals posted by super users and journals posted at weekends;
-Discussions with management, the Audit Committee and Directors, including consideration of known or suspected
-instances of non-compliance with laws and regulation and fraud
-Review of minutes of Board meetings throughout the period
-Obtaining an understanding of the control environment in monitoring compliance with laws and regulations; and
-Targeted testing of payroll in order to identify any fraudulent or tax evasive payments
-Our audit procedures were designed to respond to risks of materlal misstatement in the financial statements, recognising
-that the risk of not detecting a material misstatement due to fraud is higher than the risk of not detecting one resulting
-from error, as fraud may involve deliberate concealment by, for example, forgery, misrepresentations or through collusion
-There are inherent limitations in the audit procedures performed and the further removed non-compliance with laws and
-regulations is from the events and transactions reflected in the financial statements, the less likely we are to become aware 4
-A further description of our responsibilities is available on the Financial Reporting Council’s website at
-www. frc.org.uk/auditorsresponsibilities. This description forms part of our auditor’s report
-Use of our report f
-This report is made solely to the Parent Company’s members, as a body, in accordance with Chapter 3 of Part 16 of the
-Companies Act 2006. Our audit work has been undertaken so that we might state to the Parent Company's members those
-matters we are required to state to them in an auditor’s report and for no other purpose. To the fullest extent permitted
-by law, we do not accept or assume responsibility to anyone other than the Parent Company and the Parent Company's
-members as a body, for our audit work, for this report, or for the opinions we have farmed.
-DocuSigned by: K
-D8CD3620543¢409
+# Celtic plc
+## INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF CELTIC PLC
+
+journal entries, management bias in accounting estimates and improper revenue recognition associated with year end cut-off. Our audit procedures included, but were not limited to:
+
+- Agreement of the financial statement disclosures to underlying supporting documentation;
+- Challenging assumptions and judgements made by management in their significant accounting estimates, in particular in relation to accrued income and deferred income (refer to the key audit matters section), valuation of intangible assets (refer to the key audit matters section) and relevant provisions thereto such as impairment and the expected credit loss provision;
+- At the planning stage, we engaged forensic accounting experts in our risk assessment in order to identify areas of potential manipulation or fraud based specifically on football clubs and designed targeted audit tests to address these concerns which included testing for duplicate seat purchases, remaining aware to the possibility of money laundering in seat purchases, testing the accuracy and validity of business interruption insurance claims, testing of discounts and associated gratuities as well as remaining alert to procurement payment transactions in Property, Plant and Equipment and intangible additions;
+- Focus was made on revenue year end cut-off procedures and the inclusion of revenue in the correct accounting periods (refer to the key audit matters section);
+- Identifying and testing journal entries, in particular any journal entries posted with specific keywords, journals to revenue and cash, journals posted by super users and journals posted at weekends;
+- Discussions with management, the Audit Committee and Directors, including consideration of known or suspected instances of non-compliance with laws and regulation and fraud;
+- Review of minutes of Board meetings throughout the period;
+- Obtaining an understanding of the control environment in monitoring compliance with laws and regulations; and
+- Targeted testing of payroll in order to identify any fraudulent or tax evasive payments.
+
+Our audit procedures were designed to respond to risks of material misstatement in the financial statements, recognising that the risk of not detecting a material misstatement due to fraud is higher than the risk of not detecting one resulting from error, as fraud may involve deliberate concealment by, for example, forgery, misrepresentations or through collusion. There are inherent limitations in the audit procedures performed and the further removed non-compliance with laws and regulations is from the events and transactions reflected in the financial statements, the less likely we are to become aware of it.
+
+A further description of our responsibilities is available on the Financial Reporting Council's website at: www.frc.org.uk/auditorsresponsibilities. This description forms part of our auditor's report.
+
+**Use of our report**
+
+This report is made solely to the Parent Company's members, as a body, in accordance with Chapter 3 of Part 16 of the Companies Act 2006. Our audit work has been undertaken so that we might state to the Parent Company's members those matters we are required to state to them in an auditor's report and for no other purpose. To the fullest extent permitted by law, we do not accept or assume responsibility to anyone other than the Parent Company and the Parent Company's members as a body, for our audit work, for this report, or for the opinions we have formed.
+
+DocuSigned by:
+[firma manuscrita: Stuart Wood]
+DBCD362D513C4D9...
 Stuart Wood (Senior Statutory Auditor)
 For and on behalf of BDO LLP, Statutory Auditor
 Manchester, UK
-20 September 2022 .
-BDO LLP is a limited liability partnership registered in England and Wales (with registered number 0C305127).
+
+20 September 2022
+
+BDO LLP is a limited liability partnership registered in England and Wales (with registered number OC305127).
+
 51
 
 --- pág. 53 ---

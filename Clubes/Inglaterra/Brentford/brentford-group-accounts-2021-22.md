@@ -1918,37 +1918,30 @@ set out below:
 47 continued...
 
 --- pág. 50 ---
-, '
-Brentford FC Ltd (Registered number: 03642327)
-- Notes to the Consolidated Financia! Statements - continued
-for the Year Ended 30 June 2022
-23. Related party disclosures
-Bees United is registered under the Cooperative and Community Benefit Societies Act 2014 and is
-controlled by approximately 3,500 members that each hold one member share in the society.
-Included in the membership of Bees United is Stewart Purvis who is also a director of the company.
-Bees United has made interest free loans totalling £679,911 (2021: £679,911) to the company at
-the year-end of which £402,000 (2021: £402,000) is secured by legal charges over the company's
-freehold property. The loan is repayable in full on demand. A further balance of £8,166 (2021:
-£8,166) is owed to Bees United which is unsecured.
-Mr M Benham, who is the controlling party of the company, isa majority shareholder of Smartodds
-Limited from which the group made purchases of £1 ,462,040 (2021: £803,413). Of these purchases
-£469,364 (2021: £287,021) relates to fees paid by the company and subsidiaries to Smartodds for
-services of directors of the company while the balance relates to other services provided by
-Smartodds to the company and its subsidiaries. All transactions were conducted on an arm's length
-basis on normal trading terms. At 30 June 2022, the group owed £109,467 (2021: £6,000).
-During the year the company repaid the loan of £4,891,048 to FC Midtjylland, a club in which
-Matthew Benham is a majority shareholder. This loan was unsecured, repayable on demand and
-interest was charged on this loan at the rate of 1% per annum. On settlement of the loan interest of
-- £24,380 was also paid.
-Mr M Benham has made loans to Brentford FC Ltd and Lionel Road Developments Ltd of
-£65,890,250 (2021: £65,535,250). No interest has been charged on these loans in the current or
-previous years. However, FRS 102 requires that all loans made by shareholders to the company
-be initially recognised at fair value and subsequently at amortised cost using the effective interest
-rate, hence the loan valuation disclosed in note 18 is at a lower amount than the above.
-During the year, the company has paid £2,700 (2021: £26,275) to Career Path Training Ltd for
-professional services, a company in which M Choudhuri is materially interested as a director and
-shareholder. There was no balance outstanding at 30 June 2022 (2021: Enil).
-, 48 continued...
+
+#### Brentford FC Ltd (Registered number: 03642327)
+
+### Notes to the Consolidated Financial Statements - continued
+#### for the Year Ended 30 June 2022
+
+---
+
+#### 23. Related party disclosures
+
+Bees United is registered under the Cooperative and Community Benefit Societies Act 2014 and is controlled by approximately 3,500 members that each hold one member share in the society. Included in the membership of Bees United is Stewart Purvis who is also a director of the company.
+
+Bees United has made interest free loans totalling £679,911 (2021: £679,911) to the company at the year-end of which £402,000 (2021: £402,000) is secured by legal charges over the company's freehold property. The loan is repayable in full on demand. A further balance of £8,166 (2021: £8,166) is owed to Bees United which is unsecured.
+
+Mr M Benham, who is the controlling party of the company, is a majority shareholder of Smartodds Limited from which the group made purchases of £1,462,040 (2021: £803,413). Of these purchases £469,364 (2021: £287,021) relates to fees paid by the company and subsidiaries to Smartodds for services of directors of the company while the balance relates to other services provided by Smartodds to the company and its subsidiaries. All transactions were conducted on an arm's length basis on normal trading terms. At 30 June 2022, the group owed £109,467 (2021: £6,000).
+
+During the year the company repaid the loan of £4,891,048 to FC Midtjylland, a club in which Matthew Benham is a majority shareholder. This loan was unsecured, repayable on demand and interest was charged on this loan at the rate of 1% per annum. On settlement of the loan interest of £24,380 was also paid.
+
+Mr M Benham has made loans to Brentford FC Ltd and Lionel Road Developments Ltd of £65,890,250 (2021: £65,535,250). No interest has been charged on these loans in the current or previous years. However, FRS 102 requires that all loans made by shareholders to the company be initially recognised at fair value and subsequently at amortised cost using the effective interest rate, hence the loan valuation disclosed in note 18 is at a lower amount than the above.
+
+During the year, the company has paid £2,700 (2021: £26,275) to Career Path Training Ltd for professional services, a company in which M Choudhuri is materially interested as a director and shareholder. There was no balance outstanding at 30 June 2022 (2021: £nil).
+
+48  
+continued...
 
 --- pág. 51 ---
 , Brentford FC Ltd (Registered number: 03642327)

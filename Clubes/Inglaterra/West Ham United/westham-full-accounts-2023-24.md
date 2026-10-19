@@ -1848,46 +1848,45 @@ Ordinary shares have full voting and dividend rights. No dividends were paid dur
 
 --- pág. 45 ---
 
-WEST HAM UNITED FOOTBALL CLUB LIMITED
-NOTES TO THE FINANCIAL STATEMENTS
-for the year ended 31 May 2024
-(continued)
+# WEST HAM UNITED FOOTBALL CLUB LIMITED
 
-22. Share Premium Account
+### NOTES TO THE FINANCIAL STATEMENTS  
+**for the year ended 31 May 2024**  
+**(continued)**
+
+#### 22. Share Premium Account
 
 | | 2024 £000 | 2023 £000 |
-|---|---|---|
+| :--- | :---: | :---: |
 | At start and end of the financial year | 4,847 | 4,847 |
 
-23. Revaluation Reserve
+#### 23. Revaluation Reserve
 
 | | 2024 £000 | 2023 £000 |
-|---|---|---|
+| :--- | :---: | :---: |
 | At start of the financial year | 3,936 | 3,936 |
 | Surplus on revaluation of properties | 2,651 | - |
-| At end of the financial year | 6,587 | 3,936 |
+| **At end of the financial year** | **6,587** | **3,936** |
 
-(Nota de transcripción: el original dice 6,587 acá y 6,588 en el balance; 3,936 + 2,651 = 6,587. Se transcribe como está.)
-
-24. Profit and Loss Account
+#### 24. Profit and Loss Account
 
 | | 2023 £000 | 2023 £000 |
-|---|---|---|
+| :--- | :---: | :---: |
 | At the start of the year | (183,839) | (167,670) |
 | Profit/(loss) for the financial year | 58,543 | (16,169) |
-| At the end of the year | (125,296) | (183,839) |
+| **At the end of the year** | **(125,296)** | **(183,839)** |
 
-(Nota de transcripción: el original rotula ambas columnas como "2023"; la primera corresponde a 2024. Se transcribe como está.)
-
-25. Reconciliation of Movements in Shareholders' Deficit
+#### 25. Reconciliation of Movements in Shareholders’ Deficit
 
 | | 2024 £000 | 2023 £000 |
-|---|---|---|
+| :--- | :---: | :---: |
 | At the start of the year | (169,556) | (153,387) |
 | Profit/(loss) for the financial year | 58,543 | (16,169) |
 | Surplus on revaluation of properties | 2,651 | - |
-| Closing shareholders' deficit | (108,361) | (169,556) |
+| | | |
+| **Closing shareholders’ deficit** | **(108,361)** | **(169,556)** |
 
+\
 45
 
 --- pág. 46 ---

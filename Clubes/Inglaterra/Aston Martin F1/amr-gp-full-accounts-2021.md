@@ -497,45 +497,41 @@ procedures included the review and testing of manual! journals and key estimates
 
 --- pág. 15 ---
 
-AMR GP Limited
-Independent Auditors’ Report to the Members of AMR GP Limited (continued)
+# AMR GP Limited
+
+### Independent Auditors' Report to the Members of AMR GP Limited (continued)
+
 management.
-We gained an understanding of the legal and regulatory framework applicable to the Company and the industry
-in which it operates, drawing on our broad sector experience, and considered the risk of acts by the Company
-that were contrary to these laws and regulations, including fraud.
-We focused on laws and regulations that could give rise to a material misstatement in the financial statements,
-including, but not limited to, the Companies Act 2006, UK tax legislation and equivalent local laws and
-regulations.
-We made enquiries of management with regards to compliance with the above laws and regulations and
-corroborated any necessary evidence to relevant information, for example, minutes of the Board of Directors
-meetings and correspondence between the Company and its solicitors.
-Our tests included agreeing the financial statements disclosures to underlying supporting documentation and
-enquiries with management.
-We did not identify any key audit matters relating to irregularities, including fraud. As in all of our audits, we also
-addressed the risk of management override of internal controls including testing journals and evaluation whether
-there was evidence of bias by the directors that represented a risk of material misstatement due to fraud.
-Our audit procedures were designed to respond to risks of material misstatement in the financial statements,
-recognising that the risk of not detecting a material misstatement due to fraud is higher than the risk of not
-detecting one resulting from error, as fraud may involve deliberate concealment by, for example, forgery,
-misrepresentations or through collusion. There are inherent limitations in the audit procedures performed and the
-further removed non-compliance with laws and regulations is from the events and transactions reflected in the
-financial statements, the less likely we are to become aware of it.
-A further description of our responsibilities for the audit of the financial statements is located on the Financial
-Reporting Council’s website at: https://www.frc.org.uk/auditorsresponsibilities. This description forms part of our
-auditor's report.
-Use of our report
-This report is made solely to the Company's members, as a body, in accordance with Chapter 3 of Part 16 of the
-Companies Act 2006. Our audit work has been undertaken so that we might state to the Company's members
-those matters we are required to state to them in an auditor's report and for no other purpose. To the fullest
-extent permitted by law, we do not accept or assume responsibility to anyone other than the Company and the
-Company’s members as a body, for our audit work, for this report, or for the opinions we have formed.
-Docusigned by:
-AF9E7105233D451
-Gareth M Jones FCA (Senior Statutory Auditor)
-For and on behalf of BDO LLP, Statutory Auditor
-London, United Kingdom
-Date:16 February 2022
+
+We gained an understanding of the legal and regulatory framework applicable to the Company and the industry in which it operates, drawing on our broad sector experience, and considered the risk of acts by the Company that were contrary to these laws and regulations, including fraud.
+
+We focused on laws and regulations that could give rise to a material misstatement in the financial statements, including, but not limited to, the Companies Act 2006, UK tax legislation and equivalent local laws and regulations.
+
+We made enquiries of management with regards to compliance with the above laws and regulations and corroborated any necessary evidence to relevant information, for example, minutes of the Board of Directors meetings and correspondence between the Company and its solicitors.
+
+Our tests included agreeing the financial statements disclosures to underlying supporting documentation and enquiries with management.
+
+We did not identify any key audit matters relating to irregularities, including fraud. As in all of our audits, we also addressed the risk of management override of internal controls including testing journals and evaluation whether there was evidence of bias by the directors that represented a risk of material misstatement due to fraud.
+
+Our audit procedures were designed to respond to risks of material misstatement in the financial statements, recognising that the risk of not detecting a material misstatement due to fraud is higher than the risk of not detecting one resulting from error, as fraud may involve deliberate concealment by, for example, forgery, misrepresentations or through collusion. There are inherent limitations in the audit procedures performed and the further removed non-compliance with laws and regulations is from the events and transactions reflected in the financial statements, the less likely we are to become aware of it.
+
+A further description of our responsibilities for the audit of the financial statements is located on the Financial Reporting Council's website at: https://www.frc.org.uk/auditorsresponsibilities. This description forms part of our auditor's report.
+
+### Use of our report
+
+This report is made solely to the Company's members, as a body, in accordance with Chapter 3 of Part 16 of the Companies Act 2006. Our audit work has been undertaken so that we might state to the Company's members those matters we are required to state to them in an auditor's report and for no other purpose. To the fullest extent permitted by law, we do not accept or assume responsibility to anyone other than the Company and the Company's members as a body, for our audit work, for this report, or for the opinions we have formed.
+
+DocuSigned by:  
+Gareth M Jones  
+AF9F71C5233D451  
+**Gareth M Jones FCA (Senior Statutory Auditor)**  
+For and on behalf of **BDO LLP**, Statutory Auditor  
+London, United Kingdom  
+
+Date: 16 February 2022
+
 BDO LLP is a limited liability partnership registered in England and Wales (with registered number OC305127).
+
 12
 
 --- pág. 16 ---

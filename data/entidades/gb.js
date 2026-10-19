@@ -164,7 +164,7 @@ Object.assign(window.CLUB_ENTIDADES, {
     "desde": 2022,
     "fuente": {
      "md": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2021-22.md",
-     "linea": 1899
+     "linea": 1914
     }
    },
    {
@@ -184,7 +184,7 @@ Object.assign(window.CLUB_ENTIDADES, {
     "desde": 2022,
     "fuente": {
      "md": "Clubes/Inglaterra/Chelsea/chelsea-fc-holdings-group-accounts-2021-22.md",
-     "linea": 1897
+     "linea": 1912
     }
    },
    {

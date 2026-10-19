@@ -2,38 +2,36 @@
 
 --- pág. 1 ---
 
-1c /; FINANCIAL
-F, CONDUCT
-AUTHORITY
-Annual Return (AR30) form
+# Annual Return (AR30) form
+
 Society Name: Lancashire County Cricket Club Limited
 Society Num: 28451 R
-An Annual Return must be completed by all societies registered under the Co-operative and
-Community Benefit Societies Act 2014 (‘the Act’) (including any societies previously registered
-under the Industrial and Provident Societies Act 1965)or the Co-operative and Community
-Benefit Societies Act (Northern Ireland) 1969 (‘the Act’) (including any societies previously
-registered under the Industrial and Provident Societies Act 1969). The Annual Return must
-include:
-e this form;
-e a set of the society's accounts; and
-e where required, an audit report or report on the accounts.
-A society must submit the Annual Return within 7 months of the end of the society's financial
-year. Failure to submit on time is a prosecutable offence.
-Please note that this form, including any details provided on the form, will be made available to
-the public through the Mutuals Public Register: https://mutuals.fca.org.uk. Our privacy notice
-explains how and why we use personal data: https://www.fca.org.uk/privacy.
-For guidance on our registration function for societies, which includes guidance on the
-requirement to submit an Annual Return, please see here:
-https://www.handbook.fca.org.uk/handbook/RFCCBS
+
+An Annual Return must be completed by all societies registered under the Co-operative and Community Benefit Societies Act 2014 ('the Act') (including any societies previously registered under the Industrial and Provident Societies Act 1965)or the Co-operative and Community Benefit Societies Act (Northern Ireland) 1969 ('the Act') (including any societies previously registered under the Industrial and Provident Societies Act 1969). The Annual Return must include:
+
+• this form;
+• a set of the society's accounts; and
+• where required, an audit report or report on the accounts.
+
+A society must submit the Annual Return within 7 months of the end of the society's financial year. Failure to submit on time is a prosecutable offence.
+
+Please note that this form, including any details provided on the form, will be made available to the public through the Mutuals Public Register: https://mutuals.fca.org.uk. Our privacy notice explains how and why we use personal data: https://www.fca.org.uk/privacy.
+
+For guidance on our registration function for societies, which includes guidance on the requirement to submit an Annual Return, please see here: https://www.handbook.fca.org.uk/handbook/RFCCBS
+
 2.1 What date did the financial year covered by these accounts end?
+
 31/12/2023
-3.1 Please provide the names of the people who were directors of the society during the
-financial year this return covers.
-Some societies use the term ‘committee member’ or ‘trustee’ instead of ‘director’. For ease of
-reference, we use ‘director’ throughout this form.
-Name of Director Month of Birth Year of Birth
-A E Anson Oct 1964
-V Stewart Mar 1980
+
+3.1 Please provide the names of the people who were directors of the society during the financial year this return covers.
+
+Some societies use the term 'committee member' or 'trustee' instead of 'director'. For ease of reference, we use 'director' throughout this form.
+
+| Name of Director | Month of Birth | Year of Birth |
+|---|---|---|
+| A E Anson | Oct | 1964 |
+| V Stewart | Mar | 1980 |
+| Sir Howard Bernstein | Apr | 1953 |
 
 --- pág. 2 ---
 
@@ -59,13 +57,11 @@ Please confirm that no director is disqualified under that Act:
 
 --- pág. 3 ---
 
-3.4 Please state any close links which any of the directors has with any society, company or
-authority.
-‘Close links’ includes any directorships or senior positions held by directors of the society in
-other organisations.
-The Board members individually hold a number of positions in other organisations, none of
-which are deemed to create any conflicts of interest. This question is asked at the beginning of
-each Board meeting. Positions held by Board members are as follows:
+3.4 Please state any close links which any of the directors has with any society, company or authority.
+
+'Close links' includes any directorships or senior positions held by directors of the society in other organisations.
+
+The Board members individually hold a number of positions in other organisations, none of which are deemed to create any conflicts of interest. This question is asked at the beginning of each Board meeting. Positions held by Board members are as follows:
 CEO British Olympic Association
 Director of Lexington Communications Limited
 Non Executive Director of The Berkeley Group Holdings plc
@@ -74,19 +70,29 @@ Director of Manchester Originals Limited
 Marketing and CSR director for Co-Op Live
 Commercial Director Six Nations Rugby
 Finance Director The Alchemist
-3.5 Please provide the name of the person who was secretary at the end of the financial year
-this return covers.
+
+3.5 Please provide the name of the person who was secretary at the end of the financial year this return covers.
+
 Societies must have a secretary
-Name of Secretary Month of Birth Year of Birth
-Lee Morgan Apr 1967
-4.1 Please confirm that:
-®@ accounts are being submitted with this form
-®@ the accounts comply with relevant statutory and accounting requirements
-®@ the accounts are signed by two members and the secretary (3 signatures in total)
-4.2 Based on the accounts, please provide the information requested below for the financial
-year covered by this return.
-Number of members 8604
-Turnover 36,456,967
+
+| Name of Secretary | Month of Birth | Year of Birth |
+|---|---|---|
+| Lee Morgan | Apr | 1967 |
+
+**4.1 Please confirm that:**
+
+- [x] accounts are being submitted with this form
+- [x] the accounts comply with relevant statutory and accounting requirements
+- [x] the accounts are signed by two members and the secretary (3 signatures in total)
+
+4.2 Based on the accounts, please provide the information requested below for the financial year covered by this return.
+
+| | |
+|---|---|
+| **Number of members** | 8604 |
+| **Turnover** | 36,456,967 |
+| **Assets** | 73,738,605 |
+| **Number of Employees** | 510 |
 
 --- pág. 4 ---
 
@@ -1672,59 +1678,39 @@ Exceptional expenses are one-off, non-recurring expenditure incurred. During the
 
 --- pág. 36 ---
 
-Issuer HURST Accountants
+# Signable
 
-Document generated Tue, 9th Apr 2024 14:27:10 UTC
+**Issuer** HURST Accountants  
+**Document generated** Tue, 9th Apr 2024 14:27:10 UTC  
+**Document fingerprint** d6815cb2a3ee2b6154347dddd073243f  
 
-Document fingerprint d6815cb2a3ee2b6154347dddd073243t
+### Parties involved with this document
 
-Parties involved with this document
+| Document processed | Party + Fingerprint |
+| :--- | :--- |
+| Tue, 9th Apr 2024 14:58:36 UTC | Angela Lowes - Signer (28f453d3c941d721ac85b785fceb654c) |
+| Tue, 9th Apr 2024 16:11:51 UTC | Vic Stewart - Signer (edc3f9899203bcf19c4496cc97e4d5b1) |
+| Tue, 9th Apr 2024 16:18:54 UTC | Daniel Gidney - Signer (9d0c24c400fb7365001832c713c6d4c0) |
+| Tue, 9th Apr 2024 16:21:21 UTC | Lee Morgan - Signer (8f02a1a4e9162ef09c6c6adb6c2321cf) |
+| Tue, 9th Apr 2024 17:19:07 UTC | John Glover - Signer (d22817e4acc1da184865084d85fbfde9) |
+| Tue, 9th Apr 2024 17:19:07 UTC | Joanne flynn - Copied In (671c2bb65c59b5972840cc25cab8bde4) |
 
-Document processed Party + Fingerprint
+### Audit history log
 
-Tue. 9th Apr 2024 14:58:36 UTC Angela Lowes - Signer (281453d3c941d721ac85b785iceb654c)
-
-Tue, 9th Apr 2024 16:11:51 UTC Vic Stewart - Signer (edc3f9899203bcfi 9c4496cc97e4d5b1)
-
-Tue, 9th Apr 2024 16:18:54 UTC Daniel Gidney - Signer (9d0c24c400fb7365001 832c7 13c6d4c0)
-
-Tue, 9th Apr 2024 16:21:21 UTC Lee Morgan - Signer (8f02a1a4e9162ef09c6c6adb6c232 1 cf)
-
-Tue, 9th Apr 2024 17:19:07 UTC John Glover - Signer (d22817e4acc1dal184865084d85tbide9)
-
-Tue, 9th Apr 2024 17:19:07 UTC Joanne flynn - Copied In (671c2bb65c59b5972840cc25cab8bde4)
-
-Audit history log
-
-Date Action
-
-Tue, 9th Apr 2024 17:19:08 UTC John Glover viewed the envelope (148.252.141.180)
-
-Tue, 9th Apr 2024 17:19:07 UTC This envelope has been signed by all parties (148.252.141.180)
-
-Tue, 9th Apr 2024 17:19:07 UTC Sent the envelope to Joanne flynn (joanne.flynn@hurst.co.uk) for signing
-(148.252.141.180)
-
-Tue, Sth Apr 2024 17:19:07 UTC John Glover signed the envelope (148.252.141.180)
-
-Tue, 9th Apr 2024 17:18:49 UTC John Glover viewed the envelope (148.252.141.180)
-
-Tue, 9th Apr 2024 17:18:18 UTC John Glover opened the document email. (148.252.141.180)
-
-Tue, 9th Apr 2024 17:18:18 UTC John Glover opened the document email. (148.252.141.180)
-
-Tue, 9th Apr 2024 16:21:32 UTC John Glover opened the document email. (651.142.189.228)
-
-Tue, 9th Apr 2024 16:21:23 UTC Document emailed to john.glover@ hurst.co.uk (35.176.171.46)
-
-Tue, 9th Apr 2024 16:21:21 UTC Lee Morgan viewed the envelope (138.124.134.130)
-
-Tue, Sth Apr 2024 16:21:21 UTC Sent the envelope to John Glover (john.glover@hurst.co.uk) for signing
-(138.124.134.130)
-
-Tue, 9th Apr 2024 16:21:21 UTC Lee Morgan signed the envelope (138.124.134.130)
-
-Tue, 9th Apr 2024 16:20:17 UTC Lee Morgan viewed the envelope (138.124.134.130)
-
-Tue, 9th Apr 2024 16:19:04 UTC Lee Morgan opened the document email. (20.26.211.71)
+| Date | Action |
+| :--- | :--- |
+| Tue, 9th Apr 2024 17:19:08 UTC | John Glover viewed the envelope (148.252.141.180) |
+| Tue, 9th Apr 2024 17:19:07 UTC | This envelope has been signed by all parties (148.252.141.180) |
+| Tue, 9th Apr 2024 17:19:07 UTC | Sent the envelope to Joanne flynn (joanne.flynn@hurst.co.uk) for signing (148.252.141.180) |
+| Tue, 9th Apr 2024 17:19:07 UTC | John Glover signed the envelope (148.252.141.180) |
+| Tue, 9th Apr 2024 17:18:49 UTC | John Glover viewed the envelope (148.252.141.180) |
+| Tue, 9th Apr 2024 17:18:18 UTC | John Glover opened the document email. (148.252.141.180) |
+| Tue, 9th Apr 2024 17:18:18 UTC | John Glover opened the document email. (148.252.141.180) |
+| Tue, 9th Apr 2024 16:21:32 UTC | John Glover opened the document email. (51.142.189.228) |
+| Tue, 9th Apr 2024 16:21:23 UTC | Document emailed to john.glover@hurst.co.uk (35.176.171.46) |
+| Tue, 9th Apr 2024 16:21:21 UTC | Lee Morgan viewed the envelope (138.124.134.130) |
+| Tue, 9th Apr 2024 16:21:21 UTC | Sent the envelope to John Glover (john.glover@hurst.co.uk) for signing (138.124.134.130) |
+| Tue, 9th Apr 2024 16:21:21 UTC | Lee Morgan signed the envelope (138.124.134.130) |
+| Tue, 9th Apr 2024 16:20:17 UTC | Lee Morgan viewed the envelope (138.124.134.130) |
+| Tue, 9th Apr 2024 16:19:04 UTC | Lee Morgan opened the document email. (20.26.211.71) |
 

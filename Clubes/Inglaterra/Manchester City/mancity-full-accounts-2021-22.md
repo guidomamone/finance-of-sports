@@ -444,119 +444,135 @@ UK GAAP, the Companies Act 2006, relevant taxation legislation, Health and Safet
 
 --- pág. 12 ---
 
-DocuSign Envelope ID: 90B06025-B368-4A25-8C6B-19691E2F10CD
-Manchester City Football Club Limited
-Independent Auditors’ Report to the Members of Manchester City Football
-Club Limited (continued)
-Extent to which the audit was capable of detecting irregularities, including fraud (continued)
-We determined that the principle risk were related to inappropriate journals entries, management bias in accounting
-estimates and revenue recognition. Our audit procedures included but were not limited to:
-e Agreement of the financial statement disclosures to underlying supporting documentation;
-e Challenging assumptions and judgements made by management in their significant accounting estimates, in
-particular bad debt and legal provisions;
-e Identifying and testing journal entries, in particular journal entries posted with unusual account combinations;
-e Testing a sample of revenue transactions to signed contracts and other third party documentation to ensure they
-are recorded in the correct period; :
-e Discussion held with management and those charged with governance, including consideration of known or
-suspected instances of non-compliance with laws and regulations and fraud;
-e Review of minutes of board meetings from throughout the year as well as a review of internal audit reports;
-e Obtaining an understanding of the contro] environment in monitoring compliance with laws and regulations
-Our audit procedures were designed to respond to risks of material misstatement in the financial statements,
-recognising that the risk of not detecting a material misstatement due to fraud is higher than the risk of not detecting
-one resulting from error, as fraud may involve deliberate concealment by, for example, forgery, misrepresentations
-or through collusion. There are inherent limitations in the audit procedures performed and the further removed non-
-compliance with laws and regulations is from the events and transactions reflected in the financial statements, the less
-likely we are to become aware of it.
-A further description of our responsibilities for the audit of the financial statements is located on the Financial
-Reporting Council’s website at: https://www.fre.org.uk/auditorsresponsibilities. This description forms part of our
-auditors’ report.
-Use of our report
-This report is made solely to the Company’s members, as a body, in accordance with Chapter 3 of Part 16 of the
-Companies Act 2006. Our audit work has been undertaken so that we might state to the Company’s members those
-matters we are required to state to them in an auditor’s report and for no other purpose. To the fullest extent permitted
-by law, we do not accept or assume responsibility to anyone other than the Company and the Company’s members as
-a body, for our audit work, for this report, or for the opinions we have formed.
-DocuSigned by:
-[ Start Weed
-08CD3620513C4D89...
-Stuart Wood (Senior Statutory Auditor)
-For and on behalf of BDO LLP, Statutory Auditor
-Manchester
+DocuSign Envelope ID: 9DB06025-B368-4A25-8C6B-19691E2F10CD
+
+# Manchester City Football Club Limited
+
+## Independent Auditors' Report to the Members of Manchester City Football Club Limited *(continued)*
+
+### Extent to which the audit was capable of detecting irregularities, including fraud *(continued)*
+
+We determined that the principle risk were related to inappropriate journals entries, management bias in accounting estimates and revenue recognition. Our audit procedures included but were not limited to:
+
+- Agreement of the financial statement disclosures to underlying supporting documentation;
+
+- Challenging assumptions and judgements made by management in their significant accounting estimates, in particular bad debt and legal provisions;
+
+- Identifying and testing journal entries, in particular journal entries posted with unusual account combinations;
+
+- Testing a sample of revenue transactions to signed contracts and other third party documentation to ensure they are recorded in the correct period;
+
+- Discussion held with management and those charged with governance, including consideration of known or suspected instances of non-compliance with laws and regulations and fraud;
+
+- Review of minutes of board meetings from throughout the year as well as a review of internal audit reports;
+
+- Obtaining an understanding of the control environment in monitoring compliance with laws and regulations
+
+Our audit procedures were designed to respond to risks of material misstatement in the financial statements, recognising that the risk of not detecting a material misstatement due to fraud is higher than the risk of not detecting one resulting from error, as fraud may involve deliberate concealment by, for example, forgery, misrepresentations or through collusion. There are inherent limitations in the audit procedures performed and the further removed non-compliance with laws and regulations is from the events and transactions reflected in the financial statements, the less likely we are to become aware of it.
+
+A further description of our responsibilities for the audit of the financial statements is located on the Financial Reporting Council's website at: https://www.frc.org.uk/auditorsresponsibilities. This description forms part of our auditors' report.
+
+### Use of our report
+
+This report is made solely to the Company's members, as a body, in accordance with Chapter 3 of Part 16 of the Companies Act 2006. Our audit work has been undertaken so that we might state to the Company's members those matters we are required to state to them in an auditor's report and for no other purpose. To the fullest extent permitted by law, we do not accept or assume responsibility to anyone other than the Company and the Company's members as a body, for our audit work, for this report, or for the opinions we have formed.
+
+*DocuSigned by:*  
+**Stuart Wood**  
+D8CD362D513C4D9...  
+Stuart Wood (Senior Statutory Auditor)  
+*For and on behalf of BDO LLP, Statutory Auditor*  
+Manchester  
 United Kingdom
+
 07 October 2022
+
 BDO LLP is a limited liability partnership registered in England and Wales (with registered number OC305127).
+
 11
 
 --- pág. 13 ---
 
 DocuSign Envelope ID: 9DB06025-B368-4A25-8C6B-19691E2F10CD
-Manchester City Football Club Limited
-Statement of Profit or Loss -
-for the year ended 30 June 2022
-Operations
-excluding Player trading
-player and
-trading amortisation Total Total
-. 2022 2022 2022 2021
-Note £000 £000 £000 £000
-Revenue 4 613,014 - 613,014 569,849
-Other operating income 5 6,068 - 6,068 1,244
-Operating expenses 5 (499,780) (140,708) (640,488) (629,837)
-Operating profit/(loss) 119,302 (140,708) (21,406) (58,744)
-Profit on disposal of players’ registrations - 67,699 67,699 68,545
-Profit/(loss) before interest and taxation 119,302 (73,009) 46,293 9,801
-Interest receivable and similar income 8 778 - 778 1,525
-Interest payable and similar charges 9 (5,345) - (5,345) (6,278)
-Profit on ordinary activities before taxation 114,735 (73,009) 41,726 5,048
-Taxation 10 - - - (2,681)
-Profit on ordinary activities after taxation 114,735 (73,009) 41,726 2,367
-The results for the period are from continuing operations. The Company does not have any other comprehensive
-income.
+
+# Manchester City Football Club Limited
+
+## Statement of Profit or Loss
+### *for the year ended 30 June 2022*
+
+| | Note | Operations excluding player trading 2022 £000 | Player trading and amortisation 2022 £000 | Total 2022 £000 | Total 2021 £000 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Revenue** | 4 | 613,014 | - | **613,014** | 569,849 |
+| Other operating income | 5 | 6,068 | - | **6,068** | 1,244 |
+| Operating expenses | 5 | (499,780) | (140,708) | **(640,488)** | (629,837) |
+| | | | | | |
+| **Operating profit/(loss)** | | 119,302 | (140,708) | **(21,406)** | (58,744) |
+| Profit on disposal of players' registrations | | - | 67,699 | **67,699** | 68,545 |
+| | | | | | |
+| **Profit/(loss) before interest and taxation** | | 119,302 | (73,009) | **46,293** | 9,801 |
+| Interest receivable and similar income | 8 | 778 | - | **778** | 1,525 |
+| Interest payable and similar charges | 9 | (5,345) | - | **(5,345)** | (6,278) |
+| | | | | | |
+| **Profit on ordinary activities before taxation** | | 114,735 | (73,009) | **41,726** | 5,048 |
+| Taxation | 10 | - | - | **-** | (2,681) |
+| | | | | | |
+| **Profit on ordinary activities after taxation** | | 114,735 | (73,009) | **41,726** | 2,367 |
+
+The results for the period are from continuing operations. The Company does not have any other comprehensive income.
+
 The notes on pages 15 to 36 form part of these financial statements.
+
 12
 
 --- pág. 14 ---
 
 DocuSign Envelope ID: 9DB06025-B368-4A25-8C6B-19691E2F10CD
-Manchester City Football Club Limited
-Balance Sheet
-Registered number 00040946
-as at 30 June 2022
-2022 2021
-Note £000 £000
-Non-current assets
-Intangible assets 11 442,126 452,267
-Property, plant and equipment 12 310,937 312,457
-Right of use assets 13 79,964 81,416
-Investments 14 - -
-Trade and other receivables 15 52,699 7,203
-885,726 853,343
-Current assets
-Trade and other receivables 15 323,999 279,491
-Cash at bank and in hand 77,752 45,135
-401,751 324,626
-Current liabilities
-Trade and other payables 16 (253,704) (196,900)
-Deferred income 19 (205,255) (196,095)
-Net current liabilities (57,208) (68,369)
-Total assets less current liabilities 828,518 784,974
-Non-current liabilities
-Trade and other payables 17 (119,318) (117,500)
-Deferred tax liabilities 20 (11,171) (11,171)
-Net assets 698,029 656,303
-Equity
-Called up share capital 21 1,339,575 1,339,575
-Share premium account 45,008 45,008
-Retained earnings (686,554) (728,280)
-Total equity 698,029 656,303
+
+# Manchester City Football Club Limited
+
+## Balance Sheet
+### Registered number 00040946
+### *as at 30 June 2022*
+
+| | Note | 2022 £000 | 2021 £000 |
+| :--- | :---: | :---: | :---: |
+| **Non-current assets** | | | |
+| Intangible assets | 11 | 442,126 | 452,267 |
+| Property, plant and equipment | 12 | 310,937 | 312,457 |
+| Right of use assets | 13 | 79,964 | 81,416 |
+| Investments | 14 | - | - |
+| Trade and other receivables | 15 | 52,699 | 7,203 |
+| | | **885,726** | **853,343** |
+| **Current assets** | | | |
+| Trade and other receivables | 15 | 323,999 | 279,491 |
+| Cash at bank and in hand | | 77,752 | 45,135 |
+| | | **401,751** | **324,626** |
+| **Current liabilities** | | | |
+| Trade and other payables | 16 | (253,704) | (196,900) |
+| Deferred income | 19 | (205,255) | (196,095) |
+| **Net current liabilities** | | **(57,208)** | **(68,369)** |
+| **Total assets less current liabilities** | | **828,518** | **784,974** |
+| | | | |
+| **Non-current liabilities** | | | |
+| Trade and other payables | 17 | (119,318) | (117,500) |
+| Deferred tax liabilities | 20 | (11,171) | (11,171) |
+| **Net assets** | | **698,029** | **656,303** |
+| | | | |
+| **Equity** | | | |
+| Called up share capital | 21 | 1,339,575 | 1,339,575 |
+| Share premium account | | 45,008 | 45,008 |
+| Retained earnings | | (686,554) | (728,280) |
+| **Total equity** | | **698,029** | **656,303** |
+
 The notes on pages 15 to 36 form part of these financial statements.
-These financial statements were approved by the Board of Directors on 7 October 2022 and were signed on its behalf
-by:
-DocuSigned by:
-[sate MacBeath
-De70BB9DCCS5497....
-J MacBeath
-Director
+
+These financial statements were approved by the Board of Directors on 7 October 2022 and were signed on its behalf by:
+
+*DocuSigned by:*  
+**John MacBeath**  
+D97D8B9DCC55497...  
+J MacBeath  
+*Director*
+
 13
 
 --- pág. 15 ---
@@ -1132,37 +1148,50 @@ Amortisation of players’ registrations (140,708) (145,697)
 --- pág. 27 ---
 
 DocuSign Envelope ID: 9DB06025-B368-4A25-8C6B-19691E2F10CD
-Manchester City Football Club Limited :
-Notes to the Financial Statements (continued)
-6. Directors’ remuneration
-No Directors were paid in the period (2021: £nil) and no company pension contributions were made (2021:
-£nil).
-7. Employees
-The average number of employees and Directors during the period is set out and analysed by category
-in the table below:
-Average number of employees 2022 2021
-Football staff— including players 257 245
-Commercial/administration staff 292 264
-549 509
+
+# Manchester City Football Club Limited
+
+## Notes to the Financial Statements *(continued)*
+
+### 6. Directors' remuneration
+
+No Directors were paid in the period (2021: £nil) and no company pension contributions were made (2021: £nil).
+
+### 7. Employees
+
+The average number of employees and Directors during the period is set out and analysed by category in the table below:
+
+| Average number of employees | 2022 | 2021 |
+| :--- | :---: | :---: |
+| Football staff – including players | 257 | 245 |
+| Commercial/administration staff | 292 | 264 |
+| | **549** | **509** |
+
 The aggregate payroll costs of these persons were as follows:
-2022 2021
-£000 £000
-Wages and salaries 308,675 310,737
-Social security costs 44,350 42,502
-Other pension costs 856 1,450
-353,881 354,689
-8. Interest receivable and similar income
-2022 2021
-£000 £000
-Bank interest 91 -
-Other 687 1,525
-778 1,525
-9. Interest payable and similar charges
-2022 2021
-£000 £000
-Bank loans and overdrafts 1 1,155
-Interest expense on leases 5,344 5,123
-5,345 6,278
+
+| | 2022 £000 | 2021 £000 |
+| :--- | :---: | :---: |
+| Wages and salaries | 308,675 | 310,737 |
+| Social security costs | 44,350 | 42,502 |
+| Other pension costs | 856 | 1,450 |
+| | **353,881** | **354,689** |
+
+### 8. Interest receivable and similar income
+
+| | 2022 £000 | 2021 £000 |
+| :--- | :---: | :---: |
+| Bank interest | 91 | - |
+| Other | 687 | 1,525 |
+| | **778** | **1,525** |
+
+### 9. Interest payable and similar charges
+
+| | 2022 £000 | 2021 £000 |
+| :--- | :---: | :---: |
+| Bank loans and overdrafts | 1 | 1,155 |
+| Interest expense on leases | 5,344 | 5,123 |
+| | **5,345** | **6,278** |
+
 26
 
 --- pág. 28 ---
@@ -1289,74 +1318,89 @@ Incorporated in England and Wales.
 
 --- pág. 31 ---
 
-DocuSign Envelope ID: 90806025-B368-4A25-8C6B-19691E2F10CD
-Manchester City Football Club Limited
-Notes to the Financial Statements (continued)
-15. Trade and other receivables
-2022 2021
-£000 £000
-Current trade and other receivables
-Trade receivables 172,057 174,163
-Receivables arising from player transfers 44,030 25,201
-Amounts owed by group undertakings 76,585 46,174
-Amounts owed by related party undertakings (Note 24) 436 44
-Other receivables 497 43
-Prepayments and accrued income 30,394 33,866
-323,999 279,491
-Non-current trade and other receivables
-Receivables arising from player transfers 52,699 7,203
-52,699 7,203
-Total trade and other receivables 376,698 286,694
+DocuSign Envelope ID: 9DB06025-B368-4A25-8C6B-19691E2F10CD
+
+# Manchester City Football Club Limited
+
+## Notes to the Financial Statements *(continued)*
+
+### 15. Trade and other receivables
+
+| | 2022 £000 | 2021 £000 |
+| :--- | :---: | :---: |
+| **Current trade and other receivables** | | |
+| Trade receivables | 172,057 | 174,163 |
+| Receivables arising from player transfers | 44,030 | 25,201 |
+| Amounts owed by group undertakings | 76,585 | 46,174 |
+| Amounts owed by related party undertakings (Note 24) | 436 | 44 |
+| Other receivables | 497 | 43 |
+| Prepayments and accrued income | 30,394 | 33,866 |
+| | **323,999** | **279,491** |
+| **Non-current trade and other receivables** | | |
+| Receivables arising from player transfers | 52,699 | 7,203 |
+| | **52,699** | **7,203** |
+| **Total trade and other receivables** | **376,698** | **286,694** |
+
 The fair values of the above trade and other receivables are equal to their carrying values.
-Trade and other receivables are non-interest bearing and credit terms vary depending on the type of sale. Credit
-terms relating to player transfers are determined on a player by player basis. Seasonal facilities are paid in
-advance of the season or are collected via direct debit on a monthly basis throughout the season. Credit terms in
-relation to sponsorship agreements are agreed on a contract by contract basis, usually over the life of the contract.
-Other sales have credit terms ranging between 21 and 30 days.
+
+Trade and other receivables are non-interest bearing and credit terms vary depending on the type of sale. Credit terms relating to player transfers are determined on a player by player basis. Seasonal facilities are paid in advance of the season or are collected via direct debit on a monthly basis throughout the season. Credit terms in relation to sponsorship agreements are agreed on a contract by contract basis, usually over the life of the contract. Other sales have credit terms ranging between 21 and 30 days.
+
 The above accrued income balance is expected to be received within 12 months of year end.
-16. Current trade and other payables
-2022 2021
-£000 £000
-Lease liabilities (Note 18) 467 445
-Trade payables 11,014 12,581
-Payables arising from player transfers 85,141 54,826
-Amounts owed to group undertakings 48,851 29,047
-Amounts owed to related party undertakings (Note 24) 289 85
-Other payables including tax and social security 57,241 50,852
-Accruals 50,701 49,064
-253,704 196,900
+
+### 16. Current trade and other payables
+
+| | 2022 £000 | 2021 £000 |
+| :--- | :---: | :---: |
+| Lease liabilities (Note 18) | 467 | 445 |
+| Trade payables | 11,014 | 12,581 |
+| Payables arising from player transfers | 85,141 | 54,826 |
+| Amounts owed to group undertakings | 48,851 | 29,047 |
+| Amounts owed to related party undertakings (Note 24) | 289 | 85 |
+| Other payables including tax and social security | 57,241 | 50,852 |
+| Accruals | 50,701 | 49,064 |
+| | **253,704** | **196,900** |
+
 30
 
 --- pág. 32 ---
 
-DocuSign Envelope ID: 90B06025-B368-4A25-8C6B-19691E2F10CD
-Manchester City Football Club Limited
-Notes to the Financial Statements (continued)
-17. Non-current trade and other payables
-2022 2021
-£000 £000
-Lease liabilities (Note 18) 63,835 64,303
-Payables arising from player transfers 50,795 48,509
-Accruals 4,688 4,688
-119,318 117,500
-18. Leases
-Lease liabilities include future obligations under the lease of the Etihad Stadium. Details are provided within
-note 12. The capital amounts of repayments are as follows:
-2022 2021
-Maturity of lease liabilities £000 £000
-Within one year 467 445
-Between one and two years 491 467
-Between two and five years 1,628 1,550
-After more than five years 61,716 62,286
-64,302 64,748
+DocuSign Envelope ID: 9DB06025-B368-4A25-8C6B-19691E2F10CD
+
+# Manchester City Football Club Limited
+
+## Notes to the Financial Statements *(continued)*
+
+### 17. Non-current trade and other payables
+
+| | 2022 £000 | 2021 £000 |
+| :--- | :---: | :---: |
+| Lease liabilities (Note 18) | 63,835 | 64,303 |
+| Payables arising from player transfers | 50,795 | 48,509 |
+| Accruals | 4,688 | 4,688 |
+| | **119,318** | **117,500** |
+
+### 18. Leases
+
+Lease liabilities include future obligations under the lease of the Etihad Stadium. Details are provided within note 12. The capital amounts of repayments are as follows:
+
+| Maturity of lease liabilities | 2022 £000 | 2021 £000 |
+| :--- | :---: | :---: |
+| Within one year | 467 | 445 |
+| Between one and two years | 491 | 467 |
+| Between two and five years | 1,628 | 1,550 |
+| After more than five years | 61,716 | 62,286 |
+| | **64,302** | **64,748** |
+
 The cash flows required are as follows:
-2022 2021
-£000 £000
-Within one year 3,550 3,550
-In the second to fifth year 14,200 14,200
-Over five years 132,525 136,075
-Less future finance charges (85,973) (89,077)
-64,302 64,748
+
+| | 2022 £000 | 2021 £000 |
+| :--- | :---: | :---: |
+| Within one year | 3,550 | 3,550 |
+| In the second to fifth year | 14,200 | 14,200 |
+| Over five years | 132,525 | 136,075 |
+| Less future finance charges | (85,973) | (89,077) |
+| | **64,302** | **64,748** |
+
 31
 
 --- pág. 33 ---
@@ -1453,31 +1497,32 @@ liabilities cannot be split between the participating entities.
 
 --- pág. 35 ---
 
-_ _DocuSign Envelope ID: 9DB06025-B368-4A25-8C6B-19691E2F10CD
+DocuSign Envelope ID: 9DB06025-B368-4A25-8C6B-19691E2F10CD
 
-Manchester City Football Club Limited
+# Manchester City Football Club Limited
 
-Notes to the Financial Statements (continued)
+## Notes to the Financial Statements *(continued)*
 
-23. Commitments
-Capital commitments
+### 23. Commitments
+
+#### Capital commitments
+
 The capital commitments contracted but not provided for consist of ongoing capital expenditure projects:
 
-2022 2021
-£000 £000
-Contracted but not provided for 2,232 580
-Transfer fees payable
-Additional transfer fees, signing on fees and loyalty bonuses of £197,120,338 (2021: £227,983, 568) that will
-become payable upon the achievement of certain conditions contained within player and transfer contracts if
-they are still in the service of the Club on specific future dates are accounted for in the year in which
-management assess, on a player by player basis, when the specific performance terms are met, resulting in
-the payment of contingent consideration.
-Other commitments
-In July 2021, the Group completed a $650m term loan. Barclays, as collateral agent on behalf of the lenders,
-has a charge over 100% of the Group’s assets. Barclays may enforce the security, after giving notice, during
-a continuing event of default.
-The Club acknowledge an ongoing Premier League investigation linked to the speculation resulting from the
-illegal hacking and out of context publication of Club emails.
+| | 2022 £000 | 2021 £000 |
+| :--- | :---: | :---: |
+| Contracted but not provided for | 2,232 | 580 |
+
+#### Transfer fees payable
+
+Additional transfer fees, signing on fees and loyalty bonuses of £197,120,338 (2021: £227,983,568) that will become payable upon the achievement of certain conditions contained within player and transfer contracts if they are still in the service of the Club on specific future dates are accounted for in the year in which management assess, on a player by player basis, when the specific performance terms are met, resulting in the payment of contingent consideration.
+
+#### Other commitments
+
+In July 2021, the Group completed a $650m term loan. Barclays, as collateral agent on behalf of the lenders, has a charge over 100% of the Group's assets. Barclays may enforce the security, after giving notice, during a continuing event of default.
+
+The Club acknowledge an ongoing Premier League investigation linked to the speculation resulting from the illegal hacking and out of context publication of Club emails.
+
 34
 
 --- pág. 36 ---

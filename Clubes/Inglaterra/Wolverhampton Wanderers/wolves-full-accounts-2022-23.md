@@ -767,43 +767,43 @@ Page 19
 --- pág. 23 ---
 
 WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
-NOTES TO THE FINANCIAL STATEMENTS
+
+NOTES TO THE FINANCIAL STATEMENTS  
 FOR THE YEAR ENDED 31 MAY 2023
-4. General information
-Wolverhampton Wanderers Football Club (1986) Limited is a private company (limited by shares)’
-incorporated. and registered in England. and, Wales; registration number 01989823. The registered :office
-and principal trading address is Molineux Stadium, Waterloo Road, Wolverhampton, West Midlands, WV1
+
+### 1. General information
+
+Wolverhampton Wanderers Football Club (1986) Limited is a private company (limited by shares) incorporated and registered in England and Wales, registration number 01989823. The registered office and principal trading address is Molineux Stadium, Waterloo Road, Wolverhampton, West Midlands, WV1 4QR.
+
 The principal activity of the company during the year was that of a professional football club.
-2. Accounting policies
-2.1 Basis of preparation of financial statements
-The financial statements have been prepared under the historical cost convention unless otherwise
-specified within these accounting policies and in accordance with Financial Reporting Standard 102,
-the Financial Reporting Standard applicable in the UK and the Republic of lreland and the
-Companies Act 2006.
-The preparation of financial statements in compliance with FRS 102 requires the use of certain
-critical accounting estimates. [t also requires management to exercise judgement in applying the
-Company's accounting policies (see note 3).
-The touowihg principal accounting policies have been applied:
-2.2 Financial Reporting Standard 102 - reduced disclosure exemptions
-The Company has taken advantage of the following disclosure exemptions in preparing these
-financial statements, as permitted by the FRS 102 "The Financial Reporting Standard applicable in
-the UK and Republic of Ireland”: 7
-° the requirements of Section 7 Statement of Cash Flows;
-° the requirements of Section 3 Financial Statement Presentation paragraph 3.17(d);
-° the requirements of Section 11 Financial Instruments paragraphs 11.42, 11.44 to 11.45, 11.47,
-11.48(aj(iit), 11.48(a)(iv), 11.48(b) and 11.48(c);
-° the requirements of Section 12 Other Financial Instruments paragraphs 12.26 to 12.27, /
-42.29(a), 12.29(b) and 12.29A;
-° the requirements of Section 33 Related Party Disclosures paragraph 33.7.
-This information is included in the consolidated financial statements of W.W. (1990) Limited as at 31
-May 2023 and these financial statements may be obtained from Companies House.
-2.3. Going concern
-In assessing the appropriateness of the going concern assumption, the directors have produced a
-detailed cash flow forecast which extends to the end of the 2024/2025 football season. The forecasts
-are dependent on Fosun International Limited's continued support, Fosun International Limited has
-indicated its intention to continue to make available such funds as are needed by the Club.
-The Directors have concluded, after reviewing the work performed and detailed above, that they can
-adopt the going concern basis in preparing these financial statements.
+
+### 2. Accounting policies
+
+#### 2.1 Basis of preparation of financial statements
+
+The financial statements have been prepared under the historical cost convention unless otherwise specified within these accounting policies and in accordance with Financial Reporting Standard 102, the Financial Reporting Standard applicable in the UK and the Republic of Ireland and the Companies Act 2006.
+
+The preparation of financial statements in compliance with FRS 102 requires the use of certain critical accounting estimates. It also requires management to exercise judgement in applying the Company's accounting policies (see note 3).
+
+The following principal accounting policies have been applied:
+
+#### 2.2 Financial Reporting Standard 102 - reduced disclosure exemptions
+
+The Company has taken advantage of the following disclosure exemptions in preparing these financial statements, as permitted by the FRS 102 "The Financial Reporting Standard applicable in the UK and Republic of Ireland":
+- the requirements of Section 7 Statement of Cash Flows;
+- the requirements of Section 3 Financial Statement Presentation paragraph 3.17(d);
+- the requirements of Section 11 Financial Instruments paragraphs 11.42, 11.44 to 11.45, 11.47, 11.48(a)(iii), 11.48(a)(iv), 11.48(b) and 11.48(c);
+- the requirements of Section 12 Other Financial Instruments paragraphs 12.26 to 12.27, 12.29(a), 12.29(b) and 12.29A;
+- the requirements of Section 33 Related Party Disclosures paragraph 33.7.
+
+This information is included in the consolidated financial statements of W.W. (1990) Limited as at 31 May 2023 and these financial statements may be obtained from Companies House.
+
+#### 2.3 Going concern
+
+In assessing the appropriateness of the going concern assumption, the directors have produced a detailed cash flow forecast which extends to the end of the 2024/2025 football season. The forecasts are dependent on Fosun International Limited's continued support, Fosun International Limited has indicated its intention to continue to make available such funds as are needed by the Club.
+
+The Directors have concluded, after reviewing the work performed and detailed above, that they can adopt the going concern basis in preparing these financial statements.
+
 Page 20
 
 --- pág. 24 ---

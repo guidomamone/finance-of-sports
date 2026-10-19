@@ -897,32 +897,41 @@ fi
 
 --- pág. 23 ---
 
-Celtic plc
-DIRECTORS’ REPORT
-The Directors present their Annual Report on the affairs of the Group together with the Financial Statements and auditor's
-report, for the year ended 30 June 2024.
-DIVIDENDS
-Dividends of £0.5m were paid in cash on 30 August 2024 (2023: £0.5m) to those Preference Shareholders not participating
-in the scrip dividend reinvestment scheme. The record date for the purpose of the Preference Share dividend was 26 July
-2024,
-Mandates representing 1,029,373 Preference Shares are’in place for the scrip dividend reinvestment scheme.
-Approximately £36,825 (20623: £38,362) of dividends for the financial year to 30 June 2024 will be reinvested. 20,852 new
-Ordinary Shares were issued under the scheme at the beginning of September 2024.
+# Celtic plc
+## DIRECTORS' REPORT
+
+The Directors present their Annual Report on the affairs of the Group together with the Financial Statements and auditor's report, for the year ended 30 June 2024.
+
+### DIVIDENDS
+
+Dividends of £0.5m were paid in cash on 30 August 2024 (2023: £0.5m) to those Preference Shareholders not participating in the scrip dividend reinvestment scheme. The record date for the purpose of the Preference Share dividend was 26 July 2024.
+
+Mandates representing 1,029,373 Preference Shares are in place for the scrip dividend reinvestment scheme. Approximately £36,825 (2023: £38,362) of dividends for the financial year to 30 June 2024 will be reinvested. 20,852 new Ordinary Shares were issued under the scheme at the beginning of September 2024.
+
 The Directors do not recommend the payment of an Ordinary Share dividend.
+
 The profit after tax of £13.4m has been credited to reserves.
-BUSINESS REVIEW AND FUTURE DEVELOPMENTS
-The Strategic Report sets out the Business Review (pages 8-10) and Current Trading and Outlook (page 16). As the Company
-and its principal subsidiary are managed and controlled as a single entity, the business review and future developments
-reflect the performance of the Group. So,
-EVENTS AFTER THE BALANCE SHEET DATE . , , . _ 4
+
+### BUSINESS REVIEW AND FUTURE DEVELOPMENTS
+
+The Strategic Report sets out the Business Review (pages 8-10) and Current Trading and Outlook (page 16). As the Company and its principal subsidiary are managed and controlled as a single entity, the business review and future developments reflect the performance of the Group.
+
+### EVENTS AFTER THE BALANCE SHEET DATE
+
 Details of significant events since the Balance Sheet date are contained in Note 35 to the Financial Statements.
-SHARE CAPITAL
-Details of and changes to the Company's authorised and issued share capital are set out in Note 24 to the. Financial
-Statements.
-FINANCIAL INSTRUMENTS
+
+### SHARE CAPITAL
+
+Details of and changes to the Company's authorised and issued share capital are set out in Note 24 to the Financial Statements.
+
+### FINANCIAL INSTRUMENTS
+
 Details and changes to the financial instruments used by the Group are included in Note 34 to the Financial Statements.
-CORPORATE GOVERNANCE
-Details of the Group’s Corporate Governance can be found on pages 28-35.
+
+### CORPORATE GOVERNANCE
+
+Details of the Group's Corporate Governance can be found on pages 28-35.
+
 22
 
 --- pág. 24 ---

@@ -546,40 +546,33 @@ li
 --- pág. 13 ---
 
 DocuSign Envelope ID: 46BEF365-FBB3-42EF-A54A-4A032867505C
-Manchester City Football Club Limited
-Independent Auditors’ Report to the Members of Manchester City Football
 
-~ Club Limited (continued)
+# Manchester City Football Club Limited
 
-Fraud (continued)
-We also communicated relevant identified laws and regulations and potential fraud risks to all engagement team
-members and remained alert to any indications of fraud or non-compliance with laws and regulations throughout the
-audit.
+## Independent Auditors’ Report to the Members of Manchester City Football Club Limited (continued)
 
-Our audit procedures were designed to respond to risks of material misstatement in the financial statements,
-recognising that the risk of not detecting a material misstatement due to fraud is higher than the risk of not detecting
-one resulting from error, as fraud may involve deliberate concealment by, for example, forgery, misrepresentations
-or through collusion. There are inherent limitations in the audit procedures performed and the further removed non-
-compliance with laws and regulations is from the events and transactions reflected in the financial statements, the less
-likely we are to become aware of it.
+*Fraud (continued)*
 
-A further description of our responsibilities is available on the Financial Reporting Council’s website at:
+We also communicated relevant identified laws and regulations and potential fraud risks to all engagement team members and remained alert to any indications of fraud or non-compliance with laws and regulations throughout the audit.
+
+Our audit procedures were designed to respond to risks of material misstatement in the financial statements, recognising that the risk of not detecting a material misstatement due to fraud is higher than the risk of not detecting one resulting from error, as fraud may involve deliberate concealment by, for example, forgery, misrepresentations or through collusion. There are inherent limitations in the audit procedures performed and the further removed non-compliance with laws and regulations is from the events and transactions reflected in the financial statements, the less likely we are to become aware of it.
+
+A further description of our responsibilities is available on the Financial Reporting Council’s website at:  
 https://www.frc.org.uk/auditorsresponsibilities. This description forms part of our auditor’s report.
-Use of our report
-This report is made solely to the Company’s members, as a body, in accordance with Chapter 3 of Part 16 of the
-Companies Act 2006. Our audit work has been undertaken so that we might state to the Company’s members those
-matters we are required to state to them in an auditor’s report and for no other purpose. To the fullest extent permitted
-by law, we do not accept or assume responsibility to anyone other than the Company and the Company’s members as
-a body, for our audit work, for this report, or for the opinions we have formed.
 
-DocuSigned by:
-ES Weed.
+### Use of our report
 
-08C0362D513C4D9...
-Stuart Wood (Senior Statutory Auditor)
-For and on behalf of BDO LLP, Statutory Auditor
-Manchester, UK
+This report is made solely to the Company’s members, as a body, in accordance with Chapter 3 of Part 16 of the Companies Act 2006. Our audit work has been undertaken so that we might state to the Company’s members those matters we are required to state to them in an auditor’s report and for no other purpose. To the fullest extent permitted by law, we do not accept or assume responsibility to anyone other than the Company and the Company’s members as a body, for our audit work, for this report, or for the opinions we have formed.
+
+DocuSigned by:  
+*Stuart Wood*  
+D8CD362D513C4D9...
+
+Stuart Wood (Senior Statutory Auditor)  
+For and on behalf of BDO LLP, Statutory Auditor  
+Manchester, UK  
 10 October 2023
+
 BDO LLP is a limited liability partnership registered in England and Wales (with registered number OC305127).
 
 12

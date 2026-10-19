@@ -832,48 +832,58 @@ On an historical cost basis, freehold land and buildings would have been include
 Page 21 continued...
 
 --- pág. 24 ---
-SUNDERLAND ASSOCIATION FOOTBALL
-CLUB, LIMITED(THE) (REGISTERED NUMBER: 00049116)
-NOTES TO THE FINANCIAL STATEMENTS - continued
+
+SUNDERLAND ASSOCIATION FOOTBALL  
+CLUB,LIMITED(THE) (REGISTERED NUMBER: 00049116)
+
+NOTES TO THE FINANCIAL STATEMENTS - continued  
 FOR THE YEAR ENDED 31 JULY 2020
-11. FIXED ASSET INVESTMENTS
+
+### 11. FIXED ASSET INVESTMENTS
+
 The company's investments at the Balance Sheet date in the share capital of companies include the following:
-SAFC.COM PLC
-Registered office: The Sunderland Stadium of Light, Sunderland, SR5 1SU
-Nature of business: Dormant
-%
-Class of shares: holding
-Ordinary 100.00
-2020 2019
-£'000 £'000
-Aggregate capital and reserves 50 50
-Sunderland AFC.COM Limited
-Registered office: The Sunderland Stadium of Light, Sunderland, SR5 1SU
-Nature of business: Dormant
-%
-Class of shares: holding
-Ordinary 100.00
+
+**SAFC.COM PLC**  
+Registered office: The Sunderland Stadium of Light, Sunderland, SR5 1SU  
+Nature of business: Dormant  
+Class of shares: Ordinary  
+% holding: 100.00  
+
+| | 2020<br>£'000 | 2019<br>£'000 |
+| :--- | :---: | :---: |
+| Aggregate capital and reserves | 50 | 50 |
+
+**Sunderland AFC.COM Limited**  
+Registered office: The Sunderland Stadium of Light, Sunderland, SR5 1SU  
+Nature of business: Dormant  
+Class of shares: Ordinary  
+% holding: 100.00  
+
 Sunderland AFC.COM Limited is a wholly owned subsidiary of SAFC.COM PLC.
-1879 Events Management Limited
-Registered office: The Sunderland Stadium of Light, Sunderland, SR5 1SU
-Nature of business: Events management services
-%
-Class of shares: holding
-Ordinary 100.00
-2020 2019
-£'000 £'000
-Aggregate capital and reserves 284 284
-Sunderland Association Football Club Ladies Limited
-Registered office: The Sunderland Stadium of Light, Sunderland, SR5 1SU
-Nature of business: Professional football club
-%
-Class of shares: holding
-Ordinary 100.00
-2020 2019
-£'000 £'000
-Aggregate capital and reserves 282 288
-Profit/{loss) for the year 6 (70)
-Page 22 continued...
+
+**1879 Events Management Limited**  
+Registered office: The Sunderland Stadium of Light, Sunderland, SR5 1SU  
+Nature of business: Events management services  
+Class of shares: Ordinary  
+% holding: 100.00  
+
+| | 2020<br>£'000 | 2019<br>£'000 |
+| :--- | :---: | :---: |
+| Aggregate capital and reserves | 284 | 284 |
+
+**Sunderland Association Football Club Ladies Limited**  
+Registered office: The Sunderland Stadium of Light, Sunderland, SR5 1SU  
+Nature of business: Professional football club  
+Class of shares: Ordinary  
+% holding: 100.00  
+
+| | 2020<br>£'000 | 2019<br>£'000 |
+| :--- | :---: | :---: |
+| Aggregate capital and reserves | 282 | 288 |
+| Profit/(loss) for the year | 6 | (70) |
+
+Page 22  
+continued...
 
 --- pág. 25 ---
 SUNDERLAND ASSOCIATION FOOTBALL
@@ -962,52 +972,56 @@ On 4 November 2019 the company undertook a reduction of capital to transfer £9,
 Page 24 continued...
 
 --- pág. 27 ---
-SUNDERLAND ASSOCIATION FOOTBALL
+
+SUNDERLAND ASSOCIATION FOOTBALL  
 CLUB,LIMITED(THE) (REGISTERED NUMBER: 00049116)
-NOTES TO THE FINANCIAL STATEMENTS - continued
+
+NOTES TO THE FINANCIAL STATEMENTS - continued  
 FOR THE YEAR ENDED 31 JULY 2020
-20. PENSION COMMITMENTS
-Sunderland Association Football Club (‘the Club') participates in the Football League Pension and Life Assurance Scheme
-(‘the Scheme'). The Scheme is a funded multi-employer defined benefit scheme, with 92 participating employers, and
-where members may have periods of service attributable to several participating employers. The Club is unable to identify
-its share of the assets and liabilities of the Scheme and therefore accounts for its contributions as if they were paid to a
-defined contribution scheme.
-The last actuarial valuation was carried out at 31 August 2017 where the total deficit on the on-going valuation basis was
-£30.4 million. The key assumptions used to calculate the deficit at the 31 August 2017 actuarial valuation are:
-Discount rate Gilt Yield Curve + 2.0% per annum
-RPI inflation Bank of England Inflation Curve
-Fixed 3.0% per annum for benefits accrued prior to 6 April 1997, and
-modelled using the RPI inflation assumption with a cap of 5.0% per annum
-Pension increases and a floor of 3.0% per annum for benefits accrued after 6 April 1997.
-Mortality (pre-retirement) None
-Mortality (post-retirement) SAPS CMI 2016, 1.5% p.a. long term improvement rate
-The accrual of benefits ceased within the Scheme on 31 August 1999, therefore there are no contributions relating to
-current accrual. The Club pays monthly contributions based on a notional split of the total expenses and deficit
-contributions of the Scheme.
-The results of the 2017 valuation were rolled forward to 31 July 2020 on the same assumptions as detailed above, and the
-Club's notional share of the deficit was £150,227 (£190,810 as at 31 July 2019).
-As at 31 July 2020, the Club was paying total contributions of £4,081 per month (increasing by 5% p.a. from 1 September
-2018 and thereafter) and based on the actuarial valuation assumptions detailed above will be sufficient to pay off the
-deficit by 31 October 2023.
-As at 31 July 2020, based on an appropriate discount rate of 0.48% per annum (1.02% per annum as at 31 July 2019), the
-present value of the Club's outstanding contributions (i.e. their future liability) is £174,728 (£219,975 as at 31 July 2019).
-This amounts to £51,221 (2019: £48,782) due within one year and £123,507 (2019: £171,193) due after more than one
-year.
-Present Value of Defined Benefit Obligation
-2020 2019
-£'000 £'000
-Present Value of Defined Benefit Obligation 175 220
-Reconciliation of Defined Benefit Obligation
-2020 2019
-£°000 £'000
-Defined Benefit Obligation at start of year 220 260
-Net Interest Charge (Unwinding of discount rate) 2 4
-Club contribution (deficit contribution) (49) (47
-Remeasurement (changes in assumptions) 2 3
-Remeasurement (change to contribution schedule) 0 0
-Defined Benefit Obligation at end of year 175 220
-Income and Expenditure Impact
-Page 25 continued...
+
+### 20. PENSION COMMITMENTS
+
+Sunderland Association Football Club ('the Club') participates in the Football League Pension and Life Assurance Scheme ('the Scheme'). The Scheme is a funded multi-employer defined benefit scheme, with 92 participating employers, and where members may have periods of service attributable to several participating employers. The Club is unable to identify its share of the assets and liabilities of the Scheme and therefore accounts for its contributions as if they were paid to a defined contribution scheme.
+
+The last actuarial valuation was carried out at 31 August 2017 where the total deficit on the on-going valuation basis was £30.4 million. The key assumptions used to calculate the deficit at the 31 August 2017 actuarial valuation are:
+
+| | |
+| :--- | :--- |
+| Discount rate | Gilt Yield Curve + 2.0% per annum |
+| RPI inflation | Bank of England Inflation Curve |
+| Pension increases | Fixed 3.0% per annum for benefits accrued prior to 6 April 1997, and modelled using the RPI inflation assumption with a cap of 5.0% per annum and a floor of 3.0% per annum for benefits accrued after 6 April 1997. |
+| Mortality (pre-retirement) | None |
+| Mortality (post-retirement) | SAPS CMI 2016, 1.5% p.a. long term improvement rate |
+
+The accrual of benefits ceased within the Scheme on 31 August 1999, therefore there are no contributions relating to current accrual. The Club pays monthly contributions based on a notional split of the total expenses and deficit contributions of the Scheme.
+
+The results of the 2017 valuation were rolled forward to 31 July 2020 on the same assumptions as detailed above, and the Club's notional share of the deficit was £150,227 (£190,810 as at 31 July 2019).
+
+As at 31 July 2020, the Club was paying total contributions of £4,081 per month (increasing by 5% p.a. from 1 September 2018 and thereafter) and based on the actuarial valuation assumptions detailed above will be sufficient to pay off the deficit by 31 October 2023.
+
+As at 31 July 2020, based on an appropriate discount rate of 0.48% per annum (1.02% per annum as at 31 July 2019), the present value of the Club's outstanding contributions (i.e. their future liability) is £174,728 (£219,975 as at 31 July 2019). This amounts to £51,221 (2019: £48,782) due within one year and £123,507 (2019: £171,193) due after more than one year.
+
+**Present Value of Defined Benefit Obligation**
+
+| | 2020<br>£'000 | 2019<br>£'000 |
+| :--- | :---: | :---: |
+| Present Value of Defined Benefit Obligation | 175 | 220 |
+
+**Reconciliation of Defined Benefit Obligation**
+
+| | 2020<br>£'000 | 2019<br>£'000 |
+| :--- | :---: | :---: |
+| Defined Benefit Obligation at start of year | 220 | 260 |
+| Net Interest Charge (Unwinding of discount rate) | 2 | 4 |
+| Club contribution (deficit contribution) | (49) | (47) |
+| Remeasurement (changes in assumptions) | 2 | 3 |
+| Remeasurement (change to contribution schedule) | 0 | 0 |
+| Defined Benefit Obligation at end of year | 175 | 220 |
+
+**Income and Expenditure Impact**
+
+Page 25  
+continued...
 
 --- pág. 28 ---
 SUNDERLAND ASSOCIATION FOOTBALL

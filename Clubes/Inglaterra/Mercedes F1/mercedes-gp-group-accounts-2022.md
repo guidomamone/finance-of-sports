@@ -308,37 +308,34 @@ Page 5
 
 --- pág. 9 ---
 
-MERCEDES-BENZ GRAND PRIX LIMITED
-DIRECTORS’ REPORT (CONTINUED)
-FOR THE YEAR ENDED 31 DECEMBER 2022
+# MERCEDES-BENZ GRAND PRIX LIMITED
 
-2022 2021
-SECR Inventory
-Energy consumption used to calculate emissions: /kWh 18,990,195 18,002,505
-Emissions from Scope 1 tCO2e 249 338
-Emissions from purchased electricity tCO2e (Scope 2) 3,226 3,447
-Total gross tCO2e based on above 3,475 3,785
-Intensity ratio: tCO2e gross per average number of employees 3 4
-Comparison
-Overall, from 2021 to 2022 there has been a reduction in total scope 1 & 2 emissions of 8%. It must be noted
-that throughout 2021 there were several site staff reductions for extended periods due to the changing covid
-restrictions in place. In 2022 the Group returned to normal operating procedures with all staff back on site,
-which resulted in an increase in overall energy consumption compared to 2021.
-Within Scope 1 emissions there was a reduction in gas consumption across site due to ongoing refurbishment
-projects and transition towards electrification. Pool car usage however increased in 2022 due to increased
-onsite activities post Covid-19, and the switch to more hybrid vehicles was not enough to offset this increased
-fuel consumption. Racing fuel and dyno testing consumption remained broadly consistent with 2021.
-Within Scope 2 there was a slight reduction in emissions due to the reduced emissions factor provided by the
-2022 UK Government GHG Conversion Factors for Company Reporting. This means despite increased
-electricity consumption due to site electrification the overall scope 2 emissions still fell in 2022.
-Methodology
-Scope 1 and 2 consumption data has been calculated in accordance with the GHG Protocol's methodology for
-operational control. The conversion calculations from kWh's to tCO2e were completed using internal
-consumption data from invoices and meter readings. These conversions were completed using the 2022 UK
-Government GHG Conversion Factors for Company Reporting with the appropriate gross calorific value (CV)
-conversion value for the reporting year (01/01/2022 — 31/12/2022).
-The intensity ratio has been calculated using the total number of staff within 2022. The final value was
-calculated by dividing the total tCO2e by the total staff numbers in 2022.
+### DIRECTORS' REPORT (CONTINUED)  
+### FOR THE YEAR ENDED 31 DECEMBER 2022
+
+#### SECR Inventory
+
+| | 2022 | 2021 |
+| :--- | ---: | ---: |
+| Energy consumption used to calculate emissions: /kWh | 18,990,195 | 18,002,505 |
+| Emissions from Scope 1 tCO2e | 249 | 338 |
+| Emissions from purchased electricity tCO2e (Scope 2) | 3,226 | 3,447 |
+| Total gross tCO2e based on above | 3,475 | 3,785 |
+| Intensity ratio: tCO2e gross per average number of employees | 3 | 4 |
+
+#### Comparison
+
+Overall, from 2021 to 2022 there has been a reduction in total scope 1 & 2 emissions of 8%. It must be noted that throughout 2021 there were several site staff reductions for extended periods due to the changing covid restrictions in place. In 2022 the Group returned to normal operating procedures with all staff back on site, which resulted in an increase in overall energy consumption compared to 2021.
+
+Within Scope 1 emissions there was a reduction in gas consumption across site due to ongoing refurbishment projects and transition towards electrification. Pool car usage however increased in 2022 due to increased onsite activities post Covid-19, and the switch to more hybrid vehicles was not enough to offset this increased fuel consumption. Racing fuel and dyno testing consumption remained broadly consistent with 2021.
+
+Within Scope 2 there was a slight reduction in emissions due to the reduced emissions factor provided by the 2022 UK Government GHG Conversion Factors for Company Reporting. This means despite increased electricity consumption due to site electrification the overall scope 2 emissions still fell in 2022.
+
+#### Methodology
+
+Scope 1 and 2 consumption data has been calculated in accordance with the GHG Protocol's methodology for operational control. The conversion calculations from kWh's to tCO2e were completed using internal consumption data from invoices and meter readings. These conversions were completed using the 2022 UK Government GHG Conversion Factors for Company Reporting with the appropriate gross calorific value (CV) conversion value for the reporting year (01/01/2022 – 31/12/2022).
+
+The intensity ratio has been calculated using the total number of staff within 2022. The final value was calculated by dividing the total tCO2e by the total staff numbers in 2022.
 
 Page 6
 

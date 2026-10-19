@@ -288,58 +288,37 @@ M16 OPX
 --- pág. 10 ---
 
 DocuSign Envelope ID: 3EFFD924-F895-4358-B911-9380FB8A072C
-LANCASHIRE COUNTY CRICKET CLUB LIMITED
-Chairman's Statement
-Year Ended 31 December 2022
-| hope you have all managed to enjoy your autumn and winter break and are looking forward to a great summer of cricket. As a Club, we approach this summer
-with optimism and excitement ahead of another domestic campaign for both our men’s and women’s squads - whilst Emirates Old Trafford hosts a number of
-high-profile fixtures and events that includes a Men’s Ashes Test Match in July and an 1120 match versus New Zealand in September. Additionally, we are
-hugely excited to open the new development later this year — which will be another important milestone for our fine stadium.
-On the field, we are in a really strong position after another positive year of progress in 2022 when we came so close to silverware, The Club continues to focus
-on the development of homegrown talent which is one of our key objectives. Having recently been out in Dubai on our pre-season tour, | saw first-hand the
-hard work that is going into our preparations ahead of the new season. It was once again brilliant to see both our men’s and women’s squads on tour together
-which really emphasises our one-Club philosophy. Not only did Thunder spend a week in Dubai, but they also spent a further six days in Mumbai, based at
-Reliance Park — home of the Mumbai Indians. An incredible opportunity for the squad which | know they have taken a fot of learnings from.
-There seems to be real excitement around Thunder this year, so we're all looking forward to seeing results continue to improve on the field - after the last
-couple of years which has seen steady and encouraging progress. Our three new signings - Naomi Dattani, Fi Morris and Tara Norris - have added some real
-quality and experience to this side — whilst for the men, | know that Mark and Glen were delighted to add the New Zealand pair of Daryl Mitchell and Colin de
-Grandhomme to their squad for a good chunk of this summer. Across both the men’s and women’s teams, after a fantastic effort last year, everyone is focused
-on bringing home a long-awaited trophy to celebrate with our Members and supporters this time round.
-Off the field, the Club continues to diversify its revenue streams, which is so important to the development of Lancashire Cricket as a whole. The new
-development — in addition to our flourishing Conference, Events and Hotel business - is another example of that and we’re all very excited to see the official
-opening later this summer. It will enhance our facilities and the matchday experience for Lancashire Members attending domestic games in the years to come
-and further positions Emirates Old Trafford as one of the leading multi-purpose venues in the country.
-| would also like to take this opportunity to thank our commercial partners. Our sponsorship revenues are the highest they have ever been in the Club’s history
-and we are fortunate to work with some fantastic partners including Emirates, Hilton, Heineken, Sportsbreaks.com and UA92, amongst others — some of whom
-| spent quality time with, in Dubai on our pre-season tour. Their support of the Club is very much appreciated, and we look forward to working and
-collaborating with these partners for many more years to come.
-We were delighted to receive the news last month that our second ground project at Farington has been approved in principle by Lancashire County Council.
-Whilst it is still subject to final approval from the Security of State — normal practice when proposals affect green belt land — this is hugely positive news for the
-Club.
-As Members are aware, the aim is to establish a new year-round facility, which would be able to host men’s and women’s competitive matches each year, as an
-alternative to Emirates Old Trafford, and ta provide a new training base for Lancashire’s teams, from age-group to first team. The Club has committed to
-continuing to use our current outgrounds even when Farington is complete, but it is a facility that we’ve needed for a number of years now. It means we aren't
-as reliant on recreational grounds. The ground will be a first of its kind in domestic cricket and we'll keep Members updated on its progress once work gets
-underway.
-At the time of writing, the Club is awaiting the publication of the report undertaken by the Independent Commission for Equity in Cricket (ICEC), which was
-formed in March 2021 by the England and Wales Cricket Board. Its mission is to evaluate the state of equity in cricket and to identify and highlight the realities
-of people’s experiences within our game.
-We will welcome the publication of the ICEC report, which we expect will bear the scale of the historic and structural issues that have negatively impacted and
-even excluded people from our game. As a sport, cricket must accept responsibility for this and ensure that discrimination of any kind is eradicated at all levels.
-As a leading County, over the past 12 months we have worked hard on our own Equality, Diversity and Inclusivity framework to ensure that Lancashire Cricket
-is going to make a difference to the community we serve. As a Board, we recognise this approach cannot just be about words on paper — we need to take
-actions which demonstrate that we are on the road to creating a better environment for everyone who is, or who wants to be, involved in cricket.
-2023 is going to be another busy year at Emirates Old Trafford as we look forward to hosting another Men’s Ashes Test Match in July. We are sold out for the
-first four days and we’re expecting to sell out for our New Zealand IT20 in September. You will hear more about Memberships within the Strategic Report, but
-it is fantastic that we now have over 8,000 Members for 2023, which is a record for many years. This has been a key area of focus for the Club and we’re excited
-to see many new and returning Members at Emirates Old Trafford throughout the year. We will also have two 50,000 sell-out concert nights as we welcome the
-Arctic Monkeys in early June, whilst also hosting the Hundred once again.
-| would also like to take this opportunity to thank all the staff at Emirates Old Trafford for their hard work that goes into preparing for the season, and then
-throughout the summer to ensure our Members and supporters have a fantastic and safe experience with us. We have an incredible group of people — working
-across all areas of the Club — and without their dedication, these major events would not be possible.
-We are all excited for another pasitive and progressive season for the Club, on and off the field and | look forward to seeing you soon.
-Andy Anson,
-Chair, Lancashire Cricket
+
+**LANCASHIRE COUNTY CRICKET CLUB LIMITED**  
+**Chairman's Statement**  
+**Year Ended 31 December 2022**
+
+I hope you have all managed to enjoy your autumn and winter break and are looking forward to a great summer of cricket. As a Club, we approach this summer with optimism and excitement ahead of another domestic campaign for both our men's and women's squads - whilst Emirates Old Trafford hosts a number of high-profile fixtures and events that includes a Men's Ashes Test Match in July and an IT20 match versus New Zealand in September. Additionally, we are hugely excited to open the new development later this year - which will be another important milestone for our fine stadium.
+
+On the field, we are in a really strong position after another positive year of progress in 2022 when we came so close to silverware. The Club continues to focus on the development of homegrown talent which is one of our key objectives. Having recently been out in Dubai on our pre-season tour, I saw first-hand the hard work that is going into our preparations ahead of the new season. It was once again brilliant to see both our men's and women's squads on tour together which really emphasises our one-Club philosophy. Not only did Thunder spend a week in Dubai, but they also spent a further six days in Mumbai, based at Reliance Park - home of the Mumbai Indians. An incredible opportunity for the squad which I know they have taken a lot of learnings from.
+
+There seems to be real excitement around Thunder this year, so we're all looking forward to seeing results continue to improve on the field - after the last couple of years which has seen steady and encouraging progress. Our three new signings - Naomi Dattani, Fi Morris and Tara Norris - have added some real quality and experience to this side - whilst for the men, I know that Mark and Glen were delighted to add the New Zealand pair of Daryl Mitchell and Colin de Grandhomme to their squad for a good chunk of this summer. Across both the men's and women's teams, after a fantastic effort last year, everyone is focused on bringing home a long-awaited trophy to celebrate with our Members and supporters this time round.
+
+Off the field, the Club continues to diversify its revenue streams, which is so important to the development of Lancashire Cricket as a whole. The new development - in addition to our flourishing Conference, Events and Hotel business - is another example of that and we're all very excited to see the official opening later this summer. It will enhance our facilities and the matchday experience for Lancashire Members attending domestic games in the years to come and further positions Emirates Old Trafford as one of the leading multi-purpose venues in the country.
+
+I would also like to take this opportunity to thank our commercial partners. Our sponsorship revenues are the highest they have ever been in the Club's history and we are fortunate to work with some fantastic partners including Emirates, Hilton, Heineken, Sportsbreaks.com and UA92, amongst others - some of whom I spent quality time with, in Dubai on our pre-season tour. Their support of the Club is very much appreciated, and we look forward to working and collaborating with these partners for many more years to come.
+
+We were delighted to receive the news last month that our second ground project at Farington has been approved in principle by Lancashire County Council. Whilst it is still subject to final approval from the Security of State - normal practice when proposals affect green belt land - this is hugely positive news for the Club.
+
+As Members are aware, the aim is to establish a new year-round facility, which would be able to host men's and women's competitive matches each year, as an alternative to Emirates Old Trafford, and to provide a new training base for Lancashire's teams, from age-group to first team. The Club has committed to continuing to use our current outgrounds even when Farington is complete, but it is a facility that we've needed for a number of years now. It means we aren't as reliant on recreational grounds. The ground will be a first of its kind in domestic cricket and we'll keep Members updated on its progress once work gets underway.
+
+At the time of writing, the Club is awaiting the publication of the report undertaken by the Independent Commission for Equity in Cricket (ICEC), which was formed in March 2021 by the England and Wales Cricket Board. Its mission is to evaluate the state of equity in cricket and to identify and highlight the realities of people's experiences within our game.
+
+We will welcome the publication of the ICEC report, which we expect will bear the scale of the historic and structural issues that have negatively impacted and even excluded people from our game. As a sport, cricket must accept responsibility for this and ensure that discrimination of any kind is eradicated at all levels. As a leading County, over the past 12 months we have worked hard on our own Equity, Diversity and Inclusivity framework to ensure that Lancashire Cricket is going to make a difference to the community we serve. As a Board, we recognise this approach cannot just be about words on paper - we need to take actions which demonstrate that we are on the road to creating a better environment for everyone who is, or who wants to be, involved in cricket.
+
+2023 is going to be another busy year at Emirates Old Trafford as we look forward to hosting another Men's Ashes Test Match in July. We are sold out for the first four days and we're expecting to sell out for our New Zealand IT20 in September. You will hear more about Memberships within the Strategic Report, but it is fantastic that we now have over 8,000 Members for 2023, which is a record for many years. This has been a key area of focus for the Club and we're excited to see many new and returning Members at Emirates Old Trafford throughout the year. We will also have two 50,000 sell-out concert nights as we welcome the Arctic Monkeys in early June, whilst also hosting the Hundred once again.
+
+I would also like to take this opportunity to thank all the staff at Emirates Old Trafford for their hard work that goes into preparing for the season, and then throughout the summer to ensure our Members and supporters have a fantastic and safe experience with us. We have an incredible group of people - working across all areas of the Club - and without their dedication, these major events would not be possible.
+
+We are all excited for another positive and progressive season for the Club, on and off the field and I look forward to seeing you soon.
+
+**Andy Anson,**  
+**Chair, Lancashire Cricket**
 
 --- pág. 11 ---
 
@@ -1373,7 +1352,7 @@ Instalments relating to the loans fall due as follows:
 | In one year or less or on demand | 1,011,301 | 2,075,907 |
 | In more than one year but not more than two years | 1,902,526 | 1,069,558 |
 | In more than two years but not more than five years | 2,959,567 | 3,432,407 |
-| In more than five years | 18,628,242 | 18,792,191 |
+| In more than five years | 18,628,242 | 18,792,181 |
 | | £24,501,636 | £25,370,063 |
 
 The bank loan is secured by a first legal charge over the Lancashire County Cricket Club Limited ground, in favour of Metro Bank plc.
