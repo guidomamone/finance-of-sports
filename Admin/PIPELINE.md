@@ -665,6 +665,7 @@ solo esos 4 cambian, 0 filas a la cola, 0 categorías distintas.
   nuevo escribe, el alta se revierte. Antes de decidir un alta recalcula el registro de altas de ese club (`alta-club.mjs --todos --solo`, to-do 237 t). El revertir restaura lo que existía y borra lo nuevo que dejó en `data/` y `fuentes/` (to-do 237 d). Exige `data/`, `index.html`, `fuentes/` y `Admin/sourcing/` sin cambios al empezar. Sin push.
   Saltea, igual que `lote.mjs`, los documentos de `documentos-descartados.txt` y de `documentos-parciales.txt` aunque tengan un `.carga.json`
   viejo (to-do 232 j: Kifisia 2022, parcial, se había publicado igual).
+  Al terminar avisa, sin frenar nada, qué años recién escritos todavía no tienen su línea del auditor en `Admin/registros/auditoria.jsonl` y arma sus extractos en `Generados/auditoria/` (to-do 282 f; la línea la escribe un subagente que lee el extracto).
 - Club nuevo en el ENSAYO (to-do 210): sin `--escribir`, `cargar.mjs` no corta en "el club no existe": si la ficha del alta (`analizar()`)
   tiene id, país, moneda e inicio del ejercicio sin preguntas, anota el freno `club` y evalúa el resto con un club provisional armado de esa
   ficha. Así el ensayo de `cargar-lote.mjs` muestra los frenos reales (categorías y perfil en la cola, tie-outs, fx) y escribe sus preguntas

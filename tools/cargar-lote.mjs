@@ -142,7 +142,7 @@ function revertirAlta(clubId) {
   git('clean', '-fdq', '--', 'data', 'fuentes');
 }
 
-let commits = 0; const noEscritos = []; const escritosTodos = [];
+let commits = 0; const noEscritos = []; const escritosTodos = []; const mdsEscritos = [];
 for (const p of plan) {
   const nombre = p.carpeta.split('/')[2];
   if (p.alta) {
@@ -161,10 +161,20 @@ for (const p of plan) {
     const msg = `${nombre} ${x.year} por el pipeline${p.alta && !escritos ? ` (alta de ${p.alta.clubId}, color ${p.alta.color === null ? 'null' : p.alta.color})` : ''} — tools/cargar-lote.mjs, ${LISTA}`;
     const c = git('commit', '-q', '-m', msg);
     if (c.status !== 0) { noEscritos.push({ pdf: x.pdf, motivo: `escrito pero el commit falló: ${String(c.stderr).slice(0, 120)}` }); continue; }
-    escritos++; commits++; escritosTodos.push(`${nombre} ${x.year}`);
+    escritos++; commits++; escritosTodos.push(`${nombre} ${x.year}`); mdsEscritos.push(x.pdf.replace(/\.pdf$/i, '.md'));
     console.log(`  ${nombre} ${x.year}: escrito y commiteado (${String(git('log', '--oneline', '-1').stdout).slice(0, 9)})`);
   }
   if (p.alta && !escritos) { revertirAlta(p.alta.clubId); console.log(`  ${nombre}: ningún año se escribió; alta de ${p.alta.clubId} revertida`); }
 }
 console.log(`\nEscritos en el sitio: ${commits === 1 ? '1 año' : `${commits} años`}${commits ? ` (${escritosTodos.join(', ')})` : ''}${commits ? ', un commit cada uno' : ''}. No se pusheó nada.`);
 if (noEscritos.length) { console.log(`No escritos ${noEscritos.length}:`); for (const x of noEscritos) console.log(`   ${x.pdf.split('/').slice(2).join('/')}: ${x.motivo}`); }
+// (to-do 282 f, ok de Guido 2026-10-19) QUIÉN AUDITA: NO FRENA LA CARGA, PERO AVISA. Los años que se acaban de escribir y todavía no tienen su línea en Admin/registros/auditoria.jsonl
+// (la escribe un subagente que lee el informe del auditor) quedan listados acá, con sus extractos ya armados en Generados/auditoria/<club>-<año>.txt (gratis).
+if (mdsEscritos.length) {
+  const pend = String(node('tools/auditoria.mjs', ['--pendientes']).stdout || '').split('\n').map((l) => l.split('\t')).filter(([k, mds]) => k && mds && mds.split(' | ').some((m) => mdsEscritos.includes(m)));
+  if (pend.length) {
+    const ids = pend.map(([k]) => k);
+    node('tools/auditoria.mjs', ['--extractos', '--solo', ids.join(',')]);
+    console.log(`\nSin línea del auditor (${ids.length}): ${ids.join(', ')}. Extractos armados en Generados/auditoria/ (lista: _lista.txt): falta que un subagente lea el informe y escriba la línea en Admin/registros/auditoria.jsonl (node tools/auditoria.mjs --pendientes). No frena nada.`);
+  } else console.log('\nAuditor: todos los años escritos ya tienen su línea.');
+}
