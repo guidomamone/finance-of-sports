@@ -1,0 +1,133 @@
+const goaheadeaglesnlRevenueLinesByYear = {
+  2025: [
+    { rawLabel:'Sponsoring', normalizedCategory:'sponsorship_commercial', amountNative:8.381173, disclosureLevel:'aggregated' },
+    { rawLabel:'Wedstrijdbaten', normalizedCategory:'matchday_competition', amountNative:4.25875, disclosureLevel:'aggregated' },
+    { rawLabel:'Media gerelateerde baten', normalizedCategory:'broadcasting', amountNative:3.14891, disclosureLevel:'aggregated' },
+    { rawLabel:'Prijzengeld', normalizedCategory:'competition_bonus', amountNative:2.850085, disclosureLevel:'aggregated' },
+    { rawLabel:'Horeca', normalizedCategory:'stadium_other', amountNative:0.922281, disclosureLevel:'aggregated' },
+    { rawLabel:'Merchandise', normalizedCategory:'sponsorship_commercial', amountNative:0.848561, disclosureLevel:'aggregated' },
+    { rawLabel:'Subsidies & giften', normalizedCategory:'other_income', amountNative:0.040507, disclosureLevel:'aggregated' },
+    { rawLabel:'Overige baten', normalizedCategory:'other_income', amountNative:0.422221, disclosureLevel:'aggregated' },
+    { rawLabel:'Resultaat vergoedingssommen', normalizedCategory:'player_sales', amountNative:4.210605, disclosureLevel:'aggregated' },
+  ],
+};
+const goaheadeaglesnlExpenseLinesByYear = {
+  2025: [
+    { rawLabel:'Inkoopwaarde van de omzet', normalizedCategory:'other_expenses', amountNative:-0.827152, disclosureLevel:'aggregated' },
+    { rawLabel:'Bruto salarissen', normalizedCategory:'wages_squad', amountNative:-8.250486, disclosureLevel:'aggregated' },
+    { rawLabel:'Verhuur spelers', normalizedCategory:'other_expenses', amountNative:0.133833, disclosureLevel:'aggregated' },
+    { rawLabel:'Mutatie reservering vakantiedagen', normalizedCategory:'wages_squad', amountNative:0.020287, disclosureLevel:'aggregated' },
+    { rawLabel:'Ontvangen uitkeringen', normalizedCategory:'wages_squad', amountNative:0.015756, disclosureLevel:'aggregated' },
+    { rawLabel:'Sociale lasten', normalizedCategory:'wages_squad', amountNative:-0.907942, disclosureLevel:'aggregated' },
+    { rawLabel:'Pensioenlasten', normalizedCategory:'wages_squad', amountNative:-0.122717, disclosureLevel:'aggregated' },
+    { rawLabel:'Bedrijfsgebouwen en -terreinen', normalizedCategory:'depreciation', amountNative:-0.679177, disclosureLevel:'aggregated' },
+    { rawLabel:'Inventarissen', normalizedCategory:'depreciation', amountNative:-0.369001, disclosureLevel:'aggregated' },
+    { rawLabel:'Vervoermiddelen', normalizedCategory:'depreciation', amountNative:-0.004744, disclosureLevel:'aggregated' },
+    { rawLabel:'Huisvestingskosten', normalizedCategory:'admin_general_expense', amountNative:-0.403534, disclosureLevel:'aggregated' },
+    { rawLabel:'Vergoeding personeel en vrijwilligersvergoedingen', normalizedCategory:'admin_general_expense', amountNative:-0.28754, disclosureLevel:'aggregated' },
+    { rawLabel:'Eindheffing WKR', normalizedCategory:'admin_general_expense', amountNative:-0.175412, disclosureLevel:'aggregated' },
+    { rawLabel:'Reiskosten- en kilometervergoedingen', normalizedCategory:'admin_general_expense', amountNative:-0.07867, disclosureLevel:'aggregated' },
+    { rawLabel:'Inhuur technische staf', normalizedCategory:'wages_squad', amountNative:-0.070171, disclosureLevel:'aggregated' },
+    { rawLabel:'Verhuiskostenvergoeding', normalizedCategory:'admin_general_expense', amountNative:-0.05425, disclosureLevel:'aggregated' },
+    { rawLabel:'Studie- en opleidingskosten', normalizedCategory:'admin_general_expense', amountNative:-0.03264, disclosureLevel:'aggregated' },
+    { rawLabel:'Inhuur fysiotherapie', normalizedCategory:'admin_general_expense', amountNative:-0.031592, disclosureLevel:'aggregated' },
+    { rawLabel:'Inhuur veiligheidscoördinator', normalizedCategory:'match_organisation_expense', amountNative:-0.027152, disclosureLevel:'aggregated' },
+    { rawLabel:'Uitzendkrachten', normalizedCategory:'admin_general_expense', amountNative:-0.023772, disclosureLevel:'aggregated' },
+    { rawLabel:'Wervingskosten', normalizedCategory:'admin_general_expense', amountNative:-0.017962, disclosureLevel:'aggregated' },
+    { rawLabel:'Inhuur financieel management', normalizedCategory:'admin_general_expense', amountNative:-0.007468, disclosureLevel:'aggregated' },
+    { rawLabel:'Inhuur afdeling communicatie', normalizedCategory:'admin_general_expense', amountNative:-0.002678, disclosureLevel:'aggregated' },
+    { rawLabel:'Bedrijfskleding', normalizedCategory:'other_expenses', amountNative:-0.001806, disclosureLevel:'aggregated' },
+    { rawLabel:'Overige', normalizedCategory:'admin_general_expense', amountNative:-0.059842, disclosureLevel:'aggregated' },
+    { rawLabel:'Onderhoud onroerend goed', normalizedCategory:'admin_general_expense', amountNative:-0.501728, disclosureLevel:'aggregated' },
+    { rawLabel:'Gas, water en elektra', normalizedCategory:'admin_general_expense', amountNative:-0.282878, disclosureLevel:'aggregated' },
+    { rawLabel:'Schoonmaakkosten', normalizedCategory:'admin_general_expense', amountNative:-0.131059, disclosureLevel:'aggregated' },
+    { rawLabel:'Belastingen en zakelijke lasten', normalizedCategory:'admin_general_expense', amountNative:-0.060449, disclosureLevel:'aggregated' },
+    { rawLabel:'Assurantiepremie onroerende zaak', normalizedCategory:'admin_general_expense', amountNative:-0.021872, disclosureLevel:'aggregated' },
+    { rawLabel:'Beveiligingskosten', normalizedCategory:'match_organisation_expense', amountNative:-0.019767, disclosureLevel:'aggregated' },
+    { rawLabel:'Onderzoekskosten verduurzaming en nieuwbouw', normalizedCategory:'other_expenses', amountNative:-0.004394, disclosureLevel:'aggregated' },
+    { rawLabel:'Overige', normalizedCategory:'admin_general_expense', amountNative:-0.043896, disclosureLevel:'aggregated' },
+    { rawLabel:'Reclame, advertenties en promotiemateriaal', normalizedCategory:'admin_general_expense', amountNative:-0.244317, disclosureLevel:'aggregated' },
+    { rawLabel:'Heffingen KNVB', normalizedCategory:'match_organisation_expense', amountNative:-0.211492, disclosureLevel:'aggregated' },
+    { rawLabel:'Kosten evenementen', normalizedCategory:'other_expenses', amountNative:-0.145088, disclosureLevel:'aggregated' },
+    { rawLabel:'Ticketing', normalizedCategory:'match_organisation_expense', amountNative:-0.118309, disclosureLevel:'aggregated' },
+    { rawLabel:'LED-boarding', normalizedCategory:'admin_general_expense', amountNative:-0.101155, disclosureLevel:'aggregated' },
+    { rawLabel:'Mutatie voorziening dubieuze vorderingen op handelsdebiteuren', normalizedCategory:'other_expenses', amountNative:-0.087256, disclosureLevel:'aggregated' },
+    { rawLabel:'Representatiekosten', normalizedCategory:'admin_general_expense', amountNative:-0.077267, disclosureLevel:'aggregated' },
+    { rawLabel:'Bemiddelingskosten', normalizedCategory:'other_expenses', amountNative:-0.064767, disclosureLevel:'aggregated' },
+    { rawLabel:'Afwaardering vorderingen', normalizedCategory:'other_expenses', amountNative:-0.032148, disclosureLevel:'aggregated' },
+    { rawLabel:'Kosten event', normalizedCategory:'other_expenses', amountNative:-0.02665, disclosureLevel:'aggregated' },
+    { rawLabel:'Hostess', normalizedCategory:'admin_general_expense', amountNative:-0.019278, disclosureLevel:'aggregated' },
+    { rawLabel:'Fanshop', normalizedCategory:'other_expenses', amountNative:-0.008493, disclosureLevel:'aggregated' },
+    { rawLabel:'Kids- en Juniorclub', normalizedCategory:'youth_other_sports_expense', amountNative:-0.004414, disclosureLevel:'aggregated' },
+    { rawLabel:'Overige', normalizedCategory:'admin_general_expense', amountNative:-0.10678, disclosureLevel:'aggregated' },
+    { rawLabel:'Operational leasing', normalizedCategory:'admin_general_expense', amountNative:-0.337802, disclosureLevel:'aggregated' },
+    { rawLabel:'Brandstoffen', normalizedCategory:'admin_general_expense', amountNative:-0.147483, disclosureLevel:'aggregated' },
+    { rawLabel:'BTW op privégebruik', normalizedCategory:'admin_general_expense', amountNative:-0.03929, disclosureLevel:'aggregated' },
+    { rawLabel:'Reparatie en onderhoud', normalizedCategory:'admin_general_expense', amountNative:-0.00496, disclosureLevel:'aggregated' },
+    { rawLabel:'Boetes en bekeuringen en eigen risico', normalizedCategory:'other_expenses', amountNative:-0.00071, disclosureLevel:'aggregated' },
+    { rawLabel:'Kosten automatisering', normalizedCategory:'admin_general_expense', amountNative:-0.231871, disclosureLevel:'aggregated' },
+    { rawLabel:'Porti- en telefoonkosten', normalizedCategory:'admin_general_expense', amountNative:-0.077462, disclosureLevel:'aggregated' },
+    { rawLabel:'Kantoorbenodigdheden', normalizedCategory:'admin_general_expense', amountNative:-0.006532, disclosureLevel:'aggregated' },
+    { rawLabel:'Verzekeringen', normalizedCategory:'admin_general_expense', amountNative:-0.175442, disclosureLevel:'aggregated' },
+    { rawLabel:'Abonnementen en contributies', normalizedCategory:'admin_general_expense', amountNative:-0.149074, disclosureLevel:'aggregated' },
+    { rawLabel:'Accountantskosten, onderzoek van de jaarrekening', normalizedCategory:'admin_general_expense', amountNative:-0.0385, disclosureLevel:'aggregated' },
+    { rawLabel:'Accountantskosten, andere niet-controlediensten', normalizedCategory:'admin_general_expense', amountNative:-0.029967, disclosureLevel:'aggregated' },
+    { rawLabel:'Notariskosten', normalizedCategory:'admin_general_expense', amountNative:-0.0015, disclosureLevel:'aggregated' },
+    { rawLabel:'Overige', normalizedCategory:'admin_general_expense', amountNative:-0.011743, disclosureLevel:'aggregated' },
+    { rawLabel:'Kosten bekerfinale KNVB beker', normalizedCategory:'match_organisation_expense', amountNative:-2.234943, disclosureLevel:'aggregated' },
+    { rawLabel:'Kosten voetbalacademie (jeugd)', normalizedCategory:'youth_other_sports_expense', amountNative:-0.453277, disclosureLevel:'aggregated' },
+    { rawLabel:'Reis- en verblijfkosten', normalizedCategory:'match_organisation_expense', amountNative:-0.365731, disclosureLevel:'aggregated' },
+    { rawLabel:'Kosten beveiliging en kassiers', normalizedCategory:'match_organisation_expense', amountNative:-0.35404, disclosureLevel:'aggregated' },
+    { rawLabel:'Kosten Conference League', normalizedCategory:'match_organisation_expense', amountNative:-0.348734, disclosureLevel:'aggregated' },
+    { rawLabel:'Kosten bus- en autocombi\'s', normalizedCategory:'match_organisation_expense', amountNative:-0.240079, disclosureLevel:'aggregated' },
+    { rawLabel:'Analyseprogramma\'s', normalizedCategory:'other_expenses', amountNative:-0.247809, disclosureLevel:'aggregated' },
+    { rawLabel:'Kosten trainingskamp', normalizedCategory:'match_organisation_expense', amountNative:-0.160603, disclosureLevel:'aggregated' },
+    { rawLabel:'Scoutingswerkzaamheden', normalizedCategory:'other_expenses', amountNative:-0.136545, disclosureLevel:'aggregated' },
+    { rawLabel:'Medische begeleiding', normalizedCategory:'wages_squad', amountNative:-0.123496, disclosureLevel:'aggregated' },
+    { rawLabel:'Uitrusting en wedstrijdmateriaal', normalizedCategory:'other_expenses', amountNative:-0.057719, disclosureLevel:'aggregated' },
+    { rawLabel:'Clubkostuums', normalizedCategory:'other_expenses', amountNative:-0.037989, disclosureLevel:'aggregated' },
+    { rawLabel:'Scheidsrechterskosten', normalizedCategory:'match_organisation_expense', amountNative:-0.011741, disclosureLevel:'aggregated' },
+    { rawLabel:'Overige', normalizedCategory:'admin_general_expense', amountNative:-0.165891, disclosureLevel:'aggregated' },
+    { rawLabel:'Overige bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.123402, disclosureLevel:'aggregated' },
+  ],
+};
+const goaheadeaglesnlFiscalYearMeta = {
+  2025: {
+    currency:'EUR', fxRef:'EUR@2025-06-30',
+    sourceId:'goaheadeagles-nl-wf-2024-2025-31bca08b',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:-0.20652, tax:-1.021589,
+    extraRows: [
+      {label:'Rentebaten en soortgelijke opbrengsten', value:0.011237},
+      {label:'Rentelasten en soortgelijke kosten', value:-0.217757},
+      {label:'Belastingen', value:-1.021589},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:25.083093, officialTotalExpenses:20.893624, officialPAT:2.96136,
+  },
+};
+const goaheadeaglesnlPresupuestoOverlayByYear = {};
+
+const goaheadeaglesnlPasesData = [];
+const goaheadeaglesnlResultadosData = {};
+const goaheadeaglesnlTitulosData = [];
+
+window.CLUB_GENERIC_DATA = window.CLUB_GENERIC_DATA || {};
+window.CLUB_GENERIC_DATA['goaheadeagles-nl'] = {
+  revenueLinesByYear: goaheadeaglesnlRevenueLinesByYear, expenseLinesByYear: goaheadeaglesnlExpenseLinesByYear,
+  fiscalYearMeta: goaheadeaglesnlFiscalYearMeta, pasesData: goaheadeaglesnlPasesData,
+  resultadosData: goaheadeaglesnlResultadosData, titulosData: goaheadeaglesnlTitulosData,
+  presupuestoOverlayByYear: goaheadeaglesnlPresupuestoOverlayByYear,
+};
+
+Object.assign(sources, {
+  'goaheadeagles-nl-wf-2024-2025-31bca08b': {
+    id:'goaheadeagles-nl-wf-2024-2025-31bca08b', clubId:'goaheadeagles-nl',
+    title:'Go Ahead Eagles Holding BV — wf-2024-2025-31bca08b (ejercicio 2025)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+});
+
+memberCountByClub['goaheadeagles-nl'] = null;

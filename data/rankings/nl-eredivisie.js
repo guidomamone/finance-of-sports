@@ -17,6 +17,9 @@ window.RANKINGS["nl-eredivisie"] = {
       { id:"az-nl", revenue:106.895, reportType:"official_balance_sheet",
         sourceId:"az-nl-jaarrekening-2025",
         mix:[["Comercial / Sponsors",20.764],["Estadio",36.234],["Televisión",11.68],["Venta de Jugadores",34.573],["Otros ingresos",3.644]] },
+      { id:"goaheadeagles-nl", revenue:29.399, reportType:"official_balance_sheet",
+        sourceId:"goaheadeagles-nl-wf-2024-2025-31bca08b",
+        mix:[["Comercial / Sponsors",10.818],["Estadio",6.072],["Televisión",3.691],["Premios por competencias",3.34],["Venta de Jugadores",4.935],["Otros ingresos",0.542]] },
     ],
   },
   2024: {
