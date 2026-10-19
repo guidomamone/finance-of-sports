@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2025.pdf",
  "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2025.md",
- "generado": "2026-10-19T00:53:53.005Z",
+ "generado": "2026-10-19T01:02:31.189Z",
  "estado": "ok",
  "clubId": null,
  "year": 2025,
@@ -11,7 +11,56 @@
   "factor": 1,
   "de": null
  },
- "ajustes": null,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2025.pdf",
+   "campo": "fila",
+   "valor": "66 692 397",
+   "linea": 443,
+   "etiqueta": "Avskrivninger spillerrettigheter",
+   "lado": "gasto",
+   "reemplaza": "Avskrivninger",
+   "motivo": "la Note 12 abre el renglón (67.336.863): derechos de jugadores 66.692.397 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": ".md L443, L781",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2025.pdf",
+   "campo": "fila",
+   "valor": "644 466",
+   "linea": 443,
+   "etiqueta": "Avskrivninger varige driftsmidler",
+   "lado": "gasto",
+   "reemplaza": null,
+   "motivo": "Note 13: bienes de uso 644.466 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": ".md L798",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2025.pdf",
+   "campo": "categoria",
+   "valor": "player_amortisation",
+   "linea": null,
+   "etiqueta": "Avskrivninger spillerrettigheter",
+   "motivo": "categoría de la fila partida por la nota (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2025.pdf",
+   "campo": "categoria",
+   "valor": "depreciation",
+   "linea": null,
+   "etiqueta": "Avskrivninger varige driftsmidler",
+   "motivo": "categoría de la fila partida por la nota (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19)",
+   "evidencia": null,
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
  "cola": [],
  "chequeos": [
   {
@@ -25,14 +74,14 @@
    "nombre": "total de gastos",
    "ok": true,
    "detalle": "289.687573 = 289.687571",
-   "suma": 289.68757299999993,
+   "suma": 289.687573,
    "impreso": 289.687571
   },
   {
    "nombre": "resultado del ejercicio",
    "ok": true,
    "detalle": "cierra (como impresos)",
-   "dif": 0.0000019999999381070666
+   "dif": 0.0000019999999949504854
   },
   {
    "nombre": "año anterior cargado",
@@ -48,6 +97,8 @@
  "notas": [
   "la nota de \"Andre driftsinntekter\" no suma el renglón (3.650704 contra 3.650788, sumando sus renglones): quedó el renglón del estado",
   "el desglose de \"Andre driftskostnader\" (4 filas) no suma la fila: quedó la fila",
+  "ajuste manual: fila \"Avskrivninger spillerrettigheter\" (gasto) 66 692 397, en lugar de \"Avskrivninger\" (2026-10-19, la Note 12 abre el renglón (67.336.863): derechos de jugadores 66.692.397 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19))",
+  "ajuste manual: fila \"Avskrivninger varige driftsmidler\" (gasto) 644 466 (2026-10-19, Note 13: bienes de uso 644.466 (subagente Sonnet, revisado por Claude contra el .md, 2026-10-19))",
   "duda de localizar que no afecta la carga: El documento repite el estado y las notas en las págs. 31-41, idénticos a las págs. 11-21, y b2 es la versión resumida del formulario oficial.",
   "duda de extraer ya contestada para el club (escala, \"-\"): aceptar, en aarsregnskap-fotballklubb-fli-2025.pdf",
   "duda de extraer que no afecta la carga: El signo positivo es coherente con Driftsresultat -160 542 139 + 81 320 126 = -79 222 013 (L447-L449).",
@@ -370,14 +421,6 @@
    "origen": "estado"
   },
   {
-   "etiqueta": "Avskrivninger",
-   "lado": "gasto",
-   "M": 67.336863,
-   "pagina": 11,
-   "linea": 443,
-   "origen": "estado"
-  },
-  {
    "etiqueta": "Nedskrivninger",
    "lado": "gasto",
    "M": 11.738298,
@@ -392,6 +435,22 @@
    "pagina": 11,
    "linea": 445,
    "origen": "estado"
+  },
+  {
+   "etiqueta": "Avskrivninger spillerrettigheter",
+   "lado": "gasto",
+   "M": 66.692397,
+   "pagina": 11,
+   "linea": 443,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Avskrivninger varige driftsmidler",
+   "lado": "gasto",
+   "M": 0.644466,
+   "pagina": 11,
+   "linea": 443,
+   "origen": "ajuste manual"
   }
  ],
  "signosCarga": {
