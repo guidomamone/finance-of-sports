@@ -374,5 +374,23 @@ window.LIGA_AUDITORIA = {
     "linea": 43
    }
   }
+ },
+ "ru-pervayaliga": {
+  "2025": {
+   "entidad": {
+    "nombre": "Primera Liga (FNL)",
+    "legal": "Ассоциация профессиональных футбольных клубов «Футбольная Национальная Лига»"
+   },
+   "auditor": {
+    "nombre": "ООО «ТЕРРАФИНАНС»",
+    "tipo": "firma"
+   },
+   "dictamen": "sin_salvedades",
+   "continuidad": false,
+   "fuente": {
+    "md": "Ligas/Rusia/FNL/fnl-zaklyuchenie-auditora-2025.md",
+    "linea": 31
+   }
+  }
  }
 };
