@@ -23,6 +23,7 @@ Object.assign(window.CLUB_CONTEXT, {
     2012: {"estadio":"Sarpsborg Stadion","capacidad":5000,"temporada":"2012 Norwegian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1369041342"},
     2014: {"estadio":"Sarpsborg Stadion","capacidad":4700,"sponsor":"Borregaard","marca":"Select","temporada":"2014 Tippeligaen","fuente":"https://en.wikipedia.org/w/index.php?oldid=1322214627"},
     2016: {"estadio":"Sarpsborg Stadion","capacidad":4700,"sponsor":"Borregaard","marca":"Select","temporada":"2016 Tippeligaen","fuente":"https://en.wikipedia.org/w/index.php?oldid=1322214984"},
+    2017: {"estadio":"Sarpsborg Stadion","capacidad":4700,"sponsor":"Borregaard","marca":"Select","temporada":"2017 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1332616218"},
     2025: {"estadio":"Sarpsborg Stadion","capacidad":8022,"sponsor":"Borregaard","marca":"Hummel","temporada":"2025 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372620131"},
   },
   'valerenga-no': {
