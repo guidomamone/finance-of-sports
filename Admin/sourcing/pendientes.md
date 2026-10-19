@@ -772,9 +772,8 @@ GENERADO por `node tools/faltantes-liga.mjs`: no editar a mano. Club-años que j
 - Hønefoss — sin-buscar: 2013 (no-eliteserien), 2010 (no-eliteserien)
 - Sandnes Ulf — sin-buscar: 2013 (no-eliteserien)
 
-## Países Bajos (9 clubes, 29 club-años)
+## Países Bajos (8 clubes, 25 club-años)
 
-- Eindhoven — sin-buscar: 2025 (nl-eerstedivisie), 2024 (nl-eerstedivisie), 2023 (nl-eerstedivisie), 2015 (nl-eerstedivisie)
 - Jong Ajax — sin-buscar: 2025 (nl-eerstedivisie), 2024 (nl-eerstedivisie), 2023 (nl-eerstedivisie), 2022 (nl-eerstedivisie), 2015 (nl-eerstedivisie)
 - Jong AZ — sin-buscar: 2025 (nl-eerstedivisie), 2024 (nl-eerstedivisie), 2023 (nl-eerstedivisie), 2022 (nl-eerstedivisie)
 - Jong FC Utrecht — sin-buscar: 2025 (nl-eerstedivisie), 2024 (nl-eerstedivisie), 2023 (nl-eerstedivisie), 2022 (nl-eerstedivisie)

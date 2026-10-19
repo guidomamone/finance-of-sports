@@ -29,6 +29,9 @@ Object.assign(window.CLUB_CONTEXT, {
   'fcdordrecht-nl': {
     2025: {"estadio":"M-Scores Stadion","capacidad":4235,"temporada":"2024–25 Eerste Divisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372593507"},
   },
+  'fceindhoven-nl': {
+    2025: {"estadio":"Jan Louwers Stadion","capacidad":4600,"temporada":"2024–25 Eerste Divisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1372593507"},
+  },
   'fcemmen-nl': {
     2019: {"estadio":"De Oude Meerdijk","capacidad":8600,"sponsor":"Noordlease","marca":"Beltona","temporada":"2018–19 Eredivisie","fuente":"https://en.wikipedia.org/w/index.php?oldid=1354348195"},
   },

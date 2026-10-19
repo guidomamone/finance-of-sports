@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Países Bajos/FC Eindhoven/wf-2024-2025-a6019b8e.pdf",
- "generado": "2026-10-19T03:08:06.774Z",
+ "generado": "2026-10-19T03:38:11.331Z",
  "frena": [
   {
    "etapa": "club",
@@ -679,10 +679,9 @@
   }
  },
  "liga": {
-  "valor": null,
-  "fuente": "coincidencia NO exacta en los rosters cacheados: \"PSV Eindhoven\" en 2024–25 Eredivisie | \"Eindhoven\" en 2024–25 Eerste Divisie",
-  "estado": "pendiente",
-  "nota": "fila en null hasta confirmar: ¿\"FC Eindhoven\" es \"PSV Eindhoven\" (nl-eredivisie, 2024–25 Eredivisie) o \"Eindhoven\" (nl-eerstedivisie, 2024–25 Eerste Divisie)?"
+  "valor": "nl-eerstedivisie",
+  "fuente": "roster cacheado de \"2024–25 Eerste Divisie\" (tools/club-league-reference/nl.json), coincidencia exacta \"Eindhoven\"",
+  "estado": "ok"
  },
  "procedencia": {
   "anio": {
@@ -721,9 +720,9 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "coincidencia NO exacta en los rosters cacheados: \"PSV Eindhoven\" en 2024–25 Eredivisie | \"Eindhoven\" en 2024–25 Eerste Divisie",
-   "estado": "pendiente"
+   "valor": "nl-eerstedivisie",
+   "fuente": "roster cacheado de \"2024–25 Eerste Divisie\" (tools/club-league-reference/nl.json), coincidencia exacta \"Eindhoven\"",
+   "estado": "ok"
   }
  },
  "resumen": {
