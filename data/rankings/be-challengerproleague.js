@@ -25,6 +25,16 @@ window.RANKINGS["be-challengerproleague"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",0.331],["Otros ingresos",1.049]] },
     ],
   },
+  2024: {
+    leagueSize: null,
+    wiki: {"t":"2023–24 Challenger Pro League","lang":"en","at":"2026-10-19","n":16},
+    clubs: [
+      { id:"beerschot-be", revenue:10.109, reportType:"official_balance_sheet",
+        sourceId:"beerschot-be-jaarrekening-2024-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",6.582],["Otros ingresos",3.527]],
+        incluidos:[["Comercial / Sponsors","Fútbol profesional (sin desglosar por la fuente)",1],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+    ],
+  },
   2019: {
     leagueSize: null,
     wiki: {"t":"2018–19 Belgian First Division B","lang":"en","at":"2026-10-19","n":8},
