@@ -84,6 +84,9 @@ window.RANKINGS["be-challengerproleague"] = {
       { id:"beerschot-be", revenue:7.643, reportType:"official_balance_sheet",
         sourceId:"beerschot-be-jaarrekening-2020-06-30-individual",
         mix:[["Comercial / Sponsors",2.303],["Estadio",2.454],["Televisión",0.963],["Otros ingresos",1.922]] },
+      { id:"lommelsk-be", revenue:1.041, reportType:"official_balance_sheet",
+        sourceId:"lommelsk-be-jaarrekening-2020-06-30-individual",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",1.041]] },
     ],
   },
   2019: {

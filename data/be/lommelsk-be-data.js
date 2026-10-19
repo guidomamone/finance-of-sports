@@ -10,6 +10,9 @@ const lommelskbeRevenueLinesByYear = {
   2019: [
     { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations', amountNative:1.392528, disclosureLevel:'aggregated' },
   ],
+  2020: [
+    { rawLabel:'Brutomarge (+)/(-)', normalizedCategory:'lump_football_operations', amountNative:0.929507, disclosureLevel:'aggregated' },
+  ],
 };
 const lommelskbeExpenseLinesByYear = {
   2025: [
@@ -39,6 +42,14 @@ const lommelskbeExpenseLinesByYear = {
     { rawLabel:'Niet-recurrente bedrijfskosten', normalizedCategory:'exceptional_items', amountNative:-0.004888, disclosureLevel:'aggregated' },
     { rawLabel:'Afschrijvingen immateriële vaste activa (spelers)', normalizedCategory:'player_amortisation', amountNative:-0.519, disclosureLevel:'aggregated' },
     { rawLabel:'Afschrijvingen materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.003511, disclosureLevel:'aggregated' },
+  ],
+  2020: [
+    { rawLabel:'Bezoldigingen, sociale lasten en pensioenen (+)/(-)', normalizedCategory:'wages_squad', amountNative:-2.346805, disclosureLevel:'aggregated' },
+    { rawLabel:'Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)', normalizedCategory:'other_expenses', amountNative:-0.002, disclosureLevel:'aggregated' },
+    { rawLabel:'Andere bedrijfskosten', normalizedCategory:'other_expenses', amountNative:-0.045191, disclosureLevel:'aggregated' },
+    { rawLabel:'Niet-recurrente bedrijfskosten', normalizedCategory:'exceptional_items', amountNative:-0.02025, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen immateriële vaste activa (spelers)', normalizedCategory:'player_amortisation', amountNative:-0.594133, disclosureLevel:'aggregated' },
+    { rawLabel:'Afschrijvingen materiële vaste activa', normalizedCategory:'depreciation', amountNative:-0.025856, disclosureLevel:'aggregated' },
   ],
 };
 const lommelskbeFiscalYearMeta = {
@@ -93,6 +104,25 @@ const lommelskbeFiscalYearMeta = {
     grossDebt:null, cash:null,
     officialTotalRevenue:1.392528, officialTotalExpenses:2.169944, officialPAT:-0.780604,
   },
+  2020: {
+    currency:'EUR', fxRef:'EUR@2020-06-30',
+    sourceId:'lommelsk-be-jaarrekening-2020-06-30-individual',
+    reportType:'official_balance_sheet',
+    gestionId:null,
+    profitOnPlayerSales:0, assetSales:0,
+    netInterest:1.328573, tax:0.00274,
+    extraRows: [
+      {label:'Recurrente financiële opbrengsten', value:0.034482},
+      {label:'Niet-recurrente financiële opbrengsten', value:1.336104},
+      {label:'Recurrente financiële kosten', value:-0.042013},
+      {label:'Belastingen op het resultaat (+)/(-)', value:0.00274},
+    ],
+    sinDesglose: [
+      {renglon:'Brutomarge (+)/(-)', lado:'revenue', importe:0.929507, motivo:'el documento no desglosa este renglón'},
+    ],
+    grossDebt:null, cash:null,
+    officialTotalRevenue:0.929507, officialTotalExpenses:3.013985, officialPAT:-0.773415,
+  },
 };
 const lommelskbePresupuestoOverlayByYear = {};
 
@@ -122,6 +152,11 @@ Object.assign(sources, {
   'lommelsk-be-jaarrekening-2019-06-30-individual': {
     id:'lommelsk-be-jaarrekening-2019-06-30-individual', clubId:'lommelsk-be',
     title:'Voetbalclub Lommel SK NV — jaarrekening-2019-06-30-individual (ejercicio 2019)',
+    type:'official_balance_sheet', reliability:'primary',
+  },
+  'lommelsk-be-jaarrekening-2020-06-30-individual': {
+    id:'lommelsk-be-jaarrekening-2020-06-30-individual', clubId:'lommelsk-be',
+    title:'Voetbalclub Lommel SK NV — jaarrekening-2020-06-30-individual (ejercicio 2020)',
     type:'official_balance_sheet', reliability:'primary',
   },
 });
