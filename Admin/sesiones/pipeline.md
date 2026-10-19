@@ -520,3 +520,8 @@ netInterest 0,008445 (las filas suman 8.445 NOK; el estado imprime 8 446, redond
 PUBLICADO con el defecto: `data/no/sarpsborg08-no-data.js` L573-588 tiene netInterest 2,634615, tax −21,607717 (fila "Impuesto deducido por ajuste manual") y officialPAT 0,000019
 en vez de 18,981564. Corrección propuesta (a confirmar con Guido; es un año público): netInterest 0,008445; tax 0 y sin la fila "Impuesto"; officialPAT 18,981564
 (ingresos 146,545052 − gastos 127,571931 + 0,008445 = 18,981566 contra 18,981564 impreso).
+
+**Sarpsborg 08 2023 corregido (Guido, 2026-10-19).** `data/no/sarpsborg08-no-data.js` 2023: netInterest 2,634615 → 0,008445; tax −21,607717 → 0 y sin la fila "Impuesto
+(deducido…)"; officialPAT 0,000019 → 18,981564 (ingresos 146,545052 − gastos 127,571931 + 0,008445 = 18,981566 contra 18,981564 impreso). Mismas convenciones que sus otros años
+(netInterest = Netto finans con su signo, tax 0). Verificado en el navegador local con `?audit=1`: `auditAll()` 312 clubes, 3.056 checks OK, 0 que no cierran, 0 de tipo de cambio;
+`audit.js` P0 0 / P1 0. ASSET_V 1394 → 1395 y páginas de fuentes regeneradas.
