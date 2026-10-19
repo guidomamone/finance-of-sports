@@ -74,6 +74,15 @@ window.RANKINGS["be-challengerproleague"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",1.839]] },
     ],
   },
+  2020: {
+    leagueSize: null,
+    wiki: {"t":"2019–20 Belgian First Division B","lang":"en","at":"2026-10-19","n":8},
+    clubs: [
+      { id:"beerschot-be", revenue:7.643, reportType:"official_balance_sheet",
+        sourceId:"beerschot-be-jaarrekening-2020-06-30-individual",
+        mix:[["Comercial / Sponsors",2.303],["Estadio",2.454],["Televisión",0.963],["Otros ingresos",1.922]] },
+    ],
+  },
   2019: {
     leagueSize: null,
     wiki: {"t":"2018–19 Belgian First Division B","lang":"en","at":"2026-10-19","n":8},

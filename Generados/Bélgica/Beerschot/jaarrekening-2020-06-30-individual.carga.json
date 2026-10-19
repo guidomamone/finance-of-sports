@@ -1,17 +1,9 @@
 {
  "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2020-06-30-individual.pdf",
- "generado": "2026-10-19T14:46:21.487Z",
- "frena": [
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios en 2020: pregunta en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "perfil-en-cola",
-   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes en 2020: pregunta en la cola humana (node tools/cola.mjs)"
-  }
- ],
+ "generado": "2026-10-19T14:54:32.490Z",
+ "frena": [],
  "avisos": [
+  "\"Cuotas sociales\" en 0: real, por el ajuste cero-real del club (jaarrekening-2025-06-30-individual.pdf, 2026-10-18) y ningún año cargado la tiene con monto",
   "gastos: ningún total impreso igual a la suma de las líneas (-11.03747); queda la suma, verificada por el resultado del ejercicio"
  ],
  "ejercicio": {
@@ -658,8 +650,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 2,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 5,
   "lineasGasto": 12,
   "metaFilas": 5,

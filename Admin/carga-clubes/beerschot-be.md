@@ -162,7 +162,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-19): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022, 2025): Comercial / Sponsors, Estadio, Televisión
+tools/dentro-de-otro.mjs (2026-10-19): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2020, 2021, 2022, 2025): Comercial / Sponsors, Estadio, Televisión
 ```
 
 ### Liga
@@ -268,6 +268,52 @@ tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs
 tools/cargar.mjs (2026-10-19): be-proleague, verificado contra roster cacheado de "2020–21 Belgian First Division A" (tools/club-league-reference/be.json), coincidencia exacta "Beerschot".
 ```
 
+## 2020
+
+### Ingresos
+
+```text
+2020: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Bélgica/Beerschot/jaarrekening-2020-06-30-individual.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Bélgica/Beerschot/jaarrekening-2020-06-30-individual.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Ticketing & abonnementen | pág. 21, Claude 0.95 |
+| 2 | Sponsoring | pág. 21, precedente |
+| 3 | TV rechten | pág. 21, precedente |
+| 4 | Commercieel | pág. 21, precedente |
+| 5 | Andere bedrijfsopbrengsten | pág. 8, precedente |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Aankopen | pág. 8, precedente |
+| 2 | Voorraad: afname (toename) (+)/(-) | pág. 8, precedente |
+| 3 | Diensten en diverse goederen | pág. 8, precedente |
+| 4 | Bezoldigingen en rechtstreekse sociale voordelen | pág. 21, precedente |
+| 5 | Werkgeversbijdragen voor sociale verzekeringen | pág. 21, precedente |
+| 6 | Andere personeelskosten | pág. 21, precedente |
+| 7 | Bedrijfsbelastingen en -taksen | pág. 21, precedente |
+| 8 | Andere | pág. 21, precedente |
+| 9 | Niet-recurrente bedrijfskosten | pág. 8, precedente |
+| 10 | Afschrijvingen immateriële vaste activa (spelers) | pág. 8, precedente |
+| 11 | Afschrijvingen goodwill | pág. 8, precedente |
+| 12 | Afschrijvingen materiële vaste activa | pág. 8, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): be-challengerproleague, verificado contra roster cacheado de "2019–20 Belgian First Division B" (tools/club-league-reference/be.json), coincidencia exacta "Beerschot".
+```
+
 ## 2019
 
 ### Ingresos
@@ -309,7 +355,7 @@ sinDesglose: líneas que el documento no desglosa (categoría "sin desglosar por
 ```
 
 ```text
-tools/dentro-de-otro.mjs (2026-10-19): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2021, 2022, 2025): Comercial / Sponsors, Estadio, Televisión
+tools/dentro-de-otro.mjs (2026-10-19): posiblemente dentro de otro rubro, por precedente del club (la fila tiene plata en sus balances desglosados 2020, 2021, 2022, 2025): Comercial / Sponsors, Estadio, Televisión
 ```
 
 ### Liga
@@ -358,4 +404,12 @@ _note (cargar.mjs):_
 
 ```text
 Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Beerschot/jaarrekening-2024-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
+```
+
+### beerschot-be-jaarrekening-2020-06-30-individual
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Bélgica/Beerschot/jaarrekening-2020-06-30-individual.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```

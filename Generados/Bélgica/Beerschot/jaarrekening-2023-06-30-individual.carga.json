@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Bélgica/Beerschot/jaarrekening-2023-06-30-individual.pdf",
- "generado": "2026-10-19T14:46:21.771Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Niet-recurrente afschrijvingen en waarde\" -> exceptional_items 0.55"
-  }
- ],
+ "generado": "2026-10-19T14:54:32.763Z",
+ "frena": [],
  "avisos": [
   "\"Cuotas sociales\" en 0: real, por el ajuste cero-real del club (jaarrekening-2025-06-30-individual.pdf, 2026-10-18) y ningún año cargado la tiene con monto",
   "gastos: ningún total impreso igual a la suma de las líneas (-12.726566); queda la suma, verificada por el resultado del ejercicio"
@@ -195,9 +190,9 @@
     "amountNative": -0.147979,
     "disclosureLevel": "aggregated",
     "_pag": 28,
-    "_escalon": 2,
-    "_conf": 0.55,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Minderwaarden bij de realisatie van immateriële en materiële vaste activa",
@@ -541,11 +536,11 @@
    "origen": "verificacion (nota que desglosa \"Niet-recurrente bedrijfskosten\")",
    "signoFijo": 0.147979,
    "cat": "exceptional_items",
-   "conf": 0.55,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19 (subagente Sonnet, revisado)",
    "destino": "expense",
    "amountNative": -0.147979
   },
@@ -692,8 +687,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 6,
   "lineasGasto": 13,
   "metaFilas": 4,
