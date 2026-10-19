@@ -258,3 +258,6 @@ aviso a la principal con el comando que haga falta. No se mergea main en la rama
   sacan corriendo `primer-anio-ia --ejecutar` y la etapa 5 de St. Gallen (centavos).
 
 ## Después del merge de la y4 (2026-10-19)
+- **Los 5 ajustes se quedan** (Onboarding 2, 2026-10-19: los años ya están cargados bien; no se contestó ni recategorizó nada en main después
+  de la carga). Anotado en Admin/HALLAZGOS-pipeline.md, "Conocido, sin daño hoy": se sacan solo si hay que recargar esos años por otro
+  motivo. Con esto la y4 queda cerrada.

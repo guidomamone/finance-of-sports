@@ -133,6 +133,11 @@ detalle de cada medición está en `Admin/CHANGELOG.md`. El proceso vigente est�
   Admin/mediciones/perimetro-a2-medicion-recorte-232e.txt. El contexto alrededor de los títulos le sirve a Claude para ubicar el estado.
 
 ## Conocido, sin daño hoy (no se trabaja salvo que algo cambie)
+- **5 ajustes `fila` que la 298 y ya no necesita se quedan (to-do 298 y4, 2026-10-19; Guido y Onboarding 2).** Fredrikstad 2024 (acta 2025,
+  L1064 y L1077) y St. Gallen 2024-25 (L261, L330 y L403). Sin ellos los números dan iguales, pero los dos años frenan: Fredrikstad vuelve a
+  abrir "primer-anio" (la respuesta guardada de `primer-anio-ia` está atada a la huella del pedido) y St. Gallen deja el `.categorias.json`
+  viejo por huellas. Se quedan porque destrabarlos cuesta más que lo que limpia. Sacarlos solo si alguna vez hay que recargar esos años por
+  otro motivo (y ahí correr `primer-anio-ia --ejecutar` y la etapa 5).
 - **Paso A de perimetro-senales en estonio (to-do 298 d, 2026-10-18): probado, no entra.** Con "Kokku tulud" como total, los números
   "1 922 401,00" y "konsolideeritud" como título consolidado, las dos verdades (102 y 202 documentos) dan idénticas, pero los informes
   estonios con dos estados siguen sin voto: su total de ingresos dice "Kokku" a secas, igual que el total del activo, del pasivo y del flujo.
