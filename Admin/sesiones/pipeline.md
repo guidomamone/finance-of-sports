@@ -454,3 +454,9 @@ write. Medido: `gasto.mjs --json | wc -c` = 327.687 y parsea; `audit.js --json |
 Otros `--json` con process.exit (paginas-con-numeros, companies-house-fetch, perfil-clubes) imprimen poco: no se tocaron. Para borrar el 301 del TODO.
 
 ## Después del merge del 301 (2026-10-19)
+
+**302 (commit d26d44f3ac).** `fetch-fx-reference.mjs --deflactores`: USD sale de `apps.bea.gov/national/Release/TXT/NipaDataA.txt` (serie
+`A191RD`, ~12 MB, sin key) en vez de FRED. Medido: los 31 valores 1995-2025 salen idénticos; `data/deflactores.js` solo cambió el texto de
+`fuente`; EUR (Eurostat) sin cambios. Como cambió `data/`, el commit pidió subir ASSET_V (1377 → 1378 en `index.html`: constante y 31 `?v=`) y
+regenerar las páginas de fuentes (`node tools/generate-fuentes-page.js`: 318 archivos, solo el `?v=`). Si main también subió ASSET_V, queda
+un choque trivial en `index.html` y en `fuentes/`: se resuelve regenerando. Para borrar el 302 del TODO.
