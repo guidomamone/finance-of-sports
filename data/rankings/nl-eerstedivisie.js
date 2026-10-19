@@ -17,6 +17,9 @@ window.RANKINGS["nl-eerstedivisie"] = {
       { id:"fcdenbosch-nl", revenue:6.493, reportType:"official_balance_sheet",
         sourceId:"fcdenbosch-nl-wf-2024-2025-c4a5aec0",
         mix:[["Venta de Jugadores",0.476],["Fútbol profesional (sin desglosar por la fuente)",6.017]] },
+      { id:"helmondsport-nl", revenue:6.25, reportType:"official_balance_sheet",
+        sourceId:"helmondsport-nl-wf-2024-2025-4ef6ca45",
+        mix:[["Venta de Jugadores",0.231],["Fútbol profesional (sin desglosar por la fuente)",6.019]] },
     ],
   },
 };

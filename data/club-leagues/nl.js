@@ -20,4 +20,5 @@ Object.assign(window.CLUB_LEAGUE_BY_YEAR, {
   'fctwente-nl': { 2025: 'nl-eredivisie' },
   'fcutrecht-nl': { 2025: null },
   'fcvolendam-nl': { 2025: 'nl-eerstedivisie' },
+  'helmondsport-nl': { 2025: 'nl-eerstedivisie' },
 });
