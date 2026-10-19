@@ -1,6 +1,6 @@
 {
  "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2018.pdf",
- "generado": "2026-10-19T11:11:27.531Z",
+ "generado": "2026-10-19T11:14:41.053Z",
  "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del documento, 2026-10-18: perimetro-senales.mjs: el ejercicio 2018-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 15 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)"
@@ -357,10 +357,9 @@
   "label": "Tipo medio de referencia de Norges Bank al 2018-12-31"
  },
  "liga": {
-  "valor": null,
-  "fuente": "el roster \"2018 Norwegian Second Division\" lo ubica en 'no-2divisjon', que NO está en el catálogo de data/leagues.js",
-  "estado": "pendiente",
-  "nota": "fila en null hasta decidir: el club jugó 2018 en 'no-2divisjon' (2018 Norwegian Second Division), liga que no está en el catálogo. ¿Se agrega al catálogo o la fila va como 'liga-no-catalogada'? (decisión de Guido, por liga)"
+  "valor": "no-2divisjon",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
  },
  "procedencia": {
   "anio": {
@@ -399,9 +398,9 @@
    "estado": "ok"
   },
   "liga": {
-   "valor": null,
-   "fuente": "el roster \"2018 Norwegian Second Division\" lo ubica en 'no-2divisjon', que NO está en el catálogo de data/leagues.js",
-   "estado": "pendiente"
+   "valor": "no-2divisjon",
+   "fuente": "data/club-leagues/no.js ya tiene la fila",
+   "estado": "ok"
   }
  },
  "resumen": {

@@ -28,4 +28,13 @@ window.RANKINGS["no-1divisjon"] = {
         mix:[["Fútbol profesional (sin desglosar por la fuente)",3.921]] },
     ],
   },
+  2013: {
+    leagueSize: null,
+    wiki: {"t":"2013 Norwegian First Division","lang":"en","at":"2026-10-19","n":16},
+    clubs: [
+      { id:"fredrikstad-no", revenue:2.561, reportType:"official_balance_sheet",
+        sourceId:"fredrikstad-no-aarsregnskap-fotballklubb-fli-2013",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",2.561]] },
+    ],
+  },
 };

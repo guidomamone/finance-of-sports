@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2018.pdf",
  "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2018.md",
- "generado": "2026-10-19T11:11:25.061Z",
+ "generado": "2026-10-19T11:14:38.910Z",
  "estado": "ok",
  "clubId": "fredrikstad-no",
  "year": 2018,
@@ -46,19 +46,14 @@
    "dif": 0.0000010000000025822686
   },
   {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2017 de este documento suma ingresos 28.452409; el sitio tiene 28.452409"
+  },
+  {
    "nombre": "documento del año 2017",
    "ok": true,
    "detalle": "ingresos de 2017: 28.452409 en aarsregnskap-fotballklubb-fli-2017.pdf y 28.452409 en este documento (columna del año anterior)"
-  },
-  {
-   "nombre": "año anterior cargado",
-   "ok": null,
-   "detalle": "el sitio no tiene 2017: este chequeo no se puede hacer"
-  },
-  {
-   "nombre": "primer año",
-   "ok": true,
-   "detalle": "ingresos, gastos y resultado coinciden con lo impreso a 0,01% o menos: no hace falta la revisión del primer año (to-do 214)"
   }
  ],
  "notas": [

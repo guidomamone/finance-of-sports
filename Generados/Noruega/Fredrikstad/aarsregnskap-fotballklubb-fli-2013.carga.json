@@ -1,12 +1,7 @@
 {
  "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2013.pdf",
- "generado": "2026-10-19T11:11:27.081Z",
- "frena": [
-  {
-   "etapa": "categoria-en-cola",
-   "motivo": "1 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Salgsinntekt\" -> lump_football_operations 0.6"
-  }
- ],
+ "generado": "2026-10-19T11:14:40.804Z",
+ "frena": [],
  "avisos": [
   "perímetro: individual (ajuste manual del documento, 2026-10-18: perimetro-senales.mjs: el ejercicio 2013-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 15 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)"
  ],
@@ -22,9 +17,9 @@
     "amountNative": 14.289455,
     "disclosureLevel": "aggregated",
     "_pag": 2,
-    "_escalon": 2,
-    "_conf": 0.6,
-    "_fuenteCat": "categorias.json"
+    "_escalon": 0,
+    "_conf": 1,
+    "_fuenteCat": "respuesta de Guido en la cola"
    },
    {
     "rawLabel": "Annen driftsinntekt",
@@ -134,7 +129,7 @@
      "renglon": "Salgsinntekt",
      "lado": "revenue",
      "importe": 14.289455,
-     "motivo": "el documento no desglosa este renglón"
+     "motivo": "Claude 2026-10-19: mismo criterio que el FLI 2024 ya cargado (Annen driftsinntekt -> lump_football_operations)"
     },
     {
      "renglon": "Annen driftsinntekt",
@@ -199,11 +194,11 @@
    "origen": "verificacion (estado)",
    "signoFijo": 14.289455,
    "cat": "lump_football_operations",
-   "conf": 0.6,
-   "escalon": 2,
-   "fuenteCat": "categorias.json",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
    "enLista": true,
-   "enCola": true,
+   "notaGuido": "Claude 2026-10-19: mismo criterio que el FLI 2024 ya cargado (Annen driftsinntekt -> lump_football_operations)",
    "destino": "revenue",
    "amountNative": 14.289455
   },
@@ -441,8 +436,8 @@
   }
  },
  "resumen": {
-  "carga": false,
-  "motivos": 1,
+  "carga": true,
+  "motivos": 0,
   "lineasIngreso": 2,
   "lineasGasto": 7,
   "metaFilas": 2,
