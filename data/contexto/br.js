@@ -41,6 +41,7 @@ Object.assign(window.CLUB_CONTEXT, {
   },
   'botafogosp-br': {
     2024: {"estadio":"Santa Cruz","capacidad":29292,"sponsor":"EstrelaBet, Nicnet","marca":"Volt Sport","temporada":"2024 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377693248"},
+    2025: {"estadio":"Santa Cruz","capacidad":29292,"sponsor":"HanzBet","marca":"Volt Sport","temporada":"2025 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378221996"},
   },
   'ceara-br': {
     2024: {"estadio":"Castelão","capacidad":63903,"sponsor":"Esportes da Sorte, Matrix Energia","marca":"Vozão (club manufactured kit)","temporada":"2024 Campeonato Brasileiro Série B","fuente":"https://en.wikipedia.org/w/index.php?oldid=1377693248"},

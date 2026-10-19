@@ -169,6 +169,89 @@ _de data/club-leagues/br.js:_
 17° lugar
 ```
 
+## 2025
+
+### Ingresos
+
+```text
+2025: cargado por tools/cargar.mjs (2026-10-19) desde Clubes/Brasil/Botafogo-SP/demonstracoes-contabeis-2024-2025.md. Filas: proponer-carga.mjs (ancla-listas); categorías:
+Generados/Brasil/Botafogo-SP/demonstracoes-contabeis-2024-2025.categorias.json (escalón de cada fila en la tabla). Tie-out contra lo impreso: ingresos "total de ingresos (verificado)" pág. null; gastos "total de gastos (verificado)" pág. null; resultado "resultado detectado por proponer-carga".
+```
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Cotas de Participação (i) | pág. 26, precedente |
+| 2 | Patrocínios e Parcerias (ii) | pág. 26, Jev 1 |
+| 3 | Sócio Torcedor (iii) | pág. 26, precedente |
+| 4 | Transação de Atletas | pág. 26, precedente |
+| 5 | Arrecadação de Jogos (iv) | pág. 26, precedente |
+| 6 | Receita com Eventos e Shows | pág. 26, precedente |
+| 7 | Receita de Aluguel – (v) | pág. 26, precedente |
+| 8 | Direito de Transmissão | pág. 26, precedente |
+| 9 | Impostos Incidentes sobre Receitas (TEF) | pág. 26, precedente |
+| 10 | Despesas Sócio Torcedor | pág. 26, precedente |
+| 11 | Repasse de Arrecadação de Jogos | pág. 26, precedente |
+| 12 | Outros Receitas (Despesas) Operacionais | pág. 5, Jev 0.98 |
+
+### Gastos
+
+| Fila | Rubro | Nota |
+|---|---|---|
+| 1 | Salários | pág. 27, precedente |
+| 2 | Direito de Imagem | pág. 27, precedente |
+| 3 | Férias | pág. 27, precedente |
+| 4 | INSS e FGTS | pág. 27, precedente |
+| 5 | Prêmios e Gratificações | pág. 27, precedente |
+| 6 | 13º Salário | pág. 27, precedente |
+| 7 | Alimentação | pág. 27, precedente |
+| 8 | Assistência Médica Odontológica | pág. 27, precedente |
+| 9 | Amortização de Direito de Jogadores | pág. 27, precedente |
+| 10 | Luvas e Comissões Contratuais | pág. 27, Claude 0.8 |
+| 11 | Ajuda de Custo | pág. 27, precedente |
+| 12 | Cessão de Atletas e Empréstimos | pág. 27, precedente |
+| 13 | Outros Custos | pág. 27, precedente |
+| 14 | Custos com Campeonato Estadual | pág. 27, precedente |
+| 15 | Custos com Campeonato Nacional | pág. 27, precedente |
+| 16 | Custos com Futebol Base | pág. 27, precedente |
+| 17 | Outros Custos com Futebol | pág. 27, precedente |
+| 18 | Custos com Eventos e Shows | pág. 27, precedente |
+| 19 | Salários | pág. 28, precedente |
+| 20 | INSS e FGTS | pág. 28, precedente |
+| 21 | Férias | pág. 28, precedente |
+| 22 | 13º Salário | pág. 28, precedente |
+| 23 | Alimentação | pág. 28, precedente |
+| 24 | Processos e Indenizações Trabalhistas | pág. 28, Jev 0.9 |
+| 25 | Outras Despesas | pág. 28, precedente |
+| 26 | Bens de Pequeno Valor | pág. 28, precedente |
+| 27 | Contingências | pág. 28, precedente |
+| 28 | Energia Elétrica | pág. 28, precedente |
+| 29 | Manutenção | pág. 28, precedente |
+| 30 | Material de Escritório, Limpeza e Consumo | pág. 28, precedente |
+| 31 | Publicidade e Propaganda | pág. 28, precedente |
+| 32 | Serviços de Terceiros | pág. 28, precedente |
+| 33 | Sócio Torcedor | pág. 28, precedente |
+| 34 | Despesas com Aluguéis | pág. 28, precedente |
+| 35 | Despesas com Alimentação | pág. 28, precedente |
+| 36 | Outras Despesas | pág. 28, precedente |
+| 37 | ICMS | pág. 28, precedente |
+| 38 | Juros Fiscais | pág. 28, precedente |
+| 39 | Impostos Municipais | pág. 28, precedente |
+| 40 | Taxas Diversas | pág. 28, precedente |
+| 41 | Amortização de Direito de Uso | pág. 29, precedente |
+| 42 | Depreciações | pág. 29, precedente |
+
+### Meta
+
+```text
+tools/cargar.mjs (2026-10-19). grossDebt/cash: los completa tools/caja-deuda.mjs después de cargar (null = sin dato todavía). netInterest/tax: filas de resultado financiero / impuesto del estado.
+```
+
+### Liga
+
+```text
+tools/cargar.mjs (2026-10-19): br-serieB, verificado contra roster cacheado de "2025 Campeonato Brasileiro Série B" (tools/club-league-reference/br.json), coincidencia exacta "Botafogo-SP".
+```
+
 ## 2024
 
 ### Meta
@@ -204,6 +287,14 @@ _note (data/):_
 
 ```text
 PDF oficial (texto nativo), descargado del portal institucional de la SAF (botafogofutebolsa.com.br). DRE auditada con 8 notas de desglose (21-28) — ver comentario de cabecera de data/br/botafogosp-br-data.js. Prejuízo real de R$3.543.877 (2024), después de un lucro de R$906.642 en 2023. Patrimônio líquido negativo (R$-27.924.832 al cierre 2024). Convertido a USD con PTAX BCB de cierre 31/12/2024 (R$6,1923). Transcripción completa en Clubes/Brasil/Botafogo-SP/demonstracoes-contabeis-2023-2024.md. El mismo archivo fuente también cubre 2019/2020 y 2022/2023 (NO cargados en esta sesión, ver nota de alcance de cabecera).
+```
+
+### botafogosp-br-demonstracoes-contabeis-2024-2025
+
+_note (cargar.mjs):_
+
+```text
+Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Brasil/Botafogo-SP/demonstracoes-contabeis-2024-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual.
 ```
 
 ## Otros
