@@ -160,6 +160,10 @@ const ANCLA = new RegExp([
   'bestätigungsvermerk', 'revisionsstelle', 'prüfungsurteil', 'bericht der revisionsstelle', 'eingeschränkt',
   'controleverklaring', 'oordeel', 'continuïteit', 'revisors beretning', 'uavhengig revisor', 'fortsatt drift', 'konklusion',
   'έκθεση ελέγχου', 'γνώμη', 'ορκωτ', 'аудиторское заключение', 'мнение', '監査報告', '意見',
+  // (to-do 282 g, ok de Guido 2026-10-18) estonio, del criterio de Finanzas (Generados/auditoria/_criterio-ee.md): "SÕLTUMATU VANDEAUDIITORI
+  // ARUANNE", la opinión, con salvedades, adverso, abstención, continuidad y énfasis. Medido: 43 de 66 .md estonios con extracto (antes 0),
+  // los 43 con línea "sin_salvedades"; los 23 sin ninguna mención de auditoría siguen "sin frases" (los "sin_informe").
+  'vandeaudiitor', 'meie arvates', 'märkusega arvamus', 'vastupidine arvamus', 'arvamuse avaldamisest loobumine', 'tegevuse jätkuvus', 'asjaolu rõhutamine',
 ].join('|') + '|' + REDES.map(([re]) => re.source).join('|'), 'i');
 function extracto(mds) {
   const partes = [];

@@ -92,3 +92,12 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
 
 - Las ligas belgas de ascenso y amateur: "Sí: que el lote guarde las listas belgas de ascenso y amateur aunque eso les arme faltantes y
   estimados en Ligas." No cambia nada en las tools (es lo que ya hace `lote.mjs --cargar`).
+
+### 282 g: el informe del auditor en estonio (ok de Guido 2026-10-18)
+
+- **Qué cambió (para CHANGELOG):** `tools/auditoria.mjs` (ANCLA de `--extractos`) suma 7 frases estonias del criterio de Finanzas:
+  "vandeaudiitor", "meie arvates", "märkusega arvamus", "vastupidine arvamus", "arvamuse avaldamisest loobumine", "tegevuse jätkuvus",
+  "asjaolu rõhutamine". Medido (gratis): de 66 `.md` estonios, 43 con extracto (antes 0), y son los 43 con línea "sin_salvedades"; los 23
+  sin ninguna mención de auditoría (los 15 "sin_informe" y los 7 de Pärnu Vaprus, que no está en el sitio) siguen "sin frases". Ninguna de
+  las frases aparece en `.md` de otros países: sus extractos no cambian. Auditoría P0 0 / P1 0.
+- **Qué queda (para TODO):** la 282 g, hecha.
