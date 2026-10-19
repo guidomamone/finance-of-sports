@@ -11,3 +11,5 @@
 Ficha financiera de WorldFootball (`worldfootball.com/financials`, sección «Financial history» del club): 4 PDF de WorldFootball (`wf-<temporada>-<hash>.pdf`: temporadas 2022-2023, 2023-2024, 2024-2025; `wf-src-*`: 1 documentos del propio club enlazados desde la ficha). Son espejos de los informes oficiales publicados por el club o la liga (fuente secundaria, `secondary_mirror`); el nombre `wf-<temporada>-<hash8>` lleva el hash del archivo. Los documentos de liga (iguales para varios clubes) están en `_WorldFootball-documentos-de-liga/` del país. Sin transcribir ni cargar.
 
 - Último chequeo: 2026-10-08.
+
+- Cargado en el sitio por tools/cargar.mjs (2026-10-19): ejercicio 2024 desde `Clubes/Países Bajos/Vitesse/wf-2023-2024-be6334b7.pdf` (sourceId `vitesse-nl-wf-2023-2024-be6334b7`).

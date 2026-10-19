@@ -298,6 +298,7 @@ window.CLUB_INDEX = {
   "vilanova-br": {"n":"Vila Nova","c":"BR","q":"full","y":9,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"],[2017,"official_balance_sheet"],[2016,"official_balance_sheet"],[2015,"official_balance_sheet"],[2014,"official_balance_sheet"]]},
   "villarrealcf": {"n":"Villarreal CF","c":"ES","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "visselkobe": {"n":"Vissel Kobe","c":"JP","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
+  "vitesse-nl": {"n":"Vitesse","c":"NL","q":"full","y":1,"last":2024,"yrs":[[2024,"official_balance_sheet"]]},
   "vitoria-br": {"n":"Vitória","c":"BR","q":"full","y":1,"last":2025,"yrs":[[2025,"official_balance_sheet"]]},
   "vitoriaguimaraes-pt": {"n":"Vitória Guimarães","c":"PT","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2022,"official_balance_sheet"],[2021,"official_balance_sheet"]]},
   "vizela-pt": {"n":"Vizela","c":"PT","q":"full","y":4,"last":2025,"yrs":[[2025,"official_balance_sheet"],[2024,"official_balance_sheet"],[2023,"official_balance_sheet"],[2022,"official_balance_sheet"]]},
