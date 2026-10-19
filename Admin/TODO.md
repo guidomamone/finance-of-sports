@@ -263,9 +263,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 308. NOMBRAR EN LA SKILL club-data-mapping EL CRITERIO DE LOS BONOS CONVERTIBLES (con ok de Guido: es una skill). Ya está en
    CONVENCIONES-DATOS; la skill tiene que decirlo donde habla de deuda.
 310. CAJA Y DEUDA DE UN AÑO SIN VECINO (pedido de Guido, 2026-10-18; cierre de pipeline). La caja de un año sin vecino ya se acepta
-   si está en un balance del documento que cuadra, en cualquier país (parte 1, 2026-10-19; la condición del "mayor activo" se sacó porque
-   no la había pedido Guido). Pendiente de Guido: Udinese 2022 entra como distinto (0,17 M contra 44,18 M: la pág. 32 es el balance de una
-   entidad chica). Falta: (2) la deuda belga, con criterio a decidir (¿el 42 entra?; Union SG tiene 31,66 M cargados y 7,62 M por códigos
+   en cualquier país con tres votos (balance que cuadra, mayor activo y cifra repetida; elección de Guido, 2026-10-19). Falta: (2) la deuda belga, con criterio a decidir (¿el 42 entra?; Union SG tiene 31,66 M cargados y 7,62 M por códigos
    financieros); (3) OH Leuven y los documentos cuyo .md no trae la columna de códigos. Si caja-deuda vuelve a atar un valor al año
    equivocado (Tallinna Kalev en onboarding), mirar qué `.md` devolvió `mdDeFuente`.
 309. TAMAÑO DE LIGA DESDE LA LISTA DE WIKIPEDIA (cierre de pantallas, a decidir con Guido). En 223 de los 227 liga-años con lista de

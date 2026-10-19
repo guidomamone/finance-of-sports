@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 806 — 310: la caja de un año sin vecino, con tres votos (2026-10-19)
+
+* `caja-deuda.mjs`: la caja de un año sin vecino entra con tres votos: balance que cuadra, mayor activo y cifra repetida (elección de
+  Guido). Udinese 2022 ya no entra con la caja de una entidad chica; caja 422 iguales y 7 distintos (los de antes), deuda idéntica.
+
 ## Versión 805 — Reino Unido: una sociedad por año; el 295 cerrado (2026-10-19)
 
 * 261 b: en los 7 pares con dos sociedades del mismo club y ejercicio entra la que el sitio ya publica; los `wf-*` de la otra sociedad,
