@@ -19,4 +19,14 @@ window.RANKINGS["no-eliteserien"] = {
         mix:[["Comercial / Sponsors",4.419],["Estadio",2.531],["Televisión",2.831],["Otros ingresos",0.123]] },
     ],
   },
+  2024: {
+    leagueSize: null,
+    wiki: {"t":"2024 Eliteserien","lang":"en","at":"2026-09-30","n":16},
+    clubs: [
+      { id:"fredrikstad-no", revenue:8.167, reportType:"official_balance_sheet",
+        sourceId:"fredrikstad-no-wf-src-ffk-arsmote-2025",
+        mix:[["Fútbol profesional (sin desglosar por la fuente)",8.167]],
+        incluidos:[["Cuotas Sociales","Fútbol profesional (sin desglosar por la fuente)"],["Estadio","Fútbol profesional (sin desglosar por la fuente)",1],["Televisión","Fútbol profesional (sin desglosar por la fuente)",1]] },
+    ],
+  },
 };
