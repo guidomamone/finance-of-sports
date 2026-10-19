@@ -290,6 +290,11 @@ Mitigaciones:
   contra completo), y el caso "primer año" no hace falta (cada código tiene un solo lado). Medido sobre prueba-completa + los 60 belgas
   con verificación: los 358 de otros países idénticos; en Bélgica 17 documentos pasan de cola a OK, ninguno de OK a cola, y la carga de
   los 10 años belgas publicados reproduce lo publicado (10 de 10, como antes). Ensayo gratis: `node tools/nbb.mjs "<archivo.md>"`.
+  El 630 por la nota (to-do 298 g, `partir630`): si los códigos "Geboekt" de la nota de activos fijos (8072/8079 pases, 8073 goodwill,
+  8271-8276/8279 materiales) suman EXACTO el 630, el 630 se reemplaza por esas partes, con los rótulos de los ajustes ya cargados
+  ("Afschrijvingen immateriële vaste activa (spelers)", "Afschrijvingen goodwill", "Afschrijvingen materiële vaste activa"); si no, queda
+  entero. No en un año ya publicado (sus filas son las que se categorizaron). Medido: 33 de 191 documentos belgas con 630 lo parten; en
+  prueba-completa + belgas, 25 documentos cambian de filas con los mismos totales y estados, y los 10 años publicados se reproducen.
   Escalón "de los cuales" (to-do 298 b3): una fila que empieza con "Waarvan:", "dont", "davon", "of which", "de los cuales"... (DE_LOS_CUALES
   de `tools/vocabulario.mjs`) es una parte de la de arriba. Si ninguna lectura cerró, se prueban la 4 y la 5 sin esas filas; compuerta,
   cierre EXACTO. Caso: el 76A belga debajo de la Brutomarge (Lierse SK y Patro Eisden 2025), que antes pedía un ajuste `fila` en 0.
