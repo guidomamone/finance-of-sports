@@ -48,6 +48,7 @@ const { loadSite } = await import('./datos-sitio.mjs');
 const { faltaAntesDeLocalizar } = await import('./antes-de-localizar.mjs');
 const { cacheAlDia, validacionAlDia, ubicacionAlDia } = await import('./cache-al-dia.mjs');
 const { gastoPorDocumento, lineasGasto } = await import('./gasto-doc.mjs');
+const { categoriasAlDia } = await import('./huellas.mjs');
 process.argv = argvAntes;
 
 const ROOT = resolve(import.meta.dirname, '..');
@@ -153,7 +154,8 @@ const sitio = loadSite(); // (Versión 442) antes del loop: "año ya cargado" mi
 // lo tiene: la propuesta puede ser de antes del ajuste. Caso: Sporting 2001 (relatorio-contas-2000.pdf), la propuesta vieja decía 2000 (el
 // nombre del archivo), 2000 está cargado y el lote lo salteaba como "ya en el sitio".
 const propuestaEnSitio = (e) => { const c = leerDerivado(e, '.carga.json'); const anio = ajusteDe(e.pdf, 'anio')?.valor ?? c?.year; return !!(c?.clubId && anio && sitio.generic?.[c.clubId]?.fiscalYearMeta?.[anio]); };
-let usd = 0; const estado = {}; const aRetranscribir = []; const aTextoPropio = []; const aFijar = [];
+// (to-do 298 q) `cotizados`: los que el ensayo cotiza para localizar o extraer; también van a categorizar
+let usd = 0; const estado = {}; const cotizados = new Set(); const aRetranscribir = []; const aTextoPropio = []; const aFijar = [];
 // Páginas interiores (sin las 2 primeras ni la última) con menos de 200 caracteres de texto propio: son imágenes.
 const paginasEnImagen = (pdf) => {
   const n = Number((spawnSync('pdfinfo', [resolve(ROOT, pdf)], { encoding: 'utf8' }).stdout.match(/Pages:\s+(\d+)/) || [])[1] || 0); const out = [];
@@ -274,7 +276,7 @@ for (const pdf of docs) {
   const candidatoAjuste = REINTENTAR && ubAntes && !ubAntes.intentoNotasConAjuste && (ubAntes.sin_estado || !(ubAntes.estado || []).length) && ajRes?.linea;
   if (candidatoNotas || candidatoAjuste) {
     const L3 = await localizar(pdf, { registro, perimetroClub, ejecutar: EJECUTAR, rehacer: true, notasComoEstado: true, pistaResultado: candidatoAjuste ? { valor: ajRes.valor, linea: ajRes.linea } : null });
-    if (L3.ensayo) { const EX = estimarExtraerSinBloques(pdf); usd += L3.usd + EX.usd; console.log(`  ${pdf}: sin estado, con notas: las notas hacen de estado (etapa 3, escalón 2${candidatoAjuste ? ', con la pista del ajuste manual' : ''}) · localizar ~US$ ${L3.usd.toFixed(3)} + extraer ${EX.texto}`); continue; }
+    if (L3.ensayo) { cotizados.add(pdf); const EX = estimarExtraerSinBloques(pdf); usd += L3.usd + EX.usd; console.log(`  ${pdf}: sin estado, con notas: las notas hacen de estado (etapa 3, escalón 2${candidatoAjuste ? ', con la pista del ajuste manual' : ''}) · localizar ~US$ ${L3.usd.toFixed(3)} + extraer ${EX.texto}`); continue; }
     if (L3.error) { estado[pdf] = `localizar (notas como estado): ${L3.error}`; continue; }
     usd += L3.costo || 0;
     if (L3.datos.sin_estado) { estado[pdf] = 'sin estado de resultados ni notas con resultado impreso (queda como fuente)'; console.log(`  ${pdf}: ${estado[pdf]}`); continue; }
@@ -342,7 +344,7 @@ for (const pdf of docs) {
     usd += L.costo || 0; estado[pdf] = 'reintento sin estado: queda la localización anterior'; console.log(`  ${pdf}: el reintento no encontró estado; queda la localización anterior (el intento, en .ubicacion-reintento.json)`);
     continue;
   }
-  if (L.ensayo) { const EX = estimarExtraerSinBloques(pdf); usd += L.usd + EX.usd; console.log(`  ${pdf}: ${enModoNotas ? 'reintento con las notas como estado: ' : ''}localizar ~US$ ${L.usd.toFixed(3)} + extraer ${EX.texto}`); continue; }
+  if (L.ensayo) { cotizados.add(pdf); const EX = estimarExtraerSinBloques(pdf); usd += L.usd + EX.usd; console.log(`  ${pdf}: ${enModoNotas ? 'reintento con las notas como estado: ' : ''}localizar ~US$ ${L.usd.toFixed(3)} + extraer ${EX.texto}`); continue; }
   if (L.error) { estado[pdf] = `localizar: ${L.error}`; continue; }
   usd += L.costo;
   if (L.datos.sin_estado) {
@@ -384,7 +386,7 @@ for (const pdf of docs) {
   else if (valVieja) console.log(`  ${pdf}: la validación es de otra versión del .md: se rehace validar (no localizar ni extraer)`);
   const V = await validar(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento || cacheViejo || ubVieja || valVieja }); usd += (EJECUTAR ? anotarValidar(pdf, V) : V.costo) || V.usd || 0;
   const X = await extraer(pdf, { registro, ejecutar: EJECUTAR, rehacer: REHACER || !!reintento || cacheViejo || ubVieja, reintento });
-  if (X.ensayo) { usd += X.usd; console.log(`  ${pdf}: localizar ya hecho · extraer ~US$ ${X.usd.toFixed(3)} (estimado)`); continue; }
+  if (X.ensayo) { cotizados.add(pdf); usd += X.usd; console.log(`  ${pdf}: localizar ya hecho · extraer ~US$ ${X.usd.toFixed(3)} (estimado)`); continue; }
   if (X.pendiente) { estado[pdf] = 'esperando la Batch API (extraer)'; console.log(`  ${pdf}: extraer pendiente de la Batch API`); continue; }
   usd += X.costo || 0;
   if (X.error) { estado[pdf] = `extraer: ${X.error}`; continue; }
@@ -399,7 +401,12 @@ const imprimirAFijar = () => {
 };
 if (!EJECUTAR) imprimirAFijar();
 avisoCorrecciones();
-if (!EJECUTAR) { const coma = (x) => x.toFixed(2).replace('.', ','); console.log(`\nEnsayo terminado, no se gastó nada. Correrlo cuesta ~US$ ${coma(usd + 0.03 * docs.length)} (localizar y extraer US$ ${coma(usd)} + categorización ~US$ 0,03 por documento + páginas escaneadas ~US$ 0,003 cada una). Para correrlo: agregá --ejecutar.`); process.exit(0); }
+// (to-do 298 q, ok de Guido 2026-10-19) LA CATEGORIZACIÓN DEL ENSAYO cuenta solo los documentos que van a llegar a categorizar (quedaron
+// "extraído" o el ensayo los cotiza para localizar o extraer; no testigos) y cuyo .categorias.json no está al día (huellas, tools/huellas.mjs: categoriasAlDia, la misma compuerta de
+// cargar.mjs). Antes cobraba US$ 0,03 por cada documento de la lista: los ya en el sitio, los sin .md y los que frenan antes de localizar.
+// Caso: lote 91, 26 años en el sitio y el resto ya categorizado, estimaba US$ 1,62.
+const aCategorizar = docs.filter((d) => (cotizados.has(d) || String(estado[d] || '').startsWith('extraído')) && !testigos.has(d) && !(() => { const e = registro.find((x) => x.pdf === d); try { return e?.md && categoriasAlDia(resolve(ROOT, e.md)); } catch { return false; } })());
+if (!EJECUTAR) { const coma = (x) => x.toFixed(2).replace('.', ','); console.log(`\nEnsayo terminado, no se gastó nada. Correrlo cuesta ~US$ ${coma(usd + 0.03 * aCategorizar.length)} (localizar y extraer US$ ${coma(usd)} + categorización ~US$ 0,03 por documento en ${aCategorizar.length} de ${docs.length}: los demás ya están en el sitio, categorizados al día o frenan antes + páginas escaneadas ~US$ 0,003 cada una). Para correrlo: agregá --ejecutar.`); process.exit(0); }
 
 console.log('\n=== 2/5 · Sumar y cruzar con lo impreso (etapa 6, gratis) ===');
 // startsWith (Versión 347): el escalón 1 de la etapa 2 deja 'extraído (re-transcripto con Mistral)'; con la igualdad exacta ese documento no

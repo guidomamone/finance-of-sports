@@ -530,7 +530,9 @@ Mitigaciones:
   Si la misma etiqueta tiene categorías distintas en el club, el precedente sin contexto no decide y se baja de escalón: "Remuneraciones"
   dentro del costo de ventas (sueldos del plantel) no se confunde con "Remuneración" dentro de gastos de administración. Dentro de un
   mismo documento, ver ETIQUETA REPETIDA arriba.
-- Tools: `glosar-rubros.mjs`, `jev-categorizar.mjs`, `categorizar-claude.mjs`, `memoria-categorias.mjs`. ~US$ 0,03 por documento.
+- Tools: `glosar-rubros.mjs`, `jev-categorizar.mjs`, `categorizar-claude.mjs`, `memoria-categorias.mjs`. ~US$ 0,03 por documento. El ensayo
+  de `lote.mjs` la cobra solo a los documentos que van a categorizar (cotizados o extraídos, no testigos, con el `.categorias.json` no al
+  día: `categoriasAlDia`, to-do 298 q); lote 93: de US$ 0,78 a 0,06; prueba mediana: de US$ 9,96 a 0,33 (11 de 332).
 
 Riesgos:
 - i) categoría equivocada con sumas correctas (nada lo delata).
