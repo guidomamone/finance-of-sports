@@ -166,3 +166,5 @@ Se completa mientras se trabaja. La sesión principal lo pasa a TODO, CHANGELOG 
   carga. Auditoría P0 0 / P1 0. Commit d306d3f42c.
 - **Para fos-onboarding y los subagentes de la cola:** si `--responder` contesta "No guardé la respuesta: … se queda sin filas", la
   respuesta correcta suele ser la categoría de las filas, no sacarlas.
+
+## Después del merge de la 298 h (2026-10-18)

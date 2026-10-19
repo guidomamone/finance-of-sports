@@ -15,6 +15,13 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 761 — Merge de pipeline 2: la cola frena un no_es_rubro que deja un renglón vacío (2026-10-18)
+
+Sin conflictos; P0 0 / P1 0.
+
+- To-do 298 h: `cola.mjs --responder` no guarda un `no_es_rubro` que deja sin filas al renglón que abre su nota, salvo con `--igual` (Guido:
+  con freno). De las 7 respuestas `no_es_rubro` de la cola, frena las 2 de Narva Trans 2025.
+
 ## Versión 760 — Merge de pipeline 2: el 630 belga partido por la nota (2026-10-18)
 
 Sin conflictos; P0 0 / P1 0.
