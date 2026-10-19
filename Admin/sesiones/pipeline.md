@@ -462,3 +462,10 @@ regenerar las páginas de fuentes (`node tools/generate-fuentes-page.js`: 318 ar
 un choque trivial en `index.html` y en `fuentes/`: se resuelve regenerando. Para borrar el 302 del TODO.
 
 ## Después del merge del 302 (2026-10-19)
+
+**310 parte 1 (commit 8e12e3666b).** `caja-deuda.mjs`: `balanceCuadraConFila`. La caja de un año sin vecino se acepta si la fila está en la tabla
+del balance de MAYOR activo del documento, ese activo = un total del pasivo (±1) y la caja no lo supera. Solo caja. `--medir` en todos los clubes:
+caja iguales 418 → 421, distintos 7 → 7, sinDato 383 → 380; deuda idéntica. La primera versión (sin la condición del mayor activo) metía
+Udinese 2022 como distinto (0,17 M contra 44,18 M: la pág. 32 es el balance de una entidad chica); con la condición, 0 errores nuevos.
+De los 10 casos de caja sin vecino medidos, entran 3; los otros 7 siguen sin dato (su fila no tiene tabla/balance o el balance no cierra).
+**310 partes 2 y 3 y 290: recomendación hecha a Guido (ver el chat); sin tocar código.**
