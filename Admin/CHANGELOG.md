@@ -15,6 +15,11 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 777 — Lotes de prueba al día, armados por una tool (2026-10-19)
+
+* `tools/lotes-prueba.mjs` arma la mediana y la completa desde lo que tiene verificación; la rápida sigue a mano (+18 casos). Quedan
+  62 / 339 / 720 documentos de 12 países (antes 44 / 118 / 358). Base: medir-verificar OK 683 / COLA 37; contra-sitio, 598 de 624 años.
+
 ## Versión 776 — 270: el estimado medido otra vez, con detalle por país (2026-10-19)
 
 * `estimar.mjs --medir --detalle` (y `--detalle-clubes`): error por país, liga y división, sesgo y dispersión; solo lectura.
