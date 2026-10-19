@@ -1,7 +1,7 @@
 {
  "pdf": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.pdf",
  "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.md",
- "generado": "2026-10-19T00:44:52.563Z",
+ "generado": "2026-10-19T00:53:58.587Z",
  "estado": "ok",
  "clubId": null,
  "year": 2025,
@@ -89,6 +89,11 @@
    "nombre": "año anterior cargado",
    "ok": null,
    "detalle": "club nuevo"
+  },
+  {
+   "nombre": "primer año",
+   "ok": true,
+   "detalle": "solo el resultado coincide con lo impreso, y Claude no encontró ninguna fila del estado que falte, sobre, se repita o esté del lado equivocado (to-do 214, escalón 3)"
   }
  ],
  "notas": [
@@ -364,7 +369,7 @@
  ],
  "primerAnio": {
   "escalon": 3,
-  "estado": "pendiente",
+  "estado": "confirmado",
   "clave": "53c2b6a1990bcf92082d8863c556722fae1326ff",
   "rango": [
    256,

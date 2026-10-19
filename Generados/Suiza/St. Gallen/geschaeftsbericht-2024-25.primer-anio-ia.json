@@ -1,0 +1,13 @@
+{
+ "md": "Clubes/Suiza/St. Gallen/geschaeftsbericht-2024-25.md",
+ "clave": "53c2b6a1990bcf92082d8863c556722fae1326ff",
+ "generado": "2026-10-19T00:53:58.541Z",
+ "fuente": "API",
+ "datos": {
+  "faltan": [],
+  "sobran": [],
+  "repetidas": [],
+  "lado_equivocado": [],
+  "observacion": "Los ingresos brutos (L259, 45.520) están abiertos por notas: FCSG AG 3.353+9.512+1.416+1.246=15.527 y Event AG 11.607+9.547+5.167+2.32+0.107+1.245=29.993. Las Ertragsminderungen (L260) también vienen de notas: +0.021 de FCSG AG y -0.484 de Event AG. Los costos directos (L262, 15.055) están abiertos en 4.845+1.378=6.223 para FCSG AG y 8.832 para Event AG. Las compensaciones internas de L268 y L269 (+11.5/-11.5) se cancelan entre sí y están en el lado correcto. No se cargaron subtotales (Bruttoergebnis, EBITDA, EBIT ni Jahresergebnis), y el resultado cierra en 0.117."
+ }
+}

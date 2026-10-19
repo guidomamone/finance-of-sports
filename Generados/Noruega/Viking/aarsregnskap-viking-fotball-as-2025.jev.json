@@ -1,0 +1,283 @@
+{
+ "md": "Clubes/Noruega/Viking/aarsregnskap-viking-fotball-as-2025.md",
+ "generatedAt": "2026-10-19T00:54:22.262Z",
+ "rubrosHuella": "8358176c269d32c36748907b0e00046acfe1d476",
+ "rubros": [
+  {
+   "label": "Gevinst ved salg av spillerrettigheter",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "player_sales",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Lønn og sosiale kostnader\"",
+   "choice": "wages_squad",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "wages_squad",
+     0.7
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Billettinntekt fra kamper",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Lønn og sosiale kostnader\"",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.6
+    ],
+    [
+     "wages_squad",
+     0.28
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "Personalkostnader fra Viking FK*",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Lønn og sosiale kostnader\"",
+   "choice": "wages_squad",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "wages_squad",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Inntekt fra samarbeidsavtaler",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.85
+    ],
+    [
+     "other_income",
+     0.14
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Medieinntekter",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Pensjonskostnad (OTP)**",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Lønn og sosiale kostnader\"",
+   "choice": "wages_squad",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "wages_squad",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Ordinære avskrivninger",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "depreciation",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "depreciation",
+     0.49
+    ],
+    [
+     "other_amortisation",
+     0.47
+    ],
+    [
+     "player_amortisation",
+     0.03
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Andre personalkostnader",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Lønn og sosiale kostnader\"",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "admin_general_expense",
+     0.33
+    ],
+    [
+     "wages_squad",
+     0.14
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "admin_general_expense",
+     0.26
+    ],
+    [
+     "depreciation",
+     0.01
+    ]
+   ],
+   "tokens": 1021
+  }
+ ]
+}

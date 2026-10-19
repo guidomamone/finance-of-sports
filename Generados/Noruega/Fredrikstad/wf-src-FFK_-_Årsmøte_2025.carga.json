@@ -1,28 +1,126 @@
 {
  "pdf": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.pdf",
- "generado": "2026-10-19T00:30:37.092Z",
+ "generado": "2026-10-19T00:55:19.369Z",
  "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 3 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (fredrikstad-no)"
   },
   {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 3 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "etapa": "categoria-en-cola",
+   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Lønnskostnad\" -> wages_squad 0.75; \"Avskrivning\" -> depreciation 0.55"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Cuotas sociales\" da 0 y el perfil del club no dice si tiene socios: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "perfil-en-cola",
+   "motivo": "\"Otras secciones deportivas\" da 0 y el perfil del club no dice si tiene otros deportes: pregunta en la cola humana (node tools/cola.mjs)"
+  },
+  {
+   "etapa": "reintento",
+   "motivo": "categorías en 0 que deberían tener número: Televisión, Estadio. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
   }
  ],
  "avisos": [
-  "perímetro: individual (ajuste manual del documento, 2026-10-18: perimetro-senales.mjs: el ejercicio Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.md se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 15 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)"
+  "perímetro: individual (ajuste manual del documento, 2026-10-18: perimetro-senales.mjs: el ejercicio Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.md se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 15 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados)",
+  "gestión: ningún presidente confirmado cubre 2024 (cierre 2024-12-31); pregunta en la cola (no frena)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "fredrikstad-no",
+  "year": 2024,
+  "cierre": "2024-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Annen driftsinntekt",
+    "normalizedCategory": "other_income",
+    "amountNative": 92.725486,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Varekostnad",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -9.678901,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Lønnskostnad",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -53.626147,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Avskrivning",
+    "normalizedCategory": "depreciation",
+    "amountNative": -5.056889,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 2,
+    "_conf": 0.55,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Annen driftskostnad",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -21.50972,
+    "disclosureLevel": "aggregated",
+    "_pag": 26,
+    "_escalon": 2,
+    "_conf": 0.85,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "NOK",
+   "fxRef": "NOK@2024-12-31",
+   "sourceId": "fredrikstad-no-wf-src-ffk-arsmote-2025",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.087325,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Annen finansinntekt",
+     "value": 0.223302
+    },
+    {
+     "label": "Annen finanskostnad",
+     "value": -0.310627
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 92.725486,
+   "officialTotalExpenses": 89.871657,
+   "officialPAT": 2.766504
+  },
+  "source": {
+   "id": "fredrikstad-no-wf-src-ffk-arsmote-2025",
+   "clubId": "fredrikstad-no",
+   "title": "Fredrikstad Fotballklubb — wf-src-FFK_-_Årsmøte_2025 (ejercicio 2024)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.md",
  "reemplaza": false,
  "periodo": {
@@ -35,5 +133,274 @@
  },
  "clubId": "fredrikstad-no",
  "year": 2024,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.pdf",
+   "campo": "anio",
+   "valor": "2024",
+   "linea": null,
+   "motivo": "acta de asamblea 2025 del FLI Fredrikstad Fotballklubb con el Regnskap 2024 (Sak 3); el nombre del archivo dice 2025",
+   "evidencia": "pág. 26 del visor, .md L1057-1082",
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.pdf",
+   "campo": "cierre",
+   "valor": "2024-12-31",
+   "linea": null,
+   "motivo": "Resultatregnskap 2024; patrimonio 'pr 31.12.24'",
+   "evidencia": ".md L307 y L1059",
+   "autor": "Claude",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "perimetro-senales.mjs: el ejercicio Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.md se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 15 ejercicio(s) con un solo perímetro (individual); 26 documento(s) mirados",
+   "evidencia": "A2 (Claude): Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.md",
+   "autor": "perimetro-senales",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 1064,
+   "etiqueta": "(sale) Sum driftsinntekter",
+   "lado": "ingreso",
+   "reemplaza": "Sum driftsinntekter",
+   "motivo": "el total \"Sum driftsinntekter\" se sumaba además de su único renglón (ingresos 2 x 92.725.486) (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y))",
+   "evidencia": ".md L1064",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.pdf",
+   "campo": "fila",
+   "valor": "-310 627",
+   "linea": 1077,
+   "etiqueta": "Annen finanskostnad",
+   "lado": "financiero",
+   "reemplaza": "Annen finanskostnad",
+   "motivo": "costo financiero leído como ingreso: netto -87.325 y el resultado cierra en 2.766.504 (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y))",
+   "evidencia": ".md L1077",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
+ "seleccion": {
+  "filas": 7,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Annen driftsinntekt",
+   "page": 26,
+   "native": 92.725486,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 92.725486,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 92.725486
+  },
+  {
+   "label": "Varekostnad",
+   "page": 26,
+   "native": 9.678901,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 9.678901,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -9.678901
+  },
+  {
+   "label": "Lønnskostnad",
+   "page": 26,
+   "native": 53.626147,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 53.626147,
+   "cat": "wages_squad",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -53.626147
+  },
+  {
+   "label": "Avskrivning",
+   "page": 26,
+   "native": 5.056889,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.056889,
+   "cat": "depreciation",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -5.056889
+  },
+  {
+   "label": "Annen driftskostnad",
+   "page": 26,
+   "native": 21.50972,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 21.50972,
+   "cat": "other_expenses",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -21.50972
+  },
+  {
+   "label": "Annen finansinntekt",
+   "page": null,
+   "native": 0.223302,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "page": null,
+   "native": -0.310627,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "reintentar": [
+  {
+   "categoria": "Televisión",
+   "lado": "ingreso"
+  },
+  {
+   "categoria": "Estadio",
+   "lado": "ingreso"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 92.725486,
+  "expSum": -89.871657,
+  "officialTotalRevenue": 92.725486,
+  "officialTotalExpenses": 89.871657,
+  "officialPAT": 2.766504,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 2.766504,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 92.725486
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 89.871657
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "NOK@2024-12-31",
+  "fx": 11.3534,
+  "source": "market_close",
+  "label": "Tipo medio de referencia de Norges Bank al 2024-12-31"
+ },
+ "liga": {
+  "valor": "no-eliteserien",
+  "fuente": "roster cacheado de \"2024 Eliteserien\" (tools/club-league-reference/no.json), coincidencia exacta \"Fredrikstad\"",
+  "estado": "ok"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2024,
+   "fuente": "ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): Resultatregnskap 2024; patrimonio 'pr 31.12.24'",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2024-12-31",
+   "fuente": "año del ejercicio + mes de cierre (ajuste manual (Admin/registros/ajustes-manuales.jsonl, Claude 2026-10-18): Resultatregnskap 2024; patrimonio 'pr 31.12.24')",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-18)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "NOK",
+   "fuente": "moneda de curso legal de Noruega (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "NOK@2024-12-31",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 11.3534. --escribir agrega 'NOK@2024-12-31' a FX_CLOSE",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "fredrikstad-no-wf-src-ffk-arsmote-2025",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": "no-eliteserien",
+   "fuente": "roster cacheado de \"2024 Eliteserien\" (tools/club-league-reference/no.json), coincidencia exacta \"Fredrikstad\"",
+   "estado": "ok"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 5,
+  "lineasIngreso": 1,
+  "lineasGasto": 4,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
 }

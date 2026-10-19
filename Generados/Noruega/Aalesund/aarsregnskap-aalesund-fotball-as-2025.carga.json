@@ -1,28 +1,181 @@
 {
  "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.pdf",
- "generado": "2026-10-19T00:30:36.968Z",
+ "generado": "2026-10-19T00:55:19.145Z",
  "frena": [
-  {
-   "etapa": "registro",
-   "motivo": "todavía no se puede categorizar: la etapa 6 (sumas) no cerró: 6 caso(s) en la cola humana (node tools/cola.mjs)"
-  },
-  {
-   "etapa": "categorizacion",
-   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
-  },
   {
    "etapa": "club",
    "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa; el resto se evaluó con un club provisional armado de la ficha del alta (aalesund-no)"
   },
   {
-   "etapa": "filas",
-   "motivo": "la verificación tiene 6 caso(s) pendientes en la cola humana (node tools/cola.mjs)"
+   "etapa": "categoria-en-cola",
+   "motivo": "5 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"Salgsinntekter\" -> lump_football_operations 0.6; \"Varekostnad\" -> other_expenses 0.6; \"Arbeidsgiveravgift\" -> wages_squad 0.75; \"Pensjonskostnader\" -> wages_squad 0.75; \"Andre ytelser\" -> wages_squad 0.7"
   }
  ],
  "avisos": [
   "perímetro: individual (ajuste manual del documento, 2026-10-18: perimetro-senales.mjs: el ejercicio 2025-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 16 ejercicio(s) con un solo perímetro (individual); 34 documento(s) mirados)"
  ],
- "ejercicio": null,
+ "ejercicio": {
+  "clubId": "aalesund-no",
+  "year": 2025,
+  "cierre": "2025-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Salgsinntekter",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 69.990515,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre driftsinntekter",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.440395,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Varekostnad",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -6.366043,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 2,
+    "_conf": 0.6,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Lønninger",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -5.45678,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 1,
+    "_conf": 0.99,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Arbeidsgiveravgift",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.854926,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Pensjonskostnader",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.151065,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 2,
+    "_conf": 0.75,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Andre ytelser",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.43456,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 2,
+    "_conf": 0.7,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Avskrivning varige driftsmidler og immaterielle eiendeler",
+    "normalizedCategory": "depreciation",
+    "amountNative": -6.632698,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 1,
+    "_conf": 0.98,
+    "_fuenteCat": "categorias.json"
+   },
+   {
+    "rawLabel": "Annen driftskostnad",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -49.677946,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 1,
+    "_conf": 0.92,
+    "_fuenteCat": "categorias.json"
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "NOK",
+   "fxRef": "NOK@2025-12-31",
+   "sourceId": "aalesund-no-aarsregnskap-aalesund-fotball-as-2025",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 0.657928,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Renteinntekt fra foretak i samme konsern",
+     "value": 0.45
+    },
+    {
+     "label": "Annen renteinntekt",
+     "value": 0.14761
+    },
+    {
+     "label": "Annen finansinntekt",
+     "value": 0.138252
+    },
+    {
+     "label": "Nedskrivning av andre finansielle omløpsmidler",
+     "value": 0
+    },
+    {
+     "label": "Annen rentekostnad",
+     "value": -0.007004
+    },
+    {
+     "label": "Annen finanskostnad",
+     "value": -0.07093
+    },
+    {
+     "label": "Skattekostnad på ordinært resultat",
+     "value": 0
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Salgsinntekter",
+     "lado": "revenue",
+     "importe": 69.990515,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 70.43091,
+   "officialTotalExpenses": 69.574018,
+   "officialPAT": 1.51482
+  },
+  "source": {
+   "id": "aalesund-no-aarsregnskap-aalesund-fotball-as-2025",
+   "clubId": "aalesund-no",
+   "title": "Ålesund Fotball AS — aarsregnskap-aalesund-fotball-as-2025 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-19) desde la transcripción Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
  "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.md",
  "reemplaza": false,
  "periodo": {
@@ -38,5 +191,364 @@
  },
  "clubId": "aalesund-no",
  "year": 2025,
- "cortadoEn": "filas"
+ "ajustes": [
+  {
+   "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.pdf",
+   "campo": "perimetro",
+   "valor": "individual",
+   "linea": null,
+   "motivo": "perimetro-senales.mjs: el ejercicio 2025-12-31 se publicó solo individual (el club no tiene un perímetro único); 0 documento(s) con los dos estados votan —; 16 ejercicio(s) con un solo perímetro (individual); 34 documento(s) mirados",
+   "evidencia": "A2 (Claude): Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.md",
+   "autor": "perimetro-senales",
+   "fecha": "2026-10-18"
+  },
+  {
+   "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.pdf",
+   "campo": "fila",
+   "valor": "-7 004",
+   "linea": 593,
+   "etiqueta": "Annen rentekostnad",
+   "lado": "financiero",
+   "reemplaza": "Annen rentekostnad",
+   "motivo": "costo financiero leído como ingreso (Sum finanskostnader 77.934) (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y))",
+   "evidencia": ".md L593",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  },
+  {
+   "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2025.pdf",
+   "campo": "fila",
+   "valor": "-70 930",
+   "linea": 594,
+   "etiqueta": "Annen finanskostnad",
+   "lado": "financiero",
+   "reemplaza": "Annen finanskostnad",
+   "motivo": "costo financiero leído como ingreso: el resultado cierra en 1.514.820 (1 de redondeo) (revisado por Claude contra el .md, 2026-10-18; ajuste a mano por decisión de Guido hasta la mejora del script (298 y))",
+   "evidencia": ".md L594",
+   "autor": "Claude",
+   "fecha": "2026-10-19"
+  }
+ ],
+ "seleccion": {
+  "filas": 16,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Salgsinntekter",
+   "page": 15,
+   "native": 69.990515,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 69.990515,
+   "cat": "lump_football_operations",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 69.990515
+  },
+  {
+   "label": "Andre driftsinntekter",
+   "page": 15,
+   "native": 0.440395,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.440395,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.440395
+  },
+  {
+   "label": "Varekostnad",
+   "page": 15,
+   "native": 6.366043,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 6.366043,
+   "cat": "other_expenses",
+   "conf": 0.6,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -6.366043
+  },
+  {
+   "label": "Lønninger",
+   "page": 19,
+   "native": 5.45678,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
+   "signoFijo": 5.45678,
+   "cat": "wages_squad",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -5.45678
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "page": 19,
+   "native": 0.854926,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
+   "signoFijo": 0.854926,
+   "cat": "wages_squad",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.854926
+  },
+  {
+   "label": "Pensjonskostnader",
+   "page": 19,
+   "native": 0.151065,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
+   "signoFijo": 0.151065,
+   "cat": "wages_squad",
+   "conf": 0.75,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.151065
+  },
+  {
+   "label": "Andre ytelser",
+   "page": 19,
+   "native": 0.43456,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Lønnskostnad\")",
+   "signoFijo": 0.43456,
+   "cat": "wages_squad",
+   "conf": 0.7,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.43456
+  },
+  {
+   "label": "Avskrivning varige driftsmidler og immaterielle eiendeler",
+   "page": 15,
+   "native": 6.632698,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 6.632698,
+   "cat": "depreciation",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -6.632698
+  },
+  {
+   "label": "Annen driftskostnad",
+   "page": 15,
+   "native": 49.677946,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 49.677946,
+   "cat": "other_expenses",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -49.677946
+  },
+  {
+   "label": "Renteinntekt fra foretak i samme konsern",
+   "page": null,
+   "native": 0.45,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Annen renteinntekt",
+   "page": null,
+   "native": 0.14761,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Annen finansinntekt",
+   "page": null,
+   "native": 0.138252,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Nedskrivning av andre finansielle omløpsmidler",
+   "page": null,
+   "native": 0,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Annen rentekostnad",
+   "page": null,
+   "native": -0.007004,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "page": null,
+   "native": -0.07093,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Skattekostnad på ordinært resultat",
+   "page": null,
+   "native": 0,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Lønnskostnad\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 70.43091,
+  "expSum": -69.574018,
+  "officialTotalRevenue": 70.43091,
+  "officialTotalExpenses": 69.574018,
+  "officialPAT": 1.51482,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 1.51482,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 70.43091
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 69.574018
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "NOK@2025-12-31",
+  "fx": 10.0791,
+  "source": "market_close",
+  "label": "Tipo medio de referencia de Norges Bank al 2025-12-31"
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "no hay ninguna liga-temporada de no 2025 cacheada",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding/club-nuevo.md (liga))"
+ },
+ "procedencia": {
+  "anio": {
+   "valor": 2025,
+   "fuente": "nombre del archivo (misma regla que onboard.mjs --quien), confirmado por las fechas de cierre del .md",
+   "estado": "ok"
+  },
+  "cierre": {
+   "valor": "2025-12-31",
+   "fuente": "año del ejercicio + mes de cierre (contenido del .md (3 de 4 fechas de fin de mes caen en el mes 12))",
+   "estado": "ok"
+  },
+  "reportType": {
+   "valor": "official_balance_sheet",
+   "fuente": "el .md tiene un estado contable (resultados / balance) y el nombre del archivo no sugiere otro tipo",
+   "estado": "ok"
+  },
+  "perimetro": {
+   "valor": "individual",
+   "fuente": "ajuste manual (2026-10-18)",
+   "estado": "ok"
+  },
+  "currency": {
+   "valor": "NOK",
+   "fuente": "moneda de curso legal de Noruega (tabla PAISES de alta-club.mjs)",
+   "estado": "ok"
+  },
+  "fxRef": {
+   "valor": "NOK@2025-12-31",
+   "fuente": "el documento no declara tipo de cambio; tools/fx-reference/ (lookup-fx-close.js): 10.0791. --escribir agrega 'NOK@2025-12-31' a FX_CLOSE",
+   "estado": "ok"
+  },
+  "sourceId": {
+   "valor": "aalesund-no-aarsregnskap-aalesund-fotball-as-2025",
+   "fuente": "clubId + nombre del archivo en slug",
+   "estado": "ok"
+  },
+  "liga": {
+   "valor": null,
+   "fuente": "no hay ninguna liga-temporada de no 2025 cacheada",
+   "estado": "pendiente"
+  }
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 2,
+  "lineasIngreso": 2,
+  "lineasGasto": 7,
+  "metaFilas": 7,
+  "excluidas": 0
+ }
 }

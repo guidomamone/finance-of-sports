@@ -1,0 +1,80 @@
+{
+ "md": "Clubes/Noruega/Fredrikstad/wf-src-FFK_-_Årsmøte_2025.md",
+ "club": "fredrikstad",
+ "year": 2024,
+ "generatedAt": "2026-10-19T00:54:32.909Z",
+ "rubrosHuella": "42769bd563cc11ddf6ef57f1bc6ba05ffabb448e",
+ "jevHuella": "4a1c21354664da614c8ee7f86d2058e368a106fe",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.0088568,
+ "rubros": [
+  {
+   "label": "Annen driftsinntekt",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Otros ingresos de explotación",
+   "page": 26,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "other_income",
+   "confianza": 0.99
+  },
+  {
+   "label": "Varekostnad",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Aprovisionamientos",
+   "page": 26,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "other_expenses",
+   "confianza": 0.99
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos de personal",
+   "page": 26,
+   "pendiente": true,
+   "jev": "wages_squad",
+   "jevConf": 0.63,
+   "escalon": 2,
+   "categoria": "wages_squad",
+   "confianza": 0.75,
+   "motivo": "Gastos de personal totales de un club de fútbol; mayormente plantel profesional"
+  },
+  {
+   "label": "Avskrivning",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Amortización",
+   "page": 26,
+   "pendiente": true,
+   "jev": "depreciation",
+   "jevConf": 0.73,
+   "escalon": 2,
+   "categoria": "depreciation",
+   "confianza": 0.55,
+   "motivo": "Avskrivning genérico suele ser depreciación de bienes tangibles; podría incluir pases"
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Otros gastos de explotación",
+   "page": 26,
+   "pendiente": true,
+   "jev": "other_expenses",
+   "jevConf": 0.8,
+   "escalon": 2,
+   "categoria": "other_expenses",
+   "confianza": 0.85,
+   "motivo": "Otros gastos de explotación sin desglose: catch-all"
+  }
+ ]
+}
