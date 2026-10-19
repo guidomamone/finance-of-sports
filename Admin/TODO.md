@@ -255,9 +255,8 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    95,7 M que lo incluyen (30,4 M con Banca Sistema, .md L2637). Decidir un criterio; no se reabrió nada.
 292. TRANSCRIPCIONES POR SUBAGENTES: CARGAR (Estonia, Bélgica, Suiza, Beşiktaş, Países Bajos y Colombia). Validación (326 listas) y Mistral
    hechos; Estonia y Bélgica dados de alta (lotes 89 y 90, 17 clubes). Falta: los lotes de carga por país que siguen (91-92 en curso,
-   después Suiza, Colombia, Beşiktaş); Países Bajos (lote 93): 7 altas en el sitio y 19 listas para escribir (los 26 cierran en
-   verificar): todos pasan la compuerta (en la Eerste Divisie alcanza el estadio); falta que Guido corra el lote;
-   después, el lote 95 con los demás años de los clubes nuevos (lista en la nota de onboarding) y volver a correr Bélgica (lote 92); OH Leuven 2022 y Llaneros 2022, que siguen sin tablas (ver 298 e); decidir subagentes
+   después Suiza, Colombia, Beşiktaş); Países Bajos: el alta de los 26 clubes está hecha (lote 93); sigue el lote 95 con los demás
+   años de los clubes nuevos (lista en `Admin/Archive/sesion-onboarding-2-2026-10-19.md`) y volver a correr Bélgica (lote 92); OH Leuven 2022 y Llaneros 2022, que siguen sin tablas (ver 298 e); decidir subagentes
    o Mistral para los 319 `.md` viejos sin tablas de `Admin/lotes/sin-tablas-6paises.txt`, después de medir el 298 e.
 298. MEJORAS DE SCRIPT VISTAS ONBOARDEANDO ESTONIA Y BÉLGICA (lotes 89-92; HECHAS la a, b, c, d, e, e2, f, g (el 630 belga), h, i, o, r, t, u, x, y1, y2 e y3, mergeadas el 2026-10-18; cada letra es un escalón a diseñar con el ok de Guido, uno por
    vez; el detalle con casos, en `Admin/Archive/sesion-onboarding-2026-10-18-2.md`). a) CIERRE FALSO en verificar.mjs: compara en valor

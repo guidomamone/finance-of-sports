@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 781 — Lote 93 cerrado: 19 altas neerlandesas más (2026-10-19)
+
+* ADO Den Haag, De Graafschap, Den Bosch, Dordrecht, Eindhoven, Emmen, Groningen, Twente, Utrecht, Volendam, Helmond Sport, PEC Zwolle,
+  Roda JC, Cambuur, Heerenveen, Telstar, Vitesse, VVV-Venlo y Willem II. Con las 7 anteriores, los 26 clubes del lote están en el sitio.
+* Lista de la Eerste Divisie 2021-22 y alias de FC Eindhoven en club-league-reference.
+
 ## Versión 780 — 295 c: seis ligas más con su balance y su auditor (2026-10-19)
 
 * EFL 2024-25 (Grant Thornton), Swiss Football League 2024-25 (EY), Norsk Toppfotball 2025 (BDO), Superligaen 2024-25 (EY), federación
