@@ -15,6 +15,12 @@ que dice `ESTADO.md` era verdad ese día.
 
 ---
 
+## Versión 813 — 308: bonos convertibles y factoring en la skill; herramienta para unificar carpetas (2026-10-19)
+
+* `club-data-mapping` (referencia de formato simplificado): bonos convertibles y factoring en la deuda financiera (ok de Guido).
+* `tools/mudar-carpetas.mjs` y su manifiesto: unifica las carpetas duplicadas de Clubes/ sin borrar nada (los duplicados van a
+  `Admin/Archive/pdfs-duplicados/`). Dos informes de liga compartidos a propósito, silenciados en audit-ignore.
+
 ## Versión 812 — Sarpsborg 08 2023 y 2024 (2026-10-19)
 
 * Lote 100: Sarpsborg 08 queda con 2012 y 2014-2025. 2023 entra con el resultado impreso fijado a mano (298 ag, el signo del financiero).

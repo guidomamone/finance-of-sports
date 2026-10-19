@@ -32,7 +32,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 
 **C. Abaratar antes del onboarding grande**
 * 298: mejoras de script de Estonia y Bélgica (ad, ae y af, de Bélgica; ag, el signo del financiero de Sarpsborg 2023; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 4
-* 308: los bonos convertibles en la skill
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
@@ -67,7 +66,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 * 257: skills que faltan (después de 255)
 * 237 al: anexo UEFA para abrir las ventas (lo dejaste para después)
 * 51: proceso de mails a clubes
-* 278 y 287: carpetas duplicadas en Clubes/ y los 25 casos de carpeta-doble que caza la auditoría (sin borrar PDFs)
+* 278 y 287: carpetas duplicadas: la herramienta está (`tools/mudar-carpetas.mjs`, ensayo 3 a unir y 21 duplicados al archivo); la principal la corre cuando termine el lote 97 (toca Cardiff y Swansea)
 * 258: índice partido por país o liga (cuando la skill de escala lo diga)
 
 165. ALTAS DE CLUBES NUEVOS FUERA DE ITALIA (decisión de Guido, 2026-10-07; estado al 2026-10-10). Un país por vez, con el pipeline
@@ -259,8 +258,6 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
    con ajustes si el resultado sigue exacto). El detalle,
    con líneas y montos, en `Admin/Archive/sesion-onboarding-2026-10-18-5.md`. k) alta-club.mjs / cargar-lote.mjs escriben la liga del alta en null aunque
    `altas-revision.jsonl` traiga las ligas verificadas (las 17 altas de los lotes 89-90): que el alta las tome de la revisión.
-308. NOMBRAR EN LA SKILL club-data-mapping EL CRITERIO DE LOS BONOS CONVERTIBLES (con ok de Guido: es una skill). Ya está en
-   CONVENCIONES-DATOS; la skill tiene que decirlo donde habla de deuda.
 309. TAMAÑO DE LIGA DESDE LA LISTA DE WIKIPEDIA (cierre de pantallas, a decidir con Guido). En 223 de los 227 liga-años con lista de
    Wikipedia (`wiki` en `data/rankings/<liga>.js`) `leagueSize` es null, aunque la lista existe y alimenta los estimados: sin él no hay
    "N de los M" en el subtítulo de Ligas ni "Faltan…". ¿El tamaño sale de la lista (`LEAGUE_SIZE_BY_YEAR`, `tools/listas-lote.mjs`)?
