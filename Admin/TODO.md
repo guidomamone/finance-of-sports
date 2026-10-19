@@ -34,7 +34,7 @@ panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archi
 **C. Abaratar antes del onboarding grande**
 * 323: mejoras de script del lote 97 (Reino Unido): costo del reintento, notas inglesas, perímetro, nombre legal --> Pipeline 5
 * 260: caja y deuda, lo que falta por documento (Bayern, Japón 2025, Volos, Alverca y otros; todo espera un documento mejor)
-* 298: mejoras de script de Estonia y Bélgica (af, las ligas amateur belgas, espera tu decisión; aj, signos de la columna previa; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 5. La ai (St. Gallen intragrupo, con tu decisión de perímetro) y la carga de St. Gallen también --> Pipeline 5. La k2 (guion largo, Luzern 2023) ya está en la rama pipeline. Nueva: m2, columna del año anterior (Unión Magdalena 2025)
+* 298: mejoras de script de Estonia y Bélgica (af, las ligas amateur belgas, espera tu decisión; aj, signos de la columna previa; la z2, Westerlo 2015 con 18 meses, a decidir con vos; la g2, condicional) --> Pipeline 5. La ai (St. Gallen intragrupo, con tu decisión de perímetro) y la carga de St. Gallen también --> Pipeline 5. La k2 (guion largo, Luzern 2023) ya está en la rama pipeline. Nuevas: m2 (hecha en la rama pipeline), n2 (liga equivocada en el contexto de un año sin club-leagues) y o2 (perímetro que ignora los años cargados)
 (van antes de D: cada documento que se procese después sale más barato y con menos cola)
 
 **D. Onboarding grande**
@@ -264,6 +264,10 @@ af) listas de las ligas amateur belgas
    k2) Luzern 2023 (2022-23): el .md imprime los negativos con guion largo "–" (U+2013), por ejemplo "–3’102’345" (L1560 aprox.); el tie-out lee
    el resultado con el signo invertido y frena (también los gastos: falta el "Ausserordentlicher Aufwand" de la nota 34). Arreglo: leer "–" y
    "−" como signo menos. No usar el ajuste resultado-final. Detalle: `Admin/Archive/sesion-onboarding-3-2026-10-19-cierre.md`.
+   n2) `cargar.mjs` le pasa a `estadio-sponsor.mjs` la liga equivocada para un año sin fila en `data/club-leagues/` y deja en
+   `data/contexto/gb.js` filas con ligas cruzadas (Burnley 2022 "2021–22 EFL Championship" y 2023 "2022–23 Premier League", lote 97).
+   o2) `perimetro-senales.mjs` mira solo los documentos nuevos e ignora los años ya cargados: fijó `individual` para Burnley cuando 2024
+   y 2025 están consolidados (Burnley FC Holdings).
    m2) en un estado de resultados con el año actual primero, el pipeline extrajo la segunda columna (2024) y la rotuló 2024 (Unión
    Magdalena 2025, lote 103: Taquilla 1.564.483 en vez de 1.542.620). No se carga hasta resolverlo.
    z2) (también Aston Villa 2023-24, 13 meses por cambio de cierre de mayo a junio, precedente Wolves 2025: la compuerta de `cargar.mjs`,
