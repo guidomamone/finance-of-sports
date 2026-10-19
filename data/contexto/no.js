@@ -7,6 +7,8 @@ Object.assign(window.CLUB_CONTEXT, {
     2025: {"estadio":"Color Line Stadion","capacidad":10778,"sponsor":"Sparebanken Møre","marca":"Umbro","temporada":"2025 Norwegian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1378434342"},
   },
   'fredrikstad-no': {
+    2016: {"estadio":"Fredrikstad Stadion","capacidad":12565,"temporada":"2016 Norwegian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1339664538"},
+    2017: {"estadio":"Fredrikstad Stadion","capacidad":12565,"temporada":"2017 Norwegian First Division","fuente":"https://en.wikipedia.org/w/index.php?oldid=1368418727"},
     2024: {"estadio":"Fredrikstad Stadion","capacidad":12560,"sponsor":"OBOS","marca":"Craft","temporada":"2024 Eliteserien","fuente":"https://en.wikipedia.org/w/index.php?oldid=1356845648"},
   },
   'molde-no': {
