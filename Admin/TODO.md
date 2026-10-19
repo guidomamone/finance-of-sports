@@ -25,7 +25,6 @@ ORDEN (pedido de Guido, 2026-10-17: seguir este orden). Es la copia durable del 
 panel tal cual (modo plan → ExitPlanMode → show_pane "plan"; editar el archivo del plan no refresca el panel).
 
 **A. Cerrar lo abierto (chico, ya en marcha)**
-* 324: Basel, todo (arreglo del script que elige la tabla de la AG, regenerar, verificar y cargar; la Defizitgarantie y la Gewinnüberführung 2012 las decidís vos). Onboarding no toca Basel --> Pipeline 5
 * 292: cargar lo transcripto: lote 101 y 102 hechos (Go Ahead Eagles, Luzern 2018-2024 salvo 2023, Lommel SK 2019-2024, Lierse SK 2020-2021, Patro Eisden 2021 y 2023); quedan Patro Eisden 2022 y Lierse SK 2019 (período), y St. Gallen con la 298 ai y sus 6 casos (espera tu decisión de perímetro); el estadio de las amateur espera la 298 af; Basel es de la 324; después Suiza, Beşiktaş y Colombia --> Pantallas 3 (St. Gallen --> Pipeline 5)
 
 **B. Bases baratas que después cuestan caro cambiar**
