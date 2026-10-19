@@ -17,8 +17,8 @@ que dice `ESTADO.md` era verdad ese día.
 
 ## Versión 802 — 310, parte 1: caja de un año sin vecino (2026-10-19)
 
-* `caja-deuda.mjs`: la caja de un año sin vecino se acepta si está en el balance de mayor activo del documento que cuadra, en cualquier
-  país. Medido en todos los clubes: caja igual a lo cargado de 418 a 421; deuda idéntica.
+* `caja-deuda.mjs`: la caja de un año sin vecino se acepta si está en un balance del documento que cuadra, en cualquier país. Udinese
+  2022 queda pendiente de Guido (el balance que encuentra es el de una entidad chica).
 
 ## Versión 801 — Reino Unido: los 12 de subagentes, validados (2026-10-19)
 
